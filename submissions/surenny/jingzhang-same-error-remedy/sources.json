@@ -55,7 +55,7 @@
       "id": "TASKBOOK-DELIVERABLES",
       "path": "visual/assets/taskbook-deliverables.json",
       "source_type": "agent_generated_design",
-      "usage": "Original identity, ecosystem cases, scenarios, personas, tests, landmarks, culture, and annual operations for this candidate."
+      "usage": "Six candidate-specific structured deliverables, each linked to a distinct bilingual board and offline visual section."
     },
     {
       "id": "RIGHTS-LEDGER",
@@ -108,9 +108,9 @@
     },
     {
       "id": "SAME-ERROR-SYNTHETIC-FIXTURES",
-      "path": "visual/assets/same-error-protocol.json#synthetic_test",
+      "path": "visual/assets/synthetic-test-fixtures.json",
       "source_type": "agent_generated_synthetic_data",
-      "usage": "Design of a 60-record no-personal-data workflow rehearsal; contains no observed result and supports no field-performance claim."
+      "usage": "Sixty row-level no-personal-data fixtures plus four deterministic suites, each with expected, actual, result, and failure branch; synthetic design verification only, never field performance."
     },
     {
       "id": "CASE-SMART-KALASATAMA",

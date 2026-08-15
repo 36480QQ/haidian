@@ -931,28 +931,19 @@
       "geojson_layers": [
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/land_use.geojson"
       ],
       "metrics": [
         "site_area_sqm",
-        "key_area_count",
-        "scenario_card_count",
-        "entry_gate_count"
+        "key_area_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/agent-1-identity.png"
       ],
       "visual_sections": [
-        "visual/index.html#protocol",
-        "visual/index.html#tasks",
-        "visual/index.html#limits"
+        "visual/index.html#agent-1"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -980,30 +971,22 @@
         "风险、版权与合规说明"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "key_area_count",
-        "scenario_card_count",
-        "entry_gate_count"
+        "ecosystem_case_count",
+        "key_area_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/agent-2-ecosystem.png"
       ],
       "visual_sections": [
-        "visual/index.html#protocol",
-        "visual/index.html#tasks",
-        "visual/index.html#limits"
+        "visual/index.html#agent-2"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1031,34 +1014,28 @@
         "风险、版权与合规说明"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "key_area_count",
         "scenario_card_count",
-        "entry_gate_count"
+        "persona_count",
+        "industry_test_scenario_count",
+        "synthetic_test_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/agent-3-scenarios.png"
       ],
       "visual_sections": [
-        "visual/index.html#protocol",
-        "visual/index.html#tasks",
-        "visual/index.html#limits"
+        "visual/index.html#agent-3"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
         "TASKBOOK-DELIVERABLES",
+        "SAME-ERROR-SYNTHETIC-FIXTURES",
         "SAME-ERROR-PROTOCOL"
       ],
       "assumption_ids": [
@@ -1082,30 +1059,21 @@
         "风险、版权与合规说明"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/green_space.geojson",
+        "geometry/buildings.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "key_area_count",
-        "scenario_card_count",
-        "entry_gate_count"
+        "landmark_count",
+        "public_space_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/agent-4-landmarks.png"
       ],
       "visual_sections": [
-        "visual/index.html#protocol",
-        "visual/index.html#tasks",
-        "visual/index.html#limits"
+        "visual/index.html#agent-4"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1133,30 +1101,20 @@
         "风险、版权与合规说明"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "key_area_count",
-        "scenario_card_count",
-        "entry_gate_count"
+        "concept_walk_network_length_m",
+        "landmark_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/agent-5-culture.png"
       ],
       "visual_sections": [
-        "visual/index.html#protocol",
-        "visual/index.html#tasks",
-        "visual/index.html#limits"
+        "visual/index.html#agent-5"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1184,30 +1142,20 @@
         "风险、版权与合规说明"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "key_area_count",
-        "scenario_card_count",
-        "entry_gate_count"
+        "annual_operation_cycle_count",
+        "synthetic_test_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/agent-6-operations.png"
       ],
       "visual_sections": [
-        "visual/index.html#protocol",
-        "visual/index.html#tasks",
-        "visual/index.html#limits"
+        "visual/index.html#agent-6"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",

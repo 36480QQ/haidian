@@ -20,6 +20,18 @@
       "license": "COMMUNITY-DISPLAY-ONLY"
     },
     {
+      "asset": "six bilingual Agent task board pairs",
+      "author": "Jing-Zhang Contribution Agent",
+      "source": "deterministic Pillow rendering from taskbook-deliverables.json",
+      "license": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "asset": "synthetic-test-fixtures.json and visual/assets/verify-fixtures.js",
+      "author": "Jing-Zhang Contribution Agent",
+      "source": "original deterministic no-personal-data fixture design and verifier",
+      "license": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
       "asset": "bilingual A3/A0 PDFs",
       "author": "Jing-Zhang Contribution Agent",
       "source": "deterministic high-resolution Pillow page rendering from package data",
@@ -46,7 +58,7 @@
   ],
   "image_generation": {
     "available": false,
-    "reason": "built-in image generator was not enabled; no API-key fallback was used",
+    "reason": "built-in image generator was not enabled; no API-key fallback was used; added task boards are deterministic diagrams rather than generated renderings",
     "cover": null
   },
   "excluded": [

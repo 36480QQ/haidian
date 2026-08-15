@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.2 - 2026-08-15
+
+- Repaired independent pre-PR block findings on a new exact head: removed stale rights-handover metric paths/formulas and GeoJSON collection names.
+- Added 60 row-level synthetic fixtures, four deterministic test suites, expected/actual results, explicit failure branches, and a verification script; field-performance metrics remain unknown.
+- Added six task-specific bilingual board pairs, dedicated matrix anchors, a richer offline dashboard, role-distinct A3 pages, and an integrated A0 board.
+- Fixed English metrics artwork overflow and documented every new asset, source, limitation, and rights chain.
+
 ## v0.1 - 2026-08-15
 
 - Built the first exact-head candidate for `京张同错同补 / ONE ERROR, EQUAL REMEDY`.

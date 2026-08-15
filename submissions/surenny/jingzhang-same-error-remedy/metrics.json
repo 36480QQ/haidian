@@ -176,9 +176,9 @@
       "value": 60,
       "unit": "count",
       "source_files": [
-        "visual/assets/same-error-protocol.json"
+        "visual/assets/synthetic-test-fixtures.json"
       ],
-      "formula": "count no-personal-data synthetic service records in the proposed stress test",
+      "formula": "count row-level no-personal-data fixtures with expected, actual, result, and failure-branch suite coverage",
       "confidence": "high",
       "assumptions": []
     },
@@ -187,12 +187,12 @@
       "value": null,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/rights-handover-protocol.json"
+        "visual/assets/synthetic-test-fixtures.json"
       ],
-      "formula": "ordinary learning and service tasks completed during hold / all approved tasks",
+      "formula": "field tasks preserving original order, time, unresolved matters, and staffed path during a confirmed-error hold / all authorized field tasks",
       "confidence": "unknown",
       "assumptions": [
-        "A-CHOICE-001"
+        "A-TRIGGER-001"
       ],
       "reason": "No authorized field site, legal/professional determination, affected-person co-review, or independent operating baseline is available."
     },
@@ -229,9 +229,9 @@
       "value": null,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/rights-handover-protocol.json"
+        "visual/assets/synthetic-test-fixtures.json"
       ],
-      "formula": "traceable copies and derivatives / all copies and derivatives found by authorized review",
+      "formula": "non-complainant co-affected people surfaced under an authorized frozen scope / all independently verified non-complainant co-affected people in that scope",
       "confidence": "unknown",
       "assumptions": [
         "A-DERIVATIVE-001"
@@ -243,11 +243,12 @@
       "value": null,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/rights-handover-protocol.json"
+        "visual/assets/synthetic-test-fixtures.json"
       ],
-      "formula": "independently completed choice tasks / all approved synthetic or field tasks",
+      "formula": "candidate records receiving a signed include, exclude, or clarification-hold decision / all candidate records surfaced under the authorized scope",
       "confidence": "unknown",
       "assumptions": [
+        "A-DERIVATIVE-001",
         "A-CHOICE-001"
       ],
       "reason": "No authorized field site, legal/professional determination, affected-person co-review, or independent operating baseline is available."
@@ -257,12 +258,13 @@
       "value": null,
       "unit": "hours",
       "source_files": [
-        "visual/assets/rights-handover-protocol.json"
+        "visual/assets/same-error-protocol.json"
       ],
-      "formula": "time from signed choice to independently verified downstream receipts",
+      "formula": "hours from authorized remedy signature to independently verified remedy receipt, excluding time in documented person-requested pause",
       "confidence": "unknown",
       "assumptions": [
-        "A-DERIVATIVE-001"
+        "A-TRIGGER-001",
+        "A-CHOICE-001"
       ],
       "reason": "No authorized field site, legal/professional determination, affected-person co-review, or independent operating baseline is available."
     },
@@ -271,14 +273,69 @@
       "value": null,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/rights-handover-protocol.json"
+        "visual/assets/synthetic-test-fixtures.json"
       ],
-      "formula": "false transition triggers / all professionally reviewed triggers",
+      "formula": "people independently found outside the authorized frozen scope after human review / all people included for remedy under that scope",
       "confidence": "unknown",
       "assumptions": [
-        "A-TRIGGER-001"
+        "A-DERIVATIVE-001"
       ],
       "reason": "No authorized field site, legal/professional determination, affected-person co-review, or independent operating baseline is available."
+    },
+    "synthetic_test_pass_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/synthetic-test-fixtures.json"
+      ],
+      "formula": "count deterministic synthetic test suites where expected equals actual and every failure branch is declared",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "synthetic_shared_version_surface_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/synthetic-test-fixtures.json"
+      ],
+      "formula": "count fixtures with frozen_rule_version ERR-V7 surfaced for named human scope review",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "synthetic_ambiguity_hold_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/synthetic-test-fixtures.json"
+      ],
+      "formula": "count shared-version fixtures held for named human clarification because a required scope field is incomplete",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "ecosystem_case_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/taskbook-deliverables.json"
+      ],
+      "formula": "count documented background case questions in agent.2; not transferred policies or local performance evidence",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "annual_operation_cycle_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/taskbook-deliverables.json"
+      ],
+      "formula": "count distinct proposed operating cycles with an owner, output, conversion path, and stop rule",
+      "confidence": "high",
+      "assumptions": []
     }
   }
 }

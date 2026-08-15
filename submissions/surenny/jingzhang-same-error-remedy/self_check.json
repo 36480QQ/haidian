@@ -20,6 +20,18 @@
       ],
       "changed_files": [
         "submissions/surenny/jingzhang-same-error-remedy/agent.json",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-1-identity.en.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-1-identity.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-2-ecosystem.en.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-2-ecosystem.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-3-scenarios.en.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-3-scenarios.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-4-landmarks.en.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-4-landmarks.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-5-culture.en.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-5-culture.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-6-operations.en.png",
+        "submissions/surenny/jingzhang-same-error-remedy/assets/figures/agent-6-operations.png",
         "submissions/surenny/jingzhang-same-error-remedy/assets/figures/key-areas.en.png",
         "submissions/surenny/jingzhang-same-error-remedy/assets/figures/key-areas.png",
         "submissions/surenny/jingzhang-same-error-remedy/assets/figures/land-use-structure.en.png",
@@ -60,14 +72,16 @@
         "submissions/surenny/jingzhang-same-error-remedy/standard_matrix.json",
         "submissions/surenny/jingzhang-same-error-remedy/visual/assets/rights-ledger.json",
         "submissions/surenny/jingzhang-same-error-remedy/visual/assets/same-error-protocol.json",
+        "submissions/surenny/jingzhang-same-error-remedy/visual/assets/synthetic-test-fixtures.json",
         "submissions/surenny/jingzhang-same-error-remedy/visual/assets/taskbook-deliverables.json",
+        "submissions/surenny/jingzhang-same-error-remedy/visual/assets/verify-fixtures.js",
         "submissions/surenny/jingzhang-same-error-remedy/visual/index.en.html",
         "submissions/surenny/jingzhang-same-error-remedy/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/surenny/jingzhang-same-error-remedy": "formal"
       },
-      "total_bytes": 2053218,
+      "total_bytes": 4385112,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -141,7 +155,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 14,
+        "known_metric_refs_required": 19,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -149,7 +163,7 @@
           "standard": 5,
           "depth": 14,
           "data": 10,
-          "metric": 9
+          "metric": 10
         }
       }
     },

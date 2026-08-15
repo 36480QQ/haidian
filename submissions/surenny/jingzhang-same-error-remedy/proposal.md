@@ -43,11 +43,15 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 三区两翼承担不同职责：众智园做无真实个人信息的版本追查和误纳/漏纳压力测试；AI 原点社区做影响范围、人权利与无障碍通知共评；大钟寺做跨纸面、电话、柜台和线上入口的补救演练。中关村科技服务翼支持标准、法律与技术服务，小月河场景赋能翼验证公众可理解、可退出和普通服务连续；全部协同关系均为邀请性概念，不是已确定合作。
 
+![Agent.1 命名、识别与总体结构专属图板](assets/figures/agent-1-identity.png)
+
 ### Agent.2｜生态案例与要素
 
 六个国际公开案例仅用于提出问题：Amsterdam 与 Helsinki 算法登记提示用途、影响和联系人透明；UK Service Standard 提醒从完整用户任务和辅助渠道审查服务；NIST AI RMF 提供持续风险回路；Smart Kalasatama 与 Punggol Digital District 提供限时试验、教育—园区—社区协同的背景。[source:CASE-AMSTERDAM-ALGORITHM-REGISTER] [source:CASE-HELSINKI-AI-REGISTER] [source:CASE-UK-GOVERNMENT-DESIGN-PRINCIPLES] 它们不是中国法律、本地绩效或制度移植依据。
 
 八项生态要素形成受限闭环：土地只承载可撤室内组件；空间组织普通入口、保全、复核、补救和申诉；产业连接模型、规则、数据、接口与公共服务责任；资金按补救结果、普通服务连续和删除完成度分阶段讨论；人才由一线服务、无障碍、隐私、法律和工程配对；算力优先离线小型；数据限冻结版本与合成记录；场景先做无个人数据桌演。[depth:renewal_project_list]
+
+![Agent.2 案例问题、生态要素与产业—空间映射专属图板](assets/figures/agent-2-ecosystem.png)
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -86,7 +90,9 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 | 11 AI-off 纸面追查 | 三处重点区 | 关闭 | 版本清单、抽样、人工通知完成同一任务 |
 | 12 去标识结案摘要 | 公开复盘面 | 起草可编辑摘要 | 人工确认不含个人、群体标签或官方背书 |
 
-四项行业/专业验证分别检验版本追查、误纳/漏纳、通知安全和 AI-off 等价；均使用 60 条无真实个人信息的合成记录，其中 12 条共享同一错误版本、仅 1 人投诉、4 条缺字段或有歧义。测试记录其余 11 人无需新投诉被找回的比例、误纳/漏纳、重复举证步骤、暂停时延、普通服务连续和临时关联删除，但这些只是合成流程结果，不是现场绩效。[source:SAME-ERROR-SYNTHETIC-FIXTURES] [metric:industry_test_scenario_count]
+四项行业/专业验证分别检验版本追查、人工纳排、通知/退出安全和 AI-off 等价；`synthetic-test-fixtures.json` 逐条保存 60 条无真实个人信息的 fixture，其中 12 条共享同一错误版本、仅 1 条含投诉、4 条缺字段或有歧义。确定性脚本的包内结果为：12/12 同版本记录均被提示且 48/48 对照未被提示；8 条被人工纳入、4 条歧义转人工澄清；不安全通知为 0，3 条退出请求均生成删除结果；60/60 条普通服务保持。每项同时记录预期、实际和失败分支，任何不一致都使演练停止。这些只证明候选规则在合成 fixture 上可审计，不证明真实主动找回率、误纳率、通知安全、补救时长或现场服务连续。[source:SAME-ERROR-SYNTHETIC-FIXTURES] [metric:synthetic_test_pass_count] [metric:synthetic_persona_script_count]
+
+![Agent.3 场景、画像与可审计测试专属图板](assets/figures/agent-3-scenarios.png)
 
 ## 用地、建筑规模与拆改留方案
 
@@ -116,9 +122,13 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 三座概念地标不是雕塑，而是可读责任节点：众智园“首错证据灯”只在人工确认后亮起；AI 原点“影响范围刻度庭”展示纳排规则和退出缺口；大钟寺“同补回执墙”展示去标识补救进度与未结事项。六件可撤组件为错误版本柜、范围刻度桌、无障碍通知台、同错补救台、独立复核桌和删除回执盒。[source:TASKBOOK-DELIVERABLES] [depth:public_space_character]
 
+![Agent.4 地标、荣誉展示与组件库专属图板](assets/figures/agent-4-landmarks.png)
+
 ### Agent.5｜文化叙事与国际传播
 
 文化叙事是“同轨发现、同站补位”：京张的公共记忆不被消费成装饰，而成为机构不能把同一系统错误拆回每个人独自承担的责任隐喻。英文传播固定区分 `confirmed systemic error`、`candidate record`、`human inclusion/exclusion` 和 `equal remedy`，避免把候选关联误译为群体认定。年度展陈明确标注概念建议、合成数据、临时几何和未获批准状态。
+
+![Agent.5 空间叙事、导视和国际传播专属图板](assets/figures/agent-5-culture.png)
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -135,11 +145,13 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 长期运营建议为“同错同补公开周”：季度合成故障演练、半年未投诉者遗漏审查、年度 AI-off 纸面追查和国际公共补救论坛。开发者贡献仅限合成夹具、版本比较、无障碍通知模板和删除验证；不得接触真实个人档案。每次活动输出错误版本、人工角色、纳排规则、误纳/漏纳、重复举证步骤、普通服务连续和退出回执，活动无人负责或无法删除临时关联即取消。[source:TASKBOOK-DELIVERABLES]
 
+![Agent.6 年度活动、开发者路径与停止规则专属图板](assets/figures/agent-6-operations.png)
+
 ## 指标体系、面积复算与合规矩阵
 
 三项 formal 核心视觉指标从提交的临时几何复算：`site_area_sqm`、`green_ratio`、`public_space_ratio` 均为低置信度设计模型值，并与离线 visual 的 `data-value` 一致；它们不表示官方面积、现状比例或绩效。FAR、建筑高度、误纳率、漏纳率、主动找回率、重复举证减少率、补救时长、通知拒收安全和普通服务连续率均保持待真实制度、样本和专业复核后测量。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
 
-`compliance_matrix.json` 逐项覆盖公告 1.3—1.5 与 agent.1—agent.6；`standard_matrix.json` 逐项响应本地标准快照；`design_depth_matrix.json` 把现状缺口、三层范围、空间结构、用地、建筑、交通、市政、蓝绿、三重点区、项目、分期、指标和风险连接到专属证据。矩阵完成只表示包内证据存在，不表示专业结论或实施批准。[depth:metrics_recalculation]
+`compliance_matrix.json` 逐项覆盖公告 1.3—1.5 与 agent.1—agent.6；六项智能体任务分别指向自己的图板、结构化输出、差异化几何/指标和离线 dashboard 锚点，不再复用同一证据清单。`standard_matrix.json` 逐项响应本地标准快照；`design_depth_matrix.json` 把现状缺口、三层范围、空间结构、用地、建筑、交通、市政、蓝绿、三重点区、项目、分期、指标和风险连接到专属证据。矩阵完成只表示包内证据存在，不表示专业结论或实施批准。[depth:metrics_recalculation]
 
 ![已知包内计数与待现场验证指标](assets/figures/metrics-evidence.png)
 

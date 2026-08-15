@@ -43,11 +43,15 @@ The Chinese name links a shared error to equal remedy; the English name states t
 
 Zhongzhiyuan hosts synthetic version tracing and false-inclusion/omission stress tests. AI Origin hosts co-review of impact scope, human rights, and accessible notice. Dazhongsi hosts cross-paper, phone, desk, and web remedy rehearsal. The Zhongguancun Technology Service Wing supports standards, law, and engineering; the Xiaoyue River Scenario Empowerment Wing tests public intelligibility, exit, and ordinary-service continuity. These are invitations for collaboration, not confirmed partnerships.
 
+![Agent.1 dedicated identity and overall-structure board](assets/figures/agent-1-identity.en.png)
+
 ### Agent.2 | Ecosystem Cases and Inputs
 
 Six public international cases supply questions only. Amsterdam and Helsinki algorithm registers prompt purpose, impact, and contact disclosure. The UK Service Standard prompts whole-task and assisted-channel review. NIST AI RMF offers a continuous risk loop. Smart Kalasatama and Punggol Digital District offer background on time-limited experimentation and education-district-community coordination.[source:CASE-AMSTERDAM-ALGORITHM-REGISTER] [source:CASE-HELSINKI-AI-REGISTER] [source:CASE-UK-GOVERNMENT-DESIGN-PRINCIPLES] None is Chinese law, local performance evidence, or a transplantable institution.
 
 Eight inputs form a bounded loop. Land carries removable indoor components. Space links ordinary entrances, preservation, review, remedy, and appeal. Industry connects model, rule, data, interface, and public-service accountability. Funding is discussed in phases against remedy, continuity, and deletion. Talent pairs frontline service, accessibility, privacy, law, and engineering. Compute stays small and offline. Data is limited to frozen versions and synthetic records. Scenarios begin with no-personal-data table rehearsals.[depth:renewal_project_list]
+
+![Agent.2 dedicated case-question, ecosystem, and industry-space board](assets/figures/agent-2-ecosystem.en.png)
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -86,7 +90,9 @@ Six task personas are the first reporter, a silent co-affected person, a person 
 | 11 AI-off paper tracing | All key areas | Off | Version list, sampling, and human notice finish task |
 | 12 De-identified closure | Public review surface | Draft editable summary | Human removes personal/group labels and endorsement claims |
 
-Four industry/professional tests cover version tracing, false inclusion/omission, notification safety, and AI-off equivalence. They use 60 synthetic records with no real personal information: 12 share one error version, only one complains, and four contain missing or ambiguous fields. Measures include recovery of the other 11 without new complaints, false inclusion, omission, repeated-proof steps, pause delay, ordinary-service continuity, and link deletion. These are synthetic workflow results, never field performance.[source:SAME-ERROR-SYNTHETIC-FIXTURES] [metric:industry_test_scenario_count]
+Four industry/professional tests cover version tracing, human inclusion/exclusion, notice/exit safety, and AI-off equivalence. `synthetic-test-fixtures.json` stores all 60 no-personal-data fixtures row by row: 12 share one error version, only one has a complaint, and four have missing or ambiguous fields. The deterministic package result is: 12/12 shared-version records surfaced and 48/48 controls did not; eight included and four held for human clarification; zero unsafe notices and all three requested exits deleted; ordinary service preserved for 60/60. Every suite records expected, actual, and a failure branch, and any mismatch stops the rehearsal. This demonstrates auditable behavior on synthetic fixtures only; it does not establish real recovery, false inclusion, notice safety, remedy time, or service continuity.[source:SAME-ERROR-SYNTHETIC-FIXTURES] [metric:synthetic_test_pass_count] [metric:synthetic_persona_script_count]
+
+![Agent.3 dedicated scenario, persona, and auditable-test board](assets/figures/agent-3-scenarios.en.png)
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -116,9 +122,13 @@ Seven gates are `REPORT`, `PRESERVE`, `CONFIRM`, `SCOPE`, `REVIEW`, `REMEDY`, an
 
 The three conceptual landmarks are readable accountability nodes, not sculptures. Zhongzhiyuan's First-Error Evidence Light activates only after human confirmation. AI Origin's Impact-Scope Court displays inclusion/exclusion and exit gaps. Dazhongsi's Equal-Remedy Receipt Wall shows de-identified remedy and unresolved matters. Six removable components are the error-version cabinet, scope ruler table, accessible notice desk, equal-remedy desk, independent review table, and deletion receipt box.[source:TASKBOOK-DELIVERABLES] [depth:public_space_character]
 
+![Agent.4 dedicated landmark, honor-display, and component-library board](assets/figures/agent-4-landmarks.en.png)
+
 ### Agent.5 | Cultural Narrative and International Communication
 
 The cultural narrative is “shared track, shared repair.” Jing-Zhang memory becomes a responsibility metaphor: an institution cannot fragment one confirmed system failure back into many isolated personal burdens. English communication consistently separates `confirmed systemic error`, `candidate record`, `human inclusion/exclusion`, and `equal remedy`, so a temporary candidate link is never translated as a group determination. Every annual exhibit labels the work as concept, synthetic data, provisional geometry, and unapproved.
+
+![Agent.5 dedicated spatial-story, signage, and international-copy board](assets/figures/agent-5-culture.en.png)
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -135,11 +145,13 @@ Phasing is not a construction promise. Phase 1 runs only 60 no-personal-data syn
 
 The proposed annual program is Equal-Remedy Open Week: quarterly synthetic fault rehearsal, semiannual audit of silent co-affected omissions, annual AI-off paper tracing, and an international public-remedy forum. Developers contribute only synthetic fixtures, version comparison, accessible-notice templates, and deletion verification. Each event records error version, human roles, inclusion/exclusion rules, false inclusion, omission, repeated-proof steps, ordinary-service continuity, and exit receipts. No accountable person or no deletion means cancellation.[source:TASKBOOK-DELIVERABLES]
 
+![Agent.6 dedicated annual-event, developer-path, and stop-rule board](assets/figures/agent-6-operations.en.png)
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 The three formal visual metrics—`site_area_sqm`, `green_ratio`, and `public_space_ratio`—are recomputed from submitted provisional geometry and match the offline visual `data-value` fields. They are low-confidence design-model values, not official area, existing-condition ratio, or performance. FAR, height, false inclusion, omission, proactive recovery, repeated-proof reduction, remedy time, notification safety, and ordinary-service continuity await real procedure, samples, and professional review.[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
 
-`compliance_matrix.json` separately covers announcement 1.3–1.5 and agent.1–agent.6. `standard_matrix.json` responds to each local reference snapshot. `design_depth_matrix.json` links data gaps, scopes, structure, land, buildings, transport, utilities, blue-green systems, three key areas, projects, phases, metrics, and risks to dedicated evidence. Matrix completion means package evidence exists; it is not professional approval.[depth:metrics_recalculation]
+`compliance_matrix.json` separately covers announcement 1.3–1.5 and agent.1–agent.6. Each Agent task points to its own board, structured output, differentiated geometry/metrics, and offline-dashboard anchor instead of one repeated evidence list. `standard_matrix.json` responds to each local reference snapshot. `design_depth_matrix.json` links data gaps, scopes, structure, land, buildings, transport, utilities, blue-green systems, three key areas, projects, phases, metrics, and risks to dedicated evidence. Matrix completion means package evidence exists; it is not professional approval.[depth:metrics_recalculation]
 
 ![Known package counts and field metrics still requiring evidence](assets/figures/metrics-evidence.en.png)
 
