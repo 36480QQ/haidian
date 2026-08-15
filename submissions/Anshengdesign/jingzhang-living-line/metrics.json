@@ -280,6 +280,149 @@
         "控规容积率/建筑规模待官方数据补齐；不得给出审定容积率"
       ],
       "reason": "控规容积率与建筑规模条件未公开，待官方数据补齐后按 total_floor_area/site_area 复算；本包不给出审定容积率。"
+    },
+    "corridor_intersection_density_per_km2": {
+      "status": "known",
+      "value": 39.0,
+      "unit": "1/km2",
+      "source_files": [],
+      "formula": "Toledo-style intersection density (corridor band, C4b script)",
+      "confidence": "medium",
+      "assumptions": [
+        "OSM-based; zones are analytical definitions"
+      ]
+    },
+    "campus_intersection_density_per_km2": {
+      "status": "known",
+      "value": 167.0,
+      "unit": "1/km2",
+      "source_files": [],
+      "formula": "Toledo-style intersection density (campus belt)",
+      "confidence": "medium",
+      "assumptions": [
+        "OSM-based"
+      ]
+    },
+    "grid_intersection_density_per_km2": {
+      "status": "known",
+      "value": 65.2,
+      "unit": "1/km2",
+      "source_files": [],
+      "formula": "Toledo-style intersection density (grid new town)",
+      "confidence": "medium",
+      "assumptions": [
+        "OSM-based"
+      ]
+    },
+    "corridor_reach_400m_mean": {
+      "status": "known",
+      "value": 24.0,
+      "unit": "count",
+      "source_files": [],
+      "formula": "mean nodes reachable within 400m (corridor band, C4b)",
+      "confidence": "medium",
+      "assumptions": [
+        "metric (shortest-path)"
+      ]
+    },
+    "campus_reach_400m_mean": {
+      "status": "known",
+      "value": 53.7,
+      "unit": "count",
+      "source_files": [],
+      "formula": "mean nodes reachable within 400m (campus belt)",
+      "confidence": "medium",
+      "assumptions": [
+        "metric"
+      ]
+    },
+    "poi_xueyuanqiao_int_pct": {
+      "status": "known",
+      "value": 97.5,
+      "unit": "percentile",
+      "source_files": [],
+      "formula": "POI syntactic placement: whole-network integration percentile (Xueyuanqiao)",
+      "confidence": "medium",
+      "assumptions": [
+        "segment-node graph"
+      ]
+    },
+    "poi_tsinghuayuan_int_pct": {
+      "status": "known",
+      "value": 93.5,
+      "unit": "percentile",
+      "source_files": [],
+      "formula": "POI syntactic placement: Tsinghuayuan Station heritage site",
+      "confidence": "medium",
+      "assumptions": [
+        "segment-node graph"
+      ]
+    },
+    "poi_dazhongsi_int_pct": {
+      "status": "known",
+      "value": 20.2,
+      "unit": "percentile",
+      "source_files": [],
+      "formula": "POI syntactic placement: Dazhongsi Station",
+      "confidence": "medium",
+      "assumptions": [
+        "segment-node graph"
+      ]
+    },
+    "poi_wudaokou_int_pct": {
+      "status": "known",
+      "value": 57.1,
+      "unit": "percentile",
+      "source_files": [],
+      "formula": "POI syntactic placement: Wudaokou Station",
+      "confidence": "medium",
+      "assumptions": [
+        "segment-node graph"
+      ]
+    },
+    "ecosystem_ai_enterprises_bj": {
+      "status": "known",
+      "value": 2400,
+      "unit": "count",
+      "source_files": [],
+      "formula": "Beijing AI enterprises (public reporting, ecosystem data draft)",
+      "confidence": "medium",
+      "assumptions": [
+        "approximate; see sources ecosystem entry"
+      ]
+    },
+    "ecosystem_registered_models": {
+      "status": "known",
+      "value": 123,
+      "unit": "count",
+      "source_files": [],
+      "formula": "Beijing registered foundation models (public)",
+      "confidence": "medium",
+      "assumptions": [
+        "approximate"
+      ]
+    },
+    "ecosystem_compute_eflops": {
+      "status": "known",
+      "value": 45,
+      "unit": "EFLOPS",
+      "source_files": [],
+      "formula": "Beijing intelligent compute scale (public)",
+      "confidence": "medium",
+      "assumptions": [
+        "approximate"
+      ]
+    },
+    "ecosystem_hukou_threshold": {
+      "status": "known",
+      "value": 117,
+      "unit": "point",
+      "source_files": [],
+      "formula": "Beijing points-based hukou threshold (public)",
+      "confidence": "medium",
+      "assumptions": [
+        "public; evidence of the dramatic tension"
+      ]
     }
   }
 }
