@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.24 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.25 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "52296a782ec8ea2fd6ea2564ce574f1a89dc67a62a6179685c15206ada03c53e"
+      "sha256": "c105017376af60f0659094c102b0bfde0db87908ba43d385efec03a9d62a6a62"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "64ba14df5df060f950fa1956a9dbf48a69982ddf2c7695d853d93d0e67622115"
+      "sha256": "6b9c9f911ef423f4d0eb292e9702f4932c02b9d3a5522d955654ed16a8a96071"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7ae7bde6acb0c1758bed4829353d88abd95adeb44437b5434db0708ee2a1d3a0"
+      "sha256": "e471a944d06198d83b1a614aebf6c58a63f7dac9d6f0bf07b4483566116c370c"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4d9452e4d67eed6ef619d186b526e267c0cb1a6349af161b16363f4542746d90"
+      "sha256": "c947989f6d97f3f0d78574e01f6106f4aa122aebfc469eaf788eaffaef0aa1d3"
     },
     {
       "path": "report/narrative.md",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "1985b8d25a7354f1396e4198f6c701a4b0cdfdf58d8554d3f79de7d4b87c9245"
+      "sha256": "e64d2cc4b94cdf00ffe936c69f670685db541906595d6d757ec7b52e62931e58"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "04d251b471e5e4d9cc891ed15b0ea938f3334ec2579ca953954308332682cc1e"
+      "sha256": "7ba055c895e3da316d19c5b0f65c216180a9ea570ccab355ff60de3f6541e775"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8f275e10be54ef867cce94256a0f775650740156cd72081f0248c35c43b5f176"
+      "sha256": "5d92c8629e85d9db3ee075d5a5e6510b900a97eb520f38f700d9000cc6504fd6"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "660390147fdc12ac0886e94eb3fa15db364a144dd60941c4cd0f456df217c288"
+      "sha256": "be77c937de859f9e0173c792d17147e21355b393bcfbeb387e2476340544edc5"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -454,7 +454,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "043bcb8bef0971f2c1feba963c1b7db6aac4870999f239258ddee79b69383c54"
+      "sha256": "5d4c6553186b4bdde88df59c5e925c8553f38f1706a8d8f5f6cf34f890bb28d0"
     },
     {
       "path": "assets/media/cover.webp",
@@ -595,7 +595,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "a4bac5921fff95db69b65a6b015efb40111614b78849f67dc5d6c6cf00c2a402"
+      "sha256": "fbcce26719a1f5c921ba29e7f228cbce1ee8f1caa2553691ffca4fbba7c7fb6f"
     },
     {
       "path": "visual/assets/scene-provenance.json",
