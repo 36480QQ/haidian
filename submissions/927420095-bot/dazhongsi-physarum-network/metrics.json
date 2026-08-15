@@ -154,6 +154,19 @@
       "assumptions": [
         "Method-validation evidence; Plan03 urban-integration plan recommended."
       ]
+    },
+    "test_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(test_scenarios) in simulation.json",
+      "confidence": "high",
+      "assumptions": [
+        "Three proposed validation scenarios (TOD interchange, stormwater resilience, community accessibility); not yet executed, marked status=proposed."
+      ]
     }
   }
 }

@@ -60,6 +60,36 @@
       "source_type": "agent_generated_design",
       "usage": "Author's real Physarum + NSGA-II run (167-edge network, optimal efficiency 19.20, heritage objective f3≡f2 [degenerates to cost; no independent site heritage conclusion], Plan03 UDS 80.34). Method-validation evidence only; located ~2-3 km west of the provisional boundary, so not entered as formal geometry. Recorded as metric values in metrics.json and as narrative in proposal.md, not as a geometry layer.",
       "note": "Run artifacts are not committed as geometry; the coordinate offset makes direct spatial reuse invalid for this site."
+    },
+    {
+      "id": "CASE-QUAYSIDE",
+      "source_type": "official_public",
+      "usage": "Sidewalk Labs Quayside (Toronto). Public-reporting reference for data-governance commitment mechanisms (sensor network, adaptive building, data trust; launched 2017, cancelled 2020). Used for method comparison only, not replicated.",
+      "note": "Public reporting / official project material; quantitative indicators to be verified against official sources (待核实)."
+    },
+    {
+      "id": "CASE-MASDAR",
+      "source_type": "official_public",
+      "usage": "Masdar City (Abu Dhabi). Public-reporting reference for low-carbon block and new feeder mobility (passive cooling, early PRT pilot). Used for method comparison only.",
+      "note": "Public reporting / official project material; some zero-carbon targets were later adjusted; indicators to be verified (待核实)."
+    },
+    {
+      "id": "CASE-SONGDO",
+      "source_type": "official_public",
+      "usage": "Songdo International Business District (Incheon). Public-reporting reference for new-infrastructure and urban-sensing integration (U-City, central pneumatic waste collection). Used for method comparison only.",
+      "note": "Public reporting / official project material; indicators to be verified (待核实)."
+    },
+    {
+      "id": "CASE-AMSTERDAM",
+      "source_type": "official_public",
+      "usage": "Amsterdam Smart City (Netherlands). Public-reporting reference for incremental renewal and multi-party governance (living-lab pilots on energy/water/mobility). Used for method comparison only.",
+      "note": "Public reporting / official project material; indicators to be verified (待核实)."
+    },
+    {
+      "id": "CASE-XIONGAN",
+      "source_type": "official_public",
+      "usage": "Xiong'an New Area (Hebei). Public-reporting reference for CIM digital twin, blue-green network, underground utility tunnels, and green mobility. Used for method comparison only; this proposal is renewal, not a new town.",
+      "note": "Public reporting / official project material; indicators to be verified (待核实)."
     }
   ]
 }

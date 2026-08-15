@@ -15,20 +15,35 @@
       "proposal_files": [
         "submissions/927420095-bot/dazhongsi-physarum-network/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/927420095-bot/dazhongsi-physarum-network/changelog.md"
+      ],
       "changed_files": [
         "submissions/927420095-bot/dazhongsi-physarum-network/agent.json",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/brand_identity.en.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/brand_identity.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/gantt_chart.en.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/gantt_chart.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/key-areas.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/key-areas.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/land-use-structure.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/land-use-structure.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-counts.en.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-counts.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-efficiency.en.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-efficiency.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-evidence.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-evidence.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-objectives.en.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-objectives.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/mobility-bluegreen.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/mobility-bluegreen.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/parameter_sensitivity.en.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/parameter_sensitivity.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/site-overview.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/site-overview.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assumptions.json",
+        "submissions/927420095-bot/dazhongsi-physarum-network/changelog.md",
         "submissions/927420095-bot/dazhongsi-physarum-network/compliance_matrix.json",
         "submissions/927420095-bot/dazhongsi-physarum-network/design_depth_matrix.json",
         "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a0-boards.en.pdf",
@@ -62,7 +77,7 @@
       "ai_package_stages": {
         "submissions/927420095-bot/dazhongsi-physarum-network": "formal"
       },
-      "total_bytes": 5724049,
+      "total_bytes": 5849348,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -144,7 +159,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 11,
+        "known_metric_refs_required": 12,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {

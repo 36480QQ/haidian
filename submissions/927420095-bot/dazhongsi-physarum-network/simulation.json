@@ -2,7 +2,38 @@
   "schema_version": "0.1.0",
   "title": "Bio-Physarum + NSGA-II simulation record (method validation)",
   "status": "method_validation_off_site",
-  "scope_note": "This run is method-validation evidence only. Its network lies ~2-3 km west of the provisional site boundary (~140 m overlap), so it is NOT entered as formal geometry and no coordinate translation/fabrication is performed. The four-objective f3 (heritage impact) degenerates to f2 (cost) — i.e. f3≡f2 — because the public site package provides no official heritage geometry with a non-default heritage_factor; consequently the recorded '0 heritage crossings' is only the g1 hard-constraint (protection_scope) crossing count, NOT an independent in-site heritage-protection compliance conclusion.",
+  "scope_note": "This run is method-validation evidence only. Its network lies ~2-3 km west of the provisional site boundary (~140 m overlap), so it is NOT entered as formal geometry and no coordinate translation/fabrication is performed. The public site package provides no official heritage geometry. The author's own manually-digitized heritage boundary (data/heritage/heritage_boundary.geojson, MODEL credibility / trust B, penalties class_I=1.5 & class_IV=3.0, protection_scope=hard block) is loaded by the evaluator; in the H2-seg3 Pareto results the optimized skeleton (top-10% conductivity) edges do not fall inside the class_I/class_IV penalty zones, so f3≡f2 numerically. The recorded '0 heritage crossings' is therefore the g1 hard-constraint (protection_scope) crossing count only, NOT an independent in-site heritage-protection compliance conclusion.",
+  "reproducibility": {
+    "doc": "proposal.md#可复现性说明（方法验证）",
+    "status": "documented",
+    "environment": {
+      "os": "Windows 11 Home China 10.0.26200",
+      "python": "3.14.6",
+      "numpy": "2.5.1",
+      "pymoo": "0.6.2",
+      "shapely": "2.1.2",
+      "networkx": "3.6.1",
+      "matplotlib": "3.11.1"
+    },
+    "entry_point": "code/phase6_h/h2_seg.py",
+    "commands": [
+      "python code/phase6_h/h2_seg.py 1",
+      "python code/phase6_h/h2_seg.py 2",
+      "python code/phase6_h/h2_seg.py 3"
+    ],
+    "seed": 42,
+    "input_data": [
+      "data/gis/roads.geojson",
+      "data/gis/verified_nodes.json",
+      "data/heritage/heritage_boundary.geojson",
+      "data/osm/osm_parks.json",
+      "data/osm/osm_railways.json",
+      "data/osm/osm_subway.json",
+      "data/osm/osm_roads.json"
+    ],
+    "bit_exact_note": "NSGA-II runs multi-process (n_proc=8); evaluation order and float reduction vary by OS/hardware, so bit-exact reproduction is not guaranteed and objective values are approximate.",
+    "heritage_geometry_note": "data/heritage/heritage_boundary.geojson is manually digitized (MODEL credibility, trust B, geometry_origin=manual_digitization), NOT official redline geometry; its legal basis is the official four-side text (京政发〔1984〕128号 / 文物局 2018-01-02 公告), while the statutory map and redline drawing are marked 未获取 (not obtained)."
+  },
   "algorithm": {
     "method": "bio_physarum_adaptive_network + NSGA-II",
     "physarum_reference": "Tero A. et al. (2010) Rules for biologically inspired adaptive network design, Science 327(5964): 439-442. DOI 10.1126/science.1177894",
@@ -35,7 +66,7 @@
     "objectives": {
       "f1": { "name": "network_efficiency", "direction": "maximize", "note": "stored negated for minimization" },
       "f2": { "name": "construction_cost", "direction": "minimize", "unit": "m", "note": "sum of network edge lengths" },
-      "f3": { "name": "heritage_impact", "direction": "minimize", "unit": "m", "note": "sum of length x heritage_factor; heritage_factor defaults to 1.0 in the absence of official heritage geometry, so f3 ≡ f2" },
+      "f3": { "name": "heritage_impact", "direction": "minimize", "unit": "m", "note": "sum of length x heritage_factor; the manually-digitized heritage boundary (MODEL credibility) assigns class_I=1.5 / class_IV=3.0, but the optimized skeleton edges do not fall inside these penalty zones, so f3 ≡ f2 in the recorded results" },
       "f4": { "name": "service_coverage", "direction": "maximize", "note": "stored negated for minimization" }
     }
   },
@@ -87,5 +118,40 @@
     "physarum_run7_frozen_objective": { "value": 2.801701286151908, "source": "run7 after.efficiency (physarum_revision/run7/metrics.json)" },
     "physarum_heritage_crossing_count": { "value": 0, "source": "run7 heritage_conflicts.protection_scope = 0 (g1 hard constraint)", "note": "g1 hard-constraint behavior only. Run7 also records class_I_control = 0 and class_IV_control = 4, and f3≡f2 because no official heritage geometry is supplied; this value is NOT an independent in-site heritage-protection compliance conclusion." },
     "physarum_recommended_plan_uds": { "value": 80.34, "source": "phase5 round2 expert review mean score for plan_03 (城市融合), round2_summary.md", "note": "plan_03 genotype = D (综合均衡) fused with C (覆盖优先); skeleton_n_edges = 167, skeleton_total_length_m = 8813.1." }
-  }
+  },
+  "test_scenarios": [
+    {
+      "scenario_id": "test-tod-interchange",
+      "name": "大钟寺站 TOD 换乘验证 (Dazhongsi station TOD interchange)",
+      "status": "proposed",
+      "object": "Dazhongsi station (Beijing Subway Line 13) four-quadrant pedestrian connectivity and rail interchange",
+      "standard_basis": ["GB 50763-2012 无障碍设计规范", "GB/T 51328-2018 城市综合交通体系规划标准"],
+      "metric_target": "Barrier-free interchange flow throughout; station feeder axis aligned to the conceptual primary vein (geometry/roads.geojson ROAD-001)",
+      "method": "Walkability network analysis + barrier-free interchange flow check",
+      "data_pending": "Official station CAD/redline",
+      "note": "Suggested validation scenario; not yet executed. Await official station geometry."
+    },
+    {
+      "scenario_id": "test-stormwater-resilience",
+      "name": "小月河雨洪韧性验证 (Xiaoyue River stormwater resilience)",
+      "status": "proposed",
+      "object": "Blue-green corridor and permeable paving along Xiaoyue River",
+      "standard_basis": ["海绵城市建设技术指南——低影响开发雨水系统构建（试行）", "GB 50014 室外排水设计规范"],
+      "metric_target": "Recommended Plan03 design values: permeable paving ratio 0.691 (69.1%), green penetration 0.2517 (25.2%) — author Phase4 output plan_03_fusion_round2, pending official review",
+      "method": "Catchment runoff-coefficient calculation + permeability recheck",
+      "data_pending": "River blue line and pipe network data",
+      "note": "Suggested validation scenario; not yet executed. Design values are the author's Phase4 output, not an official acceptance metric."
+    },
+    {
+      "scenario_id": "test-community-accessibility",
+      "name": "AI 原点社区可达性验证 (AI Origin community accessibility)",
+      "status": "proposed",
+      "object": "Campus-park-block slow stitching of the Beijing AI Origin community",
+      "standard_basis": ["GB 50763-2012 无障碍设计规范"],
+      "metric_target": "Slow loops of the three key areas cover community-service and outcome-conversion nodes; continuous barrier-free passage",
+      "method": "Slow-network connectivity and barrier-free continuity check",
+      "data_pending": "Existing road network and ownership data",
+      "note": "Suggested validation scenario; not yet executed. Await existing network and ownership data."
+    }
+  ]
 }
