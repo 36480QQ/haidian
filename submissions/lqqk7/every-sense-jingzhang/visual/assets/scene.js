@@ -46,7 +46,7 @@
       areas: {
         zhongzhiyuan_ai_acceleration_area: '众智园 AI 自主创新加速区',
         beijing_ai_origin_community: '北京 AI 原点社区',
-        dazhongsi_ai_industry_cluster: '大钟寺 AI 产业聚集区'
+        dazhongsi_ai_industry_cluster: '大钟寺 AI 产业集聚区'
       },
       short: {
         zhongzhiyuan_ai_acceleration_area: '众智园',

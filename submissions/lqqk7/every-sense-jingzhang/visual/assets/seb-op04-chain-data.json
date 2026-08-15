@@ -22,7 +22,7 @@
   "key_area_feature_id": "PROV-KEY-003",
   "work_package_id": "JZ-01",
   "gate_id_at_run": "G0",
-  "selection_rule_zh": "选点由三条可在提交数据上直接核对的条件确定，不由主观挑选，也不引用任何本包之外的排序结果。第一条即已唯一确定本节点：OP-04 是十个独立完成点中唯一 gate_id 仍为 G0 的节点，即唯一一个连资料与许可这道门都还没过的点位。第二条：它是十个点位中唯一承接场景卡 S04 轮椅与婴儿车连续通行辅助的节点，任务形态最接近一次可核算的通行。第三条：它位于大钟寺 AI 产业聚集区临时范围内，工作包归属 JZ-01，而 JZ-01 审计结论覆盖大钟寺段又是 JZ-04 的前置，结论影响面最广。",
+  "selection_rule_zh": "选点由三条可在提交数据上直接核对的条件确定，不由主观挑选，也不引用任何本包之外的排序结果。第一条即已唯一确定本节点：OP-04 是十个独立完成点中唯一 gate_id 仍为 G0 的节点，即唯一一个连资料与许可这道门都还没过的点位。第二条：它是十个点位中唯一承接场景卡 S04 轮椅与婴儿车连续通行辅助的节点，任务形态最接近一次可核算的通行。第三条：它位于大钟寺 AI 产业集聚区临时范围内，工作包归属 JZ-01，而 JZ-01 审计结论覆盖大钟寺段又是 JZ-04 的前置，结论影响面最广。",
   "selection_rule_en": "The choice rests on three conditions checkable directly against the submitted data, not on preference, and cites no ranking from outside this package. The first alone identifies the node uniquely: OP-04 is the only one of the ten independent-completion points whose gate_id is still G0, the only point that has not yet passed even the evidence-and-permission gate. Second, it is the only node carrying scenario card S04, wheelchair and pram continuity assistance, the task closest in form to a trip that can be computed. Third, it sits inside the provisional Dazhongsi AI Industry Cluster under work package JZ-01, and since the JZ-01 audit covering that stretch is a precondition of JZ-04, a conclusion here travels furthest.",
   "selection_checks": {
    "unique_g0_node": {
@@ -89,7 +89,7 @@
      "PROV-KEY-003"
     ],
     "evidence_class": "agent_inferred_from_public_data",
-    "note_zh": "大钟寺 AI 产业聚集区临时粗略范围，公告未给出四至，矩形边不得解释为地块或道路红线。"
+    "note_zh": "大钟寺 AI 产业集聚区临时粗略范围，公告未给出四至，矩形边不得解释为地块或道路红线。"
    }
   ],
   "measured_baseline": {
@@ -435,8 +435,8 @@
    "criteria": [
     {
      "criterion_id": "H1",
-     "zh": "接入段是否可通行：本次核算把接入段处理为直线，直线是否落在可通行地面上未经任何审计。ALT-B 使 OP-09 的接入段达到 341.854 米，该段完全依赖这一未经验证的假定。",
-     "en": "Whether the access stub is walkable: the computation treats it as a straight line, and whether that line lands on walkable ground has been audited by nobody. Under ALT-B the OP-09 stub reaches 341.854 m and rests entirely on that unverified assumption.",
+     "zh": "接入段是否可通行：本次核算把接入段处理为直线，直线是否落在可通行地面上未经任何审计。ALT-B 使 OP-08 的接入段达到 243.585 米，该段完全依赖这一未经验证的假定（OP-09 恰位于新线上，接入段为零）。",
+     "en": "Whether the access stub is walkable: the computation treats it as a straight line, and whether that line lands on walkable ground has been audited by nobody. Under ALT-B the OP-09 stub reaches 243.585 m for OP-08 and rests entirely on that unverified assumption (OP-09 sits on the new link itself, with a zero stub).",
      "verdict_zh": "不通过。接入段假定是本次核算最大的不确定性来源，须在现场审计中优先处理。"
     },
     {
