@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M41",
+      "gate": "sources_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一条来源的权威等级改成 X——组织方规则里的「不入库」档。",
+      "what_en": "Grade one source X, the organisers' never-index level.",
+      "why_zh": "X 档写的是商业地图瓦片、账号内资料、下载密码资料、版权不明图片、非公开图件、个人信息。**落在这一档的来源，不该出现在提交里，而不只是不该出现在这份清单里。**这套分级一直躺在本仓库的规则文件里（中文表格），本包却从未按它说明自己的来源。",
+      "why_en": "X covers commercial map tiles, account-gated and password-protected material, unclear-copyright images, non-public drawings and personal information. A source in X does not belong in a submission at all, not merely in this list. The grading sat in this checkout's rules file the whole time and this package had never described its sources in it."
+    },
+    {
       "id": "M40",
       "gate": "taskbook_coverage.py",
       "target": "proposal.md",
@@ -487,7 +499,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 40,
+  "caught": 41,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
