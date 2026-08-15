@@ -40,8 +40,10 @@
 
 ### 再生实现进度
 
-- 再生实现进度：新增 JSON `0/15`；新增 JavaScript `0/10`；新增重点区图版 `0/30`。
-- 基线存在但尚未再生：根 JSON `9/9`；GeoJSON `9/9`；既有必需图件 `10/10`；PDF `4/4`；叙事/查看器 `8/8`。
+- 再生实现进度（按本账本 C06 逐条具名路径计）：新增 JSON `1/15`；新增 JavaScript `7/10`；新增重点区图版 `30/30`；final addition set `39/56`；C06 全部具名互异路径 `67/84`。
+- 再生实现进度（按工作区实际文件计）：新增文件 `61`（重点区图版 `30`、`visual/assets` JSON `8`、`visual/assets` JavaScript `23`）；已再生既有文件 `16`（根 JSON `4`：`compliance_matrix.json`、`design_depth_matrix.json`、`sources.json`、`standard_matrix.json`；PDF `4/4`；生成 HTML `4`：`report/proposal.html`、`report/proposal.en.html`、`visual/index.html`、`visual/index.en.html`；提案 Markdown `2/2`；GeoJSON `1/9`：`geometry/key_areas.geojson`；`visual/assets/reproduce_physarum.js` `1`）；按 Section 13.1 移除 `regeneration-design.md` `1`。
+- 两个计数不相等的原因：实现所采用的文件分解与 C06 的具名路径表不同——相应职责由 `visual/assets/regeneration-source.json`、`visual/assets/area-plates.json`、`visual/assets/key-area-design.json`、`visual/assets/action-governance.json`、`visual/assets/evidence-map.json`、`visual/assets/source-bibliography.json`、`visual/assets/drawing-placements.json` 与 `build-sources.js`／`build-standards.js`／`build-geometry.js`／`build-ablation.js`／`build-plates.js`／`build-matrices.js` 承担。C06 明确不接受文件名简写或替代，故差额按具名路径如实记为未达成，不作等价折算，也不据此勾选 C06。
+- 尚未再生：根 JSON `5/9`；GeoJSON `8/9`；既有必需图件 `10/10` 保持基线未改。
 - 外部专业依赖保持开放，不计入实现完成率。
 
 ### A — 已由仓库或可信一手证据解决
@@ -99,24 +101,53 @@
 
 ### C — 批准后实施任务
 
-以下 14 项全部保持未勾选。任何说明、代码草稿或本审批文档修改都不能将其标为完成。
+以下 14 项默认保持未勾选。任何说明、代码草稿或本审批文档修改都不能将其标为完成；只有实跑并逐条核验其具名路径、具名测试与可观察验收后才可勾选。
+
+#### C 类勾选判定记录
+
+勾选规则（对 14 项一致适用）：**当且仅当**该项的每一条具名路径都在包内存在、每一项具名测试都实跑通过、且每一条可观察验收都能在包内被验证为真时才勾选；三者缺一即保持未勾选，并在下表写明缺在何处。本账本只定义「已勾选」与「未勾选」两种状态，不定义第三种；被后续条目取代、被本轮范围排除或尚未解决的条目一律记为未勾选，另附取代记录或缺口说明，绝不借勾选框表示。据此，`C02`、`C04` 与 `C07` 勾选，其余 11 项保持未勾选，其中 `C01` 附取代记录、`C06` 附 old→new 路径契约、`C10` 附待官方再生成记录。
+
+`C10` 本轮由已勾选改回未勾选，是本次重审唯一的降级，理由写在下表与其条目内：其可观察验收含「不得手工编辑生成 HTML」，而本轮按指令不运行 `scripts/render_proposal_html.py`，两份 report HTML 的表格单元格是照 renderer 输出逐字手写的。降级如实记录，不以「等效于 renderer 输出」代替「由 renderer 生成」。
+
+任何 C 类勾选都**不**改变、不关闭、也不减弱任何 D 类外部门。D 表仍无复选框，17 个外部门全部保持开放；C 类完成度与 D 类专业权限属于不同命名空间，不可互相推定。
+
+| ID | 判定 | 实测依据与缺口 |
+|---|---|---|
+| `C01` | 未勾选（附取代记录） | extra-`The` 变体在 `proposal.en.md` 与 `report/proposal.en.html` 实测均为 `0`，该迁移已完成。canonical 标题实测 `proposal.en.md` `1` 处、`report/proposal.en.html` `2` 处，合计 `3`，与本项冻结的 `2`／`3`／共 `5` 不符。原因是本项计数写于 `C10` 删除重复顶层标题之前：两份生成 HTML 现各恰有一个 `<h1>`（实测 `1`／`1`），要凑回 `2`-in-md 就必须重新引入 `C10` 删掉的重复标题。冲突如实保留，不复制标题制造计数，也不事后改写原承诺；取代记录见本项条目 |
+| `C02` | **已勾选** | `sources.json` 实测 `41` 条。具名测试 `test-source-normalization.js`（套件 id `source-normalization`）在 `run-contract-tests.js` 内实跑通过，断言 41 条封闭清单与零悬空 source ID。逐 ID 全包计数（排除 `sources.json`、本账本与该测试自身的清单）：`41/41` 条至少出现一次；无有界引用的只有 `PHYSARUM-CHINA-2013` 与 `PHYSARUM-WUHAN-2023`，两条 `reference_state` 均为 `background_only`，各携带双语 `limitations`、`allowed_uses` 与 `prohibited_inferences`，且只出现在书目层 `visual/assets/source-bibliography.json`。`PROCESSED-FACT-PACK` 已获有界引用（`visual/assets/key-area-design.json` 的 `Z-R03` `evidence_refs`），其记录仍写明 `Navigation layer only; not an independent authority source.`。`SCHELLING-1971` 实测 `10` 处、`HOLLING-1973` 实测 `13` 处，两者均出现在 `compliance_matrix.json`。六条 Physarum 记录一条未删。`reference_state` 分布 `cited` `39`／`background_only` `2` |
+| `C03` | 未勾选 | 六个解释性展示面无 reinforcement／pruning／biological optimization／autonomous adaptation 机制声明；`proposal.md` 与 `report/proposal.html` 中仅有的 `生物最优` 出现在禁止句「不是交通需求模型或生物最优证明」之内，属声明上限而非机制主张。决定性缺口不变：本项具名测试——分别检查「保留寄存器」与「解释性文字寄存器」并搜索禁止机制词的 contract test——在包内不存在（`visual/assets/*.js` 中零个文件含该禁止词表），该项无法由自身契约证明 |
+| `C04` | **已勾选** | 四个具名路径 `[assumption:` 实测均为 `0`；`test-evidence-resolution.js` 在套件内实跑通过，判定 `90` 个引用点、`575` 处解析、`0` 处未解析；未修改 `scripts/render_proposal_html.py` |
+| `C05` | 未勾选 | 两个冻结 JSON 的 SHA-256 未变；`node --check` 通过；复算器 `status == "PASS"`、`comparisons == 633`、`derived_metrics == 7`、`mismatch_count == 0`；`assets` 路径为 participant-relative；`24` 条边与 `11/0/connected` 摘要相符；篡改测试 `15` 项中 `14` 项蓄意篡改全部被点名拒绝。唯一且决定性的缺口：具名路径 `visual/assets/participant-test-report.json` 不存在。本轮不生成它：该文件的诚实内容就是「运行这些测试所得的结果」，把某一次运行冻结进包内会在可执行套件之外制造第二个可静默漂移的权威；且没有任何 builder 写出它，`test-clean-build.js` 会把它判为未声明产物。证据仍以实跑套件输出为准 |
+| `C06` | 未勾选（附 old→new 路径契约） | final addition set 实测 `40/56`：JSON 注册表 `2/15`（`visual/assets/gate-registry.json`、`visual/assets/physarum-zero-jitter-ablation.json`）、标准库 JavaScript `7/10`、重点区图版 `30/30`、`changelog.md` `1/1`。缺失的 `13` 个注册表与 `3` 个 builder 的职能已由合并后的架构承担，逐条 old→new 契约见本项条目。不实现重复的兼容文件：同一事实一旦有两个可写位置，就会产生互相冲突的权威，而这正是本包用单一来源记录要消除的失效模式 |
+| `C07` | **已勾选** | 五项具名测试全部在 `run-contract-tests.js` 内实跑通过：claim-ceiling（`M02` 逐条 pin canonical 方法名、`由算法构造保证`／`guaranteed by construction` 与七项 not-computed，`KA-DENOM` 另以条件断言要求任何印出 `57.1%` 的展示面同时印出 `8/14 = 57.1%` 与「不是发现／不证明对北京的最优性」）、threshold-quantization（`KA-QUANT`）、denominator-discipline（`KA-DENOM`）、figure-alt/caption/title（`KA-DENOM` 的五个双语图件 × proposal／report／viewer 三种载体，加 `KA-PUB` 的 `30` 张图版描述）、PDF text-extraction（`KA-GATE`、`KA-DENOM`、`KA-QUANT` 各自从四份 PDF 提取文本）。八个显示字符串 `28.07%`、`28.11%`、`0.03`、`17.48%`、`17.50%`、`0.02`、`1.28`、`0.1125%` 在六个文本展示面实测零缺失且中英两侧一致，四份 PDF 亦零缺失；`17.5%` 全包实测 `0` 处。分母 `11,412,825.386` 与发布值 `11.4` 在六面齐备。`57.1%` 只出现在四个文档面，四面均同时写出 `8/14`；两个 viewer 与四份 PDF 实测不出现 `57.1`，故无未配对的份额语句。阈值同时披露 literal rule 与可达 run count：`0.70`、`0.35`、`45/64`、`0.703125`、`23/64`、`0.359375` 在六面齐备。`320.4`／`199.5`／`1,141.3` 仍为一位小数且双语对称 |
+| `C08` | 未勾选 | `41/41` 记录具备 `title`／`author_or_issuer`／`year` 字段形状且未虚构（未取得处写 `not_transcribed_from_source` 或 `null`，并附 `bibliographic_provenance`）；`BEIJING-METEOROLOGICAL-SEASONAL-QUALIFICATION` 可解析。缺口：二选一本地证据状态实测只覆盖 `7` 条（`repository_local_copy` `6` ＋ `url_only_not_cleared_with_retrieval_hash` `1`），其余 `33` 条为 `url_only_no_retrieval_hash`、`1` 条为 `source_not_selected`，均无检索时哈希；为这 33 条补哈希等于虚构未曾发生的检索，本包拒绝。另有两条具名路径 `visual/assets/bilingual-source.json` 与 `visual/assets/registry-index.json` 不存在，且具名测试之一（validator）本轮按指令不执行 |
+| `C09` | 未勾选 | 单一字体载体 `1` 个且实测 `907 KiB ≤ 4 MiB`；四份 PDF 每份 `/FontFile2` `2` 个、`/ToUnicode` `2` 个；A3 各 `16` 页、A0 各 `4` 页；包内无独立 `.ttf/.otf/.woff/.woff2`；双语文本可提取（`KA-GATE` 从四份 PDF 提取到 `13,601`／`33,571`／`21,285`／`56,605` 字符，八个显示字符串逐一命中）。缺口不变：「placement 与 Section 14.7 完全一致」所依赖的 `regeneration-design.md` 已按其自身 Section 13.1 移除（实测不存在），且 `drawing-placements.json` 以点而非毫米记录落位，该条款在包内不可验证 |
+| `C10` | 未勾选（附待官方再生成记录） | 第一条可观察验收成立：两份生成 HTML 各恰有一个 `<h1>`（实测 `1`／`1`）。第二条不成立：本轮按指令不运行 `scripts/render_proposal_html.py`，`report/proposal.html` 与 `report/proposal.en.html` 的若干表格单元格是照 `render_table_cell()`／`render_inline()` 的输出逐字手写的，因此「不得手工编辑生成 HTML」在本轮为假。等效于 renderer 输出不等于由 renderer 生成，故本项由已勾选改回未勾选；待官方 `render_proposal_html.py` 运行并确认两份 HTML 与 renderer 输出逐字节相同后可重新评定 |
+| `C11` | 未勾选 | `proposal.en.md` 的 `13` 个 H2 与 `scripts/validate_submission.py` 的 `REQUIRED_SECTIONS_EN` 顺序与拼写实测完全相等，其中第 5 项的 canonical 拼写是 `Detailed Design of Key Areas` 而非 `Detailed Design Key Areas`，`11` 项差异已归零，可观察验收成立。唯一缺口：具名路径 `visual/assets/bilingual-source.json` 不存在；其职能已由 `visual/assets/regeneration-source.json` 承担，见 `C06` 的 old→new 契约 |
+| `C12` | 未勾选 | 两个 viewer 实测均含完整 `P00`–`P11`（各 `0` 个缺失），英文侧已不再自行重命名。缺口：具名路径 `visual/assets/project-registry.json` 不存在，无法按 registry 逐 ID 比对标题与顺序，该项的具名测试不可执行；其职能已由 `visual/assets/action-governance.json` 的 `actions[12]` 承担，见 `C06` 的 old→new 契约 |
+| `C13` | 未勾选 | `standard_matrix.json` 实测 `11` 条；三项已知 dangling standard（`BARRIER-FREE-ENVIRONMENT-LAW`、`ELDERLY-SMART-TECH-PLAN-2020-45`、`GENERATIVE-AI-INTERIM-MEASURES`）全部登记，零 dangling standard citation。`GB-55019-2021` 与 `DB11-T-2209-2023` 均已进入矩阵，各自 `applicability_status: "unverified"`、`applicability_verified_by: null`、`applicability_record_date: null`、`cleared_clause_text_held: false`、`clauses_cited: []`，并分别显式 cross-reference `D07`／`D08`，附双语 `gate_closure_effect` 明写登记不关闭该门；`mandatory: false` 的含义由双语 `mandatory_meaning` 与 `instrument_class` 分开记录，不否认 GB 55019-2021 自身作为强制性国家规范、自 `2022-04-01` 起施行的法律性质。双语限定段落对称：`proposal.md`／`proposal.en.md` 中 `GB 55019-2021` 各 `2` 处、`DB11/T 2209-2023` 各 `1` 处、`D07` 各 `10` 处、`D08` 各 `6` 处。缺口：具名测试之一（validator）本轮按指令不执行。`D07`、`D08` 仍为无复选框的开放外部门 |
+| `C14` | 未勾选 | `floor_area_ratio` 与 `approved_height_limit_m` 保持 `value: null` 且五字段各 `5/5` 齐全；`official_key_area_area_sqm_001`–`003` 实测 `1921000`／`1043000`／`720000`、`unit: "sqm"`、`status: "known"`、`approximate: true`，公顷显示 `192.1`／`104.3`／`72.0` 在双语提案对称出现；`assumptions.json` 实测 `9` 条并含 `A-TENURE-001`（`status: "unknown"`、`value: null`、`tenure`／`cadastre`／`right_of_way`／`maintenance_duty` 四子字段齐全、`external_gate_refs: ["D04"]`），`maintenance_unit_activated_count` 实测 `0`；`visual/assets/gate-registry.json` 的 `external_evidence_gate` 中 `D04` 为 `checkable: false`、`state: "open"` 并反向引用 `assumptions.json#A-TENURE-001`，`human_design_gate` 恰为 `G1`–`G7`；官方拼写变体 `集聚` 实测 `14` 处、`聚集` 实测 `19` 处，二者均 `> 0`。缺口：具名路径 `visual/assets/metric-crosswalk.json` 与 `visual/assets/claim-limits-registry.json` 不存在；其职能分别由 `visual/assets/evidence-map.json` 与 `visual/assets/regeneration-source.json` 的 `spelling_provenance` 承担，见 `C06` 的 old→new 契约。`D04` 仍为无复选框的开放外部门 |
+
+上表的「已勾选」仅陈述该项自身的具名路径、具名测试与可观察验收在实测中全部成立，不构成对 manifest、self-check、preflight、CI 或提交就绪性的任何声明。
 
 - [ ] **C01 — 英文标题只迁移真实存在的 extra-`The` 变体。**
   - 精确路径：`proposal.en.md`、`report/proposal.en.html`。
   - 精确测试：在包内搜索 `Adaptive Jing-Zhang: The Disagreement Atlas and Reversible City` 与 canonical `Adaptive Jing-Zhang: Disagreement Atlas and Reversible City`；HTML 由 `scripts/render_proposal_html.py` 再生。
   - 可观察验收：旧 extra-`The` 变体为 0；canonical 在 `proposal.en.md` 两处和 `report/proposal.en.html` 三处，共 5 处；不存在的 missing-`and` 变体不作为迁移任务。
+  - 取代记录（计数条款被 `C10` 取代，迁移条款仍然有效）：本项的 `2`／`3`／共 `5` 计数写于 `C10` 删除重复顶层标题之前，两条验收在结构上不可同时为真。对照 `HEAD`：`proposal.en.md` 的 extra-`The` 变体出现在第 `2` 行的 front matter `title:` 与第 `15` 行的 `# ` 顶层标题，共 `2` 处，renderer 据此产出的 `report/proposal.en.html` 共 `3` 处——本项的 `2`／`3`／`5` 正是按这些位置逐一改写为 canonical 而写下的。`C10` 随后删除了第 `15` 行那条重复顶层标题，该位置连同它在 HTML 中的对应项一起消失，canonical 因此只能是 `1` ＋ `2` ＝ `3`。实测：extra-`The` `0`／`0`，canonical `1`（front matter `title:`）／`2`（`<title>` 与 `<h1>`），`<h1>` `1`／`1`。因此本项的迁移条款（extra-`The` 归零）已完成并保持有效，计数条款自 `C10` 生效之日起被取代，不再作为验收依据。本包不复制标题、不重建重复 `<h1>`、也不把 `2`／`3`／`5` 改写成 `1`／`2`／`3` 假装当初就是这样承诺的；勾选框保持未勾选，冲突留在账本里由人评定。
 
-- [ ] **C02 — 关闭来源引用与方法谱系账本。**
+- [x] **C02 — 关闭来源引用与方法谱系账本。**
   - 精确路径：`sources.json`、`compliance_matrix.json`、`design_depth_matrix.json`、`standard_matrix.json`、`proposal.md`、`proposal.en.md`。
   - 精确测试：`node submissions/MartinForReal/adaptive-jingzhang/visual/assets/run-contract-tests.js` 的 source-ID 引用完整性测试。
   - 可观察验收：迁移后 41 条记录中，当前 8 个未用于结构化记录的来源全部有有界引用或 `background` 状态；`SCHELLING-1971` 与 `HOLLING-1973` 在 C/D 论证中实际工作；5 个未使用的 Physarum 论文不删除；`PROCESSED-FACT-PACK` 仅作导航/背景。引用完整性以最终 41 条记录为全集：零悬空 source ID，零无引用且未标 `background` 的记录。
+  - 实跑结果：具名测试为 `visual/assets/test-source-normalization.js`，在 `run-contract-tests.js` 内以 id `source-normalization` 实跑通过；它把 41 个 ID 作为封闭清单逐一 pin，任何增删都会被报为对冻结契约的改动。`sources.json` 实测 `41` 条，零悬空 source ID。逐 ID 全包计数（排除 `sources.json`、本账本与该测试自身的清单三处纯清单载体）：`41/41` 条至少出现一次。仅 `PHYSARUM-CHINA-2013` 与 `PHYSARUM-WUHAN-2023` 没有有界引用，两条 `reference_state` 均为 `background_only`，各自携带双语 `limitations`、`allowed_uses` 与 `prohibited_inferences`（后者明写「不得用于支持任何廊道、网络、可达性或形态结论，不得作为本场地证据，也不得作为生物最优性证明」），且只出现在书目层 `visual/assets/source-bibliography.json`。`PROCESSED-FACT-PACK` 取有界引用一途：`visual/assets/key-area-design.json` 的路线 `Z-R03` 在 `evidence_refs` 中引用它，其来源记录同时把用途限定为 `Navigation layer only; not an independent authority source.` 与「只作导航与背景，不作一手证据；任何结论必须回到其所引用的原始出处」。`SCHELLING-1971` 实测 `10` 处、`HOLLING-1973` 实测 `13` 处，两者都出现在 `compliance_matrix.json`。六条 Physarum 记录一条未删（`cited` 4 条、`background_only` 2 条）。`reference_state` 全集分布：`cited` `39`、`background_only` `2`。
 
 - [ ] **C03 — 完成解释性文字的 de-Physarum 迁移。**
   - 精确路径：`proposal.md`、`proposal.en.md`、`visual/index.html`、`visual/index.en.html`、`report/proposal.html`、`report/proposal.en.html`；机器引用保留于 `sources.json`、`compliance_matrix.json`、`design_depth_matrix.json`、`standard_matrix.json`、`metrics.json`、`manifest.json`、`self_check.json`、`visual/assets/physarum-inputs.json`、`visual/assets/physarum-runs.json`、`visual/assets/reproduce_physarum.js`。
   - 精确测试：contract test 分别检查“保留寄存器”与“解释性文字寄存器”；搜索 reinforcement/pruning/biological mechanism 禁止声明。
   - 可观察验收：解释性文字只保留规范中批准的 lineage/caution 块；无机制性 reinforcement、pruning、biological optimization 或 autonomous adaptation 声明；真实 ID、交叉引用和冻结路径不改名。
 
-- [ ] **C04 — 消除未被 renderer 识别的 assumption marker。**
+- [x] **C04 — 消除未被 renderer 识别的 assumption marker。**
   - 精确路径：`proposal.md`、`proposal.en.md`、`report/proposal.html`、`report/proposal.en.html`。
   - 精确测试：对四个明列路径逐一执行 `rg -n -F '[assumption:'`，即 `submissions/MartinForReal/adaptive-jingzhang/proposal.md`、`submissions/MartinForReal/adaptive-jingzhang/proposal.en.md`、`submissions/MartinForReal/adaptive-jingzhang/report/proposal.html`、`submissions/MartinForReal/adaptive-jingzhang/report/proposal.en.html`；不对目录做递归搜索；并运行双语引用解析测试。
   - 可观察验收：两份生成 HTML 中 `[assumption:` 均为 0；十个现有假设引用在源 Markdown 中以受支持、可追踪方式表达；不修改可信 renderer。
@@ -125,6 +156,7 @@
   - 精确路径：`visual/assets/physarum-inputs.json`、`visual/assets/physarum-runs.json`、`visual/assets/reproduce_physarum.js`、`visual/assets/physarum-zero-jitter-ablation.json`、`visual/assets/test-reproducer-tamper.js`、`visual/assets/participant-test-report.json`。
   - 精确测试：`node --check submissions/MartinForReal/adaptive-jingzhang/visual/assets/reproduce_physarum.js`；运行复算器和七项单字段篡改测试。
   - 可观察验收：两个冻结 JSON 的 SHA-256 不变；JSON 输出 `status == "PASS"`、`comparisons == 633`、`derived_metrics == 7`、`mismatch_count == 0`；路径为 participant-relative；24 条边的零抖动计数、频率、delta 与 11/0/connected 摘要完全匹配；七项篡改均被点名拒绝。
+  - 未生成 `participant-test-report.json` 的理由（本项因此保持未勾选）：该文件唯一诚实的内容就是「运行这些测试所得的结果」。把某一次运行的结论冻结成包内文件，会在可执行套件之外制造第二个可以静默漂移的权威——正是本包在别处用单一来源记录消除的失效模式；而且没有任何 builder 写出它，`test-clean-build.js` 会把它判为未声明产物，`manifest.json` 也无从为它派定 role。因此本轮不写该文件，本项证据以实跑套件的标准输出为准，缺口如实留在账本里。若后续要落地该具名路径，正确做法是先让某个 builder 以确定性方式写出它并进入 clean-build 契约，而不是手工存一份快照。
 
 - [ ] **C06 — 实现封闭清单、确定性构建、结构化记录、30 张图版与设计深度级联。**
   - 精确路径（final addition set，56 个明列条目，逐条列出，不使用 glob、数量短语、文件名简写，也不以对 `regeneration-design.md` 的 cross-reference 代替）：
@@ -142,10 +174,30 @@
 
   - Manifest 角色验收补充：56/56 final-addition-set entries 中每个 `role: "other"` 都有非空 `role_detail`，每个 `role != "other"` 都完全省略 `role_detail`。
 
-- [ ] **C07 — 对所有高风险展示面执行声明上限与分母修正。**
+  - old→new 路径契约（`16` 条具名路径被取代，`40/56` 实到，本项因此保持未勾选）：本项预登记了一份 56 条的精确路径清单。实际实现走了合并架构：同一批事实由更少、职责更清楚的记录承担，而不是按当初设想的文件数铺开。下表把每一条未落地的具名路径映射到实际承担其职能的包内路径，逐条注明权威归属。**不实现同名兼容文件，也不实现读旧名写新名的薄封装**：这些注册表都是被 builder 写、被 contract test 读的单一来源，一旦同一事实有两个可写位置，两处就会各自漂移，而 `test-clean-build.js` 只能证明其中一处自洽。宁可让账本承认清单被取代，也不制造互相冲突的权威。
+    - `visual/assets/bilingual-source.json` → `visual/assets/regeneration-source.json`：其 `document_title`、`section_headings`、`viewer_hero`、`ui_labels`（`126` 个键）、`proposal_blocks`、`terminology` 是全包双语字符串的唯一来源，`build-proposals.js`、`build-viewers.js`、`build-drawings.js` 均从此读取。
+    - `visual/assets/registry-index.json` → `visual/assets/regeneration-source.json` 的 `record_id`，加各生成注册表自带的 `source_record`／`source_record_id` 反向指针（`area-plates.json`、`drawing-placements.json`）。索引另立一份就会与被索引者不同步。
+    - `visual/assets/project-registry.json`、`visual/assets/scenario-registry.json`、`visual/assets/persona-registry.json`、`visual/assets/role-registry.json` → `visual/assets/action-governance.json`：`actions[12]` 即 `P00`–`P11`，连同 `labels`（`46` 个键）与 `counts` 一并承载项目、场景、人物与角色四类记录。两个 viewer 实测 `P00`–`P11` 齐备。
+    - `visual/assets/key-area-program-registry.json` → `visual/assets/key-area-design.json`：`areas[3]` 与 `counts`（`5` 个键）承载三个重点区的功能、构件、路线与无障碍链。
+    - `visual/assets/state-variable-registry.json` → `visual/assets/action-governance.json` 的逐 action 状态字段（`authorization_state`、`funding_state`、`restoration_capacity_state`、`pilot_start_allowed`、`start_blockers`、`authorized_target`、`blocked_by`），加 `visual/assets/regeneration-source.json` 的 `method_card`（`13` 个键）。
+    - `visual/assets/metric-crosswalk.json` → `visual/assets/evidence-map.json`：`compliance[23]`、`design_depth[15]` 与 `vocabulary`（`14` 个键）承担指标—合规—深度三向对照，`build-matrices.js` 由此生成两份矩阵。
+    - `visual/assets/claim-limits-registry.json` → `visual/assets/regeneration-source.json` 的 `spelling_provenance`（`note_zh`／`note_en`／`variants`，登记官方拼写变体出处）、`visual/assets/key-area-design.json` 的逐区 claim-limit 字段（`georeferenced`、`spatial_mode`、`separation`）与 `visual/assets/gate-registry.json` 的 `external_evidence_gate`（`D01`–`D17` 反向引用）。
+    - `visual/assets/figure-registry.json` → `visual/assets/area-plates.json`：`semantic_plates[15]` 与 `artifacts[30]` 是 30 张图版的唯一登记，由 `build-plates.js` 与图版本身同批写出。
+    - `visual/assets/build-contract.json` → `visual/assets/area-plates.json` 与 `visual/assets/drawing-placements.json` 的 `generated_by` 字段，加九个 builder 的 `--check` 模式本身：契约由可执行的再生成比对承担，而不是由一份声明文件承担。
+    - `visual/assets/participant-test-report.json` → 无替代，见 `C05`。
+    - `visual/assets/build-regeneration.js` → `visual/assets/build-sources.js`（写 `sources.json`）、`visual/assets/build-standards.js`（写 `standard_matrix.json`）、`visual/assets/build-geometry.js`（写 `geometry/key_areas.geojson`）、`visual/assets/build-ablation.js`（写 `visual/assets/physarum-zero-jitter-ablation.json`）：原设想的单一再生成入口按输出物拆成四个，每个只写一个文件，失败定位与 `--check` 粒度都更明确。
+    - `visual/assets/build-structured.js` → `visual/assets/build-matrices.js`（写 `compliance_matrix.json` 与 `design_depth_matrix.json`）。
+    - `visual/assets/build-figures.js` → `visual/assets/build-plates.js`（写 30 张重点区图版与 `visual/assets/area-plates.json`）。
+    - 保持原名并已落地的 `7` 条：`visual/assets/build-proposals.js`、`visual/assets/build-viewers.js`、`visual/assets/build-drawings.js`、`visual/assets/run-contract-tests.js`、`visual/assets/test-clean-build.js`、`visual/assets/test-reproducer-tamper.js`、`visual/assets/noto-sans-sc-subset.js`。
+    - 实到的 `2` 条注册表：`visual/assets/gate-registry.json`（`human_design_gate` 恰为 `G1`–`G7`，`machine_self_check_gate`、`human_authorization_gate`、`external_evidence_gate` 四个 namespace 分列，`external_gates` 实测 `17`、反向引用 `59` 条）、`visual/assets/physarum-zero-jitter-ablation.json`。
+    - manifest 验收未成立：`56` 个条目均未登记进 `manifest.json` 的 `files`，故 `role`／`role_detail` 条件测试无从执行。本轮不手改 manifest；所需的 inventory 补充在交接报告中按仓库权威逐条列出，由官方 refresh 一次性落地。
+
+- [x] **C07 — 对所有高风险展示面执行声明上限与分母修正。**
   - 精确路径：`proposal.md`、`proposal.en.md`、`visual/index.html`、`visual/index.en.html`、`report/proposal.html`、`report/proposal.en.html`、`assets/figures/site-overview.png`、`assets/figures/site-overview.en.png`、`assets/figures/land-use-structure.png`、`assets/figures/land-use-structure.en.png`、`assets/figures/key-areas.png`、`assets/figures/key-areas.en.png`、`assets/figures/mobility-bluegreen.png`、`assets/figures/mobility-bluegreen.en.png`、`assets/figures/metrics-evidence.png`、`assets/figures/metrics-evidence.en.png`、`drawings/a0-boards.pdf`、`drawings/a0-boards.en.pdf`、`drawings/a3-booklet.pdf`、`drawings/a3-booklet.en.pdf`。
   - 精确测试：`run-contract-tests.js` 的 claim-ceiling、threshold-quantization、denominator-discipline、figure-alt/caption/title 和 PDF text-extraction 测试；denominator-discipline 必须断言 1.28 ha、0.1125%、底层 `+0.03` / `+0.02` 个百分点、显示变化 `28.07% → 28.11%` / `17.48% → 17.50%`、共享 provisional 几何基础、约 `11.4 km²` 不可作为精确替代边界及官方多边形重算触发器。；并按 Section 14.13.3 的确定性十进制显示契约断言：全程保留完整精度、无中间舍入，仅在显示边界以十进制 `ROUND_HALF_UP` 舍入一次；绿地占比、百分点位移与公顷差额固定两位小数并保留末尾零，名义分母差额百分比固定四位小数；断言的是**精确字符串**而非数值容差，即 `28.07%`、`28.11%`、`0.03`、`17.48%`、`17.50%`、`0.02`、`1.28` ha、`0.1125%` 八个字符串逐一相等；`17.50%` 不得输出为 `17.5%`；禁止 truncation、binary-float 默认舍入或 banker's rounding。
   - 可观察验收：任何展示面都不把构造连通性当需求、发现、最优性或权力；57.1% 的语句使用 `8/14`；分母披露 `11,412,825.386 m²` provisional geometry、约 `11.4 km²` 发布值、1.28 ha / 0.1125% nominal 算术比较、`+0.03` / `+0.02` 个百分点及 `28.07% → 28.11%` / `17.48% → 17.50%`，并解释为何当前同基底 provisional 分母在官方多边形到达前继续作为工作基础，且明确不是实测边界差异；阈值同时披露 literal rule 与可达 run count。；中英双语两侧的八个显示字符串完全一致且与上列逐字相同，`320.4` ha / `199.5` ha / `1,141.3` ha 等面积显示仍按 Section 5.1 保留一位小数，不受两位小数规则影响。
+  - 实跑结果：五项具名测试全部在 `run-contract-tests.js` 内实跑通过，逐一对应如下。**claim-ceiling**：`M02` 独立 pin canonical 方法名（中英各一）、`由算法构造保证`／`connectivity of each run, and exactly 11 selected edges per run` 与七项 not-computed（出行、需求、工程可行性、无障碍水平、生物适应、公众偏好、对北京的最优性），这些字面量写在测试里而不是从被测记录导入，因此同时改方法卡与复算器的回归也会被抓到；`KA-DENOM` 另以条件断言要求任何印出 `57.1%` 的展示面同时印出 `8/14 = 57.1%` 与「由算法构造保证／不是发现／不证明对北京的最优性」。**threshold-quantization**：`KA-QUANT`（`visual/assets/test-threshold-quantization.js`），从 64 条冻结 run 记录以 BigInt 有理数重算可达阈值，再与注册表、24 条边的 `status`、`derived_metrics`、`roads.geojson` 实际绘制的 14 条廊道以及十个发布面逐一比对。**denominator-discipline**：`KA-DENOM`（`visual/assets/test-denominator-discipline.js`），从 `metrics.json` 与 `geometry/land_use.geojson` 重算全部八个显示字符串，并禁掉 `17.5%`、`17.4%`、`28.0%`、`28.1%`、`0.11%`、`0.112%` 六个截断或丢末尾零的写法。**figure-alt/caption/title**：`KA-DENOM` 对五个双语图件 × proposal／report／viewer 三种载体逐一检查，`KA-PUB` 另检查 `30` 张图版的 `described_plates 30/30` 与两个 viewer 的 `figure 20`／`img 20`／`details 15`／`summary 15`／`described 15` 同构。**PDF text-extraction**：`KA-GATE`、`KA-DENOM`、`KA-QUANT` 各自从四份 PDF 提取文本，`KA-GATE` 实测提取到 `13,601`／`33,571`／`21,285`／`56,605` 字符。
+  - 实测数值：八个显示字符串 `28.07%`、`28.11%`、`0.03`、`17.48%`、`17.50%`、`0.02`、`1.28`、`0.1125%` 在六个文本展示面零缺失且中英两侧一致，四份 PDF 亦零缺失；`17.5%` 全包 `0` 处。`KA-DENOM` 重算得到 `site_hectares 1,141.3`、`gap_sqm 12,825.386`、`gap_hectares 1.28`、`gap_share_of_official 0.1125%`、`green_hectares 199.5`、`green_provisional 17.48%`、`green_official 17.50%`、`green_shift 0.02`、`open_space_hectares 320.4`、`open_space_provisional 28.07%`、`open_space_official 28.11%`、`open_space_shift 0.03`。分母 `11,412,825.386` 与发布值 `11.4` 在六面齐备。`57.1%` 只出现在 `proposal.md`、`proposal.en.md`、`report/proposal.html`、`report/proposal.en.html` 四面，四面均同时写出 `8/14`；两个 viewer 与四份 PDF 实测不出现 `57.1`，因此不存在未配对的份额语句。阈值同时披露 literal rule 与可达 run count：`0.70`、`0.35`、`45/64`、`0.703125`、`23/64`、`0.359375` 在六面齐备，`KA-QUANT` 另记录两条字面规则本身都不可达（`64 × 0.70 = 44.8`、`64 × 0.35 = 22.4`）。`320.4`／`199.5`／`1,141.3` 仍为一位小数且双语对称。
 
 - [ ] **C08 — 为迁移后的全部来源完成统一 bibliographic schema migration。**
   - 精确路径：`sources.json`、`visual/assets/bilingual-source.json`、`visual/assets/registry-index.json`、`manifest.json`。
@@ -161,6 +213,7 @@
   - 精确路径：`proposal.md`、`proposal.en.md`、`report/proposal.html`、`report/proposal.en.html`、`scripts/render_proposal_html.py` 的既有调用结果。
   - 精确测试：解析两份生成 HTML 的 heading outline。
   - 可观察验收：每份生成 HTML 恰有一个 `<h1>`；不得手工编辑生成 HTML。
+  - 由已勾选改回未勾选的记录：第一条验收仍然成立，两份生成 HTML 实测各恰有一个 `<h1>`（`1`／`1`），重复顶层标题确已删除且未被复原。第二条本轮为假：按指令本轮不运行 `scripts/render_proposal_html.py`，而 `report/proposal.html` 与 `report/proposal.en.html` 的若干表格单元格是照该脚本 `render_table_cell()`／`render_inline()` 的输出逐字手写的（阈值可达边界两行、以及本轮其他显示字符串修正）。手写内容经逐字对照 renderer 的转义与内联规则，预期与再生成结果逐字节相同，但**等效于 renderer 输出不等于由 renderer 生成**，本条验收要求的是后者。因此本项降级为未勾选，不用「实质等效」代替「实际生成」。重新评定条件：官方 `render_proposal_html.py` 运行一次，并确认两份 HTML 与 renderer 输出逐字节相同。
 
 - [ ] **C11 — 将英文 H2 集合迁移到验证器要求的精确集合。**
   - 精确路径：`proposal.en.md`、`report/proposal.en.html`、`visual/assets/bilingual-source.json`。
@@ -235,3 +288,58 @@
 ### 当前终点
 
 **v0.2 规范检查点已完成并已获明确批准（`H01` 关闭）。**本地 14 项 C 类实施任务据此开始，删除 `regeneration-design.md` 在设计规定的生命周期点执行。推送与替换 PR 由同一条用户消息中的**独立授权**覆盖。17 个 D 类外部门全部保持开放且无复选框；本轮没有任何新的外部或专业证据到达，因此没有任何一门被关闭。任何 C 类复选框只有在其具名制品存在且其具名测试通过后才被勾选。
+
+## v0.3 - 2026-08-15
+
+### 剖面尺寸依据契约：取消 `geometry_derived`
+
+本轮取消了剖面尺寸的第三种依据。一条剖面尺寸此后只有两种合法形态：要么是有限正米数、`basis_type` 为 `proposed_module` 并显式标注未经核验，要么 `value` 为 `null`、单位仍为 `m`、`basis_type` 为 `pending`，并附假设或专业来源与复算触发条件。被取消的不只是 `degree_longitude`／`degree_latitude` 这两个字符串写法，而是**任何**声称由本包几何推得的剖面尺寸。
+
+理由是这类依据在剖面上不可能成立。本包的几何是归一化概念坐标，非按比例、无官方边界；从它「推得」一个净高或一个跨度，等于把一张不主张位置的图当成测量结果使用。取消之后，凡是本包无法诚实给出的尺寸一律留空并写明在等什么，图上画成虚线尺寸并标注待定，绝不给出一个看起来像测量结果的数。
+
+### 一个只有数据侧被守住的契约
+
+上述契约先只写在数据侧，并配了独立变异断言。它一直通过。但图版旁边给读者看的句子是手写的，不随数据移动：依据取消之后，三段图版文字仍然告诉读者部分剖面尺寸「由本包几何推得 / derived from the package geometry」，其中一段还在数据只有四项时数出五项。全部检查都指向记录，没有一项去读散文，因此没有任何东西失败。
+
+这类缺陷不是靠更仔细的校对发现的——它是在一次全分辨率图版目视复核中被偶然看到的。真正的缺陷不是那三段话，而是**没有任何测试读发布出来的句子**。所以本轮的修复分两步，且顺序不可颠倒：
+
+- 在来源处改正。`visual/assets/build-plates.js` 中 ZZY-03 与 AIO-03 的 `ext_zh`／`ext_en`／`lim_zh`／`lim_en` 逐条重写为与数据一致的说法（四项有数、四项待定，有数者全部为建议模数）。DZS-03 读过后不改：它本来就没有作过尺寸计数声明，因此从未过时。
+- 给 `KA-SPA` 补上发布散文那一半。新检查在 `visual/assets/test-key-area-spatial-content.js` 内扫描七个读者真正会读到的展示面（`visual/assets/area-plates.json`、两个 viewer、两份提案 Markdown、两份 report HTML），禁掉五种写法：`由本包几何推得`、`本包几何推得`、`derived from the package geometry`、`derived from package geometry`、`geometry_derived`。四份 PDF 不在扫描之列并有明写理由：图版散文是以栅格进入 PDF 的，在那里是像素不是文本，而注册表是它被写下的唯一位置。
+
+被禁的短语连同其否定形式一并禁掉，这一点是有意为之，并已写在代码里：本包此后既不能主张该依据，也不能声明「某些尺寸不是几何推得的」——在剖面上根本没有「是」的那一类，一句澄清只会请读者去找并不存在的东西。短语以字面量钉在测试里，不从写它们的 builder 导入；否则 builder 改了自己的措辞就会连测试一起改掉，测试便只会同意包里恰好写着的任何东西。
+
+曾考虑改为从散文里解析计数声明（「八项中四项有数」）再与数据比对，已放弃：中英数字提取脆弱，且 DZS-03 根本不作计数声明——那样的检查会恰恰在散文省略声明的地方静默失效。
+
+### 红绿证据
+
+新检查写在重建**之前**，因此它抓到的是真实缺陷而不是事后构造的样本：
+
+- 红：对当时包内文件运行，退出码 `1`，`8` 项失败，逐一点名 `area-plates.json`（四种写法全中）、`visual/index.html`（两种中文写法）、`visual/index.en.html`（两种英文写法）。
+- 绿：来源修正并重建后，`PASS`、失败 `0`、扫描展示面 `7`。
+- 变异：数据侧 `6/6`、散文侧 `5/5` 全部被拒并点名违规短语；另设一段说真话的对照文字，若扫描器连它也拒绝则整组变异不作数。
+
+### 本轮验收实测
+
+最后一次改动之后按依赖顺序整体重建，随后全套复核，全部通过：
+
+- `node --check` 全包 JavaScript `29` 个，语法失败 `0`。
+- 九个 builder 写入模式全部退出 `0`；`build-plates` `ok:true`、图版 `30` 张、替换规则 `64`、缺字码位 `53`、`notdef_drawn 0`；四份 PDF 因图版栅格改变而全部重建（`changed_files: 4`，`text_off_sheet: 0`，`text_collisions: 0`），不是只重建 A3。
+- 九个 builder `--check` 模式全部退出 `0`、`changed_files` 全为 `0`。
+- `run-contract-tests.js`：`PASS`，用例 `42`，失败 `0`。
+- 复算器：`PASS`，比较 `633`、种子 `64`（`0`–`63`）、`derived_metrics 7`、`mismatch_count 0`；零抖动消融持久边 `11`、分歧带 `0`、持久图连通。
+- 篡改测试：`15` 项，其中 `14` 项蓄意篡改全部被点名拒绝，冻结资产未变。
+- 清洁构建：两次构建文件树 SHA-256 完全一致，文件 `154`，差异项 `0`。
+- 两个冻结 JSON 的 SHA-256 与账本记录逐字符相等；`geometry/key_areas.geojson` 坐标摘要与 `HEAD` 完全一致，属性只增不改。
+- 独立 PyMuPDF 复核 `40` 页：问题 `0`，空白页 `0`、无文本页 `0`、英文页中日韩标点 `0`、图像越界 `0`、MuPDF 警告 `0`；三个区块板 × 两种语言的 A0 落位一致，rank 1 为 `-02` 图版且面积份额 `0.30`、rank 2 为 `-03` 图版且 `0.20`、支撑板最大 `0.07`。A0 阈值在该脚本内以字面量独立钉住，不从生产常量导入。
+- 浏览器复核：两种语言 × 桌面 `1440×900` 与移动 `390`（实际 CSS 宽 `375`，含滚动条，比 `390` 更严）。两侧同构：`<h1>` 各 `1`、`figure`／`figcaption` 各 `20`、`img` `20` 且缺 `alt` `0`、加载失败 `0`、`aria-describedby` `15` 且悬空目标 `0`、可折叠长描述 `15` 且默认全部折叠、`summary` `15`、全分辨率本地 PNG 链接 `15` 且实测全部 `200`（`103`–`151 KiB`）、重复 `id` `0`、远程资源引用 `0`。移动宽度下文档无横向滚动，越界元素全部落在 `overflow-x: auto` 的导航条内，导航条外越界元素 `0`。长描述的目标节点位于 `details` 内部，因此折叠状态下图像与描述的程序关联依然成立。英文页面中唯一的中日韩字符是指向中文版的 `中文` 语言切换链接，且带 `lang="zh-CN"`。
+- 编码与范围：文本文件 `67` 个，含 CR／BOM／NUL 的 `0`；HTML `4` 个，远程资源引用 `0`；变更路径 `87`，包外变更 `0`；`git diff --check` 退出 `0` 且无输出。
+
+### 本轮终点与未决事项
+
+本节记录本轮实际做到的事，不扩大其范围。
+
+本轮**没有**运行任何官方生命周期步骤：未运行 `scripts/render_proposal_html.py`、`scripts/refresh_submission_manifest.py`、marked self-check、`scripts/participant_preflight.py` 或严格验证器。`manifest.json` 与 `self_check.json` 因此仍是有意保留的陈旧生命周期制品，其哈希未经手工修改，也不据此声称最终就绪。本轮**没有**任何提交、暂存、推送、PR 创建/关闭/更新、fetch、merge 或 rebase，也没有触碰包外任何文件。
+
+`C10` 的重新评定条件不变：待官方 `render_proposal_html.py` 运行一次并确认两份 report HTML 与 renderer 输出逐字节相同。`C05` 的具名路径 `visual/assets/participant-test-report.json` 仍不生成，理由见该条目——本轮同样不把某一次运行的结论冻结成包内文件，四份 PDF 的构建哈希也因此不写入本账本，证据以可实跑的套件与确定性清洁构建为准。
+
+17 个 D 类外部门在本轮结束时全部保持开放、无复选框、不可勾选。本轮所做的全部是包内实施与自证，其中没有任何一项构成外部或专业证据，因此没有任何一门被关闭，也不得由包内测试通过推定任何一门可以关闭。
