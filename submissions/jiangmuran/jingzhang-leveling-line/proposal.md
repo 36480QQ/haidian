@@ -569,7 +569,7 @@ Logo 方向取自水准点标石的实物形态与水准仪的读数十字丝，
 
 产业与空间的对应关系落在 [data:geometry/land_use.geojson#LU-001]，指标口径见 [metric:key_area_count]。要素保管链与六个案例的完整对照见下图——**「资金」一栏的复测项在图中是一个空格，那是判断不是疏漏**。
 
-![FIG.08 AI创新生态图谱与要素机制](assets/figures/ecosystem.png)
+![FIG.08 AI 创新生态图谱与要素机制](assets/figures/ecosystem.png)
 
 ### 区域创新协同：把水准网外延为区域水准网（agent.1）
 
@@ -1604,12 +1604,12 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **147 条**。按发现者分：
+当前 **148 条**。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
 | 独立审计 | 25 | 委托的审计对象是随包产物，不是草稿 |
-| 作者自查 | 107 | 本轮工作中发现 |
+| 作者自查 | 108 | 本轮工作中发现 |
 | 本包自己的闸门 | 11 | 构建时被抓出——这是闸门本该做的事 |
 | **包外评审** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190 |
 
@@ -1626,7 +1626,7 @@ node visual/assets/verify.js
 | 形状 | 次数 |
 |---|---|
 | 检查测了方便测的东西 | 30 |
-| 同一件事的两份拷贝各自漂移 | 20 |
+| 同一件事的两份拷贝各自漂移 | 21 |
 | 声明活得比包的内容久 | 14 |
 | 交付物在提交前没被看过 | 14 |
 | 写成硬约束，却判不了不合格 | 10 |
