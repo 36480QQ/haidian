@@ -33,7 +33,7 @@ The safe default is temporary duplication rather than merging two people into on
 
 The synthetic red-team uses eight record pairs: same name and birthday, shared family phone, transliteration, name change, wrong device association, an offline source, a downstream adverse action, and vendor withdrawal. It checks freezing, privacy-safe summaries, itemised downstream receipts, and two local paths after AI shutdown—not match rate. [metric:record_separation_node_count] [metric:downstream_correction_receipt_count]
 
-If a professional review finds that a safe summary is impossible, that separation requires biometric escalation, or that both basic services stop, the prototype enters `HOLD/RETURN` and never becomes a public-service pilot. [source:ISSUE-1974-FUNCTIONAL-AUDIT] [depth:risk_missing_data]
+If a professional review finds that a safe summary is impossible, that separation requires biometric escalation, or that both basic services stop, the prototype enters `HOLD/RETURN` and never becomes a public-service pilot. [source:SYNTHETIC-PROTOTYPE-KEEP-APART] [depth:risk_missing_data]
 
 ## Design Basis and Source List
 
@@ -41,25 +41,37 @@ The package uses the official announcement, the cleared agent taskbook, the repo
 
 The provisional boundary is an intake and discussion constraint only. It is not an official redline, ownership boundary, planning control, or precise area basis. Replace it with official polygons and recompute every geometry, metric, figure, drawing, and HTML view. [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
 
+![Evidence chain and package relationship](assets/figures/site-overview.en.png)
+
 ## Three-Level Scope Framework
 
 The coordinated research area frames an AI ecosystem that does not make residents default data sources. The overall design area turns the separation chain into readable public interfaces, ordinary service ground, and reversible rooms. The three key areas act as TEST, COMPOSE, and DELIVER: synthetic pressure testing, two-sided provenance work, and downstream correction with ordinary service continuity. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_level_scope_framework]
 
+![Three-level scope and spatial work framework](assets/figures/land-use-structure.en.png)
+
 ## Coordinated Research Area: Industry and Future City Research
 
-The proposed ecosystem supports privacy engineering, records stewardship, accessibility, service design, red-team testing, correction tools, and human fallback rather than a cross-service identity graph. Six personas—people with shared contact details, carers, frontline receivers, source-record owners, service professionals, and independent reviewers—are recruitment hypotheses, not observed profiles. [metric:persona_count]
+The identity system is an operational boundary, not a decorative logo: two parallel rails stay apart at a human-review gate, and the gap marks a decision zone AI may not cross. Navy means public responsibility, mint means continuous ordinary service, and coral is reserved for `HOLD/RETURN`. The mark may never join the rails or use a face, fingerprint, eye, or identity-card symbol. Railway switching expresses reversible choice; Zhongguancun's open-source culture expresses auditable collaboration. [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+The three positions and five functions form one causal chain. The cultural belt contributes a “switch, do not lock” narrative; the AI life-experience belt makes human, paper, and telephone continuity visible; the fusion-innovation belt turns false merges, offline sources, and vendor exit into synthetic tests. Full-stack innovation produces open cases and protocols; the ecosystem joins privacy engineering, records stewardship, accessibility, service design, and red teams; AI+ scenarios host three validations; the vibrant city keeps two local service paths; governance publishes only de-identified receipts, failure conditions, and revocable protocols. [data:geometry/public_space.geojson#KEEP-APART-001] [depth:overall_spatial_structure]
+
+The areas and wings cooperate through production, validation, and transfer. Zhongzhiyuan TEST runs synthetic collision tests; AI Origin COMPOSE edits two-sided provenance, accessibility, and paper workflows; Dazhongsi DELIVER rehearses itemised receipts, matter decisions, and ordinary-service continuity. The Zhongguancun Technology Service Wing distributes open test packs and professional checklists; the Xiaoyuehe Scenario Empowerment Wing validates non-identifying mobility, accessible arrival, and public explanation. These are conceptual roles, not selected sites or institutions. [data:geometry/key_areas.geojson#PROV-KEY-001]
+
+Five official public-governance implementations are `background_only` method lenses. Canada's automated-decision directive and the UK Algorithmic Transparency Recording Standard inform impact tiers, human intervention, and readable system records. [source:CASE-CA-AIA] [source:CASE-UK-ATRS] The Netherlands Algorithm Register and Helsinki's AI Register inform discoverability, authority fields, service-level explanation, and public feedback. [source:CASE-NL-REGISTER] [source:CASE-HEL-AI] The European Commission's AI framework overview informs risk classification. [source:CASE-EU-AI] They do not prove local compliance, effectiveness, or spatial fit; only those fields and gates are transferred. [depth:public_interest]
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-The spatial idea is a visible pair of local service paths: an ordinary front desk, a quiet separation room, source-owner seats, and a downstream receipt checkpoint. Buildings, land use, roads, and public space remain reversible concept layers. Height, FAR, ownership, redlines, utilities, fire safety, heritage, and engineering conditions remain unknown pending official evidence. [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/roads.geojson#KEEP-ROAD-001]
+The spatial idea separates a cross-service matching layer from local matter decisions. The front desk logs only a minimum request; the room shows only privacy-approved summaries; two source seats check separate records; the receipt point displays de-identified open/closed counts. Buildings, land use, roads, and public space remain movable concept layers. Height, FAR, ownership, redlines, utilities, fire safety, heritage, and engineering conditions remain unknown. [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/roads.geojson#KEEP-ROAD-001]
 
 ## Detailed Design of Key Areas
 
-The northern conceptual TEST role uses synthetic records and no real identity data. The middle COMPOSE role lets source owners, service professionals, accessibility representatives, and reviewers edit a paper workflow. The southern DELIVER role rehearses downstream correction and ordinary service continuity. These are roles, not selected sites or confirmed institutions. [data:geometry/key_areas.geojson#PROV-KEY-002]
+Zhongzhiyuan TEST uses synthetic shared-name, household-phone, transliteration, and device-association cases to verify that a link can be frozen without biometrics. AI Origin COMPOSE lets source owners, matter owners, accessibility representatives, and privacy professionals edit a paper workflow. Dazhongsi DELIVER rehearses four downstream receipts, an offline source, vendor exit, and ordinary-service continuity. Every role includes a named human decision and `HOLD/RETURN`; none is a selected site or confirmed institution. [data:geometry/key_areas.geojson#PROV-KEY-002]
+
+![Three key-area roles and design tasks](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-Ten scenario cards cover a separation request, source provenance check, private summary, local service continuation, downstream correction, translation support, accessibility support, vendor exit, public explanation, and a synthetic industry test. At least three are industry validation scenes; all use synthetic or public data and named human review. AI never decides identity, eligibility, fraud, or service outcome. [source:AGENT-TASKBOOK] [metric:scenario_card_count]
+Six personas are recruitment hypotheses: affected people, carers/authorised helpers, front-desk receivers, two source owners, matter professionals, and independent/accessibility reviewers. The ten governed cards cover request, freeze, two-sided provenance, privacy-safe summary, independent review, downstream receipts, multilingual read-back, accessible service, vendor exit, and synthetic public rehearsal. Three industry validations test shared-contact collision, adverse-action propagation, and offline/vendor exit. Every card names the carrier, human decision, minimum AI role, and failure gate; AI never decides identity, eligibility, fraud, or service outcome. [source:AGENT-TASKBOOK] [metric:scenario_card_count] [metric:persona_count]
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -69,22 +81,30 @@ The submitted layers describe two small conceptual service rooms and two paralle
 
 Mobility remains ordinary and non-identifying. Walking, paper, telephone, accessible guidance, and staffed desks remain available across the two paths. Rail, road redlines, utilities, parking, fire access, and station integration are only relationships for professional study, not engineering conclusions. [depth:traffic_rail_slow_parking]
 
+![Mobility and blue-green public-space system](assets/figures/mobility-bluegreen.en.png)
+
 ## Blue-Green Network, Public Space, and Urban Character
 
 Public space carries only neutral states such as “local service,” “separation in progress,” “human review,” and “closed.” It does not display names, reasons, or the other person's data. A quiet room and source-owner seats are conceptual components that must be checked for accessibility, fire safety, heritage, ownership, and acoustic privacy. [depth:blue_green_public_space] [data:geometry/public_space.geojson#KEEP-APART-002]
 
+Three conceptual landmarks avoid portraits, trademarks, and recognition technology. The **Two-Track Threshold** uses non-joining tactile rails; the **Separation Signal Pavilion** shows only local service, human review, HOLD, and closed; the **Receipt Beacon** shows only de-identified open/closed counts. Six movable components—dual-rail wayfinding, privacy screens, paper provenance slots, human-service flags, HOLD/RETURN tags, and receipt counters—form the component library. Honour display accepts only contributor-authorised public methods/components, never personal service records. [data:geometry/public_space.geojson#KEEP-APART-003]
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
-Phase 1 is a synthetic tabletop test; Phase 2 is a professional and affected-person review; Phase 3 is a bounded conceptual demonstration only after responsibilities, rights, capacity, and safeguards are confirmed. A failure, missing source owner, unresolved downstream recipient, or vendor exit holds the work and restores ordinary service. No phase is a government schedule or implementation promise. [data:geometry/phasing.geojson#PHASE-001]
+Five stoppable gates replace a promotional roadmap. G0 inventories tasks, source owners, and rights; G1 logs failures from eight synthetic pairs; G2 requires itemised privacy, records, accessibility, fire, and information-security review; G3 tests capacity, waiting, language, and human fallback; G4 hands over the open list and restores ordinary service. Missing ownership means HOLD, leakage or biometric escalation means RETURN, degraded ordinary service means STOP, and no exit is allowed with orphaned items. [data:geometry/phasing.geojson#PHASE-001]
+
+Long-term operation remains revocable: a quarterly synthetic-case test day, a twice-yearly two-track service walkthrough, a proposed annual Revocable AI City Protocol Forum, and a continuous contributor-authorised component display. Leakage, biometric escalation, lack of equivalent access, or withdrawal of permission triggers case removal, HOLD, or credit removal. None is a confirmed government programme. [source:AGENT-TASKBOOK] [depth:renewal_project_list]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Known metrics are recomputable from the submitted geometry and scenario ledger: provisional site area, green and public-space ratios, four separation nodes, four receipt checkpoints, ten scenario cards, six persona hypotheses, and full manual-fallback coverage for the synthetic prototype. FAR and statutory controls remain unknown. [metric:manual_fallback_coverage_ratio] [depth:metrics_recalculation]
+Human-facing boards round provisional values to approximately 11.41 km², 12.3% conceptual green ratio, and 7.3% conceptual public-space ratio, with “provisional / low confidence / non-official” on the same card. The machine layer preserves recomputable values and formulae for deterministic replacement when official polygons arrive. Four separation nodes, four receipt checkpoints, ten cards, and six persona hypotheses are synthetic prototype counts; FAR and statutory controls remain unknown. [metric:manual_fallback_coverage_ratio] [depth:metrics_recalculation]
+
+![Core metrics and recalculation evidence](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
 
-No real personal, health, housing, employment, phone, identity-document, or institutional record is included. The package does not claim approval, legal identity, a final planning control, a confirmed institution, or implementation. AI-generated text, geometry, diagrams, PDFs, and static HTML are authored for this package; public and cleared sources are listed in `sources.json`. The package is bilingual and offline. If the five-field chain is not safe for both people, it remains `HOLD/RETURN`.
+No real personal, health, housing, employment, phone, identity-document, or institutional record is included. The package does not claim approval, legal identity, a final planning control, a confirmed institution, or implementation. `visual/assets/keep-apart-deliverables.json` is the paired bilingual derivation ledger; a local script builds the offline board and distinct A3/A0 roles. Asset authorship, generation, font licence, source status, and reuse boundary are itemised in `report/copyright_statement.md`. If the chain is unsafe for either person, it remains `HOLD/RETURN`.
 
 ## References
 
-See `sources.json`, `metrics.json`, `assumptions.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json` for the complete machine-readable evidence layer. The functional audit method is documented in Issue #1974; its evidence is a review prompt, not an originality score.
+See `sources.json`, `metrics.json`, `assumptions.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json` for the complete machine-readable evidence layer.

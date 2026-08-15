@@ -55,13 +55,15 @@
         "submissions/surenny/jingzhang-keep-apart/self_check.json",
         "submissions/surenny/jingzhang-keep-apart/sources.json",
         "submissions/surenny/jingzhang-keep-apart/standard_matrix.json",
+        "submissions/surenny/jingzhang-keep-apart/visual/assets/build-recipe.json",
+        "submissions/surenny/jingzhang-keep-apart/visual/assets/keep-apart-deliverables.json",
         "submissions/surenny/jingzhang-keep-apart/visual/index.en.html",
         "submissions/surenny/jingzhang-keep-apart/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/surenny/jingzhang-keep-apart": "formal"
       },
-      "total_bytes": 4022297,
+      "total_bytes": 2471638,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -121,7 +123,9 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.123423,
-        "public_space_ratio": 0.073281
+        "public_space_ratio": 0.073281,
+        "scenario_card_count": 10.0,
+        "persona_count": 6.0
       }
     },
     "stderr": ""
@@ -139,11 +143,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 6,
+          "source": 11,
           "standard": 5,
           "depth": 16,
-          "data": 12,
-          "metric": 8
+          "data": 16,
+          "metric": 10
         }
       }
     },

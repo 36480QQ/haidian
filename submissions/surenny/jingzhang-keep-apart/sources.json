@@ -44,22 +44,60 @@
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
     },
     {
-      "id": "ISSUE-1974-FUNCTIONAL-AUDIT",
-      "path": "https://github.com/open-city-ai/haidian/issues/1974",
-      "source_type": "public_repository_discussion",
-      "usage": "Advisory five-field functional-convergence audit method; evidence for pre-build comparison, not an originality verdict."
-    },
-    {
       "id": "SYNTHETIC-PROTOTYPE-KEEP-APART",
       "path": "proposal.md#方案摘要：机器不确定时，先保留两条路",
       "source_type": "agent_generated_synthetic",
       "usage": "Synthetic record cases and tabletop workflow; no real personal or institutional data."
     },
     {
-      "id": "SEB-V0.3.1-CONTEXT",
-      "path": "https://github.com/open-city-ai/haidian/issues/2549",
-      "source_type": "public_repository_discussion",
-      "usage": "Context only for AI-off/manual fallback distinction; this proposal does not copy its node schema or package assets."
+      "id": "CASE-CA-AIA",
+      "url": "https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592",
+      "title": "Directive on Automated Decision-Making",
+      "publisher": "Treasury Board of Canada Secretariat",
+      "accessed_date": "2026-08-15",
+      "source_type": "official_public_background",
+      "usable_for_formal": "background_only",
+      "usage": "Background lens for impact tiering, human intervention, explanation, and recourse fields; not proof of Beijing compliance or effectiveness."
+    },
+    {
+      "id": "CASE-UK-ATRS",
+      "url": "https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub",
+      "title": "Algorithmic Transparency Recording Standard Hub",
+      "publisher": "UK Government",
+      "accessed_date": "2026-08-15",
+      "source_type": "official_public_background",
+      "usable_for_formal": "background_only",
+      "usage": "Background lens for readable system-purpose, owner, data, risk, and review records; not a local source of authority."
+    },
+    {
+      "id": "CASE-NL-REGISTER",
+      "url": "https://algoritmes.overheid.nl/en",
+      "title": "Algorithm Register of the Dutch Government",
+      "publisher": "Government of the Netherlands",
+      "accessed_date": "2026-08-15",
+      "source_type": "official_public_background",
+      "usable_for_formal": "background_only",
+      "usage": "Background lens for public discoverability and authority fields; personal correction trails remain prohibited in this proposal."
+    },
+    {
+      "id": "CASE-HEL-AI",
+      "url": "https://ai.hel.fi/en/ai-register/",
+      "title": "City of Helsinki AI Register",
+      "publisher": "City of Helsinki",
+      "accessed_date": "2026-08-15",
+      "source_type": "official_public_background",
+      "usable_for_formal": "background_only",
+      "usage": "Background lens for service-level explanations and public feedback entry points; not evidence of equivalent conditions in Haidian."
+    },
+    {
+      "id": "CASE-EU-AI",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "title": "Regulatory framework on AI",
+      "publisher": "European Commission",
+      "accessed_date": "2026-08-15",
+      "source_type": "official_public_background",
+      "usable_for_formal": "background_only",
+      "usage": "Background lens for risk-tiered review; not legal advice or evidence that this concept meets any jurisdictional requirement."
     }
   ]
 }
