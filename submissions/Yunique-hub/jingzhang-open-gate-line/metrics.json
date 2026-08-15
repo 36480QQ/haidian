@@ -224,6 +224,60 @@
       "confidence": "high",
       "assumptions": []
     },
+    "positioning_statement_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": ["visual/assets/gate-protocol.json", "proposal.md"],
+      "formula": "count(brief_framework.positions)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "core_function_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": ["visual/assets/gate-protocol.json", "proposal.md"],
+      "formula": "count(brief_framework.functions)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "taskbook_wing_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": ["visual/assets/gate-protocol.json", "proposal.md"],
+      "formula": "count(brief_framework.wings)",
+      "confidence": "high",
+      "assumptions": ["Both wings are conceptual service networks, not confirmed institutions or investment commitments."]
+    },
+    "precedent_case_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": ["visual/assets/gate-protocol.json", "sources.json"],
+      "formula": "count(precedent_transfers)",
+      "confidence": "high",
+      "assumptions": ["Cases support mechanism transfer only; no scale or performance claim is imported."]
+    },
+    "ecosystem_resource_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": ["visual/assets/gate-protocol.json"],
+      "formula": "count(ecosystem_resources)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "experience_state_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": ["visual/assets/gate-protocol.json", "visual/index.html"],
+      "formula": "count(experience_states)",
+      "confidence": "high",
+      "assumptions": ["States are concept simulations, not measured operating results."]
+    },
     "scheduled_opening_rate": {
       "status": "unknown",
       "value": null,

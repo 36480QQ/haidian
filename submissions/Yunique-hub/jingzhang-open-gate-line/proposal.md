@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以京张遗产公园为公共门槛脊线，以十二个可预约、有人值守、可关闭回退的共享时段门，连接校区、园区与街区。"
+summary: "以三大定位、五大功能和三区两翼为战略总纲，以十二个有人值守、可关闭回退的公共门把京张遗产、AI 场景与长期运营连成可验证的城市界面。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -33,11 +33,23 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 统筹研究范围产业与未来城市研究
 
-产业策略从“再建一个园区”转为“让现有能力按合适时段可见、可达、可合作”。北部生命科学和高校资源、中部 AI 原点与创新企业、南部大钟寺文化商业资源通过开门日历形成三类交换：科研设施的受控参观与验证、创业服务与社区问题的双向翻译、文化内容与公共市场的共同策展 [depth:industry_ecosystem]。两翼不是新增大体量，而是合同与合规翼、数据与运营翼，为十二扇门提供统一模板和培训。
+方案将任务书直接翻译为一张可核对的设计总纲。三大定位是：**全球 AI 原生创新展示窗口**、**京张遗产与中关村创新精神交汇的城市客厅**、**可验证、可回退、可复制的城市 AI 试验场**。五大功能是原点展示、技术服务、场景试验、公共体验和全球协作；三区是众智试验区、AI 原点区和京张公共文化区，两翼是**中关村科技服务翼**与**小月河场景赋能翼**。OGP-12 不是另一套平行口号，而是贯穿三区两翼、约束十二个公共节点的运行层 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:urban_design_structure]。
+
+![三大定位、五大功能、三区两翼与 OGP-12 总纲](assets/figures/brief-framework.png)
+
+品牌系统把两根铁轨、开放门框和信号灯合成为原创标志：深海军蓝表示遗产底座，琥珀色表示开放，青绿表示有人协助，红色表示暂停；状态同时通过文字和形态表达，避免只靠颜色。中英文名称、状态符号、导视、无障碍路径、开放日历、年度活动与荣誉碑刻共享同一语法。该标志不复制历史构件，不借用任何机构标识 [depth:height_massing_character]。
+
+![京张开门线原创标志与视觉身份系统](assets/figures/brand-identity.png)
+
+产业策略从“再建一个园区”转为“让现有能力按合适时段可见、可达、可合作”。北部生命科学和高校资源、中部 AI 原点与创新企业、南部大钟寺文化商业资源通过开门日历形成三类交换：科研设施的受控参观与验证、创业服务与社区问题的双向翻译、文化内容与公共市场的共同策展 [depth:industry_ecosystem]。中关村科技服务翼组织技术服务、人才、算力、数据权利与验证支持；小月河场景赋能翼把这些能力转成沿遗产公园可步行、可体验、可停止的公共任务。两翼均是概念性服务网络，不是已确定的机构、投资或新增建设体量。
 
 六个案例机制的本地转译如下：one-north 启发“工作日晚间、周末不同场景”的时段编排；STATION F 启发把服务清单做成可理解的社区入口；Kendall Square 启发以公共空间网络而非单栋地标承载创新；Kalasatama 启发居民参与问题定义；Seoul AI Hub 启发教育、企业与研究平台的阶段性支持；MaRS 启发以伙伴网络提供连续服务。京张只采用“协议、日历、测试、复盘”四种轻机制，不复制土地制度或投资规模。
 
-空间上建立“一线、三院、十二门、两翼”：一线为京张遗产公园公共门槛脊；三院为中智园测试门院、AI 原点翻译门院、大钟寺共养门院；十二门每片区四处；两翼分别提供合规和运营。年度目标不承诺客流或产值，而以签署共享协议数、无障碍任务成功率、取消与事故记录公开度、居民与设施方共同复盘率衡量 [metric:scenario_node_count] [depth:urban_design_structure]。
+案例之后的生态图谱用土地、空间、产业、资金、人才、算力、数据、场景八类资源检查闭环：任何一个节点只有在场地权利、公共价值、专业安全、运营责任和退出资产同时明确时才可进入试开。未确认的企业或机构不会被画成已签约伙伴；具体主体只有在公开来源或正式授权后进入图谱 [source:CASE-ONE-NORTH] [source:CASE-KALASATAMA] [source:CASE-SEOUL-AI-HUB]。
+
+![六个全球案例的机制转译与八类资源生态图谱](assets/figures/ecosystem-cases.png)
+
+空间上建立“一线、三区、三院、十二门、两翼”：一线为京张遗产公园公共门槛脊；三区承接任务书布局；三院分别是众智试验门院、AI 原点翻译门院、大钟寺共养门院；十二门每区四处；两翼分别供给科技服务和连续场景。年度目标不承诺客流或产值，而以共享协议、无障碍任务成功率、取消与事故记录公开度、居民与设施方共同复盘率衡量 [metric:scenario_node_count] [depth:urban_design_structure]。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -57,7 +69,11 @@ AI 原点重点区设置 G05 科学家会客门、G06 轨道市集门、G07 雨�
 
 大钟寺重点区设置 G09 儿童探索门、G10 低碳能源门、G11 生物多样性门、G12 区域协同门，构成“共养门院”。自然游戏、能源观察窗、季节封育区与开放成果墙共同支持日常学习和跨区域协作；TVS-03 在暴雨传感器失效与夜间照明故障同时发生时切换人工巡检，五分钟内不能接管或安全路线中断即停止。三处地标分别是 G05“零号门”、G09“开门钟”和沿线“公共荣誉信号塔”，它们表达开放状态与共同维护，不制造宏大纪念物 [depth:three_key_area_detailed_design]。
 
+三个代表节点进一步落实到人的尺度。G05 零号门以半室外会客台、双语信息面和可见人工台形成国际到达界面；G07 水尺门把下凹花园、人工水尺、溢流路线和避雨等候组合为可教学的气候节点；G09 开门钟把自然游戏、照护者视线、触摸式铁路构件和年度荣誉记录组合为公共记忆节点。三者都保留连续无台阶通行、遮雨、坐等、机械钥匙、固定导视和清晰退出。图示尺寸均为概念控制值，须经现场测绘、消防、文保、结构和无障碍专项深化，不构成施工图或工程可行性结论 [depth:three_key_area_detailed_design] [assumption:A-GATE-APPROVAL-001]。
+
 ![三处重点区的门院原型](assets/figures/key-areas.png)
+
+![零号门、水尺门与开门钟的概念平面、剖面和人工接管点](assets/figures/representative-gates.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -118,6 +134,14 @@ TVS-01 用预约上限、现场计数、排队长度和疏散时间判断容量�
 
 城市风貌以“可读的轻介入”为原则：门框建立沿线连续识别，三座地标提供公共记忆，建筑本体保持材料真实性。开放灯的琥珀色表示“可进入”，青色表示“有人协助”，暗灯表示“未开放”；数字状态与现场实体必须一致。公众荣誉信号塔只展示共同维护的团队、时段和问题修复，不显示个人排名或行为评分。
 
+下图是原创生成的概念场景，用于检验人本空间关系：轮椅使用者与陪同者沿连续导向进入，长者在树荫下休息，儿童与照护者共享可见空间，管理人员负责现场清扫与接管，机械钥匙、人工台、雨水花园和荣誉墙同时可见。它不是现场照片、现状调查、官方效果图或已实施承诺，不能作为边界、面积或工程依据。
+
+![京张开门线公共节点概念场景：连续无障碍、人工服务、机械回退、雨水花园与荣誉墙](assets/media/experience-gate-v3.png)
+
+同一座门按白天、夜间、降雨、活动和故障五种状态复核。白天保证自然通行与人工咨询；夜间依靠低位照明和可见求助；降雨时先确保雨棚、排水和人工水尺；活动时保留步行、消防通达与现场名额；故障时关闭 AI 建议，由固定导视、纸本规则、机械钥匙和现场值守接管。只有安全条件失守才暂停公共门，算法故障本身不应让基本通行消失 [assumption:A-DATA-001] [depth:blue_green_public_space]。
+
+![公共门五种状态与失败安全序列](assets/figures/experience-sequence.png)
+
 ## 更新项目清单、实施政策与分期计划
 
 一期（0—12 个月）先完成 P01—P04 与 P08：核验官方边界和权属，建立遗产档案、连续无障碍骨架、雨洪—夜行安全底座和三座可逆示范门，同时把公开审计与申诉台先于算法上线。二期（1—3 年）实施 P05—P07，在三个原型通过 KPI 后才扩展到十二门；三期（3 年以后）实施 P09，并依据年度报告固化、迁移或退出节点 [data:geometry/phasing.geojson] [depth:phasing_implementation]。项目数量由协议文件核对 [metric:implementation_project_count]。
@@ -142,7 +166,9 @@ TVS-01 用预约上限、现场计数、排队长度和疏散时间判断容量�
 
 ## 指标体系、面积复算与合规矩阵
 
-指标分五组：空间底板记录暂定边界面积约 11,412,825 平方米、概念建筑占地约 310,807 平方米、概念绿地率 12.34%、概念公共空间率 7.33%和三处重点区 [metric:site_area_sqm]；网络能力记录 12 门、3 个测试场景、5 类人物和 3 个地标 [metric:gate_count] [metric:persona_count] [metric:landmark_count]；协议完整性记录 12 条机器可读门卡、人工权限与手工回退 100% 覆盖 [metric:gate_protocol_record_count] [metric:human_authority_coverage] [metric:manual_fallback_coverage]；实施能力记录 9 个项目包、5 条区域路径与 4 个年度事件；真实运营质量与公平指标则保持待测。
+指标分五组。空间底板记录暂定边界面积约 11,412,825 平方米、概念建筑占地约 310,807 平方米、概念绿地率 12.34%、概念公共空间率 7.33%和三处重点区 [metric:site_area_sqm]。任务书响应记录 3 大定位、5 大功能、2 条概念服务翼、6 个案例、8 类生态资源和 5 种体验状态 [metric:positioning_statement_count] [metric:core_function_count] [metric:experience_state_count]。网络能力记录 12 门、3 个测试场景、5 类人物和 3 个地标 [metric:gate_count] [metric:persona_count] [metric:landmark_count]。
+
+协议完整性记录 12 条机器可读门卡、人工权限与手工回退 100% 覆盖 [metric:gate_protocol_record_count] [metric:human_authority_coverage] [metric:manual_fallback_coverage]。实施能力记录 9 个项目包、5 条区域路径与 4 个年度事件，真实运营质量与公平指标保持待测。
 
 空间项由提交的 GeoJSON 复算，协议项由 `verify-gate-protocol.js` 确定性检查并输出 `protocol-audit.json`；运营、公平指标在真实试点前保持“待测”，不得填造基线。容积率同样保持未知 [metric:floor_area_ratio]。所有数值都附来源文件、公式、单位、置信度与假设；完整任务覆盖见 `compliance_matrix.json`，标准覆盖见 `standard_matrix.json`，专业深度见 `design_depth_matrix.json` [depth:metrics_recalculation]。
 
