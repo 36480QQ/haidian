@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f5c2278b0a892ceef580b6e6ee824a06db2b8dc4d09d00a438128bf92548bc96"
+      "sha256": "4a755bc162875def5e0f79ecf6eda09dc9f302d42802e9e7ec63d932d948630e"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ae59ff81a0698bb2ebd819ce932d1301bd07d446e83649b0f16f6a94fbf5dced"
+      "sha256": "9f730b5dcaca12cd6cf98e9c9edfbd085fe1e2b27d800f1cc72d298ff31dfec4"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "afd59df571b9296d49d4d14dbc49608d31ae4052b3dd16152fc9c4a00edf6f39"
+      "sha256": "aa806e9940f94190cbbf594760e5abe1ac43ccf069a65ffd54462aa1dc3d1d16"
     },
     {
       "path": "report/narrative.md",
@@ -573,7 +573,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
