@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.6 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.7 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,19 +26,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "53f1043b3e3b8d4837f41168aed9848027db4f63bdb883bfa6021900ec87471d"
+      "sha256": "8bf6a58dc877a55cf4ba654990c4d0a89e31310c2a50032c7d92b4d9edfd9454"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "5279b57ab086d563cf029644f30c5e6ca9f921d31180c07721abe1f492041bac"
+      "sha256": "73091d4f168e0b9f6944277a11fb42f8f6271db29f144693d3d56d88507c7b2c"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "35b1e8609a11895936b411e67f3949464143e8cfaac14d22ad093a49f7ff8b6d"
+      "sha256": "8ff80a12f07161f20eac6cb08507e848fe355570008a3a2e2684e3ec527d68a5"
     },
     {
       "path": "assumptions.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1e590a5271b49f860096a583e983d32157ebe3eeceb4c790fa2d9855ae878a68"
+      "sha256": "4bb58edeb86e3af9a6ea173fd3ded7ae1ea6bae9f5dabe2c9f5c5cc28153d7ce"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "fd2ed214de06bcabdf741ed104fa9f3fab0ce502a1fb77c39ad00fcc37d76379"
+      "sha256": "aab18e3c6e31adc218c92b8bbb65788fa0a5f5f73283dd571d72c833b7ef148f"
     },
     {
       "path": "standard_matrix.json",
@@ -80,7 +80,7 @@
       "path": "risk.json",
       "role": "other",
       "required": false,
-      "sha256": "bcacce2a41869f6ccf462ae395517f01d1502ba2167537292fd5f63ae33c0afd",
+      "sha256": "fc2f6fc235201ae4d9371be4297077513056ccda4e675acea339abfb8a9c9a9a",
       "role_detail": "risk_register"
     },
     {
@@ -88,40 +88,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5c19c26ea8ac37b5de1d8a5f7e463e6e9e352e77812c58ecd64b4e38cd72a2fd"
+      "sha256": "c62d909e3111ebee01379f339116721d140bbb276b3eb5f3026562d8dd91a0c8"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "125e2765e1fa07c72f2cd2f65f0e3b9a627feab5b6ce4298e57e5548b0adbf99"
+      "sha256": "c4086a857c54ed7de08f34dbbc31a74e25a320a143fe82315132f571d61ffbc6"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "be09bc7522a49933ea831cdbf4bfffd67eefe0722bdd4c0042f985ae574a07ab"
+      "sha256": "45557edad03063bf3778ec9d79efbca212a652f123e1bec0b5a9bdec19d0c8a9"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6a7fe14bdcf956a85cb4ee89872669e63f66259b8b4964ae21c168ec0931b6cc"
+      "sha256": "a0c2ff20b5b71ec243f70d2b8840c9b5188846c0c0bf4a40edb43a49d673a283"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "024edc957f8a4743daa9f93404e298efd043aaecb8f5fbbc7bd9e1cac13ae121"
+      "sha256": "2f69709fb906ba644cf49333dab14d527230e921821566d228a44f30a9795d35"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7d6b1e74af2da48b2938bd4a870eb3f91a7f60c47a17807df49af7e2902b26bf"
+      "sha256": "f0603b5fc203853adcdbbbff172fd6b42e06b2b712d8f1e528eff163a38f2a2a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "004b78fa232b51dbfd9f704269ff0152f484a1e59ff0c20a3c9535b70464b3e4"
+      "sha256": "30a3f3f20232b2ea4f418b9a814a8a026389318dc864ddd957c303c90134dd56"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7a57d3e3a8dce53441e65be6b982bee4a4f626ada698061fd22c49a7fa9cfe0e"
+      "sha256": "c74d942e8f46774a4dc44d1a37b348224e487c740cca5d84535d7db09f427a3c"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "4c53252bb31b4190163cbbd92ded50b8cf44da72ff3839d90e46e06df09b1970"
+      "sha256": "12fc64f7b9ec06993bf2c65cf36d4b3bb1f1ae061482cf9f69475cdb61bd74e2"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "a72f0f1872b89d1f71229d7d984384c9ad5f025e0221d05218077ecc0b4f4583"
+      "sha256": "961e57da11e4de4223f8ed7dd61af29fcb3373b1b8de1b824f78d387bf573243"
     },
     {
       "path": "visual/index.en.html",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "dc5d987c2490239d232f78da4aecb7002c7dac66dba02fc76788b3b7318bfe14"
+      "sha256": "c0446e6221e6b0b495bfa74fe21b3a73da4a99ea90c1a0935b1d403be50c466b"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -373,7 +373,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "f4a42048941882785e5fd02eadeca8a04bc53780efa4324cd18957a21e5680d3"
+      "sha256": "9955d4e93b8f04e5dba23927bac9ca9db5fa0bedc7c3d2027ce728aca195f376"
     },
     {
       "path": "assets/figures/enterprise-journey.en.png",
@@ -381,7 +381,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/enterprise-journey.png",
-      "sha256": "c4987a2de75fc98e28e5cecd5455d57d65ddd029b995a54dc4c0831b1fe7fbb3"
+      "sha256": "f544e31bb2cc82b7a335fec272a82f68f43b993d34e283fb6d9c6fdef7e9bc2b"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -492,7 +492,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "8bae117430a2aa22dc17e369b371d82f1398fadd3cdc2aa134077df132817c28"
+      "sha256": "cf764aabd792380950979a1a82aa62ef6bc30f5bfe4f0fe76dcb8f771f7cebf8"
     },
     {
       "path": "assets/media/cover.webp",
@@ -624,7 +624,7 @@
       "language": "neutral",
       "title_zh": "伦理与同意协议包（模板 · 未执行）",
       "title_en": "Ethics and consent protocol pack (templates, not executed)",
-      "sha256": "f7bf69e2b812e6db17a14c8bead1a98de564cb7ebb813f2e19a9e0de15bec383"
+      "sha256": "f9b390afda33b2797df52bfa3461fe5fa1338c2a9cf6ee7c48e2c7f96d3303e3"
     },
     {
       "path": "visual/assets/qa-proofing-record.json",
@@ -633,7 +633,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "27f8f726379e14a96801141c4bd8cc43315a58168d7ca852f9c393c81237a4b1"
+      "sha256": "e42180eef16ce41cc12e8e6f588cbb750ff829685874d513621b0c177a52a10f"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -660,7 +660,7 @@
       "language": "neutral",
       "title_zh": "服务等价基准 SEB v0.3 机器可读规范",
       "title_en": "Service Equivalence Baseline (SEB) v0.3 machine-readable spec",
-      "sha256": "461bc72a82781f39e140abf033040f738b81647ce15fb4df3234ced10eadc018"
+      "sha256": "efc58de8c327100be67e12b4bdf5b710c3b4cd061ed16d00cb1d980f78f5ddfb"
     },
     {
       "path": "visual/assets/seb-tabletop-run.js",
@@ -669,16 +669,16 @@
       "language": "neutral",
       "title_zh": "SEB 桌面配对推演校验器(方法学演示)",
       "title_en": "SEB tabletop pairing validator (methodology demonstration)",
-      "sha256": "89d802e57a554705c2abecf97f65fdd27937746304df7304e0871cc888745f7d"
+      "sha256": "e1f0c89cb6c976757476bb6036d2e10cee4e9cffee1f28a387ba62f752785fc8"
     },
     {
       "path": "visual/assets/seb-tabletop-fixtures.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "SEB 桌面推演正反样例二十条",
-      "title_en": "SEB tabletop fixtures, seven positive and thirteen negative",
-      "sha256": "d15b1de57e8bbf2c52e5280e16d3111350ffa4a584bb31a1821fbd5991f074e3"
+      "title_zh": "SEB 桌面推演正反样例四十条",
+      "title_en": "SEB tabletop fixtures, thirteen positive and twenty-seven negative",
+      "sha256": "59fc5edc584dff286a6971da94b45b873ab487b2e58e8fe4891bc0c93ce3df9b"
     },
     {
       "path": "visual/assets/seb-change-receipt-sample.json",
@@ -696,7 +696,7 @@
       "language": "neutral",
       "title_zh": "OP-04 配对试点全过程链路数据档案(桌面复演)",
       "title_en": "OP-04 paired-pilot full-process chain archive (tabletop replay)",
-      "sha256": "88f24a8d4eae3517f5dd575f981d14685477ae01c90f248494e0479b776efd9c"
+      "sha256": "a821ac8b1f3e0bd130ee2fae54dad040e233d6f407f2c8068b3337f0462e9ef1"
     },
     {
       "path": "visual/assets/seb-op04-90day-pack.json",
@@ -705,7 +705,7 @@
       "language": "neutral",
       "title_zh": "OP-04 节点九十天实施包（概念级：条件序列分期、双分支预算、采购、RACI、班表、投保建议、维护与退出）",
       "title_en": "OP-04 ninety-day implementation pack (concept-level: conditional phasing, two-branch budget, procurement, RACI, rosters, insurance suggestions, maintenance and exit)",
-      "sha256": "192da55ee0ee7109d1cfc141d130b8f007103857d2e6b323d67fb60872f0fc53"
+      "sha256": "6bc8be8dd72f90f51e76ae197d8f651f9d9500b6f13fa683acb8044c65d6a521"
     },
     {
       "path": "visual/assets/op04-pilot-readiness.json",
@@ -714,7 +714,7 @@
       "language": "neutral",
       "title_zh": "OP-04 场地与运营主体对接就绪材料（就绪待发；如实登记无既有接触、无既有意向）",
       "title_en": "OP-04 site and operator outreach-readiness material (ready to send; no prior contact and no existing intent, registered as fact)",
-      "sha256": "9319e0e1a4431f611ccccde553656f8d0bba2a4afd20f8a595873dbc476d07cf"
+      "sha256": "a5fce6b1a24db0877b829b46530ca8e48b57c075a7dcb6e8d8dd446d8335ee0e"
     },
     {
       "path": "visual/assets/op04-tactile-map.json",
@@ -741,7 +741,7 @@
       "language": "neutral",
       "title_zh": "OP-04 全过程证据链自含复演器",
       "title_en": "OP-04 full-process evidence-chain self-contained replayer",
-      "sha256": "ed79739623d293dd158616bedda0af984a077f350d29bb4a91cec6b80ef4ce1b"
+      "sha256": "e874142f1fd4a3af3fbbd38aa3f5783b28841f36b488eb54c8ea03cf30ad944b"
     },
     {
       "path": "visual/assets/seb-change-receipt-op04.json",
@@ -760,6 +760,15 @@
       "title_zh": "SEB v0.3 系列变更回执（CR-2026-08-15-004 / 005，一版一号）",
       "title_en": "SEB v0.3-series change receipts (CR-2026-08-15-004 / 005, one per version)",
       "sha256": "e3c01b0c2826ec93ab6dc9e5aa6717bedb6b8f95deaa1ddb2ba1a0ceb61a9ac3"
+    },
+    {
+      "path": "visual/assets/seb-change-receipt-v04.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB v0.4 系列变更回执（CR-2026-08-16-007，一版一号）",
+      "title_en": "SEB v0.4-series change receipt (CR-2026-08-16-007, one per version)",
+      "sha256": "0c810cbb81ca1a19ff8c47741293985c5ef6d84ce933467591a05c33072ce074"
     },
     {
       "path": "visual/assets/seb-license-grant.json",
@@ -787,6 +796,15 @@
       "title_zh": "SEB 规范历史版本快照 v0.3.0（字节级，上游提交 33031a588）",
       "title_en": "SEB spec historical snapshot v0.3.0 (byte-exact, upstream commit 33031a588)",
       "sha256": "67200f3e981703ea82af1bde4dd778d4329ee943eea00db6efe371a6c6a59b54"
+    },
+    {
+      "path": "visual/assets/seb-spec-v0.3.1.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB 规范历史版本快照 v0.3.1（字节级，上游提交 93e1efcd1）",
+      "title_en": "SEB spec historical snapshot v0.3.1 (byte-exact, upstream commit 93e1efcd1)",
+      "sha256": "461bc72a82781f39e140abf033040f738b81647ce15fb4df3234ced10eadc018"
     },
     {
       "path": "visual/assets/scene-fallback.en.png",
