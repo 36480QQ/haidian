@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "70c50c6a6cafdfcf6163fc80835e5ca65efcdf5465467c932b949c69bc3b264e"
+      "sha256": "979342f07646360364d5ff34f2cb7fe4677da921c04ce3869a75fb3c519bf85c"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1727c056723ba6dd7282c14ea41039ecbefbe5710c0e9dbe6661fb4f3b889ccc"
+      "sha256": "19b09482df70217e87890f9828adfb518bd472f6962acf341ab25ba42a10f92f"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6265953bb92a98ea6d013a2de4ccafbe2df39a175fd9cb33e6c3de6ff4579868"
+      "sha256": "56a3e74c445087110715757bfeb4aac8801a9c96385f3784a4004ff0dfdee6a6"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8f99b16a5d74b5904c056bf7847ecc6805e3da960e7f4df1ced071cd0f65caa4"
+      "sha256": "69351e14a7c0d634ecc9493a9dcc9bd083b4a2ff57ccba18729bf43b2492af39"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7f6402bbe9453cb82d2642b53ac4d833e6d631dec5510d1352b636b169b59716"
+      "sha256": "d129ebbf286c991cba677b716a581af6c6515b931d42bda49c500b2cc6d22a8a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -662,6 +662,22 @@
       "title_zh": "概念渲染（AI生成）",
       "title_en": "Conceptual rendering (AI-generated)",
       "sha256": "4fd1f936659fd2bae2b5d6c09fc06fb375b15067216776d0ab97575e4291e503"
+    },
+    {
+      "path": "assets/figures/scale-drilldown.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scale-drilldown.png",
+      "sha256": "f5f2678ab6235b170d8a7963b4bdf666fe0f6cdc14297493335c3a838894115b"
+    },
+    {
+      "path": "assets/figures/operations-timeline.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/operations-timeline.png",
+      "sha256": "80d82a00d47ec045b62b8b84c02a0f66cef70dcfffb3cb79f9b6e96f94e91ebc"
     }
   ],
   "validation_claim": {

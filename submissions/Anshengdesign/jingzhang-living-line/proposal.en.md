@@ -50,6 +50,8 @@ Professional case studies only help us fix our methodological reference; they do
 
 ## Consultation of Five Urban Scientists
 
+> "Cities are by no means randomly distributed — they are the superposition of hundreds of thousands of micro-decisions." — Michael Batty, *The New Science of Cities*
+
 Before delivering any conclusion, we first lay five rulers on the table. This is not rhetoric; it is method: the same data, passed through different theoretical eyes, will show completely different meanings. What we do is let each of these five pairs of eyes look independently, then let their judgments corroborate one another.
 
 **Batty's lens: build a city, or grow one?** The only question he cares about is whether the order of this belt is designed, or grown by itself. He measures with the fractal ruler: the street network D=1.746, inside the healthy band that only century-old cities have; employment density decays along the main spine at γ=1.85, far steeper than the 1.16 measured from stations. **Judgment: this belt is "grown", not "drawn". The planner's role is not to write its script, but to move aside the seven cuts blocking its growth** [metric:street_network_D_large].
@@ -70,7 +72,11 @@ Three scales answer three questions. The nine-kilometre overall scale answers: w
 
 ![Nine kilometres, eight hundred metres, and one hundred and twenty metres of continuous zoom](assets/figures/land-use-structure.en.png)
 
+![Three scales answer three questions](assets/figures/scale-drilldown.en.png)
+
 ## Space Syntax: How Configuration Shapes Movement
+
+> "Spatial configuration shapes people's movement and encounter — good space attracts people by itself." — Bill Hillier, *Space is the Machine*
 
 Space syntax does not ask "what does space look like"; it asks "how space is arranged determines how people move". Using the Toledo-style method (Hillier's integration / choice / connectivity / intelligibility / radius profiles, computed on the full OSM road network of 5,720 nodes), we gave this belt a "configuration check-up": a three-zone comparison plus the placement of 14 key nodes.
 
@@ -174,6 +180,22 @@ The overall structure is therefore one line, three folds, two wings, seven nodes
 
 ![Dazhongsi quantified analysis](assets/figures/keyarea-dazhongsi_ai_industry_cluster.en.png)
 
+![Street sections of the three areas (conceptual sections, with dimensions)](assets/figures/section-zhongzhiyuan_ai_acceleration_area.en.png)
+
+![Origin Community street section](assets/figures/section-beijing_ai_origin_community.en.png)
+
+![Dazhongsi street section](assets/figures/section-dazhongsi_ai_industry_cluster.en.png)
+
+**How to read these three sections**: one conceptual street section per area — Zhongzhiyuan: a 3.2 m footpath + a 2.8 m cycle band + a test-equipment parking slot; the Origin Community: shaded benches and street-facing talent apartments; Dazhongsi: a 20 m interface plaza + a stitching skybridge + an AI-native commercial interface. The sections are conceptual illustrations (not engineering sections); the dimensions are design intent, pending review against road redlines and heritage data.
+
+![Zhongzhiyuan concept rendering (AI-generated, not a site photograph)](assets/media/stack-testband.jpg)
+
+![Origin Community concept rendering (AI-generated, not a site photograph)](assets/media/origin-community.jpg)
+
+![Dazhongsi concept rendering (AI-generated, not a site photograph)](assets/media/dazhongsi-front.jpg)
+
+**How to read these three renderings**: all three are concept renderings (generated with Doubao Seedream 4.0; not site photographs, not a construction commitment) — Zhongzhiyuan's garden test band, the Origin's near-campus innovation street, and Dazhongsi's interface night. They answer the same question: after stitching, what will the people of this belt look like.
+
 ![Index of the three key areas](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
@@ -237,6 +259,8 @@ Operations are not event planning but the annual calibration of this instrument:
 
 The annual "Jing-Zhang Hyper Line Developer Festival"; the **Phase-Transition Forum** — turning the λ connection strength and the H health factor into an annual public report, published every year like a check-up; the seven-node open testing season; the OPC order-taking contest; the annual honor-wall inscription. All activities, investment attraction, policies, and funding statements are conceptual suggestions and do not constitute any confirmed government arrangement [depth:annual_event_system_operation].
 
+![Ten-year timeline: two acceptance gates](assets/figures/operations-timeline.en.png)
+
 ## Investment Budget and Return Estimation (Conceptual Magnitude, Not an Investment Commitment)
 
 This section gives a conceptual-magnitude investment–return framework to explain "how the money is spent, where it comes back from, and for whom". All numbers are conceptual estimates (referencing public engineering unit prices and the magnitude of comparable projects), and **constitute no investment conclusion, no government commitment, and no feasibility endorsement** — precise estimation will be completed by professional institutions after the official redline, regulatory plan, and status-quo baseline are released [depth:renewal_project_list].
@@ -260,9 +284,13 @@ Third, the **governance ledger**: the coordination game flips from "go it alone"
 
 **Funding-balance mechanisms (conceptual suggestions)**: ① government input (the stitching works are public goods, with a conceptual mix of government funds and special bonds at public magnitude); ② market renewal (the three-area infill and jobs-housing renewal are rolled out by market entities, with the government guiding through planning conditions and policy); ③ operational self-balance (the seven-node public spaces operate through the scenario cards — test field, night school, market, honor wall — covering daily maintenance costs); ④ the equity loop (public compute vouchers, AI night school, etc. are directionally fed back from renewal gains and operating surplus, forming the closed loop of "superlinear returns → public supply"). All mechanisms are conceptual suggestions and constitute no confirmed arrangement [depth:annual_event_system_operation].
 
+![Ten-year timeline: two acceptance gates](assets/figures/operations-timeline.en.png)
+
 **Risk thresholds (self-test lines, learning from KUN-SAL's low-altitude project practice)**: if, after Phase I (seven-node stitching) is complete, the supercritical share of λ has not risen above 40%, or the 25-minute-circle job reach increase is below 10%, then suspend Phase II expansion and first review Phase I — **let the money follow the verification results, not the planning text**.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
+
+> "We cannot predict the future city, but we can invent it." — Michael Batty, *Inventing Future Cities*
 
 The core indicators are all recalculated from geometry and data (EPSG:4548): site 11,412,800 m²; land use research 31.5% / commercial 25.6% / education 18.2% / residential 16.5% / green 8.2%; green ratio 11.6%; public-space ratio 1.8%; footprint density 17.4%; road network 67,000 m [metric:green_ratio] [metric:public_space_ratio].
 
@@ -282,9 +310,11 @@ Four rulers, made into an annual check-up table: λc=0.42 (connection), p_c=59.2
 
 ## Risk, Copyright, and Compliance
 
-Data compliance: Amap POI is used only as aggregate indicators and density fields, with no raw point data published; OSM under ODbL attribution; all official sources registered [source:DATA-SRC-AMAP-POI-20260815]. Copyright: figures and geometry generated locally by KUN-SAL; the AI concept renderings (Doubao Seedream 5.0) are conceptual expressions, not site photographs, with their generation recorded in the copyright statement; the naming and logo require trademark and font clearance; no personal privacy or unauthorized material. Compliance boundaries: this proposal is an open co-creation recommendation that does not replace formal planning and constitutes no government-reviewed conclusion; all regulatory-plan indicators are "pending official data"; AI scenarios respect the generative-AI measures and the Barrier-Free Law, and no privacy-infringing, over-monitoring, or non-human-reviewable scenarios are made [standard:GENERATIVE-AI-INTERIM-MEASURES]. The materials to be supplemented and the recalculation triggers are in the assumptions file: the official redline, the regulatory plan, the heritage-protection scope, the status-quo buildings and ownership, and municipal pipelines [depth:risk_missing_data].
+Data compliance: Amap POI is used only as aggregate indicators and density fields, with no raw point data published; OSM under ODbL attribution; all official sources registered [source:DATA-SRC-AMAP-POI-20260815]. Copyright: figures and geometry generated locally by KUN-SAL; the AI concept renderings (Doubao Seedream 5.0/4.0) are conceptual expressions, not site photographs, with their generation recorded in the copyright statement; the naming and logo require trademark and font clearance; no personal privacy or unauthorized material. Compliance boundaries: this proposal is an open co-creation recommendation that does not replace formal planning and constitutes no government-reviewed conclusion; all regulatory-plan indicators are "pending official data"; AI scenarios respect the generative-AI measures and the Barrier-Free Law, and no privacy-infringing, over-monitoring, or non-human-reviewable scenarios are made [standard:GENERATIVE-AI-INTERIM-MEASURES]. The materials to be supplemented and the recalculation triggers are in the assumptions file: the official redline, the regulatory plan, the heritage-protection scope, the status-quo buildings and ownership, and municipal pipelines [depth:risk_missing_data].
 
 ## Design Conclusion
+
+> "We are moving from a world in which cities are simply places that contain computers to one in which the computer itself contains the city." — Michael Batty, *The Computable City*
 
 **All the conclusions of this proposal can be folded into four sentences in the language of urban science.**
 
