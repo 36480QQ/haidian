@@ -19,7 +19,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案依据《百年京张AI创新带城市设计国际方案征集资格预审公告》及 `brief/site-package/` 场地数据包编制。作为 AI 多模式枢纽方案，聚焦轨道交通、慢行系统、AI 场景赋能三大维度，构建"一带三核、多模式联动"的空间策略。
 
-所有设计判断基于 `brief/site-package/geometry/provisional_boundaries.geojson` 临时边界、`data/source_registry.json` 数据源注册表及 `data/processed/agent_fact_pack.md` 事实包。所有指标可复算、所有结论可追溯。
+所有设计判断基于 `brief/site-package/geometry/provisional_boundaries.geojson` 临时边界（[boundary:BOUNDARY-SOURCE] provisional_only）、`data/source_registry.json` 数据源注册表及 `data/processed/agent_fact_pack.md` 事实包。**所有指标基于临时边界内部计算，官方几何发布后需重算。**
 
 引用公告：[source:SITE-PACKAGE] [standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/site_boundary.geojson]
 
@@ -201,12 +201,24 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 引用：[report:copyright_statement.md] [standard:license-community-display]
 
 **资料合法性**：所有设计判断基于公开资料与官方场地包，未使用未授权规划数据。
-**版权授权**：AI 生成内容为概念解释层，不替代现场、居民意见或官方边界。
-**隐私保护**：AI 场景遵循数据最小化、人工复核、隐私保护原则。
-**AI 生成责任**：提交声明对事实、来源、空间数据、指标、表达负责。
-**官方批准禁用**：所有空间落地建议表述为"概念建议/参考方案/可供专业团队深化研究"。
-**待补资料**：官方控规条件、现状建筑测绘、权属信息、工程条件。
-**专业复核需求**：需规划师、建筑师、交通工程师、法律专家复核。
+
+**临时边界声明**：本方案所有几何数据（`geometry/site_boundary.geojson`、`geometry/key_areas.geojson`、`geometry/buildings.geojson` 等）均基于公开数据生成的临时边界，**仅用于概念设计演示和离线可视化，不得作为正式红线、法定规划或精确面积依据**。所有指标（面积、比率、数量）均基于临时边界内部计算，需在官方几何数据发布后重新复算。
+
+**版权与 AI 生成内容**：本方案为概念设计提案，所有 AI 生成的文本、图像、图纸均为解释层内容，不替代现场调研、居民意见或官方数据。未使用任何未授权的第三方规划数据或受版权保护素材。所有数据源已在 `sources.json` 和 `metrics.json` 中完整登记。
+
+**AI 场景数据治理**：本方案提出的 10 个 AI 场景遵循以下原则：
+- **数据最小化**：仅收集场景运行必需的最少数据
+- **人工复核**：所有 AI 决策均有人工审核机制
+- **隐私保护**：个人数据匿名化处理，敏感数据加密存储
+- **未成年人保护**：教育类场景严格遵循未成年人数据保护要求
+- **申诉纠错**：用户有权拒绝、申诉和纠正 AI 决策
+- **退出机制**：用户可随时退出 AI 服务，恢复传统服务通道
+
+**官方批准禁用**：所有空间落地建议表述为"概念建议/参考方案/可供专业团队深化研究"，**不代表已批准的政府规划或工程实施方案**。容积率、建筑高度、拆改留分类等法定指标均以官方控规为准。
+
+**待补资料**：官方控规条件、现状建筑测绘、权属信息、工程条件、绿地/蓝线/文保约束、市政容量。
+
+**专业复核需求**：本方案需规划师、建筑师、交通工程师、法律、数据隐私、版权和 AI 伦理专家复核后方可进入实施阶段。
 
 引用：[report:copyright_statement.md]
 
