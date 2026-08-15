@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "35c7ff03f70cbbffbfddde3cb6253f663930e1a835239d77cbd8752fb23738b1"
+      "sha256": "ed11fa13a922b6b6207eadc3262342d5ee125c3c332b3072f7837786949a9217"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "92e2e119a6e6fe7fe4fa9f5cfca108c0c0210f50612d668a4565d6a888916ede"
+      "sha256": "d338d44d1c28e4816a9c4fb87a8781d592edfbd6d1cd429b97dcf649ef0e74dd"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "66fe811781803d49243bdbfa78d418f280d80d12656fa154afa26f5639e58c3f"
+      "sha256": "2f442a9d6400af76062764adb57086a4fb34342626ac5c9259ee407ca591460c"
     },
     {
       "path": "report/narrative.md",
@@ -374,7 +374,7 @@
       "language": "neutral",
       "title_zh": "概念渲染（AI生成）",
       "title_en": "Conceptual rendering (AI-generated)",
-      "sha256": "727f6a3ed7507e03808424ea1738a5c5beaf4a71c04bff2e59c439f710050fe1"
+      "sha256": "24396786a90232c880d9de575de7cebaf7f59d8e629e487473906ba15575689c"
     },
     {
       "path": "assets/figures/c8-c9-c10.en.png",
@@ -630,6 +630,38 @@
       "language": "en",
       "translation_of": "assets/figures/section-dazhongsi_ai_industry_cluster.png",
       "sha256": "3c8b8ed4357eeec17552b9d9dc9b3f7b894a9952028a89ff6d4a07a0d33e5c4c"
+    },
+    {
+      "path": "assets/figures/scale-drilldown.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "f06523bb6328ff310fef1b271ae0cab557ab1e420899991098851d68c9101cf4"
+    },
+    {
+      "path": "assets/figures/operations-timeline.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "c4c70ac4a855952a6ba6dda109842e5eebbc3d90ebc3042fa32c3f4e0a389331"
+    },
+    {
+      "path": "assets/media/origin-community.jpg",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "概念渲染（AI生成）",
+      "title_en": "Conceptual rendering (AI-generated)",
+      "sha256": "3fddfd9672271bddb0d589537ccf1a40276e0d59e54936bd8c0871e44e067bd7"
+    },
+    {
+      "path": "assets/media/dazhongsi-front.jpg",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "概念渲染（AI生成）",
+      "title_en": "Conceptual rendering (AI-generated)",
+      "sha256": "4fd1f936659fd2bae2b5d6c09fc06fb375b15067216776d0ab97575e4291e503"
     }
   ],
   "validation_claim": {
