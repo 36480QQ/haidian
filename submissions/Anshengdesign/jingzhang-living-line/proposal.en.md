@@ -204,6 +204,10 @@ Space syntax does not ask "what does space look like"; it asks "how space is arr
 
 So the three key areas of this proposal are not three parks to be "built", but three places to catch people: Zhongzhiyuan catches the R&D staff who bring equipment for testing, the Origin Community catches the students and founders coming out of school, and Dazhongsi catches the ordinary people running errands, commuting, and attending evening classes. The naming system (agent.1): the belt is named 「THE EMERGENT BELT」, the main line 「Jing-Zhang Hyper Line」, the three segments 「HYPER STACK / HYPER ORIGIN / HYPER FRONT」, the two wings 「CAPITAL WING / SCENARIO WING」, and the seven stitch points are called 「HYPER NODES」. The logo direction is "the superlinear line": a straight railway line curving upward at its end, with seven points floating up along it — **the century-old line begins to rise** (trademark and font clearance required) [depth:industry_future_city_research].
 
+**International benchmarking and the future opportunity (see the benchmark matrix)**: the seven global cases each contribute one transferable mechanism, and here they all hold **at once** — stitching first (King's Cross) × the near-campus conversion circle (Kendall) × garden research neighbourhoods (Stanford) × high-density startup fabric (Yuehai) × a content-consumption interface (Shibuya) × university-town symbiosis (Cambridge) × the public life of a startup boulevard (Rothschild). Seven mechanisms on one 11.4 km² belt is the unique opportunity window of Centennial Jing-Zhang: **H=1.556 proves it is mathematically worth investing in, the 13,000 developers and 32-chip ecosystem prove the vitality is already here, and the world's first "recursively runnable" urban operating system proves it can keep evolving** — the opportunity is not drawn but measured: every stitch pushes the subcritical state toward the phase point, every infill pulls a −63% gap back toward the mean, and every annual check-up rewrites "the future cannot be predicted" into "the future can be invented".
+
+![International benchmark matrix: seven cases × mechanisms × responses × measured numbers](assets/figures/c26-international-benchmark.en.png)
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 **Check-up result four: jobs-housing imbalance, golden locations used at low intensity.** Spread out the 91 four-hundred-metre cells: the jobs-housing balance index averages 0.393 (employment over residential), and only 38.4% of cells fall inside the healthy band; more typical is the land-use–transport mismatch — 45 cells are "underdeveloped" (the golden locations at stations and along the main spine are occupied by low-intensity buildings), 4 cells are "overdense" (good buildings stuck in low-accessibility locations), and the match rate is only 46.2%. **What urban renewal must fix first is this mismatch map** [metric:jhr_mean] [metric:luti_match_ratio_now].
@@ -218,41 +222,40 @@ The overall structure is therefore one line, three folds, two wings, seven nodes
 
 ![Zhongzhiyuan quantified analysis](assets/figures/keyarea-zhongzhiyuan_ai_acceleration_area.en.png)
 
+![Zhongzhiyuan detailed plan (concept)](assets/figures/plan-zhongzhiyuan_ai_acceleration_area.en.png)
+
+![Zhongzhiyuan street section](assets/figures/section-zhongzhiyuan_ai_acceleration_area.en.png)
+
+![Zhongzhiyuan concept rendering (AI-generated, not a site photograph)](assets/media/stack-testband.jpg)
+
 **Beijing AI Origin Community · HYPER ORIGIN (104.3 ha) — catching the people coming out of school.** The Tsinghuayuan Station heritage site's integration is 93.5% — a siting from a hundred years ago is still the structural core today, and the Origin Plaza and the developer Name Wall are placed here so that the word "contribution" can be seen. Medical density is only 2.88 sites/km² (the lowest of the three areas); the Wudaokou–Xueyuanlu interface must fill in healthcare, community services, and talent apartments [data:geometry/key_areas.geojson#KEY-002].
 
 ![Origin Community quantified analysis](assets/figures/keyarea-beijing_ai_origin_community.en.png)
+
+![Origin Community detailed plan (concept)](assets/figures/plan-beijing_ai_origin_community.en.png)
+
+![Origin Community street section](assets/figures/section-beijing_ai_origin_community.en.png)
+
+![Origin Community concept rendering (AI-generated, not a site photograph)](assets/media/origin-community.jpg)
 
 **Dazhongsi · HYPER FRONT (72.0 ha) — catching the ordinary people living their daily lives.** Its syntactic percentile is only 20.2%, the southern periphery of this line; yet the POI check-up shows the other face: 511 points/km², the highest density of the three areas, medical 19.35 sites/km², and a jobs-residence ratio of 0.344 — a station district led by life services and short on work-related formats. The strategy is therefore "light intervention, heavy interface": stitch the four quadrants of Dazhongsi Station for walking, serve commuters by day, and leave the nights to small classes, exhibitions, and nearby merchants; the gaps are finance, culture-tourism, and research (the deviation ledger), with the ancient bell counterposed to an "Emergence Bell" [data:geometry/key_areas.geojson#KEY-003].
 
 ![Dazhongsi quantified analysis](assets/figures/keyarea-dazhongsi_ai_industry_cluster.en.png)
 
+![Dazhongsi detailed plan (concept)](assets/figures/plan-dazhongsi_ai_industry_cluster.en.png)
+
 ![Dazhongsi station-district four-quadrant stitching, enlarged (conceptual)](assets/figures/dazhongsi-quadrant-zoom.en.png)
-
-**How to read this enlargement**: the four quadrants centred on the Interface Plaza — ① the heritage-park side stitches the park entrance in, ② north of the North 3rd Ring a grade-separated stitch, ③ the station hinterland slow-mode connections, ④ the Gaoliangqiao Xiejie interface; the C-C' section line falls at the same place on the detailed plan and this enlargement. The stitch modes (grade-separation / slow modes) are conceptual suggestions, to be deepened once transport, municipal, and ownership data arrive.
-
-![Street sections of the three areas (conceptual sections, with dimensions)](assets/figures/section-zhongzhiyuan_ai_acceleration_area.en.png)
-
-![Origin Community street section](assets/figures/section-beijing_ai_origin_community.en.png)
 
 ![Dazhongsi street section](assets/figures/section-dazhongsi_ai_industry_cluster.en.png)
 
-**How to read these three sections**: one conceptual street section per area — Zhongzhiyuan: a 3.2 m footpath + a 2.8 m cycle band + a test-equipment parking slot; the Origin Community: shaded benches and street-facing talent apartments; Dazhongsi: a 20 m interface plaza + a stitching skybridge + an AI-native commercial interface. The position lines of the three sections (A-A' / B-B' / C-C') fall on the three detailed plans respectively. The sections are conceptual illustrations (not engineering sections); the dimensions are design intent, pending review against road redlines and heritage data.
-
-![Zhongzhiyuan concept rendering (AI-generated, not a site photograph)](assets/media/stack-testband.jpg)
-
-![Origin Community concept rendering (AI-generated, not a site photograph)](assets/media/origin-community.jpg)
-
 ![Dazhongsi concept rendering (AI-generated, not a site photograph)](assets/media/dazhongsi-front.jpg)
 
-**How to read these three renderings**: all three are concept renderings (generated with Doubao Seedream 4.0; not site photographs, not a construction commitment) — Zhongzhiyuan's garden test band, the Origin's near-campus innovation street, and Dazhongsi's interface night. They answer the same question: after stitching, what will the people of this belt look like.
+**How to read the four-piece set of each area's detailed-design expression** (quantified analysis → detailed plan → section → rendering, aligned in this order per area):
 
-![Zhongzhiyuan detailed plan (concept)](assets/figures/plan-zhongzhiyuan_ai_acceleration_area.en.png)
-
-![Origin Community detailed plan (concept)](assets/figures/plan-beijing_ai_origin_community.en.png)
-
-![Dazhongsi detailed plan (concept)](assets/figures/plan-dazhongsi_ai_industry_cluster.en.png)
-
-**How to read these three detailed plans**: one conceptual detailed plan per area — light grey = the existing building fabric (OSM measured footprints), orange = new public space, dark green = the main spine, white-cased roads = the existing road network, light land-use tints = the conceptual zoning. Plan + section + rendering form the three-piece set that constitutes each area's "detailed-design expression" (the conceptual depth of an integrated implementation scheme).
+- **Detailed plan**: light grey = the existing building fabric (OSM measured), orange = new public space, dark green = the main spine, white-cased roads = the existing network, light tints = conceptual zoning; the A-A' / B-B' / C-C' section lines fall on the plans;
+- **Section**: one conceptual street section per area — Zhongzhiyuan: 3.2 m footpath + 2.8 m cycle band + test-equipment slots; the Origin Community: shaded benches + street-facing talent apartments; Dazhongsi: a 20 m interface plaza + a stitching skybridge (5.5 m clearance) + an AI-native commercial front; the sections are conceptual (not engineering), the dimensions are design intent, pending road-redline and heritage review;
+- **Rendering**: all three are concept renderings (Doubao Seedream 4.0; not site photographs, not a construction commitment) — Zhongzhiyuan's garden test band, the Origin's near-campus innovation street, Dazhongsi's interface night. They answer the same question: after stitching, what will the people of this belt look like;
+- **Four-quadrant enlargement** (Dazhongsi): ① the heritage-park side stitches the park entrance in, ② north of the North 3rd Ring a grade-separated stitch, ③ the station hinterland slow-mode connections, ④ the Gaoliangqiao Xiejie interface; all stitch modes are conceptual, to be deepened once transport, municipal, and ownership data arrive.
 
 ![Index of the three key areas](assets/figures/key-areas.en.png)
 
@@ -417,7 +420,7 @@ Four rulers, made into an annual check-up table: λc=0.42 (connection), p_c=59.2
 | Scenario perceptibility | Strong | All ten scenario cards land in space with their "necessity"; three renderings for the three areas |
 | Spatial explicitness | Medium | The 7 gaps / three areas / two wings are clearly located; specific plots stay conceptual because ownership data is missing |
 | Transferability | Strong | An 8-item component library / a three-piece wayfinding set / an attraction funnel / an investment package — a professional team can take over directly |
-| Completeness of expression | Strong | 22 bilingual chapters + 41 figure groups + 9 renderings + A3/A0 + a WeChat edition |
+| Completeness of expression | Strong | 22 bilingual chapters + 42 figure groups + 9 renderings + A3/A0 + a WeChat edition |
 | Public compliance | Strong | All data sources registered, zero PII, complete copyright statement, provisional labelling throughout |
 | International reach | Medium | Full English alignment and internationalized naming; communication assets (WeChat edition) are ready, channels not yet |
 | Long-term operational value | Strong | The Phase-Transition Forum's annual check-up + the honor wall + the developer festival = a brand-asset mechanism |
