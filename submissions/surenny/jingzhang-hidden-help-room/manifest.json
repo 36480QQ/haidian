@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "0c292b5f2b8c0a1ce1c8ebdc514b6ca7de66671da0216baa8304751b6aab59c7"
+      "sha256": "826b519490609fcf81ab13d2681a760f1fa07ba9525f8b7abe9d61099616d71e"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "bbf56c713c05c8948ef4083181e7ec3f61a7cf83a2c765741e9ce518234d12fe"
+      "sha256": "0baf86ee4e4cfbe218c2665f54eff981f67ee935065223a4d3c8a365f6ee2f86"
     },
     {
       "path": "assumptions.json",
@@ -56,32 +56,32 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ef7665a5e5192e9ad4f90b6ab83d10a26d2e19e728130f365d455c5ca4c97c9f"
+      "sha256": "3dd7190ed8e9558162108b2d69f6569ebc09932938687d383a9be2944fbe2b59"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3408a9f28202f861235ef545067173285da51dfd1b7e27b7473329847b4ca493"
+      "sha256": "bfa5a79d230f359eddee3e69b8a0b1371e3b846d6f5d2da5359046d9a6632057"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
+      "sha256": "5809a441b09c74f1b604dcfad74638d12658d8e7f3907603f262ee523c3e4f50"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "dc2c62f1d1ab8d673bec8b5dc34fbc1e1cacf4ed04038193dc92b142f26df021"
+      "sha256": "44f1cb9e634843c5c125a0edd9e7400f9565fa5df622dd0c0a38a3b8ad0f6a47"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f659b485e975291453f096398a2be36f1bbbd5304e32fce9a50a61aa04591c64"
+      "sha256": "074c66e2464a1a33c9bb1fc69a9336c71818a02bb476be51576bbbda1be37e52"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b76902c8ebce3c302189dc4212176358f44561fbb30db7ebfb9b6c5e98961652"
+      "sha256": "20713065195769f237af5c53d772850338246f260b0ee5a4d477aa91214365e0"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "38abdbd244dce901b277f74df3de1e5ea99b9424a9e34cc06f1122a31f5a8dc8"
+      "sha256": "cde9bfcd21d1286fba578288125ebe0735026da321f33cfbc290191cf1599ae1"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "97365f7fee2ce56bacff2773a1d9b631694721b645f2a3401acf2c1c40956aef"
+      "sha256": "6188f705e1aa7e140729b6102c745f0fae3f7dfb7eb00f7ff51a41f1aecf1d3b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "ea3601ef360037e56584ad26a003b9b25219bdac0a7a75aaf17580c296544125"
+      "sha256": "9e20fcfd22a9285a918a5c4d3204dcf4ec450d76ff22f09c51e2c1bc35ae55bf"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,36 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "a5033e8bec16c27e586f63f6d4be0116f77cb938e5d556d2a6db87303bc956de"
+    },
+    {
+      "path": "assets/figures/brand-identity.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "c2ddb07751f0b1d9c52a7ba576906b5f19f8a5a6a61e46b601ad52cf1cb56714"
+    },
+    {
+      "path": "assets/figures/brand-identity.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/brand-identity.png",
+      "sha256": "e3a4efb390824e7cd4ba35ef50438a9e487e4afd67278c1fa80fee47a352761a"
+    },
+    {
+      "path": "assets/figures/ecosystem-map.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "5e1ab59884aa2453440ca92d9f3b756de2658e6c72d8a9f2d44b38d071ec07c8"
+    },
+    {
+      "path": "assets/figures/ecosystem-map.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/ecosystem-map.png",
+      "sha256": "e7b18b704a41d2827c3297cb0a70b3b1d79a3f84d9d2cd30d417051f03cd27ff"
     }
   ],
   "validation_claim": {

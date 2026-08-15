@@ -39,6 +39,10 @@ HIDDEN HELP ROOM is a cross-professional urban capability, not a “victim detec
 
 Five case lenses compare data minimisation, address confidentiality, general-purpose private consultation, human referral, and vendor exit without importing foreign rules as local law. Three industry tests cover notification/history write-back, a shared-account proxy asking for records, and outage/staff absence.
 
+The ecosystem map connects public-service operators, confidentiality-bound social-work/legal-aid roles, privacy and records specialists, fire/security, accessibility and labour safety, local-session tools, and affected-person representatives through a specification—space—rehearsal—review—exit chain. Regional links remain hypotheses pending evidence: Beiwei Community could test ordinary community frontage; Future Science City and Huairou Science City could contribute safety and human-factors methods; E-Town could test devices and vendor exit; Jing-Jin-Ji nodes could compare minimum records for cross-place referrals. No collaboration is claimed before platform, transport, agreement, and rights evidence exists. [metric:case_study_count] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+![AI ecosystem and regional collaboration evidence figure](assets/figures/ecosystem-map.en.png)
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall structure is one no-destination-write-back service chain, three synthetic rehearsal grounds, and two professional support wings. Near term is evidence inventory, a 1:1 no-real-service prototype, and affected-person co-design. A bounded non-case display is discussable only after fire, security, accessibility, privacy, confidential retention, staffing, and referral duties are clear. Any real service requires a separate project and fresh approval. [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
@@ -58,6 +62,32 @@ Agent.1 delivers naming, identity, three positions/five functions, and three are
 Six personas are: shared-phone user, person without a personal device, minor, person needing translation/accessibility, accompanying caregiver, and frontline worker. They are design prompts, never inferred victim/perpetrator labels.
 
 Ten cards are: 1 read public resources without an account; 2 shared-phone notification warning; 3 family proxy requests records; 4 no phone; 5 translation/easy read; 6 choose paper take-away/destruction; 7 professional creates lawful minimum record; 8 staff absent; 9 vendor outage; 10 safe exit after service. AI only presents reviewed public options, translates, checks shared-history write-back, and clears a local session after human confirmation.
+
+### agent.1 | Brand, overall concept, and coordination loop
+
+The Chinese name and `JINGZHANG HIDDEN HELP ROOM` describe a no-digital-destination task without labelling a risk group. The logo uses two navy ordinary door frames, one green exit line, and an open gold node: ordinary public service, revocable exit, and a gap that AI cannot close. Colours are navy `#102A43`, service green `#3B9B73`, human-decision gold `#C78B2C`, and risk coral `#CC5A54`; open Noto Sans CJK is used, with no institutional mark, portrait, or safety-guarantee slogan. Three positions translate railway redundancy into public-service fallback, metropolitan AI experience into account-free use, and fusion innovation into cross-professional exit capability. Five functions close the loop through specifications, professional network, synthetic scenarios, ordinary service, and public failure receipts. VERIFY, CO-DESIGN, and REHEARSE sit in the three areas; the two wings provide cleared specifications and ordinary-arrival experience. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
+
+![Hidden Help Room logo, colours, and brand hierarchy](assets/figures/brand-identity.en.png)
+
+### agent.2 | Five case lenses, enabling factors, and three industry tests
+
+The five lenses are not company rankings: C1 data minimisation checks fields and retention; C2 address confidentiality checks cross-system destination exposure; C3 general private consultation checks signage, queues, and acoustics; C4 human referral checks role, minimum record, and stop; C5 vendor exit checks local clearing, open matters, and ordinary-service restoration. Land means ordinary revocable rooms; funding remains a prototype cost band pending quotations; talent includes social work, legal, privacy, accessibility, fire/security, and frontline staff; compute is local temporary session only; data is synthetic; scenarios are the three tests. T1 tests notification/map/calendar write-back on a shared phone, T2 tests a proxy requesting records, and T3 tests outage, no staff, and vendor exit. Real cases, destination leakage, or no cover shift trigger `STOP`. [metric:industry_test_count] [source:SOURCE-REGISTRY]
+
+### agent.3 | Six personas, ten scenarios, and operating thresholds
+
+Each card includes user, space, human decision, prohibited AI role, and failure result. Frontage and consultation follow the same accessibility baseline; shared-phone cards default to hidden notification previews; proxy requests require a confidentiality-bound role to check applicable procedure; translation cannot auto-send; staff absence shows only “service paused” and public resources; paper, phone, and human consultation remain after vendor outage. Synthetic success requires zero destination write-back across all ten cards, a named human decision for each record, and ordinary service after stop. It does not predict real-world safety. [metric:scenario_card_count] [metric:persona_count]
+
+### agent.4 | Public space, three landmarks, and component library
+
+Quiet Gate uses an open green line to explain no write-back; Human Decision Table displays roles, confidentiality, and stop rights; Clear Receipt Light shows only that a local session is cleared, never identity, count, reason, or destination. Six components are multi-use signage, non-identifying ticket, acoustic buffer, write-back check card, human-referral card, and exit-clear checklist. All are movable, offline, and free of real maps/cases; nothing is placed while heritage, green, transport, or accessibility conditions remain unknown. [metric:landmark_count] [data:geometry/public_space.geojson#PUBLIC-001]
+
+### agent.5 | Cultural narrative, wayfinding, and international copy
+
+The narrative does not aestheticise harm. Railway dual lines, redundancy, and staffed operation become “ordinary service remains after system exit”; Zhongguancun open collaboration becomes public specifications, synthetic failures, and revocable versions; AI culture states that public choices can be explained without learning a person’s identity. Wayfinding has city-level “Private Consultation”, four indoor pictograms, and a work-layer role/stop display. Fixed international copy is `Start quietly. Decide with a human. Leave no destination behind.` It must not imply law avoidance, a secret shelter, or an official safety guarantee. [source:AGENT-TASKBOOK] [depth:height_massing_character]
+
+### agent.6 | Annual programme, developer community, and durable exit
+
+Q1/Q3 synthetic stress tests cover notification, proxy, outage, and clearing. Q2/Q4 affected-person representatives and frontline staff review discoverability, misleading cues, and workload. An annual forum publishes only cleared specifications, synthetic failures, and exits. The developer community accepts only localised, offline write-back and accessibility components. Opening uses G0 evidence/rights, G1 space/fire, G2 privacy/law, G3 staffing/referral, and G4 exit/review; any `HOLD` stops progression. The conversion path is public problem—synthetic prototype—independent review—bounded display—decision on a separate real project, with no attraction, funding, or procurement promise. [metric:implementation_gate_count] [depth:phasing_implementation]
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
