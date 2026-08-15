@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Read Jing-Zhang in full: green power and compute at the Zhangjiakou end, models, talent and scenarios at the Haidian end, 47 rail minutes apart — and not one place in the city yet expresses that 200-km relationship. This proposal reads the 11.4 km² as the corridor's southern terminal district: a Surface Line (7.8 km heritage-park greenway) carrying people, an Under Line (6 km Qinghuayuan rail tunnel) carrying intelligence; the Two-Way Protocol makes every AI deployment a paired service — uplink data against a downlink public return — and its six rules recompute live in the exhibition page. Concept proposal on a provisional boundary; recalculated once official redlines are published."
 tracks: ["jingzhang-heritage-narrative", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v1.9"
+iteration: "v1.10"
 ---
 
 # THE TWO-WAY LINE: Running the Centennial Jing-Zhang Corridor in Both Directions
