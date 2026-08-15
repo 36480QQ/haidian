@@ -266,7 +266,13 @@ Detailed design of the three key areas is mandatory, covering functional formats
 
 The three districts are seriated along the 9km Intelligence Corridor — Zhongzhi (Origin) → AI Origin (Transform) → Dazhongsi (Apply) — forming a complete AI innovation chain; the design language is unified (Ren-shape motif / three-color system / AI station kit), and the scale transitions north-to-south from large industrial blocks to human-scale commercial streets.
 
-![Key areas detailed design](assets/figures/key-areas.en.png)
+![Key areas detailed design (overview)](assets/figures/key-areas.en.png)
+
+![Zhongzhi Park AI Independent Innovation Accelerator — district design plan (detail)](assets/figures/area-zhongzhi-masterplan.png)
+
+![Beijing AI Origin Community — district design plan (detail)](assets/figures/area-origin-masterplan.png)
+
+![Dazhongsi AI Industry Cluster — district design plan (detail)](assets/figures/area-dazhongsi-masterplan.png)
 
 ## AI Innovation Ecosystem, Talent Personas and AI+ Scenarios
 
@@ -304,7 +310,7 @@ To locate this proposal within the known sample lineage, the following 10 global
 
 ### External Regional Synergy (linkages with Beijing AI strategy + Jing-Jin-Ji)
 
-![External regional synergy (concept)](assets/figures/regional-synergy.png)
+![External regional synergy (concept)](assets/figures/regional-synergy.en.png)
 
 While the proposal focuses on Haidian's 43.6 km², it must structurally echo the capital-wide AI layout and the Jing-Jin-Ji coordinated-development strategy, avoiding internal closure:
 
@@ -400,6 +406,25 @@ The land use plan follows public standards for territorial survey, planning and 
 - **Denominator clarification**: `building_footprint_area_sqm = 310,807 m²` is the footprint of the single "Zhongzhi Full-Stack Sanctuary" concept building (BLDG-001, `geometry_role=design_proposal`), NOT the district-wide existing footprint, and must not be used to back-calculate total volume. The "arithmetic conflict" noted in prior review stemmed from this denominator mismatch and has been corrected.
 - **Recalculation path**: once official FAR control and floor-area census are published, all scenario values are recomputed in EPSG:4548.
 
+![Building-scale scenario derivation chain](assets/figures/p5-3_volume_chain.en.png)
+
+**Building retain-renovate-update-new classification framework (concept, pending current-status data)**: building disposition is classified into four categories — **Retain**, **Renovate**, **Update**, **New** — judged in the order "heritage value > structural safety > economic viability > industry fit" [depth:retain_renovate_demolish] [standard:MOHURD-CONTROL-DETAILED-PLANNING]:
+
+- **Retain**: railway heritage, industrial relics (former factories, locomotive depots, signal towers), fine historic buildings and rail-corridor imagery — preserved in place and adaptively reused as cultural memory carriers (e.g. Jing-Zhang Railway Heritage Park corridor facilities, Qinghuayuan Station).
+- **Renovate**: older buildings with sound structure but mismatched function — "retain-and-renovate" first, upgrading value through functional conversion (industry services, talent housing, public facilities) and facade/energy retrofits, avoiding large-scale demolition; includes low-efficiency commercial stock iterating toward smart consumption (e.g. Dazhongsi 1733 flagship cluster).
+- **Update**: low-efficiency land and vacant parcels — redeveloped via a mix of demolition and renovation to release industrial space (e.g. Qinghe innovation interface belt, low-efficiency industrial land north of Zhongzhi Park).
+- **New**: vacant parcels and new carriers — mainly AI-scenario architecture (Full-Stack Sanctuary, pilgrimage landmarks) and public-space construction, a smaller share of total new floor area.
+
+**Three-district retain-renovate-update-new orientation (conceptual assumption, NOT an official regulatory conclusion)**:
+
+| District | Retain | Renovate | Update | New | Note |
+|---|---|---|---|---|---|
+| Zhongzhi Park AI Independent Innovation Accelerator | Medium | High | Medium | Low | Industrial-relic activation + low-efficiency industrial land redevelopment; new construction concentrated on landmark carriers such as the Full-Stack Sanctuary |
+| Beijing AI Origin Community | Medium | High | Medium | Low | Functional conversion and quality upgrade of older near-campus blocks; campus boundaries and community fabric preserved |
+| Dazhongsi AI Industry Cluster | Low | High | Medium | Low | Stock-commercial retrofit and smart-consumption iteration; the Dazhongsi heritage structure itself retained |
+
+- **Data-gap statement**: parcel-level retain-renovate-update-new conclusions require current building census, ownership, structural survey and regulatory conditions; before official data are published, the table above is a **conceptual orientation only** and constitutes no engineering demolition, retrofit or retention decision [depth:risk_missing_data].
+
 ## Transport, Rail, Municipal and Public Services
 
 The transport plan responds to requirements for station integration, road micro-circulation, slow-traffic gaps, external transport, parking and green transport [depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]. Municipal and public service facilities cover AI industry services, innovation service platforms, talent living services, new infrastructure, distributed energy and edge computing; where pipeline, energy, drainage, flood or fire data are missing, they are listed as prerequisites for formal deepening [depth:municipal_new_infrastructure].
@@ -416,7 +441,7 @@ The blue-green space plan takes the Jing-Zhang Heritage Park vitality belt as th
 
 **East-west stitching and north-south connection**: a "fishbone" network of connector routes with the corridor as spine (9 branch roads opened in phase 2, suggested to be densified further), activation of space under the Metro Line 13 viaduct, ground-floor opening of parks to streets, and barrier-free connection; north-south continuity via a continuous corridor, dual gateways (Qinghe Station/Xizhimen) and water-system connectivity.
 
-![Public-space component kit (concept)](assets/figures/component-kit.png)
+![Public-space component kit (concept)](assets/figures/component-kit.en.png)
 
 **Public-space component kit (6 reusable modules)**: ① AI Station (smart inquiry + AED + canopy + edge compute) ② Corridor Lantern (corridor lighting + wayfinding + event publishing) ③ Wayfinding Kit (open-source, large-print/Braille/children versions) ④ Rail-tie Pavers (retained rail ties; heritage+AI dual exhibit every 500 m) ⑤ Seating Node (bench + armrest + wind-rain porch, spacing ≤ 200 m) ⑥ Memorial Plaque (rail-tie stone / paver name inscriptions, open-source contribution honor wall). All modules share the Ren-shape motif and the three-color system for direct reuse in stations, the corridor and key districts.
 
@@ -466,8 +491,6 @@ Implementation follows an "ignite first, then weave the network, then scale the 
 The indicator system at minimum covers overall design area, key area areas, green/public space ratios, building footprint, number of renewal projects, AI scenario nodes, slow-traffic connectivity, industrial space, talent services and self-check status [depth:metrics_recalculation]. All known indicators must be recalculable from GeoJSON or trusted sources; unknown indicators must state the reason and prerequisites for formal submission. Indicators fall into three classes: spatial indicators directly recalculable from submitted geometry (boundary area, green ratio, public space ratio, building footprint, phasing area); regulatory indicators requiring official conditions (FAR, building height, density, setbacks, road red lines); performance indicators requiring ongoing operation data (AI innovation index, talent density, event participation, scenario usage). The three classes enter `metrics.json`, `assumptions.json` and `compliance_matrix.json` respectively [metric:site_area_sqm] [metric:key_area_count] [metric:green_ratio] [metric:public_space_ratio] [metric:building_footprint_area_sqm].
 
 ![Metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
-
-![Volume scenario derivation chain](assets/figures/p5-3_volume_chain.en.png)
 
 ![Implementation & operation mechanism](assets/figures/p5-2_implementation_mechanism.en.png)
 
