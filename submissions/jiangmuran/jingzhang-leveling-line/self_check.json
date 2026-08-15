@@ -103,7 +103,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 80 zh / 80 en unit-carrying measurements in prose, same set in both editions; 173/169 bare numbers reported but not blocked, and one designed check (76 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 80 zh / 80 en unit-carrying measurements in prose, same set in both editions; 174/169 bare numbers reported but not blocked, and one designed check (76 candidates) not shipped"
     },
     {
       "check_id": "PKG_COMPUTED_VALUE_QA",
@@ -247,7 +247,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 138 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 98；最常见形状：check-measured-the-convenient-thing 27、two-copies-of-one-thing-drifted 20、claim-outlived-the-package 13、deliverable-not-inspected-before-shipping 13。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 138 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 139 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 99；最常见形状：check-measured-the-convenient-thing 27、two-copies-of-one-thing-drifted 20、deliverable-not-inspected-before-shipping 14、claim-outlived-the-package 13。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 139 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",

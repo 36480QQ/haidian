@@ -1604,12 +1604,12 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **138 条**。按发现者分：
+当前 **139 条**。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
 | 独立审计 | 25 | 委托的审计对象是随包产物，不是草稿 |
-| 作者自查 | 98 | 本轮工作中发现 |
+| 作者自查 | 99 | 本轮工作中发现 |
 | 本包自己的闸门 | 11 | 构建时被抓出——这是闸门本该做的事 |
 | **包外评审** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190 |
 
@@ -1627,8 +1627,8 @@ node visual/assets/verify.js
 |---|---|
 | 检查测了方便测的东西 | 27 |
 | 同一件事的两份拷贝各自漂移 | 20 |
+| 交付物在提交前没被看过 | 14 |
 | 声明活得比包的内容久 | 13 |
-| 交付物在提交前没被看过 | 13 |
 | 写成硬约束，却判不了不合格 | 10 |
 | 引用解析不到 | 7 |
 | 数字背后没有文件 | 6 |
@@ -1684,15 +1684,15 @@ node visual/assets/verify.js
 
 ### 权利与许可台账
 
-评审无法核验的授权声明等于没有声明。下表逐类列出本包全部资产的来源、许可与**核验方式**，每一行都可独立复核。**逐文件的机读版本随包提交于 `visual/assets/rights_ledger.json`**——它由 `manifest.json` 生成而非手写，枚举的是实际随包的 **134 个文件**，任一文件没有权利归类即构建失败；每条另给出评审自行核验的方式，而不只是一句「原创」。手写台账枚举的是作者记得的资产，生成台账枚举的是包里真有的文件，这个差别正是本方案通篇在说的那件事：
+评审无法核验的授权声明等于没有声明。下表逐类列出本包全部资产的来源、许可与**核验方式**，每一行都可独立复核。**逐文件的机读版本随包提交于 `visual/assets/rights_ledger.json`**——它由 `manifest.json` 生成而非手写，枚举的是实际随包的 **135 个文件**，任一文件没有权利归类即构建失败；每条另给出评审自行核验的方式，而不只是一句「原创」。手写台账枚举的是作者记得的资产，生成台账枚举的是包里真有的文件，这个差别正是本方案通篇在说的那件事：
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**逐文件台账在评审输入之外，因此把它的结果放进来。** `build_review_input` 送出的是 `proposal.md` 与八份 JSON；`report/copyright_statement.md` 与 `visual/assets/rights_ledger.json` 都不在其中。**一份评审结构上打不开的权利台账，从评审的位置看就是一句无法核验的断言**——而那正是本方案在别处反对的东西。当前 **134 个随包文件全部有权利归类**，任一文件缺归类即构建失败：
+**逐文件台账在评审输入之外，因此把它的结果放进来。** `build_review_input` 送出的是 `proposal.md` 与八份 JSON；`report/copyright_statement.md` 与 `visual/assets/rights_ledger.json` 都不在其中。**一份评审结构上打不开的权利台账，从评审的位置看就是一句无法核验的断言**——而那正是本方案在别处反对的东西。当前 **135 个随包文件全部有权利归类**，任一文件缺归类即构建失败：
 
 | 清权类别 | 文件数 | 含义 |
 |---|---|---|
-| `author-originated` | 112 | 本方案原创，无第三方内容 |
+| `author-originated` | 113 | 本方案原创，无第三方内容 |
 | `provisional-only-with-stated-limit` | 9 | 九个 GeoJSON 图层，派生自仓库临时边界，限制已写明 |
 | `author-originated-measurement` | 8 | 对仓库公开元数据的自采统计，定级 background_only |
 | `author-originated-with-embedded-fonts` | 4 | A3/A0 PDF，含字体子集（见下） |

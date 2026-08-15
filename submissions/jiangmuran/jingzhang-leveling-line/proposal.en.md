@@ -1493,12 +1493,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-138 entries. By finder:
+139 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 98 | Found while working |
+| The author | 99 | Found while working |
 | This package's own gate | 11 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1516,8 +1516,8 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 |---|---|
 | The check measured the convenient thing | 27 |
 | Two copies of one thing drifted | 20 |
+| A deliverable was not looked at before shipping | 14 |
 | A claim outlived the package | 13 |
-| A deliverable was not looked at before shipping | 13 |
 | A hard constraint nothing could fail | 10 |
 | A reference did not resolve | 7 |
 | A number with no file behind it | 6 |
@@ -1576,11 +1576,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **134 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **135 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 112 |
+| `author-originated` | 113 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
