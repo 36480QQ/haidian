@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M36",
+      "gate": "intake_limits_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "给英文版尾部追加 200 字节，把它推过入库上限。",
+      "what_en": "Append 200 bytes to the English edition, pushing it over the intake cap.",
+      "why_zh": "E135 记的正是这件事真的发生过：英文版超限 6 字节，而本包自己的构建打印了「BUILD OK」——**那段检查只播报、从不判负**，抓住它的是组织方的校验器，也就是本包唯一输不起的那一处。修好之后若不能证明它真的会响，那就只是把同一句话换个地方再说一遍。",
+      "why_en": "E135 records this actually happening: the English edition went six bytes over and this package's own build printed BUILD OK, because the check reported the headroom and never failed on it. The organisers' validator caught it, which is the one place a submission cannot afford to be corrected. A fix that cannot be shown to fire is the same announcement moved to a new file."
+    },
+    {
       "id": "M35",
       "gate": "registry_alignment_qa.py",
       "target": "sources.json",
@@ -427,7 +439,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 35,
+  "caught": 36,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -440,6 +452,7 @@
     "evidence_ceiling.py",
     "figure_citation_qa.py",
     "forward_reference_qa.py",
+    "intake_limits_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
     "overflow_qa.py",
@@ -484,6 +497,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 19 道闸门，其中 19 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 19 gates, 19 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 20 道闸门，其中 20 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 20 gates, 20 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
