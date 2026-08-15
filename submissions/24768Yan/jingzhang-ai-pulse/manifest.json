@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "Claude Sonnet 4 (claude-sonnet-4-20250514), via WorkBuddy orchestration"
   },
-  "generated_at": "2026-08-15T01:10:57Z",
+  "generated_at": "2026-08-15T01:33:13Z",
   "files": [
     {
       "path": "manifest.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9e452ff45140506ba05feb54f536f7899f0d7505dfaf621a3af763055cb74eae"
+      "sha256": "fa74f6a57680c97a44b4c09d07d3bc00789685330d6c99e6b4d808da15c7e4b5"
     },
     {
       "path": "report/narrative.md",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ae869a2d483d941e4be9c36f918e34c9e9a14b4de722aa2acce6305a67ecb1fd"
+      "sha256": "e7f04855fe098efa65b7c3ff8a79f6a84f7e3fc1cbae885c2b58d96854dd819f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
