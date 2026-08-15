@@ -44,6 +44,10 @@ iteration: "v0.4"
 
 **[Diagnosis loop · step 1: morphology — the fractal spectrum.]** Four numbers define the belt's "physical constitution": ①street-network fractal dimension **D=1.746** at large scale — inside the healthy band 1.6–1.8 (small scale 1.76–1.89, space-filling) — **the skeleton is alive; the disease is not form but connection** [metric:street_network_D_large]; ②employment density decays along the spine with **γ=1.85** (R²=0.60) but only γ=1.16 from stations — **jobs hug the spine: the spine is the gravitational line of employment**, the morphological proof of the Hyper Line (superlinear agglomeration happens along a line); ③green-space lacunarity 5.07 — rough texture (linear bands plus scattered patches, matching the "one line + three plazas" organization); ④counterfactual: my manual 400 m partition has an area-perimeter D of 0.58 — **the fractal fingerprint of an imposed grid**; and the CA emergence simulation (self-organization under constraints) overlaps the manual partition only 0.368 — the gap between them is exactly the distance between a top-down blueprint and emergence under constraints (see the verification loop) [depth:existing_conditions_diagnosis].
 
+![Fractal spectrum: area-perimeter D / density decay γ / green lacunarity](assets/figures/c13-fractal.png)
+
+**How to read**: left = area-perimeter fractal dimension (the manual grid's D=0.58 is the fingerprint of imposed order); middle = employment density decay — **γ=1.85 along the spine, far steeper than γ=1.16 from stations: jobs hug the Hyper Line**; right = green-texture lacunarity.
+
 **[Diagnosis loop · step 2: connectivity — λ and the ecosystem map.]** Wilson calibration (λ_ij=exp(-d_ij/2500m), the official ten-minute circle): only **2/5** core nodes are supercritical — Origin × Xiaoyuehe Wing λ=0.455 the only crossing, Zhongzhiyuan × Origin 0.205, Origin × Zhongguancun Wing 0.374 (near but below), Zhongzhiyuan × Dazhongsi 0.015 (deeply subcritical) [metric:wilson_supercritical_net_pct] [metric:core5_giant_span_ratio]. **Plain language: the three key areas sit next to each other on the map yet cannot reach each other within ten minutes.** Ecosystem map (six dimensions, ~60 sourced records): upstream is complete (2,400+ AI enterprises, 123 registered models, 116 unicorns around Wudaokou, a 50-billion-yuan fund, 45 EFLOPS, 21 universities with AI programs); **the middle layer is unmeasured** (affordability, conversion rates, inclusive compute, OPC micro-stats) — Beijing's dramatic tension: a city of migrant founders against a 117-point hukou threshold and roughly 2 million young people lost in a decade. Bottom-up generation is an **unfinished proposition awaiting measurement** [source:DATA-SRC-HAIDIAN-PRESS-20260729] [metric:ecosystem_hukou_threshold].
 
 ![Ecosystem map: upstream complete, middle layer unmeasured](assets/figures/ecosystem-map.png)
@@ -52,6 +56,10 @@ iteration: "v0.4"
 
 **The proposition answers the three official positionings**: the Centennial Jing-Zhang Cultural Belt = the spine and seven-gap stitching; the Urban AI Life Experience Belt = the POI-measured corridor diversity of 0.941 (the park's surroundings are already a life belt); the AI Convergence Innovation Belt = four-sector flows pushing λ across the phase transition ("convergence" becomes computable). Naming (agent.1): THE EMERGENT BELT; JINGZHANG HYPER LINE; HYPER STACK/ORIGIN/FRONT; CAPITAL/SCENARIO WING; HYPER NODES. Logo: "the superlinear line" — a straight railway bending upward with a seven-node cluster floating up — **the century-old line begins to rise** (clearance required) [depth:industry_future_city_research].
 
+![Wilson λ couplings: only 2/10 core pairs cross the phase transition](assets/figures/c1-wilson.png)
+
+**How to read**: red = pairs above λc=0.42 (only two); grey = subcritical. **Five core nodes, cut into a 2/5-connected chain by the ten-minute circle — the graphic proof that physical adjacency is not functional connectivity.**
+
 **Loop conclusion →** Half the diagnosis is done: form healthy, connection broken, middle layer unmeasured. Next: the flow check-up.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
@@ -59,6 +67,10 @@ iteration: "v0.4"
 **[Diagnosis loop · step 3: flows — the four-sector baseline.]** SIMULACRA-lite (the E→P→R→M chain of Paper 163, Jing-Zhang parameters, computed): employment E = 727 office-POI units, residence P = 491, retail R = 1,100, local services M = Putnam-style (floor supply + accessibility). Baseline: each residential unit reaches on average **323.5 jobs** within its 25-minute circle; employment-flow concentration 0.607 (the top 10% of flows carry six tenths) — **jobs live in buildings, not streets** (floor space is the hard constraint, as in the Batty Shanghai study); functional deviation (12 POI categories, uniform reference): transport +74.8% and living services +52.7% in surplus; **finance −63.0%, scenery −62.7%, research institutes −45.9% in deficit** — the "content" gap of an innovation belt [depth:overall_spatial_structure] [metric:employment_gini].
 
 **Overall structure: "one line, three folds, two wings, seven nodes"** — derived directly from the diagnosis: the spine is the employment gravity line (γ=1.85), the three folds take the three functional roles, the seven nodes are the stitch positions. Land use = 400 m grid + POI character recognition (bottom-up) + renewal intervention at station catchments and corridor edges: research 31.5% / commercial 25.6% / education 18.2% / residential 16.5% / green 8.2% [data:geometry/land_use.geojson#LU-001] [metric:land_use_area_0701_sqm]. The jobs-housing imbalance is the renewal target; statutory intensity is "pending official data"; only conceptual massing is given (782 blocks, 17.4% footprint density, low confidence) [metric:building_density] [depth:development_intensity_controls].
+
+![SIMULACRA four-sector baseline: job reach / commute cost / flow concentration](assets/figures/c11-simulacra.png)
+
+**How to read**: left = jobs reachable within a 25-minute circle per residential unit (323.5, baseline); middle = flow-weighted commute cost; right = flow concentration 0.607 (jobs live in buildings, not streets).
 
 **Loop conclusion →** The diagnosis loop closes: form healthy, connection broken, function deviated, path locked — "sick in the cuts and the gaps". Entering the intervention loop.
 
@@ -99,17 +111,33 @@ iteration: "v0.4"
 | 10 | Developer honor wall · open-source gallery | Origin / nodes | Contributions are forgotten | Public, correctable |
 Privacy-invasive scenarios are excluded (agent.3 red line) [depth:scenario_cards_personas].
 
+![Amap POI check-up: the functional portrait of three areas and the corridor](assets/figures/c7-poi.png)
+
+**How to read**: left = POI counts by area (25,476 points); right = work-life ratio and diversity — **the corridor band's 0.941 diversity is the highest on the belt (a life belt); Dazhongsi is the most balanced (0.923)**.
+
 **Loop conclusion →** Scenarios are measurable gap-filling mechanisms; entering the physical intervention.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 **[Intervention loop · C: bottom-up land use and the constraint fingerprint.]** The partition = POI character recognition (bottom-up) + renewal intervention (design moves), cross-checked against the CA emergence simulation (the 0.368 overlap marks the "imposed order" part; the proposal keeps room for self-organization). Scaling finding: building footprint scales at β≈0.60 (sublinear) — the spine/waterfront constraints squeeze small blocks harder. **Design works with it: bundle small spaces into shared large units** (shared desks, labs, front desks) so OPC founders get full support at minimum footprint cost — **turning the β<1 constraint into a doorstep** [depth:retain_renovate_demolish] [metric:building_footprint_area_sqm]. Retain-renovate-demolish is "pending confirmation" for lack of inventory/ownership/heritage data: three principles only — protected and built park segments stay; inefficient space beside Jing-Zhang is functionally replaced; station catchments and stitch nodes get limited increment (conceptual). No statutory FAR/height/intensity conclusions (task-book boundary clause).
 
+![Scaling law: the β≈0.60 "constraint fingerprint" of building footprints](assets/figures/c3-scaling.png)
+
+**How to read**: roads β=0.915 (near-linear); **building footprint β≈0.60 (sublinear)** — smaller units build less: the spine/waterfront constraints squeeze small blocks harder. Design works with it (bundle small spaces into shared units), not against it.
+
 **Loop conclusion →** Physical carriers ready; entering the spine surgery.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
 **[Intervention loop · D: spine surgery — the seven-node stitching.]** Human-scale evidence (Toledo-style three-zone comparison, computed): the corridor band has only **39.0 intersections/km²** (lowest) and **24.0 nodes reachable within 400 m**; the campus belt 167.0/km² and 53.7; the grid new town 65.2/km² and 25.7 — **a century of railway severance left the line that is hardest to walk** [depth:traffic_rail_slow_parking]. The surgery: stitch the 7 gaps (Qinghuadonglu, Wudaokou, North 4th Ring, Zhichunlu, North 3rd Ring, Xueyuannanlu, Gaoliangqiao Xiejie) with footpaths, cycleways and grade-separation concepts (the two ring-road nodes are exactly the announcement's "overpass the rings" areas) [metric:corridor_crossing_count] [data:geometry/roads.geojson#ROAD-001]. Effect (computed): Beijing North +132%, Dazhongsi +102%, Wudaokou +65%, Zhichunlu +61% — **stitching is a phase transition, not decoration**. Seven-station integration concepts; bicycle parking at the nodes; municipal/new infrastructure as system suggestions only; public services fill the POI gap lists [depth:municipal_new_infrastructure].
+
+![Toledo-style three-zone comparison + POI syntactic placement](assets/figures/c4b-syntax.png)
+
+**How to read**: left = intersection density and 400 m reachability by zone — **the corridor band's 39/km² is the lowest on the belt: a century of severance left the line hardest to walk**; right = integration percentiles of 14 POIs — Xueyuanqiao 97.5% is Jing-Zhang's Bisagra Gate, Tsinghuayuan 93.5% proves the "Origin" grew from structure itself.
+
+![Blue-green percolation: the disease is the severed spine, not missing green](assets/figures/c2-percolation.png)
+
+**How to read**: left = giant component 83.9% (above the 59.27% threshold) → 86.5% after stitching; right = the 7-gap list (stitch targets).
 
 ![Mobility and blue-green composite system](assets/figures/mobility-bluegreen.png)
 
@@ -134,6 +162,10 @@ Privacy-invasive scenarios are excluded (agent.3 red line) [depth:scenario_cards
 **[Verification loop · B: three model re-runs + the four-threshold table.]** Core metrics recalculated from geometry and data (EPSG:4548): site area 11,412,825 m²; land use research 31.5% / commercial 25.6% / education 18.2% / residential 16.5% / green 8.2%; green ratio 11.6%; public-space ratio 1.8%; footprint density 17.4%; road length 66,977 m [metric:green_ratio] [metric:public_space_ratio].
 
 **Verification 1 (SIMULACRA re-run)**: after stitching, each residential unit reaches on average **323.5→374.9 jobs (+15.9%)** in its 25-minute circle; flow-weighted commute cost −3.4%; flow concentration 0.607→0.574 (more balanced) — **stitching turns the "ten-minute circle" from slogan into number** [depth:metrics_recalculation].
+
+![CA emergence: no intervention = lock-in; intervention = unlock](assets/figures/c12-ca.png)
+
+**How to read**: three panels — initial (POI status quo) → no intervention for 60 steps (0 cells change: path lock-in) → intervention for 60 steps (42 cells unlock and redistribute).
 
 **Verification 2 (CA counterfactual)**: no-intervention 60 steps change nothing (**path lock-in: the status quo reinforces itself; without intervention it never changes**); with intervention, 42 cells unlock and redistribute (residential → research/commercial along the spine and station zones) — **emergence under constraints needs the "unlock" action, and the whole intervention of this proposal is that unlock list**.
 
