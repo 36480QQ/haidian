@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "64106a597855ecb2868456381c5a9f4347417df0f16b9501002d91a5b6562034"
+      "sha256": "92e2e119a6e6fe7fe4fa9f5cfca108c0c0210f50612d668a4565d6a888916ede"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "87565c4efdf1c27bba0101e84a0ed70dd208742769506897e648b910f9519537"
+      "sha256": "ae619fefd0055d92366b05096fa5f4c872e95c5b424ba1520842ee5a4c34ef20"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -630,164 +630,10 @@
       "language": "en",
       "translation_of": "assets/figures/section-dazhongsi_ai_industry_cluster.png",
       "sha256": "3c8b8ed4357eeec17552b9d9dc9b3f7b894a9952028a89ff6d4a07a0d33e5c4c"
-    },
-    {
-      "path": "verification/README.md",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "fee100527a6cb7d4392449f140318dc335c447d4605c9573d542c168d26bc101"
-    },
-    {
-      "path": "verification/amap_poi.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "27c3a136182a72d45c4f5ca1c6b4b2f6c1e6689e9145ff3b49ae64d5a9ed2b18"
-    },
-    {
-      "path": "verification/c11_simulacra.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "a01f7e16fc312159a7bbd4f7d189a1f064a396bb2b6d1af9d4dd193cdd0a3431"
-    },
-    {
-      "path": "verification/c12_ca.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "ee522723e8d97e2ba39b807854b28373f801c6be3597b4a7bcc309cb3e73509c"
-    },
-    {
-      "path": "verification/c13_fractal_spectrum.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "e9b80f3bbf622dbb1edbef42d7dce3db59f1beaef9aab57a3fa44ea45b514b5a"
-    },
-    {
-      "path": "verification/c14_governance.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "b992d6fc29d0f328175e0c3cd2e00dd917991156b9e8c1c7465acd3dbdca3ee0"
-    },
-    {
-      "path": "verification/c15_luti.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "48ea565040a3c0dac6449767c6a086715b561661b191e419f9155ea7ef209077"
-    },
-    {
-      "path": "verification/c16_syntax_maps.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "77eb3bebb83249a50e40513718c260edead760538fcdb3b349b476ed9eac2b9b"
-    },
-    {
-      "path": "verification/c1_wilson.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "4945e25a3c149fce0fecf60b444263a810eca815c001ec65e54b44c5f756568f"
-    },
-    {
-      "path": "verification/c2_percolation.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "50ea19ecb78f276a5f89e0eaf2ae7470a9dde82a392d8aeeb7972d18dca7c0c2"
-    },
-    {
-      "path": "verification/c3_scaling.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "034c1d5e20fe1efbd9a2d1c60c0828c3971d6f29dbdcfa4af744b69388e2ac22"
-    },
-    {
-      "path": "verification/c4_syntax.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "8be898b022a17bb1a8c9674edd06b0d4e623fff5b91226a99e2be341aa6eeba0"
-    },
-    {
-      "path": "verification/c4b_syntax_toledo.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "482c45c03d2e69db314fde166a6d6f4aced7ba935afcb8cb460d64ae594dd0b1"
-    },
-    {
-      "path": "verification/c5_counterfactual.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "1d07600ee00397334843c3dd2f500b29c88d475dfb36fad4ffb8aee3a558c9b8"
-    },
-    {
-      "path": "verification/c6_fractal.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "b85a084f92e47dcedc4ccb32f6e1b5ef26d80953e19138dd336e691bcd5a6783"
-    },
-    {
-      "path": "verification/c7_poi.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "84d2a748d5165af27b1d65a49da0b2bdcc588f488c7134a847b21fa32c2102b2"
-    },
-    {
-      "path": "verification/c8_c9_c10.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "1afb5472bf5fa969508e32a04179699b25b60dc9a7db10c3c82e6ba7a1859ec0"
-    },
-    {
-      "path": "verification/gen_design_geometry.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "0e77e410e40c14eddc303da2f37003eeac63f92fcfae6504397913a7e3fb3965"
-    },
-    {
-      "path": "verification/gen_figures.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "6ce49cc82452b103ba3e7ff0cb2bad2e0aaa4704494b3f36402f03a1240a8c20"
-    },
-    {
-      "path": "verification/gen_pdfs.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "045635891e6391cbbbccc0cd2261be5a21fe6f4162f39e36c3c42e74958e3a0c"
-    },
-    {
-      "path": "verification/kun_common.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "3dccbe7a05f8af536b96cd593fdde701ce8f8fce89579d73b8199f10549a790b"
-    },
-    {
-      "path": "verification/site_model.py",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "9c86e978537904ef141652ad6f6bb32b5cc089325655e85f50af26ef1cc78e24"
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
