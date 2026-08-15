@@ -12,11 +12,12 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "formula": "polygon_area(submitted_provisional_site_boundary, EPSG:4548)",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
-      ]
+        "A-GEOMETRY-003"
+      ],
+      "reason": "由临时边界计算，只服务概念图层自检，不是官方用地面积。"
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -25,11 +26,13 @@
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
+      "formula": "sum(polygon_area(conceptual_building_footprints, EPSG:4548))",
+      "confidence": "low",
       "assumptions": [
+        "A-GEOMETRY-003",
         "Conceptual rooms are small reversible prototypes; value is recomputed by spatial review."
-      ]
+      ],
+      "reason": "概念建筑基底相对临时边界复算，不是现状建筑或法定规模。"
     },
     "green_ratio": {
       "status": "known",
@@ -39,9 +42,12 @@
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "formula": "green_space_union_area / provisional_site_area",
+      "confidence": "low",
+      "assumptions": [
+        "A-GEOMETRY-003"
+      ],
+      "reason": "概念性绿地相对比例，不是控规绿地率。"
     },
     "public_space_ratio": {
       "status": "known",
@@ -51,9 +57,12 @@
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "formula": "public_space_union_area / provisional_site_area",
+      "confidence": "low",
+      "assumptions": [
+        "A-GEOMETRY-003"
+      ],
+      "reason": "概念性公共空间相对比例，不是法定公共空间指标。"
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -89,7 +98,8 @@
       "confidence": "medium",
       "assumptions": [
         "Conceptual nodes use provisional geometry and are not real service locations."
-      ]
+      ],
+      "reason": "节点数量来自概念公共空间图层，不代表真实服务地点。"
     },
     "manual_fallback_coverage_ratio": {
       "status": "known",
