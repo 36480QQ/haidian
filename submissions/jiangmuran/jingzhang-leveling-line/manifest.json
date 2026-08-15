@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-14T23:34:12-07:00",
+  "generated_at": "2026-08-14T23:38:52-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -577,7 +577,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "4633ae0a93cbe8e87ed653f1d4eace9adc4920c6918a62c2fb16dcd1841951c3"
+      "sha256": "84c75e066a9335b4ca023501747b93953cb12ed08db11e12471442e57e456d98"
     },
     {
       "path": "visual/assets/errata.json",
@@ -995,7 +995,7 @@
     },
     {
       "path": "assets/media/cover.png",
-      "role": "gallery_cover",
+      "role": "media_poster",
       "required": false,
       "language": "neutral",
       "sha256": "419411b5c40682257f6368cf9dc66351caae5b14f4bdc1a9e844f35671d42bbb"
