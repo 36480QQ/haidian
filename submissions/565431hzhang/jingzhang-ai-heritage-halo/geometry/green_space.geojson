@@ -13,9 +13,7 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园南段绿带",
-        "ecological_status": "primary_corridor",
-        "connectivity_role": "corridor",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 514357.946
       },
       "geometry": {
         "type": "Polygon",
@@ -56,9 +54,7 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园中段绿带",
-        "ecological_status": "primary_corridor",
-        "connectivity_role": "corridor",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 719207.355
       },
       "geometry": {
         "type": "Polygon",
@@ -99,9 +95,7 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园中北段绿带",
-        "ecological_status": "primary_corridor",
-        "connectivity_role": "corridor",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 877448.027
       },
       "geometry": {
         "type": "Polygon",
@@ -142,9 +136,7 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园AI原点段绿带",
-        "ecological_status": "primary_corridor",
-        "connectivity_role": "corridor",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 474198.873
       },
       "geometry": {
         "type": "Polygon",
@@ -185,9 +177,7 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园过渡段绿带",
-        "ecological_status": "primary_corridor",
-        "connectivity_role": "corridor",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 663763.602
       },
       "geometry": {
         "type": "Polygon",
@@ -228,9 +218,7 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园北段绿带",
-        "ecological_status": "primary_corridor",
-        "connectivity_role": "corridor",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 896721.852
       },
       "geometry": {
         "type": "Polygon",
@@ -275,9 +263,7 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "西侧社区公园A",
-        "ecological_status": "community_green",
-        "connectivity_role": "node",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 26571.596
       },
       "geometry": {
         "type": "Polygon",
@@ -318,9 +304,7 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "西侧社区公园B",
-        "ecological_status": "community_green",
-        "connectivity_role": "node",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 113425.873
       },
       "geometry": {
         "type": "Polygon",
@@ -361,9 +345,7 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "西侧社区公园C",
-        "ecological_status": "community_green",
-        "connectivity_role": "node",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 61677.262
       },
       "geometry": {
         "type": "Polygon",
@@ -404,9 +386,7 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园A",
-        "ecological_status": "community_green",
-        "connectivity_role": "node",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 265704.0
       },
       "geometry": {
         "type": "Polygon",
@@ -447,9 +427,7 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园B",
-        "ecological_status": "community_green",
-        "connectivity_role": "node",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 303550.257
       },
       "geometry": {
         "type": "Polygon",
@@ -490,9 +468,7 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园C",
-        "ecological_status": "community_green",
-        "connectivity_role": "node",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 379295.69
       },
       "geometry": {
         "type": "Polygon",
@@ -533,9 +509,7 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园D",
-        "ecological_status": "community_green",
-        "connectivity_role": "node",
-        "maintenance": "public_space_operator"
+        "area_sqm_declared": 265424.669
       },
       "geometry": {
         "type": "Polygon",
@@ -564,178 +538,6 @@
           ]
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.346,
-              39.97
-            ],
-            [
-              116.348,
-              39.97
-            ],
-            [
-              116.348,
-              39.975
-            ],
-            [
-              116.346,
-              39.975
-            ],
-            [
-              116.346,
-              39.97
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "GREEN-ECO-1",
-        "layer": "GREEN_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "green_type": "ecological_corridor",
-        "name_zh": "小月河生态廊道",
-        "ecological_status": "secondary_corridor",
-        "connectivity_role": "corridor",
-        "maintenance": "municipal"
-      },
-      "id": "GREEN-ECO-1"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.349,
-              39.972
-            ],
-            [
-              116.351,
-              39.972
-            ],
-            [
-              116.351,
-              39.974
-            ],
-            [
-              116.349,
-              39.974
-            ],
-            [
-              116.349,
-              39.972
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "GREEN-RAIN-1",
-        "layer": "GREEN_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "green_type": "rain_garden",
-        "name_zh": "大钟寺雨水花园",
-        "ecological_status": "stormwater_management",
-        "connectivity_role": "node",
-        "maintenance": "municipal"
-      },
-      "id": "GREEN-RAIN-1"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.343,
-              39.96
-            ],
-            [
-              116.345,
-              39.96
-            ],
-            [
-              116.345,
-              39.962
-            ],
-            [
-              116.343,
-              39.962
-            ],
-            [
-              116.343,
-              39.96
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "GREEN-ROOF-1",
-        "layer": "GREEN_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "green_type": "green_roof",
-        "name_zh": "众智园绿屋顶系统",
-        "ecological_status": "building_integrated",
-        "connectivity_role": "node",
-        "maintenance": "building_owner"
-      },
-      "id": "GREEN-ROOF-1"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.347,
-              39.955
-            ],
-            [
-              116.349,
-              39.955
-            ],
-            [
-              116.349,
-              39.957
-            ],
-            [
-              116.347,
-              39.957
-            ],
-            [
-              116.347,
-              39.955
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "GREEN-ROOF-2",
-        "layer": "GREEN_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "green_type": "green_roof",
-        "name_zh": "原点社区绿屋顶系统",
-        "ecological_status": "building_integrated",
-        "connectivity_role": "node",
-        "maintenance": "building_owner"
-      },
-      "id": "GREEN-ROOF-2"
     }
   ]
 }
