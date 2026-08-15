@@ -71,11 +71,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **字体规范（概念建议）**：标题与正文使用思源黑体 Noto Sans SC（OFL 许可，HTML 已内嵌子集，无远程字体依赖）；数字与代码使用等宽或西文无衬线；品牌名「智脉共生」保留中文、英文名「Bio-Pulse Symbiosis」全站统一不意译。
 
-**Logo 概念描述（概念建议，未产出正式图形）**：以黏菌网络 167 边骨架为基底，叠加京张铁路轨道纹理，配色为科技青 + 生态绿 + 强调红。Logo 为概念建议，不构成注册商标或公共标识，正式版需清权与授权。
+**Logo 图形（概念建议，已产出 SVG 矢量稿）**：以黏菌网络为基底、叠加京张铁路轨道纹理，配色为强调红 + 科技青 + 生态绿；矢量稿见 `assets/brand/logo.svg`（含「智脉共生」字标与英文名「Bio-Pulse Symbiosis」，双语）。Logo 为概念建议，不构成注册商标或公共标识，正式版需清权与授权。
 
 **禁止用法（概念建议）**：不得将品牌名与未经授权的地名、企业标识、官方机构名称并置；不得暗示获得官方认可；不得在未清权底图上使用品牌图形制造精确红线。
 
 ![品牌识别：智脉共生 / Bio-Pulse Symbiosis](assets/figures/brand_identity.png)
+
+**品牌 VI 实体文件（概念建议，已产出）**：品牌色板卡 `assets/brand/vi_palette.png`（英文 `vi_palette.en.png`）与品牌应用示意 `assets/brand/vi_applications.png`（英文 `vi_applications.en.png`，含名片/信纸/导视概念应用）随提交包提供；均为概念建议，正式版需清权与授权。
 
 ## 全球标杆案例借鉴（公开信息）
 
