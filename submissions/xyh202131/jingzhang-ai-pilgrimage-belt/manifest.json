@@ -57,13 +57,13 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "a3f215655ddcf93866b66e535747b03b2790dc0afed6accf6c76de4c53ac371d"
+      "sha256": "f93dd3eed3b9b0fdb35fb3fc104105103df18c5b00bf90d14f5db52604b96967"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "bbafe42b45e97885682bb12fa62d30ec264353b6700388df040965a651f972cb"
+      "sha256": "fbb26cd388d233c4ce606c75ce04b1435bd1f23700fc17c2ab4fdd1f4edc0701"
     },
     {
       "path": "assumptions.json",
@@ -81,13 +81,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d73daed24f7dbedeea1e1eb74a842a2f4741c665118284de1fcb397f2af84de6"
+      "sha256": "c56c5d19cc37db96156ec75c768f447b3914383dcba8b9e03910f8cdb4847122"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "ae41c2cda2435cbcdd37c44358b698c4002c0bfd14b4bbde7664ff93fc0be06a"
+      "sha256": "0022820ea3035060ab5ad5e6f63e245a2447d705c9a32a4f9040057b842b52b7"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "path": "visual/assets/site-grounding-register.json",
       "role": "other",
       "required": true,
-      "sha256": "aa928d01bdf481584c209a39f62a5f858770edd7b35456bde1cfc6b49855ab3e",
+      "sha256": "bf12b7cfdae37edabf6c8a7f0ac8ba83260059a058d9ac586ad4dd3362a805e7",
       "role_detail": "site_evidence"
     },
     {
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "0115807c687519131cb07d9e3bb02108012d40310f4bbd0749a86ab9e99f2e50"
+      "sha256": "595b14d2f7cbfbc3f7e7ebb39962b8e9eb41da62abd9c2571433397a75525c9f"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -236,7 +236,7 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "d703668a8150574fefbd72e36569c4eb099e1aff14caec3b207a2bef0a4b797e"
+      "sha256": "25b2bc2edeb0dcd212392bae6f4186ca8596a3cb1089ad238429177a86d4233c"
     },
     {
       "path": "report/copyright_statement.md",
@@ -263,7 +263,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9398a1aab369fe2aff99fb1b46dca976e69bac7987889db337f740d00cb957f3"
+      "sha256": "b527d6f0f58ab59c253b9b504357062bc7e746523c0bf10548223fa05a7e9d72"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -403,7 +403,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "af782660941e7caa0f9417281810b4c5ede2f86ff4069c25ad3c2f403bca29fb"
+      "sha256": "87a92abb6eb60c7286852de4ea7641b5fb4e55f537ace64ffd10c7cc8f1392b1"
     },
     {
       "path": "report/proposal.en.html",
@@ -411,7 +411,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "cb5b07f2d066c88f36c45e3a578904141fd11731f128e2018c27b4b58bd67f04"
+      "sha256": "ea12fdc386e77b2f9fc394e93dc0415a35b9754d8cd8262519a724a33fa33f44"
     },
     {
       "path": "visual/index.en.html",
@@ -419,7 +419,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "367219490d3b4b8eedde1685d86bbbaa326bff974cba78986311e1b8df5c39c0"
+      "sha256": "97518522b94bb9162807793dad9e33121f90721949905386c0e865ff14e2d33b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -990,7 +990,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "全部 141 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review navigation for all 141 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "bcc40ec51195d60578c296761e9d6d102c85b079b8cd40bed9771d0572e5a784"
+      "sha256": "f42a8dc3d9a7ddd916a05ab540d0381dfed8af55143970c36caf3eefa40477f9"
     },
     {
       "path": "visual/assets/round17-reading.css",

@@ -23,7 +23,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -42,7 +43,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "green_ratio": {
       "status": "known",
@@ -72,7 +74,8 @@
       "evidence_class": "provisional",
       "confidence_is_about": "computation",
       "not_official_control_note_zh": "**这不是法定绿地率。** 本项是本方案自己几何的复算：主脊两侧绿廊扣除建筑基底后与总体设计范围之比。主办方在 planning_limits.json 的 official_planning_controls 中把 `green_ratio` 登记为 missing 且为终期必需，本方案不代拟该管控值；两者同名而不同量，官方条件公布后以官方为准并整体重算。",
-      "not_official_control_note_en": "**This is not the statutory green ratio.** It is a recomputation of this proposal's own geometry: the corridor either side of the spine, less building footprints, over the overall design area. The organisers register `green_ratio` as a missing control required for final submission in official_planning_controls; this package does not draft that control value. Same name, different quantity, and the official one governs once published."
+      "not_official_control_note_en": "**This is not the statutory green ratio.** It is a recomputation of this proposal's own geometry: the corridor either side of the spine, less building footprints, over the overall design area. The organisers register `green_ratio` as a missing control required for final submission in official_planning_controls; this package does not draft that control value. Same name, different quantity, and the official one governs once published.",
+      "measures": "proposed_design"
     },
     "public_space_ratio": {
       "status": "known",
@@ -98,7 +101,8 @@
       },
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -118,7 +122,8 @@
       "metric_class": 2,
       "reason": "Published by the organisers as missing and required for final submission; closed by: approved regulatory planning conditions or official design brief attachments.",
       "reason_en": "Published by the organisers as missing and required for final submission; closed by: approved regulatory planning conditions or official design brief attachments.",
-      "reason_zh": "floor_area_ratio属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：approved regulatory planning conditions or official design brief attachments。"
+      "reason_zh": "floor_area_ratio属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：approved regulatory planning conditions or official design brief attachments。",
+      "measures": "proposed_design"
     },
     "existing_residential_floor_area_sqm": {
       "status": "unknown",
@@ -139,7 +144,8 @@
       "evidence_class_note_en": "No value, so there is no grade that could be overstated; the data it would need — ownership records and an existing-conditions survey — is not public. The blank is deliberate, not an omission.",
       "reason_en": "This proposal states a constraint — that talent housing must not reduce existing residential supply — while the existing residential floor area is not published and this package has not measured it. By this proposal's own standard a rule that cannot be checked is not yet a rule, so the quantity it constrains is listed separately as unknown with its precondition named: existing residential floor area or dwelling counts must come from ownership records and an existing-conditions survey, and until that data exists the constraint stands as a mandatory check at the next stage, not as a satisfied condition. Land-use codes 0701 (urban residential) and 0804 (education) do not appear in land_use.geojson because they fall inside the eleven deliberately blank blocks whose boundaries depend on that same unpublished data — a judgement, not an omission.",
       "formula_note": "范围限于本方案的设计范围之内。",
-      "formula_note_en": "Summed within this proposal's design scope."
+      "formula_note_en": "Summed within this proposal's design scope.",
+      "measures": "existing_conditions"
     },
     "key_area_count": {
       "status": "known",
@@ -158,7 +164,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "leveling_spine_length_m": {
       "status": "known",
@@ -177,7 +184,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "benchmark_count": {
       "status": "known",
@@ -197,7 +205,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "green_ratio_in_partition": {
       "status": "known",
@@ -223,7 +232,8 @@
       },
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "phasing_union_area_sqm": {
       "status": "known",
@@ -243,7 +253,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "scenario_card_count": {
       "status": "known",
@@ -262,7 +273,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "deliverable"
     },
     "scenario_cards_operational_count": {
       "status": "known",
@@ -281,7 +293,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "deliverable"
     },
     "industry_test_scenario_count": {
       "status": "known",
@@ -301,7 +314,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "persona_count": {
       "status": "known",
@@ -320,7 +334,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "deliverable"
     },
     "landmark_count": {
       "status": "known",
@@ -340,7 +355,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "deliverable"
     },
     "case_study_count": {
       "status": "known",
@@ -360,7 +376,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "deliverable"
     },
     "renewal_project_count": {
       "status": "known",
@@ -379,7 +396,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "deliverable"
     },
     "phase_count": {
       "status": "known",
@@ -399,7 +417,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "land_use_class_count": {
       "status": "known",
@@ -419,7 +438,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "land_use_feature_count": {
       "status": "known",
@@ -439,7 +459,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "road_feature_count": {
       "status": "known",
@@ -459,7 +480,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "benchmark_first_order_count": {
       "status": "known",
@@ -479,7 +501,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "benchmark_third_order_count": {
       "status": "known",
@@ -499,7 +522,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "taskbook_requirement_count": {
       "status": "known",
@@ -518,7 +542,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "deliverable"
     },
     "taskbook_requirements_answered": {
       "status": "known",
@@ -537,7 +562,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "deliverable"
     },
     "matrix_reference_count": {
       "status": "known",
@@ -559,6 +585,7 @@
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading",
+      "measures": "apparatus",
       "formula_note": "与 `matrix_refs_qa.count_references` 共用同一份定义，两处不会各算各的。",
       "formula_note_en": "Shares one definition with matrix_refs_qa.count_references, so the two cannot count differently."
     },
@@ -579,7 +606,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "apparatus"
     },
     "tabletop_case_count": {
       "status": "known",
@@ -598,11 +626,12 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "deliverable"
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 163,
+      "value": 172,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -617,7 +646,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "apparatus"
     },
     "errata_external_finder_count": {
       "status": "known",
@@ -636,11 +666,12 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "apparatus"
     },
     "rights_ledger_entry_count": {
       "status": "known",
-      "value": 150,
+      "value": 152,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -655,7 +686,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "measures": "apparatus"
     },
     "osm_vertices_shipped": {
       "status": "known",
@@ -674,7 +706,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "background_only",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "apparatus"
     },
     "field_census_corpus_size": {
       "status": "known",
@@ -693,7 +726,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "background_only",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "apparatus"
     },
     "track_scan_corpus_size": {
       "status": "known",
@@ -712,7 +746,8 @@
       ],
       "metric_class": "package_self_count",
       "evidence_class": "background_only",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "apparatus"
     },
     "phased_share_of_design_scope": {
       "status": "known",
@@ -733,7 +768,8 @@
       ],
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "measures": "proposed_design"
     },
     "building_height_m": {
       "status": "unknown",
@@ -753,7 +789,8 @@
       "metric_class": 2,
       "reason": "Published by the organisers as missing and required for final submission; closed by: approved height controls, aviation/landscape/heritage constraints if applicable.",
       "reason_en": "Published by the organisers as missing and required for final submission; closed by: approved height controls, aviation/landscape/heritage constraints if applicable.",
-      "reason_zh": "建筑高度属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：approved height controls, aviation/landscape/heritage constraints if applicable。"
+      "reason_zh": "建筑高度属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：approved height controls, aviation/landscape/heritage constraints if applicable。",
+      "measures": "proposed_design"
     },
     "building_density": {
       "status": "unknown",
@@ -773,7 +810,8 @@
       "metric_class": 2,
       "reason": "Published by the organisers as missing and required for final submission; closed by: approved regulatory planning conditions.",
       "reason_en": "Published by the organisers as missing and required for final submission; closed by: approved regulatory planning conditions.",
-      "reason_zh": "建筑密度属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：approved regulatory planning conditions。"
+      "reason_zh": "建筑密度属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：approved regulatory planning conditions。",
+      "measures": "proposed_design"
     },
     "setback_m": {
       "status": "unknown",
@@ -793,7 +831,134 @@
       "metric_class": 2,
       "reason": "Published by the organisers as missing and required for final submission; closed by: road redline, building control line, fire and municipal constraints.",
       "reason_en": "Published by the organisers as missing and required for final submission; closed by: road redline, building control line, fire and municipal constraints.",
-      "reason_zh": "退线（含道路红线与建筑控制线）属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：road redline, building control line, fire and municipal constraints。"
+      "reason_zh": "退线（含道路红线与建筑控制线）属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：road redline, building control line, fire and municipal constraints。",
+      "measures": "proposed_design"
+    },
+    "existing_street_length_m": {
+      "status": "known",
+      "value": 157510.0,
+      "unit": "m",
+      "source_files": [
+        "visual/assets/osm_fabric.json"
+      ],
+      "formula": "sum(length(mapped street centrelines) clipped to SITE-001)",
+      "confidence": "medium",
+      "assumptions": [
+        "OpenStreetMap via the Overpass API, ODbL 1.0, computed in EPSG:4548 and clipped to SITE-001. Crowd-sourced: absence from the map is not absence from the ground.",
+        "含快速路至生活性街道，不含 service；双幅路在 OSM 记为两条，故为上限估计。"
+      ],
+      "assumption_ids": [
+        "A-OSM-001"
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "reading",
+      "metric_class": 1,
+      "measures": "existing_conditions"
+    },
+    "existing_street_density_m_per_sqm": {
+      "status": "known",
+      "value": 0.013801,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/osm_fabric.json"
+      ],
+      "formula": "existing_street_length_m / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "OpenStreetMap via the Overpass API, ODbL 1.0, computed in EPSG:4548 and clipped to SITE-001. Crowd-sourced: absence from the map is not absence from the ground.",
+        "等于 13.8 km/km²；schema 的单位枚举里没有 km/km²，因此以「每平方米用地的街道米数」表达，不另造单位。"
+      ],
+      "assumption_ids": [
+        "A-OSM-001"
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "reading",
+      "metric_class": 1,
+      "measures": "existing_conditions"
+    },
+    "existing_junction_count": {
+      "status": "known",
+      "value": 812,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/osm_fabric.json"
+      ],
+      "formula": "count(OSM nodes shared by two or more distinct street ways, inside SITE-001)",
+      "confidence": "medium",
+      "assumptions": [
+        "OpenStreetMap via the Overpass API, ODbL 1.0, computed in EPSG:4548 and clipped to SITE-001. Crowd-sourced: absence from the map is not absence from the ground.",
+        "以共享节点计；立交在平面相交但不共节点，不计入，这是对的。"
+      ],
+      "assumption_ids": [
+        "A-OSM-001"
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "reading",
+      "metric_class": 1,
+      "measures": "existing_conditions"
+    },
+    "existing_block_median_area_sqm": {
+      "status": "known",
+      "value": 4300.0,
+      "unit": "sqm",
+      "source_files": [
+        "visual/assets/osm_fabric.json"
+      ],
+      "formula": "median(area(cells enclosed by mapped streets, inside SITE-001))",
+      "confidence": "medium",
+      "assumptions": [
+        "OpenStreetMap via the Overpass API, ODbL 1.0, computed in EPSG:4548 and clipped to SITE-001. Crowd-sourced: absence from the map is not absence from the ground.",
+        "街块＝已测绘街道围合的闭合单元，非宗地，不含权属信息。"
+      ],
+      "assumption_ids": [
+        "A-OSM-001"
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "reading",
+      "metric_class": 1,
+      "measures": "existing_conditions"
+    },
+    "existing_oversized_built_block_count": {
+      "status": "known",
+      "value": 17,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/osm_fabric.json"
+      ],
+      "formula": "count(cells over 4 ha whose park/campus/water/heritage share is under 50%)",
+      "confidence": "medium",
+      "assumptions": [
+        "OpenStreetMap via the Overpass API, ODbL 1.0, computed in EPSG:4548 and clipped to SITE-001. Crowd-sourced: absence from the map is not absence from the ground.",
+        "28 个单元超过 4 ha，其中 17 个不是以公园、校园、水面或文保为主——公园大是应该的，计入即为指控它。"
+      ],
+      "assumption_ids": [
+        "A-OSM-001"
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "reading",
+      "metric_class": 1,
+      "measures": "existing_conditions"
+    },
+    "existing_building_coverage_ratio": {
+      "status": "known",
+      "value": 0.179754,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/osm_fabric.json"
+      ],
+      "formula": "sum(area(mapped building footprints inside SITE-001)) / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "OpenStreetMap via the Overpass API, ODbL 1.0, computed in EPSG:4548 and clipped to SITE-001. Crowd-sourced: absence from the map is not absence from the ground.",
+        "OSM 建筑测绘不完整，此为下限。"
+      ],
+      "assumption_ids": [
+        "A-OSM-001"
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "reading",
+      "metric_class": 1,
+      "measures": "existing_conditions"
     }
   }
 }

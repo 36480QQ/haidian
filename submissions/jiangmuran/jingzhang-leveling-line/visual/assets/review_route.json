@@ -8,7 +8,7 @@
    "what_zh": "重算 metrics.json 中全部 metric_class 1 的指标",
    "what_en": "Recompute every metric_class 1 figure in metrics.json",
    "exit_code": 0,
-   "seconds": 0.39,
+   "seconds": 0.41,
    "first_line": "Independent recomputation of class-1 metrics"
   },
   {
@@ -16,7 +16,7 @@
    "what_zh": "重算 412.5 m 与全部场地交叉核验读数",
    "what_en": "Recompute the 412.5 m closure and every site cross-check figure",
    "exit_code": 0,
-   "seconds": 0.02,
+   "seconds": 0.03,
    "first_line": "Site cross-check, recomputed from the shipped geometry"
   },
   {
@@ -24,7 +24,7 @@
    "what_zh": "解析十二张场景卡的水准点、空间锚点与退出条件",
    "what_en": "Resolve every scenario card's benchmark, spatial anchor and exit condition",
    "exit_code": 0,
-   "seconds": 0.03,
+   "seconds": 0.02,
    "first_line": "check_cards.js: 12 cards, every benchmark and anchor resolves, every exit quantity is defined."
   },
   {
@@ -65,17 +65,17 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 426527,
+   "bytes": 468855,
    "unit": "entries",
-   "count": 162
+   "count": 172
   },
   {
    "path": "visual/assets/gate_mutation.json",
    "what_zh": "闸门变异测试台",
    "what_en": "The gate mutation harness",
-   "bytes": 60236,
+   "bytes": 65603,
    "unit": "mutations",
-   "count": 50
+   "count": 54
   },
   {
    "path": "visual/assets/naming.json",
@@ -113,17 +113,17 @@
    "path": "agent.json",
    "what_zh": "生成方法的完整披露",
    "what_en": "Full disclosure of the generation method",
-   "bytes": 5254,
+   "bytes": 5411,
    "unit": "top-level keys",
    "count": 10
   }
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.7,
+  "seconds_to_run_every_verifier": 0.72,
   "files_to_read": 9,
-  "bytes_to_read": 1014883,
-  "units_to_read": 1618
+  "bytes_to_read": 1062735,
+  "units_to_read": 1632
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",

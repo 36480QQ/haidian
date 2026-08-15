@@ -1,5 +1,33 @@
 # 方案迭代记录 / Changelog
 
+## v32.0 - 2026-08-15
+
+**Formal core visual metrics compliance / 三项 formal 核心视觉指标合规**
+
+- 规则层变化：任务书新增 `formal_visual_metrics_contract`，formal-submission-guide 第 9 节、SKILL.md 与 `visual_review.py` 同步收紧——`site_area_sqm`、`green_ratio`、`public_space_ratio` 必须是从投稿者提交的 site_boundary/green_space/public_space 几何可复算的 known 有限数值，并在 `visual/index.html` 以一致数值 `data-value` 声明，且必须保留 provisional 标记、来源、公式与**正式数据发布后的复算触发条件**。本轮对最新规则层重读并响应。
+- Rule-layer change: the taskbook gained a `formal_visual_metrics_contract`, and the formal-submission-guide section 9, SKILL.md and `visual_review.py` now require `site_area_sqm`, `green_ratio` and `public_space_ratio` to be known finite values recomputable from the submitted site_boundary/green_space/public_space geometry, declared with matching numeric `data-value`s in `visual/index.html`, and to retain their provisional role, sources, formula and an **official-data recalculation trigger**. This round re-reads and responds to the new rule layer.
+- 复算证据（pyproj EPSG:4326→4548 平面多边形面积）：site_area 11412825.38562 m²（记录值 11412825.385554，差 0.000066 m²）；green_ratio 0.126157（差 4.5e-7）；public_space_ratio 0.012831（差 -2.9e-8）；当前 `visual_review.py` 通过、0 问题。
+- Recomputation evidence (pyproj EPSG:4326→4548 planar polygon area): site_area 11412825.38562 m² (recorded 11412825.385554, delta 0.000066 m²); green_ratio 0.126157 (delta 4.5e-7); public_space_ratio 0.012831 (delta -2.9e-8); the current `visual_review.py` passes with 0 issues.
+- **冻结项修改说明（依据：规则层变化）**：`metrics.json` 自第 17 轮冻结后首次变更——仅给三项核心指标各增加一个 `recalculation_trigger` 字段，数值、公式、来源与 confidence 全部不变；旧哈希 `bbafe42b…` 只作为历史记录保留在 round15-baseline.json。这是任务书新契约要求的合规字段，不是主张、数据或机制升级。
+- **Frozen-item change note (basis: rule-layer change)**: `metrics.json` changes for the first time since its Round 17 freeze — only one `recalculation_trigger` field per core metric was added; values, formulas, sources and confidence are untouched; the old hash `bbafe42b…` stays only as history in round15-baseline.json. This is the compliance field the new taskbook contract requires, not a claim, data or mechanism upgrade.
+- 双语 visual 指标卡同步增加复算触发说明，数值 `data-value` 不变；无图面、PDF、HTML 结构或成熟度变化；geometry 九文件字节未变。
+- Bilingual visual metric cards gain the recalculation-trigger note with unchanged numeric `data-value`s; no figure, PDF, HTML-structure or maturity change; the nine geometry files keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths.
+
+## v31.0 - 2026-08-15
+
+**Bilingual per-chapter evidence-marker parity / 双语逐章证据标记对齐**
+
+- 逐章审计发现 4 个章节对的证据标记落点不一致：中文把来源标记放在「战略命题」小节末句，英文把同一组标记放在下一小节（文化内容来源/机制合同）的开头句，导致中英文各章标记计数不同（值多集本身完全一致：source 83、standard 8、depth 15、data 106、metric 109）。本轮以中文（权威正文）为准，把英文两组标记句移入「Strategic Proposition」末句，实现逐章零差异；报告 HTML 重新渲染并重施第 23 轮媒体链接修复（中文 HTML 重渲染后与上一版本字节一致）。
+- A per-chapter audit found 4 chapter pairs where markers sit differently: Chinese places the source markers at the end of the Strategic Proposition subsection while English places the same markers at the opening of the next subsection (Cultural Content Source / Mechanism Contract), so per-chapter counts differ although the value multisets are identical (source 83, standard 8, depth 15, data 106, metric 109). This round aligns English to the authoritative Chinese placement, reaching zero per-chapter differences; the reports were re-rendered with the Round 23 media-link fix re-applied (the Chinese HTML re-render is byte-identical to the previous version).
+- 评审交接索引开始为全部 21 个章节单元同时登记 `evidence_markers`（中文）与 `evidence_markers_en`（英文），使双语标记计数可被机器逐章核验。
+- The review handoff index now registers both `evidence_markers` (zh) and `evidence_markers_en` (en) for all 21 chapter units, making bilingual per-chapter marker counts machine-verifiable.
+- 无主张、数据、机制、图面、PDF 或成熟度变化；geometry、metrics、sources.json 与全部图件/媒体字节未变。重建、PR 或合并不构成现实、批准、运营或权利升级。
+- No claim, datum, mechanism, figure, PDF or maturity change; geometry, metrics, sources.json and all figures/media keep their bytes. A rebuild, PR or merge creates no reality, approval, operation or rights upgrade.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths.
+
 ## v30.0 - 2026-08-15
 
 **PDF metadata & navigation fix / PDF 元数据与导航修复**
