@@ -4,7 +4,7 @@
  "note_zh": "逐文件的权利台账。由 analysis/build_rights_ledger.py 从 manifest.json 生成：枚举的是「实际随包的每一个文件」，不是「作者记得的资产组」，任一文件没有权利归类即构建失败。每条另给出**评审如何自行核验**的方式，而不只是一句 author-originated。",
  "note_en": "A rights entry per shipped file, generated from manifest.json rather than hand-kept as asset groups. A file with no rights class fails the build. Each entry states how a reviewer verifies the claim, not merely that the author makes it.",
  "author": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
- "files_declared": 144,
+ "files_declared": 145,
  "embedded_fonts": [
   {
    "family": "Noto Sans CJK SC",
@@ -1494,6 +1494,17 @@
    "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
    "clearance": "author-originated",
    "verification_zh": "python3 analysis/calendar_parity_qa.py —— 用 node 跑随包脚本，与 Python 逐月比对；不一致即构建失败"
+  },
+  {
+   "path": "visual/assets/naming.json",
+   "role": "evidence_data",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_naming.py 生成：命名系统以规则而非句子发布，analysis/naming_qa.py 采集包内实际出现的每一个标识符逐一核对",
+   "third_party_content_zh": "无。合规矩阵的条款编号取自主办方文件，本表原样保留、不改写",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/naming_qa.py —— 每个标识符必须命中且只命中一族，且没有任何一条规则是空转的"
   }
  ]
 }
