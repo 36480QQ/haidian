@@ -170,8 +170,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "非空行 557 行对 557 行，结构类型逐行不一致数为 0",
-     "result_en": "557 non-blank lines on each side, with zero line-by-line type mismatches",
+     "result_zh": "非空行 563 行对 563 行，结构类型逐行不一致数为 0",
+     "result_en": "563 non-blank lines on each side, with zero line-by-line type mismatches",
      "provenance_zh": "本轮实测",
      "provenance_en": "Measured this round",
      "limitations_zh": "结构级比对，不判断译文是否准确、是否遗漏语义",
@@ -224,8 +224,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "计入抽检的四类：metric 67 对 67、data 51 对 51、source 73 对 73、standard 13 对 13，合计 204 对 204；depth 深度锚点 36 对 36 双语持平，另计于本项之外",
-     "result_en": "Four types in the sample: metric 67/67, data 51/51, source 73/73, standard 13/13, totalling 204/204; depth anchors additionally balanced at 36/36 outside this sample",
+     "result_zh": "计入抽检的四类：metric 68 对 68、data 55 对 55、source 73 对 73、standard 13 对 13，合计 209 对 209；depth 深度锚点 37 对 37 双语持平，另计于本项之外",
+     "result_en": "Four types in the sample: metric 68/68, data 55/55, source 73/73, standard 13/13, totalling 209/209; depth anchors additionally balanced at 37/37 outside this sample",
      "provenance_zh": "本轮实测（本记录文件的挂接句在双方各新增一个 data 锚点，改动后仍为双侧持平）",
      "provenance_en": "Measured this round (the sentence attaching this record file adds one data anchor on each side, and the two sides remain balanced after the change)",
      "limitations_zh": "计数持平只说明锚点未在翻译中丢失，不说明每个锚点指向的证据本身成立",
@@ -317,8 +317,8 @@
     "Structural equivalence does not guarantee semantic equivalence: two versions can align structurally while individual wordings differ in the strength of their claim, a layer not tested here."
    ],
    "remeasured_on": "2026-08-15",
-   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：784/784 行、557/557 非空、260/260 表格行、四类锚点 204/204（depth 深度锚点 36/36 另计），逐行结构不一致 0",
-   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 784/784 lines, 557/557 non-blank, 260/260 table rows, four-type anchors 204/204 (depth anchors 36/36 counted separately), zero line-by-line type mismatches"
+   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：796/796 行、563/563 非空、260/260 表格行、四类锚点 209/209（depth 深度锚点 37/37 另计），逐行结构不一致 0",
+   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 796/796 lines, 563/563 non-blank, 260/260 table rows, four-type anchors 209/209 (depth anchors 37/37 counted separately), zero line-by-line type mismatches"
   },
   {
    "id": "R3",
