@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.8 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.9 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "772bc3653d17c9cd4ccc5b3fdc7a2179d7dfd99ca6346f93e8ad98ae3ef9fe5e"
+      "sha256": "25e0bfd8a4f72a9cf14cd234cd1c41896ea0aa180cffb9e9f5478d43b2f2dd20"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "fb565dc0540a0796424bb691bb6e4c5052c96ea0ca77146c7b180cb54cd4d480"
+      "sha256": "ebd3ca817d79b964379da7abdce60b6db54495ac85de999f8c8eed6becaef66f"
     },
     {
       "path": "metrics.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "d21453983e8d9eb74b1b49bfc03bd88f112f28a49039c4ae3c0d505dd1d0644b"
+      "sha256": "7231ea93acfdb910ced2b936a538d67e55a4b444392ed9855a76293d83c63d99"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5bdc8a17ab9ba182ebb2b6ce6b2a9cfbb2337cef975796b000e828787983eea9"
+      "sha256": "f56f964d95488d4d62e044e8d29f2b4753393113ed5a96cfd5e60ea837eafae0"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "491914d7fe9297e358f68033dfc3e2f4b7a57d513ce4806b9a766913a5900235"
+      "sha256": "30b4bb1c0e10c4ed7824ec542d2d914553b842ebc6368a8d30853183127ea3af"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "42ca8c4bd5928608c85a801211fcb83549f2340559fd3395378d870bbbbcd1ae"
+      "sha256": "c0e475135075bf6d5df032128c5deeb16916a1ea5469834b84e7c3d14f47abf4"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a0c2ff20b5b71ec243f70d2b8840c9b5188846c0c0bf4a40edb43a49d673a283"
+      "sha256": "04fe45f6105186ed8a8a43b478bef41a7833fbc0013a65450b85d83cbe57953a"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "2f69709fb906ba644cf49333dab14d527230e921821566d228a44f30a9795d35"
+      "sha256": "dd50faa73eff85c00aa60ed7e51348ea9182efe0448991e04436567e98a5a642"
     },
     {
       "path": "visual/index.html",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e29df7ccdbceb24312d18a76e063e0b0abbee430c0d55ffd4efbbeb4b10a03b6"
+      "sha256": "90cd5c935f6989445eedd9edd1fbf5734f41eafc458140e37acf5ce422d8d4b6"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "180015f2052628790217265d8eeb04cfbde29a44dac69a26013aa9892111c35e"
+      "sha256": "ea11a3106733183c4360e4ca2f699d977db2581c3f77c1678d571238e3f4a495"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -260,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "12fc64f7b9ec06993bf2c65cf36d4b3bb1f1ae061482cf9f69475cdb61bd74e2"
+      "sha256": "63aa6836dc2c7c6eaf6945b181c9b732dbb40b1e87bf2a7ce1097555b1735753"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -268,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "961e57da11e4de4223f8ed7dd61af29fcb3373b1b8de1b824f78d387bf573243"
+      "sha256": "841ab398670e5f61943f149a75fed5733afc53a5a538e9146580f21c7b6832a3"
     },
     {
       "path": "visual/index.en.html",
@@ -413,7 +413,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "815063f74cdb8519938773a0eb6ba8f7d1785621aafa5e6cd729a9c98277b50d"
+      "sha256": "ca476a2a0f246f009ec7f95204923ab9ab553034749653bd704dadab1f832cb6"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.en.png",
@@ -421,7 +421,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen-audit.png",
-      "sha256": "b9ff4462ddd80e7bb6c4f718a99e776e973d1d3688c2172c12624a748f8c0079"
+      "sha256": "24d04c3ac771502da6d0ab2e2dcab552d7919c43a7f3d96ff824b499b2b019b0"
     },
     {
       "path": "assets/figures/scene-dual-state.webp",
@@ -509,7 +509,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "52fac6365153bef66bb607b77456e92e29d0cbad31095f88afded101dc4d4b6c"
+      "sha256": "c235c55c54eaef58ec121db25ffb00772abb5f5845c7a63ce548b46921654016"
     },
     {
       "path": "assets/media/cover.webp",
@@ -650,7 +650,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "224056c4100188900c43fb6f265ead00b46fa185b1ea6e3139fa6cb5f03a30ef"
+      "sha256": "8274a3ea402a399f357f6c2ad60309f12868f719651b764b28f3cf29b7ec2351"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -696,6 +696,33 @@
       "title_zh": "空间审计型读数六项：定义、方法与责任方（零数值，JZ-01 开工当天可产首批数字）",
       "title_en": "Six spatial audit readings: definitions, methods and owners (zero values; first numbers on day one of JZ-01)",
       "sha256": "d59574a165a7fae21d9dfc79f6d5866f1e56cd75075efb73a29e2570cf9fdf12"
+    },
+    {
+      "path": "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OSM 定界精简快照 第一片（含全部元数据与 Overpass 查询原文；ODbL 1.0 派生数据库）",
+      "title_en": "OSM bounded compact snapshot, part 1/2 (all metadata incl. the verbatim Overpass query; ODbL 1.0 derivative database)",
+      "sha256": "bb44e95b4bf7d69b8f7be16a7fba14ad4c2fb4244ff00deee58afd146b6d8052"
+    },
+    {
+      "path": "visual/assets/osm-fabric/osm-fabric-snapshot-part2.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OSM 定界精简快照 第二片（其余 ways 与全部 nodes；两片拼接逐字节还原原快照）",
+      "title_en": "OSM bounded compact snapshot, part 2/2 (remaining ways and all nodes; concatenation reproduces the original byte-exactly)",
+      "sha256": "80b684901a0f374855adcc1df73c5026c5690014a5db309f237911b68a8a316a"
+    },
+    {
+      "path": "visual/assets/osm-fabric/osm-fabric-readings.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OSM 肌理读数：四项肌理+三项偏差+穿越证据清单+复算脚本全文嵌入（PROVISIONAL）",
+      "title_en": "OSM fabric readings: four fabric, three deviation, crossing inventory, with recomputation scripts embedded verbatim (PROVISIONAL)",
+      "sha256": "655322daa08b304b61b211317a983770aaf7c6d2417255daa75854c60093f465"
     },
     {
       "path": "visual/assets/seb-tabletop-fixtures.json",
