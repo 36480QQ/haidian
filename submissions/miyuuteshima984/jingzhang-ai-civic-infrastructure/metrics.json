@@ -223,7 +223,7 @@
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 386029.357,
+      "value": 386029.358,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
@@ -274,7 +274,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 1024945.373,
+      "value": 1024945.371,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -314,7 +314,7 @@
     },
     "road_centerline_length_m": {
       "status": "known",
-      "value": 26459.47,
+      "value": 29735.166,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"
@@ -550,13 +550,107 @@
       "unit": "count",
       "source_files": [
         "visual/assets/public-promises-contract.json",
-        "assets/figures/three-public-promises.svg",
-        "assets/figures/site-overview.png"
+        "assets/figures/key-areas.png",
+        "geometry/roads.geojson"
       ],
-      "formula": "count(PP-01..PP-03)",
+      "formula": "count(ICR-01..ICR-03)",
       "confidence": "high",
       "assumptions": [
         "Counts concept design promises, not completed field tests."
+      ]
+    },
+    "invariant_civic_route_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson",
+        "proposal.md"
+      ],
+      "formula": "count(ROAD-009..ROAD-011)",
+      "confidence": "high",
+      "assumptions": [
+        "Conceptual ordinary-city route geometry; not official road or station alignment."
+      ]
+    },
+    "zhongzhiyuan_invariant_route_length_m": {
+      "status": "known",
+      "value": 1094.095,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "length(ROAD-009, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual centerline length; not a surveyed pedestrian route."
+      ]
+    },
+    "ai_origin_invariant_route_length_m": {
+      "status": "known",
+      "value": 1130.409,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "length(ROAD-010, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual centerline length; not a surveyed pedestrian route."
+      ]
+    },
+    "dazhongsi_invariant_route_length_m": {
+      "status": "known",
+      "value": 1051.184,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "length(ROAD-011, EPSG:4548)",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual centerline length; Dazhongsi provisional polygon has known absolute-location risk."
+      ]
+    },
+    "invariant_civic_route_length_m": {
+      "status": "known",
+      "value": 3275.688,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(length(ROAD-009..ROAD-011), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual total only; not official network length."
+      ]
+    },
+    "critical_non_ai_route_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "proposal.md"
+      ],
+      "formula": "invariant routes with ai_dependency=none / 3 key-area routes",
+      "confidence": "high",
+      "assumptions": [
+        "Internal design-completeness metric; does not claim field performance."
+      ]
+    },
+    "distinct_key_area_spatial_type_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "assets/figures/key-areas.png"
+      ],
+      "formula": "count(campus court, neighborhood block, station-city hall)",
+      "confidence": "high",
+      "assumptions": [
+        "Design typologies, not statutory zoning categories."
       ]
     }
   }
