@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-15T07:25:58-07:00",
+  "generated_at": "2026-08-15T07:41:33-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,7 +28,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4711062e22d6753dd612a12e3ed6c986970a3093d624bdbd3861aad6548c669a"
+      "sha256": "578a17cd63db6fd459b17756b2f81d8b12b263ea9270a4ce3632e6dcd4e65aa3"
     },
     {
       "path": "agent.json",
@@ -48,7 +48,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "74fbd3f58461f2b8806654c3bf8cde070d39dd124e568d753b121bcd8a846b7b",
+      "sha256": "16c5bee7fe8e8d21b7b481b21fdc1387de385e9170e3fc18e11383cab1bcd1c0",
       "language": "neutral"
     },
     {
@@ -266,7 +266,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "522d41f278f65490c72ae8774a124ff2ed0af9ef23950240153ba4b6693d89af"
+      "sha256": "a5d00e43621068b9e510a741f1e354a4a39cff3d2f7caf34608320048b600c65"
     },
     {
       "path": "visual/assets/verify.js",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "bb7ce1be1449dd99c32ad8e325d88bd76627d9d61dbe03ebca81fda474956b97"
+      "sha256": "5d42847e87dd370fd68dc7f6b9f3d3663a5b5eec42504877b31ec17263a64aa8"
     },
     {
       "path": "report/proposal.en.html",
@@ -584,7 +584,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "fbc3b89f59faae03842da7d1bb6eaa304ab4d14dd4e8890a75e43d494e272817"
+      "sha256": "16646099d43f0cf7d4328e4d92fde4a98cc3442cfbb6dfeb83c39cf921e61e8a"
     },
     {
       "path": "visual/assets/taskbook_coverage.json",
@@ -841,7 +841,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "605d8916c4f2195fbcc57ce2fe86ceed3a3de1abc34db9d49e88d84ecb119e68"
+      "sha256": "0794ed58f3ea20b7bdcfda65e8f3cdec8c14ebf6887550020596e759e33b7917"
     },
     {
       "path": "assets/figures/device.png",
@@ -1087,7 +1087,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "6f49f6b13193fc4631c398701ae86b5cae5ea9a9c2922663cb14b36829757671"
+      "sha256": "bb5b713acab08c2cfe0a3defa332d0f198eca0e83147d1d278dfb88c66622ec0"
     },
     {
       "path": "assets/media/closure-advance.mp4",
@@ -1126,7 +1126,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "medium"
   }

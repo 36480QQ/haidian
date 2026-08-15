@@ -1525,7 +1525,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-166 entries. By finder:
+167 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
@@ -1560,8 +1560,8 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Recorded where found | 5 |
 | Geometry not meaning it | 4 |
 | Outlived a corpus | 3 |
+| A total excluding | 2 |
 | Answers what it cannot | 2 |
-| A total excluding | 1 |
 | Attributed to a file that refuses | 1 |
 | Reported, ignored | 1 |
 | A non-index | 1 |
