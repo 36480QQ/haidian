@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M38",
+      "gate": "standards_alignment_qa.py",
+      "target": "standard_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一个组织方标为 mandatory_for_formal 的标准号写错一个词。",
+      "what_en": "Misspell one standard the organisers mark mandatory_for_formal.",
+      "why_zh": "组织方的标准登记表标了五条强制，本包的标准矩阵此前**恰好**都答到了——但没有任何东西核对过这件事，而那份登记表由组织方按自己的节奏修订，本分支读的是快照。**恰好答到，和被检查过答到，不是一回事。**",
+      "why_en": "The organisers' registry marks five standards mandatory and this package's standard matrix happened to answer all five - with nothing checking that, while the registry is revised on the organisers' schedule and this branch reads a snapshot. Happening to be complete is not the same as being checked."
+    },
+    {
       "id": "M37",
       "gate": "figure_citation_qa.py",
       "target": "proposal.en.md",
@@ -451,7 +463,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 37,
+  "caught": 38,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -473,7 +485,8 @@
     "registry_alignment_qa.py",
     "schema_conformance_qa.py",
     "sources_qa.py",
-    "stale_corpus_qa.py"
+    "stale_corpus_qa.py",
+    "standards_alignment_qa.py"
   ],
   "gates_not_covered": {
     "scarce_surface_qa.py": "it reads which sheets `build_drawings.py` puts on the rasterised board, and that file is in `analysis/`, which intake excludes — so no mutation of a shipped file can change what this gate sees. The same package-boundary fact that leaves the harness itself unproven, and stated rather than left to be inferred from a count.",
@@ -510,6 +523,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 22 道闸门，其中 20 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 22 gates, 20 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 23 道闸门，其中 21 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 23 gates, 21 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
