@@ -292,6 +292,18 @@
       "why_en": "Pointing E90's question at the prose turned up exactly this one, and this one is an instruction **for someone else to carry out**: the row exists because the field's qualitative 「noise nuisance」 cannot determine exceedance, and 「use the national standard value」 with no standard named cannot either. The package names law, article and a resolving tag everywhere else."
     },
     {
+      "id": "M46",
+      "gate": "gate_count_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把中文版里「N 道中 M 道已被证明会失败」的 M 减一，即让正文比闸门台账少算一道。",
+      "what_en": "Subtract one from the proven-gate count in the Chinese edition, so the prose lags the harness by a single gate.",
+      "why_zh": "**这正是 E154 的原样重演。** 台账自己写着「分母是读出来的不是写死的」，而正文里唯一描述它的那句话是抄来的，抄完就再没跟上——抄的时候是十五道中十二道，被发现时已是 28 道中 24 道。`scripts/review_submission.py` 不读 `visual/assets/`，所以那一句是评审得知该文件存在的唯一途径；唯一途径上的数字过期，等于把最强的证据说小。差一道也必须响。",
+      "why_en": "**This is E154 replayed exactly.** The register says of itself that its denominator is read rather than retyped, and the one sentence describing it had retyped it and then never followed: twelve of fifteen when it was written, 24 of 28 when it was caught. `scripts/review_submission.py` does not read `visual/assets/`, so that sentence is the only route by which a reviewer learns the file exists, and a stale number there sells the strongest evidence short. One gate out is enough to fail."
+    },
+    {
       "id": "M21",
       "gate": "figure_citation_qa.py",
       "target": "proposal.en.md",
@@ -547,7 +559,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 45,
+  "caught": 46,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -560,6 +572,7 @@
     "evidence_ceiling.py",
     "figure_citation_qa.py",
     "forward_reference_qa.py",
+    "gate_count_qa.py",
     "intake_limits_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
@@ -612,6 +625,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 28 道闸门，其中 24 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 28 gates, 24 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 29 道闸门，其中 25 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 29 gates, 25 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
