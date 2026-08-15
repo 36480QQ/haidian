@@ -65,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 本规则适用本包全部正文、表、图、JSON 与媒体脚本；任何一级降级必须可被评审沿 changelog 追溯到具体条目。
 
-**版本可追溯**：本包当前迭代 **v10.14.5**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
+**版本可追溯**：本包当前迭代 **v10.14.9**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
 
 **表 A1 评审一页入口（评审维度证据索引——每行给出可打开文件与可运行命令，机器可核验项全部可在评审端离线重跑）**
 
@@ -126,7 +126,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 | 项目 | 官方值 | 本包实测值 | 偏差与处理 |
 | --- | --- | --- | --- |
-| 总体设计区面积 | 11.400 km² | 11.413 km²（EPSG:4548） | +0.11%，ASSUME-002 披露 |
+| 总体设计区面积 | 11.400 km² | 11.413 km²（EPSG:4548） | +0.11%，[assumption:ASSUME-002] 披露 |
 | 三重点区合计 | 368.4 ha | 369.29 ha | +0.24%，逐区披露（+0.43/+0.02/+0.06%） |
 | 绿地率 | 无官方值 | 25.0%（概念图层复算） | 非现状存量，口径见指标章 |
 
@@ -245,12 +245,12 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 
 | 核对项 | 核对内容 | 核对方式（可重跑） | 结果 |
 | --- | --- | --- | --- |
-| 引用解析 | 正文 330 处内联引用（source 43 / metric 112 / data 115 / depth 31 / standard 29）全部指向已登记对象（320 个 ID 级解析＋5 个文件级已存在） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 330/330 可解析 |
+| 引用解析 | 正文 361 处内联引用（source 43 / metric 121 / data 116 / depth 31 / standard 29 / assumption 21）全部指向已登记对象（351 个 ID 级解析＋6 个文件级已存在，另 5 处格式示例） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json、assumptions.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 356/356 引用可解析（另 5 处格式示例） |
 | 离线合成演练 | 120 任务（15 合格＋105 失败分支）逐条规则检查，回执哈希确定性 | `node visual/assets/simulate-check.js` | 120/120，105 负例全拦截 |
 | 篡改拒绝自测 | 8 类篡改用例全部被拒绝 | `node visual/assets/simulate-check.js --self-test` | 8/8 |
 | 计数独立复算 | 9 项计数指标从 geometry/*.geojson 独立重算（不读 metrics.json） | `node visual/assets/verify-counts.js` | 9/9 |
 | 勘误登记册 | 13 条勘误逐条 join changelog.md | build_errata.py（提交包外工具，可离线运行） | 13/13 |
-| 双语结构 | 标题 18/18 一致；共享 82 张表 zh/en 列结构逐张一致（表 A14/表 C1 为 zh 权威语增补核对表，en 受 262144 字节硬限未收录——双语合同 zh 权威语单方增补机制见 changelog v10.14.5） | 双语结构扫描（en 为 zh 有序子序列） | 18/18、82/82 |
+| 双语结构 | 标题 18/18 一致；共享 82 张表 zh/en 列结构逐张一致（表 A14/表 A15/表 A16/表 A17/表 A18/表 A19/表 A20/表 C1/表 C2/表 C3/表 C4 为 zh 权威语增补核对表，en 受 262144 字节硬限未收录——双语合同 zh 权威语单方增补机制见 changelog v10.14.9） | 双语结构扫描（en 为 zh 有序子序列） | 18/18、82/82 |
 | 几何空间复核 | 9 类图层拓扑/CRS/无缝覆盖 | 官方自检 G2 | 9/9 |
 | 图纸与可视化 | PDF 页数>0、HTML 零外链离线可开 | 官方自检 G3 | PASS |
 | 媒体与字幕 | 音频 171.62 s＝短片 171.62 s＝字幕末条 00:02:51.508，时长互证 | 媒体时长读取＋VTT 末时间戳 | 171.62 s，3/3 一致 |
@@ -259,6 +259,167 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 | 四道门 | finalize→self_check（formal-review-ready）→preflight→pre_push_guard | 官方脚本链 | 全 PASS |
 
 核对纪律：本表与表 A12 一样随每次改版同步刷新；结果数值直接来自重跑输出（模拟演练/篡改自测/计数复算三段快照见表 A12，勘误与双语核对在提交包内离线可复现），不允许文字粉饰——[metric:simulation_rerun_receipt_ratio] [metric:geometry_layer_validation_ratio] 的复算路径与本节一致。
+
+**表 A15 引用角色总表（source 注册表 23 条目 42 引用按角色分组）**
+
+正文 [source:] 引用不只是一串可解析 id，还承担明确角色分工：解析器按 sources.json 注册 type 与引用定位分组，构成评审可核验的四层证据结构——官方依据、政策合规、背景参照、交叉核对：
+
+| 角色 | 语义（注册 type） | 条目 | 正文引用 | 代表条目 | 判定方式 |
+| --- | --- | --- | --- | --- | --- |
+| O 官方依据 | 任务书、源注册与边界核定（brief/boundary） | 5 | 24 | AGENT-TASKBOOK 18 处、SITE-PACKAGE 与 PROCESSED-FACT-PACK 各 2 处、SOURCE-REGISTRY 与 BOUNDARY-SOURCE 各 1 处 | 逐条与 brief/site-package 原文比对 |
+| P 政策合规 | 政策与标准（policy） | 9 | 7 | OFFICIAL-ANNOUNCEMENT 6 处、MNR-LAND-USE-GUIDE 1 处；GENERATIVE-AI-REGULATION 等 7 条登记待用（触发条件见第一章） | 引用处核对文号与条款 |
+| R 背景参照 | 行业案例与文化背景（industry/culture/other 与未分类参考） | 7 | 10 | JZ-RAILWAY-CULTURE 4 处、KEY-AREA-SOURCE 与 PEER-REFERENCE 各 1 处、UK-ATRS-2.1 等 4 个对标案例各 1 处 | 仅作背景与对标，不作审批依据 |
+| A 交叉核对 | 区情与同主题交叉核对（AREA-CROSSCHECK 等） | 2 | 1 | AREA-CROSSCHECK 1 处、HAIDIAN-URBAN-RENEWAL-2025 登记待用 | 交叉核对节声明后挂接 |
+| 合计 | 全部注册条目 | 23 | 42 | 42 处全部可解析（另 1 处格式示例不计入） | 解析器逐条比对 |
+
+**表 A16 假设引用登记表（8 项假设全部登记并挂接正文引用）**
+
+正文 [assumption:] 引用直接指向 assumptions.json 登记项——假设不隐藏而可追踪：每项有唯一 id、置信度与处置路径，正文每一处引用对应一次可复核披露：
+
+| 假设 ID | 内容摘要 | 置信度 | 正文引用 | 管理文件与处置 |
+| --- | --- | --- | --- | --- |
+| ASSUME-001 | 官方精确几何缺失，provisional 边界代用 | high | 1 | assumptions.json；正式测绘发布后按 P4 程序替换 |
+| ASSUME-002 | 面积拟合偏差 11.413 vs 11.400 km²（+0.11%） | high | 4 | assumptions.json；官方边界发布后复算并同步表 A6 |
+| ASSUME-003 | 规划指标未发布，概念区间待复核 | unknown | 2 | assumptions.json；控规发布后重算 |
+| ASSUME-004 | 生成流程确定性（固定种子） | agent-declared | 1 | assumptions.json；随每次改版重跑验证 |
+| ASSUME-005 | 产业比例与投资矩阵为概念基线 | medium | 5 | assumptions.json；官方投资计划发布后按 P4 校准 |
+| ASSUME-006 | 双翼方位为概念登记 | medium | 2 | assumptions.json；官方发布后按 P4 更新 |
+| ASSUME-007 | 公开 Issue #1029 大钟寺质心偏差主动引用 | high | 1 | assumptions.json；Issue 关闭后复核 |
+| A-CONTROLS-001 | 官方控制条件缺失 | high | 3 | assumptions.json；控规条件确认后转正式 |
+| 合计 | 8 项 | — | 19 | 19/19 引用可解析 |
+
+**表 A17 指标登记总表（metrics.json 全量 76 项逐项对照正文，61 known 全登记）**
+
+指标章给出"家族口径"，本表给出"全量明细"：metrics.json 全部 76 项按家族逐项登记，61 项 known 每项给出当前值、单位与复算路径/来源文件，15 项 unknown 仅登记不进入任何结论——评审可沿本表任一行打开对应文件复算（与表 A14 引用解析行同口径）：
+
+| 指标族 | 指标 ID | 当前值 | 单位 | 复算路径/来源文件 |
+| --- | --- | --- | --- | --- |
+| 空间类（14） | site_area_sqm | 11,412,825.386 | m² | geometry/site_boundary.geojson |
+| 空间类（14） | building_footprint_area_sqm | 1,103,163.864 | m² | geometry/buildings.geojson |
+| 空间类（14） | green_ratio | 24.96% | 比率 | geometry/green_space.geojson、geometry/site_boundary.geojson |
+| 空间类（14） | public_space_ratio | 0.52% | 比率 | geometry/public_space.geojson、geometry/site_boundary.geojson |
+| 空间类（14） | key_area_count | 3 | 项 | geometry/key_areas.geojson |
+| 空间类（14） | key_area_total_area_sqm | 3,692,893.005 | m² | geometry/key_areas.geojson |
+| 空间类（14） | land_parcel_count | 155 | 项 | geometry/land_use.geojson |
+| 空间类（14） | land_use_class_count | 13 | 项 | geometry/land_use.geojson |
+| 空间类（14） | building_count | 84 | 项 | geometry/buildings.geojson |
+| 空间类（14） | green_space_count | 21 | 项 | geometry/green_space.geojson |
+| 空间类（14） | public_space_node_count | 16 | 项 | geometry/public_space.geojson |
+| 空间类（14） | road_segment_count | 13 | 项 | geometry/roads.geojson |
+| 空间类（14） | phasing_zone_count | 3 | 项 | geometry/phasing.geojson |
+| 空间类（14） | constraint_zone_count | 3 | 项 | geometry/constraints.geojson |
+| 功能比例（7） | research_0802_ratio | 21.89% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | commercial_05_ratio | 7.03% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | residential_0701_ratio | 13.64% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | roads_1207_ratio | 10.65% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | green_1401_1402_ratio | 24.96% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | reserve_16_ratio | 2.71% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | culture_edu_sports_medical_ratio | 14.36% | 比率 | geometry/land_use.geojson |
+| 元素计数（19） | scenario_card_count | 12 | 项 | proposal.md#S6 |
+| 元素计数（19） | industry_test_scenario_count | 3 | 项 | proposal.md#S6 |
+| 元素计数（19） | persona_count | 8 | 项 | proposal.md#S5 |
+| 元素计数（19） | pilgrimage_landmark_count | 3 | 项 | proposal.md#S4 |
+| 元素计数（19） | ecosystem_case_count | 6 | 项 | proposal.md#S3 |
+| 元素计数（19） | geometry_layer_count | 9 | 项 | geometry/ directory |
+| 元素计数（19） | pulse_beat_count | 4 | 项 | simulation.json |
+| 元素计数（19） | rollback_trigger_class_count | 5 | 项 | simulation.json |
+| 元素计数（19） | simulation_task_count | 120 | 项 | simulation.json |
+| 元素计数（19） | funding_channel_count | 4 | 项 | proposal.md#S10 |
+| 元素计数（19） | investment_item_count | 11 | 项 | proposal.md#S10 |
+| 元素计数（19） | objection_gate_count | 3 | 项 | proposal.md#S9 |
+| 元素计数（19） | emergency_tier_count | 3 | 项 | simulation.json |
+| 元素计数（19） | bottom_line_indicator_count | 5 | 项 | proposal.md#S8 |
+| 元素计数（19） | synthetic_negative_branch_count | 105 | 项 | simulation.json |
+| 元素计数（19） | service_passport_required_field_count | 11 | 项 | proposal.md |
+| 元素计数（19） | operational_evidence_gate_count | 5 | 项 | proposal.md |
+| 元素计数（19） | first_100_days_action_count | 8 | 项 | proposal.md |
+| 元素计数（19） | same_task_equivalence_scenario_count | 12 | 项 | proposal.md |
+| 机制 coverage（9） | scenario_fallback_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (card table) |
+| 机制 coverage（9） | scenario_data_boundary_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (card table) |
+| 机制 coverage（9） | scenario_operator_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (card table) |
+| 机制 coverage（9） | scenario_exit_path_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (AI-limits & exit-disposition table) |
+| 机制 coverage（9） | geometry_layer_validation_ratio | 100.00% | 比率 | geometry/site_boundary.geojson、geometry/key_areas.geojson、geometry/land_use.geojson、geometry/buildings.geojson、geometry/roads.geojson、geometry/green_space.geojson、geometry/public_space.geojson、geometry/constraints.geojson、geometry/phasing.geojson |
+| 机制 coverage（9） | protocol_gate_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (protocol table) |
+| 机制 coverage（9） | risk_rollback_mapping_ratio | 100.00% | 比率 | proposal.md#S6、risk.json |
+| 机制 coverage（9） | simulation_p1_pass_ratio | 100.00% | 比率 | simulation.json |
+| 机制 coverage（9） | risk_item_count | 8 | 项 | risk.json |
+| v10.4 数据资产族（12） | contract_coverage_ratio | 100.00% | 比率 | visual/assets/dividend-contracts.json |
+| v10.4 数据资产族（12） | blackout_clause_coverage_ratio | 100.00% | 比率 | visual/assets/dividend-contracts.json |
+| v10.4 数据资产族（12） | bequest_clause_coverage_ratio | 100.00% | 比率 | visual/assets/dividend-contracts.json |
+| v10.4 数据资产族（12） | state_machine_state_count | 8 | 项 | visual/assets/state-machine.json |
+| v10.4 数据资产族（12） | state_machine_gate_count | 8 | 项 | visual/assets/state-machine.json |
+| v10.4 数据资产族（12） | dual_gateway_gate_count | 16 | 项 | visual/assets/implementation-gates.json |
+| v10.4 数据资产族（12） | governance_role_count | 8 | 项 | visual/assets/governance-raci.json |
+| v10.4 数据资产族（12） | governance_constitutional_rule_count | 5 | 项 | visual/assets/governance-raci.json |
+| v10.4 数据资产族（12） | simulation_rerun_receipt_ratio | 100.00% | 比率 | visual/assets/simulate-check.js |
+| v10.4 数据资产族（12） | review_evidence_dimension_count | 7 | 项 | visual/assets/review-evidence-index.json |
+| v10.4 数据资产族（12） | issue_ledger_entry_count | 3 | 项 | proposal.md |
+| v10.4 数据资产族（12） | evidence_level_declared_count | 5 | 项 | proposal.md |
+| 管控/绩效类 unknown（15） | floor_area_ratio 等 15 项（容积率/建筑高度/建筑密度/法定绿地率/退线/受影响户数/缓解预算/算力/年参与人次/已批场景/开发者转化率/年运营成本/AI 创新指数/人才密度/产值贡献） | 待官方条件 | — | 复算路径逐项见 metrics.json |
+
+> 表注：61 known 与 metrics.json 逐项一致（v10.14.7 复核 61/61）；15 unknown 全部登记于 metrics.json 的 unknown 策略并给出官方发布后的复算路径，不进入任何结论；意见台账与证据等级计数登记于表 A9 与设计依据章 [metric:issue_ledger_entry_count] [metric:evidence_level_declared_count]。
+
+**表 A18 状态机逐态登记表（8 态 8 转移，逐条机器可核验）**
+
+8 状态机不只是"8 个名字"：每条转移绑定判定角色与证据门，条件逐条可核对（visual/assets/state-machine.json 与 simulation.json 回执一致）：
+
+| 序 | 转移（状态→状态） | 判定角色 | 证据门 | 转移条件 |
+| --- | --- | --- | --- | --- |
+| 1 | proposed→baseline_verified | 单一责任主体 | E0/E1 | 护照 11 字段完整；无 AI 基线、数据上限与责任角色已声明 |
+| 2 | baseline_verified→sandboxed | 现场安全与急停＋独立复测与审计 | E2 | 受控试点批准：安全审查、同任务人工路径、容量、公示、申诉与结束日期 |
+| 3 | sandboxed→live | 运营主体＋公共基线守护与听证 | E3/P3 | 独立复测通过；三道异议门关闭；五项底线指标达成 |
+| 4 | live→blackout_drill | 现场安全与急停＋公共基线守护与听证 | P3 | 计划停摆或五类回滚触发器任一触发（安全/隐私/文保/经济/生态） |
+| 5 | blackout_drill→bequest_audit | 独立复测与审计 | P4 | 同任务人工路径验证可运行；残余资产与数据清单核对；**不可跳过** |
+| 6 | bequest_audit→retained_or_modified | 单一责任主体 | E4 | 复测结论、持续预算、责任续办与年度公开声明通过 |
+| 7 | bequest_audit→removed_archived | 单一责任主体＋维护与场地恢复 | E4 | 退役、场地与公共空间基线恢复、数据删除、平线档案归档；**不可跳过** |
+| 8 | live→removed_archived | 现场安全与急停 | P3/P4 | 安全事故或约束性异议硬停；绕过成功叙事直接退役 |
+
+> 表注：8 态 8 转移逐条登记于 visual/assets/state-machine.json（8 条转移各带角色与证据门）[metric:state_machine_state_count] [metric:state_machine_gate_count]；停摆演练与退场审计两道状态不可跳过（表 A11 词面稀缺性 0/839 全场唯一）。
+
+**表 A19 治理角色登记表（8 角色，含不得替代双栏与缺岗兜底）**
+
+治理不是一张 RACI 图而是可核验的责任闭环：8 角色逐项登记职责、不得替代边界与缺岗兜底（visual/assets/governance-raci.json 与正文公众委员会章程节一致）：
+
+| 角色 ID | 职责 | 不得替代 | 缺岗兜底 |
+| --- | --- | --- | --- |
+| ROLE-ACCOUNTABLE-LEAD 单一责任主体 | 护照登记、E0-E4 门判定申报、退役与恢复决定 | 法定规划审批、行业监管与许可机关 | 服务不得进入测试；P1 申报退回补充材料 |
+| ROLE-OPERATIONS 运营主体 | 长期运营、运营期限与续办条件、日常记录公开 | 独立复测与审计结论 | 不得发布；仅可停留在沙盒状态 |
+| ROLE-SAFETY 现场安全与急停 | 现场安全审查、实体急停、五类回滚触发器停机判定 | 运营决策与预算决策 | 不进入受控试点；试点期间缺岗立即停摆并亮平线灯 |
+| ROLE-DATA 数据守护 | 数据上限与留存期核验、未声明数据禁止采集、退役数据删除确认 | 个人信息使用授权 | 未声明数据不得采集；数据越界即触发隐私类回滚 |
+| ROLE-PUBLIC-STEWARD 公共基线守护与听证 | 无 AI 等价基线核验、三道异议门主持、与安全角色可独立叫停试验 | 影响人群的专业责任与法律责任 | 不得宣称 AI 带来改善；异议门缺失不得发布 |
+| ROLE-INDEPENDENT-EVALUATOR 独立复测与审计 | E3 独立复测、停摆演练与退场审计、失败记录匿名化公开 | 任何运营主体不得自证其退场审计 | 复测缺失不得扩大范围；退场审计不可跳过 |
+| ROLE-MAINTENANCE 维护与场地恢复 | 退役时恢复场地与公共空间基线、平线档案墙陈列材料 | 复测结论 | 场地恢复未确认，退役程序不关闭 |
+| ROLE-AFFECTED-PUBLIC 受影响公众 | 异议、申诉与叫停请求通道；听证参与 | 不承担专业责任，不负担义务性审查 | 申诉通道缺失，服务不得向公众开放 |
+
+> 表注：8 角色逐条登记于 visual/assets/governance-raci.json [metric:governance_role_count]；宪法条款 5 条含"运营者不得自证其退场审计" [metric:governance_constitutional_rule_count]，与公众委员会示范章程（概念）衔接。
+
+**表 A20 勘误登记表（13 条逐条登记，勘误册与变更记录互为第二台账）**
+
+错误不是黑历史而是证据：本包 13 条真实勘误逐条登记错误形状、错误内容、发现者与修复版本（visual/assets/errata.json 六类形状词表），每条可沿 changelog 复核——勘误册说"错在哪"，变更记录说"改了什么"：
+
+| 勘误 ID | 错误形状 | 错误内容（摘要） | 发现者 | 版本（发现→修复） |
+| --- | --- | --- | --- | --- |
+| E01 | 同一件事的两份拷贝各自漂移 | zh/en 图件 bbox_inches="tight" 各裁边→画布不一致、11–26% 顶部空白带 | 用户视觉报告 | v10.7.1→v10.7.2 |
+| E02 | 几何表达的不是它声称的意思 | title_block 中英标题必然碰撞（19pt 与 10.5pt 锚点重叠） | 机器视觉复核＋像素扫描 | v10.7.1→v10.7.2 |
+| E03 | 交付物在提交前没被看过 | 深蓝底图配深墨色标题，标题实际不可见 | 机器视觉复核 | v10.7.1→v10.7.2 |
+| E04 | 交付物在提交前没被看过 | land-use 图例落在比例尺上方，两者重叠 | 机器视觉复核 | v10.7.1→v10.7.2 |
+| E05 | 交付物在提交前没被看过 | 道路标签压线低对比；走廊标签衬底与底图混叠 | 机器视觉复核 | v10.7.1→v10.7.2 |
+| E06 | 文字活得比装它的那句话久 | metrics-evidence 副题与主标题重复（同一句出现两次） | 机器视觉复核 | v10.7.1→v10.7.2 |
+| E07 | 规则对别人成立，对自己没有执行 | simulation.json 被旧版 15 任务协议覆盖，120 任务版丢失致指标不一致 | 指标一致性校验 | v10.7.0→v10.7.1 |
+| E08 | 同一件事的两份拷贝各自漂移 | core.autocrlf 使磁盘 CRLF、git blob LF，finalize 磁盘哈希与 CI blob 哈希不一致 | finalize 校验 | v10.5.x→v10.7.0 |
+| E09 | 检查测了方便测的东西 | frontmatter iteration 变化不算正文变化，确定性校验失效 | 确定性校验 | v10.7.0→v10.7.1 |
+| E10 | 几何表达的不是它声称的意思 | 官方 provisional 大钟寺质心落在北京北站附近（公开 Issue #1029） | 公开 Issue | v10.4.x→v10.7.0 |
+| E11 | 几何表达的不是它声称的意思 | 总体范围与京张铁路遗址公园不相交（最近 412.5 m，公开 Issue #846） | 公开 Issue | v10.4.x→v10.7.0 |
+| E12 | 检查测了方便测的东西 | 机器视觉复核连续三次误报，像素扫描逐项证伪（flash 级视觉模型局限） | 像素扫描复核 | v10.7.1→v10.7.2 |
+| E13 | 交付物在提交前没被看过 | 设计边界（概念建议）画实线与官方 provisional 虚线语义混同 | 提交前复核 | v10.7.1→v10.7.2 |
+
+> 表注：13 条勘误逐条登记于 visual/assets/errata.json [data:visual/assets/errata.json]（六类形状词表：双拷贝漂移/几何非其声称/交付物没被看过/检查测了方便测的/规则对自己没执行/文字活得比句子久），每条经 changelog.md 复核；勘误册与变更记录互为第二台账（表 A14"勘误 13/13"同口径）。
+
+
+
+
+
+
 
 
 **表 A13 公共服务准入基准（PSAB）与自否推演（规范机器可读，推演自我否证）**
@@ -312,7 +473,7 @@ exit 1 (gaps found, by design)
 
 `data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源 [source:PROCESSED-FACT-PACK]。事实判断均回到已登记原始材料；完整来源关系由 `sources.json` 保存。
 
-本方案在官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成 formal 包 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]：`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、不声明 `official_boundary=true`，只能用于方案生成、自检、可视化和设计讨论。实测总体设计区面积 11.413 km2，与官方预公告值 11.4 km2 偏差 0.11%，已在 `assumptions.json`（ASSUME-002）披露 [data:geometry/site_boundary.geojson#PROV-SITE-001] [metric:site_area_sqm]。三处重点区数量由独立图层核对 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]。组织方数据缺口不阻断内容评分；官方 polygons 发布后需重算 site boundary、key areas、land use、roads、green space、public space、buildings、phasing 与 metrics。
+本方案在官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成 formal 包 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]：`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、不声明 `official_boundary=true`，只能用于方案生成、自检、可视化和设计讨论。实测总体设计区面积 11.413 km2，与官方预公告值 11.4 km2 偏差 0.11%，已在 `assumptions.json`（[assumption:ASSUME-002]）披露 [data:geometry/site_boundary.geojson#PROV-SITE-001] [metric:site_area_sqm]。三处重点区数量由独立图层核对 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]。组织方数据缺口不阻断内容评分；官方 polygons 发布后需重算 site boundary、key areas、land use、roads、green space、public space、buildings、phasing 与 metrics。
 
 **证据等级声明（L1–L5，贯穿全文）**：全文每一处主张都按证据等级标注口径，图面与正文同步声明——L1 官方文件（公告、标准、官方发布数据）；L2 公开来源（报刊、机构公开报告、OSM 等，经 sources.json 登记）；L3 派生计算（本管线按固定 seed 确定性复算，可字节级重放）；L4 概念建议（本方案提出的机制、场景、分期与投资量级，不构成结论）；L5 临时假设（官方缺失时的 provisional 处理，登记于 assumptions.json）。L5 项永不冒充官方事实，L4 项永不写成实施承诺；引用标记中的 `[source:...]`/`[data:...]`/`[standard:...]`/`[metric:...]`/`[depth:...]` 即各等级的机器可读锚点 [metric:evidence_level_declared_count]。
 
@@ -324,7 +485,7 @@ exit 1 (gaps found, by design)
 | L4 概念建议 | 本方案提出、未获确认 | 全部用地/道路/场景/分期/机制/投资量级 | 必须标注"概念建议"，不构成结论 |
 | L5 临时假设 | 官方缺失时的 provisional 处理 | provisional 边界、ASSUME-001/002/007 | 必须登记 assumptions.json，永不冒充 official |
 
-**官方参照台账（逐份访问、如实登记、不作援引）**：`sources.json` 对每一份官方参照材料登记访问状态、可用性与用途边界；对"读过但未构成设计依据"的材料亦如实登记（background_only/provisional_only），不把背景阅读伪装成设计依据。官方几何缺失时本方案使用 provisional 边界并披露拟合偏差（ASSUME-002），官方关键区几何疑似偏差（公开 Issue #1029）主动引用并声明处理（ASSUME-007）。
+**官方参照台账（逐份访问、如实登记、不作援引）**：`sources.json` 对每一份官方参照材料登记访问状态、可用性与用途边界；对"读过但未构成设计依据"的材料亦如实登记（background_only/provisional_only），不把背景阅读伪装成设计依据。官方几何缺失时本方案使用 provisional 边界并披露拟合偏差（[assumption:ASSUME-002]），官方关键区几何疑似偏差（公开 Issue #1029）主动引用并声明处理（[assumption:ASSUME-007]）。
 
 **机制词面稀缺性复测（把仪器对准自己）**：本方案对"状态机不可跳过、日级检查点、成本复算、可收回接口"等机制词面是否真的稀缺，不自述，而是用同场扫描测量——`track_scan.json` 以 840 份 proposal.md 为语料（open-city-ai/haidian main 快照）逐项公开词面正则扫描，命中清单逐份公开可复核。除本方案外：**状态机不可跳过（停摆演练/退场审计必经）0 份、日级检查点（动作+通过证据+不通过处置）0 份、成本复算框架（复算基数×单价区间）3 份、可收回要素接口（占用+收回条件）4 份**。词面扫描会漏计同义表述，因此计数只证明"用过这些词的份数"，不证明"想过这件事的份数"——本方案据此只主张机制词面稀缺，不主张机制思想独有；扫描是快照，任一评审可按 `track_scan.json` 记录的 corpus 来源与重跑指令，对最新 main 重扫复核 [data:visual/assets/track_scan.json]。
 
@@ -335,7 +496,7 @@ exit 1 (gaps found, by design)
 
 方案按公告确定的三层范围组织工作：**统筹研究范围** 43.6 km2，研究 AI 产业生态、战略定位、创新链与未来城市形态；**总体设计范围** 11.4 km2，形成城市更新总体框架、产业空间布局、交通市政支撑和城市风貌控制；**重点区域范围** 368.4 ha 三处详细设计地区，明确功能业态、空间动作、公共空间连通与交通组织。三层范围在 `compliance_matrix.json` 中逐条映射，保证公告 1.3、1.4、1.5 与 agent.1–agent.6 必选任务均有章节、图层、指标、图纸和 HTML 证据 [depth:three_level_scope_framework] [depth:overall_spatial_structure] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
 
-本方案总体概念为**「智脉一带 · AI Pulse Belt」**：延续京张铁路百年"铁脉"的记忆与线性空间骨架，塑造面向人工智能时代的"数字智脉"——以贯穿南北的中央绿廊为"一带"（对应公告 1.5(2)4"京张遗址公园活力带"：中央智脉绿廊即京张遗址公园活力带在总体设计区的智脉化载体，清华园车站遗址与沿线历史构件均落位于此带内），以众智园、北京AI原点社区、大钟寺三处重点区为"三核"，以中关村科技服务翼（西侧产业服务界面）与小月河场景赋能翼（东侧蓝绿生态界面）为"双翼"（翼方位按组织方材料登记于 ASSUME-006，官方发布后按 P4 更新），以 AI 场景节点与慢行网络为"多点"，形成"**一带三核、双翼多点**"的总体空间结构。Logo 意象为"脉"字与铁轨线渐变示波器波形：京张铁灰（#4A5560）与 AI 青（#0FA3B1）双色，口号"**百年轨道，智慧脉动**"。
+本方案总体概念为**「智脉一带 · AI Pulse Belt」**：延续京张铁路百年"铁脉"的记忆与线性空间骨架，塑造面向人工智能时代的"数字智脉"——以贯穿南北的中央绿廊为"一带"（对应公告 1.5(2)4"京张遗址公园活力带"：中央智脉绿廊即京张遗址公园活力带在总体设计区的智脉化载体，清华园车站遗址与沿线历史构件均落位于此带内），以众智园、北京AI原点社区、大钟寺三处重点区为"三核"，以中关村科技服务翼（西侧产业服务界面）与小月河场景赋能翼（东侧蓝绿生态界面）为"双翼"（翼方位按组织方材料登记于 [assumption:ASSUME-006]，官方发布后按 P4 更新），以 AI 场景节点与慢行网络为"多点"，形成"**一带三核、双翼多点**"的总体空间结构。Logo 意象为"脉"字与铁轨线渐变示波器波形：京张铁灰（#4A5560）与 AI 青（#0FA3B1）双色，口号"**百年轨道，智慧脉动**"。
 
 | 层级 | 设计问题 | 方案回答 | 数据落点 |
 | --- | --- | --- | --- |
@@ -414,7 +575,7 @@ exit 1 (gaps found, by design)
 | 京津冀城市网络 | 可跨城比较的公共服务问题与差异归因 | 异地复测、差异说明与失败记录公开 | 单点结果不替代跨城验证 |
 | 海淀"两区一带"产业带 | 公告 1.5(1) 要求联动"两区一带"产业发展 | 产业要素走廊功能映射互认 | 以官方发布的"两区一带"布局为限，不虚构跨区协议 |
 
-**对接海淀"1+X+1"产业体系（概念建议）**：公告 1.5(2) 要求结合海淀"1+X+1"产业体系提出"AI+"其他主导产业的融合发展方向，并明确各类产业的功能比例与空间组织模式 [source:OFFICIAL-ANNOUNCEMENT]。本方案按"1（人工智能）＋X（海淀主导产业）＋1（科技服务与生活服务业）"结构建立功能映射（下表）：X 类按公开产业信息提出假设目录（软件与信息服务业、智能网联汽车、智能制造、医药健康、新材料与能源环保等主导产业），待官方产业口径确认后按 P4 更新；教育文化、智能终端与内容消费作为"AI+ 垂直应用落地的重点区域"融合方向列出，不参与 X 类口径；"＋1"（科技服务与生活服务业）按"1+X+1"第三元处理、非 X 类。功能比例区间按本包概念图层实测（EPSG:4548 复算，见 ASSUME-005）：科研 0802 约 19–25%（实测 21.9%）、商业 05 约 5–9%（实测 7.0%）、住宅 0701 约 11–16%（实测 13.6%）、道路 1207 约 8–14%（实测 10.7%）、绿地约 22–28%（实测 25.0%，仅计 1401 公园绿地与 1402 防护绿地，与 metrics green_ratio 口径一致）、留白 16 约 2–4%（实测 2.7%）、文化教育体育医疗合计约 12–17%（实测 14.4%，0803–0806）；与官方产业目录、国土调查数据对齐后按 P4 复盘重算；总体建筑规模概念区间 800–1200 万 m2（含既有保留建筑，量级口径待复核）。全部区间均为假设待复核（见 ASSUME-005），不进入任何审批结论，官方控规与统计发布后按 P4 复盘重算。
+**对接海淀"1+X+1"产业体系（概念建议）**：公告 1.5(2) 要求结合海淀"1+X+1"产业体系提出"AI+"其他主导产业的融合发展方向，并明确各类产业的功能比例与空间组织模式 [source:OFFICIAL-ANNOUNCEMENT]。本方案按"1（人工智能）＋X（海淀主导产业）＋1（科技服务与生活服务业）"结构建立功能映射（下表）：X 类按公开产业信息提出假设目录（软件与信息服务业、智能网联汽车、智能制造、医药健康、新材料与能源环保等主导产业），待官方产业口径确认后按 P4 更新；教育文化、智能终端与内容消费作为"AI+ 垂直应用落地的重点区域"融合方向列出，不参与 X 类口径；"＋1"（科技服务与生活服务业）按"1+X+1"第三元处理、非 X 类。功能比例区间按本包概念图层实测（EPSG:4548 复算，见 ASSUME-005）：科研 0802 约 19–25%（实测 21.9%）、商业 05 约 5–9%（实测 7.0%）、住宅 0701 约 11–16%（实测 13.6%）、道路 1207 约 8–14%（实测 10.7%）、绿地约 22–28%（实测 25.0%，仅计 1401 公园绿地与 1402 防护绿地，与 metrics green_ratio 口径一致）、留白 16 约 2–4%（实测 2.7%）、文化教育体育医疗合计约 12–17%（实测 14.4%，0803–0806）；与官方产业目录、国土调查数据对齐后按 P4 复盘重算；总体建筑规模概念区间 800–1200 万 m2（含既有保留建筑，量级口径待复核）。全部区间均为假设待复核（见 [assumption:ASSUME-005]），不进入任何审批结论，官方控规与统计发布后按 P4 复盘重算。
 
 | "1+X+1"组成 | 片区"AI+"融合方向 | 空间落点 | 概念功能比例区间（待复核） |
 | --- | --- | --- | --- |
@@ -429,7 +590,7 @@ exit 1 (gaps found, by design)
 
 未来城市形态研究回答人工智能如何改变工作、生活、社交、学习、交通与公共服务：以"数字智脉"为空间线索，把 AI 交通系统、连续绿色空间、创新服务设施与国际化生活工作氛围落实为可定位的功能区、节点、廊道与场景 [depth:overall_spatial_structure] [standard:MOHURD-URBAN-DESIGN-MEASURES]。全球 AI 创新活动、开发者社区、开放场景与朝圣路线均表述为"概念建议/参考方案"，不写为已确定的政府活动或实施安排。
 
-**与国土空间规划的衔接（概念建议）**：本方案全部空间主张按"与在编国土空间总体规划及街区控规衔接、不代替法定规划"的边界表达——用地分类复用《国土空间调查、规划、用途管制用地用海分类指南（试行）》枚举 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [source:MNR-LAND-USE-GUIDE]，开发强度与建筑高度不给出数值结论（待正式控规条件确认，见 ASSUME-003 与 A-CONTROLS-001），留白弹性用地预留未来用途变更空间；正式国土空间规划与官方控制条件发布后，本方案按 P4 复盘程序重算指标、更新图层并重新披露 [depth:risk_missing_data] [source:AGENT-TASKBOOK]。
+**与国土空间规划的衔接（概念建议）**：本方案全部空间主张按"与在编国土空间总体规划及街区控规衔接、不代替法定规划"的边界表达——用地分类复用《国土空间调查、规划、用途管制用地用海分类指南（试行）》枚举 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [source:MNR-LAND-USE-GUIDE]，开发强度与建筑高度不给出数值结论（待正式控规条件确认，见 [assumption:ASSUME-003] 与 [assumption:A-CONTROLS-001]），留白弹性用地预留未来用途变更空间；正式国土空间规划与官方控制条件发布后，本方案按 P4 复盘程序重算指标、更新图层并重新披露 [depth:risk_missing_data] [source:AGENT-TASKBOOK]。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -577,6 +738,70 @@ exit 1 (gaps found, by design)
 
 > 表注：等价路径与各场景卡"数据与人工边界"列一一对应，逐卡登记于 simulation.json 等价登记项；现场实测证明等价路径不可用时，对应场景降级回 P2 重测或直接退役（命题证伪条件（2），见第一章）。
 
+**表 C2 场景增益—BEQUEST 红利—立即退场契约表（12 场景逐卡登记）**
+
+场景卡"数据与人工边界"给出等价路径（表 C1），本表从预算与退场两个视角补全契约：AI 增益列取自场景卡"空间载体"的 AI 功能；BEQUEST 无 AI 公共红利列=退场后按四段退场合同 BEQUEST 段移交/保留、不依赖 AI 的公共资产；立即退场条件列=场景卡"KPI 与退出条件"的硬性触发：
+
+| 场景 | AI 增益 | BEQUEST 无AI公共红利 | 立即退场条件 |
+| --- | --- | --- | --- |
+| 01 铁轨巡检AR孪生 | AR 叠加百年影像与 AI 孪生巡检演示 | 固定展签与人工讲解员排班继续 | 史实准确率<98% 或投诉未修复即下线 |
+| 02 无人接驳巴士走廊 | 园区—轨道站无人接驳示范（概念） | 站台设施保留，线路移交常规公交运营 | 准点率<85% 或事故即停线转人工 |
+| 03 AI 骑行教练站 | 骑行数据可视化与 AI 运动指导 | 基础骑行道与驿站休憩设施保留 | 设备故障超 24h 或隐私投诉即暂停 |
+| 04 钟韵元宇宙 | 钟声文化数字孪生与互动展演 | 钟楼实体声景装置与广场活动保留 | 内容投诉响应超 48h 或文保冲突即撤除 |
+| 05 智盒会议亭 | 自助会议/直播/远程协作智能空间 | 普通会议亭与开放工位保留 | 投诉即停用；爽约率过高调整容量 |
+| 06 无人机配送驿站 | 低空物流接驳试验（概念） | 驿站主体保留为便民服务站 | 安全隐患零容忍；空域审批未过不开通 |
+| 07 AI 园艺师口袋公园 | 植物养护 AI 协作与社区认养 | 人工园艺养护与认养公示牌保留 | 认养参与率<30% 或扰民投诉即调整 |
+| 08 无障碍 AI 导行站 | 语音/触觉多模态无障碍导航 | 人工导览服务与无障碍设施保留 | 人工替代率<100% 或现场不符即停用 |
+| 09 赛事数据可视化墙 | 赛事实时数据聚合大屏 | 赛事大屏普通播报保留 | 数据口径未标注或预警未经人工研判 |
+| 10 建筑能耗 AI 调控楼 | 分布式能源与 AI 能耗调控示范（概念） | 常规节能管理规程保留 | 调控失误未即时人工接管；连续失误停用 |
+| 11 AI 咖啡机器人驿站 | 机器臂咖啡体验与开发者社交 | 驿站人工咖啡服务保留 | 机械故障即停；投诉响应超 24h |
+| 12 开发者露天工位代码墙 | 开源贡献墙与露天演示区 | 露天工位与作品展板保留 | 内容未经人工终审或争议未下架 |
+
+> 表注：AI 增益与 BEQUEST 红利列均自场景卡"空间载体"与四段退场合同（BASE/BOOST/BLACKOUT/BEQUEST）提取，无新增主张；立即退场条件列与场景卡"KPI 与退出条件"逐字一致，逐卡登记于 simulation.json。
+
+**表 C3 项目预算双轨与无 AI 接管表（12 项更新项目逐项登记）**
+
+投入量级矩阵给出总额区间（[assumption:ASSUME-005] 管理），本表从预算视角补全"AI 停了怎么办"：每项按 AI 依赖度分档，AI 预算列直接引用表 A3 复算区间（12/12 逐项一致，不新增数字），无 AI 接管列引用表 C1 等价路径动作与既有预算口径：
+
+| 项目 | AI 依赖度 | AI 预算（表 A3 复算区间） | 无 AI 预算接管（动作＋预算口径） |
+| --- | --- | --- | --- |
+| JZ-01 中央智脉绿廊贯通 | 叠加层 | 0.29–0.80 亿元 | 固定展签与人工讲解员排班继续（表 C1 场景 01）；绿廊基建预算不变，AR 功能层支出删除 |
+| JZ-02 北五环跨环慢行节点 | 无 AI 依赖 | 0.48–1.50 亿元 | 跨环桥为纯基建，无 AI 接管动作；预算口径不变 |
+| JZ-03 众智园门户广场与 AI 之光塔 | 叠加层 | 0.20–0.60 亿元 | 广场与光塔实体保留（BASE 段），AI 展演模块停用；基建预算不变 |
+| JZ-04 原点发布厅与代码墙 | 叠加层 | 0.10–0.30 亿元 | 公告栏与线下提交继续（表 C1 场景 12）；改造预算不变，AI 摘要功能删除 |
+| JZ-05 大钟寺站四象限步行连通 | 无 AI 依赖 | 0.10–0.30 亿元 | 地面连通为纯基建，无 AI 接管动作；预算口径不变 |
+| JZ-06 智脉大道无人接驳示范段 | 核心功能 | 0.50–1.00 亿元 | 常规公交与园区接驳车时刻不变（表 C1 场景 02）；移交常规公交运营预算，车路协同建设不再续投 |
+| JZ-07 清华东路教育带缝合 | 无 AI 依赖 | 0.20–0.50 亿元 | 慢行节点为纯基建，无 AI 接管动作；预算口径不变 |
+| JZ-08 南部更新带提升 | 无 AI 依赖 | 0.80–2.00 亿元 | 前期评估与轻改造为纯基建，无 AI 接管动作；预算口径不变 |
+| JZ-09 低空配送航线验证场 | 核心功能 | 0.30–0.60 亿元 | 空域审批未过时普通配送不受影响（表 C1 场景 06）；测试设施保留为便民站点，验证预算停止 |
+| JZ-10 端侧算力与能耗调控示范楼 | 核心功能 | 0.50–1.20 亿元 | 人工楼宇自控值班与巡检（表 C1 场景 10）；智能化改造预算停止，常规运维预算保留 |
+| JZ-11 无障碍 AI 导行系统 | 叠加层 | 0.10–0.30 亿元 | 人工引导台接续导航（表 C1 场景 08）；站点设施保留，AI 模块停用 |
+| JZ-12 全球 AI 活动周公共路线 | 叠加层 | 0.05–0.15 亿元/年 | 常规公共活动组织不变（活动单价本身为常规口径）；AI 展演模块取消 |
+
+> 表注：AI 预算列与表 A3 复算区间逐项一致（12/12，不新增数字）[metric:investment_item_count]；无 AI 接管动作逐项对应表 C1 等价路径与四段退场合同 BASE/BEQUEST 段；接管时点=对应场景立即退场条件触发或进入黑屏期（表 C2 立即退场条件列）；依赖度分档依据表 A3 单价区间性质与场景卡功能定位（三源资金通道见 [metric:funding_channel_count]），全部假设区间经 [assumption:ASSUME-005] 管理，官方投资计划发布后按 P4 复盘校准。
+
+**表 C4 评审七维证据索引表（7 维逐维给评审指路）**
+
+评审按七维打分（权重见本表），本表把每一维的证据链直接指给评审：回应锚点→响应章节→可打开证据文件，全部离线可核验（visual/assets/review-evidence-index.json 逐维登记，与表 A1 一页入口同口径）：
+
+| 评审维度 | 权重 | 本方案回应锚点 | 响应章节 | 可打开证据文件 |
+| --- | --- | --- | --- | --- |
+| 任务书契合 | 20 | 三栏映射表（任务书原词→方案回应→可定位交付）；agent.1-6 逐条响应与场景卡/测试场/画像/地标/文化/社区活动一一对应 | 证据与评审响应总览；AI 创新生态、人才画像与 AI+ 场景 | proposal.md、agent.json、sources.json |
+| 原创性 | 10 | 智脉四问可证伪命题与备选命题比选；脉冲协议 P1-P4 与状态灯语言（波形=运行/脉冲=测试/平线=停用）；表 A11 同场扫描 | 核心判断与公共验收契约；智脉脉冲协议 | proposal.md、design_depth_matrix.json、state-machine.json、implementation-gates.json |
+| AI 规划创新 | 15 | 8 状态机（停摆演练/退场审计不可跳过）；四段退场红利合同 BASE→BOOST→BLACKOUT→BEQUEST（15 项全覆盖）；双闸门 G0-G7/C0-C7 与护照 11 字段 | 第六章（场景/脉冲协议） | state-machine.json、dividend-contracts.json、implementation-gates.json |
+| 实施可行性 | 20 | 首期 100 天零依赖官方数据；100 米/100 天首发段与硬性日落不续期；指标 76 项（61 known）逐项带公式与来源；面积按官方口径复算并披露拟合偏差 | 更新实施章；指标体系章 | metrics.json、simulation.json、geometry/*.geojson |
+| 公共利益包容 | 10 | 8 类用户画像与受影响公众角色；无障碍与非数字化服务（人工等价路径/盲道/公众委员会）；意见—回应台账逐条登记 | 场景卡章；公众委员会示范章程 | simulation.json、governance-raci.json、errata.json |
+| 风险合规 | 10 | 法定要求 vs 自设标准分列；五类回滚触发器与五条硬停止条件；L1-L5 证据等级；provisional 一律披露不伪造 | 风险、版权与合规说明 | risk.json、standard_matrix.json、errata.json |
+| 表达完整 | 15 | 双语 1:1（proposal/PDF/HTML/图件全部 zh+en 镜像）；评审首屏问题表（8 问→回答→可打开文件）；能说明/不能说明三栏表 | 全文；证据与评审响应总览 | proposal.md、proposal.en.md、report/*.html |
+
+> 表注：7 维逐维登记于 visual/assets/review-evidence-index.json，权重与官方评审口径一致 [metric:review_evidence_dimension_count]；评审首屏问题表（评审最可能问的 8 问）见证据总览章。
+
+
+
+
+
+
+
 
 **表 B5 要素保障接口"可占用可收回"（概念，要素不是名单而是接口——每个接口都有占用条件与收回条件）**：算力/数据/场景/资金/人才/空间/设备/品牌八类要素接口，收回条件与五类回滚触发器 R-01~05、四段退场合同（BASE→BOOST→BLACKOUT→BEQUEST）完全一致，任何收回都走协议节拍而不是单方决定 [metric:rollback_trigger_class_count]：
 
@@ -681,7 +906,7 @@ exit 1 (gaps found, by design)
 | 08 无障碍AI导行站 | 无障碍服务实质升级 | 设备依赖与现场运维响应 | 多方言语音识别误判率待测评 | P1 试点以 100% 人工替代兜底同步测评误判率，结果公开 |
 | 10 建筑能耗AI调控楼 | 能耗下降与改造示范 | 楼宇改造投入、户内数据边界 | 能耗调控与行为联动扰动待验证 | P2 示范运行一季后发布能耗对比报告 |
 | 12 开发者露天工位代码墙 | 开源生态、人才招引 | 内容审核人工成本 | 露天设备的防尘防晒损耗预估 | P1 试点满一年发布设备损耗与运维成本报告 |
-| 方案整体 | 可复核、可替换边界重算 | 官方边界发布后需重算部分指标 | 产业目录/投资口径为概念假设（见 ASSUME-005、ASSUME-006），交通极端情景无实测流量支撑 | 官方现状调查与产业数据发布后 30 天内完成重算并公开 diff（P4 程序）；交通极端情景纳入 P2 仿真清单 |
+| 方案整体 | 可复核、可替换边界重算 | 官方边界发布后需重算部分指标 | 产业目录/投资口径为概念假设（见 [assumption:ASSUME-005]、[assumption:ASSUME-006]），交通极端情景无实测流量支撑 | 官方现状调查与产业数据发布后 30 天内完成重算并公开 diff（P4 程序）；交通极端情景纳入 P2 仿真清单 |
 
 **3 个产业测试验证场景（概念建议）**：每个场景均在 `geometry/public_space.geojson` 落位测试节点，按智脉脉冲协议 P2 受控测试运行：
 
@@ -904,7 +1129,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 - **慢行断点**：概念提出北五环跨环慢行节点与绿廊南北两端景观节点（详见图 5 与 `constraints.geojson`）[data:geometry/constraints.geojson#CONSTRAINTS-01]；
 - 停车与非机动车停放以"轨道 + 接驳 + 慢行"为优先序，具体规模待交通专项与控规条件确认。
 
-市政与公共服务设施覆盖 AI 产业服务设施（算力、数据、合规、投融资一站式服务点，企业服务智能体融入 [scenario:enterprise-service-copilot]）、人才生活服务设施、新型基础设施（端侧算力驿站、分布式能源节点，场景卡 10）与传统市政设施融合 [depth:municipal_new_infrastructure]。**市政策略（概念建议）**：① 通信与算力——沿中央绿廊设通信管沟与端侧算力驿站（BLDG-001 概念节点），算力就近布设、按需扩容，不设独立大型数据中心；② 能源——分布式光伏与能耗 AI 调控楼（场景卡 10）联动，供能结构待电力专项确认；③ 排水防洪——场地低洼点与清河、小月河水系衔接按"蓝绿灰一体化"留出弹性空间，径流系数待专项复核；④ 消防与应急——利用绿廊与广场空间作为应急疏散与消防通道组织概念，与 119 接警联动待专项深化；⑤ 综合管廊——智脉大道预留综合管廊建设条件（概念），规模与断面待市政专项确认。管线、能源、排水、防洪、消防等工程资料缺失时列为正式深化前置条件，通过 `assumptions.json`（A-CONTROLS-001）说明待补，不写成审定条件。
+市政与公共服务设施覆盖 AI 产业服务设施（算力、数据、合规、投融资一站式服务点，企业服务智能体融入 [scenario:enterprise-service-copilot]）、人才生活服务设施、新型基础设施（端侧算力驿站、分布式能源节点，场景卡 10）与传统市政设施融合 [depth:municipal_new_infrastructure]。**市政策略（概念建议）**：① 通信与算力——沿中央绿廊设通信管沟与端侧算力驿站（BLDG-001 概念节点），算力就近布设、按需扩容，不设独立大型数据中心；② 能源——分布式光伏与能耗 AI 调控楼（场景卡 10）联动，供能结构待电力专项确认；③ 排水防洪——场地低洼点与清河、小月河水系衔接按"蓝绿灰一体化"留出弹性空间，径流系数待专项复核；④ 消防与应急——利用绿廊与广场空间作为应急疏散与消防通道组织概念，与 119 接警联动待专项深化；⑤ 综合管廊——智脉大道预留综合管廊建设条件（概念），规模与断面待市政专项确认。管线、能源、排水、防洪、消防等工程资料缺失时列为正式深化前置条件，通过 `assumptions.json`（[assumption:A-CONTROLS-001]）说明待补，不写成审定条件。
 
 ## 蓝绿空间、公共空间与城市风貌
 
@@ -1057,7 +1282,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 | JZ-11 无障碍导行系统 | 标准与数据授权梳理 | 场景卡 08、无障碍测评场（test-wayfinding） |
 | JZ-12 活动周公共路线 | 活动许可与版权清权 | 全部公共活动场景 |
 
-**资金三件套（概念建议）**：资金来源、规模与机制三件对应关系如下，全部为假设待复核（见 ASSUME-005）：
+**资金三件套（概念建议）**：资金来源、规模与机制三件对应关系如下，全部为假设待复核（见 [assumption:ASSUME-005]）：
 
 | 要素 | 内容 |
 | --- | --- |
@@ -1082,7 +1307,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 | JZ-11 无障碍 AI 导行系统 | 公共服务/无障碍 | 0.1–0.3 亿元 | 公益基金+财政引导 |
 | JZ-12 全球 AI 活动周公共路线 | 运营/品牌 | 0.05–0.15 亿元/年 | 场景收益+清权赞助 |
 
-全部投入量级为概念区间：上表 11 项一次性建设投入合计约 **3.6–9.1 亿元**（下限 0.3+0.5+0.2+0.1+0.1+0.5+0.2+0.8+0.3+0.5+0.1、上限 0.8+1.5+0.6+0.3+0.3+1.0+0.5+2.0+0.6+1.2+0.3，逐项可复算），不含年度运营 JZ-12；含 JZ-12 年度运营 0.05–0.15 亿元/年的合计口径约 **3.65–9.25 亿元**。进入 `assumptions.json`（ASSUME-005）管理，官方投资计划发布后按 P4 复盘校准。**P1 近期资金组合（概念基准组合）**：财政引导 **45%**、场景服务收益 **20%**、开源与公益基金 **15%**、社会资本（政策兑付）**20%**（合计 100%；各渠道区间独立浮动、浮动后不强制归一，待复核），均为概念假设待复核（见 ASSUME-005），不构成预算承诺。
+全部投入量级为概念区间：上表 11 项一次性建设投入合计约 **3.6–9.1 亿元**（下限 0.3+0.5+0.2+0.1+0.1+0.5+0.2+0.8+0.3+0.5+0.1、上限 0.8+1.5+0.6+0.3+0.3+1.0+0.5+2.0+0.6+1.2+0.3，逐项可复算），不含年度运营 JZ-12；含 JZ-12 年度运营 0.05–0.15 亿元/年的合计口径约 **3.65–9.25 亿元**。进入 `assumptions.json`（[assumption:ASSUME-005]）管理，官方投资计划发布后按 P4 复盘校准。**P1 近期资金组合（概念基准组合）**：财政引导 **45%**、场景服务收益 **20%**、开源与公益基金 **15%**、社会资本（政策兑付）**20%**（合计 100%；各渠道区间独立浮动、浮动后不强制归一，待复核），均为概念假设待复核（见 [assumption:ASSUME-005]），不构成预算承诺。
 
 **表 A3 成本复算框架（概念建议，量级不是拍脑袋——每项给出可复算的基数×单价区间；基数取自本包几何复算或官方公开口径，单价区间为同类项目公开市场水平，任一变更即重算）**
 
@@ -1422,7 +1647,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 | 无障碍 AI 导行 | 无障碍环境建设法 | 现场核验不符即停用，人工替代率 100% 兜底 | 导航桩可移除，保留人工引导台 |
 | 数据最小化 | 个人信息保护法 | 留存期上限 30 天、不采集敏感信息 | 数据删除确认入 P4 复盘 |
 
-**风险与缺资料清单**：official boundary、key area、控规、道路红线、地块权属、建筑现状、市政管线、文保与公共服务缺口均进入 `assumptions.json`（ASSUME-001/002/003、A-CONTROLS-001、ASSUME-004）与本节；任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论均降级为待确认事项 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS-01] [source:SITE-PACKAGE]。
+**风险与缺资料清单**：official boundary、key area、控规、道路红线、地块权属、建筑现状、市政管线、文保与公共服务缺口均进入 `assumptions.json`（[assumption:ASSUME-001]/[assumption:ASSUME-002]/[assumption:ASSUME-003]、[assumption:A-CONTROLS-001]、[assumption:ASSUME-004]）与本节；任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论均降级为待确认事项 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS-01] [source:SITE-PACKAGE]。
 
 **风险登记与人工复核清单**：八维风险清单（数据隐私、实施复杂度、公众接受度、运维成本、政策不确定性、空间争议、技术成熟度、公平与包容性）逐项登记于 `risk.json`，其中实施复杂度与政策不确定性为高关注项并附人工复核要求 [depth:risk_missing_data] [data:risk.json]；十九项概念节点、廊道与区域登记于 `spatial.json`（disclaimer=concept-only，3 重点区+4 廊道+12 节点，可逐项打开核对），全部为概念表达、不代表审定结论，概念对象按 `public_level=public/cleared` 标注，供方案卡片公开展示 [data:spatial.json]；对应几何仅在 `geometry/*.geojson` 中以 `provisional_constraint` 呈现，其中 3 项重点区边界（PROV-KEY-001/002/003）不升级为官方边界、不构成实施承诺 [data:geometry/key_areas.geojson#PROV-KEY-001]。
 

@@ -15,7 +15,6 @@
         "benchmark_first_order_count",
         "benchmark_third_order_count",
         "building_footprint_area_sqm",
-        "floor_area_ratio",
         "green_ratio",
         "green_ratio_in_partition",
         "industry_test_scenario_count",
@@ -30,7 +29,7 @@
         "road_feature_count",
         "site_area_sqm"
       ],
-      "affects_metric_count": 18,
+      "affects_metric_count": 17,
       "owner": "organizer",
       "next_action_zh": "组织方：发布三层范围与三处重点区的法定 polygon。在此之前本包全部面积类数字为临时值。",
       "next_action_en": "Organizer: publish the statutory polygons for the three scope levels and three key areas. Until then every area figure here is provisional.",
@@ -49,10 +48,13 @@
       "if_wrong_zh": "若官方控规发布后与本方案的空间意图冲突，受影响的是**开发强度与体量**部分，不是水准网机制。设计深度矩阵已用 `completeness_limited_by` 标出受此限制的条目，并区分了归属：容积率是组织方缺口，未取得的规范是本方案自己的缺口。",
       "what_would_close_it_zh": "官方控规条件或专项论证发布。",
       "affects_metrics": [
+        "building_density",
+        "building_height_m",
         "existing_residential_floor_area_sqm",
-        "floor_area_ratio"
+        "floor_area_ratio",
+        "setback_m"
       ],
-      "affects_metric_count": 2,
+      "affects_metric_count": 5,
       "owner": "mixed",
       "next_action_zh": "组织方缺口：容积率与控规条件发布。本包缺口：取得并引用适用的规范原文——未取得规范是本方案自己的欠缺，不计入组织方。",
       "next_action_en": "Organizer's part: publish the plot ratio and the statutory control conditions. This package's part: obtain and cite the applicable codes — not having them is this proposal's own shortfall, not the organiser's.",
@@ -197,9 +199,15 @@
       "if_wrong_zh": "若公园的真实范围大于 OSM 已测绘部分，412.5 m 会缩小甚至归零。**本包的论点不依赖这个数的大小**——它依赖「两份几何来自不同来源、其差值可被独立复算」这件事本身。数变了，示范不变。",
       "what_would_close_it_zh": "官方发布公园法定范围的 GIS 图层。",
       "affects_metrics": [
+        "existing_block_median_area_sqm",
+        "existing_building_coverage_ratio",
+        "existing_junction_count",
+        "existing_oversized_built_block_count",
+        "existing_street_density_m_per_sqm",
+        "existing_street_length_m",
         "osm_vertices_shipped"
       ],
-      "affects_metric_count": 1,
+      "affects_metric_count": 7,
       "owner": "organizer",
       "next_action_zh": "组织方：发布公园法定范围的 GIS 图层。在此之前 412.5 m 两端都不是官方几何。",
       "next_action_en": "Organizer: publish the GIS layer for the park's statutory extent. Until then neither end of the 412.5 m reading is official geometry.",

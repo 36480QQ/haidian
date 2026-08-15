@@ -14,6 +14,12 @@
       "impact": "Prevents provisional geometry from being read as official area or statutory control."
     },
     {
+      "id": "A-PUBLIC-ISSUE-846-005",
+      "status": "active_limitation",
+      "statement": "Open Issue #846 records reproducible public-background checks that the OSM-mapped Jing-Zhang Railway Heritage Park does not intersect PROV-SITE-001 (nearest distance about 412.5 m) and a peer-reported Dazhongsi anchor discrepancy for PROV-KEY-003 of roughly 2 km until official key-area polygons are supplied.",
+      "impact": "Treat PROV-KEY-003 as an operating-section proxy only; Dazhongsi station-frontage, service-loop, land-use, public-space and metric claims must be relocated and recomputed when organizer key-area polygons or anchor coordinates are released."
+    },
+    {
       "id": "A-INCLUSION-003",
       "status": "design_commitment",
       "statement": "Every AI service must keep an equivalent non-smartphone path, manual service window, appeal path and rollback trigger.",

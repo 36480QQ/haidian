@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以城市完整度作为百年京张AI创新带的空间审查方法：居、学、护、行、绿、工、交七项普通城市能力先形成长期可用的日常底盘，AI作为可选增强层进入科研、社区、交通和商业。总体形成一条公共绿脊、六段完整度片区、六条东西缝合联系与三处重点区；三大重点区分别绑定ARRIVE WITHOUT APP、CARE WITHOUT ACCOUNT与TEST WITHOUT BLOCKING三条双轨空间合同，并落实为实体建筑形态、物理净空与S0-S3四态运行规约；爽粉堡垒仅作为AI原点社区中的社区命名彩蛋。"
+summary: "以城市完整度作为百年京张AI创新带的空间审查方法：七项普通城市能力先形成长期底盘；v0.14.s 用三条机器可读的不绕行主路径把众智园、AI原点与大钟寺的日常城市链写进真实方案几何，AI只能作为侧挂、可选、可退出的空间接口进入。"
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.13"
+iteration: "v0.14"
 ---
 
 # 京张城市完整度 / JING-ZHANG CITY COMPLETENESS
@@ -19,6 +19,19 @@ iteration: "v0.13"
 > AI 可以增加城市能力，但不能替代住房、学校、照护、公共交通、绿地、工作空间和无需账号即可进入的公共生活。
 
 本方案为开放征集阶段的概念性城市设计。当前 `SITE_BOUNDARY` 与三处 `KEY_AREA` 采用仓库维护的 provisional rough geometry，仅用于方案生成、拓扑自检、相对关系、图面表达与包内复算，不构成法定红线、地块、权属、道路红线、控规或工程实施结论。[source:BOUNDARY-SOURCE] [source:ALLOWED-DESIGN-SPACE]
+
+
+<!-- V014-CORE-START -->
+## v0.14.s 核心判断｜INVARIANT CIVIC ROUTES / 不绕行的 AI 城市
+
+**AI 可以改变服务，但不能迫使市民改变基本城市路径。** 本轮把 v0.7 的三条日常城市链第一次写进机器可读空间：众智园 `ROAD-009`、AI 原点 `ROAD-010`、大钟寺 `ROAD-011` 都是 `ai_dependency=none` 的普通步行主路径。[data:geometry/roads.geojson#ROAD-009] [data:geometry/roads.geojson#ROAD-010] [data:geometry/roads.geojson#ROAD-011]
+
+AI、机器人、动态导航与账号型服务只能作为这些主路径的侧挂接口，不能取代主路径；三条路线共同构成可复核的 ordinary-city baseline。[metric:invariant_civic_route_count]
+
+三条线只表达概念级连续性和空间关系，不是官方道路、站口、桥隧、地块或工程红线；尤其大钟寺真实站口与竖向高程仍须现场和正式资料确认。新增 LineString 不改变 site / green / public-space / building-footprint 面积多边形。[metric:critical_non_ai_route_coverage_ratio]
+
+![三处重点区的不绕行主路径：校园院落、社区街坊、站城门厅](assets/figures/key-areas.png)
+<!-- V014-CORE-END -->
 
 ## 设计依据与资料清单
 
@@ -155,47 +168,25 @@ v0.10 以获得 86 分的 v0.7 **design-first** 结构为底座，只吸收会�
 <!-- V09-REALITY-END -->
 
 <!-- V012-CONTRACTS-START -->
-### v0.13.g｜三条公共承诺作为双轨空间合同：空间形态化与 S0–S3 四态运行规约
+### v0.14.s｜INVARIANT CIVIC ROUTES：三条公共承诺变成三条普通城市主路径
 
-v0.13.g 将双轨空间合同（Dual-Track Spatial Contracts）全面落地为实体建筑形态与**四态确定性运行规约（S0–S3 Operational States）**。核心铁律是：**物理硬质空间（C7 普通底座）对算法软质调度（可选 AI 层）拥有绝对不可逾越的物理熔断优先权**。空间合同将伦理权利严格锚定至具体片区的空间剖面、物理净空、治理主体与熔断机制中。[depth:three_key_area_detailed_design] [metric:public_promise_count]
+v0.14.s 不再把公共承诺写成一套越来越复杂的状态机。它采用更直接的空间合同：**普通人的路线先成为城市几何，AI 只能从路线侧边进入。** 三条路线均为概念级 `pedestrian` LineString，`ai_dependency=none`；它们验证“不开 AI 时城市是否仍然是同一座城市”，而不是模拟已完成的工程设计。[metric:invariant_civic_route_count] [metric:critical_non_ai_route_coverage_ratio]
 
-![三条双轨空间合同与物理熔断规约](assets/figures/three-public-promises.svg)
+| 重点区 | 不绕行主路径 | 空间类型 | AI 只能在哪里进入 | 非 AI 验收问题 |
+| --- | --- | --- | --- | --- |
+| 众智园 / `ROAD-009` | 工作—吃饭/休息—公共绿脊—开放交流 | **校园院落 + 研发首层 + 侧向测试口袋** | 测试院、服务边、可替换节点；不得占据普通主路 | 关闭测试后，研究者、学生与服务劳动者是否仍沿同一路径完成工作、休息与公共生活？ |
+| AI 原点 / `ROAD-010` | 家门—遮阴/坐凳—照护/人工帮助—社区客厅 | **住宅街坊 + 公共首层 + 照护庭院** | 自愿导航、服务匹配、照护提示；基本服务入口不得要求账号 | 不登录、不授权个人数据时，居民是否仍沿同一实体路径获得照护、求助和公共生活？ |
+| 大钟寺 / `ROAD-011` | 到达边—固定导视—人工问询—普通等候/商业—京张公共界面 | **站城门厅 + 等候商业 + 遗产公共界面** | 动态信息、翻译和客流提示；不能取代固定导视和人工问询 | 不用 App、动态屏失效时，访客是否仍沿同一普通路径识路、求助、等待并离开？ |
 
-#### 合同 SC-01｜ARRIVE WITHOUT APP（大钟寺站城无感可达空间合同）
-* **绑定区位与形态原型**：大钟寺重点区｜多层立体站城甲板与铁路遗产缝合界面。
-* **物理空间与净空先决条件（Spatial Prerequisite）**：换乘主通廊净宽 $\ge 4.5\text{m}$，导视安装净高 $\ge 2.5\text{m}$，关键换乘决策节点间保持无遮挡直线视线通廊，严禁商业外摆侵占导视包络线。[source:HD-URBAN-RENEWAL-GUIDE-2025]
-* **S0–S3 四态确定性运行规约**：
-  - **S0 物理基线态（Non-AI Base）**：100% 依赖连续 50m 视距高对比自发光实体导视牌、纸质地图与实体人工问询岗，保障每小时 12,000 人次无手机流畅换乘。
-  - **S1 算法增强态（AI-Enhanced）**：客流密度红外感知、大屏动态分流引导与 Web 扫码多语种语音无障碍路径辅助。
-  - **S2 人工接管态（Human Fallback）**：数字大屏延迟 $>2\text{s}$ 或客流密度 $>2.5\text{人/m}^2$ 时，站务员 30 秒内到位，开启人工手持指示牌与直通闸机。
-  - **S3 机械断开态（AI-OFF Mechanical Break）**：遭遇断网或电力故障时，系统 $\le 0.1\text{s}$ 切断所有数字界面，纯物理重力/常开通道保障 100% 疏散安全。
-* **权责主体与治理网格（Accountable Actor）**：京港地铁/北京地铁运营方 + 北下关街道办事处 + 站城一体化运营联合体。
-* **量化验收与熔断触发（Acceptance & GO/STOP Trigger）**：无手机到达成功率 100%；发生算法诱导拥堵 $\ge 1$ 次，立即触发 STOP 强制转入纯物理通行模式。
+![总体结构与三条不绕行路线](assets/figures/site-overview.png)
 
-#### 合同 SC-02｜CARE WITHOUT ACCOUNT（AI 原点零门槛全龄社区客厅空间合同）
-* **绑定区位与形态原型**：AI 原点社区重点区｜细密慢行生活街区（Woonerf）与全龄关怀核。
-* **物理空间与净空先决条件（Spatial Prerequisite）**：便民综合驿站单处物理占地 $\ge 15\text{m}^2$，人行遮阴步道净宽 $\ge 2.5\text{m}$，沿线全设 1.8m 实体盲道与防滑坡道（坡度 $\le 1:12$）。[source:HD-AI-DISTRICT-PROGRESS-2025Q4]
-* **S0–S3 四态确定性运行规约**：
-  - **S0 物理基线态（Non-AI Base）**：家门至卫生站 400m 实体林荫步道，沿街每 200m 设实体便民驿站，提供纸质窗口、实体公用电话与铜缆紧急求助铃，免账号、免人脸、免画像。
-  - **S1 算法增强态（AI-Enhanced）**：慢病长者自愿式无感健康监护、社区共享空间算法分时预约。
-  - **S2 人工接管态（Human Fallback）**：长者主动退出或拒绝算法时，社区网格员与家庭医生 100% 物理上门与窗口直接办理。
-  - **S3 机械断开态（AI-OFF Mechanical Break）**：发生数据隐私异常或系统下线，全部服务瞬时退回线下纸质档案与物理服务台，数据回路硬物理断开。
-* **权责主体与治理网格（Accountable Actor）**：中关村街道办 + 社区居委会 + 海淀区社区卫生服务中心。
-* **量化验收与熔断触发（Acceptance & GO/STOP Trigger）**：非数字渠道公共服务覆盖率 100%；若发生未经授权个人隐私外泄，强制触发 STOP 并启动社区伦理听证。
+#### AI 如何真正改变城市形态
+三条路线不是“把 AI 删除”。相反，它们迫使 AI 形成六类**可逆的物理接口**：受控测试口袋、无障碍/人工求助节点、连续站城到达界面、可替换服务节点、人优先公共首层、可回退空间版本链。AI 的规划创新由此表现为**接口位置、首层关系、测试边界与公共路径的空间变化**，而不是更多屏幕。[metric:reversible_urban_form_prototype_count]
 
-#### 合同 SC-03｜TEST WITHOUT BLOCKING（众智园创新测试物理隔离与分级熔断空间合同）
-* **绑定区位与形态原型**：众智园重点区｜合院多孔网格与线性科研测试中轴。
-* **物理空间与净空先决条件（Spatial Prerequisite）**：无人车/机器人测试道（净宽 $\ge 1.8\text{m}$）与人行步道（净宽 $\ge 2.0\text{m}$）采用 +15cm 物理路缘石硬质高差隔离；交叉口布设常闭式气动升降隔离柱；每 50m 设红色机械急停（E-Stop）按钮。[source:AGENT-TASKBOOK]
-* **S0–S3 四态确定性运行规约**：
-  - **S0 物理基线态（Non-AI Base）**：科研人员、学生与服务劳动者的通勤、就餐、漫步流线独立畅通，普通公共空间绝非默认试验场。
-  - **S1 算法增强态（AI-Enhanced）**：低速无人配送车限时（10:00–11:30, 14:00–16:30）在专用隔离道内自主运行（速度 $\le 8\text{km/h}$）。
-  - **S2 人工接管态（Human Fallback）**：测试车偏离路径或靠近路缘，远程安全员即刻接管介入控制。
-  - **S3 机械断开态（AI-OFF Mechanical Break）**：任何行人按下 E-Stop 或系统越界告警，气动升降柱 $\le 0.5\text{s}$ 机械升起，切断动力回路，10 分钟内场地转为普通步行街。
-* **权责主体与治理网格（Accountable Actor）**：中关村科学城管委会 + 园区物业管理方 + 入驻 AI 企业测试联合体。
-* **量化验收与熔断触发（Acceptance & GO/STOP Trigger）**：测试对普通通行阻滞率为 0%；若无人设备越界或阻滞人流 $\ge 1$ 次/周，立即触发 STOP 吊销测试许可。
+#### 两条实施路径，而不是假装工程已经确定
+**路径 A｜低扰动可逆动作**：遮阴、座椅、固定导视、人工帮助界面、可拆测试边界、模块化服务节点，可进入现场调查—样段—复核—扩大/撤回的渐进流程。**路径 B｜正式项目依赖动作**：建筑规模、站城竖向、市政容量、道路工程、消防、文保、权属等，必须等待真实项目生成、专业设计与行政许可。[metric:implementation_path_count]
 
-#### 双轨空间治理与黑天鹅压力测试规约（Black-Sky Resilience Protocol）
-方案确立“**平时双轨运行、灾时一键熔断**”的容灾标准：每季度组织一次区域级“AI-OFF 黑天鹅演练”，在断网断电 48 小时极限情景下，检验三处重点区的大钟寺疏散、原点社区照护配药与众智园科研通勤是否达到 100% 物理可用。
+责任只写到“拟议角色”级：园区公共空间/测试管理角色、社区服务与照护角色、站城公共空间/导视角色，均须真实主体确认；不把潜在机构写成已承诺责任人。大钟寺竖向连续性继续标记 **REAL LEVEL DATA REQUIRED**，不虚构桥隧、站口或多层甲板工程线位。
 <!-- V012-CONTRACTS-END -->
 
 ## 用地、建筑规模与拆改留方案

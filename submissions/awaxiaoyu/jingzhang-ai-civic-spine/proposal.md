@@ -54,6 +54,8 @@ iteration: "v0.6"
 
 本次方案包的可评分状态为：**临时边界，保留精度警示并待正式数据发布后复算；不阻断内容评分**。因此，正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界和重点区 polygon 更新后，agent 必须重新运行方案生成流程、自检和图纸/HTML生成，不能只替换单个文件。
 
+**2026-08-15 开放议题复查。** Issue #846 进一步提示：OSM 已测绘的京张铁路遗址公园与 `PROV-SITE-001` 不相交，最近距离约 412.5 m；同时有参与者复算指出 `PROV-KEY-003` 的临时大钟寺矩形可能与大钟寺站/觉生寺真实锚点存在约 2 km 级别的南北偏差 [source:ISSUE-846-PROVISIONAL-GEOMETRY-CHECK]。本方案只把该议题作为 background risk，不把 OSM 或 peer comment 升级为 official polygon。大钟寺片区在本包中因此被读作“站城服务与采用回流机制”的 operating section proxy；官方 key-area polygon 到位后，站前界面、四象限慢行、绿地复合利用、项目分期和三项核心指标必须整体迁移、重算并重新出图。
+
 边界解释可回到总体范围图层和面积复算 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。三处重点区则由独立图层和数量指标核对 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]。这意味着读者可以从正文进入证据，但不必先读一串机器编号。
 
 ## 三层范围工作框架

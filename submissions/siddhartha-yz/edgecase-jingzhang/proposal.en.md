@@ -4,7 +4,7 @@ author_github: "siddhartha-yz"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v1.22"
+iteration: "v1.24"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Turn the Centennial Jing-Zhang corridor from an AI showcase into civic infrastructure for exposing, co-testing, learning from, and repairing long-tail conditions before systems scale."
@@ -125,14 +125,16 @@ The heritage narrative is intentionally methodological rather than pseudo-histor
 
 The first portfolio is small, reversible and testable:
 
-| ID | Project | First output | Gate before expansion |
-| --- | --- | --- | --- |
-| EC-01 | Edgecase Mile + six slow links | non-AI continuous base route | professional traffic/accessibility review |
-| EC-02 | Controlled Edge Court | E1 robotics/multimodal testing | emergency-stop and operating safety review |
-| EC-03 | Human Override House | E2 civic-service co-test | consent, privacy and staffed fallback ready |
-| EC-04 | Market Edge Forum | E3 agent/terminal handoff | official KEY-003 geometry + merchant permission |
-| EC-05 | Long-tail Atlas | failure types, fixes, retest log | de-identification and copyright review |
-| EC-06 | EDGECASE WEEK | annual open walks, challenges, reviews | event permit and public-safety plan |
+| ID | Project | Proposed accountable role | Independent verification role | First output and acceptance evidence | Gate before expansion |
+| --- | --- | --- | --- | --- | --- |
+| EC-01 | Edgecase Mile + six slow links | public-space operator | transport/accessibility professionals and user representatives | non-AI continuous base route; blind-walk records and barrier register | professional traffic/accessibility acceptance, with failures entered in a correction register |
+| EC-02 | Controlled Edge Court | pilot technology provider and site operator, jointly accountable | independent safety assessor | E1 robotics/multimodal testing; emergency-stop drill, incident log and retest version | written acceptance of incident response and emergency stop |
+| EC-03 | Human Override House | civic-service operator | community representatives plus privacy and accessibility advisers | E2 civic-service co-test; consent record, takeover latency and non-AI route audit | consent, data minimization, staffed fallback and exit route ready |
+| EC-04 | Market Edge Forum | merchant-service operator | merchant representatives and consumer-rights adviser | E3 agent/terminal handoff; accountability-chain drill and staffed-support reachability record | official KEY-003 geometry checked, merchant permission and accountability chain signed off |
+| EC-05 | Long-tail Atlas | accountable data custodian and publisher | independent reproduction team and copyright reviewer | failure types, fixes and retest log; reproducible sample and publication register | de-identification, copyright and cross-team reproduction accepted |
+| EC-06 | EDGECASE WEEK | event operator | public-safety, community and accessibility observers | annual open walks, challenges and reviews; issue-closure rate and exit-route audit | event permit and public-safety plan complete; unresolved issues returned to EC-02–05 |
+
+These are **accountability roles** suitable for a future procurement or pilot brief, not appointments of existing organizations. Before work begins, each role must be resolved to a named accountable body, named verifier, evidence repository and sign-off date; the same body must not both deliver a pilot and perform its final independent verification.
 
 Implementation policy should not create a regulatory exemption zone. It should create a stricter deployment gate. Every pilot needs an accountable owner, test question, data boundary, success/failure measures, human takeover, stop rule, retest version and exit plan. Completion of T1 is a prerequisite for T2; evidence from T2 is a prerequisite for T3. Ordinary public-space rights remain intact, and entering the park never counts as consent to participate. Companies receive higher-quality field evidence, not weaker public protections.
 

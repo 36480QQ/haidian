@@ -625,7 +625,7 @@
         "geometry/green_space.geojson": "a47fcc55b4b7316933557232c896c7dec3e6db5d532d4e9c95d93b6c7f42df1d",
         "geometry/phasing.geojson": "a08a0be4cfec3448efc354d9271abc04e1aca41d7b25786b6c768cff6f8a7776",
         "geometry/constraints.geojson": "d631f0698742199a3dd4d1dd492d4a87f1a617d526ace9ff2ed35e5e09190004",
-        "metrics.json": "bbafe42b45e97885682bb12fa62d30ec264353b6700388df040965a651f972cb"
+        "metrics.json": "fbb26cd388d233c4ce606c75ce04b1435bd1f23700fc17c2ab4fdd1f4edc0701"
       },
       "frozen_counts": {
         "unique_geometry_feature_ids": 389,
@@ -800,6 +800,100 @@
         ],
         "result_after_fix": "8/8 pages in both A0 files, 0 blank pages, 0 replacement glyphs, 0 out-of-page text blocks, board-8 backlink searchable in both languages; two fresh-process builds byte-identical (zh 6e6373e39988f5057ba1c210d2aeb7b5d277c0862b6344aa5266b028f78b8899, en a9af5092c51f3abd2e1418bc5d6812855aec4163348276662e881b0c02912e6e); both A3 booklets keep the Round 20 fixed-point bytes",
         "certification_note": "Deterministic rebuild and text-extraction verification only; it is not human visual inspection, field evidence or an approval of any kind."
+      },
+      "pdf_metadata_r30": {
+        "contract_id": "JZ-PDF-METADATA-R30",
+        "executed_at": "2026-08-15",
+        "baseline_findings": {
+          "placeholder_creation_mod_date_2000": 4,
+          "missing_document_lang": 4,
+          "outline_bookmarks": 0
+        },
+        "fixes": [
+          {
+            "file": "drawings/a3-booklet.pdf",
+            "lang": "zh-CN",
+            "bookmarks": 14,
+            "publication_date": "D:20260815000000+00'00'"
+          },
+          {
+            "file": "drawings/a3-booklet.en.pdf",
+            "lang": "en-US",
+            "bookmarks": 14,
+            "publication_date": "D:20260815000000+00'00'"
+          },
+          {
+            "file": "drawings/a0-boards.pdf",
+            "lang": "zh-CN",
+            "bookmarks": 8,
+            "publication_date": "D:20260815000000+00'00'"
+          },
+          {
+            "file": "drawings/a0-boards.en.pdf",
+            "lang": "en-US",
+            "bookmarks": 8,
+            "publication_date": "D:20260815000000+00'00'"
+          }
+        ],
+        "result_after_fix": "44 pages pixel-identical to the previous version at 60 dpi grayscale; two fresh-process builds byte-identical (A3 zh 34d3851690808649182d185a773b11b773c0c07f732c9e306a87e4bc600b0e22, A3 en 5c7b88d7e97052ca039b1ef6dbd3ea9add460aae1d4b9bd148a94d5b9e76048d, A0 zh ceb69fff31f0451e9577565e5fd522f2f0622b7301571dd051647f6c5ed9c9f4, A0 en 164c4cc81753649cd090134c11f8a33b5c8097d72e2890be4a2d5f435cddf3c8); 0 blank pages, 0 replacement glyphs, backlinks searchable in both languages",
+        "certification_note": "Deterministic rebuild and metadata verification only; PDF/UA conformance is not certified, and this is not human visual inspection or an approval."
+      },
+      "evidence_marker_parity_r31": {
+        "contract_id": "JZ-EVIDENCE-MARKER-PARITY-R31",
+        "executed_at": "2026-08-15",
+        "method": "Per-chapter bilingual evidence-marker audit over proposal.md and proposal.en.md: five marker kinds counted per subsection heading; marker value multisets compared across languages",
+        "baseline_findings": {
+          "marker_value_parity": "identical multisets (source 83, standard 8, depth 15, data 106, metric 109 per language)",
+          "chapters_with_differing_marker_placement": 4
+        },
+        "fixes": [
+          {
+            "file": "proposal.en.md",
+            "chapter": "The Century-Time Museum",
+            "change": "moved the three source markers from the Cultural Content Source opening sentence into the Strategic Proposition closing sentence, matching the authoritative Chinese placement"
+          },
+          {
+            "file": "proposal.en.md",
+            "chapter": "Public Mission Economy",
+            "change": "moved the three source markers from the Mechanism Contract opening sentence into the Strategic Proposition closing sentence, matching the authoritative Chinese placement"
+          }
+        ],
+        "result_after_fix": "0 chapters with differing marker placement; totals unchanged (83/8/15/106/109 per language); both reports re-rendered with the Round 23 media-link fix re-applied; the Chinese HTML re-render is byte-identical to the previous version; the review handoff index now records evidence_markers_en for all 21 chapter units",
+        "certification_note": "Marker placement and value parity are machine checks only; they do not certify translation equivalence beyond structure and counts."
+      },
+      "formal_visual_metrics_r32": {
+        "contract_id": "JZ-FORMAL-VISUAL-METRICS-R32",
+        "executed_at": "2026-08-15",
+        "rule_layer_basis": "The repository taskbook formal_visual_metrics_contract, formal-submission-guide section 9, SKILL.md and visual_review.py now require the three core visual metrics (site_area_sqm, green_ratio, public_space_ratio) to be known, finite, recomputable from submitted geometry, and declared with matching numeric data-values in visual/index.html; this round responds to that rule-layer change.",
+        "recomputation": {
+          "method": "pyproj EPSG:4326 to EPSG:4548 transformation, planar polygon area via shoelace over each ring",
+          "site_area_sqm": 11412825.38562,
+          "recorded_site_area_sqm": 11412825.385554,
+          "site_area_delta_sqm": 0.000066,
+          "green_ratio": 0.126157,
+          "recorded_green_ratio": 0.126157,
+          "green_ratio_delta": 0.0000004488281,
+          "public_space_ratio": 0.012831,
+          "recorded_public_space_ratio": 0.012831,
+          "public_space_ratio_delta": -0.00000002856859,
+          "feature_counts": {"site_boundary": 1, "green_space": 16, "public_space": 9}
+        },
+        "fixes": [
+          {
+            "file": "metrics.json",
+            "change": "added an explicit recalculation_trigger to site_area_sqm, green_ratio and public_space_ratio stating that each value must be recalculated from the official polygons once the repository publishes official boundary/green/public-space geometry"
+          },
+          {
+            "file": "visual/index.html",
+            "change": "metric card labels for the three core metrics now carry the recalculation trigger (非官方 · 官方边界发布后复算 / 非绩效 · 官方几何发布后复算); numeric data-values unchanged"
+          },
+          {
+            "file": "visual/index.en.html",
+            "change": "metric card labels for the three core metrics now carry the recalculation trigger (NOT OFFICIAL · RECALCULATED ON OFFICIAL BOUNDARY RELEASE / NOT PERFORMANCE · RECALCULATED ON OFFICIAL GEOMETRY RELEASE); numeric data-values unchanged"
+          }
+        ],
+        "result_after_fix": "visual_review.py (current rule layer) passes with 0 issues; all three metrics remain status=known with confidence=low, provisional assumptions, formulas and geometry source_files; HTML data-values match metrics.json exactly",
+        "certification_note": "Recomputation and gate conformance are machine checks only; they do not turn provisional geometry into an official redline, precise area or planning control."
       },
       "replay_expectations": {
         "t02_fixture_count": 10,
