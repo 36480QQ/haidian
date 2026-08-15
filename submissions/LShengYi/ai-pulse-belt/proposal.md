@@ -65,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 本规则适用本包全部正文、表、图、JSON 与媒体脚本；任何一级降级必须可被评审沿 changelog 追溯到具体条目。
 
-**版本可追溯**：本包当前迭代 **v10.14.8**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
+**版本可追溯**：本包当前迭代 **v10.14.9**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
 
 **表 A1 评审一页入口（评审维度证据索引——每行给出可打开文件与可运行命令，机器可核验项全部可在评审端离线重跑）**
 
@@ -245,12 +245,12 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 
 | 核对项 | 核对内容 | 核对方式（可重跑） | 结果 |
 | --- | --- | --- | --- |
-| 引用解析 | 正文 359 处内联引用（source 43 / metric 120 / data 115 / depth 31 / standard 29 / assumption 21）全部指向已登记对象（349 个 ID 级解析＋5 个文件级已存在，另 5 处格式示例） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json、assumptions.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 354/354 引用可解析（另 5 处格式示例） |
+| 引用解析 | 正文 361 处内联引用（source 43 / metric 121 / data 116 / depth 31 / standard 29 / assumption 21）全部指向已登记对象（351 个 ID 级解析＋6 个文件级已存在，另 5 处格式示例） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json、assumptions.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 356/356 引用可解析（另 5 处格式示例） |
 | 离线合成演练 | 120 任务（15 合格＋105 失败分支）逐条规则检查，回执哈希确定性 | `node visual/assets/simulate-check.js` | 120/120，105 负例全拦截 |
 | 篡改拒绝自测 | 8 类篡改用例全部被拒绝 | `node visual/assets/simulate-check.js --self-test` | 8/8 |
 | 计数独立复算 | 9 项计数指标从 geometry/*.geojson 独立重算（不读 metrics.json） | `node visual/assets/verify-counts.js` | 9/9 |
 | 勘误登记册 | 13 条勘误逐条 join changelog.md | build_errata.py（提交包外工具，可离线运行） | 13/13 |
-| 双语结构 | 标题 18/18 一致；共享 82 张表 zh/en 列结构逐张一致（表 A14/表 A15/表 A16/表 A17/表 A18/表 A19/表 C1/表 C2/表 C3 为 zh 权威语增补核对表，en 受 262144 字节硬限未收录——双语合同 zh 权威语单方增补机制见 changelog v10.14.8） | 双语结构扫描（en 为 zh 有序子序列） | 18/18、82/82 |
+| 双语结构 | 标题 18/18 一致；共享 82 张表 zh/en 列结构逐张一致（表 A14/表 A15/表 A16/表 A17/表 A18/表 A19/表 A20/表 C1/表 C2/表 C3/表 C4 为 zh 权威语增补核对表，en 受 262144 字节硬限未收录——双语合同 zh 权威语单方增补机制见 changelog v10.14.9） | 双语结构扫描（en 为 zh 有序子序列） | 18/18、82/82 |
 | 几何空间复核 | 9 类图层拓扑/CRS/无缝覆盖 | 官方自检 G2 | 9/9 |
 | 图纸与可视化 | PDF 页数>0、HTML 零外链离线可开 | 官方自检 G3 | PASS |
 | 媒体与字幕 | 音频 171.62 s＝短片 171.62 s＝字幕末条 00:02:51.508，时长互证 | 媒体时长读取＋VTT 末时间戳 | 171.62 s，3/3 一致 |
@@ -392,6 +392,30 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 | ROLE-AFFECTED-PUBLIC 受影响公众 | 异议、申诉与叫停请求通道；听证参与 | 不承担专业责任，不负担义务性审查 | 申诉通道缺失，服务不得向公众开放 |
 
 > 表注：8 角色逐条登记于 visual/assets/governance-raci.json [metric:governance_role_count]；宪法条款 5 条含"运营者不得自证其退场审计" [metric:governance_constitutional_rule_count]，与公众委员会示范章程（概念）衔接。
+
+**表 A20 勘误登记表（13 条逐条登记，勘误册与变更记录互为第二台账）**
+
+错误不是黑历史而是证据：本包 13 条真实勘误逐条登记错误形状、错误内容、发现者与修复版本（visual/assets/errata.json 六类形状词表），每条可沿 changelog 复核——勘误册说"错在哪"，变更记录说"改了什么"：
+
+| 勘误 ID | 错误形状 | 错误内容（摘要） | 发现者 | 版本（发现→修复） |
+| --- | --- | --- | --- | --- |
+| E01 | 同一件事的两份拷贝各自漂移 | zh/en 图件 bbox_inches="tight" 各裁边→画布不一致、11–26% 顶部空白带 | 用户视觉报告 | v10.7.1→v10.7.2 |
+| E02 | 几何表达的不是它声称的意思 | title_block 中英标题必然碰撞（19pt 与 10.5pt 锚点重叠） | 机器视觉复核＋像素扫描 | v10.7.1→v10.7.2 |
+| E03 | 交付物在提交前没被看过 | 深蓝底图配深墨色标题，标题实际不可见 | 机器视觉复核 | v10.7.1→v10.7.2 |
+| E04 | 交付物在提交前没被看过 | land-use 图例落在比例尺上方，两者重叠 | 机器视觉复核 | v10.7.1→v10.7.2 |
+| E05 | 交付物在提交前没被看过 | 道路标签压线低对比；走廊标签衬底与底图混叠 | 机器视觉复核 | v10.7.1→v10.7.2 |
+| E06 | 文字活得比装它的那句话久 | metrics-evidence 副题与主标题重复（同一句出现两次） | 机器视觉复核 | v10.7.1→v10.7.2 |
+| E07 | 规则对别人成立，对自己没有执行 | simulation.json 被旧版 15 任务协议覆盖，120 任务版丢失致指标不一致 | 指标一致性校验 | v10.7.0→v10.7.1 |
+| E08 | 同一件事的两份拷贝各自漂移 | core.autocrlf 使磁盘 CRLF、git blob LF，finalize 磁盘哈希与 CI blob 哈希不一致 | finalize 校验 | v10.5.x→v10.7.0 |
+| E09 | 检查测了方便测的东西 | frontmatter iteration 变化不算正文变化，确定性校验失效 | 确定性校验 | v10.7.0→v10.7.1 |
+| E10 | 几何表达的不是它声称的意思 | 官方 provisional 大钟寺质心落在北京北站附近（公开 Issue #1029） | 公开 Issue | v10.4.x→v10.7.0 |
+| E11 | 几何表达的不是它声称的意思 | 总体范围与京张铁路遗址公园不相交（最近 412.5 m，公开 Issue #846） | 公开 Issue | v10.4.x→v10.7.0 |
+| E12 | 检查测了方便测的东西 | 机器视觉复核连续三次误报，像素扫描逐项证伪（flash 级视觉模型局限） | 像素扫描复核 | v10.7.1→v10.7.2 |
+| E13 | 交付物在提交前没被看过 | 设计边界（概念建议）画实线与官方 provisional 虚线语义混同 | 提交前复核 | v10.7.1→v10.7.2 |
+
+> 表注：13 条勘误逐条登记于 visual/assets/errata.json [data:visual/assets/errata.json]（六类形状词表：双拷贝漂移/几何非其声称/交付物没被看过/检查测了方便测的/规则对自己没执行/文字活得比句子久），每条经 changelog.md 复核；勘误册与变更记录互为第二台账（表 A14"勘误 13/13"同口径）。
+
+
 
 
 
@@ -755,6 +779,24 @@ exit 1 (gaps found, by design)
 | JZ-12 全球 AI 活动周公共路线 | 叠加层 | 0.05–0.15 亿元/年 | 常规公共活动组织不变（活动单价本身为常规口径）；AI 展演模块取消 |
 
 > 表注：AI 预算列与表 A3 复算区间逐项一致（12/12，不新增数字）[metric:investment_item_count]；无 AI 接管动作逐项对应表 C1 等价路径与四段退场合同 BASE/BEQUEST 段；接管时点=对应场景立即退场条件触发或进入黑屏期（表 C2 立即退场条件列）；依赖度分档依据表 A3 单价区间性质与场景卡功能定位（三源资金通道见 [metric:funding_channel_count]），全部假设区间经 [assumption:ASSUME-005] 管理，官方投资计划发布后按 P4 复盘校准。
+
+**表 C4 评审七维证据索引表（7 维逐维给评审指路）**
+
+评审按七维打分（权重见本表），本表把每一维的证据链直接指给评审：回应锚点→响应章节→可打开证据文件，全部离线可核验（visual/assets/review-evidence-index.json 逐维登记，与表 A1 一页入口同口径）：
+
+| 评审维度 | 权重 | 本方案回应锚点 | 响应章节 | 可打开证据文件 |
+| --- | --- | --- | --- | --- |
+| 任务书契合 | 20 | 三栏映射表（任务书原词→方案回应→可定位交付）；agent.1-6 逐条响应与场景卡/测试场/画像/地标/文化/社区活动一一对应 | 证据与评审响应总览；AI 创新生态、人才画像与 AI+ 场景 | proposal.md、agent.json、sources.json |
+| 原创性 | 10 | 智脉四问可证伪命题与备选命题比选；脉冲协议 P1-P4 与状态灯语言（波形=运行/脉冲=测试/平线=停用）；表 A11 同场扫描 | 核心判断与公共验收契约；智脉脉冲协议 | proposal.md、design_depth_matrix.json、state-machine.json、implementation-gates.json |
+| AI 规划创新 | 15 | 8 状态机（停摆演练/退场审计不可跳过）；四段退场红利合同 BASE→BOOST→BLACKOUT→BEQUEST（15 项全覆盖）；双闸门 G0-G7/C0-C7 与护照 11 字段 | 第六章（场景/脉冲协议） | state-machine.json、dividend-contracts.json、implementation-gates.json |
+| 实施可行性 | 20 | 首期 100 天零依赖官方数据；100 米/100 天首发段与硬性日落不续期；指标 76 项（61 known）逐项带公式与来源；面积按官方口径复算并披露拟合偏差 | 更新实施章；指标体系章 | metrics.json、simulation.json、geometry/*.geojson |
+| 公共利益包容 | 10 | 8 类用户画像与受影响公众角色；无障碍与非数字化服务（人工等价路径/盲道/公众委员会）；意见—回应台账逐条登记 | 场景卡章；公众委员会示范章程 | simulation.json、governance-raci.json、errata.json |
+| 风险合规 | 10 | 法定要求 vs 自设标准分列；五类回滚触发器与五条硬停止条件；L1-L5 证据等级；provisional 一律披露不伪造 | 风险、版权与合规说明 | risk.json、standard_matrix.json、errata.json |
+| 表达完整 | 15 | 双语 1:1（proposal/PDF/HTML/图件全部 zh+en 镜像）；评审首屏问题表（8 问→回答→可打开文件）；能说明/不能说明三栏表 | 全文；证据与评审响应总览 | proposal.md、proposal.en.md、report/*.html |
+
+> 表注：7 维逐维登记于 visual/assets/review-evidence-index.json，权重与官方评审口径一致 [metric:review_evidence_dimension_count]；评审首屏问题表（评审最可能问的 8 问）见证据总览章。
+
+
 
 
 
