@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dac0cbbd79094141443c71195f576ac4df89aa3ae92966a040fcb9123bdce740"
+      "sha256": "b89d8cb7353779bc3f389568f8339c15a1f0033818830fd91de94f525ed53b76"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "d2627c3ab115af28e0c2fa3514e14d004127d3ad0b1d5154d12e4ace0bf16522"
+      "sha256": "35241fac71f3a1437256a2018acfff2d953170b0ce60764be3a151445f16f7c2"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fccfe803ef056c5df2ed9eabae01066bf9444229f6fcc15c0c0393af3d898861"
+      "sha256": "0409c62b6b6200f90d8d614b6cd1566379d0deb4dcd4ee2b889872a93bc8495d"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d27d5dd3614da077cb0a657c14335f153b55ff36a364cbbcb94f5cec433e4841"
+      "sha256": "54842212ccab41e1fbe390f5ec5fd8cb8339a0146dbcaf96e4b2de8562b68140"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "623e936e01033dc16e4a06d56150b17f4cb25dc97a6955497bb005b877521e62"
+      "sha256": "142072c180d7394c56e1df56a518d569ec8beb78ab0c6c44669b974860b2bf5d"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b9ceffc0f40d1239ac5aa75a98f220519e4150aef376d40ca53d2b8a71256149"
+      "sha256": "766d13e0371a2be80eab7a53d3dd27316063d73a0bb4428b83a008c939116732"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -383,6 +383,13 @@
       "language": "en",
       "translation_of": "assets/figures/c8-c9-c10.png",
       "sha256": "2d36e4f2025b18bd3d3def301b25c8daf153c99e53062ff6943daf84982c04bb"
+    },
+    {
+      "path": "assets/figures/c14-governance.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "6a937762f6b541d1ecc311fd839cc21222d1c250e5a5382671ca900086d1bdef"
     }
   ],
   "validation_claim": {

@@ -632,6 +632,50 @@
       "assumptions": [
         "固定网格近似"
       ]
+    },
+    "network_efficiency_eta_now": {
+      "status": "known",
+      "value": 0.1918,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "SNA 网络效率 η=1/[N(N-1)]·Σ(1/d)，d=1/λ（5核）现状",
+      "confidence": "medium",
+      "assumptions": [
+        "λ 为 C1 代理口径；η 为拓扑协同度"
+      ]
+    },
+    "network_efficiency_eta_after": {
+      "status": "known",
+      "value": 0.307,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "SNA 网络效率 η（缝合后）",
+      "confidence": "medium",
+      "assumptions": [
+        "缝合=λ×1.6 代理"
+      ]
+    },
+    "nash_lock_status_now": {
+      "status": "known",
+      "value": 1,
+      "unit": "flag",
+      "source_files": [],
+      "formula": "协同博弈纳什均衡：1=锁定(D,D 各自为战)，0=解锁(C,C 协同)；现状=1",
+      "confidence": "medium",
+      "assumptions": [
+        "2×2 简化博弈，效用抽象量纲"
+      ]
+    },
+    "nash_lock_status_after": {
+      "status": "known",
+      "value": 0,
+      "unit": "flag",
+      "source_files": [],
+      "formula": "协同博弈纳什均衡（缝合+相变论坛后）：0=解锁(C,C)",
+      "confidence": "medium",
+      "assumptions": [
+        "r=1.2 概念假设"
+      ]
     }
   }
 }
