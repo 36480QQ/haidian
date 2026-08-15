@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.2 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.3 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b6813a4a80c381983f41905c05974d496cd3a871194f3393222a42071d331371"
+      "sha256": "58050d660e235b59fe3e6098731e24becf517d28e5224953811a0c0567be5394"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "f198b9f7d51078b2f09a02c3a0a4efed5585b750cb9640e0e4637b35f274e654"
+      "sha256": "1cb3cd9481d087cd6375496b388c93c9fdb1d38419a48ab479a79950fe9eaa2f"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "26b9ed41cc991ad303fb4fbf81dd32c1846ee627a910eb5231276ff58b10fb37"
+      "sha256": "0a13819218b0c663af00b67b7204d8867998a739f043be7d70b38eaae961cd60"
     },
     {
       "path": "compliance_matrix.json",
@@ -107,28 +107,28 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "64b93d73e3f0d68287d6c7e3f712665372d9dee1ad77a08ae73fda3c33da5b28"
+      "sha256": "36276a1a6d4b3f576976a4ad72b5b841b76a5b64d580089994c4f42786b45bad"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "34d206f8c42ca66fcbd1d708c6802bb10919fdf8066cf4042d30b2c3d6b5a52d"
+      "sha256": "042d7010cfba30bbdf7c66a7f25c71e77c172a2fd3c9a4af0f19eab631e2702e"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ff397baa494a2882b8e22663607128d51ceb4db6c8eaad11cd79ee545acead78"
+      "sha256": "13731da1fd91b9f924ce7dee5aa2f65b5d14983028a77ad8c87190acde4e9fb1"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "0a9dd576d16b75af38e46010d3b1d41b08799b2e3218e8030227c8a798986063"
+      "sha256": "19639bc00566a091f45389df2fb16f9fc1f329c707518dd0db41548296fb4062"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "11e6cef2753b03875a240c46756071af42c5999d467f53ab3ccb328b3be3e87b"
+      "sha256": "669886ab2d4c81a5bec9a0b286b6a5e6f1ad8c60a1b740b74447772fc92e2ff3"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "6cda5f17178c96407d1bd810258e8085c547cca7debea7e612cda765b9c03eaf"
+      "sha256": "9c487dba98d3be0856f8ce628ce55de8037ef1155c7b0774d7d18735caf54c16"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "3e1506a98ba96114a3e63f22d28eb8c4e4539dde8f24054e1a71f31f678b57e3"
+      "sha256": "8dc5906a4f3f2c51d7d2e806d4779891d5ebcea319f6a9010b16465c78f58bf4"
     },
     {
       "path": "visual/index.en.html",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "9c864af6727fbea793caeb753d44cfc847cec8e6fbbefee286ffe77be1356ac5"
+      "sha256": "82d2bee5d6663e86b3f4d369eb550fea18e1534b04719e28670eb35198b7e793"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "4a17837696507ab3662c9821f7c0d1aeced8e1001de4626404345d4bdc4dffc9"
+      "sha256": "d04f0a8627f3082c6d908fb6d944922b7e065459ea33bacb251c0ad001d1aee6"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -492,7 +492,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "b40aa4cc65551b502f9febf34d6032bbe18fef786b156275beb7740730fe84b4"
+      "sha256": "e47b33e19b257400c881569c182e89e2898fa37a653d0b8a617ecec2f2198f9b"
     },
     {
       "path": "assets/media/cover.webp",
@@ -633,7 +633,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "04cf36f3b7d33e1fa25d1d0ac952f384201adf750b96ce0a1377440c6f61c8be"
+      "sha256": "9ec23cc15cc9aa87fee6625c671d37f8d067af61580b73536af69bbc92448796"
     },
     {
       "path": "visual/assets/review-archive.json",
