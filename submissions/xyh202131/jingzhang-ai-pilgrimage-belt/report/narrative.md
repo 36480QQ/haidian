@@ -4,6 +4,12 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 26 contract as_of consistency repair / 第 26 轮契约 as_of 一致性修复
+
+第 26 轮只在第 25 轮 PR #2752 合并（`cdc56d33f322e01477c4b29adba0f1dae4524e41` 进入 `origin/main@cdc56d33f322e01477c4b29adba0f1dae4524e41`）且 438 个开放 PR 文件级扫描无竞争后开始。审计方法：对包内全部结构化契约的顶层 `as_of` 与 `git log -1 --format=%ad` 的真实最后编辑日期逐一比对；发现 8 个契约 `as_of` 早于真实编辑日期（civic-operations、g1-preregistration、implementation-handoff-matrix、pilot-readiness、readiness-closure、rights-clearance-ledger、site-grounding-register、submission-use-rights-matrix），全部按 git 历史修复并新增 `as_of_semantics` 字段（“最后真实内容编辑日期，不是有效性或新鲜度保证”）。另复核四份 PDF 文本层：44 页角色标题全部命中、替换字形 0、页脚披露全部在位（仅全出血封面页无页脚，属设计）。本轮无主张或数据变化，冻结字节不变。
+
+Round 26 began only after Round 25 PR #2752 merged (`cdc56d33f322e01477c4b29adba0f1dae4524e41` entered `origin/main@cdc56d33f322e01477c4b29adba0f1dae4524e41`) and a file-level scan of 438 open PRs found no competing PR. Audit method: each structured contract's top-level `as_of` was compared against its real last-edit date from `git log -1 --format=%ad`; eight contracts had stale values (civic-operations, g1-preregistration, implementation-handoff-matrix, pilot-readiness, readiness-closure, rights-clearance-ledger, site-grounding-register, submission-use-rights-matrix), all repaired from git history with a new `as_of_semantics` field ("date of last real content edit; not validity or freshness"). A PDF text-layer review also confirmed all 44 page-role titles, 0 replacement glyphs and complete footer disclosures (only the full-bleed cover has no footer, by design). No claim or data change; frozen bytes unchanged.
+
 ## Round 25 heading-hierarchy repair after HTML semantics audit / 第 25 轮 HTML 语义审计与标题层级修复
 
 第 25 轮只在第 24 轮 PR #2734 合并（`78b5e4d00dfd330593b510192d519e7fb333367b` 进入 `origin/main@a2a1ae3e62b1dd23acc4b2e5a7a9c8e9eed15bf1`）且 437 个开放 PR 文件级扫描无竞争后开始。审计方法：对双语 visual 与报告的重复 ID、标题层级顺序、页内锚点、表格表头与 `lang` 逐项解析；结果——visual 页面 0 缺陷（dup id 0、跳级 0、缺失锚点 0、16 表 96 表头）；两份提案同有一处 h1→h3 跳级（`# 双轨京张` 后直接 `### 阅读入口`）。修复为 `##`，重渲染报告后跳级为 0，并按第 23 轮记录重新应用渲染器媒体链接修复。结构化证据写入 `site-grounding-register.json#package_validation_contract.html_semantics_r25`。仅标题层级变化；四份 PDF 与全部冻结字节未变。
