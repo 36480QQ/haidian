@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M33",
+      "gate": "matrix_refs_qa.py",
+      "target": "visual/assets/verify.js",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "从独立复算器里删掉一个第一类指标的复算，其余一律不动。",
+      "what_en": "Delete one class-1 metric's recomputation from the independent verifier and change nothing else.",
+      "why_zh": "**删掉之后 `verify.js` 依然退出 0**——它不会为自己没测的东西报警，而正文说它复算「全部第一类指标」。本包已经交付过一次同样的缺陷：那时它复算的是有人列出来的九个，而另外八个同样可复算的指标不在名单上，没有任何东西看得出来。算出 `metric_class` 修好了那九个，**却没有加任何东西让它保持修好**。",
+      "why_en": "With the line gone `verify.js` still exits 0 — it does not warn about what it does not test — while the proposal says it recomputes every class-1 metric. This package has shipped that defect once already: the verifier recomputed the nine someone had listed and nothing could tell that eight equally recomputable metrics were outside the list. Computing metric_class fixed the nine and nothing was added to keep it fixed."
+    },
+    {
       "id": "M32",
       "gate": "peer_claim_qa.py",
       "target": "proposal.md",
@@ -391,7 +403,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 32,
+  "caught": 33,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
