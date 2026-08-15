@@ -260,6 +260,40 @@
       "assumptions": [
         "基于 provisional 边界；概念公共空间"
       ]
+    },
+    "GOV-OBS-04": {
+      "status": "known",
+      "value": 7,
+      "formula": "len(protocol_steps)（visual/assets/data/meet-protocol.schema.json）",
+      "assumptions": [
+        "七步主序列：预约—披露—互证—人审—试行—回退—归档（proposal §06.1.2）"
+      ],
+      "source_files": [
+        "visual/assets/data/meet-protocol.schema.json"
+      ]
+    },
+    "GOV-OBS-05": {
+      "status": "known",
+      "value": 8,
+      "formula": "len(status_codes)（visual/assets/data/meet-protocol.schema.json）",
+      "assumptions": [
+        "8 值 status_code：申请中/已披露/待互证/已人审/限域试行/已暂停/已回退/已归档"
+      ],
+      "source_files": [
+        "visual/assets/data/meet-protocol.schema.json"
+      ]
+    },
+    "GOV-OBS-06": {
+      "status": "known",
+      "value": 14,
+      "formula": "drill_pass（visual/assets/check_meet_protocol.js 确定性演练输出）",
+      "assumptions": [
+        "drill_total=14, drill_pass=14（2026-08-15 生成，脚本逐字节可复跑）；证据见 visual/assets/data/meet-protocol-drill.json"
+      ],
+      "source_files": [
+        "visual/assets/check_meet_protocol.js",
+        "visual/assets/data/meet-protocol-drill.json"
+      ]
     }
   },
   "schema_version": "0.1.0",

@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b77e0563a24b59b1874c812ddb1598cb3fbe285a122be6024cf0353a69b6e9be"
+      "sha256": "9c335b619c203b3da9813bc23bcdfd9489f8d3a8a31f9dd5379098a1057523c8"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f38b62d82cd49844a30218e7e2d781588cdbb7f0e669e5a500f001ab53c016b7"
+      "sha256": "265c37b55a607cb636ee921c1bbdb84744e9a9dd570bc46807f98dd84687367b"
     },
     {
       "path": "assumptions.json",
@@ -48,13 +48,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "277f52ce872fad29938dfe266f8049d8250961b041a4bdd12169cf35e75f1079"
+      "sha256": "8c37b704478bb297b957e14ef82ec07baaa324906fb6a1abb03f1591b5d8cfb7"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "665b478e32be0f370c839f399d2fbeff90160a5aafe06d56de9a6e5dd29c8cc6"
+      "sha256": "c34c64a32581d6ea28326360af8487dc832fc35eb1fc08d6217438c53cf899a7"
     },
     {
       "path": "compliance_matrix.json",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3caf0ef6b4b08db4a050d41c0e161f57e667cbe98ddb71ce2d637540e4d3c3f6"
+      "sha256": "2fc480d587fcead22db85efa54a5f4b95226a2399a8d6e445307ae28f159e0c5"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -225,7 +225,25 @@
       "path": "visual/assets/data/case-source-ledger.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "63e1b849b2f363dcf053878796cc4e7c50c8c5bed1045ffd8b2fd210cda2ccbc"
+      "sha256": "3459e3209b953684d9428418de294bb56b3cac428ff9c0c9e6f50d0e1da2f746"
+    },
+    {
+      "path": "visual/assets/data/meet-protocol.schema.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "b7e9d69660171fc0397f83d12c564c355f52431b2657702b704c632d464588f3"
+    },
+    {
+      "path": "visual/assets/check_meet_protocol.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "aab0a6c72c82fa7577f77d40eeed28a5f592f4eb995dddd7b321ca4ab356c0f3"
+    },
+    {
+      "path": "visual/assets/data/meet-protocol-drill.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "04eebe8e5b2dbf81032db0e784fcb2d1150619d0235a576982e33c9b5a97d823"
     }
   ],
   "validation_claim": {

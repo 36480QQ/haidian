@@ -42,6 +42,78 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "CS01",
+      "title": "Punggol Digital District（新加坡 JTC）",
+      "url": "https://www.jtc.gov.sg/punggoldigitaldistrict",
+      "source_type": "official_public",
+      "retrieved_at": "2026-08-15",
+      "usage": "机制借鉴：园区级数字孪生与共享运营系统；量化效果与运营状态待专业复核",
+      "limitation": "园区权属与运营主体结构与海淀多主体街区不同，只迁移机制不复制形态"
+    },
+    {
+      "id": "CS02",
+      "title": "Smart Kalasatama（赫尔辛基）",
+      "url": "https://fiksukalasatama.fi/en/smart-city/",
+      "source_type": "official_public",
+      "retrieved_at": "2026-08-15",
+      "usage": "机制借鉴：小规模生活实验持续迭代；量化效果与运营状态待专业复核",
+      "limitation": "居民时间价值目标函数与本地试点机制相关，不复制其财政安排"
+    },
+    {
+      "id": "CS03",
+      "title": "Barcelona 22@ 与 Decidim",
+      "url": "https://ajuntament.barcelona.cat/innovaciodemocratica/en/decidimbarcelona",
+      "source_type": "official_public",
+      "retrieved_at": "2026-08-15",
+      "usage": "机制借鉴：数字参与流程与决策留痕（公开运行板参考方向）；量化效果与运营状态待专业复核",
+      "limitation": "线上参与不能替代线下无障碍入口"
+    },
+    {
+      "id": "CS04",
+      "title": "Marineterrein Amsterdam",
+      "url": "https://marineterrein.nl/en/living-lab/",
+      "source_type": "official_public",
+      "retrieved_at": "2026-08-15",
+      "usage": "机制借鉴：可逆、阶段化场地开放（临时会车台 C02 参考方向）；量化效果与运营状态待专业复核",
+      "limitation": "场地权属与运营结构不可迁移，只借鉴先轻量开放、按阶段升级、可随时收回的策略"
+    },
+    {
+      "id": "CS05",
+      "title": "Seoul AI Hub / Sangam",
+      "url": "https://www.seoulaihub.kr/eng1/company1/company03.asp",
+      "source_type": "official_public",
+      "retrieved_at": "2026-08-15",
+      "usage": "机制借鉴：共享设施、创业支持与人才训练组合；量化效果与运营状态待专业复核",
+      "limitation": "不复制其机构与预算安排"
+    },
+    {
+      "id": "CS06",
+      "title": "Mila（蒙特利尔）",
+      "url": "https://mila.quebec/en",
+      "source_type": "official_public",
+      "retrieved_at": "2026-08-15",
+      "usage": "机制借鉴：研究机构为核心的公共接口与负责任 AI 议题公共化；量化效果与运营状态待专业复核",
+      "limitation": "机构形态不可迁移，只借鉴研究—社区公共接口机制"
+    },
+    {
+      "id": "CS07",
+      "title": "The Alan Turing Institute",
+      "url": "https://www.turing.ac.uk/about-us",
+      "source_type": "official_public",
+      "retrieved_at": "2026-08-15",
+      "usage": "机制借鉴：研究机构、公共部门与责任审查三方协同；量化效果与运营状态待专业复核",
+      "limitation": "只借鉴三方协同与责任审查机制，不迁移组织与资助结构"
+    },
+    {
+      "id": "CS08",
+      "title": "Station F（巴黎）",
+      "url": "https://stationf.co/about",
+      "source_type": "official_public",
+      "retrieved_at": "2026-08-15",
+      "usage": "机制借鉴：创业空间、公共服务与网络一体化运营；量化效果与运营状态待专业复核",
+      "limitation": "单一运营主体模式不能直接套用于公共空间多元共治"
     }
   ]
 }

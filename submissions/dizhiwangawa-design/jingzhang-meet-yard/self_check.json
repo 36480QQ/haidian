@@ -60,15 +60,18 @@
         "submissions/dizhiwangawa-design/jingzhang-meet-yard/self_check.json",
         "submissions/dizhiwangawa-design/jingzhang-meet-yard/sources.json",
         "submissions/dizhiwangawa-design/jingzhang-meet-yard/standard_matrix.json",
+        "submissions/dizhiwangawa-design/jingzhang-meet-yard/visual/assets/check_meet_protocol.js",
         "submissions/dizhiwangawa-design/jingzhang-meet-yard/visual/assets/data/case-source-ledger.json",
         "submissions/dizhiwangawa-design/jingzhang-meet-yard/visual/assets/data/claim_register.json",
+        "submissions/dizhiwangawa-design/jingzhang-meet-yard/visual/assets/data/meet-protocol-drill.json",
+        "submissions/dizhiwangawa-design/jingzhang-meet-yard/visual/assets/data/meet-protocol.schema.json",
         "submissions/dizhiwangawa-design/jingzhang-meet-yard/visual/assets/data/recompute-log.json",
         "submissions/dizhiwangawa-design/jingzhang-meet-yard/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/dizhiwangawa-design/jingzhang-meet-yard": "formal"
       },
-      "total_bytes": 3733278,
+      "total_bytes": 3757683,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -142,15 +145,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 15,
+        "known_metric_refs_required": 18,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 7,
+          "source": 15,
           "standard": 5,
           "depth": 15,
           "data": 54,
-          "metric": 21
+          "metric": 24
         }
       }
     },
