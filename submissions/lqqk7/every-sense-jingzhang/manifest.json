@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.4 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.5 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c5834ab53d2ad6a4043c7bbf38d8b6a06f50274f935814d57fa2bc24a456d575"
+      "sha256": "361521f1bb59842d89bb424054111c4fc393d1fe1abd33ffae3123ce71be513a"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "10251289c29346d8ee552f68fbac40211bc68a7ca07ec5c75abcef42d47b572f"
+      "sha256": "bd74e3225374d91ca06f78f4f87be1211aa16cce5967c2468a11e7bc011688dc"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "bb36709fb97f000354d9ad91bfd48514bb88d43a291adf6c10ce4f6654535094"
+      "sha256": "c12b3ccd4f8998d292e2267b317be9fca80cc9b56561578a2f6317f40914d749"
     },
     {
       "path": "compliance_matrix.json",
@@ -107,21 +107,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "7abc90a326a9af3bee89553890dc6fc77dd53c6fcfb0c2dc170925232f3703e3"
+      "sha256": "e27b23cf86dbd6376c9c7c419c5ea31ec2ae38cfb460919b5d90729bb9aa8781"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "dd5772d98fd813671217587adcb510aec69130ee7c3e9dc9634a8ff479cf9d99"
+      "sha256": "21c09d4baf49c2ae76ea4d84dc82bee65e500c9c0942ee46590fe6f0c14522e3"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "e28562ebde3e6575cc161136077c041a61290048f48f1179ce10e4d5eb71752e"
+      "sha256": "dc8d8f52a1aa863f3ff90223908554e13891ab23cdb3c9942f5a41cbbd79fc10"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -156,7 +156,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "4431fecd290902726fe2318c7130a3db9019bf68c196ccc4b156cdc3b38d239b"
+      "sha256": "2537ea0c69a34e247bcfb3fc52ca067b90888e06ef4d28da8cb31772ad9d0b70"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "fd0b809ea49dc619a1de9a2f76084e3615e829b9bf4fbdf5b42fc561e86e8207"
+      "sha256": "a45a97600be8be5a50d0299a6edd1c9f6520224fe0e33832567b57de4a7b45ac"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "fdefe91933b91dbe6fce95f3dd4b22cd904a1fdaa3d136162ef12e6147ce7e2f"
+      "sha256": "0405d97e61f0df4ccbddb145b8930681a41fa960c66770445b4ddab5569ff6e4"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "2288cb9734329c7195913843ad770e999d386eeb0c892199d0494849f512c016"
+      "sha256": "b29534475c54156b457feed75d5ebab56b0187d435b34e882dc26796810ce5e2"
     },
     {
       "path": "visual/index.en.html",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0ce66b593d62f5228a18ddcc5050e1ac18fd26211184116779ac06a3f9580c0e"
+      "sha256": "ac7536b8c4b79c2ecad5006c05c3c784cc0335ab3e1f7b9f4a1ee3e7a721c3ac"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "c86330d0fa4896cc1e6d72bedf451d26ddfb05d4382ae6c3aa4e6c2b663993e3"
+      "sha256": "549d7d069e66c42b616dfa72c00ad8dce05a353170bc4e8d4c771eba70a3dc63"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -457,7 +457,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "c01a70a0025653efe60f000c9c932f64d9bfc0bccf01d6061ff448152c3e49c6"
+      "sha256": "1e2ac01b1dd06a868e25b5c39da0aeb4a6768d1785279dec322698b503de3d02"
     },
     {
       "path": "visual/assets/osm-context/provenance.json",
@@ -492,7 +492,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "d200312875dff77c39b9256a475c4d2c4d4d7aa5ce77bbd069b103a0190acb1c"
+      "sha256": "18030cb56050a87b275ef459a278f696e4e74c883064f3f25346317a664ed8cb"
     },
     {
       "path": "assets/media/cover.webp",
@@ -633,7 +633,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "1e26dac1b138cf8050fc94112af0ca242657001d4a3454e23c469214b7e4a6c5"
+      "sha256": "d1efeade9aba46188d328bbe9b1c52a578103dfc42bb077dc0ad9cd5b60417ed"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -651,7 +651,7 @@
       "language": "neutral",
       "title_zh": "场景概念图生成档案（提示词全文、工具链、输出哈希）",
       "title_en": "Concept Scene Image Provenance (full prompts, tool chain, output hashes)",
-      "sha256": "a902a75fd47a083a3fc7c4f25ac601a74c494bf2e79eabe8f93a5ecc0c542215"
+      "sha256": "acff1fdd062080c1b1f608293c3777186f270cd77286e495e9cc95d8bc23c6d2"
     },
     {
       "path": "visual/assets/seb-spec.json",
@@ -696,7 +696,7 @@
       "language": "neutral",
       "title_zh": "OP-04 配对试点全过程链路数据档案(桌面复演)",
       "title_en": "OP-04 paired-pilot full-process chain archive (tabletop replay)",
-      "sha256": "69117abad39355040b765e1f788db4cdd9fb0419f99e62546814cbb2b8046e21"
+      "sha256": "831ad0808ff07fb6e853e61263b0f50c54c9e695f9bf7bcd0db7cd6f497824f1"
     },
     {
       "path": "visual/assets/seb-op04-90day-pack.json",
@@ -705,7 +705,7 @@
       "language": "neutral",
       "title_zh": "OP-04 节点九十天实施包（概念级：条件序列分期、双分支预算、采购、RACI、班表、投保建议、维护与退出）",
       "title_en": "OP-04 ninety-day implementation pack (concept-level: conditional phasing, two-branch budget, procurement, RACI, rosters, insurance suggestions, maintenance and exit)",
-      "sha256": "f834f67dcf29119d94fb39226419c57305fe29f3ba0e6d71ee0a35dd0576261e"
+      "sha256": "192da55ee0ee7109d1cfc141d130b8f007103857d2e6b323d67fb60872f0fc53"
     },
     {
       "path": "visual/assets/op04-pilot-readiness.json",
