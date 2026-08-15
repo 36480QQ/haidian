@@ -618,7 +618,7 @@ code {
 <p>这四条与本方案的核心规则同源：<strong>超限整段重测，不局部打补丁。</strong> 一份方案若允许自己局部替换而要求城市整体重算，它的机制主张就不成立。</p>
 <h3>合规矩阵</h3>
 <p><code>compliance_matrix.json</code> 逐条映射公告任务与 agent.1–agent.6，确保每项要求都能定位到本文章节、图层、指标与图纸。需要说明的是：<strong>矩阵是索引，不是内容</strong>。本方案不把矩阵内容复述进正文——任务书要求的成果必须以可核验的章节、图层与图纸形式存在，把矩阵抄进正文只会让文档变成一张合规表格。</p>
-<p><strong>三张矩阵的每一条引用都被校验过：526 条声明、526 条解析得到 <span class="evidence evidence-metric">[metric:matrix_reference_count]</span>。</strong> <code>compliance_matrix.json</code>、<code>standard_matrix.json</code> 与 <code>design_depth_matrix.json</code> 合计做出 526 次「这条要求由那个小节回答、由这些图层承载、由这份证据支撑」的声明；此前<strong>没有任何检查确认被点名的小节与文件真的存在</strong>。构建时逐条解析：小节引用对正文标题双向匹配，文件引用精确匹配，任一解析不到即构建失败（已用一条指向不存在小节的条目验证过它会拒绝）。一份矩阵是全包最不容易在改名或加文件之后被重读的东西，而本包已经因为同一原因分别交付过四处失效的机读引用、一张少一类的图例、和一个落后三个文件的权利计数。</p>
+<p><strong>三张矩阵的每一条引用都被校验过：527 条声明、527 条解析得到 <span class="evidence evidence-metric">[metric:matrix_reference_count]</span>。</strong> <code>compliance_matrix.json</code>、<code>standard_matrix.json</code> 与 <code>design_depth_matrix.json</code> 合计做出 527 次「这条要求由那个小节回答、由这些图层承载、由这份证据支撑」的声明；此前<strong>没有任何检查确认被点名的小节与文件真的存在</strong>。构建时逐条解析：小节引用对正文标题双向匹配，文件引用精确匹配，任一解析不到即构建失败（已用一条指向不存在小节的条目验证过它会拒绝）。一份矩阵是全包最不容易在改名或加文件之后被重读的东西，而本包已经因为同一原因分别交付过四处失效的机读引用、一张少一类的图例、和一个落后三个文件的权利计数。</p>
 <h3>任务书逐条覆盖：<code>visual/assets/taskbook_coverage.json</code></h3>
 <p>任务书给出六项 agent 任务，合计 <strong>63 条</strong>要求（32 条 must-address 与 31 项 required output）。合规矩阵此前<strong>声明</strong>本包覆盖它们，但没有任何检查把「一条要求」与「答它的那个地方」联接起来——<strong>声称覆盖不等于覆盖</strong>，这正是本方案在别处反复指出的那件事。</p>
 <p>现在每一条都指向一处证据：<code>proposal.md</code> 中的一个小节、一个随包文件，或一张图纸，构建时逐条校验其存在。任务书给出下限的五项，改为<strong>重算计数</strong>而非声明：</p>

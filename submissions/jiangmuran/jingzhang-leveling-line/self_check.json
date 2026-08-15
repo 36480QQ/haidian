@@ -231,7 +231,7 @@
       "severity": "info",
       "target": "compliance/standard/design_depth matrices",
       "source": "package-provided",
-      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 526 declared across three matrices, 526 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 23 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
+      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 527 declared across three matrices, 527 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 23 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
     },
     {
       "check_id": "PKG_NAMING_QA",
