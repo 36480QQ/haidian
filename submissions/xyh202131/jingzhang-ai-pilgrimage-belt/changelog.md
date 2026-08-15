@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v35.0 - 2026-08-15
+
+**Rights-ledger digest coherence repair & second freshness audit / 权利台账摘要一致性修复与第二次来源新鲜度审计**
+
+- 全量台账-vs-磁盘摘要审计发现 13 条 `rights-clearance-ledger.json` 摘要与磁盘实际字节不一致（ASSET-002/014/016/017/019/025/065/066/067/068/100/117/118）。根因：外部恢复提交 `b6c05fffe`（经 PR #2782 在第 29 轮前合入 main）把台账重写回旧快照，使 13 条摘要相对第 20—28 轮更新过的文件过期；manifest 一直正确（refresh 从磁盘重算），且此前没有任何门核验台账摘要。本轮把 13 条摘要全部重同步到磁盘字节，并把「台账摘要一致性」纳入索引生成器的强制不变量（`ledger_digest_coherence`，再生成时逐条核验、违反即失败）。
+- A full ledger-vs-disk digest audit found 13 `rights-clearance-ledger.json` digests inconsistent with actual disk bytes (ASSET-002/014/016/017/019/025/065/066/067/068/100/117/118). Root cause: a foreign restore commit (`b6c05fffe`, merged via PR #2782 into main before Round 29) rewrote the ledger back to an older snapshot, leaving 13 digests stale relative to files updated in Rounds 20–28; the manifest stayed correct (refresh recomputes from disk) and no gate verified ledger digests until now. This round re-syncs all 13 digests to disk bytes and adds ledger-digest coherence to the index generator's enforced invariants (`ledger_digest_coherence`, checked per record on every regeneration, failing on any mismatch).
+- 第二次来源新鲜度审计（机制第 21 轮首次执行）：50 条来源逐条复核，48 条 verified_current、2 条 review_due（CASE-22AT、CASE-KINGS-CROSS，与第 21 轮相同）；相对第 21 轮有 15 条来源内容摘要变化（仓库内 AGENT-TASKBOOK、PROVISIONAL-BOUNDARY-BASIS、SITE-PACKAGE 目录与 5 条 proposal.md 派生来源，以及 5 条 HTTP 来源）。`evidence-freshness-policy.json` 的 refresh_records（50 条）与 summary（audit_round r35、2026-08-15、48/2/50）已更新。
+- Second source-freshness audit (mechanism first executed in Round 21): all 50 sources re-checked; 48 verified_current, 2 review_due (CASE-22AT, CASE-KINGS-CROSS, identical to Round 21); 15 source content digests changed since Round 21 (repo-internal AGENT-TASKBOOK, PROVISIONAL-BOUNDARY-BASIS, the SITE-PACKAGE directory and five proposal.md-derived sources, plus five HTTP sources). `evidence-freshness-policy.json` refresh_records (50) and summary (audit_round r35, 2026-08-15, 48/2/50) updated.
+- 无主张、数据、机制、图面、PDF 或成熟度变化；geometry 九文件、metrics 值、sources.json 内容字节未变。
+- No claim, datum, mechanism, figure, PDF or maturity change; the nine geometry files, metric values and sources.json content bytes are unchanged.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits and 141 paths.
+
 ## v34.0 - 2026-08-15
 
 **Boundary-uncertainty background disclosure / 边界不确定性背景披露**
