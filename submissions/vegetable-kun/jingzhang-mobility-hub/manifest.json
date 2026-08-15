@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-mobility-hub",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2fa9bcb9d896fe34c89479eb15410670416fb2fee463aaffd049ab84d14ba95e"
+      "sha256": "6751d1aa1e113d3a6edd11acd08e11513db3b95c734201fd47dae58748ea8f58"
     },
     {
       "path": "compliance_matrix.json",
@@ -89,14 +89,14 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "86c82f5ff94fd4263b03aaec9537c27f7d97f44e46f44c91d705e45c177e8ec8"
+      "sha256": "5039ec50fc9ab5ce9def470798e4b70fc091a14831988a86d1bfaf92c39245d4"
     },
     {
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "en",
-      "sha256": "4682a528d264e7739c6c3680ef570c1f67f4f731f8326f1dd0d24feb829c4be0",
+      "sha256": "6dfc52c07e3cee2beab2b27f4c1cee14775f3155b4a3d086bad57a362f1085f7",
       "translation_of": "report/proposal.html"
     },
     {
