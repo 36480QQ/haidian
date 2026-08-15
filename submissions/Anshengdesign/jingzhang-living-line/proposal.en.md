@@ -98,6 +98,10 @@ The first question of a LUTI evaluation is not "how much land was drawn" but **"
 
 **How to read**: left = POI structure (the most balanced of the three); right = Dazhongsi Station at 20.2% — a syntactic periphery, **which must compensate configuration with four-quadrant stitching and functional activation**. Cards: work-life 0.923, medical density 31.92/km².
 
+![Key areas index and design tasks](assets/figures/key-areas.png)
+
+**How to read**: three prescription sheets — positioning on top, strategy in the middle, the POI gap list in red below. **Fill what is missing, not what a design institute assumes should be there.**
+
 **Loop conclusion →** Three-area prescriptions written; entering the spine surgery.
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios

@@ -29,6 +29,8 @@
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c13-fractal.en.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c13-fractal.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c14-governance.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c15-luti.en.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c15-luti.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c2-percolation.en.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c2-percolation.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c3-scaling.en.png",
@@ -43,6 +45,12 @@
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/ecosystem-map.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/key-areas.en.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/key-areas.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/keyarea-beijing_ai_origin_community.en.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/keyarea-beijing_ai_origin_community.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/keyarea-dazhongsi_ai_industry_cluster.en.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/keyarea-dazhongsi_ai_industry_cluster.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/keyarea-zhongzhiyuan_ai_acceleration_area.en.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/keyarea-zhongzhiyuan_ai_acceleration_area.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/land-use-structure.en.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/land-use-structure.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/metrics-evidence.en.png",
@@ -94,7 +102,7 @@
       "ai_package_stages": {
         "submissions/Anshengdesign/jingzhang-living-line": "formal"
       },
-      "total_bytes": 15888354,
+      "total_bytes": 16684169,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -168,15 +176,15 @@
       "summary": {
         "standard_matrix_items": 8,
         "design_depth_items": 15,
-        "known_metric_refs_required": 57,
+        "known_metric_refs_required": 62,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 8,
           "standard": 4,
-          "depth": 17,
-          "data": 7,
-          "metric": 12
+          "depth": 15,
+          "data": 4,
+          "metric": 10
         }
       }
     },
