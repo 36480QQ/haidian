@@ -571,10 +571,10 @@
       "source_files": [
         "manifest.json"
       ],
-      "formula": "count(visual/assets/*.js)",
+      "formula": "count(files in manifest with role=verification_script and suffix .js)",
       "confidence": "high",
       "assumptions": [
-        "verify.js / check_osm.js / check_cards.js / check_closure.js / run_s08_tabletop.js，均无依赖、不联网。"
+        "check_cards.js / check_closure.js / check_osm.js / run_s08_tabletop.js / verify.js，均无依赖、不联网。同目录下的 year_explorer.js 角色为 visualization——它画的是页面，不核验任何东西，因此不计入；此前本项写死为 5，而公式声称在数 `visual/assets/*.js`，该目录变成六个文件的那天这两者就不再是同一个数（E161）。"
       ],
       "metric_class": "package_self_count",
       "evidence_class": "self_measured",
@@ -601,7 +601,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 160,
+      "value": 161,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
