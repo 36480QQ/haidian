@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "submission_dir": "submissions\\workbuddy-agent\\jingzhang-ai-pulse",
-  "pr_author": "workbuddy-agent",
+  "submission_dir": "submissions/24768Yan/jingzhang-ai-pulse",
+  "pr_author": "24768Yan",
   "stage": "formal",
   "deterministic_validation": {
     "returncode": 0,
@@ -10,56 +10,56 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/proposal.md"
+        "submissions/24768Yan/jingzhang-ai-pulse/proposal.md"
       ],
       "changelog_files": [],
       "changed_files": [
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/agent.json",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/key-areas.en.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/key-areas.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/land-use-structure.en.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/land-use-structure.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/metrics-evidence.en.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/metrics-evidence.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/mobility-bluegreen.en.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/mobility-bluegreen.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/site-overview.en.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assets/figures/site-overview.png",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/assumptions.json",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/compliance_matrix.json",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/design_depth_matrix.json",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/drawings/a0-boards.en.pdf",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/drawings/a0-boards.pdf",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/drawings/a3-booklet.en.pdf",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/drawings/a3-booklet.pdf",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/buildings.geojson",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/constraints.geojson",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/green_space.geojson",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/key_areas.geojson",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/land_use.geojson",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/phasing.geojson",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/public_space.geojson",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/roads.geojson",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/geometry/site_boundary.geojson",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/manifest.json",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/metrics.json",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/proposal.en.md",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/proposal.md",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/report/copyright_statement.md",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/report/narrative.md",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/report/proposal.en.html",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/report/proposal.html",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/self_check.json",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/sources.json",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/standard_matrix.json",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/visual/index.en.html",
-        "submissions/workbuddy-agent/jingzhang-ai-pulse/visual/index.html"
+        "submissions/24768Yan/jingzhang-ai-pulse/agent.json",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/key-areas.en.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/key-areas.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/land-use-structure.en.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/land-use-structure.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/metrics-evidence.en.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/metrics-evidence.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/mobility-bluegreen.en.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/mobility-bluegreen.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/site-overview.en.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assets/figures/site-overview.png",
+        "submissions/24768Yan/jingzhang-ai-pulse/assumptions.json",
+        "submissions/24768Yan/jingzhang-ai-pulse/compliance_matrix.json",
+        "submissions/24768Yan/jingzhang-ai-pulse/design_depth_matrix.json",
+        "submissions/24768Yan/jingzhang-ai-pulse/drawings/a0-boards.en.pdf",
+        "submissions/24768Yan/jingzhang-ai-pulse/drawings/a0-boards.pdf",
+        "submissions/24768Yan/jingzhang-ai-pulse/drawings/a3-booklet.en.pdf",
+        "submissions/24768Yan/jingzhang-ai-pulse/drawings/a3-booklet.pdf",
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/buildings.geojson",
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/constraints.geojson",
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/green_space.geojson",
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/key_areas.geojson",
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/land_use.geojson",
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/phasing.geojson",
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/public_space.geojson",
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/roads.geojson",
+        "submissions/24768Yan/jingzhang-ai-pulse/geometry/site_boundary.geojson",
+        "submissions/24768Yan/jingzhang-ai-pulse/manifest.json",
+        "submissions/24768Yan/jingzhang-ai-pulse/metrics.json",
+        "submissions/24768Yan/jingzhang-ai-pulse/proposal.en.md",
+        "submissions/24768Yan/jingzhang-ai-pulse/proposal.md",
+        "submissions/24768Yan/jingzhang-ai-pulse/report/copyright_statement.md",
+        "submissions/24768Yan/jingzhang-ai-pulse/report/narrative.md",
+        "submissions/24768Yan/jingzhang-ai-pulse/report/proposal.en.html",
+        "submissions/24768Yan/jingzhang-ai-pulse/report/proposal.html",
+        "submissions/24768Yan/jingzhang-ai-pulse/self_check.json",
+        "submissions/24768Yan/jingzhang-ai-pulse/sources.json",
+        "submissions/24768Yan/jingzhang-ai-pulse/standard_matrix.json",
+        "submissions/24768Yan/jingzhang-ai-pulse/visual/index.en.html",
+        "submissions/24768Yan/jingzhang-ai-pulse/visual/index.html"
       ],
       "ai_package_stages": {
-        "submissions/workbuddy-agent/jingzhang-ai-pulse": "formal"
+        "submissions/24768Yan/jingzhang-ai-pulse": "formal"
       },
       "total_bytes": 1671983,
       "maintainer_bypass": false
@@ -191,5 +191,7 @@
       "target": "professional_review.py",
       "message": "professional_review: PASS"
     }
-  ]
+  ],
+  "revised_at": "2026-08-15T10:30:00Z",
+  "revision_note": "v2.3: corrected stale submission_dir/pr_author records from pre-rename local run"
 }

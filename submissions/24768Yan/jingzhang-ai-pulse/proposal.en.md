@@ -544,7 +544,7 @@ This proposal designs the following AI scenario cards, each describing a specifi
 This proposal presents the following 3 industry testing and validation scenarios (conceptual recommendations):
 
 **Validation Scenario 1: Autonomous Bus Testing Corridor**
-- Scope: Along the Jingzhang Heritage Park, approximately 42.6 km total length
+- Scope: Along the Jingzhang Heritage Park. Note: 42.605 km is the provisional SUM of all 7 roads in the area, not the length of a single test corridor; corridor alignment and length require a dedicated traffic study
 - Testing content: L4 autonomous bus operation capability in mixed traffic environments
 - Spatial requirements: Dedicated lane or mixed lane + station facilities
 - [data:geometry/roads] Corresponds to Jingzhang Innovation Avenue arterial road
@@ -969,22 +969,22 @@ Design Judgment: AI technology development involves high uncertainty. This propo
 
 | Indicator Name | Value | Data Source | Status |
 |---------------|-------|------------|--------|
-| Coordinated research scope area | 43.6 km² | Competition brief | Confirmed |
-| Overall design scope area | 11,412,825 sqm (11.41 km²) | Spatial data package | Confirmed |
-| Key area total | 3.684 km² (368.4 ha) | Spatial data package | Confirmed |
-| Zhongzhiyuan area | 192.1 ha | Spatial data package | Confirmed |
-| AI Origin Community area | 104.3 ha | Spatial data package | Confirmed |
-| Dazhongsi area | 72.0 ha | Spatial data package | Confirmed |
+| Coordinated research scope area | 43.6 km² | Competition brief | Confirmed (value given in brief) |
+| Overall design scope area | 11,412,825 sqm (11.41 km²) | Spatial data package (provisional intake) | Provisional (pending official geometry) |
+| Key area total | 3.684 km² (368.4 ha) | Spatial data package (provisional intake) | Provisional (pending official geometry) |
+| Zhongzhiyuan area | 192.1 ha | Spatial data package (provisional intake) | Provisional (pending official geometry) |
+| AI Origin Community area | 104.3 ha | Spatial data package (provisional intake) | Provisional (pending official geometry) |
+| Dazhongsi area | 72.0 ha | Spatial data package (provisional intake) | Provisional (pending official geometry) |
 | Green space ratio | 10.48% | metrics.json | Provisional (recompute) |
 | Public space ratio | 5.65% | metrics.json | Provisional (recompute) |
-| Land use zone count | 14 | Spatial data package | Confirmed |
+| Land use zone count | 24 | metrics.json | Provisional (recompute) |
 | Total road length | 42.605 km | metrics.json | Provisional (recompute) |
-| Green space count | 5 | Spatial data package | Confirmed |
-| Public space count | 5 | Spatial data package | Confirmed |
-| Key building count | 6 | Spatial data package | Confirmed |
-| Road count | 7 | Spatial data package | Confirmed |
-| Constraint layer count | 3 | Spatial data package | Confirmed |
-| Phasing zone count | 4 | Spatial data package | Confirmed |
+| Green space count | 5 | Spatial data package (provisional intake) | Provisional (pending official geometry) |
+| Public space count | 5 | Spatial data package (provisional intake) | Provisional (pending official geometry) |
+| Key building count | 6 | Spatial data package (provisional intake) | Provisional (pending official geometry) |
+| Road count | 7 | Spatial data package (provisional intake) | Provisional (pending official geometry) |
+| Constraint layer count | 3 | Spatial data package (provisional intake) | Provisional (pending official geometry) |
+| Phasing zone count | 4 | Spatial data package (provisional intake) | Provisional (pending official geometry) |
 | Floor Area Ratio (FAR) | — | — | **unknown** |
 | Building height | — | — | **unknown** |
 | Building density | — | — | **unknown** |
@@ -1239,7 +1239,9 @@ Third-party data usage boundary: the above data are used only for trend-level ar
 
 **Design Concept**: Using the Jingzhang Railway "Y-shaped" (人字形) track as the graphic skeleton, integrated with AI data pulse waveforms. The "Y" (人) shape is both Zhan Tianyou's engineering wisdom symbol and a representation of the "human-centered" AI development philosophy. The pulse waveform represents data flow and innovation vitality. Colors use a gradient fusion of the Jingzhang Railway signature color (orange) and AI technology color (blue-green), symbolizing the convergence of centennial heritage and future innovation.
 
-**Usage Guidelines**: The logo is applied to regional identification, signage systems, event materials, international communication, and other scenarios. The primary version is the color version; a monochrome version is used for black-and-white printing.
+**Usage Guidelines**: The logo is applied to regional identification, signage systems, event materials, international communication, and other scenarios. The primary version is the full-color version; a monochrome version is used for black-and-white printing. Minimum size: 15 mm in print / 48 px on screen; clear space equals 1/4 of the mark height on all sides; never stretch, add shadows/outlines, or shift hues. Standard colors: Jingzhang Orange #E8622D, Pulse Teal #0D9488, Graphite #334155. Signage and brand applications are detailed in Chapter 16.
+
+![Jingzhang AI Pulse logo design sheet: primary mark, bilingual horizontal lockup, monochrome version, standard colors and usage notes](assets/figures/logo-design.en.png)
 
 ---
 
@@ -1285,9 +1287,9 @@ Third-party data usage boundary: the above data are used only for trend-level ar
 
 ## Chapter 14: Implementation Cards
 
-The following are 15 key project implementation cards. Each includes lead entity, funding mechanism, core KPIs, and exit clause. All are conceptual recommendations subject to confirmation by statutory authorities in subsequent implementation phases.
+The following are 15 key project implementation cards. All entities named below are **suggested roles (to-be-negotiated)** — no coordination with any department has been completed as of this draft; funding mechanisms and KPIs are **candidate mechanisms/indicators** whose baselines and measurement methods await dedicated studies (visitors via gate counts + sampling; enterprise occupancy via business-registration records; computing utilization via scheduler logs). Dependencies: official redlines, regulatory plan and parcel ownership data. Every card's confirmation status is "pending negotiation".
 
-| # | Project Name | Lead Entity | Funding Mechanism | Core KPI | Exit Clause |
+| # | Project Name | Suggested Role (TBC) | Candidate Funding | Candidate KPI (baseline TBC) | Exit Clause (directional) |
 |---|-------------|-------------|-------------------|----------|-------------|
 | 1 | Jingzhang Railway Heritage Park cultural spine activation | Haidian Culture & Tourism Bureau (lead), Jingtou Corp. (support) | Municipal heritage fund + district matching | Annual visitors >=500K; cultural events >=20/yr | If visitors <30% of target within 3 yrs, convert to routine park maintenance |
 | 2 | Zhongzhiyuan full-stack AI innovation space | Haidian S&T Commission (lead), Zhongguancun Admin (support) | Municipal innovation fund + industry guidance fund + social capital | AI enterprises >=50; national labs >=3 | If occupancy <60% within 5 yrs, reposition and re-tender |
@@ -1339,7 +1341,11 @@ From a macro perspective, the Jingzhang AI Innovation Belt is a key node in the 
 
 [standard:advisory nature] The above regional coordination recommendations are conceptual-level directions. Specific coordination mechanisms must be confirmed by the Beijing-Tianjin-Hebei Coordination Office and municipal/district planning authorities.
 
-### 15.5 Regional Coordination Spatial Relationship
+### 15.5 Relationship with Beiwei Community (pending data)
+
+The taskbook review dimensions mention the "Beiwei Community" as a coordination target, but no authoritative information on its boundary, mandate or operator was available during drafting. It is therefore treated as a **potential coordination counterpart pending engagement**, with three interface suggestions: (1) talent services shared with the AI Origin Community network (job-stay housing, visitor apartments, open-source community events) to avoid duplication; (2) a collaboration seat for Beiwei Community in the Four-Seasons Festival open-scenario list; (3) direct passenger-flow organization via Line 13/13A and the Qinghe Station dual-gateway. This section must be re-verified once official data on Beiwei Community is provided.
+
+### 15.6 Regional Coordination Spatial Relationship
 
 ```
         Huairou Science City (Major Science Facilities)

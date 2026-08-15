@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "Claude Sonnet 4 (claude-sonnet-4-20250514), via WorkBuddy orchestration"
   },
-  "generated_at": "2026-08-15T01:43:12Z",
+  "generated_at": "2026-08-15T02:25:15Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "61ca92e8d18a148e81b31c201d8355d0e61a8adf3adad94cd91e5e64d0f3ce60"
+      "sha256": "3b945d50883c297bafcc9de02d872e47332baa31f8d80df42b26957d63a2f1ab"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f9e2d95b3b1f9f4fba12470d639a87d0d1066cb05a99b945d70e94e1150cc26c"
+      "sha256": "0f591435b411d07f7817aafe24f424950842a5ef1760b92e8da848b12c7b6e49"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "fa74f6a57680c97a44b4c09d07d3bc00789685330d6c99e6b4d808da15c7e4b5"
+      "sha256": "1b4cdcebf594cc3bd222b092cc97b78f4d24709fe48623bd2335f514c8ac9e86"
     },
     {
       "path": "report/narrative.md",
@@ -93,63 +93,63 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "bcd09797eca2555158520ca7e4526e4bf55f0d952e7a8ec2f6e0510f293c433c"
+      "sha256": "01efb6ce61b740d43132aa2844d98fa618fc0802972ffcec7b4f793c8fa54f97"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "7200cddd174fb5e64d2ae81d8c2913d0a437bfe15b53995444f40891636dcfb8"
+      "sha256": "832a5970f300e1e82e164ab4c0610c91f31cd92006d309d6ac73e15d461ac325"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4cfeca5bc05ea8298e045dfcfb679815baa1afa11bddf56a585e0e0682e9bad5"
+      "sha256": "5df205854095a330a628523d48cf9ff4d8d07bf3990b9eff51d0a760179bd728"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b0b6ddebe02b14753c0de65a0532cc54a4ecff9e3c4af20092cab9b077180596"
+      "sha256": "5ac07154b61d2e7c09292038093b47b7cbbddd09566b0589ab39c281962a5776"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "3a6119571d50fe6a892e54e251650f280711c756bb3432b24a991ad6e0bcb3a4"
+      "sha256": "954a5c2cdc9def032353d4f4b593b165ca86c567005a78c6e6c5a595ca4c3c5e"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "9f6544334f7e2d590531e1ee09ad38eb041a6ff582e162ebf155d28d65817cf1"
+      "sha256": "622037d3983420878aa3af2da69aded482d66696b567ff5bfe40ffeb92420c3e"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "e25d237067bf5a1665fcc2ebad997e8150063fe73077ce7cfeb1eed091dd7127"
+      "sha256": "cea40630fec51f5d63b5bd5ae72d28e6b94020f35cd9736f948935dccaa8c837"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "a35660b148c53f9ebb6843a1ec6dd60c85002881a8dd253599101785fe4c06ff"
+      "sha256": "05125a2bfacc4f55d3aa83772de1956fc1621803e1428741e98a217b54cb99ad"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "6d074f9b9169a6e02b7c3c86f3f8837533dcc236c66b3ed90b48373e512843b9"
+      "sha256": "6f3b261ebf285792c326e9882642eeaae2a0be6636a3b6f450037179cc5f0939"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d637076fb16e60d5fff8871ad9b9e3e482522dfa58bbfddad6b445c36ec28de7"
+      "sha256": "434c985079d9fdd96cd00a140a23e556bde9f735566c2a0a0ffb70d8c1e18c68"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e7f04855fe098efa65b7c3ff8a79f6a84f7e3fc1cbae885c2b58d96854dd819f"
+      "sha256": "69d2b3cb384a122f0b55bcaf758aa564e7f5787e06d4189ed3c6df83a3d5b4b1"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "d99c4fa4394e6f68888dc515a70a7039b88fdb015a8bfa0f21d85014ffd99b40"
+      "sha256": "9bcded9c2880f12a79a4c68189a4828a915def7d97166cd9221baea5d335465e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "f11394535393eab01e10d26c35226c4e7b37a25c38b14b20c65638cd5a926617"
+      "sha256": "b70b3736c42e5e1c3542fd33af44a5b5cc30e5b08ef5dd0d0fdd69cdc828f086"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f739facfea6e059111652abdfc5f8f9e34b9d1031a4113388a1b736f843da101"
+      "sha256": "829636bc1fc93f6c93e93436ea68a6f5ad2a4e517dd61a830e3720697dde8698"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,21 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "7efdb71a9cf5974ea97d50ae017af5ac46cfbd7116e413eb7b0a83a660ceeaea"
+    },
+    {
+      "path": "assets/figures/logo-design.png",
+      "role": "brand_logo_sheet",
+      "required": true,
+      "language": "zh",
+      "sha256": "fba0310722b9ec5c53704d60b8a00c31462e6c0345ba8b79b53cf8513cda1912"
+    },
+    {
+      "path": "assets/figures/logo-design.en.png",
+      "role": "brand_logo_sheet",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/logo-design.png",
+      "sha256": "6f71deb7f6732a392e562c77f37c79b5e2dd45c55c7587dcd5ff4ddc17ce648d"
     }
   ],
   "validation_claim": {
