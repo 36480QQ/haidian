@@ -4,6 +4,12 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 25 heading-hierarchy repair after HTML semantics audit / 第 25 轮 HTML 语义审计与标题层级修复
+
+第 25 轮只在第 24 轮 PR #2734 合并（`78b5e4d00dfd330593b510192d519e7fb333367b` 进入 `origin/main@a2a1ae3e62b1dd23acc4b2e5a7a9c8e9eed15bf1`）且 437 个开放 PR 文件级扫描无竞争后开始。审计方法：对双语 visual 与报告的重复 ID、标题层级顺序、页内锚点、表格表头与 `lang` 逐项解析；结果——visual 页面 0 缺陷（dup id 0、跳级 0、缺失锚点 0、16 表 96 表头）；两份提案同有一处 h1→h3 跳级（`# 双轨京张` 后直接 `### 阅读入口`）。修复为 `##`，重渲染报告后跳级为 0，并按第 23 轮记录重新应用渲染器媒体链接修复。结构化证据写入 `site-grounding-register.json#package_validation_contract.html_semantics_r25`。仅标题层级变化；四份 PDF 与全部冻结字节未变。
+
+Round 25 began only after Round 24 PR #2734 merged (`78b5e4d00dfd330593b510192d519e7fb333367b` entered `origin/main@a2a1ae3e62b1dd23acc4b2e5a7a9c8e9eed15bf1`) and a file-level scan of 437 open PRs found no competing PR. Audit method: parse duplicate IDs, heading order, in-page anchors, table headers and `lang` across the bilingual visuals and reports. Result: the visual pages have zero defects (0 duplicate IDs, 0 level skips, 0 missing anchors, 16 tables with 96 headers); both proposals share one h1→h3 skip (`# 双轨京张` followed directly by `### 阅读入口`). The entry is fixed to `##`; re-rendered reports show 0 skips, and the Round 23 renderer media-link fix is re-applied afterwards as recorded. Structured evidence is written into `site-grounding-register.json#package_validation_contract.html_semantics_r25`. Only heading levels changed; the four PDFs and all frozen bytes are untouched.
+
 ## Round 24 WCAG AA contrast repair / 第 24 轮视觉页 WCAG AA 对比度修复
 
 第 24 轮只在第 23 轮 PR #2720 合并（`79493c594c5fd54bfee62e0d313ee56f3e147db2` 进入 `origin/main@0d1b832487ea5cd53b96b3041a52c433645b8081`）且 441 个开放 PR 文件级扫描无竞争后开始。方法：包外 CDP 对比度探针，梯度感知背景解析（祖先 `background-color` 与 `linear-gradient` 色标），WCAG 2.1 AA 阈值（正文 4.5:1、大字 3:1），双语页面在全部 `details` 展开状态覆盖 920/914 个文本元素。发现并修复 4 处：`--red #d96850→#a13d2a`（修复后 6.13）、`--green #36a269→#1c6b45`（6.17）、`.jury-motion .tag #f1c164→#8a5a00`（4.94）、`.review-walk-shell button:disabled #79827f→#5c6663`（5.94）。修复后复测 0 个低于阈值元素；结构化证据写入 `site-grounding-register.json#package_validation_contract.contrast_matrix_r24`。仅颜色值变化，无内容或结构变化，四份 PDF 与全部冻结字节未变；程序化验证不是辅助技术认证、人工目检或法律合规声明。
