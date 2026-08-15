@@ -8,7 +8,7 @@
    "what_zh": "重算 metrics.json 中全部 metric_class 1 的指标",
    "what_en": "Recompute every metric_class 1 figure in metrics.json",
    "exit_code": 0,
-   "seconds": 0.41,
+   "seconds": 0.39,
    "first_line": "Independent recomputation of class-1 metrics"
   },
   {
@@ -65,9 +65,9 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 326637,
+   "bytes": 328228,
    "unit": "entries",
-   "count": 190
+   "count": 191
   },
   {
    "path": "visual/assets/gate_mutation.json",
@@ -120,10 +120,10 @@
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.73,
+  "seconds_to_run_every_verifier": 0.72,
   "files_to_read": 9,
-  "bytes_to_read": 923073,
-  "units_to_read": 1651
+  "bytes_to_read": 924664,
+  "units_to_read": 1652
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",

@@ -1204,6 +1204,8 @@ The repository's `validate_submission.py` carries `validate_simulation_consisten
 
 ### An errata register: `visual/assets/errata.json`
 
+English edition: `visual/assets/errata.en.json` (E191 says why it was split).
+
 <!-- SELFCORRECTION:BEGIN -->
 
 **This paragraph used to read “not one submission in the field ships an erratum.” Re-measured, that is false, so it is corrected here.**
@@ -1220,13 +1222,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-190 entries. By finder:
+191 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
 | The author | 140 | Found while working |
-| This package's own gate | 11 | Caught at build time — which is what a gate is for |
+| This package's own gate | 12 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; [@](https://github.com/) on  |
 
 <!-- ERRATA:COUNT:END -->
@@ -1249,8 +1251,8 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Uncheckable | 12 |
 | Outlived its line | 9 |
 | A reference did not resolve | 8 |
+| Not itself | 7 |
 | No file behind it | 6 |
-| Not itself | 6 |
 | A source unnameable | 5 |
 | Recorded where found | 5 |
 | Geometry not meaning it | 4 |
@@ -1675,13 +1677,13 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 
 | Sheet | Content | What to read on it |
 |---|---|---|
-| FIG.00 | The leveling line: a city that publishes its own error | The proposal in one line: the red height difference is the closure error, and the only thing this proposal asks to be trusted on |
-| FIG.01 | Overall concept and site overview | The three areas and two wings named on the map; five functions as five positions on one loop. The cross-check stays a footnote: 412.5 m from the inferred boundary to the park |
-| FIG.02 | Evidence chain as an unclosed leveling circuit | The red gap left of the circuit is the closure error; three cards below are the measurement of this call itself |
+| FIG.00 | The leveling line: a city that publishes its own error | The proposal in one line: the red height difference is the closure error, the one thing it asks to be trusted on |
+| FIG.01 | Overall concept and site overview | Three areas and two wings named on the map; five functions as five positions on one loop. Cross-check kept as a footnote: 412.5 m to the park |
+| FIG.02 | Evidence chain as an unclosed leveling circuit | The red gap left of the circuit is the closure error; three cards below measure the call |
 | FIG.03 | Three scope levels and network tiers | The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give |
 | FIG.04 | Three areas, two wings and benchmark layout | Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points |
 | FIG.05 | Slow mobility, blue-green and connecting routes | The two connecting routes and their direction; tolerance bands lower right |
-| FIG.06 | Recomputed metrics and closure evidence | The three metric classes at left; at right the run: ten cases, two accepted and eight refused with reasons |
+| FIG.06 | Recomputed metrics and closure evidence | Three metric classes at left; at right the run: ten cases, two passed and eight refused with reasons |
 | FIG.07 | Identity: mark, construction and applications | The mark draws the method: the datum departs, rises, returns, does not land back on the datum |
 | FIG.08 | Innovation ecosystem and element mechanisms | The chain of custody for each element; the red box where the funding row is deliberately left blank; the gap all six cases point at |
 | FIG.09 | Landmarks, kit of parts, signage syntax and operating cycle | The actual form of the five standard components; the numbering grammar; a calendar organised by re-survey cycle rather than by festival |
@@ -1729,13 +1731,13 @@ Every item can be completed independently:
 9. `risk.json` — eight-dimension self-assessment, mitigations and human review
 10. `changelog.md` — **including the errors found in itself**
 11. `agent.json` — full disclosure of the generation method; `model` is not a placeholder
-12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, checked with `pypdf`: `FontFile3` under `DescendantFonts` carries the CJK faces; DejaVuSans-Bold is a `/TrueType` subset under `FontFile2`, so `FontFile3` alone will not see it
+12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, checked with `pypdf`: `FontFile3` under `DescendantFonts` carries the CJK faces; DejaVuSans-Bold is a `/TrueType` subset under `FontFile2`, which `FontFile3` alone will not see
 
 **Who this list is for.** The repository's `scripts/review_submission.py` hands the reviewing model nine files whole — `proposal.md`, `manifest.json`, `metrics.json`, `assumptions.json`, `sources.json`, `self_check.json` and the three matrices — plus eighteen images (see `visual/assets/visual_packet_qa.json`). It does **not** read `geometry/`, `visual/assets/`, `risk.json`, `changelog.md` or `agent.json`.
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would repeat, at the scale of a checklist, this package's erratum about `analysis/`: an invitation to verify addressed to someone who cannot.
 
-**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 901 KB, 1,651 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
+**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 902 KB, 1,652 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
 
 **This disclosure has a shelf life, so it states where the fix stands.** The gap is upstream Issue #2170; the maintainers opened PR #2181, which adds an auditable access boundary to the review input, states that participant verification scripts are never executed, and corrects the review prompt so that a model **may not deduct points or fail a gate merely because it cannot open a registered artifact**. Once it merges the count above is unchanged; its consequence is not, because unreachability stops being read as the participant having withheld something. This package has already taken that recovery route: the key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
