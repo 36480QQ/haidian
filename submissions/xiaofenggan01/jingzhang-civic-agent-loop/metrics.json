@@ -678,7 +678,7 @@
     },
     "metric_dictionary_entry_count": {
       "status": "known",
-      "value": 52,
+      "value": 67,
       "unit": "count",
       "source_files": [
         "report/narrative.md",
@@ -688,6 +688,190 @@
       "confidence": "high",
       "assumptions": [
         "字典由资料环自动生成，与 metrics.json 同步"
+      ]
+    },
+    "changelog_entry_count": {
+      "status": "known",
+      "value": 58,
+      "unit": "count",
+      "source_files": [
+        "changelog.md"
+      ],
+      "formula": "count of changelog version headings",
+      "confidence": "high",
+      "assumptions": [
+        "v2.0-v59.0 全量版本史"
+      ]
+    },
+    "reader_guide_step_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of reader-guide steps (母题/治理/制品/空间/态度)",
+      "confidence": "high",
+      "assumptions": [
+        "面向评审与公众的快速导读"
+      ]
+    },
+    "iteration_count": {
+      "status": "known",
+      "value": 60,
+      "unit": "count",
+      "source_files": [
+        "changelog.md",
+        "proposal.md"
+      ],
+      "formula": "count of version iterations (v1 scaffold + v2-v60 一版一主题)",
+      "confidence": "high",
+      "assumptions": [
+        "60 版全程 changelog 留痕"
+      ]
+    },
+    "gate_deep_dive_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of gate deep-dive cards completed",
+      "confidence": "high",
+      "assumptions": [
+        "G0-G6 逐道深化;当前完成 7/7"
+      ]
+    },
+    "persona_deep_dive_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of persona deep-dive cards",
+      "confidence": "high",
+      "assumptions": [
+        "七类画像逐类深化;当前 7/7"
+      ]
+    },
+    "corridor_deep_dive_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/roads.geojson"
+      ],
+      "formula": "count of corridor deep-dive cards",
+      "confidence": "high",
+      "assumptions": [
+        "五条转辙廊逐条深化;当前 5/5;geojson 同步挂属性"
+      ]
+    },
+    "receipt_optional_field_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of receipt v2 optional fields",
+      "confidence": "high",
+      "assumptions": [
+        "影响相关方/缓解措施/申诉时限"
+      ]
+    },
+    "rollback_path_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of rollback_map entries",
+      "confidence": "high",
+      "assumptions": [
+        "G0-G6 固化回滚去向"
+      ]
+    },
+    "compatibility_category_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of compatibility categories",
+      "confidence": "high",
+      "assumptions": [
+        "兼容/有条件/不兼容三组"
+      ]
+    },
+    "passport_optional_field_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of passport v2 optional fields",
+      "confidence": "high",
+      "assumptions": [
+        "更新频率/吊销条件"
+      ]
+    },
+    "visual_deep_dive_row_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html"
+      ],
+      "formula": "count of deep-dive metric rows added to visual table",
+      "confidence": "high",
+      "assumptions": [
+        "深化指标进可视化"
+      ]
+    },
+    "visual_rollback_row_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html"
+      ],
+      "formula": "count of rollback rows shown in visual gate section",
+      "confidence": "high",
+      "assumptions": [
+        "回滚映射可视化"
+      ]
+    },
+    "visual_scenario_clause_count": {
+      "status": "known",
+      "value": 13,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html"
+      ],
+      "formula": "count of scenario cards with clause hint in visual",
+      "confidence": "high",
+      "assumptions": [
+        "场景卡条款可视化"
+      ]
+    },
+    "visual_source_row_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html"
+      ],
+      "formula": "count of source rows in visual sources table",
+      "confidence": "high",
+      "assumptions": [
+        "含 3 公开数据源"
       ]
     }
   }

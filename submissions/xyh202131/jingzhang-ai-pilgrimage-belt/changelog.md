@@ -1,5 +1,53 @@
 # 方案迭代记录 / Changelog
 
+## v30.0 - 2026-08-15
+
+**PDF metadata & navigation fix / PDF 元数据与导航修复**
+
+- 审计发现四个正式出版 PDF 的元数据缺陷：确定性构建把创建/修改日期写成占位符 `D:20000101000000+00'00'`（事实性错误）；文档 `/Lang` 缺失（辅助读取器无法确定语言）；无目录书签（评审翻页无导航）。本轮把四个 PDF 的创建/修改日期固定为真实出版日 `D:20260815000000+00'00'`，`/Lang` 设为 zh-CN / en-US，并为全部 44 页加逐页书签（A3 14+14、A0 8+8）。
+- An audit found metadata defects on all four formal publications: the deterministic build stamped placeholder creation/modification date `D:20000101000000+00'00'` (factually wrong); document `/Lang` was missing (assistive readers cannot determine language); no outline bookmarks (no jury navigation). This round pins creation/modification to the real publication date `D:20260815000000+00'00'`, sets `/Lang` to zh-CN / en-US and adds per-page bookmarks on all 44 pages (A3 14+14, A0 8+8).
+- 用第 20/29 轮同管线重建全部四份 PDF；两次全新进程字节一致（A3 zh `34d38516…`、A3 en `5c7b88d7…`、A0 zh `ceb69fff…`、A0 en `164c4cc8…`）；60 dpi 灰度逐页像素比对：44 页与上一版本完全一致（仅元数据与书签变化）；QA：页数 14/14/8/8、`/Lang` 正确、书签 14/14/8/8、回链可搜索、空白页 0、替换字形 0。
+- All four PDFs were rebuilt with the same pipeline as Rounds 20/29; two fresh processes produced byte-identical files (A3 zh `34d38516…`, A3 en `5c7b88d7…`, A0 zh `ceb69fff…`, A0 en `164c4cc8…`); 60-dpi grayscale per-page pixel comparison: all 44 pages pixel-identical to the previous version (only metadata and bookmarks changed); QA: pages 14/14/8/8, correct `/Lang`, bookmarks 14/14/8/8, backlinks searchable, 0 blank pages, 0 replacement glyphs.
+- 无主张、数据、机制、图面或成熟度变化；geometry、metrics、sources.json 与全部图件/媒体字节未变。重建、PR 或合并不构成现实、批准、运营或权利升级。
+- No claim, datum, mechanism, figure or maturity change; geometry, metrics, sources.json and all figures/media keep their bytes. A rebuild, PR or merge creates no reality, approval, operation or rights upgrade.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths.
+
+## v29.0 - 2026-08-15
+
+**A0 professional-handoff board index backlink / A0 专业交接板接入评审交接索引回链**
+
+- 第 29 轮只在第 28 轮 PR #2777 合并（merge SHA `60f514dafe3876f0165ef7acf50d3d25b6aef5a5` 进入 canonical `main@b765517f572aec6a3c63a8e8c6c6671be4500629`）且 443 个开放 PR 文件级扫描无竞争后开始。闭合第 20 轮记录的遗留不一致：A3 P14 已含 `review-handoff-index.json` 回链，而 A0 第 8 板（公共信号、专业交接与 NO-GO）没有。本轮在 A0 第 8 板判断框内新增一行回链（中英文），使评审交接索引在全部正式出版载体中可达。
+- Round 29 began only after Round 28 PR #2777 merged (merge SHA `60f514dafe3876f0165ef7acf50d3d25b6aef5a5` entered canonical `main@b765517f572aec6a3c63a8e8c6c6671be4500629`) and a file-level scan of 443 open PRs found no competing PR. This closes the inconsistency recorded in Round 20: A3 page 14 already carries the `review-handoff-index.json` backlink while A0 board 8 (public signals, professional handoff and NO-GO) did not. One backlink line was added to the A0 board-8 judgement box in both languages, making the review handoff index reachable from every formal publication carrier.
+- 用第 20 轮确定性管线（ReportLab invariant、fontTools 静态字重、Chrome 4× JPX 印刷层、PyMuPDF 无损媒体流）重建两份 A0（8/8 页不变）；两次全新进程逐文件字节一致（zh `6e6373e3…`，en `a9af5092…`）。44 页 QA：空白页 0、替换字形 0、越界文本块 0、第 8 板回链可搜索；两份 A3 字节保持第 20 轮固定点不变。
+- Both A0 boards were rebuilt with the Round 20 deterministic pipeline (ReportLab invariant, fontTools static weights, Chrome 4× JPX print layers, PyMuPDF lossless media streams) keeping 8/8 pages; two fresh processes produced byte-identical files (zh `6e6373e3…`, en `a9af5092…`). 44-page QA: 0 blank pages, 0 replacement glyphs, 0 out-of-page blocks, board-8 backlink searchable; both A3 files keep their Round 20 fixed-point bytes.
+- 仅 A0 第 8 板一行回链与出版物元数据变化，无主张、数据、机制或成熟度变化；geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- Only one backlink line on A0 board 8 and publication metadata changed; no claim, data, mechanism or maturity change. Geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。重建、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A rebuild, PR or merge creates no reality, approval, operation or rights upgrade.
+
+## v28.0 - 2026-08-15
+
+**Evidence-citation coverage completion / 证据引用覆盖补全**
+
+- 第 28 轮只在第 27 轮 PR #2772 合并（merge SHA `42e75acdbe3428ff376f551d55def66132f11f7e` 进入 canonical `main@239e5dabdc82d8972403debb3e5adb3527b6cd9b`）且 442 个开放 PR 文件级扫描无竞争后开始。工程扫描发现：50 条来源中 19 条包内概念来源（合同/图件/章节，R8—R15）从未以 `[source:ID]` 在正文引用，23 条假设中 4 条从未以 `[assumption:ID]` 引用——违反 formal 指南“来源应在正文中被引用”的要求。本轮逐项归位补全，双语各 50/23 全量引用，标记密度遵守 ≤3 连续 / ≤8 每段并通过确定性校验。
+- Round 28 began only after Round 27 PR #2772 merged (merge SHA `42e75acdbe3428ff376f551d55def66132f11f7e` entered canonical `main@239e5dabdc82d8972403debb3e5adb3527b6cd9b`) and a file-level scan of 442 open PRs found no competing PR. The engineering scan found that 19 in-package concept sources (contracts/figures/chapters from Rounds 8–15) were never cited as `[source:ID]` in prose and 4 of 23 assumptions were never cited as `[assumption:ID]` — contrary to the formal guide's requirement that sources be cited in prose. All were placed at their home claims this round; both languages now cite 50/50 sources and 23/23 assumptions, with marker density within the ≤3-consecutive / ≤8-per-block limits and passing deterministic validation.
+- 每个标记都加在对应合同/图件/章节的归属主张旁（时间博物馆、公共任务经济、长期运营、评审交接、普通生活、可逆构件、五步漫游、现场采集、G0 企业基线、治理内核），句子在移除标记后保持完整。仅新增引用标记，无主张、数据、机制、页数或成熟度变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- Every marker sits beside the owning claim of its contract/figure/chapter (Time Museum, Public Mission Economy, Civic Operations, Review Handoff, Ordinary Life, Reversible Components, Five-Step Walk, Field Intake, G0 enterprise baseline, governance kernel); sentences remain complete after marker removal. Only citation markers were added — no claim, data, mechanism, page count or maturity change; the four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。补全、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. Completion, a PR or merge creates no reality, approval, operation or rights upgrade.
+
+## v27.0 - 2026-08-15
+
+**Official heading wording alignment / 正式章节标题与官方术语对齐**
+
+- 第 27 轮只在第 26 轮 PR #2757 合并（merge SHA `2adc47505d5234a4b6cafdf017b2f17d3d2a7589` 进入 canonical `main@2d44121b3eb47ff958605b0ea2b026d462644dc5`）且 442 个开放 PR 文件级扫描无竞争后开始。审计：`proposal.en.md` 的全部 `##` 标题与 `docs/formal-submission-guide.md` 官方英文章节表逐条比对——12/13 一致，仅“用地、建筑规模与拆改留”章的英文标题词序与官方表述不同（`Demolish–Renovate–Retain` vs 官方 `Retain-Renovate-Demolish`）。修复为官方表述，重渲染报告后 13/13 一致，并按第 23 轮记录重施渲染器媒体链接修复。
+- Round 27 began only after Round 26 PR #2757 merged (merge SHA `2adc47505d5234a4b6cafdf017b2f17d3d2a7589` entered canonical `main@2d44121b3eb47ff958605b0ea2b026d462644dc5`) and a file-level scan of 442 open PRs found no competing PR. Audit: every `##` heading in `proposal.en.md` was compared against the official English chapter table in `docs/formal-submission-guide.md` — 12/13 matched; only the land-use chapter heading used a different word order (`Demolish–Renovate–Retain` vs the official `Retain-Renovate-Demolish`). Fixed to the official wording, re-rendered the report (13/13 now match) and re-applied the Round 23 renderer media-link fix as recorded.
+- 仅英文标题文本变化，无主张、数据、机制、页数或成熟度变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- Only the English heading text changed; no claim, data, mechanism, page count or maturity change. The four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v26.0 - 2026-08-15
 
 **Contract as_of consistency repair / 契约 as_of 一致性修复**

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1fa07eba99708dd6cd24c5aadd4da6e29fbf03c1c3ba247630f94fc0bd816ff2"
+      "sha256": "f8bd836bd7ae2274c160374b54a89d05146287fb475e458ee250758e7ebae155"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c6988e6e05a7564445f6bf352e3a5fa9848e0f58f4050890a48411189a35cc1b"
+      "sha256": "cc549fbfa0dd483213e335dc32723bc41c1f871c9e82c85eaca9f5f094ae5f38"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "bdf7935a7ef556c410bd18e187c662fdab37793c7acfbe5b8a0b040369ffec86"
+      "sha256": "e73b4275cf02bf6bc714a041c0a47908310b22469bdfefa9188dc4b12ae78bf0"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "4a754ab2710030d5f5c0466b1223dec567e26cf81399660bd37d8ddea639b97a"
+      "sha256": "6ac1976eca51fba4bb3ca5d1366dac6c9c83934a3cb0b1b56b630e7717797610"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -360,7 +360,7 @@
       "role": "proposal_figure",
       "required": false,
       "sha256": "bba0e59016ce0e2a36f5b94a6c3d0ac6eb8d5cea9aca5f3ae566a009e647d96d",
-      "language": "neutral"
+      "language": "zh"
     },
     {
       "path": "assets/figures/logo_v5_zhimai.jpg",

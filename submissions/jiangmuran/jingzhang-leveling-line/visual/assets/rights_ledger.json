@@ -4,7 +4,7 @@
  "note_zh": "逐文件的权利台账。由 analysis/build_rights_ledger.py 从 manifest.json 生成：枚举的是「实际随包的每一个文件」，不是「作者记得的资产组」，任一文件没有权利归类即构建失败。每条另给出**评审如何自行核验**的方式，而不只是一句 author-originated。",
  "note_en": "A rights entry per shipped file, generated from manifest.json rather than hand-kept as asset groups. A file with no rights class fails the build. Each entry states how a reviewer verifies the claim, not merely that the author makes it.",
  "author": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
- "files_declared": 136,
+ "files_declared": 150,
  "embedded_fonts": [
   {
    "family": "Noto Sans CJK SC",
@@ -1406,6 +1406,160 @@
    "attribution": "© OpenStreetMap contributors",
    "clearance": "third-party-open-data-redistributed",
    "verification_zh": "python3 analysis/osm_fabric.py fetch && report —— 重取并重算全部读数；每一项的口径与限度写在该文件的 limits 数组里"
+  },
+  {
+   "path": "assets/media/leveling-line.mp4",
+   "role": "video",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_media.py 生成：逐帧 SVG 经 cairosvg 光栅化后以 ffmpeg (libx264) 编码；站序与路线取自 geometry/roads.geojson 与 geometry/public_space.geojson，长度与架站数由 analysis/fig_closure.py 在 EPSG:4548 下算出",
+   "third_party_content_zh": "无。**本片无声**——没有语音、音乐或音效，因此不存在需授权的声音素材；画面无可识别人物、无商标、无第三方影像",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_media.py —— 重跑重建全部四个文件；文字稿 assets/media/leveling-line.md 载明方法、限度与权利"
+  },
+  {
+   "path": "assets/media/leveling-line.png",
+   "role": "media_poster",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_media.py 生成：逐帧 SVG 经 cairosvg 光栅化后以 ffmpeg (libx264) 编码；站序与路线取自 geometry/roads.geojson 与 geometry/public_space.geojson，长度与架站数由 analysis/fig_closure.py 在 EPSG:4548 下算出",
+   "third_party_content_zh": "无。**本片无声**——没有语音、音乐或音效，因此不存在需授权的声音素材；画面无可识别人物、无商标、无第三方影像",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_media.py —— 重跑重建全部四个文件；文字稿 assets/media/leveling-line.md 载明方法、限度与权利"
+  },
+  {
+   "path": "assets/media/leveling-line.vtt",
+   "role": "caption_track",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_media.py 生成：逐帧 SVG 经 cairosvg 光栅化后以 ffmpeg (libx264) 编码；站序与路线取自 geometry/roads.geojson 与 geometry/public_space.geojson，长度与架站数由 analysis/fig_closure.py 在 EPSG:4548 下算出",
+   "third_party_content_zh": "无。**本片无声**——没有语音、音乐或音效，因此不存在需授权的声音素材；画面无可识别人物、无商标、无第三方影像",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_media.py —— 重跑重建全部四个文件；文字稿 assets/media/leveling-line.md 载明方法、限度与权利"
+  },
+  {
+   "path": "assets/media/leveling-line.md",
+   "role": "transcript",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_media.py 生成：逐帧 SVG 经 cairosvg 光栅化后以 ffmpeg (libx264) 编码；站序与路线取自 geometry/roads.geojson 与 geometry/public_space.geojson，长度与架站数由 analysis/fig_closure.py 在 EPSG:4548 下算出",
+   "third_party_content_zh": "无。**本片无声**——没有语音、音乐或音效，因此不存在需授权的声音素材；画面无可识别人物、无商标、无第三方影像",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_media.py —— 重跑重建全部四个文件；文字稿 assets/media/leveling-line.md 载明方法、限度与权利"
+  },
+  {
+   "path": "assets/media/leveling-year.mp3",
+   "role": "audio",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_sound.py 合成：正弦振荡器写出 PCM，经 ffmpeg (libmp3lame) 编码；每一个脉冲对应 analysis/fig_year.py 算出的 2.5 小时复测工时",
+   "third_party_content_zh": "无。**无语音、无第三方音乐、无采样素材、无可识别人物**；非现场录音，不得作为现状声环境的证据",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_sound.py —— 重跑重建；文字稿 assets/media/leveling-year.md 载明逐月读数、刻度与限度"
+  },
+  {
+   "path": "assets/media/leveling-year.md",
+   "role": "transcript",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_sound.py 合成：正弦振荡器写出 PCM，经 ffmpeg (libmp3lame) 编码；每一个脉冲对应 analysis/fig_year.py 算出的 2.5 小时复测工时",
+   "third_party_content_zh": "无。**无语音、无第三方音乐、无采样素材、无可识别人物**；非现场录音，不得作为现状声环境的证据",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_sound.py —— 重跑重建；文字稿 assets/media/leveling-year.md 载明逐月读数、刻度与限度"
+  },
+  {
+   "path": "visual/assets/year_model.json",
+   "role": "evidence_data",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_calendar.py 生成：模型取自 analysis/fig_year.py，页面脚本是同一模型在 JavaScript 里的第二次实现，二者由 analysis/calendar_parity_qa.py 在 10 个排布、120 个月度读数上逐一比对",
+   "third_party_content_zh": "无。页面不引用任何外部库、字体、瓦片或接口，完全离线",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/calendar_parity_qa.py —— 用 node 跑随包脚本，与 Python 逐月比对；不一致即构建失败"
+  },
+  {
+   "path": "visual/assets/year_explorer.js",
+   "role": "visualization",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_calendar.py 生成：模型取自 analysis/fig_year.py，页面脚本是同一模型在 JavaScript 里的第二次实现，二者由 analysis/calendar_parity_qa.py 在 10 个排布、120 个月度读数上逐一比对",
+   "third_party_content_zh": "无。页面不引用任何外部库、字体、瓦片或接口，完全离线",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/calendar_parity_qa.py —— 用 node 跑随包脚本，与 Python 逐月比对；不一致即构建失败"
+  },
+  {
+   "path": "visual/assets/naming.json",
+   "role": "evidence_data",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_naming.py 生成：命名系统以规则而非句子发布，analysis/naming_qa.py 采集包内实际出现的每一个标识符逐一核对",
+   "third_party_content_zh": "无。合规矩阵的条款编号取自主办方文件，本表原样保留、不改写",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/naming_qa.py —— 每个标识符必须命中且只命中一族，且没有任何一条规则是空转的"
+  },
+  {
+   "path": "visual/assets/review_route.json",
+   "role": "evidence_data",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_review_route.py 生成：实跑随包五个校验器并计时，按各自单位数出要读的条目；计时为单机单次墙钟时间",
+   "third_party_content_zh": "无。全部为本包自身文件的运行与计数",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_review_route.py —— 任一校验器非零退出即构建失败；计时可在任意机器上重跑并复核"
+  },
+  {
+   "path": "assets/media/closure-advance.mp4",
+   "role": "video",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_media_phasing.py 生成：逐帧 SVG 经 cairosvg 光栅化后以 ffmpeg (libx264) 编码；平面取自 geometry/ 下的 phasing、key_areas、public_space 与 roads 图层，EPSG:4548",
+   "third_party_content_zh": "无。**本片无声**，无语音、音乐或音效；画面无可识别人物、无商标、无第三方影像；片中的闭合合格与超限为规则示意，非实测读数",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_media_phasing.py —— 重跑重建全部四个文件；文字稿 assets/media/closure-advance.md 载明方法、限度与权利"
+  },
+  {
+   "path": "assets/media/closure-advance.png",
+   "role": "media_poster",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_media_phasing.py 生成：逐帧 SVG 经 cairosvg 光栅化后以 ffmpeg (libx264) 编码；平面取自 geometry/ 下的 phasing、key_areas、public_space 与 roads 图层，EPSG:4548",
+   "third_party_content_zh": "无。**本片无声**，无语音、音乐或音效；画面无可识别人物、无商标、无第三方影像；片中的闭合合格与超限为规则示意，非实测读数",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_media_phasing.py —— 重跑重建全部四个文件；文字稿 assets/media/closure-advance.md 载明方法、限度与权利"
+  },
+  {
+   "path": "assets/media/closure-advance.vtt",
+   "role": "caption_track",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_media_phasing.py 生成：逐帧 SVG 经 cairosvg 光栅化后以 ffmpeg (libx264) 编码；平面取自 geometry/ 下的 phasing、key_areas、public_space 与 roads 图层，EPSG:4548",
+   "third_party_content_zh": "无。**本片无声**，无语音、音乐或音效；画面无可识别人物、无商标、无第三方影像；片中的闭合合格与超限为规则示意，非实测读数",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_media_phasing.py —— 重跑重建全部四个文件；文字稿 assets/media/closure-advance.md 载明方法、限度与权利"
+  },
+  {
+   "path": "assets/media/closure-advance.md",
+   "role": "transcript",
+   "origin_zh": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "method_zh": "由 analysis/build_media_phasing.py 生成：逐帧 SVG 经 cairosvg 光栅化后以 ffmpeg (libx264) 编码；平面取自 geometry/ 下的 phasing、key_areas、public_space 与 roads 图层，EPSG:4548",
+   "third_party_content_zh": "无。**本片无声**，无语音、音乐或音效；画面无可识别人物、无商标、无第三方影像；片中的闭合合格与超限为规则示意，非实测读数",
+   "license": "与本包其余内容相同",
+   "attribution": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
+   "clearance": "author-originated",
+   "verification_zh": "python3 analysis/build_media_phasing.py —— 重跑重建全部四个文件；文字稿 assets/media/closure-advance.md 载明方法、限度与权利"
   }
  ]
 }

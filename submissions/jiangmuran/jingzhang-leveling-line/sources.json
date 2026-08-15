@@ -23,7 +23,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "题面资料包不是场地实测数据，不含官方边界坐标；其枚举与取值范围是投稿约束，不是规划管控值，不得据此判定任何地块的现状或可建条件。",
+      "does_not_support_en": "The brief pack is not survey data and carries no official boundary coordinates. Its enums and ranges constrain submissions; they are not planning control values and establish nothing about any parcel's existing state or development conditions."
     },
     {
       "id": "SOURCE-REGISTRY",
@@ -47,7 +49,9 @@
       "file_type": "json",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "登记表说明某来源可否使用，不说明本方案对它的解读正确；它不为任何空间结论背书，「已登记」不等于「已核实」。",
+      "does_not_support_en": "The registry says whether a source may be used, not whether this proposal reads it correctly. It endorses no spatial conclusion, and registered is not verified."
     },
     {
       "id": "PROCESSED-FACT-PACK",
@@ -71,7 +75,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "导航层是对题面的整理，不是原始出处；任何数值都须回到它指向的原件核对，不得以本层的转述作为引用终点。",
+      "does_not_support_en": "A navigation layer over the brief, not a primary source. Any figure must be checked against the document it points at; its paraphrase is not a citable endpoint."
     },
     {
       "id": "BOUNDARY-SOURCE",
@@ -98,7 +104,9 @@
       "file_type": "geojson",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "推定边界不是法定红线，不得用于定线、征拆、用地审批或权属判断；由它算出的面积与距离在官方多边形发布后须整体重算，而非局部修正。",
+      "does_not_support_en": "A provisional boundary, not a statutory redline. It may not be used for alignment, acquisition, land approval or tenure. Every area and distance derived from it is recomputed as a whole when the official polygon is published, not patched."
     },
     {
       "id": "KEY-AREA-SOURCE",
@@ -125,7 +133,9 @@
       "file_type": "geojson",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "三个重点区范围为推定，不构成对任何地块权属、开发条件或建设时序的判断；其面积不得作为指标基准。",
+      "does_not_support_en": "The three key-area extents are inferred. They establish nothing about tenure, development conditions or sequencing, and their areas are not a metric baseline."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -149,7 +159,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "公告界定任务与范围，不提供几何、不提供指标基准值，也不构成对本方案任何结论的认可或预审。",
+      "does_not_support_en": "The announcement defines tasks and scope. It supplies no geometry and no metric baseline, and constitutes no endorsement or pre-approval of anything in this proposal."
     },
     {
       "id": "AGENT-TASKBOOK",
@@ -174,7 +186,9 @@
       "file_type": "json",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "任务书规定投稿要求，不是规划依据；不能用来支持任何关于场地现状、人口、产业或权属的陈述。",
+      "does_not_support_en": "The taskbook sets submission requirements and is not a planning basis. It supports no statement about the site's existing conditions, population, industry or tenure."
     },
     {
       "id": "FIELD-CENSUS-2026-08",
@@ -202,7 +216,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "自采语料统计只描述已合入方案的公开字段，**不评价任何方案的质量**，不作为空间结论或法定管控的证据；语料每日变动，任何引用须复算。",
+      "does_not_support_en": "The corpus census describes public fields in merged submissions only. **It judges no submission's quality**, is not evidence for a spatial conclusion or for statutory control, and the corpus changes daily, so any citation must be recomputed."
     },
     {
       "id": "OSM-REFERENCE-2026-08",
@@ -229,7 +245,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "众包测绘不是官方道路中心线、用地边界或权属界线；缺失只说明地图上没有，不等于现场没有。定级 background_only，只用于定位差异，**不判定谁对**。",
+      "does_not_support_en": "Crowd-sourced mapping is not an official centreline, land-use boundary or tenure line, and absence from the map is not absence from the ground. Graded background_only: it locates a discrepancy and **does not decide which side is right**."
     },
     {
       "id": "BARRIER-FREE-ENVIRONMENT-LAW",
@@ -255,7 +273,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "该法确立无障碍与保留传统服务方式的义务，不规定本方案任何限差数值，也不认可任何具体空间做法或构造。",
+      "does_not_support_en": "The law establishes accessibility duties and the duty to keep traditional service channels. It sets none of this proposal's tolerance values and approves no specific spatial or constructional move."
     },
     {
       "id": "GENERATIVE-AI-INTERIM-MEASURES",
@@ -281,7 +301,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "第十四、十五条确立停止生成与投诉入口的义务，不规定处理时限的具体数值，也不构成对本方案 F1/F2/F3 分级或任何限差取值的授权。",
+      "does_not_support_en": "Articles 14 and 15 establish duties to stop generation and to provide a complaint channel. They fix no numeric response deadline and authorise neither this proposal's F1/F2/F3 tiers nor any tolerance value in them."
     },
     {
       "id": "ELDERLY-SMART-TECH-PLAN",
@@ -308,7 +330,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "政策文件不是标准，不给出可校验的门槛值；不支持任何关于老年人实际使用率、满意度或到访频次的陈述。",
+      "does_not_support_en": "A policy document, not a standard: it supplies no testable threshold, and supports no claim about older people's actual usage, satisfaction or visit frequency."
     },
     {
       "id": "CASE-C1-ALGORITHM-REGISTER",
@@ -334,7 +358,9 @@
       "directly_downloadable": true,
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
-      "traceability_note_zh": "本条只为赫尔辛基登记册提供可追溯 URL。阿姆斯特丹 Algoritmeregister 在正文中作为**对照**出现，本包**未取得其公开 URL，因此不为它编造一条**——组织方规则要求申请者可见资料必须能追溯到公开 URL，而给一个没读过的对象配上链接，正是这份登记表存在的理由所要防的事。"
+      "traceability_note_zh": "本条只为赫尔辛基登记册提供可追溯 URL。阿姆斯特丹 Algoritmeregister 在正文中作为**对照**出现，本包**未取得其公开 URL，因此不为它编造一条**——组织方规则要求申请者可见资料必须能追溯到公开 URL，而给一个没读过的对象配上链接，正是这份登记表存在的理由所要防的事。",
+      "does_not_support_zh": "该案例只提供算法登记制度的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
+      "does_not_support_en": "The case supplies a **mechanism reference** from algorithm registers and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
     },
     {
       "id": "CASE-C2-EU-AI-ACT-RISK-TIERS",
@@ -360,7 +386,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "该案例只提供按风险分级的立法的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
+      "does_not_support_en": "The case supplies a **mechanism reference** from risk-tiered legislation and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
     },
     {
       "id": "CASE-C3-AI-VERIFY",
@@ -385,7 +413,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "该案例只提供标准化测试框架的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
+      "does_not_support_en": "The case supplies a **mechanism reference** from a standardised testing framework and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
     },
     {
       "id": "CASE-C4-NHS-ALGORITHMIC-IMPACT",
@@ -410,7 +440,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "该案例只提供算法影响评估实践的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
+      "does_not_support_en": "The case supplies a **mechanism reference** from algorithmic impact assessment and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
     },
     {
       "id": "CASE-C5-CIVIC-DATA-AGENDA",
@@ -436,7 +468,9 @@
       "directly_downloadable": true,
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
-      "traceability_note_zh": "本条只为 Decidim（巴塞罗那）提供可追溯 URL。台北公民参与机制在正文中作为**对照**出现，本包未取得其公开 URL，同样不为它编造一条。"
+      "traceability_note_zh": "本条只为 Decidim（巴塞罗那）提供可追溯 URL。台北公民参与机制在正文中作为**对照**出现，本包未取得其公开 URL，同样不为它编造一条。",
+      "does_not_support_zh": "该案例只提供公民数据受托实践的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
+      "does_not_support_en": "The case supplies a **mechanism reference** from civic data stewardship and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
     },
     {
       "id": "CASE-C6-ARTIFACT-EVALUATION",
@@ -461,7 +495,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "该案例只提供开源可复现规范的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
+      "does_not_support_en": "The case supplies a **mechanism reference** from open-source reproducibility norms and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
     },
     {
       "id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -487,7 +523,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "该办法规定城市设计的职能与程序，不授权本方案给出任何法定管控数值，也不使本方案的形态原则具备管控效力。",
+      "does_not_support_en": "The measures define urban design's function and procedure. They authorise no statutory control value here and give this proposal's form principles no regulatory force."
     },
     {
       "id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -514,7 +552,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "该办法界定容积率、建筑高度、密度、退线与道路红线的审批范畴；**正因如此本包不据它给出上述任何数值**，metrics.json 中保持 unknown 并记录前置条件。",
+      "does_not_support_en": "These measures place plot ratio, height, density, setbacks and road redlines inside an approval process. **That is precisely why this package publishes none of them**: they stay unknown in metrics.json with their preconditions recorded."
     },
     {
       "id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -541,7 +581,9 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "作者已逐条复核"
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "指南提供分类编码，不判定具体地块的用地归属；本包的 land_use_code 是表达口径，不是认定结论，最终归属以官方文件与专业论证为准。",
+      "does_not_support_en": "The guide supplies classification codes; it does not determine any parcel's classification. The land_use_code here is a way of expressing an intent, not a determination, and the final assignment rests with official documents and review."
     },
     {
       "id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
@@ -568,7 +610,9 @@
       "file_type": "未取得",
       "directly_downloadable": false,
       "collection_status": "未取得",
-      "manual_review_status": "未复核——该文件从未打开"
+      "manual_review_status": "未复核——该文件从未打开",
+      "does_not_support_zh": "仅用于列出缺资料与深化提醒；不支持任何建筑专业深度结论——结构、设备、消防、造价与施工可行性均不在本包结论范围内。",
+      "does_not_support_en": "Used only to list missing material and depth reminders. It supports no architectural depth conclusion: structure, services, fire, cost and constructability are all outside what this package concludes."
     }
   ],
   "source_quality_note_zh": "组织方在 `brief/source-quality-rules.md` 里发布了权威等级 A0–A3 与 X（不入库）以及时效等级 T0–T4。本包此前只用自己的证据上限（evidence_class），从未按这份已发布的分级说明自己的来源。此处补上：逐条给出 authority_level 与 timeliness_level，**并逐条核对没有任何一条落在 X（商业地图瓦片、账号内资料、下载密码资料、版权不明图片、非公开图件、个人信息）**。两条不属于该表所描述的类别，写明理由而不是硬套一个档次。",

@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "3fb4ae06a89e961ff3c6eb737e3f276f8c152f589bcbedcb1e524c21c6e47ed1"
+      "sha256": "3adac9969a12a145880c3cf7b0e86ced9caaa57b95fe6a513c48a3bcf433b09f"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "1b21e208b28aa776b6a3f5895664d646ede747e6ede86e64786041571068d7aa"
+      "sha256": "4b98e91fdae664a30e1ed848c875b23012782d3f0b117aea5682fa205b59f657"
     },
     {
       "path": "assumptions.json",
@@ -77,13 +77,13 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "b56845987501cb2b5ca39508ee16a933ffe2ff2f928159d0d4d862477ab95a5b"
+      "sha256": "9894277e475fafda56c8fc3b820f8e8103e372f1072a53679a0b15ae68c50880"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "f0ff66f17a26eecee33345a30017407f7a1e4b074a79021a082512f4448b99df"
+      "sha256": "1649bb8216e0e0b248da91dc9866d2b4fbf3dfbe70396420bf083a036ee62d63"
     },
     {
       "path": "report/copyright_statement.md",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "fcdb4717c28df8a69e402d8a23a19402ff5af201c7b16b1b4c8b448bfa074774"
+      "sha256": "e61abd6a5665bf45e9d965879fd4481ef56b751fad8d39f2f5b9fd22089be4d1"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -185,13 +185,19 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "17094d3cb393665af9c7fc5de1367ee0baede2883daea837620d8efd12fa36fa"
+      "sha256": "926c8d1bb4f08707ceaf53b2e81a79f610188b78cfc34e945fb48a7e624b3595"
     },
     {
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
       "sha256": "f54c91eaaaa1515f7c1a65a1f0bc4e6b055571493e5ff1a8a69fea6f1ce0c60e"
+    },
+    {
+      "path": "changelog.md",
+      "role": "narrative",
+      "required": false,
+      "sha256": "902285b876e30164253badc8b3a9f2118ba813600165fe13a0c663b2c0c771b3"
     }
   ],
   "validation_claim": {

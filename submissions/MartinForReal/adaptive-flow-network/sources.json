@@ -1,0 +1,178 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional)."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional)."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "METHOD-PHYSARUM-TERO-2010",
+      "citation": "Tero A. et al. Rules for Biologically Inspired Adaptive Network Design. Science 327:439-442, 2010.",
+      "source_type": "external_academic_literature",
+      "usable_for": "background_only",
+      "usage": "自适应导管网络方法的原始出处；本方案据此实现流量-导管正反馈，并采用其 cost/efficiency/fault-tolerance 三元指标。",
+      "limitation_zh": "学术文献，仅作方法依据，不作为场地事实或法定依据。"
+    },
+    {
+      "id": "METHOD-PHENOTYPES-RK-2019",
+      "citation": "Ronellenfitsch H., Katifori E. Phenotypes of Vascular Flow Networks. Phys. Rev. Lett. 123:248101, 2019.",
+      "source_type": "external_academic_literature",
+      "usable_for": "background_only",
+      "usage": "同一方程通过反馈指数在层级树相与毛细丛相之间连续变化，是本方案骨架-毛细双相的理论依据。",
+      "limitation_zh": "学术文献，仅作方法依据。"
+    },
+    {
+      "id": "METHOD-LOOPS-KATIFORI-2010",
+      "citation": "Katifori E., Szollosi G.J., Magnasco M.O. Damage and Fluctuations Induce Loops in Optimal Transport Networks. Phys. Rev. Lett. 104:048704, 2010.",
+      "source_type": "external_academic_literature",
+      "usable_for": "background_only",
+      "usage": "环路冗余只有在负荷波动或存在断裂风险时才是最优；本方案据此以多情景波动负荷证成环路，而非以形态类比证成。",
+      "limitation_zh": "学术文献，仅作方法依据。"
+    },
+    {
+      "id": "METHOD-TWO-RESILIENCE-2026",
+      "citation": "Resilience of urban metro rail networks globally guided by mesoscale and connectivity attributes. npj Sustainable Mobility and Transport, 2026.",
+      "source_type": "external_academic_literature",
+      "usable_for": "background_only",
+      "usage": "45 个地铁系统的实证显示失效韧性与恢复韧性结构驱动不同；本方案据此将韧性拆为两项分别计量。",
+      "limitation_zh": "学术文献；其结论来自地铁网络样本，迁移到本场地属方法借用，需专业团队复核。"
+    },
+    {
+      "id": "METHOD-MCR-ECOLOGICAL-SECURITY",
+      "citation": "俞孔坚等，景观生态安全格局与反规划途径（源地—阻力面—廊道范式）。",
+      "source_type": "external_academic_literature",
+      "usable_for": "background_only",
+      "usage": "阻力面构造沿用生态安全格局 MCR 范式，使权重可被审计与重算。",
+      "limitation_zh": "方法范式借用；本方案阻力权重为自设计假设，非官方管控值。"
+    },
+    {
+      "id": "SITE-JZ-PARK-PHASE2",
+      "citation": "北京海淀：京张铁路遗址公园二期建成开放 9公里带状绿廊激活城市空间。科技日报 stdaily.com，2026-08-06。",
+      "url": "https://www.stdaily.com/web/gdxw/2026-08/06/content_560091.html",
+      "source_type": "public_media_report",
+      "usable_for": "background_only",
+      "retrieved": "2026-08-15",
+      "usage": "确认京张铁路遗址公园二期已建成开放、形成约9公里带状绿廊；用于说明本方案骨架相主轴是对既有绿廊的网络延伸，而非凭空提出。",
+      "limitation_zh": "媒体报道，非官方规划文件；长度为报道口径，精确边界与里程须以官方数据为准。"
+    },
+    {
+      "id": "CASE-KENDALL-MIT-2015",
+      "citation": "Kendall Square: A global center for innovation grows alongside MIT. MIT News, 2015-05-07.",
+      "url": "https://news.mit.edu/2015/kendall-square-global-center-innovation-grows-alongside-mit-0507",
+      "source_type": "institutional_publication",
+      "usable_for": "background_only",
+      "retrieved": "2026-08-15",
+      "usage": "NASA 电子研究中心 1964 年开设、约五年后关闭留下空白，MIT 与剑桥市合作重启；现约150家科技企业。",
+      "limitation_zh": "机构自述与报道，企业数量为报道时点口径。"
+    },
+    {
+      "id": "CASE-KINGSCROSS-CFC",
+      "citation": "Learning from King's Cross Regeneration. Centre for Cities.",
+      "url": "https://www.centreforcities.org/reader/making-places/learning-from-kings-cross-regeneration",
+      "source_type": "research_institute_publication",
+      "usable_for": "background_only",
+      "retrieved": "2026-08-15",
+      "usage": "67英亩铁路弃置用地；1980—90年代更新尝试失败，2000年代中期启动；约40%用地为公共空间，新增10处公园广场与20条街道。",
+      "limitation_zh": "智库研究报告；比例与数量为其统计口径。"
+    },
+    {
+      "id": "CASE-STATIONF",
+      "citation": "Station F, Paris - converted Halle Freyssinet rail freight depot (1929), 34,000 m2, opened June 2017.",
+      "url": "https://en.wikipedia.org/wiki/Station_F",
+      "source_type": "encyclopaedic_reference",
+      "usable_for": "background_only",
+      "retrieved": "2026-08-15",
+      "usage": "铁路货运库改造为约34,000平方米创新容器，容纳约1,000家初创企业与3,000个工位。",
+      "limitation_zh": "百科条目，二手来源；关键数字如需正式引用应回到 Station F 官方资料核实。"
+    },
+    {
+      "id": "CASE-KISTA-URBANICT",
+      "citation": "Kista Science City, Stockholm: Engaging with the public to test new ideas. Econsult Solutions case study.",
+      "url": "https://econsultsolutions.com/kista-science-city-stockholm",
+      "source_type": "consultancy_case_study",
+      "usable_for": "background_only",
+      "retrieved": "2026-08-15",
+      "usage": "2016年底设立 Urban ICT Arena，在园区中部铺设约2公里光纤与无线测试走廊作为公开城市测试床；逾1,000家科技企业、约25,000名从业者。",
+      "limitation_zh": "咨询机构案例研究；本方案将其作为“以走廊本身为测试床”的可比先例，不作为绩效承诺。"
+    },
+    {
+      "id": "CASE-SANGAM-DMC",
+      "citation": "Digital Media City (Sangam DMC), Seoul.",
+      "url": "https://en.wikipedia.org/wiki/Digital_Media_City",
+      "source_type": "encyclopaedic_reference",
+      "usable_for": "background_only",
+      "retrieved": "2026-08-15",
+      "usage": "由填埋场地区转型的规划型数字媒体产业新区，作为自上而下路径的对照组。",
+      "limitation_zh": "百科条目，二手来源，仅作定性对照。"
+    },
+    {
+      "id": "CASE-ZGC-HISTORY",
+      "citation": "中关村（电子一条街—国家级科技园区）历史沿革。中关村科技园区管理委员会等公开资料。",
+      "url": "https://kw.beijing.gov.cn/ztzl/rdzt/zgcsfq/index.html",
+      "source_type": "official_public",
+      "usable_for": "background_only",
+      "retrieved": "2026-08-15",
+      "usage": "中关村自1980年代电子一条街自下而上生长为国家级科技园区，作为本带文化前史。",
+      "limitation_zh": "用于定性叙述，不用于任何量化结论。"
+    },
+    {
+      "id": "SITE-HD-PLAN-2025EXEC",
+      "citation": "北京市海淀区人民政府办公室《关于海淀区2025年国民经济和社会发展计划执行情况与2026年计划草案的报告》。",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/zcwj/202602/t20260206_4805099.shtml",
+      "source_type": "official_public",
+      "usable_for": "yes",
+      "retrieved": "2026-08-15",
+      "usage": "官方表述为“京张铁路遗址公园二期可实施区域主体已建设完成”；据此校正媒体“二期建成开放”的口径。",
+      "limitation_zh": "官方计划执行报告；“可实施区域主体建成”与“全线建成开放”不等同，引用时须保留该限定。"
+    },
+    {
+      "id": "SITE-HD-GOV-WORKREPORT",
+      "citation": "北京市海淀区人民政府工作报告（2026年）。",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/xxgk/zfgzbg/202602/t20260209_4805226.shtml",
+      "source_type": "official_public",
+      "usable_for": "yes",
+      "retrieved": "2026-08-15",
+      "usage": "两项关键事实：(1)“京张铁路遗址公园沿线街区控规通过技术审查”——法定控规尚处技术审查阶段，未获批复；(2)“依托AI原点社区、AI北纬社区和京张铁路遗址公园创新带，打造人工智能创新街区”——官方已确立该创新带框架。",
+      "limitation_zh": "政府工作报告；控规为“通过技术审查”而非“获批”，不得据此推定任何法定控制指标。"
+    }
+  ],
+  "source_use_note_zh": "外部学术文献仅用于方法依据（background_only），不得升级为官方边界、法定管控或实施结论；场地事实以公告与站点资料包为准。"
+}

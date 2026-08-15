@@ -58,7 +58,7 @@
         "visual/index.html"
       ],
       "kind": "narrative",
-      "latest_rebuild_round": 25,
+      "latest_rebuild_round": 28,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -76,7 +76,7 @@
       "group_id": "root-changelog",
       "human_surface_refs": [],
       "kind": "changelog",
-      "latest_rebuild_round": 26,
+      "latest_rebuild_round": 30,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -97,7 +97,7 @@
         "visual/index.html"
       ],
       "kind": "manifest",
-      "latest_rebuild_round": 26,
+      "latest_rebuild_round": 30,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -118,7 +118,7 @@
         "visual/index.html"
       ],
       "kind": "agent_card",
-      "latest_rebuild_round": 26,
+      "latest_rebuild_round": 30,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -210,7 +210,7 @@
         "report/proposal.html"
       ],
       "kind": "self_check",
-      "latest_rebuild_round": 26,
+      "latest_rebuild_round": 30,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -274,7 +274,7 @@
       "group_id": "report-html",
       "human_surface_refs": [],
       "kind": "rendered_proposal_html",
-      "latest_rebuild_round": 25,
+      "latest_rebuild_round": 28,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -315,7 +315,7 @@
       "group_id": "report-narrative",
       "human_surface_refs": [],
       "kind": "report_records",
-      "latest_rebuild_round": 26,
+      "latest_rebuild_round": 30,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -449,7 +449,7 @@
       "group_id": "drawings-a3",
       "human_surface_refs": [],
       "kind": "drawing",
-      "latest_rebuild_round": 20,
+      "latest_rebuild_round": 30,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -474,7 +474,7 @@
       "group_id": "drawings-a0",
       "human_surface_refs": [],
       "kind": "drawing",
-      "latest_rebuild_round": 19,
+      "latest_rebuild_round": 30,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1895,7 +1895,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 26,
+      "latest_rebuild_round": 30,
       "notes": {
         "en": "Self-registered: the index itself is the 141st registered path and locates the other 140 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
         "zh": "本索引自登记：索引自身是第 141 个登记路径，负责定位其余 140 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
@@ -1956,7 +1956,12 @@
         }
       ],
       "group_id": "va-review-walkthrough.json",
-      "human_surface_refs": [],
+      "human_surface_refs": [
+        "proposal.en.md",
+        "proposal.md",
+        "report/proposal.en.html",
+        "report/proposal.html"
+      ],
       "kind": "evidence_data",
       "latest_rebuild_round": 20,
       "notes": {
@@ -1986,7 +1991,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 26,
+      "latest_rebuild_round": 30,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2078,7 +2083,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 26,
+      "latest_rebuild_round": 30,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2492,7 +2497,7 @@
             "data": 11,
             "depth": 2,
             "metric": 3,
-            "source": 1,
+            "source": 2,
             "standard": 1
           },
           "heading_en": "Three-Level Scope Framework",
@@ -2528,7 +2533,7 @@
             "data": 37,
             "depth": 1,
             "metric": 3,
-            "source": 3,
+            "source": 7,
             "standard": 0
           },
           "heading_en": "Detailed Design of Key Areas",
@@ -2555,7 +2560,7 @@
             "source": 0,
             "standard": 1
           },
-          "heading_en": "Land Use, Building Scale, and Demolish–Renovate–Retain Strategy",
+          "heading_en": "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
           "heading_zh": "用地、建筑规模与拆改留方案",
           "order": 9
         },
@@ -2588,7 +2593,7 @@
             "data": 15,
             "depth": 2,
             "metric": 23,
-            "source": 0,
+            "source": 1,
             "standard": 0
           },
           "heading_en": "Renewal Projects, Implementation Policy, and Phasing",
@@ -2624,7 +2629,7 @@
             "data": 0,
             "depth": 0,
             "metric": 0,
-            "source": 0,
+            "source": 3,
             "standard": 0
           },
           "heading_en": "The Century-Time Museum: A Verifiable, Correctable, Screen-free Time Education Line",
@@ -2636,7 +2641,7 @@
             "data": 0,
             "depth": 0,
             "metric": 0,
-            "source": 0,
+            "source": 3,
             "standard": 0
           },
           "heading_en": "Public Mission Economy: Problem-Led Industry and Talent Translation",
@@ -2648,7 +2653,7 @@
             "data": 6,
             "depth": 0,
             "metric": 0,
-            "source": 0,
+            "source": 2,
             "standard": 0
           },
           "heading_en": "Long-Term Civic Operations: Ordinary Life Stays Continuous",
@@ -2660,7 +2665,7 @@
             "data": 4,
             "depth": 0,
             "metric": 0,
-            "source": 0,
+            "source": 2,
             "standard": 0
           },
           "heading_en": "Review Synthesis and Professional Handoff: Freeze the Grammar, Replace Real-World Gaps",
@@ -2684,7 +2689,7 @@
             "data": 0,
             "depth": 0,
             "metric": 0,
-            "source": 0,
+            "source": 1,
             "standard": 0
           },
           "heading_en": "Back-stage five-step accessible evidence walk",
@@ -2696,7 +2701,7 @@
             "data": 5,
             "depth": 0,
             "metric": 0,
-            "source": 1,
+            "source": 3,
             "standard": 0
           },
           "heading_en": "Field evidence intake and replacement pack",
