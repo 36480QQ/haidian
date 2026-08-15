@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "City Completeness keeps seven ordinary-city capabilities as the durable base. v0.14.s writes three machine-readable invariant civic routes into the proposal geometry for Zhongzhiyuan, AI Origin and Dazhongsi; AI may enter only as optional, lateral and reversible spatial interfaces."
+summary: "Using city completeness as the spatial review method for the century-old Jing-Zhang AI innovation belt: ordinary civic capabilities (living, schooling, care, mobility, greenery, work, interaction) first form a long-term daily chassis, with AI as an optional enhancement layer in research, community, transit, and commerce. Overall, one civic green spine, six completeness segments, six east-west stitching connections, and three key areas are formed; the three key areas bind ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT, and TEST WITHOUT BLOCKING as three dual-track spatial contracts, grounded in three invariant ordinary civic routes (ROAD-009/010/011), built typologies, and physical cross-sectional clearances; Shuangfen Fortress remains strictly a community naming easter egg."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.14"
+iteration: "v0.15"
 ---
 
 # JING-ZHANG CITY COMPLETENESS

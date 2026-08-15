@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以城市完整度作为百年京张AI创新带的空间审查方法：七项普通城市能力先形成长期底盘；v0.14.s 用三条机器可读的不绕行主路径把众智园、AI原点与大钟寺的日常城市链写进真实方案几何，AI只能作为侧挂、可选、可退出的空间接口进入。"
+summary: "以城市完整度作为百年京张AI创新带的空间审查方法：居、学、护、行、绿、工、交七项普通城市能力先形成长期可用的日常底盘，AI作为可选增强层进入科研、社区、交通和商业。总体形成一条公共绿脊、六段完整度片区、六条东西缝合联系与三处重点区；三大重点区分别绑定ARRIVE WITHOUT APP、CARE WITHOUT ACCOUNT与TEST WITHOUT BLOCKING三条双轨空间合同，落实为三条不绕行的物理普通城市主路径（ROAD-009/010/011）、实体建筑形态与物理净空断面；爽粉堡垒仅作为AI原点社区中的社区命名彩蛋。"
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.14"
+iteration: "v0.15"
 ---
 
 # 京张城市完整度 / JING-ZHANG CITY COMPLETENESS
@@ -22,7 +22,7 @@ iteration: "v0.14"
 
 
 <!-- V014-CORE-START -->
-## v0.14.s 核心判断｜INVARIANT CIVIC ROUTES / 不绕行的 AI 城市
+## v0.15.g 核心判断｜INVARIANT CIVIC ROUTES & BUILT TYPOLOGIES / 不绕行的 AI 城市与空间实体断面
 
 **AI 可以改变服务，但不能迫使市民改变基本城市路径。** 本轮把 v0.7 的三条日常城市链第一次写进机器可读空间：众智园 `ROAD-009`、AI 原点 `ROAD-010`、大钟寺 `ROAD-011` 都是 `ai_dependency=none` 的普通步行主路径。[data:geometry/roads.geojson#ROAD-009] [data:geometry/roads.geojson#ROAD-010] [data:geometry/roads.geojson#ROAD-011]
 
@@ -168,7 +168,7 @@ v0.10 以获得 86 分的 v0.7 **design-first** 结构为底座，只吸收会�
 <!-- V09-REALITY-END -->
 
 <!-- V012-CONTRACTS-START -->
-### v0.14.s｜INVARIANT CIVIC ROUTES：三条公共承诺变成三条普通城市主路径
+### v0.15.g｜INVARIANT CIVIC ROUTES & BUILT TYPOLOGIES：三条公共承诺变成三条普通城市主路径与物理净空断面
 
 v0.14.s 不再把公共承诺写成一套越来越复杂的状态机。它采用更直接的空间合同：**普通人的路线先成为城市几何，AI 只能从路线侧边进入。** 三条路线均为概念级 `pedestrian` LineString，`ai_dependency=none`；它们验证“不开 AI 时城市是否仍然是同一座城市”，而不是模拟已完成的工程设计。[metric:invariant_civic_route_count] [metric:critical_non_ai_route_coverage_ratio]
 
