@@ -860,6 +860,19 @@
       "assumptions": [
         "场景卡条款可视化"
       ]
+    },
+    "visual_source_row_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html"
+      ],
+      "formula": "count of source rows in visual sources table",
+      "confidence": "high",
+      "assumptions": [
+        "含 3 公开数据源"
+      ]
     }
   }
 }
