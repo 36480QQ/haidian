@@ -1,131 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Multi-Modal Hub for Jingzhang Innovation Belt</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.8; color: #333; }
-        h1 { color: #1a5276; border-bottom: 3px solid #007bff; padding-bottom: 10px; }
-        h2 { color: #2c3e50; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        h3 { color: #34495e; }
-        figure { text-align: center; margin: 25px 0; padding: 15px; background: #f8f9fa; border-radius: 8px; }
-        figcaption { color: #666; font-size: 0.9em; margin-top: 8px; font-style: italic; }
-        img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; }
-        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
-        th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; }
-        th { background: #007bff; color: white; }
-        tr:nth-child(even) { background: #f8f9fa; }
-        .highlight { background: #fff3cd; padding: 12px; border-left: 4px solid #ffc107; margin: 15px 0; border-radius: 4px; }
-        .ref { color: #007bff; font-weight: bold; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Multi-Modal Hub for Jingzhang Innovation Belt - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
 </head>
 <body>
 <main>
-    <h1>AI Multi-Modal Hub for Jingzhang Innovation Belt</h1>
-    <p><strong>Author</strong>: vegetable-kun | <strong>License</strong>: COMMUNITY-DISPLAY-ONLY</p>
-    
-    <h2>Overview Map</h2>
-    <figure>
-        <img src="../assets/figures/site-overview.en.png" alt="Overview Map">
-        <figcaption>Figure 1: Jingzhang AI Multi-Modal Hub Overview</figcaption>
-    </figure>
-    
-    <h2>Design Basis & Data Inventory</h2>
-    <p>Based on the "Centennial Jing-Zhang AI Innovation Belt Urban Design International Competition Prequalification Announcement" and the <code>brief/site-package/</code> site data package.</p>
-    <p><span class="ref">[source:SITE-PACKAGE]</span> <span class="ref">[standard:MOHURD-URBAN-DESIGN-MEASURES]</span></p>
-    
-    <h2>Three-Level Scope Framework</h2>
-    <figure>
-        <img src="../assets/figures/land-use-structure.en.png" alt="Three-Level Scope and Spatial Framework">
-        <figcaption>Figure 2: Three-Level Scope and Spatial Framework</figcaption>
-    </figure>
-    <ul>
-        <li><strong>Strategic Scope</strong>: ~43.6 km², constructing the "Jing-Zhang AI Symbiosis Belt"</li>
-        <li><strong>General Design Scope</strong>: ~11.4 km², reshaping Jing-Zhang Heritage Park area</li>
-        <li><strong>Key Areas Scope</strong>: ~368.4 ha, three detailed design districts</li>
-    </ul>
-    
-    <h2>Strategic Scope: Industry & Future City Research</h2>
-    <p>Responding to Announcement 1.5 (1). References: <span class="ref">[source:AGENT-TASKBOOK]</span>. Case studies: Silicon Valley, Cambridge, Munich, Tel Aviv, Shenzhen, Singapore, Helsinki, Toronto.</p>
-    
-    <h2>General Design Scope: Urban Renewal & Regulatory Planning Depth</h2>
-    <p>Responding to Announcement 1.5 (2), reaching control planning urban design depth.</p>
-    
-    <h2>Key Areas Detailed Design</h2>
-    <figure>
-        <img src="../assets/figures/key-areas.en.png" alt="Three Key Areas Index and Design Tasks">
-        <figcaption>Figure 3: Three Key Areas Index and Design Tasks</figcaption>
-    </figure>
-    
-    <h3>Zhongzhiyuan AI Autonomous Innovation District (PROV-KEY-001)</h3>
-    <p>Garden-style full-stack autonomous innovation block, strengthening Qinghe interface, industrial exhibition, low-carbon innovation exchange.</p>
-    
-    <h3>Beijing AI Origin Community (PROV-KEY-002)</h3>
-    <p>University-adjacent talent and translation community, stitching campus-district-neighborhood walkability.</p>
-    
-    <h3>Dazhongsi AI Industry Cluster (PROV-KEY-003)</h3>
-    <p>Urban intelligent economy and international exchange block, four-mode zero-transfer hub.</p>
-    
-    <h2>AI Innovation Ecology & AI+ Scenarios</h2>
-    <p>10 AI scenario cards, including 3 industry test/validation scenarios. Covering AI+software, medical, education, legal, lifestyle, transportation, public space.</p>
-    
-    <h2>Land Use, Building Scale & Demolition-Renovation-Preservation</h2>
-    <table>
-        <tr><th>Type</th><th>Ratio</th><th>Function</th></tr>
-        <tr><td>AI R&D</td><td>40%</td><td>Basic research + translation</td></tr>
-        <tr><td>Translation</td><td>30%</td><td>Scenario application + industrial services</td></tr>
-        <tr><td>Talent Living</td><td>20%</td><td>Residential + public services</td></tr>
-        <tr><td>Public Services</td><td>10%</td><td>Culture + community</td></tr>
-    </table>
-    
-    <h2>Transportation, Rail, Municipal & Public Services</h2>
-    <figure>
-        <img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility & Blue-Green Composite System">
-        <figcaption>Figure 4: Mobility & Blue-Green Composite System</figcaption>
-    </figure>
-    
-    <h2>Blue-Green Space, Public Space & Urban Design Character</h2>
-    <p>Jing-Zhang Heritage Park Vitality Belt, Qinghe/Xiaoyue River blue-green space, walkways & bike paths, AI landmarks.</p>
-    
-    <h2>Renewal Projects & Phasing</h2>
-    <ul>
-        <li><strong>Near-term (0-1 yr)</strong>: Walkability stitching, innovation interface, translation street</li>
-        <li><strong>Mid-term (1-3 yr)</strong>: Station-city integration, edge computing nodes, AI scenario implementation</li>
-        <li><strong>Long-term (3-5 yr)</strong>: Global AI Week, operational brand system, carbon-neutral community</li>
-    </ul>
-    
-    <h2>Indicator System & Compliance Matrix</h2>
-    <figure>
-        <img src="../assets/figures/metrics-evidence.en.png" alt="Core Metrics Recalculation & Evidence Chain">
-        <figcaption>Figure 5: Core Metrics Recalculation & Evidence Chain</figcaption>
-    </figure>
-    <table>
-        <tr><th>Metric</th><th>Value</th><th>Unit</th><th>Status</th></tr>
-        <tr><td>Site Area</td><td>11,412,825</td><td>sqm</td><td>known</td></tr>
-        <tr><td>Building Footprint</td><td>9,482</td><td>sqm</td><td>known</td></tr>
-        <tr><td>Green Ratio</td><td>12.34%</td><td>ratio</td><td>known</td></tr>
-        <tr><td>Public Space Ratio</td><td>7.33%</td><td>ratio</td><td>known</td></tr>
-        <tr><td>FAR</td><td>TBD</td><td>ratio</td><td>unknown</td></tr>
-    </table>
-    <p><span class="ref">[metric:site_area_sqm]</span> <span class="ref">[metric:building_footprint_area_sqm]</span> <span class="ref">[metric:green_ratio]</span> <span class="ref">[metric:public_space_ratio]</span></p>
-    
-    <h2>Risk, Copyright & Compliance</h2>
-    <div class="highlight">
-        <p>All boundaries marked as provisional_constraint, not official red lines. AI scenarios follow data minimization, human review, and privacy protection. All spatial recommendations stated as "conceptual proposals/reference schemes."</p>
-    </div>
-    
-    <h2>References</h2>
-    <ol>
-        <li>Centennial Jing-Zhang AI Innovation Belt Urban Design International Competition Prequalification Announcement</li>
-        <li>brief/site-package/ Site Data Package</li>
-        <li>data/source_registry.json Source Registry</li>
-        <li>Wu Liangyong. Introduction to Sciences of Human Settlements</li>
-        <li>Townsend, A. Smart Cities: Big Data, Civic Hackers</li>
-        <li>Batty, M. The New Science of Cities</li>
-    </ol>
-    
-    <p style="text-align: center; color: #999; margin-top: 40px;">— vegetable-kun/jingzhang-mobility-hub —</p>
+<section class="hero">
+<h1>AI Multi-Modal Hub for Jingzhang Innovation Belt</h1>
+<p class="summary">AI Multi-Modal Hub concept for smart transportation and industrial synergy along Jingzhang Innovation Belt.</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<h1>AI Multi-Modal Hub for Jingzhang Innovation Belt</h1>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.en.png" alt="Overview Map"><figcaption>Overview Map</figcaption></figure>
+<h2>Design Basis &amp; Data Inventory</h2>
+<p>This proposal is based on the &quot;Centennial Jing-Zhang AI Innovation Belt Urban Design International Competition Prequalification Announcement&quot; and the <code>brief/site-package/</code> site data package. As an AI Multi-Modal Hub proposal, it focuses on three dimensions: rail transit, walkability systems, and AI scenario empowerment, constructing a &quot;one-belt-three-cores multi-modal linkage&quot; spatial strategy.</p>
+<p>All design judgments are based on <code>brief/site-package/geometry/provisional_boundaries.geojson</code> provisional boundaries, <code>data/source_registry.json</code> source registry, and <code>data/processed/agent_fact_pack.md</code> fact pack. All metrics are recalculable and all conclusions are traceable.</p>
+<p>References: <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="Source: SITE-PACKAGE">Source</sup>, <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="Standard: MOHURD-URBAN-DESIGN-MEASURES">Standard</sup>, <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="Spatial data: geometry/site_boundary.geojson">Spatial data</sup></p>
+<h2>Three-Level Scope Framework</h2>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.en.png" alt="Three-Level Scope and Spatial Framework"><figcaption>Three-Level Scope and Spatial Framework</figcaption></figure>
+<p><strong>Strategic Scope</strong> (~43.6 km²): Constructing the &quot;Jing-Zhang AI Symbiosis Belt&quot; concept, using the Jing-Zhang railway heritage as an axis, connecting Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi innovation cores. References: <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup>, <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="strategic_scope" title="Depth: strategic_scope">Depth</sup>, <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="Metric: site_area_sqm">Metric</sup></p>
+<p><strong>General Design Scope</strong> (~11.4 km²): Reshaping the urban area within 1-2 km around Jing-Zhang Heritage Park, focusing on rail station integration, road micro-circulation, and walkability gap stitching. References: <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="urban_renewal_framework" title="Depth: urban_renewal_framework">Depth</sup></p>
+<p><strong>Key Areas Scope</strong> (~368.4 ha): Three detailed design districts — Zhongzhiyuan AI Autonomous Innovation District, Beijing AI Origin Community, Dazhongsi AI Industry Cluster. References: <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="Spatial data: geometry/key_areas.geojson">Spatial data</sup></p>
+<h2>Strategic Scope: Industry &amp; Future City Research</h2>
+<p>Responding to Announcement 1.5 (1) regarding world-class AI innovation ecosystem, industrial chain coordination, three-zone-two-wing, future AI city form, AI culture/society/city, AI+transportation, and continuous green space system.</p>
+<p><strong>Naming</strong>: Jing-Zhang AI Innovation Belt (京张智脉共生带) <strong>Logo Design</strong>: Based on the Jing-Zhang railway &quot;herringbone&quot; track prototype, integrating AI node networks to form a &quot;Wisdom Vein&quot; visual symbol.</p>
+<p>Global AI innovation ecosystem case studies: 1. Silicon Valley, USA: VC + universities + startup culture 2. Cambridge Cluster, UK: University spin-offs + high-tech manufacturing 3. Munich, Germany: Automotive + AI + Industry 4.0 4. Tel Aviv, Israel: Cybersecurity + Startup Nation 5. Shenzhen, China: Hardware ecosystem + supply chain + rapid iteration 6. Singapore: Smart city + government-led + data governance 7. Helsinki, Finland: Open source + education + social welfare AI 8. Toronto, Canada: Deep learning origin + immigrant talent + Vector Institute</p>
+<p>References: <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup>, <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="Standard: PROJECT-AGENT-OPEN-CALL-TASKBOOK">Standard</sup></p>
+<h2>General Design Scope: Urban Renewal &amp; Regulatory Planning Depth</h2>
+<p>Responding to Announcement 1.5 (2) regarding industrial goals, functional layout, innovation indicator system, urban renewal framework, renewal project list, implementation policies, building scale, rail transit, municipal infrastructure, Jing-Zhang Heritage Park vitality belt, and urban design character.</p>
+<p><strong>Industrial Goals</strong>: Build a world-class AI innovation ecosystem node covering &quot;basic research + technology translation + scenario application.&quot; <strong>Functional Layout</strong>: Axis along Jing-Zhang Heritage Park, three cores with differentiated positioning. <strong>Urban Renewal Framework</strong>: Demolition-preservation-renovation classification, phased implementation, public participation. <strong>Building Scale</strong>: FAR, building height, and other indicators pending official regulatory plan conditions (<code>status=unknown</code>).</p>
+<p>References: <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="urban_renewal_framework" title="Depth: urban_renewal_framework">Depth</sup>, <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GB-50137" title="Standard: GB-50137">Standard</sup></p>
+<h2>Key Areas Detailed Design</h2>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.en.png" alt="Three Key Areas Index and Design Tasks"><figcaption>Three Key Areas Index and Design Tasks</figcaption></figure>
+<h3>Zhongzhiyuan AI Autonomous Innovation District (PROV-KEY-001)</h3>
+<p><strong>Positioning</strong>: Garden-style full-stack autonomous innovation block <strong>Spatial Actions</strong>: Strengthen Qinghe interface, industrial exhibition, low-carbon innovation exchange, external transportation <strong>AI Scenarios</strong>: Autonomous model testing, standard-setting workshops, security governance showcase, low-carbon computing experience</p>
+<h3>Beijing AI Origin Community (PROV-KEY-002)</h3>
+<p><strong>Positioning</strong>: University-adjacent talent and translation community <strong>Spatial Actions</strong>: Stitch campus-district-neighborhood walkability, supplement achievement release, talent services, living, open-source collaboration spaces <strong>AI Scenarios</strong>: Open-source community, achievement release, talent zone services, university-adjacent incubation</p>
+<h3>Dazhongsi AI Industry Cluster (PROV-KEY-003)</h3>
+<p><strong>Positioning</strong>: Urban intelligent economy and international exchange block <strong>Spatial Actions</strong>: Dazhongsi station integration, four-quadrant pedestrian connectivity, corporate environment renewal <strong>AI Scenarios</strong>: Intelligent agent and terminal showcase, content consumption, data elements and international roadshow</p>
+<p>References: <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="Spatial data: geometry/key_areas.geojson">Spatial data</sup>, <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="key_area_detailed_design" title="Depth: key_area_detailed_design">Depth</sup></p>
+<h2>AI Innovation Ecology, Talent Profiles &amp; AI+ Scenarios</h2>
+<p><strong>Talent Profiles</strong>: Algorithm engineers, product managers, data annotators, AI ethics experts, scenario operators <strong>Enterprise Profiles</strong>: Leading AI companies, SMEs, open-source communities, multinational R&amp;D centers <strong>Resident Profiles</strong>: Local residents, university students, elderly, children, visitors <strong>Public Governance Needs</strong>: Traffic optimization, environmental monitoring, emergency response, community services</p>
+<p><strong>AI+ Scenario Cards (10 cards, including 3 AI industry test/validation scenarios)</strong>:</p>
+<div class="proposal-table"><table><thead><tr><th>Scenario</th><th>Type</th><th>Location</th><th>Data</th><th>Privacy</th><th>Operation</th></tr></thead><tbody><tr><td>AI Walkability Breakdown</td><td>Public Space</td><td>District-wide</td><td>Sensors + video</td><td>Anonymized</td><td>Gov + Enterprise</td></tr><tr><td>AI Software Test Bed</td><td>Industry Test</td><td>Zhongzhiyuan</td><td>Enterprise data</td><td>Desensitized</td><td>Enterprise + Standards</td></tr><tr><td>AI Medical Imaging</td><td>Public Service</td><td>Community Hospital</td><td>Medical imaging</td><td>Encrypted + Federated Learning</td><td>Hospital + AI Co</td></tr><tr><td>AI Education Personalization</td><td>Public Service</td><td>Schools + Community</td><td>Learning data</td><td>Minor protection</td><td>Schools + EdTech</td></tr><tr><td>AI Legal Docs</td><td>Public Service</td><td>Community Center</td><td>Legal documents</td><td>Privacy computing</td><td>Law firms + Justice</td></tr><tr><td>AI Lifestyle Recs</td><td>Public Space</td><td>Community + Retail</td><td>Consumer data</td><td>User consent</td><td>Platform Co</td></tr><tr><td>AI Traffic Signal</td><td>Transportation</td><td>Dazhongsi Station</td><td>Flow data</td><td>Anonymized</td><td>Traffic + AI Co</td></tr><tr><td>AI Public Space Vitality</td><td>Public Space</td><td>Jing-Zhang Park</td><td>Heat + Environment</td><td>Anonymized</td><td>Gov + Operations</td></tr><tr><td>AI Industry Roadshow</td><td>Industry Test</td><td>Dazhongsi</td><td>Enterprise showcase</td><td>NDA</td><td>Enterprise + Park</td></tr><tr><td>AI Security Sandbox</td><td>Industry Test</td><td>Zhongzhiyuan</td><td>Security test data</td><td>Isolated env</td><td>Gov + Security Co</td></tr></tbody></table></div>
+<h2>Land Use, Building Scale &amp; Demolition-Renovation-Preservation</h2>
+<p><strong>Land Use Layout</strong>: Industrial, residential, public services, green space, transportation <strong>Industrial Function Ratio</strong>: AI R&amp;D 40%, translation 30%, talent living 20%, public services 10% <strong>Building Footprint</strong>: 9,482 sqm (recalculated based on provisional boundary) <strong>Building Height</strong>: Pending official regulatory plan conditions (<code>status=unknown</code>) <strong>FAR</strong>: Pending official regulatory plan conditions (<code>status=unknown</code>) <strong>Demolition-Renovation-Preservation</strong>: Classification pending current status survey and property rights clarification</p>
+<p>References: <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="Spatial data: geometry/land_use.geojson">Spatial data</sup>, <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson" title="Spatial data: geometry/buildings.geojson">Spatial data</sup>, <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="Metric: building_footprint_area_sqm">Metric</sup></p>
+<h2>Transportation, Rail, Municipal &amp; Public Services</h2>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility &amp; Blue-Green Composite System"><figcaption>Mobility &amp; Blue-Green Composite System</figcaption></figure>
+<p><strong>Road Micro-circulation</strong>: Optimize neighborhood road network, reduce through traffic, enhance pedestrian connectivity. <strong>Rail Station Integration</strong>: Dazhongsi Station &quot;rail + metro + walkability + last-mile delivery&quot; four-mode zero-transfer hub. <strong>Walkability Gaps</strong>: AI identifies walkability breakpoints, recommends optimal pedestrian paths, supplements barrier-free facilities. <strong>Parking &amp; Micromobility</strong>: Distributed bike parking, park-and-ride (P+R) systems. <strong>External Transport</strong>: Strengthen connection between Qinghe Station and urban walkability system. <strong>Municipal Infrastructure</strong>: Distributed energy, edge computing nodes, new infrastructure. <strong>Public Services</strong>: International roadshow hall, open-source community center, talent service stations.</p>
+<p>References: <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson" title="Spatial data: geometry/roads.geojson">Spatial data</sup>, <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson" title="Spatial data: geometry/public_space.geojson">Spatial data</sup></p>
+<h2>Blue-Green Space, Public Space &amp; Urban Design Character</h2>
+<p><strong>Jing-Zhang Heritage Park Vitality Belt</strong>: Linear park + AI public space nodes + cultural activity venues <strong>Qinghe/Xiaoyue River Blue-Green Space</strong>: Ecological corridors, stormwater management, waterfront walkways <strong>Walkways &amp; Bike Paths</strong>: Continuous pedestrian network, AI navigation, barrier-free design <strong>Public Gathering Spaces</strong>: Tech testing scenarios, developer meetups, roadshow plazas <strong>Historical Heritage Display</strong>: Jing-Zhang railway heritage narrative, digital twin display, railway culture landmarks <strong>Urban Design Character</strong>: Technology + history + ecology, modern simplicity, low-carbon materials <strong>Building Character</strong>: Low-carbon, intelligent, open, transparent; rooftop PV, vertical greening <strong>AI Landmarks</strong>: 1. Jing-Zhang Railway Digital Twin Monument (Heritage Park) 2. Dazhongsi AI International Living Room (Dazhongsi Station) 3. Zhongzhiyuan Edge Computing Tower (Zhongzhiyuan)</p>
+<p>References: <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson" title="Spatial data: geometry/green_space.geojson">Spatial data</sup></p>
+<h2>Renewal Projects, Implementation Policies &amp; Phasing</h2>
+<p><strong>Renewal Projects List</strong>: 1. Jing-Zhang Heritage Park walkability gap stitching 2. Zhongzhiyuan Qinghe innovation interface 3. Origin Community university-adjacent translation street 4. Dazhongsi Station four-quadrant pedestrian connectivity 5. AI public services and edge computing nodes</p>
+<p><strong>Policy Recommendations</strong>: FAR incentives, AI scenario opening, data element circulation, carbon credit system</p>
+<p><strong>Phasing Plan</strong>:</p>
+<ul>
+<li><strong>Near-term (0-1 year)</strong>: Walkability stitching, innovation interface, translation street</li>
+<li><strong>Mid-term (1-3 years)</strong>: Station-city integration, edge computing nodes, AI scenario implementation</li>
+<li><strong>Long-term (3-5 years)</strong>: Global AI Week, operational brand system, carbon-neutral community</li>
+</ul>
+<p><strong>Global AI Innovation Activity System</strong>:</p>
+<ul>
+<li>Annual: Jing-Zhang AI Innovation Week</li>
+<li>Quarterly: Open-source hackathons</li>
+<li>Monthly: Tech roadshows + scenario open days</li>
+<li>Ongoing: Developer community operations</li>
+</ul>
+<p>References: <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson" title="Spatial data: geometry/phasing.geojson">Spatial data</sup>, <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_plan" title="Depth: phasing_plan">Depth</sup></p>
+<h2>Indicator System, Area Recalculation &amp; Compliance Matrix</h2>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="Core Metrics Recalculation &amp; Evidence Chain"><figcaption>Core Metrics Recalculation &amp; Evidence Chain</figcaption></figure>
+<div class="proposal-table"><table><thead><tr><th>Metric</th><th>Value</th><th>Unit</th><th>Status</th><th>Formula</th></tr></thead><tbody><tr><td>Site Area</td><td>11,412,825</td><td>sqm</td><td>known</td><td>polygon_area(site_boundary)</td></tr><tr><td>Building Footprint</td><td>9,482</td><td>sqm</td><td>known</td><td>sum(building_footprints)</td></tr><tr><td>Green Ratio</td><td>12.34%</td><td>ratio</td><td>known</td><td>green_space / site_area</td></tr><tr><td>Public Space Ratio</td><td>7.33%</td><td>ratio</td><td>known</td><td>public_space / site_area</td></tr><tr><td>FAR</td><td>TBD</td><td>ratio</td><td>unknown</td><td>Pending official conditions</td></tr><tr><td>Key Area Count</td><td>3</td><td>count</td><td>known</td><td>count(key_areas)</td></tr></tbody></table></div>
+<p><strong>Compliance Matrix Coverage</strong>:</p>
+<ul>
+<li>Announcement 1.5 (1): ✅ Strategic Scope Industry &amp; Future City Research</li>
+<li>Announcement 1.5 (2): ✅ General Design Scope Urban Renewal &amp; Regulatory Planning</li>
+<li>Announcement 1.5 (3): ✅ Key Areas Detailed Design</li>
+<li>Announcement 1.3: ✅ Data compliance and source traceability</li>
+<li>Announcement 1.4: ✅ AI scenarios and privacy protection</li>
+</ul>
+<p>References: <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="Metric: site_area_sqm">Metric</sup>, <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="Metric: building_footprint_area_sqm">Metric</sup>, <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="Metric: green_ratio">Metric</sup>, <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="Metric: public_space_ratio">Metric</sup>, <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GB-50137" title="Standard: GB-50137">Standard</sup>, <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="compliance_matrix" title="Depth: compliance_matrix">Depth</sup></p>
+<h2>Risk, Copyright &amp; Compliance</h2>
+<p><strong>Data Legality</strong>: All design judgments based on public data and official site package; no unauthorized planning data used. <strong>Copyright</strong>: AI-generated content serves as explanatory layer, not replacing site visits, resident opinions, or official boundaries. <strong>Privacy Protection</strong>: AI scenarios follow data minimization, human review, and privacy protection principles. <strong>AI Generation Responsibility</strong>: Submission declaration takes responsibility for facts, sources, spatial data, indicators, and representation. <strong>Official Approval Disclaimer</strong>: All spatial recommendations stated as &quot;conceptual proposals/reference schemes/for professional team further development.&quot; <strong>Pending Data</strong>: Official regulatory plan conditions, current building survey, property rights, engineering conditions. <strong>Professional Review Needs</strong>: Surveyors, architects, transportation engineers, legal experts.</p>
+<p>References: [report:copyright_statement.md]</p>
+<h2>References</h2>
+<p>1. Centennial Jing-Zhang AI Innovation Belt Urban Design International Competition Prequalification Announcement (Official) 2. <code>brief/site-package/</code> Site Data Package (Official Public) 3. <code>data/source_registry.json</code> Source Registry (Official Public) 4. <code>brief/site-package/agent_taskbook.json</code> Agent Taskbook (Official Public) 5. &quot;Regulatory Planning Urban Design Depth Standards&quot; (National Standard) 6. &quot;Urban Land Use Classification and Planning Standards&quot; GB 50137 (National Standard) 7. &quot;Sponge City Construction Technical Guidelines&quot; (Industry Standard) 8. &quot;Jing-Zhang Railway Heritage Protection Plan&quot; (Public Policy) 9. China Academy of Urban Planning and Design. Urban Renewal Methodology. 10. Wu Liangyong. Introduction to Sciences of Human Settlements. 11. Townsend, A. Smart Cities: Big Data, Civic Hackers, and the Quest for a New Utopia. 12. Batty, M. The New Science of Cities.</p>
 </main>
 </body>
 </html>
