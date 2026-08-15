@@ -11,9 +11,9 @@
  "families": [
   {
    "family": "BM",
-   "pattern": "^BM-(0|1|2\\d?|3\\d{2})$",
-   "meaning_zh": "水准点。第一位数字是等级：0 原点、1 一等、2 二等、3 三等；二等与三等再带一位序号。等级决定复测周期，所以编号读出来就是它多久被测一次。",
-   "meaning_en": "A benchmark. The first digit is its order — 0 origin, 1 first, 2 second, 3 third — and the second and third orders carry a serial after it. Order fixes the re-survey cadence, so the number tells you how often the point is read.",
+   "pattern": "^BM-(0|1|2|2\\d|3\\d{2})$",
+   "meaning_zh": "水准点，按**位数**分等而不是按首位数字：`BM-0` 原点；`BM-1`、`BM-2` 一等（两处，年度复测）；`BM-2x` 二等（季度复测）；`BM-3xx` 三等（月度复测）。**这条不是「首位即等级」**——那条更好记，但与本包一直在用的导视编号语法相反，也与 `public_space.geojson` 里每个点自带的 `benchmark_order` 相反（E162）。位数决定等级，等级决定复测周期，`naming_qa.py` 拿两者逐点对账。",
+   "meaning_en": "A benchmark, graded by the **number of digits** rather than by the leading one: `BM-0` is the origin; `BM-1` and `BM-2` are first order, read yearly; `BM-2x` is second order, quarterly; `BM-3xx` is third order, monthly. **It is not \"the leading digit is the order\"** — that rule is easier to remember and contradicts both this package's own signage syntax and the `benchmark_order` each point carries in `public_space.geojson` (E162). Digits fix the order, the order fixes the cadence, and `naming_qa.py` reconciles the two point by point.",
    "used_in": "geometry/public_space.geojson, roads.geojson 的 benchmark_sequence, 场景卡, 图纸",
    "example": "BM-301"
   },
