@@ -109,3 +109,9 @@
 
 - Created branch `submission/miyuuteshima984/jingzhang-ai-civic-infrastructure`.
 - Created first proposal skeleton with a research → testing → public use → market conversion → public review loop.
+
+## v0.14.s — INVARIANT CIVIC ROUTES
+- Added ROAD-009/010/011 as conceptual pedestrian routes with `ai_dependency=none`, binding the three everyday journeys to machine-readable geometry without changing area polygons.
+- Replaced v0.13.g false engineering precision and S0–S3-first narration with route-first spatial contracts and explicit evidence boundaries.
+- Rebuilt all five canonical figure pairs, bilingual A3/A0 first pages, visual HTML and structured evidence mappings around three differentiated urban types.
+- Preserved v0.7 everyday journeys, six reversible AI urban-form interfaces and two implementation paths; restored geometry-derived fixed quantities to canonical recomputation values.
