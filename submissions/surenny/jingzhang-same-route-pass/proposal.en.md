@@ -11,8 +11,6 @@ tracks: ["youth-friendly-public-space", "enterprise-services-ecosystem", "civic-
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# JINGZHANG SAME-ROUTE PASS / 京张同路签
-
 > **Move together by the person's choice; split temporarily only for immediate safety; reunify under named responsibility.** A support relationship is not guardianship, proxy, signature, identity, or data authority.
 
 ## Design Basis and Source List
