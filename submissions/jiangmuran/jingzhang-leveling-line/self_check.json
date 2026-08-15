@@ -239,7 +239,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 447 identifiers across 463 distinct names, every one matching exactly one of 24 published families or a named document, and every family governing at least one, and 8 benchmarks whose digits agree with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 450 identifiers across 466 distinct names, every one matching exactly one of 24 published families or a named document, and every family governing at least one, and 8 benchmarks whose digits agree with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -375,7 +375,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 174 条，按发现者：audit 25、external 8、external-reviewer 5、own-gate 11、self 125；最常见形状：check-measured-the-convenient-thing 36、two-copies-of-one-thing-drifted 25、deliverable-not-inspected-before-shipping 17、claim-outlived-the-package 15。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 9 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 174 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 177 条，按发现者：audit 25、external 8、external-reviewer 5、own-gate 11、self 128；最常见形状：check-measured-the-convenient-thing 36、two-copies-of-one-thing-drifted 27、deliverable-not-inspected-before-shipping 18、claim-outlived-the-package 15。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 9 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 177 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
