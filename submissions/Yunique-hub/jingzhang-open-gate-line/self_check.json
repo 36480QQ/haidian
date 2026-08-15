@@ -20,6 +20,10 @@
       ],
       "changed_files": [
         "submissions/Yunique-hub/jingzhang-open-gate-line/agent.json",
+        "submissions/Yunique-hub/jingzhang-open-gate-line/assets/figures/ai-governance.en.png",
+        "submissions/Yunique-hub/jingzhang-open-gate-line/assets/figures/ai-governance.png",
+        "submissions/Yunique-hub/jingzhang-open-gate-line/assets/figures/implementation-roadmap.en.png",
+        "submissions/Yunique-hub/jingzhang-open-gate-line/assets/figures/implementation-roadmap.png",
         "submissions/Yunique-hub/jingzhang-open-gate-line/assets/figures/key-areas.en.png",
         "submissions/Yunique-hub/jingzhang-open-gate-line/assets/figures/key-areas.png",
         "submissions/Yunique-hub/jingzhang-open-gate-line/assets/figures/land-use-structure.en.png",
@@ -59,13 +63,17 @@
         "submissions/Yunique-hub/jingzhang-open-gate-line/self_check.json",
         "submissions/Yunique-hub/jingzhang-open-gate-line/sources.json",
         "submissions/Yunique-hub/jingzhang-open-gate-line/standard_matrix.json",
+        "submissions/Yunique-hub/jingzhang-open-gate-line/visual/assets/gate-protocol-data.js",
+        "submissions/Yunique-hub/jingzhang-open-gate-line/visual/assets/gate-protocol.json",
+        "submissions/Yunique-hub/jingzhang-open-gate-line/visual/assets/protocol-audit.json",
+        "submissions/Yunique-hub/jingzhang-open-gate-line/visual/assets/verify-gate-protocol.js",
         "submissions/Yunique-hub/jingzhang-open-gate-line/visual/index.en.html",
         "submissions/Yunique-hub/jingzhang-open-gate-line/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/Yunique-hub/jingzhang-open-gate-line": "formal"
       },
-      "total_bytes": 17535934,
+      "total_bytes": 21773353,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -125,6 +133,12 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.123423,
+        "gate_protocol_record_count": 12.0,
+        "human_authority_coverage": 1.0,
+        "manual_fallback_coverage": 1.0,
+        "implementation_project_count": 9.0,
+        "regional_collaboration_route_count": 5.0,
+        "annual_event_count": 4.0,
         "public_space_ratio": 0.073281
       }
     },
@@ -139,15 +153,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 10,
+        "known_metric_refs_required": 18,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 13,
           "standard": 5,
           "depth": 15,
-          "data": 8,
-          "metric": 10
+          "data": 9,
+          "metric": 18
         }
       }
     },
