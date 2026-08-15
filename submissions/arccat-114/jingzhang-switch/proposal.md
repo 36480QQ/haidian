@@ -14,6 +14,10 @@ iteration: "v2.5"
 
 # 道岔·SWITCH——百年京张AI创新带城市设计方案
 
+> 一台在写字楼里答错问题的模型，代价是一次返工。一台在人行道上判断错的配送机器人，代价是一个人的脚踝。一个把用药建议说错的健康导航，代价可能无法挽回。
+>
+> **所以本方案不从"城市治理"讲起，从换轨需要联锁讲起**——京张走廊让"技术、人才、资本、文化"换轨转向，而任何换轨都必须先证明联锁可靠：红牌可暂停、人工可接管、失效可退役，迁移由人签认。信任不来自单次表现，来自一套能证明"转向是安全的"的制度。
+
 1909年，詹天佑在青龙桥用"人"字形折返展线，让火车在陡坡上完成一次著名的换轨——这是中国人自主设计干线铁路的精神原点[source:JZ-HERRINGBONE-PAPER]。今天，在这条铁路的城内起点，另一组转向正在发生：京张高铁走廊向北、京张故线走廊（现13号线地面段）折向西北，两条"轨道"在场地内分道[source:PROVISIONAL-BOUNDARIES]。本方案把京张遗址公园走廊读作城市的**道岔**——一个让"技术、人才、资本、文化"换轨转向的枢纽装置，并命名为**道岔·SWITCH——为城市换轨**。
 
 "换轨"在本方案中有三层含义。工程层：道岔是人字形展线的工程记忆，是钢轨的交汇与分向，把詹天佑的转向智慧提炼为可传播的公共符号[source:JZ-HERRINGBONE-PAPER]。价值层：换轨是对"人民城市"的治理承诺——城市对智能体开放接口，人对智能体保留中断权，任何换轨都由人签认。方法层：换轨是机器学习"转向/梯度上升"的隐喻——一百年前的爬坡与今天 AI 的爬坡，在同一条轴上接续。空间结构由此展开为**一岔、三场、两翼**：岔心（换轨枢纽，全带公共体验核心）、始发场（原点社区，0公里桩，策源与开源）、加速轨道（众智园，全栈创新与治理）、编组场（大钟寺，智能原生业态与交会）、东侧线（中关村科技服务翼）、西侧线（小月河场景赋能翼）。9.7公里主脊同时是一部**换轨叙事**：南起编组场是换轨前的编组与交会，中段岔心是换轨发生的转向点，北抵加速轨道是换轨后的加速——界面高度、场景强度、地标序列与一日线体验都沿这条"钢轨"组织，"换轨"由此从命名变成全案的空间操作系统[depth:overall_spatial_structure][data:geometry/land_use.geojson#LU-001]。
@@ -64,6 +68,8 @@ iteration: "v2.5"
 | 近期能做什么 | 首开行动"零号行动·换轨典礼"：100 米示范段+红牌撤回演练+3 个首批试点场景（申请—审查—试点—评估闭环） | 首开行动清单 [depth:phasing_implementation] |
 | 刻意不给什么 | 容积率、建筑高度、密度、退线、道路红线、拆改留结论、工程线位、投资测算——统一登记待正式数据补齐 | metrics.json 相应指标状态 [metric:floor_area_ratio] |
 | 方法的边界在哪 | 全部空间内容为概念建议，官方边界与控规到位后整包重算并公开差异表；临时边界精度限制如实披露 | 假设登记与复算承诺 [assumption:A-BOUNDARY-001] |
+| 治理机制能否被第三方独立执行 | 能。`node visual/assets/verify_switch_protocol.js` 对道岔联锁协议做 10 项确定性检查（状态机合法性/迁移规则/红不直转绿/场景卡字段/责任矩阵等），当前 10/10 通过，任何人可复跑 | 验证脚本 + `visual/assets/switch-protocol.json` |
+| 换轨制度测什么、不测什么 | 测一致性：状态迁移、数据边界、人工复核、退出路径是否可核验；**测不出"有没有用"**——空间绩效需要试点后真实记录，本包不编造数值 | 机制第 6 条与试点卡口径如实写明 |
 
 ## 一、设计依据与资料清单
 
@@ -170,11 +176,11 @@ iteration: "v2.5"
 
 ### 6.2 AI 场景卡（12张）
 
-全部场景采用铁路语汇状态机治理：**绿灯通行、黄灯限速（人工抽查）、红灯暂停（可退役）**，每张卡标注空间位置、服务对象、数据边界、人工复核与运营主体[standard:GENERATIVE-AI-INTERIM-MEASURES]。状态机已形式化为机器可读协议（`visual/assets/switch-protocol.json`）：迁移须人工签认、红不得直转绿、退役为终态、每季度一次红牌撤回演练[depth:three_key_area_detailed_design]。**法律接口逐卡登记**：每张场景卡登记其法定义务方向（个人信息最小化、数据分类分级、生成式AI内容标识、智能网联测试规定、公共影像管理、未成年人保护等，见 `switch-protocol.json` 的 legal_interfaces 字段）——登记是运营透明层，不替代法定程序，本包不作合规认定[source:CN-LEGAL-INTERFACE-REFS][standard:GENERATIVE-AI-INTERIM-MEASURES]。
+全部场景采用铁路语汇状态机治理：**绿灯通行、黄灯限速（人工抽查）、红灯暂停（可退役）**，每张卡标注空间位置、服务对象、数据边界、人工复核与运营主体[standard:GENERATIVE-AI-INTERIM-MEASURES]。状态机已形式化为机器可读协议（`visual/assets/switch-protocol.json`），**机制可被独立执行**——`node visual/assets/verify_switch_protocol.js` 对协议做 10 项确定性检查（状态机合法性/迁移规则/红不直转绿/场景卡字段/责任矩阵/红牌演练等），当前 10/10 通过、含拒绝分支，任何第三方可复跑验证：迁移须人工签认、红不得直转绿、退役为终态、每季度一次红牌撤回演练[depth:three_key_area_detailed_design]。**法律接口逐卡登记**：每张场景卡登记其法定义务方向（个人信息最小化、数据分类分级、生成式AI内容标识、智能网联测试规定、公共影像管理、未成年人保护等，见 `switch-protocol.json` 的 legal_interfaces 字段）——登记是运营透明层，不替代法定程序，本包不作合规认定[source:CN-LEGAL-INTERFACE-REFS][standard:GENERATIVE-AI-INTERIM-MEASURES]。
 
 **公共利益三原则**贯穿全部场景：**服务等价**（不使用 AI 者获得等价人工服务）、**弱势保护**（老幼病障不作为首轮测试对象）、**红牌复核权**（受影响群体代表可发起红牌暂停）[standard:GENERATIVE-AI-INTERIM-MEASURES][source:AGENT-TASKBOOK]。
 
-**服务生命周期六道门（T0-T5）**：问题与场地→数据与权限→基准与人工路径→沙箱对时演练→限时运行窗→续期/降级/退役，每道门由证据推进、不得越级；**T4 窗口即到期日**——批准运行与设定退场是同一动作，试点永久化在结构上不可能[source:DESIGN-CONCEPT-SWITCH][depth:phasing_implementation]。**进化即失效**：场景资格绑定版本哈希，任何自我进化立即作废资格、退回沙箱重新对时；资格不继承，档案按版本谱系连续记录[source:DESIGN-CONCEPT-SWITCH][standard:GENERATIVE-AI-INTERIM-MEASURES]。三条底线有条文级依据：《无障碍环境建设法》第三十九条要求**保留现场指导、人工办理等传统服务方式**（"服务等价"的方案转译）[standard:BARRIER-FREE-ENVIRONMENT-LAW]；《生成式人工智能服务管理暂行办法》第十四条要求对违法内容**停止生成、整改并报告**（红牌暂停）、第十五条要求**建立投诉举报机制**（红牌复核权）[standard:GENERATIVE-AI-INTERIM-MEASURES]。协议可第三方检验：`verify_switch_protocol.js` 对协议做 10 项确定性检查，当前全部通过[source:DESIGN-CONCEPT-SWITCH][depth:three_key_area_detailed_design]。
+**服务生命周期六道门（T0-T5）**：问题与场地→数据与权限→基准与人工路径→沙箱对时演练→限时运行窗→续期/降级/退役，每道门由证据推进、不得越级；**T4 窗口即到期日**——批准运行与设定退场是同一动作，试点永久化在结构上不可能[source:DESIGN-CONCEPT-SWITCH][depth:phasing_implementation]。**进化即失效**：场景资格绑定版本哈希，任何自我进化立即作废资格、退回沙箱重新对时；资格不继承，档案按版本谱系连续记录[source:DESIGN-CONCEPT-SWITCH][standard:GENERATIVE-AI-INTERIM-MEASURES]。三条底线有条文级依据：《无障碍环境建设法》第三十九条要求**保留现场指导、人工办理等传统服务方式**（"服务等价"的方案转译）[standard:BARRIER-FREE-ENVIRONMENT-LAW]；《生成式人工智能服务管理暂行办法》第十四条要求对违法内容**停止生成、整改并报告**（红牌暂停）、第十五条要求**建立投诉举报机制**（红牌复核权）[standard:GENERATIVE-AI-INTERIM-MEASURES][source:DESIGN-CONCEPT-SWITCH][depth:three_key_area_detailed_design]。
 
 | # | 场景卡 | 空间落位 | 服务对象 | 状态机 |
 |---|--------|---------|---------|--------|
