@@ -75,6 +75,58 @@
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
       "assumptions": []
+    },
+    "scenario_node_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(features where scenario_id is present)",
+      "confidence": "high",
+      "assumptions": [
+        "Counts concept test nodes, not approved installations."
+      ]
+    },
+    "industry_validation_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(features where scenario_type = industry_validation)",
+      "confidence": "high",
+      "assumptions": [
+        "Concept validation protocols require operator confirmation."
+      ]
+    },
+    "landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(features where landmark_role is present)",
+      "confidence": "high",
+      "assumptions": [
+        "Concept landmarks are reversible knowledge infrastructure."
+      ]
+    },
+    "renewal_project_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(project_ids in PHASE-001)",
+      "confidence": "high",
+      "assumptions": [
+        "Concept project list, not approved capital projects."
+      ]
     }
   }
 }

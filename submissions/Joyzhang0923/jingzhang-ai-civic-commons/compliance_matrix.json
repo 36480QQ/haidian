@@ -908,9 +908,7 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -923,8 +921,6 @@
       ],
       "metrics": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "key_area_count"
       ],
       "drawings": [
@@ -932,18 +928,12 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "总览与品牌",
+        "三区两翼"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -953,17 +943,15 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "evidence_summary_zh": "本任务使用独立章节、指标与图面证据，不以通用章节重复代替。"
     },
     {
       "requirement_id": "agent.2",
       "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "统筹研究范围产业与未来城市研究"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -975,28 +963,24 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "industry_validation_scenario_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "六个全球案例",
+        "八类要素生态"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "CASE-VECTOR",
+        "CASE-MILA",
+        "CASE-AISG",
+        "CASE-STATIONF",
+        "CASE-AISWEDEN",
+        "CASE-DUBAI-AI-CAMPUS"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -1006,17 +990,15 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "evidence_summary_zh": "本任务使用独立章节、指标与图面证据，不以通用章节重复代替。"
     },
     {
       "requirement_id": "agent.3",
       "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1028,28 +1010,20 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "scenario_node_count",
+        "industry_validation_scenario_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "十张场景卡",
+        "五门准入"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -1059,17 +1033,15 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "evidence_summary_zh": "本任务使用独立章节、指标与图面证据，不以通用章节重复代替。"
     },
     {
       "requirement_id": "agent.4",
       "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1081,28 +1053,20 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "landmark_count",
+        "public_space_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "三处地标",
+        "公共空间组件库"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -1112,17 +1076,15 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "evidence_summary_zh": "本任务使用独立章节、指标与图面证据，不以通用章节重复代替。"
     },
     {
       "requirement_id": "agent.5",
       "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1134,28 +1096,19 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "landmark_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "三幕文化叙事",
+        "导视与荣誉系统"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -1165,17 +1118,15 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "evidence_summary_zh": "本任务使用独立章节、指标与图面证据，不以通用章节重复代替。"
     },
     {
       "requirement_id": "agent.6",
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "更新项目清单、实施政策与分期计划"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1187,28 +1138,20 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "renewal_project_count",
+        "scenario_node_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "年度活动体系",
+        "场景开放与招引漏斗"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "OFFICIAL-ANNOUNCEMENT"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -1218,7 +1161,8 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "evidence_summary_zh": "本任务使用独立章节、指标与图面证据，不以通用章节重复代替。"
     }
   ]
 }

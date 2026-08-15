@@ -1,17 +1,34 @@
-# 版权、生成方式与资产权利台账
+# 版权、生成方式与逐路径权利台账 / Copyright and Per-path Rights Ledger
 
-本投稿由张洁静（GitHub: `Joyzhang0923`）以个人名义提交。正文、译文、图解、静态网页和图纸由 OpenAI Codex（GPT-5 系列；本次会话未暴露精确部署标识）协助生成，张洁静确定方案方向并承担最终人工判断责任。除下表所列字体外，投稿不包含第三方图片、商业地图瓦片、远程脚本、远程字体、追踪代码或私有数据。
+版本：v0.3（2026-08-14）  
+作者署名：张洁静 / Joyzhang0923  
+生成协作：OpenAI Codex（GPT-5 family；当前会话无法取得更精确部署标识）。
 
-| 路径 | 生成或派生方式 | 数据/素材来源 | 权利与限制 |
-| --- | --- | --- | --- |
-| `proposal.md`、`proposal.en.md` | Codex起草、翻译并由提交者确认方向 | 官方公告、清权任务书、仓库登记资料及本包结构化证据 | `COMMUNITY-DISPLAY-ONLY`；不得解释为官方审定成果 |
-| `geometry/*.geojson` | 仓库脚手架生成后，以概念公共服务主轴等设计属性深化 | `brief/site-package/geometry/provisional_boundaries.geojson`及仓库规则 | 临时边界仅供生成、展示和内容评审；不得作为官方红线或精确面积依据 |
-| `metrics.json`及三个矩阵 | 仓库脚本按GeoJSON、任务书和标准生成/复算 | 本包GeoJSON、仓库任务书与标准快照 | 指标置信度和假设以文件内记录为准；正式数据发布后重算 |
-| `assets/figures/*.png` | 原创Python/Pillow程序从本包GeoJSON、metrics及方案逻辑绘制 | 不含外部图片；仅使用本包结构化数据 | 中文主图与英文`.en.png`为成对原创派生图；不得替代GeoJSON权威层 |
-| `report/proposal.html`、`report/proposal.en.html` | 仓库`render_proposal_html.py`从对应Markdown渲染 | 本地正文和本地图件 | 完全离线，不加载远程资源 |
-| `visual/index.html`、`visual/index.en.html` | 原创静态HTML/CSS生成 | 本包指标、图件和方案摘要 | 完全离线，无iframe、表单、API或追踪 |
-| `drawings/a3-booklet*.pdf`、`drawings/a0-boards*.pdf` | 原创Python/ReportLab排版；Poppler用于目视校验 | 本地中英文图件和方案摘要 | 展示层文件，不作为空间边界、面积或控规结论的唯一依据 |
-| PDF内嵌中文字体子集 | `Noto Sans SC`，通过`@fontsource/noto-sans-sc` 5.3.0获取并由ReportLab嵌入 | Google Noto项目 / Fontsource分发 | SIL Open Font License 1.1；仅在PDF中嵌入所需字形，不单独再分发字体文件 |
-| `agent.json`、`manifest.json`、`self_check.json`、`assumptions.json`、`sources.json` | 仓库脚本生成并按真实生成流程补充 | 本投稿文件及仓库校验结果 | 用于来源、生成方式、校验和限制审计 |
+## 总体声明
 
-所有路径级生成记录以本文件、`agent.json`、`sources.json`和`manifest.json`共同构成审计链。若后续替换官方边界、第三方图片、字体或其他素材，必须在重新提交前同步更新来源、许可、哈希、图件、PDF与自检结果。
+本提交不包含商业地图瓦片、新闻图片、第三方Logo、人物肖像、企业标识或未经授权的规划图。国际案例仅引用机构官网的文字机制，不复制网页图片、品牌图形或版式。所有空间建议均为概念建议，不构成规划审批或政府承诺。
+
+## 逐路径台账
+
+| 路径 | 生成方式与来源 | 权利/限制 |
+| --- | --- | --- |
+| `proposal.md`, `proposal.en.md` | 张洁静提出主题与署名；Codex依据公开/清权任务资料协助重写，中英文人工审校待完成 | COMMUNITY-DISPLAY-ONLY；不得冒充官方文件 |
+| `geometry/site_boundary.geojson`, `geometry/key_areas.geojson` | 仓库维护的临时粗略边界派生 | 仅用于概念生成、展示、自检；非官方红线 |
+| 其他 `geometry/*.geojson` | Codex依据临时边界与本方案设计逻辑生成的原创概念几何 | 非法定规划、非工程线位、非权属判断 |
+| `metrics.json` | 从结构化几何或成果计数复算；法定控制缺失项保持未知 | 不得作为批准指标 |
+| `assets/figures/*.png` | 本地Python/Pillow从GeoJSON、metrics和任务矩阵绘制；未嵌入外部图片 | 原创派生图；Noto Sans SC字体按SIL Open Font License用于栅格化显示 |
+| `report/proposal*.html` | 仓库离线渲染脚本从Markdown生成 | 无远程资源、脚本、跟踪或外部字体 |
+| `visual/index*.html` | 本地生成的离线静态展示，引用提交内图件 | 无CDN、远程瓦片、iframe、表单或跟踪 |
+| `drawings/*.pdf` | 本地Pillow将五张核心图排版为A3文册和三张A0展板 | 展示成果，不是权威数据源 |
+| `sources.json` | 官方/清权资料与六个机构官网的来源登记 | 案例官网仅用于机制比较；不授权复制其品牌资产 |
+| `agent.json`, 三个矩阵与 `self_check.json` | 仓库脚手架、Codex修订与官方校验脚本输出 | 机器审计资料；不得解释为维护者批准 |
+
+## 字体与代码
+
+- 图件使用 Noto Sans SC 栅格化，字体许可为 SIL Open Font License 1.1；字体文件不随包提交。
+- 绘图与排版使用 Python 与 Pillow；仓库校验和渲染使用项目自带脚本。
+- 如后续加入照片、地图、历史图像、企业Logo或人物资料，必须在进入图件前新增逐项来源、许可和署名记录；无法证明权利的资产应删除或替换。
+
+## 人工复核待办
+
+中英文主张、数字、图位和术语等义；PDF标签和阅读顺序；色觉可辨识性；A0远视距字号；第三方新增素材权利，均需人工签字复核。本台账不替代法律意见。

@@ -1,7 +1,10 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
+  "review_status": "formal-review-ready",
   "run_record": {
-    "checked_at": "2026-08-09T01:44:43Z",
+    "checked_at": "2026-08-14T00:08:00Z",
     "pr_author": "Joyzhang0923",
     "result": "pass",
     "review_status": "formal-review-ready",
@@ -11,7 +14,7 @@
     "visual_packaging_check": "pass",
     "professional_evidence_review": "pass",
     "command": "python scripts/self_check_submission.py submissions/Joyzhang0923/jingzhang-ai-civic-commons --pr-author Joyzhang0923",
-    "note": "Final-byte v0.2.1 check recorded after regeneration and visual QA of paired bilingual figures, localized HTML/PDF assets, agent provenance and the path-level rights ledger."
+    "note": "Final-byte v0.3 check recorded after substantive six-task revision, mapped scenario nodes, distinct evidence, six primary-source cases, regenerated bilingual figures, offline HTML, A3/A0 PDFs and the updated path-level rights ledger."
   },
   "checks": [
     {
