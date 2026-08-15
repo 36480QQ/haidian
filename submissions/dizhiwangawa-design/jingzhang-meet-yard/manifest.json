@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9c335b619c203b3da9813bc23bcdfd9489f8d3a8a31f9dd5379098a1057523c8"
+      "sha256": "873ae116203ea7cef232618159492da2f2a0b14d36d8c06eac0136149646b877"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "265c37b55a607cb636ee921c1bbdb84744e9a9dd570bc46807f98dd84687367b"
+      "sha256": "aef8b3db931f1c29a19146e0dea513e23a50076f2f42719167902570760629f2"
     },
     {
       "path": "assumptions.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c34c64a32581d6ea28326360af8487dc832fc35eb1fc08d6217438c53cf899a7"
+      "sha256": "d6fde0fa59dd6067c8b7aeb1e3a71d6a279cfbfd51c0cf6fc23957f9c5136609"
     },
     {
       "path": "compliance_matrix.json",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "2fc480d587fcead22db85efa54a5f4b95226a2399a8d6e445307ae28f159e0c5"
+      "sha256": "f48e580f21919abfa3976bc2f8d0986fd904f140a851d4f445c4ae4964ea9d3e"
     },
     {
       "path": "assets/figures/key-areas.png",

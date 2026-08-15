@@ -294,6 +294,17 @@
         "visual/assets/check_meet_protocol.js",
         "visual/assets/data/meet-protocol-drill.json"
       ]
+    },
+    "NODE-SCENARIO-01": {
+      "status": "known",
+      "value": 3,
+      "formula": "count(component_id=C02)（geometry/public_space.geojson）",
+      "assumptions": [
+        "会车台节点 PS-C02-001（造解站）/PS-C02-002（原点社区）/PS-C02-003（试行站），共 3 处；一级会车总台 C01 与三级交接湾 C06 另计，不重复计入"
+      ],
+      "source_files": [
+        "geometry/public_space.geojson"
+      ]
     }
   },
   "schema_version": "0.1.0",
