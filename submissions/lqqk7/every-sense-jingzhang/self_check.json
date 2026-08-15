@@ -110,6 +110,7 @@
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/braille-core-statement.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/ethics-protocol.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/font-license-ofl.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/legal-interface-register.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/op04-pilot-readiness.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/op04-tactile-map.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/osm-context/provenance.json",
@@ -145,7 +146,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 39510101,
+      "total_bytes": 39542945,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -231,10 +232,10 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 38,
+          "source": 39,
           "standard": 9,
           "depth": 15,
-          "data": 40,
+          "data": 41,
           "metric": 31
         }
       }
