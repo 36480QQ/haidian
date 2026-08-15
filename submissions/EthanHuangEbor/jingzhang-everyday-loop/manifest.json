@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI GPT-5.6 Codex"
   },
-  "generated_at": "2026-08-14T21:09:40Z",
+  "generated_at": "2026-08-15T02:06:17Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7ebab80a3e3dd3e1620a0c7c0a6ffcdde51593c0ff87fb785b3e7373ecc48c40"
+      "sha256": "9d026c903261b097bddb624c373df10f4b91c6cd0fae40b929ee25dfa8fc87ac"
     },
     {
       "path": "agent.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "31bb8abea4cd3fd259216525b80dcb9ca3cf0404477f3f506c3762c86500c6b8"
+      "sha256": "2631d9782e9573e62d8667a4943d49b96d50cdc3bf411dab44426d85ea9b404f"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "b333684a033466094d23c328027da96811672f1c9a735d3dc23fedc297a9f6af"
+      "sha256": "ff0beaed021ba30821c1a5acef82f6b07df9864509854b5bb9c61bfa6fc42e86"
     },
     {
       "path": "standard_matrix.json",
@@ -81,13 +81,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cf65efcca523a6fc7f817d442c271c82f9f6556fbe12f51e6eb0dee66e804b5d"
+      "sha256": "1eb5134895ea8f6bff0d2335b3796d80f51a64b780ec933ea4bed34cad57d1ee"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "639c38a31a97a7e81e674357a2f45374f047a5e7498979fec661f0d0ea48d493"
+      "sha256": "67e18b5712a32d9dcbfceaf8e2af605e601e8eb7500cffa46e259f364ec9b873"
     },
     {
       "path": "report/copyright_statement.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a5cc3fed6458312c13e9d48c0d8be53db3d06c8dc15828b30339df3ae14cacbb"
+      "sha256": "ee8f36d7159994d42a22226c524bfa4934c369c0c0359924ab3fda1b86615510"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "712d5ff84a527d63f2923b1ddd2e2ca26b71f020d5c91aa0ca45ba204f7aa51d"
+      "sha256": "ec0b73b9c17eb1e5e4358c6644ec52696ded1764c42d22ade3f53d33d7b8899f"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "dcdb0061fb6abd852228b11e11542de9a6b7ff99704536f7bf77c3d42a4e58ae"
+      "sha256": "236360cd992e158a8a7aca6f984762c83cb8468d683d9c9ea5aa059a873ae001"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c9abe065c957a91aad8295d0926501db7ca2bf62e8661e49ba5506f2d3a833e7"
+      "sha256": "f75cd09f98b08d0bb928cefc97c2867ed372083d56bf94d432f5fa6340436dc9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -290,7 +290,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "65ef7599c09b3edd44b8aa5b0d256559c08010856e2f7c184e55d25e4d5d7407"
+      "sha256": "c1626d576a7a7487346f5b7bbb7d33503a30249197926f701411e74d663c52e8"
     },
     {
       "path": "assets/media/concept-everyday-corridor.png",
