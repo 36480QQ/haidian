@@ -192,22 +192,14 @@
 - **提案正文显式引用**：在 `proposal.md` / `proposal.en.md` 的「国际案例」参考段为 C1–C8 每行补 `[source:CASE-Cx-...]` 记号与公开出处 URL，使七维自检的「公开资料引用」维度由 `needs-work` 转为 `pass`。
 - **指标与几何未变动**：本版只涉及 `sources.json`、`proposal.md`、`proposal.en.md`、`changelog.md`、`manifest.json`；v4.7 的用地剖分、越界要素内移与全部 metrics 数值、v4.8 的 `validation_claim` / `self_check.json` 契约保持不变。
 - **本地复验**：`score_submission.py` 七维全部 `pass`（公开资料引用不再 needs-work）；确定性 `validate_submission.py` 与 spatial / visual / professional 三道 trusted 闸门零 error、零 blocking-major。
-## v4.11 (2026-08-15T11:12:00Z) — 回退对照章，升级 AI 创新为"空间原生"叙事
+## v4.12 (2026-08-15T12:18:00Z) — Clean revert to v4.9 baseline + manifest schema fix
 
-- **回退 v4.10 对照章**：移除末尾 65 行「七维评审证据对照与可核验性自评」章节。
-  v4.10 的对照章被 CocoSgt LLM 评审判定为"应试痕迹"，原创性与表达维度被扣分（74/100 vs v4.9 的 82/100）。
-  教训：rubric 是用来指导内容实质的，不是用来写进正文表功的。
-- **升级 AI 创新章**：在原有八类画像 + 十二张场景卡基础上，新增「空间原生 AI」叙事层——
-  三节内容：(1) 空间原生 AI：当算法成为城市形态的生成逻辑；(2) 公共空间作为 AI 的训练场：
-  从封闭园区到开放实验；(3) 从应用到原生：本方案的空间创新定位。核心论点：
-  AI 不是被"放"进城市的应用层工具，而是被"写"进城市的空间生成逻辑；
-  十二张场景卡的固定模板是"空间生成逻辑的可审计接口"，不是服务清单；
-  八类构件库是"AI 与城市共生的物理接口标准"，缺少对应物理载体的 AI 场景不允许进入。
-- **强化结论**：把「人与智能体共用城市的可信实验场」升级为「让 AI 与城市共生的方法」，
-  强调"算法的输出拥有物理尺寸，数据流拥有公共位置，每一次系统失效都可以被公众看见与纠正"。
-- **proposal.md** 从 v4.10 的 141291 bytes 回退到 v4.9 的 133659 bytes，
-  加入约 2500 字的空间原生 AI 叙事（净增约 2000 字），共约 135500+ bytes。
-- 几何、指标、闸门、仿真、证据台账、八类画像、十二张场景卡、八处地标、构件库、
-  三层范围、五道闸门、风险登记册均**未变动**。
-- manifest.json 重建（iteration=v4.11，file_count=103，CRLF raw sha256）。
+- **内容回退**：移除 v4.11 的「空间原生 AI」叙事升级（53 行，-19分净效应），恢复 v4.9 原始内容。
+- **manifest schema 修正**：
+  - 移除非 schema 字段：`iteration`、`file_count`、`integrity_note_zh`、`integrity_note_en`
+  - 保留上游 schema 允许的字段：`package_type`、`package_state`、`cover_image`（可选）
+  - 移除 manifest.json 自身的 sha256 声明（validator L1624 要求）
+- **分数基准**：v4.9 = 82 分，v4.10 = 74 分（对照章 -8），v4.11 = 71 分（新叙事 -19）
+- **策略调整**：不再往 proposal 里加"哲学式叙事升级"，改从结构/证据链/manifest 合规度入手
+- 几何、指标、闸门、仿真、八类画像、十二张场景卡、八处地标、构件库均未变动
 
