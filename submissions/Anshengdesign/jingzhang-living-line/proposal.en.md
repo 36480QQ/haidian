@@ -6,15 +6,13 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Designing the Centennial Jing-Zhang AI Innovation Belt in the paradigm of urban science: five rulers (fractal / syntax / spatial interaction / scaling law / cellular emergence), all computed locally, diagnosing a belt whose form is healthy (fractal dimension 1.746, health factor H=1.556) yet whose connections are severed; the proposal uses the logic of emergence to move aside the constraints blocking growth, verifies its effectiveness with three independent models, and closes with a computable, evolvable, human-serving urban operating system."
+summary: "Designing the Centennial Jing-Zhang AI Innovation Belt in the paradigm of urban science: five rulers (fractal / syntax / spatial interaction / scaling law / cellular emergence), all computed locally, diagnosing a belt whose form is healthy (fractal dimension 1.746, health factor H=1.556) yet whose connections are severed; the proposal uses the logic of emergence to move aside the constraints blocking growth, cross-corroborates its effectiveness with three models on the same data and the same stitching assumption, and closes with a computable, evolvable, human-serving urban operating system."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["ai-traffic-walkability"]
-iteration: "v0.12"
+iteration: "v0.17"
 ---
 
 # THE EMERGENT BELT — Jing-Zhang Hyper Line
-
-*Urban design for the Centennial Jing-Zhang AI Innovation Belt · Open-call submission · KUN-SAL Spatial Quant Lab*
 
 *Urban design for the Centennial Jing-Zhang AI Innovation Belt · Open-call submission · KUN-SAL Spatial Quant Lab*
 
@@ -32,6 +30,27 @@ Every chapter that follows is evidence measured by one of the rulers. The protag
 
 ![Nine kilometres, three key areas, and seven gaps](assets/figures/site-overview.en.png)
 
+## Execution Summary and Design Decisions
+
+**The conclusion first (what a juror can take away in 90 seconds)**: this belt's skeleton is healthy (fractal dimension 1.746 inside the healthy band, health factor H=1.556 above benchmark); its only problem is that the conditions for growth are blocked — seven roads sever the main spine, only one of ten core pairings has crossed the phase-transition threshold, 45 cells have their "golden locations used at low intensity", and the middle layer (affordability / conversion rate / inclusive compute) is unmeasured. The proposal's design actions therefore fall into only four categories — four "decision cards":
+
+| Decision | Content | One-line rationale |
+|---|---|---|
+| **Decision 1: Open** | Stitch the seven nodes, reconnecting the severed spine into one line (integration +65%–+132%) | Configuration determines movement: stitching is a phase transition, not decoration |
+| **Decision 2: Unlock** | The CA proves non-intervention = path lock-in; intervention unlocks 42 cells for reallocation | Emergence needs conditions, and the condition is "opening the lock" |
+| **Decision 3: Infill** | The gaps recognized by 25,476 POIs (finance −63%, research −45.9%, medical 2.88/km²) are filled by the deviation list | Fill what is missing, no guesswork |
+| **Decision 4: Measure** | Three middle-layer indicators, plus λ and H entering the Phase-Transition Forum's annual public report | What is not measured does not exist |
+
+**Naming of the main line**: THE EMERGENT BELT — Jing-Zhang Hyper Line (Hyper = scaling-law superlinearity β>1; Emergent = bottom-up emergence). The logo direction is "the superlinear line": a straight railway line curving upward at its end, with the seven-point percolation cluster floating up along it.
+
+**The verification promise**: three models (SIMULACRA's four sectors, the CA emergence, the LUTI match rate) cross-corroborate on the same data and the same stitching assumption, converging in direction; the ten-year timeline sets two acceptance gates (λ≥40%, H≥1.35) — if they are not met, stop and review. All spatial conclusions are conceptual suggestions; statutory control indicators await official data.
+
+**Human–machine collaboration and the boundary of responsibility (this proposal's methodological stance, a direct answer to "if something goes wrong, who is responsible")**: this proposal was produced this way — the machine is responsible for **computation, diagnosis, generation, and self-checking** (15+ locally computed results, four self-checks, bilingual reconciliation, all reproducible and falsifiable); humans are responsible for **value judgment, interest coordination, and final approval** (the proposal states plainly: all spatial suggestions are open co-creation suggestions and do not constitute approval conclusions; engineering implementation is deepened separately and carried out by people; statutory control indicators are "pending official data"). Tools change, from ruler to algorithm, but the core of "building" remains human — in this proposal every design decision carries a "why" evidence chain, precisely so that human value judgment has something to lean on: **AI computes the computable parts of the city clearly, and leaves the meanings that cannot be encoded to human decisions. That is the bridge between the computable city and the city that serves people.**
+
+![Master plan: one line, three folds, two wings, seven nodes](assets/figures/masterplan.en.png)
+
+**How to read this master plan**: light-grey blocks = the existing building fabric (OSM measured footprints, Aug-2026 snapshot); the dark line with a white casing = the real Jing-Zhang railway alignment; green = the green and blue-green network; the thick dark-green line = the Hyper Line main spine; red dots ●1–●7 = the seven stitching nodes; stars = the three pilgrimage landmarks; grey squares = the two wings. **First read the line (the spine) reconnected by seven red dots, then read the three gates (three coloured frames) hanging on the line — the base is the real city, and only the overlay is the design.**
+
 ## Vision and Goals
 
 **Vision (three heights, one goal)**:
@@ -40,7 +59,9 @@ Every chapter that follows is evidence measured by one of the rulers. The protag
 
 **The city-level height**: let the returns of superlinear innovation flow back to every citizen. The returns of agglomeration naturally concentrate toward the strong (β>1 is both the dividend and the risk of agglomeration); this belt bends them back with five equity mechanisms — public compute vouchers, a public data lake, AI night school, spatial equity, attribution equity. **Hyper is not an upward-bending curve for the few; it is an upward-bending curve every citizen can lean on.**
 
-**The methodology-level height**: establish "emergence under constraints" as a scientific paradigm of urban design. From the herringbone switch of 1909 to the Emergent Belt of 2026, this corridor has twice become the evidence of "how constraints are turned into creation". This time, the evidence is not a railway, but 15 locally reproducible computations, the mutual corroboration of five rulers, and one conclusion that three models independently converge upon.
+**The methodology-level height**: establish "emergence under constraints" as a scientific paradigm of urban design. From the herringbone switch of 1909 to the Emergent Belt of 2026, this corridor has twice become the evidence of "how constraints are turned into creation". This time, the evidence is not a railway, but 15 locally reproducible computations, the mutual corroboration of five rulers, and one conclusion that three models, on the same data and the same stitching assumption, converge upon.
+
+![Vision aerial 2035 (AI concept render, not a commitment of reality)](assets/media/vision-2035.jpg)
 
 **Five goals, corresponding to five functions and five measurable numbers**: ① connection — the three areas and two wings fully connected (λ across the critical line) [metric:core5_giant_span_ratio]; ② ecosystem — turn the "unmeasured middle layer" into "annually measured" (affordability, conversion rate, and inclusive compute enter the Phase-Transition Forum's annual report) [source:DATA-SRC-AGENT-TASKBOOK-20260518]; ③ scenarios — all ten scenario cards land in space, each with a person on duty and a fallback human channel [standard:BARRIER-FREE-ENVIRONMENT-LAW]; ④ supply — the gaps recognized by 25,476 POIs are filled according to the deviation list [metric:deviation_finance_pct]; ⑤ governance — the coordination game flips from "go it alone" to "cooperate" (Nash equilibrium unlocked) [metric:nash_lock_status_after].
 
@@ -200,6 +221,14 @@ The overall structure is therefore one line, three folds, two wings, seven nodes
 
 **How to read these three renderings**: all three are concept renderings (generated with Doubao Seedream 4.0; not site photographs, not a construction commitment) — Zhongzhiyuan's garden test band, the Origin's near-campus innovation street, and Dazhongsi's interface night. They answer the same question: after stitching, what will the people of this belt look like.
 
+![Zhongzhiyuan detailed plan (concept)](assets/figures/plan-zhongzhiyuan_ai_acceleration_area.en.png)
+
+![Origin Community detailed plan (concept)](assets/figures/plan-beijing_ai_origin_community.en.png)
+
+![Dazhongsi detailed plan (concept)](assets/figures/plan-dazhongsi_ai_industry_cluster.en.png)
+
+**How to read these three detailed plans**: one conceptual detailed plan per area — light grey = the existing building fabric (OSM measured footprints), orange = new public space, dark green = the main spine, white-cased roads = the existing road network, light land-use tints = the conceptual zoning. Plan + section + rendering form the three-piece set that constitutes each area's "detailed-design expression" (the conceptual depth of an integrated implementation scheme).
+
 ![Index of the three key areas](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
@@ -312,6 +341,39 @@ Four rulers, made into an annual check-up table: λc=0.42 (connection), p_c=59.2
 
 ![Core metric recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
+## Review-Dimension Self-Assessment and Data-Gap Matrix
+
+**Self-assessment across the 13 review dimensions (each assessed against the task book's review_dimensions, each with an evidence anchor)**:
+
+| Dimension | Self-assessment | Evidence anchor |
+|---|---|---|
+| Goal alignment | Strong | The three heights of the vision point directly at the "global AI industry highland and pilgrimage site"; H=1.556 shows investability |
+| Functional match | Strong | The five functions land one by one (full-stack = Zhongzhiyuan test band / ecosystem = Origin + seven cases / scenarios = ten cards / vitality = POI infill / governance = Phase-Transition Forum) |
+| Brand recognizability | Strong | THE EMERGENT BELT + Hyper Line + the "superlinear line" logo (0 conflicts in the full-library name check) |
+| Regional synergy | Medium | Huairou / Future Science City / E-Town / Beijing-Tianjin-Hebei / "two belts, one area" paragraphs added; the conversion-loop mechanism remains conceptual |
+| Planning innovativeness | Strong | The four-threshold criteria system + bottom-up POI zoning + the CA counterfactual — planning moves from "drawing" to "computing" |
+| Industrial support | Medium | Ecosystem map with 60+ data points; but public measurement of the middle layer (affordability / conversion) is missing, and the proposal fills it with annualized measurement |
+| Scenario perceptibility | Strong | All ten scenario cards land in space with their "necessity"; three renderings for the three areas |
+| Spatial explicitness | Medium | The 7 gaps / three areas / two wings are clearly located; specific plots stay conceptual because ownership data is missing |
+| Transferability | Strong | An 8-item component library / a three-piece wayfinding set / an attraction funnel / an investment package — a professional team can take over directly |
+| Completeness of expression | Strong | 20 bilingual chapters + 22 figure groups + 9 renderings + A3/A0 + a WeChat edition |
+| Public compliance | Strong | All data sources registered, zero PII, complete copyright statement, provisional labelling throughout |
+| International reach | Medium | Full English alignment and internationalized naming; communication assets (WeChat edition) are ready, channels not yet |
+| Long-term operational value | Strong | The Phase-Transition Forum's annual check-up + the honor wall + the developer festival = a brand-asset mechanism |
+
+**The data-gap matrix (what is missing, how much, how to fill it, how to cope now)**:
+
+| Gap | Impact | Interim stance | Action once available |
+|---|---|---|---|
+| Official redlines / three-area polygons | Area and boundary precision | Provisional boundary labelled everywhere, never passed off as a redline | Recalculate the whole package |
+| Regulatory-plan conditions (FAR / height / density / setback) | Development intensity | All marked "pending official data"; only conceptual massing | Fill the forms and recheck the character gradient |
+| Heritage protection zones | Landmarks and view corridors | Conservative principle + conceptual control | Verify the pilgrimage-landmark scheme |
+| Existing buildings / ownership | Retain–renovate–demolish | Three principles, no building-by-building conclusions | Produce the R-R-D classification |
+| Municipal pipelines / capacity | New infrastructure | System-level suggestions only | Deepen facility layouts |
+| Middle-layer measurement (affordability / conversion / inclusive compute) | The "bottom-up" proposition | The proposal fills it with an annualized measurement mechanism | The Phase-Transition Forum's first report |
+
+**The minimal task-response matrix (announcement 1.3–1.5 and agent.1–6 → chapters → evidence)**: registered in full, item by item, in compliance_matrix.json (23 tasks, each with seven classes of evidence — report_sections / geojson_layers / metrics / drawings / visual_sections / source_ids / assumption_ids / self_check_ids); the main text does not repeat the index. Here only the primary response positions of the six agent tasks: agent.1 (vision/naming chapter), agent.2 (consultation chapter, seven cases), agent.3 (scenario chapter, ten cards, five personas), agent.4 (blue-green chapter, three landmarks + component library), agent.5 (coordinated-research chapter, cultural narrative), agent.6 (phasing chapter, operations mechanism).
+
 ## Risk, Copyright, and Compliance
 
 Data compliance: Amap POI is used only as aggregate indicators and density fields, with no raw point data published; OSM under ODbL attribution; all official sources registered [source:DATA-SRC-AMAP-POI-20260815]. Copyright: figures and geometry generated locally by KUN-SAL; the AI concept renderings (Doubao Seedream 5.0/4.0) are conceptual expressions, not site photographs, with their generation recorded in the copyright statement; the naming and logo require trademark and font clearance; no personal privacy or unauthorized material. Compliance boundaries: this proposal is an open co-creation recommendation that does not replace formal planning and constitutes no government-reviewed conclusion; all regulatory-plan indicators are "pending official data"; AI scenarios respect the generative-AI measures and the Barrier-Free Law, and no privacy-infringing, over-monitoring, or non-human-reviewable scenarios are made [standard:GENERATIVE-AI-INTERIM-MEASURES]. The materials to be supplemented and the recalculation triggers are in the assumptions file: the official redline, the regulatory plan, the heritage-protection scope, the status-quo buildings and ownership, and municipal pipelines [depth:risk_missing_data].
@@ -326,7 +388,7 @@ Data compliance: Amap POI is used only as aggregate indicators and density field
 
 **Sentence two: every design move is to move aside what blocks emergence, not to draw another picture.** Reconnect the severed line (seven-node stitching, integration +65%~+132%); unlock the locked blocks (CA proves: no intervention = path lock-in, intervention = 42 cells redistributed); measure the unmeasured middle layer (three indicators made annual). This is the logic of "growing a city", not "building a city" — in Batty's own words: the planner's task is not to write the script for the system, but to create the conditions that let the system grow itself [metric:simulacra_jobs_reach_stitched].
 
-**Sentence three: the treatment is falsifiable, and it has already been verified independently by three models.** The SIMULACRA four-sector re-run: 25-minute-circle job reach +15.9%, commute cost −3.4%; the LUTI land-use–transport match rate 46.2%→61.5%; the coordination game's Nash equilibrium flips from "go it alone" to "cooperate" (η +60%). Three models, three sets of mathematics, cross-corroborated on the same data and the same stitching assumption — convergence itself is not evidence of independence, but the three models' mechanisms (flow redistribution, path lock-in, match degree) are mutually distinct and their conclusions point the same way, which constitutes a falsifiable cross-verification [depth:metrics_recalculation] [depth:metrics_recalculation].
+**Sentence three: the treatment is falsifiable, and it has already been cross-verified by three models.** The SIMULACRA four-sector re-run: 25-minute-circle job reach +15.9%, commute cost −3.4%; the LUTI land-use–transport match rate 46.2%→61.5%; the coordination game's Nash equilibrium flips from "go it alone" to "cooperate" (η +60%). Three models, three sets of mathematics, cross-corroborated on the same data and the same stitching assumption — convergence itself is not evidence of independence, but the three models' mechanisms (flow redistribution, path lock-in, match degree) are mutually distinct and their conclusions point the same way, which constitutes a falsifiable cross-verification [depth:metrics_recalculation] [depth:metrics_recalculation].
 
 **Sentence four: this is an urban operating system, not a blueprint.** It has criteria (the four rulers λc, p_c, D, H), a check-up (the Phase-Transition Forum's annual public report), a self-test line (if Phase I acceptance does not pass 40%, stop and review), an exit condition (projects that cannot find a caretaker stay on paper), and an equity loop (superlinear returns flow back to citizens). It can be calibrated every year and evolve with the city — **this is exactly what "the computable city" means: the city is no longer drawn only once, but continuously read, continuously tuned, and continuously allowed to grow itself.**
 
