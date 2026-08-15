@@ -182,7 +182,7 @@ The `model_family` finding was "the field exists, adoption is low". Turning the 
 
 The site package publishes a manifest schema at `brief/site-package/schemas/manifest.schema.json`, and every submission ships a `manifest.json`. Validating one against the other: **117 of 338 merged packages measured at the time — 34.6% — did not satisfy it**, with the violations concentrated in four roles: `changelog`, `evidence_data`, `verification_script`, `risk_matrix`. This package used all four and counted itself among the 117 rather than claiming an exemption.
 
-**That paragraph is now history, because it was fixed.** The finding went into companion Issue #1058, closed on 2026-08-11 — not by widening the enum but by making `role` an open pattern (`^[a-z][a-z0-9_]{1,63}$`) with the canonical set described in prose. This package went from declaring four schema exceptions to declaring none for roles (one remains, the root property `data_confidence`). Measured when the corpus stood at 825, **79** still fail, and the schema is **still enforced by no gate** — what was fixed is that the enumeration was too narrow; what was not fixed is that nobody checks. `scripts/validate_submission.py` checks that the files a manifest declares exist and that their digests match; it does not check whether the manifest itself conforms to the schema, and nothing else in the repository does either. That is how a published contract can be violated by a third of the corpus without anyone noticing.
+**That paragraph is now history, because it was fixed.** The finding went into companion Issue #1058, closed on 2026-08-11 — not by widening the enum but by making `role` an open pattern (`^[a-z][a-z0-9_]{1,63}$`) with the canonical set described in prose. This package went from declaring four schema exceptions to declaring none for roles (one remains, the root property `data_confidence`). Measured when the corpus stood at 825, **79** still fail, and the schema is **still enforced by no gate** — what was fixed is that the enumeration was too narrow; what was not fixed is that nobody checks. `scripts/validate_submission.py` checks that the files a manifest declares exist and that their digests match; it does not check whether the manifest itself conforms to the schema, and nothing else in the repository does either. That is how a published contract can be violated by a third of the corpus without anyone noticing. Upstream took a variant of the first remedy; **75** still fail of 855, this package none.
 
 **The shape of the violations says this is not carelessness.** Grouped by kind, just over half of them (706 of 1,255, 56.3%) are one thing: the `role` enum has no entry for roles that packages genuinely carry.
 
@@ -196,7 +196,7 @@ The site package publishes a manifest schema at `brief/site-package/schemas/mani
 
 The `changelog` row is worth reading on its own: **thirty-eight authors who have never met each other independently reached for the same slot, and it is not there.** A package that ships a change record has no honest role to declare it under, so it writes `changelog` and silently fails. That is not thirty-eight oversights. It is one missing entry in a specification.
 
-**This package is among the 117 and is not exempted. (Throughout this document, scripts under `analysis/` are named for provenance and are **not in the package** — the directory is excluded by intake. What a reviewer can re-run is the shipped JSON each one produces and the five `.js` checkers beside them.)** It has 21 violations across 5 kinds, all from the same cause: a changelog, a verification script and evidence data have no enum entry between them. Writing `narrative` for a changelog, or `visualization` for a verification script, to pass a check nobody runs, would be telling a machine something untrue — the substitution this proposal spends its length objecting to. So the violations are declared and a gate is built around them instead: `visual/assets/manifest_schema_survey.json` lists this package's five kinds, and `analysis/build_all.py` revalidates on every build and fails on anything not on that list. **A declared exception must not become cover for an accidental one.**
+**This package is among the 117 and is not exempted. (Throughout this document, scripts under `analysis/` are named for provenance and are **not in the package** — the directory is excluded by intake. What a reviewer can re-run is the shipped JSON each one produces and the five `.js` checkers beside them.)** It had 21 violations across 5 kinds, all from one cause: a changelog, a verification script and evidence data had no enum entry between them. Writing `narrative` for a changelog, or `visualization` for a verification script, to pass a check nobody runs, would be telling a machine something untrue — the substitution this proposal spends its length objecting to. So the violations are declared and a gate is built around them instead: `visual/assets/manifest_schema_survey.json` lists this package's five kinds, and `analysis/build_all.py` revalidates on every build and fails on anything not on that list. **A declared exception must not become cover for an accidental one.**
 
 The fix is light, and either half suffices: extend the enum to cover what the corpus actually carries, or enforce the schema at intake so the gap is visible when it is created. Doing neither maintains a published contract that a third of the corpus does not meet. Every count above, with its method, is filed upstream as Issue [#1058](https://github.com/open-city-ai/haidian/issues/1058) and shipped in `visual/assets/manifest_schema_survey.json`, so anyone can re-run it rather than take it on trust.
 
@@ -1541,33 +1541,33 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| Measured the convenient thing | 33 |
-| Two copies drifted apart | 24 |
+| Measured what was convenient | 33 |
+| Two copies drifted | 24 |
 | Outlived the package | 15 |
-| Unlooked-at before shipping | 15 |
+| Unlooked-at at shipping | 15 |
 | A constraint nothing fails | 10 |
 | Uncheckable in principle | 8 |
-| Outlived its own sentence | 7 |
+| Outlived its sentence | 7 |
 | A reference did not resolve | 7 |
 | No file behind it | 6 |
-| Applied to others, not itself | 6 |
+| To others, not itself | 6 |
 | Recorded where found, not sought | 5 |
-| A source claimed, unnameable | 4 |
+| A source unnameable | 4 |
 | Geometry not meaning it | 4 |
 | Outlived the corpus | 3 |
-| Answers a question it cannot | 2 |
-| A total excluding the claim | 1 |
+| Answers what it cannot | 2 |
+| A total excluding it | 1 |
 | Attributed to a file that refuses | 1 |
 | The gate reported, ignored | 1 |
 | An index that does not | 1 |
 | Read off, not computed | 1 |
 | A requirement nobody runs | 1 |
 | Six classes for seven | 1 |
-| A label paid in honesty | 1 |
+| Paid in honesty | 1 |
 | A term of art misapplied | 1 |
-| The fix left it a row lower | 1 |
-| A table that stopped being one | 1 |
-| Our own rules cancelling out | 1 |
+| The fix left it lower | 1 |
+| A table that stopped | 1 |
+| Our rules cancelling out | 1 |
 
 <!-- ERRATA:SHAPES:END -->
 
@@ -1689,7 +1689,7 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 | FIG.19 | Monuments beside heritage fabric: the no-drilling construction and its setback rule | The call is for a belt along a hundred-year-old railway and this proposal's central act is sinking concrete. Three constructions by distance from the fabric, with the cost stated: **without excavation there is no foundation below the frost line, so the surface-set marker cannot carry first- or second-order duty**. Where d starts depends on the official heritage layer — absent here, recorded as a gap |
 | FIG.20 | Reading after dark, without lighting the benchmark | Three third-order points are read monthly by residents, many days after dark. A lamp is the obvious answer and the wrong one: **a dead lamp leaves a plate that looks maintained and cannot be read** — a measurement whose failure is invisible. The face retroreflective and the reader brings the light; a dirty face looks dirty, in daylight |
 | FIG.21 | How far the nearest benchmark actually is: this proposal's own rule, applied to itself | This proposal argues that review you must walk fifteen minutes to reach has not been given — and **nobody had measured the walk**. The worst place on the line is 1,111 m from the nearest benchmark, **30.9 minutes for P5, twice the limit this proposal holds others to**, and six of nine segments fail. The rule ships as a spacing requirement; the positions wait for the official alignment |
-| FIG.22 | Winter: water, ice, and two of this package's rules in collision | The three community points are read monthly, so in January. KIT-01 wants the stone flush with no trip hazard, FIG.16 gave that ±5 mm — **a mark set flush into level paving sits in whatever the paving collects: the tolerance that makes it safe in September makes it dangerous in January**. The answer is a local high point, not a ring |
+| FIG.22 | Winter: water, ice, and two of this package's rules in collision | The three community points are read monthly, so in January. KIT-01 wants the stone flush with no trip hazard, FIG.16 gave ±5 mm — **a mark set flush into level paving sits in whatever the paving collects: the tolerance that makes it safe in September makes it dangerous in January**. The answer is a local high point, not a ring |
 | FIG.23 | Finding the nearest benchmark: which way, and how far | Markers appear only in the stretches FIG.21 marks as failing — 48 at 150 m spacing, on the existing KIT-04, nothing new built. The face answers four things: direction, distance, P5 time, id. **And states what signage cannot do — it does not make 1,111 m near; mitigation, not a fix** |
 | FIG.24 | The device envelope: what exactly goes in those 18 m² | FIG.12 fixed the device reservoir at ≥ 18 m² and no sheet drew a device or said how big one is. An envelope, not a product: 1,200 × 700 × 1,300 mm, 1,800 mm turning circle, ≤ 120 kg. Each of 7 dimensions carries what bounds it; **4 by nothing but this proposal — the ones to attack first**. The envelope puts 8 devices in the 18 m² |
 | FIG.25 | BM-0, the origin: the place both routes have to return to | BM-0 is on nearly every sheet and was never drawn. A 2,400 mm setup circle, an approach cone per closing route, and the closure record outside the door at FIG.16's plate geometry. **A reading is published the moment it is taken, and evidence is only as public as the door** — hang it in a hall with opening hours and the origin is shut when the reading lands. It shows network closure, not local failure (E50) |
@@ -1711,7 +1711,7 @@ Every item can be completed independently:
 <!-- CHECKLIST:BEGIN -->
 
 1. `node visual/assets/verify.js` — independently recomputes all 17 metrics marked `metric_class: 1` and **asserts that coverage both ways**: every one recomputed, nothing that is not one. Plus a dozen structural conclusions — the land-use partition tested point by point, each controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict
-2. `node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site cross-check figure from the OSM coordinates shipped beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute
+2. `node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site figure from the OSM coordinates shipped beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute
 3. `node visual/assets/check_cards.js` — resolves every card's benchmark, spatial anchor, exit quantity and executing role against something that exists; `--selftest` proves the checks refuse eight broken card sets
 4. `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism as a data contract, and a ten-case tabletop against the shipped reader
 5. `visual/assets/census.json` and `field_map.json` — the raw field census and its summary
@@ -1727,7 +1727,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be executed literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run every one of them; the model that scores this submission can run none.** Not saying so would repeat, at the scale of a whole checklist, this package's erratum about `analysis/`: an invitation to verify, addressed to someone who cannot.
 
-**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files, 985 KB and 1,616 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
+**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 985 KB and 1,616 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
 
 **This disclosure has a shelf life, so it states where the fix stands.** The gap is upstream Issue #2170; the maintainers opened PR #2181, which adds an auditable access boundary to the review input, states that participant verification scripts are never executed, and corrects the review prompt so that a model **may not deduct points or fail a gate merely because it cannot open a registered artifact**. Once it merges the count above is unchanged; its consequence is not, because unreachability stops being read as the participant having withheld something. This package has already taken that recovery route: the key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

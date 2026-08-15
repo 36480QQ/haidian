@@ -119,7 +119,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 81 zh / 81 en unit-carrying measurements in prose, same set in both editions; 181/175 bare numbers reported but not blocked, and one designed check (78 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 81 zh / 81 en unit-carrying measurements in prose, same set in both editions; 182/176 bare numbers reported but not blocked, and one designed check (78 candidates) not shipped"
     },
     {
       "check_id": "PKG_COMPUTED_VALUE_QA",
@@ -183,7 +183,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 51 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 4 bytes to spare"
+      "message": "intake_limits_qa.py — intake limits: 51 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 10 bytes to spare"
     },
     {
       "check_id": "PKG_MARKDOWN_STRUCTURE_QA",
