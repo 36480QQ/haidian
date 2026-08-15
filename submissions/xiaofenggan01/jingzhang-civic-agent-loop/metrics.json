@@ -729,6 +729,19 @@
       "assumptions": [
         "版本史见 changelog.md，每版对应一个可验证增量"
       ]
+    },
+    "gate_deep_dive_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of gate deep-dive cards completed",
+      "confidence": "high",
+      "assumptions": [
+        "G0-G6 逐道深化;当前完成 1/7"
+      ]
     }
   }
 }

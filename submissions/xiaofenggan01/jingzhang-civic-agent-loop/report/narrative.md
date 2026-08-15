@@ -330,3 +330,7 @@
 | land_use_compatibility_rule_count | count | 8 | high |
 
 字典与 metrics.json 一一对应，由资料环自动生成，随版本滚动更新。
+
+## 门闸深化卡 · G0 资料就绪
+
+进入条件全解：五源核验（任务书/来源登记/事实包/边界/公告）逐项打勾 + provisional 披露三件套（proposal/sources/assumptions 一致）；Receipt 阶段示例：G0 过闸收据的 evidence_refs 必须五源齐全且逐条可点开；失败案例模板：任一来源断链率超 5% 即回资料环，补链清单自动生成。
