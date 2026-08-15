@@ -151,7 +151,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "figure_citation_qa.py — figure citations: all 34 sheets cited from the argument in both editions outside the drawing index, and all 61 shipped deliverables named in each edition separately; 4 'never drawn' claim(s) (4 zh, 0 en — the English patterns match the unscoped present perfect, and the English text uses the past perfect, which scopes by tense), every one of them scoped to the moment it was true; 61 distinct ids cited across five namespaces, every one reachable from both editions; 8 finished documents in two languages, each named by its own edition"
+      "message": "figure_citation_qa.py — figure citations: all 34 sheets cited from the argument in both editions outside the drawing index, and all 62 shipped deliverables named in each edition separately; 4 'never drawn' claim(s) (4 zh, 0 en — the English patterns match the unscoped present perfect, and the English text uses the past perfect, which scopes by tense), every one of them scoped to the moment it was true; 61 distinct ids cited across five namespaces, every one reachable from both editions; 8 finished documents in two languages, each named by its own edition"
     },
     {
       "check_id": "PKG_FORMAL_VISUAL_METRICS_QA",
@@ -199,7 +199,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 53 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 20 bytes to spare"
+      "message": "intake_limits_qa.py — intake limits: 54 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 2 bytes to spare. The package totals 34.1 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
