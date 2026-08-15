@@ -4,6 +4,7 @@
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
+  "cover_image": "assets/media/cover.png",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
   "submission_type": "ai_agent",
@@ -14,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-14T21:34:56-07:00",
+  "generated_at": "2026-08-14T23:42:38-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -27,13 +28,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "244641af4e64c2026b78a81359f37d29ae6052dbf72c41924822b29165a5a256"
+      "sha256": "6fdc0f7dd6287e69d557b4a7b1a9659784f7f6a78d5ee02c772ffa47fdb48f37"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "6a3bf5d33df716e190292cc4ef9451721777003ec3382775d178bf7ad4fcb96a",
+      "sha256": "15aac522eb34a460e172b01888658f4c127dcda9df356f8a51d3829c6b086a61",
       "language": "neutral"
     },
     {
@@ -47,7 +48,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "908cfc2ee47c175f704566a809e27e1aa0ab6d65d99198fb5d7b9989e04d8f16",
+      "sha256": "cdc2606e512e695d9d129a05772e8ca1fab0cfd464ed7b9f5b9cdf46e1f28875",
       "language": "neutral"
     },
     {
@@ -61,21 +62,21 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "682a30b26305b257dc3c8dc7c747824adbdeed4eaa3619b21086508fde7d616d",
+      "sha256": "e9af12fc7768b89c2f7207e2acff871ef6199ba8bdb7f616319374c259e8e49c",
       "language": "neutral"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9362023991e641780397bc2dc6e39e54ddce9972d8ac4bae808158ee561b911e",
+      "sha256": "36ac1d0f607627ee086ba4a5171880e239e5136d93e525c2d00e35711bd97207",
       "language": "neutral"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "2ff2190fb66e91bcd6db336e30d7e0a29d2f4d0356b6a747ec502ddd3cb66d75",
+      "sha256": "42ba566a4f1f24ea72a8571d61e7c0c79e862eba95c3737deffd54f55118e1e7",
       "language": "neutral"
     },
     {
@@ -97,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6f9f1ac7cf0344091f15afa01758a2d1ae58f514880283177c20957b1d092187"
+      "sha256": "35f391a6595bb08ffd0ff647dfcfaaa3171e2ae5716a7d3eeae0fa346d61ac35"
     },
     {
       "path": "report/narrative.md",
@@ -110,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b55619bf5946511538de44b4df1004517d6ef32a0d35128a1b55ec10366251c1",
+      "sha256": "05467d58a8840dedb9ae649e23213e1941a48559901d2a1b39e5e88d997c19c4",
       "language": "zh"
     },
     {
@@ -265,7 +266,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "f4226241c3492609f70eb09850ad02d2ce70948746692a23f343a351f36e6fa1"
+      "sha256": "8a947938242f11badeda55f82436fa5e883139728243611320fb242d1dfd5446"
     },
     {
       "path": "visual/assets/verify.js",
@@ -410,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e6ac5a125b1b10455cc88e1467619c550efc3f157b015630b9c22d4e3b57305a"
+      "sha256": "ce1f3b7101ce957b6c705cb7b2163127f05c42adf50084cc4fd3793b96cb127c"
     },
     {
       "path": "report/proposal.en.html",
@@ -418,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "88f5688a28cc0b4d2506d220f578f8ebd9fb783e5fd338c76876b11a12879a21"
+      "sha256": "216093a902bbcc324f5b96a075ea4d14c91b06671e61ec3e414d9e791c8ac391"
     },
     {
       "path": "visual/index.en.html",
@@ -433,7 +434,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "de333a6e73c41963b63212c8e3844a6a0256721236255bc04ba78bc4820fe603"
+      "sha256": "3bb615f9e73aea360a0dffc5848d4ea531f3111371a8a177fb1d84113566d9ba"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -576,14 +577,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "1caf5541782fb080b7ba927bfc8f599f73d908e992046ddc4ac2831e3e3ef0b7"
+      "sha256": "84c75e066a9335b4ca023501747b93953cb12ed08db11e12471442e57e456d98"
     },
     {
       "path": "visual/assets/errata.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "e43fe2f77f540ca841ca3b56965ff97ae8301911e25a7bb5455b5ea997974bb9"
+      "sha256": "4756ace8483b6b91088f638fab4fdc72f1861195fd029c4cbafd649f84aa6ac1"
     },
     {
       "path": "visual/assets/taskbook_coverage.json",
@@ -833,14 +834,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "f56b29eff4dfbaac77f69bd68abb406b674e9fe3a101b3ceed162913be0aa918"
+      "sha256": "3eecb3843ae450f96d3c27d3b57ad197c9217829e8f6454a267b0977c3a1dee0"
     },
     {
       "path": "visual/assets/claim_audit.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "a4b048f0e6afa1925c820e46a3fa61f3fb611b5ada9ba80e5029d79bedf22c85"
+      "sha256": "b234c961e7edb82ac1ca0f3fd294a9f76683be28bccbcb2bea7818051bb43311"
     },
     {
       "path": "assets/figures/device.png",
@@ -991,6 +992,13 @@
       "language": "en",
       "sha256": "d59bc262adc1451bdcc593021c8c73d186f0706a2bc6217b91a448fe0d1bd712",
       "translation_of": "assets/figures/station.png"
+    },
+    {
+      "path": "assets/media/cover.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "419411b5c40682257f6368cf9dc66351caae5b14f4bdc1a9e844f35671d42bbb"
     }
   ],
   "validation_claim": {

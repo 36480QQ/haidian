@@ -517,11 +517,11 @@ Six cases, each asked one question: **what mechanism establishes its public trus
 
 | # | Case | Trust mechanism | Re-measurable | Transferable point |
 |---|---|---|---|---|
-| C1 | Algorithm registers in Helsinki and Amsterdam | Public register of each algorithm in use: purpose, data, responsible owner, appeal route | High: entries can be checked one by one | Directly supplies the information base for a benchmark plaque |
+| C1 | Helsinki algorithm register, cf. Amsterdam | Public register of each algorithm in use: purpose, data, responsible owner, appeal route | High: entries can be checked one by one | Directly supplies the information base for a benchmark plaque |
 | C2 | Risk tiering in the EU AI Act | Duties differentiated by risk class | Medium: the tiering is checkable, enforcement needs a regulator | Supports the tiered setting of tolerance F |
 | C3 | Singapore's AI Verify testing framework | Comparable reports produced with a standardised toolkit | High: the tests can be re-run | Supplies the technical form that re-survey takes |
 | C4 | Algorithmic impact assessment practice in the UK NHS | Mandatory ex-ante assessment and ex-post review for high-risk uses | Medium-high: the record is auditable | Supports the strictest tolerance for health scenarios |
-| C5 | Civic data-stewardship practice in Taipei and Barcelona | Data use decided by a citizen agenda | Medium: the agenda is public | Supports the public's right to initiate re-survey at third-order points |
+| C5 | Barcelona civic data-stewardship practice, cf. Taipei | Data use decided by a citizen agenda | Medium: the agenda is public | Supports the public's right to initiate re-survey at third-order points |
 | C6 | Reproducibility norms in open-source communities, e.g. artifact evaluation | A conclusion must ship a re-runnable artifact | High: the artifact executes | This proposal publishes all generation scripts and data products on that norm |
 
 All six point at one gap: **they register and they assess, and none institutionalises returning to the origin and computing.** A register tells you what a system declared. An assessment tells you what experts think. Neither answers *how much the conclusion differs when the same public question passes through different nodes at different times.* Closure error is the thing that fills that gap.
@@ -805,7 +805,7 @@ This package had been presenting the equivalent non-AI path, the stop-on-detecti
 
 | This proposal's rule | Verified legal basis | What changes |
 |---|---|---|
-| Every scenario must have an **equivalent non-AI service path** | Barrier-free Environment Construction Law, **Article 39**: venues providing medical, insurance, financial, water/electricity/gas services shall retain traditional service methods including on-site guidance and manual handling [source:BARRIER-FREE-ENVIRONMENT-LAW] | From a designer's goodwill to a **statutory duty** |
+| Every scenario must have an **equivalent non-AI service path** | Barrier-free Environment Construction Law, **Article 39**: public service venues handling medical care, social security, financial or utility payment matters shall retain traditional service methods including on-site guidance and manual handling [source:BARRIER-FREE-ENVIRONMENT-LAW] | From a designer's goodwill to a **statutory duty** |
 | On detection, **stop generation and transmission** rather than observe first | Interim Measures for the Management of Generative AI Services, **Article 14**: on finding unlawful content the provider shall promptly stop generation, stop transmission and eliminate it [source:GENERATIVE-AI-INTERIM-MEASURES] | From this proposal's stop rule to a **provider obligation** |
 | Appeal must carry a **numeric time limit** or it is unenforceable | Same Measures, **Article 15**: establish complaint and reporting mechanisms with a convenient entry, and **publish the handling process and the feedback time limit** | From this proposal's argument to **compliance with an existing requirement** |
 | Persona P4's **non-smartphone path** is non-waivable | Implementation Plan on Resolving Older People's Difficulties with Smart Technology (Guobanfa [2020] No. 45): keep traditional service methods running in parallel with smart innovation, retain the methods older people know across daily-life settings, and it names travel, medical care, consumption, culture and administrative affairs as the high-frequency cases [source:ELDERLY-SMART-TECH-PLAN] | From a persona constraint to a **policy basis with a scenario list to check against** |
@@ -1493,14 +1493,14 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-130 entries. By finder:
+150 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 91 | Found while working |
-| This package's own gate | 10 | Caught at build time — which is what a gate is for |
-| **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
+| The author | 109 | Found while working |
+| This package's own gate | 11 | Caught at build time — which is what a gate is for |
+| **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; [@](https://github.com/) on  |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1514,20 +1514,20 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **26** |
-| **Two copies of one thing drifted** | **19** |
-| **A claim outlived the package** | **13** |
-| **A deliverable was not looked at before shipping** | **12** |
-| **A hard constraint nothing could fail** | **8** |
-| **A reference did not resolve** | **7** |
-| **A number with no file behind it** | **6** |
-| **A number outlived the sentence holding it** | **5** |
-| A claim this medium makes uncheckable in principle | 4 |
+| The check measured the convenient thing | 31 |
+| Two copies of one thing drifted | 21 |
+| A claim outlived the package | 15 |
+| A deliverable was not looked at before shipping | 14 |
+| A hard constraint nothing could fail | 10 |
+| A reference did not resolve | 7 |
+| A claim this medium makes uncheckable in principle | 6 |
+| A number with no file behind it | 6 |
+| A rule applied to others but not to itself | 6 |
+| A number outlived the sentence holding it | 5 |
+| Recorded where it was found, not where anyone would look | 5 |
+| A source was claimed and could not be named | 4 |
 | Geometry did not mean what it said | 4 |
-| Recorded where it was found, not where anyone would look | 4 |
-| A rule applied to others but not to itself | 4 |
 | A claim outlived the corpus | 3 |
-| A source was claimed and could not be named | 2 |
 | A measurement answering a question it cannot answer | 2 |
 | A claim pointing at a total that excludes the very thing it claims | 1 |
 | Attributed to a file that refuses to do it | 1 |
@@ -1576,11 +1576,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **134 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **135 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 112 |
+| `author-originated` | 113 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1631,7 +1631,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four single sheets are also composed into two finished products: `drawings/a3-booklet.pdf`, an A3 booklet to be read page by page, and `drawings/a0-boards.pdf`, A0 boards to be read standing up. Two renderings of the text open directly: `report/proposal.html` is this document as a web page, and `visual/index.html` is a visual index threading the shipped structured data together; `report/narrative.md` is a continuous narrative without the tables and gate records, for a reader who wants only the argument. Five files ship behind the drawings: `visual/assets/personas.json` defines the nine personas and makes every `P` number in the prose and the scenario cards assertable one by one, and `visual/assets/score_correlates.json` holds this proposal's own statistics on what correlates with score across the field, `visual/assets/gate_mutation.json` the deliberate damage proving twelve of fifteen gates can fail, `visual/assets/claim_audit.json` the unit-carrying measurements checked across both editions, and `visual/assets/agent_declarations.json` the field's disclosure state. **Listing them is not housekeeping: a finished product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four single sheets are also composed into two finished products: `drawings/a3-booklet.en.pdf`, an A3 booklet to be read page by page, and `drawings/a0-boards.en.pdf`, A0 boards to be read standing up. Two renderings of the text open directly: `report/proposal.en.html` is this document as a web page, and `visual/index.en.html` is a visual index threading the shipped structured data together; `report/narrative.md` is a continuous narrative without the tables and gate records, for a reader who wants only the argument. Five files ship behind the drawings: `visual/assets/personas.json` defines the nine personas and makes every `P` number in the prose and the scenario cards assertable one by one, and `visual/assets/score_correlates.json` holds this proposal's own statistics on what correlates with score across the field, `visual/assets/gate_mutation.json` the deliberate damage proving twelve of fifteen gates can fail, `visual/assets/claim_audit.json` the unit-carrying measurements checked across both editions, and `visual/assets/agent_declarations.json` the field's disclosure state. **Listing them is not housekeeping: a finished product the prose never names is one nobody has been told exists.**
 
 <!-- FIGINDEX:BEGIN -->
 
