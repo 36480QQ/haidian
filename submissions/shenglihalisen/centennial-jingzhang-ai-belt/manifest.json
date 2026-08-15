@@ -2,7 +2,7 @@
   "schema_version": "0.2.0",
   "package_id": "shenglihalisen-centennial-jingzhang-ai-belt",
   "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "2026-08-13-shenglihalisen-v3",
+  "site_package_version": "2026-08-15-shenglihalisen-v4",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
@@ -177,7 +177,8 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "9d35dd5984c5b60b2072cb6f967d677fbddd6f4105a305df34df768f70ed9f62"
+      "sha256": "9d35dd5984c5b60b2072cb6f967d677fbddd6f4105a305df34df768f70ed9f62",
+      "language": "zh"
     },
     {
       "path": "self_check.json",
