@@ -1627,12 +1627,12 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **154 条**。按发现者分：
+当前 **155 条**。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
 | 独立审计 | 25 | 委托的审计对象是随包产物，不是草稿 |
-| 作者自查 | 113 | 本轮工作中发现 |
+| 作者自查 | 114 | 本轮工作中发现 |
 | 本包自己的闸门 | 11 | 构建时被抓出——这是闸门本该做的事 |
 | **包外评审** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190、[@](https://github.com/) 在  |
 
@@ -1649,7 +1649,7 @@ node visual/assets/verify.js
 | 形状 | 次数 |
 |---|---|
 | 检查测了方便测的东西 | 33 |
-| 同一件事的两份拷贝各自漂移 | 21 |
+| 同一件事的两份拷贝各自漂移 | 22 |
 | 声明活得比包的内容久 | 15 |
 | 交付物在提交前没被看过 | 14 |
 | 写成硬约束，却判不了不合格 | 10 |
@@ -1768,7 +1768,7 @@ node visual/assets/verify.js
 
 ### 图纸索引与阅读方式
 
-**这些图纸随包以哪几种形式存在。** 三十四张单页同时被排进两份成品：`drawings/a3-booklet.pdf`（A3 文册，逐页阅读）与 `drawings/a0-boards.pdf`（A0 展板，站着看）。正文另有两种可直接打开的渲染：`report/proposal.html` 是本文的网页版，`visual/index.html` 是把随包结构化数据串起来的可视索引；`report/narrative.md` 是不含表格与门禁记录的连续叙述版，供只想读论证的人。图纸背后的两份数据文件也随包：`visual/assets/personas.json` 定义九个画像并使正文与场景卡里每一个 P 编号可被逐个断言，`visual/assets/score_correlates.json` 保存本方案对全场评分相关性的自采统计。**列出它们不是清单癖：一件没有被正文指名的成品，等于没有人被告知它存在。**
+**这些图纸随包以哪几种形式存在。** 三十四张单页同时被排进两份成品：`drawings/a3-booklet.pdf`（A3 文册，逐页阅读）与 `drawings/a0-boards.pdf`（A0 展板，站着看）。正文另有两种可直接打开的渲染：`report/proposal.html` 是本文的网页版，`visual/index.html` 是把随包结构化数据串起来的可视索引；`report/narrative.md` 是不含表格与门禁记录的连续叙述版，供只想读论证的人。图纸背后的两份数据文件也随包：`visual/assets/personas.json` 定义九个画像并使正文与场景卡里每一个 P 编号可被逐个断言，`visual/assets/score_correlates.json` 保存本方案对全场评分相关性的自采统计。**还有一件在纸上做不出来的。** `assets/media/leveling-line.mp4` 是 54 秒的无声动态示意图：水准线从已知点出发，逐站传递高程，绕一周回到原点，剩下的差值就是闭合差。纸上出发与回来是同一张图，时间里不是——**你看着它离开，看着它累积，最后才知道它有没有回来，这正是「主张」与「测量」的分别**。站序、路线与 107 个架站取自随包几何（EPSG:4548），高差起伏为示意而非实测高程，画面每一帧都写明这不是实景渲染；同目录随包海报帧、中英双语 WebVTT 字幕与载明方法、限度与权利的文字稿。**列出它们不是清单癖：一件没有被正文指名的成品，等于没有人被告知它存在。**
 
 <!-- FIGINDEX:BEGIN -->
 
