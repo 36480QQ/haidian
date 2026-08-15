@@ -61,7 +61,7 @@
       "ai_package_stages": {
         "submissions/surenny/jingzhang-hidden-help-room": "formal"
       },
-      "total_bytes": 4091331,
+      "total_bytes": 1997350,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -122,12 +122,7 @@
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.123423,
         "public_space_ratio": 0.073281,
-        "case_study_count": 5.0,
-        "industry_test_count": 3.0,
-        "scenario_card_count": 10.0,
-        "persona_count": 6.0,
-        "landmark_count": 3.0,
-        "implementation_gate_count": 5.0
+        "scenario_card_count": 10.0
       }
     },
     "stderr": ""
@@ -145,11 +140,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
-          "standard": 5,
-          "depth": 15,
-          "data": 11,
-          "metric": 5
+          "source": 4,
+          "standard": 3,
+          "depth": 11,
+          "data": 8,
+          "metric": 8
         }
       }
     },
