@@ -670,6 +670,33 @@
         "purpose": "Package-level review navigation and per-file status registry; navigation only, creates no evidence and changes no maturity or rights state.",
         "inventory_note": "The index registry covers all 141 manifest paths; the frozen geometry/metrics hashes and 12/8/3/36 counts recorded inside it must stay equal to this package_validation_contract."
       },
+      "browser_matrix_r22": {
+        "contract_id": "JZ-BROWSER-MATRIX-R22",
+        "executed_at": "2026-08-15",
+        "environment": "Google Chrome 151.0.7922.138 headless + Chrome DevTools Protocol + Node.js 22 built-in WebSocket; zero-dependency package-external driver",
+        "case_count": 18,
+        "bilingual": ["zh", "en"],
+        "result": "all_pass",
+        "key_measurements": {
+          "viewport_1440x900_page_overflow": false,
+          "viewport_390x844_true_device_metrics_page_overflow": false,
+          "no_javascript_walk_steps_visible": 5,
+          "no_javascript_signal_static_table_rows": 12,
+          "no_javascript_package_index_present": true,
+          "reduced_motion_stays_on_state_01_after_2_5s": true,
+          "print_backstage_library_open": true,
+          "first_focusable_is_skip_link": true,
+          "motion_boundary_at_12_25s_state": "02",
+          "images_missing_alt": 0,
+          "aria_live_present": true,
+          "h1_count": 1,
+          "console_errors": 0,
+          "failed_requests": 0,
+          "external_hosts": 0
+        },
+        "visual_content_changes": 0,
+        "certification_note": "This matrix is programmatic browser verification of layout and interaction only; it is not assistive-technology certification, human visual inspection, field evidence or an approval of any kind."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,

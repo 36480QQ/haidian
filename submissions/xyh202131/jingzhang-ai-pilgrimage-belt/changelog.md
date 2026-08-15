@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v22.0 - 2026-08-15
+
+**Browser QA matrix execution and evidence writeback / 浏览器交互 QA 矩阵执行与证据回写**
+
+- 第 22 轮只在第 21 轮 PR #2655 合并（merge SHA `0579f1cd282f3b142594b2bd59419554dd6f60e2` 进入 canonical `main@dd40574337372e26b10c9ea73a7d680f74764394`）且 443 个开放 PR 文件级扫描无竞争后开始。本轮不改任何视觉或正文内容，只执行并回写浏览器交互 QA 矩阵证据。
+- Round 22 began only after Round 21 PR #2655 merged (merge SHA `0579f1cd282f3b142594b2bd59419554dd6f60e2` entered canonical `main@dd40574337372e26b10c9ea73a7d680f74764394`) and a file-level scan of 443 open PRs found no competing PR. The round changes no visual or narrative content; it only executes and writes back browser interaction QA matrix evidence.
+- 18 项双语 CDP 矩阵（Chrome 151.0.7922.138 headless + CDP + Node.js 22 内置 WebSocket，包外零依赖驱动器）对当前真实 visual 页面执行：真实 390×844/1440×900 视口零页面级横向溢出、禁 JavaScript 下索引/五步/六问/12 行合同完整、减少动态单步、打印展开、键盘跳转首焦点、12.25 s 状态边界、alt/aria-live/h1、控制台/失败请求/外部主机全 0。结论 all_pass，视觉内容零缺陷、零修改。
+- An 18-case bilingual CDP matrix (Chrome 151.0.7922.138 headless + CDP + Node.js 22 built-in WebSocket, zero-dependency package-external driver) ran against the real visual pages: zero page-level horizontal overflow at true 390×844/1440×900 viewports, complete index/five-steps/six-questions/12-row contract without JavaScript, single-step reduced motion, print expansion, keyboard skip-link first focus, the 12.25 s state boundary, alt/aria-live/h1 checks, and 0 console errors, failed requests or external hosts. The matrix concludes all_pass with zero visual-content defects and zero visual changes.
+- 证据以结构化块写入 `site-grounding-register.json#package_validation_contract.browser_matrix_r22`；narrative 增补 r22 固定点，收束 r20“本会话未做浏览器交互矩阵”的披露。矩阵是程序化浏览器验证，不是辅助技术认证、人工像素目检、现场证据或任何批准。
+- The evidence is written as a structured block into `site-grounding-register.json#package_validation_contract.browser_matrix_r22`; the narrative gains a Round 22 fixed point that supersedes the Round 20 "no interactive browser matrix this session" disclosure. The matrix is programmatic browser verification only — not assistive-technology certification, human pixel inspection, field evidence or any approval.
+- 冻结项保持不变：geometry、metrics、sources.json、四份 PDF、全部图件与媒体、proposal 与 visual 内容均未变；12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。矩阵 PASS、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: geometry, metrics, sources.json, the four PDFs, all figures and media, and all proposal/visual content are untouched; 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths are unchanged. A matrix PASS, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v21.0 - 2026-08-14
 
 **Source freshness audit first execution / 来源新鲜度审计首次执行**
