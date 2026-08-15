@@ -13,9 +13,9 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Site boundary from official site package."
+        "This area is calculated from provisional boundaries generated from public data for temporary visualization and concept design ONLY. It is NOT based on official redlines and MUST NOT be used for precise area calculation or formal planning. Recalculate when official geometry is supplied."
       ]
     },
     "building_footprint_area_sqm": {
@@ -26,9 +26,9 @@
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
+      "confidence": "low",
       "assumptions": [
-        "Calculated from provisional building footprints."
+        "This is a participant-generated design sample for concept demonstration ONLY. It does NOT represent complete current building coverage. Actual building survey data is not available in the public site package."
       ]
     },
     "green_ratio": {
@@ -40,8 +40,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "Calculated from provisional green space layer and provisional site boundary. This ratio is for internal concept comparison ONLY and MUST NOT be treated as formal green space compliance data."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -52,8 +54,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "Calculated from provisional public space layer and provisional site boundary. This ratio is for internal concept comparison ONLY and MUST NOT be treated as formal public space compliance data."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -75,8 +79,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "medium",
+      "assumptions": [
+        "Three key areas are defined per taskbook requirement. Their boundaries are provisional and generated from public data for concept design ONLY."
+      ]
     }
   }
 }
