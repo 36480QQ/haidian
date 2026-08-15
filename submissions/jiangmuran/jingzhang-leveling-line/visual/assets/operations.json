@@ -52,7 +52,7 @@
     "name_zh": "可停留座具",
     "name_en": "Seating that permits staying",
     "hard_constraint_zh": "面高 450 mm 带扶手，便于起身；距读数牌 ≤ 2,000 mm 且在视线内，使取读数不需要站立等待。详图 FIG.16",
-    "hard_constraint_en": "Seat 450 mm high with armrests, so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so taking a reading needs no standing wait. Detailed in FIG.16",
+    "hard_constraint_en": "Seat 450 mm high with armrests, so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so a reading needs no standing wait. FIG.16",
     "serves_personas": [
      "P5",
      "P7"
@@ -533,7 +533,7 @@
      76358
     ],
     "note_zh": "上表为**现状布点**的年运营成本。FIG.21 量出全线最远处距最近水准点 1,111 m，对 P5 是 30.9 分钟，九个区段中六个不满足本方案自己的十五分钟规则；补齐需新增 9 个三等点。**那不是同一张表**：补齐后的网络按同一模型另需下列一笔——复测工时、耗材，以及九套标准件每年的更换与安装工时（勘误 E67：这一行曾只算复测，与上表被修正之前犯的是同一个错，只低一行）。把现状成本当作合规网络的成本，是本包会在别人包里指出的那种替换。",
-    "note_en": "The table above prices the network **as laid out**. FIG.21 measures the worst walk on the line at 1,111 m — 30.9 minutes for P5 — and finds six of nine segments failing this proposal's own fifteen-minute rule; closing it needs nine more third-order points. **That is not the same table**: a compliant network costs the following again on the same model — re-survey hours, consumables, and the yearly part swaps and fitting labour for nine more kits (E67: this row counted re-survey only, the omission the table above had just been corrected for, one row lower). Letting the as-laid-out figure stand in for the compliant one is the substitution this package would flag in someone else's."
+    "note_en": "The table above prices the network **as laid out**. FIG.21 measures the worst walk on the line at 1,111 m — 30.9 minutes for P5 — and finds six of nine segments failing this proposal's own fifteen-minute rule; closing it needs nine more third-order points. **That is not the same table**: a compliant network costs the following again on the same model — re-survey hours, consumables, and the yearly part swaps and fitting labour for nine more kits (E67: this row counted re-survey only, the omission the table above had just been corrected for, one row lower). Letting the as-laid-out figure stand in for the compliant one is the substitution this package would flag elsewhere."
    },
    "weakest_input_zh": "**这张表里唯一不是数出来的数，是费率**：120–260 元/工时是一个区间估计，包内没有可核对的费率来源，证据等级 provisional。其余每一格都是次数、人数、小时或件数。把费率换成你自己的口径，整张表重算即可——公式随表公布正是为了这个。",
    "weakest_input_en": "**The only number here that is not counted is the rate**: CNY 120–260 per hour is a band with no verifiable source in this package, and it is graded provisional. Every other cell is a count of sessions, people, hours or items. Substitute your own rate and the table recomputes — the formula ships beside it for exactly that reason."

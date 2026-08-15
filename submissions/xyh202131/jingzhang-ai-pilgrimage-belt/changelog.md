@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v33.0 - 2026-08-15
+
+**Evidence-integrity enforcement & HTML publication metadata / 证据完整性强制与 HTML 出版元数据**
+
+- 新机制：评审交接索引生成器在每次再生成时强制五项机器可核验不变量——`[source:]`/`[assumption:]`/`[metric:]` 标记逐一解析到 sources.json（50/50）/ assumptions.json（23/23）/ metrics.json（80/80）记录；`[data:]` 标记解析到磁盘文件（79/79，忽略 fragment）；中英文标记值多集逐类一致；中英文标题数一致（86/86）；全部阅读路线锚点在双语 visual 页面存在（0 缺失）。任何违反直接令生成失败。索引新增 `evidence_integrity` 块（`generator_enforced=true`）记录全部检查。
+- New mechanism: the review handoff index generator now enforces five machine-checkable invariants on every regeneration — every `[source:]`/`[assumption:]`/`[metric:]` marker resolves to a record in sources.json (50/50) / assumptions.json (23/23) / metrics.json (80/80); every `[data:]` marker resolves to a file on disk (79/79, fragment ignored); zh/en marker value multisets are identical per kind; zh/en heading counts match (86/86); every reading-route anchor exists in both visual pages (0 missing). Any violation fails generation. The index gains an `evidence_integrity` block (`generator_enforced=true`) recording all checks.
+- HTML 出版元数据补全：四个 HTML 表面（visual 双语页 + report 双语报告）此前均缺 `<meta name="description">`，本轮按各自语言与边界披露补上；报告 HTML 的 description 与第 23 轮媒体链接修复一样，在每次重渲染后重施。
+- HTML publication metadata completion: all four HTML surfaces (bilingual visual pages and bilingual reports) previously lacked `<meta name="description">`; this round adds one per surface consistent with its language and boundary disclosure; report descriptions are re-applied after every future re-render, same as the Round 23 media-link fix.
+- 无主张、数据、机制、图面、PDF 或成熟度变化；geometry 九文件、metrics 值、sources/assumptions 内容字节未变。
+- No claim, datum, mechanism, figure, PDF or maturity change; the nine geometry files, metric values and sources/assumptions content bytes are unchanged.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths.
+
 ## v32.0 - 2026-08-15
 
 **Formal core visual metrics compliance / 三项 formal 核心视觉指标合规**
