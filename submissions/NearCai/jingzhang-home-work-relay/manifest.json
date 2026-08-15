@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "cc84a6d084de08f7ba71c554dc2b6ddcaf3b64a1611f6aa186e5d71f348bd9fa"
+      "sha256": "bfaae73585096ee88b2be76b454ff0f8366d67ab46d0e041951a5451d62fcaa1"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b62bd899ad5864cb8439cc874a305bcd4a37e33500a01e7345c15e5cc5f9944c"
+      "sha256": "1420d820e99b54324567ffda9d90deffe64b325ff8891bd1453df7ae4aba45f8"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0dc2d761fb0123a09ad4af4e4e3aad536885d4d6164d9d0f8863e905ba06d30b"
+      "sha256": "92c574e82a0ee3c444aca51c42c1bef9e0cbe1842a9b2674a9ec46e31ca27448"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -450,7 +450,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "9a0b84eef9a3a3eb126decb0dc8ab13516ed69dd08dacb3288bd6af016910df9"
+      "sha256": "8721ed407a2058b0e6e158c8b0a53be0753c57ec3d2e57ae4c1d257f6cff917b"
     },
     {
       "path": "visual/assets/regional-interfaces.json",
