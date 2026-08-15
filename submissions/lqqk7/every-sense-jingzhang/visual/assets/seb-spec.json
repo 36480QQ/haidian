@@ -596,7 +596,14 @@
    "registered_utc": "2026-08-14T19:03:46Z",
    "verification_note_zh": "「七条样例、退出码 0」为采用方登记自述；其快照入包后，本包已核验其提交包内 seb-spec.json 副本与官方 v0.3.0 快照逐字节一致（SHA-256 与 version_snapshots 登记值相同），快照存在性与版本一致性自此可独立核对；复跑结果仍为采用方自述",
    "verification_note_en": "\"Seven fixtures, exit code 0\" is the adopter's own statement; after the snapshot shipped, this package verified that the seb-spec.json copy inside the adopter's package is byte-identical to the official v0.3.0 snapshot (SHA-256 equal to the version_snapshots register), so snapshot presence and version identity are independently checkable; the re-run result remains adopter-declared",
-   "upgrade_comment_url": "https://github.com/open-city-ai/haidian/issues/2549#issuecomment-5298399979"
+   "upgrade_comment_url": "https://github.com/open-city-ai/haidian/issues/2549#issuecomment-5298399979",
+   "evidence_level": "snapshot_verified_replay_self_reported",
+   "evidence_level_note_zh": "快照存在性与版本一致性已由本包核验（下列 commit 与哈希可独立复核）；七条样例复跑结果为登记方自述，本包未独立复跑",
+   "evidence_level_note_en": "Snapshot presence and version identity verified by this package (commit and hash below are independently checkable); the seven-fixture re-run remains the adopter's own statement, not independently re-run here",
+   "adopter_snapshot_commit": "bc486e5",
+   "adopter_snapshot_path": "submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/seb-spec.json",
+   "adopter_snapshot_sha256": "67200f3e981703ea82af1bde4dd778d4329ee943eea00db6efe371a6c6a59b54",
+   "verify_command": "git show <upstream-main>:submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/seb-spec.json | shasum -a 256  # 应等于本条 adopter_snapshot_sha256，且等于 version_snapshots 中 0.3.0 的 sha256 / should equal this entry's hash and the 0.3.0 hash in version_snapshots"
   },
   {
    "adopter": "京张智脊 / Jing-Zhang AI Spine",
@@ -611,7 +618,10 @@
    "maintainer_receipt_url": "https://github.com/open-city-ai/haidian/issues/2549#issuecomment-5297576936",
    "registered_utc": "2026-08-14T19:52:34Z",
    "verification_note_zh": "采用范围与其包内署名为采用方登记自述（其登记同时自述该版本已合并入其上游提交）；本包未独立核验其包内容",
-   "verification_note_en": "The adoption scope and in-package attribution are the adopter's own registration statements (which also state the version is merged upstream); this package has not independently verified that package's contents"
+   "verification_note_en": "The adoption scope and in-package attribution are the adopter's own registration statements (which also state the version is merged upstream); this package has not independently verified that package's contents",
+   "evidence_level": "self_reported_concept_adoption",
+   "evidence_level_note_zh": "概念级部分采用，采用范围与其包内署名为登记方自述；本包未独立核验其包内容",
+   "evidence_level_note_en": "Concept-level partial adoption; scope and in-package attribution are the adopter's own statements, not independently verified here"
   }
  ],
  "adoption_claim": "voluntary_peer_adoption_registered",

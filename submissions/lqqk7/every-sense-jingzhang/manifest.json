@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.23 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.25 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4920535c0237eb2a2936efea4e7bba502d4798db54cbdf0eaf6495b181ccc4fe"
+      "sha256": "c105017376af60f0659094c102b0bfde0db87908ba43d385efec03a9d62a6a62"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "735ec1739bc2567a65e48c7ce339a4bf909b20aa41851e6072b63490e997d7f2"
+      "sha256": "6b9c9f911ef423f4d0eb292e9702f4932c02b9d3a5522d955654ed16a8a96071"
     },
     {
       "path": "metrics.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0867cea36e87bd04c325aa32ca4adc393897fb0add42a5795a81d050b8dd1549"
+      "sha256": "e471a944d06198d83b1a614aebf6c58a63f7dac9d6f0bf07b4483566116c370c"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "941b7f0a3e92ae7be970eb24ac138ca0c5a9de1e583fbcacbe02926e736ff763"
+      "sha256": "4b654670060366eb5dee7bfe5c9dec83dcde677522c143392c5f7c98726aefa3"
     },
     {
       "path": "standard_matrix.json",
@@ -80,7 +80,7 @@
       "path": "risk.json",
       "role": "other",
       "required": false,
-      "sha256": "b1163f1d7b4521131dddbb77afe522e9bf65c631a4d9d8f32f2b8c49b3209d69",
+      "sha256": "bcacce2a41869f6ccf462ae395517f01d1502ba2167537292fd5f63ae33c0afd",
       "role_detail": "risk_register"
     },
     {
@@ -88,40 +88,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9f5d31ce2d3cb24cf383f86266b0c67f027df97c8aaabe03cb3963fd95ed0e0c"
+      "sha256": "c947989f6d97f3f0d78574e01f6106f4aa122aebfc469eaf788eaffaef0aa1d3"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e2b7ca53e4fa4b4ae3da3add78a64b98d04e52b8286eea5d9f0d6adb245496f8"
+      "sha256": "125e2765e1fa07c72f2cd2f65f0e3b9a627feab5b6ce4298e57e5548b0adbf99"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "6c4b1a352f059df95c38cad426e88675c62c27a73fdab81ebb3c3c7cc979d826"
+      "sha256": "b2023d677da4678dd1d8d19295112286fd1a1df6c4c6251da397ed429575b865"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "12919bcad104fad38fcede2d118e96f2018debd1e4a81b5a48dedb4c2a1c4588"
+      "sha256": "6bdccd100f0b38ce0b8ef826199dde1d24d9cfc59deb5d62d0efcc4044b32406"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4267263d151c8d949d0e5c776daa930a70783a4bf8fabb07e3fbd11be2130bd0"
+      "sha256": "b887ce863e9ad8d3a9ce3f8a265f4123697c6dbbbf2566457f54f12f2a9a0e4e"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "1985b8d25a7354f1396e4198f6c701a4b0cdfdf58d8554d3f79de7d4b87c9245"
+      "sha256": "e64d2cc4b94cdf00ffe936c69f670685db541906595d6d757ec7b52e62931e58"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7188ad73259fd7a38edb66f4f24666c6301b20d06f02002a230397e434a0068d"
+      "sha256": "7ba055c895e3da316d19c5b0f65c216180a9ea570ccab355ff60de3f6541e775"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "14ceda200399ff5e65ddc3ca06caba6d591d3d38f42d3b4648ea876d57350338"
+      "sha256": "5d92c8629e85d9db3ee075d5a5e6510b900a97eb520f38f700d9000cc6504fd6"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "fc97e1479027ddd071b294027750b1ad3e5ee0f51c693067b1c2c77f528f62df"
+      "sha256": "108a2446a375d109519bc94cc8869c70d8e024fa4e87808a7cac48bb44157b9f"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "6302e1035569b744512e67757a4e4e67a6e82d5f4fd27bd665307ef14b168a7b"
+      "sha256": "1cdb4488481bb1c60e8772438d2d76914f4c7332a40e0e8a74bd62ebcef47850"
     },
     {
       "path": "visual/index.en.html",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "660390147fdc12ac0886e94eb3fa15db364a144dd60941c4cd0f456df217c288"
+      "sha256": "be77c937de859f9e0173c792d17147e21355b393bcfbeb387e2476340544edc5"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -454,7 +454,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "f8e6d472c1bc3f84e8003d1586c9b5e5f3058442c217c3eafd83d9a0d5b29878"
+      "sha256": "5d4c6553186b4bdde88df59c5e925c8553f38f1706a8d8f5f6cf34f890bb28d0"
     },
     {
       "path": "assets/media/cover.webp",
@@ -486,7 +486,7 @@
       "title_en": "Audio guide transcript and rights note",
       "description_zh": "导览旁白全文（含时间码）、与 proposal.md 的来源对应表、生成工具与制作方法记录、合成声明与权利边界、已知限制。同时论证听/看/读三条通道承载相同内容，是方案 AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "Full narration text with time codes, a source mapping to proposal.md, the generation method and tooling record, the synthesis and rights statement, and known limitations. It also documents that listening, captions, and reading carry identical content, applying the proposal's own AI-OFF equivalence principle to its own deliverable.",
-      "sha256": "deb28bb031419804d50a578a67adf4a382a111f795d702256e9f2dddcdd9393a"
+      "sha256": "f36991d1d3efa59f016670c24b08e41a72bd08390d2e0a10cc6838b6a16d2196"
     },
     {
       "path": "assets/media/audio-guide.vtt",
@@ -595,7 +595,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "9cc60e844969c944dc8d57fc336a1c02df36a9021c3f8b579fc4498b3b6c264c"
+      "sha256": "fbcce26719a1f5c921ba29e7f228cbce1ee8f1caa2553691ffca4fbba7c7fb6f"
     },
     {
       "path": "visual/assets/scene-provenance.json",
@@ -604,7 +604,7 @@
       "language": "neutral",
       "title_zh": "场景概念图生成档案（提示词全文、工具链、输出哈希）",
       "title_en": "Concept Scene Image Provenance (full prompts, tool chain, output hashes)",
-      "sha256": "8334cefd6db49420e451a1373fe42ba3e173905288b437be71af20fee4790ff8"
+      "sha256": "8c8644ed2c7e7464e8d20cd6b0f1f6e0f8625556a93f1a70f1559c7dc7a3dd82"
     },
     {
       "path": "visual/assets/seb-spec.json",
@@ -613,7 +613,7 @@
       "language": "neutral",
       "title_zh": "服务等价基准 SEB v0.3 机器可读规范",
       "title_en": "Service Equivalence Baseline (SEB) v0.3 machine-readable spec",
-      "sha256": "299ce84e23e655fe6c5066c264b9820b288ef38d0b72ecf5836ef2a1af1aa406"
+      "sha256": "8f487a2a086414307137a3d08918075ee53dd547d29215c9631cc5f62adf9a6e"
     },
     {
       "path": "visual/assets/seb-tabletop-run.js",
@@ -640,7 +640,7 @@
       "language": "neutral",
       "title_zh": "变更回执格式与两条回执",
       "title_en": "Change-receipt schema and two receipts",
-      "sha256": "f692e56f3338d87c7c718e19fc5351d47050fe7839ffdb3158f58c51214d70bf"
+      "sha256": "cd4c9229fd350a47c7a072b0a3b372d6efa7a2eeb4bfe03485b8b99c2c374ac1"
     },
     {
       "path": "visual/assets/seb-op04-chain-data.json",
@@ -732,6 +732,30 @@
       "title_zh": "多感官导览英文字幕轨",
       "title_en": "English caption track for the audio guide",
       "sha256": "f2f7f4935970874b2ade364768a213f724dc3597c9e0c5cac8c87383b7e83b3e"
+    },
+    {
+      "path": "assets/media/audio-guide-en.m4a",
+      "role": "audio",
+      "required": false,
+      "language": "en",
+      "title_zh": "万感京张 多感官导览（英文旁白）",
+      "title_en": "Every Sense Jing-Zhang multisensory audio guide (English narration)",
+      "description_zh": "3 分 14 秒英文合成语音导览：与中文版同一旁白文本（英文翻译）、同一逐句合成与固定间隔拼接工艺（MiniMax speech-2.8-hd，预置音色 English_Trustworthy_Man）；AAC-LC 单声道 32 kHz/64 kbps。计算机合成，无真人录音",
+      "description_en": "A 3 min 14 s English synthetic-voice guide: the same narration text as the Chinese edition (translated), the same per-sentence synthesis and fixed-gap concatenation (MiniMax speech-2.8-hd, preset voice English_Trustworthy_Man); AAC-LC mono 32 kHz/64 kbps. Computer-synthesised, no human recording",
+      "transcript": "assets/media/audio-guide.md",
+      "caption": "assets/media/audio-guide-en-voice.vtt",
+      "sha256": "e87447b0268152e234cd532416b46d749f4944f47d79d306ea1597bbc45710ed"
+    },
+    {
+      "path": "assets/media/audio-guide-en-voice.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "title_zh": "多感官导览英文语音版同步字幕",
+      "title_en": "Synchronised captions for the English voice edition",
+      "description_zh": "26 条 WebVTT 英文字幕，时间轴由英文语音逐句实测长度精确累加，与 audio-guide-en.m4a 严格同步（区别于 audio-guide-en.vtt：后者配中文音频、沿用中文时间轴）",
+      "description_en": "26 WebVTT cues timed from measured English sample lengths, strictly synchronised with audio-guide-en.m4a (distinct from audio-guide-en.vtt, which follows the Chinese audio timeline)",
+      "sha256": "1e8ae7ba4b96b6164ebf9e65d986d8c6ebaa742809db60f793936e4dc9457632"
     }
   ],
   "validation_claim": {

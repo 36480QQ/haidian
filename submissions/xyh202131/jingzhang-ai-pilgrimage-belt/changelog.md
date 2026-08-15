@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v26.0 - 2026-08-15
+
+**Contract as_of consistency repair / 契约 as_of 一致性修复**
+
+- 第 26 轮只在第 25 轮 PR #2752 合并（merge SHA `cdc56d33f322e01477c4b29adba0f1dae4524e41` 进入 canonical `main@cdc56d33f322e01477c4b29adba0f1dae4524e41`）且 438 个开放 PR 文件级扫描无竞争后开始。审计：包内全部结构化契约的顶层 `as_of` 与 git 历史的真实最后编辑日期逐一比对，发现 8 个契约的 `as_of` 早于其真实编辑日期；全部修复并新增 `as_of_semantics` 字段说明语义。
+- Round 26 began only after Round 25 PR #2752 merged (merge SHA `cdc56d33f322e01477c4b29adba0f1dae4524e41` entered canonical `main@cdc56d33f322e01477c4b29adba0f1dae4524e41`) and a file-level scan of 438 open PRs found no competing PR. Audit: every structured contract's top-level `as_of` was compared against its real last-edit date from git history; eight contracts had `as_of` earlier than their real edit date. All eight are fixed and each gains an `as_of_semantics` field defining the field's meaning.
+- 修复清单：`civic-operations-contract` 08-12→08-13；`g1-preregistration-register` 08-09→08-12；`implementation-handoff-matrix` 08-12→08-13；`pilot-readiness-register` 08-09→08-12；`readiness-closure-contract` 08-10→08-12；`rights-clearance-ledger` 08-14→08-15；`site-grounding-register` 08-09→08-15；`submission-use-rights-matrix` 08-10→08-12。日期全部取自 git 历史，不猜测。
+- Fixed list: `civic-operations-contract` 08-12→08-13; `g1-preregistration-register` 08-09→08-12; `implementation-handoff-matrix` 08-12→08-13; `pilot-readiness-register` 08-09→08-12; `readiness-closure-contract` 08-10→08-12; `rights-clearance-ledger` 08-14→08-15; `site-grounding-register` 08-09→08-15; `submission-use-rights-matrix` 08-10→08-12. All dates come from git history, not guesswork.
+- `as_of` 只表示最后真实内容编辑日期，不是有效性或新鲜度保证；`as_of_semantics` 已在每个修复文件中写明。`pilot-readiness-register.json` 是 T-02 合成回放输入之一：其 as_of 修复改变输入摘要后，结果文件经 `--write` 按同一 10 组既有 fixture 诚实重生成（fixtures=10 exact=10，无治理内容变化）。本轮无主张、数据、机制、页数或成熟度变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- `as_of` records the last real content edit date only, not validity or freshness; `as_of_semantics` states this in every repaired file. `pilot-readiness-register.json` is one input of the T-02 synthetic replay: after its as_of repair changed the input digest, the result file was honestly regenerated with `--write` from the same ten fixtures (fixtures=10 exact=10, no governance-content change). The round changes no claim, data, mechanism, page count or maturity; the four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v25.0 - 2026-08-15
 
 **Heading-hierarchy repair after HTML semantics audit / HTML 语义审计与标题层级修复**

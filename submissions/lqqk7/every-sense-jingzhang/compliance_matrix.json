@@ -1,15 +1,24 @@
 {
   "schema_version": "0.1.0",
+  "title_en_note_zh": "各条 title_en 为本包参考译文（依包内既定术语类推），非官方公告的官方英文文本",
+  "title_en_note_en": "Each title_en is this package's reference translation (derived from the package's established terminology), not official English text of the organiser's announcement",
   "requirements": [
     {
       "requirement_id": "1.3.1",
       "title_zh": "构建世界级AI创新生态体系",
+      "title_en": "Build a world-class AI innovation ecosystem",
       "mandatory": true,
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
         "AI 创新生态、人才画像与 AI+ 场景",
         "服务等价基准 SEB v0.3",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Coordinated Research Area: Industry and Future City Research",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Service Equivalence Baseline (SEB) v0.3",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -41,6 +50,11 @@
         "三层范围",
         "三处重点区的人尺度运行合同",
         "AI 场景"
+      ],
+      "visual_sections_en": [
+        "Three Scope Layers",
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "AI Scenarios"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -84,12 +98,19 @@
     {
       "requirement_id": "1.3.2",
       "title_zh": "建设适配AI新质生产力的新型城市形态",
+      "title_en": "Build a new urban form suited to AI-enabled new quality productive forces",
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
         "总体设计范围城市更新与控规深度城市设计",
         "交通、轨道、市政与公共服务设施",
         "蓝绿空间、公共空间与城市风貌"
+      ],
+      "report_sections_en": [
+        "Three-Level Scope Framework",
+        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Transport, Rail, Municipal Infrastructure, and Public Services",
+        "Blue-Green Network, Public Space, and Urban Character"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -121,6 +142,11 @@
         "用地分区",
         "交通慢行",
         "蓝绿公共空间"
+      ],
+      "visual_sections_en": [
+        "Land-Use Zones",
+        "Mobility",
+        "Blue-Green Public Space"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -162,6 +188,7 @@
     {
       "requirement_id": "1.3.3",
       "title_zh": "打造全球AI创新人才向往的高品质城区",
+      "title_en": "Create a high-quality district that attracts global AI innovation talent",
       "mandatory": true,
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
@@ -169,6 +196,13 @@
         "AI 创新生态、人才画像与 AI+ 场景",
         "蓝绿空间、公共空间与城市风貌",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Coordinated Research Area: Industry and Future City Research",
+        "Detailed Design of Key Areas",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -203,6 +237,11 @@
         "三处重点区的人尺度运行合同",
         "用地分区、概念功能与更新项目",
         "蓝绿公共空间"
+      ],
+      "visual_sections_en": [
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "Land-Use Zones, Conceptual Functions, and Renewal Projects",
+        "Blue-Green Public Space"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -244,11 +283,17 @@
     {
       "requirement_id": "1.4.1",
       "title_zh": "统筹研究范围",
+      "title_en": "Coordinated Research Area",
       "mandatory": true,
       "report_sections": [
         "设计依据与资料清单",
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究"
+      ],
+      "report_sections_en": [
+        "Design Basis and Source List",
+        "Three-Level Scope Framework",
+        "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -272,6 +317,10 @@
       "visual_sections": [
         "总览地图",
         "三层范围"
+      ],
+      "visual_sections_en": [
+        "Overview Map",
+        "Three Scope Layers"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -304,11 +353,17 @@
     {
       "requirement_id": "1.4.2",
       "title_zh": "总体设计范围",
+      "title_en": "Overall Design Area",
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
         "总体设计范围城市更新与控规深度城市设计",
         "用地、建筑规模与拆改留方案"
+      ],
+      "report_sections_en": [
+        "Three-Level Scope Framework",
+        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -342,6 +397,11 @@
         "总览地图",
         "用地分区",
         "交通慢行"
+      ],
+      "visual_sections_en": [
+        "Overview Map",
+        "Land-Use Zones",
+        "Mobility"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -378,12 +438,19 @@
     {
       "requirement_id": "1.4.3",
       "title_zh": "重点区域范围",
+      "title_en": "Key Areas Scope",
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
         "重点区域详细设计",
         "更新项目清单、实施政策与分期计划",
         "OP-01 桌面配对试点档案（方法学演示）"
+      ],
+      "report_sections_en": [
+        "Three-Level Scope Framework",
+        "Detailed Design of Key Areas",
+        "Renewal Projects, Implementation Policy, and Phasing",
+        "OP-01 Tabletop Pairing Pilot Dossier (Methodology Demonstration)"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -418,6 +485,10 @@
       "visual_sections": [
         "三处重点区的人尺度运行合同",
         "用地分区、概念功能与更新项目"
+      ],
+      "visual_sections_en": [
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "Land-Use Zones, Conceptual Functions, and Renewal Projects"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -456,11 +527,17 @@
     {
       "requirement_id": "1.5.1.1",
       "title_zh": "统筹研究范围：AI创新生态体系",
+      "title_en": "Coordinated Research Area: AI Innovation Ecosystem",
       "mandatory": true,
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
         "AI 创新生态、人才画像与 AI+ 场景",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Coordinated Research Area: Industry and Future City Research",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -493,6 +570,11 @@
         "AI 场景",
         "三处重点区的人尺度运行合同",
         "更新项目"
+      ],
+      "visual_sections_en": [
+        "AI Scenarios",
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "Renewal Projects"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -535,11 +617,17 @@
     {
       "requirement_id": "1.5.1.2",
       "title_zh": "统筹研究范围：适配人工智能的未来城市形态",
+      "title_en": "Coordinated Research Area: Future Urban Form Suited to Artificial Intelligence",
       "mandatory": true,
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "交通、轨道、市政与公共服务设施"
+      ],
+      "report_sections_en": [
+        "Coordinated Research Area: Industry and Future City Research",
+        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Transport, Rail, Municipal Infrastructure, and Public Services"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -571,6 +659,11 @@
         "用地分区",
         "交通慢行",
         "AI 场景"
+      ],
+      "visual_sections_en": [
+        "Land-Use Zones",
+        "Mobility",
+        "AI Scenarios"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -612,11 +705,17 @@
     {
       "requirement_id": "1.5.2.1",
       "title_zh": "总体设计范围：产业目标与功能布局",
+      "title_en": "Overall Design Area: Industry Objectives and Functional Layout",
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
         "总体设计范围城市更新与控规深度城市设计",
         "用地、建筑规模与拆改留方案"
+      ],
+      "report_sections_en": [
+        "Three-Level Scope Framework",
+        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -645,6 +744,10 @@
       "visual_sections": [
         "用地分区、概念功能与更新项目",
         "三处重点区的人尺度运行合同"
+      ],
+      "visual_sections_en": [
+        "Land-Use Zones, Conceptual Functions, and Renewal Projects",
+        "Human-Scale Operating Contracts for Three Key Areas"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -681,11 +784,17 @@
     {
       "requirement_id": "1.5.2.2",
       "title_zh": "总体设计范围：城市更新总体框架",
+      "title_en": "Overall Design Area: Overall Urban Renewal Framework",
       "mandatory": true,
       "report_sections": [
         "总体设计范围城市更新与控规深度城市设计",
         "用地、建筑规模与拆改留方案",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -713,6 +822,9 @@
       ],
       "visual_sections": [
         "用地分区、概念功能与更新项目"
+      ],
+      "visual_sections_en": [
+        "Land-Use Zones, Conceptual Functions, and Renewal Projects"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -750,11 +862,17 @@
     {
       "requirement_id": "1.5.2.3",
       "title_zh": "总体设计范围：交通轨道市政配套设施",
+      "title_en": "Overall Design Area: Transport, Rail, and Municipal Support Facilities",
       "mandatory": true,
       "report_sections": [
         "交通、轨道、市政与公共服务设施",
         "更新项目清单、实施政策与分期计划",
         "指标体系、面积复算与合规矩阵"
+      ],
+      "report_sections_en": [
+        "Transport, Rail, Municipal Infrastructure, and Public Services",
+        "Renewal Projects, Implementation Policy, and Phasing",
+        "Metrics, Area Recalculation, and Compliance Matrix"
       ],
       "geojson_layers": [
         "geometry/roads.geojson",
@@ -786,6 +904,11 @@
         "交通慢行",
         "AI 场景",
         "核心指标"
+      ],
+      "visual_sections_en": [
+        "Mobility",
+        "AI Scenarios",
+        "Core Metrics"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -830,11 +953,17 @@
     {
       "requirement_id": "1.5.2.4",
       "title_zh": "总体设计范围：京张遗址公园活力带",
+      "title_en": "Overall Design Area: Jing-Zhang Heritage Park Vitality Belt",
       "mandatory": true,
       "report_sections": [
         "交通、轨道、市政与公共服务设施",
         "蓝绿空间、公共空间与城市风貌",
         "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "report_sections_en": [
+        "Transport, Rail, Municipal Infrastructure, and Public Services",
+        "Blue-Green Network, Public Space, and Urban Character",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios"
       ],
       "geojson_layers": [
         "geometry/roads.geojson",
@@ -877,6 +1006,11 @@
         "蓝绿公共空间",
         "AI 场景"
       ],
+      "visual_sections_en": [
+        "Mobility",
+        "Blue-Green Public Space",
+        "AI Scenarios"
+      ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
@@ -916,10 +1050,15 @@
     {
       "requirement_id": "1.5.2.5",
       "title_zh": "总体设计范围：城市风貌",
+      "title_en": "Overall Design Area: Urban Character",
       "mandatory": true,
       "report_sections": [
         "蓝绿空间、公共空间与城市风貌",
         "风险、版权与合规说明"
+      ],
+      "report_sections_en": [
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Risk, Copyright, and Compliance"
       ],
       "geojson_layers": [
         "geometry/green_space.geojson",
@@ -956,6 +1095,11 @@
         "用地分区、概念功能与更新项目",
         "来源"
       ],
+      "visual_sections_en": [
+        "Blue-Green Public Space",
+        "Land-Use Zones, Conceptual Functions, and Renewal Projects",
+        "Sources"
+      ],
       "source_ids": [
         "AGENT-TASKBOOK",
         "SOURCE-REGISTRY",
@@ -991,12 +1135,19 @@
     {
       "requirement_id": "1.5.3.required",
       "title_zh": "重点区域范围详细设计必选项",
+      "title_en": "Key Areas Scope: Mandatory Detailed Design Items",
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
         "交通、轨道、市政与公共服务设施",
         "蓝绿空间、公共空间与城市风貌",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Detailed Design of Key Areas",
+        "Transport, Rail, Municipal Infrastructure, and Public Services",
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1040,6 +1191,11 @@
         "三处重点区的人尺度运行合同",
         "交通慢行",
         "用地分区、概念功能与更新项目"
+      ],
+      "visual_sections_en": [
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "Mobility",
+        "Land-Use Zones, Conceptual Functions, and Renewal Projects"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -1085,11 +1241,17 @@
     {
       "requirement_id": "1.5.3.1",
       "title_zh": "众智园AI自主创新加速区",
+      "title_en": "Zhongzhiyuan AI Acceleration Area",
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
         "AI 创新生态、人才画像与 AI+ 场景",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Detailed Design of Key Areas",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1123,6 +1285,11 @@
         "三处重点区的人尺度运行合同",
         "AI 场景",
         "更新项目"
+      ],
+      "visual_sections_en": [
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "AI Scenarios",
+        "Renewal Projects"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -1163,11 +1330,17 @@
     {
       "requirement_id": "1.5.3.2",
       "title_zh": "北京AI原点社区",
+      "title_en": "Beijing AI Origin Community",
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
         "AI 创新生态、人才画像与 AI+ 场景",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Detailed Design of Key Areas",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1201,6 +1374,11 @@
         "三处重点区的人尺度运行合同",
         "AI 场景",
         "核心指标"
+      ],
+      "visual_sections_en": [
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "AI Scenarios",
+        "Core Metrics"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -1241,11 +1419,17 @@
     {
       "requirement_id": "1.5.3.3",
       "title_zh": "大钟寺AI产业聚集区",
+      "title_en": "Dazhongsi AI Industry Cluster",
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
         "AI 创新生态、人才画像与 AI+ 场景",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Detailed Design of Key Areas",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1280,6 +1464,11 @@
         "三处重点区的人尺度运行合同",
         "用地分区、概念功能与更新项目",
         "AI 场景"
+      ],
+      "visual_sections_en": [
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "Land-Use Zones, Conceptual Functions, and Renewal Projects",
+        "AI Scenarios"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -1321,12 +1510,19 @@
     {
       "requirement_id": "agent.1",
       "title_zh": "一带总体概念与功能统筹方案设计",
+      "title_en": "Overall Concept and Functional Coordination Design for the innovation belt",
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "蓝绿空间、公共空间与城市风貌",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Three-Level Scope Framework",
+        "Coordinated Research Area: Industry and Future City Research",
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1359,6 +1555,11 @@
         "总览地图",
         "三层范围",
         "任务覆盖"
+      ],
+      "visual_sections_en": [
+        "Overview Map",
+        "Three Scope Layers",
+        "Task Coverage"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -1401,6 +1602,7 @@
     {
       "requirement_id": "agent.2",
       "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
+      "title_en": "Design of the Full-Stack Independent AI Innovation System and World-Class AI Innovation Ecosystem",
       "mandatory": true,
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
@@ -1409,6 +1611,14 @@
         "服务等价基准 SEB v0.3",
         "更新项目清单、实施政策与分期计划",
         "OP-01 桌面配对试点档案（方法学演示）"
+      ],
+      "report_sections_en": [
+        "Coordinated Research Area: Industry and Future City Research",
+        "Detailed Design of Key Areas",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Service Equivalence Baseline (SEB) v0.3",
+        "Renewal Projects, Implementation Policy, and Phasing",
+        "OP-01 Tabletop Pairing Pilot Dossier (Methodology Demonstration)"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1444,6 +1654,11 @@
         "三处重点区的人尺度运行合同",
         "AI 场景",
         "更新项目"
+      ],
+      "visual_sections_en": [
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "AI Scenarios",
+        "Renewal Projects"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1487,12 +1702,19 @@
     {
       "requirement_id": "agent.3",
       "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
+      "title_en": "Design of the New Paradigm of AI+ Scenario Empowerment and the Intelligent and Vibrant AI City",
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
         "交通、轨道、市政与公共服务设施",
         "更新项目清单、实施政策与分期计划",
         "指标体系、面积复算与合规矩阵"
+      ],
+      "report_sections_en": [
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Transport, Rail, Municipal Infrastructure, and Public Services",
+        "Renewal Projects, Implementation Policy, and Phasing",
+        "Metrics, Area Recalculation, and Compliance Matrix"
       ],
       "geojson_layers": [
         "geometry/roads.geojson",
@@ -1545,6 +1767,11 @@
         "交通慢行",
         "核心指标"
       ],
+      "visual_sections_en": [
+        "AI Scenarios",
+        "Mobility",
+        "Core Metrics"
+      ],
       "source_ids": [
         "AGENT-TASKBOOK",
         "W3C-ACCESSIBILITY-PRINCIPLES",
@@ -1596,12 +1823,19 @@
     {
       "requirement_id": "agent.4",
       "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
+      "title_en": "Design of AI Public Space, AI-Native New Business Formats, and the pilgrimage landmark",
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
         "AI 创新生态、人才画像与 AI+ 场景",
         "蓝绿空间、公共空间与城市风貌",
         "更新项目清单、实施政策与分期计划"
+      ],
+      "report_sections_en": [
+        "Detailed Design of Key Areas",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1642,6 +1876,11 @@
         "三处重点区的人尺度运行合同",
         "蓝绿公共空间",
         "AI 场景"
+      ],
+      "visual_sections_en": [
+        "Human-Scale Operating Contracts for Three Key Areas",
+        "Blue-Green Public Space",
+        "AI Scenarios"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1686,6 +1925,7 @@
     {
       "requirement_id": "agent.5",
       "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
+      "title_en": "Design of an Integrated Narrative of Centennial Jing-Zhang Culture, Zhongguancun Culture, and New AI Culture",
       "mandatory": true,
       "report_sections": [
         "京张文化、中关村文化与 AI 新文化的多感官叙事",
@@ -1693,6 +1933,13 @@
         "统筹研究范围产业与未来城市研究",
         "AI 创新生态、人才画像与 AI+ 场景",
         "风险、版权与合规说明"
+      ],
+      "report_sections_en": [
+        "Multisensory Narrative of Jing-Zhang Culture, Zhongguancun Culture, and New AI Culture",
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Coordinated Research Area: Industry and Future City Research",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Risk, Copyright, and Compliance"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1733,6 +1980,11 @@
         "品牌、文化与国际传播",
         "蓝绿公共空间",
         "AI 场景"
+      ],
+      "visual_sections_en": [
+        "Brand, Culture, and International Communication",
+        "Blue-Green Public Space",
+        "AI Scenarios"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -1778,6 +2030,7 @@
     {
       "requirement_id": "agent.6",
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
+      "title_en": "Design of the innovation belt's Global AI Innovation Activity System and Long-Term Operations",
       "mandatory": true,
       "report_sections": [
         "更新项目清单、实施政策与分期计划",
@@ -1787,6 +2040,15 @@
         "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明",
         "OP-01 桌面配对试点档案（方法学演示）"
+      ],
+      "report_sections_en": [
+        "Renewal Projects, Implementation Policy, and Phasing",
+        "Coordinated Research Area: Industry and Future City Research",
+        "Service Equivalence Baseline (SEB) v0.3",
+        "Multisensory Narrative of Jing-Zhang Culture, Zhongguancun Culture, and New AI Culture",
+        "Metrics, Area Recalculation, and Compliance Matrix",
+        "Risk, Copyright, and Compliance",
+        "OP-01 Tabletop Pairing Pilot Dossier (Methodology Demonstration)"
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
@@ -1827,6 +2089,12 @@
         "更新项目",
         "核心指标",
         "来源"
+      ],
+      "visual_sections_en": [
+        "Brand, Culture, and International Communication",
+        "Renewal Projects",
+        "Core Metrics",
+        "Sources"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",

@@ -26,14 +26,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "95ede3f4cd6008015fa43ae83da44cce1e6bb6e1cb07b4424c8881938662477c",
+      "sha256": "99da1886e1da2546182b03156138f9cab0f1f5af25bf833c002de625f1c490f0",
       "language": "en"
     },
     {
       "path": "report/proposal.zh.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "5edeee9f6d84c666ac710cd1f7810fddd2366fe4eaa8871be5ce961bd7fe0485",
+      "sha256": "6a8d88def37bb77a4b0ff91301962c8e44eee4f57930c1d83203e66cc1b88c04",
       "language": "zh",
       "translation_of": "report/proposal.html"
     },
@@ -41,7 +41,7 @@
       "path": "proposal.zh.md",
       "role": "narrative",
       "required": false,
-      "sha256": "d38a6bc3859d16cff27f256337ce53cab3076e72c803e498adb7cd2f06d233ac",
+      "sha256": "e31a9cfc066f816a5ebded378e49600d1cf63b225b056e2a381ef845276bfdfe",
       "language": "zh",
       "translation_of": "proposal.md"
     },
@@ -49,13 +49,13 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "4e3ca00b594a2e5933d3b327e1c4cf94e687535d91e6356bcb8a660c7a238a17"
+      "sha256": "8b64370e0cefe12bea39ee8570a7b42ddcab790f985b4a9ef4a880efa5dc3270"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "3fc01389d53011f6ef5c5026f2eec0d89e21d1b79089ede7a06ad36a2aef7a99"
+      "sha256": "270f3444d189ca90dcd50ee7c5df2d8f2c978bff761764c1408aef5332770004"
     },
     {
       "path": "metrics.json",
@@ -79,7 +79,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b891b237ae7bcec11b563bad3673864f6654e03da63f68202d1b6d78ed1ece95"
+      "sha256": "d1a8b46fef8c53f47c77abef68013893341dfed7a161e91aac001a26f48b413a"
     },
     {
       "path": "compliance_matrix.json",
@@ -103,7 +103,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "ddb35932fdadb4f84c35ff07331888168bb700e4fbaab9d48c0f3ee088363c19",
+      "sha256": "a8934d9e70e0c712aa79350e483643ab3e964aa03ab0b5e27c01517100368b3d",
       "language": "en"
     },
     {
@@ -122,21 +122,21 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "085308d630d5dbc98191c94c38d445c948a9cac6c01d85f9dafcbb940fa8878e",
+      "sha256": "66ffda425921b49b878a318b7186f898a674d6a6beaaf839ee3583152ad4378b",
       "language": "en"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "ee10802a8c94b89de8ac5adf166c3a901b424c90dfeb193d711d762eaac576e9",
+      "sha256": "c8008161a58c0fcae2a110e62591fe9759d10ee3d87782b57bafe4b4d8413be6",
       "language": "en"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "e780bbeb05f37eb4ff72049ab1a5b49ca5b3ba007fc460b9bb62850f91891144"
+      "sha256": "39c5cecce69cd216640a7ac5acde838a2fd1694ace9bfb4fc9be768d3efe2720"
     },
     {
       "path": "assets/figures/identity-system.png",
@@ -271,7 +271,7 @@
       "path": "drawings/a3-booklet.zh.pdf",
       "role": "drawing",
       "required": false,
-      "sha256": "9e05ac1d0cf3f519fa13a64ded5db9215f8ebfb58440a06ca04d99bf03d614ea",
+      "sha256": "cc022bbfd12842b2e08c4d7716d091a965eadfe2b1861c509e9acadf0b554aa6",
       "language": "zh",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -279,7 +279,7 @@
       "path": "drawings/a0-boards.zh.pdf",
       "role": "drawing",
       "required": false,
-      "sha256": "20a2ae3217bd0b8cd84bfbabf5268570b5e08105fd9bf0bdeac01bcad538f079",
+      "sha256": "d39fd9fb43df5666c96e35ed9b6ff13edb10e211cfb7508373b5afc237765749",
       "language": "zh",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -342,6 +342,83 @@
       "title_en": "Offline token-protocol replay",
       "description_zh": "确定性脚本对本包自身数据实际执行的 80 项合成复演（55 项负分支）：场景准入、令牌周期、协议状态机与几何拓扑校验；负分支成功 = 规则正确拒绝。不构成现场证据或运营批准。",
       "description_en": "80 synthetic replay tasks (55 negative branches) executed by a deterministic script against this package's own data: scenario admission, token cycles, protocol state-machine branches and geometry-topology checks. A negative branch succeeds when the rule correctly refuses. Not field evidence and not an approval."
+    },
+    {
+      "path": "assets/figures/concept-hero-wide.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "4952dfcc6c46ff3e8ed028477e411ea4725a2de5070be8e3ad95a96a11396f3b",
+      "language": "neutral",
+      "title_zh": "走廊全线概念视景——一线、三站、两岔",
+      "title_en": "Corridor concept view — one line, three stations, two switches",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-dazhongsi.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "60d779ce9603281553f344787960f9b49ec273317f8c10ba431ca66f60a90971",
+      "language": "neutral",
+      "title_zh": "S1 到发场·大钟寺站前广场概念视景",
+      "title_en": "S1 Arrival Yard — Dazhongsi arrival plaza concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-origin.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "a92a07e95d58330eedfae0673885885efc664067fd90b8c41e2b1f2b8af34f29",
+      "language": "neutral",
+      "title_zh": "S4 零公里站·原点社区零公里碑广场概念视景",
+      "title_en": "S4 Zero-Km Station — zero-kilometre plaza concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-zhongzhiyuan.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "eac171c172cb7ce8b1c9d66bca4ef0d96656f563577b49c633ea6212614425d8",
+      "language": "neutral",
+      "title_zh": "S6 编组场·众智园编组场地景公园概念视景",
+      "title_en": "S6 Marshalling Yard — yard landscape park concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-platform.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "e0794da402947dab4382070aec391b3a7eada88a4dbcea8a5e819dffeabcbd16",
+      "language": "neutral",
+      "title_zh": "站台棚架与慢行主线人视概念视景",
+      "title_en": "Platform canopy at eye level, concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-bluegreen.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "15c8520c2c46c37341dc31b7ffd15f361d420d5bec3526f6ad1a5396e3f79700",
+      "language": "neutral",
+      "title_zh": "慢行主线与蓝绿基底黄昏概念视景",
+      "title_en": "Slow-mobility spine and blue-green base at dusk, concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "visual/assets/concept-hero-wide.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "4952dfcc6c46ff3e8ed028477e411ea4725a2de5070be8e3ad95a96a11396f3b",
+      "language": "neutral",
+      "title_zh": "展示页首屏概念视景（AI 生成，同 assets/figures/concept-hero-wide.jpg）",
+      "title_en": "Visual-page hero concept impression (AI-generated; same image as assets/figures/concept-hero-wide.jpg)",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
     }
   ],
   "validation_claim": {
