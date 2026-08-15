@@ -131,6 +131,99 @@
       "confidence": "high",
       "assumptions": []
     },
+    "gate_protocol_record_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/gate-protocol.json",
+        "visual/assets/protocol-audit.json"
+      ],
+      "formula": "count(gate_records)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "human_authority_coverage": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/gate-protocol.json",
+        "visual/assets/protocol-audit.json"
+      ],
+      "formula": "count(gate_records with named human_authority) / count(gate_records)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "manual_fallback_coverage": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/gate-protocol.json",
+        "visual/assets/protocol-audit.json"
+      ],
+      "formula": "count(gate_records with manual_fallback) / count(gate_records)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "data_minimization_coverage": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/gate-protocol.json",
+        "visual/assets/protocol-audit.json"
+      ],
+      "formula": "count(gate_records with non-empty minimum_data) / count(gate_records)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "binary_start_gate_coverage": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/gate-protocol.json",
+        "visual/assets/protocol-audit.json"
+      ],
+      "formula": "count(gate_records with non-empty start_gates) / count(gate_records)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "implementation_project_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/gate-protocol.json"
+      ],
+      "formula": "count(implementation_projects)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "regional_collaboration_route_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/gate-protocol.json"
+      ],
+      "formula": "count(regional_routes)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "annual_event_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/gate-protocol.json"
+      ],
+      "formula": "count(annual_events)",
+      "confidence": "high",
+      "assumptions": []
+    },
     "scheduled_opening_rate": {
       "status": "unknown",
       "value": null,

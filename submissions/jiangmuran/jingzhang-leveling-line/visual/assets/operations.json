@@ -39,7 +39,7 @@
     "name_zh": "读数牌",
     "name_en": "Reading plate",
     "hard_constraint_zh": "当期 f 与限差 F 同时可见，且标注复测日期；数值过期即视为未公示。牌面 600 × 450 mm、倾角 15°，下沿 900 / 上沿 1,350 mm（坐姿与立姿共同可读区）；面板可整体更换，支架不动。详图 FIG.16",
-    "hard_constraint_en": "Current f and tolerance F both visible, with the re-survey date; a stale value counts as not posted. Face 600 × 450 mm raked 15°, lower edge 900 mm and upper edge 1,350 mm — the band a seated and a standing reader share; the face is replaceable without the post. FIG.16",
+    "hard_constraint_en": "Current f and tolerance F visible, with the re-survey date; a stale value counts as not posted. Face 600 × 450 mm raked 15°, lower edge 900 mm and upper edge 1,350 mm — the band a seated and a standing reader share; the face is replaceable without the post. FIG.16",
     "serves_personas": [
      "P2",
      "P3",
@@ -52,7 +52,7 @@
     "name_zh": "可停留座具",
     "name_en": "Seating that permits staying",
     "hard_constraint_zh": "面高 450 mm 带扶手，便于起身；距读数牌 ≤ 2,000 mm 且在视线内，使取读数不需要站立等待。详图 FIG.16",
-    "hard_constraint_en": "Seat 450 mm high with armrests, so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so a reading needs no standing wait. FIG.16",
+    "hard_constraint_en": "Seat 450 mm high with armrests so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so a reading needs no standing wait. FIG.16",
     "serves_personas": [
      "P5",
      "P7"
@@ -64,7 +64,7 @@
     "name_zh": "无障碍引导",
     "name_en": "Accessible wayfinding",
     "hard_constraint_zh": "引导带宽 300 mm、连续不断点，止于标石外缘 300 mm（不把人引到标石上）；触觉与视觉双通道；读数位轮椅回转 Ø1,500 mm、净空 ≥ 2,100 mm；接入路径不得以台阶为唯一方式。详图 FIG.16；在 FIG.21 判为违规的区段内兼作寻点导视，见 FIG.23",
-    "hard_constraint_en": "Guidance strip 300 mm wide and continuous, stopping 300 mm short of the stone so it does not lead onto it; tactile and visual channels both; Ø1,500 mm turning space with 2,100 mm headroom at the reading position; the approach may not be by steps alone. FIG.16; inside the stretches FIG.21 marks as failing it also carries the find-the-benchmark information, FIG.23",
+    "hard_constraint_en": "Guidance strip 300 mm wide and continuous, stopping 300 mm short of the stone so it does not lead onto it; tactile and visual; Ø1,500 mm turning space with 2,100 mm headroom at the reading position; the approach may not be by steps alone. FIG.16; inside the stretches FIG.21 marks as failing it also carries the find-the-benchmark information, FIG.23",
     "serves_personas": [
      "P5",
      "P6",
@@ -77,7 +77,7 @@
     "name_zh": "申诉入口",
     "name_en": "Appeal point",
     "hard_constraint_zh": "**必须同时给出扫码与电话/现场登记两条路径**——只给扫码，等于把不用智能手机的人排除在申诉之外，画像 P4 因此不成立",
-    "hard_constraint_en": "**Must offer both a QR code and a phone or in-person route** — a QR code alone excludes anyone without a smartphone from appealing, which makes persona P4 unworkable",
+    "hard_constraint_en": "**Must offer a QR code and a phone or in-person route** — a QR code alone excludes anyone without a smartphone from appealing, which makes persona P4 unworkable",
     "serves_personas": [
      "P4",
      "P5",

@@ -934,6 +934,63 @@
         "maintenance_note": "The report HTML files are renderer-generated; their meta descriptions are re-applied after every future re-render, same as the Round 23 media-link fix.",
         "certification_note": "Publication metadata completeness only; not SEO, accessibility or approval certification."
       },
+      "boundary_uncertainty_background_r34": {
+        "contract_id": "JZ-BOUNDARY-UNCERTAINTY-BACKGROUND-R34",
+        "executed_at": "2026-08-15",
+        "rule_layer_basis": "The repository site-package geometry basis gained a 2026-08-14 independent background check comparing the four announcement-named street centrelines (大钟寺东路, 荷清路, 学院路, 西土城路) with the registered provisional boundary edges at the same latitudes: east deviations of 533-898 m, mean about 667 m. The basis document states this does not prove PROV-SITE-001 wrong, is not a source-registry replay, and must not reverse-upgrade, replace or block the official boundary or scoring before official polygons are published.",
+        "changes": [
+          {
+            "file": "visual/index.html",
+            "change": "the three-frame site-reading notice now also cites the street-centreline background reading (533-898 m east, mean about 667 m) as background only, with no geometry shift"
+          },
+          {
+            "file": "visual/index.en.html",
+            "change": "equivalent English notice updated"
+          },
+          {
+            "file": "assumptions.json",
+            "change": "A-SITE-READING-020 statement and impact now record the street-centreline background reading as one quantitative uncertainty datum with no boundary, metric, scene, project or key-area state change"
+          }
+        ],
+        "result": "Package boundary disclosures now carry both maintainer background checks (issue-846 park-polygon divergence and the 2026-08-14 street-centreline reading) with the same background-only boundary; geometry files remain untouched",
+        "certification_note": "Background-check citation only; it does not adjust geometry, metrics, maturity or rights state, and it is not an official boundary determination."
+      },
+      "rights_ledger_coherence_r35": {
+        "contract_id": "JZ-RIGHTS-LEDGER-COHERENCE-R35",
+        "executed_at": "2026-08-15",
+        "method": "Full ledger-vs-disk digest audit over all 139 digest-bearing asset_records, plus git history inspection of the affected files",
+        "baseline_findings": {
+          "stale_digests": 13,
+          "stale_asset_ids": ["ASSET-002", "ASSET-014", "ASSET-016", "ASSET-017", "ASSET-019", "ASSET-025", "ASSET-065", "ASSET-066", "ASSET-067", "ASSET-068", "ASSET-100", "ASSET-117", "ASSET-118"],
+          "root_cause": "A foreign restore commit (b6c05fffe, merged via PR #2782 into main before Round 29) rewrote rights-clearance-ledger.json back to an older snapshot, leaving 13 digest entries stale relative to files later updated by Rounds 20-28; the manifest remained correct because refresh recomputes hashes from disk, and no gate verified ledger digests until now",
+          "manifest_coherent": true
+        },
+        "fixes": [
+          {
+            "file": "visual/assets/rights-clearance-ledger.json",
+            "change": "all 13 stale content_identity digests re-synced to actual disk bytes with digest_status matches_final_manifest_after_refresh"
+          }
+        ],
+        "enforcement": "The review handoff index generator's evidence-integrity check now also verifies every ledger digest against disk on every regeneration (ledger_digest_coherence), failing generation on any mismatch",
+        "certification_note": "Digest coherence is a machine bookkeeping check; it grants no rights clearance and changes no file content or maturity state."
+      },
+      "freshness_audit_r35": {
+        "contract_id": "JZ-FRESHNESS-AUDIT-R35",
+        "executed_at": "2026-08-15",
+        "method": "Second execution of the Round 21 freshness mechanism: all 50 sources re-checked (local path SHA-256 or live HTTP re-fetch), refresh_records replaced and summary updated in evidence-freshness-policy.json",
+        "baseline_findings": {
+          "verified_current": 48,
+          "review_due": 2,
+          "review_due_ids": ["CASE-22AT", "CASE-KINGS-CROSS"],
+          "digest_changed_since_r21": 15
+        },
+        "digest_changed_groups": {
+          "repo_internal": ["AGENT-TASKBOOK", "PROVISIONAL-BOUNDARY-BASIS", "SITE-PACKAGE directory", "five proposal.md-derived sources"],
+          "http": ["CASE-KENDALL", "CASE-MARS", "CASE-ONE-NORTH", "CASE-STATION-F", "OSM-CONTEXT"]
+        },
+        "result": "refresh_records now carry 50 Round 35 records; summary updated to audit_round r35, executed 2026-08-15, 48/2/50; review_due set is identical to Round 21 and freezes upgrades without deleting any statement",
+        "certification_note": "Freshness digests fix the bytes retrieved this pass only and are not publisher signatures; the audit is not a rights clearance or a validity guarantee."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,
