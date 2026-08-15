@@ -467,6 +467,11 @@ The indicator system at minimum covers overall design area, key area areas, gree
 
 ![Metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
+![Volume scenario derivation chain](assets/figures/p5-3_volume_chain.en.png)
+
+![Implementation & operation mechanism](assets/figures/p5-2_implementation_mechanism.en.png)
+
+
 The compliance matrix is the master control for task responsiveness. Every announcement task and agent_taskbook task must map to report sections, layers, metrics, drawings, HTML pages, sources, assumptions and self-check items. Failure to cover any mandatory task in announcement Sections 1.3, 1.4, 1.5 or agent.1–agent.6 disqualifies the proposal from formal professional scoring.
 
 ## Inclusion & Human-Centered Safeguards
