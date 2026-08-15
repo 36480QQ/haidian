@@ -1217,7 +1217,7 @@ node visual/assets/verify.js
 
 高分同期方案收到的改进要求中反复出现同一项：**对 A0 展板做远距可读性与色彩对比测试，对 HTML 做替代文本、键盘、屏幕阅读器与对比度检查。** 这类要求通常被一句话打发。本方案把它算出来，结果随包提交于 `visual/assets/accessibility_qa.json`，由 `analysis/accessibility_qa.py` 生成并已作为构建闸门——**不达标则构建失败**（须说准：`analysis/` 不在提交包内，闸门本身评审无法重跑；可重跑的是随包的 `accessibility_qa.json` 与五个 `.js` 校验器）**，不是提醒
 
-**同一条标准指向本包的闸门本身。** 36 道闸门此前只被观察到通过，而一道从不失败的闸门与一道不会失败的闸门，产生的证据完全一样。因此本方案人为损坏自己的包，每次损坏都要求对应的闸门报错并**指名**所损坏的东西：结果随包提交于 `visual/assets/gate_mutation.json`：54 处蓄意缺陷全部被捕获，36 道中 32 道已被证明会失败，另 4 道连同理由一并写明。同一目录下的 `visual/assets/claim_audit.json` 记录两版正文里带单位的量是否逐条对齐，`visual/assets/agent_declarations.json` 记录全场语料的机器可读声明状况。**须说准：`scripts/review_submission.py` 不读 `visual/assets/`**——这三份文件不进评审模型的上下文，因此这里指名它们，是拿到仓库的人唯一能知道它们存在的途径。。**
+**同一条标准指向本包的闸门本身。** 37 道闸门此前只被观察到通过，而一道从不失败的闸门与一道不会失败的闸门，产生的证据完全一样。因此本方案人为损坏自己的包，每次损坏都要求对应的闸门报错并**指名**所损坏的东西：结果随包提交于 `visual/assets/gate_mutation.json`：54 处蓄意缺陷全部被捕获，37 道中 32 道已被证明会失败，另 5 道连同理由一并写明。同一目录下的 `visual/assets/claim_audit.json` 记录两版正文里带单位的量是否逐条对齐，`visual/assets/agent_declarations.json` 记录全场语料的机器可读声明状况。**须说准：`scripts/review_submission.py` 不读 `visual/assets/`**——这三份文件不进评审模型的上下文，因此这里指名它们，是拿到仓库的人唯一能知道它们存在的途径。。**
 
 **色彩对比**（WCAG 2.1，正文 ≥ 4.5，大字号与图形对象 ≥ 3.0，衬底为图面米白 `#F2EFE9`）：
 
@@ -1321,12 +1321,12 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **172 条**。按发现者分：
+当前 **173 条**。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
 | 独立审计 | 25 | 委托的审计对象是随包产物，不是草稿 |
-| 作者自查 | 123 | 本轮工作中发现 |
+| 作者自查 | 124 | 本轮工作中发现 |
 | 本包自己的闸门 | 11 | 构建时被抓出——这是闸门本该做的事 |
 | **包外评审** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190、[@](https://github.com/) 在  |
 
@@ -1347,7 +1347,7 @@ node visual/assets/verify.js
 | 交付物在提交前没被看过 | 17 |
 | 声明活得比包的内容久 | 15 |
 | 写成硬约束，却判不了不合格 | 11 |
-| 这个说法在这种载体上原理上无法被核对 | 9 |
+| 这个说法在这种载体上原理上无法被核对 | 10 |
 | 引用解析不到 | 8 |
 | 数字活得比装它的那句话久 | 7 |
 | 数字背后没有文件 | 6 |
@@ -1721,15 +1721,15 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 
 ### 权利与许可台账
 
-评审无法核验的授权声明等于没有声明。下表逐类列出本包全部资产的来源、许可与**核验方式**，每一行都可独立复核。**逐文件的机读版本随包提交于 `visual/assets/rights_ledger.json`**——它由 `manifest.json` 生成而非手写，枚举的是实际随包的 **152 个文件**，任一文件没有权利归类即构建失败；每条另给出评审自行核验的方式，而不只是一句「原创」。手写台账枚举的是作者记得的资产，生成台账枚举的是包里真有的文件，这个差别正是本方案通篇在说的那件事：
+评审无法核验的授权声明等于没有声明。下表逐类列出本包全部资产的来源、许可与**核验方式**，每一行都可独立复核。**逐文件的机读版本随包提交于 `visual/assets/rights_ledger.json`**——它由 `manifest.json` 生成而非手写，枚举的是实际随包的 **153 个文件**，任一文件没有权利归类即构建失败；每条另给出评审自行核验的方式，而不只是一句「原创」。手写台账枚举的是作者记得的资产，生成台账枚举的是包里真有的文件，这个差别正是本方案通篇在说的那件事：
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**逐文件台账在评审输入之外，因此把它的结果放进来。** `build_review_input` 送出的是 `proposal.md` 与八份 JSON；`report/copyright_statement.md` 与 `visual/assets/rights_ledger.json` 都不在其中。**一份评审结构上打不开的权利台账，从评审的位置看就是一句无法核验的断言**——而那正是本方案在别处反对的东西。当前 **152 个随包文件全部有权利归类**，任一文件缺归类即构建失败：
+**逐文件台账在评审输入之外，因此把它的结果放进来。** `build_review_input` 送出的是 `proposal.md` 与八份 JSON；`report/copyright_statement.md` 与 `visual/assets/rights_ledger.json` 都不在其中。**一份评审结构上打不开的权利台账，从评审的位置看就是一句无法核验的断言**——而那正是本方案在别处反对的东西。当前 **153 个随包文件全部有权利归类**，任一文件缺归类即构建失败：
 
 | 清权类别 | 文件数 | 含义 |
 |---|---|---|
-| `author-originated` | 129 | 本方案原创，无第三方内容 |
+| `author-originated` | 130 | 本方案原创，无第三方内容 |
 | `provisional-only-with-stated-limit` | 9 | 九个 GeoJSON 图层，派生自仓库临时边界，限制已写明 |
 | `author-originated-measurement` | 8 | 对仓库公开元数据的自采统计，定级 background_only |
 | `author-originated-with-embedded-fonts` | 4 | A3/A0 PDF，含字体子集（见下） |
@@ -1851,11 +1851,11 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 11. `agent.json` —— 生成方法完整披露，`model` 字段非占位符；
 12. A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在（中日韩字体走这条；拉丁面 DejaVuSans-Bold 是简单 `/TrueType`，子集嵌在 `FontFile2`，因此只查 `FontFile3` 会漏看它——它同样已子集嵌入）。
 
-**先说清楚这份清单是给谁的。** 仓库的 `scripts/review_submission.py` 只把九个文件整份交给评审模型——`proposal.md`、`manifest.json`、`metrics.json`、`assumptions.json`、`sources.json`、`self_check.json` 与三份矩阵——外加五张固定 PNG、四份 PDF（中英各两份）各自的**第一页**（图像）和两张首屏截图。它**不读** `geometry/`、`visual/assets/`、`risk.json`、`changelog.md` 与 `agent.json`。
+**先说清楚这份清单是给谁的。** 仓库的 `scripts/review_submission.py` 只把九个文件整份交给评审模型——`proposal.md`、`manifest.json`、`metrics.json`、`assumptions.json`、`sources.json`、`self_check.json` 与三份矩阵——外加**十八张图像**：五个图纸路径、四份 PDF 的第一页、两个页面的首屏截图，**每一项中英各一张**，正好等于上限（清单见 `visual/assets/visual_packet_qa.json`）。**英文图纸是被评分的。**它**不读** `geometry/`、`visual/assets/`、`risk.json`、`changelog.md` 与 `agent.json`。
 
 因此上面 12 项里，**AI 评审能按字面执行的是 0 项**：其余各项指名的文件不在它收到的东西里。**拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。**这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。
 
-**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.72 秒**；另有 9 份文件、1037 KB、1,632 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
+**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.75 秒**；另有 9 份文件、1042 KB、1,633 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
 
 **这条披露有时效，因此写明进度。** 缺口已提为上游 Issue #2170，维护者提交了 PR #2181：在 review-input 里新增可审计的访问边界，明确参赛者的校验脚本从不执行，并修正评审 prompt——**不得仅因模型打不开一个已登记的 artifact 就扣分或判 gate 失败**。合入后上面的「0 项」不变，变的是它的后果：可达性不再被误读为投稿方没有提供。本包已按该恢复路径做过——关键推导同步写进 `assumptions.json` 与 `metrics.json`，三份矩阵逐行标注证据的可达程度。
 
