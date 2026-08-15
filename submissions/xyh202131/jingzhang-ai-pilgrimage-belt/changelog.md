@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v23.0 - 2026-08-15
+
+**Broken rendered-report link repair / 离线报告失效链接修复**
+
+- 第 23 轮只在第 22 轮 PR #2709 合并（merge SHA `3b38ad5c4c85b9a2dd852c829d1e37a6f78dbe9a` 进入 canonical `main@cf61a62b12b0487561c8623c4ff4d6193771fa3c`）且 441 个开放 PR 文件级扫描无竞争后开始。链接完整性审计覆盖全部中英文 proposal/visual/report/媒体说明与索引进阶路径：仅发现两份离线报告各一条媒体披露链接在渲染层退化为纯文本（仓库渲染器不转换非图片 Markdown 链接），且若按原文路径解析还会指向错误目录。
+- Round 23 began only after Round 22 PR #2709 merged (merge SHA `3b38ad5c4c85b9a2dd852c829d1e37a6f78dbe9a` entered canonical `main@cf61a62b12b0487561c8623c4ff4d6193771fa3c`) and a file-level scan of 441 open PRs found no competing PR. The link-integrity audit covered every bilingual proposal/visual/report/media note and all index route entry points: it found exactly one media-disclosure link per offline report that the renderer emitted as plain text (the repository renderer does not convert non-image Markdown links), with a path that would also resolve to the wrong directory if interpreted literally.
+- 修复：`report/proposal.html` 与 `report/proposal.en.html` 中该链接改为真实 `<a href="../assets/media/ordinary-life-scenes.md">`，从 `report/` 目录正确解析；proposal.md 与 visual 页面内的同源链接本就正确，未改动。
+- Fix: the link in `report/proposal.html` and `report/proposal.en.html` is now a real `<a href="../assets/media/ordinary-life-scenes.md">` resolving correctly from the `report/` directory; the same link inside proposal.md and the visual pages was already correct and is untouched.
+- 渲染器怪癖已记录：今后任何 `scripts/render_proposal_html.py` 重渲染都会重新产出纯文本形态，必须重新应用本修复（见 narrative r23 段）。本轮不新增来源、文件、页数、机制或成熟度；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- The renderer quirk is recorded: any future re-run of `scripts/render_proposal_html.py` will emit the plain-text form again and this fix must be re-applied (see the narrative Round 23 section). The round adds no source, file, page, mechanism or maturity; the four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。链接修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A link repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v22.0 - 2026-08-15
 
 **Browser QA matrix execution and evidence writeback / 浏览器交互 QA 矩阵执行与证据回写**
