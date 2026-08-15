@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M42",
+      "gate": "sources_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "从一条来源里删掉「文件类型」——组织方规则第 5 节要求入库前必须记录的十三项之一。",
+      "what_en": "Delete the file-type field from one source, one of the thirteen the organisers' rules require before a source is indexed.",
+      "why_zh": "本包此前用的是自己的十二项清单，并在读数里称其为「同样的核心字段」——**同样的，指的是本包自己那一份**；十三项里有四项在任何一条记录里都没有出现过。**一份自己给自己定的字段表，不能拿来衡量别人发布的要求。**",
+      "why_en": "This package used a twelve-field list of its own and reported that every record answered the same core fields - the same as its own list. Four of the organisers' thirteen appeared in no record at all. A field list written for oneself cannot be the measure of a requirement someone else published."
+    },
+    {
       "id": "M41",
       "gate": "sources_qa.py",
       "target": "sources.json",
@@ -499,7 +511,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 41,
+  "caught": 42,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",

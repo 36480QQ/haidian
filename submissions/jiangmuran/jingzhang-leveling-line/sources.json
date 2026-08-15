@@ -19,7 +19,11 @@
       "collection_method_en": "Read directly from the repository tree at commit 0e856ea035; this package compared its enums and value ranges item by item, recording every miss in assumptions.json.",
       "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file.",
       "authority_level": "A0",
-      "timeliness_level": "T0"
+      "timeliness_level": "T0",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "SOURCE-REGISTRY",
@@ -39,7 +43,11 @@
       "collection_method_en": "Read directly from the repository tree at commit 0e856ea035. The review input contains this file too, so this package's source grading must agree with it; any disagreement is this package's error.",
       "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file.",
       "authority_level": "A0",
-      "timeliness_level": "T0"
+      "timeliness_level": "T0",
+      "file_type": "json",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "PROCESSED-FACT-PACK",
@@ -59,7 +67,11 @@
       "collection_method_en": "Read directly from the repository tree at commit 0e856ea035. **It is a processed artefact, not an original source**: every figure this package takes from it is traced back to the announcement text, and anything that cannot be traced does not enter a conclusion.",
       "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file.",
       "authority_level": "A0",
-      "timeliness_level": "T0"
+      "timeliness_level": "T0",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "BOUNDARY-SOURCE",
@@ -82,7 +94,11 @@
       "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file.",
       "organizer_registry_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
       "authority_level": "A0",
-      "timeliness_level": "T0"
+      "timeliness_level": "T0",
+      "file_type": "geojson",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "KEY-AREA-SOURCE",
@@ -105,7 +121,11 @@
       "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file.",
       "organizer_registry_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
       "authority_level": "A0",
-      "timeliness_level": "T0"
+      "timeliness_level": "T0",
+      "file_type": "geojson",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -125,7 +145,11 @@
       "license_or_reuse_terms_en": "A government-published open call, public by law. This package cites only the stated requirements and published figures, with attribution.",
       "organizer_registry_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
       "authority_level": "A0",
-      "timeliness_level": "T0"
+      "timeliness_level": "T0",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "AGENT-TASKBOOK",
@@ -146,7 +170,11 @@
       "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file.",
       "organizer_registry_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
       "authority_level": "A0",
-      "timeliness_level": "T0"
+      "timeliness_level": "T0",
+      "file_type": "json",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "FIELD-CENSUS-2026-08",
@@ -170,7 +198,11 @@
       "license_or_reuse_terms_en": "Each proposal is published by its own author under the repository's open-call terms. This package **redistributes no proposal's body text**: the shipped copy keeps only title, summary, tracks, proposal_bytes, model and model_family for each record — the fields the published figures actually use — and drops the rest. The statistics are this proposal's own measurement, graded background_only; cite them by re-running rather than by quoting, because the corpus grows daily.",
       "usage_en": "This proposal's own measurement: an authoritative-source census of every merged proposal in open-city-ai/haidian (enumerating the git tree rather than the lagging submissions-data.js), counting declared track distribution, structural convergence, meta-symbol saturation, and how machine-readable the agent.json generation-method disclosure fields are.",
       "authority_level": "outside-this-taxonomy",
-      "authority_level_note_zh": "本包自采的普查数据，不是「公开资料」——该表规范的是筛选和引用他人发布的资料，而这一条是本包自己的测量，其可信度由随包的可重跑仪器和逐次读数承担。"
+      "authority_level_note_zh": "本包自采的普查数据，不是「公开资料」——该表规范的是筛选和引用他人发布的资料，而这一条是本包自己的测量，其可信度由随包的可重跑仪器和逐次读数承担。",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "OSM-REFERENCE-2026-08",
@@ -193,7 +225,11 @@
       "license_or_reuse_terms_en": "ODbL 1.0 (Open Database License). Attribution '© OpenStreetMap contributors', shared under the same licence. **This package does redistribute an extracted subset of the original data**: `visual/assets/osm_reference.json` holds the raw coordinates and tags of 2 park boundary rings and 16 railway ways, together with this proposal's own two provisional boundary rings — 275 vertices, unsimplified. That subset constitutes a Derivative Database under ODbL, so this package provides that portion under ODbL 1.0 and keeps the original way ids for traceability. This field previously said the original database was not redistributed, which stopped being true once the coordinates shipped; corrected.",
       "usage_en": "An independent public-data cross-check: OpenStreetMap's surveyed polygon for the Jing-Zhang railway heritage park and the disused alignment, used to test how far the repository's provisional boundary sits from the actual geography.",
       "authority_level": "outside-this-taxonomy",
-      "authority_level_note_zh": "众包地理数据，不属于该表列出的任何一档：它既不是政府或官方平台发布（A0/A1），不是权威媒体转载（A2），也不是对标机构报告（A3）；本包按自己的证据上限记为 background_only，并在 A-OSM-001 里写明其众包属性。**不套一个不合身的档次，比套上去更接近这份规则的用意。**"
+      "authority_level_note_zh": "众包地理数据，不属于该表列出的任何一档：它既不是政府或官方平台发布（A0/A1），不是权威媒体转载（A2），也不是对标机构报告（A3）；本包按自己的证据上限记为 background_only，并在 A-OSM-001 里写明其众包属性。**不套一个不合身的档次，比套上去更接近这份规则的用意。**",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "BARRIER-FREE-ENVIRONMENT-LAW",
@@ -215,7 +251,11 @@
       "usage_en": "Anchors this proposal's non-AI equivalent service path as a statutory duty rather than a design judgement: the article requires places providing medical, insurance, financial, water, electricity and gas services to retain traditional means such as on-site guidance and human handling.",
       "organizer_registry_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
       "authority_level": "A0",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "GENERATIVE-AI-INTERIM-MEASURES",
@@ -237,7 +277,11 @@
       "usage_en": "Article 14 makes stopping generation and transmission on discovery a provider's duty, matching this proposal's suspension and area-wide pause rules; Article 15 requires an accessible complaints channel with a published process and response time limit, matching this proposal's claim that an appeal right without a time limit is unenforceable — so that claim is not an invention here but an implementation of a rule already in force.",
       "organizer_registry_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
       "authority_level": "A0",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "ELDERLY-SMART-TECH-PLAN",
@@ -260,7 +304,11 @@
       "evidence_class_note_zh": "本包原评为 regulatory_baseline，而组织方来源登记表把它的 usable_for_formal 限为 background_only。**登记表是本次征集的已发布契约，本包的评级高于它时以登记表为准**；该文件仍然被引用，只是不再被当作可支撑正式结论的依据。",
       "evidence_class_note_en": "This package had graded it regulatory_baseline while the organisers' source registry caps its usable_for_formal at background_only. The registry is the published contract for this call, so where this package's grade was the stronger one the registry governs. The document is still cited; it no longer carries a formal conclusion.",
       "authority_level": "A0",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "CASE-C1-ALGORITHM-REGISTER",
@@ -281,7 +329,11 @@
       "license_or_reuse_terms_en": "A municipal government public page. This package cites only its field structure and mechanism, reproducing no page text or graphics.",
       "usage_en": "C1: a field reference for the benchmark plate's information layout — purpose, data, responsible party and appeal route, matching the plate's four lines.",
       "authority_level": "A3",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "CASE-C2-EU-AI-ACT-RISK-TIERS",
@@ -303,7 +355,11 @@
       "license_or_reuse_terms_en": "The Official Journal of the EU, public under the EUR-Lex reuse policy. This package cites only the mechanism.",
       "usage_en": "C2: supports this proposal's F1/F2/F3 tolerance tiering — differentiated requirements set by severity of consequence rather than by technical complexity.",
       "authority_level": "A3",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "CASE-C3-AI-VERIFY",
@@ -324,7 +380,11 @@
       "license_or_reuse_terms_en": "Foundation public material. This package cites only the methodological positioning.",
       "usage_en": "C3: a reference for how re-survey is executed — one question set, one method, producing readings that can be compared with each other.",
       "authority_level": "A3",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "CASE-C4-NHS-ALGORITHMIC-IMPACT",
@@ -345,7 +405,11 @@
       "license_or_reuse_terms_en": "Open Government Licence v3.0. This package cites only the structure of the mechanism.",
       "usage_en": "C4: supports placing medical scenarios at the strictest tolerance F1, and supports the rule that a prescriptive judgement must be made by a qualified person and leave a trace.",
       "authority_level": "A3",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "CASE-C5-CIVIC-DATA-AGENDA",
@@ -366,7 +430,11 @@
       "license_or_reuse_terms_en": "Decidim is an AGPL-3.0 open-source project with public documentation. This package cites only the process structure and uses none of its code or data.",
       "usage_en": "C5: supports the public's right to initiate a re-survey at a third-order benchmark — data purpose and re-survey agenda decided by those affected rather than by the operator.",
       "authority_level": "A3",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "CASE-C6-ARTIFACT-EVALUATION",
@@ -387,7 +455,11 @@
       "license_or_reuse_terms_en": "ACM public policy page. This package cites only the badge definitions and their requirements.",
       "usage_en": "C6: the basis on which this package ships five dependency-free executable checkers and all its data artefacts, so conclusions can be re-run by a third party rather than only read.",
       "authority_level": "A3",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -409,7 +481,11 @@
       "license_or_reuse_terms_en": "A ministerial regulation, public by law. This package cites only the substance of the articles, with their numbers.",
       "usage_en": "The compliance-matrix line stating that urban design implements the plan, guides architectural design, shapes the city's character and co-ordinates space in plan and section is taken directly from Article 3: urban design is an effective means of implementing urban planning, guiding architectural design and shaping the city's distinctive character, co-ordinating building layout and reconciling townscape in both plan and three dimensions.",
       "authority_level": "A0",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -432,7 +508,11 @@
       "usage_en": "Used to bound what this package may say at regulatory-plan depth: floor area ratio, building height, density, setbacks and road redlines fall within this measure's approval scope, are not supplied here, and stay unknown in metrics.json with their preconditions recorded.",
       "organizer_registry_id": "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
       "authority_level": "A0",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -455,7 +535,11 @@
       "usage_en": "Land use is expressed with a checkable land_use_code rather than a classification invented here; final classification must rest on official documents and professional review.",
       "organizer_registry_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
       "authority_level": "A0",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核"
     },
     {
       "id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
@@ -478,9 +562,29 @@
       "license_or_reuse_terms_en": "To be recorded once obtained.",
       "usage_en": "Serves only as a missing-material item and a reminder for the next stage; this package draws no architectural depth conclusion from it.",
       "authority_level": "A0",
-      "timeliness_level": "T1"
+      "timeliness_level": "T1",
+      "file_type": "未取得",
+      "directly_downloadable": false,
+      "collection_status": "未取得",
+      "manual_review_status": "未复核——该文件从未打开"
     }
   ],
   "source_quality_note_zh": "组织方在 `brief/source-quality-rules.md` 里发布了权威等级 A0–A3 与 X（不入库）以及时效等级 T0–T4。本包此前只用自己的证据上限（evidence_class），从未按这份已发布的分级说明自己的来源。此处补上：逐条给出 authority_level 与 timeliness_level，**并逐条核对没有任何一条落在 X（商业地图瓦片、账号内资料、下载密码资料、版权不明图片、非公开图件、个人信息）**。两条不属于该表所描述的类别，写明理由而不是硬套一个档次。",
-  "source_quality_note_en": "The organisers publish authority levels A0-A3 plus X (never indexed) and timeliness levels T0-T4 in brief/source-quality-rules.md. This package had only ever used its own evidence ceiling and had never described its sources in the published grading. Each source now carries an authority level and a timeliness level, and each was checked against X - commercial map tiles, account-gated or password-protected material, unclear-copyright images, non-public drawings, personal information - with none falling there. Two sources are outside what that table describes and say why rather than being forced into a level that does not fit."
+  "source_quality_note_en": "The organisers publish authority levels A0-A3 plus X (never indexed) and timeliness levels T0-T4 in brief/source-quality-rules.md. This package had only ever used its own evidence ceiling and had never described its sources in the published grading. Each source now carries an authority level and a timeliness level, and each was checked against X - commercial map tiles, account-gated or password-protected material, unclear-copyright images, non-public drawings, personal information - with none falling there. Two sources are outside what that table describes and say why rather than being forced into a level that does not fit.",
+  "required_field_mapping_zh": {
+    "note": "组织方在 `brief/source-quality-rules.md` 第 5 节列出「入库前必须记录」的十三项。本包此前用的是自己的一份十二项清单，并在闸门读数里称其为「同样的核心字段」——**同样的，指的是本包自己那一份。** 此处逐项对上，并写明哪一项由哪个字段回答。",
+    "标题": "title / title_en",
+    "发布机构": "publisher",
+    "原始 URL": "url（未取得者写明未取得，不给链接）",
+    "发布日期": "published_date",
+    "访问日期": "retrieved_at",
+    "文件类型": "file_type",
+    "权威等级": "authority_level（组织方 A0–A3 分级，两条写明不属于该表）",
+    "时效等级": "timeliness_level",
+    "是否直接可下载": "directly_downloadable",
+    "许可/使用限制": "license_or_reuse_terms / _en",
+    "摘要": "usage / usage_en —— **这一项是映射，不是新增字段**：本包记的是「该文件里本包据以立论的内容」，比一份通用摘要更窄也更可核验；写明是为了让读者知道这一项被什么回答，而不是假装两者相同。",
+    "采集状态": "collection_status",
+    "人工复核状态": "manual_review_status"
+  }
 }
