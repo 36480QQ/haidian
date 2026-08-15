@@ -376,7 +376,7 @@ Graduation uses a three-dimensional cube of “technical maturity × public-valu
 
 ![JZ-AIOS four-gate system and scenario passport](assets/figures/innovation-system.en.png)
 
-## Land Use, Building Scale, and Demolish–Renovate–Retain Strategy
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Land-use classification uses the project-permitted codes 0701, 0702, 0802, 0803, 0804, 05, 1401, 1403, and 16. Thirty-six units fully cover the provisional overall extent; a color-coded diagram is not presented as statutory land use. Code 1403 represents a functional envelope suitable for public activity. `PUBLIC_SPACE` records only the nine public nodes receiving direct design intervention, so the two areas are not expected to match. They will be reconciled after formal parcel and public-space data become available [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [assumption:A-PUBLIC-SPACE-SCOPE-003].
 
