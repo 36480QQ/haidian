@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "23019d5810d8aabcb42ecc3de4ac70c65575e95083acf6c6c204b353b4f72d32"
+      "sha256": "d67aae10cdb7838d9b61ac9363aeb4aea023f57e2d8e495555dbb83ec1a27cc2"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "2cd2a0c9ff7b9092a02ac6ab350bc0c7cf99cd19a685cc7bb44bf9c43694e8a8"
+      "sha256": "85fb1ce5bdd6cb18a63e4bd14ac77dc6d8878f1492de9612354eebc71c6debff"
     },
     {
       "path": "assumptions.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "f7e1cb0fa47fca080939b1ed4ae0059496eb015e142e0f3121fef90fdc6f67ff"
+      "sha256": "e6b1643f84547cef911e9b33b1579eb0fd582aed18d96ebba86aa876f60e332f"
     },
     {
       "path": "report/narrative.md",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "cffa42dc85a5792a2c2c42d139a4d24b3e49cd4bcdb454ecb01f7b71c31bdbdc"
+      "sha256": "0cd91c0cb4f9f0126ba44c0d93dd3d06b0d947cbe8310bba8a1678bcc80cc24a"
     },
     {
       "path": "assets/figures/key-areas.png",

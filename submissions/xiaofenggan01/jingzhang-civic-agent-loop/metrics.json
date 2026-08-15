@@ -834,6 +834,19 @@
       "assumptions": [
         "深化指标进可视化"
       ]
+    },
+    "visual_rollback_row_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html"
+      ],
+      "formula": "count of rollback rows shown in visual gate section",
+      "confidence": "high",
+      "assumptions": [
+        "回滚映射可视化"
+      ]
     }
   }
 }
