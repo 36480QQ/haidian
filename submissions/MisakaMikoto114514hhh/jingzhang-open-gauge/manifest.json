@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1c32d3379d7de80e37254e2676ad2834f6eb45060adea594423e8c97fcbe3d2f"
+      "sha256": "33c70e198b080dec222457d734bc2f0c635a76118da4e315f9a0bd674edc42ea"
     },
     {
       "path": "agent.json",
@@ -51,19 +51,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "69ab53a149d002ad096044fd6b8aea7db14aef32144a37f4e7fc95bf8875e9df"
+      "sha256": "e5b074ca509624c6a0c08e59b26dfb73fd8b183a758c5e35d0e66fd1feadaa6c"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9989da8a801402a98f4e83777117930a581eba4b9cad6f85b5fe0b09dedb5bbe"
+      "sha256": "ca1ffe158e425cb6a5ab0980fbe2b181e85c7f3155be8b6a8beb14a808a11840"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "ab124287da7b980077329c0f0d8f227bd2f5f5db6c32b008268e2f9ec547ba4b"
+      "sha256": "fb7af4512832776b3eda2b2069a451646980b303174657f9cd8d0ba7fea0de7e"
     },
     {
       "path": "standard_matrix.json",
@@ -75,14 +75,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "c7f813a4dcc2dceef870cfb00b887ab763a46330d743c835b30edbf9f3a4fa86"
+      "sha256": "fb856568013b291df8e3ec35425a3d28c4b970bb9f98734cfa88cd297261648b"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2e26f7e268716bc409c558f6377480d801e46b52c47289654eb4fd34eb94755d"
+      "sha256": "68e8d1b5cff42b955a6079f205d3cdfaf6552245dcffc33fc71e02eb78f946db"
     },
     {
       "path": "report/narrative.md",
@@ -101,21 +101,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6ad59f042339857afcb403b1bc87ddd716cfd1c482626cfa45630c7590f30bd4"
+      "sha256": "136abdfde5667cfc645dc2b9f45b7aa4930135f14e055727194e53740a2ca36d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8564416a151e807275cf798066172e7145013e127eca75ef8105046d0ad94614"
+      "sha256": "b5b9d61a3d953b2d52b4064d1ed70cabfed8f518c9afd7ec35165f38421f9a94"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "56a1409ab113a51d03cf8ccc7eb7568fe467b0c318684a7a001678a63087109c"
+      "sha256": "13da76532e64cb7a0f8f4fbd85fe41fc68a2f860e9213f9d7db45c26ddec08a5"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -212,7 +212,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "65b092cd3e1acdbdaa1745be4707a83900091017fbc8ee1c9eafa90518ddb7d3"
+      "sha256": "b7684eccc93592aa41d963164bdd9187427fcd4f8cebfc5974150994804adc79"
     },
     {
       "path": "report/proposal.en.html",
@@ -220,7 +220,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ceeb68780615fd66440122b64b33bf305d80c47d58d4275aaed71846a6ef2a81"
+      "sha256": "5b64ea1518a1d3ef2980dac80d6b15ca0cadb3ebca57fa3c465b3abcefadf723"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -228,7 +228,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "e61541ba31d37ca652639fa9ef5b7c2557988f50a278a127a585f845c88ca31b"
+      "sha256": "35cdab8e934ab695ee33c26d3ba22081106aa1c0e92123395ad73489cb769ef9"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -236,7 +236,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "51c4fcf2e1502fba61a6706ccf7811ce3d30b35190a466cce52311f45447237e"
+      "sha256": "b93a9c9eb61fecaeddf5f4c72c81be8b611e13020f04ee763cf9436590460d20"
     },
     {
       "path": "visual/index.en.html",
@@ -244,7 +244,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c47051eb60dcd3105c630e79840f5dcd46ada174fd36b4a41836b4df8c86a857"
+      "sha256": "a35a9c645d7a038fb2b3f3c1ea7be3d6d8f9a41f8af3043ec44e27fa1cad0492"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -294,6 +294,29 @@
       "sha256": "080b768c755ad9f097773c4322857911c7d0e0ab2378dd7499502b06a2b9dd70"
     },
     {
+      "path": "assets/media/logo-concept.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "title_zh": "Logo 概念方向候选",
+      "title_en": "Logo concept direction candidate",
+      "description_zh": "开放铜环+双轨+铭文刻度，1435 超级符号；程序化排版，非最终图形。",
+      "description_en": "Open bronze ring + double rails + inscription ticks with 1435 as the super symbol; programmatic typography, not final artwork.",
+      "sha256": "1fb53a318a5a4aa8eb603081a2311447004d741ff9501ee22aaa5070bb35a92c"
+    },
+    {
+      "path": "assets/media/logo-concept.en.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/logo-concept.png",
+      "title_zh": "Logo 概念方向候选（英文版）",
+      "title_en": "Logo concept direction candidate (English)",
+      "description_zh": "开放铜环+双轨+铭文刻度英文排字版；程序化排版，非最终图形。",
+      "description_en": "English-typography variant of the open-ring + double-rail mark; programmatic typography, not final artwork.",
+      "sha256": "c5435cf3faff7cab659671d26fb3725ad901c97089a8a7d6be0a5267b5a30e69"
+    },
+    {
       "path": "assets/media/experience.mp3",
       "role": "audio",
       "required": false,
@@ -306,6 +329,18 @@
       "sha256": "1bd229c6293cfb2dd0d0e8618d78f52ed0963605a70c8fd7074c0aaebb482855"
     },
     {
+      "path": "assets/media/experience.en.mp3",
+      "role": "audio",
+      "required": false,
+      "language": "en",
+      "title_zh": "京张·铭轨 方案英文语音旁白",
+      "title_en": "Jing-Zhang Common Gauge English voice-over",
+      "description_zh": "约56秒英文概念旁白，配转录与权利说明。",
+      "description_en": "About 56 seconds English conceptual voice-over with transcript and rights note.",
+      "transcript": "assets/media/experience-en.md",
+      "sha256": "45ae0577772e37e26d1bd13e5c1a03fed40a321d6a16df1acd0a7226a1a13e9e"
+    },
+    {
       "path": "assets/media/experience.md",
       "role": "transcript",
       "required": false,
@@ -313,12 +348,20 @@
       "sha256": "4bb447e86f233577d644c0d2b1c3a5ed6ad547f32400ef16419101612152d8ab"
     },
     {
+      "path": "assets/media/experience-en.md",
+      "role": "transcript",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/experience.md",
+      "sha256": "6a5f34d5c647c48e125f204119670884ed23b0f0e468da4c00c87ea285a394ea"
+    },
+    {
       "path": "risk.json",
       "role": "other",
       "required": false,
       "language": "zh",
       "role_detail": "risk_register",
-      "sha256": "1bfe3c53ead5613839ff6854524e8fe032010def54498dddeadc314580800a67"
+      "sha256": "1110a353e27b120cee8a532a6a8df463e81b24b5cd6ada91a5e121863525eef1"
     },
     {
       "path": "assets/media/experience.mp4",
