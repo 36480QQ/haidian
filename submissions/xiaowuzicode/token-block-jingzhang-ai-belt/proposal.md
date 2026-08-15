@@ -6,7 +6,7 @@ language: "en"
 chinese_translation: "included"
 translation_file: "proposal.zh.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.6"
+iteration: "v1.7"
 summary: "On single-track railways a driver could enter a section only while holding its token, and no second token was released until the first came back. Token Block applies that hundred-year-old safety rule to urban AI governance: the Jing-Zhang heritage corridor becomes one continuously operated, publicly bookable AI test track — one token, one section, returned before the next is issued — with three stations, two switches, and an evidence chain that lets any professional team recompute every claim."
 summary_zh: "单线铁路上，司机必须持有区间令牌才能进入，令牌未归还前发不出第二枚。本方案把这条百年行车安全规则用于城市AI治理：把京张遗址公园全线做成一条持续运营、公众可预约的AI测试轨道——一枚令牌，一个区间，归还之后才发下一枚——三站两岔、一线到底，并附可被专业团队逐项复算的证据链。全部空间建议均为概念建议，不替代法定规划。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
@@ -238,6 +238,31 @@ The separation is the point. The Line Operator has an incentive to fill the cale
 | Public-space return compliance | Share of windows restoring the space by the published end date | Per window | Requires operation |
 
 **Stop conditions — what would pause or reverse this.** A proposal that cannot say how it fails is not implementable. The line should pause a scenario, or the programme, when: an objection is unresolved past its published deadline; a scenario is found to have collected data outside its declared boundary; the non-digital equivalent is unavailable while the digital one runs; a booking has enclosed a station plaza beyond its published window; the step-free route is broken by an installation; or official regulatory, heritage or rail data arrives that contradicts a spatial assumption in this package. The last one is the most likely, and it is a reason to recompute, not a reason to argue [depth:phasing_implementation] [depth:risk_missing_data] [source:PROCESSED-FACT-PACK].
+
+**From ninety days of narrative to one hundred days of packages.** The pilot description above
+is now carried by a machine-readable delivery frame, `implementation.json`, so that "what happens
+first" can be audited the same way the token protocol is. It registers
+[metric:work_package_count] first-100-days work packages — two line-level packages (the token
+ledger with its first booking window, and the spine walk-through continuity audit) and roughly
+three per key area, from the temporary opening of the Arrival Yard plaza to the zero-kilometre
+pop-up release hall to the marshalling-yard meadow clearing. Every package declares its
+precondition, its dependency and, most importantly, its **evidence output** — the record that
+must exist for the package to count as done, several of which feed the six Class C performance
+metrics directly. Cost is deliberately recorded only as a relative effort class
+(light / medium / heavy): absolute costs are not claimed anywhere, because pricing before title,
+existing-building and utility conditions are confirmed would violate this package's own honesty
+rule.
+
+**Exit gates G0–G4 — the stop conditions, formalised.** The prose stop conditions above are
+registered as [metric:exit_gate_count] executable gates: G0 starts nothing until both governance
+bodies exist; G1 pauses and recomputes when official boundaries contradict an assumption; G2
+rolls an installation back to the last usable state when a safety review fails; G3 revokes the
+token and pauses bookings on a governance breach; G4 is the 100-day handover review — unmet
+evidence outputs mean remediation or an orderly exit in which reversible fittings are removed
+and sites return to public use. Procurement is scoped as [metric:procurement_theme_count]
+themes without amounts, and [metric:monitoring_window_count] monitoring windows at 3, 12 and
+36 months state exactly when each of the six performance metrics starts accruing real data —
+the plan for how `unknown` eventually becomes known, rather than a pretence that it already is.
 
 **Operations and the annual system.** The belt is proposed to run an annual Global AI Week using the line itself as the venue, a rolling scenario-open calendar publishing which segments are bookable, a developer community anchored at the Zero-Kilometre release hall, and a conversion pathway that moves a team from open-source contributor to bookable-track user to tenant. Brand assets accumulate in the belt rather than in any single event: the line, the station names, the marker, the board. All of this is an operating proposal for professional and operating teams to develop — not a confirmed government programme, funding commitment, investment arrangement or approved event schedule.
 
