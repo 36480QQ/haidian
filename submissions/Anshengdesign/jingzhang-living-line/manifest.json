@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "50e2508c91d9c4bb7d8790c317985d1e4d286ec04d8d5aa3cfc5b33210d961c7"
+      "sha256": "f5c2278b0a892ceef580b6e6ee824a06db2b8dc4d09d00a438128bf92548bc96"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "06bc6ea679e09dba2b0b3665125de61c8f288449e605a2b41097afa384da2a7a"
+      "sha256": "afd59df571b9296d49d4d14dbc49608d31ae4052b3dd16152fc9c4a00edf6f39"
     },
     {
       "path": "report/narrative.md",
@@ -573,7 +573,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
