@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9bda4b7ce3638e51ca78ef0adf0b03de11b9029e1e8ea06bd52b9d2b9db3db7b"
+      "sha256": "35c7ff03f70cbbffbfddde3cb6253f663930e1a835239d77cbd8752fb23738b1"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "4133f3ff412dc64e753c0c46a873e720146bf0c58b8b1170b5cdacd0192acec9"
+      "sha256": "7e8193cb77a262074d672472a4464141da019609e402866f570600b75da2bae9"
     },
     {
       "path": "assumptions.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b864848554f0774ae76baac2086a8bed47dfc332c3f648a1ef7f9d7f81499dbe"
+      "sha256": "66fe811781803d49243bdbfa78d418f280d80d12656fa154afa26f5639e58c3f"
     },
     {
       "path": "report/narrative.md",
@@ -585,10 +585,209 @@
       "language": "en",
       "translation_of": "assets/figures/c16-syntax-maps.png",
       "sha256": "f1ea28988e55ef5c5a99154bfa115f314c19421b8f51cf3b6a94e64126620f15"
+    },
+    {
+      "path": "assets/figures/section-zhongzhiyuan_ai_acceleration_area.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "bc5fcc62081cfc7bf9a7dc9635571866ea745a964627e24485366abd04639633"
+    },
+    {
+      "path": "assets/figures/section-zhongzhiyuan_ai_acceleration_area.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/section-zhongzhiyuan_ai_acceleration_area.png",
+      "sha256": "68f158a50e48b136fefeb3df5ed1fab6d0b122922fdd61a1b2d8bc79b79df144"
+    },
+    {
+      "path": "assets/figures/section-beijing_ai_origin_community.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "36be2a221a2e18c544c0c72c1da6e950f7662d01ce82f46fb30aad43850335c6"
+    },
+    {
+      "path": "assets/figures/section-beijing_ai_origin_community.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/section-beijing_ai_origin_community.png",
+      "sha256": "21e18865d1d67520cde947598d0c6d6bfb94ae3338f2ee1e0e46d63d37a36d9b"
+    },
+    {
+      "path": "assets/figures/section-dazhongsi_ai_industry_cluster.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "dee11787249bc69a15684003f34b648154a8d8e15da20adcc3389ce8ebdd087c"
+    },
+    {
+      "path": "assets/figures/section-dazhongsi_ai_industry_cluster.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/section-dazhongsi_ai_industry_cluster.png",
+      "sha256": "3c8b8ed4357eeec17552b9d9dc9b3f7b894a9952028a89ff6d4a07a0d33e5c4c"
+    },
+    {
+      "path": "verification/README.md",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "fee100527a6cb7d4392449f140318dc335c447d4605c9573d542c168d26bc101"
+    },
+    {
+      "path": "verification/amap_poi.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "27c3a136182a72d45c4f5ca1c6b4b2f6c1e6689e9145ff3b49ae64d5a9ed2b18"
+    },
+    {
+      "path": "verification/c11_simulacra.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "a01f7e16fc312159a7bbd4f7d189a1f064a396bb2b6d1af9d4dd193cdd0a3431"
+    },
+    {
+      "path": "verification/c12_ca.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ee522723e8d97e2ba39b807854b28373f801c6be3597b4a7bcc309cb3e73509c"
+    },
+    {
+      "path": "verification/c13_fractal_spectrum.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e9b80f3bbf622dbb1edbef42d7dce3db59f1beaef9aab57a3fa44ea45b514b5a"
+    },
+    {
+      "path": "verification/c14_governance.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "b992d6fc29d0f328175e0c3cd2e00dd917991156b9e8c1c7465acd3dbdca3ee0"
+    },
+    {
+      "path": "verification/c15_luti.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "48ea565040a3c0dac6449767c6a086715b561661b191e419f9155ea7ef209077"
+    },
+    {
+      "path": "verification/c16_syntax_maps.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "77eb3bebb83249a50e40513718c260edead760538fcdb3b349b476ed9eac2b9b"
+    },
+    {
+      "path": "verification/c1_wilson.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "4945e25a3c149fce0fecf60b444263a810eca815c001ec65e54b44c5f756568f"
+    },
+    {
+      "path": "verification/c2_percolation.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "50ea19ecb78f276a5f89e0eaf2ae7470a9dde82a392d8aeeb7972d18dca7c0c2"
+    },
+    {
+      "path": "verification/c3_scaling.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "034c1d5e20fe1efbd9a2d1c60c0828c3971d6f29dbdcfa4af744b69388e2ac22"
+    },
+    {
+      "path": "verification/c4_syntax.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "8be898b022a17bb1a8c9674edd06b0d4e623fff5b91226a99e2be341aa6eeba0"
+    },
+    {
+      "path": "verification/c4b_syntax_toledo.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "482c45c03d2e69db314fde166a6d6f4aced7ba935afcb8cb460d64ae594dd0b1"
+    },
+    {
+      "path": "verification/c5_counterfactual.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "1d07600ee00397334843c3dd2f500b29c88d475dfb36fad4ffb8aee3a558c9b8"
+    },
+    {
+      "path": "verification/c6_fractal.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "b85a084f92e47dcedc4ccb32f6e1b5ef26d80953e19138dd336e691bcd5a6783"
+    },
+    {
+      "path": "verification/c7_poi.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "84d2a748d5165af27b1d65a49da0b2bdcc588f488c7134a847b21fa32c2102b2"
+    },
+    {
+      "path": "verification/c8_c9_c10.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "1afb5472bf5fa969508e32a04179699b25b60dc9a7db10c3c82e6ba7a1859ec0"
+    },
+    {
+      "path": "verification/gen_design_geometry.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "0e77e410e40c14eddc303da2f37003eeac63f92fcfae6504397913a7e3fb3965"
+    },
+    {
+      "path": "verification/gen_figures.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "6ce49cc82452b103ba3e7ff0cb2bad2e0aaa4704494b3f36402f03a1240a8c20"
+    },
+    {
+      "path": "verification/gen_pdfs.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "045635891e6391cbbbccc0cd2261be5a21fe6f4162f39e36c3c42e74958e3a0c"
+    },
+    {
+      "path": "verification/kun_common.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "3dccbe7a05f8af536b96cd593fdde701ce8f8fce89579d73b8199f10549a790b"
+    },
+    {
+      "path": "verification/site_model.py",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "9c86e978537904ef141652ad6f6bb32b5cc089325655e85f50af26ef1cc78e24"
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"

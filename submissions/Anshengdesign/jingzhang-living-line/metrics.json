@@ -731,6 +731,17 @@
       "assumptions": [
         "POI口径"
       ]
+    },
+    "beta_infra_mean": {
+      "status": "known",
+      "value": 0.758,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "H 健康因子中 β=(β_road 0.915+β_bldg 0.60)/2 的概念平均（基建亚线性基准）",
+      "confidence": "medium",
+      "assumptions": [
+        "道路β取自C3 98个概念分区单元；建筑基底β取自C3；H 的 γ 取自 72 个 400m POI 单元拟合"
+      ]
     }
   }
 }
