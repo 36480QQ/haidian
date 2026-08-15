@@ -712,6 +712,21 @@
         "result_after_fix": "zero elements below threshold on both pages with all details expanded",
         "certification_note": "Programmatic WCAG-AA threshold verification only; it is not assistive-technology certification, human visual inspection or a legal compliance claim."
       },
+      "html_semantics_r25": {
+        "contract_id": "JZ-HTML-SEMANTICS-R25",
+        "executed_at": "2026-08-15",
+        "method": "Deterministic HTML parse over both visual pages and both rendered reports: duplicate IDs, heading level order, in-page anchor targets, table header presence, html lang attribute",
+        "baseline_findings": {
+          "visual_pages": { "duplicate_ids": 0, "heading_skips": 0, "missing_anchors": 0, "tables": 16, "th": 96 },
+          "reports": { "duplicate_ids": 0, "heading_skips": 1, "missing_anchors": 0, "tables": 32, "th": 162 }
+        },
+        "fixes": [
+          { "file": "proposal.md", "heading": "30 秒 / 3 分钟 / 15 分钟阅读入口", "before": "h3", "after": "h2" },
+          { "file": "proposal.en.md", "heading": "30-Second / 3-Minute / 15-Minute Entry", "before": "h3", "after": "h2" }
+        ],
+        "result_after_fix": "0 heading skips in both re-rendered reports; Round 23 renderer media-link fix re-applied after re-render",
+        "certification_note": "Deterministic structural verification only; it is not assistive-technology certification or human visual inspection."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,

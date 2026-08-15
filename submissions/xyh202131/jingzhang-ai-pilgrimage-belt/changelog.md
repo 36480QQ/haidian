@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v25.0 - 2026-08-15
+
+**Heading-hierarchy repair after HTML semantics audit / HTML 语义审计与标题层级修复**
+
+- 第 25 轮只在第 24 轮 PR #2734 合并（merge SHA `78b5e4d00dfd330593b510192d519e7fb333367b` 进入 canonical `main@a2a1ae3e62b1dd23acc4b2e5a7a9c8e9eed15bf1`）且 437 个开放 PR 文件级扫描无竞争后开始。HTML 语义审计（重复 ID、标题层级、页内锚点、表格表头、lang）覆盖双语 visual 与报告：visual 页面 0 缺陷；两份提案存在同一缺陷——`# 双轨京张`（h1）后直接 `### 阅读入口`（h3）跳级。
+- Round 25 began only after Round 24 PR #2734 merged (merge SHA `78b5e4d00dfd330593b510192d519e7fb333367b` entered canonical `main@a2a1ae3e62b1dd23acc4b2e5a7a9c8e9eed15bf1`) and a file-level scan of 437 open PRs found no competing PR. An HTML semantics audit (duplicate IDs, heading hierarchy, in-page anchors, table headers, lang) covered both visual pages and reports: the visual pages have zero defects; both proposals share one defect — `# 双轨京张` (h1) is followed directly by `### 阅读入口` (h3), skipping h2.
+- 修复：双语文案的阅读入口 `###` → `##`；离线报告重新渲染后标题层级 0 跳级，并重新应用第 23 轮记录的渲染器媒体链接修复。结构化证据写入 `site-grounding-register.json#package_validation_contract.html_semantics_r25`。
+- Fix: the bilingual reading entry moves from `###` to `##`; the offline reports are re-rendered with 0 heading skips, and the Round 23 renderer media-link fix is re-applied after the re-render. Structured evidence is recorded in `site-grounding-register.json#package_validation_contract.html_semantics_r25`.
+- 仅标题层级与重渲染输出变化，无主张、数据、机制或成熟度变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- Only heading levels and re-rendered output changed; no claim, data, mechanism or maturity change. The four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v24.0 - 2026-08-15
 
 **WCAG AA contrast repair on the visual pages / 视觉页 WCAG AA 对比度修复**
