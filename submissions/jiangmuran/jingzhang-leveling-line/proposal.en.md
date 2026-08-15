@@ -897,7 +897,7 @@ One unique numbered plaque per contributor; once assigned, a number is never rec
 |---|---|---|---|
 | KIT-01 | Benchmark stone and plaque | Stone top within ±5 mm of the paving — "flush" with no tolerance cannot be failed; 400 × 400 × 600 mm, foundation underside at least 100 mm below the local standard frost depth; plaque number unique and matching a `benchmark_id` in the geometry one-for-one. Detailed in FIG.16. **In winter this constraint collides with itself** — a mark set flush into level paving sits in standing water and becomes the trip hazard once frozen; the resolution and the winter reading are FIG.22 | P4, P5, P7 |
 | KIT-02 | Reading plate | Current f and tolerance F both visible, with the re-survey date; a stale value counts as not posted. Face 600 × 450 mm raked 15°, lower edge 900 mm and upper edge 1,350 mm — the band a seated and a standing reader share; the face is replaceable without the post. Detailed in FIG.16 | P2, P3, P4 |
-| KIT-03 | Seating that permits staying | Seat 450 mm high with armrests, so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so taking a reading needs no standing wait. Detailed in FIG.16 | P5, P7 |
+| KIT-03 | Seating that permits staying | Seat 450 mm high with armrests, so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so a reading needs no standing wait. FIG.16 | P5, P7 |
 | KIT-04 | Accessible wayfinding | Guidance strip 300 mm wide and continuous, stopping 300 mm short of the stone so it does not lead onto it; tactile and visual channels both; Ø1,500 mm turning space with 2,100 mm headroom at the reading position; the approach may not be by steps alone. Detailed in FIG.16; inside the stretches FIG.21 marks as failing it also carries the find-the-benchmark information, FIG.23 | P5, P6, P7 |
 | KIT-05 | Appeal point | **Must offer both a QR code and a phone or in-person route** — a QR code alone excludes anyone without a smartphone from appealing, which makes persona P4 unworkable | P4, P5, P6 |
 
@@ -1675,12 +1675,12 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 | Sheet | Content | What to read on it |
 |---|---|---|
 | FIG.00 | The leveling line: a city that publishes its own error | The whole proposal as one line: that red height difference is the closure error, and it is the only thing this proposal asks to be trusted on |
-| FIG.01 | Overall concept and site cross-check | **The red line** — 412.5 m between the inferred boundary and the surveyed park; the spine, core nodes, seven-class land-use partition and official/provisional status all on one sheet |
+| FIG.01 | Overall concept and site overview | The three areas and two wings named on the map; five functions as five positions on one loop. The cross-check stays a footnote — 412.5 m from the inferred boundary to the surveyed park |
 | FIG.02 | Evidence chain and package: a leveling circuit not yet closed | The red gap at the left of the circuit is the closure error; the three reading cards below are the measurement of this call itself |
 | FIG.03 | Three scope levels and network orders | The nesting of the three levels, and the right-hand column of values this proposal deliberately does not give |
 | FIG.04 | Three key areas and benchmark layout | Laid out horizontally per alignment-sheet convention; read the K0–K9 chainage and the positions of the eight tiered points |
 | FIG.05 | Walking, blue-green and connecting routes | The direction and run of the two connecting routes, and the tolerance classes at lower right |
-| FIG.06 | Recomputed metrics and the field census | The distinction between the three metric classes at left; track coverage and meta-symbol saturation at right |
+| FIG.06 | Recomputed metrics and closure evidence | The three metric classes at left; at right the run itself — ten cases, two accepted, eight refused, reasons quoted verbatim |
 | FIG.07 | Identity: mark, construction and applications | The mark draws the method: the datum departs, rises, returns — and does not land back on the datum |
 | FIG.08 | Innovation ecosystem and element mechanisms | The chain of custody for each element; the red box where the funding row is deliberately left blank; the gap all six cases point at |
 | FIG.09 | Landmarks, kit of parts, signage syntax and operating cycle | The actual form of the five standard components; the numbering grammar; a calendar organised by re-survey cycle rather than by festival |
