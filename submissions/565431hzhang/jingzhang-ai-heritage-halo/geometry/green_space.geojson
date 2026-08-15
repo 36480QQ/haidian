@@ -13,7 +13,14 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园南段绿带",
-        "area_sqm_declared": 514357.946
+        "area_sqm_declared": 514357.946,
+        "ecological_function": "biodiversity_habitat",
+        "stormwater_capacity": "high",
+        "tree_canopy_target": 0.6,
+        "public_access": "unrestricted",
+        "maintenance_level": "high",
+        "corridor_segment": "south_dazhongsi",
+        "wing_position": "west"
       },
       "geometry": {
         "type": "Polygon",
@@ -54,7 +61,14 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园中段绿带",
-        "area_sqm_declared": 719207.355
+        "area_sqm_declared": 719207.355,
+        "ecological_function": "biodiversity_habitat",
+        "stormwater_capacity": "high",
+        "tree_canopy_target": 0.6,
+        "public_access": "unrestricted",
+        "maintenance_level": "high",
+        "corridor_segment": "south_dazhongsi",
+        "wing_position": "west"
       },
       "geometry": {
         "type": "Polygon",
@@ -95,7 +109,14 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园中北段绿带",
-        "area_sqm_declared": 877448.027
+        "area_sqm_declared": 877448.027,
+        "ecological_function": "biodiversity_habitat",
+        "stormwater_capacity": "high",
+        "tree_canopy_target": 0.6,
+        "public_access": "unrestricted",
+        "maintenance_level": "high",
+        "corridor_segment": "central_origin",
+        "wing_position": "west"
       },
       "geometry": {
         "type": "Polygon",
@@ -136,7 +157,14 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园AI原点段绿带",
-        "area_sqm_declared": 474198.873
+        "area_sqm_declared": 474198.873,
+        "ecological_function": "biodiversity_habitat",
+        "stormwater_capacity": "high",
+        "tree_canopy_target": 0.6,
+        "public_access": "unrestricted",
+        "maintenance_level": "high",
+        "corridor_segment": "central_origin",
+        "wing_position": "west"
       },
       "geometry": {
         "type": "Polygon",
@@ -177,7 +205,14 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园过渡段绿带",
-        "area_sqm_declared": 663763.602
+        "area_sqm_declared": 663763.602,
+        "ecological_function": "biodiversity_habitat",
+        "stormwater_capacity": "high",
+        "tree_canopy_target": 0.6,
+        "public_access": "unrestricted",
+        "maintenance_level": "high",
+        "corridor_segment": "north_zhongzhi",
+        "wing_position": "west"
       },
       "geometry": {
         "type": "Polygon",
@@ -218,7 +253,14 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "京张遗址公园北段绿带",
-        "area_sqm_declared": 896721.852
+        "area_sqm_declared": 896721.852,
+        "ecological_function": "biodiversity_habitat",
+        "stormwater_capacity": "high",
+        "tree_canopy_target": 0.6,
+        "public_access": "unrestricted",
+        "maintenance_level": "high",
+        "corridor_segment": "north_zhongzhi",
+        "wing_position": "west"
       },
       "geometry": {
         "type": "Polygon",
@@ -263,7 +305,14 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "西侧社区公园A",
-        "area_sqm_declared": 26571.596
+        "area_sqm_declared": 26571.596,
+        "ecological_function": "recreation_and_habitat",
+        "stormwater_capacity": "medium",
+        "tree_canopy_target": 0.4,
+        "public_access": "unrestricted",
+        "maintenance_level": "medium",
+        "corridor_segment": "south_dazhongsi",
+        "wing_position": "west"
       },
       "geometry": {
         "type": "Polygon",
@@ -304,7 +353,14 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "西侧社区公园B",
-        "area_sqm_declared": 113425.873
+        "area_sqm_declared": 113425.873,
+        "ecological_function": "recreation_and_habitat",
+        "stormwater_capacity": "medium",
+        "tree_canopy_target": 0.4,
+        "public_access": "unrestricted",
+        "maintenance_level": "medium",
+        "corridor_segment": "south_dazhongsi",
+        "wing_position": "west"
       },
       "geometry": {
         "type": "Polygon",
@@ -345,7 +401,14 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "西侧社区公园C",
-        "area_sqm_declared": 61677.262
+        "area_sqm_declared": 61677.262,
+        "ecological_function": "recreation_and_habitat",
+        "stormwater_capacity": "medium",
+        "tree_canopy_target": 0.4,
+        "public_access": "unrestricted",
+        "maintenance_level": "medium",
+        "corridor_segment": "central_origin",
+        "wing_position": "west"
       },
       "geometry": {
         "type": "Polygon",
@@ -386,7 +449,14 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园A",
-        "area_sqm_declared": 265704.0
+        "area_sqm_declared": 265704.0,
+        "ecological_function": "recreation_and_habitat",
+        "stormwater_capacity": "medium",
+        "tree_canopy_target": 0.4,
+        "public_access": "unrestricted",
+        "maintenance_level": "medium",
+        "corridor_segment": "south_dazhongsi",
+        "wing_position": "east"
       },
       "geometry": {
         "type": "Polygon",
@@ -427,7 +497,14 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园B",
-        "area_sqm_declared": 303550.257
+        "area_sqm_declared": 303550.257,
+        "ecological_function": "recreation_and_habitat",
+        "stormwater_capacity": "medium",
+        "tree_canopy_target": 0.4,
+        "public_access": "unrestricted",
+        "maintenance_level": "medium",
+        "corridor_segment": "central_origin",
+        "wing_position": "east"
       },
       "geometry": {
         "type": "Polygon",
@@ -468,7 +545,14 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园C",
-        "area_sqm_declared": 379295.69
+        "area_sqm_declared": 379295.69,
+        "ecological_function": "recreation_and_habitat",
+        "stormwater_capacity": "medium",
+        "tree_canopy_target": 0.4,
+        "public_access": "unrestricted",
+        "maintenance_level": "medium",
+        "corridor_segment": "north_zhongzhi",
+        "wing_position": "east"
       },
       "geometry": {
         "type": "Polygon",
@@ -509,7 +593,14 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园D",
-        "area_sqm_declared": 265424.669
+        "area_sqm_declared": 265424.669,
+        "ecological_function": "recreation_and_habitat",
+        "stormwater_capacity": "medium",
+        "tree_canopy_target": 0.4,
+        "public_access": "unrestricted",
+        "maintenance_level": "medium",
+        "corridor_segment": "north_zhongzhi",
+        "wing_position": "east"
       },
       "geometry": {
         "type": "Polygon",
