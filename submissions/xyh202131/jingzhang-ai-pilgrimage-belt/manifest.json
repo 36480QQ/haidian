@@ -51,13 +51,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e30b71a8150ac15e097e22392cb899cc915d52b18d4270ff0a87734bd6f40b05"
+      "sha256": "470b2b56953897144255a18787c414678e45dfb6b22817eee6cecbf631f49177"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "8ce4d158e835b69aaecc3f3b7548538022329e7409c5d23152b12a9c718826b9"
+      "sha256": "01ee1dd0ea01066aadd224b31d3f25c49d3dadd82fee0508c847df75d3428715"
     },
     {
       "path": "metrics.json",
@@ -81,13 +81,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d3adb35e3f095181e39f264501fe61e5d05af0e78a3e1e456ccdc7136b7cd80e"
+      "sha256": "600dd16fea3b83adb5c6f19f27a36dd95753ec71eae9c6420fa390c61e873b24"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "479dad43cf7aa24f1536b8fd2875a06e9a8cf56fe653c4bc2310978fa3ae8659"
+      "sha256": "79f51a9e8f797b7ac3cffdcf9deccfe8fc822a75d01e21a95a4d9b20a1c49081"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "path": "visual/assets/site-grounding-register.json",
       "role": "other",
       "required": true,
-      "sha256": "6418759d529df7466a7473d8a960b425001be8672f4f631bfa3ead0dcc282839",
+      "sha256": "de31fc91f154a3610fb3e79bd28b345a5c875b5be925e9ab953945700f882ede",
       "role_detail": "site_evidence"
     },
     {
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "c83b02aa0c4be35eb61c2816325fee284de8dbe4af3614a9fb358cb0fb847ae7"
+      "sha256": "e8a4860329b8b363f9201d7b333837d10509b8ec1813e7ccc3fff47d72a7a684"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -230,13 +230,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "afd8e775fe5a528330941e381772c9670b32a55ac35740d104eae9dfee88d716"
+      "sha256": "36342d5300bf5acf2b57ab9063a838797e8e3f179e22b4d9aa197ae26d5f05d9"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "ba2c224d01ad4d85553509ebc476a2e67a91c5bf2bb84668d79d0e484caeaf88"
+      "sha256": "9fa848cca683360b73969e75ac978965a864c06626ebc66767b8960e68c4fba2"
     },
     {
       "path": "report/copyright_statement.md",
@@ -403,7 +403,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "36191c65a5e39bb8f0f31186e0ad4c9bc4f49167070cafb9662bc177f2dd73e4"
+      "sha256": "795422b9b9add811001709a7d5cb998bd9e73c5c7df0a24ffb35217b71bd9a49"
     },
     {
       "path": "report/proposal.en.html",
@@ -411,7 +411,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f17aa7cbfa5c8ba0dd27d5246790279ad8e2128789851dffcbdbc61eb9120360"
+      "sha256": "9e3a12803920ef0ab0f2801aaf232c5114ccb82aad70ce756f1c08e94e7a4bdc"
     },
     {
       "path": "visual/index.en.html",
@@ -990,7 +990,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "全部 141 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review navigation for all 141 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "e734c3e607bc237f370ba375b4f16407d04f658165833a1ddb154532e4aab4ea"
+      "sha256": "04f1e8a4febb26e210aa93f0de4d5dc0551c0f9286e45229404695413535eb51"
     },
     {
       "path": "visual/assets/round17-reading.css",
