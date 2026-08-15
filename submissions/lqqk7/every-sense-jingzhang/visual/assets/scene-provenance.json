@@ -24,13 +24,15 @@
    "files": {
     "zh": {
      "path": "assets/figures/scene-dual-state.webp",
-     "sha256": "52b249f32f331f1f28269922512c3034e16ddaf4cb220dcfe3425631b4c0f987"
+     "sha256": "9686ea66dc625bc0f0dd60e15f8ed70a5d952ffc9c6e6657b3970f49356bccdd"
     },
     "en": {
      "path": "assets/figures/scene-dual-state.en.webp",
-     "sha256": "788a53ab616b0a4daee552b8720db76897295c6b0baa7e47a34cfdab5a0d66c5"
+     "sha256": "16ee5a2257cdc6e62839d2b63b31bf87edea2c08bd459555e5b04a757eeac880"
     }
-   }
+   },
+   "revision_v6_4_zh": "v6.4 同源重制：审查发现原成图的左右两幅为一次生成的双联、并非同一场景的两种状态（挡墙材质、触觉带宽度、信息牌与人物均存在双影级差异），与图版「同一空间·同一批人·同一任务」的声明不符。本版以原左幅（AI 开启态）为唯一底图，右幅由其经局部图像编辑生成——仅熄灭地面流光导引带、信息立牌屏面与挡墙嵌光条（掩膜内去饱和压暗），人物、建筑、材质、路灯与构图逐像素保持；编辑后全图像素变化率 3.7%（8% 容差下 2.8%），变化区域仅限灯光要素。左右两幅自此为真实的同源受控对照。",
+   "revision_v6_4_en": "v6.4 same-source remake: review found the original left and right panels were a single twin-panel generation, not two states of one scene (wall material, tactile-band width, totems and figures all drifted). This edition keeps the original left panel (AI on) as the sole base; the right panel is derived from it by local image editing — only the flowing guidance strip, totem screens and wall-mounted light strip are extinguished (masked desaturate-and-darken); people, buildings, materials, street lamps and composition remain pixel-identical. Post-edit pixel change is 3.7% (2.8% at 8% fuzz), confined to lighting elements. The two panels are now a genuine same-source controlled pair."
   },
   {
    "scene_id": "S2",

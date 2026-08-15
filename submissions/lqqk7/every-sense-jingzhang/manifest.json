@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2ef9c9a915b4f4600196057199bda01fb8255886774958fc82c2b6764d877596"
+      "sha256": "c5834ab53d2ad6a4043c7bbf38d8b6a06f50274f935814d57fa2bc24a456d575"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "906d5843a1882c3cc943b7d5f1c35fe1368e14d8da981c180a25b15e25ab8f5c"
+      "sha256": "bb36709fb97f000354d9ad91bfd48514bb88d43a291adf6c10ce4f6654535094"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f0d93d23e9ff2e45e7d379d328096e0461ef588743f83cbd233257b3e64e02a9"
+      "sha256": "79e8234faf29c6a11895f58174f54ad713a1be18880a780ba1dab3d8eb42138a"
     },
     {
       "path": "report/narrative.md",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a86bc664681ac2f7b3f4415fc630efc6eb04be420aa03f81ced7f60fa5174ad4"
+      "sha256": "fd0b809ea49dc619a1de9a2f76084e3615e829b9bf4fbdf5b42fc561e86e8207"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "4b56e9f84a307291e6a253bff2c3d676d699545c6aa11513f73d75a10499bc04"
+      "sha256": "af977fd4ffaf25983c3822cc9ab54058ef427f86890a316601c4733dd9cafd2f"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -411,7 +411,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "52b249f32f331f1f28269922512c3034e16ddaf4cb220dcfe3425631b4c0f987"
+      "sha256": "9686ea66dc625bc0f0dd60e15f8ed70a5d952ffc9c6e6657b3970f49356bccdd"
     },
     {
       "path": "assets/figures/scene-dual-state.en.webp",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scene-dual-state.webp",
-      "sha256": "788a53ab616b0a4daee552b8720db76897295c6b0baa7e47a34cfdab5a0d66c5"
+      "sha256": "16ee5a2257cdc6e62839d2b63b31bf87edea2c08bd459555e5b04a757eeac880"
     },
     {
       "path": "assets/figures/scene-interface-yard.webp",
@@ -492,7 +492,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "9a2f0404d27d9132efd5efe5dea871e4a9cbbcada10c27e2cb0651a7f0441346"
+      "sha256": "d200312875dff77c39b9256a475c4d2c4d4d7aa5ce77bbd069b103a0190acb1c"
     },
     {
       "path": "assets/media/cover.webp",
@@ -633,7 +633,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "8ed1749eb41877398983a8258815905804aaea771e117271e66dec6d63fe0c40"
+      "sha256": "1e26dac1b138cf8050fc94112af0ca242657001d4a3454e23c469214b7e4a6c5"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -651,7 +651,7 @@
       "language": "neutral",
       "title_zh": "场景概念图生成档案（提示词全文、工具链、输出哈希）",
       "title_en": "Concept Scene Image Provenance (full prompts, tool chain, output hashes)",
-      "sha256": "8b3cc2a43d8a0e75a130b22890a117a9122acd8f008ae339c20014b3f37dbd3c"
+      "sha256": "a902a75fd47a083a3fc7c4f25ac601a74c494bf2e79eabe8f93a5ecc0c542215"
     },
     {
       "path": "visual/assets/seb-spec.json",
@@ -847,11 +847,11 @@
       "language": "zh",
       "title_zh": "听得见的断点（OP-04 连通性数据可听化 · 中文旁白）",
       "title_en": "The Audible Break (OP-04 connectivity sonification, Chinese narration)",
-      "description_zh": "1 秒=20 米：AI 开启段 30.29 秒行进音走完 605.811 米到达；AI 关闭段 4.44 秒（88.816 米）后声音戛然而止——静默即数据里的断点。纯程序合成+预置合成旁白，映射规则与档案读数逐项可核",
-      "description_en": "One second per twenty metres: the AI-on walk completes 605.811 m in 30.29 s; the AI-off walk stops dead after 4.44 s (88.816 m) — the silence is the break in the data. Pure program synthesis with preset synthetic narration; the mapping replays against the archive item by item",
+      "description_zh": "1 秒=20 米：AI 开启段 12.18 秒行进音走完 243.514 米到达；AI 关闭段按接口固定口径没有一米可走——开场即静默，静默即数据里接口缺失之处。纯程序合成+预置合成旁白，映射规则与档案 v0.3.0 读数逐项可核",
+      "description_en": "One second per twenty metres: the AI-on walk completes 243.514 m in 12.18 s; with AI off the fixed-interface rule leaves not one walkable metre — silence from the very start, and the silence is where the data holds no interface. Program synthesis plus preset synthetic narration; the mapping replays item by item against archive v0.3.0",
       "transcript": "assets/media/audible-break.md",
       "caption": "assets/media/audible-break.vtt",
-      "sha256": "eb3c2679f015dab272bdd4e22170ae347269a9baa1a1814254a68976286b6847"
+      "sha256": "187d4d86e1472b7e0c281d407e7bda8d1d4bfaef19382eb1245c9c6ac40fda54"
     },
     {
       "path": "assets/media/audible-break-en.m4a",
@@ -860,11 +860,11 @@
       "language": "en",
       "title_zh": "听得见的断点（英文旁白版）",
       "title_en": "The Audible Break (English narration)",
-      "description_zh": "英文旁白版数据可听化：数据音与中文版逐字节同源（1 秒=20 米映射），仅旁白语言不同；纯程序合成+预置合成音色，映射规则可由档案读数复算",
-      "description_en": "The English-narrated sonification: data tones byte-identical to the Chinese edition (one second per twenty metres), narration language the only difference; pure program synthesis with a preset synthetic voice, the mapping recomputable from archive readings",
+      "description_zh": "1 秒=20 米：AI 开启段 12.18 秒行进音走完 243.514 米到达；AI 关闭段按接口固定口径没有一米可走——开场即静默，静默即数据里接口缺失之处。纯程序合成+预置合成旁白，映射规则与档案 v0.3.0 读数逐项可核",
+      "description_en": "One second per twenty metres: the AI-on walk completes 243.514 m in 12.18 s; with AI off the fixed-interface rule leaves not one walkable metre — silence from the very start, and the silence is where the data holds no interface. Program synthesis plus preset synthetic narration; the mapping replays item by item against archive v0.3.0",
       "transcript": "assets/media/audible-break.md",
       "caption": "assets/media/audible-break-en.vtt",
-      "sha256": "b7e92589b1c868d4076e439b059f9fdcc9d238b6f31c20b9d8bd207b5d22fd01"
+      "sha256": "85734edcc369e7e96b9cb52fd1af369c73003332e44f49afab259fcff78a6a10"
     },
     {
       "path": "assets/media/audible-break.vtt",
@@ -873,7 +873,7 @@
       "language": "zh",
       "title_zh": "听得见的断点 中文字幕（含数据段说明）",
       "title_en": "Audible Break Chinese captions (with data-segment notes)",
-      "sha256": "7739d5ff89a66dc3bb0a2e32485e93bab5cf3f54e2b0e4e0670444d17c6cd95f"
+      "sha256": "3b66f0243abfdf758a927ab7c807cfbf83e591651909ad3fd4ee0d477bbdf81b"
     },
     {
       "path": "assets/media/audible-break-en.vtt",
@@ -882,7 +882,7 @@
       "language": "en",
       "title_zh": "听得见的断点 英文字幕",
       "title_en": "Audible Break English captions",
-      "sha256": "01100587e6fb664cf85ea710f429a5b84fab93d82a7eb4f57ea7b13504475be2"
+      "sha256": "22c15a17a07b9599ac68a11068feb1192e7c5abf5c8298ef32b935fdaa3c14d1"
     },
     {
       "path": "assets/media/audible-break.md",
@@ -890,7 +890,7 @@
       "required": false,
       "title_zh": "听得见的断点 数据映射档案与权利记录（断点时刻可由档案读数复算）",
       "title_en": "Audible Break mapping archive and rights note (the break moment recomputes from archive readings)",
-      "sha256": "da9cdcadbd594e653c51220f6e0cb643a2dceeae1f2f21a48803b4582d45ead4"
+      "sha256": "7154096af6f957cf16348c3615b027ded811a2606965d6a19eccba36f8035e90"
     },
     {
       "path": "assets/media/dual-state-walk.mp4",
