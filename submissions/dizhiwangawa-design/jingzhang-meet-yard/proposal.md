@@ -61,7 +61,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 证据支撑与边界纪律
 
-三层边界在 `constraints.geojson` 中分别登记为 CST-RESEARCH-001（43.6 km² 研究范围）、CST-SITE-001（11.4 km² 总体范围）、CST-KEY-SCOPE-001（368.4 ha 重点范围），均为 provisional_rough 约束，面积仅作参考尺度 [data:geometry/constraints.geojson#CST-RESEARCH-001] [data:geometry/constraints.geojson#CST-KEY-SCOPE-001]。三区面积核对：众智园 192.9 ha、AI 原点社区 104.3 ha、大钟寺 72.0 ha，三区之和与重点范围汇总的关系已在 `metrics.json` 登记 [metric:AREA-ZZY-01] [metric:AREA-ORIGIN-01] [metric:AREA-DZS-01]。任何无法从结构化数据复算的面积、比例、规模或项目数量，不得写入正式结论；替换官方 polygons 后，land use、roads、green space、public space、buildings、phasing 与全部指标需整体重算（设计方向 §07.3）。
+三层边界在 `constraints.geojson` 中分别登记为 CST-RESEARCH-001（43.6 km² 研究范围）、CST-SITE-001（11.4 km² 总体范围）、CST-KEY-SCOPE-001（368.4 ha 重点范围），均为 provisional_rough 约束，面积仅作参考尺度 [data:geometry/constraints.geojson#CST-RESEARCH-001] [data:geometry/constraints.geojson#CST-KEY-SCOPE-001]。三区面积核对（polygon 复算值，公告参考面积分别为 192.1 / 104.3 / 72.0 ha）：众智园约 192.9 ha、AI 原点社区约 104.3 ha、大钟寺约 72.0 ha，三区之和与重点范围汇总的关系已在 `metrics.json` 登记 [metric:AREA-ZZY-01] [metric:AREA-ORIGIN-01] [metric:AREA-DZS-01]。任何无法从结构化数据复算的面积、比例、规模或项目数量，不得写入正式结论；替换官方 polygons 后，land use、roads、green space、public space、buildings、phasing 与全部指标需整体重算（设计方向 §07.3）。
 
 ### 数据缺口
 
@@ -812,7 +812,7 @@ AI 创新生态图谱必须包含八类要素：**土地、空间、产业、资
 
 蓝绿空间以京张遗址公园会车脊为骨架，贯通清河、小月河方向与高校、企业、社区出行需求，形成南北贯通、东西连通的步道、骑行道与绿色空间体系 [depth:blue_green_public_space]。`geometry/green_space.geojson` 的 6 个要素全部为概念建议（`source=concept`、`confidence=low`）：GRN-SPINE-001（会车脊公园绿地，与 LU-1401-01 同源，约 207.5 ha）、GRN-ORIGIN-001（原点社区绿地）、GRN-GAOXIAO-001（高校带绿地）、GRN-DZS-001（大钟寺片区绿地）、GRN-WEST-001 与 GRN-NORTH-001（西侧、北侧片区绿地）[data:geometry/green_space.geojson#GRN-SPINE-001]。
 
-蓝绿面积合计约 220.8 万平方米，占提交边界约 19.4% [metric:BLUEGREEN-PUBLIC-01]。该比例是概念结构比例，未含现状绿地核验（assumptions 已注明），官方 polygon 与现状绿地数据发布后须重算。绿地率的完整公式、来源与置信度保存在 metrics.json [metric:BLUEGREEN-PUBLIC-01]。
+蓝绿面积按绿地 polygon 几何并集计约 217.6 万平方米（要素面积总和约 220.8 万 m²，重叠约 3.19 万 m² 只计一次），占提交边界约 19.07% [metric:BLUEGREEN-PUBLIC-01]。该比例是概念结构比例，未含现状绿地核验（assumptions 已注明），官方 polygon 与现状绿地数据发布后须重算。绿地率的完整公式、来源与置信度保存在 metrics.json [metric:BLUEGREEN-PUBLIC-01]。
 
 ### 9.2 公共空间与组件库
 
@@ -932,11 +932,9 @@ known 指标全部可由 GeoJSON 或可信来源复算，公式、来源文件�
 
 ### 12.4 责任与合规口径
 
-本方案为 AI 参与的开放共创建议：所有空间落地内容均为概念建议、参考方案或可供专业团队深化研究的材料，不替代正式规划，不构成政府审定、投资、建设、审批或运营承诺。AI 不具有城市治理主体资格或独立决策权；高风险事项由人类专业人员主导，每个场景有责任人、版本、日志、人工接管、停止条件、回退流程与异常通知。本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施；AI agent 对事实、来源、版权、空间数据、指标与表达负责，维护者与专业评审可依据自检结果、空间复核与合规矩阵要求返修或拒绝 [source:SITE-PACKAGE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
+本方案为 AI 参与的开放共创建议：所有空间落地内容均为概念建议、参考方案或可供专业团队深化研究的材料，不替代正式规划，不构成政府审定、投资、建设、审批或运营承诺。AI 不具有城市治理主体资格或独立决策权；高风险事项由人类专业人员主导，每个场景有责任人、版本、日志、人工接管、停止条件、回退流程与异常通知。本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施；AI 生成内容的事实、来源、版权、空间数据、指标与表达由提交方（人类参与者）负责，维护者与专业评审可依据自检结果、空间复核与合规矩阵要求返修或拒绝；AI 系统不承担法律或治理主体责任 [source:SITE-PACKAGE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
 
 <!-- PART3-DONE -->
-
-## 参考资料
 
 ## 参考资料
 
