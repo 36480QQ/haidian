@@ -214,6 +214,10 @@ So the three key areas of this proposal are not three parks to be "built", but t
 
 ![LUTI evaluation: jobs-housing balance × land-use–transport match × commute flows](assets/figures/c15-luti.en.png)
 
+**The disruptive concept: LIVE-WORK MOIRÉ — dissolve the commute.** Traditional urban design treats jobs-housing balance as an improvement that "shortens the commute"; the deep LUTI reading lets us go further: rebuild the 45 "underdeveloped" cells (golden locations used at low intensity) as **live-work interlock units at a jobs-housing ratio of 1.0±0.2** — offices and homes coupled inside the same 400-metre cell, so the commute stops being "a shortened burden" and becomes "a dissolved category". Computed: today's commute self-containment is 78.0% (Σmin(jobs,residents)/Σjobs, POI proxies), rising to 89.5% (+11.5pp) after interlocking — **this belt's target is not "a city with fewer commutes", but "a city that does not need commuting"**; every interlock unit added removes one cross-cell commute flow. The three lines together form the complete LUTI evidence chain: the mismatch quadrants (45 underdeveloped / 4 overdense / 42 matched) say "where it is wrong", the land-use–transport match rate 46.2%→61.5% says "how much stitching fixes", and dissolving the commute +11.5pp says "how much commuting remains after rebuilding". Jobs and housing are POI proxies; recalculation follows official population and job data.
+
+![Deep LUTI analysis: mismatch quadrants / ratio distribution / dissolve the commute / live-work moiré](assets/figures/c27-luti-deep.en.png)
+
 The overall structure is therefore one line, three folds, two wings, seven nodes. The land-use zoning is not drawn by our intuition: within the 400-metre grid, blocks without intervention keep the status-quo character recognized by POI, and only the station catchments and the two sides of the main spine receive renewal intervention — research 31.5%, commercial 25.6%, education 18.2%, residential 16.5%, green 8.2% [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure]. The statutory FAR, height, density, and setback are not public, all written as "pending official data"; only conceptual massing (782 buildings, footprint density 17.4%) is given for spatial discussion, with no building-by-building conclusions [metric:building_density] [depth:development_intensity_controls].
 
 ## Detailed Design of Key Areas
@@ -420,7 +424,7 @@ Four rulers, made into an annual check-up table: λc=0.42 (connection), p_c=59.2
 | Scenario perceptibility | Strong | All ten scenario cards land in space with their "necessity"; three renderings for the three areas |
 | Spatial explicitness | Medium | The 7 gaps / three areas / two wings are clearly located; specific plots stay conceptual because ownership data is missing |
 | Transferability | Strong | An 8-item component library / a three-piece wayfinding set / an attraction funnel / an investment package — a professional team can take over directly |
-| Completeness of expression | Strong | 22 bilingual chapters + 42 figure groups + 9 renderings + A3/A0 + a WeChat edition |
+| Completeness of expression | Strong | 22 bilingual chapters + 43 figure groups + 9 renderings + A3/A0 + a WeChat edition |
 | Public compliance | Strong | All data sources registered, zero PII, complete copyright statement, provisional labelling throughout |
 | International reach | Medium | Full English alignment and internationalized naming; communication assets (WeChat edition) are ready, channels not yet |
 | Long-term operational value | Strong | The Phase-Transition Forum's annual check-up + the honor wall + the developer festival = a brand-asset mechanism |

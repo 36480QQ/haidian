@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "24885e8ac87a5a633030f3097ff0c761802664cf22249439ae9a660c04d24e1b"
+      "sha256": "df57903e1a067425a25f77fdb3cd9faf3c7341aad33363f5b9a30b5da619061f"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9b364e9a34dfa6c07351c9e2dd204178582c9f08f620cbeb3fbadb5d132d4437"
+      "sha256": "ed97c5d09e0ac41a993ff1ee4e914e84ad417f379503f61cb7be801ef5507d67"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "77bc25da74af1e7b0f4644b60d0f78f4f6af8624f2517f5d42a65c0ed7138f33"
+      "sha256": "66a1e7b78632a0378eb6a46a56428b7df68696b48208b323aee82ee122d62bcd"
     },
     {
       "path": "report/narrative.md",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "33e627c3a12cd397858ea4b15b71222f4ca54598ff877272194f2e2cd83c7e34"
+      "sha256": "3f7907796da464e20cc7522c6f64874cde881ab5fc8146e1ae2014563c2707aa"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "fad34a07a221b044c1ff816eecae3396e80bad1fd6b59a3282befde20d5b1252"
+      "sha256": "1748e07a0906685a272f260caf8671eaf3670bb7873a186cd21bb1106f74793f"
     },
     {
       "path": "visual/index.html",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "149b16a7b5baf0717209eeb60446f5644c4edaf9f9194cfdd6698389a73f26e5"
+      "sha256": "ad85e38f57b3a3d7be30ebd3773d1fefa2ea00be4ccbd2a2bd938e87facadb94"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ec01eeca9ccce5504defd73e9bbb22f33454d59cd51bb2842d3651c5c253a170"
+      "sha256": "923488c3a5a33fbdd14bfc1c55990d97f1265b287000f9ffa11a94352e89a2ef"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "c6b0ebd2b8a6ab86f3986cce31928ddeac54547462b26e61f8d8bea6e4d61bd5"
+      "sha256": "5a22c7aaf82fe9d966ab38eac067b1fe4063b2ec12c18cecc78faa2b68f2ec7f"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "a013224a1f18a7f125ebcd7a07763bbee425af3e01c23fa3560d355a406151fb"
+      "sha256": "f1c57c501d31f11d7741d355a06a662a41f455bd99a00f99a813533f1dae6272"
     },
     {
       "path": "visual/index.en.html",
@@ -591,7 +591,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "fa5a87ca562353f8701dbce87fe741f63f0635a06ca87123062383ce4e3d6cf1"
+      "sha256": "a71c5c66fc9e72759990048074a814c22065fe63d16b8361695544c133bac176"
     },
     {
       "path": "assets/figures/section-zhongzhiyuan_ai_acceleration_area.en.png",
@@ -599,14 +599,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/section-zhongzhiyuan_ai_acceleration_area.png",
-      "sha256": "dc1e018db1309939d92ca83c5d6a970b0881e49ad055ca3a5094f56987273671"
+      "sha256": "77e1808d73c1c5db69566b152e644daf3060c3ea49a77451c8ad13faf74890ea"
     },
     {
       "path": "assets/figures/section-beijing_ai_origin_community.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "cb24cc8605fc6ec89d3f6a3ca3f82790b36946735ad72a5d6ac00a10918e6103"
+      "sha256": "72144e08d20d9ceaaad59e32d313db1e646ad32bb5432a3b009266fd9d430b14"
     },
     {
       "path": "assets/figures/section-beijing_ai_origin_community.en.png",
@@ -614,14 +614,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/section-beijing_ai_origin_community.png",
-      "sha256": "396ee8664a015be0a110810e6ddfe1c23a4167291dac7c4b4e84d4dd7de8a90f"
+      "sha256": "16f9ed5906dc4a81aa71eeb81213b1eec2917d8257133f772df06a8c5c307dae"
     },
     {
       "path": "assets/figures/section-dazhongsi_ai_industry_cluster.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "a91d93923b124634f90b2af361764910a8b4bdc3e88030033e2118d1438a00ae"
+      "sha256": "758da37824452c1c4d0feda9fa5dce6096005713921acfa7b488f595a483d753"
     },
     {
       "path": "assets/figures/section-dazhongsi_ai_industry_cluster.en.png",
@@ -629,7 +629,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/section-dazhongsi_ai_industry_cluster.png",
-      "sha256": "5ae8805a4fbdbeb7a701722208535a1965888419a07b9dc967397f0bf34ec9be"
+      "sha256": "8116f90268acdbd315c2a40043f11ae2f02ac0f8c014d172db98d566ba0eee24"
     },
     {
       "path": "assets/figures/scale-drilldown.png",
@@ -699,7 +699,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "c1e7ec7aac192d603253d4df21a9d22eba4b734d36b92fe6cf99647a388c402f"
+      "sha256": "6cc915948f80c411ed587972a85a598bcd26c2cab677d2718dcd1a4968e5131f"
     },
     {
       "path": "assets/figures/plan-zhongzhiyuan_ai_acceleration_area.en.png",
@@ -707,14 +707,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/plan-zhongzhiyuan_ai_acceleration_area.png",
-      "sha256": "81d1dec7c14f2b872983255e6b36064205d66a9e203edb64f9652a789f82c137"
+      "sha256": "31fc53e8e343b88c080016c50ee33a447c8057197e7ec9ca555361ac7844f2d3"
     },
     {
       "path": "assets/figures/plan-beijing_ai_origin_community.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "74d0618068c42f55f15cef745c0c2cb118e11229cbf736d07c3e1a657bc1617b"
+      "sha256": "69d957fcc34dd72a3ecccb88588b9204aa3a16731ac27598a73ff521dea043e4"
     },
     {
       "path": "assets/figures/plan-beijing_ai_origin_community.en.png",
@@ -722,14 +722,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/plan-beijing_ai_origin_community.png",
-      "sha256": "f69c881a251c71d7043371228bc0fe2801295693cac83521efe8a458ef4b1284"
+      "sha256": "f90649868c33b2f6a99b565951e2ce366a7e9583caff8289a80967884e49c9bc"
     },
     {
       "path": "assets/figures/plan-dazhongsi_ai_industry_cluster.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "96ddd45063abff9ead7d4b71871ff616d9cc605a134110d9d4cfee3d67797bbf"
+      "sha256": "3198fdc4f3a63df3c4050bb867f01fc886adcfb106cba13d743f2ad08cccd948"
     },
     {
       "path": "assets/figures/plan-dazhongsi_ai_industry_cluster.en.png",
@@ -737,7 +737,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/plan-dazhongsi_ai_industry_cluster.png",
-      "sha256": "eb143419b1aa9c2671cf9a448c15872650384b287b223791b08cf85204cfad26"
+      "sha256": "cb277a9c9e80640ce6b4540735541d50d44d298f815b8794f8f5065afa715a16"
     },
     {
       "path": "assets/media/vision-2035.jpg",
@@ -896,15 +896,30 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "713240766cf9a3ae9dba98cb8befbb13e97c0ed24b07a44f6f77e20717d49b3c"
+      "sha256": "49c98d4b3c96a606b612f1d650bb6a77a5da57ec02f4cf1fb1b4b601d4b2e211"
     },
     {
       "path": "assets/figures/c26-international-benchmark.en.png",
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "sha256": "83f6234da976d08e717a8de7c6aadc5af4ba694218ac121b54077728e16f010e",
+      "sha256": "9d6af7df0b44c512a1b3e47fb93ed5b40cdac98541d39c534910914e00fec14c",
       "translation_of": "assets/figures/c26-international-benchmark.png"
+    },
+    {
+      "path": "assets/figures/c27-luti-deep.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "23a9854957c89468057df15db704aac3cb4dd7b48b23bdf7ce2d59925ffb577b"
+    },
+    {
+      "path": "assets/figures/c27-luti-deep.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "7ee29e17a1f29b50011b69d760e78bd3101bfc62c9f02569535b6aa657bb1f8e",
+      "translation_of": "assets/figures/c27-luti-deep.png"
     }
   ],
   "validation_claim": {
