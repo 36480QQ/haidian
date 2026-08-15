@@ -465,7 +465,9 @@ HTML 是必交电子展示页面，用于让评审者快速看懂方案。它不
 - `green_ratio`
 - `public_space_ratio`
 
-HTML 展示值与 `metrics.json` 不一致会失败。
+这三项是 formal visual gate 的严格子集，不适用一般指标可保留 `unknown` 的兼容规则。它们必须是从投稿者提交的 `site_boundary`、`green_space` 和 `public_space` GeoJSON 可复算得到的 `status="known"` 有限数值，并在 HTML 中提供一致的数值 `data-value`。若底层几何为 provisional，可继续用低置信度的临时设计模型值，但必须保留 `provisional_constraint` / `provisional_rough` 标记、公式与来源文件，并说明正式几何发布后的复算触发条件；这不是宣称官方红线或法定控制指标。若三项之一尚不能从包内几何复算，投稿应保持 revision/scaffold 并先补齐或修复几何，不得用 `unknown`、`not_applicable` 或脱离几何的占位数绕过 gate。
+
+容积率、建筑高度等确实依赖尚未公开的官方控制条件的其他指标，仍可按一般契约使用 `status="unknown"`、`value: null` 和明确原因，也无需放入上述三项视觉声明。HTML 展示值与 `metrics.json` 不一致会失败。
 
 ## 10. 提交前自检
 
