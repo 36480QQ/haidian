@@ -40,6 +40,7 @@ Every chapter that follows is evidence measured by one of the rulers. The protag
 | **Decision 2: Unlock** | The CA proves non-intervention = path lock-in; intervention unlocks 42 cells for reallocation | Emergence needs conditions, and the condition is "opening the lock" |
 | **Decision 3: Infill** | The gaps recognized by 25,476 POIs (finance −63%, research −45.9%, medical 2.88/km²) are filled by the deviation list | Fill what is missing, no guesswork |
 | **Decision 4: Measure** | Three middle-layer indicators, plus λ and H entering the Phase-Transition Forum's annual public report | What is not measured does not exist |
+| **Decision 5: Run** | Install the Emergent Brain (three layers + four terminals + recursive loop + Phase Control Room), turning the city into a yearly-iterated program | The city is no longer designed once, but continuously read, computed, and tuned |
 
 **Naming of the main line**: THE EMERGENT BELT — Jing-Zhang Hyper Line (Hyper = scaling-law superlinearity β>1; Emergent = bottom-up emergence). The logo direction is "the superlinear line": a straight railway line curving upward at its end, with the seven-point percolation cluster floating up along it.
 
@@ -304,32 +305,51 @@ The annual "Jing-Zhang Hyper Line Developer Festival"; the **Phase-Transition Fo
 
 ![Ten-year timeline: two acceptance gates](assets/figures/operations-timeline.en.png)
 
+## Urban Brain and the Recursive Operating System
+> "The future cannot be predicted, but it can be invented." — Michael Batty
+
+**This is the step from "urban design" to "urban system": turning the computable city into a runnable recursive computation.** The earlier chapters showed that this belt can be measured (five rulers) and verified (three models cross-corroborated). One last question remains: who keeps reading, computing, and tuning it? The answer is not another agency, but an **Emergent Brain THE EMERGENT BRAIN** installed into physical space — the first time a city is treated as a program that can be iterated year by year, instead of a drawing that is obsolete the day it is finished.
+
+**Three layers (see the architecture figure)**: the **sense layer** — 25,476 POIs, flow and facility IoT, citizen feedback and scenario-card event streams (all aggregate); the **compute layer** — a digital twin and the SIMULACRA/CA/LUTI model suite, with the four rulers (λc=0.42, p_c=59.27%, D=1.6–1.8, H=1.35) as its gauges; the **decide layer** — the Phase-Transition Forum's annual report, a citizen covenant, and government approval, **with humans always holding the veto**. Three red lines: no privacy violation, no over-monitoring, every step human-reviewable.
+
+**Four terminals, one for each kind of person**: the **citizen terminal** — a personal data-sovereignty wallet and the five equity mechanisms (compute vouchers / data lake / AI night school / spatial equity / attribution), returning superlinear gains to personal accounts; the **enterprise terminal** — the OPC order plaza, test-band booking, compute-voucher claims, with every conversion stage of the attraction funnel reported annually; the **government terminal** — a compliance board and approval flows; the brain never replaces approval, it only lets evidence go first; the **campus terminal** — energy, space, and logistics dispatch that computes waste and then saves it.
+
+**The recursive loop is the annual check-up**: read (sense) → compute → tune (the unlock list) → verify (the annual report) → read again. The two acceptance gates on the ten-year timeline (λ≥40%, H≥1.35) are this machine's self-test lines — fail, and it stops to review. **This is Batty's maxim, engineered: "the planner's task is not to write the script for the system, but to create the conditions that let the system grow itself" — we have turned that maxim into a program that reruns every year.**
+
+**The Phase Control Room**: physically at Wudaokou · Phase Plaza — a public gauge showing this belt's connection strength and health in real time; not a surveillance room, but the city's check-up report hung on the wall. All data is aggregate, zero raw points published, zero PII. Citizens see their city's temperature, enterprises see their conversion rank, government sees the compliance board — one instrument, three readings.
+
+![The Emergent Brain: three layers, four terminals, recursive loop](assets/figures/c21-emergent-brain.en.png)
+
+![The Phase Control Room: the belt's annual check-up dashboard](assets/figures/c22-phase-control-room.en.png)
+
 ## Investment Budget and Return Estimation (Conceptual Magnitude, Not an Investment Commitment)
 
-This section gives a conceptual-magnitude investment–return framework to explain "how the money is spent, where it comes back from, and for whom". All numbers are conceptual estimates (referencing public engineering unit prices and the magnitude of comparable projects), and **constitute no investment conclusion, no government commitment, and no feasibility endorsement** — precise estimation will be completed by professional institutions after the official redline, regulatory plan, and status-quo baseline are released [depth:renewal_project_list].
+> The skeleton's bill is paid in public; the soul's bill is collected by all. — Basis of this section: conceptual estimation, not an investment commitment or government arrangement.
 
-**The investment ledger (three accounts, conceptual magnitude)**:
+**Basis statement**: all figures are conceptual estimates — quantities and unit prices reference public magnitudes of comparable projects (the public magnitude of Jing-Zhang Heritage Park Phase I, urban-renewal market unit prices), and the demand side is derived from this proposal's own computed data; **they constitute no investment conclusion, no return commitment, and no government arrangement**. Precise estimation follows the official redline, the regulatory plan, and the status-quo inventory, by professional institutions.
 
-| Investment item | Content | Conceptual magnitude | Basis |
-|---|---|---|---|
-| Seven-node stitching works | Footpaths / cycleways / grade-separation concept schemes, plazas and the public gauge | About ¥0.8–1.2 billion | References the public magnitude of the Jing-Zhang Heritage Park Phase I, about 16.8 ha built; the grade-separation segments are costly and take the lion's share |
-| Three-area gap infill | Healthcare / talent-apartment / culture-tourism-education-finance facilities, shared-unit renovation | About ¥1.5–2.5 billion | Mainly stock renewal; small individual units, phaseable |
-| Jobs-housing balance renewal | Station-catchment talent apartments and mixed renewal (concept) | Rolls with the market | Market mechanisms lead; government only guides |
-| **Total (conceptual)** | | **About ¥2.5–4.0 billion** | Spread over 1–3 / 3–5 / 5–10 year phases |
+**Step 1 · The market supply-demand ledger (demand is computed, not guessed)**: on the demand side — 4,919 work-type POIs (companies + research + finance, of the 25,476 Amap points measured), 13,000 developers, 180 OPC one-person companies, and more than a thousand scientists; only 38.4% of cells are jobs-housing balanced. From this we derive: an operating-office increment of about 100,000 m² (matching the research gap of −45.9%) and 2,000 talent apartments (conceptual infill). On the supply side, market-reference assumptions: office/retail at 4.5 CNY/m²/day and apartments at 5,000 CNY/month — inside the public market magnitude range for Haidian station districts, all replaceable assumptions.
 
-**The return structure (three ledgers)**:
+**Step 2 · Investment breakdown (CNY 4.40bn, ten years, conceptual)** [depth:renewal_project_list]:
 
-First, the **economic ledger**: value capture of renewed plots + tax + operating revenue. London King's Cross is the reference — build the public path first, land value rises with accessibility, and the gains feed back into public investment; this proposal likewise uses the cycle of "stitching → accessibility +15.9% (25-minute-circle jobs) → underwriting the property value and rent along the line", at a conceptual magnitude of 1.3–1.8 times the input (referencing the public estimation calibre of comparable renewal projects; a conceptual range).
+| Item | Magnitude (CNY 100M) |
+|---|---|
+| Seven-node stitching works (public good: grade-separated/at-grade stitches, plazas, gauges) | 6.6 |
+| Public space of the three areas (202,000 m²) | 2.4 |
+| Interface renewal and plazas of the three areas | 5.4 |
+| Talent apartments and community services (2,000 units) | 15.6 |
+| Zhongzhiyuan full-stack test band and garden blocks | 6.0 |
+| The Emergent Brain (digital twin / control room / IoT / inclusive compute, incl. 5-year O&M) | 5.0 |
+| Operations and events fund (10 years: dev festival / Phase Forum / open test seasons) [depth:annual_event_system_operation] | 3.0 |
+| **Total** | **44.0** |
 
-Second, the **social ledger (this proposal's primary ledger)**: every resident's 25-minute-circle job reach +15.9% (323→375 jobs), commute cost −3.4%, and more balanced employment flows (concentration 0.607→0.574); the health factor H=1.556 proves the input lands on a "healthy expanding body" rather than sprawl. **This ledger is not converted into money, but into the detours avoided every day and the choices gained** [metric:simulacra_jobs_reach_stitched].
+**Step 3 · Return paths (three ledgers; blended IRR ≈ 10.6% concept, static payback ≈ year 10)**: first, the **rent ledger** — steady-state net cash flow of about CNY 300M/year supports an IRR of only about 0.5% on its own, which is exactly why this is not a commercial real-estate project; second, the **asset ledger** — about 180,000 m² of renewed operating property at a conceptual 38,000 CNY/m² is worth about CNY 6.8bn, recycled at 60% net via REITs/disposal in year 10, giving a blended IRR of about 10.6% (NPV@4% ≈ +CNY 1.88bn); third, the **social ledger** — job reach +15.9% [metric:simulacra_jobs_reach_stitched], jobs-housing balance, H=1.556, not discounted; the coordination game flips from "go it alone" to "cooperate" (η +60%) [metric:network_efficiency_eta_after]. Sensitivity (occupancy 68%→95%, asset value ±20%) is shown in the estimation figure. **The structure of the three ledgers is the structure of the proposal: the public ledger (stitching + brain ≈ CNY 1.7bn) seeks no financial return and is repaid by the social ledger; the market ledger (≈ CNY 2.7bn) runs on rent plus asset value; the operations ledger self-balances.**
 
-Third, the **governance ledger**: the coordination game flips from "go it alone" to "cooperate" (Nash equilibrium D,D→C,C, network efficiency η +60%) — the meaning of the governance ledger is: **spending 1 yuan on stitching leverages the three areas and two wings from competing against each other into borrowing strength from each other; this is the greatest leverage** [metric:network_efficiency_eta_after].
+**Step 4 · Funding and financing paths (conceptual suggestions)**: public funds carry the public goods (stitching works, brain platform, public space); market renewal rolls forward with market players (guided by planning conditions); matured assets go to REITs/long-term holding; operations self-balance on scenario revenue (test band, night school, markets, honor wall); the equity loop redirects renewal gains and operating surplus (compute vouchers, AI night school). All mechanisms are conceptual suggestions, not confirmed arrangements.
 
-**Funding-balance mechanisms (conceptual suggestions)**: ① government input (the stitching works are public goods, with a conceptual mix of government funds and special bonds at public magnitude); ② market renewal (the three-area infill and jobs-housing renewal are rolled out by market entities, with the government guiding through planning conditions and policy); ③ operational self-balance (the seven-node public spaces operate through the scenario cards — test field, night school, market, honor wall — covering daily maintenance costs); ④ the equity loop (public compute vouchers, AI night school, etc. are directionally fed back from renewal gains and operating surplus, forming the closed loop of "superlinear returns → public supply"). All mechanisms are conceptual suggestions and constitute no confirmed arrangement [depth:annual_event_system_operation].
+**Risk thresholds (self-test lines)**: if, after Phase I (seven-node stitching) is complete, the supercritical share of λ has not risen above 40%, or the 25-minute-circle job-reach gain is below 10%, Phase II expansion is suspended and Phase I is reviewed first — **let the money follow the verification results, not the planning text**.
 
-![Ten-year timeline: two acceptance gates](assets/figures/operations-timeline.en.png)
-
-**Risk thresholds (self-test lines, learning from KUN-SAL's low-altitude project practice)**: if, after Phase I (seven-node stitching) is complete, the supercritical share of λ has not risen above 40%, or the 25-minute-circle job reach increase is below 10%, then suspend Phase II expansion and first review Phase I — **let the money follow the verification results, not the planning text**.
+![Investment budget and return: supply-demand ledger, breakdown, cash flow, sensitivity](assets/figures/c20-finance.en.png)
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -379,7 +399,7 @@ Four rulers, made into an annual check-up table: λc=0.42 (connection), p_c=59.2
 | Scenario perceptibility | Strong | All ten scenario cards land in space with their "necessity"; three renderings for the three areas |
 | Spatial explicitness | Medium | The 7 gaps / three areas / two wings are clearly located; specific plots stay conceptual because ownership data is missing |
 | Transferability | Strong | An 8-item component library / a three-piece wayfinding set / an attraction funnel / an investment package — a professional team can take over directly |
-| Completeness of expression | Strong | 20 bilingual chapters + 22 figure groups + 9 renderings + A3/A0 + a WeChat edition |
+| Completeness of expression | Strong | 21 bilingual chapters + 39 figure groups + 9 renderings + A3/A0 + a WeChat edition |
 | Public compliance | Strong | All data sources registered, zero PII, complete copyright statement, provisional labelling throughout |
 | International reach | Medium | Full English alignment and internationalized naming; communication assets (WeChat edition) are ready, channels not yet |
 | Long-term operational value | Strong | The Phase-Transition Forum's annual check-up + the honor wall + the developer festival = a brand-asset mechanism |
@@ -413,9 +433,13 @@ Data compliance: Amap POI is used only as aggregate indicators and density field
 
 **Sentence three: the treatment is falsifiable, and it has already been cross-verified by three models.** The SIMULACRA four-sector re-run: 25-minute-circle job reach +15.9%, commute cost −3.4%; the LUTI land-use–transport match rate 46.2%→61.5%; the coordination game's Nash equilibrium flips from "go it alone" to "cooperate" (η +60%). Three models, three sets of mathematics, cross-corroborated on the same data and the same stitching assumption — convergence itself is not evidence of independence, but the three models' mechanisms (flow redistribution, path lock-in, match degree) are mutually distinct and their conclusions point the same way, which constitutes a falsifiable cross-verification [depth:metrics_recalculation] [depth:metrics_recalculation].
 
-**Sentence four: this is an urban operating system, not a blueprint.** It has criteria (the four rulers λc, p_c, D, H), a check-up (the Phase-Transition Forum's annual public report), a self-test line (if Phase I acceptance does not pass 40%, stop and review), an exit condition (projects that cannot find a caretaker stay on paper), and an equity loop (superlinear returns flow back to citizens). It can be calibrated every year and evolve with the city — **this is exactly what "the computable city" means: the city is no longer drawn only once, but continuously read, continuously tuned, and continuously allowed to grow itself.**
+**Sentence four: this is an urban operating system, not a blueprint.** It has criteria (the four rulers λc, p_c, D, H), a brain (the Emergent Brain: three layers, four terminals, the recursive loop, the Phase Control Room), a check-up (the Phase-Transition Forum's annual public report), a self-test line (if Phase I acceptance does not pass 40%, stop and review), an exit condition (projects that cannot find a caretaker stay on paper), and an equity loop (superlinear returns flow back to citizens). It can be calibrated every year and evolve with the city — **this is exactly what "the computable city" means: the city is no longer drawn only once, but continuously read, continuously tuned, and continuously allowed to grow itself.**
+
+![Design-conclusion dashboard: four sentences, each with numbers](assets/figures/c23-conclusion-dashboard.en.png)
 
 > In 1909, the herringbone switch let the train find its way within the constraint; in 2026, the Emergent Belt lets the city find its growth within the constraint. **Constraints are not the enemy of design; they are the conditions of emergence.** This is the entire answer of THE EMERGENT BELT — move aside what blocks emergence, and leave the rest to the city to grow.
+
+> The future cannot be predicted, but it can be invented. — Michael Batty
 
 ## References
 
