@@ -689,6 +689,86 @@
       "assumptions": [
         "字典由资料环自动生成，与 metrics.json 同步"
       ]
+    },
+    "changelog_entry_count": {
+      "status": "known",
+      "value": 28,
+      "unit": "count",
+      "source_files": [
+        "changelog.md"
+      ],
+      "formula": "count of changelog version rows",
+      "confidence": "high",
+      "assumptions": [
+        "一版一主题的迭代史"
+      ]
+    },
+    "reader_guide_step_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of reader-guide steps (母题/治理/制品/空间/态度)",
+      "confidence": "high",
+      "assumptions": [
+        "面向评审与公众的快速导读"
+      ]
+    },
+    "iteration_count": {
+      "status": "known",
+      "value": 30,
+      "unit": "count",
+      "source_files": [
+        "changelog.md",
+        "proposal.md"
+      ],
+      "formula": "count of version iterations (v1 scaffold + v2-v30 一版一主题)",
+      "confidence": "high",
+      "assumptions": [
+        "版本史见 changelog.md，每版对应一个可验证增量"
+      ]
+    },
+    "gate_deep_dive_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of gate deep-dive cards completed",
+      "confidence": "high",
+      "assumptions": [
+        "G0-G6 逐道深化;当前完成 7/7"
+      ]
+    },
+    "persona_deep_dive_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of persona deep-dive cards",
+      "confidence": "high",
+      "assumptions": [
+        "七类画像逐类深化;当前 7/7"
+      ]
+    },
+    "corridor_deep_dive_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/roads.geojson"
+      ],
+      "formula": "count of corridor deep-dive cards",
+      "confidence": "high",
+      "assumptions": [
+        "五条转辙廊逐条深化;当前 5/5;geojson 同步挂属性"
+      ]
     }
   }
 }
