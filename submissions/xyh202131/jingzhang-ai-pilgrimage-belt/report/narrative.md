@@ -4,6 +4,12 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 27 official heading wording alignment / 第 27 轮正式章节标题与官方术语对齐
+
+第 27 轮只在第 26 轮 PR #2757 合并（`2adc47505d5234a4b6cafdf017b2f17d3d2a7589` 进入 `origin/main@2d44121b3eb47ff958605b0ea2b026d462644dc5`）且 442 个开放 PR 文件级扫描无竞争后开始。审计方法：`proposal.en.md` 的 21 个 `##` 标题与 `docs/formal-submission-guide.md` 官方英文章节表逐条比对；发现唯一偏差——第 7 章英文标题词序 `Demolish–Renovate–Retain` 与官方 `Retain-Renovate-Demolish` 不同，其余 12/13 一致。修复为官方表述，重渲染英文报告（13/13 一致）并按第 23 轮记录重施渲染器媒体链接修复；另复核双语图件嵌入 21/21 等量（`.en.png` 配对正确）。仅英文标题文本变化，冻结字节不变。
+
+Round 27 began only after Round 26 PR #2757 merged (`2adc47505d5234a4b6cafdf017b2f17d3d2a7589` entered `origin/main@2d44121b3eb47ff958605b0ea2b026d462644dc5`) and a file-level scan of 442 open PRs found no competing PR. Audit method: all 21 `##` headings in `proposal.en.md` were compared against the official English chapter table in `docs/formal-submission-guide.md`; the only deviation was chapter 7's word order (`Demolish–Renovate–Retain` vs the official `Retain-Renovate-Demolish`), with the other 12/13 matching. Fixed to the official wording, re-rendered the English report (13/13 match) and re-applied the Round 23 renderer media-link fix as recorded; bilingual figure embedding was also confirmed 21/21 with correct `.en.png` pairing. Only the English heading text changed; frozen bytes unchanged.
+
 ## Round 26 contract as_of consistency repair / 第 26 轮契约 as_of 一致性修复
 
 第 26 轮只在第 25 轮 PR #2752 合并（`cdc56d33f322e01477c4b29adba0f1dae4524e41` 进入 `origin/main@cdc56d33f322e01477c4b29adba0f1dae4524e41`）且 438 个开放 PR 文件级扫描无竞争后开始。审计方法：对包内全部结构化契约的顶层 `as_of` 与 `git log -1 --format=%ad` 的真实最后编辑日期逐一比对；发现 8 个契约 `as_of` 早于真实编辑日期（civic-operations、g1-preregistration、implementation-handoff-matrix、pilot-readiness、readiness-closure、rights-clearance-ledger、site-grounding-register、submission-use-rights-matrix），全部按 git 历史修复并新增 `as_of_semantics` 字段（“最后真实内容编辑日期，不是有效性或新鲜度保证”）。另复核四份 PDF 文本层：44 页角色标题全部命中、替换字形 0、页脚披露全部在位（仅全出血封面页无页脚，属设计）。本轮无主张或数据变化，冻结字节不变。
