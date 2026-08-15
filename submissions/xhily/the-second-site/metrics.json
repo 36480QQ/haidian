@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Derived from the provisional submitted boundary (DATA-SRC-PROVISIONAL-BOUNDARIES-20260605); the trusted official site boundary is NOT present in the public site package.",
+        "Recompute this value when official polygons are released; current figure is provisional-derived, not a statutory area."
       ]
     },
     "building_footprint_area_sqm": {
@@ -26,8 +27,10 @@
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "Building footprints are provisional; no official building inventory is included in the public site package."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -38,8 +41,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "Both numerator and denominator are provisional-derived; ratio is indicative only and will be recomputed on official geometry."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -50,8 +55,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "Both numerator and denominator are provisional-derived; ratio is indicative only and will be recomputed on official geometry."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -73,8 +80,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "medium",
+      "assumptions": [
+        "Number of key detailed-design areas defined in this submission; the key-area geometry itself is provisional."
+      ]
     }
   }
 }
