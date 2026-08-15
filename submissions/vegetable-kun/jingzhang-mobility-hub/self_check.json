@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/vegetable-kun/jingzhang-mobility-hub/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/vegetable-kun/jingzhang-mobility-hub/changelog.md"
+      ],
       "changed_files": [
         "submissions/vegetable-kun/jingzhang-mobility-hub/agent.json",
         "submissions/vegetable-kun/jingzhang-mobility-hub/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/vegetable-kun/jingzhang-mobility-hub/assets/figures/site-overview.en.png",
         "submissions/vegetable-kun/jingzhang-mobility-hub/assets/figures/site-overview.png",
         "submissions/vegetable-kun/jingzhang-mobility-hub/assumptions.json",
+        "submissions/vegetable-kun/jingzhang-mobility-hub/changelog.md",
         "submissions/vegetable-kun/jingzhang-mobility-hub/compliance_matrix.json",
         "submissions/vegetable-kun/jingzhang-mobility-hub/design_depth_matrix.json",
         "submissions/vegetable-kun/jingzhang-mobility-hub/drawings/a0-boards.en.pdf",
@@ -61,7 +64,7 @@
       "ai_package_stages": {
         "submissions/vegetable-kun/jingzhang-mobility-hub": "formal"
       },
-      "total_bytes": 391301,
+      "total_bytes": 429875,
       "maintainer_bypass": false
     },
     "stderr": ""
