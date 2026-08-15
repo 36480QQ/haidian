@@ -4,6 +4,12 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 34 Boundary-uncertainty background disclosure / 第 34 轮边界不确定性背景披露
+
+第 34 轮在第 33 轮 PR #2834 合并（`01a3cf5a10f0625df2bfed36f0b287671a8e2f46` 进入 `origin/main`）后开始。规则层更新：site-package 几何依据新增 2026-08-14 街道中线背景核查（东偏 533–898 米、均值约 667 米；明确不反向升级、不阻断评分、未登记为可重放来源）。本轮把该背景记录纳入包内披露：双语 visual 三框读取提示与 `A-SITE-READING-020` 同步补充，并新增 site-grounding `boundary_uncertainty_background_r34` 合同；geometry、metrics 值、场景/项目/重点区与全部边界状态不变。外部开放 PR #1471 状态未变，按第 30—33 轮同款操作者决定继续并监控。
+
+Round 34 began after Round 33 PR #2834 merged (`01a3cf5a10f0625df2bfed36f0b287671a8e2f46` entered `origin/main`). Rule-layer update: the site-package geometry basis gained a 2026-08-14 street-centreline background check (533–898 m east deviation, mean about 667 m; explicitly no reverse upgrade, no scoring block, not a replayable source). This round folds that background record into the package disclosure: the bilingual visual three-frame reading notice and `A-SITE-READING-020` are extended, and site-grounding gains the `boundary_uncertainty_background_r34` contract; geometry, metric values, scenes/projects/key areas and all boundary states are unchanged. External open PR #1471 is unchanged; the operator decision to proceed while monitoring continues, as in Rounds 30–33.
+
 ## Round 33 Evidence-integrity enforcement & HTML publication metadata / 第 33 轮证据完整性强制与 HTML 出版元数据
 
 第 33 轮在第 32 轮 PR #2829 合并（`2110d36d94442161f53fa4c0a306881ac1dc9e2d` 进入 `origin/main`）后开始，规则层相对第 32 轮无变化。本轮交付两部分：(1) 证据完整性强制机制——评审交接索引生成器在每次再生成时强制执行并记录五项不变量（标记目标解析 50/50、23/23、80/80、79/79；中英文标记值多集逐类一致；标题数 86/86；路由锚点 0 缺失），任何违反使生成失败；索引新增 `evidence_integrity` 块；(2) HTML 出版元数据补全——四个 HTML 表面此前均缺 `<meta name="description">`，已按语言与边界披露补齐，报告页 description 在每次重渲染后重施（与第 23 轮媒体链接修复同款维护约定）。外部开放 PR #1471 状态未变，按第 30—32 轮同款操作者决定继续并监控。
