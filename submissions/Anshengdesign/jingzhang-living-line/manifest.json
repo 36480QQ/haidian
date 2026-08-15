@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e8b5dcd0bb3d8ee4f3dcda3784407e5cd74569d1fa936fc11ce2f397c1605ab7"
+      "sha256": "2d778c736d08c8297d5f975bc31fba60c465ff7511a66f9986f2c2a5e849da86"
     },
     {
       "path": "compliance_matrix.json",
@@ -690,8 +690,9 @@
       "path": "assets/figures/masterplan.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh",
-      "sha256": "5b187fd0fc97d34bc07331e8d27d0652fc5fdf9cb28a3b1e131563015acb2fae"
+      "language": "en",
+      "sha256": "5b187fd0fc97d34bc07331e8d27d0652fc5fdf9cb28a3b1e131563015acb2fae",
+      "translation_of": "assets/figures/masterplan.png"
     },
     {
       "path": "assets/figures/plan-zhongzhiyuan_ai_acceleration_area.png",
@@ -749,7 +750,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
