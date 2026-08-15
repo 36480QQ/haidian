@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>京张水准线 THE LEVELING LINE · 离线可视化</title>
 <style>
+.media{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin:14px 0}
+.media figure{margin:0;border:1px solid var(--rule);padding:12px}
+.media video,.media audio{width:100%;display:block;background:#09111b}
+.media audio{background:none}
+.media figcaption{font-size:12.5px;color:var(--ink2);margin-top:8px;line-height:1.6}
+
 .explorer{border:1px solid var(--rule,#CFC9BC);padding:14px;margin:12px 0}
 .explorer canvas{max-width:100%;height:auto;background:#F2EFE9;display:block}
 .explorer canvas:focus{outline:2px solid #0A72A8;outline-offset:2px}
@@ -206,6 +212,45 @@ charter.6 要求披露生成方法、charter.5 要求结构化可机读，而四
 本方案的结论严格限于「机器可读的披露字段为空，且闸门不检查它」。这是可修复的工程缺陷，不是道德指控。
 母题识别基于中文关键词正则，存在同义表述漏计，所以收敛度是<b>下界</b>。语料每日变动，引用须复算。</p>
 
+
+
+<h2>影片与声音<span class="en">FILM AND SOUND</span></h2>
+<p class="note">三件都由随包几何与随包数据生成，<b>全部无语音、无音乐素材、非实景渲染</b>；
+每一件旁边都有海报帧、中英双语字幕（影片）与载明方法、限度与权利的文字稿。
+本页不自动播放任何内容。</p>
+<div class="media">
+  <figure>
+    <video controls playsinline preload="metadata" poster="../assets/media/leveling-line.png">
+      <source src="../assets/media/leveling-line.mp4" type="video/mp4">
+      <track kind="captions" srclang="zh" label="中文/English" default
+             src="../assets/media/leveling-line.vtt">
+    </video>
+    <figcaption><b>京张水准线：一次闭合，在时间里</b>（54 秒，无声）。
+    线从已知点出发，逐站传递高程，绕一周回到原点，剩下的差值就是闭合差。
+    纸上出发与回来是同一张图，时间里不是。
+    <a href="../assets/media/leveling-line.md">文字稿与授权说明 ↗</a></figcaption>
+  </figure>
+  <figure>
+    <video controls playsinline preload="metadata" poster="../assets/media/closure-advance.png">
+      <source src="../assets/media/closure-advance.mp4" type="video/mp4">
+      <track kind="captions" srclang="zh" label="中文/English" default
+             src="../assets/media/closure-advance.vtt">
+    </video>
+    <figcaption><b>闭合决定进度：什么也不开启的那一拍</b>（40 秒，无声）。
+    合格则下一期开启，超限则整段重测、什么也不开启。
+    <b>片中的合格与超限是规则示意，不是实测读数。</b>
+    <a href="../assets/media/closure-advance.md">文字稿与授权说明 ↗</a></figcaption>
+  </figure>
+  <figure>
+    <audio controls preload="metadata">
+      <source src="../assets/media/leveling-year.mp3" type="audio/mpeg">
+    </audio>
+    <figcaption><b>一年的声音</b>（48 秒，单声道，无语音）。全年 214 小时复测工时按月排开，
+    每一次脉冲代表 2.5 小时；前半段峰值 83.5 小时，后半段把三个年度点分开后降到 31.5 小时，
+    工作量一次没变。<b>非现场录音，不得作为现状声环境的证据。</b>
+    <a href="../assets/media/leveling-year.md">文字稿与授权说明 ↗</a></figcaption>
+  </figure>
+</div>
 
 <h2>把年度点搬一搬<span class="en">MOVE THE ANNUAL READINGS</span></h2>
 <p>FIG.30 只公布一个排布和找到它的搜索，读者只能选择相信。<b>一张离线页面唯一能替图纸补上的，
