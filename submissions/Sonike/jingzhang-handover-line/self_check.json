@@ -46,6 +46,12 @@
         "submissions/Sonike/jingzhang-handover-line/assets/figures/site-overview.png",
         "submissions/Sonike/jingzhang-handover-line/assets/figures/spatial-prototype.en.png",
         "submissions/Sonike/jingzhang-handover-line/assets/figures/spatial-prototype.png",
+        "submissions/Sonike/jingzhang-handover-line/assets/media/audio-guide-en.m4a",
+        "submissions/Sonike/jingzhang-handover-line/assets/media/audio-guide-en.md",
+        "submissions/Sonike/jingzhang-handover-line/assets/media/audio-guide-en.vtt",
+        "submissions/Sonike/jingzhang-handover-line/assets/media/audio-guide.m4a",
+        "submissions/Sonike/jingzhang-handover-line/assets/media/audio-guide.md",
+        "submissions/Sonike/jingzhang-handover-line/assets/media/audio-guide.vtt",
         "submissions/Sonike/jingzhang-handover-line/assumptions.json",
         "submissions/Sonike/jingzhang-handover-line/changelog.md",
         "submissions/Sonike/jingzhang-handover-line/compliance_matrix.json",
@@ -89,7 +95,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 7822514,
+      "total_bytes": 10795304,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -167,10 +173,10 @@
         "proposal_format_version": "1",
         "evidence_contract": "legacy-exhaustive-inline",
         "proposal_reference_counts": {
-          "source": 23,
+          "source": 24,
           "standard": 6,
           "depth": 15,
-          "data": 24,
+          "data": 28,
           "metric": 47
         }
       }
