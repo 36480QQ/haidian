@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.0 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.1 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "612d52c64719f5f85481449eab729c80f080a8f86084af3beff78a0aaae8413a"
+      "sha256": "f39465f38a0569c6963188ed0306af03e3089918b0031f712d8acde89583b4ca"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "41910481a42830d5c65181bba1bcf0b321a3ff537250cd18f01d4fecd6eebda2"
+      "sha256": "0a2daef8cd7eb37a9772c9824e4b4b0632659e9794674fc3238f9ade57030847"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f7101b19d24d0e808a6c7ae72d3575acce30a48818aca8da07a7570b871ea62d"
+      "sha256": "7dadbb43eb8ece9d8102a3e51525ef6cc0847c50be2a9aaf2d2f9a71cc069955"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0c6ef5f9e8c20bb96a804b59f5055ec1c99c38ec955985b032ab22a26fea7bf4"
+      "sha256": "c9c542e38eeb3d9b7d8d2137fc8b18526338500575f4655cbfd6cc61ec7bc807"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "9c27dfdd2e4b10d473c6fb80fea95ba7e20bea64b4cbdb71b2a84db9f65b7a1e"
+      "sha256": "ebc830bf427a84a034766a02dcfd531cdd024b9680aa0915e4284955364b0389"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -128,7 +128,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "9e31093aeda42274fc4fbedd822f63892fd57064c51cb9b5614e908bf3ec72fc"
+      "sha256": "0a9dd576d16b75af38e46010d3b1d41b08799b2e3218e8030227c8a798986063"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -142,14 +142,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "9e54abeab8692eeabcbcdad51e1b512630cb23d31890772a0c5cbfb670880c41"
+      "sha256": "35198171181dad9ebea9c7f09e3681adb3013c61670355249041c9379c9b79d8"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "c19685158959cb565061ade697f7095ab15230afdbda95e98b0b08a98c1b50e9"
+      "sha256": "ef7177ae44ef71da1359f6cff430c9b03dccbc52f83c827afc4d83905745b950"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "94e150cbfd7352836bee545f1f7b8ef907f56235fe06b675a154246378a701a3"
+      "sha256": "a0950f08fec8444b8d259812ec04329cb549e0ddeda46c6035a862bc44a81f8e"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a971453c906f7a490d99aa0cfcb48eab700c5c876103f1e971862bf6f59a32ad"
+      "sha256": "e02b98fe5b2cfc6b442e33fc1cb9136a4612316a6565d82dfd762011a9f214d3"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "15754c22ea0ff2e508c84bfaceb4057048478a83c8c0ac3470a2d4c22516d8e6"
+      "sha256": "4a17837696507ab3662c9821f7c0d1aeced8e1001de4626404345d4bdc4dffc9"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -283,14 +283,14 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "2a8c3b1922f2466b166a913c4d7c6f431c877d607795b459fe4bf6aec670f867"
+      "sha256": "45885884dad6ca4738caa1aec9b33ae35bbc35454ea99a55b61ec60045fcfffe"
     },
     {
       "path": "assets/figures/metrics-evidence-audit.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "ff2779e818c69bb4d1d6aee4a49d4c638e3b20c03d2fc9fb957d460c1b29f495"
+      "sha256": "ed666f8fc84993541ec40c2934f4b8388d64044f09bb0031e6d17ae339d3136f"
     },
     {
       "path": "assets/figures/metrics-evidence-audit.en.png",
@@ -298,14 +298,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence-audit.png",
-      "sha256": "ef8771819183a5edbcf49e5be685ad039fb2e7d6ddcef3f8fc4d8ea16a9cd64b"
+      "sha256": "515bd2a3bf8da742c95fae2815ecb5b736d29cc86ff9b3f6e7cc1ce231d83266"
     },
     {
       "path": "assets/figures/ecosystem-map.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "3a09f367f6bc5d138b4ded91f1c3944fd523a13959b2d72cc0ab997a2f98439e"
+      "sha256": "9f0abd8281484067f42115b6313815d8f6b73fe9176b24b37b7a513a63907ec2"
     },
     {
       "path": "assets/figures/ecosystem-map.en.png",
@@ -313,7 +313,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/ecosystem-map.png",
-      "sha256": "4429697ffedb39c4a023710b40215f10cbc2447a2ae8df91d060727bfb6c7956"
+      "sha256": "5f570d006cc10fec5403b57cf65b65c16dab98523b817f71c23925f47f71028a"
     },
     {
       "path": "assets/figures/op04-detail.png",
@@ -358,7 +358,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "29906be5e1bc6c28c52aa78c3f7284c5644daf730e8eff1039c7a45177818b29"
+      "sha256": "c88b843531a227027f319b825acf8340d63594814ac4e0f0c1e425d221a5d4cb"
     },
     {
       "path": "assets/figures/section-profiles.en.png",
@@ -366,14 +366,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/section-profiles.png",
-      "sha256": "1de7525fd29c4f6d5bae441480891c8166eb2fbb12ee7d0b3203efe5b5853e7f"
+      "sha256": "2bddb65eaf9d374a6a7c521e18b67b1d51e53c33e826f5ef63fb399b6a62a3fd"
     },
     {
       "path": "assets/figures/enterprise-journey.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "7203fd404c5f4dfc67e26243bceac711bd778a016b89850d46beaa61f45a03ba"
+      "sha256": "a4ff699cb5cf0dacae5da08c9409fdc3ac113e7726f546516d01c0402fabb965"
     },
     {
       "path": "assets/figures/enterprise-journey.en.png",
@@ -381,7 +381,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/enterprise-journey.png",
-      "sha256": "b672eaff3b5cbc315773a7b8de04e8005a43d0da4eb86c68e3b58698d11a7ea9"
+      "sha256": "bbbb49243b7d1f2a2ec813d25090aeed784255b135246d610223161229f9e7d8"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -389,14 +389,14 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "07d224a4a1a6df7add73aa52d01c864e10233d57e8becb5b574666c8bde092c7"
+      "sha256": "b2b73556cdbf1f0c77be0009d825b9aca2babbb1ca01e3f104fb0e2ac46c354e"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "716c2c72d7e644b0b7c342fd0280e824de0ef88e12f57ccb402bd9c5a10fef02"
+      "sha256": "d70338bf370383b8d6fbc672d2a88cbb60afe23b11bd7a94a0cc6da06c556e5a"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.en.png",
@@ -404,7 +404,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen-audit.png",
-      "sha256": "cb7ccb9c79523fe633b09bf080b64b3a3c7f609d7dc0036175235e0ab0206158"
+      "sha256": "4d70dce991e2366ec180c1d9c88e7d390d954c46d6a707b37fcbe8b27d4a5f05"
     },
     {
       "path": "assets/figures/scene-dual-state.webp",
@@ -478,7 +478,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "c9670804f63a6304793390ffa3cf9305b8f0c2cce987964839ce9cf3084363e7"
+      "sha256": "b5b3ab1ef11e3995d49e41677fd38a0c15fb2d5f717fd52340938b565ba46179"
     },
     {
       "path": "assets/figures/brand-system.en.png",
@@ -486,13 +486,13 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/brand-system.png",
-      "sha256": "d9523c4a1bc87bfc472ff173b023198b0d2cd3e420ae4293d3e7c5eeae3b8b2d"
+      "sha256": "bebe0662f524ff96a21183ca0daa36c70a6c36dcb1b624e1758ec249301e5d95"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "be88d964f1ba81cabc385270537e4ebf83663df55f6d68c7269a93317067ff9b"
+      "sha256": "2b141552e39ab854e5689e705562287ffae4c8c518dc0c4a14b47f109e6d0cdf"
     },
     {
       "path": "assets/media/cover.webp",
@@ -633,7 +633,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "92dbb9f3dd51a38c01ccfbbc1cb8dd4612c2f707795a955d6c09c3c76c585df3"
+      "sha256": "6dfafa7b4f487caa7a901049db6745bd96eb916d2cad34da5e4abb34e85b27b6"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -891,6 +891,53 @@
       "title_zh": "听得见的断点 数据映射档案与权利记录（断点时刻可由档案读数复算）",
       "title_en": "Audible Break mapping archive and rights note (the break moment recomputes from archive readings)",
       "sha256": "da9cdcadbd594e653c51220f6e0cb643a2dceeae1f2f21a48803b4582d45ead4"
+    },
+    {
+      "path": "assets/media/dual-state-walk.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "双态漫游（65 秒概念意象短片：三场景同机位 AI 开启/关闭对切）",
+      "title_en": "Dual-State Walk (65 s concept vision film: three scenes cut AI-on/AI-off from the same camera)",
+      "description_zh": "三组 AI 生成场景（主脊/缝合区/大钟寺市场）各呈两态：流光导引熄灭后盲道、铸刻导视、值守与现金柜台仍在。每帧恒显「概念意象·AI 生成·非建成效果承诺」角标；OFF 段垫本包五声音阶数据音；非效果图交付、非建成承诺",
+      "description_en": "Three AI-generated scenes each in two states: when the flowing-light guide goes out, the tactile strip, engraved signage, stewards and cash counters remain. Every frame carries a permanent concept/AI-generated/not-built badge; the AI-off bed reuses the package's pentatonic data sound; not a rendering deliverable, not a built outcome",
+      "transcript": "assets/media/dual-state-walk.md",
+      "poster": "assets/media/dual-state-walk-poster.webp",
+      "caption": "assets/media/dual-state-walk.vtt",
+      "sha256": "da6e0014243a167a154347d2077bfc5812cb27dd0944d9664db00c1b01f56925"
+    },
+    {
+      "path": "assets/media/dual-state-walk-poster.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "双态漫游 视频封面（场景一 AI 开启态标注帧）",
+      "title_en": "Dual-State Walk poster (scene-one AI-on annotated frame)",
+      "sha256": "bd84e9047f31fbc18534895496b40f047c14a3c0180c12b716afa113e4de1205"
+    },
+    {
+      "path": "assets/media/dual-state-walk.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "zh",
+      "title_zh": "双态漫游 中文字幕",
+      "title_en": "Dual-State Walk Chinese captions",
+      "sha256": "97d4a075ac6eb6b2eadf1a4226d80382115c3ff90b093f668e1bb2f6e549eaaf"
+    },
+    {
+      "path": "assets/media/dual-state-walk-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "title_zh": "双态漫游 英文字幕",
+      "title_en": "Dual-State Walk English captions",
+      "sha256": "09e1e0879c20e580671de67d45bda28839a26473b189cb77fccfd7a057d3bafc"
+    },
+    {
+      "path": "assets/media/dual-state-walk.md",
+      "role": "transcript",
+      "required": false,
+      "title_zh": "双态漫游 文字稿、生成档案（含两轮人工审改记录）与权利记录",
+      "title_en": "Dual-State Walk transcript, generation record (with both human-directed revision rounds) and rights note",
+      "sha256": "8a115a6415c7152425d64a8f18e3ea7c6f8e475a26b0cba9e6222d05475f17bb"
     }
   ],
   "validation_claim": {
