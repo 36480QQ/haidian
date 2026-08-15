@@ -605,3 +605,33 @@ v0.5 验收记录里「用例 `45`（内联 `32` + 模块 `13`）」的拆分写
 `17` 个 D 类外部门在本轮结束时全部保持开放、无复选框、不可勾选。本轮所做的全部是包内实施与自证，其中没有任何一项构成外部或专业证据；所有现场行动与试点仍未获授权、未获资金。关于大钟寺的车站关系、出入口、轨道、道路、路口、地块、门、标高、结构、首层、现状使用、消防、安装、修复能力与承载力，本轮未新增任何肯定性主张。
 
 本轮没有运行：`scripts/refresh_submission_manifest.py`、marked self-check、`scripts/participant_preflight.py`、严格验证器与 `finalize_submission.py`。`manifest.json` 与 `self_check.json` 因此仍是有意保留的陈旧生命周期制品，其哈希未经手工修改；本轮修改的 `13` 个文件在 `manifest.json` 中仍带改动前的哈希，等待官方刷新，不能沿用本账本作为已刷新的证据。本轮没有任何提交、暂存、推送、PR 创建/关闭/更新、fetch、merge 或 rebase，也没有触碰包外任何文件。
+
+## v0.7 - 2026-08-16
+
+### Claude Opus 5 双语 viewer 可访问性与加载修复
+
+本轮 viewer 直接编辑使用本机 Claude Code `2.1.233`、`claude-opus-5`、最大推理强度、自动上下文压缩、动态工作流提示与 bypass permission 模式完成；随后由 Codex 和独立审计复核生成契约，并加固 `UI01` 回归测试。改动仅涉及双语 viewer 的生成器、聚合契约测试及两份生成 HTML，不改变设计几何、指标、来源、重点区边界或大钟寺声明上限。
+
+两份 viewer 的粘性导航触点均不小于 `48 × 48 px`；导航保持在 viewport 内，并在窄屏上仅由自身承担横向滚动。生成器直接读取每张 PNG 的 IHDR 物理尺寸并写入 `width`／`height`，每页恰有 `20` 张图：首张 hero 为唯一的 `loading="eager"`、`fetchpriority="high"` 图，其余 `19` 张为 `loading="lazy"`，全部 `20` 张均使用 `decoding="async"`。生成器同时拒绝远程 URL 与 protocol-relative 图像源，中英文样式、结构与行为保持对称。
+
+发布图像清单现被 `UI01` 按顺序完整冻结为：`3` 张主框架图、`15` 张语义重点区图版、`2` 张最终交通／指标图，共 `20` 个互不重复的本地源；双语清单与实际发布顺序逐字节一致。`UI01` 现有 `19` 个变异探针，包含对称删除以及保持总数不变的对称替换，实跑 `probes_missed: 0`。
+
+未引入 Web font：包内不存在同时满足浏览器可用性与来源可安全证明要求的本地字体文件，因此继续使用离线系统字体栈，不虚构字体来源或授权。
+
+### 浏览器与确定性验证
+
+Playwright 对中文、英文两页分别在 `390 × 844`、`768 × 1024`、`1440 × 1000` 三个 viewport 实测，共 `6/6` 组合通过。六组均为 HTTP `200`，document 横向溢出为 `0`；粘性导航到达 `top: 0` 且保持 viewport-contained；每页均为 `20` 张完整加载图像、`1` 张 eager/high-priority hero、`19` 张 lazy 图像、`20` 个 async decode，物理尺寸与声明尺寸不一致为 `0`，破图、空 alt 与外部请求均为 `0`。
+
+每页 `12` 个表格滚动区均具有互不重复的可访问名称、正确的 `aria-labelledby`、行列计数、表头 scope 与键盘焦点；`12/12` 个区域的 `4 px` focus ring 可见，宽表只在本地容器内滚动而不推动 document。`prefers-reduced-motion` 下 `scroll-behavior: auto` 且无活动动画。六组测试的 console warning、console error、page error 均为 `0`，滚动经过全部 lazy 图像后观测 CLS 仍为 `0`。
+
+九个 builder 均已在写入模式通过且未产生额外差异，并在 `--check` 模式保持确定性：`build-sources.js`、`build-standards.js`、`build-geometry.js`、`build-ablation.js`、`build-matrices.js`、`build-proposals.js`、`build-plates.js`、`build-viewers.js`、`build-drawings.js`。最新聚合契约结果为 `47/47 PASS`、`cases_failed: 0`；`UI01 expected_images: 20`、`probes: 19`、`probes_missed: 0`。`reproduce_physarum.js` 独立实跑及聚合套件均报告 `comparisons: 633`、`derived_metrics: 7`、`mismatch_count: 0`，冻结输入与运行哈希仍分别为 `5e5a9be65bb122617798bf488f12fc5838dfba46aead6d824b679b48db718d53` 与 `ea93df307c30bd90024438ed1dc4704a4e7bec8f4b456a7ec323c914ea4e06fe`。
+
+十六个独立契约脚本也全部退出 `0`：大钟寺主张上限、分母纪律、英文完整性、证据解析、门名称空间、重点区清单／登记／空间内容、阶段问责、发布一致性、来源规范化、无台阶链、阈值量化、冬季运维、清洁构建与复算器篡改拒绝均为 `PASS`。全包 `29` 个 JavaScript 文件通过 `node --check`，语法失败 `0`。
+
+### TODO、外部门与授权边界
+
+Class C 勾选状态不因本轮 viewer 修复扩大：已勾选仍恰为 `C02 C04 C07`；保持开放的是 `C01 C03 C05 C06 C08 C09 C10 C11 C12 C13 C14`。
+
+`C08` 保持开放：仍有 `33` 条 URL-only 来源记录没有真实 retrieval-time SHA-256，本轮没有取得这些哈希，也不得合成。`C09` 保持开放：规范制品按既定生命周期删除后，原验收条件要求的历史“从零建立字体载体”过程已无法由现存制品完整核验，不据当前 PDF 状态倒推勾选。`C10` 保持开放：Windows 上的官方 renderer 仍直接输出 CRLF；随后规范化为 LF 不能证明 renderer 本身直接产生 LF。
+
+`D01–D17` 全部保持开放且不可勾选；本轮不关闭任何专业、现场、权属、交通、运维、资金或公共授权门。所有现场行动和 pilot 仍未获授权且未获资金。`H01` 保持关闭但不可勾选，其范围仍仅以既有「H01 批准与提交授权记录」为准。本节只记录本地设计与验证事实，不作为 CI、推送、PR、合并或任何外部门关闭的证据。

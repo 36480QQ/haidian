@@ -20,9 +20,11 @@
 // All eight are now generated, so a wording only ever exists once and neither language can
 // move without the other. Two further paragraphs are stamped in place from a record — the
 // hero lede and the zero-jitter comparison in the metrics section — because their wording has
-// to track a record rather than an author. The stylesheet, navigation, and every other
-// section stay exactly as authored: this script replaces eight elements and fills two
-// paragraphs, it does not rebuild the page.
+// to track a record rather than an author. Every `<img>` on the finished page is stamped as
+// well, from the raster it names rather than from a record, for the reason given at
+// `stampImages`. The stylesheet, navigation, and every other section stay exactly as
+// authored: this script replaces eight elements, fills two paragraphs and normalises the
+// image tags, it does not rebuild the page.
 //
 // The regional section prints only what its record holds, which is only what the taskbook
 // supports: a potential relationship, the evidence still required, the review level that
@@ -746,6 +748,98 @@ function stampZeroJitter(html, sentence, language) {
   return { html: html.replace(pattern, filled), changed: true };
 }
 
+// The intrinsic size of a raster, read out of the file rather than out of a record.
+//
+// A PNG states its own dimensions in the IHDR chunk, which is always the first chunk and
+// always at a fixed offset, so twenty-four bytes are enough and none of the image data has to
+// be read to learn how much room it needs. A file that is not a PNG, or is truncated before
+// its header, stops the build: guessing a size would be worse than not declaring one.
+function pngSize(absolute) {
+  const header = Buffer.alloc(24);
+  const handle = fs.openSync(absolute, "r");
+  let read = 0;
+  try {
+    read = fs.readSync(handle, header, 0, 24, 0);
+  } finally {
+    fs.closeSync(handle);
+  }
+  if (read !== 24) throw new Error(`${absolute} is too short to carry a PNG header`);
+  if (header.toString("hex", 0, 8) !== "89504e470d0a1a0a") throw new Error(`${absolute} is not a PNG`);
+  if (header.toString("latin1", 12, 16) !== "IHDR") throw new Error(`${absolute} does not begin with an IHDR chunk`);
+  const size = { width: header.readUInt32BE(16), height: header.readUInt32BE(20) };
+  if (size.width === 0 || size.height === 0) throw new Error(`${absolute} declares a zero dimension`);
+  return size;
+}
+
+// The attributes this builder owns on an image. They are stripped and rewritten rather than
+// patched, so no page can end up carrying two of any of them and both languages emit them in
+// the same order whatever the section builder happened to write.
+const IMAGE_ATTRIBUTES = /\s(?:width|height|loading|decoding|fetchpriority)="[^"]*"/g;
+
+// Tells every image what it is before it arrives.
+//
+// Twenty rasters were being published with no intrinsic size on fifteen of them and no
+// loading or decoding policy on any: the browser had to fetch each file before it knew how
+// much room to keep for it, so the text under the reader's finger moved every time one
+// landed, and all twenty were fetched at once on a phone that would only ever show the first.
+// Both are properties of the file, not opinions about it, so both are taken from the file:
+// the width and height are read out of the PNG header, and a size already declared in the
+// markup is compared against it rather than trusted, which is what makes the plate registry's
+// 1800 × 1200 an assertion this build checks instead of a number nobody has opened the file
+// to confirm.
+//
+// The loading policy is the one judgement here, and the fold is where it is made. The hero
+// raster sits inside the header, on screen before the reader scrolls and the image the page
+// is measured by; deferring it would trade a visible delay for a request that is made a
+// moment later anyway, so it is fetched eagerly and marked as the priority one. Everything
+// below the header is lazy, because a reader who stops at the metrics should not have paid to
+// download thirty drawings of three key areas. Every image decodes asynchronously: an offline
+// page that blocks its main thread to decode a 1800 × 1200 plate is a page that stops
+// scrolling while it does so.
+//
+// Nothing here may introduce a request the package does not contain, so a `src` that names a
+// scheme or a protocol-relative host stops the build rather than being stamped and shipped.
+function stampImages(html, viewerFile) {
+  const directory = path.dirname(viewerFile);
+  const fold = html.indexOf("</header>");
+  if (fold === -1) throw new Error(`${viewerFile} has no </header>, so the fold is unknown`);
+  const stamped = [];
+  const output = html.replace(/<img\b[^>]*>/g, (tag, at) => {
+    const src = (tag.match(/\ssrc="([^"]*)"/) || [])[1];
+    if (src === undefined) throw new Error(`${viewerFile} carries an <img> with no src`);
+    if (/^[a-z][a-z0-9+.-]*:/i.test(src) || src.startsWith("//")) {
+      throw new Error(`${viewerFile} loads ${src}, which is not a file inside this package`);
+    }
+    const absolute = path.resolve(directory, src);
+    if (!fs.existsSync(absolute)) throw new Error(`${viewerFile} references ${src}, which does not exist`);
+    const size = pngSize(absolute);
+    for (const [name, actual] of [["width", size.width], ["height", size.height]]) {
+      const declared = (tag.match(new RegExp(`\\s${name}="([^"]*)"`)) || [])[1];
+      if (declared !== undefined && Number(declared) !== actual) {
+        throw new Error(`${viewerFile} declares ${name} ${declared} for ${src}, whose file is ${actual} px`);
+      }
+    }
+    const aboveFold = at < fold;
+    stamped.push({ src, above_fold: aboveFold, width: size.width, height: size.height });
+    const policy = aboveFold
+      ? ` loading="eager" fetchpriority="high" decoding="async"`
+      : ` loading="lazy" decoding="async"`;
+    // Inserted directly after `src`, so a reader searching the source for a filename finds
+    // what the page expects of it in the same place.
+    return tag
+      .replace(IMAGE_ATTRIBUTES, "")
+      .replace(/(\ssrc="[^"]*")/, `$1 width="${size.width}" height="${size.height}"${policy}`);
+  });
+  const above = stamped.filter((image) => image.above_fold);
+  // One image above the fold is the design of these pages. Two would mean either that the
+  // header grew a second raster or that the fold moved, and both change which image the page
+  // is judged by — a decision that belongs to whoever edits the header, not to this stamp.
+  if (above.length !== 1) {
+    throw new Error(`${viewerFile} places ${above.length} images above the fold, expected exactly the hero`);
+  }
+  return { html: output, images: stamped };
+}
+
 function main(argv) {
   const checkOnly = argv.includes("--check");
   const source = readJson(SOURCE);
@@ -796,6 +890,12 @@ function main(argv) {
     let output = comparison.html;
     for (const [id, markup] of generated) output = replaceSection(output, id, markup);
     const generatedMarkup = generated.map(([, markup]) => markup).join("");
+    // Stamped last, over the finished page, so the hand-authored figures and the generated
+    // ones are told the same thing by the same rule. Doing it per section would leave the
+    // four images the sections do not own — the hero among them — as the only ones on the
+    // page with no size and no loading policy, which is the state this closes.
+    const images = stampImages(output, target.file);
+    output = images.html;
     const changed = output !== original;
     if (changed) changedFiles += 1;
     if (changed && !checkOnly) fs.writeFileSync(target.file, output, "utf8");
@@ -1016,6 +1116,33 @@ function main(argv) {
     if (output.includes(escapeHtml(disclosures[otherLanguage]))) {
       failures.push(`${relative} carries the ${otherLanguage} Issue #1029 disclosure`);
     }
+    // The stamp has already refused anything it could not measure, so what is left to prove
+    // is that the measurement survived into the markup a reader receives. It is read back off
+    // the finished page rather than off the stamp's own list, because a report that agreed
+    // with the function that produced it would say nothing about the file being written.
+    const published = [...output.matchAll(/<img\b[^>]*>/g)].map(([tag]) => tag);
+    if (published.length !== images.images.length) {
+      failures.push(`${relative} publishes ${published.length} images and stamped ${images.images.length}`);
+    }
+    const eager = published.filter((tag) => tag.includes(`loading="eager"`));
+    const lazy = published.filter((tag) => tag.includes(`loading="lazy"`));
+    if (eager.length !== 1) {
+      failures.push(`${relative} fetches ${eager.length} images eagerly, expected exactly the hero`);
+    }
+    if (eager.length + lazy.length !== published.length) {
+      failures.push(`${relative} publishes ${published.length} images and declares loading on ${eager.length + lazy.length}`);
+    }
+    for (const tag of published) {
+      const src = (tag.match(/\ssrc="([^"]*)"/) || [])[1] ?? "an image";
+      if (!tag.includes(`decoding="async"`)) failures.push(`${relative} decodes ${src} on the main thread`);
+      if (!/\swidth="\d+"/.test(tag) || !/\sheight="\d+"/.test(tag)) {
+        failures.push(`${relative} publishes ${src} without an intrinsic size`);
+      }
+    }
+    if (eager.length === 1 && !eager[0].includes(`fetchpriority="high"`)) {
+      failures.push(`${relative} fetches the hero eagerly without claiming the priority that justifies it`);
+    }
+
     results.push({
       file: relative,
       language: target.language,
@@ -1024,6 +1151,9 @@ function main(argv) {
       zero_jitter_stamped: comparison.changed,
       generated_tables: tables,
       distinct_table_names: names.size,
+      images: published.length,
+      eager_images: eager.length,
+      lazy_images: lazy.length,
     });
 
   }
@@ -1081,4 +1211,6 @@ module.exports = {
   plateFigures,
   zeroJitterSentence,
   stampZeroJitter,
+  pngSize,
+  stampImages,
 };

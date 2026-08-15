@@ -20,6 +20,7 @@ const fs = require("node:fs");
 const os = require("node:os");
 const path = require("node:path");
 const { spawnSync } = require("node:child_process");
+const KEY_AREA_CONTRACT = require("./key-area-contract.js");
 
 const ASSETS = __dirname;
 const PACKAGE_ROOT = path.resolve(ASSETS, "..", "..");
@@ -1257,6 +1258,543 @@ check("PAR01", "both viewers expose the same records, in the same order, each in
     families: PARITY_FAMILIES.length,
     records: PARITY_FAMILIES.reduce((total, family) => total + family.records(source).length, 0),
     probes: PARITY_PROBES.length,
+    probes_missed: missed.length,
+  };
+});
+
+// The two things a reader meets before they read anything: whether their thumb can hit a
+// navigation link, and whether the page tells the browser what an image is before the bytes
+// arrive. Both were audited on real viewports at 390, 768 and 1440 px and both were found
+// wanting — every navigation link rendered 32.67 px tall against a 48 px requirement, and all
+// twenty images on each page were fetched up front, decoded on the main thread and sized only
+// once they had landed.
+//
+// Neither defect is visible to a check that reads markup for content: the link height is an
+// arithmetic consequence of four declarations that are individually unremarkable, and an
+// image's intrinsic size lives in the raster, not in the page. So both are computed here —
+// the link box from the stylesheet's own numbers, the image sizes from the PNG headers — and
+// the arithmetic is deliberately independent of the builder that writes those attributes. A
+// check that took its expected values from the code under test would agree with whatever that
+// code happened to produce.
+
+const ROOT_FONT_PX = 16;
+const TOUCH_TARGET_PX = 48;
+const NAV_LINK_SELECTOR = "nav a";
+
+// A second rule setting any of these on a navigation link would move the rendered box out from
+// under the arithmetic below, which reads one rule.
+const TARGET_PROPERTIES = ["display", "font-size", "line-height", "padding", "min-height", "min-width"];
+
+// The declarations that let the widened targets grow without dragging the page sideways: the
+// bar is capped at the viewport, scrolls inside itself, keeps that scroll from becoming a page
+// gesture, and does not wrap. Remove any one and a 390 px screen either loses links off the
+// edge or gains a horizontal scrollbar on the document.
+const NAV_CONTAINMENT = {
+  "max-width": "100%",
+  "overflow-x": "auto",
+  "overscroll-behavior-x": "contain",
+  "white-space": "nowrap",
+};
+
+const FETCHING_ELEMENTS = /<(?:img|link|script|iframe|source|track|embed|object|video|audio)\b[^>]*>/gi;
+const FETCHING_ATTRIBUTES = ["src", "href", "srcset", "poster", "data"];
+const VIEWER_PRIMARY_BEFORE_PLATES = ["site-overview", "land-use-structure", "key-areas"];
+const VIEWER_PRIMARY_AFTER_PLATES = ["mobility-bluegreen", "metrics-evidence"];
+
+// The viewer is a deliberately ordered argument: three framing figures, fifteen semantic
+// key-area plates, then the mobility and metrics evidence figures. Language parity alone is
+// not enough to preserve it, because deleting or substituting the same figure in both pages
+// would leave the two broken pages equal. The five primary bases are pinned here; the plate
+// filenames come from the same public key-area contract that the dedicated inventory and
+// publication cases independently audit.
+function expectedViewerSources(language) {
+  const suffix = language === "en" ? ".en.png" : ".png";
+  const primary = (bases) => bases.map((base) => `../assets/figures/${base}${suffix}`);
+  const plates = KEY_AREA_CONTRACT.expectedArtifacts()
+    .filter((artifact) => artifact.language === language)
+    .map((artifact) => `../${artifact.file}`);
+  return [
+    ...primary(VIEWER_PRIMARY_BEFORE_PLATES),
+    ...plates,
+    ...primary(VIEWER_PRIMARY_AFTER_PLATES),
+  ];
+}
+
+function styleSheet(html) {
+  const found = html.match(/<style>([\s\S]*?)<\/style>/);
+  return found === null ? null : found[1];
+}
+
+// Every rule in the sheet as a selector and its declarations. Media-query wrappers are not
+// modelled: a rule inside one comes back with its own selector and the wrapper is dropped,
+// which is what the checks below want, because a rule that shrinks a navigation link inside a
+// media query is still a rule that shrinks a navigation link.
+function cssRules(style) {
+  return [...style.matchAll(/([^{}]+)\{([^{}]*)\}/g)].map(([, selector, body]) => ({
+    selector: selector.trim(),
+    declared: cssDeclarations(body),
+  }));
+}
+
+function cssDeclarations(body) {
+  const declared = new Map();
+  for (const piece of body.split(";")) {
+    const at = piece.indexOf(":");
+    if (at === -1) continue;
+    declared.set(piece.slice(0, at).trim(), piece.slice(at + 1).trim());
+  }
+  return declared;
+}
+
+// px and rem only. em is refused rather than guessed: on a rule that also sets its own
+// font-size the answer depends on which declaration wins, and a check that guessed there would
+// be reporting its own arithmetic rather than the stylesheet's. Anything unresolvable comes
+// back null and is reported, not silently treated as zero.
+function cssPixels(value) {
+  const text = String(value).trim();
+  // Zero is the one length CSS accepts without a unit, and an unqualified 0 is how a rule that
+  // has given up on a minimum is usually written. Reading it as unresolvable rather than as
+  // zero would report the wrong defect for the most likely regression there is.
+  if (/^-?0(?:\.0+)?$/.test(text)) return 0;
+  const found = /^(-?\d*\.?\d+)(px|rem)$/.exec(text);
+  return found === null ? null : Number(found[1]) * (found[2] === "rem" ? ROOT_FONT_PX : 1);
+}
+
+function cssBox(value) {
+  const [top, right = top, bottom = top, left = right] = String(value).trim().split(/\s+/);
+  return { top, right, bottom, left };
+}
+
+function lineBoxPixels(value, fontPx) {
+  if (value === undefined) return fontPx;
+  const multiplier = Number(value);
+  if (value.trim() !== "" && Number.isFinite(multiplier)) return multiplier * fontPx;
+  return cssPixels(value);
+}
+
+// Only the width matters here, and a border this cannot read is counted as zero. That makes
+// the computed box smaller and the 48 px test harder to pass, which is the safe direction for
+// a check to be wrong in.
+function borderPixels(declared, side) {
+  const value = declared.get(`border-${side}-width`) ?? declared.get(`border-${side}`) ?? declared.get("border");
+  if (value === undefined) return 0;
+  return cssPixels(String(value).trim().split(/\s+/)[0]) ?? 0;
+}
+
+function bodyDeclaration(rules, property) {
+  const rule = rules.find((entry) => entry.selector === "body" && entry.declared.has(property));
+  return rule === undefined ? undefined : rule.declared.get(property);
+}
+
+// The rendered box of a navigation link, in CSS pixels, from the stylesheet alone. Every part
+// is returned so the report carries the number rather than a verdict about it: with the sheet
+// as authored the natural height is .85rem x 1.55 + .3rem x 2 + 2px = 32.68 px, which is the
+// figure the viewport audit measured and the reason a minimum has to be declared at all.
+function navLinkBox(declared, rules) {
+  const font = cssPixels(declared.get("font-size") ?? `${ROOT_FONT_PX}px`);
+  const lineHeight = declared.get("line-height") ?? bodyDeclaration(rules, "line-height");
+  const padding = cssBox(declared.get("padding") ?? "0");
+  const side = (edge) => cssPixels(declared.get(`padding-${edge}`) ?? padding[edge]);
+  const box = {
+    font_px: font,
+    line_px: font === null ? null : lineBoxPixels(lineHeight, font),
+    padding_top_px: side("top"),
+    padding_bottom_px: side("bottom"),
+    border_top_px: borderPixels(declared, "top"),
+    border_bottom_px: borderPixels(declared, "bottom"),
+    min_height_px: cssPixels(declared.get("min-height") ?? "0"),
+    min_width_px: cssPixels(declared.get("min-width") ?? "0"),
+  };
+  const stack = [box.line_px, box.padding_top_px, box.padding_bottom_px, box.border_top_px, box.border_bottom_px];
+  box.natural_height_px = stack.some((part) => part === null) ? null : stack.reduce((total, part) => total + part, 0);
+  box.rendered_height_px = box.natural_height_px === null || box.min_height_px === null
+    ? null
+    : Math.max(box.natural_height_px, box.min_height_px);
+  return box;
+}
+
+function imageAttribute(tag, name) {
+  return (tag.match(new RegExp(`\\s${name}="([^"]*)"`)) || [])[1];
+}
+
+// The first 24 bytes of a PNG: signature, chunk length, chunk type, then the width and height
+// the browser will lay out at. Read from the raster rather than from any registry, so a plate
+// that is rebuilt at a different size fails this case instead of being described by a stale
+// number.
+function rasterSize(absolute) {
+  const header = Buffer.alloc(24);
+  const handle = fs.openSync(absolute, "r");
+  let read = 0;
+  try {
+    read = fs.readSync(handle, header, 0, 24, 0);
+  } finally {
+    fs.closeSync(handle);
+  }
+  if (read !== 24 || header.toString("hex", 0, 8) !== "89504e470d0a1a0a") return null;
+  if (header.toString("latin1", 12, 16) !== "IHDR") return null;
+  return { width: header.readUInt32BE(16), height: header.readUInt32BE(20) };
+}
+
+function isRemoteReference(value) {
+  if (value.startsWith("//")) return true;
+  return /^[a-z][a-z0-9+.-]*:/i.test(value) && !/^data:/i.test(value);
+}
+
+// Pure over the two published pages and a map of raster sizes read from disk, so the probes at
+// the end of the case can run it against copies that have been deliberately drifted.
+function viewerRenderingFindings(pages, sizes) {
+  const findings = [];
+  const add = (kind, message) => findings.push({ kind, message });
+  const languages = pages.map((page) => page.language);
+
+  const sheets = pages.map((page) => styleSheet(page.html));
+  if (sheets.some((sheet) => sheet === null)) {
+    add("style_parity", "a viewer carries no stylesheet at all");
+    return findings;
+  }
+  if (sheets[0] !== sheets[1]) {
+    add("style_parity", `${languages[0]} and ${languages[1]} no longer carry the same stylesheet, `
+      + "so a target measured on one says nothing about the other");
+  }
+
+  for (const [index, style] of sheets.entries()) {
+    const language = languages[index];
+    const rules = cssRules(style);
+
+    // The two premises the arithmetic stands on. Both hold in this stylesheet today; if either
+    // moves, the numbers below stop describing what a browser renders, and the case says so
+    // rather than carrying on with them.
+    if (rules.some((rule) => rule.selector === "html" && rule.declared.has("font-size"))) {
+      add("layout_basis", `${language} sets a root font-size, so rem no longer resolves to ${ROOT_FONT_PX} px here`);
+    }
+    if (!rules.some((rule) => rule.selector === "*" && rule.declared.get("box-sizing") === "border-box")) {
+      add("layout_basis", `${language} no longer declares border-box, so a declared minimum is not a rendered height`);
+    }
+
+    const navRules = rules.filter((rule) => rule.selector === "nav");
+    if (navRules.length === 0) add("nav_scroll", `${language} has no nav rule`);
+    for (const [property, value] of Object.entries(NAV_CONTAINMENT)) {
+      if (!navRules.some((rule) => rule.declared.get(property) === value)) {
+        add("nav_scroll", `${language} nav does not declare ${property}:${value}, `
+          + "which is what keeps the widened targets inside the viewport and scrolling locally");
+      }
+    }
+
+    const base = rules.filter((rule) => rule.selector === NAV_LINK_SELECTOR);
+    if (base.length !== 1) {
+      add("touch_target", `${language} sizes the navigation link from ${base.length} rules; this case reads one`);
+      continue;
+    }
+    for (const rule of rules) {
+      if (rule.selector === NAV_LINK_SELECTOR || !rule.selector.includes(NAV_LINK_SELECTOR)) continue;
+      const also = TARGET_PROPERTIES.filter((property) => rule.declared.has(property));
+      if (also.length > 0) {
+        add("touch_target", `${language} also sets ${also.join(", ")} on the navigation link through ${rule.selector}`);
+      }
+    }
+
+    const declared = base[0].declared;
+    const display = declared.get("display");
+    if (display === undefined || display === "inline") {
+      add("touch_target", `${language} leaves the navigation link ${display ?? "inline by default"}, `
+        + "and an inline box ignores a declared minimum size");
+    }
+
+    const box = navLinkBox(declared, rules);
+    for (const [part, value] of Object.entries(box)) {
+      if (value === null) {
+        add("layout_basis", `${language} declares a navigation-link ${part.replace(/_px$/, "").replace(/_/g, " ")} `
+          + "this case cannot resolve to pixels");
+      }
+    }
+    if (box.rendered_height_px !== null && box.rendered_height_px < TOUCH_TARGET_PX) {
+      add("touch_target", `${language} renders the navigation link ${box.rendered_height_px.toFixed(2)} px tall, `
+        + `below the ${TOUCH_TARGET_PX} px target`);
+    }
+    // Width is the label's, and the labels are Chinese words of two and three characters.
+    // Nothing here can measure a glyph, so the width has to be declared rather than computed:
+    // 来源 at .85rem is about 27 px wide and would fail a real 48 px target on a page where
+    // every height rule above passed.
+    if (box.min_width_px !== null && box.min_width_px < TOUCH_TARGET_PX) {
+      add("touch_target", `${language} declares a ${box.min_width_px} px minimum width on the navigation link, `
+        + `below the ${TOUCH_TARGET_PX} px target, and no rule here can measure a label`);
+    }
+  }
+
+  const navLinks = pages.map((page) => (((page.html.match(/<nav[\s\S]*?<\/nav>/) ?? [""])[0]
+    .match(/<a\b/g)) ?? []).length);
+  if (navLinks.some((count) => count === 0)) add("nav_parity", "a viewer publishes no navigation links");
+  if (navLinks[0] !== navLinks[1]) {
+    add("nav_parity", `${languages[0]} publishes ${navLinks[0]} navigation links and ${languages[1]} publishes ${navLinks[1]}`);
+  }
+
+  for (const page of pages) {
+    // The fold, as the page itself defines it: the hero figure is the one image inside the
+    // header, so everything after the header closes is below it. This is a judgement about
+    // what the first screen waits for, not a pixel measurement, and it is the same judgement
+    // whatever viewport the reader arrives on.
+    const fold = page.html.indexOf("</header>");
+    if (fold === -1) {
+      add("image_loading", `${page.language} has no header, so no image can be placed against the fold`);
+      continue;
+    }
+    const images = [...page.html.matchAll(/<img\b[^>]*>/g)];
+    if (images.length === 0) add("image_size", `${page.language} publishes no images`);
+    const actualSources = images.map((found) => imageAttribute(found[0], "src"));
+    const expectedSources = expectedViewerSources(page.language);
+    const inventoryDifference = Array.from(
+      { length: Math.max(actualSources.length, expectedSources.length) },
+      (_, index) => index,
+    ).find((index) => actualSources[index] !== expectedSources[index]);
+    if (inventoryDifference !== undefined) {
+      add("image_inventory", `${page.language} publishes ${actualSources.length}/${expectedSources.length} expected figures; `
+        + `position ${inventoryDifference + 1} is ${actualSources[inventoryDifference] ?? "missing"}, `
+        + `expected ${expectedSources[inventoryDifference] ?? "no extra figure"}`);
+    }
+    let eager = 0;
+    for (const found of images) {
+      const tag = found[0];
+      const src = imageAttribute(tag, "src") ?? "an unnamed image";
+      const aboveFold = found.index < fold;
+      const size = sizes.get(src);
+      if (size === undefined || size === null) {
+        add("image_size", `${page.language} publishes ${src}, whose raster this case cannot read a size from`);
+      } else {
+        for (const [name, actual] of [["width", size.width], ["height", size.height]]) {
+          const value = imageAttribute(tag, name);
+          if (value === undefined) {
+            add("image_size", `${page.language} publishes ${src} with no declared ${name}, `
+              + "so the page reflows once it loads");
+          } else if (Number(value) !== actual) {
+            add("image_size", `${page.language} declares ${name} ${value} for ${src}, whose raster is ${actual} px`);
+          }
+        }
+      }
+      if (imageAttribute(tag, "decoding") !== "async") {
+        add("image_decoding", `${page.language} decodes ${src} on the main thread`);
+      }
+      const loading = imageAttribute(tag, "loading");
+      if (loading === "eager") eager += 1;
+      if (aboveFold) {
+        if (loading !== "eager") {
+          add("image_loading", `${page.language} declares loading:${loading ?? "nothing"} on ${src}, `
+            + "which is the image the first screen is waiting for");
+        }
+        if (imageAttribute(tag, "fetchpriority") !== "high") {
+          add("image_priority", `${page.language} fetches ${src} ahead of everything else without claiming the priority that justifies it`);
+        }
+      } else if (loading !== "lazy") {
+        add("image_loading", `${page.language} declares loading:${loading ?? "nothing"} on ${src}, which is below the fold`);
+      }
+      for (const name of FETCHING_ATTRIBUTES) {
+        const value = imageAttribute(tag, name);
+        if (value !== undefined && isRemoteReference(value)) {
+          add("external_request", `${page.language} loads ${value} from an image`);
+        }
+      }
+    }
+    if (images.length > 0 && eager !== 1) {
+      add("image_loading", `${page.language} fetches ${eager} images eagerly, expected exactly the hero`);
+    }
+
+    // Everything else on the page that can reach the network. The viewer is opened from a
+    // file:// path with no server behind it, so a remote reference is not a slow asset, it is
+    // a missing one — and a font or stylesheet pulled from a CDN would also be a provenance
+    // claim this package has not made.
+    for (const [tag] of page.html.matchAll(FETCHING_ELEMENTS)) {
+      if (/^<img/i.test(tag)) continue;
+      for (const name of FETCHING_ATTRIBUTES) {
+        const value = imageAttribute(tag, name);
+        if (value !== undefined && isRemoteReference(value)) {
+          add("external_request", `${page.language} loads ${value} from ${tag.slice(0, 40)}`);
+        }
+      }
+    }
+    for (const [, value] of page.html.matchAll(/url\(\s*['"]?([^'")]+)/g)) {
+      if (isRemoteReference(value.trim())) add("external_request", `${page.language} loads ${value.trim()} from a stylesheet url()`);
+    }
+    for (const [, value] of page.html.matchAll(/@import\s+(?:url\(\s*)?['"]?([^'")\s;]+)/g)) {
+      if (isRemoteReference(value)) add("external_request", `${page.language} imports ${value}`);
+    }
+  }
+
+  return findings;
+}
+
+function driftEveryPage(pages, change) {
+  return pages.map((page) => ({ ...page, html: change(page.html) }));
+}
+
+function driftOnePage(pages, language, change) {
+  return pages.map((page) => (page.language === language ? { ...page, html: change(page.html) } : page));
+}
+
+// Drift is introduced one way at a time and the check has to notice each one. Every probe here
+// restages a state this package was actually in before these contracts existed, or one it
+// would fall back into if a single declaration were dropped.
+const RENDERING_PROBES = [
+  {
+    name: "the navigation link loses its minimum height",
+    kind: "touch_target",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/min-height:48px/g, "min-height:0")),
+  },
+  {
+    name: "the navigation link loses its minimum width",
+    kind: "touch_target",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/min-width:48px/g, "min-width:0")),
+  },
+  {
+    name: "the navigation link goes back to being an inline box",
+    kind: "touch_target",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/nav a\{display:inline-flex/g, "nav a{display:inline")),
+  },
+  {
+    name: "a media query shrinks the navigation link on small screens",
+    kind: "touch_target",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(
+      /@media\(max-width:650px\)\{/g,
+      "@media(max-width:650px){nav a{min-height:0;min-width:0;padding:0}",
+    )),
+  },
+  {
+    name: "the root font size moves under the rem arithmetic",
+    kind: "layout_basis",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(
+      /html\{scroll-behavior:smooth\}/g,
+      "html{scroll-behavior:smooth;font-size:10px}",
+    )),
+  },
+  {
+    name: "the box model stops being border-box",
+    kind: "layout_basis",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/\*\{box-sizing:border-box\}/g, "")),
+  },
+  {
+    name: "the navigation bar stops containing its own overflow",
+    kind: "nav_scroll",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/overflow-x:auto;overflow-y:hidden;/g, "")),
+  },
+  {
+    name: "the two stylesheets drift apart",
+    kind: "style_parity",
+    drift: (pages) => driftOnePage(pages, "zh", (html) => html.replace(
+      /nav a:hover\{border-color:var\(--coral\)\}/,
+      "nav a:hover{border-color:var(--teal)}",
+    )),
+  },
+  {
+    name: "one viewer loses a navigation link",
+    kind: "nav_parity",
+    drift: (pages) => driftOnePage(pages, "en", (html) => html.replace(/<a href="#[^"]*"[^>]*>[^<]*<\/a>/, "")),
+  },
+  {
+    // The state both viewers shipped in until this case was written: twenty images per page,
+    // none of them sized, every one of them reflowing the layout as it arrived.
+    name: "an image loses its intrinsic size",
+    kind: "image_size",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/(<img\b[^>]*?)\swidth="\d+"\sheight="\d+"/, "$1")),
+  },
+  {
+    name: "an image declares a size its raster does not have",
+    kind: "image_size",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(
+      /\swidth="(\d+)"/,
+      (whole, value) => ` width="${Number(value) + 1}"`,
+    )),
+  },
+  {
+    name: "both viewers lose the same expected figure",
+    kind: "image_inventory",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(
+      /<img\b[^>]*\ssrc="[^"]*land-use-structure(?:\.en)?\.png"[^>]*>/,
+      "",
+    )),
+  },
+  {
+    name: "both viewers substitute the same duplicate without changing the image count",
+    kind: "image_inventory",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(
+      /land-use-structure(\.en)?\.png/,
+      "site-overview$1.png",
+    )),
+  },
+  {
+    // The other half of the fix, and the half that is easy to overshoot: deferring everything
+    // including the hero would score well against a naive lazy-loading count and make the
+    // first screen slower, which is the outcome this probe exists to keep failing.
+    name: "the hero the first screen waits for is deferred",
+    kind: "image_loading",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/loading="eager"/, `loading="lazy"`)),
+  },
+  {
+    name: "a plate below the fold is fetched up front",
+    kind: "image_loading",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/loading="lazy"/, `loading="eager"`)),
+  },
+  {
+    name: "an image goes back to decoding on the main thread",
+    kind: "image_decoding",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/\sdecoding="async"/, "")),
+  },
+  {
+    name: "the hero stops claiming the priority that justifies fetching it early",
+    kind: "image_priority",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(/\sfetchpriority="high"/, "")),
+  },
+  {
+    name: "a stylesheet is loaded from a content delivery network",
+    kind: "external_request",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(
+      "</style>",
+      `</style><link rel="stylesheet" href="https://cdn.example.invalid/type.css">`,
+    )),
+  },
+  {
+    name: "a web font is imported from a remote host",
+    kind: "external_request",
+    drift: (pages) => driftEveryPage(pages, (html) => html.replace(
+      "<style>",
+      `<style>@import url("https://fonts.example.invalid/family.css");`,
+    )),
+  },
+];
+
+check("UI01", "both viewers offer a reachable touch target and declare every image before it loads", (fail) => {
+  const pages = [
+    { language: "zh", html: readText("visual/index.html") },
+    { language: "en", html: readText("visual/index.en.html") },
+  ];
+
+  // Read once, from the rasters themselves, and shared by the live run and every probe. A
+  // probe that also had to restage the files on disk would be testing the filesystem.
+  const sizes = new Map();
+  for (const page of pages) {
+    for (const [, src] of page.html.matchAll(/<img\b[^>]*\ssrc="([^"]*)"/g)) {
+      if (sizes.has(src)) continue;
+      const absolute = path.resolve(PACKAGE_ROOT, "visual", src);
+      sizes.set(src, fs.existsSync(absolute) ? rasterSize(absolute) : null);
+    }
+  }
+
+  for (const finding of viewerRenderingFindings(pages, sizes)) fail(`${finding.kind}: ${finding.message}`);
+
+  const missed = [];
+  for (const probe of RENDERING_PROBES) {
+    const drifted = viewerRenderingFindings(probe.drift(pages), sizes);
+    if (!drifted.some((finding) => finding.kind === probe.kind)) missed.push(probe.name);
+  }
+  for (const name of missed) fail(`the rendering check does not notice when ${name}`);
+
+  const sheet = styleSheet(pages[0].html);
+  const rules = sheet === null ? [] : cssRules(sheet);
+  const link = rules.find((rule) => rule.selector === NAV_LINK_SELECTOR);
+  return {
+    touch_target_px: TOUCH_TARGET_PX,
+    nav_link: link === undefined ? null : navLinkBox(link.declared, rules),
+    images: Object.fromEntries(pages.map((page) => [page.language, (page.html.match(/<img\b/g) || []).length])),
+    expected_images: expectedViewerSources("zh").length,
+    rasters_measured: sizes.size,
+    probes: RENDERING_PROBES.length,
     probes_missed: missed.length,
   };
 });
