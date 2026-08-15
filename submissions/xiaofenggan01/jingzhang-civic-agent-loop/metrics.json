@@ -821,6 +821,19 @@
       "assumptions": [
         "更新频率/吊销条件"
       ]
+    },
+    "visual_deep_dive_row_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html"
+      ],
+      "formula": "count of deep-dive metric rows added to visual table",
+      "confidence": "high",
+      "assumptions": [
+        "深化指标进可视化"
+      ]
     }
   }
 }
