@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e4ffc2d3a12a81c7a46faa6c5721974cd0a965a2a9e7620c0edbc86c6f156ff8"
+      "sha256": "a548b8be6276bf0eb015dfc03d5cf0d4d916f3be4313e36cb827b48e1ceccea7"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1f6b7013322235d620b9caeefb7a13273ba11ef382577a9e685648d4d0f09145"
+      "sha256": "5d75f14d4dd102216d6194e6a43148ccef56da31106b79888a6fa76deb0f0766"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c54946ae1df38ee2a1a5443d5601ab1f0a91d85285c03d775de12b8d95a37747"
+      "sha256": "89657d7829d6592ffee5f82c4f9169bc728f438a84c54911e3e50d4922865947"
     },
     {
       "path": "report/narrative.md",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5e3c78deb636c04fcf373b9050021f5d1ba83161a1be63a823081ad4e1c18c20"
+      "sha256": "0088df5d7cd56f91a93a5fed661d10036383956d5300eb9edc651465472b1c08"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "13d8bbeda2ce9bef1e0ff2f40515dc77d1d0f43bbda6b12db6e7414ac05245a8"
+      "sha256": "37b79385ea7c291ec3a0c8b89f17c0eefc16698b00db8723a329c2ee387228c2"
     },
     {
       "path": "visual/index.html",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2d40d88aca61856d07af39eb2f371334e79f373fc5016d6a6623dd662be83f07"
+      "sha256": "fcd443d0a19cb349a6ab479c414c4bf2ad52f5ce1f6b26c87f02f69e914df66c"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "de130c05a71d2e3da394c72311d84eb088126b956a7f6945d03296f403058aba"
+      "sha256": "311833c14c286d03bca63a57da11fef47c3be4d8e2070eae0a87167a0b2d2ad0"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "7bafbc1c9278a3c256716722027f64769e8c939b24d4a7c0b46ed2ead2c83cc9"
+      "sha256": "f8c289fb4950813d1b1fcf5a90c07917d231b6ea2a4f88ccd4254ed41794123a"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "7c7dd7af44cb4810bafa6d6e46d9623441ac887fc2865482f95e57f40fe33cf4"
+      "sha256": "bf4deafa67006435a4caf5d5bb6e831a65672b2afb42cfe0594445a94a236dcc"
     },
     {
       "path": "visual/index.en.html",
@@ -747,6 +747,21 @@
       "title_zh": "2035 愿景鸟瞰（AI概念渲染）",
       "title_en": "2035 Vision aerial (AI conceptual rendering)",
       "sha256": "9558f1cb7da008f0627ff691b5fcca235643a88a5eb6b45fcfd7484809adf571"
+    },
+    {
+      "path": "assets/figures/c17-height-character.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "9de5b7d2dd5a66dfa688ed9a420b5207a7582c18a45b015324edda8f5a74f64e"
+    },
+    {
+      "path": "assets/figures/c17-height-character.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "be8fa535be23f2e8046635b0bf216d9422f540d9d07be518da22bd84307bf72a",
+      "translation_of": "assets/figures/c17-height-character.png"
     }
   ],
   "validation_claim": {

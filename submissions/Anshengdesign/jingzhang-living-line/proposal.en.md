@@ -284,6 +284,10 @@ The blue-green network's check-up: giant component 83.9%, already past the perco
 
 Three pilgrimage landmarks: Tsinghuayuan Station · Origin (the 93.5% structural origin + the developer Name Wall); Wudaokou · Phase-Transition Plaza (a public gauge that displays this belt's connection strength in real time — turning "is the city connected?" into a thermometer everyone can see); Dazhongsi · Interface Plaza (the Emergence Bell + the AI-native interface). Character control learns from the two paradigms of London and Shanghai: the heritage corridor and Tsinghuayuan Station use a "protective overlay" (view corridors, conceptual height control), and the three key areas use "generative growth rules" (heights stepping down toward the park, low in front and high behind) — **constraints breed innovation, and institutions sculpt form** (height values await heritage and regulatory-plan data) [depth:bluegreen_public_space_character] [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
+![Character and conceptual height zoning (schematic)](assets/figures/c17-height-character.en.png)
+
+**How to read this character diagram**: the upper panel is the conceptual height-zoning plan — the height bands step down along the main spine (park 0–8 m, park-front band 18 m, mid blocks 24 m, urban hinterland 36 m), with the three areas each following one of three character rules ("garden blocks / near-campus street / station front"); the lower panel shows the "low front, high back" rule in a typical Origin Community section, plus the conceptual Tsinghuayuan → Dazhongsi view corridor. All of it is design intent, not a regulatory drawing, to be rechecked once heritage and regulatory data arrive.
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 The renewal projects are only of three kinds: ① the seven-node stitching works; ② the three-area gap infill (the Origin fills healthcare and talent apartments, Zhongzhiyuan fills culture-tourism-education-finance, Dazhongsi fills research and education); ③ station-catchment jobs-housing balance. Three phases: near term (1–3 years) main-spine stitching and the Dazhongsi interface; mid term (3–5 years) the Origin Community renewal; long term (5–10 years) the Zhongzhiyuan garden district [data:geometry/phasing.geojson#PHASE-1] [depth:renewal_project_list].
@@ -336,6 +340,19 @@ Second, the CA emergence counterfactual: without intervention, 60 steps change n
 Third, the scaling-law verification: health factor H=1.178/0.758=1.556, above the 1.35 benchmark (γ fitted with n=72 four-hundred-metre cells, R²=0.67; β takes the conceptual mean of roads 0.915 and footprints 0.60; see also C3's n=98 conceptual zoning cells) [metric:beta_infra_mean] — this belt's growth is mathematically healthy.
 
 Four rulers, made into an annual check-up table: λc=0.42 (connection), p_c=59.27% (network), D=1.6–1.8 (form), H=1.35 (health) — the current measurements: 29.17% supercritical share (re-measured after stitching), 83.9%, 1.746, 1.556; the first two enter the Phase-Transition Forum's annual report. Task coverage: announcement 1.3/1.4/1.5 and agent.1–6 all registered in the compliance matrix; 8 standards and 15 depth items all complete [depth:compliance_standard_coverage].
+
+**Standard-clause correspondence matrix (8 standards → primary response positions; the full file is standard_matrix.json)**:
+
+| Standard | Primary response position |
+|---|---|
+| Official announcement (three scales / key areas / deliverable context) | Design Basis and Source List, Three-Level Scope Framework, Overall Design Area chapters |
+| Agent open-call task book (six tasks / three positionings / five functions / three areas two wings) | Vision and Goals, Consultation of Five Urban Scientists, AI Innovation Ecosystem, this matrix |
+| Urban Design Measures (building layout / character / public space / features) | Blue-Green Network Public Space and Urban Character, Detailed Design of Key Areas chapters |
+| Regulatory Detailed Planning Measures (separate known controls from design suggestions) | Land Use, Building Scale and Retain-Renovate-Demolish chapter ("pending official data" stance) |
+| Land-Sea Use Classification Guide (unified land-use classification) | Land-use zoning (six classes 0802/0804/05/0701/1401/0806) |
+| Generative-AI Interim Measures (Articles 2/14/15/17 official interpretations) | Risk, Copyright, and Compliance chapter (AI-scenario compliance boundary) |
+| Barrier-Free Environment Law, Article 39 | AI+ Scenarios chapter (human channels on ten cards), public-space component library |
+| Elderly smart-technology policy (traditional and smart services in parallel) | Elder-friendly AI life station scenario card (background reference) |
 
 ![The sublinear→superlinear transmission map](assets/figures/transmission-map.en.png)
 
