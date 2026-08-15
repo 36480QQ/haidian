@@ -292,6 +292,18 @@
       "why_en": "Pointing E90's question at the prose turned up exactly this one, and this one is an instruction **for someone else to carry out**: the row exists because the field's qualitative 「noise nuisance」 cannot determine exceedance, and 「use the national standard value」 with no standard named cannot either. The package names law, article and a resolving tag everywhere else."
     },
     {
+      "id": "M47",
+      "gate": "calendar_parity_qa.py",
+      "target": "visual/assets/year_explorer.js",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把页面脚本里季度点的周期由三个月改成四个月，Python 一侧不动。",
+      "what_en": "Change the quarterly cadence in the page script from three months to four, leaving the Python side alone.",
+      "why_zh": "**这块画布邀请读者去反驳一张图纸，那么它算的必须是同一张图纸的模型。** 页面照样能跑，每根柱子看上去都合理，读者却在另一个模型里探索——更糟的是，他真找到一个「更优」排布时，找到的是玩具里的缺陷，而本方案会把这归给读者。只回放预存答案的页面证明不了任何事，第二次实现的全部价值就在于它必须与第一次一致。",
+      "why_en": "**The canvas invites a reader to disagree with a sheet, so it has to be computing the sheet's model.** The page still runs, every bar still looks plausible, and the reader is exploring something else — worse, when they find an arrangement that beats the published one they have found a defect in the toy, and this proposal would have handed them the credit. A page that only replays a stored answer proves nothing; the whole value of a second implementation is that it has to agree with the first."
+    },
+    {
       "id": "M46",
       "gate": "gate_count_qa.py",
       "target": "proposal.md",
@@ -559,11 +571,12 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 46,
+  "caught": 47,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
     "assumption_refs_qa.py",
+    "calendar_parity_qa.py",
     "census_claims_qa.py",
     "cjk_leak_qa.py",
     "claim_audit_qa.py",
@@ -625,6 +638,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 29 道闸门，其中 25 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 29 gates, 25 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 30 道闸门，其中 26 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 30 gates, 26 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
