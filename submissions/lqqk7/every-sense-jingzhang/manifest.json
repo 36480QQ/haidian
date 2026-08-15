@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.7 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.8 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8bf6a58dc877a55cf4ba654990c4d0a89e31310c2a50032c7d92b4d9edfd9454"
+      "sha256": "772bc3653d17c9cd4ccc5b3fdc7a2179d7dfd99ca6346f93e8ad98ae3ef9fe5e"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "73091d4f168e0b9f6944277a11fb42f8f6271db29f144693d3d56d88507c7b2c"
+      "sha256": "fb565dc0540a0796424bb691bb6e4c5052c96ea0ca77146c7b180cb54cd4d480"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4bb58edeb86e3af9a6ea173fd3ded7ae1ea6bae9f5dabe2c9f5c5cc28153d7ce"
+      "sha256": "5bdc8a17ab9ba182ebb2b6ce6b2a9cfbb2337cef975796b000e828787983eea9"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c62d909e3111ebee01379f339116721d140bbb276b3eb5f3026562d8dd91a0c8"
+      "sha256": "491914d7fe9297e358f68033dfc3e2f4b7a57d513ce4806b9a766913a5900235"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "45557edad03063bf3778ec9d79efbca212a652f123e1bec0b5a9bdec19d0c8a9"
+      "sha256": "42ca8c4bd5928608c85a801211fcb83549f2340559fd3395378d870bbbbcd1ae"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -121,14 +121,14 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "f0603b5fc203853adcdbbbff172fd6b42e06b2b712d8f1e528eff163a38f2a2a"
+      "sha256": "c09a063ed6e0454ae0024a52cbbe20f051e9d695b78f88b57378344eca0c1191"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "38a21baab2a03731d06999e48dc1951302bcc4abb5eaf36638cee39633ee3707"
+      "sha256": "2c113a5da081741dd310d716246c589d157a513a33819fd7c73c6d16cb969aa2"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -149,7 +149,24 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "90cb0a64e5fc2bdb95d2a9b80504e32fd57be0fb3cd81b9c9954a3c3f6b20fad"
+      "sha256": "666ee47ee30992943adc6d326531b4c0af101a8b9626bb3e7e43507913fd6e79"
+    },
+    {
+      "path": "assets/figures/dual-state-plan.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "双态平面图版：同一张平面，两种状态，差异只在可撤除叠层",
+      "sha256": "f847f3b4079880cc3d475964c9cf01608dbc7c823bf66fc305721e8dc0bc0565",
+      "title_en": "Dual-state plan plate: one plan, two states, the difference only in the removable overlay"
+    },
+    {
+      "path": "assets/figures/dual-state-plan.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "920f2976251856a1197a16a27c52d5175dd7ee202b4d4a32507784c018416203",
+      "translation_of": "assets/figures/dual-state-plan.png"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -218,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "30a3f3f20232b2ea4f418b9a814a8a026389318dc864ddd957c303c90134dd56"
+      "sha256": "e29df7ccdbceb24312d18a76e063e0b0abbee430c0d55ffd4efbbeb4b10a03b6"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c74d942e8f46774a4dc44d1a37b348224e487c740cca5d84535d7db09f427a3c"
+      "sha256": "180015f2052628790217265d8eeb04cfbde29a44dac69a26013aa9892111c35e"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -259,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c0446e6221e6b0b495bfa74fe21b3a73da4a99ea90c1a0935b1d403be50c466b"
+      "sha256": "90775b26d06cb4ccc7686fe2b04fd2baa245826e1322d06a8fb73af8ad7cb570"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -267,7 +284,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "172f8e412246015d9b8c768adc82d65cbd392ac690b4a7588c98ae52b05f6066"
+      "sha256": "549d58777c55f006f3f99cf2183edd6d873ac0a8ae817173c4ef3724f6cb5256"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -389,14 +406,14 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "6ffa4b7ecb36d112fa8b7f65ce12ad2405c59fab3bf84819c13369d294e66c41"
+      "sha256": "b1b9bea9fc1d6384e3c606008ac10ae31a7a8d0f880a3d7a198097c7b5af5191"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "d4f00bd2b5ce7f5082fc6c50777e0363362f194b908d47b173c1ccafe77fad2e"
+      "sha256": "815063f74cdb8519938773a0eb6ba8f7d1785621aafa5e6cd729a9c98277b50d"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.en.png",
@@ -404,7 +421,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen-audit.png",
-      "sha256": "fcde3d645018dd821c10b608166fcaaecee02e01a14f2564519c1ae0a1ffa300"
+      "sha256": "b9ff4462ddd80e7bb6c4f718a99e776e973d1d3688c2172c12624a748f8c0079"
     },
     {
       "path": "assets/figures/scene-dual-state.webp",
@@ -492,7 +509,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "cf764aabd792380950979a1a82aa62ef6bc30f5bfe4f0fe76dcb8f771f7cebf8"
+      "sha256": "52fac6365153bef66bb607b77456e92e29d0cbad31095f88afded101dc4d4b6c"
     },
     {
       "path": "assets/media/cover.webp",
@@ -633,7 +650,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "e42180eef16ce41cc12e8e6f588cbb750ff829685874d513621b0c177a52a10f"
+      "sha256": "224056c4100188900c43fb6f265ead00b46fa185b1ea6e3139fa6cb5f03a30ef"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -670,6 +687,15 @@
       "title_zh": "SEB 桌面配对推演校验器(方法学演示)",
       "title_en": "SEB tabletop pairing validator (methodology demonstration)",
       "sha256": "e1f0c89cb6c976757476bb6036d2e10cee4e9cffee1f28a387ba62f752785fc8"
+    },
+    {
+      "path": "visual/assets/spatial-audit-readings.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "空间审计型读数六项：定义、方法与责任方（零数值，JZ-01 开工当天可产首批数字）",
+      "title_en": "Six spatial audit readings: definitions, methods and owners (zero values; first numbers on day one of JZ-01)",
+      "sha256": "d59574a165a7fae21d9dfc79f6d5866f1e56cd75075efb73a29e2570cf9fdf12"
     },
     {
       "path": "visual/assets/seb-tabletop-fixtures.json",

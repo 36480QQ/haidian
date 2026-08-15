@@ -35,7 +35,7 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 116 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 119 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
