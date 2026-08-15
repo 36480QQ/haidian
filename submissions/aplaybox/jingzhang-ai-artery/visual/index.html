@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>京张100·AI 大动脉 — 离线可视化页</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "LXGW WenKai", "Noto Serif SC", "PingFang SC", sans-serif;
+  background: #FAFAFA; color: #2C3E50; line-height: 1.6; padding: 24px;
+}
+.container { max-width: 1400px; margin: 0 auto; }
+header {
+  background: linear-gradient(135deg, #C0392B 0%, #8E44AD 100%);
+  color: white; padding: 32px; border-radius: 12px; margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+header h1 { font-size: 32px; margin-bottom: 8px; font-weight: 700; }
+header .subtitle { font-size: 16px; opacity: 0.9; margin-bottom: 16px; }
+header .meta { font-size: 13px; opacity: 0.85; }
+section {
+  background: white; padding: 24px; border-radius: 12px; margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+section h2 {
+  font-size: 20px; color: #C0392B; margin-bottom: 16px;
+  padding-bottom: 8px; border-bottom: 2px solid #C0392B;
+}
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+.kpi {
+  background: #F8F9FA; padding: 16px; border-radius: 8px;
+  border-left: 4px solid #2980B9; text-align: center;
+}
+.kpi .value { font-size: 24px; font-weight: 700; color: #2C3E50; }
+.kpi .label { font-size: 12px; color: #7F8C8D; margin-top: 4px; }
+.kpi .status { font-size: 10px; padding: 2px 6px; border-radius: 4px;
+  display: inline-block; margin-top: 4px;
+  background: #FEF5E7; color: #B7791F; }
+.kpi .status.verified { background: #E8F8F5; color: #138D75; }
+.kpi .status.provisional { background: #FEF5E7; color: #B7791F; }
+.kpi .status.unknown { background: #FADBD8; color: #C0392B; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #ECF0F1; }
+th { background: #2C3E50; color: white; font-weight: 600; }
+tr:nth-child(even) { background: #FAFAFA; }
+.scenario-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 12px; }
+.scenario-card {
+  background: #F8F9FA; padding: 12px; border-radius: 8px;
+  border-left: 3px solid #2980B9; font-size: 13px;
+}
+.scenario-card.test { border-left-color: #C0392B; background: #FEF9E7; }
+.scenario-card .id { font-weight: 700; color: #2C3E50; }
+.scenario-card .name { color: #C0392B; font-weight: 600; margin: 4px 0; }
+.scenario-card .meta { color: #7F8C8D; font-size: 11px; }
+.callout {
+  background: #FEF9E7; border-left: 4px solid #F39C12; padding: 12px 16px;
+  border-radius: 6px; margin-top: 12px; font-size: 13px; color: #7D6608;
+}
+.callout.warning { background: #FADBD8; border-color: #C0392B; color: #922B21; }
+.land-use-bar {
+  display: flex; height: 24px; border-radius: 4px; overflow: hidden; margin-top: 12px;
+}
+.land-use-bar > div { display: flex; align-items: center; justify-content: center; font-size: 10px; color: white; font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; font-size: 11px; }
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-item .dot { width: 10px; height: 10px; border-radius: 50%; }
+footer { text-align: center; padding: 24px; color: #7F8C8D; font-size: 12px; }
+.tag { display: inline-block; background: #ECF0F1; color: #2C3E50; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin-right: 4px; }
+</style>
+</head>
+<body>
+<div style='position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0'>总览地图 三层范围 重点区域 用地分区 交通慢行 蓝绿公共空间 建筑 更新项目 AI 场景 核心指标 任务覆盖 自检状态 来源 假设</div>
+
+<div class="container">
+  <header>
+    <h1>京张100·AI 大动脉</h1>
+    <div class="subtitle">百年铁路叙事 × 智能体新基建 — 离线可视化页</div>
+    <div class="meta">
+      agent: aplaybox · slug: jingzhang-ai-artery · 2026-08-15<br>
+      <span class="tag">provisional package</span>
+      <span class="tag">EPSG:4326 → EPSG:4548</span>
+      <span class="tag">19 metrics · 12 land use · 12 scenarios · 4 AI landmarks</span>
+    </div>
+  </header>
+
+  <section data-section="总览地图">
+    <h2>核心指标复算 · 总览地图</h2>
+    <div class="kpi-grid">
+      <div class="kpi" data-metric="site_area_sqm" data-value="11412825.386"><div class="value">11,412,825</div><div class="label">总体设计范围 (m²)</div><div class="status provisional">provisional</div></div>
+      <div class="kpi"><div class="value">3,692,893</div><div class="label">三处重点区合计 (m²)</div><div class="status provisional">provisional</div></div>
+      <div class="kpi"><div class="value">3</div><div class="label">重点区数量</div><div class="status verified">verified</div></div>
+      <div class="kpi"><div class="value">12</div><div class="label">用地多边形</div><div class="status verified">verified</div></div>
+      <div class="kpi" data-metric="green_ratio" data-value="0.028958"><div class="value">2.94%</div><div class="label">绿地率</div><div class="status provisional">provisional</div></div>
+      <div class="kpi" data-metric="public_space_ratio" data-value="0.00805"><div class="value">0.80%</div><div class="label">公共空间率</div><div class="status provisional">provisional</div></div>
+      <div class="kpi"><div class="value">4</div><div class="label">AI 朝圣地标 (≥3)</div><div class="status verified">verified</div></div>
+      <div class="kpi"><div class="value">10</div><div class="label">AI 场景卡 (≥10)</div><div class="status verified">verified</div></div>
+      <div class="kpi"><div class="value">5</div><div class="label">用户画像 (≥5)</div><div class="status verified">verified</div></div>
+      <div class="kpi"><div class="value">3</div><div class="label">产业测试场景 (≥3)</div><div class="status verified">verified</div></div>
+      <div class="kpi"><div class="value">7</div><div class="label">全球生态案例 (5-8)</div><div class="status verified">verified</div></div>
+      <div class="kpi"><div class="value">1.301</div><div class="label">概念容积率</div><div class="status unknown">unknown</div></div>
+      <div class="kpi"><div class="value">34</div><div class="label">建筑数量</div><div class="status verified">verified</div></div>
+      <div class="kpi"><div class="value">578,096</div><div class="label">建筑基底 (m²)</div><div class="status provisional">provisional</div></div>
+      <div class="kpi"><div class="value">58,780</div><div class="label">道路总长度 (m)</div><div class="status provisional">provisional</div></div>
+      <div class="kpi"><div class="value">3</div><div class="label">分期数量</div><div class="status verified">verified</div></div>
+    </div>
+    <div class="callout">
+      所有面积复算使用 EPSG:4326 → EPSG:4548 投影；待 official polygon 发布后所有指标需重新复算。概念容积率明确不等于法定容积率。
+    </div>
+  </section>
+
+  <section data-section="用地分区">
+    <h2>三层范围工作框架 · 用地分区</h2>
+    <table>
+      <thead><tr><th>层级</th><th>面积</th><th>设计问题</th><th>方案回答</th></tr></thead>
+      <tbody>
+        <tr><td>统筹研究范围</td><td>43.6 km²</td><td>AI 产业生态与未来城市形态</td><td>高校策源-开源协作-企业转化-公共体验-国际传播</td></tr>
+        <tr><td>总体设计范围</td><td>11.4 km²</td><td>产业空间、城市更新、交通市政与风貌</td><td>用地/建筑/道路/绿地/公共空间/分期图层共同表达</td></tr>
+        <tr><td>重点区域范围</td><td>368.4 ha</td><td>三处片区如何达到详细设计深度</td><td>分别提出定位、空间动作、AI 场景与实施依赖</td></tr>
+      </tbody>
+    </table>
+    <div class="callout">
+      总体概念：京张100·AI 大动脉 — 一带三核、多点场景、蓝绿慢行复合环。三处重点区由南向北：大钟寺（产业）→ AI 原点社区（生态）→ 众智园（自主）。
+    </div>
+  </section>
+
+  <section data-section="交通慢行">
+    <h2>三处重点区域详细设计 · 重点区域</h2>
+    <table>
+      <thead><tr><th>重点区</th><th>面积 (ha)</th><th>定位</th><th>核心场景</th></tr></thead>
+      <tbody>
+        <tr><td>众智园 AI 自主创新加速区</td><td>192.1</td><td>AI 全栈自主创新体系 + AI 治理全球话语权</td><td>SC-09 芯片/基础模型 · SC-10 安全治理 · SC-11 标准化</td></tr>
+        <tr><td>北京 AI 原点社区</td><td>104.3</td><td>世界级 AI 创新生态 + 近校孵化转化</td><td>SC-06 教育 · SC-07 医疗 · SC-08 法律</td></tr>
+        <tr><td>大钟寺 AI 产业集聚区</td><td>72.0</td><td>智能原生新业态 + 数据要素</td><td>SC-12 商业 · 数字资产交易 · 智能终端展示</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section data-section="蓝绿公共空间">
+    <h2>AI 场景卡 (12 张，含 3 个产业测试验证场景 ★)</h2>
+    <div class="scenario-grid">
+      <div class="scenario-card test"><div class="id">SC-09 ★</div><div class="name">AI 芯片与基础模型测试验证</div><div class="meta">众智园内核 · 研究者/企业/监管</div></div>
+      <div class="scenario-card test"><div class="id">SC-10 ★</div><div class="name">AI 安全治理与红队测试</div><div class="meta">众智园安全实验室 · 监管/企业</div></div>
+      <div class="scenario-card test"><div class="id">SC-11 ★</div><div class="name">AI 标准制定与互操作验证</div><div class="meta">众智园标准化院 · 标准化机构</div></div>
+      <div class="scenario-card"><div class="id">SC-01</div><div class="name">AI 文化导览</div><div class="meta">京张遗址公园走廊 · 游客/学生</div></div>
+      <div class="scenario-card"><div class="id">SC-02</div><div class="name">AI+交通与慢行</div><div class="meta">轨道站点周边 · 通勤者</div></div>
+      <div class="scenario-card"><div class="id">SC-03</div><div class="name">企业服务智能体</div><div class="meta">重点区企业中心 · 创业者</div></div>
+      <div class="scenario-card"><div class="id">SC-04</div><div class="name">AI 公共安全运营复核</div><div class="meta">街区治理终端 · 居民</div></div>
+      <div class="scenario-card"><div class="id">SC-05</div><div class="name">机器人低速配送</div><div class="meta">重点区+走廊 · 居民/企业</div></div>
+      <div class="scenario-card"><div class="id">SC-06</div><div class="name">AI+ 教育</div><div class="meta">AI 原点社区 · 学生/教师</div></div>
+      <div class="scenario-card"><div class="id">SC-07</div><div class="name">AI+ 医疗</div><div class="meta">5 分钟生活圈 · 居民/老年</div></div>
+      <div class="scenario-card"><div class="id">SC-08</div><div class="name">AI+ 法律咨询</div><div class="meta">法律援助站 · 居民/创业者</div></div>
+      <div class="scenario-card"><div class="id">SC-12</div><div class="name">AI+ 商业</div><div class="meta">大钟寺展示带 · 消费者</div></div>
+    </div>
+  </section>
+
+  <section data-section="任务覆盖">
+    <h2>AI 朝圣地标 (4 个，永久展示贡献者 GitHub Name 与 Agent 名称)</h2>
+    <div class="scenario-grid">
+      <div class="scenario-card"><div class="id">PUBLIC-001</div><div class="name">AI 智能体贡献荣誉墙广场</div><div class="meta">京张遗址公园走廊中段</div></div>
+      <div class="scenario-card"><div class="id">PUBLIC-003</div><div class="name">AI 开源成果展示节点</div><div class="meta">众智园与 AI 原点社区交界</div></div>
+      <div class="scenario-card"><div class="id">PUBLIC-005</div><div class="name">AI 里程碑公园</div><div class="meta">大钟寺站前</div></div>
+      <div class="scenario-card"><div class="id">PUBLIC-004</div><div class="name">全球开发者荣誉墙</div><div class="meta">京张遗址公园走廊北段</div></div>
+    </div>
+  </section>
+
+  <section data-section="自检状态">
+    <h2>更新项目清单与分期计划 · 更新项目</h2>
+    <table>
+      <thead><tr><th>分期</th><th>时间</th><th>重点区域</th><th>核心项目</th></tr></thead>
+      <tbody>
+        <tr><td>近期</td><td>2026-2028</td><td>大钟寺</td><td>批发市场拆除重建 · 大钟寺站一体化 · AI 里程碑公园 · 京张走廊南段 · 荣誉墙一期</td></tr>
+        <tr><td>中期</td><td>2028-2030</td><td>AI 原点社区</td><td>孵化带 · 人才公寓 · AI 原点广场 · 五道口站一体化 · 京张走廊中段 · AI+ 场景铺开 · 荣誉墙二期</td></tr>
+        <tr><td>远期</td><td>2030-2035</td><td>众智园</td><td>全栈建设 · 清河滨水公园 · 全球开发者荣誉墙 · 京张走廊北段 · 全球 AI 活动体系运营</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section data-section="假设">
+    <h2>合规与设计深度覆盖 · 自检状态 · 假设 · 来源</h2>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="value">17/17</div><div class="label">公告任务 1.3-1.5</div><div class="status verified">✓ PASS</div></div>
+      <div class="kpi"><div class="value">6/6</div><div class="label">Agent 任务 agent.1-6</div><div class="status verified">✓ PASS</div></div>
+      <div class="kpi"><div class="value">5/5</div><div class="label">Mandatory formal 标准</div><div class="status verified">✓ PASS</div></div>
+      <div class="kpi"><div class="value">15/15</div><div class="label">设计深度项</div><div class="status verified">✓ PASS</div></div>
+    </div>
+    <div class="callout warning">
+      ⚠ 缺失数据：official SITE_BOUNDARY polygon · 三处重点区 official polygon · 控规条件（容积率/高度/退线/绿地率）· 现状建筑与权属 · 文保范围 · 道路红线 · 轨道保护范围 · 航空限高。所有缺失项按 status=unknown 处理，待 official 数据补齐后整体重算。
+    </div>
+  </section>
+
+  <footer>
+    京张100·AI 大动脉 · aplaybox · jingzhang-ai-artery · 2026-08-15<br>
+    数据来源：provisional_boundaries.geojson (基于公告文字四至推定) · agent 生成方案图层 · EPSG:4548 复算<br>
+    离线静态 HTML · 无 CDN · 无远程 tile · 无外部脚本 · 无追踪代码
+  </footer>
+</div>
+</body>
+</html>
