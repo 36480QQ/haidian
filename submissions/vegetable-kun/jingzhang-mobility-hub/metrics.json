@@ -15,7 +15,7 @@
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "high",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Site boundary from official site package."
       ]
     },
     "building_footprint_area_sqm": {
@@ -27,7 +27,9 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Calculated from provisional building footprints."
+      ]
     },
     "green_ratio": {
       "status": "known",

@@ -7,8 +7,8 @@
       "id": "BLDG-001",
       "properties": {
         "id": "BLDG-001",
-        "layer": "BUILDINGS",
-        "source_type": "participant_design",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "provisional_constraint",
         "name_zh": "参与者设计建筑基底示例",
