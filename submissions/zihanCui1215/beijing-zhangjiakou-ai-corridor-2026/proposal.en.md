@@ -47,11 +47,9 @@ Let this railway heritage, carrying Zhan Tianyou's wisdom and the spirit of nati
 
 | Data Type | Source | Time | Purpose |
 |-----------|--------|------|---------|
-| Official boundary geometry | open-city-ai/haidian repo | 2026 | Spatial boundary definition |
-| Current land use data | Beijing Planning and Natural Resources Committee | 2025 | Current status analysis |
-| Population data | National Bureau of Statistics 7th Census | 2020 | Population capacity calculation |
-| Transportation data | Beijing Transportation Commission | 2025 | Transportation system planning |
-| Industry data | Haidian District Statistics Bureau | 2025 | Industry layout optimization |
+| Official boundary geometry | open-city-ai/haidian repo | 2026 | Spatial boundary definition (provisional) |
+| Land use / buildings / facilities | Generated & recomputed by this proposal (geopackage tools, EPSG:4548) | 2026 | All quantitative claims |
+| Population & industry scenarios | Not provided as verifiable datasets in the package | - | Related analysis uses only public common knowledge and scenario assumptions (assumptions.json); no specific value assertions |
 
 ---
 
@@ -165,17 +163,17 @@ Adopting "three-core drive, two-wing support, one-axis connection" spatial struc
 
 | Code | Land Use (2023 MNR Classification) | Area (ha) | Share (%) | Location (N→S) |
 |---------|---------|-----------|----------|-------------|
-| 0802 | Research (R&D, Zhongzhiyuan) | 228.3 | 20.0 | North, main body of Zhongzhiyuan Area |
-| 16 | Strategic Reserve (White Land) | 57.1 | 5.0 | Lower north |
-| 0701 | Urban Residential | 148.4 | 13.0 | Upper-mid |
-| 0802 | Research (AI Origin Community) | 114.1 | 10.0 | Middle, main body of AI Origin Community |
-| 1401 | Park Green Space (central) | 148.4 | 13.0 | Central green belt |
-| 0803 | Cultural | 57.1 | 5.0 | Mid-south |
-| 0804 | Education | 57.1 | 5.0 | Mid-south |
-| 0805 | Sports | 34.2 | 3.0 | Mid-south |
-| 05 | Commercial & Business (central) | 57.1 | 5.0 | South transition |
-| 1207 | Road | 112.2 | 9.8 | Southern band |
-| 05 | Commercial & Business (south, Dazhongsi) | 137.0 | 12.0 | South, main body of Dazhongsi Cluster |
+| 0802 | Research (Zhongzhiyuan, north) | 208.1 | 18.2 | North, main body of Zhongzhiyuan Area |
+| 16 | Strategic Reserve (White Land) | 51.8 | 4.5 | Lower north |
+| 0701 | Urban Residential | 135.5 | 11.9 | Upper-mid |
+| 0802 | Research (AI Origin Community) | 106.9 | 9.4 | Middle, main body of AI Origin Community |
+| 1401 | Park Green Space (central) | 153.7 | 13.5 | Central green belt |
+| 0803 | Cultural | 62.3 | 5.5 | Mid-south |
+| 0804 | Education | 63.2 | 5.5 | Mid-south |
+| 0805 | Sports | 38.0 | 3.3 | Mid-south |
+| 05 | Commercial & Business (central) | 63.0 | 5.5 | South transition |
+| 1207 | Road | 112.1 | 9.8 | Southern band |
+| 05 | Commercial & Business (south, Dazhongsi band) | 146.4 | 12.8 | South, main body of Dazhongsi Cluster |
 | **Total** | - | **1,141.3** | **100.0** | - |
 
 *Note: Areas recomputed band-by-band from land_use.geojson in EPSG:4548; bands tile the overall design area seamlessly (gap=0), consistent with [metric:site_area_sqm].*
@@ -191,10 +189,12 @@ The Zhongzhiyuan AI Self-Innovation Acceleration Area (renamed from "Zhongguancu
 
 **Functional Layout**:
 
-1. Large Scientific Facilities Cluster (Area: 1.2 km²)
-2. National Laboratory Park (Area: 1.5 km²)
-3. Innovation Enterprise Headquarters Base (Area: 2.0 km²)
-4. Venture Capital Service Zone (Area: 0.8 km²)
+1. Large Scientific Facilities Cluster (approx. 40 ha, conceptual allocation)
+2. National Laboratory Park (approx. 60 ha)
+3. Innovation Enterprise Headquarters Base (approx. 55 ha)
+4. Venture Capital Service Zone (approx. 35 ha)
+
+*Sub-zone total approx. 190 ha, consistent with the key area recomputed area of 1.93 km² (193 ha); allocations are conceptual, not statutory breakdowns.*
 
 **Key Technical Metrics**:
 
@@ -202,8 +202,8 @@ The Zhongzhiyuan AI Self-Innovation Acceleration Area (renamed from "Zhongguancu
 |-----------|-------|
 | Total land area (recomputed) | 1.93 km² |
 | Total building area (recomputed) | 3.64 million m² |
-| Average FAR | 3.5 |
-| Employment population capacity | 60-80 thousand people |
+| Average FAR (recomputed) | 1.89 |
+| Employment population capacity (scenario) | 30-40 thousand people |
 | High-tech enterprise proportion | ≥70% |
 
 ### 4.2 Beijing AI Origin Community
@@ -236,10 +236,12 @@ The Dazhongsi AI Industry Cluster is the highland for AI technology to move towa
 
 **Functional Layout**:
 
-1. AI+Healthcare Industrial Park (Area: 1.5 km²)
-2. AI+Education Innovation Base (Area: 1.2 km²)
-3. AI+Commerce Experience Zone (Area: 1.0 km²)
-4. Industry Test Verification Platform (Area: 0.8 km²)
+1. AI+Healthcare Industrial Park (approx. 12 ha, conceptual allocation)
+2. AI+Education Innovation Base (approx. 25 ha)
+3. AI+Commerce Experience Zone (approx. 20 ha)
+4. Industry Test Verification Platform (approx. 15 ha)
+
+*Sub-zone total approx. 72 ha, consistent with the key area recomputed area of 0.72 km²; allocations are conceptual.*
 
 **Key Technical Metrics**:
 
@@ -453,7 +455,7 @@ Investment: ~20 billion yuan
 ### 8.2 Policy Package Design
 
 **Land Policy**:
-- Innovative industry land (M0) policy: FAR ceiling raised to 4.0, land grant fee discount 30%
+- Innovative industry land policy suggestion: study the feasibility of referencing M0-type policies for innovation districts (intensity and pricing instruments follow current regulations; no specific values set here)
 - Flexible land supply: Rent-first-then-transfer, flexible term grants
 
 **Talent Policy**:
@@ -462,7 +464,7 @@ Investment: ~20 billion yuan
 - Education priority: Priority admission for talent children
 
 **Industry Policy**:
-- Tax incentives: AI enterprise income tax reduced to 15%
+- Tax policy suggestion: pursue applicable current national S&T tax incentives (e.g., high-tech enterprise preferential rates, R&D expense super-deduction), subject to authority approval
 - R&D subsidies: Up to 50 million yuan for major AI R&D projects
 - Space subsidies: 50% rent subsidy for first 3 years
 
@@ -514,8 +516,9 @@ Investment: ~20 billion yuan
 
 | Indicator Name | Value | Unit | Note |
 |----------------|-------|------|------|
-| AI industry land area | 1,320 | ha | R&D + Office + Education |
-| AI industry land proportion | 30.3 | % | Meeting innovation belt positioning |
+| Research land (0802, two bands total) | 315.0 | ha | recomputed from land_use.geojson (EPSG:4548, two bands) |
+| Commercial service land (05, incl. AI industry services) | 209.4 | ha | recomputed from land_use.geojson (two bands) |
+| Combined proportion | 46.0 | % | (27.6% + 18.4%) supporting the innovation-belt positioning |
 | Expected AI companies | ≥500 | companies | 2035 target |
 | High-tech company proportion | ≥60 | % | Meeting Haidian policy |
 
@@ -523,13 +526,10 @@ Investment: ~20 billion yuan
 
 | Requirement | Planned Value | Compliance | Evidence Link |
 |-------------|---------------|------------|---------------|
-| Green rate ≥35% (scenario target) | 44.4% recomputed | consistent, pending professional review | metrics.json#green_ratio |
-| FAR control (core zone 2.5-4.0) | Core zone average 3.5 | PASS | metrics.json#/far_core_zone |
-| FAR control (general zone 1.5-2.5) | General zone average 2.2 | PASS | metrics.json#/far_general_zone |
-| Building density ≤40% | Average 35% | PASS | metrics.json#/building_density |
-| Education facility 500m coverage | 100% coverage | PASS | metrics.json#/education_coverage |
-| Medical facility 1000m coverage | 100% coverage | PASS | metrics.json#/medical_coverage |
-| Park green space 500m coverage | 100% coverage | PASS | metrics.json#/park_coverage |
+| Green rate ≥35% (scenario target) | 44.4% recomputed (provisional boundary) | reference value; to be recalculated upon official boundary | metrics.json#green_ratio |
+| Building density ≤40% (reference threshold) | 8.7% (recomputed, conceptual massing) | reference value, not a statutory check | metrics.json#building_density |
+| Key-area FAR (recomputed) | Zhongzhiyuan 1.89 / AI Origin 0.63 / Dazhongsi 2.30 | reference values from conceptual massing | metrics.json |
+| Facility coverage targets | education 500m / medical 1000m / park 500m | scenario goals pending official boundary & capacity verification (see assumptions.json) | - |
 
 ---
 
@@ -618,9 +618,13 @@ May a hundred years later, when people walk in the Beijing-Zhangjiakou Railway H
 
 ## References
 
-1. Beijing Master Plan (2016-2035)
-2. Haidian District Plan
-3. Jingzhang Railway Heritage Park Master Plan
-4. GB 50180-2018, GB 50220-95, GB 50420-2007
-5. 2023 MNR Land Use Classification
-6. open-city-ai/haidian repository
+1. Overall design scope provisional boundary (organizer, provisional — generation/visualization/self-check only) [source:S001]
+2. Three key-area provisional boundaries (organizer, provisional) [source:S002]
+3. Open call announcement (three-level scope & key area figures) [source:S003]
+4. Beijing Master Plan (2016-2035) (public policy document) [source:S004]
+5. Haidian District 14th Five-Year Plan (public policy document) [source:S005]
+6. Zhongguancun National Innovation Demonstration Zone (public common knowledge) [source:S006]
+7. GB 50180-2018 / GB 50220-95 / GB 50420-2007 [source:S007] [source:S008] [source:S009]
+8. 2023 MNR Land Use Classification Guide [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+9. Global AI innovation district case comparison (8 cases with links) [source:S010]
+10. Noto Sans SC font license (SIL OFL 1.1) [source:S011]
