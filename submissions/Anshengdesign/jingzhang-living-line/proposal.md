@@ -1,12 +1,12 @@
 ---
-title: "涌现之带 THE EMERGENT BELT——京张 Hyper Line：把一条被切了七刀的百年之线，一针一针缝回去"
+title: "涌现之带 THE EMERGENT BELT——京张 Hyper Line：百年京张AI创新带城市设计"
 author_github: "Anshengdesign"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "京张遗址公园一期已开放，但这条九公里的线被七条干道切成八段。本方案用城市科学家的尺子给这条带做了一次体检：形态健康（分形维1.746）、只是断了。全部设计只做一件事——把这七刀一针一针缝回去，缝完以后每位居民25分钟圈里能多够到52个就业岗位，三处重点区从"彼此够不着"变回一条能走的线。"
+summary: "以城市科学范式设计百年京张AI创新带：五把尺子（分形/句法/空间交互/标度律/元胞涌现）全部本地实算，诊断出这条带形态健康（分形维1.746、健康因子H=1.556）而连接被切；方案以涌现逻辑挪开挡住生长的约束，三模型独立验证其有效性，并以可计算、可进化、为人服务的城市操作系统收束。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["ai-traffic-walkability"]
 iteration: "v0.6"
