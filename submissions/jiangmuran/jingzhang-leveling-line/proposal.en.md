@@ -1220,12 +1220,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-182 entries. By finder:
+183 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 133 | Found while working |
+| The author | 134 | Found while working |
 | This package's own gate | 11 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; [@](https://github.com/) on  |
 
@@ -1245,7 +1245,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Two copies drifted | 28 |
 | Shipped unseen | 19 |
 | Outlived the package | 15 |
-| Nothing fails it | 12 |
+| Nothing fails it | 13 |
 | Uncheckable | 11 |
 | A reference did not resolve | 8 |
 | Outlived its line | 7 |
