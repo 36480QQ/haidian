@@ -1,5 +1,20 @@
 # 方案迭代记录 / Changelog
 
+## v32.0 - 2026-08-15
+
+**Formal core visual metrics compliance / 三项 formal 核心视觉指标合规**
+
+- 规则层变化：任务书新增 `formal_visual_metrics_contract`，formal-submission-guide 第 9 节、SKILL.md 与 `visual_review.py` 同步收紧——`site_area_sqm`、`green_ratio`、`public_space_ratio` 必须是从投稿者提交的 site_boundary/green_space/public_space 几何可复算的 known 有限数值，并在 `visual/index.html` 以一致数值 `data-value` 声明，且必须保留 provisional 标记、来源、公式与**正式数据发布后的复算触发条件**。本轮对最新规则层重读并响应。
+- Rule-layer change: the taskbook gained a `formal_visual_metrics_contract`, and the formal-submission-guide section 9, SKILL.md and `visual_review.py` now require `site_area_sqm`, `green_ratio` and `public_space_ratio` to be known finite values recomputable from the submitted site_boundary/green_space/public_space geometry, declared with matching numeric `data-value`s in `visual/index.html`, and to retain their provisional role, sources, formula and an **official-data recalculation trigger**. This round re-reads and responds to the new rule layer.
+- 复算证据（pyproj EPSG:4326→4548 平面多边形面积）：site_area 11412825.38562 m²（记录值 11412825.385554，差 0.000066 m²）；green_ratio 0.126157（差 4.5e-7）；public_space_ratio 0.012831（差 -2.9e-8）；当前 `visual_review.py` 通过、0 问题。
+- Recomputation evidence (pyproj EPSG:4326→4548 planar polygon area): site_area 11412825.38562 m² (recorded 11412825.385554, delta 0.000066 m²); green_ratio 0.126157 (delta 4.5e-7); public_space_ratio 0.012831 (delta -2.9e-8); the current `visual_review.py` passes with 0 issues.
+- **冻结项修改说明（依据：规则层变化）**：`metrics.json` 自第 17 轮冻结后首次变更——仅给三项核心指标各增加一个 `recalculation_trigger` 字段，数值、公式、来源与 confidence 全部不变；旧哈希 `bbafe42b…` 只作为历史记录保留在 round15-baseline.json。这是任务书新契约要求的合规字段，不是主张、数据或机制升级。
+- **Frozen-item change note (basis: rule-layer change)**: `metrics.json` changes for the first time since its Round 17 freeze — only one `recalculation_trigger` field per core metric was added; values, formulas, sources and confidence are untouched; the old hash `bbafe42b…` stays only as history in round15-baseline.json. This is the compliance field the new taskbook contract requires, not a claim, data or mechanism upgrade.
+- 双语 visual 指标卡同步增加复算触发说明，数值 `data-value` 不变；无图面、PDF、HTML 结构或成熟度变化；geometry 九文件字节未变。
+- Bilingual visual metric cards gain the recalculation-trigger note with unchanged numeric `data-value`s; no figure, PDF, HTML-structure or maturity change; the nine geometry files keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths.
+
 ## v31.0 - 2026-08-15
 
 **Bilingual per-chapter evidence-marker parity / 双语逐章证据标记对齐**
