@@ -119,7 +119,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 184/178 bare numbers reported but not blocked, and one designed check (78 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 183/177 bare numbers reported but not blocked, and one designed check (78 candidates) not shipped"
     },
     {
       "check_id": "PKG_COMPUTED_VALUE_QA",
@@ -239,7 +239,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 455 identifiers across 471 distinct names, every one matching exactly one of 24 published families or a named document, and every family governing at least one, and 8 benchmarks whose digits agree with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 473 distinct names harvested from the package — 457 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -375,7 +375,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 182 条，按发现者：audit 25、external 8、external-reviewer 5、own-gate 11、self 133；最常见形状：check-measured-the-convenient-thing 37、two-copies-of-one-thing-drifted 28、deliverable-not-inspected-before-shipping 19、claim-outlived-the-package 15。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 9 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 182 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 184 条，按发现者：audit 25、external 8、external-reviewer 5、own-gate 11、self 135；最常见形状：check-measured-the-convenient-thing 37、two-copies-of-one-thing-drifted 28、deliverable-not-inspected-before-shipping 19、claim-outlived-the-package 15。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 9 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 184 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
