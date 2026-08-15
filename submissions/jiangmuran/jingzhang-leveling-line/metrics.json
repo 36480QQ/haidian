@@ -70,7 +70,9 @@
       },
       "metric_class": 1,
       "evidence_class": "provisional",
-      "confidence_is_about": "computation"
+      "confidence_is_about": "computation",
+      "not_official_control_note_zh": "**这不是法定绿地率。** 本项是本方案自己几何的复算：主脊两侧绿廊扣除建筑基底后与总体设计范围之比。主办方在 planning_limits.json 的 official_planning_controls 中把 `green_ratio` 登记为 missing 且为终期必需，本方案不代拟该管控值；两者同名而不同量，官方条件公布后以官方为准并整体重算。",
+      "not_official_control_note_en": "**This is not the statutory green ratio.** It is a recomputation of this proposal's own geometry: the corridor either side of the spine, less building footprints, over the overall design area. The organisers register `green_ratio` as a missing control required for final submission in official_planning_controls; this package does not draft that control value. Same name, different quantity, and the official one governs once published."
     },
     "public_space_ratio": {
       "status": "known",
@@ -105,19 +107,18 @@
       "source_files": [
         "brief/site-package/ranges/planning_limits.json"
       ],
-      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "formula": "official_control(floor_area_ratio)",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Approved FAR controls and official site boundary are not present in the public site package.",
       "assumption_ids": [
-        "A-CONTROLS-001",
-        "A-BOUNDARY-001"
+        "A-CONTROLS-001"
       ],
       "evidence_class": "official_context",
       "confidence_is_about": "reading",
       "metric_class": 2,
-      "reason_en": "Approved FAR controls and official site boundary are not present in the public site package.",
-      "reason_zh": "公开的场地资料包里既没有已批准的容积率控制指标，也没有官方场地边界。"
+      "reason": "Published by the organisers as missing and required for final submission; closed by: approved regulatory planning conditions or official design brief attachments.",
+      "reason_en": "Published by the organisers as missing and required for final submission; closed by: approved regulatory planning conditions or official design brief attachments.",
+      "reason_zh": "floor_area_ratio属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：approved regulatory planning conditions or official design brief attachments。"
     },
     "existing_residential_floor_area_sqm": {
       "status": "unknown",
@@ -601,7 +602,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 162,
+      "value": 163,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -733,6 +734,66 @@
       "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
+    },
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "max_building_height_m(approved regulatory planning conditions)",
+      "confidence": "unknown",
+      "assumptions": [],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "evidence_class": "official_context",
+      "confidence_is_about": "reading",
+      "metric_class": 2,
+      "reason": "Published by the organisers as missing and required for final submission; closed by: approved height controls, aviation/landscape/heritage constraints if applicable.",
+      "reason_en": "Published by the organisers as missing and required for final submission; closed by: approved height controls, aviation/landscape/heritage constraints if applicable.",
+      "reason_zh": "建筑高度属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：approved height controls, aviation/landscape/heritage constraints if applicable。"
+    },
+    "building_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "building_footprint_area_sqm / official_site_area_sqm (as fixed by approved regulatory planning conditions)",
+      "confidence": "unknown",
+      "assumptions": [],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "evidence_class": "official_context",
+      "confidence_is_about": "reading",
+      "metric_class": 2,
+      "reason": "Published by the organisers as missing and required for final submission; closed by: approved regulatory planning conditions.",
+      "reason_en": "Published by the organisers as missing and required for final submission; closed by: approved regulatory planning conditions.",
+      "reason_zh": "建筑密度属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：approved regulatory planning conditions。"
+    },
+    "setback_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "min_setback_m(road redline, building control line, fire and municipal constraints)",
+      "confidence": "unknown",
+      "assumptions": [],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "evidence_class": "official_context",
+      "confidence_is_about": "reading",
+      "metric_class": 2,
+      "reason": "Published by the organisers as missing and required for final submission; closed by: road redline, building control line, fire and municipal constraints.",
+      "reason_en": "Published by the organisers as missing and required for final submission; closed by: road redline, building control line, fire and municipal constraints.",
+      "reason_zh": "退线（含道路红线与建筑控制线）属法定控规审批范畴，主办方在 planning_limits.json 中已将其登记为 missing 且为终期必需；本方案不代拟，前置条件由主办方写明：road redline, building control line, fire and municipal constraints。"
     }
   }
 }

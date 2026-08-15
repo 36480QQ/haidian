@@ -14,7 +14,7 @@
   "background_only": 3,
   "provisional": 17,
   "self_measured": 14,
-  "official_context": 1,
+  "official_context": 4,
   "regulatory_baseline": 0
  },
  "metrics": {
@@ -383,6 +383,36 @@
    "how_to_raise": "官方 polygon 或官方重点区范围发布后重算，即可升为 official_context",
    "confidence": "medium",
    "confidence_is_about": "computation"
+  },
+  "building_height_m": {
+   "evidence_ceiling": "official_context",
+   "binding_inputs": [
+    "brief/site-package/ranges/planning_limits.json"
+   ],
+   "why": "组织方题面资料包",
+   "how_to_raise": "",
+   "confidence": "unknown",
+   "confidence_is_about": "reading"
+  },
+  "building_density": {
+   "evidence_ceiling": "official_context",
+   "binding_inputs": [
+    "brief/site-package/ranges/planning_limits.json"
+   ],
+   "why": "组织方题面资料包",
+   "how_to_raise": "",
+   "confidence": "unknown",
+   "confidence_is_about": "reading"
+  },
+  "setback_m": {
+   "evidence_ceiling": "official_context",
+   "binding_inputs": [
+    "brief/site-package/ranges/planning_limits.json"
+   ],
+   "why": "组织方题面资料包",
+   "how_to_raise": "",
+   "confidence": "unknown",
+   "confidence_is_about": "reading"
   }
  }
 }
