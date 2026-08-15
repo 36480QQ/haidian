@@ -143,7 +143,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 33 deliberate defects across 18 of 18 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 34 deliberate defects across 18 of 18 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
     },
     {
       "check_id": "PKG_MARKDOWN_STRUCTURE_QA",
@@ -159,7 +159,7 @@
       "severity": "info",
       "target": "compliance/standard/design_depth matrices",
       "source": "package-provided",
-      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 526 declared across three matrices, 526 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 17 class-1 metrics, every one recomputed by the shipped verifier"
+      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 526 declared across three matrices, 526 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 17 class-1 metrics, every one recomputed by the shipped verifier; 7 review dimensions mapped to 21 sections, every one resolving"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -215,7 +215,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 132 条，按发现者：audit 25、external-reviewer 4、own-gate 10、self 93；最常见形状：check-measured-the-convenient-thing 27、two-copies-of-one-thing-drifted 19、claim-outlived-the-package 13、deliverable-not-inspected-before-shipping 12。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 132 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 133 条，按发现者：audit 25、external-reviewer 4、own-gate 10、self 94；最常见形状：check-measured-the-convenient-thing 27、two-copies-of-one-thing-drifted 19、claim-outlived-the-package 13、deliverable-not-inspected-before-shipping 12。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 133 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -223,7 +223,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：33 处人为缺陷，覆盖 18 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 33 deliberate defects across 18 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：34 处人为缺陷，覆盖 18 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 34 deliberate defects across 18 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,

@@ -963,5 +963,75 @@
     "reviewer_sees_first_page_only": 0,
     "reviewer_cannot_open": 49,
     "note_zh": "评审模型整份收到九个文件，不含 `geometry/` 与 `visual/assets/`（见 `scripts/review_submission.py::build_review_input`）。本表逐条标出它能打开多少、打不开多少——**这不是免责，是让评审知道哪一行的证据它可以自己核，哪一行只能听我说**。数字由构建算出，管线若开始多送文件，它们会自己变。"
+  },
+  "rubric_coverage": {
+    "read_from": "scripts/review_submission.py @ upstream/main",
+    "scope_zh": "这是一张「哪一节回答了哪一个评审维度」的对照表，**不是对得分的主张**。维度清单由构建从组织方脚本现读，不是抄下来的；每个小节名都要能在 `proposal.md` 的标题里解析到，解析不到即构建失败。",
+    "scope_en": "A map from each published review dimension to the section that answers it, and not a claim about the score. The dimension list is read from the organisers' script on every build rather than copied, and every section named here must resolve against a heading in proposal.md or the build stops.",
+    "dimensions": [
+      {
+        "dimension_id": "brief_alignment",
+        "title_zh": "任务书相关性",
+        "report_sections": [
+          "三层范围工作框架",
+          "总体设计范围城市更新与控规深度城市设计",
+          "任务书逐条覆盖：`visual/assets/taskbook_coverage.json`"
+        ]
+      },
+      {
+        "dimension_id": "originality",
+        "title_zh": "原创性",
+        "report_sections": [
+          "闭合差机制的完整定义",
+          "第一幕：把仪器先用在这次征集自己身上"
+        ]
+      },
+      {
+        "dimension_id": "ai_planning_innovation",
+        "title_zh": "AI 与城市规划创新性",
+        "report_sections": [
+          "主战场一：低速机器人与自动驾驶接驳（agent.3，F1）",
+          "主战场二：AI公共服务——医疗、教育、法律、生活（agent.3，F1/F2）",
+          "AI创新生态图谱与要素机制（agent.2）"
+        ]
+      },
+      {
+        "dimension_id": "implementation_feasibility",
+        "title_zh": "可实施性",
+        "report_sections": [
+          "更新项目清单（八项，逐项给出责任角色、前置条件、成本级别、阶段KPI与退出条件）",
+          "首轮闭合试验：一个四周内可跑完的最小实施单元",
+          "指标体系、面积复算与合规矩阵"
+        ]
+      },
+      {
+        "dimension_id": "public_interest_inclusion",
+        "title_zh": "公共利益与包容性",
+        "report_sections": [
+          "用户画像（agent.3，九类）",
+          "测点用地的公共性：一条会否决选址的规则",
+          "无障碍与可读性 QA：算出来，不是声称"
+        ]
+      },
+      {
+        "dimension_id": "risk_compliance",
+        "title_zh": "风险与合规意识",
+        "report_sections": [
+          "三条红线不是本方案的善意，是现行法规的义务",
+          "八维风险自评（随包提交 `risk.json`）",
+          "管辖交界：这条带上真正会让试点死掉的地方",
+          "权利与许可台账"
+        ]
+      },
+      {
+        "dimension_id": "expression_completeness",
+        "title_zh": "表达完整度",
+        "report_sections": [
+          "图纸索引与阅读方式",
+          "双语导视规则",
+          "本方案的可复核清单"
+        ]
+      }
+    ]
   }
 }
