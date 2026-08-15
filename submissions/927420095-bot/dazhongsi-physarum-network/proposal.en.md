@@ -71,11 +71,13 @@ The brand visual is drawn from the author's real Physarum run skeleton (167 edge
 
 **Typography (conceptual suggestion)**. Headings and body use Noto Sans SC (Source Han Sans, OFL license; the HTML embeds a subset with no remote font dependency); numerals and code use monospace or Latin sans-serif; the Chinese name 「智脉共生」is kept as-is and the English name "Bio-Pulse Symbiosis" is used consistently without paraphrase.
 
-**Logo concept (conceptual suggestion; no formal graphic produced)**. The 167-edge Physarum skeleton as the base, overlaid with the Jing-Zhang railway track texture, colored in tech teal + eco green + accent red. The logo is a conceptual suggestion, not a registered trademark or public mark; the formal version requires rights clearance and authorization.
+**Logo graphic (conceptual suggestion; SVG vector produced)**. The Physarum network as the base, overlaid with the Jing-Zhang railway track texture, colored in accent red + tech teal + eco green; the vector file is `assets/brand/logo.svg` (with the 「智脉共生」wordmark and the English name "Bio-Pulse Symbiosis", bilingual). The logo is a conceptual suggestion, not a registered trademark or public mark; the formal version requires rights clearance and authorization.
 
 **Prohibited uses (conceptual suggestion)**. Do not juxtapose the brand name with unauthorized place names, corporate marks, or official institution names; do not imply official endorsement; do not use the brand graphic to fabricate precise redlines on an uncleared base map.
 
 ![Brand identity: 智脉共生 / Bio-Pulse Symbiosis](assets/figures/brand_identity.en.png)
+
+**Brand VI entity files (conceptual suggestion; produced)**. The brand palette card `assets/brand/vi_palette.png` (English `vi_palette.en.png`) and the brand-application mockups `assets/brand/vi_applications.png` (English `vi_applications.en.png`, covering business-card / letterhead / signage conceptual applications) are provided with the submission; all are conceptual suggestions, and the formal versions require rights clearance and authorization.
 
 ## Global Benchmark Cases (Public Information)
 
