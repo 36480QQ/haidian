@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v30.0 - 2026-08-15
+
+**PDF metadata & navigation fix / PDF 元数据与导航修复**
+
+- 审计发现四个正式出版 PDF 的元数据缺陷：确定性构建把创建/修改日期写成占位符 `D:20000101000000+00'00'`（事实性错误）；文档 `/Lang` 缺失（辅助读取器无法确定语言）；无目录书签（评审翻页无导航）。本轮把四个 PDF 的创建/修改日期固定为真实出版日 `D:20260815000000+00'00'`，`/Lang` 设为 zh-CN / en-US，并为全部 44 页加逐页书签（A3 14+14、A0 8+8）。
+- An audit found metadata defects on all four formal publications: the deterministic build stamped placeholder creation/modification date `D:20000101000000+00'00'` (factually wrong); document `/Lang` was missing (assistive readers cannot determine language); no outline bookmarks (no jury navigation). This round pins creation/modification to the real publication date `D:20260815000000+00'00'`, sets `/Lang` to zh-CN / en-US and adds per-page bookmarks on all 44 pages (A3 14+14, A0 8+8).
+- 用第 20/29 轮同管线重建全部四份 PDF；两次全新进程字节一致（A3 zh `34d38516…`、A3 en `5c7b88d7…`、A0 zh `ceb69fff…`、A0 en `164c4cc8…`）；60 dpi 灰度逐页像素比对：44 页与上一版本完全一致（仅元数据与书签变化）；QA：页数 14/14/8/8、`/Lang` 正确、书签 14/14/8/8、回链可搜索、空白页 0、替换字形 0。
+- All four PDFs were rebuilt with the same pipeline as Rounds 20/29; two fresh processes produced byte-identical files (A3 zh `34d38516…`, A3 en `5c7b88d7…`, A0 zh `ceb69fff…`, A0 en `164c4cc8…`); 60-dpi grayscale per-page pixel comparison: all 44 pages pixel-identical to the previous version (only metadata and bookmarks changed); QA: pages 14/14/8/8, correct `/Lang`, bookmarks 14/14/8/8, backlinks searchable, 0 blank pages, 0 replacement glyphs.
+- 无主张、数据、机制、图面或成熟度变化；geometry、metrics、sources.json 与全部图件/媒体字节未变。重建、PR 或合并不构成现实、批准、运营或权利升级。
+- No claim, datum, mechanism, figure or maturity change; geometry, metrics, sources.json and all figures/media keep their bytes. A rebuild, PR or merge creates no reality, approval, operation or rights upgrade.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths.
+
 ## v29.0 - 2026-08-15
 
 **A0 professional-handoff board index backlink / A0 专业交接板接入评审交接索引回链**
