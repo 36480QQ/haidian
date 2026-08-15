@@ -159,7 +159,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 44 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 69 bytes to spare"
+      "message": "intake_limits_qa.py — intake limits: 44 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 68 bytes to spare"
     },
     {
       "check_id": "PKG_MARKDOWN_STRUCTURE_QA",
@@ -175,7 +175,7 @@
       "severity": "info",
       "target": "compliance/standard/design_depth matrices",
       "source": "package-provided",
-      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 526 declared across three matrices, 526 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 17 class-1 metrics, every one recomputed by the shipped verifier; 7 review dimensions mapped to 21 sections, every one resolving"
+      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 526 declared across three matrices, 526 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 17 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -247,7 +247,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 139 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 99；最常见形状：check-measured-the-convenient-thing 27、two-copies-of-one-thing-drifted 20、deliverable-not-inspected-before-shipping 14、claim-outlived-the-package 13。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 139 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 140 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 100；最常见形状：check-measured-the-convenient-thing 28、two-copies-of-one-thing-drifted 20、deliverable-not-inspected-before-shipping 14、claim-outlived-the-package 13。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 140 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",

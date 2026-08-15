@@ -1032,6 +1032,125 @@
           "本方案的可复核清单"
         ]
       }
+    ],
+    "taskbook_read_from": "brief/site-package/agent_taskbook.json @ upstream/main",
+    "taskbook_scope_zh": "任务书另有自己的一套评审维度，与上面那套不是同一份，且同样随 `agent_taskbook` 交给评审模型。此处一并对照。",
+    "taskbook_scope_en": "The taskbook carries its own set of review dimensions, which are not the set above and are handed to the model in the same call. Mapped here as well.",
+    "taskbook_dimensions": [
+      {
+        "dimension_id": "objective_alignment",
+        "title_zh": "目标契合度",
+        "report_sections": [
+          "三层范围工作框架",
+          "三处AI朝圣地标（agent.4）",
+          "统筹研究范围产业与未来城市研究"
+        ]
+      },
+      {
+        "dimension_id": "function_match",
+        "title_zh": "功能匹配度",
+        "report_sections": [
+          "三大定位、五大功能与三区两翼的协同回路（agent.1）"
+        ]
+      },
+      {
+        "dimension_id": "brand_identity",
+        "title_zh": "品牌识别度",
+        "report_sections": [
+          "总体概念与命名体系（agent.1）",
+          "视觉识别方向（agent.1）",
+          "双语导视规则"
+        ]
+      },
+      {
+        "dimension_id": "regional_synergy",
+        "title_zh": "区域协同性",
+        "report_sections": [
+          "区域创新协同：把水准网外延为区域水准网（agent.1）",
+          "五个协同对象各自换什么"
+        ]
+      },
+      {
+        "dimension_id": "planning_innovation",
+        "title_zh": "规划创新性",
+        "report_sections": [
+          "总体设计范围城市更新与控规深度城市设计",
+          "控规深度的城市设计要给什么",
+          "用地是完整剖分，不是散点分区"
+        ]
+      },
+      {
+        "dimension_id": "industry_support",
+        "title_zh": "产业支撑度",
+        "report_sections": [
+          "AI创新生态图谱与要素机制（agent.2）",
+          "三个产业测试验证场景（agent.3）",
+          "众智园 AI 自主创新加速区（BM-1 · 限差基准）"
+        ]
+      },
+      {
+        "dimension_id": "scenario_perceptibility",
+        "title_zh": "场景可感知度",
+        "report_sections": [
+          "AI 场景卡（agent.3，十二张）",
+          "一个人的一天：这套机制在街上是什么样子",
+          "荣誉展示体系与公共空间组件库（agent.4）"
+        ]
+      },
+      {
+        "dimension_id": "spatial_clarity",
+        "title_zh": "空间明确性",
+        "report_sections": [
+          "重点区域详细设计",
+          "三片区共同的拆改留原则",
+          "站—点合一与市政排序"
+        ]
+      },
+      {
+        "dimension_id": "transferability",
+        "title_zh": "可转化性",
+        "report_sections": [
+          "更新项目清单（八项，逐项给出责任角色、前置条件、成本级别、阶段KPI与退出条件）",
+          "首轮闭合试验：一个四周内可跑完的最小实施单元",
+          "评审可以自己重算：`node visual/assets/verify.js`"
+        ]
+      },
+      {
+        "dimension_id": "expression_completeness",
+        "title_zh": "表达完整性",
+        "report_sections": [
+          "图纸索引与阅读方式",
+          "无障碍与可读性 QA：算出来，不是声称",
+          "本方案的可复核清单"
+        ]
+      },
+      {
+        "dimension_id": "public_compliance",
+        "title_zh": "公开合规性",
+        "report_sections": [
+          "三条红线不是本方案的善意，是现行法规的义务",
+          "权利与许可台账",
+          "性质声明"
+        ]
+      },
+      {
+        "dimension_id": "international_communication",
+        "title_zh": "国际传播力",
+        "report_sections": [
+          "国际传播文案",
+          "双语导视规则",
+          "全球AI创新生态案例研究（agent.2）"
+        ]
+      },
+      {
+        "dimension_id": "long_term_operation_value",
+        "title_zh": "长期运营价值",
+        "report_sections": [
+          "更新项目清单、实施政策与分期计划",
+          "荣誉展示体系与公共空间组件库（agent.4）",
+          "闭合差机制的完整定义"
+        ]
+      }
     ]
   }
 }
