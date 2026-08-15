@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "9fbb8d83280c54b4b9d977a7a7072628b370598d2d16c098ab02999efc399f69"
+      "sha256": "a60512838fd74e04f6aed6a56e6dc825d7e94a7ff5a2808d2b576e342f33c4e2"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "52de34bd5f42396fcce5945cf3e8c80e25f8a9fb9275370759b2958113f781aa"
+      "sha256": "055a8b38d00df8b544f05babbb67c52031b02f580a31b14957118e3b95e1f630"
     },
     {
       "path": "assumptions.json",
@@ -77,13 +77,13 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "650d6439b6ff257b475ba97608d42adcd641961c71ade7ea07a82ed6ef283ccd"
+      "sha256": "9c8d58211e8bbeaba2acfe6dc8602243b92e9433b8a2b4b5f3c14d29a7a67f28"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "6b7609fdc0b3fdc2df5d58ff826b5d37a30e6ff098736dd307167a590b176bf2"
+      "sha256": "7c51517e9e69d69caca677601c1932610300ab14364e67c8754ae4e87727a3dc"
     },
     {
       "path": "report/copyright_statement.md",

@@ -795,6 +795,19 @@
       "assumptions": [
         "G0-G6 固化回滚去向"
       ]
+    },
+    "compatibility_category_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of compatibility categories",
+      "confidence": "high",
+      "assumptions": [
+        "兼容/有条件/不兼容三组"
+      ]
     }
   }
 }
