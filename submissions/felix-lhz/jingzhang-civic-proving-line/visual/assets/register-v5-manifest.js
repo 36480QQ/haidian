@@ -6,8 +6,12 @@ const file = path.join(root, 'manifest.json');
 const manifest = JSON.parse(fs.readFileSync(file, 'utf8'));
 const entries = [
   { path: 'visual/assets/build-v5.js', role: 'verification_script', required: false, language: 'neutral' },
+  { path: 'visual/assets/embed-v5-html.js', role: 'verification_script', required: false, language: 'neutral' },
   { path: 'visual/assets/enrich-v5-data.js', role: 'verification_script', required: false, language: 'neutral' },
+  { path: 'visual/assets/qa-v5-html.js', role: 'verification_script', required: false, language: 'neutral' },
   { path: 'visual/assets/register-v5-manifest.js', role: 'verification_script', required: false, language: 'neutral' },
+  { path: 'visual/assets/two-answers-v5.css', role: 'asset', required: true, language: 'neutral' },
+  { path: 'visual/assets/two-answers-v5.js', role: 'asset', required: true, language: 'neutral' },
 ];
 
 for (const entry of entries) {
