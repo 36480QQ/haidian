@@ -5501,6 +5501,141 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-GARDEN-1",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344,
+              39.962
+            ],
+            [
+              116.346,
+              39.962
+            ],
+            [
+              116.346,
+              39.964
+            ],
+            [
+              116.344,
+              39.964
+            ],
+            [
+              116.344,
+              39.962
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PUBLIC-GARDEN-1",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "public_space_type": "community_garden",
+        "name_zh": "原点社区共享花园",
+        "access_rule": "public_unrestricted",
+        "shelter_type": "open_air",
+        "lighting": "standard",
+        "seating": "provided",
+        "accessibility_grade": "barrier_free"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-WATER-1",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346,
+              39.975
+            ],
+            [
+              116.35,
+              39.975
+            ],
+            [
+              116.35,
+              39.978
+            ],
+            [
+              116.346,
+              39.978
+            ],
+            [
+              116.346,
+              39.975
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PUBLIC-WATER-1",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "public_space_type": "waterfront_promenade",
+        "name_zh": "小月河滨水步道",
+        "access_rule": "public_unrestricted",
+        "shelter_type": "partial_shade",
+        "lighting": "standard",
+        "seating": "provided",
+        "accessibility_grade": "barrier_free"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-CULT-1",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343,
+              39.976
+            ],
+            [
+              116.345,
+              39.976
+            ],
+            [
+              116.345,
+              39.978
+            ],
+            [
+              116.343,
+              39.978
+            ],
+            [
+              116.343,
+              39.976
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PUBLIC-CULT-1",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "public_space_type": "cultural_plaza",
+        "name_zh": "京张文化广场",
+        "access_rule": "public_unrestricted",
+        "shelter_type": "open_air",
+        "lighting": "feature_lighting",
+        "seating": "provided",
+        "accessibility_grade": "barrier_free"
+      }
     }
   ]
 }
