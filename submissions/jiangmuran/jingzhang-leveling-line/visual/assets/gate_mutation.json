@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M30",
+      "gate": "declared_geometry_qa.py",
+      "target": "geometry/land_use.geojson",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一个地块自己声明的面积改掉 100 m²，几何一动不动。",
+      "what_en": "Move one parcel's declared area by 100 m² and leave its geometry untouched.",
+      "why_zh": "`*_declared` 是评审打开 `.geojson` 第一眼读到的东西——它是一个要素里唯一不需要做算术就能读懂的部分，而在此之前 **16 道闸门没有一道打开过它**。两份副本讲同一件事，本册已记十五次；若声明的数与它所在的形状脱钩而无人作声，这道闸门就等于没有。",
+      "why_en": "A `*_declared` value is the first thing a reviewer reads on opening a `.geojson` — the only part of a feature legible without doing arithmetic — and before this no gate had ever opened one. Two copies of one fact is the shape this register logs fifteen times; if a declared number can come loose from the shape it sits on without objection, the gate is not there."
+    },
+    {
       "id": "M26",
       "gate": "evidence_ceiling.py",
       "target": "metrics.json",
@@ -355,7 +367,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 29,
+  "caught": 30,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -364,6 +376,7 @@
     "cjk_leak_qa.py",
     "claim_audit_qa.py",
     "computed_value_qa.py",
+    "declared_geometry_qa.py",
     "evidence_ceiling.py",
     "figure_citation_qa.py",
     "forward_reference_qa.py",
@@ -378,6 +391,6 @@
   "gates_not_covered": {
     "gate_mutation_qa.py": "this file is not in the submitted package, so no shipped-file mutation can reach it; both halves of its detection — that a caught defect is caught, and that it was named — are instead established by two control mutations, `assert_harness_can_report_survival` and `assert_harness_checks_naming`"
   },
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 16 道闸门，其中 16 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 16 gates, 16 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 17 道闸门，其中 17 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 17 gates, 17 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
