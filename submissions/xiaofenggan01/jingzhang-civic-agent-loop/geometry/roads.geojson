@@ -227,7 +227,12 @@
         "stitch_note": "AI 原点社区东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "AI 原点社区",
+        "east_node": "五道口青年区",
+        "stitch_target": "社区生活×高校青年",
+        "composite_functions": "全龄节点+青年第三空间外溢段"
       },
       "geometry": {
         "type": "LineString",
