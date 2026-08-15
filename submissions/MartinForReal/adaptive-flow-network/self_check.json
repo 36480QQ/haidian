@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/MartinForReal/adaptive-flow-network/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/MartinForReal/adaptive-flow-network/changelog.md"
+      ],
       "changed_files": [
         "submissions/MartinForReal/adaptive-flow-network/agent.json",
         "submissions/MartinForReal/adaptive-flow-network/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/MartinForReal/adaptive-flow-network/assets/figures/site-overview.en.png",
         "submissions/MartinForReal/adaptive-flow-network/assets/figures/site-overview.png",
         "submissions/MartinForReal/adaptive-flow-network/assumptions.json",
+        "submissions/MartinForReal/adaptive-flow-network/changelog.md",
         "submissions/MartinForReal/adaptive-flow-network/compliance_matrix.json",
         "submissions/MartinForReal/adaptive-flow-network/design_depth_matrix.json",
         "submissions/MartinForReal/adaptive-flow-network/drawings/a0-boards.en.pdf",
@@ -61,7 +64,7 @@
       "ai_package_stages": {
         "submissions/MartinForReal/adaptive-flow-network": "formal"
       },
-      "total_bytes": 14124332,
+      "total_bytes": 14161768,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -103,11 +106,11 @@
       ],
       "metrics": {
         "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 2390403.328,
-        "public_space_area_sqm": 145821.687,
-        "building_footprint_area_sqm": 650575.16,
-        "green_ratio": 0.209449,
-        "public_space_ratio": 0.012777
+        "green_space_area_sqm": 2355202.449,
+        "public_space_area_sqm": 145907.873,
+        "building_footprint_area_sqm": 614692.545,
+        "green_ratio": 0.206365,
+        "public_space_ratio": 0.012785
       }
     },
     "stderr": ""
@@ -120,9 +123,9 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.209452,
-        "public_space_ratio": 0.012777,
-        "building_footprint_area_sqm": 650575.16,
+        "green_ratio": 0.206367,
+        "public_space_ratio": 0.012785,
+        "building_footprint_area_sqm": 614692.545,
         "key_area_count": 3.0
       }
     },
@@ -141,7 +144,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 14,
+          "source": 30,
           "standard": 6,
           "depth": 15,
           "data": 6,
