@@ -1,5 +1,16 @@
 # 方案迭代记录 / Changelog
 
+## v27.0 - 2026-08-15
+
+**Official heading wording alignment / 正式章节标题与官方术语对齐**
+
+- 第 27 轮只在第 26 轮 PR #2757 合并（merge SHA `2adc47505d5234a4b6cafdf017b2f17d3d2a7589` 进入 canonical `main@2d44121b3eb47ff958605b0ea2b026d462644dc5`）且 442 个开放 PR 文件级扫描无竞争后开始。审计：`proposal.en.md` 的全部 `##` 标题与 `docs/formal-submission-guide.md` 官方英文章节表逐条比对——12/13 一致，仅“用地、建筑规模与拆改留”章的英文标题词序与官方表述不同（`Demolish–Renovate–Retain` vs 官方 `Retain-Renovate-Demolish`）。修复为官方表述，重渲染报告后 13/13 一致，并按第 23 轮记录重施渲染器媒体链接修复。
+- Round 27 began only after Round 26 PR #2757 merged (merge SHA `2adc47505d5234a4b6cafdf017b2f17d3d2a7589` entered canonical `main@2d44121b3eb47ff958605b0ea2b026d462644dc5`) and a file-level scan of 442 open PRs found no competing PR. Audit: every `##` heading in `proposal.en.md` was compared against the official English chapter table in `docs/formal-submission-guide.md` — 12/13 matched; only the land-use chapter heading used a different word order (`Demolish–Renovate–Retain` vs the official `Retain-Renovate-Demolish`). Fixed to the official wording, re-rendered the report (13/13 now match) and re-applied the Round 23 renderer media-link fix as recorded.
+- 仅英文标题文本变化，无主张、数据、机制、页数或成熟度变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- Only the English heading text changed; no claim, data, mechanism, page count or maturity change. The four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v26.0 - 2026-08-15
 
 **Contract as_of consistency repair / 契约 as_of 一致性修复**
