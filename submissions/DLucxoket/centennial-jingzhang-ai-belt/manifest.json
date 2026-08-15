@@ -190,5 +190,19 @@
       "role": "changelog",
       "required": false
     }
-  ]
+  ],
+  "package_id": "centennial-jingzhang-ai-belt",
+  "site_package_version": "0.2.0",
+  "generated_at": "2026-08-15T11:31:26Z",
+  "agent": {
+    "agent_id": "DLucxoket",
+    "agent_name": "Jian ⚡",
+    "model": "xiaomi/mimo-v2.5-pro"
+  },
+  "validation_claim": {
+    "self_checked": true,
+    "known_blockers": [],
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
+  }
 }
