@@ -65,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 本规则适用本包全部正文、表、图、JSON 与媒体脚本；任何一级降级必须可被评审沿 changelog 追溯到具体条目。
 
-**版本可追溯**：本包当前迭代 **v10.14.6**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
+**版本可追溯**：本包当前迭代 **v10.14.7**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
 
 **表 A1 评审一页入口（评审维度证据索引——每行给出可打开文件与可运行命令，机器可核验项全部可在评审端离线重跑）**
 
@@ -245,12 +245,12 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 
 | 核对项 | 核对内容 | 核对方式（可重跑） | 结果 |
 | --- | --- | --- | --- |
-| 引用解析 | 正文 349 处内联引用（source 43 / metric 112 / data 115 / depth 31 / standard 29 / assumption 19）全部指向已登记对象（339 个 ID 级解析＋5 个文件级已存在，另 5 处格式示例） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json、assumptions.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 344/344 引用可解析（另 5 处格式示例） |
+| 引用解析 | 正文 355 处内联引用（source 43 / metric 118 / data 115 / depth 31 / standard 29 / assumption 19）全部指向已登记对象（345 个 ID 级解析＋5 个文件级已存在，另 5 处格式示例） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json、assumptions.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 350/350 引用可解析（另 5 处格式示例） |
 | 离线合成演练 | 120 任务（15 合格＋105 失败分支）逐条规则检查，回执哈希确定性 | `node visual/assets/simulate-check.js` | 120/120，105 负例全拦截 |
 | 篡改拒绝自测 | 8 类篡改用例全部被拒绝 | `node visual/assets/simulate-check.js --self-test` | 8/8 |
 | 计数独立复算 | 9 项计数指标从 geometry/*.geojson 独立重算（不读 metrics.json） | `node visual/assets/verify-counts.js` | 9/9 |
 | 勘误登记册 | 13 条勘误逐条 join changelog.md | build_errata.py（提交包外工具，可离线运行） | 13/13 |
-| 双语结构 | 标题 18/18 一致；共享 82 张表 zh/en 列结构逐张一致（表 A14/表 A15/表 A16/表 C1/表 C2 为 zh 权威语增补核对表，en 受 262144 字节硬限未收录——双语合同 zh 权威语单方增补机制见 changelog v10.14.6） | 双语结构扫描（en 为 zh 有序子序列） | 18/18、82/82 |
+| 双语结构 | 标题 18/18 一致；共享 82 张表 zh/en 列结构逐张一致（表 A14/表 A15/表 A16/表 A17/表 A18/表 A19/表 C1/表 C2 为 zh 权威语增补核对表，en 受 262144 字节硬限未收录——双语合同 zh 权威语单方增补机制见 changelog v10.14.7） | 双语结构扫描（en 为 zh 有序子序列） | 18/18、82/82 |
 | 几何空间复核 | 9 类图层拓扑/CRS/无缝覆盖 | 官方自检 G2 | 9/9 |
 | 图纸与可视化 | PDF 页数>0、HTML 零外链离线可开 | 官方自检 G3 | PASS |
 | 媒体与字幕 | 音频 171.62 s＝短片 171.62 s＝字幕末条 00:02:51.508，时长互证 | 媒体时长读取＋VTT 末时间戳 | 171.62 s，3/3 一致 |
@@ -287,6 +287,113 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 | ASSUME-007 | 公开 Issue #1029 大钟寺质心偏差主动引用 | high | 1 | assumptions.json；Issue 关闭后复核 |
 | A-CONTROLS-001 | 官方控制条件缺失 | high | 3 | assumptions.json；控规条件确认后转正式 |
 | 合计 | 8 项 | — | 19 | 19/19 引用可解析 |
+
+**表 A17 指标登记总表（metrics.json 全量 76 项逐项对照正文，61 known 全登记）**
+
+指标章给出"家族口径"，本表给出"全量明细"：metrics.json 全部 76 项按家族逐项登记，61 项 known 每项给出当前值、单位与复算路径/来源文件，15 项 unknown 仅登记不进入任何结论——评审可沿本表任一行打开对应文件复算（与表 A14 引用解析行同口径）：
+
+| 指标族 | 指标 ID | 当前值 | 单位 | 复算路径/来源文件 |
+| --- | --- | --- | --- | --- |
+| 空间类（14） | site_area_sqm | 11,412,825.386 | m² | geometry/site_boundary.geojson |
+| 空间类（14） | building_footprint_area_sqm | 1,103,163.864 | m² | geometry/buildings.geojson |
+| 空间类（14） | green_ratio | 24.96% | 比率 | geometry/green_space.geojson、geometry/site_boundary.geojson |
+| 空间类（14） | public_space_ratio | 0.52% | 比率 | geometry/public_space.geojson、geometry/site_boundary.geojson |
+| 空间类（14） | key_area_count | 3 | 项 | geometry/key_areas.geojson |
+| 空间类（14） | key_area_total_area_sqm | 3,692,893.005 | m² | geometry/key_areas.geojson |
+| 空间类（14） | land_parcel_count | 155 | 项 | geometry/land_use.geojson |
+| 空间类（14） | land_use_class_count | 13 | 项 | geometry/land_use.geojson |
+| 空间类（14） | building_count | 84 | 项 | geometry/buildings.geojson |
+| 空间类（14） | green_space_count | 21 | 项 | geometry/green_space.geojson |
+| 空间类（14） | public_space_node_count | 16 | 项 | geometry/public_space.geojson |
+| 空间类（14） | road_segment_count | 13 | 项 | geometry/roads.geojson |
+| 空间类（14） | phasing_zone_count | 3 | 项 | geometry/phasing.geojson |
+| 空间类（14） | constraint_zone_count | 3 | 项 | geometry/constraints.geojson |
+| 功能比例（7） | research_0802_ratio | 21.89% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | commercial_05_ratio | 7.03% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | residential_0701_ratio | 13.64% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | roads_1207_ratio | 10.65% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | green_1401_1402_ratio | 24.96% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | reserve_16_ratio | 2.71% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | culture_edu_sports_medical_ratio | 14.36% | 比率 | geometry/land_use.geojson |
+| 元素计数（19） | scenario_card_count | 12 | 项 | proposal.md#S6 |
+| 元素计数（19） | industry_test_scenario_count | 3 | 项 | proposal.md#S6 |
+| 元素计数（19） | persona_count | 8 | 项 | proposal.md#S5 |
+| 元素计数（19） | pilgrimage_landmark_count | 3 | 项 | proposal.md#S4 |
+| 元素计数（19） | ecosystem_case_count | 6 | 项 | proposal.md#S3 |
+| 元素计数（19） | geometry_layer_count | 9 | 项 | geometry/ directory |
+| 元素计数（19） | pulse_beat_count | 4 | 项 | simulation.json |
+| 元素计数（19） | rollback_trigger_class_count | 5 | 项 | simulation.json |
+| 元素计数（19） | simulation_task_count | 120 | 项 | simulation.json |
+| 元素计数（19） | funding_channel_count | 4 | 项 | proposal.md#S10 |
+| 元素计数（19） | investment_item_count | 11 | 项 | proposal.md#S10 |
+| 元素计数（19） | objection_gate_count | 3 | 项 | proposal.md#S9 |
+| 元素计数（19） | emergency_tier_count | 3 | 项 | simulation.json |
+| 元素计数（19） | bottom_line_indicator_count | 5 | 项 | proposal.md#S8 |
+| 元素计数（19） | synthetic_negative_branch_count | 105 | 项 | simulation.json |
+| 元素计数（19） | service_passport_required_field_count | 11 | 项 | proposal.md |
+| 元素计数（19） | operational_evidence_gate_count | 5 | 项 | proposal.md |
+| 元素计数（19） | first_100_days_action_count | 8 | 项 | proposal.md |
+| 元素计数（19） | same_task_equivalence_scenario_count | 12 | 项 | proposal.md |
+| 机制 coverage（9） | scenario_fallback_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (card table) |
+| 机制 coverage（9） | scenario_data_boundary_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (card table) |
+| 机制 coverage（9） | scenario_operator_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (card table) |
+| 机制 coverage（9） | scenario_exit_path_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (AI-limits & exit-disposition table) |
+| 机制 coverage（9） | geometry_layer_validation_ratio | 100.00% | 比率 | geometry/site_boundary.geojson、geometry/key_areas.geojson、geometry/land_use.geojson、geometry/buildings.geojson、geometry/roads.geojson、geometry/green_space.geojson、geometry/public_space.geojson、geometry/constraints.geojson、geometry/phasing.geojson |
+| 机制 coverage（9） | protocol_gate_coverage_ratio | 100.00% | 比率 | proposal.md#S6 (protocol table) |
+| 机制 coverage（9） | risk_rollback_mapping_ratio | 100.00% | 比率 | proposal.md#S6、risk.json |
+| 机制 coverage（9） | simulation_p1_pass_ratio | 100.00% | 比率 | simulation.json |
+| 机制 coverage（9） | risk_item_count | 8 | 项 | risk.json |
+| v10.4 数据资产族（12） | contract_coverage_ratio | 100.00% | 比率 | visual/assets/dividend-contracts.json |
+| v10.4 数据资产族（12） | blackout_clause_coverage_ratio | 100.00% | 比率 | visual/assets/dividend-contracts.json |
+| v10.4 数据资产族（12） | bequest_clause_coverage_ratio | 100.00% | 比率 | visual/assets/dividend-contracts.json |
+| v10.4 数据资产族（12） | state_machine_state_count | 8 | 项 | visual/assets/state-machine.json |
+| v10.4 数据资产族（12） | state_machine_gate_count | 8 | 项 | visual/assets/state-machine.json |
+| v10.4 数据资产族（12） | dual_gateway_gate_count | 16 | 项 | visual/assets/implementation-gates.json |
+| v10.4 数据资产族（12） | governance_role_count | 8 | 项 | visual/assets/governance-raci.json |
+| v10.4 数据资产族（12） | governance_constitutional_rule_count | 5 | 项 | visual/assets/governance-raci.json |
+| v10.4 数据资产族（12） | simulation_rerun_receipt_ratio | 100.00% | 比率 | visual/assets/simulate-check.js |
+| v10.4 数据资产族（12） | review_evidence_dimension_count | 7 | 项 | visual/assets/review-evidence-index.json |
+| v10.4 数据资产族（12） | issue_ledger_entry_count | 3 | 项 | proposal.md |
+| v10.4 数据资产族（12） | evidence_level_declared_count | 5 | 项 | proposal.md |
+| 管控/绩效类 unknown（15） | floor_area_ratio 等 15 项（容积率/建筑高度/建筑密度/法定绿地率/退线/受影响户数/缓解预算/算力/年参与人次/已批场景/开发者转化率/年运营成本/AI 创新指数/人才密度/产值贡献） | 待官方条件 | — | 复算路径逐项见 metrics.json |
+
+> 表注：61 known 与 metrics.json 逐项一致（v10.14.7 复核 61/61）；15 unknown 全部登记于 metrics.json 的 unknown 策略并给出官方发布后的复算路径，不进入任何结论；意见台账与证据等级计数登记于表 A9 与设计依据章 [metric:issue_ledger_entry_count] [metric:evidence_level_declared_count]。
+
+**表 A18 状态机逐态登记表（8 态 8 转移，逐条机器可核验）**
+
+8 状态机不只是"8 个名字"：每条转移绑定判定角色与证据门，条件逐条可核对（visual/assets/state-machine.json 与 simulation.json 回执一致）：
+
+| 序 | 转移（状态→状态） | 判定角色 | 证据门 | 转移条件 |
+| --- | --- | --- | --- | --- |
+| 1 | proposed→baseline_verified | 单一责任主体 | E0/E1 | 护照 11 字段完整；无 AI 基线、数据上限与责任角色已声明 |
+| 2 | baseline_verified→sandboxed | 现场安全与急停＋独立复测与审计 | E2 | 受控试点批准：安全审查、同任务人工路径、容量、公示、申诉与结束日期 |
+| 3 | sandboxed→live | 运营主体＋公共基线守护与听证 | E3/P3 | 独立复测通过；三道异议门关闭；五项底线指标达成 |
+| 4 | live→blackout_drill | 现场安全与急停＋公共基线守护与听证 | P3 | 计划停摆或五类回滚触发器任一触发（安全/隐私/文保/经济/生态） |
+| 5 | blackout_drill→bequest_audit | 独立复测与审计 | P4 | 同任务人工路径验证可运行；残余资产与数据清单核对；**不可跳过** |
+| 6 | bequest_audit→retained_or_modified | 单一责任主体 | E4 | 复测结论、持续预算、责任续办与年度公开声明通过 |
+| 7 | bequest_audit→removed_archived | 单一责任主体＋维护与场地恢复 | E4 | 退役、场地与公共空间基线恢复、数据删除、平线档案归档；**不可跳过** |
+| 8 | live→removed_archived | 现场安全与急停 | P3/P4 | 安全事故或约束性异议硬停；绕过成功叙事直接退役 |
+
+> 表注：8 态 8 转移逐条登记于 visual/assets/state-machine.json（8 条转移各带角色与证据门）[metric:state_machine_state_count] [metric:state_machine_gate_count]；停摆演练与退场审计两道状态不可跳过（表 A11 词面稀缺性 0/839 全场唯一）。
+
+**表 A19 治理角色登记表（8 角色，含不得替代双栏与缺岗兜底）**
+
+治理不是一张 RACI 图而是可核验的责任闭环：8 角色逐项登记职责、不得替代边界与缺岗兜底（visual/assets/governance-raci.json 与正文公众委员会章程节一致）：
+
+| 角色 ID | 职责 | 不得替代 | 缺岗兜底 |
+| --- | --- | --- | --- |
+| ROLE-ACCOUNTABLE-LEAD 单一责任主体 | 护照登记、E0-E4 门判定申报、退役与恢复决定 | 法定规划审批、行业监管与许可机关 | 服务不得进入测试；P1 申报退回补充材料 |
+| ROLE-OPERATIONS 运营主体 | 长期运营、运营期限与续办条件、日常记录公开 | 独立复测与审计结论 | 不得发布；仅可停留在沙盒状态 |
+| ROLE-SAFETY 现场安全与急停 | 现场安全审查、实体急停、五类回滚触发器停机判定 | 运营决策与预算决策 | 不进入受控试点；试点期间缺岗立即停摆并亮平线灯 |
+| ROLE-DATA 数据守护 | 数据上限与留存期核验、未声明数据禁止采集、退役数据删除确认 | 个人信息使用授权 | 未声明数据不得采集；数据越界即触发隐私类回滚 |
+| ROLE-PUBLIC-STEWARD 公共基线守护与听证 | 无 AI 等价基线核验、三道异议门主持、与安全角色可独立叫停试验 | 影响人群的专业责任与法律责任 | 不得宣称 AI 带来改善；异议门缺失不得发布 |
+| ROLE-INDEPENDENT-EVALUATOR 独立复测与审计 | E3 独立复测、停摆演练与退场审计、失败记录匿名化公开 | 任何运营主体不得自证其退场审计 | 复测缺失不得扩大范围；退场审计不可跳过 |
+| ROLE-MAINTENANCE 维护与场地恢复 | 退役时恢复场地与公共空间基线、平线档案墙陈列材料 | 复测结论 | 场地恢复未确认，退役程序不关闭 |
+| ROLE-AFFECTED-PUBLIC 受影响公众 | 异议、申诉与叫停请求通道；听证参与 | 不承担专业责任，不负担义务性审查 | 申诉通道缺失，服务不得向公众开放 |
+
+> 表注：8 角色逐条登记于 visual/assets/governance-raci.json [metric:governance_role_count]；宪法条款 5 条含"运营者不得自证其退场审计" [metric:governance_constitutional_rule_count]，与公众委员会示范章程（概念）衔接。
+
+
 
 
 
