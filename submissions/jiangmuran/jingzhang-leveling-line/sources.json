@@ -73,7 +73,8 @@
       "evidence_class_note_zh": "上游 `data/source_registry.json` 对同一份 geometry 记为 `review_status: provisional` / `usable_for_formal: provisional_only` / `authority_level: PROVISIONAL_REPOSITORY`，并把「精确面积计算」列入 prohibited_uses。本文件此前记为 official_context，与上游登记表、也与本包 metrics.json 里把全部边界派生指标记为 provisional 的做法互相矛盾——评审同时收到这两份文件。已改为 provisional。",
       "title_en": "provisional_boundaries.geojson: the provisional substitute boundary",
       "collection_method_en": "Read directly from the repository tree at commit 0e856ea035 and areas recomputed in EPSG:4548. **This is the sole geometric source of every spatial conclusion here, and equally the limit of all of them**: the official polygon is unpublished, this boundary is inferred, and every derived reading must be recomputed as a whole once official geometry exists — registered as A-BOUNDARY-001.",
-      "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file."
+      "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file.",
+      "organizer_registry_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
     },
     {
       "id": "KEY-AREA-SOURCE",
@@ -93,7 +94,8 @@
       "evidence_class_note_zh": "上游 `data/source_registry.json` 对同一份 geometry 记为 `review_status: provisional` / `usable_for_formal: provisional_only` / `authority_level: PROVISIONAL_REPOSITORY`，并把「精确面积计算」列入 prohibited_uses。本文件此前记为 official_context，与上游登记表、也与本包 metrics.json 里把全部边界派生指标记为 provisional 的做法互相矛盾——评审同时收到这两份文件。已改为 provisional。",
       "title_en": "Provisional substitute extents for the three key areas",
       "collection_method_en": "Read directly from the repository tree at commit 0e856ea035. The **names and number** of the three key areas come from the announcement text; the **geometry is a provisional substitute**. The two differ in evidential strength, so this package states them separately in the drawings and the prose.",
-      "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file."
+      "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file.",
+      "organizer_registry_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -110,7 +112,8 @@
       "evidence_class": "official_context",
       "title_en": "Open call to global agents: urban design for the Centennial Jing-Zhang AI Innovation Belt",
       "collection_method_en": "The author read the full announcement on the authorised-release page of the Beijing Municipal Commission of Planning and Natural Resources, transcribing the three scope areas and the key-area names item by item; the full text is not copied. The **area figures come from the announcement text** while the geometry comes from the repository's provisional boundary — different sources, marked separately in the figure notes.",
-      "license_or_reuse_terms_en": "A government-published open call, public by law. This package cites only the stated requirements and published figures, with attribution."
+      "license_or_reuse_terms_en": "A government-published open call, public by law. This package cites only the stated requirements and published figures, with attribution.",
+      "organizer_registry_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
     },
     {
       "id": "AGENT-TASKBOOK",
@@ -128,7 +131,8 @@
       "evidence_class": "official_context",
       "title_en": "agent_taskbook.json: six agent tasks and 63 requirements",
       "collection_method_en": "Read directly from the repository tree at commit 0e856ea035, extracting each requirement and joining it to a section of this proposal; the joins ship as the taskbook coverage check, which names any unanswered requirement rather than summarising.",
-      "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file."
+      "license_or_reuse_terms_en": "Open-call material published by the repository. This package cites its wording and figures as given, copies no full text, and does not redistribute the original file.",
+      "organizer_registry_id": "DATA-SRC-AGENT-TASKBOOK-20260518"
     },
     {
       "id": "FIELD-CENSUS-2026-08",
@@ -190,7 +194,8 @@
       "title_en": "Barrier-free Environment Construction Law of the People's Republic of China",
       "collection_method_en": "The author read the full text on the authorised-release page of the China Government Network, checked the adoption date, effective date and chapter/article counts, and read Article 39 verbatim before citing its substance; the full text is not copied.",
       "license_or_reuse_terms_en": "National law, public by law. This package cites only the substance of the article, with its number.",
-      "usage_en": "Anchors this proposal's non-AI equivalent service path as a statutory duty rather than a design judgement: the article requires places providing medical, insurance, financial, water, electricity and gas services to retain traditional means such as on-site guidance and human handling."
+      "usage_en": "Anchors this proposal's non-AI equivalent service path as a statutory duty rather than a design judgement: the article requires places providing medical, insurance, financial, water, electricity and gas services to retain traditional means such as on-site guidance and human handling.",
+      "organizer_registry_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW"
     },
     {
       "id": "GENERATIVE-AI-INTERIM-MEASURES",
@@ -209,13 +214,14 @@
       "title_en": "Interim Measures for the Management of Generative Artificial Intelligence Services",
       "collection_method_en": "The author read the full measure on the Cyberspace Administration of China website, checked the issuing body and the promulgation and effective dates, and read Articles 14 and 15; only the substance bearing directly on this proposal's suspension rule and appeal time limit is extracted.",
       "license_or_reuse_terms_en": "A regulation published by a state body, public by law. This package cites only the substance of the articles, with their numbers.",
-      "usage_en": "Article 14 makes stopping generation and transmission on discovery a provider's duty, matching this proposal's suspension and area-wide pause rules; Article 15 requires an accessible complaints channel with a published process and response time limit, matching this proposal's claim that an appeal right without a time limit is unenforceable — so that claim is not an invention here but an implementation of a rule already in force."
+      "usage_en": "Article 14 makes stopping generation and transmission on discovery a provider's duty, matching this proposal's suspension and area-wide pause rules; Article 15 requires an accessible complaints channel with a published process and response time limit, matching this proposal's claim that an appeal right without a time limit is unenforceable — so that claim is not an invention here but an implementation of a rule already in force.",
+      "organizer_registry_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
     },
     {
       "id": "ELDERLY-SMART-TECH-PLAN",
       "url": "https://www.gov.cn/zhengce/content/2020-11/24/content_5563804.htm",
       "source_type": "official_public",
-      "evidence_class": "regulatory_baseline",
+      "evidence_class": "background_only",
       "title": "国务院办公厅关于印发《关于切实解决老年人运用智能技术困难实施方案》的通知（国办发〔2020〕45号）",
       "publisher": "国务院办公厅",
       "published_date": "2020-11-24",
@@ -227,7 +233,10 @@
       "title_en": "State Council General Office notice issuing the Implementation Plan on Resolving the Difficulties Older People Face in Using Smart Technology (Guobanfa [2020] No. 45)",
       "collection_method_en": "The author read the full policy text on the China Government Network, checked the document number, issuing body and date, and read the parallel-provision principle in the general requirements together with the list of five high-frequency service scenarios.",
       "license_or_reuse_terms_en": "A policy document published by the State Council General Office, public by law.",
-      "usage_en": "Provides the policy basis for this proposal's hard constraint on persona P4: the plan requires traditional service methods to run in parallel with smart-service innovation, obliges everyday scenarios to retain the traditional methods older people know, and lists high-frequency matters this proposal's scenario cards can be compared against."
+      "usage_en": "Provides the policy basis for this proposal's hard constraint on persona P4: the plan requires traditional service methods to run in parallel with smart-service innovation, obliges everyday scenarios to retain the traditional methods older people know, and lists high-frequency matters this proposal's scenario cards can be compared against.",
+      "organizer_registry_id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
+      "evidence_class_note_zh": "本包原评为 regulatory_baseline，而组织方来源登记表把它的 usable_for_formal 限为 background_only。**登记表是本次征集的已发布契约，本包的评级高于它时以登记表为准**；该文件仍然被引用，只是不再被当作可支撑正式结论的依据。",
+      "evidence_class_note_en": "This package had graded it regulatory_baseline while the organisers' source registry caps its usable_for_formal at background_only. The registry is the published contract for this call, so where this package's grade was the stronger one the registry governs. The document is still cited; it no longer carries a formal conclusion."
     },
     {
       "id": "CASE-C1-ALGORITHM-REGISTER",
@@ -382,7 +391,8 @@
       "title_en": "Measures for the Preparation and Approval of Regulatory Detailed Plans for Cities and Towns",
       "collection_method_en": "The author read the full text on the China Government Network and checked the order number, promulgation and effective dates and chapter/article counts. **That check corrected a statement in this package**: the measure contains no article specifically enumerating the mandatory content of a regulatory detailed plan, so the matrix line requiring depth-related conclusions to distinguish known controls, design proposals and items awaiting confirmation is **this proposal's own paraphrase**, not the regulation's wording — stated here.",
       "license_or_reuse_terms_en": "A ministerial regulation, public by law. This package cites it and marks the citation as a paraphrase.",
-      "usage_en": "Used to bound what this package may say at regulatory-plan depth: floor area ratio, building height, density, setbacks and road redlines fall within this measure's approval scope, are not supplied here, and stay unknown in metrics.json with their preconditions recorded."
+      "usage_en": "Used to bound what this package may say at regulatory-plan depth: floor area ratio, building height, density, setbacks and road redlines fall within this measure's approval scope, are not supplied here, and stay unknown in metrics.json with their preconditions recorded.",
+      "organizer_registry_id": "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING"
     },
     {
       "id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -402,7 +412,8 @@
       "title_en": "Guide to the Classification of Land and Sea Use for Territorial Spatial Survey, Planning and Use Control",
       "collection_method_en": "The author read the issuing notice on the China Government Network and checked the document number, issuing body and date. **The page states no effective date and does not declare the 2020 trial version repealed; both are recorded as found rather than inferred.** The land-use codes actually used here (16, 0802, 0702, 05, 0803, 1207, 1401) were taken from the enum the repository's site-package permits and compared item by item — **what constrains this package is that enum, not a code table it has not opened** — so no claim is made to have checked the classification system itself.",
       "license_or_reuse_terms_en": "A ministerial normative document, public by law. This package cites only its existence and document number.",
-      "usage_en": "Land use is expressed with a checkable land_use_code rather than a classification invented here; final classification must rest on official documents and professional review."
+      "usage_en": "Land use is expressed with a checkable land_use_code rather than a classification invented here; final classification must rest on official documents and professional review.",
+      "organizer_registry_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
     },
     {
       "id": "MOHURD-ARCH-DESIGN-DEPTH-2016",

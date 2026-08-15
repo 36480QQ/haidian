@@ -1493,13 +1493,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-133 entries. By finder:
+135 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 94 | Found while working |
-| This package's own gate | 10 | Caught at build time — which is what a gate is for |
+| The author | 95 | Found while working |
+| This package's own gate | 11 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
 <!-- ERRATA:COUNT:END -->
@@ -1514,18 +1514,18 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **27** |
-| **Two copies of one thing drifted** | **19** |
-| **A claim outlived the package** | **13** |
-| **A deliverable was not looked at before shipping** | **12** |
-| **A hard constraint nothing could fail** | **8** |
-| **A reference did not resolve** | **7** |
-| **A number with no file behind it** | **6** |
-| **A claim this medium makes uncheckable in principle** | **5** |
-| **A number outlived the sentence holding it** | **5** |
-| **Recorded where it was found, not where anyone would look** | **5** |
+| The check measured the convenient thing | 27 |
+| Two copies of one thing drifted | 19 |
+| A claim outlived the package | 13 |
+| A deliverable was not looked at before shipping | 12 |
+| A hard constraint nothing could fail | 9 |
+| A reference did not resolve | 7 |
+| A number with no file behind it | 6 |
+| A claim this medium makes uncheckable in principle | 5 |
+| A number outlived the sentence holding it | 5 |
+| Recorded where it was found, not where anyone would look | 5 |
+| A rule applied to others but not to itself | 5 |
 | Geometry did not mean what it said | 4 |
-| A rule applied to others but not to itself | 4 |
 | A claim outlived the corpus | 3 |
 | A source was claimed and could not be named | 2 |
 | A measurement answering a question it cannot answer | 2 |
