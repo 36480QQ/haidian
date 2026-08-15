@@ -5,7 +5,7 @@ author_github: "xiaowuzicode"
 language: "zh"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.5"
+iteration: "v1.6"
 summary: "单线铁路上，司机必须持有区间令牌才能进入，令牌未归还前发不出第二枚。本方案把这条百年行车安全规则用于城市AI治理：把京张遗址公园全线做成一条持续运营、公众可预约的AI测试轨道——一枚令牌，一个区间，归还之后才发下一枚——三站两岔、一线到底，并附可被专业团队逐项复算的证据链。全部空间建议均为概念建议，不替代法定规划。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
@@ -16,6 +16,10 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 > 本文件是 `proposal.md` 的完整中文正式译文，与英文正文同为正式成果；**中文文本作为正式解释依据**。权威数据仍为 `geometry/*.geojson`、`metrics.json` 与三张矩阵。
 
 **京张令牌 · 百年京张AI创新带**
+
+![走廊全线概念视景——一线、三站、两岔](assets/figures/concept-hero-wide.jpg)
+
+*概念效果示意，由 gpt-image-2 生成，布局参考本包 `geometry/*.geojson`。仅传达空间气质，不承载任何量值主张：非测绘依据、非建成表现；本包每一个数字仍可由机读文件逐项复算。*
 
 一百年前，京张铁路被修出来是为了**运**东西。本方案主张：今天同一条线，应该用来**跑**东西。
 
