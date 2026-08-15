@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jz-open-urban-lab",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -256,7 +256,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3a113d5ad06d92e63908344160ccb2fea147ae1ec706d70e59ababd1c929f68c"
+      "sha256": "335232d9f050b1b18d9df8a80c681b7ef49d8bc00d9c96b84910704af463e0d6"
     },
     {
       "path": "sources.json",
@@ -289,6 +289,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
