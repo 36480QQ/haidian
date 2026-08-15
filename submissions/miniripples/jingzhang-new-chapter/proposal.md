@@ -124,6 +124,19 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，建筑高度、体量、界面和风貌控制由 [depth:height_massing_character] 管理，拆改留方法由 [depth:retain_renovate_demolish] 管理。用地和建筑的主要证据是 [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001] 和 [metric:building_footprint_area_sqm]。
 
+核心示范区统一采用 **JZ-01 至 JZ-08** 八个概念设计单元。JZ 编号仅表示方案内部的空间索引，不是官方地籍编号或法定规划地块。八个单元与四个粗粒度用地图层组建如下，待官方边界与控规条件发布后必须重新划分和复算。
+
+| 空间单元 | 概念功能 | 对应粗粒度图层 | 数据状态 |
+| --- | --- | --- | --- |
+| JZ-01 | 科技研发 | LU-001 AI 研发创新用地 | provisional design target |
+| JZ-02 | AI 总部与开源协作枢纽 | LU-001 AI 研发创新用地 | provisional design target |
+| JZ-03 | 创新孵化与成果转化 | LU-002 公园绿地与开敞空间 | provisional design target |
+| JZ-04 | 商业与生活服务配套 | LU-002 公园绿地与开敞空间 | provisional design target |
+| JZ-05 | 核心启动组团与城市智能体沙盒 | LU-003 产业与商业服务用地 | provisional design target |
+| JZ-06 | 公共文化与城市服务 | LU-003 产业与商业服务用地 | provisional design target |
+| JZ-07 | 混合生活与创客社区 | LU-004 社区服务与配套用地 | provisional design target |
+| JZ-08 | 人才公寓与生活配套 | LU-004 社区服务与配套用地 | provisional design target |
+
 建筑规模和强度指标必须与 `metrics.json` 和图层一致。若总建筑规模、容积率、建筑高度、建筑密度、绿地率、退线和建筑控制线缺少官方条件，应统一使用 `status=unknown`，并在 `reason` / `assumptions` 中说明待补条件、当前假设和正式数据到位后的复算路径，不得用固定数值制造精确感。A3 文册应给出更新项目清单和指标复核表，A0 展板应把关键空间结构和重点片区表达清楚，HTML 页面应提供指标和图层联动查看。
 
 ## 交通、轨道、市政与公共服务设施
@@ -152,12 +165,12 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 | 项目编号 | 项目名称 | 类型 | 主要依赖 | 证据引用 |
 | --- | --- | --- | --- | --- |
-| JZ-01 | 京张遗址公园慢行断点缝合 | 公共空间/交通 | 道路红线、桥下空间、交通组织复核 | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | 众智园清河创新界面 | 蓝绿空间/产业展示 | 河道蓝线、生态和防洪条件 | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-03 | 原点社区近校成果转化街 | 城市更新/产业服务 | 校区边界、权属、首层业态 | [data:geometry/buildings.geojson#BLDG-001] |
-| JZ-04 | 大钟寺站四象限步行连通 | 轨道一体化/慢行 | 轨道站点、道路交叉口、市政管线 | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | AI公共服务与端侧算力节点 | 新基建/公共服务 | 能源、算力、安全和运营主体 | [data:geometry/constraints.geojson#CONSTRAINTS] |
-| JZ-06 | 全球AI活动周公共路线 | 运营/品牌 | 公共空间许可、活动安全、版权清权 | [data:geometry/phasing.geojson#PHASE-001] |
+| PRJ-01 | 京张遗址公园慢行断点缝合 | 公共空间/交通 | 道路红线、桥下空间、交通组织复核 | [data:geometry/roads.geojson#ROAD-001] |
+| PRJ-02 | 众智园清河创新界面 | 蓝绿空间/产业展示 | 河道蓝线、生态和防洪条件 | [data:geometry/green_space.geojson#GREEN-001] |
+| PRJ-03 | 原点社区近校成果转化街 | 城市更新/产业服务 | 校区边界、权属、首层业态 | [data:geometry/buildings.geojson#BLDG-001] |
+| PRJ-04 | 大钟寺站四象限步行连通 | 轨道一体化/慢行 | 轨道站点、道路交叉口、市政管线 | [data:geometry/public_space.geojson#PUBLIC-001] |
+| PRJ-05 | AI公共服务与端侧算力节点 | 新基建/公共服务 | 能源、算力、安全和运营主体 | [data:geometry/constraints.geojson#CONSTRAINTS] |
+| PRJ-06 | 全球AI活动周公共路线 | 运营/品牌 | 公共空间许可、活动安全、版权清权 | [data:geometry/phasing.geojson#PHASE-001] |
 
 分期应与 100 天征集设计周期形成区分：征集周期是提交成果的时间要求，实施分期是城市更新和项目建设的推进路径。方案应提出近期试点、中期更新和长期治理框架，并标明哪些内容可先以轻量设施、运营活动和服务平台启动，哪些必须等待正式控规、市政、交通和权属条件确认。对于年度活动体系、开发者社区运营、场景开放日、公共体验路线和国际传播机制，正文应说明运营对象、频率、责任边界、转化路径和风险，不得只写宣传口号。
 

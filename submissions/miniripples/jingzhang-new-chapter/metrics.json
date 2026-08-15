@@ -13,9 +13,11 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
+      "source_status": "provisional_only",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Calculated from the participant-generated provisional boundary in geometry/site_boundary.geojson; the official boundary polygon is pending release.",
+        "This approximately 11.4 sq km value describes the submitted overall-study boundary and must not be confused with the separate 24.5 ha core demonstrator target."
       ]
     },
     "building_footprint_area_sqm": {
@@ -26,8 +28,11 @@
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "source_status": "participant_design",
+      "assumptions": [
+        "Derived from an agent-generated design layer; survey and official building data are pending professional verification."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -38,8 +43,11 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "source_status": "provisional_only",
+      "assumptions": [
+        "Derived from a participant-generated green-space layer divided by the provisional overall-study boundary; design-study value only."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -50,8 +58,11 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "source_status": "provisional_only",
+      "assumptions": [
+        "Derived from a participant-generated public-space layer divided by the provisional overall-study boundary; design-study value only."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -180,6 +191,22 @@
       "confidence": "low",
       "assumptions": [
         "Conceptual continuous slow-mobility route, subject to survey."
+      ]
+    },
+    "core_demo_unit_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count(conceptual_core_units_JZ_01_through_JZ_08)",
+      "confidence": "low",
+      "source_status": "participant_design",
+      "assumptions": [
+        "JZ-01 through JZ-08 are conceptual design units, not official cadastral or statutory planning parcels."
       ]
     },
     "ai_scene_cards_count": {

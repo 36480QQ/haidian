@@ -15,7 +15,19 @@
         "name_zh": "一期可讨论范围",
         "area_sqm_declared": 4587013.573,
         "design_package": "jingzhang-new-chapter",
-        "design_concept": "rail_trace_intelligence_vein"
+        "design_concept": "rail_trace_intelligence_vein",
+        "unit_system": "JZ-01_through_JZ-08",
+        "unit_ids": [
+          "JZ-01",
+          "JZ-02",
+          "JZ-05"
+        ],
+        "project_ids": [
+          "PRJ-01",
+          "PRJ-02",
+          "PRJ-05"
+        ],
+        "unit_status": "provisional_design_target"
       },
       "geometry": {
         "type": "Polygon",

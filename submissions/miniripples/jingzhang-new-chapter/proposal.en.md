@@ -69,12 +69,18 @@ Qinghuayuan Station is the cultural and spatial heart of the proposal. Its detai
 
 The four principal plots below are conceptual subareas within the 24.5 ha core demonstrator. Their values are design targets, not approved statutory controls; detailed survey and official boundaries may require consolidation or adjustment. [metric:core_demo_target_far] [assumption:A-CORE-DEMO-001]
 
-| Plot | Primary Land Use | Site Area (sqm) | FAR | Height Limit (m) | Green Ratio | Building Density | Core Functions |
-| :--- | :--- | ---: | ---: | ---: | ---: | ---: | :--- |
-| **JZ-01** | Commercial / Research (B29/A35) | 18,200 | 1.8 | 24 | 35% | 35% | Adaptive reuse of the historic station, open-source Agent club, and cultural exhibition hall |
-| **JZ-02** | Innovation Research / AI Laboratory (A35) | 32,500 | 2.2 | 36 | 30% | 40% | Embodied-intelligence sandbox and joint chip/foundation-model laboratory |
-| **JZ-03** | Urban Park / Green Corridor (G1) | 85,000 | 0.1 | 6 | 75% | 8% | Railway heritage park, outdoor embodied-intelligence test field, and primary slow-mobility axis |
-| **JZ-04** | Mixed Use / Maker Community (R2/B1) | 26,000 | 2.0 | 30 | 35% | 32% | Developer housing, 24-hour geek district, and computing-power café |
+The core demonstrator consistently uses **eight conceptual design units, JZ-01 through JZ-08**. These are internal spatial references, not official cadastral parcels or statutory planning blocks. They are grouped into four coarse land-use geometries and must be redrawn and recalculated when official boundaries and planning controls become available.
+
+| Spatial Unit | Conceptual Function | Coarse Geometry Reference | Evidence Status |
+| :--- | :--- | :--- | :--- |
+| **JZ-01** | Technology R&D | LU-001 AI research and innovation | provisional design target |
+| **JZ-02** | AI headquarters and open-source collaboration hub | LU-001 AI research and innovation | provisional design target |
+| **JZ-03** | Innovation incubation and technology transfer | LU-002 parks and open space | provisional design target |
+| **JZ-04** | Commercial and everyday service support | LU-002 parks and open space | provisional design target |
+| **JZ-05** | Core starter cluster and Urban Agent sandbox | LU-003 industry and commercial services | provisional design target |
+| **JZ-06** | Civic, cultural, and urban services | LU-003 industry and commercial services | provisional design target |
+| **JZ-07** | Mixed living and maker community | LU-004 community services | provisional design target |
+| **JZ-08** | Talent housing and residential support | LU-004 community services | provisional design target |
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 

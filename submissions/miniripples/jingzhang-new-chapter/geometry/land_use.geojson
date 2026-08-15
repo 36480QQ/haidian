@@ -15,7 +15,13 @@
         "name_zh": "AI研发创新用地",
         "area_sqm_declared": 2674562.492,
         "design_package": "jingzhang-new-chapter",
-        "design_concept": "rail_trace_intelligence_vein"
+        "design_concept": "rail_trace_intelligence_vein",
+        "unit_system": "JZ-01_through_JZ-08",
+        "unit_ids": [
+          "JZ-01",
+          "JZ-02"
+        ],
+        "unit_status": "provisional_design_target"
       },
       "geometry": {
         "type": "Polygon",
@@ -66,7 +72,13 @@
         "name_zh": "公园绿地与开敞空间",
         "area_sqm_declared": 2589339.239,
         "design_package": "jingzhang-new-chapter",
-        "design_concept": "rail_trace_intelligence_vein"
+        "design_concept": "rail_trace_intelligence_vein",
+        "unit_system": "JZ-01_through_JZ-08",
+        "unit_ids": [
+          "JZ-03",
+          "JZ-04"
+        ],
+        "unit_status": "provisional_design_target"
       },
       "geometry": {
         "type": "Polygon",
@@ -109,7 +121,13 @@
         "name_zh": "产业服务与商业服务用地",
         "area_sqm_declared": 3366138.181,
         "design_package": "jingzhang-new-chapter",
-        "design_concept": "rail_trace_intelligence_vein"
+        "design_concept": "rail_trace_intelligence_vein",
+        "unit_system": "JZ-01_through_JZ-08",
+        "unit_ids": [
+          "JZ-05",
+          "JZ-06"
+        ],
+        "unit_status": "provisional_design_target"
       },
       "geometry": {
         "type": "Polygon",
@@ -152,7 +170,13 @@
         "name_zh": "社区服务与配套用地",
         "area_sqm_declared": 2782792.823,
         "design_package": "jingzhang-new-chapter",
-        "design_concept": "rail_trace_intelligence_vein"
+        "design_concept": "rail_trace_intelligence_vein",
+        "unit_system": "JZ-01_through_JZ-08",
+        "unit_ids": [
+          "JZ-07",
+          "JZ-08"
+        ],
+        "unit_status": "provisional_design_target"
       },
       "geometry": {
         "type": "Polygon",
