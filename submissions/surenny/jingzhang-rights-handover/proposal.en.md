@@ -35,7 +35,7 @@ Every boundary and key-area polygon is provisional. Areas are internal EPSG:4548
 
 ## Coordinated Research Area: Industry and Future City Research
 
-The station organizes universities, communities, services, privacy/copyright professionals, vendors, and maintainers into an inventory-freeze-verify-choice-receipt-appeal chain. AI lists only authorized records, flags missing links, drafts bilingual options, and checks receipts; it cannot infer age, capacity, guardianship, authorship, or deletion duties. [source:SOURCE-REGISTRY] [standard:GENERATIVE-AI-INTERIM-MEASURES]
+The station organizes universities, communities, services, privacy/copyright professionals, vendors, and maintainers into an inventory-freeze-verify-choice-receipt-appeal chain. AI lists only authorized records, flags missing links, drafts bilingual options, and checks receipts; it cannot infer age, capacity, guardianship, authorship, or deletion duties. [source:SOURCE-REGISTRY] [source:GENERATIVE-AI-MEASURES]
 
 Six international references provide question frames only: UNICEF for participation and well-being; the ICO code for age-appropriate and high-privacy defaults; the UK Service Standard for whole tasks and assisted routes; Amsterdam and Helsinki registers for purpose, impact, contacts, and feedback; and NIST AI RMF for risk cycles. None proves local law or performance. [source:CASE-UNICEF-AI-CHILDREN] [source:CASE-ICO-CHILDRENS-CODE] [source:CASE-NIST-AI-RMF]
 

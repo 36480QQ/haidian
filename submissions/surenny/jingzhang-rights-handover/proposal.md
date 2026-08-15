@@ -35,7 +35,7 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 ## 统筹研究范围产业与未来城市研究
 
-换手站把高校、社区、公共服务、隐私/版权专业者、平台供应商和维护团队组织为“目录—冻结—核验—本人选择—下游回执—独立申诉”的开放验证链。AI 只整理已授权目录、提示复制链缺口、草拟双语选项和检查回执；不得推断年龄、能力、监护关系、作品归属或删除义务。[source:SOURCE-REGISTRY] [standard:GENERATIVE-AI-INTERIM-MEASURES]
+换手站把高校、社区、公共服务、隐私/版权专业者、平台供应商和维护团队组织为“目录—冻结—核验—本人选择—下游回执—独立申诉”的开放验证链。AI 只整理已授权目录、提示复制链缺口、草拟双语选项和检查回执；不得推断年龄、能力、监护关系、作品归属或删除义务。[source:SOURCE-REGISTRY] [source:GENERATIVE-AI-MEASURES]
 
 六个国际案例只提取问题框架，不移植法律或数值：UNICEF AI for Children 用于儿童参与和福祉提问；ICO Children’s Code 用于比较年龄适当与高隐私默认；英国 Service Standard 用于完整任务和辅助渠道；阿姆斯特丹与赫尔辛基登记用于用途、影响、联系人和反馈；NIST AI RMF 用于风险循环。[source:CASE-UNICEF-AI-CHILDREN] [source:CASE-ICO-CHILDRENS-CODE] [source:CASE-NIST-AI-RMF]
 

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b703e922e99219514e1056de7facb9f51b02e43d4e8288d4ef601dbcc09fc78e"
+      "sha256": "3ccb7af22c29979d87b9b0618607dcf5042752fddb7491b6cafabe9dc3597bb6"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "faff4f721021ad50d5edfe750a34a8fd2a2bb5c1e2581396f5fa11a61b4cb76a"
+      "sha256": "c1dd129aa547a22797bc2196cb4917c6726d168c2590846d2c2f92d653c4e0ba"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a1c51294a9b0ee4a6d229af3b892813d8e3035a6a74bd957cbb6d089b0d5cb12"
+      "sha256": "57c37682aa3e809aa65c2c2ca5c9c8441b3ed400bcef8472089406de4da70f1a"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c321a1d7837a31264018a85be9ecb103d260d037466abae3055d232edeb1f954"
+      "sha256": "8b371c95994f66ae8387a43efa39d49414f1537b82ec3e852e66a58e6f69c013"
     },
     {
       "path": "report/narrative.md",
@@ -173,7 +173,7 @@
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "c8aededfb03e92651d459093049dbd2a1ee356716e56a17407ce3c90aff97903"
+      "sha256": "cb88d6f9c1b8aee24c5fe73430f760c3ca778ab1a5cf76af30d425a9342549e8"
     },
     {
       "path": "geometry/land_use.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ab728dfd15cc59841c74e52db4270493b41d4f5dc6bdfb8b7f6c6c7065ac1844"
+      "sha256": "a35aeb0d426bc129c49277df684b2725d2fcc63c62f295e600ba432b75656d7e"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1218b79837fe58be3e39921e16d516e5515f563ddf09e472cb10df6b8e70cd18"
+      "sha256": "54d2b6d50280d55019a3dad88ac60026ae900cb833b0395bf1f99e3bbf1f2c22"
     },
     {
       "path": "visual/index.en.html",
