@@ -147,7 +147,22 @@ SC-01—SC-12 每项都有公共问题、AI 必要性、同任务人工/非数�
 
 ### 十二场景空间绑定
 
-SC-01/03 绑定 AOC-02 的无障碍与照护转介，SC-04 绑定 AOC-03 与 DZS-02 的清权遗产讲述，SC-06 绑定 ZZY-03 的热舒适，SC-07 绑定 ZZY-01 的共享设施预约，SC-08 绑定 ZZY-01 与 DZS-01 的非投资承诺协作，SC-09 绑定 AOC-01 的社区议事，SC-10 绑定 DZS-03 的多语导视；SC-02/05/11/12 作为跨九站的夜间、换乘、应急和共创服务。小月河翼承接 SC-06/12 的场景问题，科技服务翼承接 SC-07/08 的专业支持。以上是站点合同映射，不是现实部署。 [data:visual/assets/scenarios.json#/scenarios] [metric:scenario_card_count]
+| ID | 场景 | 站点 / 区域 / 协同翼 |
+|---|---|---|
+| SC-01 | 无障碍连续路径 | AOC-02/ai_origin_community/X |
+| SC-02 | 夜间安全陪伴 | ALL9/ALL3/X |
+| SC-03 | 照护接驳 | AOC-02/ai_origin_community/X |
+| SC-04 | 遗产讲述 | AOC-03,DZS-02/ai_origin_community,dazhongsi/X+T |
+| SC-05 | 低碳出行 | ALL9/ALL3/X |
+| SC-06 | 热舒适调节 | ZZY-03/zhongzhiyuan/X |
+| SC-07 | 创新设施预约 | ZZY-01/zhongzhiyuan/T |
+| SC-08 | 创业协作 | ZZY-01,DZS-01/dazhongsi,zhongzhiyuan/T |
+| SC-09 | 社区议事 | AOC-01/ai_origin_community/X |
+| SC-10 | 多语导览 | DZS-03/dazhongsi/X |
+| SC-11 | 应急信息 | ALL9/ALL3/X+T |
+| SC-12 | 活动共创 | ALL9/ALL3/X+T |
+
+`ALL9=ZZY-01,ZZY-02,ZZY-03,AOC-01,AOC-02,AOC-03,DZS-01,DZS-02,DZS-03;ALL3=ai_origin_community,dazhongsi,zhongzhiyuan;X=xiaoyuehe_scenario_wing;T=zhongguancun_service_wing`。共同服务流程：使用者先获得人工与非数字入口，再自愿选择表中场景；完成后可查看依据、反馈或退出。 以上 12 行由场景台账与专业证据绑定共同生成，均为待官方几何、场地与运营授权的概念分配，不是现实部署、选址或运营承诺。 [data:visual/assets/scenarios.json#/scenarios] [data:visual/assets/professional-evidence.json#/scenario_space_wing_bindings] [metric:scenario_card_count]
 
 ![十二服务记录、公共 AI 与退出链](assets/figures/mobility-bluegreen.png)
 

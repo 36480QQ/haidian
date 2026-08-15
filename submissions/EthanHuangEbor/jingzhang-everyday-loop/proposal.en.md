@@ -141,7 +141,22 @@ Five core persona groups cover residents/carers, researchers/developers, startup
 
 ### Twelve-scenario spatial binding
 
-SC-01 accessible navigation, SC-02 shade/rest, SC-03 care waiting and SC-04 staffed multilingual help bind to the AI Origin Community and the Xiaoyue River scenario-enablement wing. SC-05 open-model explanation, SC-06 controlled evaluation, SC-07 developer sandbox and SC-08 research-to-public translation bind to Zhongzhiyuan and the Zhongguancun technology-service wing. SC-09 heritage interpretation, SC-10 visitor transfer, SC-11 public launch and SC-12 incident/appeal close-out bind to Dazhongsi and the heritage public spine. These are concept allocations, not selected sites; each may move, shrink or stop when boundary, title, accessibility, heritage, fire or operator evidence conflicts. [data:visual/assets/scenarios.json#/scenarios] [metric:scenario_card_count]
+| ID | Scenario | Stations / areas / wings |
+|---|---|---|
+| SC-01 | Accessible continuous route | AOC-02/ai_origin_community/X |
+| SC-02 | Night safety companion | ALL9/ALL3/X |
+| SC-03 | Care transfer | AOC-02/ai_origin_community/X |
+| SC-04 | Heritage storytelling | AOC-03,DZS-02/ai_origin_community,dazhongsi/X+T |
+| SC-05 | Low-carbon trip | ALL9/ALL3/X |
+| SC-06 | Thermal comfort | ZZY-03/zhongzhiyuan/X |
+| SC-07 | Facility booking | ZZY-01/zhongzhiyuan/T |
+| SC-08 | Venture collaboration | ZZY-01,DZS-01/dazhongsi,zhongzhiyuan/T |
+| SC-09 | Community deliberation | AOC-01/ai_origin_community/X |
+| SC-10 | Multilingual guidance | DZS-03/dazhongsi/X |
+| SC-11 | Emergency information | ALL9/ALL3/X+T |
+| SC-12 | Event co-creation | ALL9/ALL3/X+T |
+
+`ALL9=ZZY-01,ZZY-02,ZZY-03,AOC-01,AOC-02,AOC-03,DZS-01,DZS-02,DZS-03;ALL3=ai_origin_community,dazhongsi,zhongzhiyuan;X=xiaoyuehe_scenario_wing;T=zhongguancun_service_wing`. Common service journey: The user first receives a staffed and non-digital route, then may opt into the listed service; evidence, feedback and exit remain visible. These 12 rows are generated jointly from the scenario ledger and professional-evidence bindings. All remain conceptual assignments pending official geometry, site and operator authorization; they are not deployment, site-selection or operating commitments. [data:visual/assets/scenarios.json#/scenarios] [data:visual/assets/professional-evidence.json#/scenario_space_wing_bindings] [metric:scenario_card_count]
 
 ![Twelve services, public AI and exit chain](assets/figures/mobility-bluegreen.en.png)
 
