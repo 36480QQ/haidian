@@ -469,8 +469,6 @@ The indicator system at minimum covers overall design area, key area areas, gree
 
 ![Metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
-![Volume scenario derivation chain](assets/figures/p5-3_volume_chain.en.png)
-
 ![Implementation & operation mechanism](assets/figures/p5-2_implementation_mechanism.en.png)
 
 
