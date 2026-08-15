@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M43",
+      "gate": "sources_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一条国际案例来源的行号从 C3 改成 C9——正文案例表里没有 C9 这一行。",
+      "what_en": "Change one case source's row label from C3 to C9, which no row in the case table carries.",
+      "why_zh": "六个国际案例在正文里没有内联引用（六条在英文版要花约 216 字节，而英文版只剩几十）——**联接全靠每条来源的 usage 以行号开头**。这条联接一旦对不上，读者手里的登记表就再也走不回案例表的那一行，而这正是本包在别处要求别人做到的那件事。",
+      "why_en": "The six international cases carry no inline citation in the prose - six would cost about 216 bytes in an English edition with tens to spare - so the join rests entirely on each source's usage opening with the row label. Break it and a reader holding the registry can no longer walk back to the case-table row, which is the very thing this package requires of others."
+    },
+    {
       "id": "M42",
       "gate": "sources_qa.py",
       "target": "sources.json",
@@ -511,7 +523,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 42,
+  "caught": 43,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",

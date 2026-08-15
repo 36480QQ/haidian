@@ -588,5 +588,7 @@
     "摘要": "usage / usage_en —— **这一项是映射，不是新增字段**：本包记的是「该文件里本包据以立论的内容」，比一份通用摘要更窄也更可核验；写明是为了让读者知道这一项被什么回答，而不是假装两者相同。",
     "采集状态": "collection_status",
     "人工复核状态": "manual_review_status"
-  }
+  },
+  "case_join_note_zh": "**六个国际案例与本登记表的联接，方向是从这里指向正文，而不是反过来。** 每条 `CASE-Cn-*` 的 `usage` 以正文案例表的行号 `Cn：` 开头，因此拿到本文件的人可以把六行逐一走到来源、URL、权威等级与访问日期。**正文里没有对应的 `[source:]` 内联引用，这是一个明写出来的取舍**：六条内联引用在英文版要花约 216 字节，而英文版此刻只剩几十字节（E135 记过它一度越限、构建却说 OK）。在「删掉别处的内容换取六个标记」与「把联接放在这份评审整份收到的文件里」之间，本包选了后者，并把理由写在这里而不是留给读者去猜。`sources_qa` 逐条核对这个联接：行号对不上即构建失败。",
+  "case_join_note_en": "The join between the six international cases and this registry runs from here to the prose, not the other way. Each CASE-Cn record's usage begins with the row label Cn from the case table, so a reader holding this file can walk all six rows to their source, URL, authority level and access date. There is no inline [source:] citation in the prose, and that is a stated trade: six inline citations would cost about 216 bytes in the English edition, which has only tens to spare - E135 records the edition going over that cap while the build said OK. Between cutting content elsewhere to buy six markers and putting the join in a file the reviewer receives whole, this package chose the second and says so here rather than leaving it to be inferred. sources_qa checks the join row by row and fails the build if a label does not match."
 }
