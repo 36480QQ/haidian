@@ -446,6 +446,61 @@
    "usable_for_formal": "background_only",
    "usage": "Secondary account of the 2024-12-19 to 2025-01-19 draft exhibition: Dazhongsi centre focused on internet services, AI and new media; Wudaokou centre as an AI industry cluster and top-talent exchange. Used only to register what the exhibition communicated; the exhibition's own long-image reader PDF was found unreachable (HTTP 404) at its original district-portal URL when accessed on 2026-08-16, which is registered as-is.",
    "not_usable_for": "Not the plan text itself; carries no control values and none are derived."
+  },
+  {
+   "id": "OSM-FABRIC-SNAPSHOT-20260815",
+   "title": "OpenStreetMap public background context (Overpass snapshot, 2026-08-10)",
+   "publisher": "OpenStreetMap contributors",
+   "url": "https://overpass-api.de/api/interpreter",
+   "accessed_date": "2026-08-10",
+   "retrieved_at_utc": "2026-08-10T04:28:04Z",
+   "osm_base_timestamp": "2026-08-10T04:25:42Z",
+   "endpoint": "https://overpass-api.de/api/interpreter",
+   "bbox_epsg4326": {
+    "south": 39.936287,
+    "west": 116.336183,
+    "north": 40.029213,
+    "east": 116.358817
+   },
+   "path": "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+   "source_type": "osm",
+   "usable_for_formal": "background_only",
+   "attribution": "© OpenStreetMap contributors",
+   "license": "Open Database License (ODbL) 1.0",
+   "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+   "usage": "Background-only orientation and explanatory-figure generation for publicly mapped roads, rail, buildings, green/water features, and stations within the recorded bbox.",
+   "not_usable_for": "Deriving, revising, validating, or replacing the project boundary or key-area geometry; official redlines; statutory planning controls; road or engineering alignments; heritage controls; ownership or parcel/building surveys; precise areas; completeness claims; site accessibility compliance; government approval; or implementation commitments.",
+   "redistribution": "The compact snapshot (two JSON parts under visual/assets/osm-fabric/, concatenation byte-exact) is the only OSM-derived database redistributed, under ODbL 1.0 share-alike with attribution; no raw response and no map tiles are redistributed.",
+   "title_zh": "OpenStreetMap 定界精简快照（肌理读数用，Overpass 2026-08-15T21:54:38Z，osm_base 21:53:34Z）",
+   "title_en": "OpenStreetMap bounded compact snapshot (for fabric readings; Overpass 2026-08-15T21:54:38Z, osm_base 21:53:34Z)",
+   "accessed": "2026-08-15",
+   "usage_note_zh": "仅用于计算现状肌理读数（路网密度、交叉口密度、街块规模、超大街块占比）、偏差情境读数与横向穿越证据清单；快照为派生数据库，以 ODbL 1.0 随包分发并署名 © OpenStreetMap contributors。禁止用于推导、修订、验证或替代本包项目边界、重点区几何与任何法定控制；偏差读数为概念几何与社区数据的情境描述，不构成对提交几何的验证。OSM 完备性限制（北京步行细部与无障碍属性数据不全）已在快照与读数文件内明文登记。",
+   "usage_note_en": "Used only to compute as-is fabric readings (network density, intersection density, block size, oversized-block share), contextual deviation readings and the lateral-crossing evidence inventory; the snapshot is a derivative database distributed with this package under ODbL 1.0, credited © OpenStreetMap contributors. It may not be used to derive, revise, validate or substitute this package's project boundaries, key-area geometry or any statutory control; deviation readings are contextual descriptions of concept geometry against community data, not validation of the submitted geometry. OSM completeness limits (sparse pedestrian detail and near-empty accessibility attributes in Beijing) are stated inside the snapshot and readings files."
+  },
+  {
+   "id": "OSM-FABRIC-SNAPSHOT-20260815",
+   "title": "OpenStreetMap bounded compact snapshot for as-is fabric readings (Overpass, 2026-08-15)",
+   "publisher": "OpenStreetMap contributors",
+   "url": "https://www.openstreetmap.org/copyright",
+   "accessed_date": "2026-08-15",
+   "retrieved_at_utc": "2026-08-15T21:54:38Z",
+   "osm_base_timestamp": "2026-08-15T21:53:34Z",
+   "endpoint": "https://overpass-api.de/api/interpreter",
+   "path": "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+   "source_type": "osm",
+   "usable_for_formal": "background_only",
+   "attribution": "© OpenStreetMap contributors",
+   "license": "Open Database License (ODbL) 1.0",
+   "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+   "usage": "Computing as-is fabric readings (walkable-network density, intersection density, block sizes, oversized-block share), contextual deviation readings, and the lateral-crossing evidence inventory. The compact snapshot is a derivative database distributed with this package under ODbL 1.0 with attribution; the raw Overpass response is not redistributed (its byte count and hash are registered in the snapshot metadata).",
+   "not_usable_for": "Deriving, revising, validating, or replacing the project boundary or key-area geometry; official redlines; statutory planning controls; road or engineering alignments; heritage controls; ownership or parcel/building status; site-accessibility compliance conclusions. Deviation readings are contextual descriptions of concept geometry against community-mapped data and constitute no validation of the submitted geometry. Completeness caveats (sparse pedestrian detail, near-empty accessibility attributes) are stated in the snapshot and readings files.",
+   "redistribution": "The compact snapshot (two JSON parts under visual/assets/osm-fabric/, concatenation byte-exact) is the only OSM-derived database redistributed, under ODbL 1.0 share-alike with attribution; no raw response and no map tiles are redistributed.",
+   "bbox_epsg4326": {
+    "south": 39.936287,
+    "west": 116.336183,
+    "north": 40.029213,
+    "east": 116.358817
+   }
   }
  ]
 }
