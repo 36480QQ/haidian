@@ -137,7 +137,7 @@ All three spatial boundaries are provisional substitutes [source:BOUNDARY-SOURCE
 
 The name is not rhetoric; it is a statement of method. In surveying, leveling means geometric spirit leveling, and its product is a **leveling network** — built from permanent stones, open to independent re-measurement by anyone, and judged as a whole by its closure error. Those three properties are exactly the governance properties this belt needs: physical, re-checkable, judged whole rather than station by station.
 
-**The naming system ships as rules, not prose.** `visual/assets/naming.json` publishes 24 identifier families, ordinal ones leading with the order, so BM-301 reads "third order, monthly". `naming_qa.py` harvests the **422 identifiers in the package**: each must match exactly one family and **no family may match nothing**. As prose a naming system dies; as rules, an identifier outside every family fails the build.
+**The naming system ships as rules, not prose.** `visual/assets/naming.json` publishes 24 identifier families, ordinal ones leading with the order, so BM-301 reads "third order, monthly". `naming_qa.py` harvests the **456 identifiers in the package**: each must match exactly one family and **no family may match nothing**. As prose a naming system dies; as rules, an identifier outside every family fails the build.
 
 The naming system is an extensible numbering grammar rather than a slogan:
 
