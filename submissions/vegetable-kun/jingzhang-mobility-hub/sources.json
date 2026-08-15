@@ -23,13 +23,21 @@
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
+      "usage": "Submitted site boundary geometry source (provisional).",
+      "provisional_only": true,
+      "official_boundary": false,
+      "boundary_precision": "provisional_rough",
+      "warning": "This boundary is generated from public data for temporary visualization and concept design ONLY. It is NOT an official redline and MUST NOT be used for precise area calculation or formal planning. Recalculate when official geometry is supplied."
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "usage": "Three required detailed-design key area boundaries (provisional).",
+      "provisional_only": true,
+      "official_boundary": false,
+      "boundary_precision": "provisional_rough",
+      "warning": "Key area boundaries are provisional and generated from public data for concept design ONLY. NOT official redlines."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
