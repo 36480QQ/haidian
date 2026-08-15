@@ -110,7 +110,7 @@
       "id": "SAME-ERROR-SYNTHETIC-FIXTURES",
       "path": "visual/assets/synthetic-test-fixtures.json",
       "source_type": "agent_generated_synthetic_data",
-      "usage": "Sixty row-level no-personal-data fixtures plus four deterministic suites, each with expected, actual, result, and failure branch; synthetic design verification only, never field performance."
+      "usage": "Sixty row-level no-personal-data fixtures plus four deterministic suites. verify-fixtures.js executes rules from synthetic_fields, derives actual outputs and suite aggregates, and requires a tampered input to exit nonzero; synthetic design verification only, never field performance."
     },
     {
       "id": "CASE-SMART-KALASATAMA",

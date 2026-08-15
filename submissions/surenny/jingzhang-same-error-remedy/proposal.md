@@ -90,7 +90,7 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 | 11 AI-off 纸面追查 | 三处重点区 | 关闭 | 版本清单、抽样、人工通知完成同一任务 |
 | 12 去标识结案摘要 | 公开复盘面 | 起草可编辑摘要 | 人工确认不含个人、群体标签或官方背书 |
 
-四项行业/专业验证分别检验版本追查、人工纳排、通知/退出安全和 AI-off 等价；`synthetic-test-fixtures.json` 逐条保存 60 条无真实个人信息的 fixture，其中 12 条共享同一错误版本、仅 1 条含投诉、4 条缺字段或有歧义。确定性脚本的包内结果为：12/12 同版本记录均被提示且 48/48 对照未被提示；8 条被人工纳入、4 条歧义转人工澄清；不安全通知为 0，3 条退出请求均生成删除结果；60/60 条普通服务保持。每项同时记录预期、实际和失败分支，任何不一致都使演练停止。这些只证明候选规则在合成 fixture 上可审计，不证明真实主动找回率、误纳率、通知安全、补救时长或现场服务连续。[source:SAME-ERROR-SYNTHETIC-FIXTURES] [metric:synthetic_test_pass_count] [metric:synthetic_persona_script_count]
+四项行业/专业验证分别检验版本追查、人工纳排、通知/退出安全和 AI-off 等价；`synthetic-test-fixtures.json` 逐条保存 60 条无真实个人信息的 fixture，其中 12 条共享同一错误版本、仅 1 条含投诉、4 条缺字段或有歧义。`verify-fixtures.js` 不读取预填实际值作结论，而是从每条 `synthetic_fields` 执行候选规则、生成逐条实际值并聚合四项 suite；内置篡改把首条错误版本改为对照版本，必须产生非零退出。确定性脚本的包内结果为：12/12 同版本记录均被提示且 48/48 对照未被提示；8 条被人工纳入、4 条歧义转人工澄清；不安全通知为 0，3 条退出请求均生成删除结果；60/60 条普通服务保持。每项同时记录预期、实际和失败分支，任何不一致都使演练停止。这些只证明候选规则在合成 fixture 上可审计，不证明真实主动找回率、误纳率、通知安全、补救时长或现场服务连续。[source:SAME-ERROR-SYNTHETIC-FIXTURES] [metric:synthetic_test_pass_count] [metric:synthetic_persona_script_count]
 
 ![Agent.3 场景、画像与可审计测试专属图板](assets/figures/agent-3-scenarios.png)
 

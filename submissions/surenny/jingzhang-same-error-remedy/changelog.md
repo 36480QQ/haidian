@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-15
+
+- Replaced six bilingual placeholder task boards with distinct, candidate-specific identity/structure, ecosystem/industry-space, scenarios/personas/tests, landmarks/components, cultural-signage, and annual-operations diagrams.
+- Re-rendered the clipped English key-area and mobility/blue-green figures with bounded text and explicit provisional/failure notes.
+- Changed the fixture verifier from stored expected/actual equality checks to input-driven rule execution, suite aggregation, and a required nonzero tamper example.
+- Removed stale `unknown_zero_*` collection names and the inherited handover purpose; linked the offline visual to the real package-local verifier.
+
 ## v0.2 - 2026-08-15
 
 - Repaired independent pre-PR block findings on a new exact head: removed stale rights-handover metric paths/formulas and GeoJSON collection names.
