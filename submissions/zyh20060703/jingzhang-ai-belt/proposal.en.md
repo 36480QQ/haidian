@@ -15,6 +15,23 @@ scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "public-safety-
 
 > **Preface to the Annals**: In the year the Jing-Zhang Railway opened, the authorities commissioned Tan Jintang to photograph the entire line — bridges, tunnels, stations, rolling stock — compiled as *The Jing-Zhang Railway Works Photographic Record*, now part of the China Documentary Heritage. More than a century later, AI travels the same line. In the same spirit, this proposal keeps a record, a collection, and a plate for every AI service on this line. **To study broadly (bo) is to observe all things and distill their essence; to write annals (zhi) is to record what is real, examine what it does, and transmit it to posterity.** The city is the annals; AI is the new species; humans are the final editors.
 
+> **One-sentence test: any AI service on this belt must answer "who is responsible for it, and who signs for its errors" - if it cannot, it does not enter the collection.**
+
+This is not a supplementary clause; it is the criterion of the whole proposal. It replaces "ethics declarations" with a verifiable question: when a service is licensed, can one point to its human responsible party, its human-fallback path, its error-disclosure record, and its exit mechanism? If not, the service should not enter public space; if yes, the intelligence layer earns its place. The most reliable institution the Jing-Zhang Railway ever produced was the shift handover - it never assumed the next shift would be ready, so someone had to sign in person. The "Accession Review" in this proposal is that institution translated into the AI era: capability may flow, but accountability must be signed for by a person.
+
+## Executive Brief
+
+| Review question | Jing-Zhang Natural History answer | Verifiable outputs |
+| --- | --- | --- |
+| Public baseline | Everyone can obtain human-fallback service and trigger stop and appeal; 10 scenario cards each state responsible party, launch condition, assessment threshold | Six-item cards, compliance baseline table (statute comparison), risk register |
+| Core proposition | The city is the annals; AI is the new species; humans hold final accession authority; capability passes "learn - examine - serve" before licensing | Five-Bo system, Accession Review Committee, three machine-readable protocols (with samples and validation report) |
+| Originality | One character "Bo" forming a system; accession review / specimen repair room / field-pairing ground as original mechanisms | Original-concept boundary statement |
+| Spatial response | One spine, five volumes (Gameplay/Imagery/Greatness/Erudition/Benevolence) + ten scenario nodes + five plates | Ten GeoJSON layers, five natural-history plates, bilingual A3/A0 booklets |
+| Compliance anchor | "Stoppable, complaint-accessible, human-fallback" split line by line into statutory basis vs self-set standards | Four-column compliance baseline (Barrier-Free Law, Generative-AI Measures, GuoBanFa 2020-45) |
+| Implementation start | Three test scenarios pilot first; quarterly accession reviews; annual annals editing | Pilot timeline, stakeholder matrix, three-phase plan |
+| Evidence state | Geometry and metrics recomputable in EPSG:4548; protocol samples pass schema validation (0 structural errors) | metrics.json, protocol validation report, sources.json |
+| Decision boundary | All spatial, brand, event, timing and role arrangements are conceptual proposals, not statutory planning or government commitments | Risk section, assumptions.json |
+
 ## Design Basis and Materials Checklist
 
 This formal proposal takes the *Prequalification Announcement for the International Urban Design Solicitation of the Centennial Jing-Zhang AI Innovation Belt* issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources as its primary basis, and the machine-readable provisional boundary, key areas, enums, metrics, and source registry maintained under `brief/site-package/` as its structured basis. Before generating any content, an AI agent must read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json`, and `data/processed/agent_fact_pack.md`, and must build the task, scope, material-usage, and data-gap checklist from `project_scope_summary.csv`, `agent_task_requirements.csv`, `source_use_matrix.csv`, and `missing_data_checklist.csv`. Every design judgment must decompose into a traceable source, a recomputable metric, a verifiable layer, and a human-reviewable assumption. The announcement requires urban-design depth equivalent to regulatory detailed planning, so narrative text cannot replace the GeoJSON layers, metrics tables, A3 booklet, A0 boards, and HTML presentation [source:OFFICIAL-ANNOUNCEMENT]. The editorial conventions of these annals additionally follow the agent taskbook [source:AGENT-TASKBOOK], with deliverable depth constrained by the existing-conditions diagnosis item [depth:existing_conditions_diagnosis].
@@ -32,6 +49,20 @@ The usage boundary of the registry is as follows [source:SOURCE-REGISTRY]:
 ![Material evidence chain and package relationship](assets/figures/site-overview.png)
 
 Where official `SITE_BOUNDARY` or `KEY_AREA` polygons are not yet available, this proposal uses `brief/site-package/geometry/provisional_boundaries.geojson` to generate the temporary formal package. `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` are labeled `provisional_constraint`, `official_boundary=false`, and are for proposal generation, self-check, visualization, and design discussion only — not as official redline, approval basis, precise area basis, or statutory control conclusions. This organizer-side data gap does not block content scoring; once official polygons are issued, site boundary, key areas, land use, roads, green space, public space, buildings, phasing, and metrics must all be recomputed [data:geometry/site_boundary.geojson#SITE-001]. The site area is cross-checked against [metric:site_area_sqm], the three key areas against [data:geometry/key_areas.geojson#PROV-KEY-001], and their count against [metric:key_area_count].
+
+### Compliance Baseline: First Separate the Statutory Floor, Then State the Self-Set Standards
+
+Three red lines recur in this proposal - stoppable, complaint-accessible, human fallback. **Only part of them has a statutory basis; the rest are this proposal's self-set public-service standards.** The table below separates the two line by line, because reading voluntarily adopted standards as general legal obligations is itself misleading; the scope and effect of statutes follow the official texts, and this table is not legal advice [source:GENERATIVE-AI-INTERIM-MEASURES] [source:BARRIER-FREE-ENVIRONMENT-LAW] [source:ELDERLY-SMART-TECH-PLAN]:
+
+| This proposal's red line | Statutory basis and its actual effect | Parts not covered by the statute, self-set by this proposal | Spatial and operational consequences |
+| --- | --- | --- | --- |
+| AI services can be stopped (exit mechanism) | Interim Measures for Generative AI Services, Article 14 (7 ministries, effective 2023-08-15): **when illegal content is found**, providers must stop generation, stop transmission, and eliminate. This is an illegal-content-handling duty; it does not set a user-facing stop right | Standing stop entrances for users; on-demand stop in non-illegal cases - self-set public-service standard | Every scenario card's "Examination" section must state exit and de-exhibition mechanisms; de-exhibition enters accession-review rules |
+| Complaint entrance convenient, timelines public | Same Measures, Article 15: providers must establish complaint/report mechanisms with convenient entrances, **publish** handling processes and feedback timelines; no numeric timelines specified | Specific numeric timelines left to future operators per staffing capacity; proposal suggests "error disclosure within 24h" as a proposal value | Specimen Repair Room is the physical carrier of published processes and timelines; protocol fields reserve timelines for operator calibration |
+| Human fallback (AI-free parallel path) | Barrier-Free Environment Law, Article 39 (effective 2023-09-01): public service premises **involving medical health, social security, financial services, daily payment etc.** shall retain on-site guidance and manual handling; **does not apply to all public spaces or digital interfaces** | Extending human fallback to all 10 scenarios and 3 test scenarios - self-set standard, not required by the statute | Bo Love Station arranged "human window before smart interface"; every card keeps an "AI-free parallel path" always available |
+| Traditional channels alongside intelligence | GuoBanFa [2020] No. 45, Implementation Plan on Solving Difficulties for the Elderly in Using Smart Technology: insists traditional service modes **run in parallel** with smart innovation, listing travel, medical, consumption, culture, and errands; the document is a **policy notice, not a legal obligation** | Coverage and binding force of "all 10 scenarios" - self-set standard; "parallel" in itself does not mean "may not be cancelled" | Bo School / Bo Love Station map "AI-free equivalent service" to the listed high-frequency matter categories item by item, not a generic "care for the elderly" |
+| Human final judgment (Accession Review) | Official agent open-call taskbook, Co-creation Charter item 7: agent proposals may be screened and ranked, **final judgment rests with humans and professional teams** - consistent with the official charter | Institutionalizing "human final judgment" into the Accession Review Committee's composition, voting rules, and one-vote veto items - this proposal's mechanism design | Identification Station provides a review hall with public seats; review records de-identified and public |
+
+This proposal's self-set admission standard: **an intelligent service that cannot be stopped, cannot be complained about, and cannot be replaced by humans should not enter the public space this proposal designs.** This is a design claim, not a statutory qualification; current regulations make no such general provision. This package is compliance comparison only, not legal advice; statutory application and case-by-case determination rest with authorities and legal professionals [depth:risk_missing_data].
 
 ## Three-Level Scope Working Framework
 
@@ -111,6 +142,21 @@ How does artificial intelligence change work, life, socializing, learning, trans
 | Act resolutely | Deploy / operate | Operation and human fallback |
 
 Every AI service must enter the collection through these five steps: without collection there is no broad study; without identification there is no accession; without accession there is no exhibition; an exhibition without resolute operation is removed. This is the general rule of the annals. Any proposal for global AI events, developer communities, open scenarios, or pilgrimage routes is worded as a "conceptual suggestion / reference scheme / material for professional teams to deepen," never as a confirmed government activity or implementation arrangement.
+
+## Global AI Innovation Ecosystem Case Study (agent.2 response)
+
+agent.2 requires at least 5 global AI innovation ecosystem cases. These annals examine six cases by the method of collection and identification - borrowing mechanisms only, never forms; each case cites its source, registered in `sources.json`. All borrowings land in the Five-Bo mechanisms, not as enterprise lists or investment commitments [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]:
+
+| Case | Region | Core mechanism | Lesson for Jing-Zhang | Landing | Non-transferable conditions |
+| --- | --- | --- | --- | --- | --- |
+| Silicon Valley (SF Bay Area) | USA | University seeding - venture capital - talent mobility loop | Confirms the "university seeding - open-source collaboration - enterprise conversion" chain; talent density over space density | Erudition Vol. (knowledge hub), Gameplay Vol. (testing) | Decades of capital and talent accumulation not replicable by planning; VC culture depends on institutional environment |
+| One-North, Singapore | Singapore | Government-led "science - industry - residence" compound planning, rolling phases | Compound planning paradigm for the three areas and two wings | Five-Volume structure, Imagery Vol. (exhibition) | Unified developer and state land regime; land and approval institutions differ |
+| King's Cross / Central Saint Martins, London | UK | Heritage-hub renewal + education anchor + creative cluster | Direct analogue for Jing-Zhang railway heritage renewal | Imagery Vol. (railway x AI narrative) | Single private master developer (Argent) with long leases; heritage regimes differ |
+| Nanshan / Yuehai St., Shenzhen | China | Hardware ecosystem + supply density + entrepreneur self-organization | "Density wins" in supporting industries; Bo-Tong-Bridge style matching | Gameplay Vol. (Bo Tong Bridge), Greatness Vol. | Path dependence of a mature cluster; anchor-firm agglomeration not reproducible by planning directives |
+| Adlershof Science Park, Berlin | Germany | Academy - industry park - new town trinity, long-cycle operation | Full chain from basic research to industry; validates Zhongzhiyuan "full-stack" positioning | Gameplay Vol. (Zhongzhiyuan) | Federal research system and park operator arrangements; long-cycle public funding model |
+| Tel Aviv startup ecology | Israel | Military-tech spillover + VC density + service-network alumni | Talent networks as infrastructure: reference for developer-community operation | Erudition Vol. (Bo Harvest Field) | Conscription-generated talent networks not transferable; national-security institutional differences |
+
+Commonality of the six: **research institutions as source, capital as fuel, talent networks as transmission, public space as container** - the universal structure of the Five-Bo mechanisms. This proposal copies no case's concrete form or policy, only general mechanisms; facts follow public sources, with no investment or output commitments.
 
 ## Overall Design Area: Urban Renewal and Urban Design at Regulatory-Detailed Depth
 
@@ -360,6 +406,15 @@ Governance mechanisms written as machine-readable protocol formats, executable b
 ```
 
 The three protocols form the prototype of "governance as protocol": machine-executable, human-reviewable, records auditable. This is the technical depth distinguishing this proposal from text-only governance approaches, open for professional teams and multi-agent communities to deepen [depth:metrics_recalculation] [depth:risk_missing_data].
+**Protocol instantiation (v4)**: all three protocols now carry JSON Schemas and synthetic samples; samples passed structural validation, recorded at [data:visual/assets/governance/validation-report.json]. Samples demonstrate machine-parseability only - they do not prove service availability, compliance, or readiness for deployment:
+
+| Protocol | Schema | Synthetic sample | Validation |
+| --- | --- | --- | --- |
+| Accession Review v1 | [data:visual/assets/governance/accession-review.schema.json] | SC-05 Bo Love Station sample [data:visual/assets/governance/example-sc05-accession-review.json] | 0 structural errors [metric:schema_valid_sample_count] |
+| Pairing Contract v1 | [data:visual/assets/governance/pairing-contract.schema.json] | T-03 Field-Pairing sample [data:visual/assets/governance/example-pairing-contract.json] | 0 structural errors [metric:schema_valid_sample_count] |
+| Error Disclosure v1 | [data:visual/assets/governance/error-disclosure.schema.json] | SC-05 simulated error sample [data:visual/assets/governance/example-error-disclosure.json] | 0 structural errors [metric:schema_valid_sample_count] |
+
+"Zero structural errors" only proves these three synthetic samples can be parsed by machines; no real service has been reviewed, paired, or deployed. Roles and timelines in the samples are conceptual placeholders pending operators and professional teams [metric:machine_readable_governance_protocol_count] [metric:protocol_validation_error_count].
 
 ## Land Use, Building Scale, and Retain–Renovate–Demolish
 
