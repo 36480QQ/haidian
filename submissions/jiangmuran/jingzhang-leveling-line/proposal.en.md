@@ -137,7 +137,7 @@ All three spatial boundaries are provisional substitutes [source:BOUNDARY-SOURCE
 
 The name is not rhetoric; it is a statement of method. In surveying, leveling means geometric spirit leveling, and its product is a **leveling network** — built from permanent stones, open to independent re-measurement by anyone, and judged as a whole by its closure error. Those three properties are exactly the governance properties this belt needs: physical, re-checkable, judged whole rather than station by station.
 
-**The naming system ships as rules, not prose.** `visual/assets/naming.json` publishes 24 identifier families, ordinal ones leading with the order, so BM-301 reads "third order, monthly". `naming_qa.py` harvests the **457 identifiers in the package**: each must match exactly one family and **no family may match nothing**. As prose a naming system dies; as rules, an identifier outside every family fails the build.
+**The naming system ships as rules, not prose.** `visual/assets/naming.json` publishes 24 identifier families, ordinal ones leading with the order, so BM-301 reads "third order, monthly". `naming_qa.py` checks every identifier against the **24 published families**: each must match exactly one and **no family may match nothing**. As prose a naming system dies; as rules, an identifier outside every family fails the build.
 
 The naming system is an extensible numbering grammar rather than a slogan:
 
@@ -896,7 +896,7 @@ One unique numbered plaque per contributor; once assigned, a number is never rec
 | Id | Component | The hard constraint — the one that can fail on site | Serves |
 |---|---|---|---|
 | KIT-01 | Benchmark stone and plaque | Stone top within ±5 mm of the paving — "flush" with no tolerance cannot be failed; 400 × 400 × 600 mm, foundation underside at least 100 mm below the local standard frost depth; plaque number unique and matching a `benchmark_id` in the geometry one-for-one. Detailed in FIG.16. **In winter this constraint collides with itself** — a mark set flush into level paving sits in standing water and becomes the trip hazard once frozen; the resolution and the winter reading are FIG.22 | P4, P5, P7 |
-| KIT-02 | Reading plate | Current f and tolerance F visible, with the re-survey date; a stale value counts as not posted. Face 600 × 450 mm raked 15°, lower edge 900 mm and upper edge 1,350 mm — the band a seated and a standing reader share; the face is replaceable without the post. FIG.16 | P2, P3, P4 |
+| KIT-02 | Reading plate | Current f and tolerance F visible with the re-survey date; a stale value counts as not posted. Face 600 × 450 mm raked 15°, lower edge 900 mm and upper edge 1,350 mm — the band a seated and a standing reader share; the face is replaceable without the post. FIG.16 | P2, P3, P4 |
 | KIT-03 | Seating that permits staying | Seat 450 mm high with armrests so getting up is possible; within 2,000 mm of the reading plate and in sight of it, so a reading needs no standing wait. FIG.16 | P5, P7 |
 | KIT-04 | Accessible wayfinding | Guidance strip 300 mm wide and continuous, stopping 300 mm short of the stone so it does not lead onto it; tactile and visual; Ø1,500 mm turning space with 2,100 mm headroom at the reading position; the approach may not be by steps alone. FIG.16; inside the stretches FIG.21 marks as failing it also carries the find-the-benchmark information, FIG.23 | P5, P6, P7 |
 | KIT-05 | Appeal point | **Must offer a QR code and a phone or in-person route** — a QR code alone excludes anyone without a smartphone from appealing, which makes persona P4 unworkable | P4, P5, P6 |
@@ -1220,12 +1220,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-184 entries. By finder:
+185 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 135 | Found while working |
+| The author | 136 | Found while working |
 | This package's own gate | 11 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; [@](https://github.com/) on  |
 
@@ -1247,7 +1247,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Outlived the package | 15 |
 | Nothing fails it | 13 |
 | Uncheckable | 11 |
-| Outlived its line | 8 |
+| Outlived its line | 9 |
 | A reference did not resolve | 8 |
 | No file behind it | 6 |
 | Not itself | 6 |
@@ -1679,7 +1679,7 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 | FIG.02 | Evidence chain as an unclosed leveling circuit | The red gap left of the circuit is the closure error; three cards below are the measurement of this call itself |
 | FIG.03 | Three scope levels and network tiers | The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give |
 | FIG.04 | Three areas, two wings and benchmark layout | Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points |
-| FIG.05 | Slow mobility, blue-green and connecting routes | The two connecting routes and their direction, and the tolerance classes lower right |
+| FIG.05 | Slow mobility, blue-green and connecting routes | The two connecting routes and their direction, and the tolerance bands lower right |
 | FIG.06 | Recomputed metrics and closure evidence | The three metric classes at left; at right the run: ten cases, two accepted, eight refused, reasons quoted verbatim |
 | FIG.07 | Identity: mark, construction and applications | The mark draws the method: the datum departs, rises, returns, does not land back on the datum |
 | FIG.08 | Innovation ecosystem and element mechanisms | The chain of custody for each element; the red box where the funding row is deliberately left blank; the gap all six cases point at |
@@ -1728,13 +1728,13 @@ Every item can be completed independently:
 9. `risk.json` — eight-dimension self-assessment, mitigations and human review
 10. `changelog.md` — **including the errors found in itself**
 11. `agent.json` — full disclosure of the generation method; `model` is not a placeholder
-12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, checkable with `pypdf`: `FontFile3` under `DescendantFonts` carries the CJK faces; DejaVuSans-Bold is a `/TrueType` subset under `FontFile2`, so `FontFile3` alone will not see it
+12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, checked with `pypdf`: `FontFile3` under `DescendantFonts` carries the CJK faces; DejaVuSans-Bold is a `/TrueType` subset under `FontFile2`, so `FontFile3` alone will not see it
 
 **Who this list is for.** The repository's `scripts/review_submission.py` hands the reviewing model nine files whole — `proposal.md`, `manifest.json`, `metrics.json`, `assumptions.json`, `sources.json`, `self_check.json` and the three matrices — plus eighteen images (see `visual/assets/visual_packet_qa.json`). It does **not** read `geometry/`, `visual/assets/`, `risk.json`, `changelog.md` or `agent.json`.
 
-So of the 12 items above, **0 can be executed literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would repeat, at the scale of a checklist, this package's erratum about `analysis/`: an invitation to verify addressed to someone who cannot.
+So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would repeat, at the scale of a checklist, this package's erratum about `analysis/`: an invitation to verify addressed to someone who cannot.
 
-**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files, 1078 KB, 1,645 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
+**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.69 s**; 9 files, 1083 KB, 1,646 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
 
 **This disclosure has a shelf life, so it states where the fix stands.** The gap is upstream Issue #2170; the maintainers opened PR #2181, which adds an auditable access boundary to the review input, states that participant verification scripts are never executed, and corrects the review prompt so that a model **may not deduct points or fail a gate merely because it cannot open a registered artifact**. Once it merges the count above is unchanged; its consequence is not, because unreachability stops being read as the participant having withheld something. This package has already taken that recovery route: the key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
