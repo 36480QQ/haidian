@@ -304,6 +304,18 @@
       "why_en": "**A join table in which every unit is served is a table nobody checked.** The taskbook publishes five structural units and this proposal is a levelling network, so what each unit gets differs: the three areas each have a detail section and neither wing does. Upgrading a wing's row costs nothing and buys a reviewer's belief in two sections that were never written — which is the reason every matrix in this package exists: a claim of coverage is not coverage."
     },
     {
+      "id": "M55",
+      "gate": "figure_title_qa.py",
+      "target": "visual/index.html",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 `visual/index.html` 上 FIG.05 的图注改一个字，图不动。",
+      "what_en": "Rename FIG.05's caption on visual/index.html and leave the drawing alone.",
+      "why_zh": "**每张图的名字都存了两份**：一份画在图头上，一份作为图注、alt 文本与索引条目。评审在 1440×1600 的截图里读到的是后者，在图上读到的是前者。此前没有任何东西比对过这两份——比对之后，中文两处不一致、**英文六处不一致**，六处都是同一个中文名字的两种独立英译（closing routes 对 connecting routes、network orders 对 network tiers）。而这道检查的第一版只匹配得上中文页的文件名，**把 33 条中文图注报成了「两版都读过」**——一道悄悄只覆盖一半范围的检查，正是本包整册在拒绝的那种「声称覆盖」。",
+      "why_en": "**Every sheet's name is kept twice**: drawn in its own header, and again as the caption, the alt text and the index row. A reviewer reads the second under a 1440x1600 screenshot and the first on the image. Nothing had compared them. Compared: two disagreed in Chinese and **six in English**, every one of the six a second independent translation of one Chinese name — closing routes against connecting routes, network orders against network tiers. And this check's first version could only match the Chinese page's filenames, so it read 33 Chinese captions and reported both editions: a check that silently covers half its scope is the claim of coverage this package spends its length refusing."
+    },
+    {
       "id": "M54",
       "gate": "formal_visual_metrics_qa.py",
       "target": "metrics.json",
@@ -657,7 +669,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 54,
+  "caught": 55,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -670,6 +682,7 @@
     "declared_geometry_qa.py",
     "evidence_ceiling.py",
     "figure_citation_qa.py",
+    "figure_title_qa.py",
     "formal_visual_metrics_qa.py",
     "forward_reference_qa.py",
     "gate_count_qa.py",
@@ -731,6 +744,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 37 道闸门，其中 32 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 37 gates, 32 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 38 道闸门，其中 33 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 38 gates, 33 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
