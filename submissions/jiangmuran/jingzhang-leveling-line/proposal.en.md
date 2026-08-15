@@ -1220,12 +1220,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-185 entries. By finder:
+186 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 136 | Found while working |
+| The author | 137 | Found while working |
 | This package's own gate | 11 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; [@](https://github.com/) on  |
 
@@ -1258,6 +1258,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Outlived a corpus | 3 |
 | Answers what it cannot | 2 |
 | Attributed to a file that refuses | 1 |
+| Drawn without its ground | 1 |
 | Reported, ignored | 1 |
 | A non-index | 1 |
 | Read off, not computed | 1 |
@@ -1675,12 +1676,12 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 | Sheet | Content | What to read on it |
 |---|---|---|
 | FIG.00 | The leveling line: a city that publishes its own error | The proposal in one line: the red height difference is the closure error, and the only thing this proposal asks to be trusted on |
-| FIG.01 | Overall concept and site overview | The three areas and two wings named on the map; five functions as five positions on one loop. The cross-check stays a footnote — 412.5 m from the inferred boundary to the surveyed park |
+| FIG.01 | Overall concept and site overview | The three areas and two wings named on the map; five functions as five positions on one loop. The cross-check stays a footnote: 412.5 m from the inferred boundary to the park |
 | FIG.02 | Evidence chain as an unclosed leveling circuit | The red gap left of the circuit is the closure error; three cards below are the measurement of this call itself |
 | FIG.03 | Three scope levels and network tiers | The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give |
 | FIG.04 | Three areas, two wings and benchmark layout | Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points |
-| FIG.05 | Slow mobility, blue-green and connecting routes | The two connecting routes and their direction, and the tolerance bands lower right |
-| FIG.06 | Recomputed metrics and closure evidence | The three metric classes at left; at right the run: ten cases, two accepted, eight refused, reasons quoted verbatim |
+| FIG.05 | Slow mobility, blue-green and connecting routes | The two connecting routes and their direction; tolerance bands lower right |
+| FIG.06 | Recomputed metrics and closure evidence | The three metric classes at left; at right the run: ten cases, two accepted and eight refused with reasons |
 | FIG.07 | Identity: mark, construction and applications | The mark draws the method: the datum departs, rises, returns, does not land back on the datum |
 | FIG.08 | Innovation ecosystem and element mechanisms | The chain of custody for each element; the red box where the funding row is deliberately left blank; the gap all six cases point at |
 | FIG.09 | Landmarks, kit of parts, signage syntax and operating cycle | The actual form of the five standard components; the numbering grammar; a calendar organised by re-survey cycle rather than by festival |
@@ -1734,7 +1735,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would repeat, at the scale of a checklist, this package's erratum about `analysis/`: an invitation to verify addressed to someone who cannot.
 
-**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files, 1083 KB, 1,646 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
+**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.7 s**; 9 files, 1086 KB, 1,647 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
 
 **This disclosure has a shelf life, so it states where the fix stands.** The gap is upstream Issue #2170; the maintainers opened PR #2181, which adds an auditable access boundary to the review input, states that participant verification scripts are never executed, and corrects the review prompt so that a model **may not deduct points or fail a gate merely because it cannot open a registered artifact**. Once it merges the count above is unchanged; its consequence is not, because unreachability stops being read as the participant having withheld something. This package has already taken that recovery route: the key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
