@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 32 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 33 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -167,7 +167,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 50 mutations, 28 of 32 gates proven able to fail, 4 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 51 mutations, 29 of 33 gates proven able to fail, 4 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -175,7 +175,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 50 deliberate defects across 28 of 32 gates, all caught and all named by the gate that caught them; 4 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 51 deliberate defects across 29 of 33 gates, all caught and all named by the gate that caught them; 4 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -183,7 +183,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 51 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 181 bytes to spare"
+      "message": "intake_limits_qa.py — intake limits: 51 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 180 bytes to spare"
     },
     {
       "check_id": "PKG_MARKDOWN_STRUCTURE_QA",
@@ -207,7 +207,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 432 identifiers across 448 distinct names, every one matching exactly one of 24 published families or a named document, and every family governing at least one, and 8 benchmarks whose digits agree with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 435 identifiers across 451 distinct names, every one matching exactly one of 24 published families or a named document, and every family governing at least one, and 8 benchmarks whose digits agree with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -306,6 +306,14 @@
       "message": "taskbook_coverage.py — -> /home/jmr/projects/opencity/haidian/submissions/jiangmuran/jingzhang-leveling-line/visual/assets/taskbook_coverage.json"
     },
     {
+      "check_id": "PKG_TASKBOOK_UNITS_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "message": "taskbook_units_qa.py — taskbook units: 5 of the taskbook's structural units answered under the organisers' own identifiers, labels and roles carried verbatim from upstream/main; 3 carry a section of their own and 2 say so and say what would change it"
+    },
+    {
       "check_id": "PKG_UPSTREAM_DRIFT_QA",
       "result": "pass",
       "severity": "info",
@@ -327,7 +335,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 164 条，按发现者：audit 25、external 3、external-reviewer 5、own-gate 11、self 120；最常见形状：check-measured-the-convenient-thing 34、two-copies-of-one-thing-drifted 25、claim-outlived-the-package 15、deliverable-not-inspected-before-shipping 15。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 9 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 164 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 166 条，按发现者：audit 25、external 4、external-reviewer 5、own-gate 11、self 121；最常见形状：check-measured-the-convenient-thing 35、two-copies-of-one-thing-drifted 25、claim-outlived-the-package 15、deliverable-not-inspected-before-shipping 15。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 9 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 166 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -335,7 +343,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：50 处人为缺陷，覆盖 28 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 50 deliberate defects across 28 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：51 处人为缺陷，覆盖 29 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 51 deliberate defects across 29 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,

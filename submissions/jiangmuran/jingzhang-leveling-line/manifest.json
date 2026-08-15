@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-15T07:14:13-07:00",
+  "generated_at": "2026-08-15T07:19:40-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,7 +28,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "0a7e0ca139f9afaf6a0675945768ae1b4548e6df16c658de2d2b1462ae045ea4"
+      "sha256": "d75f660a00634e31d42570bacd410845cb648a6d7427d2f80d9380531c863c81"
     },
     {
       "path": "agent.json",
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7be633886830b80749685a4b639d3e73c8f193652d0e4c36e71a4a159ef15af3",
+      "sha256": "8567add25dbb650ee7b40884afeb23a6af3b58ca6cb87f8a572d54fc5186ba6c",
       "language": "neutral"
     },
     {
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5562fb767eedd1b30694ed1220c8d66b6b6b61939cd117259eebc3b71b44cea2"
+      "sha256": "9c6482bb2f8458f5d0fc6ad2f1928538d60361a1db7da9a58af715fd9308775b"
     },
     {
       "path": "report/narrative.md",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "52d4a1d49f74e5740ea1e5827653e2e3b1d0beb1435d24052077f26b9ca1721a"
+      "sha256": "7ef12ccfec7cdd30526f781cc521277e5bd674abf609d7137fde44220236e2ec"
     },
     {
       "path": "report/proposal.en.html",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b11c1bfa6976c37f5204c797d05f93ffeccfa4c03fab01c50b45f461c430af1a"
+      "sha256": "2531c23ff53ff93965bf118d41093cbdace3c2ef6672c52199120436e6f83db3"
     },
     {
       "path": "visual/index.en.html",
@@ -1087,7 +1087,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "56d9e35abd9cb73fa4380236e1de34a42feb20e904b1d7199d021d5af0c46413"
+      "sha256": "bb5b713acab08c2cfe0a3defa332d0f198eca0e83147d1d278dfb88c66622ec0"
     },
     {
       "path": "assets/media/closure-advance.mp4",
@@ -1126,7 +1126,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium"
   }
