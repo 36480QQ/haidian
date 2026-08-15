@@ -142,12 +142,14 @@
    "record_limitations_zh": [
     "全部读数为屏幕渲染量测，与实物印刷存在渲染差异；本包未做实物打印样张检查。",
     "A3 图带内注记的下限 4.48 pt 低于印刷常规下限，属已知取舍：该量级注记只承担形态证据，其判断内容已上移至页面文本层（下限 9.07 pt）。",
-    "字号与对比度达标不等于可读性达标；真实可读性还取决于字体、语言、观看距离、照明与读者视力，本次均未测。"
+    "字号与对比度达标不等于可读性达标；真实可读性还取决于字体、语言、观看距离、照明与读者视力，本次均未测。",
+    "四册 PDF 均未做语义标签（Tagged PDF：无标题层级、表格语义与阅读顺序结构树）。已实验两条生成路径：单页可产标签但逐页合并丢失结构树（跨文档结构树合并为现有开源工具链未解问题）；整册单次渲染因图版为绝对定位排版体系而多页叠印，保真不可接受。按诚实原则登记为局限而非硬贴无效标签；语义无障碍的随包等价载体为离线展示页（visual/index.html 双语）：全语义 HTML、键盘可达、替代文本齐备、无脚本降级，屏幕阅读器使用者可经该载体获得四册的判断内容。"
    ],
    "record_limitations_en": [
     "All readings are screen-rendered measurements and differ from physical print; no physical press proof was made for this package.",
     "The 4.48 pt floor of in-band annotations on A3 is below the usual print floor. This is a known trade-off: annotations at that size carry morphological evidence only, and their judgement content has been moved up into the page text layer (floor 9.07 pt).",
-    "Meeting size and contrast thresholds is not the same as being legible; real legibility also depends on typeface, language, viewing distance, lighting, and the reader's vision, none of which was tested."
+    "Meeting size and contrast thresholds is not the same as being legible; real legibility also depends on typeface, language, viewing distance, lighting, and the reader's vision, none of which was tested.",
+    "None of the four PDF volumes is tagged (no heading hierarchy, table semantics or reading-order structure tree). Two generation paths were tested: single pages can be tagged but page-by-page merging drops the structure tree (cross-document structure-tree merging remains unsolved in the open-source toolchain), and whole-book single-pass rendering stacks pages because the plates use absolutely-positioned layout, with unacceptable fidelity. Per the honesty rule this is registered as a limitation rather than shipping ineffective tags; the in-package semantic equivalent is the offline display page (visual/index.html, bilingual): fully semantic HTML, keyboard reachable, complete alternative text, no-script fallback, through which screen-reader users can reach the volumes' judgement content."
    ]
   },
   {
