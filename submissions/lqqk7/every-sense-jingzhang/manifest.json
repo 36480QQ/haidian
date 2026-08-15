@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.26 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.27 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,19 +26,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fc4432f9af63d62cc51399a91bd289fa19fb0733f4b0a4857df36bef4332eb71"
+      "sha256": "5dcf9eb7abfb31627e4397de8390ffeb38f28aba6820c8cd4583b4854e3336d5"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "ce14163423a508c62631e391093dd3ee14e7a1478f3fff41b0dc7fbb3859d641"
+      "sha256": "9ddffb0add035baa65cbd37de6260fbb8749ed1d7f1afbd11392a6b752648e28"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "41f661462005681dbab91d64b3af7284b080dfe4d0f2001ef5b92ee148d0735f"
+      "sha256": "d6e7d9b08c836d08677ef8631fa25315b4e027fc8a104e4577ee31cc89439679"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f05faa1b1555372d37e4d1362b477112e29b20ce8e1f3217258b4168b070bf26"
+      "sha256": "ee507a16854e72b599ea06e339481f1078032cd19a1f5e80708b51dfa37af65f"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "452087cfac237076391cde9405dec4e7d150a2a18360a659db3359226eae13e6"
+      "sha256": "07327e68fdd85c498705747fb6bab5fe7b50afe6f30ac12abdcc5d1816c4e403"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "44f9d41b33687ca067c21ad0586d728153267c4ed6dab4671926d5b39cc44a07"
+      "sha256": "3521f519895d6d02f3be91d0de2dfc5580c76d2ffe8606c17335763659d81f83"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -135,7 +135,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "009841bc0a8c0ac4febdaa54412d10842c3e83fccfdd2e9994a90514eb88f816"
+      "sha256": "eb3f91af76097f48b1fc0d36b70f1466368a29aeb41f49765133444d2ae1a4b5"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -156,7 +156,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "d788d7a8a16acab33b6a3d14d2f186d375c207f71f69bf0ab1c94919d2d7f526"
+      "sha256": "f657fe6cad1f96adadaaa9e477469322857ccf762e326bab8fd0306d492d0b8d"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6b51f2662393abd10fc53167e47c7e3f2925959b3a43529aed157e952cda042a"
+      "sha256": "005d98441e42c60b9a7014ac80720ecefbc3724d3ee04370e809d43f9e447580"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f60a0c62f80eac5a69af06252b19c0b312acf126f1b93a54ca3fd8525d3d5eb1"
+      "sha256": "127582bb3772538ffa670746bd3c495aaf77b927fcb757b783ca01498ccbf3c4"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "1eecc8080086b8b47318812f8e84b8c9c18d57f32755129a385e7b26b05af9d2"
+      "sha256": "b355c19caadd951323f0f9757a7c5ee4e6cff16e50a8f4c7962fe17db8792266"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -322,7 +322,7 @@
       "language": "zh",
       "title_zh": "OP-04 节点深化图版（1:500 总平 / 1:200 缝合区 / 1:50 断面 / 八要素卡）",
       "title_en": "OP-04 node detailing plate (1:500 plan / 1:200 stitch zone / 1:50 section / eight element cards)",
-      "sha256": "f9d054226f31295f25cb0525a27dee35ce0cc77ccd9bea658d0f35564954c12e"
+      "sha256": "c4963a4dd4fba4b8fa90f1683efe28d68d44a9815825aaf16c57635e44f8f44f"
     },
     {
       "path": "assets/figures/op04-detail.en.png",
@@ -332,7 +332,7 @@
       "translation_of": "assets/figures/op04-detail.png",
       "title_zh": "OP-04 节点深化图版（英文版）",
       "title_en": "OP-04 node detailing plate (English edition)",
-      "sha256": "8c76031ae0e19224464db2875dc3cb6fb695dafea542632a9b77f90b7d1fa5d4"
+      "sha256": "2df34d4972ad9eef265620b65e87346928f57910d2031a05d86aff457e426428"
     },
     {
       "path": "assets/figures/section-profiles.png",
@@ -438,7 +438,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "53bb872d4c3d58e3288bd89f0a3abaef7daef7652541566c4a0f831d469bcc06"
+      "sha256": "e9e2b0cdf462de0565f5d2ba28ef7214e45694397959da45e550953e57cdadde"
     },
     {
       "path": "visual/assets/osm-context/provenance.json",
@@ -473,7 +473,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "ee735750a8f65f77d76dd77ccc16c14d4c82826e8a641ea1eccf2c1c7fc2f4ba"
+      "sha256": "7e6cb49320186e5222d0ff60ae938dc3cdd5c05989114a2572dba4b75bdb9f34"
     },
     {
       "path": "assets/media/cover.webp",
@@ -495,7 +495,7 @@
       "description_en": "A 2-minute-34-second Chinese guide covering the test of urban intelligence, service equivalence between AI ON and AI OFF, the spatial framework of one accessible spine and three sensory labs, the roles of the three areas and two wings, the evaluative purpose of the ten independent-completion points, and the conceptual scope and limits. Fully synthetic speech: no human recording, no music, no field audio.",
       "transcript": "assets/media/audio-guide.md",
       "caption": "assets/media/audio-guide.vtt",
-      "sha256": "e996b0f90e9cdacfede0d1ca66b6d49b63dce6e1bd3230b05b6d4218eac66682"
+      "sha256": "8a6b4e8ead534924ee6f3878d8024efe960bf9a93228e82b82328ca6dfbfe21d"
     },
     {
       "path": "assets/media/audio-guide.md",
@@ -505,7 +505,7 @@
       "title_en": "Audio guide transcript and rights note",
       "description_zh": "导览旁白全文（含时间码）、与 proposal.md 的来源对应表、生成工具与制作方法记录、合成声明与权利边界、已知限制。同时论证听/看/读三条通道承载相同内容，是方案 AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "Full narration text with time codes, a source mapping to proposal.md, the generation method and tooling record, the synthesis and rights statement, and known limitations. It also documents that listening, captions, and reading carry identical content, applying the proposal's own AI-OFF equivalence principle to its own deliverable.",
-      "sha256": "f36991d1d3efa59f016670c24b08e41a72bd08390d2e0a10cc6838b6a16d2196"
+      "sha256": "23e525dff5efb18ed8213313434d7311b858f5ffe2b42897bfa546da362b351e"
     },
     {
       "path": "assets/media/audio-guide.vtt",
@@ -566,7 +566,7 @@
       "poster": "assets/media/journey-poster.webp",
       "caption": "assets/media/journey.vtt",
       "transcript": "assets/media/journey.md",
-      "sha256": "7ae591d33c636ef435b9676e34b60ee0284c9f3603fcc4c77fc076142de7e968"
+      "sha256": "ac8f6764248d35a138782bef5c2a87efa4e8659253be89e585d137432b49a45d"
     },
     {
       "path": "assets/media/journey-poster.webp",
@@ -596,7 +596,7 @@
       "title_en": "Multimodal short film storyboard, transcript and rights note",
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
-      "sha256": "41bd15b8aaa640fc2ed37ba6d58af6a662a04e1d2172631835dc3655c276c1fc"
+      "sha256": "eb2bf672bfdab95cc4affbf7006dd0bdbde443b56494e774be73d51387f1419f"
     },
     {
       "path": "visual/assets/ethics-protocol.json",
@@ -614,7 +614,16 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "a313d95e31447ff74ebea56e679bfd70fa6cac782553b2dd5837ad1a511cadc7"
+      "sha256": "f18404d7343c8b8d7157bef1a9b7b1db19ca788c96d7e08a1c9371a01c8b96c9"
+    },
+    {
+      "path": "visual/assets/review-archive.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三方审查过程归档（基线 commit、方法、发现分级、处置去向、两份盲审报告全文与哈希、独立性边界如实声明）",
+      "title_en": "Three-way review archive (baseline commits, method, finding grades, dispositions, two blind-review reports in full with hashes, and the independence boundary stated as fact)",
+      "sha256": "2bb0f07293688ffa776486b352704c4d1b645f82fd6a29d5de0b19c31f0eb90d"
     },
     {
       "path": "visual/assets/scene-provenance.json",
@@ -781,7 +790,7 @@
       "description_en": "A 3 min 14 s English synthetic-voice guide: the same narration text as the Chinese edition (translated), the same per-sentence synthesis and fixed-gap concatenation (MiniMax speech-2.8-hd, preset voice English_Trustworthy_Man); AAC-LC mono 32 kHz/64 kbps. Computer-synthesised, no human recording",
       "transcript": "assets/media/audio-guide.md",
       "caption": "assets/media/audio-guide-en-voice.vtt",
-      "sha256": "e87447b0268152e234cd532416b46d749f4944f47d79d306ea1597bbc45710ed"
+      "sha256": "529eacb12d74b3ef21b7cc56e2918a98077edc46fadd28302cf710a6cc4b6682"
     },
     {
       "path": "assets/media/audio-guide-en-voice.vtt",
