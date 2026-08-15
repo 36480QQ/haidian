@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M45",
+      "gate": "upstream_validator_qa.py",
+      "target": "manifest.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把画廊封面的角色改回 `gallery_cover`——**这正是 CI 真实拒绝过的那一次**。",
+      "what_en": "Put the gallery cover's role back to `gallery_cover` — the exact state CI actually refused.",
+      "why_zh": "组织方 schema 的 role 是开放 pattern，`gallery_cover` 过得了 schema；这条规则只在 `validate_submission.py` 里，**而本仓库那份 validator 里根本没有它**，于是构建照常打印 PASS。这道闸门跑的是 `upstream/main` 上的那一份，**若它抓不住这一次，本包就还是在拿旧合同给自己验收**。",
+      "why_en": "The organisers' schema makes role an open pattern, so gallery_cover satisfies the schema; the rule lives only in validate_submission.py, and this checkout's copy does not contain it, so the build printed PASS. This gate runs the copy on upstream/main - if it cannot catch this one, the package is still accepting itself against an expired contract."
+    },
+    {
       "id": "M44",
       "gate": "schema_conformance_qa.py",
       "target": "agent.json",
@@ -535,7 +547,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 44,
+  "caught": 45,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -560,7 +572,8 @@
     "stale_corpus_qa.py",
     "standards_alignment_qa.py",
     "statute_quote_qa.py",
-    "taskbook_coverage.py"
+    "taskbook_coverage.py",
+    "upstream_validator_qa.py"
   ],
   "gates_not_covered": {
     "upstream_drift_qa.py": "it compares organiser files on `upstream/main` with the blobs this build last read them against; both sides are outside the submitted package, so no mutation of a shipped file can reach the condition it tests.",
@@ -599,6 +612,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 27 道闸门，其中 23 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 27 gates, 23 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 28 道闸门，其中 24 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 28 gates, 24 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

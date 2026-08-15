@@ -1493,12 +1493,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-150 entries. By finder:
+152 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 109 | Found while working |
+| The author | 111 | Found while working |
 | This package's own gate | 11 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; [@](https://github.com/) on  |
 
@@ -1514,7 +1514,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| The check measured the convenient thing | 31 |
+| The check measured the convenient thing | 32 |
 | Two copies of one thing drifted | 21 |
 | A claim outlived the package | 15 |
 | A deliverable was not looked at before shipping | 14 |
@@ -1524,20 +1524,21 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | A number with no file behind it | 6 |
 | A rule applied to others but not to itself | 6 |
 | A number outlived the sentence holding it | 5 |
-| Recorded where it was found, not where anyone would look | 5 |
+| Recorded where found, not where anyone looks | 5 |
 | A source was claimed and could not be named | 4 |
 | Geometry did not mean what it said | 4 |
 | A claim outlived the corpus | 3 |
 | A measurement answering a question it cannot answer | 2 |
-| A claim pointing at a total that excludes the very thing it claims | 1 |
+| A claim pointing at a total that excludes it | 1 |
 | Attributed to a file that refuses to do it | 1 |
 | The gate reported and was ignored | 1 |
 | An index that does not index | 1 |
 | A number read off a drawing rather than computed | 1 |
 | A requirement with nobody to execute it | 1 |
 | Six classes listed for a seven-class partition | 1 |
+| A stricter label paid for in honesty | 1 |
 | A term of art applied where it does not hold | 1 |
-| The commit that fixed a defect left the same defect one row lower | 1 |
+| The fix left the same defect one row lower | 1 |
 | The table stopped being a table | 1 |
 | Two of our own rules cancelling each other under a condition | 1 |
 
