@@ -35,7 +35,7 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 114 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 116 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
@@ -128,7 +128,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | `visual/assets/scene-fallback.png` · `scene-fallback.en.png` | 交互场景的静态后备图 | 同 C 类生成路径 | `manifest.json` `role: visualization` |
 | `visual/assets/seb-tabletop-run.js` | 原创撰写的校验器 | 零依赖离线文件，仅使用 Node 内置 `fs`、`path` | `proposal.md`「OP-01 桌面配对试点档案」章 |
 | `visual/assets/seb-op04-chain-run.js` | 原创撰写的复演器 | 零依赖离线文件，仅使用 Node 内置 `fs`、`path`、`child_process`；投影以纯 Node 内置数学实现 | `proposal.md`「OP-04 配对试点全过程证据链」章 |
-| `visual/assets/seb-spec.json` | 原创编制的机器可读规范 v0.3.1 | CC BY-SA 4.0，已由提交方以著作权人身份经 `seb-license-grant.json` 实际授予；托管主体与发布渠道仍待授权主体确认（许可与托管两事分立） | `seb-spec.json` `license` 与授予文件 |
+| `visual/assets/seb-spec.json` | 原创编制的机器可读规范 v0.4.0 | CC BY-SA 4.0，已由提交方以著作权人身份经 `seb-license-grant.json` 实际授予；托管主体与发布渠道仍待授权主体确认（许可与托管两事分立） | `seb-spec.json` `license` 与授予文件 |
 | `visual/assets/seb-spec-v0.2.0.json` · `seb-spec-v0.3.0.json` | 历史版本按字节从上游提交提取的快照（提交号与哈希登记于规范 `version_snapshots`） | 同上（CC BY-SA 4.0 已授予） | `seb-spec.json` `version_snapshots` |
 | `visual/assets/seb-license-grant.json` | 许可授予文件：授予声明为原创撰写；内嵌 CC BY-SA 4.0 法定正文取自 Creative Commons 官方发布（CC 许可条文本身不受版权限制可自由复制），含重建哈希 | 授予声明随授予生效；法定正文按 CC 官方口径复制 | 该文件自身与 `sources.json` |
 | `visual/assets/seb-tabletop-fixtures.json` · `seb-change-receipt-sample.json` · `seb-op04-chain-data.json` · `seb-change-receipt-op04.json` · `seb-change-receipt-v03.json` · `seb-op04-90day-pack.json` · `op04-pilot-readiness.json` · `op04-tactile-map.json`（STL 封装）· `braille-core-statement.json` · `ethics-protocol.json` · `qa-proofing-record.json` · `scene-provenance.json` | 原创编制的样例、回执（含 v0.3 系一版一号回执）、链路档案、九十天实施包与对接就绪材料、协议模板、自查记录与场景图生成档案 | 随包整体许可；均不含任何参与者数据 | `proposal.md` 对应各章 |
@@ -250,7 +250,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 
 ## 九、本台账的已知缺口 / Known gaps in this ledger
 
-1. **工具版本号的登记密度不一致。** 包内明确登记版本号的只有 MiniMax `speech-2.8-hd`、`mmx` 1.0.7 与 SEB v0.3.1；Python、SVG 工具链、`rsvg-convert`/Cairo、`pdfunite`、Playwright/Chromium、Pillow、x264 均只登记了工具名称与用途，未登记版本号。本台账据实照录，不补齐。
+1. **工具版本号的登记密度不一致。** 包内明确登记版本号的只有 MiniMax `speech-2.8-hd`、`mmx` 1.0.7 与 SEB v0.4.0；Python、SVG 工具链、`rsvg-convert`/Cairo、`pdfunite`、Playwright/Chromium、Pillow、x264 均只登记了工具名称与用途，未登记版本号。本台账据实照录，不补齐。
 2. **字体字重与具体字族未逐项登记。** PDF 侧登记到 Source Han Sans SC 与 OFL 1.1；展示页与媒体侧登记到字体栈与「运行环境预装字体」层级。
 3. **不随包分发的生成源无法由评审直接复核。** 其行为只能通过 `provenance.json` 中记录的脚本 SHA-256 与处理步骤间接核对。
 4. **本台账不产生新的权利结论。** 它只把既有登记合并呈现；任何一行与原文件不一致时，以原文件为准。
