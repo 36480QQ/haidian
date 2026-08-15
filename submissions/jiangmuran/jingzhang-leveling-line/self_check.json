@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 27 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 28 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -159,7 +159,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 44 deliberate defects across 23 of 27 gates, all caught and all named by the gate that caught them; 4 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 45 deliberate defects across 24 of 28 gates, all caught and all named by the gate that caught them; 4 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -282,12 +282,20 @@
       "message": "upstream_drift_qa.py — upstream drift: 8 organiser files pinned to the blob they were last read against; none has moved"
     },
     {
+      "check_id": "PKG_UPSTREAM_VALIDATOR_QA",
+      "result": "unknown",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "message": "upstream_validator_qa.py — 本次构建未记录到该闸门的输出，因此不声称它跑过"
+    },
+    {
       "check_id": "PKG_ERRATA_REGISTER",
       "result": "pass",
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 150 条，按发现者：audit 25、external-reviewer 5、own-gate 11、self 109；最常见形状：check-measured-the-convenient-thing 31、two-copies-of-one-thing-drifted 21、claim-outlived-the-package 15、deliverable-not-inspected-before-shipping 14。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 150 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 151 条，按发现者：audit 25、external-reviewer 5、own-gate 11、self 110；最常见形状：check-measured-the-convenient-thing 32、two-copies-of-one-thing-drifted 21、claim-outlived-the-package 15、deliverable-not-inspected-before-shipping 14。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 151 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -295,7 +303,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：44 处人为缺陷，覆盖 23 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 44 deliberate defects across 23 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：45 处人为缺陷，覆盖 24 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 45 deliberate defects across 24 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
