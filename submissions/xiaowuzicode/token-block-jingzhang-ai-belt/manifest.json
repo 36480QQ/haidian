@@ -26,14 +26,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "99da1886e1da2546182b03156138f9cab0f1f5af25bf833c002de625f1c490f0",
+      "sha256": "5db3794996527f21dad998459108c0351ddfd0fd8d74ea0d9d86dd1ab385f4f1",
       "language": "en"
     },
     {
       "path": "report/proposal.zh.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "6a8d88def37bb77a4b0ff91301962c8e44eee4f57930c1d83203e66cc1b88c04",
+      "sha256": "57ab27888e2c79de3ee19acbbaf1f17deaba08e2de082b89465123122821f68b",
       "language": "zh",
       "translation_of": "report/proposal.html"
     },
@@ -41,7 +41,7 @@
       "path": "proposal.zh.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e31a9cfc066f816a5ebded378e49600d1cf63b225b056e2a381ef845276bfdfe",
+      "sha256": "e63437211b4632962082069ee56ef3436e72c2edd7947863b286d8aee31c847b",
       "language": "zh",
       "translation_of": "proposal.md"
     },
@@ -49,7 +49,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "8b64370e0cefe12bea39ee8570a7b42ddcab790f985b4a9ef4a880efa5dc3270"
+      "sha256": "39f671e62641ae4fc209ff1223fd4677d64cce90638ad6f107d06db89bc1fd9b"
     },
     {
       "path": "agent.json",
@@ -61,7 +61,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "7711bc3d5b84948157910112b309d385ff7fe62c5220115d09a2fe1006aab7d6"
+      "sha256": "f755db1e990ce6c11788d5d92da155c9264a102b7b539fbe7636b4df67af0d3a"
     },
     {
       "path": "assumptions.json",
@@ -79,7 +79,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d1a8b46fef8c53f47c77abef68013893341dfed7a161e91aac001a26f48b413a"
+      "sha256": "8a77ae785ab9dc64803913b4b54fb2b774099ac6781ffac6ae8e2c77450ac42e"
     },
     {
       "path": "compliance_matrix.json",
@@ -103,7 +103,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "a8934d9e70e0c712aa79350e483643ab3e964aa03ab0b5e27c01517100368b3d",
+      "sha256": "7922893f0728ea501f6ab8c9931b523dbf8c145740535dcbbf9c60dcd0163ac5",
       "language": "en"
     },
     {
@@ -122,21 +122,21 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "66ffda425921b49b878a318b7186f898a674d6a6beaaf839ee3583152ad4378b",
+      "sha256": "8b44803a4a66a8e14a7393f199dbac089daa900d93f636a0aa4c57f2b1caa5a1",
       "language": "en"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "c8008161a58c0fcae2a110e62591fe9759d10ee3d87782b57bafe4b4d8413be6",
+      "sha256": "9dad7842be37909e6a07792e08a86fd43e4803f4ff620e9249fbb1f82ee25223",
       "language": "en"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "39c5cecce69cd216640a7ac5acde838a2fd1694ace9bfb4fc9be768d3efe2720"
+      "sha256": "e771d69748abc4ea8b5742ea370211a411d59ad88b05e6a9a59d699f28b5002e"
     },
     {
       "path": "assets/figures/identity-system.png",
@@ -271,7 +271,7 @@
       "path": "drawings/a3-booklet.zh.pdf",
       "role": "drawing",
       "required": false,
-      "sha256": "cc022bbfd12842b2e08c4d7716d091a965eadfe2b1861c509e9acadf0b554aa6",
+      "sha256": "16906d74b3038f9e03f82aa4ec9e54d75141573198f0390ba435b12f2e1c8ca6",
       "language": "zh",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -279,7 +279,7 @@
       "path": "drawings/a0-boards.zh.pdf",
       "role": "drawing",
       "required": false,
-      "sha256": "d39fd9fb43df5666c96e35ed9b6ff13edb10e211cfb7508373b5afc237765749",
+      "sha256": "b2f17a1b1c4ef9a43bf70003b49ed5464b2beb5dbfe24680fe81c68135d86aab",
       "language": "zh",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -419,6 +419,16 @@
       "title_en": "Visual-page hero concept impression (AI-generated; same image as assets/figures/concept-hero-wide.jpg)",
       "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
       "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "visual/assets/implementation.json",
+      "role": "other",
+      "required": false,
+      "sha256": "0648256cb7932780a94692c08022f11d78aa57370d4cd170d2801018a6c04049",
+      "title_zh": "首期一百天交付框架（工作包/退出门/采购主题/监测窗）",
+      "title_en": "First-100-days delivery frame (work packages / exit gates / procurement themes / monitoring windows)",
+      "description_zh": "机读实施层：10 个工作包（前置条件/依赖/证据产出/相对投入量级）、G0–G4 五道退出门、8 类采购主题（不含金额）、3/12/36 月监测窗（写明六项绩效指标何时开始积累真实数据）。不构成实施、采购或投资承诺。",
+      "description_en": "Machine-readable delivery layer: 10 work packages (precondition/dependency/evidence output/relative effort class), exit gates G0-G4, 8 procurement themes (no amounts), and 3/12/36-month monitoring windows stating when each of the six performance metrics starts accruing real data. Not a delivery, procurement or investment commitment."
     }
   ],
   "validation_claim": {

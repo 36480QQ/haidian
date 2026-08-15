@@ -109,6 +109,8 @@ The package excludes secrets, personal information, commercial map tiles, non-pu
 
 The main risk is data precision. Provisional boundaries are adequate for concept generation and intake self-check, but not for statutory review, engineering design, or precise area scoring. The next iteration should replace provisional polygons with official data, add verified existing-building and utility information, refine road and slow-mobility geometry, and invite professional planners, transport engineers, heritage experts, and public-service operators to review the assumptions.
 
+**Open-issue check on 2026-08-15.** Issue #846 adds a public-background caution: the OSM-mapped Jing-Zhang Railway Heritage Park does not intersect `PROV-SITE-001` and is about 412.5 m away at its nearest point; a peer reproduction also flags a roughly 2 km north-south anchor discrepancy between provisional `PROV-KEY-003` and the Dazhongsi station / Jueshengsi anchor [source:ISSUE-846-PROVISIONAL-GEOMETRY-CHECK]. This package treats that discussion only as a risk trigger, not as official polygon evidence. The Dazhongsi content should therefore be read as a station-service and adoption-return operating-section proxy; once official key-area polygons arrive, station frontage, four-quadrant walkability, green-space reuse, phasing, and the three core metrics must be relocated, recomputed, and redrawn together.
+
 ## References
 
 - Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch: Centennial Jing-Zhang AI Innovation Belt urban design open call prequalification announcement.
