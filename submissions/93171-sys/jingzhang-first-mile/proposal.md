@@ -13,9 +13,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张首发线 / JINGZHANG FIRST MILE
 
-![一页执行摘要：从技术上线到首位用户、可运行场景、可核验订单与验证性复用](assets/figures/selection-brief.png)
+![执行评审总图：真实方位、三站责任、公共底线与首发结果](assets/figures/site-overview.png)
 
 本方案只解决一个被大量“AI 展示区”忽略的问题：**技术离开实验室以后，谁帮助它获得第一位真实用户，并把一次使用变成可运营、可采购、可复用的城市服务？** 京张首发线以众智园、AI 原点、大钟寺完成“产品就绪—真实首用—首单复用”的连续交接；其最小公共承诺是，AI 撤除后，普通路径、人工服务和公共空间仍然成立。评委可以从任务旅程、首程护照、数量清单、G0—G4 门禁和失败档案直接复核这套机制，而不必相信一张未来效果图。
+
+![一页执行摘要：从技术上线到首位用户、可运行场景、可核验订单与验证性复用](assets/figures/selection-brief.png)
 
 ## 百年京张文化与 AI 新文化：从工程自主到城市采用
 
