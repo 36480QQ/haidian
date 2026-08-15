@@ -423,6 +423,83 @@
       "assumptions": [
         "public; evidence of the dramatic tension"
       ]
+    },
+    "health_factor_H": {
+      "status": "known",
+      "value": 1.556,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "H=γ_创新/β_基建（γ=1.178, β=0.758；400m单元POI标度拟合 n=72）",
+      "confidence": "medium",
+      "assumptions": [
+        "γ 为 POI 标度拟合代理；临界参照 H=1.35、H<1=消耗自己"
+      ]
+    },
+    "innovation_gamma": {
+      "status": "known",
+      "value": 1.178,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "work类POI随单元规模的标度指数 γ（log-log 拟合，R²=0.67）",
+      "confidence": "medium",
+      "assumptions": [
+        "POI 快照代理"
+      ]
+    },
+    "employment_gini": {
+      "status": "known",
+      "value": 0.823,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "办公楼POI 200m网格Gini",
+      "confidence": "medium",
+      "assumptions": [
+        "POI快照口径"
+      ]
+    },
+    "employment_top10pct_share": {
+      "status": "known",
+      "value": 0.689,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "前10%网格承载就业POI比例",
+      "confidence": "medium",
+      "assumptions": [
+        "对照伦敦0.4%面积承载10%就业"
+      ]
+    },
+    "deviation_finance_pct": {
+      "status": "known",
+      "value": -63.0,
+      "unit": "%",
+      "source_files": [],
+      "formula": "功能偏离度诊断（12类POI均匀参考）",
+      "confidence": "medium",
+      "assumptions": [
+        "均匀参考为诊断基准"
+      ]
+    },
+    "deviation_research_pct": {
+      "status": "known",
+      "value": -45.9,
+      "unit": "%",
+      "source_files": [],
+      "formula": "功能偏离度诊断（科研机构）",
+      "confidence": "medium",
+      "assumptions": [
+        "同上"
+      ]
+    },
+    "best_balance_station_offices": {
+      "status": "known",
+      "value": 243,
+      "unit": "count",
+      "source_files": [],
+      "formula": "学知园站1km写字楼POI（就业-交通平衡点）",
+      "confidence": "medium",
+      "assumptions": [
+        "POI口径"
+      ]
     }
   }
 }

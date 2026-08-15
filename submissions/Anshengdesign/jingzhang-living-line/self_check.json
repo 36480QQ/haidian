@@ -20,6 +20,8 @@
       ],
       "changed_files": [
         "submissions/Anshengdesign/jingzhang-living-line/agent.json",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c8-c9-c10.en.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/figures/c8-c9-c10.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/ecosystem-map.en.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/ecosystem-map.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/key-areas.en.png",
@@ -34,6 +36,13 @@
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/site-overview.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/transmission-map.en.png",
         "submissions/Anshengdesign/jingzhang-living-line/assets/figures/transmission-map.png",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/media/cover.jpg",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/media/cover.webp",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/media/hyperline-spine.jpg",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/media/interface-plaza.jpg",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/media/origin-plaza.jpg",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/media/phase-plaza.jpg",
+        "submissions/Anshengdesign/jingzhang-living-line/assets/media/stack-testband.jpg",
         "submissions/Anshengdesign/jingzhang-living-line/assumptions.json",
         "submissions/Anshengdesign/jingzhang-living-line/changelog.md",
         "submissions/Anshengdesign/jingzhang-living-line/compliance_matrix.json",
@@ -68,7 +77,7 @@
       "ai_package_stages": {
         "submissions/Anshengdesign/jingzhang-living-line": "formal"
       },
-      "total_bytes": 9143270,
+      "total_bytes": 14251486,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -142,7 +151,7 @@
       "summary": {
         "standard_matrix_items": 8,
         "design_depth_items": 15,
-        "known_metric_refs_required": 34,
+        "known_metric_refs_required": 41,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -150,7 +159,7 @@
           "standard": 4,
           "depth": 16,
           "data": 7,
-          "metric": 11
+          "metric": 12
         }
       }
     },
