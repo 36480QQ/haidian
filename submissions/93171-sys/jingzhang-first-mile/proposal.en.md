@@ -13,9 +13,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # JING-ZHANG FIRST MILE
 
-![One-page executive brief: from technology launch to first user, operable scenario, verifiable order and verified reuse](assets/figures/selection-brief.en.png)
+![Executive review board: real orientation, three-station duties, public baseline and launch outcomes](assets/figures/site-overview.en.png)
 
 This proposal addresses one problem that many AI showcase districts leave unresolved: **after technology leaves the laboratory, who helps it gain its first real user and turn one use into an operable, procurable and reusable city service?** Zhongzhiyuan, AI Origin and Dazhongsi form a continuous product-ready–first-use–first-order handoff. The minimum public promise is that the ordinary route, staffed service and commons still work when AI is removed. Reviewers can inspect the task journey, First-Mile Passport, quantity basis, G0–G4 gates and failure archive rather than trusting a future-looking image.
+
+![One-page executive brief: from technology launch to first user, operable scenario, verifiable order and verified reuse](assets/figures/selection-brief.en.png)
 
 ## Centennial Jing-Zhang Culture and a New AI Culture: From Engineering Autonomy to Urban Adoption
 
