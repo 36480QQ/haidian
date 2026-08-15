@@ -847,6 +847,19 @@
       "assumptions": [
         "回滚映射可视化"
       ]
+    },
+    "visual_scenario_clause_count": {
+      "status": "known",
+      "value": 13,
+      "unit": "count",
+      "source_files": [
+        "visual/index.html"
+      ],
+      "formula": "count of scenario cards with clause hint in visual",
+      "confidence": "high",
+      "assumptions": [
+        "场景卡条款可视化"
+      ]
     }
   }
 }
