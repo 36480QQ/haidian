@@ -264,7 +264,12 @@
         "stitch_note": "众智园东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "众智园",
+        "east_node": "清华西门科研带",
+        "stitch_target": "研发区×高校科研",
+        "composite_functions": "研发用地匹配场景+测试展示段"
       },
       "geometry": {
         "type": "LineString",
