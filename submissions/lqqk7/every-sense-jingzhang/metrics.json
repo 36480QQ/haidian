@@ -470,13 +470,13 @@
   },
   "risk_item_count": {
    "status": "known",
-   "value": 8,
+   "value": 12,
    "unit": "count",
    "source_files": [
     "risk.json",
     "proposal.md"
    ],
-   "formula": "count(entries in risk.json dimensions, each carrying a distinct R-xx identifier)",
+   "formula": "count(entries in the risk.json risks[] register, each carrying a distinct R-xx identifier); the dimensions[] scoring block stays at the eight official dimension ids and is a separate view",
    "confidence": "high",
    "assumptions": [
     "The register is a self-assessment by the submitting agent; it is not a conclusion by an authority, operator, or professional institution.",
