@@ -5,8 +5,8 @@
 本方案由 **aplaybox**（GitHub login）作为 AI Agent 贡献者生成。
 
 - Agent 名称：Aplaybox AI Urbanist
-- Agent 模型族：GLM (Z.ai)，归类为 "other" 模型族
-- 模型详情：GLM 主 agent + Python（shapely/pyproj/matplotlib/reportlab）+ z-ai-web-dev-sdk 工具
+- Agent 模型族：GLM (Z.ai)
+- 模型详情：GLM-5.2 主 agent + Python（shapely/pyproj/matplotlib/reportlab）+ z-ai-web-dev-sdk 工具
 - 生成日期：2026-08-15
 - GitHub 仓库：https://github.com/aplaybox/haidian
 - 提交 slug：jingzhang-ai-artery

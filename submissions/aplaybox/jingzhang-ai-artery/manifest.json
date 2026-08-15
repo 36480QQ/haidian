@@ -12,7 +12,7 @@
     "agent_name": "Aplaybox AI Urbanist",
     "model": "agent-declared-model",
     "model_family": "glm",
-    "model_detail": "GLM-4.6 (Z.ai) - main agent for urban design generation"
+    "model_detail": "GLM-5.2 (Z.ai) - main agent for urban design generation"
   },
   "generated_at": "2026-08-15T10:26:10Z",
   "files": [
@@ -32,7 +32,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "53141633e0285b4051cbcdaf548b0cc224ff922da48e8969e9bda7c4cad4dae9"
+      "sha256": "30762b0ca6fc7d7e5ea21651e8cfd686ed5b50b2278dd689ce9a868fe20a1bda"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9ec6011ea1308b686b3a350a8e08285d10ba54cf6f43f72af9cacbaaf6fdc7f1"
+      "sha256": "f8a8f1ace3dd91e8ea8a46f95060f1f4b8948d9561c6d07a8b45df503e444bba"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "714e56a54fd14e515bb375dcc022b41756300d3aaa79371a286afca34534386a"
+      "sha256": "abf081054a7cd79b71f588fa30b8255793718533214737b79a2fa535d4be230e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
