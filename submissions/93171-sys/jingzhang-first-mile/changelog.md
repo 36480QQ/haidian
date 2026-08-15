@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v9.0 - 2026-08-15
+
+- Rebuilt all five mandatory bilingual review figures around the evidence that the official reviewer can see directly: OSM-based real-place orientation, the provisional land-use partition, three differentiated key areas, the ordinary-route/blue-green public baseline, and the G0-G4 delivery ledger.
+- Moved the real-place executive board to the first image of both proposals and the first section of both offline visual indexes, so spatial specificity, station duties, recomputable metrics and pending real-pilot outcomes appear within the fixed review viewport.
+- Replaced the first page of all four A3/A0 PDF sets with a bilingual A-series executive review board while preserving every later page.
+- Kept all adoption outcomes explicitly pending a real pilot; no user, operator, order, reuse or implementation result was invented during the score-entry redesign.
+
 ## v8.0 - 2026-08-15
 
 - Added a rights-declared custom gallery cover that turns the three-station handoff into one thumbnail-readable First-Mile Gate scene, with live bilingual title text and an explicit non-evidence label.
