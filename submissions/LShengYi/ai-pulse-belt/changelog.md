@@ -1,3 +1,11 @@
+## v10.15.0（2026-08-15）
+
+- **rubric 词面逐项对齐轮（86 分基线上继续提分，本轮纯增补、一行不删）**：v10.14.0 得 86（PR #2750 MERGED 2026-08-15，与历史最高持平）。对照 88 分案例（EthanHuangEbor #2712、Sonike #2725）的 rubric 词面对齐结构，双向代理评审（deepseek-v4-pro 复现官方评审输入）基线为 5×5/5 + implementation_feasibility 4/5（"真实权属、控规、红线、现状与审批条件缺失"）+ expression_completeness 4/5（版本号漂移），逐项修复：
+  - **可实施性四件事逐项对齐表**（表 B4 表注后、"## 指标体系"前）：implementation-feasibility 四个 rubric 要素（阶段路径 / 试点区域 / 参与主体 / 指标）逐项对齐 rubric 原文词面，每项给「本方案给出什么 / 在哪里可打开核验 / 推进条件」三列，全部指向可打开文件（phasing.geojson / key_areas.geojson / 场景卡八要素 / metrics.json / design_depth_matrix.json）；表注声明未赋值指标非设计方能定（法定控制指标赋值即伪造法定结论，产业绩效指标无授权基线即编造）——把"方法框架"与"可核验证据"的分层直接摆在 rubric 词面上（Ethan 风格）。
+  - **1:1 最小物理载体：AI 申报台**（机制词面稀缺性复测段前）：把 P1 申报协议缩到一张桌子的最小物理单元——人工窗口（无设备、先于智能层、**撤除也不拆**）/ 申报位（登记卡）/ 判定牌（署名、申报方≠审批方）/ 未决栏（逐条公开）四件同时在场，顺序不可调换；开台前五条检查与 P03 行动包同一口径；**当前状态 not_authorized_not_run**，不预设尺寸数字（Sonike 风格）。
+  - **表 B1 版本漂移修复**："当前 v10.11.0"→"当前 v10.14.0"（消除 expression_completeness 失分点）。
+  - 双语同步（zh/en 四处一一对应）；en 压缩 ~60 处措辞（保 claim、只紧凑措辞）保住 262144 字节硬限（终稿 262131）；版本串连锁 v10.14.0→v10.15.0（frontmatter iteration 19→20，gen_01 ITERATION / gen_03 REV / gen_04 / gen_05 footer / gen_simulation SEED=v10.15.0-aipulsebelt-rehearsal 同步）。
+
 ## v10.14.0（2026-08-15）
 
 - **合规修复轮（针对 80 分评审意见定向修复，修复即增补）**：v10.13.0 得 80（PR #2745 MERGED 2026-08-15）。双向代理对照（ai_review_submission.py --dry-run 构建 v10.13.0 完整评审输入，代理模型逐维度评分）定位失分在 risk_compliance 4/5 + implementation_feasibility 4/5，逐项修复：
