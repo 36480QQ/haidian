@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v34.0 - 2026-08-15
+
+**Boundary-uncertainty background disclosure / 边界不确定性背景披露**
+
+- 规则层更新：仓库 site-package 几何依据新增 2026-08-14 独立背景核查——公告四条街道（大钟寺东路、荷清路、学院路、西土城路）中线与登记临时边界同纬度边线的东偏量为 533–898 米（均值约 667 米）。依据文档明确：该读数不证明 PROV-SITE-001 错误、未登记为可重放来源、在官方 polygon 发布前不得反向升级或阻断评分。本轮据此把包内边界披露补齐。
+- Rule-layer update: the repository site-package geometry basis gained a 2026-08-14 independent background check — the four announcement-named street centrelines read 533–898 m east deviation of the registered provisional boundary edges (mean about 667 m). The basis document states this does not prove PROV-SITE-001 wrong, is not a replayable source, and must not reverse-upgrade or block scoring before official polygons arrive. This round completes the package's boundary disclosure accordingly.
+- 变更：双语 visual 三框场地读取提示补充该背景读数（仅背景记录，不平移 geometry）；`A-SITE-READING-020` 的 statement/impact 把该读数记为一条量化不确定性数据（533–898 米东偏、均值约 667 米），边界、指标、场景、项目与重点区状态全部不变；site-grounding 新增 `boundary_uncertainty_background_r34` 合同记录规则层依据与本轮变更。
+- Changes: the bilingual visual three-frame site-reading notice gains the background reading (background only, no geometry shift); `A-SITE-READING-020` records it in statement/impact as one quantitative uncertainty datum (533–898 m east, mean about 667 m) with no boundary, metric, scene, project or key-area state change; site-grounding gains the `boundary_uncertainty_background_r34` contract with the rule-layer basis and this round's changes.
+- geometry 九文件、metrics 值、全部场景/项目/重点区、G0、NO-GO、权利边界不变。
+- The nine geometry files, metric values, all scenes/projects/key areas, G0, NO-GO and rights boundaries are unchanged.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths.
+
 ## v33.0 - 2026-08-15
 
 **Evidence-integrity enforcement & HTML publication metadata / 证据完整性强制与 HTML 出版元数据**
