@@ -159,7 +159,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 43 deliberate defects across 23 of 26 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 44 deliberate defects across 23 of 26 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -279,7 +279,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 148 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 108；最常见形状：check-measured-the-convenient-thing 30、two-copies-of-one-thing-drifted 21、claim-outlived-the-package 14、deliverable-not-inspected-before-shipping 14。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 148 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 149 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 109；最常见形状：check-measured-the-convenient-thing 30、two-copies-of-one-thing-drifted 21、claim-outlived-the-package 15、deliverable-not-inspected-before-shipping 14。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 149 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -287,7 +287,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：43 处人为缺陷，覆盖 23 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 43 deliberate defects across 23 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：44 处人为缺陷，覆盖 23 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 44 deliberate defects across 23 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,

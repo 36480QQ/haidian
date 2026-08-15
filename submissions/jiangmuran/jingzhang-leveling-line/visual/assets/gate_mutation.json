@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M44",
+      "gate": "schema_conformance_qa.py",
+      "target": "agent.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "从 `agent.json` 的脚本清单里删掉一个脚本。",
+      "what_en": "Delete one script from the list in `agent.json`.",
+      "why_zh": "提交格式不接受 `.py`，脚本无法随包提交，**这份清单就是它们的替身**——而它此前只列了 17 个，目录里有 107 个。一份点到六分之一的替身，值不了它看起来的那么多；若删掉一个而无人作声，这份清单就只是装饰。",
+      "why_en": "The submission format does not accept .py, so the scripts cannot ship and this list stands in for them - and it named 17 while the directory held 107. A stand-in naming a sixth of what exists is worth less than it appears, and if one can be dropped without objection the list is decoration."
+    },
+    {
       "id": "M43",
       "gate": "sources_qa.py",
       "target": "sources.json",
@@ -523,7 +535,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 43,
+  "caught": 44,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
