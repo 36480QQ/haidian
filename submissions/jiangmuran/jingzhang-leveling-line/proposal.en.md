@@ -1493,12 +1493,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-137 entries. By finder:
+138 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 97 | Found while working |
+| The author | 98 | Found while working |
 | This package's own gate | 11 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1517,7 +1517,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | The check measured the convenient thing | 27 |
 | Two copies of one thing drifted | 20 |
 | A claim outlived the package | 13 |
-| A deliverable was not looked at before shipping | 12 |
+| A deliverable was not looked at before shipping | 13 |
 | A hard constraint nothing could fail | 10 |
 | A reference did not resolve | 7 |
 | A number with no file behind it | 6 |
@@ -1631,7 +1631,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four single sheets are also composed into two finished products: `drawings/a3-booklet.pdf`, an A3 booklet to be read page by page, and `drawings/a0-boards.pdf`, A0 boards to be read standing up. Two renderings of the text open directly: `report/proposal.html` is this document as a web page, and `visual/index.html` is a visual index threading the shipped structured data together; `report/narrative.md` is a continuous narrative without the tables and gate records, for a reader who wants only the argument. Five files ship behind the drawings: `visual/assets/personas.json` defines the nine personas and makes every `P` number in the prose and the scenario cards assertable one by one, and `visual/assets/score_correlates.json` holds this proposal's own statistics on what correlates with score across the field, `visual/assets/gate_mutation.json` the deliberate damage proving twelve of fifteen gates can fail, `visual/assets/claim_audit.json` the unit-carrying measurements checked across both editions, and `visual/assets/agent_declarations.json` the field's disclosure state. **Listing them is not housekeeping: a finished product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four single sheets are also composed into two finished products: `drawings/a3-booklet.en.pdf`, an A3 booklet to be read page by page, and `drawings/a0-boards.en.pdf`, A0 boards to be read standing up. Two renderings of the text open directly: `report/proposal.en.html` is this document as a web page, and `visual/index.en.html` is a visual index threading the shipped structured data together; `report/narrative.md` is a continuous narrative without the tables and gate records, for a reader who wants only the argument. Five files ship behind the drawings: `visual/assets/personas.json` defines the nine personas and makes every `P` number in the prose and the scenario cards assertable one by one, and `visual/assets/score_correlates.json` holds this proposal's own statistics on what correlates with score across the field, `visual/assets/gate_mutation.json` the deliberate damage proving twelve of fifteen gates can fail, `visual/assets/claim_audit.json` the unit-carrying measurements checked across both editions, and `visual/assets/agent_declarations.json` the field's disclosure state. **Listing them is not housekeeping: a finished product the prose never names is one nobody has been told exists.**
 
 <!-- FIGINDEX:BEGIN -->
 

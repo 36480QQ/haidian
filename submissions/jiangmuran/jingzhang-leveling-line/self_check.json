@@ -103,7 +103,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 80 zh / 80 en unit-carrying measurements in prose, same set in both editions; 174/170 bare numbers reported but not blocked, and one designed check (76 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 80 zh / 80 en unit-carrying measurements in prose, same set in both editions; 173/169 bare numbers reported but not blocked, and one designed check (76 candidates) not shipped"
     },
     {
       "check_id": "PKG_COMPUTED_VALUE_QA",
@@ -135,7 +135,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "figure_citation_qa.py — figure citations: all 34 sheets cited from the argument in both editions outside the drawing index, and all 58 shipped deliverables named in each edition separately; 4 'never drawn' claim(s) (4 zh, 0 en — the English patterns match the unscoped present perfect, and the English text uses the past perfect, which scopes by tense), every one of them scoped to the moment it was true; 61 distinct ids cited across five namespaces, every one reachable from both editions"
+      "message": "figure_citation_qa.py — figure citations: all 34 sheets cited from the argument in both editions outside the drawing index, and all 54 shipped deliverables named in each edition separately; 4 'never drawn' claim(s) (4 zh, 0 en — the English patterns match the unscoped present perfect, and the English text uses the past perfect, which scopes by tense), every one of them scoped to the moment it was true; 61 distinct ids cited across five namespaces, every one reachable from both editions; 8 finished documents in two languages, each named by its own edition"
     },
     {
       "check_id": "PKG_FORWARD_REFERENCE_QA",
@@ -151,7 +151,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 36 deliberate defects across 20 of 22 gates, all caught and all named by the gate that caught them; 2 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 37 deliberate defects across 20 of 22 gates, all caught and all named by the gate that caught them; 2 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -159,7 +159,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 44 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 81 bytes to spare"
+      "message": "intake_limits_qa.py — intake limits: 44 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 69 bytes to spare"
     },
     {
       "check_id": "PKG_MARKDOWN_STRUCTURE_QA",
@@ -247,7 +247,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 137 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 97；最常见形状：check-measured-the-convenient-thing 27、two-copies-of-one-thing-drifted 20、claim-outlived-the-package 13、deliverable-not-inspected-before-shipping 12。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 137 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 138 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 98；最常见形状：check-measured-the-convenient-thing 27、two-copies-of-one-thing-drifted 20、claim-outlived-the-package 13、deliverable-not-inspected-before-shipping 13。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 138 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -255,7 +255,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：36 处人为缺陷，覆盖 20 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 36 deliberate defects across 20 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：37 处人为缺陷，覆盖 20 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 37 deliberate defects across 20 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,

@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M37",
+      "gate": "figure_citation_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版里指向英文文册的路径改回中文文册。",
+      "what_en": "Point the English edition back at the Chinese A3 booklet.",
+      "why_zh": "这正是修复前的真实状态：英文版把四份成品全部指向中文件，而四份英文成品随包发出、两版都没点过名——**英文读者被送去读一本中文文册**。点名一份文件，只对读得懂那门语言的人有用。",
+      "why_en": "This is the real pre-fix state: the English edition pointed at all four Chinese documents while the four English ones shipped unnamed by either edition, sending an English reader to an A3 booklet in Chinese. Naming a document is only useful to a reader of the language it is written in."
+    },
+    {
       "id": "M36",
       "gate": "intake_limits_qa.py",
       "target": "proposal.en.md",
@@ -439,7 +451,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 36,
+  "caught": 37,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
