@@ -199,9 +199,15 @@
       "if_wrong_zh": "若公园的真实范围大于 OSM 已测绘部分，412.5 m 会缩小甚至归零。**本包的论点不依赖这个数的大小**——它依赖「两份几何来自不同来源、其差值可被独立复算」这件事本身。数变了，示范不变。",
       "what_would_close_it_zh": "官方发布公园法定范围的 GIS 图层。",
       "affects_metrics": [
+        "existing_block_median_area_sqm",
+        "existing_building_coverage_ratio",
+        "existing_junction_count",
+        "existing_oversized_built_block_count",
+        "existing_street_density_m_per_sqm",
+        "existing_street_length_m",
         "osm_vertices_shipped"
       ],
-      "affects_metric_count": 1,
+      "affects_metric_count": 7,
       "owner": "organizer",
       "next_action_zh": "组织方：发布公园法定范围的 GIS 图层。在此之前 412.5 m 两端都不是官方几何。",
       "next_action_en": "Organizer: publish the GIS layer for the park's statutory extent. Until then neither end of the 412.5 m reading is official geometry.",
