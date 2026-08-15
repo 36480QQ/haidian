@@ -43,7 +43,7 @@ This chapter answers "why this corridor, what is its current state, and what ass
 
 - **Beijing AI Innovation Highland Action Plan (Jan 2026)**: grow core AI industry scale past one trillion yuan within about two years, build a "one core, multi-point" layout centered on Haidian; Haidian's "Origin Community" was selected among the first 4 AI innovation blocks.
 - **Haidian "Two Zones One Belt" comprehensive plan**: Origin Community, Beiwei Community and the **Century-Old Jing-Zhang AI Innovation Belt** as core anchors; the Beijing Zhihui AI Application Cooperation Center (hosting the SCO AI Application Cooperation Center operation) was established.
-- **Block control plan approved (Aug 12, 2026)**: the *Jing-Zhang Railway Heritage Park Corridor Block Control Detailed Plan (2024–2035)* — the most authoritative and direct planning basis — gives the official "One Belt, One Axis, Two Cores, Multi-Points" structure, leading urban renewal with green public space, supporting AI innovation block construction, and developing large models, agents and embodied intelligence [source:PROCESSED-FACT-PACK].
+- **Block control plan approved (Aug 2026, per Beijing Daily / People's Daily Online)**: the *Beijing Haidian Jing-Zhang Railway Heritage Park Corridor (AI Innovation Block Key Area) HD00-1601 etc. Block Control Detailed Plan (Block Level) (2024–2035)* — the most authoritative and direct planning basis — gives the official "One Belt, One Axis, Two Cores, Multi-Points" structure (Dazhongsi Center, Wudaokou Center), leading urban renewal with green public space, supporting AI innovation block construction, and developing large models, agents and embodied intelligence; the plan covers 9 building-led blocks of about 1,668.2 ha bounded by Xinjiekouwai Street (east), Zhongguancun Avenue (west), Chengfu Road (north) and Xizhimenwai Street (south) [source:REGULATORY-PLAN-APPROVED-20260811] [source:REGULATORY-PLAN-APPROVED-20260811-ALT].
 
 > **Planner's judgment**: this is a golden site where "historical depth × industrial density × renewal momentum × policy window" stack together. The control plan is the chassis; this proposal is a conceptual deepening on top of it — it must echo the control-plan structure while connecting the already-alight industries through AI scenarios and public space.
 
@@ -65,6 +65,18 @@ This chapter answers "why this corridor, what is its current state, and what ass
 | Heritage | Triple heritage coexists, lacks contemporary translation | Heritage catalyst, pilgrimage landmarks, wayfinding symbols |
 | Industry | Lacks space containers for the full-stack innovation chain | Scenario weaving, Stack Sanctuary, safety sandbox |
 | Ecology | Thin green belt, blue-green network not systemic | Blue-green stitching, fishbone network, 20-minute park plan |
+
+### Spatial Scope: Baseline Layers for the Existing-Conditions Analysis
+
+The existing-conditions analysis proceeds on three spatial layers, each with a distinct boundary status and data maturity, which determines the confidence level of every statement [source:OFFICIAL-ANNOUNCEMENT] [source:REGULATORY-PLAN-APPROVED-20260811]:
+
+| Layer | Scope | Boundary status | Use in existing-conditions analysis |
+|---|---|---|---|
+| **L1 Regional synergy layer** | Coordinated research area 43.6km² (5th Ring Road N — Jingzang Expressway E — Xizhimenwai St. S — Wanquanhe Rd. W) | Provisional boundary | Macro pattern: culture/industry/university belts, synergy with Beiwei Community, Future Science City, Huairou Science City and Beijing E-Town |
+| **L2 Block control layer** | Official control-plan scope ≈1,668.2ha (Xinjiekouwai St. E — Zhongguancun Ave. W — Chengfu Rd. N — Xizhimenwai St. S, 9 building-led blocks) | **Officially approved (Aug 2026)** | Official skeleton of the analysis: "One Belt, One Axis, Two Cores, Multi-Points" structure, functional baseline of 9 blocks |
+| **L3 Key design layer** | Three key areas 368.4ha (Zhongzhiyuan 192.1 / AI Origin 104.3 / Dazhongsi 72.0) | Provisional (no official boundaries) | In-depth baseline of the three cores, anchored by the control-plan "two cores" (Dazhongsi Center, Wudaokou Center) |
+
+> **Scope discipline**: L2 is the only layer where "officially approved" wording is used — the control-plan scope, four limits, 9 blocks, 1,668.2ha and "One Belt, One Axis, Two Cores, Multi-Points" all come from official media coverage of the control plan approved in Aug 2026 [source:REGULATORY-PLAN-APPROVED-20260811]; L1/L3 boundaries are always labeled "provisional boundary / conceptual suggestion", and no precision beyond source confidence is claimed; the statutory control-plan text and drawings prevail once published by the authority.
 
 ## Narrative Thread: From One Railway to an Intelligence Net
 
@@ -97,6 +109,22 @@ Building on the diagnosis, the proposal sets three progressive objectives, each 
 | **Objective 3: Life** | Make the Urban AI Life Experience Belt "experienceable" — AI scenarios land in streets, parks and daily life | Experience belt · AI+ scenarios / vital city / governance voice |
 
 The three objectives map one-to-one onto the spatial structure: culture anchors "two gateways + 4 pilgrimage landmarks", industry anchors "three-core innovation chain", life anchors "two wings + multi-points + 12 scenario cards". All objectives are conceptual and delivered progressively through phasing.
+
+### Planning Strategies: From Diagnosis to Objectives to Strategies to Spatial Structure
+
+The core logic chain of the proposal is "**existing conditions → planning objectives → planning strategies → spatial structure**": diagnosis is the starting point, objectives set the direction, the seven strategies are the translation mechanism, and the spatial structure is the landing point. Every diagnosed problem maps to an objective layer, a strategy and a spatial anchor, forming a fully traceable chain [depth:existing_conditions_diagnosis] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
+
+| Existing problem (six dimensions) | Objective layer | Strategy | Spatial anchor |
+|---|---|---|---|
+| Mobility: slow-mobility gaps, weak station-city links | Life (experienceable) | Strategy 6 Hub activation | Qinghe "Jing-Zhang Gateway" + Xizhimen "South Gateway", three-paths-one-green slow network |
+| Facilities: east-west split (Line 13 viaduct) | Life (experienceable) | Strategy 2 People stitching | 9km green-corridor innovation network, AI community stations, ground-floor openness |
+| Business: lacks AI-native containers | Industry (growable) | Strategy 5 Format iteration | Dazhongsi AI-native commerce test field, Wudaokou youth co-creation block |
+| Heritage: triple heritage lacks contemporary translation | Culture (perceivable) | Strategy 1 Heritage catalyst | 4 pilgrimage landmarks, sleeper inscriptions, Origin dialogue axis, wayfinding symbols |
+| Industry: lacks space containers for full-stack chain | Industry (growable) | Strategy 3 Scenario weaving | Three-core innovation chain, Stack Sanctuary, safety sandbox, 12 scenario cards |
+| Ecology: thin green belt, no systemic blue-green network | Quality (livable) | Strategy 4 Blue-green stitching | Fishbone blue-green network, 20-minute park plan, sponge+smart |
+| Policy: control-plan structure fixed, needs deep alignment | Quality (livable) | Strategy 7 Policy synergy | Alignment with "One Belt, One Axis, Two Cores, Multi-Points", near-mid-long phasing |
+
+> **Logic closure**: six problems are translated through three objective layers (culture/industry/life) into seven strategies, landing on the "One Corridor, Three Cores, Two Wings, Multi-Points" structure and the 12-node catalyst network — the proposal is not a simple stack of "objectives + form" but an integrated design driven by problems, translated by strategies, and landed in structure. This chain unfolds through the following chapters (Overall Concept, Three-Level Scope, Key Areas, Scenario Cards, Indicator System).
 
 ## Overall Concept: Jing-Zhang Intelligence Artery (JZ-IA)
 
@@ -142,26 +170,29 @@ Echoing the approved Jing-Zhang Railway Heritage Park corridor regulatory detail
 
 ![Land use and spatial structure](assets/figures/land-use-structure.en.png)
 
-### Visual Identity & Logo Concept Exploration
+### Visual Identity & Final Logo
 
-The master brand "JZ-IA / Jing-Zhang Intelligence Artery" is presented through three candidate directions — each is an AI-assisted **concept exploration**, not a registered mark. Professional design and legal teams must refine before any official use.
+The master brand "JZ-IA / Zhi-Mai Jing-Zhang" adopts a **finalized logo** (AI-generated original, no third-party trademark/portrait dependencies).
 
-![JZ-IA three visual-identity directions (concept exploration)](assets/figures/c06_logo_three_directions.png)
+![JZ-IA final Logo](assets/figures/logo_v5_zhimai.jpg)
 
-**Direction A — Ren-shape Typographic Mark**: two slanted gold lines crossing in the shape of the Chinese character "人" (ren), fusing the JZ ligature with the Ren-shape railway motif. Suitable for headlines and signage.
+**Design note (200 words)**:
 
-**Direction B — Corridor Lantern**: a vertical Intelligence Corridor axis with fish-bone lateral spurs and a green crown for the 9 km green belt. Suitable for continuous wayfinding and night-shadowing installations.
+The "Zhi-Mai Jing-Zhang" logo takes as its core motif the **ren-shaped switchback** pioneered by Zhan Tianyou at Qinglongqiao in 1909 — the most distinctive spatial symbol in Chinese railway history. The dual-track "ren" keeps a visible gauge gap, so the railway body is recognizable at a glance; the two arms meet at the apex, echoing the locomotive's "reverse up the slope, then switchback forward" movement — the **switchback point is elevated into the AI origin** (the brick-red node at the apex); the deep navy ring symbolizes the **symbiotic belt** where AI and century-old heritage coexist. The "ren" in the logo is one unbroken flowing line — flowing in from history, cresting at the switchback apex, and toward the future — linking the century-old railway and the AI innovation belt into the same "intelligent artery", echoing the "ren-shaped railway → ren-shaped intelligence net" motif. The wordmark "智脉京张" carries equal visual weight to the emblem, works in single color, is fabricable in 3D and adaptable to cultural products. AI-generated original, no third-party trademark dependencies.
 
-**Direction C — Dialogue Knot**: two interlocking frames evoke the "origin of the examination × origin of innovation" dialogue (1910 Qinghua Garden Station × 2026 Origin Building). Suitable for pilgrimage landmarks and memorial inscriptions.
 
-**Minimum usage guidelines (draft)**:
+**Wordmark "智脉京张"**: total width ≥ 90% of ring diameter, character height ≥ 25%, equal visual weight to the emblem, ensuring legibility at distance and small sizes.
 
-- Master palette: INK #112235 (deep blue) + GOLD #C79838 (gold) + three-color functional zoning (blue / green / orange)
-- Do not overlay low-contrast grey backgrounds on a master-color background; wayfinding text at 5 m viewing distance must be ≥ 30 mm tall
-- Text hierarchy (draft): Title / Subtitle / Body / Caption, with size ratio 4:3:2:1.5
-- Alignment with the planned district wayfinding system to be coordinated during refinement
+**Application matrix** (concept exploration + AI-generated original):
 
-**Visual extensions** (concept only, not implemented): an open-source Wayfinding Kit, road banners, poster templates, and the memorial inscription system (rail-tie stones / pavers) — to be expanded in the refinement phase.
+![Logo landmark tower placement](assets/figures/logo_app1_landmark.jpg) ![Logo corridor paving + lamp](assets/figures/logo_app2_corridor.jpg) ![Logo T-shirt merchandise](assets/figures/logo_app3_tshirt.jpg) ![Logo cultural merchandise](assets/figures/logo_app4_merch.jpg)
+
+① Node gateway · 5m ren-shaped steel landmark tower (luminous ring with embedded logo)｜ ② Corridor · ground ren-shaped dual-track paving motif + intelligence lamp top identifier｜ ③ Cultural · T-shirt single-color navy print｜ ④ Cultural · enamel fridge magnets / badges / mug
+
+**Color & specification** (draft):
+- Primary: navy #1A2B5C (technology/artery) + brick red #B8442F (heritage/railway) + gold #C9A961 (century/honor)
+- Single-color silhouette works, legible at 3cm, fabricable in 3D (steel / LED), adaptable to T-shirt / fridge magnet / wayfinding / landscape sculpture
+- Before final implementation, requires professional design + legal review (trademark registration, type spec, printing craft)
 
 ## Three-Level Scope Framework
 
@@ -239,21 +270,26 @@ The three districts are seriated along the 9km Intelligence Corridor — Zhongzh
 
 ## AI Innovation Ecosystem, Talent Personas and AI+ Scenarios
 
-### Global AI Innovation Ecosystem Benchmarks (7 cases)
+### Global AI Innovation Ecosystem Benchmarks (10 cases)
 
-To locate this proposal within the known sample lineage, the following 7 globally recognised AI innovation ecosystem cases are referenced (data from public sources; in-depth benchmarking and quantitative calibration must await refinement):
+To locate this proposal within the known sample lineage, the following 10 globally recognised AI innovation ecosystem cases are referenced with a quantitative benchmarking dimension (area/scale); data is from public sources (order-of-magnitude public figures, not field-measured), and deep quantitative calibration must await official data:
 
-| Case | Country/City | Type | Core strategy | Correspondence to this proposal |
-|---|---|---|---|---|
-| **King's Cross Knowledge Quarter** | UK · London | Old railway industrial district conversion | 9 research institutions + Google DeepMind + Meta + British Library, 300 000 m² TOD | Intelligence Corridor (rail heritage + AI cluster) |
-| **Mission Bay, San Francisco** | USA · SF | University-anchored tech park | Around UCSF + SF Port brownfield regeneration | Zhongzhi Park (Tsinghua/PKU + brownfield) |
-| **Shenzhen Nanshan Smart Park / Tech Park** | China · Shenzhen | Government-led end-to-end park | 30+ national incubators + 300 000 m² offices | AI Origin Community (Qinghua Campus + incubation) |
-| **Suzhou Industrial Park BioBAY/CDA** | China · Suzhou | Gov + state-owned + intl capital | 7 km² park + overseas partnerships | All factors (community + industry + state partnership) |
-| **Hefei USTC Silicon Valley** | China · Hefei | Mega-science facilities + city-level brand | 4 quantum/fusion mega-science facilities + 10 000 PhDs | One corridor + three cores of mega-science linkage |
-| **Singapore One-North** | Singapore | Government-enterprise knowledge city | 200 ha + JTC platform + cross-border R&D | Twin HSR gateways + global recruitment |
-| **London St Pancras / King's Cross RSSB** | UK · London | Railway heritage regeneration | Old rail hub + education/offices | Jing-Zhang Heritage Park (rail heritage) |
+| Case | Country/City | Type | Area/scale (public) | Core institutions / density | Correspondence to this proposal |
+|---|---|---|---|---|---|
+| **King's Cross Knowledge Quarter** | UK · London | Old railway industrial district conversion | ~27 ha | 9 research institutions + Google DeepMind + Meta + British Library, ~300,000 m² TOD offices | Intelligence Corridor (rail heritage + AI cluster) |
+| **Mission Bay, San Francisco** | USA · SF | University-anchored tech park | ~123 ha | Around UCSF + SF Port brownfield regeneration | Zhongzhi Park (Tsinghua/PKU + brownfield) |
+| **Shenzhen Nanshan Smart Park / Tech Park** | China · Shenzhen | Government-led end-to-end park | ~11.5 km² (tech park area) | 30+ national incubators + ~300,000 m² offices | AI Origin Community (Qinghua Campus + incubation) |
+| **Suzhou Industrial Park BioBAY/CDA** | China · Suzhou | Gov + state-owned + intl capital | ~7 km² | Biomedical + overseas partnerships | All factors (community + industry + state partnership) |
+| **Hefei USTC Silicon Valley** | China · Hefei | Mega-science facilities + city-level brand | Multi-zone | 4 quantum/fusion mega-science facilities + 10,000 PhDs | One corridor + three cores of mega-science linkage |
+| **Singapore One-North** | Singapore | Government-enterprise knowledge city | ~200 ha | JTC platform + cross-border R&D | Twin HSR gateways + global recruitment |
+| **London St Pancras / King's Cross RSSB** | UK · London | Railway heritage regeneration | Station surroundings | Old rail hub + education/offices | Jing-Zhang Heritage Park (rail heritage) |
+| **Seoul Digital Media City (DMC)** | Korea · Seoul | Old industrial site → digital media cluster | ~57 ha | Digital media + broadcasting + content, MBC/SBS HQ | Zhongzhi Park (media × AI crossover scenario) |
+| **Toronto MaRS Discovery District** | Canada · Toronto | Downtown medical + tech cluster | ~15,000 m² core building | Adjacent to U of Toronto + hospitals + 250+ startups | AI Origin Community (campus-proximal commercialisation) |
+| **Barcelona 22@ Innovation District** | Spain · Barcelona | Old industrial urban renewal | ~200 ha | Mixed-use + knowledge-intensive firms + housing restitution | Dazhongsi (stock renewal + vitality mix) |
 
-**Conclusion (concept phase)**: Global AI innovation belts share five legs — government-led + university/research core + old industrial brownfield regeneration + metro/HSR gateway + global capital/technology linkage. This proposal's five elements (Source / Transform / Apply + 9 km corridor + two HSR gateways) align structurally. **However, the quantitative comparators — industry size, TAM, capital scale — must be re-validated in the refinement phase against official data.**
+**Conclusion (concept phase, five-dimension quantitative framework)**: Global AI innovation belts share five legs — government-led + university/research core + old industrial brownfield regeneration + metro/HSR gateway + global capital/technology linkage. This proposal aligns on all five: ① area scale (overall design 11.4 km², mid-to-large tier); ② industrial density (30+ universities/institutes, the national highest); ③ gateway linkage (Qinghe/Xizhimen twin HSR); ④ stock regeneration (old railway + old factories + low-efficiency commercial); ⑤ global recruitment (SCO AI Application Cooperation Center). **Specific industry size, TAM and capital scale must be re-validated against official data; this table only provides structural alignment.**
+
+**Differentiation**: unlike the global cases, this proposal's unique triple overlay is "**railway heritage × AI innovation × university density**" — globally rare for a 9 km railway heritage park corridor to simultaneously carry a national university cluster and an AI innovation belt, which constitutes the core recognisability of the proposal.
 
 ### User Personas (6 types, scenario-oriented; ≥5 required)
 
@@ -272,15 +308,15 @@ To locate this proposal within the known sample lineage, the following 7 globall
 
 While the proposal focuses on Haidian's 43.6 km², it must structurally echo the capital-wide AI layout and the Jing-Jin-Ji coordinated-development strategy, avoiding internal closure:
 
-| Cluster | Strategic positioning | This proposal's channels and reciprocal benefits |
-|---|---|---|
-| **Beizhi Community (Zhongguancun Science City North)** | Mega-science facilities + space + AI fundamental research | Source Core + Intelligence Corridor extends north via Metro Line 13 as a secondary research-spin-off platform |
-| **Future Science City (Changping)** | State-owned enterprises + energy + medicine | AI + energy/medicine joint lab scenarios; governance-experience exchange |
-| **Huairou Science City** | Mega-science facility cluster | "South-publish, North-display" dual-centre structure for science popularisation / launches |
-| **Yizhuang (Beijing ETDA)** | AI manufacturing, autonomous driving | Algorithm → compute → manufacturing chain; autonomous-driving open test zone extends from Zhongzhi Park |
-| **Tianjin / Hebei (Jing-Jin-Ji coordination)** | Compute, equipment, foreign trade | Intelligence Corridor extends along Jing-Zhang HSR; AI compute scheduling and AI-equipment going-global linked via Qinghe / Xizhimen gateways |
+| Cluster | Strategic positioning | Concrete channel | Linkage & co-creation mechanism | Mutual-benefit indicator (concept) |
+|---|---|---|---|---|
+| **Beizhi Community (Zhongguancun Science City North)** | Mega-science facilities + space + AI fundamental research | Metro Line 13 + Jingxin Expressway + Shangdi IT belt | Source Core + Intelligence Corridor extends north as a secondary "source–research" platform | Bidirectional source-talent/tech flow channel (frequency pending ops data) |
+| **Future Science City (Changping)** | State-owned enterprises + energy + medicine | Jingzang Expressway + Metro Changping Line + Jing-Zhang HSR | AI + energy/medicine joint lab scenarios; governance-experience exchange | Joint scenarios ≥ 2 types (concept) |
+| **Huairou Science City** | Mega-science facility cluster | Jingcheng Expressway + Jingmi Road | "South-publish, North-display" dual-centre structure for science popularisation / launches | Joint launches/popularisation ≥ 1/yr |
+| **Yizhuang (Beijing ETDA)** | AI manufacturing, autonomous driving | South 5th Ring + Jingtai Expressway | Algorithm → compute → manufacturing chain; autonomous-driving open test zone extends from Zhongzhi Park | Autonomous-driving test scenario linkage ≥ 1 |
+| **Tianjin / Hebei (Jing-Jin-Ji coordination)** | Compute, equipment, foreign trade | Jing-Zhang HSR + Jinghu/Jingguang corridors | Intelligence Corridor extends along Jing-Zhang HSR; AI compute scheduling and AI-equipment going-global linked via Qinghe / Xizhimen gateways | Compute scheduling node + going-global channel (concept) |
 
-**Coordination principles** (conceptual): respect each cluster's official boundary and primary authority. This proposal only delivers three things — channels, linkages, co-creation mechanisms — it does not overstep authority, compete for primacy, or duplicate construction. All data come from public planning documents; this proposal does not constitute a commitment or judgement regarding other clusters.
+**Coordination principles** (conceptual): respect each cluster's official boundary and primary authority. This proposal only delivers three things — channels, linkages, co-creation mechanisms — it does not overstep authority, compete for primacy, or duplicate construction. Mutual-benefit indicators are conceptual targets requiring multi-party governance before professional estimation. All data come from public planning documents; this proposal does not constitute a commitment or judgement regarding other clusters.
 
 ### AI Scenario Cards (12 cards; ≥10 required)
 
@@ -303,23 +339,23 @@ While the proposal focuses on Haidian's 43.6 km², it must structurally echo the
 
 Each scenario card is anchored to a concrete spatial node with a conceptual operation entity and phasing, forming a "scenario–space–operation" closed loop rather than slogans [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
 
-| Scenario | Location | Node | Operator (concept) | Data governance / Model responsibility | Failure fallback | Verification threshold | KPI (draft) | Phase |
-|---|---|---|---|---|---|---|---|---|
-| S1 Smart transit | Corridor north | A1 Gateway | Government-enterprise pilot | OD-anonymised only; explainability audit | Auto → manual takeover | 3-month trial safety data | Punctuality ≥95% | Near |
-| S2 Ren-shape classroom | Qinghua Garden Station | B2 Dialogue Axis | Museum + education | No biometrics of children | On-site guide fallback | Curriculum review | Annual ≥10,000 visits | Near |
-| S3 Full-stack open-source | Zhongzhi Park | B1 Stack Sanctuary | OSS community + enterprise | Public attribution; container isolation | Community review / rollback | Biweekly release + review | Monthly active contributors ≥200 | Near |
-| S4 OPC Launch Hall | Origin Community | B2 Dialogue Axis | Park operator | Data stays in domain; purpose contract | Manual appeal window | Platform review | Monthly roadshows ≥30 | Near |
-| S5 Health pod | Community station | C nodes | Health authority + enterprise | Health data minimisation + consent | On-site nurse | Medical-grade compliance | Anomaly response ≤15 min | Near |
-| S6 Corridor navigation | Whole corridor | Whole | Park operator | Camera auto-masking; 7-day retention | Volunteer patrol | Monthly audit | Accessibility pass ≥95% | Near-mid |
-| S7 Neighbourhood legal post | Dazhongsi / community | B3/C5 | Justice office + law firm | Case encryption + access trail | Human lawyer review | Legal compliance | Annual ≥5,000 consultations | Mid |
-| S8 Unmanned delivery | Xiaoyue River wing | C6 trial field | Platform enterprise | Route anonymisation | Manual delivery fallback | Road permit + trial | Delivery time −30% | Mid |
-| S9 Environmental watch | Blue-green network | C1 waterfront | Municipal + eco enterprise | Coordinates + timestamp only | On-site handler | Data quality check | Anomalies ≤24h report | Mid |
-| S10 Sci-tech market | Sidaokou | C5 Rail Memory | Market brand | Transaction de-identification | On-site staff | Venue safety permit | Annual ≥1M visitors | Mid |
-| S11 Robot station | Wudaokou | C3 Youth Co-creation | Enterprise + incubator | No identity; real-time erase | Manual channel priority | Safety assessment | Response ≤30s | Mid |
-| S12 Safety sandbox | Zhongzhi Park | B1 Stack Sanctuary | Institute + standards body | Test-set de-identification; isolated net | Isolated rollback | Pass 3-country standards | Vulnerability closure ≤90 days | Mid-long |
+| Scenario | Location | Node | Operator (concept) | Tech maturity | Regulatory permit | Data governance & security | Human takeover | Independent verification | Exit condition | KPI (draft) | Phase |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| S1 Smart transit | Corridor north | A1 Gateway | Government-enterprise pilot | TRL 7 (trial) | Autonomous-driving road-test permit | OD-anonymised only; explainability audit | Remote takeover operator | Third-party safety audit | Demote if punctuality <85% for 2 months | Punctuality ≥95% | Near |
+| S2 Ren-shape classroom | Qinghua Garden Station | B2 Dialogue Axis | Museum + education | TRL 8 (mature) | Museum/education licence | No biometrics of children | On-site guide fallback | Curriculum review | Exit if <5,000 visits/yr | Annual ≥10,000 visits | Near |
+| S3 Full-stack open-source | Zhongzhi Park | B1 Stack Sanctuary | OSS community + enterprise | TRL 8 | Open-source licence | Public attribution; container isolation | Community review / rollback | Biweekly release + review | Exit if contributors <100 | Monthly active contributors ≥200 | Near |
+| S4 OPC Launch Hall | Origin Community | B2 Dialogue Axis | Park operator | TRL 7 | Platform review | Data stays in domain; purpose contract | Manual appeal window | Platform review | Exit if roadshows <15/month | Monthly roadshows ≥30 | Near |
+| S5 Health pod | Community station | C nodes | Health authority + enterprise | TRL 7 | Medical-device registration/compliance | Health data minimisation + consent | On-site nurse | Medical-grade compliance | Exit if response >30 min sustained | Anomaly response ≤15 min | Near |
+| S6 Corridor navigation | Whole corridor | Whole | Park operator | TRL 7 | Public-area surveillance permit | Camera auto-masking; 7-day retention | Volunteer patrol | Monthly audit | Exit if accessibility <90% | Accessibility pass ≥95% | Near-mid |
+| S7 Neighbourhood legal post | Dazhongsi / community | B3/C5 | Justice office + law firm | TRL 8 | Legal compliance review | Case encryption + access trail | Human lawyer review | Legal compliance review | Exit if <3,000 consultations/yr | Annual ≥5,000 consultations | Mid |
+| S8 Unmanned delivery | Xiaoyue River wing | C6 trial field | Platform enterprise | TRL 6 (test) | Road permit + trial | Route anonymisation | Manual delivery fallback | Road permit + trial | Exit if no delivery-time improvement | Delivery time −30% | Mid |
+| S9 Environmental watch | Blue-green network | C1 waterfront | Municipal + eco enterprise | TRL 8 | Environmental monitoring permit | Coordinates + timestamp only | On-site handler | Data quality check | Exit if anomalies >48h sustained | Anomalies ≤24h report | Mid |
+| S10 Sci-tech market | Sidaokou | C5 Rail Memory | Market brand | TRL 8 | Venue safety permit | Transaction de-identification | On-site staff | Venue safety permit | Exit if <500k visitors/yr | Annual ≥1M visitors | Mid |
+| S11 Robot station | Wudaokou | C3 Youth Co-creation | Enterprise + incubator | TRL 8 | Safety assessment | No identity; real-time erase | Manual channel priority | Safety assessment | Exit if response >60s | Response ≤30s | Mid |
+| S12 Safety sandbox | Zhongzhi Park | B1 Stack Sanctuary | Institute + certification body | TRL 7 | PRC Generative AI Measures + EU AI Act (2024/1689) + US NIST AI RMF 1.0 | Test-set de-identification; isolated net | Isolated rollback | Certification-body audit | Exit if any high-severity vuln unresolved ≥90 days OR a P0 unauthorized incident | High-severity vuln remediation ≤90 days; test-set compliance pass-rate ≥95% | Mid-long |
 
-Mapping logic: near-phase scenarios land first on the already-ignited "Origin–Zhongzhi" core and the corridor backbone (light start); mid-phase scenarios spread along the two wings and support nodes (balanced rollout); all operators, KPIs and governance mechanisms are conceptual, subject to professional deepening.
-Mapping logic: near-phase scenarios land first on the already-ignited "Origin–Zhongzhi" core and the corridor backbone (light start); mid-phase scenarios spread along the two wings and support nodes (balanced rollout); all operation entities are conceptual, subject to professional deepening.
+Mapping logic: near-phase scenarios land first on the already-ignited "Origin–Zhongzhi" core and the corridor backbone (light start); mid-phase scenarios spread along the two wings and support nodes (balanced rollout); all operators, tech maturity, KPIs and governance mechanisms are conceptual, subject to professional deepening.
+
 
 ![E6 Youth Co-Creation Block rendering (Wudaokou, pedestrian view, concept)](assets/figures/render-e6-youth.png)
 
@@ -348,6 +384,21 @@ All conversion mechanisms are **conceptual**, to be implemented in the refinemen
 ## Land Use, Building Scale and Retain/Renovate/Demolish
 
 The land use plan follows public standards for territorial survey, planning and use-control classification, forming a complete and gapless land use division [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. The building plan distinguishes retain/renovate/renew/new/pending objects and clarifies building footprints, functions, scale and character suggestions [depth:height_massing_character] [depth:retain_renovate_demolish] [metric:building_footprint_area_sqm]. Where existing buildings, ownership, regulatory plans or engineering conditions are missing, only methods and a calibration checklist are proposed — no fabricated retain/renovate/demolish conclusions; where no official conditions exist for building scale, FAR or height, status is uniformly `unknown` with the pending conditions and recalculation path explained [depth:metrics_recalculation].
+
+**Building-scale scenario derivation (self-consistent logic chain)**: total volume is derived from "buildable land area × scenario FAR" rather than back-calculated from a single building footprint — avoiding denominator mismatch [metric:total_building_volume_sqm_target] [metric:building_footprint_area_sqm]:
+
+- **Land use closure**: the four land-use classes (AI R&D 2.675M m² + research/innovation service 2.589M m² + park green space 3.366M m² + commercial 2.783M m²) sum to 11,412,832.7 m², closing against the overall design area 11,412,825.4 m² (7.3 m² rounding).
+- **Buildable land area**: excluding park green space, AI R&D + research service + commercial = 8.047M m² (804.7 万㎡).
+- **Three scenarios** (existing FAR × target FAR, all conceptual assumptions, not official control):
+
+| Scenario | Existing FAR | Target FAR | Retained | New | Total |
+|---|---|---|---|---|---|
+| Conservative | 1.3 | 2.0 | 10.46M m² | 5.63M m² | 16.09M m² |
+| Neutral (continuity) | 1.5 | 2.34 | 12.07M m² | 6.76M m² | 18.83M m² |
+| Optimistic | 1.7 | 2.7 | 13.68M m² | 8.05M m² | 21.73M m² |
+
+- **Denominator clarification**: `building_footprint_area_sqm = 310,807 m²` is the footprint of the single "Zhongzhi Full-Stack Sanctuary" concept building (BLDG-001, `geometry_role=design_proposal`), NOT the district-wide existing footprint, and must not be used to back-calculate total volume. The "arithmetic conflict" noted in prior review stemmed from this denominator mismatch and has been corrected.
+- **Recalculation path**: once official FAR control and floor-area census are published, all scenario values are recomputed in EPSG:4548.
 
 ## Transport, Rail, Municipal and Public Services
 
@@ -404,7 +455,7 @@ Implementation follows an "ignite first, then weave the network, then scale the 
 
 **② Safeguard mechanisms (conceptual)**
 
-- **Planning alignment**: the spatial structure strictly echoes the approved Aug 2026 control plan "One Belt, One Axis, Two Cores, Multi-Points"; once official polygons are released, recalculate fully in EPSG:4548 and map each item after statutory conditions arrive [source:PROCESSED-FACT-PACK].
+- **Planning alignment**: the spatial structure strictly echoes the approved (Aug 2026, see [source:REGULATORY-PLAN-APPROVED-20260811]) control plan "One Belt, One Axis, Two Cores, Multi-Points"; once official polygons are released, recalculate fully in EPSG:4548 and map each item after statutory conditions arrive.
 - **Implementing actors**: suggest government-enterprise-academia multi-stakeholder governance — government leads public space and landmarks, enterprises lead industrial scenarios and operations, universities/institutes lead source innovation and talent, operators lead events and branding.
 - **Funding and self-sustenance**: a diversified revenue model of space rent + service fees + event operation + investment returns, reducing one-time fiscal dependence.
 - **Data and governance**: all scenarios observe privacy and human-review boundaries; AI-generated content labeled, human-review backstops, manual channels for vulnerable groups [source:AGENT-TASKBOOK].
@@ -448,7 +499,16 @@ The renewal proposal must serve not only innovation industries but also safeguar
 - 'Elderly + children experience review panel' evaluating each iteration of smart facilities, with a veto clause
 - All data collection follows four boundaries: data minimization, purpose specification, manual channel, deletion right (referencing PRC PIPL and AI service standards)
 
-**Quantifiable equity indicators (draft, awaiting refinement)**: affordable workstation share ≥ 30%; continuous accessibility ≥ 95%; service facilities within 5-minute reach ≥ 90%; annual acceptance of elderly/children co-creation proposals ≥ 3.
+**Quantifiable equity indicators (with derivation method and target range)**: the four indicators below are upgraded from conceptual targets to derivable quantitative targets — with formula, assumptions and target range stated, without asserting field-measured values [metric:public_service_coverage_target]:
+
+| Indicator | Formula | Assumptions | Target range |
+|---|---|---|---|
+| Continuous accessibility rate | (accessible continuous segment length / total trail length) × 100% | Slope ≤1:12, tactile paving continuous, clear width ≥1.8m | 90%–95% |
+| 5-minute service reach | households within 5-min walking circle / total households | Walking speed 80m/min (≈400m radius); facilities include medical/education/commercial/park | ≥85% |
+| Affordable workstation share | affordable workstations (≤30% of market average) / total workstations | Market average referencing Zhongguancun office rent (pending official data) | ≥30% |
+| Elderly/children co-creation adoption | accepted proposals / total proposals per year | Community proposal platform + review committee | ≥3/yr |
+
+> Note: the above are target values with stated derivation method (formula + assumptions); official figures require trail GIS, facility points, population distribution and rent census, then recomputed in EPSG:4548.
 
 ## Risk, Copyright and Compliance
 

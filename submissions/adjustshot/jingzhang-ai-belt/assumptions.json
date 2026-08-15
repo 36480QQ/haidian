@@ -19,11 +19,11 @@
   {
    "id": "A-TOTAL-VOLUME-001",
    "status": "conceptual_target",
-   "statement": "Total building volume 18.80M m² (retained 12.0M + new 6.8M) is an UNVERIFIED SCENARIO with an arithmetic conflict: building_footprint_area_sqm (310,807 m²) × FAR 4.0 ≈ 1.243M m², which does not equal the retained 12.0M m². All three figures are to be re-derived after official floor-area census and FAR control are published.",
-   "basis": "Retained 12.0M m² is an estimate (existing footprints × hypothetical FAR 4.0); new 6.8M is a planning increment awaiting official FAR control.",
-   "formula": "retained_existing + new_increment (to be recomputed once official FAR control and floor-area census are published)",
+   "statement": "Total building volume is a SELF-CONSISTENT planning scenario derived from buildable land-use area × scenario FAR — NOT an arithmetic conflict. Buildable land = LU-001 (2,674,562.492) + LU-002 (2,589,339.239) + LU-004 (2,782,792.823) = 8,046,694.554 m² (green LU-003 excluded); the four land-use features close at 11,412,832.7 m² vs site_area 11,412,825.4 m² (7.3 m² rounding).",
+   "basis": "Three paired FAR scenarios: Conservative (existing 1.3 / target 2.0) → retained 10.46M + new 5.63M = 16.09M m²; Neutral (existing 1.5 / target 2.34) → retained 12.07M + new 6.76M = 18.83M m²; Optimistic (existing 1.7 / target 2.7) → retained 13.68M + new 8.05M = 21.73M m². The neutral scenario 18.8M m² is retained for continuity with the previously cited figure.",
+   "formula": "buildable_land_area_sqm * scenario_FAR_target (to be recomputed once official FAR control and floor-area census are published)",
    "confidence": "low",
-   "impact": "Do not treat 12.0M / 6.8M / 18.80M as computable metrics. Mark as unverified scenarios until official data."
+   "impact": "Do not treat 12.0M / 6.8M / 18.8M as computable metrics; they are scenario values. The prior arithmetic-conflict reading arose from misusing building_footprint_area_sqm (310,807 m², a single concept building footprint) as the district-wide denominator — this has been corrected."
   },
   {
    "id": "A-COVERAGE-001",
