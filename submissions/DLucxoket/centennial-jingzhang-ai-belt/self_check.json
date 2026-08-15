@@ -3,64 +3,32 @@
   "package_state": "ready_for_review",
   "checks": [
     {
-      "check_id": "structure",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "detail": "所有必需文件齐全"
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "proposal_sections",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "blocking",
-      "detail": "覆盖所有必需章节"
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "compliance_matrix",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "blocking",
-      "detail": "公告1.3-1.5和agent.1-agent.6全覆盖"
+      "target": "visual_review.py",
+      "message": "visual_packaging: PASS"
     },
     {
-      "check_id": "standard_matrix",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "blocking",
-      "detail": "6条标准全部登记"
-    },
-    {
-      "check_id": "design_depth",
-      "result": "pass",
-      "severity": "blocking",
-      "detail": "15项深度要求覆盖"
-    },
-    {
-      "check_id": "geojson_topology",
-      "result": "pass",
-      "severity": "blocking",
-      "detail": "图层拓扑正确"
-    },
-    {
-      "check_id": "metrics_consistency",
-      "result": "pass",
-      "severity": "blocking",
-      "detail": "指标从GeoJSON复算"
-    },
-    {
-      "check_id": "figures_present",
-      "result": "pass",
-      "severity": "blocking",
-      "detail": "5张必需figure存在"
-    },
-    {
-      "check_id": "visual_html",
-      "result": "pass",
-      "severity": "blocking",
-      "detail": "离线HTML存在"
-    },
-    {
-      "check_id": "provisional_labeling",
-      "result": "pass",
-      "severity": "info",
-      "detail": "provisional boundary已标注"
+      "target": "professional_review.py",
+      "message": "professional_evidence: PASS"
     }
   ],
   "summary": {
@@ -96,25 +64,43 @@
   "deterministic_validation": {
     "returncode": 0,
     "ok": true,
-    "stdout": "Deterministic validation: PASS",
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
     "stderr": ""
   },
   "spatial_review": {
     "returncode": 0,
     "ok": true,
-    "stdout": "Spatial review: PASS",
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "KEY_AREA_PROVISIONAL"
+      ]
+    },
     "stderr": ""
   },
   "visual_review": {
     "returncode": 0,
     "ok": true,
-    "stdout": "Visual packaging check: PASS",
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
     "stderr": ""
   },
   "professional_review": {
     "returncode": 0,
     "ok": true,
-    "stdout": "Professional evidence review: PASS",
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
     "stderr": ""
   }
 }
