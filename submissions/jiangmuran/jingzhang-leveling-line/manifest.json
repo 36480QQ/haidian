@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-15T00:22:49-07:00",
+  "generated_at": "2026-08-15T03:00:26-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,13 +28,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4f0f1fc1b9b90f67e9fc6bff8a0bb110d7bdf8402f06a45cd9ddbfbc29352849"
+      "sha256": "e256ae376f17af9f0db3dbf19aa924363294c158e7aba98b734e4cc83e104a00"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "375186a8d6fd92adeed94443ee018b43b3c5f9348d44054bc07a2e2432ec002a",
+      "sha256": "6d4c7fdd51061fa7be9a9281bc8e5416301c3cd4797eb6c15f90371592fae93c",
       "language": "neutral"
     },
     {
@@ -48,7 +48,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f396e2c5650e27a82870ecfd7ec73767a3f2e1df61478663e8cc0cf8d115e44b",
+      "sha256": "2449ab7bf50c963cbbe68c5518e0ac8370a86c7eb9880075c6996b8d5779c640",
       "language": "neutral"
     },
     {
@@ -62,14 +62,14 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "e9af12fc7768b89c2f7207e2acff871ef6199ba8bdb7f616319374c259e8e49c",
+      "sha256": "e8969b7ce7933996f4d746a403b2c0843a14481ec5f6816a2b1e73701d189625",
       "language": "neutral"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9acf3fe343ba9937c328ad0a6ccc13f4ec93063dccf63df23d1a221403317eed",
+      "sha256": "6cf00ba3683a2a350b83c5d8d7130329a83c0929f73ab960d7cfdeda49653ac1",
       "language": "neutral"
     },
     {
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "abf40e0f02918a4e08b4049cb0d03db32683f8877e2231a14b61abff252ac297"
+      "sha256": "cf25894d55d82dbd4a8e37424f7a5fa7c80d0bb5f58951a510d637536c5de890"
     },
     {
       "path": "report/narrative.md",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "3d3c8bfd12d70d433bc09c4eb446cff3513983fa07e40bcc4fbaeef922f7dfb0",
+      "sha256": "470f1c87a24277c0f4b3af9e6ea9db0516c64e92971413c1bac2f4290abbac55",
       "language": "zh"
     },
     {
@@ -133,7 +133,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "18cbffbe3bd3df64756aed594bb028410cbf0d1d7c4492ee4cbc2cce34c3fdef"
+      "sha256": "64b596fe1ec56d54f799e8dd27778cc4d9c15dd4706ebdc4daab5006b058937f"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -266,7 +266,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "f7eec0f83630d8f1e885e2dd6b58070e5e4c0c9330629e203c76879a8fa757c3"
+      "sha256": "108d04fb233f5869829bd612e1f34e6ddfcafaf9f7c8655b257b14695a9baacf"
     },
     {
       "path": "visual/assets/verify.js",
@@ -315,7 +315,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "7f01bc3cf354c8c36b941fe78aff6d1eeef1128d14357505c9e43c62206d1473"
+      "sha256": "44dd637ed3d708597321a43be18a0734785032460bbe8c5935aaaf715f828111"
     },
     {
       "path": "assets/figures/ecosystem.en.png",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "243f3ebc41d1366a4637b619ee0daf4a9db278494f172993a3ac257e7bb0162b"
+      "sha256": "34b45c488c8ae34ac8ec4200853318587a31eddda85337b2ea5c57404d73c269"
     },
     {
       "path": "report/proposal.en.html",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0aca04bfbb2abfa99a3f188d78a8f807467b844c3f3b79ac04daa77df99d2241"
+      "sha256": "187f420013fbbfeffc3bf4873a2cd81db63970ff6dfe90fcaf5ab22e810050c3"
     },
     {
       "path": "visual/index.en.html",
@@ -427,14 +427,14 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b04bfbde3ba8ccfc544a5941f60e05c40373b77d0adc16d3a4c0a9eb66267d2e"
+      "sha256": "b25d598a71a6003465f47a8ee565c1701b661d0a88813d9c9730d8d0b06d4d44"
     },
     {
       "path": "visual/assets/parity_qa.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "7e2c000dd3f7368c92a8deb387a4d1c81709e025b150243811321e7aeafcb294"
+      "sha256": "4badd7355157d92e87b5624eacb0a29dfb403e79a31f12de6fb69a31a6449700"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -577,21 +577,21 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "4dba74cb1ca663feedbe428ee8313577facc3b191cf1203f49c17416953ef63c"
+      "sha256": "329fff722f87048e24fadfde86ef2f5e808cccae2380e62227194ab611749c26"
     },
     {
       "path": "visual/assets/errata.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "9e4e8fd6bbe1348fec15d269084d26a2dbb2e46f1eacb869d54929e8333ff4ef"
+      "sha256": "a2b450d9cb72123c2ca757742249c6e5102d0143407e5757c3bfca9c0cdde80a"
     },
     {
       "path": "visual/assets/taskbook_coverage.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "a19dad5a50ad67cf1afcde235815110aff7117998eca7f6ab4e055de0d363390"
+      "sha256": "8dad277dc25d7ecf6c2969ff74b703ff2593c21db29b0cca8835f8cf371ee98a"
     },
     {
       "path": "visual/assets/review_gate_survey.json",
@@ -834,14 +834,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "e696d982df013db2daaee3e4e080a847d80f89a2734a97cc9b4a80debd5be533"
+      "sha256": "7979a5fcca50030917b60b93e75d983c7212017a836e8cabab90364f2858e3a7"
     },
     {
       "path": "visual/assets/claim_audit.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "bde51955d52d0aa5d3cd21b8d55a89f92bc7a3f9f6aec8ea3efa0fa8ce5c436c"
+      "sha256": "d6c2a40dd5640eb932de164779b3e661aeb3eaef9b359282c49cfc524fb3c7cf"
     },
     {
       "path": "assets/figures/device.png",
@@ -1006,6 +1006,81 @@
       "required": false,
       "language": "neutral",
       "sha256": "f7e5c3786c48a7a66ec4bd39332fbae8de8e26fcf3e7f5ca8d205f0266495d37"
+    },
+    {
+      "path": "assets/media/leveling-line.mp4",
+      "role": "video",
+      "required": false,
+      "language": "zh",
+      "title_zh": "京张水准线：一次闭合，在时间里",
+      "title_en": "The Leveling Line: one closure, in time",
+      "description_zh": "54 秒动态示意图（无声）：水准线从已知点出发，逐站传递高程，绕一周回到原点，剩下的差值就是闭合差。站序、路线长度与 107 个架站由随包几何在 EPSG:4548 下算出；高差起伏为示意，非实测高程，非实景渲染。",
+      "description_en": "A 54-second silent animated diagram: the line departs a known point, carries height forward setup by setup, comes back round to the origin, and what does not cancel is the closure error. Station order, route lengths and 107 instrument setups are computed from the shipped geometry in EPSG:4548; the profile is illustrative of accumulation, not surveyed elevation, and is not a rendering of built conditions.",
+      "poster": "assets/media/leveling-line.png",
+      "caption": "assets/media/leveling-line.vtt",
+      "transcript": "assets/media/leveling-line.md",
+      "sha256": "697e7e6bd315750b1e57ff10771706960a1701d3b7a66df2fa4d76848682d05d"
+    },
+    {
+      "path": "assets/media/leveling-line.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "a9ce1a29d42d34633132ef41290bb598497f9dfe5e9808ee5e6543c73cc08a3d"
+    },
+    {
+      "path": "assets/media/leveling-line.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7950609c3269b2971b1ddc8cc7cc74d6cf0ba2b5c2f5cbcf8620acc724315b45"
+    },
+    {
+      "path": "assets/media/leveling-line.md",
+      "role": "transcript",
+      "required": false,
+      "language": "neutral",
+      "sha256": "f1adcfd76a09b668485aced3e575170e212aae151822107efde828000c52d67e"
+    },
+    {
+      "path": "assets/media/leveling-year.mp3",
+      "role": "audio",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "一年的声音：同一份工作量，两种落法",
+      "title_en": "The sound of one year: the same work, landing two ways",
+      "description_zh": "48 秒数据发声（无语音、无音乐素材）：全年 214 小时复测工时按月排开，每一次脉冲代表 2.5 小时。前半段所有周期同月起算，峰值 83.5 小时；后半段把三个年度点分开，峰值降到 31.5 小时——工作量一次没变。全部由正弦振荡器合成，非现场录音，不得作为现状声环境的证据。",
+      "description_en": "A 48-second sonification with no speech and no musical material: 214 hours of annual re-survey work laid out month by month, one pulse per 2.5 hours. In the first half every cadence starts in the same month and the peak is 83.5 hours; in the second the three annual readings are separated and the peak falls to 31.5, with no change to the work at all. Synthesised with a sine oscillator, not a recording, and not evidence of the existing acoustic environment.",
+      "transcript": "assets/media/leveling-year.md",
+      "sha256": "6d575ad25ea2a6c04f1375cfb80144db4fc3eb27be20dd0f2a05d7b23d82b667"
+    },
+    {
+      "path": "assets/media/leveling-year.md",
+      "role": "transcript",
+      "required": false,
+      "language": "neutral",
+      "sha256": "dd0fb9440610f8b6987251aeff51561e4154ae53675fdaede50ae03510fdbabc"
+    },
+    {
+      "path": "visual/assets/year_model.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "94e15e98d6189ace9fe46b4d96e056b77238190ef8e83fddca1d5db22cdf2086"
+    },
+    {
+      "path": "visual/assets/year_explorer.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7ccd59192fed39fcb3b01e216b9319b0b8cfbd7de5cfde0f6f697f73d387ea6e"
+    },
+    {
+      "path": "visual/assets/naming.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7e2fef45eafa70f9794d3d34875e11a931ac423a1510eb298b964efb39b36143"
     }
   ],
   "validation_claim": {

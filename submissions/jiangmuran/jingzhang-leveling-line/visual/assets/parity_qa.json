@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.867,
+ "overall_ratio": 0.854,
  "floor": 0.75,
  "sections": [
   {
@@ -19,9 +19,9 @@
   },
   {
    "section": "Design Basis and Source List",
-   "zh_chars": 9657,
-   "en_words": 6351,
-   "ratio": 0.839,
+   "zh_chars": 9794,
+   "en_words": 6342,
+   "ratio": 0.826,
    "pass": true
   },
   {
@@ -33,9 +33,9 @@
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
-   "zh_chars": 5341,
-   "en_words": 3778,
-   "ratio": 0.902,
+   "zh_chars": 5545,
+   "en_words": 3781,
+   "ratio": 0.87,
    "pass": true
   },
   {
@@ -62,8 +62,8 @@
   {
    "section": "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
    "zh_chars": 2236,
-   "en_words": 1560,
-   "ratio": 0.89,
+   "en_words": 1552,
+   "ratio": 0.885,
    "pass": true
   },
   {
@@ -83,15 +83,15 @@
   {
    "section": "Renewal Projects, Implementation Policy, and Phasing",
    "zh_chars": 2444,
-   "en_words": 1713,
-   "ratio": 0.894,
+   "en_words": 1689,
+   "ratio": 0.881,
    "pass": true
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
    "zh_chars": 5477,
-   "en_words": 3652,
-   "ratio": 0.85,
+   "en_words": 3621,
+   "ratio": 0.843,
    "pass": true
   },
   {
@@ -103,9 +103,9 @@
   },
   {
    "section": "References",
-   "zh_chars": 4248,
-   "en_words": 3179,
-   "ratio": 0.955,
+   "zh_chars": 4729,
+   "en_words": 3221,
+   "ratio": 0.869,
    "pass": true
   }
  ],
