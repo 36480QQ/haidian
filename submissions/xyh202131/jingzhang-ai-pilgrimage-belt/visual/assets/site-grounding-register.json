@@ -838,6 +838,29 @@
         "result_after_fix": "44 pages pixel-identical to the previous version at 60 dpi grayscale; two fresh-process builds byte-identical (A3 zh 34d3851690808649182d185a773b11b773c0c07f732c9e306a87e4bc600b0e22, A3 en 5c7b88d7e97052ca039b1ef6dbd3ea9add460aae1d4b9bd148a94d5b9e76048d, A0 zh ceb69fff31f0451e9577565e5fd522f2f0622b7301571dd051647f6c5ed9c9f4, A0 en 164c4cc81753649cd090134c11f8a33b5c8097d72e2890be4a2d5f435cddf3c8); 0 blank pages, 0 replacement glyphs, backlinks searchable in both languages",
         "certification_note": "Deterministic rebuild and metadata verification only; PDF/UA conformance is not certified, and this is not human visual inspection or an approval."
       },
+      "evidence_marker_parity_r31": {
+        "contract_id": "JZ-EVIDENCE-MARKER-PARITY-R31",
+        "executed_at": "2026-08-15",
+        "method": "Per-chapter bilingual evidence-marker audit over proposal.md and proposal.en.md: five marker kinds counted per subsection heading; marker value multisets compared across languages",
+        "baseline_findings": {
+          "marker_value_parity": "identical multisets (source 83, standard 8, depth 15, data 106, metric 109 per language)",
+          "chapters_with_differing_marker_placement": 4
+        },
+        "fixes": [
+          {
+            "file": "proposal.en.md",
+            "chapter": "The Century-Time Museum",
+            "change": "moved the three source markers from the Cultural Content Source opening sentence into the Strategic Proposition closing sentence, matching the authoritative Chinese placement"
+          },
+          {
+            "file": "proposal.en.md",
+            "chapter": "Public Mission Economy",
+            "change": "moved the three source markers from the Mechanism Contract opening sentence into the Strategic Proposition closing sentence, matching the authoritative Chinese placement"
+          }
+        ],
+        "result_after_fix": "0 chapters with differing marker placement; totals unchanged (83/8/15/106/109 per language); both reports re-rendered with the Round 23 media-link fix re-applied; the Chinese HTML re-render is byte-identical to the previous version; the review handoff index now records evidence_markers_en for all 21 chapter units",
+        "certification_note": "Marker placement and value parity are machine checks only; they do not certify translation equivalence beyond structure and counts."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,
