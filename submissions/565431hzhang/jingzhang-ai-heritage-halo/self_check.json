@@ -63,7 +63,7 @@
       "ai_package_stages": {
         "submissions/565431hzhang/jingzhang-ai-heritage-halo": "formal"
       },
-      "total_bytes": 2203249,
+      "total_bytes": 1993933,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -105,11 +105,11 @@
       ],
       "metrics": {
         "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 5613527.193,
-        "public_space_area_sqm": 465961.14,
-        "building_footprint_area_sqm": 667771.706,
-        "green_ratio": 0.491861,
-        "public_space_ratio": 0.040828
+        "green_space_area_sqm": 5561347.001,
+        "public_space_area_sqm": 279960.853,
+        "building_footprint_area_sqm": 648798.432,
+        "green_ratio": 0.487289,
+        "public_space_ratio": 0.02453
       }
     },
     "stderr": ""
@@ -122,8 +122,8 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.491861,
-        "public_space_ratio": 0.040828
+        "green_ratio": 0.487289,
+        "public_space_ratio": 0.02453
       }
     },
     "stderr": ""
@@ -137,15 +137,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 24,
-        "known_metric_refs_required": 34,
+        "known_metric_refs_required": 18,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 8,
-          "standard": 6,
-          "depth": 12,
-          "data": 9,
-          "metric": 15
+          "source": 17,
+          "standard": 5,
+          "depth": 16,
+          "data": 11,
+          "metric": 5
         }
       }
     },
