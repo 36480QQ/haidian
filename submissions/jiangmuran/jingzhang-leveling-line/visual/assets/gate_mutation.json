@@ -428,6 +428,37 @@
   "gates_not_covered": {
     "gate_mutation_qa.py": "this file is not in the submitted package, so no shipped-file mutation can reach it; both halves of its detection — that a caught defect is caught, and that it was named — are instead established by two control mutations, `assert_harness_can_report_survival` and `assert_harness_checks_naming`"
   },
+  "rules_matching_nothing": [
+    {
+      "gate": "assumption_refs_qa.py",
+      "rule": "prose boundary markers",
+      "matching": 0,
+      "of": 3,
+      "why_zh": "E116 之后，「靠推定边界」由算出来的证据等级判定，不再靠正文措辞；这条正文规则保留为一张网，接的是等级不为 provisional、而正文仍压在那条边界上的指标——该情形当前不存在。",
+      "why_en": "Since E116 the boundary dependency is decided by the computed evidence class, not by wording. This prose rule is kept as a net for a metric outside the provisional class whose text still rests on that boundary, a case that does not currently occur."
+    },
+    {
+      "gate": "assumption_refs_qa.py",
+      "rule": "census source allowlist",
+      "matching": 2,
+      "of": 5,
+      "unused": [
+        "census.json",
+        "manifest_schema_survey.json",
+        "census_history.json"
+      ],
+      "why_zh": "这三份普查文件随包发出，但当前没有任何指标读它们；名单先于用途存在，因此现在只约束了其中两份。",
+      "why_en": "These census files ship, and no metric currently reads them: the allowlist exists ahead of the use, so only two of the five constrain anything today."
+    },
+    {
+      "gate": "figure_citation_qa.py",
+      "rule": "never-drawn detection, English",
+      "matching": 0,
+      "of": 5,
+      "why_zh": "英文模式抓的是未加时点的现在完成时（has never been drawn），而英文正文写的是过去完成时——**时态本身就是时点**，因此零匹配是对的。已实测：把一处英文改成现在完成时，该闸门当即点名。",
+      "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
+    }
+  ],
   "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 18 道闸门，其中 18 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
   "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 18 gates, 18 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
