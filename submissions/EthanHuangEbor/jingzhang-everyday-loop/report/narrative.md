@@ -20,20 +20,12 @@ not_an_official_score=true · competition_concept_not_implementation_filing · n
 
 #### 七维证据地图 / Seven-dimension evidence map
 
-- `brief_relevance` evidence={"stations":9,"carriers":["S","M","L"],"gates":["G0","G1","G2","G3","G4"]}; status=`conditional_concept_programme_not_started_not_authorized`; next=`G0`
-- `originality` evidence={"regional_interfaces":7,"landmarks":3}; status=`competition_grade_concept_evidence_not_approval`; next=`named_counterparty_and_site_authorization`
-- `ai_planning_innovation` evidence={"contracts":12,"synthetic":72,"qualified":12,"blocked":60}; status=`synthetic_tabletop_only_not_field_test`; next=`future_pending_authorization`
-- `implementation_feasibility` evidence={"checkpoints":["D001-010","D011-025","D026-040","D041-055","D056-070","D071-085","D086-095","D096-100","M03","M12","M36"],"months":12,"roles":5,"kpis":8}; status=`annual_concept_programme_not_started_not_authorized`; next=`authorized_operator_capacity_finance`
-- `public_interest_inclusion` evidence={"co_design":"planned_not_run","sessions":[],"affected_user_right":"modify_or_stop_before_release"}; status=`planned_not_run`; next=`future_pending_authorization`
-- `risk_compliance` evidence={"supplier":"concept_not_procured","trademark":"not_cleared_not_registered","rights_clearance":false}; status=`evidence_recorded_clearance_pending`; next=`legal_professional_review`
-- `expression_completeness` evidence={"evidence_path_count":12,"dimension_count":7}; status=`deterministic_bilingual_digest`; next=`named_human_bilingual_signoff`
-
-Exact path map: `compliance_matrix.json#/narrative_contract/review_visible_digest`.
+brief_relevance:conditional_concept_programme_not_started_not_authorized>G0; originality:competition_grade_concept_evidence_not_approval>named_counterparty_and_site_authorization; ai_planning_innovation:synthetic_tabletop_only_not_field_test>future_pending_authorization; implementation_feasibility:annual_concept_programme_not_started_not_authorized>authorized_operator_capacity_finance; public_interest_inclusion:planned_not_run>future_pending_authorization; risk_compliance:evidence_recorded_clearance_pending>legal_professional_review; expression_completeness:deterministic_bilingual_digest>named_human_bilingual_signoff. Exact facts/path index: `compliance_matrix.json#/narrative_contract/review_visible_digest`.
 
 #### 品牌与权利护照 / Brand and rights passport
 
-font_licenses=SIL Open Font License 1.1; SIL Open Font License 1.1 / Bitstream Vera License with DejaVu additions; Image-2 model=`gpt-image-2`; external_case_imagery_or_logo_reused=false; third_party_map_tiles=false; trademark=`not_cleared_not_registered`; build_only_libraries=Pillow,fontTools,ReportLab,pypdf,Poppler,Chromium; rights/provenance evidence is not legal clearance.
+fonts=SIL Open Font License 1.1; SIL Open Font License 1.1 / Bitstream Vera License with DejaVu additions; Image-2=`gpt-image-2`; external imagery/Logo reuse=false; third-party tiles=false; trademark=`not_cleared_not_registered`; build-only=Pillow,fontTools,ReportLab,pypdf,Poppler,Chromium; not legal clearance.
 
 #### 可决策实施交接 / Decision-ready implementation handoff
 
-9 stations; S/M/L; G0-G4; 11 checkpoints; M03/M12/M36; 12 monthly programme records; S/M/L capacity rules; 5 unassigned role classes; 8 KPI definitions; outcomes=`null`; 7 regional interfaces; landmarks=LM-01,LM-02,LM-03; AI contracts/checks/releases/blocked=12/72/12/60; co-design=`planned_not_run`; `actual_sessions=[]`; future=`future_pending_authorization`; supplier=`concept_not_procured`; affected-user right=`modify_or_stop_before_release`; same-task manual route=true; restoration evidence required=true.
+stations/carriers/gates/checkpoints/reviews=9/S-M-L/G0-G4/11/M03-M12-M36; months/roles/KPIs/interfaces=12/5/8/7; landmarks=LM-01,LM-02,LM-03; AI=12/72/12/60; `planned_not_run`; `actual_sessions=[]`; `future_pending_authorization`; `concept_not_procured`; `modify_or_stop_before_release`; same-task manual route=true; restoration evidence required=true.
