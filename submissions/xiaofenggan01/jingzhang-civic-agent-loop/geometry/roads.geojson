@@ -153,7 +153,12 @@
         "stitch_note": "大钟寺 AI 产业聚集区东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "大钟寺商圈",
+        "east_node": "学清路社区",
+        "stitch_target": "大钟寺产业区×学院路高校带",
+        "composite_functions": "智能原生消费展示+适老导航段"
       },
       "geometry": {
         "type": "LineString",
