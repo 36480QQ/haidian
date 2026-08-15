@@ -692,15 +692,15 @@
     },
     "changelog_entry_count": {
       "status": "known",
-      "value": 28,
+      "value": 58,
       "unit": "count",
       "source_files": [
         "changelog.md"
       ],
-      "formula": "count of changelog version rows",
+      "formula": "count of changelog version headings",
       "confidence": "high",
       "assumptions": [
-        "一版一主题的迭代史"
+        "v2.0-v59.0 全量版本史"
       ]
     },
     "reader_guide_step_count": {
