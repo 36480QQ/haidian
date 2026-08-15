@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v6.9 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.0 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "25e0bfd8a4f72a9cf14cd234cd1c41896ea0aa180cffb9e9f5478d43b2f2dd20"
+      "sha256": "1c784b79b3a38c1b4f49fc3adfe96a300b89681f3b69a4068db38809dc54d6c7"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "ebd3ca817d79b964379da7abdce60b6db54495ac85de999f8c8eed6becaef66f"
+      "sha256": "797a7abf76688a09fa8762cfda9f91f552c66558363f4e49a33fb8d26edfeb54"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f56f964d95488d4d62e044e8d29f2b4753393113ed5a96cfd5e60ea837eafae0"
+      "sha256": "36d2fa0db2a773772f65467e410451c644d1443a091831bed08145ad6d8ede6e"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "30b4bb1c0e10c4ed7824ec542d2d914553b842ebc6368a8d30853183127ea3af"
+      "sha256": "c6abee28e4f0d7b5509887bec8cd8bb4a3bb035e138170c7feb1cdbd6a53229a"
     },
     {
       "path": "report/narrative.md",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "90cd5c935f6989445eedd9edd1fbf5734f41eafc458140e37acf5ce422d8d4b6"
+      "sha256": "cd7c53a356fe70408be7c1bfce58a1858559d89bff59248a0782590e0f4a3df0"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ea11a3106733183c4360e4ca2f699d977db2581c3f77c1678d571238e3f4a495"
+      "sha256": "23de6944d49984fa5ebcdfbd6fc4e7e072ddd0307fe10b67b0652e5b90610f67"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -509,7 +509,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "c235c55c54eaef58ec121db25ffb00772abb5f5845c7a63ce548b46921654016"
+      "sha256": "77c28fcd830807cd38bbdb692b41a79258930cdfed0c40ab274852f3f4d1a9cb"
     },
     {
       "path": "assets/media/cover.webp",
@@ -650,7 +650,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "8274a3ea402a399f357f6c2ad60309f12868f719651b764b28f3cf29b7ec2351"
+      "sha256": "55a83aadc9c99df65f86f3e1e243f394df647de9db468b656bdd9619a7115233"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -758,7 +758,7 @@
       "language": "neutral",
       "title_zh": "OP-04 节点九十天实施包（概念级：条件序列分期、双分支预算、采购、RACI、班表、投保建议、维护与退出）",
       "title_en": "OP-04 ninety-day implementation pack (concept-level: conditional phasing, two-branch budget, procurement, RACI, rosters, insurance suggestions, maintenance and exit)",
-      "sha256": "6bc8be8dd72f90f51e76ae197d8f651f9d9500b6f13fa683acb8044c65d6a521"
+      "sha256": "6e0631a4b8b90a11f815cf812fdee75540f955f4819c0bbfaec943cf9d76749e"
     },
     {
       "path": "visual/assets/op04-pilot-readiness.json",

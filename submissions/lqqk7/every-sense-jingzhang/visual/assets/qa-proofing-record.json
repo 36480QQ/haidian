@@ -170,8 +170,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "非空行 594 行对 594 行，结构类型逐行不一致数为 0",
-     "result_en": "594 non-blank lines on each side, with zero line-by-line type mismatches",
+     "result_zh": "非空行 596 行对 596 行，结构类型逐行不一致数为 0",
+     "result_en": "596 non-blank lines on each side, with zero line-by-line type mismatches",
      "provenance_zh": "本轮实测",
      "provenance_en": "Measured this round",
      "limitations_zh": "结构级比对，不判断译文是否准确、是否遗漏语义",
@@ -317,8 +317,8 @@
     "Structural equivalence does not guarantee semantic equivalence: two versions can align structurally while individual wordings differ in the strength of their claim, a layer not tested here."
    ],
    "remeasured_on": "2026-08-15",
-   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：840/840 行、594/594 非空、272/272 表格行、四类锚点 220/220（depth 深度锚点 37/37 另计），逐行结构不一致 0",
-   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 840/840 lines, 594/594 non-blank, 272/272 table rows, four-type anchors 220/220 (depth anchors 37/37 counted separately), zero line-by-line type mismatches"
+   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：844/844 行、596/596 非空、272/272 表格行、四类锚点 220/220（depth 深度锚点 37/37 另计），逐行结构不一致 0",
+   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 844/844 lines, 596/596 non-blank, 272/272 table rows, four-type anchors 220/220 (depth anchors 37/37 counted separately), zero line-by-line type mismatches"
   },
   {
    "id": "R3",
