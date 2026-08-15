@@ -1609,11 +1609,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **150 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **152 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 127 |
+| `author-originated` | 129 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |

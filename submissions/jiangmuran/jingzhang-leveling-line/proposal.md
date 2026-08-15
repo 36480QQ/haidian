@@ -1719,15 +1719,15 @@ node visual/assets/verify.js
 
 ### 权利与许可台账
 
-评审无法核验的授权声明等于没有声明。下表逐类列出本包全部资产的来源、许可与**核验方式**，每一行都可独立复核。**逐文件的机读版本随包提交于 `visual/assets/rights_ledger.json`**——它由 `manifest.json` 生成而非手写，枚举的是实际随包的 **150 个文件**，任一文件没有权利归类即构建失败；每条另给出评审自行核验的方式，而不只是一句「原创」。手写台账枚举的是作者记得的资产，生成台账枚举的是包里真有的文件，这个差别正是本方案通篇在说的那件事：
+评审无法核验的授权声明等于没有声明。下表逐类列出本包全部资产的来源、许可与**核验方式**，每一行都可独立复核。**逐文件的机读版本随包提交于 `visual/assets/rights_ledger.json`**——它由 `manifest.json` 生成而非手写，枚举的是实际随包的 **152 个文件**，任一文件没有权利归类即构建失败；每条另给出评审自行核验的方式，而不只是一句「原创」。手写台账枚举的是作者记得的资产，生成台账枚举的是包里真有的文件，这个差别正是本方案通篇在说的那件事：
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**逐文件台账在评审输入之外，因此把它的结果放进来。** `build_review_input` 送出的是 `proposal.md` 与八份 JSON；`report/copyright_statement.md` 与 `visual/assets/rights_ledger.json` 都不在其中。**一份评审结构上打不开的权利台账，从评审的位置看就是一句无法核验的断言**——而那正是本方案在别处反对的东西。当前 **150 个随包文件全部有权利归类**，任一文件缺归类即构建失败：
+**逐文件台账在评审输入之外，因此把它的结果放进来。** `build_review_input` 送出的是 `proposal.md` 与八份 JSON；`report/copyright_statement.md` 与 `visual/assets/rights_ledger.json` 都不在其中。**一份评审结构上打不开的权利台账，从评审的位置看就是一句无法核验的断言**——而那正是本方案在别处反对的东西。当前 **152 个随包文件全部有权利归类**，任一文件缺归类即构建失败：
 
 | 清权类别 | 文件数 | 含义 |
 |---|---|---|
-| `author-originated` | 127 | 本方案原创，无第三方内容 |
+| `author-originated` | 129 | 本方案原创，无第三方内容 |
 | `provisional-only-with-stated-limit` | 9 | 九个 GeoJSON 图层，派生自仓库临时边界，限制已写明 |
 | `author-originated-measurement` | 8 | 对仓库公开元数据的自采统计，定级 background_only |
 | `author-originated-with-embedded-fonts` | 4 | A3/A0 PDF，含字体子集（见下） |
