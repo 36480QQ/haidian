@@ -1,6 +1,8 @@
 import hashlib
 import importlib.util
 import json
+import os
+import shlex
 import subprocess
 import sys
 import tempfile
@@ -22,16 +24,29 @@ if HAS_REVIEW_DEPS:
     from shapely.geometry import shape  # noqa: E402
     from shapely.ops import transform  # noqa: E402
 
+from self_check_submission import run_json_command  # noqa: E402
+
 
 class AgentFacingDocsTests(unittest.TestCase):
     def test_agent_docs_use_scaffold_and_full_self_check_commands(self) -> None:
         docs = "\n".join(
             (REPO_ROOT / rel).read_text(encoding="utf-8")
-            for rel in ["README.md", "agent.html", ".github/PULL_REQUEST_TEMPLATE.md"]
+            for rel in [
+                "README.md",
+                "agent.html",
+                ".github/PULL_REQUEST_TEMPLATE.md",
+                "templates/proposal.md",
+                "scripts/scaffold_ai_submission.py",
+            ]
         )
         self.assertIn("scripts/scaffold_ai_submission.py", docs)
         self.assertIn("scripts/self_check_submission.py", docs)
         self.assertIn("requirements-review.txt", docs)
+        self.assertIn("智能体提交边界", docs)
+        self.assertIn("status=unknown", docs)
+        self.assertIn("reason", docs)
+        self.assertIn("assumptions", docs)
+        self.assertNotIn("pending_control", docs)
 
     def test_agent_docs_require_bilingual_v2_and_post_submission_monitoring(self) -> None:
         skill = (REPO_ROOT / "skills" / "urban-design-ai-submission" / "SKILL.md").read_text(
@@ -41,6 +56,83 @@ class AgentFacingDocsTests(unittest.TestCase):
         self.assertIn("Post-Submission Monitoring", skill)
         self.assertIn("gh pr checks", skill)
         self.assertIn("Uploading is not completion", skill)
+
+
+class SelfCheckEncodingTests(unittest.TestCase):
+    def test_run_json_command_forces_utf8_for_gbk_and_recursive_python_children(self) -> None:
+        nested_child = (
+            "import json; print(json.dumps({'message': '中文全角括号（），²'}, "
+            "ensure_ascii=False))"
+        )
+        parent = (
+            "import subprocess, sys; "
+            f"child = subprocess.run([sys.executable, '-c', {nested_child!r}], "
+            "capture_output=True, text=True, check=True); "
+            "sys.stdout.write(child.stdout)"
+        )
+        with mock.patch.dict(
+            os.environ,
+            {"PYTHONUTF8": "0", "PYTHONIOENCODING": "cp936"},
+        ):
+            result = run_json_command([sys.executable, "-c", parent])
+
+        self.assertEqual(0, result["returncode"])
+        self.assertTrue(result["ok"])
+        self.assertEqual("中文全角括号（），²", result["stdout"]["message"])
+
+    def test_run_json_command_decodes_utf8_diagnostics_independent_of_locale(self) -> None:
+        result = run_json_command(
+            [
+                sys.executable,
+                "-c",
+                "import sys; sys.stdout.buffer.write(('{' + chr(34) + 'message' + chr(34) + ': ' + chr(34) + '中文全角括号（），²' + chr(34) + '}\\n').encode('utf-8'))",
+            ]
+        )
+
+        self.assertEqual(0, result["returncode"])
+        self.assertTrue(result["ok"])
+        self.assertEqual("中文全角括号（），²", result["stdout"]["message"])
+
+    def test_run_json_command_handles_missing_streams_without_secondary_crash(self) -> None:
+        completed = subprocess.CompletedProcess(["fixture"], 1, stdout=None, stderr=None)
+        with mock.patch("self_check_submission.subprocess.run", return_value=completed) as run:
+            result = run_json_command(["fixture"])
+
+        run.assert_called_once_with(
+            ["fixture"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            check=False,
+            env=mock.ANY,
+        )
+        self.assertEqual("1", run.call_args.kwargs["env"]["PYTHONUTF8"])
+        self.assertEqual("utf-8", run.call_args.kwargs["env"]["PYTHONIOENCODING"])
+        self.assertEqual(
+            {
+                "returncode": 1,
+                "ok": False,
+                "stdout": {},
+                "stderr": "command produced no JSON output",
+            },
+            result,
+        )
+
+    def test_run_json_command_requires_json_object_output(self) -> None:
+        fixtures = [
+            ("print('not json')", "invalid JSON output"),
+            ("print('[]')", "JSON output must be an object, got list"),
+            ("print('null')", "JSON output must be an object, got NoneType"),
+            ("pass", "command produced no JSON output"),
+        ]
+        for script, expected_error in fixtures:
+            with self.subTest(script=script):
+                result = run_json_command([sys.executable, "-c", script])
+
+                self.assertEqual(0, result["returncode"])
+                self.assertFalse(result["ok"])
+                self.assertIn(expected_error, result["stderr"])
 
 
 def run_scaffold(output_dir: Path, stage: str = "formal", cwd: Path = REPO_ROOT) -> subprocess.CompletedProcess:
@@ -65,7 +157,10 @@ def run_scaffold(output_dir: Path, stage: str = "formal", cwd: Path = REPO_ROOT)
     )
 
 
-def complete_scaffold(output_dir: Path) -> subprocess.CompletedProcess:
+def complete_scaffold(
+    output_dir: Path,
+    synchronized_paths: tuple[str, ...] = (),
+) -> subprocess.CompletedProcess:
     proposal = output_dir / "proposal.md"
     proposal.write_text(
         proposal.read_text(encoding="utf-8").replace("SCAFFOLD-DRAFT", "PARTICIPANT-DESIGN")
@@ -135,8 +230,37 @@ def complete_scaffold(output_dir: Path) -> subprocess.CompletedProcess:
         target = source.with_name(f"{source.stem}.en{source.suffix}")
         if not target.exists():
             target.write_bytes(source.read_bytes())
+    if synchronized_paths:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        items = {item["path"]: item for item in manifest["files"]}
+        for rel in synchronized_paths:
+            items[rel]["sha256"] = hashlib.sha256((output_dir / rel).read_bytes()).hexdigest()
+        manifest_path.write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
     return subprocess.run(
         [sys.executable, str(REPO_ROOT / "scripts" / "finalize_submission.py"), str(output_dir)],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+
+def mark_self_checked(output_dir: Path) -> subprocess.CompletedProcess:
+    repo_root = output_dir.resolve().parents[2]
+    return subprocess.run(
+        [
+            sys.executable,
+            str(REPO_ROOT / "scripts" / "self_check_submission.py"),
+            str(output_dir),
+            "--repo-root",
+            str(repo_root),
+            "--pr-author",
+            "alice",
+            "--mark-self-checked",
+            "--json",
+        ],
         capture_output=True,
         text=True,
         check=False,
@@ -209,6 +333,143 @@ def write_provisional_site_package(root: Path) -> None:
 
 @unittest.skipUnless(HAS_REVIEW_DEPS, "Install requirements-review.txt to run scaffold/self-check tests")
 class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
+    def test_ready_package_manifest_refresh_updates_only_declared_hashes(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "refresh-ready"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            self.assertEqual(complete_scaffold(submission_dir).returncode, 0)
+            self.assertEqual(mark_self_checked(submission_dir).returncode, 0)
+
+            changed = submission_dir / "visual" / "index.html"
+            changed.write_text(changed.read_text(encoding="utf-8") + "\n<!-- iteration -->\n", encoding="utf-8")
+            unlisted = submission_dir / "notes.tmp"
+            unlisted.write_text("not part of the manifest", encoding="utf-8")
+
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "refresh_submission_manifest.py"),
+                    str(submission_dir),
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
+            result = json.loads(completed.stdout)
+            manifest = json.loads((submission_dir / "manifest.json").read_text(encoding="utf-8"))
+            items = {item["path"]: item for item in manifest["files"]}
+            self.assertEqual(
+                hashlib.sha256(changed.read_bytes()).hexdigest(),
+                items["visual/index.html"]["sha256"],
+            )
+            self.assertNotIn("notes.tmp", items)
+            self.assertNotIn("manifest.json", result["refreshed_files"])
+            self.assertFalse(manifest["validation_claim"]["self_checked"])
+            self.assertIn("--mark-self-checked", result["next_command"])
+            self.assertNotIn("<github-login>", result["next_command"])
+            self.assertEqual(
+                "Replace GITHUB_LOGIN with the exact PR author login.",
+                result["next_command_note"],
+            )
+
+    def test_ready_package_manifest_refresh_restores_missing_hashes(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "refresh-missing-hashes"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            self.assertEqual(complete_scaffold(submission_dir).returncode, 0)
+            self.assertEqual(mark_self_checked(submission_dir).returncode, 0)
+
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                item.pop("sha256", None)
+            manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "refresh_submission_manifest.py"),
+                    str(submission_dir),
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
+            refreshed = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertTrue(refreshed["files"])
+            self.assertTrue(
+                all(item.get("sha256") for item in refreshed["files"] if item.get("path") != "manifest.json")
+            )
+            self.assertFalse(refreshed["validation_claim"]["self_checked"])
+
+            checked = mark_self_checked(submission_dir)
+            self.assertEqual(checked.returncode, 0, checked.stdout + checked.stderr)
+
+    def test_manifest_refresh_next_command_quotes_space_in_path(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            submission_dir = Path(tmp) / "workspace with spaces" / "submission"
+            submission_dir.mkdir(parents=True)
+            artifact = submission_dir / "proposal.md"
+            artifact.write_text("# Proposal\n", encoding="utf-8")
+            (submission_dir / "manifest.json").write_text(
+                json.dumps(
+                    {
+                        "package_state": "ready_for_review",
+                        "validation_claim": {"self_checked": True},
+                        "files": [{"path": "proposal.md", "sha256": "0" * 64}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "refresh_submission_manifest.py"),
+                    str(submission_dir),
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(0, completed.returncode, completed.stdout + completed.stderr)
+            result = json.loads(completed.stdout)
+            command = shlex.split(result["next_command"])
+            self.assertEqual(str(submission_dir), command[2])
+            self.assertEqual("GITHUB_LOGIN", command[command.index("--pr-author") + 1])
+
+    def test_manifest_refresh_refuses_scaffold_and_unsafe_paths(self) -> None:
+        from refresh_submission_manifest import refresh_manifest
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "refresh-refusal"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            ok, error, refreshed = refresh_manifest(submission_dir)
+            self.assertFalse(ok)
+            self.assertIn("must be ready_for_review", error)
+            self.assertEqual([], refreshed)
+
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_state"] = "ready_for_review"
+            manifest["files"].append({"path": "../outside.txt", "sha256": "0" * 64})
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            ok, error, refreshed = refresh_manifest(submission_dir)
+            self.assertFalse(ok)
+            self.assertIn("unsafe or duplicate", error)
+            self.assertEqual([], refreshed)
+
     def test_scaffold_emits_machine_readable_model_disclosure_fields(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             output_dir = Path(tmp) / "submissions" / "alice" / "model-disclosure"
@@ -261,6 +522,21 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             )
             self.assertNotEqual(0, finalized.returncode)
             self.assertIn("required bilingual counterpart is missing", finalized.stdout)
+
+    def test_finalize_accepts_nonempty_drawing_with_synchronized_scaffold_hash(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            output_dir = Path(tmp) / "submissions" / "alice" / "synchronized-drawing"
+            scaffold = run_scaffold(output_dir)
+            self.assertEqual(0, scaffold.returncode, scaffold.stdout + scaffold.stderr)
+
+            finalized = complete_scaffold(
+                output_dir,
+                synchronized_paths=("drawings/a0-boards.pdf",),
+            )
+
+            self.assertEqual(0, finalized.returncode, finalized.stdout + finalized.stderr)
+            manifest = json.loads((output_dir / "manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual("ready_for_review", manifest["package_state"])
 
     def test_finalize_registers_existing_language_counterparts(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -363,6 +639,8 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
 
             finalized = complete_scaffold(submission_dir)
             self.assertEqual(finalized.returncode, 0, finalized.stdout + finalized.stderr)
+            marked = mark_self_checked(submission_dir)
+            self.assertEqual(marked.returncode, 0, marked.stdout + marked.stderr)
             rerun = subprocess.run(
                 [
                     sys.executable,
@@ -380,6 +658,136 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             )
             self.assertEqual(rerun.returncode, 0, rerun.stdout + rerun.stderr)
             self.assertTrue(json.loads(rerun.stdout)["can_enter_formal_review"])
+            manifest = json.loads((submission_dir / "manifest.json").read_text(encoding="utf-8"))
+            self.assertTrue(manifest["validation_claim"]["self_checked"])
+            self.assertEqual(
+                "persisted-self-check-v1",
+                manifest["validation_claim"]["readiness_contract"],
+            )
+            persisted = json.loads((submission_dir / "self_check.json").read_text(encoding="utf-8"))
+            self.assertTrue(persisted["ok"])
+            self.assertTrue(persisted["can_enter_formal_review"])
+            self.assertEqual(
+                {
+                    "DETERMINISTIC_VALIDATION",
+                    "SPATIAL_REVIEW",
+                    "VISUAL_PACKAGING",
+                    "PROFESSIONAL_EVIDENCE",
+                },
+                {item["check_id"] for item in persisted["checks"]},
+            )
+            self_check_item = next(item for item in manifest["files"] if item["path"] == "self_check.json")
+            self.assertEqual(
+                self_check_item["sha256"],
+                hashlib.sha256((submission_dir / "self_check.json").read_bytes()).hexdigest(),
+            )
+
+    def test_mark_self_checked_replaces_stale_runtime_evidence_and_refreshes_hash(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "stale-self-check"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            self.assertEqual(complete_scaffold(submission_dir).returncode, 0)
+
+            self_check_path = submission_dir / "self_check.json"
+            stale = json.loads(self_check_path.read_text(encoding="utf-8"))
+            stale.update(
+                {
+                    "ok": False,
+                    "can_enter_formal_review": False,
+                    "review_status": "revision-requested",
+                }
+            )
+            self_check_path.write_text(json.dumps(stale, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            item = next(item for item in manifest["files"] if item["path"] == "self_check.json")
+            item["sha256"] = hashlib.sha256(self_check_path.read_bytes()).hexdigest()
+            manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+            marked = mark_self_checked(submission_dir)
+            self.assertEqual(marked.returncode, 0, marked.stdout + marked.stderr)
+            persisted = json.loads(self_check_path.read_text(encoding="utf-8"))
+            self.assertTrue(persisted["ok"])
+            self.assertTrue(persisted["can_enter_formal_review"])
+            import jsonschema
+
+            jsonschema.validate(
+                persisted,
+                json.loads(
+                    (REPO_ROOT / "brief" / "site-package" / "schemas" / "self_check.schema.json").read_text(
+                        encoding="utf-8"
+                    )
+                ),
+            )
+            refreshed = json.loads(manifest_path.read_text(encoding="utf-8"))
+            refreshed_item = next(item for item in refreshed["files"] if item["path"] == "self_check.json")
+            self.assertEqual(
+                refreshed_item["sha256"],
+                hashlib.sha256(self_check_path.read_bytes()).hexdigest(),
+            )
+            from generate_submissions_data import has_blocking_self_check
+
+            self.assertFalse(has_blocking_self_check(submission_dir))
+
+    def test_finalize_rejects_manifest_path_outside_submission(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "path-escape"
+            scaffold = run_scaffold(submission_dir, cwd=root)
+            self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
+            outside = root / "outside.txt"
+            outside.write_text("outside must not be hashed\n", encoding="utf-8")
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["files"].append(
+                {"path": str(outside), "role": "narrative", "required": False}
+            )
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            finalized = complete_scaffold(submission_dir)
+
+            self.assertNotEqual(finalized.returncode, 0)
+            self.assertIn("unsafe path", finalized.stdout)
+            persisted = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual("scaffold", persisted["package_state"])
+            self.assertEqual("outside must not be hashed\n", outside.read_text(encoding="utf-8"))
+
+    def test_finalize_rejects_manifest_path_through_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "symlink-escape"
+            scaffold = run_scaffold(submission_dir, cwd=root)
+            self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
+            outside = root / "outside.txt"
+            outside.write_text("outside must not be hashed\n", encoding="utf-8")
+            link = submission_dir / "linked.txt"
+            try:
+                link.symlink_to(outside)
+            except OSError as exc:
+                self.skipTest(f"symlink not supported: {exc}")
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["files"].append(
+                {"path": "linked.txt", "role": "narrative", "required": False}
+            )
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            finalized = complete_scaffold(submission_dir)
+
+            self.assertNotEqual(finalized.returncode, 0)
+            self.assertIn("path traverses symbolic link", finalized.stdout)
+            persisted = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual("scaffold", persisted["package_state"])
 
     def test_scaffold_does_not_emit_contributor_exhibit(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -390,6 +798,40 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
             # Portal entry is a maintainer decision; contributors do not ship exhibit.json.
             self.assertFalse((submission_dir / "exhibit.json").exists())
+
+    def test_mark_self_checked_can_replace_persisted_blocking_failure(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "blocking-self-check"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            self.assertEqual(complete_scaffold(submission_dir).returncode, 0)
+
+            self_check_path = submission_dir / "self_check.json"
+            persisted = json.loads(self_check_path.read_text(encoding="utf-8"))
+            persisted["checks"][0]["result"] = "fail"
+            persisted["checks"][0]["severity"] = "blocking"
+            self_check_path.write_text(
+                json.dumps(persisted, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            item = next(item for item in manifest["files"] if item["path"] == "self_check.json")
+            item["sha256"] = hashlib.sha256(self_check_path.read_bytes()).hexdigest()
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            marked = mark_self_checked(submission_dir)
+            self.assertEqual(marked.returncode, 0, marked.stdout + marked.stderr)
+            final_self_check = json.loads(self_check_path.read_text(encoding="utf-8"))
+            self.assertTrue(final_self_check["ok"])
+            self.assertTrue(final_self_check["can_enter_formal_review"])
+            self.assertTrue(
+                all(item["result"] == "pass" for item in final_self_check["checks"])
+            )
 
     def test_validation_rejects_contributor_supplied_exhibit(self) -> None:
         from validate_submission import validate_submission
@@ -524,6 +966,52 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             )
             self.assertNotEqual(checked.returncode, 0)
             self.assertIn("sha256 mismatch for `proposal.md`", checked.stdout)
+            self.assertNotIn("declared digest matches", checked.stdout)
+
+    def test_manifest_hash_mismatch_explains_crlf_normalization(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "crlf-manifest"
+            scaffold = run_scaffold(submission_dir, cwd=root)
+            self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
+
+            proposal = submission_dir / "proposal.md"
+            lf_raw = proposal.read_bytes().replace(b"\r\n", b"\n")
+            proposal.write_bytes(lf_raw)
+            crlf_digest = hashlib.sha256(lf_raw.replace(b"\n", b"\r\n")).hexdigest()
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            next(item for item in manifest["files"] if item["path"] == "proposal.md")[
+                "sha256"
+            ] = crlf_digest
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            checked = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "validate_local_submission.py"),
+                    str(submission_dir),
+                    "--repo-root",
+                    str(root),
+                    "--pr-author",
+                    "alice",
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertNotEqual(checked.returncode, 0)
+            self.assertIn("sha256 mismatch for `proposal.md`", checked.stdout)
+            self.assertIn("declared digest matches the CRLF form", checked.stdout)
+            self.assertIn(
+                "Regenerate manifest.json from the exact bytes committed to Git",
+                checked.stdout,
+            )
 
     def test_scaffold_includes_public_source_registry_reference(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -583,6 +1071,8 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
             finalized = complete_scaffold(submission_dir)
             self.assertEqual(finalized.returncode, 0, finalized.stdout + finalized.stderr)
+            marked = mark_self_checked(submission_dir)
+            self.assertEqual(marked.returncode, 0, marked.stdout + marked.stderr)
             completed = subprocess.run(
             [
                 sys.executable,
@@ -631,6 +1121,8 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
             finalized = complete_scaffold(submission_dir)
             self.assertEqual(finalized.returncode, 0, finalized.stdout + finalized.stderr)
+            marked = mark_self_checked(submission_dir)
+            self.assertEqual(marked.returncode, 0, marked.stdout + marked.stderr)
 
             completed = subprocess.run(
                 [

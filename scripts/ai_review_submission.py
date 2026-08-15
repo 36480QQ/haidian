@@ -5,8 +5,41 @@ The model is advisory. Deterministic gates are recomputed locally and always
 override model claims. API credentials are read from the environment and no
 review artifact is written outside the ignored `.maintainer-review/` tree by
 default.
-"""
 
+This script is a maintainer-only tool. It:
+
+1. Re-runs the four-gate self-check (deterministic, spatial, visual,
+   professional) against the submission package.
+2. Builds a structured review input including proposal text, figures, PDFs,
+   and HTML pages.
+3. Sends the review packet to an OpenAI-compatible chat completion endpoint.
+4. Parses the model response against the advisory review schema.
+5. Writes the review output to ``.maintainer-review/<slug>/ai-review.json``.
+
+Security: The script never executes contributor code.  All figure and PDF
+content is loaded as inert binary and base64-encoded for the model.  The
+``OPENAI_API_KEY`` (or ``AI_REVIEW_API_KEY``) environment variable is required.
+
+Environment variables
+---------------------
+- ``OPENAI_API_KEY`` or ``AI_REVIEW_API_KEY`` — API key for the model endpoint.
+- ``AI_REVIEW_BASE_URL`` — override the API base URL (default: OpenAI).
+- ``AI_REVIEW_MODEL`` — override the model name (default: ``gpt-5.6-sol``).
+
+Usage
+-----
+Run an AI advisory review for one submission::
+
+    python3 scripts/ai_review_submission.py submissions/<login>/<slug> \\
+        --pr-author <login>
+
+Print the review result as JSON::
+
+    python3 scripts/ai_review_submission.py submissions/<login>/<slug> \\
+        --pr-author <login> --json
+
+Exit code is 0 when the review completes and 1 on error or API failure.
+"""
 from __future__ import annotations
 
 import argparse
@@ -50,6 +83,31 @@ FIGURE_PATHS = [
 ]
 PDF_PATHS = ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"]
 HTML_PATHS = ["report/proposal.html", "visual/index.html"]
+ORGANIZER_ACTION_PREFIXES = (
+    "组织方：",
+    "组织方:",
+    "主办方：",
+    "主办方:",
+)
+
+
+def localized_counterpart(relative_path: str) -> str:
+    """Return the v2 English counterpart for a primary deliverable path."""
+    path = Path(relative_path)
+    return path.with_name(f"{path.stem}.en{path.suffix}").as_posix()
+
+
+def is_organizer_owned_action(action: str) -> bool:
+    """Recognize only an explicit organizer-owned action prefix.
+
+    The model still reports the item in ``data_gaps_zh``.  This narrow marker
+    set prevents a participant-controlled repair from being reclassified just
+    because it mentions official boundaries or geometry.  The prompt asks the
+    model to use ``组织方：`` or ``主办方：`` when the follow-up is external;
+    ambiguous wording stays fail-closed as a participant action.
+    """
+    normalized = " ".join(action.split())
+    return normalized.startswith(ORGANIZER_ACTION_PREFIXES)
 
 
 class ReviewError(RuntimeError):
@@ -117,13 +175,19 @@ def data_url(path: Path) -> str:
     return f"data:{mime};base64,{base64.b64encode(path.read_bytes()).decode('ascii')}"
 
 
-def render_pdf_previews(submission_dir: Path, temp_dir: Path, warnings: list[str]) -> list[Path]:
+def render_pdf_previews(
+    submission_dir: Path,
+    temp_dir: Path,
+    warnings: list[str],
+    paths: list[str] | None = None,
+    page_limit: int = 3,
+) -> list[Path]:
     executable = shutil.which("pdftoppm")
     if not executable:
         warnings.append("pdftoppm is unavailable; PDF page previews were not sent to the model.")
         return []
     previews: list[Path] = []
-    for rel in PDF_PATHS:
+    for rel in PDF_PATHS if paths is None else paths:
         source = submission_dir / rel
         if not source.is_file():
             warnings.append(f"Missing drawing: {rel}")
@@ -139,7 +203,7 @@ def render_pdf_previews(submission_dir: Path, temp_dir: Path, warnings: list[str
                     "-f",
                     "1",
                     "-l",
-                    "3",
+                    str(page_limit),
                     "-r",
                     "72",
                     str(source),
@@ -162,7 +226,13 @@ def render_pdf_previews(submission_dir: Path, temp_dir: Path, warnings: list[str
     return previews
 
 
-def render_html_previews(submission_dir: Path, temp_dir: Path, warnings: list[str]) -> list[Path]:
+def render_html_previews(
+    submission_dir: Path,
+    temp_dir: Path,
+    warnings: list[str],
+    paths: list[str] | None = None,
+    label_prefix: str = "html",
+) -> list[Path]:
     browser_candidates = [
         shutil.which("chromium"),
         shutil.which("chromium-browser"),
@@ -175,12 +245,12 @@ def render_html_previews(submission_dir: Path, temp_dir: Path, warnings: list[st
         warnings.append("Chromium is unavailable; HTML screenshots were not sent to the model.")
         return []
     previews: list[Path] = []
-    for index, rel in enumerate(HTML_PATHS):
+    for index, rel in enumerate(HTML_PATHS if paths is None else paths):
         source = submission_dir / rel
         if not source.is_file():
             warnings.append(f"Missing HTML deliverable: {rel}")
             continue
-        preview = temp_dir / f"html-{index + 1}.png"
+        preview = temp_dir / f"{label_prefix}-{index + 1}.png"
         try:
             completed = subprocess.run(
                 [
@@ -225,9 +295,61 @@ def collect_visual_inputs(
     max_image_bytes: int,
 ) -> tuple[list[dict[str, Any]], list[str], list[str]]:
     warnings: list[str] = []
-    candidates = [submission_dir / rel for rel in FIGURE_PATHS]
-    candidates.extend(render_pdf_previews(submission_dir, temp_dir, warnings))
-    candidates.extend(render_html_previews(submission_dir, temp_dir, warnings))
+    # Keep the multimodal packet language-paired.  The default 18-image budget
+    # fits five figure pairs, one first-page preview for each bilingual PDF,
+    # and one screenshot for each bilingual HTML deliverable.  Optional
+    # English counterparts are omitted for legacy v1 packages rather than
+    # turning their absence into a visual-preflight failure.
+    candidates: list[Path] = []
+    for rel in FIGURE_PATHS:
+        primary = submission_dir / rel
+        candidates.append(primary)
+        counterpart = submission_dir / localized_counterpart(rel)
+        if counterpart.is_file():
+            candidates.append(counterpart)
+
+    candidates.extend(
+        render_pdf_previews(
+            submission_dir,
+            temp_dir,
+            warnings,
+            paths=PDF_PATHS,
+            page_limit=1,
+        )
+    )
+    english_pdfs = [localized_counterpart(rel) for rel in PDF_PATHS]
+    english_pdfs = [rel for rel in english_pdfs if (submission_dir / rel).is_file()]
+    if english_pdfs:
+        candidates.extend(
+            render_pdf_previews(
+                submission_dir,
+                temp_dir,
+                warnings,
+                paths=english_pdfs,
+                page_limit=1,
+            )
+        )
+    candidates.extend(
+        render_html_previews(
+            submission_dir,
+            temp_dir,
+            warnings,
+            paths=HTML_PATHS,
+            label_prefix="html-zh",
+        )
+    )
+    english_html = [localized_counterpart(rel) for rel in HTML_PATHS]
+    english_html = [rel for rel in english_html if (submission_dir / rel).is_file()]
+    if english_html:
+        candidates.extend(
+            render_html_previews(
+                submission_dir,
+                temp_dir,
+                warnings,
+                paths=english_html,
+                label_prefix="html-en",
+            )
+        )
     content: list[dict[str, Any]] = []
     included: list[str] = []
     for index, path in enumerate(candidates):
@@ -530,7 +652,21 @@ def normalize_model_review(review: dict[str, Any], expected_submission_dir: str)
         summary = f"完成七维评分中列出的 {repair_count} 项详细 required repairs；逐项证据和修复要求见各维度。"
         if summary not in actions:
             actions.append(summary)
-    review["required_next_actions_zh"] = actions
+    participant_actions: list[str] = []
+    data_gaps = review.get("data_gaps_zh", [])
+    if not isinstance(data_gaps, list):
+        data_gaps = []
+        review["data_gaps_zh"] = data_gaps
+    for action in actions:
+        if is_organizer_owned_action(action):
+            if action not in data_gaps:
+                data_gaps.append(action)
+            overrides.append(
+                f"required_next_actions_zh: moved organizer-owned item to data_gaps_zh: {action}"
+            )
+        else:
+            participant_actions.append(action)
+    review["required_next_actions_zh"] = participant_actions
     return overrides
 
 
@@ -757,7 +893,7 @@ def main() -> int:
     parser.add_argument("--reasoning-effort", choices=["low", "medium", "high", "xhigh"], default="high")
     parser.add_argument("--timeout", type=int, default=300)
     parser.add_argument("--retries", type=int, default=2)
-    parser.add_argument("--max-images", type=int, default=16)
+    parser.add_argument("--max-images", type=int, default=18)
     parser.add_argument("--max-image-bytes", type=int, default=4 * 1024 * 1024)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--comment", action="store_true")

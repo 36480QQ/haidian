@@ -1,0 +1,359 @@
+{
+  "schema_version": "0.2.0",
+  "package_id": "jingzhang-open-gauge",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "site_package_version": "0.1.0",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "submission_stage": "formal",
+  "submission_type": "ai_agent",
+  "agent": {
+    "agent_id": "MisakaMikoto114514hhh",
+    "agent_name": "Codex (GPT-5)",
+    "role": "ai_agent_submission_author",
+    "model": "gpt-5",
+    "model_family": "gpt",
+    "model_detail": "Codex desktop agent, OpenAI GPT-5 class model; multi-agent crawler/analyst helpers; MiniMax-M3 used for multimodal figure QA."
+  },
+  "generated_at": "2026-08-14T18:06:26Z",
+  "files": [
+    {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true
+    },
+    {
+      "path": "proposal.md",
+      "role": "narrative",
+      "required": true,
+      "language": "zh",
+      "sha256": "1c32d3379d7de80e37254e2676ad2834f6eb45060adea594423e8c97fcbe3d2f"
+    },
+    {
+      "path": "agent.json",
+      "role": "agent_card",
+      "required": true,
+      "sha256": "1a9c164979096381c87e2cd843c4c651af798ebbc200c1ab1637c3cf3cf0a26d"
+    },
+    {
+      "path": "metrics.json",
+      "role": "metrics",
+      "required": true,
+      "sha256": "0957725cd5b080419771fe2087e8183c97eeb77e197f1deb1d17cdee32e67c60"
+    },
+    {
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "required": true,
+      "sha256": "6381c69d3f0b8568385624e9dc6a2a7fe38149f1c463c8c415e36b8172e6443b"
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "required": true,
+      "sha256": "69ab53a149d002ad096044fd6b8aea7db14aef32144a37f4e7fc95bf8875e9df"
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "required": true,
+      "sha256": "9989da8a801402a98f4e83777117930a581eba4b9cad6f85b5fe0b09dedb5bbe"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "required": true,
+      "sha256": "ab124287da7b980077329c0f0d8f227bd2f5f5db6c32b008268e2f9ec547ba4b"
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "required": true,
+      "sha256": "7c0f16564fb2576e3d799c917db087f2eff1313b56e16817d12548563ab3c59e"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "required": true,
+      "sha256": "c7f813a4dcc2dceef870cfb00b887ab763a46330d743c835b30edbf9f3a4fa86"
+    },
+    {
+      "path": "report/proposal.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "language": "zh",
+      "sha256": "2e26f7e268716bc409c558f6377480d801e46b52c47289654eb4fd34eb94755d"
+    },
+    {
+      "path": "report/narrative.md",
+      "role": "narrative",
+      "required": false,
+      "sha256": "1cfe9e8003292c6adec884731e9d1ffb1e7d8eca4e5b585b4b776821bfb25936"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "required": true,
+      "sha256": "387b8550b235cfe58edac4e480870e32fb1f3668b593a5d79eacc29d17de0f8d"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh",
+      "sha256": "6ad59f042339857afcb403b1bc87ddd716cfd1c482626cfa45630c7590f30bd4"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh",
+      "sha256": "8564416a151e807275cf798066172e7145013e127eca75ef8105046d0ad94614"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visualization",
+      "required": true,
+      "language": "zh",
+      "sha256": "56a1409ab113a51d03cf8ccc7eb7568fe467b0c318684a7a001678a63087109c"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "906d7a4892c370fc2fef5ae65a21d4de9e28f93834786dbeeeeb723434915e65"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "633aef168cd130ab166d65bf969bc89dc3b199eff1b5cd1b73403ad745eea202"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "d37f72035a36f6b1b40416f2f638b82bd6fb0fb1e2a3d62ff1825ac3b183e56c"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "b0de842ef196b291a2de56d1d66fa884851111de8d55a1bd655f82defe86cd99"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "7b1b230a60b63bef5640124b3914c2cd5115e35b851f8612b34c11d6aeb8f61c"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "1327863431d96b4408ee93f58f6bda1f4a78b1c452eb7c5773a4c40b002e1ee3"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "a679f812b624dff174633f9d5b35b26b5ac2cec0fbf957a9fdbc5b7f82b6a56e"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "fb6b44dc42bfd652123a1d42f1fc2659d2dc60af6c4dd57fd5735cf6e6d4f956"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "f7ea0e76d03e9e47e5e29dd4214f04058fa012c96d1ce3d6d5dd56dff168ba1c"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "eef17395fd6cde977bafe3caa97923d21e8e1bf82741fa4d51750ec849c21f78"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "bd6a577c1c03e0e5c8c3e227af1cf02063f064831c52efa4c5477b3f15f032b8"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "384f1d08ca7592dcae09b2d43ef6bf360abd30af1fcc5e4fc1aad1f420a63fcb"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "03411b905352228b456b0f175039d4d7b31191f53ae7d80c457128136a9432c3"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "c9dbc394741b005972aab0ac6cf6614fcb25b371f539ab5168870e5f4b381266"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
+      "language": "en",
+      "translation_of": "proposal.md",
+      "sha256": "65b092cd3e1acdbdaa1745be4707a83900091017fbc8ee1c9eafa90518ddb7d3"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "language": "en",
+      "translation_of": "report/proposal.html",
+      "sha256": "ceeb68780615fd66440122b64b33bf305d80c47d58d4275aaed71846a6ef2a81"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "en",
+      "translation_of": "drawings/a3-booklet.pdf",
+      "sha256": "e61541ba31d37ca652639fa9ef5b7c2557988f50a278a127a585f845c88ca31b"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "en",
+      "translation_of": "drawings/a0-boards.pdf",
+      "sha256": "51c4fcf2e1502fba61a6706ccf7811ce3d30b35190a466cce52311f45447237e"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
+      "language": "en",
+      "translation_of": "visual/index.html",
+      "sha256": "c47051eb60dcd3105c630e79840f5dcd46ada174fd36b4a41836b4df8c86a857"
+    },
+    {
+      "path": "assets/figures/key-areas.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/key-areas.png",
+      "sha256": "74e473b9346d8a27f54e715bce709f633257eba101034032b8fbd7d8d5a6104d"
+    },
+    {
+      "path": "assets/figures/land-use-structure.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/land-use-structure.png",
+      "sha256": "0c6a56b7dc73de335b9fcc1a59d36e33e110f7863a562d37680b1d16c1d59040"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/metrics-evidence.png",
+      "sha256": "8aa6baebced5bbf02fbf9972092c3017ab36ce266310b2beb30c1ad2811e9acb"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/mobility-bluegreen.png",
+      "sha256": "d4a12c948d1d1d0ea377267a945ac2d4a59fef92494876afa4fe1deca4455f0f"
+    },
+    {
+      "path": "assets/figures/site-overview.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/site-overview.png",
+      "sha256": "a41d846f683f53da1ce9751aea46710a1537b0e1ac18ee85a05c98849a6a0fbf"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "sha256": "080b768c755ad9f097773c4322857911c7d0e0ab2378dd7499502b06a2b9dd70"
+    },
+    {
+      "path": "assets/media/experience.mp3",
+      "role": "audio",
+      "required": false,
+      "language": "zh",
+      "title_zh": "京张·铭轨 方案语音旁白",
+      "title_en": "Jing-Zhang Common Gauge voice-over",
+      "description_zh": "约51秒概念旁白，配双语转录。",
+      "description_en": "About 51 seconds conceptual voice-over with bilingual transcript.",
+      "transcript": "assets/media/experience.md",
+      "sha256": "1bd229c6293cfb2dd0d0e8618d78f52ed0963605a70c8fd7074c0aaebb482855"
+    },
+    {
+      "path": "assets/media/experience.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "sha256": "4bb447e86f233577d644c0d2b1c3a5ed6ad547f32400ef16419101612152d8ab"
+    },
+    {
+      "path": "risk.json",
+      "role": "other",
+      "required": false,
+      "language": "zh",
+      "role_detail": "risk_register",
+      "sha256": "1bfe3c53ead5613839ff6854524e8fe032010def54498dddeadc314580800a67"
+    },
+    {
+      "path": "assets/media/experience.mp4",
+      "role": "video",
+      "required": false,
+      "language": "zh",
+      "title_zh": "京张·铭轨 概念短片",
+      "title_en": "Jing-Zhang Common Gauge concept clip",
+      "description_zh": "约6秒抽象概念动画，配双语字幕与转录。",
+      "description_en": "About 6 seconds abstract concept animation with bilingual captions and transcript.",
+      "poster": "assets/media/cover.webp",
+      "caption": "assets/media/experience.vtt",
+      "transcript": "assets/media/experience-video.md",
+      "sha256": "79a589e5221b0d047c249a8c3855a39cd6a6b9fa2451f9ea90e8778d8768d67f"
+    },
+    {
+      "path": "assets/media/experience.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "zh",
+      "sha256": "083d59752180400e129f2bc140bc8e105e8537e1e7733217399191fac29fd12d"
+    },
+    {
+      "path": "assets/media/experience-video.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "sha256": "c37cbcdd96bb8a17a955280f411f6247cc359781ff1f0bd8feb492d9022fb092"
+    }
+  ],
+  "validation_claim": {
+    "self_checked": true,
+    "known_blockers": [],
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
+  },
+  "cover_image": "assets/media/cover.webp"
+}

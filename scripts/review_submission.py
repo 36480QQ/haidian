@@ -3,8 +3,33 @@
 
 This script does not call a model. It produces deterministic inputs and a prompt
 that maintainers can pass to an external model or review agent.
-"""
 
+The review packet contains:
+- A structured JSON input (review-input.json) with proposal text, evidence
+  summary, self-check results, and seven rubric dimensions.
+- A Markdown prompt (review-prompt.md) ready to paste into an AI interface.
+
+Seven rubric dimensions
+-----------------------
+1. brief_alignment (任务书相关性) — coverage of open-call brief requirements.
+2. originality (原创性) — novel concepts, mechanisms, scenarios.
+3. ai_planning_innovation (AI 与城市规划创新性) — AI-urban integration.
+4. implementation_feasibility (可实施性) — phasing, actors, metrics.
+5. public_interest_inclusion (公共利益与包容性) — resident and equity coverage.
+6. risk_compliance (风险与合规意识) — data boundaries, copyright, risk matrix.
+7. expression_completeness (表达完整度) — full evidence closure.
+
+Usage
+-----
+Build a review packet for one submission::
+
+    python3 scripts/review_submission.py submissions/<login>/<slug> \\
+        --pr-author <login>
+
+The output files go to .maintainer-review/<slug>/ by default.
+Pass --out to override. This script is typically called by maintainer_review.py
+rather than directly.
+"""
 from __future__ import annotations
 
 import argparse
@@ -211,6 +236,8 @@ def build_prompt(review_input: dict) -> str:
             "Important: deterministic validation and spatial review results are evidence. Treat blocking self-checks, known blockers, and missing official geometry as serious readiness limits.",
             "Treat background_only, provisional_only, and needs_review registry entries as non-formal evidence unless the submitted package separately provides reviewed official/cleared evidence.",
             "Version 2 bilingual deliverables are mandatory. A missing, incomplete, malformed, or incorrectly mapped Chinese/English counterpart is a blocking package-readiness failure. Historical version 1 packages remain compatible; review their available language without inventing missing content. Human reviewers must still compare translated claims, metrics, evidence, and figure positions for substantive equivalence.",
+            "When English counterparts are present, the multimodal packet includes language-paired figure, PDF first-page, and HTML screenshot evidence. Do not reduce expression_completeness merely because a counterpart is absent from the multimodal packet; the deterministic bilingual gate and human package review own that mapping check.",
+            "Organizer-owned missing geometry or official data is a data gap, not a participant repair. If you include an organizer-owned follow-up in required_next_actions_zh, prefix it with exactly `组织方：` or `主办方：`; official/正式 wording alone does not establish ownership. Any action asking the participant to correct, remove, clarify, or replace a claim remains participant-controlled even when it mentions official boundaries or geometry. Record organizer-owned items in data_gaps_zh; required_next_actions_zh must contain participant-controlled repairs and must not block featured-candidate solely because organizer data still needs recalculation.",
             "If pre-submit self-check, spatial review, machine visual-packaging checks, or professional evidence review is FAIL, the package cannot enter formal professional scoring.",
             "",
             "Submission path:",

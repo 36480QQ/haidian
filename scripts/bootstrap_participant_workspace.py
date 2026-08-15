@@ -1,5 +1,48 @@
 #!/usr/bin/env python3
-"""Create a lightweight Haidian participant workspace without proposal media."""
+"""Create a lightweight Haidian participant workspace without proposal media.
+
+This script performs a blobless partial clone with sparse checkout so only the
+participation materials land in the working tree.  Other proposals' PDFs,
+images, and GeoJSON blobs are excluded until explicitly requested.
+
+What the script does
+--------------------
+1. Clones the participant's fork (or the canonical repository) with
+   ``--filter=blob:none --sparse --depth=<N>``.
+2. Sets the sparse-checkout cone to the participation paths listed in
+   ``DEFAULT_SPARSE_PATHS``.
+3. Adds ``open-city-ai/haidian`` as the ``upstream`` remote and syncs the base
+   branch from it.
+4. Creates ``submissions/<github-login>/<proposal-slug>/`` in the sparse
+   checkout and switches to a participant branch.
+5. Verifies that all required files and directories are present.
+
+Usage
+-----
+Bootstrap using the GitHub CLI authenticated identity (recommended)::
+
+    python3 scripts/bootstrap_participant_workspace.py \\
+        --proposal-slug <proposal-slug>
+
+Specify the fork owner and GitHub login explicitly (no GitHub CLI required)::
+
+    python3 scripts/bootstrap_participant_workspace.py \\
+        --fork-owner <login> \\
+        --github-login <login> \\
+        --proposal-slug <proposal-slug>
+
+Dry run (print commands without executing)::
+
+    python3 scripts/bootstrap_participant_workspace.py \\
+        --proposal-slug <proposal-slug> --dry-run
+
+After bootstrapping, install review dependencies and scaffold the submission::
+
+    cd haidian
+    python3 -m pip install -r requirements-review.txt
+    python3 scripts/scaffold_ai_submission.py \\
+        submissions/<login>/<slug> --stage formal
+"""
 
 from __future__ import annotations
 
@@ -15,16 +58,19 @@ from typing import Any
 
 CANONICAL_REPO = "https://github.com/open-city-ai/haidian.git"
 DEFAULT_SPARSE_PATHS = (
-    ".github",
-    "brief",
-    "data",
-    "docs",
-    "schema",
-    "scripts",
-    "skills",
-    "scenarios",
-    "sources",
-    "templates",
+    "/.github",
+    "/brief",
+    "/data",
+    "/docs",
+    "/schema",
+    "/scripts",
+    "/skills",
+    "/scenarios",
+    "/sources",
+    "/templates",
+    "/tracks.json",
+    "/requirements-review.txt",
+    "/requirements-translation.txt",
 )
 REQUIRED_FILES = (
     "skills/urban-design-ai-submission/SKILL.md",
@@ -34,6 +80,7 @@ REQUIRED_FILES = (
     "scripts/scaffold_ai_submission.py",
     "scripts/self_check_submission.py",
     "requirements-review.txt",
+    "tracks.json",
 )
 REQUIRED_DIRECTORIES = ("scenarios",)
 GITHUB_LOGIN_RE = re.compile(r"^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$")
@@ -116,7 +163,7 @@ def command_plan(args: argparse.Namespace, target: Path) -> list[list[str]]:
         origin,
         str(target),
     ]
-    commands = [clone, ["git", "sparse-checkout", "set", *DEFAULT_SPARSE_PATHS]]
+    commands = [clone, ["git", "sparse-checkout", "set", "--no-cone", *DEFAULT_SPARSE_PATHS]]
     if origin.rstrip("/") != args.upstream_url.rstrip("/"):
         commands.extend(
             [
@@ -211,19 +258,77 @@ def render_text(report: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def render_failure(report: dict[str, Any]) -> str:
+    """Render execution and post-bootstrap validation failures without losing detail."""
+    details: list[str] = []
+    if report.get("error"):
+        details.append(str(report["error"]))
+    for field in ("missing_required_files", "missing_required_directories"):
+        values = report.get(field)
+        if values:
+            details.append(f"{field}: {', '.join(str(value) for value in values)}")
+    if not details:
+        details.append("no additional details were reported")
+    return "Bootstrap failed:\n" + "\n".join(f"  {detail}" for detail in details)
+
+
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--target", default="haidian", help="New workspace directory")
-    parser.add_argument("--repo-url", default=CANONICAL_REPO, help="Repository URL when not using a fork")
-    parser.add_argument("--upstream-url", default=CANONICAL_REPO, help="Canonical upstream repository URL")
-    parser.add_argument("--fork-owner", help="Clone https://github.com/<owner>/haidian.git as origin")
-    parser.add_argument("--branch", default="main", help="Base branch to clone")
-    parser.add_argument("--depth", type=int, default=50, help="Shallow commit depth; blobs remain on demand")
-    parser.add_argument("--github-login", help="GitHub login used for the submission directory")
-    parser.add_argument("--proposal-slug", help="Lowercase proposal directory slug")
-    parser.add_argument("--work-branch", help="Participant branch name")
-    parser.add_argument("--dry-run", action="store_true", help="Print the deterministic command plan only")
-    parser.add_argument("--json", action="store_true", help="Print a machine-readable report")
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "--target",
+        default="haidian",
+        help="New workspace directory name (default: haidian)",
+    )
+    parser.add_argument(
+        "--repo-url",
+        default=CANONICAL_REPO,
+        help="Repository URL when not using a fork (default: canonical open-city-ai/haidian)",
+    )
+    parser.add_argument(
+        "--upstream-url",
+        default=CANONICAL_REPO,
+        help="Canonical upstream repository URL (default: open-city-ai/haidian)",
+    )
+    parser.add_argument(
+        "--fork-owner",
+        help="Clone https://github.com/<owner>/haidian.git as origin",
+    )
+    parser.add_argument(
+        "--branch",
+        default="main",
+        help="Base branch to clone (default: main)",
+    )
+    parser.add_argument(
+        "--depth",
+        type=int,
+        default=50,
+        help="Shallow commit depth; blobs are fetched on demand (default: 50)",
+    )
+    parser.add_argument(
+        "--github-login",
+        help="GitHub login used for the submission directory; uses gh auth login if omitted",
+    )
+    parser.add_argument(
+        "--proposal-slug",
+        help="Lowercase proposal directory slug, e.g. ai-heritage-park",
+    )
+    parser.add_argument(
+        "--work-branch",
+        help="Participant branch name (default: submission/<login>/<slug>)",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print the deterministic command plan without executing it",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Print a machine-readable JSON report",
+    )
     args = parser.parse_args(argv)
 
     try:
@@ -246,7 +351,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.json:
         print(json.dumps(report, ensure_ascii=False, indent=2))
     else:
-        print(render_text(report) if report.get("ok") else f"Bootstrap failed: {report['error']}")
+        print(render_text(report) if report.get("ok") else render_failure(report))
     return 0 if report.get("ok") else 1
 
 

@@ -3,6 +3,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,12 +14,20 @@ from auto_review_queue import (  # noqa: E402
     ci_state,
     decide,
     load_cached_review,
+    parse_args,
+    pr_file_paths,
+    queued_prs,
     submission_dir_from_files,
 )
 from generate_submissions_data import package_sha256  # noqa: E402
 
 
 class AutoReviewQueueTests(unittest.TestCase):
+    def test_default_image_budget_matches_bilingual_packet(self) -> None:
+        with patch.object(sys, "argv", ["auto_review_queue"]):
+            args = parse_args()
+        self.assertEqual(18, args.max_images)
+
     def test_accepts_score_at_threshold_when_all_gates_pass(self) -> None:
         review = {
             "mandatory_rejection": {"result": "pass"},
@@ -70,6 +79,41 @@ class AutoReviewQueueTests(unittest.TestCase):
         self.assertEqual("submissions/Alice/plan", submission_dir_from_files(paths, "alice"))
         with self.assertRaises(WorkerError):
             submission_dir_from_files(paths + ["README.md"], "alice")
+
+    def test_pr_file_paths_preserve_unicode_from_paginated_json(self) -> None:
+        payload = [[
+            {"filename": "submissions/alice/plan/proposal.md"},
+            {"filename": "submissions/alice/plan/visual/assets/01-总体方案图.png"},
+        ]]
+        with patch("auto_review_queue.run") as mocked_run:
+            mocked_run.return_value.stdout = json.dumps(payload, ensure_ascii=False)
+            paths = pr_file_paths("open-city-ai/haidian", 999, ROOT)
+
+        self.assertEqual(payload[0][1]["filename"], paths[1])
+        self.assertEqual("submissions/alice/plan", submission_dir_from_files(paths, "alice"))
+        mocked_run.assert_called_once_with(
+            [
+                "gh",
+                "api",
+                "--paginate",
+                "--slurp",
+                "repos/open-city-ai/haidian/pulls/999/files",
+            ],
+            cwd=ROOT,
+        )
+
+    def test_queued_prs_filter_object_labels_without_search(self) -> None:
+        open_prs = [
+            {"number": 101, "labels": [{"name": "review/queued"}]},
+            {"number": 102, "labels": [{"name": "review/ci-failed"}]},
+            {"number": 103, "labels": []},
+        ]
+        with patch("auto_review_queue.gh_json", return_value=open_prs) as mocked_gh_json:
+            self.assertEqual([open_prs[0]], queued_prs("open-city-ai/haidian", "review/queued", ROOT))
+
+        args = mocked_gh_json.call_args.args[1]
+        self.assertNotIn("--label", args)
+        self.assertIn("labels", args[-1])
 
     def test_ci_state(self) -> None:
         self.assertEqual(

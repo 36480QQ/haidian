@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "581f3a18ea7ad14fe804e792d1a4b5ecdb852fd758a39fd141e4e1bf74082005"
+      "sha256": "dd5d835f8245dc9299f7821bc76f49049dca36a5cdcaca2a87587ccec4eee3af"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "2d06a26f472962154831641b844b58824007aa6d60f6bac1db8bd2c96d6338fd"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f5d570db1b1a77cebf02589c9d089ee4e458c0ac5ff07657f2f861f29f9387af"
+      "sha256": "5202e5c3357462d83061c6ab37742faaf4e72d5f3c9b7cf4254f86b3d6f4dca0"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "80d4037bcd3b165e463f2e80ffe52e7fffe892d577af90e281a70632e53c74a0"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "4f7a4f821a4448cbde925b6a894b71315bc2786004ff6b002007e2afc6bab7a4"
+      "sha256": "211e49e10160b268be84c7c9ca1b0166e450a0e345f57a9a1d424a467b95cdeb"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -179,7 +179,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8608883f3dd4f2f8e424a7b5085aa76c222ac9a6162f187264f1b7a2b3a261d9"
+      "sha256": "ff24ba8d4ef660521157b8b68109e57523df1c1896f6f23997bd7162c23f22f8"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -191,7 +191,7 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "ac018025a36d6b859bdf86282828264131abde1c5da525bed23a0d570c2f0a06"
+      "sha256": "b7f965a6f1260f7af5388ff44683dd66197239542de94468c7407eafacb15004"
     },
     {
       "path": "geometry/roads.geojson",
@@ -211,7 +211,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4f370067f1fabc749e8a7cc474570011fec85cfeacf006de5611980d6cebe0cc"
+      "sha256": "e05de031ad2d28ee64dab77e82094b663493acf3653911daef9872189aa83f51"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "4132891fd315fd52108abcda96d7795f247cb41166b31dfeb0ebfc0057174174"
+      "sha256": "e8f84418fd2089b2773cebbc8983b6053450648836f7559b1fcc2f984aca56b7"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "6b4692f1dd1e2724b1c02954fd0ca10a50974bb0510126b8e16564b84218ab2a"
+      "sha256": "e32c00a8adc47be5e068f4274f7262307adc2a84f0c707cd7292d75435c8e02d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -290,14 +290,14 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "bcd6c3f33a129e67f579d325112b216e399b6f8417e769e798065a0dc5ecce83"
+      "sha256": "f3809e06a3af8c9f823a6d5b7a30fb3178f1ce9399fcb017663de869bb8c79f9"
     },
     {
       "path": "visual/assets/switchback-protocol.json",
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "308870c0f096a5a8f0c6032f9762fea0365a68dbd8d5e8549b487c9f644c36a3"
+      "sha256": "429e757b29b707804dc1515fce79d4977d5ed041212b7b8a6822bffa4d654101"
     },
     {
       "path": "assets/figures/renline-logo.svg",
@@ -305,11 +305,191 @@
       "required": false,
       "language": "neutral",
       "sha256": "54f672495018ea58a710a99d388d0d3760e3a6cb726978b494a46f62aab36f73"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "人字线展厅封面(概念示意)",
+      "title_en": "RENLINE gallery cover (conceptual)",
+      "description_zh": "代码绘制的概念封面:人字双轨与K5零公里信号节点;非官方效果图。",
+      "description_en": "Code-drawn conceptual cover of the twin ren-rails and the K5 kilometre-zero node; not an official rendering.",
+      "sha256": "c87f879529d36081705ff6dfb8060692994fb9c6f4c8c69ce95af5dc615c7e5a"
+    },
+    {
+      "path": "visual/assets/renline-explorer.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "人字线漫游交互脚本(内嵌于中英展示页)",
+      "title_en": "RENLINE Explorer interactive script (embedded in both visual pages)",
+      "description_zh": "十驿折返爬升交互示意:点选/键盘浏览各驿与场景卡,零外部依赖,含静态兜底与 reduced-motion。",
+      "description_en": "Interactive switchback-climb schematic of the ten waypoints; zero external dependencies, static fallback and reduced-motion support.",
+      "sha256": "0bfe6a6009f8e6bb902b0e5e74d17fa09bd279cf4ebd71610b3e531de94afc84"
+    },
+    {
+      "path": "visual/assets/renline-explorer-fallback.png",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "人字线漫游静态兜底图",
+      "title_en": "RENLINE Explorer static fallback",
+      "sha256": "21e48fcc099119bc562eb17a28245be03187e60c764a91d4b354fdcb2683c8d1"
+    },
+    {
+      "path": "visual/assets/switchback-protocol.schema.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "6de3dae11449b053b7ae2271cd27249999e5293e6a41515b4c1a80a78a375f4c",
+      "title_zh": "折返协议卡片合同(JSON Schema)",
+      "title_en": "Switchback Protocol card contract (JSON Schema)"
+    },
+    {
+      "path": "visual/assets/fixtures/invalid-geojson-ref-without-anchor.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "225fe4138a51c44edb5820828be4e83521ed9f908e947e851492d90b61fd90a7",
+      "title_zh": "协议合同测试样例",
+      "title_en": "Protocol contract fixture"
+    },
+    {
+      "path": "visual/assets/fixtures/invalid-null-takeover-without-status.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e8511f02a54ba053f56614578c36fb8aab26d9ebf1d2899cf3f3ff96c6b5ec39",
+      "title_zh": "协议合同测试样例",
+      "title_en": "Protocol contract fixture"
+    },
+    {
+      "path": "visual/assets/fixtures/invalid-overclaimed-ascent.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "8f018787bbeef3da4a122c409fe720e6f7d1c43a5a9d7b8be73413a42bf71b43",
+      "title_zh": "协议合同测试样例",
+      "title_en": "Protocol contract fixture"
+    },
+    {
+      "path": "visual/assets/fixtures/invalid-yellow-without-gate.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "c5ab9364fe9bfc68d60cee340e7e6bd6340cc6833b10f2cbd136db4617edbb80",
+      "title_zh": "协议合同测试样例",
+      "title_en": "Protocol contract fixture"
+    },
+    {
+      "path": "visual/assets/fixtures/valid-card.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ec8602753d36edbfec1530a5e714a23f36cf6e13daff8a427ee95571084abdd2",
+      "title_zh": "协议合同测试样例",
+      "title_en": "Protocol contract fixture"
+    },
+    {
+      "path": "visual/assets/run-switchback-validation.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "572aa4b74b052964e3c5cff9a68d46c84bc933bd6535df83654c330e0f2c5227",
+      "title_zh": "折返协议零依赖离线校验器",
+      "title_en": "Zero-dependency offline protocol validator"
+    },
+    {
+      "path": "visual/assets/switchback-validation-receipt.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "d9ea440675be2fce6efbfd4322fbeba178b9a451e670f3e2d2ad519619587370",
+      "title_zh": "协议校验凭证(含输入哈希;通过仅证协议逻辑)",
+      "title_en": "Validation receipt (input hashes; PASS certifies logic only)"
+    },
+    {
+      "path": "assets/media/renline-soundscape.m4a",
+      "role": "audio",
+      "required": false,
+      "language": "neutral",
+      "sha256": "100d121f0b563a39d10b75082e76463d74002de7a3c302783bcf02a9464626dd",
+      "title_zh": "人字线声景《钟声与爬升》(100秒原创器乐,零采样)",
+      "title_en": "RENLINE Soundscape \"Bells and the Climb\" (100s original instrumental, zero samples)",
+      "description_zh": "纯代码加法合成:钟声→节奏爬升→旋律折返再爬更高→登顶合鸣;无人声。",
+      "description_en": "Code-synthesized: bells, rhythmic climb, the motif switching back to climb higher, summit chimes; no speech.",
+      "transcript": "assets/media/renline-soundscape.md",
+      "caption": "assets/media/renline-soundscape.vtt"
+    },
+    {
+      "path": "assets/media/renline-soundscape.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "neutral",
+      "sha256": "8b5c01bd735850bbc9ab8104562b324aa5643bc6331ab777d975dfcee4d7be5b",
+      "title_zh": "声景描述字幕",
+      "title_en": "Soundscape descriptive captions"
+    },
+    {
+      "path": "assets/media/renline-soundscape.md",
+      "role": "transcript",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e9b6e3bbd6ea66c74d0641392b2771ed0b41946fd460c3fcb1104b80a972065f",
+      "title_zh": "声景转写与权利说明",
+      "title_en": "Soundscape transcript & rights note"
+    },
+    {
+      "path": "assets/media/renline-walkthrough.mp4",
+      "role": "video",
+      "required": false,
+      "language": "neutral",
+      "sha256": "68f98bb973fb0921025b1bd4677064a6d6d6ad9881b1fd24680eeda033e1af75",
+      "title_zh": "人字线漫游60秒短片(无人声,配原创声景)",
+      "title_en": "RENLINE 60-second walkthrough (no speech, scored by the original soundscape)",
+      "description_zh": "十驿折返爬升逐站走览,中英双语字幕;概念示意,非官方效果图。",
+      "description_en": "Waypoint-by-waypoint switchback climb with bilingual captions; conceptual, not an official rendering.",
+      "poster": "assets/media/renline-explorer-walkthrough.webp",
+      "caption": "assets/media/renline-walkthrough.vtt",
+      "transcript": "assets/media/renline-walkthrough.md"
+    },
+    {
+      "path": "assets/media/renline-walkthrough.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "neutral",
+      "sha256": "51e499aabf2632f596ced108b173e6d1e11d088325d6f0292a7e9c834453627a",
+      "title_zh": "短片双语字幕",
+      "title_en": "Walkthrough bilingual captions"
+    },
+    {
+      "path": "assets/media/renline-walkthrough.md",
+      "role": "transcript",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ac901502d314911163bc1160a6cc5ed86f89439bd3e17df12aa64efce819b68d",
+      "title_zh": "短片分镜/转写/权利说明",
+      "title_en": "Walkthrough storyboard, transcript & rights note"
+    },
+    {
+      "path": "assets/media/renline-explorer-walkthrough.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "4248760ae0667cb5811d1614930bea02c77ff914ba15b6811dca742c85f09645",
+      "title_zh": "短片海报",
+      "title_en": "Walkthrough poster"
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
-  }
+    "data_confidence": "high",
+    "self_check_command": "python scripts/self_check_submission.py submissions/chucky1102/jingzhang-renline --pr-author chucky1102",
+    "self_check_result": "PASS",
+    "checked_at": "2026-08-11T02:30:00Z",
+    "readiness_contract": "persisted-self-check-v1"
+  },
+  "cover_image": "assets/media/cover.webp"
 }

@@ -75,6 +75,17 @@ class VisualReviewTests(unittest.TestCase):
             self.assertFalse(report.ok)
             self.assertIn("VISUAL_REMOTE_OR_ACTIVE_CONTENT", {issue.check_id for issue in report.issues})
 
+    def test_autoplay_media_fails(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            submission = write_valid_visual_package(Path(tmp))
+            html = VALID_HTML.replace(
+                "</body>", '<video controls autoplay src="../assets/media/walkthrough.mp4"></video></body>'
+            )
+            (submission / "visual" / "index.html").write_text(html, encoding="utf-8")
+            report = review_visual(submission)
+            self.assertFalse(report.ok)
+            self.assertIn("VISUAL_REMOTE_OR_ACTIVE_CONTENT", {issue.check_id for issue in report.issues})
+
     def test_metric_mismatch_fails(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             submission = write_valid_visual_package(Path(tmp))
@@ -83,6 +94,19 @@ class VisualReviewTests(unittest.TestCase):
             report = review_visual(submission)
             self.assertFalse(report.ok)
             self.assertIn("VISUAL_METRIC_MISMATCH", {issue.check_id for issue in report.issues})
+
+    def test_boolean_metric_value_is_not_coerced_to_one(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            submission = write_valid_visual_package(Path(tmp))
+            metrics_path = submission / "metrics.json"
+            metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
+            metrics["metrics"]["green_ratio"]["value"] = True
+            metrics_path.write_text(json.dumps(metrics), encoding="utf-8")
+
+            report = review_visual(submission)
+
+        self.assertFalse(report.ok)
+        self.assertIn("VISUAL_METRIC_SOURCE_MISSING", {issue.check_id for issue in report.issues})
 
     def test_metric_attribute_order_does_not_change_validation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

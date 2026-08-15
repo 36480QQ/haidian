@@ -1,0 +1,554 @@
+{
+  "schema_version": "0.2.0",
+  "package_id": "jingzhang-home-work-relay",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "site_package_version": "0.1.0",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "submission_stage": "formal",
+  "submission_type": "ai_agent",
+  "agent": {
+    "agent_id": "NearCai",
+    "agent_name": "NearCai × OpenAI Codex",
+    "model": "OpenAI Codex",
+    "model_family": "gpt",
+    "model_detail": "OpenAI Codex (GPT-5)"
+  },
+  "generated_at": "2026-08-11T16:12:56.960Z",
+  "files": [
+    {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true
+    },
+    {
+      "path": "proposal.md",
+      "role": "narrative",
+      "required": true,
+      "language": "zh",
+      "sha256": "99c4ec76a0fa3e494dbef1b2d98cad5c927a66884229d99a2b5dfb95e940a0f1"
+    },
+    {
+      "path": "agent.json",
+      "role": "agent_card",
+      "required": true,
+      "sha256": "d1ea7804e775e4e55f93d315b2ded059a4d0152ed13de76af273ee1d8c6216c5"
+    },
+    {
+      "path": "metrics.json",
+      "role": "metrics",
+      "required": true,
+      "sha256": "a6e9d82cd7823b7bc07f78d1d6a7d1d9422b2382fe7f28436d1f8c6fd64428ad"
+    },
+    {
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "required": true,
+      "sha256": "2405dbcb73777abc32f88101fe838223eaab7c42fbcc4d65e7eb73bdaac572ca"
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "required": true,
+      "sha256": "5408d02ad9f68190786efe034fd9c2d1ae22befc0c642261727c9b3f78ff7648"
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "required": true,
+      "sha256": "e8c1071ba4ef9543b802f10df03870dbf12853eb7c19d25f8d7f6547f3b569b7"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "required": true,
+      "sha256": "0427b985fe094143edb8e76f3e13f0d08556f6250ad8674a57a85ed2f8bce139"
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "required": true,
+      "sha256": "d55b49e99e90163675917c152af620ac603565d960770df2bc3b990ad80bba63"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "required": true,
+      "sha256": "0c2cfaa8608cf18e71a4bb121f834e86350a8cf81c5c0461138659b8d7b903fe"
+    },
+    {
+      "path": "report/proposal.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "language": "zh",
+      "sha256": "987bcb9a64d419c4f62f93c17a0b1e1a42ea39ad7182cdf7e0a3fbfcc6523d1d"
+    },
+    {
+      "path": "report/narrative.md",
+      "role": "narrative",
+      "required": false,
+      "sha256": "e80a14ef3e7fd907ce4298adadec543928dd90f81ced0d6075d2b30193da33ee"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "required": true,
+      "sha256": "870f632aaa65644a310f16be49107c95509bba581e4e040f7d5dd2b4ca4c529c"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh",
+      "sha256": "5b2daf6ec384eb8874afa509262f41eb82c5c1f6ad3f90aab13ae255d8dadb25"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh",
+      "sha256": "117695dc4663833ecc7a99f49845383c14b28c23afca2d580bb309fd23895063"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visualization",
+      "required": true,
+      "language": "zh",
+      "sha256": "e31198af094e7b66431a06a2c26d60a5296234e4abf7d81b6d525b71f1c68598"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "489e4f4990567aec8a840b13bb221df7305ddac1b4312b5719c7dd48b2dc248e"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "32a785c72a89f4efbca710ad63ff5ccd6f15eba1473499b572797e900f7e1bda"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "ab9f984915607930843b7fab4220ddeb9f05236989198652f8c39612d8cccc15"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "d9f2fe27cd9c085e55b116e16bb953edc46f735b58ee9587ad00113fe6776f62"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "ec1e0452a1df68a9530c22ed07174bc8883e9c13fce37d979b93d61cec8d16d9"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "3bfa61a7c83668d4b7901bb624bfd426c56dc3b642f776938127fa490011bc84"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "ef0bb4bd8a705464fa19370afacda3d0124ae1023272a0f21307a31864a550ad"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "46c038e26379d5e6c5da59097230bb113badc4784e2675cbf073162e600a23ac"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "6a1b929e8df46744870bef4fbf2b39782951134e6a73bb011e7140765b73e058"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "d55cc19c2b1aed4952f481ba51b94f934d231d9c4b3c5c70dbe3d612fed4243f"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "0e8bd0c2c8bd535084295db5caf7f4d6bfd0b1118dde347564fafa8410a58761"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "97f24c9ebba8fb63fed490dec6065ece24baa5585451cd3ab3ac06204c9f4dc3"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "310a6b0659529942e3fae3a31f4ffeb5fb596d6c971a09a8c9308d14b240b256"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "4839158c9a7e4044a94904b4fc912b3d48c83a48fb11726b5d67db5ecd3fd0f9"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
+      "language": "en",
+      "translation_of": "proposal.md",
+      "sha256": "bf6618ce0f17aca505ff1ad0db89acbd9ef52701e422cec3221b816d8101e07e"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "language": "en",
+      "translation_of": "report/proposal.html",
+      "sha256": "27f1d9f455f9857ad018e7ff1b187a7b19995e932afd0f9b349f2af6ab728646"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "en",
+      "translation_of": "drawings/a3-booklet.pdf",
+      "sha256": "70ab0a8247ba41f34f8ef882408dd7f4643bead4290c0b3ff9d72111c66d9e2a"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "en",
+      "translation_of": "drawings/a0-boards.pdf",
+      "sha256": "9497dc19dda631ea6e8b466bbb5453453448d43b102d77e496dacb26da0e7203"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
+      "language": "en",
+      "translation_of": "visual/index.html",
+      "sha256": "2ce5fe2198d07eab44e633e8af4ab55fc668641e8c2af84c9553fb503fb38afc"
+    },
+    {
+      "path": "assets/figures/key-areas.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/key-areas.png",
+      "sha256": "18641e46670db7d4fdae086f8064fd2f4e35c86f8a309ff196039a772e81d57a"
+    },
+    {
+      "path": "assets/figures/land-use-structure.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/land-use-structure.png",
+      "sha256": "860dc684007500b3b44d199dd4fd5f7873fd64e900750ed91b807df48ce25fe7"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/metrics-evidence.png",
+      "sha256": "e84b2f4feaed34796bff3e1c1e5259d737fbae92d5ae948e1a0c424600d7f117"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/mobility-bluegreen.png",
+      "sha256": "0c6c0b33d94575d7f85afe5cf70e87aca6c520617384e3a151669f3092cd7374"
+    },
+    {
+      "path": "assets/figures/site-overview.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/site-overview.png",
+      "sha256": "fb5bd55fbb918ba0eafda66d04899b923cc494bfee67b7bfc6072ae82adefa48"
+    },
+    {
+      "path": "assets/figures/equity-operations.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "bce8e929e583c99685bef7a69198bd0ff6f5fb852028fb8a12f27718691f03fe"
+    },
+    {
+      "path": "assets/figures/equity-operations.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/equity-operations.png",
+      "sha256": "43ff7fb9cea7fce4b996da90e427aa4139ef7ad4da109ec26a11e47ef48cb4d3"
+    },
+    {
+      "path": "assets/figures/pilot-protocol.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "50d5ce0f218ecfd670c26bce8edb09dd7e232aca0e4fde5ca21171edf499433b"
+    },
+    {
+      "path": "assets/figures/pilot-protocol.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/pilot-protocol.png",
+      "sha256": "7c1ce3398ecba733a851891005c3755b44f019482b2454b52738cd2133bca9c2"
+    },
+    {
+      "path": "assets/figures/regional-relay.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "7ea3777a83c64e16ca009c8f1420978c4d49f625042294d150deb5eea10b9b73"
+    },
+    {
+      "path": "assets/figures/regional-relay.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/regional-relay.png",
+      "sha256": "63217af0bf8ce0a46fd03cb2eeee624e450dc3bbe774011d78e649ed85141d3c"
+    },
+    {
+      "path": "assets/figures/relay-contract.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "2c531ce1e55771e4a65986ca0560d2ebcbd4c7ef758cbe3d7351539c8ccb5a7a"
+    },
+    {
+      "path": "assets/figures/relay-contract.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/relay-contract.png",
+      "sha256": "2e0c142ab31cff883940ac8f33baa980fdab05aef388a600678781b49bfb0f7b"
+    },
+    {
+      "path": "assets/figures/station-dazhongsi.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "0e8bd5a3dc220ad60a15c6599c2546f187ab025aa3a30a0a663689fedba5553c"
+    },
+    {
+      "path": "assets/figures/station-dazhongsi.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/station-dazhongsi.png",
+      "sha256": "211edc1341c072e4c420a8924ae9192b44f2634f4bfcc267f0a131c87c38602f"
+    },
+    {
+      "path": "assets/figures/station-origin.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "2f553cf2f369702e97734e075bc3a0dd1310ca6f3e256b3f0115dd79661578d2"
+    },
+    {
+      "path": "assets/figures/station-origin.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/station-origin.png",
+      "sha256": "5c5206782a91687571490ffdf16cf99679c8c81e8eb53b94cf761c167141a4b3"
+    },
+    {
+      "path": "assets/figures/station-zhongzhiyuan.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "c2e2638f1edf83579acf06f6df4a6a7326f5580c863563d7910fd1e16d998d63"
+    },
+    {
+      "path": "assets/figures/station-zhongzhiyuan.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/station-zhongzhiyuan.png",
+      "sha256": "95168fdd04e13bac2e7b53e9c6ab0c14d01cf323159e6c3eb4e1def69df791a2"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "language": "neutral",
+      "sha256": "550f6bc4f2bd3a84998df2b54b29743bc9d79b3c5a425732a90421760bea37b7"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ddd3655df01322d137d78622c4e6f3e11f672baab6f52784db9b41f5729e6362"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "description_zh": "八维风险登记与人工复核路径。",
+      "description_en": "Eight-dimension risk register and human-review routes.",
+      "sha256": "38f8a49e65a28b90b68b0699e64db9e949ac5a0af77bb84807865b925764f994"
+    },
+    {
+      "path": "spatial.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "description_zh": "不含坐标的概念空间对象索引。",
+      "description_en": "Coordinate-free index of conceptual spatial objects.",
+      "sha256": "774ec39c5a9b44e6b3d107c5e31efb6db6be63e5327671c8e9efa725a5b7478e"
+    },
+    {
+      "path": "simulation.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "description_zh": "十二项离线合同状态检查，不是现场试点结果。",
+      "description_en": "Twelve offline contract-state checks, not field-pilot results.",
+      "sha256": "3fe6f5bdca321e96ff4dcadecac3d90194dd254269e916b575aadb72ecd708cc"
+    },
+    {
+      "path": "visual/assets/brand-operations.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "896be2ed6de6e2bb794462f517427c9ef53451e7d898dad5be06a79f37a61023"
+    },
+    {
+      "path": "visual/assets/equity-acceptance.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "0b5da0f1c0e10855629a51c4a9ee9faf53dfdd37395cfc54817d09def161d80b"
+    },
+    {
+      "path": "visual/assets/pilot-protocol.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "81dd2293fa4de78c7d2d0a219554098269c9c9fc490682000c83a2019605f0c0"
+    },
+    {
+      "path": "visual/assets/regional-interfaces.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "0d2368d875c2d964d7a953b4e13502520bef97f764fa61c8d456ec0af8ffd8f5"
+    },
+    {
+      "path": "visual/assets/relay-contract.expected-invalid.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "66dd5da3aa5fd83e385febf13eda5f182a94d702fee7540d715600761f83b44e"
+    },
+    {
+      "path": "visual/assets/relay-contract.schema.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "497485ce0c55b22632c8b0129806bd12e0b3afced85381f5da5083edd9f455a3"
+    },
+    {
+      "path": "visual/assets/relay-contract.validation.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "4f26f46808fe3b4d936df139edab252ab13b8f52223553b98753c51c992d134a"
+    },
+    {
+      "path": "visual/assets/relay-contracts.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7279ee65257fac00da07732eddcd13651ed9626d4a146e8d1d4874bd6a7a5d6e"
+    },
+    {
+      "path": "visual/assets/station-service-blueprints.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "d1246be5cded188149eb6fb6cd132371e506812b521e728d9e640e2f89b381aa"
+    },
+    {
+      "path": "visual/assets/run-relay-contract-validation.js",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "875afade3c607a887f0c8e053692663a3a4a05127e72fc89c27402ea788cca30"
+    },
+    {
+      "path": "visual/assets/review-score-evidence-map.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "3a7c7f63df5914e8a3541f3ccf7cf6f8545006b210f62390564b5acd98da01c0"
+    },
+    {
+      "path": "visual/assets/score-sprint-100-days.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "4afe8ef0c9898749c849f12fe8f9ef342dc6ec9cf39db1ce94d37b5a67a90e3f"
+    },
+    {
+      "path": "visual/assets/scenario-negative-fixtures.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e79150fcdcf451bc5d70caefecf820e331984a1cd57684ce309705ee076ce2d5"
+    },
+    {
+      "path": "visual/assets/review-adversarial-audit.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "938499b27b876cb2dc0f7df13cc38ee697729ef51f7f92998aa9381c4f3ca65e"
+    },
+    {
+      "path": "visual/assets/review-adversarial-audit.validation.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "83a04fd2f60209353bc4f77290c7f663abc6bf79a6b322ac0d73a0502a586ba5"
+    },
+    {
+      "path": "visual/assets/run-review-adversarial-audit.js",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "0f6a43f7bc57ff2f790f23cd5d6ba0483db351b77e17cc011cbbe8902d5507cc"
+    }
+  ],
+  "validation_claim": {
+    "self_checked": true,
+    "known_blockers": [],
+    "data_confidence": "mixed_provisional_and_conceptual",
+    "readiness_contract": "persisted-self-check-v1"
+  },
+  "cover_image": "assets/media/cover.webp"
+}
