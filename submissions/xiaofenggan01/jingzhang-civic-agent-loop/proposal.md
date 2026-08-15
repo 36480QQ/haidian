@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v49.0"
+iteration: "v50.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -91,7 +91,7 @@ iteration: "v49.0"
 
 本方案把"agent-readable city"从宣言落成可运行制品，使四环协作成为**可审计、可回滚、可证伪的状态机**，而非隐喻。每次城市智能体干预产出一组配套制品（Receipt / 门闸状态机 / 留白验证区 / Agent Passport），全部位于 `report/` 目录。
 
-**Civic Agent Receipt 收据**（`report/narrative.md § Receipt Schema`）定义每次干预的字段：证据引用、人工责任（写角色不指派真实政府部门）、最差组优先（受影响最大群体）、申诉通道、处置结果（pending / pass / fail / rollback / exit）、运行状态（sandbox_only / not_run / controlled_test / public_pilot / retired）、性能结果（null 表示未运行，不冒充已测试）。收据字段数见指标 `[metric:receipt_schema_field_count]`。
+**Civic Agent Receipt 收据**（`report/narrative.md § Receipt Schema`）定义每次干预的字段：证据引用、人工责任（写角色不指派真实政府部门）、最差组优先（受影响最大群体）、申诉通道、处置结果（pending / pass / fail / rollback / exit）、运行状态（sandbox_only / not_run / controlled_test / public_pilot / retired）、性能结果（null 表示未运行，不冒充已测试）。收据字段数见指标 `[metric:receipt_schema_field_count]`，另设三个可选字段（影响相关方/已施缓解/申诉时限）`[metric:receipt_optional_field_count]`。
 
 **G0-G6 七道门闸状态机**（`report/narrative.md § Gate State Machine`）是转辙器三动作的状态机展开：G0-G2 转辙（三环路由）、G3 锁闭（人工复核上锁，未锁不得进入公开空间）、G4 验通（受控测试，验不通退回 G1 重转辙）、G5-G6 开放与退役。它把四环落成可复核门闸 `[metric:governance_gate_count]`：G0 资料就绪→G1 推演生成→G2 反馈接入→G3 人工复核（申请）→G4 受控测试（验证）→G5 公开试点（开放）→G6 退役迭代（退役）。每道门闸有进入条件、可复核状态、未通过处理、人签。**环会自转——任何一道未过都回流上游环，而非顺序终止**。验线四步（申请→验证→开放→退役）映射 G3→G6，每个场景卡自带**可证伪三问**（能否被证伪、退出后空间如何处置、公众能否独立触发暂停），三问数见指标 `[metric:falsifiability_question_count]`；七道门闸逐道深化卡（规程全解 + 阶段收据示例 + 失败案例模板）见 `report/narrative.md`，进度 `[metric:gate_deep_dive_count]`/7。
 

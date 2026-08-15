@@ -769,6 +769,19 @@
       "assumptions": [
         "五条转辙廊逐条深化;当前 5/5;geojson 同步挂属性"
       ]
+    },
+    "receipt_optional_field_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of receipt v2 optional fields",
+      "confidence": "high",
+      "assumptions": [
+        "影响相关方/缓解措施/申诉时限"
+      ]
     }
   }
 }

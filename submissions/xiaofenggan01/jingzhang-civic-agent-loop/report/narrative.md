@@ -31,6 +31,7 @@
     "appeal",
     "run_status"
   ],
+  "optional_v2": ["stakeholders_affected 影响相关方清单", "mitigation_applied 已施缓解措施", "appeal_deadline_days 申诉时限(工作日)"],
   "properties": {
     "receipt_id": {
       "type": "string",
