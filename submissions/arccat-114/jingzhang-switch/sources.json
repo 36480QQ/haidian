@@ -537,6 +537,18 @@
       "usage": "公园名录（海淀区）官方页面。",
       "used_for_zh": "京张遗址公园在官方公园体系中的登记语境。",
       "not_usable_for_zh": "名录不含面积或工程细节。"
+    },
+    {
+      "id": "CN-LEGAL-INTERFACE-REFS",
+      "title": "国家法律法规数据库（检索入口）",
+      "publisher": "全国人民代表大会常务委员会办公厅",
+      "url": "https://flk.npc.gov.cn",
+      "source_type": "official_public",
+      "authority_level": "official_public",
+      "usable_for_formal": "yes",
+      "usage": "法律法规原文检索入口。",
+      "used_for_zh": "场景卡法律接口字段的义务方向检索入口。",
+      "not_usable_for_zh": "检索入口本身不构成具体条文结论。"
     }
   ]
 }
