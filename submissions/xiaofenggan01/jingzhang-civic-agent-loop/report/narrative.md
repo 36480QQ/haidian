@@ -31,6 +31,7 @@
     "appeal",
     "run_status"
   ],
+  "optional_v2": ["stakeholders_affected 影响相关方清单", "mitigation_applied 已施缓解措施", "appeal_deadline_days 申诉时限(工作日)"],
   "properties": {
     "receipt_id": {
       "type": "string",
@@ -212,6 +213,7 @@
     "mechanism": "AI 场景用地作为按生命周期管理的临时用途（申请→验证→开放→退役），退出后按用途兼容清单处置，不改变法定用地性质",
     "planning_note": "可直接被控规采用的制度接口：临时用途不需调整法定图则，由 G5 开放授权与 G6 退出处置闭环管理；G6 退役后空间按兼容清单回到原用途或进入下一轮申请"
   },
+  "rollback_map": {"G0": "补料后原地重验", "G1": "参数回滚上一版本", "G2": "转线下征集", "G3": "红牌冻结待人工", "G4": "退回 G1 重转辙", "G5": "收缩范围或全量退出", "G6": "公众复议+独立仲裁"},
   "note": "门闸可回滚（任何一道未过都回流上游环），这是'环会自转'的状态机落地，区别于顺序闸门。"
 }
 ```
@@ -248,6 +250,7 @@
 {
   "schema_version": "0.1.0",
   "required_fields": ["agent_identity", "capability_scope", "data_sources", "data_retention", "handover_role", "complaint_channels"],
+  "optional_v2": ["update_frequency 护照更新频率(季/年)", "revocation_condition 吊销条件(违规类型清单)"],
   "field_notes": {
     "agent_identity": "是谁：环归属与职能名（角色，不冒充机构）",
     "capability_scope": "能做什么：允许与禁止的操作边界",
@@ -271,6 +274,80 @@
 现场照片是可核查的一手证据。本方案不下载任何图片（避免许可与体积风险），只登记**核查模板与建议条目**——每条照片证据须五字段齐全方可引用 `[metric:photo_register_field_count]`：拍摄地点 / 拍摄日期 / 作者 / 许可证（须 CC 系或公有领域）/ 原始文件页 URL。建议优先核查的公开影像条目（Wikimedia Commons 等自由许可库，登记前须逐条核验许可与现状）：青龙桥车站与人字形线路、京张铁路沿线遗存、遗址公园一期建成段、大钟寺周边街区。登记表随 G0 资料环滚动更新，未登记许可的照片一律不得进入本方案任何制品。
 
 注：示例收据标 sandbox_only / not_run / performance_results=null，不冒充已运行。真实运行须先在 G4 受控测试场取得闭合合格、三问过关。
+
+## 指标字典（全量速查）
+
+| 指标 | 单位 | 值 | 置信 |
+|---|---|---|---|
+| site_area_sqm | sqm | 11,412,825.386 | high |
+| building_footprint_area_sqm | sqm | 2,083,289.604 | medium |
+| green_ratio | ratio | 0.311944 | medium |
+| public_space_ratio | ratio | 0.113433 | medium |
+| floor_area_ratio | ratio | unknown | unknown |
+| key_area_count | count | 3 | high |
+| data_evidence_anchor_count | count | 18 | high |
+| scenario_card_count | count | 13 | high |
+| persona_count | count | 7 | high |
+| human_review_checkpoint_count | count | 13 | high |
+| exit_mechanism_count | count | 13 | high |
+| ai_landmark_count | count | 3 | high |
+| land_use_area_0702_sqm | sqm | 574,648.601 | high |
+| land_use_area_1401_sqm | sqm | 3,560,158.242 | high |
+| land_use_area_0803_sqm | sqm | 1,106,411.767 | high |
+| land_use_area_0802_sqm | sqm | 2,909,027.707 | high |
+| land_use_area_0701_sqm | sqm | 764,666.814 | high |
+| land_use_area_0806_sqm | sqm | 323,809.974 | high |
+| land_use_area_0804_sqm | sqm | 879,534.459 | high |
+| land_use_area_1403_sqm | sqm | 1,294,587.148 | high |
+| governance_gate_count | count | 7 | high |
+| receipt_schema_field_count | count | 8 | high |
+| falsifiability_question_count | count | 3 | high |
+| temporal_segment_count | count | 4 | high |
+| accessibility_checkpoint_count | count | 5 | high |
+| stitch_corridor_count | count | 5 | high |
+| material_traceability_field_count | count | 3 | high |
+| agent_passport_field_count | count | 6 | high |
+| agent_passport_count | count | 4 | high |
+| ecosystem_merged_proposal_count | count | 833 | high |
+| governance_track_sample_share | ratio | 0.675 | medium |
+| compute_governance_parcel_count | count | 11 | high |
+| energy_audit_field_count | count | 3 | high |
+| blueway_corridor_count | count | 2 | medium |
+| sponge_policy_parcel_count | count | 11 | high |
+| acoustic_zone_type_count | count | 3 | high |
+| dark_friendly_lighting_parcel_count | count | 40 | high |
+| child_friendly_route_count | count | 5 | high |
+| all_age_node_count | count | 10 | high |
+| regional_synergy_loop_count | count | 4 | medium |
+| zhongzhiyuan_workshop_count | count | 4 | high |
+| ai_origin_hall_count | count | 3 | high |
+| dazhongsi_market_count | count | 3 | high |
+| developer_walkway_length_km | count | 9 | medium |
+| pilgrimage_route_color_count | count | 3 | high |
+| annual_event_count | count | 4 | high |
+| risk_dimension_count | count | 8 | high |
+| photo_register_field_count | count | 5 | high |
+| falsifiable_clause_count | count | 13 | high |
+| visual_interactive_gate_count | count | 7 | high |
+| stitch_corridor_map_annotation_count | count | 5 | high |
+| land_use_compatibility_rule_count | count | 8 | high |
+| metric_dictionary_entry_count | count | 52 | high |
+| changelog_entry_count | count | 28 | high |
+| reader_guide_step_count | count | 5 | high |
+| iteration_count | count | 30 | high |
+| gate_deep_dive_count | count | 7 | high |
+| persona_deep_dive_count | count | 7 | high |
+| corridor_deep_dive_count | count | 5 | high |
+| receipt_optional_field_count | count | 3 | high |
+| rollback_path_count | count | 7 | high |
+| compatibility_category_count | count | 3 | high |
+| passport_optional_field_count | count | 2 | high |
+| visual_deep_dive_row_count | count | 6 | high |
+| visual_rollback_row_count | count | 7 | high |
+| visual_scenario_clause_count | count | 13 | high |
+| visual_source_row_count | count | 10 | high |
+
+字典与 metrics.json 一一对应，由资料环自动生成，随版本滚动更新（v2 全量重生成）。
 
 ## 指标字典（全量速查）
 
@@ -358,3 +435,14 @@
 ## 门闸深化卡 · G6 退役迭代
 
 进入条件全解：到期/失败触发/更优取代三种退役路径 + 用地兼容清单回退方案 + 荣誉墙贡献登记；Receipt 阶段示例：G6 收据记录退役原因与空间处置结论；失败案例模板：公众对退役处置有异议可触发复议，进入独立仲裁。
+
+## 兼容清单（结构化）
+
+```json
+{
+  "compatible": ["0802 科研", "1401 公园绿地", "1403 广场", "0803 文化"],
+  "conditional": {"0804 教育": "限教学时段外", "0702 社区服务": "限服务不占产"},
+  "incompatible": {"0701 住宅": "安静需求", "0806 医疗": "不对公众开放测试"},
+  "note": "留白验证区配套；退出后按此清单回到原用途，不改法定用地性质。"
+}
+```

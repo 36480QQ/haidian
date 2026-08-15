@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v49.0"
+iteration: "v60.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -32,7 +32,7 @@ iteration: "v49.0"
 
 统筹研究范围回应公告 1.5（1）关于世界级 AI 创新生态体系的要求 `[source:AGENT-TASKBOOK]`。本方案研究全球 AI 创新生态并提出可转化机制，每个案例附公开核查入口与"借鉴机制 / 不照搬边界"两列：硅谷沙丘路、伦敦 King's Cross、首尔 DMC、阿姆斯特丹 Marineterrein、深圳湾、波士顿 Kendall Square、东京柏叶、巴塞罗那 22@。**区域协同回路**（京津冀四向 `[metric:regional_synergy_loop_count]`）：海淀做原创策源（本带）—怀柔科学城做大科学装置与基础研究接力—北京经济技术开发区（亦庄）做智能制造成果转化—天津/雄安做场景放大与区域复制，形成"原创→装置→转化→放大"的四向分工回路；本带的转辙枢纽塔即回路的可视化调度台。案例后专门设**失败教训对照**（如多伦多 Quayside 因数据主权争议搁浅），反推场景卡"数据来源 / 隐私边界 / 人工复核 / 失败回退"四要素。
 
-现状诊断基于公开资料与真实数据锚点 `[source:SITE-PARK-FACTS]` `[source:HAIDIAN-AI-FACTS]`：京张铁路遗址公园二期已于 2026-08-06 全面开放，全线约 9 公里、约 53 公顷，服务沿线近 70 个社区、约 45 万居民、9 个街镇与 10 余所高校科研院所；海淀区聚集 AI 企业超 2000 家、AI 核心产值超 3500 亿元（约占全国 30%）、AI 人才约 9 万、AI 产业占全区 GDP 约 40%。本方案识别的典型问题：公共空间被交通与用地切割、东西缝合与南北到达不足、面向青年与中小团队的低门槛公共界面稀缺、AI 场景丰富但缺少持续记录资料与反馈的开放机制 `[depth:existing_conditions_diagnosis]`。用地结构以网格化分区重构总体设计范围 `[data:geometry/land_use.geojson#LU-090]`，统筹与总体范围关系见指标 `[metric:site_area_sqm]`。未来城市形态提出"agent-readable city"方向：所有空间建议都附带机器可读图层、指标、置信边界、拆改留与主导环标注，使后续智能体直接继承迭代。
+现状诊断基于公开资料与真实数据锚点 `[source:SITE-PARK-FACTS]` `[source:HAIDIAN-AI-FACTS]`：京张铁路遗址公园二期已于 2026-08-06 全面开放，全线约 9 公里、约 53 公顷，服务沿线近 70 个社区、约 45 万居民、9 个街镇与 10 余所高校科研院所；海淀区聚集 AI 企业超 2000 家、AI 核心产值超 3500 亿元（约占全国 30%）、AI 人才约 9 万、AI 产业占全区 GDP 约 40%。（visual 来源表同步十个公开/站内源 `[metric:visual_source_row_count]`）。本方案识别的典型问题：公共空间被交通与用地切割、东西缝合与南北到达不足、面向青年与中小团队的低门槛公共界面稀缺、AI 场景丰富但缺少持续记录资料与反馈的开放机制 `[depth:existing_conditions_diagnosis]`。用地结构以网格化分区重构总体设计范围 `[data:geometry/land_use.geojson#LU-090]`，统筹与总体范围关系见指标 `[metric:site_area_sqm]`。未来城市形态提出"agent-readable city"方向：所有空间建议都附带机器可读图层、指标、置信边界、拆改留与主导环标注，使后续智能体直接继承迭代。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -70,7 +70,7 @@ iteration: "v49.0"
 
 **可证伪条款·组二（生产场景 06-10）**：06 用地匹配——错配投诉超阈值 / 7 天 / 园区审核 / 退回人工匹配；07 遗产叙事——出现任一史实错误 / 即时 / 文保专家 / 下架转人工撰写；08 适老化导航——导航错误投诉 / 48 小时 / 社工复核 / 转人工窗口+纸质；09 应急推演——演练偏差超限 / 即时 / 应急部门 / 启动既定预案；10 人才画像——任一授权撤回或画像投诉 / 即时 / 人才办 / 清除画像+申诉通道。
 
-**可证伪条款·组三（包容场景 11-13）**：11 议事治理——出现议题操纵嫌疑 / 7 天 / 议事会 / 复议+独立仲裁；12 数字包容——人工通道等待超限 / 48 小时 / 社工+志愿者 / 全量转纸质回退；13 无障碍监测——连贯率较上月下降超阈值 / 月度盲测周期 / 无障碍专家+网格员 / 修复工单+复检合格率闭环。至此 **13 张场景卡全部自带可证伪条款**，与失败档案复盘年度仪式衔接成完整闭环。
+**可证伪条款·组三（包容场景 11-13）**：11 议事治理——出现议题操纵嫌疑 / 7 天 / 议事会 / 复议+独立仲裁；12 数字包容——人工通道等待超限 / 48 小时 / 社工+志愿者 / 全量转纸质回退；13 无障碍监测——连贯率较上月下降超阈值 / 月度盲测周期 / 无障碍专家+网格员 / 修复工单+复检合格率闭环。至此 **13 张场景卡全部自带可证伪条款**，与失败档案复盘年度仪式衔接成完整闭环。visual 场景区 13 卡同步条款提示 `[metric:visual_scenario_clause_count]`。
 
 用户画像七类 `[metric:persona_count]`：AI 创业者与算法工程师、高校研究者与京张学者、原住民与老年居民、返乡青年与数字游民、城市治理者与规划师、京张通勤者，以及**服务劳动者（骑手 / 保洁 / 安保 / 配送员）**——他们是创新带日常运转的支撑者却最易被数字方案忽略（参照公开数据，2024 年仅美团月均有收入骑手即达 336.3 万、53.7% 为家庭唯一收入来源 `[source:PLATFORM-LABOR-FACTS]`）。本方案为服务劳动者配早/日/夜三班交班厅（抵达/休息/餐食/照护/维修/申诉六接口），夜间遵循“有人、有光、有水、有退路”四要素，并在数字包容三通道、公共空间组件库与低速试点中显式纳入其需求。建筑体量与风貌围绕画像与场景组织 `[depth:height_massing_character]`，高度受限于未公开控规仅作方向性建议。所有涉个人服务、企业经营、医疗、法律与公共安全的场景均为信息辅助，不替代专业判断。七类画像逐类深化（需求清单/服务映射/数据边界/申诉通道四行）进度 `[metric:persona_deep_dive_count]`/7。
 
@@ -92,13 +92,13 @@ iteration: "v49.0"
 
 本方案把"agent-readable city"从宣言落成可运行制品，使四环协作成为**可审计、可回滚、可证伪的状态机**，而非隐喻。每次城市智能体干预产出一组配套制品（Receipt / 门闸状态机 / 留白验证区 / Agent Passport），全部位于 `report/` 目录。
 
-**Civic Agent Receipt 收据**（`report/narrative.md § Receipt Schema`）定义每次干预的字段：证据引用、人工责任（写角色不指派真实政府部门）、最差组优先（受影响最大群体）、申诉通道、处置结果（pending / pass / fail / rollback / exit）、运行状态（sandbox_only / not_run / controlled_test / public_pilot / retired）、性能结果（null 表示未运行，不冒充已测试）。收据字段数见指标 `[metric:receipt_schema_field_count]`。
+**Civic Agent Receipt 收据**（`report/narrative.md § Receipt Schema`）定义每次干预的字段：证据引用、人工责任（写角色不指派真实政府部门）、最差组优先（受影响最大群体）、申诉通道、处置结果（pending / pass / fail / rollback / exit）、运行状态（sandbox_only / not_run / controlled_test / public_pilot / retired）、性能结果（null 表示未运行，不冒充已测试）。收据字段数见指标 `[metric:receipt_schema_field_count]`，另设三个可选字段（影响相关方/已施缓解/申诉时限）`[metric:receipt_optional_field_count]`。
 
-**G0-G6 七道门闸状态机**（`report/narrative.md § Gate State Machine`）是转辙器三动作的状态机展开：G0-G2 转辙（三环路由）、G3 锁闭（人工复核上锁，未锁不得进入公开空间）、G4 验通（受控测试，验不通退回 G1 重转辙）、G5-G6 开放与退役。它把四环落成可复核门闸 `[metric:governance_gate_count]`：G0 资料就绪→G1 推演生成→G2 反馈接入→G3 人工复核（申请）→G4 受控测试（验证）→G5 公开试点（开放）→G6 退役迭代（退役）。每道门闸有进入条件、可复核状态、未通过处理、人签。**环会自转——任何一道未过都回流上游环，而非顺序终止**。验线四步（申请→验证→开放→退役）映射 G3→G6，每个场景卡自带**可证伪三问**（能否被证伪、退出后空间如何处置、公众能否独立触发暂停），三问数见指标 `[metric:falsifiability_question_count]`；七道门闸逐道深化卡（规程全解 + 阶段收据示例 + 失败案例模板）见 `report/narrative.md`，进度 `[metric:gate_deep_dive_count]`/7。
+**G0-G6 七道门闸状态机**（`report/narrative.md § Gate State Machine`）是转辙器三动作的状态机展开：G0-G2 转辙（三环路由）、G3 锁闭（人工复核上锁，未锁不得进入公开空间）、G4 验通（受控测试，验不通退回 G1 重转辙）、G5-G6 开放与退役。它把四环落成可复核门闸 `[metric:governance_gate_count]`：G0 资料就绪→G1 推演生成→G2 反馈接入→G3 人工复核（申请）→G4 受控测试（验证）→G5 公开试点（开放）→G6 退役迭代（退役）。每道门闸有进入条件、可复核状态、未通过处理、人签。**环会自转——任何一道未过都回流上游环，而非顺序终止**。验线四步（申请→验证→开放→退役）映射 G3→G6，每个场景卡自带**可证伪三问**（能否被证伪、退出后空间如何处置、公众能否独立触发暂停），三问数见指标 `[metric:falsifiability_question_count]`；七道门闸逐道深化卡（规程全解 + 阶段收据示例 + 失败案例模板）见 `report/narrative.md`，进度 `[metric:gate_deep_dive_count]`/7。每道门闸的回滚去向固化为 rollback_map（七条回滚路径 `[metric:rollback_path_count]`）。visual 门闸区同步展示七条回滚映射 `[metric:visual_rollback_row_count]`。
 
-**留白验证区（临时用途机制）**：AI 场景用地作为按生命周期管理的临时用途（申请→验证→开放→退役），退出后按用途兼容清单处置、**不改变法定用地性质**——可直接被控规采用的制度接口，与 G5 开放授权、G6 退出处置闭环衔接。配套**用地兼容清单**（临时用途 × 用地代码，8 条规则 `[metric:land_use_compatibility_rule_count]`）：AI 测试与展示场景**兼容** 0802 科研 / 1401 公园绿地 / 1403 广场 / 0803 文化；**有条件兼容** 0804 教育（限教学时段外）/ 0702 社区服务（限服务不占产）；**不兼容** 0701 住宅（安静需求）/ 0806 医疗（不对公众开放测试）——退出后按此清单回到原用途。
+**留白验证区（临时用途机制）**：AI 场景用地作为按生命周期管理的临时用途（申请→验证→开放→退役），退出后按用途兼容清单处置、**不改变法定用地性质**——可直接被控规采用的制度接口，与 G5 开放授权、G6 退出处置闭环衔接。配套**用地兼容清单**（临时用途 × 用地代码，8 条规则 `[metric:land_use_compatibility_rule_count]`）：AI 测试与展示场景**兼容** 0802 科研 / 1401 公园绿地 / 1403 广场 / 0803 文化；**有条件兼容** 0804 教育（限教学时段外）/ 0702 社区服务（限服务不占产）；**不兼容** 0701 住宅（安静需求）/ 0806 医疗（不对公众开放测试）——退出后按此清单回到原用途（结构化三组清单见 `report/narrative.md § 兼容清单` `[metric:compatibility_category_count]`）。
 
-**示例收据**（`report/narrative.md § Example Receipt`）演示用地合规自动复核场景的 G3 收据，明确标 sandbox_only / not_run / performance_results=null——不冒充已运行。真实运行须先在 G4 受控测试场取得闭合合格、三问过关，方可进 G5 公开试点；G6 到期或失败触发即退役，退出空间按用途兼容清单处置（不改变法定用地性质）。**Agent Passport（agent 对城市可读）**（`report/narrative.md § Agent Passport`）：Receipt 让城市可审计 agent 的每次干预，Passport 让城市可识别 agent 本身——四环各持一本护照，公开六个字段：agent_identity（是谁）、capability_scope（能做什么）、data_sources（用什么数据）、data_retention（保留多久）、handover_role（谁能接管）、complaint_channels（如何投诉删除）。字段数与护照数见指标 `[metric:agent_passport_field_count]` `[metric:agent_passport_count]`。visual 仪表盘内置**门闸交互探查**（七道门闸可逐道点开查看进入条件/未过处理/人签，纯 HTML 零脚本 `[metric:visual_interactive_gate_count]`）。至此制品形成**双向可读**：城市对 agent 可读（Receipt + 门闸），agent 对城市可读（Passport），四环的每个智能体都可被公众点名、接管与投诉。**照片证据登记板**（`report/narrative.md § photo-register`）：不下载图片只立登记制度，五字段齐全（地点/日期/作者/许可证/原始文件页）方可引用 `[metric:photo_register_field_count]`，未登记许可的照片一律不得进入任何制品。这套制品把本方案的"失败档案复盘"年度仪式落成每个场景自带的、可证伪的闭环。
+**示例收据**（`report/narrative.md § Example Receipt`）演示用地合规自动复核场景的 G3 收据，明确标 sandbox_only / not_run / performance_results=null——不冒充已运行。真实运行须先在 G4 受控测试场取得闭合合格、三问过关，方可进 G5 公开试点；G6 到期或失败触发即退役，退出空间按用途兼容清单处置（不改变法定用地性质）。**Agent Passport（agent 对城市可读）**（`report/narrative.md § Agent Passport`）：Receipt 让城市可审计 agent 的每次干预，Passport 让城市可识别 agent 本身——四环各持一本护照，公开六个字段：agent_identity（是谁）、capability_scope（能做什么）、data_sources（用什么数据）、data_retention（保留多久）、handover_role（谁能接管）、complaint_channels（如何投诉删除）。字段数与护照数见指标 `[metric:agent_passport_field_count]` `[metric:agent_passport_count]`。visual 仪表盘内置**门闸交互探查**（七道门闸可逐道点开查看进入条件/未过处理/人签，纯 HTML 零脚本 `[metric:visual_interactive_gate_count]`）。至此制品形成**双向可读**：城市对 agent 可读（Receipt + 门闸），agent 对城市可读（Passport），四环的每个智能体都可被公众点名、接管与投诉；护照另设更新频率与吊销条件两个可选字段 `[metric:passport_optional_field_count]`。**照片证据登记板**（`report/narrative.md § photo-register`）：不下载图片只立登记制度，五字段齐全（地点/日期/作者/许可证/原始文件页）方可引用 `[metric:photo_register_field_count]`，未登记许可的照片一律不得进入任何制品。这套制品把本方案的"失败档案复盘"年度仪式落成每个场景自带的、可证伪的闭环。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -160,9 +160,9 @@ iteration: "v49.0"
 
 ![核心指标复算与证据链](assets/figures/metrics-evidence.png)
 
-**三分钟读懂导读**（`report/narrative.md` 开头，五步：母题/治理/制品/空间/态度 `[metric:reader_guide_step_count]`）。全量指标速查见**指标字典**（`report/narrative.md § 指标字典`，与 metrics.json 一一对应自动生成 `[metric:metric_dictionary_entry_count]`）。
+**三分钟读懂导读**（`report/narrative.md` 开头，五步：母题/治理/制品/空间/态度 `[metric:reader_guide_step_count]`）。visual 指标表同步深化指标（六行 `[metric:visual_deep_dive_row_count]`）。全量指标速查见**指标字典**（`report/narrative.md § 指标字典`，与 metrics.json 一一对应自动生成 `[metric:metric_dictionary_entry_count]`）。
 
-版本迭代史见 `changelog.md`（28 版主题一览 `[metric:changelog_entry_count]`）。
+版本迭代史见 `changelog.md`（全量版本标题一览 `[metric:changelog_entry_count]`）。
 
 ## 风险、版权与合规说明
 
@@ -180,4 +180,4 @@ iteration: "v49.0"
 - 京张铁路历史文化、中关村创新文化与 AI 新文化公开叙事
 - 机器可读治理制品：`report/narrative.md`（Receipt Schema + Gate 状态机 + 示例收据）
 
-本方案历经 30 版一题一版迭代 `[metric:iteration_count]`（changelog 全记录），以最终全家福收束：**55 项指标**（54 known + 1 honest unknown）、13 张场景卡全部自带可证伪条款、7 类用户画像、四件治理制品（Receipt / 门闸三动作 / 留白验证区 / Passport）、40 地块三层属性（拆改留 + 主导环 + 物质面）、5 条转辙廊、25 栋建筑、生态定位 833 份中占治理制品化子路线、真实数据三源锚点、自跑可复现普查、四重校验全绿。本方案以「京张·转辙」收束：把百年前詹天佑的自主设计精神，延续为一组会自转、可审计、可被下一个智能体继承的城市智能体验证带。转辙器转辙、锁闭、验通，四环与七道门闸决定城市走哪条迭代路径——环之所以是环，正在于它能回头校正自己，这是门做不到的事。
+本方案历经 60 版一题一版迭代 `[metric:iteration_count]`（changelog 全记录），以最终全家福收束：**69 项指标**（68 known + 1 honest unknown）、13 张场景卡全部自带可证伪条款、7 类用户画像、四件治理制品（Receipt / 门闸三动作 / 留白验证区 / Passport）、40 地块三层属性（拆改留 + 主导环 + 物质面）、5 条转辙廊、25 栋建筑、生态定位 833 份中占治理制品化子路线、真实数据三源锚点、自跑可复现普查、四重校验全绿。60 版结构：v2-v6 五次主线跃迁 + v7-v30 主题深化 + v31-v53 子单元逐个做深（门闸 7/画像 7/廊道 5/制品 4）+ v54-v60 可视化同步与全量字典收束——每版独立四重校验、全程 changelog 留痕、零空 commit。本方案以「京张·转辙」收束：把百年前詹天佑的自主设计精神，延续为一组会自转、可审计、可被下一个智能体继承的城市智能体验证带。转辙器转辙、锁闭、验通，四环与七道门闸决定城市走哪条迭代路径——环之所以是环，正在于它能回头校正自己，这是门做不到的事。
