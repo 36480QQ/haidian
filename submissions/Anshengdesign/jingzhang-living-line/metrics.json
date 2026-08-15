@@ -676,6 +676,61 @@
       "assumptions": [
         "r=1.2 概念假设"
       ]
+    },
+    "jhr_mean": {
+      "status": "known",
+      "value": 0.393,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "职住平衡指数 JHR=jobs/(jobs+residents) 均值（400m单元）",
+      "confidence": "medium",
+      "assumptions": [
+        "POI口径代理"
+      ]
+    },
+    "jhr_balanced_share": {
+      "status": "known",
+      "value": 0.384,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "JHR∈[0.4,0.6] 健康带单元占比",
+      "confidence": "medium",
+      "assumptions": [
+        "健康目标60%"
+      ]
+    },
+    "luti_match_ratio_now": {
+      "status": "known",
+      "value": 0.462,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "用地强度-可达性匹配单元占比（现状LUTI评价）",
+      "confidence": "medium",
+      "assumptions": [
+        "标准化错配阈值0.25"
+      ]
+    },
+    "luti_match_ratio_stitched": {
+      "status": "known",
+      "value": 0.615,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "用地强度-可达性匹配单元占比（缝合后）",
+      "confidence": "medium",
+      "assumptions": [
+        "主脊可达性×1.4代理"
+      ]
+    },
+    "luti_undeveloped_cells": {
+      "status": "known",
+      "value": 45,
+      "unit": "count",
+      "source_files": [],
+      "formula": "欠开发单元数（高可达×低强度）",
+      "confidence": "medium",
+      "assumptions": [
+        "POI口径"
+      ]
     }
   }
 }

@@ -64,13 +64,19 @@ iteration: "v0.4"
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-**[Diagnosis loop · step 3: flows — the four-sector baseline.]** SIMULACRA-lite (the E→P→R→M chain of Paper 163, Jing-Zhang parameters, computed): employment E = 727 office-POI units, residence P = 491, retail R = 1,100, local services M = Putnam-style (floor supply + accessibility). Baseline: each residential unit reaches on average **323.5 jobs** within its 25-minute circle; employment-flow concentration 0.607 (the top 10% of flows carry six tenths) — **jobs live in buildings, not streets** (floor space is the hard constraint, as in the Batty Shanghai study); functional deviation (12 POI categories, uniform reference): transport +74.8% and living services +52.7% in surplus; **finance −63.0%, scenery −62.7%, research institutes −45.9% in deficit** — the "content" gap of an innovation belt [depth:overall_spatial_structure] [metric:employment_gini].
+**[Diagnosis loop · step 3: flows — the LUTI evaluation (the complete evaluation of the land-use transport circular interaction).]**
 
-**Overall structure: "one line, three folds, two wings, seven nodes"** — derived directly from the diagnosis: the spine is the employment gravity line (γ=1.85), the three folds take the three functional roles, the seven nodes are the stitch positions. Land use = 400 m grid + POI character recognition (bottom-up) + renewal intervention at station catchments and corridor edges: research 31.5% / commercial 25.6% / education 18.2% / residential 16.5% / green 8.2% [data:geometry/land_use.geojson#LU-001] [metric:land_use_area_0701_sqm]. The jobs-housing imbalance is the renewal target; statutory intensity is "pending official data"; only conceptual massing is given (782 blocks, 17.4% footprint density, low confidence) [metric:building_density] [depth:development_intensity_controls].
+The first question of a LUTI evaluation is not "how much land was drawn" but **"does land-use intensity match transport accessibility?"**. Three evaluations on 91 four-hundred-meter cells (all computed):
 
-![SIMULACRA four-sector baseline: job reach / commute cost / flow concentration](assets/figures/c11-simulacra.png)
+**① Jobs-housing balance JHR = jobs/(jobs+residents)**: the current mean is **0.393** (employment-dominant); only **38.4%** of cells fall inside the healthy band 0.4–0.6 — the imbalance is systemic, not local [metric:land_use_area_0701_sqm].
 
-**How to read**: left = jobs reachable within a 25-minute circle per residential unit (323.5, baseline); middle = flow-weighted commute cost; right = flow concentration 0.607 (jobs live in buildings, not streets).
+**② Land-transport match (the LUTI mismatch diagnosis)**: **45 cells are "underdeveloped"** (high station/spine accessibility but low intensity — golden locations used at low intensity), 4 cells are "overdense" (intense buildings stuck at low accessibility), and the match rate is only **46.2%**; after seven-node stitching it rises to **61.5%** — **stitching closes the LUTI loop by 15 percentage points**.
+
+**③ Four-sector flows (SIMULACRA E→P→R→M)**: employment 727, residence 491, retail 1,100, local services (Putnam-style) — the commute-flow bundles show the mainstreams concentrating in the Xueyuanqiao–Wudaokou corridor (the "mouth" of employment).
+
+![LUTI evaluation: jobs-housing balance × land-transport match × commute flows](assets/figures/c15-luti.png)
+
+**How to read**: left = the mismatch map (green = underdeveloped, red = overdense, grey = matched) plus purple commute bundles; middle = match rate before/after stitching (46.2%→61.5%); right = the jobs-housing balance band (38.4% vs the 60% healthy target). **One sentence: the status quo misplaces golden locations and good buildings; stitching and infill correct exactly this map.**
 
 **Loop conclusion →** The diagnosis loop closes: form healthy, connection broken, function deviated, path locked — "sick in the cuts and the gaps". Entering the intervention loop.
 
@@ -78,15 +84,19 @@ iteration: "v0.4"
 
 **[Intervention loop · A: the three-area positions are decided by "how configuration shapes movement".]** Toledo-style POI syntactic placement (whole-network integration percentiles): **Xueyuanqiao Station 97.5% — Jing-Zhang's "Bisagra Gate"** (in Toledo all through-movement is compressed into one gate; in Jing-Zhang into this North-4th-Ring × Xueyuanlu mouth); the Tsinghuayuan Station heritage site **93.5% — the "Origin" grew out of the spatial structure itself**; Wudaokou 57.1% (crowds from function, not configuration — like Toledo's Zocodover); Dazhongsi 20.2% (a syntactic periphery — its southern interface must be activated by stitching and function). The three strategies derive from this [depth:three_key_area_detailed_design]:
 
-**Zhongzhiyuan · HYPER STACK (192.1 ha)** — "the full-stack autonomy district, from chips to models": a full-stack test band along the Qinghe–Xuezhiyuan interface (open district-scale test environment for FlagOS multi-chip adaptation, conceptual); POI gaps (scenery 0.4% / school 0.7% / finance 1.3%) → garden-district infill [data:geometry/key_areas.geojson#KEY-001].
+**Three quantified area sheets (each: POI structure + syntactic anchor + metric cards + moves)**:
 
-**Origin Community · HYPER ORIGIN (104.3 ha)** — "the global AI origination and transfer interface": medical density 2.88/km² (lowest) → fill medical, community services and talent apartments along the Wudaokou–Xueyuanlu interface; the 93.5%-integration heritage site hosts the Origin Plaza + Developer Name Wall. The provisional rectangle is offset from the real Wudaokou core; recalculation on official polygons [data:geometry/key_areas.geojson#KEY-002].
+![Zhongzhiyuan quantified analysis](assets/figures/keyarea-zhongzhiyuan_ai_acceleration_area.png)
 
-**Dazhongsi · HYPER FRONT (72.0 ha)** — "the AI-native consumption and content interface": the most balanced (work-life 0.923, medical 31.92/km²) → "light intervention, strong interface": four-quadrant stitching at the station, AI-native retail for the 1733 and Lanjinglijia parcels, and the Ancient Bell × Emergence Bell pairing (conceptual) [data:geometry/key_areas.geojson#KEY-003].
+**How to read**: left = POI structure (the scenery/edu/finance shortfalls in plain sight); right = the Xuezhiyuan anchor at 84.0% (the Stack segment is a high-choice hub: many pass through, few stay — add public space to turn passing into staying). Cards: diversity 0.847, work-life 0.747.
 
-![Key areas index and design tasks](assets/figures/key-areas.png)
+![Origin Community quantified analysis](assets/figures/keyarea-beijing_ai_origin_community.png)
 
-**How to read**: three prescription sheets — positioning on top, strategy in the middle, POI gap list in red below. **Fill what is missing, not what a design institute assumes should be there.**
+**How to read**: left = POI structure (medical 0.99%, the lowest of the three); right = the Tsinghuayuan Station heritage site at **93.5% — the Origin was not named by us; it grew out of structure**. Cards: diversity 0.863, medical density 2.88/km².
+
+![Dazhongsi quantified analysis](assets/figures/keyarea-dazhongsi_ai_industry_cluster.png)
+
+**How to read**: left = POI structure (the most balanced of the three); right = Dazhongsi Station at 20.2% — a syntactic periphery, **which must compensate configuration with four-quadrant stitching and functional activation**. Cards: work-life 0.923, medical density 31.92/km².
 
 **Loop conclusion →** Three-area prescriptions written; entering the spine surgery.
 
@@ -182,6 +192,19 @@ Privacy-invasive scenarios are excluded (agent.3 red line) [depth:scenario_cards
 **How to read**: λ cliff (diagnosis) → integration gains (prescription effect) → percolation (physical meaning) → evidence cards (all reproducible). The four panels together are the complete evidence chain.
 
 **Loop conclusion →** Verification passed: the intervention does trigger the phase transition and the unlock. Entering allocation — who gets the returns.
+
+
+## Design Conclusion
+
+**The whole logic of this proposal, in five sentences:**
+
+1. **The disease**: the skeleton of this belt is healthy (fractal D=1.746, health factor H=1.556), but it is broken — the spine severed by 7 arterials, the 3+2 core connected at only 2/5, 45 cells "using golden locations at low intensity", a jobs-housing band of only 38.4%, and a coordination game locked into "go alone".
+2. **The medicine**: every intervention is of one kind — **stitch, unlock, fill, measure**: seven-node stitching (integration +65%~+132%), CA unlocking (42 cells redistributed), POI gap infill (finance −63%, research −45.9%, medical 2.88/km²), and the annual measurement of the middle layer (affordability, conversion, inclusive compute).
+3. **The effect**: three models verify the treatment — the SIMULACRA re-run (25-minute job reach +15.9%, commute −3.4%), the LUTI match rate 46.2%→61.5%, and the Nash equilibrium flipping from D,D to C,C (η +60%). **Intervention is not a wish: three models independently converge on the same conclusion.**
+4. **The return**: superlinear returns flow back to citizens through five equity mechanisms (compute vouchers / data lake / night school / spatial equity / attribution equity) — "bend the curve toward every citizen".
+5. **The rulers**: four thresholds (λc=0.42, p_c=59.27%, D=1.6–1.8, H=1.35) plus the annual Phase-Transition Forum make this belt **examined, calibrated and falsifiable every year** — not a blueprint hung on the wall, but an urban operating system that evolves with the city.
+
+> A century ago Zhan Tianyou answered the constraint with the Y-switch at Badaling; today we answer the same question with 15 reproducible computations — **constraints are not the enemy of design; they are the conditions of emergence**. The mission of the Jing-Zhang Hyper Line is to let this century-old line begin to rise, inside the computable science of cities.
 
 ## Risk, Copyright, and Compliance
 

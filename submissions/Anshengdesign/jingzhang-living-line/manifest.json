@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1e579d436e8ae013bb9868bf4200c70cf957bd9e8c6c95358e9dd9cf99bbdbed"
+      "sha256": "c2c3ca223c6361f0614ded81292bf3731147e1209e1591c55cce5bdfd176f2e6"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "35241fac71f3a1437256a2018acfff2d953170b0ce60764be3a151445f16f7c2"
+      "sha256": "4133f3ff412dc64e753c0c46a873e720146bf0c58b8b1170b5cdacd0192acec9"
     },
     {
       "path": "assumptions.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3759ef59a56d2e580dc0af8a212da10ffd8078432e73d5f542de85e206a9d860"
+      "sha256": "4ea1c8778b5fcbd6aa60002dd424d2041a35b62ae519173c09787007e60b33de"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c702e435c5ce883e810885621e1a68545e5a8345753ffbc9de671421f7845353"
+      "sha256": "78b7f77208c6c1a21eb4016cb26ae545442b42fb49b57bbd5b283c1197b2ef23"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "56e63749ee7aed16e4d71ca52ebf317d18929f8a907c47e5ea4e68d43da4876f"
+      "sha256": "8ef91dc2cf9cc9f73854a9aba08f139cf42076498be1ad1250738d28225b4413"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -510,10 +510,70 @@
       "language": "en",
       "translation_of": "assets/figures/c2-percolation.png",
       "sha256": "d76118aa460192b4bc15785d7364a88eb17877bf98ba266980e6ce2c9b2e3fc9"
+    },
+    {
+      "path": "assets/figures/c15-luti.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "9f0463581d8e952ce9094bb42bc0ad315e4e3c3ed46138abeeaf82b157ac2a96"
+    },
+    {
+      "path": "assets/figures/c15-luti.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/c15-luti.png",
+      "sha256": "28fdcf8ca87ff13bbb5c9d961cc7a565171084328628c62365331cf61a4c198c"
+    },
+    {
+      "path": "assets/figures/keyarea-zhongzhiyuan_ai_acceleration_area.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "fb2759dd10203dc554118dd178d773e70641fd2b63ffaeac3f9a2fa4524e41df"
+    },
+    {
+      "path": "assets/figures/keyarea-zhongzhiyuan_ai_acceleration_area.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/keyarea-zhongzhiyuan_ai_acceleration_area.png",
+      "sha256": "78e55a8e27e8a1de05cf3cbf70eedc195f66813dc12c0a0671e9aa6edfffe092"
+    },
+    {
+      "path": "assets/figures/keyarea-beijing_ai_origin_community.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "f5b10e724a1ccbcb6fc0b4c035ddda738dc466f03445d81add1058e44c7407d2"
+    },
+    {
+      "path": "assets/figures/keyarea-beijing_ai_origin_community.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/keyarea-beijing_ai_origin_community.png",
+      "sha256": "ef78706e848eb7f14de71ef872783dd21f447dff4b941a7b1404cc4acf50ad1e"
+    },
+    {
+      "path": "assets/figures/keyarea-dazhongsi_ai_industry_cluster.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "4303c10ec16fe0c88c059af5d61d5878cedf47c545a4eb07aadc5e6d9a5cb690"
+    },
+    {
+      "path": "assets/figures/keyarea-dazhongsi_ai_industry_cluster.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/keyarea-dazhongsi_ai_industry_cluster.png",
+      "sha256": "64bedd9bb5029793fe2d5551b6f0f3f92ad5573183611859419879cf93536d9f"
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
