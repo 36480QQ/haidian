@@ -159,7 +159,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "figure_title_qa.py — figure titles: 1 board placement claim(s) resolved against the built board pages; 66 of the 68 captions on the two visual pages compared against the title each sheet draws in its own header; every one is the same name. 2 set their title through a different frame (the hero) and are not compared here"
+      "message": "figure_title_qa.py — figure titles: 1 board placement claim(s) resolved against the built board pages; 132 of 136 captions compared against the title each sheet draws in its own header — 68 on the two visual pages and 68 in the drawing index of both editions — and every one is the same name. 4 set their title through a different frame (the hero) and are not compared here"
     },
     {
       "check_id": "PKG_FORMAL_VISUAL_METRICS_QA",
@@ -207,7 +207,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 54 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 43 bytes to spare. The package totals 32.4 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 54 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 1 bytes to spare. The package totals 32.4 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -231,7 +231,7 @@
       "severity": "info",
       "target": "compliance/standard/design_depth matrices",
       "source": "package-provided",
-      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 527 declared across three matrices, 527 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 23 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
+      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 618 declared across three matrices, 618 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 23 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
     },
     {
       "check_id": "PKG_NAMING_QA",
