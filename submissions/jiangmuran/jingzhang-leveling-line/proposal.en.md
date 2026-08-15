@@ -6,7 +6,7 @@ translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-summary: "Leveling is not about measuring accurately once; it is about measuring back. Depart from a datum, run the circuit, return — and the closure error decides whether the whole line is trusted. This proposal applies that hundred-year-old rule where a wrong reading injures someone: low-speed robots, autonomous shuttles, and AI health, education, legal and daily services. The same instrument, turned on this open call, made seventeen re-runnable censuses (184→793 proposals), every reading shipped — including findings that count against this submission. Concept advice on provisional boundaries; not a substitute for statutory planning."
+summary: "Leveling is not about measuring accurately once; it is about measuring back. Depart from a datum, run the circuit, return — and the closure error decides whether the whole line is trusted. This proposal applies that hundred-year-old rule where a wrong reading injures someone: low-speed robots, autonomous shuttles, and AI health, education, legal and daily services. The same instrument, turned on this open call, made seventeen re-runnable censuses (228→793 proposals), every reading shipped — including findings that count against this submission. Concept advice on provisional boundaries; not a substitute for statutory planning."
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "civic-agent-governance"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
@@ -950,7 +950,7 @@ This is the technical core and is written so a professional team can check it di
 7. **Resumption.** What it takes to come back after a return: the whole route re-surveyed, f ≤ F for two consecutive cycles, a written and published account of the exceedance, unanimous confirmation by all four review parties where the return followed an F1 safety incident, and a halved cycle after resumption. **Returning is easy and resuming is slow**, deliberately. Set out in full under "Rule 7" below.
 8. **The rule this proposal cannot supply.** Closure error cannot measure whether a scenario is *worth having*. It is a consistency test, not a utility test; supplying that needs a control group and this proposal has not done that work. Why an absence gets several its own is under "Rule 8" below.
 
-**Two of the eight are set out below rather than here, because each needs more than a line; they are numbered here because they belong to this definition. A list calling itself the complete definition while stopping at rule 6, in a document that cites rule 7 three times, is a shape this package would log in its own errata register.** Rules 5 and 6 close the two common governance failure modes — patching, and moving the goalposts — at the level of the mechanism rather than the level of intention. That is the substantive difference between this and register-and-assess frameworks.
+**Two of the eight are set out below rather than here, because each needs more than a line; they are numbered here because they belong to this definition. A list calling itself the complete definition while stopping at rule 6, in a document that cites rule 7 five times, is a shape this package would log in its own errata register.** Rules 5 and 6 close the two common governance failure modes — patching, and moving the goalposts — at the level of the mechanism rather than the level of intention. That is the substantive difference between this and register-and-assess frameworks.
 
 ### The mechanism is a data contract too: `node visual/assets/check_closure.js`
 
@@ -1341,7 +1341,7 @@ Three rules run through the table. **Cost band, exit condition and resumption co
 
 ### Pilot agreement components
 
-Launching the first trial needs an agreement, not only a proposal. This document does not draft the text — that is legal work — but lists the components none of which can be omitted: composition and replacement rules for the four review categories, including absence handling and how resident representatives are selected; **freezing and publication of the question set**, unmodifiable once the trial starts; ownership and publication deadline for readings; site use and safety responsibility, including who carries the safety plan and insurance; **exit and resumption**, written into the agreement rather than agreed verbally; a specific list of personal data not collected, and the consequence of breach; and a review cycle for the agreement itself, since it is a living document.
+Launching the first trial needs an agreement, not only a proposal. This document does not draft the text — that is legal work — but lists the components none of which can be omitted: composition and replacement rules for the four review categories, including absence handling and how resident representatives are selected; **freezing and publication of the question set**, unmodifiable once the trial starts; ownership and publication deadline for readings; site use and safety responsibility, including who carries the safety plan and insurance; **exit and resumption** under rule 7, written into the agreement rather than agreed verbally; a specific list of personal data not collected, and the consequence of breach; and a review cycle for the agreement itself, since it is a living document.
 
 ### Annual programme and long-term operation (agent.6)
 
@@ -1441,7 +1441,7 @@ These four share their source with the core rule: **over tolerance, re-measure t
 
 `compliance_matrix.json` maps announcement tasks and agent.1–agent.6 to sections, layers, metrics and figures. **The matrix is an index, not content** — the taskbook's required outputs must exist as checkable sections, layers and drawings, and copying the matrix into the body would only turn the document into a compliance form.
 
-**Every reference the three matrices make is checked: 526 declared, 526 resolving.** Between them `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json` assert 526 times that a given requirement is answered in a named section, carried by named layers, evidenced by a named file — and **nothing previously confirmed that any of those sections or files exists**. They are resolved at build time: section references matched against the proposal's headings, file references matched exactly, and any that fails stops the build. Tested by pointing one entry at a section that does not exist. A matrix is the artefact least likely to be re-read when a heading is renamed or a file is added, and this package has already shipped four dead machine-readable anchors, a legend missing a class, and a rights count three files behind, each for that reason.
+**Every reference the three matrices make is checked: 526 declared, 526 resolving [metric:matrix_reference_count].** Between them `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json` assert 526 times that a given requirement is answered in a named section, carried by named layers, evidenced by a named file — and **nothing previously confirmed that any of those sections or files exists**. They are resolved at build time: section references matched against the proposal's headings, file references matched exactly, and any that fails stops the build. Tested by pointing one entry at a section that does not exist. A matrix is the artefact least likely to be re-read when a heading is renamed or a file is added, and this package has already shipped four dead machine-readable anchors, a legend missing a class, and a rights count three files behind, each for that reason.
 
 ### Taskbook coverage, requirement by requirement: `visual/assets/taskbook_coverage.json`
 
@@ -1493,12 +1493,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-119 entries. By finder:
+130 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 80 | Found while working |
+| The author | 91 | Found while working |
 | This package's own gate | 10 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1514,21 +1514,21 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **25** |
-| **Two copies of one thing drifted** | **18** |
+| **The check measured the convenient thing** | **26** |
+| **Two copies of one thing drifted** | **19** |
+| **A claim outlived the package** | **13** |
 | **A deliverable was not looked at before shipping** | **12** |
-| **A claim outlived the package** | **11** |
-| **A hard constraint nothing could fail** | **7** |
+| **A hard constraint nothing could fail** | **8** |
 | **A reference did not resolve** | **7** |
+| **A number with no file behind it** | **6** |
+| **A number outlived the sentence holding it** | **5** |
 | A claim this medium makes uncheckable in principle | 4 |
 | Geometry did not mean what it said | 4 |
-| A number outlived the sentence holding it | 4 |
-| A number with no file behind it | 4 |
+| Recorded where it was found, not where anyone would look | 4 |
+| A rule applied to others but not to itself | 4 |
 | A claim outlived the corpus | 3 |
-| Recorded where it was found, not where anyone would look | 3 |
 | A source was claimed and could not be named | 2 |
 | A measurement answering a question it cannot answer | 2 |
-| A rule applied to others but not to itself | 2 |
 | A claim pointing at a total that excludes the very thing it claims | 1 |
 | Attributed to a file that refuses to do it | 1 |
 | The gate reported and was ignored | 1 |
@@ -1592,7 +1592,7 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 |---|---|---|---|---|
 | Typeface (primary) | Noto Sans CJK SC | Google / Adobe | **SIL Open Font License 1.1** | Embedded as a CIDFontType0 subset; `pypdf` shows `DescendantFonts → FontDescriptor → FontFile3` |
 | Typeface (fallback) | DejaVu Sans, for glyphs absent from Noto CJK | DejaVu project | **DejaVu Fonts License** | Embedded as a simple TrueType font; top-level `FontDescriptor → FontFile2` |
-| Drawings | Twelve PNGs in each language, 24 files, plus the A3 booklet and A0 boards | Output of this proposal's scripts; **no external image, photo, icon or stock asset** | COMMUNITY-DISPLAY-ONLY with this submission | All graphics drawn from parameters and the submitted GeoJSON; no raster assets inside |
+| Drawings | Thirty-four PNGs in each language, 68 files, plus the A3 booklet and A0 boards | Output of this proposal's scripts; **no external image, photo, icon or stock asset** | COMMUNITY-DISPLAY-ONLY with this submission | All graphics drawn from parameters and the submitted GeoJSON; no raster assets inside |
 | Geometry | Nine GeoJSON layers | Derived from the repository's provisional boundaries [source:BOUNDARY-SOURCE] | Repository public content | `node visual/assets/verify.js` recomputes independently |
 | Self-collected data | Field census; track scan; manifest-schema survey; OSM stitching | Repository public content | Census results ship with this submission | Re-run the scripts |
 | **Third-party open data** | **275 OSM vertices** inside `visual/assets/osm_reference.json`: two park boundary rings and sixteen railway ways with their raw coordinates and tags | **© OpenStreetMap contributors** | **ODbL 1.0.** What ships is an extracted subset of the original data and therefore a Derivative Database, so this part of the package is offered under ODbL; original way ids are kept for traceability | `node visual/assets/check_osm.js` recomputes all ten published scalars from these coordinates |
@@ -1631,7 +1631,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The twenty-one single sheets are also composed into two finished products: `drawings/a3-booklet.pdf`, an A3 booklet to be read page by page, and `drawings/a0-boards.pdf`, A0 boards to be read standing up. Two renderings of the text open directly: `report/proposal.html` is this document as a web page, and `visual/index.html` is a visual index threading the shipped structured data together; `report/narrative.md` is a continuous narrative without the tables and gate records, for a reader who wants only the argument. Five files ship behind the drawings: `visual/assets/personas.json` defines the nine personas and makes every `P` number in the prose and the scenario cards assertable one by one, and `visual/assets/score_correlates.json` holds this proposal's own statistics on what correlates with score across the field, `visual/assets/gate_mutation.json` the deliberate damage proving twelve of fifteen gates can fail, `visual/assets/claim_audit.json` the unit-carrying measurements checked across both editions, and `visual/assets/agent_declarations.json` the field's disclosure state. **Listing them is not housekeeping: a finished product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four single sheets are also composed into two finished products: `drawings/a3-booklet.pdf`, an A3 booklet to be read page by page, and `drawings/a0-boards.pdf`, A0 boards to be read standing up. Two renderings of the text open directly: `report/proposal.html` is this document as a web page, and `visual/index.html` is a visual index threading the shipped structured data together; `report/narrative.md` is a continuous narrative without the tables and gate records, for a reader who wants only the argument. Five files ship behind the drawings: `visual/assets/personas.json` defines the nine personas and makes every `P` number in the prose and the scenario cards assertable one by one, and `visual/assets/score_correlates.json` holds this proposal's own statistics on what correlates with score across the field, `visual/assets/gate_mutation.json` the deliberate damage proving twelve of fifteen gates can fail, `visual/assets/claim_audit.json` the unit-carrying measurements checked across both editions, and `visual/assets/agent_declarations.json` the field's disclosure state. **Listing them is not housekeeping: a finished product the prose never names is one nobody has been told exists.**
 
 <!-- FIGINDEX:BEGIN -->
 

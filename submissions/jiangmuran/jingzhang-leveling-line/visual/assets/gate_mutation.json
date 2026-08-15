@@ -4,6 +4,102 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M33",
+      "gate": "matrix_refs_qa.py",
+      "target": "visual/assets/verify.js",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "从独立复算器里删掉一个第一类指标的复算，其余一律不动。",
+      "what_en": "Delete one class-1 metric's recomputation from the independent verifier and change nothing else.",
+      "why_zh": "**删掉之后 `verify.js` 依然退出 0**——它不会为自己没测的东西报警，而正文说它复算「全部第一类指标」。本包已经交付过一次同样的缺陷：那时它复算的是有人列出来的九个，而另外八个同样可复算的指标不在名单上，没有任何东西看得出来。算出 `metric_class` 修好了那九个，**却没有加任何东西让它保持修好**。",
+      "why_en": "With the line gone `verify.js` still exits 0 — it does not warn about what it does not test — while the proposal says it recomputes every class-1 metric. This package has shipped that defect once already: the verifier recomputed the nine someone had listed and nothing could tell that eight equally recomputable metrics were outside the list. Computing metric_class fixed the nine and nothing was added to keep it fixed."
+    },
+    {
+      "id": "M32",
+      "gate": "peer_claim_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把本方案对另一份方案的引述数字改错一个。",
+      "what_en": "Change by one the number this package states about another package.",
+      "why_zh": "**关于别人工作的断言，是本包唯一无法靠改自己文件来补救的一种**，也是最容易在无声中过期的一种——那份方案由它自己的作者按自己的节奏修订。此前这两处引述读过一次、手写下来，没有joined到任何东西。若改错一个数而无人作声，本包对同行的引述就没有任何保障。",
+      "why_en": "A claim about someone else's work is the one kind this package cannot repair by editing its own files, and the kind most likely to go stale in silence, since the other package is revised by its own author on their own schedule. These two citations had been read once by hand and joined to nothing. If the number can be changed without objection, nothing protects what this package says about its peers."
+    },
+    {
+      "id": "M31",
+      "gate": "figure_citation_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版里那条机读引用删掉，中文版保持不变。",
+      "what_en": "Delete one machine-readable citation from the English edition, leaving the Chinese untouched.",
+      "why_zh": "本包早就要求 34 张图与 58 份交付物在两版里各自被点名，**却从未把同一条规矩用在自己的五个引用命名空间上**——于是 `[metric:matrix_reference_count]` 只在中文里，而它正是 E118 刚刚在两版都改对的那个数的机读出口。若删掉一条而无人作声，这条规矩就只适用于图纸。",
+      "why_en": "This package already requires its 34 sheets and 58 deliverables to be named in each edition separately, and had never applied the same rule to its own five citation namespaces — so [metric:matrix_reference_count] sat in the Chinese only, the machine-readable exit for the very number E118 had just corrected in both. If one can be deleted without objection, the rule covers drawings alone."
+    },
+    {
+      "id": "M30",
+      "gate": "declared_geometry_qa.py",
+      "target": "geometry/land_use.geojson",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一个地块自己声明的面积改掉 100 m²，几何一动不动。",
+      "what_en": "Move one parcel's declared area by 100 m² and leave its geometry untouched.",
+      "why_zh": "`*_declared` 是评审打开 `.geojson` 第一眼读到的东西——它是一个要素里唯一不需要做算术就能读懂的部分，而在此之前 **16 道闸门没有一道打开过它**。两份副本讲同一件事，本册已记十五次；若声明的数与它所在的形状脱钩而无人作声，这道闸门就等于没有。",
+      "why_en": "A `*_declared` value is the first thing a reviewer reads on opening a `.geojson` — the only part of a feature legible without doing arithmetic — and before this no gate had ever opened one. Two copies of one fact is the shape this register logs fifteen times; if a declared number can come loose from the shape it sits on without objection, the gate is not there."
+    },
+    {
+      "id": "M26",
+      "gate": "evidence_ceiling.py",
+      "target": "metrics.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一个指标的来源改成一份没有登记过等级的文件名。",
+      "what_en": "Point a metric at a source file no evidence class has been declared for.",
+      "why_zh": "E115 之前，未登记的来源默认判为 `self_measured`——五级里的中间一级，**高于 provisional 与 background_only**，于是「不得声称高于所读之物」这条规矩恰恰被默认值破掉。默认已取消；若改名后构建照样通过，那次修复就只是换了一处注释。",
+      "why_en": "Before E115 an unregistered source defaulted to `self_measured`, the middle of five and above both provisional and background_only, so the one rule that file exists to enforce was broken by its own default. The default is gone; if the build still passes with an unknown filename, that fix was only a comment."
+    },
+    {
+      "id": "M27",
+      "gate": "assumption_refs_qa.py",
+      "target": "metrics.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一个 `provisional` 等级指标的 `A-BOUNDARY-001` 引用拿掉。",
+      "what_en": "Strip `A-BOUNDARY-001` from a metric the build grades `provisional`.",
+      "why_zh": "E116 记的就是这个状态：17 个 provisional 指标里只有 11 个引了该假设，`benchmark_count` 引了而同图层同形状的 `benchmark_first_order_count` 没引。读者被告知这是临时值，却没被告知临时在哪里。若人为拿掉一处而闸门不响，那次修复保的只是当时那七条。",
+      "why_en": "This is the state E116 records: 11 of 17 provisional metrics cited the assumption, with benchmark_count citing it and benchmark_first_order_count — same layer, same shape — not. The reader is told the number is provisional and not told what makes it so. If removing one draws no objection, that fix protected only the seven it found."
+    },
+    {
+      "id": "M28",
+      "gate": "computed_value_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把正文里一处 `[metric:...]` 引用的指标名写错一个字母。",
+      "what_en": "Misspell the metric named by one `[metric:...]` citation by a single letter.",
+      "why_zh": "E118 之前，两版正文共 37 处这样的引用，没有任何检查读过其中任何一处——它长得像一次联接，其实什么也不解析。**这正是本包在别处反对的东西**，却出现在为证明相反而发明的记法里。",
+      "why_en": "Before E118 there were 37 such citations across the two editions and no check had read one: the notation looked like a join and resolved to nothing, which is the objection this package makes everywhere else, inside the notation invented to demonstrate the opposite."
+    },
+    {
+      "id": "M29",
+      "gate": "schema_conformance_qa.py",
+      "target": "self_check.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "给 `self_check.json` 加一个组织方 schema 不允许的根属性。",
+      "what_en": "Add a root property to `self_check.json` that the organisers' schema forbids.",
+      "why_zh": "E120 之前，题面发布六份 schema，本包只校验了 manifest 一份，另外五份从未被读过——而正文正用一整段批评「一份没人执行的已发布契约」。若加一个明令禁止的属性而构建照样通过，这道闸门就只是一句声明。",
+      "why_en": "Before E120 the site package published six schemas and this package validated against one, having never read the other five — while its own proposal spends a paragraph on a published contract nobody enforces. If a forbidden property can be added and the build still passes, the gate is only an assertion."
+    },
+    {
       "id": "M1",
       "gate": "figure_citation_qa.py",
       "target": "proposal.md",
@@ -82,7 +178,7 @@
       "caught": true,
       "exit_code": 1,
       "named_the_damage": true,
-      "what_zh": "把英文摘要里的「184→793 proposals」改成一句不带数字的说法，句子照样成立，而守着它的那条模式从此匹配不到任何东西。",
+      "what_zh": "把英文摘要里的「228→793 proposals」改成一句不带数字的说法，句子照样成立，而守着它的那条模式从此匹配不到任何东西。",
       "what_en": "Reword the English summary so the pattern watching it matches nothing. The sentence stays true and readable; the check simply stops running.",
       "why_zh": "本闸门的十四条 fact 要求「必须找得到」，而二十一条 context 模式约束的是「每一次出现都必须等于当前值」——**零次出现就是零次约束**，循环根本不进入，而汇总行照旧写着「21 条模式」。三条已经这样悄悄失效了。若人为再造一条而闸门不响，这道闸门报出的数就只是它自己声明的条数，不是它做过的功。",
       "why_en": "This gate's fourteen facts must each be *found*; its context patterns instead constrain every occurrence of a phrasing — and **zero occurrences is zero constraint**. The loop never runs and the summary keeps reporting the number of patterns as though each had done work. Three had already fallen silent this way. If a fourth can be created deliberately without objection, the gate's headline number is a count of its own declarations, not of anything it checked."
@@ -307,7 +403,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 25,
+  "caught": 33,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -316,18 +412,53 @@
     "cjk_leak_qa.py",
     "claim_audit_qa.py",
     "computed_value_qa.py",
+    "declared_geometry_qa.py",
+    "evidence_ceiling.py",
     "figure_citation_qa.py",
     "forward_reference_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
     "overflow_qa.py",
     "parity_qa.py",
+    "peer_claim_qa.py",
+    "schema_conformance_qa.py",
     "sources_qa.py",
     "stale_corpus_qa.py"
   ],
   "gates_not_covered": {
     "gate_mutation_qa.py": "this file is not in the submitted package, so no shipped-file mutation can reach it; both halves of its detection — that a caught defect is caught, and that it was named — are instead established by two control mutations, `assert_harness_can_report_survival` and `assert_harness_checks_naming`"
   },
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 15 道闸门，其中 14 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 15 gates, 14 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "rules_matching_nothing": [
+    {
+      "gate": "assumption_refs_qa.py",
+      "rule": "prose boundary markers",
+      "matching": 0,
+      "of": 3,
+      "why_zh": "E116 之后，「靠推定边界」由算出来的证据等级判定，不再靠正文措辞；这条正文规则保留为一张网，接的是等级不为 provisional、而正文仍压在那条边界上的指标——该情形当前不存在。",
+      "why_en": "Since E116 the boundary dependency is decided by the computed evidence class, not by wording. This prose rule is kept as a net for a metric outside the provisional class whose text still rests on that boundary, a case that does not currently occur."
+    },
+    {
+      "gate": "assumption_refs_qa.py",
+      "rule": "census source allowlist",
+      "matching": 2,
+      "of": 5,
+      "unused": [
+        "census.json",
+        "manifest_schema_survey.json",
+        "census_history.json"
+      ],
+      "why_zh": "这三份普查文件随包发出，但当前没有任何指标读它们；名单先于用途存在，因此现在只约束了其中两份。",
+      "why_en": "These census files ship, and no metric currently reads them: the allowlist exists ahead of the use, so only two of the five constrain anything today."
+    },
+    {
+      "gate": "figure_citation_qa.py",
+      "rule": "never-drawn detection, English",
+      "matching": 0,
+      "of": 5,
+      "why_zh": "英文模式抓的是未加时点的现在完成时（has never been drawn），而英文正文写的是过去完成时——**时态本身就是时点**，因此零匹配是对的。已实测：把一处英文改成现在完成时，该闸门当即点名。",
+      "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
+    }
+  ],
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 18 道闸门，其中 18 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 18 gates, 18 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

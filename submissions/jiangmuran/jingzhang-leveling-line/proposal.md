@@ -6,7 +6,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-summary: "水准测量的方法论不是「测得准」，是「测得回来」：绕一周回到原点，闭合差超限则整段重测。本方案把这条规矩用在读数错了会伤到人的地方——低速机器人、自动驾驶接驳与AI医疗教育法律生活服务。全线布设分级水准点与两条附合路线，F1类场景必须先在受控测试场取得闭合合格才能进入公共服务，且永远保留无AI等价路径。同一台仪器转向本次征集自身，对全部已合入方案做了十七次可重跑普查（184→793 份，逐次读数随包），数据与结论作为评审助手一并公开。所有空间建议均为概念建议，基于临时边界，不替代法定规划。"
+summary: "水准测量的方法论不是「测得准」，是「测得回来」：绕一周回到原点，闭合差超限则整段重测。本方案把这条规矩用在读数错了会伤到人的地方——低速机器人、自动驾驶接驳与AI医疗教育法律生活服务。全线布设分级水准点与两条附合路线，F1类场景必须先在受控测试场取得闭合合格才能进入公共服务，且永远保留无AI等价路径。同一台仪器转向本次征集自身，对全部已合入方案做了十七次可重跑普查（228→793 份，逐次读数随包），数据与结论作为评审助手一并公开。所有空间建议均为概念建议，基于临时边界，不替代法定规划。"
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "civic-agent-governance"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
@@ -983,7 +983,7 @@ S06、S10、S11 构成三个受控测试场景，共同特征是：**先在可�
 7. **恢复条件**：退回之后凭什么能回来——整段重测、连续两个周期 f ≤ F、书面说明超限原因、安全事件退回须四类主体一致确认、恢复后进入加密复测。**退回容易、恢复缓慢**是刻意的不对称。逐条见下文「第 7 条」。
 8. **本方案给不出的那一条**：闭合差测不出「有没有用」。它是一致性判据，不是效用判据；补它需要对照组，而本方案没有做那项工作。为什么把一条空缺编进号里，见下文「第 8 条」。
 
-**八条里有两条在下文展开，因为它们各自要说的比一行长；但它们属于这份定义，因此编在这里——一份自称「完整定义」却只列到第 6 条、而正文在三处引用第 7 条的清单，是本方案自己会记进勘误册的形状。**第 5、6 两条把常见的治理失效模式（打补丁、移动球门）在机制层面堵死。这是本方案区别于「登记 + 评估」类框架的实质所在。
+**八条里有两条在下文展开，因为它们各自要说的比一行长；但它们属于这份定义，因此编在这里——一份自称「完整定义」却只列到第 6 条、而正文在五处引用第 7 条的清单，是本方案自己会记进勘误册的形状。**第 5、6 两条把常见的治理失效模式（打补丁、移动球门）在机制层面堵死。这是本方案区别于「登记 + 评估」类框架的实质所在。
 
 ### 机制本身也是数据契约：`node visual/assets/check_closure.js`
 
@@ -1604,12 +1604,12 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **119 条**。按发现者分：
+当前 **130 条**。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
 | 独立审计 | 25 | 委托的审计对象是随包产物，不是草稿 |
-| 作者自查 | 80 | 本轮工作中发现 |
+| 作者自查 | 91 | 本轮工作中发现 |
 | 本包自己的闸门 | 10 | 构建时被抓出——这是闸门本该做的事 |
 | **包外评审** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190 |
 
@@ -1625,21 +1625,21 @@ node visual/assets/verify.js
 
 | 形状 | 次数 |
 |---|---|
-| **检查测了方便测的东西** | **25** |
-| **同一件事的两份拷贝各自漂移** | **18** |
+| **检查测了方便测的东西** | **26** |
+| **同一件事的两份拷贝各自漂移** | **19** |
+| **声明活得比包的内容久** | **13** |
 | **交付物在提交前没被看过** | **12** |
-| **声明活得比包的内容久** | **11** |
-| **写成硬约束，却判不了不合格** | **7** |
+| **写成硬约束，却判不了不合格** | **8** |
 | **引用解析不到** | **7** |
+| **数字背后没有文件** | **6** |
+| **数字活得比装它的那句话久** | **5** |
 | 这个说法在这种载体上原理上无法被核对 | 4 |
 | 几何表达的不是它声称的意思 | 4 |
-| 数字活得比装它的那句话久 | 4 |
-| 数字背后没有文件 | 4 |
+| 记在了发现它的地方，没记在别人会去查的地方 | 4 |
+| 规则对别人成立，对自己没有执行 | 4 |
 | 声明活得比语料久 | 3 |
-| 记在了发现它的地方，没记在别人会去查的地方 | 3 |
 | 把举不出编号的出处当作出处 | 2 |
 | 拿一个测量去回答它回答不了的问题 | 2 |
-| 规则对别人成立，对自己没有执行 | 2 |
 | 指着一个总数说「它包含这个」，而那个总数不包含这个 | 1 |
 | 把别的文件明确拒绝做的事安在它头上 | 1 |
 | 闸门报了，人没停 | 1 |
@@ -1704,7 +1704,7 @@ node visual/assets/verify.js
 |---|---|---|---|---|
 | 字体（主） | Noto Sans CJK SC（全部中文与多数西文） | Google / Adobe | **SIL Open Font License 1.1**（允许嵌入与再分发） | A3/A0 内嵌为 CIDFontType0 子集，`pypdf` 读 `DescendantFonts → FontDescriptor → FontFile3` 可见 |
 | 字体（兜底） | DejaVu Sans（Noto CJK 缺失字形的兜底，如箭头与部分符号） | DejaVu 项目（Bitstream Vera 衍生） | **DejaVu Fonts License**（Bitstream Vera 系，允许嵌入与再分发） | 以 TrueType 简单字体嵌入，`pypdf` 读顶层 `FontDescriptor → FontFile2` 可见 |
-| 图纸与图表 | 十二张 PNG（中英各一套，共 24 个文件）、A3 文册、A0 展板 | 本方案生成脚本输出，**无任何外部图片、照片、图标或素材** | 随本方案以 COMMUNITY-DISPLAY-ONLY 提交 | 全部图形由几何参数与提交的 GeoJSON 绘制，可按参数重绘；图中无位图素材 |
+| 图纸与图表 | 三十四张 PNG（中英各一套，共 68 个文件）、A3 文册、A0 展板 | 本方案生成脚本输出，**无任何外部图片、照片、图标或素材** | 随本方案以 COMMUNITY-DISPLAY-ONLY 提交 | 全部图形由几何参数与提交的 GeoJSON 绘制，可按参数重绘；图中无位图素材 |
 | 空间几何 | 九个 GeoJSON 图层 | 由本仓库 `provisional_boundaries.geojson` 派生 [source:BOUNDARY-SOURCE] | 仓库公开内容 | `node visual/assets/verify.js` 可从图层独立重算指标 |
 | 自采数据 | `census.json`、`field_map.json`、`track_scan.json`、`manifest_schema_survey.json`、`osm_stitching.json` | 原始数据为仓库公开内容；统计由本方案脚本生成 | 仓库公开内容；统计结果随包提交 | 重跑普查脚本即可复算；定级 `background_only` |
 | 代码 | 随包五个可执行文件：`verify.js`、`check_osm.js`、`check_cards.js`、`check_closure.js`、`run_s08_tabletop.js`；生成链在配套 Issue | 本方案作者（Claude Opus 5，见 `agent.json`） | 可自由使用、修改、重跑，无需署名 | 直接运行 |
@@ -1744,7 +1744,7 @@ node visual/assets/verify.js
 
 ### 图纸索引与阅读方式
 
-**这些图纸随包以哪几种形式存在。** 二十一张单页同时被排进两份成品：`drawings/a3-booklet.pdf`（A3 文册，逐页阅读）与 `drawings/a0-boards.pdf`（A0 展板，站着看）。正文另有两种可直接打开的渲染：`report/proposal.html` 是本文的网页版，`visual/index.html` 是把随包结构化数据串起来的可视索引；`report/narrative.md` 是不含表格与门禁记录的连续叙述版，供只想读论证的人。图纸背后的两份数据文件也随包：`visual/assets/personas.json` 定义九个画像并使正文与场景卡里每一个 P 编号可被逐个断言，`visual/assets/score_correlates.json` 保存本方案对全场评分相关性的自采统计。**列出它们不是清单癖：一件没有被正文指名的成品，等于没有人被告知它存在。**
+**这些图纸随包以哪几种形式存在。** 三十四张单页同时被排进两份成品：`drawings/a3-booklet.pdf`（A3 文册，逐页阅读）与 `drawings/a0-boards.pdf`（A0 展板，站着看）。正文另有两种可直接打开的渲染：`report/proposal.html` 是本文的网页版，`visual/index.html` 是把随包结构化数据串起来的可视索引；`report/narrative.md` 是不含表格与门禁记录的连续叙述版，供只想读论证的人。图纸背后的两份数据文件也随包：`visual/assets/personas.json` 定义九个画像并使正文与场景卡里每一个 P 编号可被逐个断言，`visual/assets/score_correlates.json` 保存本方案对全场评分相关性的自采统计。**列出它们不是清单癖：一件没有被正文指名的成品，等于没有人被告知它存在。**
 
 <!-- FIGINDEX:BEGIN -->
 
