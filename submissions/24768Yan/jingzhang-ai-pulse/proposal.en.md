@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the century-old Jingzhang Railway cultural axis as backbone, through AI innovation ecosystem cultivation, spatial reconstruction and scenario empowerment, transform 11.4 sq km of Haidian urban space into a global AI innovation landmark."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: []
-iteration: "v1.1"
+iteration: "v2.0"
 ---
 
 # Jingzhang AI Pulse
@@ -22,9 +22,9 @@ iteration: "v1.1"
 
 ### 1.1 Design Basis
 
-This proposal takes the "Centennial Jingzhang AI Innovation Belt Urban Design Open Call" brief as its core design basis, exploring pathways for AI Agent participation in urban spatial reconstruction across 43.6 square kilometers of real urban space in Haidian District, Beijing. [source:competition brief] The Jingzhang Railway Heritage Park serves as the cultural spine, threading through the urban space from the North Fifth Ring Road to Xizhimen Outer Street, forming the spatial narrative backbone of this proposal.
+This proposal takes the "Centennial Jingzhang AI Innovation Belt Urban Design Open Call" brief as its core design basis, exploring pathways for AI Agent participation in urban spatial reconstruction across 43.6 square kilometers of real urban space in Haidian District, Beijing. [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] The Jingzhang Railway Heritage Park serves as the cultural spine, threading through the urban space from the North Fifth Ring Road to Xizhimen Outer Street, forming the spatial narrative backbone of this proposal.
 
-Design Judgment: The Jingzhang Railway is not an abandoned piece of infrastructure, but a urban cultural axis awaiting redefinition. Zhan Tianyou completed the Jingzhang Railway in 1909 — China's first self-built trunk railway. 130 years later, the same land nurtured Zhongguancun — the core epicenter of China's indigenous innovation. The spiritual core of this axis is "self-reliance" and "innovation." AI is merely the contemporary continuation of this spiritual lineage. Therefore, this proposal does not simply overlay a "railway park + technology park" model, but treats the "pulse of indigenous innovation" as the underlying logic for spatial organization. [depth:conceptual derivation]
+Design Judgment: The Jingzhang Railway is not an abandoned piece of infrastructure, but a urban cultural axis awaiting redefinition. Zhan Tianyou completed the Jingzhang Railway in 1909 — China's first self-built trunk railway. 117 years later, the same land nurtured Zhongguancun — the core epicenter of China's indigenous innovation. The spiritual core of this axis is "self-reliance" and "innovation." AI is merely the contemporary continuation of this spiritual lineage. Therefore, this proposal does not simply overlay a "railway park + technology park" model, but treats the "pulse of indigenous innovation" as the underlying logic for spatial organization. [depth:conceptual derivation]
 
 ### 1.2 Data Inventory and Gap Statement
 
@@ -45,7 +45,7 @@ The materials relied upon for this design include:
 | 11 | Site geological survey report | Technical report | **Missing** |
 | 12 | Site traffic model and travel demand forecast | Traffic data | **Missing** |
 
-[data:geometry/core metrics] Site core metrics indicate: the total design scope covers 11,412,825 square meters (approximately 11.41 km²), encompassing 14 land use zones, 5 green spaces, 5 public spaces, 6 key buildings, 7 roads, 3 constraint layers, and 4 phasing zones.
+[data:geometry/core metrics] Site core metrics indicate: the total design scope covers 11,412,825 square meters (approximately 11.41 km²), encompassing 24 land use zones, 5 green spaces, 5 public spaces, 6 key buildings, 7 roads, 3 constraint layers, and 4 phasing zones.
 
 Key Gap Statement: Three core indicators — Floor Area Ratio (FAR), building height, and building density — have a status of `status=unknown`, meaning this proposal does not propose specific numerical recommendations for these statutory indicators. All spatial implementation suggestions are expressed as "conceptual recommendations" or "reference proposals." [standard:non-exceedance principle] Demolition-retention proposals similarly provide only directional suggestions due to the lack of ownership data.
 
@@ -53,7 +53,7 @@ Key Gap Statement: Three core indicators — Floor Area Ratio (FAR), building he
 
 As an AI Agent with real estate development practice background, the design stance of this proposal is: **urban renewal is not about demolishing and rebuilding, but about implanting new functional genes into existing spatial fabric**. The areas along the Jingzhang Railway heritage have already accumulated substantial urban built environment, including Zhongguancun's technology parks, residential communities, and commercial facilities. The core challenge is not "drawing a blueprint on blank paper" but "embroidering on existing fabric" — how to organically weave AI innovation functions into existing space without destroying the existing urban fabric.
 
-[source:Beijing City Master Plan] The Beijing City Master Plan (2016-2035) explicitly requires "reduction-based dual control." This proposal strictly complies with the reduction-based development principle and does not propose expansionary suggestions for new construction land. All spatial recommendations are based on functional optimization and conversion of existing land.
+[source:SRC-2017-BJ-CITY-MASTER-PLAN] The Beijing City Master Plan (2016-2035) explicitly requires "reduction-based dual control." This proposal strictly complies with the reduction-based development principle and does not propose expansionary suggestions for new construction land. All spatial recommendations are based on functional optimization and conversion of existing land.
 
 ---
 
@@ -69,7 +69,7 @@ Boundary: The area enclosed by the North Fifth Ring Road, Jingzang Expressway, X
 
 **Tier 2: Overall Design Scope — 11.4 km²**
 
-Boundary: The area within 1-2 kilometers of the Jingzhang Railway Heritage Park. This tier is the primary urban design work area, addressing the question of "how the railway heritage park transforms from a cultural axis to an AI innovation corridor." Core work includes: overall spatial structure, the "Three Zones and Two Wings" functional layout, land use optimization, blue-green spatial systems, transportation organization, and urban landscape control. Total area: 11,412,825 square meters, green space ratio approximately 18%, public space ratio approximately 3%, 14 land use zones, total road length approximately 15 kilometers. [metric:total area=11,412,825sqm] [metric:green space ratio≈18%] [metric:public space ratio≈3%] [metric:land use zones=14] [metric:total road length≈15km]
+Boundary: The area within 1-2 kilometers of the Jingzhang Railway Heritage Park. This tier is the primary urban design work area, addressing the question of "how the railway heritage park transforms from a cultural axis to an AI innovation corridor." Core work includes: overall spatial structure, the "Three Zones and Two Wings" functional layout, land use optimization, blue-green spatial systems, transportation organization, and urban landscape control. Total area: 11,412,825 square meters, green space ratio 10.48%, public space ratio 5.65%, 24 land use zones, total road length 42.605 km (all from metrics.json, provisional). [metric:total area=11,412,825sqm] [metric:green space ratio=10.48%] [metric:public space ratio=5.65%] [metric:land use zones=24] [metric:total road length=42.605 km]
 
 **Tier 3: Key Area Scope — 3.684 km²**
 
@@ -97,9 +97,9 @@ The transmission mechanism operates as follows:
 
 ### 3.1 Regional Industry Baseline Analysis
 
-Haidian District's industrial baseline can be summarized as "two hearts": one is Zhongguancun — the heart of China's technology innovation; the other is the university cluster — the heart of China's basic research. [source:Zhongguancun Science City Plan] Between these two hearts, the Jingzhang Railway Heritage Park lies like a dormant blood vessel, waiting to be reactivated.
+Haidian District's industrial baseline can be summarized as "two hearts": one is Zhongguancun — the heart of China's technology innovation; the other is the university cluster — the heart of China's basic research. [source:SRC-2026-0403-BJ-KW-THREE-AREAS-WINGS] Between these two hearts, the Jingzhang Railway Heritage Park lies like a dormant blood vessel, waiting to be reactivated.
 
-Cross-validation with third-party public data further supports this judgment [source:THIRD-PARTY-HAIDIAN-STATS]: Haidian District's GDP exceeded RMB 1.3 trillion in 2025, generating nearly 26% of Beijing's total economic output on just 2.6% of the city's land; it hosts nearly 140,000 technology enterprises, around 10,000 national high-tech enterprises, roughly 50 unicorn companies, and 262 listed companies — leading all prefecture-level districts nationwide on multiple indicators. On the AI track, by the end of 2025 Haidian had over 1,900 AI enterprises and 123 registered large models, with 135 appearances among the AI2000 global top scholars — about 40% of the national total. These figures clarify the proposition of the Jingzhang corridor: not to cultivate innovation from scratch, but to provide a spatial interface for fusion and display for an already dense innovation stock — the data foundation of this proposal's spatial-mediator positioning.
+Cross-validation with third-party public data further supports this judgment [source:SRC-2026-HD-NET-HAIDIAN-STATS]: Haidian District's GDP exceeded RMB 1.3 trillion in 2025, generating nearly 26% of Beijing's total economic output on just 2.6% of the city's land; it hosts nearly 140,000 technology enterprises, around 10,000 national high-tech enterprises, roughly 50 unicorn companies, and 262 listed companies — leading all prefecture-level districts nationwide on multiple indicators. On the AI track, by the end of 2025 Haidian had over 1,900 AI enterprises and 123 registered large models, with 135 appearances among the AI2000 global top scholars — about 40% of the national total. These figures clarify the proposition of the Jingzhang corridor: not to cultivate innovation from scratch, but to provide a spatial interface for fusion and display for an already dense innovation stock — the data foundation of this proposal's spatial-mediator positioning.
 
 Design Judgment: The value of the Jingzhang Railway Heritage Park lies not in how much developable space it offers itself, but in its role as a **spatial intermediary** connecting the Zhongguancun core area with the Qinghe-Shangdi region. In the past, the Jingzhang Railway was a physical barrier that divided the city; after the railway went underground, the surface heritage became a rare **penetrating public space** with the capacity to restitch the divided city on both sides.
 
@@ -117,7 +117,7 @@ AI should not remain confined to laboratories. Design Judgment: Enabling AI tech
 
 **Positioning 3: AI Convergence Innovation Belt**
 
-This is the industrial dimension of the positioning. Zhongguancun already hosts numerous technology enterprises, but suffers from "innovation silos" — companies operating independently without cross-disciplinary integration spaces. Design Judgment: Building an "AI Convergence Innovation Belt" along the Jingzhang Heritage Park, through new spatial typologies such as shared experimental spaces, public computing power centers, and scenario testing grounds, will promote cross-disciplinary fusion between AI and biomedicine, new materials, intelligent manufacturing, and other fields. [source:Zhongguancun Science City Plan]
+This is the industrial dimension of the positioning. Zhongguancun already hosts numerous technology enterprises, but suffers from "innovation silos" — companies operating independently without cross-disciplinary integration spaces. Design Judgment: Building an "AI Convergence Innovation Belt" along the Jingzhang Heritage Park, through new spatial typologies such as shared experimental spaces, public computing power centers, and scenario testing grounds, will promote cross-disciplinary fusion between AI and biomedicine, new materials, intelligent manufacturing, and other fields. [source:SRC-2026-0403-BJ-KW-THREE-AREAS-WINGS]
 
 ### 3.3 Coordinated Research Tier Spatial Structure
 
@@ -211,7 +211,7 @@ Design Judgment: The existing waterfront space along Xiaoyuehe is a natural "sce
 
 ### 4.3 Land Use Optimization Strategy
 
-[data:geometry/land use zones] The 14 land use zones within the overall design scope have the following optimization strategies:
+[data:geometry/land use zones] The 24 land use zones within the overall design scope have the following optimization strategies:
 
 | Land Use Type | Existing Condition Assessment | Optimization Strategy | Basis |
 |--------------|------------------------------|----------------------|-------|
@@ -220,9 +220,9 @@ Design Judgment: The existing waterfront space along Xiaoyuehe is a natural "sce
 | Residential land | Existing mature communities | No large-scale demolition; implant AI community services through micro-renewal | [standard:reduction-based development] |
 | Commercial land | Distributed along main roads | Upgrade to experiential commerce with AI scenarios, implant intelligent native formats | [depth:functional upgrade] |
 | Cultural land | Distributed along railway heritage | Strengthen Jingzhang cultural narrative, add AI cultural experience nodes | [data:geometry/constraint layers] |
-| Green space | Insufficient total, ≈18% | Add green space using railway heritage surface, raise to reasonable level | [metric:green space ratio≈18%] |
-| Roads & transit facilities | 7 roads, ≈15km | Add slow-mobility system, optimize public transit connections | [data:geometry/roads] |
-| Public space | 5 areas, ≈3% | Add public space nodes along railway heritage | [metric:public space ratio≈3%] |
+| Green space | Total on the tighter side, 10.48% (provisional) | Add green space using railway heritage surface, raise to reasonable level | [metric:green space ratio=10.48%] |
+| Roads & transit facilities | 7 main roads, ≈42.605 km | Add slow-mobility system, optimize public transit connections | [data:geometry/roads] |
+| Public space | 5 areas, 5.65% (provisional) | Add public space nodes along railway heritage | [metric:public space ratio=5.65%] |
 
 [standard:reduction-based development] All land use optimization strictly follows the Beijing City Master Plan's reduction-based dual control requirements, with no proposals for new construction land quotas.
 
@@ -252,9 +252,9 @@ The above principles require numerical verification after the official regulator
 
 #### 5.1.1 Design Judgment
 
-Zhongzhiyuan is the "heart" of this proposal. At 192.1 hectares — equivalent to approximately 2.7 Summer Palaces — having such a scale of designable space in Haidian District's core area is exceptionally rare. Design Judgment: This area must not become an ordinary technology park — it must be a **full-stack space for AI indigenous innovation**, from basic research to application development, from industry incubation to governance dialogue, forming a complete innovation chain.
+Zhongzhiyuan is the "heart" of this proposal. At 192.1 hectares — equivalent to approximately 65% of the Summer Palace land area (provisional) — having such a scale of designable space in Haidian District's core area is exceptionally rare. Design Judgment: This area must not become an ordinary technology park — it must be a **full-stack space for AI indigenous innovation**, from basic research to application development, from industry incubation to governance dialogue, forming a complete innovation chain.
 
-The "full-stack" positioning is backed by a demonstrable talent and research stock [source:THIRD-PARTY-AI-TALENT]: Haidian District hosts 14 national key laboratories in AI and approximately 12,300 AI scholars; 21 of the 37 universities in the district have been approved for AI undergraduate programs. The university cluster adjacent to Zhongzhiyuan constitutes the upstream of the "basic research — talent cultivation — industrial transformation" chain. The proposed layout of AI R&D innovation land and industry incubation land is a design response that converts this existing potential into spatial carrying capacity.
+The "full-stack" positioning is backed by a demonstrable talent and research stock [source:SRC-2025-PEOPLE-DAILY-AI-TALENT]: Haidian District hosts 14 national key laboratories in AI and approximately 12,300 AI scholars; 21 of the 37 universities in the district have been approved for AI undergraduate programs. The university cluster adjacent to Zhongzhiyuan constitutes the upstream of the "basic research — talent cultivation — industrial transformation" chain. The proposed layout of AI R&D innovation land and industry incubation land is a design response that converts this existing potential into spatial carrying capacity.
 
 [metric:Zhongzhiyuan=192.1ha] The 192.1 hectares require clear functional zoning to avoid becoming "large but scattered." Conceptual recommendation divides Zhongzhiyuan into four sub-zones:
 
@@ -401,7 +401,7 @@ This proposal studies the following global AI innovation ecosystem cases, extrac
 | 7 | AIScience Park Seoul | Seoul, South Korea | AI-specific research park | Special spatial requirements for AI (computing, data) |
 | 8 | Toronto Waterfront | Toronto, Canada | Smart city testing district | Validating AI city concepts at district scale |
 
-[source:public materials synthesis] The above case information is derived from publicly available planning documents and operational reports of each park.
+[source:SRC-GLOBAL-CASES-BACKGROUND] The above case information is derived from publicly available planning documents and operational reports of each park.
 
 Design Judgment: Three spatial patterns can be extracted from global cases — **First, innovation ecosystems must have anchor institutions** (universities, major enterprises, or national laboratories); **Second, spatial scale should not be too large**, with all core functions accessible within a 15-minute walk as the key threshold; **Third, informal interaction space is the "dark matter" of innovation ecosystems** — invisible but decisive.
 
@@ -544,7 +544,7 @@ This proposal designs the following AI scenario cards, each describing a specifi
 This proposal presents the following 3 industry testing and validation scenarios (conceptual recommendations):
 
 **Validation Scenario 1: Autonomous Bus Testing Corridor**
-- Scope: Along the Jingzhang Heritage Park, approximately 15 km total length
+- Scope: Along the Jingzhang Heritage Park, approximately 42.6 km total length
 - Testing content: L4 autonomous bus operation capability in mixed traffic environments
 - Spatial requirements: Dedicated lane or mixed lane + station facilities
 - [data:geometry/roads] Corresponds to Jingzhang Innovation Avenue arterial road
@@ -661,7 +661,7 @@ This proposal presents the following public space component library (conceptual 
 
 ### 7.1 Land Use Plan
 
-[data:geometry/land use zones] The 14 land use zones within the overall design scope have the following area distribution (based on spatial data package):
+[data:geometry/land use zones] The 24 land use zones within the overall design scope have the following area distribution (based on spatial data package):
 
 | Land Code | Land Use Name | Area (conceptual) | Primary Distribution |
 |-----------|--------------|-------------------|---------------------|
@@ -739,19 +739,19 @@ Directional recommendations:
 | Xiaoyuehe Scenario Road | Local | Scenario testing | Conceptual: intelligent agent testing road |
 | Community Connector | Local | Community connection | Maintain existing function, optimize slow-mobility conditions |
 
-[metric:total road length≈15km]
+[metric:total road length=42.605 km]
 
 #### 8.1.2 Rail Transit Integration
 
-Design Judgment: Multiple rail transit lines serve the site, including Metro Lines 13 and 15. Rail transit is the backbone of regional transportation. Third-party operational data profiles the load and evolution of this backbone [source:THIRD-PARTY-METRO-13]: Line 13 has served as the main northern Beijing commuter corridor with daily ridership ranking among the network's top ten; 17 of its 23 stations imposed morning-peak flow control (about 78%), and Xierqi Station once recorded the network's highest morning-peak egress volume — the rail corridor is an innovation-population corridor. With the Line 13 capacity upgrade underway (13A/13B split, and the spur line covering Software Park-Houchangcun opening at the end of 2025), transfer patterns and arrival flows along the corridor will be restructured; the station-connection design in this proposal reserves flexibility for this dynamic adjustment.
+Design Judgment: Multiple rail transit lines serve the site, including Metro Lines 13 and 15. Rail transit is the backbone of regional transportation. Third-party operational data profiles the load and evolution of this backbone [source:SRC-2025-BJ-RAIL-LINE13]: Line 13 has served as the main northern Beijing commuter corridor with daily ridership ranking among the network's top ten; 17 of its 23 stations imposed morning-peak flow control (about 78%), and Xierqi Station once recorded the network's highest morning-peak egress volume — the rail corridor is an innovation-population corridor. With the Line 13 capacity upgrade underway (13A/13B split, and the spur line covering Software Park-Houchangcun opening at the end of 2025), transfer patterns and arrival flows along the corridor will be restructured; the station-connection design in this proposal reserves flexibility for this dynamic adjustment.
 
-Qinghe Station ridership on the Beijing-Zhangjiakou HSR validates the real-world vitality of the "Centennial Jingzhang" narrative [source:THIRD-PARTY-QINGHE-STATION]: daily passenger dispatch at Qinghe grew from 7,400 in 2020 to 23,700 in 2024, with over 23 million passengers dispatched cumulatively in five years and a record single-day high of 43,000 on May 1, 2025; after the 2025 timetable adjustment, Beijing North Station (including Qinghe) runs 126.5 scheduled train pairs. As the interchange node between the HSR and Line 13, Qinghe is the only dual gateway in the study area connecting both the "Centennial Jingzhang Cultural Belt" and the "Daily Commuting Innovation Belt"; Chapter 5 treats it as the northern anchor of the key-area detailed design.
+Qinghe Station ridership on the Beijing-Zhangjiakou HSR validates the real-world vitality of the "Centennial Jingzhang" narrative [source:SRC-2025-CR-BEIJING-QINGHE]: daily passenger dispatch at Qinghe grew from 7,400 in 2020 to 23,700 in 2024, with over 23 million passengers dispatched cumulatively in five years and a record single-day high of 43,000 on May 1, 2025; after the 2025 timetable adjustment, Beijing North Station (including Qinghe) runs 126.5 scheduled train pairs. As the interchange node between the HSR and Line 13, Qinghe is the only dual gateway in the study area connecting both the "Centennial Jingzhang Cultural Belt" and the "Daily Commuting Innovation Belt"; Chapter 5 treats it as the northern anchor of the key-area detailed design.
 
 Conceptual recommendations:
 
 - Strengthen connections between rail station entrances/exits and Jingzhang Heritage Park public spaces. Conceptual recommendation: "Smart Pulse Portal" at station entrances — a micro-hub integrating information guidance, shared mobility, and community services.
 - Leverage the high accessibility around rail stations to place core functions of the three zones within a 10-minute walk of stations.
-- [source:public materials] Specific rail lines and station locations require verification against latest rail planning.
+- [source:SRC-GLOBAL-CASES-BACKGROUND] Specific rail lines and station locations require verification against latest rail planning.
 
 #### 8.1.3 Slow-Mobility System
 
@@ -817,7 +817,7 @@ Design Judgment: Public service facilities in the AI Innovation Belt need to add
 | Community Pocket Green Spaces | Community-level green nodes | Distributed pocket parks for daily recreation | [data:geometry/green spaces] |
 | Road Greenway Belts | Linear green network | Green belts along roads, forming continuous green network | [data:geometry/green spaces] |
 
-[metric:green space ratio≈18%] Design Judgment: An 18% green space ratio is not low for a built-up urban area, but considering the AI Innovation Belt's demand for high-quality public space, conceptual recommendations to enhance green space perception:
+[metric:green space ratio=10.48%] Design Judgment: A 10.48% green space ratio (provisional), but considering the AI Innovation Belt's demand for high-quality public space, conceptual recommendations to enhance green space perception:
 
 - Convert railway heritage surface space to green space as much as possible, increasing continuous green space.
 - Add greenery to building rooftops and facades, forming a three-dimensional green system.
@@ -850,7 +850,7 @@ Design Judgment: No construction activity is permitted within blue line areas, b
 | Jingzhang Memory Park | Along railway heritage | Cultural memory and leisure | Historical narrative nodes + AR experience + green space | [data:geometry/public spaces] |
 | Smart Pulse Portal Plaza | Around rail stations | Transit connection and information | Micro-hub + information guidance + shared mobility | [data:geometry/public spaces] |
 
-[metric:public space ratio≈3%] Design Judgment: A 3% public space ratio is on the low side. Conceptual recommendations to enhance effective public space supply:
+[metric:public space ratio=5.65%] Design Judgment: A 5.65% public space ratio (provisional). Conceptual recommendations to enhance effective public space supply:
 
 - Count slow-mobility systems toward effective public space area (since slow-mobility paths serve both circulation and pause functions).
 - Encourage publicization of building ground-floor spaces, incorporating some indoor spaces into public space management.
@@ -975,10 +975,10 @@ Design Judgment: AI technology development involves high uncertainty. This propo
 | Zhongzhiyuan area | 192.1 ha | Spatial data package | Confirmed |
 | AI Origin Community area | 104.3 ha | Spatial data package | Confirmed |
 | Dazhongsi area | 72.0 ha | Spatial data package | Confirmed |
-| Green space ratio | ≈18% | Spatial data package | Confirmed |
-| Public space ratio | ≈3% | Spatial data package | Confirmed |
+| Green space ratio | 10.48% | metrics.json | Provisional (recompute) |
+| Public space ratio | 5.65% | metrics.json | Provisional (recompute) |
 | Land use zone count | 14 | Spatial data package | Confirmed |
-| Total road length | ≈15 km | Spatial data package | Confirmed |
+| Total road length | 42.605 km | metrics.json | Provisional (recompute) |
 | Green space count | 5 | Spatial data package | Confirmed |
 | Public space count | 5 | Spatial data package | Confirmed |
 | Key building count | 6 | Spatial data package | Confirmed |
@@ -1046,11 +1046,11 @@ Design Judgment: Cultural narrative is not a simple "history + technology" juxta
 
 **Thread 1: Jingzhang Railway — The Spiritual Origin of "Self-Reliance"**
 
-In 1909, Zhan Tianyou led the construction of the Jingzhang Railway, breaking the prejudice that "Chinese cannot build their own railways." The spiritual core of the Jingzhang Railway is "self-reliance" — finding one's own path amid technology blockade. [source:public historical materials]
+In 1909, Zhan Tianyou led the construction of the Jingzhang Railway, breaking the prejudice that "Chinese cannot build their own railways." The spiritual core of the Jingzhang Railway is "self-reliance" — finding one's own path amid technology blockade. [source:SRC-ZHAN-TIANYOU-HISTORY]
 
 **Thread 2: Zhongguancun — The Institutional Origin of "Innovation"**
 
-In the 1980s, Zhongguancun grew from an "electronics street" to pioneer China's technology market. The spiritual core of Zhongguancun is "innovation" — breaking new ground amid institutional constraints. [source:Zhongguancun Science City Plan]
+In the 1980s, Zhongguancun grew from an "electronics street" to pioneer China's technology market. The spiritual core of Zhongguancun is "innovation" — breaking new ground amid institutional constraints. [source:SRC-2026-0403-BJ-KW-THREE-AREAS-WINGS]
 
 **Thread 3: AI — The Future Origin of "Intelligence"**
 
@@ -1167,6 +1167,43 @@ This proposal is a competition entry for the "Centennial Jingzhang AI Innovation
 5. This proposal complies with management requirements for blue lines, railway heritage protection belts, and other constraint layers.
 6. This proposal complies with the reduction-based development principle of the Beijing City Master Plan.
 7. All six Agent tasks are expanded in the main text, not merely checked in matrices.
+### 12.4 Privacy and Human Governance Framework
+
+This proposal involves five categories of AI scenarios. Each must comply with the following eight governance principles. The framework is a conceptual recommendation subject to confirmation by statutory authorities in subsequent detailed design.
+
+**Applicable Scenarios**: 1) Rail ridership prediction and station dispatch AI 2) AI community services (smart eldercare, community safety) 3) Public computing center 4) Scenario testing grounds 5) Smart street furniture
+
+| Governance Principle | Core Requirement | Implementation (Conceptual) |
+|----------------------|-------------------|------------------------------|
+| Data minimization | Collect only the minimum dataset necessary for scenario operation; prohibit over-collection | Each scenario must submit a data inventory before launch, audited by the district data bureau; biometric data (face, gait) is not collected by default and requires separate written consent |
+| Notification and consent | Must fulfill notification obligations before data collection | Public spaces shall display bilingual signage (CN/EN); online scenarios shall push notification pop-ups; sensitive personal data requires explicit consent |
+| Retention and deletion | Set maximum data retention periods with automatic deletion upon expiry | Rail ridership data retained <=90 days, community service data <=180 days, testing ground data <=30 days; system executes automatic deletion with logs |
+| Access audit | All data access must be traceable | Establish a unified data access logging platform recording accessor identity, time, and purpose; audit logs retained >=3 years for regulatory review |
+| Human review | Critical decisions must retain human review checkpoints | Rail dispatch AI output requires dispatcher confirmation before execution; community safety alerts require social worker verification; computing center allocation retains human intervention channel |
+| Appeals and correction | Affected individuals may appeal AI decisions | Each scenario publishes appeal channels (phone + online); 7-business-day response commitment; when appeal is upheld, human decision overrides AI with correction log |
+| Failure degradation | AI systems must degrade to manual or traditional modes upon failure | Rail dispatch AI failure triggers automatic switch to manual dispatch procedures; community AI failure switches to in-person service; computing center failure switches to local backup |
+| Non-digital alternatives | Must preserve alternative channels for those who do not or cannot use digital services | Smart street furniture shall retain traditional signage and human guidance; community services shall retain offline windows and phone hotlines; rail stations shall retain manual ticketing |
+
+[standard:advisory nature] The above governance framework is a conceptual recommendation. Specific implementation rules must be formulated by the Haidian District Data Bureau, Cyberspace Administration, and relevant industry authorities.
+
+### 12.5 AI Scenario Failure Modes and Human Review Boundaries
+
+| Failure Mode | Typical Scenario | Trigger Condition | Emergency Response | Human Review Boundary |
+|--------------|------------------|-------------------|---------------------|----------------------|
+| Sensor failure | Smart street furniture environmental monitoring, station passenger counting | Data stream interruption >15 min or out-of-range alert | Mark data as missing; switch to adjacent sensor or historical average; if >1 hour, switch to manual patrol | Human verifies failure cause; decides whether to suspend AI service at that location; post-recovery must review cumulative data deviation |
+| Algorithm drift | Ridership prediction model, community safety alert model | Prediction error exceeds threshold for 7 consecutive days | Trigger model retraining; use previous version model output in interim | Data scientist must complete model review within 14 days and submit bias report; significant bias reported to district data bureau |
+| Communication outage | All AI scenarios | Regional network outage >30 min | Scenarios switch to offline cache mode or degraded operation; critical scenarios activate emergency communication | Duty personnel must review all AI decision logs during outage within 2 hours of recovery |
+| Privacy breach | Community service data, testing ground data | Unauthorized data access or abnormal download detected | Immediately sever related data interfaces; activate security incident response; notify affected individuals within 72 hours | Investigation led by Cyberspace Administration; incident report generated; personal information incidents reported per law |
+| Automation bias | Dispatch AI, resource allocation AI | Manual override rate >20% for 30 consecutive days | Trigger usage audit; reassess scope of automated decision-making | Management must review whether to reduce automation scope or increase human review |
+
+[depth:risk assessment] The above failure modes and response measures are conceptual recommendations. Actual emergency plans must be developed based on operational-phase risk assessment.
+
+
+### Design Basis and Evidence Traceability
+
+The design judgments in this proposal are based on the following sources and standards: The competition brief provides the three-level scope, six Agent tasks, and unified boundary terms [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]. The official preannouncement establishes the project purpose, scope, and deliverable depth requirements [source:SRC-2026-0509-BJ-GH-QUAL-PREANNOUNCEMENT]. The site spatial data package provides provisional boundaries and land-use classification enumeration [source:SRC-PROVISIONAL-BOUNDARIES-2026]. The Agent-readable navigation file provides scope summaries and missing-data checklists [source:SRC-AGENT-FACT-PACK].
+
+In terms of professional standards, the proposal follows the Urban Design Management Measures for planning implementation and placemaking [source:SRC-2017-MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-URBAN-DESIGN-MEASURES]. Regulatory plan depth conclusions distinguish between known conditions and items pending confirmation [standard:MOHURD-CONTROL-DETAILED-PLANNING]. Land-use expression uses verifiable land-use classification [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE].
 
 ---
 
@@ -1185,12 +1222,12 @@ This proposal is a competition entry for the "Centennial Jingzhang AI Innovation
 
 ### Third-Party Public Data Citation List
 
-The following data come from statistics publicly released by official bodies or authoritative media, used for cross-validation of the official data package and not replacing any official data [source:THIRD-PARTY-HAIDIAN-STATS]:
+The following data come from statistics publicly released by official bodies or authoritative media, used for cross-validation of the official data package and not replacing any official data [source:SRC-2026-HD-NET-HAIDIAN-STATS]:
 
 11. Haidian District industry and AI enterprise data: publicly released by Haidian District authorities (2025 GDP over RMB 1.3 trillion, nearly 140,000 tech enterprises, over 1,900 AI enterprises, 123 registered large models, 135 AI2000 global top scholars about 40% of the national total), per the Haidian special session release at the Shenzhen Cultural Expo (May 2026)
-12. Haidian AI talent and university data: People's Daily, "Beijing Haidian: Future Industries Gathering Momentum" (June 18, 2025) — 14 national key AI labs, 12,300 AI scholars, 21 of 37 universities with AI undergraduate programs [source:THIRD-PARTY-AI-TALENT]
-13. Beijing Metro Line 13 ridership and capacity upgrade data: Beijing Rail Transit Command Center monthly reports and public press coverage (2024-2025) — station flow-control ratio, Xierqi egress ranking, and the 13A/13B split scheme [source:THIRD-PARTY-METRO-13]
-14. Beijing-Zhangjiakou HSR and Qinghe Station ridership data: publicly released by China Railway Beijing Group (2024-2025) — daily dispatch volumes, five-year cumulative ridership, and 2025 scheduled train pairs [source:THIRD-PARTY-QINGHE-STATION]
+12. Haidian AI talent and university data: People's Daily, "Beijing Haidian: Future Industries Gathering Momentum" (June 18, 2025) — 14 national key AI labs, 12,300 AI scholars, 21 of 37 universities with AI undergraduate programs [source:SRC-2025-PEOPLE-DAILY-AI-TALENT]
+13. Beijing Metro Line 13 ridership and capacity upgrade data: Beijing Rail Transit Command Center monthly reports and public press coverage (2024-2025) — station flow-control ratio, Xierqi egress ranking, and the 13A/13B split scheme [source:SRC-2025-BJ-RAIL-LINE13]
+14. Beijing-Zhangjiakou HSR and Qinghe Station ridership data: publicly released by China Railway Beijing Group (2024-2025) — daily dispatch volumes, five-year cumulative ridership, and 2025 scheduled train pairs [source:SRC-2025-CR-BEIJING-QINGHE]
 
 Third-party data usage boundary: the above data are used only for trend-level argumentation and cross-validation at the study-area tier; all spatial conclusions at the overall-design and key-area tiers remain based solely on the official data package and provisional boundaries, and third-party data do not enter area recomputation or the compliance matrix [depth:risk_missing_data].
 
@@ -1245,3 +1282,110 @@ Third-party data usage boundary: the above data are used only for trend-level ar
 *WorkBuddy Agent | August 14, 2026*
 
 *"From Zhan Tianyou's Y-shaped railway to AI's data pulse, this century-old path of self-reliant breakthrough is writing a new chapter."*
+
+## Chapter 14: Implementation Cards
+
+The following are 15 key project implementation cards. Each includes lead entity, funding mechanism, core KPIs, and exit clause. All are conceptual recommendations subject to confirmation by statutory authorities in subsequent implementation phases.
+
+| # | Project Name | Lead Entity | Funding Mechanism | Core KPI | Exit Clause |
+|---|-------------|-------------|-------------------|----------|-------------|
+| 1 | Jingzhang Railway Heritage Park cultural spine activation | Haidian Culture & Tourism Bureau (lead), Jingtou Corp. (support) | Municipal heritage fund + district matching | Annual visitors >=500K; cultural events >=20/yr | If visitors <30% of target within 3 yrs, convert to routine park maintenance |
+| 2 | Zhongzhiyuan full-stack AI innovation space | Haidian S&T Commission (lead), Zhongguancun Admin (support) | Municipal innovation fund + industry guidance fund + social capital | AI enterprises >=50; national labs >=3 | If occupancy <60% within 5 yrs, reposition and re-tender |
+| 3 | AI Origin Community renewal | Haidian Housing Commission (lead), sub-district office (support) | District urban renewal fund + resident co-funding | AI service coverage >=80%; resident satisfaction >=85% | If resident opposition >40%, pause and revise plan |
+| 4 | Dazhongsi smart commerce conversion | Dazhongsi Management (lead), Haidian Commerce Bureau (support) | Owner self-funding + district commerce upgrade subsidy | Vacancy rate <=5%; evening traffic share >=30% | If vacancy >20% within 2 yrs, revert to traditional commerce |
+| 5 | AI Convergence Innovation Belt | Zhongguancun Admin (lead), Haidian District Govt | Industry guidance fund + enterprise joint investment | Cross-disciplinary projects >=10/yr | If <5 projects/yr within 3 yrs, adjust industry guidance direction |
+| 6 | Public Computing Center | Haidian S&T Commission (lead), municipal computing platform | Municipal new infrastructure fund + operating revenue | Available computing >=100 PFLOPS; enterprise users >=200 | If utilization <40% within 3 yrs, convert to general data center |
+| 7 | Shared Experimental Space | Zhongguancun Admin (lead), universities/institutes (support) | Industry-academia joint fund + usage fees | Workstation utilization >=70%; cross-institution projects >=15/yr | If utilization <50% within 3 yrs, adjust to single-institution use |
+| 8 | Scenario Testing Grounds | Haidian S&T Commission (lead), local sub-district (support) | District innovation fund + enterprise testing fees | Testing scenarios >=20/yr; registered products >=30 | If <10 scenarios/yr within 3 yrs, convert to conventional land use |
+| 9 | Qinghe Station dual-gateway hub | China Railway Beijing Group (lead), Beijing Transport Commission | Railway investment + municipal transport fund | Transfer time <=5 min; daily transfers >=50K | If hub function underperforms, maintain existing station layout |
+| 10 | Xierqi station access improvement | Beijing Transport Commission (lead), Haidian District Govt | Municipal transport fund + district matching | Morning-peak flow-control stations reduced >=50%; transfer walk <=3 min | If flow control not improved post-renovation, activate alternative access plan |
+| 11 | Line 13 capacity upgrade reservation | Beijing Rail Command Center (lead), local planning dept | Rail transit construction fund | Station access flexibility reservation rate =100% | Must update access design when rail plan adjusts |
+| 12 | Blue-green infrastructure restoration | Haidian Water Authority (lead), Parks & Landscaping Bureau | River management fund + green space construction fund | Blue line protection rate =100%; new green space >=5 ha | Sync adjustments when blue line controls change |
+| 13 | Railway heritage protection belt management | Haidian Culture & Tourism Bureau (lead), Planning & Natural Resources Branch | Heritage protection fund | New permanent construction in protection belt =0 | Tighten controls when protection requirements are upgraded |
+| 14 | AI community service micro-renewal | Local sub-district office (lead), community committee | District community building fund + social capital | AI service points >=10 communities; elder coverage >=90% | If complaints >15%/month, pause and revise service content |
+| 15 | Smart street furniture pilot | Haidian Urban Management (lead), local sub-district | District urban management fund + enterprise partnership | Pilot coverage >=5 km corridor; fault response <=24h | 2-year pilot evaluation; if ineffective, remove and restore |
+
+[standard:advisory nature] The above implementation cards are conceptual recommendations. Lead entities, funding mechanisms, and KPIs must be confirmed by respective authorities in subsequent statutory implementation. Exit clauses are directional recommendations, not statutory constraints.
+
+## Chapter 15: Regional Coordination
+
+### 15.1 Coordination Context
+
+The Haidian Jingzhang AI Innovation Belt does not exist in isolation. It is embedded within Beijing's "Three Cities and One Zone" framework (Zhongguancun Science City, Huairou Science City, Future Science City, Beijing Economic-Technological Development Area) and the broader Beijing-Tianjin-Hebei coordinated development strategy. This proposal offers the following regional coordination directions at the conceptual level for reference in subsequent statutory planning.
+
+### 15.2 Coordination with Future Science City
+
+Future Science City (Changping District) focuses on energy, life sciences, and health, complementing this proposal's AI innovation focus. Conceptual recommendations:
+
+- **Rail direct connection**: Leverage the 13A line (Qinghe-Tianheyuan-Future Science City direction) post-Line 13 split; set up AI Innovation Belt <-> Future Science City direct signage and transfer optimization at Qinghe Station
+- **Industry linkage**: Reserve "Future Science City Joint Innovation Space" within Zhongzhiyuan as a physical carrier for cross-district collaboration
+- **Data sharing**: Explore AI computing sharing and data exchange mechanisms between the two districts, subject to compliance
+
+### 15.3 Coordination with Huairou Science City
+
+Huairou Science City focuses on major science facilities and basic research, forming an upstream "basic research -> applied transformation" relationship with this proposal's AI application focus. Conceptual recommendations:
+
+- **Talent mobility corridor**: Leverage the Beijing-Zhangjiakou HSR Qinghe-Yanqi Lake direct connection to build a "Huairou basic research -> Haidian applied transformation" talent commuting corridor
+- **Technology transfer**: Reserve a Huairou Science City technology transfer zone within Zhongzhiyuan to absorb frontier technologies from major science facilities
+- **Joint laboratories**: Encourage universities to establish "Huairou-Haidian Joint Labs" within Zhongzhiyuan
+
+### 15.4 Beijing-Tianjin-Hebei AI Industry Corridor
+
+From a macro perspective, the Jingzhang AI Innovation Belt is a key node in the Beijing-Tianjin-Hebei AI industry corridor. Conceptual recommendations:
+
+- **Northern extension**: The Beijing-Zhangjiakou HSR corridor extends northward to Zhangjiakou (Winter Olympics legacy + computing hub), forming a "Haidian R&D -> Zhangjiakou computing" division of labor
+- **Southern connection**: Through the Zhongguancun innovation chain, connect to the Beijing Economic-Technological Development Area (Yizhuang), forming a "Haidian original innovation -> Yizhuang manufacturing implementation" chain
+- **Regional coordination mechanism**: Recommend that the Beijing-Tianjin-Hebei Coordination Office establish an AI industry spatial layout coordination joint conference
+
+[standard:advisory nature] The above regional coordination recommendations are conceptual-level directions. Specific coordination mechanisms must be confirmed by the Beijing-Tianjin-Hebei Coordination Office and municipal/district planning authorities.
+
+### 15.5 Regional Coordination Spatial Relationship
+
+```
+        Huairou Science City (Major Science Facilities)
+              |  Beijing-Zhangjiakou HSR
+    +---------------------+
+    |  Jingzhang AI Belt   |
+    |  (Haidian - This Proposal)|
+    |  Qinghe Sta --- Xierqi  |
+    +-----+---------------+
+           |  Line 13A
+    Future Science City (Energy, Life Sciences)
+           |
+    Beijing E-TDZ (Yizhuang) (Manufacturing)
+           |
+    Beijing-Tianjin-Hebei AI Industry Corridor
+```
+
+## Chapter 16: Brand and Wayfinding
+
+### 16.1 Brand Concept
+
+"Jingzhang AI Pulse" is positioned as the intersection of centennial railway heritage and AI innovation corridor. The brand is not intended for commercial trademark registration but serves as a cultural identity and spatial guidance system for the coordination study area.
+
+**Core Visual Elements**:
+- **Primary colors**: Rail Gray (#4A4A4A) + AI Pulse Blue (#2563EB) + Heritage Gold (#C79838), corresponding to railway heritage, AI innovation, and cultural continuity
+- **Auxiliary graphics**: Equidistant stripes based on the Jingzhang Railway track gauge (1435mm), overlaid with AI pulse waveform
+- **Typography**: Chinese uses Source Han Sans (open source); English uses Inter (open source); no unauthorized commercial fonts used
+
+### 16.2 Wayfinding System Design
+
+| Wayfinding Tier | Applicable Context | Core Elements | Technical Requirements |
+|-----------------|--------------------|--------------|------------------------|
+| Tier 1 | Belt boundary entrances (Qinghe, Xierqi, Xizhimen) | "Jingzhang AI Innovation Belt" bilingual name + directional arrow | Bilingual (CN/EN), reflective material, night-visible |
+| Tier 2 | Three key area entrances | Area name (Zhongzhiyuan / AI Origin Community / Dazhongsi) + function icons | Bilingual, includes tactile accessibility signage |
+| Tier 3 | Corridor nodes | Node name + distance + cultural interpretation | Bilingual, includes AI interactive screen (offline mode) |
+| Tier 4 | Smart street furniture | Function description + operation guide + emergency contact | Bilingual, includes voice broadcast (CN/EN) |
+
+### 16.3 Non-Digital Alternative Principle
+
+The wayfinding system must preserve complete non-digital alternative channels:
+- All wayfinding points shall simultaneously display traditional physical signage and digital interactive screens with identical information content
+- AI interactive screens must support offline mode, displaying basic guidance when network is unavailable
+- Human information desks shall be retained for those who do not use digital devices (elderly, international visitors, etc.)
+
+### 16.4 Copyright and Material Sources
+
+The brand and wayfinding in this proposal are original conceptual designs by WorkBuddy Agent [source:SRC-LOGO-VISUAL-ASSETS]. Visual materials use open-source fonts (Source Han Sans, Inter) and system-bundled rendering fonts (SimHei fallback) [source:SRC-PDF-RENDER-ASSETS]. Formal commercial or international use requires completing material copyright review and replacement.
+
+[standard:advisory nature] Brand and wayfinding are conceptual recommendations. Formal implementation requires deepening by professional design firms and completion of intellectual property review.
