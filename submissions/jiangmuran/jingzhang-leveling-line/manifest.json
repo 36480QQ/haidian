@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-15T01:23:37-07:00",
+  "generated_at": "2026-08-15T01:36:57-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,13 +28,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1e52562578a2fdb5a8c212d66705796f058031bddc34b4b2a6ec14f5592e40e4"
+      "sha256": "90adbd27bc6ab8bb22c279299c34c5eff1426558bdceba024ac43b8f3ca204a3"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "05dcc3f67e08a069994765ff3efaa05eb309a24602c9630135d653c0dd6e014c",
+      "sha256": "906448bd2e9ca5c7905da28cf66d01ffa89f1c3de75cd8367a2179247ca17409",
       "language": "neutral"
     },
     {
@@ -48,7 +48,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "49a7c496beee2ffb70d7d6a35edc8debb371dad1d4a07748118c2987e9e3d14a",
+      "sha256": "1415c36eec7ce4c2838f6d222d7e3795facf8e9682235e4b82f8b64ab8e2ed45",
       "language": "neutral"
     },
     {
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f134063f853c834ba8feed5ac5255e69c3bd2424f0f8afd854b44b21dff02a5e",
+      "sha256": "f65b86027d6204396dd809ab59e217a43019b10b4cbc9445e7b463c1c77363b9",
       "language": "neutral"
     },
     {
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8a18b9a57db1f420abac6243c327282863166e0a15482da0f3286320909ef391"
+      "sha256": "ba7364dc166f8430f134015fcf6592554897d07a681645f96cc19e4ed4c1ea7a"
     },
     {
       "path": "report/narrative.md",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "99c59e4a63d28377188cdcd8f690af725a734e54837bf94e790c6126aec01460",
+      "sha256": "abf61417a1f2c83bce8a90d3112feb3e8937ad08ffec58bf2d1b0c70444945f4",
       "language": "zh"
     },
     {
@@ -266,7 +266,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "ef709ad875e1c171da96195b2e51c9bbb9d31a1c44d8cc9f05e0782dfb9a97a3"
+      "sha256": "7ac26aa93cd87050d500248ef108f7f0f8c5fddb62b592e653b754ecf520e3f1"
     },
     {
       "path": "visual/assets/verify.js",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "42fc10380902ae62d0a26bc247b96380c5891cc93e827c3b49ef19a698ebbec2"
+      "sha256": "24dec0714b9ebf034d2aeac0dd4baca2801442c209e909d8ae1aabea2f12e4e4"
     },
     {
       "path": "report/proposal.en.html",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1bbdf0fdc43657ea437ceb853fd81c7c7b63110e88c3acedd417e19adbb357d0"
+      "sha256": "cbaadd6b5494998b3662c90be4002642bc730b155626ccd075852768fcfaeda9"
     },
     {
       "path": "visual/index.en.html",
@@ -434,7 +434,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "23ba97f235145248cd8477b363e9348d5dc83afb2a2eadb1f162c885860e3400"
+      "sha256": "039917da54ea49b7c7bba55a390f63d91d3e113f2e45c865a2e57044edd9b2fe"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -577,7 +577,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "8b6592bc0dabfd900879e6f0e32273370439f0748c3387c02a8577ef0b494428"
+      "sha256": "36e5dfa5087c8ba87f768c43a451929f8d3b3f28bdf2ae7ef3f0ccd7d3e32561"
     },
     {
       "path": "visual/assets/errata.json",
@@ -841,7 +841,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "644a38a33ef6d5b51d83252188cf814a59d620ab77f1998efcf24c8f092f2b00"
+      "sha256": "01dc80c31c9fe8ba9c6450c3ca7796c76427e4f5ee911e8aa946d56289df265d"
     },
     {
       "path": "assets/figures/device.png",
@@ -1041,6 +1041,25 @@
       "required": false,
       "language": "neutral",
       "sha256": "f1adcfd76a09b668485aced3e575170e212aae151822107efde828000c52d67e"
+    },
+    {
+      "path": "assets/media/leveling-year.mp3",
+      "role": "audio",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "一年的声音：同一份工作量，两种落法",
+      "title_en": "The sound of one year: the same work, landing two ways",
+      "description_zh": "48 秒数据发声（无语音、无音乐素材）：全年 214 小时复测工时按月排开，每一次脉冲代表 2.5 小时。前半段所有周期同月起算，峰值 83.5 小时；后半段把三个年度点分开，峰值降到 31.5 小时——工作量一次没变。全部由正弦振荡器合成，非现场录音，不得作为现状声环境的证据。",
+      "description_en": "A 48-second sonification with no speech and no musical material: 214 hours of annual re-survey work laid out month by month, one pulse per 2.5 hours. In the first half every cadence starts in the same month and the peak is 83.5 hours; in the second the three annual readings are separated and the peak falls to 31.5, with no change to the work at all. Synthesised with a sine oscillator, not a recording, and not evidence of the existing acoustic environment.",
+      "transcript": "assets/media/leveling-year.md",
+      "sha256": "6d575ad25ea2a6c04f1375cfb80144db4fc3eb27be20dd0f2a05d7b23d82b667"
+    },
+    {
+      "path": "assets/media/leveling-year.md",
+      "role": "transcript",
+      "required": false,
+      "language": "neutral",
+      "sha256": "dd0fb9440610f8b6987251aeff51561e4154ae53675fdaede50ae03510fdbabc"
     }
   ],
   "validation_claim": {

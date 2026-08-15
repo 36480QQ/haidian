@@ -95,7 +95,7 @@
       "severity": "info",
       "target": "proposal.md, report/, assumptions.json",
       "source": "package-provided",
-      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 14 facts in both editions and 20 context patterns (22 occurrence(s) constrained) across 6 shipped files, all current (corpus 793)"
+      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 14 facts in both editions and 20 context patterns (22 occurrence(s) constrained) across 7 shipped files, all current (corpus 793)"
     },
     {
       "check_id": "PKG_CJK_LEAK_QA",
@@ -111,7 +111,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 80 zh / 80 en unit-carrying measurements in prose, same set in both editions; 176/172 bare numbers reported but not blocked, and one designed check (80 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 80 zh / 80 en unit-carrying measurements in prose, same set in both editions; 178/173 bare numbers reported but not blocked, and one designed check (78 candidates) not shipped"
     },
     {
       "check_id": "PKG_COMPUTED_VALUE_QA",
@@ -175,7 +175,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 46 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 45 bytes to spare"
+      "message": "intake_limits_qa.py — intake limits: 47 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 218 bytes to spare"
     },
     {
       "check_id": "PKG_MARKDOWN_STRUCTURE_QA",
