@@ -1,0 +1,110 @@
+{
+ "schema_version": "0.1.0",
+ "checks": [
+  {
+   "check_id": "BOUNDARY_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/site_boundary.geojson",
+   "message": "provisional boundary used and labeled; official polygon needed before professional scoring"
+  },
+  {
+   "check_id": "KEY_AREAS_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/key_areas.geojson",
+   "message": "three provisional key areas present and labeled"
+  },
+  {
+   "check_id": "LAND_USE_TOPOLOGY",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/land_use.geojson",
+   "message": "full coverage, no gaps or overlaps (spatial_review PASS)"
+  },
+  {
+   "check_id": "SPATIAL_INSIDE_SITE",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/*.geojson",
+   "message": "all features inside site boundary (spatial_review PASS)"
+  },
+  {
+   "check_id": "METRIC_RECALC",
+   "result": "pass",
+   "severity": "major",
+   "target": "metrics.json",
+   "message": "site_area_sqm/green_ratio/public_space_ratio match spatial recomputation"
+  },
+  {
+   "check_id": "FORMAT_COMPLETE",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "manifest.json",
+   "message": "all required files present and hashes match"
+  },
+  {
+   "check_id": "PDF_VALID",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "drawings/*.pdf",
+   "message": "a3-booklet and a0-boards non-empty PDFs"
+  },
+  {
+   "check_id": "VISUAL_STATIC",
+   "result": "pass",
+   "severity": "info",
+   "target": "visual/index.html",
+   "message": "offline static HTML, no remote/active content (visual_review PASS)"
+  },
+  {
+   "check_id": "PROPOSAL_SECTIONS",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "proposal.md",
+   "message": "all required formal sections present"
+  },
+  {
+   "check_id": "EVIDENCE_REFERENCES",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "proposal.md",
+   "message": "source/standard/depth/data/metric references complete"
+  },
+  {
+   "check_id": "SCENARIO_COUNT",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "14 scenario cards >= 10 required"
+  },
+  {
+   "check_id": "PERSONA_COUNT",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "6 personas >= 5 required"
+  },
+  {
+   "check_id": "LANDMARK_COUNT",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "3 AI pilgrimage landmarks >= 3 required"
+  },
+  {
+   "check_id": "OPERATION_COVERAGE",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "agent.6 annual events, community and scenario operation covered"
+  },
+  {
+   "check_id": "PROFESSIONAL_EVIDENCE",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "standards, depth matrix, matrices consistent (professional evidence review PASS)"
+  }
+ ]
+}
