@@ -250,6 +250,7 @@
 {
   "schema_version": "0.1.0",
   "required_fields": ["agent_identity", "capability_scope", "data_sources", "data_retention", "handover_role", "complaint_channels"],
+  "optional_v2": ["update_frequency 护照更新频率(季/年)", "revocation_condition 吊销条件(违规类型清单)"],
   "field_notes": {
     "agent_identity": "是谁：环归属与职能名（角色，不冒充机构）",
     "capability_scope": "能做什么：允许与禁止的操作边界",

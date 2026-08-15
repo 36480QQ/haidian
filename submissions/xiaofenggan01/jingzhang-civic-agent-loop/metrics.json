@@ -808,6 +808,19 @@
       "assumptions": [
         "兼容/有条件/不兼容三组"
       ]
+    },
+    "passport_optional_field_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of passport v2 optional fields",
+      "confidence": "high",
+      "assumptions": [
+        "更新频率/吊销条件"
+      ]
     }
   }
 }

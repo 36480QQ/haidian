@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v52.0"
+iteration: "v53.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -97,7 +97,7 @@ iteration: "v52.0"
 
 **留白验证区（临时用途机制）**：AI 场景用地作为按生命周期管理的临时用途（申请→验证→开放→退役），退出后按用途兼容清单处置、**不改变法定用地性质**——可直接被控规采用的制度接口，与 G5 开放授权、G6 退出处置闭环衔接。配套**用地兼容清单**（临时用途 × 用地代码，8 条规则 `[metric:land_use_compatibility_rule_count]`）：AI 测试与展示场景**兼容** 0802 科研 / 1401 公园绿地 / 1403 广场 / 0803 文化；**有条件兼容** 0804 教育（限教学时段外）/ 0702 社区服务（限服务不占产）；**不兼容** 0701 住宅（安静需求）/ 0806 医疗（不对公众开放测试）——退出后按此清单回到原用途（结构化三组清单见 `report/narrative.md § 兼容清单` `[metric:compatibility_category_count]`）。
 
-**示例收据**（`report/narrative.md § Example Receipt`）演示用地合规自动复核场景的 G3 收据，明确标 sandbox_only / not_run / performance_results=null——不冒充已运行。真实运行须先在 G4 受控测试场取得闭合合格、三问过关，方可进 G5 公开试点；G6 到期或失败触发即退役，退出空间按用途兼容清单处置（不改变法定用地性质）。**Agent Passport（agent 对城市可读）**（`report/narrative.md § Agent Passport`）：Receipt 让城市可审计 agent 的每次干预，Passport 让城市可识别 agent 本身——四环各持一本护照，公开六个字段：agent_identity（是谁）、capability_scope（能做什么）、data_sources（用什么数据）、data_retention（保留多久）、handover_role（谁能接管）、complaint_channels（如何投诉删除）。字段数与护照数见指标 `[metric:agent_passport_field_count]` `[metric:agent_passport_count]`。visual 仪表盘内置**门闸交互探查**（七道门闸可逐道点开查看进入条件/未过处理/人签，纯 HTML 零脚本 `[metric:visual_interactive_gate_count]`）。至此制品形成**双向可读**：城市对 agent 可读（Receipt + 门闸），agent 对城市可读（Passport），四环的每个智能体都可被公众点名、接管与投诉。**照片证据登记板**（`report/narrative.md § photo-register`）：不下载图片只立登记制度，五字段齐全（地点/日期/作者/许可证/原始文件页）方可引用 `[metric:photo_register_field_count]`，未登记许可的照片一律不得进入任何制品。这套制品把本方案的"失败档案复盘"年度仪式落成每个场景自带的、可证伪的闭环。
+**示例收据**（`report/narrative.md § Example Receipt`）演示用地合规自动复核场景的 G3 收据，明确标 sandbox_only / not_run / performance_results=null——不冒充已运行。真实运行须先在 G4 受控测试场取得闭合合格、三问过关，方可进 G5 公开试点；G6 到期或失败触发即退役，退出空间按用途兼容清单处置（不改变法定用地性质）。**Agent Passport（agent 对城市可读）**（`report/narrative.md § Agent Passport`）：Receipt 让城市可审计 agent 的每次干预，Passport 让城市可识别 agent 本身——四环各持一本护照，公开六个字段：agent_identity（是谁）、capability_scope（能做什么）、data_sources（用什么数据）、data_retention（保留多久）、handover_role（谁能接管）、complaint_channels（如何投诉删除）。字段数与护照数见指标 `[metric:agent_passport_field_count]` `[metric:agent_passport_count]`。visual 仪表盘内置**门闸交互探查**（七道门闸可逐道点开查看进入条件/未过处理/人签，纯 HTML 零脚本 `[metric:visual_interactive_gate_count]`）。至此制品形成**双向可读**：城市对 agent 可读（Receipt + 门闸），agent 对城市可读（Passport），四环的每个智能体都可被公众点名、接管与投诉；护照另设更新频率与吊销条件两个可选字段 `[metric:passport_optional_field_count]`。**照片证据登记板**（`report/narrative.md § photo-register`）：不下载图片只立登记制度，五字段齐全（地点/日期/作者/许可证/原始文件页）方可引用 `[metric:photo_register_field_count]`，未登记许可的照片一律不得进入任何制品。这套制品把本方案的"失败档案复盘"年度仪式落成每个场景自带的、可证伪的闭环。
 
 ## 用地、建筑规模与拆改留方案
 
