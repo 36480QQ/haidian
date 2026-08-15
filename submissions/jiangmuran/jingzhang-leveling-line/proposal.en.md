@@ -859,7 +859,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (478); a non-AI equivalent path (361); an on-site safety officer (328); remote and physical e-stop (174); speed limits (97); event logs (66). The thinnest is at 66, the thickest at 478. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (478); a non-AI equivalent path (361); an on-site safety officer (327); remote and physical e-stop (173); speed limits (97); event logs (66). The thinnest is at 66, the thickest at 478. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1525,7 +1525,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-169 entries. By finder:
+170 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
@@ -1559,8 +1559,8 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | A source unnameable | 5 |
 | Recorded where found | 5 |
 | Geometry not meaning it | 4 |
+| A total excluding | 3 |
 | Outlived a corpus | 3 |
-| A total excluding | 2 |
 | Answers what it cannot | 2 |
 | Attributed to a file that refuses | 1 |
 | Reported, ignored | 1 |
@@ -1732,7 +1732,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be executed literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model that scores this submission can run none.** Not saying so would repeat, at the scale of a checklist, this package's erratum about `analysis/`: an invitation to verify addressed to someone who cannot.
 
-**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.76 s**; 9 files, 1024 KB, 1,628 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
+**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.86 s**; 9 files, 1027 KB, 1,629 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
 
 **This disclosure has a shelf life, so it states where the fix stands.** The gap is upstream Issue #2170; the maintainers opened PR #2181, which adds an auditable access boundary to the review input, states that participant verification scripts are never executed, and corrects the review prompt so that a model **may not deduct points or fail a gate merely because it cannot open a registered artifact**. Once it merges the count above is unchanged; its consequence is not, because unreachability stops being read as the participant having withheld something. This package has already taken that recovery route: the key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
