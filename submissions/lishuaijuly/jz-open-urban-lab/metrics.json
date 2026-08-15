@@ -13,7 +13,7 @@
         "geometry/site_boundary.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "Projected area of provisional SITE_BOUNDARY in EPSG:4548.",
+      "formula": "Projected area of provisional SITE_BOUNDARY in EPSG:4548; display as rounded reporting value and recalculate when official geometry is available.",
       "confidence": "medium",
       "assumptions": [
         "ASSUMP-001"
@@ -40,7 +40,7 @@
         "geometry/site_boundary.geojson",
         "geometry/green_space.geojson"
       ],
-      "formula": "Projected area of green_space.geojson in EPSG:4548.",
+      "formula": "Projected area of conceptual green_space.geojson in EPSG:4548, rounded to the nearest 1,000 sqm.",
       "confidence": "medium",
       "assumptions": [
         "ASSUMP-001"
@@ -68,7 +68,7 @@
         "geometry/site_boundary.geojson",
         "geometry/public_space.geojson"
       ],
-      "formula": "Projected area of public_space.geojson in EPSG:4548.",
+      "formula": "Projected area of conceptual public_space.geojson in EPSG:4548, rounded to the nearest 1,000 sqm.",
       "confidence": "medium",
       "assumptions": [
         "ASSUMP-001"
