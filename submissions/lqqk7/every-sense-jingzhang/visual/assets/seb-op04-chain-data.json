@@ -441,8 +441,8 @@
     },
     {
      "criterion_id": "H2",
-     "zh": "退出点的接入距离是否可接受：OP-09 是活动感官负荷退出点，其功能定义要求就近可达。ALT-B 把它的接入距离拉长至 AI 开启状态的 6.157 倍。",
-     "en": "Whether the approach distance to an exit point is acceptable: OP-09 is the event sensory-load exit point, and its function requires it to be close at hand. ALT-B stretches its approach to 6.157 times the AI-on figure.",
+     "zh": "退出点的接入距离是否可接受：OP-08 是无账户消费与维护退出点，其功能定义要求就近可达。ALT-B 把它的接入距离拉长至 AI 开启状态的 4.389 倍（243.585 米）。",
+     "en": "Whether the approach distance to an exit point is acceptable: OP-08 is the account-free purchase and maintenance exit point, and its function requires it to be close at hand. ALT-B stretches its approach to 4.389 times the AI-on figure (243.585 m).",
      "verdict_zh": "不通过，且不由方案方裁决。可接受性属于使用者的判断，本方案不设阈值、不代答，把该问题原样交给现场共测。"
     },
     {
@@ -515,8 +515,8 @@
  "open_items": [
   {
    "item_id": "OI-01",
-   "zh": "同类问题已在本次核算中一并查出：OP-08 与 OP-09 在 AI 关闭状态下同样只能接入 ROAD-005，接入距离分别为 AI 开启状态的 1.924 倍与 6.157 倍。本轮按范围只处置 OP-04，两者登记为下一轮同类待办，不在本轮静默修改。",
-   "en": "The same fault was found alongside: once AI is off, OP-08 and OP-09 can also attach only to ROAD-005, at 1.924 and 6.157 times their AI-on approach. This round handles OP-04 only, by scope; the other two are registered for the next round rather than being quietly changed here."
+   "zh": "同类问题已在本次核算中一并查出：OP-08 与 OP-09 的物理接口线同为未声明 AI 关闭等价的 ROAD-004，接口固定口径下关闭态两点连接入都没有。本轮按范围只处置 OP-04，两者登记为下一轮同类待办，不在本轮静默修改。",
+   "en": "The same fault was found alongside: OP-08 and OP-09 share the same physical interface line — ROAD-004, undeclared for AI-off equivalence — so under the fixed-interface rule neither has any attachment once AI is off. This round handles OP-04 only, by scope; the other two are registered for the next round rather than being quietly changed here."
   },
   {
    "item_id": "OI-02",

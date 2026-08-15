@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A universal-design innovation belt where people with different bodies, senses, and cognitive styles can understand, choose, complete, and exit the same AI-enabled public service independently."
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "robot-delivery-low-speed"]
-iteration: "v6.4"
+iteration: "v6.5"
 ---
 
 # EVERY SENSE JING-ZHANG: An AI City Every Kind of Body Can Use Independently
