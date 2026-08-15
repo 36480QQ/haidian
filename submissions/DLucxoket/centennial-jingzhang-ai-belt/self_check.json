@@ -67,6 +67,16 @@
     "total": 10,
     "pass": 10,
     "fail": 0,
-    "warn": 0
-  }
+    "warn": 0,
+    "ok": true,
+    "can_enter_formal_review": true,
+    "pass/blocking gates": [
+      "DETERMINISTIC_VALIDATION",
+      "PROFESSIONAL_EVIDENCE",
+      "SPATIAL_REVIEW",
+      "VISUAL_PACKAGING"
+    ]
+  },
+  "ok": true,
+  "can_enter_formal_review": true
 }
