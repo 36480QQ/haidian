@@ -172,6 +172,36 @@ class ScoreSubmissionTests(unittest.TestCase):
             )
             self.assertEqual(report.unmatched_reference_lines, [])
 
+    def test_local_package_artifacts_do_not_require_public_source_records(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_source_index(root)
+            body = VALID_BODY.replace(
+                "- `brief/public-brief.md`\n- `brief/README.md`",
+                "- `brief/public-brief.md`\n- `metrics.json`, `assumptions.json` 与 `compliance_matrix.json` 为本方案机器可读索引。",
+            )
+            proposal = self.write_proposal(root, body)
+
+            report = score_proposal(root, proposal)
+
+            self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_PASS)
+            self.assertEqual(report.unmatched_reference_lines, [])
+
+    def test_unknown_local_reference_still_needs_source_status_note(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_source_index(root)
+            body = VALID_BODY.replace(
+                "- `brief/public-brief.md`\n- `brief/README.md`",
+                "- `brief/public-brief.md`\n- `research/field-observations.json`",
+            )
+            proposal = self.write_proposal(root, body)
+
+            report = score_proposal(root, proposal)
+
+            self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_NEEDS_WORK)
+            self.assertEqual(report.unmatched_reference_lines, ["`research/field-observations.json`"])
+
     def test_weak_landing_path_needs_work(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
