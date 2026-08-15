@@ -11,8 +11,6 @@ tracks: ["youth-friendly-public-space", "enterprise-services-ecosystem", "civic-
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# 京张同路签 / JINGZHANG SAME-ROUTE PASS
-
 > **由本人选择同行；只因即时安全临时分开；由具名责任完成重聚。** 支持关系不等于监护、代理、签字、身份或数据权限。
 
 ## 设计依据与资料清单
