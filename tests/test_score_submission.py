@@ -202,6 +202,21 @@ class ScoreSubmissionTests(unittest.TestCase):
             self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_NEEDS_WORK)
             self.assertEqual(report.unmatched_reference_lines, ["`research/field-observations.json`"])
 
+    def test_nested_package_artifact_name_still_needs_source_status_note(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_source_index(root)
+            body = VALID_BODY.replace(
+                "- `brief/public-brief.md`\n- `brief/README.md`",
+                "- `brief/public-brief.md`\n- `research/manifest.json`",
+            )
+            proposal = self.write_proposal(root, body)
+
+            report = score_proposal(root, proposal)
+
+            self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_NEEDS_WORK)
+            self.assertEqual(report.unmatched_reference_lines, ["`research/manifest.json`"])
+
     def test_weak_landing_path_needs_work(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

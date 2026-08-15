@@ -293,7 +293,7 @@ def is_package_artifact_reference(line: str) -> bool:
     if re.search(r"https?://", line, flags=re.IGNORECASE):
         return False
     file_tokens = re.findall(r"[\w./-]+\.(?:json|geojson)", line, flags=re.IGNORECASE)
-    return bool(file_tokens) and all(Path(token).name in PACKAGE_ARTIFACT_NAMES for token in file_tokens)
+    return bool(file_tokens) and all(token in PACKAGE_ARTIFACT_NAMES for token in file_tokens)
 
 
 def match_sources(text: str, reference_section: str, sources: list[dict[str, Any]]) -> tuple[list[SourceMatch], list[str]]:
