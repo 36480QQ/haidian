@@ -662,7 +662,7 @@
    "value": 10,
    "unit": "count",
    "source_files": [
-    "implementation.json"
+    "visual/assets/implementation.json"
    ],
    "formula": "len(implementation.work_packages) — first-100-days delivery packages",
    "confidence": "high",
@@ -673,7 +673,7 @@
    "value": 5,
    "unit": "count",
    "source_files": [
-    "implementation.json"
+    "visual/assets/implementation.json"
    ],
    "formula": "len(implementation.exit_gates) — stop/rollback gates G0–G4",
    "confidence": "high",
@@ -684,7 +684,7 @@
    "value": 8,
    "unit": "count",
    "source_files": [
-    "implementation.json"
+    "visual/assets/implementation.json"
    ],
    "formula": "len(implementation.procurement_themes) — procurement categories, no amounts claimed",
    "confidence": "high",
@@ -695,7 +695,7 @@
    "value": 3,
    "unit": "count",
    "source_files": [
-    "implementation.json"
+    "visual/assets/implementation.json"
    ],
    "formula": "len(implementation.monitoring_windows) — 3/12/36-month evidence windows for the six performance metrics",
    "confidence": "high",

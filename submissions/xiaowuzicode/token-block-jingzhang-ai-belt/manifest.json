@@ -26,14 +26,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "8bf71c2d9565b54f323c607cf4c01f958b1c46e4fdd7bb872f2286022e6bbe09",
+      "sha256": "5db3794996527f21dad998459108c0351ddfd0fd8d74ea0d9d86dd1ab385f4f1",
       "language": "en"
     },
     {
       "path": "report/proposal.zh.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "b419e0e5c3c174affc4e8528229aa31c5dd962066414ceeb0df2bfbe03c5f71b",
+      "sha256": "57ab27888e2c79de3ee19acbbaf1f17deaba08e2de082b89465123122821f68b",
       "language": "zh",
       "translation_of": "report/proposal.html"
     },
@@ -41,7 +41,7 @@
       "path": "proposal.zh.md",
       "role": "narrative",
       "required": false,
-      "sha256": "b74c3808b54f54009a408e9a6f362531178f3a506ab5a1e0c22f65cc64a29698",
+      "sha256": "e63437211b4632962082069ee56ef3436e72c2edd7947863b286d8aee31c847b",
       "language": "zh",
       "translation_of": "proposal.md"
     },
@@ -49,7 +49,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "f7636dc5a4f32291ead469db10bd29e72eade17e69fa698370d45b863748c7f7"
+      "sha256": "39f671e62641ae4fc209ff1223fd4677d64cce90638ad6f107d06db89bc1fd9b"
     },
     {
       "path": "agent.json",
@@ -61,7 +61,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "03b297ff0500fe25e2f9803190e88534c2f15076309bc9734965929e76ba4322"
+      "sha256": "f755db1e990ce6c11788d5d92da155c9264a102b7b539fbe7636b4df67af0d3a"
     },
     {
       "path": "assumptions.json",
@@ -79,7 +79,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d1a8b46fef8c53f47c77abef68013893341dfed7a161e91aac001a26f48b413a"
+      "sha256": "8a77ae785ab9dc64803913b4b54fb2b774099ac6781ffac6ae8e2c77450ac42e"
     },
     {
       "path": "compliance_matrix.json",
@@ -103,7 +103,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "6141f660a7133e9750bc27c35f6e2fa359879738d3c8b1f394dd03fbea28c667",
+      "sha256": "7922893f0728ea501f6ab8c9931b523dbf8c145740535dcbbf9c60dcd0163ac5",
       "language": "en"
     },
     {
@@ -421,7 +421,7 @@
       "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
     },
     {
-      "path": "implementation.json",
+      "path": "visual/assets/implementation.json",
       "role": "other",
       "required": false,
       "sha256": "0648256cb7932780a94692c08022f11d78aa57370d4cd170d2801018a6c04049",
@@ -432,7 +432,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
     "data_confidence_note": "Design layers and metrics are fully recomputable, but the submitted boundary and the three key-area polygons are the repository's provisional rough boundaries, not an official redline.",

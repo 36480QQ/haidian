@@ -240,7 +240,7 @@ The separation is the point. The Line Operator has an incentive to fill the cale
 **Stop conditions — what would pause or reverse this.** A proposal that cannot say how it fails is not implementable. The line should pause a scenario, or the programme, when: an objection is unresolved past its published deadline; a scenario is found to have collected data outside its declared boundary; the non-digital equivalent is unavailable while the digital one runs; a booking has enclosed a station plaza beyond its published window; the step-free route is broken by an installation; or official regulatory, heritage or rail data arrives that contradicts a spatial assumption in this package. The last one is the most likely, and it is a reason to recompute, not a reason to argue [depth:phasing_implementation] [depth:risk_missing_data] [source:PROCESSED-FACT-PACK].
 
 **From ninety days of narrative to one hundred days of packages.** The pilot description above
-is now carried by a machine-readable delivery frame, `implementation.json`, so that "what happens
+is now carried by a machine-readable delivery frame, `visual/assets/implementation.json`, so that "what happens
 first" can be audited the same way the token protocol is. It registers
 [metric:work_package_count] first-100-days work packages — two line-level packages (the token
 ledger with its first booking window, and the spine walk-through continuity audit) and roughly
