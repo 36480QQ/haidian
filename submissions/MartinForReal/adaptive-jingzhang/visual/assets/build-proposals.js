@@ -16,10 +16,13 @@
 //      winter and maintenance duties, and the one Phase 1 envelope per area were only
 //      in the registry, so a reader of the document could not check any of them. They
 //      are now written into the body of the key-area section.
-//   5. Action governance register. Every P00-P11 action carries its operator role,
-//      maintainer, beneficiary, worst-affected group, metric, proposed target, stop
-//      trigger and authority, rollback, physical restoration, residual liability,
-//      non-digital fallback, funding state, and unresolved D gates.
+//   5. Action governance register. Every P00-P11 action is written into the body as one
+//      row of a single decision table: the action, its phase, the accountable role, the
+//      observed metric, the stop condition, the rollback, and the D gate that blocks it.
+//      The remaining eight clauses — maintainer, beneficiary, worst-affected group,
+//      proposed target, stop authority, physical restoration, residual liability, and
+//      non-digital fallback — stay in action-governance.json, which this script requires
+//      to carry all twelve for every action before it will print any of them.
 //   6. Key-area plate architecture. The fifteen plates are the spatial argument of the
 //      proposal, and a reader could previously find their ids nowhere in the body. Each
 //      plate is now named in the paragraph that makes its own argument, written from
@@ -42,10 +45,14 @@ const SOURCE = path.join(ASSETS, "regeneration-source.json");
 const GOVERNANCE = path.join(ASSETS, "action-governance.json");
 const DESIGN = path.join(ASSETS, "key-area-design.json");
 
-// The two `##` sections whose generated `###` register is written by this script. Position
+// The three `##` sections whose generated `###` register is written by this script. Position
 // is the key everywhere else in this file, so it is the key here too.
 const AREA_REGISTER_ORDER = 5;
 const GOVERNANCE_REGISTER_ORDER = 10;
+// The taskbook asks about regional synergy under its industry-and-future-city dimension, and
+// that is the chapter this proposal answers that dimension in, so the matrix goes there
+// rather than into a section of its own where a reader looking for the answer would not be.
+const REGIONAL_SYNERGY_ORDER = 3;
 
 // The bilingual fields every action must carry into the body. Listing them here rather
 // than deriving them from whatever happens to be in the record means an action that quietly
@@ -64,6 +71,13 @@ const GOVERNANCE_FIELDS = [
   "residual_liability",
   "non_digital_fallback",
 ];
+
+// The four of those twelve that are printed in the proposal, in column order. The other
+// eight are still required of the record above; they are simply read in the record rather
+// than in the body, because a twenty-column table is not a governance instrument, it is a
+// wall a reviewer skips. Splitting the list in two keeps that a stated editorial decision
+// instead of an accident of which fields a template happened to reference.
+const GOVERNANCE_ROW_FIELDS = ["operator_role", "metric", "stop_trigger", "rollback"];
 
 const TARGETS = [
   { language: "zh", file: path.join(PACKAGE_ROOT, "proposal.md") },
@@ -433,9 +447,72 @@ function areaRegisterBlock(source, design, language) {
   return lines;
 }
 
-// One row per action would be twenty columns wide and unreadable in print, so each action
-// is its own labelled block instead. Every field is present for every action; a field with
-// nothing behind it yet says so rather than being omitted.
+// The regional-synergy answer the taskbook asks for and this proposal did not give.
+//
+// `review_dimensions[3]` of the agent taskbook names five counterparts and asks whether the
+// proposal shows innovation synergy with them. It publishes their names and nothing else, and
+// this package holds no primary record of any of the five. That is the whole basis available,
+// so the table has exactly the four columns a name can support: the relationship that could
+// be proposed, the evidence that would have to arrive before it is more than a proposal, the
+// review level that would receive that evidence, and what the row does not claim. A fifth
+// column — a route, an investment, a distance, a signed arrangement — would have to be
+// invented, and the table refuses to have somewhere to put one.
+//
+// Each row is required to carry all four before it is printed. A counterpart named with three
+// filled cells and an empty claim limit reads as a relationship that already exists, which is
+// precisely the reading this table is written to prevent.
+function regionalSynergyBlock(source, language) {
+  const block = source.proposal_blocks.regional_synergy;
+  const labels = source.ui_labels.regional;
+  const synergy = source.regional_synergy;
+  const rows = synergy.partners.map((partner) => {
+    for (const column of synergy.columns) {
+      const value = partner[`${column}_${language}`];
+      if (typeof value !== "string" || value.trim() === "") {
+        throw new Error(`${partner.id} registers no ${column}_${language}`);
+      }
+    }
+    return [
+      `${partner.id} ${pick(partner, "name", language)}`,
+      ...synergy.columns.map((column) => pick(partner, column, language)),
+    ];
+  });
+  const provenance = sentences([
+    `${pick(labels, "eyebrow", language)}${colonFor(language)}${synergy.source_ref}`
+      + ` [source:${synergy.source_id}]${marks(language).open}${synergy.evidence_state}${marks(language).close}`,
+    pick(block, "limit", language),
+  ], language);
+  const lines = [
+    `### ${pick(block, "heading", language)}`,
+    "",
+    pick(block, "intro", language),
+    "",
+    ...markdownTable(
+      [
+        pick(labels, "col_partner", language),
+        pick(labels, "col_relationship", language),
+        pick(labels, "col_evidence", language),
+        pick(labels, "col_review", language),
+        pick(labels, "col_limit", language),
+      ],
+      rows,
+    ),
+    "",
+    provenance,
+  ];
+  while (lines.length > 0 && lines[lines.length - 1] === "") lines.pop();
+  return lines;
+}
+
+// One compact decision table, one row per action.
+//
+// This register used to print all twelve clauses of every action as a labelled two-column
+// block, which came to 258 lines of the proposal — long enough that the seven facts a
+// reviewer actually needs in order to hold someone to something were buried among the five
+// they can look up. The record did not change: action-governance.json still holds every
+// clause, and this function still refuses to print an action that has lost any of them.
+// What changed is that the document now prints the accountability columns and names the
+// record for the rest, rather than reproducing the record and being skipped.
 function governanceBlock(source, governance, language) {
   const labels = governance.labels;
   const intro = source.proposal_blocks.governance_register;
@@ -447,50 +524,49 @@ function governanceBlock(source, governance, language) {
     "",
     pick(governance, "boundary", language),
     "",
+    pick(intro, "full_register", language),
+    "",
   ];
 
-  for (const action of governance.actions) {
+  const rows = governance.actions.map((action) => {
     const project = projects.get(action.id);
     if (!project) throw new Error(`${action.id} has governance but no entry in the action registry`);
     if (project.phase !== action.phase) {
       throw new Error(`${action.id} is ${project.phase} in the action registry and ${action.phase} here`);
     }
-    lines.push(`**${action.id} ${pick(project, "name", language)}** — ${pick(labels, "phase", language)}: ${action.phase}`, "");
-    lines.push(...markdownTable(
-      [pick(labels, "name", language), pick(labels, "id", language)],
-      [
-        [pick(labels, "operator_role", language), pick(action, "operator_role", language)],
-        [pick(labels, "maintainer", language), pick(action, "maintainer", language)],
-        [pick(labels, "beneficiary", language), pick(action, "beneficiary", language)],
-        [pick(labels, "worst_affected", language), pick(action, "worst_affected", language)],
-        [pick(labels, "metric", language), pick(action, "metric", language)],
-        [pick(labels, "proposed_target", language), pick(action, "proposed_target", language)],
-        [
-          pick(labels, "authorized_target", language),
-          action.authorized_target === null
-            ? pick(labels, "null_target", language)
-            : action.authorized_target,
-        ],
-        [pick(labels, "stop_trigger", language), pick(action, "stop_trigger", language)],
-        [pick(labels, "stop_authority", language), pick(action, "stop_authority", language)],
-        [pick(labels, "rollback", language), pick(action, "rollback", language)],
-        [pick(labels, "physical_restoration", language), pick(action, "physical_restoration", language)],
-        [pick(labels, "residual_liability", language), pick(action, "residual_liability", language)],
-        [pick(labels, "non_digital_fallback", language), pick(action, "non_digital_fallback", language)],
-        [
-          pick(labels, "authorization_state", language),
-          action.authorization_state === "not_authorized"
-            ? pick(labels, "not_authorized", language)
-            : action.authorization_state,
-        ],
-        [
-          pick(labels, "funding_state", language),
-          action.funding_state === "unfunded" ? pick(labels, "unfunded", language) : action.funding_state,
-        ],
-        [pick(labels, "blocked_by", language), action.blocked_by.join(" ")],
-      ],
-    ), "");
-  }
+    // Narrowing the table must not narrow the contract, so the full twelve are demanded of
+    // the record here, at the point where four of them are taken out of it.
+    for (const field of GOVERNANCE_FIELDS) {
+      const value = action[`${field}_${language}`];
+      if (typeof value !== "string" || value.trim() === "") {
+        throw new Error(`${action.id} registers no ${field}_${language}`);
+      }
+    }
+    // A row naming an action with no unresolved gate would read as a schedule rather than
+    // as a blocked proposal, which is the one thing this register exists to prevent.
+    if (!Array.isArray(action.blocked_by) || action.blocked_by.length === 0) {
+      throw new Error(`${action.id} is published with no blocking gate`);
+    }
+    if (action.authorized_target !== null) {
+      throw new Error(`${action.id} is published with a non-null authorized_target`);
+    }
+    return [
+      `${action.id} ${pick(project, "name", language)}`,
+      action.phase,
+      ...GOVERNANCE_ROW_FIELDS.map((field) => pick(action, field, language)),
+      action.blocked_by.join(" "),
+    ];
+  });
+
+  lines.push(...markdownTable(
+    [
+      pick(labels, "col_action", language),
+      pick(labels, "phase", language),
+      ...GOVERNANCE_ROW_FIELDS.map((field) => pick(labels, field, language)),
+      pick(labels, "blocked_by", language),
+    ],
+    rows,
+  ), "");
   while (lines.length > 0 && lines[lines.length - 1] === "") lines.pop();
   return lines;
 }
@@ -681,6 +757,7 @@ function main(argv) {
     const frontMatter = applyFrontMatterTitle(title.text, source.document_title, target.language);
 
     const areaLines = areaRegisterBlock(source, design, target.language);
+    const synergyLines = regionalSynergyBlock(source, target.language);
     const governanceLines = governanceBlock(source, governance, target.language);
     let output = upsertSubsection(
       frontMatter.text,
@@ -688,6 +765,13 @@ function main(argv) {
       AREA_REGISTER_ORDER,
       target.language,
       areaLines,
+    );
+    output = upsertSubsection(
+      output,
+      source.section_headings,
+      REGIONAL_SYNERGY_ORDER,
+      target.language,
+      synergyLines,
     );
     output = upsertSubsection(
       output,
@@ -700,7 +784,7 @@ function main(argv) {
     const relative = path.relative(PACKAGE_ROOT, target.file).split(path.sep).join("/");
     // A duplicated marker would mean the previous copy was not found and a second one was
     // appended, which is the one way this upsert can silently stop being idempotent.
-    for (const marker of [areaLines[0], governanceLines[0]]) {
+    for (const marker of [areaLines[0], synergyLines[0], governanceLines[0]]) {
       const occurrences = output.split(`\n${marker}\n`).length - 1;
       if (occurrences !== 1) failures.push(`${relative} carries ${occurrences} copies of "${marker}"`);
     }
@@ -791,10 +875,21 @@ function main(argv) {
       failures.push(`${relative} carries the ${other} Issue #1029 disclosure`);
     }
     for (const action of governance.actions) {
-      for (const field of GOVERNANCE_FIELDS) {
-        if (!body.includes(action[`${field}_${target.language}`])) {
+      // The four printed clauses must be readable in the body. The other eight are checked
+      // against the record inside governanceBlock, so narrowing the table did not turn any
+      // of the twelve into something nothing verifies.
+      for (const field of GOVERNANCE_ROW_FIELDS) {
+        if (!body.includes(cell(action[`${field}_${target.language}`]))) {
           failures.push(`${relative} does not carry ${action.id} ${field}`);
         }
+      }
+      if (!body.includes(action.blocked_by.join(" "))) {
+        failures.push(`${relative} does not carry the blocking gates of ${action.id}`);
+      }
+      // The register is now a summary of a larger record, so the body has to say where that
+      // record is; otherwise the eight unprinted clauses are unreachable from the document.
+      if (!body.includes("visual/assets/action-governance.json")) {
+        failures.push(`${relative} does not name the record that holds the full governance contract`);
       }
     }
     // Text from the other language's column would mean the block was generated from the
@@ -849,4 +944,5 @@ module.exports = {
   PLATE_CONCEPT_LABELS,
   SPATIAL_MODE_LABELS,
   GOVERNANCE_FIELDS,
+  GOVERNANCE_ROW_FIELDS,
 };

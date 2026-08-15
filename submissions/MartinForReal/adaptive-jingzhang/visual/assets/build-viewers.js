@@ -1,16 +1,34 @@
 #!/usr/bin/env node
 "use strict";
 
-// Regenerates the two content sections of the offline viewers from the bilingual record.
+// Regenerates the content sections of the offline viewers from the bilingual record.
 //
-// The viewers were hand-authored in each language, and they drifted: the English one
-// listed a different set of renewal actions than the Chinese one and gave all three key
-// areas roles that no registry record supports. Both sections are now generated, so a
-// wording only ever exists once and neither language can move without the other.
+// The viewers were hand-authored in each language, and they drifted. Two sections drifted
+// loudly: the English one listed a different set of renewal actions than the Chinese one and
+// gave all three key areas roles that no registry record supports. Four more drifted quietly,
+// which is worse, because nothing looked wrong on either page on its own — the Chinese AI
+// section carried ten scenario titles and none of the six clauses the English one spelled
+// out; the Chinese review gates were merged into two cards against four in English; the
+// source and assumption lists were different lengths; and the Chinese source list was written
+// in English. A seventh section did not exist at all in either language: the taskbook asks
+// how this proposal relates to five named counterparts and neither viewer answered. An eighth
+// was the last hand-authored table on either page, and it drifted in all three ways at once:
+// three rows in Chinese against four in English, Chinese cells still carrying untranslated
+// English headings, and a coverage claim that all mandatory standards were addressed when the
+// standard matrix marks two of eleven as data gaps.
 //
-// Only the `areas` and `projects` sections are generated. The stylesheet, navigation,
-// hero, and every other section stay exactly as authored — this script replaces two
-// elements, it does not rebuild the page.
+// All eight are now generated, so a wording only ever exists once and neither language can
+// move without the other. Two further paragraphs are stamped in place from a record — the
+// hero lede and the zero-jitter comparison in the metrics section — because their wording has
+// to track a record rather than an author. The stylesheet, navigation, and every other
+// section stay exactly as authored: this script replaces eight elements and fills two
+// paragraphs, it does not rebuild the page.
+//
+// The regional section prints only what its record holds, which is only what the taskbook
+// supports: a potential relationship, the evidence still required, the review level that
+// would receive it, and the limit of the claim. There is no source in this package for an
+// agreement, a route, an investment or a commitment involving any of the five, so the builder
+// has no column to put one in.
 //
 // Each key-area card now also carries the five plates of its area: the language-matched
 // raster, an anchor a reviewer can link to, a caption written from the design record, the
@@ -30,6 +48,13 @@ const PACKAGE_ROOT = path.resolve(ASSETS, "..", "..");
 const SOURCE = path.join(ASSETS, "regeneration-source.json");
 const PLATES = path.join(ASSETS, "area-plates.json");
 const DESIGN = path.join(ASSETS, "key-area-design.json");
+const ABLATION = path.join(ASSETS, "physarum-zero-jitter-ablation.json");
+
+// The three registries the task-coverage table counts. They are read rather than summarised
+// so that the published counts cannot drift from the records they claim to describe.
+const COMPLIANCE = path.join(PACKAGE_ROOT, "compliance_matrix.json");
+const STANDARDS = path.join(PACKAGE_ROOT, "standard_matrix.json");
+const DEPTH = path.join(PACKAGE_ROOT, "design_depth_matrix.json");
 
 const TARGETS = [
   { language: "zh", file: path.join(PACKAGE_ROOT, "visual", "index.html") },
@@ -68,6 +93,25 @@ function occurrences(haystack, needle) {
   return count;
 }
 
+// The accessible name a `aria-labelledby` pointer actually produces: the text of the element
+// that carries the id, with its markup removed and its entities read back. An id that names no
+// element, or a heading with no text in it, yields `null`, which the caller reports rather than
+// treats as a name. Headings never nest an element of their own tag, so the first matching
+// close tag is the right one.
+function labelledText(html, id) {
+  const found = html.match(new RegExp(`<([a-z][a-z0-9]*)\\b[^>]*\\sid="${id}"[^>]*>([\\s\\S]*?)</\\1>`, "i"));
+  if (!found) return null;
+  const text = found[2]
+    .replace(/<[^>]*>/g, "")
+    .replace(/&quot;/g, "\"")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
+  return text === "" ? null : text;
+}
+
 // Picks the value for one language out of a record that stores both as `<field>_zh` and
 // `<field>_en`. A missing key is an authoring error, not something to paper over with an
 // empty string, because an empty label would silently ship a blank cell.
@@ -101,12 +145,40 @@ function replaceSection(html, id, replacement) {
   return html.slice(0, bounds.start) + replacement + html.slice(bounds.end);
 }
 
-function table(headers, rows) {
-  const head = headers.map((cell) => `<th>${escapeHtml(cell)}</th>`).join("");
+// Every generated table is a review instrument, so it is built for a reader who cannot see
+// its shape. `<thead>` and `<tbody>` separate the header row from the data; `scope` says which
+// cells each header governs; and `aria-labelledby` points at the heading already standing
+// above the table rather than repeating it in a `<caption>`, which a sighted reader would then
+// meet twice. The first cell of every row is the record id, and that is what makes it the row
+// header: a screen reader reaching a stop rule then says which scenario the rule belongs to,
+// instead of reading out a sentence with nothing attached to it.
+//
+// A table is also the part of these pages a narrow viewport cannot honestly reflow. Squeezing
+// an eight-column register into 343 CSS pixels gave columns one to four characters wide and a
+// document tens of thousands of pixels tall, so each table is wrapped in its own scroll
+// container instead: the table keeps a minimum width proportional to its column count, and the
+// container scrolls sideways within the page rather than dragging the page sideways with it.
+// The container is a labelled region and is focusable, because a scroll area only reachable by
+// pointer is one a keyboard reader cannot read the right-hand columns of. It takes the same
+// accessible name as the table it holds, which is the heading already standing above both.
+function table(labelledBy, headers, rows) {
+  const head = headers.map((cell) => `<th scope="col">${escapeHtml(cell)}</th>`).join("");
   const body = rows
-    .map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`)
+    .map(([first, ...rest]) => `<tr><th scope="row">${escapeHtml(first)}</th>`
+      + rest.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")
+      + `</tr>`)
     .join("");
-  return `<table class="table"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
+  return `<div class="table-scroll" role="region" tabindex="0" aria-labelledby="${labelledBy}">`
+    + `<table class="table" style="--table-columns:${headers.length}" aria-labelledby="${labelledBy}">`
+    + `<thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`
+    + `</div>`;
+}
+
+// The id of the heading a table is labelled by. Derived from the record id, because three key
+// areas each carry a components table and a routes table: a fixed pair of ids would be
+// declared six times over, and an `aria-labelledby` with six possible targets names nothing.
+function headingId(kind, subject) {
+  return `${kind}-${String(subject).toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 }
 
 // The anchor a reviewer, a board and the plate registry all use to point at the same
@@ -253,8 +325,16 @@ function areaCard(area, labels, language, context, index) {
       + `<p>${escapeHtml(pick(area, "non_station_note", language))}</p></div>`);
   }
 
-  parts.push(`<h4>${escapeHtml(pick(labels, "components_heading", language))}</h4>`);
+  // A table is named by the heading above it, and three cards printing the same two headings
+  // gave six tables three accessible names between them: a reader moving between tables by name
+  // met "Components" three times with nothing to tell them apart. The area name is therefore
+  // part of the heading itself rather than only of the card it sits in, so the name a table
+  // exposes is the name a reader would use to refer to it.
+  const areaName = pick(area, "name", language);
+  const componentsHeading = headingId("components", area.id);
+  parts.push(`<h4 id="${componentsHeading}">${escapeHtml(`${areaName} · ${pick(labels, "components_heading", language)}`)}</h4>`);
   parts.push(table(
+    componentsHeading,
     [
       pick(labels, "col_id", language),
       pick(labels, "col_name", language),
@@ -271,8 +351,10 @@ function areaCard(area, labels, language, context, index) {
     ]),
   ));
 
-  parts.push(`<h4>${escapeHtml(pick(labels, "routes_heading", language))}</h4>`);
+  const routesHeading = headingId("routes", area.id);
+  parts.push(`<h4 id="${routesHeading}">${escapeHtml(`${areaName} · ${pick(labels, "routes_heading", language)}`)}</h4>`);
   parts.push(table(
+    routesHeading,
     [
       pick(labels, "col_id", language),
       pick(labels, "col_name", language),
@@ -355,13 +437,236 @@ function projectsSection(source, language) {
   const rows = source.projects.map((project) => [project.id, pick(project, "name", language), project.phase]);
   return `<section class="section" id="projects">`
     + `<span class="eyebrow">${escapeHtml(pick(block, "eyebrow", language))}</span>`
-    + `<h2>${escapeHtml(pick(block, "heading", language))}</h2>`
+    + `<h2 id="projects-heading">${escapeHtml(pick(block, "heading", language))}</h2>`
     + `<div>${pills}</div>`
     + `<p class="intro">${escapeHtml(pick(block, "intro", language))}</p>`
     + table(
+      "projects-heading",
       [pick(labels, "col_id", language), pick(labels, "col_name", language), pick(labels, "col_phase", language)],
       rows,
     )
+    + `</section>`;
+}
+
+// The ten AI scenarios, as a matrix rather than ten paragraphs.
+//
+// The six clauses are the whole point of a scenario record: a scenario with no named operator
+// or no stop rule is a proposal to deploy something with nobody answerable for it. The Chinese
+// viewer used to print the ten titles and none of the six, so a Chinese reader met ten
+// promises and no contract. Printing them as columns rather than as a sentence also makes the
+// gap visible down a column: a reviewer scanning "stop rule" sees at once whether all ten have
+// one, which is a question no amount of prose answers.
+//
+// The dark cards above the table are kept as an index of the ten, exactly as the actions
+// section keeps its pills above its table, and carry only the id and the title they share
+// with the row below.
+function aiSection(source, language) {
+  const block = source.ui_labels.ai;
+  const sections = source.viewer_sections;
+  const fields = sections.scenario_fields;
+  const cards = sections.scenarios
+    .map((scenario) => `<div class="scenario"><b>${escapeHtml(scenario.id)}</b>`
+      + `${escapeHtml(pick(scenario, "name", language))}</div>`)
+    .join("");
+  const gates = sections.non_tradeable_gates;
+  return `<section class="section" id="ai">`
+    + `<span class="eyebrow">${escapeHtml(pick(block, "eyebrow", language))}</span>`
+    + `<h2 id="ai-heading">${escapeHtml(pick(block, "heading", language))}</h2>`
+    + `<div class="scenario-grid">${cards}</div>`
+    + `<p class="intro">${escapeHtml(pick(block, "intro", language))}</p>`
+    + table(
+      "ai-heading",
+      [
+        pick(block, "col_id", language),
+        pick(block, "col_scenario", language),
+        ...fields.map((field) => pick(sections.scenario_field_labels, field, language)),
+      ],
+      sections.scenarios.map((scenario) => [
+        scenario.id,
+        pick(scenario, "name", language),
+        ...fields.map((field) => pick(scenario, field, language)),
+      ]),
+    )
+    + `<div class="gate"><strong>${escapeHtml(pick(block, "gate_heading", language))}</strong>`
+    + `<p>${escapeHtml(pick(gates, "list", language))}</p>`
+    + `<p>${escapeHtml(pick(gates, "rule", language))}</p></div>`
+    + `</section>`;
+}
+
+// The four review gates. They were four named cards in English and two merged cards labelled
+// `1–2` and `3–4` in Chinese, which is not a translation: a Chinese reader could not cite a
+// gate by name because the page had given none. Both now print the same four ids.
+function checkSection(source, language) {
+  const block = source.ui_labels.check;
+  const cards = source.viewer_sections.review_gates
+    .map((gate) => `<div class="card"><h3>${escapeHtml(`${gate.id} ${pick(gate, "name", language)}`)}</h3>`
+      + `<p>${escapeHtml(pick(gate, "definition", language))}</p></div>`)
+    .join("");
+  return `<section class="section" id="check">`
+    + `<span class="eyebrow">${escapeHtml(pick(block, "eyebrow", language))}</span>`
+    + `<h2>${escapeHtml(pick(block, "heading", language))}</h2>`
+    + `<div class="grid-2">${cards}</div>`
+    + `<p class="intro">${escapeHtml(pick(block, "intro", language))}</p>`
+    + `</section>`;
+}
+
+// The six source families, each with the claim it can support.
+//
+// The Chinese list was six lines of English naming authors and issue numbers and saying
+// nothing about what any of them proves. A citation with no statement of what it supports is
+// an invitation to read it as supporting whatever stands next to it, so the second column is
+// the load-bearing one and neither language may ship the list without it.
+function sourcesSection(source, language) {
+  const block = source.ui_labels.sources;
+  return `<section class="section" id="sources">`
+    + `<span class="eyebrow">${escapeHtml(pick(block, "eyebrow", language))}</span>`
+    + `<h2 id="sources-heading">${escapeHtml(pick(block, "heading", language))}</h2>`
+    + `<p class="intro">${escapeHtml(pick(block, "intro", language))}</p>`
+    + table(
+      "sources-heading",
+      [
+        pick(block, "col_id", language),
+        pick(block, "col_family", language),
+        pick(block, "col_supports", language),
+      ],
+      source.viewer_sections.source_families.map((family) => [
+        family.id,
+        pick(family, "name", language),
+        pick(family, "supports", language),
+      ]),
+    )
+    + `</section>`;
+}
+
+// The six assumptions. Numbered so that each can be refuted on its own — an unnumbered bullet
+// list can only be agreed with or dismissed whole. The two languages carried four and six.
+function assumptionsSection(source, language) {
+  const block = source.ui_labels.assumptions;
+  return `<section class="section" id="assumptions">`
+    + `<span class="eyebrow">${escapeHtml(pick(block, "eyebrow", language))}</span>`
+    + `<h2 id="assumptions-heading">${escapeHtml(pick(block, "heading", language))}</h2>`
+    + `<p class="intro">${escapeHtml(pick(block, "intro", language))}</p>`
+    + table(
+      "assumptions-heading",
+      [pick(block, "col_id", language), pick(block, "col_limit", language)],
+      source.viewer_sections.assumption_limits.map((entry) => [entry.id, pick(entry, "limit", language)]),
+    )
+    + `</section>`;
+}
+
+// The four counts the task-coverage table publishes, each recomputed from the registry it
+// names. A number retyped into a page can be wrong for years without anything failing, and
+// this table had exactly that defect: it told both readers that every mandatory standard was
+// addressed while the standard matrix marks two of eleven as data gaps.
+function taskCounts(ablation) {
+  const requirements = readJson(COMPLIANCE).requirements ?? [];
+  const standards = readJson(STANDARDS).standards ?? [];
+  const depth = readJson(DEPTH).items ?? [];
+  const edges = ablation.edges ?? [];
+  if (requirements.length === 0 || standards.length === 0 || depth.length === 0 || edges.length === 0) {
+    throw new Error("a record the task-coverage table counts is empty");
+  }
+  const counts = {
+    numbered_requirements: requirements.filter((record) => !record.requirement_id.startsWith("agent.")).length,
+    agent_tasks: requirements.filter((record) => record.requirement_id.startsWith("agent.")).length,
+    standards_total: standards.length,
+    standards_addressed: standards.filter((record) => record.review_status === "addressed").length,
+    standards_data_gap: standards.filter((record) => record.review_status === "data_gap").length,
+    depth_items: depth.length,
+    depth_limited: depth.filter((record) => (record.completeness_limited_by ?? []).length > 0).length,
+    ablation_seeds: ablation.seeds,
+    ablation_edges: edges.length,
+  };
+  // Every standard is either addressed or a declared gap. If a third review_status ever
+  // appears, "of N standards, A are addressed and G are data gaps" stops being a complete
+  // account of the matrix, and a partial account read as a complete one is the overclaim this
+  // table is being rewritten to remove.
+  if (counts.standards_addressed + counts.standards_data_gap !== counts.standards_total) {
+    throw new Error("standard_matrix.json carries a review_status the task-coverage wording does not account for");
+  }
+  for (const [name, value] of Object.entries(counts)) {
+    if (!Number.isInteger(value)) throw new Error(`the recomputed task-coverage count ${name} is not an integer`);
+  }
+  return counts;
+}
+
+// Fills `{0}`, `{1}` … from the row's own list of count names, so a record cannot quietly
+// reorder the numbers it substitutes, and a placeholder with no count behind it stops the
+// build rather than reaching a reader as literal braces.
+function fillCounts(template, names, counts) {
+  if (!Array.isArray(names)) throw new Error("a task-coverage row declares no counts list");
+  return template.replace(/\{(\d+)\}/g, (unused, index) => {
+    const name = names[Number(index)];
+    if (name === undefined) throw new Error(`a task-coverage template uses {${index}} but declares no count for it`);
+    if (!(name in counts)) throw new Error(`no recomputed task-coverage count is named ${name}`);
+    return String(counts[name]);
+  });
+}
+
+// The task-coverage table. Its counts come from `taskCounts`, its wording from the record, and
+// its structure from the same `table` helper as every other generated table, which is what
+// closes the last three parity gaps on these pages at once: the Chinese table had three rows to
+// the English four, left four English fragments sitting in Chinese cells, and carried none of
+// the header semantics the generated tables give a reader who cannot see the shape.
+function tasksSection(source, language, counts) {
+  const block = source.ui_labels.tasks;
+  const coverage = source.viewer_sections.task_coverage;
+  return `<section class="section" id="tasks">`
+    + `<span class="eyebrow">${escapeHtml(pick(block, "eyebrow", language))}</span>`
+    + `<h2 id="tasks-heading">${escapeHtml(pick(block, "heading", language))}</h2>`
+    + `<p class="intro">${escapeHtml(pick(block, "intro", language))}</p>`
+    + table(
+      "tasks-heading",
+      [
+        pick(block, "col_object", language),
+        pick(block, "col_coverage", language),
+        pick(block, "col_evidence", language),
+      ],
+      coverage.rows.map((row) => [
+        `${row.id} ${pick(row, "name", language)}`,
+        fillCounts(pick(row, "coverage", language), row.counts, counts),
+        pick(row, "evidence", language),
+      ]),
+    )
+    + `</section>`;
+}
+
+// The regional-synergy matrix the taskbook asks for and neither viewer had.
+//
+// Its four columns are chosen to be answerable from the taskbook alone. The taskbook names
+// five counterparts and asks about innovation synergy; it supplies no agreement, no route, no
+// investment, no commitment and no geography, and this package holds nothing else about any
+// of the five. So each row states a relationship this proposal could offer, the evidence that
+// would have to arrive before the relationship is more than an offer, the review route that
+// would first have to be confirmed before any body received that evidence, and the limit of
+// what the row claims. Naming a receiving authority outright would be a claim about
+// institutional arrangements this package has not seen, so the column is modal throughout.
+// The record's own provenance and the fact that the English names are working translations of
+// Chinese-only taskbook entries are printed under the table rather than left to a reader to
+// assume.
+function regionalSection(source, language) {
+  const block = source.ui_labels.regional;
+  const synergy = source.regional_synergy;
+  return `<section class="section" id="regional">`
+    + `<span class="eyebrow">${escapeHtml(pick(block, "eyebrow", language))}</span>`
+    + `<h2 id="regional-heading">${escapeHtml(pick(block, "heading", language))}</h2>`
+    + `<p class="intro">${escapeHtml(pick(block, "intro", language))}</p>`
+    + table(
+      "regional-heading",
+      [
+        pick(block, "col_partner", language),
+        pick(block, "col_relationship", language),
+        pick(block, "col_evidence", language),
+        pick(block, "col_review", language),
+        pick(block, "col_limit", language),
+      ],
+      synergy.partners.map((partner) => [
+        `${partner.id} ${pick(partner, "name", language)}`,
+        ...synergy.columns.map((column) => pick(partner, column, language)),
+      ]),
+    )
+    + `<p class="status">${escapeHtml(`${synergy.source_ref} · ${synergy.evidence_state}`)}</p>`
+    + `<p>${escapeHtml(pick(synergy, "translation_note", language))}</p>`
     + `</section>`;
 }
 
@@ -380,10 +685,76 @@ function stampHero(html, hero, language) {
   return { html: html.replace(pattern, lede), changed: true };
 }
 
+// The viewers published the persistence and disagreement thresholds and the 64-run
+// denominator, but nothing about what happens when the declared jitter is removed. A reader
+// of the offline package therefore saw the result without the comparison that qualifies it,
+// while the proposal carried both. This paragraph closes that gap.
+//
+// Every number is recomputed from the twenty-four edge records rather than copied from the
+// summary the record also carries, because a summary and its own edges can disagree and the
+// reader-facing sentence should not be the last place that shows up. The two closing
+// sentences are the record's own `not_a_finding` wording, quoted rather than paraphrased.
+function zeroJitterSentence(ablation, language) {
+  const edges = ablation.edges ?? [];
+  if (edges.length === 0) throw new Error("the ablation record carries no edges");
+  const changed = edges.filter((edge) => edge.primary_status !== edge.zero_jitter_status).length;
+  const primaryPersistent = edges.filter((edge) => edge.primary_status === "persistent_candidate").length;
+  const zeroPersistent = edges.filter((edge) => edge.zero_jitter_status === "persistent_candidate").length;
+  const zeroBand = edges.filter((edge) => edge.zero_jitter_status === "disagreement_candidate").length;
+  const largest = edges.reduce((most, edge) => Math.max(most, Math.abs(edge.delta)), 0);
+  const seeds = ablation.seeds;
+  if (!Number.isInteger(seeds)) throw new Error("the ablation record declares no seed count");
+  const graph = ablation.summary?.zero_jitter_persistence_graph;
+  if (typeof graph !== "string" || graph === "") {
+    throw new Error("the ablation record does not state what the zero-jitter persistence graph is");
+  }
+  // A graph that stopped being connected is a different finding and must not be published in
+  // wording written for the connected case.
+  const connected = graph === "connected";
+  const note = ablation[`not_a_finding_${language}`];
+  if (typeof note !== "string" || note === "") {
+    throw new Error(`the ablation record has no not_a_finding_${language}`);
+  }
+  if (language === "zh") {
+    return `零抖动对照：把每条边的 jitter 置零后重跑同一组 ${seeds} 个种子，`
+      + `${edges.length} 条候选边中有 ${changed} 条改变状态，最大频率变化 ${largest}；`
+      + `持续边由 ${primaryPersistent} 条变为 ${zeroPersistent} 条，分歧带变为 ${zeroBand} 条，`
+      + `${connected ? "持续图仍然连通" : `持续图为 ${graph}`}。`
+      + `分歧带是这套判据在带抖动条件下的产物，不是被观测到的城市争议；jitter 是声明的扰动项，不是测量误差。`
+      + note;
+  }
+  return `Zero-jitter comparison: rerunning the same ${seeds} seeds with the per-edge jitter set to zero `
+    + `changes the status of ${changed} of the ${edges.length} candidate edges, with a largest frequency `
+    + `change of ${largest}; persistent edges rise from ${primaryPersistent} to ${zeroPersistent}, the `
+    + `disagreement band falls to ${zeroBand} edges, and `
+    + `${connected ? "the persistence graph stays connected" : `the persistence graph is ${graph}`}. `
+    + `The disagreement band is a product of this rule set under jitter, not an observed dispute in the `
+    + `city, and the jitter is a declared perturbation rather than measurement error. `
+    + note;
+}
+
+// Fills the one paragraph the metrics section reserves for the comparison. The slot is
+// authored in the page and the wording is written here, the same division `stampHero` uses:
+// a missing slot is a fault in the page and stops the build, rather than being silently
+// created somewhere this script guesses at.
+function stampZeroJitter(html, sentence, language) {
+  const pattern = /<p class="intro" id="zero-jitter">[^]*?<\/p>/;
+  const found = html.match(pattern);
+  if (!found) throw new Error(`the ${language} viewer has no <p class="intro" id="zero-jitter"> to stamp`);
+  const filled = `<p class="intro" id="zero-jitter">${escapeHtml(sentence)}</p>`;
+  if (found[0] === filled) return { html, changed: false };
+  return { html: html.replace(pattern, filled), changed: true };
+}
+
 function main(argv) {
   const checkOnly = argv.includes("--check");
   const source = readJson(SOURCE);
   const design = readJson(DESIGN);
+  // Written by the ablation builder, which runs before this one. The comparison is required
+  // rather than optional: a viewer that publishes the persistence thresholds without it shows
+  // the result and withholds the test of it.
+  if (!fs.existsSync(ABLATION)) throw new Error(`${ABLATION} does not exist; run build-ablation.js first`);
+  const ablation = readJson(ABLATION);
   // The plate registry is produced by the plate builder, which runs before this one. It is
   // the only place the published title, alt text and long description of a drawing exist, so
   // it is required rather than optional: without it this script would have to describe
@@ -396,6 +767,9 @@ function main(argv) {
     records: new Map((registry.artifacts ?? []).map((record) => [record.artifact_id, record])),
   };
   const artifacts = contract.expectedArtifacts();
+  // Recomputed once, before either page is built, because both pages must publish the same
+  // counts and a per-page recount would let them disagree.
+  const counts = taskCounts(ablation);
 
   const failures = [];
   const results = [];
@@ -404,8 +778,24 @@ function main(argv) {
   for (const target of TARGETS) {
     const original = fs.readFileSync(target.file, "utf8");
     const hero = stampHero(original, source.viewer_hero, target.language);
-    let output = replaceSection(hero.html, "areas", areasSection(source, target.language, context));
-    output = replaceSection(output, "projects", projectsSection(source, target.language));
+    const sentence = zeroJitterSentence(ablation, target.language);
+    const comparison = stampZeroJitter(hero.html, sentence, target.language);
+    // Built first and spliced second, so the generated markup is also available on its own.
+    // Every table on these pages is now emitted here, so the structural checks below cover all
+    // of them rather than all but one.
+    const generated = [
+      ["areas", areasSection(source, target.language, context)],
+      ["projects", projectsSection(source, target.language)],
+      ["ai", aiSection(source, target.language)],
+      ["check", checkSection(source, target.language)],
+      ["tasks", tasksSection(source, target.language, counts)],
+      ["regional", regionalSection(source, target.language)],
+      ["sources", sourcesSection(source, target.language)],
+      ["assumptions", assumptionsSection(source, target.language)],
+    ];
+    let output = comparison.html;
+    for (const [id, markup] of generated) output = replaceSection(output, id, markup);
+    const generatedMarkup = generated.map(([, markup]) => markup).join("");
     const changed = output !== original;
     if (changed) changedFiles += 1;
     if (changed && !checkOnly) fs.writeFileSync(target.file, output, "utf8");
@@ -430,8 +820,147 @@ function main(argv) {
         failures.push(`${relative} carries the ${other} task text for ${area.id}`);
       }
     }
+
+    // The six sections generated from `viewer_sections` and `regional_synergy` have to carry
+    // every registered id and, for the records whose whole purpose is the clause, the clause
+    // itself. Containment is enough here only because the ids are unique tokens: a scenario
+    // missing from one language and present in the other is the exact fault these sections
+    // shipped with, and the id is what makes that visible.
+    const sections = source.viewer_sections;
+    for (const scenario of sections.scenarios) {
+      if (!output.includes(scenario.id)) failures.push(`${relative} does not list scenario ${scenario.id}`);
+      for (const field of sections.scenario_fields) {
+        if (!output.includes(escapeHtml(pick(scenario, field, target.language)))) {
+          failures.push(`${relative} does not carry the ${field} of ${scenario.id}`);
+        }
+      }
+      // A stop rule printed in the wrong language is a stop rule the reader of this page
+      // cannot act on, and it is what a copy-paste between the two viewers looks like.
+      if (output.includes(escapeHtml(scenario[`stop_rule_${other}`]))) {
+        failures.push(`${relative} carries the ${other} stop rule of ${scenario.id}`);
+      }
+    }
+    for (const [records, what] of [
+      [sections.review_gates, "review gate"],
+      [sections.source_families, "source family"],
+      [sections.assumption_limits, "assumption"],
+      [sections.task_coverage.rows, "task-coverage row"],
+      [source.regional_synergy.partners, "synergy counterpart"],
+    ]) {
+      for (const record of records) {
+        if (!output.includes(record.id)) failures.push(`${relative} does not list ${what} ${record.id}`);
+      }
+    }
+    for (const family of sections.source_families) {
+      if (!output.includes(escapeHtml(pick(family, "supports", target.language)))) {
+        failures.push(`${relative} lists ${family.id} without saying what it supports`);
+      }
+    }
+    for (const entry of sections.assumption_limits) {
+      if (!output.includes(escapeHtml(pick(entry, "limit", target.language)))) {
+        failures.push(`${relative} does not carry the limit of ${entry.id}`);
+      }
+    }
+    // A coverage cell is the one place this package tells a reviewer how much of the brief it
+    // answers, so it is checked with the counts already substituted: the sentence on the page
+    // has to be the sentence the registries produce, not the template it was written from.
+    for (const row of sections.task_coverage.rows) {
+      for (const column of sections.task_coverage.columns) {
+        const filled = fillCounts(pick(row, column, target.language), row.counts, counts);
+        if (!output.includes(escapeHtml(filled))) {
+          failures.push(`${relative} does not carry the recomputed ${column} of ${row.id}`);
+        }
+      }
+      if (output.includes(escapeHtml(fillCounts(row[`coverage_${other}`], row.counts, counts)))) {
+        failures.push(`${relative} carries the ${other} coverage text of ${row.id}`);
+      }
+    }
+    // Each synergy row may say only these four things, and it has to say all four: a
+    // counterpart named with no claim limit next to it reads as a relationship that exists.
+    for (const partner of source.regional_synergy.partners) {
+      for (const column of source.regional_synergy.columns) {
+        if (!output.includes(escapeHtml(pick(partner, column, target.language)))) {
+          failures.push(`${relative} does not carry the ${column} of ${partner.id}`);
+        }
+      }
+    }
+    if (!output.includes(escapeHtml(source.regional_synergy.source_ref))) {
+      failures.push(`${relative} publishes the synergy matrix without naming what it is drawn from`);
+    }
+
+    // A table labelled by a heading the page does not declare has no accessible name at all,
+    // and one labelled by an id two elements share has an ambiguous one, so the pointer is
+    // resolved against the finished page rather than assumed. Counting the structural parts
+    // rather than looking for them catches the case a containment test cannot: one table built
+    // the old way among twelve.
+    //
+    // The opening markup is matched whole, so a table that skipped the scroll container, lost
+    // its column count or disagreed with its container about which heading names it is not a
+    // table this loop can see — and the count comparison below is what turns that invisibility
+    // into a failure rather than a smaller number of tables checked.
+    const generatedTables = [...generatedMarkup.matchAll(
+      /<div class="table-scroll" role="region" tabindex="0" aria-labelledby="([^"]+)">\s*<table class="table" style="--table-columns:(\d+)" aria-labelledby="([^"]+)">([\s\S]*?)<\/table>/g,
+    )];
+    const tables = occurrences(generatedMarkup, `<table class="table"`);
+    if (generatedTables.length !== tables) {
+      failures.push(`${relative} generates ${tables} tables, ${generatedTables.length} of them inside a labelled `
+        + `scroll region with a declared column count`);
+    }
+    for (const [, region, columns, target, inner] of generatedTables) {
+      if (region !== target) {
+        failures.push(`${relative} puts a table labelled by ${target} in a region labelled by ${region}`);
+      }
+      const declared = occurrences(output, `id="${target}"`);
+      if (declared !== 1) {
+        failures.push(`${relative} labels a table by ${target}, which ${declared} elements declare`);
+      }
+      const headers = occurrences(inner, `<th scope="col">`);
+      if (Number(columns) !== headers) {
+        failures.push(`${relative} declares ${columns} columns for ${target} and prints ${headers} of them`);
+      }
+    }
+    // A unique id is not a unique name. Six key-area tables labelled by six distinct ids still
+    // announced themselves as "Components" three times and "Proposed step-free chains" three
+    // times, which leaves a reader listing the tables of the page unable to tell which area
+    // each belongs to. Every generated table on the page must therefore resolve to a name no
+    // other generated table on that page resolves to.
+    const names = new Map();
+    for (const [, , , target] of generatedTables) {
+      const name = labelledText(output, target);
+      if (name === null) {
+        failures.push(`${relative} labels a table by ${target}, which carries no text to name it with`);
+        continue;
+      }
+      names.set(name, [...(names.get(name) ?? []), target]);
+    }
+    for (const [name, pointers] of names) {
+      if (pointers.length > 1) {
+        failures.push(`${relative} gives ${pointers.length} tables the same accessible name `
+          + `${JSON.stringify(name)} (${pointers.join(", ")})`);
+      }
+    }
+    for (const [needle, what] of [
+      ["<thead>", "a header row group"],
+      ["<tbody>", "a body row group"],
+    ]) {
+      const found = occurrences(generatedMarkup, needle);
+      if (found !== tables) {
+        failures.push(`${relative} generates ${tables} tables but ${found} with ${what}`);
+      }
+    }
+    const unscoped = occurrences(generatedMarkup, "<th>");
+    if (unscoped !== 0) failures.push(`${relative} generates ${unscoped} header cells with no scope`);
     if (!output.includes(escapeHtml(source.viewer_hero[`method_${target.language}`]))) {
       failures.push(`${relative} does not carry the hero method sentence from the bilingual record`);
+    }
+    // The comparison must survive section replacement, and it must be this page's own
+    // language: a Chinese reader sent an English ablation sentence is not being told the
+    // result, only shown it.
+    if (!output.includes(escapeHtml(sentence))) {
+      failures.push(`${relative} does not carry the zero-jitter comparison written from the ablation record`);
+    }
+    if (output.includes(escapeHtml(zeroJitterSentence(ablation, target.language === "zh" ? "en" : "zh")))) {
+      failures.push(`${relative} carries the other language's zero-jitter comparison`);
     }
     // Every plate of this language must be reachable and shown here, and no raster of the
     // other language may appear: the Chinese path is not a substring of the English one, so
@@ -487,7 +1016,16 @@ function main(argv) {
     if (output.includes(escapeHtml(disclosures[otherLanguage]))) {
       failures.push(`${relative} carries the ${otherLanguage} Issue #1029 disclosure`);
     }
-    results.push({ file: relative, language: target.language, changed, hero_stamped: hero.changed });
+    results.push({
+      file: relative,
+      language: target.language,
+      changed,
+      hero_stamped: hero.changed,
+      zero_jitter_stamped: comparison.changed,
+      generated_tables: tables,
+      distinct_table_names: names.size,
+    });
+
   }
 
   const report = {
@@ -497,6 +1035,13 @@ function main(argv) {
     changed_files: changedFiles,
     areas: source.areas.length,
     projects: source.projects.length,
+    scenarios: source.viewer_sections.scenarios.length,
+    review_gates: source.viewer_sections.review_gates.length,
+    source_families: source.viewer_sections.source_families.length,
+    assumptions: source.viewer_sections.assumption_limits.length,
+    task_coverage_rows: source.viewer_sections.task_coverage.rows.length,
+    task_coverage_counts: counts,
+    synergy_counterparts: source.regional_synergy.partners.length,
     plates_shown: artifacts.length / contract.LANGUAGES.length,
     registry_titles_available: context.records.size,
     failures,
@@ -523,9 +1068,17 @@ if (require.main === module) {
 module.exports = {
   findSection,
   replaceSection,
+  headingId,
   areasSection,
   projectsSection,
+  aiSection,
+  checkSection,
+  sourcesSection,
+  assumptionsSection,
+  regionalSection,
   plateAnchor,
   plateDescriptionId,
   plateFigures,
+  zeroJitterSentence,
+  stampZeroJitter,
 };

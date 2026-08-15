@@ -191,6 +191,7 @@
     - 保持原名并已落地的 `7` 条：`visual/assets/build-proposals.js`、`visual/assets/build-viewers.js`、`visual/assets/build-drawings.js`、`visual/assets/run-contract-tests.js`、`visual/assets/test-clean-build.js`、`visual/assets/test-reproducer-tamper.js`、`visual/assets/noto-sans-sc-subset.js`。
     - 实到的 `2` 条注册表：`visual/assets/gate-registry.json`（`human_design_gate` 恰为 `G1`–`G7`，`machine_self_check_gate`、`human_authorization_gate`、`external_evidence_gate` 四个 namespace 分列，`external_gates` 实测 `17`、反向引用 `59` 条）、`visual/assets/physarum-zero-jitter-ablation.json`。
     - manifest 验收未成立：`56` 个条目均未登记进 `manifest.json` 的 `files`，故 `role`／`role_detail` 条件测试无从执行。本轮不手改 manifest；所需的 inventory 补充在交接报告中按仓库权威逐条列出，由官方 refresh 一次性落地。
+    - **v0.4 更正 — 上一条已不成立。** v0.4 复核实测：`40` 条实到条目全部登记在 `manifest.json` 的 `files` 中——`30` 张重点区图版为 `proposal_figure`，`visual/assets/gate-registry.json` 与 `visual/assets/physarum-zero-jitter-ablation.json` 为 `evidence_data`，`build-proposals.js`／`build-viewers.js`／`build-drawings.js`／`run-contract-tests.js`／`test-clean-build.js`／`test-reproducer-tamper.js` 为 `verification_script`，`noto-sans-sc-subset.js` 为 `asset`，`changelog.md` 为 `changelog`。四十条无一为 `other`，因此全部正确省略 `role_detail`，`role`／`role_detail` 条件测试可以执行且通过；全包实测声明 `111`、在盘 `111`、未声明 `0`、缺失 `0`。本项仍**不**勾选：未成立的是 `56/56` 这个数量验收本身与被取代的 `16` 条具名路径，不是 manifest 登记。详见 v0.4「一条不再成立的账本判断」。
 
 - [x] **C07 — 对所有高风险展示面执行声明上限与分母修正。**
   - 精确路径：`proposal.md`、`proposal.en.md`、`visual/index.html`、`visual/index.en.html`、`report/proposal.html`、`report/proposal.en.html`、`assets/figures/site-overview.png`、`assets/figures/site-overview.en.png`、`assets/figures/land-use-structure.png`、`assets/figures/land-use-structure.en.png`、`assets/figures/key-areas.png`、`assets/figures/key-areas.en.png`、`assets/figures/mobility-bluegreen.png`、`assets/figures/mobility-bluegreen.en.png`、`assets/figures/metrics-evidence.png`、`assets/figures/metrics-evidence.en.png`、`drawings/a0-boards.pdf`、`drawings/a0-boards.en.pdf`、`drawings/a3-booklet.pdf`、`drawings/a3-booklet.en.pdf`。
@@ -343,3 +344,264 @@
 `C10` 的重新评定条件不变：待官方 `render_proposal_html.py` 运行一次并确认两份 report HTML 与 renderer 输出逐字节相同。`C05` 的具名路径 `visual/assets/participant-test-report.json` 仍不生成，理由见该条目——本轮同样不把某一次运行的结论冻结成包内文件，四份 PDF 的构建哈希也因此不写入本账本，证据以可实跑的套件与确定性清洁构建为准。
 
 17 个 D 类外部门在本轮结束时全部保持开放、无复选框、不可勾选。本轮所做的全部是包内实施与自证，其中没有任何一项构成外部或专业证据，因此没有任何一门被关闭，也不得由包内测试通过推定任何一门可以关闭。
+
+## v0.4 - 2026-08-15
+
+### 把复杂适应系统从名词写成运行规则
+
+本包一直用「复杂适应系统」命名章节和词汇，却没有一处写出它在这份方案里究竟约束什么。评审因此无法判断「适应」是设计机制还是修辞。第 4 章新增 `复杂适应系统运行模型`，把它写成六项可被追问的规则：
+
+- 主体与局部规则：四类已登记角色，加一名独立的停止权持有人；行动由局部规则触发，本包没有全局最优解算子。
+- 状态变量：只取 `P00`–`P11` 已登记的观察指标（`P01` 通行中断次数、`P02` 开放时段履行率与被拒进入、`P06` 接管事件数、`P10` 备件覆盖机型比例），并写明这是隐私约束而非选材偏好——未登记的量不得被观测。
+- 回路成对：任何放大回路都不得在缺少一条由另一方触发的抑制回路的情况下建立。
+- 吸引子：稳定边、样板化、维护债三个，各自写明进入条件。
+- 阈值：区分规则值与可达值，并规定计数失败时默认停止而不是默认继续。
+- 路径依赖与学习：快慢层分开，只有在具名主体已接受相应剩余责任时才可支出不可逆性（`D12` 仍开放）；学习条件挂在 `D16` 上，并明写 `REAL-OPTIONS-NEUFVILLE-2003` 与 `CAS-DYNAMIC-CITIES-2018` 只提供词汇、未被转录，不作为证据使用。
+
+第 12 章新增 `系统性失效模式与停止机制对照`：七行，其中五行有登记条款可依（`P02`、`P03`、`P08`、`P10`、`P11`），第六行是本方案自提的规则、无登记条款，第七行是本包的构建纪律。三类在表前逐一标明，没有把后两类装扮成已登记机制。
+
+### 把零抖动消融讲给读者
+
+零抖动消融记录自 v0.3 起就在包内，但六个正文展示面上「消融」与 `ablation` 各出现 `0` 次：读者看得到持续与分歧的判据，看不到检验这套判据的对照。这等于把结果发布出去、把对结果的检验留在数据里。
+
+第 4 章新增 `黏菌方法的五层阶梯与零抖动对照`。五层从生物先例到规划判断逐层标注本包做了什么、没做什么（例如通量—导度方程在本包中并未实现），随后公布对照结果，且公布的是对自己不利的那一面：jitter 置零后 `24` 条候选边中 `8` 条改变状态，最大频率变化 `0.546875`，持续边由 `6` 条变为 `11` 条，而分歧带变为 `0` 条，持续图仍然连通。分歧带因此是这套判据在带抖动条件下的产物，不是被观测到的城市争议；仍有 `5` 条边（`E01`、`E02`、`E16`、`E17`、`E19`）在两次运行中都不稳定，但没有一条落进 `0.35` 至 `0.70` 区间。
+
+两个 viewer 的核心指标一节同时补上同一结论。做法不是手写：页面里只预留一个 `<p class="intro" id="zero-jitter">` 空位，句子由 `visual/assets/build-viewers.js` 从 `physarum-zero-jitter-ablation.json` 写入，其中每个数都由 `edges[]` 现算而不是抄 `summary`，末尾两句直接引用记录自己的 `not_a_finding_zh`／`not_a_finding_en`。builder 另加两条断言：本语言的句子必须出现在成品里，另一语言的句子不得出现；空位缺失时构建停止，而不是由脚本猜一个位置塞进去。理由与 v0.3 的教训相同——由人重打一遍的数字会漂移。
+
+### 给发布出来的句子补上测试
+
+v0.3 已经写下：真正的缺陷不是那三段话，而是**没有任何测试读发布出来的句子**。上面两节新增的正文若照旧只靠校对，就是把同一个缺陷再犯一次。因此本轮同时新增契约用例 `CAS01`（写在 `visual/assets/run-contract-tests.js` 内）：
+
+- 先从 `edges[]` 现算候选边数、改变状态的边、零抖动持续边与分歧带、最大 `|delta|`，与 `summary` 自身比对；`summary` 与它自己的边不一致时先失败，不必等到句子出错。
+- 再用现算值重建读者看到的句子，按语言逐条在 `proposal.md`、`proposal.en.md` 与两份 report HTML 中查找。
+- 边号双向核对：记录说变了或仍不稳定的边必须被点名，记录说没变的边不得被点名。
+- 行动署名对 `visual/assets/action-governance.json` 核验：被引用的字段必须非空且中英俱全，且该行动的 `authorized_target` 仍为 `null`、`pilot_start_allowed` 不为 `true`——在正文里点名一个行动，不得顺带把它说成已获授权。
+- `D12` 与 `D16` 必须仍是 `open` 且不可勾选。
+- 失效模式表在两份 Markdown 上计数：`7` 行，其中带登记条款的恰为 `5` 行，集合恰为 `P02,P03,P08,P10,P11`。
+
+句子模板以字面量钉在用例里，不从被测文档导入：从被测对象里读期望的测试，只会同意它恰好写着的任何话。
+
+红证据在临时副本上取得，包内文件未被改动；五处变异逐一被点名拒绝，恢复后基线 `PASS`：
+
+- 中文散文把「分歧带变为 0 条」改成「1 条」：`proposal.md does not publish the recomputed statement "分歧带变为 0 条"`。
+- 英文散文把 `6 to 11` 改成 `6 to 12`：`proposal.en.md does not publish the recomputed statement "persistent edges rise from 6 to 11"`。
+- 中文散文删掉 `E05`：`proposal.md omits E05, which the ablation record reports as changed or still unstable`。
+- 记录侧把 `largest_absolute_delta` 改成 `0.5`：`the summary reports a largest absolute delta of 0.5, the edge records give 0.546875`。
+- 删掉失效模式表的维护债一行：同时报出 `6` 行、带登记条款 `4` 行、集合缺 `P10` 三条失败。
+
+用例写在 `run-contract-tests.js` 内而不是新建模块，理由是包边界而非风格：`scripts/refresh_submission_manifest.py` 只对 `manifest.json` 已声明的文件重算哈希，遇到已声明但缺失的文件直接报错，从不发现新文件。新建文件将是未声明文件，并会迫使本轮去改 manifest——而 manifest 刷新属于留给 Codex 的生命周期步骤。
+
+### 生成署名按轮记录
+
+包内此前声明正文由 OpenAI Codex 生成。本轮之后这句话不再完整。`report/copyright_statement.md` 增加一段中英对照，按轮记录：v0.1 至 v0.3 全部由 OpenAI Codex（GPT-5 family）撰写与构建；v0.4 中的三节新增正文、`CAS01`、本账本的 v0.4 记录与该声明段本身由 Anthropic Claude Opus 5 在同一授权任务中撰写；两份 report HTML 由 `scripts/render_proposal_html.py` 生成，生成后只规范行尾。`proposal.md` 与 `proposal.en.md` 第 27 行的生成声明各补一句同样的事实，行数不变。
+
+`agent.json` 本轮未改动。它记录的是本次提交登记的提交方 agent，属于授权与生命周期记录，不是包内编辑对象；登记侧是否需要并列第二个模型，留给 Codex 与参与者判断。
+
+### 一条不再成立的账本判断
+
+`C06` 条目下原有一句断言：`56` 条实到条目全部未登记在 `manifest.json` 中。本轮实测该句不成立：`40` 条实到条目全部已登记，角色分别为 `proposal_figure`（30 张重点区图版）、`evidence_data`、`verification_script`、`asset` 与 `changelog`，四十条无一为 `other`，因此全部正确省略 `role_detail`；全包实测声明 `111`、在盘 `111`、未声明 `0`、缺失 `0`。原句保留并在其下加注更正，不作删除——账本既记录判断，也记录判断被推翻。`C06` 仍不勾选：不成立的是 `56/56` 这个数量验收与被取代的 `16` 条具名路径，不是 manifest 登记本身。
+
+### 本轮验收实测
+
+最后一次改动之后按依赖顺序整体重建，随后全套复核，全部通过：
+
+- `node --check` 全包 JavaScript `29` 个，语法失败 `0`；本轮未新增 `.js` 文件。
+- 九个 builder 写入模式全部退出 `0` 且全部幂等：`changed_files` 全为 `0`，`build-plates` `ok:true`、`notdef_drawn 0`，`build-proposals` `markers_migrated 0`、`residual_unsupported_markers 0`。四份 PDF 本轮字节未变、不在变更路径内，因此未重复 v0.3 的 PyMuPDF 复核，也不据此重复其结论。
+- 九个 builder `--check` 模式全部退出 `0`、`changed_files` 全为 `0`。
+- `run-contract-tests.js`：`PASS`，用例 `44`（内联 `30` + 模块 `14`），失败 `0`。本轮开始时该套件尚未改动，实测为 `43`；v0.3 记下的 `42` 与其所描述的套件不符，此处按实测更正。
+- 复算器：`PASS`，比较 `633`、种子 `64`、`derived_metrics 7`、`mismatch_count 0`。
+- 篡改测试：`PASS`，`15` 项，其中 `14` 项蓄意篡改全部被拒；冻结资产未变、复算器未变。
+- 清洁构建：两次从零构建的文件树 SHA-256 完全一致，文件 `154`，差异项 `0`。此处不写该哈希的字面值：本账本本身在被哈希的文件树内，把值写进来就会立刻改掉它——凡是自指的数都不该被钉在账本里，只能由 `test-clean-build.js` 现场重算。
+- 两个冻结 JSON 的 SHA-256 与账本记录逐字符相等。`geometry/key_areas.geojson` 三个要素 `PROV-KEY-001`／`PROV-KEY-002`／`PROV-KEY-003` 的几何与基线 `a3bf70d` 逐字段相同，属性只增不改、无删除、无改写。
+- 展示面静态复核：两个 viewer 与两份 report HTML 各有 `<h1>` `1` 个；两个 viewer 各 `id` `46` 个、重复 `id` `0`、`aria-describedby` `15` 且悬空目标 `0`、`img` `20` 且缺 `alt` `0`、远程资源引用 `0`。本轮只在既有 `section` 内新增一个 `<p class="intro">`，没有新增标题、导航项或交互控件，因此未重跑 v0.3 的浏览器分辨率复核。
+- 编码与范围：文本文件 `67` 个，含 CR／BOM／NUL 或非 UTF-8 的 `0`；`git diff --check` 退出 `0` 且无输出；变更路径 `10`，包外变更 `0`。
+
+### 本轮终点与未决事项
+
+本节记录本轮实际做到的事，不扩大其范围。
+
+本轮运行了官方渲染脚本 `scripts/render_proposal_html.py` 一次，退出 `0`，两份 report HTML 由它重新生成。**留给 Codex 检查的一点**：该脚本在 Windows 上写出的行尾是 CRLF（`report/proposal.html` `301` 处、`report/proposal.en.html` `302` 处，无孤立 CR），而在盘文件为 LF。本轮的处理是逐字节把 `\r\n` 替换为 `\n`，并已实测：规范化后的字节与规范化前的在盘文件逐字节相同，两份皆为真。也就是说，两者只差行尾约定，正文无一字之差。
+
+`C10` 因此仍不勾选。它的验收含「不得手工编辑生成 HTML」，而行尾规范化是渲染之后对输出所作的字节改动；即便内容等价，也不宜由本轮自行判定其满足。官方渲染证据留给 Codex 在最终序列中取得。
+
+本轮没有运行：`scripts/refresh_submission_manifest.py`、marked self-check、`scripts/participant_preflight.py`、严格验证器与 `finalize_submission.py`。`manifest.json` 与 `self_check.json` 因此仍是有意保留的陈旧生命周期制品，其哈希未经手工修改；`manifest.json` 中仍有 `69` 条目没有 `sha256`，等待官方刷新。本轮没有任何提交、暂存、推送、PR 创建/关闭/更新、fetch、merge 或 rebase，也没有触碰包外任何文件。
+
+`H01` 保持关闭、不可勾选，证据指针不变。`C02`、`C04`、`C07` 保持勾选，本轮未出现任何回归。`C08` 仍不勾选：`33` 条缺失的取回时刻哈希本轮一条也未获得，也不得合成。`C09` 在被批准的规范制品删除之后仍不可历史性验证。`C03`、`C11`、`C12`、`C14` 指向已被合并取代的历史路径，本轮没有为勾选而新建影子文件。
+
+`17` 个 D 类外部门在本轮结束时全部保持开放、无复选框、不可勾选。本轮所做的全部是包内实施与自证，其中没有任何一项构成外部或专业证据，因此没有任何一门被关闭。所有现场行动与试点仍未获授权、未获资金。
+
+## v0.5 - 2026-08-15
+
+本轮是对 v0.4 的更正轮，处理五项定点缺陷，另附带修完在其中一项里被发现的第六处。所有改动都在 `submissions/MartinForReal/adaptive-jingzhang/` 内，未运行任何生命周期步骤。
+
+### 把「分歧边」收回到它实际支持的范围
+
+v0.4 已经在两个 viewer 上写对了这件事，但两份提案正文第 4 章仍留着旧说法：分歧边「表示这条边上发生真实权衡」。这句话把一个算法内部的选择不稳定性说成了城市里的事实——本包没有任何观测支持它，零抖动对照恰恰证明该分歧带随抖动设定而变。
+
+两份正文改写为：分歧边只表示同一条边在同一套已声明的权重与抖动设定下出现选择不稳定性，其用途是据此向人提出审查问题（采用哪一组权重、谁受益、最坏影响落在谁身上、何时停止），而不是被观测到的北京冲突，也不是已确认的真实权衡。零抖动披露仍在同一段内紧随其后，未被缩短。
+
+全包扫描 `67` 个文本文件，`发生真实权衡`、`表示真实权衡`、`exposes a real trade-off`、`reveals a real trade-off`、`real trade-off between` 五种写法在两份正文、两份 report HTML 与两个 viewer 中命中 `0` 处；仅本条账本记录为说明改了什么而原样引用了旧写法，`CAS01` 的断言扫描不读账本，只读两份正文。同一次扫描中 `observed conflict in Beijing` 在两份英文件里只出现在否定句内（`not to report an observed conflict in Beijing`），在 `run-contract-tests.js` 里只作为变异探针的改前／改后一对出现。两份 report HTML 由官方渲染脚本重新生成后同样只带更正后的句子。
+
+### 双语 viewer 的语义对等改由权威 JSON 生成
+
+此前两个 viewer 的对等只靠人看。本轮把它变成机器可判的属性，并补上一条独立契约用例 `PAR01`（写在 `run-contract-tests.js` 内）。
+
+生成侧：`AI 场景`、`自检状态`、`来源`、`假设`四节此前中英各写各的，现在与 `重点区域`、`更新项目`、`区域协同` 一并由 `visual/assets/build-viewers.js` 从 `regeneration-source.json` 生成。十个场景保持稳定编号 `S01`–`S10`，每个在两种语言下都公开同样六个语义字段：场所类型、最小数据、人工审查、非数字兜底、负责运营方、停止规则；`CHK-01`–`CHK-04`、`SRC-F01`–`SRC-F06`、`ASM-01`–`ASM-06` 的编号、顺序与语义键在两侧一致，文字各用本语言。
+
+检查侧：`PAR01` 不读 builder，只读两个成品页面与权威记录，按节定位后逐项比对——每个族的编号必须齐全且顺序与登记一致，两种语言的顺序必须相同；每条记录的每个双语字段必须以本语言出现、且另一语言的对应文字不得出现；六个场景字段的**标签**也必须印在页面上，否则读者遇到一条停止规则却没有名目；每张生成表必须有唯一解析的 `aria-labelledby`、`thead`／`tbody`、以及列表头与行表头的 `scope`；每张图必须有非空 `alt`，且中文页只出现中文图版、英文页只出现 `.en.png`，两侧图序相同。共 `6` 个族、`35` 条记录。
+
+`9` 条变异探针逐一验证该检查不是空转：场景编号消失、两道审查门互换位置、英文字段回退成中文、生成表丢掉表头分组、生成表丢掉行 `scope`、中文页显示英文图版、图丢掉描述、任务覆盖数量吞掉已声明的资料缺口、手写表以无可及名称的形式重现。`probes_missed 0`。
+
+### 任务覆盖表：本轮顺带发现并修掉的第六处
+
+做上一节时发现两个 viewer 里还剩最后一张手写表，而它同时错了三样：中文三行对英文四行（中文缺「可复算性」一行）；中文单元格里留着 `Official requirements`、`Mandatory standards`、`Formal depth`、`全部 addressed` 等未译片段；而「全部 addressed」与记录不符——`standard_matrix.json` 的 `11` 项标准里 `9` 项 `review_status` 为 `addressed`、`2` 项为 `data_gap`。第三样是实质性夸大，且它已经在包里存在了四个版本。
+
+该表并入生成路径。四行的数量全部由 builder 从记录现算：`compliance_matrix.json` 得编号要求 `17` 条与 agent 任务 `6` 项，`standard_matrix.json` 得 `11`／`9`／`2`，`design_depth_matrix.json` 得深度条目 `15` 项且 `15` 项写明 `completeness_limited_by`，零抖动记录得种子 `64` 与候选边 `24`。记录里存的是带 `{0}`、`{1}` 占位的模板与各自的 count 名单，占位取不到数就停止构建，不会把花括号发给读者。builder 另加一条断言：`addressed` 与 `data_gap` 之和必须等于标准总数，否则「N 项中 A 项已回应、G 项为资料缺口」就不再是对该矩阵的完整陈述——把部分陈述读成完整陈述正是本轮要拆掉的那种夸大。
+
+`PAR01` 独立重算同一批数量（不从 builder 取），并把这处夸大本身做成探针：把 `data_gap` 并入 `addressed`、缺口写成 `0`，得到一句算术自洽、读起来毫无破绽的话，检查必须点名拒绝。它拒绝了。另加一条探针在页面尾部塞进一张无 `aria-labelledby` 的表，确认「每张表都被规则覆盖」这句话是被断言的而不是被注释声称的。
+
+两个 viewer 此后结构完全对称：各 `59` 个 `id`、重复 `0`、`section` `15` 节、`table` `12` 张且 `12` 张全部带可及名称与 `thead`／`tbody`、`scope="col"` 各 `54`、`scope="row"` 各 `67`、无 `scope` 的 `<th>` `0` 个、`img` `20` 且空 `alt` `0`、远程引用 `0`。
+
+### 补上任务书要求的区域协同回应
+
+`brief/site-package/agent_taskbook.json` 的 `review_dimensions/3` 点名五个协同对象，此前两份正文与两个 viewer 都没有回答。本轮在正文第 3 章与两个 viewer 的 `#regional` 节各加一张五行矩阵：`RS01` 北纬社区、`RS02` 未来科学城、`RS03` 怀柔科学城、`RS04` 经开区、`RS05` 京津冀。
+
+每行只允许说四件事：可能的关系（仅为提议）、仍需的证据、负责受理的审查层级、不确定性与主张限度。没有第五列可以放协议、线路、投资、承诺或实施事实，因为本包没有任何来源支持它们——`evidence_state` 记为 `taskbook_naming_only`，出处 `brief/site-package/agent_taskbook.json#/review_dimensions/3` 印在表下。任务书只发布中文名称，因此五个对象的英文名标明为工作译名，不是官方英文名。地理位置、距离与行政关系一律未写。
+
+### 治理登记表从 `258` 行压成一张 `12` 行的决策表
+
+`P00`–`P11` 的完整治理条款此前以散文形式铺在正文第 10 章，中英各 `258` 行，读者要在其中找一条停止条件需要翻十几屏。现在每种语言各 `23` 行：三段引言加一张 `12` 行 `7` 列的表，列为行动、阶段、责任角色、观察指标、停止条件、回滚或兜底、阻断门。
+
+完整的十二项条款没有被删，仍在 `visual/assets/action-governance.json`；正文里明写了这一点并指出 `G01` 仍逐条校验全部十二项。压缩的是散文，不是契约。
+
+`G01` 同时被加强而不是放松：它不再用子串扫一遍正文，而是从登记记录逐字重建表头、分隔行与十二行内容并要求逐字符相等，再检查表后第一行不得仍以 `|` 开头（防止悄悄多出一行），并要求正文点名 `visual/assets/action-governance.json` 这条路径。记录侧的旧断言全部保留：每个行动十二项条款中英俱全且非空、`authorized_target` 仍为 `null`、`blocked_by` 非空、阶段与行动登记表一致。实测 `actions 12`、`printed_columns 7`、两份正文 `register_rows` 各 `12`。
+
+### 让 `CAS01` 不再自我确认
+
+v0.4 的 `CAS01` 会重算数量并核对句子，但它检查的是「该说的话在不在」，不检查「不该说的话在不在」——把正文改成一句夸大，它不会响。本轮补上另一半。
+
+- 数量仍从 `edges[]` 现算而不抄 `summary`：候选边 `24`、改变状态 `8`、零抖动持续 `11`、分歧带 `0`、最大 `|delta|` `0.546875`。
+- 新增按语言的断言扫描：先按句读切分，带否定词的子句跳过，再在剩下的子句里找三类主张——被观测到的城市冲突、真实权衡、已获授权或已获资金——以及「某道具名门已关闭」的说法（门号与关闭动词须落在同一子句内）。任何一类命中即失败并回引原句。
+- 新增真变异探针 `8` 处：两份 Markdown 各三条改写（把更正后的分歧边句改回观测冲突与真实权衡、把「未获授权与未获资金」改成已获授权并已获资金、把 `D12` 说成已关闭），加两条把某条零抖动持续边改判为分歧边、要求已发布的数量因此至少有一句不再成立。八处全部触发；任何一处不触发都会以「该扫描不可依赖」直接失败。
+- 行动署名核验、`D12`／`D16` 仍开放、失效模式表 `7` 行其中 `5` 行有登记条款（`P02,P03,P08,P10,P11`）等原有不变式一条未减。
+
+### 署名与生成声明同步更新
+
+`report/copyright_statement.md` 补上 v0.5 的中英两段，按文件逐项列出本轮由 Claude Opus 5 直接撰写的内容：`regeneration-source.json` 的 `viewer_sections`（含 `task_coverage`）、`regional_synergy`、`ui_labels` 的 `regional` 与 `tasks`、`proposal_blocks` 两段；`action-governance.json` 的表头标签；`build-proposals.js` 与 `build-viewers.js` 的生成逻辑；`run-contract-tests.js` 中新增的 `PAR01`、被重写的 `G01`、被加强的 `CAS01`；两份正文的更正与新增段落、两个 viewer、两份 report HTML，以及本条账本记录与该声明段本身。v0.1–v0.3 归 OpenAI Codex、v0.4 的既有归属均未改动。该声明同时写明两份 report HTML 的行尾是渲染后被规范化的，这正是 `C10` 不勾选的原因，与下文一致。
+
+### 本轮验收实测
+
+最后一次改动之后按依赖顺序整体重建，随后全套复核，全部通过：
+
+- `node --check` 全包 JavaScript `29` 个，语法失败 `0`；本轮未新增 `.js` 文件。
+- 九个 builder 写入模式全部退出 `0` 且全部幂等：`changed_files` 全为 `0`，`build-plates` `ok:true`、`semantic_plates 15`、`artifacts 30`、`notdef_drawn 0`、`differences []`。四份 PDF 本轮字节未变。
+- 九个 builder `--check` 模式全部退出 `0`、`changed_files` 全为 `0`。
+- `run-contract-tests.js`：`PASS`，用例 `45`（内联 `31` + 模块 `14`），失败 `0`。较 v0.4 的 `44` 增加的是 `PAR01`。（本行的内联／模块拆分原写作「内联 `32` + 模块 `13`」，总数无误而拆分写反，由 v0.6 更正。）
+- 复算器：`PASS`；篡改测试：`PASS`；清洁构建：`PASS`。十六个独立测试与复算器共 `17` 个脚本全部退出 `0`。
+- 两个冻结 JSON 的 SHA-256 与账本记录逐字符相等：`physarum-inputs.json` `5e5a9be6…`、`physarum-runs.json` `ea93df30…`。`geometry/key_areas.geojson` 未改动。
+- 展示面静态复核：两个 viewer 与两份 report HTML 各有 `<h1>` `1` 个；两个 viewer 各 `id` `59` 个、重复 `0`、`section` `15`、生成表 `12` 且全部具备可及名称与表头语义、`img` `20` 且空 `alt` `0`、远程资源引用 `0`、`<script>` `0`。
+- Issue #1029 双语披露串逐字核对：中文串在 `proposal.md`、`report/proposal.html`、`visual/index.html` 各 `1` 次，英文串在三份英文对应件各 `1` 次，无跨语言泄漏；`area-plates.json` 中中英各 `5` 次不变。
+- 编码与范围：文本文件 `67` 个，含 CR／BOM／NUL 或非 UTF-8 的 `0`；`git diff --check` 退出 `0` 且无输出；变更路径 `13`，包外变更 `0`。
+
+### 本轮终点与未决事项
+
+本节记录本轮实际做到的事，不扩大其范围。
+
+**`C10` 仍不勾选，并记下阻碍原因。** 本轮运行了官方渲染脚本 `scripts/render_proposal_html.py`，两份 report HTML 由它生成，各含 `<h1>` `1` 个。但该脚本经由 `write_text_atomically` 用 Python 文本模式写文件，在本机 Windows 上因此输出 CRLF——这一点是实测的，不是推断：直接以同样方式写入 `a\nb\n` 得到的字节为 `a\r\nb\r\n`，`os.linesep` 为 `\r\n`。包内其余文件皆为 LF，且本轮被要求 `git diff --check` 干净，故渲染后将 `\r\n` 逐字节替换为 `\n`。也就是说，两份 report HTML 现在的 LF 字节来自渲染后的一次转换，而 `C10` 的验收要求「由官方渲染器直接产出、无渲染后规范化或手工编辑」。本轮不满足该条件，因此不勾选，也不以内容等价为由自行判定其成立。本机上没有让 CPython 文本模式原生输出 LF 的调用方式；若需要真正的 LF 原生渲染证据，应在 LF 原生环境中运行该脚本，或由维护者判断是否接受行尾差异。
+
+`C08` 仍不勾选：`33` 条来源记录缺少真实取回时刻哈希，本轮一条也未获得，也不得合成。`C03`、`C05`、`C06`、`C09`、`C11`、`C12`、`C14` 全部保持不勾选，本轮没有为勾选而新建影子文件或改写其预先声明的验收条件。`C02`、`C04`、`C07` 保持勾选，本轮全套复核未出现回归，`C01` 实测 `closed_class_c` 恰为这三项。`H01` 保持关闭、不可勾选，证据指针与 `### H01 批准与提交授权记录` 一节未动。
+
+`17` 个 D 类外部门在本轮结束时全部保持开放、无复选框、不可勾选。本轮所做的全部是包内实施与自证，其中没有任何一项构成外部或专业证据。所有现场行动与试点仍未获授权、未获资金。
+
+本轮没有运行：`scripts/refresh_submission_manifest.py`、marked self-check、`scripts/participant_preflight.py`、严格验证器与 `finalize_submission.py`。`manifest.json` 与 `self_check.json` 因此仍是有意保留的陈旧生命周期制品，其哈希未经手工修改；本轮修改的 `13` 个文件在 `manifest.json` 中仍带改动前的哈希，等待官方刷新——这一点必须由维护者在最终序列中处理，不能沿用本账本作为已刷新的证据。本轮没有任何提交、暂存、推送、PR 创建/关闭/更新、fetch、merge 或 rebase，也没有触碰包外任何文件。
+
+## v0.6 - 2026-08-16
+
+本轮是针对 v0.5 的独立审计修复轮，逐条处理审计点名的六项缺陷。所有改动都在 `submissions/MartinForReal/adaptive-jingzhang/` 内，未新建任何文件，也未运行任何生命周期步骤。本轮的直接编辑运行使用本机 Claude Code `2.1.233`、`claude-opus-5`、最大推理强度；v0.2 记录的 `2.1.232` 是当时的事实，未改动。
+
+### 消融复算此前不在聚合套件的判定路径上
+
+审计给出的变异可以复现：把 `visual/assets/physarum-zero-jitter-ablation.json` 中 `E02` 的 `zero_jitter_frequency` 由 `0.96875` 改成 `0.953125`、`delta` 由 `0.25` 改成 `0.234375`，`run-contract-tests.js` 依然 `PASS`，而 `build-ablation.js --check` 正确地失败。原因是聚合套件读的是已发布的消融记录，`64` 次复算与冻结哈希比对只发生在 builder 内，没有任何一条用例调用它。
+
+新增内联用例 `B04`：调用 `build-ablation.js --check`，要求退出 `0` 且 `changed:false`，并核对它自报的复算基数——种子 `64`、候选边 `24`、改变状态 `8`、最大 `|delta|` `0.546875`——以及它实际据以复算的两个冻结文件 SHA-256 与本套件钉住的值逐字符相等。
+
+同一用例内嵌一条真变异探针，用的就是审计给出的那两处数值：builder、复算器、两个冻结资产与已发布的消融记录一并复制到临时目录，只改副本里的派生值，冻结输入与冻结运行记录一字不改，要求副本上的 `--check` 退出 `1` 且 `changed:true`；探针前后对包内这五个文件逐一取 SHA-256 比对，`package_files_unchanged` 为 `true`。实测 `fired:true`。另把审计的原始变异直接写回包内文件复核过一次：聚合套件此时 `FAIL`、`cases_failed 1`、`failed_ids ["B04"]`，复核后该文件已按原字节还原。
+
+### 失效模式表：从「有这个编号」改成「逐格等于登记条款」
+
+`CAS01` 此前只检查失效模式表的行数、动作集合与两栏非空。把某一行的停止条款换成别处的文字、或把 `P08` 与 `P10` 的归属对调，只要编号集合不变就查不出来。本轮把这张表改成逐格可判：
+
+- 两份正文的表头改为「登记的征兆条款」／「登记的停止条款」，每个单元格先写明引用的是该项行动的哪个字段（观察指标、停止触发、提议目标、回滚），再逐字引用 `visual/assets/action-governance.json` 中该字段的原文；英文侧同样以 `Registered metric`、`Registered stop trigger`、`Proposed target`、`Rollback` 标名。
+- `CAS01` 按五行的固定映射逐行核对：锁定→`P11`（征兆栏取观察指标、停止栏取提议目标）、级联→`P08`（停止触发／回滚）、指标俘获→`P03`（观察指标／提议目标）、排除固化→`P02`（停止触发／提议目标）、维护债→`P10`（停止触发／回滚）。单元格里印出来的字必须等于登记记录中该字段的文字，而不只是含有那个编号。
+- 三条必须触发的新探针：改坏某一行的停止条款、改坏某一行的回滚条款、在保持聚合编号集合不变的前提下对调 `P08` 与 `P10` 两行的归属。三条在两种语言下各触发一次，两份正文的 `row_problems` 为 `0`。
+
+第六、七两行仍不引用登记表：第六行是本方案在总体设计范围一章提出的运行规则、尚未登记为任何一项行动的条款，第七行是本包的构造纪律而不是现场条款；两行在表内写明了这一点，逐格契约只施加于前五行。
+
+一处与审计用词的出入需要记下：审计把第四行称作「排斥固化」，而包内发布的行标签是「排除固化」／`Hardened exclusion`。本轮按包内已发布的标签实现契约，未改行名。
+
+### 否定词曾是免检通行证
+
+`CAS01` 的主张扫描按子句判定，此前遇到任一否定词就整句跳过。审计给出的英文句 `This is not only an observed conflict in Beijing.` 因此可以通过——`not only` 里含否定词 `not`，但整个词组的作用是承认后半句而不是否认它；中文的「不只是」「不仅」「并非仅仅」同理。
+
+本轮把这类让步式否定从否定词表里摘出来：子句里出现 `not only`、`not merely`、`不只是`、`不仅`、`并非仅仅` 时不再当作否定，仍按肯定主张扫描。两条对应探针加入必触发清单（英文用审计给出的原句，中文用等义句），各按语言触发一次。合法的免责声明未受影响：更正后的分歧边段落与「未获授权与未获资金」等否定句仍然通过。
+
+`CAS01` 现在共 `16` 处必触发探针（`8` 类 × 中英各一次），`probes_missed` 为空。
+
+### 两个 viewer 在 390 CSS px 下的横向溢出
+
+审计实测：`390×844` 视口下两个 viewer 的 `documentElement.clientWidth` 为 `375`、`scrollWidth` 为 `489`；`.table{table-layout:fixed}` 配合 `overflow-wrap:anywhere` 把八列的 `S01`–`S10` 表和五列的区域协同表压成每列一到四个字，整页高度约 `62,565px`。
+
+修法分两侧。生成侧：`build-viewers.js` 的表格生成把每张表包进一个 `role="region"`、`tabindex="0"`、`aria-labelledby` 指向该表标题的横向滚动容器，并把列数以 `--table-columns` 写在 `<table>` 上。样式侧：删掉 `table-layout:fixed` 与单元格上的 `overflow-wrap:anywhere`，表宽改为 `min-width:calc(var(--table-columns,4) * 8.5rem)`，单元格恢复正常断词（`overflow-wrap:break-word`），滚动容器带 `overscroll-behavior-x:contain` 与 `:focus-visible` 的 `4px` 可见焦点框；`nav` 自身限宽并自带横向滚动。根元素没有加 `overflow:hidden`。
+
+无头实测（Chromium，`390`／`768`／`1440` 三档）：两个 viewer 的根元素 `clientWidth` 与 `scrollWidth` 三档全部相等（`390/390`、`768/768`、`1440/1440`）；`390` 档整页高度中文页 `34,354px`、英文页 `44,820px`；每页 `12` 个滚动容器全部可由键盘到达、聚焦时 `outline` 为 `4px solid`、宽度均不超出视口，其中 `11` 个在该档需要横向滚动且确实可以滚动，余下一张两列表在 `390` 内完整可见；`prefers-reduced-motion` 规则仍在；`thead`／`tbody` 分组、`scope="col"` `54` 个、`scope="row"` `67` 个、无 `scope` 的 `<th>` `0` 个与每张表的可及名称均未受影响。
+
+审计把溢出归因于粘性导航，这一点与实测不符，记在这里：逐条注释样式定位到的溢出源是 `#regional` 一节里的 `p.status`，其中 `brief/site-package/agent_taskbook.json#/review_dimensions/3` 是一个 `375px` 放不下且无处可断的连续串，该段现在带 `overflow-wrap:anywhere`。导航限宽仍按要求实现，只是它不是原因。
+
+### 十二张生成表各自有名字
+
+三个重点区域各出两张表，此前中文页三张只叫「构件」、三张只叫「提议的无障碍连续路径」，英文页同理。屏幕阅读器的表格列表里因此出现三个同名条目，选中哪一个都无从判断。
+
+`build-viewers.js` 现在把区域名写进每张表的可见标题，例如「众智园AI自主创新加速区 · 构件」与 `Dazhongsi AI Industry Cluster · Proposed step-free chains`。builder 的 `--check` 侧新增断言：解析每张生成表 `aria-labelledby` 目标的文本，`12` 张表的名称必须两两不同，滚动容器与 `<table>` 必须指向同一个标题，声明的列数必须等于实际印出的表头数。`PAR01` 独立复算同一批性质并新增三条探针：把某张表移出滚动容器、让某张表多声明一列、把两个重点区域的表名改成同一个；三条全部触发。
+
+实测两个 viewer 各 `generated_tables 12`、`distinct_table_names 12`；无头侧 `distinctRegionNames 12`、`distinctTableNames 12`、空名称 `0`。
+
+### 区域协同：把「受理」降回「待确认的提议」
+
+`RS01`–`RS05` 五行此前有一列叫「负责受理的审查层级」，单元格写「市级科技主管部门受理」。在本包没有任何制度安排证据的情况下，这是在指派职责，与该表自身的 `evidence_state: taskbook_naming_only` 相矛盾。
+
+该列改名为「拟议审核路径（待确认）」／`Proposed review route requiring confirmation`，五行措辞一律改为「须经确认，并由……受理；本方案无权指定受理机构。」／`Would require confirmation and receipt by …; this proposal cannot name the receiving body.`，表引言另加一句「本表不指定任何机构的受理职责。」／`No row assigns a receiving duty to any body.`。五个协同对象（`RS01` 北纬社区、`RS02` 未来科学城、`RS03` 怀柔科学城、`RS04` 经开区、`RS05` 京津冀）、证据要求、责任与主张限度一栏、中英条数与顺序均不变。
+
+改动只做在权威记录 `visual/assets/regeneration-source.json` 上，两份正文与两个 viewer 由 builder 重新生成，两份 report HTML 由官方渲染脚本从更正后的 Markdown 重新生成。全包扫描：「负责受理的审查层级」在正文、报告与 viewer 中命中 `0` 处，仅余本账本 v0.5 一节的历史记录；「须经确认」句式在中文三面各 `5` 处，`Would require confirmation and receipt by` 在英文三面各 `5` 处。`PAR01` 的双语字段比对按 `_zh`／`_en` 键取字段，改名后自动覆盖，无需另加规则。
+
+### 署名、版本与一处历史计数更正
+
+`report/copyright_statement.md` 补上 v0.6 的中英两段，按文件列出本轮由 Anthropic Claude Opus 5 直接撰写的内容。
+
+v0.5 验收记录里「用例 `45`（内联 `32` + 模块 `13`）」的拆分写错了：向聚合套件注册用例的模块一直是 `14` 个（`visual/assets/` 下十六个 `test-*.js` 中有十四个注册用例，另两个是清洁构建与篡改测试，单独运行），当时的内联用例是 `31` 条。总数 `45` 无误，本轮只更正拆分并在该行标注。
+
+### 本轮验收实测
+
+最后一次改动之后按依赖顺序整体重建，随后全套复核，全部通过：
+
+- `node --check` 全包 JavaScript `29` 个，语法失败 `0`；本轮未新增文件。
+- 九个 builder 写入模式全部退出 `0` 且全部幂等；`--check` 模式同样全部退出 `0`，报告 `changed` 的四个全为 `false`、报告 `changed_files` 的四个全为 `0`，`build-plates` `ok:true`、`semantic_plates 15`、`artifacts 30`、`notdef_drawn 0`、`differences []`。四份 PDF 本轮字节未变。
+- `run-contract-tests.js`：`PASS`，用例 `46`（内联 `32` + 模块 `14`），失败 `0`。较 v0.5 的 `45` 增加的是 `B04`。
+- `B04` 的消融漂移探针 `fired:true`（`exit_code 1`、`changed:true`、`package_files_unchanged:true`）；`CAS01` `probes_fired 16`、`probes_missed []`、两份正文 `row_problems 0`、登记条款行 `5` 行（`P02,P03,P08,P10,P11`）；`PAR01` `families 6`、`records 35`、`probes 12`、`probes_missed 0`。
+- 十六个独立测试与复算器共 `17` 个脚本全部退出 `0`；复算器 `PASS`、篡改测试 `PASS`、清洁构建 `PASS`。
+- 两个冻结 JSON 的 SHA-256 与账本记录逐字符相等：`physarum-inputs.json` `5e5a9be6…`、`physarum-runs.json` `ea93df30…`。`geometry/key_areas.geojson` 未改动，`PROV-KEY-001`–`PROV-KEY-003` 保留。
+- 展示面静态复核：两个 viewer 与两份 report HTML 各有 `<h1>` `1` 个；两个 viewer 各 `id` `59` 个、重复 `0`、`section` `15` 节、生成表 `12` 张且各在自己的滚动容器内、`12` 个可及名称互不相同、`scope="col"` `54`、`scope="row"` `67`、无 `scope` 的 `<th>` `0` 个、`img` `20` 且空 `alt` `0`、远程资源引用 `0`、`<script>` `0`。
+- 无头浏览器实测（`390`／`768`／`1440` 三档）：两个 viewer 的根元素 `clientWidth` 与 `scrollWidth` 三档全部相等。
+- Issue #1029 双语披露串逐字核对：中文串在 `proposal.md`、`report/proposal.html`、`visual/index.html` 各 `1` 次，英文串在三份英文对应件各 `1` 次，无跨语言泄漏；`area-plates.json` 中中英各 `5` 次不变。
+- 编码与范围：文本文件 `67` 个，含 CR／BOM／NUL 或非 UTF-8 的 `0`；`git diff --check` 退出 `0` 且无输出；变更路径 `13`，包外变更 `0`。
+
+### 本轮终点与未决事项
+
+本节记录本轮实际做到的事，不扩大其范围。
+
+`C10` 仍不勾选，原因与 v0.5 一节所记完全相同且本轮再次实测：两份 report HTML 由官方渲染脚本 `scripts/render_proposal_html.py` 生成，但该脚本在本机 Windows 上经由 Python 文本模式输出 CRLF，本轮渲染后仍需把 `\r\n` 逐字节替换为 `\n`，因此不满足「由官方渲染器直接产出、无渲染后规范化」的验收条件。
+
+`C08` 仍不勾选：`33` 条来源记录缺少真实取回时刻哈希，本轮一条也未获得，也不得合成。`C01`、`C03`、`C05`、`C06`、`C09`、`C11`、`C12`、`C13`、`C14` 全部保持不勾选。`C02`、`C04`、`C07` 保持勾选，本轮全套复核未出现回归；契约用例 `C01`（与同名任务无关，它审计的是本账本自身）实测 `closed_class_c` 恰为这三项、`class_c 14`、`class_d 17`。`H01` 保持关闭、不可勾选，其证据指针与 `### H01 批准与提交授权记录` 一节未动。
+
+`17` 个 D 类外部门在本轮结束时全部保持开放、无复选框、不可勾选。本轮所做的全部是包内实施与自证，其中没有任何一项构成外部或专业证据；所有现场行动与试点仍未获授权、未获资金。关于大钟寺的车站关系、出入口、轨道、道路、路口、地块、门、标高、结构、首层、现状使用、消防、安装、修复能力与承载力，本轮未新增任何肯定性主张。
+
+本轮没有运行：`scripts/refresh_submission_manifest.py`、marked self-check、`scripts/participant_preflight.py`、严格验证器与 `finalize_submission.py`。`manifest.json` 与 `self_check.json` 因此仍是有意保留的陈旧生命周期制品，其哈希未经手工修改；本轮修改的 `13` 个文件在 `manifest.json` 中仍带改动前的哈希，等待官方刷新，不能沿用本账本作为已刷新的证据。本轮没有任何提交、暂存、推送、PR 创建/关闭/更新、fetch、merge 或 rebase，也没有触碰包外任何文件。
