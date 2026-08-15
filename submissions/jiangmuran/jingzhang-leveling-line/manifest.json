@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-15T03:00:26-07:00",
+  "generated_at": "2026-08-15T03:16:23-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,13 +28,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e256ae376f17af9f0db3dbf19aa924363294c158e7aba98b734e4cc83e104a00"
+      "sha256": "d19a7584de67358f590299b660ea466dd968f10a7adbf397b455142230471cd0"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "6d4c7fdd51061fa7be9a9281bc8e5416301c3cd4797eb6c15f90371592fae93c",
+      "sha256": "f6611d7c7d3d2b5ff9fda69f5944f1ea0fc828b5c571d1511a0a193f0ff48927",
       "language": "neutral"
     },
     {
@@ -48,7 +48,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "2449ab7bf50c963cbbe68c5518e0ac8370a86c7eb9880075c6996b8d5779c640",
+      "sha256": "8b272a76cf55decc7ef7753a03f802e6b413b1b5cf545efedc093fb2e9df8cf5",
       "language": "neutral"
     },
     {
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6cf00ba3683a2a350b83c5d8d7130329a83c0929f73ab960d7cfdeda49653ac1",
+      "sha256": "1ac3fa02a5ac8d6db489214011d90862a4df9f043a3184956d164b4f1eadb704",
       "language": "neutral"
     },
     {
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cf25894d55d82dbd4a8e37424f7a5fa7c80d0bb5f58951a510d637536c5de890"
+      "sha256": "90c56ed3caa1d0c8e437ad9fff1f34356af4b5e9e858d709046c6dab51e4a5f2"
     },
     {
       "path": "report/narrative.md",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "470f1c87a24277c0f4b3af9e6ea9db0516c64e92971413c1bac2f4290abbac55",
+      "sha256": "c1c2a507a7b9834d02b833fe8c20a3a823e298e70f5696d58561d996e7fef9cd",
       "language": "zh"
     },
     {
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "34b45c488c8ae34ac8ec4200853318587a31eddda85337b2ea5c57404d73c269"
+      "sha256": "e6c0a414f01cc6d2c4ae21193afbfe2422f55d79882e9ae8aa9bb51f89d7bddf"
     },
     {
       "path": "report/proposal.en.html",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "187f420013fbbfeffc3bf4873a2cd81db63970ff6dfe90fcaf5ab22e810050c3"
+      "sha256": "938895cc6cdd954753b6dfb7335cc1f67a624f3219fba84b1e08f0834030a01b"
     },
     {
       "path": "visual/index.en.html",
@@ -434,7 +434,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "4badd7355157d92e87b5624eacb0a29dfb403e79a31f12de6fb69a31a6449700"
+      "sha256": "41c1f20b147f628d384c5cef724947d98d20d41ede6413b36695d20dada95980"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -577,7 +577,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "329fff722f87048e24fadfde86ef2f5e808cccae2380e62227194ab611749c26"
+      "sha256": "420622fd25d0eba9dd05cc4b1d23553051c8c9e0ece59b9f993d10fac20b90de"
     },
     {
       "path": "visual/assets/errata.json",
@@ -841,7 +841,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "d6c2a40dd5640eb932de164779b3e661aeb3eaef9b359282c49cfc524fb3c7cf"
+      "sha256": "6bdeee0e40ba5ac9a8449567d8c12a24ae30112b772d999ef1855e90ccfb807c"
     },
     {
       "path": "assets/figures/device.png",
@@ -1081,6 +1081,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "7e2fef45eafa70f9794d3d34875e11a931ac423a1510eb298b964efb39b36143"
+    },
+    {
+      "path": "visual/assets/review_route.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "8ed4c05981634ebf7f656b3377e02578782844d8758de75df59e6026e68f5489"
     }
   ],
   "validation_claim": {
