@@ -782,6 +782,19 @@
       "assumptions": [
         "影响相关方/缓解措施/申诉时限"
       ]
+    },
+    "rollback_path_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of rollback_map entries",
+      "confidence": "high",
+      "assumptions": [
+        "G0-G6 固化回滚去向"
+      ]
     }
   }
 }
