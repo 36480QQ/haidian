@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-CORE-DEMO-001",
+      "status": "design_hypothesis",
+      "statement": "The 24.5-hectare Qinghuayuan core demonstrator and its FAR, GFA, green-space and public-open-space targets are participant-defined design parameters, not official boundaries or approved controls.",
+      "impact": "All core-zone indicators must be recalculated and adjusted after official red lines, ownership, building survey and statutory planning conditions are obtained."
+    },
+    {
+      "id": "ASM-01",
+      "status": "pending_professional_confirmation",
+      "statement": "The structural condition of the former Qinghuayuan Station is assumed to permit conservation and adaptive reuse.",
+      "impact": "A professional heritage and structural survey is required before deciding the retain-renovate-demolish treatment."
+    },
+    {
+      "id": "ASM-02",
+      "status": "pending_professional_confirmation",
+      "statement": "The proposed low-speed Robobus loop is assumed to be capable of sharing or reallocating existing municipal road right-of-way.",
+      "impact": "Traffic engineering, operating authorization and road-safety review are prerequisites for implementation."
+    }
+  ]
+}
