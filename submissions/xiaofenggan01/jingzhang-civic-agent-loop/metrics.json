@@ -758,7 +758,7 @@
     },
     "corridor_deep_dive_count": {
       "status": "known",
-      "value": 1,
+      "value": 2,
       "unit": "count",
       "source_files": [
         "proposal.md",
@@ -767,7 +767,7 @@
       "formula": "count of corridor deep-dive cards",
       "confidence": "high",
       "assumptions": [
-        "五条转辙廊逐条深化;当前 1/5;geojson 同步挂属性"
+        "五条转辙廊逐条深化;当前 2/5;geojson 同步挂属性"
       ]
     }
   }

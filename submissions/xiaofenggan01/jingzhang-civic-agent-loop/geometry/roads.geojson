@@ -190,7 +190,12 @@
         "stitch_note": "知春路沿线东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "知春路轨交节点",
+        "east_node": "中关村东路科创带",
+        "stitch_target": "轨道站点×科创办公带",
+        "composite_functions": "通勤接驳+交通 OD 推演验证段"
       },
       "geometry": {
         "type": "LineString",
