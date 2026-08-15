@@ -76,7 +76,7 @@
       "group_id": "root-changelog",
       "human_surface_refs": [],
       "kind": "changelog",
-      "latest_rebuild_round": 23,
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -97,7 +97,7 @@
         "visual/index.html"
       ],
       "kind": "manifest",
-      "latest_rebuild_round": 23,
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -118,7 +118,7 @@
         "visual/index.html"
       ],
       "kind": "agent_card",
-      "latest_rebuild_round": 23,
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -210,7 +210,7 @@
         "report/proposal.html"
       ],
       "kind": "self_check",
-      "latest_rebuild_round": 23,
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -315,7 +315,32 @@
       "group_id": "report-narrative",
       "human_surface_refs": [],
       "kind": "report_records",
-      "latest_rebuild_round": 23,
+      "latest_rebuild_round": 24,
+      "notes": {},
+      "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
+      "status": "current"
+    },
+    {
+      "files": [
+        {
+          "language": "en",
+          "path": "visual/index.en.html",
+          "role": "visualization",
+          "role_detail": null,
+          "translation_of": "visual/index.html"
+        },
+        {
+          "language": "zh",
+          "path": "visual/index.html",
+          "role": "visualization",
+          "role_detail": null,
+          "translation_of": null
+        }
+      ],
+      "group_id": "visual-pages",
+      "human_surface_refs": [],
+      "kind": "visualization",
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1366,31 +1391,6 @@
     {
       "files": [
         {
-          "language": "en",
-          "path": "visual/index.en.html",
-          "role": "visualization",
-          "role_detail": null,
-          "translation_of": "visual/index.html"
-        },
-        {
-          "language": "zh",
-          "path": "visual/index.html",
-          "role": "visualization",
-          "role_detail": null,
-          "translation_of": null
-        }
-      ],
-      "group_id": "visual-pages",
-      "human_surface_refs": [],
-      "kind": "visualization",
-      "latest_rebuild_round": 20,
-      "notes": {},
-      "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
-      "status": "current"
-    },
-    {
-      "files": [
-        {
           "language": "neutral",
           "path": "visual/assets/century-time-museum-contract.json",
           "role": "other",
@@ -1895,7 +1895,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 23,
+      "latest_rebuild_round": 24,
       "notes": {
         "en": "Self-registered: the index itself is the 141st registered path and locates the other 140 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
         "zh": "本索引自登记：索引自身是第 141 个登记路径，负责定位其余 140 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
@@ -1919,7 +1919,7 @@
         "visual/index.html"
       ],
       "kind": "stylesheet",
-      "latest_rebuild_round": null,
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1986,7 +1986,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 23,
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2078,7 +2078,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 22,
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
