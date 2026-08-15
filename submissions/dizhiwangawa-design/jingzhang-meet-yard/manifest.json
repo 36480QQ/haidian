@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-meet-yard",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "4311b770d800cdfd1a821bf722ab9b24cf736f49212cfd1fd6b93823af926fbe"
     },
     {
       "path": "compliance_matrix.json",
@@ -205,32 +205,33 @@
     },
     {
       "path": "changelog.md",
-      "role": "audit_evidence",
+      "role": "changelog",
       "required": false,
       "sha256": "b97a1f63993227772f41ecb665af9205d3f6ab28b9d2eb45a1b39255ed5ec6b4"
     },
     {
       "path": "visual/assets/data/claim_register.json",
-      "role": "audit_evidence",
+      "role": "evidence_data",
       "required": false,
       "sha256": "16f8d07857372418ca81c68dbb6e32342ae8147d3a986a773fc6f39f68a02724"
     },
     {
       "path": "visual/assets/data/recompute-log.json",
-      "role": "audit_evidence",
+      "role": "evidence_data",
       "required": false,
       "sha256": "f31e5049ab4c53c8e020fc5d40eda3ddb7f7a30f5553853183382c5e89603199"
     },
     {
       "path": "visual/assets/data/case-source-ledger.json",
-      "role": "audit_evidence",
+      "role": "evidence_data",
       "required": false,
       "sha256": "63e1b849b2f363dcf053878796cc4e7c50c8c5bed1045ffd8b2fd210cda2ccbc"
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
