@@ -170,8 +170,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "非空行 597 行对 597 行，结构类型逐行不一致数为 0",
-     "result_en": "597 non-blank lines on each side, with zero line-by-line type mismatches",
+     "result_zh": "非空行 598 行对 598 行，结构类型逐行不一致数为 0",
+     "result_en": "598 non-blank lines on each side, with zero line-by-line type mismatches",
      "provenance_zh": "本轮实测",
      "provenance_en": "Measured this round",
      "limitations_zh": "结构级比对，不判断译文是否准确、是否遗漏语义",
@@ -317,8 +317,8 @@
     "Structural equivalence does not guarantee semantic equivalence: two versions can align structurally while individual wordings differ in the strength of their claim, a layer not tested here."
    ],
    "remeasured_on": "2026-08-15",
-   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：846/846 行、597/597 非空、272/272 表格行、四类锚点 222/222（depth 深度锚点 37/37 另计），逐行结构不一致 0",
-   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 846/846 lines, 597/597 non-blank, 272/272 table rows, four-type anchors 222/222 (depth anchors 37/37 counted separately), zero line-by-line type mismatches"
+   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：848/848 行、598/598 非空、272/272 表格行、四类锚点 222/222（depth 深度锚点 37/37 另计），逐行结构不一致 0",
+   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 848/848 lines, 598/598 non-blank, 272/272 table rows, four-type anchors 222/222 (depth anchors 37/37 counted separately), zero line-by-line type mismatches"
   },
   {
    "id": "R3",
@@ -352,8 +352,8 @@
      "date": "2026-08-13",
      "scope_zh": "双语展示页全页",
      "scope_en": "Both language versions, whole page",
-     "result_zh": "双语各 40 个可聚焦元素（折叠纸模查看与下载入口加入后实测复核），序列完全一致：第 1 步跳转链接；第 2—16 步十五个章节导航链接；第 17—22 步评审路线区块六个链接；第 23—24 步折叠纸模的查看与下载链接；第 25—26 步两个指向第 16 章的正文链接；第 27—28 步 AI 开启与 AI 关闭；第 29 步播放引导流光；第 30 步显示静态视图；第 31—40 步 OP-01 至 OP-10 十个节点按钮。第 41 步焦点离开文档进入浏览器界面，第 42 步循环回跳转链接，未发现键盘陷阱。Shift+Tab 反向遍历顺序可逆，实测 OP-05 反向依次回到 OP-04、OP-03、OP-02、OP-01。",
-     "result_en": "40 focusable elements in each language (re-measured after the papercraft view/download links were added), in an identical order: step 1 the skip link; steps 2-16 the fifteen chapter navigation links; steps 17-22 the six reviewer-path links; steps 23-24 the papercraft view and download links; steps 25-26 two in-text links to chapter 16; steps 27-28 AI ON and AI OFF; step 29 play guidance flow; step 30 show static view; steps 31-40 the ten node buttons OP-01 to OP-10. At step 41 focus leaves the document into the browser interface and at step 42 it returns to the skip link; no keyboard trap was found. Shift+Tab reverses the order correctly, measured from OP-05 back through OP-04, OP-03, OP-02, OP-01.",
+     "result_zh": "双语各 61 个可聚焦元素（四时段控件与第 17 章三维主脊加入后实测复核），序列完全一致：第 1 步跳转链接；第 2—17 步十六个章节导航链接（含新增第 17 章）；第 18—25 步评审路线区块与折叠纸模共八个链接；第 26—27 步两个指向第 16 章的正文链接；第 28—29 步 AI 开启与关闭；第 30—33 步早高峰、日间、晚间、夜间四时段；第 34 步播放引导流光；第 35 步显示静态视图；第 36—45 步 OP-01 至 OP-10 十个节点按钮；第 46—50 步第 17 章 AI 两态、昼夜两态与视角复位；第 51 步三维画布（可聚焦，方向键旋转、Home 复位）；第 52—61 步第 17 章十个节点飞行按钮。第 62 步焦点离开文档，第 63 步循环回跳转链接，未发现键盘陷阱。Shift+Tab 反向遍历顺序可逆，实测 OP-05 反向依次回到 OP-04、OP-03、OP-02、OP-01。",
+     "result_en": "61 focusable elements in each language (re-measured after the four-period controls and the chapter-17 3-D spine were added), in an identical order: step 1 the skip link; steps 2-16 the fifteen chapter navigation links; steps 17-22 the six reviewer-path links; steps 24-25 the papercraft view and download links; steps 26-27 two in-text links to chapter 16; steps 28-29 AI ON and OFF; steps 30-33 the four periods; steps 34-35 play and static view; steps 36-45 the ten node buttons; steps 46-50 the chapter-17 AI, day/night and reset controls; step 51 the focusable 3-D canvas; steps 52-61 the ten chapter-17 fly-to buttons. At step 62 focus leaves the document into the browser interface and at step 63 it returns to the skip link; no keyboard trap was found. Shift+Tab reverses the order correctly, measured from OP-05 back through OP-04, OP-03, OP-02, OP-01.",
      "focus_sequence": [
       "01 a.skip → 跳到正文 / Skip to content",
       "02-16 nav a → 章节 02 至 16 导航链接（15 个）",
