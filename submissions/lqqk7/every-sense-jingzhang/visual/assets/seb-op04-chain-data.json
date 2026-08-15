@@ -2,8 +2,8 @@
  "archive_id": "seb-op04-evidence-chain",
  "archive_name_zh": "OP-04 配对试点全过程证据链档案",
  "archive_name_en": "OP-04 paired-pilot end-to-end evidence-chain archive",
- "version": "0.2.0",
- "issued_on": "2026-08-12",
+ "version": "0.3.0",
+ "issued_on": "2026-08-15",
  "status": "draft_concept_recommendation",
  "baseline_spec": {
   "spec_id": "service-equivalence-baseline",
@@ -97,7 +97,7 @@
     "ROAD-001": 9105.163,
     "ROAD-002": 904.998,
     "ROAD-003": 888.279,
-    "ROAD-004": 1051.196,
+    "ROAD-004": 1025.296,
     "ROAD-005": 8216.851
    },
    "ai_off_declared_network_length_m": 17322.014,
@@ -110,8 +110,8 @@
  "stage_2_ai_analysis": {
   "stage_zh": "环节二：AI 分析",
   "stage_en": "Stage 2: AI analysis",
-  "method_zh": "把五条提交中心线在互相交点处打断成图，节点以到网络最近点的直线接入段（stub）挂接，接入段长度计入行程；在 AI 开启与 AI 关闭两套边集合上分别求最短网络行程。",
-  "method_en": "The five submitted centrelines are noded at their mutual intersections to form a graph. Each point attaches by a straight access stub to the nearest point on the network, and the stub length counts against the trip. Shortest network trips are then computed on the AI-on and AI-off edge sets separately.",
+  "method_zh": "把五条提交中心线在互相交点处打断成图，节点以到网络最近点的直线接入段（stub）挂接，接入段长度计入行程；在 AI 开启与 AI 关闭两套边集合上分别求最短网络行程。自档案 v0.3.0 起采用接口固定口径：每个节点的物理挂接线在全部五条提交中心线上确定一次（门前的路不因 AI 开关而改变）；在任一状态中，节点只经该接口线进入网络，接口线不在该状态边集即判不可达；备选态新增的线段属于建设行为，可作为新的接口候选。此前版本采用状态内最近挂接，AI 关闭时挂接线可能悄然换线，既高估可达性、又掩盖未经证明的接口。",
+  "method_en": "The five submitted centrelines are noded at their mutual intersections to form a graph. Each point attaches by a straight access stub to the nearest point on the network, and the stub length counts against the trip. Shortest network trips are then computed on the AI-on and AI-off edge sets separately. From archive v0.3.0 the fixed-interface rule applies: each node's physical attachment line is resolved once on all five submitted centrelines (the lane outside a door does not change when AI is switched off); in any state the node enters the network only through that interface line, and if the line is absent from the state's edge set the node is unreachable. Lines newly added by an alternative are build actions and may serve as new interface candidates. Earlier versions attached to the nearest line within each state, which could silently switch lines once AI was off — overstating reachability and hiding the unproven interface.",
   "ai_off_edge_rule": {
    "rule_type": "declared_independence_token",
    "read_from": "geometry/roads.geojson · properties.design_role",
@@ -166,16 +166,16 @@
  "stage_3_alternatives": {
   "stage_zh": "环节三：空间备选",
   "stage_en": "Stage 3: spatial alternatives",
-  "derivation_zh": "两个备选不是先想好再去验证，而是由环节二的断点位置直接推出：断点在 ROAD-001 与 ROAD-005 之间缺少一条声明为 AI 关闭等价的东西向连接，因此备选只能是把既有的一条横向接口升级，或者把既有的一条纵向安静线延伸过去。两者穷尽了在不新增第三类要素前提下的处置方式。",
-  "derivation_en": "The two alternatives were not chosen in advance and then tested. They follow directly from where the break sits: between ROAD-001 and ROAD-005 there is no east-west link declared equivalent once AI is off, so the only moves are to upgrade one existing cross link or to extend one existing quiet line across. Between them they exhaust the options that add no third class of element.",
+  "derivation_zh": "两个备选不是先想好再去验证，而是由环节二的断点位置直接推出：断点在于市场组团的实际接口线 ROAD-004 未声明 AI 关闭等价，因此备选只能是把这条既有接口升级（ALT-A），或在站点范围以南新增一条同样直接服务两个接入点的地面连接（ALT-B）。两案工程量几乎相同，差别在依赖：A 继承接口线原有的站点、道路与市政三类主体依赖，B 只引入用地权属与地面连续性核验。",
+  "derivation_en": "The two alternatives were not chosen in advance and then tested. They follow directly from the stage-2 breakpoint: the market cluster's actual interface line, ROAD-004, carries no AI-off equivalence declaration, so the only moves are to upgrade that existing interface (ALT-A) or to add a new ground link south of the station range serving the same two access points (ALT-B). The works quantities are nearly identical; the difference is dependency — A inherits the interface line's station, road and utility dependencies, while B introduces only land-tenure and ground-continuity verification.",
   "alternatives": [
    {
     "alt_id": "ALT-A",
     "name_zh": "直接路径改线：横向接口升级",
     "name_en": "Direct-route option: upgrade the cross link",
-    "action_zh": "把 ROAD-004 大钟寺四象限包容采用接口自与 ROAD-001 的交点向东、至覆盖 OP-08 与 OP-09 接入点的一段，升级为声明 AI 关闭后等价的连续通行段：固定多通道导视、连续无障碍地面、有人求助位。",
-    "action_en": "Upgrade the stretch of ROAD-004, the Dazhongsi four-quadrant inclusive adoption link, from its crossing with ROAD-001 east far enough to cover the access points of OP-08 and OP-09, into a continuous passage declared equivalent once AI is off: fixed multichannel wayfinding, continuous step-free ground, a staffed help position.",
-    "works_length_m": 615.334,
+    "action_zh": "把 ROAD-004 大钟寺四象限包容采用接口自与 ROAD-001 的交点起、沿接口向市场一侧延伸至覆盖 OP-08 与 OP-09 接入点的一段，升级为声明 AI 关闭后等价的连续通行段：固定多通道导视、连续无障碍地面、有人求助位。",
+    "action_en": "Upgrade the stretch of ROAD-004, the Dazhongsi four-quadrant inclusive adoption link, from its crossing with ROAD-001 toward the market side far enough to cover the access points of OP-08 and OP-09, into a stretch declared equivalent once AI is off: fixed multi-channel wayfinding, continuous accessible ground, a staffed help position.",
+    "works_length_m": 281.975,
     "works_type": "upgrade_of_existing_centreline",
     "new_geometry_added": false,
     "dependency_classes_introduced": [
@@ -189,9 +189,9 @@
     "alt_id": "ALT-B",
     "name_zh": "安静替代路径增补：纵向线南端西延",
     "name_en": "Quiet-route option: extend the south end of the parallel line",
-    "action_zh": "自 ROAD-005 低刺激安静替代路线的现状南端向西增补一段地面连接，接入 ROAD-001 通用可达底线；该段位于 ROAD-004 以南，不穿越站点范围。",
-    "action_en": "Add a ground link running west from the present south end of ROAD-005, the low-stimulation quiet alternative route, into ROAD-001, the universal-access baseline. The link sits south of ROAD-004 and crosses no station area.",
-    "works_length_m": 273.491,
+    "action_zh": "自 ROAD-001 通用可达底线于 OP-09 感官负荷调节点同纬度处向西增补一段地面连接，伸至市场组团西缘接入点；该段位于 ROAD-004 以南，不穿越站点范围。",
+    "action_en": "Add a ground link running west from ROAD-001, the universal-access baseline, at the latitude of OP-09, the sensory-load node, reaching the western access point of the market cluster; the link sits south of ROAD-004 and stays clear of the station range.",
+    "works_length_m": 281.982,
     "works_type": "new_conceptual_link",
     "new_geometry_added": true,
     "dependency_classes_introduced": [
@@ -201,7 +201,7 @@
     "dependency_basis_zh": "ROAD-005 的 design_role 原文为 parallel low-sensory route with no AI dependency，增补段与其同类，不引入新的依赖类别；但增补段本身仍需用地权属与地面连续性的现场核验。"
    }
   ],
-  "works_ratio_b_over_a": 0.444
+  "works_ratio_b_over_a": 1
  },
  "stage_4_ai_off_counterfactual": {
   "stage_zh": "环节四：AI 关闭反事实",
@@ -231,32 +231,32 @@
   "expected_results": {
    "tolerance_m": 0.0005,
    "rounding": "0.001 m",
-   "origin_access_stub_m": 17.089,
+   "origin_access_stub_m": 0.011,
    "origin_attached_to": "ROAD-001",
    "rows": [
     {
      "state_id": "BASE_ON",
      "task_id": "T1",
      "destination_attached_to": "ROAD-004",
-     "destination_access_stub_m": 88.816,
-     "network_m": 499.906,
-     "total_m": 605.811,
+     "destination_access_stub_m": 55.505,
+     "network_m": 187.998,
+     "total_m": 243.514,
      "reachable": true
     },
     {
      "state_id": "BASE_ON",
      "task_id": "T2",
      "destination_attached_to": "ROAD-004",
-     "destination_access_stub_m": 55.527,
-     "network_m": 670.838,
-     "total_m": 743.454,
+     "destination_access_stub_m": 188.776,
+     "network_m": 281.992,
+     "total_m": 470.78,
      "reachable": true
     },
     {
      "state_id": "BASE_OFF",
      "task_id": "T1",
-     "destination_attached_to": "ROAD-005",
-     "destination_access_stub_m": 170.923,
+     "destination_attached_to": null,
+     "destination_access_stub_m": null,
      "network_m": null,
      "total_m": null,
      "reachable": false
@@ -264,8 +264,8 @@
     {
      "state_id": "BASE_OFF",
      "task_id": "T2",
-     "destination_attached_to": "ROAD-005",
-     "destination_access_stub_m": 341.854,
+     "destination_attached_to": null,
+     "destination_access_stub_m": null,
      "network_m": null,
      "total_m": null,
      "reachable": false
@@ -274,36 +274,36 @@
      "state_id": "ALT_A_OFF",
      "task_id": "T1",
      "destination_attached_to": "ALT-A-UPGRADE",
-     "destination_access_stub_m": 88.816,
-     "network_m": 499.906,
-     "total_m": 605.811,
+     "destination_access_stub_m": 55.505,
+     "network_m": 187.998,
+     "total_m": 243.514,
      "reachable": true
     },
     {
      "state_id": "ALT_A_OFF",
      "task_id": "T2",
      "destination_attached_to": "ALT-A-UPGRADE",
-     "destination_access_stub_m": 55.527,
-     "network_m": 670.838,
-     "total_m": 743.454,
+     "destination_access_stub_m": 188.776,
+     "network_m": 281.992,
+     "total_m": 470.78,
      "reachable": true
     },
     {
      "state_id": "ALT_B_OFF",
      "task_id": "T1",
-     "destination_attached_to": "ROAD-005",
-     "destination_access_stub_m": 170.923,
-     "network_m": 641.919,
-     "total_m": 829.931,
+     "destination_attached_to": "ALT-B-LINK",
+     "destination_access_stub_m": 243.585,
+     "network_m": 372.891,
+     "total_m": 616.487,
      "reachable": true
     },
     {
      "state_id": "ALT_B_OFF",
      "task_id": "T2",
-     "destination_attached_to": "ROAD-005",
-     "destination_access_stub_m": 341.854,
-     "network_m": 497.576,
-     "total_m": 856.52,
+     "destination_attached_to": "ALT-B-LINK",
+     "destination_access_stub_m": 0,
+     "network_m": 468.674,
+     "total_m": 468.685,
      "reachable": true
     }
    ],
@@ -313,21 +313,21 @@
      "T2": 1.0
     },
     "alt_b_trip_ratio_over_ai_on": {
-     "T1": 1.37,
-     "T2": 1.152
+     "T1": 2.532,
+     "T2": 0.996
     },
     "alt_b_trip_delta_m": {
-     "T1": 224.12,
-     "T2": 113.066
+     "T1": 372.973,
+     "T2": -2.095
     },
-    "ai_off_approach_ratio_over_ai_on": {
-     "OP-08": 1.924,
-     "OP-09": 6.157
+    "alt_b_approach_ratio_over_ai_on": {
+     "OP-08": 4.389,
+     "OP-09": 0
     }
    }
   },
-  "finding_zh": "基线 AI 关闭状态下，T1 与 T2 均不可达。这不是绕行变远，而是提交几何中不存在一条不依赖 AI 的连续路径把 OP-04 与同区两个服务终点连起来。与之并列的第二项发现是接入距离：AI 关闭后 OP-08 的接入段由 88.816 米增至 170.923 米，OP-09 由 55.527 米增至 341.854 米，后者是 6.157 倍。",
-  "finding_en": "In the AI-off baseline neither T1 nor T2 is reachable. This is not a longer detour: the submitted geometry holds no continuous route independent of AI that joins OP-04 to either service endpoint in its own key area. A second finding sits alongside it. Once AI is off, the access stub of OP-08 grows from 88.816 m to 170.923 m and that of OP-09 from 55.527 m to 341.854 m, the latter a factor of 6.157."
+  "finding_zh": "在接口固定口径下，AI 关闭态的结论比换挂口径更直接：OP-08 与 OP-09 的物理接口线 ROAD-004 未声明 AI 关闭等价，两点在 BASE_OFF 态没有任何挂接，判为不可达——断点不再表现为“绕行多远”，而是“接口本身未被证明”。ALT-A 升级既有接口后两项任务行程与 AI 开启态完全相同；ALT-B 新增南侧地面连接后 OP-09 恰位于新线上（接入段为零，T2 全程甚至略短于开启态），OP-08 需向南绕行约 373 米。两案各自的成立条件仍未经现场核验。",
+  "finding_en": "Under the fixed-interface rule the AI-off conclusion is more direct than under re-attachment: the physical interface line of OP-08 and OP-09, ROAD-004, carries no AI-off equivalence declaration, so in BASE_OFF neither node has any attachment at all and both tasks are unreachable — the breakpoint is no longer \"how far the detour runs\" but \"the interface itself is unproven\". With ALT-A upgrading the existing interface, both trips equal the AI-on state exactly. With ALT-B adding the southern ground link, OP-09 sits on the new line itself (zero access stub; the T2 trip is even marginally shorter than AI-on), while OP-08 detours about 373 m south. The conditions for either alternative remain unverified on site."
  },
  "stage_5_dual_review": {
   "stage_zh": "环节五：机器与人工双重复核",
@@ -539,6 +539,6 @@
    "1": "存在读数不一致或判定不通过 / a figure disagrees or a check fails"
   }
  },
- "archive_revision_note_zh": "v0.2.0（2026-08-15）：baseline_spec.required_version 随规范演进两次更新（0.2.0→0.3.0→0.3.1）；此前两次为原地改写且档案版本未递增，登记于 CR-2026-08-15-005 的 FS-054。入档读数与判定期望自 v0.1.0 起零变化",
- "archive_revision_note_en": "v0.2.0 (2026-08-15): baseline_spec.required_version followed the spec twice (0.2.0→0.3.0→0.3.1); both earlier edits were in place without an archive version increment, registered as FS-054 in CR-2026-08-15-005. Archived figures and verdict expectations are unchanged since v0.1.0"
+ "archive_revision_note_zh": "v0.3.0（2026-08-15）：三项变更一并登记。①几何修正驱动的全量读数更新——大钟寺重点区 PROV-KEY-003 及 OP-04/08/09、ROAD-004 由北京北站一带移至真实大钟寺板块（原临时框线与地名错位约 2.4 km），全部长度、行程与比值按新几何重算；②口径修订——节点挂接自本版起采用接口固定规则（见环节二方法），BASE_OFF 由“换挂后跨分量不可达”改判“接口线缺席不可达”，结论同为不可达、理由更接近空间事实；ALT-B 随节点位置由“ROAD-005 南端西延”重定义为“ROAD-001 于 OP-09 同纬西延”，原有“避开站点范围的第二接口”意图不变；③复演器修复——attach 在同一线段上二次挂接时未同步分段记录、会绕过首次切点虚增行程，已修复。 历史：v0.2.0（2026-08-15）：baseline_spec.required_version 随规范演进两次更新（0.2.0→0.3.0→0.3.1）；此前两次为原地改写且档案版本未递增，登记于 CR-2026-08-15-005 的 FS-054。入档读数与判定期望自 v0.1.0 起零变化",
+ "archive_revision_note_en": "v0.3.0 (2026-08-15): three changes registered together. (1) Geometry-driven full re-reading — the Dazhongsi key area PROV-KEY-003 with OP-04/08/09 and ROAD-004 moved from the Beijing North Station vicinity to the actual Dazhongsi district (the provisional frame had sat about 2.4 km from its namesake); every length, trip and ratio recomputed on the new geometry. (2) Rule revision — node attachment now follows the fixed-interface rule (see stage-2 method); BASE_OFF changes from \"re-attached across components, unreachable\" to \"interface line absent, unreachable\" — same verdict, a reason closer to the spatial fact; ALT-B is redefined from \"westward link off the ROAD-005 south end\" to \"westward link off ROAD-001 at the OP-09 latitude\", preserving the original intent of a second interface clear of the station range. (3) Replayer fix — attach() did not keep the segment list in step when hooking twice onto one segment, bridging past the first cut and inflating trips; fixed. History: v0.2.0 (2026-08-15): baseline_spec.required_version followed the spec twice (0.2.0→0.3.0→0.3.1); both earlier edits were in place without an archive version increment, registered as FS-054 in CR-2026-08-15-005. Archived figures and verdict expectations are unchanged since v0.1.0"
 }

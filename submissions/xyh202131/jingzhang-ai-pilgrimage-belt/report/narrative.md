@@ -4,6 +4,12 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 33 Evidence-integrity enforcement & HTML publication metadata / 第 33 轮证据完整性强制与 HTML 出版元数据
+
+第 33 轮在第 32 轮 PR #2829 合并（`2110d36d94442161f53fa4c0a306881ac1dc9e2d` 进入 `origin/main`）后开始，规则层相对第 32 轮无变化。本轮交付两部分：(1) 证据完整性强制机制——评审交接索引生成器在每次再生成时强制执行并记录五项不变量（标记目标解析 50/50、23/23、80/80、79/79；中英文标记值多集逐类一致；标题数 86/86；路由锚点 0 缺失），任何违反使生成失败；索引新增 `evidence_integrity` 块；(2) HTML 出版元数据补全——四个 HTML 表面此前均缺 `<meta name="description">`，已按语言与边界披露补齐，报告页 description 在每次重渲染后重施（与第 23 轮媒体链接修复同款维护约定）。外部开放 PR #1471 状态未变，按第 30—32 轮同款操作者决定继续并监控。
+
+Round 33 began after Round 32 PR #2829 merged (`2110d36d94442161f53fa4c0a306881ac1dc9e2d` entered `origin/main`); the rule layer is unchanged since Round 32. Two deliverables: (1) an evidence-integrity enforcement mechanism — the review handoff index generator now enforces and records five invariants on every regeneration (marker target resolution 50/50, 23/23, 80/80, 79/79; identical zh/en marker value multisets per kind; heading counts 86/86; 0 missing route anchors) and any violation fails generation; the index gains an `evidence_integrity` block; (2) HTML publication metadata completion — all four HTML surfaces previously lacked `<meta name="description">`; one is now added per surface consistent with its language and boundary disclosure, with report descriptions re-applied after every re-render (same maintenance convention as the Round 23 media-link fix). External open PR #1471 is unchanged; the operator decision to proceed while monitoring continues, as in Rounds 30–32.
+
 ## Round 32 Formal core visual metrics compliance / 第 32 轮三项 formal 核心视觉指标合规
 
 第 32 轮在第 31 轮 PR #2823 合并（`31d2fd93ddcc096dc72d21672c4bbb7bec97aed4` 进入 `origin/main`）后开始。规则层发生变化：任务书新增 `formal_visual_metrics_contract`，formal-submission-guide、SKILL.md 与 `visual_review.py` 同步收紧三项核心视觉指标（site_area_sqm/green_ratio/public_space_ratio）的 known/可复算/一致 data-value/复算触发条件要求。本轮重读该规则层并响应：用 pyproj（EPSG:4326→4548）从包内 site_boundary/green_space/public_space 几何复算三项指标，与记录值一致（site_area 差 0.000066 m²、green_ratio 差 4.5e-7、public_space_ratio 差 -2.9e-8）；当前 `visual_review.py` 0 问题。`metrics.json` 自第 17 轮冻结后首次变更——仅为三项核心指标各加一个 `recalculation_trigger` 字段（数值、公式、来源、confidence 不变，旧哈希保留于 round15-baseline 历史快照）；双语视觉指标卡同步标注复算触发条件，data-value 不变。外部开放 PR #1471 状态未变，按第 30/31 轮同款操作者决定继续并监控。
