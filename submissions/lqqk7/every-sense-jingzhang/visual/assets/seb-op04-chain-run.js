@@ -148,9 +148,10 @@ function buildGraph(edgeDefs) {
   return { adj, segs, addV, addE };
 }
 
-function attach(G, xy) {
+function nearestOn(segs, xy, filter) {
   let best = null;
-  for (const s of G.segs) {
+  for (const s of segs) {
+    if (filter && !filter(s)) continue;
     const vx = s.q[0] - s.p[0], vy = s.q[1] - s.p[1];
     const L2 = vx * vx + vy * vy;
     let t = L2 === 0 ? 0 : ((xy[0] - s.p[0]) * vx + (xy[1] - s.p[1]) * vy) / L2;
@@ -159,7 +160,13 @@ function attach(G, xy) {
     const d = dist2(xy, foot);
     if (!best || d < best.d - 1e-9) best = { d, foot, s };
   }
-  if (!best) return null;
+  return best;
+}
+
+/* split the found seg at the foot point.  The split keeps G.segs in step with
+   G.adj (the earlier revision updated only adj, so a second attachment landing
+   on the same original seg silently re-bridged across the first cut). */
+function attachAt(G, best) {
   const kf = G.addV(best.foot);
   if (kf !== best.s.ka && kf !== best.s.kb) {
     const strip = (k, other) => G.adj.set(k, G.adj.get(k).filter((e) => !(e[0] === other && e[2] === best.s.id)));
@@ -167,8 +174,34 @@ function attach(G, xy) {
     strip(best.s.kb, best.s.ka);
     G.addE(best.s.ka, kf, dist2(best.foot, best.s.p), best.s.id);
     G.addE(kf, best.s.kb, dist2(best.foot, best.s.q), best.s.id);
+    const i = G.segs.indexOf(best.s);
+    const s1 = { id: best.s.id, p: best.s.p, q: best.foot, ka: best.s.ka, kb: kf };
+    const s2 = { id: best.s.id, p: best.foot, q: best.s.q, ka: kf, kb: best.s.kb };
+    G.segs.splice(i, 1, s1, s2);
   }
   return { stub: best.d, key: kf, roadId: best.s.id };
+}
+
+/* v0.3 interface rule: a node's physical attachment line is fixed on the FULL
+   submitted network — the lane outside a door does not change when AI is
+   switched off.  In a given state the node enters the graph through that same
+   interface line; if the line is absent from the state's edge set the node is
+   unreachable — unless the state ADDS a new line (a build action), which may
+   serve as a new interface.  Under the previous nearest-in-state rule the
+   attachment could silently jump to a different line once AI was off, which
+   both overstated reachability and hid the untested interface. */
+function attach(G, xy, anchor, addedIds) {
+  if (anchor) {
+    const onAnchor = nearestOn(G.segs, xy, (s) => s.id === anchor.roadId);
+    const onAdded = addedIds && addedIds.length
+      ? nearestOn(G.segs, xy, (s) => addedIds.includes(s.id)) : null;
+    const cand = [onAnchor, onAdded].filter(Boolean);
+    if (!cand.length) return null;
+    const best = cand.reduce((a, b) => (b.d < a.d - 1e-9 ? b : a));
+    return attachAt(G, best);
+  }
+  const best = nearestOn(G.segs, xy, null);
+  return best ? attachAt(G, best) : null;
 }
 
 function shortest(G, src, dst) {
@@ -398,14 +431,25 @@ const R1 = roads.find((r) => r.id === "ROAD-001");
 const R4 = roads.find((r) => r.id === "ROAD-004");
 const R5 = roads.find((r) => r.id === "ROAD-005");
 const altA = (() => {
+  /* upgrade stretch: from the ROAD-001 crossing to whichever of the two
+     access feet lies FARTHER from it along ROAD-004 — direction-free, so the
+     stretch covers both access points on either side of the crossing */
   const t0 = paramOfCross(R4, R1);
-  const t1 = Math.max(paramOfFoot(R4, nodesById["OP-08"].xy), paramOfFoot(R4, nodesById["OP-09"].xy));
+  const t8 = paramOfFoot(R4, nodesById["OP-08"].xy);
+  const t9 = paramOfFoot(R4, nodesById["OP-09"].xy);
+  const t1 = Math.abs(t8 - t0) >= Math.abs(t9 - t0) ? t8 : t9;
   return { id: "ALT-A-UPGRADE", a: pointAt(R4, t0), b: pointAt(R4, t1) };
 })();
 const altB = (() => {
-  const south = R5.a[1] < R5.b[1] ? R5.a : R5.b;
-  const tw = (south[1] - R1.a[1]) / (R1.b[1] - R1.a[1]);
-  return { id: "ALT-B-LINK", a: pointAt(R1, tw), b: south };
+  /* added ground link west from ROAD-001 at the latitude of OP-09 (the
+     sensory-load node), reaching the market cluster's western access: south
+     of ROAD-004, clear of the station range.  The v0.2 archive ran this link
+     from the ROAD-005 south end because the market nodes then sat east of the
+     corridor; with the cluster relocated west, the same intent — a second
+     ground interface that avoids the station crossing — points west. */
+  const y9 = nodesById["OP-09"].xy[1];
+  const tw = (y9 - R1.a[1]) / (R1.b[1] - R1.a[1]);
+  return { id: "ALT-B-LINK", a: pointAt(R1, tw), b: [nodesById["OP-09"].xy[0], y9] };
 })();
 altA.len = dist2(altA.a, altA.b);
 altB.len = dist2(altB.a, altB.b);
@@ -430,25 +474,40 @@ const STATE_EDGES = {
 };
 const tol = arc.stage_4_ai_off_counterfactual.expected_results.tolerance_m;
 const near = (a, b) => a === null || b === null ? a === b : Math.abs(a - b) <= tol;
+/* fixed physical interfaces, resolved once on the full submitted network */
+const gFull = buildGraph(STATE_EDGES.BASE_ON());
+const anchors = {};
+for (const nid of Object.keys(nodesById)) {
+  const best = nearestOn(gFull.segs, nodesById[nid].xy, null);
+  anchors[nid] = { roadId: best.s.id, stub: best.d };
+}
+const STATE_ADDED = { BASE_ON: [], BASE_OFF: [], ALT_A_OFF: [altA.id], ALT_B_OFF: [altB.id] };
 for (const row of arc.stage_4_ai_off_counterfactual.expected_results.rows) {
   const G = buildGraph(STATE_EDGES[row.state_id]());
+  const stateIds = new Set(STATE_EDGES[row.state_id]().map((e) => e.id));
+  const added = STATE_ADDED[row.state_id];
   const t = tasks[row.task_id];
-  const o = attach(G, nodesById[t.origin].xy);
-  const d = attach(G, nodesById[t.destination].xy);
-  const net = shortest(G, o.key, d.key);
+  const hook = (nid) => {
+    const anchor = anchors[nid];
+    if (stateIds.has(anchor.roadId) || added.length) return attach(G, nodesById[nid].xy, anchor, added.filter((x) => stateIds.has(x)));
+    return null;
+  };
+  const o = hook(t.origin);
+  const d = hook(t.destination);
+  const net = o && d ? shortest(G, o.key, d.key) : null;
   const total = net === null ? null : o.stub + net + d.stub;
   const label = row.state_id + " " + row.task_id + " " + t.origin + "→" + t.destination;
   let bad = false;
-  if (!near(r3(o.stub), arc.stage_4_ai_off_counterfactual.expected_results.origin_access_stub_m)) { fail(label + " 起点接入段 " + r3(o.stub)); bad = true; }
-  if (!near(r3(d.stub), row.destination_access_stub_m)) { fail(label + " 终点接入段 " + r3(d.stub) + " ≠ " + row.destination_access_stub_m); bad = true; }
-  if (d.roadId !== row.destination_attached_to) { fail(label + " 终点挂接于 " + d.roadId + " ≠ " + row.destination_attached_to); bad = true; }
+  if (!near(o ? r3(o.stub) : null, row.origin_access_stub_m !== undefined ? row.origin_access_stub_m : arc.stage_4_ai_off_counterfactual.expected_results.origin_access_stub_m)) { fail(label + " 起点接入段 " + (o ? r3(o.stub) : "null")); bad = true; }
+  if (!near(d ? r3(d.stub) : null, row.destination_access_stub_m)) { fail(label + " 终点接入段 " + (d ? r3(d.stub) : "null") + " ≠ " + row.destination_access_stub_m); bad = true; }
+  if ((d ? d.roadId : null) !== row.destination_attached_to) { fail(label + " 终点挂接于 " + (d ? d.roadId : "null") + " ≠ " + row.destination_attached_to); bad = true; }
   if ((net !== null) !== row.reachable) { fail(label + " 可达性 " + (net !== null) + " ≠ " + row.reachable); bad = true; }
-  if (!near(r3(net), row.network_m)) { fail(label + " 网络行程 " + r3(net) + " ≠ " + row.network_m); bad = true; }
-  if (!near(r3(total), row.total_m)) { fail(label + " 全程 " + r3(total) + " ≠ " + row.total_m); bad = true; }
+  if (!near(net === null ? null : r3(net), row.network_m)) { fail(label + " 网络行程 " + (net === null ? "null" : r3(net)) + " ≠ " + row.network_m); bad = true; }
+  if (!near(total === null ? null : r3(total), row.total_m)) { fail(label + " 全程 " + (total === null ? "null" : r3(total)) + " ≠ " + row.total_m); bad = true; }
   if (!bad) {
     console.log("    " + label.padEnd(34) + (row.reachable
       ? "全程 / total " + row.total_m + " m（接入 " + row.destination_access_stub_m + " m，挂接 " + row.destination_attached_to + "）"
-      : "不可达 / unreachable（AI 关闭态无连续路径 / no continuous AI-independent route）"));
+      : "不可达 / unreachable（接口线不在 AI 关闭边集 / interface line absent from the AI-off edge set）"));
   }
 }
 const der = arc.stage_4_ai_off_counterfactual.expected_results.derived;
@@ -466,11 +525,26 @@ for (const tk of ["T1", "T2"]) {
   console.log("    " + tk + " 行程比 / trip ratio : ALT-A " + rA.toFixed(3) + " · ALT-B " + rB.toFixed(3)
     + "（+" + dB.toFixed(3) + " m）");
 }
-for (const tk of ["T1", "T2"]) {
-  const dest = tasks[tk].destination;
-  const ratio = r3(stubOf("BASE_OFF", tk) / stubOf("BASE_ON", tk));
-  if (ratio !== der.ai_off_approach_ratio_over_ai_on[dest]) fail(dest + " 接入距离比 " + ratio);
-  console.log("    " + dest + " 接入距离比 关闭/开启 / approach ratio off over on : " + ratio.toFixed(3));
+if (der.ai_off_approach_ratio_over_ai_on) {
+  /* v0.2 archives: AI-off re-attachment ratio (meaningful only under the old
+     nearest-in-state rule, where an off attachment still existed) */
+  for (const tk of ["T1", "T2"]) {
+    const dest = tasks[tk].destination;
+    const ratio = r3(stubOf("BASE_OFF", tk) / stubOf("BASE_ON", tk));
+    if (ratio !== der.ai_off_approach_ratio_over_ai_on[dest]) fail(dest + " 接入距离比 " + ratio);
+    console.log("    " + dest + " 接入距离比 关闭/开启 / approach ratio off over on : " + ratio.toFixed(3));
+  }
+}
+if (der.alt_b_approach_ratio_over_ai_on) {
+  /* v0.3 archives: under the fixed-interface rule BASE_OFF has no attachment
+     at all, so the meaningful access-cost ratio is ALT-B (the new interface)
+     against the AI-on baseline */
+  for (const tk of ["T1", "T2"]) {
+    const dest = tasks[tk].destination;
+    const ratio = r3(stubOf("ALT_B_OFF", tk) / stubOf("BASE_ON", tk));
+    if (ratio !== der.alt_b_approach_ratio_over_ai_on[dest]) fail(dest + " ALT-B 接入距离比 " + ratio);
+    console.log("    " + dest + " ALT-B 接入距离比 对开启 / ALT-B approach ratio over AI-on : " + ratio.toFixed(3));
+  }
 }
 console.log("");
 
