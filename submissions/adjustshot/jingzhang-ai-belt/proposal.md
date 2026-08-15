@@ -399,6 +399,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **口径澄清**：`building_footprint_area_sqm = 310,807㎡` 是"众智园全栈圣殿"单体概念建筑的基底（BLDG-001，`geometry_role=design_proposal`），不是全片区现状建筑基底，不应用于全片区总量反推。此前评审所指"算术矛盾"即源于此口径错配，现已更正。
 - **复算路径**：官方 FAR 控制条件与建筑面积普查发布后，按 EPSG:4548 全量重算，替换全部情景值。
 
+![建筑规模情景推算链图](assets/figures/p5-3_volume_chain.png)
+
 ## 交通、轨道、市政与公共服务设施
 
 交通方案回应公告对轨道站点一体化、道路微循环、慢行断点、对外交通、停车和绿色交通系统的要求 [depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]。市政和公共服务设施覆盖 AI 产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源和端侧算力；缺少管线、能源、排水、防洪、消防等工程资料时，列为正式深化前置条件 。

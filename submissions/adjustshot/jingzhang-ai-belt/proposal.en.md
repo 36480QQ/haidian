@@ -304,7 +304,7 @@ To locate this proposal within the known sample lineage, the following 10 global
 
 ### External Regional Synergy (linkages with Beijing AI strategy + Jing-Jin-Ji)
 
-![External regional synergy (concept)](assets/figures/regional-synergy.png)
+![External regional synergy (concept)](assets/figures/regional-synergy.en.png)
 
 While the proposal focuses on Haidian's 43.6 km², it must structurally echo the capital-wide AI layout and the Jing-Jin-Ji coordinated-development strategy, avoiding internal closure:
 
@@ -400,6 +400,8 @@ The land use plan follows public standards for territorial survey, planning and 
 - **Denominator clarification**: `building_footprint_area_sqm = 310,807 m²` is the footprint of the single "Zhongzhi Full-Stack Sanctuary" concept building (BLDG-001, `geometry_role=design_proposal`), NOT the district-wide existing footprint, and must not be used to back-calculate total volume. The "arithmetic conflict" noted in prior review stemmed from this denominator mismatch and has been corrected.
 - **Recalculation path**: once official FAR control and floor-area census are published, all scenario values are recomputed in EPSG:4548.
 
+![Building-scale scenario derivation chain](assets/figures/p5-3_volume_chain.en.png)
+
 ## Transport, Rail, Municipal and Public Services
 
 The transport plan responds to requirements for station integration, road micro-circulation, slow-traffic gaps, external transport, parking and green transport [depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]. Municipal and public service facilities cover AI industry services, innovation service platforms, talent living services, new infrastructure, distributed energy and edge computing; where pipeline, energy, drainage, flood or fire data are missing, they are listed as prerequisites for formal deepening [depth:municipal_new_infrastructure].
@@ -416,7 +418,7 @@ The blue-green space plan takes the Jing-Zhang Heritage Park vitality belt as th
 
 **East-west stitching and north-south connection**: a "fishbone" network of connector routes with the corridor as spine (9 branch roads opened in phase 2, suggested to be densified further), activation of space under the Metro Line 13 viaduct, ground-floor opening of parks to streets, and barrier-free connection; north-south continuity via a continuous corridor, dual gateways (Qinghe Station/Xizhimen) and water-system connectivity.
 
-![Public-space component kit (concept)](assets/figures/component-kit.png)
+![Public-space component kit (concept)](assets/figures/component-kit.en.png)
 
 **Public-space component kit (6 reusable modules)**: ① AI Station (smart inquiry + AED + canopy + edge compute) ② Corridor Lantern (corridor lighting + wayfinding + event publishing) ③ Wayfinding Kit (open-source, large-print/Braille/children versions) ④ Rail-tie Pavers (retained rail ties; heritage+AI dual exhibit every 500 m) ⑤ Seating Node (bench + armrest + wind-rain porch, spacing ≤ 200 m) ⑥ Memorial Plaque (rail-tie stone / paver name inscriptions, open-source contribution honor wall). All modules share the Ren-shape motif and the three-color system for direct reuse in stations, the corridor and key districts.
 
