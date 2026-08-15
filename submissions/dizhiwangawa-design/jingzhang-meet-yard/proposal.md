@@ -370,6 +370,21 @@ AI 创新生态图谱须包含八要素：土地、空间、产业、资金、�
 
 每个案例的不可迁移条件（示例）：榜鹅的园区权属与运营主体结构与海淀多主体街区不同；Decidim 的线上参与不能替代线下无障碍入口；Station F 的单一运营主体模式不能直接套用于公共空间的多元共治。执行端在补充一手来源时须同步记录上述 `non_transferable_condition`。
 
+#### 06.2.4 政策与现状锚点（v1.5 新增，background）
+
+以下政策与现状事实已于 2026-08-15 经公开来源核验并登记（`sources.json`），用途为背景叙事与机制参考，**不升级为空间控制结论**；涉及地块强度、权属、审批的数值一律以官方审定图则为准：
+
+| 锚点 | 事实（公开报道/政府公开文件口径） | 来源 |
+| --- | --- | --- |
+| 沿线街区控规获批 | 京张铁路遗址公园沿线街区控制性详细规划获批，一条"绿带"建设引领区域城市更新（2026-08 公开报道） | [source:POLICY-CONTROL-PLAN] |
+| 相邻更新项目 | 蓝景丽家将变身国际交流中心，作为百年京张 AI 创新带海淀新动作（2026-08-03 北京日报） | [source:POLICY-LANJINGLIJIA] |
+| AI 原点社区定位 | 北京 AI 原点社区被公开报道为"从 0 到 1"的试验田（北京日报） | [source:POLICY-ORIGIN-COMMUNITY] |
+| 海淀 AI 街区产业 | 海淀 3 平方公里 AI 街区，超七成企业涉人工智能（2026-06 光明网） | [source:POLICY-AI-DISTRICT-3KM] |
+| 城市更新导则 | 《海淀区城市更新导则（2025 年版）》已正式印发（2025-11 区政府门户公布） | [source:POLICY-RENEWAL-GUIDELINE-2025] |
+| 遗址公园现状 | 京张铁路遗址公园二期全线开放，形成 9 公里复合型城市遗址绿廊（2026-08-06 北京日报） | [source:FACT-PARK-PHASE2] |
+
+**对方案的影响（概念建议）**：控规获批与公园二期开放是"官方 polygon 发布前"最接近现状的事实锚点——本包主脊叙事（9.6–9.8 km，待核验）与公园公开的 9 公里口径可互为参照，但精确中心线、边界与法定控制指标仍以官方审定图则为准（§12.1 重算承诺不变）；蓝景丽家等相邻项目数值只属于具名地块，不移植到本方案三处 provisional 重点区 [source:POLICY-LANJINGLIJIA] [depth:risk_missing_data]。
+
 #### 06.2.3 八要素生态图谱（agent.2 ecosystem_map）
 
 AI 创新生态图谱必须包含八类要素：**土地、空间、产业、资金、人才、算力、数据、场景**。每条关系记录 `from_id/to_id/relation/service_or_resource/responsible_role/source_id/spatial_feature_id/capacity_or_unknown/access_rule/output_metric/status`；不得用机构 logo、箭头数量或未经核实企业名单代替机制。土地、资金、政策、容量和供应者若无正式来源，一律标 `待研究/待协商` [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]。
