@@ -58,13 +58,20 @@
         "submissions/zyh20060703/jingzhang-ai-belt/self_check.json",
         "submissions/zyh20060703/jingzhang-ai-belt/sources.json",
         "submissions/zyh20060703/jingzhang-ai-belt/standard_matrix.json",
+        "submissions/zyh20060703/jingzhang-ai-belt/visual/assets/governance/accession-review.schema.json",
+        "submissions/zyh20060703/jingzhang-ai-belt/visual/assets/governance/error-disclosure.schema.json",
+        "submissions/zyh20060703/jingzhang-ai-belt/visual/assets/governance/example-error-disclosure.json",
+        "submissions/zyh20060703/jingzhang-ai-belt/visual/assets/governance/example-pairing-contract.json",
+        "submissions/zyh20060703/jingzhang-ai-belt/visual/assets/governance/example-sc05-accession-review.json",
+        "submissions/zyh20060703/jingzhang-ai-belt/visual/assets/governance/pairing-contract.schema.json",
+        "submissions/zyh20060703/jingzhang-ai-belt/visual/assets/governance/validation-report.json",
         "submissions/zyh20060703/jingzhang-ai-belt/visual/index.en.html",
         "submissions/zyh20060703/jingzhang-ai-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/zyh20060703/jingzhang-ai-belt": "formal"
       },
-      "total_bytes": 33791564,
+      "total_bytes": 33819759,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -139,15 +146,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 9,
+        "known_metric_refs_required": 12,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
+          "source": 8,
           "standard": 5,
           "depth": 15,
-          "data": 14,
-          "metric": 5
+          "data": 21,
+          "metric": 8
         }
       }
     },

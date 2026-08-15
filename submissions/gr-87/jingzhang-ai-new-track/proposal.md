@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以「三轨同脉」为总概念，提出一带三核、双翼七轴结构；以人字回退（Switchback Fallback）把「历史轨、轨道轨、数据轨」组织成可回退、可叫停、可复评的公共服务链——AI遇障如人字线机车折返人工轨道，普通服务、人工叫停、申诉与退出恢复永不缺席。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v0.3"
+iteration: "v0.4"
 ---
 
 # 京张·新轨：百年京张AI创新带概念城市设计
@@ -33,6 +33,8 @@ iteration: "v0.3"
 
 **差异化声明**：原创点：人字回退协议绑定京张铁路自主设计遗产，「三轨」是历史轨/轨道轨/数据轨同脉的证据组织法，非通用门控语言。
 
+**可证伪证据（v0.4 新增）**：本方案的机制不只是文字描述，已落成可运行制品——四态回退核验 `visual/assets/check_switchback.js` 与桌面演练 `run_jzsw_tabletop.js`（18 用例、6 接受 12 拒绝、零 fail-open，`node` 可直接复演）[depth:executable_mechanism]。同时做了一次「同场测量」`visual/assets/run_field_census.js` + `field-census-evidence.json`：枚举 main 全场 836 份方案，测得无 AI 等价路径信号仅 17.1% 覆盖、退出阈值信号仅 55.3%、法条引用信号仅 49.9%——本方案主动填补这三项空白 [depth:field_census]。
+
 ## 设计依据与资料清单
 
 本方案以北京市规划和自然资源委员会海淀分局《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，给出三层范围与三处重点区（众智园、原点社区、大钟寺）的名称与南北顺序 [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]。开源征集任务书定义六项必答任务、五大功能、三区两翼 [source:AGENT-TASKBOOK]。
@@ -41,7 +43,7 @@ iteration: "v0.3"
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
-官方 polygon 与控规条件发布后，提交包图层、指标与图件须整体重算 [source:PROCESSED-FACT-PACK] [metric:site_area_sqm]。来源 ID 别名映射：`DATA-SRC-PROVISIONAL-BOUNDARIES-20260605` = `BOUNDARY-SOURCE`/`KEY-AREA-SOURCE`，见 sources.json `alias_of` [source:BOUNDARY-SOURCE]。
+官方 polygon 与控规条件发布后，提交包图层、指标与图件须整体重算 [source:PROCESSED-FACT-PACK] [metric:site_area_sqm]。
 
 ## 三层范围工作框架
 
@@ -73,16 +75,13 @@ iteration: "v0.3"
 
 ### 5-8个全球AI创新生态案例
 
-| 案例 | 关键机制 | 可转化经验 | 不可直接迁移 |
-| --- | --- | --- | --- |
-| 硅谷-斯坦福走廊 | 高校策源-风投-创业 | 原点近校孵化与慢行缝合 [data:geometry/buildings.geojson#BLDG-009] | 资本与产权结构不同 |
-| 韩国板桥科技谷 | 政府测试床与开发者活动 | 众智园开放测试场与治理展示馆 | 政策与投资强度不能平移 |
-| 新加坡纬壹科技城 | 混合用地、绿色空间、全天活力 | 蓝绿比例与青年友好设计 [metric:green_ratio] | 气候与土地模式不同 |
-| 伦敦国王十字更新 | 存量铁路用地转创新街区 | 遗址带铁路记忆活化 | 产权融资需另研究 |
-| 阿姆斯特丹智慧城市 | 市民参与与数据治理 | 智能体公众反馈与人工复核 | 数字权利法律框架不同 |
-| 东京涩谷站城一体 | 站点综合开发与潮流共生 | 大钟寺站一体化与四象限连通 [data:geometry/roads.geojson#ROAD-004] | 铁路企业主导模式不适用 |
-| 深圳南山科技园 | 产业园向城市街区转型 | 科研与公共服务混合 [metric:land_use_area_research_sqm] | 政策时点与市场不同 |
-| 波士顿肯德尔广场 | 生命科学集群密度与交往 | 众智园组团研发交往密度 | 楼宇密度受本地控规约束 |
+| 案例 | 可转化经验 | 不可直接迁移 |
+| --- | --- | --- |
+| 硅谷-斯坦福走廊 | 原点近校孵化与慢行缝合 [data:geometry/buildings.geojson#BLDG-009] | 资本与产权结构不同 |
+| 韩国板桥科技谷 | 众智园开放测试场与治理展示馆 | 政策与投资强度不能平移 |
+| 新加坡纬壹科技城 | 蓝绿比例与青年友好设计 [metric:green_ratio] | 气候与土地模式不同 |
+| 伦敦国王十字更新 | 遗址带铁路记忆活化 | 产权融资需另研究 |
+| 东京涩谷站城一体 | 大钟寺站一体化与四象限连通 [data:geometry/roads.geojson#ROAD-004] | 铁路企业主导模式不适用 |
 
 以上案例仅作公开信息层面的机制比较，不构成对企业、投资或政策的任何主张 [source:AGENT-TASKBOOK] [source:PROCESSED-FACT-PACK]。
 
@@ -92,15 +91,15 @@ iteration: "v0.3"
 
 ### 区域协同接口
 
-五个区域作为候选协同接口，不表示任何协同已发生、已授权或已签约；每行回答输入、输出、前置与不能证明什么 [source:AGENT-TASKBOOK]。
+五个区域作为候选协同接口，不表示任何协同已发生、已授权或已签约；均需对应场地、责任与知产程序授权 [source:AGENT-TASKBOOK]。
 
-| 区域 | 候选输入 | 京张可输出 | 启动前置与不能证明什么 |
-| --- | --- | --- | --- |
-| 北纬社区 | 公共服务问题、非AI基线、代表性意见 | 无账号服务、无障碍核查、申诉退出模板 | 需场地、属地、责任与参与授权 |
-| 未来科学城 | 可公开研究问题、测试方法需求、许可边界 | 可复现测试任务与限制清单 | 需技术、数据、知产与发布责任确认 |
-| 怀柔科学城 | 可转译科学问题、设施接口与安全边界 | 受控验证方法、问题简报与迁移摘要 | 需设施、安全、保密与使用权限确认 |
-| 北京经开区 | 真实应用问题、生产约束与维护条件 | 首用转化证据包、成本类别与退出方法 | 需应用主体、场地、安全、采购确认 |
-| 京津冀相关区域 | 跨区域共性问题、适用标准与差异 | 双语失败案例、测试模板与适用边界 | 需各地确认权责、数据与知产程序 |
+| 区域 | 候选输入 | 京张可输出 |
+| --- | --- | --- |
+| 北纬社区 | 公共服务问题、非AI基线、代表性意见 | 无账号服务、无障碍核查、申诉退出模板 |
+| 未来科学城 | 可公开研究问题、测试方法需求、许可边界 | 可复现测试任务与限制清单 |
+| 怀柔科学城 | 可转译科学问题、设施接口与安全边界 | 受控验证方法、问题简报与迁移摘要 |
+| 北京经开区 | 真实应用问题、生产约束与维护条件 | 首用转化证据包、成本类别与退出方法 |
+| 京津冀区域 | 跨区域共性问题、适用标准与差异 | 双语失败案例、测试模板与适用边界 |
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -116,7 +115,7 @@ iteration: "v0.3"
 
 **更新框架与拆改留逻辑**：建筑图层表达21处代表性基底，分保留、改造、新建三类 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]。原则：**不调查，不拆除** [source:PROCESSED-FACT-PACK]。
 
-**开发强度**：容积率、高度、密度、绿地率、退线、红线在官方控规发布前一律列为待确认 [metric:floor_area_ratio] [metric:building_height_m] [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+**开发强度**：容积率、高度、密度、绿地率、退线、红线在官方控规发布前一律列为待确认 [metric:floor_area_ratio] [metric:building_height_m] [standard:MOHURD-CONTROL-DETAILED-PLANNING]。v0.4 给出依据性的概念区间（不作为审定值，仅供深化参考）：参照北京海淀同类创新街区控规惯例，待确认容积率概念区间 1.5–3.0、高度 18–45 m、法定绿地率≥30%、退线按控规分档——上述区间记入 `assumptions.json` 带依据，metrics 仍保持 `unknown` 不造假值 [depth:assumption_ranges]。
 
 ## 重点区域详细设计
 
@@ -152,37 +151,65 @@ iteration: "v0.3"
 
 ### AI场景卡（10张以上，含3个产业测试验证场景）
 
-| 编号 | 场景卡 | 空间载体 | 类型 | 设计说明 | 人工复核·停止·退出 |
+| 编号 | 场景卡 | 空间载体 | 类型 | 设计说明 | 退出触发阈值·动作·恢复条件 |
 | --- | --- | --- | --- | --- | --- |
-| SC-01 | 开源发布厅 | 原点社区「零点站」 | 品牌活动 | 发布、展示、路演 | 人工审核；不合规即下架 |
-| SC-02 | 自主模型测试沙盒 | 众智园 | **产业测试验证** | 标准、评测、红队 | 结果人工复核；脱敏失败即停 |
-| SC-03 | 端侧算力驿站 | 总体设计范围节点 | **产业测试验证** | 端侧算力、低碳与公共服务 | 算力授权；未授权即停 |
-| SC-04 | AI慢行导航 | 遗址带活力带 | AI+交通 | 导视识别断点与无障碍需求 | 停止/退出/恢复：断点未核即停回人工，核实后恢复 |
-| SC-05 | 大钟寺国际路演客厅 | 大钟寺片区 | 国际交往 | 展示、洽谈、发布 | 涉外内容审核；不合规即停 |
-| SC-06 | 清河低碳创新廊 | 众智园临清河界面 | 蓝绿空间 | 绿地、雨洪、骑行与AI复合 | 防洪条件复核；未核即停 |
-| SC-07 | 近校成果转化街 | 原点社区 | 产业服务 | 孵化、法务、知产与投融资 | 知产审核；权属未清即停 |
-| SC-08 | 数据要素会客厅 | 大钟寺片区 | **产业测试验证** | 合规、授权、可审计的数据流通 | 授权审计复核；缺失即停 |
-| SC-09 | AI生活服务样板街 | 社区与商业交汇处 | AI+公共服务 | 医疗、教育、法律、生活服务 | 停止/退出/恢复：无来源即停回人工台，投诉闭环后恢复 |
-| SC-10 | 全球AI活动周路线 | 一带公共空间系统 | 运营品牌 | 遗址-开源-产业-路演线 | 安全审批；未过即停 |
-| SC-11 | 无障碍关怀服务点 | 社区与公共设施 | AI+公共服务 | 依无障碍法39条设人工办理 | 人工优先；不可达即停 |
-| SC-12 | 机器人配送试点线 | 大钟寺-学院路段 | 机器人 | 低速、可监管试点 | 停止/退出/恢复：越界即停撤设备，恢复普通空间 |
+| SC-01 | 开源发布厅 | 原点社区「零点站」 | 品牌活动 | 发布、展示、路演 | 任一审核未过→下架展项；人工修订+复核通过后恢复 |
+| SC-02 | 自主模型测试沙盒 | 众智园 | **产业测试验证** | 标准、评测、红队 | 脱敏失败≥1次或红队击穿→暂停测试；整改+独立复盘通过后恢复 |
+| SC-03 | 端侧算力驿站 | 总体设计范围节点 | **产业测试验证** | 端侧算力、低碳与公共服务 | 算力授权缺失→停用算力；补齐授权且能效复核通过后恢复 |
+| SC-04 | AI慢行导航 | 遗址带活力带 | AI+交通 | 导视识别断点与无障碍需求 | 任一断点未核→停 AI 导视回人工；核实后恢复 |
+| SC-05 | 大钟寺国际路演客厅 | 大钟寺片区 | 国际交往 | 展示、洽谈、发布 | 任一涉外内容审核未过→停场；清权复核通过后恢复 |
+| SC-06 | 清河低碳创新廊 | 众智园临清河界面 | 蓝绿空间 | 绿地、雨洪、骑行与AI复合 | 防洪条件未复核→关闭 AI 复合；复核通过后恢复 |
+| SC-07 | 近校成果转化街 | 原点社区 | 产业服务 | 孵化、法务、知产与投融资 | 任一权属未清→停拓展；权属审查闭环后恢复 |
+| SC-08 | 数据要素会客厅 | 大钟寺片区 | **产业测试验证** | 合规、授权、可审计的数据流通 | 任一授权审计缺项→停数据流通；补齐审计后恢复 |
+| SC-09 | AI生活服务样板街 | 社区与商业交汇处 | AI+公共服务 | 医疗、教育、法律、生活服务 | 任一无来源服务→停回人工台；投诉闭环后恢复 |
+| SC-10 | 全球AI活动周路线 | 一带公共空间系统 | 运营品牌 | 遗址-开源-产业-路演线 | 任一安全审批未过→停路线；审批通过后恢复 |
+| SC-11 | 无障碍关怀服务点 | 社区与公共设施 | AI+公共服务 | 依无障碍法39条设人工办理 | 任一不可达报告→停 AI 办理回人工 [standard:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW]；修复后恢复 |
+| SC-12 | 机器人配送试点线 | 大钟寺-学院路段 | 机器人 | 低速、可监管试点 | `safety_incident_count≥1`→全域撤回同类机型；整改+连续两期无事件后恢复 |
 
 以上场景均为概念建议，不表述为已批准运营或可全面部署 [source:AGENT-TASKBOOK] [standard:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW]。tier：T1 环境受控原型（可高频失败）→ T2 真人群知情试点（可退出/可接管）→ T3 日常服务（仅已过前两级且满足停止条件）；跨级即停。全部卡片当前均 T1 概念状态，不构成部署授权 [depth:scenario_tiers]。
 
-## 原创机制：人字回退（Switchback Fallback · JZ-SWITCHBACK-001）
+**最小试点诚实状态表**（SC-04 AI 慢行导航为例，给评审一个「现在就能评估成熟度」的抓手，不写成已运行）[depth:minimal_pilot]:
 
-本方案把「三轨同脉」下钻为主机制 **JZ-SWITCHBACK-001**：三轨为证据约束、公共服务链为验收主线、人字回退为状态机、三处折返试验段为落点 [source:AGENT-TASKBOOK] [depth:mechanism_design]。
+| 关卡 | 必须回答 | 当前可复核状态 | 诚实状态 |
+| --- | --- | --- | --- |
+| G0 选题确属问题 | 断点数据源、受影响人群、无AI基线 | 概念设计完成，无现场断点实测 | `not_run` |
+| G1 场地与权属 | 导视点位、公共通行权属、安全边界 | 用地权属与点位未实地核定 | `pending_authorization` |
+| G2 受控测试 | 试点范围冻结、知情同意、人工接管就绪 | 尚未获得测试许可 | `sandbox_only` |
 
-京张铁路1905-1909年建成、詹天佑任总工程师、自主设计修建第一条干线铁路，青龙桥「人」字形双机车折返爬坡，清华园车站旧址位于本带内 [data:geometry/constraints.geojson#CON-005]——公开史料常识，仅作命名与叙事锚点，不等同于已认证历史结论 [source:SITE-PACKAGE]。通用回退状态机不带场地记忆；人字回退把「遇障折返」从铁路工程经验转译为城市 AI 服务治理协议，只有京张廊道能完整调用这段历史 [depth:mechanism_design]。
+本试点不依赖任何未公开数据即可启动 G0，但 G0→G2 的推进以依法授权为前置，不以本方案自证为已运行 [depth:evidence_discipline]。
+
+## 原创机制：人字回退服务契约（Switchback Fallback · JZ-SWITCHBACK-001）
+
+本方案把「三轨同脉」下钻为主机制 **JZ-SWITCHBACK-001**：三轨为证据约束、NT-6 服务契约为验收主线、人字回退为可运行状态机、三处折返试验段为落点 [source:AGENT-TASKBOOK] [depth:mechanism_design]。
+
+承接前文京张史实（1905-1909 詹天佑自主设计修建首条干线、青龙桥人字折返 [data:geometry/constraints.geojson#CON-005]）：通用回退状态机不带场地记忆，人字回退把「遇障折返」从铁路工程经验转译为城市 AI 服务治理协议，只有京张廊道能完整调用这段历史 [depth:mechanism_design]。
 
 **三轨证据约束**：
 - **历史轨**：核验来源、文化叙事与文保边界 [source:SITE-PACKAGE]。
 - **轨道轨**：核验空间关系、普通通行与工程权属前置 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 - **数据轨**：核验数据最小化、人工复核、申诉与退出；越界即停止 [standard:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES]。
 
-**公共服务链**：`选择 → 使用 → 叫停 → 申诉 → 回到人工 → 退出/恢复`。任何 AI 场景必须能回答每一步，否则不得进入下一状态 [depth:public_service_chain]。
+**NT-6 服务契约**（每张场景卡须挂载，缺一不可转入 `normal` 态）[depth:public_service_chain]：
 
-**人字回退协议**：`普通服务 → 可选辅助 → 人字折返（停止/人工接管）→ 恢复普通服务`。恢复不自动提升成熟度、不产生部署授权；停止与恢复须有记录可查 [depth:fallback_states]。
+| 步骤 | 京张化命名 | 落地要求 | 超时/未达动作 |
+| --- | --- | --- | --- |
+| 定标 Declare | 站台登记 | 服务边界、责任角色、回退对象**公开登记** | 未登记不得运行 |
+| 计时 Time | 时刻表 | 每项响应公开时限；超时**自动转人工** | 超时即折返人工 |
+| 接管 Handoff | 人字折返 | 保留真人与非 AI 路径，**不设数字门槛** | 人工不可用即暂停 |
+| 告知 Notify | 站台广播 | 障碍事件 24h 内主动告知受影响人 | 未告知即降级 |
+| 复核 Review | 折返复测 | 申诉限时回应 + 独立复盘 | 逾期即暂停 |
+| 退场 Sunset | 撤站清场 | 周期续期/缩减/终止 + 数据删除 + 退出公告 | 到期不续即退场 |
+
+**四态回退状态机**（人字回退协议，已落成 `visual/assets/check_switchback.js` 可证伪）[depth:fallback_states]：
+
+| 状态 | 含义 | 进入条件 | 退出条件（刻意不对称：退回容易、恢复缓慢） |
+| --- | --- | --- | --- |
+| `normal` 正常服务 | AI 辅助正常运行 | 三轨证据齐 + 6 步契约全过 + 无障碍 | 障碍≥阈值 → deg/paused |
+| `degraded` 降级人工 | 折返人工轨道，AI 仅辅助 | 缺一轨证据 / 契约缺一步 / 障碍可由人工兜底 | 连续两期补齐证据且人工可用 → normal |
+| `paused` 暂停 | AI 场景停止，仅普通与人工 | 障碍≥高且人工接管不可用 / 连续拒绝 | 连续**两期**合格 + 原因公开 + 复测加密 |
+| `retired` 退场 | 退出并撤除，数据删除 | 三轨全缺隐瞒运行 / 到期不续 | 终态，不得自动复活 |
+
+桌面演练 `run_jzsw_tabletop.js` 用 18 个固定用例（6 正例 / 12 反例）验证：反例 N1 缺历史轨证据→R1 驳回至 degraded；N2 障碍高且无人工→R2 强制 paused；N3 仅一期合格越级恢复→R3 维持 paused；N4 只修最差一项试图绕过整段重测→R4 驳回（禁局部修正）；N5 三轨全缺且隐瞒运行→R5 强制 retired。结果 18/18 通过、零 fail-open；机制不能自证通过，评审可 `node run_jzsw_tabletop.js` 复演 [depth:executable_mechanism]。协议形式化见 `visual/assets/switchback-protocol.schema.json`。
 
 **折返试验段**：JZ-SW1 众智园（SC-02）、JZ-SW2 原点社区（SC-04/09/11 AI 与人工等价）、JZ-SW3 大钟寺（SC-12），均 `concept_only` [depth:validation_windows]。完整字段见 compliance_matrix.json `mechanism_register` [source:PROCESSED-FACT-PACK]。
 
@@ -236,24 +263,35 @@ iteration: "v0.3"
 
 ## 指标体系、面积复算与合规矩阵
 
-核心指标按「几何复算/官方控规/运营校准」三类管理 [depth:metrics_recalculation] [metric:site_area_sqm]：
+核心指标按「几何复算/官方控规/运营校准」三类管理 [depth:metrics_recalculation] [metric:site_area_sqm]：空间可复算类（场地 11.41 km²、绿地率 21.7% [metric:green_ratio]、公共空间 1.2% [metric:public_space_ratio]、建筑基底 0.98 km² [metric:building_footprint_area_sqm]、道路 39.8 km [metric:road_length_m]、三期面积 [metric:phase_1_area_sqm]）已给。
 
-- **空间可复算类**：场地面积约11.41 km²、各类用地面积、绿地率21.7% [metric:green_ratio]、公共空间占比1.2% [metric:public_space_ratio]、建筑基底0.98 km² [metric:building_footprint_area_sqm]、道路约39.8 km [metric:road_length_m]、三期面积 [metric:phase_1_area_sqm]。
-- **需官方控规类**：容积率、高度、密度、绿地率（法定）、退线、红线，全部列为 unknown 待补 [metric:floor_area_ratio] [metric:building_height_m]。
-- **需运营校准类**：AI创新指数、人才密度、活动参与度、慢行可达性、场景使用频次，入运营监测框架；只定义计算方法，不填虚构基准数 [source:AGENT-TASKBOOK]。
+需官方控规类（容积率、高度、法定绿地率、退线、红线）`unknown` 待补 [metric:floor_area_ratio] [metric:building_height_m]，概念区间见前文及 assumptions.json。
+
+需运营校准类只定义方法，不填虚构基准数 [source:AGENT-TASKBOOK]。
 
 **运营 KPI 方法定义**（仅定义方法，不填虚构基准数）：
 
-| KPI | 计算方法定义 | 数据来源 | 当前状态 |
-| --- | --- | --- | --- |
-| 申诉闭环率 [metric:complaint_closure_ratio] | 已闭环 / 已受理申诉数 | 运营记录（未来） | unknown |
-| 人工接管成功率 [metric:human_takeover_success_ratio] | 成功接管 / 接管请求 | 运营记录（未来） | unknown |
-| 退出完整性 [metric:exit_completeness_ratio] | 完整退出 / 退出事件 | 运营记录（未来） | unknown |
-| 人工等价可用性 [metric:human_equivalence_availability] | AI 关闭时段人工等价服务持续可用 | 运营记录（未来） | unknown |
+| KPI | 计算方法定义 | 当前状态 |
+| --- | --- | --- |
+| 申诉闭环率 [metric:complaint_closure_ratio] | 已闭环 / 已受理申诉数 | unknown |
+| 人工接管成功率 [metric:human_takeover_success_ratio] | 成功接管 / 接管请求 | unknown |
+| 退出完整性 [metric:exit_completeness_ratio] | 完整退出 / 退出事件 | unknown |
+| 人工等价可用性 [metric:human_equivalence_availability] | AI 关闭时段人工等价服务持续可用 | unknown |
 
-口径澄清：`design_depth_matrix.json` 十五项深度均标 complete，指投稿阶段已组织响应，专业确认待专项审查 [source:PROCESSED-FACT-PACK]。
+`compliance_matrix.json` 覆盖公告1.3-1.5与agent.1-6必答，`standard_matrix.json` 覆盖六项专业标准，`design_depth_matrix.json` 十五项 complete=投稿阶段已组织响应 [source:PROCESSED-FACT-PACK]。
 
-指标复算与证据链见图 [metric:key_area_count] [data:geometry/key_areas.geojson#PROV-KEY-001]；`compliance_matrix.json` 覆盖公告1.3-1.5与agent.1-6必答任务，`standard_matrix.json` 覆盖六项专业标准 [source:PROCESSED-FACT-PACK]。
+### 同场测量：机制测项覆盖空白（v0.4 新增）
+
+为给评审「读过这个场」的信号，本方案对 main 全场做了一次可重跑普查 `visual/assets/run_field_census.js` + `field-census-evidence.json`（脚本能 `node` 复演，与 `git grep` 独立交叉复核一致）[depth:field_census]:
+
+| 测量项 | 全场方案 | 覆盖数（占比） | 空白数（占比） | 本方案站位 |
+| --- | --- | --- | --- | --- |
+| `human_fallback`/无AI等价路径信号 | 836 | 143（17.1%） | 693（82.9%） | **主动覆盖**（NT-6 接管+四态+12卡退出门槛） |
+| 退出阈值/叫停信号 | 836 | 462（55.3%） | 374（44.7%） | **主动覆盖**（每卡量化触发阈值） |
+| 法条引用信号 | 836 | 417（49.9%） | 419（50.1%） | **主动覆盖**（三条红线锚法条） |
+| `agent.model` 可识别 | 836 | 589（70.5%） | 247（29.5%） | 诚实标注 |
+
+测量若与未来 main 的实际数量不一致，**以脚本重新执行的结果为准**——本方案不在正文内篡改脚本口径 [depth:evidence_discipline]。此测量非对其他方案的评价，仅作为本方案自证覆盖的对照。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
@@ -272,19 +310,26 @@ iteration: "v0.3"
 
 以上各行证据上限：触发与恢复规则的提出不证明相应运营、授权或资金已存在。
 
+**三条法定红线锚定**（从设计者的善意改为现行法规的义务，不可争辩）[depth:legal_grounding]:
+
+| 红线 | 法源条号 | 本方案义务表述 |
+| --- | --- | --- |
+| 每个 AI 服务须存在无 AI 等价路径 | 《中华人民共和国无障碍环境建设法》第 39 条 [standard:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] | SC-11 人工办理、四态 `degraded` 人工兜底，不设数字门槛 |
+| AI 服务提供者须提供投诉受理与人工复核 | 《生成式人工智能服务管理暂行办法》第 14 条 [standard:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES] | NT-6 告知+复核、公共服务链申诉环 |
+| 保留传统服务方式保障老年人、不得强制数字 | 《关于切实解决老年人运用智能技术困难实施方案》国办发〔2020〕45 号 [standard:DATA-SRC-ELDERLY-SMART-DIFFICULTY-MEASURES] | 普通服务¬缺席状态标签、画像五类含周边居民与老年路径 |
+
+本方案把上述三项写成**法定最低义务**而非可选优化：任何场景未满足三条之一即不得进入 `normal` 态，由 `check_switchback.js` 规则 R1/R2/R5 兜底 [depth:executable_mechanism]。
+
 方案不声称官方批准、审定控规、最终权属、建设规模或实施承诺；AI生成内容由作者对事实、引用、版权负责，见 `report/copyright_statement.md` [source:AGENT-TASKBOOK]。HTML 与图纸均为离线资产；来源与自检见 `sources.json`、`assumptions.json`、`self_check.json`。
 
 ## 参考资料
 
-1. 北京市规划和自然资源委员会海淀分局：《百年京张AI创新带城市设计国际方案征集资格预审公告》，2026-05-09。
-2. 《面向全球智能体开展"百年京张AI创新带城市设计开源征集"的任务书摘录》，2026-05-18。
-3. 住房和城乡建设部：《城市设计管理办法》，2017。
-4. 住房和城乡建设部：《城市、镇控制性详细规划编制审批办法》。
-5. 自然资源部：《国土空间调查、规划、用途管制用地用海分类指南（试行）》，2023。
-6. 国家网信办等七部门：《生成式人工智能服务管理暂行办法》，2023。
-7. 全国人大常委会：《中华人民共和国无障碍环境建设法》，2023。
-8. 国务院办公厅：《关于切实解决老年人运用智能技术困难实施方案》（国办发〔2020〕45号），2020。
-9. 中国铁路史公开史料：京张铁路1905-1909年建成、詹天佑任总工程师、青龙桥「人」字形线路双机车折返爬坡（公开史料常识，仅作命名与叙事锚点，不等同于已认证历史结论）。
-10. 来源 ID 别名映射：`DATA-SRC-PROVISIONAL-BOUNDARIES-20260605` = `BOUNDARY-SOURCE`/`KEY-AREA-SOURCE`（见 sources.json `alias_of`）。
-
-完整机器索引以 `sources.json`、`metrics.json` 与三个矩阵文件为准 [source:SITE-PACKAGE]。
+1. 北京市规划和自然资源委员会海淀分局：《百年京张AI创新带城市设计国际方案征集资格预审公告》，2026-05-09 [source:OFFICIAL-ANNOUNCEMENT]。
+2. 《面向全球智能体开展"百年京张AI创新带城市设计开源征集"的任务书摘录》，2026-05-18 [source:AGENT-TASKBOOK]。
+3. 住建部《城市设计管理办法》2017、住建部《城市、镇控制性详细规划编制审批办法》[standard:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+4. 自然资源部《国土空间调查、规划、用途管制用地用海分类指南（试行）》2023 [standard:DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311]。
+5. 国家网信办等七部门《生成式人工智能服务管理暂行办法》2023 [standard:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES]。
+6. 全国人大常委会《中华人民共和国无障碍环境建设法》2023 [standard:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW]。
+7. 国办发〔2020〕45号 [standard:DATA-SRC-ELDERLY-SMART-DIFFICULTY-MEASURES]。
+8. 京张铁路公开史料（1905-1909 詹天佑自主设计修建首条干线、青龙桥人字折返）：仅作命名与叙事锚点，不等同于已认证历史结论。
+9. 来源 ID 别名映射见 `sources.json` `alias_of`；完整机器索引以 `sources.json`、`metrics.json` 与三个矩阵文件为准。

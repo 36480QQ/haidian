@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; the three key areas bind three dual-track spatial contracts: ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT and TEST WITHOUT BLOCKING; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
+summary: "Uses City Completeness as the spatial review method for the Centennial Jing-Zhang AI Innovation Belt: seven ordinary-city capabilities—HOME, LEARN, CARE, MOVE, GREEN, WORK and COMMON LIFE—form a durable everyday base first, while AI enters research, community, mobility and commerce as an optional enhancement layer. The structure is one public green spine, six completeness segments, six east-west stitching links and three key areas; the three key areas bind three dual-track spatial contracts: ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT and TEST WITHOUT BLOCKING, manifested as built typologies, physical clearances and deterministic S0-S3 operational states; Shuangfen Fortress remains only a community-name easter egg inside AI Origin Community."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.12"
+iteration: "v0.13"
 ---
 
 # JING-ZHANG CITY COMPLETENESS
@@ -86,11 +86,11 @@ The public green spine and slow-mobility line form the north-south backbone. Six
 
 ## Detailed Design of Key Areas
 
-**Zhongzhiyuan: from R&D park to complete innovation campus.** Research, pilot testing, incubation and enterprise services remain central, but the public green spine, transverse walking, food/rest, community interfaces, public exchange and controlled test space must exist at the same time. Embodied-AI tests operate within clear, stoppable and auditable boundaries; ordinary public circulation is not a default test track.
+**Zhongzhiyuan: from R&D park to complete innovation campus (Courtyard & Porous Grid + Linear Test Spine).** Research, pilot testing, incubation and enterprise services remain central, but the public green spine, transverse walking, food/rest, community interfaces, public exchange and controlled test space must exist at the same time. The spatial morphology adopts a "courtyard porous grid + linear test spine", establishing a +15cm physical curb/hedge barrier separating the 3.5m shared robotics test envelope from the 2.0m unobstructed pedestrian corridor. Embodied-AI tests operate within clear, stoppable and auditable boundaries with mechanical retractable bollards for instant AI-OFF isolation; ordinary public circulation is never a default test track. [data:geometry/key_areas.geojson#PROV-KEY-001]
 
-**AI Origin Community: long-term community and near-campus innovation together.** Housing is not an accessory to “talent accommodation”. Long-term homes, childcare/education, community care, shared work, ordinary retail, green space and civic commons create a short-distance daily chain. Researchers may change projects, families will include children and older people, and service workers should use the same public network. One residential area is named **Shuangfen Fortress Community / 爽粉堡垒社区**, but the name is only an easter egg: no fortress-shaped architecture, closed walls, road changes, density changes or functional changes follow from the name. [data:geometry/buildings.geojson#BLDG-007]
+**AI Origin Community: long-term community and near-campus innovation together (Pocket Commons & Woonerf + Multi-generational Care Core).** Housing is not an accessory to “talent accommodation”. Long-term homes, childcare/education, community care, shared work, ordinary retail, green space and civic commons create a short-distance daily chain. The spatial morphology adopts fine-grained living streets (Woonerf) equipped with 1.8m continuous tactile and high-contrast guidance paving, supported by a "Zero-ID Community Service Desk" within a 400m walking radius offering staffed and paper-based services. Researchers may change projects, families will include children and older people, and service workers share the same public network. One residential area is named **Shuangfen Fortress Community / 爽粉堡垒社区**, but the name is only an easter egg: no fortress-shaped architecture, closed walls, road changes, density changes or functional changes follow from the name. [data:geometry/buildings.geojson#BLDG-007] [data:geometry/key_areas.geojson#PROV-KEY-002]
 
-**Dazhongsi: station-city, commerce and ordinary urban life together.** The southern area strengthens transfer, everyday retail, culture and public arrival, but the provisional key-area rectangle is only a task locator and cannot serve as a real station-city engineering boundary. The three detailed designs differ because their urban capability gaps differ, not because they receive three visual themes. [depth:three_key_area_detailed_design]
+**Dazhongsi: station-city, commerce and ordinary urban life together (Multi-level Transit Deck & Heritage Interface).** The southern area strengthens transfer, everyday retail, culture and public arrival. The spatial morphology builds a "multi-level transit deck and heritage continuous interface" featuring 100% visible static color-coded illuminated signs and app-free physical gating, maintaining $\ge 4.5\text{m}$ clear transfer corridor width and $\ge 2.5\text{m}$ signage vertical clearance. The provisional key-area rectangle is only a task locator and cannot serve as a real station-city engineering boundary. The three detailed designs differ because their physical spatial sections and urban capability gaps differ, not because they receive three visual themes. [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]
 
 Public exchange space accompanies all three tasks: an open exchange yard in Zhongzhiyuan, the AI Origin civic commons and a southern public interface. Each solves an everyday use first and takes on communication or landmark value second. [data:geometry/public_space.geojson#PUBLIC-004] [metric:public_space_count]
 
@@ -147,41 +147,45 @@ All five response rules are machine-readable in `visual/assets/reality-constrain
 <!-- V09-REALITY-END -->
 
 <!-- V012-CONTRACTS-START -->
-### v0.12.g | Three Public Promises as Dual-Track Spatial Contracts: From Ethical Principles to Spatial Bylaws
+<!-- V012-CONTRACTS-START -->
+### v0.13.g | Three Public Promises as Dual-Track Spatial Contracts: Built Typologies and S0–S3 Operational States
 
-v0.12.g formally elevates the three public urban promises into binding **Dual-Track Spatial Contracts**. The core principle is: **the physical, analog city base (the C7 baseline) retains absolute, non-negotiable physical fail-safe priority over soft algorithmic scheduling (the optional AI layer)**. The spatial contracts anchor ethical rights directly to key-area cross-sections, physical clearances, accountable actors, and circuit-breaker triggers. [depth:three_key_area_detailed_design] [metric:public_promise_count]
+v0.13.g formally elevates the Dual-Track Spatial Contracts into physical architectural typologies and **deterministic four-state operational bylaws (S0–S3 Operational States)**. The inviolable iron rule is: **the physical, analog city base (the C7 baseline) retains absolute, non-negotiable physical fail-safe priority over soft algorithmic scheduling (the optional AI layer)**. The spatial contracts anchor ethical rights directly to key-area cross-sections, physical clearances, accountable actors, and circuit-breaker triggers. [depth:three_key_area_detailed_design] [metric:public_promise_count]
 
 ![Three Dual-Track Spatial Contracts and Physical Circuit-Breaker Protocols](assets/figures/three-public-promises.en.svg)
 
-#### Contract SC-01 | ARRIVE WITHOUT APP (Station-City Zero-Friction Arrival Contract)
-* **Anchor Key Area & Spatial Typology**: Dazhongsi Key Area | High-density multi-level transit concourse and railway heritage seam.
-* **Ordinary City Baseline**: Continuous, barrier-free physical pedestrian corridors; continuous high-contrast optical retroreflective/photoluminescent wayfinding visible from 20m; a permanently staffed physical information kiosk within 50m of faregates; and wide accessible turnstiles with 0% dependency on smartphones or apps. [source:HD-URBAN-RENEWAL-GUIDE-2025]
-* **Spatial Prerequisite & Clearances**: Minimum 4.5m unobstructed transfer concourse width; minimum 2.5m vertical signage clearance; direct line-of-sight between primary decision nodes; zero advertising or commercial encroachment into the wayfinding envelope.
-* **Optional AI Layer**: Predictive crowd density forecasting, public display routing guidance, and opt-in web-based accessible navigation.
-* **Human Takeover & Exit SLA**: Instant physical fallback upon network blackout or digital display latency (>2s): digital screens cut off within $\le 0.1\text{s}$, and 100% of peak transfer throughput (12,000 pph) is maintained via passive signs and human transit stewards.
+#### Contract SC-01 | ARRIVE WITHOUT APP (Dazhongsi Station-City Zero-Friction Arrival Contract)
+* **Anchor Key Area & Spatial Typology**: Dazhongsi Key Area | Multi-level transit concourse deck and railway heritage seam.
+* **Spatial Prerequisite & Clearances**: Minimum 4.5m unobstructed transfer concourse width; minimum 2.5m vertical signage clearance; direct line-of-sight between primary decision nodes; zero advertising or commercial encroachment into the wayfinding envelope. [source:HD-URBAN-RENEWAL-GUIDE-2025]
+* **S0–S3 Deterministic Operational States**:
+  - **S0 Non-AI Base**: 100% dependency on continuous 50m sight-line high-contrast photoluminescent wayfinding, static maps, and permanently staffed kiosks, ensuring 12,000 pph throughput without smartphones.
+  - **S1 AI-Enhanced**: Infrared crowd density sensing, dynamic large-screen crowd diversion, and opt-in web-based multilingual audio/visual accessible routing.
+  - **S2 Human Fallback**: If display latency $>2\text{s}$ or crowd density $>2.5\text{ p/m}^2$, transit stewards deploy within 30 seconds with manual directional signs and open bypass gates.
+  - **S3 AI-OFF Mechanical Break**: Instant physical cutoff ($\le 0.1\text{s}$) upon network or power failure, with 100% fail-open gravity/mechanical turnstiles guaranteeing evacuation safety.
 * **Accountable Actor**: Beijing Subway / Line 13 Operations + Beixiaoguan Sub-district Office + Station-City Operating Consortium.
-* **Implementation Phasing**: Phase 1 establishes 100% physical wayfinding and staffed kiosks; subsequent phases enable dynamic routing.
-* **Acceptance & GO/STOP Trigger**: 100% arrival success rate for non-smartphone users; if digital display latency $>2\text{s}$ or bottleneck pedestrian density $>2.5\text{ p/m}^2$, the system triggers a STOP, disabling dynamic scheduling and reverting to pure physical throughput.
+* **Acceptance & GO/STOP Trigger**: 100% arrival success rate for non-smartphone users; any algorithm-induced congestion triggers an immediate STOP reverting to pure physical throughput.
 
-#### Contract SC-02 | CARE WITHOUT ACCOUNT (Zero-Account All-Age Community Living Room Contract)
+#### Contract SC-02 | CARE WITHOUT ACCOUNT (AI Origin Zero-Account All-Age Community Living Room Contract)
 * **Anchor Key Area & Spatial Typology**: AI Origin Community | Fine-grained living street (Woonerf) and all-age community care core.
-* **Ordinary City Baseline**: A 400m continuous shaded, barrier-free pedestrian corridor connecting homes to the community clinic; full-service analog community kiosks spaced every 200m providing paper-based workflows, tactile push-button public phones, and direct copper-wire emergency alarms to neighborhood care desks—free of accounts, biometric scans, or profiling. [source:HD-AI-DISTRICT-PROGRESS-2025Q4]
-* **Spatial Prerequisite & Clearances**: Minimum $15\text{m}^2$ physical footprint per analog civic kiosk; minimum 2.5m clear sidewalk width; continuous handrails and ramps (slope $\le 1:12$).
-* **Optional AI Layer**: Opt-in chronic disease wellness monitoring, shared space algorithmic scheduling, and AI voice companionship.
-* **Human Takeover & Exit SLA**: Citizens opting out or experiencing algorithm downtime receive 100% direct human care via neighborhood community aides and family doctors.
+* **Spatial Prerequisite & Clearances**: Minimum $15\text{m}^2$ physical footprint per analog civic kiosk; minimum 2.5m clear sidewalk width; continuous 1.8m tactile guidance paving and ramps (slope $\le 1:12$). [source:HD-AI-DISTRICT-PROGRESS-2025Q4]
+* **S0–S3 Deterministic Operational States**:
+  - **S0 Non-AI Base**: A 400m continuous shaded walking corridor connecting homes to the clinic; staffed kiosks spaced every 200m providing paper workflows, push-button phones, and copper-wire alarms—free of accounts or biometric scans.
+  - **S1 AI-Enhanced**: Opt-in ambient wellness monitoring for chronic-disease elders and automated community shared-space reservation.
+  - **S2 Human Fallback**: When residents opt out or algorithms fail, neighborhood care aides and family doctors provide 100% direct in-person service.
+  - **S3 AI-OFF Mechanical Break**: Instant rollback to paper-based filing and analog service desks upon data privacy anomalies or server outages, cutting digital links physically.
 * **Accountable Actor**: Zhongguancun Sub-district Office + Community Residents Committee + Haidian Community Health Service Center.
-* **Implementation Phasing**: Phase 1 constructs the 400m shaded corridor and analog kiosks; Phase 2 introduces opt-in wellness sandboxes.
-* **Acceptance & GO/STOP Trigger**: 100% coverage of public services via non-digital channels; any unauthorized data breach or $\ge 2$ false emergency alerts/month triggers a STOP, suspending the algorithmic interface pending a civic hearing.
+* **Acceptance & GO/STOP Trigger**: 100% coverage of public services via non-digital channels; any unauthorized data breach triggers an immediate STOP pending a civic hearing.
 
-#### Contract SC-03 | TEST WITHOUT BLOCKING (Physical Test Sandbox Isolation & Circuit-Breaker Contract)
-* **Anchor Key Area & Spatial Typology**: Zhongzhiyuan Key Area | Porous campus courtyard grid and linear research test loop.
-* **Ordinary City Baseline**: Researchers, students, and campus service workers maintain independent, 100% unobstructed daily mobility, dining, and green space; everyday public corridors never become involuntary test grounds. [source:AGENT-TASKBOOK]
-* **Spatial Prerequisite & Clearances**: Dedicated autonomous delivery/robot lanes are physically grade-separated from pedestrian paths (+15cm raised curb or landscaped buffer); minimum 1.8m one-way test lane width; automatic pneumatic drop-bollards at intersections; physical red emergency stop (E-Stop) buttons spaced every 50m.
-* **Optional AI Layer**: Low-speed automated delivery, embodied AI outdoor perception benchmarking, and shared computing time-sharing.
-* **Human Takeover & Exit SLA**: Pressing any E-Stop or triggering a safety alarm raises mechanical bollards within $\le 0.5\text{s}$, cutting drive power; the test zone returns to ordinary pedestrian space within 10 minutes of test termination.
+#### Contract SC-03 | TEST WITHOUT BLOCKING (Zhongzhiyuan Physical Test Sandbox Isolation & Circuit-Breaker Contract)
+* **Anchor Key Area & Spatial Typology**: Zhongzhiyuan Key Area | Porous campus courtyard grid and linear research test spine.
+* **Spatial Prerequisite & Clearances**: Autonomous delivery lanes (width $\ge 1.8\text{m}$) and pedestrian corridors (width $\ge 2.0\text{m}$) are physically grade-separated by +15cm raised curbs; automatic pneumatic drop-bollards at intersections; red emergency stop (E-Stop) buttons spaced every 50m. [source:AGENT-TASKBOOK]
+* **S0–S3 Deterministic Operational States**:
+  - **S0 Non-AI Base**: Campus workers and students maintain independent, unobstructed daily circulation; everyday public space is never an involuntary test ground.
+  - **S1 AI-Enhanced**: Low-speed autonomous delivery vehicles operate within designated time windows (10:00–11:30, 14:00–16:30) and speed limits ($\le 8\text{km/h}$).
+  - **S2 Human Fallback**: Remote safety operators immediately take over control whenever vehicles deviate from track centerlines or approach curb boundaries.
+  - **S3 AI-OFF Mechanical Break**: Pressing any E-Stop raises mechanical bollards within $\le 0.5\text{s}$, cutting vehicle drive power; the test zone returns to ordinary pedestrian space within 10 minutes.
 * **Accountable Actor**: Zhongguancun Science City Administrative Committee + Campus Property Management + Enterprise AI Testing Consortium.
-* **Implementation Phasing**: Phase 1 is restricted to enclosed courtyards; Phase 2 opens dedicated loop lanes only after physical grade-separation passes inspection.
-* **Acceptance & GO/STOP Trigger**: 0% pedestrian delay caused by testing; any autonomous vehicle boundary violation or pedestrian obstruction $\ge 1$ time/week immediately triggers a STOP, revoking the testing permit and restoring campus public space.
+* **Acceptance & GO/STOP Trigger**: 0% pedestrian delay caused by testing; any autonomous vehicle boundary violation or pedestrian obstruction $\ge 1$ time/week immediately triggers a STOP revoking test permits.
 
 #### Dual-Track Spatial Governance & Black-Sky Resilience Protocol
 The proposal institutes a "Dual-Track Normal Operations, Instant Physical Fail-Safe" standard: a quarterly regional "AI-OFF Black-Sky Drill" simulates a 48-hour total network/power blackout to ensure 100% physical reliability for Dazhongsi transit evacuation, AI Origin emergency care, and Zhongzhiyuan campus mobility.

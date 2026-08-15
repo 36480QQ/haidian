@@ -58,7 +58,7 @@
         "visual/index.html"
       ],
       "kind": "narrative",
-      "latest_rebuild_round": 21,
+      "latest_rebuild_round": 25,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -76,7 +76,7 @@
       "group_id": "root-changelog",
       "human_surface_refs": [],
       "kind": "changelog",
-      "latest_rebuild_round": 21,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -97,7 +97,7 @@
         "visual/index.html"
       ],
       "kind": "manifest",
-      "latest_rebuild_round": 21,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -118,7 +118,7 @@
         "visual/index.html"
       ],
       "kind": "agent_card",
-      "latest_rebuild_round": 21,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -210,7 +210,7 @@
         "report/proposal.html"
       ],
       "kind": "self_check",
-      "latest_rebuild_round": 21,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -274,7 +274,7 @@
       "group_id": "report-html",
       "human_surface_refs": [],
       "kind": "rendered_proposal_html",
-      "latest_rebuild_round": 21,
+      "latest_rebuild_round": 25,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -315,7 +315,32 @@
       "group_id": "report-narrative",
       "human_surface_refs": [],
       "kind": "report_records",
-      "latest_rebuild_round": 21,
+      "latest_rebuild_round": 26,
+      "notes": {},
+      "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
+      "status": "current"
+    },
+    {
+      "files": [
+        {
+          "language": "en",
+          "path": "visual/index.en.html",
+          "role": "visualization",
+          "role_detail": null,
+          "translation_of": "visual/index.html"
+        },
+        {
+          "language": "zh",
+          "path": "visual/index.html",
+          "role": "visualization",
+          "role_detail": null,
+          "translation_of": null
+        }
+      ],
+      "group_id": "visual-pages",
+      "human_surface_refs": [],
+      "kind": "visualization",
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1366,31 +1391,6 @@
     {
       "files": [
         {
-          "language": "en",
-          "path": "visual/index.en.html",
-          "role": "visualization",
-          "role_detail": null,
-          "translation_of": "visual/index.html"
-        },
-        {
-          "language": "zh",
-          "path": "visual/index.html",
-          "role": "visualization",
-          "role_detail": null,
-          "translation_of": null
-        }
-      ],
-      "group_id": "visual-pages",
-      "human_surface_refs": [],
-      "kind": "visualization",
-      "latest_rebuild_round": 20,
-      "notes": {},
-      "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
-      "status": "current"
-    },
-    {
-      "files": [
-        {
           "language": "neutral",
           "path": "visual/assets/century-time-museum-contract.json",
           "role": "other",
@@ -1433,7 +1433,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 10,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1584,7 +1584,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 16,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1609,7 +1609,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 11,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1778,7 +1778,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 16,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1845,7 +1845,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 11,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1895,7 +1895,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 21,
+      "latest_rebuild_round": 26,
       "notes": {
         "en": "Self-registered: the index itself is the 141st registered path and locates the other 140 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
         "zh": "本索引自登记：索引自身是第 141 个登记路径，负责定位其余 140 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
@@ -1919,7 +1919,7 @@
         "visual/index.html"
       ],
       "kind": "stylesheet",
-      "latest_rebuild_round": null,
+      "latest_rebuild_round": 24,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1986,7 +1986,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 21,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2078,7 +2078,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 20,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2145,7 +2145,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": null,
+      "latest_rebuild_round": 26,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2453,7 +2453,7 @@
       "chapters": [
         {
           "evidence_markers": {
-            "data": 2,
+            "data": 0,
             "depth": 0,
             "metric": 0,
             "source": 0,
@@ -2465,6 +2465,18 @@
         },
         {
           "evidence_markers": {
+            "data": 2,
+            "depth": 0,
+            "metric": 0,
+            "source": 0,
+            "standard": 0
+          },
+          "heading_en": "30-Second / 3-Minute / 15-Minute Entry",
+          "heading_zh": "30 秒 / 3 分钟 / 15 分钟阅读入口",
+          "order": 2
+        },
+        {
+          "evidence_markers": {
             "data": 10,
             "depth": 1,
             "metric": 3,
@@ -2473,7 +2485,7 @@
           },
           "heading_en": "Design Basis and Source List",
           "heading_zh": "设计依据与资料清单",
-          "order": 2
+          "order": 3
         },
         {
           "evidence_markers": {
@@ -2485,7 +2497,7 @@
           },
           "heading_en": "Three-Level Scope Framework",
           "heading_zh": "三层范围工作框架",
-          "order": 3
+          "order": 4
         },
         {
           "evidence_markers": {
@@ -2497,7 +2509,7 @@
           },
           "heading_en": "Coordinated Research Area: Industry and Future City Research",
           "heading_zh": "统筹研究范围产业与未来城市研究",
-          "order": 4
+          "order": 5
         },
         {
           "evidence_markers": {
@@ -2509,7 +2521,7 @@
           },
           "heading_en": "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
           "heading_zh": "总体设计范围城市更新与控规深度城市设计",
-          "order": 5
+          "order": 6
         },
         {
           "evidence_markers": {
@@ -2521,7 +2533,7 @@
           },
           "heading_en": "Detailed Design of Key Areas",
           "heading_zh": "重点区域详细设计",
-          "order": 6
+          "order": 7
         },
         {
           "evidence_markers": {
@@ -2533,7 +2545,7 @@
           },
           "heading_en": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
           "heading_zh": "AI 创新生态、人才画像与 AI+ 场景",
-          "order": 7
+          "order": 8
         },
         {
           "evidence_markers": {
@@ -2545,7 +2557,7 @@
           },
           "heading_en": "Land Use, Building Scale, and Demolish–Renovate–Retain Strategy",
           "heading_zh": "用地、建筑规模与拆改留方案",
-          "order": 8
+          "order": 9
         },
         {
           "evidence_markers": {
@@ -2557,7 +2569,7 @@
           },
           "heading_en": "Transport, Rail, Municipal Infrastructure, and Public Services",
           "heading_zh": "交通、轨道、市政与公共服务设施",
-          "order": 9
+          "order": 10
         },
         {
           "evidence_markers": {
@@ -2569,7 +2581,7 @@
           },
           "heading_en": "Blue-Green Network, Public Space, and Urban Character",
           "heading_zh": "蓝绿空间、公共空间与城市风貌",
-          "order": 10
+          "order": 11
         },
         {
           "evidence_markers": {
@@ -2581,7 +2593,7 @@
           },
           "heading_en": "Renewal Projects, Implementation Policy, and Phasing",
           "heading_zh": "更新项目清单、实施政策与分期计划",
-          "order": 11
+          "order": 12
         },
         {
           "evidence_markers": {
@@ -2593,7 +2605,7 @@
           },
           "heading_en": "Metrics, Area Recalculation, and Compliance Matrix",
           "heading_zh": "指标体系、面积复算与合规矩阵",
-          "order": 12
+          "order": 13
         },
         {
           "evidence_markers": {
@@ -2605,7 +2617,7 @@
           },
           "heading_en": "Risk, Copyright, and Compliance",
           "heading_zh": "风险、版权与合规说明",
-          "order": 13
+          "order": 14
         },
         {
           "evidence_markers": {
@@ -2617,7 +2629,7 @@
           },
           "heading_en": "The Century-Time Museum: A Verifiable, Correctable, Screen-free Time Education Line",
           "heading_zh": "百年时间博物馆：可核验·可纠错·无屏可达的城市时间教育线",
-          "order": 14
+          "order": 15
         },
         {
           "evidence_markers": {
@@ -2629,7 +2641,7 @@
           },
           "heading_en": "Public Mission Economy: Problem-Led Industry and Talent Translation",
           "heading_zh": "公共任务经济：问题驱动的产业与人才转化",
-          "order": 15
+          "order": 16
         },
         {
           "evidence_markers": {
@@ -2641,7 +2653,7 @@
           },
           "heading_en": "Long-Term Civic Operations: Ordinary Life Stays Continuous",
           "heading_zh": "长期公共共同体运营：普通日常不断轨",
-          "order": 16
+          "order": 17
         },
         {
           "evidence_markers": {
@@ -2653,7 +2665,7 @@
           },
           "heading_en": "Review Synthesis and Professional Handoff: Freeze the Grammar, Replace Real-World Gaps",
           "heading_zh": "评审收束与专业深化交接：冻结骨架，只替换现实缺口",
-          "order": 17
+          "order": 18
         },
         {
           "evidence_markers": {
@@ -2665,7 +2677,7 @@
           },
           "heading_en": "Three reversible assembly and restoration packs",
           "heading_zh": "三处可逆构件与恢复装配册 / Reversible assemblies and restoration",
-          "order": 18
+          "order": 19
         },
         {
           "evidence_markers": {
@@ -2677,7 +2689,7 @@
           },
           "heading_en": "Back-stage five-step accessible evidence walk",
           "heading_zh": "后台五步可访问证据漫游",
-          "order": 19
+          "order": 20
         },
         {
           "evidence_markers": {
@@ -2689,7 +2701,7 @@
           },
           "heading_en": "Field evidence intake and replacement pack",
           "heading_zh": "现场证据采集与替换包",
-          "order": 20
+          "order": 21
         },
         {
           "evidence_markers": {
@@ -2701,7 +2713,7 @@
           },
           "heading_en": "References",
           "heading_zh": "参考资料",
-          "order": 21
+          "order": 22
         }
       ],
       "entry_points": [

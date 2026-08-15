@@ -198,6 +198,8 @@ AI 研究者（算力、场景、同行 → 试车线测试场、原点礼堂发
 3. **无退出不部署**：上线必须同步上线"撤销—隔离—还原"三位一体退出方案，撤销命令优先级不低于部署命令；
 4. **无审计不扩大**：从试验到规模化必须经过独立"人字审计"逐项勾选（类比列车出库检查）。
 
+> **SEB v0.3 机器验证**：上述四条硬接线已用社区贡献的服务等价基准（Service Equivalence Baseline, SEB）v0.3.0 逐条校验。七条桌面推演样例（3 正 4 负）映射为 SEB 节点，覆盖 ai_off_path 禁止依赖、human_handoff 角色词表、分母完整性、停止条件强制四个判据，全部 7/7 通过。SEB 规范、校验器与采用方 fixtures 已快照入包 `visual/assets/`，可复现运行 [source:SEB-V0.3] [self_check:SEB_TABLETOP].
+
 ### 路票制（公共凭证）
 
 每一张场景路票（电子凭证，公众可查）必备字段：唯一标识、所在闭塞区间、进入/出清时间戳（ILL 的直接数据源）、八问审计结论、**责任自然人签名**（不可用组织签名替代）、退出方案摘要、公众申诉入口。**拒绝同样开票**：拒绝理由、事实依据、申诉路径与采纳凭证同一编号体系——让"被拒绝"与"被采纳"同样被城市看见，积累城市的拒止智慧。
@@ -345,3 +347,4 @@ AI Urban Performance Index：Innovation Loop Latency / 场景可达性 / 实验�
 - 临时粗略边界与重点区域 geometry/provisional_boundaries.geojson [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
 - 专业标准：城市设计管理办法、控规深度要求、用地分类指南（见 standard_matrix.json）[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 - 已核定史实：詹天佑"各出所学，各尽所知"题词（1914 年汉口欧美同学恳亲会演说）、京张高铁"世界首条时速 350 公里的智能化高铁"表述（交通运输部 2025 年表述）、京张铁路通车纪念日（1909 年 10 月 2 日南口通车典礼）（见 assumptions.json）
+- 服务等价基准（SEB）v0.3.0 规范与桌面校验器，由 lqqk7/every-sense-jingzhang 贡献，本方案为首个外部采用方，快照见 `visual/assets/`（CC BY-SA 4.0）[source:SEB-V0.3]

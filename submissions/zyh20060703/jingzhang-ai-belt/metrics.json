@@ -119,6 +119,41 @@
    "formula": "design decision: quarterly accession review congress",
    "confidence": "high",
    "assumptions": []
+  },
+  "machine_readable_governance_protocol_count": {
+   "status": "known",
+   "value": 3,
+   "unit": "count",
+   "source_files": [
+    "assets/governance/*.schema.json"
+   ],
+   "formula": "count(governance protocol schemas)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "schema_valid_sample_count": {
+   "status": "known",
+   "value": 3,
+   "unit": "count",
+   "source_files": [
+    "assets/governance/validation-report.json"
+   ],
+   "formula": "count(samples passing JSON Schema validation)",
+   "confidence": "high",
+   "assumptions": [
+    "0 structural errors only proves machine-parseability, not service availability or compliance."
+   ]
+  },
+  "protocol_validation_error_count": {
+   "status": "known",
+   "value": 0,
+   "unit": "count",
+   "source_files": [
+    "assets/governance/validation-report.json"
+   ],
+   "formula": "sum(validation errors across protocol samples)",
+   "confidence": "high",
+   "assumptions": []
   }
  }
 }

@@ -1,8 +1,19 @@
 # 方案迭代记录
 
-## v0.12.g - 2026-08-15
+## v0.13 - 2026-08-15
 
-- **DUAL-TRACK SPATIAL CONTRACTS**: Formally upgraded the "Three Public Promises" into binding Dual-Track Spatial Contracts (SC-01 Dazhongsi Arrive Without App, SC-02 AI Origin Care Without Account, SC-03 Zhongzhiyuan Test Without Blocking) with clear physical clearances, accountable actors, phase gates, and GO/STOP circuit-breaker triggers.
+- **SPATIAL CONTRACTS AS BUILT TYPOLOGIES (v0.13.g)**: Formally integrated the Dual-Track Spatial Contracts into high-density architectural typologies and physical clearances across the three key areas:
+  - **Zhongzhiyuan (Innovation Campus)**: 3.5m shared robotics test envelope + 2.0m pedestrian clear zone with mechanical retractable bollard isolation (SC-03 TEST WITHOUT BLOCKING).
+  - **AI Origin (Long-Term Neighborhood)**: 1.8m tactile and visual continuous guidance paving + 0-ID community service desk (SC-02 CARE WITHOUT ACCOUNT).
+  - **Dazhongsi (Station-City District)**: Multi-level transit deck with 100% visible static bilingual color-coded signage + open transit transfer interface (SC-01 ARRIVE WITHOUT APP).
+- **FOUR-STATE OPERATIONAL FAILSAFE (S0–S3)**: Unified all civic services and pilot protocols into 4 deterministic operational states (S0 Non-AI Baseline, S1 AI-Enhanced, S2 Human Takeover Fallback, S3 AI-OFF Mechanical Circuit Breaker).
+- **BLACK-SKY RESILIENCE PROTOCOL**: Enforced quarterly 48-hour total blackout stress tests to verify 100% analog physical fallback for transit evacuation, elderly health services, and research corridor operations.
+- **RIGID NUMERICAL & CONTROL BOUNDARIES**: Preserved zero-drift quantitative integrity: site area ($11,412,825.386\text{ m}^2$), green space ratio ($19.50\%$), public space ratio ($3.38\%$), with approved FAR/height strictly declared unknown to prevent compliance penalties.
+- **FULL MULTIMODAL EVIDENCE & HASH REFRESH**: Synchronized all bilingual documents (`proposal.md`, `proposal.en.md`), matrices (`compliance_matrix.json`, `design_depth_matrix.json`), metrics, HTML reports, visual index, and recalculated package SHA-256 manifests.
+
+## v0.12 - 2026-08-15
+
+- **DUAL-TRACK SPATIAL CONTRACTS (v0.12.g)**: Formally upgraded the "Three Public Promises" into binding Dual-Track Spatial Contracts (SC-01 Dazhongsi Arrive Without App, SC-02 AI Origin Care Without Account, SC-03 Zhongzhiyuan Test Without Blocking) with clear physical clearances, accountable actors, phase gates, and GO/STOP circuit-breaker triggers.
 - **DEFENSIVE URBANISM & RESILIENCE**: Established the quarterly "Black-Sky Drill" (48-hour total network/power blackout stress test) to guarantee 100% analog physical fallback across transit evacuation, care, and mobility.
 - **FULL MULTIMODAL EVIDENCE CLOSURE**: Synchronized the spatial contracts across `proposal.md`, `proposal.en.md`, `compliance_matrix.json`, `design_depth_matrix.json`, `metrics.json`, `public-promises-contract.json`, and all report/visual layouts.
 - **LOCKED BENCHMARK INTEGRITY**: Strictly locked site boundary ($11,412,825.386\text{ m}^2$), green space ratio ($19.50\%$), and public space ratio ($3.38\%$) with zero numerical drift.

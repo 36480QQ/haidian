@@ -6,7 +6,7 @@ language: "en"
 chinese_translation: "included"
 translation_file: "proposal.zh.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.5"
+iteration: "v1.6"
 summary: "On single-track railways a driver could enter a section only while holding its token, and no second token was released until the first came back. Token Block applies that hundred-year-old safety rule to urban AI governance: the Jing-Zhang heritage corridor becomes one continuously operated, publicly bookable AI test track — one token, one section, returned before the next is issued — with three stations, two switches, and an evidence chain that lets any professional team recompute every claim."
 summary_zh: "单线铁路上，司机必须持有区间令牌才能进入，令牌未归还前发不出第二枚。本方案把这条百年行车安全规则用于城市AI治理：把京张遗址公园全线做成一条持续运营、公众可预约的AI测试轨道——一枚令牌，一个区间，归还之后才发下一枚——三站两岔、一线到底，并附可被专业团队逐项复算的证据链。全部空间建议均为概念建议，不替代法定规划。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
@@ -18,6 +18,10 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 # Token Block — Centennial Jing-Zhang AI Innovation Belt
 
 **京张令牌 · 百年京张AI创新带**
+
+![Concept impression of the corridor — one line, three stations, two switches](assets/figures/concept-hero-wide.jpg)
+
+*Concept impression, AI-generated (gpt-image-2) with its layout referenced from this package's `geometry/*.geojson`. It conveys spatial character only and carries no quantitative claims: it is not a survey basis, not an as-built view, and every number in this package remains recomputable from the machine-readable files.*
 
 A century ago the Jing-Zhang line was built to *carry* things. This proposal argues that the same alignment should now *run* things.
 

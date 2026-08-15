@@ -1,5 +1,70 @@
 # 方案迭代记录 / Changelog
 
+## v26.0 - 2026-08-15
+
+**Contract as_of consistency repair / 契约 as_of 一致性修复**
+
+- 第 26 轮只在第 25 轮 PR #2752 合并（merge SHA `cdc56d33f322e01477c4b29adba0f1dae4524e41` 进入 canonical `main@cdc56d33f322e01477c4b29adba0f1dae4524e41`）且 438 个开放 PR 文件级扫描无竞争后开始。审计：包内全部结构化契约的顶层 `as_of` 与 git 历史的真实最后编辑日期逐一比对，发现 8 个契约的 `as_of` 早于其真实编辑日期；全部修复并新增 `as_of_semantics` 字段说明语义。
+- Round 26 began only after Round 25 PR #2752 merged (merge SHA `cdc56d33f322e01477c4b29adba0f1dae4524e41` entered canonical `main@cdc56d33f322e01477c4b29adba0f1dae4524e41`) and a file-level scan of 438 open PRs found no competing PR. Audit: every structured contract's top-level `as_of` was compared against its real last-edit date from git history; eight contracts had `as_of` earlier than their real edit date. All eight are fixed and each gains an `as_of_semantics` field defining the field's meaning.
+- 修复清单：`civic-operations-contract` 08-12→08-13；`g1-preregistration-register` 08-09→08-12；`implementation-handoff-matrix` 08-12→08-13；`pilot-readiness-register` 08-09→08-12；`readiness-closure-contract` 08-10→08-12；`rights-clearance-ledger` 08-14→08-15；`site-grounding-register` 08-09→08-15；`submission-use-rights-matrix` 08-10→08-12。日期全部取自 git 历史，不猜测。
+- Fixed list: `civic-operations-contract` 08-12→08-13; `g1-preregistration-register` 08-09→08-12; `implementation-handoff-matrix` 08-12→08-13; `pilot-readiness-register` 08-09→08-12; `readiness-closure-contract` 08-10→08-12; `rights-clearance-ledger` 08-14→08-15; `site-grounding-register` 08-09→08-15; `submission-use-rights-matrix` 08-10→08-12. All dates come from git history, not guesswork.
+- `as_of` 只表示最后真实内容编辑日期，不是有效性或新鲜度保证；`as_of_semantics` 已在每个修复文件中写明。`pilot-readiness-register.json` 是 T-02 合成回放输入之一：其 as_of 修复改变输入摘要后，结果文件经 `--write` 按同一 10 组既有 fixture 诚实重生成（fixtures=10 exact=10，无治理内容变化）。本轮无主张、数据、机制、页数或成熟度变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- `as_of` records the last real content edit date only, not validity or freshness; `as_of_semantics` states this in every repaired file. `pilot-readiness-register.json` is one input of the T-02 synthetic replay: after its as_of repair changed the input digest, the result file was honestly regenerated with `--write` from the same ten fixtures (fixtures=10 exact=10, no governance-content change). The round changes no claim, data, mechanism, page count or maturity; the four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
+## v25.0 - 2026-08-15
+
+**Heading-hierarchy repair after HTML semantics audit / HTML 语义审计与标题层级修复**
+
+- 第 25 轮只在第 24 轮 PR #2734 合并（merge SHA `78b5e4d00dfd330593b510192d519e7fb333367b` 进入 canonical `main@a2a1ae3e62b1dd23acc4b2e5a7a9c8e9eed15bf1`）且 437 个开放 PR 文件级扫描无竞争后开始。HTML 语义审计（重复 ID、标题层级、页内锚点、表格表头、lang）覆盖双语 visual 与报告：visual 页面 0 缺陷；两份提案存在同一缺陷——`# 双轨京张`（h1）后直接 `### 阅读入口`（h3）跳级。
+- Round 25 began only after Round 24 PR #2734 merged (merge SHA `78b5e4d00dfd330593b510192d519e7fb333367b` entered canonical `main@a2a1ae3e62b1dd23acc4b2e5a7a9c8e9eed15bf1`) and a file-level scan of 437 open PRs found no competing PR. An HTML semantics audit (duplicate IDs, heading hierarchy, in-page anchors, table headers, lang) covered both visual pages and reports: the visual pages have zero defects; both proposals share one defect — `# 双轨京张` (h1) is followed directly by `### 阅读入口` (h3), skipping h2.
+- 修复：双语文案的阅读入口 `###` → `##`；离线报告重新渲染后标题层级 0 跳级，并重新应用第 23 轮记录的渲染器媒体链接修复。结构化证据写入 `site-grounding-register.json#package_validation_contract.html_semantics_r25`。
+- Fix: the bilingual reading entry moves from `###` to `##`; the offline reports are re-rendered with 0 heading skips, and the Round 23 renderer media-link fix is re-applied after the re-render. Structured evidence is recorded in `site-grounding-register.json#package_validation_contract.html_semantics_r25`.
+- 仅标题层级与重渲染输出变化，无主张、数据、机制或成熟度变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- Only heading levels and re-rendered output changed; no claim, data, mechanism or maturity change. The four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
+## v24.0 - 2026-08-15
+
+**WCAG AA contrast repair on the visual pages / 视觉页 WCAG AA 对比度修复**
+
+- 第 24 轮只在第 23 轮 PR #2720 合并（merge SHA `79493c594c5fd54bfee62e0d313ee56f3e147db2` 进入 canonical `main@0d1b832487ea5cd53b96b3041a52c433645b8081`）且 441 个开放 PR 文件级扫描无竞争后开始。梯度感知对比度探针（CDP + DOM 背景解析，含 linear-gradient 色标；WCAG 2.1 AA 4.5:1 正文 / 3:1 大字）在全部 details 展开状态下覆盖双语 920/914 个文本元素，发现 4 处低于阈值并全部修复。
+- Round 24 began only after Round 23 PR #2720 merged (merge SHA `79493c594c5fd54bfee62e0d313ee56f3e147db2` entered canonical `main@0d1b832487ea5cd53b96b3041a52c433645b8081`) and a file-level scan of 441 open PRs found no competing PR. A gradient-aware contrast probe (CDP plus DOM background resolution including linear-gradient stops; WCAG 2.1 AA 4.5:1 body / 3:1 large text) covered 920/914 bilingual text elements with every details block expanded, found four below-threshold pairs, and fixed all four.
+- 修复：`--red` `#d96850 → #a13d2a`（修复后最低 6.13）、`--green` `#36a269 → #1c6b45`（6.17）、`.jury-motion .tag` `#f1c164 → #8a5a00`（4.94）、`.review-walk-shell button:disabled` `#79827f → #5c6663`（5.94）。修复后双语全展开复测为 0 个低于阈值元素；证据写入 `site-grounding-register.json#package_validation_contract.contrast_matrix_r24`。
+- Fixes: `--red` `#d96850 → #a13d2a` (min 6.13 after), `--green` `#36a269 → #1c6b45` (6.17), `.jury-motion .tag` `#f1c164 → #8a5a00` (4.94), `.review-walk-shell button:disabled` `#79827f → #5c6663` (5.94). Re-probe with everything expanded reports zero below-threshold elements in both languages; the evidence is recorded in `site-grounding-register.json#package_validation_contract.contrast_matrix_r24`.
+- 仅颜色值变化，无内容、主张、结构或功能变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。程序化阈值验证不是辅助技术认证、人工目检或法律合规声明。
+- Only color values changed; no content, claim, structure or function change. The four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes. Programmatic threshold verification is not assistive-technology certification, human inspection or a legal compliance claim.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
+## v23.0 - 2026-08-15
+
+**Broken rendered-report link repair / 离线报告失效链接修复**
+
+- 第 23 轮只在第 22 轮 PR #2709 合并（merge SHA `3b38ad5c4c85b9a2dd852c829d1e37a6f78dbe9a` 进入 canonical `main@cf61a62b12b0487561c8623c4ff4d6193771fa3c`）且 441 个开放 PR 文件级扫描无竞争后开始。链接完整性审计覆盖全部中英文 proposal/visual/report/媒体说明与索引进阶路径：仅发现两份离线报告各一条媒体披露链接在渲染层退化为纯文本（仓库渲染器不转换非图片 Markdown 链接），且若按原文路径解析还会指向错误目录。
+- Round 23 began only after Round 22 PR #2709 merged (merge SHA `3b38ad5c4c85b9a2dd852c829d1e37a6f78dbe9a` entered canonical `main@cf61a62b12b0487561c8623c4ff4d6193771fa3c`) and a file-level scan of 441 open PRs found no competing PR. The link-integrity audit covered every bilingual proposal/visual/report/media note and all index route entry points: it found exactly one media-disclosure link per offline report that the renderer emitted as plain text (the repository renderer does not convert non-image Markdown links), with a path that would also resolve to the wrong directory if interpreted literally.
+- 修复：`report/proposal.html` 与 `report/proposal.en.html` 中该链接改为真实 `<a href="../assets/media/ordinary-life-scenes.md">`，从 `report/` 目录正确解析；proposal.md 与 visual 页面内的同源链接本就正确，未改动。
+- Fix: the link in `report/proposal.html` and `report/proposal.en.html` is now a real `<a href="../assets/media/ordinary-life-scenes.md">` resolving correctly from the `report/` directory; the same link inside proposal.md and the visual pages was already correct and is untouched.
+- 渲染器怪癖已记录：今后任何 `scripts/render_proposal_html.py` 重渲染都会重新产出纯文本形态，必须重新应用本修复（见 narrative r23 段）。本轮不新增来源、文件、页数、机制或成熟度；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- The renderer quirk is recorded: any future re-run of `scripts/render_proposal_html.py` will emit the plain-text form again and this fix must be re-applied (see the narrative Round 23 section). The round adds no source, file, page, mechanism or maturity; the four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。链接修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A link repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
+## v22.0 - 2026-08-15
+
+**Browser QA matrix execution and evidence writeback / 浏览器交互 QA 矩阵执行与证据回写**
+
+- 第 22 轮只在第 21 轮 PR #2655 合并（merge SHA `0579f1cd282f3b142594b2bd59419554dd6f60e2` 进入 canonical `main@dd40574337372e26b10c9ea73a7d680f74764394`）且 443 个开放 PR 文件级扫描无竞争后开始。本轮不改任何视觉或正文内容，只执行并回写浏览器交互 QA 矩阵证据。
+- Round 22 began only after Round 21 PR #2655 merged (merge SHA `0579f1cd282f3b142594b2bd59419554dd6f60e2` entered canonical `main@dd40574337372e26b10c9ea73a7d680f74764394`) and a file-level scan of 443 open PRs found no competing PR. The round changes no visual or narrative content; it only executes and writes back browser interaction QA matrix evidence.
+- 18 项双语 CDP 矩阵（Chrome 151.0.7922.138 headless + CDP + Node.js 22 内置 WebSocket，包外零依赖驱动器）对当前真实 visual 页面执行：真实 390×844/1440×900 视口零页面级横向溢出、禁 JavaScript 下索引/五步/六问/12 行合同完整、减少动态单步、打印展开、键盘跳转首焦点、12.25 s 状态边界、alt/aria-live/h1、控制台/失败请求/外部主机全 0。结论 all_pass，视觉内容零缺陷、零修改。
+- An 18-case bilingual CDP matrix (Chrome 151.0.7922.138 headless + CDP + Node.js 22 built-in WebSocket, zero-dependency package-external driver) ran against the real visual pages: zero page-level horizontal overflow at true 390×844/1440×900 viewports, complete index/five-steps/six-questions/12-row contract without JavaScript, single-step reduced motion, print expansion, keyboard skip-link first focus, the 12.25 s state boundary, alt/aria-live/h1 checks, and 0 console errors, failed requests or external hosts. The matrix concludes all_pass with zero visual-content defects and zero visual changes.
+- 证据以结构化块写入 `site-grounding-register.json#package_validation_contract.browser_matrix_r22`；narrative 增补 r22 固定点，收束 r20“本会话未做浏览器交互矩阵”的披露。矩阵是程序化浏览器验证，不是辅助技术认证、人工像素目检、现场证据或任何批准。
+- The evidence is written as a structured block into `site-grounding-register.json#package_validation_contract.browser_matrix_r22`; the narrative gains a Round 22 fixed point that supersedes the Round 20 "no interactive browser matrix this session" disclosure. The matrix is programmatic browser verification only — not assistive-technology certification, human pixel inspection, field evidence or any approval.
+- 冻结项保持不变：geometry、metrics、sources.json、四份 PDF、全部图件与媒体、proposal 与 visual 内容均未变；12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。矩阵 PASS、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: geometry, metrics, sources.json, the four PDFs, all figures and media, and all proposal/visual content are untouched; 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths are unchanged. A matrix PASS, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v21.0 - 2026-08-14
 
 **Source freshness audit first execution / 来源新鲜度审计首次执行**

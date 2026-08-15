@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v8.0 - 2026-08-15
+
+- Added a rights-declared custom gallery cover that turns the three-station handoff into one thumbnail-readable First-Mile Gate scene, with live bilingual title text and an explicit non-evidence label.
+- Rejected the first cover draft after spatial review found portals and kiosks obstructing the preserved rail; V2 restores a continuous rail clearance zone and relocates every service node, user and accessible route to the side promenades.
+- Added an offline bilingual 90-day Canvas sequence so reviewers can move across readiness, first real use, operational handoff and reuse while seeing which station and G0-G4 evidence layer becomes active.
+- Kept the interaction deterministic, network-free and non-autoplaying, with native keyboard control, a static atlas fallback and clear wording that the timeline is a concept staging aid rather than reported progress.
+- Added separate 59.7-second Chinese and English concept films. Each file contains one narration language and its matching caption/transcript only; both use the same picture and restrained locally bundled sound marks, and the offline visual indexes prevent the two players from sounding together.
+- Replaced the Chinese film's non-standard dialect-like voice with the offline macOS `Tingting` standard-Mandarin female voice, removed per-line time stretching, and verified the complete mixed narration with local Mandarin speech recognition.
+- Migrated the manifest to the strict 0.2 media contract, registered the cover and updated generation provenance, copyright, assumptions and source records.
+
 ## v7.0 - 2026-08-10
 
 - Rewrote the bilingual human-reading layer in an authorial urban-design voice, replacing taskbook restatement and validator instructions with site judgments, spatial choices and implementation consequences.

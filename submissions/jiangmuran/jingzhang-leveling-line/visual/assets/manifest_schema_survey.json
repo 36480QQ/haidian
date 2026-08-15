@@ -11,7 +11,7 @@
  "enforcement_note": "scripts/validate_submission.py 校验的是「清单列出的文件是否存在、摘要是否匹配」，不校验清单本身是否符合 schema；仓库中没有任何 gate 做这件事。这就是三分之一的语料可以长期违反一份已发布契约而无人察觉的原因。",
  "allowed_roles": null,
  "role_constraint": "open pattern",
- "resolution_zh": "**本调查所计的违规类别已经不存在了。** Issue #1058 指出这份已发布的 manifest schema 没有任何 gate 执行，且 338 份已合入方案中有 117 份不满足它，违规集中在四个 role 上——`changelog`、`evidence_data`、`verification_script`、`risk_matrix`，本包当时也用了这四个。该 issue 于 2026-08-11 关闭，修法是把 `role` 从封闭枚举改为开放 pattern （`^[a-z][a-z0-9_]{1,63}$`），规范角色集改写在 description 里而不再逐项枚举。**因此本包此前声明的四条 role 例外全部作废，该次修复后 role 例外为零条。** 此刻随包声明的例外共 1 条（见下方 `declared_exceptions`，逐条现算而非记下），其中 role 类 0 条。 一个继续报告「schema 已不可能产生的数字」的调查，就是本包勘误册记的「声明活得比包久」——方向对本包有利，不因此更可接受。",
+ "resolution_zh": "**本调查所计的违规类别已经不存在了。** Issue #1058 指出这份已发布的 manifest schema 没有任何 gate 执行，且 338 份已合入方案中有 117 份不满足它，违规集中在四个 role 上——`changelog`、`evidence_data`、`verification_script`、`risk_matrix`，本包当时也用了这四个。该 issue 于 2026-08-11 关闭，修法是把 `role` 从封闭枚举改为开放 pattern （`^[a-z][a-z0-9_]{1,63}$`），规范角色集改写在 description 里而不再逐项枚举。**因此本包此前声明的四条 role 例外全部作废，该次修复后 role 例外为零条。** 此刻随包声明的例外共 0 条（见下方 `declared_exceptions`，逐条现算而非记下），其中 role 类 0 条。 一个继续报告「schema 已不可能产生的数字」的调查，就是本包勘误册记的「声明活得比包久」——方向对本包有利，不因此更可接受。",
  "violation_kinds": {
   "unexpected_property_at_files[]": 681,
   "missing_required_property": 224,
@@ -48,10 +48,8 @@
  "reading": "违规集中在 role 枚举缺项，而不是作者写错。一个随包提交 changelog、校验脚本或证据数据的方案，在枚举里找不到对应的 role，于是写下诚实的名字并静默失败。修法有两条，都很轻：扩充枚举以覆盖语料实际携带的角色，或在入库时执行该 schema 使缺口在提交时就可见。两条都不做，则等于长期维持一份三分之一语料都不满足的已发布契约。",
  "this_package": {
   "path": "submissions/jiangmuran/jingzhang-leveling-line/manifest.json",
-  "violations": 1,
-  "declared_exceptions": [
-   "unexpected_property_at_root:data_confidence"
-  ],
+  "violations": 0,
+  "declared_exceptions": [],
   "note": "本方案自身也在违规之列，不作豁免。这些违规是有意的：把 changelog 写成 narrative、把校验脚本写成 visualization，只是为了通过一份没人执行的校验而说假话。build_all.py 会对照上面这份清单校验本包 manifest，出现清单以外的新违规即构建失败——已声明的例外不能给新的意外提供藏身处。"
  },
  "worst_packages": [

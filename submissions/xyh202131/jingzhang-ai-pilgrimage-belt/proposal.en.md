@@ -33,7 +33,7 @@ scenarios:
 
 ![Three-frame site reading: published background orientation, the provisional design container, and Twin-Track Jing-Zhang design relationships remain separate and never co-register; G0 concept, provisional geometry, not to scale, with no official redline or station anchor claimed](assets/figures/site-overview.en.png)
 
-### 30-Second / 3-Minute / 15-Minute Entry
+## 30-Second / 3-Minute / 15-Minute Entry
 
 | Reading time | Answer only this | Start here | Misreading to stop |
 |---|---|---|---|
