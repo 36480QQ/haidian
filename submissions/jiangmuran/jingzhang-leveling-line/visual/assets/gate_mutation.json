@@ -178,7 +178,7 @@
       "caught": true,
       "exit_code": 1,
       "named_the_damage": true,
-      "what_zh": "把英文摘要里的「184→793 proposals」改成一句不带数字的说法，句子照样成立，而守着它的那条模式从此匹配不到任何东西。",
+      "what_zh": "把英文摘要里的「228→793 proposals」改成一句不带数字的说法，句子照样成立，而守着它的那条模式从此匹配不到任何东西。",
       "what_en": "Reword the English summary so the pattern watching it matches nothing. The sentence stays true and readable; the check simply stops running.",
       "why_zh": "本闸门的十四条 fact 要求「必须找得到」，而二十一条 context 模式约束的是「每一次出现都必须等于当前值」——**零次出现就是零次约束**，循环根本不进入，而汇总行照旧写着「21 条模式」。三条已经这样悄悄失效了。若人为再造一条而闸门不响，这道闸门报出的数就只是它自己声明的条数，不是它做过的功。",
       "why_en": "This gate's fourteen facts must each be *found*; its context patterns instead constrain every occurrence of a phrasing — and **zero occurrences is zero constraint**. The loop never runs and the summary keeps reporting the number of patterns as though each had done work. Three had already fallen silent this way. If a fourth can be created deliberately without objection, the gate's headline number is a count of its own declarations, not of anything it checked."
