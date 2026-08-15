@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7c5c4e41dd21f74da317ea9003da2bdbda7724086b3076d805a6529472f825b6"
+      "sha256": "ec5bedf7dc0797eca4f51229a87f5f6db16ff5ddf887a14cb78e40cd00957424"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "948e53ddf89e60ff448e2bb05262015fd593f244a9969f282f4359d015238517"
+      "sha256": "9ff4106c6e543e01416ae971865750292e1b19644953347a87d85cec60042a56"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "dbe028ca48c7cdee96f59cff54c19f44682ce786b2dbf372ac180c498577e71e"
+      "sha256": "ef973f9b4e0474d76df23036fc094ba39729f4f1856cd31bfec568da526551a1"
     },
     {
       "path": "report/narrative.md",
@@ -570,6 +570,21 @@
       "language": "en",
       "translation_of": "assets/figures/keyarea-dazhongsi_ai_industry_cluster.png",
       "sha256": "64bedd9bb5029793fe2d5551b6f0f3f92ad5573183611859419879cf93536d9f"
+    },
+    {
+      "path": "assets/figures/c16-syntax-maps.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "d33a51b52ded47d21cea5f58b91cad3bfb3ca11733ea8a64847f448e644bf333"
+    },
+    {
+      "path": "assets/figures/c16-syntax-maps.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/c16-syntax-maps.png",
+      "sha256": "9be12689e3a9be3f2a6012a3a61cc4a8493bf548d4c2ebf43e41690b84ac53c9"
     }
   ],
   "validation_claim": {
