@@ -208,6 +208,35 @@ The northern yard proposes a public validation street, two groups of shared test
 
 The central yard groups a public handover table, campus research relay, translation desk, accessible-route copilot and community collaboration rooms around walkable open-source and living space. Ground floors stay continuous but graded at night; planting, shared living rooms and closable porches sit between research activity and quiet residential edges. Moving research into the city needs two walkable stages: an incubation stage next to campus gates and institute entrances, and a translation stage along the Handover Line that opens to the neighbourhood. Stations toward Wudaokou and Qinghua East Road West Entrance are the start of those two stages; integration there is not about adding retail floor area but about completing the "arrive – recognise – ask for help – enter public space" interface and repairing walking and cycling breaks between campuses and parks. Low-impact incremental renewal means validating demand with time-sharing and temporary use rights before discussing ownership and conversion. Open source is not unconditional disclosure: code, models, datasets and space use each carry their own licence, withdrawal path and safety review.
 
+### A 1:1 prototype: the public handover table — the whole protocol shrunk to one table
+
+The three sections above work at district scale. But a line named after *handover* ought to have one thing small enough to build first, cheap enough to remove the same day if it is wrong, and simple enough for others to copy if it is right. The **public handover table** is that thing: the smallest physical carrier of the whole dual-control protocol — one table and four items that must all be present at once.
+
+**Why this before the handover grounds.** A handover ground is an area, entangled with tenure, fire safety, transport and sustained budget; any one of them unresolved and nothing moves. A table can sit inside existing public space on movable furniture and a short-term use permit. **The reliability of a protocol should be proven once at its smallest unit before anyone talks about scaling it** — the same logic as this proposal's "prove the refusal path works before discussing release".
+
+| Segment | What it is | Required before the table opens | What remains after removal |
+| --- | --- | --- | --- |
+| **① Release position** | The releasing side's surface and version-card slots: version, scope of applicability, known faults, shutdown procedure — one card each | Any missing card means the table does not open | Cards are archived into the duty logbook; the surface returns to public seating |
+| **② Receiving position** | The receiving side's surface and decision plate: **accept / refuse / defer**, one of three, signed | The receiving and releasing sides may not be the same role | The decision is archived; the plate is withdrawn |
+| **③ Open-items board** | A publicly visible board: every item the previous shift failed to close hangs here, and may not be taken down at handover | While a blocking open item exists, the smart layer stays off | Open items move to the public duty logbook; they do not vanish with the table |
+| **④ Human counter** | A service position depending on no device at all: paper forms, staffed enquiry, the no-AI equivalent service | **Must exist before the smart layer**, and must serve independently while the smart layer is off | The human counter stays; this segment is not removed |
+
+**The order of the four cannot be rearranged** — which is what this proposal's core claim looks like on a single table: the human counter stands first, the open items are public, and only then is there anything to release or receive. **If only one segment can be kept, keep the human counter.**
+
+**Current state: `not_authorized_not_run`.** No site, no accountable party, nothing built, never run. Only three things can honestly be stated now: what it is made of, what must hold before it opens, and what it leaves behind when removed. **Position, dimensions, materials, accessible clear width and surface height must follow site survey and accessibility standards; this proposal sets no numbers for them** — the same standard applied to all twelve scenarios, and being "concrete" is no reason to relax it.
+
+**Checklist before opening** (sharing one discipline with action pack P03 and the twelve shift-ledger instances; no separate standard is introduced):
+
+1. Site rights and the accountable party granted — otherwise no siting
+2. Releasing and receiving roles separately appointed, **and not the same person** — otherwise the protocol does not hold
+3. The human counter available first, with one no-AI equivalent-service drill completed — otherwise the smart layer does not open
+4. A rollback drill observed to pass: from "smart layer running" back to "paper plus staff" with no interruption of service — otherwise no trial
+5. Data minimisation, licensing, safety, accessibility and public-interest review passed — otherwise no opening to the public
+
+**Any one missing and it does not open.** That is not caution; it is the only condition under which this protocol holds. A table that cannot refuse, cannot be removed, and has no open-items board is just furniture.
+
+**How it can be copied.** The value is not in the form but in the **co-presence** of those four items and the **fixed order** between them. Any institution — a university lab, a community service point, a company open day — can build one from its own furniture and its own forms, as long as all four segments are there, the order holds, decisions are signed and open items are never taken down. **This is the most portable thing in the proposal, and the thing most worth taking.**
+
 ### Dazhongsi AI Industry Cluster: Share→Serve Yard
 
 The southern yard hands capability to daily civic service. The Dazhongsi station direction, the commercial blocks and the south end of the Jing-Zhang Rail Heritage Park form a walkable sequence through the civic handover hall, Century Logbook and oral-history booth. Agent, smart-terminal and content-consumption businesses share one precondition — comparable, refusable, exitable — so AI-native commerce cannot require facial recognition or a mandatory app, and non-commercial access remains available. Data-element and digital-asset circulation is discussed only under consent, withdrawal and audit; the proposal does not design the trading rules themselves. The four quadrants at the Dazhongsi station intersection are currently car-dominated and are treated as the condition on which the southern segment depends: the quadrants need a continuous, visible, step-free walking relationship, with an arrival interface and a human help point in each. Bicycle parking follows "close to entrances, never occupying the continuous walking surface, recoverable and relocatable" rather than trading order for railings. Rail interchange, the exact quadrant connection, treatment of existing buildings and landmark height all require official transport, ownership, fire-safety and heritage data before professional development.
