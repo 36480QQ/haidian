@@ -742,6 +742,19 @@
       "assumptions": [
         "G0-G6 逐道深化;当前完成 7/7"
       ]
+    },
+    "persona_deep_dive_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of persona deep-dive cards",
+      "confidence": "high",
+      "assumptions": [
+        "七类画像逐类深化;当前 1/7"
+      ]
     }
   }
 }
