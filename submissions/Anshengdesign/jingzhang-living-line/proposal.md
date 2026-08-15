@@ -70,6 +70,8 @@ iteration: "v0.17"
 
 图面用四种底色：灰色是现状，绿色是已建公园，浅黄是已批或在建项目，朱红只画本案新增。底图来自 OSM 道路、建筑、水系与高德 POI 12 类 25,476 点（2026-08-15 快照，GCJ-02 已转 WGS84），全部本地实算、单源登记 [source:DATA-SRC-OSM-20260815] [source:DATA-SRC-AMAP-POI-20260815]。征集包的临时边界继续作为工作边界，图面不把它冒充法定红线；官方红线到位后整包重算 [data:geometry/site_boundary.geojson#SITE-001]。一处校正必须说明：brief 提供的 PROV-KEY-003 粗替代边界实际落位在北京北站一带（39.944–39.950），与 brief 自身依据表"公告任务涉及大钟寺站"（39.9653，provisional_boundaries_basis.md）相差约 2 公里，且 brief 的 missing-data.md 自述三区精确 polygon 缺失；本方案按名称语义把大钟寺工作边界校正到大钟寺站周边（72.3 公顷，仍为 provisional），登记为假设 A-BOUNDARY-003，官方 polygon 到位后整包重算。
 
+![A-BOUNDARY-003 边界校正证据：brief 粗边界 vs 名称语义](assets/figures/c18-boundary-evidence.png)
+
 专业案例只帮我们确定做法参照，不背书。伦敦国王十字先修街道、广场和历史建筑，再让地块慢慢长出来；波士顿肯德尔广场是"近校转化圈"的尺寸参照；马德里 Río 用连续林荫步道把社区接到河边。本案没有复制任何项目的图片、几何或文字，只采用"先通路、后长房子、活动跟着日常走"的阅读顺序 [source:DATA-SRC-CASA-KB-KUN]。
 
 
@@ -202,13 +204,17 @@ iteration: "v0.17"
 
 ![大钟寺量化分析](assets/figures/keyarea-dazhongsi_ai_industry_cluster.png)
 
+![大钟寺站域四象限缝合局部放大（概念示意）](assets/figures/dazhongsi-quadrant-zoom.png)
+
+**怎么读这张放大图**：以界面广场为中心的四象限——①遗址公园侧公园口缝入、②北三环北上跨/下穿缝合、③站域腹地慢行接驳、④高梁桥斜街界面缝合；C-C' 剖面位置线在详设平面与放大图上落在同一处。缝合方式（上跨/下穿/慢行）均为概念建议，待交通、市政与权属数据到位后深化。
+
 ![三区街道剖面（概念断面，带尺寸）](assets/figures/section-zhongzhiyuan_ai_acceleration_area.png)
 
 ![原点社区街道剖面](assets/figures/section-beijing_ai_origin_community.png)
 
 ![大钟寺街道剖面](assets/figures/section-dazhongsi_ai_industry_cluster.png)
 
-**怎么读这三张剖面**：每区一条概念街道断面——众智园 3.2m 人行道+2.8m 骑行带+测试设备停放位；原点社区带树荫座凳与临街人才公寓；大钟寺 20m 界面广场+缝合天桥+智能原生商业界面。剖面为概念示意（非工程断面），尺寸为设计意图，待道路红线与文保数据复核。
+**怎么读这三张剖面**：每区一条概念街道断面——众智园 3.2m 人行道+2.8m 骑行带+测试设备停放位；原点社区带树荫座凳与临街人才公寓；大钟寺 20m 界面广场+缝合天桥+智能原生商业界面。三张剖面的位置线（A-A' / B-B' / C-C'）分别落在三张详设平面上。剖面为概念示意（非工程断面），尺寸为设计意图，待道路红线与文保数据复核。
 
 ![众智园概念效果图（AI 生成，非现状照片）](assets/media/stack-testband.jpg)
 

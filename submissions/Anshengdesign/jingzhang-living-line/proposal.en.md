@@ -71,6 +71,8 @@ This round first verifies the project's progress. The official announcement conf
 
 The drawings use four base colours: grey is the status quo, green is the built park, light yellow is approved or under-construction projects, and vermilion marks only this proposal's additions. The base map comes from OSM roads, buildings, and water bodies, plus 12 categories and 25,476 points of Amap POI (2026-08-15 snapshot, GCJ-02 converted to WGS84), all computed locally and registered to a single source [source:DATA-SRC-OSM-20260815] [source:DATA-SRC-AMAP-POI-20260815]. The call package's provisional boundary continues as the working boundary; the drawings never pass it off as a statutory redline; once the official redline arrives, the whole package is recalculated [data:geometry/site_boundary.geojson#SITE-001]. One correction must be stated: the brief's PROV-KEY-003 rough boundary actually sits near Beijing North Station (39.944–39.950), roughly 2 km from Dazhongsi Station named in the brief's own basis table ("the announcement tasks involve Dazhongsi Station", 39.9653, provisional_boundaries_basis.md), and the brief's missing-data.md states that the precise polygons for the three key areas are missing; this proposal therefore corrects the Dazhongsi working boundary to the area around Dazhongsi Station by name semantics (72.3 ha, still provisional), registered as assumption A-BOUNDARY-003, with a full-package recalculation once the official polygon arrives.
 
+![Evidence for A-BOUNDARY-003: brief rough boundary vs name semantics](assets/figures/c18-boundary-evidence.en.png)
+
 Professional case studies only help us fix our methodological reference; they do not endorse us. London King's Cross built the streets, squares, and historic buildings first, then let the plots grow slowly; Boston's Kendall Square is the size reference for the "near-campus conversion circle"; Madrid Río uses a continuous tree-lined promenade to connect communities to the river. This proposal copies no project's images, geometry, or text, and adopts only the reading order of "open the path first, grow the buildings later, and let activity follow daily life" [source:DATA-SRC-CASA-KB-KUN].
 
 ## Consultation of Five Urban Scientists
@@ -205,13 +207,17 @@ The overall structure is therefore one line, three folds, two wings, seven nodes
 
 ![Dazhongsi quantified analysis](assets/figures/keyarea-dazhongsi_ai_industry_cluster.en.png)
 
+![Dazhongsi station-district four-quadrant stitching, enlarged (conceptual)](assets/figures/dazhongsi-quadrant-zoom.en.png)
+
+**How to read this enlargement**: the four quadrants centred on the Interface Plaza — ① the heritage-park side stitches the park entrance in, ② north of the North 3rd Ring a grade-separated stitch, ③ the station hinterland slow-mode connections, ④ the Gaoliangqiao Xiejie interface; the C-C' section line falls at the same place on the detailed plan and this enlargement. The stitch modes (grade-separation / slow modes) are conceptual suggestions, to be deepened once transport, municipal, and ownership data arrive.
+
 ![Street sections of the three areas (conceptual sections, with dimensions)](assets/figures/section-zhongzhiyuan_ai_acceleration_area.en.png)
 
 ![Origin Community street section](assets/figures/section-beijing_ai_origin_community.en.png)
 
 ![Dazhongsi street section](assets/figures/section-dazhongsi_ai_industry_cluster.en.png)
 
-**How to read these three sections**: one conceptual street section per area — Zhongzhiyuan: a 3.2 m footpath + a 2.8 m cycle band + a test-equipment parking slot; the Origin Community: shaded benches and street-facing talent apartments; Dazhongsi: a 20 m interface plaza + a stitching skybridge + an AI-native commercial interface. The sections are conceptual illustrations (not engineering sections); the dimensions are design intent, pending review against road redlines and heritage data.
+**How to read these three sections**: one conceptual street section per area — Zhongzhiyuan: a 3.2 m footpath + a 2.8 m cycle band + a test-equipment parking slot; the Origin Community: shaded benches and street-facing talent apartments; Dazhongsi: a 20 m interface plaza + a stitching skybridge + an AI-native commercial interface. The position lines of the three sections (A-A' / B-B' / C-C') fall on the three detailed plans respectively. The sections are conceptual illustrations (not engineering sections); the dimensions are design intent, pending review against road redlines and heritage data.
 
 ![Zhongzhiyuan concept rendering (AI-generated, not a site photograph)](assets/media/stack-testband.jpg)
 
