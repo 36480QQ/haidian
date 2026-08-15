@@ -377,10 +377,10 @@
      "P3_low": 0.0,
      "P3_high": 0.0
     },
-    "covers_zh": "东西向 AI 关闭态连续通道存在性核验；OP-08 与 OP-09 接入段的可通行性逐段核验；坡度、路缘、通行净宽与休息位的现场无障碍审计；ALT-A 走向约 615 米与 ALT-B 走向约 273 米两条备选的地面连续性踏勘。",
-    "covers_en": "Verification that an east–west AI-off continuous route exists; segment-by-segment walkability checks of the access stubs to OP-08 and OP-09; a site accessibility audit of gradient, kerb, clear width, and rest positions; and ground-continuity walkovers of the roughly 615 m ALT-A alignment and the roughly 273 m ALT-B alignment.",
-    "basis_zh": "按公开市场常识性区间估计。折算锚点为第一期 8—14 人日中归属审计与测绘的部分，以及两条备选走向合计约 889 米的踏勘工作量；长度读数取自 seb-op04-chain-data.json 的入档值，属概念口径，不代表工程测绘精度。",
-    "basis_en": "Estimated from commonly known public-market ranges, anchored on the audit and survey share of the eight to fourteen person-days in phase one and on walkovers of the roughly 889 m of the two alignments combined. The length figures are the archived concept-level readings and do not imply engineering survey accuracy."
+    "covers_zh": "东西向 AI 关闭态连续通道存在性核验；OP-08 与 OP-09 接入段的可通行性逐段核验；坡度、路缘、通行净宽与休息位的现场无障碍审计；ALT-A 走向约 282 米与 ALT-B 走向约 282 米两条备选的地面连续性踏勘。",
+    "covers_en": "Verification that an east–west AI-off continuous route exists; segment-by-segment walkability checks of the access stubs to OP-08 and OP-09; a site accessibility audit of gradient, kerb, clear width, and rest positions; and ground-continuity walkovers of the roughly 282 m ALT-A alignment and the roughly 282 m ALT-B alignment.",
+    "basis_zh": "按公开市场常识性区间估计。折算锚点为第一期 8—14 人日中归属审计与测绘的部分，以及两条备选走向合计约 564 米的踏勘工作量；长度读数取自 seb-op04-chain-data.json 的入档值（v0.3.0，几何归位后），属概念口径，不代表工程测绘精度。",
+    "basis_en": "Estimated from commonly known public-market ranges, anchored on the audit and survey share of the eight to fourteen person-days in phase one and on walkovers of the roughly 564 m of the two alignments combined. The length figures are the archived concept-level readings (archive v0.3.0, after the geometry relocation) and do not imply engineering survey accuracy."
    },
    {
     "item_id": "B2",
@@ -1048,14 +1048,14 @@
     "本轮若未发生任何参与者测试，登记表为零行，且必须写明零行的理由——零行不表示「本轮无失败」，而表示本轮尚未发生任何一次测试。这两者被混同，就是把没做过说成做好了。",
     "受影响但未参与群体登记表必须填写：登记本轮改动可能影响但未参与的人群及其知会方式；登记为空须给出理由；缺少该登记，本轮复核结论不成立。",
     "第一期的否定结论本身须登记为失败样本并以变更回执发布：一条已经写在数据里、通过了全部字段校验的等价路径断言被空间核算退回，这是本包最应当被公开保留的一条记录。不得静默删除 OP-04，不得以其他点位替代，不得只改结论不交证据。",
-    "chain-data 待办 OI-01 已登记的同类问题（OP-08 与 OP-09 在 AI 关闭状态下的接入距离分别为 AI 开启状态的 1.924 倍与 6.157 倍）在本包范围之外，退出时须原样移交下一轮，不得在本轮静默处理。"
+    "chain-data 待办 OI-01 已登记的同类问题（OP-08 与 OP-09 的物理接口线同为未声明 AI 关闭等价的 ROAD-004，接口固定口径下关闭态两点均无接入）在本包范围之外，退出时须原样移交下一轮，不得在本轮静默处理。"
    ],
    "obligations_en": [
     "All four denominator categories are reported together — completed, withdrawn, technical fault, other non-completion — and dropping any one voids the measurement under code DENOMINATOR_SAMPLE_DROPPED. The rule covers the five participant-task metrics, including human-handover success rate and response time.",
     "Where no participant test took place, the register holds zero rows and must state why. Zero rows do not mean the round had no failures; they mean no test has yet happened. Conflating the two is how never having done something gets reported as having done it well.",
     "The register of affected non-participants must be completed, recording who this round's changes might affect without their taking part and how they were notified. An empty register requires a reason, and without the register the round's review conclusion does not stand.",
     "A negative finding in phase one is itself registered as a failed sample and published as a change receipt: an equivalence claim that already sat in the data and passed every field check, sent back by a spatial computation, is the record this pack should most insist on keeping public. OP-04 may not be quietly deleted, no other node may be substituted, and no conclusion may change without evidence.",
-    "The related fault already registered as open item OI-01 — that with AI off the approach stubs of OP-08 and OP-09 run at 1.924 and 6.157 times their AI-on length — lies outside this pack's scope and is handed to the next round unchanged at exit rather than quietly handled here."
+    "The related fault already registered as open item OI-01 — that OP-08 and OP-09 share the same physical interface line, ROAD-004, undeclared for AI-off equivalence, leaving neither with any attachment once AI is off — lies outside this pack's scope and is handed to the next round unchanged at exit rather than quietly handled here."
    ]
   },
   "what_exit_does_not_mean_zh": "退出不解除三件事：已发布的变更回执不得改写；已登记的失败样本不得删除；已作出的知会不得撤回。已发布的记录留在原地，后续结论以追加方式呈现——这与 OP-04 的 ai_off_path 原文一字未改、结论以追加字段登记，是同一条纪律。",
