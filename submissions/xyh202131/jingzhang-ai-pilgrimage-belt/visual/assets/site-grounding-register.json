@@ -895,6 +895,45 @@
         "result_after_fix": "visual_review.py (current rule layer) passes with 0 issues; all three metrics remain status=known with confidence=low, provisional assumptions, formulas and geometry source_files; HTML data-values match metrics.json exactly",
         "certification_note": "Recomputation and gate conformance are machine checks only; they do not turn provisional geometry into an official redline, precise area or planning control."
       },
+      "evidence_integrity_r33": {
+        "contract_id": "JZ-EVIDENCE-INTEGRITY-R33",
+        "executed_at": "2026-08-15",
+        "method": "The review handoff index generator now enforces, on every regeneration, five machine-checkable invariants: every [source:…]/[assumption:…]/[metric:…] marker resolves to a record in sources.json/assumptions.json/metrics.json; every [data:…] marker resolves to a package file on disk (fragment ignored); zh/en marker value multisets are identical per kind; zh/en heading counts are equal; every reading-route entry-point anchor exists in both visual pages. Any violation fails regeneration.",
+        "baseline_findings": {
+          "source_markers_resolved": "50/50 per language",
+          "assumption_markers_resolved": "23/23 per language",
+          "metric_markers_resolved": "80/80 per language",
+          "data_markers_resolved": "79/79 per language",
+          "standard_depth_markers": "non-empty, well-formed per language",
+          "marker_value_multiset_parity": "identical per kind",
+          "heading_parity": "86/86",
+          "route_anchor_resolution": "0 missing",
+          "ledger_parent_refs": "all resolve (bare names are ledger-directory-relative, fragments are JSON pointers)",
+          "source_rights_evidence_mapping": "50/50 both directions"
+        },
+        "result": "review-handoff-index.json now carries an evidence_integrity block recording these checks with generator_enforced=true; regeneration passed with 0 violations",
+        "certification_note": "Structural machine checks only; they do not certify translation semantics, field evidence or rights clearance."
+      },
+      "html_publication_metadata_r33": {
+        "contract_id": "JZ-HTML-PUBLICATION-METADATA-R33",
+        "executed_at": "2026-08-15",
+        "method": "Head-section audit over the four HTML surfaces (visual/index.html, visual/index.en.html, report/proposal.html, report/proposal.en.html)",
+        "baseline_findings": {
+          "missing_meta_description": 4,
+          "title_present": 4,
+          "lang_attribute": "zh-CN / en / zh-CN / en",
+          "viewport_present": 4
+        },
+        "fixes": [
+          {"file": "visual/index.html", "change": "added bilingual meta description"},
+          {"file": "visual/index.en.html", "change": "added English meta description"},
+          {"file": "report/proposal.html", "change": "added bilingual meta description"},
+          {"file": "report/proposal.en.html", "change": "added English meta description"}
+        ],
+        "result_after_fix": "4/4 surfaces carry a meta description consistent with their language and boundary disclosure",
+        "maintenance_note": "The report HTML files are renderer-generated; their meta descriptions are re-applied after every future re-render, same as the Round 23 media-link fix.",
+        "certification_note": "Publication metadata completeness only; not SEO, accessibility or approval certification."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,

@@ -199,7 +199,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 53 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 4 bytes to spare"
+      "message": "intake_limits_qa.py — intake limits: 53 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 20 bytes to spare"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -247,7 +247,7 @@
       "severity": "info",
       "target": "proposal.md / proposal.en.md",
       "source": "package-provided",
-      "message": "双语内容一致性 — bilingual content parity: overall 84%, 15/15 sections at or above floor"
+      "message": "双语内容一致性 — bilingual content parity: overall 84%, 16/16 sections at or above floor"
     },
     {
       "check_id": "PKG_PEER_CLAIM_QA",
