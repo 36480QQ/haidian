@@ -1220,12 +1220,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-173 entries. By finder:
+174 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 124 | Found while working |
+| The author | 125 | Found while working |
 | This package's own gate | 11 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; [@](https://github.com/) on  |
 
@@ -1241,7 +1241,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| An easy measure | 35 |
+| An easy measure | 36 |
 | Two copies drifted | 25 |
 | Shipped unseen | 17 |
 | Outlived the package | 15 |
@@ -1666,7 +1666,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf`, read page by page, and `drawings/a0-boards.en.pdf`, read standing. Two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` is the argument alone. Six files ship behind them, in `visual/assets/`: `personas.json` (nine personas, every `P` assertable), `naming.json` (the naming system as rules), `score_correlates.json`, `gate_mutation.json` (damage proving 32 of 37 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent animated diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation, and every frame says so. Poster, captions, transcript ship with it. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism rather than a schedule. Those closures illustrate the rule; none has been run. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `visual/index.html` carries an interactive canvas: move the annual readings, the peak recomputes. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements and 120 figures. **A drawing can only be believed; this can be argued with.** **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf`, read page by page, and `drawings/a0-boards.en.pdf`, read standing. Two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` is the argument alone. Six files ship behind them, in `visual/assets/`: `personas.json` (nine personas, every `P` assertable), `naming.json` (the naming system as rules), `score_correlates.json`, `gate_mutation.json` (damage proving 33 of 38 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent animated diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation, and every frame says so. Poster, captions, transcript ship with it. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism rather than a schedule. Those closures illustrate the rule; none has been run. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `visual/index.html` carries an interactive canvas: move the annual readings, the peak recomputes. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements and 120 figures. **A drawing can only be believed; this can be argued with.** **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
 
 <!-- FIGINDEX:BEGIN -->
 
@@ -1730,11 +1730,11 @@ Every item can be completed independently:
 11. `agent.json` — full disclosure of the generation method; `model` is not a placeholder
 12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, checkable with `pypdf`: `FontFile3` under `DescendantFonts` carries the CJK faces; DejaVuSans-Bold is a `/TrueType` subset under `FontFile2`, so `FontFile3` alone will not see it
 
-**Who this list is for.** The repository's `scripts/review_submission.py` hands the reviewing model nine files whole — `proposal.md`, `manifest.json`, `metrics.json`, `assumptions.json`, `sources.json`, `self_check.json` and the three matrices — plus **eighteen images**: five figure paths, page 1 of the four PDFs and both pages screenshotted, **each in both languages** — the cap exactly (see `visual/assets/visual_packet_qa.json`). **English sheets are scored.** It does **not** read `geometry/`, `visual/assets/`, `risk.json`, `changelog.md` or `agent.json`.
+**Who this list is for.** The repository's `scripts/review_submission.py` hands the reviewing model nine files whole — `proposal.md`, `manifest.json`, `metrics.json`, `assumptions.json`, `sources.json`, `self_check.json` and the three matrices — plus eighteen images: five figure paths, page 1 of the four PDFs and both pages screenshotted, each in both languages (see `visual/assets/visual_packet_qa.json`). It does **not** read `geometry/`, `visual/assets/`, `risk.json`, `changelog.md` or `agent.json`.
 
 So of the 12 items above, **0 can be executed literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model that scores this submission can run none.** Not saying so would repeat, at the scale of a checklist, this package's erratum about `analysis/`: an invitation to verify addressed to someone who cannot.
 
-**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files, 1042 KB, 1,633 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
+**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1047 KB, 1,635 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
 
 **This disclosure has a shelf life, so it states where the fix stands.** The gap is upstream Issue #2170; the maintainers opened PR #2181, which adds an auditable access boundary to the review input, states that participant verification scripts are never executed, and corrects the review prompt so that a model **may not deduct points or fail a gate merely because it cannot open a registered artifact**. Once it merges the count above is unchanged; its consequence is not, because unreachability stops being read as the participant having withheld something. This package has already taken that recovery route: the key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
