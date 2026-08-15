@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "21d09e6afd569f35b0731fe839ecbc88eedfedfa8f933fc8fbe3aaf02ac6dbc6"
+      "sha256": "cc1b571d883473ad88e8e7c9a2cc4918d03b0fbc4265e7cf8c2c5ff85b3eaaf4"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a51e95e561a200ada67d9de485bb7c1960675db45eec56302beb6ce119e91f17"
+      "sha256": "99373a99f8936e1ee21b8eb82a1b1271d3edbe62c0bb3344d98dc53ae346148a"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d6ab6cc144f21f44b517227703e772d510fae21bbcde94327d7acf06879ecbda"
+      "sha256": "5d335c81d55b252ec7bf9ee98b0a7c0fdad5b15b2152863e25d3a0de04b4785b"
     },
     {
       "path": "report/narrative.md",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a5ea55164e821276904f0b893b0c444c215b59a719229c89298853ce04b10223"
+      "sha256": "d09bd5f6b0dd4e04b69f76e88d2f8e19d790203443cb9e0cf2765af1cc84a34c"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "465d1a96cbe5e788cd391dbddcc5539e6383caf0c13d612f1be893c3ad51eccd"
+      "sha256": "fb916f26db6fb79ccf0dbd2a8f8aefea46df5e8469d70f7d0c9007edcde2077b"
     },
     {
       "path": "visual/index.html",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b83e7801a2bea3e3be13cee30da9f49214a9bfb9120a85f3d564a7e51252fad4"
+      "sha256": "21837e81466e7804eb8438564b03bb5a8378ede493bba6141d7e765bf06834f5"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "38d023dfe6c763ab21ad2506a8d96965924841981c58f810eeed092b6898880d"
+      "sha256": "388347cb29980accfef92b3661e2e956357676637f9062f06dbe9a22bf303c34"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "93dbc7ddf8a9b2384b0f4082aea28fdae080a9c805486e8daf8f131000f85bff"
+      "sha256": "3470a01d1fada62d5e6959b387f67337107174ca089333a61005b0b913276bcd"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "7dd924c9864ed220a06d9041eb5c3425315f08800072459789d3c7ef7410ba62"
+      "sha256": "f4c15f159770f71b5b4d890740b9ce86e2b8d3c54a2f6f8f989cbcd3832dbd46"
     },
     {
       "path": "visual/index.en.html",
@@ -806,14 +806,14 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "6978137b2969cc6b9ca2c21e29f72ab758f39381a8e3b9fe2742535a4ce65996"
+      "sha256": "9815855c52b7d70a21173fa131d80fcccef7ffca6ccddf2a2967f75c2e1acebf"
     },
     {
       "path": "assets/figures/c20-finance.en.png",
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "sha256": "aae965357870578b74fdd3801e810daf0accdd91007eb80ad4171c54d4b31dbe",
+      "sha256": "e2a4c7c4d2f46da950302322e5d3963703b4623c78a35001481d9271be0d4df6",
       "translation_of": "assets/figures/c20-finance.png"
     },
     {
@@ -821,14 +821,14 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "f716e71a54592add7aea8bdc83bc08d4fda709f20de4ef2b49d3d967c3c78387"
+      "sha256": "a9195bfa85dffb37b40bce7c8bcf7002756ab9a70f8d1186858d2feff418a028"
     },
     {
       "path": "assets/figures/c21-emergent-brain.en.png",
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "sha256": "1215c1b23d1c60ffe31453272b3c0adbf4be5966e05bbb9932fd6b787825c9e8",
+      "sha256": "16f6f578a1a71de3b09d38705a24b29044cc7ce8a0aba7009fad99b912fb07cc",
       "translation_of": "assets/figures/c21-emergent-brain.png"
     },
     {
@@ -836,14 +836,14 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "fc8d47726e6baa76d1e8f9bf8c0bc44fbd99caba52125f993d7f95f2b553a546"
+      "sha256": "c719879cbd223446c9ffef8f0cc971a8fdadc8c785b6f08e2354cb0e9d842c78"
     },
     {
       "path": "assets/figures/c22-phase-control-room.en.png",
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "sha256": "c1a3fdd40b2f13bab5e9f33c6c2cc82bdb019fb1897534965afd1ea9971d5a7c",
+      "sha256": "4084b5850e20fbed0ba5abe0602dfd26960d4ddf7ccf770319b582b2bc3404a0",
       "translation_of": "assets/figures/c22-phase-control-room.png"
     },
     {
@@ -851,15 +851,45 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "1d9d3702ca6916969ae11a0340c7f9fcdfdba3045df88c04853956198e3ad29a"
+      "sha256": "9316143d2a0bad16e4792deb6a6f5e38d4aed902a82cffbc35426ce60b852dfa"
     },
     {
       "path": "assets/figures/c23-conclusion-dashboard.en.png",
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "sha256": "f95ed7ea25b4065a89337dd7468122da232052304e1948cacddc0b54d4908356",
+      "sha256": "ac25e14bbcfdd99225356a6e247faa8cec5abe3e79966b801e2d11e2d01184be",
       "translation_of": "assets/figures/c23-conclusion-dashboard.png"
+    },
+    {
+      "path": "assets/figures/c24-scientists-consultation.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "fd180d7fab025e508abbd9aca88adee081281c09a91b2c8efabaf04bc125a7ab"
+    },
+    {
+      "path": "assets/figures/c24-scientists-consultation.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "b5dc44ed6d8be56313a663eaf09c49c614aa23600f1995f86ca33d602d4a0565",
+      "translation_of": "assets/figures/c24-scientists-consultation.png"
+    },
+    {
+      "path": "assets/figures/c25-user-research.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "4f0ebb7776fc07642bc5a41d15f784cd74481c26a04dbe531585e70c225baa48"
+    },
+    {
+      "path": "assets/figures/c25-user-research.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "92e521e3622710a63577f4b9a75b65f4a69b9ecb4222dc0cadc4c010e8ad1dc1",
+      "translation_of": "assets/figures/c25-user-research.png"
     }
   ],
   "validation_claim": {

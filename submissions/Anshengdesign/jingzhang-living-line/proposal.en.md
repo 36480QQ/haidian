@@ -12,8 +12,6 @@ scenarios: ["ai-traffic-walkability"]
 iteration: "v0.17"
 ---
 
-# THE EMERGENT BELT — Jing-Zhang Hyper Line
-
 *Urban design for the Centennial Jing-Zhang AI Innovation Belt · Open-call submission · KUN-SAL Spatial Quant Lab*
 
 In 1909, facing the extreme gradient of Badaling, Zhan Tianyou did not "build a flatter road" — he invented the herringbone switch: **letting the train find its own way within the constraint**. That was the first time a Chinese engineer answered a question: when the constraints cannot be changed, what is left for design to do?
@@ -93,6 +91,26 @@ Before delivering any conclusion, we first lay five rulers on the table. This is
 **Jacobs's lens: is the block alive?** Her four conditions of vitality are density, mixture, small blocks, and old buildings. Measured: the corridor band's POI diversity of 0.941 is the highest on the belt (mixture is enough), but intersection density is only 39 per square kilometre (blocks too large) and residential is only 16.5% (density out of balance). **Judgment: at the "street level" this belt is alive; at the "district level" it is lame — only by filling in jobs-housing and densifying the road network can vitality land** [metric:campus_intersection_density_per_km2] [metric:land_use_area_0701_sqm].
 
 Five scientists, five different rulers, measure out the same disease: **not "bad", but "broken"**. This is the basis of every design move in this proposal.
+
+![The five scientists' consultation quantified: five rulers, one diagnosis](assets/figures/c24-scientists-consultation.en.png)
+
+## User Research and the Needs List: these seven groups own the city
+
+**Why ask people before drawing**: the first question of urban design is not "what to draw" but "who is using it". With limited scope for on-site questionnaires and in-depth interviews at this call stage, this proposal conducts user research through a **desk-research proxy** — Amap's 25,476 POIs (where people consume, work, study, seek care), space-syntax accessibility (where they can reach), and the official baseline (how many there are: 13,000 developers, 180 OPCs, 1,000+ scientists) — and states plainly: on-site questionnaires and in-depth interviews are the next stage of work (see the data-gap matrix).
+
+**Seven groups, seven check-up results (see the research figure)**:
+
+- **Citizens**: Origin medical 2.88/km², the lowest of the three → medical infill, shaded benches, the public-space component library;
+- **Entrepreneurs**: finance POIs deviate −63.0% → finance infill, the OPC order plaza, compute vouchers, the attraction funnel;
+- **Commuters**: only 38.4% jobs-housing balanced cells → job reach +15.9% and commute cost −3.4% after stitching;
+- **Students**: no third places → AI night school, the near-campus innovation street, shared desk pods;
+- **Teachers**: education clusters east with weak residential support → jobs-housing balance, education infill (Zhongzhiyuan/Dazhongsi);
+- **Children & families**: sports −29.3% → park stitching, the blue-green system, child-friendly sections;
+- **Seniors**: smart services lack a human fallback → human channels kept on all ten scenario cards (Barrier-Free Law).
+
+**Where this research sits in the design process**: it is not a decorative chapter but the **user-side basis of Decision 3 (the infill list)** — the POIs say what is missing, the users say who misses it and why, and the design actions land on that group. Each group's pain point, need, and design response correspond one by one as a traceable list (panel B of the research figure), and after implementation user feedback flows back into the sense layer of the Emergent Brain — **research is not a one-off; it is recursive**.
+
+![User research and needs list: supply check-up and pain-point responses for the seven groups](assets/figures/c25-user-research.en.png)
 
 ## Three-Level Scope Framework
 
@@ -305,7 +323,7 @@ The annual "Jing-Zhang Hyper Line Developer Festival"; the **Phase-Transition Fo
 
 ![Ten-year timeline: two acceptance gates](assets/figures/operations-timeline.en.png)
 
-## Urban Brain and the Recursive Operating System
+## Urban Emergent Brain and the Recursive Operating System
 > "The future cannot be predicted, but it can be invented." — Michael Batty
 
 **This is the step from "urban design" to "urban system": turning the computable city into a runnable recursive computation.** The earlier chapters showed that this belt can be measured (five rulers) and verified (three models cross-corroborated). One last question remains: who keeps reading, computing, and tuning it? The answer is not another agency, but an **Emergent Brain THE EMERGENT BRAIN** installed into physical space — the first time a city is treated as a program that can be iterated year by year, instead of a drawing that is obsolete the day it is finished.
@@ -353,7 +371,7 @@ The annual "Jing-Zhang Hyper Line Developer Festival"; the **Phase-Transition Fo
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-> "We cannot predict the future city, but we can invent it." — Michael Batty, *Inventing Future Cities*
+> "The future cannot be predicted, but it can be invented." — Michael Batty
 
 The core indicators are all recalculated from geometry and data (EPSG:4548): site 11,412,800 m²; land use research 31.5% / commercial 25.6% / education 18.2% / residential 16.5% / green 8.2%; green ratio 11.6%; public-space ratio 1.8%; footprint density 17.4%; road network 67,000 m [metric:green_ratio] [metric:public_space_ratio].
 
@@ -399,7 +417,7 @@ Four rulers, made into an annual check-up table: λc=0.42 (connection), p_c=59.2
 | Scenario perceptibility | Strong | All ten scenario cards land in space with their "necessity"; three renderings for the three areas |
 | Spatial explicitness | Medium | The 7 gaps / three areas / two wings are clearly located; specific plots stay conceptual because ownership data is missing |
 | Transferability | Strong | An 8-item component library / a three-piece wayfinding set / an attraction funnel / an investment package — a professional team can take over directly |
-| Completeness of expression | Strong | 21 bilingual chapters + 39 figure groups + 9 renderings + A3/A0 + a WeChat edition |
+| Completeness of expression | Strong | 22 bilingual chapters + 41 figure groups + 9 renderings + A3/A0 + a WeChat edition |
 | Public compliance | Strong | All data sources registered, zero PII, complete copyright statement, provisional labelling throughout |
 | International reach | Medium | Full English alignment and internationalized naming; communication assets (WeChat edition) are ready, channels not yet |
 | Long-term operational value | Strong | The Phase-Transition Forum's annual check-up + the honor wall + the developer festival = a brand-asset mechanism |
