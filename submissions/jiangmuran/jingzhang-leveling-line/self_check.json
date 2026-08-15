@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 20 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 22 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -122,6 +122,14 @@
       "message": "declared_geometry_qa.py — declared geometry: 61 declared measurements across 9 layers, every one equal to the shape it sits on when measured in EPSG:4548, the CRS the package states and uses"
     },
     {
+      "check_id": "PKG_EVIDENCE_CEILING",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "message": "evidence_ceiling.py — evidence ceiling: background_only 3, provisional 17, self_measured 14, official_context 1; 3 metric(s) publish their operands and divide out to their value across 36 metrics; every declared class equals its weakest input"
+    },
+    {
       "check_id": "PKG_FIGURE_CITATION_QA",
       "result": "pass",
       "severity": "info",
@@ -143,7 +151,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 36 deliberate defects across 20 of 20 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 36 deliberate defects across 20 of 22 gates, all caught and all named by the gate that caught them; 2 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -202,6 +210,14 @@
       "message": "registry_alignment_qa.py — registry alignment: 9 of this package's sources are in the organisers' registry (read from upstream/main), every one carrying the registry id and none graded above the strength that registry allows"
     },
     {
+      "check_id": "PKG_SCARCE_SURFACE_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "message": "scarce_surface_qa.py — scarce surface: the one rasterised board carries identity, kit-of-parts, neither of which is among the 5 figures the harness sends on its own (read from upstream/main); 6 boards in all"
+    },
+    {
       "check_id": "PKG_SCHEMA_CONFORMANCE_QA",
       "result": "unknown",
       "severity": "info",
@@ -231,7 +247,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 136 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 96；最常见形状：check-measured-the-convenient-thing 27、two-copies-of-one-thing-drifted 19、claim-outlived-the-package 13、deliverable-not-inspected-before-shipping 12。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 136 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 137 条，按发现者：audit 25、external-reviewer 4、own-gate 11、self 97；最常见形状：check-measured-the-convenient-thing 27、two-copies-of-one-thing-drifted 20、claim-outlived-the-package 13、deliverable-not-inspected-before-shipping 12。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 7 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 137 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
