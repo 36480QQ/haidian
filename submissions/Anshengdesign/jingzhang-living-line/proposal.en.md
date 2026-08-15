@@ -204,7 +204,7 @@ Space syntax does not ask "what does space look like"; it asks "how space is arr
 
 So the three key areas of this proposal are not three parks to be "built", but three places to catch people: Zhongzhiyuan catches the R&D staff who bring equipment for testing, the Origin Community catches the students and founders coming out of school, and Dazhongsi catches the ordinary people running errands, commuting, and attending evening classes. The naming system (agent.1): the belt is named 「THE EMERGENT BELT」, the main line 「Jing-Zhang Hyper Line」, the three segments 「HYPER STACK / HYPER ORIGIN / HYPER FRONT」, the two wings 「CAPITAL WING / SCENARIO WING」, and the seven stitch points are called 「HYPER NODES」. The logo direction is "the superlinear line": a straight railway line curving upward at its end, with seven points floating up along it — **the century-old line begins to rise** (trademark and font clearance required) [depth:industry_future_city_research].
 
-**International benchmarking and the future opportunity (see the benchmark matrix)**: the seven global cases each contribute one transferable mechanism, and here they all hold **at once** — stitching first (King's Cross) × the near-campus conversion circle (Kendall) × garden research neighbourhoods (Stanford) × high-density startup fabric (Yuehai) × a content-consumption interface (Shibuya) × university-town symbiosis (Cambridge) × the public life of a startup boulevard (Rothschild). Seven mechanisms on one 11.4 km² belt is the unique opportunity window of Centennial Jing-Zhang: **H=1.556 proves it is mathematically worth investing in, the 13,000 developers and 32-chip ecosystem prove the vitality is already here, and the world's first "recursively runnable" urban operating system proves it can keep evolving** — the opportunity is not drawn but measured: every stitch pushes the subcritical state toward the phase point, every infill pulls a −63% gap back toward the mean, and every annual check-up rewrites "the future cannot be predicted" into "the future can be invented".
+**International benchmarking and the future opportunity (see the benchmark matrix)**: the seven global cases each contribute one transferable mechanism, and here they all hold **at once** — stitching first (King's Cross) × the near-campus conversion circle (Kendall) × garden research neighbourhoods (Stanford) × high-density startup fabric (Yuehai) × a content-consumption interface (Shibuya) × university-town symbiosis (Cambridge) × the public life of a startup boulevard (Rothschild). Seven mechanisms on one 11.4 km² belt is the unique opportunity window of Centennial Jing-Zhang: **H=1.556 proves it is mathematically worth investing in, the 13,000 developers and 32-chip ecosystem prove the vitality is already here, and the world's first "recursively runnable" urban operating system proves it can keep evolving** — the opportunity is not drawn but measured: every stitch pushes the subcritical state toward the phase point, every infill pulls a −63% gap back toward the mean, and every annual check-up rewrites the "blueprint" into "an evolvable system".
 
 ![International benchmark matrix: seven cases × mechanisms × responses × measured numbers](assets/figures/c26-international-benchmark.en.png)
 
@@ -374,7 +374,7 @@ The annual "Jing-Zhang Hyper Line Developer Festival"; the **Phase-Transition Fo
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-> "The future cannot be predicted, but it can be invented." — Michael Batty
+> "We cannot predict the future city, but we can invent it." — Michael Batty, *Inventing Future Cities*
 
 The core indicators are all recalculated from geometry and data (EPSG:4548): site 11,412,800 m²; land use research 31.5% / commercial 25.6% / education 18.2% / residential 16.5% / green 8.2%; green ratio 11.6%; public-space ratio 1.8%; footprint density 17.4%; road network 67,000 m [metric:green_ratio] [metric:public_space_ratio].
 
@@ -459,8 +459,6 @@ Data compliance: Amap POI is used only as aggregate indicators and density field
 ![Design-conclusion dashboard: four sentences, each with numbers](assets/figures/c23-conclusion-dashboard.en.png)
 
 > In 1909, the herringbone switch let the train find its way within the constraint; in 2026, the Emergent Belt lets the city find its growth within the constraint. **Constraints are not the enemy of design; they are the conditions of emergence.** This is the entire answer of THE EMERGENT BELT — move aside what blocks emergence, and leave the rest to the city to grow.
-
-> The future cannot be predicted, but it can be invented. — Michael Batty
 
 ## References
 
