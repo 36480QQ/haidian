@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以'人'字形铁路的自主创新精神为原点，将京张遗址公园塑造为贯穿南北的'人本AI公共脊'，以众智园、北京AI原点社区、大钟寺三处重点片区为三芯，以中关村科技服务翼与小月河场景赋能翼为两翼，形成'一脊三芯·四带两翼·多点成网'的AI创新带整体方案。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # 新京张·AI创新带：从百年人字形铁路到人本AI城市

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the self-reliance spirit of the zigzag railway as its origin, the proposal reshapes the Jing-Zhang Heritage Park into a north-south 'human-centered AI public spine', with Zhongzhiyuan, the Beijing AI Origin Community and Dazhongsi as the three cores, and the Zhongguancun technology-service wing and Xiaoyuehe scenario wing as the two wings, forming an 'one-spine three-cores, four-belt two-wings, multi-node network' AI innovation belt."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # New Jing-Zhang AI Innovation Belt: From the Centennial Zigzag Railway to a Human-Centered AI City
