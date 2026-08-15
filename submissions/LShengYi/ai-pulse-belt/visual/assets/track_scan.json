@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "package_version": "v10.12.0",
+ "package_version": "v10.13.0",
  "corpus": {
   "source": "open-city-ai/haidian main branch snapshot (local tarball)",
   "total_proposals_scanned": 840,
@@ -523,6 +523,43 @@
    "hits_excluding_self": 0,
    "hit_list": [
     "LShengYi/ai-pulse-belt"
+   ]
+  },
+  {
+   "id": "cost_recalc",
+   "label": "成本复算框架（复算基数×单价=区间）",
+   "regex": "(成本复算|复算基数|复算区间|复算框架|单价区间|recalc.{0,10}(base|range)|unit.{0,4}price.{0,8}range)",
+   "hits": 4,
+   "hits_excluding_self": 3,
+   "hit_list": [
+    "LShengYi/ai-pulse-belt",
+    "miociallo0721/jingzhang-open-compute-commons",
+    "TheLastSheep/jingzhang-civic-metre",
+    "zhangraytk/jingzhang-open-market-line"
+   ]
+  },
+  {
+   "id": "day_checkpoint",
+   "label": "日级检查点（动作+通过证据+不通过处置）",
+   "regex": "(检查点.{0,10}(通过证据|不通过|处置)|通过证据.{0,8}不通过|checkpoint.{0,10}(evidence|disposal)|0.{0,3}100.{0,4}日检查|day.{0,4}0.{0,3}100)",
+   "hits": 1,
+   "hits_excluding_self": 0,
+   "hit_list": [
+    "LShengYi/ai-pulse-belt"
+   ]
+  },
+  {
+   "id": "withdrawable_interface",
+   "label": "可收回要素接口（占用条件+收回条件）",
+   "regex": "(可占用.{0,8}可收回|收回条件|可撤除.{0,6}可回滚|可回滚.{0,6}接口|withdrawable|occupy.{0,8}withdraw)",
+   "hits": 5,
+   "hits_excluding_self": 4,
+   "hit_list": [
+    "147228/jingzhang-human-city-os",
+    "HUAN2022A/ai-origin-commons",
+    "LShengYi/ai-pulse-belt",
+    "mel0nyrame/headroom-jingzhang",
+    "Sonike/jingzhang-handover-line"
    ]
   }
  ],

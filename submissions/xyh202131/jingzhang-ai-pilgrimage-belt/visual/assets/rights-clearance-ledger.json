@@ -2,7 +2,8 @@
   "schema_version": "1.0.0",
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
-  "as_of": "2026-08-14",
+  "as_of": "2026-08-15",
+  "as_of_semantics": "date of last real content edit, verified from git history during the Round 26 as_of consistency audit; it is not a validity or freshness guarantee",
   "scope": "All 141 files declared by this submission, including manifest.json, the complete source-rights and file-rights evidence chain, merged Round 7–18 contracts and figures, the Round 19 quality-only rebuild of the cover, ordinary-life triptych, bilingual key-area plans/sections, judgement-first visual/proposals, and fixed-size jury publications, plus the Round 20 bilingual review handoff package index; 140 entries are non-manifest content files. Final SHA-256 locking for currently changed files is intentionally deferred until concurrent independent review stabilizes their bytes.",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
@@ -7804,9 +7805,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "258c09f72e2ebdc17074021d3c4d0f0745e1365078c26b9024b2f499f9c5814b",
+        "digest": "e3a41dba59fae8db533cf5e39fbf8ddef6fd08ecfcee8cfc052f325f6485c069",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 23 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 28 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],

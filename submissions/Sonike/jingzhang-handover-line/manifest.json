@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fc27674820ff8be566b49a960756ac57778d5cdc4e36f15f404b7fee7ab42a3e"
+      "sha256": "a7488b9c687e0f169f0a37bb6cac132d1390ba8efb7725c2cf913a61b08820fb"
     },
     {
       "path": "agent.json",
@@ -49,13 +49,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "9838d92f06b196b892143f648587eecb4022f61f5c9ebbb9a5f58acc4dd2d268"
+      "sha256": "511f88fef410fb14bc109979733c704aff750376f4959c327e92c79860f1dc36"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e1425e421ad9df11a12e1ed446dce028c6c9009f259cff25b812b078add1d04c"
+      "sha256": "3bb34361225a11debacc155292db67a42a6f9b1c555b2fa07c8ee53f60367688"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "22d9febc39dc2eb8b8f048f98b961dbb5ceae9a0ff9803b45889f68613ee6a48"
+      "sha256": "49fb4cd2f63315f6e2b83788d803b9cb7ac85a5e752e90e4bc00f00dad68e59a"
     },
     {
       "path": "report/narrative.md",
@@ -210,7 +210,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9de8e1861dfa6cee98243d95a0f0d81836cc1d44b98a437c12f4a878d5b6a8df"
+      "sha256": "030ee2a14f947a8d4d2834bf26780648735a346da8ea131301f78aca3826a7f5"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e5df43a1b8cc60f0455f9891425de41e74591fdd54968c08b2a3512d1cfe139c"
+      "sha256": "17d07adf7145d353ebfdae193a8312dece9f7518af8fca624f615a91734efac4"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -349,7 +349,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "39d3e0e860ccfe4e8145e980f7a275d2902c84553a37cc989e1479fcf42f50b8"
+      "sha256": "f149465f26cf474e69edf45fa206c14ec7b339b62b498fc25fd39557c06c39b9"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -440,6 +440,54 @@
       "language": "en",
       "translation_of": "assets/figures/handover-scene.jpg",
       "sha256": "2d124acc5fd3a4bcdbff366f69a068d6a83e34e8e27449480ea741321d77c0dd"
+    },
+    {
+      "path": "assets/media/audio-guide.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "ebadb9fa3670d19fc8d7dc97bba06a0117631556ae035e96ec0bcae3e65c0591"
+    },
+    {
+      "path": "assets/media/audio-guide.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "0d6d88793aaad3bee339bcbe854b1ac037c64fcce9b1b3878f486ac4ac88ad97"
+    },
+    {
+      "path": "assets/media/audio-guide.m4a",
+      "role": "audio",
+      "required": false,
+      "sha256": "6a437224fa498c8d42e746f67f547e913b33844454ef6df029cc4955a602ea60",
+      "title_zh": "京张交接线 · 三分钟音频导览",
+      "title_en": "Jing-Zhang Handover Line · three-minute audio guide",
+      "description_zh": "三分钟讲清方案的判据、三座交接场、最小载体「公开交接桌」与效力边界。由 macOS 内置语音合成在本机生成，非真人录音，不含任何人物声音或可识别个人信息；文字稿与字幕逐句一致。",
+      "description_en": "Three minutes on the scheme's criterion, the three handover grounds, the smallest carrier (the public handover table) and the limits of its authority. Generated locally by the built-in macOS speech synthesiser; not a human recording and containing no person's voice or identifiable data; transcript and captions match sentence for sentence.",
+      "transcript": "assets/media/audio-guide.md",
+      "caption": "assets/media/audio-guide.vtt"
+    },
+    {
+      "path": "assets/media/audio-guide-en.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "5f6991291d5789a1703c7ccd716d285f49a0fc6ac0b3c43edee080cb8373f68f"
+    },
+    {
+      "path": "assets/media/audio-guide-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "206f212a4bff230920d6b056d06c887997acb555f191140fab8bca0fe8de2088"
+    },
+    {
+      "path": "assets/media/audio-guide-en.m4a",
+      "role": "audio",
+      "required": false,
+      "sha256": "7106ebd0e42c2e552c141f5af10b146182acbf6187d529d3b54e9571e90bfcc9",
+      "title_zh": "京张交接线 · 三分钟音频导览（英文）",
+      "title_en": "Jing-Zhang Handover Line · three-minute audio guide (English)",
+      "description_zh": "上述音频导览的英文版本，内容与中文版逐节对应。同样由本机语音合成生成，非真人录音。",
+      "description_en": "The English counterpart of the audio guide, matching the Chinese version section by section. Also locally synthesised, not a human recording.",
+      "transcript": "assets/media/audio-guide-en.md",
+      "caption": "assets/media/audio-guide-en.vtt"
     },
     {
       "path": "visual/assets/governance/role-spec.schema.json",

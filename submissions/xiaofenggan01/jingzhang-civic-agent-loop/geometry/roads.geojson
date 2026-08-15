@@ -153,7 +153,12 @@
         "stitch_note": "大钟寺 AI 产业聚集区东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "大钟寺商圈",
+        "east_node": "学清路社区",
+        "stitch_target": "大钟寺产业区×学院路高校带",
+        "composite_functions": "智能原生消费展示+适老导航段"
       },
       "geometry": {
         "type": "LineString",
@@ -185,7 +190,12 @@
         "stitch_note": "知春路沿线东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "知春路轨交节点",
+        "east_node": "中关村东路科创带",
+        "stitch_target": "轨道站点×科创办公带",
+        "composite_functions": "通勤接驳+交通 OD 推演验证段"
       },
       "geometry": {
         "type": "LineString",
@@ -217,7 +227,12 @@
         "stitch_note": "AI 原点社区东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "AI 原点社区",
+        "east_node": "五道口青年区",
+        "stitch_target": "社区生活×高校青年",
+        "composite_functions": "全龄节点+青年第三空间外溢段"
       },
       "geometry": {
         "type": "LineString",
@@ -249,7 +264,12 @@
         "stitch_note": "众智园东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "众智园",
+        "east_node": "清华西门科研带",
+        "stitch_target": "研发区×高校科研",
+        "composite_functions": "研发用地匹配场景+测试展示段"
       },
       "geometry": {
         "type": "LineString",
@@ -281,7 +301,12 @@
         "stitch_note": "北段高校区东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "北五环绿廊",
+        "east_node": "北体大社区",
+        "stitch_target": "生态廊×居住区",
+        "composite_functions": "生态动线+碳排监测验证段"
       },
       "geometry": {
         "type": "LineString",

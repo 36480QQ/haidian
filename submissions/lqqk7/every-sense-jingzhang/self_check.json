@@ -38,6 +38,8 @@
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen-audit.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/mobility-bluegreen.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/op04-detail.en.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/op04-detail.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/scene-corridor-aerial.en.webp",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/scene-corridor-aerial.webp",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/scene-dual-state.en.webp",
@@ -49,6 +51,8 @@
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/logo.svg",
+        "submissions/lqqk7/every-sense-jingzhang/assets/media/audio-guide-en-voice.vtt",
+        "submissions/lqqk7/every-sense-jingzhang/assets/media/audio-guide-en.m4a",
         "submissions/lqqk7/every-sense-jingzhang/assets/media/audio-guide-en.vtt",
         "submissions/lqqk7/every-sense-jingzhang/assets/media/audio-guide.m4a",
         "submissions/lqqk7/every-sense-jingzhang/assets/media/audio-guide.md",
@@ -91,8 +95,10 @@
         "submissions/lqqk7/every-sense-jingzhang/standard_matrix.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/ethics-protocol.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/font-license-ofl.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/op04-pilot-readiness.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/osm-context/provenance.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/qa-proofing-record.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/review-archive.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-data.js",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-fallback.en.png",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-fallback.png",
@@ -103,6 +109,7 @@
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-change-receipt-sample.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-change-receipt-v03.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-license-grant.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-op04-90day-pack.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-op04-chain-data.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-op04-chain-run.js",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-spec-v0.2.0.json",
@@ -116,7 +123,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 39782289,
+      "total_bytes": 40650067,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -202,10 +209,10 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 33,
+          "source": 34,
           "standard": 9,
           "depth": 15,
-          "data": 31,
+          "data": 35,
           "metric": 31
         }
       }

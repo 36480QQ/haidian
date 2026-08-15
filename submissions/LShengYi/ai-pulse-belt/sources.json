@@ -229,21 +229,22 @@
     },
     {
       "id": "BEIJING-UAS-MEASURES",
-      "path": "《北京市无人驾驶航空器管理若干规定》（北京市第十六届人民代表大会常务委员会通过，2024-06-01 施行，公开地方性法规）",
+      "path": "《北京市无人驾驶航空器管理规定》（北京市人大常委会公告〔十六届〕第50号，2026-03-27 通过，2026-05-01 施行，公开地方性法规；北京全域为管制空域）",
       "source_type": "official_public",
-      "usage": "Low-altitude delivery route verification: Beijing local airspace regulation boundary (JZ-09).",
-      "title": "Beijing Municipal Measures on the Management of Unmanned Aircraft",
+      "usage": "Low-altitude delivery route verification: Beijing city-wide controlled airspace, all outdoor flights require application; airspace approval is the JZ-09 release gate (JZ-09).",
+      "title": "Beijing Municipal Regulations on the Administration of Unmanned Aircraft",
       "type": "policy",
       "publisher": "Standing Committee of the Beijing Municipal People's Congress (北京市人大常委会)",
-      "published_at": "2024 (effective 2024-06-01)",
+      "published_at": "2026-03-27 (effective 2026-05-01)",
       "public_status": "confirmed-public",
-      "citation": "《北京市无人驾驶航空器管理若干规定》（北京市第十六届人民代表大会常务委员会会议通过，2024年6月1日施行）",
+      "citation": "《北京市无人驾驶航空器管理规定》（北京市人大常委会公告〔十六届〕第50号，2026-03-27 通过，2026-05-01 施行）",
       "usage_note": "Local-layer regulatory basis for UAS scenario cards within Beijing jurisdiction.",
-      "risk_note": "Document number not cited (legislation without formal document number); exact effective text per official gazette.",
+      "risk_note": "Document No. 50 of the 16th Standing Committee cited; Beijing-wide controlled airspace per 2026 edition — all outdoor flights require prior application.",
       "usable_for_formal": "yes",
       "prohibited_uses": [
         "flight operations without airspace approval"
-      ]
+      ],
+      "url": "https://gaj.beijing.gov.cn/wsgs/2024zcwj/zcfg/202603/t20260330_4569738.html"
     },
     {
       "id": "ICV-ROAD-TEST-REGULATIONS",
@@ -347,13 +348,15 @@
       "authority_level": "official_current_policy",
       "source_type": "official_current_policy",
       "status": "needs_review",
-      "usage": "Implementation-path context (project generation, department referral, urban-renewal direction) pending repository registry review; not an approval.",
+      "usage": "Registry entry only (status=needs_review); NOT used in the implementation path of this submission — referenced nowhere in the proposal body.",
       "usable_for": [
-        "urban-renewal direction",
-        "implementation modules",
-        "department referral path"
+        "registry/archive record"
       ],
       "not_usable_for": [
+        "implementation path",
+        "project generation",
+        "department referral",
+        "module mapping",
         "site authorization",
         "operator commitment",
         "funding approval"

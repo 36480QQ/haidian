@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>THE LEVELING LINE · offline visualisation</title>
 <style>
+.media{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin:14px 0}
+.media figure{margin:0;border:1px solid var(--rule);padding:12px}
+.media video,.media audio{width:100%;display:block;background:#09111b}
+.media audio{background:none}
+.media figcaption{font-size:12.5px;color:var(--ink2);margin-top:8px;line-height:1.6}
+
+.explorer{border:1px solid var(--rule,#CFC9BC);padding:14px;margin:12px 0}
+.explorer canvas{max-width:100%;height:auto;background:#F2EFE9;display:block}
+.explorer canvas:focus{outline:2px solid #0A72A8;outline-offset:2px}
+.explorer .controls{margin:10px 0 6px}
+.explorer button{font:inherit;font-size:13px;padding:5px 10px;margin:0 6px 6px 0;
+ border:1px solid #676D74;background:#fff;color:#2B3138;cursor:pointer}
+.explorer button:focus{outline:2px solid #0A72A8;outline-offset:2px}
+.explorer .readout{font-weight:700;margin:6px 0}
+.explorer[data-loading] canvas{opacity:.45}
+.explorer[data-error] canvas{display:none}
+.explorer .fallback{display:none;color:#C0392B;font-size:13px}
+.explorer[data-error] .fallback{display:block}
+
 :root {
  --paper: #F2EFE9; --ink: #2B3138; --ink2: #676D74; --ink3: #858B90;
  --rule: #CFC9BC; --red: #C0392B; --blue: #0A72A8; --brass: #906519;
@@ -180,6 +199,61 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 <b class="f1">228 distinct strings</b>, collapsing into only <b>9 buckets</b> — the GPT/Codex family alone is written 85 ways across 355 proposals. charter.6 requires disclosing the generation method and charter.5 requires it structured and agent-readable, yet none of the four gates checks this field.<b>Nobody can aggregate “which models produced this call” from it — that governance circuit does not currently close.</b></p>
 <p class="note">To be precise: <code>model</code> a field left at the placeholder<b> does not mean </b>the author concealed the model — many declared it in <code>authorName</code> or in prose instead. This proposal's conclusion is strictly that the machine-readable disclosure field is empty and that the gates do not check it. That is a fixable engineering defect, not a moral charge. Motif detection uses Chinese keyword patterns and misses synonyms, so every convergence share is a <b>lower bound</b>. The corpus changes daily; re-run before citing.</p>
 
+
+
+<h2>FILM AND SOUND<span class="en">FILM AND SOUND</span></h2>
+<p class="note">All three are generated from the shipped geometry and the shipped data, <b>with no speech, no musical material and no rendering of built conditions</b>. Each ships with a poster frame, bilingual captions for the films, and a transcript stating method, limits and rights. Nothing on this page autoplays.</p>
+<div class="media">
+ <figure>
+ <video controls playsinline preload="metadata" poster="../assets/media/leveling-line.png">
+ <source src="../assets/media/leveling-line.mp4" type="video/mp4">
+ <track kind="captions" srclang="zh" label="Chinese/English" default
+ src="../assets/media/leveling-line.vtt">
+ </video>
+ <figcaption><b>The Leveling Line: one closure, in time</b> (54 seconds, silent). The line departs a known point, carries height forward setup by setup, comes back round to the origin, and what does not cancel is the closure error. On paper departure and return are one picture; in time they are not.
+ <a href="../assets/media/leveling-line.md">Transcript and rights note ↗</a></figcaption>
+ </figure>
+ <figure>
+ <video controls playsinline preload="metadata" poster="../assets/media/closure-advance.png">
+ <source src="../assets/media/closure-advance.mp4" type="video/mp4">
+ <track kind="captions" srclang="zh" label="Chinese/English" default
+ src="../assets/media/closure-advance.vtt">
+ </video>
+ <figcaption><b>Advanced by closure: the beat where nothing opens</b> (40 seconds, silent). Within tolerance the next phase opens; over it the whole route is re-surveyed and nothing opens.
+ <b>The passing and failing closures illustrate the rule and are not readings.</b>
+ <a href="../assets/media/closure-advance.md">Transcript and rights note ↗</a></figcaption>
+ </figure>
+ <figure>
+ <audio controls preload="metadata">
+ <source src="../assets/media/leveling-year.mp3" type="audio/mpeg">
+ </audio>
+ <figcaption><b>The sound of one year</b> (48 seconds, mono, no speech). 214 hours of annual re-survey work laid out month by month, one pulse per 2.5 hours; the first half peaks at 83.5 hours and the second, with the three annual readings separated, at 31.5 — with no change to the work at all.<b>Not a recording, and not evidence of the existing acoustic environment.</b>
+ <a href="../assets/media/leveling-year.md">Transcript and rights note ↗</a></figcaption>
+ </figure>
+</div>
+
+<h2>MOVE THE ANNUAL READINGS<span class="en">MOVE THE ANNUAL READINGS</span></h2>
+<p>FIG.30 publishes one arrangement and the search that found it, and a reader can only believe it. <b>The one thing an offline page can add to a drawing is the right to disagree with it.</b> The canvas below recomputes the same model in the browser: move the three annual readings to other months with the buttons or the arrow keys and the peak month follows. The dashed red line is the published arrangement (31.5 h). Try to get under it.</p>
+<div class="explorer" data-role="year-explorer" data-loading="true">
+ <noscript><p class="note"><b>Scripting is off.</b> Every conclusion in this section is in FIG.30 and in the table below; the interaction is only a second way of reading the same model.</p></noscript>
+ <canvas width="900" height="330" role="img"
+ aria-label="Monthly re-survey hours; arrow keys move the annual readings"></canvas>
+ <p class="controls">
+ <button type="button" data-role="which">Select next annual reading</button>
+ <button type="button" data-role="prev">← Earlier</button>
+ <button type="button" data-role="next">Later →</button>
+ <button type="button" data-role="reset">Published arrangement</button>
+ <button type="button" data-role="naive">All in one month</button>
+ </p>
+ <p class="fallback">Canvas unavailable; the table below carries the same numbers.</p>
+ <p class="readout" data-role="readout">peak 31.5 h</p>
+ <table data-role="table"><caption>Hours by month</caption>
+ <tr><th>Month</th><th>h</th></tr><tr><td>1</td><td>23.5</td></tr><tr><td>2</td><td>31.5</td></tr><tr><td>3</td><td>25.5</td></tr><tr><td>4</td><td>23.5</td></tr><tr><td>5</td><td>25.5</td></tr><tr><td>6</td><td>7.5</td></tr><tr><td>7</td><td>23.5</td></tr><tr><td>8</td><td>7.5</td></tr><tr><td>9</td><td>7.5</td></tr><tr><td>10</td><td>23.5</td></tr><tr><td>11</td><td>7.5</td></tr><tr><td>12</td><td>7.5</td></tr></table>
+</div>
+<p class="note"><b>This is not a demonstration. It is a second implementation of the same model.</b> The JavaScript in this page independently recomputes the arrangement function of 
+<code>analysis/fig_year.py</code> , and <code>analysis/calendar_parity_qa.py</code>
+ compares the two across 10 arrangements and 120 monthly figures, failing the build on any disagreement — a page that only replayed a stored answer would prove nothing about the model it claims to demonstrate. All 11,880 arrangements have been searched in Python: <b>every one a reader can reach is no better than 31.5 h</b>, and that sentence is one the reader establishes rather than one this proposal asks to be believed. The hours are this proposal's derivation of the re-survey mechanism, not measured operating data, and "better" here means only a lower peak and a smaller peak-to-trough spread, with no judgement of operational feasibility.</p>
+
 <h2>Source<span class="en">SOURCES</span></h2>
 <table><tr><th>ID</th><th>Type</th><th>Use</th></tr>
 <tr><td><code>SITE-PACKAGE</code></td><td>official_public</td><td>Project brief, enums, allowed design space, ranges, and schemas.</td></tr><tr><td><code>SOURCE-REGISTRY</code></td><td>repository_public_registry</td><td>Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.</td></tr><tr><td><code>PROCESSED-FACT-PACK</code></td><td>repository_processed_reference</td><td>Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source.</td></tr><tr><td><code>BOUNDARY-SOURCE</code></td><td>agent_inferred_from_public_data</td><td>Submitted site boundary geometry source (provisional).</td></tr><tr><td><code>KEY-AREA-SOURCE</code></td><td>agent_inferred_from_public_data</td><td>Three required detailed-design key area boundaries (provisional).</td></tr><tr><td><code>OFFICIAL-ANNOUNCEMENT</code></td><td>official_public</td><td>Official announcement tasks, scope levels, key areas, language, and deliverable context.</td></tr><tr><td><code>AGENT-TASKBOOK</code></td><td>user_provided_cleared</td><td>Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.</td></tr><tr><td><code>FIELD-CENSUS-2026-08</code></td><td>agent_collected_public</td><td>Collected for this proposal: an authoritative-source census of every merged proposal in open-city-ai/haidian, enumerating the git tree rather than the lagging submissions-data.js, and measuring track declarations, structural convergence, meta-symbol saturation and the machine-readability of agent.json's generation-method disclosure field.</td></tr><tr><td><code>OSM-REFERENCE-2026-08</code></td><td>agent_collected_public</td><td>Independent public-data cross-check: OpenStreetMap's surveyed polygon for the Jing-Zhang Railway Heritage Park and the disused railway alignment, tested against the repository's provisional boundaries.</td></tr><tr><td><code>BARRIER-FREE-ENVIRONMENT-LAW</code></td><td>official_public</td><td>Anchors this proposal's equivalent non-AI service path as a statutory duty rather than a design judgement: the article requires venues providing medical, insurance, financial and utility services to retain traditional service methods including on-site guidance and manual handling.</td></tr><tr><td><code>GENERATIVE-AI-INTERIM-MEASURES</code></td><td>official_public</td><td>Article 14 makes stopping generation and transmission on detection a provider obligation, matching this proposal's stop and network-wide suspension rules. Article 15 requires a convenient complaint entry and the publication of the handling process and feedback time limit, matching this proposal's argument that an appeal right without a deadline is unenforceable — which makes that argument not an innovation here but compliance with an existing rule.</td></tr><tr><td><code>ELDERLY-SMART-TECH-PLAN</code></td><td>official_public</td><td>Provides the policy basis for this proposal's hard constraints on persona P4: the plan requires traditional service methods to run in parallel with smart innovation, requires the methods older people know to be retained across daily-life settings, and names a list of high-frequency cases this proposal's scenario cards can be checked against.</td></tr><tr><td><code>CASE-C1-ALGORITHM-REGISTER</code></td><td>official_public</td><td>C1: a field template for the benchmark plaque — purpose, data, responsible party and appeal route, one per line on the plaque.</td></tr><tr><td><code>CASE-C2-EU-AI-ACT-RISK-TIERS</code></td><td>official_public</td><td>C2: support for grading tolerance F1/F2/F3 by severity of consequence rather than technical complexity.</td></tr><tr><td><code>CASE-C3-AI-VERIFY</code></td><td>official_public</td><td>C3: a template for how re-survey is executed — one question set, one convention, readings that compare.</td></tr><tr><td><code>CASE-C4-NHS-ALGORITHMIC-IMPACT</code></td><td>official_public</td><td>C4: support for putting health scenarios at the strictest tolerance F1, and for requiring prescriptive judgements to be made by qualified people and logged.</td></tr><tr><td><code>CASE-C5-CIVIC-DATA-AGENDA</code></td><td>official_public</td><td>C5: support for the public right to initiate a re-survey at a third-order benchmark — the agenda is set by those affected, not by the operator.</td></tr><tr><td><code>CASE-C6-ARTIFACT-EVALUATION</code></td><td>official_public</td><td>C6: the reason this package ships five dependency-free executables and all its data products — so the conclusions can be re-run by a third party, not only read.</td></tr><tr><td><code>MOHURD-URBAN-DESIGN-MEASURES</code></td><td>official_public</td><td>The line this package's compliance matrix uses — that urban design shall implement the plan, guide architectural design, shape the city's character, and coordinate layout in both plan and three dimensions — is taken directly from Article 3: urban design is an effective means of implementing the urban plan, guiding architectural design and shaping the city's distinctive character, coordinating building layout and townscape in both plan and volume.</td></tr><tr><td><code>MOHURD-CONTROL-DETAILED-PLANNING</code></td><td>official_public</td><td>Used to fix this package's boundary at regulatory-plan depth: floor area ratio, building height, density, setbacks and road red lines fall within this measure's approval scope. This package does not supply them; metrics.json keeps them unknown with their preconditions recorded.</td></tr><tr><td><code>MNR-LAND-USE-CLASSIFICATION-GUIDE</code></td><td>official_public</td><td>Land use is expressed with checkable land_use_code values rather than an invented taxonomy; the final basis for any classification must be the official document and professional review.</td></tr><tr><td><code>MOHURD-ARCH-DESIGN-DEPTH-2016</code></td><td>official_public</td><td>Held only as a missing-document note and a reminder for the next stage; this package draws no architectural-depth conclusion from it.</td></tr>
@@ -197,5 +271,7 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 THE LEVELING LINE 京张水准线 · jiangmuran · Concept advice on provisional boundaries; not a substitute for statutory planning · Calculation CRS EPSG:4548, exchange CRS EPSG:4326 · This page is offline and self-contained and requests no external resource
 </footer>
 </div>
+<script type="application/json" id="year-model">{"hours_per_session": {"datum": 24.0, "first": 18.0, "second": 8.0, "third": 2.5}, "monthly_third_order_points": 3, "published": {"quarter_offsets": [0, 0], "annual_months": [1, 2, 4], "load": [23.5, 31.5, 25.5, 23.5, 25.5, 7.5, 23.5, 7.5, 7.5, 23.5, 7.5, 7.5], "peak": 31.5}, "naive": {"quarter_offsets": [0, 0], "annual_months": [0, 0, 0], "load": [83.5, 7.5, 7.5, 23.5, 7.5, 7.5, 23.5, 7.5, 7.5, 23.5, 7.5, 7.5], "peak": 83.5}}</script>
+<script src="assets/year_explorer.js"></script>
 </body>
 </html>

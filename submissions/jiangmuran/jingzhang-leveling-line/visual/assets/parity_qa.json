@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.873,
+ "overall_ratio": 0.85,
  "floor": 0.75,
  "sections": [
   {
@@ -19,9 +19,9 @@
   },
   {
    "section": "Design Basis and Source List",
-   "zh_chars": 9657,
-   "en_words": 6403,
-   "ratio": 0.846,
+   "zh_chars": 9794,
+   "en_words": 6342,
+   "ratio": 0.826,
    "pass": true
   },
   {
@@ -33,16 +33,16 @@
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
-   "zh_chars": 5341,
-   "en_words": 3792,
-   "ratio": 0.906,
+   "zh_chars": 5545,
+   "en_words": 3781,
+   "ratio": 0.87,
    "pass": true
   },
   {
    "section": "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
-   "zh_chars": 1765,
-   "en_words": 1213,
-   "ratio": 0.877,
+   "zh_chars": 2079,
+   "en_words": 1425,
+   "ratio": 0.874,
    "pass": true
   },
   {
@@ -54,16 +54,16 @@
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 10992,
-   "en_words": 7187,
-   "ratio": 0.834,
+   "zh_chars": 11005,
+   "en_words": 7191,
+   "ratio": 0.833,
    "pass": true
   },
   {
    "section": "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
    "zh_chars": 2236,
-   "en_words": 1565,
-   "ratio": 0.893,
+   "en_words": 1552,
+   "ratio": 0.885,
    "pass": true
   },
   {
@@ -83,29 +83,29 @@
   {
    "section": "Renewal Projects, Implementation Policy, and Phasing",
    "zh_chars": 2444,
-   "en_words": 1713,
-   "ratio": 0.894,
+   "en_words": 1689,
+   "ratio": 0.881,
    "pass": true
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
-   "zh_chars": 5449,
-   "en_words": 3658,
-   "ratio": 0.856,
+   "zh_chars": 5477,
+   "en_words": 3560,
+   "ratio": 0.829,
    "pass": true
   },
   {
    "section": "Risk, Copyright, and Compliance",
-   "zh_chars": 1539,
+   "zh_chars": 1540,
    "en_words": 1101,
    "ratio": 0.912,
    "pass": true
   },
   {
    "section": "References",
-   "zh_chars": 4330,
-   "en_words": 3377,
-   "ratio": 0.995,
+   "zh_chars": 4969,
+   "en_words": 3259,
+   "ratio": 0.837,
    "pass": true
   }
  ],

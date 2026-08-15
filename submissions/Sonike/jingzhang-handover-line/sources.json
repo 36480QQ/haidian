@@ -818,6 +818,34 @@
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
       "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "TTS-MACOS-SYNTH",
+      "source_type": "standard_resource",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "macOS 内置语音合成（音频导览的生成方式）",
+      "publisher": "随 macOS 分发的系统语音合成",
+      "retrieved_at": "2026-08-15",
+      "accessed_date": "2026-08-15",
+      "collection_method": "在本机以 `say` 调用系统语音合成，中文用 Tingting、英文用 Samantha，语速 170–175，输出 AIFF 后经 `afconvert` 转 AAC/M4A（64 kbps）。输入文本即 `assets/media/audio-guide.md` 与 `audio-guide-en.md` 的正文，逐句一致。字幕时间轴按各句字符数占比在实测总时长上分配，未做逐句人工对齐。",
+      "spatial_coverage": "不适用",
+      "temporal_coverage": "不适用",
+      "license_or_reuse_terms": "仅在本机合成阶段使用，产物为音频波形；未复制、未嵌入、未再分发语音引擎或语音数据本身。合成语音非真人录音，不涉及任何人物的声音权、肖像权或表演者权利。",
+      "usage": "assets/media/ 下中英两段三分钟音频导览的语音生成。",
+      "usable_for": [
+        "说明音频导览的语音来源为本机合成而非真人录音",
+        "支持核验包内不含任何语音引擎或语音模型文件"
+      ],
+      "not_usable_for": [
+        "主张对该语音合成系统的任何权利",
+        "在其他机器上复现完全一致的音色或时长",
+        "作为任何事实性论断的证据"
+      ],
+      "limitations": "音色与时长依赖本机语音版本，换机重跑会得到不同音频；音频不进入评审的多模态视觉输入，其内容以随包的文字稿与字幕为准。",
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed"
     }
   ],
   "registry_alignment_note": "本表的 usable_for_formal 采用中央登记表 data/source_registry.json 的同一套取值词汇，以便机器逐项对照。凡 usable_for_formal_basis = central_registry_verbatim 的条目，其 registry_source_id / registry_authority_level / registry_review_status / usable_for_formal 四项均由脚本从中央表逐字复制，未经改写；本包对该来源的用法另受中央表 allowed_uses / prohibited_uses 约束，逐条已在 usable_for / not_usable_for 中收窄。凡 basis = participant_self_assessed 的条目**不在中央表内**，registry_review_status 一律标 not_in_central_registry —— 维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录；但自评状态不等于中央批准，本包不据此主张任何中央审定结论。not_a_factual_source 用于字体与构建工具链条目：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。"

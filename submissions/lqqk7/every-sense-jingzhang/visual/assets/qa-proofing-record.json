@@ -56,8 +56,8 @@
      "date": "2026-08-15",
      "scope_zh": "drawings/a3-booklet.pdf 与 drawings/a3-booklet.en.pdf",
      "scope_en": "drawings/a3-booklet.pdf and drawings/a3-booklet.en.pdf",
-     "result_zh": "中文册 12 页 1,910,634 字节，英文册 12 页 1,515,306 字节，合计 24 页，与「12 × 2」的登记一致",
-     "result_en": "12 pages / 1,910,634 bytes (zh) and 12 pages / 1,515,306 bytes (en); 24 pages in total, matching the registered 12 x 2",
+     "result_zh": "中文册 12 页 1,910,916 字节，英文册 12 页 1,515,325 字节，合计 24 页，与「12 × 2」的登记一致",
+     "result_en": "12 pages / 1,910,916 bytes (zh) and 12 pages / 1,515,325 bytes (en); 24 pages in total, matching the registered 12 x 2",
      "provenance_zh": "本轮实测",
      "provenance_en": "Measured this round",
      "limitations_zh": "仅核对页数与体量，不核对页面内容",
@@ -112,8 +112,8 @@
      "date": "2026-08-13",
      "scope_zh": "site-overview、land-use-structure、key-areas、mobility-bluegreen、metrics-evidence 五图的中英双版共十张；另附 scene-dual-state、scene-interface-yard、scene-corridor-aerial 三题材场景概念图的中英双版共六张（v5.17 起纳入）与生态图谱的中英双版共两张（v5.18 起纳入）、断面图版与企业旅程图版的中英双版共四张（v5.19 起纳入）",
      "scope_en": "Twenty-two text-bearing files: the zh and en versions of the five core figures (site-overview, land-use-structure, key-areas, mobility-bluegreen, metrics-evidence), plus the three concept-scene subjects (from v5.17), the ecosystem map (from v5.18) and the section and enterprise-journey plates (from v5.19)",
-     "result_zh": "二十二张带文字图版在接收分辨率口径下不可读文本占比全部为 0%——其中五张核心图最小字号 12.1—12.3 px（经三轮重排达成）；六张场景概念图的标注层文字按 CSS 字号 × 接收缩放比逐元素核算全部 ≥12 px（v5.17 将页眉、页脚与地标标签由 9—11 px 统一提升后达成），画面内 AI 生成的背景纹理不含文字；生态图谱、断面图版与企业旅程图版六张均为原生排版，最小字号 12 px。v5.21 增补画布边缘裁切扫描（双语逐图左右缘 12 像素列暗像素检测 + 目检）：发现并修复英文断面图左缘一处注记出画（首末注记改边锚重渲），复扫全部图版零出画",
-     "result_en": "0% illegible text on all twenty-two files at the receiving resolution: the five core figures reach a 12.1-12.3 px minimum after three re-typesets; the six concept-scene images hold every annotation-layer element at >=12 px (headers, footers and landmark labels raised from 9-11 px in v5.17), with no text in the AI-generated backdrop; the ecosystem, section and journey plates are natively typeset at a 12 px minimum. In v5.21 an edge-clipping scan was added (12-px edge-column dark-pixel detection plus visual check on every plate, both languages): one annotation running off the left edge of the English section plate was found and fixed (first and last annotations re-anchored to the edges and re-rendered), and a re-scan shows zero off-canvas text across all plates",
+     "result_zh": "二十四张带文字图版在接收分辨率口径下不可读文本占比全部为 0%——其中五张核心图最小字号 12.1—12.3 px（经三轮重排达成）；六张场景概念图的标注层文字按 CSS 字号 × 接收缩放比逐元素核算全部 ≥12 px（v5.17 将页眉、页脚与地标标签由 9—11 px 统一提升后达成），画面内 AI 生成的背景纹理不含文字；生态图谱、断面图版与企业旅程图版六张均为原生排版，最小字号 12 px。v5.21 增补画布边缘裁切扫描（双语逐图左右缘 12 像素列暗像素检测 + 目检）：发现并修复英文断面图左缘一处注记出画（首末注记改边锚重渲），复扫全部图版零出画",
+     "result_en": "0% illegible text on all twenty-four files at the receiving resolution: the five core figures reach a 12.1-12.3 px minimum after three re-typesets; the six concept-scene images hold every annotation-layer element at >=12 px (headers, footers and landmark labels raised from 9-11 px in v5.17), with no text in the AI-generated backdrop; the ecosystem, section and journey plates are natively typeset at a 12 px minimum. In v5.21 an edge-clipping scan was added (12-px edge-column dark-pixel detection plus visual check on every plate, both languages): one annotation running off the left edge of the English section plate was found and fixed (first and last annotations re-anchored to the edges and re-rendered), and a re-scan shows zero off-canvas text across all plates",
      "provenance_zh": "2026-08-13 三轮重排完成时的量测；本轮以文件清单复核十张图双语成对齐备，未重跑可读性量测",
      "provenance_en": "Measured on 2026-08-13 when the three re-typesets were completed; this round the file listing verified that the ten drawings are present as bilingual pairs, and the legibility measurement was not re-run",
      "limitations_zh": "以重采样后的字号阈值判定可读，不等于真实读者在具体显示设备与观看距离下的可读；未做读者阅读测试",
@@ -142,12 +142,14 @@
    "record_limitations_zh": [
     "全部读数为屏幕渲染量测，与实物印刷存在渲染差异；本包未做实物打印样张检查。",
     "A3 图带内注记的下限 4.48 pt 低于印刷常规下限，属已知取舍：该量级注记只承担形态证据，其判断内容已上移至页面文本层（下限 9.07 pt）。",
-    "字号与对比度达标不等于可读性达标；真实可读性还取决于字体、语言、观看距离、照明与读者视力，本次均未测。"
+    "字号与对比度达标不等于可读性达标；真实可读性还取决于字体、语言、观看距离、照明与读者视力，本次均未测。",
+    "四册 PDF 均未做语义标签（Tagged PDF：无标题层级、表格语义与阅读顺序结构树）。已实验两条生成路径：单页可产标签但逐页合并丢失结构树（跨文档结构树合并为现有开源工具链未解问题）；整册单次渲染因图版为绝对定位排版体系而多页叠印，保真不可接受。按诚实原则登记为局限而非硬贴无效标签；语义无障碍的随包等价载体为离线展示页（visual/index.html 双语）：全语义 HTML、键盘可达、替代文本齐备、无脚本降级，屏幕阅读器使用者可经该载体获得四册的判断内容。"
    ],
    "record_limitations_en": [
     "All readings are screen-rendered measurements and differ from physical print; no physical press proof was made for this package.",
     "The 4.48 pt floor of in-band annotations on A3 is below the usual print floor. This is a known trade-off: annotations at that size carry morphological evidence only, and their judgement content has been moved up into the page text layer (floor 9.07 pt).",
-    "Meeting size and contrast thresholds is not the same as being legible; real legibility also depends on typeface, language, viewing distance, lighting, and the reader's vision, none of which was tested."
+    "Meeting size and contrast thresholds is not the same as being legible; real legibility also depends on typeface, language, viewing distance, lighting, and the reader's vision, none of which was tested.",
+    "None of the four PDF volumes is tagged (no heading hierarchy, table semantics or reading-order structure tree). Two generation paths were tested: single pages can be tagged but page-by-page merging drops the structure tree (cross-document structure-tree merging remains unsolved in the open-source toolchain), and whole-book single-pass rendering stacks pages because the plates use absolutely-positioned layout, with unacceptable fidelity. Per the honesty rule this is registered as a limitation rather than shipping ineffective tags; the in-package semantic equivalent is the offline display page (visual/index.html, bilingual): fully semantic HTML, keyboard reachable, complete alternative text, no-script fallback, through which screen-reader users can reach the volumes' judgement content."
    ]
   },
   {
@@ -168,8 +170,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "非空行 552 行对 552 行，结构类型逐行不一致数为 0",
-     "result_en": "552 non-blank lines on each side, with zero line-by-line type mismatches",
+     "result_zh": "非空行 557 行对 557 行，结构类型逐行不一致数为 0",
+     "result_en": "557 non-blank lines on each side, with zero line-by-line type mismatches",
      "provenance_zh": "本轮实测",
      "provenance_en": "Measured this round",
      "limitations_zh": "结构级比对，不判断译文是否准确、是否遗漏语义",
@@ -222,8 +224,8 @@
      "date": "2026-08-13",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "计入抽检的四类：metric 66 对 66、data 47 对 47、source 72 对 72、standard 12 对 12，合计 197 对 197；depth 深度锚点 35 对 35 双语持平，另计于本项之外",
-     "result_en": "Four types in the sample: metric 66/66, data 47/47, source 72/72, standard 12/12, totalling 197/197; depth anchors additionally balanced at 35/35 outside this sample",
+     "result_zh": "计入抽检的四类：metric 67 对 67、data 51 对 51、source 73 对 73、standard 13 对 13，合计 204 对 204；depth 深度锚点 36 对 36 双语持平，另计于本项之外",
+     "result_en": "Four types in the sample: metric 67/67, data 51/51, source 73/73, standard 13/13, totalling 204/204; depth anchors additionally balanced at 36/36 outside this sample",
      "provenance_zh": "本轮实测（本记录文件的挂接句在双方各新增一个 data 锚点，改动后仍为双侧持平）",
      "provenance_en": "Measured this round (the sentence attaching this record file adds one data anchor on each side, and the two sides remain balanced after the change)",
      "limitations_zh": "计数持平只说明锚点未在翻译中丢失，不说明每个锚点指向的证据本身成立",
@@ -258,9 +260,9 @@
      "tool_zh": "文件清单枚举 + 数值比对",
      "tool_en": "File-listing enumeration + numeric comparison",
      "date": "2026-08-15",
-     "scope_zh": "assets/figures 全部 28 个图版文件；五张评审可见图的中英双版",
+     "scope_zh": "assets/figures 全部 30 个图版文件；五张评审可见图的中英双版",
      "scope_en": "All 28 files in assets/figures; the zh and en versions of the five reviewer-visible drawings",
-     "result_zh": "28 个图版文件全部成对，五张评审可见图的中英双版齐备；核心指标人读位与 metrics.json 的展示位数一致",
+     "result_zh": "30 个图版文件全部成对，五张评审可见图的中英双版齐备；核心指标人读位与 metrics.json 的展示位数一致",
      "result_en": "All 28 drawing files are paired and the five reviewer-visible drawings are present in both languages; the headline metrics read by humans match the displayed precision of the values in metrics.json",
      "provenance_zh": "成对性为本轮实测；读数一致性引自包内既有检查记录",
      "provenance_en": "Pairing was measured this round; reading consistency is quoted from an existing check record in the package",
@@ -315,8 +317,8 @@
     "Structural equivalence does not guarantee semantic equivalence: two versions can align structurally while individual wordings differ in the strength of their claim, a layer not tested here."
    ],
    "remeasured_on": "2026-08-15",
-   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：774/774 行、552/552 非空、260/260 表格行、四类锚点 197/197（depth 深度锚点 35/35 另计），逐行结构不一致 0",
-   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 774/774 lines, 552/552 non-blank, 260/260 table rows, four-type anchors 197/197 (depth anchors 35/35 counted separately), zero line-by-line type mismatches"
+   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：784/784 行、557/557 非空、260/260 表格行、四类锚点 204/204（depth 深度锚点 36/36 另计），逐行结构不一致 0",
+   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 784/784 lines, 557/557 non-blank, 260/260 table rows, four-type anchors 204/204 (depth anchors 36/36 counted separately), zero line-by-line type mismatches"
   },
   {
    "id": "R3",
@@ -350,8 +352,8 @@
      "date": "2026-08-13",
      "scope_zh": "双语展示页全页",
      "scope_en": "Both language versions, whole page",
-     "result_zh": "双语各 32 个可聚焦元素，序列完全一致：第 1 步跳转链接；第 2—16 步十五个章节导航链接；第 17—18 步两个指向第 16 章的正文链接；第 19—20 步 AI 开启与 AI 关闭；第 21 步播放引导流光；第 22 步显示静态视图；第 23—32 步 OP-01 至 OP-10 十个节点按钮。第 33 步焦点离开文档进入浏览器界面，第 34 步循环回跳转链接，未发现键盘陷阱。Shift+Tab 反向遍历顺序可逆，实测 OP-05 反向依次回到 OP-04、OP-03、OP-02、OP-01。",
-     "result_en": "32 focusable elements in each language, in an identical order: step 1 the skip link; steps 2-16 the fifteen chapter navigation links; steps 17-18 two in-text links to chapter 16; steps 19-20 AI ON and AI OFF; step 21 play guidance flow; step 22 show static view; steps 23-32 the ten node buttons OP-01 to OP-10. At step 33 focus leaves the document into the browser interface and at step 34 it returns to the skip link; no keyboard trap was found. Shift+Tab reverses the order correctly, measured from OP-05 back through OP-04, OP-03, OP-02, OP-01.",
+     "result_zh": "双语各 38 个可聚焦元素（新增评审路线区块后实测复核），序列完全一致：第 1 步跳转链接；第 2—16 步十五个章节导航链接；第 17—22 步评审路线区块六个链接；第 23—24 步两个指向第 16 章的正文链接；第 25—26 步 AI 开启与 AI 关闭；第 27 步播放引导流光；第 28 步显示静态视图；第 29—38 步 OP-01 至 OP-10 十个节点按钮。第 39 步焦点离开文档进入浏览器界面，第 40 步循环回跳转链接，未发现键盘陷阱。Shift+Tab 反向遍历顺序可逆，实测 OP-05 反向依次回到 OP-04、OP-03、OP-02、OP-01。",
+     "result_en": "38 focusable elements in each language (re-measured after the reviewer-path block was added), in an identical order: step 1 the skip link; steps 2-16 the fifteen chapter navigation links; steps 17-22 the six reviewer-path links; steps 23-24 two in-text links to chapter 16; steps 25-26 AI ON and AI OFF; step 27 play guidance flow; step 28 show static view; steps 29-38 the ten node buttons OP-01 to OP-10. At step 39 focus leaves the document into the browser interface and at step 40 it returns to the skip link; no keyboard trap was found. Shift+Tab reverses the order correctly, measured from OP-05 back through OP-04, OP-03, OP-02, OP-01.",
      "focus_sequence": [
       "01 a.skip → 跳到正文 / Skip to content",
       "02-16 nav a → 章节 02 至 16 导航链接（15 个）",

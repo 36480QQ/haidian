@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>京张水准线 THE LEVELING LINE · 离线可视化</title>
 <style>
+.media{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin:14px 0}
+.media figure{margin:0;border:1px solid var(--rule);padding:12px}
+.media video,.media audio{width:100%;display:block;background:#09111b}
+.media audio{background:none}
+.media figcaption{font-size:12.5px;color:var(--ink2);margin-top:8px;line-height:1.6}
+
+.explorer{border:1px solid var(--rule,#CFC9BC);padding:14px;margin:12px 0}
+.explorer canvas{max-width:100%;height:auto;background:#F2EFE9;display:block}
+.explorer canvas:focus{outline:2px solid #0A72A8;outline-offset:2px}
+.explorer .controls{margin:10px 0 6px}
+.explorer button{font:inherit;font-size:13px;padding:5px 10px;margin:0 6px 6px 0;
+  border:1px solid #676D74;background:#fff;color:#2B3138;cursor:pointer}
+.explorer button:focus{outline:2px solid #0A72A8;outline-offset:2px}
+.explorer .readout{font-weight:700;margin:6px 0}
+.explorer[data-loading] canvas{opacity:.45}
+.explorer[data-error] canvas{display:none}
+.explorer .fallback{display:none;color:#C0392B;font-size:13px}
+.explorer[data-error] .fallback{display:block}
+
 :root {
   --paper: #F2EFE9; --ink: #2B3138; --ink2: #676D74; --ink3: #858B90;
   --rule: #CFC9BC; --red: #C0392B; --blue: #0A72A8; --brass: #906519;
@@ -193,6 +212,74 @@ charter.6 要求披露生成方法、charter.5 要求结构化可机读，而四
 本方案的结论严格限于「机器可读的披露字段为空，且闸门不检查它」。这是可修复的工程缺陷，不是道德指控。
 母题识别基于中文关键词正则，存在同义表述漏计，所以收敛度是<b>下界</b>。语料每日变动，引用须复算。</p>
 
+
+
+<h2>影片与声音<span class="en">FILM AND SOUND</span></h2>
+<p class="note">三件都由随包几何与随包数据生成，<b>全部无语音、无音乐素材、非实景渲染</b>；
+每一件旁边都有海报帧、中英双语字幕（影片）与载明方法、限度与权利的文字稿。
+本页不自动播放任何内容。</p>
+<div class="media">
+  <figure>
+    <video controls playsinline preload="metadata" poster="../assets/media/leveling-line.png">
+      <source src="../assets/media/leveling-line.mp4" type="video/mp4">
+      <track kind="captions" srclang="zh" label="中文/English" default
+             src="../assets/media/leveling-line.vtt">
+    </video>
+    <figcaption><b>京张水准线：一次闭合，在时间里</b>（54 秒，无声）。
+    线从已知点出发，逐站传递高程，绕一周回到原点，剩下的差值就是闭合差。
+    纸上出发与回来是同一张图，时间里不是。
+    <a href="../assets/media/leveling-line.md">文字稿与授权说明 ↗</a></figcaption>
+  </figure>
+  <figure>
+    <video controls playsinline preload="metadata" poster="../assets/media/closure-advance.png">
+      <source src="../assets/media/closure-advance.mp4" type="video/mp4">
+      <track kind="captions" srclang="zh" label="中文/English" default
+             src="../assets/media/closure-advance.vtt">
+    </video>
+    <figcaption><b>闭合决定进度：什么也不开启的那一拍</b>（40 秒，无声）。
+    合格则下一期开启，超限则整段重测、什么也不开启。
+    <b>片中的合格与超限是规则示意，不是实测读数。</b>
+    <a href="../assets/media/closure-advance.md">文字稿与授权说明 ↗</a></figcaption>
+  </figure>
+  <figure>
+    <audio controls preload="metadata">
+      <source src="../assets/media/leveling-year.mp3" type="audio/mpeg">
+    </audio>
+    <figcaption><b>一年的声音</b>（48 秒，单声道，无语音）。全年 214 小时复测工时按月排开，
+    每一次脉冲代表 2.5 小时；前半段峰值 83.5 小时，后半段把三个年度点分开后降到 31.5 小时，
+    工作量一次没变。<b>非现场录音，不得作为现状声环境的证据。</b>
+    <a href="../assets/media/leveling-year.md">文字稿与授权说明 ↗</a></figcaption>
+  </figure>
+</div>
+
+<h2>把年度点搬一搬<span class="en">MOVE THE ANNUAL READINGS</span></h2>
+<p>FIG.30 只公布一个排布和找到它的搜索，读者只能选择相信。<b>一张离线页面唯一能替图纸补上的，
+是「不同意」的权利。</b>下面这块画布在浏览器里重算同一个模型：用按钮或方向键把三个年度点搬到别的月份，
+峰值月会立刻跟着变。红色虚线是已发布的排布（31.5 h），试着把它压下去。</p>
+<div class="explorer" data-role="year-explorer" data-loading="true">
+  <noscript><p class="note"><b>脚本未启用。</b>本节的全部结论都在 FIG.30 与下表里，
+  互动只是同一个模型的第二种读法。</p></noscript>
+  <canvas width="900" height="330" role="img"
+          aria-label="逐月复测工时柱状图，可用方向键移动年度点 · Monthly re-survey hours; arrow keys move the annual readings"></canvas>
+  <p class="controls">
+    <button type="button" data-role="which">切换选中的年度点 Select next annual reading</button>
+    <button type="button" data-role="prev">← 提前一个月 Earlier</button>
+    <button type="button" data-role="next">推后一个月 Later →</button>
+    <button type="button" data-role="reset">回到已发布排布 Published</button>
+    <button type="button" data-role="naive">同月起算 All in one month</button>
+  </p>
+  <p class="fallback">画布不可用，下表载有同样的数字。 Canvas unavailable; the table below carries the same numbers.</p>
+  <p class="readout" data-role="readout">峰值 31.5 h · peak 31.5 h</p>
+  <table data-role="table"><caption>逐月工时 Hours by month</caption>
+  <tr><th>月 Month</th><th>h</th></tr><tr><td>1</td><td>23.5</td></tr><tr><td>2</td><td>31.5</td></tr><tr><td>3</td><td>25.5</td></tr><tr><td>4</td><td>23.5</td></tr><tr><td>5</td><td>25.5</td></tr><tr><td>6</td><td>7.5</td></tr><tr><td>7</td><td>23.5</td></tr><tr><td>8</td><td>7.5</td></tr><tr><td>9</td><td>7.5</td></tr><tr><td>10</td><td>23.5</td></tr><tr><td>11</td><td>7.5</td></tr><tr><td>12</td><td>7.5</td></tr></table>
+</div>
+<p class="note"><b>这不是演示，是同一个模型的第二次实现。</b>页面里的 JavaScript 独立重算
+<code>analysis/fig_year.py</code> 的排布函数，<code>analysis/calendar_parity_qa.py</code>
+用两者在 10 个排布上的 120 个月度读数逐一比对，不一致则构建失败——一个只回放预存答案的页面，
+证明不了它声称在演示的模型。全部 11,880 种排布已在 Python 里搜过：<b>读者能到达的每一个都不优于
+31.5 h</b>，而这句话是读者自己验证的，不是本方案要求相信的。工时是本方案对复测机制的推算，
+不是实测运营数据；「更好」在此只指峰值更低、峰谷差更小，不含任何运营可行性判断。</p>
+
 <h2>来源<span class="en">SOURCES</span></h2>
 <table><tr><th>ID</th><th>类型</th><th>用途</th></tr>
 <tr><td><code>SITE-PACKAGE</code></td><td>official_public</td><td>Project brief, enums, allowed design space, ranges, and schemas.</td></tr><tr><td><code>SOURCE-REGISTRY</code></td><td>repository_public_registry</td><td>Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.</td></tr><tr><td><code>PROCESSED-FACT-PACK</code></td><td>repository_processed_reference</td><td>Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source.</td></tr><tr><td><code>BOUNDARY-SOURCE</code></td><td>agent_inferred_from_public_data</td><td>Submitted site boundary geometry source (provisional).</td></tr><tr><td><code>KEY-AREA-SOURCE</code></td><td>agent_inferred_from_public_data</td><td>Three required detailed-design key area boundaries (provisional).</td></tr><tr><td><code>OFFICIAL-ANNOUNCEMENT</code></td><td>official_public</td><td>Official announcement tasks, scope levels, key areas, language, and deliverable context.</td></tr><tr><td><code>AGENT-TASKBOOK</code></td><td>user_provided_cleared</td><td>Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.</td></tr><tr><td><code>FIELD-CENSUS-2026-08</code></td><td>agent_collected_public</td><td>本方案自采数据：对 open-city-ai/haidian 全部已合入方案做权威源普查（枚举 git tree 而非会滞后的 submissions-data.js），统计赛道申报分布、结构收敛度、元符号饱和度与 agent.json 生成方法披露字段的可机读性。</td></tr><tr><td><code>OSM-REFERENCE-2026-08</code></td><td>agent_collected_public</td><td>独立公共数据复核：用 OpenStreetMap 实际测绘的京张铁路遗址公园多边形与废弃铁路线形，检验仓库临时边界与实际地理的差异。</td></tr><tr><td><code>BARRIER-FREE-ENVIRONMENT-LAW</code></td><td>official_public</td><td>把本方案的「无AI等价服务路径」从设计判断锚定为法定义务：该条要求提供医疗、保险、金融、水电气等服务的场所保留现场指导、人工办理等传统服务方式。</td></tr><tr><td><code>GENERATIVE-AI-INTERIM-MEASURES</code></td><td>official_public</td><td>第十四条把「发现问题即停止生成与传输」确立为提供者义务，对应本方案的停用与全域暂停规则；第十五条要求设置便捷投诉入口并公布处理流程与反馈时限，对应本方案关于「没有时限的申诉权不可执行」的主张——该主张因此不是本方案的创新，而是对现行规章的落实。</td></tr><tr><td><code>ELDERLY-SMART-TECH-PLAN</code></td><td>official_public</td><td>为本方案对画像 P4 的硬约束提供政策依据：该方案要求「坚持传统服务方式与智能化服务创新并行」，在日常生活场景中必须保留老年人熟悉的传统服务方式，并给出与本方案场景卡可对照的高频事项清单。</td></tr><tr><td><code>CASE-C1-ALGORITHM-REGISTER</code></td><td>official_public</td><td>C1：为水准点铭牌的信息底稿提供字段参照——用途、数据、责任人、申诉入口四项对应铭牌四行。</td></tr><tr><td><code>CASE-C2-EU-AI-ACT-RISK-TIERS</code></td><td>official_public</td><td>C2：支撑本方案限差 F1/F2/F3 的分级设定——按后果严重度而非技术复杂度施加差异化要求。</td></tr><tr><td><code>CASE-C3-AI-VERIFY</code></td><td>official_public</td><td>C3：提供复测的技术执行形态参照——同一问题集、同一口径，产出可相互比较的读数。</td></tr><tr><td><code>CASE-C4-NHS-ALGORITHMIC-IMPACT</code></td><td>official_public</td><td>C4：支撑医疗类场景取最严限差 F1，并支撑「处方性判断须由具备资格的人作出并留痕」这一条。</td></tr><tr><td><code>CASE-C5-CIVIC-DATA-AGENDA</code></td><td>official_public</td><td>C5：支撑三等水准点的公众复测发起权——数据用途与复测议程由受影响者而非运营方决定。</td></tr><tr><td><code>CASE-C6-ARTIFACT-EVALUATION</code></td><td>official_public</td><td>C6：本方案据此随包提交五个无依赖的可执行校验器与全部数据产物，使结论可被第三方重跑，而非仅可阅读。</td></tr><tr><td><code>MOHURD-URBAN-DESIGN-MEASURES</code></td><td>official_public</td><td>本包合规矩阵中「城市设计应落实规划、指导建筑设计、塑造城市特色风貌，并统筹平面和立体空间」一句直接取自第三条：城市设计是落实城市规划、指导建筑设计、塑造城市特色风貌的有效手段，并从整体平面和立体空间上统筹城市建筑布局、协调城市景观风貌。</td></tr><tr><td><code>MOHURD-CONTROL-DETAILED-PLANNING</code></td><td>official_public</td><td>用于界定本包在控规深度上的边界：容积率、建筑高度、密度、退线、道路红线等属该办法的审批范畴，本包不代为给出，metrics.json 中保持 unknown 并记录前置条件。</td></tr><tr><td><code>MNR-LAND-USE-CLASSIFICATION-GUIDE</code></td><td>official_public</td><td>用地表达采用可校验的 land_use_code 而非自造分类；分类归属的最终依据须以官方文件与专业论证为准。</td></tr><tr><td><code>MOHURD-ARCH-DESIGN-DEPTH-2016</code></td><td>official_public</td><td>仅作为缺资料清单与深化提醒；本包不据此给出任何建筑专业深度结论。</td></tr>
@@ -212,5 +299,7 @@ charter.6 要求披露生成方法、charter.5 要求结构化可机读，而四
 计算坐标系 EPSG:4548，交换坐标系 EPSG:4326 · 本页离线自包含，不请求任何外部资源
 </footer>
 </div>
+<script type="application/json" id="year-model">{"hours_per_session": {"datum": 24.0, "first": 18.0, "second": 8.0, "third": 2.5}, "monthly_third_order_points": 3, "published": {"quarter_offsets": [0, 0], "annual_months": [1, 2, 4], "load": [23.5, 31.5, 25.5, 23.5, 25.5, 7.5, 23.5, 7.5, 7.5, 23.5, 7.5, 7.5], "peak": 31.5}, "naive": {"quarter_offsets": [0, 0], "annual_months": [0, 0, 0], "load": [83.5, 7.5, 7.5, 23.5, 7.5, 7.5, 23.5, 7.5, 7.5, 23.5, 7.5, 7.5], "peak": 83.5}}</script>
+<script src="assets/year_explorer.js"></script>
 </body>
 </html>

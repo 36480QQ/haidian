@@ -4,6 +4,150 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M45",
+      "gate": "upstream_validator_qa.py",
+      "target": "manifest.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把画廊封面的角色改回 `gallery_cover`——**这正是 CI 真实拒绝过的那一次**。",
+      "what_en": "Put the gallery cover's role back to `gallery_cover` — the exact state CI actually refused.",
+      "why_zh": "组织方 schema 的 role 是开放 pattern，`gallery_cover` 过得了 schema；这条规则只在 `validate_submission.py` 里，**而本仓库那份 validator 里根本没有它**，于是构建照常打印 PASS。这道闸门跑的是 `upstream/main` 上的那一份，**若它抓不住这一次，本包就还是在拿旧合同给自己验收**。",
+      "why_en": "The organisers' schema makes role an open pattern, so gallery_cover satisfies the schema; the rule lives only in validate_submission.py, and this checkout's copy does not contain it, so the build printed PASS. This gate runs the copy on upstream/main - if it cannot catch this one, the package is still accepting itself against an expired contract."
+    },
+    {
+      "id": "M44",
+      "gate": "schema_conformance_qa.py",
+      "target": "agent.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "从 `agent.json` 的脚本清单里删掉一个脚本。",
+      "what_en": "Delete one script from the list in `agent.json`.",
+      "why_zh": "提交格式不接受 `.py`，脚本无法随包提交，**这份清单就是它们的替身**——而它此前只列了 17 个，目录里有 107 个。一份点到六分之一的替身，值不了它看起来的那么多；若删掉一个而无人作声，这份清单就只是装饰。",
+      "why_en": "The submission format does not accept .py, so the scripts cannot ship and this list stands in for them - and it named 17 while the directory held 107. A stand-in naming a sixth of what exists is worth less than it appears, and if one can be dropped without objection the list is decoration."
+    },
+    {
+      "id": "M43",
+      "gate": "sources_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一条国际案例来源的行号从 C3 改成 C9——正文案例表里没有 C9 这一行。",
+      "what_en": "Change one case source's row label from C3 to C9, which no row in the case table carries.",
+      "why_zh": "六个国际案例在正文里没有内联引用（六条在英文版要花约 216 字节，而英文版只剩几十）——**联接全靠每条来源的 usage 以行号开头**。这条联接一旦对不上，读者手里的登记表就再也走不回案例表的那一行，而这正是本包在别处要求别人做到的那件事。",
+      "why_en": "The six international cases carry no inline citation in the prose - six would cost about 216 bytes in an English edition with tens to spare - so the join rests entirely on each source's usage opening with the row label. Break it and a reader holding the registry can no longer walk back to the case-table row, which is the very thing this package requires of others."
+    },
+    {
+      "id": "M42",
+      "gate": "sources_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "从一条来源里删掉「文件类型」——组织方规则第 5 节要求入库前必须记录的十三项之一。",
+      "what_en": "Delete the file-type field from one source, one of the thirteen the organisers' rules require before a source is indexed.",
+      "why_zh": "本包此前用的是自己的十二项清单，并在读数里称其为「同样的核心字段」——**同样的，指的是本包自己那一份**；十三项里有四项在任何一条记录里都没有出现过。**一份自己给自己定的字段表，不能拿来衡量别人发布的要求。**",
+      "why_en": "This package used a twelve-field list of its own and reported that every record answered the same core fields - the same as its own list. Four of the organisers' thirteen appeared in no record at all. A field list written for oneself cannot be the measure of a requirement someone else published."
+    },
+    {
+      "id": "M41",
+      "gate": "sources_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一条来源的权威等级改成 X——组织方规则里的「不入库」档。",
+      "what_en": "Grade one source X, the organisers' never-index level.",
+      "why_zh": "X 档写的是商业地图瓦片、账号内资料、下载密码资料、版权不明图片、非公开图件、个人信息。**落在这一档的来源，不该出现在提交里，而不只是不该出现在这份清单里。**这套分级一直躺在本仓库的规则文件里（中文表格），本包却从未按它说明自己的来源。",
+      "why_en": "X covers commercial map tiles, account-gated and password-protected material, unclear-copyright images, non-public drawings and personal information. A source in X does not belong in a submission at all, not merely in this list. The grading sat in this checkout's rules file the whole time and this package had never described its sources in it."
+    },
+    {
+      "id": "M40",
+      "gate": "taskbook_coverage.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把任务书某条要求所指向的小节标题改名。",
+      "what_en": "Rename the section a taskbook requirement points at.",
+      "why_zh": "这张表的全部意义在于「一条要求接到答它的那个地方」——标题一改，那条要求就没有答处，而表还会说 63/63 全部有据。**本包对别人提出的正是这一条：声称覆盖不等于覆盖。**",
+      "why_en": "The whole point of this table is that a requirement is joined to the place that answers it. Rename the heading and the requirement has no answer while the table goes on saying 63 of 63 are evidenced. That is the objection this package makes to others: a claim of coverage is not coverage."
+    },
+    {
+      "id": "M39",
+      "gate": "statute_quote_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把《无障碍环境建设法》第三十九条改回本包修前的那种写法。",
+      "what_en": "Restore the pre-fix rendering of article 39 of the Barrier-Free Environment Construction Law.",
+      "why_zh": "这是真实的修前状态：**社会保障被写成保险、生活缴费被写成水电气**，两类被换成了法条并没有说的、更窄的说法，而这句话正被当作一条「不可豁免」约束的法律依据。**引文是唯一一种不可辩论的主张**——原文要么这么写，要么没有。若改回去而无人作声，本包对法条的引述就没有任何保障。",
+      "why_en": "This is the real pre-fix state: social security written as insurance and utility payments as water/electricity/gas, two categories replaced by narrower ones the statute does not use, in a sentence carried as the legal basis for a constraint this proposal calls non-waivable. A quotation is the one claim that cannot be argued about - the text either says it or it does not. If the old rendering can come back unremarked, nothing protects what this package quotes."
+    },
+    {
+      "id": "M38",
+      "gate": "standards_alignment_qa.py",
+      "target": "standard_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一个组织方标为 mandatory_for_formal 的标准号写错一个词。",
+      "what_en": "Misspell one standard the organisers mark mandatory_for_formal.",
+      "why_zh": "组织方的标准登记表标了五条强制，本包的标准矩阵此前**恰好**都答到了——但没有任何东西核对过这件事，而那份登记表由组织方按自己的节奏修订，本分支读的是快照。**恰好答到，和被检查过答到，不是一回事。**",
+      "why_en": "The organisers' registry marks five standards mandatory and this package's standard matrix happened to answer all five - with nothing checking that, while the registry is revised on the organisers' schedule and this branch reads a snapshot. Happening to be complete is not the same as being checked."
+    },
+    {
+      "id": "M37",
+      "gate": "figure_citation_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版里指向英文文册的路径改回中文文册。",
+      "what_en": "Point the English edition back at the Chinese A3 booklet.",
+      "why_zh": "这正是修复前的真实状态：英文版把四份成品全部指向中文件，而四份英文成品随包发出、两版都没点过名——**英文读者被送去读一本中文文册**。点名一份文件，只对读得懂那门语言的人有用。",
+      "why_en": "This is the real pre-fix state: the English edition pointed at all four Chinese documents while the four English ones shipped unnamed by either edition, sending an English reader to an A3 booklet in Chinese. Naming a document is only useful to a reader of the language it is written in."
+    },
+    {
+      "id": "M36",
+      "gate": "intake_limits_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "给英文版尾部追加 200 字节，把它推过入库上限。",
+      "what_en": "Append 200 bytes to the English edition, pushing it over the intake cap.",
+      "why_zh": "E135 记的正是这件事真的发生过：英文版超限 6 字节，而本包自己的构建打印了「BUILD OK」——**那段检查只播报、从不判负**，抓住它的是组织方的校验器，也就是本包唯一输不起的那一处。修好之后若不能证明它真的会响，那就只是把同一句话换个地方再说一遍。",
+      "why_en": "E135 records this actually happening: the English edition went six bytes over and this package's own build printed BUILD OK, because the check reported the headroom and never failed on it. The organisers' validator caught it, which is the one place a submission cannot afford to be corrected. A fix that cannot be shown to fire is the same announcement moved to a new file."
+    },
+    {
+      "id": "M35",
+      "gate": "registry_alignment_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一份被组织方登记表限为 background_only 的来源，重新评为本包最强的一级。",
+      "what_en": "Re-grade a source the organisers' registry caps at background_only to this package's strongest class.",
+      "why_zh": "评审工具会把 `data/source_registry.json` 的摘要一并交给模型，并要求它据此区分「可用于正式结论」与「仅作背景」。本包一度正是这样评错了一处，**方向对自己有利**——而在公开契约与自评打架时，以契约为准。若把它改回去而无人作声，这条规矩就只是一句话。",
+      "why_en": "The review tool hands the model a summary of data/source_registry.json and asks it to tell formal-usable sources from background-only ones. This package had exactly one such grade wrong, in its own favour. Where a published contract and a self-assessment disagree, the contract governs. If the grade can be raised again without objection, that rule is only a sentence."
+    },
+    {
+      "id": "M34",
+      "gate": "matrix_refs_qa.py",
+      "target": "compliance_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把评审维度对照表里的一个小节名改成一个不存在的标题。",
+      "what_en": "Rename one section in the review-dimension map to a heading that does not exist.",
+      "why_zh": "这张表把组织方发布的七个评审维度接到「哪一节回答了它」。**destination 被改名之后仍然看起来像导航，却把读者送到不存在的地方**——比没有这张表更糟。本包已经交付过四处失效的机读锚点，正是同一形状；若改一个字而无人作声，这张表就只是装饰。",
+      "why_en": "The map joins the organisers' seven published review dimensions to the sections that answer them. A renamed destination still looks like navigation while sending the reader somewhere that is not there, which is worse than no map — and this package has already shipped four dead machine-readable anchors of exactly that shape. If one word can be changed without objection, the map is decoration."
+    },
+    {
       "id": "M33",
       "gate": "matrix_refs_qa.py",
       "target": "visual/assets/verify.js",
@@ -146,6 +290,54 @@
       "what_en": "Remove the admission from the noise row, restoring an instruction to use the national standard value without naming the standard.",
       "why_zh": "E90 之后把同一个问题指向正文，只找到这一处，而这一处是**给别人执行的指令**：该行存在的理由正是「定性的『噪声扰民』无法判定超限」，而「取国家标准值」不指名标准，同样无法执行。本包在别处逐条指名法律名称、条号并挂可解析标签——这不是惯例问题，是这一处失守。",
       "why_en": "Pointing E90's question at the prose turned up exactly this one, and this one is an instruction **for someone else to carry out**: the row exists because the field's qualitative 「noise nuisance」 cannot determine exceedance, and 「use the national standard value」 with no standard named cannot either. The package names law, article and a resolving tag everywhere else."
+    },
+    {
+      "id": "M49",
+      "gate": "naming_qa.py",
+      "target": "geometry/roads.geojson",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一个缝合点的编号从 ROAD-101 改成 STITCH-1，让它掉出已公布的族。",
+      "what_en": "Rename one stitching point from ROAD-101 to STITCH-1 so it falls outside every published family.",
+      "why_zh": "**命名系统写成句子就死在句子里。** 写一次，包再长出四百个标识符，没有人回去检查后来的那些是否还守着当初那句话——而任务书要的正是「命名体系」。所以规则以数据发布，并对包内实际出现的每一个标识符逐一核对：一个掉出所有族的编号必须让构建失败，否则这套体系只是自称存在。",
+      "why_en": "**A naming system written as a sentence dies as a sentence.** It is written once, the package grows another four hundred identifiers, and nobody goes back to check that the later ones still obey it — and a naming system is exactly what the taskbook asks for. So the rules ship as data and every identifier actually in the package is checked against them: one that falls outside every family has to fail the build, or the system only claims to exist."
+    },
+    {
+      "id": "M48",
+      "gate": "sources_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一条来源的「不支持什么」换成一句放之四海皆准的套话。",
+      "what_en": "Replace one source's statement of what it cannot support with a sentence true of every source.",
+      "why_zh": "**字段填满了，登记表却什么也没说。** 一句 22 条通用的话，证明的只是这个字段存在，而这个字段存在的全部意义，是逼着人为每一份来源想清楚它会引来哪一种越界。因此闸门要求每条陈述互不相同——套话与空白同样是没写。",
+      "why_en": "**The field is filled and the register says nothing.** A sentence true of all 22 records establishes only that the field exists, and the entire point of the field is to make someone work out, per source, which overreach that source invites. So the gate requires the statements to be distinct: boilerplate is as empty as a blank."
+    },
+    {
+      "id": "M47",
+      "gate": "calendar_parity_qa.py",
+      "target": "visual/assets/year_explorer.js",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把页面脚本里季度点的周期由三个月改成四个月，Python 一侧不动。",
+      "what_en": "Change the quarterly cadence in the page script from three months to four, leaving the Python side alone.",
+      "why_zh": "**这块画布邀请读者去反驳一张图纸，那么它算的必须是同一张图纸的模型。** 页面照样能跑，每根柱子看上去都合理，读者却在另一个模型里探索——更糟的是，他真找到一个「更优」排布时，找到的是玩具里的缺陷，而本方案会把这归给读者。只回放预存答案的页面证明不了任何事，第二次实现的全部价值就在于它必须与第一次一致。",
+      "why_en": "**The canvas invites a reader to disagree with a sheet, so it has to be computing the sheet's model.** The page still runs, every bar still looks plausible, and the reader is exploring something else — worse, when they find an arrangement that beats the published one they have found a defect in the toy, and this proposal would have handed them the credit. A page that only replays a stored answer proves nothing; the whole value of a second implementation is that it has to agree with the first."
+    },
+    {
+      "id": "M46",
+      "gate": "gate_count_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把中文版里「N 道中 M 道已被证明会失败」的 M 减一，即让正文比闸门台账少算一道。",
+      "what_en": "Subtract one from the proven-gate count in the Chinese edition, so the prose lags the harness by a single gate.",
+      "why_zh": "**这正是 E154 的原样重演。** 台账自己写着「分母是读出来的不是写死的」，而正文里唯一描述它的那句话是抄来的，抄完就再没跟上——抄的时候是十五道中十二道，被发现时已是 28 道中 24 道。`scripts/review_submission.py` 不读 `visual/assets/`，所以那一句是评审得知该文件存在的唯一途径；唯一途径上的数字过期，等于把最强的证据说小。差一道也必须响。",
+      "why_en": "**This is E154 replayed exactly.** The register says of itself that its denominator is read rather than retyped, and the one sentence describing it had retyped it and then never followed: twelve of fifteen when it was written, 24 of 28 when it was caught. `scripts/review_submission.py` does not read `visual/assets/`, so that sentence is the only route by which a reviewer learns the file exists, and a stale number there sells the strongest evidence short. One gate out is enough to fail."
     },
     {
       "id": "M21",
@@ -403,11 +595,12 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 33,
+  "caught": 49,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
     "assumption_refs_qa.py",
+    "calendar_parity_qa.py",
     "census_claims_qa.py",
     "cjk_leak_qa.py",
     "claim_audit_qa.py",
@@ -416,16 +609,27 @@
     "evidence_ceiling.py",
     "figure_citation_qa.py",
     "forward_reference_qa.py",
+    "gate_count_qa.py",
+    "intake_limits_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
+    "naming_qa.py",
     "overflow_qa.py",
     "parity_qa.py",
     "peer_claim_qa.py",
+    "registry_alignment_qa.py",
     "schema_conformance_qa.py",
     "sources_qa.py",
-    "stale_corpus_qa.py"
+    "stale_corpus_qa.py",
+    "standards_alignment_qa.py",
+    "statute_quote_qa.py",
+    "taskbook_coverage.py",
+    "upstream_validator_qa.py"
   ],
   "gates_not_covered": {
+    "upstream_drift_qa.py": "it compares organiser files on `upstream/main` with the blobs this build last read them against; both sides are outside the submitted package, so no mutation of a shipped file can reach the condition it tests.",
+    "build_rubric_coverage.py": "it refuses when a published review dimension is unmapped, and the mapping lives in `analysis/`, which intake excludes — so no mutation of a shipped file can reach the condition. The same package-boundary fact as the two below.",
+    "scarce_surface_qa.py": "it reads which sheets `build_drawings.py` puts on the rasterised board, and that file is in `analysis/`, which intake excludes — so no mutation of a shipped file can change what this gate sees. The same package-boundary fact that leaves the harness itself unproven, and stated rather than left to be inferred from a count.",
     "gate_mutation_qa.py": "this file is not in the submitted package, so no shipped-file mutation can reach it; both halves of its detection — that a caught defect is caught, and that it was named — are instead established by two control mutations, `assert_harness_can_report_survival` and `assert_harness_checks_naming`"
   },
   "rules_matching_nothing": [
@@ -459,6 +663,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 18 道闸门，其中 18 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 18 gates, 18 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 31 道闸门，其中 27 道已被证明会失败；其余 4 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 31 gates, 27 have been shown capable of failing and 4 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

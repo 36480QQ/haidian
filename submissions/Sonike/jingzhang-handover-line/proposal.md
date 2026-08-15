@@ -518,6 +518,18 @@ English brief — **One test decides everything here: for any AI service on this
 
 “百年值班簿”不是流量榜，而是一套可纠错的贡献凭证。任何居民、维护者、开发者或公共机构都可用问题票提名；条目必须同时提交贡献对象、可公开证据、许可、影响边界和是否愿意署名。独立的社区—专业双人复核只判断证据是否足以记录，不评价身份或声量；被提名者可选择实名、化名或匿名。条目发布后保留公开异议、补证、纠错、合并、撤回和申诉入口，争议未解决先隐藏荣誉标识但保存审计链；个人数据按同意期限删除，公共方法、正负结果和版本记录长期归档。每年复盘班公布新增、纠错、撤回与未解决条目，不以数量排名。这样同时回应公共知识沉淀、贡献可记忆与人的尊严：记住谁承担过责任，也允许任何人改正记录或离开系统。
 
+### 三分钟音频导览：不识字、不看屏幕也能听完这份方案
+
+任务书把表达完整度定义为「以人类可直观理解的文本、图像、示意图、表格、场景卡、**视频/声音**、三维或交互网页形成完整成果」。本包此前只有文本、图像与网页三类；本轮补上**声音**这一类——中英各一段三分钟音频导览 [data:assets/media/audio-guide.m4a] [data:assets/media/audio-guide-en.m4a]，讲清判据、三座交接场、最小载体「公开交接桌」与效力边界。
+
+**这不是宣传片，是无障碍交付物。** 一份强调「不用 AI 也能办成同一件事」的方案，如果自己只能被读、不能被听，那条判据在它自己身上就不成立。音频对应视障读者、低视力读者、阅读困难者，以及任何在通勤途中无法看屏幕的人。
+
+三件事按同一标准处理，与包内其他交付物一致：
+
+- **文字稿与字幕逐句一致** [data:assets/media/audio-guide.md] [data:assets/media/audio-guide.vtt]。**任何时候读文字稿都等价于听音频**——不设只在音频里出现的信息，也不设只在文本里出现的信息。
+- **不使用背景音乐与音效。** 听力环境差或使用助听设备时，背景声会直接降低可懂度；这条与图面「不为装饰牺牲可读性」是同一条原则。
+- **合成来源写明**：音频由 macOS 内置语音合成在本机生成，**非真人录音**，不含任何人物声音、肖像或可识别个人信息，包内不分发语音引擎 [source:TTS-MACOS-SYNTH]。字幕时间轴按各句字符数占比在实测总时长上分配（合成语速恒定），**未做逐句人工对齐校正，这一点如实写在字幕文件头部**。
+
 ### 可直接使用的国际传播短文
 
 > 京张交接线不是一座展示“万能AI”的科技园，而是一条公开演练责任如何流动的城市线路。每项能力都带着版本、适用边界、人工负责人和停用办法，从研发进入验证，从验证进入开源，再从开源进入日常公共服务。访客可以沿无障碍路线查看成功、失败与修复，也可以选择不用AI而获得等价基础服务。欢迎城市、大学、社区与维护者带着一个可公开的问题和一个愿意承担的责任，在全球交接周完成一次可撤回、可复现、可接班的合作。
@@ -645,9 +657,9 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 ## 参考资料
 
-全部二十三条来源在 sources.json 中逐条登记权威等级、采集方法、时空覆盖、许可状态与可用/不可用边界；凡涉及单位换算的写明原文表述与换算方法，凡属行政尺度背景事实的标记 `not_spatially_allocable=true`。
+全部二十四条来源在 sources.json 中逐条登记权威等级、采集方法、时空覆盖、许可状态与可用/不可用边界；凡涉及单位换算的写明原文表述与换算方法，凡属行政尺度背景事实的标记 `not_spatially_allocable=true`。
 
-**每条来源同时给出与中央登记表的对照，便于机器逐项核验。** 本表的 `usable_for_formal` 采用 `data/source_registry.json` 的同一套取值词汇。其中 **7 条**（临时范围与重点区几何、征集公告、智能体任务书、生成式AI暂行办法、无障碍环境建设法、国办发〔2020〕45号）确实在中央表内，其 `registry_source_id`、`registry_authority_level`、`registry_review_status` 与 `usable_for_formal` 四项由脚本从中央表**逐字复制**、未经改写，并标 `usable_for_formal_basis: central_registry_verbatim`；本包对这些来源的用法另受中央表 `allowed_uses` / `prohibited_uses` 约束，已逐条在 `usable_for` / `not_usable_for` 中收窄。其余 **16 条不在中央表内**，一律标 `registry_review_status: not_in_central_registry` 与 `usable_for_formal_basis: participant_self_assessed`——维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录，**但自评状态不等于中央批准，本包不据此主张任何中央审定结论**。字体与构建工具链六条标 `not_a_factual_source`：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。
+**每条来源同时给出与中央登记表的对照，便于机器逐项核验。** 本表的 `usable_for_formal` 采用 `data/source_registry.json` 的同一套取值词汇。其中 **7 条**（临时范围与重点区几何、征集公告、智能体任务书、生成式AI暂行办法、无障碍环境建设法、国办发〔2020〕45号）确实在中央表内，其 `registry_source_id`、`registry_authority_level`、`registry_review_status` 与 `usable_for_formal` 四项由脚本从中央表**逐字复制**、未经改写，并标 `usable_for_formal_basis: central_registry_verbatim`；本包对这些来源的用法另受中央表 `allowed_uses` / `prohibited_uses` 约束，已逐条在 `usable_for` / `not_usable_for` 中收窄。其余 **17 条不在中央表内**，一律标 `registry_review_status: not_in_central_registry` 与 `usable_for_formal_basis: participant_self_assessed`——维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录，**但自评状态不等于中央批准，本包不据此主张任何中央审定结论**。字体、语音合成与构建工具链七条标 `not_a_factual_source`：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。
 
 ### 一、任务依据
 

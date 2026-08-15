@@ -266,7 +266,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 三区沿 9km 智脉廊南北串联：众智园（策源）→ AI 原点社区（转化）→ 大钟寺（应用），构成完整 AI 创新链；设计语言统一（人字形母题/三色体系/AI 驿站组件库），尺度自北向南从大尺度产业街区过渡到人的尺度商业街区。
 
-![三处重点区域设计图](assets/figures/key-areas.png)
+![三处重点区域设计图（总览）](assets/figures/key-areas.png)
+
+![众智园 AI 自主创新加速区——分区设计图（详图）](assets/figures/area-zhongzhi-masterplan.png)
+
+![北京 AI 原点社区——分区设计图（详图）](assets/figures/area-origin-masterplan.png)
+
+![大钟寺 AI 产业聚集区——分区设计图（详图）](assets/figures/area-dazhongsi-masterplan.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -399,6 +405,25 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **口径澄清**：`building_footprint_area_sqm = 310,807㎡` 是"众智园全栈圣殿"单体概念建筑的基底（BLDG-001，`geometry_role=design_proposal`），不是全片区现状建筑基底，不应用于全片区总量反推。此前评审所指"算术矛盾"即源于此口径错配，现已更正。
 - **复算路径**：官方 FAR 控制条件与建筑面积普查发布后，按 EPSG:4548 全量重算，替换全部情景值。
 
+![建筑规模情景推算链图](assets/figures/p5-3_volume_chain.png)
+
+**建筑拆改留分类方法（concept framework，待现状数据校准）**：本方案将建筑处置归纳为四类——**保留（Retain）**、**改造（Renovate）**、**更新（Update）**、**新建（New）**，并按"历史价值 > 结构安全 > 经济可行 > 产业适配"的顺序判定 [depth:retain_renovate_demolish] [standard:MOHURD-CONTROL-DETAILED-PLANNING]：
+
+- **保留（Retain）**：铁路遗产、工业遗存（旧厂房、机车库、信号塔）、优秀历史建筑与轨道设施意象——作为文化记忆载体原样保留并活化利用，如京张铁路遗址公园沿线设施、清华园车站等。
+- **改造（Renovate）**：结构完好但功能不适配的老旧楼宇——以"留改"为主，通过功能置换（产业服务、人才公寓、公共设施）与立面/节能改造提升价值，避免大拆大建；含低效商业向智能消费迭代（如大钟寺 1733 首店集群）。
+- **更新（Update）**：低效用地与闲置地块——以"拆改结合"方式再开发，释放产业空间，如清河创新界面带、众智园北侧低效工业用地。
+- **新建（New）**：留白地块与新建载体——以 AI 场景建筑（全栈圣殿、朝圣地标）与公共空间建设为主，占新建建筑总量中较小比例。
+
+**三区拆改留策略导向（概念假设，非官方控规结论）**：
+
+| 重点区 | 保留导向 | 改造导向 | 更新导向 | 新建导向 | 说明 |
+|---|---|---|---|---|---|
+| 众智园 AI 自主创新加速区 | 中 | 高 | 中 | 低 | 工业遗存活化 + 低效产业用地再开发，新建集中于全栈圣殿等标志性载体 |
+| 北京 AI 原点社区 | 中 | 高 | 中 | 低 | 近校老旧街区功能置换与品质提升，保留校区边界与社区肌理 |
+| 大钟寺 AI 产业聚集区 | 低 | 高 | 中 | 低 | 存量商业改造与智能消费迭代为主，保留大钟寺文保本体 |
+
+- **数据缺口声明**：具体地块级拆改留结论需以现状建筑普查、权属、房屋结构鉴定与控规条件为准；在官方数据发布前，本表仅作**概念导向**，不构成任何拆除、改造或保留的工程实施结论 [depth:risk_missing_data]。
+
 ## 交通、轨道、市政与公共服务设施
 
 交通方案回应公告对轨道站点一体化、道路微循环、慢行断点、对外交通、停车和绿色交通系统的要求 [depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]。市政和公共服务设施覆盖 AI 产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源和端侧算力；缺少管线、能源、排水、防洪、消防等工程资料时，列为正式深化前置条件 。
@@ -469,6 +494,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
+![实施运营机制图](assets/figures/p5-2_implementation_mechanism.png)
+
+
 合规矩阵是任务响应性的主控文件。每条公告任务和 agent_taskbook 任务必须对应到报告章节、图层、指标、图纸、HTML 页面、来源、假设和自检项。未能覆盖公告 1.3、1.4、1.5 或 agent.1–agent.6 的任一必选任务，方案不得进入 formal professional scoring。
 
 ## 包容性与人本保障
@@ -509,6 +537,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 服务设施 5 分钟可达率 | 5min 步行圈覆盖户数 / 总户数 | 步行速度 80m/min（≈400m 半径）、设施含医疗/教育/商业/公园 | ≥85% |
 | 可负担工位占比 | 可负担工位数（≤市场均价 30%）/ 总工位数 | 市场均价参考中关村办公租金（待官方口径） | ≥30% |
 | 老年+儿童共创提案年采纳 | 年采纳数 / 年提案总数 | 社区提案平台 + 评审委员会 | ≥3 项/年 |
+
+
+
+**5. 非 AI 从业者与未来工作转型群体（v10 深化）**
+- 智脉廊沿线保留 30% 以上传统业态（餐饮、零售、社区服务、文创小店），限制纯 AI 主题店铺占比，避免"AI 主题公园化"对本地居民的疏离
+- 设立「沿街数字技能驿站」（不少于 3 处）：免费提供老年手机使用、子女远程问诊、就业咨询、AI 工具扫盲等服务，覆盖非 AI 从业者与转型人群
+- 三重点区各保留一处**社区菜场/小修小补/邻里互助**类传统空间（禁止 AI 主题替换），延续海淀既有生活生态
+- OPC 一人公司招商需含 20% 非 AI 赛道（文化创意、社会服务、传统手工艺），避免社区 AI 化单一
 
 > 说明：以上为"有推算方法的目标值"，计算公式与假设条件已明确；正式数值需官方步道 GIS、设施点位、人口分布、租金普查等数据到位后按 EPSG:4548 重算。
 
