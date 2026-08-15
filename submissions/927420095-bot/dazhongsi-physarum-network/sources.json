@@ -58,7 +58,7 @@
     {
       "id": "PHYSARUM-RUN-RESULTS",
       "source_type": "agent_generated_design",
-      "usage": "Author's real Physarum + NSGA-II run (167-edge network, optimal efficiency 19.20, zero heritage crossings, Plan03 UDS 80.34). Method-validation evidence only; located ~2-3 km west of the provisional boundary, so not entered as formal geometry. Recorded as metric values in metrics.json and as narrative in proposal.md, not as a geometry layer.",
+      "usage": "Author's real Physarum + NSGA-II run (167-edge network, optimal efficiency 19.20, heritage objective f3≡f2 [degenerates to cost; no independent site heritage conclusion], Plan03 UDS 80.34). Method-validation evidence only; located ~2-3 km west of the provisional boundary, so not entered as formal geometry. Recorded as metric values in metrics.json and as narrative in proposal.md, not as a geometry layer.",
       "note": "Run artifacts are not committed as geometry; the coordinate offset makes direct spatial reuse invalid for this site."
     }
   ]

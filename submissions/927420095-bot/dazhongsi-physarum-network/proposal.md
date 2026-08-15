@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以生物黏菌自适应网络（Physarum）与 NSGA-II 多目标优化为差异化方法，面向大钟寺 AI 产业集聚区提出路网更新概念方案：形式几何采用临时边界内的概念路网，真实 Physarum 运行（167 边网络、最优效率 19.20、遗产穿越 0）作为方法验证证据，不冒充红线或审批几何。"
+summary: "以生物黏菌自适应网络（Physarum）与 NSGA-II 多目标优化为差异化方法，面向大钟寺 AI 产业集聚区提出路网更新概念方案：形式几何采用临时边界内的概念路网，真实 Physarum 运行（167 边网络、最优效率 19.20、遗产目标 f3≡f2）作为方法验证证据，不冒充红线或审批几何。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -15,7 +15,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 设计依据与资料清单
 
-本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。区别于一般以空间愿景为主的方案，本方案把**生物黏菌自适应网络（Physarum polycephalum，Tero et al. 2007）**与 **NSGA-II 多目标进化优化**作为路网更新的核心方法，将“从锚点生长出高效、抗毁、低穿越的网络”这一自然原理转译为城市路网更新的设计策略 [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]。
+本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。区别于一般以空间愿景为主的方案，本方案把**生物黏菌自适应网络（Physarum polycephalum，Tero et al. 2010）**与 **NSGA-II 多目标进化优化**作为路网更新的核心方法，将“从锚点生长出高效、抗毁、低穿越的网络”这一自然原理转译为城市路网更新的设计策略 [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]。
 
 方法的一手依据与来源关系如下：物理方法依据黏菌自适应网络论文与综述，优化方法依据多目标进化算法标准实现，设计判断回到 `brief/site-package/` 的公告、面向智能体任务书、枚举与范围清单，来源完整性由 `sources.json` 保存，不在正文重复机器索引 [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]。
 
@@ -27,7 +27,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
-**边界与坐标的诚实声明（方法优先）**：本提交的正式几何图层（`geometry/*.geojson`）使用 `brief/site-package/geometry/provisional_boundaries.geojson` 的临时边界，并在其中生成**概念路网**（`agent_generated_design`）。作者此前用真实黏菌 + NSGA-II 跑出的路网（167 边、最优效率 19.20、遗产穿越 0）位于约西偏 2–3 公里的坐标范围，与临时场地边界仅有约 140 米交叠；直接裁切会丢弃约 95% 的真实网络。为避免坐标平移或编造，本方案采取**方法优先**：真实 Physarum 结果作为**方法验证证据**进入图件、`sources.json` 与正文，不作为正式几何、不作为红线、不作审批依据 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。
+**边界与坐标的诚实声明（方法优先）**：本提交的正式几何图层（`geometry/*.geojson`）使用 `brief/site-package/geometry/provisional_boundaries.geojson` 的临时边界，并在其中生成**概念路网**（`agent_generated_design`）。作者此前用真实黏菌 + NSGA-II 跑出的路网（167 边、最优效率 19.20、遗产目标 f3≡f2）位于约西偏 2–3 公里的坐标范围，与临时场地边界仅有约 140 米交叠；直接裁切会丢弃约 95% 的真实网络。为避免坐标平移或编造，本方案采取**方法优先**：真实 Physarum 结果作为**方法验证证据**进入图件、`sources.json` 与正文，不作为正式几何、不作为红线、不作审批依据 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。
 
 本次方案的可评分状态为：**临时边界，保留精度警示并待正式数据发布后复算；不阻断内容评分**。正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界与重点区 polygon 更新后，agent 必须重新运行脚手架、自检和图纸/HTML生成，不能只替换单个文件。
 
@@ -116,7 +116,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **绿廊（greenway）**：沿京张遗址公园活力带两侧的蓝绿复合廊道，衔接步道、骑行道与绿色空间。
 - **站点接驳（transit_connection）**：大钟寺站一体化接驳轴。
 
-**方法验证证据（不进入正式几何）**：作者的真实 Physarum + NSGA-II 运行得到 167 边自适应网络，最优效率指数 19.20、Run7 冻结目标 2.802、基线效率 1.143，且**遗产穿越数为 0**（目标 f3≡f2，遗产影响与造价耦合）[metric:physarum_efficiency_index] [metric:physarum_heritage_crossing_count]。该结果因坐标偏移约 2–3 公里，仅作为方法层面的收敛与约束行为证据，不冒充本场地红线或审批几何，详见 `assumptions.json` 与风险章节。
+**方法验证证据（不进入正式几何）**：作者的真实 Physarum + NSGA-II 运行得到 167 边自适应网络，最优效率指数 19.20、Run7 冻结目标 2.802、基线效率 1.143。关于遗产目标需如实说明：本场地公开资料包未提供带非默认 heritage_factor 的官方遗产几何，导致四目标中的 f3（遗产影响）在计算上退化为 f2（造价），即 f3≡f2；因此该运行记录的『遗产穿越 0』只是 g1 硬约束（protection_scope 穿越边数恒为 0）在方法层面的约束行为观测，**不构成场地内独立的遗产保护合规结论** [metric:physarum_efficiency_index] [metric:physarum_heritage_crossing_count]。该结果因坐标偏移约 2–3 公里，仅作为方法层面的收敛与约束行为证据，不冒充本场地红线或审批几何；场地内 `geometry/constraints.geojson` 因缺少官方遗产几何保持空集，待官方数据到位后重算，详见 `assumptions.json` 与风险章节。
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
@@ -153,7 +153,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - 最优效率指数 19.20 [metric:physarum_efficiency_index]
 - 基线效率 1.143 [metric:physarum_baseline_efficiency]
 - Run7 冻结目标 2.802 [metric:physarum_run7_frozen_objective]
-- 遗产穿越数 0 [metric:physarum_heritage_crossing_count]
+- 遗产目标约束行为：f3≡f2（遗产影响退化为造价），g1 protection_scope 穿越数 0，非场地独立遗产结论 [metric:physarum_heritage_crossing_count]
 - 推荐方案 Plan03 城市融合 UDS 80.34 [metric:physarum_recommended_plan_uds]
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
@@ -164,7 +164,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **要求双语言。** 本方案主文件使用中文，通过 `proposal.en.md` 提供完整对照译文；A3/A0、HTML 和含文字图件也提供对应语言副本 [source:SITE-PACKAGE]。
 
-**坐标偏移与遗产保护的诚实声明**：真实 Physarum 运行结果位于临时边界以西约 2–3 公里，与本场地边界仅有约 140 米交叠。本方案未做任何坐标平移或编造，将真实结果降级为方法验证证据；正式几何采用临时边界内的概念路网。遗产保护（HERITAGE_PROTECTION）为 `editable_by_agent=false` 的锁定图层，公开场地包中无可引用官方几何，故 `geometry/constraints.geojson` 刻意保持空集合，遗产边界进入 `sources.json`/`assumptions.json` 声明而不进入约束图层 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS]。
+**坐标偏移与遗产保护的诚实声明**：真实 Physarum 运行结果位于临时边界以西约 2–3 公里，与本场地边界仅有约 140 米交叠。本方案未做任何坐标平移或编造，将真实结果降级为方法验证证据；正式几何采用临时边界内的概念路网。遗产保护（HERITAGE_PROTECTION）为 `editable_by_agent=false` 的锁定图层，公开场地包中无可引用官方几何，故 `geometry/constraints.geojson` 刻意保持空集合，遗产边界进入 `sources.json`/`assumptions.json` 声明而不进入约束图层；四目标中的 f3（遗产影响）因官方遗产几何缺失退化为 f2（造价），f3≡f2，本方案不据此把『遗产零穿越』宣称为场地内独立的遗产保护合规结论 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS]。
 
 本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。所有图片、图纸、图标、数据和代码资产在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不跟踪评审者行为。
 

@@ -20,6 +20,12 @@
       "impact": "geometry/constraints.geojson is intentionally kept as an empty set. The heritage boundary is declared in sources.json and this assumption rather than injected as an official_constraint; an empty set is preferred over fabrication."
     },
     {
+      "id": "A-HERITAGE-002",
+      "status": "pending_professional_confirmation",
+      "statement": "The public site package provides no official heritage geometry with a non-default heritage_factor, so the four-objective f3 (heritage impact) degenerates to f2 (cost) in computation — i.e. f3≡f2.",
+      "impact": "The recorded '0 heritage crossings' in the Physarum run is only the g1 hard-constraint behavior (protection_scope crossing count is always 0) at method level. It is NOT an independent in-site heritage-protection compliance conclusion; in-site heritage compliance remains unmeasured pending official heritage geometry."
+    },
+    {
       "id": "A-PROVISIONAL-BOUNDARY-001",
       "status": "pending_professional_confirmation",
       "statement": "The site boundary and three key areas are provisional (geometry_role=provisional_constraint, official_boundary=false), sourced from brief/site-package/geometry/provisional_boundaries.geojson.",

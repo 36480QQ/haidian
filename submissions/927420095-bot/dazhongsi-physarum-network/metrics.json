@@ -135,11 +135,12 @@
       "source_files": [
         "simulation.json"
       ],
-      "formula": "count(heritage boundary crossings) of the real Physarum network (method validation)",
+      "formula": "g1 hard-constraint protection_scope crossing count (always 0) of the real Physarum network; observed at method level only, not an independent site heritage-protection metric",
       "confidence": "medium",
       "assumptions": [
-        "Method-validation evidence; zero crossings arises from f3=f2 coupling (heritage impact coupled to cost)."
-      ]
+        "Off-site method validation only. The public site package provides no official heritage geometry with a non-default heritage_factor, so the four-objective f3 (heritage impact) degenerates to f2 (cost) — i.e. f3≡f2. The recorded 0 is therefore the g1 hard-constraint behavior (protection_scope crossing count is always 0), NOT an independent heritage-protection compliance conclusion for this site."
+      ],
+      "note": "Provisional; off-site method validation only. Does not constitute an in-site heritage-protection compliance conclusion."
     },
     "physarum_recommended_plan_uds": {
       "status": "known",
