@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-15T01:52:54-07:00",
+  "generated_at": "2026-08-15T02:22:47-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,7 +28,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f0ad0d157ed0898074c92ab5ea60ba08a75def73192ab1e1790d4fea889d828c"
+      "sha256": "ae6fa6c0cda8e75fac6a5cc45a5876d5eaea73976b62594801cfc78a36cec718"
     },
     {
       "path": "agent.json",
@@ -62,14 +62,14 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "e9af12fc7768b89c2f7207e2acff871ef6199ba8bdb7f616319374c259e8e49c",
+      "sha256": "e8969b7ce7933996f4d746a403b2c0843a14481ec5f6816a2b1e73701d189625",
       "language": "neutral"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d01f41ead3a340f15e243a91e139cc63b57e00bdc55e652b89c27d457ecbb39d",
+      "sha256": "48c6bddd4d0cc7aaec7c88ca77badac94696d4acb73f14f2a41f7a3a16b11db2",
       "language": "neutral"
     },
     {
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "69f3701ab7b31226bf753e07a20b57b7448cea0b2c7e47330488f16710e309a6"
+      "sha256": "eecc289432ca9d78f8d463ce73783ff21b3ab9b8ab342ed53eb83ab8035441d2"
     },
     {
       "path": "report/narrative.md",
@@ -266,7 +266,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "68b54da5215641d373134a38f5df95331b3bc556092833f66fce4a755d131768"
+      "sha256": "cfa78c9ac9e1e2c91bfdcd5339625f8836854c765238536e017a6eea9a8f42c1"
     },
     {
       "path": "visual/assets/verify.js",
@@ -834,7 +834,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "f8a64f236ac84e9f771264960b14a70c0979aa55463b211ef716c602c514c960"
+      "sha256": "7324a5ee42fd86bee977235934ff2d90fecbe95363da44747e1e55f48e71b07b"
     },
     {
       "path": "visual/assets/claim_audit.json",

@@ -167,7 +167,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 47 mutations, 26 of 30 gates proven able to fail, 4 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 48 mutations, 26 of 30 gates proven able to fail, 4 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -175,7 +175,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 47 deliberate defects across 26 of 30 gates, all caught and all named by the gate that caught them; 4 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 48 deliberate defects across 26 of 30 gates, all caught and all named by the gate that caught them; 4 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -255,7 +255,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "sources_qa.py — sources: 22 records, one vocabulary, every one answering the same 12 core fields, and none claiming a class its own fields rule out (background_only 10, official_context 5, regulatory_baseline 5, provisional 2); every FIG.24 envelope bound can back its own class, 4 of them by admitting there is nothing to back it with; 2 prose limit(s) taken from a standard, each naming it or saying it was never obtained; 2 scope declaration(s) naming a bound this package chooses, each admitting it; 88 descriptive field(s) across 22 sources are readable in both languages — what each source is, how it was obtained, what may be reused, and what it is used for; 20 sources graded on the organisers' A0-A3 scale with a timeliness level, 2 declared outside it with reasons, none in X; 284 answers across 22 sources to the 13 fields the organisers' rules require before indexing; 21 of 22 traceable to a public URL, the rest saying the document was never obtained; 6 international cases joined to their case-table rows by label"
+      "message": "sources_qa.py — sources: 22 records, one vocabulary, every one answering the same 12 core fields, and none claiming a class its own fields rule out (background_only 10, official_context 5, regulatory_baseline 5, provisional 2); every FIG.24 envelope bound can back its own class, 4 of them by admitting there is nothing to back it with; 2 prose limit(s) taken from a standard, each naming it or saying it was never obtained; 2 scope declaration(s) naming a bound this package chooses, each admitting it; 88 descriptive field(s) across 22 sources are readable in both languages — what each source is, how it was obtained, what may be reused, and what it is used for; 20 sources graded on the organisers' A0-A3 scale with a timeliness level, 2 declared outside it with reasons, none in X; 284 answers across 22 sources to the 13 fields the organisers' rules require before indexing; all 22 records state what they cannot support, 22 distinct statements; 21 of 22 traceable to a public URL, the rest saying the document was never obtained; 6 international cases joined to their case-table rows by label"
     },
     {
       "check_id": "PKG_STALE_CORPUS_QA",
@@ -319,7 +319,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：47 处人为缺陷，覆盖 26 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 47 deliberate defects across 26 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：48 处人为缺陷，覆盖 26 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 48 deliberate defects across 26 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,

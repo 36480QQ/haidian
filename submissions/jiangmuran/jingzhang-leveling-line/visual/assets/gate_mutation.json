@@ -292,6 +292,18 @@
       "why_en": "Pointing E90's question at the prose turned up exactly this one, and this one is an instruction **for someone else to carry out**: the row exists because the field's qualitative 「noise nuisance」 cannot determine exceedance, and 「use the national standard value」 with no standard named cannot either. The package names law, article and a resolving tag everywhere else."
     },
     {
+      "id": "M48",
+      "gate": "sources_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一条来源的「不支持什么」换成一句放之四海皆准的套话。",
+      "what_en": "Replace one source's statement of what it cannot support with a sentence true of every source.",
+      "why_zh": "**字段填满了，登记表却什么也没说。** 一句 22 条通用的话，证明的只是这个字段存在，而这个字段存在的全部意义，是逼着人为每一份来源想清楚它会引来哪一种越界。因此闸门要求每条陈述互不相同——套话与空白同样是没写。",
+      "why_en": "**The field is filled and the register says nothing.** A sentence true of all 22 records establishes only that the field exists, and the entire point of the field is to make someone work out, per source, which overreach that source invites. So the gate requires the statements to be distinct: boilerplate is as empty as a blank."
+    },
+    {
       "id": "M47",
       "gate": "calendar_parity_qa.py",
       "target": "visual/assets/year_explorer.js",
@@ -571,7 +583,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 47,
+  "caught": 48,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
