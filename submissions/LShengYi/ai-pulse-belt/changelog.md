@@ -1,3 +1,11 @@
+## v10.14.0（2026-08-15）
+
+- **合规修复轮（针对 80 分评审意见定向修复，修复即增补）**：v10.13.0 得 80（PR #2745 MERGED 2026-08-15）。双向代理对照（ai_review_submission.py --dry-run 构建 v10.13.0 完整评审输入，代理模型逐维度评分）定位失分在 risk_compliance 4/5 + implementation_feasibility 4/5，逐项修复：
+  - **needs_review 来源降级**：HAIDIAN-URBAN-RENEWAL-2025（海淀区城市更新导则，status=needs_review）从实施路径全部引用中移除——表 B4 lead-in 改为概念模块语态（"示意性序号，非官方模块清单"），实施章语句改为"参照公开征集组织材料与现行城市更新实践（概念建议，不声称依据任何官方导则）"；sources.json 该条目降级为仅存档（usable_for=["registry/archive record"]，not_usable_for 明列实施路径六项）。
+  - **无人机规章更新为 2026 版**：原引《北京市无人驾驶航空器管理若干规定》（2024-06-01 施行）已过时；现行有效为《北京市无人驾驶航空器管理规定》（北京市人大常委会公告〔十六届〕第 50 号，2026-03-27 通过，2026-05-01 施行，北京全域为管制空域、室外飞行均须申请）。场景卡 06、条款级④、sources.json、standard_matrix.json 全部同步，并增补"低空配送仅在其获批航线内运行"（全域管制空域=空域审批是真正硬性的放行门，强化 risk_compliance）。
+  - **指标计数统一**：design_depth_matrix.json "59 项指标中 44 项 known"→"76 项指标中 61 项 known"（与 metrics.json 76 项/61 known 一致），消除 structured matrix 与 metrics.json 不一致的失分点。
+  - 双语同步（zh/en 三处一一对应）；en 压缩保持 262144 字节硬限（终稿 262126）；版本串连锁 v10.13.0→v10.14.0（frontmatter iteration 18→19，gen_01 ITERATION / gen_03 REV / gen_04 / gen_05 footer / gen_simulation SEED=v10.14.0-aipulsebelt-rehearsal 同步）。
+
 ## v10.13.0（2026-08-15）
 
 - **机制稀缺自检与实施路径深化轮（86 分基线上继续提分）**：v10.12.0 得 86（PR #2726 MERGED 2026-08-15，历史最高）。对照 8/15 最新 88/87 分案例（EthanHuangEbor / Sonike / jiangmuran）做全文结构 diff，补齐高分案例共有的三块结构——**本轮纯增补，一行不删**：
