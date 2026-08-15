@@ -399,6 +399,20 @@
    "local_copy": "visual/assets/seb-license-grant.json",
    "local_copy_sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
    "local_copy_note": "local_copy_sha256 为 plain_text 字段按 UTF-8 重建后的内容哈希，与官方 legalcode.txt 一致 / hash of the plain_text field rebuilt as UTF-8, identical to the official legalcode.txt"
+  },
+  {
+   "id": "GB-55019-2021-ACCESSIBILITY-CODE",
+   "title": "GB 55019-2021 建筑与市政工程无障碍通用规范（强制性工程建设规范）",
+   "publisher": "中华人民共和国住房和城乡建设部（发布）",
+   "url": "https://www.mohurd.gov.cn/gongkai/zhengce/zhengcefilelib/202112/20211202_763360.html",
+   "accessed_date": "2026-08-15",
+   "source_type": "official_public",
+   "usage": "OP-04 节点深化图版与九十天实施包的无障碍技术依据框架之一（通行净宽、坡道、缘石坡道、盲道等要素的规范体系指针）。本包只引用其作为依据框架，图上全部数值为设计目标值而非条文摘录，条文以官方发布文本为准；现场审计前不构成合规结论。The accessibility code framing the OP-04 detailing plate and implementation pack; the package cites it as a framework only — all figures on the plate are design targets, the official text prevails, and no compliance conclusion exists before a site audit.",
+   "license": "官方公开发布的国家工程建设规范 / officially published national code",
+   "license_url": "",
+   "local_copy": "",
+   "local_copy_sha256": "",
+   "local_copy_note": "未随包收录规范文本；本包不摘录条文，仅登记依据指针 / no code text ships with the package; the package excerpts no clause and registers a pointer only"
   }
  ]
 }

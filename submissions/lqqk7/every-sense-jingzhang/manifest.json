@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.25 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v5.26 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c105017376af60f0659094c102b0bfde0db87908ba43d385efec03a9d62a6a62"
+      "sha256": "fc4432f9af63d62cc51399a91bd289fa19fb0733f4b0a4857df36bef4332eb71"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "6b9c9f911ef423f4d0eb292e9702f4932c02b9d3a5522d955654ed16a8a96071"
+      "sha256": "ce14163423a508c62631e391093dd3ee14e7a1478f3fff41b0dc7fbb3859d641"
     },
     {
       "path": "metrics.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "6d021c73fd2cafe7238933831011cb003db3dfa4f11ec2165759bab71b0ae6c1"
+      "sha256": "486eb5e207a8e8e22358b4e24a967da65c6821e1320b651e9182d5bcc134778f"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e471a944d06198d83b1a614aebf6c58a63f7dac9d6f0bf07b4483566116c370c"
+      "sha256": "f05faa1b1555372d37e4d1362b477112e29b20ce8e1f3217258b4168b070bf26"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c947989f6d97f3f0d78574e01f6106f4aa122aebfc469eaf788eaffaef0aa1d3"
+      "sha256": "452087cfac237076391cde9405dec4e7d150a2a18360a659db3359226eae13e6"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b2023d677da4678dd1d8d19295112286fd1a1df6c4c6251da397ed429575b865"
+      "sha256": "44f9d41b33687ca067c21ad0586d728153267c4ed6dab4671926d5b39cc44a07"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6bdccd100f0b38ce0b8ef826199dde1d24d9cfc59deb5d62d0efcc4044b32406"
+      "sha256": "64b93d73e3f0d68287d6c7e3f712665372d9dee1ad77a08ae73fda3c33da5b28"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b887ce863e9ad8d3a9ce3f8a265f4123697c6dbbbf2566457f54f12f2a9a0e4e"
+      "sha256": "34d206f8c42ca66fcbd1d708c6802bb10919fdf8066cf4042d30b2c3d6b5a52d"
     },
     {
       "path": "visual/index.html",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7ba055c895e3da316d19c5b0f65c216180a9ea570ccab355ff60de3f6541e775"
+      "sha256": "6b51f2662393abd10fc53167e47c7e3f2925959b3a43529aed157e952cda042a"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5d92c8629e85d9db3ee075d5a5e6510b900a97eb520f38f700d9000cc6504fd6"
+      "sha256": "f60a0c62f80eac5a69af06252b19c0b312acf126f1b93a54ca3fd8525d3d5eb1"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "108a2446a375d109519bc94cc8869c70d8e024fa4e87808a7cac48bb44157b9f"
+      "sha256": "6cda5f17178c96407d1bd810258e8085c547cca7debea7e612cda765b9c03eaf"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "1cdb4488481bb1c60e8772438d2d76914f4c7332a40e0e8a74bd62ebcef47850"
+      "sha256": "3e1506a98ba96114a3e63f22d28eb8c4e4539dde8f24054e1a71f31f678b57e3"
     },
     {
       "path": "visual/index.en.html",
@@ -314,6 +314,25 @@
       "language": "en",
       "translation_of": "assets/figures/ecosystem-map.png",
       "sha256": "4429697ffedb39c4a023710b40215f10cbc2447a2ae8df91d060727bfb6c7956"
+    },
+    {
+      "path": "assets/figures/op04-detail.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "OP-04 节点深化图版（1:500 总平 / 1:200 缝合区 / 1:50 断面 / 八要素卡）",
+      "title_en": "OP-04 node detailing plate (1:500 plan / 1:200 stitch zone / 1:50 section / eight element cards)",
+      "sha256": "f9d054226f31295f25cb0525a27dee35ce0cc77ccd9bea658d0f35564954c12e"
+    },
+    {
+      "path": "assets/figures/op04-detail.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/op04-detail.png",
+      "title_zh": "OP-04 节点深化图版（英文版）",
+      "title_en": "OP-04 node detailing plate (English edition)",
+      "sha256": "8c76031ae0e19224464db2875dc3cb6fb695dafea542632a9b77f90b7d1fa5d4"
     },
     {
       "path": "assets/figures/section-profiles.png",
@@ -454,7 +473,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "5d4c6553186b4bdde88df59c5e925c8553f38f1706a8d8f5f6cf34f890bb28d0"
+      "sha256": "ee735750a8f65f77d76dd77ccc16c14d4c82826e8a641ea1eccf2c1c7fc2f4ba"
     },
     {
       "path": "assets/media/cover.webp",
@@ -595,7 +614,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "fbcce26719a1f5c921ba29e7f228cbce1ee8f1caa2553691ffca4fbba7c7fb6f"
+      "sha256": "a313d95e31447ff74ebea56e679bfd70fa6cac782553b2dd5837ad1a511cadc7"
     },
     {
       "path": "visual/assets/scene-provenance.json",
@@ -650,6 +669,24 @@
       "title_zh": "OP-04 配对试点全过程链路数据档案(桌面复演)",
       "title_en": "OP-04 paired-pilot full-process chain archive (tabletop replay)",
       "sha256": "8ed7590a5a5767ee6a209ad622114b529ac7c6d91f19806dfb790b2b50ede46b"
+    },
+    {
+      "path": "visual/assets/seb-op04-90day-pack.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OP-04 节点九十天实施包（概念级：条件序列分期、双分支预算、采购、RACI、班表、投保建议、维护与退出）",
+      "title_en": "OP-04 ninety-day implementation pack (concept-level: conditional phasing, two-branch budget, procurement, RACI, rosters, insurance suggestions, maintenance and exit)",
+      "sha256": "f834f67dcf29119d94fb39226419c57305fe29f3ba0e6d71ee0a35dd0576261e"
+    },
+    {
+      "path": "visual/assets/op04-pilot-readiness.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OP-04 场地与运营主体对接就绪材料（就绪待发；如实登记无既有接触、无既有意向）",
+      "title_en": "OP-04 site and operator outreach-readiness material (ready to send; no prior contact and no existing intent, registered as fact)",
+      "sha256": "9319e0e1a4431f611ccccde553656f8d0bba2a4afd20f8a595873dbc476d07cf"
     },
     {
       "path": "visual/assets/seb-op04-chain-run.js",
