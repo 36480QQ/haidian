@@ -78,5 +78,43 @@
     ]
   },
   "ok": true,
-  "can_enter_formal_review": true
+  "can_enter_formal_review": true,
+  "submission_dir": "submissions/DLucxoket/centennial-jingzhang-ai-belt",
+  "pr_author": "DLucxoket",
+  "stage": "formal",
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": "Deterministic validation: PASS",
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": "Spatial review: PASS",
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": "Visual packaging check: PASS",
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": "Professional evidence review: PASS",
+    "stderr": ""
+  }
 }

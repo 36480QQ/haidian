@@ -4,9 +4,7 @@ author_github: "DLucxoket"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
-bilingual_contract_version: "1"
 summary: "以京张铁路百年基因为脉、AI智能为血，构建'一带三核五廊道'的共生型AI创新城区。融合五道门治理机制、开发者散步道、四可检验框架与街区尺度优化。方案覆盖统筹研究、总体设计、三处重点区域详细设计，回应六大Agent任务，提出20个AI场景、5类用户画像、3个朝圣地标与品牌吉祥物'脉脉'。"
-summary_en: "Using the century-old Jing-Zhang Railway as the arterial backbone and AI intelligence as the lifeblood, this proposal constructs a symbiotic AI innovation district with 'one corridor, three cores, five corridors.' It integrates the Five-Gate governance mechanism, Developer's Walk, Four-Verifiability framework, and block-scale optimization. The proposal covers overall research, master design, and detailed design for three key areas, responding to six Agent tasks with 20 AI scenarios, 5 user personas, 3 pilgrimage landmarks, and the brand mascot 'Xiao Zhi.'"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide", "ai-health-service-navigation", "robot-delivery-low-speed"]
 ---
@@ -31,12 +29,12 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 设计依据与资料清单
 
-方案以北京市规划和自然资源委员会海淀分局发布的资格预审公告为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以 `brief/site-package/` 中的 `design_brief.json`、`agent_taskbook.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/planning_limits.json`、`standards/standards.json` 为机器可读约束 [source:SITE-PACKAGE]。来源登记 `data/source_registry.json` 区分 `usable_for_formal="yes"`、`background_only`、`provisional_only` 三类 [source:SOURCE-REGISTRY]。`data/processed/agent_fact_pack.md` 为本方案的阅读导航层 [source:PROCESSED-FACT-PACK]。
+方案以北京市规划和自然资源委员会海淀分局发布的资格预审公告为第一依据 [source:OFFICIAL-ANNOUNCEMENT] `brief/site-package/` 中的 `design_brief.json`、`agent_taskbook.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/planning_limits.json`、`standards/standards.json` 为机器可读约束 [source:SITE-PACKAGE]。来源登记 `data/source_registry.json` 区分 `usable_for_formal="yes"`、`background_only`、`provisional_only` 三类 [source:SOURCE-REGISTRY]。`data/processed/agent_fact_pack.md` 为本方案的阅读导航层。
 
 当前状态：
 - **统筹研究范围**：约 43.6 km² [source:OFFICIAL-ANNOUNCEMENT]
 - **总体设计范围**：约 11.4 km²（本包临时边界复算 11,412,825 m²）[metric:site_area_sqm]
-- **三处重点区域**：众智园约 192.1 ha、AI原点社区约 104.3 ha、大钟寺约 72.0 ha（均基于 provisional boundary）[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/key_areas.geojson#KEY-001] [depth:three_key_area_detailed_design]
+- **三处重点区域**：众智园约 192.1 ha、AI原点社区约 104.3 ha、大钟寺约 72.0 ha（均基于 provisional boundary）[source:BOUNDARY-SOURCE] [data:geometry/key_areas.geojson#KEY-001] [depth:three_key_area_detailed_design]
 
 ![三层范围与用地结构](assets/figures/land-use-structure.png)
 
@@ -234,7 +232,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 交通设施 | 轨道站点、公交枢纽、停车 | TOD节点一体化开发 |
 | 混合用地 | 创新+商业+居住复合 | 三核核心区的弹性用地 |
 
-[depth:land_use_layout] [data:geometry/land_use.geojson#LU-001]
+[depth:land_use_layout]
 
 ### 街区尺度优化
 
@@ -273,7 +271,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-总体设计范围约11.4平方公里（本包临时边界复算11,412,825 m²），以京张遗址公园为南北主轴，形成"一带串三核、五廊连多点"的空间结构。用地按"创新-生活-服务-生态"四类组织，研发用地占比最高，体现AI创新带的核心功能定位；绿地沿京张遗址公园形成连续绿脊，保障生态和公共空间品质。开发强度指标待正式控规条件确认，概念方案建议研发用地容积率2.0-3.5，商业服务用地容积率2.5-4.0，居住用地容积率2.0-2.5。[depth:overall_spatial_structure] [depth:land_use_layout] [depth:development_intensity_controls] [data:geometry/land_use.geojson#LU-001] [metric:site_area_sqm]
+总体设计范围约11.4平方公里（本包临时边界复算11,412,825 m²），以京张遗址公园为南北主轴，形成"一带串三核、五廊连多点"的空间结构。用地按"创新-生活-服务-生态"四类组织，研发用地占比最高，体现AI创新带的核心功能定位；绿地沿京张遗址公园形成连续绿脊，保障生态和公共空间品质。开发强度指标待正式控规条件确认，概念方案建议研发用地容积率2.0-3.5，商业服务用地容积率2.5-4.0，居住用地容积率2.0-2.5。[depth:overall_spatial_structure] [depth:land_use_layout] [data:geometry/land_use.geojson#LU-001]
 
 街区尺度参考"毛细京张"理念，重点区域采用110-180米街区、18米支路、11米巷道的窄马路密路网模式，提升步行友好性和AI调度效率。总体设计范围的更新项目详见下节。，形成"一带串三核、五廊连多点"的空间结构。用地按"创新-生活-服务-生态"四类组织，开发强度指标待正式控规条件确认。[depth:overall_spatial_structure] [depth:land_use_layout] [depth:development_intensity_controls]
 
