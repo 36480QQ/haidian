@@ -266,7 +266,13 @@ Detailed design of the three key areas is mandatory, covering functional formats
 
 The three districts are seriated along the 9km Intelligence Corridor — Zhongzhi (Origin) → AI Origin (Transform) → Dazhongsi (Apply) — forming a complete AI innovation chain; the design language is unified (Ren-shape motif / three-color system / AI station kit), and the scale transitions north-to-south from large industrial blocks to human-scale commercial streets.
 
-![Key areas detailed design](assets/figures/key-areas.en.png)
+![Key areas detailed design (overview)](assets/figures/key-areas.en.png)
+
+![Zhongzhi Park AI Independent Innovation Accelerator — district design plan (detail)](assets/figures/area-zhongzhi-masterplan.png)
+
+![Beijing AI Origin Community — district design plan (detail)](assets/figures/area-origin-masterplan.png)
+
+![Dazhongsi AI Industry Cluster — district design plan (detail)](assets/figures/area-dazhongsi-masterplan.png)
 
 ## AI Innovation Ecosystem, Talent Personas and AI+ Scenarios
 
@@ -401,6 +407,23 @@ The land use plan follows public standards for territorial survey, planning and 
 - **Recalculation path**: once official FAR control and floor-area census are published, all scenario values are recomputed in EPSG:4548.
 
 ![Building-scale scenario derivation chain](assets/figures/p5-3_volume_chain.en.png)
+
+**Building retain-renovate-update-new classification framework (concept, pending current-status data)**: building disposition is classified into four categories — **Retain**, **Renovate**, **Update**, **New** — judged in the order "heritage value > structural safety > economic viability > industry fit" [depth:retain_renovate_demolish] [standard:MOHURD-CONTROL-DETAILED-PLANNING]:
+
+- **Retain**: railway heritage, industrial relics (former factories, locomotive depots, signal towers), fine historic buildings and rail-corridor imagery — preserved in place and adaptively reused as cultural memory carriers (e.g. Jing-Zhang Railway Heritage Park corridor facilities, Qinghuayuan Station).
+- **Renovate**: older buildings with sound structure but mismatched function — "retain-and-renovate" first, upgrading value through functional conversion (industry services, talent housing, public facilities) and facade/energy retrofits, avoiding large-scale demolition; includes low-efficiency commercial stock iterating toward smart consumption (e.g. Dazhongsi 1733 flagship cluster).
+- **Update**: low-efficiency land and vacant parcels — redeveloped via a mix of demolition and renovation to release industrial space (e.g. Qinghe innovation interface belt, low-efficiency industrial land north of Zhongzhi Park).
+- **New**: vacant parcels and new carriers — mainly AI-scenario architecture (Full-Stack Sanctuary, pilgrimage landmarks) and public-space construction, a smaller share of total new floor area.
+
+**Three-district retain-renovate-update-new orientation (conceptual assumption, NOT an official regulatory conclusion)**:
+
+| District | Retain | Renovate | Update | New | Note |
+|---|---|---|---|---|---|
+| Zhongzhi Park AI Independent Innovation Accelerator | Medium | High | Medium | Low | Industrial-relic activation + low-efficiency industrial land redevelopment; new construction concentrated on landmark carriers such as the Full-Stack Sanctuary |
+| Beijing AI Origin Community | Medium | High | Medium | Low | Functional conversion and quality upgrade of older near-campus blocks; campus boundaries and community fabric preserved |
+| Dazhongsi AI Industry Cluster | Low | High | Medium | Low | Stock-commercial retrofit and smart-consumption iteration; the Dazhongsi heritage structure itself retained |
+
+- **Data-gap statement**: parcel-level retain-renovate-update-new conclusions require current building census, ownership, structural survey and regulatory conditions; before official data are published, the table above is a **conceptual orientation only** and constitutes no engineering demolition, retrofit or retention decision [depth:risk_missing_data].
 
 ## Transport, Rail, Municipal and Public Services
 
