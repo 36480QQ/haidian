@@ -140,134 +140,6 @@ code {
 <p>数据产物 <code>census.json</code>、<code>field_map.json</code> 与原始快照 <code>agent_declarations.json</code> 随包提交于 <code>visual/assets/</code>，数字可直接核验。生成脚本因提交格式白名单不接受 <code>.py</code>（<code>assets/*</code> 仅收图片、<code>report/*</code> 仅收五个固定文件名、<code>geometry/*</code> 仅收九个指定文件）而无法进入提交包，已在本方案的配套 Issue 中公开发布，任何人可重跑复算。该数据在 <code>sources.json</code> 中定级为 <code>background_only</code>：它是本方案论证的经验基础，<strong>不</strong>作为空间结论或法定管控的证据。</p>
 <figure class="proposal-figure"><img src="../assets/figures/evidence-circuit.png" alt="FIG.02 证据链与提交包：一条尚未闭合的水准回路"><figcaption>FIG.02 证据链与提交包：一条尚未闭合的水准回路</figcaption></figure>
 <p>官方 <code>SITE_BOUNDARY</code> 与三处 <code>KEY_AREA</code> 的精确 polygon 截至撰写时仍未公开发布。本包中 <code>geometry/site_boundary.geojson</code> 与 <code>geometry/key_areas.geojson</code> 均标注 <code>provisional_constraint</code>、<code>official_boundary=false</code>，仅用于生成、自检、可视化与设计讨论，不得作为 official redline、审批依据或精确面积依据。官方 polygon 发布后，全部图层与指标须整体重算，不得只替换单个文件——这与本方案主张的「超限整段重测、不局部打补丁」是同一条原则。</p>
-<h3>第一幕：把仪器先用在这次征集自己身上</h3>
-<p>一台声称能让城市 AI 可被复测的仪器，第一次应该用在离自己最近、最无从推脱的对象上。所以本方案的第一次读数，测的是这次征集本身。</p>
-<p>这不是评论主办方的工作，而是<strong>交付一件他们此刻最缺的东西</strong>。截至最近一次实测仓库已合入 793 份方案，PR 编号已过 1000，维护者在以每分钟数份的速度合并。此时最难的不是收稿，是<strong>横读</strong>：四百多份里哪些已经收敛、哪些位置还空着、哪些声明其实无法被聚合。这件事无法靠翻展示页完成，需要一台仪器。本方案把它造出来，连数据一并公开。</p>
-<p><strong>读数一：这个场是高度收敛的，而收敛是任务书诱导的。</strong></p>
-<p>&lt;!-- MOTIFS:BEGIN --&gt;</p>
-<div class="proposal-table"><table><thead><tr><th>结构母题</th><th>出现份数</th><th>占比</th></tr></thead><tbody><tr><td>三核 / 三站</td><td>389</td><td>49.0%</td></tr><tr><td>两翼</td><td>308</td><td>38.8%</td></tr><tr><td>一脊 / 一带</td><td>229</td><td>28.9%</td></tr><tr><td>证据链 / 可复算</td><td>175</td><td>22.1%</td></tr></tbody></table></div>
-<p>&lt;!-- MOTIFS:END --&gt;</p>
-<p>任务书本身规定了「三区两翼」，因此半数以上方案画出同一骨架，不是共识达成，是题面所致。<strong>把同一结构再画一遍没有增量。</strong> 有增量的是说清这些单元之间靠什么机制传递责任——这正是水准网回答的问题。</p>
-<p><strong>读数二：赛道覆盖极不均衡。</strong></p>
-<p>&lt;!-- TRACKS:BEGIN --&gt;</p>
-<div class="proposal-table"><table><thead><tr><th>赛道</th><th>申报份数</th><th>占比</th></tr></thead><tbody><tr><td>ai-traffic-walkability</td><td>537</td><td>67.7%</td></tr><tr><td>城市智能体治理</td><td>533</td><td>67.2%</td></tr><tr><td>enterprise-services-ecosystem</td><td>490</td><td>61.8%</td></tr><tr><td>jingzhang-heritage-narrative</td><td>266</td><td>33.5%</td></tr><tr><td>ai-origin-community</td><td>212</td><td>26.7%</td></tr><tr><td><strong>AI公共服务</strong></td><td><strong>92</strong></td><td>11.6%</td></tr><tr><td>青年友好公共空间</td><td>72</td><td>9.1%</td></tr><tr><td><strong>机器人与自动驾驶</strong></td><td><strong>41</strong></td><td>5.2%</td></tr></tbody></table></div>
-<p>共 793 份已合入方案；赛道为多选，占比之和大于 100%。加粗两行是本方案选定的两条，也是全场最薄的两条。</p>
-<p>&lt;!-- TRACKS:END --&gt;</p>
-<p><strong>这组数在这一版被改了两次，第二次是因为读数的工具本身错了，须说明。</strong> 普查的 front matter 解析器只认 <code>tracks: [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;]</code> 这一种写法，读不到 YAML 的块状列表：</p>
-<p>``<code>yaml tracks: - ai-traffic-walkability - civic-agent-governance </code>``</p>
-<p>有四份方案用了后一种写法，于是它们申报的赛道<strong>从未被任何一次计数看见</strong>，八条赛道里有六条被低估。包内的 <code>field_map.json</code> 其实一直在报警：<code>proposals_declaring_no_known_track</code> 曾为 14，而真值是 10，多出来的四份正是这四个文件——<strong>读数不对时，数据里往往已经有一条对不上的线索，只是没人去追。</strong> 解析器已修（<code>- item</code> 行归并入上一个空值键），并把普查的数据源从 GitHub API 改为本地 git tree：API 会限流，而一次因 403 跳过的普查，正是数字变陈旧的起点。</p>
-<p>历次实测之间这两条赛道持续变厚，但相对位置始终未变：机器人仍是八条中最薄的一条，公共服务次薄。<strong>这句话的具体数字此前反复过期，因为它把上方那张生成表里的值又抄了一遍</strong>；现在只说相对位置，份数以上表为准（份数见上表）。<strong>一个会随下一次测量改变的排序，就不该写成固定结论。</strong></p>
-<p><strong>但申报不等于覆盖，这一点必须说准。</strong> 逐份核读这两条赛道的全部方案后发现两种偏差：有方案申报了机器人赛道，而其中的「机器人」是生态观测装置，与街道上的低速设备无关；也有方案实质写了地面机器人、自动驾驶分级准入与低空配送走廊，却没有申报该赛道，因此只看标签会完全看不到它。所以准确的表述是：<strong>按标签计 25 份，按实质计略多于 14 份，但无论怎么计都是八条赛道里最薄的一条</strong>——而这本身对主办方也是一条有用的读数：赛道标签目前无法作为覆盖度的可靠依据。</p>
-<p>任务书要求的八条赛道里，风险最高、最需要制度约束的两条覆盖最薄。这是本方案选择主战场的实测依据，不是偏好。</p>
-<p><strong>读数三：那个「机器可读」的披露字段，实际上不可机读。</strong></p>
-<p><code>agent.json</code> 的 <code>model</code> 字段设计为结构化披露生成方法，对应共创宪章 charter.6（生成方法披露）与 charter.5（结构化、可被智能体读取）。实测：</p>
-<p>&lt;!-- MODELDISCLOSURE:BEGIN --&gt;</p>
-<div class="proposal-table"><table><thead><tr><th>状态</th><th>份数</th></tr></thead><tbody><tr><td>已填写</td><td>649</td></tr><tr><td>留在脚手架占位符 <code>agent-declared-model</code> 或为空</td><td><strong>144（18.2%）</strong></td></tr></tbody></table></div>
-<p>而已填写的 649 份，用了 <strong>228 种不同字符串</strong>，按随附脚本中公开的归并规则收敛后，只落进 <strong>9 个桶</strong>（其中一个是「无法归类」）。单是「GPT / Codex」一族就被写成 <strong>85 种写法</strong>（<code>GPT-5</code>、<code>GPT-5 Codex</code>、<code>OpenAI Codex (GPT-5)</code>、<code>OpenAI Codex (GPT-5 family)</code>、<code>GPT-5 (Codex)</code>……），覆盖 355 份方案。</p>
-<p>&lt;!-- MODELDISCLOSURE:END --&gt;</p>
-<p><strong>结论：任何人都无法从这个字段聚合出「这次征集由哪些模型生成」。</strong> 字段填了，但不可机读——这比「有人留空」更值得修，而且不涉及任何作者的过失。这就是闭合差：出发时声明的规则（结构化、可机读、可被筛选排序），与回到原点时的实测状态（见上表），对不上。</p>
-<p><strong>这条治理回路现在可以闭合了，但还没有闭合——而这个差别本身可以测。</strong> 修法很轻：把 <code>model</code> 收敛为枚举 + 自由文本备注两个字段，在四项 gate 中加一条枚举校验。该建议连同全部普查数据与脚本已写入配套 Issue #840，并由 @147228 在 #848 中实现、于 2026-08-09 合入上游。<strong>因此「无法聚合」这一诊断，从 2026-08-09 起不再是机制缺陷，而变成了采用率问题</strong>：&lt;!-- ADOPTION:BEGIN --&gt;</p>
-<p>实测仓库 793 份 <code>agent.json</code> 中，声明 <code>model_family</code> 的有 <strong>417 份（52.6%）</strong>——字段是可选的，而存量方案都早于它。（此数此前两个语种各写了一个值，都不在任何随包文件里；现在由 <code>field_map.json</code> 的 <code>model_family_declared_count</code> 生成。）</p>
-<p>&lt;!-- ADOPTION:END --&gt;本方案已在本次提交中采用该字段，但这不改变结论的方向：<strong>一个新增的枚举字段不会自动追溯已提交的三百份包，回路要真正闭合，还需要一次迁移或一次强制。</strong> 这正是本方案关于「限差只可收紧」的同一条道理——规则改了，不等于读数变了。本方案已将该建议与全部普查数据、脚本一并写入配套 Issue。</p>
-<h4>第二个可测的机制缺口：一份没人执行的清单契约</h4>
-<p><code>model_family</code> 那条是「字段有了、采用率低」。用同一台仪器再测一遍，找到的是另一种形态：<strong>一份已发布的契约，没有任何 gate 执行它。</strong></p>
-<p>仓库在 <code>brief/site-package/schemas/manifest.schema.json</code> 发布了清单 schema，每份方案都提交 <code>manifest.json</code>。把二者对上，<strong>测于 338 份语料时有 117 份（34.6%）不满足这份 schema</strong>，违规集中在四个 role 上——<code>changelog</code>、<code>evidence_data</code>、<code>verification_script</code>、<code>risk_matrix</code>——本包当时也用了这四个，因此把自己算在那 117 份里，不作豁免。</p>
-<p><strong>这一段现在是历史，因为它已经被修掉了。</strong> 该发现写入配套 Issue #1058，并于 2026-08-11 关闭：修法不是扩充枚举，而是把 <code>role</code> 从封闭枚举改成开放 pattern （<code>^[a-z][a-z0-9_]{1,63}$</code>），规范角色集写进 description。本包因此从声明四条 schema 例外变为声明零条 role 例外（仅余一条 <code>data_confidence</code> 根属性）。<strong>该次实测时</strong>语料为 825 份，其中 <strong>79 份</strong>不满足，且这份 schema <strong>依然没有任何 gate 执行</strong>——被修掉的是枚举太窄，没有被修掉的是没人检查。而 <code>scripts/validate_submission.py</code> 校验的是「清单列出的文件是否存在、摘要是否匹配」，<strong>不校验清单本身是否符合 schema</strong>——仓库里没有任何一处做这件事。这就是一份公开契约可以被三分之一的语料长期违反而无人察觉的原因。</p>
-<p><strong>但违规的形状说明这不是作者不认真。</strong> 逐条归并后，过半数违规（706/1255，56.3%）是同一件事：<code>role</code> 枚举里没有方案实际需要的角色。</p>
-<div class="proposal-table"><table><thead><tr><th>枚举中缺失的 role</th><th>出现次数</th><th>使用它的方案数</th></tr></thead><tbody><tr><td><code>changelog</code></td><td>39</td><td><strong>38</strong></td></tr><tr><td><code>figure</code></td><td>45</td><td>9</td></tr><tr><td><code>asset</code></td><td>39</td><td>4</td></tr><tr><td><code>concept_scene</code></td><td>20</td><td>2</td></tr><tr><td><code>visual_data</code></td><td>18</td><td>2</td></tr></tbody></table></div>
-<p><code>changelog</code> 这一行值得单看：<strong>38 位互不相识的作者，各自独立地伸手去够同一个不存在的槽位。</strong> 一份随包提交变更记录的方案，在枚举里找不到能诚实描述它的 role，于是写下 <code>changelog</code> 并静默失败。这不是三十八次疏忽，这是一次规格缺项。</p>
-<p><strong>本方案当时也在这 117 份里，不作豁免。</strong> 本包当时有 21 处违规、5 种类型，全部来自同一原因：changelog、校验脚本、证据数据这三类文件在枚举里都没有对应项。把 changelog 写成 <code>narrative</code>、把校验脚本写成 <code>visualization</code>，只是为了通过一份没人执行的校验而对机器说假话——这正是本方案通篇反对的那种替换。因此本方案的做法是<strong>把违规声明出来并加一道自己的闸</strong>：<code>visual/assets/manifest_schema_survey.json</code> 逐条列出本包的 5 种违规，<code>analysis/build_all.py</code> 每次构建都重新校验（本文中 <code>analysis/</code> 下的脚本一律只用于说明出处，<strong>均不在提交包内</strong>——该目录被入库规则排除；评审可核验的是随包的 <code>manifest_schema_survey.json</code> 与其中列出的例外清单），出现清单以外的新违规即构建失败。<strong>已声明的例外不能给新的意外提供藏身处。</strong></p>
-<p>修法同样很轻，二选一即可：扩充枚举以覆盖语料实际携带的角色，或在入库校验中执行这份 schema，使缺口在提交当时就可见。两条都不做，等于长期维持一份三分之一语料都不满足的已发布契约——上游已采纳第一条的变体，该次修复后为 <strong>75 份</strong>不满足（855 份中），本包 0 处。全部计数与方法说明已写入配套 Issue #1058 <span class="url">&lt;https://github.com/open-city-ai/haidian/issues/1058&gt;</span>，并随包提交于 <code>visual/assets/manifest_schema_survey.json</code>，任何人可自行重跑复核。</p>
-<p>必须把话说准，本方案不做超出数据的推断：占位符未改<strong>不等于</strong>作者隐瞒模型——相当多作者在 <code>authorName</code> 或正文里写明了；写法离散也不是任何人的错，是字段没有给出枚举。结论严格限于「机器可读字段未填或不可聚合，且闸门不检查它」。母题识别基于中文关键词正则，存在同义表述漏计，所有占比均为<strong>下界</strong>。语料每日增长，引用前须重跑脚本复算。<strong>而这条规矩用在本方案自己身上，恰好产出了比任何单次快照都更强的结论。</strong> 五次独立复测（前四次此前只存在于 <code>changelog.md</code>，即只存在于作者的说法里；现已从 git 历史逐轮重建并随包提交为 <code>visual/assets/census_history.json</code>——<strong>本方案自己的规矩不给作者留例外</strong>）：</p>
-<p>&lt;!-- CENSUSHISTORY:BEGIN --&gt;</p>
-<div class="proposal-table"><table><thead><tr><th>复测</th><th>语料规模</th><th>披露字段为空</th></tr></thead><tbody><tr><td>第一次</td><td>184 份</td><td>29.9%</td></tr><tr><td>第二次</td><td>215 份</td><td>30.7%</td></tr><tr><td>第三次</td><td>228 份</td><td>30.3%</td></tr><tr><td>第四次</td><td>298 份</td><td>29.2%</td></tr><tr><td>本次实测</td><td><strong>793 份</strong></td><td><strong>18.2%</strong></td></tr></tbody></table></div>
-<p>&lt;!-- CENSUSHISTORY:END --&gt;</p>
-<p><strong>重建结果值得单说，因为它不是四行全对。</strong> 按「树内目录数恰好相等的最新提交」逐轮重算：215 份、228 份、298 份三轮与留档值<strong>完全一致</strong>（0.307 / 0.303 / 0.292）；最早的 184 份一轮重建为 <strong>0.304</strong>，留档为 0.299，差 <strong>一份包</strong>。差值不作调和，原因写在 <code>census_history.json</code> 的 <code>method</code> 里：重建取的是目录数相等的最新提交，与当初取数的那一刻不必然是同一时点。<strong>三轮精确重合、一轮差一份</strong>，比四行都对上更能说明这套重建是真的在算，而不是在抄。</p>
-<p><strong>这五轮的结论此前写成「结构性属性」，而本方案自己的下一次读数把它否掉了，因此改写。</strong> 从 git 历史重建出来的四轮里，披露缺口稳定在 29.2%–30.7% 的 1.5 个百分点区间内，当时据此判断它「不取决于谁参加」。本次实测掉出了这个区间——见上表末行。（此前正文还写过一轮 354 份／29.9%，而 <code>census_history.json</code> 里没有它——<strong>那一轮只存在于散文里，从未被重建过</strong>，因此上表只列文件能支撑的四轮加本次实测。）&lt;!-- NUMERATOR:BEGIN --&gt;</p>
-<p><strong>分子的行为可以直接读出来，而且比原结论更有意思。</strong> 本包每次重跑普查都提交一份新的 <code>field_map.json</code>，因此每一次读数都留在本分支的 git 历史里；<code>visual/assets/reading_log.json</code> 把它们全部取回，共 <strong>17 次</strong>读数，语料从 228 长到 793，占位符数依次为 69 → 87 → 102 → 104 → 106 → 106 → 106 → 105 → 107 → 107 → 107 → 109 → 109 → 129 → 131 → 143 → 144；期间占位符数<strong>下降过 1 次</strong>（373→381 时 106→105），说明<strong>存量方案确实被改过</strong>。最长的一段不变是 <strong>107</strong>，持续 3 次读数（语料 394 / 408 / 416）。</p>
-<p><strong>存量占比和增量比例回答的是两个不同的问题，而只有后者支持这一段的论点。</strong> 日志里最大的一次跳变是语料 440→678（新增 238 份），其间占位符只增加了 <strong>20 份</strong>——也就是说，新合入的方案里约 <strong>8.4%</strong> 留空，而全部存量的比例是 <strong>18.2%</strong>。占比在降，主要不是因为有人回头去改了旧包，而是<strong>新来的人本来就填</strong>。这个读法只在语料跳得足够大时才有效力，因此写明它取自哪一段。</p>
-<p><strong>此前这一段写的是「在 381、394、408、416 四次读数上一直是 107」，而日志说 381 那次是 105。</strong> 四写成了三，且方向也写反了：同一段还断言占比下降「不是因为存量被改」，而日志里分子确实下降过。这句话此前是凭记忆写的——它复述的是历次构建时打在屏幕上的数字，而不是任何一个随包文件。<strong>这正是本方案对别人提出的那条要求，用在自己身上的结果</strong>：一个没有文件能支撑的数字，即使是自己测的，也会在复述中走形。日志建起来之后它不会了。</p>
-<p>&lt;!-- NUMERATOR:END --&gt;</p>
-<p>这些发现不削弱这次征集，恰恰相反：它们证明这套开源征集机制<strong>真的在产生可被检验的公共证据</strong>：全部投稿、全部评审记录、全部合入历史都是公开的，因此上面每一条读数都可以被任何人重跑。<strong>此处此前写的是「世界上没有第二个城市项目能被这样测量」——本包没有测过任何别的城市项目，那句话不可能由它支撑，已删。</strong>缺的只是最后一步：把闭合差算出来，并让它有后果。</p>
-<p><strong>这台仪器产出了什么，以及没有产出什么。</strong> 本方案把两组自采数据连同可重跑脚本作为 Issue 公开，随后有另一位贡献者据此向上游提交了实现：</p>
-<div class="proposal-table"><table><thead><tr><th>本方案的 Issue</th><th>上游实现 PR（作者非本方案作者）</th><th>内容</th></tr></thead><tbody><tr><td>#840 全场普查与披露字段问题</td><td><strong>#848</strong> <code>feat: add structured model disclosure fields</code></td><td>正是本方案建议的修法：保留自由文本 <code>model</code>，新增枚举 <code>model_family</code> 与配对 <code>model_detail</code>，并在校验器中成对校验</td></tr><tr><td>#846 OSM 边界交叉核验</td><td><strong>#850</strong> <code>docs: register OSM boundary cross-check limits</code></td><td>将本方案的读数（0% 相交、最近距离 412.5 m、研究范围 100% 覆盖）登记为 <code>background_only</code> 并附 ODbL 署名与禁止用途</td></tr><tr><td>#858 CI 时序竞态</td><td>#861</td><td>head_sha 与实时文件清单不一致导致的排队期误报</td></tr><tr><td>#883 自检证据未持久化</td><td>#807</td><td>自检判定的事务性落盘</td></tr></tbody></table></div>
-<p>需要把话说准的三点。<strong>第一，上述 PR 均由他人实现，本方案只提供了测量、脚本与问题定位</strong>；#848 的措辞是「实现 #840 中低风险的结构化披露部分」，#850 的措辞是「记录 #846 提出的可复现交叉核验」。<strong>第二，四个 PR 中 #848、#850 与 #861 已于 2026-08-09 合入上游</strong>：<code>model_family</code>（枚举 8 值：gpt / claude / deepseek / qwen / glm / kimi / grok / other）与 <code>model_detail</code> 现已是仓库规则的一部分；而 #850 把本方案的 OSM 交叉核验写入了仓库自己的 <code>provisional_boundaries_basis.md</code>，引用 Issue #846 并载入 17.49 ha 与 412.5 m 两个读数。#861 修复了本方案在 Issue #858 报告的校验时序竞态（排队期推送必然 404），合入后排队中的旧运行会以成功状态退出并把校验交给新运行；<strong>这条修复同时解除了本方案自己此前的操作纪律——「有运行排队时不得推送」。</strong> 仅 #807 尚未合入，本方案不把它表述为已生效规则。<strong>需要说准一处分寸</strong>：#850 明确写明 OSM 结果「未作为中央 <code>data/source_registry.json</code> 的可重放来源」，因此本方案 <code>sources.json</code> 中对该数据的 <code>background_only</code> 定级<strong>保持不变，不因被上游记录而升格</strong>——被记录不等于被登记，这两件事本方案不混用。<strong>本方案已在 <code>agent.json</code> 与 <code>manifest.agent</code> 中采用这两个新字段</strong>——既然本方案主张该字段应当可聚合，就不能在它可用之后仍然不用。顺带一提，上游枚举定为 8 个值，而本方案独立归并实测得到 9 个桶——多出的一个是 Gemini，在上游枚举里没有位置，只能落进 <code>other</code>。该次修复后为 <strong>8 值对 9 桶</strong>：此前这句写成「一致」，是把相互印证说得比数据更漂亮。<strong>第三，展示索引滞后在 31–44–6–45 之间起伏一事，本方案不归功于自己</strong>——无法证明因果。</p>
-<p>写出这一节不是为了记功，而是因为它构成对本方案核心主张的一次外部检验：一个可被独立重跑的读数，确实被另一方复现并采纳了。<strong>这正是闭合差机制要求的那种事——读数由不同主体独立取得，并因此产生后果。</strong> 本方案自己也接受同一条规矩：若上游最终判定这些测量有误，本方案须整体重算，而不是保留有利部分。</p>
-<p>京张水准线，就是补上这一步的仪器。而这台仪器接下来要装在最需要它的地方。</p>
-<h3>第二幕：把同一台仪器用在场地上，它测出了场地数据本身的闭合差</h3>
-<p>第一幕测的是这次征集，那毕竟是纸面。真正的检验是：<strong>这台仪器用在海淀本身，能不能测出东西。</strong></p>
-<p>本方案因此对场地做了一次独立复核。方法与闭合差完全一致——<strong>同一个对象，经两条独立路径测量，比较差值</strong>：</p>
-<ul>
-<li>路径甲：公告的文字四至（北至北五环路、东至京藏高速、南至西直门外大街、西至万泉河路）→ 仓库据此推定的 <code>provisional_boundaries.geojson</code></li>
-<li>路径乙：OpenStreetMap 中实际测绘的「京张铁路遗址公园」多边形与废弃铁路线形</li>
-</ul>
-<p>两条路径都不依赖官方 polygon，都可被任何人重跑。结果：</p>
-<p>&lt;!-- OSMTABLE:BEGIN --&gt;</p>
-<div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td>实测公园面积（OSM 已测绘段）</td><td><strong>17.49 ha</strong></td></tr><tr><td>与临时<strong>总体设计范围</strong>的相交面积</td><td><strong>0.0 ha（覆盖 0.0%）</strong></td></tr><tr><td>与该边界的最近距离</td><td><strong>412.5 m</strong></td></tr><tr><td>与临时<strong>统筹研究范围</strong>的关系</td><td>100% 完全包含 ✓</td></tr><tr><td>废弃铁路</td><td>14 段，3,028 m；其中 683.7 m 落在临时总体设计范围内</td></tr><tr><td>本方案提交主脊到实测公园</td><td>1,116.7 m</td></tr></tbody></table></div>
-<p>全部读数由 <code>node visual/assets/check_osm.js</code> 从随包坐标独立复算，投影 EPSG:4548；OSM 为众包数据，其限度登记为 <code>A-OSM-001</code>。</p>
-<p><strong>「本方案主脊到实测公园 1,116.7 m」这个数需要解释，否则它会被读成一个选址错误。</strong></p>
-<p>一位独立评图人读到它，结论是「主脊没有画在场地上，应当改到真实线位」。这个结论从这一个数看是合理的，但把组织方给的几何一起量就不成立：</p>
-<div class="proposal-table"><table><thead><tr><th>量</th><th>值</th><th>由谁决定</th></tr></thead><tbody><tr><td>临时<strong>总体设计范围</strong>到实测公园</td><td><strong>412.5 m</strong>（不相交）</td><td>组织方的 provisional geometry</td></tr><tr><td>本方案主脊到实测公园</td><td>1,116.7 m</td><td>本方案</td></tr><tr><td>若把主脊改到设计范围<strong>西边界</strong></td><td>414.7 m</td><td>上限即 412.5 m</td></tr></tbody></table></div>
-<p><strong>实测公园整体落在临时总体设计范围之外</strong>——这不是本方案的取舍，是组织方几何本身如此，本包在上表第二行就公布了它。因此「把主脊画到真实线位」意味着<strong>把主轴移出设计范围</strong>。</p>
-<p>而设计范围内的最优解也不是西边界。三处重点区（组织方给定）的形心在 lon 116.3475–116.3485，主脊正走在那条线上；西边界在 116.3397。<strong>把主脊贴到西边界，可以把到公园的距离从 1,117 m 压到 415 m，代价是它同时离开全部三处重点区</strong>——而串起这三处正是主脊要做的事。</p>
-<p>所以本方案的选择是：主脊穿三处重点区，与实测公园保持 1,116.7 m，并把这个差公布在图上。<strong>这不是一个能靠移线消掉的差，它的下限由组织方的临时几何决定；公开它，是为了在官方 polygon 发布后能一眼看出该重算什么。</strong></p>
-<p>&lt;!-- OSMTABLE:END --&gt;</p>
-<p><strong>这就是一个闭合差，而且它在场地数据上，不在纸面上。</strong> 43.6 km² 的统筹研究范围与 OSM 完全吻合，说明公告的四至文字与实际地理没有矛盾；但<strong>11.4 km² 的临时总体设计范围与实际测绘的公园不相交，最近处相距 412.5 m</strong>。两条路径回到同一个对象，没有闭合。</p>
-<p>必须把话说到位、不越界：</p>
-<ul>
-<li>OSM 是众包数据，其公园多边形<strong>可能只覆盖已建成并被测绘的一段</strong>，不等于规划全域；</li>
-<li>临时边界本身也明确标注为按文字四至<strong>推定</strong>，仓库的 <code>provisional_boundaries_basis.md</code> 已说明其误差；</li>
-<li><strong>本方案不判定哪一方正确</strong>，只报告两者差 412.5 m 这一可复算事实。真正的裁决需要官方 polygon。</li>
-</ul>
-<p><strong>本方案对自己的披露。</strong> 同一次测量也测到了本方案自己：<strong>提交的主脊中心线距 OSM 测绘的公园最近处 1,116.7 m。</strong> 因为主脊是依临时总体设计范围生成的，而该范围本身偏东。这句话对本方案不利，但不写出来，本方案关于「可复算」的全部主张就都是空的。</p>
-<p>那么为什么不把主脊移过去？因为<strong>本包必须在声明的边界内自洽</strong>——空间自检要求全部图层落在提交的 <code>site_boundary.geojson</code> 内，而该文件按仓库要求取自临时边界。移动主脊会使包内不一致，那是用一个错误换另一个错误。</p>
-<p><strong>真正的答案是这套设计本身的性质：水准网是边界相对的，不是坐标绝对的。</strong> 分级（原点/一等/二等/三等）、附合路线的闭合逻辑、跨管辖读数规则、限差分级——这些在边界平移后<strong>全部不变</strong>，改变的只是标石落在哪里。这正是本方案坚持「官方 polygon 发布后整体重算而非局部替换」的原因：重算的是位置，不是机制。</p>
-<p>OSM 原始坐标与全部口径随包提交于 <code>visual/assets/osm_reference.json</code>，并由随包的 <code>node visual/assets/check_osm.js</code> 从这些坐标独立复算（抓取脚本无法进包，入库格式白名单不含 .py） <span class="evidence evidence-source">[source:OSM-REFERENCE-2026-08]</span>，可重跑复算。这一节的全部内容画在下图里——<strong>推定边界、实测公园、本方案落位与那 412.5 m 的红线在同一张图上按比例呈现</strong>。文字里的差异是断言，按比例画在自己的后果旁边才是证据。该图同时是本包唯一一张画出七类用地剖分的图纸，并按《提交指南》对 <code>site-overview.png</code> 的定义呈现总体概念、主轴、核心节点与 official/provisional 状态。</p>
-<figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="FIG.01 总体概念与场地复核：主轴、核心节点、推定边界与实测公园"><figcaption>FIG.01 总体概念与场地复核：主轴、核心节点、推定边界与实测公园</figcaption></figure>
-<h4>第三个可测的机制缺口：一道从未触发过的闸门，和两处建立在八份样本上的诊断</h4>
-<p>前两处是「字段有了、采用率低」与「契约发布了、没人执行」。第三处是本方案测到的最锋利的一处，因为它同时纠正了包括本方案在内的三方判断。</p>
-<p>评审脚本 <code>ai_review_submission.py</code> 的 <code>publication_recommendation</code> 只在<strong>分数 ≥85 且 <code>required_next_actions_zh</code> 为空</strong>时返回 <code>featured-candidate</code>。Issue #950 抽样八份，在八份里都找到一条组织方几何重算项，据此判定「组织方数据缺口间接封杀了 featured-candidate」；PR #957 依此写了修法，把 <code>组织方：</code> 前缀的 action 分流到 <code>data_gaps_zh</code>。</p>
-<p><strong>本方案此前赞同这个诊断，并把「featured 不可达是因为组织方数据缺口」当作既定事实。测完之后，这句话不成立。</strong></p>
-<p>对<strong>全部 1,069 个 PR</strong>（非抽样，含全部 review body、comment body 与标签事件）实测：</p>
-<div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td><code>review/formal-ready</code> 曾被附加的次数</td><td><strong>0</strong></td></tr><tr><td><code>publication_recommendation</code> 为 <code>publish-qualified</code> 的 verdict</td><td><strong>0 / 156</strong>（156 份全部为 <code>do-not-publish</code>，随包 <code>review_repeatability.json</code>）</td></tr><tr><td>匹配 #957 字面规则的 action item</td><td><strong>0 / 1,203</strong></td></tr><tr><td>携带自动汇总项的 verdict</td><td><strong>146 / 146</strong></td></tr><tr><td>四种判定规则下会翻到 <code>featured-candidate</code> 的 PR</td><td><strong>0 / 0 / 0 / 0</strong></td></tr></tbody></table></div>
-<p>三条各自独立成立：</p>
-<p><strong>一、这条已撤回，而撤回本身是这一节最该读的部分。</strong> 本方案最初写的是：#957 的匹配器要求带冒号前缀，而 1,203 条历史 action 匹配数为 0，因此它是空集。发表两小时后，#950 的作者 @Sonike 指出这个推断不成立——<strong>那 1,203 条全部产生于旧 prompt，而旧 prompt 从未要求模型输出该前缀；在一个不要求它的语料里统计它的出现率，结果必然是 0。</strong> #957 同时修改了 prompt，他在新 prompt 下实测 5 次采样中 4 次输出前缀、全部为精确格式。</p>
-<p><strong>这与本方案刚刚指出他的错误是同一个形状</strong>：拿一个测量去回答它回答不了的问题。他的八份样本证明「这八份里组织方项都在」，证不出「组织方项是原因」；本方案的 1,203 条证明「旧 prompt 下没人写这个前缀」，证不出「新 prompt 下匹配器不会命中」。<strong>本方案用了不到两小时犯了同一个错。</strong> 该计数在随包 JSON 里保留并加注为「旧口径下的必然值」，因为它对历史语料成立——但它不再是任何结论的依据。</p>
-<p><strong>二、即使匹配器完美也不通。</strong> 汇总项 <code>完成七维评分中列出的 N 项详细 required repairs</code> 在组织方拆分<strong>之前</strong>被 append，且不带组织方前缀，因此必然落进参与者一侧——146 份 verdict 全部携带它。</p>
-<p><strong>三、组织方项从来不是唯一阻塞项。</strong> 在最宽松的剥离之后，剩余参与者 action <strong>全部在 3 条以上</strong>——随包文件把它分桶为「3+」，最小值本身没有被保留下来，因此这里不给出一个它支撑不了的数；「仅剩组织方项」的 PR 数在四种规则下都是 0。</p>
-<p>组织方依赖当然真实（<code>官方</code> 122 次、<code>重算</code> 59、<code>组织方</code> 45）。测量只说明一件事：<strong>移除它们不改变任何一个结果。</strong></p>
-<p><strong>这处发现的形状，正是本方案通篇在讲的那一件事</strong>：#950 与 #957 都是认真的工作，八份样本给出的诊断在八份里都成立，据此写的修法在逻辑上也自洽——<strong>差别不在认真程度，在 n</strong>。一次读数看不出系统性偏差，全量能。这也是为什么本方案主张的不是「更谨慎地判断」，而是「把判断建立在可被别人重跑的读数上」：全部计数、归类规则与匹配字符串随包提交于 <code>visual/assets/review_gate_survey.json</code>，任何人可以改了规则重跑，包括改到与本方案结论相反。</p>
-<p><strong>这一节还有一个后续，它把结论从「概率很低」推到「从未接近过」。</strong> #950 的作者 @Sonike 在接受纠正后回头定位了汇总项的确切触发条件：<code>repair_count &amp;gt; 0</code> 即无条件追加，而七维中得 5 分的维度里仍有 56% 带着 <code>required_repairs_zh</code>（他的 20 次采样），据此估算七维同时干净的概率约 0.3%。</p>
-<p>本方案用全量把这个估计换成了观测——<strong>汇总项本身写着 repair 总数</strong>，因此 146 份历史 verdict 的 <code>repair_count</code> 可以直接读出：</p>
-<div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td><code>repair_count</code> 观测最小值</td><td><strong>17</strong></td></tr><tr><td>分数 ≥85 的三份，其 repair 数</td><td>17 / 20 / 21</td></tr><tr><td>七维全部 5/5 的 verdict</td><td><strong>0</strong></td></tr><tr><td>单份 verdict 中 5/5 维度的最大数量</td><td><strong>4 / 7</strong></td></tr><tr><td>加权分与 repair 数的相关</td><td><strong>r = −0.240</strong>（n=156，随包 <code>review_repeatability.json</code>）</td></tr></tbody></table></div>
-<p>闸门要求 <code>required_next_actions_zh</code> 为空，即 <code>repair_count == 0</code>。<strong>历史上最接近的一次是 17。</strong> 而 89 分那份带 17 条、57 分那份也带 17 条——<strong>这条闸门测的不是质量档位，是「评审有没有话说」，而评审总是有话说。</strong></p>
-<p><strong>本方案不就此建议放宽，理由与他相同且更明显</strong>：本包上一版得分 91，是这份数据里 ≥85 的三份之一，在这件事上没有中立立场。只摆机制和数字，不建议修改，不申请任何档位调整。是否放宽取决于组织方希望 <code>featured-candidate</code> 表达什么——那是策划判断，不是技术缺陷。</p>
-<p>已发于 Issue #950 与 PR #957。</p>
-<p><strong>后记：#957 已于 2026-08-10 合入，因此上面这段可以对着已合入的代码重说一遍，而不再是对着一份提案。</strong> 组织方项分流已生效：带 <code>组织方：</code>／<code>主办方：</code> 前缀的 action 现在被移入 <code>data_gaps_zh</code>，不再计入 <code>required_next_actions_zh</code>。<strong>而汇总项不受影响</strong>——<code>ai_review_submission.py</code> 里那段在 <code>repair_count &amp;gt; 0</code> 时无条件追加的句子，不带任何前缀，因此仍然进入 participant actions，仍然使列表非空。</p>
-<p>所以本节的结论在合入后原样成立，且现在的依据比原来强：<strong>它不再依赖对一份提案会如何生效的推断，而是读已合入的代码得到的。</strong> 历史 <code>repair_count</code> 的观测最小值仍是 17。</p>
-<h4>第四个可测的机制缺口：一个决定警告条数、却不与任何东西联接的字段</h4>
-<p>&lt;!-- SPATIAL:BEGIN --&gt;</p>
-<p>这一处的起点是本包自己的 PR 上比别人多出的那一串警告。<strong>每一份提交的确定性校验结果都写在 PR 上，因此警告条数是这场征集里为数不多的、任何人都能横向比较的数字之一。</strong> 本包的警告里有 14 条来自同一个字段：<code>spatial.json</code> 的每一个 <code>public_level: &amp;quot;provisional&amp;quot;</code> 各发一条。</p>
-<p>按本方案自己的规矩，在为这个差别写下任何一句话之前先去量。结果是：全场 <strong>371 份</strong>方案中有 <strong>20 份</strong>提交了 <code>spatial.json</code>，合计 <strong>231 个</strong>概念对象，三档分布为 <strong>public 56 / cleared 2 / provisional 173</strong>。<strong>13 份</strong>包里每一条都是 provisional，<strong>6 份</strong>至少有一条 public。本包 14 条全部 provisional，按警告条数排在 <strong>第 3 位／共 20 份</strong>。</p>
-<p><code>validate_submission.py</code> 对这个字段只做两件事：检查取值属于 <code>{public, cleared, provisional}</code>，以及对 provisional 逐条发警告。<strong>它不与 <code>sources.json</code> 联接，不与 geometry 联接，也不与该对象所依托的边界联接</strong>；<code>docs/spatial.md</code> 用一行给出定义。也就是说，这个值完全自述、无人校验，而三个取值里恰好只有一个会产生警告。</p>
-<p><strong>这份测量支持的结论，比它初看起来能支持的窄得多。</strong> 定义只有一行，几何模式又统一是 <code>concept</code>，因此同一个概念节点在两份描述方式相同的方案里可以诚实地落在不同档上。<strong>能得出的只有一条：警告条数不可跨包比较。</strong> 得不出的是任何一份包选错了——本方案没有测出那件事，因此不说那句话，也不点名任何方案。</p>
-<p><strong>本方案在这个问题上不是中立的，和上一节一样先声明：</strong>本包 14 条全部是 provisional，任何把条目移出 <code>public</code> 的校验都会相对抬高本方案的位置。因此这里只报告分布，不提出修改建议，也不申请把自己的档位改成不发警告的那一个——<strong>本包的边界确实是临时的，<code>provisional</code> 是对它唯一诚实的写法</strong>，为了少 14 条警告去改写它，就是本方案通篇反对的那件事。</p>
-<p>全部计数、逐包画像与判别口径随包提交于 <code>visual/assets/spatial_level_survey.json</code>，<code>fetch</code> 联网取数、<code>report</code> 完全离线，任何人可以改了口径重跑。</p>
-<p>&lt;!-- SPATIAL:END --&gt;</p>
-<h4>第五个可测的机制缺口，也是本方案唯一一次把仪器对准打分本身</h4>
-<p>&lt;!-- REPEAT:BEGIN --&gt;</p>
-<p>几何水准不因为仪器报了一个高程就相信它。它走一圈回到起点，把同一个点读两次，两次之差叫<strong>闭合差</strong>——那是关于这台仪器可信到什么程度的唯一诚实说法。本方案通篇主张一座城市应当为自己的系统公开这个数。</p>
-<p><strong>给本方案打分的这台仪器，已经在同一个点上被读过很多次，而这个差没有人发表过。本节把它测出来。</strong></p>
-<p><strong>控制项是一个 commit，不是一份文件清单。</strong> 最紧的重复测量就是同一个 head SHA 被评审多次：此时整棵树按定义逐字节相同，因此不需要对「评审读了哪些文件」做任何假设，关于那份清单的任何争论也动摇不了结论。本方案的早期版本恰恰去比对评审输入文件集，而且把清单读错了三处——记录为勘误 E35。</p>
-<p>在全部 <strong>949 条</strong>已发布评分中，<strong>930 个</strong>不同的 head commit 里有 <strong>12 个</strong>被评审了不止一次，涉及 <strong>31 条</strong>读数。</p>
-<div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td>池化组内标准差</td><td><strong>3.89 分</strong>（自由度 19）</td></tr><tr><td>两倍标准差带</td><td><strong>±7.8 分</strong></td></tr><tr><td>同一 commit 观测到的最大跨度</td><td><strong>13 分</strong></td></tr><tr><td>重复评审完全一致的 commit</td><td><strong>3 / 12</strong></td></tr><tr><td>跨度中位数</td><td>4.0 分</td></tr></tbody></table></div>
-<p>最极端的一个：PR #563 的 commit <code>62e0430242</code> 被评了 <strong>4 次</strong>，得分依次为 <strong>91 → 94 → 81 → 93</strong>——同一棵树，跨度 13 分。</p>
-<p><strong>于是：仪器把同一个点读了很多次，读数散布在约 8 分宽的带子里。</strong></p>
-<p><strong>这里有一个对本方案有利的读法，本节明确不采用。</strong> 本包本身没有同一个 commit 被评两次的情形，因此不在上面的对照组里；但它有一对近似对照——#1122 得 94，十七分钟后 #1125 得 91，而两次之间 <code>proposal.md</code> 逐字节相同，评审可见文件里唯一的差异是 <code>manifest.json</code> 中两个 <code>sha256</code> 字符串，且那两份文件不在评审输入里。<strong>本方案不申请重评、不申请任何调整</strong>：一份要求保留自己较高那次读数的包，做的正是本方案通篇反对的事。</p>
-<p>它支持的结论比这窄，而且对本方案同样不利：<strong>两份方案之间小于这个带宽的分差，不是这台仪器分辨得出来的差别。</strong> 本包目前正处在若干个这样的分差的有利一侧。</p>
-<p><strong>这不是对评审的批评。</strong> 一台会精确重复的仪器不存在；水准仪也不存在，所以才要走闭合环。可批评的从来不是读数有偏差，而是<strong>读数的偏差没有被公开</strong>——这正是本方案对这条创新带提出的全部主张，此刻恰好落回它自己身上。这里最有用的一条推论，恰恰是本方案自己得不到好处的那一条：<code>publication_recommendation</code> 里 65 与 85 两条阈值线，其两侧的差别小于这台仪器自身的重复性。</p>
-<p><strong>这个数被两个方向的不可观测量夹住，两条都写在随包 JSON 的 <code>limits_zh</code> 里。</strong> 其一：同一 commit 的重复评审可能命中队列缓存而根本没调用模型，那会返回完全相同的分数——因此「完全一致」的比例是上界，标准差是<strong>下界</strong>。其二由 @147228 <span class="url">&lt;https://github.com/147228&gt;</span> 在 Issue #950 与 PR #1190 中指出，它比本方案原先写的更锋利：<strong>同一个 commit 不保证同一台仪器</strong>。缓存命中此前只比对目录与包摘要，不校验 model、endpoint、reasoning effort、prompt/schema 或评审策略代码，因此同一 head 上的两次读数既可能是同一配置的两次采样，也可能来自两套配置。<strong>本节测的因此是「同一份输入的两次读数差多少」，不是「这台仪器有多可重复」</strong>——两者只在评审身份不变时相等，而那一点当前不可观测，这一区分记为勘误 E40。#1190 让身份随决定落盘并要求一致才复用缓存；它合入后，这个区分第一次可以从数据里做出来。全部分组、每次读数与统计口径随包提交于 <code>visual/assets/review_repeatability.json</code>，<code>report</code> 完全离线，任何人可以自己重跑。</p>
-<p>&lt;!-- REPEAT:END --&gt;</p>
 <h2>三层范围工作框架</h2>
 <p>方案按公告确定的三个层次组织，并与水准网的三级精度一一对应 <span class="evidence evidence-depth">[depth:three_level_scope_framework]</span>。</p>
 <div class="proposal-table"><table><thead><tr><th>公告层次</th><th>范围</th><th>水准网对应</th><th>复测周期</th><th>空间证据</th></tr></thead><tbody><tr><td>统筹研究范围</td><td>约 43.6 km²，北至北五环路、东至京藏高速、南至西直门外大街、西至万泉河路</td><td>水准网整体控制</td><td>年</td><td>仓库 <code>provisional_boundaries.geojson#PROV-RESEARCH-001</code> <span class="evidence evidence-source">[source:BOUNDARY-SOURCE]</span></td></tr><tr><td>总体设计范围</td><td>约 11.4 km²，遗址公园周边 1–2 km 城市地区</td><td>一等水准路线（主脊 + 两条附合路线）</td><td>半年</td><td><span class="evidence evidence-data">[data:geometry/site_boundary.geojson#SITE-001]</span>，复算 <span class="evidence evidence-metric">[metric:site_area_sqm]</span></td></tr><tr><td>重点区域范围</td><td>约 369.3 ha（由 <span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-001]</span>、<span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-002]</span>、<span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-003]</span> 三处合计复算：192.9 / 104.3 / 72.0 ha；公告文字为约 368.4 ha）</td><td>水准原点 BM-0 与一等水准点 BM-1 / BM-2</td><td>年</td><td><span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-001]</span></td></tr></tbody></table></div>
@@ -475,7 +347,7 @@ code {
 <blockquote><p><strong>没有水准点的路段，不允许机器人运行。</strong>（No benchmark, no robot.）</p></blockquote>
 <p>这条规则把治理变成了空间设计问题——因此它属于城市设计而非技术管理。机器人可运行的范围，等于水准点覆盖的范围；要扩大运营范围，必须先建测点。测点是实体的、公共可达的、编号唯一的 <span class="evidence evidence-data">[data:geometry/public_space.geojson#PUBLIC-001]</span>，其覆盖占比可从图层复算 <span class="evidence evidence-metric">[metric:public_space_ratio]</span>。</p>
 <p><strong>先说清楚哪些不是本方案的增量。</strong> 逐份核读本次征集这两条赛道的全部方案后可以确认，&lt;!-- BASELINE6:BEGIN --&gt;</p>
-<p>以下六项已成为事实标准，括号内为 793 份语料中的实测份数：场景级停用与退出条件（478）、无AI等价路径（361）、现场安全员（327）、远程与物理急停（173）、限速（97）、事件日志（66）。最薄的一项也有 66 份，最厚的 478 份。<strong>这是下界</strong>——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但<strong>不把它们当作创新陈述</strong>——它们是准入底线。把底线当卖点，说明没有读过这个场。</p>
+<p>以下六项已成为事实标准，括号内为 793 份语料中的实测份数：场景级停用与退出条件（478）、无AI等价路径（361）、现场安全员（327）、远程与物理急停（173）、限速（97）、事件日志（67）。最薄的一项也有 67 份，最厚的 478 份。<strong>这是下界</strong>——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但<strong>不把它们当作创新陈述</strong>——它们是准入底线。把底线当卖点，说明没有读过这个场。</p>
 <p>&lt;!-- BASELINE6:END --&gt;</p>
 <p>本方案的增量在别处：<strong>在两条赛道的全部方案里逐词检索为零或近零的那些测项上。</strong></p>
 <p>这一节的计数此前是本方案手读 18 份得出的，清单与口径都没有交出来——一个只有作者能复核的数字，按本方案自己的标准不构成证据。现已改为可重跑脚本：从 git tree 枚举两条赛道的<strong>全部已合入方案</strong>（含本方案；份数随语料增长，见下表表头），对每份全文运行公开的关键词正则，逐项列出命中方案名，结果随包提交于 <code>visual/assets/track_scan.json</code>。</p>
@@ -781,6 +653,135 @@ code {
 <p><strong>头两行是全册最高的两个形状。第一行举五例：</strong> 翻译覆盖率数的是「交给翻译器的字符串」而不是「页面上的中文」；CJK 泄漏闸门扫文本而扫不到 PDF；构建判定表达式漏掉两条打印 PASS 的闸门；<code>verify.js</code> 末尾三条结论只打印不拒绝；闭合差检查器只拦显式 <code>false</code> 而不拦字段缺失。五次都是同一件事：<strong>检查问的是「有没有说错」，而不是「有没有说」。</strong></p>
 <p><strong>第二行的补救办法和第一行不一样。</strong> 五处都是图纸或页面：FIG.05 的路线图例还带着几何里已删掉的闭合尾巴；FIG.06 标题写「全部第一类数值」却只列九项中的七项；FIG.03 的层级表与它自己四行外的图例互相矛盾；FIG.04 仍写「起算基准」和「返回 BM-0」；FIG.01 的用地图例列六类而剖分已是七类，地图把第七类画成灰色的「其他」。<strong>没有一处是几何错误，因此没有一处可能被几何检查发现</strong>——它们是图纸模块里的标签字符串。五处全部是<strong>把评审会看到的东西渲染出来、然后去看</strong>找到的。第一行的补救是建一道闸门；第二行的补救是打开那张图。</p>
 <p>这个数不是修辞。它是本方案在自己身上测出的、关于「为什么需要闭合差」的最直接证据——一次读数看不出系统性偏差，多次同向的读数能。</p>
+<h2>把仪器先用在自己身上</h2>
+<h3>第一幕：把仪器先用在这次征集自己身上</h3>
+<p>一台声称能让城市 AI 可被复测的仪器，第一次应该用在离自己最近、最无从推脱的对象上。所以本方案的第一次读数，测的是这次征集本身。</p>
+<p>这不是评论主办方的工作，而是<strong>交付一件他们此刻最缺的东西</strong>。截至最近一次实测仓库已合入 793 份方案，PR 编号已过 1000，维护者在以每分钟数份的速度合并。此时最难的不是收稿，是<strong>横读</strong>：四百多份里哪些已经收敛、哪些位置还空着、哪些声明其实无法被聚合。这件事无法靠翻展示页完成，需要一台仪器。本方案把它造出来，连数据一并公开。</p>
+<p><strong>读数一：这个场是高度收敛的，而收敛是任务书诱导的。</strong></p>
+<p>&lt;!-- MOTIFS:BEGIN --&gt;</p>
+<div class="proposal-table"><table><thead><tr><th>结构母题</th><th>出现份数</th><th>占比</th></tr></thead><tbody><tr><td>三核 / 三站</td><td>389</td><td>49.0%</td></tr><tr><td>两翼</td><td>308</td><td>38.8%</td></tr><tr><td>一脊 / 一带</td><td>229</td><td>28.9%</td></tr><tr><td>证据链 / 可复算</td><td>175</td><td>22.1%</td></tr></tbody></table></div>
+<p>&lt;!-- MOTIFS:END --&gt;</p>
+<p>任务书本身规定了「三区两翼」，因此半数以上方案画出同一骨架，不是共识达成，是题面所致。<strong>把同一结构再画一遍没有增量。</strong> 有增量的是说清这些单元之间靠什么机制传递责任——这正是水准网回答的问题。</p>
+<p><strong>读数二：赛道覆盖极不均衡。</strong></p>
+<p>&lt;!-- TRACKS:BEGIN --&gt;</p>
+<div class="proposal-table"><table><thead><tr><th>赛道</th><th>申报份数</th><th>占比</th></tr></thead><tbody><tr><td>ai-traffic-walkability</td><td>537</td><td>67.7%</td></tr><tr><td>城市智能体治理</td><td>533</td><td>67.2%</td></tr><tr><td>enterprise-services-ecosystem</td><td>490</td><td>61.8%</td></tr><tr><td>jingzhang-heritage-narrative</td><td>266</td><td>33.5%</td></tr><tr><td>ai-origin-community</td><td>212</td><td>26.7%</td></tr><tr><td><strong>AI公共服务</strong></td><td><strong>92</strong></td><td>11.6%</td></tr><tr><td>青年友好公共空间</td><td>72</td><td>9.1%</td></tr><tr><td><strong>机器人与自动驾驶</strong></td><td><strong>41</strong></td><td>5.2%</td></tr></tbody></table></div>
+<p>共 793 份已合入方案；赛道为多选，占比之和大于 100%。加粗两行是本方案选定的两条，也是全场最薄的两条。</p>
+<p>&lt;!-- TRACKS:END --&gt;</p>
+<p><strong>这组数在这一版被改了两次，第二次是因为读数的工具本身错了，须说明。</strong> 普查的 front matter 解析器只认 <code>tracks: [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;]</code> 这一种写法，读不到 YAML 的块状列表：</p>
+<p>``<code>yaml tracks: - ai-traffic-walkability - civic-agent-governance </code>``</p>
+<p>有四份方案用了后一种写法，于是它们申报的赛道<strong>从未被任何一次计数看见</strong>，八条赛道里有六条被低估。包内的 <code>field_map.json</code> 其实一直在报警：<code>proposals_declaring_no_known_track</code> 曾为 14，而真值是 10，多出来的四份正是这四个文件——<strong>读数不对时，数据里往往已经有一条对不上的线索，只是没人去追。</strong> 解析器已修（<code>- item</code> 行归并入上一个空值键），并把普查的数据源从 GitHub API 改为本地 git tree：API 会限流，而一次因 403 跳过的普查，正是数字变陈旧的起点。</p>
+<p>历次实测之间这两条赛道持续变厚，但相对位置始终未变：机器人仍是八条中最薄的一条，公共服务次薄。<strong>这句话的具体数字此前反复过期，因为它把上方那张生成表里的值又抄了一遍</strong>；现在只说相对位置，份数以上表为准（份数见上表）。<strong>一个会随下一次测量改变的排序，就不该写成固定结论。</strong></p>
+<p><strong>但申报不等于覆盖，这一点必须说准。</strong> 逐份核读这两条赛道的全部方案后发现两种偏差：有方案申报了机器人赛道，而其中的「机器人」是生态观测装置，与街道上的低速设备无关；也有方案实质写了地面机器人、自动驾驶分级准入与低空配送走廊，却没有申报该赛道，因此只看标签会完全看不到它。所以准确的表述是：<strong>按标签计 25 份，按实质计略多于 14 份，但无论怎么计都是八条赛道里最薄的一条</strong>——而这本身对主办方也是一条有用的读数：赛道标签目前无法作为覆盖度的可靠依据。</p>
+<p>任务书要求的八条赛道里，风险最高、最需要制度约束的两条覆盖最薄。这是本方案选择主战场的实测依据，不是偏好。</p>
+<p><strong>读数三：那个「机器可读」的披露字段，实际上不可机读。</strong></p>
+<p><code>agent.json</code> 的 <code>model</code> 字段设计为结构化披露生成方法，对应共创宪章 charter.6（生成方法披露）与 charter.5（结构化、可被智能体读取）。实测：</p>
+<p>&lt;!-- MODELDISCLOSURE:BEGIN --&gt;</p>
+<div class="proposal-table"><table><thead><tr><th>状态</th><th>份数</th></tr></thead><tbody><tr><td>已填写</td><td>649</td></tr><tr><td>留在脚手架占位符 <code>agent-declared-model</code> 或为空</td><td><strong>144（18.2%）</strong></td></tr></tbody></table></div>
+<p>而已填写的 649 份，用了 <strong>228 种不同字符串</strong>，按随附脚本中公开的归并规则收敛后，只落进 <strong>9 个桶</strong>（其中一个是「无法归类」）。单是「GPT / Codex」一族就被写成 <strong>85 种写法</strong>（<code>GPT-5</code>、<code>GPT-5 Codex</code>、<code>OpenAI Codex (GPT-5)</code>、<code>OpenAI Codex (GPT-5 family)</code>、<code>GPT-5 (Codex)</code>……），覆盖 355 份方案。</p>
+<p>&lt;!-- MODELDISCLOSURE:END --&gt;</p>
+<p><strong>结论：任何人都无法从这个字段聚合出「这次征集由哪些模型生成」。</strong> 字段填了，但不可机读——这比「有人留空」更值得修，而且不涉及任何作者的过失。这就是闭合差：出发时声明的规则（结构化、可机读、可被筛选排序），与回到原点时的实测状态（见上表），对不上。</p>
+<p><strong>这条治理回路现在可以闭合了，但还没有闭合——而这个差别本身可以测。</strong> 修法很轻：把 <code>model</code> 收敛为枚举 + 自由文本备注两个字段，在四项 gate 中加一条枚举校验。该建议连同全部普查数据与脚本已写入配套 Issue #840，并由 @147228 在 #848 中实现、于 2026-08-09 合入上游。<strong>因此「无法聚合」这一诊断，从 2026-08-09 起不再是机制缺陷，而变成了采用率问题</strong>：&lt;!-- ADOPTION:BEGIN --&gt;</p>
+<p>实测仓库 793 份 <code>agent.json</code> 中，声明 <code>model_family</code> 的有 <strong>417 份（52.6%）</strong>——字段是可选的，而存量方案都早于它。（此数此前两个语种各写了一个值，都不在任何随包文件里；现在由 <code>field_map.json</code> 的 <code>model_family_declared_count</code> 生成。）</p>
+<p>&lt;!-- ADOPTION:END --&gt;本方案已在本次提交中采用该字段，但这不改变结论的方向：<strong>一个新增的枚举字段不会自动追溯已提交的三百份包，回路要真正闭合，还需要一次迁移或一次强制。</strong> 这正是本方案关于「限差只可收紧」的同一条道理——规则改了，不等于读数变了。本方案已将该建议与全部普查数据、脚本一并写入配套 Issue。</p>
+<h4>第二个可测的机制缺口：一份没人执行的清单契约</h4>
+<p><code>model_family</code> 那条是「字段有了、采用率低」。用同一台仪器再测一遍，找到的是另一种形态：<strong>一份已发布的契约，没有任何 gate 执行它。</strong></p>
+<p>仓库在 <code>brief/site-package/schemas/manifest.schema.json</code> 发布了清单 schema，每份方案都提交 <code>manifest.json</code>。把二者对上，<strong>测于 338 份语料时有 117 份（34.6%）不满足这份 schema</strong>，违规集中在四个 role 上——<code>changelog</code>、<code>evidence_data</code>、<code>verification_script</code>、<code>risk_matrix</code>——本包当时也用了这四个，因此把自己算在那 117 份里，不作豁免。</p>
+<p><strong>这一段现在是历史，因为它已经被修掉了。</strong> 该发现写入配套 Issue #1058，并于 2026-08-11 关闭：修法不是扩充枚举，而是把 <code>role</code> 从封闭枚举改成开放 pattern （<code>^[a-z][a-z0-9_]{1,63}$</code>），规范角色集写进 description。本包因此从声明四条 schema 例外变为声明零条 role 例外（仅余一条 <code>data_confidence</code> 根属性）。<strong>该次实测时</strong>语料为 825 份，其中 <strong>79 份</strong>不满足，且这份 schema <strong>依然没有任何 gate 执行</strong>——被修掉的是枚举太窄，没有被修掉的是没人检查。而 <code>scripts/validate_submission.py</code> 校验的是「清单列出的文件是否存在、摘要是否匹配」，<strong>不校验清单本身是否符合 schema</strong>——仓库里没有任何一处做这件事。这就是一份公开契约可以被三分之一的语料长期违反而无人察觉的原因。</p>
+<p><strong>但违规的形状说明这不是作者不认真。</strong> 逐条归并后，过半数违规（706/1255，56.3%）是同一件事：<code>role</code> 枚举里没有方案实际需要的角色。</p>
+<div class="proposal-table"><table><thead><tr><th>枚举中缺失的 role</th><th>出现次数</th><th>使用它的方案数</th></tr></thead><tbody><tr><td><code>changelog</code></td><td>39</td><td><strong>38</strong></td></tr><tr><td><code>figure</code></td><td>45</td><td>9</td></tr><tr><td><code>asset</code></td><td>39</td><td>4</td></tr><tr><td><code>concept_scene</code></td><td>20</td><td>2</td></tr><tr><td><code>visual_data</code></td><td>18</td><td>2</td></tr></tbody></table></div>
+<p><code>changelog</code> 这一行值得单看：<strong>38 位互不相识的作者，各自独立地伸手去够同一个不存在的槽位。</strong> 一份随包提交变更记录的方案，在枚举里找不到能诚实描述它的 role，于是写下 <code>changelog</code> 并静默失败。这不是三十八次疏忽，这是一次规格缺项。</p>
+<p><strong>本方案当时也在这 117 份里，不作豁免。</strong> 本包当时有 21 处违规、5 种类型，全部来自同一原因：changelog、校验脚本、证据数据这三类文件在枚举里都没有对应项。把 changelog 写成 <code>narrative</code>、把校验脚本写成 <code>visualization</code>，只是为了通过一份没人执行的校验而对机器说假话——这正是本方案通篇反对的那种替换。因此本方案的做法是<strong>把违规声明出来并加一道自己的闸</strong>：<code>visual/assets/manifest_schema_survey.json</code> 逐条列出本包的 5 种违规，<code>analysis/build_all.py</code> 每次构建都重新校验（本文中 <code>analysis/</code> 下的脚本一律只用于说明出处，<strong>均不在提交包内</strong>——该目录被入库规则排除；评审可核验的是随包的 <code>manifest_schema_survey.json</code> 与其中列出的例外清单），出现清单以外的新违规即构建失败。<strong>已声明的例外不能给新的意外提供藏身处。</strong></p>
+<p>修法同样很轻，二选一即可：扩充枚举以覆盖语料实际携带的角色，或在入库校验中执行这份 schema，使缺口在提交当时就可见。两条都不做，等于长期维持一份三分之一语料都不满足的已发布契约——上游已采纳第一条的变体，该次修复后为 <strong>75 份</strong>不满足（855 份中），本包 0 处。全部计数与方法说明已写入配套 Issue #1058 <span class="url">&lt;https://github.com/open-city-ai/haidian/issues/1058&gt;</span>，并随包提交于 <code>visual/assets/manifest_schema_survey.json</code>，任何人可自行重跑复核。</p>
+<p>必须把话说准，本方案不做超出数据的推断：占位符未改<strong>不等于</strong>作者隐瞒模型——相当多作者在 <code>authorName</code> 或正文里写明了；写法离散也不是任何人的错，是字段没有给出枚举。结论严格限于「机器可读字段未填或不可聚合，且闸门不检查它」。母题识别基于中文关键词正则，存在同义表述漏计，所有占比均为<strong>下界</strong>。语料每日增长，引用前须重跑脚本复算。<strong>而这条规矩用在本方案自己身上，恰好产出了比任何单次快照都更强的结论。</strong> 五次独立复测（前四次此前只存在于 <code>changelog.md</code>，即只存在于作者的说法里；现已从 git 历史逐轮重建并随包提交为 <code>visual/assets/census_history.json</code>——<strong>本方案自己的规矩不给作者留例外</strong>）：</p>
+<p>&lt;!-- CENSUSHISTORY:BEGIN --&gt;</p>
+<div class="proposal-table"><table><thead><tr><th>复测</th><th>语料规模</th><th>披露字段为空</th></tr></thead><tbody><tr><td>第一次</td><td>184 份</td><td>29.9%</td></tr><tr><td>第二次</td><td>215 份</td><td>30.7%</td></tr><tr><td>第三次</td><td>228 份</td><td>30.3%</td></tr><tr><td>第四次</td><td>298 份</td><td>29.2%</td></tr><tr><td>本次实测</td><td><strong>793 份</strong></td><td><strong>18.2%</strong></td></tr></tbody></table></div>
+<p>&lt;!-- CENSUSHISTORY:END --&gt;</p>
+<p><strong>重建结果值得单说，因为它不是四行全对。</strong> 按「树内目录数恰好相等的最新提交」逐轮重算：215 份、228 份、298 份三轮与留档值<strong>完全一致</strong>（0.307 / 0.303 / 0.292）；最早的 184 份一轮重建为 <strong>0.304</strong>，留档为 0.299，差 <strong>一份包</strong>。差值不作调和，原因写在 <code>census_history.json</code> 的 <code>method</code> 里：重建取的是目录数相等的最新提交，与当初取数的那一刻不必然是同一时点。<strong>三轮精确重合、一轮差一份</strong>，比四行都对上更能说明这套重建是真的在算，而不是在抄。</p>
+<p><strong>这五轮的结论此前写成「结构性属性」，而本方案自己的下一次读数把它否掉了，因此改写。</strong> 从 git 历史重建出来的四轮里，披露缺口稳定在 29.2%–30.7% 的 1.5 个百分点区间内，当时据此判断它「不取决于谁参加」。本次实测掉出了这个区间——见上表末行。（此前正文还写过一轮 354 份／29.9%，而 <code>census_history.json</code> 里没有它——<strong>那一轮只存在于散文里，从未被重建过</strong>，因此上表只列文件能支撑的四轮加本次实测。）&lt;!-- NUMERATOR:BEGIN --&gt;</p>
+<p><strong>分子的行为可以直接读出来，而且比原结论更有意思。</strong> 本包每次重跑普查都提交一份新的 <code>field_map.json</code>，因此每一次读数都留在本分支的 git 历史里；<code>visual/assets/reading_log.json</code> 把它们全部取回，共 <strong>17 次</strong>读数，语料从 228 长到 793，占位符数依次为 69 → 87 → 102 → 104 → 106 → 106 → 106 → 105 → 107 → 107 → 107 → 109 → 109 → 129 → 131 → 143 → 144；期间占位符数<strong>下降过 1 次</strong>（373→381 时 106→105），说明<strong>存量方案确实被改过</strong>。最长的一段不变是 <strong>107</strong>，持续 3 次读数（语料 394 / 408 / 416）。</p>
+<p><strong>存量占比和增量比例回答的是两个不同的问题，而只有后者支持这一段的论点。</strong> 日志里最大的一次跳变是语料 440→678（新增 238 份），其间占位符只增加了 <strong>20 份</strong>——也就是说，新合入的方案里约 <strong>8.4%</strong> 留空，而全部存量的比例是 <strong>18.2%</strong>。占比在降，主要不是因为有人回头去改了旧包，而是<strong>新来的人本来就填</strong>。这个读法只在语料跳得足够大时才有效力，因此写明它取自哪一段。</p>
+<p><strong>此前这一段写的是「在 381、394、408、416 四次读数上一直是 107」，而日志说 381 那次是 105。</strong> 四写成了三，且方向也写反了：同一段还断言占比下降「不是因为存量被改」，而日志里分子确实下降过。这句话此前是凭记忆写的——它复述的是历次构建时打在屏幕上的数字，而不是任何一个随包文件。<strong>这正是本方案对别人提出的那条要求，用在自己身上的结果</strong>：一个没有文件能支撑的数字，即使是自己测的，也会在复述中走形。日志建起来之后它不会了。</p>
+<p>&lt;!-- NUMERATOR:END --&gt;</p>
+<p>这些发现不削弱这次征集，恰恰相反：它们证明这套开源征集机制<strong>真的在产生可被检验的公共证据</strong>：全部投稿、全部评审记录、全部合入历史都是公开的，因此上面每一条读数都可以被任何人重跑。<strong>此处此前写的是「世界上没有第二个城市项目能被这样测量」——本包没有测过任何别的城市项目，那句话不可能由它支撑，已删。</strong>缺的只是最后一步：把闭合差算出来，并让它有后果。</p>
+<p><strong>这台仪器产出了什么，以及没有产出什么。</strong> 本方案把两组自采数据连同可重跑脚本作为 Issue 公开，随后有另一位贡献者据此向上游提交了实现：</p>
+<div class="proposal-table"><table><thead><tr><th>本方案的 Issue</th><th>上游实现 PR（作者非本方案作者）</th><th>内容</th></tr></thead><tbody><tr><td>#840 全场普查与披露字段问题</td><td><strong>#848</strong> <code>feat: add structured model disclosure fields</code></td><td>正是本方案建议的修法：保留自由文本 <code>model</code>，新增枚举 <code>model_family</code> 与配对 <code>model_detail</code>，并在校验器中成对校验</td></tr><tr><td>#846 OSM 边界交叉核验</td><td><strong>#850</strong> <code>docs: register OSM boundary cross-check limits</code></td><td>将本方案的读数（0% 相交、最近距离 412.5 m、研究范围 100% 覆盖）登记为 <code>background_only</code> 并附 ODbL 署名与禁止用途</td></tr><tr><td>#858 CI 时序竞态</td><td>#861</td><td>head_sha 与实时文件清单不一致导致的排队期误报</td></tr><tr><td>#883 自检证据未持久化</td><td>#807</td><td>自检判定的事务性落盘</td></tr></tbody></table></div>
+<p>需要把话说准的三点。<strong>第一，上述 PR 均由他人实现，本方案只提供了测量、脚本与问题定位</strong>；#848 的措辞是「实现 #840 中低风险的结构化披露部分」，#850 的措辞是「记录 #846 提出的可复现交叉核验」。<strong>第二，四个 PR 中 #848、#850 与 #861 已于 2026-08-09 合入上游</strong>：<code>model_family</code>（枚举 8 值：gpt / claude / deepseek / qwen / glm / kimi / grok / other）与 <code>model_detail</code> 现已是仓库规则的一部分；而 #850 把本方案的 OSM 交叉核验写入了仓库自己的 <code>provisional_boundaries_basis.md</code>，引用 Issue #846 并载入 17.49 ha 与 412.5 m 两个读数。#861 修复了本方案在 Issue #858 报告的校验时序竞态（排队期推送必然 404），合入后排队中的旧运行会以成功状态退出并把校验交给新运行；<strong>这条修复同时解除了本方案自己此前的操作纪律——「有运行排队时不得推送」。</strong> 仅 #807 尚未合入，本方案不把它表述为已生效规则。<strong>需要说准一处分寸</strong>：#850 明确写明 OSM 结果「未作为中央 <code>data/source_registry.json</code> 的可重放来源」，因此本方案 <code>sources.json</code> 中对该数据的 <code>background_only</code> 定级<strong>保持不变，不因被上游记录而升格</strong>——被记录不等于被登记，这两件事本方案不混用。<strong>本方案已在 <code>agent.json</code> 与 <code>manifest.agent</code> 中采用这两个新字段</strong>——既然本方案主张该字段应当可聚合，就不能在它可用之后仍然不用。顺带一提，上游枚举定为 8 个值，而本方案独立归并实测得到 9 个桶——多出的一个是 Gemini，在上游枚举里没有位置，只能落进 <code>other</code>。该次修复后为 <strong>8 值对 9 桶</strong>：此前这句写成「一致」，是把相互印证说得比数据更漂亮。<strong>第三，展示索引滞后在 31–44–6–45 之间起伏一事，本方案不归功于自己</strong>——无法证明因果。</p>
+<p>写出这一节不是为了记功，而是因为它构成对本方案核心主张的一次外部检验：一个可被独立重跑的读数，确实被另一方复现并采纳了。<strong>这正是闭合差机制要求的那种事——读数由不同主体独立取得，并因此产生后果。</strong> 本方案自己也接受同一条规矩：若上游最终判定这些测量有误，本方案须整体重算，而不是保留有利部分。</p>
+<p>京张水准线，就是补上这一步的仪器。而这台仪器接下来要装在最需要它的地方。</p>
+<h3>第二幕：把同一台仪器用在场地上，它测出了场地数据本身的闭合差</h3>
+<p>第一幕测的是这次征集，那毕竟是纸面。真正的检验是：<strong>这台仪器用在海淀本身，能不能测出东西。</strong></p>
+<p>本方案因此对场地做了一次独立复核。方法与闭合差完全一致——<strong>同一个对象，经两条独立路径测量，比较差值</strong>：</p>
+<ul>
+<li>路径甲：公告的文字四至（北至北五环路、东至京藏高速、南至西直门外大街、西至万泉河路）→ 仓库据此推定的 <code>provisional_boundaries.geojson</code></li>
+<li>路径乙：OpenStreetMap 中实际测绘的「京张铁路遗址公园」多边形与废弃铁路线形</li>
+</ul>
+<p>两条路径都不依赖官方 polygon，都可被任何人重跑。结果：</p>
+<p>&lt;!-- OSMTABLE:BEGIN --&gt;</p>
+<div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td>实测公园面积（OSM 已测绘段）</td><td><strong>17.49 ha</strong></td></tr><tr><td>与临时<strong>总体设计范围</strong>的相交面积</td><td><strong>0.0 ha（覆盖 0.0%）</strong></td></tr><tr><td>与该边界的最近距离</td><td><strong>412.5 m</strong></td></tr><tr><td>与临时<strong>统筹研究范围</strong>的关系</td><td>100% 完全包含 ✓</td></tr><tr><td>废弃铁路</td><td>14 段，3,028 m；其中 683.7 m 落在临时总体设计范围内</td></tr><tr><td>本方案提交主脊到实测公园</td><td>1,116.7 m</td></tr></tbody></table></div>
+<p>全部读数由 <code>node visual/assets/check_osm.js</code> 从随包坐标独立复算，投影 EPSG:4548；OSM 为众包数据，其限度登记为 <code>A-OSM-001</code>。</p>
+<p><strong>「本方案主脊到实测公园 1,116.7 m」这个数需要解释，否则它会被读成一个选址错误。</strong></p>
+<p>一位独立评图人读到它，结论是「主脊没有画在场地上，应当改到真实线位」。这个结论从这一个数看是合理的，但把组织方给的几何一起量就不成立：</p>
+<div class="proposal-table"><table><thead><tr><th>量</th><th>值</th><th>由谁决定</th></tr></thead><tbody><tr><td>临时<strong>总体设计范围</strong>到实测公园</td><td><strong>412.5 m</strong>（不相交）</td><td>组织方的 provisional geometry</td></tr><tr><td>本方案主脊到实测公园</td><td>1,116.7 m</td><td>本方案</td></tr><tr><td>若把主脊改到设计范围<strong>西边界</strong></td><td>414.7 m</td><td>上限即 412.5 m</td></tr></tbody></table></div>
+<p><strong>实测公园整体落在临时总体设计范围之外</strong>——这不是本方案的取舍，是组织方几何本身如此，本包在上表第二行就公布了它。因此「把主脊画到真实线位」意味着<strong>把主轴移出设计范围</strong>。</p>
+<p>而设计范围内的最优解也不是西边界。三处重点区（组织方给定）的形心在 lon 116.3475–116.3485，主脊正走在那条线上；西边界在 116.3397。<strong>把主脊贴到西边界，可以把到公园的距离从 1,117 m 压到 415 m，代价是它同时离开全部三处重点区</strong>——而串起这三处正是主脊要做的事。</p>
+<p>所以本方案的选择是：主脊穿三处重点区，与实测公园保持 1,116.7 m，并把这个差公布在图上。<strong>这不是一个能靠移线消掉的差，它的下限由组织方的临时几何决定；公开它，是为了在官方 polygon 发布后能一眼看出该重算什么。</strong></p>
+<p>&lt;!-- OSMTABLE:END --&gt;</p>
+<p><strong>这就是一个闭合差，而且它在场地数据上，不在纸面上。</strong> 43.6 km² 的统筹研究范围与 OSM 完全吻合，说明公告的四至文字与实际地理没有矛盾；但<strong>11.4 km² 的临时总体设计范围与实际测绘的公园不相交，最近处相距 412.5 m</strong>。两条路径回到同一个对象，没有闭合。</p>
+<p>必须把话说到位、不越界：</p>
+<ul>
+<li>OSM 是众包数据，其公园多边形<strong>可能只覆盖已建成并被测绘的一段</strong>，不等于规划全域；</li>
+<li>临时边界本身也明确标注为按文字四至<strong>推定</strong>，仓库的 <code>provisional_boundaries_basis.md</code> 已说明其误差；</li>
+<li><strong>本方案不判定哪一方正确</strong>，只报告两者差 412.5 m 这一可复算事实。真正的裁决需要官方 polygon。</li>
+</ul>
+<p><strong>本方案对自己的披露。</strong> 同一次测量也测到了本方案自己：<strong>提交的主脊中心线距 OSM 测绘的公园最近处 1,116.7 m。</strong> 因为主脊是依临时总体设计范围生成的，而该范围本身偏东。这句话对本方案不利，但不写出来，本方案关于「可复算」的全部主张就都是空的。</p>
+<p>那么为什么不把主脊移过去？因为<strong>本包必须在声明的边界内自洽</strong>——空间自检要求全部图层落在提交的 <code>site_boundary.geojson</code> 内，而该文件按仓库要求取自临时边界。移动主脊会使包内不一致，那是用一个错误换另一个错误。</p>
+<p><strong>真正的答案是这套设计本身的性质：水准网是边界相对的，不是坐标绝对的。</strong> 分级（原点/一等/二等/三等）、附合路线的闭合逻辑、跨管辖读数规则、限差分级——这些在边界平移后<strong>全部不变</strong>，改变的只是标石落在哪里。这正是本方案坚持「官方 polygon 发布后整体重算而非局部替换」的原因：重算的是位置，不是机制。</p>
+<p>OSM 原始坐标与全部口径随包提交于 <code>visual/assets/osm_reference.json</code>，并由随包的 <code>node visual/assets/check_osm.js</code> 从这些坐标独立复算（抓取脚本无法进包，入库格式白名单不含 .py） <span class="evidence evidence-source">[source:OSM-REFERENCE-2026-08]</span>，可重跑复算。这一节的全部内容画在下图里——<strong>推定边界、实测公园、本方案落位与那 412.5 m 的红线在同一张图上按比例呈现</strong>。文字里的差异是断言，按比例画在自己的后果旁边才是证据。该图同时是本包唯一一张画出七类用地剖分的图纸，并按《提交指南》对 <code>site-overview.png</code> 的定义呈现总体概念、主轴、核心节点与 official/provisional 状态。</p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="FIG.01 总体概念与场地复核：主轴、核心节点、推定边界与实测公园"><figcaption>FIG.01 总体概念与场地复核：主轴、核心节点、推定边界与实测公园</figcaption></figure>
+<h4>第三个可测的机制缺口：一道从未触发过的闸门，和两处建立在八份样本上的诊断</h4>
+<p>前两处是「字段有了、采用率低」与「契约发布了、没人执行」。第三处是本方案测到的最锋利的一处，因为它同时纠正了包括本方案在内的三方判断。</p>
+<p>评审脚本 <code>ai_review_submission.py</code> 的 <code>publication_recommendation</code> 只在<strong>分数 ≥85 且 <code>required_next_actions_zh</code> 为空</strong>时返回 <code>featured-candidate</code>。Issue #950 抽样八份，在八份里都找到一条组织方几何重算项，据此判定「组织方数据缺口间接封杀了 featured-candidate」；PR #957 依此写了修法，把 <code>组织方：</code> 前缀的 action 分流到 <code>data_gaps_zh</code>。</p>
+<p><strong>本方案此前赞同这个诊断，并把「featured 不可达是因为组织方数据缺口」当作既定事实。测完之后，这句话不成立。</strong></p>
+<p>对<strong>全部 1,069 个 PR</strong>（非抽样，含全部 review body、comment body 与标签事件）实测：</p>
+<div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td><code>review/formal-ready</code> 曾被附加的次数</td><td><strong>0</strong></td></tr><tr><td><code>publication_recommendation</code> 为 <code>publish-qualified</code> 的 verdict</td><td><strong>0 / 156</strong>（156 份全部为 <code>do-not-publish</code>，随包 <code>review_repeatability.json</code>）</td></tr><tr><td>匹配 #957 字面规则的 action item</td><td><strong>0 / 1,203</strong></td></tr><tr><td>携带自动汇总项的 verdict</td><td><strong>146 / 146</strong></td></tr><tr><td>四种判定规则下会翻到 <code>featured-candidate</code> 的 PR</td><td><strong>0 / 0 / 0 / 0</strong></td></tr></tbody></table></div>
+<p>三条各自独立成立：</p>
+<p><strong>一、这条已撤回，而撤回本身是这一节最该读的部分。</strong> 本方案最初写的是：#957 的匹配器要求带冒号前缀，而 1,203 条历史 action 匹配数为 0，因此它是空集。发表两小时后，#950 的作者 @Sonike 指出这个推断不成立——<strong>那 1,203 条全部产生于旧 prompt，而旧 prompt 从未要求模型输出该前缀；在一个不要求它的语料里统计它的出现率，结果必然是 0。</strong> #957 同时修改了 prompt，他在新 prompt 下实测 5 次采样中 4 次输出前缀、全部为精确格式。</p>
+<p><strong>这与本方案刚刚指出他的错误是同一个形状</strong>：拿一个测量去回答它回答不了的问题。他的八份样本证明「这八份里组织方项都在」，证不出「组织方项是原因」；本方案的 1,203 条证明「旧 prompt 下没人写这个前缀」，证不出「新 prompt 下匹配器不会命中」。<strong>本方案用了不到两小时犯了同一个错。</strong> 该计数在随包 JSON 里保留并加注为「旧口径下的必然值」，因为它对历史语料成立——但它不再是任何结论的依据。</p>
+<p><strong>二、即使匹配器完美也不通。</strong> 汇总项 <code>完成七维评分中列出的 N 项详细 required repairs</code> 在组织方拆分<strong>之前</strong>被 append，且不带组织方前缀，因此必然落进参与者一侧——146 份 verdict 全部携带它。</p>
+<p><strong>三、组织方项从来不是唯一阻塞项。</strong> 在最宽松的剥离之后，剩余参与者 action <strong>全部在 3 条以上</strong>——随包文件把它分桶为「3+」，最小值本身没有被保留下来，因此这里不给出一个它支撑不了的数；「仅剩组织方项」的 PR 数在四种规则下都是 0。</p>
+<p>组织方依赖当然真实（<code>官方</code> 122 次、<code>重算</code> 59、<code>组织方</code> 45）。测量只说明一件事：<strong>移除它们不改变任何一个结果。</strong></p>
+<p><strong>这处发现的形状，正是本方案通篇在讲的那一件事</strong>：#950 与 #957 都是认真的工作，八份样本给出的诊断在八份里都成立，据此写的修法在逻辑上也自洽——<strong>差别不在认真程度，在 n</strong>。一次读数看不出系统性偏差，全量能。这也是为什么本方案主张的不是「更谨慎地判断」，而是「把判断建立在可被别人重跑的读数上」：全部计数、归类规则与匹配字符串随包提交于 <code>visual/assets/review_gate_survey.json</code>，任何人可以改了规则重跑，包括改到与本方案结论相反。</p>
+<p><strong>这一节还有一个后续，它把结论从「概率很低」推到「从未接近过」。</strong> #950 的作者 @Sonike 在接受纠正后回头定位了汇总项的确切触发条件：<code>repair_count &amp;gt; 0</code> 即无条件追加，而七维中得 5 分的维度里仍有 56% 带着 <code>required_repairs_zh</code>（他的 20 次采样），据此估算七维同时干净的概率约 0.3%。</p>
+<p>本方案用全量把这个估计换成了观测——<strong>汇总项本身写着 repair 总数</strong>，因此 146 份历史 verdict 的 <code>repair_count</code> 可以直接读出：</p>
+<div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td><code>repair_count</code> 观测最小值</td><td><strong>17</strong></td></tr><tr><td>分数 ≥85 的三份，其 repair 数</td><td>17 / 20 / 21</td></tr><tr><td>七维全部 5/5 的 verdict</td><td><strong>0</strong></td></tr><tr><td>单份 verdict 中 5/5 维度的最大数量</td><td><strong>4 / 7</strong></td></tr><tr><td>加权分与 repair 数的相关</td><td><strong>r = −0.240</strong>（n=156，随包 <code>review_repeatability.json</code>）</td></tr></tbody></table></div>
+<p>闸门要求 <code>required_next_actions_zh</code> 为空，即 <code>repair_count == 0</code>。<strong>历史上最接近的一次是 17。</strong> 而 89 分那份带 17 条、57 分那份也带 17 条——<strong>这条闸门测的不是质量档位，是「评审有没有话说」，而评审总是有话说。</strong></p>
+<p><strong>本方案不就此建议放宽，理由与他相同且更明显</strong>：本包上一版得分 91，是这份数据里 ≥85 的三份之一，在这件事上没有中立立场。只摆机制和数字，不建议修改，不申请任何档位调整。是否放宽取决于组织方希望 <code>featured-candidate</code> 表达什么——那是策划判断，不是技术缺陷。</p>
+<p>已发于 Issue #950 与 PR #957。</p>
+<p><strong>后记：#957 已于 2026-08-10 合入，因此上面这段可以对着已合入的代码重说一遍，而不再是对着一份提案。</strong> 组织方项分流已生效：带 <code>组织方：</code>／<code>主办方：</code> 前缀的 action 现在被移入 <code>data_gaps_zh</code>，不再计入 <code>required_next_actions_zh</code>。<strong>而汇总项不受影响</strong>——<code>ai_review_submission.py</code> 里那段在 <code>repair_count &amp;gt; 0</code> 时无条件追加的句子，不带任何前缀，因此仍然进入 participant actions，仍然使列表非空。</p>
+<p>所以本节的结论在合入后原样成立，且现在的依据比原来强：<strong>它不再依赖对一份提案会如何生效的推断，而是读已合入的代码得到的。</strong> 历史 <code>repair_count</code> 的观测最小值仍是 17。</p>
+<h4>第四个可测的机制缺口：一个决定警告条数、却不与任何东西联接的字段</h4>
+<p>&lt;!-- SPATIAL:BEGIN --&gt;</p>
+<p>这一处的起点是本包自己的 PR 上比别人多出的那一串警告。<strong>每一份提交的确定性校验结果都写在 PR 上，因此警告条数是这场征集里为数不多的、任何人都能横向比较的数字之一。</strong> 本包的警告里有 14 条来自同一个字段：<code>spatial.json</code> 的每一个 <code>public_level: &amp;quot;provisional&amp;quot;</code> 各发一条。</p>
+<p>按本方案自己的规矩，在为这个差别写下任何一句话之前先去量。结果是：全场 <strong>371 份</strong>方案中有 <strong>20 份</strong>提交了 <code>spatial.json</code>，合计 <strong>231 个</strong>概念对象，三档分布为 <strong>public 56 / cleared 2 / provisional 173</strong>。<strong>13 份</strong>包里每一条都是 provisional，<strong>6 份</strong>至少有一条 public。本包 14 条全部 provisional，按警告条数排在 <strong>第 3 位／共 20 份</strong>。</p>
+<p><code>validate_submission.py</code> 对这个字段只做两件事：检查取值属于 <code>{public, cleared, provisional}</code>，以及对 provisional 逐条发警告。<strong>它不与 <code>sources.json</code> 联接，不与 geometry 联接，也不与该对象所依托的边界联接</strong>；<code>docs/spatial.md</code> 用一行给出定义。也就是说，这个值完全自述、无人校验，而三个取值里恰好只有一个会产生警告。</p>
+<p><strong>这份测量支持的结论，比它初看起来能支持的窄得多。</strong> 定义只有一行，几何模式又统一是 <code>concept</code>，因此同一个概念节点在两份描述方式相同的方案里可以诚实地落在不同档上。<strong>能得出的只有一条：警告条数不可跨包比较。</strong> 得不出的是任何一份包选错了——本方案没有测出那件事，因此不说那句话，也不点名任何方案。</p>
+<p><strong>本方案在这个问题上不是中立的，和上一节一样先声明：</strong>本包 14 条全部是 provisional，任何把条目移出 <code>public</code> 的校验都会相对抬高本方案的位置。因此这里只报告分布，不提出修改建议，也不申请把自己的档位改成不发警告的那一个——<strong>本包的边界确实是临时的，<code>provisional</code> 是对它唯一诚实的写法</strong>，为了少 14 条警告去改写它，就是本方案通篇反对的那件事。</p>
+<p>全部计数、逐包画像与判别口径随包提交于 <code>visual/assets/spatial_level_survey.json</code>，<code>fetch</code> 联网取数、<code>report</code> 完全离线，任何人可以改了口径重跑。</p>
+<p>&lt;!-- SPATIAL:END --&gt;</p>
+<h4>第五个可测的机制缺口，也是本方案唯一一次把仪器对准打分本身</h4>
+<p>&lt;!-- REPEAT:BEGIN --&gt;</p>
+<p>几何水准不因为仪器报了一个高程就相信它。它走一圈回到起点，把同一个点读两次，两次之差叫<strong>闭合差</strong>——那是关于这台仪器可信到什么程度的唯一诚实说法。本方案通篇主张一座城市应当为自己的系统公开这个数。</p>
+<p><strong>给本方案打分的这台仪器，已经在同一个点上被读过很多次，而这个差没有人发表过。本节把它测出来。</strong></p>
+<p><strong>控制项是一个 commit，不是一份文件清单。</strong> 最紧的重复测量就是同一个 head SHA 被评审多次：此时整棵树按定义逐字节相同，因此不需要对「评审读了哪些文件」做任何假设，关于那份清单的任何争论也动摇不了结论。本方案的早期版本恰恰去比对评审输入文件集，而且把清单读错了三处——记录为勘误 E35。</p>
+<p>在全部 <strong>949 条</strong>已发布评分中，<strong>930 个</strong>不同的 head commit 里有 <strong>12 个</strong>被评审了不止一次，涉及 <strong>31 条</strong>读数。</p>
+<div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td>池化组内标准差</td><td><strong>3.89 分</strong>（自由度 19）</td></tr><tr><td>两倍标准差带</td><td><strong>±7.8 分</strong></td></tr><tr><td>同一 commit 观测到的最大跨度</td><td><strong>13 分</strong></td></tr><tr><td>重复评审完全一致的 commit</td><td><strong>3 / 12</strong></td></tr><tr><td>跨度中位数</td><td>4.0 分</td></tr></tbody></table></div>
+<p>最极端的一个：PR #563 的 commit <code>62e0430242</code> 被评了 <strong>4 次</strong>，得分依次为 <strong>91 → 94 → 81 → 93</strong>——同一棵树，跨度 13 分。</p>
+<p><strong>于是：仪器把同一个点读了很多次，读数散布在约 8 分宽的带子里。</strong></p>
+<p><strong>这里有一个对本方案有利的读法，本节明确不采用。</strong> 本包本身没有同一个 commit 被评两次的情形，因此不在上面的对照组里；但它有一对近似对照——#1122 得 94，十七分钟后 #1125 得 91，而两次之间 <code>proposal.md</code> 逐字节相同，评审可见文件里唯一的差异是 <code>manifest.json</code> 中两个 <code>sha256</code> 字符串，且那两份文件不在评审输入里。<strong>本方案不申请重评、不申请任何调整</strong>：一份要求保留自己较高那次读数的包，做的正是本方案通篇反对的事。</p>
+<p>它支持的结论比这窄，而且对本方案同样不利：<strong>两份方案之间小于这个带宽的分差，不是这台仪器分辨得出来的差别。</strong> 本包目前正处在若干个这样的分差的有利一侧。</p>
+<p><strong>这不是对评审的批评。</strong> 一台会精确重复的仪器不存在；水准仪也不存在，所以才要走闭合环。可批评的从来不是读数有偏差，而是<strong>读数的偏差没有被公开</strong>——这正是本方案对这条创新带提出的全部主张，此刻恰好落回它自己身上。这里最有用的一条推论，恰恰是本方案自己得不到好处的那一条：<code>publication_recommendation</code> 里 65 与 85 两条阈值线，其两侧的差别小于这台仪器自身的重复性。</p>
+<p><strong>这个数被两个方向的不可观测量夹住，两条都写在随包 JSON 的 <code>limits_zh</code> 里。</strong> 其一：同一 commit 的重复评审可能命中队列缓存而根本没调用模型，那会返回完全相同的分数——因此「完全一致」的比例是上界，标准差是<strong>下界</strong>。其二由 @147228 <span class="url">&lt;https://github.com/147228&gt;</span> 在 Issue #950 与 PR #1190 中指出，它比本方案原先写的更锋利：<strong>同一个 commit 不保证同一台仪器</strong>。缓存命中此前只比对目录与包摘要，不校验 model、endpoint、reasoning effort、prompt/schema 或评审策略代码，因此同一 head 上的两次读数既可能是同一配置的两次采样，也可能来自两套配置。<strong>本节测的因此是「同一份输入的两次读数差多少」，不是「这台仪器有多可重复」</strong>——两者只在评审身份不变时相等，而那一点当前不可观测，这一区分记为勘误 E40。#1190 让身份随决定落盘并要求一致才复用缓存；它合入后，这个区分第一次可以从数据里做出来。全部分组、每次读数与统计口径随包提交于 <code>visual/assets/review_repeatability.json</code>，<code>report</code> 完全离线，任何人可以自己重跑。</p>
+<p>&lt;!-- REPEAT:END --&gt;</p>
 <h2>风险、版权与合规说明</h2>
 <p>本节对应 <span class="evidence evidence-depth">[depth:risk_missing_data]</span>。</p>
 <p><strong>空间数据风险</strong>：官方 polygon 缺失，本包全部空间结论基于 provisional 边界 <span class="evidence evidence-source">[source:BOUNDARY-SOURCE]</span> <span class="evidence evidence-source">[source:KEY-AREA-SOURCE]</span>，仅供讨论与自检，不得用于审批、精确面积或法定管控 <span class="evidence evidence-source">[source:SOURCE-REGISTRY]</span>。</p>
@@ -834,7 +835,7 @@ code {
 <p>1. <code>node visual/assets/verify.js</code> —— 独立重算 <code>metrics.json</code> 里全部 23 条 <code>metric_class: 1</code> 指标，并<strong>双向断言这一覆盖</strong>（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 <code>[data:]</code> 锚点均可解析。退出码即结论； 2. <code>node visual/assets/check_osm.js</code> —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测； 3. <code>node visual/assets/check_cards.js</code> —— 逐张场景卡把水准点、空间锚点、退出量与执行角色解析到实际对象；<code>--selftest</code> 用八份人为改坏的卡片证明这些检查会拒绝； 4. <code>node visual/assets/check_closure.js</code> 与 <code>run_s08_tabletop.js</code> —— 闭合差机制的数据契约与十例桌面演练； 5. <code>visual/assets/census.json</code> / <code>field_map.json</code> —— 全场普查原始数据与统计结果； 6. <code>geometry/*.geojson</code> —— 九个图层，每个要素带 <code>source_type</code>、<code>geometry_role</code>、<code>official_boundary</code> 属性； 7. <code>visual/assets/osm_reference.json</code> —— 场地复核的原始读数及其明确声明的限度； 8. <code>visual/assets/accessibility_qa.json</code> 与 <code>parity_qa.json</code> —— 实算对比度、A0 最小字高、HTML 结构检查与双语逐节内容对等；<code>label_collision_qa.json</code> 逐张图判定「一行字压在另一行字上」（首次运行即在 19 张图上找到 51 对）；<code>i18n_order_qa.json</code> 判定英文模板是否把数字填错了位置（找到三处，英文读者此前看到的是「at the 27 m distance FIG.3.0 fixes」）； 9. <code>risk.json</code> —— 八维风险自评，含缓解措施与人工复核要求； 10. <code>changelog.md</code> —— <strong>含本方案自查发现并修正的错误记录</strong>； 11. <code>agent.json</code> —— 生成方法完整披露，<code>model</code> 字段非占位符； 12. A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 <code>pypdf</code> 核验 <code>DescendantFonts</code> 下 <code>FontFile3</code> 存在（中日韩字体走这条；拉丁面 DejaVuSans-Bold 是简单 <code>/TrueType</code>，子集嵌在 <code>FontFile2</code>，因此只查 <code>FontFile3</code> 会漏看它——它同样已子集嵌入）。</p>
 <p><strong>先说清楚这份清单是给谁的。</strong> 仓库的 <code>scripts/review_submission.py</code> 只把九个文件整份交给评审模型——<code>proposal.md</code>、<code>manifest.json</code>、<code>metrics.json</code>、<code>assumptions.json</code>、<code>sources.json</code>、<code>self_check.json</code> 与三份矩阵——外加五张固定 PNG、四份 PDF（中英各两份）各自的<strong>第一页</strong>（图像）和两张首屏截图。它<strong>不读</strong> <code>geometry/</code>、<code>visual/assets/</code>、<code>risk.json</code>、<code>changelog.md</code> 与 <code>agent.json</code>。</p>
 <p>因此上面 12 项里，<strong>AI 评审能按字面执行的是 0 项</strong>：其余各项指名的文件不在它收到的东西里。<strong>拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。</strong>这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。</p>
-<p><strong>FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。</strong> 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 <strong>0.72 秒</strong>；另有 9 份文件、1037 KB、1,632 条要读，逐条读数随包提交于 <code>visual/assets/review_route.json</code>。计时界定的是<strong>工作量</strong>而不是难度。</p>
+<p><strong>FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。</strong> 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 <strong>0.73 秒</strong>；另有 9 份文件、1037 KB、1,632 条要读，逐条读数随包提交于 <code>visual/assets/review_route.json</code>。计时界定的是<strong>工作量</strong>而不是难度。</p>
 <p><strong>这条披露有时效，因此写明进度。</strong> 缺口已提为上游 Issue #2170，维护者提交了 PR #2181：在 review-input 里新增可审计的访问边界，明确参赛者的校验脚本从不执行，并修正评审 prompt——<strong>不得仅因模型打不开一个已登记的 artifact 就扣分或判 gate 失败</strong>。合入后上面的「0 项」不变，变的是它的后果：可达性不再被误读为投稿方没有提供。本包已按该恢复路径做过——关键推导同步写进 <code>assumptions.json</code> 与 <code>metrics.json</code>，三份矩阵逐行标注证据的可达程度。</p>
 <p>&lt;!-- CHECKLIST:END --&gt;</p>
 </main>
