@@ -2,7 +2,7 @@
   "schema_version": "0.2.0",
   "package_id": "shenglihalisen-centennial-jingzhang-ai-belt",
   "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "2026-08-15-shenglihalisen-v4",
+  "site_package_version": "2026-08-15-shenglihalisen-v5",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
@@ -91,6 +91,22 @@
       "role": "drawing",
       "required": true,
       "sha256": "59e8eb7abe9d0cb56ac5bd53f27fc9b645663e46d7290a5a53c77323baf2dcb6"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "sha256": "2208d7fb8636de346bc649514606332c3efd12c57835d870607b68af4e76ece3",
+      "language": "en",
+      "translation_of": "drawings/a0-boards.pdf"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "sha256": "5a29c8fd5bd46e4cffcf4c9c53c38d7069dea937bb6cb7fa4b4fa724d6aecef1",
+      "language": "en",
+      "translation_of": "drawings/a3-booklet.pdf"
     },
     {
       "path": "geometry/buildings.geojson",
