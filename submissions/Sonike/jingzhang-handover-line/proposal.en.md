@@ -388,6 +388,33 @@ Urban character uses a "railway maintenance ledger" vocabulary: coal-black struc
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
+### The four parts of feasibility: phase path, pilot areas, participating parties and metrics
+
+Feasibility is most often reduced to "delivered in three phases". This section splits it into four separately checkable things, each pointing at a file in the package rather than at a claim in the prose.
+
+| Element | What is provided | Where it can be opened and checked | Condition to proceed |
+| --- | --- | --- | --- |
+| **Phase path** | Three **condition gates**, not a timetable: gate 1 "return to baseline" (official data completed, existing-condition survey, public wayfinding, low-risk human-led pilots); gate 2 "open-source handover ground" (must inherit gate 1's positive and negative results; tenure, fire, community and accessibility reviews passed); gate 3 "whole-belt operation" (must further pass transport, municipal, heritage, privacy, safety and sustained-budget review) | `geometry/phasing.geojson` records entry gate, acceptance gate and rollback state per phase, and **fixes no calendar year** | Not inheriting the previous gate's results means no entry to the next |
+| **Pilot areas** | Three handover grounds (Zhongzhiyuan build, origin-community open-source, Dazhongsi civic) plus two self-selected vertical trial stretches (Xueyuan Road education/software, Xizhimenwai daily-service/health) plus twelve scenario nodes | `geometry/key_areas.geojson`, `geometry/public_space.geojson#SCN-01…12` | No siting until site rights and the accountable party are granted |
+| **Participating parties** | Eight **post specifications** (not appointments): qualifications, authority, no-cover conditions and escalation path; each of P01–P06 names its A / R / C-I roles | `visual/assets/governance/role-spec.json`, where `assignment_status` is uniformly `unassigned` and constrained to a constant in the schema | Role assignment is for the competent authorities; no release until both sides of the control pair are appointed |
+| **Metrics** | **47 metrics, 36 of them assigned and recomputable**; each of the 11 unassigned ones carries a full measurement protocol | `metrics.json` (with `formula` and `source_file`), `visual/assets/governance/measurement-protocol.json` | Any failed publication gate keeps the metric unassigned |
+
+### The "metrics" row needs its own note: unassigned is not the same as absent
+
+**A metric and a target are two different things.** Of the 47 metrics here, **36 are already assigned** — site area, green ratio, public-space share, spine length, scenario-node count, land-use element count and so on — all recomputable in EPSG:4548 from the stated `formula` and `source_file`, so anyone with the same geometry arrives at the same number.
+
+The **11** unassigned ones fall into two classes, neither of which a design team is in a position to set:
+
+| Class | Metrics | Why they stay `unknown` |
+| --- | --- | --- |
+| Statutory control | Floor area ratio, building height, density, total floor area, road area and road ratio | These must come from official regulatory planning, urban design guidance, heritage conditions and transport/municipal capacity together; a design team assigning them would be fabricating a statutory conclusion |
+| Industrial performance | AI innovation index, talent density, output scale, renewed building scale, target AI enterprise count | These need the competent authorities' targets and a real operating baseline; assigning them without authority or baseline would be invention |
+
+**But "unassigned" is not "unmanaged".** Each of the 11 states twelve things in `measurement-protocol.json`: definition, data-source type, collecting role, sampling unit and scope, frequency or trigger, denominator, missing-value handling, quality checks, dispute review, privacy and retention, and the publication gate. Three boundaries live in the schema rather than in prose — `baseline` and `target` are typed as `null` (no number can be introduced without changing the schema), missing-value handling **forbids interpolation and substitution by district averages**, and if any publication gate fails the metric stays unassigned.
+
+**Publishing a measurement protocol is not publishing a target.** The measurement basis is method; the target is a decision for the competent authorities. This proposal finishes the method and leaves the decision to those entitled to make it.
+
+
 Twelve minimum projects begin with reversible public value: basic shade and wayfinding, red-team desk, robot sandbox, energy test, public handover table, research relay, accessible copilot, visible maintenance stop, civic handover hall, Century Logbook, oral-history booth and Handover Week route. Every project needs an owner, licence, maintenance budget, exit plan, deletion method and continuity arrangement. The project-list depth is recorded by [depth:renewal_project_list].
 
 Three conditional phases [metric:phase_count] are represented in [data:geometry/phasing.geojson#PHASE-001]. Gate 1 returns to a trustworthy baseline through official data, inventory and low-risk human-led pilots. Gate 2 must inherit Gate 1's positive and negative results and opens the central handover yard only after ownership, fire, community and accessibility review. Gate 3 considers belt-wide operation only after transport, utilities, heritage, privacy, safety and recurring-budget tests. `phasing.geojson` no longer assigns calendar years; each feature instead records a distinct entry gate, acceptance gate and rollback state. Their areas are [metric:phase_1_area_sqm], [metric:phase_2_area_sqm] and [metric:phase_3_area_sqm]. Evidence, not dates, triggers delivery under [depth:phasing_implementation].
