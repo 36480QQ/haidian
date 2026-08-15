@@ -1,7 +1,7 @@
 {
  "generated_by": "analysis/build_review_route.py",
- "note_zh": "**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这七份文件」是一句话，跑一遍要多久是一个没人问过的问题。这里问了：实跑、计时、把要读的东西按它自己的单位数出来，并公布总数。",
- "note_en": "**FIG.21 measured the walk to a benchmark; this package had never measured the walk through its own evidence.** \"Run these five scripts and read these seven files\" is a sentence, and how long it takes is a question nobody had asked. Asked here: run, timed, counted in each file's own units, total published.",
+ "note_zh": "**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这九份文件」是一句话，跑一遍要多久是一个没人问过的问题。这里问了：实跑、计时、把要读的东西按它自己的单位数出来，并公布总数。",
+ "note_en": "**FIG.21 measured the walk to a benchmark; this package had never measured the walk through its own evidence.** \"Run these five scripts and read these nine files\" is a sentence, and how long it takes is a question nobody had asked. Asked here: run, timed, counted in each file's own units, total published.",
  "runnable": [
   {
    "command": "node visual/assets/verify.js",
@@ -32,7 +32,7 @@
    "what_zh": "把闭合机制当作数据契约执行",
    "what_en": "Execute the closure mechanism as a data contract",
    "exit_code": 0,
-   "seconds": 0.03,
+   "seconds": 0.02,
    "first_line": "Closure record check"
   },
   {
@@ -40,7 +40,7 @@
    "what_zh": "S08 桌面推演，含拒绝分支",
    "what_en": "The S08 tabletop run, refusal branches included",
    "exit_code": 0,
-   "seconds": 0.24,
+   "seconds": 0.25,
    "first_line": "S08 closure-mechanism tabletop"
   }
  ],
@@ -65,9 +65,9 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 414830,
+   "bytes": 423141,
    "unit": "entries",
-   "count": 159
+   "count": 161
   },
   {
    "path": "visual/assets/gate_mutation.json",
@@ -81,7 +81,7 @@
    "path": "visual/assets/naming.json",
    "what_zh": "命名体系规则",
    "what_en": "The naming system as rules",
-   "bytes": 11772,
+   "bytes": 12376,
    "unit": "families",
    "count": 24
   },
@@ -105,7 +105,7 @@
    "path": "changelog.md",
    "what_zh": "含本包自己查出并改正的错误",
    "what_en": "Including the errors found and corrected here",
-   "bytes": 58915,
+   "bytes": 58928,
    "unit": "lines",
    "count": 547
   },
@@ -120,19 +120,19 @@
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.71,
+  "seconds_to_run_every_verifier": 0.72,
   "files_to_read": 9,
-  "bytes_to_read": 1001249,
-  "units_to_read": 1614
+  "bytes_to_read": 1010177,
+  "units_to_read": 1616
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",
-  "「读」的用时不在此列：一个人读 287 条勘误要多久，本包无法代为测量，因此只给出要读的条目数与字节数。",
+  "「读」的用时不在此列：一个人读一百多条勘误要多久，本包无法代为测量，因此只给出要读的条目数与字节数。",
   "**这条路线对评审模型不成立**：`scripts/review_submission.py` 只交九个文件的原文，十二项里它一项也执行不了。这条限制此前已公布，此处不因这份计时而改口。"
  ],
  "limits_en": [
   "Timings are wall-clock from one machine and one run. They bound **effort**, not difficulty; another machine will differ, the counts beside them will not.",
-  "Reading time is not included: how long a person takes over 287 errata entries is not something this package can measure for them, so it publishes the number of entries and bytes instead.",
+  "Reading time is not included: how long a person takes over the errata register is not something this package can measure for them, so it publishes the number of entries and bytes instead.",
   "**This route does not exist for the reviewing model**: scripts/review_submission.py hands over nine files whole and none of the twelve items can be executed by it. That limit was already published and is not softened by having timed the route."
  ]
 }
