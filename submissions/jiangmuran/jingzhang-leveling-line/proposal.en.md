@@ -1445,7 +1445,7 @@ These four share their source with the core rule: **over tolerance, re-measure t
 
 ### Taskbook coverage, requirement by requirement: `visual/assets/taskbook_coverage.json`
 
-The taskbook sets six agent tasks carrying **63 requirements** between them — 31 must-address items and 32 required outputs. The compliance matrix *asserted* that this package covers them. Nothing joined a requirement to the place that answers it, and **a claim of coverage is not coverage** — which is the objection this proposal makes everywhere else.
+The taskbook sets six agent tasks carrying **63 requirements** between them — 32 must-address items and 31 required outputs. The compliance matrix *asserted* that this package covers them. Nothing joined a requirement to the place that answers it, and **a claim of coverage is not coverage** — which is the objection this proposal makes everywhere else.
 
 Every requirement now points at evidence: a section in `proposal.md`, a shipped file, or a figure, each verified to exist at build time. The five requirements where the taskbook states a floor are **recomputed** rather than declared:
 
@@ -1493,12 +1493,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-116 entries. By finder:
+117 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 77 | Found while working |
+| The author | 78 | Found while working |
 | This package's own gate | 10 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
 
@@ -1515,7 +1515,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Shape | Count |
 |---|---|
 | **The check measured the convenient thing** | **25** |
-| **Two copies of one thing drifted** | **16** |
+| **Two copies of one thing drifted** | **17** |
 | **A deliverable was not looked at before shipping** | **12** |
 | **A claim outlived the package** | **11** |
 | **A hard constraint nothing could fail** | **7** |
