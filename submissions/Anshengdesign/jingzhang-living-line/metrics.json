@@ -500,6 +500,138 @@
       "assumptions": [
         "POI口径"
       ]
+    },
+    "simulacra_jobs_reach_base": {
+      "status": "known",
+      "value": 323.5,
+      "unit": "count",
+      "source_files": [],
+      "formula": "SIMULACRA-lite：居住单元25分钟圈平均可达就业（基线，E→P→R→M四部门）",
+      "confidence": "medium",
+      "assumptions": [
+        "POI与代理参数口径见计算/c11_simulacra.json meta.proxies"
+      ]
+    },
+    "simulacra_jobs_reach_stitched": {
+      "status": "known",
+      "value": 374.9,
+      "unit": "count",
+      "source_files": [],
+      "formula": "SIMULACRA-lite：缝合后25分钟圈平均可达就业",
+      "confidence": "medium",
+      "assumptions": [
+        "同上；缝合=主脊单元出行成本×0.6"
+      ]
+    },
+    "simulacra_reach_gain_pct": {
+      "status": "known",
+      "value": 15.9,
+      "unit": "%",
+      "source_files": [],
+      "formula": "SIMULACRA-lite：就业可达扩张幅度",
+      "confidence": "medium",
+      "assumptions": [
+        "同上"
+      ]
+    },
+    "simulacra_commute_cost_drop_pct": {
+      "status": "known",
+      "value": 3.4,
+      "unit": "%",
+      "source_files": [],
+      "formula": "SIMULACRA-lite：流加权通勤成本降幅",
+      "confidence": "medium",
+      "assumptions": [
+        "同上"
+      ]
+    },
+    "ca_no_intervention_change": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [],
+      "formula": "CA模拟60步无干预单元变化数（路径锁定证据）",
+      "confidence": "medium",
+      "assumptions": [
+        "100m格；规则见计算/c12_ca.json meta"
+      ]
+    },
+    "ca_intervention_change": {
+      "status": "known",
+      "value": 42,
+      "unit": "count",
+      "source_files": [],
+      "formula": "CA模拟60步干预单元变化数（解锁证据）",
+      "confidence": "medium",
+      "assumptions": [
+        "同上"
+      ]
+    },
+    "ca_overlap_manual": {
+      "status": "known",
+      "value": 0.368,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "CA涌现分区与人工分区400m重合度（反事实）",
+      "confidence": "medium",
+      "assumptions": [
+        "同上"
+      ]
+    },
+    "fractal_building_AP_D": {
+      "status": "known",
+      "value": 1.04,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "面积-周长标度D（建筑斑块，P∝A^(D/2)）",
+      "confidence": "medium",
+      "assumptions": [
+        "概念体量斑块"
+      ]
+    },
+    "fractal_manual_partition_AP_D": {
+      "status": "known",
+      "value": 0.58,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "面积-周长标度D（人工400m分区）——强加网格的分形指纹",
+      "confidence": "medium",
+      "assumptions": [
+        "人工概念分区"
+      ]
+    },
+    "employment_decay_gamma_spine": {
+      "status": "known",
+      "value": 1.8544565685184056,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "就业密度沿主脊衰减γ（Hyper Line的形态学证据）",
+      "confidence": "medium",
+      "assumptions": [
+        "对数环带拟合R²=0.60"
+      ]
+    },
+    "employment_decay_gamma_station": {
+      "status": "known",
+      "value": 1.1600192778572451,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "就业密度距轨道站衰减γ",
+      "confidence": "medium",
+      "assumptions": [
+        "对数环带拟合R²=0.51"
+      ]
+    },
+    "green_lacunarity": {
+      "status": "known",
+      "value": 5.072832204534368,
+      "unit": "dimensionless",
+      "source_files": [],
+      "formula": "绿地空隙度Lacunarity（200m格）",
+      "confidence": "medium",
+      "assumptions": [
+        "固定网格近似"
+      ]
     }
   }
 }
