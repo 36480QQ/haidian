@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2d7ffe000245d00fd3c5bd417105977dd8370859bae77328e6c61f781281cd08"
+      "sha256": "4d983649e42d9d3676a24c1240fd393a4c1f09920950f2e07e6c023b906325dc"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a7c1ed9e75ab2b9ebb092f09f8234d8034b32a9e13678cd4ab768114bb821b02"
+      "sha256": "f61b2f8784280b0fed5d3242d7b17956698a13ce9f7b675082e9a61ab3cf8b29"
     },
     {
       "path": "report/narrative.md",
@@ -683,52 +683,60 @@
       "path": "assets/figures/masterplan.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh"
+      "language": "zh",
+      "sha256": "0aaab822c542643d908666c31d527901a19c1b595e23ed3d4c1acc80a31eeb69"
     },
     {
       "path": "assets/figures/masterplan.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh"
+      "language": "zh",
+      "sha256": "5b187fd0fc97d34bc07331e8d27d0652fc5fdf9cb28a3b1e131563015acb2fae"
     },
     {
       "path": "assets/figures/plan-zhongzhiyuan_ai_acceleration_area.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh"
+      "language": "zh",
+      "sha256": "54bfc6302140f1da56736bcfa1c36ad9defa5491ee84177dfc93869c10568712"
     },
     {
       "path": "assets/figures/plan-zhongzhiyuan_ai_acceleration_area.en.png",
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "translation_of": "assets/figures/plan-zhongzhiyuan_ai_acceleration_area.png"
+      "translation_of": "assets/figures/plan-zhongzhiyuan_ai_acceleration_area.png",
+      "sha256": "c72f7919f7fbe937374fde5aeaeed7d0ce0a4c69582fc698a9b881d937a2621a"
     },
     {
       "path": "assets/figures/plan-beijing_ai_origin_community.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh"
+      "language": "zh",
+      "sha256": "f5a7e584b773885a990ca4a7982bd793779098936621956d211c1588b780707b"
     },
     {
       "path": "assets/figures/plan-beijing_ai_origin_community.en.png",
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "translation_of": "assets/figures/plan-beijing_ai_origin_community.png"
+      "translation_of": "assets/figures/plan-beijing_ai_origin_community.png",
+      "sha256": "b1da413393dba5e29a2e162e237f49f39fb024fbc9cf9f11dafac6413fd34c16"
     },
     {
       "path": "assets/figures/plan-dazhongsi_ai_industry_cluster.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh"
+      "language": "zh",
+      "sha256": "fc97aaec989cafb3652eee934d1f32d669cbdd3c3598db0cc4b035b76566245f"
     },
     {
       "path": "assets/figures/plan-dazhongsi_ai_industry_cluster.en.png",
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "translation_of": "assets/figures/plan-dazhongsi_ai_industry_cluster.png"
+      "translation_of": "assets/figures/plan-dazhongsi_ai_industry_cluster.png",
+      "sha256": "ada0b76ef9738353e3ddd4ded2fa0a3545f1211bd928ab33f0e4a016d9f456c3"
     },
     {
       "path": "assets/media/vision-2035.jpg",
@@ -736,11 +744,12 @@
       "required": false,
       "language": "neutral",
       "title_zh": "2035 愿景鸟瞰（AI概念渲染）",
-      "title_en": "2035 Vision aerial (AI conceptual rendering)"
+      "title_en": "2035 Vision aerial (AI conceptual rendering)",
+      "sha256": "2fbc7cb14a1aac1bde3d9a7e458138f264055d5ddcf934838a7a4f3969af0ae5"
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
