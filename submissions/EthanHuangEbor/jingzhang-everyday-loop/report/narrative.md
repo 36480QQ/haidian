@@ -13,3 +13,19 @@ The Jing-Zhang Symbiotic Everyday Loop makes the Origin Life Service Station its
 The evidence limits are equally explicit: 72 synthetic cases are tabletop rules only; the three-stage co-design process is `planned_not_run`; low/base/high cost bands of CNY 1,811,760 / 3,038,880 / 5,120,000 use one official material reference and 11 planning assumptions; and the 0-100-day plus M03/M12/M36 route is controlled by G0-G4. All 34 pages across the four PDFs passed measured searchable-text checks, with 52,223 extracted characters in total and a minimum of 647 per page, above the 120-character threshold; this is not a legal or professional accessibility certification. [source:UK-ATRS-2.1] [metric:site_area_sqm]
 
 中英文共享同一事实骨架、数字、ID、来源状态、警示和图位，但分别按专业语序写作。约 11.41 km² 为临时几何复算；运营者、授权、参与、采购、现场测试、无障碍认证及政府背书均未发生。 / Both editions share facts, quantities, IDs, source status, warnings and figure positions while using language-specific professional editing. Approximately 11.41 km² is a provisional-geometry recalculation; no operator, authorization, participation, procurement, field test, accessibility certification or endorsement is claimed. [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/site_boundary.geojson]
+
+### 评审可见证据摘要 / Review-visible evidence digest
+
+not_an_official_score=true · competition_concept_not_implementation_filing · no_award_selection_approval_or_government_endorsement_claimed · rights_and_provenance_evidence_is_not_legal_clearance
+
+#### 七维证据地图 / Seven-dimension evidence map
+
+brief_relevance:conditional_concept_programme_not_started_not_authorized>G0; originality:competition_grade_concept_evidence_not_approval>named_counterparty_and_site_authorization; ai_planning_innovation:synthetic_tabletop_only_not_field_test>future_pending_authorization; implementation_feasibility:annual_concept_programme_not_started_not_authorized>authorized_operator_capacity_finance; public_interest_inclusion:planned_not_run>future_pending_authorization; risk_compliance:evidence_recorded_clearance_pending>legal_professional_review; expression_completeness:deterministic_bilingual_digest>named_human_bilingual_signoff. Exact facts/path index: `compliance_matrix.json#/narrative_contract/review_visible_digest`.
+
+#### 品牌与权利护照 / Brand and rights passport
+
+fonts=SIL Open Font License 1.1; SIL Open Font License 1.1 / Bitstream Vera License with DejaVu additions; Image-2=`gpt-image-2`; external imagery/Logo reuse=false; third-party tiles=false; trademark=`not_cleared_not_registered`; build-only=Pillow,fontTools,ReportLab,pypdf,Poppler,Chromium; not legal clearance.
+
+#### 可决策实施交接 / Decision-ready implementation handoff
+
+stations/carriers/gates/checkpoints/reviews=9/S-M-L/G0-G4/11/M03-M12-M36; months/roles/KPIs/interfaces=12/5/8/7; landmarks=LM-01,LM-02,LM-03; AI=12/72/12/60; `planned_not_run`; `actual_sessions=[]`; `future_pending_authorization`; `concept_not_procured`; `modify_or_stop_before_release`; same-task manual route=true; restoration evidence required=true.

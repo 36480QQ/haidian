@@ -25,6 +25,36 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![总体概念、政策路径与证据边界](assets/figures/site-overview.png)
 
+### 评审可见证据摘要
+
+not_an_official_score=true · competition_concept_not_implementation_filing · no_award_selection_approval_or_government_endorsement_claimed · rights_and_provenance_evidence_is_not_legal_clearance
+
+#### 七维证据地图
+
+| ID | 已有证据 | 现实状态 | 下一现实门 | 精确证据路径 |
+|---|---|---|---|---|
+| `brief_relevance` | 9 站、S/M/L 三类载体、G0-G4 五门与 11 个交付检查点形成任务—交付闭环。 | `conditional_concept_programme_not_started_not_authorized` | `G0` — 确认权利、场地、责任主体与官方输入 | `visual/assets/stations.json`<br>`visual/assets/carrier-typologies.json`<br>`visual/assets/first-100-days.json`<br>`visual/assets/raci-and-signoff.json` |
+| `originality` | 7 个区域接口与 3 个地标身份把研究、日常服务与遗产门户连接为可退出协议。 | `competition_grade_concept_evidence_not_approval` | `named_counterparty_and_site_authorization` — 确认具名接口双方、场地与公共回报 | `visual/assets/professional-evidence.json`<br>`visual/assets/design-system.json` |
+| `ai_planning_innovation` | 12 份 AI 服务合同经 72 项合成规则检查，12 项仅桌面放行、60 项负例阻断。 | `synthetic_tabletop_only_not_field_test` | `future_pending_authorization` — 经授权开展用户理解、专业无障碍和具名系统评测 | `visual/assets/public-ai-register.json`<br>`visual/assets/public-acceptance-tabletop/scenario-contracts.json`<br>`visual/assets/professional-evidence.json` |
+| `implementation_feasibility` | 11 个首百日/复核检查点、12 条月度记录、5 类待分配角色和 8 项空结果 KPI 构成可决策交接。 | `annual_concept_programme_not_started_not_authorized` | `authorized_operator_capacity_finance` — 落实运营主体、容量、年度财务与独立采购 | `visual/assets/first-100-days.json`<br>`visual/assets/raci-and-signoff.json`<br>`visual/assets/annual-program.json` |
+| `public_interest_inclusion` | 受影响使用者拥有发布前修改或停止权；同任务人工路线与恢复证据均为放行条件。 | `planned_not_run` | `future_pending_authorization` — 授权招募、补偿、可达支持与独立主持 | `visual/assets/co-design-and-equity.json`<br>`visual/assets/public-ai-register.json`<br>`visual/assets/public-acceptance-tabletop/scenario-contracts.json` |
+| `risk_compliance` | 供应商未采购、商标未清查；字体、图像与工具链有来源记录，但权利/来源证据不等于法律清权。 | `evidence_recorded_clearance_pending` | `legal_professional_review` — 完成适用法律、商标、许可与专业审查 | `visual/assets/asset-rights-ledger.json`<br>`visual/assets/image2-production-record.json`<br>`visual/assets/design-system.json` |
+| `expression_completeness` | 7 维事实、状态、下一门和 12 条证据路径在中英文与矩阵中同步可见。 | `deterministic_bilingual_digest` | `named_human_bilingual_signoff` — 具名人工完成双语实质等价签署 | `visual/assets/professional-evidence.json`<br>`visual/assets/design-system.json` |
+
+#### 品牌与权利护照
+
+字体许可：SIL Open Font License 1.1; SIL Open Font License 1.1 / Bitstream Vera License with DejaVu additions。Image-2 来源：模型 `gpt-image-2`，34 个可见页面均有逐页生产记录。
+
+外部案例图像复用=false；外部 Logo 复用=false；第三方地图瓦片=false；商标状态=`not_cleared_not_registered`。具名仅构建库：Pillow, fontTools, ReportLab, pypdf, Poppler, Chromium。权利/来源证据不等于法律清权。
+
+#### 可决策实施交接
+
+空间与交付：9 站；三类载体 S/M/L（S/M/L）；五个门 G0-G4（G0-G4）；11 个检查点 `D001-010/D011-025/D026-040/D041-055/D056-070/D071-085/D086-095/D096-100/M03/M12/M36`；复核点 M03/M12/M36（M03/M12/M36）。
+
+年度与身份：12 条月度活动记录；S/M/L 容量规则；5 类未分配角色；8 项 KPI 定义；结果状态=`null`；年度财务=`unknown_no_funding_or_procurement_decision`；7 个区域接口；3 个地标身份 `LM-01/LM-02/LM-03`。
+
+AI 与公共权利：12 份服务合同；72 项合成检查；12 项仅桌面放行；60 项负例阻断。共创=`planned_not_run`；`actual_sessions=[]`；后续测试=`future_pending_authorization`；供应商=`concept_not_procured`；受影响使用者权利=`modify_or_stop_before_release`；同任务人工路线=true；恢复证据必需=true。
+
 ## 三层范围工作框架
 
 统筹研究层讨论四区协同、两翼联动和土地—空间—产业—资金—人才—算力—数据—场景八要素；总体设计层以京张遗产公共脊连接可信创新环、社区生活环与文化转化环；重点区层用三处重点区、九站和一个可逆原型回答空间与运营。总体范围统一写作“约 11.41 平方公里（临时几何复算）”，不制造测绘或审批精度。 [source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework] [metric:key_area_count]
@@ -117,7 +147,22 @@ SC-01—SC-12 每项都有公共问题、AI 必要性、同任务人工/非数�
 
 ### 十二场景空间绑定
 
-SC-01/03 绑定 AOC-02 的无障碍与照护转介，SC-04 绑定 AOC-03 与 DZS-02 的清权遗产讲述，SC-06 绑定 ZZY-03 的热舒适，SC-07 绑定 ZZY-01 的共享设施预约，SC-08 绑定 ZZY-01 与 DZS-01 的非投资承诺协作，SC-09 绑定 AOC-01 的社区议事，SC-10 绑定 DZS-03 的多语导视；SC-02/05/11/12 作为跨九站的夜间、换乘、应急和共创服务。小月河翼承接 SC-06/12 的场景问题，科技服务翼承接 SC-07/08 的专业支持。以上是站点合同映射，不是现实部署。 [data:visual/assets/scenarios.json#/scenarios] [metric:scenario_card_count]
+| ID | 场景 | 站点 / 区域 / 协同翼 |
+|---|---|---|
+| SC-01 | 无障碍连续路径 | AOC-02/ai_origin_community/X |
+| SC-02 | 夜间安全陪伴 | ALL9/ALL3/X |
+| SC-03 | 照护接驳 | AOC-02/ai_origin_community/X |
+| SC-04 | 遗产讲述 | AOC-03,DZS-02/ai_origin_community,dazhongsi/X+T |
+| SC-05 | 低碳出行 | ALL9/ALL3/X |
+| SC-06 | 热舒适调节 | ZZY-03/zhongzhiyuan/X |
+| SC-07 | 创新设施预约 | ZZY-01/zhongzhiyuan/T |
+| SC-08 | 创业协作 | ZZY-01,DZS-01/dazhongsi,zhongzhiyuan/T |
+| SC-09 | 社区议事 | AOC-01/ai_origin_community/X |
+| SC-10 | 多语导览 | DZS-03/dazhongsi/X |
+| SC-11 | 应急信息 | ALL9/ALL3/X+T |
+| SC-12 | 活动共创 | ALL9/ALL3/X+T |
+
+`ALL9=ZZY-01,ZZY-02,ZZY-03,AOC-01,AOC-02,AOC-03,DZS-01,DZS-02,DZS-03;ALL3=ai_origin_community,dazhongsi,zhongzhiyuan;X=xiaoyuehe_scenario_wing;T=zhongguancun_service_wing`。共同服务流程：使用者先获得人工与非数字入口，再自愿选择表中场景；完成后可查看依据、反馈或退出。 以上 12 行由场景台账与专业证据绑定共同生成，均为待官方几何、场地与运营授权的概念分配，不是现实部署、选址或运营承诺。 [data:visual/assets/scenarios.json#/scenarios] [data:visual/assets/professional-evidence.json#/scenario_space_wing_bindings] [metric:scenario_card_count]
 
 ![十二服务记录、公共 AI 与退出链](assets/figures/mobility-bluegreen.png)
 
