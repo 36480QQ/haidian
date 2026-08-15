@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "950105e5598cbcfc3ba5b3cd180eb3ea03be965d1b7e2440b2f4fe789363e03f"
+      "sha256": "ee0c670e671ae889709d688277ee91efaa85c6fe70ae108cd390fe83f3a0d7a8"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "d01eff250ec83df2ceb61c06ee9c70f1b0a32d0237e382cc8cbb932448448408"
+      "sha256": "3c6d988b0f765a6e3564492822c9799b4485ade7898ad0db7d88b76f2ea47c6c"
     },
     {
       "path": "assumptions.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "adc90b14b70b72c990d9fcbae577cdd5d01f7fa22d44f78959001d1337ef9989"
+      "sha256": "84fd9d334d634d876286838ab55204b6b2af7921dc608acbc9692721210995f9"
     },
     {
       "path": "report/narrative.md",
@@ -185,7 +185,7 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "6f5745c6b5e7fae57806ff1182cc030dd1360fa62e3b9b1a0714f123c5b6a3df"
+      "sha256": "926c8d1bb4f08707ceaf53b2e81a79f610188b78cfc34e945fb48a7e624b3595"
     },
     {
       "path": "geometry/site_boundary.geojson",

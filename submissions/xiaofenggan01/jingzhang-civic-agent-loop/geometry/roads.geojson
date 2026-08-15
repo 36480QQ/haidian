@@ -301,7 +301,12 @@
         "stitch_note": "北段高校区东西缝合",
         "official_boundary": false,
         "child_friendly_route": true,
-        "all_age_nodes": 2
+        "all_age_nodes": 2,
+        "deep_dive": true,
+        "west_node": "北五环绿廊",
+        "east_node": "北体大社区",
+        "stitch_target": "生态廊×居住区",
+        "composite_functions": "生态动线+碳排监测验证段"
       },
       "geometry": {
         "type": "LineString",

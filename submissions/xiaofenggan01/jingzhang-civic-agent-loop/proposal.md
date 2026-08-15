@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以铁路转辙器为母题（转辙即路由决策即 agent 编排），把四环协作（资料/推演/反馈/复核）落成机器可读治理制品——Civic Agent Receipt 收据 + G0-G6 门闸状态机 + 验线四步。环会自转：每次干预可审计、可回滚、可证伪。所有空间建议为开放共创建议，不替代正式规划。"
 tracks: ["civic-agent-governance", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v48.0"
+iteration: "v49.0"
 ---
 
 # 京张·转辙 · 城市智能体验证带
@@ -116,6 +116,8 @@ iteration: "v48.0"
 ## 交通、轨道、市政与公共服务设施
 
 交通组织回应公告对轨道接驳、慢行断点、无障碍与新型基础设施的要求 `[depth:traffic_rail_slow_parking]`。本方案以京张铁路遗址公园为南北慢行主廊道，串联三重点区，布设横向联系道路缝合东西 `[data:geometry/roads.geojson]`。针对铁路长墙的百年东西割裂，本方案布设五条**东西向转辙廊** `[metric:stitch_corridor_count]`（mobility 图逐廊标注 `[metric:stitch_corridor_map_annotation_count]`） `[data:geometry/roads.geojson#STITCH-001]`——转辙器把列车从一股道转到另一股道，转辙廊把人流从铁路西侧转到东侧：大钟寺、知春路、原点、众智、北段各一条 `[data:geometry/roads.geojson#STITCH-003]`，廊道同时承载慢行、公共空间与 AI 场景，并复合**通学安全动线**（沿线 10 余所高校与社区中小学的儿童友好路径，五廊全覆盖 `[metric:child_friendly_route_count]`）与**全龄节点**（每廊 2 处适老适幼游戏与看护节点，共 `[metric:all_age_node_count]` 处）。五廊逐条深化（两端节点/缝合对象/复合功能/可证伪指标）进度 `[metric:corridor_deep_dive_count]`/5
+
+**转辙廊深化·5 北段转辙廊**（`[data:geometry/roads.geojson#STITCH-005]`）：西端 北五环绿廊 — 东端 北体大社区；缝合对象：生态廊×居住区；复合功能：生态动线+碳排监测验证段；可证伪指标：碳排仿真与监测站偏差(G4 标定)。
 
 **转辙廊深化·4 众智转辙廊**（`[data:geometry/roads.geojson#STITCH-004]`）：西端 众智园 — 东端 清华西门科研带；缝合对象：研发区×高校科研；复合功能：研发用地匹配场景+测试展示段；可证伪指标：研发匹配成功率与展示受众数。
 
