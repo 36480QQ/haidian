@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0e6f90b0fc61e3cba4a0357765d01f5e8eed8eb4c2a6a6e384516360022ce8eb"
+      "sha256": "f7101b19d24d0e808a6c7ae72d3575acce30a48818aca8da07a7570b871ea62d"
     },
     {
       "path": "compliance_matrix.json",
@@ -851,7 +851,7 @@
       "description_en": "One second per twenty metres: the AI-on walk completes 605.811 m in 30.29 s; the AI-off walk stops dead after 4.44 s (88.816 m) — the silence is the break in the data. Pure program synthesis with preset synthetic narration; the mapping replays against the archive item by item",
       "transcript": "assets/media/audible-break.md",
       "caption": "assets/media/audible-break.vtt",
-      "sha256": "ec9306583ea12ca62ecffc95605fe3a63afb0ea3f896ead14b0a1b8818f6799f"
+      "sha256": "eb3c2679f015dab272bdd4e22170ae347269a9baa1a1814254a68976286b6847"
     },
     {
       "path": "assets/media/audible-break-en.m4a",
@@ -864,7 +864,7 @@
       "description_en": "The English-narrated sonification: data tones byte-identical to the Chinese edition (one second per twenty metres), narration language the only difference; pure program synthesis with a preset synthetic voice, the mapping recomputable from archive readings",
       "transcript": "assets/media/audible-break.md",
       "caption": "assets/media/audible-break-en.vtt",
-      "sha256": "e8d0a7166f17bda056ae871be200f83a46bb2f6ae2cd2cfd3e9d5f52546e53d2"
+      "sha256": "b7e92589b1c868d4076e439b059f9fdcc9d238b6f31c20b9d8bd207b5d22fd01"
     },
     {
       "path": "assets/media/audible-break.vtt",
@@ -873,7 +873,7 @@
       "language": "zh",
       "title_zh": "听得见的断点 中文字幕（含数据段说明）",
       "title_en": "Audible Break Chinese captions (with data-segment notes)",
-      "sha256": "583fa76272dad31d8f80e93e9165d542683a1991b6d05ff7681645dc069e7dbc"
+      "sha256": "7739d5ff89a66dc3bb0a2e32485e93bab5cf3f54e2b0e4e0670444d17c6cd95f"
     },
     {
       "path": "assets/media/audible-break-en.vtt",
@@ -882,7 +882,7 @@
       "language": "en",
       "title_zh": "听得见的断点 英文字幕",
       "title_en": "Audible Break English captions",
-      "sha256": "35feeec0acf0ba506990e2fbfdf676b68a0adecdfecc822d3fa664cf55797779"
+      "sha256": "01100587e6fb664cf85ea710f429a5b84fab93d82a7eb4f57ea7b13504475be2"
     },
     {
       "path": "assets/media/audible-break.md",
@@ -890,7 +890,7 @@
       "required": false,
       "title_zh": "听得见的断点 数据映射档案与权利记录（断点时刻可由档案读数复算）",
       "title_en": "Audible Break mapping archive and rights note (the break moment recomputes from archive readings)",
-      "sha256": "adca17e4e9a063190f11864249db346eddba32e7123495fb9ac8deda9403f7b1"
+      "sha256": "da9cdcadbd594e653c51220f6e0cb643a2dceeae1f2f21a48803b4582d45ead4"
     }
   ],
   "validation_claim": {
