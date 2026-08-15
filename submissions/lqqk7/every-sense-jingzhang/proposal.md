@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以多感官通用设计为产业赛道与城市底线，让不同身体、感官和认知方式的人都能独立理解、选择、完成并退出同一项 AI 城市服务。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "robot-delivery-low-speed"]
-iteration: "v6.1"
+iteration: "v6.2"
 ---
 
 # 万感京张：每一种身体都能独立使用的 AI 城市 / EVERY SENSE JING-ZHANG
