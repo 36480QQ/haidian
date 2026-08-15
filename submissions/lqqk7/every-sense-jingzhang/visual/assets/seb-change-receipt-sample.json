@@ -295,5 +295,7 @@
   }
  ],
  "version_note_zh": "本文件头部 version 为回执 schema 版本,与规范版本解耦;其 0.2.0→0.3.0 曾属无 schema 变更的误递增,登记于 CR-2026-08-15-005 的 FS-050,已发布取值不回改,此后无 schema 变更不再递增",
- "version_note_en": "The header version of this file is the receipt-schema version, decoupled from the spec version; its 0.2.0-to-0.3.0 bump was an erroneous increment without schema change, registered as FS-050 in CR-2026-08-15-005 — the published value stays, and no further increment occurs absent schema change"
+ "version_note_en": "The header version of this file is the receipt-schema version, decoupled from the spec version; its 0.2.0-to-0.3.0 bump was an erroneous increment without schema change, registered as FS-050 in CR-2026-08-15-005 — the published value stays, and no further increment occurs absent schema change",
+ "verification_era_note_zh": "各回执 verification 字段所述命令与预期读数，以该回执发布时点的规范与样例版本为准（如 CR-2026-08-12-002 所述「十二条样例」对应 v0.2 时代样例集）；历史规范版本按字节随包（seb-spec-v0.2.0.json 等，见规范 version_snapshots），现行版本的样例数以 seb-tabletop-fixtures.json 实测为准。本注记为文件级口径说明，不改写任何已发布回执正文",
+ "verification_era_note_en": "The commands and expected readings in each receipt's verification field are stated as of that receipt's publication (e.g. the \"twelve fixtures\" in CR-2026-08-12-002 refer to the v0.2-era suite); historical spec versions ship byte-exact (seb-spec-v0.2.0.json etc., see version_snapshots), and the current fixture count reads from seb-tabletop-fixtures.json. This is a file-level note and rewrites no published receipt text"
 }

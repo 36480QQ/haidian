@@ -11,7 +11,8 @@
   "candidates_per_scene": 2,
   "annotation_layer": "Hand-written HTML overlay (package design system: header band, bilingual title, coral badge 概念意象 · AI 生成 · 非工程依据, annotation cards, footer rights pointer), rendered with Chromium via Playwright at device scale factor 4",
   "post_processing": "PIL/Pillow: resize to 3000 px wide (LANCZOS), encode WebP quality 88 method 6",
-  "no_third_party_material": "Prompts reference no third-party image, artwork or style name; the only image input to any generation call was the package's own site-overview.png figure (scene 3, as geographic layout reference)."
+  "no_third_party_material": "Prompts reference no third-party artwork or style name; no unlicensed third-party material entered any generation call. The only image input (scene 3, geographic layout reference) was the package's own site-overview.png, which itself contains OpenStreetMap basemap elements used and attributed under ODbL — see the OSM entries in sources.json and the rights ledger.",
+  "no_third_party_material_zh": "提示词不引用任何第三方作品或风格名；任何生成调用均未输入未经许可的第三方素材。唯一图像输入（场景三，地理布局参照）为本包自绘 site-overview.png，其内含按 ODbL 许可使用并署名的 OpenStreetMap 底图要素——见 sources.json 与权利台账 OSM 条目。"
  },
  "scenes": [
   {
