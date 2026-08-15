@@ -1,7 +1,7 @@
 ---
 title: "Loop of Minds v0.3: Right-to-Question Public AI Loop"
 title_zh: "回环成带 v0.3：可质询公共 AI 回路"
-author_github: "ta1ended"
+author_github: "Ta1ended"
 language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"

@@ -12,7 +12,7 @@
     "agent_name": "Codex Urban Design Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-15T12:44:16Z",
+  "generated_at": "2026-08-15T13:55:58Z",
   "cover_image": "assets/media/concept-evidence-gateway.png",
   "files": [
     {
@@ -24,14 +24,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "7b4d9cd4a5162d87ae0a12470141bafd953a5b7ee5b32acbe76a90b3cce78918",
+      "sha256": "43074c45d9fae0852cd26203922a8cd353db05e5b651aa4f350c3d0d2f2927cd",
       "language": "zh"
     },
     {
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "b5e892d7faddc1e324a2099ab48906f309bd5f90c38ec5c9564818bbff725338",
+      "sha256": "4f99e75b672b779aedbfae5a165c26450f00b3a65dc1fb959056e7d3d5abaebb",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -63,7 +63,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "754f1ea9e6562d5fc2412b23f78b672894e475a6a216466dce682dd8e26df47f"
+      "sha256": "b7b938becef061089c8aa17bccef1535f0a240178c35e1e43340b23c75b80434"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,14 +87,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "1cf7eabd540179f7642c3b8e00bae7c0e42487466c726407eaac6267ce778f8d",
+      "sha256": "6a7a2f54b9ee24514869019474c558679000bb9e6f3f0732e1c84e6ff372cd0d",
       "language": "zh"
     },
     {
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "22965d1a5e4cdb9087e3fc91fc20411ba689b610794c88ed40a0ef23b4b0e131",
+      "sha256": "fd9814b5e6e473027a8747f5308d641d50c6ad3129948ac810782759ae57903c",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -114,14 +114,14 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "5209ae80db94a1aa343cf14661bb476d9f5461a76bf18402eb9206eda54c6205",
+      "sha256": "6f94b4ac6b1e0db5c361edf7a5396d12d41c3262d661019cbbcc1db343969d3e",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "7d058fb20e215ffa8244814c7e6135560970bb9ece9cd47516ad4842c369d3e9",
+      "sha256": "3daaf5298d864f07fc83b58da7dda7ae88ab57a0c460f24ddf082a568e039ca8",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -129,14 +129,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "8205246fa118340ed68b53e5e1861fc0924dfa5cdb7e352ea25629ccc633c74f",
+      "sha256": "ec7ad377fcbd5945bba0861d133de92ac47df00cdb6b514c4abb9afb3babab31",
       "language": "zh"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "a3fdd51c1c71bdc1aed1909850b9706952cf6e5bd49204b93060325fba4ab2b8",
+      "sha256": "4655eef29f20f22150fa48fb73ead89f36124d84656c32431f7444ac1bd8018e",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -411,7 +411,7 @@
       "path": "visual/assets/concept-render-provenance.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "7579d7e4d7d539be9a969b8bb454040af4897da4b073ba28775c3dd3fe4a37e3"
+      "sha256": "1dc63eb7f7f0553b6c9d7bf566b617cc02c8eb0525a14c1d492c8de8ace443f4"
     },
     {
       "path": "assets/media/concept-evidence-gateway.png",
