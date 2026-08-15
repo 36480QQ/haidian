@@ -1220,12 +1220,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-188 entries. By finder:
+190 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
-| The author | 139 | Found while working |
+| The author | 140 | Found while working |
 | This package's own gate | 11 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; [@](https://github.com/) on  |
 
@@ -1242,11 +1242,11 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Shape | Count |
 |---|---|
 | An easy measure | 37 |
-| Two copies drifted | 28 |
+| Two copies drifted | 29 |
 | Shipped unseen | 20 |
 | Outlived the package | 15 |
 | Nothing fails it | 13 |
-| Uncheckable | 11 |
+| Uncheckable | 12 |
 | Outlived its line | 9 |
 | A reference did not resolve | 8 |
 | No file behind it | 6 |
@@ -1612,11 +1612,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **153 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **154 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 130 |
+| `author-originated` | 131 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1735,7 +1735,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would repeat, at the scale of a checklist, this package's erratum about `analysis/`: an invitation to verify addressed to someone who cannot.
 
-**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.69 s**; 9 files, 1090 KB, 1,649 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
+**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 901 KB, 1,651 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
 
 **This disclosure has a shelf life, so it states where the fix stands.** The gap is upstream Issue #2170; the maintainers opened PR #2181, which adds an auditable access boundary to the review input, states that participant verification scripts are never executed, and corrects the review prompt so that a model **may not deduct points or fail a gate merely because it cannot open a registered artifact**. Once it merges the count above is unchanged; its consequence is not, because unreachability stops being read as the participant having withheld something. This package has already taken that recovery route: the key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
