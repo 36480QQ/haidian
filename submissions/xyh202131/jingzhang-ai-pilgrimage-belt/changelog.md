@@ -1,5 +1,27 @@
 # 方案迭代记录 / Changelog
 
+## v28.0 - 2026-08-15
+
+**Evidence-citation coverage completion / 证据引用覆盖补全**
+
+- 第 28 轮只在第 27 轮 PR #2772 合并（merge SHA `42e75acdbe3428ff376f551d55def66132f11f7e` 进入 canonical `main@239e5dabdc82d8972403debb3e5adb3527b6cd9b`）且 442 个开放 PR 文件级扫描无竞争后开始。工程扫描发现：50 条来源中 19 条包内概念来源（合同/图件/章节，R8—R15）从未以 `[source:ID]` 在正文引用，23 条假设中 4 条从未以 `[assumption:ID]` 引用——违反 formal 指南“来源应在正文中被引用”的要求。本轮逐项归位补全，双语各 50/23 全量引用，标记密度遵守 ≤3 连续 / ≤8 每段并通过确定性校验。
+- Round 28 began only after Round 27 PR #2772 merged (merge SHA `42e75acdbe3428ff376f551d55def66132f11f7e` entered canonical `main@239e5dabdc82d8972403debb3e5adb3527b6cd9b`) and a file-level scan of 442 open PRs found no competing PR. The engineering scan found that 19 in-package concept sources (contracts/figures/chapters from Rounds 8–15) were never cited as `[source:ID]` in prose and 4 of 23 assumptions were never cited as `[assumption:ID]` — contrary to the formal guide's requirement that sources be cited in prose. All were placed at their home claims this round; both languages now cite 50/50 sources and 23/23 assumptions, with marker density within the ≤3-consecutive / ≤8-per-block limits and passing deterministic validation.
+- 每个标记都加在对应合同/图件/章节的归属主张旁（时间博物馆、公共任务经济、长期运营、评审交接、普通生活、可逆构件、五步漫游、现场采集、G0 企业基线、治理内核），句子在移除标记后保持完整。仅新增引用标记，无主张、数据、机制、页数或成熟度变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- Every marker sits beside the owning claim of its contract/figure/chapter (Time Museum, Public Mission Economy, Civic Operations, Review Handoff, Ordinary Life, Reversible Components, Five-Step Walk, Field Intake, G0 enterprise baseline, governance kernel); sentences remain complete after marker removal. Only citation markers were added — no claim, data, mechanism, page count or maturity change; the four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。补全、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. Completion, a PR or merge creates no reality, approval, operation or rights upgrade.
+
+## v27.0 - 2026-08-15
+
+**Official heading wording alignment / 正式章节标题与官方术语对齐**
+
+- 第 27 轮只在第 26 轮 PR #2757 合并（merge SHA `2adc47505d5234a4b6cafdf017b2f17d3d2a7589` 进入 canonical `main@2d44121b3eb47ff958605b0ea2b026d462644dc5`）且 442 个开放 PR 文件级扫描无竞争后开始。审计：`proposal.en.md` 的全部 `##` 标题与 `docs/formal-submission-guide.md` 官方英文章节表逐条比对——12/13 一致，仅“用地、建筑规模与拆改留”章的英文标题词序与官方表述不同（`Demolish–Renovate–Retain` vs 官方 `Retain-Renovate-Demolish`）。修复为官方表述，重渲染报告后 13/13 一致，并按第 23 轮记录重施渲染器媒体链接修复。
+- Round 27 began only after Round 26 PR #2757 merged (merge SHA `2adc47505d5234a4b6cafdf017b2f17d3d2a7589` entered canonical `main@2d44121b3eb47ff958605b0ea2b026d462644dc5`) and a file-level scan of 442 open PRs found no competing PR. Audit: every `##` heading in `proposal.en.md` was compared against the official English chapter table in `docs/formal-submission-guide.md` — 12/13 matched; only the land-use chapter heading used a different word order (`Demolish–Renovate–Retain` vs the official `Retain-Renovate-Demolish`). Fixed to the official wording, re-rendered the report (13/13 now match) and re-applied the Round 23 renderer media-link fix as recorded.
+- 仅英文标题文本变化，无主张、数据、机制、页数或成熟度变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- Only the English heading text changed; no claim, data, mechanism, page count or maturity change. The four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v26.0 - 2026-08-15
 
 **Contract as_of consistency repair / 契约 as_of 一致性修复**

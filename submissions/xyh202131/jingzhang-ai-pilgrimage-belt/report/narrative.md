@@ -4,6 +4,18 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 28 evidence-citation coverage completion / 第 28 轮证据引用覆盖补全
+
+第 28 轮只在第 27 轮 PR #2772 合并（`42e75acdbe3428ff376f551d55def66132f11f7e` 进入 `origin/main@239e5dabdc82d8972403debb3e5adb3527b6cd9b`）且 442 个开放 PR 文件级扫描无竞争后开始。扫描方法：`sources.json` 50 条与 `assumptions.json` 23 条逐一在双语文案、visual 与报告中统计 `[source:ID]`/`[assumption:ID]` 出现次数；发现 19 条包内概念来源与 4 条假设零引用。补全方式：每个标记插入其归属主张旁（共 16 处中文 / 16 处英文插入，每处 1—3 个连续标记，全段 ≤8），重渲染报告并重施第 23 轮链接修复；补全后双语各 50/50 来源、23/23 假设全量引用，四门校验与 strict 8/8 通过。仅新增引用标记；冻结字节不变。
+
+Round 28 began only after Round 27 PR #2772 merged (`42e75acdbe3428ff376f551d55def66132f11f7e` entered `origin/main@239e5dabdc82d8972403debb3e5adb3527b6cd9b`) and a file-level scan of 442 open PRs found no competing PR. Scan method: every one of the 50 `sources.json` and 23 `assumptions.json` records was counted for `[source:ID]`/`[assumption:ID]` occurrences across both proposals, both visuals and both reports; 19 in-package concept sources and 4 assumptions had zero citations. Completion: each marker was inserted beside its owning claim (16 insertions per language, 1–3 consecutive markers each, ≤8 per block), the reports were re-rendered with the Round 23 link fix re-applied, and both languages now cite 50/50 sources and 23/23 assumptions with the four-gate check and strict 8/8 passing. Only citation markers were added; frozen bytes unchanged.
+
+## Round 27 official heading wording alignment / 第 27 轮正式章节标题与官方术语对齐
+
+第 27 轮只在第 26 轮 PR #2757 合并（`2adc47505d5234a4b6cafdf017b2f17d3d2a7589` 进入 `origin/main@2d44121b3eb47ff958605b0ea2b026d462644dc5`）且 442 个开放 PR 文件级扫描无竞争后开始。审计方法：`proposal.en.md` 的 21 个 `##` 标题与 `docs/formal-submission-guide.md` 官方英文章节表逐条比对；发现唯一偏差——第 7 章英文标题词序 `Demolish–Renovate–Retain` 与官方 `Retain-Renovate-Demolish` 不同，其余 12/13 一致。修复为官方表述，重渲染英文报告（13/13 一致）并按第 23 轮记录重施渲染器媒体链接修复；另复核双语图件嵌入 21/21 等量（`.en.png` 配对正确）。仅英文标题文本变化，冻结字节不变。
+
+Round 27 began only after Round 26 PR #2757 merged (`2adc47505d5234a4b6cafdf017b2f17d3d2a7589` entered `origin/main@2d44121b3eb47ff958605b0ea2b026d462644dc5`) and a file-level scan of 442 open PRs found no competing PR. Audit method: all 21 `##` headings in `proposal.en.md` were compared against the official English chapter table in `docs/formal-submission-guide.md`; the only deviation was chapter 7's word order (`Demolish–Renovate–Retain` vs the official `Retain-Renovate-Demolish`), with the other 12/13 matching. Fixed to the official wording, re-rendered the English report (13/13 match) and re-applied the Round 23 renderer media-link fix as recorded; bilingual figure embedding was also confirmed 21/21 with correct `.en.png` pairing. Only the English heading text changed; frozen bytes unchanged.
+
 ## Round 26 contract as_of consistency repair / 第 26 轮契约 as_of 一致性修复
 
 第 26 轮只在第 25 轮 PR #2752 合并（`cdc56d33f322e01477c4b29adba0f1dae4524e41` 进入 `origin/main@cdc56d33f322e01477c4b29adba0f1dae4524e41`）且 438 个开放 PR 文件级扫描无竞争后开始。审计方法：对包内全部结构化契约的顶层 `as_of` 与 `git log -1 --format=%ad` 的真实最后编辑日期逐一比对；发现 8 个契约 `as_of` 早于真实编辑日期（civic-operations、g1-preregistration、implementation-handoff-matrix、pilot-readiness、readiness-closure、rights-clearance-ledger、site-grounding-register、submission-use-rights-matrix），全部按 git 历史修复并新增 `as_of_semantics` 字段（“最后真实内容编辑日期，不是有效性或新鲜度保证”）。另复核四份 PDF 文本层：44 页角色标题全部命中、替换字形 0、页脚披露全部在位（仅全出血封面页无页脚，属设计）。本轮无主张或数据变化，冻结字节不变。
