@@ -1,5 +1,5 @@
 ---
-title: "THE EMERGENT BELT — Jing-Zhang Hyper Line: Urban Design for the Centennial Jing-Zhang AI Innovation Belt"
+title: "THE EMERGENT BELT — Jing-Zhang Hyper Line"
 author_github: "Anshengdesign"
 language: "en"
 proposal_format_version: "2"
@@ -13,6 +13,8 @@ iteration: "v0.12"
 ---
 
 # THE EMERGENT BELT — Jing-Zhang Hyper Line
+
+*Urban design for the Centennial Jing-Zhang AI Innovation Belt · Open-call submission · KUN-SAL Spatial Quant Lab*
 
 *Urban design for the Centennial Jing-Zhang AI Innovation Belt · Open-call submission · KUN-SAL Spatial Quant Lab*
 
