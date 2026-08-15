@@ -702,6 +702,19 @@
       "assumptions": [
         "一版一主题的迭代史"
       ]
+    },
+    "reader_guide_step_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "count of reader-guide steps (母题/治理/制品/空间/态度)",
+      "confidence": "high",
+      "assumptions": [
+        "面向评审与公众的快速导读"
+      ]
     }
   }
 }
