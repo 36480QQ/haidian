@@ -1,5 +1,5 @@
 ---
-title: "涌现之带 THE EMERGENT BELT——京张 Hyper Line：百年京张AI创新带城市设计"
+title: "涌现之带 THE EMERGENT BELT——京张 Hyper Line"
 author_github: "Anshengdesign"
 language: "zh"
 proposal_format_version: "2"
@@ -13,6 +13,8 @@ iteration: "v0.6"
 ---
 
 # 涌现之带 THE EMERGENT BELT——京张 Hyper Line
+
+*百年京张AI创新带城市设计 · 开源征集投稿 · KUN-SAL 坤空间量化实验室*
 
 1909 年，詹天佑面对八达岭的极端坡度，没有"修一条更平的路"，而是发明了人字形——**让火车在约束里自己找到走法**。那是中国工程师第一次回答一个问题：当约束不可改变，设计还能做什么？
 

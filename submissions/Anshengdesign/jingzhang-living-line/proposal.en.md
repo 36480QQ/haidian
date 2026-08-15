@@ -14,6 +14,8 @@ iteration: "v0.12"
 
 # THE EMERGENT BELT — Jing-Zhang Hyper Line
 
+*Urban design for the Centennial Jing-Zhang AI Innovation Belt · Open-call submission · KUN-SAL Spatial Quant Lab*
+
 In 1909, facing the extreme gradient of Badaling, Zhan Tianyou did not "build a flatter road" — he invented the herringbone switch: **letting the train find its own way within the constraint**. That was the first time a Chinese engineer answered a question: when the constraints cannot be changed, what is left for design to do?
 
 One hundred and seventeen years later, the same question stands over this Jing-Zhang corridor. The constraints have changed: no longer mountains, but seven arterial roads, the walls of universities, the property rights of a built-up city, the settlement threshold of the capital. But the question is unchanged — **when the constraints cannot be changed, what is left for design to do?**
