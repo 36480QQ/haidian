@@ -178,7 +178,7 @@ class ScoreSubmissionTests(unittest.TestCase):
             self.write_source_index(root)
             body = VALID_BODY.replace(
                 "- `brief/public-brief.md`\n- `brief/README.md`",
-                "- `brief/public-brief.md`\n- `metrics.json`, `assumptions.json` 与 `compliance_matrix.json` 为本方案机器可读索引。",
+                "- `brief/public-brief.md`\n- `metrics.json`, `assumptions.json` 与 `compliance_matrix.json`",
             )
             proposal = self.write_proposal(root, body)
 
@@ -186,6 +186,27 @@ class ScoreSubmissionTests(unittest.TestCase):
 
             self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_PASS)
             self.assertEqual(report.unmatched_reference_lines, [])
+
+    def test_package_artifact_does_not_hide_descriptive_source_claim(self) -> None:
+        claims = [
+            "居民访谈与现场观察结论见 metrics.json",
+            "未公开内部数据已汇总到 assumptions.json",
+            "第三方商业热力数据见 metrics.json",
+        ]
+        for claim in claims:
+            with self.subTest(claim=claim), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                self.write_source_index(root)
+                body = VALID_BODY.replace(
+                    "- `brief/public-brief.md`\n- `brief/README.md`",
+                    f"- `brief/public-brief.md`\n- {claim}",
+                )
+                proposal = self.write_proposal(root, body)
+
+                report = score_proposal(root, proposal)
+
+                self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_NEEDS_WORK)
+                self.assertEqual(report.unmatched_reference_lines, [claim])
 
     def test_unknown_local_reference_still_needs_source_status_note(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
