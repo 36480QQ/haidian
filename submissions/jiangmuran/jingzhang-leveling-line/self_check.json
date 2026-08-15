@@ -79,7 +79,7 @@
       "severity": "info",
       "target": "metrics.json / assumptions.json",
       "source": "package-provided",
-      "message": "指标与其假设的机读联接 — assumption references: 39 metrics, 47 id references, every one resolves and matches what the metric actually reads (boundary, corpus, OSM, package-internal); the 46 source paths those rules read all resolve too — 42 in the package, 4 in the organiser's brief; the prose boundary rule matches 0 of 3 markers today (kept as a net for a metric outside the provisional class), and 3 of 5 census files are read by no metric"
+      "message": "指标与其假设的机读联接 — assumption references: 45 metrics, 53 id references, every one resolves and matches what the metric actually reads (boundary, corpus, OSM, package-internal); the 52 source paths those rules read all resolve too — 48 in the package, 4 in the organiser's brief; the prose boundary rule matches 0 of 3 markers today (kept as a net for a metric outside the provisional class), and 3 of 5 census files are read by no metric"
     },
     {
       "check_id": "PKG_BUILD_RUBRIC_COVERAGE",
@@ -119,7 +119,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 183/177 bare numbers reported but not blocked, and one designed check (80 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 183/177 bare numbers reported but not blocked, and one designed check (78 candidates) not shipped"
     },
     {
       "check_id": "PKG_COMPUTED_VALUE_QA",
@@ -143,7 +143,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "evidence_ceiling.py — evidence ceiling: background_only 3, provisional 17, self_measured 14, official_context 4; 3 metric(s) publish their operands and divide out to their value across 39 metrics; every declared class equals its weakest input"
+      "message": "evidence_ceiling.py — evidence ceiling: background_only 9, provisional 17, self_measured 14, official_context 4; 3 metric(s) publish their operands and divide out to their value across 45 metrics; every declared class equals its weakest input"
     },
     {
       "check_id": "PKG_FIGURE_CITATION_QA",
@@ -183,7 +183,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 51 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 7 bytes to spare"
+      "message": "intake_limits_qa.py — intake limits: 51 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 182 bytes to spare"
     },
     {
       "check_id": "PKG_MARKDOWN_STRUCTURE_QA",
@@ -199,7 +199,7 @@
       "severity": "info",
       "target": "compliance/standard/design_depth matrices",
       "source": "package-provided",
-      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 526 declared across three matrices, 526 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 17 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
+      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 526 declared across three matrices, 526 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 23 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
     },
     {
       "check_id": "PKG_NAMING_QA",
