@@ -39,7 +39,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 
 ## 一、编制口径 / Compilation rule
 
-本台账汇编自以下八处既有登记：本文件（作者归属、许可选择、生成方法、字体许可、OSM 署名与用途限制）、`manifest.json`（文件清单、角色、语言、翻译关系、校验和）、`agent.json`（申报智能体与模型）、`sources.json`（三十八条来源的允许与禁止用途）、`visual/assets/osm-context/provenance.json`（OSM 取数与再分发状态）、`assets/media/audio-guide.md` 与 `journey.md` 与 `cover.md`（三件媒体资产的工具、方法与权利记录）、`metrics.json`（复算投影）、`proposal.md`（品牌字体策略、随包代码零依赖声明、基准许可授予）。
+本台账汇编自以下八处既有登记：本文件（作者归属、许可选择、生成方法、字体许可、OSM 署名与用途限制）、`manifest.json`（文件清单、角色、语言、翻译关系、校验和）、`agent.json`（申报智能体与模型）、`sources.json`（四十一条来源的允许与禁止用途）、`visual/assets/osm-context/provenance.json`（OSM 取数与再分发状态）、`assets/media/audio-guide.md` 与 `journey.md` 与 `cover.md`（三件媒体资产的工具、方法与权利记录）、`metrics.json`（复算投影）、`proposal.md`（品牌字体策略、随包代码零依赖声明、基准许可授予）。
 
 **许可总则：** 全包整体 `COMMUNITY-DISPLAY-ONLY`，仅用于本次征集的社区展示与评审场景；不放弃任何第三方权利。
 **署名总则：** 署名主体为 GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」；模型与撰写工具见 `agent.json`，媒体合成工具在各自说明文件中单独披露。
