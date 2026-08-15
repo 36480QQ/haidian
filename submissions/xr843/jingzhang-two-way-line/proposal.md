@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把「京张」读完整：北端张家口有绿电与算力，南端海淀有模型、人才与场景，高铁 47 分钟，而这段 200 公里的关系至今没有一处空间表达。方案把 11.4 km² 读作走廊南端的场站城区——明线（遗址公园 7.8 km 慢行绿脊）走人、暗线（清华园隧道 6 km 京张高铁）走智能，并以「对开协议」让每一次 AI 部署都成为上行数据与下行公共回报成对出现的班次，六条规则可在展示页当场复算。全部为概念建议，临时边界待官方红线发布后整包重算。"
 tracks: ["jingzhang-heritage-narrative", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v1.9"
+iteration: "v1.10"
 ---
 
 # 京张对开 THE TWO-WAY LINE：让百年走廊双向运行的AI创新带城市设计

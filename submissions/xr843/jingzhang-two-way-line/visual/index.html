@@ -12,10 +12,20 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.75;font-size:15px}
 .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 60px}
-header.hero{border-bottom:3px solid var(--ink);padding:26px 0 20px;margin-bottom:8px}
-.hero h1{font-size:30px;letter-spacing:.5px}
-.hero .sub{color:var(--brick);font-size:16px;margin-top:6px}
-.hero .tag{color:var(--grey);font-size:12.5px;margin-top:10px}
+header.hero{background:var(--ink);color:#fff;padding:46px 20px 34px}
+.hero-inner{max-width:1080px;margin:0 auto}
+.hero-logo{background:var(--paper);border-radius:11px;padding:7px;display:block;margin-bottom:16px}
+.hero .kicker{font-size:11.5px;letter-spacing:.24em;color:var(--gold);font-weight:700;margin-bottom:12px}
+.hero h1{font-size:46px;line-height:1.16;letter-spacing:.5px;color:#fff}
+.hero .sub{color:#e3c470;font-size:17px;margin-top:10px}
+.hero .tag{color:#9fb0c4;font-size:12.5px;margin-top:10px}
+.hero .tag a{color:#fff}
+.hero .tag code{background:rgba(255,255,255,.1);color:#cfe0ef;border-radius:3px;padding:0 4px}
+.topbar{background:var(--panel);border-top:4px solid var(--brick);border-bottom:1px solid var(--light)}
+.topbar-inner{max-width:1080px;margin:0 auto;padding:11px 20px;display:flex;gap:22px;flex-wrap:wrap;font-size:13.5px;align-items:center}
+.topbar a{color:var(--ink);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px}
+.topbar a:hover{border-bottom-color:var(--brick)}
+.topbar a.cta{color:var(--brick);font-weight:700}
 .banner{background:#faf1dc;border:1px solid var(--gold);border-left:6px solid var(--gold);
 padding:10px 14px;font-size:12.8px;color:#7a6420;margin:14px 0;border-radius:4px}
 section{margin:34px 0}
@@ -43,7 +53,7 @@ tr:nth-child(even) td{background:#f4f0e4}
 .muted{color:var(--grey);font-size:12.5px}
 footer{border-top:2px solid var(--ink);margin-top:44px;padding-top:14px;color:var(--grey);font-size:12px}
 .cols{columns:2;column-gap:28px}
-@media(max-width:760px){.cols{columns:1}.hero h1{font-size:23px}}
+@media(max-width:760px){.cols{columns:1}.hero h1{font-size:29px}header.hero{padding:32px 18px 26px}}
 @media print{body{background:#fff}}
 
 /* —— 对开协议·桌面推演（页内运行，数据与规则均取自包内文件） —— */
@@ -89,23 +99,35 @@ footer{border-top:2px solid var(--ink);margin-top:44px;padding-top:14px;color:va
 #tabletop .tt-engine{color:var(--grey);font-size:12px;margin-top:14px}
 #tabletop noscript{display:block;color:var(--grey);font-size:13px}
 
-.hero-lede{font-size:16.5px;line-height:1.7;margin:14px 0 4px;color:var(--ink);border-left:4px solid var(--green);padding-left:12px}
-.hero-stats{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:16px 0 4px}
-.hero-stat{background:var(--panel);border:1px solid var(--light);border-radius:6px;padding:10px 12px}
-.hero-stat b{display:block;font-size:21px;font-variant-numeric:tabular-nums;line-height:1.2}
-.hero-stat span{color:var(--grey);font-size:12px}
+.hero-lede{font-size:16.5px;line-height:1.7;margin:18px 0 4px;color:#dbe4ee;border-left:4px solid var(--green);padding-left:14px}
+.hero-lede strong{color:#fff}
+.hero-stats{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:20px 0 2px}
+.hero-stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:6px;padding:11px 13px}
+.hero-stat b{display:block;font-size:23px;font-variant-numeric:tabular-nums;line-height:1.2;color:#fff}
+.hero-stat>span{color:#9fb0c4;font-size:12px}
 </style>
-<div class="wrap">
 <header class="hero">
-<img src="../assets/two-way-line-logo.svg" alt="京张对开 Logo：双箭同轨——两条平行轨线以轨枕横杠相连，上端北向箭头、下端南向箭头，负空间隐含「开」字骨架" width="54" height="54" style="display:block;margin-bottom:10px">
+<div class="hero-inner">
+<img class="hero-logo" src="../assets/two-way-line-logo.svg" alt="京张对开 Logo：双箭同轨——两条平行轨线以轨枕横杠相连，上端北向箭头、下端南向箭头，负空间隐含「开」字骨架" width="54" height="54">
+<div class="kicker">百年京张 AI 创新带城市设计 · 开源征集投稿</div>
 <h1>京张对开 THE TWO-WAY LINE</h1>
 <div class="sub">让百年走廊双向运行的AI创新带城市设计 — 电子展示成果</div>
-<div class="tag">xr843 / jingzhang-two-way-line · v1.9 · 2026-08 · formal 概念方案包</div>
+<div class="tag">xr843 / jingzhang-two-way-line · v1.10 · 2026-08 · formal 概念方案包</div>
 <div class="tag">对开协议可当场复核：本页「<a href="#tabletop">对开协议·桌面推演</a>」一节实时运行包内规则引擎，给出十二张班次卡 12/12 通过六条规则、六个变异班次 6/6 被其对应规则拦下，并可由你亲手把闸门弄红；同一结论亦可用 <code>node visual/assets/run_twoway_tabletop.js</code> 在终端复算。</div>
 <p class="hero-lede">北端张家口有绿电与算力（国家「东数西算」京津冀枢纽集群 + 全国唯一的国家级可再生能源示范区），南端海淀有模型、人才与场景，京张高铁 47 分钟——<strong>这条 200 公里的关系至今没有一处空间表达</strong>。本方案把总体设计范围读作走廊南端的场站城区，把「对开」做成可以走进去的空间与可以执行的制度。</p>
 <div class="hero-stats"><div class="hero-stat"><b><span class="mv" data-metric="greenway_length_m" data-value="7829.5">7.83</span> km</b><span>明线慢行绿脊贯通</span></div><div class="hero-stat"><b><span class="mv" data-metric="crossing_node_count" data-value="8">8</span> 处</b><span>道口缝合东西两侧</span></div><div class="hero-stat"><b><span class="mv" data-metric="ai_scenario_card_count" data-value="12">12</span> 张</b><span>班次卡受对开协议约束</span></div><div class="hero-stat"><b>32 / 4</b><span>指标 known / unknown</span></div></div>
-<div class="banner">⚠ 临时边界(provisional)：本包全部几何基于自行推导并按公告面积校准的街道贴合临时边界，非官方红线，不得用于审批、权属或精确面积主张；官方 polygon 发布后整包重算。全部内容为开放共创概念建议，不替代正式规划。</div>
+</div>
 </header>
+<nav class="topbar"><div class="topbar-inner">
+<a href="index.en.html">English</a>
+<a class="cta" href="#tabletop">▶ 对开协议 · 桌面推演（页内实时运行）</a>
+<a href="#scopes">三层范围</a>
+<a href="#scenarios">AI 场景</a>
+<a href="#metrics">核心指标</a>
+<a href="#sources">来源</a>
+</div></nav>
+<div class="wrap">
+<div class="banner">⚠ 临时边界(provisional)：本包全部几何基于自行推导并按公告面积校准的街道贴合临时边界，非官方红线，不得用于审批、权属或精确面积主张；官方 polygon 发布后整包重算。全部内容为开放共创概念建议，不替代正式规划。</div>
 <section id="overview"><h2>总览地图<small></small></h2>
 <p>明线（7.8公里遗址公园慢行绿脊）+ 暗线（清华园隧道高铁）双层走廊；三站一门、两台八口、双河冷环。绿电与算力上行进京，模型、人才与场景下行出塞。</p>
 <figure><img src="../assets/figures/site-overview.png" alt="总体概念图"><figcaption>FIG-01 · 总体概念结构（由包内 GeoJSON 与 metrics 派生）</figcaption></figure></section>
