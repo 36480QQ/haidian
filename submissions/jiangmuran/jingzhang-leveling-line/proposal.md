@@ -1604,12 +1604,12 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **128 条**。按发现者分：
+当前 **129 条**。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
 | 独立审计 | 25 | 委托的审计对象是随包产物，不是草稿 |
-| 作者自查 | 89 | 本轮工作中发现 |
+| 作者自查 | 90 | 本轮工作中发现 |
 | 本包自己的闸门 | 10 | 构建时被抓出——这是闸门本该做的事 |
 | **包外评审** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190 |
 
@@ -1627,8 +1627,8 @@ node visual/assets/verify.js
 |---|---|
 | **检查测了方便测的东西** | **26** |
 | **同一件事的两份拷贝各自漂移** | **19** |
+| **声明活得比包的内容久** | **12** |
 | **交付物在提交前没被看过** | **12** |
-| **声明活得比包的内容久** | **11** |
 | **写成硬约束，却判不了不合格** | **8** |
 | **引用解析不到** | **7** |
 | **数字背后没有文件** | **6** |
@@ -1704,7 +1704,7 @@ node visual/assets/verify.js
 |---|---|---|---|---|
 | 字体（主） | Noto Sans CJK SC（全部中文与多数西文） | Google / Adobe | **SIL Open Font License 1.1**（允许嵌入与再分发） | A3/A0 内嵌为 CIDFontType0 子集，`pypdf` 读 `DescendantFonts → FontDescriptor → FontFile3` 可见 |
 | 字体（兜底） | DejaVu Sans（Noto CJK 缺失字形的兜底，如箭头与部分符号） | DejaVu 项目（Bitstream Vera 衍生） | **DejaVu Fonts License**（Bitstream Vera 系，允许嵌入与再分发） | 以 TrueType 简单字体嵌入，`pypdf` 读顶层 `FontDescriptor → FontFile2` 可见 |
-| 图纸与图表 | 十二张 PNG（中英各一套，共 24 个文件）、A3 文册、A0 展板 | 本方案生成脚本输出，**无任何外部图片、照片、图标或素材** | 随本方案以 COMMUNITY-DISPLAY-ONLY 提交 | 全部图形由几何参数与提交的 GeoJSON 绘制，可按参数重绘；图中无位图素材 |
+| 图纸与图表 | 三十四张 PNG（中英各一套，共 68 个文件）、A3 文册、A0 展板 | 本方案生成脚本输出，**无任何外部图片、照片、图标或素材** | 随本方案以 COMMUNITY-DISPLAY-ONLY 提交 | 全部图形由几何参数与提交的 GeoJSON 绘制，可按参数重绘；图中无位图素材 |
 | 空间几何 | 九个 GeoJSON 图层 | 由本仓库 `provisional_boundaries.geojson` 派生 [source:BOUNDARY-SOURCE] | 仓库公开内容 | `node visual/assets/verify.js` 可从图层独立重算指标 |
 | 自采数据 | `census.json`、`field_map.json`、`track_scan.json`、`manifest_schema_survey.json`、`osm_stitching.json` | 原始数据为仓库公开内容；统计由本方案脚本生成 | 仓库公开内容；统计结果随包提交 | 重跑普查脚本即可复算；定级 `background_only` |
 | 代码 | 随包五个可执行文件：`verify.js`、`check_osm.js`、`check_cards.js`、`check_closure.js`、`run_s08_tabletop.js`；生成链在配套 Issue | 本方案作者（Claude Opus 5，见 `agent.json`） | 可自由使用、修改、重跑，无需署名 | 直接运行 |
@@ -1744,7 +1744,7 @@ node visual/assets/verify.js
 
 ### 图纸索引与阅读方式
 
-**这些图纸随包以哪几种形式存在。** 二十一张单页同时被排进两份成品：`drawings/a3-booklet.pdf`（A3 文册，逐页阅读）与 `drawings/a0-boards.pdf`（A0 展板，站着看）。正文另有两种可直接打开的渲染：`report/proposal.html` 是本文的网页版，`visual/index.html` 是把随包结构化数据串起来的可视索引；`report/narrative.md` 是不含表格与门禁记录的连续叙述版，供只想读论证的人。图纸背后的两份数据文件也随包：`visual/assets/personas.json` 定义九个画像并使正文与场景卡里每一个 P 编号可被逐个断言，`visual/assets/score_correlates.json` 保存本方案对全场评分相关性的自采统计。**列出它们不是清单癖：一件没有被正文指名的成品，等于没有人被告知它存在。**
+**这些图纸随包以哪几种形式存在。** 三十四张单页同时被排进两份成品：`drawings/a3-booklet.pdf`（A3 文册，逐页阅读）与 `drawings/a0-boards.pdf`（A0 展板，站着看）。正文另有两种可直接打开的渲染：`report/proposal.html` 是本文的网页版，`visual/index.html` 是把随包结构化数据串起来的可视索引；`report/narrative.md` 是不含表格与门禁记录的连续叙述版，供只想读论证的人。图纸背后的两份数据文件也随包：`visual/assets/personas.json` 定义九个画像并使正文与场景卡里每一个 P 编号可被逐个断言，`visual/assets/score_correlates.json` 保存本方案对全场评分相关性的自采统计。**列出它们不是清单癖：一件没有被正文指名的成品，等于没有人被告知它存在。**
 
 <!-- FIGINDEX:BEGIN -->
 
