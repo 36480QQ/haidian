@@ -1,58 +1,104 @@
 {
   "schema_version": "1.2",
-  "variant": "v0.12.g",
-  "title_zh": "三条双轨空间合同 / THREE DUAL-TRACK SPATIAL CONTRACTS",
-  "status": "spatial_contract_governance",
-  "contracts": [
+  "variant": "v0.12.s",
+  "title_zh": "城市失效可用性剖面 / CIVIC FAILSAFE SECTIONS",
+  "status": "concept_design_contract",
+  "method": "ordinary_task -> S0_baseline -> S1_optional_enhancement -> S2_human_takeover -> S3_public_physical_recheck -> recovery_or_rollback",
+  "operating_states": [
     {
-      "id": "SC-01",
-      "name": "ARRIVE WITHOUT APP",
-      "place": "大钟寺 / Dazhongsi Station-City Arrival",
-      "spatial_typology": "站城高密度立体换乘与遗产缝合中庭",
-      "ordinary_baseline": "连续实体无障碍步行走廊 + 50m 视距高对比实体反光/自发光导视 + 50m 范围内实体人工问询岗与宽幅无障碍物理通道 (0% 手机依赖)",
-      "spatial_prerequisite": "换乘主通廊净宽 >= 4.5m，导视安装净高 >= 2.5m，关键决策节点间直线视线通廊，严禁广告商业侵占导视包络线",
-      "optional_ai": "动态客流密度预测、公共大屏分流提示与 Web 自愿无障碍导航辅助",
-      "human_takeover_sla": "网络中断或屏显延迟 > 2s 时 <= 0.1s 切断数字界面，100% 依赖实体反光标志与人工导流台维持 12,000 人次/小时通行",
-      "accountable_actor": "京港地铁/北京地铁运营方 + 北下关街道办事处 + 站城一体化运营联合体",
-      "implementation_phase": "Phase 1 完成实体导视与人工服务台全覆盖；Phase 2+ 接入动态分流算法",
-      "acceptance_metric": "无手机使用者到达成功率 100%",
-      "go_stop_trigger": "若数字屏响应延迟 > 2s 或人流瓶颈密度 > 2.5 人/m2，强制触发 STOP，关闭动态调度并转入纯物理通行模式"
+      "id": "S0",
+      "name": "ORDINARY",
+      "rule_zh": "普通城市物理路径与基本服务先成立。"
     },
     {
-      "id": "SC-02",
-      "name": "CARE WITHOUT ACCOUNT",
-      "place": "AI 原点 / AI Origin Long-term Community",
-      "spatial_typology": "细密慢行生活街区 (Woonerf) 与全龄关怀核",
-      "ordinary_baseline": "400m 连续无障碍实体林荫连廊 + 每 200m 实体便民综合驿站 (纸质办事窗口、按键公用电话、铜缆紧急求助铃，免账号免人脸免画像)",
-      "spatial_prerequisite": "便民综合驿站单处占地 >= 15m2，人行遮阴步道净宽 >= 2.5m，沿线全物理扶手与防滑坡道 (坡度 <= 1:12)",
-      "optional_ai": "慢病长者自愿式健康监护、社区共享空间算法预约与智能语音陪伴终端",
-      "human_takeover_sla": "拒绝数字服务或算法宕机时，网格员与社区医生 100% 物理上门/窗口接管",
-      "accountable_actor": "中关村街道办 + 社区居委会 + 海淀区社区卫生服务中心",
-      "implementation_phase": "Phase 1 筑牢 400m 实体林荫步道与便民驿站；Phase 2 开放自愿式健康数据沙盒",
-      "acceptance_metric": "非数字渠道公共服务覆盖率 100%",
-      "go_stop_trigger": "若发生非授权数据泄露或健康误报 >= 2次/月，强制触发 STOP，暂停算法接口并启动社区伦理听证"
+      "id": "S1",
+      "name": "ENHANCED",
+      "rule_zh": "AI/测试只能作为有边界、可撤回的可选增强。"
     },
     {
-      "id": "SC-03",
-      "name": "TEST WITHOUT BLOCKING",
-      "place": "众智园 / Zhongzhiyuan Innovation Campus",
-      "spatial_typology": "多孔院落网格与线性科研测试环路",
-      "ordinary_baseline": "科研人员、学生与服务劳动者的通勤、餐饮、绿地漫步等日常公共流线保持独立且 100% 物理畅通 (普通空间绝非试验场)",
-      "spatial_prerequisite": "低速无人车/机器人测试道与步行道采用高差 (+15cm 路缘石) 或绿化硬隔离；单向净宽 >= 1.8m；交叉口设气动升降柱；每 50m 设红色 E-Stop 按钮",
-      "optional_ai": "低速自动配送、具身智能户外感知基准测试与共享算力分时调度",
-      "human_takeover_sla": "拍下 E-Stop 或遇告警，机械隔离柱 <= 0.5s 升起切断动力；测试退出后 10 分钟内恢复普通步行空间",
-      "accountable_actor": "中关村科学城管委会 + 园区物业管理方 + 入驻 AI 企业测试联合体",
-      "implementation_phase": "Phase 1 仅限封闭院落内低速测试；Phase 2 物理隔离验收合格后开放专用测试环路",
-      "acceptance_metric": "测试对普通步行阻滞率为 0%",
-      "go_stop_trigger": "若发生无人设备越界或阻滞人流 >= 1次/周，立即触发 STOP 吊销测试许可，恢复纯校园公共空间"
+      "id": "S2",
+      "name": "DEGRADED",
+      "rule_zh": "数据、账号、模型或测试不可用时转人工接管，普通任务不中断。"
+    },
+    {
+      "id": "S3",
+      "name": "RECOVERY",
+      "rule_zh": "不自动恢复增强；先进行公众/物理复核，再决定恢复、修正或回退。"
     }
   ],
-  "black_sky_protocol": {
-    "title_zh": "黑天鹅极端压力测试规约 (Black-Sky Resilience Protocol)",
-    "frequency": "Quarterly (每季度一次)",
-    "duration_hours": 48,
-    "simulation": "全区网络与电力切断极限情景",
-    "acceptance_target": "大钟寺疏散、原点社区照护配药、众智园科研通勤 100% 物理可用"
+  "release_gates": [
+    {
+      "id": "G0",
+      "name": "BASELINE",
+      "evidence_zh": "证明普通城市任务在 AI-OFF 状态成立。"
+    },
+    {
+      "id": "G1",
+      "name": "STEWARDSHIP",
+      "evidence_zh": "明确拟议责任角色、人工接管和退出路径；正式法律主体待确认。"
+    },
+    {
+      "id": "G2",
+      "name": "REVERSIBLE_PILOT",
+      "evidence_zh": "增强边界受控、可停止、可撤除，不挤占 S0。"
+    },
+    {
+      "id": "G3",
+      "name": "SCALE_OR_ROLLBACK",
+      "evidence_zh": "通过概念验收才扩围，否则 REVISE / STOP / 回退。"
+    }
+  ],
+  "promises": [
+    {
+      "id": "PP-01",
+      "name": "ARRIVE WITHOUT APP",
+      "key_area": "大钟寺",
+      "ordinary_task": "到达—辨向—换乘/求助—普通等候与商业—京张遗产公共界面",
+      "ordinary_baseline": "固定双语导视、实体入口、人工求助与无障碍连续意图先成立。",
+      "optional_ai": "动态多语信息、拥挤提示和路线辅助只能增强。",
+      "proposed_steward_role": "站城公共界面责任角色（正式法律主体待确认）",
+      "human_takeover": "AI/账号不可用时回到固定导视、人工帮助与普通路径。",
+      "go_condition": "S0 完整且人工接管可读后，才允许可逆增强。",
+      "revise_condition": "实体或人工后备不可理解时修正，不进入扩围。",
+      "stop_rollback": "任何增强若阻断普通到达任务即停止并回退。",
+      "reality_rule": "不由 provisional polygon 推导真实站口、桥隧、道路或工程线位。"
+    },
+    {
+      "id": "PP-02",
+      "name": "CARE WITHOUT ACCOUNT",
+      "key_area": "AI 原点",
+      "ordinary_task": "家门—遮阴/休息—照护/求助—公共客厅—绿廊",
+      "ordinary_baseline": "无账号、无智能手机或拒绝数据时仍可通过实体路径和人工/电话/纸质后备获得基本服务。",
+      "optional_ai": "导航、服务匹配和多语辅助为可选层。",
+      "proposed_steward_role": "基本公共服务与人工接管责任角色（正式法律主体待确认）",
+      "human_takeover": "账号、数据或模型不可用时，实体与人工服务入口继续工作。",
+      "go_condition": "基本服务入口不依赖账号且人工接管存在后才进入增强。",
+      "revise_condition": "公众无法辨认实体/人工后备时修正。",
+      "stop_rollback": "任何增强若成为唯一服务入口即停止并回退。",
+      "reality_rule": "绿廊连续步行、停留和公共首层优先于设备与物流。"
+    },
+    {
+      "id": "PP-03",
+      "name": "TEST WITHOUT BLOCKING",
+      "key_area": "众智园",
+      "ordinary_task": "到达—研发/服务劳动—吃饭休息—共享空间—离开",
+      "ordinary_baseline": "普通工作、休息、步行和公共绿地流线先完整。",
+      "optional_ai": "机器人、设备与算法测试仅进入可区分、可关闭、可撤除的受控范围。",
+      "proposed_steward_role": "公共空间管理与测试责任角色（正式法律主体待确认）",
+      "human_takeover": "测试停止或 AI-OFF 时普通路径和服务不改变。",
+      "go_condition": "S0 连续、测试边界可关闭且人工责任明确后才进入试点。",
+      "revise_condition": "测试边界与普通公共空间关系不清晰时修正。",
+      "stop_rollback": "任何测试若移动、缩减或阻断普通公共路径即停止并回退。",
+      "reality_rule": "公开 FAR/高度仅作现实尺度参照，不成为测试扩张或法定控制依据。"
+    }
+  ],
+  "coverage_contract": {
+    "spatial_contract_count": 3,
+    "critical_task_count": 3,
+    "all_have_ai_off_path": true,
+    "all_have_human_takeover": true,
+    "all_have_go_revise_stop": true,
+    "release_gate_count": 4
   },
-  "principle": "The three dual-track spatial contracts establish that physical C7 baseline infrastructure maintains non-negotiable physical fail-safe priority over soft algorithmic scheduling."
+  "principle": "The city must remain legible and usable when AI, accounts or tests fail. These are concept-design verification rules, not field-tested performance, statutory controls or government commitments."
 }

@@ -120,7 +120,7 @@
       "severity": "info",
       "target": "metrics.json / assumptions.json",
       "source": "package-provided",
-      "message": "指标与其假设的机读联接 — assumption references: 36 metrics, 38 id references, every one resolves and matches what the metric actually reads (boundary, corpus, OSM, package-internal)"
+      "message": "指标与其假设的机读联接 — assumption references: 36 metrics, 45 id references, every one resolves and matches what the metric actually reads (boundary, corpus, OSM, package-internal); the 43 source paths those rules read all resolve too — 42 in the package, 1 in the organiser's brief"
     }
   ],
   "ok": true,
