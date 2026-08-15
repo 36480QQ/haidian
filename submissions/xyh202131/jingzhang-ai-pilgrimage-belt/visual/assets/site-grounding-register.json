@@ -776,6 +776,31 @@
         "result_after_fix": "0 heading skips in both re-rendered reports; Round 23 renderer media-link fix re-applied after re-render",
         "certification_note": "Deterministic structural verification only; it is not assistive-technology certification or human visual inspection."
       },
+      "a0_board8_backlink_r29": {
+        "contract_id": "JZ-A0-BOARD8-BACKLINK-R29",
+        "executed_at": "2026-08-15",
+        "method": "Deterministic bilingual A0 rebuild with the Round 20 pipeline (ReportLab invariant PDF, fontTools static weights, Chrome 4x JPX print layers, PyMuPDF lossless media streams) in two fresh processes; PyMuPDF text extraction over all four PDFs for the A0 board-8 and A3 P14 backlink lines",
+        "baseline_findings": {
+          "a0_zh_board8_backlink": false,
+          "a0_en_board8_backlink": false,
+          "a3_zh_p14_backlink": true,
+          "a3_en_p14_backlink": true
+        },
+        "fixes": [
+          {
+            "file": "drawings/a0-boards.pdf",
+            "board": 8,
+            "change": "added the review-handoff-index.json backlink line to the judgement box in both languages"
+          },
+          {
+            "file": "drawings/a0-boards.en.pdf",
+            "board": 8,
+            "change": "added the review-handoff-index.json backlink line to the judgement box in both languages"
+          }
+        ],
+        "result_after_fix": "8/8 pages in both A0 files, 0 blank pages, 0 replacement glyphs, 0 out-of-page text blocks, board-8 backlink searchable in both languages; two fresh-process builds byte-identical (zh 6e6373e39988f5057ba1c210d2aeb7b5d277c0862b6344aa5266b028f78b8899, en a9af5092c51f3abd2e1418bc5d6812855aec4163348276662e881b0c02912e6e); both A3 booklets keep the Round 20 fixed-point bytes",
+        "certification_note": "Deterministic rebuild and text-extraction verification only; it is not human visual inspection, field evidence or an approval of any kind."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,

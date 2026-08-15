@@ -374,9 +374,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "545571b09964d357d847164a53cdf8e860776f286c569d45bdcce5465c568f68",
+        "digest": "5cd9e42fc11743cbd6745d6c5a020f257914108c0fe0de2626887cfa904b3a46",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 was recomputed from the accepted Round 19 file bytes after independent parallel review and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 29 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -606,9 +606,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "62a1d8d40be7a94023062e995ce514f8f0604b0429be82a2f06c5aae30eecb86",
+        "digest": "62d5208fc16cc8946b9698f7cb3c6ae008da3899a6c67f108c1200e708d8514f",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 was recomputed from the final marked Round 19 four-gate self-check bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 29 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -653,9 +653,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "72d39f31cabb8510780cf5d8c7f8c32e04a0fc344c6ec95919b47c443bcd0c0c",
+        "digest": "03d8effb7ff8a1b59f65f074ac1a6360544e81e8e0ce1eb5226f0759d88a04a7",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 was recomputed from the accepted Round 19 file bytes after independent parallel review and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 29 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1058,9 +1058,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "02ce636a5017ad1cde5aa35c16cce3e7afa7253bf7d05a4184b968fb7165c7d6",
+        "digest": "1ecfabc7323cab4967523fea829df758dddb9ec018a677295ed7a609dfc4d6c3",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the frozen Round 18 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 29 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -1908,9 +1908,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "18b175dde69f162d77ff3126cf407721bf520c51ba49f76e80ae213585faa7c5",
+        "digest": "5bded49072a6fce58aa29e4ee70a89414f8d2055ab8249de7c52cadbcac31257",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 was recomputed from the accepted Round 19 file bytes after independent parallel review and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 29 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2081,9 +2081,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "6de5308769443898684ac63295251f68f087a8c75665796326a424357faf8749",
+        "digest": "6e6373e39988f5057ba1c210d2aeb7b5d277c0862b6344aa5266b028f78b8899",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 was recomputed from the accepted Round 19 file bytes after independent parallel review and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 29 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3545,9 +3545,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "ba14d5caa2d240809d541de94a4913b2f77dc4b5c8ea75478e8b3c84060275cd",
+        "digest": "a9af5092c51f3abd2e1418bc5d6812855aec4163348276662e881b0c02912e6e",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 was recomputed from the accepted Round 19 file bytes after independent parallel review and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 29 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7805,9 +7805,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e3a41dba59fae8db533cf5e39fbf8ddef6fd08ecfcee8cfc052f325f6485c069",
+        "digest": "447451f560abb6c0570a720245c36b3b4a9c935417fe0b960a58ec9a9ab3237e",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 28 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 29 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],

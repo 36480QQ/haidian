@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v29.0 - 2026-08-15
+
+**A0 professional-handoff board index backlink / A0 专业交接板接入评审交接索引回链**
+
+- 第 29 轮只在第 28 轮 PR #2777 合并（merge SHA `60f514dafe3876f0165ef7acf50d3d25b6aef5a5` 进入 canonical `main@b765517f572aec6a3c63a8e8c6c6671be4500629`）且 443 个开放 PR 文件级扫描无竞争后开始。闭合第 20 轮记录的遗留不一致：A3 P14 已含 `review-handoff-index.json` 回链，而 A0 第 8 板（公共信号、专业交接与 NO-GO）没有。本轮在 A0 第 8 板判断框内新增一行回链（中英文），使评审交接索引在全部正式出版载体中可达。
+- Round 29 began only after Round 28 PR #2777 merged (merge SHA `60f514dafe3876f0165ef7acf50d3d25b6aef5a5` entered canonical `main@b765517f572aec6a3c63a8e8c6c6671be4500629`) and a file-level scan of 443 open PRs found no competing PR. This closes the inconsistency recorded in Round 20: A3 page 14 already carries the `review-handoff-index.json` backlink while A0 board 8 (public signals, professional handoff and NO-GO) did not. One backlink line was added to the A0 board-8 judgement box in both languages, making the review handoff index reachable from every formal publication carrier.
+- 用第 20 轮确定性管线（ReportLab invariant、fontTools 静态字重、Chrome 4× JPX 印刷层、PyMuPDF 无损媒体流）重建两份 A0（8/8 页不变）；两次全新进程逐文件字节一致（zh `6e6373e3…`，en `a9af5092…`）。44 页 QA：空白页 0、替换字形 0、越界文本块 0、第 8 板回链可搜索；两份 A3 字节保持第 20 轮固定点不变。
+- Both A0 boards were rebuilt with the Round 20 deterministic pipeline (ReportLab invariant, fontTools static weights, Chrome 4× JPX print layers, PyMuPDF lossless media streams) keeping 8/8 pages; two fresh processes produced byte-identical files (zh `6e6373e3…`, en `a9af5092…`). 44-page QA: 0 blank pages, 0 replacement glyphs, 0 out-of-page blocks, board-8 backlink searchable; both A3 files keep their Round 20 fixed-point bytes.
+- 仅 A0 第 8 板一行回链与出版物元数据变化，无主张、数据、机制或成熟度变化；geometry、metrics、sources.json 与全部图件/媒体字节未变。
+- Only one backlink line on A0 board 8 and publication metadata changed; no claim, data, mechanism or maturity change. Geometry, metrics, sources.json and all figures/media keep their bytes.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。重建、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A rebuild, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v28.0 - 2026-08-15
 
 **Evidence-citation coverage completion / 证据引用覆盖补全**
