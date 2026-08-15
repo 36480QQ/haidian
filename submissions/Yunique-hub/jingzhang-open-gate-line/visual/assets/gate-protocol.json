@@ -5,6 +5,53 @@
   "title_en": "Open Gate Protocol",
   "purpose_zh": "把十二座共享之门从概念节点转化为可审计、可停机、可回退的公共空间运行协议。",
   "purpose_en": "Turns the twelve shared gates from conceptual nodes into an auditable, pausable and reversible public-space operating protocol.",
+  "brief_framework": {
+    "positions": [
+      {"id": "POS-01", "zh": "全球 AI 原生创新展示窗口", "en": "Global window for AI-native innovation"},
+      {"id": "POS-02", "zh": "京张遗产与中关村创新精神交汇的城市客厅", "en": "Civic room where Jing-Zhang heritage meets Zhongguancun innovation"},
+      {"id": "POS-03", "zh": "可验证、可回退、可复制的城市 AI 试验场", "en": "Testbed for verifiable, reversible and transferable urban AI"}
+    ],
+    "functions": [
+      {"id": "FUN-01", "zh": "原点展示", "en": "Origin display"},
+      {"id": "FUN-02", "zh": "技术服务", "en": "Technology service"},
+      {"id": "FUN-03", "zh": "场景试验", "en": "Scenario testing"},
+      {"id": "FUN-04", "zh": "公共体验", "en": "Public experience"},
+      {"id": "FUN-05", "zh": "全球协作", "en": "Global collaboration"}
+    ],
+    "areas": [
+      {"id": "A1", "zh": "众智试验区", "en": "Collective-Intelligence Test Area", "gates": ["G01", "G02", "G03", "G04"]},
+      {"id": "A2", "zh": "AI 原点区", "en": "AI Origin Area", "gates": ["G05", "G06", "G07", "G08"]},
+      {"id": "A3", "zh": "京张公共文化区", "en": "Jing-Zhang Civic Culture Area", "gates": ["G09", "G10", "G11", "G12"]}
+    ],
+    "wings": [
+      {"id": "W1", "zh": "中关村科技服务翼", "en": "Zhongguancun Tech-Service Wing", "status": "conceptual_service_network"},
+      {"id": "W2", "zh": "小月河场景赋能翼", "en": "Xiaoyue River Scenario-Empowerment Wing", "status": "conceptual_service_network"}
+    ]
+  },
+  "identity_system": {
+    "mark": "visual/assets/open-gate-mark.svg",
+    "name_zh": "京张开门线",
+    "name_en": "THE OPEN GATE LINE",
+    "operating_phrase_zh": "到点开门 · 共同收门",
+    "operating_phrase_en": "OPEN ON TIME · CLOSE TOGETHER",
+    "colors": {"rail_navy": "#0D2333", "open_amber": "#F4B544", "assist_teal": "#3AD6C1", "pause_red": "#FF776D", "civic_stone": "#EEF0E8"},
+    "accessibility": "every_color_state_is_paired_with_text_shape_and_operating_rule"
+  },
+  "precedent_transfers": [
+    {"id": "C1", "case": "one-north", "transfer": "time_sharing", "non_transfer": "scale_and_land_regime"},
+    {"id": "C2", "case": "STATION F", "transfer": "legible_service_stack", "non_transfer": "investment_and_governance"},
+    {"id": "C3", "case": "Kendall Square", "transfer": "public_space_network", "non_transfer": "performance_claims"},
+    {"id": "C4", "case": "Kalasatama", "transfer": "resident_problem_definition", "non_transfer": "measured_outcomes"},
+    {"id": "C5", "case": "Seoul AI Hub", "transfer": "staged_support", "non_transfer": "institutional_commitment"},
+    {"id": "C6", "case": "MaRS", "transfer": "partner_network", "non_transfer": "named_partner_commitment"}
+  ],
+  "ecosystem_resources": ["land", "space", "industry", "funding", "talent", "compute", "data", "scenarios"],
+  "representative_gates": [
+    {"id": "G05", "landmark_zh": "零号门", "landmark_en": "Origin Gate", "human_scale_components": ["step_free_path", "shelter", "staffed_desk", "mechanical_key", "visible_exit"]},
+    {"id": "G07", "landmark_zh": "水尺门", "landmark_en": "Gauge Gate", "human_scale_components": ["rain_garden", "manual_gauge", "overflow_route", "shelter", "staffed_takeover"]},
+    {"id": "G09", "landmark_zh": "开门钟", "landmark_en": "Commons Bell", "human_scale_components": ["nature_play", "caregiver_sightline", "touchable_rail_element", "honor_record", "visible_exit"]}
+  ],
+  "experience_states": ["day", "night", "rain", "event", "failure"],
   "governance": {
     "principle_zh": "AI 只提供建议、排序和异常提示；公共机构或其授权运营主体保留开放、暂停、疏散和资源分配的最终决定权。",
     "principle_en": "AI may advise, rank and flag anomalies; public authorities or their authorized operators retain final authority over opening, pausing, evacuation and resource allocation.",

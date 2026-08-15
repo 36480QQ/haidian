@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A heritage-park threshold spine with twelve reservable, staffed, closable shared-time gates linking campuses, innovation parks, and neighborhoods."
+summary: "Three positions, five functions, and three areas plus two wings form the strategic framework; twelve staffed and reversible public gates connect Jing-Zhang heritage, AI scenarios, and long-term operations as a verifiable urban interface."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -33,11 +33,23 @@ Acceptance at the research scale is a partner-resource-time catalog; at the over
 
 ## Coordinated Research Area: Industry and Future City Research
 
-The industry strategy shifts from “build another park” to “make existing capacity visible, reachable, and cooperative at the right time.” Northern life-science and university assets, the central AI origin and innovation firms, and southern Dazhongsi cultural-commercial resources exchange through an opening calendar: controlled visits and validation of research facilities; two-way translation between community problems and startup services; and joint curation of culture and public markets [depth:industry_ecosystem]. Two support wings are not large new buildings. They are a contracts/compliance wing and a data/operations wing providing common templates and training for all twelve gates.
+The proposal translates the Agent taskbook into one inspectable framework. Its three positions are a **global window for AI-native innovation**, a **civic room where Jing-Zhang heritage meets Zhongguancun's innovation culture**, and a **testbed for verifiable, reversible and transferable urban AI**. Its five functions are origin display, technology service, scenario testing, public experience, and global collaboration. The three areas are the Collective-Intelligence Test Area, AI Origin Area, and Jing-Zhang Civic Culture Area; the two wings are the **Zhongguancun Tech-Service Wing** and **Xiaoyue River Scenario-Empowerment Wing**. OGP-12 is not another parallel slogan: it is the operating layer that crosses both wings and governs twelve public nodes [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:urban_design_structure].
+
+![Three positions, five functions, three areas plus two wings, and OGP-12](assets/figures/brief-framework.en.png)
+
+The identity combines twin rails, an open threshold, and a signal lamp into an original mark. Deep navy denotes the heritage base, amber means open, teal means staffed assistance, and red means pause. Every state also uses words and form, not color alone. The bilingual name, state symbols, wayfinding, accessible route, opening calendar, annual events, and honor markers share one grammar. The mark copies no historic component and borrows no institutional identity [depth:height_massing_character].
+
+![Original Open Gate Line mark and visual identity system](assets/figures/brand-identity.en.png)
+
+The industry strategy shifts from “build another park” to “make existing capacity visible, reachable, and cooperative at the right time.” Northern life-science and university assets, the central AI origin and innovation firms, and southern Dazhongsi cultural-commercial resources exchange through an opening calendar: controlled visits and validation of research facilities; two-way translation between community problems and startup services; and joint curation of culture and public markets [depth:industry_ecosystem]. The Zhongguancun Tech-Service Wing organizes technology services, talent, compute, data rights, and validation support. The Xiaoyue River Scenario Wing turns those capabilities into walkable, perceptible, and stoppable public tasks along the heritage park. Both are conceptual service networks, not confirmed institutions, investment, or new building programs.
 
 Local translations of the six precedents are precise. one-north informs different programming for weekday evenings and weekends. STATION F informs a legible shared-service entrance. Kendall Square shows innovation carried by a public-space network rather than a single icon. Kalasatama informs resident participation in problem definition. Seoul AI Hub demonstrates staged education, enterprise, and research support. MaRS demonstrates continuity through partner networks. Jing-Zhang borrows only four light mechanisms—protocol, calendar, test, and review—not land regimes or investment levels.
 
-The structure is “one line, three yards, twelve gates, two wings.” The line is the Jing-Zhang Heritage Park threshold spine. The yards are the Zhongzhiyuan Test Gate Yard, AI Origin Translation Gate Yard, and Dazhongsi Commons Gate Yard. Four gates sit in each key area. The two wings provide compliance and operations. Annual evaluation measures signed sharing agreements, accessible-task success, transparent cancellations and incident reporting, and joint resident-facility reviews rather than promised footfall or output [metric:scenario_node_count] [depth:urban_design_structure].
+After the cases, the ecosystem map checks a closed loop across eight resource classes: land, space, industry, funding, talent, compute, data, and scenarios. A node can enter Pilot only when site rights, public value, professional safety, operating responsibility, and an exit asset are all explicit. Unconfirmed companies or institutions are never drawn as committed partners; named actors enter only after public evidence or formal authorization [source:CASE-ONE-NORTH] [source:CASE-KALASATAMA] [source:CASE-SEOUL-AI-HUB].
+
+![Mechanism transfer from six global cases and the eight-resource ecosystem](assets/figures/ecosystem-cases.en.png)
+
+The structure is “one line, three areas, three yards, twelve gates, two wings.” The line is the Jing-Zhang Heritage Park threshold spine. The areas implement the taskbook layout. The yards are the Collective-Intelligence Test Gate Yard, AI Origin Translation Gate Yard, and Dazhongsi Commons Gate Yard. Four gates sit in each key area, while the wings supply technology services and continuous scenarios. Annual evaluation measures sharing agreements, accessible-task success, transparent cancellations and incident reporting, and joint resident-facility reviews rather than promised footfall or output [metric:scenario_node_count] [depth:urban_design_structure].
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -57,7 +69,11 @@ AI Origin contains G05 Scientist Commons, G06 Rail Market, G07 Sponge Garden, an
 
 Dazhongsi contains G09 Child Discovery, G10 Low-carbon Energy, G11 Biodiversity, and G12 Regional Link, forming the Commons Gate Yard. Nature play, an energy viewing window, seasonal habitat refuges, and an open-results wall support daily learning and regional exchange. TVS-03 combines a rainfall-sensor outage with a night-lighting fault; failure to take over manually within five minutes or maintain a continuous safe route stops the drill. The landmarks are G05 Gate Zero, G09 Open Gate Clock, and the corridor Commons Signal Towers. They show shared status and care without monumental excess [depth:three_key_area_detailed_design].
 
+Three representative nodes are developed at human scale. G05 Origin Gate uses a semi-outdoor commons, bilingual information plane, and visible staffed desk as an international arrival interface. G07 Gauge Gate combines a rain garden, manual gauge, overflow route, and sheltered waiting as a climate-learning node. G09 Commons Bell combines nature play, caregiver sightlines, touchable railway elements, and annual honor records as a civic-memory node. All three retain continuous step-free passage, shelter, seated waiting, mechanical keys, fixed signs, and a visible exit. Every illustrated dimension remains a conceptual control value requiring site survey and specialist fire, heritage, structural, and accessibility design; it is neither a construction drawing nor an engineering-feasibility conclusion [depth:three_key_area_detailed_design] [assumption:A-GATE-APPROVAL-001].
+
 ![Three key-area gate-yard prototypes](assets/figures/key-areas.en.png)
+
+![Concept plans, sections, and human-takeover points for Origin Gate, Gauge Gate, and Commons Bell](assets/figures/representative-gates.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -118,6 +134,14 @@ Public space supports four time sections: morning commute, midday learning, even
 
 Urban character follows “legible light intervention.” A repeated frame gives corridor continuity, while three landmarks hold shared memory and existing buildings retain material authenticity. Amber means open, teal means assisted, and dark means closed; digital and physical status must match. Commons Signal Towers acknowledge teams, open hours, and repaired issues without personal rankings or behavioral scores.
 
+The following original generated concept scene tests the human relationships: a wheelchair user and companion follow continuous guidance; an older person rests under shade; a child and caregiver share visible space; a steward maintains and takes over the node; and the mechanical key, staffed desk, rain garden, and honor wall remain visible together. It is not a site photograph, existing-condition survey, official rendering, or implementation commitment and cannot support boundary, area, or engineering claims.
+
+![Concept public gate with continuous access, staffed service, mechanical fallback, rain garden, and honor wall](assets/media/experience-gate-v3.png)
+
+The same gate is checked across day, night, rain, event, and failure. Day keeps passage and staffed help obvious. Night uses low-level light and visible assistance. Rain prioritizes shelter, drainage, and a manual gauge. Events protect walking, emergency access, and walk-in capacity. Failure disables AI advice and transfers control to fixed signs, paper rules, a mechanical key, and on-site stewards. Only a failed safety condition pauses the public gate; an algorithm outage alone should not erase basic passage [assumption:A-DATA-001] [depth:blue_green_public_space].
+
+![Five-state public-gate fail-safe sequence](assets/figures/experience-sequence.en.png)
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 Phase 1 (0–12 months) delivers P01–P04 and P08: verify boundary and ownership, create the heritage archive, accessible spine, sponge/night-safety base and three reversible pilots, and establish the audit-and-appeal desk before any algorithm goes live. Phase 2 (years 1–3) delivers P05–P07 and expands only after the three pilots meet their KPIs. Phase 3 (after year 3) delivers P09 and uses annual public reports to retain, move, or retire nodes [data:geometry/phasing.geojson] [depth:phasing_implementation]. The protocol verifies nine project records [metric:implementation_project_count].
@@ -142,7 +166,9 @@ Regional exchange is concrete rather than generic investment promotion: Beiwei c
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Five metric groups are used. Spatial-base metrics include the 11,412,825 m² provisional boundary, 310,807 m² conceptual footprint, 12.34% conceptual green ratio, 7.33% conceptual public-space ratio, and three key areas [metric:site_area_sqm]. Network capacity counts twelve gates, three tests, five personas, and three landmarks [metric:gate_count] [metric:persona_count] [metric:landmark_count]. Protocol completeness counts twelve machine-readable records and 100% human-authority and manual-fallback coverage [metric:gate_protocol_record_count] [metric:human_authority_coverage] [metric:manual_fallback_coverage]. Delivery capacity counts nine projects, five regional routes, and four annual events. Real operating quality and equity remain to be measured.
+Five metric groups are used. Spatial-base metrics include the 11,412,825 m² provisional boundary, 310,807 m² conceptual footprint, 12.34% conceptual green ratio, 7.33% conceptual public-space ratio, and three key areas [metric:site_area_sqm]. Brief response counts three positions, five functions, two conceptual service wings, six cases, eight ecosystem resources, and five experience states [metric:positioning_statement_count] [metric:core_function_count] [metric:experience_state_count]. Network capacity counts twelve gates, three tests, five personas, and three landmarks [metric:gate_count] [metric:persona_count] [metric:landmark_count].
+
+Protocol completeness counts twelve machine-readable records and 100% human-authority and manual-fallback coverage [metric:gate_protocol_record_count] [metric:human_authority_coverage] [metric:manual_fallback_coverage]. Delivery capacity counts nine projects, five regional routes, and four annual events, while real operating quality and equity remain to be measured.
 
 Spatial values recalculate from submitted GeoJSON. Protocol values are checked deterministically by `verify-gate-protocol.js`, which writes `protocol-audit.json`. Operating and equity measures remain “to be measured” before real pilots and no baseline is fabricated. FAR also remains unknown [metric:floor_area_ratio]. Each quantitative value records source files, formula, unit, confidence, and assumptions. Task coverage is in `compliance_matrix.json`, standards in `standard_matrix.json`, and professional depth in `design_depth_matrix.json` [depth:metrics_recalculation].
 
