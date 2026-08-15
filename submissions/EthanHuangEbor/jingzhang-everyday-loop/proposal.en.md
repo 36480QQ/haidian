@@ -25,6 +25,36 @@ Evidence is separated into current formal authority, contextual comparison, prov
 
 ![Overall proposition, policy route and evidence boundary](assets/figures/site-overview.en.png)
 
+### Review-visible evidence digest
+
+not_an_official_score=true · competition_concept_not_implementation_filing · no_award_selection_approval_or_government_endorsement_claimed · rights_and_provenance_evidence_is_not_legal_clearance
+
+#### Seven-dimension evidence map
+
+| ID | Existing evidence | Reality status | Next real-world gate | Exact evidence paths |
+|---|---|---|---|---|
+| `brief_relevance` | 9 stations, three S/M/L carrier classes, five G0-G4 gates and 11 delivery checkpoints close the brief-to-delivery loop. | `conditional_concept_programme_not_started_not_authorized` | `G0` — Confirm rights, site, accountable entities and official inputs | `visual/assets/stations.json`<br>`visual/assets/carrier-typologies.json`<br>`visual/assets/first-100-days.json`<br>`visual/assets/raci-and-signoff.json` |
+| `originality` | 7 regional interfaces and 3 landmark identities connect research, everyday service and heritage gateways as an exit-capable protocol. | `competition_grade_concept_evidence_not_approval` | `named_counterparty_and_site_authorization` — Confirm named counterparties, sites and public return | `visual/assets/professional-evidence.json`<br>`visual/assets/design-system.json` |
+| `ai_planning_innovation` | 12 AI service contracts receive 72 synthetic rule checks: 12 tabletop-only releases and 60 blocked negative cases. | `synthetic_tabletop_only_not_field_test` | `future_pending_authorization` — Authorize comprehension, professional accessibility and named-system evaluation | `visual/assets/public-ai-register.json`<br>`visual/assets/public-acceptance-tabletop/scenario-contracts.json`<br>`visual/assets/professional-evidence.json` |
+| `implementation_feasibility` | 11 first-100-day/review checkpoints, 12 monthly records, 5 unassigned role classes and 8 null-result KPIs form a decision-ready handoff. | `annual_concept_programme_not_started_not_authorized` | `authorized_operator_capacity_finance` — Authorize operator, capacity, annual finance and independent procurement | `visual/assets/first-100-days.json`<br>`visual/assets/raci-and-signoff.json`<br>`visual/assets/annual-program.json` |
+| `public_interest_inclusion` | Affected users hold pre-release modification or stop rights; same-task staffed routes and restoration evidence are release conditions. | `planned_not_run` | `future_pending_authorization` — Authorize recruitment, compensation, access support and independent facilitation | `visual/assets/co-design-and-equity.json`<br>`visual/assets/public-ai-register.json`<br>`visual/assets/public-acceptance-tabletop/scenario-contracts.json` |
+| `risk_compliance` | No supplier is procured and the trademark is not cleared; font, image and toolchain provenance is recorded, but rights/provenance evidence is not legal clearance. | `evidence_recorded_clearance_pending` | `legal_professional_review` — Complete applicable legal, trademark, licence and professional review | `visual/assets/asset-rights-ledger.json`<br>`visual/assets/image2-production-record.json`<br>`visual/assets/design-system.json` |
+| `expression_completeness` | Facts, status, next gate and 12 evidence paths for all 7 dimensions are visible in both languages and the matrix. | `deterministic_bilingual_digest` | `named_human_bilingual_signoff` — Complete named-human bilingual substantive sign-off | `visual/assets/professional-evidence.json`<br>`visual/assets/design-system.json` |
+
+#### Brand and rights passport
+
+Font licences: SIL Open Font License 1.1; SIL Open Font License 1.1 / Bitstream Vera License with DejaVu additions. Image-2 provenance: model `gpt-image-2` with page-level production records for all 34 visible pages.
+
+External case imagery reused=false; external Logo reused=false; third-party map tiles=false; trademark status=`not_cleared_not_registered`. Named build-only libraries: Pillow, fontTools, ReportLab, pypdf, Poppler, Chromium. Rights/provenance evidence is not legal clearance.
+
+#### Decision-ready implementation handoff
+
+Space and delivery: 9 stations; three S/M/L carrier classes (S/M/L); five G0-G4 gates (G0-G4); 11 checkpoints `D001-010/D011-025/D026-040/D041-055/D056-070/D071-085/D086-095/D096-100/M03/M12/M36`; review points M03/M12/M36 (M03/M12/M36).
+
+Programme and identity: 12 monthly programme records; S/M/L capacity rules; 5 unassigned role classes; 8 KPI definitions; outcome status=`null`; annual finance=`unknown_no_funding_or_procurement_decision`; 7 regional interfaces; three landmark identities `LM-01/LM-02/LM-03`.
+
+AI and public rights: 12 service contracts; 72 synthetic checks; 12 tabletop-only releases; 60 blocked negative cases. Co-design=`planned_not_run`; `actual_sessions=[]`; future tests=`future_pending_authorization`; supplier=`concept_not_procured`; affected-user right=`modify_or_stop_before_release`; same-task manual route=true; restoration evidence required=true.
+
 ## Three-Level Scope Framework
 
 The coordinated-research scale tests four-zone links, two-wing coordination and eight ecosystem inputs: land, space, industry, funding, talent, compute, data and scenarios. The overall-design scale connects a Jing-Zhang heritage public spine with trusted-innovation, community-life and cultural-conversion loops. The key-area scale resolves three focus areas, nine stations and one reversible prototype. The overall area is stated only as “approximately 11.41 km², recalculated from provisional geometry”. [source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework] [metric:key_area_count]
