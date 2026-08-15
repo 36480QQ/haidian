@@ -718,16 +718,16 @@
     },
     "iteration_count": {
       "status": "known",
-      "value": 30,
+      "value": 60,
       "unit": "count",
       "source_files": [
         "changelog.md",
         "proposal.md"
       ],
-      "formula": "count of version iterations (v1 scaffold + v2-v30 一版一主题)",
+      "formula": "count of version iterations (v1 scaffold + v2-v60 一版一主题)",
       "confidence": "high",
       "assumptions": [
-        "版本史见 changelog.md，每版对应一个可验证增量"
+        "60 版全程 changelog 留痕"
       ]
     },
     "gate_deep_dive_count": {
