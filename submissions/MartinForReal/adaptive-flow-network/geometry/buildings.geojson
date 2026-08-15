@@ -100,49 +100,6 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34249964047974,
-              39.9839497507338
-            ],
-            [
-              116.34151625842142,
-              39.983944168178795
-            ],
-            [
-              116.34150899578128,
-              39.98470064087209
-            ],
-            [
-              116.34249238868378,
-              39.98470622357583
-            ],
-            [
-              116.34249964047974,
-              39.9839497507338
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-003"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-004",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
         "building_type": "talent_apartment",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
@@ -172,6 +129,49 @@
             [
               116.34208828553369,
               39.96101675912099
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7056.0,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34249964047974,
+              39.9839497507338
+            ],
+            [
+              116.34151625842142,
+              39.983944168178795
+            ],
+            [
+              116.34150899578128,
+              39.98470064087209
+            ],
+            [
+              116.34249238868378,
+              39.98470622357583
+            ],
+            [
+              116.34249964047974,
+              39.9839497507338
             ]
           ]
         ]
@@ -232,7 +232,7 @@
         "building_type": "talent_apartment",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 5665.186,
+        "area_sqm_declared": 6841.701,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -240,28 +240,28 @@
         "coordinates": [
           [
             [
-              116.3441844810621,
-              39.95942785352525
+              116.34507310106873,
+              39.95721187538429
             ],
             [
-              116.34348499067177,
-              39.9594238942083
+              116.34409010158085,
+              39.95720631773301
             ],
             [
-              116.3432971346854,
-              39.959505944157804
+              116.3440842276581,
+              39.95782113001055
             ],
             [
-              116.34329140327826,
-              39.96010506639366
+              116.34440172212551,
+              39.95796459795095
             ],
             [
-              116.34417796342413,
-              39.96011008536535
+              116.34506588448782,
+              39.957968352116254
             ],
             [
-              116.3441844810621,
-              39.95942785352525
+              116.34507310106873,
+              39.95721187538429
             ]
           ]
         ]
@@ -272,92 +272,6 @@
       "type": "Feature",
       "properties": {
         "id": "BLD-007",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 5406.25,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34642066047333,
-              39.95981449773954
-            ],
-            [
-              116.34556018466732,
-              39.95980964318988
-            ],
-            [
-              116.34555387195381,
-              39.960471805121074
-            ],
-            [
-              116.3464143560585,
-              39.960476659783964
-            ],
-            [
-              116.34642066047333,
-              39.95981449773954
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-007"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-008",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34223194756149,
-              39.964293388087924
-            ],
-            [
-              116.34124884722594,
-              39.96428780552905
-            ],
-            [
-              116.34124158668948,
-              39.96504428075466
-            ],
-            [
-              116.34222469785854,
-              39.96504986346227
-            ],
-            [
-              116.34223194756149,
-              39.964293388087924
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-008"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-009",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -395,17 +309,60 @@
           ]
         ]
       },
-      "id": "BLD-009"
+      "id": "BLD-007"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-010",
+        "id": "BLD-008",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
+        "building_type": "talent_apartment",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 5406.25,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34642066047333,
+              39.95981449773954
+            ],
+            [
+              116.34556018466732,
+              39.95980964318988
+            ],
+            [
+              116.34555387195381,
+              39.960471805121074
+            ],
+            [
+              116.3464143560585,
+              39.960476659783964
+            ],
+            [
+              116.34642066047333,
+              39.95981449773954
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 7056.0,
@@ -416,34 +373,34 @@
         "coordinates": [
           [
             [
-              116.34391241486607,
-              39.97303840614152
+              116.34217472871458,
+              39.979580169808756
             ],
             [
-              116.3429291889195,
-              39.973032836827535
+              116.34119140935925,
+              39.979574585001224
             ],
             [
-              116.34292194466047,
-              39.97378931116382
+              116.34118414426003,
+              39.980331058217104
             ],
             [
-              116.34390518144531,
-              39.973794880626194
+              116.34216747445711,
+              39.98033664317343
             ],
             [
-              116.34391241486607,
-              39.97303840614152
+              116.34217472871458,
+              39.979580169808756
             ]
           ]
         ]
       },
-      "id": "BLD-010"
+      "id": "BLD-009"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-011",
+        "id": "BLD-010",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -481,12 +438,12 @@
           ]
         ]
       },
-      "id": "BLD-011"
+      "id": "BLD-010"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-012",
+        "id": "BLD-011",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -524,59 +481,12 @@
           ]
         ]
       },
-      "id": "BLD-012"
+      "id": "BLD-011"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-013",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 6841.701,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34507310106873,
-              39.95721187538429
-            ],
-            [
-              116.34409010158085,
-              39.95720631773301
-            ],
-            [
-              116.3440842276581,
-              39.95782113001055
-            ],
-            [
-              116.34440172212551,
-              39.95796459795095
-            ],
-            [
-              116.34506588448782,
-              39.957968352116254
-            ],
-            [
-              116.34507310106873,
-              39.95721187538429
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-013"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-014",
+        "id": "BLD-012",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -614,12 +524,55 @@
           ]
         ]
       },
-      "id": "BLD-014"
+      "id": "BLD-012"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-015",
+        "id": "BLD-013",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 3992.308,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34593796248684,
+              39.9611322765504
+            ],
+            [
+              116.34519850892306,
+              39.961128102045606
+            ],
+            [
+              116.34519308093088,
+              39.96169712268885
+            ],
+            [
+              116.3459325406233,
+              39.96170129727731
+            ],
+            [
+              116.34593796248684,
+              39.9611322765504
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-014",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -661,98 +614,59 @@
           ]
         ]
       },
+      "id": "BLD-014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-015",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 4787.668,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34454975557625,
+              39.982383609867824
+            ],
+            [
+              116.34403298822652,
+              39.9823806864439
+            ],
+            [
+              116.34372144725145,
+              39.98251671284933
+            ],
+            [
+              116.34371667858493,
+              39.983015112253135
+            ],
+            [
+              116.34454367630217,
+              39.98301979186112
+            ],
+            [
+              116.34454975557625,
+              39.982383609867824
+            ]
+          ]
+        ]
+      },
       "id": "BLD-015"
     },
     {
       "type": "Feature",
       "properties": {
         "id": "BLD-016",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34395313181676,
-              39.97085476411767
-            ],
-            [
-              116.3429699371497,
-              39.97084919540026
-            ],
-            [
-              116.34296269389974,
-              39.97160567002856
-            ],
-            [
-              116.34394589940389,
-              39.97161123889434
-            ],
-            [
-              116.34395313181676,
-              39.97085476411767
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-016"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-017",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 3992.308,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34593796248684,
-              39.9611322765504
-            ],
-            [
-              116.34519850892306,
-              39.961128102045606
-            ],
-            [
-              116.34519308093088,
-              39.96169712268885
-            ],
-            [
-              116.3459325406233,
-              39.96170129727731
-            ],
-            [
-              116.34593796248684,
-              39.9611322765504
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-017"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-018",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -794,12 +708,12 @@
           ]
         ]
       },
-      "id": "BLD-018"
+      "id": "BLD-016"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-019",
+        "id": "BLD-017",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -837,446 +751,12 @@
           ]
         ]
       },
-      "id": "BLD-019"
+      "id": "BLD-017"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-020",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 5406.25,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34556498485755,
-              40.00658085199381
-            ],
-            [
-              116.34470392233462,
-              40.00657598639663
-            ],
-            [
-              116.34469759089134,
-              40.00723814285575
-            ],
-            [
-              116.3455586617324,
-              40.00724300856637
-            ],
-            [
-              116.34556498485755,
-              40.00658085199381
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-020"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-021",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34352136318249,
-              40.00644108174392
-            ],
-            [
-              116.34253765828741,
-              40.006435505268776
-            ],
-            [
-              116.34253040113825,
-              40.00719197517283
-            ],
-            [
-              116.34351411688965,
-              40.00719755179652
-            ],
-            [
-              116.34352136318249,
-              40.00644108174392
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-021"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-022",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34418281528421,
-              40.0192650463667
-            ],
-            [
-              116.34319892613772,
-              40.01925947403192
-            ],
-            [
-              116.34319167299684,
-              40.02001594235731
-            ],
-            [
-              116.34417557300665,
-              40.020021514840515
-            ],
-            [
-              116.34418281528421,
-              40.0192650463667
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-022"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-023",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34580711047548,
-              39.94465870723998
-            ],
-            [
-              116.34482429051752,
-              39.94465315725306
-            ],
-            [
-              116.34481707440379,
-              39.945409635591076
-            ],
-            [
-              116.34579990518463,
-              39.94541518572589
-            ],
-            [
-              116.34580711047548,
-              39.94465870723998
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-023"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-024",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 2994.231,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3460128788585,
-              39.94806754383365
-            ],
-            [
-              116.34537261510503,
-              39.948063930269754
-            ],
-            [
-              116.34536791775744,
-              39.94855671773638
-            ],
-            [
-              116.34600818610436,
-              39.948560331363
-            ],
-            [
-              116.3460128788585,
-              39.94806754383365
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-024"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-025",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 3493.269,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34464833297247,
-              39.98643988482391
-            ],
-            [
-              116.34395638251081,
-              39.986435970334426
-            ],
-            [
-              116.34395129090385,
-              39.98696823794618
-            ],
-            [
-              116.34464324673486,
-              39.98697215250901
-            ],
-            [
-              116.34464833297247,
-              39.98643988482391
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-025"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-026",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 5239.904,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34732310030796,
-              39.950361240030716
-            ],
-            [
-              116.34647608248977,
-              39.950356468325595
-            ],
-            [
-              116.34646987842899,
-              39.95100836474457
-            ],
-            [
-              116.34731690428677,
-              39.95101313655927
-            ],
-            [
-              116.34732310030796,
-              39.950361240030716
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-026"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-027",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 3992.308,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34680912227891,
-              39.95567749416558
-            ],
-            [
-              116.34606972733616,
-              39.95567332568745
-            ],
-            [
-              116.34606430761221,
-              39.95624234696678
-            ],
-            [
-              116.34680370868193,
-              39.95624651552845
-            ],
-            [
-              116.34680912227891,
-              39.95567749416558
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-027"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-028",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7028.58,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34457112854797,
-              39.98832921751014
-            ],
-            [
-              116.34370178790608,
-              39.9883242981915
-            ],
-            [
-              116.34358719824566,
-              39.98837432607369
-            ],
-            [
-              116.34358044236969,
-              39.98908012446064
-            ],
-            [
-              116.34456389847763,
-              39.989085690092956
-            ],
-            [
-              116.34457112854797,
-              39.98832921751014
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-028"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-029",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 2994.231,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3456590280215,
-              39.985191415267
-            ],
-            [
-              116.34501841790278,
-              39.98518779697505
-            ],
-            [
-              116.34501371183406,
-              39.98568058124135
-            ],
-            [
-              116.34565432655478,
-              39.98568419959611
-            ],
-            [
-              116.3456590280215,
-              39.985191415267
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-029"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-030",
+        "id": "BLD-018",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1318,12 +798,360 @@
           ]
         ]
       },
-      "id": "BLD-030"
+      "id": "BLD-018"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-031",
+        "id": "BLD-019",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7056.0,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34418281528421,
+              40.0192650463667
+            ],
+            [
+              116.34319892613772,
+              40.01925947403192
+            ],
+            [
+              116.34319167299684,
+              40.02001594235731
+            ],
+            [
+              116.34417557300665,
+              40.020021514840515
+            ],
+            [
+              116.34418281528421,
+              40.0192650463667
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-020",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7056.0,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34580711047548,
+              39.94465870723998
+            ],
+            [
+              116.34482429051752,
+              39.94465315725306
+            ],
+            [
+              116.34481707440379,
+              39.945409635591076
+            ],
+            [
+              116.34579990518463,
+              39.94541518572589
+            ],
+            [
+              116.34580711047548,
+              39.94465870723998
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-021",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 2994.231,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3460128788585,
+              39.94806754383365
+            ],
+            [
+              116.34537261510503,
+              39.948063930269754
+            ],
+            [
+              116.34536791775744,
+              39.94855671773638
+            ],
+            [
+              116.34600818610436,
+              39.948560331363
+            ],
+            [
+              116.3460128788585,
+              39.94806754383365
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-022",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 5239.904,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34732310030796,
+              39.950361240030716
+            ],
+            [
+              116.34647608248977,
+              39.950356468325595
+            ],
+            [
+              116.34646987842899,
+              39.95100836474457
+            ],
+            [
+              116.34731690428677,
+              39.95101313655927
+            ],
+            [
+              116.34732310030796,
+              39.950361240030716
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-023",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 3992.308,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34680912227891,
+              39.95567749416558
+            ],
+            [
+              116.34606972733616,
+              39.95567332568745
+            ],
+            [
+              116.34606430761221,
+              39.95624234696678
+            ],
+            [
+              116.34680370868193,
+              39.95624651552845
+            ],
+            [
+              116.34680912227891,
+              39.95567749416558
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-024",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 3493.269,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34464833297247,
+              39.98643988482391
+            ],
+            [
+              116.34395638251081,
+              39.986435970334426
+            ],
+            [
+              116.34395129090385,
+              39.98696823794618
+            ],
+            [
+              116.34464324673486,
+              39.98697215250901
+            ],
+            [
+              116.34464833297247,
+              39.98643988482391
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-025",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 2994.231,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3456590280215,
+              39.985191415267
+            ],
+            [
+              116.34501841790278,
+              39.98518779697505
+            ],
+            [
+              116.34501371183406,
+              39.98568058124135
+            ],
+            [
+              116.34565432655478,
+              39.98568419959611
+            ],
+            [
+              116.3456590280215,
+              39.985191415267
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-026",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7028.58,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34457112854797,
+              39.98832921751014
+            ],
+            [
+              116.34370178790608,
+              39.9883242981915
+            ],
+            [
+              116.34358719824566,
+              39.98837432607369
+            ],
+            [
+              116.34358044236969,
+              39.98908012446064
+            ],
+            [
+              116.34456389847763,
+              39.989085690092956
+            ],
+            [
+              116.34457112854797,
+              39.98832921751014
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-026"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-027",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1361,59 +1189,12 @@
           ]
         ]
       },
-      "id": "BLD-031"
+      "id": "BLD-027"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-032",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 6619.587,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3447690570377,
-              40.00331439192075
-            ],
-            [
-              116.34424070989101,
-              40.00331140358336
-            ],
-            [
-              116.34378346127792,
-              40.00351098696807
-            ],
-            [
-              116.34377815419458,
-              40.00406529689758
-            ],
-            [
-              116.34476182531665,
-              40.00407086257172
-            ],
-            [
-              116.3447690570377,
-              40.00331439192075
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-032"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-033",
+        "id": "BLD-028",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1451,12 +1232,12 @@
           ]
         ]
       },
-      "id": "BLD-033"
+      "id": "BLD-028"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-034",
+        "id": "BLD-029",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1498,12 +1279,12 @@
           ]
         ]
       },
-      "id": "BLD-034"
+      "id": "BLD-029"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-035",
+        "id": "BLD-030",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1541,12 +1322,12 @@
           ]
         ]
       },
-      "id": "BLD-035"
+      "id": "BLD-030"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-036",
+        "id": "BLD-031",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1584,12 +1365,12 @@
           ]
         ]
       },
-      "id": "BLD-036"
+      "id": "BLD-031"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-037",
+        "id": "BLD-032",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1627,12 +1408,12 @@
           ]
         ]
       },
-      "id": "BLD-037"
+      "id": "BLD-032"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-038",
+        "id": "BLD-033",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1670,17 +1451,60 @@
           ]
         ]
       },
-      "id": "BLD-038"
+      "id": "BLD-033"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-039",
+        "id": "BLD-034",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
+        "building_type": "talent_apartment",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7056.0,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34399384522715,
+              39.96867112123887
+            ],
+            [
+              116.34301068183618,
+              39.96866555311799
+            ],
+            [
+              116.34300343959515,
+              39.9694220280383
+            ],
+            [
+              116.343986613822,
+              39.96942759630755
+            ],
+            [
+              116.34399384522715,
+              39.96867112123887
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-035",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 7056.0,
@@ -1713,12 +1537,12 @@
           ]
         ]
       },
-      "id": "BLD-039"
+      "id": "BLD-035"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-040",
+        "id": "BLD-036",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1756,12 +1580,55 @@
           ]
         ]
       },
-      "id": "BLD-040"
+      "id": "BLD-036"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-041",
+        "id": "BLD-037",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 5489.423,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3455683082227,
+              40.00657833358831
+            ],
+            [
+              116.34470064745511,
+              40.00657343070675
+            ],
+            [
+              116.34469426746223,
+              40.00724066123546
+            ],
+            [
+              116.34556193667589,
+              40.007245564232214
+            ],
+            [
+              116.3455683082227,
+              40.00657833358831
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-038",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1799,17 +1666,17 @@
           ]
         ]
       },
-      "id": "BLD-041"
+      "id": "BLD-038"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-042",
+        "id": "BLD-039",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
+        "building_type": "ai_r_and_d",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 2994.231,
@@ -1842,12 +1709,12 @@
           ]
         ]
       },
-      "id": "BLD-042"
+      "id": "BLD-039"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-043",
+        "id": "BLD-040",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1889,59 +1756,12 @@
           ]
         ]
       },
-      "id": "BLD-043"
+      "id": "BLD-040"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-044",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7028.58,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3461685623742,
-              39.99270597131317
-            ],
-            [
-              116.34529916596809,
-              39.99270106353219
-            ],
-            [
-              116.34518457009366,
-              39.9927510929065
-            ],
-            [
-              116.34517782961333,
-              39.99345689098455
-            ],
-            [
-              116.34616134880723,
-              39.99346244356457
-            ],
-            [
-              116.3461685623742,
-              39.99270597131317
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-044"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-045",
+        "id": "BLD-041",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -1979,55 +1799,12 @@
           ]
         ]
       },
-      "id": "BLD-045"
+      "id": "BLD-041"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-046",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34395837858912,
-              39.97740640880458
-            ],
-            [
-              116.34297509003781,
-              39.97740083937798
-            ],
-            [
-              116.34296784516489,
-              39.97815731314945
-            ],
-            [
-              116.34395114455681,
-              39.97816288272445
-            ],
-            [
-              116.34395837858912,
-              39.97740640880458
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-046"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-047",
+        "id": "BLD-042",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2065,12 +1842,12 @@
           ]
         ]
       },
-      "id": "BLD-047"
+      "id": "BLD-042"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-048",
+        "id": "BLD-043",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2078,7 +1855,7 @@
         "building_type": "talent_apartment",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 6986.539,
+        "area_sqm_declared": 6237.981,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -2086,34 +1863,34 @@
         "coordinates": [
           [
             [
-              116.34627020700495,
-              39.98178907636983
+              116.34624479160357,
+              39.98162767886092
             ],
             [
-              116.34529170734885,
-              39.98178355345896
+              116.34532019850953,
+              39.98162246023032
             ],
             [
-              116.34528452252842,
-              39.98253629432694
+              116.34531340983351,
+              39.98233373352047
             ],
             [
-              116.34626303292077,
-              39.982541817384245
+              116.34623801251345,
+              39.98233895228181
             ],
             [
-              116.34627020700495,
-              39.98178907636983
+              116.34624479160357,
+              39.98162767886092
             ]
           ]
         ]
       },
-      "id": "BLD-048"
+      "id": "BLD-043"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-049",
+        "id": "BLD-044",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2151,12 +1928,12 @@
           ]
         ]
       },
-      "id": "BLD-049"
+      "id": "BLD-044"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-050",
+        "id": "BLD-045",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2194,12 +1971,12 @@
           ]
         ]
       },
-      "id": "BLD-050"
+      "id": "BLD-045"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-051",
+        "id": "BLD-046",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2215,34 +1992,34 @@
         "coordinates": [
           [
             [
-              116.34705936512741,
-              40.02511817602384
+              116.34651782206302,
+              40.02055215271308
             ],
             [
-              116.3460753913387,
-              40.02511262744142
+              116.34553391397054,
+              40.02054660005524
             ],
             [
-              116.34606816846593,
-              40.02586909543585
+              116.34552668628496,
+              40.021303068565686
             ],
             [
-              116.34705215312117,
-              40.02587464416604
+              116.34651060524148,
+              40.02130862137144
             ],
             [
-              116.34705936512741,
-              40.02511817602384
+              116.34651782206302,
+              40.02055215271308
             ]
           ]
         ]
       },
-      "id": "BLD-051"
+      "id": "BLD-046"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-052",
+        "id": "BLD-047",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2280,12 +2057,12 @@
           ]
         ]
       },
-      "id": "BLD-052"
+      "id": "BLD-047"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-053",
+        "id": "BLD-048",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2327,17 +2104,17 @@
           ]
         ]
       },
-      "id": "BLD-053"
+      "id": "BLD-048"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-054",
+        "id": "BLD-049",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
+        "building_type": "ai_r_and_d",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 7056.0,
@@ -2348,34 +2125,34 @@
         "coordinates": [
           [
             [
-              116.34399384522715,
-              39.96867112123887
+              116.34395313181676,
+              39.97085476411767
             ],
             [
-              116.34301068183618,
-              39.96866555311799
+              116.3429699371497,
+              39.97084919540026
             ],
             [
-              116.34300343959515,
-              39.9694220280383
+              116.34296269389974,
+              39.97160567002856
             ],
             [
-              116.343986613822,
-              39.96942759630755
+              116.34394589940389,
+              39.97161123889434
             ],
             [
-              116.34399384522715,
-              39.96867112123887
+              116.34395313181676,
+              39.97085476411767
             ]
           ]
         ]
       },
-      "id": "BLD-054"
+      "id": "BLD-049"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-055",
+        "id": "BLD-050",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2413,12 +2190,12 @@
           ]
         ]
       },
-      "id": "BLD-055"
+      "id": "BLD-050"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-056",
+        "id": "BLD-051",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2456,12 +2233,59 @@
           ]
         ]
       },
-      "id": "BLD-056"
+      "id": "BLD-051"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-057",
+        "id": "BLD-052",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7028.58,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3461685623742,
+              39.99270597131317
+            ],
+            [
+              116.34529916596809,
+              39.99270106353219
+            ],
+            [
+              116.34518457009366,
+              39.9927510929065
+            ],
+            [
+              116.34517782961333,
+              39.99345689098455
+            ],
+            [
+              116.34616134880723,
+              39.99346244356457
+            ],
+            [
+              116.3461685623742,
+              39.99270597131317
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-053",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2477,34 +2301,34 @@
         "coordinates": [
           [
             [
-              116.34455541520867,
-              39.99910894023273
+              116.34455925466146,
+              39.999248472252546
             ],
             [
-              116.34357181532819,
-              39.999103373376755
+              116.34357565277827,
+              39.99924290541313
             ],
             [
-              116.3435645714734,
-              39.99985984439768
+              116.34356840893007,
+              39.999999376416355
             ],
             [
-              116.34454818220628,
-              39.99986541140194
+              116.34455202166573,
+              40.00000494340407
             ],
             [
-              116.34455541520867,
-              39.99910894023273
+              116.34455925466146,
+              39.999248472252546
             ]
           ]
         ]
       },
-      "id": "BLD-057"
+      "id": "BLD-053"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-058",
+        "id": "BLD-054",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2512,7 +2336,7 @@
         "building_type": "talent_apartment",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 3992.308,
+        "area_sqm_declared": 7056.0,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -2520,34 +2344,34 @@
         "coordinates": [
           [
             [
-              116.34635150706916,
-              40.003720049805054
+              116.34467767152996,
+              40.003551724185826
             ],
             [
-              116.34561159420801,
-              40.0037158742679
+              116.34369400787466,
+              40.00354615785706
             ],
             [
-              116.34560616145767,
-              40.00428489076463
+              116.34368676422952,
+              40.00430262831485
             ],
             [
-              116.34634608046052,
-              40.004289066385454
+              116.34467043873961,
+              40.00430819479189
             ],
             [
-              116.34635150706916,
-              40.003720049805054
+              116.34467767152996,
+              40.003551724185826
             ]
           ]
         ]
       },
-      "id": "BLD-058"
+      "id": "BLD-054"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-059",
+        "id": "BLD-055",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2585,12 +2409,12 @@
           ]
         ]
       },
-      "id": "BLD-059"
+      "id": "BLD-055"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-060",
+        "id": "BLD-056",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2628,59 +2452,12 @@
           ]
         ]
       },
-      "id": "BLD-060"
+      "id": "BLD-056"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-061",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 5988.316,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34687633560416,
-              40.00038327124738
-            ],
-            [
-              116.34597849005556,
-              40.00037820800796
-            ],
-            [
-              116.34597013993417,
-              40.000381853087006
-            ],
-            [
-              116.34596352583686,
-              40.00107506156589
-            ],
-            [
-              116.34686969549212,
-              40.001080171853594
-            ],
-            [
-              116.34687633560416,
-              40.00038327124738
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-061"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-062",
+        "id": "BLD-057",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2718,12 +2495,12 @@
           ]
         ]
       },
-      "id": "BLD-062"
+      "id": "BLD-057"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-063",
+        "id": "BLD-058",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2761,12 +2538,12 @@
           ]
         ]
       },
-      "id": "BLD-063"
+      "id": "BLD-058"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-064",
+        "id": "BLD-059",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2804,12 +2581,12 @@
           ]
         ]
       },
-      "id": "BLD-064"
+      "id": "BLD-059"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-065",
+        "id": "BLD-060",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2847,12 +2624,12 @@
           ]
         ]
       },
-      "id": "BLD-065"
+      "id": "BLD-060"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-066",
+        "id": "BLD-061",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -2890,17 +2667,17 @@
           ]
         ]
       },
-      "id": "BLD-066"
+      "id": "BLD-061"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-067",
+        "id": "BLD-062",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
+        "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 2994.231,
@@ -2933,55 +2710,12 @@
           ]
         ]
       },
-      "id": "BLD-067"
+      "id": "BLD-062"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-068",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34651782206302,
-              40.02055215271308
-            ],
-            [
-              116.34553391397054,
-              40.02054660005524
-            ],
-            [
-              116.34552668628496,
-              40.021303068565686
-            ],
-            [
-              116.34651060524148,
-              40.02130862137144
-            ],
-            [
-              116.34651782206302,
-              40.02055215271308
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-068"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-069",
+        "id": "BLD-063",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3019,12 +2753,12 @@
           ]
         ]
       },
-      "id": "BLD-069"
+      "id": "BLD-063"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-070",
+        "id": "BLD-064",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3066,17 +2800,64 @@
           ]
         ]
       },
-      "id": "BLD-070"
+      "id": "BLD-064"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-071",
+        "id": "BLD-065",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
+        "building_type": "ai_r_and_d",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7028.58,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34691534847816,
+              40.000353704119156
+            ],
+            [
+              116.34604585495885,
+              40.000348801165885
+            ],
+            [
+              116.34593124675884,
+              40.00039883111424
+            ],
+            [
+              116.34592451214185,
+              40.00110462836343
+            ],
+            [
+              116.34690814119966,
+              40.00111017548204
+            ],
+            [
+              116.34691534847816,
+              40.000353704119156
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-066",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 3493.269,
@@ -3109,12 +2890,12 @@
           ]
         ]
       },
-      "id": "BLD-071"
+      "id": "BLD-066"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-072",
+        "id": "BLD-067",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3156,12 +2937,102 @@
           ]
         ]
       },
-      "id": "BLD-072"
+      "id": "BLD-067"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-073",
+        "id": "BLD-068",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7028.58,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34954013805053,
+              39.982897540866325
+            ],
+            [
+              116.34855676969312,
+              39.98289201816195
+            ],
+            [
+              116.34854958496935,
+              39.98364849205809
+            ],
+            [
+              116.34941886718765,
+              39.98365337454633
+            ],
+            [
+              116.34953344473773,
+              39.9836033407605
+            ],
+            [
+              116.34954013805053,
+              39.982897540866325
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-069",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7056.0,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34705936512741,
+              40.02511817602384
+            ],
+            [
+              116.3460753913387,
+              40.02511262744142
+            ],
+            [
+              116.34606816846593,
+              40.02586909543585
+            ],
+            [
+              116.34705215312117,
+              40.02587464416604
+            ],
+            [
+              116.34705936512741,
+              40.02511817602384
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-070",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3199,12 +3070,12 @@
           ]
         ]
       },
-      "id": "BLD-073"
+      "id": "BLD-070"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-074",
+        "id": "BLD-071",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3242,12 +3113,12 @@
           ]
         ]
       },
-      "id": "BLD-074"
+      "id": "BLD-071"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-075",
+        "id": "BLD-072",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3255,7 +3126,7 @@
         "building_type": "talent_apartment",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 3992.308,
+        "area_sqm_declared": 7056.0,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -3263,34 +3134,34 @@
         "coordinates": [
           [
             [
-              116.35008571711205,
-              39.955695909827305
+              116.35259215059838,
+              39.95561620140917
             ],
             [
-              116.34934632148864,
-              39.95569176224517
+              116.35160917248463,
+              39.95561070769452
             ],
             [
-              116.34934092891613,
-              39.95626078389404
+              116.35160202832593,
+              39.9563671856199
             ],
             [
-              116.35008033066657,
-              39.95626493155931
+              116.35258501726858,
+              39.95637267948094
             ],
             [
-              116.35008571711205,
-              39.955695909827305
+              116.35259215059838,
+              39.95561620140917
             ]
           ]
         ]
       },
-      "id": "BLD-075"
+      "id": "BLD-072"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-076",
+        "id": "BLD-073",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3298,7 +3169,7 @@
         "building_type": "talent_apartment",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 5489.423,
+        "area_sqm_declared": 7028.58,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -3306,39 +3177,43 @@
         "coordinates": [
           [
             [
-              116.35053890994845,
-              39.957833217996395
+              116.35059731413006,
+              39.95778892254355
             ],
             [
-              116.3496718646742,
-              39.957828357222624
+              116.34961430529764,
+              39.95778341166737
             ],
             [
-              116.34966554399257,
-              39.95849559404075
+              116.34960713860872,
+              39.95853988900914
             ],
             [
-              116.35053259769239,
-              39.95850045492876
+              116.35047610300401,
+              39.958544761040905
             ],
             [
-              116.35053890994845,
-              39.957833217996395
+              116.35059063763127,
+              39.95849472565224
+            ],
+            [
+              116.35059731413006,
+              39.95778892254355
             ]
           ]
         ]
       },
-      "id": "BLD-076"
+      "id": "BLD-073"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-077",
+        "id": "BLD-074",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
+        "building_type": "ai_r_and_d",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 3992.308,
@@ -3371,12 +3246,12 @@
           ]
         ]
       },
-      "id": "BLD-077"
+      "id": "BLD-074"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-078",
+        "id": "BLD-075",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3414,12 +3289,12 @@
           ]
         ]
       },
-      "id": "BLD-078"
+      "id": "BLD-075"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-079",
+        "id": "BLD-076",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3457,17 +3332,17 @@
           ]
         ]
       },
-      "id": "BLD-079"
+      "id": "BLD-076"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-080",
+        "id": "BLD-077",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
+        "building_type": "ai_r_and_d",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 2994.231,
@@ -3500,12 +3375,12 @@
           ]
         ]
       },
-      "id": "BLD-080"
+      "id": "BLD-077"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-081",
+        "id": "BLD-078",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3547,12 +3422,12 @@
           ]
         ]
       },
-      "id": "BLD-081"
+      "id": "BLD-078"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-082",
+        "id": "BLD-079",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3590,12 +3465,12 @@
           ]
         ]
       },
-      "id": "BLD-082"
+      "id": "BLD-079"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-083",
+        "id": "BLD-080",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3633,12 +3508,12 @@
           ]
         ]
       },
-      "id": "BLD-083"
+      "id": "BLD-080"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-084",
+        "id": "BLD-081",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3676,12 +3551,12 @@
           ]
         ]
       },
-      "id": "BLD-084"
+      "id": "BLD-081"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-085",
+        "id": "BLD-082",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3719,12 +3594,12 @@
           ]
         ]
       },
-      "id": "BLD-085"
+      "id": "BLD-082"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-086",
+        "id": "BLD-083",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3740,7 +3615,7 @@
         "coordinates": [
           [
             [
-              116.35388950923219,
+              116.35388950923218,
               39.941064225752534
             ],
             [
@@ -3756,18 +3631,61 @@
               39.941820705922645
             ],
             [
-              116.35388950923219,
+              116.35388950923218,
               39.941064225752534
             ]
           ]
         ]
       },
-      "id": "BLD-086"
+      "id": "BLD-083"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-087",
+        "id": "BLD-084",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 5489.423,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35149214926864,
+              39.94364332821133
+            ],
+            [
+              116.3506252829702,
+              39.94363847599043
+            ],
+            [
+              116.35061897472407,
+              39.94430571457289
+            ],
+            [
+              116.3514858494421,
+              39.94431056690783
+            ],
+            [
+              116.35149214926864,
+              39.94364332821133
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-084"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-085",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3805,12 +3723,12 @@
           ]
         ]
       },
-      "id": "BLD-087"
+      "id": "BLD-085"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-088",
+        "id": "BLD-086",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3848,12 +3766,12 @@
           ]
         ]
       },
-      "id": "BLD-088"
+      "id": "BLD-086"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-089",
+        "id": "BLD-087",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3895,12 +3813,12 @@
           ]
         ]
       },
-      "id": "BLD-089"
+      "id": "BLD-087"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-090",
+        "id": "BLD-088",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -3916,120 +3834,34 @@
         "coordinates": [
           [
             [
-              116.35404538832435,
-              39.95143853782847
+              116.35298623305893,
+              39.958894219512295
             ],
             [
-              116.35306246973127,
-              39.95143305690905
+              116.35200320793514,
+              39.958888728767036
             ],
             [
-              116.3530553426388,
-              39.95218953559861
+              116.35199606728936,
+              39.95964520632235
             ],
             [
-              116.35403827205849,
-              39.952195016664085
+              116.35297910324383,
+              39.95965069721394
             ],
             [
-              116.35404538832435,
-              39.95143853782847
+              116.35298623305893,
+              39.958894219512295
             ]
           ]
         ]
       },
-      "id": "BLD-090"
+      "id": "BLD-088"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-091",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35341129923248,
-              39.9556207731385
-            ],
-            [
-              116.35242832089405,
-              39.95561528636881
-            ],
-            [
-              116.35242118575943,
-              39.9563717644162
-            ],
-            [
-              116.35340417492675,
-              39.956377251332086
-            ],
-            [
-              116.35341129923248,
-              39.9556207731385
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-091"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-092",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35400421127959,
-              39.960173825466164
-            ],
-            [
-              116.35302116763503,
-              39.96016834320784
-            ],
-            [
-              116.35301403788333,
-              39.960924820747934
-            ],
-            [
-              116.35399709235925,
-              39.96093030315234
-            ],
-            [
-              116.35400421127959,
-              39.960173825466164
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-092"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-093",
+        "id": "BLD-089",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4067,12 +3899,12 @@
           ]
         ]
       },
-      "id": "BLD-093"
+      "id": "BLD-089"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-094",
+        "id": "BLD-090",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4110,12 +3942,12 @@
           ]
         ]
       },
-      "id": "BLD-094"
+      "id": "BLD-090"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-095",
+        "id": "BLD-091",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4153,12 +3985,12 @@
           ]
         ]
       },
-      "id": "BLD-095"
+      "id": "BLD-091"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-096",
+        "id": "BLD-092",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4196,12 +4028,12 @@
           ]
         ]
       },
-      "id": "BLD-096"
+      "id": "BLD-092"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-097",
+        "id": "BLD-093",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4239,12 +4071,12 @@
           ]
         ]
       },
-      "id": "BLD-097"
+      "id": "BLD-093"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-098",
+        "id": "BLD-094",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4282,12 +4114,12 @@
           ]
         ]
       },
-      "id": "BLD-098"
+      "id": "BLD-094"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-099",
+        "id": "BLD-095",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4325,12 +4157,12 @@
           ]
         ]
       },
-      "id": "BLD-099"
+      "id": "BLD-095"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-100",
+        "id": "BLD-096",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4368,20 +4200,20 @@
           ]
         ]
       },
-      "id": "BLD-100"
+      "id": "BLD-096"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-101",
+        "id": "BLD-097",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
+        "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 2994.231,
+        "area_sqm_declared": 3493.269,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -4389,39 +4221,39 @@
         "coordinates": [
           [
             [
-              116.35026561747074,
-              40.01797525842438
+              116.35049472887727,
+              40.01813878801308
             ],
             [
-              116.34962470031432,
-              40.0179716631607
+              116.34980245754836,
+              40.01813490588663
             ],
             [
-              116.34962002191612,
-              40.01846444508339
+              116.34979740564764,
+              40.01866717119884
             ],
             [
-              116.3502609436821,
-              40.01846804040946
+              116.35048968235444,
+              40.01867105339806
             ],
             [
-              116.35026561747074,
-              40.01797525842438
+              116.35049472887727,
+              40.01813878801308
             ]
           ]
         ]
       },
-      "id": "BLD-101"
+      "id": "BLD-097"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-102",
+        "id": "BLD-098",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
+        "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 2994.231,
@@ -4454,17 +4286,17 @@
           ]
         ]
       },
-      "id": "BLD-102"
+      "id": "BLD-098"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-103",
+        "id": "BLD-099",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
+        "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 7056.0,
@@ -4497,12 +4329,12 @@
           ]
         ]
       },
-      "id": "BLD-103"
+      "id": "BLD-099"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-104",
+        "id": "BLD-100",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4510,7 +4342,7 @@
         "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 5738.943,
+        "area_sqm_declared": 7056.0,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -4518,34 +4350,77 @@
         "coordinates": [
           [
             [
-              116.35271332013065,
-              39.945462557039775
+              116.35386892596688,
+              39.94543187893138
             ],
             [
-              116.35182694757047,
-              39.94545760484153
+              116.35288609337114,
+              39.94542639719673
             ],
             [
-              116.35182050906654,
-              39.946139839368605
+              116.35287896585133,
+              39.94618287664608
             ],
             [
-              116.3527068904298,
-              39.946144791685875
+              116.35386180927047,
+              39.946188358526804
             ],
             [
-              116.35271332013065,
-              39.945462557039775
+              116.35386892596688,
+              39.94543187893138
             ]
           ]
         ]
       },
-      "id": "BLD-104"
+      "id": "BLD-100"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-105",
+        "id": "BLD-101",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
+        "name_zh": "概念建筑基底示意",
+        "name_en": "Conceptual building footprint",
+        "area_sqm_declared": 7056.0,
+        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35347142761007,
+              39.94318773914977
+            ],
+            [
+              116.35248862720142,
+              39.94318225430003
+            ],
+            [
+              116.3524814958705,
+              39.94393873398366
+            ],
+            [
+              116.35346430710135,
+              39.94394421897958
+            ],
+            [
+              116.35347142761007,
+              39.94318773914977
+            ]
+          ]
+        ]
+      },
+      "id": "BLD-101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-102",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4553,7 +4428,7 @@
         "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 6083.06,
+        "area_sqm_declared": 7056.0,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -4561,89 +4436,34 @@
         "coordinates": [
           [
             [
-              116.35382709256405,
-              39.9482849722779
+              116.35345081506448,
+              39.947564539390456
             ],
             [
-              116.35373563757842,
-              39.94816098926945
+              116.35246795203174,
+              39.94755905386953
             ],
             [
-              116.35284538261462,
-              39.94815602313431
+              116.35246081936813,
+              39.948315532977254
             ],
             [
-              116.35284101803686,
-              39.94861918696219
+              116.35344369322539,
+              39.94832101864435
             ],
             [
-              116.35349833908276,
-              39.94891618510526
-            ],
-            [
-              116.35382113643163,
-              39.948917984755276
-            ],
-            [
-              116.35382709256405,
-              39.9482849722779
+              116.35345081506448,
+              39.947564539390456
             ]
           ]
         ]
       },
-      "id": "BLD-105"
+      "id": "BLD-102"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-106",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7028.723,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35508550281989,
-              39.94798651603331
-            ],
-            [
-              116.35410263343121,
-              39.94798104432271
-            ],
-            [
-              116.3540963420058,
-              39.9486499833381
-            ],
-            [
-              116.3541611862187,
-              39.948737889461285
-            ],
-            [
-              116.35507839888028,
-              39.9487429954758
-            ],
-            [
-              116.35508550281989,
-              39.94798651603331
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-106"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-107",
+        "id": "BLD-103",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4685,12 +4505,12 @@
           ]
         ]
       },
-      "id": "BLD-107"
+      "id": "BLD-103"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-108",
+        "id": "BLD-104",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4728,12 +4548,12 @@
           ]
         ]
       },
-      "id": "BLD-108"
+      "id": "BLD-104"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-109",
+        "id": "BLD-105",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4771,12 +4591,12 @@
           ]
         ]
       },
-      "id": "BLD-109"
+      "id": "BLD-105"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-110",
+        "id": "BLD-106",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -4784,7 +4604,7 @@
         "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 3493.269,
+        "area_sqm_declared": 7028.58,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -4792,42 +4612,46 @@
         "coordinates": [
           [
             [
-              116.35132496302715,
-              40.01705151034943
+              116.35167803629288,
+              40.01681006662843
             ],
             [
-              116.3506327025708,
-              40.0170476332694
+              116.35156436369299,
+              40.0167587540612
             ],
             [
-              116.35062765731475,
-              40.017579898769455
+              116.35069466120585,
+              40.016753884337284
             ],
             [
-              116.35131992314868,
-              40.01758377592215
+              116.3506874914735,
+              40.017510354121434
             ],
             [
-              116.35132496302715,
-              40.01705151034943
+              116.3516713569675,
+              40.017515862679396
+            ],
+            [
+              116.35167803629288,
+              40.01681006662843
             ]
           ]
         ]
       },
-      "id": "BLD-110"
+      "id": "BLD-106"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-111",
+        "id": "BLD-107",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
+        "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 2994.231,
+        "area_sqm_declared": 7028.58,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -4835,42 +4659,46 @@
         "coordinates": [
           [
             [
-              116.35107516793533,
-              40.01907172240266
+              116.35165784922218,
+              40.01894313306698
             ],
             [
-              116.350434240418,
-              40.01906813153498
+              116.35067396323312,
+              40.01893762423217
             ],
             [
-              116.35042956766159,
-              40.019560913443335
+              116.35066679271819,
+              40.01969409372728
             ],
             [
-              116.35107049978875,
-              40.01956450437332
+              116.35153653252699,
+              40.01969896395536
             ],
             [
-              116.35107516793533,
-              40.01907172240266
+              116.35165116918465,
+              40.01964892885454
+            ],
+            [
+              116.35165784922218,
+              40.01894313306698
             ]
           ]
         ]
       },
-      "id": "BLD-111"
+      "id": "BLD-107"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-112",
+        "id": "BLD-108",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
+        "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 5620.34,
+        "area_sqm_declared": 6478.01,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -4878,43 +4706,43 @@
         "coordinates": [
           [
             [
-              116.35199435072602,
-              40.02261456024163
+              116.35203337420408,
+              40.02258499158676
             ],
             [
-              116.35108789532732,
-              40.02260948776846
+              116.35104943583278,
+              40.02257948552665
             ],
             [
-              116.35108129284048,
-              40.02330638627721
+              116.35104226854051,
+              40.02333595460121
             ],
             [
-              116.35156946107392,
-              40.02330911895944
+              116.3515020757873,
+              40.02333852873507
             ],
             [
-              116.35198951408408,
-              40.023125788680765
+              116.35202841876432,
+              40.02310880877754
             ],
             [
-              116.35199435072602,
-              40.02261456024163
+              116.35203337420408,
+              40.02258499158676
             ]
           ]
         ]
       },
-      "id": "BLD-112"
+      "id": "BLD-108"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-113",
+        "id": "BLD-109",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
+        "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
         "area_sqm_declared": 3493.269,
@@ -4947,98 +4775,12 @@
           ]
         ]
       },
-      "id": "BLD-113"
+      "id": "BLD-109"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-114",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35452402801029,
-              39.94400993754368
-            ],
-            [
-              116.35354121563348,
-              39.94400446152344
-            ],
-            [
-              116.3535340956875,
-              39.94476094125677
-            ],
-            [
-              116.35451691888694,
-              39.94476641742295
-            ],
-            [
-              116.35452402801029,
-              39.94400993754368
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-114"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-115",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35417839506526,
-              40.02041311126606
-            ],
-            [
-              116.35319448747313,
-              40.020407623664326
-            ],
-            [
-              116.3531873444197,
-              40.021164093344254
-            ],
-            [
-              116.35417126287584,
-              40.021169581092146
-            ],
-            [
-              116.35417839506526,
-              40.02041311126606
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-115"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-116",
+        "id": "BLD-110",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -5080,12 +4822,12 @@
           ]
         ]
       },
-      "id": "BLD-116"
+      "id": "BLD-110"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-117",
+        "id": "BLD-111",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -5123,12 +4865,12 @@
           ]
         ]
       },
-      "id": "BLD-117"
+      "id": "BLD-111"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-118",
+        "id": "BLD-112",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -5136,7 +4878,7 @@
         "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7056.0,
+        "area_sqm_declared": 6795.281,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -5144,34 +4886,38 @@
         "coordinates": [
           [
             [
-              116.35325114983252,
-              40.01567625193883
+              116.3543010701497,
+              40.0169526939922
             ],
             [
-              116.35226731044821,
-              40.01567075700141
+              116.35331721223157,
+              40.01694720782356
             ],
             [
-              116.3522601583547,
-              40.016427227162936
+              116.35331154642243,
+              40.017547423206736
             ],
             [
-              116.35324400860044,
-              40.01643272224672
+              116.35366206866087,
+              40.017705641765204
             ],
             [
-              116.35325114983252,
-              40.01567625193883
+              116.35429394018806,
+              40.017709164289684
+            ],
+            [
+              116.3543010701497,
+              40.0169526939922
             ]
           ]
         ]
       },
-      "id": "BLD-118"
+      "id": "BLD-112"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "BLD-119",
+        "id": "BLD-113",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
         "confidence": "medium",
@@ -5179,7 +4925,7 @@
         "building_type": "mixed_use",
         "name_zh": "概念建筑基底示意",
         "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 7028.58,
+        "area_sqm_declared": 6874.686,
         "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
       },
       "geometry": {
@@ -5187,123 +4933,33 @@
         "coordinates": [
           [
             [
-              116.35248807494382,
-              40.01785584715105
+              116.35434272978362,
+              40.01877927992152
             ],
             [
-              116.35150420440813,
-              40.017850345488235
+              116.35365239115058,
+              40.018775431549415
             ],
             [
-              116.35149704333669,
-              40.01860681525014
+              116.35335761560435,
+              40.01890409935496
             ],
             [
-              116.3523667694846,
-              40.01861167913817
+              116.3533517047998,
+              40.019530263818304
             ],
             [
-              116.35248140371661,
-              40.01856164318736
+              116.35433559982117,
+              40.019535749986055
             ],
             [
-              116.35248807494382,
-              40.01785584715105
+              116.35434272978362,
+              40.01877927992152
             ]
           ]
         ]
       },
-      "id": "BLD-119"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-120",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "mixed_use",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 3493.269,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35191060801363,
-              40.02014858263521
-            ],
-            [
-              116.35121831618054,
-              40.02014470880612
-            ],
-            [
-              116.35121327492178,
-              40.02067697408263
-            ],
-            [
-              116.3519055721333,
-              40.02068084798432
-            ],
-            [
-              116.35191060801363,
-              40.02014858263521
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-120"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "BLD-121",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "talent_apartment",
-        "name_zh": "概念建筑基底示意",
-        "name_en": "Conceptual building footprint",
-        "area_sqm_declared": 6888.693,
-        "design_note_zh": "仅为体量关系示意，不含容积率、建筑高度或拆改留结论。"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35460331760869,
-              40.02374508330101
-            ],
-            [
-              116.3539013617931,
-              40.02374117159424
-            ],
-            [
-              116.35361818078557,
-              40.023864769997324
-            ],
-            [
-              116.35361222286969,
-              40.02449606823727
-            ],
-            [
-              116.35459618927142,
-              40.024501552754195
-            ],
-            [
-              116.35460331760869,
-              40.02374508330101
-            ]
-          ]
-        ]
-      },
-      "id": "BLD-121"
+      "id": "BLD-113"
     }
   ]
 }

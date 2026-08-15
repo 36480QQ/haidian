@@ -22,7 +22,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 650575.16,
+      "value": 614692.545,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -35,7 +35,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.209452,
+      "value": 0.206367,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -50,7 +50,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.012777,
+      "value": 0.012785,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -107,16 +107,19 @@
     "load_scenarios": 7,
     "lattice_nodes": 665,
     "lattice_edges": 1820,
-    "backbone_edges": 152,
-    "capillary_edges": 220,
+    "backbone_edges": 149,
+    "capillary_edges": 216,
     "independent_loops": 109,
-    "loop_density_L_over_N": 0.4129,
+    "loop_density_L_over_N": 0.4241,
     "land_use_coverage_ratio": 1.0,
-    "benchmark_TL_norm_mst": 0.5602,
-    "benchmark_MD_norm_mst": 0.3519,
-    "benchmark_fault_tolerance": 0.8778,
-    "benchmark_failure_resilience": 0.2774,
-    "benchmark_recovery_resilience": 0.6752,
-    "benchmark_note_zh": "对照 Toussaint 邻近图谱系（MST<RNG<Gabriel<Delaunay）全谱，而非仅对照 MST；失效韧性与恢复韧性分别计量。"
+    "benchmark_TL_norm_mst": 0.5497,
+    "benchmark_MD_norm_mst": 0.3139,
+    "benchmark_fault_tolerance": 0.9667,
+    "benchmark_failure_resilience_betweenness": 0.3991,
+    "benchmark_failure_resilience_random": 0.3148,
+    "benchmark_recovery_resilience": 0.684,
+    "solver_final_sup_norm_step_backbone": 5.329070518200751e-15,
+    "solver_splu_fallbacks_backbone": 0,
+    "benchmark_note_zh": "对照 Toussaint 邻近图谱系全谱而非仅对照 MST；失效韧性与恢复韧性分别计量。两点须如实说明：(1) 在 140m 规则格网上 RNG 与 Gabriel 判据同时取等，两者边集完全相同，谱系实际坍缩为 MST<RNG=Gabriel<Delaunay，应按三条对照读；(2) 所有网络采用同一攻击规则（边介数优先，并另报 5 次随机序均值）计量失效韧性，Delaunay 在该口径下仍优于本方案。"
   }
 }

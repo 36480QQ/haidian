@@ -22,34 +22,38 @@ The prequalification announcement is the primary basis; the provisional boundari
 
 ## Generation method: one equation, two phases
 
-The network is solved, not drawn. The site is discretised into 665 nodes and 1820 candidate edges; flows follow Poiseuille/Ohm with Kirchhoff conservation, and conductance evolves by dD/dt = |Q|^γ/(1+|Q|^γ) − D [source:METHOD-PHYSARUM-TERO-2010]. The exponent γ selects the phenotype: γ≥1 is winner-take-all, converging to a **hierarchical tree**; γ<1 is sublinear and retains a **capillary plexus** [source:METHOD-PHENOTYPES-RK-2019]. This proposal uses γ=1.35 (backbone) and γ=0.72 (capillary), yielding 152 backbone and 220 capillary edges [metric:site_area_sqm].
+**Which part is drawn and which part is solved must be stated first.** The corridor spine is **drawn**: it links the three key-area centroids ordered by latitude, and edges inside its 118 m buffer are assigned a low resistance of 0.18. The backbone is then a resistance-weighted shortest path over that surface, so it necessarily follows the drawn spine. The conductance field is **solved**: the site is discretised into 665 nodes and 1820 candidate edges; flows follow Poiseuille/Ohm with Kirchhoff conservation, and conductance evolves by dD/dt = |Q|^γ/(1+|Q|^γ) − D [source:METHOD-PHYSARUM-TERO-2010]. This proposal uses γ=1.35 (backbone) and γ=0.72 (capillary), yielding 149 backbone and 216 capillary edges [metric:site_area_sqm].
 
-**Why loops are retained.** Not because spider webs have loops, but because load fluctuates. Loops appear in the optimum only after modelling 7 fluctuating sink scenarios, consistent with damage- and fluctuation-induced looping [source:METHOD-LOOPS-KATIFORI-2010]. The final network has 109 independent loops, loop density L/N = 0.4129. If real load were near-steady the optimum should tend to a tree with fewer loops — this falsifiable condition is recorded as an assumption [depth:overall_spatial_structure].
+**The phases are measured, not asserted.** One equation, only γ changed: at γ=0.72 the final sup-norm step is 5.33e-15, zero-conductance edges 0, loop density L/N=0.4108 (capillary plexus); at γ=1.35 the final step is 6.14e-09, zero-conductance edges 1567/1820, loop density L/N=0.0667 (hierarchical tree) [source:METHOD-PHENOTYPES-RK-2019]. The effect of growth order on final morphology is treated separately in the distribution-network growth literature [source:METHOD-GROWTH-RK-2016]. **Convergence must be qualified**: the published proof covers continuous-time dynamics for a single source-sink pair with unit feedback exponent [source:METHOD-PHYSARUM-CONVERGENCE]; this model is multi-terminal, multi-scenario and discretely stepped, and falls outside that theorem. Only the measured step and the solver-fallback count (0) are reported; no proof of convergence is claimed.
+
+**Why loops are retained.** Not because spider webs have loops, but because load fluctuates. Loops appear in the optimum only after modelling 7 fluctuating sink scenarios, consistent with damage- and fluctuation-induced looping [source:METHOD-LOOPS-KATIFORI-2010][source:METHOD-LOOPS-CORSON-2010]; under steady load the optimum degenerates to a tree, the other side of the same phase transition [source:METHOD-BOHN-MAGNASCO-2007]. The final network has 109 independent loops, loop density L/N = 0.4241. If real load were near-steady the optimum should tend to a tree with fewer loops — this falsifiable condition is recorded as an assumption [depth:overall_spatial_structure].
 
 **The resistance surface is a published value judgement.** Weights follow the ecological-security-pattern source-resistance-corridor paradigm [source:METHOD-MCR-ECOLOGICAL-SECURITY] and are fully disclosed: base 1.00, key areas 0.35, corridor spine 0.18, west wing 0.55, east wing 0.60, edge falloff 1.90. These are not objective constants but judgements about where flow *ought* to go. They are published so reviewers can re-run with other weights and compare, rather than letting a value judgement masquerade as a natural law.
 
+**Biomimicry supplies no legitimacy, only a testable hypothesis.** Calling a method 'biomimetic' does not make a design more sustainable; empirical work finds the label can even lower how audiences rate it [source:CRITIQUE-BIOMIMETIC-LABEL], and the claim of 'direct access to nature' has long been identified in science-and-technology studies as rhetoric rather than argument [source:CRITIQUE-STS-FISCH-2017]. So nothing spatial here is justified by 'slime mould grows this way'. Biology is used only as a source of falsifiable hypotheses: loops are worth their cost only if load really fluctuates, and the result that nonlinear material behaviour localises damage comes from spider-silk mechanics [source:METHOD-SILK-CRANFORD-2012] — at urban scale that is an **analogy, not evidence**, and must be tested against local data before it is believed.
+
 ### Parameter sweep and benchmarking (including negative results)
 
-A single network is not evidence. γ is swept and benchmarked against the **full Toussaint hierarchy** (MST < RNG < Gabriel < Delaunay) — benchmarking against MST alone overstates results, because such networks sit on that hierarchy. Resilience is measured as two separate quantities [source:METHOD-TWO-RESILIENCE-2026].
+A single network is not evidence. γ is swept and benchmarked against the **Toussaint proximity-graph hierarchy** [source:METHOD-TOUSSAINT-RNG][source:METHOD-GABRIEL-SOKAL] — benchmarking against MST alone overstates results, because such networks sit on that hierarchy. **One degeneracy must be stated plainly**: on a regular 140 m grid the relative-neighbourhood lune test and the Gabriel disk test tie exactly, so RNG and Gabriel return an identical edge set (1820 each) and the hierarchy collapses to MST < RNG = Gabriel < Delaunay. Read it as **three** baselines, not four. Resilience is measured as two separate quantities [source:METHOD-TWO-RESILIENCE-2026], and every network is attacked by the **same rule** (edge-betweenness first, with a 5-draw random-order mean also reported) — an earlier version attacked only this proposal by conductance rank while peeling the baselines in row order, which is not a comparison.
 
 | γ | Edges | Node cov. | Internal reach | FT | Failure | Recovery | L/N | Phase |
 |---|---|---|---|---|---|---|---|---|
-| 0.60 | 255 | 0.277 | — | 0.000 | 0.306 | 0.663 | 0.391 | capillary plexus |
-| 0.72 | 255 | 0.272 | — | 0.000 | 0.307 | 0.681 | 0.414 | capillary plexus |
-| 0.85 | 255 | 0.272 | — | 0.000 | 0.311 | 0.672 | 0.414 | capillary plexus |
-| 1.00 | 255 | 0.289 | — | 0.000 | 0.245 | 0.612 | 0.333 | hierarchical tree |
-| 1.15 | 255 | 0.343 | — | 0.000 | 0.136 | 0.372 | 0.123 | hierarchical tree |
-| 1.35 | 255 | 0.370 | — | 0.000 | 0.188 | 0.289 | 0.041 | hierarchical tree |
+| 0.60 | 255 | 0.278 | 0.61 | 0.000 | 0.278 | 0.677 | 0.405 | capillary plexus |
+| 0.72 | 255 | 0.278 | 0.46 | 0.000 | 0.270 | 0.687 | 0.411 | capillary plexus |
+| 0.85 | 255 | 0.275 | 0.95 | 0.000 | 0.293 | 0.667 | 0.404 | capillary plexus |
+| 1.00 | 255 | 0.289 | 0.84 | 0.000 | 0.298 | 0.636 | 0.359 | hierarchical tree |
+| 1.15 | 255 | 0.314 | 1.00 | 0.844 | 0.236 | 0.458 | 0.225 | hierarchical tree |
+| 1.35 | 255 | 0.361 | 1.00 | 0.667 | 0.144 | 0.290 | 0.067 | hierarchical tree |
 
-| Network | Edges | Node cov. | TL | m/node | MD | FT | Failure | Recovery | Loop L/N |
-|---|---|---|---|---|---|---|---|---|---|
-| MST | 664 | 1.000 | 1.000 | 140 | 1.000 | 0.533 | 0.114 | 0.156 | 0.000 |
-| RNG | 1820 | 1.000 | 2.741 | 383 | 0.285 | 1.000 | 0.917 | 0.616 | 1.738 |
-| Gabriel | 1820 | 1.000 | 2.741 | 383 | 0.285 | 1.000 | 0.917 | 0.616 | 1.738 |
-| Delaunay | 1949 | 1.000 | 4.632 | 648 | 0.260 | 1.000 | 0.917 | 0.613 | 1.932 |
-| **This proposal (two-phase)** | 372 | 0.397 | 0.560 | 197 | 0.352 | 0.878 | 0.277 | 0.675 | 0.413 |
+| Network | Edges | Node cov. | TL | m/node | MD | FT | Failure(betw.) | Failure(rand.) | Recovery | Loop L/N |
+|---|---|---|---|---|---|---|---|---|---|---|
+| MST | 664 | 1.000 | 1.000 | 140 | 1.000 | 0.533 | 0.119 | 0.059 | 0.156 | 0.000 |
+| RNG | 1820 | 1.000 | 2.741 | 383 | 0.285 | 1.000 | 0.563 | 0.598 | 0.616 | 1.738 |
+| Gabriel | 1820 | 1.000 | 2.741 | 383 | 0.285 | 1.000 | 0.563 | 0.598 | 0.616 | 1.738 |
+| Delaunay | 1949 | 1.000 | 4.632 | 648 | 0.260 | 1.000 | 0.643 | 0.670 | 0.613 | 1.932 |
+| **This proposal (two-phase)** | 365 | 0.387 | 0.550 | 199 | 0.314 | 0.967 | 0.399 | 0.315 | 0.684 | 0.424 |
 
-**How to read this table honestly.** First, TL must be read together with node coverage: this design reaches 0.397 of nodes and is a *proposed network layer*, not a substitute for the spanning tree, so TL below 1 does not mean 'cheaper'. Second, denser baselines such as Delaunay remain **better on failure resilience** — as expected: dense meshes absorb attack better, at the cost of construction and land. This design trades that for higher **recovery resilience** (loop redundancy plus degree heterogeneity) at much lower length. Third, the sweep shows pure capillary phases at γ<1 can score zero fault tolerance, meaning the capillary layer alone cannot guarantee key-area connectivity — which is precisely the empirical reason for a **two-phase** rather than single-phase design.
+**How to read this table honestly.** First, TL must be read together with node coverage: this design reaches 0.3865 of nodes and is a *proposed network layer*, not a substitute for the spanning tree, so TL below 1 does not mean 'cheaper'. Second, denser baselines such as Delaunay remain **better on failure resilience** — under one matched edge-betweenness attack this design scores 0.399 against Delaunay's 0.643, so this design is genuinely **lower**. The only defensible statement is the cost ratio: it buys 62.1% of Delaunay's attack tolerance for 18.7% of its edges and 11.9% of its total length. That is a trade-off, not a win. Third, the sweep shows pure capillary phases at γ<1 can score zero fault tolerance, meaning the capillary layer alone cannot guarantee key-area connectivity — which is precisely the empirical reason for a **two-phase** rather than single-phase design.
 
 ![Metrics and benchmark comparison](assets/figures/metrics-evidence.png)
 
@@ -65,16 +69,18 @@ The coordinated level answers where flows come from and go to. Regionally the co
 
 | Case | Relevance to the belt |
 |---|---|
-| Kendall Square, Cambridge MA | The NASA Electronics Research Center opened in 1964 and closed about five years later after budget cuts, leaving a void; MIT partnered with the City of Cambridge to revitalise the area, which now hosts around 150 high-tech companies |
-| King's Cross Central, London | 67 acres of disused railway land; regeneration attempts through the 1980s and 1990s failed and redevelopment only began in the mid-2000s; about 40% of the land is public realm, with 10 new parks and squares and 20 new streets |
-| Station F, Paris | Converted from the Halle Freyssinet rail freight depot built in 1929; about 34,000 m², opened June 2017, housing up to 1,000 startups and 3,000 desks |
-| Kista Science City, Stockholm | One of Europe's largest ICT clusters with over 1,000 tech companies and about 25,000 employees; the Urban ICT Arena, established in late 2016, wired a roughly 2 km corridor with fibre and wireless as an open urban testbed |
-| Sangam Digital Media City, Seoul | A planned digital-media district converted from a former landfill area |
-| Zhongguancun's own history | Grew bottom-up from the 1980s 'Electronics Street' into a national science park |
+| Kendall Square, Cambridge MA | The NASA Electronics Research Center opened in 1964 and closed about five years later after budget cuts, leaving a void; MIT partnered with the City of Cambridge to revitalise the area, which now hosts around 150 high-tech companies [source:CASE-KENDALL-MIT-2015] |
+| King's Cross Central, London | 67 acres of disused railway land; regeneration attempts through the 1980s and 1990s failed and redevelopment only began in the mid-2000s; about 40% of the land is public realm, with 10 new parks and squares and 20 new streets [source:CASE-KINGSCROSS-CFC] |
+| Station F, Paris | Converted from the Halle Freyssinet rail freight depot built in 1929; about 34,000 m², opened June 2017, housing up to 1,000 startups and 3,000 desks [source:CASE-STATIONF] |
+| Kista Science City, Stockholm | One of Europe's largest ICT clusters with over 1,000 tech companies and about 25,000 employees; the Urban ICT Arena, established in late 2016, wired a roughly 2 km corridor with fibre and wireless as an open urban testbed [source:CASE-KISTA-URBANICT] |
+| Sangam Digital Media City, Seoul | A planned digital-media district converted from a former landfill area [source:CASE-SANGAM-DMC] |
+| Zhongguancun's own history | Grew bottom-up from the 1980s 'Electronics Street' into a national science park [source:CASE-ZGC-HISTORY] |
+
+These cases are qualitative comparators only; their figures require separate verification and must not be transferred to this belt [source:CASE-ZGC-HISTORY][source:PROCESSED-FACT-PACK].
 
 ## Overall design area: renewal at regulatory-plan urban design depth
 
-The backbone phase gives the north-south spine and its connections to the three key areas; the capillary phase gives east-west stitching. Land use is generated by partitioning the flow network, covering 100.000% of the submitted boundary with no gaps or overlaps [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]. Green ratio 20.95% and public-space ratio 1.28% are recomputed from the submitted GeoJSON in EPSG:4548 [metric:green_ratio] [metric:public_space_ratio]. Zoning is not drawn first and filled later: it is partitioned directly from the catchment of each network node, so every parcel can answer why it carries that use and why it sits there. Cells near high-throughput nodes inside a key area become research cores; cells inside the corridor buffer become park; mid-flow cells become talent communities; low-flow cells stay reserved to preserve flexibility. The intensity, height and retain/renovate/demolish conclusions that regulatory depth would normally require are **deliberately left blank**, because official controls are absent and the taskbook boundary clause forbids an agent from inferring them [depth:development_intensity_controls].
+The backbone phase gives the north-south spine and its connections to the three key areas; the capillary phase gives east-west stitching. Land use is generated by partitioning the flow network, covering 100.000% of the submitted boundary with no gaps or overlaps [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]. Green ratio 20.64% and public-space ratio 1.28% are recomputed from the submitted GeoJSON in EPSG:4548 [metric:green_ratio] [metric:public_space_ratio]. Zoning is not drawn first and filled later: it is partitioned directly from the catchment of each network node, so every parcel can answer why it carries that use and why it sits there. Cells near high-throughput nodes inside a key area become research cores; cells inside the corridor buffer become park; mid-flow cells become talent communities; low-flow cells stay reserved to preserve flexibility. The intensity, height and retain/renovate/demolish conclusions that regulatory depth would normally require are **deliberately left blank**, because official controls are absent and the taskbook boundary clause forbids an agent from inferring them [depth:development_intensity_controls].
 
 ![Land-use structure diagram: research, commercial, residential, park and reserved land generated by adaptive flow-network partition, covering the full submitted boundary with no gaps or overlaps](assets/figures/land-use-structure.png)
 
@@ -114,6 +120,23 @@ AI scenario cards (at least ten):
 | SC-11 | Multi-path evacuation drill | 全域网络 | Public managers | Uses loop redundancy to rehearse multi-path evacuation, validating recovery resilience. |
 | SC-12 | Green microclimate observation | 脉点公园 | Researchers/public | Open microclimate observation points with published data. |
 
+Scenario stop and rollback (every card must be stoppable):
+
+| ID | Accountable role | Non-AI equivalent path | Minimum data | Who can stop it | What is restored on stop |
+|---|---|---|---|---|---|
+| SC-01 | Park duty officer | Printed and cast-plate maps, volunteer guides | Coarse location plus public archival text | Duty officer, sub-district, or any single visitor complaint | Printed guides and human narration resume; the audio layer is removed |
+| SC-02 | Accessible-transfer dispatcher | Call button plus staffed transfer, no algorithmic queueing | Call location and arrival time | The user, an accompanying person, or the dispatcher | Staffed call response resumes with the same response-time commitment |
+| SC-03 | Testing-block management committee | The same service must remain available as a staffed non-AI process | Public environmental data inside the test extent only | The committee, participating firms, or the residents' representative | Test-block signage is removed and ordinary block management resumes |
+| SC-04 | Compute-service desk lead | Over-the-counter application and manual scheduling | Demonstration data only, carrying no real resource commitment | The desk lead or any applicant | Manual scheduling resumes and the demonstration interface goes offline |
+| SC-05 | Active-travel maintenance unit | Ordinary junction signage and the existing cycle lanes | Cross-section counts only, no individual trajectories | The maintenance unit or the traffic authority | Fixed signage resumes and dynamic guidance is withdrawn |
+| SC-06 | Sub-district night-safety duty post | A fixed always-on lighting baseline independent of any sensing | Illuminance and presence only; no identification | The duty post, residents, or any late-returning pedestrian | The whole line reverts to the always-on baseline illuminance |
+| SC-07 | Dazhongsi merchants' self-governance body | Ordinary staffed guidance and physical signage | Aggregate footfall only; no individual purchase records | The self-governance body or any single merchant | Physical signage and staffed guidance resume |
+| SC-08 | Community planner | In-person deliberation meetings and paper proposals | Voluntarily submitted public comments only | A majority of the residents' assembly can stop it | The topic returns to the in-person assembly for decision |
+| SC-09 | Cultural-node operator | Physical exhibit labels and human docents | Public archival material and exhibit metadata | The operator, the curator, or any visitor objection | Physical labels resume and the augmented layer is removed |
+| SC-10 | Residency-desk administrator | Ordinary desk booking and on-site registration | Desk occupancy status only | The administrator or any resident developer | On-site registration resumes |
+| SC-11 | Emergency management authority | The existing evacuation plan and marshals; a drill never replaces the plan | Anonymous counts during the drill only | The emergency management authority alone can terminate it | The existing evacuation plan takes effect immediately |
+| SC-12 | Green-space maintenance and research partner | Fixed-point manual observation records | Public meteorological and phenological observations | Either partner may withdraw | The manual observation ledger resumes |
+
 Industry test and validation scenarios (at least three):
 
 | ID | Test scenario | Space | Boundary conditions |
@@ -126,7 +149,7 @@ Every scenario must be human-reviewable and abortable, must not perform personal
 
 ## Land use, building scale and retain/renovate/demolish logic
 
-Land-use codes follow the project subset of the national classification [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:development_intensity_controls]. The building footprint of 650,575 m² is a massing indication only [metric:building_footprint_area_sqm]. **No floor-area ratio, building height or parcel-level retain/renovate/demolish conclusion is stated**: official controls are absent [depth:height_massing_character] and such judgements belong to professional teams once formal conditions exist [depth:retain_renovate_demolish]. What can be offered are principles: retain and mend along the backbone, prefer incremental micro-renewal where the capillary layer densifies, keep reserved land flexible.
+Land-use codes follow the project subset of the national classification [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:development_intensity_controls]. The building footprint of 614,693 m² is a massing indication only [metric:building_footprint_area_sqm]. **No floor-area ratio, building height or parcel-level retain/renovate/demolish conclusion is stated**: official controls are absent [depth:height_massing_character] and such judgements belong to professional teams once formal conditions exist [depth:retain_renovate_demolish]. What can be offered are principles: retain and mend along the backbone, prefer incremental micro-renewal where the capillary layer densifies, keep reserved land flexible.
 
 ## Traffic, rail, municipal and public service facilities
 
@@ -136,7 +159,7 @@ The submitted `ROAD_CENTERLINE` uses only agent-editable classes (greenway, pede
 
 ## Blue-green space, public space and urban character
 
-The green framework is the corridor park plus pulse-point parks, green ratio 20.95% [metric:green_ratio] [data:geometry/green_space.geojson#GS-001] [depth:blue_green_public_space]. Public-space nodes are not chosen compositionally but derived from high-throughput network nodes, so 'why is the plaza here' can be interrogated and recomputed. AI pilgrimage landmarks (at least three):
+The green framework is the corridor park plus pulse-point parks, green ratio 20.64% [metric:green_ratio] [data:geometry/green_space.geojson#GS-001] [depth:blue_green_public_space]. Public-space nodes are not chosen compositionally but derived from high-throughput network nodes, so 'why is the plaza here' can be interrogated and recomputed. AI pilgrimage landmarks (at least three):
 
 | ID | Landmark | Location | Concept |
 |---|---|---|---|
