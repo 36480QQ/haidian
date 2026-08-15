@@ -51,6 +51,11 @@
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/logo.svg",
+        "submissions/lqqk7/every-sense-jingzhang/assets/media/audible-break-en.m4a",
+        "submissions/lqqk7/every-sense-jingzhang/assets/media/audible-break-en.vtt",
+        "submissions/lqqk7/every-sense-jingzhang/assets/media/audible-break.m4a",
+        "submissions/lqqk7/every-sense-jingzhang/assets/media/audible-break.md",
+        "submissions/lqqk7/every-sense-jingzhang/assets/media/audible-break.vtt",
         "submissions/lqqk7/every-sense-jingzhang/assets/media/audio-guide-en-voice.vtt",
         "submissions/lqqk7/every-sense-jingzhang/assets/media/audio-guide-en.m4a",
         "submissions/lqqk7/every-sense-jingzhang/assets/media/audio-guide-en.vtt",
@@ -64,6 +69,8 @@
         "submissions/lqqk7/every-sense-jingzhang/assets/media/journey.md",
         "submissions/lqqk7/every-sense-jingzhang/assets/media/journey.mp4",
         "submissions/lqqk7/every-sense-jingzhang/assets/media/journey.vtt",
+        "submissions/lqqk7/every-sense-jingzhang/assets/tactile/op04-papercraft.en.svg",
+        "submissions/lqqk7/every-sense-jingzhang/assets/tactile/op04-papercraft.svg",
         "submissions/lqqk7/every-sense-jingzhang/assumptions.json",
         "submissions/lqqk7/every-sense-jingzhang/changelog.md",
         "submissions/lqqk7/every-sense-jingzhang/compliance_matrix.json",
@@ -93,9 +100,11 @@
         "submissions/lqqk7/every-sense-jingzhang/self_check.json",
         "submissions/lqqk7/every-sense-jingzhang/sources.json",
         "submissions/lqqk7/every-sense-jingzhang/standard_matrix.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/braille-core-statement.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/ethics-protocol.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/font-license-ofl.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/op04-pilot-readiness.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/op04-tactile-map.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/osm-context/provenance.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/qa-proofing-record.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/review-archive.json",
@@ -123,7 +132,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 40650067,
+      "total_bytes": 41690211,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -212,7 +221,7 @@
           "source": 34,
           "standard": 9,
           "depth": 15,
-          "data": 35,
+          "data": 38,
           "metric": 31
         }
       }
