@@ -8,7 +8,7 @@
    "what_zh": "重算 metrics.json 中全部 metric_class 1 的指标",
    "what_en": "Recompute every metric_class 1 figure in metrics.json",
    "exit_code": 0,
-   "seconds": 0.39,
+   "seconds": 0.4,
    "first_line": "Independent recomputation of class-1 metrics"
   },
   {
@@ -120,7 +120,7 @@
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.7,
+  "seconds_to_run_every_verifier": 0.71,
   "files_to_read": 9,
   "bytes_to_read": 1112759,
   "units_to_read": 1647

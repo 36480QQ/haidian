@@ -199,7 +199,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "i18n_order_qa.py — i18n order: 329 numeric templates checked; every slot that carries a unit or a figure number in both editions carries the same one — the check is silent about slots whose English rephrases the unit away, and says so rather than guessing"
+      "message": "i18n_order_qa.py — i18n order: 333 numeric templates checked; every slot that carries a unit or a figure number in both editions carries the same one — the check is silent about slots whose English rephrases the unit away, and says so rather than guessing"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -207,7 +207,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 54 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 5 bytes to spare. The package totals 32.4 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 54 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 0 bytes to spare. The package totals 38.1 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -239,7 +239,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 474 distinct names harvested from the package — 458 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 475 distinct names harvested from the package — 459 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -367,7 +367,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "visual_packet_qa.py — visual packet: 18 images against the organisers' cap of 18 (0 slot(s) free) — 10 figures in both languages, 4 PDF first pages, 4 screenshots; largest is assets/figures/metrics-evidence.png at 0.78 MiB against a 4 MiB per-image cap, read from upstream/main"
+      "message": "visual_packet_qa.py — visual packet: 18 images against the organisers' cap of 18 (0 slot(s) free) — 10 figures in both languages, 4 PDF first pages, 4 screenshots; largest is drawings/a3-booklet.pdf at 1.35 MiB against a 4 MiB per-image cap, read from upstream/main"
     },
     {
       "check_id": "PKG_ERRATA_REGISTER",
@@ -375,7 +375,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 185 条，按发现者：audit 25、external 8、external-reviewer 5、own-gate 11、self 136；最常见形状：check-measured-the-convenient-thing 37、two-copies-of-one-thing-drifted 28、deliverable-not-inspected-before-shipping 19、claim-outlived-the-package 15。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 9 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 185 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 186 条，按发现者：audit 25、external 8、external-reviewer 5、own-gate 11、self 137；最常见形状：check-measured-the-convenient-thing 37、two-copies-of-one-thing-drifted 28、deliverable-not-inspected-before-shipping 19、claim-outlived-the-package 15。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 9 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 186 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
