@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M31",
+      "gate": "figure_citation_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版里那条机读引用删掉，中文版保持不变。",
+      "what_en": "Delete one machine-readable citation from the English edition, leaving the Chinese untouched.",
+      "why_zh": "本包早就要求 34 张图与 58 份交付物在两版里各自被点名，**却从未把同一条规矩用在自己的五个引用命名空间上**——于是 `[metric:matrix_reference_count]` 只在中文里，而它正是 E118 刚刚在两版都改对的那个数的机读出口。若删掉一条而无人作声，这条规矩就只适用于图纸。",
+      "why_en": "This package already requires its 34 sheets and 58 deliverables to be named in each edition separately, and had never applied the same rule to its own five citation namespaces — so [metric:matrix_reference_count] sat in the Chinese only, the machine-readable exit for the very number E118 had just corrected in both. If one can be deleted without objection, the rule covers drawings alone."
+    },
+    {
       "id": "M30",
       "gate": "declared_geometry_qa.py",
       "target": "geometry/land_use.geojson",
@@ -367,7 +379,7 @@
       "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
     }
   ],
-  "caught": 30,
+  "caught": 31,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
