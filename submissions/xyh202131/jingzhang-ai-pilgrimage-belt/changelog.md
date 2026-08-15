@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v24.0 - 2026-08-15
+
+**WCAG AA contrast repair on the visual pages / 视觉页 WCAG AA 对比度修复**
+
+- 第 24 轮只在第 23 轮 PR #2720 合并（merge SHA `79493c594c5fd54bfee62e0d313ee56f3e147db2` 进入 canonical `main@0d1b832487ea5cd53b96b3041a52c433645b8081`）且 441 个开放 PR 文件级扫描无竞争后开始。梯度感知对比度探针（CDP + DOM 背景解析，含 linear-gradient 色标；WCAG 2.1 AA 4.5:1 正文 / 3:1 大字）在全部 details 展开状态下覆盖双语 920/914 个文本元素，发现 4 处低于阈值并全部修复。
+- Round 24 began only after Round 23 PR #2720 merged (merge SHA `79493c594c5fd54bfee62e0d313ee56f3e147db2` entered canonical `main@0d1b832487ea5cd53b96b3041a52c433645b8081`) and a file-level scan of 441 open PRs found no competing PR. A gradient-aware contrast probe (CDP plus DOM background resolution including linear-gradient stops; WCAG 2.1 AA 4.5:1 body / 3:1 large text) covered 920/914 bilingual text elements with every details block expanded, found four below-threshold pairs, and fixed all four.
+- 修复：`--red` `#d96850 → #a13d2a`（修复后最低 6.13）、`--green` `#36a269 → #1c6b45`（6.17）、`.jury-motion .tag` `#f1c164 → #8a5a00`（4.94）、`.review-walk-shell button:disabled` `#79827f → #5c6663`（5.94）。修复后双语全展开复测为 0 个低于阈值元素；证据写入 `site-grounding-register.json#package_validation_contract.contrast_matrix_r24`。
+- Fixes: `--red` `#d96850 → #a13d2a` (min 6.13 after), `--green` `#36a269 → #1c6b45` (6.17), `.jury-motion .tag` `#f1c164 → #8a5a00` (4.94), `.review-walk-shell button:disabled` `#79827f → #5c6663` (5.94). Re-probe with everything expanded reports zero below-threshold elements in both languages; the evidence is recorded in `site-grounding-register.json#package_validation_contract.contrast_matrix_r24`.
+- 仅颜色值变化，无内容、主张、结构或功能变化；四份 PDF、geometry、metrics、sources.json 与全部图件/媒体字节未变。程序化阈值验证不是辅助技术认证、人工目检或法律合规声明。
+- Only color values changed; no content, claim, structure or function change. The four PDFs, geometry, metrics, sources.json and all figures/media keep their bytes. Programmatic threshold verification is not assistive-technology certification, human inspection or a legal compliance claim.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、freshness 48/2/50、141 路径不变。修复、PR 或合并不构成现实、批准、运营或权利升级。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional boundaries, `not_fully_cleared`, 0 independent file-level audits, freshness 48/2/50 and 141 paths. A repair, PR or merge creates no reality, approval, operation or rights upgrade.
+
 ## v23.0 - 2026-08-15
 
 **Broken rendered-report link repair / 离线报告失效链接修复**

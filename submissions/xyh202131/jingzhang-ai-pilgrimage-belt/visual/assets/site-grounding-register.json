@@ -697,6 +697,21 @@
         "visual_content_changes": 0,
         "certification_note": "This matrix is programmatic browser verification of layout and interaction only; it is not assistive-technology certification, human visual inspection, field evidence or an approval of any kind."
       },
+      "contrast_matrix_r24": {
+        "contract_id": "JZ-CONTRAST-MATRIX-R24",
+        "executed_at": "2026-08-15",
+        "method": "CDP-driven gradient-aware DOM background resolution (linear-gradient stops included) over both visual pages with all details expanded; WCAG 2.1 AA thresholds 4.5:1 body / 3:1 large text",
+        "probe_totals": { "zh_text_elements": 920, "en_text_elements": 914 },
+        "defects_found": 4,
+        "fixes": [
+          { "selector": "--red", "before": "#d96850", "after": "#a13d2a", "min_ratio_after": 6.13 },
+          { "selector": "--green", "before": "#36a269", "after": "#1c6b45", "min_ratio_after": 6.17 },
+          { "selector": ".jury-motion .tag", "before": "#f1c164", "after": "#8a5a00", "min_ratio_after": 4.94 },
+          { "selector": ".review-walk-shell button:disabled", "before": "#79827f", "after": "#5c6663", "min_ratio_after": 5.94 }
+        ],
+        "result_after_fix": "zero elements below threshold on both pages with all details expanded",
+        "certification_note": "Programmatic WCAG-AA threshold verification only; it is not assistive-technology certification, human visual inspection or a legal compliance claim."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,

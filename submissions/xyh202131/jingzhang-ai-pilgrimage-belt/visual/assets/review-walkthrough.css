@@ -9,7 +9,7 @@
 .review-walk-shell .review-limit{padding:.8rem 1rem;border-left:6px solid #d18b00;background:#fff3cf}
 .review-walk-shell .review-controls{display:flex;justify-content:space-between;gap:1rem;margin-top:1rem}
 .review-walk-shell button{font:inherit;font-weight:700;padding:.6rem 1rem;border:0;border-radius:.4rem;background:#075a51;color:#fff}
-.review-walk-shell button:disabled{background:#79827f}
+.review-walk-shell button:disabled{background:#5c6663}
 .review-walk-shell .review-live{display:inline-block;padding:.25rem .6rem;background:#172532;color:#fff}
 .review-walk-shell .review-boundary{padding:1rem;border-left:8px solid #b64235;background:#fff4ed;overflow-wrap:anywhere}
 .js .review-walk-shell .review-step[hidden]{display:none}
@@ -19,7 +19,7 @@
 
 .jury-motion{margin:2rem 0;padding:clamp(1rem,3vw,2rem);border:3px solid #18313f;border-radius:1rem;background:linear-gradient(145deg,#102632,#18313f 58%,#224655);color:#f7f4e9;box-shadow:0 18px 45px #07161e35}
 .jury-motion h2{max-width:22ch;color:#fff}
-.jury-motion .tag{color:#f1c164;letter-spacing:.08em;font-weight:800}
+.jury-motion .tag{color:#8a5a00;letter-spacing:.08em;font-weight:800}
 .jury-motion a{color:#fff0b9}
 .jury-motion .motion-track{position:relative;height:8.5rem;margin:1.5rem 0;border:1px solid #ffffff24;border-radius:.75rem;background:repeating-linear-gradient(90deg,#ffffff08 0,#ffffff08 1px,transparent 1px,transparent 8%);overflow:hidden}
 .jury-motion .civic-rail,.jury-motion .proof-rail,.jury-motion .failure-spur{position:absolute;left:4%;right:4%;border-radius:999px}
