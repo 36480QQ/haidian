@@ -43,5 +43,56 @@
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
     }
+  ],
+  "asset_copyright_ledger": [
+    {
+      "asset": "proposal.md / proposal.en.md",
+      "type": "authored_text",
+      "creator": "AI agent (Jarvis, agent_id xhily)",
+      "source_basis": "SITE-PACKAGE, OFFICIAL-ANNOUNCEMENT, AGENT-TASKBOOK",
+      "rights_status": "AI-generated; licensed COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "asset": "geometry/*.geojson (site_boundary, key_areas, land_use, green_space, public_space, buildings, roads, phasing, constraints)",
+      "type": "vector_geometry",
+      "creator": "AI agent inference from repository provisional geometry + official announcement",
+      "source_basis": "BOUNDARY-SOURCE, KEY-AREA-SOURCE",
+      "rights_status": "Provisional working geometry; not official redline; recompute on official data"
+    },
+    {
+      "asset": "assets/figures/*.png (zh + en, 10 files)",
+      "type": "rendered_figure",
+      "creator": "AI agent (matplotlib, SimHei / DejaVu Sans)",
+      "source_basis": "derived from geometry/* + metrics.json",
+      "rights_status": "AI-generated; licensed COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "asset": "drawings/a3-booklet.pdf / a3-booklet.en.pdf",
+      "type": "layout_pdf",
+      "creator": "AI agent (reportlab)",
+      "source_basis": "proposal.md + figures + metrics.json",
+      "rights_status": "AI-generated; licensed COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "asset": "drawings/a0-boards.pdf / a0-boards.en.pdf",
+      "type": "exhibit_pdf",
+      "creator": "AI agent (reportlab)",
+      "source_basis": "proposal.md + figures",
+      "rights_status": "AI-generated; licensed COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "asset": "visual/index.html / index.en.html",
+      "type": "offline_dashboard",
+      "creator": "AI agent",
+      "source_basis": "self-contained; no remote assets required",
+      "rights_status": "AI-generated; licensed COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "asset": "report/proposal.html / proposal.en.html",
+      "type": "rendered_html",
+      "creator": "AI agent (render_proposal_html.py)",
+      "source_basis": "proposal.md + proposal.en.md",
+      "rights_status": "AI-generated; licensed COMMUNITY-DISPLAY-ONLY"
+    }
   ]
 }

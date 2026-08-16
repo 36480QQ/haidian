@@ -6,170 +6,256 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Formal AI urban-design package generated against the maintainer-registered provisional boundary and structured self-check requirements; precision caveats and recalculation obligations are retained, but the organizer data gap does not block content scoring."
+summary: "A formal AI urban-design package generated from a provisional boundary and the structured self-check requirements; precision caveats and recomputation rules are preserved, and the organizer's data gaps do not block content scoring. This revision addresses the seven-dimension professional review by completing agent.1–agent.6 deliverables, accessibility and inclusion, JZ renewal-project-to-GeoJSON feature_id binding, real global case studies, and a three-tier metric taxonomy."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # Centennial Jing-Zhang AI Innovation Belt: From Railway Heritage to an AI-Native Living Corridor
 
+> Every spatial recommendation in this proposal is framed as a "concept proposal," "reference scheme," or "material for professional teams to deepen." All outputs are open co-creation suggestions; they do not replace formal planning and do not constitute government-approved conclusions [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK].
+
 ## Design Basis and Source List
 
-This formal proposal takes as its primary basis the pre-qualification announcement for the International Design Competition of the Centennial Jing-Zhang AI Innovation Belt, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, and uses the maintainer-registered provisional boundary, key areas, enums, metrics and source lists under `brief/site-package/` as machine-readable evidence. Before generating the scheme, the AI agent must read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json` and `data/processed/agent_fact_pack.md`, and use `project_scope_summary.csv`, `agent_task_requirements.csv`, `source_use_matrix.csv` and `missing_data_checklist.csv` to build the task, scope, source-use and gap inventories. Every design judgement is decomposed into traceable sources, recalculable metrics, verifiable layers and human-reviewable assumptions. The announcement requires urban-design depth at the regulatory-plan level and at the planning-implementation scheme level, so narrative alone cannot replace GeoJSON, the metrics table, the A3 booklet, the A0 boards and the HTML deliverables.
+This formal proposal takes the Pre-Qualification Announcement for the International Urban Design Competition of the Centennial Jing-Zhang AI Innovation Belt, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its primary basis, and uses the maintainer-registered provisional rough boundary, key areas, enumerations, metrics, and source inventory under `brief/site-package/` as machine-readable evidence [source:OFFICIAL-ANNOUNCEMENT]. Before generation we read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json`, and `data/processed/agent_fact_pack.md`, and used `project_scope_summary.csv`, `agent_task_requirements.csv`, `source_use_matrix.csv`, and `missing_data_checklist.csv` to build the task–scope–source-use–gap inventory.
 
-The proposal is not an isolated vision text; it is organized from the announcement, the agent open-call taskbook and the site package. This section places only the most critical evidence beside the judgement [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]. Full source and standard coverage is kept in `sources.json`, `standard_matrix.json` and `design_depth_matrix.json`.
+Source-use boundaries [source:SOURCE-REGISTRY]:
+- `data/source_registry.json` separates sources into formal-ready, background-only, provisional-only, and needs-review.
+- Current registry summary: 7 formal-ready sources, 1 background-only, 1 provisional-only.
+- The agent must not upgrade background-only or provisional-only material into an official boundary, statutory control plan, formal scoring evidence, or government implementation commitment.
 
-The data registry governs the use boundary of public, cleared and provisional material. The agent must not promote background-only or provisional-only material to official boundary, statutory regulatory plan, formal scoring basis or government implementation commitment.
+`data/processed/agent_fact_pack.md` is a navigation layer, not a new authority [source:PROCESSED-FACT-PACK]; factual judgments return to the registered primary material, and the full source relationships are kept in `sources.json`.
 
-`data/processed/agent_fact_pack.md` is a reading-navigation layer, not a new authoritative source [source:PROCESSED-FACT-PACK]. Factual judgements still return to the registered raw materials [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK].
+![Source evidence chain and submission-package relationship](assets/figures/site-overview.png)
 
-![Evidence chain and submission package](assets/figures/site-overview.png)
+### 1.1 Provisional Boundary Discipline and Recomputation Convention
 
-Where the official `SITE_BOUNDARY` or three `KEY_AREA` polygons are not yet available, this package uses `brief/site-package/geometry/provisional_boundaries.geojson` to generate a provisional formal package. Both `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` must be flagged `provisional_constraint`, `official_boundary=false`, usable only for generation, self-check, visualization and discussion, not as official redline, approval basis, precise-area basis or statutory control conclusion. This organizer data gap does not block content scoring; once official polygons are supplied, site boundary, key areas, land use, roads, green space, public space, buildings, phasing and metrics must all be recalculated.
+The official `SITE_BOUNDARY` and the three `KEY_AREA` polygons are not yet available; this package uses `brief/site-package/geometry/provisional_boundaries.geojson` to generate a provisional formal package. `geometry/site_boundary.geojson` (`PROV-SITE-001`) and `geometry/key_areas.geojson` (`PROV-KEY-001/002/003`) are both marked `provisional_constraint`, `official_boundary=false`, and may be used only for generation, self-check, visualization, and design discussion — never as an official redline, approval basis, precise-area basis, or statutory control conclusion [data:geometry/site_boundary.geojson#PROV-SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
 
-The scorable state of this scaffold is: provisional boundary, with precision caveats retained and recalculation pending official data; content scoring is not blocked. Spatial structure, scenarios, projects and metrics are therefore written as discussable, reviewable and replaceable after official boundaries; once official boundaries and key-area polygons are updated, the agent must re-run the scaffold, the self-check and the drawing/HTML generation, not merely replace a single file.
-
-Boundary interpretation returns to the overall scope layer and area recalculation [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]. The three key areas are checked against an independent layer and a count metric [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count].
+The scorable status is: **provisional boundary, precision caveats retained, full recomputation pending official data; the organizer's data gap does not block content scoring**. Once official boundaries and key-area polygons are updated, the agent must re-run the scaffold, self-check, and figure/HTML generation — not merely swap a single file. Every conclusion constrained by the provisional boundary is labeled "pending official-data recomputation" in the text.
 
 ## Three-Level Scope Framework
 
-The scheme follows the three tiers defined by the announcement: the coordinated research scope (43.6 km²) addresses the AI industry ecosystem, strategic positioning, innovation chain and future urban form; the overall design scope (11.4 km²) around the Jing-Zhang heritage park addresses the urban-renewal framework, industry spatial layout, transport/municipal support and urban-character control; the key-area scope (368.4 ha across three sites) requires explicit function, building scale, retain-renovate-demolish classification, public-space connectivity and transport organization. The three tiers are mapped task-by-task in `compliance_matrix.json` so that every required announcement task (1.3, 1.4, 1.5) and agent task (agent.1–agent.6) has a section, layer, metric, drawing and HTML evidence.
+The proposal organizes work along the three levels set by the announcement: the **coordination-research scope** (43.6 km²) addresses the AI industry ecosystem, strategic positioning, innovation chain, and future-city form; the **overall-design scope** (11.4 km²) around the Jing-Zhang Heritage Park (1–2 km) requires an urban-renewal framework, industry-space layout, transport/municipal support, and urban-character control; the **key-area scope** (368.4 ha) requires functional programming, building scale, retain/renovate/demolish classification, public-space connectivity, and transport organization [source:OFFICIAL-ANNOUNCEMENT].
 
-The depth items of the three-level framework are constrained by [depth:three_level_scope_framework] and [depth:overall_spatial_structure]; spatial evidence follows [data:geometry/site_boundary.geojson#SITE-001] and [data:geometry/key_areas.geojson#PROV-KEY-001]; task basis follows [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]; scope index follows `project_scope_summary.csv` in [source:PROCESSED-FACT-PACK].
+The three levels are not disjoint drawing sets: coordination research sets the industry-chain and city-form judgments, overall design turns them into renewal projects, spatial structure, and facility capacity, and key-area detailed design validates specific parcels, buildings, transport, public space, and AI application scenarios [depth:three_level_scope_framework].
+
+The proposed overarching concept is the **"Jing-Zhang Symbiotic AI Corridor"**, using the Jing-Zhang Heritage Park as the historical and public-space spine, the three key areas (Zhongzhiyuan, Beijing AI Origin Community, Dazhongsi) as innovation anchors, and universities, enterprises, communities, and rail stations as the daily network, forming a "one belt, three cores, multiple scenarios, and a blue-green slow-mobility composite ring" [data:geometry/key_areas.geojson#PROV-KEY-001].
+
+| Level | Design question | Proposal answer | Data anchor |
+| --- | --- | --- | --- |
+| Coordination-research | How to organize the AI ecosystem and future-city form | Build an innovation chain of "university origination — open-source collaboration — enterprise translation — public experience — international dissemination" | compliance_matrix.json, agent.2 cases |
+| Overall-design | How industry space, renewal, transport, municipal, and character land on maps | Land-use, buildings, roads, green, public-space, and phasing layers express it together | [data:geometry/land_use.geojson#LU-00-01], [data:geometry/roads.geojson#ROAD-SPINE] |
+| Key-area | How the three areas reach detailed-design depth | Each gets positioning, spatial moves, AI scenarios, and implementation dependencies | [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003] |
 
 ![Three-level scope and spatial framework](assets/figures/land-use-structure.png)
 
-The three levels are not separate drawing sets. Coordinated research decides the innovation-chain and city-form judgement; overall design lands it in renewal projects, spatial structure and facility capacity; key-area detailed design validates concrete parcels, buildings, transport, public space and AI scenarios. The agent must first lock the official or provisional boundary and constraints adopted by this submission, then generate land use, buildings, roads, green space, public space, phasing and AI service nodes, and finally recalculate metrics from those layers and explain in the text which conclusions remain limited by the provisional boundary. Any area, ratio, scale or project count that cannot be recalculated from structured data must not be written as a formal conclusion.
-
-The proposed overall concept is "Jing-Zhang Intelligent-Pulse Symbiosis Belt": the Jing-Zhang heritage park as the historical and public-space main axis, the three key areas (Zhongzhiyuan, Beijing AI Origin, Dazhongsi) as innovation anchors, and universities, enterprises, communities and rail stations as the everyday network, forming a spatial organization of "one belt, three cores, multiple scenario nodes, blue-green slow-traffic composite ring". The "belt" is not a newly drawn redline but a translation of the three tiers into a working method; the "three cores" map to the three key areas; "multiple scenario nodes" map to operable nodes of AI+ public services, enterprise services and urban life; the "composite ring" links slow traffic, green space, public space and activity routes.
-
 ## Coordinated Research Area: Industry and Future City Research
 
-The core task of the coordinated research scope is to build a world-class AI innovation ecosystem. The scheme reviews Haidian universities and institutes, leading enterprises, compute/algorithm/data factors, incubation platforms, listed companies, unicorns and technology-service resources, and proposes a spatial collaboration framework for the AI innovation chain, industry chain, talent chain and city-service chain. Naming and logo design must serve the overall identity of "Centennial Jing-Zhang Culture Belt, Urban AI Living-Experience Belt, AI Fusion-Innovation Belt", not remain a slogan; they must explain their link to the industry ecosystem, public space and cultural resources. The agent open-call taskbook also requires a response to the "five major functions" and "three zones, two wings" coordination, forming a nameable system, visual identity, overall spatial-structure diagram, scenario opening and operation mechanism; this section must mark, with [source:AGENT-TASKBOOK] and [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], that these requirements come from the agent open call, not from statutory planning control.
+### 3.1 Overarching Concept and Naming System (responds to agent.1)
 
-Coordinated research adds no pseudo-precise redlines; through the urban character, public space and building-layout coordination required by [standard:MOHURD-URBAN-DESIGN-MEASURES], it reconnects to [data:geometry/land_use.geojson#LU-001], [data:geometry/public_space.geojson#PUBLIC-001] and [depth:overall_spatial_structure], showing that industry strategy ultimately lands in visible, reviewable spatial structure.
+"Jing-Zhang Symbiotic AI Corridor" is a working method spanning the three levels, not a new redline. The naming system has three tiers:
+- **Primary name**: 京张智脉共生带 (ZH) / Jing-Zhang Symbiotic AI Corridor (EN);
+- **Sub-identity**: Centennial Jing-Zhang Culture Belt · Urban AI Living-Experience Belt · AI Fusion Innovation Belt (the three positionings) [source:AGENT-TASKBOOK];
+- **Node names**: the three key areas keep the taskbook's internal identifiers `zhongzhiyuan_ai_acceleration_area`, `beijing_ai_origin_community`, `dazhongsi_ai_industry_cluster`, avoiding unauthorized renaming.
 
-This proposal responds task-by-task to the six agent open-call deliverables agent.1–agent.6: agent.1 proposes the overall belt concept "Jing-Zhang Intelligent-Pulse Symbiosis Belt" with a naming, logo and positioning system (one belt, three cores, multiple scenario nodes, composite ring); agent.2 builds an AI full-stack autonomous-innovation ecosystem with six ecosystem-collaboration cases (university origination, open-source collaboration, enterprise translation, public experience, international standards, talent zone); agent.3 forms ten AI+ scenario cards, three industry test-validation scenarios and five talent personas; agent.4 designs four AI pilgrimage landmarks (Tsinghua-Yuan station heritage landmark, Jing-Zhang heritage-park slow-traffic landmark, Dazhongsi international roadshow lounge, Zhongzhiyuan standards-governance showroom); agent.5 fuses Centennial Jing-Zhang, Zhongguancun and AI-new-culture into a narrative system and wayfinding symbols; agent.6 proposes a Global AI Innovation Week and a long-term operation framework. All deliverables are written into the text, HTML, A3/A0 and compliance matrix, expressed as conceptual proposals / reference schemes, never as confirmed government arrangements [source:AGENT-TASKBOOK]. Naming and visual identity serve the overall identity of the three belts and link to the industry ecosystem, public space and cultural resources rather than standing alone as slogans.
+**Visual identity and Logo direction (conceptual, not final)**: the "rail — pulse — node" motif translates the linear railway heritage into a "smart vein" curve threading stations and blocks; a low-saturation industrial grey-blue (heritage) and signal cyan (AI) form an extensible identity, wayfinding, and event visual language. All fonts, icons, images, and enterprise marks must be rights-cleared; unauthorized trademarks or portraits are forbidden [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-Future-city-form research must answer how AI changes work, life, socializing, learning, transport and public services. The scheme lands AI transport systems, continuous green space, innovation-service facilities and an international living-working atmosphere as locatable function zones, nodes, corridors and scenarios, not vague technological vision. The agent writes industry-strategy metrics, AI innovation index, talent density, spatial-supply types and AI+ vertical-application focus zones into the metrics system, marking which are official, which are design suggestions, and which still await formal-data calibration. Global AI innovation events, developer communities, open scenarios or pilgrimage routes, if proposed, are written as "conceptual proposal / reference scheme / for professional teams to deepen", never as confirmed government activities or implementation arrangements.
+**Territorial-spatial-planning innovation**: the proposal treats "integrated planning" as putting industry strategy, spatial supply, facility capacity, and operating mechanisms into one recomputable layer system rather than disjoint text. Land-use, buildings, roads, green, public space, and phasing all derive from the same `PROV-SITE-001` boundary, enabling professional teams to recompute the whole after swapping in official boundaries [depth:overall_spatial_structure].
+
+### 3.2 Three-Area Two-Wing Synergy Loop (responds to agent.1)
+
+The taskbook's "three areas, two wings" is the spatial backbone. This proposal gives its synergy loop, emphasizing factor flows among "areas — service wing — scenario wing" [source:AGENT-TASKBOOK]:
+
+| Unit | Role | Synergy partner | Synergy loop |
+| --- | --- | --- | --- |
+| Zhongzhiyuan AI Acceleration Area (PROV-KEY-001) | Full-stack autonomy & governance voice | Zhongguancun tech-service wing | Autonomous models/standards → Zhongguancun IP & capital → Origin Community incubation |
+| Beijing AI Origin Community (PROV-KEY-002) | World-class AI innovation ecosystem | Xiaoyuehe scenario-empowerment wing | University origination → near-campus incubation → Xiaoyuehe public-experience path |
+| Dazhongsi AI Industry Cluster (PROV-KEY-003) | AI-native new formats | Zhongguancun tech-service wing | Leading enterprises/smart terminals → international roadshow → talent & capital回流 |
+| Zhongguancun Tech-Service Wing | Global factor allocation, IP & capital | Three areas | Cross-area scheduling of capital/compute/data factors |
+| Xiaoyuehe Scenario-Empowerment Wing | AI scenario empowerment & living city | Three areas | Scenario open-days/public experience linking the three areas |
+
+### 3.3 Global AI Innovation Ecosystem Cases (responds to agent.2, 5–8 real public cases)
+
+The following are publicly documented city- or nation-scale AI ecosystem practices, used to extract transferable mechanisms — **not investment or fiscal commitments of this project** [source:AGENT-TASKBOOK]:
+
+| Case | Location | Publicly documented mechanism | Transferable to this belt | Source nature |
+| --- | --- | --- | --- | --- |
+| Vector Institute & MaRS | Toronto, Canada | Academic–industry joint institute + innovation district | Short "research → incubation" loop from university origination to enterprise translation | Public reports / institute sites |
+| Mila (Quebec AI Institute) | Montreal, Canada | Academic cluster + open-source & LLM ecosystem | Open-source collaboration and talent-special-zone organization | Public reports / institute sites |
+| AI Singapore (National AI Strategy) | Singapore | "100 Experiments" government–enterprise AI deployment | "Scenario opening + co-built trials" to lever industry services | Government public strategy |
+| Helsinki AI Register & City AI Strategy | Helsinki, Finland | Public-sector AI registry & transparency | Auditable, trustworthy governance of city-scale AI | City government public docs |
+| Station F & Lab Ose | Paris, France | Large startup campus + public AI experiments | International roadshow and developer-community operating space | Public reports / institute sites |
+| Shenzhen Nanshan–Guangming AI Cluster | Shenzhen, China | Hardware–AI integration & supply-chain support | Industry-space organization for smart terminals & edge compute | Public reports / government info |
+| Amsterdam Responsible AI & City AI Center | Amsterdam, NL | Responsible-AI civic pilots | Ethical and human-review boundaries for public-space AI | City government public docs |
+| Seoul AI Hub & Digital City | Seoul, Korea | City-scale AI service platform | Public-experience and citizen-service scenario continuity | Government public strategy |
+
+> Note: cases are for mechanism reference only; no investment, output, or enterprise lists are cited, and no industry recruitment, funding, or policy arrangement is presented as decided [source:AGENT-TASKBOOK].
+
+### 3.4 AI Ecosystem Map and Factor Safeguards (responds to agent.2)
+
+Factor safeguards are organized across eight categories — land, space, industry, capital, talent, compute, data, and scenarios. Land and space are carried by the overall-design land-use and building layers; industry by the three-area two-wing positioning; capital and talent by the Zhongguancun tech-service wing's international IP/capital and the Origin Community talent zone; compute by the edge-compute station prototype (to be deepened, not a decided facility); data on a compliance-authorization basis; scenarios by agent.3's cards and open-operation mechanism [depth:land_use_layout] [data:geometry/land_use.geojson#LU-00-01].
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-The overall design scope requires urban-design depth at the regulatory-plan level. The scheme must propose the urban-renewal overall spatial structure, low-efficiency-space identification, renewal-project list, implementation-policy suggestions, industry-function ratio, spatial-organization mode, total building scale and comprehensive carrying-capacity assessment. `geometry/land_use.geojson` must fully cover the design boundary with no overlap; `geometry/buildings.geojson` must express renewed or retained building footprints; `geometry/roads.geojson` must express micro-circulation, slow traffic and rail connection; `metrics.json` must recalculate core areas, ratios and layer counts.
+The overall-design scope must reach regulatory-detailed-plan urban-design depth: overall spatial structure, low-efficiency-space identification, renewal project list, implementation-policy suggestions, industry-function ratio, spatial organization, building total scale, and comprehensive carrying-capacity assessment [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
-This section decomposes the regulatory-plan-level content using [standard:MOHURD-CONTROL-DETAILED-PLANNING]: [data:geometry/land_use.geojson#LU-001] expresses land-use structure, [data:geometry/buildings.geojson#BLDG-001] expresses building footprints, [data:geometry/roads.geojson#ROAD-001] expresses transport organization, [metric:building_footprint_area_sqm] reviews building-footprint area, [depth:land_use_layout] and [depth:development_intensity_controls] constrain the result depth.
+- Land-use structure: `geometry/land_use.geojson` fully covers `PROV-SITE-001` with no gaps/overlaps (674 units, e.g. `LU-00-01`) [data:geometry/land_use.geojson#LU-00-01].
+- Building footprints: `geometry/buildings.geojson` (e.g. `BLD-00-01`) expresses renewal/retained footprints [data:geometry/buildings.geojson#BLD-00-01].
+- Transport: `geometry/roads.geojson` (`ROAD-SPINE` heritage-park spine, `ROAD-TC` Dazhongsi, `ROAD-GW` North 5th Ring, `ROAD-H1/H2` connectors) expresses micro-circulation and rail interface [data:geometry/roads.geojson#ROAD-SPINE].
+- Metric recomputation: `metrics.json` recomputes core areas, ratios, and layer counts [metric:site_area_sqm].
 
-Overall design must also support transport, rail, municipal and public-service facilities. The scheme proposes spatial layout and implementation paths for rail-station integration, road micro-circulation, non-motorized parking, parking supply, innovation-service platforms, talent living services, new infrastructure, distributed energy and edge compute. Where building height, development intensity, road redline, setback and facility standards lack official conditions, they are written as "pending formal regulatory-plan conditions", never as agent-inferred values masquerading as approved metrics.
+Where official control conditions for building height, intensity, road redlines, setbacks, or facility standards are absent, they are uniformly stated as "pending official regulatory-plan conditions" and never presented as approved figures from agent estimates [depth:development_intensity_controls].
 
 ## Detailed Design of Key Areas
 
-Key-area detailed design is mandatory. The Zhongzhiyuan AI autonomous-innovation acceleration area centers on the national AI platform, full-stack autonomous innovation, standards, safety governance, industry showcase, external transport, Qinghe culture, low-carbon green innovation interaction and green-space AI scenarios. The Beijing AI Origin community centers on near-campus innovation, achievement incubation and translation, talent zone, open-source system, brand events, building retain-renovate-demolish, achievement showcase and release, living amenities, campus-park slow-traffic linkage and rail-station integration. The Dazhongsi AI industry cluster centers on leading enterprises, agents, intelligent terminals, content consumption, data factors, digital assets, commercial services, planned-green-space composite use, Dazhongsi-station integration and four-quadrant pedestrian connectivity.
+The three key-area detailed designs are mandatory and expressed in `geometry/key_areas.geojson` as `PROV-KEY-001/002/003` [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003].
 
-The three key areas must be referenced by [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003], and checked by [depth:three_key_area_detailed_design] for planning-implementation-scheme depth. Describing only "build a demonstration zone" without function, building, transport, public-space and implementation evidence is treated as incomplete.
+![Three key areas index and design-task map](assets/figures/key-areas.png)
 
-![Key-area index and design tasks](assets/figures/key-areas.png)
-
-The three key areas must appear in `geometry/key_areas.geojson`. If the repository provides official polygons, use them as `official_constraint`; if not, use `provisional_constraint`, but the text, HTML, sources, assumptions and self-check must state it cannot be an official scoring or approval basis. `compliance_matrix.json` covers announcement tasks 1.5.3.1, 1.5.3.2, 1.5.3.3. Design expression should include function, building scale, building form, retain-renovate-demolish classification, public-space system, transport organization, slow-traffic connectivity and implementation projects. The HTML must switch among the three key areas; the A3 booklet and A0 boards must include at least key-area master plans, detail drawings and metric notes.
-
-| Key area | Positioning | Spatial move | AI industry & operation scenario | Evidence |
+| Key area | Positioning | Spatial move (concept) | AI industry & operation scenarios | Evidence |
 | --- | --- | --- | --- | --- |
-| Zhongzhiyuan AI autonomous-innovation acceleration area | Garden-type full-stack autonomous-innovation block | Strengthen Qinghe frontage, industry showcase, low-carbon innovation interaction, external transport; use green space for open testing and standards-governance showcase | Autonomous-model testing, standards workshops, safety-governance showcase, low-carbon compute experience | [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design] |
-| Beijing AI Origin community | Near-campus achievement-translation and talent community | Stitch campus-park-district slow traffic; add release, talent-service, living and open-source collaboration space | Open-source community, achievement release, talent-zone service, near-campus incubation | [data:geometry/key_areas.geojson#PROV-KEY-002] [source:AGENT-TASKBOOK] |
-| Dazhongsi AI industry cluster | Urban intelligent-economy and international-exchange block | Dazhongsi-station integration, four-quadrant pedestrian connectivity, commercial service and key-enterprise public-environment renewal | Agent and intelligent-terminal showcase, content consumption, data factors and international roadshow | [data:geometry/key_areas.geojson#PROV-KEY-003] [metric:key_area_count] |
+| Zhongzhiyuan AI Acceleration Area (PROV-KEY-001) | Garden-type full-stack autonomy block | Strengthen Qinghe interface, low-carbon innovation exchange, external transport; use green space for open testing and standards-governance display | Autonomous-model testbed, standards workshops, safety-governance display, low-carbon compute experience | [data:geometry/key_areas.geojson#PROV-KEY-001], [depth:three_key_area_detailed_design] |
+| Beijing AI Origin Community (PROV-KEY-002) | Near-campus translation & talent community | Campus–park–block slow-mobility stitching; add release, talent, living, and open-source collaboration space | Open-source community, result release, talent-zone services, near-campus incubation | [data:geometry/key_areas.geojson#PROV-KEY-002], [source:AGENT-TASKBOOK] |
+| Dazhongsi AI Industry Cluster (PROV-KEY-003) | Urban smart-economy & international-exchange block | Dazhongsi-station integration, four-quadrant walk connectivity, commercial service and key-enterprise public-environment renewal | Agent & smart-terminal display, content consumption, data factors & international roadshow | [data:geometry/key_areas.geojson#PROV-KEY-003], [metric:key_area_count] |
+
+Each area includes functional programming, building scale (design suggestion, pending regulatory plan), building form, retain/renovate/demolish classification (pending ownership and existing conditions), public-space system, transport organization, slow-mobility connectivity, and implementation projects, switchable in the A3/A0 and HTML [depth:retain_renovate_demolish].
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-The scheme builds spatial-demand personas for AI talent and enterprises, covering R&D office, open-source collaboration, achievement release, enterprise service, talent housing, social learning, consumption, sports and international exchange. AI+ scenarios follow the announcement directions (transport, service, consumption, health, education, law, living service), forming industry-development scenarios and AI-enabled city-function scenarios. Each scenario states service object, spatial location, data source, privacy boundary, human-review mechanism and operating entity.
+### 6.1 User Personas (≥5)
 
-AI scenarios must land in spatial and governance boundaries: public-space scenarios reference [data:geometry/public_space.geojson#PUBLIC-001], slow-traffic and transport scenarios reference [data:geometry/roads.geojson#ROAD-001], open-space scenarios reference [data:geometry/green_space.geojson#GREEN-001] and [metric:public_space_ratio], [metric:green_ratio]. These references tell reviewers the scenarios are not slogans but design objects located in specific layers and metrics. The agent open-call taskbook requires at least ten AI scenario cards, at least three industry test-validation scenarios and at least five user personas; this package writes the scenario cards, persona table, privacy boundaries, human review and operating entities into the text, HTML, A3/A0 and compliance matrix.
-
-| Persona | Typical need | Spatial response | Self-check boundary |
+| Persona | Typical needs | Spatial response | Self-check boundary |
 | --- | --- | --- | --- |
-| Open-source developer | Release, collaborate, test, community reputation | Origin-community release hall, public code wall, night collaboration space | No personal trajectory collection; activity data aggregated only |
-| Startup team | Low-cost office, compute entry, product testbed | Zhongzhiyuan shared test field, edge-compute service point, standards-governance consult | Compute and data services need separate authorization |
-| Leading-enterprise visitor | Showcase, business, international reception, recruitment | Dazhongsi international roadshow lounge, rail-station connection, key-enterprise public space | Enterprise logos and cases must be cleared |
-| Nearby resident | Commute, leisure, community service, low-disturbance renewal | Jing-Zhang heritage-park slow-traffic ring, embedded community service, graded night lighting and events | No resident persona used for commercial recommendation |
-| University student/teacher | Achievement translation, cross-campus collaboration, daily slow traffic | Campus-park slow-traffic stitch, translation station, AI-education experience point | Campus data and research results need authorization |
+| Open-source developer | Release, collaborate, test, community reputation | Origin Community open-release hall, public code wall, night collaboration space | No individual trajectory; activity data aggregated only |
+| Startup team | Low-cost office, compute access, product testbed | Zhongzhiyuan shared test field, edge-compute service point, standards consulting | Compute/data services need separate authorization |
+| Leading-enterprise visitor | Showcase, business, international reception, recruitment | Dazhongsi international roadshow lounge, rail interface, enterprise public space | Enterprise marks/cases must be rights-cleared |
+| Nearby resident | Commute, leisure, community service, low-disturbance renewal | Heritage-park slow ring, community embedding, graded night lighting | No resident profiling for commercial recommendation |
+| University faculty/student | Translation, cross-campus collaboration, daily slow mobility | Campus–park stitching, translation station, AI-education point | Campus data and research need authorization |
 
-| Scenario card | Spatial carrier | Design note |
-| --- | --- | --- |
-| 01 Open-source release hall | Beijing AI Origin community | For universities, open-source communities and startups: achievement release, code-contribution showcase, small roadshow |
-| 02 Safety-governance sandbox | Zhongzhiyuan | Translate standards, safety evaluation, model red-team testing into visitable, bookable, supervised showcase and collaboration nodes |
-| 03 Edge-compute station | Overall-design-scope nodes | Combined with public, enterprise and low-carbon-energy strategy as a new-infrastructure prototype for deepening |
-| 04 AI slow-traffic navigation | Jing-Zhang heritage-park vitality belt | Explainable wayfinding and low-intrusion sensing to find slow-traffic breakpoints, crowding nodes and accessibility needs |
-| 05 Dazhongsi international roadshow lounge | Dazhongsi AI industry cluster | Showcase, negotiation, media release and international exchange for agents, intelligent terminals and content-consumption enterprises |
-| 06 Qinghe low-carbon innovation corridor | Zhongzhiyuan Qinghe frontage | Combine green space, storm-water, walking-cycling and AI showcase as a park public living-room |
-| 07 Near-campus achievement-translation street | Beijing AI Origin community | For university achievement translation: incubation, showcase, legal, IP and investment-finance services |
-| 08 Data-factor lounge | Dazhongsi area | Compliant, authorized, auditable urban-service interface showing data-factor and digital-asset circulation |
-| 09 AI living-service model street | Community-commercial interface | Land medical, education, law, living-service AI+ scenarios in operable small-scale block space |
-| 10 Global AI event-week route | Belt public-space system | Walkable, communicable experience route from heritage culture, open-source community, industry showcase to international roadshow |
+### 6.2 Ten AI Scenario Cards (responds to agent.3, ≥10)
 
-Agent-generated AI-governance suggestions must follow data-minimization, open-source, explainability and human-review principles. City agents may assist in identifying slow-traffic breakpoints, public-space heat, facility maintenance, enterprise-service demand and event-safety risk, but cannot replace planning approval, cannot output unauthorized personal personas, and cannot claim official implementation commitment. All AI scenario nodes should enter structured layers or the compliance matrix so reviewers see their relation to industry, space and public interest.
+Each card carries: target, spatial carrier, data source, privacy boundary, human review, operator, and KPI.
+
+| # | Scenario | Carrier | Target/Data/Privacy/Review/Operator/KPI |
+| --- | --- | --- | --- |
+| 01 Open-Release Hall | Release & collaboration | Origin Community (PROV-KEY-002) | Target: developers; Data: public contribution records; Privacy: aggregated only; Review: community self-governance + human arbitration; Operator: open-source foundation (concept); KPI: monthly releases, collaboration PRs |
+| 02 Safety-Governance Sandbox | Model red-teaming & standards eval | Zhongzhiyuan (PROV-KEY-001) | Target: model teams; Data: desensitized test sets; Privacy: isolated env; Review: expert committee; Operator: standards alliance (concept); KPI: eval coverage, red-team findings |
+| 03 Edge-Compute Station | New-infra prototype | Overall-design nodes | Target: startups/residents; Data: usage stats; Privacy: no content capture; Review: ops human; Operator: third-party (TBD); KPI: served visits, availability |
+| 04 AI Slow-Mobility Navigation | Gap identification | Heritage-park spine (ROAD-SPINE) | Target: all-age travelers; Data: anonymous heat; Privacy: edge, no retention; Review: planner sampling; Operator: municipality (concept); KPI: gaps found, accessibility rate |
+| 05 Dazhongsi International Roadshow Lounge | Showcase & exchange | Dazhongsi (PROV-KEY-003) | Target: enterprises/visitors; Data: event sign-up (authorized); Privacy: minimal real-name; Review: human audit; Operator: operating co. (concept); KPI: sessions, negotiation conversion |
+| 06 Qinghe Low-Carbon Innovation Corridor | Green + AI display | Zhongzhiyuan Qinghe interface (GRN-00-00) | Target: public; Data: environmental sensing; Privacy: zone-level; Review: human check; Operator: park (concept); KPI: carbon-monitoring points, participation |
+| 07 Near-Campus Translation Street | Incubation–legal–VC | Origin Community (PROV-KEY-002) | Target: faculty/startups; Data: result registry (authorized); Privacy: desensitized; Review: human; Operator: university TTO (concept); KPI: landed projects |
+| 08 Data-Factor Reception Lounge | Compliant data circulation | Dazhongsi (PROV-KEY-003) | Target: enterprises; Data: authorized catalog; Privacy: auditable; Review: compliance officer; Operator: data exchange (concept); KPI: compliant circulation volume |
+| 09 AI Living-Service Model Street | Medical/edu/legal/life | Community–commercial interface | Target: residents; Data: authorized services; Privacy: minimized; Review: human; Operator: service provider (TBD); KPI: coverage, satisfaction |
+| 10 Global AI Event-Week Route | Walkable experience | Belt public-space system (PHASE-1) | Target: public/visitors; Data: footfall stats; Privacy: aggregated; Review: human; Operator: event office (concept); KPI: participation, dissemination |
+
+### 6.3 Three Industry Test-Validation Scenarios (responds to agent.3, ≥3, distinct from operation)
+
+Test-validation scenarios are evaluable, terminable experiments, explicitly "tests" not "approved operations" [source:AGENT-TASKBOOK]:
+1. **T1 Autonomous-Model Open Testbed (Zhongzhiyuan PROV-KEY-001)**: red-team and safety evaluation of autonomous LLMs in an isolated environment; 6-month term; methodology published afterward; no personal data retained.
+2. **T2 Slow-Mobility Gap & Accessibility AI Validation (Heritage Park ROAD-SPINE + PUB-03-01)**: computer vision identifies slow-mobility gaps and accessibility deficits; results human-sampled by planners for design advice; edge processing, no individual imagery retained.
+3. **T3 Open-Source Contribution & Reputation Validation (Origin Community PROV-KEY-002)**: aggregate community contribution and reputation from public repo metadata; aggregated statistics only, no individual trajectory; validates the "contribution memorable" mechanism's credibility.
+
+### 6.4 Scenario–Space–Operation Mapping and Privacy/Human-Review Boundary
+
+All scenarios land in structured layers or the compliance matrix so reviewers see their relationship to industry, space, and public interest. Governance principles: data minimization, public sources, explainability, human review. City agents may assist in identifying slow-mobility gaps, public-space heat, facility maintenance, and enterprise-service demand, but **cannot replace planning approval, cannot output unauthorized personal profiles, and cannot claim official implementation commitments** [depth:risk_missing_data].
+
+### 6.5 Accessibility and Inclusive Design (responds to public interest & inclusion)
+
+Inclusion is a hard constraint for public-space and scenario design, covering five groups [data:geometry/public_space.geojson#PUB-03-01]:
+
+| Group | Spatial response | AI support | Privacy/boundary |
+| --- | --- | --- | --- |
+| Older adults | Continuous accessible slow ring, rest nodes, large-type wayfinding | Voice guidance, fall-risk alert (zone-level) | No individual trajectory |
+| Children | Near-campus safe paths, play spaces | Crowding预警 (aggregated) | No face recognition |
+| Persons with disabilities | Accessible ramps, tactile guidance, low-height service | Navigation & booking aid | Data minimization |
+| Low-digital-literacy | Offline service desk, human-assist points, non-digital alternative | Human-review fallback, no forced digitalization | Non-digital channel retained |
+| Night-shift / night workers | Graded night lighting, night-reachable public space | Night-safety sensing (zone-level) | Anonymous aggregation |
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-Land use must follow public standards such as territorial spatial survey, planning and use-regulation classification, forming a complete, closed, seamless land-use partition. Building strategy distinguishes retained, renovated, renewed, new or to-be-confirmed objects, stating footprint, function, scale, character, roof, massing and height-control suggestion levels. Where current buildings, ownership, regulatory plan and engineering conditions are missing, the scheme can only propose method and a to-be-calibrated list, not fabricate retain-renovate-demolish conclusions.
+Land use follows territorial-survey and use-control classifications, forming a complete, gap-free, overlap-free partition [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. Buildings distinguish retained, renovated, renewed, new, or to-be-confirmed, with footprint, function, scale, character, and height-control suggestion tiers [depth:height_massing_character] [depth:retain_renovate_demolish].
 
-Land-use classification follows [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]; building height, massing, interface and character control are managed by [depth:height_massing_character]; retain-renovate-demolish method by [depth:retain_renovate_demolish]. Main evidence is [data:geometry/land_use.geojson#LU-001], [data:geometry/buildings.geojson#BLDG-001] and [metric:building_footprint_area_sqm].
-
-Building scale and intensity metrics must match `metrics.json` and the layers. Where total building scale, floor-area ratio, building height, building density, green ratio, setback and building-control line lack official conditions, uniformly use `status=unknown` with `reason` / `assumptions` stating pending conditions, current assumptions and recalculation path after official data, never fabricating precise values. The A3 booklet gives the renewal-project list and metric-review table; the A0 boards express key spatial structure and key areas; the HTML links metrics and layers.
+Building-scale and intensity metrics must match `metrics.json` and the layers. Where total building scale, FAR, building height, density, green ratio, or setbacks lack official conditions, they use `status=unknown` with the pending conditions and recomputation path recorded in `assumptions.json` [metric:building_footprint_area_sqm]. Building footprint area is 1,680,831.603 m² (0.147 of the overall scope, design suggestion pending regulatory plan), together with green ratio 0.158 and public-space ratio 0.175 in the metric table [metric:green_ratio] [metric:public_space_ratio].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-Transport must respond to the announcement requirements for rail-station integration, road micro-circulation, slow-traffic breakpoints, external transport, parking, non-motorized parking and green-transport systems. It must cover the North 5th Ring Road, the Jing-Zhang heritage-park cross-ring-node, Wudaokou, Qinghua-Donglu-Xikou, Dazhongsi station and key-enterprise transport links. Road and slow-traffic layers must stay within the submission boundary and cross-check with public space, green space, industry nodes and key areas; if the boundary is provisional, transport conclusions are provisional design discussion only.
+Transport responds to the announcement's requirements for rail-station integration, road micro-circulation, slow-mobility gaps, external transport, parking, non-motorized parking, and green transport, covering the North 5th Ring (`ROAD-GW`), the heritage-park cross-ring node, Wudaokou, Qinghua East Road West Exit, Dazhongsi Station (`ROAD-TC`), and key-enterprise surroundings [data:geometry/roads.geojson#ROAD-GW] [data:geometry/roads.geojson#ROAD-TC]. Road and slow-mobility layers stay within `PROV-SITE-001` and cross-check with public space, green, and industry nodes [depth:traffic_rail_slow_parking].
 
-Transport and municipal professional depth are constrained by [depth:traffic_rail_slow_parking] and [depth:municipal_new_infrastructure]; layer evidence references [data:geometry/roads.geojson#ROAD-001], [data:geometry/public_space.geojson#PUBLIC-001] and [data:geometry/constraints.geojson#CONSTRAINTS]. Where road redline, pipelines, fire and municipal conditions are missing, state them as pending in assumptions rather than write strategy as approved conditions.
+![Transport slow-mobility and blue-green public-space composite](assets/figures/mobility-bluegreen.png)
 
-![Slow-traffic and blue-green composite system](assets/figures/mobility-bluegreen.png)
-
-Municipal and public-service facilities must cover AI industry-service facilities, innovation-service platforms, talent living-service facilities, new infrastructure, distributed energy, edge compute and traditional municipal fusion. The scheme states facility standards, spatial layout, service radius, operation mode and phasing logic. Where pipeline, energy, drainage, flood, fire and other engineering data are missing, list them as formal-deepening prerequisites.
+Municipal and public-service facilities cover AI industry services, innovation platforms, talent living, new infrastructure, distributed energy, edge compute, and traditional municipal integration; missing pipeline, energy, drainage, flood, or fire engineering data are listed as formal deepening prerequisites [depth:municipal_new_infrastructure] [data:geometry/constraints.geojson#CONSTRAINT-RAIL].
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-The blue-green scheme takes the Jing-Zhang heritage-park vitality belt as the backbone, coordinates Qinghe, Xiaoyuehe, surrounding universities, enterprises and communities, and proposes a north-south connected, east-west linked system of trails, cycleways and green space. It identifies slow-traffic breakpoints, over-ring nodes, park south and north landscape nodes, and proposes parking, sports, innovation interaction, tech testing, application showcase and public-service composite-use strategy.
+### 9.1 Blue-Green Public Space (agent.4)
 
-Blue-green public space is cross-checked by the design-depth item and the green-space and public-space layers [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]. Green and public-space ratios are explained in the text for design meaning; full recalculation is in `metrics.json`; urban character, public space and building-control coordination return to the professional standard matrix [standard:MOHURD-URBAN-DESIGN-MEASURES].
+Using the Jing-Zhang Heritage Park spine (`ROAD-SPINE` + `GRN-00-00`) as the backbone, the proposal coordinates Qinghe, Xiaoyuehe, universities, enterprises, and community travel needs, proposing north–south and east–west connected trails, cycling paths, and green-space systems, and identifying slow-mobility gaps, cross-ring nodes, and landscape nodes [data:geometry/green_space.geojson#GRN-00-00] [data:geometry/public_space.geojson#PUB-03-01] [depth:blue_green_public_space].
 
-Four AI pilgrimage landmarks are designed: (1) Tsinghua-Yuan station railway-heritage landmark, reusing the historic station as an AI-heritage interface; (2) Jing-Zhang heritage-park slow-traffic landmark, a walkable spine connecting the three cores; (3) Dazhongsi international roadshow lounge, an intelligent-economy exchange living-room; (4) Zhongzhiyuan standards-governance showroom, a visitable standards and safety-governance exhibition. All are conceptual proposals / reference schemes, with cleared sources required for any brand, font, image, portrait or enterprise logo.
+**AI pilgrimage landmarks (≥3, responds to agent.4)**:
+1. Qinghuayuan Station railway-heritage landmark (adjacent to `CONSTRAINT-HERITAGE`) — turns the Jing-Zhang railway origin station into a public-memory node;
+2. Jing-Zhang Heritage Park slow-mobility landmark (ROAD-SPINE) — the experiential spine of linear heritage and AI public space;
+3. Dazhongsi International Roadshow Lounge (PROV-KEY-003) — a showcase window for AI-native consumption and international exchange;
+4. Zhongzhiyuan Standards-Governance Exhibition Hall (PROV-KEY-001) — a visitable node for AI safety and standards governance.
 
-Urban character fuses Jing-Zhang railway history, Zhongguancun innovation culture and AI innovation culture, using cultural resources such as the Tsinghua-Yuan station and Beijing Film Academy to propose urban tone, building character, roof form, massing, interface and public-art guidance. The agent also proposes wayfinding, cultural symbols, international-communication narrative, AI pilgrimage landmarks, contribution wall or honor system, but all brands, fonts, images, portraits and enterprise logos must have cleared sources. Character control distinguishes official control, design suggestion and to-be-confirmed condition; no pseudo-precise control lines without heritage or regulatory-plan basis.
+**Honor-display system and public-space component library (agent.4)**: a "contribution wall / honor node" records contributors, proposals, and knowledge assets (echoing charter.9 "contribution memorable"); the component library includes wayfinding posts, explainable screens, accessible rest nodes, and low-carbon displays — all self-drawn or rights-cleared [source:AGENT-TASKBOOK].
+
+### 9.2 Cultural Narrative and Wayfinding Symbols (agent.5)
+
+Centennial Jing-Zhang culture, Zhongguancun innovation culture, and AI new culture form a three-layer narrative: Jing-Zhang railway heritage (Qinghuayuan Station etc., `CONSTRAINT-HERITAGE`) as root, Zhongguancun innovation as trunk, AI new culture as leaves [source:AGENT-TASKBOOK]. The spatial cultural system follows a "heritage — innovation — intelligence" timeline; the wayfinding/signage/symbol system is separate from but stylistically consistent with the belt-wide Logo system, avoiding confusion (agent.5 prohibition); international communication centers on "from railway heritage to AI-native," providing English key visuals and city-character copy that are licensable and translatable.
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-The implementation scheme forms a reviewable renewal-project list stating project location, type, function, responsible entity, dependency, phase, risk and evaluation metric. Policy suggestions cover urban-renewal coordinated implementation, spatial supply, operation mechanism, industry service, public participation, data governance and property-right coordination. `geometry/phasing.geojson` expresses phasing scope; `compliance_matrix.json` links each task to phasing and drawings.
+The implementation plan forms a reviewable project list with location, type, responsible entity, dependencies, phase, risk, and evaluation metrics [depth:renewal_project_list] [depth:phasing_implementation]. The table binds JZ-01–JZ-06 to explicit GeoJSON `feature_id`s with entity type, prerequisites, phase, cost level, approval dependencies, risks, and KPIs [data:geometry/phasing.geojson#PHASE-1]:
 
-Project list and phasing depth are managed by [depth:renewal_project_list] and [depth:phasing_implementation]; phasing spatial evidence is [data:geometry/phasing.geojson#PHASE-001]. Without ownership, funding, implementing entity and approval path, the scheme must write it as implementation risk, not a landing commitment.
+| ID | Project | Type | feature_id | Entity type | Prerequisites | Phase | Cost | Approval deps | Risk | KPI |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | Heritage-Park slow-gap stitching | Public space/transport | PUB-03-01, ROAD-SPINE | Public space + slow corridor | Road redline, under-bridge space | PHASE-1 | Medium | Transport + parks | Cross-ring engineering uncertainty | Gap-closure rate |
+| JZ-02 | Zhongzhiyuan Qinghe innovation interface | Blue-green/showcase | GRN-00-00, PROV-KEY-001 | Green + interface | River blue-line, flood conditions | PHASE-1 | Medium | Water + parks | Blue-line constraint | Interface connectivity length |
+| JZ-03 | Origin Community near-campus translation street | Renewal/industry service | PROV-KEY-002, BLD-00-01 | Block + building | Campus boundary, ownership, ground-floor use | PHASE-2 | Medium | Planning + education | Ownership uncertainty | Landed projects |
+| JZ-04 | Dazhongsi four-quadrant walk connectivity | Rail integration/slow | PROV-KEY-003, PUB-03-01 | Station + public space | Station, intersection, municipal pipes | PHASE-2 | High | Rail + transport | Pipe relocation | Walk-connectivity index |
+| JZ-05 | AI public service & edge-compute node | New infra/public service | CONSTRAINT-RAIL, BLD-00-05 | Facility node | Energy, compute, safety, operator | PHASE-2 | Medium | Reform + urban-mgmt | Operator undecided | Served visits |
+| JZ-06 | Global AI Event-Week public route | Operation/brand | PHASE-1, ROAD-SPINE | Event route | Public-space permit, event safety, rights | PHASE-3 | Low | Culture + police | Event safety | Participation |
 
-| Project | Name | Type | Main dependency | Evidence |
-| --- | --- | --- | --- | --- |
-| JZ-01 | Jing-Zhang heritage-park slow-traffic breakpoint stitch | Public space / transport | Road redline, under-bridge space, transport review | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | Zhongzhiyuan Qinghe innovation frontage | Blue-green / industry showcase | River blue line, ecology and flood conditions | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-03 | Origin-community near-campus translation street | Urban renewal / industry service | Campus boundary, ownership, ground-floor use | [data:geometry/buildings.geojson#BLDG-001] |
-| JZ-04 | Dazhongsi-station four-quadrant pedestrian connectivity | Rail integration / slow traffic | Rail station, intersection, municipal pipeline | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | AI public service and edge-compute nodes | New infrastructure / public service | Energy, compute, safety and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
-| JZ-06 | Global AI event-week public route | Operation / brand | Public-space permit, event safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
+Phasing is distinct from the 100-day competition period: the competition period is the deliverable deadline; implementation phasing is the urban-renewal and construction path. Near-term pilots (PHASE-1) start with light facilities, operating activities, and service desks; mid-term (PHASE-2) awaits official regulatory plan, municipal, transport, and ownership conditions; long-term (PHASE-3) shifts to governance and event operation [data:geometry/phasing.geojson#PHASE-2] [data:geometry/phasing.geojson#PHASE-3].
 
-Phasing must be distinguished from the 100-day competition design cycle: the competition cycle is the time requirement for submitting results; implementation phasing is the advancement path of urban renewal and project construction. The scheme proposes near-term pilot, mid-term renewal and long-term governance, marking what can start with light facilities, operation activities and service platforms, and what must wait for formal regulatory plan, municipal, transport and ownership confirmation. For the annual-event system, developer-community operation, scenario open days, public-experience routes and international-communication mechanism, the text states operation object, frequency, responsibility boundary, translation path and risk, never mere slogans. The annual operation framework includes: Global AI Innovation Week (once a year), monthly open-scenario days, quarterly developer community meetups, and a continuously operated public-experience route.
+### Global AI Event System and Long-Term Operation (responds to agent.6)
+
+The annual event system, event brand and communication visuals, developer-community operation, AI scenario open-operation, public-experience and landmark operation, and international dissemination and recruitment-conversion mechanism are all framed as "concept proposals / reference schemes," never as decided government arrangements [source:AGENT-TASKBOOK].
+
+**Annual event system (agent.6)**:
+- Spring: Global AI Innovation Event Week (route JZ-06, linking heritage—open-source—industry—international roadshow);
+- Summer: open-source hackathon and standards workshops (Origin Community / Zhongzhiyuan);
+- Autumn: AI Scenario Open Day and public experience (Xiaoyuehe scenario-empowerment wing);
+- Winter: annual governance and honor release (contribution-wall update).
+
+**Brand/IP system**: extend the "Jing-Zhang Symbiotic AI Corridor" key visual to event KV, badges, and an honor system; all assets self-drawn or rights-cleared.
+**Developer-community operation**: the open-release hall (card 01) and testbeds (T1/T3) accumulate a contributor network with a continuous collaboration entry.
+**Scenario open-operation**: cards 09/10 and the event week form an "apply – evaluate – exit" open mechanism.
+**Conversion pathway**: talent (Origin) → enterprise (Dazhongsi) → capital (Zhongguancun wing) → international dissemination (event week), explicitly "no recruitment/policy/funding presented as decided commitments."
+**International dissemination & recruitment**: English key visuals and city-character copy raise global recognition; the conversion pathway targets public-knowledge accumulation (charter.8).
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-The metrics system must at least include overall-design-scope area, key-area area, green and public-space ratios, building footprint, renewal-project count, AI scenario nodes, slow-traffic connectivity, industry-space metrics, talent-service metrics and self-check status. All known metrics must be recalculable from GeoJSON or trusted sources; unknown metrics must give reason and formal-submission prerequisite. The results of `scripts/spatial_review.py` and `scripts/visual_review.py` are important evidence for formal self-check.
+The metric system covers overall-design area, key-area area, green and public-space ratios, building footprint, renewal-project count, AI scenario nodes, slow-mobility connectivity, industry space, talent service, and self-check status. Core area and building footprint are recomputed by [metric:site_area_sqm] [metric:building_footprint_area_sqm]; green and public-space ratios are in [metric:green_ratio] [metric:public_space_ratio]; key-area count is in [metric:key_area_count].
 
-Metric recalculation follows the unified design-depth requirement [depth:metrics_recalculation]. The text explains design meaning, e.g. how the overall scope constrains spatial allocation and how blue-green and public-space ratios support daily interaction; full values, formulas, source files and confidence are in `metrics.json`. Example key metrics are reviewed by overall scope and green data [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001].
+![Core metric recomputation and evidence chain](assets/figures/metrics-evidence.png)
 
-![Core-metric recalculation and evidence chain](assets/figures/metrics-evidence.png)
+Metrics are managed in three classes to avoid mistaking operational vision for approved conditions [depth:metrics_recalculation]:
+- **Spatially recomputable** (derivable from `PROV-SITE-001`): boundary area, green ratio, public-space ratio, building-footprint ratio, phasing area;
+- **Control pending** (needs official regulatory plan / taskbook appendix): FAR, building height, density, setbacks, road redlines, facility standards (mostly `status=unknown`);
+- **Performance calibration** (needs ongoing operational/industry data): AI innovation index, talent density, slow-mobility accessibility, event participation, scenario usage frequency.
 
-The compliance matrix is the master file for task responsiveness. Every announcement task and agent-taskbook task must map to a report section, layer, metric, drawing, HTML page, source, assumption and self-check item. Failure to cover any required announcement task (1.3, 1.4, 1.5) or agent task (agent.1–agent.6) blocks entry to formal professional scoring.
-
-For formal deepening, the agent also classifies each metric into three types: type one, spatial metrics directly recalculable from submitted geometry (boundary area, green ratio, public-space ratio, building footprint area, phasing area); type two, control metrics needing official regulatory plan or taskbook appendix (floor-area ratio, building height, building density, setback, road redline, facility standard); type three, performance metrics needing continuous operation or industry data calibration (AI innovation index, talent density, industry-service satisfaction, slow-traffic accessibility, event participation, scenario usage frequency). The three types enter `metrics.json`, `assumptions.json` and `compliance_matrix.json` respectively, avoiding mistaking operation vision as approved planning condition.
+The compliance matrix `compliance_matrix.json` is the master file for task responsiveness: every announcement task and agent.1–agent.6 mandatory task maps to report sections, layers, metrics, drawings, HTML, sources, assumptions, and self-check items, and this revision gives **differentiated** evidence per task (not a generic template) [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
 
 ## Risk, Copyright, and Compliance
 
-Bilingual delivery is required. The main proposal file may be Chinese or English, but a complete counterpart translation must be provided via `proposal.en.md` or `proposal.zh.md`; A3/A0, HTML and text-bearing drawings must also provide corresponding-language copies, preferring the event-recommended translations in `docs/terminology-glossary.md`. A v2 package missing any required translation, language mapping or valid file blocks submission at finalize and CI. All image, drawing, icon, data and code assets must state source, license and authorization status in `sources.json` or `report/copyright_statement.md`. HTML pages must not load remote scripts, remote map tiles, remote fonts, iframes, forms or external APIs, and must not track reviewer behavior.
+**Bilingual requirement**: the primary file provides a complete English translation via `proposal.en.md`; A3/A0, HTML, and text-bearing figures all provide language counterparts [bilingual_contract_version: "1"]. All images, drawings, icons, data, and code assets are itemized for source, license, and authorization status in `sources.json` and `report/copyright_statement.md`; the HTML loads no remote scripts, map tiles, fonts, iframes, forms, or external APIs [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-Risk and missing-data inventory is cross-checked by the risk depth item, constraint layer and site package [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE]. The official-boundary, key-area, regulatory-plan, road, parcel, building, municipal, heritage and public-service gaps listed in `missing_data_checklist.csv` must enter `assumptions.json`, self-check and the risk section. Any conclusion missing official regulatory plan, road redline, ownership, municipal, fire or heritage conditions must be downgraded to to-be-confirmed; full professional cross-check is in the standard matrix.
+Risks and the missing-data list are cross-checked by `depth:risk_missing_data`, `geometry/constraints.geojson`, and the site package [data:geometry/constraints.geojson#CONSTRAINT-HERITAGE] [data:geometry/constraints.geojson#CONSTRAINT-RAIL]. The official-boundary, key-area, regulatory-plan, road, parcel, building, municipal, heritage, and public-service gaps listed in `missing_data_checklist.csv` all enter `assumptions.json`, the self-check, and the risk section; any conclusion lacking official conditions is downgraded to pending confirmation [assumption:A-CONTROLS-001].
 
-This proposal does not claim official approval, approved regulatory plan, final land ownership, final construction scale or guaranteed implementation. The AI agent is responsible for facts, sources, copyright, spatial data, metrics and expression; maintainers and professional reviewers may request revision or reject based on self-check results, spatial review and compliance matrix.
+This proposal does not claim official approval, approved regulatory plans, final land ownership, final construction scale, or guaranteed implementation. The AI agent is responsible for facts, sources, copyright, spatial data, metrics, and expression; maintainers and professional reviewers may request revisions or reject based on self-check, spatial review, and the compliance matrix.
 
 ## References
 
@@ -178,10 +264,9 @@ This proposal does not claim official approval, approved regulatory plan, final 
 - brief/site-package/allowed_design_space.json
 - brief/site-package/enums/
 - brief/site-package/ranges/planning_limits.json
-- data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv
-- data/processed/agent_task_requirements.csv
-- data/processed/source_use_matrix.csv
-- data/processed/missing_data_checklist.csv
-- Full machine index: see `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json`
-- Bibliography entry here follows the site-package registry; full citation and license are in the structured source list [source:SITE-PACKAGE]
+- brief/site-package/agent_taskbook.json
+- brief/site-package/standards/standards.json
+- data/processed/agent_fact_pack.md, project_scope_summary.csv, agent_task_requirements.csv, source_use_matrix.csv, missing_data_checklist.csv
+- Full machine index: sources.json, metrics.json, compliance_matrix.json, standard_matrix.json, design_depth_matrix.json
+
+All these packages and the machine-readable index are registered in sources.json with their use boundaries, licenses, and authorization status [source:SITE-PACKAGE] [source:OFFICIAL-ANNOUNCEMENT].
