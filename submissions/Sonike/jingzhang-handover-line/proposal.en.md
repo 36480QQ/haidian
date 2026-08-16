@@ -156,6 +156,25 @@ Innovation resources are coordinated through interfaces rather than name lists: 
 
 ## AI-Native Urban Form and Planning Method
 
+### Nine things this proposal introduces, each set against the conventional practice
+
+Originality should not be asserted with adjectives. The table below lists the mechanisms this proposal introduces, and for each states **what it is**, **how it differs from the conventional practice**, and **which file in the package carries it**. The difference column is the evidence of originality; adjectives are not.
+
+| Mechanism | What it is | Difference from conventional practice | Carrier |
+| --- | --- | --- | --- |
+| Four-step handover loop | Build → Verify → Share → Serve → **back to Build** | Conventional smart-city delivery is one-way; the fourth step returns complaints, repairs, objections and shutdown causes to the research end, closing the loop | [data:geometry/phasing.geojson] |
+| Dual-control shift ledger | Handing out and taking in are **two independent decisions**; the outgoing role cannot sign for the incoming one | Conventional acceptance is a single signature; here the receiver must independently reproduce the minimum evidence and explicitly ACCEPT or REFUSE, so open items cannot vanish at handover | [data:visual/assets/governance/shift-ledger.schema.json] |
+| No-AI equivalence test | For any AI service the same task must be completable without AI; if not, the service does not open | Conventional metrics are device counts and automation rates that no ordinary person can check; this test anyone can run themselves | `human_service_fallback` on the twelve scenario cards |
+| Smart-layer switch | The offline page can **turn the smart layer off on the spot**, flipping all twelve cards to their no-AI side | Conventionally accessibility is stated in prose and the reader must confirm it across chapters; as a switch, any missing case is visible at once | [data:visual/index.html] |
+| Three handover yards | Build, Share and City yards, matching the three stages of capability movement | Conventional zoning names areas by function (R&D zone, commercial zone); these are named by **the stage of accountability transfer**, one metaphor across the belt | [data:geometry/key_areas.geojson] |
+| Eight shared stacks | Factors supplied as **interface + rule + reviewable record**; whoever meets the rule may take it up | Conventional industrial plans list tenants, and the plan collapses if they do not arrive; interface-based supply depends on no particular actor | The "eight shared stacks" section |
+| Three merge gates | Phasing is a **condition threshold, not a timetable**; a failed gate rolls back to the last usable state | Conventional phasing promises years; this promises **what must be satisfied before merging**, and promises no calendar | [metric:phase_count] |
+| Defect-injection self-test | Seven protocol rules each receive injected defects; **84 injections, all intercepted, zero missed** | Conventional proposals declare rules; this one shows the rules **actually stop** what they claim to stop | [data:visual/assets/governance/rule-check-report.json] |
+| Tactile corridor map | An embossing-ready vector drawing legible without colour; the three yards use circle / square / triangle | Conventional accessibility stops at "provide accessible facilities"; this ships a fabricable file and leaves dimensions to the codes and the fabricator | [data:assets/tactile/tactile-corridor-map.svg] |
+
+**None of the nine is a slogan: each maps to a file in the package, and each states the condition under which it fails.** The handover protocol may not start without a named duty person; the dual-control ledger keeps the smart layer off while an open item stands; the no-AI equivalence test keeps a service closed wherever it does not hold; a merge gate rolls back when its condition is unmet — **a mechanism that cannot say when it fails is not yet a mechanism.**
+
+
 The official call asks the proposal to imagine how AI changes ways of producing and living, to propose a matching urban form, to plan how urban functional elements are spatially organised in the AI era, and to propose an adaptive, evolvable development model. This section answers directly: AI does not add a layer of equipment to the city — it changes the scale, the time pattern and the replacement rate of space. The decisive variable of urban form therefore shifts from "how large do we build" to "how often does it change, and does anyone get hurt when it does".
 
 | Change in production and daily life | Concrete spatial requirement | Where it lands here |
