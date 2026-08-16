@@ -292,7 +292,7 @@ English brief — **One test decides everything here: for any AI service on this
 | 青年人才 | 低门槛试错、可署名的贡献记录与留下来的理由 | 共享测试院、社区协作屋、人才生活混合社区 | SCN-01、SCN-07 | 首次贡献到被复现的间隔、可署名条目占比 |
 | 国际访客与游客 | 多语解释、人工求助与不装 App 也能完成的到访 | 公共服务翻译台、零号接管亭、口述史问答亭 | SCN-06、SCN-11、SCN-12 | 人工求助响应时长、多语纸本覆盖率、非 App 通行可用率 |
 
-十二个节点已经写入 [data:geometry/public_space.geojson#SCN-01]，数量为12 [metric:scenario_node_count]；其中4个产业验证场景 [metric:industry_validation_scenario_count] 满足先沙盒、后评估、再决定是否扩大。下表每一行都包含无AI等价服务，统一本地原则是：失联、越权、风险阈值触发或任何人提出异议时，立即停用智能功能，保留基础服务并进入人工值班簿。
+十二个节点已经写入 [data:geometry/public_space.geojson#SCN-01]，数量为12 [metric:scenario_node_count]；其中4个产业验证场景 [metric:industry_validation_scenario_count] 满足先沙盒、后评估、再决定是否扩大。下表每一行都包含无AI等价服务，统一本地原则是：失联、越权、风险阈值触发或任何人提出异议时，立即停用智能功能，保留基础服务并进入人工值班簿。**「场景与位置」一列里的片区名指的是走廊上的地段，不等同于落在该重点区临时多边形之内**——三处重点区的几何自身标注为「粗略范围」，十二个场景中按几何判定确实落在临时多边形内的是 SCN-01/02/03（研制）、SCN-06/07（开源）与 SCN-12（城市），共六个；其余六个位于走廊上对应地段但在粗略范围之外。**F/03 的三张放大平面只画落在多边形内的那些**，因此图上的点数少于表中该地段的场景数，这是口径差异而不是遗漏。
 
 | ID | 场景与位置 | 服务对象与最小数据 | 人工交接、无AI兜底与退出条件 |
 | --- | --- | --- | --- |
@@ -624,7 +624,7 @@ English brief — **One test decides everything here: for any AI service on this
 | --- | --- | --- | --- |
 | 一期·交回基线与南段公共服务试点 | PHASE-001 | 4,837,401.583 | [metric:phase_1_area_sqm] |
 | 二期·开源交接场与中段连接 | PHASE-002 | 3,545,776.934 | [metric:phase_2_area_sqm] |
-| 三期·验证交接场与全带运营 | PHASE-003 | 3,029,646.869 | [metric:phase_3_area_sqm] |
+| 三期·研制交接场与全带运营 | PHASE-003 | 3,029,646.869 | [metric:phase_3_area_sqm] |
 | 众智园AI自主创新加速区 | PROV-KEY-001 | 1,929,201.877 | [metric:key_area_zhongzhiyuan_sqm] |
 | 北京AI原点社区 | PROV-KEY-002 | 1,043,236.909 | [metric:key_area_origin_community_sqm] |
 | 大钟寺AI产业集聚区 | PROV-KEY-003 | 720,454.219 | [metric:key_area_dazhongsi_sqm] |
