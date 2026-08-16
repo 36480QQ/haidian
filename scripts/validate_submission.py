@@ -1822,7 +1822,12 @@ def validate_readiness_claim(
         )
 
 
-def validate_compliance_matrix_file(report: ValidationReport, path: Path, display_path: str) -> None:
+def validate_compliance_matrix_file(
+    report: ValidationReport,
+    path: Path,
+    display_path: str,
+    known_standard_ids: set[str] | None = None,
+) -> None:
     data = load_json_file(report, path, display_path)
     if not isinstance(data, dict):
         return
@@ -1860,6 +1865,32 @@ def validate_compliance_matrix_file(report: ValidationReport, path: Path, displa
             value = item.get(key)
             if not isinstance(value, list) or not value or not all(isinstance(v, str) and v for v in value):
                 report.add_error(f"{label}: {key} must be a non-empty string array")
+        standard_ids = item.get("standard_ids")
+        if standard_ids is not None and (
+            not isinstance(standard_ids, list)
+            or not standard_ids
+            or not all(isinstance(value, str) and value for value in standard_ids)
+        ):
+            report.add_error(f"{label}: standard_ids must be a non-empty string array when present")
+        source_ids = item.get("source_ids")
+        if known_standard_ids and isinstance(source_ids, list):
+            misplaced = sorted(
+                value for value in source_ids if value in known_standard_ids
+            )
+            if misplaced:
+                report.add_warning(
+                    f"{label}: source_ids contains standard IDs that belong in standard_ids: "
+                    f"{', '.join(misplaced)}"
+                )
+        if known_standard_ids and isinstance(standard_ids, list):
+            unknown = sorted(
+                value for value in standard_ids if value not in known_standard_ids
+            )
+            if unknown:
+                report.add_warning(
+                    f"{label}: standard_ids references IDs not declared in standard_matrix.json: "
+                    f"{', '.join(unknown)}"
+                )
 
     missing = sorted(ALL_REQUIRED_TASK_IDS - covered)
     if missing:
@@ -2453,17 +2484,22 @@ def validate_ai_package_dir(
             strict=strict_simulation,
         )
 
-    compliance_path = base / "compliance_matrix.json"
-    if compliance_path.exists():
-        validate_compliance_matrix_file(
-            report, compliance_path, f"{proposal_dir}/compliance_matrix.json"
-        )
-
     standard_matrix: dict | None = None
     standard_path = base / "standard_matrix.json"
     if standard_path.exists():
         standard_matrix = validate_standard_matrix_file(
             report, repo_root, standard_path, f"{proposal_dir}/standard_matrix.json"
+        )
+
+    compliance_path = base / "compliance_matrix.json"
+    if compliance_path.exists():
+        validate_compliance_matrix_file(
+            report,
+            compliance_path,
+            f"{proposal_dir}/compliance_matrix.json",
+            collect_json_ids(standard_matrix, "standards", "standard_id")
+            if isinstance(standard_matrix, dict)
+            else set(),
         )
 
     design_depth_matrix: dict | None = None
