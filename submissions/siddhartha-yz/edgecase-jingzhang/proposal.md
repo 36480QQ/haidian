@@ -4,7 +4,7 @@ author_github: "siddhartha-yz"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v1.24"
+iteration: "v1.25"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张从AI成果展示带转化为面向真实城市长尾条件的训练、共测与公开学习基础设施：先暴露边界，再扩大部署。"
@@ -177,4 +177,6 @@ EDGECASE JINGZHANG 的产业定位是 **Urban Edgecase Infrastructure / 城市�
 - Seoul Metropolitan Government Seoul AI Hub [source:CASE-SEOUL-AI-HUB]
 - Mila Ventures research-to-venture ecosystem [source:CASE-MILA]
 - Vector Institute research-to-adoption ecosystem [source:CASE-VECTOR]
-- `metrics.json`, `assumptions.json`, `compliance_matrix.json`, `standard_matrix.json`, `design_depth_matrix.json` 为本方案机器可读主索引。
+本方案的机器可读主索引为：
+
+- `metrics.json`, `assumptions.json`, `compliance_matrix.json`, `standard_matrix.json`, `design_depth_matrix.json`
