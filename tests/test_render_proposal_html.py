@@ -208,6 +208,79 @@ summary: "离线阅读版"
             with self.assertRaisesRegex(ValueError, "remote or unsafe image source"):
                 render_html(submission_dir)
 
+    def test_render_html_rejects_windows_absolute_unc_and_backslash_traversal_images(self) -> None:
+        unsafe_sources = [
+            "C:/escape/x.png",
+            "./D:/escape/x.png",
+            r"\\server\share\x.png",
+            r"..\escape.png",
+        ]
+        for source in unsafe_sources:
+            with self.subTest(source=source), tempfile.TemporaryDirectory() as tmp:
+                submission_dir = Path(tmp)
+                (submission_dir / "proposal.md").write_text(
+                    f"![unsafe]({source})\n",
+                    encoding="utf-8",
+                )
+
+                with self.assertRaisesRegex(ValueError, "relative local path"):
+                    render_html(submission_dir)
+
+    @unittest.skipUnless(os.name == "nt", "Windows drive-path behavior")
+    def test_render_html_rejects_existing_image_outside_submission_by_drive_path(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            submission_dir = root / "submission"
+            submission_dir.mkdir()
+            outside_image = root / "outside.png"
+            outside_image.write_bytes(b"not an in-package image")
+            (submission_dir / "proposal.md").write_text(
+                f"![escaped]({outside_image.as_posix()})\n",
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(ValueError, "relative local path"):
+                render_html(submission_dir)
+
+    def test_render_html_rejects_symlink_escape_from_submission_directory(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp, tempfile.TemporaryDirectory() as outside:
+            submission_dir = Path(tmp)
+            outside_image = Path(outside) / "outside.png"
+            outside_image.write_bytes(b"not an in-package image")
+            linked_image = submission_dir / "linked.png"
+            try:
+                linked_image.symlink_to(outside_image)
+            except (NotImplementedError, OSError) as exc:
+                self.skipTest(f"local symlink creation is unavailable: {exc}")
+            (submission_dir / "proposal.md").write_text(
+                "![escaped](linked.png)\n",
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(ValueError, "stay within the submission directory"):
+                render_html(submission_dir)
+
+    def test_render_html_resolves_internal_symlink_to_safe_relative_path(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            submission_dir = Path(tmp)
+            image = submission_dir / "assets" / "figures" / "overview.png"
+            image.parent.mkdir(parents=True)
+            image.write_bytes(b"in-package image")
+            linked_image = submission_dir / "linked.png"
+            try:
+                linked_image.symlink_to(image)
+            except (NotImplementedError, OSError) as exc:
+                self.skipTest(f"local symlink creation is unavailable: {exc}")
+            (submission_dir / "proposal.md").write_text(
+                "![linked](linked.png)\n",
+                encoding="utf-8",
+            )
+
+            html = render_html(submission_dir)
+
+            self.assertIn('src="../assets/figures/overview.png"', html)
+            self.assertNotIn('src="../linked.png"', html)
+
     def test_render_english_proposal_marks_both_languages(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             submission_dir = Path(tmp)
