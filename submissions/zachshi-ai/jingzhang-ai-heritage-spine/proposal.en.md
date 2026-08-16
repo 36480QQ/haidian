@@ -253,6 +253,32 @@ The Jing-Zhang Railway is the first trunk line independently designed and built 
 
 The proposal presents a "railway culture — innovation culture — AI new culture" three-layer narrative fusion: the first layer takes Zhan Tianyou's spirit of independent railway-building as the historical origin, the second layer takes Zhongguancun's evolution from an electronics street to a science city as the innovation thread, and the third layer takes the "Urban Agent" of the AI era as the new cultural form [source:agent-taskbook]. The narrative does not treat culture as technological decoration or slogan, but makes the historical, contemporary, and future layers walkable, perceptible, and tellable in space.
 
+### Core Mechanism: Ren-Track Design Grammar (Original to This Proposal)
+
+Heritage narratives being consumed by technology is a common affliction—AI functions land on the heritage corridor without giving back to the culture that carries them. This proposal borrows the "switchback reversal" spirit of Zhan Tianyou's herringbone Ren-Track railway and proposes an original **Ren-Track Design Grammar**: every AI node must complete the three-beat switchback of "cultural anchor → AI function → cultural reciprocity" [E:HERITAGE-REN-TRACK-GRAMMAR].
+
+**The three-beat switchback rules:**
+- **R1 Cultural Anchor**: Every AI node must declare which piece of heritage it departs from—the anchor must be an identifiable historical resource (Tsinghuayuan Station, the Ren-Track, railway logistics history, etc.), not a generic reference.
+- **R2 Bounded Function**: AI functions must have explicit boundaries (navigation/Q&A/display) and must not perform diagnosis/approval/law enforcement.
+- **R3 Cultural Reciprocity**: Every node must reciprocate with one **physical** cultural artifact—an exhibition gallery, plaque, handbook, graduation mark, or collection box. Virtual layers (AR/projection) do not count as reciprocity.
+- **R4 Switchback Closure**: The three beats of anchor→function→reciprocity are invalid if any one is missing; a node may not defer reciprocity on the grounds of "can be added later."
+
+**Switchback registry of the 12 AI nodes** (full version in `visual/assets/ren-track-grammar.json`):
+
+| Node | Cultural Anchor (R1) | AI Function (R2) | Cultural Reciprocity Artifact (R3, physical) |
+| --- | --- | --- | --- |
+| Innovation Origin Plaza | Zhan Tianyou's independent construction spirit | AI launch hall | Independent construction spirit gallery + Ren-Track model (touchable) |
+| Tsinghuayuan Memory Node | Former Tsinghuayuan Station site and red culture | AI cultural guide | Station history timeline (embedded in ground) + paper guide booklet |
+| Open Source Living Room | Jingzhang collaborative construction tradition | AI open source collaboration | Open source contributor wall + collaboration history display board |
+| AI Valley Eye Plaza | Dazhongsi industrial transformation and railway logistics history | AI industry roadshow | Railway logistics history gallery + industrial transformation timeline |
+| Qinghe Low-Carbon Innovation Corridor | Water-land collaboration between Jingzhang and Qinghe | AI low-carbon monitoring | Qinghe ecological guide sign + low-carbon knowledge handbook |
+| Railway Memory Corridor | Ren-Track and full Guanggou section history | AI immersive guide | Ren-Track scale model + full-line history paper map |
+| Smart Delivery Ark Station | Jingzhang passenger-freight transport service tradition | AI smart logistics | Railway freight history display + station service commitment plaque |
+
+**Rule closure verification.** `run_ren_track.js` correctly classifies all 48 synthetic cases—12 nodes × 4 rule branches (complete / missing anchor / missing reciprocity / virtual-only reciprocity)—(36 blocked / 12 passed), demonstrating that the grammar rules are logically closed. But this only proves correct classification; it does not constitute a heritage impact assessment or on-site construction evidence. On-site performance remains null, with status `not_authorized_not_run` [data:visual/assets/ren-track-audit.json#blocked].
+
+**Relationship to "culture is not decoration."** The core of the Ren-Track Grammar is not to make AI more cultural, but to make **every AI node owe culture one physical reciprocity artifact**. This turns "culture is not consumed" from a slogan into an auditable structural constraint: nodes may enter culture and use culture, but they must switch back and leave something physical behind. A node without a reciprocity artifact is not valid under the grammar [source:agent-taskbook].
+
 ### Cultural Tour Route and Spatial Narrative Spine
 
 The proposal designs a "Centennial Spine Cultural Tour Line" along the Jing-Zhang Heritage Park slow-mobility axis: the northern Zhongzhiyuan "Innovation Origin Plaza" narrates Zhongguancun's innovation history, the central AI Origin Community "Tsinghuayuan Memory Node" combines the former station site to narrate railway and red culture, and the southern Dazhongsi "AI Valley Eye Plaza" narrates industrial upgrading and AI new culture [data:geometry/public_space.geojson#PS-001]. The three segments are linked by unified signage, in-ground historical timelines, and AR narrative trigger points, forming a walkable, experienceable continuous narrative [depth:blue_green_public_space].
