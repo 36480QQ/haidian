@@ -699,65 +699,32 @@ The table summarizes where each agent.1–6 dimension outcome lands in this prop
 | agent.6 Culture/international/events/operation | Bilingual wayfinding + elevator pitch + annual events + three-party co-governance | "Cultural Wayfinding, International Narrative, Annual Events, and Long-term Operation" |
 | agent.7 Accessibility enhancement (Round 5) | Four-layer architecture / data schema / routing & dispatch engine / deployment framework | "Accessible Smart Governance and Navigation Integration Outlook" + Appendices A/B |
 
-## Six Renewal-Project Implementation Cards (minimal cards; conceptual suggestion)
+## Six Renewal-Project Implementation Cards (9 fields + spatial anchor; conceptual suggestion)
 
-> These cards are conceptual suggestions / reference proposals and do not constitute a formal engineering document; responsible entities are written only as **entity types**, never fabricated names; road/station/node names are provisional conceptual placement, to be verified against official data.
+> These cards are conceptual suggestions / reference proposals for professional teams' further study, and do not constitute a formal engineering document.
 
-The six cards below give each project's **spatial anchor** (which road/station/node it sits on), stage, core action, responsible type, main risk, acceptance direction, and conceptual cost level; all are suggestive, subject to the regulatory plan and the competent authority's approval [depth:renewal_project_list] [depth:phasing_implementation].
+The six cards below complete the 9 project-management fields (responsible-entity type, partner, precondition, stage, resource level, risk, reversible measure, acceptance metric, stop condition) and give each project's spatial anchor (provisional conceptual placement, to be verified against official data). Responsible entities and partners are written only as **entity types**, not fabricated names; stage/resource/risk are suggestive [depth:renewal_project_list] [depth:phasing_implementation].
 
-**JZ-01 Jing-Zhang Heritage Park slow-gap stitching**
-- Spatial anchor: both sides of the Jing-Zhang Railway Heritage Park (Phase I), the Jing-Zhang Railway × slow-loop crossing segment (provisional)
-- Stage: near-term (pilot)
-- Core action: stitch slow-travel gaps; add accessible ramps and bilingual wayfinding; restore a continuous walking path
-- Responsible type: street coordination + park operator (type only, no specific names)
-- Main risk: multiple property interfaces (railway/park/municipal) require further verification
-- Acceptance direction: continuous-walking accessibility improvement, assessed once a current-state baseline is set
-- Conceptual cost: medium (conceptual estimate only)
+| Project | Responsible type | Partner (type) | Precondition | Stage | Resource | Risk | Reversible measure | Acceptance metric | Stop condition |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 Slow-gap stitching | Government (district transport) + park operator | Municipal construction unit (conceptual) | Road redline, under-bridge permit, traffic review | Concept → scheme design | Medium | Ownership dispute, policy change | Temporary connectors removable, site restored | Slow connectivity + accessibility per GB 50763-2012 | Pause if under-bridge ownership cannot be settled |
+| JZ-02 Qinghe innovation interface | Government (district water) + park | Hydraulic design unit (conceptual) | River blue line, flood evaluation, ecological permit | Concept → scheme design | Medium | Flood conditions, cost overrun | Waterfront facilities removable, original revetment kept | Blue-green connectivity + stormwater resilience | Exit if flood conditions are unmet |
+| JZ-03 Campus-facing conversion street | Government (district sci-tech) + university | University + social capital (conceptual) | Campus boundary, ownership, ground-floor approval | Concept → scheme design | Medium | Ownership dispute, heritage dispute | Ground-floor use reversible, no structural change | Conversion space activated + ground-floor cleared | Pause if ownership dispute is unresolved |
+| JZ-04 Dazhongsi four-quadrant connectivity | State-owned (rail operator) + government | Rail company + municipal design unit (conceptual) | Station integration plan, utility relocation, fire review | Concept → engineering deepening | High | Approval uncertainty, utility conflict | Quadrant-by-quadrant phased, unimplemented quadrants kept | Four-quadrant connectivity + accessible interchange | Postpone if station timing mismatches |
+| JZ-05 Edge-computing node | Social capital + government (district sci-tech) | Computing operator (conceptual) | Energy, computing, security, operator confirmed | Concept → operation | High | Technical failure, compliance | Devices removable, space restored to public use | Computing open + security audit passed | Exit if no operator |
+| JZ-06 Physarum network deepening & recalculation | Government + university (designer) | University research team (conceptual) | Official boundary, road redline, real-coordinate alignment | Concept → ongoing research | Low | Official data long missing | Not landed as engineering; stays research-scope | Full recalculation once official data arrives | Keep "to be confirmed" if official data long unpublished |
 
-**JZ-02 Zhongzhiyuan Qinghe innovation interface**
-- Spatial anchor: Zhongzhiyuan's Qinghe riverfront segment (north wing, south of the Qinghe blue line; provisional)
-- Stage: mid-term
-- Core action: waterfront blue-green connection + low-impact-development stormwater system + flood-resilience retrofit
-- Responsible type: district water authority + park (type only, no specific names)
-- Main risk: exit if the river blue line or flood conditions are unmet
-- Acceptance direction: blue-green corridor connected + stormwater-resilience targets met, once baseline is set
-- Conceptual cost: medium (conceptual estimate only)
+**Spatial anchors (provisional, to be verified against official data)**:
+- JZ-01 → both sides of the Jing-Zhang Railway Heritage Park (Phase I), the Jing-Zhang Railway × slow-loop crossing segment
+- JZ-02 → Zhongzhiyuan's Qinghe riverfront segment (north wing, south of the Qinghe blue line)
+- JZ-03 → the Beijing AI Yuan Dian Community campus–park interface (central zone)
+- JZ-04 → the Dazhongsi Station Line 13 / Line 12 interchange node, four quadrants
+- JZ-05 → the Dazhongsi AI Industry Cluster gateway (south zone, adjacent to Dazhongsi Station)
+- JZ-06 → along the conceptual network's main vein ROAD-001 (site-wide, pending official boundary and road-redline alignment)
 
-**JZ-03 Yuan Dian community campus-facing conversion street**
-- Spatial anchor: the Beijing AI Yuan Dian Community campus–park interface (central zone; provisional)
-- Stage: near-term
-- Core action: activate ground-floor programs + bring conversion space into use
-- Responsible type: university + district sci-tech authority (type only, no specific names)
-- Main risk: pause if campus-boundary or ground-floor ownership disputes are unresolved
-- Acceptance direction: conversion space activated + ground-floor ownership cleared
-- Conceptual cost: medium (conceptual estimate only)
+![Renewal-project full-field matrix (6 projects × 9 fields, conceptual)](assets/figures/project_matrix.png)
 
-**JZ-04 Dazhongsi Station four-quadrant walking connectivity**
-- Spatial anchor: the Dazhongsi Station Line 13 / Line 12 interchange node, four quadrants (station catchment)
-- Stage: mid-term
-- Core action: four-quadrant walking connection + accessible interchange + station integration
-- Responsible type: rail operator + district transport authority (type only, no specific names)
-- Main risk: station retrofit timing and municipal utility relocation uncertainty
-- Acceptance direction: four-quadrant walking connection + accessible interchange, once baseline is set
-- Conceptual cost: high (conceptual estimate only)
-
-**JZ-05 AI public service and edge-computing node**
-- Spatial anchor: the Dazhongsi AI Industry Cluster gateway (south zone, adjacent to Dazhongsi Station; provisional)
-- Stage: long-term (governance)
-- Core action: deploy edge-computing nodes, open public services, pass security compliance audit
-- Responsible type: district sci-tech authority + operator (type only, no specific names)
-- Main risk: exit if energy/computing/security/operator is absent
-- Acceptance direction: computing service open + security compliance audit passed
-- Conceptual cost: high (conceptual estimate only)
-
-**JZ-06 Physarum network deepening and on-site recalculation**
-- Spatial anchor: along the conceptual network's main vein ROAD-001 (site-wide, pending official boundary and road-redline alignment)
-- Stage: long-term (ongoing research)
-- Core action: full recalculation and layer update once official data arrives
-- Responsible type: designer + university (type only, no specific names)
-- Main risk: official data long missing; keep a "to be confirmed" caveat
-- Acceptance direction: full recalculation passed once official data arrives
-- Conceptual cost: low / unknown (research-scope; conceptual estimate only)
+The figure above visualizes the nine-field matrix, enabling quick review of each project's responsible entity, partner, precondition, risk, reversible measure, and stop condition; the fields are all conceptual suggestions, and responsible entities are written only as entity types, never fabricated names [depth:renewal_project_list].
 
 ## Rights and Source Audit Table (source & license)
 
