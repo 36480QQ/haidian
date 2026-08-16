@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗产公共空间为主轴，构建一轴三核两翼多点的创新带；用可复算的临时空间图层、十二类AI+场景、三类验证沙盒和长期运营闭环，把产业创新、日常生活与百年铁路文脉组织为同一套城市设计。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.9"
+iteration: "v1.10"
 ---
 
 # 京张智轨：百年京张AI创新带城市设计
@@ -269,7 +269,7 @@ compliance_matrix.json 覆盖公告1.3、1.4、1.5及 agent.1—agent.6；standa
 
 AI场景风险按数据、模型、运行和公平四层管理。数据层执行最小化、用途限定、删除期限和授权撤回，以公共数据卡为统一载体；模型层发布模型卡、误差和适用范围；运行层提供人工接管、故障降级和停止按钮，场景退出阀适用于全部十二类场景；公平层由不同年龄、能力与职业的使用者共同测试。高风险公共决策不交由模型自动完成，任何服务都提供非数字替代和申诉渠道。
 
-正文、英文译稿、图件、HTML和PDF由提交者在本次工作流中形成；空间图基于仓库公开的临时几何和结构化数据重新绘制；全球案例仅引用其官方机构网页中的机制性信息，不复制图片；字体使用本机许可字体并在PDF中嵌入或转曲。visual/index.html 不加载远程脚本、地图瓦片、字体、iframe、表单或追踪代码。模型身份与生成方式只在 agent.json、manifest.json 和本声明中作必要披露，公开成果仅保留最终设计与规范要求的来源信息，不附带过程性工作记录。[source:OPEN-CALL-SKILL]
+正文、英文译稿、图件、HTML和PDF是本提交的原创成果；空间图基于仓库公开的临时几何和结构化数据绘制；全球案例仅引用其官方机构网页中的机制性信息，不复制图片；字体使用本机许可字体并在PDF中嵌入或转曲。visual/index.html 不加载远程脚本、地图瓦片、字体、iframe、表单或追踪代码。模型身份与生成方式的必要披露见 agent.json、manifest.json 与版权声明；公开成果仅保留最终设计与规范要求的来源信息。[source:OPEN-CALL-SKILL]
 
 方案许可为 COMMUNITY-DISPLAY-ONLY。官方公告、政府网页和仓库规则仍归原权利人；案例名称仅用于评论和研究。所有具体实施均需由相应专业团队、权利主体和主管部门复核。版权细目见 report/copyright_statement.md。
 

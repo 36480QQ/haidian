@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-space-first innovation belt structured as one heritage spine, three differentiated hubs, two cross-corridor service wings, and twelve auditable AI+ scenarios, with provisional geometry and full recalculation triggers."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.9"
+iteration: "v1.10"
 ---
 
 # Jing-Zhang Intelli-Rail
@@ -137,7 +137,7 @@ Scenarios are evaluated across public value, industrial value, risk, and reversi
 
 Three original mechanisms run through the whole proposal and are named here. **Scenario Exit Valve**: every public scenario embeds a four-step threshold–pause–review–exit sequence; a breached metric triggers automatic degradation, a failed review triggers removal, and removal cost is assessed at design stage. **Civic Data Placard**: each scenario exposes exactly one standardised data statement—collection scope, retention period, purpose boundary, and appeal entry; no placard, no operation, and the placard is retired with the scenario. **Double-Track Identity**: a deep-navy line and a jade-green line run through every sign, kilometre marker, and interface in the belt, keeping engineering heritage and open ecology present at every touchpoint, with hub accent colours used only for layering, never for brand fragmentation.
 
-## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
+## Land Use, Building Scale, and the Demolish–Renovate–Retain Strategy
 
 land_use.geojson covers the provisional overall area with four conceptual categories. AI research zones support core R&D and shared laboratories; parks and open space protect ecological and civic continuity; industry and commercial service zones support transfer, events, and daily consumption; community zones add health, education, housing support, and local services. These are design relationships, not statutory land approvals.[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 
@@ -149,7 +149,7 @@ Materials are durable, repairable, and low carbon. Historic steel and masonry re
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-The network combines one continuous walking-cycling spine, three types of transverse stitching, and multiple station interfaces. The spine separates walking, cycling, accessible movement, and maintenance where space permits. Transverse links connect campuses and parks, communities and services, and waterways and streets. Station work starts with direct walking paths, bicycle parking, ground-floor legibility, and safe night conditions. ROAD-001 is a design relation, not a road red line.[data:geometry/roads.geojson#ROAD-001]
+The network combines one continuous walking-and-cycling spine (the belt's Walking and Cycling Network), three types of transverse stitching, and multiple station interfaces. The spine separates walking, cycling, accessible movement, and maintenance where space permits. Transverse links connect campuses and parks, communities and services, and waterways and streets. Station work starts with direct walking paths, bicycle parking, ground-floor legibility, and safe night conditions. ROAD-001 is a design relation, not a road red line.[data:geometry/roads.geojson#ROAD-001]
 
 Large roads, especially the North Fifth Ring, are continuity risks. The order of work is to improve existing crossings and wayfinding, test bridge-under spaces and light interventions, and only then compare new bridge or tunnel works. Any major crossing requires transport, structural, utility, fire, and accessibility studies.
 
@@ -216,7 +216,7 @@ Boundary uncertainty is the first risk: while official polygons are absent, spat
 
 AI scenarios manage data, model, operational, and equity risk. Data is minimised, purpose-limited, deleted on schedule, and revocable, with the Civic Data Placard as the uniform carrier. Model cards disclose scope and error. Operations provide takeover, safe degradation, and stop controls, with the Scenario Exit Valve applying to all twelve scenarios. Diverse users participate in equity tests. High-risk civic decisions are not fully automated, and every service has a non-digital alternative and an appeal channel.
 
-The bilingual text, figures, HTML, and PDFs were assembled for this submission. Spatial figures are redrawn from the repository's public provisional geometry. International cases use institutional pages for analytic reference and do not copy imagery. The offline visual loads no remote scripts, tiles, fonts, frames, forms, or tracking. Necessary model provenance remains in agent.json, manifest.json, and the copyright statement; public deliverables contain only final design material and the provenance required by the repository contract.[source:OPEN-CALL-SKILL]
+The bilingual text, figures, HTML, and PDFs are original works of this submission. Spatial figures are redrawn from the repository's public provisional geometry. International cases use institutional pages for analytic reference and do not copy imagery. The offline visual loads no remote scripts, tiles, fonts, frames, forms, or tracking. Necessary model provenance appears in agent.json, manifest.json, and the copyright statement; public deliverables retain only final design material and the provenance required by the repository contract.[source:OPEN-CALL-SKILL]
 
 The package uses COMMUNITY-DISPLAY-ONLY. Official announcements, institutional sites, and repository rules retain their respective rights. Implementation requires review by the relevant professionals, rights holders, and authorities.
 

@@ -1,5 +1,10 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.10 - 2026-08-17
+
+- 过程叙述改状态陈述（“由提交者在本次工作流中形成”→“是本提交的原创成果”）；英文版章节标题与首现术语对齐术语表（Demolish–Renovate–Retain、Walking and Cycling Network）。
+  Converted process narration into state statements and aligned English headings and first-use terms with the terminology glossary (Demolish–Renovate–Retain, Walking and Cycling Network).
+
 ## v1.9 - 2026-08-17
 
 - 新增五项首批运营指标的定义表（定义/基线建立/责任人），落实“先发布定义再报数”的指标纪律。
