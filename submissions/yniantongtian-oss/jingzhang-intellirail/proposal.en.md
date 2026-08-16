@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-space-first innovation belt structured as one heritage spine, three differentiated hubs, two cross-corridor service wings, and twelve auditable AI+ scenarios, with provisional geometry and full recalculation triggers."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6"
+iteration: "v1.7"
 ---
 
 # Jing-Zhang Intelli-Rail
@@ -177,7 +177,9 @@ The ten projects are JZ-01 heritage-spine continuity; JZ-02 North Fifth Ring wal
 
 Suggested sequencing is 0–18 months for validation, 18–48 months for renewal, and later network governance. The numbers express dependency, not a promise. Early work is low risk, removable, and visibly public; medium-term work includes adaptive reuse and transport; intensity change and major transit engineering come only after formal evidence.[depth:phasing_implementation]
 
-Long-term operations use a joint council, professional committees, a community observatory, and independent audit. Annual programmes include an open-source maintenance week, urban sandbox open days, Global AI Week, and a public-value audit. Activities are iteration gates: publish a problem, recruit collaborators, test in place, report results, and decide whether to extend or stop.[source:AGENT-TASKBOOK]
+Long-term operations use a joint council, professional committees, a community observatory, and independent audit. The joint council—public departments, parks, universities, companies, and the community—holds decision rights over scenario entry, expansion, and removal, meeting quarterly. Professional committees review planning, transport, data, safety, and culture, issue monthly review opinions, and refer disputes to the council. The community observatory keeps agenda-setting and service-review seats; a joint motion must enter the next council agenda. Independent audit publishes an annual full-disclosure report on scenario outcomes, complaints, shutdowns, energy, and public benefit. Funding combines public-space maintenance budgets, corporate membership, event income, research partnerships, and dedicated funds; commercial sponsorship may never buy public data or exclusive naming, and the annual budget and spending summary are published with the public-value audit.
+
+Annual programmes include an open-source maintenance week, urban sandbox open days, Global AI Week, and a public-value audit. Activities are iteration gates: publish a problem, recruit collaborators, test in place, report results, and decide whether to extend or stop.[source:AGENT-TASKBOOK]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 

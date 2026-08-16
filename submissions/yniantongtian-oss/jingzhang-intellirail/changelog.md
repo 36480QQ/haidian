@@ -1,5 +1,10 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.7 - 2026-08-17
+
+- 治理机制具体化：理事会决策权与季度例会、专业委员会月度审查与异议裁决、观察团联名动议必入议程、审计报告全文公开、年度预算随公共价值审计公开。
+  Concretised governance: council decision rights with quarterly meetings, monthly committee reviews with dispute referral, mandatory agenda entry for joint observatory motions, full-disclosure audit reports, and annual budget publication alongside the public-value audit.
+
 ## v1.6 - 2026-08-17
 
 - 命名并贯穿三个原创机制：场景退出阀（阈值—暂停—复盘—退出）、公共数据卡（无卡不运行）、双轨识别系统（深蓝×玉绿双线）；风险章与识别章同步引用。
