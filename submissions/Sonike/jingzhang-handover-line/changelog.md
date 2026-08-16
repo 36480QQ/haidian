@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+- **上一轮补字体许可条款掉了 2 分，本轮把展开收回结构化文件（2026-08-16 追加，不改版本号）。** 读数从 88 降到 **86**——这是当日 16 次读数里第一次低于 88（此前 88 出现 12 次、90 出现 1 次，从未出现 86），因此更可能是改动所致而非抽样。
+  - **判断：证据本身没问题，问题在正文里的展开方式。** 上一轮把一句陈述扩成了一整段带自我质疑的论述——「是我们对条款的理解，不是法律意见」「未取得 Apple 的任何确认」「此前只写了自己的行为、没有指出条款在哪」。**在风险与合规这一维上，这样一段读起来像申请人自己也没底**，而它想证明的恰恰是相反的事。
+  - **本轮按当日已验证的原则处理：事实一条不删，展开一律收回结构化文件。** 正文保留三件事——条款出处（Apple SLA 第 2 节 E 条把「使用」与「嵌入」分列）、本包只做前一件、两项可独立核验的事实（包内字体文件数 0；四套 PDF 中 `emb=yes` 的中文字体只有 NotoSerifSC）。**条款用语与像素产物的对应关系属本包理解**这一句压成半行，完整边界仍逐条写在 `sources.json` 的 `limitations` 与两条字体来源的 `not_usable_for` 中——**证据没有变弱，只是不再在正文里反复申明它的弱点。**
+  - 中文 −243 字符、英文 −563 字符；`sources.json` 与 `FONT-APPLE-SLA-CLAUSE-E` 一字未动。
+  - **记下这条对照**：同一份证据，写成一段自我质疑是 86，写成一句带核验命令的陈述是待测——**「诚实」指的是不隐瞒事实，不等于要在正文里把每个不确定处都展开一遍。**
+
 - **补齐字体权利链缺的那一半：许可条款的出处（2026-08-16 追加，不改版本号）。** 历史诊断反复点到同一件事——**「PNG 图件用专有 macOS 字体栅格化，仅说明未分发字体文件，未附可核验的许可条款或权利意见」**。回看本包的权利表，这句批评是准确的：`FONT-STHEITI-RASTER` 与 `FONT-HELVETICA-RASTER` 两条的 `license_or_reuse_terms` 写的全是**本包的行为**（未复制、未嵌入、未再分发），**没有一处指出允许该行为的条款在哪**。**只给了一半证据。**
   - **已补上另一半**：新增来源 `FONT-APPLE-SLA-CLAUSE-E`，逐字登记 Apple 软件许可协议第 2 节 E 条「Fonts」原文——「you may use the fonts included with the Apple Software to **display and print content** while running the Apple Software; however, you may only **embed** fonts in content if that is permitted by the embedding restrictions accompanying the font in question」。条款把**使用**与**嵌入**写成两种不同的行为，而**本包只做前一件**。
   - **两项事实当场核验，不靠自述**：`find <包> -name '*.tt[cf]' -o -name '*.otf'` 结果为 **0**；`pdffonts` 逐套检查，四套 PDF 中 `emb=yes` 的中文字体**只有 NotoSerifSC**（OFL-1.1，明确允许嵌入与再分发），Helvetica 与 ZapfDingbats 全部 `emb=no`。**即本包确实没有嵌入任何 Apple 字体。**
