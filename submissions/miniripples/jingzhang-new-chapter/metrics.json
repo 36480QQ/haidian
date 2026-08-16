@@ -222,14 +222,45 @@
     },
     "user_personas_count": {
       "status": "known",
-      "value": 5,
+      "value": 10,
       "unit": "count",
       "source_files": [
-        "proposal.md"
+        "proposal.md",
+        "proposal.en.md"
       ],
       "formula": "count(personas_in_proposal)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "Five innovation-ecosystem personas and five inclusion personas are explicitly mapped in both language versions."
+      ]
+    },
+    "inclusive_personas_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(inclusion_personas_in_proposal)",
+      "confidence": "high",
+      "assumptions": [
+        "Includes older people, child carers, disabled people, low-income community residents, and night workers."
+      ]
+    },
+    "non_digital_fail_safe_layers_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(non_digital_service_safeguard_layers)",
+      "confidence": "high",
+      "assumptions": [
+        "Human kiosks, accessible printed guidance, and human review or appeal are proposal commitments subject to operating-detail confirmation."
+      ]
     }
   }
 }
