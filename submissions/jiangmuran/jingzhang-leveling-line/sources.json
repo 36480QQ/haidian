@@ -218,7 +218,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "自采语料统计只描述已合入方案的公开字段，**不评价任何方案的质量**，不作为空间结论或法定管控的证据；语料每日变动，任何引用须复算。",
-      "does_not_support_en": "The corpus census describes public fields in merged submissions only. **It judges no submission's quality**, is not evidence for a spatial conclusion or for statutory control, and the corpus changes daily, so any citation must be recomputed."
+      "does_not_support_en": "The corpus census describes public fields in merged submissions only. **It judges no submission's quality**, is not evidence for a spatial conclusion or for statutory control, and the corpus changes daily, so any citation must be recomputed.",
+      "timeliness_level": "T0",
+      "timeliness_level_note_zh": "T0：按组织方 `brief/source-quality-rules.md` 的定义——「2026 年发布，或项目征集期内发布」——本条是征集期内自采并逐次重跑的测量，取回日期随包（`census.json` 的 `retrieved`）。此前本条只在 `authority_level` 上写了「不属该表分档」，而 `timeliness_level` 整个字段缺省——**一条声称逐条给出两个分级的说明，漏了两条**（E202）。"
     },
     {
       "id": "OSM-REFERENCE-2026-08",
@@ -247,7 +249,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "众包测绘不是官方道路中心线、用地边界或权属界线；缺失只说明地图上没有，不等于现场没有。定级 background_only，只用于定位差异，**不判定谁对**。",
-      "does_not_support_en": "Crowd-sourced mapping is not an official centreline, land-use boundary or tenure line, and absence from the map is not absence from the ground. Graded background_only: it locates a discrepancy and **does not decide which side is right**."
+      "does_not_support_en": "Crowd-sourced mapping is not an official centreline, land-use boundary or tenure line, and absence from the map is not absence from the ground. Graded background_only: it locates a discrepancy and **does not decide which side is right**.",
+      "timeliness_level": "T0",
+      "timeliness_level_note_zh": "T0 指的是**取回时刻**（2026-08-08，在征集期内），不是底下那些众包编辑的年龄：OSM 的每个要素各有自己的最后编辑时间，本包没有逐要素取回该时间，因此不为其声称任何时效。这条区别写在这里，是因为把取回日期当作数据年龄，正是本包在别处拒绝的那种含糊。"
     },
     {
       "id": "BARRIER-FREE-ENVIRONMENT-LAW",
@@ -615,8 +619,8 @@
       "does_not_support_en": "Used only to list missing material and depth reminders. It supports no architectural depth conclusion: structure, services, fire, cost and constructability are all outside what this package concludes."
     }
   ],
-  "source_quality_note_zh": "组织方在 `brief/source-quality-rules.md` 里发布了权威等级 A0–A3 与 X（不入库）以及时效等级 T0–T4。本包此前只用自己的证据上限（evidence_class），从未按这份已发布的分级说明自己的来源。此处补上：逐条给出 authority_level 与 timeliness_level，**并逐条核对没有任何一条落在 X（商业地图瓦片、账号内资料、下载密码资料、版权不明图片、非公开图件、个人信息）**。两条不属于该表所描述的类别，写明理由而不是硬套一个档次。",
-  "source_quality_note_en": "The organisers publish authority levels A0-A3 plus X (never indexed) and timeliness levels T0-T4 in brief/source-quality-rules.md. This package had only ever used its own evidence ceiling and had never described its sources in the published grading. Each source now carries an authority level and a timeliness level, and each was checked against X - commercial map tiles, account-gated or password-protected material, unclear-copyright images, non-public drawings, personal information - with none falling there. Two sources are outside what that table describes and say why rather than being forced into a level that does not fit.",
+  "source_quality_note_zh": "组织方在 `brief/source-quality-rules.md` 里发布了权威等级 A0–A3 与 X（不入库）以及时效等级 T0–T4。本包此前只用自己的证据上限（evidence_class），从未按这份已发布的分级说明自己的来源。此处补上：逐条给出 authority_level 与 timeliness_level，**并逐条核对没有任何一条落在 X（商业地图瓦片、账号内资料、下载密码资料、版权不明图片、非公开图件、个人信息）**。两条不属于该表所描述的类别，写明理由而不是硬套一个档次。**两条自采来源的 `timeliness_level` 此前整字段缺省**——当时只对 `authority_level` 写了「不属该表分档」的理由，而这句话声称的是逐条给出两个分级。现已补上，并写明 OSM 那条的 T0 指取回时刻、不指众包编辑的年龄（E202）。",
+  "source_quality_note_en": "The organisers publish authority levels A0-A3 plus X (never indexed) and timeliness levels T0-T4 in brief/source-quality-rules.md. This package had only ever used its own evidence ceiling and had never described its sources in the published grading. Each source now carries an authority level and a timeliness level, and each was checked against X - commercial map tiles, account-gated or password-protected material, unclear-copyright images, non-public drawings, personal information - with none falling there. Two sources are outside what that table describes and say why rather than being forced into a level that does not fit. Both self-collected records had no `timeliness_level` field at all - the carve-out written at the time covered only the authority scale, while this sentence claims both are given for every record. They now carry T0, and the OSM record states that T0 is the retrieval moment and not the age of the crowd edits behind it (E202).",
   "required_field_mapping_zh": {
     "note": "组织方在 `brief/source-quality-rules.md` 第 5 节列出「入库前必须记录」的十三项。本包此前用的是自己的一份十二项清单，并在闸门读数里称其为「同样的核心字段」——**同样的，指的是本包自己那一份。** 此处逐项对上，并写明哪一项由哪个字段回答。",
     "标题": "title / title_en",

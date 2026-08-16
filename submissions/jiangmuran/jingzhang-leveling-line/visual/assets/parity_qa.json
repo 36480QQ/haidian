@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.834,
+ "overall_ratio": 0.833,
  "floor": 0.75,
  "sections": [
   {
@@ -40,9 +40,9 @@
   },
   {
    "section": "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
-   "zh_chars": 2079,
-   "en_words": 1413,
-   "ratio": 0.867,
+   "zh_chars": 2114,
+   "en_words": 1420,
+   "ratio": 0.857,
    "pass": true
   },
   {
@@ -90,8 +90,8 @@
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
    "zh_chars": 5958,
-   "en_words": 3614,
-   "ratio": 0.774,
+   "en_words": 3610,
+   "ratio": 0.773,
    "pass": true
   },
   {
@@ -111,7 +111,7 @@
   {
    "section": "References",
    "zh_chars": 5167,
-   "en_words": 3135,
+   "en_words": 3134,
    "ratio": 0.774,
    "pass": true
   }
