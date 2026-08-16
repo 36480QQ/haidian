@@ -15,6 +15,8 @@ class FrontendLanguageStoragePageTests(unittest.TestCase):
         start = source.index("// ── i18n engine") if page == "index.html" else source.index("function normalizeLanguage")
         end = source.index("const STATUS_META", start)
         helper = source[start:end]
+        harness_source = helper + "\nglobalThis.__language = lang; globalThis.__initial = initialLanguage; globalThis.__remember = rememberLanguage;"
+        encoded_harness_source = json.dumps(harness_source)
         script = f"""
 const vm = require('vm');
 const storage = {{
@@ -24,7 +26,7 @@ const storage = {{
   setItem(key, value) {{ if ({str(fail_set).lower()}) throw new Error('blocked'); this.value = value; this.writes.push([key, value]); }}
 }};
 const context = {{ localStorage: storage, navigator: {{ language: {json.dumps(browser)} }} }};
-vm.runInNewContext({json.dumps(helper + "\nglobalThis.__language = lang; globalThis.__initial = initialLanguage; globalThis.__remember = rememberLanguage;")}, context);
+vm.runInNewContext({encoded_harness_source}, context);
 let remembered = null;
 try {{ context.__remember('en'); remembered = {{value: storage.value, writes: storage.writes}}; }} catch (error) {{ remembered = {{error: String(error)}}; }}
 console.log(JSON.stringify({{initial: context.__language, afterWrite: remembered}}));
