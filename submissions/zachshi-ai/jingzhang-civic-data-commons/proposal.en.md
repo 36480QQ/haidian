@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Restructuring the Jingzhang AI Innovation Belt into a service-oriented city spine built on 'data as a public good': one spine (the open civic-data axis), three hearts (Zhongzhiyuan data factory, AI-Origin community service living room, Dazhongsi enterprise data port), and many nodes (citizen-participatory AI service pods). Public data opens along the belt; citizens and developers co-create AI services at co-creation nodes; the digital platform and physical space are designed as one, forming a governable, experienceable, and replicable civic-data commons."
 tracks: ["ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide"]
-iteration: "v1.0"
+iteration: "v4.0"
 ---
 
 # Jingzhang AI Civic Data Commons: A Co-Created Service-Oriented City Spine
@@ -222,6 +222,27 @@ The chronic problem with public-data opening is "declared open, yet no one can t
 **Rule-closure verification.** `run_receipt_tabletop.js` correctly classifies all 72 synthetic cases from 12 receipts × 6 rule branches (complete / missing purpose / missing human review / missing retention period / deletion missing / closed without deletion) — 48 blocked / 12 auditable / 12 flagged — proving that the receipt rules are logically closed. This proves only classification correctness, however, and does not constitute data authorization, compliance, or evidence of actual use; on-site performance remains null, with status `not_authorized_not_run` [data:visual/assets/receipt-tabletop-evidence.json#blocked].
 
 **Relationship with "data as a public good."** The Data Receipt mechanism makes "public good" live up to its name: when data is used, it is like a public item being lent out — there must be a loan record, a return period, and a responsible person. The ledger is public (de-identified) and open to public and regulatory inspection, and every receipt has a named human reviewer — the whereabouts of data go from "no one knows" to "everyone can check" [source:public-data-policy].
+
+### Data Reconciliation: Internalizing Double-Entry Bookkeeping (original to this proposal, v4)
+
+Data receipts solve "every use is recorded," but single-entry records capture only the user side. This proposal transplants the **double-entry bookkeeping and period-end reconciliation** methodology from accounting: every data use must be recorded as a pair — **debit** (the user receives the data), **credit** (the public data pool records this use) — and the period-end reconciliation must balance [E:DATA-RECONCILIATION].
+
+**Three reconciliation rules:**
+- **R1 Paired bookkeeping:** every data use must be booked as a debit–credit pair; an imbalance is flagged as a discrepancy. Data is not "taken away" but "lent out with a record."
+- **R2 Period-end reconciliation:** at the end of each quarter, verify the debit–credit balance, retention periods, and deletion records of all receipts; discrepancies must be clarified before the next reconciliation cycle. **A receipt that cannot be balanced is a discrepancy, not a settled record.**
+- **R3 Public results:** reconciliation results are made public (de-identified), and discrepancy records enter the public ledger for public and regulatory inspection.
+
+**No-data baseline (negative space).** Even with no data services at all, citizens can still complete basic services through manual counters, paper forms, and community networks. Data services are a closable overlay layer; reconciliation ensures that closing them leaves **no unsettled records** — just as books are settled before closing the account, the ledger must balance before data services are shut down [data:visual/assets/reconciliation-ledger.json#negative-baseline].
+
+**Double-entry ledger for the 12 datasets** (full version in `visual/assets/reconciliation-ledger.json`; debit–credit paired, balanced quarterly):
+
+| Dataset | Debit (user receives) | Credit (public pool records) | Balance |
+| --- | --- | --- | --- |
+| Public-space openness data | Service operator – route planning | Public pool – use record (90 days / delete) | ✓ |
+| Cultural-heritage site public information | Developer – guide generation | Public pool – use record (365 days / retain) | ✓ |
+| Public-feedback aggregate statistics | Research – quality improvement | Public pool – use record (180 days / delete) | ✓ |
+
+**Relationship between reconciliation and receipts:** a receipt is the record of each transaction, and reconciliation is the general ledger of all records. A single receipt may look complete while the whole fails to balance — reconciliation is how this "individually complete, collectively unbalanced" loophole is caught [source:data-security-law].
 
 ### Open-Data Policy Roadmap
 

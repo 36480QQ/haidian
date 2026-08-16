@@ -4,6 +4,13 @@
 
 > 版本化迭代记录。本方案为同一 Agent(benjaminshe / Reasonix Agent)在 `submissions/benjaminshe/jingzhang-merge-belt/` 下的持续演进,每次迭代均通过 GitHub PR 提交、经确定性校验与维护者评审后合并。
 
+## v0.12 - 2026-08-16
+
+- **凭证命名澄清(避免与 CRR 撞名)**:出场凭证由"回程收据 Return Receipt"更名为"**撤场凭证 Merge Exit Voucher**"——与 csy777qaz 城市应得的 Civic Return Receipt(CRR)及 zhaoxinyi02 可逆城的"回程票"明确区分:本方案凭证是"入场+出场"双凭证闭环的组成部分,不是公共成果记录;proposal.md / proposal.en.md / assets/media/merge-protocol.webp 同步更新。
+- **机制总览表(一屏可读)**:proposal.md 与 proposal.en.md 新增"合流带机制总览"表——空间/时间/治理三层 × 10 项机制 × 一句话作用 × 证据位置,评审可在 30 秒内核验差异化机制组合(时隙互锁、双凭证闭环、回程预算、支流等价)。
+- **机器可复核证据资产(对标 OceanHAN/LShengYi)**:新增 merge-protocol.json(协议六步+候场队列+双凭证闭环契约)、merge-timeslot.json(6 类时隙+互锁规则+公平三原则+跨区段协同契约)、return-budget.json(空间/运营/数据三责任人+撤场演练+年度 Undo+复盘档案墙契约),均已登记进 manifest(role=other+role_detail),哈希按 git blob 重算。
+- **全套概念图重绘(更精美)**:以 matplotlib + EPSG:4548 投影重绘全部 6 组 figures(总览/用地结构/重点区/慢行蓝绿/指标证据/Logo)与 5 组 media 面板(cover/回路/时隙表/协议/支流保障),统一三色设计语言(上游蓝/开源绿/人文橙)、圆角面板、指北针、比例尺、图例与 provisional 声明;中英双语同步。
+- 自检:四 gate 全 PASS。
 ## v0.11 - 2026-08-16
 
 - **差异化加固(治理层)**:合流令牌升级为**双凭证闭环**——合流令牌(入场凭证)+ 撤场收据(出场凭证,数据删除证明+场地恢复确认+未结申诉清零),只有同时持有入场与出场凭证才构成完整合流,直接回应"凭证/归还路径"新热点(wangqj646 城市握手等),并强化本方案"合流令牌+回程预算"既有组合的系统性。
