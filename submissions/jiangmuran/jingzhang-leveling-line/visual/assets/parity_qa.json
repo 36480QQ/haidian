@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.821,
+ "overall_ratio": 0.817,
  "floor": 0.75,
  "sections": [
   {
@@ -82,9 +82,9 @@
   },
   {
    "section": "Renewal Projects, Implementation Policy, and Phasing",
-   "zh_chars": 2603,
-   "en_words": 1687,
-   "ratio": 0.827,
+   "zh_chars": 2920,
+   "en_words": 1755,
+   "ratio": 0.767,
    "pass": true
   },
   {
@@ -97,8 +97,8 @@
   {
    "section": "The instrument turned on itself",
    "zh_chars": 9402,
-   "en_words": 5652,
-   "ratio": 0.767,
+   "en_words": 5574,
+   "ratio": 0.756,
    "pass": true
   },
   {
