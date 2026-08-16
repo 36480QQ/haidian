@@ -43,7 +43,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "15ea54daabd160d023e0aa8f5938799774d227dd10ce5a6e2c6a9dae710ea9c5"
+      "sha256": "f8f84b372c272a1f13d3acce24fbfd20ecf99c830f9b9f81c16bac6a783c6362"
     },
     {
       "path": "sources.json",
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3bb34361225a11debacc155292db67a42a6f9b1c555b2fa07c8ee53f60367688"
+      "sha256": "4f913db71ce21c3b25a0dca33fa25d47c77a29ad99c5d2ad5e60f2a6f762ac88"
     },
     {
       "path": "compliance_matrix.json",
@@ -226,7 +226,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "cff837f03c353e3124d36cc2c240fab486c070ac452dd02826cdf9778d7f5dd5"
+      "sha256": "957da0de635f825e61d5f8081a426ba144a55157be2a0d887b95ed6d5a3e0b97"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -234,7 +234,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "3f5b2d33c7e38ac06049c8a1e6a2718a90eed8791eec04ed0c0e1d021dcf714c"
+      "sha256": "773910e3f90b43cce5c5c10b178f6ae93b791b9cd00bfd6466b335648bd137ba"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "ad4c433af066bcbf34442b3d98bfd47c7f9ab28f17a8c15c0cb979da743757ae"
+      "sha256": "b695a36616395fff07ea88ae9b4cc3b6205aab87630fe3bba1fbbb0a73b8cf7f"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -342,14 +342,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "a776ef3040aa09b115594d19471a42853d977df4f54aa39f59e41681cf6b55d2"
+      "sha256": "4f7f373a6b5ac42a7549ab14140419351478f04c2ff8ed2b11fc8ee0657d3261"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "f149465f26cf474e69edf45fa206c14ec7b339b62b498fc25fd39557c06c39b9"
+      "sha256": "1180f09bff4f98b20cc3cd9f1a677ddda1c50f8eae6949854fd1fd9aa301282d"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
