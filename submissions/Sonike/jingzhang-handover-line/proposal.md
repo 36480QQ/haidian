@@ -432,7 +432,7 @@ English brief — **One test decides everything here: for any AI service on this
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统以2,264,695.802平方米概念绿地 [metric:green_space_area_sqm] 形成0.198434的结构性绿地比例 [metric:green_ratio]，公共交接面1,039,257.211平方米 [metric:public_space_area_sqm]，占比0.091060 [metric:public_space_ratio]。两者分别见 [data:geometry/green_space.geojson#GREEN-01] 与 [data:geometry/public_space.geojson#PUBLIC-01]。这些是基于临时范围的设计面积，并非现状绿地率或审定控规指标；它们用于验证连续树荫、雨洪、休息、慢行和公共测试是否有足够空间承载。空间策略响应 [depth:blue_green_public_space]。
+蓝绿系统以2,264,695.802平方米概念绿地 [metric:green_space_area_sqm] 形成0.198434的结构性绿地比例 [metric:green_ratio]，公共交接面1,039,257.211平方米 [metric:public_space_area_sqm]，占比0.091060 [metric:public_space_ratio]。两者分别见 [data:geometry/green_space.geojson#GREEN-01] 与 [data:geometry/public_space.geojson#PUBLIC-01]。这些是基于临时范围的设计面积，并非现状绿地率或审定控规指标；它们用于验证连续树荫、雨洪、休息、慢行和公共测试是否有足够空间承载。空间策略响应 [depth:blue_green_public_space]。**这两个比例是概念结构在临时边界上的占比，不是现状净增量**——正式现状用地、树木、水文、地形、公共空间与生态本底数据均未取得，该缺口连同其复算触发器与受影响文件登记在 A-BASELINE-001；现状测绘、生态调查与海绵专项完成后，两项比例须全量复算。
 
 公共界面的成立与否，不取决于任何一件设施做得多好，而取决于要素的次序。人工窗口、连续无障碍步道与物理停用入口三者必须连续可达，机器专用道不得插入其间；保留铁轨齐平嵌入铺装，是线索而不是障碍。下面的断面只固定这一层——次序与相邻规则。宽度、标高与工程做法取决于道路红线和现状测绘，公开资料包尚未提供，因此本图不标注任何尺寸，道路面积与道路率在 metrics.json 中继续保持 [metric:road_area_sqm]、[metric:road_ratio] 未赋值。
 
@@ -647,7 +647,7 @@ English brief — **One test decides everything here: for any AI service on this
 
 三条边界写进了 schema 而不只是写在正文里：`baseline` 与 `target` 的类型被约束为 `null`，任何数值都无法在不修改 schema 的前提下悄悄写入；缺失值处理一律禁止插值与用区级平均值替代；发布门槛任一条不成立，指标即保持未赋值。所以这不是“把赋值推给别人”，而是把赋值方法交出来接受质疑——公布测量协议不等于公布目标，口径与频率属于方法，目标值属于主管部门决策。
 
-compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；standard_matrix.json覆盖六项标准；design_depth_matrix.json覆盖十五项专业深度。确定性、空间、视觉和专业检查共同验证机器可读包，人工评审仍拥有最终判断。建筑强度与高度保持unknown，是合规结果而非遗漏。整个矩阵由 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 和 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 统领。
+compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；standard_matrix.json覆盖六项标准；design_depth_matrix.json覆盖十五项专业深度、状态一律 `complete`——**这不是自评满分，而是正式阶段的硬性要求**：`validate_submission.py:2010` 规定 formal 阶段每一项必须为 `complete`，否则确定性校验直接失败（schema 允许的 `data_gap` 只适用于更早阶段）。**因此「complete」在这里的含义是「该深度项已被回应」，不等于「其中的法定量已确定」**：开发强度与建筑高度的定量控制当前仍未赋值，缺口按口径记在 metrics.json 的 unknown、A-CONTROLS-001 与本节，不以估算填充。确定性、空间、视觉和专业检查共同验证机器可读包，人工评审仍拥有最终判断。建筑强度与高度保持unknown，是合规结果而非遗漏。整个矩阵由 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 和 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 统领。
 
 **规则检查以矩阵示于图面：每一格是一次检查。** 上排十二格是十二条交接账的基线，下面七行是七条协议规则各自的缺陷注入，横向十二个场景——12 + 84 = **96 格**。图上带色键：青格是基线通过，**红格是「注入了缺陷并被挡下了」**——84 条注入全部被拦截，漏检 0，schema 错误 0。把它画出来而不只写成数字，是因为「规则真的会拦住东西」这件事只有逐格摆开才可核对 [data:visual/assets/governance/rule-check-report.json]。
 
