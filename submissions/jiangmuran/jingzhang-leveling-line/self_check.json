@@ -135,7 +135,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 87 zh / 87 en unit-carrying measurements in prose, same set in both editions; 187/173 bare numbers reported but not blocked, and one designed check (85 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 87 zh / 87 en unit-carrying measurements in prose, same set in both editions; 188/174 bare numbers reported but not blocked, and one designed check (85 candidates) not shipped"
     },
     {
       "check_id": "PKG_CLAIM_STATE_QA",
@@ -263,7 +263,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 57 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 104 bytes to spare. The package totals 39.9 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 57 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 52 bytes to spare. The package totals 39.9 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -303,7 +303,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 562 distinct names harvested from the package — 546 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 563 distinct names harvested from the package — 547 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_ORGANISER_REVIEW_QA",
@@ -551,7 +551,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 240 条，按发现者：audit 25、external 28、external-reviewer 5、own-gate 17、rival-read 5、self 160；最常见形状：check-measured-the-convenient-thing 44、two-copies-of-one-thing-drifted 35、deliverable-not-inspected-before-shipping 27、claim-outlived-the-package 19。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 240 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 241 条，按发现者：audit 26、external 28、external-reviewer 5、own-gate 17、rival-read 5、self 160；最常见形状：check-measured-the-convenient-thing 44、two-copies-of-one-thing-drifted 35、deliverable-not-inspected-before-shipping 27、claim-outlived-the-package 19。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 241 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
