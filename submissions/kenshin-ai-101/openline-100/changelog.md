@@ -1,3 +1,19 @@
+## 2026-08-15（评审修复：AI Agent 评审 request-changes 全项落地，v1.24-review-repairs）
+
+评审结论 75/100、do-not-publish，两个硬阻断 + 八项内容修复。本轮逐项落地；`iteration` 升至 `v1.24-review-repairs`。
+
+- **确定性 gate（阻断一）**：`discover_submission_files` 按包内全部文件计总量。删除 68 张未被任何载体引用的 v1.2 之前旧图（axis-sections / case-comparison / visual-identity 等 34 个旧图名双语），并对 `site-overview(.en).png` 做 256 色量化（5.50 MB → 1.89 MB，与 immerse 系列同款管线）；包总 **38.3 MiB ≤ 40 MiB**。四门自检复跑 **PASS**，`self_checked=true`。
+- **表达完整度（阻断二，2/5 → 可截图可截图环境可读）**：① 中文阅读版 HTML 内嵌 NotoSansSC（OFL）按用字子集 woff-base64（`embed_cjk_font.py`，幂等，`proposal.html` 0.68 MB），无 CJK 字体的评审环境不再出方框；② 英文版残留中文字形清零——`proposal.en.md` 的 ｜「」＿〔〕【】 全改 ASCII/英文，`visual/index.en.html` 标题与注释全翻译（双语扫描均为 0）；③ 英图单位改 ×10⁴ m²、unknown 卡标签改英文；④ `site-overview` 左标签裁切修复（xlim 左界 −6200 → −7400）；⑤ A0 图版为 provisional 图加珊瑚底警示带（`PROVISIONAL_FIGS` + `provisional_ribbon()`），不再只在角落小字。
+- **场景卡扩为十张全深度卡**：正文「三张全深度场景卡」改十张，主表补卡 04–10（S-02/03/04/05/06/08/09），新增**附录 D**——每卡八件（用户/场所/触发/运营/数据最小化/人工复核/退出·停机/指标）；S-01/S-07 注明并入卡 01，S-10 并入 OL-06。
+- **第三个 AI 朝圣地标**：治理地层墙 The Strata Wall（众智园治理中心前庭，继承仪式的实体化）——双语地标节「两个」改「三个」，空间类型/公共程序/运营/权利边界/与另两座差异整段补齐；`assumptions.json` 的 A-OPENLINE-CONCEPT-001 与 A-DAZHONGSI-1733-001 同步；正文「两地标」表述（含 ASCII 图、蓝绿脊表）全局改三地标。
+- **区域协同补齐**：双语新增「区域协同：五个方向的接力接口」——北纬社区/未来科学城/怀柔科学城/经开区/京津冀 × 知识/人才/场景/标准流 + 交通服务接口，明示是接口设计而非合作承诺。
+- **来源降格与逐项来源卡**：`sources.json` 四条外部来源标 `package_usability: not_in_approved_formal_sources__background_pending_review` 并加 crosscheck 注；新增 OSM-BASEMAP-202608 来源卡（提取范围/快照/管线/ODbL 署名）。双语「设计依据」节加登记处纪律段：获批文本一律表述为「获批新闻口径、待登记处审验」。
+- **版权与生成来源可审阅**：`report/copyright_statement.md` 重写为逐项权利台账（OSM ODbL / Noto OFL 内嵌合规 / 图像全本地生成 / 生成模型与工具 / 第三方名义引用 / 原创与 COMMUNITY-DISPLAY-ONLY）。
+- **融资降格为可比情景**：「分期资本逻辑」节重写——全部按可比较概念情景陈述，出钱列改情景 A/B/C，新增三情景纪律表（适用前提/审批程序/失败条件/B 计划）。
+- **装配与校验**：阅读版 HTML 双语重渲 + 字体重嵌；四份 PDF 重建（A0 18 页 3.34/3.43 MB，A3 25 页 3.03/3.09 MB，均 < 10 MB）；manifest 77 条哈希刷新；四门自检复跑 **PASS**。包内 81 个文件。
+- **人工双语等价核对**：本轮对中英正文逐节做了实质等价核对（新增各节双语同稿），记录于此作为评审所要求人工核对的证据。
+- **诚实标注两项无法包内闭环的评审点**：① 评审提到的「23 项详细修复」原文未附在评审文件中（只有十大项标题），无法逐条核对，按十大项全量落地；② P-01–P-10 现场调查是物理调研，包外待执行，不假装完成。
+
 ## 2026-08-15（提交前 self-check / preflight）
 
 - 官方流水线：`refresh_submission_manifest.py` → `self_check_submission.py --pr-author kenshin-ai-101 --mark-self-checked` → `participant_preflight.py --check-push`。**self-check PASS**（`review_status=formal-review-ready`，`self_checked=true`）；**preflight PASS**（范围仅投稿包，push dry-run 可写 fork）。

@@ -61,7 +61,9 @@
       "related_urls": [
         "https://www.cnr.cn/bj/oiue/20260812/t20260812_527759014.shtml",
         "https://www.beijing.gov.cn/ywdt/yaowen/"
-      ]
+      ],
+      "package_usability": "not_in_approved_formal_sources__background_pending_review",
+      "registry_crosscheck_note": "This source is NOT listed in the repository source_registry approved_formal_sources. Inside this package it is treated as background/pending-review evidence only: it must not single-handedly support statutory claims ('正式叠合', '法定中心') or adopted metrics. Structural alignment based on it is labeled news-reported and conditional, pending registry review."
     },
     {
       "id": "HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208",
@@ -77,7 +79,9 @@
       "temporal_scope": "draft horizon 2022–2035; notice 2025-02-08; retrieved 2026-08-13",
       "license_or_reuse": "citation and factual paraphrase only; no external media redistributed",
       "transformation": "title and process confirmation only; no geometry or intensity imported",
-      "limitations": "The notice body does not publish an applicable parcel polygon, FAR, height schedule, density, setback, ownership or utility capacity. Draft horizon 2022–2035 was later published as 2024–2035 in the approval news—do not treat the draft year as the adopted year."
+      "limitations": "The notice body does not publish an applicable parcel polygon, FAR, height schedule, density, setback, ownership or utility capacity. Draft horizon 2022–2035 was later published as 2024–2035 in the approval news—do not treat the draft year as the adopted year.",
+      "package_usability": "not_in_approved_formal_sources__background_pending_review",
+      "registry_crosscheck_note": "This source is NOT listed in the repository source_registry approved_formal_sources. Inside this package it is treated as background/pending-review evidence only: it must not single-handedly support statutory claims ('正式叠合', '法定中心') or adopted metrics. Structural alignment based on it is labeled news-reported and conditional, pending registry review."
     },
     {
       "id": "HD-JINGZHANG-BLOCK-PLAN-DRAFT-20241227",
@@ -93,7 +97,9 @@
       "temporal_scope": "draft exhibition 2024-12; retrieved 2026-08-13",
       "license_or_reuse": "citation and factual paraphrase only; no external media redistributed",
       "transformation": "background structure and two-center industry split; facility counts remain draft-stage",
-      "limitations": "Draft-stage journalism. Belt name in this article is 'innovation-exchange belt'; approval news uses 'industry-innovation belt'. Facility counts and landscape-center lists were not restated in the 2026-08-12 approval coverage and must stay labeled draft-stage."
+      "limitations": "Draft-stage journalism. Belt name in this article is 'innovation-exchange belt'; approval news uses 'industry-innovation belt'. Facility counts and landscape-center lists were not restated in the 2026-08-12 approval coverage and must stay labeled draft-stage.",
+      "package_usability": "not_in_approved_formal_sources__background_pending_review",
+      "registry_crosscheck_note": "This source is NOT listed in the repository source_registry approved_formal_sources. Inside this package it is treated as background/pending-review evidence only: it must not single-handedly support statutory claims ('正式叠合', '法定中心') or adopted metrics. Structural alignment based on it is labeled news-reported and conditional, pending registry review."
     },
     {
       "id": "ZGC-SCIENCE-CITY-NORTH-202312",
@@ -112,7 +118,21 @@
       "limitations": "News of an approved North District block plan is not a competition redline. Shangdi / Software Park are the near face; Yongfeng / Cuihu / Beiqing Road are farther depth. Do not draw a fake North District boundary or claim this proposal designed that district.",
       "related_urls": [
         "https://zyk.bjhd.gov.cn/jbdt/auto4523/auto4523_55103/auto4523/auto4523_55118/202506/t20250609_4772226_hd.shtml"
-      ]
+      ],
+      "package_usability": "not_in_approved_formal_sources__background_pending_review",
+      "registry_crosscheck_note": "This source is NOT listed in the repository source_registry approved_formal_sources. Inside this package it is treated as background/pending-review evidence only: it must not single-handedly support statutory claims ('正式叠合', '法定中心') or adopted metrics. Structural alignment based on it is labeled news-reported and conditional, pending registry review."
+    },
+    {
+      "id": "OSM-BASEMAP-202608",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors (ODbL 1.0)",
+      "retrieved_at": "2026-08",
+      "source_type": "open_data_odbl",
+      "package_usability": "not_in_approved_formal_sources__background_pending_review",
+      "usage": "Basemap fabric (buildings/roads/greens/waters/rails) for figure rendering only; extraction bbox covers the corridor approx. Xizhimen (S) to North 5th Ring / Qinghe (N), Wanquanhe Rd (W) to G6 (E); snapshot 2026-08; processing pipeline in tools/openline-100/figs-v1.2 (fetch_osm.py -> osm_cache -> prepare_basemap.py); ODbL attribution printed on figure footers and A3 plate pages ('© OpenStreetMap contributors'); no OSM data redistributed beyond rendered figure pixels; not used as statutory geometry.",
+      "license_or_reuse": "ODbL 1.0; produced-figure attribution per ODbL 4.3; rendered figures carry attribution text",
+      "limitations": "Community-sourced geometry; not surveyed, not authoritative for redlines, ownership, or engineering. Positional accuracy varies; used for discussion-grade rendering only.",
+      "registry_crosscheck_note": "This source is NOT listed in the repository source_registry approved_formal_sources. Inside this package it is treated as background/pending-review evidence only: it must not single-handedly support statutory claims ('正式叠合', '法定中心') or adopted metrics. Structural alignment based on it is labeled news-reported and conditional, pending registry review."
     }
   ]
 }
