@@ -408,7 +408,7 @@ Each of the three key areas carries one survey role, and the three check one ano
 
 The announcement's key-area clause does not only name the three areas. It assigns each one a **block type**, and the three differ on purpose - Zhongzhi Park **garden-type**, the Origin community **campus-adjacent**, Dazhongsi **city-type** - all ending in the same phrase, an AI innovation block.
 
-**None of those words occurred anywhere in this document, and what was missing was not vocabulary.** The three detailed-design sections answered the same question three times - one dominant land use plus some benchmarks. "Three areas from one template" is the review comment this proposal wants made falsifiable; the announcement had already written them as three types (E-PENDING).
+**None of those words occurred anywhere in this document, and what was missing was not vocabulary.** The three detailed-design sections answered the same question three times - one dominant land use plus some benchmarks. "Three areas from one template" is the review comment this proposal wants made falsifiable; the announcement had already written them as three types (E238).
 
 Each type is translated below into **the spatial condition a site visit could fail**, with every number drawn from a constraint this package already publishes:
 
@@ -1272,12 +1272,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-237 entries. By finder:
+238 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | Run against the shipped package, not a draft |
-| The author | 157 | Found while working |
+| The author | 158 | Found while working |
 | This package's own gate | 17 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 28 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1314,6 +1314,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Drawn without its ground | 2 |
 | Answers what it cannot | 2 |
 | A rule with nobody to apply it | 2 |
+| Answered in our own words, not theirs | 1 |
 | Attributed to a file that refuses | 1 |
 | Reported, ignored | 1 |
 | A non-index | 1 |
@@ -1797,7 +1798,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files, 1016 KB, 1,728 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files, 1019 KB, 1,729 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
