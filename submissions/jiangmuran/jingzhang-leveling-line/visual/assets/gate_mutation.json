@@ -784,6 +784,18 @@
       "why_en": "**Understating a reservation and overstating a result are the same distortion.** This mutation proves that a card-status count in the prose that stops matching the shipped JSON stops the build."
     },
     {
+      "id": "M84",
+      "gate": "formal_visual_metrics_qa.py",
+      "target": "visual/index.html",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把离线页上 `benchmark_count` 的声明值改成 9——**这一条不在组织方合同的三条里**，所以在 E237 之前，本包没有任何东西会发现它；而组织方的视觉复核会读到 9，`metrics.json` 里写着 8。",
+      "what_en": "Change the declared benchmark_count on the offline page to 9. **It is not one of the contract's three**, so before E237 nothing here would have noticed - while the organisers' visual review reads 9 against the 8 in metrics.json.",
+      "why_zh": "**页面声明的每一个数都会被读回去，不只是合同点名的那三个。** 这条变异要证明的是：任何一个声明值与 `metrics.json` 对不上，构建就停。",
+      "why_en": "**Every number the page declares is read back, not only the three the contract names.** This mutation proves that any declared value parting from metrics.json stops the build."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1018,7 +1030,7 @@
       "why_en": "**The reviewer scores seven dimensions and every one has to have somewhere to go.** This mutation proves that a dimension losing its mapping stops the build rather than quietly going unanswered."
     }
   ],
-  "caught": 83,
+  "caught": 84,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
