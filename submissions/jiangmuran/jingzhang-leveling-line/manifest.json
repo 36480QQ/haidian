@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-15T17:56:44-07:00",
+  "generated_at": "2026-08-15T18:01:09-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -62,14 +62,14 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c90d4b3168119770be6ecea777a301674f5342a1d5e255d981482dfb69b7c151",
+      "sha256": "dc313859e144afc7365f38259ff555988461f8b1bf80d005849935e73f7f9eb6",
       "language": "neutral"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a0e06cc58e27d831607093d9a3608cd8988ee34f9ae517aa84c0f295b572c420",
+      "sha256": "3504849e59d41ca057b8f2c86f58165bcead43465bf24c0f6b14b62ad45e6d6e",
       "language": "neutral"
     },
     {
@@ -1157,6 +1157,16 @@
   "validation_claim": {
     "self_checked": false,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "extensions": {
+      "x-self-checked-reason": {
+        "schema_version": "0.1",
+        "data": {
+          "why_false_zh": "组织方的 `--mark-self-checked` 会用它自己的 checks 数组重写 `self_check.json`，那会删掉本包写在其中的 43 条 `PKG_` 读数；而此后对该文件的任何一次写入都会使这个标志所针对的摘要失效，标志随即回到 false。因此本包选择保留读数、如实留 false，而不是让标志好看。四道组织方闸门的实跑结果在 `self_check.json` 里逐条可读。",
+          "why_false_en": "The organisers' --mark-self-checked rewrites self_check.json with its own checks array, which would delete the 43 PKG_ readings this package writes there; and any later write to that file invalidates the digest the flag was set against, returning it to false. So the readings are kept and the flag is left false rather than made to look better. The four organiser gates and their results are readable row by row in self_check.json.",
+          "four_gate_result_lives_in": "self_check.json"
+        }
+      }
+    }
   }
 }
