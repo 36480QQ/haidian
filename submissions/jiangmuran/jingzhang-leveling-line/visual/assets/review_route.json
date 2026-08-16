@@ -24,7 +24,7 @@
    "what_zh": "解析十二张场景卡的水准点、空间锚点与退出条件",
    "what_en": "Resolve every scenario card's benchmark, spatial anchor and exit condition",
    "exit_code": 0,
-   "seconds": 0.03,
+   "seconds": 0.02,
    "first_line": "check_cards.js: 12 cards, every benchmark and anchor resolves, every exit quantity is defined."
   },
   {
@@ -65,17 +65,17 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 429965,
+   "bytes": 434742,
    "unit": "entries",
-   "count": 247
+   "count": 250
   },
   {
    "path": "visual/assets/gate_mutation.json",
    "what_zh": "闸门变异测试台",
    "what_en": "The gate mutation harness",
-   "bytes": 108544,
+   "bytes": 109661,
    "unit": "mutations",
-   "count": 90
+   "count": 91
   },
   {
    "path": "visual/assets/naming.json",
@@ -113,17 +113,17 @@
    "path": "agent.json",
    "what_zh": "生成方法的完整披露",
    "what_en": "Full disclosure of the generation method",
-   "bytes": 6826,
+   "bytes": 6859,
    "unit": "top-level keys",
    "count": 10
   }
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.71,
+  "seconds_to_run_every_verifier": 0.7,
   "files_to_read": 9,
-  "bytes_to_read": 1068241,
-  "units_to_read": 1743
+  "bytes_to_read": 1074168,
+  "units_to_read": 1747
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",

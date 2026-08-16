@@ -844,6 +844,18 @@
       "why_en": "**Filling a gap with an estimate is the defect this register records most often.** The mutation proves that the moment this section grows a number with no file behind it, the build stops."
     },
     {
+      "id": "M91",
+      "gate": "source_provenance_qa.py",
+      "target": "assumptions.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把本包对自己来源构成的自陈从「1 条」改成「4 条」——**登记册一条没动**，动的是这份包对自己说的话，而且改的方向是让缺口看起来小一些。",
+      "what_en": "Change this package's own statement about its evidence base from one locally published source to four. **The registry does not change**; what changes is what the package says about itself, in the direction that makes the gap look smaller.",
+      "why_zh": "**一份自陈缺口的文件，最容易失真的方向就是把缺口说小。** 这条变异要证明的是：这句话由 `sources.json` 现算核对，说小了会被拦下。",
+      "why_en": "**A document that declares its own gaps is most likely to deform in the direction of making them smaller.** The mutation proves the sentence is recomputed against sources.json and an understatement is caught."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1104,7 +1116,7 @@
       "why_en": "**An area compared against another area's official figure produces a difference that means nothing.** The mutation proves that a mispaired per-area comparison stops the build rather than quietly reporting a larger number."
     }
   ],
-  "caught": 90,
+  "caught": 91,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1157,6 +1169,7 @@
     "sheet_layer_key_qa.py",
     "sheet_legend_qa.py",
     "sheet_scale_qa.py",
+    "source_provenance_qa.py",
     "sources_qa.py",
     "stale_corpus_qa.py",
     "standards_alignment_qa.py",
@@ -1209,6 +1222,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 63 道闸门，其中 60 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 63 gates, 60 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 64 道闸门，其中 61 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 64 gates, 61 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
