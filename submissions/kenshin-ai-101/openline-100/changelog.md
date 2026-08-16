@@ -1,3 +1,28 @@
+## 2026-08-16（数据缺口全面核查 + 英图残中文清零，v1.26-data-gap-audit）
+
+按评审《数据缺口》清单逐项核查，结论是「八项已闭环、一项修复、两项包外待执行如实标注」；`iteration` 升至 `v1.26-data-gap-audit`。
+
+- **14 项专业缺口全覆盖**：正式地块图则 / 容积率 / 高度 / 密度 / 退线 / 道路红线 / 文保控制线 / 蓝线 / 防洪 / 权属 / 现状建筑测绘 / 市政容量 / 消防 / 结构条件——全部已在正文登记为缺口（挂 `risk_missing_data`，`constraints.geojson` 刻意空集），正式几何到位后整包重算的触发纪律在位。组织方数据缺口本身不扣内容分。
+- **非正式来源**：四条外部资料 + 人民网 / 北京日报 + OSM 底图——v1.24 降格标注、v1.25「来源 → 依赖声明 → 状态」对照表已覆盖；核查确认 sources.json 逐条 `package_usability` 在位。
+- **OSM 来源卡证据五项齐全**：提取范围（西直门—北五环/清河、万泉河路—G6）/ 2026-08 快照 / fetch→cache→prepare 管线 / ODbL 署名 /「不再分发数据库、仅渲染像素」声明，见 `OSM-BASEMAP-202608`。
+- **版权台账可核验**：`report/copyright_statement.md` 逐项覆盖字体 / 地图 / 图像 / 生成视觉 / **代码**（渲染栈许可 + 官方脚本未修改）/ 商标与第三方素材；v1.25 已把六项权利清核摘要写进正文并在参考资料挂链——review input 不再只见到文件名。
+- **英图残中文清零（本轮修复）**：三轮静态扫描（else 分支 / `*_en` 容器 / 裸中文调用）+ 目检。真泄漏两处已修：`fig_regional` 标题与图例 `43.6/11.4 平方千米` → `sq km`；`fig_key_plans` `Full-stack协作 St.` → `Full-stack Collaboration St.`。刻意保留三处并已核对语境：`heritage-soul` 的「以人为轨」书法与「人」字符引用（贴邻英文释义，与正文 the character "ren" 口径一致）、`immerse` 场景内的「站」字标识（环境图形，非标注）。4 张图重渲、四份 PDF 重建。
+- **自检快照唯一权威**：包内仅一份 `self_check.json`，本轮针对最终 Git 状态重新生成（四门 PASS），不存在失败快照与通过快照并存。
+- **包外待执行如实标注（不假装闭环）**：P-01–P-10 现场调查（换乘计时 / 无障碍断点 / 围墙界面 / 蓝绿连通 / 河廊站距实测）是物理调研作业单，包内只登记清单与对应设计动作。
+- **装配**：manifest 哈希刷新；四门自检复跑 **PASS**（仅余 provisional 边界既有提示）。
+
+## 2026-08-16（风险与合规 + 表达完整度全面提升，v1.25-risk-presentation-hardening）
+
+拿到评审分维度原文后，对「风险与合规意识（3/5）」与「表达完整度（2/5）」做第二轮针对性加固；`iteration` 升至 `v1.25-risk-presentation-hardening`。
+
+- **表达 · 英文 HTML 缺字闭环**：`embed_cjk_font.py` 推广到英文载体——`report/proposal.en.html` 与 `visual/index.en.html` 同法内嵌 NotoSansSC 子集（其拉丁/标点字形齐全），字体贫瘠的评审环境不再缺字；四份 HTML 现全部内嵌（zh 0.69 MB / en 0.25 MB）。修复脚本误判：正文权利摘要出现 `OpenlineEmbeddedSC` 字样导致「已内嵌」假阳性，判定锚点改为 `@font-face{font-family:'…'`。
+- **表达 · 图内注记过小过淡**：`style.py` 新增 `_legibility_pass()`——save 前全局把 <7pt 注记抬到 7pt、亮度 >0.52 的浅灰文字按比例压深到 0.45；17 个出图脚本全量重渲（48 张 PNG）并跑 `compress_assets.py` 量化管线恢复体积。抽查 metrics-evidence.en / site-overview 版面无重叠、无残中文。
+- **表达 · 图版级可读性**：A0 图注 13→15pt、页脚 8.5→9.5pt 且浅灰改深灰、header kicker 加深；**A3 图版册补 provisional 珊瑚警示带**（上轮只做了 A0）；四份 PDF 重建（A0 18 页 3.40/3.43→3.50 MB、A3 25 页 3.08/3.14 MB，均 <10 MB）。曾试 JPEG max_w/quality 上探，PDF 增量 +7.4 MB 会顶破整包上限，回退原参数——可读性由字号下限承担。
+- **风险 · 融资语气扫尾**：开篇第二章摘要（双语）补「全部是带适用前提与 B 计划的可比较概念情景，不是已确定的融资安排」；分期章三情景纪律表此前已立，全库 grep 确认专项债/TOD/认养/平台公司表述均已处于情景框架内。
+- **风险 · 非正式来源对照表**：设计依据节双语新增「非正式来源 → 依赖声明 → 状态」六行表（20260811 获批新闻 / 20250208 采信通告 / 20241227 草案 / ZGC 北区 / 人民网·北京日报现场事实 / OSM 底图），明示本包不凭 submissions/sources.json 自行升级任何来源为正式证据。
+- **风险 · 版权可审阅**：风险、版权与合规节新增「权利清核摘要」六项（OSM ODbL 署名 / Noto OFL 子集内嵌改名 / 图像全本地生成 / 生成工具 / 第三方名义提及 / COMMUNITY-DISPLAY-ONLY），参考资料节挂 `report/copyright_statement.md` 链接；台账补内嵌字体改名事实与 OFL 官方文本具名指针（不凭记忆转录许可证全文）。
+- **装配**：阅读版 HTML 双语重渲 + 四份字体重嵌；manifest 77 条哈希刷新；包总 38.83 MiB ≤ 40 MiB；四门自检复跑 **PASS**（仅余 provisional 边界既有提示）。
+
 ## 2026-08-15（评审修复：AI Agent 评审 request-changes 全项落地，v1.24-review-repairs）
 
 评审结论 75/100、do-not-publish，两个硬阻断 + 八项内容修复。本轮逐项落地；`iteration` 升至 `v1.24-review-repairs`。
