@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+- **补齐字体权利链缺的那一半：许可条款的出处（2026-08-16 追加，不改版本号）。** 历史诊断反复点到同一件事——**「PNG 图件用专有 macOS 字体栅格化，仅说明未分发字体文件，未附可核验的许可条款或权利意见」**。回看本包的权利表，这句批评是准确的：`FONT-STHEITI-RASTER` 与 `FONT-HELVETICA-RASTER` 两条的 `license_or_reuse_terms` 写的全是**本包的行为**（未复制、未嵌入、未再分发），**没有一处指出允许该行为的条款在哪**。**只给了一半证据。**
+  - **已补上另一半**：新增来源 `FONT-APPLE-SLA-CLAUSE-E`，逐字登记 Apple 软件许可协议第 2 节 E 条「Fonts」原文——「you may use the fonts included with the Apple Software to **display and print content** while running the Apple Software; however, you may only **embed** fonts in content if that is permitted by the embedding restrictions accompanying the font in question」。条款把**使用**与**嵌入**写成两种不同的行为，而**本包只做前一件**。
+  - **两项事实当场核验，不靠自述**：`find <包> -name '*.tt[cf]' -o -name '*.otf'` 结果为 **0**；`pdffonts` 逐套检查，四套 PDF 中 `emb=yes` 的中文字体**只有 NotoSerifSC**（OFL-1.1，明确允许嵌入与再分发），Helvetica 与 ZapfDingbats 全部 `emb=no`。**即本包确实没有嵌入任何 Apple 字体。**
+  - **同时写明这条证据的边界，不把它说满**：条款用词是 display and print content，而本包分发的是渲染出来的像素文件；**「生成并分发像素产物」是否等同于该条所称用法，是我们对条款的理解，不是法律意见**，也未取得 Apple 的任何确认。这一句写进了正文、`sources.json` 的 `limitations` 与两条字体来源的 `not_usable_for`。
+  - 来源 28 → 29 条，正文计数同步；中英权利表同步补上条款引用与「两类字体义务不同」的说明。
+
 - **F/05 的七行红格此前没写它们拦的是什么（2026-08-16 追加，不改版本号）。** 规则检查矩阵的行标签一直只有 `R1`–`R7` 的编号：**评审看到七行红格，图上没有任何地方说明这是哪七条规则**，只能回正文查编号。而这张图是评审直送的五张图件之一，96 格矩阵又是本包最强的可核验主张。
   - **改法是腾位置而不是加尺寸**：标签区由 60px 加宽到 132px，格子由 26px 缩到 20px——**总宽 408px 不变**，网格位置与右侧说明区都不动。简称字号按可用宽度自适应，确保不越过网格左缘。
   - 七行现在写着：**R1 双控分离、R2 人工优先、R3 未决即停、R4 回滚先行、R5 合成隔离、R6 拒收具因、R7 未指派不签**（英文 Dual control / Human first / Open halts / Rollback first / Synthetic apart / Reasoned refusal / Appointed only）。
