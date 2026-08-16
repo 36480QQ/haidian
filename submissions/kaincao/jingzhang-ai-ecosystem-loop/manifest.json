@@ -280,7 +280,7 @@
     {
       "path": "self_check.json",
       "role": "self_check",
-      "sha256": "f8e4d49238c959e189ce554e6325012a1dcfd3d435ef45dd96f0a37c52300de3",
+      "sha256": "e4796528f8e182b3b6be8b8bcbc5b04fa70c1ce390834df34762b30c69f392d3",
       "required": true
     },
     {
@@ -390,12 +390,6 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "readiness_contract": "persisted-self-check-v1",
-    "extensions": {
-      "self_check_at": "2026-08-15",
-      "self_check_result": "PASS",
-      "four_gates": "deterministic/spatial/visual/professional all PASS",
-      "remaining_minor": "KEY_AREA_PROVISIONAL x3 (provisional boundary, non-blocking)"
-    }
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
