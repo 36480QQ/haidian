@@ -40,7 +40,7 @@
    "what_zh": "S08 桌面推演，含拒绝分支",
    "what_en": "The S08 tabletop run, refusal branches included",
    "exit_code": 0,
-   "seconds": 0.25,
+   "seconds": 0.23,
    "first_line": "S08 closure-mechanism tabletop"
   }
  ],
@@ -65,17 +65,17 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 399787,
+   "bytes": 401474,
    "unit": "entries",
-   "count": 232
+   "count": 233
   },
   {
    "path": "visual/assets/gate_mutation.json",
    "what_zh": "闸门变异测试台",
    "what_en": "The gate mutation harness",
-   "bytes": 95209,
+   "bytes": 96291,
    "unit": "mutations",
-   "count": 78
+   "count": 79
   },
   {
    "path": "visual/assets/naming.json",
@@ -120,10 +120,10 @@
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.73,
+  "seconds_to_run_every_verifier": 0.7,
   "files_to_read": 9,
-  "bytes_to_read": 1024353,
-  "units_to_read": 1716
+  "bytes_to_read": 1027122,
+  "units_to_read": 1718
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",

@@ -953,9 +953,22 @@
       "what_en": "Rename the layer on the key entry for the gained catchment: the layer is still drawn and the key now points at a name nothing carries. **This is the state this package was actually in until E232**: the one layer the sheet argues from had no name anywhere on it.",
       "why_zh": "**画出来却没被命名的面，读者只能猜。** 这条变异要证明的是：声明了的层面一旦失去图例，构建就停。",
       "why_en": "**An area drawn and never named leaves the reader guessing.** This mutation proves that a declared layer losing its key stops the build."
+    },
+    {
+      "id": "M79",
+      "gate": "frame_collision_qa.py",
+      "target": "fig_street.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把冬季那一带的位置改回手写的 640——**这正是本图第一版的真实状态**：上方规则框在英文版深两行，那一带的标题被印在框线上。",
+      "what_en": "Put the winter band back on the hand-set y of 640. **This is the state the first version of this drawing was actually in**: the rule box above is two lines deeper in English and the band's title printed across its frame.",
+      "why_zh": "**一个手写的坐标与一段会换行的文字，是同一件事的两份副本。** 这条变异要证明的是：上方文字一多，构建就停，而不是安静地印出一条穿字的框线。",
+      "why_en": "**A hand-set coordinate and a paragraph that wraps are two copies of one fact.** This mutation proves that one more line above stops the build rather than quietly printing a frame through the words."
     }
   ],
-  "caught": 78,
+  "caught": 79,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
