@@ -13,6 +13,7 @@
     "model": "reasonix hosted-LLM assistant (exact base model provided by the execution environment; iteration record in PR bodies and changelog)"
   },
   "generated_at": "2026-08-08T07:35:22Z",
+  "cover_image": "assets/media/cover.webp",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4a2a9fbd2ad6647bfb846d85315ee0b7c52e01b7b47ea0acc0116203aef577f4"
+      "sha256": "9247e15bd72577c1ebbeb6401f9dc121a214fdbcfcd8c7d8259459cd2b28a463"
     },
     {
       "path": "agent.json",
@@ -54,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5c6ae95d5a7bb63e2d5537175e37ad4c59f35374a6e7488a04d4fe64994cddc2"
+      "sha256": "51f60342295d9352edf216176e9521c9fba9846ed390f17f62745483d93d8e14"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "dd42c41bf3ec20ac4638abc90a99de4b6bce37b6f39f86e3a6b0ff112196d772"
+      "sha256": "bd422da04f2d3eb5fb9d2bf11071938da9014b444683a4ce0b37d1ac2f0a9212"
     },
     {
       "path": "report/narrative.md",
@@ -91,7 +92,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "8edd9c5aa4a4bb1a9dc58e5caf103a126d69437fb1ecd5778dfacc24f2330e79"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -112,7 +113,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "497f380eee0fdf40e7df4e00d80ec0f298ae9c2a8eec662b3ca49ff16f19ce82"
+      "sha256": "8b543633f6c7d416329fe8d7df839dcdd74d3cf8bca4a9307b2282bd43e71057"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -208,7 +209,7 @@
       "role": "narrative",
       "required": false,
       "language": "en",
-      "sha256": "f8094f23d1880e1e0500308ff32db9b48c2ed4187bafbcd72d12cd4490f853d5",
+      "sha256": "deaeee2420deae870ea87e25654ad8a5723b74032200ffe59f364b42aa48ee06",
       "translation_of": "proposal.md"
     },
     {
@@ -216,7 +217,7 @@
       "role": "rendered_proposal_html",
       "required": false,
       "language": "en",
-      "sha256": "6fa8512b441177c79f7df4f56bc7e67519f197885da8726e1bb437f34fad6c38",
+      "sha256": "ce0c5462ea85b61dfcb58ecdd221ed7755ce39c47cd00130bdd6d720524e69bc",
       "translation_of": "report/proposal.html"
     },
     {
@@ -287,15 +288,129 @@
       "role": "visualization",
       "required": false,
       "language": "en",
-      "sha256": "dcb07884f7516481f727ccd3733003810c41974bdf86c4a1aa9382206581dd36",
+      "sha256": "2377eb1e4c10673b390dc21738659e9d55a524c1187395fe749bc08410d8680d",
       "translation_of": "visual/index.html"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "language": "neutral",
-      "sha256": "70c2e25c59f588db843044d941db319d7487b000daaec212a8b10fd9bd2d249a"
+      "sha256": "b083db0a322b090079688de8a384161bdad893b9a1a7b07303a7256680660340"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "title_zh": "京张合流带概念封面",
+      "title_en": "Jingzhang Merge Belt conceptual cover",
+      "description_zh": "一条铁路汇出一座开源城市的概念封面;程序化生成的概念示意图,非现状照片或审批方案。",
+      "description_en": "Conceptual cover: one railway, one open-source city; deterministic concept illustration, not a site photo or an approved plan.",
+      "sha256": "7dfd94b9726201462681b8a01eed0afdef078e08fab7bcf71673a5c3c9611a18"
+    },
+    {
+      "path": "assets/media/merge-circuit.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "title_zh": "三区两翼合流回路(概念示意)",
+      "title_en": "Three-zone two-wing merge loop (conceptual)",
+      "description_zh": "上游开源释放→维护者转化→发行区分发→需求反馈的回路与两翼支撑关系。",
+      "description_en": "The loop from upstream open release to maintainer conversion, release distribution, and demand feedback, with two supporting wings.",
+      "sha256": "6ecc012177b6071a3cb04839d30889ab34c3d7a84423d26a4d09b63986bc5f29"
+    },
+    {
+      "path": "assets/media/merge-timeslot.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "title_zh": "合流时隙表(概念分布)",
+      "title_en": "Merge Timeslot (conceptual daily pattern)",
+      "description_zh": "晨市/学市/夜市与安静时窗的示例分布;非运营时刻表,官方边界与控规到位后复算。",
+      "description_en": "Conceptual daily distribution of morning/study/night markets and quiet windows; not an operating timetable.",
+      "sha256": "da4cf7bd0609c9b4988141db4e977a11a95a898b0505d42c0b5f9a1d5eadd181"
+    },
+    {
+      "path": "assets/media/merge-protocol.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "title_zh": "合流协议六步(概念示意)",
+      "title_en": "Six-step Merge Protocol (conceptual)",
+      "description_zh": "申报→校验→挂牌→运行→复核→退场的六步准入链。",
+      "description_en": "The six-step admission chain: declare, verify, post, run, review, exit.",
+      "sha256": "86a81d380cd1e5c9ecd226537088ef1e356b4685a152a7e8833821013378d95c"
+    },
+    {
+      "path": "assets/media/tributary-assurance.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "title_zh": "支流保障(概念示意)",
+      "title_en": "Tributary assurance (conceptual)",
+      "description_zh": "人工/离线/无账户通道与主线等价运行,以及公共回执、支流台账、失败复盘夜与年度合流日。",
+      "description_en": "Human, offline, and account-free paths run equivalently with the mainline, supported by public receipts, the Tributary Ledger, Failure Review Night, and the annual Merge Day.",
+      "sha256": "872ba270f4bdd53e992bf607264970711d3fac81961bab5dfd1acb75768fb00d"
+    },
+    {
+      "path": "assets/media/cover.en.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "en",
+      "title_zh": "京张合流带概念封面(英文)",
+      "title_en": "Jingzhang Merge Belt conceptual cover (English)",
+      "description_zh": "封面英文版,与中文版内容一致。",
+      "description_en": "English version of the conceptual cover, equivalent to the Chinese edition.",
+      "translation_of": "assets/media/cover.webp",
+      "sha256": "5e5eacccbd476399543c1b55634d19badc6fc2fb9e233d9d0992c4a4bc605fa5"
+    },
+    {
+      "path": "assets/media/merge-circuit.en.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "en",
+      "title_zh": "三区两翼合流回路(英文)",
+      "title_en": "Three-zone two-wing merge loop (English)",
+      "description_zh": "合流回路英文版,与中文版内容一致。",
+      "description_en": "English version of the merge-loop panel, equivalent to the Chinese edition.",
+      "translation_of": "assets/media/merge-circuit.webp",
+      "sha256": "8c48f285f54b9ebee06c14a8e5f26d94e4cd1d624530fc6bf126a9037cf98e7e"
+    },
+    {
+      "path": "assets/media/merge-timeslot.en.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "en",
+      "title_zh": "合流时隙表(英文)",
+      "title_en": "Merge Timeslot (English)",
+      "description_zh": "时隙表英文版,与中文版内容一致。",
+      "description_en": "English version of the timeslot panel, equivalent to the Chinese edition.",
+      "translation_of": "assets/media/merge-timeslot.webp",
+      "sha256": "450a8aa06f205c842bc3aea587606b334aacec7a7d1da08ec0f6f786ec27bcfb"
+    },
+    {
+      "path": "assets/media/merge-protocol.en.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "en",
+      "title_zh": "合流协议六步(英文)",
+      "title_en": "Six-step Merge Protocol (English)",
+      "description_zh": "协议六步英文版,与中文版内容一致。",
+      "description_en": "English version of the protocol panel, equivalent to the Chinese edition.",
+      "translation_of": "assets/media/merge-protocol.webp",
+      "sha256": "491164597a1329793ede31f2cfce298aa7d28fc776d6f820ce2f1195062c686a"
+    },
+    {
+      "path": "assets/media/tributary-assurance.en.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "en",
+      "title_zh": "支流保障(英文)",
+      "title_en": "Tributary assurance (English)",
+      "description_zh": "支流保障英文版,与中文版内容一致。",
+      "description_en": "English version of the tributary-assurance panel, equivalent to the Chinese edition.",
+      "translation_of": "assets/media/tributary-assurance.webp",
+      "sha256": "99042a7cf1027f31342a55e67d29d77576b9dda1d49719b133b644946491ef5d"
     }
   ],
   "validation_claim": {
