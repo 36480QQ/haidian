@@ -846,6 +846,36 @@
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
       "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "FONT-NOTO-COVER",
+      "source_type": "standard_resource",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "Noto Sans CJK SC 与 Noto Sans（画廊封面唯一使用的字体）",
+      "publisher": "Google / Adobe，noto-cjk 与 noto-fonts 项目",
+      "source_locator": "https://github.com/notofonts/noto-cjk（CJK）与 https://github.com/notofonts/notofonts.github.io（拉丁）",
+      "retrieved_at": "2026-08-14",
+      "accessed_date": "2026-08-16",
+      "collection_method": "封面 assets/media/cover.png 由 Pillow 12.3.0 在本机栅格化，只加载四个 OFL 字体文件：NotoSansCJKsc-Medium.otf（sha256 ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7，16,523,632 字节）、NotoSansCJKsc-Light.otf（sha256 e78bbbe1573bbb006156c1198f5c8cd6329470cb6e0b6702c7a3c83913db4abf，16,329,648 字节）、NotoSans-Bold.ttf（sha256 1df075a380fc7cb898acf64c1f7b3b4dd780de3caa860178bf929de35817a913，631,484 字节）、NotoSans-Regular.ttf（sha256 478c558ea716033cd60c03438f628dfa75694dcf6b5f6d505a2f05fd2b4f3823，621,572 字节）。字体文件存放在仓库之外的构建脚本目录，不随包提交。",
+      "spatial_coverage": "不适用",
+      "temporal_coverage": "不适用",
+      "license_or_reuse_terms": "SIL Open Font License 1.1。OFL 允许嵌入与再分发，因此该图的字体权利链两端均可闭合。",
+      "usage": "画廊封面 assets/media/cover.png 中全部中文与拉丁字形。",
+      "usable_for": [
+        "证明封面的字形来自许可可核验的开源字体，未使用任何 macOS 专有字体",
+        "支持按上列 sha256 独立取得同一批字体文件并重绘复核"
+      ],
+      "not_usable_for": [
+        "主张对这些字体的任何权利",
+        "证明 assets/figures/ 下 26 张栅格图件的字形来源（中文见 FONT-STHEITI-RASTER，拉丁见 FONT-HELVETICA-RASTER）",
+        "证明四套 PDF 的中文字形来源（见 FONT-NOTO-SERIF-SC）"
+      ],
+      "limitations": "栅格产物无法反查字形来源，可独立核验的只有「包内不含任何字体文件」这一半；另一半依赖本行自述与上列 sha256。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed"
     }
   ],
   "registry_alignment_note": "本表的 usable_for_formal 采用中央登记表 data/source_registry.json 的同一套取值词汇，以便机器逐项对照。凡 usable_for_formal_basis = central_registry_verbatim 的条目，其 registry_source_id / registry_authority_level / registry_review_status / usable_for_formal 四项均由脚本从中央表逐字复制，未经改写；本包对该来源的用法另受中央表 allowed_uses / prohibited_uses 约束，逐条已在 usable_for / not_usable_for 中收窄。凡 basis = participant_self_assessed 的条目**不在中央表内**，registry_review_status 一律标 not_in_central_registry —— 维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录；但自评状态不等于中央批准，本包不据此主张任何中央审定结论。not_a_factual_source 用于字体与构建工具链条目：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。"
