@@ -55,6 +55,7 @@
   "note_en": "**Every entry's body (what/why/fix) is currently Chinese only.** An English-reading reviewer opening this file gets a note, a shape histogram and rows of id, commit, file and shape with no text in them — and this register is the artifact this package is most often described by. 194 of 194 entries carry an English summary, and **every entry the English edition cites by number must carry one, enforced at build time**: pointing a reader at something they cannot read is not a translation gap but a broken reference that happens to resolve. Translating all of them is real work and is not pretended here — the numerator and the denominator are both published instead of a half-done job described as finished."
  },
  "found_by_meaning_zh": {
+  "external": "由本包之外的读者对着评审收到的那几份文件做对抗性通读发现",
   "self": "作者在本轮工作中自查发现",
   "own-gate": "由本包自己的闸门在构建时抓出",
   "audit": "由作者委托的独立审计发现（审计对象为随包产物，非草稿）",
