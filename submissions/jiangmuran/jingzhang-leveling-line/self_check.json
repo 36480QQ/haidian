@@ -183,7 +183,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "figure_title_qa.py — figure titles: 1 board placement claim(s) resolved against the built board pages; 132 of 136 captions compared against the title each sheet draws in its own header — 68 on the two visual pages and 68 in the drawing index of both editions — and every one is the same name. 4 set their title through a different frame (the hero) and are not compared here"
+      "message": "figure_title_qa.py — figure titles: 1 board placement claim(s) resolved against the built board pages; 122 of 126 captions compared against the title each sheet draws in its own header — 68 on the two visual pages and 58 in the drawing index of both editions — and every one is the same name. 4 set their title through a different frame (the hero) and are not compared here"
     },
     {
       "check_id": "PKG_FIRST_SCREEN_QA",
@@ -223,7 +223,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 71 mutations, 47 of 52 gates proven able to fail, 5 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 72 mutations, 47 of 52 gates proven able to fail, 5 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -231,7 +231,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 71 deliberate defects across 47 of 52 gates, all caught and all named by the gate that caught them; 5 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 72 deliberate defects across 47 of 52 gates, all caught and all named by the gate that caught them; 5 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_I18N_ORDER_QA",
@@ -247,7 +247,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 56 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 12 bytes to spare. The package totals 39.7 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 56 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 1,669 bytes to spare. The package totals 39.7 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -287,7 +287,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 530 distinct names harvested from the package — 514 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 532 distinct names harvested from the package — 516 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -487,7 +487,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 225 条，按发现者：audit 25、external 26、external-reviewer 5、own-gate 17、rival-read 3、self 149；最常见形状：check-measured-the-convenient-thing 41、two-copies-of-one-thing-drifted 34、deliverable-not-inspected-before-shipping 26、claim-outlived-the-package 18。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 18 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 225 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 226 条，按发现者：audit 25、external 26、external-reviewer 5、own-gate 17、rival-read 4、self 149；最常见形状：check-measured-the-convenient-thing 41、two-copies-of-one-thing-drifted 34、deliverable-not-inspected-before-shipping 26、claim-outlived-the-package 18。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 18 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 226 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -495,7 +495,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：71 处人为缺陷，覆盖 47 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 71 deliberate defects across 47 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：72 处人为缺陷，覆盖 47 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 72 deliberate defects across 47 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
