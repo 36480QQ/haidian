@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8857b683111e209a8bb80ec1f2cc40f05b1c9e29439d1d5876cd98e3766c461b"
+      "sha256": "93a6150df74e766a6c9a8c8d91945a26affccaa23ea8e7b886172c9039ba914e"
     },
     {
       "path": "agent.json",
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ca49736bc9d5237ff8a5f4f8d04b0956ea00e951e30a6b2897180c8ee3b6154b"
+      "sha256": "854fbbbfb43851c1d31108e502c8b276062dc35ac88cb2c198cfc5f4dab0d815"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "98accfdf924006e3f378199e768f0e0e3ea1b7a63bb46d16301dfb05269828d9"
+      "sha256": "fc625394f680c14cdaef08cd2fe7ec8c43430d5a07de9c92881b34962f83dff8"
     },
     {
       "path": "report/narrative.md",
@@ -210,7 +210,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "db42c58d44e24ecda949d8191bcadd5204ef463032290609c34c1d92e43d4c42"
+      "sha256": "286856ab1f8f88815e7824d5b44faa12b789a03b7e223d10bfbb2d67c3bf1f54"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9034d4add0fc09318b31f16392e213125f6a42ef917e7eb991178e27d6c1392e"
+      "sha256": "16d6648aa4d2bc7e91d325c14b694b35f4ea2a77d0dd1309fcd882a3a8f66207"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -349,7 +349,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "852fb13b0d2319007ebeeae6100e063f7128e8d27d8f872d0781ad9c429ebdb5"
+      "sha256": "bbd3697f79b6a87f764115b6e0438ae1bbe613c53ac745f1344706908d46b736"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -611,6 +611,17 @@
       "role": "governance_specification",
       "required": false,
       "sha256": "3b35bafd3c250364a4f7cf494c83340f527c52f94f416c053ba4b2540c598556"
+    },
+    {
+      "path": "visual/assets/public-handover-table-3d.json",
+      "role": "visualization",
+      "required": false,
+      "sha256": "bb6b133d3b7a5ceaa48c9759a9f0ceeaba89abb726b571cda3e4cb71a281cdca",
+      "title_zh": "公开交接桌 · 三维关系模型（base64 封装 STL，含重建参数与自校验哈希）",
+      "title_en": "Public Handover Table · 3D relation model (base64-wrapped STL with rebuild parameters and self-verifying hash)",
+      "description_zh": "任务书表达完整度点名「视频/声音、三维或交互网页」，本文件补上三维这一类。**它是关系模型不是施工模型**：正文写明这张桌子的位置、尺寸、材料、无障碍净宽与桌面高度须依现场测绘与无障碍规范确定、本方案不预设数字，因此模型一律使用无量纲相对单位，只表达四段的顺序、相邻关系与共同在场，**任何按本文件推算的实际尺寸都是误用**。顺序不可调换是这张桌子的全部主张，模型把它做成几何事实：四段沿同一轴线相接，交出位有四个版本卡插槽、接入位有单个判定牌位、未决栏是唯一高出台面的竖板，**人工窗口在最外端且是唯一落地的一段**——撤除时这一段不撤。144 个三角面，binary STL 以 base64 内嵌，附 sha256 供解码后自校验。",
+      "description_en": "The taskbook's expression-completeness clause names video/sound, three-dimensional or interactive web form; this file supplies the three-dimensional kind. **It is a relation model, not a construction model**: the proposal states that this table's position, size, material, accessible clear width and worktop height must be set by site survey and accessibility codes and that no figure is assumed, so the model uses dimensionless relative units and expresses only the order, adjacency and simultaneous presence of the four segments — **any real dimension derived from it is a misuse**. That the order cannot be swapped is the whole claim of the table, and the model makes it a geometric fact: the four segments meet along one axis; the hand-out station carries four version-card slots, the take-in station a single verdict plate, the open-items board is the only element rising above the worktop, and **the human counter is outermost and the only segment reaching the ground** — the segment that stays when the rest is removed. 144 triangles, binary STL embedded as base64 with a sha256 for post-decode verification.",
+      "language": "neutral"
     }
   ],
   "validation_claim": {
