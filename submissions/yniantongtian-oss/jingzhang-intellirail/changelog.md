@@ -1,5 +1,10 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.6 - 2026-08-17
+
+- 命名并贯穿三个原创机制：场景退出阀（阈值—暂停—复盘—退出）、公共数据卡（无卡不运行）、双轨识别系统（深蓝×玉绿双线）；风险章与识别章同步引用。
+  Named and threaded three original mechanisms: the Scenario Exit Valve (threshold–pause–review–exit), the Civic Data Placard (no placard, no operation), and the Double-Track Identity (navy × jade twin lines); the risk and identity chapters now reference them.
+
 ## v1.5 - 2026-08-17
 
 - 新增“场景深化：三张样卡的完整旅程”：S02 可信沙盒、S05 无障碍伴行、S11 京张记忆线路各补用户旅程、空间接口、失效模式与指标，使场景可体验、可复核。

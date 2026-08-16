@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-space-first innovation belt structured as one heritage spine, three differentiated hubs, two cross-corridor service wings, and twelve auditable AI+ scenarios, with provisional geometry and full recalculation triggers."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.5"
+iteration: "v1.6"
 ---
 
 # Jing-Zhang Intelli-Rail
@@ -135,6 +135,8 @@ Three industrial testbeds make failure publishable. T1 tests navigation and micr
 
 Scenarios are evaluated across public value, industrial value, risk, and reversibility. A proposal without an operator, appeal channel, deletion period, and removal plan cannot occupy public space.
 
+Three original mechanisms run through the whole proposal and are named here. **Scenario Exit Valve**: every public scenario embeds a four-step threshold–pause–review–exit sequence; a breached metric triggers automatic degradation, a failed review triggers removal, and removal cost is assessed at design stage. **Civic Data Placard**: each scenario exposes exactly one standardised data statement—collection scope, retention period, purpose boundary, and appeal entry; no placard, no operation, and the placard is retired with the scenario. **Double-Track Identity**: a deep-navy line and a jade-green line run through every sign, kilometre marker, and interface in the belt, keeping engineering heritage and open ecology present at every touchpoint, with hub accent colours used only for layering, never for brand fragmentation.
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 land_use.geojson covers the provisional overall area with four conceptual categories. AI research zones support core R&D and shared laboratories; parks and open space protect ecological and civic continuity; industry and commercial service zones support transfer, events, and daily consumption; community zones add health, education, housing support, and local services. These are design relationships, not statutory land approvals.[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
@@ -200,7 +202,7 @@ compliance_matrix.json covers announcement tasks 1.3, 1.4, 1.5 and agent.1–age
 
 Boundary uncertainty is the first risk: while official polygons are absent, spatial conclusions remain in the recalculation-on-official-data state described in the Design Basis chapter, and publication of official geometry triggers full regeneration with a recorded change set. A second risk is missing statutory, ownership, heritage, utility, fire, and transport evidence; the related scale and engineering conclusions await official data.[depth:risk_missing_data]
 
-AI scenarios manage data, model, operational, and equity risk. Data is minimised, purpose-limited, deleted on schedule, and revocable. Model cards disclose scope and error. Operations provide takeover, safe degradation, and stop controls. Diverse users participate in equity tests. High-risk civic decisions are not fully automated, and every service has a non-digital alternative and an appeal channel.
+AI scenarios manage data, model, operational, and equity risk. Data is minimised, purpose-limited, deleted on schedule, and revocable, with the Civic Data Placard as the uniform carrier. Model cards disclose scope and error. Operations provide takeover, safe degradation, and stop controls, with the Scenario Exit Valve applying to all twelve scenarios. Diverse users participate in equity tests. High-risk civic decisions are not fully automated, and every service has a non-digital alternative and an appeal channel.
 
 The bilingual text, figures, HTML, and PDFs were assembled for this submission. Spatial figures are redrawn from the repository's public provisional geometry. International cases use institutional pages for analytic reference and do not copy imagery. The offline visual loads no remote scripts, tiles, fonts, frames, forms, or tracking. Necessary model provenance remains in agent.json, manifest.json, and the copyright statement; public deliverables contain only final design material and the provenance required by the repository contract.[source:OPEN-CALL-SKILL]
 
