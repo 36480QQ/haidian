@@ -1,10 +1,60 @@
-<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>京张城市完整度 v0.14.s｜不绕行的 AI 城市</title><style>
-    *{box-sizing:border-box}body{margin:0;background:#f7f4ed;color:#1f2a2d;font-family:Arial,"Noto Sans CJK SC",sans-serif}main{max-width:1500px;margin:auto;padding:32px 42px 90px}header{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;border-bottom:3px solid #1f2a2d;padding-bottom:20px}h1{font-size:44px;margin:0}header p{font-size:22px;max-width:850px;margin:12px 0 0}.tag{font-weight:700;color:#c96f3b}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;margin-top:24px}.hero img{width:100%;display:block;background:white;border:1px solid #d8d0c5}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 30px}article{background:white;border-left:8px solid #c96f3b;padding:18px 20px;min-height:125px}article h3{font-size:20px;margin:8px 0}article p{margin:0;color:#5f6b70}section{margin-top:34px}section h2{font-size:28px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.grid2 img,section>img{width:100%;border:1px solid #d8d0c5;background:white}footer{margin-top:40px;border-top:1px solid #aaa;padding-top:18px;color:#5f6b70}@media(max-width:900px){.hero,.grid2,.cards{grid-template-columns:1fr}}</style></head><body><main>
-    <header><div><div class="tag">v0.14.s · INVARIANT CIVIC ROUTES</div><h1>京张城市完整度 v0.14.s｜不绕行的 AI 城市</h1><p>AI 可以改变服务，但不能迫使市民改变基本城市路径。</p></div><div>先把城市做完整，再让 AI 进入日常。</div></header>
-    <div class="hero"><img src="../assets/figures/site-overview.png" alt="site overview"><img src="../assets/figures/key-areas.png" alt="three key areas"></div>
-    <div class="cards"><article><b>ROAD-009</b><h3>TEST WITHOUT BLOCKING</h3><p>众智园｜校园院落</p></article><article><b>ROAD-010</b><h3>CARE WITHOUT ACCOUNT</h3><p>AI 原点｜社区街坊</p></article><article><b>ROAD-011</b><h3>ARRIVE WITHOUT APP</h3><p>大钟寺｜站城门厅</p></article></div>
-    <section><h2>功能邻接与普通路径</h2><div class="grid2"><img src="../assets/figures/land-use-structure.png" alt="用地与空间结构图"><img src="../assets/figures/mobility-bluegreen.png" alt="慢行与蓝绿网络图"></div></section>
-    <section><h2>证据闭环</h2><img src="../assets/figures/metrics-evidence.png" alt="指标与证据链总览"></section>
-    <section class="audit"><h2>任务覆盖 / 自检状态 / 来源 / 假设</h2><p>总览地图 · 三层范围 · 重点区域 · 用地分区 · 交通慢行 · 蓝绿公共空间 · 建筑 · 更新项目 · AI 场景 · 核心指标 · 任务覆盖 · 自检状态 · 来源 · 假设</p><p><span data-metric="site_area_sqm" data-value="11412825.386">site 11,412,825.386 m²</span> · <span data-metric="green_ratio" data-value="0.195008">green 19.5008%</span> · <span data-metric="public_space_ratio" data-value="0.033824">public space 3.3824%</span></p></section>
-    <footer>REALITY BOUNDARY：所有新增路线均为 conceptual_connection_not_engineering_line；大钟寺 REAL LEVEL DATA REQUIRED。</footer>
-    </main></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>京张城市完整度 v0.15.s｜AI 侧挂城市</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0;background:#f5f1e7;color:#203033;font-family:Arial,"Noto Sans CJK SC",sans-serif;line-height:1.5}
+    main{max-width:1500px;margin:auto;padding:34px 44px 86px} header{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end;border-bottom:3px solid #203033;padding-bottom:20px}
+    .eyebrow{font-weight:800;color:#d26f3c;letter-spacing:.04em} h1{font-size:48px;line-height:1.08;margin:8px 0 10px} header p{font-size:24px;margin:0;max-width:900px} .rule{font-size:18px;color:#667477;text-align:right}
+    .hero{display:grid;grid-template-columns:1.02fr .98fr;gap:20px;margin-top:24px} .hero img,.figure-grid img,.wide{width:100%;display:block;background:white;border:1px solid #c9c1b5}
+    .toggle{display:flex;gap:10px;margin:22px 0 14px} button{border:1px solid #203033;background:#fff;padding:9px 16px;border-radius:999px;font-weight:800;cursor:pointer} button.active{background:#203033;color:#fff}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px} .sidecar-card{background:#fff;border:1px solid #c9c1b5;border-top:7px solid #d26f3c;padding:18px 20px;border-radius:14px}
+    .route{font-weight:800;color:#2d6b5e} h3{font-size:24px;margin:8px 0} .sidecar-card p{font-size:18px;margin:0 0 6px} small{color:#667477} .states{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap} .states span{font-size:13px;font-weight:800;padding:5px 8px;border-radius:999px} .off{background:#e9f0ec;color:#2d6b5e} .on{background:#f9e4d6;color:#b65d2f}
+    body[data-focus="off"] .on{opacity:.28} body[data-focus="on"] .off{opacity:.28} section{margin-top:34px} h2{font-size:31px;margin:0 0 15px} .figure-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px} .metric{background:#fff;border:1px solid #c9c1b5;border-radius:12px;padding:14px} .metric b{display:block;font-size:21px} .metric span{font-size:13px;color:#667477}
+    .audit{background:#eef2f5;border-left:6px solid #4c7795;padding:18px 22px} footer{margin-top:38px;border-top:1px solid #aaa;padding-top:18px;color:#667477}
+    @media(max-width:900px){header,.hero,.cards,.figure-grid,.metrics{grid-template-columns:1fr} .rule{text-align:left}}
+  </style>
+</head>
+<body data-focus="split">
+<main>
+  <header>
+    <div><div class="eyebrow">v0.15.s · AI SIDECAR CITY</div><h1>京张城市完整度 v0.15.s｜AI 侧挂城市</h1><p>普通城市是主机，AI 只能侧挂。<br><strong>AI OFF 是完整城市；AI ON 只在同一座城市旁边增加可关闭的测试、照护与到达接口。</strong></p></div>
+    <div class="rule">3 invariant routes<br>3 sidecar types<br>9 host features<br>0 AI-only land-use codes</div>
+  </header>
+  <div class="hero">
+    <img src="../assets/figures/site-overview.png" alt="总体结构、三条不绕行路线与三个侧挂接口">
+    <img src="../assets/figures/key-areas.png" alt="众智园、AI原点和大钟寺的AI OFF与AI ON空间对照">
+  </div>
+  <div class="toggle" aria-label="AI state emphasis"><button class="active" data-mode="split">OFF + ON</button><button data-mode="off">AI OFF</button><button data-mode="on">AI ON</button></div>
+  <div class="cards"><article class="sidecar-card" data-sidecar="TEST POCKET">
+          <div class="route">ROAD-009</div><h3>TEST POCKET</h3><p>众智园｜研发校园</p><small>BLDG-012 · BLDG-013 · PUBLIC-006</small>
+          <div class="states"><span class="off">AI OFF · SAME ROUTE</span><span class="on">AI ON · + SIDECAR</span></div>
+        </article>
+<article class="sidecar-card" data-sidecar="CARE PORCH">
+          <div class="route">ROAD-010</div><h3>CARE PORCH</h3><p>AI 原点｜长期社区</p><small>BLDG-007 · BLDG-009 · PUBLIC-004</small>
+          <div class="states"><span class="off">AI OFF · SAME ROUTE</span><span class="on">AI ON · + SIDECAR</span></div>
+        </article>
+<article class="sidecar-card" data-sidecar="ARRIVAL SIDECAR">
+          <div class="route">ROAD-011</div><h3>ARRIVAL SIDECAR</h3><p>大钟寺｜站城到达</p><small>BLDG-001 · BLDG-002 · PUBLIC-001</small>
+          <div class="states"><span class="off">AI OFF · SAME ROUTE</span><span class="on">AI ON · + SIDECAR</span></div>
+        </article></div>
+  <section><h2>用地分区：AI 不是第八种用地</h2><img class="wide" src="../assets/figures/land-use-structure.png" alt="C7普通城市功能与三个sidecar的附着关系"></section>
+  <section><h2>交通慢行、蓝绿公共空间与侧挂边界</h2><div class="figure-grid"><img src="../assets/figures/mobility-bluegreen.png" alt="绿脊、六条缝合联系和三条不绕行路线"><img src="../assets/figures/metrics-evidence.png" alt="六项锁定指标、sidecar设计事实与证据边界"></div></section>
+  <section><h2>核心指标</h2><div class="metrics">
+    <div class="metric"><b data-metric="site_area_sqm" data-value="11412825.386">11,412,825.386 m²</b><span>site_area_sqm</span></div>
+    <div class="metric"><b data-metric="green_ratio" data-value="0.195008">19.5008%</b><span>green_ratio</span></div>
+    <div class="metric"><b data-metric="public_space_ratio" data-value="0.033824">3.3824%</b><span>public_space_ratio</span></div>
+    <div class="metric"><b data-metric="ai_sidecar_type_count" data-value="3">3</b><span>ai_sidecar_type_count</span></div>
+    <div class="metric"><b data-metric="ai_sidecar_host_feature_count" data-value="9">9</b><span>ai_sidecar_host_feature_count</span></div>
+  </div></section>
+  <section class="audit"><h2>任务覆盖 / 自检状态 / 来源 / 假设</h2><p>总览地图 · 三层范围 · 重点区域 · 用地分区 · 交通慢行 · 蓝绿公共空间 · 建筑 · 更新项目 · AI 场景 · 核心指标 · 任务覆盖 · 自检状态 · 来源 · 假设</p><p>三层范围、建筑、更新项目与 AI 场景仍在 proposal / geometry / matrices 中逐项闭环；本页只把第一视觉收敛到“主机 + sidecar”的空间判断。</p></section>
+  <footer>REALITY BOUNDARY：所有 sidecar 都是概念空间关系。真实尺寸、运营、站口、高差、工程线位和许可均需正式证据。</footer>
+</main>
+<script>
+  document.querySelectorAll('[data-mode]').forEach(function(btn){btn.addEventListener('click',function(){document.body.dataset.focus=btn.dataset.mode;document.querySelectorAll('[data-mode]').forEach(function(x){x.classList.toggle('active',x===btn)});})});
+</script>
+</body>
+</html>
