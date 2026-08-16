@@ -262,10 +262,12 @@ CI 不替代人工评审。`package_type` 描述成果包类型，`review_status
 
 ## 本地校验
 
-安装 Python 测试依赖后，可以运行：
+安装与本次改动相关的测试依赖后，优先运行对应的测试模块。仓库中的依赖清单包括
+`requirements-validation.txt`、`requirements-review.txt` 和 `requirements-translation.txt`；
+完整测试 discovery 需要相应环境和依赖，可运行：
 
 ```bash
-python -m pytest
+python3 -m unittest discover -s tests -v
 ```
 
 校验公开资料登记表可运行：
