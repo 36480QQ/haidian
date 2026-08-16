@@ -49,6 +49,7 @@ from pathlib import Path, PurePosixPath
 from typing import Any
 
 from validate_submission import (
+    MAX_SINGLE_FILE_BYTES,
     PARTICIPANT_PROTECTED_GLOBAL_FILES,
     PROTECTED_REVIEW_ARTIFACT_PREFIXES,
     ValidationReport,
@@ -60,7 +61,7 @@ from validate_submission import (
 COMMENT_MARKER = "<!-- haidian-submission-validation -->"
 API_ROOT = "https://api.github.com"
 MAX_API_ATTEMPTS = 4
-MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024
+MAX_DOWNLOAD_BYTES = MAX_SINGLE_FILE_BYTES
 MAX_RETRY_DELAY_SECONDS = 30
 RETRYABLE_METHODS = frozenset({"GET", "HEAD", "OPTIONS"})
 # A fork's Contents API can briefly lag the PR event's head commit. Keep 404

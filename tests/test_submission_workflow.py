@@ -20,6 +20,8 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from validate_submission import (  # noqa: E402
     ALL_REQUIRED_TASK_IDS,
     FALLBACK_REQUIRED_STANDARD_IDS,
+    MAX_SINGLE_FILE_BYTES,
+    MAX_VIDEO_BYTES,
     MODEL_FAMILY_VALUES,
     REQUIRED_SECTIONS,
     REQUIRED_SECTIONS_EN,
@@ -723,27 +725,35 @@ class ManifestHydrationTests(unittest.TestCase):
             required,
         )
 
-    def test_download_content_accepts_ten_mib_file(self) -> None:
-        client = GitHubClient("token", "owner/repo")
-        with tempfile.TemporaryDirectory() as tmp:
-            destination = Path(tmp) / "artifact.pdf"
-            with patch(
-                "github_pr_validation.urllib.request.urlopen",
-                return_value=_Response(b"x" * MAX_DOWNLOAD_BYTES),
-            ):
-                client.download_content("owner/repo", "artifact.pdf", "sha", destination)
-            self.assertEqual(MAX_DOWNLOAD_BYTES, destination.stat().st_size)
+    def test_download_content_default_covers_validator_video_limit(self) -> None:
+        self.assertEqual(MAX_SINGLE_FILE_BYTES, MAX_DOWNLOAD_BYTES)
+        self.assertGreaterEqual(MAX_DOWNLOAD_BYTES, MAX_VIDEO_BYTES)
 
-    def test_download_content_rejects_file_over_ten_mib(self) -> None:
+    def test_download_content_accepts_file_at_explicit_boundary(self) -> None:
         client = GitHubClient("token", "owner/repo")
         with tempfile.TemporaryDirectory() as tmp:
             destination = Path(tmp) / "artifact.pdf"
             with patch(
                 "github_pr_validation.urllib.request.urlopen",
-                return_value=_Response(b"x" * (MAX_DOWNLOAD_BYTES + 1)),
+                return_value=_Response(b"1234"),
+            ):
+                client.download_content(
+                    "owner/repo", "artifact.pdf", "sha", destination, max_bytes=4
+                )
+            self.assertEqual(b"1234", destination.read_bytes())
+
+    def test_download_content_rejects_file_over_explicit_boundary(self) -> None:
+        client = GitHubClient("token", "owner/repo")
+        with tempfile.TemporaryDirectory() as tmp:
+            destination = Path(tmp) / "artifact.pdf"
+            with patch(
+                "github_pr_validation.urllib.request.urlopen",
+                return_value=_Response(b"12345"),
             ):
                 with self.assertRaisesRegex(RuntimeError, "file exceeds download cap"):
-                    client.download_content("owner/repo", "artifact.pdf", "sha", destination)
+                    client.download_content(
+                        "owner/repo", "artifact.pdf", "sha", destination, max_bytes=4
+                    )
             self.assertFalse(destination.exists())
 
     def test_accepts_only_safe_relative_manifest_paths(self) -> None:
