@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A century ago China built the Jing-Zhang railway to win its own right-of-way; this century we open a civic road you can join, verify, exit and inherit—Why Jing-Zhang: The Openline 100. Three chapters run together: the Openline is the road and Open Ticket is the fare; a capital loop makes every phase answer build / pay / operate / return; rails of humanity—in 1909 the character “ren” (person) drew the line's shape, in this century it names whom the line belongs to. AI is the vehicle on the road, not the object of the ticket. Districts keep the taskbook's words: AI Origin = the source of innovation, Dazhongsi = The Native Street, Zhongzhiyuan = the Garden Innovation Street. Overlay completed against the 2026-08-11 approved block plan's public text; provisional footprints remain the discussion base; adopted sheets still trigger a full-package recalculation."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.24-review-repairs"
+iteration: "v1.26-data-gap-audit"
 ---
 
 # Why Jing-Zhang: The Openline 100
@@ -52,7 +52,7 @@ The four gates write Join · Verify · Exit · Inherit as an executable fare sys
 
 ### Chapter 2 · Capital loop
 
-Bankability is not a finer timeline. Each phase must answer **what is built / who pays / who operates / how revenue returns to the public realm**. Three financing scenes—special-purpose bond / district pooling / corporate adoption—relay; they are not a multiple-choice. Phase-three adoption is bound by the Open Ticket permission chain; the public interface stays public.
+Bankability is not a finer timeline. Each phase must answer **what is built / who pays / who operates / how revenue returns to the public realm**. Three financing scenes—special-purpose bond / district pooling / corporate adoption—relay; they are not a multiple-choice; all are comparable concept scenarios with preconditions and Plan Bs, not settled financing arrangements. Phase-three adoption is bound by the Open Ticket permission chain; the public interface stays public.
 
 ![Capital logic: each phase answers build / pay / operate / return](assets/figures/phasing-capital.en.png)
 
@@ -101,6 +101,17 @@ This proposal responds to the Haidian Branch of Beijing Municipal Commission of 
 Source use follows the central registry [source:SOURCE-REGISTRY]: formal-ready materials support tasks and standards; background_only stays background; provisional boundaries remain provisional intake only. Agents must not upgrade provisional geometry into official redlines, statutory controls, or government implementation promises.
 
 **Registry discipline (stated item by item as required by review):** the four external records `HD-JINGZHANG-BLOCK-PLAN-20260811`, `HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208`, `HD-JINGZHANG-BLOCK-PLAN-DRAFT-20241227`, `ZGC-SCIENCE-CITY-NORTH-202312`, together with People.cn / Beijing Daily field facts and the OSM 2026-08 basemap, are **not listed in the registry's approved_formal_sources**. This package downgrades all of them to **background / pending-review evidence** (each is marked `package_usability: background_pending_registry_review` in sources.json): none of them alone supports "formal overlay", "statutory center", or any adopted metric. Every structural alignment drawn from the 2026-08-11 approval coverage (one belt / one axis / two centers / multiple nodes, extents, 1,668.2 ha) is worded as "news-reported approval, pending registry verification"; parcel sheets and intensities remain `unknown`. The OSM basemap's extraction range, snapshot date, processing pipeline, and ODbL attribution are documented in the `OSM-BASEMAP-202608` source card in sources.json. Per-item source cards are complete in sources.json; this discipline holds until the registry approves them [source:SOURCE-REGISTRY].
+
+**Non-formal source → dependent claims → status table** (this package never self-upgrades a source to formal evidence via submissions/sources.json):
+
+| Source | Use inside the package | How dependent claims are worded | Status |
+|---|---|---|---|
+| HD-JINGZHANG-BLOCK-PLAN-20260811 (approval news) | Structural alignment: one belt / one axis / two centers / multiple nodes, extents, 1,668.2 ha | Always "news-reported approval, pending registry verification"; never claimed as formal overlay or statutory center | background_pending_registry_review |
+| HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208 (consultation-adoption notice) | Plan title, junction and road name checks | Name evidence only; supplies no intensity, boundary, or parcel sheet | background_pending_registry_review |
+| HD-JINGZHANG-BLOCK-PLAN-DRAFT-20241227 (draft coverage) | Draft-stage facility counts (298/37/62/36) and landscape belts | Marked as draft-stage public figures; the approval news did not repeat them, so they are not upgraded to adopted metrics | background_pending_registry_review |
+| ZGC-SCIENCE-CITY-NORTH-202312 | Background for regional coordination (North interface) | Background only; every regional direction is worded as interface design, not a cooperation commitment | background_pending_registry_review |
+| People.cn / Beijing Daily field facts | Atmosphere and event background | Narrative background only; never enters metrics or serves as tenure / implementation evidence | background_pending_registry_review |
+| OSM-BASEMAP-202608 (2026-08 snapshot) | All real-fabric base maps | Extraction range / snapshot / pipeline / ODbL attribution in the source card; basemap geometry never substitutes official survey | background_pending_registry_review (ODbL compliance declared) |
 
 The overall design footprint and three key areas currently come from repository provisional polygons marked `provisional_constraint` and `official_boundary=false` [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]. They support generation, visualization, and intake self-check—not approval or precise-area conclusions. Organizer data gaps do not block content scoring. When official polygons arrive, regenerate the full package.
 
@@ -989,6 +1000,8 @@ Class 2 (block structure known, parcel intensity unknown): FAR, density, height 
 
 This proposal claims no official approval, approved controls, final tenure, final building scale, or delivery guarantee. The AI agent is responsible for facts, sources, copyright, and expression; all spatial ideas are conceptual suggestions for professional teams. Assets: `sources.json`, `report/copyright_statement.md`; `visual/index.html` stays offline with no remote dependencies.
 
+**Rights-clearance summary (full itemized ledger in `report/copyright_statement.md`, directly auditable by reviewers):** (1) Base maps — OpenStreetMap data (c) OSM contributors, ODbL 1.0; attribution rides on every figure and this package; extraction range / snapshot / pipeline in the `OSM-BASEMAP-202608` source card. (2) Fonts — Noto Sans SC (SIL OFL 1.1); the Chinese HTML embeds a subset limited to actual document glyphs; OFL permits subsetting and embedding, and the embedded font is renamed `OpenlineEmbeddedSC`; OFL compliance points are stated item by item in the ledger (the full license text is cited by pointer to its canonical source). (3) Images — every figure is generated locally by this package's scripts; no third-party photos, stock, or aerial imagery. (4) Generation tooling — figures come from a matplotlib / reportlab / PIL pipeline; text was drafted by the AI agent and checked section by section by a human pass. (5) Third-party names — the Sasaki graphic standard, Station F and other cases are referenced as method or by nominative mention only; none of their marks or graphic assets are used. (6) Original content in this package is published under COMMUNITY-DISPLAY-ONLY.
+
 ## Appendix A | Urban form for the AI era: Eight Form Questions · Foresight Matrix (full text)
 
 > Moved from the Coordinated Research chapter; content unchanged. The main text keeps only the theoretical ground and a one-line index to preserve the single master-concept narrative.
@@ -1285,6 +1298,7 @@ Seven cards correspond to scene index S-02 / S-03 / S-04 / S-05 / S-06 / S-08 / 
 - brief/site-package/design_brief.json, allowed_design_space.json, agent_taskbook.json
 - data/source_registry.json, data/processed/agent_fact_pack.md and sibling CSVs
 - docs/terminology-glossary.md
+- report/copyright_statement.md (itemized rights ledger: OSM ODbL / Noto OFL / locally generated imagery / generation tooling / third-party names / license)
 - 2026-08-11 block-plan approval coverage: Beijing Daily / People.cn 2026-08-12, CNR 2026-08-12, Capital Window Beijing News 2026-08-12 ([source:HD-JINGZHANG-BLOCK-PLAN-20260811])
 - 2025-02-08 draft consultation-adoption notice, Haidian Branch of BMPNR ([source:HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208])
 - 2024-12-27 Beijing Evening News draft-stage public wording, background only, not upgraded to adopted metrics ([source:HD-JINGZHANG-BLOCK-PLAN-DRAFT-20241227])

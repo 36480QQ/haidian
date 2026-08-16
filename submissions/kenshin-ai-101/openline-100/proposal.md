@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "百年前中国人自主修通京张铁路，争的是路权自立；本世纪在京张遗址公园一带打开一条可加入、可核验、可退出、可继承的市民路——何以京张：The Openline 100。三章并进：路是 Openline、票是 Open Ticket；资本闭环让每期同时回答建设 / 出钱 / 运营 / 回流；以人为轨——1909 的「人」字写线路形状，这个世纪的「人」字写价值归属。AI 是路上跑的车，不是票的客体。三区概括按任务书原词：AI 原点 = 创新策源地，大钟寺 = 智能原生街，众智园 = 花园型创新街。已叠合 2026-08-11 获批街区控规公开文本；provisional 边界仍为讨论足迹，正式图则与强度到位后整包复算。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.24-review-repairs"
+iteration: "v1.26-data-gap-audit"
 ---
 
 # 何以京张：The Openline 100
@@ -52,7 +52,7 @@ iteration: "v1.24-review-repairs"
 
 ### 第二章 · 资本闭环
 
-可落地性不是把时间轴画得更细。每一期必须同时回答：**建设什么 / 谁出钱 / 谁运营 / 收益怎么回流公共空间**。三种融资情景——专项债 / 片区统筹 / 企业认养——是接力，不是三选一。三期认养受 Open Ticket 许可链约束，公共界面仍属公共。
+可落地性不是把时间轴画得更细。每一期必须同时回答：**建设什么 / 谁出钱 / 谁运营 / 收益怎么回流公共空间**。三种融资情景——专项债 / 片区统筹 / 企业认养——是接力，不是三选一；全部是带适用前提与 B 计划的可比较概念情景，不是已确定的融资安排。三期认养受 Open Ticket 许可链约束，公共界面仍属公共。
 
 ![分期资本逻辑：每期同时回答建设 / 出钱 / 运营 / 回流](assets/figures/phasing-capital.png)
 
@@ -101,6 +101,17 @@ iteration: "v1.24-review-repairs"
 资料用途边界按中央登记表执行 [source:SOURCE-REGISTRY]：formal 可用资料支撑任务与标准响应；background_only 只做背景；`DATA-SRC-PROVISIONAL-BOUNDARIES-20260605` 仅作 provisional intake。agent 不得把 provisional 升级为官方红线、法定控规或政府实施承诺。
 
 **登记处纪律（评审要求逐条明示）：** `HD-JINGZHANG-BLOCK-PLAN-20260811`、`HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208`、`HD-JINGZHANG-BLOCK-PLAN-DRAFT-20241227`、`ZGC-SCIENCE-CITY-NORTH-202312` 四条外部资料，以及人民网 / 北京日报等现场事实与 OSM 2026-08 底图，**均不在登记表 approved_formal_sources 内**。本包把它们一律降格为**背景 / 待审证据**（sources.json 已逐条标注 `package_usability: background_pending_registry_review`）：它们不单独支撑「正式叠合」「法定中心」或任何已批指标；凡涉及 2026-08-11 获批文本的结构对位（一带一轴、两心多点、四至、1668.2 ha），正文一律表述为「获批新闻口径、待登记处审验」，地块图则与强度继续标 `unknown`。OSM 底图的提取范围、快照日期、处理管线与 ODbL 署名见 sources.json `OSM-BASEMAP-202608` 来源卡。逐项来源卡已随 sources.json 补齐；登记处获审前，本纪律不解除 [source:SOURCE-REGISTRY]。
+
+**非正式来源 → 依赖声明 → 状态对照表**（本包不凭 submissions/sources.json 自行升级任何来源为正式证据）：
+
+| 来源 | 包内用途 | 依赖它的表述如何处理 | 状态 |
+|---|---|---|---|
+| HD-JINGZHANG-BLOCK-PLAN-20260811（获批新闻报道） | 结构对位：一带一轴、两心多点、四至、1668.2 ha | 一律写「获批新闻口径、待登记处审验」；不据此主张正式叠合或法定中心 | background_pending_registry_review |
+| HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208（意见采信通告） | 规划名称、路口名、路名核对 | 仅作名称佐证；不提供强度、边界或图则 | background_pending_registry_review |
+| HD-JINGZHANG-BLOCK-PLAN-DRAFT-20241227（草案报道） | 草案阶段设施数（298/37/62/36）与景观结构带 | 明示为草案公开口径；获批新闻未复述，不升级为已批指标 | background_pending_registry_review |
+| ZGC-SCIENCE-CITY-NORTH-202312 | 区域协同（北区接口）背景 | 只作背景；区域协同各方向表述为接口设计，不作合作承诺依据 | background_pending_registry_review |
+| 人民网 / 北京日报等现场事实 | 现场氛围与事件背景 | 只进叙事背景，不进指标、不作权属或实施状态证据 | background_pending_registry_review |
+| OSM-BASEMAP-202608（2026-08 快照） | 全部真实城市肌理底图 | 提取范围 / 快照 / 管线 / ODbL 署名见来源卡；底图几何不替代官方测绘 | background_pending_registry_review（ODbL 合规已声明） |
 
 当前总体设计范围与三处重点区均来自仓库临时粗略 polygon，标注为 `provisional_constraint`、`official_boundary=false` [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。它可支撑方案生成、可视化与 intake 自检，不可作审批依据或精确面积结论；组织方数据缺口本身不阻断内容评分。正式红线到位后，须整包重算 geometry、metrics、图件与 HTML，不能只换单个文件。
 
@@ -988,6 +999,8 @@ Openline 的用户不是「被管理的对象」，而是可持开放规则进�
 
 本方案不声称官方批准、审定控规、最终权属、最终建设规模或保证实施。AI agent 对事实、来源、版权与表达负责；所有空间想法均为概念建议/参考方案，供专业团队深化。图片、字体与代码资产来源见 `sources.json` 与 `report/copyright_statement.md`；`visual/index.html` 保持离线、无远程依赖。
 
+**权利清核摘要（完整逐项台账见 `report/copyright_statement.md`，评审可直接核验）：** ① 底图——OpenStreetMap 数据 © OSM contributors，ODbL 1.0，全部图件与本包均带署名，提取范围 / 快照 / 管线见 sources.json `OSM-BASEMAP-202608`；② 字体——Noto Sans SC（SIL OFL 1.1），中文 HTML 按实际用字子集内嵌，OFL 允许子集化与嵌入，字体名已改标 `OpenlineEmbeddedSC`，OFL 合规要点在台账逐项声明（全文具名指向官方文本）；③ 图像——全部图件为本包脚本本地生成，无第三方图片、无图库素材、无航拍照片；④ 生成工具——图件由 matplotlib / reportlab / PIL 管线产出，文本由 AI agent 起草并逐节人工核对；⑤ 第三方名义——Sasaki 图面规范、Station F 等案例仅作方法参照与名词提及（nominative use），不使用其标识与图面资产；⑥ 本包原创内容的发布许可为 COMMUNITY-DISPLAY-ONLY。
+
 ## 附录 A｜AI 时代城市形态创新：形态八题 · 前瞻矩阵（全文）
 
 > 本附录自正文统筹研究章移入，内容不变；正文仅保留理论地基与一句话索引，以保持 Openline 100 单一统领的叙事主线。
@@ -1283,6 +1296,7 @@ Openline 的用户不是「被管理的对象」，而是可持开放规则进�
 - brief/site-package/design_brief.json、allowed_design_space.json、agent_taskbook.json
 - data/source_registry.json、data/processed/agent_fact_pack.md 及同目录 CSV
 - docs/terminology-glossary.md
+- report/copyright_statement.md（逐项权利台账：OSM ODbL / Noto OFL / 本地生成图像 / 生成工具 / 第三方名义 / 许可）
 - 2026-08-11 街区控规获批公开报道：北京日报 / 人民网 2026-08-12、央广网 2026-08-12、首都之窗北京要闻 2026-08-12（[source:HD-JINGZHANG-BLOCK-PLAN-20260811]）
 - 2025-02-08 草案公示采信通告（市规自委海淀分局）（[source:HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208]）
 - 2024-12-27 北京晚报草案阶段公开口径，仅作背景、不升格为已批指标（[source:HD-JINGZHANG-BLOCK-PLAN-DRAFT-20241227]）
