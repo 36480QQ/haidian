@@ -820,6 +820,18 @@
       "why_en": "**The review script's 功能匹配度 asks about the pairing, not the presence.** A function loose in the prose and joined to no unit is exactly the shape the erratum records; this mutation proves the gate checks the pairing."
     },
     {
+      "id": "M87",
+      "gate": "scope_anchor_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把总体设计范围东边界的两条街名删掉一条。**面积、其余三边、公园名称全部照旧**，只有东边界少了公告写着的一半。",
+      "what_en": "Drop one of the two streets on the overall design area's eastern boundary. The area, the other three sides and the park's name are all unchanged; only the east side is now half of what the announcement states.",
+      "why_zh": "**一条少了一边的四至不是四至。** 本包在别处反复主张「引用必须能解析」，而范围的边界是这份文件里最该能解析的东西——它决定了本方案在谈哪块地。",
+      "why_en": "**A boundary missing one side is not a boundary.** This package argues throughout that a citation must resolve; a scope's edges are the one thing in the document that most needs to, because they decide which ground is being discussed."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1054,7 +1066,7 @@
       "why_en": "**The reviewer scores seven dimensions and every one has to have somewhere to go.** This mutation proves that a dimension losing its mapping stops the build rather than quietly going unanswered."
     }
   ],
-  "caught": 86,
+  "caught": 87,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1099,6 +1111,7 @@
     "role_spec_qa.py",
     "scarce_surface_qa.py",
     "schema_conformance_qa.py",
+    "scope_anchor_qa.py",
     "sheet_claim_qa.py",
     "sheet_layer_key_qa.py",
     "sheet_legend_qa.py",
@@ -1155,6 +1168,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 59 道闸门，其中 56 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 59 gates, 56 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 60 道闸门，其中 57 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 60 gates, 57 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
