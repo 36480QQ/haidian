@@ -556,7 +556,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (477); a non-AI equivalent path (362); an on-site safety officer (327); remote and physical e-stop (174); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 477. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (477); a non-AI equivalent path (363); an on-site safety officer (327); remote and physical e-stop (174); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 477. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1023,7 +1023,7 @@ A proposal that claims to do heritage narrative without naming a single heritage
 
 Out of scope: **Qinglongqiao Station and the switchback**, tens of kilometres away near Badaling. This needs saying, because it concerns a common practice. The switchback is the line's most recognisable symbol and <!-- ZIGZAG:BEGIN -->
 
-Of the 793 submissions, **55** name it in the title or summary and **203** mention it anywhere in the body [source:FIELD-CENSUS-2026-08]. The two readings are given separately because “core meta-symbol” asks about naming, not mention; both are recomputed from the bodies by `analysis/field_extras.py`.
+Of the 793 submissions, **55** name it in the title or summary and **204** mention it anywhere in the body [source:FIELD-CENSUS-2026-08]. The two readings are given separately because “core meta-symbol” asks about naming, not mention; both are recomputed from the bodies by `analysis/field_extras.py`.
 
 <!-- ZIGZAG:END -->. Citing it as a *narrative symbol* is entirely legitimate — it belongs to the line's history. But it is a **specific engineering structure outside this 43.6 km² research area** (the design area is smaller, 11.41 km²). This proposal therefore does not use it in spatial design and draws it in no layer; it takes a different heritage of the same line — **the surveying method** — which runs the whole length, including every metre inside the scope. This is not a judgement of other proposals; it is this proposal's own boundary of use: **a symbol can be borrowed; a site cannot.**
 
@@ -1221,7 +1221,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**24 of 793** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**25 of 793** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 
@@ -1253,12 +1253,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-234 entries. By finder:
+235 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | Run against the shipped package, not a draft |
-| The author | 154 | Found while working |
+| The author | 155 | Found while working |
 | This package's own gate | 17 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 28 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1290,8 +1290,8 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | No file behind it | 6 |
 | A total excluding | 5 |
 | Geometry not meaning it | 5 |
+| Answered under another name | 4 |
 | Outlived a corpus | 4 |
-| Answered under another name | 3 |
 | Drawn without its ground | 2 |
 | Answers what it cannot | 2 |
 | A rule with nobody to apply it | 2 |
@@ -1710,7 +1710,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf`, read page by page, and `drawings/a0-boards.en.pdf`, read standing. Two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` is the argument alone. Six files ship behind them, in `visual/assets/`: `personas.json` (nine personas, every `P` assertable), `naming.json` (the naming system as rules), `score_correlates.json`, `gate_mutation.json` (damage proving 53 of 56 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent animated diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation, and every frame says so. Poster, captions, transcript ship with it. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism rather than a schedule. Those closures illustrate the rule; none has been run. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `visual/index.html` carries an interactive canvas: move the annual readings, the peak recomputes. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements and 120 figures. **A drawing can only be believed; this can be argued with.** **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf`, read page by page, and `drawings/a0-boards.en.pdf`, read standing. Two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` is the argument alone. Six files ship behind them, in `visual/assets/`: `personas.json` (nine personas, every `P` assertable), `naming.json` (the naming system as rules), `score_correlates.json`, `gate_mutation.json` (damage proving 54 of 57 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent animated diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation, and every frame says so. Poster, captions, transcript ship with it. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism rather than a schedule. Those closures illustrate the rule; none has been run. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `visual/index.html` carries an interactive canvas: move the annual readings, the peak recomputes. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements and 120 figures. **A drawing can only be believed; this can be argued with.** **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
 
 <!-- FIGINDEX:BEGIN -->
 
@@ -1784,7 +1784,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 1006 KB, 1,721 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 1009 KB, 1,723 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
