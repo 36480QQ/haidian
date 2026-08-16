@@ -1118,11 +1118,11 @@ Both numbers are true; what was missing was saying so. **Both now ship, and both
 
 <!-- CEILING:BEGIN -->
 
-**“computed exactly” and “measured reliably” are two axes, and this package had one.** 26 metrics carry `confidence: high` and none said how strong the thing measured was. The 412.5 m closure is the case in point: the arithmetic is exact and `check_osm.js` reproduces it to the metre, but one input is a boundary this proposal **inferred** because the official polygon is unpublished, and the other is crowd-sourced. “high” is true of the computation and misleading about the reading, and no field in the file separated them. **That is how 412.5 m comes to read as a survey result.**
+**“computed exactly” and “measured reliably” are two axes; this package had one.** 26 metrics carry `confidence: high` and none said how strong the thing measured was. The 412.5 m closure is the case in point: the arithmetic is exact and `check_osm.js` reproduces it to the metre, but one input is a boundary this proposal **inferred** because no official polygon is published, and the other is crowd-sourced. “high” is true of the computation and misleading about the reading, and no field separated them. **That is how 412.5 m comes to read as a survey result.**
 
-So each metric's **evidence ceiling** is now computed from the weakest file it reads rather than judged by the author, and ships as `visual/assets/evidence_ceiling.json`. The result is unflattering, which is why it is stated: of 45 metrics, 44 can be graded — the remaining one is honestly marked unknown with no value, so it has no number to overstate. **17 are capped at `provisional`** (drawn on an inferred boundary), **9 at `background_only`** (crowd-sourced geometry or keyword counts over other people's proposals), 14 at `self_measured` (they measure this package), exactly **4** reaches `official_context`, and **none** reaches `regulatory_baseline`. Of the 26 weak-ceiling metrics, 20 read `confidence_is_about: computation` — the “high” is about the arithmetic — and 6 read `reading`: the OSM fabric, where the reading is the uncertainty (E195).
+So each metric's **evidence ceiling** is computed from the weakest file it reads rather than judged, and ships as `visual/assets/evidence_ceiling.json`. The result is unflattering, which is why it is stated: of 45 metrics, 44 can be graded — the remaining one is marked unknown with no value, so it has no number to overstate. **17 are capped at `provisional`** (drawn on an inferred boundary), **9 at `background_only`** (crowd-sourced geometry or keyword counts over other people's proposals), 14 at `self_measured` (they measure this package), exactly **4** reaches `official_context`, and **none** reaches `regulatory_baseline`. Of the 26 weak-ceiling metrics, 20 read `confidence_is_about: computation` — the “high” is about the arithmetic — and 6 read `reading`: the OSM fabric, where the reading is the uncertainty (E197).
 
-**The practice is borrowed openly.** `Abreto/REN AXIS` ran four adversarial rounds and retracted four conclusions carried only by background-class sources; `147228` ships an errata register with a `found_by` field. This package's increment is not having the idea — it is **no longer doing it by hand**: the ceiling is derived from the source files, so adding a source weaker than the claim fails the build instead of the reader.
+**The practice is borrowed openly.** `Abreto/REN AXIS` ran four adversarial rounds, retracting four conclusions carried by background sources alone; `147228` ships an errata register with a `found_by` field. This package's increment is not the idea but **no longer doing it by hand**: the ceiling comes from the source files, so a source weaker than the claim fails the build, not the reader.
 
 <!-- CEILING:END -->
 
@@ -1222,14 +1222,14 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-194 entries. By finder:
+199 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | The audit was run against the shipped package, not a draft |
 | The author | 140 | Found while working |
 | This package's own gate | 14 | Caught at build time — which is what a gate is for |
-| An outside adversarial read | 10 | A reader outside this package, working from the files the reviewer receives |
+| An outside adversarial read | 15 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
 
 <!-- ERRATA:COUNT:END -->
@@ -1245,9 +1245,9 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Shape | Count |
 |---|---|
 | An easy measure | 38 |
-| Two copies drifted | 30 |
+| Two copies drifted | 31 |
 | Shipped unseen | 21 |
-| Outlived the package | 15 |
+| Outlived the package | 17 |
 | Nothing fails it | 13 |
 | Uncheckable | 12 |
 | Outlived its line | 9 |
@@ -1256,9 +1256,9 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | No file behind it | 6 |
 | A source unnameable | 5 |
 | Recorded where found | 5 |
+| A total excluding | 4 |
+| Outlived a corpus | 4 |
 | Geometry not meaning it | 4 |
-| A total excluding | 3 |
-| Outlived a corpus | 3 |
 | Drawn without its ground | 2 |
 | Answers what it cannot | 2 |
 | Attributed to a file that refuses | 1 |
@@ -1732,13 +1732,13 @@ Every item can be completed independently:
 9. `risk.json` — eight-dimension self-assessment, mitigations and human review
 10. `changelog.md` — **including the errors found in itself**
 11. `agent.json` — full disclosure of the generation method; `model` is not a placeholder
-12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, checked with `pypdf`: `FontFile3` under `DescendantFonts` carries the CJK faces; DejaVuSans-Bold is a `/TrueType` subset under `FontFile2`
+12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, read with `pypdf`: `FontFile3` under `DescendantFonts` carries the CJK faces; DejaVuSans-Bold is a `/TrueType` subset under `FontFile2`
 
 **Who this list is for.** The repository's `scripts/review_submission.py` hands the reviewing model nine files whole — `proposal.md`, `manifest.json`, `metrics.json`, `assumptions.json`, `sources.json`, `self_check.json` and the three matrices — plus eighteen images (see `visual/assets/visual_packet_qa.json`). It does **not** read `geometry/`, `visual/assets/`, `risk.json`, `changelog.md` or `agent.json`.
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would repeat, at the scale of a checklist, this package's erratum about `analysis/`: an invitation to verify addressed to someone who cannot.
 
-**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.69 s**; 9 files, 910 KB, 1,657 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
+**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 916 KB, 1,662 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
 
 **This disclosure has a shelf life, so it states where the fix stands.** The gap is upstream Issue #2170; the maintainers opened PR #2181, which adds an auditable access boundary to the review input, states that participant verification scripts are never executed, and corrects the review prompt so that a model **may not deduct points or fail a gate merely because it cannot open a registered artifact**. Once it merges the count above is unchanged; its consequence is not, because unreachability stops being read as the participant having withheld something. This package has already taken that recovery route: the key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

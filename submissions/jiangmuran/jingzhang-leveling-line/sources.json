@@ -198,7 +198,7 @@
    "publisher": "open-city-ai/haidian 公开仓库（原始数据）；审计由本方案作者生成",
    "retrieved_at": "2026-08-13",
    "collection_method": "census.py 枚举 GitHub git tree API 得到全部方案目录，逐份抓取公开 proposal.md front matter 与 agent.json；field_map.py 汇总统计。两脚本公开于本方案配套 Issue，可重跑复算。",
-   "coverage": "截至 2026-08-13 的 793 份已合入方案，抓取成功 793/793，失败 0。同期 submissions-data.js 索引列 507 份：287 份在 git tree 而不在索引，1 份在索引而不在 tree——两个方向分开给，因为净差会把它们抵消掉。此前各次覆盖自 184 份起逐次增长（历次读数随包，见 `visual/assets/census_history.json` 与 `census.json`）；语料每日增长，引用前须重跑脚本复算。**本条的三个数由构建从 `census.json` 写入，不手敲**：此前它停在 338 份、索引滞后 29 份的那一次，而正文早已在引用第十七次的读数（E195）。",
+   "coverage": "截至 2026-08-13 的 793 份已合入方案，抓取成功 793/793，失败 0。同期 submissions-data.js 索引列 507 份：287 份在 git tree 而不在索引，1 份在索引而不在 tree——两个方向分开给，因为净差会把它们抵消掉。此前各次覆盖自 184 份起逐次增长（历次读数随包，见 `visual/assets/census_history.json` 与 `census.json`）；语料每日增长，引用前须重跑脚本复算。**本条的三个数由构建从 `census.json` 写入，不手敲**：此前它停在 338 份、索引滞后 29 份的那一次，而正文早已在引用第十七次的读数（E196）。",
    "transformations": "赛道申报取 front matter 的 tracks 字段；结构母题与元符号用中文关键词正则；model 字段按是否为占位符/空分桶，并按模型家族归并以计算写法离散度。",
    "limitations": "母题识别基于关键词正则，存在同义表述漏计，全部 share 为下界估计。model 字段为占位符或空只说明机器可读披露字段未填，不等于作者隐瞒模型；写法离散度不评价任何作者。语料随征集持续增长，引用任何数字前须重跑脚本复算。",
    "url": "https://github.com/open-city-ai/haidian/tree/main/submissions",
