@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b005a354fd47be3d030a692c85211e5dae48d9f05bd111d3baf69fe8d44412b0"
+      "sha256": "8f1fc8078c13eb5e8e3919a80f2b7f448e9426f199e0babbb806e1d09c3c4cff"
     },
     {
       "path": "agent.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1a9b00d61ca009f2c218705b46674e3cf7d1bcd62fa4e242411625f7de9bc14c"
+      "sha256": "23231eb728a0064e3d6102f2c31e4a4bfbc4262c10660e0eb693237f3b846318"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3e77f09c94a18e1d4d1cbd5841989fc68d83b80fd2709a16eba849b85223b141"
+      "sha256": "acc1ec614cf9a04dee86f1992c82b21c0fd7255ce611a87f63d0fae72590e794"
     },
     {
       "path": "report/narrative.md",
@@ -114,6 +114,27 @@
       "required": true,
       "language": "zh",
       "sha256": "2a1193669247920c1db32cea82df2cff2c6fd4cc5e1f50bb821febf0813bc85d"
+    },
+    {
+      "path": "drawings/land_use_plan.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "neutral",
+      "sha256": "84fd55222857852c008d8688a3452edbb0d2923b8d66295b4c1c202b62b299ac"
+    },
+    {
+      "path": "drawings/road_section.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "neutral",
+      "sha256": "46de13b91991feee278c14aad791f6e008cea3a79b959cb936cc98c56c3ba50d"
+    },
+    {
+      "path": "drawings/phasing_plan.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "neutral",
+      "sha256": "15a6141cc310ecf127d733b253ab637b90ad1c93da26b3e6cb2d842bc07ac3e6"
     },
     {
       "path": "visual/index.html",
@@ -149,13 +170,6 @@
       "required": true,
       "language": "zh",
       "sha256": "38a62e791ea42f611f29d9f3d2b8ac3221c4809c677abd5be314d6b1235fc88c"
-    },
-    {
-      "path": "assets/figures/metrics-counts.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "zh",
-      "sha256": "c7ce93a5659ab509048913a970d4e3d509dcbe34f056799a8cdc9e1656ae6508"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -245,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b8d5e0e02ea149617c5a57eb8071465a0d7b704d2fa7f762c8527bf58b0b2213"
+      "sha256": "66aa61f5eaa7be1e83031464df75af23d6c6408161edde8b092022d961b63952"
     },
     {
       "path": "report/proposal.en.html",
@@ -253,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "854c5f62cf19acc7e6a43550f76cc8cd15640b2fa45ded1dc218e82ad1534a68"
+      "sha256": "8d179f8e1084206d6f5ece437bfac0da679d1da490ec2ccc1c285b35d9c3143e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -312,14 +326,6 @@
       "sha256": "9d5bfc4d3b932d9a7e2e9947ca808c4474c5179a8c83a6f34e1807d058ca0dd1"
     },
     {
-      "path": "assets/figures/metrics-counts.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "en",
-      "translation_of": "assets/figures/metrics-counts.png",
-      "sha256": "690bab182064e19bb9014f60be8c99f605e2125968b9d9c321f0d51799a47d58"
-    },
-    {
       "path": "assets/figures/metrics-evidence.en.png",
       "role": "proposal_figure",
       "required": true,
@@ -352,19 +358,25 @@
       "sha256": "729560a6dfd63b12a2f7635c1913720b8cce8e1698668e64938d2da02416753f"
     },
     {
-      "path": "assets/figures/parameter_sensitivity.png",
+      "path": "assets/figures/land_use_plan.png",
       "role": "proposal_figure",
       "required": true,
-      "language": "zh",
-      "sha256": "58e6846c7b21f3f74c5778081e8c10f411540c07f0c69223014be1d668b15845"
+      "language": "neutral",
+      "sha256": "b2bb1dc4a253a1dc9d29723639c4b10675a9584c3890972a52c4cb7d22cdb5ab"
     },
     {
-      "path": "assets/figures/parameter_sensitivity.en.png",
+      "path": "assets/figures/road_section.png",
       "role": "proposal_figure",
       "required": true,
-      "language": "en",
-      "translation_of": "assets/figures/parameter_sensitivity.png",
-      "sha256": "ac5891dc8d7c0d4b8ea9f0429a62cf6383bd7b6272195ca3fdec6c1438bc27ea"
+      "language": "neutral",
+      "sha256": "3fc1d392889710af14edb00b42785b3239d712c06596ae2d0c63a039cd5a2981"
+    },
+    {
+      "path": "assets/figures/phasing_plan.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "d7f0f2fbffb80b16fca273b5666e4d78f6f13e69a9aed68beb17f3edd52962b5"
     },
     {
       "path": "assets/figures/gantt_chart.png",

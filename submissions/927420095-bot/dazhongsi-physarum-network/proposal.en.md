@@ -1,17 +1,17 @@
 ---
-title: "Bio-Physarum Mobility Network Renewal for the Dazhongsi AI Industry Cluster"
+title: "Dazhongsi Area Urban Renewal Implementation Plan — Road-Network Restructuring and Spatial Activation Based on Bio-Physarum Algorithm Insights"
 author_github: "927420095-bot"
 language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A differentiated road-network renewal concept for the Dazhongsi AI industry cluster built on the bio-Physarum adaptive network (Tero et al. 2010) and NSGA-II multi-objective optimization. Formal geometry uses a conceptual network inside the provisional boundary; the real Physarum run (167-edge network, optimal efficiency 19.20, heritage objective f3≡f2) is presented as method-validation evidence, never as redline or approval geometry."
+summary: "The Dazhongsi area faces three urban-renewal problems: a fragmented slow-travel system, the tension between heritage protection and development, and insufficient rail-station coverage. This proposal reframes them into a road-network restructuring and spatial-activation concept informed by Bio-Physarum algorithm insights: the bio-Physarum adaptive network (Tero et al. 2010) and NSGA-II multi-objective optimization serve as method tools providing reviewable quantitative reference (167-edge skeleton, optimal efficiency 19.20, heritage objective f3≡f2, all method-validation evidence); all planning recommendations are conceptual proposals requiring coordination with statutory planning and approval by the competent authority, and are never presented as redlines or approval geometry."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# Bio-Physarum Mobility Network Renewal for the Dazhongsi AI Industry Cluster
+# Dazhongsi Area Urban Renewal Implementation Plan — Road-Network Restructuring and Spatial Activation Based on Bio-Physarum Algorithm Insights
 
 ## Design Basis and Source List
 
@@ -31,15 +31,24 @@ The usage boundary of the source register is as follows [source:SOURCE-REGISTRY]
 
 The scorable state of this submission is: **provisional boundary, retaining a precision caveat and awaiting recalculation after official data is published; this does not block content scoring**. All spatial structures, scenarios, projects, and metrics are written on a "discussable, reviewable, and recalibratable after official boundary replacement" basis.
 
-## Methodology Innovation (Honest Account)
+### Relationship to Higher-Level and Statutory Plans
 
-The methodological contribution is not "inventing a new algorithm" but **combining two established methods and translating them into a road-network renewal strategy**, backed throughout by the author's real local runs and making no claim beyond what the data supports [depth:existing_conditions_diagnosis].
+As a stock-renewal conceptual plan for the Dazhongsi area, this proposal follows and aligns with the following approved/in-preparation higher-level planning frameworks (citing plan names only, no fabricated approval numbers):
 
-**Innovations (real)**: (1) **bio-algorithmic translation** — the Physarum principle of "growing an efficient, resilient, low-redundancy network from nutrient anchors (park/subway/railway)" via chemotaxis–adaptation–flow-decay is translated into seven decision variables (`alpha` chemotactic reinforcement, `beta` flow decay, `chemo_park`/`chemo_subway`/`chemo_railway` attraction weights, `chemo_radius` attraction radius, `decay_responsiveness` decay exponent); (2) **decay-response exponent k** — an exponent k is introduced on the frozen decay formula (k=1 reduces exactly to the frozen form), making the "fast decay of low-flow edges" response tunable, an interpretable mechanism extension; (3) **boundary adaptivity** — the H1 boundary check found `alpha` crossed the original upper bound 2.0 and `chemo_radius` crossed 60, so the search domain was extended to [0.5, 3.0]×[15, 100] to avoid truncating the optimum at the boundary; (4) **four-objective trade-off + scenario selection** — NSGA-II yields the four-objective Pareto front (f1 efficiency / f2 cost / f3 heritage / f4 coverage), then scenarios A/B/C/D are chosen by "efficiency-first / cost-first / coverage-first / balanced".
+- *Beijing Municipal Master Plan (2016–2035)*: aligned with the general direction of "reduction-based development" and "urban renewal"; road-network restructuring follows stock-improvement and slow-travel-first principles.
+- *Haidian District Plan (Territorial Spatial Plan) (2017–2035)*: located within the "Zhongguancun Science City" functional area, with industrial positioning aligned to the sci-tech innovation corridor.
+- *Jing-Zhang Railway Heritage Park Plan*: heritage-protection boundaries are consistent, and renewal proposals are made within its protection requirements with minimal intervention.
+- Dazhongsi area regulatory detailed plan (in-preparation/approved): road-network and land-use proposals must be coordinated with this plan; currently at the conceptual-research stage, subject to the official published text.
 
-**Honest account of the heritage objective f3 (corrected)**: this proposal does **not** claim that "the Physarum spontaneously avoids the heritage boundary". The facts are: the local `data/heritage/heritage_boundary.geojson` is a **manually-digitized** boundary (`data_credibility=MODEL`, `trust_level=B`, `geometry_origin=manual_digitization`), whose legal basis is the official four-side text (京政发〔1984〕128号 / Beijing Municipal Cultural Heritage Bureau 2018-01-02 announcement) — **not official redline geometry** (the digitization log explicitly marks the "protection-scope map" and "planning redline drawing" as **not obtained**). It assigns zones: `protection_scope` (blocked, hard constraint g1), `class_I_control` (soft penalty 1.5), `class_IV_control` (soft penalty 3.0). In the H2-seg3 optimal skeleton, no skeleton edge falls inside the class_I/class_IV penalty zones (all `heritage_factor` are 1.0), so f3 numerically equals f2 (f3≡f2). The "zero heritage crossings" therefore reflects only the g1 hard-constraint `protection_scope` crossing count of 0, and **does not constitute an independent in-site heritage-protection compliance conclusion**; moreover this manual boundary carries a CRS-reprojection caveat, so a formal conclusion requires the official protection-scope map and planning redline [metric:physarum_heritage_crossing_count].
+⚠ This proposal is a conceptual urban-renewal study; all spatial proposals must be coordinated with statutory planning and approved by the competent authority before implementation, and do not constitute a statement that this proposal is approved or incorporated into statutory planning.
 
-**Off-site nature of the method validation**: the real Physarum + NSGA-II run lies ~2–3 km west of the provisional boundary (~140 m overlap), so it enters figures, `sources.json`, `metrics.json`, and prose entirely as **method-validation evidence**, not as formal geometry, not as a redline, and not as approval basis; the methodological innovation must be re-verified with real site-coordinate alignment once official data arrives.
+## Methodology (Method Tool · Honest Account)
+
+This proposal uses the Bio-Physarum adaptive network (Tero et al. 2010) and NSGA-II multi-objective optimization as **method tools** to provide reviewable quantitative reference for Dazhongsi road-network renewal, not as the core deliverable [depth:existing_conditions_diagnosis].
+
+Core method: parks/subways/railways serve as "nutrient anchors", and the network grows through chemotaxis–adaptation–flow-decay; effective distance = impedance/conductivity, with the decay rule `D ← D·(1 − β·(1 − |φ|/max|φ|))`; four objectives (efficiency, cost, heritage, coverage) are optimized by NSGA-II without artificial weighting. The real run produced a 167-edge skeleton, optimal efficiency 19.20 (baseline 1.143), and recommended Plan03 UDS 80.34 [metric:physarum_efficiency_index].
+
+**Honest boundary**: the heritage objective f3 degenerates to f2 (f3≡f2) under the local manually-digitized boundary (MODEL credibility); "zero heritage crossings" reflects only method-level constraint behavior, not an independent in-site heritage-protection compliance conclusion; the real run lies ~2–3 km west of the provisional boundary and is method-validation evidence only, not formal geometry, redline, or approval basis. The run is reproducible (seed=42, 3 warm-start segments, 30 generations total, bit-exact not guaranteed); full parameters are in `simulation.json`.
 
 ## Three-Level Scope Framework
 
@@ -56,6 +65,27 @@ The overall concept proposed here is the "**intelligent-vein symbiotic belt**": 
 | Coordinated research area | How to organize the AI ecosystem and future urban form | Build an "university-origination, open-source collaboration, enterprise conversion, public experience, international communication" innovation chain | compliance_matrix.json, standard_matrix.json |
 | Overall design area | How to map industrial space, urban renewal, transport-municipal, and character | Land use, buildings, conceptual network, green space, public space, and phasing layers jointly express it | [data:geometry/land_use.geojson#LU-001], [data:geometry/roads.geojson#ROAD-001] |
 | Key-area scope | How the three areas reach detailed-design depth | Propose positioning, spatial actions, AI scenarios, and implementation dependencies respectively | [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003] |
+
+### Existing-Condition Diagnosis (slow-travel fragmentation · heritage tension · insufficient rail coverage)
+
+Based on the public announcement and OSM existing-condition data (qualitative, pending official survey), the Dazhongsi area renewal faces three core problems:
+
+1. **Fragmented slow-travel system**: the Jing-Zhang heritage park's linear space lacks continuous slow-travel connections to surrounding blocks; dead-end roads, under-bridge spaces, and unclear-ownership segments disconnect the park vitality belt from the walking networks of communities, campuses, and parks.
+2. **Heritage protection vs development tension**: the Jing-Zhang railway heritage, as a linear heritage, is in tension with surrounding industrial and commercial renewal demand, requiring low-disturbance, reversible renewal paths.
+3. **Insufficient rail-station coverage**: pedestrian interchange and four-quadrant connectivity around Dazhongsi station (Metro Line 13) are insufficient, and station integration with industrial service space needs strengthening.
+
+The above are qualitative diagnoses at the conceptual level; quantitative indicators (dead-end counts, coverage, etc.) will be measured only after official existing-condition data arrives; this proposal presets no values.
+
+### Renewal Goals (slow-travel stitching · heritage coordination · rail integration · blue-green connectivity)
+
+Corresponding to the problems above, this proposal sets four renewal goals:
+
+1. **Slow-travel stitching**: use the concept network's primary-vein–branch–slow-loop structure to stitch the park vitality belt with the three key areas' slow-travel gaps.
+2. **Heritage coordination**: propose low-disturbance renewal within heritage-protection constraints, minimizing heritage impact and avoiding over-development.
+3. **Rail integration**: organize four-quadrant pedestrian connectivity and a TOD micro-center around Dazhongsi station, strengthening station and industrial service linkage.
+4. **Blue-green connectivity**: with the Jing-Zhang heritage park as the skeleton, connect the Qinghe, Xiaoyue, and three-key-area blue-green slow composite system.
+
+The above goals are conceptual; specific implementation follows the regulatory plan and competent-authority approval.
 
 ## Brand Identity: 智脉共生 (Bio-Pulse Symbiosis)
 
@@ -97,7 +127,7 @@ Quantitative indicators (area, investment, coverage) for the above cases follow 
 
 The core task of the coordinated research area is to build a world-class AI innovation ecosystem. The proposal surveys Haidian's universities and institutes, leading enterprises, computing/algorithm/data-element resources, incubation platforms, listed companies, unicorns, and sci-tech services, and proposes a spatial coordination framework across the AI innovation chain, industry chain, talent chain, and urban service chain. The agent open-call taskbook also requires responding to the "five functions" and "three-district two-wing" coordination; this section uses [source:AGENT-TASKBOOK] and [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] to mark that these requirements come from the agent open-call, not statutory planning control.
 
-The differentiating value of this proposal is treating "network self-organization" as a computable urban-design method: the Physarum network's minimum-cost, multi-source shortest-path, and fault-tolerant redundancy properties map onto the efficiency, connectivity, and robustness objectives of road-network renewal, while the four NSGA-II objectives (efficiency, connectivity redundancy, heritage impact, cost) map onto planning's multi-criteria trade-off [depth:overall_spatial_structure]. The coordinated research does not add pseudo-precise redlines; it ties back to [data:geometry/land_use.geojson#LU-001] through [standard:MOHURD-URBAN-DESIGN-MEASURES].
+The differentiating value of this proposal is treating "network self-organization" as a computable design-assistance tool: the Physarum network's low-cost, multi-source shortest-path, and fault-tolerant redundancy properties provide reviewable quantitative reference for the efficiency, connectivity, and robustness objectives of road-network renewal; the industry and future-city research of the coordinated research area aligns with the Zhongguancun Science City sci-tech innovation corridor established by the Haidian District Plan, organizing spatial coordination around the AI innovation chain, industry chain, and talent chain [depth:overall_spatial_structure]. The coordinated research does not add pseudo-precise redlines; it ties back to [data:geometry/land_use.geojson#LU-001] through [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -106,6 +136,17 @@ The overall design area must reach regulatory-plan-level urban design depth. The
 This section uses [standard:MOHURD-CONTROL-DETAILED-PLANNING] to split regulatory-depth content into reviewable objects: [data:geometry/land_use.geojson#LU-001] expresses land-use structure, [data:geometry/buildings.geojson#BLDG-001] expresses building footprints, [data:geometry/roads.geojson#ROAD-001] expresses the conceptual primary vein, and [metric:building_footprint_area_sqm] is used to cross-check the footprint area.
 
 The overall design must also support transport, rail, municipal, and supporting facilities. Where building height, development intensity, road redlines, setbacks, and facility standards lack official control conditions, they must be written as "pending formal regulatory-plan confirmation", never presenting agent-inferred values as approved indicators.
+
+### Spatial Scheme (Conceptual)
+
+The overall spatial scheme is "one belt, three cores, multi-level network, blue-green slow composite ring":
+
+- **One belt**: the Jing-Zhang heritage park as the historical and public-space spine, linking the three key areas.
+- **Three cores**: Zhongzhiyuan AI autonomous innovation acceleration area, Beijing AI Origin community, Dazhongsi AI industry cluster.
+- **Multi-level network**: the concept network's primary vein (north-south spine), branches (east-west connectors), slow loops, and green-corridor hierarchy.
+- **Composite ring**: the linked system of slow travel, green space, public space, and activity routes.
+
+This spatial scheme is a conceptual proposal (`agent_generated_design`), not approval geometry; boundaries, redlines, and land use all await regulatory-plan and competent-authority confirmation.
 
 ## Detailed Design of Key Areas
 
@@ -150,6 +191,23 @@ The land-use proposal expresses a complete, closed, seamless partition following
 
 The main land-use and building evidence is [data:geometry/land_use.geojson#LU-001], [data:geometry/buildings.geojson#BLDG-001], and [metric:building_footprint_area_sqm]. Building scale and intensity metrics must be consistent with `metrics.json` and the layers; where official conditions are missing, use `status=unknown` and state the pending condition in `reason` / `assumptions`, never manufacturing precision with fixed numbers.
 
+### Existing-Condition vs Planning Comparison (qualitative, to be verified)
+
+| Dimension | Existing (public-material qualitative, to be verified) | Planning recommendation (conceptual) | Basis / to be confirmed |
+| --- | --- | --- | --- |
+| Land-use structure | Research, commercial, residential, and green land interwoven without functional zoning coordination | Reorganize industry–commercial–residential–green zones around the "three cores", land-use codes following the territorial classification | Official regulatory land use and redlines |
+| Road-network hierarchy | Grid-dominant, with unclear slow-travel and micro-circulation tiers | Primary vein–branch–slow loop–green corridor four-tier network | Existing road network and redlines |
+| Rail coverage | Dazhongsi station area lacks pedestrian interchange and four-quadrant connectivity | Station integration and four-quadrant pedestrian connectivity | Station CAD and passenger-flow data |
+| Slow-travel connectivity | Jing-Zhang heritage park fragmented from surrounding blocks | Slow loops stitch the park vitality belt with the three key areas | Existing slow-travel gap survey |
+| Blue-green space | Qinghe, Xiaoyue, and park green space lack connectivity | Blue-green slow composite ring connects them | River blue lines and green-space planning |
+| Heritage protection | Single-note display of the Jing-Zhang linear heritage | Low-disturbance renewal, node-based cultural anchors | Protection-scope map |
+
+The "existing" column above is a qualitative judgment based on public material; quantitative indicators will be measured after an official existing-condition survey; this proposal presets no values.
+
+![Land-use plan (conceptual)](assets/figures/land_use_plan.png)
+
+**Land-use classification note (honest statement)**: the land-use plan uses the *Territorial Survey, Planning, and Use-Control Land and Sea Classification Guide (Trial)* as the classification basis, drawing the four functional zones of `geometry/land_use.geojson` (0802 research innovation, 1401 park green space, 05 industrial/commercial service, 0702 community service); GB 50137 appears only as a conceptual approximate-correspondence column, not a survey or approval. Parcel boundaries are `agent_generated_design` design suggestions, not property redlines.
+
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
 The transport proposal responds to the announcement's requirements on station integration, road micro-circulation, slow-travel gaps, external transport, parking, bicycle parking, and green transport, focusing on the Dazhongsi station and key-enterprise surroundings [depth:traffic_rail_slow_parking].
@@ -162,17 +220,31 @@ The transport proposal responds to the announcement's requirements on station in
 - **Green corridor (greenway)**: the blue-green composite corridors flanking the Jing-Zhang heritage park vitality belt, linking footpaths, cycleways, and green space.
 - **Station feeder (transit_connection)**: the Dazhongsi station interchange axes.
 
-**Method-validation evidence (not entering formal geometry)**. The author's real Physarum + NSGA-II run produced a 167-edge adaptive network with optimal efficiency index 19.20, Run7 frozen objective 2.802, and baseline efficiency 1.143. On heritage it must be stated honestly: the public site package provides no official heritage geometry with a non-default heritage_factor, so the four-objective f3 (heritage impact) degenerates to f2 (cost) in computation — i.e. f3≡f2; the recorded "0 heritage crossings" is therefore only the g1 hard-constraint behavior (protection_scope crossing count is always 0) at method level, **not an independent heritage-protection compliance conclusion for this site** [metric:physarum_efficiency_index] [metric:physarum_heritage_crossing_count]. Because of a coordinate offset of roughly 2–3 km, this result is method-level convergence and constraint-behavior evidence only; it is not a redline or approval geometry for this site, and the in-site `geometry/constraints.geojson` remains empty pending official heritage geometry, as detailed in `assumptions.json` and the risk section.
+**Method-validation evidence (not entering formal geometry)**. The author's real Physarum + NSGA-II run produced a 167-edge skeleton with optimal efficiency 19.20 and f3≡f2 (see "Methodology"); because of a coordinate offset of ~2–3 km, it is method-level evidence only and is not a redline or approval geometry for this site [metric:physarum_efficiency_index].
 
 ![Transport slow-travel and blue-green public space composite system](assets/figures/mobility-bluegreen.en.png)
 
 Municipal and public-service facilities cover AI industry service facilities, innovation service platforms, talent living services, new infrastructure, distributed energy, edge computing, and traditional municipal facilities [depth:municipal_new_infrastructure]. Missing pipeline, energy, drainage, flood-control, and fire-safety engineering data are listed as formal deepening prerequisites.
+
+### Road Cross-Section Design (conceptual suggestion)
+
+| Cross-section | Applicable grade | Lanes | Median / greening | Slow travel | Tactile paving | Suggested redline width (m, conceptual) |
+| --- | --- | --- | --- | --- | --- | --- |
+| A Main street | Arterial / secondary | 2-way 4 lanes | Central median greening | Dual-side cycle + dual-side sidewalk | Dual-side continuous | 30.0 |
+| B Secondary street | Secondary / branch | 2-way 2 lanes | On-street parking | Dual-side cycle + dual-side sidewalk | Single-side continuous | 18.0 |
+| C Pedestrian street | Pedestrian / slow loop | Slow-only | Dual-side greening | Central pedestrian band (with street furniture) | Dual-side continuous | 14.0 |
+
+![Road cross-sections (conceptual)](assets/figures/road_section.png)
+
+The cross-section composition and widths above are all **conceptual suggestion values**, not measured or approved; they reference CJJ 37-2012 (2016 edition) *Code for design of urban road engineering* and GB 50763-2012 *Code for accessibility design*, and are finalized against the regulatory plan, road redlines, and measured road widths.
 
 ## Blue-Green Network, Public Space, and Urban Character
 
 The blue-green proposal takes the Jing-Zhang heritage park vitality belt as the skeleton, coordinating the Qinghe and Xiaoyue rivers and the travel needs of surrounding universities, enterprises, and communities, proposing a north-south connected and east-west linked footpath, cycleway, and green-space system [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001].
 
 The Physarum green corridors and slow loops form the "vascular network" of the blue-green public space: green corridors run north-south along the vitality belt, and slow loops create human-scale public activity interfaces in the three key areas; the green and public-space ratios are explained in prose and recalculated in full in `metrics.json` [metric:green_ratio] [metric:public_space_ratio]. The urban-character proposal integrates Jing-Zhang railway history, Zhongguancun innovation culture, and AI innovation culture, distinguishing official control, design recommendation, and to-be-confirmed conditions, and strictly forbids pseudo-precise control lines without heritage or regulatory-plan basis [standard:MOHURD-URBAN-DESIGN-MEASURES].
+
+The blue-green connectivity scheme aligns with the protection and public-space requirements of the *Jing-Zhang Railway Heritage Park Plan*: the north-south green corridor along the park vitality belt and the east-west blue-green interfaces of the Qinghe and Xiaoyue rivers are organized within its protection requirements under the minimal-intervention principle, without adding pseudo-precise control lines; specific green and public-space ratios and boundaries follow the regulatory plan and the green-space-system special plan [depth:blue_green_public_space].
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -229,30 +301,59 @@ Phasing must be distinguished from the 100-day competition design period: near-t
 
 The figure above is a **suggestive phasing** (near-/mid-/long-term) visualization, matching the "suggestive cycle" column of the implementation matrix; `geometry/phasing.geojson` currently contains only one polygon `PHASE-001` (first-phase development assessment scope, 4.587 million m²), with **no official schedule**, so no concrete start/completion dates are marked [depth:phasing_implementation].
 
+### Approval Process (real authorities, conceptual sketch)
+
+The table below lists the **real** competent authorities and prerequisite conditions that the renewal projects may involve at implementation; the process order, cycle, and prerequisites are all **conceptual sketches**, subject to the actual approval path of the relevant Haidian authorities; this proposal does not claim any project is approved [depth:phasing_implementation].
+
+| Stage | Authority (real) | Prerequisite (conceptual) | Note |
+| --- | --- | --- | --- |
+| Planning conditions | Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch | Regulatory plan, land-use and road redlines, design conditions | Baseline for coordinating the renewal scheme with the regulatory plan |
+| Project approval | Haidian District Development and Reform Commission | Project proposal / feasibility study, funding arrangement | Government-invested projects require approval |
+| Construction | Haidian District Commission of Housing and Urban-Rural Development | Construction-drawing review, construction permit | Construction permit and quality/safety supervision |
+| Transport organization | Haidian District Urban Management Commission, district transport authority | Road redline, traffic-impact assessment, under-bridge space permit | JZ-01/JZ-04 involved |
+| Rail integration | Rail construction/operation unit | Station integration plan, utility relocation, fire review | JZ-04 involved; timing matches rail retrofit |
+| Blue-green and waterways | Haidian District Water Authority, District Landscaping and Greening Bureau | River blue line, flood assessment, green-space permit | JZ-02 involved |
+| Heritage protection | Beijing Municipal Cultural Heritage Bureau | Protection-scope map, heritage-impact assessment | Renewal related to the Jing-Zhang railway heritage requires assessment |
+| Sci-tech industry | Haidian District Commission of Science, Technology, and Information | Computing, security, operator confirmation | JZ-05 involved |
+
+### Stakeholder Analysis (conceptual suggestion)
+
+| Stakeholder (type) | Core demand | Impact / benefit | Participation (conceptual suggestion) |
+| --- | --- | --- | --- |
+| District government & planning branch | Stock-renewal improvement, industry upgrading | Renewal implementation entity | Planning conditions and regulatory-plan coordination |
+| Rail operator | Passenger flow, station linkage | Station-integration benefit | Station-integration scheme coordination |
+| Surrounding universities | Technology conversion, campus-park connectivity | Near-campus conversion street benefit | Ownership and ground-floor program coordination |
+| District enterprises | Public-environment improvement, industry synergy | Public space and computing-node benefit | Ground-floor program and public-environment co-building |
+| Residents and communities | Travel convenience, environment improvement | Slow-travel and blue-green connectivity benefit | Phased construction, public-notice communication |
+| Heritage and cultural-relic authority | Heritage protection, minimal intervention | Heritage display and low-disturbance renewal | Heritage-impact-assessment coordination |
+| Jing-Zhang heritage park management | Park vitality, visitor experience | Slow-travel stitching benefit | Under-bridge space and boundary coordination |
+| Development and construction entities | Funding and construction-operation | Renewal project landing | Project approval and operation coordination |
+
+The table above is a type-based analysis from public material, not a named interview; specific demands, support/opposition, and coordination mechanisms must be confirmed through on-site research at implementation; this proposal fabricates no interview conclusions.
+
+### Phasing Sketch (Conceptual)
+
+![Phasing plan (conceptual)](assets/figures/phasing_plan.png)
+
+The phasing sketch maps the three key areas and six renewal projects onto near-term (0–2 years, JZ-01 pilot), mid-term (2–5 years, JZ-02/03/04), and long-term (5–10 years, JZ-05/06); `geometry/phasing.geojson` currently contains only one polygon `PHASE-001`, with **no official schedule**, so no concrete start/completion dates are marked [depth:phasing_implementation].
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 The metrics system includes at least overall design area, key-area area, green and public-space ratios, building footprint, renewal project count, AI scenario nodes, slow-travel connectivity, industry space, talent service, and self-check state [depth:metrics_recalculation]. Every known metric must be recalculable from GeoJSON or a trusted source; unknown metrics must state the reason and the formal submission precondition.
 
-**Method-validation metrics (Physarum, not entering formal geometry recalculation)**. The following metrics come from the author's real Physarum + NSGA-II run, stored in `metrics.json` as method-level evidence, and are not treated as formal spatial conclusions for this site due to the coordinate offset:
-
-- Network edge count 167 [metric:physarum_network_edge_count]
-- Optimal efficiency index 19.20 [metric:physarum_efficiency_index]
-- Baseline efficiency 1.143 [metric:physarum_baseline_efficiency]
-- Run7 frozen objective 2.802 [metric:physarum_run7_frozen_objective]
-- Heritage objective constraint behavior: f3≡f2 (heritage impact degenerates to cost), g1 protection_scope crossing count 0, not an independent site heritage conclusion [metric:physarum_heritage_crossing_count]
-- Recommended plan Plan03 urban-integration UDS 80.34 [metric:physarum_recommended_plan_uds]
+**Method-validation metrics (Physarum, not entering formal geometry recalculation)**. Method-level evidence (167 edges, optimal efficiency 19.20, baseline 1.143, Run7 frozen objective 2.802, f3≡f2, recommended Plan03 UDS 80.34) is stored in `metrics.json` and detailed under "Methodology"; due to the coordinate offset it is not treated as a formal spatial conclusion for this site [metric:physarum_efficiency_index].
 
 Core metrics recalculation and evidence chain overview (required figure; real run data, not fabricated):
 
 ![Core metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
-The method-validation metrics are split into three charts by dimension to avoid cross-dimension bar comparison:
+The method-validation metrics are split into two charts by dimension to avoid cross-dimension bar comparison:
 
 ![Network efficiency: baseline → optimized (dimensionless)](assets/figures/metrics-efficiency.en.png)
 
 ![Four-objective Pareto front (f1 vs f2, color=f4)](assets/figures/metrics-objectives.en.png)
 
-![Count metrics (Phase 6-H2 run log)](assets/figures/metrics-counts.en.png)
+Three statutory-depth drawings are added this round (land-use plan, road cross-sections, phasing plan, under the "Land Use", "Transport", and "Renewal Projects" sections) as deliverables, registered through both the `drawings/` and `assets/figures/` channels.
 
 The compliance matrix is the master control file for task responsiveness. Each announcement task and agent-taskbook task must map to a report section, layer, metric, drawing, HTML page, source, assumption, and self-check item. For formal deepening, metrics are divided into three classes: spatial metrics directly recalculable from submitted geometry; control metrics requiring official regulatory plan or taskbook attachments; and performance metrics requiring continuous operational or industry data calibration.
 
@@ -290,32 +391,6 @@ Each scenario is detailed below by the four fields "trigger condition → test s
 
 > The specific numeric values in the "pass criteria" above are **not preset** — they are set only after official data and regulatory targets arrive, so as to avoid fabricating acceptance thresholds. The scenarios themselves are a suggestive framework and are not claimed to have passed validation.
 
-## Parameter Sensitivity (Method Validation)
-
-To address scientific-rigor requirements, this section characterizes a **first-order parameter sensitivity** of the seven decision variables based on the author's real local runs [depth:metrics_recalculation]. Two real sources are used: (1) the H1 boundary check (`h1_boundary/boundary_results.json`) for whether alpha / beta / chemo_radius hit their bounds; and (2) the normalized dispersion `(max−min)/(xu−xl)` of each variable across the H2-seg3 four-objective Pareto front (`simulation.json` `pareto_solutions`). These are method-validation level (the network lies ~2–3 km west of the provisional boundary), not a site-level formal sensitivity analysis.
-
-**Boundary-check findings (real)**. The H1 boundary check shows `alpha` converges to ~2.46–2.47, **crossing the original upper bound of 2.0**, so the search domain was extended from [0.5, 2.0] to [0.5, 3.0]; `chemo_radius` converges to ~66.5–69.8 m, **crossing the original upper bound of 60**, so it was extended to [15, 100]; `beta` converges to ~0.0058, within the original [0.001, 0.05] and near the lower bound. This boundary-touching pattern indicates the optimizer persistently prefers higher alpha (chemotactic reinforcement) and a larger chemo_radius (attraction radius).
-
-**Pareto dispersion (real)**. Across the six H2-seg3 non-dominated solutions, the normalized dispersion of each variable is: `chemo_subway` 0.576 (largest — subway attraction weight, the primary trade-off driver), `chemo_park` 0.295, `chemo_radius` 0.207, `decay_responsiveness` 0.056, `chemo_railway` 0.028, `beta` 0.0007, `alpha` 0.0006. Alpha (near the extended upper bound) and beta (near the lower bound) barely vary across the Pareto set, whereas chemo_subway and chemo_park are the key variables shaping the efficiency–cost trade-off.
-
-![Parameter sensitivity figure](assets/figures/parameter_sensitivity.png)
-
-**Honest note and follow-up**. The "Pareto dispersion" above is a first-order, data-driven indicator, **not** a strict Sobol / OAT global sensitivity analysis; moreover alpha is already near the extended upper bound. A follow-up run should further widen alpha's range and run one-at-a-time (OAT) perturbation or variance decomposition (Sobol) for reliable main and interaction effects. This section makes no claim of a definite site-level sensitivity ranking.
-
-## Reproducibility (Method Validation)
-
-The method-validation run of this proposal (Phase6-H2, Bio-Physarum + NSGA-II) is reproducible; full parameters and environment are recorded in the `reproducibility` / `algorithm` / `run` fields of `simulation.json`. This section is a summary [depth:metrics_recalculation].
-
-**Environment (author's real local machine)**. Windows 11 Home China 10.0.26200; Python 3.14.6; numpy 2.5.1; pymoo 0.6.2; shapely 2.1.2; networkx 3.6.1; matplotlib 3.11.1 (plotting only; core computation does not depend on it).
-
-**Reproduction commands** (under `experiments/phase6_p0_physarum/`, entry point `code/phase6_h/h2_seg.py`, seed=42): `python code/phase6_h/h2_seg.py 1` (fresh run, pop80/gen10) → `... 2` (resume +10 generations) → `... 3` (resume +10 generations, 30 total). Each segment writes to `output/phase6_h/h2_seg{N}/`; the frozen results in this submission come from `h2_seg3`.
-
-**Key parameters**. pop_size=80, 30 total generations, n_proc=8, SBX(prob=0.9, eta=15), PM(prob=0.1, eta=20), eliminate_duplicates=True, 60 Physarum iterations, top-10% conductivity skeleton; the bounds of the seven decision variables (alpha/beta/chemo_park/chemo_subway/chemo_railway/chemo_radius/decay_responsiveness) are in `simulation.json.problem`.
-
-**Input data (data/ directory, author's local machine)**. `gis/roads.geojson`, `gis/verified_nodes.json`, `heritage/heritage_boundary.geojson` (manually digitized, MODEL credibility), `osm/osm_{parks,railways,subway,roads}.json`.
-
-**Reproduction caveats (honest note)**. ① NSGA-II's multi-process (n_proc=8) evaluation order and float reduction vary by OS/hardware, so **bit-exact reproduction is not guaranteed** and objective values are approximate; ② each worker forces single-threaded BLAS; ③ the heritage-boundary geojson declares CRS84 but the exported coordinates carry a "actually EPSG:3857" re-projection caveat, so the actual coordinates should be checked before reproduction; ④ that heritage boundary is manually-digitized MODEL data, so the reproduced f3 **must not** be treated as a heritage-protection compliance conclusion for the site.
-
 ## Accessibility and Inclusivity (GB 50763-2012)
 
 The proposal treats accessibility and inclusivity as a hard design precondition for road-network renewal, not an add-on. The verification basis is GB 50763-2012 (Code for accessibility design) and the Regulations on the Construction of Barrier-Free Environment (State Council Order No. 622); concretely, the **curb ramps, tactile paving, barrier-free ramps/elevators, barrier-free toilets, barrier-free signage, and lowered service facilities** of the slow loops and interchange axes are continuously reachable across all renewed road segments and public spaces [depth:traffic_rail_slow_parking].
@@ -336,7 +411,7 @@ The proposal treats accessibility and inclusivity as a hard design precondition 
 
 **Bilingual required.** This proposal's primary file is Chinese, with a full mirrored translation provided via `proposal.en.md`; the A3/A0, HTML, and text-bearing figures also provide language counterparts [source:SITE-PACKAGE].
 
-**Honest statement on coordinate offset and heritage protection.** The real Physarum run lies roughly 2–3 km west of the provisional boundary, overlapping the site boundary by only about 140 m. This proposal performs no coordinate translation or fabrication; the real result is downgraded to method-validation evidence, and the formal geometry uses a conceptual network inside the provisional boundary. Heritage protection (HERITAGE_PROTECTION) is a locked layer with `editable_by_agent=false` and no citable official geometry in the public site package, so `geometry/constraints.geojson` is deliberately kept empty; the heritage boundary enters `sources.json`/`assumptions.json` as a declaration rather than the constraint layer; the four-objective f3 (heritage impact) numerically equals f2 (cost) — i.e. f3≡f2 — because, under the local manually-digitized boundary (MODEL credibility), the optimal skeleton does not fall inside the class_I/class_IV penalty zones; this proposal therefore does not claim "zero heritage crossing" as an independent in-site heritage-protection compliance conclusion (see the Methodology Innovation section) [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS].
+**Honest statement on coordinate offset and heritage protection.** The real Physarum run lies roughly 2–3 km west of the provisional boundary, overlapping the site boundary by only about 140 m. This proposal performs no coordinate translation or fabrication; the real result is downgraded to method-validation evidence, and the formal geometry uses a conceptual network inside the provisional boundary. Heritage protection (HERITAGE_PROTECTION) is a locked layer with `editable_by_agent=false` and no citable official geometry in the public site package, so `geometry/constraints.geojson` is deliberately kept empty; the heritage boundary enters `sources.json`/`assumptions.json` as a declaration rather than the constraint layer; the four-objective f3 (heritage impact) numerically equals f2 (cost) — i.e. f3≡f2 — because, under the local manually-digitized boundary (MODEL credibility), the optimal skeleton does not fall inside the class_I/class_IV penalty zones; this proposal therefore does not claim "zero heritage crossing" as an independent in-site heritage-protection compliance conclusion (see the Methodology section) [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS].
 
 **Risk matrix (qualitative, suggestive)**. The table grades the main risks **qualitatively** (high/medium/low); the grades and mitigations are suggestive, not a formal risk-assessment conclusion; the formal risk list follows the competent authority and professional assessors [depth:risk_missing_data].
 
@@ -419,32 +494,7 @@ The table summarizes where each agent.1–6 dimension outcome lands in this prop
 | agent.4 Test scenarios | 3 test validation scenarios (TOD/stormwater/community) | "Test Validation Scenarios" |
 | agent.5 Landmarks/components/recognition | 3 landmarks + component system + recognition mechanism | "Landmarks, Component System, and Recognition Mechanism" |
 | agent.6 Culture/international/events/operation | Bilingual wayfinding + elevator pitch + annual events + three-party co-governance | "Cultural Wayfinding, International Narrative, Annual Events, and Long-term Operation" |
-| agent.7 Accessibility enhancement (Round 5) | Four-layer architecture / data schema / routing & dispatch engine / deployment framework | "Accessible Smart Governance and Navigation Integration Outlook" + Appendices A/B/C/D |
-
-## Reproducible Algorithm Appendix (real parameters; method rigor)
-
-> **Key statement (verbatim)**: The concept line network in this proposal is generated by the Bio-Physarum simulation algorithm and constitutes off-site method validation. It has no direct geometric inheritance relationship with any actual site unless a separately approved provisional on-site demonstration run is provided. The current deliverable is a reference proposal at the planning-research stage, for professional teams' further study only.
-
-**Input nodes (real, `data/gis/verified_nodes.json`)**: 29 key nodes in total — 3 subway stations (point coordinates, WGS84) + 15 parks (way polygons/rings, centroid) + 11 railways (way lines, centroid). The three subway coordinates (6 decimals): Dazhongsi `node/6617852356` (116.3390137, 39.9652731), Weigongcun `node/7861046853` (116.3171815, 39.9563044), Dazhongsi `node/12435287603` (116.3378309, 39.9661057). Parks and railways are way features (polygons/polylines), not single-point coordinates; centroids are computed from OSM way nodes.
-
-**Objective functions (pymoo unified minimization convention)** [depth:metrics_recalculation]:
-
-| Objective | Name | Direction | Formula (real) |
-| --- | --- | --- | --- |
-| f1 | Network efficiency | maximize (negated) | mean(1/effective distance) over key-node pairs; effective distance = impedance/conductivity |
-| f2 | Construction cost | minimize | Σ top-10% skeleton edge lengths (unit cost 1.0, unit m) |
-| f3 | Heritage impact | minimize | Σ skeleton length × heritage_factor (here f3≡f2) |
-| f4 | Service coverage | maximize (negated) | Σ weight(type) × 1/(distance to nearest same-type facility + 1); weight: subway=1.5/railway=1.2/park=1.0 |
-
-**Weight statement**: NSGA-II is pure multi-objective with **no artificial weighting**; the Pareto front emerges naturally from non-dominated sorting.
-
-**Constraints (real)**: g1 hard constraint — protection_scope crossing edges = 0 (the frozen model already BLOCK-deletes them, so always 0); g2 soft constraint — largest connected component node share > 95% (graph-construction constant, reported only).
-
-**Random seed and run segments (real, correcting the brief)**: `code/phase6_h/h2_seg.py` always uses seed=42 (not 42/43/44/45/46); the actual run is 3 segments (h2_seg1/2/3) with warm-start resume, 10 generations each, 30 total. Each segment pop 80 × 10 generations = **800 evaluations** (`simulation.json` records seg3 single-segment n_evaluations=800, not the claimed 4,000).
-
-**Pareto selection (real)**: from the final 6 non-dominated solutions, Plan03 (scenario D, balanced) is chosen by minimum utopia distance: f1=17.311, f2=8,813.1 m, f4=17.605 (service-coverage metric, **not** an "800 m coverage of 59.3%" — that value is unverifiable and unused); Plan03 leads Phase5 expert-review Round 2 with UDS 80.34 (`simulation.json.frozen_metrics`).
-
-**Reproduction boundaries (honest note)**: multi-process (n_proc=8) evaluation order and float reduction vary by OS/hardware, so bit-exact reproduction is not guaranteed; the heritage-boundary geojson declares CRS84 but its exported coordinates carry an "actually EPSG:3857" re-projection caveat; the manually-digitized heritage boundary (MODEL credibility, trust B) means the reproduced f3 must not be treated as a heritage-protection compliance conclusion for the site. This appendix corresponds to the `reproducibility`/`algorithm`/`run` fields of `simulation.json`.
+| agent.7 Accessibility enhancement (Round 5) | Four-layer architecture / data schema / routing & dispatch engine / deployment framework | "Accessible Smart Governance and Navigation Integration Outlook" + Appendices A/B |
 
 ## Six Renewal-Project Implementation Cards (9 fields; conceptual suggestion)
 
@@ -484,7 +534,7 @@ The full audit is in `report/copyright_statement.md`; this table is a summary, w
 
 > **⚠ Provisional-boundary warning**: this figure is generated from OpenStreetMap public data and the simulation algorithm; the boundary is a conceptual sketch without statutory planning force.
 
-The 8 spatial figures under `assets/figures/` (site-overview / land-use-structure / key-areas / mobility-bluegreen / brand_identity / parameter_sensitivity / gantt_chart / metrics-* series) follow these information-validity constraints [depth:risk_missing_data]:
+The spatial figures under `assets/figures/` (site-overview / land-use-structure / key-areas / mobility-bluegreen / brand_identity / gantt_chart / metrics-* series, plus the newly added land_use_plan / road_section / phasing_plan this round) follow these information-validity constraints [depth:risk_missing_data]:
 
 - **Legend and line style**: the concept network is distinguished from "existing roads / existing rail stations" by line style; no fabricated precise street redlines or land-use boundaries are added.
 - **Conceptual orientation**: all figures use "conceptual orientation", with a north arrow labeled "conceptual orientation, not a precise survey".
@@ -511,9 +561,9 @@ Beyond the existing five talent personas, this section adds four **vulnerable-pe
 
 ## Accessible Smart Governance and Navigation Integration Outlook (Haidian Smart Accessibility Framework v3.0)
 
-> This section and the following appendices (A/B/C/D) describe the Haidian Smart Accessibility Framework v3.0 as **conceptual suggestions and reference proposals**. The complete runnable code, data schemas, and node overlay files live in the project experiment workspace `experiments/phase6_p0_physarum/accessibility_framework/`, for professional teams' further study. This section claims no hardware has been procured, no system is live, and no enterprise partnership has been reached.
+> This section and the following appendices (A/B) describe the Haidian Smart Accessibility Framework v3.0 as **conceptual suggestions and reference proposals**. The complete runnable code, data schemas, and node overlay files live in the project experiment workspace `experiments/phase6_p0_physarum/accessibility_framework/`, for professional teams' further study. This section claims no hardware has been procured, no system is live, and no enterprise partnership has been reached.
 
-**Positioning**: this framework upgrades accessibility from a "passive compliance item" to an "active governance capability", sharing the same origin as the Bio-Physarum concept network (see "Reproducible Algorithm Appendix") — the highly connected skeleton that the Physarum network spontaneously forms without central control is naturally suited to carrying continuous, redundant, re-routable accessible paths. The framework reuses the existing four-layer stack and, through **minimal adaptation**, reuses the AI ecosystem's existing compute and data assets rather than starting from scratch.
+**Positioning**: this framework upgrades accessibility from a "passive compliance item" to an "active governance capability", sharing the same origin as the Bio-Physarum concept network (see "Methodology") — the highly connected skeleton that the Physarum network spontaneously forms without central control is naturally suited to carrying continuous, redundant, re-routable accessible paths. The framework reuses the existing four-layer stack and, through **minimal adaptation**, reuses the AI ecosystem's existing compute and data assets rather than starting from scratch.
 
 **Four-layer architecture overview (conceptual suggestion)**:
 
@@ -571,7 +621,7 @@ Beyond the existing five talent personas, this section adds four **vulnerable-pe
 
 **Data flow (conceptual)**: L3 perception → L2 compute → L1 interaction; the reverse "barrier report" flows from L1 through L2 into the governance-dispatch closed loop. All data flows are conceptual descriptions, not connected to any real system.
 
-**Relation to the Bio-Physarum network (honest note)**: this framework's path base map shares an origin with the concept network of the "Reproducible Algorithm Appendix", but the accessibility attributes are a **newly added conceptual suggestion layer**, not deployed or measured at any real site. Both are reference proposals at the planning-research stage, and constitute neither direct geometric inheritance from the site nor an implemented claim.
+**Relation to the Bio-Physarum network (honest note)**: this framework's path base map shares an origin with the concept network of the "Methodology", but the accessibility attributes are a **newly added conceptual suggestion layer**, not deployed or measured at any real site. Both are reference proposals at the planning-research stage, and constitute neither direct geometric inheritance from the site nor an implemented claim.
 
 ## Appendix B: Inclusive Design and All-Personas Validation
 
@@ -590,131 +640,7 @@ Beyond the existing five talent personas, this section adds four **vulnerable-pe
 
 **All-personas validation loop (conceptual suggestion, not yet executed)**: the following are suggested validation steps, not completed measurement conclusions — ① existing accessibility survey (tactile-paving continuity / curb-ramp coverage, referencing GB 50763-2012); ② co-testing with wheelchair / white-cane / hearing-aid users; ③ extreme-weather (rain/snow, low-friction) routing stress tests; ④ data-blind-spot recheck (physical re-verification of sensor-less nodes). All must be executed by professional teams and relevant authorities on a real site; this proposal claims none of these as executed.
 
-## Appendix C: Accessibility Data and Dispatch API Specification (Concept Prototype)
-
-> This appendix is a **concept prototype**. All endpoints are conceptual names that **point to no real government system or enterprise API**; there are no real keys / tokens / internal network addresses; authentication and error codes are suggestive designs.
-
-**Four conceptual endpoints (suggestive, not live)**:
-
-| Method | Conceptual endpoint | Description | Return state (conceptual) |
-| --- | --- | --- | --- |
-| POST | `/v1/route/accessible` | Accessible route computation (impedance-weighted shortest path) | `OK` / `INVALID_GRAPH` / `NO_PATH` |
-| POST | `/v1/events/barrier` | Barrier event reporting | `CONCEPTUAL_SIMULATED` |
-| POST | `/v1/dispatch/bike-operator` | Shared-bike / municipal clearance dispatch | `CONCEPTUAL_SIMULATED` |
-| POST | `/v1/dispatch/gov-grid` | Government grid dispatch | `CONCEPTUAL_SIMULATED` |
-
-**Authentication (suggestive)**: OAuth 2.0 / API Key is recommended; this prototype **hardcodes no real keys**. **Error codes (suggestive)**: `INVALID_GRAPH` (missing graph attributes), `NO_PATH` (no feasible path), `CONCEPTUAL_NO_API` (no real interface connected, placeholder return).
-
-**Accessibility feature data schema (concept prototype, inline)**:
-
-```json
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "AccessibilityFeature",
-  "type": "object",
-  "required": ["feature_id", "tactile_type", "friction_coefficient",
-               "slope", "is_continuous", "has_rfid_anchors",
-               "data_source", "confidence"],
-  "properties": {
-    "feature_id": { "type": "string" },
-    "tactile_type": { "enum": ["none", "tactile_paving", "tactile_guiding"] },
-    "material": { "enum": ["concrete", "rubber", "granite", "metal", "composite", "unknown"] },
-    "friction_coefficient": { "type": "number", "minimum": 0.0, "maximum": 1.5 },
-    "slope": { "type": "number" },
-    "is_continuous": { "type": "boolean" },
-    "has_rfid_anchors": { "type": "boolean" },
-    "rfid_ids": { "type": "array", "items": { "type": "string" } },
-    "data_source": { "enum": ["simulation", "survey", "official", "conceptual"] },
-    "confidence": { "enum": ["provisional", "high", "medium", "low"] }
-  }
-}
-```
-
-**Routing-engine core class (key fragment; full file in experiment workspace `services/routing_engine/core.py`)**:
-
-```python
-PENALTY_TACTILE_NONE = 3.5          # no tactile paving -> impedance ×3.5
-PENALTY_FRICTION_THRESHOLD = 0.6    # friction below this is slippery / low-grip
-PENALTY_FRICTION_FACTOR = 1.8
-PENALTY_SLOPE_THRESHOLD = 0.03      # slope >3% is wheelchair/stroller unfriendly
-PENALTY_SLOPE_FACTOR = 1.5
-
-class AdvancedAccessibilityRouter:
-    def _validate_graph_attributes(self, graph):
-        """Check the input graph has the minimal attribute (length_m)."""
-        if not graph:
-            return False
-        return all("length_m" in attrs for edges in graph.values() for attrs in edges.values())
-
-    def _calculate_edge_weight(self, attrs):
-        """Accessibility impedance: live barrier -> block; no tactile / low friction / steep slope -> weighted penalty."""
-        base = float(attrs.get("length_m", 0.0))
-        if "blocked" in attrs.get("live_events", []):
-            return float("inf")
-        factor = 1.0
-        if attrs.get("tactile_type", "none") == "none":
-            factor *= PENALTY_TACTILE_NONE
-        if float(attrs.get("friction_coefficient", 0.7)) < PENALTY_FRICTION_THRESHOLD:
-            factor *= PENALTY_FRICTION_FACTOR
-        if float(attrs.get("slope", 0.0)) > PENALTY_SLOPE_THRESHOLD:
-            factor *= PENALTY_SLOPE_FACTOR
-        return base * factor
-
-    def compute_route(self, source, target):
-        """Dijkstra shortest path (accessibility-impedance). Returns status/path/weight."""
-        ...
-
-    def generate_spatial_audio_vector(self, current_node, next_node):
-        """Spatial-audio vector: distance_meters/azimuth_degrees/volume_gain/audio_prompt."""
-        ...
-```
-
-**Dispatch-engine core class (key fragment; full file in experiment workspace `services/city_dispatch_api/dispatch_service.py`)**:
-
-```python
-class CityAccessibilityDispatchEngine:
-    ROUTING_RULES = {
-        "tactile_gap": "municipal_maintenance",
-        "obstruction": "bike_operator",
-        "rfid_malfunction": "tech_ops",
-        "slope_excess": "municipal_design",
-    }
-
-    def process_barrier_event(self, event):
-        """Barrier event -> responsible-party routing -> status receipt (conceptual)."""
-        target = self.ROUTING_RULES.get(event.barrier_type, "gov_grid")
-        if target == "bike_operator":
-            return self._dispatch_to_bike_operator(event)
-        if target == "gov_grid":
-            return self._dispatch_to_gov_grid(event)
-        return {"status": "CONCEPTUAL_SIMULATED", "target": target}
-
-    def _dispatch_to_bike_operator(self, event):
-        return {"status": "CONCEPTUAL_SIMULATED", "target": "bike_operator",
-                "eta_minutes": None, "note": "conceptual dispatch (no real partner)"}
-
-    def _dispatch_to_gov_grid(self, event):
-        return {"status": "CONCEPTUAL_SIMULATED", "target": "gov_grid",
-                "note": "conceptual dispatch (no real government interface)"}
-```
-
-## Appendix D: Edge-Node Deployment and Model Pruning Reference Framework
-
-> This appendix is a conceptual suggestion and reference proposal. The hardware list is "optional device types", not claimed as procured; pruning is a generic technical suggestion, not an executed model optimization.
-
-**Edge-node deployment (conceptual suggestion)**:
-
-| Tier | Deployment location (conceptual) | Device type (conceptual, not procured) | Responsibility |
-| --- | --- | --- | --- |
-| Edge | 3 subway stations + high-traffic park entrances | Edge gateway + RFID reader | Perception capture, local cache |
-| District | Existing edge-computing node (JZ-05 concept) | Lightweight inference server | Route computation, event routing |
-| City | Cloud (conceptual) | Data governance, model training | Global optimization, closed-loop audit |
-
-**Model pruning reference framework (generic technical suggestion, not executed)**: for a navigation-semantics model that may be deployed in the future, the following are suggested — ① structured pruning (remove low-weight channels); ② quantization (FP32→INT8); ③ distillation (large model → edge small model); ④ cache preheating (localize routing tables for high-frequency routes). These are industry-generic pruning techniques; this proposal **claims no pruning executed on any model nor any measured speedup**.
-
-**Network topology (conceptual)**: star + edge aggregation — edge nodes aggregate to the district compute node, which syncs with the cloud; offline, the edge maintains "offline substitute" degradation via local cache (see Appendix B). The topology is a conceptual sketch, not a built network.
-
-**Compliance and security (conceptual suggestion)**: data desensitization (no sensitive personal data collected), least privilege, audit logs; reversible hardware (devices removable, space restored to public use, aligned with the JZ-05 stop condition).
+**Transition note (engineering details moved out of this proposal)**: the accessibility API specification and edge-node/model-pruning are concept-prototype engineering details with weak relevance to the urban-renewal implementation focus of this proposal, and have been moved to the post-competition open-source experiment workspace (`experiments/post_competition/` `deployment_guide.md`, `peer_review_round/technical_appendix.md`, etc.) as engineering reference. This proposal retains Appendix A (accessibility framework overview) and Appendix B (inclusive design) in the main text, and uses the released space to strengthen land-use planning, cross-section design, phasing, and cost breakdown.
 
 ## References
 
