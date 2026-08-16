@@ -16,7 +16,7 @@
    "what_zh": "重算 412.5 m 与全部场地交叉核验读数",
    "what_en": "Recompute the 412.5 m closure and every site cross-check figure",
    "exit_code": 0,
-   "seconds": 0.03,
+   "seconds": 0.02,
    "first_line": "Site cross-check, recomputed from the shipped geometry"
   },
   {
@@ -24,7 +24,7 @@
    "what_zh": "解析十二张场景卡的水准点、空间锚点与退出条件",
    "what_en": "Resolve every scenario card's benchmark, spatial anchor and exit condition",
    "exit_code": 0,
-   "seconds": 0.03,
+   "seconds": 0.02,
    "first_line": "check_cards.js: 12 cards, every benchmark and anchor resolves, every exit quantity is defined."
   },
   {
@@ -81,7 +81,7 @@
    "path": "visual/assets/naming.json",
    "what_zh": "命名体系规则",
    "what_en": "The naming system as rules",
-   "bytes": 12376,
+   "bytes": 12384,
    "unit": "families",
    "count": 24
   },
@@ -120,9 +120,9 @@
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.7,
+  "seconds_to_run_every_verifier": 0.69,
   "files_to_read": 9,
-  "bytes_to_read": 1062940,
+  "bytes_to_read": 1062948,
   "units_to_read": 1740
  },
  "limits_zh": [

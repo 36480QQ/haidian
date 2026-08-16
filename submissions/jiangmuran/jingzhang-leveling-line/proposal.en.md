@@ -876,7 +876,7 @@ Placing device charging behind pedestrians and accessibility is itself a positio
 
 Building footprints are indicative positions, used to explain function, order of magnitude **and orientation**, and constitute no building design [depth:retain_renovate_demolish]. **Orientation is the part that was missing**: all six footprints were buffered circles — 65-vertex discs that look like geometry and express no facing at all. Yet three of this proposal's form rules — frontage continuity, ground-floor publicness, and freight entrances not opening onto the spine — are statements about **how a building faces the spine**, and a disc can carry none of them. They are now rectangles whose long side runs parallel to the spine and which stand 14 m clear of it, at the same order of magnitude (82,276 m² against the previous 82,413 m², also historical and superseded). Measured: pairwise overlap **0.0 m²**, centreline of the spine and closing routes swallowed **0.0 m**. **The shape changed, the scale claim did not, and what was added is which way each building faces and that it stands beside the axis rather than on it.**
 
-**That second part was wrong before, and badly.** An audit found four of six circular footprints containing the spine centreline outright — 1,618 m of it (a historical value; those footprints are gone, so it is not recomputable here, see changelog.md). This proposal is named for a continuous walkable public axis, and its buildings sat on that axis. The package had a hard gate forbidding two buildings from sharing ground and **none forbidding a building from swallowing the axis**, which is why it went unseen. That gate now exists: any footprint intersecting ROAD-001/002/003 by more than a metre fails the build. Each slab's offset side is whichever side the gate accepts, not one chosen by eye, so the values are **held in place by the check rather than by anyone remembering them.** Classification principles: railway heritage structures are retained in principle; existing buildings with clear title and sound structure are renovated first; undisputed low-efficiency vacant land goes first to benchmarks and public space.
+**That second part was wrong before, and badly.** An audit found four of six circular footprints containing the spine centreline outright — 1,650 m of it (a historical value; those footprints are gone, so it is not recomputable here, see changelog.md). This proposal is named for a continuous walkable public axis, and its buildings sat on that axis. The package had a hard gate forbidding two buildings from sharing ground and **none forbidding a building from swallowing the axis**, which is why it went unseen. That gate now exists: any footprint intersecting ROAD-001/002/003 by more than a metre fails the build. Each slab's offset side is whichever side the gate accepts, not one chosen by eye, so the values are **held in place by the check rather than by anyone remembering them.** Classification principles: railway heritage structures are retained in principle; existing buildings with clear title and sound structure are renovated first; undisputed low-efficiency vacant land goes first to benchmarks and public space.
 
 **No demolition conclusion is offered for any specific building**, no change is required of any enterprise's or resident's property, and no floor area ratio, building height, density or setback figure is given — the latter are statutory regulatory-plan controls and must follow official conditions [standard:MOHURD-CONTROL-DETAILED-PLANNING]. keeping these at `unknown` is what every serious submission in this call does; this proposal records it as a compliance fact, not as a merit.
 
@@ -1254,7 +1254,7 @@ These four share their source with the core rule: **over tolerance, re-measure t
 
 `compliance_matrix.json` maps announcement tasks and agent.1–agent.6 to sections, layers, metrics and figures. **The matrix is an index, not content** — the taskbook's required outputs must exist as checkable sections, layers and drawings, and copying the matrix into the body would only turn the document into a compliance form.
 
-**Every reference the three matrices make is checked: 618 declared, 618 resolving [metric:matrix_reference_count].** Between them `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json` assert 618 times that a given requirement is answered in a named section, carried by named layers, evidenced by a named file — and **nothing previously confirmed that any of those sections or files exists**. They are resolved at build time: section references matched against the proposal's headings, file references matched exactly, and any that fails stops the build. Tested by pointing one entry at a section that does not exist. A matrix is the artefact least likely to be re-read when a heading is renamed or a file is added, and this package has already shipped four dead machine-readable anchors, a legend missing a class, and a rights count three files behind, each for that reason.
+**Every reference the three matrices make is checked: 650 declared, 650 resolving [metric:matrix_reference_count].** Between them `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json` assert 650 times that a given requirement is answered in a named section, carried by named layers, evidenced by a named file — and **nothing previously confirmed that any of those sections or files exists**. They are resolved at build time: section references matched against the proposal's headings, file references matched exactly, and any that fails stops the build. Tested by pointing one entry at a section that does not exist. A matrix is the artefact least likely to be re-read when a heading is renamed or a file is added, and this package has already shipped four dead machine-readable anchors, a legend missing a class, and a rights count three files behind, each for that reason.
 
 ### Taskbook coverage, requirement by requirement: `visual/assets/taskbook_coverage.json`
 
@@ -1308,16 +1308,16 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-245 entries. By finder:
+247 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 27 | Run against the shipped package, not a draft |
-| The author | 163 | Found while working |
+| The author | 164 | Found while working |
 | This package's own gate | 17 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 28 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 5 | Seen elsewhere, absent here |
+| Reading a rival's package | 6 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1339,8 +1339,8 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Nothing fails it | 14 |
 | Outlived its line | 9 |
 | Recorded where found | 9 |
+| A reference did not resolve | 9 |
 | Not itself | 9 |
-| A reference did not resolve | 8 |
 | A source unnameable | 6 |
 | No file behind it | 6 |
 | A total excluding | 5 |
@@ -1348,8 +1348,8 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Answered under another name | 4 |
 | Outlived a corpus | 4 |
 | Answered in our own words, not theirs | 3 |
+| Answers what it cannot | 3 |
 | Drawn without its ground | 2 |
-| Answers what it cannot | 2 |
 | A rule with nobody to apply it | 2 |
 | Attributed to a file that refuses | 1 |
 | Reported, ignored | 1 |
@@ -1815,7 +1815,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.7 s**; 9 files, 1038 KB, 1,740 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.69 s**; 9 files, 1038 KB, 1,740 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
