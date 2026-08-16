@@ -966,13 +966,40 @@
       "what_en": "Put the winter band back on the hand-set y of 640. **This is the state the first version of this drawing was actually in**: the rule box above is two lines deeper in English and the band's title printed across its frame.",
       "why_zh": "**一个手写的坐标与一段会换行的文字，是同一件事的两份副本。** 这条变异要证明的是：上方文字一多，构建就停，而不是安静地印出一条穿字的框线。",
       "why_en": "**A hand-set coordinate and a paragraph that wraps are two copies of one fact.** This mutation proves that one more line above stops the build rather than quietly printing a frame through the words."
+    },
+    {
+      "id": "M80",
+      "gate": "scarce_surface_qa.py",
+      "target": "build_drawings.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": false,
+      "what_zh": "把 A0 展板第一页的第二张换成 site-overview——那是评审本来就单独收到的五张之一。**这一页是评审收到的唯一一块光栅版面**，用它重复一张已经寄出的图，买不到任何东西。",
+      "what_en": "Swap the second sheet on A0 board page 1 for site-overview, which the reviewer already receives as its own PNG. **That page is the only rasterised surface the reviewer gets**, and spending it on a repeat buys nothing.",
+      "why_zh": "**这道闸门此前列在「尚未被证明会失败」里，理由是「条件在 analysis/ 里，而变异只改随包文件」——而本台变异早已能改 analysis/ 的源文件**（E234）。这条变异要证明的是：稀缺版面一旦被重复占用，构建就停。",
+      "why_en": "**This gate sat in the not-yet-proven list under a reason that had stopped being true**: that its condition lives in analysis/ and mutations only touch shipped files, when this harness had long since gained source mutations (E234). This one proves that spending the scarce surface on a repeat stops the build."
+    },
+    {
+      "id": "M81",
+      "gate": "build_rubric_coverage.py",
+      "target": "build_rubric_coverage.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": false,
+      "what_zh": "把「原创性」这一维度的映射改名——组织方发布的七个打分维度里，有一个从此没有任何小节回答它。**这也是那条过期理由覆盖的第二道闸门**。",
+      "what_en": "Rename the mapping for the originality dimension, so one of the seven published scored dimensions has no section answering it. **This is the second gate the stale reason covered.**",
+      "why_zh": "**评审按七个维度打分，每一个都必须有去处。** 这条变异要证明的是：任何一个维度失去映射，构建就停，而不是安静地少答一维。",
+      "why_en": "**The reviewer scores seven dimensions and every one has to have somewhere to go.** This mutation proves that a dimension losing its mapping stops the build rather than quietly going unanswered."
     }
   ],
-  "caught": 79,
+  "caught": 81,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
     "assumption_refs_qa.py",
+    "build_rubric_coverage.py",
     "calendar_parity_qa.py",
     "census_claims_qa.py",
     "cjk_leak_qa.py",
@@ -1007,6 +1034,7 @@
     "registry_alignment_qa.py",
     "review_rules_qa.py",
     "role_spec_qa.py",
+    "scarce_surface_qa.py",
     "schema_conformance_qa.py",
     "sheet_claim_qa.py",
     "sheet_layer_key_qa.py",
@@ -1066,6 +1094,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 56 道闸门，其中 51 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 56 gates, 51 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 56 道闸门，其中 53 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 56 gates, 53 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
