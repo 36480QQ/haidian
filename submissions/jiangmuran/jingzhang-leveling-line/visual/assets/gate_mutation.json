@@ -827,9 +827,22 @@
       "what_en": "Put a hand-typed share back into FIG.03's claim band. **This is the state this package was actually in until E222**: that figure was typed, and happened to agree with the chart computing it below on the day it was found.",
       "why_zh": "**恰好是对的数，就是没有人在核的数。** 题头是全包最多人读的一格，此前也是核得最少的一格。这条变异要证明的是：那一格里任何一个数与随包文件对不上，构建就停。",
       "why_en": "**A number that is right by coincidence is a number nobody is checking.** The claim band is the most-read cell in the package and was the least checked. This mutation proves that any number there which the shipped files do not recompute stops the build."
+    },
+    {
+      "id": "M69",
+      "gate": "frame_collision_qa.py",
+      "target": "fig_site_check.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.01 场地复核框的位置改回手写的 30——**这正是本包直到 E223 之前的真实状态**：红框上边线从三条 KPI 说明文字中间穿过，英文版换行后的「order)」落在框里。",
+      "what_en": "Put FIG.01's cross-check box back on the hand-set offset of 30. **This is the state this package was actually in until E223**: the box's top rule ran through all three KPI captions, and in English the wrapped 'order)' sat inside it.",
+      "why_zh": "**一个手写的间距和一段会换行的文字，是同一件事的两份副本。** 这条变异要证明的是：那段文字一旦多出一行，构建就停，而不是安静地印出一条穿字的红线。",
+      "why_en": "**A hand-set gap and a paragraph that wraps are two copies of one fact.** This mutation proves that one more line of caption stops the build rather than quietly printing a rule through the words."
     }
   ],
-  "caught": 68,
+  "caught": 69,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
