@@ -19,6 +19,22 @@
         "eight factor industry-space map",
         "regional collaboration invitations"
       ],
+      "case_questions": [
+        "Amsterdam and Helsinki: who declares purpose, owner and appeal path?",
+        "UK Service Standard: can the full task still work through a human-assisted route?",
+        "NIST AI RMF: which risk owner closes the loop after a failed test?",
+        "Smart Kalasatama and Punggol: how does a time-limited district trial stop and restore space?"
+      ],
+      "factor_map": {
+        "land": "removable empty-site components only",
+        "space": "equal ordinary-work and optional-demonstration facilities",
+        "industry": "embodied AI, property, logistics and maintenance suppliers",
+        "funding": "human review, cut-off, disablement and removal first",
+        "talent": "frontline workers paired with labour, safety, access, data and engineering reviewers",
+        "compute": "small offline test environment",
+        "data": "synthetic or explicitly authorised records only",
+        "scenario": "empty-site test, affected-person co-review, then stop or proceed"
+      },
       "figure": "assets/figures/agent-2-ecosystem.png"
     },
     "agent.3": {
@@ -40,6 +56,14 @@
         "derivative-destination wall",
         "six removable components"
       ],
+      "component_library": [
+        "paper purpose and retention card",
+        "physical sensor cut-off",
+        "ordinary-work wayfinding",
+        "voluntary-demonstration desk",
+        "derivative inventory cabinet",
+        "independent withdrawal receipt box"
+      ],
       "figure": "assets/figures/agent-4-landmarks.png"
     },
     "agent.5": {
@@ -58,6 +82,12 @@
         "six-month equality audit",
         "annual derivative recall",
         "AI-off ordinary-work day"
+      ],
+      "conversion_pathways": [
+        "quarterly cut-off test -> signed sensor-envelope checklist -> scene-safety owner",
+        "six-month equality audit -> remediation register -> labour-rights owner and independent reviewer",
+        "annual derivative recall -> file-model-interface disablement register -> data and supplier owners",
+        "AI-off ordinary-work day -> offline continuity playbook -> operator and affected-worker review"
       ],
       "figure": "assets/figures/agent-6-operations.png"
     }

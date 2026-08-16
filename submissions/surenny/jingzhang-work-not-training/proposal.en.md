@@ -51,6 +51,13 @@ Six public international cases frame questions only. Amsterdam and Helsinki algo
 
 Eight factors form a bounded loop: land hosts removable components; space provides equal facilities on both tracks; industry connects embodied AI, property, logistics and maintenance; funding first covers human review, stop and removal; talent pairs frontline workers with safety, labour, accessibility, data and engineering; compute stays small and offline; data are synthetic or explicitly authorised; scenarios begin empty-site, then co-review, then stop or proceed.[depth:renewal_project_list]
 
+| Factors | Spatial / accountable carrier | Transferable output and stop condition |
+|---|---|---|
+| Land + space | Empty back-of-house site, ordinary-work line and demonstration pocket | Removable-component register; stop when facilities are unequal |
+| Industry + funding | Embodied AI, property, logistics, maintenance and human-review budget | Supplier accountability sheet; no entry without funded cut-off, disablement and removal |
+| Talent + compute | Workers/representatives paired with labour, safety, access, data and engineering reviewers; small offline environment | Seven-gate co-sign and offline rehearsal; missing named owner enters HOLD |
+| Data + scenario | Synthetic or explicitly authorised records; empty-site first, co-review second | Rerunnable fixtures and exit receipt; no field trial before real data and site conditions are approved |
+
 ![Agent.2 cases and industry-space factors](assets/figures/agent-2-ecosystem.en.png)
 
 ## Overall design area: renewal and regulatory-plan urban-design depth
@@ -122,6 +129,12 @@ The gates are `SEPARATE`, `REGISTER`, `EXPLAIN`, `CHOOSE`, `MONITOR`, `TRACE` an
 
 Landmarks are accountable interfaces, not sculptures: a physical cut-off test bench at Zhongzhiyuan; an equal-facilities balance at AI Origin Community; and a derivative-destination wall at Dazhongsi. Six removable components are paper use card, physical cut-off, ordinary-work wayfinding, optional demonstration desk, derivative cabinet and independent withdrawal box.[source:TASKBOOK-DELIVERABLES] [depth:public_space_character]
 
+| Landmark | Component library | Interface handed to professional teams |
+|---|---|---|
+| Zhongzhiyuan cut-off test bench | Physical cut-off and paper purpose card | Sensor-envelope and stop-test record signed by the scene-safety owner |
+| AI Origin equal-facilities balance | Ordinary-work wayfinding and voluntary-demonstration desk | Wage/shift/access/tool/facility difference register co-signed by labour-rights and independent reviewers |
+| Dazhongsi derivative-destination wall | Derivative cabinet and independent receipt box | File-model-interface disablement/deletion receipt co-signed by data and supplier owners |
+
 ![Agent.4 responsibility landmarks](assets/figures/agent-4-landmarks.en.png)
 
 ### Agent.5 | cultural narrative and international communication
@@ -144,6 +157,8 @@ Phase one uses synthetic data and empty space only; phase two invites workers/re
 ### Agent.6 | annual programme and long-term operation
 
 “Work Is Not Training Week” combines quarterly physical stop tests, six-month anti-retaliation equality audits, annual supply-chain derivative recalls and an AI-off ordinary-work day. Forums share synthetic fixtures, rights boundaries, failures and repairs, never real worker trajectories. Funding first covers staff, accessibility, removal, disablement and independent review.[source:TASKBOOK-DELIVERABLES] [metric:annual_operation_cycle_count]
+
+Every cycle produces a transferable handoff: the quarterly test gives a sensor-envelope checklist to the safety owner; the six-month audit gives a difference-remediation register to labour-rights and independent reviewers; the annual recall gives a file-model-interface disablement register to data and supplier owners; the AI-off day gives an offline continuity playbook to operators and affected-worker representatives. A cycle without a named recipient, stop rule or exit resource is cancelled and never converted into an investment, policy or funding commitment.
 
 ![Agent.6 annual operation and exit](assets/figures/agent-6-operations.en.png)
 

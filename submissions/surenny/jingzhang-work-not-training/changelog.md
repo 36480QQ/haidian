@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-16
+
+- Repaired every assumption, metric, section, visual-anchor and self-check cross-reference identified by the SUR-50 independent review, and removed residual terminology from the prior proposal template.
+- Rebuilt both offline visual pages to display the five core figures, all six agent-task boards, spatial layers, project phasing, sources, assumptions and exact four-gate state.
+- Added substantive Agent.2 ecosystem handoffs, Agent.4 component-library interfaces and Agent.6 named conversion pathways with explicit stop and exit rules in both languages.
+
 ## v0.2 - 2026-08-16
 
 - Re-rendered the English identity and evidence boards with CJK-capable fallback or English-only labels, removing tofu glyphs.
