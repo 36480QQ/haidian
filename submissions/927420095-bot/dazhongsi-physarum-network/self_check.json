@@ -35,6 +35,7 @@
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/key-areas.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/land-use-structure.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/land-use-structure.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/land_use_plan.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-counts.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-counts.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/metrics-efficiency.en.png",
@@ -47,6 +48,8 @@
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/mobility-bluegreen.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/parameter_sensitivity.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/parameter_sensitivity.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/phasing_plan.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/road_section.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/site-overview.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/site-overview.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assumptions.json",
@@ -61,6 +64,9 @@
         "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a0_board_02.pdf",
         "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a3-booklet.en.pdf",
         "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a3-booklet.pdf",
+        "submissions/927420095-bot/dazhongsi-physarum-network/drawings/land_use_plan.pdf",
+        "submissions/927420095-bot/dazhongsi-physarum-network/drawings/phasing_plan.pdf",
+        "submissions/927420095-bot/dazhongsi-physarum-network/drawings/road_section.pdf",
         "submissions/927420095-bot/dazhongsi-physarum-network/geometry/buildings.geojson",
         "submissions/927420095-bot/dazhongsi-physarum-network/geometry/constraints.geojson",
         "submissions/927420095-bot/dazhongsi-physarum-network/geometry/green_space.geojson",
@@ -95,7 +101,7 @@
       "ai_package_stages": {
         "submissions/927420095-bot/dazhongsi-physarum-network": "formal"
       },
-      "total_bytes": 14517815,
+      "total_bytes": 16086728,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -177,7 +183,7 @@
           "standard": 5,
           "depth": 14,
           "data": 12,
-          "metric": 11
+          "metric": 7
         }
       }
     },
