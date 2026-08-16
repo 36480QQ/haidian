@@ -280,7 +280,7 @@ code {
 <h3>可纠错荣誉记录与公共知识沉淀</h3>
 <p>“百年值班簿”不是流量榜，而是一套可纠错的贡献凭证。任何居民、维护者、开发者或公共机构都可用问题票提名；条目必须同时提交贡献对象、可公开证据、许可、影响边界和是否愿意署名。独立的社区—专业双人复核只判断证据是否足以记录，不评价身份或声量；被提名者可选择实名、化名或匿名。条目发布后保留公开异议、补证、纠错、合并、撤回和申诉入口，争议未解决先隐藏荣誉标识但保存审计链；个人数据按同意期限删除，公共方法、正负结果和版本记录长期归档。每年复盘班公布新增、纠错、撤回与未解决条目，不以数量排名。这样同时回应公共知识沉淀、贡献可记忆与人的尊严：记住谁承担过责任，也允许任何人改正记录或离开系统。</p>
 <h3>三分钟音频导览：不识字、不看屏幕也能听完这份方案</h3>
-<p>任务书把表达完整度定义为「以人类可直观理解的文本、图像、示意图、表格、场景卡、<strong>视频/声音</strong>、三维或交互网页形成完整成果」。本包此前只有文本、图像与网页三类；本轮补上<strong>声音</strong>这一类——中英各一段三分钟音频导览 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="assets/media/audio-guide.m4a" title="空间数据：assets/media/audio-guide.m4a">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="assets/media/audio-guide-en.m4a" title="空间数据：assets/media/audio-guide-en.m4a">空间数据</sup>，讲清判据、三座交接场、最小载体「公开交接桌」与效力边界。</p>
+<p>任务书把表达完整度定义为「以人类可直观理解的文本、图像、示意图、表格、场景卡、<strong>视频/声音</strong>、三维或<strong>交互网页</strong>形成完整成果」。本包此前只有文本、图像与静态网页三类；先补上<strong>声音</strong>这一类——中英各一段三分钟音频导览 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="assets/media/audio-guide.m4a" title="空间数据：assets/media/audio-guide.m4a">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="assets/media/audio-guide-en.m4a" title="空间数据：assets/media/audio-guide-en.m4a">空间数据</sup>，讲清判据、三座交接场、最小载体「公开交接桌」与效力边界；再把网页从静态读物变成<strong>可操作的交互网页</strong>（见下一小节）。</p>
 <p><strong>这不是宣传片，是无障碍交付物。</strong> 一份强调「不用 AI 也能办成同一件事」的方案，如果自己只能被读、不能被听，那条判据在它自己身上就不成立。音频对应视障读者、低视力读者、阅读困难者，以及任何在通勤途中无法看屏幕的人。</p>
 <p>三件事按同一标准处理，与包内其他交付物一致：</p>
 <ul>
@@ -288,6 +288,10 @@ code {
 <li><strong>不使用背景音乐与音效。</strong> 听力环境差或使用助听设备时，背景声会直接降低可懂度；这条与图面「不为装饰牺牲可读性」是同一条原则。</li>
 <li><strong>合成来源写明</strong>：音频由 macOS 内置语音合成在本机生成，<strong>非真人录音</strong>，不含任何人物声音、肖像或可识别个人信息，包内不分发语音引擎 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="TTS-MACOS-SYNTH" title="来源：TTS-MACOS-SYNTH">来源</sup>。字幕时间轴按各句字符数占比在实测总时长上分配（合成语速恒定），<strong>未做逐句人工对齐校正，这一点如实写在字幕文件头部</strong>。</li>
 </ul>
+<h3>把判据做成一个开关：智能层可以在页面上被关掉</h3>
+<p>本方案的判据是一句话：<strong>任何一项 AI 服务，不用 AI 也能办成同一件事——办不成，就不上线。</strong> 一句话可以被写进正文，也可以被读者自己验一次。离线评审台 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/index.html" title="空间数据：visual/index.html">空间数据</sup> 顶部现在有一个「智能层：在线 / 停用」开关：拨到停用，十二张场景卡同时翻面，每张显示的不再是智能层做了什么，而是<strong>同一件事在没有 AI 时怎么办成</strong>——人工评审与纸面风险登记、触觉地图与人工问路、值班簿与人工报修、固定照明与人工巡查……逐条对应到该场景 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/governance/shift-ledger-suite.json" title="空间数据：visual/assets/governance/shift-ledger-suite.json">空间数据</sup> 里 <code>human_service_floor</code> 已经登记的渠道。</p>
+<p><strong>这个开关不产生新主张，只是把包内已有的登记摆到可操作的位置。</strong> 卡面上的每一句都取自双联交接账：无 AI 渠道取 <code>human_service_floor.channels</code>，是否依赖个人设备取 <code>device_free_access</code>，演练状态取 <code>rollback_rehearsal.execution_state</code>。因此它给出的是<strong>一对数字，而不是一个结论</strong>：十二个场景全部写明了无 AI 等价服务且不依赖个人设备（12/12），而实地演练过的是<strong>零个</strong>（0/12，全部为 <code>specified_not_run</code>）。这两个数字并排显示在页面第一屏，谁也不遮谁——把「已规定」误读成「已验证」，正是这套交接协议最想防的事。</p>
+<p><strong>为什么是开关而不是一段文字。</strong> 无 AI 等价服务如果只写在正文里，读者要在十二个章节之间来回翻才能确认它真的逐条存在；做成开关，缺哪一条一眼就能看见——<strong>这条判据因此从一句主张变成一次可以当场失败的检查</strong>。页面为纯离线内联脚本，不联网、不存储、不提交表单，关闭脚本时十二张卡仍按静态形态完整可读。</p>
 <h3>可直接使用的国际传播短文</h3>
 <blockquote><p>京张交接线不是一座展示“万能AI”的科技园，而是一条公开演练责任如何流动的城市线路。每项能力都带着版本、适用边界、人工负责人和停用办法，从研发进入验证，从验证进入开源，再从开源进入日常公共服务。访客可以沿无障碍路线查看成功、失败与修复，也可以选择不用AI而获得等价基础服务。欢迎城市、大学、社区与维护者带着一个可公开的问题和一个愿意承担的责任，在全球交接周完成一次可撤回、可复现、可接班的合作。</p></blockquote>
 <p>目标受众是城市治理者、大学与开源社区、公共服务机构、负责任企业及普通访客；入口依次为双语网页、年度失败/修复摘要、无障碍路线卡和全球交接周问题票。传播不得暗示政府背书、采购承诺或法定实施。</p>
