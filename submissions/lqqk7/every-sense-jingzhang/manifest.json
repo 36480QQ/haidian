@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.4 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.5 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "97279fa5e902d9d0d3887a83e67124a452859935e8e7de7f227c0c5d351d69d8"
+      "sha256": "7b851f9a9821b46b56a6f3e4b2aa2ee35ff12f1bed29bd4fbf2226ff6cfd893f"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "7a719fc56bb191b80f48945044d20f2f80fc619491f600fe7a65ad429146230f"
+      "sha256": "6f506eab765fbdcfaae4ba7ff7244f85457610a7b70597759bdb5114d5cca774"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b23b6fdd43e39a805b73465f6186e5bd24752585cc1de05ab15b2a939761c617"
+      "sha256": "c6ca92f40d18764104de9fdc5c645567a9f79fd556669461da26b45ee69b05b2"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "path": "risk.json",
       "role": "other",
       "required": false,
-      "sha256": "b27e2320fa41c1b9e235d0f88d3b1cfe960b55ba3dcc15f744a9d3805c8688e1",
+      "sha256": "042254ba30150961fa6dd7e333f0caee1796382b25df2cc97acac48d45bd68d3",
       "role_detail": "risk_register"
     },
     {
@@ -88,19 +88,19 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b11f1bd67d290dad89eb849f5d95c3d41b3e5913b09ab0a6620229b60ce46ea3"
+      "sha256": "fda36e5af841efb1a501d51ce762e441f3b1bdf9cef46cbb4677567a34655a60"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "c4086a857c54ed7de08f34dbbc31a74e25a320a143fe82315132f571d61ffbc6"
+      "sha256": "91190bc788cdf2a73ca30be3b9ba8a72cb977f2b0c678d96b94c19f1f1fa1133"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "d82c9b80a24f1b132680231b69e83966572a9ceb02c8c5e854aebe928b885ba7"
+      "sha256": "5c16cb611de3b561831079c2973dd2dfdb82541f359500065cb726f1ad1795cc"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "eafa0e40cb4cfdbaf980e2dd63ccab7019d0567f1823bdd3536c31b0ff8324da"
+      "sha256": "bd334461c7f4919e9fe010fd25a6449a5948a069218652042bb9d281d7f9740f"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0f176741cf8d5c9c12fda9fa1649fc28d9df4db2512515e5def3013b93a92de2"
+      "sha256": "b297ab6ee5f9c5cfaf0d7a7ede235ea32829c0b70fb16e2c8829ca4dc8f3b8cf"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f8507b2ad57c63f2b591f0eb8179c03bb96d0800468f2d6f23e9aa6f6cd7b509"
+      "sha256": "7674491a46eda3c107e087ccc1ba703f4012c99f658e65e40dd0c3791e969283"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "fc8ddb23208b2c1f4f63f029659477fcdf7039b96f035d261aa55f9dfe436404"
+      "sha256": "efaddde7b8c73fcfd006363c249caba09daf1d784f9da196aebe0b4558d08286"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -509,7 +509,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "caa69d1f32bc3f49acec9e27b370caea055e9c135bd3c3c3787a8b7b1f79efac"
+      "sha256": "4ca5944030b3f266c240e605f30542da952edbe40a32037bbff4217047256416"
     },
     {
       "path": "assets/media/cover.webp",
@@ -568,7 +568,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "638d8bfd26f259f5d5ebd0c65c02d6acd55ac06aeee384925544e2caa26400ae"
+      "sha256": "074c8092a9eabc83d02724026b336a4f10cb48f69139adff188e08f07382aaf6"
     },
     {
       "path": "visual/assets/three.min.js",
@@ -595,7 +595,7 @@
       "language": "neutral",
       "title_zh": "三维主脊场景（几何 100% 同源于 scene-data.js，AI 开关+昼夜+节点漫游，无 WebGL 静态降级）",
       "title_en": "3-D spine scene (geometry 100% sourced from scene-data.js; AI switch, day/night, node fly-to; static fallback without WebGL)",
-      "sha256": "ba46f06f087da349ee1b3e4d844dac8dd2e8c3f5f1467e262ef1b612a8156b4c"
+      "sha256": "630db9bc235a44100400b406f81385d907a9155d54cce0a1f347bb2391f98f6b"
     },
     {
       "path": "visual/assets/spine3d.css",
@@ -695,7 +695,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "9686e4dff4413dfe4b6b6caede0104ed6fea0baa673a2c3d1a0609a9ac08a1ca"
+      "sha256": "40f850cb66d5863f36404f1dc6b12d014e19ea8b6a3aaf80881b82e05a53269e"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -720,8 +720,8 @@
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "服务等价基准 SEB v0.3 机器可读规范",
-      "title_en": "Service Equivalence Baseline (SEB) v0.3 machine-readable spec",
+      "title_zh": "服务等价基准 SEB v0.4.0 机器可读规范（五组件，含版本治理与违例码登记表）",
+      "title_en": "Service Equivalence Baseline (SEB) v0.4.0 machine-readable spec (five components, with version governance and the violation-code registry)",
       "sha256": "efc58de8c327100be67e12b4bdf5b710c3b4cd061ed16d00cb1d980f78f5ddfb"
     },
     {
