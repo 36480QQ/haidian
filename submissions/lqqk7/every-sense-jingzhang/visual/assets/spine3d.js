@@ -3,8 +3,9 @@
    assets/three.min.js, provenance in assets/three-license.json). No network,
    no loader, no remote asset: every mesh is extruded at runtime from
    window.JZ_SCENE, the same dataset the chapter 16 canvas reads, which is
-   generated from the package geometry/*.geojson. Not a single coordinate is
-   written by hand here.
+   generated from the package geometry/*.geojson. Plan geometry and node
+   positions are sourced from that dataset; extrusion heights, offsets,
+   lights and camera parameters are presentation-layer settings defined here.
 
    Reading order: the local metre plane is scaled to world units, the
    cross-spine axis keeps the same x3.6 exaggeration the flat scene declares,
@@ -337,7 +338,8 @@
 
   function boot() {
     var host = document.querySelector('.j3-scene');
-    if (!host || !window.JZ_SCENE) return;
+    if (!host) return;
+    var missingData = !window.JZ_SCENE;
     var lang = host.getAttribute('data-lang') === 'en' ? 'en' : 'zh';
     var t = T[lang] || T.zh;
     var wrap = host.querySelector('.j3-canvaswrap');
@@ -368,6 +370,8 @@
       for (var k = 0; k < controls.length; k++) controls[k].disabled = true;
       if (canvas) canvas.removeAttribute('tabindex');
     }
+
+    if (missingData) { fail(); return; }
 
     var THREE = window.THREE;
     if (!THREE) { fail(); return; }

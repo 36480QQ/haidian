@@ -1112,7 +1112,7 @@
     "proposal.md 同章 · 首批试点点位选取准则 · 物理可达行",
     "visual/assets/seb-op04-chain-data.json · stage_5 · adjudication D1／D2／D3",
     "visual/assets/seb-spec.json · level_definitions · gate_binding",
-    "risk.json R-01—R-08"
+    "risk.json R-01—R-12"
    ]
   },
   {
@@ -1169,7 +1169,7 @@
   {
    "module": "exit_plan",
    "sources": [
-    "proposal.md 同章 · 开放机制表 L1 与 L4 行",
+    "proposal.md 同章 · 开放机制表 L1 与 L4a/L4b 行",
     "proposal.md 同章 · 变更回执机制",
     "visual/assets/ethics-protocol.json · protocols P6 · registers",
     "visual/assets/seb-spec.json · scoring_definitions · denominator_integrity_required_categories",
@@ -1203,8 +1203,8 @@
   "since_version": "0.2.0",
   "name_zh": "AI 关闭日演练",
   "name_en": "AI-off day drill",
-  "design_zh": "G2 封闭成对测试收尾设连续一个完整测试日的全程关闭态运行：AI 层整日关闭，全部任务只经固定导视、触觉引导与人工通道完成；演练记录含每项任务的完成/未完成与原因、接管班次记录与值守者反馈，未完成任务不得从记录中删除；该记录为 G3 独立复核的必交证据。",
-  "design_en": "G2 closed paired testing ends with one full consecutive test day in the off state: the AI layer stays off all day, every task completed through fixed signage, tactile guidance and staffed channels only; the drill record holds each task's completion or non-completion with causes, shift takeover records and steward feedback, and no incomplete task may be dropped; the record is a mandatory exhibit for the G3 review.",
+  "design_zh": "G2 封闭成对测试收尾设连续一个完整测试日的全程关闭态运行：AI 层整日关闭，全部任务只经固定导视、触觉引导与人工通道尝试并完整记录；演练记录含每项任务的完成/未完成与原因、接管班次记录与值守者反馈，未完成任务不得从记录中删除；该记录为 G3 独立复核的必交证据。",
+  "design_en": "G2 closed paired testing ends with one full consecutive test day in the off state: the AI layer stays off all day, every task attempted and fully recorded through fixed signage, tactile guidance and staffed channels only; the drill record holds each task's completion or non-completion with causes, shift takeover records and steward feedback, and no incomplete task may be dropped; the record is a mandatory exhibit for the G3 review.",
   "produces_no_metric_value": true
  },
  "independent_takeover_drill_items": {

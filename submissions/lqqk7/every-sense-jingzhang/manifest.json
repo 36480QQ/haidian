@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.2 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.3 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "17e6763eb66ca9aa360bd4cc5adc223cff026ad4dfc3814009c6f4c896d31472"
+      "sha256": "512beded2e30868c1b2a1106ce12ed09e8e569d33c2a2d6ac342f0fcc5756321"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "0235d098708df01bf4790eccb4cf043fb4c8a9b9afaf29d576581e73415392df"
+      "sha256": "4c2a4539585a62336ad1f3938c02370852bff66e3bca8a949837116a285f8988"
     },
     {
       "path": "metrics.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "3eb52d7f0f1042168935b9d520cda99ed9c96d3b8cc51c6d6fd42da4b9588a0c"
+      "sha256": "a7ddd02388425ec16ce41c26b6f2a40509dea58793c6be9364ba152d87893104"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5f4630bd173c7250af2be42f854887c8a57181e745878f1cc296515b0a39826d"
+      "sha256": "5868ed2493e805d37f81dc70702b5a83101007a800713b43abfb94ec50fcaca1"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "path": "risk.json",
       "role": "other",
       "required": false,
-      "sha256": "fc2f6fc235201ae4d9371be4297077513056ccda4e675acea339abfb8a9c9a9a",
+      "sha256": "b27e2320fa41c1b9e235d0f88d3b1cfe960b55ba3dcc15f744a9d3805c8688e1",
       "role_detail": "risk_register"
     },
     {
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4d8106cb7020c72f7a5ac76c18f7992a0dca5d20bd5d161589dd3cc1c54f33a7"
+      "sha256": "4b3aaaa2df66fde28b8be2d3e6e7af53b28cfdf34ea5cf06a6b974aa266b7841"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "342a8db2841ae48ef7b4aa2aff1fdc1e43da39d15c10b1ae18c927c0e9ad6fa8"
+      "sha256": "d82c9b80a24f1b132680231b69e83966572a9ceb02c8c5e854aebe928b885ba7"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f9bf2157dad091c2b704826e8e3906d8bf2d771590b7dda008aac2240175d352"
+      "sha256": "1c256d63782e0b10840e7a6c2808b55a6a689d87a834c102126d78b6504c764c"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a6631993a86c4426ef3da90572e63e8ab0ee289a24f144f7f2a7ab1d71cfc8f0"
+      "sha256": "3f759dd3d43b0e91d39717206726607035250ec499d7abda690dd32ea80f679a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b789d9ac45b8fa483efcb52daca896e48a09e8a264cd2b9522b4efb6a63c4c8d"
+      "sha256": "eafa0e40cb4cfdbaf980e2dd63ccab7019d0567f1823bdd3536c31b0ff8324da"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5915395cb19020ea0c2c34b652d55bc0a3d7c9f0d4ca55be0f0bc9e5826e02cb"
+      "sha256": "1d72bcbd3926bb41922d509176690d3170a0bfc81a2cefc969176f1095fbf6b9"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "67c6661bf4dc0b1e0b46b9d61559690b81f2d4265f804562a606d923a57899ea"
+      "sha256": "e8df41a0552ee201658d67b3f3c17f353bf1b093ad6da62480c643a2a0d0d641"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -260,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "1a1167665c10ae9e18bfcf6379c2caad2532f29a13136982f707f994983b9d3d"
+      "sha256": "9ee6447024c1be1c4b5edcf8b417176c7d71a574096f1616ee69d3a1e40175f5"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -268,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "bc999e643d8191e522e610a9f3988a7db4b3ea544ca5702acd74d877ef92ab5d"
+      "sha256": "3ac3f42f29c31fdfcb9949298eadc7283e50a598d0a03ba96ff840c33ff5bacf"
     },
     {
       "path": "visual/index.en.html",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "40ce7e2e67480b247ae8f66d1f2da69fa97322e7afc30fae222e7e4b59bce2b9"
+      "sha256": "fc8ddb23208b2c1f4f63f029659477fcdf7039b96f035d261aa55f9dfe436404"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -509,7 +509,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "2ced14074b861ba3f04bc0b89b00f27919122127dd91b0639c705cfa3f2780bd"
+      "sha256": "3ce47088a2238d6db4d4ac68528bf419180e694a4e5c89a67379d840adde5535"
     },
     {
       "path": "assets/media/cover.webp",
@@ -568,7 +568,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "3271bd6ae0a71709f5593b4341f75e2df332817f637deab3ecf2d0f5b3743632"
+      "sha256": "638d8bfd26f259f5d5ebd0c65c02d6acd55ac06aeee384925544e2caa26400ae"
     },
     {
       "path": "visual/assets/three.min.js",
@@ -595,7 +595,7 @@
       "language": "neutral",
       "title_zh": "三维主脊场景（几何 100% 同源于 scene-data.js，AI 开关+昼夜+节点漫游，无 WebGL 静态降级）",
       "title_en": "3-D spine scene (geometry 100% sourced from scene-data.js; AI switch, day/night, node fly-to; static fallback without WebGL)",
-      "sha256": "0a7e245ebbf69eb2740deb7da2078c998bb49b89300a7210fb34ab13ab104d15"
+      "sha256": "ba46f06f087da349ee1b3e4d844dac8dd2e8c3f5f1467e262ef1b612a8156b4c"
     },
     {
       "path": "visual/assets/spine3d.css",
@@ -695,7 +695,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "b9abe6896a04672f093e521300c796fd7c330c4f51e8a00bc622db5f78bbce44"
+      "sha256": "76faa4784a80a425ac409f5ad683514780dd64a6a99f5e069690eba4d0d6a060"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -785,7 +785,7 @@
       "language": "neutral",
       "title_zh": "SEB 桌面推演正反样例四十条",
       "title_en": "SEB tabletop fixtures, thirteen positive and twenty-seven negative",
-      "sha256": "59fc5edc584dff286a6971da94b45b873ab487b2e58e8fe4891bc0c93ce3df9b"
+      "sha256": "9c22d82660c5023e2a69dcacd2df03fc8bc448869db94812d52a46cd97abb8d4"
     },
     {
       "path": "visual/assets/seb-change-receipt-sample.json",
@@ -812,7 +812,7 @@
       "language": "neutral",
       "title_zh": "OP-04 节点九十天实施包（概念级：条件序列分期、双分支预算、采购、RACI、班表、投保建议、维护与退出）",
       "title_en": "OP-04 ninety-day implementation pack (concept-level: conditional phasing, two-branch budget, procurement, RACI, rosters, insurance suggestions, maintenance and exit)",
-      "sha256": "6e0631a4b8b90a11f815cf812fdee75540f955f4819c0bbfaec943cf9d76749e"
+      "sha256": "a9b4e68ed63e030c55a964772b91a9e4caf276b161326e69311ddc93d269eecc"
     },
     {
       "path": "visual/assets/op04-pilot-readiness.json",
