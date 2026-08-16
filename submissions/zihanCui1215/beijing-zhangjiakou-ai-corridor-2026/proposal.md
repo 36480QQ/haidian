@@ -114,7 +114,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 |---------|---------|------|------|
 | 空间指标 | 统筹研究范围（公告） | 43.6 | km² |
 | | 总体设计范围（几何复算） | 11.41 | km² |
-| | 绿地率（复算） | 44.4 | % |
+| | 绿地率（复算，去重叠全层） | 44.4 | % |
 | | 容积率（平均，复算） | 1.13 | - |
 | | 建筑密度（平均，复算） | 8.7 | % |
 | 产业指标 | 科研用地（0802）占比（两带合计，几何复算） | 27.6 | % |
@@ -130,6 +130,23 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 ## 三层范围工作框架 / Three-Level Scope Framework
 
 ### 统筹研究范围产业与未来城市研究 / Coordinated Research Area: Industry and Future City Research
+
+### 全球案例→设计转译（agent.2，8例可核验）[source:S010]
+
+案例不是装饰性引用：每例提取一条与本方案直接相关的经验教训，并落位到本方案的具体设计决定。来源 URL 与逐项分析见 sources.json S010。
+
+| 案例 | 关键事实 | 转译为本方案的设计决定 |
+|------|---------|----------------------|
+| 硅谷沙丘路（美） | 风投集聚但城市空间分裂 | 资本服务嵌入众智园加速器步行圈，不设独立金融区 |
+| 伦敦 King's Cross（英） | 铁路遗产再生成城市核心 | 京张遗址公园作为三核串联主轴，遗产廊道两侧低层过渡 |
+| 柏林 Adlershof（德） | 科研-产业同区共生 | 众智园"实验室-中试-总部"梯度布局，同区转化 |
+| 深圳南山科技园 | 高密度创新但职住失衡 | AI原点社区保留 11.9% 居住用地与低成本工位供给 |
+| 杭州未来科技城 | 政府主导快速集聚 | 本方案以开源社区自治替代单一政府运营（operations.json） |
+| 新加坡 one-north | 功能混合避免睡城 | 11 条带用地混合排布，无单一功能超30%条带 |
+| 柏叶市（日） | 环境技术全城实验 | 三类测试平台+场景卡沙箱机制（SC-07/08 + OPS-3） |
+| 剑桥 Kendall Square（美） | MIT产学研零距离 | 教育用地与科研用地相邻条带、共享实验室节点 |
+
+*转译方法：每例先问"它失败/成功在哪个空间机制"，再把该机制映射到本方案的用地条带、运营结构或场景卡。拒绝"借鉴国际经验"式的泛化引用。*
 
 ### 总体设计范围城市更新与控规深度城市设计 / Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -231,7 +248,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ### 控规深度指标体系 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [metric:average_far] [metric:building_density]
 
-总体设计范围参照控规深度城市设计方法组织指标体系 [standard:MOHURD-CONTROL-DETAILED-PLANNING]（本方案为概念性城市设计建议，非法定控规成果）。核心指标均按 EPSG:4548 投影对几何数据复算：平均容积率 1.13（详见 [metric:average_far]），建筑密度 8.7%（[metric:building_density]），绿地率 44.4%（[metric:green_ratio]），公共空间配建率 8.2%（[metric:public_space_ratio]）。用地分类参照2023自然资源部标准 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，在 [data:geometry/land_use.geojson] 中以标准化代码标注每一地块用途。
+总体设计范围参照控规深度城市设计方法组织指标体系 [standard:MOHURD-CONTROL-DETAILED-PLANNING]（本方案为概念性城市设计建议，非法定控规成果）。核心指标均按 EPSG:4548 投影对几何数据复算：平均容积率 1.13（详见 [metric:average_far]），建筑密度 8.7%（[metric:building_density]），绿地率 44.4%（[metric:green_ratio]，去重叠union口径（与官方校验器一致）），公共空间配建率 8.2%（[metric:public_space_ratio]）。用地分类参照2023自然资源部标准 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，在 [data:geometry/land_use.geojson] 中以标准化代码标注每一地块用途。
 
 ### 城市更新策略 [depth:existing_conditions_diagnosis] [depth:retain_renovate_demolish]
 
@@ -404,13 +421,44 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 本方案以中关村国家自主创新示范区为核心依托 [source:S006]，构建覆盖算法研发、算力支撑、数据要素、场景应用全链条的AI创新生态体系 [standard:STD-URBAN-DESIGN]。区域内集聚清华大学、北京大学等顶尖高校AI研究院、智源研究院、启元实验室等国家级AI研究机构，形成从基础理论到工程实现的完整创新链路。基于 [data:geometry/land_use.geojson] 的空间分析，AI创新载体用地约占建设用地总量的12%，容积率均值2.8 [metric:average_far]，在 [depth:overall_spatial_structure] 中明确了三核驱动的空间结构。
 
-### 人才画像 [source:S007]
+### 人才与市民画像（九类，agent.3）[source:S007]
 
-面向AI产业链条上的四类核心人才——算法研究员、工程开发者、创业者和产业投资人——设计差异化的空间需求与服务配套。AI研究者社区配备算力中心、开源协作空间和学术交流设施；创业者社区提供孵化加速器和风投对接服务；投资人社区设置产业基金办公区和项目展示空间 [depth:overall_spatial_structure]。
+五类AI产业画像 + 四类本地生活画像，共同构成本方案的"为谁设计"：
 
-### AI+场景应用 [source:S006] [data:geometry/land_use.geojson]
+| 画像 | 核心诉求 | 空间供给 | 场景卡锚点 |
+|------|---------|---------|-----------|
+| P-researcher 算法研究员 | 算力可达、学术交流密度 | 众智园实验室组团、算力服务节点 | SC-12 |
+| P-developer 工程开发者 | 开源协作、身份认同、低成本工位 | AI原点社区开源工坊、荣誉墙 | SC-05/SC-07 |
+| P-founder 创业者 | 孵化加速、场景准入、资本对接 | 众智园加速器、大钟寺POC展厅 | SC-03 |
+| P-investor 产业投资人 | 项目可见度、尽调效率 | 大钟寺路演厅、产业白皮书发布点 | SC-10 |
+| P-student 学生 | 实习通道、可负担学习空间 | 教育用地共享实验室、文体设施 | SC-02/SC-10 |
+| P-resident 原住民/居民 | 生活不被更新打断、社区话语权 | 社区服务设施连续供给、共治屏 | SC-01/SC-09 |
+| P-elderly 老年人 | 无数字门槛的公共服务 | 康养之家、社区诊所人工兜底 | SC-01/SC-04 |
+| P-child-caregiver 儿童照护者 | 安全通学路径、就近托育 | 教育设施500m覆盖、慢行优先街道 | SC-02 |
+| P-accessibility 残障与数字弱势者 | 非数字替代通道、无障碍环境 | 全场景人工/线下替代（见场景卡降级列） | SC-01/SC-04/SC-09 |
 
-在交通出行、医疗健康、教育文化、商业消费、社区治理、城市运维六大领域部署AI+场景。基于 [data:geometry/land_use.geojson] 中公共管理与商业服务业用地的分布，在每个社区生活圈内至少配置一个AI体验节点。
+*画像体系与 [data:geometry/public_space.geojson] 节点及场景卡（scenario_cards.json）逐一锚定；四类生活画像的参与权由社区共治会保障（operations.json OPS-2，含居民代表 2 席）。*
+
+### AI+场景应用：十二张场景卡（agent.3）[source:S006] [data:geometry/public_space.geojson]
+
+十二张场景卡按"数据源→模型边界→人工复核→失败降级→KPI→退出条件"完整声明，结构化数据随包提交（`visual/assets/scenario_cards.json`，锚点可由 `visual/assets/check_cards.js` 逐卡核验）：
+
+| 卡 | 场景 | 数据源（类别） | 模型能力边界 | 人工复核 | 失败降级 | KPI | 退出条件 |
+|----|------|--------------|-------------|---------|---------|-----|---------|
+| SC-01 | 社区AI诊所 | 脱敏就诊需求汇总 | 分诊建议，不诊断不开药 | 医师复核每条建议 | 线下窗口全功能 | 分诊准确率≥95% | 抽检<90%暂停 |
+| SC-02 | AI教育实验室 | 班级聚合学情 | 批改与学情汇总，无个体画像 | 教师核校报告 | 纸质人工批改 | 零生物识别 | 出现个体画像即终止 |
+| SC-03 | 无感支付便利店 | 进店明示会话数据 | 商品识别账单，默认无刷脸 | 72h人工申诉 | 自助扫码收银 | 申诉率≤0.5% | >2%回退自助 |
+| SC-04 | 康养之家 | 自愿毫米波跌倒检测 | 检测+呼叫，不做健康画像 | 护理员确认警报 | 手动呼救+上门 | 警报确认率100% | 可随时无条件退出 |
+| SC-05 | 开源荣誉墙 | 公开PR元数据 | 编号展示，不排名不打分 | 委员会年度公示 | 快照+时间戳 | 同步≤24h | 可申请移除条目 |
+| SC-06 | 城市感知灯杆 | 非身份环境传感 | 照明运维，无身份识别 | 工单人工闭环 | 固定照度 | 工单≤30分钟 | 发现识别用途即拆 |
+| SC-07 | 低速机器人配送 | 机载避障本地闭环 | 固定线路配送避障 | 安全员1:多接管 | 停车呼叫接管 | 百万公里接管率 | 越限缩减运营区 |
+| SC-08 | 自动驾驶接驳 | 车端本地感知 | 限定路段L4，安全员在环 | 急刹/事故复盘 | 停运转人工接驳 | 事故为零 | 监管/指标越限停运 |
+| SC-09 | 社区共治屏 | 实名提案投票 | 聚类摘要，不评估提案人 | 社工核校发布 | 线下公示栏 | 处理≤45天 | 参与率下滑即评估 |
+| SC-10 | AI文体助手 | 预约元数据 | 场次推荐调度，无成瘾推送 | 管理员确认 | 现场排队叫号 | 周转率提升 | 不公平即回退人工 |
+| SC-11 | 数字遗产导览 | 策展公开内容 | 多语种解说，无轨迹采集 | 文保顾问审校 | 二维码图文版 | 解说覆盖率 | 史实错误即下架 |
+| SC-12 | 城市运维孪生 | 设施台账工单 | 状态可视+分派建议，非自动执法 | 主管确认关键工单 | 台账+网格员 | 闭环时长 | 用于考核个人即停 |
+
+*每卡锚点（图层#要素ID）、画像关联与完整字段见 scenario_cards.json；隐私与数据治理设计全文见"包容性设计与社会影响"章。*
 
 > 证据索引：[source:S006] [source:S007] [standard:STD-URBAN-DESIGN]
 
@@ -1203,6 +1251,23 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 > 证据索引：[source:S008] [data:geometry/phasing.geojson] [data:geometry/buildings.geojson]
 
 ## 指标体系、面积复算与合规矩阵 / Metrics, Area Recalculation, and Compliance Matrix
+
+### 评审可以自己重算 / Reviewers Can Recompute
+
+本包全部一级几何指标（site_area_sqm、green_ratio、public_space_ratio、building_footprint、total_gfa、average_far、building_density、key areas、phasing）均可由随包脚本独立复算，不依赖作者自述：
+
+| 脚本 | 作用 | 用法 |
+|------|------|------|
+| `visual/assets/verify.js` | 从 GeoJSON 重算全部 class-1 指标并与 metrics.json 比对 | `node visual/assets/verify.js` |
+| `visual/assets/check_cards.js` | 逐卡核验 12 张场景卡的图层锚点可解析 | `node visual/assets/check_cards.js` |
+| `visual/assets/check_ops.js` | 核验荣誉墙/社区运营结构化文件的锚点与进出条件 | `node visual/assets/check_ops.js` |
+| `visual/assets/parity_check.js` | 逐节测量中英实质等价（word/char 法），写出 parity_qa.json | `node visual/assets/parity_check.js` |
+
+四个脚本全部纯标准库、无网络依赖、确定性输出。本轮自检结果：verify 10/10 PASS、cards 12/12 PASS、ops 5/5 PASS。等价自检见 parity_qa.json。
+
+**口径纪律**：green_ratio 采用去重叠 union 口径（与官方校验器一致）：green_space.geojson 全部 8 要素 dissolve 去重叠后 / site = 44.4%；此前版本曾用要素直接求和（green_way 与公园互相重叠被重复计数，得 48.6%），两口径差异已在 metrics.json basis 字段记录。凡指标变更必更新 basis 并保持 verify.js 可复算。
+
+**边界状态声明**：本包全部面积、比例、分期与空间落点均基于组织方临时粗略边界（provisional）[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]；可用于概念性城市设计内容评审，不得作为官方红线或审批依据；正式几何发布后全量复算。
 
 ### 9.1 核心指标 / Core Metrics
 
