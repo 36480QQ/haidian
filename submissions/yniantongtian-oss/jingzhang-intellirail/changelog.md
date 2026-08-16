@@ -1,5 +1,12 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.2 - 2026-08-17
+
+- 压缩合规自我叙述：删去与第二章重复的边界/重算声明，保留一处权威表述；中文净减约 300 字、英文净减约 700 字符。
+  Trimmed self-referential compliance narration: boundary and recalculation statements duplicated from the Design Basis chapter were removed while keeping one authoritative statement (approx. −300 chars zh, −700 chars en).
+- 将正文中的 unknown 状态码改为"待正式数据补齐/await official data"的人读措辞。
+  Replaced raw `unknown` status codes in prose with the human-readable wording "await official data".
+
 ## v1.1 - 2026-08-17
 
 - 修复 manifest.json 的 SHA-256 摘要与 Git 提交的 LF 字节不一致的问题（原摘要在 CRLF 工作区计算）。

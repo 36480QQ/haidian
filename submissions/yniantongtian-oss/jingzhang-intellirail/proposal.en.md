@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-space-first innovation belt structured as one heritage spine, three differentiated hubs, two cross-corridor service wings, and twelve auditable AI+ scenarios, with provisional geometry and full recalculation triggers."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # Jing-Zhang Intelli-Rail
@@ -83,13 +83,13 @@ The identity is JING-ZHANG INTELLI-RAIL. A double-line graphic language pairs de
 
 Renewal uses five categories: retain, repair, adaptive reuse, add, and verify. Heritage structures and places of public memory are retained subject to heritage review. Reusable industrial or inefficient ground floors become workshops, exhibitions, community services, and small-firm space. New volume proceeds only after ownership, fire, structure, and statutory controls are confirmed. The building layer is a design footprint sample, not an existing-building survey.[depth:retain_renovate_demolish]
 
-Ten projects make the framework actionable: heritage-spine continuity; North Fifth Ring walking connection; Qinghe innovation bank; Origin transfer street; Dazhongsi four-quadrant link; shared service stations; low-carbon edge-compute stops; an accessible loop; open-scenario nodes; and a Jing-Zhang digital archive. FAR, height, density, road red lines, setbacks, and capacity remain unknown until official controls arrive.[standard:MOHURD-CONTROL-DETAILED-PLANNING]
+Ten projects make the framework actionable: heritage-spine continuity; North Fifth Ring walking connection; Qinghe innovation bank; Origin transfer street; Dazhongsi four-quadrant link; shared service stations; low-carbon edge-compute stops; an accessible loop; open-scenario nodes; and a Jing-Zhang digital archive. FAR, height, density, road red lines, setbacks, and capacity await official controls (see the metrics chapter).[standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
 ![Spatial structure, land use, and operating loop](assets/figures/land-use-structure.en.png)
 
 ## Detailed Design of Key Areas
 
-Each hub has a distinct public value, industry task, spatial action, and validation threshold. The current rectangles are only indexing and recalculation containers. Real boundaries, parcels, ownership, roads, and anchors must be corrected with official files before building scale or retain-renovate-demolish decisions are made.[data:geometry/key_areas.geojson#PROV-KEY-001]
+Each hub has a distinct public value, industry task, spatial action, and validation threshold; positional accuracy is subject to the provisional-geometry limits stated in the Design Basis chapter, and building-scale and demolish–renovate–retain decisions await official mapping.[data:geometry/key_areas.geojson#PROV-KEY-001]
 
 **Zhongzhiyuan: Trustworthy AI Garden Laboratory.** A Qinghe-facing low-carbon interface links shared test courts, standards collaboration, safety-governance displays, and small meeting spaces. The first step uses removable installations only. Flood control, transport, ownership, and test safety are prerequisites, and any system without a safe takeover procedure is excluded from public operation.
 
@@ -117,7 +117,7 @@ land_use.geojson covers the provisional overall area with four conceptual catego
 
 The submitted geometry recalculates to 11,412,825.386 sq m, a green ratio of 0.123423, a public-space ratio of 0.073281, and 310,807.184 sq m of design building footprint. Decimal precision is retained only to verify file consistency. Public communication rounds these values and states that all are provisional or conceptual.[metric:site_area_sqm]
 
-Building control begins with safeguards rather than form. Retained assets are checked for heritage, structural, and use value; repaired assets improve safety, energy, and ground-floor access; adaptive reuse receives workshops, exhibitions, services, and small firms; additions require verified massing, daylight, fire, traffic, and ownership. FAR, total floor area, height, density, and setbacks stay unknown.[metric:building_footprint_area_sqm]
+Building control begins with safeguards rather than form. Retained assets are checked for heritage, structural, and use value; repaired assets improve safety, energy, and ground-floor access; adaptive reuse receives workshops, exhibitions, services, and small firms; additions require verified massing, daylight, fire, traffic, and ownership. FAR, total floor area, height, density, and setbacks await official data.[metric:building_footprint_area_sqm]
 
 Materials are durable, repairable, and low carbon. Historic steel and masonry remain materially honest; new civic structures favour demountable timber-steel systems, shade, and low-level lighting. “Future” character must not depend on excessive screens, glow, noise, or displacement.
 
@@ -168,13 +168,13 @@ Metrics are separated into three types. Spatial values reproducible from this pa
 
 Future operations should track the three planning-indicator families named by the announcement—an AI innovation index, talent density, and output value—together with closed walking gaps, accessible continuity, non-commercial public-space hours, test-to-procurement conversion, open-source retention, appeal response, manual takeover, timely deletion, task energy, and resident benefit. Announcement-level indicators receive no values until an official methodology is published; every indicator must first release its definition, baseline, sampling error, and responsible party. Composite scores cannot conceal failure.
 
-compliance_matrix.json covers announcement tasks 1.3, 1.4, 1.5 and agent.1–agent.6. standard_matrix.json, design_depth_matrix.json, and self_check.json connect standards, fifteen depth items, and four review gates. The prose keeps claim-adjacent anchors while structured files retain the full audit.[metric:public_space_ratio]
+compliance_matrix.json covers announcement tasks 1.3, 1.4, 1.5 and agent.1–agent.6. standard_matrix.json, design_depth_matrix.json, and self_check.json connect standards, fifteen depth items, and four review gates.[metric:public_space_ratio]
 
 ![Metrics, layers, and four-gate evidence chain](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
 
-Boundary uncertainty is the first risk. Official overall and key-area polygons are absent, and public background checks indicate possible displacement. Land use, buildings, roads, green space, public space, phasing, metrics, and drawings are affected. Official polygon publication triggers full regeneration with a recorded change set. Missing statutory plans, ownership, heritage, utility, fire, and transport evidence keep related scale or engineering conclusions unknown.[depth:risk_missing_data]
+Boundary uncertainty is the first risk: while official polygons are absent, spatial conclusions remain in the recalculation-on-official-data state described in the Design Basis chapter, and publication of official geometry triggers full regeneration with a recorded change set. A second risk is missing statutory, ownership, heritage, utility, fire, and transport evidence; the related scale and engineering conclusions await official data.[depth:risk_missing_data]
 
 AI scenarios manage data, model, operational, and equity risk. Data is minimised, purpose-limited, deleted on schedule, and revocable. Model cards disclose scope and error. Operations provide takeover, safe degradation, and stop controls. Diverse users participate in equity tests. High-risk civic decisions are not fully automated, and every service has a non-digital alternative and an appeal channel.
 
