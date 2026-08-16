@@ -628,6 +628,31 @@
       "why_en": "**A reference pointing outside the packet is the same as no reference**, and worse, because it reads as though evidence exists. This mutation proves the gate compares against the organisers' own three lists, read live, rather than against this package's idea of them."
     },
     {
+      "id": "M61",
+      "gate": "taskbook_terms_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把正文里的「国际传播力」换成本方案自己的说法「对外影响力」——内容一个字没少，只是不再叫任务书给它起的名字。**这正是本包直到 E215 之前的真实状态**：十三个维度名在正文里一次也没出现过。",
+      "what_en": "Replace the taskbook's term for international communication in the prose with this package's own wording. Not one fact is removed; it simply no longer carries the name the taskbook gave it. **This is the state this package was actually in until E215**: none of the thirteen dimension names occurred in the document.",
+      "why_zh": "**答得对与按名字找得到，是两件事。** 评审按任务书的词去找，而本包按自己的词去写，两边都以为对方会做映射。这条变异要证明的是：词一旦从正文里消失，构建就停，而不是像此前那样十几轮没人发现。",
+      "why_en": "**Answering a dimension and being findable under its name are two different things.** The reviewer searches with the taskbook's words while this package wrote in its own, each assuming the other would do the mapping. This mutation proves that a term leaving the prose stops the build, rather than going unnoticed for a dozen rounds as it did."
+    },
+    {
+      "id": "M60",
+      "gate": "review_rules_qa.py",
+      "target": "review_rules_qa.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": false,
+      "what_zh": "把「临时边界提示是否醒目」这一项的键改掉一个连字符——组织方提示里的那一项就再也对不上了。**这正是本包直到 E213 之前的真实状态**：那一项在他们的清单上，而这边没有任何东西答它。",
+      "what_en": "Change one hyphen in the key for the provisional-boundary prominence check, so the item in the organisers' prompt no longer matches anything here. **This is the state this package was actually in until E213**: the item was on their list and nothing here answered it.",
+      "why_zh": "**闸门的价值全在于它比对的是现读的清单，不是我抄下来的清单。**这条变异要证明的是：清单一动、映射一错，构建就停——而不是像此前那样，两项无人认领地过了十几轮。",
+      "why_en": "**The gate is worth something only because it compares against the list read live, not against a list I copied down.** This mutation proves that a mapping which no longer matches the prompt stops the build - rather than two items going unclaimed for a dozen rounds, which is what happened."
+    },
+    {
       "id": "M52",
       "gate": "label_collision_qa.py",
       "target": "fig_key_areas.py",
@@ -719,7 +744,7 @@
       "why_en": "**Both typographic gates are silent on this class**: overflow_qa measures crossing the footer rule and label_collision_qa measures two runs on one line, and a line drawn through a word is neither. This mutation proves the new gate actually watches the seven sheets the reviewing model is sent."
     }
   ],
-  "caught": 59,
+  "caught": 61,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -750,12 +775,14 @@
     "peer_claim_qa.py",
     "planning_controls_qa.py",
     "registry_alignment_qa.py",
+    "review_rules_qa.py",
     "schema_conformance_qa.py",
     "sources_qa.py",
     "stale_corpus_qa.py",
     "standards_alignment_qa.py",
     "statute_quote_qa.py",
     "taskbook_coverage.py",
+    "taskbook_terms_qa.py",
     "taskbook_units_qa.py",
     "term_consistency_qa.py",
     "upstream_validator_qa.py"
@@ -803,6 +830,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 42 道闸门，其中 37 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 42 gates, 37 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 44 道闸门，其中 39 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 44 gates, 39 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
