@@ -1,5 +1,10 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.9 - 2026-08-17
+
+- 新增五项首批运营指标的定义表（定义/基线建立/责任人），落实“先发布定义再报数”的指标纪律。
+  Added a definition table for the first five operational metrics (definition / baseline / responsible party), enforcing the define-before-reporting metric discipline.
+
 ## v1.8 - 2026-08-17
 
 - 新增启动期“百日六件事”：JZ-01/04/06/08 加 S02 首期红队日与公共数据卡规范，每件以百日末公开产物为交付判据。

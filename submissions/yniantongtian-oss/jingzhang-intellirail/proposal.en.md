@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-space-first innovation belt structured as one heritage spine, three differentiated hubs, two cross-corridor service wings, and twelve auditable AI+ scenarios, with provisional geometry and full recalculation triggers."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.8"
+iteration: "v1.9"
 ---
 
 # Jing-Zhang Intelli-Rail
@@ -196,7 +196,15 @@ Metrics are separated into three types. Spatial values reproducible from this pa
 | floor_area_ratio | unknown | floor area / official area | Needs statutory and building data |
 | key_area_count | 3, known/provisional | feature count | Names fixed; locations unverified |
 
-Future operations should track the three planning-indicator families named by the announcement—an AI innovation index, talent density, and output value—together with closed walking gaps, accessible continuity, non-commercial public-space hours, test-to-procurement conversion, open-source retention, appeal response, manual takeover, timely deletion, task energy, and resident benefit. Announcement-level indicators receive no values until an official methodology is published; every indicator must first release its definition, baseline, sampling error, and responsible party. Composite scores cannot conceal failure.
+Future operations should track the three planning-indicator families named by the announcement—an AI innovation index, talent density, and output value—together with closed walking gaps, accessible continuity, non-commercial public-space hours, test-to-procurement conversion, open-source retention, appeal response, manual takeover, timely deletion, task energy, and resident benefit. Announcement-level indicators receive no values until an official methodology is published; every indicator must first release its definition, baseline, sampling error, and responsible party. Composite scores cannot conceal failure. The first five operational metrics are defined below; sampling error is published with each baseline:
+
+| Operational metric | Definition | Baseline | Responsible party |
+| --- | --- | --- | --- |
+| Closed walking gaps | eliminated gaps ÷ total gaps on the spine list | first full-corridor survey | district transport and park operators |
+| Appeal response | time from placard appeal receipt to first reply | first-quarter ticket statistics | each scenario operator |
+| Manual takeovers | human takeovers or emergency stops during operation | first sandbox red-team day | safety evaluation body |
+| Timely deletion | share of expired personal data deleted on schedule | placard specification pilot | independent auditor |
+| Resident-perceived benefit | share of residents reporting clear benefit in the annual survey | first public-value audit | community observatory |
 
 compliance_matrix.json covers announcement tasks 1.3, 1.4, 1.5 and agent.1–agent.6. standard_matrix.json, design_depth_matrix.json, and self_check.json connect standards, fifteen depth items, and four review gates.[metric:public_space_ratio]
 
