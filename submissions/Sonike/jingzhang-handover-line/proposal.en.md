@@ -186,7 +186,7 @@ The three phases are not a timetable but three merge gates—data, ownership and
 
 ![A reversible city: versioned renewal, agent separation and sensing boundaries](assets/figures/adaptive-model.en.png)
 
-The perceivable, interactive "AI+" mobility system is defined by two boundaries. Perceivable is not surveillance: only device status, aggregate crowding and surface obstacles are sensed — never faces, identities or individual traces — and every sensing device posts on site what it collects. Interactive means each handover node offers the five-step interface of arrive, slow, recognise, ask for help, continue, layered with the accessible-route copilot and tactile wayfinding so the system works for people who do not look at a screen. Three things are explicitly not done: no identity-based movement priority, no dynamic pricing, and no app installation as a precondition for passage or entry. The continuous green space system is carried by the Handover Line itself, where walking continuity outranks any smart function.
+The perceivable, interactive "AI+" mobility system is defined by two boundaries. Perceivable is not surveillance: only device status, aggregate crowding and surface obstacles are sensed — never faces, identities or individual traces — and every sensing device posts on site what it collects. Interactive means each handover node offers the five-step interface of arrive, slow, recognise, ask for help, continue, layered with the accessible-route copilot and tactile wayfinding so the system works for people who do not look at a screen. **Figure F/04 now carries the full index of the twelve takeover points inside its corridor card** — the figure previously showed only the numbers 01–12, so a reader could see the points but not read what they were, while "twelve takeover points" is written in that figure's own title. The twelve names are taken verbatim from `public_space.geojson` (`name_zh` / `name_en`) and the numbers use the same teal as the nodes on the map, so number, location and name can be matched to one another [data:geometry/public_space.geojson]. Three things are explicitly not done: no identity-based movement priority, no dynamic pricing, and no app installation as a precondition for passage or entry. The continuous green space system is carried by the Handover Line itself, where walking continuity outranks any smart function.
 
 Multi-agent collaboration, required by the fourth co-creation principle, lands as a governance structure built on separation rather than headcount: a generating agent produces the proposal and geometry, a validating agent independently recomputes metrics and topology, a reviewing agent checks evidence references and compliance boundaries, and a dissenting agent looks specifically for overlooked groups and failure modes. No single party may hold two of these roles, and the generator may not certify itself; validation must be reproducible by a third party from the same data; any role may trigger a shutdown; final judgement rests with people and professional teams. This submission is itself a product of that process — geometry, metrics, figures and matrices generated from one model, then checked separately by four deterministic gates and human review.
 
@@ -613,6 +613,36 @@ That table used to carry only a definition and a data precondition, leaving a re
 **The rule check is drawn as a matrix: every cell is one check.** The top row of twelve is the baseline for the twelve handover ledgers; the seven rows below are defect injections for each of the seven protocol rules, across twelve scenarios — 12 + 84 = **96 cells**. The figure carries a colour key: teal is a baseline that passed, **red is "a defect was injected here and it was stopped"** — all 84 injections were intercepted, 0 missed, 0 schema errors. It is drawn rather than merely counted because the claim that the rules actually stop something can only be checked cell by cell [data:visual/assets/governance/rule-check-report.json].
 
 ![Recomputable metrics, measurement protocol, the rule-check matrix (12 baselines + 84 injections = 96 cells, all injections intercepted) and the five-step evidence chain](assets/figures/metrics-evidence.en.png)
+
+### Fourteen package self-check gates: not whether the design is right, but whether the package agrees with itself
+
+Those 96 cells test whether the **handover protocol rules** close. But a submission can fail in another way entirely, unrelated to design quality: a matrix points at a section that does not exist, a field ignores the organiser's vocabulary, the Chinese and English section counts diverge, a figure can no longer be reproduced, a drawing set carries two version numbers, the review visual budget gains one image. **None of these are matters of opinion; they are facts a machine can adjudicate.** This package therefore fixes fourteen gates [data:visual/assets/governance/package-integrity-gates.json].
+
+| Gate | Decision rule | Current result |
+| --- | --- | --- |
+| G01 Matrix reference integrity | Every matrix reference must resolve to a real entity | 154/154, zero broken |
+| G02 Classification vocabulary coverage | Geometry classification fields must use site-package enumerations, and **where an enumeration exists it must be used** | All three in use, every value legal |
+| G03 Central registry linkage | Registry sources in use must be linked verbatim | 9/9 |
+| G04 Official standard coverage | Every standard in standards.json must be registered | 9/9 |
+| G05 Bilingual structure parity | h2 and h3 counts must match | 15/15, 27/27 |
+| G06 Figure byte reproducibility | Re-running the generator must match the shipped sha256 | Three files verified byte-identical this round |
+| G07 Page–stamp consistency | Page count must equal version-stamp hits | 6/6, 6/6, 13/13, 13/13 |
+| G08 Chinese font embedding | Chinese fonts must be emb=yes, sub=yes | All four sets embedded |
+| G09 Geometry non-regression | Attribute-only edits must leave geometry identical | 29 features geometrically identical |
+| G10 Evidence-marker density | No assertion carries more than three markers | Zero warnings |
+| G11 Land-use code vs ministerial table | Codes must satisfy both the enumeration and the guidelines | 6 of 7 agree; the 7th conflict is flagged |
+| G12 HTML offline self-containment | No external http(s) resource of any kind | Zero |
+| G13 Review visual budget | Must equal exactly 18 | 18/18 |
+| G14 First-viewport image not cropped | Titles and disclaimers inside the hero image must stay legible | Fixed; complete in both languages |
+
+**Twelve of the fourteen have caught a real defect in actual use, and each records what it caught.** That matters more than the count — a gate that has never fired is, in its effect on the street, the same as no gate at all. Three are worth naming:
+
+- **G01 caught this package's own author, in this very round.** Writing matrix references for the three newly added compliance standards produced nine errors at once: invented section titles, a non-existent metric key `ai_scenario_count`, a source id written in shorthand. The gate stopped them; only corrected values were committed. **A gate that also binds the people who built it is the only kind worth having.**
+- **G11 caught the organiser's error, not this package's.** The site-package enumeration labels `05` as commercial and business-service land, while the ministerial guidelines make `05` wetland and `09` commercial and business-service land. This package keeps `05`, flags the conflict and files an Issue, for the reasons given in the previous section.
+- **G05 caught the very section written for it.** Adding this section moved h3 from 26 to 27 while the table still read 26/26 — **a document about consistency whose own self-report had fallen behind its own state.** Now synchronised, and it set a rule: self-reported numbers must be re-measured at the end of every round, never carried over.
+- **G02's decision rule was rewritten by this very incident.** It used to check only for illegal values, so `road_class` and `building_type` coverage of 0/9 and 0/13 went unnoticed for rounds — **a gate that only looks for illegal values is blind to a field left entirely empty.** The rule now adds a second clause: where the organiser provides an enumeration for a layer, that layer must use it.
+
+**The limits of these gates must be stated, or the gates themselves become a form of overclaiming.** First, they verify internal consistency; they do **not** prove the design correct, do not prove site feasibility, and constitute no approval of any kind. Second, the decision rules can be recomputed by anyone holding this package and the public site package, but the executing scripts are not distributed with it — submission directories forbid `.py`, so the toolchain lives outside the repository. Third, this is not continuous integration: it is a pass through the rules on each revision, **so its reliability depends on whether it was actually run, not on whether it was written down**.
 
 ## Risk, Copyright, and Compliance
 

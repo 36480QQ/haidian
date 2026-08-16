@@ -84,6 +84,7 @@
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/example-scn05-shift-ledger.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.schema.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/package-integrity-gates.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/rule-check-report.json",
@@ -96,7 +97,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 11559420,
+      "total_bytes": 11756596,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -177,7 +178,7 @@
           "source": 28,
           "standard": 9,
           "depth": 15,
-          "data": 32,
+          "data": 33,
           "metric": 47
         }
       }
