@@ -245,8 +245,8 @@
         "confidence": "low",
         "geometry_role": "design_proposal",
         "road_class": "pedestrian",
-        "name_zh": "众智园创新测试中轴与日常生活廊道",
-        "name_en": "Zhongzhiyuan Innovation Test Spine & Civic Corridor",
+        "name_zh": "众智园不绕行工作—公共主路径",
+        "name_en": "Zhongzhiyuan invariant work/public route",
         "key_area_id": "PROV-KEY-001",
         "route_role": "invariant_civic_route",
         "ai_dependency": "none",
@@ -256,14 +256,16 @@
         "disclaimer": "概念级普通步行连续性线；不得解释为官方道路、站口、桥隧、地块、产权或工程红线。",
         "vertical_condition": "conceptual_at_grade_continuity_only",
         "length_m_declared": 1094.1,
-        "curb_height_cm": 15,
-        "pedestrian_clear_width_m": 2.0,
-        "robot_envelope_width_m": 3.5,
-        "safety_estop_interval_m": 50,
-        "physical_isolation": "raised_curb_and_hedge",
-        "pneumatic_drop_bollards": true,
-        "invariant_civic_route": "WORK_DINE_GREEN_COMMONS",
-        "non_ai_baseline": "Continuous 2.0m pedestrian path with mechanical safety override"
+        "ai_sidecar_type": "test_pocket",
+        "ai_sidecar_host_ids": [
+          "BLDG-012",
+          "BLDG-013",
+          "PUBLIC-006"
+        ],
+        "ai_off_state": "ordinary_route_geometry_unchanged",
+        "ai_on_delta": "sidecar_interfaces_only_route_geometry_unchanged",
+        "route_geometry_changes_when_ai_on": false,
+        "sidecar_policy": "AI may attach laterally but may not become a gate or reroute the ordinary journey"
       },
       "geometry": {
         "type": "LineString",
@@ -301,8 +303,8 @@
         "confidence": "low",
         "geometry_role": "design_proposal",
         "road_class": "pedestrian",
-        "name_zh": "AI原点细密慢行生活街与全龄照护环",
-        "name_en": "AI Origin Fine-grained Living Street & Care Loop",
+        "name_zh": "AI原点不绕行照护—公共主路径",
+        "name_en": "AI Origin invariant care/public route",
         "key_area_id": "PROV-KEY-002",
         "route_role": "invariant_civic_route",
         "ai_dependency": "none",
@@ -312,13 +314,16 @@
         "disclaimer": "概念级普通步行连续性线；不得解释为官方道路、站口、桥隧、地块、产权或工程红线。",
         "vertical_condition": "conceptual_at_grade_continuity_only",
         "length_m_declared": 1130.41,
-        "tactile_guidance_width_m": 1.8,
-        "zero_id_service_radius_m": 400,
-        "speed_limit_kmh": 15,
-        "continuous_paving": true,
-        "high_contrast_guidance": true,
-        "invariant_civic_route": "HOME_CARE_SCHOOL_COMMONS",
-        "non_ai_baseline": "Staffed paper-form service desk and continuous tactile paving"
+        "ai_sidecar_type": "care_porch",
+        "ai_sidecar_host_ids": [
+          "BLDG-007",
+          "BLDG-009",
+          "PUBLIC-004"
+        ],
+        "ai_off_state": "ordinary_route_geometry_unchanged",
+        "ai_on_delta": "sidecar_interfaces_only_route_geometry_unchanged",
+        "route_geometry_changes_when_ai_on": false,
+        "sidecar_policy": "AI may attach laterally but may not become a gate or reroute the ordinary journey"
       },
       "geometry": {
         "type": "LineString",
@@ -360,8 +365,8 @@
         "confidence": "low",
         "geometry_role": "design_proposal",
         "road_class": "pedestrian",
-        "name_zh": "大钟寺站城多层立体换乘与铁路遗迹通廊",
-        "name_en": "Dazhongsi Multi-level Transit Deck & Heritage Concourse",
+        "name_zh": "大钟寺不绕行到达—公共主路径",
+        "name_en": "Dazhongsi invariant arrival/public route",
         "key_area_id": "PROV-KEY-003",
         "route_role": "invariant_civic_route",
         "ai_dependency": "none",
@@ -371,13 +376,16 @@
         "disclaimer": "概念级普通步行连续性线；不得解释为官方道路、站口、桥隧、地块、产权或工程红线。",
         "vertical_condition": "field_level_data_required",
         "length_m_declared": 1051.18,
-        "concourse_clear_width_m": 4.5,
-        "concourse_clear_height_m": 2.5,
-        "static_illuminated_signage": true,
-        "app_free_turnstiles": true,
-        "max_ramp_slope": "1:12",
-        "invariant_civic_route": "TRANSIT_RETAIL_CULTURE_GREEN",
-        "non_ai_baseline": "100% visible static color-coded signage and staff assistance desk"
+        "ai_sidecar_type": "arrival_sidecar",
+        "ai_sidecar_host_ids": [
+          "BLDG-001",
+          "BLDG-002",
+          "PUBLIC-001"
+        ],
+        "ai_off_state": "ordinary_route_geometry_unchanged",
+        "ai_on_delta": "sidecar_interfaces_only_route_geometry_unchanged",
+        "route_geometry_changes_when_ai_on": false,
+        "sidecar_policy": "AI may attach laterally but may not become a gate or reroute the ordinary journey"
       },
       "geometry": {
         "type": "LineString",
