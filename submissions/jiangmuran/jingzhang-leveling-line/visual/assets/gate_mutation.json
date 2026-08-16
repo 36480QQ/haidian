@@ -741,6 +741,11 @@
     "scarce_surface_qa.py": "it reads which sheets `build_drawings.py` puts on the rasterised board, and that file is in `analysis/`, which intake excludes — so no mutation of a shipped file can change what this gate sees. The same package-boundary fact that leaves the harness itself unproven, and stated rather than left to be inferred from a count.",
     "gate_mutation_qa.py": "this file is not in the submitted package, so no shipped-file mutation can reach it; both halves of its detection — that a caught defect is caught, and that it was named — are instead established by two control mutations, `assert_harness_can_report_survival` and `assert_harness_checks_naming`"
   },
+  "restore_puts_back": [
+    "the mutated file's original bytes",
+    "the reports the mutated gates rewrote",
+    "the module's cached bytecode, by deleting it"
+  ],
   "rules_matching_nothing": [
     {
       "gate": "assumption_refs_qa.py",
