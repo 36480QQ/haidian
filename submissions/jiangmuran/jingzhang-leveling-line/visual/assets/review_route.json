@@ -8,7 +8,7 @@
    "what_zh": "重算 metrics.json 中全部 metric_class 1 的指标",
    "what_en": "Recompute every metric_class 1 figure in metrics.json",
    "exit_code": 0,
-   "seconds": 0.39,
+   "seconds": 0.4,
    "first_line": "Independent recomputation of class-1 metrics"
   },
   {
@@ -16,7 +16,7 @@
    "what_zh": "重算 412.5 m 与全部场地交叉核验读数",
    "what_en": "Recompute the 412.5 m closure and every site cross-check figure",
    "exit_code": 0,
-   "seconds": 0.02,
+   "seconds": 0.03,
    "first_line": "Site cross-check, recomputed from the shipped geometry"
   },
   {
@@ -32,7 +32,7 @@
    "what_zh": "把闭合机制当作数据契约执行",
    "what_en": "Execute the closure mechanism as a data contract",
    "exit_code": 0,
-   "seconds": 0.03,
+   "seconds": 0.02,
    "first_line": "Closure record check"
   },
   {
@@ -65,9 +65,9 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 346175,
+   "bytes": 348129,
    "unit": "entries",
-   "count": 204
+   "count": 205
   },
   {
    "path": "visual/assets/gate_mutation.json",
@@ -105,7 +105,7 @@
    "path": "changelog.md",
    "what_zh": "含本包自己查出并改正的错误",
    "what_en": "Including the errors found and corrected here",
-   "bytes": 58929,
+   "bytes": 58945,
    "unit": "lines",
    "count": 547
   },
@@ -113,17 +113,17 @@
    "path": "agent.json",
    "what_zh": "生成方法的完整披露",
    "what_en": "Full disclosure of the generation method",
-   "bytes": 5757,
+   "bytes": 5781,
    "unit": "top-level keys",
    "count": 10
   }
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.74,
+  "seconds_to_run_every_verifier": 0.73,
   "files_to_read": 9,
-  "bytes_to_read": 945353,
-  "units_to_read": 1667
+  "bytes_to_read": 947347,
+  "units_to_read": 1668
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",
