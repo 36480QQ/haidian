@@ -29,15 +29,23 @@
  --rule: #CFC9BC; --red: #C0392B; --blue: #0A72A8; --brass: #906519;
  color-scheme: light;
 }
+/* **The three accents were not redefined here, and they are text.** The
+ dark blocks moved paper and the inks and left --red, --blue and --brass at
+ their light values, where they fall to 3.27, 3.38 and 3.44 against #16181A
+ — under the 4.5 floor this package publishes. They carry the disclaimer and
+ the F1/F2/F3 tolerance column, thirteen uses a page. Lifted to the same
+ hues at a lightness that clears the floor on this paper (E229). */
 @media (prefers-color-scheme: dark) {
  :root:where(:not([data-theme="light"])) {
  --paper: #16181A; --ink: #E8E4DA; --ink2: #A9AEB4; --ink3: #7C8288;
- --rule: #33383D; color-scheme: dark;
+ --rule: #33383D; --red: #D85D50; --blue: #0C89CA; --brass: #AE7A1E;
+ color-scheme: dark;
  }
 }
 :root[data-theme="dark"] {
  --paper: #16181A; --ink: #E8E4DA; --ink2: #A9AEB4; --ink3: #7C8288;
- --rule: #33383D; color-scheme: dark;
+ --rule: #33383D; --red: #D85D50; --blue: #0C89CA; --brass: #AE7A1E;
+ color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body {
@@ -116,8 +124,8 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 <figcaption>Rotated horizontal per alignment-sheet convention: south (Xizhimen) left, north (Qinghe) right. Linework drawn directly from <code>geometry/</code> , recomputed in EPSG:4548.</figcaption></figure>
 
 <h2>A reviewer's route<span class="en">A REVIEWER'S ROUTE</span></h2>
-<p class="note">Running all 5 verifiers takes 0.71 s; the 9 files to read come to 986 KB and 1706 countable units. Timed by running them, shipped in <code>visual/assets/review_route.json</code>.</p>
-<ol class="route"><li><code>node visual/assets/verify.js</code> — Recompute every metric_class 1 figure in metrics.json<span class="en">0.4 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> — Recompute the 412.5 m closure and every site cross-check figure<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> — Resolve every scenario card's benchmark, spatial anchor and exit condition<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> — Execute the closure mechanism as a data contract<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> — The S08 tabletop run, refusal branches included<span class="en">0.24 s · exit 0</span></li></ol>
+<p class="note">Running all 5 verifiers takes 0.75 s; the 9 files to read come to 986 KB and 1706 countable units. Timed by running them, shipped in <code>visual/assets/review_route.json</code>.</p>
+<ol class="route"><li><code>node visual/assets/verify.js</code> — Recompute every metric_class 1 figure in metrics.json<span class="en">0.43 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> — Recompute the 412.5 m closure and every site cross-check figure<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> — Resolve every scenario card's benchmark, spatial anchor and exit condition<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> — Execute the closure mechanism as a data contract<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> — The S08 tabletop run, refusal branches included<span class="en">0.25 s · exit 0</span></li></ol>
 
 <h2>Drawings<span class="en">SHEETS</span></h2>
 <p class="note">All 34 sheets are drawn directly from parameters and the submitted structured data. Click to enlarge.</p>
