@@ -814,9 +814,22 @@
       "what_en": "Send the stitching-point connector straight down again, so a second-row leader runs vertically through a first-row street name - the package's real state on the English sheet before the fix.",
       "why_zh": "**两道排版闸门都对这一类沉默**：`overflow_qa` 量越过页脚线，`label_collision_qa` 量同一行上两段文字相撞，而「一条线穿过一行字」两者都不看。这条变异要证明的是新闸门确实盯着评审收到的那七张图。",
       "why_en": "**Both typographic gates are silent on this class**: overflow_qa measures crossing the footer rule and label_collision_qa measures two runs on one line, and a line drawn through a word is neither. This mutation proves the new gate actually watches the seven sheets the reviewing model is sent."
+    },
+    {
+      "id": "M68",
+      "gate": "sheet_claim_qa.py",
+      "target": "fig_scope.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.03 题头断言里的留白占比改回一个手打的数字。**这正是本包直到 E222 之前的真实状态**——那一格一直是手打的，只是当天恰好和下方图表算出来的一致。",
+      "what_en": "Put a hand-typed share back into FIG.03's claim band. **This is the state this package was actually in until E222**: that figure was typed, and happened to agree with the chart computing it below on the day it was found.",
+      "why_zh": "**恰好是对的数，就是没有人在核的数。** 题头是全包最多人读的一格，此前也是核得最少的一格。这条变异要证明的是：那一格里任何一个数与随包文件对不上，构建就停。",
+      "why_en": "**A number that is right by coincidence is a number nobody is checking.** The claim band is the most-read cell in the package and was the least checked. This mutation proves that any number there which the shipped files do not recompute stops the build."
     }
   ],
-  "caught": 67,
+  "caught": 68,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -853,6 +866,7 @@
     "review_rules_qa.py",
     "role_spec_qa.py",
     "schema_conformance_qa.py",
+    "sheet_claim_qa.py",
     "sources_qa.py",
     "stale_corpus_qa.py",
     "standards_alignment_qa.py",
@@ -907,6 +921,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 49 道闸门，其中 44 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 49 gates, 44 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 50 道闸门，其中 45 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 50 gates, 45 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

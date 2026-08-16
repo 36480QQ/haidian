@@ -216,9 +216,11 @@
         "existing_street_length_m",
         "existing_walk_between_benchmarks_m",
         "osm_vertices_shipped",
-        "walk10_benchmark_reach_gain_buildings"
+        "walk10_benchmark_reach_built_buildings",
+        "walk10_benchmark_reach_gain_buildings",
+        "walk10_benchmark_reach_today_buildings"
       ],
-      "affects_metric_count": 9,
+      "affects_metric_count": 11,
       "owner": "organizer",
       "next_action_zh": "组织方：发布公园法定范围的 GIS 图层。在此之前 412.5 m 两端都不是官方几何。",
       "next_action_en": "Organizer: publish the GIS layer for the park's statutory extent. Until then neither end of the 412.5 m reading is official geometry.",
