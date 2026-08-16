@@ -1,7 +1,7 @@
 {
  "version": 1,
- "summary": "本矩阵是概念方案的风险自评，不是主管部门、运营方或专业机构结论；R-01—R-08 逐项绑定 G0—G3、代表场景与六个工作包，分值只用于确定证据闸门和人工复核优先级。",
- "summary_en": "This matrix is the concept proposal's self-assessed risk register, not a conclusion from a competent authority, operator, or professional body; R-01 through R-08 are each bound to G0—G3, representative scenarios, and the six work packages, and the scores are used only to set evidence-gate sequencing and human-review priority.",
+ "summary": "本矩阵是概念方案的风险自评，不是主管部门、运营方或专业机构结论。完整风险登记为 risks 数组的 R-01—R-12 十二条（R-09—R-12 为 SEB v0.4 修订批次新增的生命周期风险）；dimensions 数组是其中前八条按官方八维口径的评分视图，两表以 risk_id 关联。分值只用于确定证据闸门和人工复核优先级。",
+ "summary_en": "This matrix is the concept proposal's own risk self-assessment, not a conclusion by any authority, operator or professional body. The full register is the twelve entries R-01–R-12 of the risks array (R-09–R-12 added by the SEB v0.4 revision batch as lifecycle risks); the dimensions array is a scored view of the first eight under the official eight-dimension caliber, the two joined by risk_id. Scores serve only to set evidence gates and review priority.",
  "dimensions": [
   {
    "id": "data_privacy",
@@ -359,8 +359,8 @@
    "title_en": "Operations cost",
    "trigger_zh": "多通道界面、人工接管、安静停靠和可移动构件需要持续清洁、维修、值守与故障演练。",
    "trigger_en": "Multichannel interfaces, human handover, quiet docking, and movable components require ongoing cleaning, repair, staffing, and failure drills.",
-   "pause_threshold_zh": "没有明确值守班次、备件、维护卡、故障绕行或人工接管资源。",
-   "pause_threshold_en": "There is no defined staffing shift, spare parts, maintenance card, failure bypass, or human-handover resource.",
+   "pause_threshold_zh": "没有明确值守班次、备件、维护卡、故障绕行或人工接管资源；或以 AI 提效为名削减值守班次、把接管压力与 AI 层运维成本转嫁为一线值守者的无偿加班。",
+   "pause_threshold_en": "There is no defined staffing shift, spare parts, maintenance card, failure bypass, or human-handover resource; or shifts cut in the name of AI efficiency, passing the takeover load and the AI layer's operating cost down as unpaid overtime for front-line stewards.",
    "owner_role_zh": "运营负责人和维护负责人",
    "owner_role_en": "Operations lead and maintenance lead",
    "current_control_zh": "每个原型同时交付维护卡、故障绕行和停止条件；未确认责任人及资源时不进入开放空间。",

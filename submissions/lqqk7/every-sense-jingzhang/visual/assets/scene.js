@@ -698,7 +698,17 @@
   /* ------------------------------------------------------------------ boot */
   function boot() {
     var root = document.querySelector('.jz-scene');
-    if (!root || !window.JZ_SCENE) return;
+    if (!root) return;
+    if (!window.JZ_SCENE) {
+      /* dataset failed to load: reveal the static fallback instead of an empty stage */
+      root.setAttribute('data-view', 'static');
+      var bar = root.querySelector('.jz-bar');
+      if (bar) {
+        var bs = bar.querySelectorAll('button');
+        for (var bi = 0; bi < bs.length; bi++) bs[bi].disabled = true;
+      }
+      return;
+    }
     var lang = root.getAttribute('data-lang') === 'en' ? 'en' : 'zh';
     var t = T[lang];
     var wrap = root.querySelector('.jz-canvaswrap');
