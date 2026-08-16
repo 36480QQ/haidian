@@ -54,6 +54,12 @@ scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-s
 
 这些案例分别由其机构或政府页面支撑，仅作机制比较，不表示背书。[source:KQ-LONDON] [source:MILA] [source:HETAO]
 
+### 文化工作法图谱
+
+![从测量、译名到共同校准](assets/figures/culture-timeline.png)
+
+图中五个节点只表达设计转译关系，不替代历史断代研究：由大钟寺的“铭文与众声”、京张工程的“测量与责任”、清华园的“到达与转译”、中关村的“制度试验”，汇入今天的“群智归卷”。
+
 ## 总体设计范围城市更新与控规深度城市设计
 
 空间总式为 **一条百年会通廊 · 三个设计原型区 · 两翼协作网 · 一套开院接口系统 · 一条远期条件高线**。三区分别承担“先证明—共同制作—公开试用”，中关村科技服务翼提供 IP、合规、资本与国际服务，小月河场景赋能翼提供社区、学校、公园、气候与一线劳动者的日常场景。任何节点都能把项目退回翻译、复验或退出，而不是北到南的单向流水线。[depth:overall_spatial_structure]
@@ -77,6 +83,26 @@ scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-s
 求真工程园不只展示通过项目，还公开“为什么不能进入日常生活”；会通共造院借鉴北京院落“有边界但可进入”的关系，不做仿古屋顶；共鸣试用市用可拆单元和低屏幕界面替代购物中心式科技大堂。三者共同执行“暂停容易，继续困难”。[data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]
 
 ![三重点区类型化详细设计](assets/figures/key-areas.png)
+
+### 三个空间原型效果表达
+
+![求真工程园概念效果](assets/media/proof-garden-render.jpg)
+
+**求真工程园。** 公共说明前场、可观察复验廊、预约测试院与安全实验室逐级收紧；长桌兼具说明、测量、讨论与复验功能。
+
+![会通共造院概念效果](assets/media/co-making-courtyard-render.jpg)
+
+**会通共造院。** 以“有边界但可进入”的当代院落组织居民问题室、共享制作厅、国际适配室与回信编辑室，不做仿古院落。
+
+![共鸣试用市概念效果](assets/media/resonance-test-market-render.jpg)
+
+**共鸣试用市。** 可拆试用单元、AI-free 柜台、反馈与失败展、城市回信环并置，公众可以试用、质疑、拒绝并触发暂停。
+
+### 四件公共构件
+
+![四件公共构件](assets/figures/landmarks-components.png)
+
+效果图用于传达空间关系、材料气质与使用场景，不表示现状建筑、准确地块或施工图。四件构件则把责任、版本、停止条件与公众反馈固定到现场。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -102,6 +128,14 @@ scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-s
 ★为产业测试验证场景；另有多语公共服务压力测试共同满足不少于三项验证场景的要求。仓库标准场景显式复用 `ai-cultural-guide`、`ai-traffic-walkability`、`robot-delivery-low-speed`、`enterprise-service-copilot`，其余为方案原生场景。
 
 治理采用六道门：问题登记、公众与专业共译、数据/伦理/IP 审查、受控测试与独立复验、有界公众试用、通过/修改/退出与回信。扩大试点必须同时取得受影响用户代表、独立复验团队、运营与法律责任主体三把钥匙。[source:GENAI-MEASURES] [depth:risk_missing_data]
+
+### 生态、共同作者与场景卡
+
+![七要素、三原型与七类共同作者](assets/figures/ai-ecosystem.png)
+
+![十二个 AI 公共场景与七类共同作者对应关系图](assets/figures/scenarios-personas.png)
+
+七要素必须同时进入实施协议；七类用户不是“被测试对象”，而是问题定义、放行和回信的共同作者。十二场景采用同一最小合约，可逐项启动、暂停与撤回。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -144,6 +178,16 @@ scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-s
 
 运营四季为全球城市问题征集、开院共造周、求真复验季、城市回信周；这些是概念活动品牌，不是已确定政府日程。角色分为公共空间运营、场景运营、独立复验、社区参与、文化审校和国际合作，资金按维护、复验、参与、出版和移除分账，不承诺财政、租金或招商结果。[depth:renewal_project_list]
 
+**参与主体与可衡量指标。** 政府部门负责规则接口与公共责任，企业和高校团队负责技术交付，社区与居民代表共同签署放行或暂停，独立复验团队和运营主体分别承担评估与日常维护。每一阶段监测公众反馈闭环率、人工兜底可用比例、复验通过比例、暂停响应时长、无障碍服务连续性和安全移除完成率；指标未达门槛即不进入下一阶段。
+
+### 证据门与日落治理
+
+![证据开门的实施分期](assets/figures/operations-phasing.png)
+
+![六道门、三把钥匙与日落默认值](assets/figures/governance-sunset.png)
+
+阶段编号只表达依赖关系，不承诺日历工期。每一阶段都须独立有用、可暂停、可撤回；未取得三把钥匙与最低证据时，默认到期暂停。
+
 ## 指标体系、面积复算与合规矩阵
 
 三项 formal 核心指标均可从提交几何复算：`site_area_sqm = area(site_boundary)`，`green_ratio = area(green_space)/area(site_boundary)`，`public_space_ratio = area(public_space)/area(site_boundary)`；交换坐标为 EPSG:4326，面积统一转 EPSG:4548。由于边界为 provisional，数值虽为 finite/known，置信度仍为 low。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
@@ -155,6 +199,8 @@ scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-s
 `compliance_matrix.json` 覆盖公告 1.3、1.4、1.5 与 agent.1-agent.6；`standard_matrix.json` 区分项目任务、官方专业标准和缺失标准；`design_depth_matrix.json` 将每项深度挂到正文、图、几何、指标、假设和自检。未知数据保持 null 并写原因，不以综合分数掩盖差异。
 
 ## 风险、版权与合规说明
+
+**公开资料边界与人工复核。** 公开资料只支撑可追溯的事实背景，不被延伸解释为审批依据；涉及个人使用记录时遵循最小化和隐私保护。历史、翻译、空间与模型主张均须人工复核，版权和授权状态写入资产登记，试点在部署前完成数据、无障碍与运营合规审查。
 
 八维风险为隐私、实施复杂度、公众接受、运维、政策、空间争议、技术成熟度、公平包容。自动暂停触发包括安全事故或可信险情、隐私泄露或目的外使用、歧视或无障碍失败、人工兜底失效、越界运行、责任主体无法确认。移除后以齐平、断电、密封的空位铭板记录项目、决定和城市学习。[source:GENAI-MEASURES] [depth:risk_missing_data]
 

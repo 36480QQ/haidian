@@ -54,6 +54,12 @@ The taskbook's three positions remain intact: railway culture becomes engineerin
 
 The cases are supported only by their official institutional or government pages and imply no endorsement.[source:KQ-LONDON] [source:MILA] [source:HETAO]
 
+### Cultural Method Diagram
+
+![From survey and naming to civic calibration](assets/figures/culture-timeline.en.png)
+
+The five nodes translate cultural method rather than replace historical research: Dazhongsi's “inscription and polyphony,” Jingzhang engineering's “survey and responsibility,” Qinghuayuan's “arrival and translation,” and Zhongguancun's “institutional experiment” feed today's civic archive.
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The spatial formula is **one Centennial Commons · three prototype areas · two collaborative wings · one Open Courtyard interface system · one conditional future high line**. The three areas perform prove—make—try; the Zhongguancun wing provides IP, compliance, capital and international services, while the Xiaoyue River wing provides everyday community, school, park, climate and frontline-worker settings. Every node can return a project to translation, verification or exit.[depth:overall_spatial_structure]
@@ -77,6 +83,26 @@ The three key areas are type prototypes with conditional controls, not falsely p
 Proof Garden publicly explains why a trial is not ready; Co-making Courtyard uses Beijing's bounded-yet-enterable courtyard relation without fake historic roofs; Resonance Test Market replaces spectacle with demountable cells and low-screen service. All follow “easy to pause, hard to continue.”[data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]
 
 ![Type design for the three key areas](assets/figures/key-areas.en.png)
+
+### Three Spatial Prototype Renderings
+
+![Proof Garden concept rendering](assets/media/proof-garden-render.jpg)
+
+**Proof Garden.** A public explanation forecourt, observable re-test gallery, booked test court and secure laboratory tighten access step by step. The long table supports explanation, measurement, debate and verification.
+
+![Co-making Courtyard concept rendering](assets/media/co-making-courtyard-render.jpg)
+
+**Co-making Courtyard.** A contemporary courtyard that is bounded but enterable links the Resident Problem Room, Shared Making Hall, Beijing Adaptation Room and Reply Studio without faux-historic styling.
+
+![Resonance Test Market concept rendering](assets/media/resonance-test-market-render.jpg)
+
+**Resonance Test Market.** Demountable trial units, an AI-free counter, feedback and failure display, and the City Reply Ring let the public try, question, refuse and trigger a pause.
+
+### Four Civic Components
+
+![Four civic components](assets/figures/landmarks-components.en.png)
+
+The renderings communicate spatial relations, material character and use; they do not depict surveyed existing buildings, exact parcels or construction documents. The four components make ownership, version, stop conditions and public feedback visible on site.
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -102,6 +128,14 @@ Seven priority personas are older residents; couriers, sanitation and maintenanc
 ★ marks industry test/verification. Multilingual-service stress testing supplies a third verification setting. Four repository standard scenarios are explicitly reused: `ai-cultural-guide`, `ai-traffic-walkability`, `robot-delivery-low-speed`, and `enterprise-service-copilot`.
 
 Six gates govern every scenario: register the problem; co-translate it; review data/ethics/IP; conduct bounded testing and independent re-test; run a bounded public trial; then pass, modify or exit and reply. Scaling requires three keys at once: affected-user representatives, an independent verification team, and the operational/legal responsible entity.[source:GENAI-MEASURES] [depth:risk_missing_data]
+
+### Ecosystem, Co-authors, and Scenario Cards
+
+![Seven enablers, three prototypes and seven co-author groups](assets/figures/ai-ecosystem.en.png)
+
+![Twelve scenario cards](assets/figures/scenarios-personas.en.png)
+
+All seven enablers enter the implementation agreement together. The seven user groups are not test subjects; they co-author the problem, release decision and Reply. The twelve scenarios use one minimum contract and can start, pause or withdraw independently.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -144,6 +178,16 @@ Phasing is evidence-gated rather than calendar-driven. Gate 0 locks sources, fie
 
 Four proposed seasons are Global City Problem Call, Open Courtyard Co-making Week, Verification Season and City Reply Week; they are concept brands, not confirmed public schedules. Roles cover public space, scenarios, independent verification, community participation, cultural review and international exchange. Budgets separate maintenance, verification, participation, publishing and removal; no fiscal, rent or investment result is promised.[depth:renewal_project_list]
 
+**Actors and measurable indicators.** Government departments hold the rule interface and public responsibility; firms and university teams deliver technology; community and resident representatives co-sign release or pause decisions; independent verifiers and the operational owner respectively carry evaluation and daily maintenance. Every stage monitors public-feedback closure, human-fallback availability, re-test pass rate, pause-response time, accessible-service continuity and safe-removal completion. A stage that misses its threshold does not open the next gate.
+
+### Evidence Gates and Sunset Governance
+
+![Evidence-gated implementation](assets/figures/operations-phasing.en.png)
+
+![Six gates, three keys and sunset by default](assets/figures/governance-sunset.en.png)
+
+Stage numbers express dependencies, not a promised calendar. Every stage must remain independently useful, pausable and reversible. Without all three keys and minimum evidence, expiry triggers a pause by default.
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 All three formal core metrics are reproducible: `site_area_sqm = area(site_boundary)`, `green_ratio = area(green_space)/area(site_boundary)`, and `public_space_ratio = area(public_space)/area(site_boundary)`. Exchange geometry is EPSG:4326 and area is calculated in EPSG:4548. The values are finite/known but low-confidence because the boundary is provisional.[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
@@ -155,6 +199,8 @@ Six public commitments create hard checks: Nameable requires 100% device-to-regi
 `compliance_matrix.json` covers announcement 1.3/1.4/1.5 and agent.1-agent.6. `standard_matrix.json` distinguishes task requirements, professional standards and missing standards. `design_depth_matrix.json` links each depth item to prose, figures, geometry, metrics, assumptions and checks. Unknown values remain null with reasons.
 
 ## Risk, Copyright, and Compliance
+
+**Public-source boundary and human review.** Public sources support traceable background facts only and are not extended into approval claims. Personal-use records follow data minimization and privacy protection. Historical, translation, spatial and model claims receive human review; copyright and authorization status enter the asset register; every pilot completes data, accessibility and operational compliance review before deployment.
 
 Eight risk dimensions are privacy, implementation complexity, public acceptance, maintenance, policy, spatial dispute, technical maturity and equity. Automatic pauses include safety incidents or credible near misses, privacy breach or purpose drift, discrimination or accessibility failure, unavailable human fallback, operation outside approved place/time/user/version, and an unidentifiable responsible entity. A flush, unpowered, sealed Empty Plaque records what was removed, why and what the city learned.[source:GENAI-MEASURES] [depth:risk_missing_data]
 
