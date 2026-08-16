@@ -1,5 +1,10 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.12 - 2026-08-17
+
+- 冻结版：v1.1—v1.11 的全部修改经四门自检、双语对齐审计与 manifest 哈希核验后定稿；本版不新增内容，仅作最终校验与提交。
+  Freeze release: all v1.1–v1.11 changes pass the four-gate self-check, the bilingual parity audit, and manifest hash verification; this version adds no content and exists for final validation and submission.
+
 ## v1.11 - 2026-08-17
 
 - 中英结构硬对齐：三个重点区英文版改为与中文一致的 ### 小节标题并采用术语表全称；英文版补入面向读者的约数（11.41 平方公里/12.34%/7.33%/约 31.08 万平方米）。程序化审计确认 33 个证据锚点序列一致、5 张图位一致。
