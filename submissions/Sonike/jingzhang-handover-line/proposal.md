@@ -405,7 +405,7 @@ English brief — **One test decides everything here: for any AI service on this
 
 ## 交通、轨道、市政与公共服务设施
 
-交通结构由一条连续步行骑行主轴与八条东西缝合支线组成，概念线路总长18,855.117米 [metric:conceptual_movement_length_m]，见 [data:geometry/roads.geojson#ROAD-001]。主轴服务全带连续体验，支线只标识需要由专业交通研究解决的连接方向；每个交接场设置“到达—减速—辨识—人工求助—继续”的五步界面。轨道站点、北五环跨越、道路断面、停车与非机动车容量均缺正式数据，因此不声称新建桥隧或调整道路红线。后续交通模型需验证十五分钟慢行覆盖、换乘冲突、消防与物流时段，并响应 [depth:traffic_rail_slow_parking]。
+交通结构由一条连续步行骑行主轴与八条东西缝合支线组成，概念线路总长18,855.117米 [metric:conceptual_movement_length_m]，见 [data:geometry/roads.geojson#ROAD-001]。主轴服务全带连续体验，支线只标识需要由专业交通研究解决的连接方向；每个交接场设置“到达—减速—辨识—人工求助—继续”的五步界面。**图 F/04 的走廊卡内列出十二个接管点的完整索引**——此前图上只有 01–12 的编号，读者看得见点、读不出它是什么，而「十二个接管点」正写在这张图的标题里；十二个名称逐字取自 `public_space.geojson` 的 `name_zh` / `name_en`，编号用与图上节点相同的电气青，使编号、点位与名称三者可以互相对上 [data:geometry/public_space.geojson]。轨道站点、北五环跨越、道路断面、停车与非机动车容量均缺正式数据，因此不声称新建桥隧或调整道路红线。后续交通模型需验证十五分钟慢行覆盖、换乘冲突、消防与物流时段，并响应 [depth:traffic_rail_slow_parking]。
 
 **同一次核对把「不使用自造分类」这条纪律从用地图层补到了道路与建筑图层。** 组织方场地包除用地代码外还提供了两套词汇——`brief/site-package/enums/road_classes.json`（9 类道路等级）与 `building_types.json`（13 类建筑类型），`validate_submission.py:1225` 与 `:1231` 都会逐条校验。而本包此前**一条都没用**：道路只有自造的 `movement_class`、建筑只有自造的 `typology`。**这与本包在 `standard_matrix.json` 里自己立的规矩（「不使用自造分类替代」）相抵触——那条纪律只在用地图层执行了。**现已按组织方词汇补齐：9 条道路 `road_class` 为 1 条 `greenway` + 8 条 `transit_connection`；20 个更新单元 `building_type` 为开放研发院 `ai_r_and_d`、验证工坊 `lab`、共享服务栈 `incubator`、社区协作屋 `community_service` 各 5 个 [data:geometry/roads.geojson#ROAD-001] [data:geometry/buildings.geojson#BLDG-001]。
 
