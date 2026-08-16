@@ -133,7 +133,13 @@ AI 创新生态按五大功能（AI 全栈自主创新体系、世界级创新�
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系按「可复算、可追溯、可解释、可降级」原则建立 [depth:metrics_recalculation]。全部已知指标由提交包 geometry 图层在 EPSG:4548 下复算，并在 `metrics.json` 中标注 `precision="provisional_pending_recalculation"`：总体设计范围面积 [metric:site_area_sqm] 平方米；三处重点区面积分别为 [metric:zhongzhiyuan_area_sqm]、[metric:beijing_ai_origin_area_sqm]、[metric:dazhongsi_area_sqm] 平方米（provisional 复算值），重点区数量 [metric:key_area_count] 处；绿地、公共空间、建筑基底与道路面积对应 [metric:green_space_area_sqm]、[metric:public_space_area_sqm]、[metric:building_footprint_area_sqm]、[metric:road_area_sqm] 及占比 [metric:green_ratio]、[metric:public_space_ratio]、[metric:road_ratio]；人字线主线长度 [metric:corridor_length_m] 米，闭塞区间 [metric:block_section_count] 段，AI 场景节点 [metric:scenario_node_count] 个，分期总面积 [metric:phasing_area_sqm] 平方米 [data:geometry/constraints.geojson#CON-RAIL-001]；文化、教育与医疗卫生用地面积分别 [metric:land_use_area_cultural_0803]、[metric:land_use_area_education_0804]、[metric:land_use_area_medical_0806] 平方米。FAR、建筑密度、总建筑规模、绿地率与退线等官方控制指标状态为 unknown，理由与缺口登记在 `metrics.json` 与 `assumptions.json`。
+指标体系按「可复算、可追溯、可解释、可降级」原则建立 [depth:metrics_recalculation]。全部已知指标由提交包 geometry 图层在 EPSG:4548 下复算，并在 `metrics.json` 中标注 `precision="provisional_pending_recalculation"`：总体设计范围面积 [metric:site_area_sqm] 平方米；三处重点区面积分别为 [metric:zhongzhiyuan_area_sqm]、[metric:beijing_ai_origin_area_sqm]、[metric:dazhongsi_area_sqm] 平方米（provisional 复算值），重点区数量 [metric:key_area_count] 处。
+
+绿地、公共空间、建筑基底与道路的面积指标如下：绿地面积 [metric:green_space_area_sqm] 平方米，公共空间面积 [metric:public_space_area_sqm] 平方米，建筑基底面积 [metric:building_footprint_area_sqm] 平方米，道路面积 [metric:road_area_sqm] 平方米；对应占比为绿地率 [metric:green_ratio]、公共空间占比 [metric:public_space_ratio] 与道路占比 [metric:road_ratio]。
+
+人字线主线长度 [metric:corridor_length_m] 米，闭塞区间 [metric:block_section_count] 段，AI 场景节点 [metric:scenario_node_count] 个，分期总面积 [metric:phasing_area_sqm] 平方米 [data:geometry/constraints.geojson#CON-RAIL-001]。
+
+文化、教育与医疗卫生用地面积分别 [metric:land_use_area_cultural_0803]、[metric:land_use_area_education_0804]、[metric:land_use_area_medical_0806] 平方米。FAR、建筑密度、总建筑规模、绿地率与退线等官方控制指标状态为 unknown，理由与缺口登记在 `metrics.json` 与 `assumptions.json`。
 
 ![核心指标复算与证据链（含 provisional 精度标注）](assets/figures/metrics-evidence.png)
 
@@ -158,4 +164,4 @@ AI 创新生态按五大功能（AI 全栈自主创新体系、世界级创新�
 - `docs/formal-submission-guide.md`、`docs/data-workflow.md`、`docs/terminology-glossary.md`
 - 官方公告：《百年京张AI创新带城市设计国际方案征集资格预审公告》（北京市规自委海淀分局，2026-05-09）
 
-以上资料的权威等级与用途边界以 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE] 与 [source:KEY-AREA-SOURCE] 为准，并登记于 `sources.json`。
+以上资料的权威等级与用途边界以 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE] 为准；公开资料登记 [source:SOURCE-REGISTRY]、处理资料导航 [source:PROCESSED-FACT-PACK] 与边界依据 [source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE] 的用途边界同样登记于 `sources.json`。
