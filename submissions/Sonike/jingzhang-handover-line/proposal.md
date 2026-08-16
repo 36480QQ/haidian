@@ -628,7 +628,7 @@ English brief — **One test decides everything here: for any AI service on this
 
 **本包选择服从枚举表，并把冲突标出来，而不是自行改成 `09`。** 理由不是嫌麻烦：改成 `09` 会被确定性校验判为「unknown land_use_code」，四道门直接变红，方案连进入评审的资格都没有；而组织方的枚举是全场共用的口径，参赛者单方面另立一套代码，会让各家的用地统计失去可比性。**这是本包一贯做法的又一例：数据缺口如实标注、不自行填补，也不假装它不存在。**该问题属于组织方场地包的数据缺陷，已按赛事规则走 Issue 反馈（open-city-ai/haidian#2977，含两条独立验证路径与建议的过渡期兼容方案），不在投稿 PR 里改动 `brief/` 或 `scripts/`。
 
-**复算触发器**：组织方修正 `land_use_codes.json` 后，本包两个商业服务业要素的 `land_use_code` 由 `05` 改为 `09`，指标键 `land_use_05_sqm` 相应改为 `land_use_09_sqm`，`geometry/land_use.geojson`、`metrics.json`、图件 F/02 与 F/03 的图例、A0 首页 B/01 的色标一并同步。**几何、面积与占比不会因此变动任何一位数**——变的只是这些面积挂在哪个法定类名下 [data:geometry/land_use.geojson]。
+**复算触发器**：组织方修正 `land_use_codes.json` 后，本包两个商业服务业要素的 `land_use_code` 由 `05` 改为 `09`，指标键 `land_use_05_sqm` 相应改为 `land_use_09_sqm`，`geometry/land_use.geojson`、`metrics.json`、图件 F/02 与 F/03 的图例、A0 首页 B/01 与 A3 首页 JZ/01 的色标一并同步。**几何、面积与占比不会因此变动任何一位数**——变的只是这些面积挂在哪个法定类名下 [data:geometry/land_use.geojson]。
 
 **其余六个代码经同一次核对全部正确**，与指南名称一一对应。七个代码的出处与这次核对的全过程已逐条写进 `sources.json` 的 `observations` 与 `transformations`，使这张表可被第三方按同一份公开代码表复核，而不是只能相信我们的自陈。
 
