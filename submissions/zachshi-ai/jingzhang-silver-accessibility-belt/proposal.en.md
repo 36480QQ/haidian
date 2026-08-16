@@ -218,6 +218,31 @@ Urban character:沿线 public space, service facilities and signage should follo
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
+### Core Mechanism: Silver Relay (original to this proposal)
+
+The common failing of AI elderly services is "the machine processes the elderly while human connection disappears" — the elderly are reduced to passive recipients. This proposal introduces the original **Silver Relay mechanism**: every AI elderly-service touchpoint must hand the baton to a named human at the boundary of its service, and the elderly always remain the active party [E:SILVER-RELAY-MECHANISM] [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+
+**Five relay rules:**
+- **R1 Human handover**: AI processing must hand the baton to a named human at the service boundary (volunteer / family member / community worker) — medical navigation ends by handing over to accompanied triage, errand checklists end by handing over to human verification at the window.
+- **R2 Signed receipt**: handovers carry a signed receipt — the elderly person or their proxy confirms receipt of the service; without confirmation the service is deemed incomplete.
+- **R3 Follow-up visit closure**: a follow-up visit must be made within 24–72 hours after the service, confirming the service was truly completed rather than merely "answered".
+- **R4 No-AI equivalence**: the elderly may take the fully human channel end-to-end, unaffected by any AI step — AI is additive, not a prerequisite.
+- **R5 Intergenerational channel**: every service point is equipped with an intergenerational volunteer channel (youth-aid mechanism), making digital aid a matter of intergenerational connection rather than technological burden.
+
+**Relay contracts for the 10 elderly scenarios** (full list in `visual/assets/silver-relay-contracts.json`):
+
+| Scenario | What AI does | Baton human (R1) | Follow-up visit (R3) | No-AI path (R4) |
+|---|---|---|---|---|
+| Silver medical navigation | Registration / department / medication-pickup navigation | Health-desk volunteer / triage attendant | 24-hour follow-up visit confirming the visit | Community health hotline, human throughout |
+| Silver civic-errand navigation | Social-security / medical-insurance / civil-affairs document checklists | Sub-district office window duty officer | 48-hour follow-up visit confirming acceptance | Walk directly to the window, human throughout |
+| Silver pick-up & errand service | Ordering pickup for heavy items / medicine / documents | Community volunteer / pick-up specialist | 24-hour follow-up visit confirming delivery | Volunteer home visit, human throughout |
+| Silver barrier-free mobility | Barrier-free route navigation | Barrier-free specialist / volunteer escort | 24-hour follow-up visit confirming safe arrival | Escort booked by phone |
+| Silver digital aid | Smartphone-usage tutorials | Intergenerational volunteer (young student) | 72-hour follow-up visit confirming mastery | In-person teaching at the community digital-aid station |
+
+**Rule-closure verification.** `run_silver_relay.js` correctly classifies all 60 synthetic cases — 10 scenarios × 6 rule branches (complete / missing baton human / no consent / no signed receipt / missing follow-up visit / missing no-AI path) — as 50 blocked / 10 relayed, proving the relay rules are logically closed. But this only proves classification correctness; it does not constitute on-site elderly-service, compliance or authorisation evidence — on-site performance remains null with status `not_authorized_not_run` [data:visual/assets/relay-tabletop-evidence.json#blocked].
+
+**Relation to "the elderly as the active party".** The core of Silver Relay is not making AI understand the elderly better, but **requiring every AI service to hand the baton back to a named person**. The three rules — signed receipt, follow-up visit and no-AI equivalence — jointly guarantee: AI may help, but it will never "decide for the elderly" — the elderly always remain the active party of the service, and the machine always remains the assistant [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
+
 ### Conceptual Renewal Project List
 
 Conceptual renewal projects (all concept suggestions, requiring professional deepening after regulatory, ownership, medical-compliance and data-licensing confirmation): barrier-free main-corridor completion, community silver-service centre, AI triage-kiosk network, civic silver-service hall retrofit, barrier-free interchange, elderly-AI-tech pilot building, silver-health-kiosk network, intergenerational memory plaza & wall.

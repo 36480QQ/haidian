@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for urban design proposal generation, elderly-accessibility service design, geometry derivation, and bilingual narrative authoring"
   },
-  "generated_at": "2026-08-11T10:45:27Z",
+  "generated_at": "2026-08-16T11:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "054be9af60c87e995409d02e966385f966606e56a1aea50ee4496c172fc9ca84"
+      "sha256": "ec2974e2b775f15911501e957aa8c4cb6fa52a2eaf81084763f92a9ddddfb7e5"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "30c393209c2cfd7889a758b80f6fa658454b6aeba1e6d47c874fe4d031cdb90c"
+      "sha256": "b161a97d56a8e1a11a2eba22db4d1f321f2b70600f42e9b9298d632f85167bc3"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ad265af63680ad4b74aba7df0ee6f7ba8f3b8cac7fdf50570c772ba6409301ba"
+      "sha256": "34e87f9a1fecf5c4bb1d14e9cd9f98c5f60fac04c77b5edd15c909f9d51274f1"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cbe2e9d3c325fc743b82fd65901932155ed3a4ef13829098e26ba1f16cee74c4"
+      "sha256": "9cbab3d934796f30a47a65ecc5f0ab5acb37ff19ccc63ca4a71556020ca5b419"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "624f22662a3144cff3f750495cd380f2aa3f48f2fbd45a1276985481fbe1adc5"
+      "sha256": "58fd87376a6a03858553799ac47d3a3a3fb41a99825b2b79c742cb92bd73752b"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9153cf146edbd3dd5e08a2f2f47d71d427b01f22af435e2ed7a4286cba7e03f4"
+      "sha256": "77969834d5563d737e3deeed24d0d92cefe55ef8f44b67ad22034db9b352b6c7"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -292,30 +292,6 @@
       "sha256": "c267d1f2db27c70f3df057d27bf43cee5578e6eea10336cdfb71f6c741572aad"
     },
     {
-      "path": "visual/assets/co-mobility-contracts.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "c841349228fa700dfbf950ca4eb78a907e2300e16aa28b492ee5f8c8505bd97f"
-    },
-    {
-      "path": "visual/assets/co-mobility-license.schema.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "4c3fd4725ffb7dba0dbb9ae7918484daa48c20611af9d970c68fbf266dceda4e"
-    },
-    {
-      "path": "visual/assets/run_license_tabletop.js",
-      "role": "verification_script",
-      "required": false,
-      "sha256": "fbbca244123b11704442e05622fe74da2de7bcd7f57a2cc157b5b5a92de9546d"
-    },
-    {
-      "path": "visual/assets/license-tabletop-evidence.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "c5143f5f85a9ad69428b8c0fddbb8e876726912adb7b4df8535aafc08426fdff"
-    },
-    {
       "path": "visual/assets/scenario-cards.json",
       "role": "evidence_data",
       "required": false,
@@ -358,18 +334,6 @@
       "sha256": "9a6390e65aa537b44dfbdefe0f2033b9c0310ed03d124460e44da762df28071a"
     },
     {
-      "path": "visual/assets/robustness-simulation.js",
-      "role": "verification_script",
-      "required": false,
-      "sha256": "d254d2df3c09229b3d0fdda64cbdbe71d35237b2e8b9bf86a89e9476c3f7c0d7"
-    },
-    {
-      "path": "visual/assets/robustness-simulation-evidence.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "45917f837e282e64e9f8d0f7be628d6ec97af53b77ccf80354433919057f201d"
-    },
-    {
       "path": "spatial.json",
       "role": "asset",
       "required": false,
@@ -386,6 +350,30 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "4717693a5a4a463193d1c59697a150855cfd80d928af85e31c47f579aa131727"
+    },
+    {
+      "path": "visual/assets/silver-relay-contracts.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "04cddb2bb54d4c8b8222f1920d0f174068bb1794afaf7af5bf4aa31fe26f9c4f"
+    },
+    {
+      "path": "visual/assets/relay-handover.schema.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "df89f312b6d11b7d92b08c0ccbfeebd8a56b4b61ca2441031e24ec16d6a297e5"
+    },
+    {
+      "path": "visual/assets/run_silver_relay.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "7ff6b157d733d6379106fbd7aca21e8d8487ab5502f5b6adedcf13085d583a6f"
+    },
+    {
+      "path": "visual/assets/relay-tabletop-evidence.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "fa216d9a50c507b42095694d4f1a94e5146afa15ca869b674194dc641cb55a48"
     }
   ],
   "validation_claim": {
