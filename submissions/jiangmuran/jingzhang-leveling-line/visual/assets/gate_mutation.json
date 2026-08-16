@@ -616,6 +616,18 @@
       "why_en": "The organisers' validator answered with the same migration warning every time and this package shipped anyway: **the value inside the build was right and the shipped one was not**, because the manifest was refreshed once more by hand afterwards. This mutation proves the gate reads the shipped file."
     },
     {
+      "id": "M59",
+      "gate": "evidence_ref_qa.py",
+      "target": "compliance_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把风险合规维度的证据指回 `visual/assets/rights_ledger.json`——那正是组织方 `not_supplied_paths` 里的一条，评审被明确告知不得声称看过它。这也是本包在 E210 之前的真实状态：版权证据只在评审拿不到的地方。",
+      "what_en": "Point the risk-compliance dimension's evidence back at visual/assets/rights_ledger.json - one of the organisers' not_supplied_paths, which the reviewer is told never to claim to have inspected. This is the state this package was actually in before E210: its rights evidence lived only where the reviewer could not read it.",
+      "why_zh": "**一条指向包外的引用，与没有引用是同一件事**，而且更糟：它读起来像有证据。这条变异要证明的是，闸门比对的是组织方现读的那三张清单，不是本包自己的想象。",
+      "why_en": "**A reference pointing outside the packet is the same as no reference**, and worse, because it reads as though evidence exists. This mutation proves the gate compares against the organisers' own three lists, read live, rather than against this package's idea of them."
+    },
+    {
       "id": "M52",
       "gate": "label_collision_qa.py",
       "target": "fig_key_areas.py",
@@ -707,7 +719,7 @@
       "why_en": "**Both typographic gates are silent on this class**: overflow_qa measures crossing the footer rule and label_collision_qa measures two runs on one line, and a line drawn through a word is neither. This mutation proves the new gate actually watches the seven sheets the reviewing model is sent."
     }
   ],
-  "caught": 58,
+  "caught": 59,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -720,6 +732,7 @@
     "computed_value_qa.py",
     "declared_geometry_qa.py",
     "evidence_ceiling.py",
+    "evidence_ref_qa.py",
     "figure_citation_qa.py",
     "figure_title_qa.py",
     "formal_visual_metrics_qa.py",
@@ -790,6 +803,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 41 道闸门，其中 36 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 41 gates, 36 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 42 道闸门，其中 37 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 42 gates, 37 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

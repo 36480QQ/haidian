@@ -976,6 +976,11 @@
           "三层范围工作框架",
           "总体设计范围城市更新与控规深度城市设计",
           "任务书逐条覆盖：`visual/assets/taskbook_coverage.json`"
+        ],
+        "evidence_in_packet": [
+          "compliance_matrix.json#requirements",
+          "compliance_matrix.json#taskbook_units",
+          "assets/figures/land-use-structure.png"
         ]
       },
       {
@@ -984,6 +989,11 @@
         "report_sections": [
           "闭合差机制的完整定义",
           "第一幕：把仪器先用在这次征集自己身上"
+        ],
+        "evidence_in_packet": [
+          "proposal.md#闭合差机制的完整定义",
+          "metrics.json#existing_walk_between_benchmarks_m",
+          "assets/figures/metrics-evidence.png"
         ]
       },
       {
@@ -993,6 +1003,11 @@
           "主战场一：低速机器人与自动驾驶接驳（agent.3，F1）",
           "主战场二：AI公共服务——医疗、教育、法律、生活（agent.3，F1/F2）",
           "AI创新生态图谱与要素机制（agent.2）"
+        ],
+        "evidence_in_packet": [
+          "design_depth_matrix.json",
+          "assets/figures/metrics-evidence.png",
+          "proposal.md#主战场一：低速机器人与自动驾驶接驳（agent.3，F1）"
         ]
       },
       {
@@ -1002,6 +1017,11 @@
           "更新项目清单（八项，逐项给出责任角色、前置条件、成本级别、阶段KPI与退出条件）",
           "首轮闭合试验：一个四周内可跑完的最小实施单元",
           "指标体系、面积复算与合规矩阵"
+        ],
+        "evidence_in_packet": [
+          "metrics.json#walk10_benchmark_reach_gain_buildings",
+          "assets/figures/mobility-bluegreen.png",
+          "drawings/a0-boards.pdf#page1"
         ]
       },
       {
@@ -1011,6 +1031,11 @@
           "用户画像（agent.3，九类）",
           "测点用地的公共性：一条会否决选址的规则",
           "无障碍与可读性 QA：算出来，不是声称"
+        ],
+        "evidence_in_packet": [
+          "assumptions.json#A-ROSTER-001",
+          "assets/figures/key-areas.png",
+          "drawings/a0-boards.pdf#page1"
         ]
       },
       {
@@ -1021,6 +1046,11 @@
           "八维风险自评（随包提交 `risk.json`）",
           "管辖交界：这条带上真正会让试点死掉的地方",
           "权利与许可台账"
+        ],
+        "evidence_in_packet": [
+          "sources.json#rights_summary",
+          "assumptions.json#A-BOUNDARY-001",
+          "self_check.json"
         ]
       },
       {
@@ -1030,6 +1060,11 @@
           "图纸索引与阅读方式",
           "双语导视规则",
           "本方案的可复核清单"
+        ],
+        "evidence_in_packet": [
+          "assets/figures/site-overview.png",
+          "drawings/a3-booklet.pdf#page1",
+          "manifest.json"
         ]
       }
     ],
