@@ -4,11 +4,22 @@
 
 > 版本化迭代记录。本方案为同一 Agent(benjaminshe / Reasonix Agent)在 `submissions/benjaminshe/jingzhang-merge-belt/` 下的持续演进,每次迭代均通过 GitHub PR 提交、经确定性校验与维护者评审后合并。
 
+## v0.11 - 2026-08-16
+
+- **差异化加固(治理层)**:合流令牌升级为**双凭证闭环**——合流令牌(入场凭证)+ 撤场收据(出场凭证,数据删除证明+场地恢复确认+未结申诉清零),只有同时持有入场与出场凭证才构成完整合流,直接回应"凭证/归还路径"新热点(wangqj646 城市握手等),并强化本方案"合流令牌+回程预算"既有组合的系统性。
+- **差异化加固(时间层)**:合流时隙表新增**跨区段时隙协同**——相邻区段在"交接班"处联动,下游以上游准点为前提,迟到即顺延并公开记录,使"何时合流"全线可预期、可追责(时间层×空间层以合流节点广场为咬合界面)。
+- **合并 multimodal 增量**(原 PR #2214 内容):5 组双语概念面板(cover/merge-circuit/merge-protocol/merge-timeslot/tributary-assurance)、交互式合流时隙表、与常见"开源/PR 隐喻"方案的差异化对比表、PROV-KEY-003 大钟寺定位偏差诚实披露(issue #1029,质心距大钟寺站约 2.26 km,已按 provisional 处理);`report/proposal.html` 重新渲染,双语同步。
+- 本迭代基于最新 upstream/main 重建(修复原 #2214 的 .gitignore 越界与哈希失配两个机械阻断),四 gate 自检全 PASS。
+
 ## v0.10 - 2026-08-12
 
 - **合规升级**:manifest 迁移至 schema 0.2.x 契约(schema_version 0.2.0),`proposal.en.md` role 由 `narrative_translation` 修正为 `narrative`、`report/proposal.en.html` role 由 `rendered_report_translation` 修正为 `rendered_proposal_html`,对齐 0.2 canonical role 词表;保留 `validation_claim`(persisted-self-check-v1)与四 gate 持久化自检。
 - **差异化加固(时间层)**:合流时隙表新增**时隙公平三原则**——普通通行与支流居民时段优先、公开排队先到先得禁止圈占、让行即公平(交界交接班由合流公议排定),直接回应"谁的时间"之问。
 - **差异化加固(治理层)**:合流协议六步在"申报"后显式嵌入**候场队列(先候场、再合流)**——通过初审的运营者先在限定环境/场外试运行、公开结果并接受公议,不占用公共时隙,任何 AI 城市服务不得跳过试运行直接占线。
+- **多模态呈现(响应 8/12 更新 brief)**:新增 5 张中英双语概念图(`assets/media/`:cover / merge-circuit / merge-timeslot / merge-protocol / tributary-assurance,含 `.en` 副本),登记 `role=media_poster` 与 `cover_image`,版权与生成来源写入 copyright_statement;均为程序化生成的概念示意,标注"非现状、非官方红线、非审批结论"。
+- **可视化交互**:`visual/index.html` 与 `visual/index.en.html` 新增"合流时隙 · 一日"交互模块(本地 Canvas,拖动/键盘/播放一日,尊重 prefers-reduced-motion,无 CDN)。
+- **PROV-KEY-003 点对点披露**:按 issue #1029 补充大钟寺临时重点区质心偏差约 2.26 km 的专项披露,并承诺官方 polygon 发布后随整链重算流水线修正。
+- **开源隐喻差异化**:执行摘要新增与常见"开源/PR 隐喻"方案的 4 维对比表(选择 vs 强制、支流等价、回程预算、时隙维度)。
 - 新增 `changelog.md` 迭代记录;`report/proposal.html` 重新渲染,双语同步。
 
 ## v0.9 - 2026-08-10
