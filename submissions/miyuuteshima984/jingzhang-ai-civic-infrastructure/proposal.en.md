@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Using city completeness as the spatial review method for the century-old Jing-Zhang AI innovation belt: ordinary civic capabilities (living, schooling, care, mobility, greenery, work, interaction) first form a long-term daily chassis, with AI as an optional enhancement layer in research, community, transit, and commerce. Overall, one civic green spine, six completeness segments, six east-west stitching connections, and three key areas are formed; the three key areas bind ARRIVE WITHOUT APP, CARE WITHOUT ACCOUNT, and TEST WITHOUT BLOCKING as three dual-track spatial contracts, grounded in three invariant ordinary civic routes (ROAD-009/010/011), built typologies, and physical cross-sectional clearances; Shuangfen Fortress remains strictly a community naming easter egg."
+summary: "City Completeness treats the ordinary city as the host and AI as a reversible sidecar. v0.15.s keeps three invariant routes fixed while test, care and arrival enhancements attach only to nine existing building/public-space hosts, with no AI-only land-use category."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
 iteration: "v0.15"
@@ -21,17 +21,25 @@ iteration: "v0.15"
 This is a conceptual urban-design submission for the open call. The current `SITE_BOUNDARY` and three `KEY_AREA` features use repository-maintained provisional rough geometry only for generation, topology checks, relative relationships, visualisation and package-level recalculation. They are not statutory redlines, parcels, ownership boundaries, road redlines, regulatory plans or engineering implementation conclusions. [source:BOUNDARY-SOURCE] [source:ALLOWED-DESIGN-SPACE]
 
 
-<!-- V014-CORE-START -->
-## v0.14.s Core Judgment | INVARIANT CIVIC ROUTES
+<!-- V015-CORE-START -->
+## v0.15.s Core Judgment | AI SIDECAR CITY
 
-**AI may change services, but it may not force citizens to change their basic urban routes.** This iteration writes the three v0.7 everyday journeys into machine-readable space for the first time: Zhongzhiyuan `ROAD-009`, AI Origin `ROAD-010`, and Dazhongsi `ROAD-011` are ordinary pedestrian routes with `ai_dependency=none`. [data:geometry/roads.geojson#ROAD-009] [data:geometry/roads.geojson#ROAD-010] [data:geometry/roads.geojson#ROAD-011]
+**The ordinary city is the host. AI is only a sidecar.** v0.14.s established three ordinary civic routes that survive AI shutdown. v0.15.s now writes the physical AI attachment points into existing building, public-space and route attributes instead of inventing an AI-only city layer. [metric:invariant_civic_route_count] [metric:ai_sidecar_type_count]
 
-AI, robots, dynamic wayfinding and account-based services may attach to these routes only as side interfaces; they may not replace the routes. Together the three routes form a reviewable ordinary-city baseline. [metric:invariant_civic_route_count]
+**AI OFF = a complete city; AI ON = the same complete city plus reversible sidecar capability.** The geometry of ROAD-009 / 010 / 011 is identical in both states. Only lateral test, care and arrival interfaces change. [metric:ai_off_route_preservation_ratio] [metric:new_ai_land_use_code_count]
 
-The three lines express conceptual continuity and spatial relationships only. They are not official roads, station entrances, bridges/tunnels, parcels or engineering redlines. Dazhongsi in particular still requires verified station entrances and real level data. Adding LineStrings does not alter the site, green-space, public-space or building-footprint polygons. [metric:critical_non_ai_route_coverage_ratio]
+| Key area | Ordinary-city host | AI sidecar | Machine-readable hosts | After the sidecar is removed |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan / `ROAD-009` | R&D ground floor - food/rest - green spine - public exchange | **TEST POCKET**: controlled tests, temporary equipment and replaceable service interfaces stay beside the ordinary route | `BLDG-012` + `BLDG-013` + `PUBLIC-006` | Work, rest and public exchange continue on the same route |
+| AI Origin / `ROAD-010` | Home - shade/stay - human help/learning - civic commons | **CARE PORCH**: opt-in navigation, service matching and care prompts attach to public ground floors and community interfaces | `BLDG-007` + `BLDG-009` + `PUBLIC-004` | Refusing login or data consent still reaches people, services and common life |
+| Dazhongsi / `ROAD-011` | Arrival - fixed wayfinding - staffed help - ordinary waiting/retail - Jing-Zhang public interface | **ARRIVAL SIDECAR**: dynamic translation, information and crowd assistance remain enhancements only | `BLDG-001` + `BLDG-002` + `PUBLIC-001` | Without an app or dynamic information, visitors can still orient, ask, wait and leave |
 
-![Invariant civic routes in three distinct urban types: campus court, neighborhood block and station-city hall](assets/figures/key-areas.en.png)
-<!-- V014-CORE-END -->
+The nine host features receive semantic properties only; their polygons do not change. The three routes receive sidecar relationships only; their LineStrings do not change. The six locked area metrics therefore remain untouched by this iteration. [metric:ai_sidecar_host_feature_count] [metric:sidecar_host_public_space_count]
+
+Dazhongsi remains **REAL LEVEL DATA REQUIRED**. The sidecar is a relationship-based arrival interface, not a fabricated station entrance, level, bridge/tunnel, corridor width, throughput or operating commitment. [data:geometry/key_areas.geojson#PROV-KEY-003]
+
+![AI OFF and AI ON use the same city: invariant routes stay fixed while sidecars appear laterally](assets/figures/key-areas.en.png)
+<!-- V015-CORE-END -->
 
 ## Design Basis and Source List
 
@@ -99,11 +107,11 @@ The public green spine and slow-mobility line form the north-south backbone. Six
 
 ## Detailed Design of Key Areas
 
-**Zhongzhiyuan: from R&D park to complete innovation campus (Courtyard & Porous Grid + Linear Test Spine).** Research, pilot testing, incubation and enterprise services remain central, but the public green spine, transverse walking, food/rest, community interfaces, public exchange and controlled test space must exist at the same time. The spatial morphology adopts a "courtyard porous grid + linear test spine", establishing a +15cm physical curb/hedge barrier separating the 3.5m shared robotics test envelope from the 2.0m unobstructed pedestrian corridor. Embodied-AI tests operate within clear, stoppable and auditable boundaries with mechanical retractable bollards for instant AI-OFF isolation; ordinary public circulation is never a default test track. [data:geometry/key_areas.geojson#PROV-KEY-001]
+**Zhongzhiyuan: complete innovation campus + TEST POCKET.** Research, pilot work, incubation and enterprise services remain central, but ordinary work, food/rest, the public green spine and open exchange must first form one legible daily chain. `ROAD-009` is the AI-independent host route. `BLDG-012`, `BLDG-013` and `PUBLIC-006` are sidecar hosts for stoppable tests, temporary equipment and replaceable service interfaces only. Real test boundaries, clearances, speeds, emergency-stop design, permits and safety performance require field survey and professional review; this proposal does not pre-set engineering values. [data:geometry/roads.geojson#ROAD-009] [data:geometry/buildings.geojson#BLDG-012] [data:geometry/public_space.geojson#PUBLIC-006]
 
-**AI Origin Community: long-term community and near-campus innovation together (Pocket Commons & Woonerf + Multi-generational Care Core).** Housing is not an accessory to “talent accommodation”. Long-term homes, childcare/education, community care, shared work, ordinary retail, green space and civic commons create a short-distance daily chain. The spatial morphology adopts fine-grained living streets (Woonerf) equipped with 1.8m continuous tactile and high-contrast guidance paving, supported by a "Zero-ID Community Service Desk" within a 400m walking radius offering staffed and paper-based services. Researchers may change projects, families will include children and older people, and service workers share the same public network. One residential area is named **Shuangfen Fortress Community / 爽粉堡垒社区**, but the name is only an easter egg: no fortress-shaped architecture, closed walls, road changes, density changes or functional changes follow from the name. [data:geometry/buildings.geojson#BLDG-007] [data:geometry/key_areas.geojson#PROV-KEY-002]
+**AI Origin Community: complete long-term neighborhood + CARE PORCH.** Homes, shared learning, human help, ordinary retail, green space and civic commons form an account-free everyday chain. `ROAD-010` remains the ordinary-city host route. Public-ground-floor and commons interfaces in `BLDG-007`, `BLDG-009` and `PUBLIC-004` host opt-in navigation, service matching and care prompts. Real accessibility dimensions, service catchments, staffing and response times require field and operating evidence; the proposal fixes only the rule that refusing login or data consent still reaches people and services on the same physical route. [data:geometry/roads.geojson#ROAD-010] [data:geometry/buildings.geojson#BLDG-007] [data:geometry/public_space.geojson#PUBLIC-004]
 
-**Dazhongsi: station-city, commerce and ordinary urban life together (Multi-level Transit Deck & Heritage Interface).** The southern area strengthens transfer, everyday retail, culture and public arrival. The spatial morphology builds a "multi-level transit deck and heritage continuous interface" featuring 100% visible static color-coded illuminated signs and app-free physical gating, maintaining $\ge 4.5\text{m}$ clear transfer corridor width and $\ge 2.5\text{m}$ signage vertical clearance. The provisional key-area rectangle is only a task locator and cannot serve as a real station-city engineering boundary. The three detailed designs differ because their physical spatial sections and urban capability gaps differ, not because they receive three visual themes. [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]
+**Dazhongsi: complete station-city arrival + ARRIVAL SIDECAR.** Ordinary arrival, fixed wayfinding, staffed help, waiting/retail and the Jing-Zhang public interface form the host. Dynamic translation, information and crowd assistance remain lateral enhancements to `ROAD-011`. `BLDG-001`, `BLDG-002` and `PUBLIC-001` are conceptual host relationships only. Because `PROV-KEY-003` has a known absolute-location risk, real station entrances, levels, bridges/tunnels, vertical circulation, corridor widths, passenger capacity, ownership and operations remain **REAL LEVEL DATA REQUIRED** rather than being fabricated from concept geometry. [data:geometry/roads.geojson#ROAD-011] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/key_areas.geojson#PROV-KEY-003]; additional evidence: [depth:three_key_area_detailed_design]
 
 Public exchange space accompanies all three tasks: an open exchange yard in Zhongzhiyuan, the AI Origin civic commons and a southern public interface. Each solves an everyday use first and takes on communication or landmark value second. [data:geometry/public_space.geojson#PUBLIC-004] [metric:public_space_count]
 
@@ -139,7 +147,7 @@ v0.7 no longer treats a reviewer index as the first visual. The three key areas 
 
 ### How AI Changes Urban Form, Not Just Screens
 
-The spatial effect of AI is reduced to six reversible prototypes: test pockets, accessible help nodes, continuous station-city arrival interfaces, replaceable small service nodes, people-first public ground floors, and a reversible spatial version chain—observe, bounded prototype, public/professional review, merge or rollback. This answers how AI changes spatial organization and planning method rather than merely attaching more digital interfaces to existing space.
+AI still changes urban form through six reversible prototypes: test pockets, accessible/human help nodes, continuous station-city arrival interfaces, replaceable service nodes, people-first public ground floors, and a reversible spatial version chain. v0.15.s regroups the first five into three legible interfaces—TEST POCKET, CARE PORCH and ARRIVAL SIDECAR—and writes their host features into geometry; the sixth becomes their shared physical version-management method. AI's spatial delta can therefore be located, switched off, removed and reviewed without redrawing the ordinary-city host. [metric:ai_sidecar_type_count] [metric:ai_sidecar_host_feature_count]
 
 ![How AI changes urban form: six reversible physical interfaces](assets/figures/ai-urban-form-change.en.svg)
 
@@ -159,27 +167,24 @@ v0.10 keeps the **design-first** hierarchy of the 86-point v0.7 baseline and abs
 All five response rules are machine-readable in `visual/assets/reality-constraint-register.json`. The fixed `mobility-bluegreen.en.png` is rebuilt to distinguish ordinary stitching, the underpass/vertical-continuity condition, people-first green-corridor frontage, station-city arrival, and the future official-data recomputation trigger.
 <!-- V09-REALITY-END -->
 
-<!-- V012-CONTRACTS-START -->
-### v0.14.s | INVARIANT CIVIC ROUTES: three public promises become three ordinary-city routes
+<!-- V015-SIDECAR-START -->
+### v0.15.s | AI SIDECAR CITY: give AI space without giving it urban sovereignty
 
-v0.14.s stops turning public promises into an increasingly elaborate state machine. It uses a simpler spatial contract: **the ordinary route becomes urban geometry first; AI may enter only from the side.** All three routes are conceptual `pedestrian` LineStrings with `ai_dependency=none`. They test whether the city remains the same city with AI off, rather than pretending that engineering design has already been completed. [metric:invariant_civic_route_count] [metric:critical_non_ai_route_coverage_ratio]
+v0.15.s adds neither a fourth route nor an AI-only land-use category. It regroups the six reversible AI urban-form prototypes from v0.7 into three legible sidecars: **TEST POCKET, CARE PORCH, and ARRIVAL SIDECAR**. Ordinary urban space is the host; AI changes only lateral interfaces, public-ground-floor relationships and replaceable service nodes. [metric:ai_sidecar_type_count] [metric:new_ai_land_use_code_count]
 
-| Key area | Invariant route | Urban type | Where AI may enter | Non-AI acceptance question |
-| --- | --- | --- | --- | --- |
-| Zhongzhiyuan / `ROAD-009` | work—meal/rest—green spine—public exchange | **campus courts + research ground floors + lateral test pockets** | test courts, service edges and replaceable nodes; never the ordinary main route | When testing is off, can researchers, students and service workers still complete work, rest and common life on the same route? |
-| AI Origin / `ROAD-010` | home—shade/seating—care/human help—community living room | **residential blocks + public ground floor + care court** | opt-in navigation, service matching and care prompts; basic services never require an account | Without login or personal-data consent, can residents still reach care, help and common life along the same physical route? |
-| Dazhongsi / `ROAD-011` | arrival edge—fixed wayfinding—human help—ordinary waiting/commerce—Jing-Zhang public interface | **station-city hall + waiting commerce + heritage public edge** | dynamic information, translation and crowd guidance; never a replacement for fixed signs and human help | Without an app and with dynamic screens unavailable, can visitors still find the way, ask for help, wait and leave on the same ordinary route? |
+| Sidecar | Reversible prototypes | Host features | AI OFF | Physical AI ON delta | Removal test |
+| --- | --- | --- | --- | --- | --- |
+| TEST POCKET | bounded test pocket + replaceable service node | `BLDG-012` / `BLDG-013` / `PUBLIC-006` | work, rest, green spine and public exchange remain continuous | stoppable test and temporary-equipment interfaces appear at side yards/service edges | remove the interface without relocating `ROAD-009` |
+| CARE PORCH | people-first public ground floor + accessible/human help node | `BLDG-007` / `BLDG-009` / `PUBLIC-004` | home, human help, learning and civic commons remain continuous | opt-in navigation/service-matching prompts attach to public ground floors | remove the interface without login and without relocating `ROAD-010` |
+| ARRIVAL SIDECAR | continuous arrival interface + fixed/human baseline | `BLDG-001` / `BLDG-002` / `PUBLIC-001` | fixed wayfinding, staffed help and ordinary waiting/retail remain continuous | dynamic translation and information assistance appear laterally | switch off the dynamic layer without relocating `ROAD-011` |
 
-![Overall structure and the three invariant civic routes](assets/figures/site-overview.en.png)
+The sixth prototype, the reversible spatial version chain, becomes a shared implementation method for all three sidecars: **observe → bounded sample → public/professional review → merge or roll back**. It manages detachable components, public-ground-floor interfaces, test boundaries and wayfinding layers as physical versions rather than as a software state machine. [metric:ai_sidecar_host_feature_count]
 
-#### How AI actually changes urban form
-The routes do not remove AI. They force it into six **reversible physical interfaces**: controlled test pockets, accessible/human help points, continuous station-city arrival interfaces, replaceable service nodes, people-first public ground floors, and rollback-ready spatial versions. AI planning innovation therefore appears as changed interface locations, ground-floor relationships, test boundaries and public-route geometry—not as more screens. [metric:reversible_urban_form_prototype_count]
+#### Two implementation paths remain
+**Path A | low-disturbance reversible actions:** shade, seating, fixed wayfinding, staffed-help interfaces, detachable test boundaries and modular service nodes can move through field survey, sample, review and expand/withdraw cycles. **Path B | formal-project-dependent actions:** building capacity, station-city vertical circulation, utilities, road engineering, fire safety, heritage and ownership require real project evidence, professional design and approval. [metric:implementation_path_count]
 
-#### Two implementation paths instead of fake engineering certainty
-**Path A | low-disturbance reversible actions:** shade, seating, fixed wayfinding, human-help interfaces, demountable test boundaries and modular service nodes can proceed through survey—sample segment—review—scale/withdraw. **Path B | formal-project-dependent actions:** building scale, station-city levels, utility capacity, road engineering, fire safety, heritage, ownership and permits require real project generation, professional design and administrative approval. [metric:implementation_path_count]
-
-Accountability stays at proposed-role level only: campus public-space/test management, community service/care stewardship, and station-city public-realm/wayfinding stewardship all require confirmation by real actors. Dazhongsi vertical continuity remains **REAL LEVEL DATA REQUIRED**; no bridge, tunnel, station entrance or multi-level deck alignment is fabricated.
-<!-- V012-CONTRACTS-END -->
+Responsibility remains at proposed-role level only. Dazhongsi vertical continuity stays **REAL LEVEL DATA REQUIRED**; no bridge/tunnel, station entrance, multi-level deck or engineering corridor parameter is fabricated.
+<!-- V015-SIDECAR-END -->
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 

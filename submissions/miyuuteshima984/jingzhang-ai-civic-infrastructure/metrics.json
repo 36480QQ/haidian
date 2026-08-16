@@ -553,10 +553,10 @@
         "assets/figures/key-areas.png",
         "geometry/roads.geojson"
       ],
-      "formula": "count(ICR-01..ICR-03)",
+      "formula": "count(ASC-01..ASC-03)",
       "confidence": "high",
       "assumptions": [
-        "Counts concept design promises, not completed field tests."
+        "Counts current v0.15.s AI SIDECAR CITY concept contracts, not completed field tests."
       ]
     },
     "invariant_civic_route_count": {
@@ -651,6 +651,76 @@
       "confidence": "high",
       "assumptions": [
         "Design typologies, not statutory zoning categories."
+      ]
+    },
+    "ai_sidecar_type_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(test_pocket, care_porch, arrival_sidecar)",
+      "confidence": "high",
+      "assumptions": [
+        "Internal design typologies, not statutory land-use or building categories."
+      ]
+    },
+    "ai_sidecar_host_feature_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(features with ai_sidecar_type among selected v0.15.s hosts)",
+      "confidence": "high",
+      "assumptions": [
+        "Counts conceptual host relationships only; no field-installed AI interface is claimed."
+      ]
+    },
+    "sidecar_host_public_space_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(PUBLIC-001, PUBLIC-004, PUBLIC-006 as sidecar hosts)",
+      "confidence": "high",
+      "assumptions": [
+        "Conceptual public-space host relations only."
+      ]
+    },
+    "ai_off_route_preservation_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "proposal.md"
+      ],
+      "formula": "invariant routes whose geometry is unchanged between AI OFF and AI ON / 3",
+      "confidence": "high",
+      "assumptions": [
+        "Design-rule test; not a field performance claim."
+      ]
+    },
+    "new_ai_land_use_code_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "proposal.md"
+      ],
+      "formula": "count(land-use codes created solely for AI in v0.15.s)",
+      "confidence": "high",
+      "assumptions": [
+        "AI is represented as an optional interface layer, not a new statutory land-use class."
       ]
     }
   }
