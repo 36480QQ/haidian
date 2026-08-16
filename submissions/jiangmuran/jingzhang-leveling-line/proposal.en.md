@@ -1475,27 +1475,7 @@ The fix is light and either half suffices: extend the enum to cover what the cor
 
 Motif detection uses Chinese keyword patterns and misses synonyms, so **every share above is a lower bound**; the corpus grows daily, so re-run before citing. **Applied to this proposal itself, that rule produced a stronger finding than any snapshot.** Five independent runs; the first four existed only in `changelog.md` — only on the author's word — and are now reconstructed from git history and shipped as `visual/assets/census_history.json`. **The rule does not exempt its author.**
 
-<!-- CENSUSHISTORY:BEGIN -->
-
-| Round | Corpus | Disclosure field empty |
-|---|---|---|
-| First | 184 | 29.9% |
-| Second | 215 | 30.7% |
-| Third | 228 | 30.3% |
-| Fourth | 298 | 29.2% |
-| Current reading | **793** | **18.2%** |
-
-<!-- CENSUSHISTORY:END -->
-
-**The reconstruction is not four for four, and the conclusion it carried was refuted by this package's own next reading.** Three of four rounds reproduce the recorded value; the gap sat in a 1.5-point band, 29.2% to 30.7%, that read as structural until the next census moved outside it, so the section is rewritten rather than defended. An earlier round of 354 at 29.9% appears in no reconstruction: it existed only in the prose.<!-- NUMERATOR:BEGIN -->
-
-**The numerator's behaviour is legible, and more interesting than the original claim.** Every census re-run commits a fresh `field_map.json`, so every reading this package has ever taken is in this branch's git history; `visual/assets/reading_log.json` recovers all of them — **17 readings**, corpus 228 to 793, placeholder counts 69 → 87 → 102 → 104 → 106 → 106 → 106 → 105 → 107 → 107 → 107 → 109 → 109 → 129 → 131 → 143 → 144; the placeholder count **fell 1 time(s)** along the way (106→105 at 373→381), which means existing proposals **were** edited. The longest unchanged run is **107**, held across 3 readings (corpora of 394 / 408 / 416).
-
-**The stock share and the marginal rate answer different questions, and only the second supports this paragraph's argument.** The largest single jump in the log is 440→678 (238 new proposals), across which the placeholder count rose by **20** — so roughly **8.4%** of newly merged proposals leave the field blank, against **18.2%** of the standing corpus. The share is falling mainly because **new entrants fill it in**, not because anyone went back and edited an old package. This reading only has power when the corpus jumps far enough, so the jump it is taken from is named.
-
-**This paragraph used to restate the count from memory** - four readings where the log has three, and a direction that was wrong as well. A number with no file behind it deforms in the retelling even when you measured it yourself; with the log built, it cannot. The full correction is in the errata register.
-
-<!-- NUMERATOR:END -->
+**The five re-runs of this field ship as `visual/assets/census_history.json` and `reading_log.json`, and anyone can re-run them.** This document used to carry the whole reconstruction as a section of its own; that section measured this package's instrument rather than Haidian or any scored dimension, and it has been withdrawn. The finding stays: **three of the four reconstructed rounds reproduce the recorded value exactly and one is a single package out, while a round of 354 at 29.9% this document once quoted appears in no reconstruction at all — it existed only in the prose.** A number with no file behind it deforms in the retelling even when you measured it yourself.
 
 ![FIG.02 Evidence chain and submission package: a leveling circuit not yet closed](assets/figures/evidence-circuit.en.png)
 
@@ -1835,7 +1815,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files, 1035 KB, 1,739 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.7 s**; 9 files, 1038 KB, 1,740 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

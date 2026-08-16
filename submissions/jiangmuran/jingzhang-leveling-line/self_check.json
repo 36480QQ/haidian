@@ -135,7 +135,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 87 zh / 87 en unit-carrying measurements in prose, same set in both editions; 188/174 bare numbers reported but not blocked, and one designed check (85 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 85 zh / 85 en unit-carrying measurements in prose, same set in both editions; 178/172 bare numbers reported but not blocked, and one designed check (79 candidates) not shipped"
     },
     {
       "check_id": "PKG_CLAIM_STATE_QA",
@@ -271,7 +271,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 57 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 93 bytes to spare. The package totals 40.0 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 57 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 1,727 bytes to spare. The package totals 40.0 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -287,7 +287,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "markdown_structure_qa.py — markdown structure: 119 tables across both editions, every separator and row matching its header, every ordered list strictly increasing"
+      "message": "markdown_structure_qa.py — markdown structure: 117 tables across both editions, every separator and row matching its header, every ordered list strictly increasing"
     },
     {
       "check_id": "PKG_MATRIX_REFS_QA",
