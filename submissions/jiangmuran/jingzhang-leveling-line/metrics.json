@@ -747,7 +747,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 205,
+      "value": 206,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -1157,13 +1157,13 @@
         "A-OSM-001"
       ],
       "evidence_class": "background_only",
-      "confidence_is_about": "reading",
-      "metric_class": 2,
+      "confidence_is_about": "computation",
+      "metric_class": "package_self_count",
       "measures": "existing_conditions",
-      "recalculation_trigger_zh": "新的 OSM 抽取或官方实测路网取代当前读数时重算。",
-      "recalculation_trigger_en": "A new OSM extract or an official surveyed network superseding this reading.",
+      "recalculation_trigger_zh": "新的 OSM 抽取或官方实测成果取代当前读数时重算；本包读数为众包数据，不作为法定依据。",
+      "recalculation_trigger_en": "A new OSM extract or an official survey superseding this reading. The reading is crowd-sourced and is not a statutory basis.",
       "verification_role_zh": "测绘与地理信息",
-      "verification_role_en": "Survey and geographic information",
+      "verification_role_en": "Survey and GIS",
       "note_zh": "以本包同一份 OSM 缓存建可步行图（步行可用的道路等级逐条写明，端点相距 12 m 以内视为同一节点），按测序顺序逐段最短路相加得 11,472 m，对照本方案画出的主脊 9,443 m——**今天走这一趟要多走 2,028 m，倍率 1.21**。这个差就是这条带要做的事：**一条不减少绕行的带子，什么也没有改变**。该数为下界——快速路辅路在本缓存里未单独标注，因此有些本可走的路没被算进来。",
       "note_en": "A walkable graph from this package's own OSM cache (the usable highway classes are listed in the script; endpoints within 12 m are one node), shortest path between each consecutive pair of benchmarks in survey order, summed: 11,472 m against the 9,443 m spine this proposal draws - **2,028 m further today, a factor of 1.21**. That difference is what the belt is for: a belt that removes no detour changes nothing. A lower bound - service roads beside trunk roads are not separately tagged in this cache, so some walkable ground is missing from the graph."
     }
