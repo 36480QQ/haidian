@@ -198,8 +198,8 @@ def load_boundary(repo_root: Path, stage: str) -> tuple[dict[str, Any], str, str
 def land_use_features(site_geom: Any) -> list[dict[str, Any]]:
     minx, miny, maxx, maxy = site_geom.bounds
     cuts = [
-        (minx, minx + (maxx - minx) * PARTITION_FRACTIONS[0], "0802", "AI研发创新用地"),
-        (minx + (maxx - minx) * PARTITION_FRACTIONS[0], minx + (maxx - minx) * PARTITION_FRACTIONS[1], "1401", "公园绿地与开敞空间"),
+        (minx, minx + (maxx - minx) * PARTITION_FRACTIONS[0], "0802", "科研用地"),
+        (minx + (maxx - minx) * PARTITION_FRACTIONS[0], minx + (maxx - minx) * PARTITION_FRACTIONS[1], "1401", "公园绿地"),
         (minx + (maxx - minx) * PARTITION_FRACTIONS[1], minx + (maxx - minx) * PARTITION_FRACTIONS[2], "09", "商业服务业用地"),
     ]
     generated = []
@@ -226,7 +226,7 @@ def land_use_features(site_geom: Any) -> list[dict[str, Any]]:
                 "LAND_USE",
                 remainder,
                 land_use_code="0702",
-                name_zh="社区服务与配套用地",
+                name_zh="城镇社区服务设施用地",
             )
         )
     return features
