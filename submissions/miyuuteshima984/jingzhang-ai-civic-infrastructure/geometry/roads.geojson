@@ -265,7 +265,16 @@
         "ai_off_state": "ordinary_route_geometry_unchanged",
         "ai_on_delta": "sidecar_interfaces_only_route_geometry_unchanged",
         "route_geometry_changes_when_ai_on": false,
-        "sidecar_policy": "AI may attach laterally but may not become a gate or reroute the ordinary journey"
+        "sidecar_policy": "AI may attach laterally but may not become a gate or reroute the ordinary journey",
+        "sidecar_lifecycle": [
+          "base_city",
+          "attach_optional",
+          "operate_reviewable",
+          "clean_exit_restore"
+        ],
+        "clean_exit_route_preserved": true,
+        "clean_exit_route_rule": "ordinary route geometry and public task chain remain invariant from base city through clean exit",
+        "field_check_required": true
       },
       "geometry": {
         "type": "LineString",
@@ -323,7 +332,16 @@
         "ai_off_state": "ordinary_route_geometry_unchanged",
         "ai_on_delta": "sidecar_interfaces_only_route_geometry_unchanged",
         "route_geometry_changes_when_ai_on": false,
-        "sidecar_policy": "AI may attach laterally but may not become a gate or reroute the ordinary journey"
+        "sidecar_policy": "AI may attach laterally but may not become a gate or reroute the ordinary journey",
+        "sidecar_lifecycle": [
+          "base_city",
+          "attach_optional",
+          "operate_reviewable",
+          "clean_exit_restore"
+        ],
+        "clean_exit_route_preserved": true,
+        "clean_exit_route_rule": "ordinary route geometry and public task chain remain invariant from base city through clean exit",
+        "field_check_required": true
       },
       "geometry": {
         "type": "LineString",
@@ -385,7 +403,16 @@
         "ai_off_state": "ordinary_route_geometry_unchanged",
         "ai_on_delta": "sidecar_interfaces_only_route_geometry_unchanged",
         "route_geometry_changes_when_ai_on": false,
-        "sidecar_policy": "AI may attach laterally but may not become a gate or reroute the ordinary journey"
+        "sidecar_policy": "AI may attach laterally but may not become a gate or reroute the ordinary journey",
+        "sidecar_lifecycle": [
+          "base_city",
+          "attach_optional",
+          "operate_reviewable",
+          "clean_exit_restore"
+        ],
+        "clean_exit_route_preserved": true,
+        "clean_exit_route_rule": "ordinary route geometry and public task chain remain invariant from base city through clean exit",
+        "field_check_required": true
       },
       "geometry": {
         "type": "LineString",

@@ -722,6 +722,63 @@
       "assumptions": [
         "AI is represented as an optional interface layer, not a new statutory land-use class."
       ]
+    },
+    "sidecar_lifecycle_stage_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(base_city, attach_optional, operate_reviewable, clean_exit_restore)",
+      "confidence": "high",
+      "assumptions": [
+        "Internal spatial lifecycle, not an approved project procedure."
+      ]
+    },
+    "clean_exit_host_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(selected sidecar hosts with clean_exit_required=true)",
+      "confidence": "high",
+      "assumptions": [
+        "Counts conceptual host relationships; no installed AI asset is claimed."
+      ]
+    },
+    "clean_exit_restore_use_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "hosts with non-empty ordinary_restore_use / clean_exit_host_count",
+      "confidence": "high",
+      "assumptions": [
+        "Coverage proves design documentation only; field restoration performance is not measured."
+      ]
+    },
+    "clean_exit_route_preservation_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "invariant civic routes with clean_exit_route_preserved=true / 3",
+      "confidence": "high",
+      "assumptions": [
+        "Conceptual route geometry only; not an engineering alignment."
+      ]
     }
   }
 }
