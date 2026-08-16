@@ -13,7 +13,7 @@
  "counts": {
   "background_only": 11,
   "provisional": 17,
-  "self_measured": 14,
+  "self_measured": 18,
   "official_context": 4,
   "regulatory_baseline": 0
  },
@@ -493,6 +493,50 @@
    "how_to_raise": "由权威源替换（官方几何、组织方登记表），或由第三方独立复算后升级",
    "confidence": "medium",
    "confidence_is_about": "computation"
+  },
+  "scenario_closure_error_f": {
+   "evidence_ceiling": "self_measured",
+   "binding_inputs": [
+    "visual/assets/scenario_cards.json",
+    "visual/assets/role_spec.json"
+   ],
+   "why": "本包自定义的场景卡",
+   "how_to_raise": "无需升级：它测的就是本包自身，不对外声称",
+   "confidence": "unknown",
+   "confidence_is_about": "reading"
+  },
+  "tolerance_pass_rate": {
+   "evidence_ceiling": "self_measured",
+   "binding_inputs": [
+    "visual/assets/scenario_cards.json",
+    "visual/assets/role_spec.json"
+   ],
+   "why": "本包自定义的场景卡",
+   "how_to_raise": "无需升级：它测的就是本包自身，不对外声称",
+   "confidence": "unknown",
+   "confidence_is_about": "reading"
+  },
+  "non_ai_path_coverage": {
+   "evidence_ceiling": "self_measured",
+   "binding_inputs": [
+    "visual/assets/scenario_cards.json",
+    "visual/assets/role_spec.json"
+   ],
+   "why": "本包自定义的场景卡",
+   "how_to_raise": "无需升级：它测的就是本包自身，不对外声称",
+   "confidence": "unknown",
+   "confidence_is_about": "reading"
+  },
+  "resident_initiated_remeasurement_count": {
+   "evidence_ceiling": "self_measured",
+   "binding_inputs": [
+    "visual/assets/scenario_cards.json",
+    "visual/assets/role_spec.json"
+   ],
+   "why": "本包自定义的场景卡",
+   "how_to_raise": "无需升级：它测的就是本包自身，不对外声称",
+   "confidence": "unknown",
+   "confidence_is_about": "reading"
   }
  }
 }

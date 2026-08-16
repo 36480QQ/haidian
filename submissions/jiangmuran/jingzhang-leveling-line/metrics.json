@@ -747,7 +747,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 217,
+      "value": 218,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -1206,7 +1206,10 @@
       "formula": "closure_error(scenario, cycle) per scenario_cards.json f_formula",
       "confidence": "unknown",
       "assumptions": [],
-      "assumption_ids": [],
+      "assumption_ids": [
+        "A-CLOSURE-001",
+        "A-CLOSURE-002"
+      ],
       "evidence_class": "self_measured",
       "confidence_is_about": "reading",
       "metric_class": 3,
@@ -1241,7 +1244,10 @@
       "formula": "cycles_with_f_le_F / cycles_run",
       "confidence": "unknown",
       "assumptions": [],
-      "assumption_ids": [],
+      "assumption_ids": [
+        "A-CLOSURE-001",
+        "A-CLOSURE-002"
+      ],
       "evidence_class": "self_measured",
       "confidence_is_about": "reading",
       "metric_class": 3,
@@ -1276,7 +1282,10 @@
       "formula": "scenarios_with_non_ai_equivalent / scenarios_operating",
       "confidence": "unknown",
       "assumptions": [],
-      "assumption_ids": [],
+      "assumption_ids": [
+        "A-CLOSURE-001",
+        "A-CLOSURE-002"
+      ],
       "evidence_class": "self_measured",
       "confidence_is_about": "reading",
       "metric_class": 3,
@@ -1311,7 +1320,10 @@
       "formula": "count(remeasurement_requests where initiator in P4/P5/P7)",
       "confidence": "unknown",
       "assumptions": [],
-      "assumption_ids": [],
+      "assumption_ids": [
+        "A-CLOSURE-001",
+        "A-CLOSURE-002"
+      ],
       "evidence_class": "self_measured",
       "confidence_is_about": "reading",
       "metric_class": 3,

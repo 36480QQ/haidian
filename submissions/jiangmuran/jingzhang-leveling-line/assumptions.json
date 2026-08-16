@@ -94,9 +94,13 @@
       "if_wrong_zh": "若首轮试验的 f 远超预期限差，机制的应答是**整段退回复测并降级为无AI等价服务**——这正是它设计出来要做的事，不是它的失败。真正会推翻本方案的结果是：**f 无法被稳定测出**（不同主体读数不可比），那说明限差口径本身没定义好。",
       "what_would_close_it_zh": "首轮闭合试验运行满一个复测周期并公开读数。",
       "affects_metrics": [
-        "benchmark_count"
+        "benchmark_count",
+        "non_ai_path_coverage",
+        "resident_initiated_remeasurement_count",
+        "scenario_closure_error_f",
+        "tolerance_pass_rate"
       ],
-      "affects_metric_count": 1,
+      "affects_metric_count": 5,
       "owner": "operator_after_award",
       "next_action_zh": "须由实施主体在授标后运行首轮闭合试验满一个复测周期并公开读数——投标阶段无法产生这个数，本包不假装有。",
       "next_action_en": "An operating body must run the first closure trial for a full re-survey cycle after award and publish the readings. No submission stage can produce this number, and this package does not pretend to have it.",
@@ -114,8 +118,13 @@
       "derivation_en": "This is the **most fragile assumption in the mechanism**, which is why it stands alone. For closure error to mean anything, the parties reading at each benchmark must be independent; if all four review categories are staffed by one institution, or use one question set and one model, the closure error shrinks systematically — **the mechanism reports \\u201cwithin tolerance\\u201d having measured nothing.**",
       "if_wrong_zh": "若独立性不成立，**本方案的核心量纲失效**，且失效方式是隐蔽的：f 会偏小而非偏大，所以看起来一切正常。这是本方案自己指出的、无法靠内部检查发现的失效模式——唯一的应答是把读数主体的构成也公开留档，供外部判断独立性是否成立。**本方案不声称已解决这一条。**",
       "what_would_close_it_zh": "把每次读数的主体归属公开留档，并由外部对独立性作独立判断——这不是一次性可闭合的假设，而是须持续监测的一条。",
-      "affects_metrics": [],
-      "affects_metric_count": 0,
+      "affects_metrics": [
+        "non_ai_path_coverage",
+        "resident_initiated_remeasurement_count",
+        "scenario_closure_error_f",
+        "tolerance_pass_rate"
+      ],
+      "affects_metric_count": 4,
       "carries_no_metric_note_zh": "**本包没有任何已发布的数字建立在这条假设上。** 这不是疏漏，是这条假设的性质：它若失效，`metrics.json` 里不会有任何一个值改变，因此**任何对数字的检查都抓不到它**。上面的 `if_wrong_zh` 说明了失效会长什么样；能发现它的只有外部判断，不是本包的闸门。把它单列并写明这一点，是本方案能对它做的全部。",
       "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it.",
       "owner": "permanently_open",
