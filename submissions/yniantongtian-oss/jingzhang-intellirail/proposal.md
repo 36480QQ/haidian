@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗产公共空间为主轴，构建一轴三核两翼多点的创新带；用可复算的临时空间图层、十二类AI+场景、三类验证沙盒和长期运营闭环，把产业创新、日常生活与百年铁路文脉组织为同一套城市设计。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.10"
+iteration: "v1.11"
 ---
 
 # 京张智轨：百年京张AI创新带城市设计

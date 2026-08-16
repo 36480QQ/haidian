@@ -1,5 +1,10 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.11 - 2026-08-17
+
+- 中英结构硬对齐：三个重点区英文版改为与中文一致的 ### 小节标题并采用术语表全称；英文版补入面向读者的约数（11.41 平方公里/12.34%/7.33%/约 31.08 万平方米）。程序化审计确认 33 个证据锚点序列一致、5 张图位一致。
+  Hard-aligned bilingual structure: the three key areas now use ### headings in English with full glossary names; reader-facing rounded figures were added to the English text. A programmatic audit confirms identical 33-anchor sequences and matching figure positions.
+
 ## v1.10 - 2026-08-17
 
 - 过程叙述改状态陈述（“由提交者在本次工作流中形成”→“是本提交的原创成果”）；英文版章节标题与首现术语对齐术语表（Demolish–Renovate–Retain、Walking and Cycling Network）。
