@@ -501,6 +501,7 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             ]
             self.assertEqual(1, len(commercial))
             self.assertEqual("09", commercial[0]["properties"]["land_use_code"])
+            self.assertEqual("商业服务业用地", commercial[0]["properties"]["name_zh"])
             self.assertNotIn(
                 "05",
                 {
