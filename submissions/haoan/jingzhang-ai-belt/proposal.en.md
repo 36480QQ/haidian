@@ -103,6 +103,8 @@ Synergy loop (concept): **Origin Core generates → Innovation Cortex accelerate
 
 All regional mechanisms are concepts: joint scenario releases, talent outposts, computing scheduling protocols (concept).
 
+![Regional synergy network](assets/figures/network-synergy.en.png)
+
 ### Future City Form
 
 Four "adaptations" are proposed for an AI new-quality productive forces city form: spatial adaptation (test beds, computing infrastructure, flexible industry space), lifestyle adaptation (15-minute AI Spine living circles, AI+ public services), governance adaptation (city agents, data spaces, human review), and cultural adaptation (open-source culture, commemoration systems). AI+ transport combines rail connection, slow-traffic priority, and low-speed autonomous shuttles; the continuous green system uses the AI Spine Corridor as its backbone, linking the Xiaoyuehe and Qinghe directions into a park-city blue-green skeleton [depth:overall_spatial_structure].
@@ -208,9 +210,17 @@ Scenario-space-operation mapping follows "**open scenarios, data minimization, h
 
 - **Three-tier data governance**: public data (open, compliant release), enterprise data (authorized, anonymized), personal data (minimized, localized, anonymized); collection/storage/use/destruction boundaries written into scenario operating contracts (concept)
 - **Scenario-open filing process**: application → safety assessment (privacy+ethics+public safety) → filing and disclosure → scoped trial → monitored operation (human sampling + data audit) → formal rollout or exit
+
+![AI scenario open lifecycle](assets/figures/scenario-lifecycle.en.png)
 - **Human review committee** (concept): resident representatives, experts, enterprises, universities, government; quarterly reviews, complaint handling, expansion/termination decisions
 - **AI content labeling**: AI-generated content (guides, consultations, publicity) carries unified labels and provenance per generative-AI rules [standard:GENERATIVE-AI-INTERIM-MEASURES]
 - **Algorithm audit**: periodic audits and emergency human-takeover plans for high-impact scenarios (transport, safety, health)
+
+### AI Governance International Discourse (concept directions)
+
+Building on the governance lab and international event matrix, a three-level leap from "local practice → standard output → international co-building" (concept): ① **local validation** — scenario filing, algorithm audits, and three-tier data governance piloted in Haidian; ② **standard output** — mature practices distilled into group/industry standard proposals (directional); ③ **international co-building** — explore participation in international AI-governance standards and evaluation benchmarks.
+
+Three concept mechanisms: ① **Jing-Zhang AI Urban Governance Benchmark** (concept) — globally solicit governance evaluation indicators for AI urban scenarios (fairness, transparency, explainability, privacy), publish annual reports; ② **international scenario mutual-recognition exploration** (concept) — explore mutual recognition of scenario test results with overseas innovation districts to lower cross-border compliance costs; ③ **Global AI City Open-Source Summit** (concept) — annual Jing-Zhang Declaration plus a global "Best AI Urban Scenario" award linked to the OMP Diamond tier. Spatial carriers (concept): governance lab (Origin Core segment, compliance-review and algorithm-audit spaces), summit venue (Milestone Plaza + heritage station building), benchmark data at the city-agent center. All conceptual; no government arrangements or international commitments.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -248,6 +258,37 @@ Industry-innovation totals ~48% and livability support ~52%; this ratio is a **b
 
 - **New infrastructure** (concept): edge-computing nodes (edge compute boxes inside AI Spine Nodes), distributed PV and storage, smart light poles (lighting + sensing + comms), public data space
 - **Municipal integration**: rain gardens and sponge blocks, power-computing coordination (pending municipal studies) [depth:municipal_new_infrastructure]
+
+### Edge-Computing Infrastructure Layout (1+3+N System, concept)
+
+AI-belt computing demand is high-frequency, low-latency, distributed, and tightly scenario-bound; large centralized data centers do not fit a dense urban core. This proposal conceptually adopts a **"1+3+N" edge-computing system**:
+
+| Tier | Carrier | Count (concept) | Siting principle (concept) | Service radius (concept) |
+|---|---|---|---|---|
+| 1 | City-agent center | 1 | Zhongzhiyuan, near existing substation/computing-room conditions | Belt-wide dispatch |
+| 3 | Regional computing hubs | 3 | Inside the three cores, near rail stations and substations | 2-3 km |
+| N | AI Spine Node edge compute boxes | 12-15 | Along the corridor every ~800 m, reusing existing auxiliary buildings or municipal facilities | 800 m |
+
+Node siting principles (concept): ① **power proximity** — each node near existing distribution facilities, prioritizing retrofitting existing railway electrical facilities; ② **utility co-trenching** — computing conduits (fiber + cooling) share municipal utility tunnels to avoid re-excavation; ③ **scenario binding** — each node bound to at least one surface AI scenario (delivery stops, roadside units, smart light-pole clusters), closing the "localized computing, perceivable scenarios" loop. Nodes are modular light structures (concept volumes, pending municipal and safety studies) [depth:municipal_new_infrastructure].
+
+![AI Spine corridor concept section (schematic)](assets/figures/section-concept.en.png)
+
+### Digital-Twin Mapping Framework (concept)
+
+| Physical layer | Twin layer | Data source (compliant) | Update cadence (concept) |
+|---|---|---|---|
+| Buildings & parcels | LOD2 white models + attributes | Official public data + OSM | Quarterly |
+| Roads & traffic | Network topology + real-time flow | Open traffic data (anonymized) | Real-time / 5 min |
+| Blue-green space | Vegetation + microclimate | Public remote sensing + weather | Monthly |
+| Computing facilities | Rack load + energy + temperature | Node IoT (compliant) | Real-time |
+| Human activity | Anonymized heatmaps (aggregated) | Compliant aggregated data | Hourly |
+| Scenario operations | Scenario state machine (filing/testing/operation/exit) | Operations platform API | Real-time |
+
+Mapping rules (concept): each concept spatial node carries a unique `twin_id`; scenario-card test boundaries double as digital-twin geo-fences; physical changes sync to the twin within a reasonable period with automatic validation. All conceptual; data collection follows privacy and compliance requirements [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+
+- **New infrastructure** (concept): edge-computing nodes (edge compute boxes inside AI Spine Nodes), distributed PV and storage, smart light poles (lighting + sensing + comms), public data space
+- **Municipal integration**: rain gardens and sponge blocks, power-computing coordination (pending municipal studies) [depth:municipal_new_infrastructure]
 - **Public services**: AI talent service hall, founder apartments, international community services, education/health facilities balanced along the axis
 
 ## Blue-Green Network, Public Space, and Urban Character
@@ -271,6 +312,23 @@ Supporting **AI Spine Node** public-space component library (shade pergolas, win
 - **New-economy workers**: rider/driver services at AI Spine Nodes (charging, water, rest, first aid)
 - **Low-cost innovation space**: founder apartments and shared workstations to control living costs for innovators
 - **Marginalized-group participation**: reserved seats for residents (incl. elderly) and persons with disabilities in scenario reviews and renewal participation
+
+### Open Milestone Pass (OMP)
+
+**Concept**: convert the Jing-Zhang Railway "milestone" cultural symbol into an open-source contribution certification and spatial-entitlement system for the AI era, giving developers, enterprises, and residents who contribute to the belt tangible recognition in physical space (concept mechanism, not a government arrangement).
+
+**Contribution certification** (concept): four contribution types — code (merged PRs to open-source repos), scenarios (proposals adopted and validated through testing), community (events/docs/translation/mentoring), spatial (co-building public spaces); certifiers: the AI Spine operating company and a developer-community committee (with resident representatives); unique IDs use GitHub ID/ORCID, written into the contributor field; milestone credits computed by community tooling after PR merge (concept flow).
+
+**Four milestone tiers** (echoing the railway's milestone culture):
+
+| Tier | Certification (concept) | Spatial entitlement (concept) |
+|---|---|---|
+| Bronze Sleeper | ≥10 hours or 1 merged PR | Free node compute hours + digital wall inscription |
+| Silver Spike | ≥50 hours or scenario passed testing | Reserved node workstation + festival VIP + physical nameplate |
+| Golden Rail | ≥200 hours or scenario in formal operation | Permanent scenario-card display + plaza inscription |
+| Diamond Junction | Annual outstanding contribution (≤5/year) | AI Spine Medal + observer seat in annual planning review |
+
+**Spatial carriers** (concept): AI Spine Node digital/entity nameplate walls, bronze/silver/gold stele in Milestone Park (railway-milestone style), scenario-card boards in the Open-Source Gallery, annual festival awards. Nameplates carry GitHub ID + contribution summary + QR code to the open-source repo; all conceptual, physical construction subject to approval and actual implementation [agent.4].
 
 ### Urban Character and Climate Adaptation
 
@@ -329,6 +387,14 @@ Pilot principles: **small scope, measurable, exitable, scalable**; none alter st
 - **Conversion pathway**: a four-stage event→scenario→space→policy pathway with end-to-end tracking of talent, enterprises, and developers [agent.6]
 
 All event, investment, policy, and operation arrangements are **concept proposals and deepening directions**, not confirmed government arrangements.
+
+### Operating Actors and Funding Model (concept framework)
+
+**Triangle operating model** (concept): ① **government guidance layer** (Haidian District / Zhongguancun Science City Administrative Committee) — planning approval, policy supply, public-space stewardship, data opening; ② **park operating layer** (AI Spine operating company, mixed-ownership concept) — scenario filing, space matching, computing dispatch, event and brand operations; ③ **developer co-creation layer** (open-source community / universities / enterprises / individuals) — scenario proposals, technical validation, content production, community governance. Governance structure (concept): government, social capital, and developer-community representatives jointly participate in operating decisions.
+
+**Scenario-open revenue directions**: scenario testing fees, compliant anonymized data services, event and brand income, and node naming rights are used to **replenish node operation and the community fund** (specific ratios and pricing determined by the operator per law; no calculation in this proposal); OMP incentives are realized through computing subsidies and scenario revenue shares (concept). **No investment calculations, return commitments, or budget arrangements.**
+
+**Phased funding focus (concept)**: pilot period (government special funds + urban renewal fund direction) → growth period (operating income + social capital direction) → maturity period (scenario revenue + brand output direction). All are directional concepts; actual arrangements subject to official approval.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
