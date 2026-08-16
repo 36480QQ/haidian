@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "0b2fe71df923718f38fef1b262f15a8563b4aabee74dfa251affe8760e1b83b2"
+      "sha256": "c64776d267e0c4599373813c5c047a4f81480b248f612058c6c84f2931ed7807"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5e847d0b171a05e6d1cbec17716ad58dca1ab6578f3f6a6dbd6642ad6e7d30a2"
+      "sha256": "5b390af35729695f440324f62350b7e3818a55f68fc8aa1edb50df5d882ec5ad"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "624cd3ef40a2283870a9b87df3c3bc6ebf69cd5de9702ecaf94037add0907cb4"
+      "sha256": "285143b7f59865dbf43650a832e2fe75d8242b152909921689fe89f04c118687"
     },
     {
       "path": "report/narrative.md",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ed827edfe90543f3fb15b2c25993245afc69878e70d3b3f1d8902812d20619eb"
+      "sha256": "6db248adb6fa5cd5ca8e79535c4517e29a3efd0375d612829fdc1efdcdcf610a"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "909bc89fb228971b5b0298a78da4a2736f0d6fe2284a528237a76006ee2e0f0d"
+      "sha256": "d59fac706d8b0133ef5ee3f751e9352ecdb6dcef038c8077285ac5a06b5dc027"
     },
     {
       "path": "visual/index.html",
@@ -128,7 +128,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "dc1277dec7ce699557e5a5114d91d57e218b70e9b72900cbdede48bf0fe8ae49"
+      "sha256": "25b895d29c0e3d7442a54b5ba17054fa8ea536bb88f168ae9f90739d24dae609"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -179,7 +179,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "daec26e10c5feee3d383512fb3fd48268a274dfdf94d7e16c747dcfc960dd75b"
+      "sha256": "234d02262fdbf9a9ddb42389d6503ded3df96c2de793d0f6a83249b04adb6028"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "67f4e1a2bbbfbe77665fea49ac928333504d26ee51dc5135a5b4710888bb6cd4"
+      "sha256": "5018ed53b344149a1f191276264b528510a974136c8a76216fabf12e58f20974"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "463b52f5d6f182b52e6e57cab56ad3094b63e7f323bf548a8a03d6b615fc7175"
+      "sha256": "8ed64c2cc880c745104cc65f45293139de11469a6f10f9d4321d4fc606811731"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "b274541329c6736bda4b5310a58f1941842d12b3456022571dea8c78c6ff4d9e"
+      "sha256": "ff8e59f8ac6cf6451e3bafde4a0ad58ee2f76818dab6b15b4dd35bb6ffe0cc5e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "3be50fb99292d758aad09dc69339519762a5e96387d4e447c34a0d9ab78c7a3d"
+      "sha256": "a4196a32451a26cee1927dad24de612a4e9216bf09b8526171b9c4e2b3294d69"
     },
     {
       "path": "visual/index.en.html",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "859f4be96dffb4cd8b5b575fc3aedd9be68a4ada6a96fb038cc40e40d7617e15"
+      "sha256": "3d0553a00623d7e0959be8ff42bc85f3c58dcf442d22df89ba1d74655c5a8624"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -383,7 +383,7 @@
       "role": "drawing",
       "required": false,
       "language": "zh",
-      "sha256": "90583fe92d9c4ae852310081a496d189414adde771dde6771c7ed2cc5b803191",
+      "sha256": "74bb6a3cf5a5976fc31e6024b1cda1e008697e22686965503be7b7ab245e56f5",
       "title_zh": "区位与总体范围图",
       "title_en": "Location & Overall Scope",
       "description_zh": "矢量规划图则：区位与总体范围图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -394,7 +394,7 @@
       "role": "drawing",
       "required": false,
       "language": "en",
-      "sha256": "b57a45eee8e9abc351f5c7a585f796350a977b833417ab396d6c9ef930ce5015",
+      "sha256": "757c474c0065797045b8e6a6beb67fd35eed312a85e4c1cb249867874c6d4616",
       "title_zh": "区位与总体范围图",
       "title_en": "Location & Overall Scope",
       "description_zh": "矢量规划图则：区位与总体范围图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -406,7 +406,7 @@
       "role": "drawing",
       "required": false,
       "language": "zh",
-      "sha256": "2a67db0f4ac305b58a5a0b7b9a9f1f786f77ca7d983bf08198ac6d61bb12d896",
+      "sha256": "174d7facf00e4847c6aa7d305b036fb66b22df96e869fb4f7ec4e6b423afdfc2",
       "title_zh": "现状约束与既有网络图",
       "title_en": "Existing Constraints & Networks",
       "description_zh": "矢量规划图则：现状约束与既有网络图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -417,7 +417,7 @@
       "role": "drawing",
       "required": false,
       "language": "en",
-      "sha256": "773e7176940629077ba2efe069d0df5a654f4bde768bee745a61c02c953b003c",
+      "sha256": "1d9a6ebf00f710aaf474b4d2d95427bfff6d4641fb090ca09d0417f4f7e59d8b",
       "title_zh": "现状约束与既有网络图",
       "title_en": "Existing Constraints & Networks",
       "description_zh": "矢量规划图则：现状约束与既有网络图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -429,7 +429,7 @@
       "role": "drawing",
       "required": false,
       "language": "zh",
-      "sha256": "71a2ae310feda106ad6ac7e822ff6611b0865489e0fa094d691ee48f99b3a6c4",
+      "sha256": "eeaa4c833bc23f0592112b1f15338606a13cb90ba247e51bbbe343a987c056be",
       "title_zh": "用地规划图（GB 50137-2011）",
       "title_en": "Land-Use Plan (GB 50137-2011)",
       "description_zh": "矢量规划图则：用地规划图（GB 50137-2011）（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -440,7 +440,7 @@
       "role": "drawing",
       "required": false,
       "language": "en",
-      "sha256": "15fe0afd3ff22be1e0c935d1bc39bc7652d50b0a7f6bb10cf79da71392bbba2d",
+      "sha256": "4dde99a571daebe037bb011dade6d0267cc2e1349381db76d70d294ab4c626c2",
       "title_zh": "用地规划图（GB 50137-2011）",
       "title_en": "Land-Use Plan (GB 50137-2011)",
       "description_zh": "矢量规划图则：用地规划图（GB 50137-2011）（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -452,7 +452,7 @@
       "role": "drawing",
       "required": false,
       "language": "zh",
-      "sha256": "79b82ea3872517e107b4d36d90b138c26cee97ef163a6231c42ab55c2c7b1636",
+      "sha256": "ad993372509c748a27c6d09f6a580fd1ad2c68b49609762d569d3b9852c6ed86",
       "title_zh": "空间结构图",
       "title_en": "Spatial Structure",
       "description_zh": "矢量规划图则：空间结构图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -463,7 +463,7 @@
       "role": "drawing",
       "required": false,
       "language": "en",
-      "sha256": "ea641e7553fa56a67bc4d6b954693fc16cfbc9ef8ffe315ab2ec403723a2b2c3",
+      "sha256": "792b6ada48d48d4977dd8c151fcf6efbb08d85c771cafd85b6005b0945bd8f70",
       "title_zh": "空间结构图",
       "title_en": "Spatial Structure",
       "description_zh": "矢量规划图则：空间结构图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -475,7 +475,7 @@
       "role": "drawing",
       "required": false,
       "language": "zh",
-      "sha256": "222322db6616c2b85b7ba3938facf94258a0e666c9d3addad138f7aeb9649cf1",
+      "sha256": "30160d8d5278dea29a2ddd20dea517a751ae9c5f894f5a3cf214c16d82227c20",
       "title_zh": "三处重点区总平面图",
       "title_en": "Three Key Areas Site Plans",
       "description_zh": "矢量规划图则：三处重点区总平面图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -486,7 +486,7 @@
       "role": "drawing",
       "required": false,
       "language": "en",
-      "sha256": "eaf471d33e151a8349dd6a3a8fee591be66bf5baad4a5a16e9427578b55aca01",
+      "sha256": "1f09054319777cbf61e2af5382d46637dcdf377e501d54e753a397af361f8960",
       "title_zh": "三处重点区总平面图",
       "title_en": "Three Key Areas Site Plans",
       "description_zh": "矢量规划图则：三处重点区总平面图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -498,7 +498,7 @@
       "role": "drawing",
       "required": false,
       "language": "zh",
-      "sha256": "3d00d33bbc09ab9853c67a4dfc985064e21197f0d3486e5f0fde0c2b47b7f889",
+      "sha256": "d18cf942d578605671ff373f5f794909b29d0d10c8c941e4ec41466cf2924117",
       "title_zh": "绿地与公共空间系统图",
       "title_en": "Green & Public Space System",
       "description_zh": "矢量规划图则：绿地与公共空间系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -509,7 +509,7 @@
       "role": "drawing",
       "required": false,
       "language": "en",
-      "sha256": "b3e4826c1bc739e732ca30cea1b982b8a666dd9dae37bc3cbefef3de1c18a69e",
+      "sha256": "5a61063ba5cb627c8a91fa0665ef80c41d5dc1328e4f6e59764a41bf0b973a7b",
       "title_zh": "绿地与公共空间系统图",
       "title_en": "Green & Public Space System",
       "description_zh": "矢量规划图则：绿地与公共空间系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -521,7 +521,7 @@
       "role": "drawing",
       "required": false,
       "language": "zh",
-      "sha256": "835e8658cc99c4b478e85c9700f0e413546d15dd2e3d747187b93378965282cd",
+      "sha256": "8e95fe5f9d888a303b714045464bf0c77e4331b945e3afcb3889ab64722b1b05",
       "title_zh": "交通与慢行系统图",
       "title_en": "Mobility & Slow-Traffic System",
       "description_zh": "矢量规划图则：交通与慢行系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -532,7 +532,7 @@
       "role": "drawing",
       "required": false,
       "language": "en",
-      "sha256": "f10cf971a532e96926d2f7e547cccff5b07b0af5a635ef769a5115c018ec3c80",
+      "sha256": "976f2ff2d77d67c2e8e43a2badb3186daa6b424752840ccdfe15ae4ec975f7d1",
       "title_zh": "交通与慢行系统图",
       "title_en": "Mobility & Slow-Traffic System",
       "description_zh": "矢量规划图则：交通与慢行系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -544,7 +544,7 @@
       "role": "drawing",
       "required": false,
       "language": "zh",
-      "sha256": "0e2e9b52385dfefca9a861ad4a15da8898fc0445a050d871e76cddb8b7a5c1a0",
+      "sha256": "55b3765fc511064b9b2b6746c470a427f62bdf0be1fc1e9651994d8a2a6acb0e",
       "title_zh": "分期实施图",
       "title_en": "Phased Implementation",
       "description_zh": "矢量规划图则：分期实施图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -555,7 +555,7 @@
       "role": "drawing",
       "required": false,
       "language": "en",
-      "sha256": "746c9cc02b9945eaf384b5e24ce8b77c06abdef11d51abd3e165f9125a0b004b",
+      "sha256": "9dbf43c3728cbce23ca51813f516f2009072f1dbd18d1656b78bb86ac64c0e94",
       "title_zh": "分期实施图",
       "title_en": "Phased Implementation",
       "description_zh": "矢量规划图则：分期实施图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -567,7 +567,7 @@
       "role": "drawing",
       "required": false,
       "language": "zh",
-      "sha256": "79c54a8013c33535b885c28ed6a9477b3569fd3db3bbfb68c3bd3fdb164cdc94",
+      "sha256": "b1afdf27d19a922bf525e600baabfd90dc00f723a699caf332d23a378964bffc",
       "title_zh": "蓝绿风貌系统图",
       "title_en": "Blue-Green Landscape System",
       "description_zh": "矢量规划图则：蓝绿风貌系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
@@ -578,7 +578,7 @@
       "role": "drawing",
       "required": false,
       "language": "en",
-      "sha256": "624b3123ee17d293adf340a6380fbe6b7a2d7afd5691d2f8c1beb30769a02863",
+      "sha256": "38d1073f9f26f7200a804117b441b3295fd9bb5e9b365c04e75afd695d39a8f8",
       "title_zh": "蓝绿风貌系统图",
       "title_en": "Blue-Green Landscape System",
       "description_zh": "矢量规划图则：蓝绿风貌系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
