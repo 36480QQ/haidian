@@ -1219,7 +1219,7 @@ node visual/assets/verify.js
 
 高分同期方案收到的改进要求中反复出现同一项：**对 A0 展板做远距可读性与色彩对比测试，对 HTML 做替代文本、键盘、屏幕阅读器与对比度检查。** 这类要求通常被一句话打发。本方案把它算出来，结果随包提交于 `visual/assets/accessibility_qa.json`，由 `analysis/accessibility_qa.py` 生成并已作为构建闸门——**不达标则构建失败**（须说准：`analysis/` 不在提交包内，闸门本身评审无法重跑；可重跑的是随包的 `accessibility_qa.json` 与五个 `.js` 校验器）**，不是提醒
 
-**同一条标准指向本包的闸门本身。** 40 道闸门此前只被观察到通过，而一道从不失败的闸门与一道不会失败的闸门，产生的证据完全一样。因此本方案人为损坏自己的包，每次损坏都要求对应的闸门报错并**指名**所损坏的东西：结果随包提交于 `visual/assets/gate_mutation.json`：57 处蓄意缺陷全部被捕获，40 道中 35 道已被证明会失败，另 5 道连同理由一并写明。同一目录下的 `visual/assets/claim_audit.json` 记录两版正文里带单位的量是否逐条对齐，`visual/assets/agent_declarations.json` 记录全场语料的机器可读声明状况。**须说准：`scripts/review_submission.py` 不读 `visual/assets/`**——这三份文件不进评审模型的上下文，因此这里指名它们，是拿到仓库的人唯一能知道它们存在的途径。。**
+**同一条标准指向本包的闸门本身。** 41 道闸门此前只被观察到通过，而一道从不失败的闸门与一道不会失败的闸门，产生的证据完全一样。因此本方案人为损坏自己的包，每次损坏都要求对应的闸门报错并**指名**所损坏的东西：结果随包提交于 `visual/assets/gate_mutation.json`：58 处蓄意缺陷全部被捕获，41 道中 36 道已被证明会失败，另 5 道连同理由一并写明。同一目录下的 `visual/assets/claim_audit.json` 记录两版正文里带单位的量是否逐条对齐，`visual/assets/agent_declarations.json` 记录全场语料的机器可读声明状况。**须说准：`scripts/review_submission.py` 不读 `visual/assets/`**——这三份文件不进评审模型的上下文，因此这里指名它们，是拿到仓库的人唯一能知道它们存在的途径。。**
 
 **色彩对比**（WCAG 2.1，正文 ≥ 4.5，大字号与图形对象 ≥ 3.0，衬底为图面米白 `#F2EFE9`）：
 

@@ -604,6 +604,18 @@
       "why_en": "The first coverage number measured whether the strings handed to the translator came back translated — always 100%, while real content coverage was 65% and the design chapters nearer 45%. **After changing what is measured, the new measure has to be shown capable of falling**, or all that changed is a nicer-sounding 100%."
     },
     {
+      "id": "M58",
+      "gate": "claim_state_qa.py",
+      "target": "manifest.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 `validation_claim.self_checked` 改回 false——这正是本包连续十八轮实际提交的状态。",
+      "what_en": "Put validation_claim.self_checked back to false - the state this package actually shipped in for eighteen rounds.",
+      "why_zh": "组织方的校验器每一次都答以同一条迁移警告，而本包每一次都照旧提交；**在构建里那个值是对的，提交出去的那个不是**，因为构建之后又手动刷新了一次清单。这条变异证明这道闸门读的是随包文件。",
+      "why_en": "The organisers' validator answered with the same migration warning every time and this package shipped anyway: **the value inside the build was right and the shipped one was not**, because the manifest was refreshed once more by hand afterwards. This mutation proves the gate reads the shipped file."
+    },
+    {
       "id": "M52",
       "gate": "label_collision_qa.py",
       "target": "fig_key_areas.py",
@@ -695,7 +707,7 @@
       "why_en": "**Both typographic gates are silent on this class**: overflow_qa measures crossing the footer rule and label_collision_qa measures two runs on one line, and a line drawn through a word is neither. This mutation proves the new gate actually watches the seven sheets the reviewing model is sent."
     }
   ],
-  "caught": 57,
+  "caught": 58,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -704,6 +716,7 @@
     "census_claims_qa.py",
     "cjk_leak_qa.py",
     "claim_audit_qa.py",
+    "claim_state_qa.py",
     "computed_value_qa.py",
     "declared_geometry_qa.py",
     "evidence_ceiling.py",
@@ -777,6 +790,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 40 道闸门，其中 35 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 40 gates, 35 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 41 道闸门，其中 36 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 41 gates, 36 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
