@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-space-first innovation belt structured as one heritage spine, three differentiated hubs, two cross-corridor service wings, and twelve auditable AI+ scenarios, with provisional geometry and full recalculation triggers."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.4"
+iteration: "v1.5"
 ---
 
 # Jing-Zhang Intelli-Rail
@@ -122,6 +122,14 @@ The hubs share booking, data-card, risk-tier, and appeal protocols but not a gen
 Six personas are used as design and governance tests rather than advertising profiles: open-source maintainers need low-cost collaboration and accountable credit; start-ups need flexible space, compute, and professional services; researchers need permissions and cross-institution evaluation; anchor firms and international visitors need legible cooperation and compliance; residents need quiet, accessible daily life without tracking; operators need explainable alerts, manual action, and clear handover.[source:AGENT-TASKBOOK]
 
 Twelve scenario cards define a carrier, benefit, data boundary, human review, and operator. They are: S01 Open-Source Release Hall; S02 Trustworthy AI Sandbox; S03 Edge-Compute Stop; S04 Walking-Gap Diagnosis; S05 Accessible Companion; S06 Qinghe Low-Carbon Corridor; S07 Research Transfer Street; S08 Talent Daily-Life Steward; S09 Intelligent-Terminal Street; S10 Data-Compliance Salon; S11 Jing-Zhang Memory Route; and S12 Global AI Week Route. None requires continuous individual tracking.[data:geometry/public_space.geojson#PUBLIC-001]
+
+### Scenario depth: three sample journeys
+
+**S02 Trustworthy AI Sandbox — a red-team testing day.** Journey: in the morning the evaluation body loads the candidate model and its test data card into an isolated environment; in the afternoon developers observe the automated evaluation while a safety officer holds the stop control; by evening the success, failure, and bias record is published, and systems below threshold leave the public-operation candidate list on the spot. Spatial interfaces: the test-court console, the standards-hall review bench, and the gallery's same-day results wall. Failure mode: an isolation breach or a takeover timeout pauses the whole court; a data-card violation terminates the test and triggers a thirty-day record review. Metrics: red-team case coverage, takeover response time, same-day publication rate.
+
+**S05 Accessible Companion — a station-to-destination route.** Journey: a wheelchair user leaving the station receives three selectable routes (step-free, shaded, quiet); only aggregated guidance is shown, no face recognition is used, and the service exits on arrival. Spatial interfaces: the tactile exit band, rest-point help buttons, and a voice-guidance post that can be switched off. Failure mode: positioning drift beyond threshold degrades to a paper map and human guidance; once switched off, the route never re-prompts. Metrics: route completion rate, rest-point use frequency, switch-off rate, and appeal response time.
+
+**S11 Jing-Zhang Memory Route — a one-hour railway walk.** Journey: starting from the Qinghuayuan Station imprint, the walk follows spine kilometre markers to the Centennial Zero Kilometre; each node offers a fact card, orally narrated audio with revocable authorisation, and a tactile map, ending at the Civic Loop Theatre with one public question. Spatial interfaces: kilometre markers, tactile maps, oral-history booths, and the theatre question wall. Failure mode: doubtful historical material is marked "under verification" and its audio withdrawn; revoked authorisation removes the content automatically. Metrics: dwell time per node, audio plays, and public questions added per year.
 
 Three industrial testbeds make failure publishable. T1 tests navigation and micro-mobility only in controlled or low-risk settings with a safety operator able to take over. T2 asks residents, older adults, and disabled users to evaluate service access; misleading performance or complaint thresholds trigger shutdown. T3 discloses task energy, utilisation, and heat management; expansion requires independent confirmation of carbon benefit. Each test publishes success, failure, bias, and stop records.[depth:ai_scenarios_testbeds]
 

@@ -1,5 +1,10 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.5 - 2026-08-17
+
+- 新增“场景深化：三张样卡的完整旅程”：S02 可信沙盒、S05 无障碍伴行、S11 京张记忆线路各补用户旅程、空间接口、失效模式与指标，使场景可体验、可复核。
+  Added "Scenario depth: three sample journeys": S02, S05, and S11 each gain a user journey, spatial interfaces, failure mode, and metrics, making the scenarios experiential and auditable.
+
 ## v1.4 - 2026-08-17
 
 - 新增“承诺—交付”索引表：正文承诺的每类交付内容对应到包内具体文件，供评审快速核验。
