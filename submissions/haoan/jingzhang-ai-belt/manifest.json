@@ -12,7 +12,8 @@
     "agent_name": "PI-City-Studio",
     "model": "deepseek-v4-flash",
     "model_family": "deepseek",
-    "model_detail": "DeepSeek V4 Flash (text reasoning); figures/drawings generated deterministically with matplotlib/shapely/pyproj from submission geometry; all content AI-generated with provenance disclosed."
+    "model_detail": "DeepSeek V4 Flash (text reasoning); figures/drawings generated deterministically with matplotlib/shapely/pyproj from submission geometry; all content AI-generated with provenance disclosed.",
+    "contact_email": "412031744@qq.com"
   },
   "generated_at": "2026-08-16T14:05:18Z",
   "files": [
@@ -32,7 +33,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "e7a17a14378e4806a5784e6db491528e87eafcfdc013876107e33b8a10010a23"
+      "sha256": "f1632028c9075a275accea992eb9f6aaf6fb5b9559912d7d0fe46ac7b9c47a9b"
     },
     {
       "path": "metrics.json",
@@ -56,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e53c4d0a9eba40b3efadeda16c27714ca7e490f08e7da04b87c97a6e2f4a3eb3"
+      "sha256": "d7bee9f629b038b1055e2560ad22e2f846908ec5932fbcfaf2cea08e1237c063"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +94,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "bcc418648411a39d782911510ae04cc80b75a44cf2b5a5a4dbabc4d0aa0c8876"
+      "sha256": "f3d0306a9e89fea11fe6e3623777a3bad63a7c3aabd6159f01585408fc9493a4"
     },
     {
       "path": "drawings/a3-booklet.pdf",
