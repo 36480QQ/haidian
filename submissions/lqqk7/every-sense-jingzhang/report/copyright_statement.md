@@ -35,7 +35,7 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 123 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 128 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
@@ -166,6 +166,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | 使用场景 | 字体名称 | 来源 | 许可 | 嵌入与分发方式 | 登记出处 |
 | --- | --- | --- | --- | --- | --- |
 | 图纸 PDF（`drawings/*.pdf`） | Source Han Sans SC（Regular/Medium/Bold 三个子集） | 本地安装副本；许可正本随包收录于 `visual/assets/font-license-ofl.json`（OFL 1.1 允许再分发许可文本） | SIL Open Font License 1.1 | 子集嵌入 PDF；不作为独立资产随包分发。经全册字体审计（pypdf 遍历页面与 XObject 资源，2026-08-13）：非 OFL 字体条目为 0。此前版本的四册曾因浏览器打印管线的字体栈回退混入系统字体子集，本版已全部清除并加入构建期兜底与审计脚本防止回归 | 本文件 §Generated assets and software |
+| `visual/assets/three.min.js` | 第三方组件 three.js r160（MIT，© 2010-2023 three.js authors）；由官方 module 构建机械可复现重封装为离线单文件（唯一改动为末尾 export 语句换全局赋值，步骤全文披露），许可正本与上游哈希见 `three-license.json` | MIT 许可随包履行；不构成对上游项目的背书 | `visual/assets/three-license.json` |
 | 离线展示页（`visual/*.html`、`scene.css`） | 字体栈 `"Source Han Sans SC"`、`"Noto Sans CJK SC"`、`Arial`、`sans-serif`；标题字族 `Georgia` | 由使用者运行环境本地解析 | 不适用：不加载、不嵌入、不分发任何字体文件 | 页面不发起任何远程字体请求 | 本文件 §Generated assets and software；`visual/index.html` 内联样式 |
 | 多模态短片（`journey.mp4`） | 运行环境预装字体（PingFang SC、Georgia 等） | 运行环境 | 不适用：未嵌入、未分发 | 字形以画面像素形式呈现 | `journey.md` §五「字体」行、§六「图件与字体权利」 |
 | 方案封面（`cover.webp`） | 系统随附字体（中西文衬线、无衬线、等宽） | 运行环境 | 不适用：未嵌入、未分发 | 字形以位图形式呈现于图像中 | `cover.md` §二「字体」行 |

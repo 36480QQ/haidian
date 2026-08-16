@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.1 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.2 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e0319bd752dacce259087adc586770ecf73b0ac1b790114430a4263681dfe1bb"
+      "sha256": "17e6763eb66ca9aa360bd4cc5adc223cff026ad4dfc3814009c6f4c896d31472"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "2c35522472e753aeeaf68d5621b6a94b45afcb37286a54469637cd10ac366320"
+      "sha256": "0235d098708df01bf4790eccb4cf043fb4c8a9b9afaf29d576581e73415392df"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f7c75ba4b49268060a40602e4bad820a0163433f4bb1e8887b7c29a6f072ed16"
+      "sha256": "5f4630bd173c7250af2be42f854887c8a57181e745878f1cc296515b0a39826d"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "538a94af79bd642df99231ce4c1f25e576bb40a9df32a2369ffb5c28e55493fb"
+      "sha256": "4d8106cb7020c72f7a5ac76c18f7992a0dca5d20bd5d161589dd3cc1c54f33a7"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "01eb37ba79451a0844022d7b22c938f85bf016c785ff408982bb1357971f8718"
+      "sha256": "342a8db2841ae48ef7b4aa2aff1fdc1e43da39d15c10b1ae18c927c0e9ad6fa8"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c09a063ed6e0454ae0024a52cbbe20f051e9d695b78f88b57378344eca0c1191"
+      "sha256": "b789d9ac45b8fa483efcb52daca896e48a09e8a264cd2b9522b4efb6a63c4c8d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5ea7838c7c37ff48c286055dab4f0b9a7c27aae2cc8e8d4a0501afa1a18784ab"
+      "sha256": "5915395cb19020ea0c2c34b652d55bc0a3d7c9f0d4ca55be0f0bc9e5826e02cb"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c7a7d9dfe34ff92b3f3fc4479a1a69f2ddc7668ae63c171a76995c5957b78aa9"
+      "sha256": "67c6661bf4dc0b1e0b46b9d61559690b81f2d4265f804562a606d923a57899ea"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "90775b26d06cb4ccc7686fe2b04fd2baa245826e1322d06a8fb73af8ad7cb570"
+      "sha256": "40ce7e2e67480b247ae8f66d1f2da69fa97322e7afc30fae222e7e4b59bce2b9"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -509,7 +509,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "ccef38ea4fabaddb74ee7c2899d6cda494471f03f45aaa3a1f03ad45f3a0d841"
+      "sha256": "2ced14074b861ba3f04bc0b89b00f27919122127dd91b0639c705cfa3f2780bd"
     },
     {
       "path": "assets/media/cover.webp",
@@ -568,7 +568,52 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "417c9c6abdf7d2e2abfdd9390d5b6db71dd0dc3ae284506b3ae88db64e1184f6"
+      "sha256": "3271bd6ae0a71709f5593b4341f75e2df332817f637deab3ecf2d0f5b3743632"
+    },
+    {
+      "path": "visual/assets/three.min.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "three.js r160（MIT，离线单文件；由官方 module 构建机械可复现重封装，转换步骤全文披露于 three-license.json）",
+      "title_en": "three.js r160 (MIT, offline single file; mechanically reproducible rewrap of the official module build, transformation disclosed in full in three-license.json)",
+      "sha256": "99361e0a3fcca3125a494b27f421cf9078bbf1847c2b82a839a2135ebe91b532"
+    },
+    {
+      "path": "visual/assets/three-license.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "three.js MIT 许可正本与溯源（上游 URL/哈希/重封装步骤，许可全文可逐字节重建）",
+      "title_en": "three.js MIT licence text and provenance (upstream URL/hash/rewrap steps; licence text byte-reconstructable)",
+      "sha256": "48908e262070aafd75b8efe18a8e10e0869677ffcf4a07fefb4b6a9d7c53bd53"
+    },
+    {
+      "path": "visual/assets/spine3d.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三维主脊场景（几何 100% 同源于 scene-data.js，AI 开关+昼夜+节点漫游，无 WebGL 静态降级）",
+      "title_en": "3-D spine scene (geometry 100% sourced from scene-data.js; AI switch, day/night, node fly-to; static fallback without WebGL)",
+      "sha256": "0a7e245ebbf69eb2740deb7da2078c998bb49b89300a7210fb34ab13ab104d15"
+    },
+    {
+      "path": "visual/assets/spine3d.css",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三维主脊章样式",
+      "title_en": "3-D spine chapter styles",
+      "sha256": "4f1a3052d0411f8a4280670b63df598211ca5d3c5990b6e2f1a6ce180016f914"
+    },
+    {
+      "path": "visual/assets/scene-time.css",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "交互场景四时段控件样式",
+      "title_en": "Four-period control styles for the interactive scene",
+      "sha256": "c66d7a8b0ef5e901adceb1b4caebf10d5eb8bf96007448bfad10d38cfea42e05"
     },
     {
       "path": "visual/assets/scene.css",
@@ -582,7 +627,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "c8e17d3f087f46285a3a5030f015eafe85d73f1ca739ddf0006e56fe9f56a024"
+      "sha256": "f7428ec660ebc6eeb7f171695316a40fcb169017b944d5c7f7a0f3f37465052b"
     },
     {
       "path": "visual/assets/scene-fallback.png",
@@ -650,7 +695,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "1f28c5d9c8a9745c7557a57607c461a845bafd45612e3749024b5d496a3172b6"
+      "sha256": "b9abe6896a04672f093e521300c796fd7c330c4f51e8a00bc622db5f78bbce44"
     },
     {
       "path": "visual/assets/review-archive.json",
