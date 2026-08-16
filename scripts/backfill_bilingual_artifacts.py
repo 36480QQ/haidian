@@ -59,6 +59,7 @@ import argparse
 import hashlib
 import html
 import json
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -113,17 +114,34 @@ def is_symlink_free_contained_path(path: Path, root: Path) -> bool:
     return path.resolve().is_relative_to(root.resolve())
 
 
+def package_is_symlink_free(directory: Path) -> bool:
+    def raise_walk_error(error: OSError) -> None:
+        raise error
+
+    try:
+        for current, names, files in os.walk(
+            directory, followlinks=False, onerror=raise_walk_error
+        ):
+            if any((Path(current) / name).is_symlink() for name in [*names, *files]):
+                return False
+    except OSError:
+        return False
+    return True
+
+
 def resolve_only_selection(found: list[Path], only: list[str], repo_root: Path) -> list[Path]:
     if not only:
         return found
     selected: list[Path] = []
+    resolved = {path: path.resolve() for path in found}
     for raw in only:
         candidate = Path(raw)
         if candidate.is_absolute():
-            matches = [path for path in found if path == candidate.resolve()]
+            target = candidate.resolve()
+            matches = [path for path in found if resolved[path] == target]
         elif "/" in raw or "\\" in raw:
             target = (repo_root / candidate).resolve()
-            matches = [path for path in found if path == target]
+            matches = [path for path in found if resolved[path] == target]
         else:
             matches = [path for path in found if path.name == raw]
             if len(matches) > 1:
@@ -144,6 +162,7 @@ def submission_dirs(repo_root: Path, only: list[str]) -> list[Path]:
         path.parent
         for path in submissions_root.glob("*/*/proposal.md")
         if is_symlink_free_contained_path(path, submissions_root)
+        and package_is_symlink_free(path.parent)
     )
     return resolve_only_selection(dirs, only, repo_root)
 
