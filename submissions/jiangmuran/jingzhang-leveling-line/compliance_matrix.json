@@ -39,11 +39,11 @@
       ],
       "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」；图层 land_use.geojson、key_areas.geojson；指标 land_use_class_count、land_use_feature_count（class 1，由 visual/assets/verify.js 独立重算）；指标 case_study_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 land-use-structure.png、ecosystem.png；来源 OFFICIAL-ANNOUNCEMENT（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
-        "references": 13,
+        "references": 14,
         "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 3
+        "reviewer_cannot_open": 4
       }
     },
     {
@@ -331,11 +331,11 @@
       ],
       "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「用地、建筑规模与拆改留方案」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
-        "references": 10,
+        "references": 11,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 2
+        "reviewer_cannot_open": 3
       }
     },
     {
@@ -373,11 +373,11 @@
       ],
       "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 key_areas.geojson；指标 key_area_count、land_use_class_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png、ecosystem.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
-        "references": 10,
+        "references": 11,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 2
+        "reviewer_cannot_open": 3
       }
     },
     {
@@ -415,11 +415,11 @@
       ],
       "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 land_use.geojson；指标 phase_count、phasing_union_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 renewal_project_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 land-use-structure.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
-        "references": 10,
+        "references": 11,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 1
+        "reviewer_cannot_open": 2
       }
     },
     {
@@ -456,11 +456,11 @@
       ],
       "evidence_summary_zh": "本条由正文小节「交通、轨道、市政与公共服务设施」；图层 roads.geojson；指标 road_feature_count、leveling_spine_length_m（class 1，由 visual/assets/verify.js 独立重算）；图纸 mobility-bluegreen.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
-        "references": 9,
+        "references": 10,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 1
+        "reviewer_cannot_open": 2
       }
     },
     {
@@ -540,11 +540,11 @@
       ],
       "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson、public_space.geojson；指标 public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、identity.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
-        "references": 11,
+        "references": 12,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 4
+        "reviewer_cannot_open": 5
       }
     },
     {
@@ -625,11 +625,11 @@
       ],
       "evidence_summary_zh": "本条由正文小节「众智园 AI 自主创新加速区」「三片区共同的拆改留原则」；图层 land_use.geojson；指标 land_use_class_count、benchmark_first_order_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
-        "references": 11,
+        "references": 12,
         "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 1
+        "reviewer_cannot_open": 2
       }
     },
     {
@@ -709,11 +709,11 @@
       ],
       "evidence_summary_zh": "本条由正文小节「大钟寺 AI 产业集聚区」；图层 key_areas.geojson、buildings.geojson；指标 building_footprint_area_sqm、key_area_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
-        "references": 10,
+        "references": 11,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 2
+        "reviewer_cannot_open": 3
       }
     },
     {
@@ -973,11 +973,11 @@
     }
   ],
   "reviewer_reachability_total": {
-    "references": 279,
+    "references": 287,
     "reviewer_can_read_whole": 213,
     "reviewer_sees_as_image": 17,
     "reviewer_sees_first_page_only": 0,
-    "reviewer_cannot_open": 49,
+    "reviewer_cannot_open": 57,
     "note_zh": "评审模型整份收到九个文件，不含 `geometry/` 与 `visual/assets/`（见 `scripts/review_submission.py::build_review_input`）。本表逐条标出它能打开多少、打不开多少——**这不是免责，是让评审知道哪一行的证据它可以自己核，哪一行只能听我说**。数字由构建算出，管线若开始多送文件，它们会自己变。"
   },
   "rubric_coverage": {

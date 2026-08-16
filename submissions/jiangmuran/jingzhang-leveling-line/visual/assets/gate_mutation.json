@@ -736,6 +736,18 @@
       "why_en": "**What the reviewer holds is the package's job to state, and stating it wrongly is worse than not stating it.** This mutation proves the build stops the moment the sentence and the built board page disagree."
     },
     {
+      "id": "M74",
+      "gate": "upstream_validator_qa.py",
+      "target": "compliance_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一个标准编号放回 `source_ids`——**这正是本包直到 E228 之前的真实状态**，而且是组织方校验器逐条点过名、本包一直没读的那八条之一。",
+      "what_en": "Put a standard ID back into source_ids. **This is the state this package was actually in until E228**, and it is one of the eight the organisers' validator had been naming, requirement by requirement, unread.",
+      "why_zh": "**没有解释的警告就是没有人修的缺陷。** 这条变异要证明的是：组织方校验器一旦发出本包未公开声明过的告警形状，构建就停。",
+      "why_en": "**An unexplained warning is a defect nobody fixes.** This mutation proves that a warning shape this package has not published as unfixable stops the build."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -890,9 +902,22 @@
       "what_en": "Put the figure index's note rule back to keeping notes only for the five sheets the reviewer receives. **This is the state the first cut of this round was actually in**: a note carrying a measured quantity went out with the descriptive ones, and computed_value_qa reported its pattern as matching nothing.",
       "why_zh": "**剪裁要剪装饰，不剪读数。** 这条变异要证明的是：任何一句带构建算得出的数的句子被剪掉，构建就停——而不是安静地少掉一处可核对的东西。",
       "why_en": "**A cut removes decoration, not readings.** This mutation proves that dropping any sentence carrying a number the build computes stops the build rather than quietly losing something checkable."
+    },
+    {
+      "id": "M75",
+      "gate": "accessibility_qa.py",
+      "target": "build_visual.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把深色块里的三个强调色删掉，回到只有浅色定义的状态——**这正是本包直到 E229 之前的真实状态**：免责声明与 F1/F2/F3 限差列在深色主题下低于本包自己公布的对比度下限。",
+      "what_en": "Delete the three accents from the dark blocks, back to the light-only state. **This is the state this package was actually in until E229**: the disclaimer and the F1/F2/F3 tolerance column fell below the contrast floor this package publishes, in the dark theme.",
+      "why_zh": "**报告零失败而只量一半表面的仪器，比没有仪器更糟。** 这条变异要证明的是：深色一侧任何一个正文颜色掉到下限以下，构建就停。",
+      "why_en": "**An instrument reporting zero failures on half the surface is worse than none.** This mutation proves that any text colour falling below the floor on the dark side stops the build."
     }
   ],
-  "caught": 73,
+  "caught": 75,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
