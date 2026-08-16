@@ -796,6 +796,18 @@
       "why_en": "**Every number the page declares is read back, not only the three the contract names.** This mutation proves that any declared value parting from metrics.json stops the build."
     },
     {
+      "id": "M85",
+      "gate": "block_type_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把众智园那一行的街区类型从公告给的**花园型**换成**城市型**。「花园型」这三个字仍留在块首那句话里，所以只查「词在不在文档里」的闸门会照常通过；变的是它不再挂在自己的重点区上。",
+      "what_en": "Swap the block type on the Zhongzhi Park row from the announced **garden-type** to **city-type**. The words 花园型 remain in the block's opening sentence, so a gate that only asks whether the word appears anywhere still passes; what changed is that it is no longer joined to its own key area.",
+      "why_zh": "**E-PENDING 记的正是这件事：三个类型散在文里，不等于三处各自答了自己的类型。** 这条变异要证明闸门查的是配对，不是词频——否则把公告的词撒进正文就能过关，而那恰好是本方案在别处反对的做法。",
+      "why_en": "**This is exactly what the erratum records: three type words loose in the prose is not three areas each answering its own type.** The mutation proves the gate checks the pairing rather than the word count — otherwise sprinkling the announcement's vocabulary through the text would pass, which is the move this proposal objects to elsewhere."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1030,12 +1042,13 @@
       "why_en": "**The reviewer scores seven dimensions and every one has to have somewhere to go.** This mutation proves that a dimension losing its mapping stops the build rather than quietly going unanswered."
     }
   ],
-  "caught": 84,
+  "caught": 85,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
     "announcement_terms_qa.py",
     "assumption_refs_qa.py",
+    "block_type_qa.py",
     "build_rubric_coverage.py",
     "calendar_parity_qa.py",
     "census_claims_qa.py",
@@ -1129,6 +1142,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 57 道闸门，其中 54 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 57 gates, 54 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 58 道闸门，其中 55 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 58 gates, 55 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

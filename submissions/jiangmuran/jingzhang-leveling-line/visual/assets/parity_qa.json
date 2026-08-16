@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.814,
+ "overall_ratio": 0.811,
  "floor": 0.75,
  "sections": [
   {
@@ -27,8 +27,8 @@
   {
    "section": "Three-Level Scope Framework",
    "zh_chars": 826,
-   "en_words": 735,
-   "ratio": 1.135,
+   "en_words": 650,
+   "ratio": 1.004,
    "pass": true
   },
   {
@@ -47,9 +47,9 @@
   },
   {
    "section": "Detailed Design of Key Areas",
-   "zh_chars": 2950,
-   "en_words": 2000,
-   "ratio": 0.865,
+   "zh_chars": 3771,
+   "en_words": 2518,
+   "ratio": 0.852,
    "pass": true
   },
   {
@@ -96,16 +96,16 @@
   },
   {
    "section": "The instrument turned on itself",
-   "zh_chars": 9205,
-   "en_words": 5463,
-   "ratio": 0.757,
+   "zh_chars": 8559,
+   "en_words": 5091,
+   "ratio": 0.759,
    "pass": true
   },
   {
    "section": "Risk, Copyright, and Compliance",
    "zh_chars": 1540,
-   "en_words": 1101,
-   "ratio": 0.912,
+   "en_words": 1015,
+   "ratio": 0.841,
    "pass": true
   },
   {
