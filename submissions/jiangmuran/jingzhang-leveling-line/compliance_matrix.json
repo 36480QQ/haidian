@@ -1483,5 +1483,152 @@
         "dispute_review_en": "the resident representative may dispute any reading; the original and the corrected value are published side by side"
       }
     ]
+  },
+  "whitespace_rules": {
+    "scope_zh": "**留白不是缺省，但只写条件不写规则，与缺省无从分辨。** 本方案把总体设计范围里 11 个街区留白，每块此前只写「待权属、控规与拆改留评估后细分」——那是时间，不是判断。以下四条是判断，按顺序适用，每一条的触发量都是本包已经在测的量（E220）。",
+    "scope_en": "Left blank is not left out, but a blank that states a condition and no rule cannot be told from an omission. This proposal leaves 11 blocks blank, each carrying only 'to be subdivided once ownership, the regulatory plan and the retain-renovate-demolish assessment are known' - which is a time, not a judgement. The four rules below are the judgement, applied in order, each turning on a quantity this package already measures.",
+    "refuses_zh": "本方案在留白上刻意不给的：容积率、建筑高度、建筑密度、退线、道路红线、任何拆除结论、任何居民搬迁建议。",
+    "walk_threshold_m": 800.0,
+    "rules": [
+      {
+        "rule_id": "W1",
+        "order": 1,
+        "rule_zh": "街区中心距任一水准点超过 800 m（十分钟步行）的，细分时先落一个三等水准点，再谈用途。",
+        "rule_en": "A block whose centre is more than 800 m - a ten-minute walk - from any benchmark is subdivided to place a third-order benchmark first, before any use is decided.",
+        "trigger": "metrics.json#walk10_benchmark_reach_gain_buildings",
+        "evidence": "geometry/public_space.geojson",
+        "why_zh": "没有测点的街区，无论写上什么用途，都不进入这条带的复测；**先有可复测，再有内容**。"
+      },
+      {
+        "rule_id": "W2",
+        "order": 2,
+        "rule_zh": "街区内已有运行中场景而缺无AI等价路径的，细分时先建那条等价路径。",
+        "rule_en": "A block carrying an operating scenario with no non-AI equivalent is subdivided to build that equivalent path first.",
+        "trigger": "metrics.json#non_ai_path_coverage",
+        "evidence": "visual/assets/scenario_cards.json",
+        "why_zh": "这不是新规则，是机制里已有的停用规则：**没有等价路径就不上线**——落到土地上就是这一条。"
+      },
+      {
+        "rule_id": "W3",
+        "order": 3,
+        "rule_zh": "蓝绿连续性先于街区内部地块划分确定：绿廊在这一块是连续的，或者它不是绿廊。",
+        "rule_en": "Blue-green continuity across the block is settled before any parcel inside it is: the corridor is continuous here, or it is not a corridor.",
+        "trigger": "metrics.json#green_ratio",
+        "evidence": "geometry/green_space.geojson",
+        "why_zh": "连续性是一次性的：断开之后再补，代价与重建一样。"
+      },
+      {
+        "rule_id": "W4",
+        "order": 4,
+        "rule_zh": "其余一律等官方条件——容积率、建筑高度、建筑密度、退线、道路红线、以及任何拆除结论。**本方案不代拟，也不打算代拟。**",
+        "rule_en": "Everything else waits for the official conditions - floor area ratio, height, density, setbacks, road redlines and any demolition conclusion. This proposal does not draft them and will not.",
+        "trigger": "brief/site-package/ranges/planning_limits.json",
+        "evidence": "metrics.json#floor_area_ratio",
+        "why_zh": "把这一条写成第四条规则而不是脚注：**拒绝也是有顺序的**——前三条不需要官方数据就能做，第四条不做。"
+      }
+    ],
+    "blocks": [
+      {
+        "feature_id": "LU-009",
+        "name_zh": "本方案留白街区 04（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 604410.9,
+        "nearest_benchmark": "BM-21",
+        "straight_line_to_benchmark_m": 1026.6,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": true
+      },
+      {
+        "feature_id": "LU-006",
+        "name_zh": "本方案留白街区 01（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 2283849.6,
+        "nearest_benchmark": "BM-301",
+        "straight_line_to_benchmark_m": 827.5,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": true
+      },
+      {
+        "feature_id": "LU-013",
+        "name_zh": "本方案留白街区 08（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 320729.3,
+        "nearest_benchmark": "BM-22",
+        "straight_line_to_benchmark_m": 756.2,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": false
+      },
+      {
+        "feature_id": "LU-011",
+        "name_zh": "本方案留白街区 06（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 457632.3,
+        "nearest_benchmark": "BM-303",
+        "straight_line_to_benchmark_m": 631.7,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": false
+      },
+      {
+        "feature_id": "LU-012",
+        "name_zh": "本方案留白街区 07（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 350009.6,
+        "nearest_benchmark": "BM-22",
+        "straight_line_to_benchmark_m": 543.3,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": false
+      },
+      {
+        "feature_id": "LU-015",
+        "name_zh": "本方案留白街区 10（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 87405.8,
+        "nearest_benchmark": "BM-0",
+        "straight_line_to_benchmark_m": 531.0,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": false
+      },
+      {
+        "feature_id": "LU-014",
+        "name_zh": "本方案留白街区 09（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 246425.0,
+        "nearest_benchmark": "BM-1",
+        "straight_line_to_benchmark_m": 507.6,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": false
+      },
+      {
+        "feature_id": "LU-007",
+        "name_zh": "本方案留白街区 02（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 782135.3,
+        "nearest_benchmark": "BM-2",
+        "straight_line_to_benchmark_m": 476.2,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": false
+      },
+      {
+        "feature_id": "LU-016",
+        "name_zh": "本方案留白街区 11（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 12844.4,
+        "nearest_benchmark": "BM-2",
+        "straight_line_to_benchmark_m": 446.7,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": false
+      },
+      {
+        "feature_id": "LU-008",
+        "name_zh": "本方案留白街区 03（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 617304.3,
+        "nearest_benchmark": "BM-301",
+        "straight_line_to_benchmark_m": 443.2,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": false
+      },
+      {
+        "feature_id": "LU-010",
+        "name_zh": "本方案留白街区 05（现状城市建成区，待权属、控规与拆改留评估后细分）",
+        "area_sqm": 557068.7,
+        "nearest_benchmark": "BM-21",
+        "straight_line_to_benchmark_m": 103.4,
+        "reading_is": "straight-line centroid distance, not a walked distance",
+        "w1_applies": false
+      }
+    ],
+    "w1_would_reach_first": 2,
+    "applied_today_zh": "按今天的几何，规则 W1 会先落到 2 个街区上（共 11 个）；距离为几何中心到最近水准点的直线距离，**不是步行距离**——一个还不存在的街区，走不出步行距离。"
   }
 }

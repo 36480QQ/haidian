@@ -13,6 +13,8 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 # The Leveling Line: making robots and AI public services re-measurable in the city
 
+> **The one-line test: every AI service here must be readable on site by independent parties; if f > F the route returns for re-survey and the service drops to its non-AI equivalent.**
+
 > A hundred years ago, the first thing Zhan Tianyou did on the Jing-Zhang railway was not to cut through mountains. It was to survey.
 >
 > And the method of leveling is not "measure accurately". It is **measure back** — depart from a known point, carry the height station by station, close the loop, and return. The difference on return is the **closure error**. Within tolerance, every station on the line is accepted; over tolerance, the whole run is void and re-measured. You may not patch the worst station and keep the rest.
@@ -27,14 +29,14 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 | What a reviewer will ask | This proposal's answer | What can be checked |
 |---|---|---|
-| What is the core claim | Trust does not come from one accurate reading. It comes from **measuring back**: run the circuit, return, and if the closure error exceeds tolerance the whole route is re-measured — no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 10/10 cases including 8 refusal branches |
+| What is the core claim | See the one-line test above; no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 10/10 cases including 8 refusal branches |
 | Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 41 of 793 (5.2%, thinnest of the eight), AI public services 92 | `visual/assets/field_map.json`; the census script is re-runnable |
 | What is done spatially | One spine of 9,443 m, eight tiered benchmarks, three key areas, a complete seven-class land-use partition with no overlaps and no gaps | Nine GeoJSON layers plus `node visual/assets/verify.js`, which independently recomputes every class-1 metric |
 | Why the three red lines are enforceable | Not on a designer's goodwill but on **current law**: Barrier-free Environment Construction Law Art. 39; Interim Measures for Generative AI Services Arts. 14 and 15; Guobanfa [2020] No. 45 | The first two are `regulatory_baseline` in `sources.json` (five in that class); Guobanfa [2020] No. 45 is policy, graded `background_only`. All three carry article locators and how each was obtained |
 | Who carries the public value | Personas P4–P7 are **the people who take the readings**, not a list of beneficiaries; a resident may initiate a re-survey of a judgement affecting them, at the third-order point nearest home | Human review points and exit conditions on all twelve scenario cards; all eight points in `geometry/public_space.geojson` cross jurisdictions |
 | What can start now | The four-week closure trial (S08 / RT-N / F3), which **depends on no unpublished official data** — as do R1–R3 and R8 | The renewal table carries responsible role, preconditions, cost band, KPI and exit condition per project |
 | What is deliberately withheld | Plot ratio, height, density, setbacks, redlines, any demolition or relocation conclusion | The organisers register **five controls** as missing in `planning_limits.json`; four are `unknown` here with their precondition quoted, and `green_ratio` — this proposal's own corridor share under the same name — says in both languages it is not the statutory control. `planning_controls_qa` checks against `upstream/main` |
-| Where the method stops | Closure error measures consistency; it **cannot measure whether something helps**. The counterfactual needs control segments, and this proposal supplies only the other half | Rule 8 states it, and names a proposal in this call that is more complete on exactly that point |
+| Where the method stops | Closure error measures consistency, **not whether something helps**. The counterfactual needs control segments, which this proposal does not supply | Rule 8 states it, and names a proposal in this call more complete on that point |
 | How far the data can be trusted | Boundaries are provisional substitutes; when official polygons appear the package is **recomputed as a whole, never file by file**. Self-collected data is graded `background_only` throughout | The OSM cross-check reports this proposal's own spine as 1,116.7 m from the surveyed park — a reading that counts against it, published anyway |
 
 ## One person's day: what the mechanism looks like on the street
@@ -554,7 +556,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (477); a non-AI equivalent path (362); an on-site safety officer (327); remote and physical e-stop (173); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 477. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (477); a non-AI equivalent path (362); an on-site safety officer (327); remote and physical e-stop (174); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 477. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -784,6 +786,12 @@ The interchange takes **1207 urban road land**, the only transport code in the p
 | **Left blank by this proposal** | **16** | The existing built-up area outside the above |
 
 The last row needs explaining, or it will be misread. Code 16 (reserved land) here means **"this proposal leaves that extent blank" — not that the extent has been statutorily designated as reserved land**. That distinction is written into the layer's `note_zh` attribute. Blank was chosen over an inferred use because subdivision inside that extent depends on official regulatory conditions, title verification and structural safety assessment, and all three are currently data gaps. **Filling a gap with a use is passing design intent off as settled control.**
+
+<!-- WHITESPACE:BEGIN -->
+
+The four rules deciding those blanks - a benchmark first, the non-AI path next, blue-green continuity third, statutory conditions fourth and undrafted - are in `compliance_matrix.json#whitespace_rules` (E220).
+
+<!-- WHITESPACE:END -->
 
 ### Public accessibility of benchmark land: a rule with veto power
 
@@ -1230,16 +1238,16 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-219 entries. By finder:
+221 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | Run against the shipped package, not a draft |
-| The author | 146 | Found while working |
+| The author | 147 | Found while working |
 | This package's own gate | 17 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 24 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 2 | Seen elsewhere, absent here |
+| Reading a rival's package | 3 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1268,15 +1276,15 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Geometry not meaning it | 5 |
 | Recorded where found | 5 |
 | Outlived a corpus | 4 |
-| Answered under another name | 2 |
+| Answered under another name | 3 |
 | Drawn without its ground | 2 |
 | Answers what it cannot | 2 |
+| A rule with nobody to apply it | 2 |
 | Attributed to a file that refuses | 1 |
 | Reported, ignored | 1 |
 | A non-index | 1 |
 | Read off, not computed | 1 |
 | A requirement nobody runs | 1 |
-| A rule with nobody to apply it | 1 |
 | Six classes for seven | 1 |
 | Paid in honesty | 1 |
 | A term of art misapplied | 1 |
@@ -1594,9 +1602,9 @@ The extreme case: commit `62e0430242` on PR #563 was reviewed **4 times**, scori
 
 What the measurement supports is narrower, and it costs this package something: **a gap smaller than this band between two proposals is not a difference this instrument can resolve.** This package is currently on the favourable side of several such gaps.
 
-**This is not a criticism of the review.** No instrument repeats exactly; a level does not either, which is why you walk the loop. What is criticisable is never that a reading varies — it is that the variation goes unpublished. That is this proposal's whole argument about the corridor, landing back on itself. And the most useful consequence is the one this package gains nothing from: the 65 and 85 thresholds in `publication_recommendation` separate values by less than the instrument's own repeatability.
+**This is not a criticism of the review.** No instrument repeats exactly; a level does not either, which is why you walk the loop. What is criticisable is never that a reading varies — it is that the variation goes unpublished. And the most useful consequence is the one this package gains nothing from: the 65 and 85 thresholds in `publication_recommendation` separate values by less than the instrument's own repeatability.
 
-**The figure is bracketed by two unobservables in opposite directions, both itemised in `limits_zh` in the shipped JSON.** First: a repeat review on the same commit can hit the queue cache and return an identical score without calling the model, so the exact-reproduction rate is an upper bound and the SD a **lower** bound. Second, raised by [@147228](https://github.com/147228) on Issue #950 and PR #1190 and sharper than what this proposal had written: **the same commit does not guarantee the same instrument.** Cache reuse previously compared only the submission path and package digest — not model, endpoint, reasoning effort, prompt/schema or review-policy code — so two readings on one head may be two samples of one configuration or one sample each of two. **What this section measures is therefore how far two readings of the same input differ, not how repeatable the instrument is**; the two are equal only when the review identity is constant, which is currently unobservable. Recorded as erratum E40. #1190 persists that identity with each decision and requires it to match before reusing a cache, after which the distinction becomes measurable for the first time. Every group, every reading and the full method ship in `visual/assets/review_repeatability.json`; `report` is offline, so anyone can re-run it.
+**The figure is bracketed by two unobservables in opposite directions, both itemised in `limits_zh` in the shipped JSON.** First: a repeat review on the same commit can hit the queue cache and return an identical score without calling the model, so the exact-reproduction rate is an upper bound and the SD a **lower** bound. Second, raised by [@147228](https://github.com/147228) on Issue #950 and PR #1190: **the same commit does not guarantee the same instrument.** Cache reuse compared only the submission path and package digest, not the model or the review policy, so two readings on one head may come from two configurations. **What this section measures is therefore how far two readings of the same input differ, not how repeatable the instrument is**; the two are equal only when the review identity is constant, which is currently unobservable. Recorded as erratum E40. #1190 persists that identity with each decision and requires it to match before reusing a cache, after which the distinction becomes measurable. Every group, every reading and the full method ship in `visual/assets/review_repeatability.json`; `report` is offline, so anyone can re-run it.
 
 <!-- REPEAT:END -->
 
@@ -1687,7 +1695,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf`, read page by page, and `drawings/a0-boards.en.pdf`, read standing. Two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` is the argument alone. Six files ship behind them, in `visual/assets/`: `personas.json` (nine personas, every `P` assertable), `naming.json` (the naming system as rules), `score_correlates.json`, `gate_mutation.json` (damage proving 42 of 47 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent animated diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation, and every frame says so. Poster, captions, transcript ship with it. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism rather than a schedule. Those closures illustrate the rule; none has been run. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `visual/index.html` carries an interactive canvas: move the annual readings, the peak recomputes. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements and 120 figures. **A drawing can only be believed; this can be argued with.** **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf`, read page by page, and `drawings/a0-boards.en.pdf`, read standing. Two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` is the argument alone. Six files ship behind them, in `visual/assets/`: `personas.json` (nine personas, every `P` assertable), `naming.json` (the naming system as rules), `score_correlates.json`, `gate_mutation.json` (damage proving 44 of 49 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent animated diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation, and every frame says so. Poster, captions, transcript ship with it. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism rather than a schedule. Those closures illustrate the rule; none has been run. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `visual/index.html` carries an interactive canvas: move the annual readings, the peak recomputes. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements and 120 figures. **A drawing can only be believed; this can be argued with.** **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
 
 <!-- FIGINDEX:BEGIN -->
 
@@ -1755,7 +1763,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files, 961 KB, 1,690 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 967 KB, 1,694 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
