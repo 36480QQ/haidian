@@ -111,23 +111,23 @@ The proposal is organised on the three levels the announcement sets, and each ma
 |---|---|---|---|---|
 | Coordinated research area | ~43.6 km²; north to the North Fifth Ring Road, east to the Jingzang Expressway, south to Xizhimenwai Street, west to Wanquanhe Road | Whole-network control | Annual | `provisional_boundaries.geojson#PROV-RESEARCH-001` [source:BOUNDARY-SOURCE] |
 | Overall design area | ~11.4 km²; the 1–2 km of city around the heritage park | First-order route: the spine plus two closing routes | Semi-annual | [data:geometry/site_boundary.geojson#SITE-001], recomputed as [metric:site_area_sqm] |
-| Key areas | ~369.3 ha, recomputed as the total of [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002] and [data:geometry/key_areas.geojson#PROV-KEY-003] (192.9 / 104.3 / 72.0 ha); the announcement text says ~368.4 ha | Origin benchmark BM-0 and first-order BM-1 / BM-2 | Annual | [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| Key areas | ~369.3 ha, the total of [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002] and [data:geometry/key_areas.geojson#PROV-KEY-003] (192.9 / 104.3 / 72.0 ha); the announcement text says ~368.4 ha | Origin benchmark BM-0 and first-order BM-1 / BM-2 | Annual | [data:geometry/key_areas.geojson#PROV-KEY-001] |
 
-These are not three unrelated drawing sets. The research area decides **what to measure**; the design area decides **which route to measure along**; the key areas decide **where to set the stones**. Any area, ratio or count that cannot be recomputed from a structured layer is not written as a conclusion — the basic verifiability requirement [standard:MOHURD-URBAN-DESIGN-MEASURES] places on urban design output.
+These are not three unrelated drawing sets. The research area decides **what to measure**, the design area **which route to measure along**, the key areas **where to set the stones**. Any area, ratio or count not recomputable from a structured layer is not written as a conclusion — the verifiability requirement [standard:MOHURD-URBAN-DESIGN-MEASURES] places on urban design output.
 
 ### Why three levels map exactly onto three orders
 
-Orders in a leveling network are not a copy of administrative hierarchy. They are a **division of labour between precision and frequency**: the higher the order, the larger the extent it controls, the less often it is re-measured, and the more stability it demands; the lower the order, the closer it sits to daily use, the more often it is read, and the more readily it catches small failures. The announcement's three levels are isomorphic to that:
+Orders in a leveling network are not a copy of administrative hierarchy but a **division of labour between precision and frequency**: the higher the order, the larger the extent controlled, the less often re-measured, the more stability demanded; the lower, the closer to daily use and the readier to catch small failures. The announcement's three levels are isomorphic to that:
 
-- **The coordinated research area (43.6 km²) decides what to measure.** Industrial ecosystem, innovation chain and future urban form are judged here, and they change over years, so this level is annual whole-network control. It produces no individual readings — it answers *which questions deserve to be public questions at all.*
-- **The overall design area (11.4 km²) decides which route to measure along.** The spine and the two closing routes are established at this level and re-measured every six months. Change a route and the reading series of every station on it breaks — which is why this level must be stable and a route is never adjusted for convenience.
-- **The key areas (369.3 ha recomputed from the layer; ~368.4 ha in the announcement text) decide where to set the stones.** The origin benchmark BM-0 and the two first-order benchmarks BM-1 and BM-2 land here and are re-measured annually. Their `benchmark_order` values are origin / first / first: BM-0 is the origin, not a first-order point, and calling all three first-order — as this sentence used to — disagreed with the shipped data. A stone is a physical object: once set, it becomes the common reference for every later re-survey, which is why its position must be settled before anything is built around it.
+- **The coordinated research area (43.6 km²) decides what to measure.** Industrial ecosystem, innovation chain and future urban form are judged here and change over years, so this level is annual whole-network control. It produces no readings — it answers *which questions deserve to be public questions at all.*
+- **The overall design area (11.4 km²) decides which route to measure along.** The spine and the two closing routes are established at this level and re-measured every six months. Change a route and every station's reading series breaks — so this level must be stable and a route is never adjusted for convenience.
+- **The key areas (369.3 ha recomputed; ~368.4 ha in the announcement text) decide where to set the stones.** The origin BM-0 and the first-order BM-1 and BM-2 land here and are re-measured annually. Their `benchmark_order` values are origin / first / first: BM-0 is the origin, and calling all three first-order — as this sentence used to — disagreed with the shipped data. A stone is physical: once set it is the reference for every later re-survey, so its position must be settled before anything is built around it.
 
-**Constraints across levels run one way.** A lower-order reading cannot amend a higher-order datum, but it can force that datum to be reviewed. A third-order point that exceeds tolerance repeatedly may not adjust its own tolerance — otherwise every point would eventually be within its own tolerance — but it may require the first-order benchmark to reconsider whether the tolerance was set wrongly in the first place. What this asymmetry prevents is specific: **the people closest to the ground being obliged to endorse a standard they can see is unreasonable.**
+**Constraints across levels run one way.** A lower-order reading cannot amend a higher-order datum but can force it to be reviewed. A third-order point that repeatedly exceeds tolerance may not adjust its own — otherwise every point would end up within it — but may require the first-order benchmark to reconsider whether it was set wrongly. What the asymmetry prevents is specific: **the people closest to the ground being obliged to endorse a standard they can see is unreasonable.**
 
-The two figures either side of this discrepancy deserve a note. The key-area total recomputed from the submitted layer is 369.3 ha while the announcement text says approximately 368.4 ha, a difference of about 0.24%. This proposal does not reconcile them: the layer is a provisional substitute and the announcement figure is textual, so agreement to three significant figures would be coincidence rather than evidence. Both numbers are reported, with their sources, and the difference is left visible.
+The two figures deserve a note: 369.3 ha recomputed from the layer against about 368.4 ha in the announcement text, some 0.24%. This proposal does not reconcile them — the layer is a provisional substitute and the announcement figure textual, so agreement to three significant figures would be coincidence, not evidence. Both are reported with their sources.
 
-All three spatial boundaries are provisional substitutes [source:BOUNDARY-SOURCE]; their inferential basis and error are documented in the repository's `provisional_boundaries_basis.md`. When official data is published, the whole package is recomputed [depth:existing_conditions_diagnosis] — never one layer at a time, because a network in which one station has been re-measured and the rest have not is not a network.
+All three spatial boundaries are provisional substitutes [source:BOUNDARY-SOURCE]; their basis and error are documented in the repository's `provisional_boundaries_basis.md`. When official data is published the whole package is recomputed [depth:existing_conditions_diagnosis] — never one layer at a time, because a network with one station re-measured and the rest not is not a network.
 
 ![FIG.03 Three scope levels and network orders](assets/figures/land-use-structure.en.png)
 
@@ -401,6 +401,28 @@ Each of the three key areas carries one survey role, and the three check one ano
 | Dazhongsi AI Industry Cluster [data:geometry/key_areas.geojson#PROV-KEY-003] | **BM-2, high-frequency reading point** | AI-native consumption and business | Four-quadrant pedestrian connection at the intersection; compound use of planned green space; Dazhongsi station integration | S03 agent business desk; S05 data-factor circulation; S09 daily-service demonstration street |
 
 ![FIG.04 Three areas, two wings and benchmark layout](assets/figures/key-areas.en.png)
+
+### The announcement assigns each key area a block type
+
+<!-- BLOCKTYPE:BEGIN -->
+
+The announcement's key-area clause does not only name the three areas. It assigns each one a **block type**, and the three differ on purpose - Zhongzhi Park **garden-type**, the Origin community **campus-adjacent**, Dazhongsi **city-type** - all ending in the same phrase, an AI innovation block.
+
+**None of those words occurred anywhere in this document, and what was missing was not vocabulary.** The three detailed-design sections answered the same question three times - one dominant land use plus some benchmarks. "Three areas from one template" is the review comment this proposal wants made falsifiable; the announcement had already written them as three types (E238).
+
+Each type is translated below into **the spatial condition a site visit could fail**, with every number drawn from a constraint this package already publishes:
+
+| Key area | Type assigned | The condition that can be failed | What failing means | Evidence |
+|---|---|---|---|---|
+| Zhongzhi Park AI autonomous innovation accelerator | **garden-type** | **A garden has to be crossable.** Green space and water may not be an internal courtyard: the public route from the spine to the Qing river is 6.0 m clear, never more than 250 m from the next, ungated at any hour; the test ground is enclosed **by time of day**, not permanently by boundary (CONSTRAINT-001, 5.30 ha). | If a plot refuses the route, the cost is written in minutes on FIG.14 rather than the area being re-scored as connected. | FIG.14, `geometry/constraints.geojson#CONSTRAINT-001` |
+| Beijing AI Origin community | **campus-adjacent** | **Campus-adjacent is a walking time, not an adjacency.** The link from campus to block may not be by steps alone; the step-free link is a 1:12 ramp **on the desire line**, not a detour to a side gate (FIG.17); translation space sits at street level, not deep in a compound; the evidence hall is ungated. | If the only approach is by steps the area fails the type, regardless of whether any gradient is compliant. | FIG.17; part KIT-04 (300 mm guidance strip, Ø1,500 turning space, 2,100 mm headroom) |
+| Dazhongsi AI industry cluster | **city-type** | **City-type means the ground floor runs continuous with the station concourse and no queue stands on the footway.** All four quadrants of the junction walkable (FIG.12); the machine queue reserve **behind the building line**, 18 m² for eight units at 1,800 mm turning (FIG.24); the third-order benchmark reachable from the concourse. | The moment a queue takes footway width the area fails the type, however orderly the queue is. | FIG.12, FIG.24, `metrics.json#queue_reserve_area_sqm` |
+
+**The three conditions do not transfer, which is what makes them three types.** Move the garden condition to Dazhongsi and you get a waterfront nobody needs; move the city-type condition to Zhongzhi Park and you get a concourse that is not there. FIG.13's three sections at one scale are the drawn evidence; the three conditions ship as `visual/assets/block_types.json`.
+
+**Scope**: no completed architecture is claimed. The types are translated only into conditions a site visit could fail. Building form, the building-green-water design and the external transport scheme depend on the official polygons and stay in each area's preconditions rather than being passed off as answered here.
+
+<!-- BLOCKTYPE:END -->
 
 ### Zhongzhiyuan AI Autonomous Innovation Acceleration Area (BM-1, the tolerance datum)
 
@@ -729,7 +751,6 @@ Fixed in both layers: the schema now requires the field with `const: true`, and 
 
 **That this happened is the best evidence for the method.** A mechanism that is public, executable, and has its refusal branches written down in a file can be falsified by a stranger within hours. A governance commitment that lives only in prose never meets that fate — not because it is sounder, but because there is nothing there to test.
 
-
 (This section made its own mistake once. The runner initially printed the wrong expectation — it read a field that does not exist on the result object, so every line said `expected reject` even where the case expected acceptance. **A file whose entire job is honest reporting, misreporting what was expected.** Fixed, with the reason left in the code.)
 
 **Rule 8 is one this proposal cannot supply, and says so: closure error cannot measure whether something helps.**
@@ -763,7 +784,6 @@ Regulatory-plan depth requires land use to cover the site, not to place a few fu
 Moving the buildings does not work. There is exactly one 0803 cultural parcel in the whole scheme, a 140 m disc at BM-0, 3.16 km from L2 and 4.62 km from L3; stacking three landmarks onto it would destroy the three-point distribution the scheme is built on. So the land changed rather than the buildings: **each footprint now has a plot whose use matches its type, carved out of the surrounding parcel** — which is the ordinary relationship between a building and its plot in a regulatory plan, and was simply never drawn. The `LAND_USE_ALLOWS` gate stayed strict — 1401 park and 16 reserved map to the empty set, hosting nothing — and the geometry moved to satisfy it rather than the gate loosening to accommodate the geometry.
 
 The interchange takes **1207 urban road land**, the only transport code in the project's enum subset. It is the closest available match, not an exact one, and that is stated here rather than claimed more strongly. It is also why the partition went from six classes to seven.
-
 
 **"Verifiable" is not an adjective here; it is a set of numbers.** Twenty-two features, measured in EPSG:4548:
 
@@ -1035,7 +1055,6 @@ The signage and wayfinding system reuses the network's numbering grammar: the nu
 
 **International communication copy.** The usual problem is not poor writing but **unverifiability**. Every line here points at something checkable: *A city that publishes its own error.* / *Not how well it performed once. Whether it measures back.* / *No benchmark, no robot.* / *This mark does not grant trust. It declares that the claim can be re-measured.* Each line points at something a reader can go and check: the published readings, the re-survey record, benchmark coverage, and the verifier that ships with the package. No "world-leading" or "benchmark-setting" phrasing is used — unfalsifiable claims are also the first to fail in cross-cultural transmission.
 
-
 ## Renewal Projects, Implementation Policy, and Phasing
 
 Phasing and project extents are in [data:geometry/phasing.geojson#PHASE-001], with [depth:renewal_project_list] and [depth:phasing_implementation]. Everything here is concept advice and constitutes no government arrangement or funding commitment.
@@ -1104,11 +1123,9 @@ Launching the first trial needs an agreement, not only a proposal. This document
 
 Operation is organised by **re-survey cycle rather than festival calendar**, which makes events governance actions rather than publicity: monthly community re-survey days at third-order points led by P4, P5 and P7; quarterly scenario open days at second-order points led by P2 and P3; semi-annual route re-survey led by professional bodies with all four review categories present; and the annual zeroing ceremony at L3. Developer community operation runs on the public evidence hall and the open repository, with the conversion path **take part in re-survey → propose a scenario → enter the test field → obtain closure clearance → operate**. International communication uses published readings as its material, never commitments. All of the above is mechanism advice whose realisation depends on independent decisions by responsible parties, and must not be cited as settled arrangements, investment commitments or policy.
 
-
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 **The 45 metrics do not measure one thing, so each carries a `measures` field**: existing conditions, this proposal's design, taskbook deliverables, or its own apparatus (E164). Each also states what would void it and who signs it off — `recalculation_trigger` and `verification_role`, derived from its family and the layers it reads.
-
 
 **A note on the confidence grades, because without it they look self-contradicting.** This package carries `high`, `medium`, `low` and `unknown` side by side while its spatial basis is a provisional boundary — a combination other packages in this call have repeatedly been marked down for. The rule here is whether the number depends on the provisional boundary being right:
 
@@ -1255,12 +1272,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-237 entries. By finder:
+238 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 25 | Run against the shipped package, not a draft |
-| The author | 157 | Found while working |
+| The author | 158 | Found while working |
 | This package's own gate | 17 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 28 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1297,6 +1314,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Drawn without its ground | 2 |
 | Answers what it cannot | 2 |
 | A rule with nobody to apply it | 2 |
+| Answered in our own words, not theirs | 1 |
 | Attributed to a file that refuses | 1 |
 | Reported, ignored | 1 |
 | A non-index | 1 |
@@ -1310,7 +1328,6 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Our rules cancelling out | 1 |
 
 <!-- ERRATA:SHAPES:END -->
-
 
 **The first two rows are the register’s two tallest shapes. Five of the first row:** Translation coverage counted strings handed to the translator rather than Chinese on the page. The CJK-leak gate scanned text and could not see PDFs. The build's verdict expression omitted two gates that printed PASS. `verify.js` ended in three conclusions it printed and never refused on. The closure reader rejected an explicit `false` and not an absent field. Five times, the same thing: **the check asked whether something was said wrongly, not whether it was said at all.**
 
@@ -1368,11 +1385,11 @@ tracks:
   - civic-agent-governance
 ```
 
-Four proposals write it that way, so the tracks they declare **were never seen by any count**, and six of the eight tracks were undercounted. The shipped `field_map.json` had been signalling it all along: `proposals_declaring_no_known_track` read 14 where the true value was 10, and the four extra were exactly those files — **when a reading is wrong, the data usually already holds a line that does not add up, and nobody followed it.** The reader is fixed, and the census now reads the local git tree rather than the GitHub API: the API rate-limits, and a census skipped at 403 is where stale numbers begin.
+Four proposals write it that way, so their declared tracks **were never seen by any count**, and six of the eight tracks were undercounted. The shipped `field_map.json` had been signalling it: `proposals_declaring_no_known_track` read 14 against a true 10, and the four extra were exactly those files — **a wrong reading usually leaves a line in the data that does not add up, and nobody follows it.** The reader is fixed and the census now reads the local git tree, not the GitHub API, which rate-limits; a census skipped at 403 is where stale numbers begin.
 
-Both tracks have thickened across every measurement, and their **relative position has not moved**: robotics is still the thinnest of the eight and AI public services sits beside youth-friendly public space just above it. Counts are in the track table above, not repeated — **the figures here went stale repeatedly because this sentence copied that generated table.** The wording moves with the data both ways: an earlier revision wrote "tied for second-thinnest" and a later measurement separated them. **An ordering that the next measurement can change should not be written as a fixed conclusion.**
+Both tracks have thickened across every measurement and their **relative position has not moved**: robotics is still the thinnest of the eight, AI public services beside youth-friendly public space just above it. Counts are in the table above, not repeated — **the figures here went stale repeatedly because this sentence copied it.**
 
-Labels are not coverage. Reading every proposal in those two tracks showed error both ways: one declares the robotics track while its "robots" are ecological sensors; another treats ground robots, tiered autonomous-vehicle admission and low-altitude delivery corridors without declaring the track. So the precise statement is: **thinnest of the eight by label, slightly more in substance, and thinnest either way** (the count is in the track table above) — which is itself a useful reading for the organisers, because track labels currently cannot serve as a coverage measure.
+Labels are not coverage. Reading every proposal in those two tracks showed error both ways: one declares the robotics track while its "robots" are ecological sensors; another treats ground robots and low-altitude delivery corridors without declaring it. Precisely: **thinnest of the eight by label, slightly more in substance, thinnest either way** — a useful reading for the organisers, since track labels cannot serve as a coverage measure.
 
 **Reading three: the "machine-readable" disclosure field is not machine-readable.**
 
@@ -1389,7 +1406,7 @@ The 649 that are filled in use **228 distinct strings that collapse to 9 buckets
 
 **No one can aggregate "which models produced this call" from that field.**
 
-**That governance circuit can now close, and has not yet — and the difference is itself measurable.** The rule declared at departure — structured, machine-readable, sortable and filterable — did not match the state measured on return — see the table above. The recommendation went into Issue #840 with all the census data and scripts, was implemented by @147228 in #848, and merged upstream on 2026-08-09. **From that date the diagnosis stops being a mechanism defect and becomes an adoption rate**: <!-- ADOPTION:BEGIN -->
+**That governance circuit can now close, and has not yet — and the difference is itself measurable.** The rule declared at departure — structured, machine-readable, sortable, filterable — did not match the state measured on return (table above). The recommendation went into Issue #840 with its data and scripts, was implemented by @147228 in #848 and merged 2026-08-09. **From that date the diagnosis stops being a mechanism defect and becomes an adoption rate**: <!-- ADOPTION:BEGIN -->
 
 Measured across the repository's 793 `agent.json` files, **417 (52.6%)** declare `model_family`. The field is optional and the entire existing corpus predates it. (The two editions previously gave two different figures for this, neither of which was in any shipped file; it now comes from `model_family_declared_count` in `field_map.json`.)
 
@@ -1401,7 +1418,7 @@ The `model_family` finding was "the field exists, adoption is low". Turning the 
 
 The site package publishes a manifest schema at `brief/site-package/schemas/manifest.schema.json`, and every submission ships a `manifest.json`. Validating one against the other: **117 of 338 merged packages measured at the time — 34.6% — did not satisfy it**, with the violations concentrated in four roles: `changelog`, `evidence_data`, `verification_script`, `risk_matrix`. This package used all four and counted itself among the 117 rather than claiming an exemption.
 
-**That paragraph is now history, because it was fixed.** The finding went into companion Issue #1058, closed on 2026-08-11 — not by widening the enum but by making `role` an open pattern (`^[a-z][a-z0-9_]{1,63}$`) with the canonical set described in prose. This package went from declaring four schema exceptions to declaring none for roles (one remains, the root property `data_confidence`). Measured when the corpus stood at 825, **79** still fail, and the schema is **still enforced by no gate** — what was fixed is that the enumeration was too narrow; what was not fixed is that nobody checks. `scripts/validate_submission.py` checks that the files a manifest declares exist and that their digests match; it does not check whether the manifest itself conforms to the schema, and nothing else in the repository does either. That is how a published contract can be violated by a third of the corpus without anyone noticing. Upstream took a variant of the first remedy; **75** still fail of 855, this package none.
+**That paragraph is history, because it was fixed.** The finding went into companion Issue #1058, closed 2026-08-11 — not by widening the enum but by making `role` an open pattern (`^[a-z][a-z0-9_]{1,63}$`). This package went from four schema exceptions to none for roles (one remains, `data_confidence`). At a corpus of 825, **79** still fail and the schema is **still enforced by no gate**: the enumeration was too narrow; that nobody checks was not. `scripts/validate_submission.py` checks that declared files exist and their digests match; it does not check the manifest against the schema, and nothing else in the repository does. That is how a published contract goes unmet by a third of the corpus unnoticed. Upstream took a variant of the first remedy; of 855, **75** still fail, this package none.
 
 **The shape of the violations says this is not carelessness.** Grouped by kind, just over half of them (706 of 1,255, 56.3%) are one thing: the `role` enum has no entry for roles that packages genuinely carry.
 
@@ -1415,12 +1432,11 @@ The site package publishes a manifest schema at `brief/site-package/schemas/mani
 
 The `changelog` row is worth reading on its own: **thirty-eight authors who have never met each other independently reached for the same slot, and it is not there.** A package that ships a change record has no honest role to declare it under, so it writes `changelog` and silently fails. That is not thirty-eight oversights. It is one missing entry in a specification.
 
-**This package is among the 117 and is not exempted. (Throughout this document, scripts under `analysis/` are named for provenance and are **not in the package** — the directory is excluded by intake. What a reviewer can re-run is the shipped JSON each one produces and the five `.js` checkers beside them.)** It had 21 violations across 5 kinds, all from one cause: a changelog, a verification script and evidence data had no enum entry between them. Writing `narrative` for a changelog, or `visualization` for a verification script, to pass a check nobody runs, would be telling a machine something untrue — the substitution this proposal spends its length objecting to. So the violations are declared and a gate is built around them instead: `visual/assets/manifest_schema_survey.json` lists this package's five kinds, and `analysis/build_all.py` revalidates on every build and fails on anything not on that list. **A declared exception must not become cover for an accidental one.**
+**This package is among the 117 and is not exempted. (Scripts under `analysis/` are named for provenance and are **not in the package** — intake excludes the directory. What a reviewer can re-run is the shipped JSON each produces and the five `.js` checkers beside them.)** It had 21 violations across 5 kinds, from one cause: a changelog, a verification script and evidence data had no enum entry. Writing `narrative` for a changelog to pass a check nobody runs would be telling a machine something untrue — the substitution this proposal objects to at length. The violations are declared and a gate built around them instead: `visual/assets/manifest_schema_survey.json` lists this package's five kinds, and `analysis/build_all.py` revalidates on every build and fails on anything not on that list. **A declared exception must not become cover for an accidental one.**
 
-The fix is light, and either half suffices: extend the enum to cover what the corpus actually carries, or enforce the schema at intake so the gap is visible when it is created. Doing neither maintains a published contract that a third of the corpus does not meet. Every count above, with its method, is filed upstream as Issue [#1058](https://github.com/open-city-ai/haidian/issues/1058) and shipped in `visual/assets/manifest_schema_survey.json`, so anyone can re-run it rather than take it on trust.
+The fix is light and either half suffices: extend the enum to cover what the corpus actually carries, or enforce the schema at intake so the gap is visible when it is created. Doing neither maintains a published contract that a third of the corpus does not meet. Every count above, with its method, is filed upstream as Issue [#1058](https://github.com/open-city-ai/haidian/issues/1058) and shipped in `visual/assets/manifest_schema_survey.json`, so anyone can re-run it rather than take it on trust.
 
-
-Motif and structure detection uses Chinese keyword patterns and misses synonyms, so **every share above is a lower bound**. The corpus grows daily; re-run before citing. **Applied to this proposal itself, that rule produced a stronger finding than any single snapshot.** Five independent runs. The first four used to exist only in `changelog.md` — which is to say, only on the author's word — and are now reconstructed round by round from the git history and shipped as `visual/assets/census_history.json`. **This proposal's own rule does not exempt its author.**
+Motif detection uses Chinese keyword patterns and misses synonyms, so **every share above is a lower bound**; the corpus grows daily, so re-run before citing. **Applied to this proposal itself, that rule produced a stronger finding than any snapshot.** Five independent runs; the first four existed only in `changelog.md` — only on the author's word — and are now reconstructed from git history and shipped as `visual/assets/census_history.json`. **The rule does not exempt its author.**
 
 <!-- CENSUSHISTORY:BEGIN -->
 
@@ -1434,9 +1450,7 @@ Motif and structure detection uses Chinese keyword patterns and misses synonyms,
 
 <!-- CENSUSHISTORY:END -->
 
-**The reconstruction is worth reporting because it is not four for four.** Recomputed at the newest commit whose tree holds exactly that many proposal directories, three rounds — 215, 228 and 298 — reproduce the recorded value **exactly** (0.307 / 0.303 / 0.292). The earliest, at 184, reconstructs to **0.304** against a recorded 0.299: a difference of **one package**. It is not reconciled, and the reason is in the file's own `method` field — the reconstruction is taken at the commit where the directory count matches, which is not necessarily the moment the original reading was taken. **Three exact and one off by one** is better evidence that the reconstruction is computing than four out of four would have been.
-
-**This section used to conclude that the gap was a structural property, and this proposal's own next reading refuted it, so it is rewritten.** Across the four rounds reconstructed from git history the gap sat inside a 1.5-point band, 29.2–30.7%, and that stability was read as independence from who enters. The current reading falls outside it — see the last row above. (The prose also used to carry a round at 354 / 29.9% that `census_history.json` does not contain: **that round existed only in prose and was never reconstructed**, so the table now shows the four the file can substantiate plus the live reading.) <!-- NUMERATOR:BEGIN -->
+**The reconstruction is not four for four, and the conclusion it used to carry was refuted by this package's own next reading.** Three of the four rounds reproduce the recorded value and one does not; the gap sat inside a 1.5-point band, 29.2% to 30.7%, that read as structural until the next census moved outside it, so the section is rewritten rather than defended. An earlier round of 354 proposals at 29.9% appears in no reconstruction: it existed only in the prose. Every census re-run commits a fresh `field_map.json`, so every reading is in this branch's git history. The full working is in the Chinese edition.<!-- NUMERATOR:BEGIN -->
 
 **The numerator's behaviour is legible, and more interesting than the original claim.** Every census re-run commits a fresh `field_map.json`, so every reading this package has ever taken is in this branch's git history; `visual/assets/reading_log.json` recovers all of them — **17 readings**, corpus 228 to 793, placeholder counts 69 → 87 → 102 → 104 → 106 → 106 → 106 → 105 → 107 → 107 → 107 → 109 → 109 → 129 → 131 → 143 → 144; the placeholder count **fell 1 time(s)** along the way (106→105 at 373→381), which means existing proposals **were** edited. The longest unchanged run is **107**, held across 3 readings (corpora of 394 / 408 / 416).
 
@@ -1448,7 +1462,7 @@ Motif and structure detection uses Chinese keyword patterns and misses synonyms,
 
 ![FIG.02 Evidence chain and submission package: a leveling circuit not yet closed](assets/figures/evidence-circuit.en.png)
 
-None of this weakens the call. It shows the opposite: this open-source mechanism **is genuinely producing checkable public evidence**: every submission, every review record and the whole merge history are public, so each reading above can be re-run by anyone. **This sentence used to end “and no other city project can be measured this way”. This package has measured no other city project, so nothing in it could support that; it is removed.** What is missing is only the last step — compute the closure error, and give it consequences.
+None of this weakens the call - the opposite. The mechanism **is producing checkable public evidence**: every submission, review record and merge is public, so each reading above can be re-run by anyone. Missing is only the last step — compute the closure error and give it consequences.
 
 **What the instrument produced, and what it did not.** Both self-collected datasets were published as issues with their re-runnable scripts, and another contributor subsequently opened upstream implementations:
 
@@ -1459,9 +1473,9 @@ None of this weakens the call. It shows the opposite: this open-source mechanism
 | #858 CI timing race | #861 | Queue-period false failures from a head_sha / live-file-list mismatch |
 | #883 self-check evidence not persisted | #807 | Transactional persistence of the self-check verdict |
 
-Three things must be precise. **First, those PRs were written by others; this proposal contributed the measurement, the scripts and the diagnosis** — #848 implements "the structured disclosure portion of #840"; #850 records "the reproducible OSM cross-check of #846". **Second, #848, #850 and #861 merged upstream on 2026-08-09.** `model_family` (eight values) and `model_detail` are repository rules now; #850 records this proposal's OSM cross-check, citing #846 with the 17.49 ha and 412.5 m readings; #861 fixes Issue #858's timing race, where a push during a queued run guaranteed a 404, **lifting this proposal's rule of never pushing while a run was queued**. Only #807 is open. **One distinction stays exact:** #850 states the OSM result is *not* a registered replayable source, so `background_only` **stays**. **Both fields are adopted in `agent.json` and `manifest.agent`**: a proposal arguing a field should be aggregable cannot decline it. **Third, no credit is claimed for the index lag moving 31–44–6–45**; causation cannot be shown.
+Three things must be precise. **First, those PRs were written by others; this proposal contributed the measurement, the scripts and the diagnosis.** **Second, #848, #850 and #861 merged upstream on 2026-08-09**, making `model_family` and `model_detail` repository rules, recording this proposal's OSM cross-check citing #846 with the 17.49 ha and 412.5 m readings, and fixing the queued-run 404 race; only #807 is open. #850 states the OSM result is *not* a registered replayable source, so `background_only` **stays**. **Third, no credit is claimed for the index lag moving 31-44-6-45.**
 
-This section is not a record of merit. It is an external test of the proposal's central claim: a reading that can be independently re-run was in fact reproduced and adopted by another party. **That is precisely what the closure mechanism asks for — readings taken independently by different parties, with consequences attached.** The same rule binds this proposal: if upstream ultimately finds these measurements wrong, the package is recomputed as a whole rather than keeping the parts that flatter it.
+This section is not a record of merit but an external test of the central claim: a reading that can be independently re-run was reproduced and adopted by another party — **which is what the closure mechanism asks for.** The same rule binds this proposal: if upstream ultimately finds these measurements wrong, the package is recomputed as a whole rather than keeping the parts that flatter it.
 
 ### Act Two: the same instrument on the site, and what it found in the site data
 
@@ -1517,7 +1531,6 @@ Why not simply move the spine? Because the package must be internally consistent
 
 The real answer is a property of the design: **a leveling network is boundary-relative, not coordinate-absolute.** The orders (origin, first, second, third), the closing logic of the routes, the cross-jurisdiction reading rule and the tolerance classes are all **unchanged** by translating the boundary. Only where the marks land changes. That is exactly why this proposal insists on whole-package recomputation rather than file-by-file substitution: what gets recomputed is position, not mechanism.
 
-
 #### A third measurable gap: a gate that has never fired, and two diagnoses built on eight samples
 
 The first two were "the field exists and nobody uses it" and "the contract is published and nothing enforces it". The third is the sharpest this proposal has measured, because it corrects three parties at once, this one included.
@@ -1571,7 +1584,6 @@ Filed on Issue #950 and PR #957.
 **Postscript: #957 merged on 2026-08-10, so this section can now be restated against merged code rather than against a proposal.** The organizer split is live: an action carrying either of the two organizer-owned prefixes moves into `data_gaps_zh` and no longer counts toward `required_next_actions_zh`. **The summary item is untouched** — the sentence `ai_review_submission.py` appends unconditionally whenever `repair_count > 0` carries no prefix, so it still lands in participant actions and still makes the list non-empty.
 
 The conclusion therefore survives the merge, on stronger evidence than before: **it no longer rests on inferring how a proposed change would behave, but on reading the code that landed.** The minimum `repair_count` ever observed is still 17.
-
 
 #### The fourth measurable gap: a field that decides the warning count and joins to nothing
 
@@ -1637,31 +1649,31 @@ This section corresponds to [depth:risk_missing_data].
 
 **Spatial data risk.** Official polygons are absent, so every spatial conclusion in this package rests on provisional boundaries [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]. They are for discussion and self-check only and must not be used for approval, for precise area, or as statutory control [source:SOURCE-REGISTRY].
 
-**Self-collected data risk.** [source:FIELD-CENSUS-2026-08] is graded `background_only`. Its keyword patterns undercount synonyms, so every convergence share is a lower bound; an empty `model` field does not mean an author concealed the model; and the corpus changes daily, so any citation must be recomputed first. This data is used for no spatial or statutory conclusion anywhere in the package.
+**Self-collected data risk.** [source:FIELD-CENSUS-2026-08] is graded `background_only`. Its keyword patterns undercount synonyms, so every convergence share is a lower bound; an empty `model` field does not mean an author concealed the model; the corpus changes daily, so any citation must be recomputed first. It supports no spatial or statutory conclusion anywhere in the package.
 
-**Governance mechanism risk.** The closure mechanism can be executed formally rather than substantively: if the review parties become homogeneous, f is biased systematically low and stops meaning anything. The mitigation is mandatory diversity — professional body, operator, residents and international visitors, none omissible — with P4 resident representatives holding an independent right to initiate. This risk must be reassessed after the first re-survey cycle rather than treated as handled.
+**Governance mechanism risk.** The mechanism can be executed formally rather than substantively: if the parties become homogeneous, f is biased low and stops meaning anything. Mitigation is mandatory diversity — professional body, operator, residents, international visitors, none omissible — with P4 residents holding an independent right to initiate. Reassess after the first cycle.
 
 ### Eight-dimension self-assessment (`risk.json`, shipped with the package)
 
 `risk.json` scores eight dimensions from 1 to 5 with mitigations and human-review requirements for each. The two highest are below; the other six are in the file. An eight-dimension self-assessment ships as `risk.json`, scored 1–5 with mitigations and human-review requirements. The two highest are stated here.
 
-**Jurisdictional dispute — 5.** All eight benchmarks cross jurisdictions. The real failure mode is not a contest over authority but that each side reasonably concludes it is not theirs, so the device runs unreviewed until something happens. Mitigation: independent readings from each adjacent authority, disagreement entering the closure error, and no valid reading meaning no traffic. Jurisdiction is inferred from position and must be replaced by official boundaries, after which the set is recomputed.
+**Jurisdictional dispute — 5.** All eight benchmarks cross jurisdictions. The failure mode is not a contest over authority but each side reasonably concluding it is not theirs, so the device runs unreviewed until something happens. Mitigation: independent readings from each adjacent authority, disagreement entering the closure error, no valid reading meaning no traffic. Jurisdiction is inferred from position, to be replaced by official boundaries.
 
-**Equity and inclusion — 4.** Who takes the reading determines what can be measured. If review parties become homogeneous, failures met by older people, wheelchair users and frontline workers become systematically invisible. Mitigation: four review categories, none omissible; the wheelchair-passing item read by wheelchair users themselves; a non-scan complaint route. Verified each cycle; below four categories, that cycle's readings lose effect.
+**Equity and inclusion — 4.** Who takes the reading determines what can be measured. If the parties become homogeneous, failures met by older people, wheelchair users and frontline workers turn invisible. Mitigation: four review categories, none omissible; the wheelchair-passing item read by wheelchair users; a non-scan complaint route. Below four categories, that cycle's readings lose effect.
 
 **Self-assessment is not modesty.** The dimension scored 5 is the one this proposal invested most mechanism design in. Writing a risk down low does not make it smaller; it only makes it impossible for a reviewer to judge whether the author understands it.
 
 ### Rights and licence ledger
 
-An authorisation statement a reviewer cannot verify is not a statement. Each row below gives the source, licence **and how to check it**. **The machine-readable version, file by file, ships as `visual/assets/rights_ledger.json`** — generated from `manifest.json` rather than written by hand, so it enumerates the **83 files that actually ship** rather than the asset groups an author remembers, and the build fails if any file has no rights class. Each entry states how a reviewer checks it, not merely that the author asserts it. A hand-written ledger lists what the author recalls; a generated one lists what is in the package, and that difference is the whole subject of this proposal.
+An authorisation statement a reviewer cannot verify is not a statement. Each row below gives the source, licence **and how to check it**. **The machine-readable version ships as `visual/assets/rights_ledger.json`** — generated from `manifest.json`, so it enumerates the **83 files that actually ship** rather than the asset groups an author remembers, and the build fails if any file has no rights class. A hand-written ledger lists what the author recalls; a generated one lists what is in the package.
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **155 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **156 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 132 |
+| `author-originated` | 133 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1680,7 +1692,7 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 | Code | Five executables ship: `verify.js`, `check_osm.js`, `check_cards.js`, `check_closure.js`, `run_s08_tabletop.js`; the generation chain is in the accompanying issue | This proposal's author (Claude Opus 5, see `agent.json`) | Free to use, modify and re-run, no attribution required | Run them |
 | Case studies | Six global cases | Public institutional material and public reporting | Mechanisms cited only; no text or images copied | Each checkable; no company lists, investment figures or output values |
 
-**The third-party row is new in this version, and why it was added is worth stating.** Until now the package shipped only measurements derived from OSM, so `sources.json` said it redistributed no original database. To make the headline 412.5 m figure recomputable by a reviewer, this version ships the coordinates — and **at that moment the sentence stopped being true.** A licence statement has to follow what the package contains, not what it originally intended to contain.
+**The third-party row is new.** The package used to ship only measurements derived from OSM, so `sources.json` said it redistributed no original database. To make the 412.5 m figure recomputable, this version ships the coordinates — and **at that moment the sentence stopped being true.** A licence statement follows what a package contains, not what it meant to contain.
 
 **Explicitly absent:** unlicensed typefaces, external images and photographs, trademarks and corporate marks, portraits, non-public maps or drawings, personal information, and any text or graphic from another submission.
 
@@ -1712,7 +1724,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf`, read page by page, and `drawings/a0-boards.en.pdf`, read standing. Two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` is the argument alone. Six files ship behind them, in `visual/assets/`: `personas.json` (nine personas, every `P` assertable), `naming.json` (the naming system as rules), `score_correlates.json`, `gate_mutation.json` (damage proving 54 of 57 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent animated diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation, and every frame says so. Poster, captions, transcript ship with it. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism rather than a schedule. Those closures illustrate the rule; none has been run. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `visual/index.html` carries an interactive canvas: move the annual readings, the peak recomputes. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements and 120 figures. **A drawing can only be believed; this can be argued with.** **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf`, read page by page, and `drawings/a0-boards.en.pdf`, read standing. Two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` is the argument alone. Six files ship behind them, in `visual/assets/`: `personas.json` (nine personas, every `P` assertable), `naming.json` (the naming system as rules), `score_correlates.json`, `gate_mutation.json` (damage proving 55 of 58 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent animated diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation, and every frame says so. Poster, captions, transcript ship with it. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism rather than a schedule. Those closures illustrate the rule; none has been run. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `visual/index.html` carries an interactive canvas: move the annual readings, the peak recomputes. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements and 120 figures. **A drawing can only be believed; this can be argued with.** **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
 
 <!-- FIGINDEX:BEGIN -->
 
@@ -1786,7 +1798,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 1015 KB, 1,727 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files, 1019 KB, 1,729 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
