@@ -53,6 +53,25 @@ from github_pr_validation import (  # noqa: E402
 from validate_local_submission import discover_submission_files  # noqa: E402
 
 
+class LandUseCodeRegistryTests(unittest.TestCase):
+    def test_wetland_and_commercial_service_codes_match_official_numeric_system(self) -> None:
+        registry = json.loads(
+            (REPO_ROOT / "brief/site-package/enums/land_use_codes.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        labels = {item["code"]: item["label_zh"] for item in registry["codes"]}
+
+        self.assertEqual("湿地", labels["05"])
+        self.assertEqual("商业服务业用地", labels["09"])
+        self.assertEqual(
+            {"0901", "0902", "0903", "0904"},
+            {code for code in labels if code.startswith("09") and len(code) == 4},
+        )
+        self.assertIn("自然资发〔2023〕234号", registry["note"])
+        self.assertIn("GB 50137-2011", registry["note"])
+
+
 class ComplianceMatrixNamespaceTests(unittest.TestCase):
     def test_standard_ids_are_separate_from_source_ids(self) -> None:
         requirements = []
