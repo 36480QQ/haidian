@@ -3126,6 +3126,24 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertIn("visual/index.en.html", "\n".join(report.errors))
             self.assertIn("iframe", "\n".join(report.errors))
 
+    def test_undeclared_svg_asset_receives_xml_safety_validation(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            asset = root / base / "visual" / "assets" / "nested" / "active.svg"
+            asset.parent.mkdir(parents=True)
+            asset.write_text(
+                '<svg xmlns="http://www.w3.org/2000/svg"><image href="https://example.com/a.png"/></svg>',
+                encoding="utf-8",
+            )
+            changed.append(f"{base}/visual/assets/nested/active.svg")
+            report = validate_submission(root, "alice", changed)
+            self.assertFalse(report.ok)
+            joined = "\n".join(report.errors)
+            self.assertIn("visual/assets/nested/active.svg", joined)
+            self.assertIn("external, data, or script URIs", joined)
+
     def test_stale_translation_manifest_hash_is_non_blocking(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
