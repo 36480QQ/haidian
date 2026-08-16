@@ -747,7 +747,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 206,
+      "value": 207,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -1185,13 +1185,13 @@
         "A-OSM-001"
       ],
       "evidence_class": "background_only",
-      "confidence_is_about": "reading",
-      "metric_class": 2,
-      "measures": "existing_conditions",
-      "recalculation_trigger_zh": "新的 OSM 抽取或缝合点几何变动时重算。",
-      "recalculation_trigger_en": "A new OSM extract, or any change to the stitching geometry.",
-      "verification_role_zh": "测绘与地理信息",
-      "verification_role_en": "Survey and geographic information",
+      "confidence_is_about": "computation",
+      "metric_class": "package_self_count",
+      "measures": "proposed_design",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "交通工程",
+      "verification_role_en": "Transport engineering",
       "note_zh": "**这条带建成之后，多少人十分钟走得到一个水准点。** 同一张实测步行图，加上本方案自己的十一处缝合与三条测点支线，其余不变：十分钟可达的建筑基底从 **232 个增加到 261 个**，净增 **29 个**；可达面积从 203.3 ha 增至 220.6 ha。**这就是这条带在地面上买到的东西**——数出来的，不是声称的；如果它很小，那也是一条发现。",
       "note_en": "**How many more people reach a benchmark in ten minutes if this is built.** The same mapped walking network, plus this proposal's own eleven stitching links and three benchmark spurs and nothing else: building footprints within a ten-minute walk go from **232 to 261**, a gain of **29**, and the catchment from 203.3 ha to 220.6 ha. That is what the belt buys on the ground - counted, not asserted, and published either way."
     }
