@@ -9,3 +9,8 @@ The conceptual media under `assets/media/` (cover.webp, merge-circuit.webp, merg
 No third-party images, faces, voices, trademarks, or personal information are included. The images use only abstract diagrammatic representations; no identifiable persons or private interiors appear. Fonts are system fonts used locally; no font files are redistributed.
 
 Generated/conceptual media are presentation artifacts and never serve as evidence for boundaries, areas, current conditions, or public consent. All boundary, metric, and compliance evidence remains in GeoJSON, metrics.json, matrices, and self-check results as declared in manifest.json.
+
+
+## v0.12 redraw
+
+In v0.12 the full figure set (assets/figures/* and assets/media/*) was redrawn with the same matplotlib/Pillow toolchain using in-package geometry projected to EPSG:4548 and the same system fonts. All maps are original vector-style concept illustrations; they are not photographs, not current conditions, not official renderings, and not approved plans. No third-party assets were used.
