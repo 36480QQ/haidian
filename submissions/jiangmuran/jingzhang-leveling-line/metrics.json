@@ -1166,6 +1166,34 @@
       "verification_role_en": "Survey and GIS",
       "note_zh": "以本包同一份 OSM 缓存建可步行图（步行可用的道路等级逐条写明，端点相距 12 m 以内视为同一节点），按测序顺序逐段最短路相加得 11,472 m，对照本方案画出的主脊 9,443 m——**今天走这一趟要多走 2,028 m，倍率 1.21**。这个差就是这条带要做的事：**一条不减少绕行的带子，什么也没有改变**。该数为下界——快速路辅路在本缓存里未单独标注，因此有些本可走的路没被算进来。",
       "note_en": "A walkable graph from this package's own OSM cache (the usable highway classes are listed in the script; endpoints within 12 m are one node), shortest path between each consecutive pair of benchmarks in survey order, summed: 11,472 m against the 9,443 m spine this proposal draws - **2,028 m further today, a factor of 1.21**. That difference is what the belt is for: a belt that removes no detour changes nothing. A lower bound - service roads beside trunk roads are not separately tagged in this cache, so some walkable ground is missing from the graph."
+    },
+    "walk10_benchmark_reach_gain_buildings": {
+      "status": "known",
+      "value": 29,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/osm_fabric.json",
+        "geometry/roads.geojson"
+      ],
+      "formula": "buildings whose centroid falls in the 10-minute walk catchment of any benchmark, with this proposal's links minus without them",
+      "confidence": "medium",
+      "assumptions": [
+        "OpenStreetMap via the Overpass API, ODbL 1.0, in EPSG:4548. Crowd-sourced: absence from the map is not absence from the ground.",
+        "十分钟按 800 m 网络距离计，不是半径；建筑以形心计入；**可达不等于会用**——十分钟内到得了是必要条件，不是充分条件。"
+      ],
+      "assumption_ids": [
+        "A-OSM-001"
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "reading",
+      "metric_class": 2,
+      "measures": "existing_conditions",
+      "recalculation_trigger_zh": "新的 OSM 抽取或缝合点几何变动时重算。",
+      "recalculation_trigger_en": "A new OSM extract, or any change to the stitching geometry.",
+      "verification_role_zh": "测绘与地理信息",
+      "verification_role_en": "Survey and geographic information",
+      "note_zh": "**这条带建成之后，多少人十分钟走得到一个水准点。** 同一张实测步行图，加上本方案自己的十一处缝合与三条测点支线，其余不变：十分钟可达的建筑基底从 **232 个增加到 261 个**，净增 **29 个**；可达面积从 203.3 ha 增至 220.6 ha。**这就是这条带在地面上买到的东西**——数出来的，不是声称的；如果它很小，那也是一条发现。",
+      "note_en": "**How many more people reach a benchmark in ten minutes if this is built.** The same mapped walking network, plus this proposal's own eleven stitching links and three benchmark spurs and nothing else: building footprints within a ten-minute walk go from **232 to 261**, a gain of **29**, and the catchment from 203.3 ha to 220.6 ha. That is what the belt buys on the ground - counted, not asserted, and published either way."
     }
   }
 }
