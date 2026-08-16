@@ -138,6 +138,17 @@
     "近/中/远三期概念分期"
    ]
   },
+  "pilot_count": {
+   "status": "known",
+   "value": 5,
+   "unit": "count",
+   "source_files": [],
+   "formula": "count(Phase-0 pilot projects defined in proposal chapter 10)",
+   "confidence": "low",
+   "assumptions": [
+    "5 个轻启动试点为概念设计，周期/指标待专业评估"
+   ]
+  },
   "mixed_unit_count": {
    "status": "known",
    "value": 7,
