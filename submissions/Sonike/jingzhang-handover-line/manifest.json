@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d0543f81e129b81d71377e840dd951a6f61e38c0771dabb94d7b85cbf5527f38"
+      "sha256": "20f05180534f8bdccaabbbc1d66533adbe29c81e8e21b415f47bd8dbf3679dd8"
     },
     {
       "path": "agent.json",
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6143affa033330a2c81e580c5883d7605dea3af5245b7ba44bebae89a63d7fb2"
+      "sha256": "fafa9aa101f0fd439bc94fefdb5bec56002516309f0ea381a38085710774a389"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "608dc72899c3614a5e9c7acb3078d77fb7d4700d185839a590a1ae13d327df16"
+      "sha256": "8c15e880f6371eb0de18ad37c32e22dd6990cc3d8271ff4c6332756729171536"
     },
     {
       "path": "report/narrative.md",
@@ -210,7 +210,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "59b0ac8ebc6cd939769a2f54b96e1a6f84b5d8932e3409914ed418f97af013bf"
+      "sha256": "f22f54096b8315aed091b998279470733f0489c34355045eae4218504d8d12d9"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3ec0304b4a9d27af9583b2f3ec8b36bd9dc9ad14b35dadcb7345df8424a60133"
+      "sha256": "f9f6c6fa12538b539081bfaef293e8adf424dc69fd3b182a4e8085f623de847a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -349,7 +349,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "b4b8d84e199080e47523462be5b24a1b9902ead609198c937718ddf42ce6c10f"
+      "sha256": "380a2343affc5a6493b39fa3dbcc0b1e01ffcbe9e31a72f52e77f468a5020386"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -498,6 +498,29 @@
       "description_en": "The English counterpart of the audio guide, matching the Chinese version section by section. Also locally synthesised, not a human recording.",
       "transcript": "assets/media/audio-guide-en.md",
       "caption": "assets/media/audio-guide-en.vtt"
+    },
+    {
+      "path": "assets/tactile/tactile-corridor-map.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "4669253c98477d32c72383a08ab52b5c8b51a2191600083cd5c8be3d00f4b1e9",
+      "title_zh": "京张交接线 · 触觉走廊图（可制版矢量图）",
+      "title_en": "Jing-Zhang Handover Line · tactile corridor map (embossing-ready vector)",
+      "description_zh": "面向热敏膨胀纸打印或激光雕刻制版的矢量走廊图，用于兑现组件库中「触觉导视牌」与 SCN-05 无AI兜底所写的「触觉地图」。走廊轮廓、慢行主轴与八条东西支线取自 geometry/*.geojson 的真实几何；三座交接场用圆/方/三角三种可触辨形状区分，十二个人工接管点用实心圆点，四处朝圣地标用菱形——**全图不依赖颜色即可辨认**。凸起高度、点径与间距不写死：须按 GB/T 15720 及现行无障碍设计规范由制版厂商核定，图内已注明此边界。",
+      "description_en": "A vector corridor map prepared for swell-paper printing or laser embossing, delivering the tactile map named in the component library's tactile wayfinding sign and in the no-AI fallback of SCN-05. Corridor outline, active-mobility spine and the eight east-west stitch links come from the real geometry in geometry/*.geojson; the three yards are distinguished by circle / square / triangle, the twelve human-takeover points by filled dots and the four civic landmarks by diamonds — **the whole drawing is legible without colour**. Raised height, dot diameter and spacing are deliberately not fixed here: they must be verified by the fabricator against GB/T 15720 and current accessibility codes, as stated on the drawing."
+    },
+    {
+      "path": "assets/tactile/tactile-corridor-map.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/tactile/tactile-corridor-map.svg",
+      "sha256": "63e0e6fb013ee0410e625680e451f4da648fc28cbff41f26cb8c53b8b9df9438",
+      "title_zh": "京张交接线 · 触觉走廊图（英文版）",
+      "title_en": "Jing-Zhang Handover Line · tactile corridor map (English edition)",
+      "description_zh": "触觉走廊图的英文版，图形与中文版完全相同，仅文字为英文。",
+      "description_en": "English edition of the tactile corridor map; graphics identical to the Chinese edition, text in English only."
     },
     {
       "path": "visual/assets/governance/role-spec.schema.json",
