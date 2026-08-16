@@ -79,13 +79,16 @@ def normalize_id(value: str, fallback_url: str) -> str:
 
 
 def canonicalize_url(url: str) -> str | None:
+    value = (url or "").strip()
     try:
-        parsed = urllib.parse.urlsplit((url or "").strip())
+        parsed = urllib.parse.urlsplit(value)
         hostname = parsed.hostname
         _ = parsed.port
     except ValueError:
         return None
     if parsed.scheme.lower() not in {"http", "https"} or not parsed.netloc or not hostname:
+        return None
+    if any(char.isspace() for char in value):
         return None
     scheme = parsed.scheme.lower()
     netloc = parsed.netloc.lower()

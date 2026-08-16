@@ -60,6 +60,16 @@ class SourceRegistryDraftTests(unittest.TestCase):
                         "url": "https://example.com:99999/source",
                     },
                     {
+                        "id": "broken_005",
+                        "title": "Whitespace in hostname URL",
+                        "url": "https://exa mple.com/source",
+                    },
+                    {
+                        "id": "broken_006",
+                        "title": "Whitespace in path URL",
+                        "url": "https://example.com/path with spaces",
+                    },
+                    {
                         "id": "valid_001",
                         "title": "Valid source",
                         "url": "https://example.com/source",
@@ -92,7 +102,7 @@ class SourceRegistryDraftTests(unittest.TestCase):
             self.assertNotIn("Traceback", completed.stderr)
             summary = json.loads(completed.stdout)
             self.assertEqual(summary["source_count"], 1)
-            self.assertEqual(summary["skipped_invalid_urls"], 4)
+            self.assertEqual(summary["skipped_invalid_urls"], 6)
             self.assertEqual(summary["validation_errors"], [])
             draft = json.loads(out_path.read_text(encoding="utf-8"))
             self.assertEqual(["DRAFT-VALID-001"], [source["source_id"] for source in draft["sources"]])
