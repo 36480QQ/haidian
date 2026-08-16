@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.811,
+ "overall_ratio": 0.798,
  "floor": 0.75,
  "sections": [
   {
@@ -33,30 +33,30 @@
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
-   "zh_chars": 5555,
-   "en_words": 3711,
-   "ratio": 0.852,
+   "zh_chars": 6466,
+   "en_words": 4037,
+   "ratio": 0.796,
    "pass": true
   },
   {
    "section": "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
    "zh_chars": 2114,
-   "en_words": 1420,
-   "ratio": 0.857,
+   "en_words": 1394,
+   "ratio": 0.841,
    "pass": true
   },
   {
    "section": "Detailed Design of Key Areas",
    "zh_chars": 3771,
-   "en_words": 2518,
-   "ratio": 0.852,
+   "en_words": 2502,
+   "ratio": 0.846,
    "pass": true
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
    "zh_chars": 11151,
-   "en_words": 7283,
-   "ratio": 0.833,
+   "en_words": 7047,
+   "ratio": 0.806,
    "pass": true
   },
   {
@@ -76,8 +76,8 @@
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
    "zh_chars": 5326,
-   "en_words": 3391,
-   "ratio": 0.812,
+   "en_words": 3307,
+   "ratio": 0.792,
    "pass": true
   },
   {
@@ -111,8 +111,8 @@
   {
    "section": "References",
    "zh_chars": 4785,
-   "en_words": 2834,
-   "ratio": 0.755,
+   "en_words": 2823,
+   "ratio": 0.753,
    "pass": true
   }
  ],
