@@ -252,6 +252,26 @@ AI 场景卡（不少于10张）：
 
 全部面积在 EPSG:4548 下由提交 GeoJSON 复算 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。容积率状态为 unknown：官方管控值缺失，按边界条款不作结论 [metric:floor_area_ratio] [depth:metrics_recalculation]。公告 1.3/1.4/1.5 与 agent.1–agent.6 的覆盖关系记录在 `compliance_matrix.json`，强制性标准记录在 `standard_matrix.json`，设计深度项记录在 `design_depth_matrix.json`，正文不重复机器索引。
 
+### 图面数字的可追溯登记
+
+图面上出现的每一个数字，都必须能追溯到 `metrics.json` 中一条可复算、带公式、带免责说明的登记指标。下表登记本方案的**模型内网络指标**——它们全部出现在图面上，因此全部登记，并逐条声明**不是法定规划指标**：
+
+| 指标 | 值 | 单位 | 复算公式 | 引用 |
+|---|---|---|---|---|
+| `network_node_coverage` | 0.387 | ratio | `retained_network_nodes / lattice_nodes` | [metric:network_node_coverage] |
+| `network_independent_loops` | 109 | count | `edges - nodes + connected_components` | [metric:network_independent_loops] |
+| `network_loop_density` | 0.424 | ratio | `independent_loops / retained_network_nodes` | [metric:network_loop_density] |
+| `network_fault_tolerance` | 0.967 | ratio | `share of single-edge removals that keep sampled node pairs connected` | [metric:network_fault_tolerance] |
+| `network_failure_resilience_betweenness` | 0.399 | ratio | `area under the largest-connected-component curve, edges removed highest-edge-betweenness first` | [metric:network_failure_resilience_betweenness] |
+| `network_failure_resilience_random` | 0.315 | ratio | `same curve, mean of 5 random removal orders` | [metric:network_failure_resilience_random] |
+| `network_recovery_resilience` | 0.684 | ratio | `0.5*min(loop_density/0.5,1) + 0.5*min(degree_CV/0.8,1)` | [metric:network_recovery_resilience] |
+| `network_total_length_norm_mst` | 0.55 | ratio | `design_total_length / mst_total_length` | [metric:network_total_length_norm_mst] |
+| `land_use_coverage_ratio` | 1 | ratio | `union(land_use polygons) / site_boundary area` | [metric:land_use_coverage_ratio] |
+| `load_scenario_min_jaccard` | 0.679 | ratio | `min over interpretable load scenarios of |E_scenario ∩ E_shipped| / |E_scenario ∪ E_shipped|` | [metric:load_scenario_min_jaccard] |
+| `solver_final_step_backbone` | 6.14e-09 | dimensionless | `max |D_(k+1) - D_k| at the final iteration, gamma = backbone` | [metric:solver_final_step_backbone] |
+
+上表每一项都可由提交的 GeoJSON 与公开的生成参数复算。**它们衡量的是本方案生成的网络本身，不是场地的法定管控指标**；任何一项都不得被读作容积率、建筑密度、道路红线或控规结论 [depth:metrics_recalculation]。
+
 ### 中英实质等价核对
 
 自动双语门禁只检查文件配对，不检查主张是否等义。以下逐项自核：

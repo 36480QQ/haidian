@@ -88,6 +88,177 @@
       "assumptions": [
         "对应公告三处重点区域，边界为临时粗略范围。"
       ]
+    },
+    "network_node_coverage": {
+      "status": "known",
+      "value": 0.3865,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "retained_network_nodes / lattice_nodes",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。",
+        "本方案是一层建议网络，覆盖率低于 1 是设计选择，不代表未覆盖区域被排除。"
+      ]
+    },
+    "network_independent_loops": {
+      "status": "known",
+      "value": 109,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "edges - nodes + connected_components",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。"
+      ]
+    },
+    "network_loop_density": {
+      "status": "known",
+      "value": 0.4241,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "independent_loops / retained_network_nodes",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。",
+        "敏感性分析显示该值随负荷情景在 0.312–0.581 之间变化。"
+      ]
+    },
+    "network_fault_tolerance": {
+      "status": "known",
+      "value": 0.9667,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "share of single-edge removals that keep sampled node pairs connected",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。"
+      ]
+    },
+    "network_failure_resilience_betweenness": {
+      "status": "known",
+      "value": 0.3991,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area under the largest-connected-component curve, edges removed highest-edge-betweenness first",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。",
+        "Delaunay 基准在同一口径下为 0.643，仍优于本方案。"
+      ]
+    },
+    "network_failure_resilience_random": {
+      "status": "known",
+      "value": 0.3148,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "same curve, mean of 5 random removal orders",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。"
+      ]
+    },
+    "network_recovery_resilience": {
+      "status": "known",
+      "value": 0.684,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "0.5*min(loop_density/0.5,1) + 0.5*min(degree_CV/0.8,1)",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。",
+        "该复合指数的两个归一化常数 0.5 与 0.8 由本方案自设，非文献取值，仅用于同一口径下比较，不可跨方案直接引用。"
+      ]
+    },
+    "network_total_length_norm_mst": {
+      "status": "known",
+      "value": 0.5497,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "design_total_length / mst_total_length",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。",
+        "低于 1 不等于更便宜：须与 network_node_coverage 一起读。"
+      ]
+    },
+    "land_use_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "union(land_use polygons) / site_boundary area",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。"
+      ]
+    },
+    "load_scenario_min_jaccard": {
+      "status": "known",
+      "value": 0.6787,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "min over interpretable load scenarios of |E_scenario ∩ E_shipped| / |E_scenario ∪ E_shipped|",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。",
+        "约三分之一的边随负荷设定变化，须以真实出行与场景数据重算。"
+      ]
+    },
+    "solver_final_step_backbone": {
+      "status": "known",
+      "value": 6.135304708720923e-09,
+      "unit": "dimensionless",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "max |D_(k+1) - D_k| at the final iteration, gamma = backbone",
+      "confidence": "medium",
+      "assumptions": [
+        "这是本方案模型内计算的网络指标，不是法定规划指标，不得用作容积率、建筑密度、道路红线或任何控规结论。",
+        "几何基于临时粗略边界生成，取得正式边界后必须整体重算。",
+        "已发表的收敛证明不覆盖本方案的多终端多情景离散迭代，故只报实测步长。"
+      ]
     }
   },
   "generation_method_metrics": {
@@ -118,7 +289,7 @@
     "benchmark_failure_resilience_betweenness": 0.3991,
     "benchmark_failure_resilience_random": 0.3148,
     "benchmark_recovery_resilience": 0.684,
-    "solver_final_sup_norm_step_backbone": 5.329070518200751e-15,
+    "solver_final_sup_norm_step_backbone": 6.135304708720923e-09,
     "solver_splu_fallbacks_backbone": 0,
     "benchmark_note_zh": "对照 Toussaint 邻近图谱系全谱而非仅对照 MST；失效韧性与恢复韧性分别计量。两点须如实说明：(1) 在 140m 规则格网上 RNG 与 Gabriel 判据同时取等，两者边集完全相同，谱系实际坍缩为 MST<RNG=Gabriel<Delaunay，应按三条对照读；(2) 所有网络采用同一攻击规则（边介数优先，并另报 5 次随机序均值）计量失效韧性，Delaunay 在该口径下仍优于本方案。"
   }
