@@ -1,182 +1,196 @@
 {
+  "ok": true,
+  "submission_dir": "submissions\\DAmin777\\jingzhang-urban-weave",
+  "pr_author": "DAmin777",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/DAmin777/jingzhang-urban-weave/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/DAmin777/jingzhang-urban-weave/proposal.md"
+      ],
+      "changelog_files": [],
+      "changed_files": [
+        "submissions/DAmin777/jingzhang-urban-weave/agent.json",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/key-areas.en.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/key-areas.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/land-use-structure.en.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/land-use-structure.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/metrics-evidence.en.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/metrics-evidence.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/mobility-bluegreen.en.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/mobility-bluegreen.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/site-overview.en.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assets/figures/site-overview.png",
+        "submissions/DAmin777/jingzhang-urban-weave/assumptions.json",
+        "submissions/DAmin777/jingzhang-urban-weave/compliance_matrix.json",
+        "submissions/DAmin777/jingzhang-urban-weave/design_depth_matrix.json",
+        "submissions/DAmin777/jingzhang-urban-weave/drawings/a0-boards.en.pdf",
+        "submissions/DAmin777/jingzhang-urban-weave/drawings/a0-boards.pdf",
+        "submissions/DAmin777/jingzhang-urban-weave/drawings/a3-booklet.en.pdf",
+        "submissions/DAmin777/jingzhang-urban-weave/drawings/a3-booklet.pdf",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/buildings.geojson",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/constraints.geojson",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/green_space.geojson",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/key_areas.geojson",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/land_use.geojson",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/phasing.geojson",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/public_space.geojson",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/roads.geojson",
+        "submissions/DAmin777/jingzhang-urban-weave/geometry/site_boundary.geojson",
+        "submissions/DAmin777/jingzhang-urban-weave/manifest.json",
+        "submissions/DAmin777/jingzhang-urban-weave/metrics.json",
+        "submissions/DAmin777/jingzhang-urban-weave/proposal.en.md",
+        "submissions/DAmin777/jingzhang-urban-weave/proposal.md",
+        "submissions/DAmin777/jingzhang-urban-weave/report/copyright_statement.md",
+        "submissions/DAmin777/jingzhang-urban-weave/report/narrative.md",
+        "submissions/DAmin777/jingzhang-urban-weave/report/proposal.en.html",
+        "submissions/DAmin777/jingzhang-urban-weave/report/proposal.html",
+        "submissions/DAmin777/jingzhang-urban-weave/self_check.json",
+        "submissions/DAmin777/jingzhang-urban-weave/sources.json",
+        "submissions/DAmin777/jingzhang-urban-weave/standard_matrix.json",
+        "submissions/DAmin777/jingzhang-urban-weave/visual/index.en.html",
+        "submissions/DAmin777/jingzhang-urban-weave/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/DAmin777/jingzhang-urban-weave": "formal"
+      },
+      "total_bytes": 5406226,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1958566.416,
+        "public_space_area_sqm": 364171.564,
+        "building_footprint_area_sqm": 567209.766,
+        "green_ratio": 0.171611,
+        "public_space_ratio": 0.031909
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.171611003,
+        "public_space_ratio": 0.031908975
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 5,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 18,
+          "standard": 6,
+          "depth": 15,
+          "data": 13,
+          "metric": 6
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
-      "result": "unknown",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "The official SITE_BOUNDARY polygon is not supplied in the repository. The submitted boundary remains a provisional_constraint with official_boundary=false; official redline and precision-sensitive area claims remain pending and must be recalculated when official geometry is supplied.",
-      "suggested_fix": "Keep this result unknown and replace the provisional constraint with organizer-supplied official geometry before making official redline or precise-area claims."
-    },
-    {
-      "check_id": "KEY_AREAS_TRUST",
-      "result": "unknown",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "The three official KEY_AREA polygons are not supplied in the repository. The submitted key areas remain provisional_constraint features with official_boundary=false; they are not official redlines or precise-area evidence.",
-      "suggested_fix": "Keep this result unknown and replace the three provisional polygons with organizer-supplied official key-area geometry before precise-area scoring."
-    },
-    {
-      "check_id": "LAND_USE_TOPOLOGY",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Land-use polygons cover the submitted provisional site boundary without material gaps or overlaps."
-    },
-    {
-      "check_id": "GEOMETRY_SCHEMA",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/*.geojson",
-      "message": "All nine GeoJSON layers satisfy the repository GeoJSON feature schema and required feature properties."
-    },
-    {
-      "check_id": "GEOMETRY_VALIDITY",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/*.geojson",
-      "message": "Spatial review found valid geometries, contained design layers, non-overlapping key areas, and no blocking topology defects."
-    },
-    {
-      "check_id": "METRICS_RECOMPUTATION",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json; geometry/*.geojson",
-      "message": "Spatially recomputed site, green-space, public-space, and footprint metrics match metrics.json within validator tolerance; provisional-boundary precision limits remain disclosed."
-    },
-    {
-      "check_id": "JSON_SCHEMA",
-      "result": "pass",
-      "severity": "major",
-      "target": "manifest.json; metrics.json; matrices; self_check.json",
-      "message": "Schema-backed package JSON files validate against the repository schemas."
-    },
-    {
-      "check_id": "PROPOSAL_REPORT_SYNC",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md; report/proposal.html",
-      "message": "Professional review confirms proposal evidence references and the offline rendered report are synchronized with the package data and required figures."
-    },
-    {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md; standard_matrix.json; design_depth_matrix.json; metrics.json",
-      "message": "Professional evidence review passes: all required standard, design-depth, data, and known-metric references are present."
-    },
-    {
-      "check_id": "PROPOSAL_FIGURES",
-      "result": "pass",
-      "severity": "major",
-      "target": "assets/figures/*.png",
-      "message": "All five required PNG figures exist, are non-empty presentation artifacts, and are included in the final manifest hash inventory."
-    },
-    {
-      "check_id": "PDF_DRAWINGS",
-      "result": "pass",
-      "severity": "major",
-      "target": "drawings/a3-booklet.pdf; drawings/a0-boards.pdf",
-      "message": "Both required drawing PDFs are non-empty, parseable drawing deliverables with embedded pages."
-    },
-    {
-      "check_id": "ZERO_PAGE_DRAWINGS",
-      "result": "pass",
-      "severity": "major",
-      "target": "drawings/*.pdf",
-      "message": "Zero-page check passes: a3-booklet.pdf contains 7 pages and a0-boards.pdf contains 3 pages."
-    },
-    {
-      "check_id": "PLACEHOLDER_DRAWINGS",
-      "result": "pass",
-      "severity": "major",
-      "target": "drawings/*.pdf",
-      "message": "Placeholder drawing check passes; the final PDFs are not the scaffold zero-page placeholders."
-    },
-    {
-      "check_id": "SCAFFOLD_DRAFT_MARKER",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "No SCAFFOLD-DRAFT marker remains in the submitted proposal."
-    },
-    {
-      "check_id": "OLD_NAME_MARKERS",
-      "result": "pass",
-      "severity": "info",
-      "target": "manifest.json; proposal.md",
-      "message": "Final package ID, proposal slug, and proposal metadata use the submitted Jing-Zhang Urban Weave identity; no stale old-name marker remains in final package metadata."
-    },
-    {
-      "check_id": "PACKAGE_STATE",
-      "result": "pass",
-      "severity": "major",
-      "target": "manifest.json",
-      "message": "manifest.package_state is ready_for_review and the formal package is eligible for participant-controlled review gates."
-    },
-    {
-      "check_id": "MANIFEST_FILES",
-      "result": "pass",
-      "severity": "major",
-      "target": "manifest.json",
-      "message": "The manifest lists all 30 files currently present in the submission package, including every required package file."
-    },
-    {
-      "check_id": "MANIFEST_HASHES",
-      "result": "pass",
-      "severity": "major",
-      "target": "manifest.json",
-      "message": "All non-manifest file SHA-256 values match the final package bytes; manifest.json intentionally has no self-hash to avoid self-reference."
-    },
-    {
-      "check_id": "AGENT_METADATA",
-      "result": "pass",
-      "severity": "info",
-      "target": "manifest.json",
-      "message": "Agent ID, agent name, and model declaration are present and consistent with the final package author metadata."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Static offline visualization passes without external resources or runtime dependencies."
-    },
-    {
-      "check_id": "VISUAL_METRICS_SYNC",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/index.html; metrics.json",
-      "message": "Displayed site area, green ratio, and public-space ratio match metrics.json."
-    },
-    {
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "major",
-      "target": "submission package",
-      "message": "validate_local_submission.py passes with no deterministic package errors."
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "submission package",
-      "message": "spatial_review.py passes; the only findings are three allowed minor KEY_AREA_PROVISIONAL notices."
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "VISUAL_REVIEW",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "submission package",
-      "message": "visual_review.py passes with no issues."
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
-      "check_id": "SELF_CHECK_SCHEMA",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "self_check.json",
-      "message": "self_check.json conforms to the repository self-check schema and contains no failed checks."
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
