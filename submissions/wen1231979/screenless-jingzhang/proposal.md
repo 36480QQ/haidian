@@ -37,7 +37,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 统筹研究范围产业与未来城市研究
 
-无屏创新生态不是单一硬件赛道，而是“基础模型与芯片—端侧推理—多模态交互—无障碍设计—隐私计算—场景运营—第三方评测”的协作链。参考案例选择 7 类公开可研究方向：MIT Media Lab 的 tangible interface 研究、Google Project Euphonia 的无障碍语音研究、Microsoft Seeing AI 的视觉辅助服务、Wayfindr 开放音频导航标准、Barcelona 超级街区的人本公共空间、Helsinki 数字孪生的公共数据实践、东京无障碍导向系统。它们仅作方法参照，具体部署、成效和许可需在专业深化时逐项回查原始来源；本轮不把它们写成场地事实或招商承诺。[source:SOURCE-REGISTRY] [standard:MOHURD-URBAN-DESIGN-MEASURES]
+无屏创新生态不是单一硬件赛道，而是“基础模型与芯片—端侧推理—多模态交互—无障碍设计—隐私计算—场景运营—第三方评测”的协作链。方法参照包括 MIT Media Lab 的 tangible interface 研究 [source:CASE-MIT-TANGIBLE]、Google Project Euphonia 的无障碍语音研究 [source:CASE-GOOGLE-EUPHONIA]、Microsoft Seeing AI 的视觉辅助服务 [source:CASE-MICROSOFT-SEEING-AI]、Wayfindr 开放音频导航标准 [source:CASE-WAYFINDR]、Barcelona 超级街区的人本公共空间 [source:CASE-BCN-SUPERBLOCKS]、Helsinki 数字孪生的公共数据实践 [source:CASE-HELSINKI-3D]，以及 Tokyo Metro 的无障碍出行设施实践 [source:CASE-TOKYO-METRO-BARRIERFREE]。这些一手/正式页面仅用于背景方法研究，不构成京张场地事实、可直接迁移的成效证据、许可授权或招商承诺；应用前仍需逐项验证本地条件。[standard:MOHURD-URBAN-DESIGN-MEASURES]
 
 生态机制按三区两翼闭环运行：众智园验证低功耗端侧模型、可撤回感知和安全评测；AI 原点社区把技术转译成触觉、语音、实体模型和人工协作协议；大钟寺通过商业、文化和生活服务检验可用性；中关村科技服务翼提供开源、法务、标准、资本和国际传播支撑；小月河翼提供教育、社区、运动和生态等真实但可控的测试场。土地、空间、产业、资金、人才、算力、数据和场景被写成需协商的资源接口，而非已获配置。[source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
 

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "screenless-jingzhang",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "GPT-5 Codex desktop agent; exact serving snapshot not exposed"
   },
-  "generated_at": "2026-08-11T12:39:38Z",
+  "generated_at": "2026-08-16T04:21:10Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "0137d625f892368f26b5c8c93c141847e17c65833a2988ad3d616a9c78bcc33a"
+      "sha256": "93b4c4f492184d3d3e25b061a8807451072c0564392c394c78a3b7d41736ee6f"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8a2849ee5f579d19db83c7cfc511c18acd2e22606b691bcd2c260d80c57063d1"
+      "sha256": "d0f8093a5984502b87c5e54a382210c96074fba953dc04e5e479201745236e38"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ac1a70807c152ab309b3c4af6afc01e53f0c2eb6ad0c44b7c79e122d35768a9d"
+      "sha256": "6a911de5e1c39c8c7fe8ebae94d945478a1c40e40b71251a795f1a2a466afbe4"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "37ea9ec58f9237642325dd74810217277ef29795455f1005b90a567951452622"
+      "sha256": "c967dd98fcb8340b94cd9edc85a665202b63262101654d4b7582760a5bcb76c9"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "21d377b147986deab8a4e351c311ba16c3544e426a07375c6ef51b1a4aa354ab"
+      "sha256": "c5d455df88bdfaf576b3673acdc2c7dc3e04ea49f42f59185a5a295706cd0e1d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -209,7 +209,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "7a8404198542618af4d3c2f2b9556c649a1964d1dfe8573fba9d113537676f2d"
+      "sha256": "e76c568a9371a337147712e3bba1c5b316aad9623ecec6735b70e6a4ec4c3e07"
     },
     {
       "path": "assets/media/cover.webp",
@@ -223,7 +223,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "02ac1b812cc13fa22c0c4d3f2baf9a498177b48a58d8db026fec872a43e3488d"
+      "sha256": "779034edde4b170e9afec8b960629aeb6bed11851b05539ec3ab293e32578665"
     },
     {
       "path": "report/proposal.en.html",
@@ -231,7 +231,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "12a01c25224bc85b0929944df6f9017831bc2a58d3a63ff8fef66ab4d676fa5c"
+      "sha256": "a91ca3fc963f863b24d59d17a89cfad31d10d9af8d6ad381ed8319cbcef10bce"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
