@@ -1020,6 +1020,7 @@
         ],
         "evidence_in_packet": [
           "metrics.json#walk10_benchmark_reach_gain_buildings",
+          "compliance_matrix.json#reading_calendar",
           "assets/figures/mobility-bluegreen.png",
           "drawings/a0-boards.pdf#page1"
         ]
@@ -1370,5 +1371,117 @@
       }
     ],
     "units_with_a_stated_limit": 3
+  },
+  "reading_calendar": {
+    "scope_zh": "**这条带的读数日程表。** 每一行是一个水准点：多久测一次、由哪个岗位取读数、由哪个岗位复签、这一次测完公布什么、谁可以质疑。节奏按测点等级，岗位取自 `visual/assets/role_spec.json`，几何取自 `geometry/public_space.geojson`——三样东西此前分别存在，从没有一处把它们连起来（E219）。",
+    "scope_en": "The reading schedule for the belt. One row per benchmark: how often it is read, which post takes the reading, which post countersigns it, what is published when it is done, and who may dispute the value. The cadence follows the benchmark order, the posts come from role_spec.json and the geometry from public_space.geojson - three things that existed separately and were never joined in one place.",
+    "status_zh": "**表上没有一次已完成的读数。** 全部岗位 unassigned，第一个真实读数须由首轮闭合试验产生；此表是日程，不是记录。",
+    "status_en": "Not one completed reading appears here. Every post is unassigned and the first real reading has to come from the first closure trial: this is a schedule, not a record.",
+    "rows": [
+      {
+        "benchmark_id": "BM-0",
+        "benchmark_order": "origin",
+        "geometry_ref": "geometry/public_space.geojson#PUBLIC-001",
+        "cadence_zh": "年度起算与闭合验算",
+        "cadence_en": "annual datum run and closing check",
+        "collecting_role": "ROLE-PROFESSIONAL-BODY",
+        "second_party_role": "ROLE-INTL-VISITOR",
+        "publishes_zh": "年度归零仪式的全网读数与限差修订记录",
+        "publishes_en": "annual zeroing record: every reading on the network and the tolerance revision",
+        "dispute_review_zh": "居民代表可对任一次读数提出异议，原值与更正值并列公示",
+        "dispute_review_en": "the resident representative may dispute any reading; the original and the corrected value are published side by side"
+      },
+      {
+        "benchmark_id": "BM-1",
+        "benchmark_order": "first",
+        "geometry_ref": "geometry/public_space.geojson#PUBLIC-002",
+        "cadence_zh": "年度复测",
+        "cadence_en": "annual re-survey",
+        "collecting_role": "ROLE-PROFESSIONAL-BODY",
+        "second_party_role": "ROLE-RESIDENT-REP",
+        "publishes_zh": "该点年度闭合记录与超限退回记录",
+        "publishes_en": "annual closure record for the point, and any return-the-route event",
+        "dispute_review_zh": "居民代表可对任一次读数提出异议，原值与更正值并列公示",
+        "dispute_review_en": "the resident representative may dispute any reading; the original and the corrected value are published side by side"
+      },
+      {
+        "benchmark_id": "BM-2",
+        "benchmark_order": "first",
+        "geometry_ref": "geometry/public_space.geojson#PUBLIC-003",
+        "cadence_zh": "年度复测",
+        "cadence_en": "annual re-survey",
+        "collecting_role": "ROLE-PROFESSIONAL-BODY",
+        "second_party_role": "ROLE-RESIDENT-REP",
+        "publishes_zh": "该点年度闭合记录与超限退回记录",
+        "publishes_en": "annual closure record for the point, and any return-the-route event",
+        "dispute_review_zh": "居民代表可对任一次读数提出异议，原值与更正值并列公示",
+        "dispute_review_en": "the resident representative may dispute any reading; the original and the corrected value are published side by side"
+      },
+      {
+        "benchmark_id": "BM-21",
+        "benchmark_order": "second",
+        "geometry_ref": "geometry/public_space.geojson#PUBLIC-004",
+        "cadence_zh": "季度复测",
+        "cadence_en": "quarterly re-survey",
+        "collecting_role": "ROLE-PARK-OPERATOR",
+        "second_party_role": "ROLE-PROFESSIONAL-BODY",
+        "publishes_zh": "季度闭合记录，含缺站标注",
+        "publishes_en": "quarterly closure record, missed stations marked",
+        "dispute_review_zh": "居民代表可对任一次读数提出异议，原值与更正值并列公示",
+        "dispute_review_en": "the resident representative may dispute any reading; the original and the corrected value are published side by side"
+      },
+      {
+        "benchmark_id": "BM-22",
+        "benchmark_order": "second",
+        "geometry_ref": "geometry/public_space.geojson#PUBLIC-005",
+        "cadence_zh": "季度复测",
+        "cadence_en": "quarterly re-survey",
+        "collecting_role": "ROLE-PARK-OPERATOR",
+        "second_party_role": "ROLE-PROFESSIONAL-BODY",
+        "publishes_zh": "季度闭合记录，含缺站标注",
+        "publishes_en": "quarterly closure record, missed stations marked",
+        "dispute_review_zh": "居民代表可对任一次读数提出异议，原值与更正值并列公示",
+        "dispute_review_en": "the resident representative may dispute any reading; the original and the corrected value are published side by side"
+      },
+      {
+        "benchmark_id": "BM-301",
+        "benchmark_order": "third",
+        "geometry_ref": "geometry/public_space.geojson#PUBLIC-006",
+        "cadence_zh": "月度复测",
+        "cadence_en": "monthly re-survey",
+        "collecting_role": "ROLE-COMMUNITY-SELFORG",
+        "second_party_role": "ROLE-PARK-OPERATOR",
+        "publishes_zh": "月度读数与居民发起复测的处理记录",
+        "publishes_en": "monthly readings and the disposal of resident-initiated re-surveys",
+        "dispute_review_zh": "居民代表可对任一次读数提出异议，原值与更正值并列公示",
+        "dispute_review_en": "the resident representative may dispute any reading; the original and the corrected value are published side by side"
+      },
+      {
+        "benchmark_id": "BM-302",
+        "benchmark_order": "third",
+        "geometry_ref": "geometry/public_space.geojson#PUBLIC-007",
+        "cadence_zh": "月度复测",
+        "cadence_en": "monthly re-survey",
+        "collecting_role": "ROLE-COMMUNITY-SELFORG",
+        "second_party_role": "ROLE-PARK-OPERATOR",
+        "publishes_zh": "月度读数与居民发起复测的处理记录",
+        "publishes_en": "monthly readings and the disposal of resident-initiated re-surveys",
+        "dispute_review_zh": "居民代表可对任一次读数提出异议，原值与更正值并列公示",
+        "dispute_review_en": "the resident representative may dispute any reading; the original and the corrected value are published side by side"
+      },
+      {
+        "benchmark_id": "BM-303",
+        "benchmark_order": "third",
+        "geometry_ref": "geometry/public_space.geojson#PUBLIC-008",
+        "cadence_zh": "月度复测",
+        "cadence_en": "monthly re-survey",
+        "collecting_role": "ROLE-COMMUNITY-SELFORG",
+        "second_party_role": "ROLE-PARK-OPERATOR",
+        "publishes_zh": "月度读数与居民发起复测的处理记录",
+        "publishes_en": "monthly readings and the disposal of resident-initiated re-surveys",
+        "dispute_review_zh": "居民代表可对任一次读数提出异议，原值与更正值并列公示",
+        "dispute_review_en": "the resident representative may dispute any reading; the original and the corrected value are published side by side"
+      }
+    ]
   }
 }
