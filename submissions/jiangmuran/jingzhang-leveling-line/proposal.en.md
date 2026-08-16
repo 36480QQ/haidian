@@ -1042,6 +1042,21 @@ Phasing and project extents are in [data:geometry/phasing.geojson#PHASE-001], wi
 
 FIG.15 draws the three increments, the benchmarks each adds, and **what each phase costs to run**: the near term holds BM-0 alone, on one session a year.
 
+<!-- ANNOUNCEPATH:BEGIN -->
+
+The announcement names three deliverables in one sentence - a renewal implementation path, implementable space, and a coordinated delivery model - under campus-park-block spatial integration. All three were answered here in this package's own words (E235):
+
+| The announcement's word | What this package has | Where |
+|---|---|---|
+| **Renewal implementation path** | R1-R8 ordered by dependency, not calendar: without R4, R7 does not start | the renewal list here |
+| **Implementable space** | the four needing no unpublished official data - R1, R2, R3, R8 - each of the others naming the condition it waits on | that table's preconditions |
+| **Coordinated delivery model** | four review parties with none missing, eight posts with their duty boundaries and unstaffed prohibitions, and a per-benchmark reading calendar | `role_spec.json`, `compliance_matrix.json#reading_calendar` |
+| **Campus-park-block integration** | the three key areas are those three interfaces: community to campus (a 1:12 ramp), research park to the river (the levee path), block over a station (the queue held behind the building line) | FIG.13, three sections at one scale |
+
+**No completeness is claimed** - the table joins their vocabulary to what this package already ships. What was missing was the names, not the content.
+
+<!-- ANNOUNCEPATH:END -->
+
 ### The first closure trial: a minimum unit that runs in four weeks
 
 A governance mechanism that cannot run its first circuit under existing conditions is only text. Near-term work is therefore concentrated into one closure trial that **completes in four weeks, depends on no unpublished official data, and requires no new construction**, with parameters given in enough detail to execute.
