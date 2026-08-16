@@ -724,6 +724,18 @@
       "why_en": "**The first screen is one of the eighteen images the reviewer receives, not a contents page.** This mutation proves that a drawing-less section moving into first place stops the build."
     },
     {
+      "id": "M73",
+      "gate": "pdf_page1_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把说明「A0 展板第一页是什么」的那一句里的 FIG.09 删掉——读者据此以为自己只拿到一张，而那一页上实际有两张。**说明收到什么的那句话，比图纸本身更容易悄悄少一项。**",
+      "what_en": "Drop FIG.09 from the sentence saying what A0 board page 1 carries, so a reader believes they hold one sheet where the page carries two. **The sentence saying what the reader has is easier to lose an item from than the drawing is.**",
+      "why_zh": "**评审手里有什么，得由包来说；说了就要对。** 这条变异要证明的是：说明句与构建出的展板页一旦对不上，构建就停。",
+      "why_en": "**What the reviewer holds is the package's job to state, and stating it wrongly is worse than not stating it.** This mutation proves the build stops the moment the sentence and the built board page disagree."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -880,7 +892,7 @@
       "why_en": "**A cut removes decoration, not readings.** This mutation proves that dropping any sentence carrying a number the build computes stops the build rather than quietly losing something checkable."
     }
   ],
-  "caught": 72,
+  "caught": 73,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -911,6 +923,7 @@
     "naming_qa.py",
     "overflow_qa.py",
     "parity_qa.py",
+    "pdf_page1_qa.py",
     "peer_claim_qa.py",
     "planning_controls_qa.py",
     "reading_calendar_qa.py",
@@ -974,6 +987,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 52 道闸门，其中 47 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 52 gates, 47 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 53 道闸门，其中 48 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 53 gates, 48 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
