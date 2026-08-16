@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-space-first innovation belt structured as one heritage spine, three differentiated hubs, two cross-corridor service wings, and twelve auditable AI+ scenarios, with provisional geometry and full recalculation triggers."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.7"
+iteration: "v1.8"
 ---
 
 # Jing-Zhang Intelli-Rail
@@ -176,6 +176,8 @@ Renewal advances through a project bank, not an all-at-once masterplan. The phas
 The ten projects are JZ-01 heritage-spine continuity; JZ-02 North Fifth Ring walking connection; JZ-03 Qinghe innovation bank; JZ-04 Origin transfer street; JZ-05 Dazhongsi four-quadrant link; JZ-06 shared service stations; JZ-07 low-carbon compute stops; JZ-08 all-age accessible loop; JZ-09 open-scenario network; and JZ-10 Centennial Jing-Zhang Digital Archive. Each has an explicit prerequisite and a reason to stop.
 
 Suggested sequencing is 0–18 months for validation, 18–48 months for renewal, and later network governance. The numbers express dependency, not a promise. Early work is low risk, removable, and visibly public; medium-term work includes adaptive reuse and transport; intensity change and major transit engineering come only after formal evidence.[depth:phasing_implementation]
+
+The start-up phase is packaged as "six deliverables in one hundred days": the JZ-01 gap list and wayfinding, the first JZ-04 transfer-street prototype, the JZ-06 shared-service counter, the JZ-08 co-tested route, the first S02 sandbox red-team day, and version one of the Civic Data Placard specification. The shared acceptance criterion: each item ends the hundred days with one publicly checkable artifact—list, prototype, counter, route, test report, or specification—published under the operator's name; anything missed goes to review rather than rolling over.
 
 Long-term operations use a joint council, professional committees, a community observatory, and independent audit. The joint council—public departments, parks, universities, companies, and the community—holds decision rights over scenario entry, expansion, and removal, meeting quarterly. Professional committees review planning, transport, data, safety, and culture, issue monthly review opinions, and refer disputes to the council. The community observatory keeps agenda-setting and service-review seats; a joint motion must enter the next council agenda. Independent audit publishes an annual full-disclosure report on scenario outcomes, complaints, shutdowns, energy, and public benefit. Funding combines public-space maintenance budgets, corporate membership, event income, research partnerships, and dedicated funds; commercial sponsorship may never buy public data or exclusive naming, and the annual budget and spending summary are published with the public-value audit.
 

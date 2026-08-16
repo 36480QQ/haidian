@@ -1,5 +1,10 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.8 - 2026-08-17
+
+- 新增启动期“百日六件事”：JZ-01/04/06/08 加 S02 首期红队日与公共数据卡规范，每件以百日末公开产物为交付判据。
+  Added a start-up "six deliverables in one hundred days" package (JZ-01/04/06/08 plus the first S02 red-team day and the Civic Data Placard specification), each accepted by a publicly checkable artifact at day 100.
+
 ## v1.7 - 2026-08-17
 
 - 治理机制具体化：理事会决策权与季度例会、专业委员会月度审查与异议裁决、观察团联名动议必入议程、审计报告全文公开、年度预算随公共价值审计公开。
