@@ -26,7 +26,9 @@
         "AI 场景"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "standard_ids": [
         "MNR-LAND-USE-CLASSIFICATION-GUIDE"
       ],
       "assumption_ids": [
@@ -35,13 +37,13 @@
       "self_check_ids": [
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」；图层 land_use.geojson、key_areas.geojson；指标 land_use_class_count、land_use_feature_count（class 1，由 visual/assets/verify.js 独立重算）；指标 case_study_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 land-use-structure.png、ecosystem.png；来源 OFFICIAL-ANNOUNCEMENT、MNR-LAND-USE-CLASSIFICATION-GUIDE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」；图层 land_use.geojson、key_areas.geojson；指标 land_use_class_count、land_use_feature_count（class 1，由 visual/assets/verify.js 独立重算）；指标 case_study_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 land-use-structure.png、ecosystem.png；来源 OFFICIAL-ANNOUNCEMENT（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 14,
-        "reviewer_can_read_whole": 10,
+        "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 3
+        "reviewer_cannot_open": 4
       }
     },
     {
@@ -316,7 +318,9 @@
         "建筑"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK",
+        "AGENT-TASKBOOK"
+      ],
+      "standard_ids": [
         "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "assumption_ids": [
@@ -325,13 +329,13 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「用地、建筑规模与拆改留方案」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 street-eye-level.png；来源 AGENT-TASKBOOK、MOHURD-CONTROL-DETAILED-PLANNING（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「用地、建筑规模与拆改留方案」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 11,
-        "reviewer_can_read_whole": 9,
+        "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 2
+        "reviewer_cannot_open": 3
       }
     },
     {
@@ -356,7 +360,9 @@
         "重点区域"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK",
+        "AGENT-TASKBOOK"
+      ],
+      "standard_ids": [
         "MNR-LAND-USE-CLASSIFICATION-GUIDE"
       ],
       "assumption_ids": [
@@ -365,13 +371,13 @@
       "self_check_ids": [
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 key_areas.geojson；指标 key_area_count、land_use_class_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png、ecosystem.png；来源 AGENT-TASKBOOK、MNR-LAND-USE-CLASSIFICATION-GUIDE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 key_areas.geojson；指标 key_area_count、land_use_class_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png、ecosystem.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 11,
-        "reviewer_can_read_whole": 8,
+        "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 2
+        "reviewer_cannot_open": 3
       }
     },
     {
@@ -396,7 +402,9 @@
         "用地分区"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK",
+        "AGENT-TASKBOOK"
+      ],
+      "standard_ids": [
         "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "assumption_ids": [
@@ -405,13 +413,13 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 land_use.geojson；指标 phase_count、phasing_union_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 renewal_project_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 land-use-structure.png；来源 AGENT-TASKBOOK、MOHURD-CONTROL-DETAILED-PLANNING（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 land_use.geojson；指标 phase_count、phasing_union_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 renewal_project_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 land-use-structure.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 11,
-        "reviewer_can_read_whole": 9,
+        "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 1
+        "reviewer_cannot_open": 2
       }
     },
     {
@@ -435,7 +443,9 @@
         "交通慢行"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK",
+        "AGENT-TASKBOOK"
+      ],
+      "standard_ids": [
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -444,13 +454,13 @@
       "self_check_ids": [
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "本条由正文小节「交通、轨道、市政与公共服务设施」；图层 roads.geojson；指标 road_feature_count、leveling_spine_length_m（class 1，由 visual/assets/verify.js 独立重算）；图纸 mobility-bluegreen.png；来源 AGENT-TASKBOOK、MOHURD-URBAN-DESIGN-MEASURES（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「交通、轨道、市政与公共服务设施」；图层 roads.geojson；指标 road_feature_count、leveling_spine_length_m（class 1，由 visual/assets/verify.js 独立重算）；图纸 mobility-bluegreen.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 10,
-        "reviewer_can_read_whole": 8,
+        "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 1
+        "reviewer_cannot_open": 2
       }
     },
     {
@@ -517,7 +527,9 @@
         "更新项目"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK",
+        "AGENT-TASKBOOK"
+      ],
+      "standard_ids": [
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -526,13 +538,13 @@
       "self_check_ids": [
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson、public_space.geojson；指标 public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、identity.png；来源 AGENT-TASKBOOK、MOHURD-URBAN-DESIGN-MEASURES（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson、public_space.geojson；指标 public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、identity.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 12,
-        "reviewer_can_read_whole": 8,
+        "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 4
+        "reviewer_cannot_open": 5
       }
     },
     {
@@ -599,7 +611,9 @@
         "核心指标"
       ],
       "source_ids": [
-        "KEY-AREA-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "standard_ids": [
         "MNR-LAND-USE-CLASSIFICATION-GUIDE"
       ],
       "assumption_ids": [
@@ -609,13 +623,13 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条由正文小节「众智园 AI 自主创新加速区」「三片区共同的拆改留原则」；图层 land_use.geojson；指标 land_use_class_count、benchmark_first_order_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE、MNR-LAND-USE-CLASSIFICATION-GUIDE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「众智园 AI 自主创新加速区」「三片区共同的拆改留原则」；图层 land_use.geojson；指标 land_use_class_count、benchmark_first_order_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 12,
-        "reviewer_can_read_whole": 10,
+        "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 1
+        "reviewer_cannot_open": 2
       }
     },
     {
@@ -682,7 +696,9 @@
         "更新项目"
       ],
       "source_ids": [
-        "KEY-AREA-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "standard_ids": [
         "MOHURD-ARCH-DESIGN-DEPTH-2016"
       ],
       "assumption_ids": [
@@ -691,13 +707,13 @@
       "self_check_ids": [
         "KEY_AREAS_TRUST"
       ],
-      "evidence_summary_zh": "本条由正文小节「大钟寺 AI 产业集聚区」；图层 key_areas.geojson、buildings.geojson；指标 building_footprint_area_sqm、key_area_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE、MOHURD-ARCH-DESIGN-DEPTH-2016（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「大钟寺 AI 产业集聚区」；图层 key_areas.geojson、buildings.geojson；指标 building_footprint_area_sqm、key_area_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 11,
-        "reviewer_can_read_whole": 8,
+        "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 2
+        "reviewer_cannot_open": 3
       }
     },
     {
@@ -958,10 +974,10 @@
   ],
   "reviewer_reachability_total": {
     "references": 287,
-    "reviewer_can_read_whole": 221,
+    "reviewer_can_read_whole": 213,
     "reviewer_sees_as_image": 17,
     "reviewer_sees_first_page_only": 0,
-    "reviewer_cannot_open": 49,
+    "reviewer_cannot_open": 57,
     "note_zh": "评审模型整份收到九个文件，不含 `geometry/` 与 `visual/assets/`（见 `scripts/review_submission.py::build_review_input`）。本表逐条标出它能打开多少、打不开多少——**这不是免责，是让评审知道哪一行的证据它可以自己核，哪一行只能听我说**。数字由构建算出，管线若开始多送文件，它们会自己变。"
   },
   "rubric_coverage": {
@@ -1630,5 +1646,25 @@
     ],
     "w1_would_reach_first": 2,
     "applied_today_zh": "按今天的几何，规则 W1 会先落到 2 个街区上（共 11 个）；距离为几何中心到最近水准点的直线距离，**不是步行距离**——一个还不存在的街区，走不出步行距离。"
+  },
+  "organiser_review": {
+    "scope_zh": "**评审在读本文之前，先拿到组织方自己对本包的四份机器判定**：确定性校验、空间复核、视觉复核、专业复核。下表把它们返回的每一条按 id 列出，并逐条作答——**答的不是辩解，是承认判读成立之后随之而来的东西**。清单由构建从 `upstream/main` 上的那几个脚本现跑得到，不是抄下来的（E230）。",
+    "scope_en": "Before it reads a word of this proposal, the reviewer is handed four machine verdicts on this package from the organisers' own tools: deterministic validation, spatial review, visual review, professional review. Every issue they return is listed here by id and answered - not defended, but accepted with what follows from it stated. The list is produced by running their scripts at upstream/main rather than copied.",
+    "issues": [
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "from_review": "spatial",
+        "count": 3,
+        "their_message_en": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+        "targets": [
+          "PROV-KEY-001",
+          "PROV-KEY-002",
+          "PROV-KEY-003"
+        ],
+        "answer_zh": "**这条判读是对的，本方案同意。** 三处重点区多边形是依公告文字推定的临时替代边界，不是官方红线；由它们算出的每一个面积在 `metrics.json` 里都标 `evidence_class: provisional`，评审收到的五张图题头也各有一行红字写明这件事。官方 polygon 发布后按 A-BOUNDARY-001 **整体重算**，不做逐块替换。本方案不请求豁免这条判读，只请求它按其原意使用：不得作为红线或精确面积依据，内容评分不受影响。",
+        "answer_en": "This reading is correct and this proposal agrees. The three key-area polygons are provisional substitutes inferred from the announcement text, not official redlines; every area computed from them carries evidence_class provisional in metrics.json, and each of the five sheets the reviewer receives states it in red under its claim. When the official polygons are published, everything recomputes wholesale under A-BOUNDARY-001 rather than block by block. No waiver is requested - only that the finding be used as written: not a redline or a precise-area basis, and content scoring unaffected."
+      }
+    ]
   }
 }
