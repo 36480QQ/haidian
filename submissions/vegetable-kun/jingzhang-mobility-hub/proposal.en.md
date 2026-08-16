@@ -52,6 +52,68 @@ This proposal is based on the "Centennial Jing-Zhang AI Innovation Belt Urban De
 | **Intelligent AI Vitality City** | Smart transport, public space, healthcare | Dazhongsi Station, Jing-Zhang Park |
 | **AI Governance Global Voice** | Standard setting, international roadshow, data governance | Dazhongsi International Living Room |
 
+## Brand Identity & Cultural Narrative
+
+### Logo & Visual Identity System
+
+**Logo Concept**: Based on the Jing-Zhang railway's iconic "herringbone" track prototype, integrating AI node networks to form a "Wisdom Vein" visual symbol. The herringbone track symbolizes century-old railway heritage, AI nodes represent innovation vitality, and their intersection creates the "Wisdom Vein Symbiosis" imagery.
+
+**Logo Specifications**:
+
+| Element | Specification |
+|---------|---------------|
+| **Primary Colors** | Wisdom Vein Orange (#FF9800) + Innovation Blue (#2196F3) |
+| **Secondary Colors** | Ecology Green (#4CAF50) + Humanities Purple (#9C27B0) |
+| **Typography** | Chinese: Source Han Sans / English: Inter |
+| **Minimum Size** | Digital: 24px / Print: 10mm |
+| **Clear Space** | 1/4 of logo height |
+
+**Application Scenarios**:
+- **Digital Media**: APP icon, website Logo, social media avatar
+- **Print Materials**: Brochures, posters, business cards, display panels
+- **Environmental Signage**: Metro station signs, park wayfinding, community identity
+- **Brand Promotion**: Roadshow events, hackathons, international week visuals
+
+### Jing-Zhang Railway Cultural Narrative Sequence
+
+**Narrative Theme**: From "Herringbone" to "AI Veins" — A Century-Old Railway's Digital Rebirth
+
+**Narrative Spatial Sequence**:
+
+| Node | Location | Narrative Theme | Display Method |
+|------|----------|-----------------|----------------|
+| **Prologue: Herringbone** | South Entrance, Heritage Park | Zhan Tianyou's Birth of Jing-Zhang Railway | Relief + AR Historical Reenactment |
+| **Chapter 1: Steam Era** | Middle Section, Heritage Park | Industrial Revolution & Railway Construction | Steam Locomotive + Holographic Projection |
+| **Chapter 2: Electric Era** | Qinghua East Gate | Electrified Railway & Urban Expansion | Historical Images + Interactive Installations |
+| **Chapter 3: Digital Era** | Dazhongsi AI International Living Room | Century-Old Railway Meets AI | Digital Twin + Real-Time Data |
+| **Finale: Wisdom Vein Future** | Zhongzhiyuan Edge Computing Tower | AI Innovation & Sustainable Development | Future Vision + Participatory Experience |
+
+**Cultural Narrative Highlights**:
+- **AR Historical Reenactment**: Visitors watch Jing-Zhang railway construction history via mobile AR
+- **Digital Twin**: Real-time display of AI innovation data along Jing-Zhang railway
+- **Participatory Experience**: Visitors can participate in AI scenario testing and feedback
+- **International Communication**: Multilingual narrative for international developer communities
+
+### Wayfinding Symbol System
+
+**Symbol Concept**: Based on the "herringbone" as the fundamental geometric element, deriving a complete wayfinding symbol system.
+
+| Category | Symbol Description | Application |
+|----------|-------------------|-------------|
+| **Rail Transit** | Herringbone + Metro Icon | Metro stations, transfer guidance |
+| **Walkability** | Herringbone + Walk/Bike Icon | Walkways, bike lanes |
+| **AI Scenarios** | Herringbone + AI Node Icon | AI experience points, test scenarios |
+| **Public Services** | Herringbone + Facility Icon | Service centers, restrooms, parking |
+| **Emergency Exit** | Herringbone + Arrow | Emergency evacuation guidance |
+
+**Bilingual**: All symbols include Chinese-English bilingual text, using Source Han Sans / Inter.
+
+**International Communication Narrative**:
+- **Theme**: From Herringbone to AI Veins — A Century-Old Railway Reborn
+- **Target Audience**: International developers, urban planners, AI researchers
+- **Channels**: GitHub, international urban planning forums, AI developer conferences
+- **Core Message**: Century-Old Railway Heritage × AI Innovation = Wisdom Vein Symbiosis Future
+
 ## Three-Areas-Two-Wings Synergy Framework
 
 ### Three Areas
