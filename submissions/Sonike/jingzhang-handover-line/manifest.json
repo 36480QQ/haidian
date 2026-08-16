@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "20f05180534f8bdccaabbbc1d66533adbe29c81e8e21b415f47bd8dbf3679dd8"
+      "sha256": "8857b683111e209a8bb80ec1f2cc40f05b1c9e29439d1d5876cd98e3766c461b"
     },
     {
       "path": "agent.json",
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fafa9aa101f0fd439bc94fefdb5bec56002516309f0ea381a38085710774a389"
+      "sha256": "ca49736bc9d5237ff8a5f4f8d04b0956ea00e951e30a6b2897180c8ee3b6154b"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8c15e880f6371eb0de18ad37c32e22dd6990cc3d8271ff4c6332756729171536"
+      "sha256": "98accfdf924006e3f378199e768f0e0e3ea1b7a63bb46d16301dfb05269828d9"
     },
     {
       "path": "report/narrative.md",
@@ -210,7 +210,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f22f54096b8315aed091b998279470733f0489c34355045eae4218504d8d12d9"
+      "sha256": "db42c58d44e24ecda949d8191bcadd5204ef463032290609c34c1d92e43d4c42"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f9f6c6fa12538b539081bfaef293e8adf424dc69fd3b182a4e8085f623de847a"
+      "sha256": "9034d4add0fc09318b31f16392e213125f6a42ef917e7eb991178e27d6c1392e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -349,7 +349,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "380a2343affc5a6493b39fa3dbcc0b1e01ffcbe9e31a72f52e77f468a5020386"
+      "sha256": "852fb13b0d2319007ebeeae6100e063f7128e8d27d8f872d0781ad9c429ebdb5"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -498,6 +498,72 @@
       "description_en": "The English counterpart of the audio guide, matching the Chinese version section by section. Also locally synthesised, not a human recording.",
       "transcript": "assets/media/audio-guide-en.md",
       "caption": "assets/media/audio-guide-en.vtt"
+    },
+    {
+      "path": "assets/media/guided-tour.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "0d6d88793aaad3bee339bcbe854b1ac037c64fcce9b1b3878f486ac4ac88ad97",
+      "title_zh": "三分钟导览视频字幕（中文）",
+      "title_en": "Guided-tour video captions (Chinese)",
+      "description_zh": "与音频导览逐句一致的 WebVTT 字幕，时间轴按各句字符数占比在实测总时长上分配。",
+      "description_en": "WebVTT captions matching the audio guide sentence for sentence; the timeline distributes each line by character share across the measured total duration."
+    },
+    {
+      "path": "assets/media/guided-tour-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "206f212a4bff230920d6b056d06c887997acb555f191140fab8bca0fe8de2088",
+      "title_zh": "三分钟导览视频字幕（英文）",
+      "title_en": "Guided-tour video captions (English)",
+      "description_zh": "英文版字幕，与英文音频导览逐句一致。",
+      "description_en": "English captions matching the English audio guide sentence for sentence."
+    },
+    {
+      "path": "assets/media/guided-tour.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "d1362e71ab128efe39dbd839b07f836a283e155d9bd4be1b76d1bf9bb7a40927",
+      "title_zh": "三分钟导览视频文字稿与分镜（中文）",
+      "title_en": "Guided-tour transcript and shot list (Chinese)",
+      "description_zh": "逐句文字稿，外加九段分镜表：写明每一段配的是哪张图件、为什么配它。",
+      "description_en": "Sentence-by-sentence transcript plus a nine-shot list stating which figure each segment shows and why."
+    },
+    {
+      "path": "assets/media/guided-tour-en.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "2251cb42e3087ff4fe228deefa18ba32c33355ae795500fb718c097981a720d4",
+      "title_zh": "三分钟导览视频文字稿与分镜（英文）",
+      "title_en": "Guided-tour transcript and shot list (English)",
+      "description_zh": "英文版文字稿与分镜表。",
+      "description_en": "English transcript and shot list."
+    },
+    {
+      "path": "assets/media/guided-tour.mp4",
+      "role": "video",
+      "required": false,
+      "sha256": "a8d2dd5db7af4b42c73bef42f3f608f186bbef9ca0ad51d85a94f5115bacbe34",
+      "title_zh": "京张交接线 · 三分钟导览视频（中文）",
+      "title_en": "Jing-Zhang Handover Line · three-minute guided tour (Chinese)",
+      "description_zh": "任务书「表达完整度」点名文本、图像、表格、场景卡、视频/声音与交互网页；本包此前有声音而无视频，本文件补上这一类。**视频不引入任何新主张**：音轨与 audio-guide.m4a 完全相同，字幕逐句一致，画面全部取自包内已有图件。**九个切换点按音轨内容而非均分设置**——讲三座交接场时切 F/03，讲公开交接桌时切 F/10，讲十二个场景的拒收状态时切 F/05 的 96 格矩阵；分镜表见文字稿。1280×720、12 fps（画面为静帧，低帧率只为减小体积），H.264 + AAC，181.8 秒。",
+      "description_en": "The taskbook's expression-completeness clause names text, images, tables, scenario cards, video/sound and an interactive page; this package had sound but no video, and this file supplies that kind. **The video introduces no new claim**: the audio track is identical to audio-guide.m4a, the captions match it sentence for sentence, and every frame is a figure already in the package. **Its nine cuts follow the narration rather than an even split** — F/03 for the three handover yards, F/10 at the public handover table, F/05's 96-cell matrix at the refusal state of all twelve scenarios; the shot list is in the transcript. 1280×720, 12 fps (static frames; the low rate only reduces size), H.264 + AAC, 181.8 s.",
+      "transcript": "assets/media/guided-tour.md",
+      "poster": "assets/media/cover.png",
+      "caption": "assets/media/guided-tour.vtt"
+    },
+    {
+      "path": "assets/media/guided-tour.en.mp4",
+      "role": "video",
+      "required": false,
+      "sha256": "55d4aa5b80838e547e97e5ca79f8ba65f81722d9a42673aee172cb3c5a5830e7",
+      "title_zh": "京张交接线 · 三分钟导览视频（英文）",
+      "title_en": "Jing-Zhang Handover Line · three-minute guided tour (English)",
+      "description_zh": "英文版导览视频，结构与中文版相同，画面改用图件的英文版本；176.5 秒。",
+      "description_en": "English guided tour; same structure as the Chinese edition with the English figure editions; 176.5 s.",
+      "transcript": "assets/media/guided-tour-en.md",
+      "poster": "assets/media/cover.png",
+      "caption": "assets/media/guided-tour-en.vtt"
     },
     {
       "path": "assets/tactile/tactile-corridor-map.svg",
