@@ -400,7 +400,9 @@ Four facility families form a checkable system-and-standard proposal, sharing on
 
 These are system and basis proposals; actual provision ratios, capacity and connection scale must be determined by the municipal, transport and industry authorities against official data.
 
-![Movement, blue-green ground and takeover points](assets/figures/mobility-bluegreen.en.png)
+**One figure now carries both the corridor locator and the handover section**: the corridor's true outline with the twelve takeover points on the left, the six-part section order and its adjacency rule on the right — **the rule is itself design content, so it has to appear on the same sheet as the corridor it governs**, not on a separate one.
+
+![Active-mobility spine and blue-green ground: the corridor's true outline, the twelve takeover points, and the section order — handover counter, accessible walk, Takeover Kiosk Zero, retained track, machine-only lane, planting and rest — with its adjacency rule](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
