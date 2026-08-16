@@ -79,7 +79,7 @@
       "severity": "info",
       "target": "metrics.json / assumptions.json",
       "source": "package-provided",
-      "message": "指标与其假设的机读联接 — assumption references: 46 metrics, 54 id references, every one resolves and matches what the metric actually reads (boundary, corpus, OSM, package-internal); the 53 source paths those rules read all resolve too — 49 in the package, 4 in the organiser's brief; the prose boundary rule matches 0 of 3 markers today (kept as a net for a metric outside the provisional class), and 3 of 5 census files are read by no metric"
+      "message": "指标与其假设的机读联接 — assumption references: 47 metrics, 55 id references, every one resolves and matches what the metric actually reads (boundary, corpus, OSM, package-internal); the 55 source paths those rules read all resolve too — 51 in the package, 4 in the organiser's brief; the prose boundary rule matches 0 of 3 markers today (kept as a net for a metric outside the provisional class), and 3 of 5 census files are read by no metric"
     },
     {
       "check_id": "PKG_BUILD_RUBRIC_COVERAGE",
@@ -143,7 +143,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "evidence_ceiling.py — evidence ceiling: background_only 10, provisional 17, self_measured 14, official_context 4; 3 metric(s) publish their operands and divide out to their value across 46 metrics; every declared class equals its weakest input"
+      "message": "evidence_ceiling.py — evidence ceiling: background_only 11, provisional 17, self_measured 14, official_context 4; 3 metric(s) publish their operands and divide out to their value across 47 metrics; every declared class equals its weakest input"
     },
     {
       "check_id": "PKG_FIGURE_CITATION_QA",
@@ -207,7 +207,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "i18n_order_qa.py — i18n order: 339 numeric templates checked; every slot that carries a unit or a figure number in both editions carries the same one — the check is silent about slots whose English rephrases the unit away, and says so rather than guessing"
+      "message": "i18n_order_qa.py — i18n order: 340 numeric templates checked; every slot that carries a unit or a figure number in both editions carries the same one — the check is silent about slots whose English rephrases the unit away, and says so rather than guessing"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -215,7 +215,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 55 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 2 bytes to spare. The package totals 38.9 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 55 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 2 bytes to spare. The package totals 39.3 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -247,7 +247,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 497 distinct names harvested from the package — 481 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 498 distinct names harvested from the package — 482 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -359,7 +359,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "term_consistency_qa.py — term consistency: 1684 distinct Chinese terms across i18n_en 602, i18n_drawings 771, i18n_html 334; 23 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 1 declared exception(s), each still in use"
+      "message": "term_consistency_qa.py — term consistency: 1686 distinct Chinese terms across i18n_en 604, i18n_drawings 771, i18n_html 334; 23 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 1 declared exception(s), each still in use"
     },
     {
       "check_id": "PKG_UPSTREAM_DRIFT_QA",
@@ -383,7 +383,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "visual_packet_qa.py — visual packet: 18 images against the organisers' cap of 18 (0 slot(s) free) — 10 figures in both languages, 4 PDF first pages, 4 screenshots; largest is drawings/a3-booklet.pdf at 1.36 MiB against a 4 MiB per-image cap, read from upstream/main"
+      "message": "visual_packet_qa.py — visual packet: 18 images against the organisers' cap of 18 (0 slot(s) free) — 10 figures in both languages, 4 PDF first pages, 4 screenshots; largest is drawings/a3-booklet.pdf at 1.39 MiB against a 4 MiB per-image cap, read from upstream/main"
     },
     {
       "check_id": "PKG_ERRATA_REGISTER",
@@ -391,7 +391,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 206 条，按发现者：audit 25、external 21、external-reviewer 5、own-gate 15、self 140；最常见形状：check-measured-the-convenient-thing 39、two-copies-of-one-thing-drifted 32、deliverable-not-inspected-before-shipping 22、claim-outlived-the-package 17。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 12 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 206 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 207 条，按发现者：audit 25、external 22、external-reviewer 5、own-gate 15、self 140；最常见形状：check-measured-the-convenient-thing 39、two-copies-of-one-thing-drifted 32、deliverable-not-inspected-before-shipping 22、claim-outlived-the-package 17。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 12 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 207 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
