@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-space-first innovation belt structured as one heritage spine, three differentiated hubs, two cross-corridor service wings, and twelve auditable AI+ scenarios, with provisional geometry and full recalculation triggers."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # Jing-Zhang Intelli-Rail
@@ -22,13 +22,28 @@ Jing-Zhang Intelli-Rail is not a technology showroom arranged along a park. It i
 
 ## Design Basis and Source List
 
-The official qualification announcement is the primary source for scope and professional tasks. The repository agent_taskbook.json defines the open Agent call, while enums, standards, missing-data registers, and provisional geometry provide the machine-checkable contract. Announced scales of approximately 43.6 sq km, 11.4 sq km, and 368.4 ha describe the three levels of work; they are not recast as surveyed legal boundaries.[source:OFFICIAL-ANNOUNCEMENT]
+The official qualification announcement is the primary source for scope and professional tasks. The repository agent_taskbook.json defines the open Agent call, while enums, standards, missing-data registers, and provisional geometry provide the machine-checkable contract. The announcement defines a coordinated research area of approximately 43.6 sq km (bounded by the North Fifth Ring Road, the Jingzang Expressway, Xizhimenwai Street, and Wanquanhe Road); an overall design area of approximately 11.4 sq km covering the urban and industrial districts within 1–2 km of the Jing-Zhang Railway Heritage Park; and 368.4 ha of key areas comprising, from north to south, Zhongzhiyuan AI Independent Innovation Acceleration Area (approx. 192.1 ha), Beijing AI Origin Community (approx. 104.3 ha), and Dazhongsi AI Industry Cluster (approx. 72.0 ha). These announced scales describe the three levels of work; they are not recast as surveyed legal boundaries.[source:OFFICIAL-ANNOUNCEMENT]
 
 Evidence is separated into four levels: official sources and standards; processed navigation; replaceable provisional constraints; and international references. sources.json and assumptions.json prevent a lower level from silently becoming an official control. All maps and metrics read the submitted GeoJSON. When official polygons arrive, all nine geometry layers, every spatial metric, five figures, bilingual HTML, and four PDFs must be regenerated together.[source:SOURCE-REGISTRY]
 
 SITE-001 and PROV-KEY-001/002/003 are provisional_constraint features with official_boundary=false. A public repository audit records a 412.5 m nearest distance between the provisional overall polygon and the OSM-mapped heritage park; that background comparison cannot adjudicate the legal boundary. The Dazhongsi provisional key area may also be materially displaced from its real anchor. The package therefore claims reviewable design content, not statutory location or approval.[data:geometry/site_boundary.geojson#SITE-001]
 
 This pull request belongs to the open Agent contribution route. It does not replace legal-entity qualification, prequalification, consortium, or offline delivery requirements in the professional competition.[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+
+Structural statements from the announcement and taskbook are matched section by section. The three positioning statements—the Centennial Jing-Zhang Cultural Belt, the Urban AI Life Experience Belt, and the AI Convergence Innovation Belt—are carried by the cultural-narrative, scenario-and-public-space, and industry-ecosystem chapters respectively. The five functions, the three zones and two wings, and the "two districts, one belt" industrial linkage are indexed below; the item-level mapping for agent.1–agent.6 is registered in compliance_matrix.json.[source:AGENT-TASKBOOK]
+
+| Taskbook element | Official statement | Where this proposal responds |
+| --- | --- | --- |
+| Positioning 1 | Centennial Jing-Zhang Cultural Belt | Heritage-spine continuity, Jing-Zhang Memory Route, Centennial Zero Kilometre landmark |
+| Positioning 2 | Urban AI Life Experience Belt | Twelve AI-enabled scenarios, three-tier public-space programming, accessible loop |
+| Positioning 3 | AI Convergence Innovation Belt | Six-stage innovation loop, three-hub industrial division, three validation sandboxes |
+| Function 1 | Full-Stack Independent AI Innovation System | Trustworthy-technology testing, standards collaboration hall, safety-governance gallery at Zhongzhiyuan |
+| Function 2 | World-Class AI Innovation Ecosystem | Near-campus transfer, open-source release hall, global case studies at the Origin Community |
+| Function 3 | AI-Enabled Scenario Paradigm | Xiaoyue River Scenario Enablement Wing, twelve scenario cards, scenario exit-valve mechanism |
+| Function 4 | Intelligent and Vibrant AI City | Walking-and-cycling spine, Civic Loop Theatre, intelligent-terminal street |
+| Function 5 | Global Voice in AI Governance | Data-compliance salon, model-card displays, public appeals and independent audit |
+| Spatial structure | Three Zones and Two Wings | One spine, three hubs, two wings, multiple nodes (mapped in the next chapter) |
+| Industrial linkage | "Two districts, one belt" coordination | Differentiated three-hub division and transverse wing stitching |
 
 ## Three-Level Scope Framework
 
@@ -40,11 +55,11 @@ The three levels form a strategy-to-structure-to-project chain, with operational
 | Overall design | How can 11.4 sq km become connected without becoming generic? | One spine, three hubs, two wings, and multiple civic nodes | land_use.geojson and roads.geojson |
 | Key areas | How do three hubs avoid duplication? | Trustworthy technology at Zhongzhiyuan, near-campus transfer at Origin Community, and urban application at Dazhongsi | key_areas.geojson and A0 boards |
 
-The single spine combines railway heritage, parkland, walking, cycling, and civic activity. The three hubs differentiate innovation roles. The Zhongguancun wing supplies law, IP, finance, and enterprise services; the Xiaoyuehe wing supplies community, health, education, and ecological test settings. This is a relational rule, not a new red line.[data:geometry/roads.geojson#ROAD-001]
+The structure is one spine, three hubs, two wings, and multiple civic nodes. The three hubs and two wings directly inherit the taskbook spatial structure and keep its official division of roles: Zhongzhiyuan carries the full-stack independent AI innovation system and global voice in AI governance; the Origin Community carries the world-class AI innovation ecosystem; Dazhongsi carries intelligent-native new business. The Zhongguancun Technology Services Wing provides global factor allocation with Zhongguancun IP and capital enablement; the Xiaoyue River Scenario Enablement Wing provides scenario enablement and intelligent urban vitality. The spine and the nodes form the public-space layer added on top: the spine combines railway heritage, parkland, walking, cycling, and civic activity, while the nodes comprise twelve AI-enabled scenarios, four cultural landmarks, and ten renewal projects. This is a relational rule, not a new red line.[data:geometry/roads.geojson#ROAD-001]
 
 ## Coordinated Research Area: Industry and Future City Research
 
-The ecosystem is organised as six connected stages: research creates knowledge; open-source communities make it collaborative; incubation and professional services reduce the cost of company formation; bounded urban testbeds produce evidence; anchor firms and procurement enable scaling; public evaluation and maintenance data return to research. Every stage receives at least one publicly legible interface so that innovation is not confined to closed campuses.[source:AGENT-TASKBOOK]
+The ecosystem is organised as six connected stages aligned with Haidian's "1+X+1" industry system: research creates knowledge; open-source communities make it collaborative; incubation and professional services reduce the cost of company formation; bounded urban testbeds produce evidence; anchor firms and procurement enable scaling; public evaluation and maintenance data return to research. Every stage receives at least one publicly legible interface so that innovation is not confined to closed campuses.[source:AGENT-TASKBOOK]
 
 Seven primary-source cases inform mechanisms rather than targets. Kendall Square links innovation to housing, transit, active ground floors, and public space. one-north places research, enterprises, incubators, and daily services within a walkable network. 22@Barcelona coordinates industrial renewal, infrastructure, and mixed use. Paris-Saclay demonstrates multi-institution testing and ecological evaluation. Seoul DMC links digital industries, culture, and public place. Kalasatama starts with daily benefit and carbon neutrality. Quayside demonstrates democratic accountability, design review, and stakeholder participation for digital systems.
 
@@ -55,7 +70,7 @@ Seven primary-source cases inform mechanisms rather than targets. Kendall Square
 | 22@Barcelona | Heritage, infrastructure, and mixed renewal | Railway reuse and phased project bank | Land law and statutory ratios |
 | Paris-Saclay | Joint experiments and evaluation | Three controlled testbed types | Regional statistics |
 | Seoul DMC | Digital content plus public realm | Dazhongsi terminal and content interfaces | Industry quotas |
-| Kalasatama | Resident participation and low-carbon pilots | Community services in the Xiaoyuehe wing | Population targets |
+| Kalasatama | Resident participation and low-carbon pilots | Community services in the Xiaoyue River wing | Population targets |
 | Quayside | Digital accountability and review | Data cards, appeals, and exit mechanisms | Previous technology proposal |
 
 Future-city performance is measured by walkability, public-space continuity, access to low-cost innovation space, visible resident benefit, data minimisation, human-review response, universal access, and carbon impact—not by screen count.[depth:overall_spatial_structure]
@@ -151,7 +166,7 @@ Metrics are separated into three types. Spatial values reproducible from this pa
 | floor_area_ratio | unknown | floor area / official area | Needs statutory and building data |
 | key_area_count | 3, known/provisional | feature count | Names fixed; locations unverified |
 
-Future operations should track closed walking gaps, accessible continuity, non-commercial public-space hours, test-to-procurement conversion, open-source retention, appeal response, manual takeover, timely deletion, task energy, and resident benefit. Composite scores cannot conceal failure.
+Future operations should track the three planning-indicator families named by the announcement—an AI innovation index, talent density, and output value—together with closed walking gaps, accessible continuity, non-commercial public-space hours, test-to-procurement conversion, open-source retention, appeal response, manual takeover, timely deletion, task energy, and resident benefit. Announcement-level indicators receive no values until an official methodology is published; every indicator must first release its definition, baseline, sampling error, and responsible party. Composite scores cannot conceal failure.
 
 compliance_matrix.json covers announcement tasks 1.3, 1.4, 1.5 and agent.1–agent.6. standard_matrix.json, design_depth_matrix.json, and self_check.json connect standards, fifteen depth items, and four review gates. The prose keeps claim-adjacent anchors while structured files retain the full audit.[metric:public_space_ratio]
 
