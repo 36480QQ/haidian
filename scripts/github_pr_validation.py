@@ -7,6 +7,29 @@ on the PR. It does not call AI services or execute contributor code. The trusted
 scripts also rerun the spatial, visual, and professional gates against the
 hydrated package so a contributor-owned self_check.json is not treated as
 independent execution provenance.
+
+Security model
+--------------
+- Runs only from the trusted default branch checkout (``github.event.repository.default_branch``).
+- Downloads changed files from the PR head via the GitHub Contents API as inert data blobs.
+- Never executes contributor-supplied code; the validator binary is always the
+  trusted branch copy.
+- Comments on the PR with the validation result and retries on transient API
+  errors (429, 500-504) up to ``MAX_API_ATTEMPTS`` times.
+
+Environment variables
+---------------------
+- ``GITHUB_TOKEN`` — required; needs ``pull-requests: write`` permission.
+- ``GITHUB_REPOSITORY`` — required; ``owner/repo`` format.
+- ``GITHUB_EVENT_PATH`` — path to the GitHub Actions event JSON.
+
+Usage
+-----
+Intended to be called by the ``submission-validation.yml`` GitHub Actions
+workflow, not manually. For local testing, pass ``--pr`` to specify the PR
+number and ensure ``GITHUB_TOKEN`` is set.
+
+Exit code is 0 when the PR passes validation and 1 when it fails or errors.
 """
 
 from __future__ import annotations
@@ -45,6 +68,7 @@ RETRYABLE_METHODS = frozenset({"GET", "HEAD", "OPTIONS"})
 # with the path and head-specific download error after the retry budget.
 RETRYABLE_STATUS_CODES = frozenset({404, 429, 500, 502, 503, 504})
 TRUSTED_REVIEW_GATE_TIMEOUT_SECONDS = 180
+PARTICIPANT_OWNER_ALIASES_PATH = "data/participant_owner_aliases.json"
 
 
 def _http_error_message(error: urllib.error.HTTPError) -> str:
@@ -94,6 +118,11 @@ def _retry_delay_seconds(error: urllib.error.HTTPError, attempt: int) -> float:
         except ValueError:
             pass
     return min(MAX_RETRY_DELAY_SECONDS, float(2**attempt))
+
+
+def _network_error_message(error: urllib.error.URLError) -> str:
+    """Return a bounded network error description without request credentials."""
+    return str(error.reason or "network request failed")[:300].replace("\n", " ")
 
 
 def _is_download_not_found(error: Exception, path: str) -> bool:
@@ -197,6 +226,13 @@ class GitHubClient:
                         f"GitHub API download {path} failed with HTTP {error.code}: {message}"
                     ) from error
                 time.sleep(_retry_delay_seconds(error, attempt))
+            except urllib.error.URLError as error:
+                if attempt + 1 >= MAX_API_ATTEMPTS:
+                    raise RuntimeError(
+                        f"GitHub API download {path} failed after network error: "
+                        f"{_network_error_message(error)}"
+                    ) from error
+                time.sleep(min(MAX_RETRY_DELAY_SECONDS, float(2**attempt)))
         else:
             raise AssertionError("unreachable")
         if len(content) > max_bytes:
@@ -375,14 +411,100 @@ def strict_manifest_paths_for(files: list[dict]) -> list[str]:
     return sorted(paths)
 
 
-def is_review_queue_candidate(changed_files: list[str], pr_author: str) -> bool:
+def authorized_legacy_submission_dirs(
+    repo_root: Path, github_user_id: object, current_login: str
+) -> set[str]:
+    """Resolve maintainer-controlled rename aliases from trusted GitHub identity."""
+    if not isinstance(github_user_id, int) or isinstance(github_user_id, bool):
+        return set()
+    policy_path = repo_root / PARTICIPANT_OWNER_ALIASES_PATH
+    try:
+        policy = json.loads(policy_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        return set()
+    aliases = policy.get("aliases") if isinstance(policy, dict) else None
+    if not isinstance(aliases, list):
+        return set()
+    for item in aliases:
+        if not isinstance(item, dict):
+            continue
+        configured_user_id = item.get("github_user_id")
+        if (
+            not isinstance(configured_user_id, int)
+            or isinstance(configured_user_id, bool)
+            or configured_user_id != github_user_id
+        ):
+            continue
+        configured_login = item.get("current_login")
+        if not isinstance(configured_login, str) or configured_login.casefold() != current_login.casefold():
+            continue
+        legacy_login = item.get("legacy_login")
+        if not isinstance(legacy_login, str) or not legacy_login:
+            return set()
+        legacy_dirs = item.get("legacy_submission_dirs")
+        if not isinstance(legacy_dirs, list):
+            return set()
+        result: set[str] = set()
+        for value in legacy_dirs:
+            if not isinstance(value, str):
+                return set()
+            parts = PurePosixPath(value).parts
+            if (
+                len(parts) != 3
+                or parts[0] != "submissions"
+                or parts[1] != legacy_login
+                or ".." in parts
+            ):
+                return set()
+            result.add(PurePosixPath(value).as_posix())
+        return result
+    return set()
+
+
+def reserved_legacy_login_user_id(repo_root: Path, login: str) -> int | None:
+    """Return the trusted user ID that owns a released historical login."""
+    try:
+        policy = json.loads(
+            (repo_root / PARTICIPANT_OWNER_ALIASES_PATH).read_text(encoding="utf-8")
+        )
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        return None
+    aliases = policy.get("aliases") if isinstance(policy, dict) else None
+    if not isinstance(aliases, list):
+        return None
+    for item in aliases:
+        if not isinstance(item, dict):
+            continue
+        legacy_login = item.get("legacy_login")
+        user_id = item.get("github_user_id")
+        if (
+            isinstance(legacy_login, str)
+            and legacy_login.casefold() == login.casefold()
+            and isinstance(user_id, int)
+            and not isinstance(user_id, bool)
+        ):
+            return user_id
+    return None
+
+
+def is_review_queue_candidate(
+    changed_files: list[str],
+    pr_author: str,
+    authorized_legacy_dirs: set[str] | None = None,
+) -> bool:
     """Return true only for a single participant-owned submission directory."""
+    authorized_legacy_dirs = authorized_legacy_dirs or set()
     roots: set[str] = set()
     for filename in changed_files:
         parts = filename.split("/")
-        if len(parts) < 4 or parts[0] != "submissions" or parts[1].casefold() != pr_author.casefold():
+        proposal_dir = "/".join(parts[:3])
+        if (
+            len(parts) < 4
+            or parts[0] != "submissions"
+            or (parts[1].casefold() != pr_author.casefold() and proposal_dir not in authorized_legacy_dirs)
+        ):
             return False
-        roots.add("/".join(parts[:3]))
+        roots.add(proposal_dir)
     return bool(changed_files) and len(roots) == 1
 
 
@@ -561,6 +683,7 @@ def main() -> int:
 
     pr_number = int(pull_request["number"])
     pr_author = pull_request["user"]["login"]
+    pr_user_id = pull_request["user"].get("id")
     head_repo = pull_request["head"]["repo"]["full_name"]
     head_sha = pull_request["head"]["sha"]
     base = pull_request.get("base") or {}
@@ -589,8 +712,18 @@ def main() -> int:
         if item.strip()
     ]
     maintainer_bypass = pr_author.lower() in {item.lower() for item in bypass}
+    trusted_repo_root = Path(__file__).resolve().parent.parent
+    authorized_legacy_dirs = authorized_legacy_submission_dirs(
+        trusted_repo_root, pr_user_id, pr_author
+    )
+    reserved_legacy_user_id = reserved_legacy_login_user_id(trusted_repo_root, pr_author)
+    blocked_submission_owners = (
+        {pr_author}
+        if reserved_legacy_user_id is not None and reserved_legacy_user_id != pr_user_id
+        else set()
+    )
     validation_files = validation_paths_for(files, maintainer_bypass)
-    queue_candidate = is_review_queue_candidate(changed_files, pr_author)
+    queue_candidate = is_review_queue_candidate(changed_files, pr_author, authorized_legacy_dirs)
 
     # Code/docs/test PRs do not need participant-package hydration.  Decide
     # this immediately after the file listing so a non-submission change
@@ -676,12 +809,13 @@ def main() -> int:
                 bypass,
                 strict_manifest_paths=strict_manifest_paths_for(files),
                 required_readiness_contract_dirs=required_readiness_contract_dirs,
+                authorized_legacy_submission_dirs=authorized_legacy_dirs,
+                blocked_submission_owners=blocked_submission_owners,
             )
             if validation_files and not base_sha:
                 validation.add_error(
                     "pull_request.base.sha is required to establish the trusted readiness migration boundary"
                 )
-            trusted_repo_root = Path(__file__).resolve().parent.parent
             for proposal_path in sorted(proposal_paths):
                 run_trusted_review_gates(
                     validation,

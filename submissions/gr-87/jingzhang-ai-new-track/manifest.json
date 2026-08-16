@@ -14,7 +14,7 @@
   "model_family": "other",
   "model_detail": "deepseek-v4-flash (local ZCode agent, 2026-08-10)"
  },
- "generated_at": "2026-08-10T08:52:23Z",
+ "generated_at": "2026-08-15T02:39:46Z",
  "files": [
   {
    "path": "manifest.json",
@@ -26,7 +26,7 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "a4ae727293a828227341859eb8ce2bef1197adda9b02dc65a413c3f84186230d"
+   "sha256": "371050111e359b7a7c3f3e283eeb6412e1514d356ab8a678939605f6ace134b2"
   },
   {
    "path": "agent.json",
@@ -38,50 +38,50 @@
    "path": "metrics.json",
    "role": "metrics",
    "required": true,
-   "sha256": "84742bd4a823d892498f43eb33715180ff70bd0c51385b6e426f5e99b1420c9d"
+   "sha256": "bdac8f2440c20694ea1e41521798b33796fcb6fdc115c2dcd3658e7caba61ff3"
   },
   {
    "path": "assumptions.json",
    "role": "assumptions",
    "required": true,
-   "sha256": "d34cae40d73b192fa938bfb608217bea1d73c292ddbcd6a18456c1db98c9ad17"
+   "sha256": "52eaea81d62bbe03dfce4716bba3eac889fc6e1b724adf544b809781c0761648"
   },
   {
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "c43c0dcd7e852cd8aba63d7aa3bb95eafe009f5c2d0a0380dfeb78fbfb8f968f"
+   "sha256": "14a6869b211e778a83987c4ca4270d79b41d75090082819aa59a65e35b58a7f1"
   },
   {
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "4ec28c2142c06337efdc6cd2d3756593dcc293e1b16c87d642a84d8a53089f32"
+   "sha256": "3ebb80f0463d827e98cfa31f59ecef13aba8a56c421920fc54930a75b3edb0b4"
   },
   {
    "path": "compliance_matrix.json",
    "role": "compliance_matrix",
    "required": true,
-   "sha256": "3408a9f28202f861235ef545067173285da51dfd1b7e27b7473329847b4ca493"
+   "sha256": "65284e53d2211f32c2f6461cf96c15ff52fc4acca9bc36f786868f90e7319b7f"
   },
   {
    "path": "standard_matrix.json",
    "role": "standard_matrix",
    "required": true,
-   "sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
+   "sha256": "bbdc9b7ffdb450dcfc42ae5ba7c55ad2788ad95775b68646e0030d0ceb7f7f75"
   },
   {
    "path": "design_depth_matrix.json",
    "role": "design_depth_matrix",
    "required": true,
-   "sha256": "dc2c62f1d1ab8d673bec8b5dc34fbc1e1cacf4ed04038193dc92b142f26df021"
+   "sha256": "44a1d35204cd0c92b16797e4592bd180378a8cfdfee5b6cdffa2407756d483f2"
   },
   {
    "path": "report/proposal.html",
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "471dc9bd85525bcef517c027e8c093da9ef75f2acc47051e179bf9cec8dcf0ae"
+   "sha256": "888c083ed1e9ed5976106c4578273beefde8cbe7d83430ff81081d511f864213"
   },
   {
    "path": "report/narrative.md",
@@ -100,21 +100,21 @@
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "dc0d9b95fb3667c94aafaecea5afd257e008bcf8c668b3e7cbf4d761110fb64b"
+   "sha256": "d7b85dd3c7b436e891d5c671e3cb53cf8f26b6141db8c6c22eba504b6bb3e3c1"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "654e6fd170155847502205d57836a89cd4284788290b0a7866c8306ea3db343b"
+   "sha256": "fb4ed1665e1ba974f856e974079f8a8a63f56520e4129a17b7ef68ebbc26aecb"
   },
   {
    "path": "visual/index.html",
    "role": "visualization",
    "required": true,
    "language": "zh",
-   "sha256": "1155afe0804f3e80e02cb878cadf2bdcf1e59ce965d09ed01dfb8d5034cbc4fb"
+   "sha256": "15af6f6c033fdca7b0653e132fd21d42ece3a5d60f5b73c0443d635af3172166"
   },
   {
    "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
    "required": true,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "3fee39a5e1d987aa86e71041aa0790c63318c6452fde0a4833044a83da224d22"
+   "sha256": "1457ab147c7284f42661ce082357b4edc2b73bd54be3a605fb5bfe0c78fd622e"
   },
   {
    "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
    "required": true,
    "language": "en",
    "translation_of": "report/proposal.html",
-   "sha256": "33f1df513ee53cdcfe93cb9da97727054a07fe60fc7c063398f17bc885ef0b1b"
+   "sha256": "3f687f318bfec6060f8121118507a27cce081feb81ca2d2ed9dfe4f6f977f245"
   },
   {
    "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a3-booklet.pdf",
-   "sha256": "a3c667ead1de0fe662422739d3d242eecaf012d295b03c6987431fc1f675dcec"
+   "sha256": "a2dda2f702e60417e8af6d8daaa7adb4d18a7e2908082e2c90f8f91f2e9e4038"
   },
   {
    "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
-   "sha256": "108607b57dd81e06ac7e9a269624182aff369e7fc1bf60d72390ef9b7afe4882"
+   "sha256": "d7f9018e3a7bcc18374bcfc8e53635888daa1d5c37bcf30be34a2a61e734a4a8"
   },
   {
    "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
    "required": true,
    "language": "en",
    "translation_of": "visual/index.html",
-   "sha256": "d7c093f7ca47d66edba9ee3f5c91aba65f735be9bdea88f6a7009ac8dc6de6e3"
+   "sha256": "db05ca8946e1ae586772e103a1c224f3a105cf765df414e7e3403259d5c31715"
   },
   {
    "path": "assets/figures/key-areas.en.png",
@@ -284,12 +284,57 @@
    "language": "en",
    "translation_of": "assets/figures/site-overview.png",
    "sha256": "9fa20dd046f2a57e2d1b87732eb62b02da92b0c1402fb994ebe61fc16c66542e"
+  },
+  {
+   "path": "visual/assets/check_switchback.js",
+   "role": "verification_script",
+   "required": true,
+   "sha256": "5d69f9472227667b1c056bd9eb0c4d8ad6167ae825a184e40649ecf94901c167"
+  },
+  {
+   "path": "visual/assets/field-census-evidence.json",
+   "role": "evidence_data",
+   "required": true,
+   "sha256": "620c62101ddfe1c55104758b82688d947884e4967e7c108e86b7ba6297bfa54a"
+  },
+  {
+   "path": "visual/assets/jzsw-tabletop-evidence.json",
+   "role": "evidence_data",
+   "required": true,
+   "sha256": "d2aa8f950b03426ed865efe44db889580118e6f095f8aabd5319966a574e34ae"
+  },
+  {
+   "path": "visual/assets/run_field_census.js",
+   "role": "verification_script",
+   "required": true,
+   "sha256": "a5382046d29451c7a031fccf5d3a82c082e4ed10bf7645e6a578edc01003f7fe"
+  },
+  {
+   "path": "visual/assets/run_jzsw_tabletop.js",
+   "role": "verification_script",
+   "required": true,
+   "sha256": "594693f2c27f7be272e99a9ec81843d004dc8601ea06881e1383304b1b60cc4a"
+  },
+  {
+   "path": "visual/assets/switchback-protocol.schema.json",
+   "role": "evidence_data",
+   "required": true,
+   "sha256": "333b83fa8ca2a1dd7f6f50d2a87462e63844b2ae36638658c6c5df9f4bca8209"
   }
  ],
  "validation_claim": {
   "self_checked": true,
   "known_blockers": [],
-  "data_confidence": "high",
-  "readiness_contract": "persisted-self-check-v1"
+  "data_confidence": "medium",
+  "readiness_contract": "persisted-self-check-v1",
+  "extensions": {
+   "x-data-confidence-note": {
+    "schema_version": "1.0",
+    "data": {
+     "zh": "包级置信度为「结构化提交完整度」，不代表官方数据或现场数据高置信；边界为 provisional，控规为 unknown。",
+     "en": "Package-level confidence means structural submission completeness, not high confidence in official or on-site data; boundary is provisional and controls are unknown."
+    }
+   }
+  }
  }
 }

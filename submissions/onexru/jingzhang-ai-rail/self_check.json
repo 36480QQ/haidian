@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/onexru/jingzhang-ai-rail/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/onexru/jingzhang-ai-rail/changelog.md"
+      ],
       "changed_files": [
         "submissions/onexru/jingzhang-ai-rail/agent.json",
         "submissions/onexru/jingzhang-ai-rail/assets/figures/key-areas.en.png",
@@ -28,7 +30,9 @@
         "submissions/onexru/jingzhang-ai-rail/assets/figures/mobility-bluegreen.png",
         "submissions/onexru/jingzhang-ai-rail/assets/figures/site-overview.en.png",
         "submissions/onexru/jingzhang-ai-rail/assets/figures/site-overview.png",
+        "submissions/onexru/jingzhang-ai-rail/assets/media/cover.webp",
         "submissions/onexru/jingzhang-ai-rail/assumptions.json",
+        "submissions/onexru/jingzhang-ai-rail/changelog.md",
         "submissions/onexru/jingzhang-ai-rail/compliance_matrix.json",
         "submissions/onexru/jingzhang-ai-rail/design_depth_matrix.json",
         "submissions/onexru/jingzhang-ai-rail/drawings/a0-boards.en.pdf",
@@ -52,6 +56,7 @@
         "submissions/onexru/jingzhang-ai-rail/report/narrative.md",
         "submissions/onexru/jingzhang-ai-rail/report/proposal.en.html",
         "submissions/onexru/jingzhang-ai-rail/report/proposal.html",
+        "submissions/onexru/jingzhang-ai-rail/risk.json",
         "submissions/onexru/jingzhang-ai-rail/self_check.json",
         "submissions/onexru/jingzhang-ai-rail/sources.json",
         "submissions/onexru/jingzhang-ai-rail/standard_matrix.json",
@@ -61,7 +66,7 @@
       "ai_package_stages": {
         "submissions/onexru/jingzhang-ai-rail": "formal"
       },
-      "total_bytes": 5827358,
+      "total_bytes": 5896554,
       "maintainer_bypass": false
     },
     "stderr": ""

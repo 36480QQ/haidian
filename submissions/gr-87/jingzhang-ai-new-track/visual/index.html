@@ -59,6 +59,7 @@
       <span class="badge">一带三核 / 双翼七轴</span>
       <span class="badge">agent.1–agent.6 全覆盖</span>
       <span class="badge">12 场景卡 · 3 测试验证 · 5 画像 · 3 朝圣地标</span>
+      <span class="badge">JZ-SWITCHBACK-001 人字回退</span>
       <span class="badge">双语 v2 · 离线展示</span>
     </div>
   </header>
@@ -153,6 +154,31 @@
   </section>
 
   <section>
+    <h2>原创机制：人字回退 <span class="en">Switchback Fallback · JZ-SWITCHBACK-001</span></h2>
+    <div class="note" style="margin-top:0">京张铁路人字线遇障折返 → 城市 AI 服务遇障回到人工。三轨证据约束 → 一条公共服务链 → 人字折返 → 三处折返试验段。机制状态均为概念级设计状态，不是审批、部署、现场绩效或政府承诺。</div>
+    <div class="grid g3" style="margin-top:12px">
+      <div class="card"><div class="card-label">历史轨 · Heritage Track</div><div class="card-note">核验来源、铁路文化叙事与文保边界；京张铁路史实仅作叙事锚点，不等同于已认证历史结论。</div></div>
+      <div class="card"><div class="card-label">轨道轨 · Transit Track</div><div class="card-note">核验空间关系、普通通行与工程/权属前置条件；红线、轨道线位与市政承载力未核实不得实施。</div></div>
+      <div class="card"><div class="card-label">数据轨 · Data Track</div><div class="card-note">核验数据最小化、人工复核、申诉与退出；无授权数据不得进入场景，越界即停止。</div></div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="card-label">公共服务链</div>
+      <div class="card-note" style="font-size:13px; margin-top:6px">选择 → 使用 → 叫停 → 申诉 → 回到人工 → 退出/恢复</div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="card-label">人字回退协议</div>
+      <div class="card-note" style="font-size:13px; margin-top:6px">普通服务 → 可选辅助 → 人字折返（停止/人工接管）→ 恢复普通服务</div>
+      <div class="card-note">恢复普通服务不自动提升成熟度，也不产生部署授权；停止与恢复须有记录可查。</div>
+    </div>
+    <div class="grid g3" style="margin-top:12px">
+      <div class="card"><div class="card-label">JZ-SW1 · 众智园</div><div class="card-note">受控产业验证（SC-02）</div><div class="card-note" style="color:#c2572a">状态：concept_only</div></div>
+      <div class="card"><div class="card-label">JZ-SW2 · 原点社区</div><div class="card-note">AI与人工等价公共服务验证（SC-04/09/11）</div><div class="card-note" style="color:#c2572a">状态：concept_only</div></div>
+      <div class="card"><div class="card-label">JZ-SW3 · 大钟寺</div><div class="card-note">受限、可撤的空间/设备服务验证（SC-12）</div><div class="card-note" style="color:#c2572a">状态：concept_only</div></div>
+    </div>
+    <div class="note">证据状态纪律：字段完整只证明设计覆盖；离线回放只证明规则可复演；真实运营、现场安全、许可、绩效与公众结果保持 unknown，直到取得独立证据。详细登记见 compliance_matrix.json 的 mechanism_register。</div>
+  </section>
+
+  <section>
     <h2>核心指标 <span class="en">Core Metrics · 与 metrics.json 一致</span></h2>
     <div class="grid g4">
       <div class="card" data-metric="site_area_sqm" data-value="11412825.4">
@@ -180,6 +206,10 @@
       <div class="card-label">容积率</div>
       <div class="card-value">待补</div>
       <div class="card-note">待正式控规条件</div></div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="card-label">运营 KPI 方法定义（当前 unknown，仅定义计算方法）</div>
+      <div class="card-note">申诉闭环率=已闭环申诉数/已受理申诉数；人工接管成功率=成功接管事件/接管请求；退出完整性=完成退出事件/退出事件；人工等价可用性=AI 服务关闭时段内人工等价服务持续可用。真实值待运营数据进入 metrics.json，不填虚构基准数。</div>
     </div>
     <div class="note">指标均由 geometry/*.geojson 按 EPSG:4548 复算；FAR/建筑高度/密度/退线/道路红线等法定控制指标在官方控规条件发布前列为待补 (unknown)。</div>
   </section>
@@ -214,18 +244,18 @@
     <h2>自检状态 <span class="en">Self-Check · self_check.json</span></h2>
     <table>
       <tr><th style="width:80px">结果</th><th style="width:190px">检查项</th><th>说明</th></tr>
-      <tr><td class="pass">PASS</td><td>BOUNDARY_TRUST</td><td>Provisional boundary is present and labeled provisional_constraint; replace with official redline before professional scoring. Recompute all layers and metrics after replacement.</td></tr><tr><td class="pass">PASS</td><td>KEY_AREAS_TRUST</td><td>Three required key areas (PROV-KEY-001/002/003) are present as provisional_constraint; replace with official polygons before professional scoring.</td></tr><tr><td class="pass">PASS</td><td>LAND_USE_TOPOLOGY</td><td>Land-use polygons fully partition the submitted site boundary without gaps or overlaps (verified with shapely unary_union in EPSG:4326 and area recomputation in EPSG:4548).</td></tr><tr><td class="pass">PASS</td><td>BUILDING_PLACEMENT</td><td>Representative building footprints lie inside the site boundary and do not overlap green-space polygons.</td></tr><tr><td class="pass">PASS</td><td>PHASING_PARTITION</td><td>Phasing polygons fully partition the site boundary without gaps or overlaps; phase areas sum to the site area.</td></tr><tr><td class="pass">PASS</td><td>VISUAL_STATIC</td><td>Static offline HTML visualization generated without CDN, remote tiles, external scripts, fonts, iframes, forms or API calls; metric values match metrics.json.</td></tr><tr><td class="pass">PASS</td><td>PROFESSIONAL_EVIDENCE</td><td>Proposal includes readable narrative covering the six agent tasks, 10+ scenario cards, 3+ test scenarios, 5+ personas, 3+ pilgrimage landmarks, with claim-adjacent evidence markers referencing sources, standards, depth items, geometry and metrics.</td></tr><tr><td class="pass">PASS</td><td>BILINGUAL_CONTRACT</td><td>Bilingual contract version 1 declared; proposal.en.md provided as equivalent standalone translation with aligned sections, claims, metrics, evidence references and figure positions.</td></tr><tr><td class="pass">PASS</td><td>DATA_GAP</td><td>Official boundary, regulatory controls, existing buildings, ownership, municipal and transport engineering data gaps are recorded as pending items; organizer data gaps do not block content scoring.</td></tr>
+      <tr><td class="pass">PASS</td><td>DETERMINISTIC_VALIDATION</td><td>validate_local_submission.py passes: file scope, bilingual contract, manifest hashes, proposal structure and PII risk patterns; 0 errors, 1 expected provisional-boundary warning.</td></tr><tr><td class="pass">PASS</td><td>SPATIAL_REVIEW</td><td>GeoJSON topology, coordinate system, area coverage and metric reproducibility verified; key areas are provisional (KEY_AREA_PROVISIONAL, minor) pending official polygons; organizer geometry gaps do not block scoring.</td></tr><tr><td class="pass">PASS</td><td>VISUAL_PACKAGING</td><td>Static offline HTML verified: no remote resources or active content; data-metric values match metrics.json; 0 issues.</td></tr><tr><td class="pass">PASS</td><td>PROFESSIONAL_EVIDENCE</td><td>standard_matrix 6 standards and design_depth_matrix 15 depth items covered; proposal cites source 6 / standard 5 / depth 20 / data 32 / metric 19 unique references; 0 issues.</td></tr><tr><td class="pass">PASS</td><td>DATA_GAP</td><td>Official boundary, regulatory controls, existing buildings, ownership and engineering conditions remain pending; organizer data gaps do not block content scoring.</td></tr>
     </table>
   </section>
 
   <section>
     <h2>关键假设与数据缺口 <span class="en">Assumptions &amp; Data Gaps · assumptions.json</span></h2>
-    <ul><li><b>A-BOUNDARY-001</b> — Official site boundary and key-area polygons are not publicly available; the package uses repository provisional polygons (PROV-SITE-001, PROV-KEY-001/002/003) marked provisional_constraint, official_boundary=false, boundary_precision=provisional_rough.</li><li><b>A-CONTROLS-001</b> — Approved regulatory-planning conditions (FAR, building height, building density, green ratio, setbacks, road redline, building control lines) are not included in the public site package.</li><li><b>A-EXISTING-001</b> — Existing building footprints, parcel boundaries, ownership, heritage control zones and municipal/utility data are not publicly cleared.</li><li><b>A-TRANSPORT-001</b> — Road alignments, rail lines, bridge/tunnel and parking data are schematic indications only (road_class, provisional_alignment).</li><li><b>A-PHASING-001</b> — Phasing is a conceptual near/mid/long-term proposal (2026-2028 / 2028-2031 / 2031-2035) that fully partitions the submitted boundary; it is not a commitment of investment, sequencing approval or government decision.</li></ul>
+    <ul><li><b>A-BOUNDARY-001</b> — Official site boundary and key-area polygons are not publicly available; the package uses repository provisional polygons (PROV-SITE-001, PROV-KEY-001/002/003) marked provisional_constraint, official_boundary=false, boundary_precision=provisional_rough.</li><li><b>A-CONTROLS-001</b> — Approved regulatory-planning conditions (FAR, building height, building density, green ratio, setbacks, road redline, building control lines) are not included in the public site package.</li><li><b>A-EXISTING-001</b> — Existing building footprints, parcel boundaries, ownership, heritage control zones and municipal/utility data are not publicly cleared.</li><li><b>A-TRANSPORT-001</b> — Road alignments, rail lines, bridge/tunnel and parking data are schematic indications only (road_class, provisional_alignment).</li><li><b>A-PHASING-001</b> — Phasing is a conceptual near/mid/long-term proposal (2026-2028 / 2028-2031 / 2031-2035) that fully partitions the submitted boundary; it is not a commitment of investment, sequencing approval or government decision.</li><li><b>A-SCENARIOS-001</b> — AI scenarios, event systems, community operations and pilgrimage landmarks are concept proposals for professional teams to deepen; no operational authorization or deployment is claimed.</li><li><b>A-RECALC-001</b> — When official polygons or regulatory attachments arrive, regenerate site boundary, key areas, land use, green/public space, buildings, roads, phasing, all metrics, figures, report HTML, visual HTML and A3/A0 PDFs; do not replace a single file; package version v0.3.</li><li><b>A-REGIONAL-001</b> — The five regional collaboration rows (Beiwei community, Future Science City, Huairou Science City, Beijing E-Town, Beijing-Tianjin-Hebei) are candidate conceptual interfaces only; no collaboration is claimed to have occurred, been authorized or been contracted.</li><li><b>A-OPERATIONS-001</b> — No confirmed partners, operators, budget, insurance, permits, on-site baselines or real user results exist for the proposed AI scenarios, verification windows or operations.</li><li><b>A-SWITCHBACK-001</b> — 人字回退（JZ-SWITCHBACK-001）为概念机制与叙事命名，非工程回退规程、非交通调度方案；其历史叙事锚点基于公开史料常识，不等同于已认证历史结论；三处折返试验段均为 concept_only，不表示有场地许可、运营主体或企业合作。</li></ul>
   </section>
 
   <section>
     <h2>来源清单 <span class="en">Sources · sources.json</span></h2>
-    <ul><li><b>SITE-PACKAGE</b> — Project brief, enums, allowed design space, ranges, schemas and missing-data checklist.</li><li><b>SOURCE-REGISTRY</b> — Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.</li><li><b>PROCESSED-FACT-PACK</b> — Agent-readable navigation layer for scopes, required tasks, source-use boundaries and missing-data checklist; not a new authority source.</li><li><b>OFFICIAL-ANNOUNCEMENT</b> — Official announcement tasks, three scope levels, three key areas, language and deliverable context.</li><li><b>AGENT-TASKBOOK</b> — Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements and boundary clause.</li><li><b>BOUNDARY-SOURCE</b> — Submitted site boundary geometry source (provisional_constraint).</li><li><b>KEY-AREA-SOURCE</b> — Three required detailed-design key area boundaries (provisional_constraint): PROV-KEY-001/002/003.</li><li><b>DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES</b> — City character, public space and architecture interface control references.</li></ul>
+    <ul><li><b>SITE-PACKAGE</b> — Project brief, enums, allowed design space, ranges, schemas and missing-data checklist.</li><li><b>SOURCE-REGISTRY</b> — Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.</li><li><b>PROCESSED-FACT-PACK</b> — Agent-readable navigation layer for scopes, required tasks, source-use boundaries and missing-data checklist; not a new authority source.</li><li><b>OFFICIAL-ANNOUNCEMENT</b> — Official announcement tasks, three scope levels, three key areas, language and deliverable context.</li><li><b>AGENT-TASKBOOK</b> — Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements and boundary clause.</li><li><b>BOUNDARY-SOURCE</b> — Submitted site boundary geometry source (provisional_constraint). · alias_of: DATA-SRC-PROVISIONAL-BOUNDARIES-20260605</li><li><b>KEY-AREA-SOURCE</b> — Three required detailed-design key area boundaries (provisional_constraint): PROV-KEY-001/002/003. · alias_of: DATA-SRC-PROVISIONAL-BOUNDARIES-20260605</li><li><b>DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES</b> — City character, public space and architecture interface control references.</li></ul>
     <div class="note">完整来源、许可与限制见 sources.json 与 report/copyright_statement.md。本页面为纯离线静态文件：不加载 CDN、远程地图瓦片、外部脚本、外部字体、iframe、表单或 API。</div>
   </section>
 

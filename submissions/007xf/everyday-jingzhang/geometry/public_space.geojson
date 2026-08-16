@@ -170,8 +170,13 @@
         "expiry_required": true,
         "stop_condition": "来源、位置或严重度不能由现场人员核实 / source, location or severity cannot be verified on site",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S01",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "京张日用线 / Everyday Line",
+        "approved_input": "去标识现场问题单与具名巡查记录 / de-identified field tickets and signed inspection records",
+        "handover_and_reopen_evidence": "路线编号、现场签字、断点工单与关闭照片 / route ID, field sign-off, gap ticket and closure photo"
       },
       "geometry": {
         "type": "Point",
@@ -214,8 +219,13 @@
         "expiry_required": true,
         "stop_condition": "工具试图替代专业热环境或工程判断 / tool attempts to replace professional thermal or engineering judgment",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S02",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "京张日用线 / Everyday Line",
+        "approved_input": "具名巡查、资产编号与天气预警 / signed inspections, asset IDs and weather alerts",
+        "handover_and_reopen_evidence": "巡查表、资产号、维修时限与复走记录 / inspection sheet, asset ID, repair deadline and repeat walk"
       },
       "geometry": {
         "type": "Point",
@@ -258,8 +268,13 @@
         "expiry_required": true,
         "stop_condition": "无出处、史实冲突、文保位置不明或权利状态不清 / missing citation, factual conflict, unknown heritage location or unclear rights",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S03",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "众智园修理花园 / Zhongzhi Repair Garden",
+        "approved_input": "清权史料、批准展签与来源链接 / rights-cleared archives, approved labels and source links",
+        "handover_and_reopen_evidence": "出处链接、权利状态、策展签字与撤下记录 / source link, rights status, curator sign-off and withdrawal record"
       },
       "geometry": {
         "type": "Point",
@@ -302,8 +317,13 @@
         "expiry_required": true,
         "stop_condition": "双语编辑未逐字放行或版面破坏可读性 / no line-by-line editor sign-off or layout harms legibility",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S04",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "AI 原点公共长桌 / AI Origin Common Table",
+        "approved_input": "已批准中文公告、术语表与版式约束 / approved Chinese notices, glossary and layout constraints",
+        "handover_and_reopen_evidence": "逐字审校、可读性抽检、版本号与替换回执 / line edit, legibility sample, version and replacement receipt"
       },
       "geometry": {
         "type": "Point",
@@ -346,8 +366,13 @@
         "expiry_required": true,
         "stop_condition": "工具判断资格、要求注册或省略人工确认 / tool decides eligibility, requires login or skips human confirmation",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S05",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "AI 原点公共长桌 / AI Origin Common Table",
+        "approved_input": "公开办事材料与工作人员清单 / public service materials and staff checklist",
+        "handover_and_reopen_evidence": "纸本回执、工作人员签字与申诉路径 / paper receipt, staff sign-off and appeal path"
       },
       "geometry": {
         "type": "Point",
@@ -390,8 +415,13 @@
         "expiry_required": true,
         "stop_condition": "推断个人敏感属性、自动排序或差别服务 / inferred sensitive traits, automated ranking or unequal service",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S06",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "AI 原点公共长桌 / AI Origin Common Table",
+        "approved_input": "用户主动提出的问题与公开目录 / user-initiated questions and public directories",
+        "handover_and_reopen_evidence": "转接清单、用户确认与不排序证明 / referral list, user confirmation and no-ranking record"
       },
       "geometry": {
         "type": "Point",
@@ -434,8 +464,13 @@
         "expiry_required": true,
         "stop_condition": "紧急项被降级、班组不同意分类或出现个人数据 / emergency downgraded, crew rejects classification or personal data appears",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S07",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "众智园修理花园 / Zhongzhi Repair Garden",
+        "approved_input": "去标识报修单、资产号与公开 SLA / de-identified repair tickets, asset IDs and public SLA",
+        "handover_and_reopen_evidence": "工单号、班组接单、SLA 与关闭证据 / ticket ID, crew receipt, SLA and closure evidence"
       },
       "geometry": {
         "type": "Point",
@@ -478,8 +513,13 @@
         "expiry_required": true,
         "stop_condition": "给出法律、许可、融资或投资结论 / legal, permit, funding or investment conclusion",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S08",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "大钟寺日夜客厅 / Dazhongsi Day-Night Living Room",
+        "approved_input": "公开政策、企业主动问题与来源链接 / public policy, business-initiated questions and source links",
+        "handover_and_reopen_evidence": "来源清单、法务复核与不构成结论提示 / source list, legal review and no-conclusion notice"
       },
       "geometry": {
         "type": "Point",
@@ -522,8 +562,13 @@
         "expiry_required": true,
         "stop_condition": "未核实时间地点、内容权利或无障碍信息 / unverified time, place, content rights or accessibility information",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S09",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "大钟寺日夜客厅 / Dazhongsi Day-Night Living Room",
+        "approved_input": "已批准日程、场地、权利与无障碍字段 / approved schedule, venue, rights and accessibility fields",
+        "handover_and_reopen_evidence": "纸本节目单、运营签字与变更通知 / paper programme, operator sign-off and change notice"
       },
       "geometry": {
         "type": "Point",
@@ -566,8 +611,13 @@
         "expiry_required": true,
         "stop_condition": "工具直接控制设备或缺少人工现场复核 / tool directly controls equipment or lacks human field verification",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S10",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "大钟寺日夜客厅 / Dazhongsi Day-Night Living Room",
+        "approved_input": "既有设备日志、人工巡检与资产阈值 / existing equipment logs, manual checks and asset thresholds",
+        "handover_and_reopen_evidence": "现场复核、维修决定、设备隔离与复开签字 / field check, repair decision, isolation and reopen sign-off"
       },
       "geometry": {
         "type": "Point",
@@ -610,8 +660,13 @@
         "expiry_required": true,
         "stop_condition": "隐藏少数意见、生成个人画像或未经主持人确认 / minority views hidden, profiling or no facilitator confirmation",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S11",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "AI 原点公共长桌 / AI Origin Common Table",
+        "approved_input": "去标识意见文本与逐条回应台账 / de-identified comments and response register",
+        "handover_and_reopen_evidence": "主题—原意见追溯、少数意见保留与回应责任 / theme-to-comment trace, minority retention and response owner"
       },
       "geometry": {
         "type": "Point",
@@ -654,8 +709,13 @@
         "expiry_required": true,
         "stop_condition": "工具自动改写已批准内容或无法说明差异位置 / automatic rewrite of approved content or unlocatable difference",
         "community_acceptance_gate": "ordinary_task_remains_complete_without_ai_and_staff_can_explain_every_public_output",
-        "design_revision": "everyday_v1_staff_tool_contract",
-        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation."
+        "design_revision": "everyday_v2_human_led_duty_contract",
+        "usage_note": "Conceptual service point only; exact siting awaits official boundary, survey, ownership and operator confirmation.",
+        "duty_shift_contract_id": "DUTY-S12",
+        "duty_shift_contract_version": "everyday-v2-one-post-one-bell-one-logbook",
+        "service_place": "三房共享后台 / Shared Back Office of Three Rooms",
+        "approved_input": "已批准中英稿、指标表、来源表与版本号 / approved bilingual copy, metrics, sources and versions",
+        "handover_and_reopen_evidence": "差异清单、作者签字、哈希与发布版本 / difference list, author sign-off, digest and release version"
       },
       "geometry": {
         "type": "Point",

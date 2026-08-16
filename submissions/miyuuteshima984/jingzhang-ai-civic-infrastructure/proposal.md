@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以城市完整度作为百年京张AI创新带的空间审查方法：居、学、护、行、绿、工、交七项普通城市能力先形成长期可用的日常底盘，AI作为可选增强层进入科研、社区、交通和商业。总体形成一条公共绿脊、六段完整度片区、六条东西缝合联系与三处重点区；爽粉堡垒仅作为AI原点社区中的社区命名彩蛋。"
+summary: "以城市完整度作为百年京张AI创新带的空间审查方法：居、学、护、行、绿、工、交七项普通城市能力先形成长期可用的日常底盘，AI作为可选增强层进入科研、社区、交通和商业。总体形成一条公共绿脊、六段完整度片区、六条东西缝合联系与三处重点区；三大重点区分别绑定ARRIVE WITHOUT APP、CARE WITHOUT ACCOUNT与TEST WITHOUT BLOCKING三条双轨空间合同，落实为三条不绕行的物理普通城市主路径（ROAD-009/010/011）、实体建筑形态与物理净空断面；爽粉堡垒仅作为AI原点社区中的社区命名彩蛋。"
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.5"
+iteration: "v0.15"
 ---
 
 # 京张城市完整度 / JING-ZHANG CITY COMPLETENESS
@@ -19,6 +19,19 @@ iteration: "v0.5"
 > AI 可以增加城市能力，但不能替代住房、学校、照护、公共交通、绿地、工作空间和无需账号即可进入的公共生活。
 
 本方案为开放征集阶段的概念性城市设计。当前 `SITE_BOUNDARY` 与三处 `KEY_AREA` 采用仓库维护的 provisional rough geometry，仅用于方案生成、拓扑自检、相对关系、图面表达与包内复算，不构成法定红线、地块、权属、道路红线、控规或工程实施结论。[source:BOUNDARY-SOURCE] [source:ALLOWED-DESIGN-SPACE]
+
+
+<!-- V014-CORE-START -->
+## v0.15.g 核心判断｜INVARIANT CIVIC ROUTES & BUILT TYPOLOGIES / 不绕行的 AI 城市与空间实体断面
+
+**AI 可以改变服务，但不能迫使市民改变基本城市路径。** 本轮把 v0.7 的三条日常城市链第一次写进机器可读空间：众智园 `ROAD-009`、AI 原点 `ROAD-010`、大钟寺 `ROAD-011` 都是 `ai_dependency=none` 的普通步行主路径。[data:geometry/roads.geojson#ROAD-009] [data:geometry/roads.geojson#ROAD-010] [data:geometry/roads.geojson#ROAD-011]
+
+AI、机器人、动态导航与账号型服务只能作为这些主路径的侧挂接口，不能取代主路径；三条路线共同构成可复核的 ordinary-city baseline。[metric:invariant_civic_route_count]
+
+三条线只表达概念级连续性和空间关系，不是官方道路、站口、桥隧、地块或工程红线；尤其大钟寺真实站口与竖向高程仍须现场和正式资料确认。新增 LineString 不改变 site / green / public-space / building-footprint 面积多边形。[metric:critical_non_ai_route_coverage_ratio]
+
+![三处重点区的不绕行主路径：校园院落、社区街坊、站城门厅](assets/figures/key-areas.png)
+<!-- V014-CORE-END -->
 
 ## 设计依据与资料清单
 
@@ -86,19 +99,31 @@ v0.5 将任务书规定的结构从文字登记升级为显性设计闭环：**�
 
 ## 重点区域详细设计
 
-**众智园：从研发园到完整创新校园。** 科研、中试、孵化和企业服务仍是核心，但公共绿脊、横向慢行、吃饭休息、社区接口、公共交流场和受控测试空间必须同步存在。具身智能测试只在明确边界、可关闭、可审计环境中运行，普通公共通道不成为默认试验场。
+**众智园：从研发园到完整创新校园（Courtyard & Porous Grid + Linear Test Spine）。** 科研、中试、孵化和企业服务仍是核心，但公共绿脊、横向慢行、吃饭休息、社区接口、公共交流场和受控测试空间必须同步存在。空间形态采用“合院式多孔网格 + 线性试验中轴”，实现 3.5m 机器人自主测试包络线与 2.0m 无障碍行人专用通道的高差/绿篱硬质隔离。具身智能测试只在明确边界、可关闭、可审计环境中运行，设置物理气动升降桩作为 AI-OFF 机械熔断边界，普通公共通道绝不成为默认试验场。[data:geometry/key_areas.geojson#PROV-KEY-001]
 
-**AI 原点社区：长期社区与近校创新并存。** 住宅不是“人才宿舍”的附属品。长期居住、托育/教育、社区照护、共享工作、普通商业、绿地和公共客厅构成短距离日常链。青年研究者可以换项目，家庭会出现儿童与老人，服务劳动者也应共享同一公共网络。一个居住片区采用 **“爽粉堡垒社区 / Shuangfen Fortress Community”** 的名字，但它只是命名彩蛋：不做城堡造型、不做封闭围墙、不因名字改变道路、密度、建筑语言或功能。[data:geometry/buildings.geojson#BLDG-007]
+**AI 原点社区：长期社区与近校创新并存（Pocket Commons & Woonerf + Multi-generational Care Core）。** 住宅不是“人才宿舍”的附属品。长期居住、托育/教育、社区照护、共享工作、普通商业、绿地和公共客厅构成短距离日常链。空间形态采用细密慢行生活街区（Woonerf），布设 1.8m 宽连续实体盲道与高对比度引导铺装，并在 400m 步行动线内配置“零账号便民服务驿站”，提供人工代办与纸质窗口。青年研究者可以换项目，家庭会出现儿童与老人，服务劳动者也应共享同一公共网络。一个居住片区采用 **“爽粉堡垒社区 / Shuangfen Fortress Community”** 的名字，但它只是命名彩蛋：不做城堡造型、不做封闭围墙、不因名字改变道路、密度、建筑语言或功能。[data:geometry/buildings.geojson#BLDG-007] [data:geometry/key_areas.geojson#PROV-KEY-002]
 
-**大钟寺：站城、商业与普通城市生活共存。** 南段强化交通换乘、日常商业、文化与公共到达，但 provisional key-area rectangle 只承担任务定位，不能被当作真实站城工程边界。三区的差异化设计由功能缺口决定，而不是换三个视觉主题。[depth:three_key_area_detailed_design]
+**大钟寺：站城、商业与普通城市生活共存（Multi-level Transit Deck & Heritage Interface）。** 南段强化交通换乘、日常商业、文化与公共到达。空间形态构建“多层立体站城甲板与铁路遗迹连续界面”，设立 100% 视线通达的连续实体彩色发光导览牌与免 App 物理闸道，换乘主通廊保证 $\ge 4.5\text{m}$ 净宽与 $\ge 2.5\text{m}$ 导视净空。provisional key-area rectangle 只承担任务定位，不能被当作真实站城工程边界。三区的差异化设计由实体空间剖面与功能缺口决定，而不是换三个视觉主题。[data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]
 
 三处重点区均配置可进入的公共交流空间：众智园开放交流场、AI 原点社区公共客厅与南段城市公共界面，首先解决日常使用，再承担传播功能。[data:geometry/public_space.geojson#PUBLIC-004] [metric:public_space_count]
 
+### v0.7 与海淀现行城市更新实施逻辑对齐
+
+城市完整度不是脱离现实政策的自造评价表。海淀区《城市更新导则（2025年版）》明确提出街区、校区、园区、社区“四区”融合，推动生活圈与创新圈融合，并把人工智能创新街区、轨道交通站点一体化、公共服务补充以及数智空间与城市功能融合作为重点方向。[source:HD-URBAN-RENEWAL-GUIDE-2025] 因此 C7 的作用，是把“产城融合”进一步翻译成居民、研究者、服务劳动者和访客每天能否完成 HOME / LEARN / CARE / MOVE / GREEN / WORK / COMMON LIFE，而不是另造一套法定规划指标。
+
+v0.7 同时把实施动作分成两条真实路径。**低扰动、可逆动作**——如遮阴/坐凳、实体导视、人工服务界面、受控测试边界标识、可拆换小型服务节点——仍需现场核验、权属/运营许可和安全检查，但概念阶段可以明确其“最小可用空间”和退出状态；**改变用地、建筑规模/高度、站城工程、市政容量或涉及公共利益/公共安全的重改造**，则必须进入真实项目生成、实施方案审查和后续行政许可路径，本包不越权预设。[source:HD-URBAN-RENEWAL-IMPLEMENTATION-2025]
+
+海淀公开的 2025 年四季度重点任务进展已把五道口 AI 原点社区和交通、教育、医疗、养老等“可感可及”场景列为现实工作语境。[source:HD-AI-DISTRICT-PROGRESS-2025Q4] 这只证明题目真实存在，不证明本方案的具体试点、位置、合作方、预算或许可已经获得确认。
+
 ![三处重点区域的 C7 缺口与补齐任务](assets/figures/key-areas.png)
+
+v0.7 的固定重点区核心图不再只是任务卡，而把三种不同的首层/公共空间关系并置画出：众智园是研发校园 + 与普通通行物理分离的测试口袋；AI 原点是家门—照护—休息—公共客厅连续的长期社区；大钟寺是固定双语导视—人工问询—无障碍换乘—普通商业—遗产公共界面组成的站城到达链。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-五类设计画像分别是：长期居民与家庭；学生与科研人员；创业者与企业员工；国际开发者与访问学者；服务劳动者、通勤者与访客。这些画像用于检验空间是否排斥普通生活，不是人口统计结论。[metric:persona_count]
+v0.6 将原先 5 类合并画像拆解为 9 类显性设计测试人群：长期居民与家庭、老年居民、残障/行动或感知受限使用者、儿童与照护者、学生与科研人员、创业者与企业员工、服务劳动者与通勤者、访客与国际使用者，以及无智能手机/无账号/主动退出数字服务的使用者。这些画像用于检验受益、负担、排斥风险和人工兜底，不是人口统计结论。[metric:persona_count]
+
+![九类人群的受益—负担—非 AI 等价路径—申诉矩阵](assets/figures/inclusion-burden-matrix.svg)
 
 十个 AI+ 场景全部回答“谁、在哪里、现实问题、AI 做什么、非 AI 基线、责任主体、失败如何人工接管、如何评估”：①众智园低速机器人受控测试；②科研设备与算力共享；③高校成果—城市问题转译；④爽粉堡垒社区无障碍助手；⑤家庭机器人自愿测试；⑥社区共享空间调度；⑦京张遗产多语导览；⑧复杂换乘与步行辅助；⑨AI 原生商业限期试营；⑩C7 城市完整度巡检助手。[metric:ai_scenario_count] [metric:non_ai_baseline_coverage_ratio]
 
@@ -108,7 +133,61 @@ v0.5 把这十项从一句清单展开成完整场景卡：每张同时给出地
 
 其中 SCN-01、SCN-05、SCN-09 分别承担技术、生活环境与市场三类验证，强调“先小范围、可停止、可复盘，再讨论扩大”。[metric:industry_test_scenario_count] 三个公共荣誉/朝圣节点为 Open Test Yard、City Commons Hall 与 Jing-Zhang Civic Station，它们必须先有真实公共功能，不能仅靠造型成为地标。[metric:pilgrimage_landmark_count]
 
+v0.6 再从十个场景中抽出三个**旗舰试点协议**，让评审看到“怎样开始、怎样停、怎样留下收据”：众智园低速机器人受控测试、AI 原点无障碍/照护导航、大钟寺换乘/多语导览。三项都明确 non-AI baseline、概念数量基础、前置证据门、测试时间窗、KPI 方向、停止阈值、退出收据与责任结构；真实许可、合同、保险、货币预算和现场绩效在未验证前保持 UNKNOWN。[metric:flagship_pilot_count]
+
+![三个旗舰试点协议：前置条件—测试—收据—GO/REVISE/STOP](assets/figures/flagship-pilot-protocols.svg)
+
 场景治理遵守同一底线：不用 App 仍能通行与获得基本服务；不参加测试不会失去社区权益；高风险判断转人工；设备或模型退出后，基本城市功能仍在。这既是技术鲁棒性，也是公共空间的公平性要求。
+
+### v0.7 三条日常城市链：把协议重新变成空间
+
+v0.7 不再把“评审索引”当作第一视觉，而从三类真实日常路径重新组织重点区：众智园的研究者与服务劳动者从到达、研发、吃饭休息走到受控测试；AI 原点的老人、照护者与无手机使用者从家门、休息、照护走到公共客厅；大钟寺的通勤者、国际访客与服务劳动者从到达、换乘、普通商业走到京张遗产公共界面。每条路径都先要求物理空间完整，再允许 AI 作为可关闭的增强层。
+
+![三条日常城市链：普通城市基线—空间补齐—可选 AI—退出后仍可用](assets/figures/everyday-journey-sections.svg)
+
+### AI 如何改变城市形态，而不是只增加屏幕
+
+AI 对城市形态的影响被压缩为六类可逆空间原型：测试口袋、无障碍求助节点、连续站城到达界面、可替换小型服务节点、人优先的公共首层，以及“观察—小范围原型—公共/专业复核—合并或回退”的可回退空间版本链。这回答的是 AI 如何改变空间组织和规划方法，而不是如何给既有空间附加更多数字界面。
+
+![AI 如何改变城市形态：六类可逆物理接口](assets/figures/ai-urban-form-change.svg)
+
+<!-- V09-REALITY-START -->
+### v0.10｜DESIGN-FIRST + REALITY：现实资料只在改变空间时出现
+
+v0.10 以获得 86 分的 v0.7 **design-first** 结构为底座，只吸收会改变空间判断的现实锚点；主叙事仍从人的日常任务开始，而不是从证据目录或评分结构开始。它把“来源更多”改成更窄的规则：**一条现实资料只有在改变断面、界面、节点或 unknown 的表达方式时，才进入设计主叙事。** 本轮登记 3 组官方公开现实锚点，并形成 5 条可检查的设计响应。[metric:official_constraint_anchor_count] [metric:design_response_rule_count]
+
+![现实约束如何改变空间设计，而不是变成参考文献堆](assets/figures/reality-constraint-design-response.svg)
+
+**第一条是知春路。** 海淀规自部门公开的控规草案采信通告明确，该铁路节点处知春路属于下穿段、不具备平交条件，并以分离式立交思路预留联通条件。[source:HD00-1601-DRAFT-RESPONSE-V09] 因此本案不再把六条东西缝合都画成同一种“地面横穿”：知春路改成**竖向连续性待解节点**，后续必须核实地面步行连续、上下层关系、无障碍和工程条件；当前不画桥隧线位、不声称工程可行。
+
+**第二条是京张绿廊界面。** 蓝景丽家相关官方规划综合实施方案采信信息要求其商业商务规划与东侧京张铁路绿廊衔接并提升空间品质。[source:HD-LANJINGLIJIA-INTEGRATED-RESPONSE-V09] 本案据此把绿廊侧的优先级写得更硬：连续步行、可停留公共界面和人优先首层在前，AI 设备、物流与可替换服务模块不得切断公共通行。该个案不被外推为本案地块条件。
+
+**第三条是现实强度标尺。** 三份公开《建设项目规划条件》覆盖 7 个地块，公开 FAR 参照为 2.20–5.00、建筑限高参照为 24–80m，部分地块另有密度与绿地率条件。[source:HD-PLOT-CONDITIONS-REFERENCE-V09] 这些数值只回答“现实里已经出现过什么量级”，绝不回答“本案应该批多少”。因此 `approved_floor_area_ratio`、`approved_building_height_m` 等继续保持 unknown，概念建筑也不套用任何相邻样本。[metric:reference_plot_condition_count]
+
+五条设计响应完整记录于 `visual/assets/reality-constraint-register.json`。本轮固定 `mobility-bluegreen.png` 重建为不同类型的现实接口：普通缝合、下穿节点竖向连续性、绿廊人优先界面、站城到达与 official-data 重算触发器，不再用同一种蓝色虚线代表所有问题。
+<!-- V09-REALITY-END -->
+
+<!-- V012-CONTRACTS-START -->
+### v0.15.g｜INVARIANT CIVIC ROUTES & BUILT TYPOLOGIES：三条公共承诺变成三条普通城市主路径与物理净空断面
+
+v0.14.s 不再把公共承诺写成一套越来越复杂的状态机。它采用更直接的空间合同：**普通人的路线先成为城市几何，AI 只能从路线侧边进入。** 三条路线均为概念级 `pedestrian` LineString，`ai_dependency=none`；它们验证“不开 AI 时城市是否仍然是同一座城市”，而不是模拟已完成的工程设计。[metric:invariant_civic_route_count] [metric:critical_non_ai_route_coverage_ratio]
+
+| 重点区 | 不绕行主路径 | 空间类型 | AI 只能在哪里进入 | 非 AI 验收问题 |
+| --- | --- | --- | --- | --- |
+| 众智园 / `ROAD-009` | 工作—吃饭/休息—公共绿脊—开放交流 | **校园院落 + 研发首层 + 侧向测试口袋** | 测试院、服务边、可替换节点；不得占据普通主路 | 关闭测试后，研究者、学生与服务劳动者是否仍沿同一路径完成工作、休息与公共生活？ |
+| AI 原点 / `ROAD-010` | 家门—遮阴/坐凳—照护/人工帮助—社区客厅 | **住宅街坊 + 公共首层 + 照护庭院** | 自愿导航、服务匹配、照护提示；基本服务入口不得要求账号 | 不登录、不授权个人数据时，居民是否仍沿同一实体路径获得照护、求助和公共生活？ |
+| 大钟寺 / `ROAD-011` | 到达边—固定导视—人工问询—普通等候/商业—京张公共界面 | **站城门厅 + 等候商业 + 遗产公共界面** | 动态信息、翻译和客流提示；不能取代固定导视和人工问询 | 不用 App、动态屏失效时，访客是否仍沿同一普通路径识路、求助、等待并离开？ |
+
+![总体结构与三条不绕行路线](assets/figures/site-overview.png)
+
+#### AI 如何真正改变城市形态
+三条路线不是“把 AI 删除”。相反，它们迫使 AI 形成六类**可逆的物理接口**：受控测试口袋、无障碍/人工求助节点、连续站城到达界面、可替换服务节点、人优先公共首层、可回退空间版本链。AI 的规划创新由此表现为**接口位置、首层关系、测试边界与公共路径的空间变化**，而不是更多屏幕。[metric:reversible_urban_form_prototype_count]
+
+#### 两条实施路径，而不是假装工程已经确定
+**路径 A｜低扰动可逆动作**：遮阴、座椅、固定导视、人工帮助界面、可拆测试边界、模块化服务节点，可进入现场调查—样段—复核—扩大/撤回的渐进流程。**路径 B｜正式项目依赖动作**：建筑规模、站城竖向、市政容量、道路工程、消防、文保、权属等，必须等待真实项目生成、专业设计与行政许可。[metric:implementation_path_count]
+
+责任只写到“拟议角色”级：园区公共空间/测试管理角色、社区服务与照护角色、站城公共空间/导视角色，均须真实主体确认；不把潜在机构写成已承诺责任人。大钟寺竖向连续性继续标记 **REAL LEVEL DATA REQUIRED**，不虚构桥隧、站口或多层甲板工程线位。
+<!-- V012-CONTRACTS-END -->
 
 ## 用地、建筑规模与拆改留方案
 
@@ -166,6 +245,10 @@ v0.5 将实施进一步工程化为“项目—空间—建议角色—前置条
 
 ![实施与长期运营矩阵](assets/figures/implementation-operations-matrix.svg)
 
+v0.6 在此基础上增加**资源数量基础 + RACI + 维护频率 + 启动证据门**。三个旗舰试点分别给出概念设备/界面数量级、A/R/C/I 责任类型、日/周/月维护节奏，以及许可、安全、保险、人工值守和数据治理等启动前核验项；统一形成 `PRECONDITION → TEST → RECEIPT → GO/REVISE/STOP` 决策链。这里的 S/M 仅是概念资源等级，不是货币预算；最终 FTE、采购、保险、合同和具名主体仍待现实责任方确认。
+
+![实施资源、RACI、维护频率与启动证据门](assets/figures/implementation-resource-raci.svg)
+
 ## 指标体系、面积复算与合规矩阵
 
 本轮指标分三种：公告约值、由提交 geometry 复算的概念设计量、因正式资料缺失而保持 unknown 的法定/工程量。所有 known metric 都保存公式、来源文件、置信度和假设；所有 provisional 派生值在 official polygon 到位后统一重算。[depth:metrics_recalculation]
@@ -202,6 +285,7 @@ v0.5 将实施进一步工程化为“项目—空间—建议角色—前置条
 | 设计画像数量 | [metric:persona_count] |
 | AI+ 场景数量 | [metric:ai_scenario_count] |
 | 产业测试场景数量 | [metric:industry_test_scenario_count] |
+| v0.6 旗舰试点协议数量 | [metric:flagship_pilot_count] |
 | 公共荣誉/朝圣节点数量 | [metric:pilgrimage_landmark_count] |
 | 非 AI 基线覆盖率 | [metric:non_ai_baseline_coverage_ratio] |
 
@@ -210,6 +294,8 @@ v0.5 将实施进一步工程化为“项目—空间—建议角色—前置条
 空约束层本身是一个可审查的数据缺口：正式文保、道路、市政等约束到位后必须新增 features，并触发全包复核。[data:geometry/constraints.geojson#metadata] [metric:constraints_feature_count]
 
 ![城市完整度指标与资料缺口](assets/figures/metrics-evidence.png)
+
+v0.7 将 v0.6 的 reviewer evidence dashboard / index 降为后部追溯附件，不再作为设计叙事或首屏主视觉；评分、gate 与设计内容继续分离。
 
 ## 风险、版权与合规说明
 
@@ -221,7 +307,7 @@ v0.5 把隐私原则下沉到场景级数据流：位置/路径、健康/照护�
 
 当前 `constraints.geojson` 的空集是主动披露，不表示“没有约束”。法定 FAR、高度和道路面积保持 unknown，不用 schema sanity range 或概念模型去填补。图件使用本地生成图形和公开/清权资料，不嵌入商业地图瓦片、远程字体、未经许可图片或第三方商标。[data:geometry/constraints.geojson#metadata]
 
-版权与生成责任方面：AI 参与公开资料研究、同类方案扫描、结构化写作、GeoJSON、图件、HTML/PDF 与校验；提交者对概念方向、爽粉堡垒命名彩蛋及最终公开提交承担判断责任。`report/copyright_statement.md` 已在 v0.5 增加逐资产权利与生成台账，覆盖核心 PNG、新增 SVG、HTML、PDF、GeoJSON、字体/图标/代码状态及 AI 参与方式；六个国际案例在 `sources.json` 中补齐了访问日期、用途、复用状态、限制、采集和转换说明。后续任何真实实施仍需法定规划、专业设计、公众参与和主管部门程序，不能由本包替代。
+版权与生成责任方面：AI 参与公开资料研究、同类方案扫描、结构化写作、GeoJSON、图件、HTML/PDF 与校验；提交者对概念方向、爽粉堡垒命名彩蛋及最终公开提交承担判断责任。`report/copyright_statement.md` 已扩展为 v0.5/v0.6 逐资产权利与生成台账，覆盖核心 PNG、全部新增 SVG、HTML、PDF、GeoJSON、字体/图标/代码状态及 AI 参与方式；v0.6 的旗舰试点、包容矩阵、RACI、证据索引和首屏总表均为本方案原创/AI 辅助 SVG，不嵌入第三方 Logo、图片、地图或字体文件。六个国际案例在 `sources.json` 中保留访问日期、用途、复用状态、限制、采集和转换说明。后续任何真实实施仍需法定规划、专业设计、公众参与和主管部门程序，不能由本包替代。
 
 ## 参考资料
 

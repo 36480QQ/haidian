@@ -5,8 +5,41 @@ The model is advisory. Deterministic gates are recomputed locally and always
 override model claims. API credentials are read from the environment and no
 review artifact is written outside the ignored `.maintainer-review/` tree by
 default.
-"""
 
+This script is a maintainer-only tool. It:
+
+1. Re-runs the four-gate self-check (deterministic, spatial, visual,
+   professional) against the submission package.
+2. Builds a structured review input including proposal text, figures, PDFs,
+   and HTML pages.
+3. Sends the review packet to an OpenAI-compatible chat completion endpoint.
+4. Parses the model response against the advisory review schema.
+5. Writes the review output to ``.maintainer-review/<slug>/ai-review.json``.
+
+Security: The script never executes contributor code.  All figure and PDF
+content is loaded as inert binary and base64-encoded for the model.  The
+``OPENAI_API_KEY`` (or ``AI_REVIEW_API_KEY``) environment variable is required.
+
+Environment variables
+---------------------
+- ``OPENAI_API_KEY`` or ``AI_REVIEW_API_KEY`` — API key for the model endpoint.
+- ``AI_REVIEW_BASE_URL`` — override the API base URL (default: OpenAI).
+- ``AI_REVIEW_MODEL`` — override the model name (default: ``gpt-5.6-sol``).
+
+Usage
+-----
+Run an AI advisory review for one submission::
+
+    python3 scripts/ai_review_submission.py submissions/<login>/<slug> \\
+        --pr-author <login>
+
+Print the review result as JSON::
+
+    python3 scripts/ai_review_submission.py submissions/<login>/<slug> \\
+        --pr-author <login> --json
+
+Exit code is 0 when the review completes and 1 on error or API failure.
+"""
 from __future__ import annotations
 
 import argparse
@@ -414,7 +447,7 @@ Rules:
 3. Check the agent taskbook: positioning/functions, brand and logo, regional collaboration, planning innovation, industrial support, perceptible scenarios, spatial specificity, transformability, international communication, and long-term operations.
 4. Mandatory rejection covers privacy/personal data, classified/internal/non-public spatial data, fabricated official endorsement or approval, unlawful/discriminatory/malicious content, material irrelevance, missing agent.1-agent.6 tasks, and presenting proposals as settled government decisions.
    Use mandatory rejection only when the supplied evidence directly proves the condition. A package that names/maps agent.1-agent.6 but incompletely executes their deliverables is request-changes, not reject. Placeholder markers and unreadable deliverables are participant-controlled gate failures and request-changes unless another mandatory condition is independently proven.
-5. Copyright and source review is evidence-based. If authorship, licenses, fonts, images, maps, datasets, or code cannot be verified from the package, do not claim they are cleared; use request-changes and list the exact proof needed.
+5. Copyright and source review is evidence-based. If supplied package evidence shows that authorship, licenses, fonts, images, maps, datasets, or code are unresolved, do not claim they are cleared; use request-changes and list the exact proof needed. A manifest artifact whose raw content is explicitly marked unsupplied in `review_input_access_boundary` is a review-packet access limitation, not proof that the participant omitted evidence. Do not penalize that limitation by itself, claim to have inspected the artifact, or execute participant verification scripts; rely on the supplied trusted gate reports unless visible evidence establishes a contradiction.
 6. Inspect visual evidence for legibility, consistency, meaningful design information, obvious placeholders, clipping, blank pages, misleading precision, and prominence of provisional-boundary warnings. Machine visual review cannot certify accessibility or legal rights.
 7. Missing organizer-owned official geometry must create precision and recalculation warnings, but must not reduce rubric scores or block content scoring by itself.
 8. Scores: 0 absent/invalid, 1 seriously deficient, 2 weak, 3 adequate, 4 strong, 5 exceptional. Required repairs must be specific, prioritized, and actionable.

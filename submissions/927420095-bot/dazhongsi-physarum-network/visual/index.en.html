@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Centenary Jingzhang AI Innovation Belt · Bio-Physarum Network Renewal · Interactive Demo</title>
+<meta name="description" content="Interactive demo of the Bio-Physarum adaptive road-network concept for the Dazhongsi area: network, path planning, obstacle simulation, metro coverage and ten design scenes. Data is an algorithm-generated concept proposal — not surveyed and not approval geometry.">
+<link rel="stylesheet" href="assets/leaflet.css">
+<link rel="stylesheet" href="assets/demo.css">
+<link rel="stylesheet" href="assets/scenes.css">
+</head>
+<body data-default-lang="en">
+
+<!-- Header -->
+<header class="app-header">
+  <div class="brand-mark">智</div>
+  <div>
+    <h1 id="panel-title">Centenary Jingzhang AI Belt · Interactive Demo</h1>
+    <p class="subtitle" id="panel-subtitle">Bio-Physarum road network renewal (concept proposal)</p>
+  </div>
+</header>
+
+<!-- Language switch -->
+<button id="lang-switch" type="button" aria-label="Switch language">中</button>
+
+<!-- Map -->
+<div id="map"></div>
+
+<!-- Control panel -->
+<aside id="control-panel">
+  <h2>Path planning</h2>
+  <div class="btn-row">
+    <button id="btn-start" class="btn" type="button">Set start</button>
+    <button id="btn-end" class="btn" type="button">Set end</button>
+    <button id="btn-obstacle" class="btn warn" type="button">Place obstacle</button>
+    <button id="btn-clear" class="btn" type="button">Clear all</button>
+    <button id="btn-fit" class="btn" type="button">Reset view</button>
+  </div>
+  <div class="check-row">
+    <label><input type="checkbox" id="chk-rfid"> <span id="lbl-rfid">RFID barrier-free layer</span></label>
+    <label><input type="checkbox" id="chk-coverage"> <span id="lbl-coverage">800m metro coverage</span></label>
+  </div>
+  <p class="hint" id="hint">Tip: click "Set start", pick a node, then "Set end" to route. Place obstacles to see re-routing.</p>
+</aside>
+
+<!-- Status bar -->
+<div id="status-bar"></div>
+
+<!-- Route info -->
+<div id="route-info"></div>
+
+<!-- Legend -->
+<div id="legend">
+  <h3 id="legend-title">Legend</h3>
+  <div class="legend-item"><span class="legend-line" style="border-color:#0052D4;border-top-width:4px"></span><span id="legend-spine">Physarum spine (new)</span></div>
+  <div class="legend-item"><span class="legend-line" style="border-color:#00B4DB"></span><span id="legend-branch">E-W branch</span></div>
+  <div class="legend-item"><span class="legend-line" style="border-color:#7c8db5;border-top-width:2px"></span><span id="legend-loop">Slow loop</span></div>
+  <div class="legend-item"><span class="legend-line dashed" style="border-color:#15803d"></span><span id="legend-green">Jing-Zhang heritage green corridor</span></div>
+  <div class="legend-item"><span class="legend-line dashed" style="border-color:#8C2B2B;border-top-width:2px"></span><span id="legend-transfer">Metro transfer (concept)</span></div>
+  <div class="legend-item"><span class="legend-dot" style="background:#8C2B2B"></span><span id="legend-station">Metro station (OSM)</span></div>
+  <div class="legend-item"><span class="legend-line" style="border-color:#FF6B6B;border-top-width:5px"></span><span id="legend-route">Recommended route</span></div>
+  <div class="legend-item"><span class="legend-box" style="border-color:#00B4DB;background:rgba(0,180,219,0.08)"></span><span id="legend-keyarea">Key area (provisional)</span></div>
+  <div class="legend-item"><span class="legend-box" style="border-color:#475569"></span><span id="legend-site">Site boundary (provisional)</span></div>
+  <div class="legend-item"><span class="legend-line dashed" style="border-color:#111827"></span><span id="legend-obstacle">Blocked segment</span></div>
+</div>
+
+<!-- Data disclaimer -->
+<div id="data-disclaimer">Network = algorithm-generated concept (not surveyed / not approval geometry); stations = OSM public data; key areas & boundary = provisional ranges inferred from announcements.</div>
+
+<!-- Ten design scenes -->
+<section id="scenes-panel">
+  <div class="scenes-header">
+    <h2 id="scenes-title">Ten Design Scenes</h2>
+    <button id="scenes-toggle" type="button">Hide scenes</button>
+  </div>
+  <div id="scenes-scroll"></div>
+</section>
+
+<script src="assets/leaflet.js"></script>
+<script src="assets/demo.js"></script>
+</body>
+</html>

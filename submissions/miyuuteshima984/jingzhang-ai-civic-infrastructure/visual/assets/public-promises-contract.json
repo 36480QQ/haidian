@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.4",
+  "variant": "v0.14.s",
+  "title_zh": "不绕行的AI城市 / INVARIANT CIVIC ROUTES",
+  "status": "concept_spatial_contract_with_evidence_boundaries",
+  "principle": "AI may change services but may not force citizens to change their basic urban routes.",
+  "contracts": [
+    {
+      "id": "ICR-01",
+      "promise": "TEST WITHOUT BLOCKING",
+      "place": "众智园 / Zhongzhiyuan",
+      "ordinary_route_id": "ROAD-009",
+      "spatial_type": "campus courts + research ground floors + lateral test pockets",
+      "route_invariant": "work → meal/rest → green spine → public exchange remains available with testing and AI off",
+      "ai_sidecar": "robotics/test interfaces stay in lateral pockets, service edges or replaceable nodes",
+      "human_equivalent": "ordinary walking, rest, work and public exchange require no AI",
+      "proposed_accountable_role": "campus public-space and test-management role — real actor to be confirmed",
+      "implementation_path": "low-disturbance reversible actions first; project-dependent works require formal design/approval",
+      "acceptance_test": "Switch testing/AI off: the same ordinary route still performs the daily chain without detour.",
+      "evidence_required": [
+        "field survey of entrances and desire lines",
+        "safety review for any real test interface"
+      ],
+      "reality_boundary": "Concept route only; no test-lane width, bollard timing, speed or permit is claimed."
+    },
+    {
+      "id": "ICR-02",
+      "promise": "CARE WITHOUT ACCOUNT",
+      "place": "AI 原点 / AI Origin",
+      "ordinary_route_id": "ROAD-010",
+      "spatial_type": "residential blocks + public ground floor + care court",
+      "route_invariant": "home → shade/seating → care/human help → community living room remains account-free",
+      "ai_sidecar": "opt-in navigation, service matching and care prompts attach to the route without becoming its gate",
+      "human_equivalent": "human help and ordinary service entry remain available without login or personal-data consent",
+      "proposed_accountable_role": "community service and care stewardship role — real actor to be confirmed",
+      "implementation_path": "low-disturbance public-realm/service interfaces first; capacity and building works require formal project evidence",
+      "acceptance_test": "Refuse login/data consent: the same physical route still reaches care, help and common life.",
+      "evidence_required": [
+        "service-capacity survey",
+        "accessibility and operating-role confirmation"
+      ],
+      "reality_boundary": "No service radius, staffing level or response-time performance is claimed."
+    },
+    {
+      "id": "ICR-03",
+      "promise": "ARRIVE WITHOUT APP",
+      "place": "大钟寺 / Dazhongsi",
+      "ordinary_route_id": "ROAD-011",
+      "spatial_type": "station-city hall + waiting commerce + heritage public edge",
+      "route_invariant": "arrival edge → fixed wayfinding → human help → ordinary waiting/commerce → Jing-Zhang public interface remains usable without app/dynamic screens",
+      "ai_sidecar": "dynamic information, translation and crowd guidance supplement fixed signs and human help",
+      "human_equivalent": "fixed wayfinding and human help remain the baseline",
+      "proposed_accountable_role": "station-city public-realm and wayfinding stewardship role — real actor to be confirmed",
+      "implementation_path": "wayfinding/public-realm sample first; vertical circulation or station works only after real level/entrance/engineering evidence",
+      "acceptance_test": "Turn off app/dynamic screens: a visitor can still find the way, ask for help, wait and leave on the same ordinary route.",
+      "evidence_required": [
+        "verified station entrances and real level data",
+        "passenger-flow and ownership/operations evidence before engineering design"
+      ],
+      "reality_boundary": "PROV-KEY-003 has known absolute-location risk; no bridge, tunnel, station entrance, deck width or throughput is claimed."
+    }
+  ]
+}

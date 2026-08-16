@@ -10,19 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/LShengYi/ai-pulse-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/LShengYi/ai-pulse-belt/changelog.md: 可能涉及非公开或敏感资料; maintainer review required",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[4]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[5]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[11]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[12]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[13]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[16]: provisional spatial concept needs maintainer review before being treated as public-facing context",
-        "submissions/LShengYi/ai-pulse-belt/spatial.json: items[17]: provisional spatial concept needs maintainer review before being treated as public-facing context"
+        "submissions/LShengYi/ai-pulse-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/LShengYi/ai-pulse-belt/proposal.md"
@@ -32,6 +20,8 @@
       ],
       "changed_files": [
         "submissions/LShengYi/ai-pulse-belt/agent.json",
+        "submissions/LShengYi/ai-pulse-belt/assets/figures/ecosystem-map.en.png",
+        "submissions/LShengYi/ai-pulse-belt/assets/figures/ecosystem-map.png",
         "submissions/LShengYi/ai-pulse-belt/assets/figures/key-areas.en.png",
         "submissions/LShengYi/ai-pulse-belt/assets/figures/key-areas.png",
         "submissions/LShengYi/ai-pulse-belt/assets/figures/land-use-structure.en.png",
@@ -42,6 +32,12 @@
         "submissions/LShengYi/ai-pulse-belt/assets/figures/mobility-bluegreen.png",
         "submissions/LShengYi/ai-pulse-belt/assets/figures/site-overview.en.png",
         "submissions/LShengYi/ai-pulse-belt/assets/figures/site-overview.png",
+        "submissions/LShengYi/ai-pulse-belt/assets/media/audio-tour.md",
+        "submissions/LShengYi/ai-pulse-belt/assets/media/audio-tour.mp3",
+        "submissions/LShengYi/ai-pulse-belt/assets/media/audio-tour.vtt",
+        "submissions/LShengYi/ai-pulse-belt/assets/media/cover.webp",
+        "submissions/LShengYi/ai-pulse-belt/assets/media/logo.svg",
+        "submissions/LShengYi/ai-pulse-belt/assets/media/pulse-belt-tour.mp4",
         "submissions/LShengYi/ai-pulse-belt/assumptions.json",
         "submissions/LShengYi/ai-pulse-belt/changelog.md",
         "submissions/LShengYi/ai-pulse-belt/compliance_matrix.json",
@@ -69,16 +65,30 @@
         "submissions/LShengYi/ai-pulse-belt/report/proposal.html",
         "submissions/LShengYi/ai-pulse-belt/risk.json",
         "submissions/LShengYi/ai-pulse-belt/self_check.json",
+        "submissions/LShengYi/ai-pulse-belt/simulation.json",
         "submissions/LShengYi/ai-pulse-belt/sources.json",
         "submissions/LShengYi/ai-pulse-belt/spatial.json",
         "submissions/LShengYi/ai-pulse-belt/standard_matrix.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/dividend-contracts.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/errata.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/governance-raci.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/implementation-gates.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/psab-drill.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/psab-spec.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/psab-validate.js",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/review-evidence-index.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/simulate-check.js",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/simulate-tamper-evidence.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/state-machine.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/track_scan.json",
+        "submissions/LShengYi/ai-pulse-belt/visual/assets/verify-counts.js",
         "submissions/LShengYi/ai-pulse-belt/visual/index.en.html",
         "submissions/LShengYi/ai-pulse-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/LShengYi/ai-pulse-belt": "formal"
       },
-      "total_bytes": 10046853,
+      "total_bytes": 22262667,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -150,17 +160,17 @@
       "ok": true,
       "issues": [],
       "summary": {
-        "standard_matrix_items": 9,
+        "standard_matrix_items": 14,
         "design_depth_items": 15,
-        "known_metric_refs_required": 5,
+        "known_metric_refs_required": 61,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 7,
-          "standard": 9,
-          "depth": 15,
-          "data": 22,
-          "metric": 9
+          "source": 16,
+          "standard": 15,
+          "depth": 16,
+          "data": 32,
+          "metric": 66
         }
       }
     },

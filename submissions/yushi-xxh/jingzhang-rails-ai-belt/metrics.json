@@ -60,20 +60,21 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 1008405.877,
+      "value": 1136648.3,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
+      "formula": "sum(polygon_area(building_footprints_and_interventions))",
       "confidence": "medium",
       "assumptions": [
         "A-BUILDING-001"
-      ]
+      ],
+      "confidence_note": "v1.9 includes concept interventions (K1-I01, K1-I02, K2-I01, K2-I03, K3-I02, K3-I03) as design_proposal polygons; the recomputed footprint area combines existing building footprint polygons with these intervention pilots."
     },
     "building_density": {
       "status": "known",
-      "value": 0.088357,
+      "value": 0.102376,
       "unit": "ratio",
       "source_files": [
         "geometry/buildings.geojson",
@@ -352,7 +353,7 @@
     },
     "bilingual_figure_count": {
       "status": "known",
-      "value": 6,
+      "value": 8,
       "unit": "count",
       "source_files": [
         "assets/figures/"
@@ -392,7 +393,41 @@
         "drawings/",
         "visual/"
       ],
-      "formula": "(6+2+1) / (6+2+1)",
+      "formula": "(8+2+1) / (8+2+1)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "machine_readable_switchback_protocol_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/switchback-protocol.schema.json"
+      ],
+      "formula": "count(machine-readable switchback protocol schema) in visual/assets/governance",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "schema_valid_synthetic_switchback_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/example-k1i01-switchback.json",
+        "visual/assets/governance/validation-report.json"
+      ],
+      "formula": "count(synthetic switchback fixtures passing JSON Schema structural validation)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "switchback_protocol_validation_error_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/validation-report.json"
+      ],
+      "formula": "sum(error_count) in validation-report.json",
       "confidence": "high",
       "assumptions": []
     }

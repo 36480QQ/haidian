@@ -10,11 +10,11 @@
   "agent": {
     "agent_id": "lqqk7",
     "agent_name": "柱子 / Zhuzi",
-    "model": "OpenAI GPT-5.6 Sol via Codex",
-    "model_family": "gpt",
-    "model_detail": "OpenAI GPT-5.6 Sol via Codex desktop; research subtasks reviewed from GPT-5.6 Terra agents"
+    "model": "Claude Fable 5 via Claude Code",
+    "model_family": "claude",
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.5 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
-  "generated_at": "2026-08-10T04:10:01Z",
+  "generated_at": "2026-08-14T14:42:57Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,43 +26,43 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "975098578104ff16e8a86870af9eb8c14ff2fbb2c2c70cc1c819d85034311a7b"
+      "sha256": "7b851f9a9821b46b56a6f3e4b2aa2ee35ff12f1bed29bd4fbf2226ff6cfd893f"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "18ced3ef1954a2493a369732e5483b4293174293a623c167d15bbb2574ed9878"
+      "sha256": "6f506eab765fbdcfaae4ba7ff7244f85457610a7b70597759bdb5114d5cca774"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "12ad6b92bb0cec4a8b6e494e865e4e1319346a6808b1f6edc505dbaa16199ad0"
+      "sha256": "8ff80a12f07161f20eac6cb08507e848fe355570008a3a2e2684e3ec527d68a5"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "cdb22bc782b5a128ad27b81307c03c86ca4d62d0627f9fb8dac91118eeb54eff"
+      "sha256": "7284d22678bb20cf03096209e0517aa74dd6e98401bff233ff0e6821f7a08d89"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8f018e0b2af14a4f3ea1cd07e04c150b1856105eeb9349612f11a727af4520e4"
+      "sha256": "a7ddd02388425ec16ce41c26b6f2a40509dea58793c6be9364ba152d87893104"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4bce59ef00f829a5c37e9a9b7cbaf4433430be5e74f81b65033b99e2060f2669"
+      "sha256": "c6ca92f40d18764104de9fdc5c645567a9f79fd556669461da26b45ee69b05b2"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "06c99203c736184387ab429075befccb2c9ccf78961a963166c9c2b0e5b121a5"
+      "sha256": "aab18e3c6e31adc218c92b8bbb65788fa0a5f5f73283dd571d72c833b7ef148f"
     },
     {
       "path": "standard_matrix.json",
@@ -80,7 +80,7 @@
       "path": "risk.json",
       "role": "other",
       "required": false,
-      "sha256": "c8a457b0f34866d55d0ebfb4d5e93a25fe796087c6c0ae63b2748d509f020ef7",
+      "sha256": "042254ba30150961fa6dd7e333f0caee1796382b25df2cc97acac48d45bd68d3",
       "role_detail": "risk_register"
     },
     {
@@ -88,87 +88,104 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5a77e41324f29ca62531b123ec58f9e213b14fed1c0dce69d72ba188eda5c484"
+      "sha256": "fda36e5af841efb1a501d51ce762e441f3b1bdf9cef46cbb4677567a34655a60"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "24a2775a3292ce4474ccb98b7c82202bc7c31fa0b74f5934247d0583dabc577f"
+      "sha256": "91190bc788cdf2a73ca30be3b9ba8a72cb977f2b0c678d96b94c19f1f1fa1133"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "aace5ac7d4e7716df61332b01aec9685fe85b2f68f261389d28f80290ce7b9d7"
+      "sha256": "5c16cb611de3b561831079c2973dd2dfdb82541f359500065cb726f1ad1795cc"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9bd040be395841d466878f9eb1bf9cb585cc1e8967978c2d8b05fbfb33f90b04"
+      "sha256": "1c256d63782e0b10840e7a6c2808b55a6a689d87a834c102126d78b6504c764c"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "804f9988a77d4f790f0bdb4f6ba245e25eb0ec71a7dbab8ef6a578dbfdb71b6a"
+      "sha256": "3f759dd3d43b0e91d39717206726607035250ec499d7abda690dd32ea80f679a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "560af8e53e2a021e150136b04f0c7371c091bb134cc56280b4d77c48201d49cf"
+      "sha256": "bd334461c7f4919e9fe010fd25a6449a5948a069218652042bb9d281d7f9740f"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "d87c43307180ba09811ed510fde03805810845960400154a528dc8d592383ddd"
+      "sha256": "2c113a5da081741dd310d716246c589d157a513a33819fd7c73c6d16cb969aa2"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "6ec4267d20b33948550101b4e80ee383dd8878c7c4fa111ce910b02213a31abb"
+      "sha256": "48e19bbe40ba9912fe4c90a27713496c6ca916a7d363e88707d8da0a036f24eb"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "68fb3a983d2bdabdcbe3c35f5dcffde25ac0b6bcf0df656b5223dd2ffcb9a824"
+      "sha256": "04ce3f52e2bce6d2cbca26b0a4a9ca497fdc926a2ea25d5cb738e37296846b40"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "1c974183fabe53bf136b3a096fe7cc6a51f43f3fafc2efa62a932f0db2ed1ead"
+      "sha256": "666ee47ee30992943adc6d326531b4c0af101a8b9626bb3e7e43507913fd6e79"
+    },
+    {
+      "path": "assets/figures/dual-state-plan.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "双态平面图版：同一张平面，两种状态，差异只在可撤除叠层",
+      "sha256": "f847f3b4079880cc3d475964c9cf01608dbc7c823bf66fc305721e8dc0bc0565",
+      "title_en": "Dual-state plan plate: one plan, two states, the difference only in the removable overlay"
+    },
+    {
+      "path": "assets/figures/dual-state-plan.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "920f2976251856a1197a16a27c52d5175dd7ee202b4d4a32507784c018416203",
+      "translation_of": "assets/figures/dual-state-plan.png"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8a1b901f5a6f601a12495f668f808d5f30cc3695cedc002c300cbb91e4974216"
+      "sha256": "2537ea0c69a34e247bcfb3fc52ca067b90888e06ef4d28da8cb31772ad9d0b70"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "2049b47d6fda4ad322211a348a9fbd65c610ae4d9165356009569b3c9a4f5a11"
+      "sha256": "8b779f02ffcb7395ff5d1c94a187681d620dbbf816a98186d0a34d58731238fc"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "7673e559eea538d6a555660f422066c124519ca15146c452f15ccefddbc1c40e"
+      "sha256": "d13730ce50eed149639e835147f8d9695f7f1de836f0707cf4d88023e0a63045"
     },
     {
       "path": "geometry/green_space.geojson",
@@ -180,7 +197,7 @@
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "6fd0b72490f37290d44c8a50c70ca126fd2ab12c8b9d70919accbf29255234ed"
+      "sha256": "3c614ab05c614455b60e425f7f989c819bae143d282302b42cc8c1e0c334e4ad"
     },
     {
       "path": "geometry/land_use.geojson",
@@ -198,13 +215,13 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "910fde15579eb43bb240623a4ef7cda31b801fdf06958bc03c4f66a20b12bab0"
+      "sha256": "48007438680015f63a71fd4ae4d5b5ef79310e11f6aa453c3e3a787d42729acb"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "10b05561cba04644e89ca4681a400d447f81e84fdddc55c3ec1b45e41fb5bd01"
+      "sha256": "9f14434956c7adfe5209b6c35540d96c643f9a0a093d016704f5b3b6f508057b"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -218,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "590b25af6120ec55a428ddafb1943d61e190b4622426d5724dba3d2fa2de453f"
+      "sha256": "b297ab6ee5f9c5cfaf0d7a7ede235ea32829c0b70fb16e2c8829ca4dc8f3b8cf"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +243,16 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "35a9e431cd7c3d706ac3d7f59459e398af8dfe4d3380be8a41c8cdb7dfd54bb2"
+      "sha256": "7674491a46eda3c107e087ccc1ba703f4012c99f658e65e40dd0c3791e969283"
+    },
+    {
+      "path": "visual/assets/font-license-ofl.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "思源黑体许可正本（SIL OFL 1.1，随包收录）",
+      "title_en": "Source Han Sans licence text (SIL OFL 1.1, shipped in package)",
+      "sha256": "1ae0f8e6c06d32bdbc385aa574748d93b94672a19424526e62c5736cd2769cbe"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "1541e4d0e3bfb0d9d70b74a258a14116d8e0fe64e9ef5754aac7eaf2c65bbb68"
+      "sha256": "9ee6447024c1be1c4b5edcf8b417176c7d71a574096f1616ee69d3a1e40175f5"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "9f1b08993216592fe845048ce6e0dd1503f3d63be832e4b3998587b6fd0bdfc4"
+      "sha256": "3ac3f42f29c31fdfcb9949298eadc7283e50a598d0a03ba96ff840c33ff5bacf"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "3cbd6a78959a160a69cbd999de9c10040f9cc859432cc530c9d378c9ff2eaeb0"
+      "sha256": "efaddde7b8c73fcfd006363c249caba09daf1d784f9da196aebe0b4558d08286"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -258,7 +284,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "1c596ae37c28429988b39e43fd5011cab166b89c6bdfab4b7ee9dd79db0b48e9"
+      "sha256": "549d58777c55f006f3f99cf2183edd6d873ac0a8ae817173c4ef3724f6cb5256"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -266,7 +292,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "74250469bd9f76bc165de0c9f99899dd5f11c1d496b6ac6ec952c6e5a9727f56"
+      "sha256": "549d7d069e66c42b616dfa72c00ad8dce05a353170bc4e8d4c771eba70a3dc63"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -274,7 +300,105 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "bc88a824c42d2ebfa6adac8b745093c6b310ffd59bb9c517f6a63e9e5a04410b"
+      "sha256": "da440dfd2eb8bde865f703c34eb8c1393ee635e989a955b0b5989c9c0ac25073"
+    },
+    {
+      "path": "assets/figures/metrics-evidence-audit.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "eb0cdbb6a68f39030ddc0c4ecc7a874f9197a4c94cd3725102c0d62c3915daee"
+    },
+    {
+      "path": "assets/figures/metrics-evidence-audit.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/metrics-evidence-audit.png",
+      "sha256": "788896f0b91a1e9a815693454c71f100dcd020397a09d267ba241e0c28c029ba"
+    },
+    {
+      "path": "assets/figures/ecosystem-map.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "09a68dd3ab76aaf9e90fb9da6ecc5cbb3620d1f614723d94036faed60e297729"
+    },
+    {
+      "path": "assets/figures/ecosystem-map.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/ecosystem-map.png",
+      "sha256": "ffc900ae31ee3ceab8cd8d8931ad42c58f2f0051f9de464a874af68bda64fbd2"
+    },
+    {
+      "path": "assets/figures/op04-detail.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "OP-04 节点深化图版（1:500 总平 / 1:200 缝合区 / 1:50 断面 / 八要素卡）",
+      "title_en": "OP-04 node detailing plate (1:500 plan / 1:200 stitch zone / 1:50 section / eight element cards)",
+      "sha256": "47405ae8b136409ab417061fabcd6e9aba5dfe56de0c1793ceaf31b8b5aff90c"
+    },
+    {
+      "path": "assets/figures/op04-detail.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/op04-detail.png",
+      "title_zh": "OP-04 节点深化图版（英文版）",
+      "title_en": "OP-04 node detailing plate (English edition)",
+      "sha256": "73d70fe32c90511a5e7a9c2d29562daf1075098787e6e47fcbfb426ad88da32e"
+    },
+    {
+      "path": "assets/tactile/op04-papercraft.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "title_zh": "OP-04 断面折叠纸模（A4 打印 · 1:50 · 盲道区凸点阵）",
+      "title_en": "OP-04 section folding papercraft (A4, 1:50, raised-dot tactile grid)",
+      "sha256": "179295fc72c772e7c039297cb265c203743455a8d27689cc34626270b92ed48d"
+    },
+    {
+      "path": "assets/tactile/op04-papercraft.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/tactile/op04-papercraft.svg",
+      "title_zh": "OP-04 断面折叠纸模（英文版）",
+      "title_en": "OP-04 section folding papercraft (English edition)",
+      "sha256": "577e0eb04a5e72b10a7c3da204481ef44a5952c17876899ea5ef9387ba501fbb"
+    },
+    {
+      "path": "assets/figures/section-profiles.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "056b0f7292f921177bb2c214edda9b3aa660ff716daba16a29ff5831822a6d4a"
+    },
+    {
+      "path": "assets/figures/section-profiles.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/section-profiles.png",
+      "sha256": "c15a0d3ead48dd5a05b49b561d7cf83be4b2dacfdd06f6d66e1b311493ed7087"
+    },
+    {
+      "path": "assets/figures/enterprise-journey.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "9955d4e93b8f04e5dba23927bac9ca9db5fa0bedc7c3d2027ce728aca195f376"
+    },
+    {
+      "path": "assets/figures/enterprise-journey.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/enterprise-journey.png",
+      "sha256": "f544e31bb2cc82b7a335fec272a82f68f43b993d34e283fb6d9c6fdef7e9bc2b"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -282,7 +406,67 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "7d36de307b21bd0cfc2de820c9dbe5637b91b260d23e3380e19344ee8c8c873a"
+      "sha256": "b1b9bea9fc1d6384e3c606008ac10ae31a7a8d0f880a3d7a198097c7b5af5191"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen-audit.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "ca476a2a0f246f009ec7f95204923ab9ab553034749653bd704dadab1f832cb6"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen-audit.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/mobility-bluegreen-audit.png",
+      "sha256": "24d04c3ac771502da6d0ab2e2dcab552d7919c43a7f3d96ff824b499b2b019b0"
+    },
+    {
+      "path": "assets/figures/scene-dual-state.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "9686ea66dc625bc0f0dd60e15f8ed70a5d952ffc9c6e6657b3970f49356bccdd"
+    },
+    {
+      "path": "assets/figures/scene-dual-state.en.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scene-dual-state.webp",
+      "sha256": "16ee5a2257cdc6e62839d2b63b31bf87edea2c08bd459555e5b04a757eeac880"
+    },
+    {
+      "path": "assets/figures/scene-interface-yard.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "3aa484bf51de36585a0b6314f9d4f637cdfdac9c7bd52354e6851bd531f9d5dd"
+    },
+    {
+      "path": "assets/figures/scene-interface-yard.en.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scene-interface-yard.webp",
+      "sha256": "337f91d7930cf057a530edc40265f1c0b7589dd6b500d9d20735de139475dd08"
+    },
+    {
+      "path": "assets/figures/scene-corridor-aerial.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "9ecfb48b5674c4e297abc1ada37ec26b411c6b8dc2b5d06360a7c4f5672887cf"
+    },
+    {
+      "path": "assets/figures/scene-corridor-aerial.en.webp",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scene-corridor-aerial.webp",
+      "sha256": "90be3cafcabd105e4e29309d3524c5b0542d62f824769c5e34d443330f7f0f4d"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -290,7 +474,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "f9ef1117cf935dcdecb047d50436c7e836b828fb1cab2fb590c9a97414cf1936"
+      "sha256": "1e2ac01b1dd06a868e25b5c39da0aeb4a6768d1785279dec322698b503de3d02"
     },
     {
       "path": "visual/assets/osm-context/provenance.json",
@@ -311,7 +495,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "8e54aa74e30e99bdb6e8e27c8f50e853643a5995dbd0f2e162987ad45a354c91"
+      "sha256": "b5b3ab1ef11e3995d49e41677fd38a0c15fb2d5f717fd52340938b565ba46179"
     },
     {
       "path": "assets/figures/brand-system.en.png",
@@ -319,13 +503,13 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/brand-system.png",
-      "sha256": "4f33da5323c44a2bc37f6963b33389e4b5dd78621448a8eb035f4930dec5172d"
+      "sha256": "bebe0662f524ff96a21183ca0daa36c70a6c36dcb1b624e1758ec249301e5d95"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "8c0611f354a14fee1d005f05ceb25d6ebe44271098d79c7cba3622fa42c3a3d6"
+      "sha256": "4ca5944030b3f266c240e605f30542da952edbe40a32037bbff4217047256416"
     },
     {
       "path": "assets/media/cover.webp",
@@ -347,7 +531,7 @@
       "description_en": "A 2-minute-34-second Chinese guide covering the test of urban intelligence, service equivalence between AI ON and AI OFF, the spatial framework of one accessible spine and three sensory labs, the roles of the three areas and two wings, the evaluative purpose of the ten independent-completion points, and the conceptual scope and limits. Fully synthetic speech: no human recording, no music, no field audio.",
       "transcript": "assets/media/audio-guide.md",
       "caption": "assets/media/audio-guide.vtt",
-      "sha256": "e996b0f90e9cdacfede0d1ca66b6d49b63dce6e1bd3230b05b6d4218eac66682"
+      "sha256": "8a6b4e8ead534924ee6f3878d8024efe960bf9a93228e82b82328ca6dfbfe21d"
     },
     {
       "path": "assets/media/audio-guide.md",
@@ -357,7 +541,7 @@
       "title_en": "Audio guide transcript and rights note",
       "description_zh": "导览旁白全文（含时间码）、与 proposal.md 的来源对应表、生成工具与制作方法记录、合成声明与权利边界、已知限制。同时论证听/看/读三条通道承载相同内容，是方案 AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "Full narration text with time codes, a source mapping to proposal.md, the generation method and tooling record, the synthesis and rights statement, and known limitations. It also documents that listening, captions, and reading carry identical content, applying the proposal's own AI-OFF equivalence principle to its own deliverable.",
-      "sha256": "6ce3390e2fb34323b57e0abbea9b6717c08cc093e745660f890cdf3cc1117824"
+      "sha256": "23e525dff5efb18ed8213313434d7311b858f5ffe2b42897bfa546da362b351e"
     },
     {
       "path": "assets/media/audio-guide.vtt",
@@ -384,7 +568,52 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "2c7abf371b0c89b4fe63aa14c9f2a205d512b7f491d3389a8b269f5d42a321f1"
+      "sha256": "074c8092a9eabc83d02724026b336a4f10cb48f69139adff188e08f07382aaf6"
+    },
+    {
+      "path": "visual/assets/three.min.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "three.js r160（MIT，离线单文件；由官方 module 构建机械可复现重封装，转换步骤全文披露于 three-license.json）",
+      "title_en": "three.js r160 (MIT, offline single file; mechanically reproducible rewrap of the official module build, transformation disclosed in full in three-license.json)",
+      "sha256": "99361e0a3fcca3125a494b27f421cf9078bbf1847c2b82a839a2135ebe91b532"
+    },
+    {
+      "path": "visual/assets/three-license.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "three.js MIT 许可正本与溯源（上游 URL/哈希/重封装步骤，许可全文可逐字节重建）",
+      "title_en": "three.js MIT licence text and provenance (upstream URL/hash/rewrap steps; licence text byte-reconstructable)",
+      "sha256": "48908e262070aafd75b8efe18a8e10e0869677ffcf4a07fefb4b6a9d7c53bd53"
+    },
+    {
+      "path": "visual/assets/spine3d.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三维主脊场景（几何 100% 同源于 scene-data.js，AI 开关+昼夜+节点漫游，无 WebGL 静态降级）",
+      "title_en": "3-D spine scene (geometry 100% sourced from scene-data.js; AI switch, day/night, node fly-to; static fallback without WebGL)",
+      "sha256": "630db9bc235a44100400b406f81385d907a9155d54cce0a1f347bb2391f98f6b"
+    },
+    {
+      "path": "visual/assets/spine3d.css",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三维主脊章样式",
+      "title_en": "3-D spine chapter styles",
+      "sha256": "4f1a3052d0411f8a4280670b63df598211ca5d3c5990b6e2f1a6ce180016f914"
+    },
+    {
+      "path": "visual/assets/scene-time.css",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "交互场景四时段控件样式",
+      "title_en": "Four-period control styles for the interactive scene",
+      "sha256": "c66d7a8b0ef5e901adceb1b4caebf10d5eb8bf96007448bfad10d38cfea42e05"
     },
     {
       "path": "visual/assets/scene.css",
@@ -398,14 +627,14 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "cb0514ea14c65aaeac922fa5d38b2beb462055a2327e7ff7d2d7703c08609728"
+      "sha256": "f7428ec660ebc6eeb7f171695316a40fcb169017b944d5c7f7a0f3f37465052b"
     },
     {
       "path": "visual/assets/scene-fallback.png",
       "role": "visualization",
       "required": false,
       "language": "zh",
-      "sha256": "970d4a28451abd575c63d3cce9c881e935b2ad59c5cefde063572a7ec1a8e438"
+      "sha256": "176caf346cb2852ad250dbeb25a42183ae0e802622edb0f6805883ff1792bc44"
     },
     {
       "path": "assets/media/journey.mp4",
@@ -413,12 +642,12 @@
       "required": false,
       "title_zh": "万感京张 多模态短片（中文旁白 · 中英双语标注）",
       "title_en": "Every Sense Jing-Zhang multimodal short film (Chinese narration, bilingual on-screen labels)",
-      "description_zh": "63 秒短片，七个镜头：片头主题、总体结构与三处重点区、骨架与等价服务网络、三处重点区的人尺度运行合同、第 16 章交互场景的逐帧实录、品牌语法与文化底线、片尾边界声明。交互段实录连续呈现「播放引导流光」与「切换 AI 关闭」两次真实操作，切换前后十个独立完成节点的位置与可达性、以及服务可达性读数 10 / 10、2、3 / 3 完全不变。中文合成旁白，画面关键标注中英双语，中文字幕既烧录在画面上也提供外挂 WebVTT。无真人录音、无音乐、无实拍、无第三方素材、无生成式影像。",
+      "description_zh": "63 秒短片，七个镜头：片头主题、总体结构与三处重点区、骨架与等价服务网络、三处重点区的人尺度运行合同、第 16 章交互场景的逐帧实录、品牌语法与文化底线、片尾边界声明。交互段实录连续呈现「播放引导流光」与「切换 AI 关闭」两次真实操作，切换前后十个独立完成节点的位置、以及已声明覆盖读数 10 / 10、2、3 / 3 完全不变（声明完整度，非现场绩效）。中文合成旁白，画面关键标注中英双语，中文字幕既烧录在画面上也提供外挂 WebVTT。无真人录音、无音乐、无实拍、无第三方素材、无生成式影像。",
       "description_en": "A 63-second film in seven shots: title, overall structure and the three key areas, the framework and equivalent service network, the human-scale operating contracts of the three key areas, a frame-accurate capture of the chapter-16 interactive scene, the brand grammar and cultural baseline, and the closing scope statement. The captured sequence performs two real interactions — play the guidance flow, then switch to AI OFF — after which the ten independent-completion nodes and the service readout of 10 / 10, 2 and 3 / 3 remain unchanged. Synthetic Chinese narration, bilingual on-screen labels, Chinese captions both burnt in and supplied as WebVTT. No human recording, no music, no live-action footage, no third-party assets, no generative imagery.",
       "poster": "assets/media/journey-poster.webp",
       "caption": "assets/media/journey.vtt",
       "transcript": "assets/media/journey.md",
-      "sha256": "9bc4cb314e7655b65c428d240542e17c0e6dd6e56a86db07078bc8eaeadbafeb"
+      "sha256": "ac8f6764248d35a138782bef5c2a87efa4e8659253be89e585d137432b49a45d"
     },
     {
       "path": "assets/media/journey-poster.webp",
@@ -438,7 +667,7 @@
       "title_en": "Multimodal short film Chinese captions",
       "description_zh": "11 条 WebVTT 中文字幕，时间轴由逐句合成样本的实测长度与显式静音间隔精确累加得到，与旁白严格同步；用词与画面烧录字幕、`journey.md` 文字稿完全一致。",
       "description_en": "Eleven WebVTT Chinese caption cues. The timeline is derived by exact accumulation of the measured length of each synthesised sentence and the explicit silence gaps, so it is strictly synchronised with the narration; the wording is identical to the burnt-in captions and to the transcript in journey.md.",
-      "sha256": "d090544e87392b10ae38c499444d0a17a1af48dd845f570f288417e0c5de47df"
+      "sha256": "21d4a9da37182afdbacef25a314cca8512c11d1811f272f03d587fdbc043889f"
     },
     {
       "path": "assets/media/journey.md",
@@ -448,16 +677,52 @@
       "title_en": "Multimodal short film storyboard, transcript and rights note",
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
-      "sha256": "79cbbf0f8e0d3eb9e1834e7fb068dfecc3111d885bc5d8d5ba384fb260d0f79c"
+      "sha256": "eb2bf672bfdab95cc4affbf7006dd0bdbde443b56494e774be73d51387f1419f"
+    },
+    {
+      "path": "visual/assets/ethics-protocol.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "伦理与同意协议包（模板 · 未执行）",
+      "title_en": "Ethics and consent protocol pack (templates, not executed)",
+      "sha256": "f9b390afda33b2797df52bfa3461fe5fa1338c2a9cf6ee7c48e2c7f96d3303e3"
+    },
+    {
+      "path": "visual/assets/qa-proofing-record.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
+      "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
+      "sha256": "40f850cb66d5863f36404f1dc6b12d014e19ea8b6a3aaf80881b82e05a53269e"
+    },
+    {
+      "path": "visual/assets/review-archive.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三方审查过程归档（基线 commit、方法、发现分级、处置去向、两份盲审报告全文与哈希、独立性边界如实声明）",
+      "title_en": "Three-way review archive (baseline commits, method, finding grades, dispositions, two blind-review reports in full with hashes, and the independence boundary stated as fact)",
+      "sha256": "2bb0f07293688ffa776486b352704c4d1b645f82fd6a29d5de0b19c31f0eb90d"
+    },
+    {
+      "path": "visual/assets/scene-provenance.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "场景概念图生成档案（提示词全文、工具链、输出哈希）",
+      "title_en": "Concept Scene Image Provenance (full prompts, tool chain, output hashes)",
+      "sha256": "e379ffc4e07d932a62071ba39ee78a7b07b5efeda9a1f9c52a38625f1d6a0298"
     },
     {
       "path": "visual/assets/seb-spec.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "服务等价基准 SEB v0.1 机器可读规范",
-      "title_en": "Service Equivalence Baseline (SEB) v0.1 machine-readable spec",
-      "sha256": "c7af6cf52b1f53d34e3c0c48d39b4dee525d9ff135e39f86313301c006ae757b"
+      "title_zh": "服务等价基准 SEB v0.4.0 机器可读规范（五组件，含版本治理与违例码登记表）",
+      "title_en": "Service Equivalence Baseline (SEB) v0.4.0 machine-readable spec (five components, with version governance and the violation-code registry)",
+      "sha256": "efc58de8c327100be67e12b4bdf5b710c3b4cd061ed16d00cb1d980f78f5ddfb"
     },
     {
       "path": "visual/assets/seb-tabletop-run.js",
@@ -466,25 +731,187 @@
       "language": "neutral",
       "title_zh": "SEB 桌面配对推演校验器(方法学演示)",
       "title_en": "SEB tabletop pairing validator (methodology demonstration)",
-      "sha256": "59412e6a8864fe0a86f87600fd2f7310f97cec5ae9a9a95453bc49b6ef83bdd7"
+      "sha256": "e1f0c89cb6c976757476bb6036d2e10cee4e9cffee1f28a387ba62f752785fc8"
+    },
+    {
+      "path": "visual/assets/spatial-audit-readings.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "空间审计型读数六项：定义、方法与责任方（零数值，JZ-01 开工当天可产首批数字）",
+      "title_en": "Six spatial audit readings: definitions, methods and owners (zero values; first numbers on day one of JZ-01)",
+      "sha256": "d59574a165a7fae21d9dfc79f6d5866f1e56cd75075efb73a29e2570cf9fdf12"
+    },
+    {
+      "path": "visual/assets/legal-interface-register.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "法律接口登记：三条谱系的触点、触发条件与责任方（全部未触发，不做合规结论）",
+      "title_en": "Legal-interface register: touchpoints, triggers and owners of three legal lines (none triggered; no compliance conclusion)",
+      "sha256": "ed6937210ec01e501b7648ebf6eabb175afeb5a11d0dfe993d2401a4322603bb"
+    },
+    {
+      "path": "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OSM 定界精简快照 第一片（含全部元数据与 Overpass 查询原文；ODbL 1.0 派生数据库）",
+      "title_en": "OSM bounded compact snapshot, part 1/2 (all metadata incl. the verbatim Overpass query; ODbL 1.0 derivative database)",
+      "sha256": "bb44e95b4bf7d69b8f7be16a7fba14ad4c2fb4244ff00deee58afd146b6d8052"
+    },
+    {
+      "path": "visual/assets/osm-fabric/osm-fabric-snapshot-part2.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OSM 定界精简快照 第二片（其余 ways 与全部 nodes；两片拼接逐字节还原原快照）",
+      "title_en": "OSM bounded compact snapshot, part 2/2 (remaining ways and all nodes; concatenation reproduces the original byte-exactly)",
+      "sha256": "80b684901a0f374855adcc1df73c5026c5690014a5db309f237911b68a8a316a"
+    },
+    {
+      "path": "visual/assets/osm-fabric/osm-fabric-readings.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OSM 肌理读数：四项肌理+三项偏差+穿越证据清单+复算脚本全文嵌入（PROVISIONAL）",
+      "title_en": "OSM fabric readings: four fabric, three deviation, crossing inventory, with recomputation scripts embedded verbatim (PROVISIONAL)",
+      "sha256": "655322daa08b304b61b211317a983770aaf7c6d2417255daa75854c60093f465"
     },
     {
       "path": "visual/assets/seb-tabletop-fixtures.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "SEB 桌面推演正反样例十条",
-      "title_en": "SEB tabletop fixtures, four positive and six negative",
-      "sha256": "bfb93772e4e2f6ac21141f38a60cf938bcfd4547dbc0139661f5acb228f0cea9"
+      "title_zh": "SEB 桌面推演正反样例四十条",
+      "title_en": "SEB tabletop fixtures, thirteen positive and twenty-seven negative",
+      "sha256": "9c22d82660c5023e2a69dcacd2df03fc8bc448869db94812d52a46cd97abb8d4"
     },
     {
       "path": "visual/assets/seb-change-receipt-sample.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "变更回执格式与演示回执",
-      "title_en": "Change-receipt schema and demonstration receipt",
-      "sha256": "3bf2dde1e2dae28d0d17e3f3a0ac592e03efd00b5de208eb90ceaac378ba3a87"
+      "title_zh": "变更回执格式与两条回执",
+      "title_en": "Change-receipt schema and two receipts",
+      "sha256": "cd4c9229fd350a47c7a072b0a3b372d6efa7a2eeb4bfe03485b8b99c2c374ac1"
+    },
+    {
+      "path": "visual/assets/seb-op04-chain-data.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OP-04 配对试点全过程链路数据档案(桌面复演)",
+      "title_en": "OP-04 paired-pilot full-process chain archive (tabletop replay)",
+      "sha256": "a821ac8b1f3e0bd130ee2fae54dad040e233d6f407f2c8068b3337f0462e9ef1"
+    },
+    {
+      "path": "visual/assets/seb-op04-90day-pack.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OP-04 节点九十天实施包（概念级：条件序列分期、双分支预算、采购、RACI、班表、投保建议、维护与退出）",
+      "title_en": "OP-04 ninety-day implementation pack (concept-level: conditional phasing, two-branch budget, procurement, RACI, rosters, insurance suggestions, maintenance and exit)",
+      "sha256": "a9b4e68ed63e030c55a964772b91a9e4caf276b161326e69311ddc93d269eecc"
+    },
+    {
+      "path": "visual/assets/op04-pilot-readiness.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OP-04 场地与运营主体对接就绪材料（就绪待发；如实登记无既有接触、无既有意向）",
+      "title_en": "OP-04 site and operator outreach-readiness material (ready to send; no prior contact and no existing intent, registered as fact)",
+      "sha256": "a5fce6b1a24db0877b829b46530ca8e48b57c075a7dcb6e8d8dd446d8335ee0e"
+    },
+    {
+      "path": "visual/assets/op04-tactile-map.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OP-04 触觉地图三维模型（STL base64 封装 · 重建哈希自校验 · 打印参数与触觉可用性诚实边界）",
+      "title_en": "OP-04 tactile map 3D model (base64-wrapped STL, self-verifying rebuild hash, print parameters and honest tactile-usability boundary)",
+      "sha256": "4ab0cdbce18a8814daddff796876c613172c188eada435e6cc788c5476b5fd19"
+    },
+    {
+      "path": "visual/assets/braille-core-statement.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "核心主张盲文转写（英文 UEB 一级 · 映射表随文可核 · 中文盲文如实登记为待专业协作）",
+      "title_en": "Braille transcription of the core proposition (UEB Grade 1, checkable letter map; the Chinese edition honestly registered as pending professional collaboration)",
+      "sha256": "cc58f116a31a1e5c7ac09ac9588bc6d2fba7d54056fa3e2e27073e020d608ab5"
+    },
+    {
+      "path": "visual/assets/seb-op04-chain-run.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "OP-04 全过程证据链自含复演器",
+      "title_en": "OP-04 full-process evidence-chain self-contained replayer",
+      "sha256": "e874142f1fd4a3af3fbbd38aa3f5783b28841f36b488eb54c8ea03cf30ad944b"
+    },
+    {
+      "path": "visual/assets/seb-change-receipt-op04.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "变更回执 CR-2026-08-12-003(OP-04 空间前提退回)",
+      "title_en": "Change receipt CR-2026-08-12-003 (OP-04 spatial-premise rollback)",
+      "sha256": "e199a5ad633432489d858eb10c5c19314d735a89716b0202fca618a2e2510b43"
+    },
+    {
+      "path": "visual/assets/seb-change-receipt-v03.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB v0.3 系列变更回执（CR-2026-08-15-004 / 005，一版一号）",
+      "title_en": "SEB v0.3-series change receipts (CR-2026-08-15-004 / 005, one per version)",
+      "sha256": "e3c01b0c2826ec93ab6dc9e5aa6717bedb6b8f95deaa1ddb2ba1a0ceb61a9ac3"
+    },
+    {
+      "path": "visual/assets/seb-change-receipt-v04.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB v0.4 系列变更回执（CR-2026-08-16-007，一版一号）",
+      "title_en": "SEB v0.4-series change receipt (CR-2026-08-16-007, one per version)",
+      "sha256": "0c810cbb81ca1a19ff8c47741293985c5ef6d84ce933467591a05c33072ce074"
+    },
+    {
+      "path": "visual/assets/seb-license-grant.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB 著作权许可授予文件（CC BY-SA 4.0，含法定正文全文与重建哈希）",
+      "title_en": "SEB copyright licence grant (CC BY-SA 4.0, with full legal code and rebuild hash)",
+      "sha256": "8ef5659be818c156f6dd4d08cdf47c2eaf3785b3b7e7f0a1c2e10be5a2a51e64"
+    },
+    {
+      "path": "visual/assets/seb-spec-v0.2.0.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB 规范历史版本快照 v0.2.0（字节级，上游提交 554fb359d）",
+      "title_en": "SEB spec historical snapshot v0.2.0 (byte-exact, upstream commit 554fb359d)",
+      "sha256": "f131dbe80e37beca317375d9a9cb86eab72f2297977bd1195955c4b15d5350ea"
+    },
+    {
+      "path": "visual/assets/seb-spec-v0.3.0.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB 规范历史版本快照 v0.3.0（字节级，上游提交 33031a588）",
+      "title_en": "SEB spec historical snapshot v0.3.0 (byte-exact, upstream commit 33031a588)",
+      "sha256": "67200f3e981703ea82af1bde4dd778d4329ee943eea00db6efe371a6c6a59b54"
+    },
+    {
+      "path": "visual/assets/seb-spec-v0.3.1.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB 规范历史版本快照 v0.3.1（字节级，上游提交 93e1efcd1）",
+      "title_en": "SEB spec historical snapshot v0.3.1 (byte-exact, upstream commit 93e1efcd1)",
+      "sha256": "461bc72a82781f39e140abf033040f738b81647ce15fb4df3234ced10eadc018"
     },
     {
       "path": "visual/assets/scene-fallback.en.png",
@@ -492,7 +919,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/assets/scene-fallback.png",
-      "sha256": "9c453b60df166ab743d2597e835a51a5f657c4da66b3b2bedfc48897546d95d0"
+      "sha256": "e05445397ee4ca1fbc380a81b684493308b75c999a89ade1d5792e7cf7d673b2"
     },
     {
       "path": "assets/media/journey-en.vtt",
@@ -502,7 +929,7 @@
       "translation_of": "assets/media/journey.vtt",
       "title_zh": "旅程短片英文字幕轨",
       "title_en": "English caption track for the journey film",
-      "sha256": "591f319eb06c1f47d29034a944cc5681515ff30b54758ad5fa88a6146809d4b5"
+      "sha256": "b3db3068625b98921de3972b2ac10f795f1514cc41faaf0f1b182252818c2bdb"
     },
     {
       "path": "assets/media/audio-guide-en.vtt",
@@ -513,6 +940,129 @@
       "title_zh": "多感官导览英文字幕轨",
       "title_en": "English caption track for the audio guide",
       "sha256": "f2f7f4935970874b2ade364768a213f724dc3597c9e0c5cac8c87383b7e83b3e"
+    },
+    {
+      "path": "assets/media/audio-guide-en.m4a",
+      "role": "audio",
+      "required": false,
+      "language": "en",
+      "title_zh": "万感京张 多感官导览（英文旁白）",
+      "title_en": "Every Sense Jing-Zhang multisensory audio guide (English narration)",
+      "description_zh": "3 分 14 秒英文合成语音导览：与中文版同一旁白文本（英文翻译）、同一逐句合成与固定间隔拼接工艺（MiniMax speech-2.8-hd，预置音色 English_Trustworthy_Man）；AAC-LC 单声道 32 kHz/64 kbps。计算机合成，无真人录音",
+      "description_en": "A 3 min 14 s English synthetic-voice guide: the same narration text as the Chinese edition (translated), the same per-sentence synthesis and fixed-gap concatenation (MiniMax speech-2.8-hd, preset voice English_Trustworthy_Man); AAC-LC mono 32 kHz/64 kbps. Computer-synthesised, no human recording",
+      "transcript": "assets/media/audio-guide.md",
+      "caption": "assets/media/audio-guide-en-voice.vtt",
+      "sha256": "529eacb12d74b3ef21b7cc56e2918a98077edc46fadd28302cf710a6cc4b6682"
+    },
+    {
+      "path": "assets/media/audio-guide-en-voice.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "title_zh": "多感官导览英文语音版同步字幕",
+      "title_en": "Synchronised captions for the English voice edition",
+      "description_zh": "26 条 WebVTT 英文字幕，时间轴由英文语音逐句实测长度精确累加，与 audio-guide-en.m4a 严格同步（区别于 audio-guide-en.vtt：后者配中文音频、沿用中文时间轴）",
+      "description_en": "26 WebVTT cues timed from measured English sample lengths, strictly synchronised with audio-guide-en.m4a (distinct from audio-guide-en.vtt, which follows the Chinese audio timeline)",
+      "sha256": "1e8ae7ba4b96b6164ebf9e65d986d8c6ebaa742809db60f793936e4dc9457632"
+    },
+    {
+      "path": "assets/media/audible-break.m4a",
+      "role": "audio",
+      "required": false,
+      "language": "zh",
+      "title_zh": "听得见的断点（OP-04 连通性数据可听化 · 中文旁白）",
+      "title_en": "The Audible Break (OP-04 connectivity sonification, Chinese narration)",
+      "description_zh": "1 秒=20 米：AI 开启段 12.18 秒行进音走完 243.514 米到达；AI 关闭段按接口固定口径没有一米可走——开场即静默，静默即数据里接口缺失之处。纯程序合成+预置合成旁白，映射规则与档案 v0.3.0 读数逐项可核",
+      "description_en": "One second per twenty metres: the AI-on walk completes 243.514 m in 12.18 s; with AI off the fixed-interface rule leaves not one walkable metre — silence from the very start, and the silence is where the data holds no interface. Program synthesis plus preset synthetic narration; the mapping replays item by item against archive v0.3.0",
+      "transcript": "assets/media/audible-break.md",
+      "caption": "assets/media/audible-break.vtt",
+      "sha256": "187d4d86e1472b7e0c281d407e7bda8d1d4bfaef19382eb1245c9c6ac40fda54"
+    },
+    {
+      "path": "assets/media/audible-break-en.m4a",
+      "role": "audio",
+      "required": false,
+      "language": "en",
+      "title_zh": "听得见的断点（英文旁白版）",
+      "title_en": "The Audible Break (English narration)",
+      "description_zh": "1 秒=20 米：AI 开启段 12.18 秒行进音走完 243.514 米到达；AI 关闭段按接口固定口径没有一米可走——开场即静默，静默即数据里接口缺失之处。纯程序合成+预置合成旁白，映射规则与档案 v0.3.0 读数逐项可核",
+      "description_en": "One second per twenty metres: the AI-on walk completes 243.514 m in 12.18 s; with AI off the fixed-interface rule leaves not one walkable metre — silence from the very start, and the silence is where the data holds no interface. Program synthesis plus preset synthetic narration; the mapping replays item by item against archive v0.3.0",
+      "transcript": "assets/media/audible-break.md",
+      "caption": "assets/media/audible-break-en.vtt",
+      "sha256": "85734edcc369e7e96b9cb52fd1af369c73003332e44f49afab259fcff78a6a10"
+    },
+    {
+      "path": "assets/media/audible-break.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "zh",
+      "title_zh": "听得见的断点 中文字幕（含数据段说明）",
+      "title_en": "Audible Break Chinese captions (with data-segment notes)",
+      "sha256": "3b66f0243abfdf758a927ab7c807cfbf83e591651909ad3fd4ee0d477bbdf81b"
+    },
+    {
+      "path": "assets/media/audible-break-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "title_zh": "听得见的断点 英文字幕",
+      "title_en": "Audible Break English captions",
+      "sha256": "22c15a17a07b9599ac68a11068feb1192e7c5abf5c8298ef32b935fdaa3c14d1"
+    },
+    {
+      "path": "assets/media/audible-break.md",
+      "role": "transcript",
+      "required": false,
+      "title_zh": "听得见的断点 数据映射档案与权利记录（断点时刻可由档案读数复算）",
+      "title_en": "Audible Break mapping archive and rights note (the break moment recomputes from archive readings)",
+      "sha256": "7154096af6f957cf16348c3615b027ded811a2606965d6a19eccba36f8035e90"
+    },
+    {
+      "path": "assets/media/dual-state-walk.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "双态漫游（65 秒概念意象短片：三场景同机位 AI 开启/关闭对切）",
+      "title_en": "Dual-State Walk (65 s concept vision film: three scenes cut AI-on/AI-off from the same camera)",
+      "description_zh": "三组 AI 生成场景（主脊/缝合区/大钟寺市场）各呈两态：流光导引熄灭后盲道、铸刻导视、值守与现金柜台仍在。每帧恒显「概念意象·AI 生成·非建成效果承诺」角标；OFF 段垫本包五声音阶数据音；非效果图交付、非建成承诺",
+      "description_en": "Three AI-generated scenes each in two states: when the flowing-light guide goes out, the tactile strip, engraved signage, stewards and cash counters remain. Every frame carries a permanent concept/AI-generated/not-built badge; the AI-off bed reuses the package's pentatonic data sound; not a rendering deliverable, not a built outcome",
+      "transcript": "assets/media/dual-state-walk.md",
+      "poster": "assets/media/dual-state-walk-poster.webp",
+      "caption": "assets/media/dual-state-walk.vtt",
+      "sha256": "da6e0014243a167a154347d2077bfc5812cb27dd0944d9664db00c1b01f56925"
+    },
+    {
+      "path": "assets/media/dual-state-walk-poster.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "双态漫游 视频封面（场景一 AI 开启态标注帧）",
+      "title_en": "Dual-State Walk poster (scene-one AI-on annotated frame)",
+      "sha256": "bd84e9047f31fbc18534895496b40f047c14a3c0180c12b716afa113e4de1205"
+    },
+    {
+      "path": "assets/media/dual-state-walk.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "zh",
+      "title_zh": "双态漫游 中文字幕",
+      "title_en": "Dual-State Walk Chinese captions",
+      "sha256": "97d4a075ac6eb6b2eadf1a4226d80382115c3ff90b093f668e1bb2f6e549eaaf"
+    },
+    {
+      "path": "assets/media/dual-state-walk-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "title_zh": "双态漫游 英文字幕",
+      "title_en": "Dual-State Walk English captions",
+      "sha256": "09e1e0879c20e580671de67d45bda28839a26473b189cb77fccfd7a057d3bafc"
+    },
+    {
+      "path": "assets/media/dual-state-walk.md",
+      "role": "transcript",
+      "required": false,
+      "title_zh": "双态漫游 文字稿、生成档案（含两轮人工审改记录）与权利记录",
+      "title_en": "Dual-State Walk transcript, generation record (with both human-directed revision rounds) and rights note",
+      "sha256": "8a115a6415c7152425d64a8f18e3ea7c6f8e475a26b0cba9e6222d05475f17bb"
     }
   ],
   "validation_claim": {

@@ -1,5 +1,5 @@
 ---
-title: "A HOME IN MOTION AND AT REST - THE JING-ZHANG HOME-WORK RELAY"
+title: "JING-ZHANG HOME-WORK RELAY"
 subtitle: "Convertible Homes and Short Links Between Living, Work and Services"
 author_github: "NearCai"
 author_display: "NearCai × OpenAI Codex"
@@ -8,19 +8,19 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.2"
-summary: "Using railway coupling, switching and through-running as a cultural framework, the proposal links convertible homes, workplaces and public services through one line, three stations, four housing states, six relay contracts and a nine-state human handover; every spatial move is a conceptual recommendation based on provisional geometry."
+iteration: "v2.0"
+summary: "Using railway coupling, switching and through-running as a cultural framework, the proposal links convertible homes, workplaces and public services through one line, three stations, four housing states, six relay contracts and a nine-state human handover. Version 2.0 separates the spatial backbone, three station prototypes and operating contracts; every spatial move remains a conceptual recommendation based on provisional geometry."
 tracks: ["youth-friendly-public-space", "ai-public-services", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-traffic-walkability", "ai-cultural-guide"]
 ---
 
-# A HOME IN MOTION AND AT REST - THE JING-ZHANG HOME-WORK RELAY
+# JING-ZHANG HOME-WORK RELAY
 
 **Subtitle: Convertible Homes and Short Links Between Living, Work and Services**
 
 "Motion" means arriving, changing jobs, moving home and setting out again along the Jing-Zhang corridor. "Rest" means being able to settle during a stage of life or a period of work. "A home" means that housing, a desk, care and public services do not fall apart after one transition. The proposal translates the railway operations of coupling, switching and through-running into an urban mechanism: people may change projects, teams or household arrangements, or leave for a while, without being forced out of the community relationships and service network they have built. This is an open conceptual proposal by **NearCai × OpenAI Codex**, not an approved plan or an implementation commitment.
 
-Version 1.2 turns the earlier six-relay narrative into a **HOME-WORK RELAY CONTRACT**. Tenure, layout, workspace, services, private-home consent, and departure-return each receive a contract. Every contract names responsible and accountable roles, minimum inputs, entry and target within nine states, consent parties, prohibited AI decisions, human judgment, no-AI and offline routes, stop triggers, resume evidence, and a service clock that remains to be calibrated. Twelve local tabletop checks validate structure and positive or negative fixtures only; the negative fixture containing a household score must be rejected. These are not field tests or service-performance results [metric:relay_contract_count] [metric:relay_state_count] [metric:relay_tabletop_check_count].
+Version 2.0 retains the 93-point version's **HOME-WORK RELAY CONTRACT** while explicitly separating the spatial backbone from operating transitions. The first layer presents relative relations among the rail-heritage narrative, public route, courts, thresholds and three stations; the second addresses tenure, layout, workspace, services, private-home consent, departure and return. Every contract names responsible and accountable roles, minimum inputs, entry and target within nine states, consent parties, prohibited AI decisions, human judgment, no-AI and offline routes, stop triggers, resume evidence, and a service clock that remains to be calibrated. Twelve local tabletop checks validate structure and positive or negative fixtures only; the negative fixture containing a household score must be rejected. These are not field tests or service-performance results [metric:relay_contract_count] [metric:relay_state_count] [metric:relay_tabletop_check_count].
 
 ## Design Basis and Source List
 
@@ -85,6 +85,8 @@ Built form uses small courts, legible ground floors, articulated massing and rev
 This is a regulatory-plan-level question set with a reproducible conceptual design, not a statutory regulatory plan. Once official boundaries, parcels, ownership, building surveys, utilities and traffic data become available, the same data model should be used for overlay, capacity and implementation checks. Until then, any area or ratio demonstrates only the internal consistency of the submitted layers [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:metrics_recalculation].
 
 ## Detailed Design of Key Areas
+
+The version 2.0 station drawings no longer reduce stations to functional colour blocks or relative height diagrams. They depict public thresholds, courts, adaptable fit-out, care porches, service bays and private thresholds as relative sections that professional teams can examine further. Walking, maintenance, care and ordinary-service routes in the drawings express visibility and separation principles only; they make no road-redline, building-height, fire-distance, ownership or construction claim [depth:three_key_area_detailed_design] [source:ISSUE-KEYAREA-1029].
 
 ![Three key areas and three Home-Work Relay stations](assets/figures/key-areas.en.png)
 
