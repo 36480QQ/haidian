@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e5fb71a15fb5b24a7c4418215cede9d793b1ecee9bdb1199bacb76a6163c327e"
+      "sha256": "959f94159f70bd75f982447bdd92cea169d5688e411e75251f1ab72d051e279e"
     },
     {
       "path": "agent.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7af724c33f0edf7561246dd5c30a0cdb951212386d46a5b675e129e6c23b6e06"
+      "sha256": "bcd29f27bfb5cc24b21d0283d4d78044830ae1eed11d8303d32a35d068fc39c2"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "87d134e89228ca68aab31ff3172a2be7f9e1755e6395c554da2ded82924feb7e"
+      "sha256": "143030f063623b36f844de8c681cdf979c3174b2c527edf355a310424c211cd6"
     },
     {
       "path": "report/narrative.md",
@@ -99,7 +99,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "260ce5928653e66fc5565f1ee8f59058909b12d70607aea0ce2c8d107cf8261e"
+      "sha256": "d798356cc4332260fb3417aab38976798a9a0a1c3d9fd06e569d99ba9db5d157"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3be3a9e266492dd9d4299ae98752c729c0bf399755a861cb4cd672df156fb695"
+      "sha256": "5c610673fb478ba6b3cb1b78d67bd7c134c60504f4dc432e282633ece6c1d8bc"
     },
     {
       "path": "report/proposal.en.html",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3bd7e7250bb0c0787aa255e1a0bb2b674a25f0fa4f57fdbb85e088bddad95a0f"
+      "sha256": "31d47ce8ee5092ec339f9cda858b89009adc9b1ce494cde495ecaa9d7f002eb2"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -532,6 +532,20 @@
       "required": true,
       "language": "neutral",
       "sha256": "5338272bff44e53c9525174e12a650c95c3840ffdd7a0954f41767aafbbd1f44"
+    },
+    {
+      "path": "assets/figures/ai_decision_chain.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "efd86cacf03d488747f9317a86272124969c3055f8b1e5746c1eb8cf35fe011e"
+    },
+    {
+      "path": "assets/figures/jz_spatial_anchors.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "bfd08c2eff568cbd7c00829cf00fdd4f3467131ffc07c23dedbb69611cf88f57"
     }
   ],
   "validation_claim": {
