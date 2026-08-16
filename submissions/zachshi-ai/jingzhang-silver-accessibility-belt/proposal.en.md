@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Re-imagining the Jingzhang Railway Heritage Park as a 'silver-age service spine' for the elderly communities along the corridor: an AI-assisted public-service belt covering elderly medical visits, civic errands and barrier-free mobility. The proposal sets out the 'Jingzhang Silver-Age Accessibility Belt' concept, linking three key areas and沿线 communities, hospitals, civic-service points and metro entrances via a ~9 km continuous barrier-free slow-mobility spine, with 10 AI elderly-service scenario cards (incl. 3 test/validation scenarios), 5 elderly personas, 3 warmth landmarks, 8 elderly-use land types and 7 silver service nodes — an experienceable, replicable and iterable concept for elderly-friendly barrier-free smart services."
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v1.0"
+iteration: "v4.0"
 ---
 
 # Jingzhang Silver-Age Accessibility Belt: AI-Assisted Medical, Civic and Barrier-Free Mobility Services for the Elderly
@@ -242,6 +242,30 @@ The common failing of AI elderly services is "the machine processes the elderly 
 **Rule-closure verification.** `run_silver_relay.js` correctly classifies all 60 synthetic cases — 10 scenarios × 6 rule branches (complete / missing baton human / no consent / no signed receipt / missing follow-up visit / missing no-AI path) — as 50 blocked / 10 relayed, proving the relay rules are logically closed. But this only proves classification correctness; it does not constitute on-site elderly-service, compliance or authorisation evidence — on-site performance remains null with status `not_authorized_not_run` [data:visual/assets/relay-tabletop-evidence.json#blocked].
 
 **Relation to "the elderly as the active party".** The core of Silver Relay is not making AI understand the elderly better, but **requiring every AI service to hand the baton back to a named person**. The three rules — signed receipt, follow-up visit and no-AI equivalence — jointly guarantee: AI may help, but it will never "decide for the elderly" — the elderly always remain the active party of the service, and the machine always remains the assistant [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
+
+### Block Confirmation: Internalising Railway Dispatching Methodology (original to this proposal, v4)
+
+Silver Relay answered "AI must hand the baton to a human", but not yet "who is responsible at the instant of the handover". This proposal transplants the **block confirmation** methodology from railway dispatching: only one train may occupy the same block at any given moment — likewise for elderly services, **only one responsible party (AI or human) handles the same service at any given moment** [E:SILVER-BLOCK-CONFIRMATION].
+
+**Block-confirmation rules:**
+- **The AI block must release before the human block may occupy** — after AI completes its navigation it must "release" (explicitly telling the elderly person the service has been handed over to a human), and only then does the human handover "occupy" (explicitly accepted). No gaps (the elderly person is never left unattended), no overlaps (no two parties "handling" the elderly person at once).
+- **Handovers carry confirmation** — the elderly person or their proxy confirms "I have been handed over to a human", and only then is the handover complete. Without such confirmation, the AI block must not release.
+- **Follow-up-visit closure is retained** — the 24–72-hour follow-up visit confirming the service was truly completed remains the final link of the block chain.
+
+**Lens: An Elder's Day.** The service chain is designed around the elderly person's complete day from waking to sleep, rather than as a checklist of service points: morning medication reminder → morning medical visit (block: AI navigation → triage escort) → midday meal assistance (AI recommendation → human confirmation of dietary restrictions) → afternoon errands / digital aid (AI checklist → window / volunteer teaching) → evening safety (AI navigation → duty officer confirms safe arrival) → pre-sleep follow-up confirmation. Every link has one and only one responsible party [data:visual/assets/block-confirmation-table.json#lens].
+
+**No-AI baseline (negative space).** With no AI service at all, An Elder's Day can still be fully completed through community volunteers, family and traditional service modes. AI is a switchable overlay; block confirmation ensures that when it is switched off there are **no gaps** — the elderly person is never left unattended simply because "AI was turned off" [data:visual/assets/block-confirmation-table.json#negative-baseline].
+
+**Block table for the 10 scenarios** (full list in `visual/assets/block-confirmation-table.json`):
+
+| Scenario | AI block | Human block | Block confirmation |
+| --- | --- | --- | --- |
+| Silver medical navigation | AI navigation (release) | Triage escort (occupy) | AI block releases → human block occupies |
+| Silver civic-errand navigation | AI document checklist (release) | Human verification at the window (occupy) | AI block releases → window block occupies |
+| Silver digital aid | AI tutorial (release) | Intergenerational volunteer teaching (occupy) | AI block releases → volunteer block occupies |
+| Silver night safety | AI navigation (release) | Duty officer confirms safe arrival (occupy) | AI block releases → duty block occupies |
+
+The relation between block confirmation and Silver Relay: relay is the act of "handing over the baton"; block confirmation is the "rule of responsibility at the instant of the handover" — relay guarantees someone takes the baton, block confirmation guarantees the handover has no gap and no overlap. Together they guarantee that "the elderly always remain the active party, and someone is always responsible" [standard:BARRIER-FREE-ENVIRONMENT-LAW].
 
 ### Conceptual Renewal Project List
 
