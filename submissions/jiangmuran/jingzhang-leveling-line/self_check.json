@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 47 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 50 条 = 47 道闸门 + 3 条披露。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 48 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 51 条 = 48 道闸门 + 3 条披露。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -207,7 +207,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 65 mutations, 42 of 47 gates proven able to fail, 5 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 66 mutations, 43 of 48 gates proven able to fail, 5 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -215,7 +215,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 65 deliberate defects across 42 of 47 gates, all caught and all named by the gate that caught them; 5 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 66 deliberate defects across 43 of 48 gates, all caught and all named by the gate that caught them; 5 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_I18N_ORDER_QA",
@@ -231,7 +231,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 56 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 25 bytes to spare. The package totals 39.5 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 56 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 26 bytes to spare. The package totals 39.5 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -271,7 +271,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 518 distinct names harvested from the package — 502 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 520 distinct names harvested from the package — 504 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -442,12 +442,20 @@
       "message": "visual_packet_qa.py — visual packet: 18 images against the organisers' cap of 18 (0 slot(s) free) — 10 figures in both languages, 4 PDF first pages, 4 screenshots; largest is drawings/a3-booklet.pdf at 1.40 MiB against a 4 MiB per-image cap, read from upstream/main"
     },
     {
+      "check_id": "PKG_WHITESPACE_RULES_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "message": "whitespace_rules_qa.py — whitespace rules: 4 ordered rules covering all 11 blank blocks, every trigger and every evidence path resolving, the five refused statutory controls all still named, and every distance labelled straight-line rather than walked"
+    },
+    {
       "check_id": "PKG_ERRATA_REGISTER",
       "result": "pass",
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 219 条，按发现者：audit 25、external 24、external-reviewer 5、own-gate 17、rival-read 2、self 146；最常见形状：check-measured-the-convenient-thing 41、two-copies-of-one-thing-drifted 34、deliverable-not-inspected-before-shipping 24、claim-outlived-the-package 18。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 17 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 219 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 220 条，按发现者：audit 25、external 24、external-reviewer 5、own-gate 17、rival-read 2、self 147；最常见形状：check-measured-the-convenient-thing 41、two-copies-of-one-thing-drifted 34、deliverable-not-inspected-before-shipping 24、claim-outlived-the-package 18。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 17 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 220 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -455,7 +463,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：65 处人为缺陷，覆盖 42 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 65 deliberate defects across 42 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：66 处人为缺陷，覆盖 43 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 66 deliberate defects across 43 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
