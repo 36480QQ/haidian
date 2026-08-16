@@ -231,7 +231,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 56 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 26 bytes to spare. The package totals 39.5 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 56 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 2 bytes to spare. The package totals 39.5 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -247,7 +247,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "markdown_structure_qa.py — markdown structure: 109 tables across both editions, every separator and row matching its header, every ordered list strictly increasing"
+      "message": "markdown_structure_qa.py — markdown structure: 110 tables across both editions, every separator and row matching its header, every ordered list strictly increasing"
     },
     {
       "check_id": "PKG_MATRIX_REFS_QA",
@@ -287,7 +287,7 @@
       "severity": "info",
       "target": "proposal.md / proposal.en.md",
       "source": "package-provided",
-      "message": "双语内容一致性 — bilingual content parity: overall 82%, 16/16 sections at or above floor"
+      "message": "双语内容一致性 — bilingual content parity: overall 81%, 16/16 sections at or above floor"
     },
     {
       "check_id": "PKG_PEER_CLAIM_QA",
@@ -455,7 +455,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 220 条，按发现者：audit 25、external 24、external-reviewer 5、own-gate 17、rival-read 2、self 147；最常见形状：check-measured-the-convenient-thing 41、two-copies-of-one-thing-drifted 34、deliverable-not-inspected-before-shipping 24、claim-outlived-the-package 18。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 17 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 220 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 220 条，按发现者：audit 25、external 24、external-reviewer 5、own-gate 17、rival-read 2、self 147；最常见形状：check-measured-the-convenient-thing 41、two-copies-of-one-thing-drifted 34、deliverable-not-inspected-before-shipping 24、claim-outlived-the-package 18。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 18 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 220 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
