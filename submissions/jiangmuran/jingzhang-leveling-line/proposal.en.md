@@ -1122,7 +1122,7 @@ Both numbers are true; what was missing was saying so. **Both now ship, and both
 
 **Class 2, requiring official regulatory support, held at `unknown`:** [metric:floor_area_ratio] and building height, density, setbacks, road redlines. Filling estimates into a gap is fabricated certainty.
 
-**Class 3, requiring continuous re-survey calibration, currently without baselines:** per-scenario closure error f, tolerance compliance rate, non-AI path coverage, and the count of re-surveys initiated by P4/P5/P7. Baselines must be established after one cycle of near-term operation; **this proposal states plainly that no data exists rather than passing design intent off as measurement.**
+**Class 3, requiring continuous re-survey calibration, currently without baselines** (all four now in `metrics.json`, each with a collector, a cadence, a missed-reading rule and a dispute route; baseline and target null, E218)**:** per-scenario closure error f, tolerance compliance rate, non-AI path coverage, and the count of re-surveys initiated by P4/P5/P7. Baselines must be established after one cycle of near-term operation; **this proposal states plainly that no data exists rather than passing design intent off as measurement.**
 
 <!-- CEILING:BEGIN -->
 
@@ -1347,7 +1347,7 @@ Four proposals write it that way, so the tracks they declare **were never seen b
 
 Both tracks have thickened across every measurement, and their **relative position has not moved**: robotics is still the thinnest of the eight and AI public services sits beside youth-friendly public space just above it. Counts are in the track table above, not repeated — **the figures here went stale repeatedly because this sentence copied that generated table.** The wording moves with the data both ways: an earlier revision wrote "tied for second-thinnest" and a later measurement separated them. **An ordering that the next measurement can change should not be written as a fixed conclusion.**
 
-Labels are not coverage, and that distinction matters. Reading every proposal in those two tracks showed error both ways: one declares the robotics track while its "robots" are ecological sensors; another treats ground robots, tiered autonomous-vehicle admission and low-altitude delivery corridors without declaring the track. So the precise statement is: **thinnest of the eight by label, slightly more in substance, and thinnest either way** (the count is in the track table above) — which is itself a useful reading for the organisers, because track labels currently cannot serve as a coverage measure.
+Labels are not coverage. Reading every proposal in those two tracks showed error both ways: one declares the robotics track while its "robots" are ecological sensors; another treats ground robots, tiered autonomous-vehicle admission and low-altitude delivery corridors without declaring the track. So the precise statement is: **thinnest of the eight by label, slightly more in substance, and thinnest either way** (the count is in the track table above) — which is itself a useful reading for the organisers, because track labels currently cannot serve as a coverage measure.
 
 **Reading three: the "machine-readable" disclosure field is not machine-readable.**
 
@@ -1368,7 +1368,7 @@ The 649 that are filled in use **228 distinct strings that collapse to 9 buckets
 
 Measured across the repository's 793 `agent.json` files, **417 (52.6%)** declare `model_family`. The field is optional and the entire existing corpus predates it. (The two editions previously gave two different figures for this, neither of which was in any shipped file; it now comes from `model_family_declared_count` in `field_map.json`.)
 
-<!-- ADOPTION:END --> This package adopts it here, which does not change the conclusion: **a new enumerated field does not retroactively reach three hundred packages already submitted. Closing the circuit needs a migration or a requirement, not just a schema.** It is the same point this proposal makes about tolerance: changing the rule is not changing the readings. The repair is light: converge `model` into two fields, an enumerated family plus a free-text detail, and add one enumeration check to the four gates.
+<!-- ADOPTION:END --> This package adopts it here, which does not change the conclusion: **a new enumerated field does not retroactively reach three hundred packages already submitted. Closing the circuit needs a migration or a requirement, not just a schema.** The repair is light: converge `model` into two fields, an enumerated family plus a free-text detail, and add one enumeration check to the four gates.
 
 #### A second measurable gap: a published contract nothing enforces
 
