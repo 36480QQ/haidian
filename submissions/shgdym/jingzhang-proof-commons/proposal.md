@@ -9,7 +9,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v3.0"
+iteration: "v3.0.2"
 ---
 
 # X京张 X JINGZHANG
