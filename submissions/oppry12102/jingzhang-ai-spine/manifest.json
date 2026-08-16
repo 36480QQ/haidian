@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "412e82924a0348bb760c58d4e860bdb2ca93a0f7266ae21ff63a34c4c8bb260e"
+      "sha256": "5ef7e37834c236393e1785fe077a87c3f01d305c4e331083e46e6caa97490ef3"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b6f2c5da8232f1eaead9e8a8fa95f3defc89b2afcf73657152812be4f38a8d30"
+      "sha256": "0ba177c8ea2ed0b4c93d1b7254c2611c5f2516c6456c19b9de4452a79209ee2a"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "640a86e322bb1d8eab0e0972b60449b871ab6fc80bea601778ba4464bab46152"
+      "sha256": "19dbac624f36edc631f56323e9c626784fa8581c341a0b133fae18f8ec966722"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "93dd564f6e08ef48b2948aa6652031701d9776671b5f96d40b540658950f4782"
+      "sha256": "cf3aa7ee00ce968abae7dcbc8c92af26474408e424d25a033d7af7cfbe455fef"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "15ccd16063347613440cddea5fcb0e4ce2cf35ec103611165ac0610294369626"
+      "sha256": "dabf351104bee6ee119334f79865270ac02c4f78e505a95bd1fa63444fbc0b84"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,6 +377,213 @@
       "role": "transcript",
       "required": false,
       "sha256": "f90f7c90687559d3d6a923991cc7518c435e641f1e936334b7867576cfeed37c"
+    },
+    {
+      "path": "drawings/plan-01-location.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "zh",
+      "sha256": "90583fe92d9c4ae852310081a496d189414adde771dde6771c7ed2cc5b803191",
+      "title_zh": "区位与总体范围图",
+      "title_en": "Location & Overall Scope",
+      "description_zh": "矢量规划图则：区位与总体范围图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Location & Overall Scope (title/legend/north arrow/scale bar/provisional boundary/source notes)"
+    },
+    {
+      "path": "drawings/plan-01-location.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "en",
+      "sha256": "b57a45eee8e9abc351f5c7a585f796350a977b833417ab396d6c9ef930ce5015",
+      "title_zh": "区位与总体范围图",
+      "title_en": "Location & Overall Scope",
+      "description_zh": "矢量规划图则：区位与总体范围图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Location & Overall Scope (title/legend/north arrow/scale bar/provisional boundary/source notes)",
+      "translation_of": "drawings/plan-01-location.pdf"
+    },
+    {
+      "path": "drawings/plan-02-constraints.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "zh",
+      "sha256": "2a67db0f4ac305b58a5a0b7b9a9f1f786f77ca7d983bf08198ac6d61bb12d896",
+      "title_zh": "现状约束与既有网络图",
+      "title_en": "Existing Constraints & Networks",
+      "description_zh": "矢量规划图则：现状约束与既有网络图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Existing Constraints & Networks (title/legend/north arrow/scale bar/provisional boundary/source notes)"
+    },
+    {
+      "path": "drawings/plan-02-constraints.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "en",
+      "sha256": "773e7176940629077ba2efe069d0df5a654f4bde768bee745a61c02c953b003c",
+      "title_zh": "现状约束与既有网络图",
+      "title_en": "Existing Constraints & Networks",
+      "description_zh": "矢量规划图则：现状约束与既有网络图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Existing Constraints & Networks (title/legend/north arrow/scale bar/provisional boundary/source notes)",
+      "translation_of": "drawings/plan-02-constraints.pdf"
+    },
+    {
+      "path": "drawings/plan-03-landuse.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "zh",
+      "sha256": "71a2ae310feda106ad6ac7e822ff6611b0865489e0fa094d691ee48f99b3a6c4",
+      "title_zh": "用地规划图（GB 50137-2011）",
+      "title_en": "Land-Use Plan (GB 50137-2011)",
+      "description_zh": "矢量规划图则：用地规划图（GB 50137-2011）（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Land-Use Plan (GB 50137-2011) (title/legend/north arrow/scale bar/provisional boundary/source notes)"
+    },
+    {
+      "path": "drawings/plan-03-landuse.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "en",
+      "sha256": "15fe0afd3ff22be1e0c935d1bc39bc7652d50b0a7f6bb10cf79da71392bbba2d",
+      "title_zh": "用地规划图（GB 50137-2011）",
+      "title_en": "Land-Use Plan (GB 50137-2011)",
+      "description_zh": "矢量规划图则：用地规划图（GB 50137-2011）（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Land-Use Plan (GB 50137-2011) (title/legend/north arrow/scale bar/provisional boundary/source notes)",
+      "translation_of": "drawings/plan-03-landuse.pdf"
+    },
+    {
+      "path": "drawings/plan-04-structure.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "zh",
+      "sha256": "79b82ea3872517e107b4d36d90b138c26cee97ef163a6231c42ab55c2c7b1636",
+      "title_zh": "空间结构图",
+      "title_en": "Spatial Structure",
+      "description_zh": "矢量规划图则：空间结构图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Spatial Structure (title/legend/north arrow/scale bar/provisional boundary/source notes)"
+    },
+    {
+      "path": "drawings/plan-04-structure.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "en",
+      "sha256": "ea641e7553fa56a67bc4d6b954693fc16cfbc9ef8ffe315ab2ec403723a2b2c3",
+      "title_zh": "空间结构图",
+      "title_en": "Spatial Structure",
+      "description_zh": "矢量规划图则：空间结构图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Spatial Structure (title/legend/north arrow/scale bar/provisional boundary/source notes)",
+      "translation_of": "drawings/plan-04-structure.pdf"
+    },
+    {
+      "path": "drawings/plan-05-keyareas.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "zh",
+      "sha256": "222322db6616c2b85b7ba3938facf94258a0e666c9d3addad138f7aeb9649cf1",
+      "title_zh": "三处重点区总平面图",
+      "title_en": "Three Key Areas Site Plans",
+      "description_zh": "矢量规划图则：三处重点区总平面图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Three Key Areas Site Plans (title/legend/north arrow/scale bar/provisional boundary/source notes)"
+    },
+    {
+      "path": "drawings/plan-05-keyareas.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "en",
+      "sha256": "eaf471d33e151a8349dd6a3a8fee591be66bf5baad4a5a16e9427578b55aca01",
+      "title_zh": "三处重点区总平面图",
+      "title_en": "Three Key Areas Site Plans",
+      "description_zh": "矢量规划图则：三处重点区总平面图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Three Key Areas Site Plans (title/legend/north arrow/scale bar/provisional boundary/source notes)",
+      "translation_of": "drawings/plan-05-keyareas.pdf"
+    },
+    {
+      "path": "drawings/plan-06-green-public.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "zh",
+      "sha256": "3d00d33bbc09ab9853c67a4dfc985064e21197f0d3486e5f0fde0c2b47b7f889",
+      "title_zh": "绿地与公共空间系统图",
+      "title_en": "Green & Public Space System",
+      "description_zh": "矢量规划图则：绿地与公共空间系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Green & Public Space System (title/legend/north arrow/scale bar/provisional boundary/source notes)"
+    },
+    {
+      "path": "drawings/plan-06-green-public.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "en",
+      "sha256": "b3e4826c1bc739e732ca30cea1b982b8a666dd9dae37bc3cbefef3de1c18a69e",
+      "title_zh": "绿地与公共空间系统图",
+      "title_en": "Green & Public Space System",
+      "description_zh": "矢量规划图则：绿地与公共空间系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Green & Public Space System (title/legend/north arrow/scale bar/provisional boundary/source notes)",
+      "translation_of": "drawings/plan-06-green-public.pdf"
+    },
+    {
+      "path": "drawings/plan-07-mobility.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "zh",
+      "sha256": "835e8658cc99c4b478e85c9700f0e413546d15dd2e3d747187b93378965282cd",
+      "title_zh": "交通与慢行系统图",
+      "title_en": "Mobility & Slow-Traffic System",
+      "description_zh": "矢量规划图则：交通与慢行系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Mobility & Slow-Traffic System (title/legend/north arrow/scale bar/provisional boundary/source notes)"
+    },
+    {
+      "path": "drawings/plan-07-mobility.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "en",
+      "sha256": "f10cf971a532e96926d2f7e547cccff5b07b0af5a635ef769a5115c018ec3c80",
+      "title_zh": "交通与慢行系统图",
+      "title_en": "Mobility & Slow-Traffic System",
+      "description_zh": "矢量规划图则：交通与慢行系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Mobility & Slow-Traffic System (title/legend/north arrow/scale bar/provisional boundary/source notes)",
+      "translation_of": "drawings/plan-07-mobility.pdf"
+    },
+    {
+      "path": "drawings/plan-08-phasing.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "zh",
+      "sha256": "0e2e9b52385dfefca9a861ad4a15da8898fc0445a050d871e76cddb8b7a5c1a0",
+      "title_zh": "分期实施图",
+      "title_en": "Phased Implementation",
+      "description_zh": "矢量规划图则：分期实施图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Phased Implementation (title/legend/north arrow/scale bar/provisional boundary/source notes)"
+    },
+    {
+      "path": "drawings/plan-08-phasing.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "en",
+      "sha256": "746c9cc02b9945eaf384b5e24ce8b77c06abdef11d51abd3e165f9125a0b004b",
+      "title_zh": "分期实施图",
+      "title_en": "Phased Implementation",
+      "description_zh": "矢量规划图则：分期实施图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Phased Implementation (title/legend/north arrow/scale bar/provisional boundary/source notes)",
+      "translation_of": "drawings/plan-08-phasing.pdf"
+    },
+    {
+      "path": "drawings/plan-09-blue-green.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "zh",
+      "sha256": "79c54a8013c33535b885c28ed6a9477b3569fd3db3bbfb68c3bd3fdb164cdc94",
+      "title_zh": "蓝绿风貌系统图",
+      "title_en": "Blue-Green Landscape System",
+      "description_zh": "矢量规划图则：蓝绿风貌系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Blue-Green Landscape System (title/legend/north arrow/scale bar/provisional boundary/source notes)"
+    },
+    {
+      "path": "drawings/plan-09-blue-green.en.pdf",
+      "role": "drawing",
+      "required": false,
+      "language": "en",
+      "sha256": "624b3123ee17d293adf340a6380fbe6b7a2d7afd5691d2f8c1beb30769a02863",
+      "title_zh": "蓝绿风貌系统图",
+      "title_en": "Blue-Green Landscape System",
+      "description_zh": "矢量规划图则：蓝绿风貌系统图（含图名/图例/指北针/比例尺/临时边界/来源注记）",
+      "description_en": "Vector planning sheet: Blue-Green Landscape System (title/legend/north arrow/scale bar/provisional boundary/source notes)",
+      "translation_of": "drawings/plan-09-blue-green.pdf"
     }
   ],
   "validation_claim": {
