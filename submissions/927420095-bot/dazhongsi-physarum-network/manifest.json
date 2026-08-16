@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "60dc389af7fd536bace4100b486c80c72a959eeb2dd393991eb8d2a112f84eda"
+      "sha256": "9ddf6f9eeb69e10155fceadb11a12558afc19ed12ac4d19115d1eed36611c167"
     },
     {
       "path": "agent.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "117192d7c1cf72b28280a31881cd84051ab9ed0fc072f540273acdf3e4d353ef"
+      "sha256": "58eef0d0764f700a4a1d866c6f011f64599a254603287ac6dfdeb4006a4067aa"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1dd7b4fee454027b45a50eace024935559e65570deeb34371a749a7ac2f52c54"
+      "sha256": "ac90a2ccb000831be6282af2b0519431a0d0ba1fc43a87b4de07b215687f7ae6"
     },
     {
       "path": "report/narrative.md",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e615e140cf6e90e23b78495291dfba31b20e9c3cf773e44c77b31610e3c7c5e7"
+      "sha256": "fea679c2f74bf1d5a322c82fec59788d580141bbae795a6f994574facfa86569"
     },
     {
       "path": "report/proposal.en.html",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "fe1d3474cb9f1cc0441c937fbf18812024485980bb04806a20dc1e972f55c287"
+      "sha256": "ee4550dc022fd82d46adf9baa063d237dc30343501257ab38e911c8b6a280f14"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -506,13 +506,6 @@
       "sha256": "0e79617432a84b79dab82291d5c834d4a503334cbab9ed67e65b0d7b7c6e26a5"
     },
     {
-      "path": "assets/figures/project_matrix.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "neutral",
-      "sha256": "2d24804b14a7d08ef3fa28460ae671a1b7350bcab0eb5a550d3a4ac1fbc877af"
-    },
-    {
       "path": "assets/figures/inclusive_matrix.png",
       "role": "proposal_figure",
       "required": true,
@@ -531,7 +524,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "5338272bff44e53c9525174e12a650c95c3840ffdd7a0954f41767aafbbd1f44"
+      "sha256": "ce5c77cd6526ece98becd3e066ad432ee5a7b803bbc2b76bc436cb7606b59629"
     }
   ],
   "validation_claim": {
