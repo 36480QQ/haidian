@@ -748,6 +748,18 @@
       "why_en": "**An unexplained warning is a defect nobody fixes.** This mutation proves that a warning shape this package has not published as unfixable stops the build."
     },
     {
+      "id": "M76",
+      "gate": "organiser_review_qa.py",
+      "target": "compliance_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 `organiser_review` 里那条答复的 id 改掉——组织方仍在返回 `KEY_AREA_PROVISIONAL`，而本包答的是一个他们没提过的编号。**这正是本包直到 E230 之前的真实状态**：判定书在评审手里，本包从没读过。",
+      "what_en": "Change the id on the answer in organiser_review: their review still returns KEY_AREA_PROVISIONAL and this package answers a code they never raised. **This is the state this package was actually in until E230**: the verdict was in the reviewer's hands and unread here.",
+      "why_zh": "**答错编号与不作答，对评审是同一件事。** 这条变异要证明的是：他们返回的每个 id 必须被按 id 答到，答一个他们没提的，构建就停。",
+      "why_en": "**Answering the wrong id and not answering are the same thing to a reviewer.** This mutation proves that every id they return must be answered by id, and answering one they never raised stops the build."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -917,7 +929,7 @@
       "why_en": "**An instrument reporting zero failures on half the surface is worse than none.** This mutation proves that any text colour falling below the floor on the dark side stops the build."
     }
   ],
-  "caught": 75,
+  "caught": 76,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -946,6 +958,7 @@
     "matrix_refs_qa.py",
     "measurement_protocol_qa.py",
     "naming_qa.py",
+    "organiser_review_qa.py",
     "overflow_qa.py",
     "parity_qa.py",
     "pdf_page1_qa.py",
@@ -1012,6 +1025,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 53 道闸门，其中 48 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 53 gates, 48 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 54 道闸门，其中 49 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 54 gates, 49 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
