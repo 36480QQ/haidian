@@ -747,7 +747,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 217,
+      "value": 219,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -1194,6 +1194,158 @@
       "verification_role_en": "Transport engineering",
       "note_zh": "**这条带建成之后，多少人十分钟走得到一个水准点。** 同一张实测步行图，加上本方案自己的十一处缝合与三条测点支线，其余不变：十分钟可达的建筑基底从 **232 个增加到 261 个**，净增 **29 个**；可达面积从 203.3 ha 增至 220.6 ha。**这就是这条带在地面上买到的东西**——数出来的，不是声称的；如果它很小，那也是一条发现。",
       "note_en": "**How many more people reach a benchmark in ten minutes if this is built.** The same mapped walking network, plus this proposal's own eleven stitching links and three benchmark spurs and nothing else: building footprints within a ten-minute walk go from **232 to 261**, a gain of **29**, and the catchment from 203.3 ha to 220.6 ha. That is what the belt buys on the ground - counted, not asserted, and published either way."
+    },
+    "scenario_closure_error_f": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/scenario_cards.json",
+        "visual/assets/role_spec.json"
+      ],
+      "formula": "closure_error(scenario, cycle) per scenario_cards.json f_formula",
+      "confidence": "unknown",
+      "assumptions": [],
+      "assumption_ids": [
+        "A-CLOSURE-001",
+        "A-CLOSURE-002"
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading",
+      "metric_class": 3,
+      "measures": "proposed_design",
+      "baseline": null,
+      "target": null,
+      "baseline_target_note_zh": "**baseline 与 target 一律为 null，并且保持为 null。**公布怎么测，不等于公布必须达到的数——第一次读数之前设定的目标，是被测者自己设的目标。",
+      "measurement_protocol": {
+        "collecting_role": "ROLE-PROFESSIONAL-BODY",
+        "second_party_role": "ROLE-PARK-OPERATOR",
+        "sampling_unit_zh": "每个场景每个复测周期一个读数，按 scenario_cards.json 的 f_formula 计算",
+        "frequency_zh": "按测点等级：三等月度、二等季度、一等年度",
+        "missing_value_zh": "缺一站即整段退回复测，该周期不计入合格；缺失本身随闭合记录公示，不补算",
+        "dispute_review_zh": "居民代表可对任一次读数提出异议，原值与更正值并列保留"
+      },
+      "reason": "Third-class performance metric: it has no value until the first re-measurement cycle runs. How it is measured, by whom, how often and who may dispute it is stated in measurement_protocol.",
+      "reason_en": "Third-class performance metric with no value until the first re-measurement cycle runs; the measurement protocol states who collects it, how often, what a missed reading does, and who may dispute a value.",
+      "reason_zh": "第三类绩效指标：各场景闭合差 f在第一个复测周期跑完之前没有值。谁来测、多久测一次、漏测怎么算、谁可以质疑，写在 measurement_protocol 里；本包不以设计意图冒充实测。",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "法定控规编制单位",
+      "verification_role_en": "The statutory regulatory-plan authority"
+    },
+    "tolerance_pass_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/scenario_cards.json",
+        "visual/assets/role_spec.json"
+      ],
+      "formula": "cycles_with_f_le_F / cycles_run",
+      "confidence": "unknown",
+      "assumptions": [],
+      "assumption_ids": [
+        "A-CLOSURE-001",
+        "A-CLOSURE-002"
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading",
+      "metric_class": 3,
+      "measures": "proposed_design",
+      "baseline": null,
+      "target": null,
+      "baseline_target_note_zh": "**baseline 与 target 一律为 null，并且保持为 null。**公布怎么测，不等于公布必须达到的数——第一次读数之前设定的目标，是被测者自己设的目标。",
+      "measurement_protocol": {
+        "collecting_role": "ROLE-PROFESSIONAL-BODY",
+        "second_party_role": "ROLE-RESIDENT-REP",
+        "sampling_unit_zh": "以复测周期为单位，分母是实际跑完的周期数，不含未跑的",
+        "frequency_zh": "每年度归零仪式公布一次，过程值随每次闭合记录公示",
+        "missing_value_zh": "未跑的周期不计入分母，也不得计入分子；分母本身一并公示",
+        "dispute_review_zh": "四类复核主体任一方可要求重算，重算过程与原过程一并公开"
+      },
+      "reason": "Third-class performance metric: it has no value until the first re-measurement cycle runs. How it is measured, by whom, how often and who may dispute it is stated in measurement_protocol.",
+      "reason_en": "Third-class performance metric with no value until the first re-measurement cycle runs; the measurement protocol states who collects it, how often, what a missed reading does, and who may dispute a value.",
+      "reason_zh": "第三类绩效指标：限差 F 达标率在第一个复测周期跑完之前没有值。谁来测、多久测一次、漏测怎么算、谁可以质疑，写在 measurement_protocol 里；本包不以设计意图冒充实测。",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "法定控规编制单位",
+      "verification_role_en": "The statutory regulatory-plan authority"
+    },
+    "non_ai_path_coverage": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/scenario_cards.json",
+        "visual/assets/role_spec.json"
+      ],
+      "formula": "scenarios_with_non_ai_equivalent / scenarios_operating",
+      "confidence": "unknown",
+      "assumptions": [],
+      "assumption_ids": [
+        "A-CLOSURE-001",
+        "A-CLOSURE-002"
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading",
+      "metric_class": 3,
+      "measures": "proposed_design",
+      "baseline": null,
+      "target": null,
+      "baseline_target_note_zh": "**baseline 与 target 一律为 null，并且保持为 null。**公布怎么测，不等于公布必须达到的数——第一次读数之前设定的目标，是被测者自己设的目标。",
+      "measurement_protocol": {
+        "collecting_role": "ROLE-OPERATING-ENTITY",
+        "second_party_role": "ROLE-RESIDENT-REP",
+        "sampling_unit_zh": "以场景卡为单位，逐张核对 non_ai_equivalent 是否在现场真的可用",
+        "frequency_zh": "每季度实地核一次，投产前必核",
+        "missing_value_zh": "核不到即按不可用计，场景当期停用而不是记为缺数据",
+        "dispute_review_zh": "任何人可在现场按该路径走一次并公开结果，与官方核验并列"
+      },
+      "reason": "Third-class performance metric: it has no value until the first re-measurement cycle runs. How it is measured, by whom, how often and who may dispute it is stated in measurement_protocol.",
+      "reason_en": "Third-class performance metric with no value until the first re-measurement cycle runs; the measurement protocol states who collects it, how often, what a missed reading does, and who may dispute a value.",
+      "reason_zh": "第三类绩效指标：无AI等价路径覆盖率在第一个复测周期跑完之前没有值。谁来测、多久测一次、漏测怎么算、谁可以质疑，写在 measurement_protocol 里；本包不以设计意图冒充实测。",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "法定控规编制单位",
+      "verification_role_en": "The statutory regulatory-plan authority"
+    },
+    "resident_initiated_remeasurement_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/scenario_cards.json",
+        "visual/assets/role_spec.json"
+      ],
+      "formula": "count(remeasurement_requests where initiator in P4/P5/P7)",
+      "confidence": "unknown",
+      "assumptions": [],
+      "assumption_ids": [
+        "A-CLOSURE-001",
+        "A-CLOSURE-002"
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading",
+      "metric_class": 3,
+      "measures": "proposed_design",
+      "baseline": null,
+      "target": null,
+      "baseline_target_note_zh": "**baseline 与 target 一律为 null，并且保持为 null。**公布怎么测，不等于公布必须达到的数——第一次读数之前设定的目标，是被测者自己设的目标。",
+      "measurement_protocol": {
+        "collecting_role": "ROLE-RESIDENT-REP",
+        "second_party_role": "ROLE-PARK-OPERATOR",
+        "sampling_unit_zh": "每一次请求记一次，含被驳回的；驳回理由一并记录",
+        "frequency_zh": "连续记录，年度汇总",
+        "missing_value_zh": "无请求记 0，并与当年的公示次数并列——0 可能是没人需要，也可能是没人知道可以",
+        "dispute_review_zh": "请求人可要求公开驳回理由；理由不得为「无需复测」而无依据"
+      },
+      "reason": "Third-class performance metric: it has no value until the first re-measurement cycle runs. How it is measured, by whom, how often and who may dispute it is stated in measurement_protocol.",
+      "reason_en": "Third-class performance metric with no value until the first re-measurement cycle runs; the measurement protocol states who collects it, how often, what a missed reading does, and who may dispute a value.",
+      "reason_zh": "第三类绩效指标：居民发起复测的次数在第一个复测周期跑完之前没有值。谁来测、多久测一次、漏测怎么算、谁可以质疑，写在 measurement_protocol 里；本包不以设计意图冒充实测。",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "法定控规编制单位",
+      "verification_role_en": "The statutory regulatory-plan authority"
     }
   }
 }

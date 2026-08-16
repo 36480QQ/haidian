@@ -18,7 +18,14 @@
         "name_zh": "南门户公共客厅",
         "area_sqm_declared": 62631.628,
         "access_rule": "public_first_non_app_entry",
-        "regulatory_status": "conceptual_design_not_approved"
+        "regulatory_status": "conceptual_design_not_approved",
+        "civic_route_id": "ROAD-011",
+        "ai_sidecar_type": "arrival_sidecar",
+        "ai_sidecar_host_role": "fixed_wayfinding_arrival_commons",
+        "ai_off_baseline": "fixed wayfinding and human help remain the baseline",
+        "ai_on_delta": "dynamic translation/information may supplement but not replace the baseline",
+        "reversibility": "remove_sidecar_without_relocating_ordinary_route",
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
       },
       "geometry": {
         "type": "Polygon",
@@ -147,7 +154,14 @@
         "name_zh": "AI原点社区公共客厅",
         "area_sqm_declared": 73026.316,
         "access_rule": "public_first_non_app_entry",
-        "regulatory_status": "conceptual_design_not_approved"
+        "regulatory_status": "conceptual_design_not_approved",
+        "civic_route_id": "ROAD-010",
+        "ai_sidecar_type": "care_porch",
+        "ai_sidecar_host_role": "community_help_commons",
+        "ai_off_baseline": "community commons and human help remain account-free",
+        "ai_on_delta": "opt-in navigation/care prompts may attach to a staffed interface",
+        "reversibility": "remove_sidecar_without_relocating_ordinary_route",
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
       },
       "geometry": {
         "type": "Polygon",
@@ -233,7 +247,14 @@
         "name_zh": "众智园开放交流场",
         "area_sqm_declared": 62568.044,
         "access_rule": "public_first_non_app_entry",
-        "regulatory_status": "conceptual_design_not_approved"
+        "regulatory_status": "conceptual_design_not_approved",
+        "civic_route_id": "ROAD-009",
+        "ai_sidecar_type": "test_pocket",
+        "ai_sidecar_host_role": "bounded_public_test_edge",
+        "ai_off_baseline": "public exchange remains open with testing off",
+        "ai_on_delta": "temporary controlled-test interface may occupy only a lateral pocket",
+        "reversibility": "remove_sidecar_without_relocating_ordinary_route",
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
       },
       "geometry": {
         "type": "Polygon",

@@ -22,9 +22,13 @@
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 62632.602,
         "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "civic_route_id": "ROAD-011",
+        "ai_sidecar_type": "arrival_sidecar",
+        "ai_sidecar_host_role": "heritage_orientation_host",
+        "ai_off_baseline": "heritage/public orientation remains readable with static information",
+        "ai_on_delta": "dynamic translation or interpretation may supplement the fixed layer",
+        "reversibility": "remove_sidecar_without_relocating_ordinary_route",
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
       },
       "geometry": {
         "type": "Polygon",
@@ -70,9 +74,13 @@
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 64530.422,
         "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "civic_route_id": "ROAD-011",
+        "ai_sidecar_type": "arrival_sidecar",
+        "ai_sidecar_host_role": "waiting_retail_host",
+        "ai_off_baseline": "ordinary waiting/retail remains usable",
+        "ai_on_delta": "dynamic arrival information may attach laterally to the public ground floor",
+        "reversibility": "remove_sidecar_without_relocating_ordinary_route",
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
       },
       "geometry": {
         "type": "Polygon",
@@ -117,10 +125,7 @@
         "renewal_action": "infill_or_reuse",
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 56925.623,
-        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。"
       },
       "geometry": {
         "type": "Polygon",
@@ -165,10 +170,7 @@
         "renewal_action": "infill_or_reuse",
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 56925.503,
-        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。"
       },
       "geometry": {
         "type": "Polygon",
@@ -213,10 +215,7 @@
         "renewal_action": "infill_or_reuse",
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 91059.354,
-        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。"
       },
       "geometry": {
         "type": "Polygon",
@@ -261,10 +260,7 @@
         "renewal_action": "infill_or_reuse",
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 54256.088,
-        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。"
       },
       "geometry": {
         "type": "Polygon",
@@ -310,9 +306,13 @@
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 68285.648,
         "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "civic_route_id": "ROAD-010",
+        "ai_sidecar_type": "care_porch",
+        "ai_sidecar_host_role": "residential_public_ground_floor_host",
+        "ai_off_baseline": "home access and ordinary ground-floor use remain account-free",
+        "ai_on_delta": "opt-in service matching or care prompt may attach at the public interface",
+        "reversibility": "remove_sidecar_without_relocating_ordinary_route",
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
       },
       "geometry": {
         "type": "Polygon",
@@ -357,10 +357,7 @@
         "renewal_action": "infill_or_reuse",
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 56902.041,
-        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。"
       },
       "geometry": {
         "type": "Polygon",
@@ -406,9 +403,13 @@
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 87726.474,
         "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "civic_route_id": "ROAD-010",
+        "ai_sidecar_type": "care_porch",
+        "ai_sidecar_host_role": "human_help_learning_host",
+        "ai_off_baseline": "shared learning and human help remain available",
+        "ai_on_delta": "optional navigation/service prompts may attach without becoming a gate",
+        "reversibility": "remove_sidecar_without_relocating_ordinary_route",
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
       },
       "geometry": {
         "type": "Polygon",
@@ -453,10 +454,7 @@
         "renewal_action": "adaptive_reuse_or_infill",
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 87236.903,
-        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。"
       },
       "geometry": {
         "type": "Polygon",
@@ -501,10 +499,7 @@
         "renewal_action": "adaptive_reuse_or_infill",
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 106201.248,
-        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。"
       },
       "geometry": {
         "type": "Polygon",
@@ -550,9 +545,13 @@
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 90061.439,
         "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "civic_route_id": "ROAD-009",
+        "ai_sidecar_type": "test_pocket",
+        "ai_sidecar_host_role": "research_ground_floor_host",
+        "ai_off_baseline": "ordinary research/work entry remains available",
+        "ai_on_delta": "stoppable test or sensing interface attaches at the service edge",
+        "reversibility": "remove_sidecar_without_relocating_ordinary_route",
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
       },
       "geometry": {
         "type": "Polygon",
@@ -598,9 +597,13 @@
         "control_status": "design_model_only_pending_official_controls",
         "area_sqm_declared": 142202.028,
         "disclaimer": "概念容量测试，不表示现状建筑、确定拆建、获批高度或建设规模。",
-        "ground_permeability_ratio": 0.68,
-        "street_setback_m": 3.0,
-        "non_ai_entrance_barrier_free": true
+        "civic_route_id": "ROAD-009",
+        "ai_sidecar_type": "test_pocket",
+        "ai_sidecar_host_role": "replaceable_service_host",
+        "ai_off_baseline": "enterprise/public service entry remains ordinary",
+        "ai_on_delta": "replaceable test/service module may attach without occupying the route",
+        "reversibility": "remove_sidecar_without_relocating_ordinary_route",
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
       },
       "geometry": {
         "type": "Polygon",

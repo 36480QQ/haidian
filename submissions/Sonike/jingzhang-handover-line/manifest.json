@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b2a80e6d7dd8554a0312227969a0c8eb84a68881a78abd48b2d2261689174cc9"
+      "sha256": "289dd4e29fe5c4ab0a178a48545c2deef247066c4f06a09cef5c44e6f45eaf8c"
     },
     {
       "path": "agent.json",
@@ -49,13 +49,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "511f88fef410fb14bc109979733c704aff750376f4959c327e92c79860f1dc36"
+      "sha256": "290e763046f9a9bb1e7a3c675778d0db4507a63d5ac44dd3073192e3e328f231"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "659bc5deb2815c4d5619dc980e8ab74cc73ba095bf7a889b2daee472e1e770b3"
+      "sha256": "1b927d8a0556db5402a24180059ed1d24e5dd4943fc307b13180688af44ccc8d"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "74c9b35203c2fef790d1fa7261e44e2de09461ec9749c8a5f774b545a25b6626"
+      "sha256": "7dc3426eef60d15af1036fed0274051cc6bf89081cf6c9a672918ab9e50ac083"
     },
     {
       "path": "report/narrative.md",
@@ -99,14 +99,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "29850bd68210716c57bc9c3aa0884548d4ce8a392f313a9012b4ea2e0022c067"
+      "sha256": "4d3590f0f8aae4b66bc3f5e70664b6eee54946843f28c862d4241092e69c9168"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b88df6175451c1db304c828e8d6e3620b4a87e0bb3fa14a283e92b33a305a596"
+      "sha256": "c9f1accc0070aa7789e783c3c902c0d6d33ee78c3d5d9cfb493663019fe30581"
     },
     {
       "path": "visual/index.html",
@@ -127,14 +127,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "a3d0952d3a3c43a566a535205bc2a4f0c814957f6b598ba3447d2f9776849877"
+      "sha256": "0df91a5390fabdff80f44fbb9591dd426935d06b522605979ff81ba261bfc683"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "7b9300d431b087ad6c2b06043cdd57e3cdd91af8819d965da1881052043209f8"
+      "sha256": "ebbff71c4d40bd7f61cf88505dd3d679d6f8e99fc2c5d1a4d7982ea333b06a4b"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -148,7 +148,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "e3fb3387ac24f85bfb50f944e484be49486783d6ab2ffcf10681c1c30a314d2e"
+      "sha256": "f35a58abd4dd6834fcf23a3e0aeccdddc1d7e7508a62b6c9688a2f2334c13217"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -210,7 +210,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b19c11944418fab5f28bc92d98819ae435bb737942c47bd9c16767e198332f4a"
+      "sha256": "658bde2a65526cb54a0430fbb3196985406a7d1ec52dfa62d6139d57d642b795"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9f05e033d550b495100dcf04b9777d419410aaf427112dcb9b4d796718c22aae"
+      "sha256": "b0e19dc432ea78a9d0167d19120409889568d17ddde9b4f982ec1fbaeacfe739"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -226,7 +226,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "6232355a54bbebe886fbca6a9face00edb712fe3942c7e7964631faeaca99fb8"
+      "sha256": "e5b59b35f60b980de5c59e74867cff182d4a279b7a248e4ad7cfb66b065b00d3"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -234,7 +234,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "6b6368122a19a474e763900980f08848d05c3535b3ca559db5a35b0d736a3666"
+      "sha256": "8a5edc39601bb27115eb3ab7eeb6257454b13c2c5282ef54060820eac5dfbc27"
     },
     {
       "path": "visual/index.en.html",
@@ -258,7 +258,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "a62d95352380c83c9b689cb206535935eafcd2f6c9c7e86a666222e8b0a53041"
+      "sha256": "06d558709d08d5cf63bb13935319d9cd0093fcfc05ed667558a1401e14f3c08f"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -266,7 +266,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "61cf4340b4e3cae243d7da4d0f3f2a9073b26f228e0f32d6423f7061f985a28f"
+      "sha256": "0f60e8b97bccf45a46264991e01021bc2ede040c5def4fe76c6371a888ca72dd"
     },
     {
       "path": "assets/figures/ecosystem-map.png",
@@ -342,14 +342,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "4f7f373a6b5ac42a7549ab14140419351478f04c2ff8ed2b11fc8ee0657d3261"
+      "sha256": "1c13c2b3992706a2aa3402af20f2827d5dc30e0c4f7dddc213a83fe5c4c1d6bc"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "b49b54548412f9d56f23c18877318efacf7cf2d60f50f30e8448a726f969d1bc"
+      "sha256": "f86856ee9e43f98fae2f84aa99c584856f6bf534828692d6b087f71d40fa2676"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -442,6 +442,16 @@
       "sha256": "2d124acc5fd3a4bcdbff366f69a068d6a83e34e8e27449480ea741321d77c0dd"
     },
     {
+      "path": "assets/media/cover.png",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "5e0a3af92209385e9b26f42f7a02a46a877f47351867f8cefa20fa362bd40399",
+      "title_zh": "京张交接线 · 画廊封面",
+      "title_en": "Jing-Zhang Handover Line · gallery cover",
+      "description_zh": "程序化绘制的画廊封面：标识、方案判据、以及取自 site_boundary/key_areas/roads 的真实走廊轮廓。本图只使用 OFL 字体（Noto Sans CJK SC / Noto Sans），不加载任何专有字体，也不含生成式图像素材。",
+      "description_en": "Programmatically drawn gallery cover: the mark, the scheme's criterion, and the real corridor outline taken from site_boundary/key_areas/roads. This image uses only OFL fonts (Noto Sans CJK SC / Noto Sans), loads no proprietary font, and contains no generative image material."
+    },
+    {
       "path": "assets/media/audio-guide.md",
       "role": "transcript",
       "required": false,
@@ -517,7 +527,8 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "low",
+    "data_confidence": "mixed_provisional_and_conceptual",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.png"
 }

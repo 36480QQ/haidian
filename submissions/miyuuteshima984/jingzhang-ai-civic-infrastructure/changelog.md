@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v0.15.s — AI SIDECAR CITY / AI 侧挂城市
+
+- 将 v0.14.s 的三条 invariant civic routes 升级为“普通城市主机 + 可逆 AI sidecar”：TEST POCKET、CARE PORCH、ARRIVAL SIDECAR。
+- 在 `buildings.geojson`、`public_space.geojson` 和 `roads.geojson` 中为 9 个宿主 feature 建立 sidecar / route / AI OFF-ON 机器可读关系；不修改 Polygon 或 LineString 几何。
+- 删除重点区域正文中遗留的 3.5m、2.0m、1.8m、400m、多层甲板、通廊净宽等无正式依据的伪工程精度；大钟寺继续 `REAL LEVEL DATA REQUIRED`。
+- 新增 `ai_sidecar_type_count=3`、`ai_sidecar_host_feature_count=9`、`ai_off_route_preservation_ratio=1.0`、`new_ai_land_use_code_count=0` 等设计事实指标。
+- 重建 5 组中英 canonical PNG、双语 A3/A0、visual 首页；AI OFF/ON 在同一图中对照，普通路线位置保持不变。
+- 清理 v0.14.s review 反馈：visual 图片补齐 alt；HTML 保持可读格式；report section markers 后处理为真实注释；旧 v0.13.g section refs 从 evidence matrices 移除。
+
 ## v0.13 - 2026-08-15
 
 - **SPATIAL CONTRACTS AS BUILT TYPOLOGIES (v0.13.g)**: Formally integrated the Dual-Track Spatial Contracts into high-density architectural typologies and physical clearances across the three key areas:

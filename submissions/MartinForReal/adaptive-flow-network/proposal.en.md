@@ -14,6 +14,17 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > **In one sentence**: invert the severance left by the Jing-Zhang railway into a conduit, generate a backbone phase and a capillary phase from one adaptive-flow equation, and benchmark against the full proximity-graph hierarchy. All spatial suggestions are conceptual, for professional teams to develop further.
 
+## Executive summary
+
+| Item | Content |
+|---|---|
+| Problem | The railway's withdrawal leaves a linear void: stitched north-south by the corridor, severed east-west by it. |
+| Spatial strategy | One equation, two phases — a γ=1.35 backbone carries north-south continuity, a γ=0.72 capillary layer carries east-west stitching. |
+| Key areas | AI Origin Community as source, the heritage-park spine as the through-line, Dazhongsi as the east-west stitching knot. |
+| First pilots | Five reversible pilots, each with a named lead, a stop threshold and a restoration plan. |
+| Risk boundary | The boundary is provisional and the corridor control plan has only passed technical review. No FAR, height, demolition-retention, redline or engineering conclusion is stated. About one third of the network moves with the load assumption. |
+| Decisions needed | Official boundary and key-area polygons, real travel and scenario load data, and confirmation of the first pilots' sites and lead bodies. |
+
 ## Design basis and source inventory
 
 The prequalification announcement is the primary basis; the provisional boundaries, key areas, enums, ranges and source list under `brief/site-package/` are the machine-readable basis [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [source:AGENT-TASKBOOK]. Source usability follows the public registry [source:SOURCE-REGISTRY]. To be explicit first: no official boundary file exists at this stage; the submitted `SITE_BOUNDARY` and `KEY_AREA` are provisional rough extents [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001], used only for generation and display, and must be fully recomputed once official geometry is released.
@@ -57,6 +68,19 @@ A single network is not evidence. γ is swept and benchmarked against the **Tous
 
 ![Metrics and benchmark comparison](assets/figures/metrics-evidence.png)
 
+### Load-scenario sensitivity: how much of this network is an artefact of the draw
+
+Random sink scenarios are not a demand model. A result that holds only under random load says little about the site. The identical pipeline is therefore re-run under three **interpretable** load models — commute (demand drains to the two wings), event day (demand concentrates on the corridor), and a steady uniform control. Same solver, same thresholds, same connectivity step; only the load changes.
+
+| Load scenario | Nodes | Edges | Loops | Loop L/N | Jaccard vs shipped |
+|---|---|---|---|---|---|
+| 7 random sink sets (as shipped) | 257 | 365 | 109 | 0.424 | 1.000 |
+| Commute: demand drains to employment in both wings | 292 | 382 | 91 | 0.312 | 0.679 |
+| Event day: demand concentrates on the corridor spine | 236 | 372 | 137 | 0.581 | 0.698 |
+| Steady state: uniform load across all nodes | 278 | 377 | 100 | 0.360 | 0.686 |
+
+**Two findings, one of them against this proposal.** First, the lowest Jaccard across the four load models is 0.6787: roughly two thirds of the edges are selected under any load assumption, and that share can be treated as robust to the demand model. Node count moves between 236 and 292, independent loops between 91 and 137; the remaining third genuinely is an artefact of the load setting and must be recomputed against real travel and scenario data. Second, **the steady-load control does not collapse the loops into a tree**: uniform load still leaves 100 independent loops against 109 under random load — a far smaller difference than the 91–137 range produced by changing the demand model at all. So in this implementation the loops are **not** primarily fluctuation-induced; they come from the conductance quantile thresholds in the connectivity step. Attributing them wholly to fluctuation-induced looping would overstate how much the theory supports this design, and that is corrected here [source:METHOD-LOOPS-CORSON-2010].
+
 ## Three-level scope framework
 
 The coordinated research area is about 43.6 km², the overall design area about 11.4 km², the key areas about 368.4 ha [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]. The submitted boundary recomputes to 11,412,825 m² (~11.41 km²), consistent with the announced magnitude [metric:site_area_sqm]. The three levels are three resolutions: flow direction and synergy at the coordinated level, the backbone phase at the overall level, the capillary phase at the key-area level. They are not a simple zoom but a change of question: the coordinated level asks where factors come from and go to, so it needs direction and synergy rather than parcel precision; the overall level asks how the spine connects and how the three areas attach, so it needs backbone topology; the key-area level asks how east and west are stitched and how daily walking forms a network, so it needs capillary density. The benefit is that when new data overturns one level, the other two need not be redone. All three share one weakness: no official boundary exists, so every area is a provisional recomputation that must be redone once official geometry is released [depth:risk_missing_data].
@@ -77,6 +101,20 @@ The coordinated level answers where flows come from and go to. Regionally the co
 | Zhongguancun's own history | Grew bottom-up from the 1980s 'Electronics Street' into a national science park [source:CASE-ZGC-HISTORY] |
 
 These cases are qualitative comparators only; their figures require separate verification and must not be transferred to this belt [source:CASE-ZGC-HISTORY][source:PROCESSED-FACT-PACK].
+
+### Regional collaboration interfaces
+
+Collaboration cannot be asserted as 'linkage'. The table names, per partner, the resource, the spatial interface (or states plainly that there is none), the cooperation scenario, a suggested responsible body, and a **verifiable output** — collaboration without a verifiable output is not collaboration.
+
+| Partner | Resource | Spatial interface | Cooperation scenario | Suggested responsible body | Verifiable output |
+|---|---|---|---|---|---|
+| AI Beiwei Community | 同带内相邻创新社区 | 主廊北段步行与骑行接口 | 联合开放测试季、场景卡互认 | 两社区运营方 + 属地街道 | 互认场景卡清单与年度联合复盘纪要 |
+| Future Science City | 北部研发协同 | 北清路方向的对外流向端点 | 研发中试场景外溢、人才双向驻留 | 园区管委会 + 高校技术转移机构 | 驻留工位使用台账、联合中试场景数 |
+| Huairou Science City | 大科学装置协同 | 非空间接口，以数据与议程协同为主 | 开放科学日与本带展陈联动 | 科学装置开放办公室 + 本带文化节点运营方 | 联合展陈期次与公众参与人次 |
+| Beijing E-Town | 智能制造与场景落地协同 | 非空间接口，以产业链与测试许可协同为主 | 本带出概念、经开区出产线的中试接力 | 两地产业服务机构 | 接力中试场景清单与转化记录 |
+| Beijing-Tianjin-Hebei | 区域尺度协同 | 非空间接口，以标准与传播协同为主 | 场景卡格式、停用与恢复规则跨区互认 | 区域协同事务机构 | 互认规则文本与采用方数量 |
+
+Only two of the five partners have a real spatial interface; the other three collaborate through data, standards and communication. Drawing a connector line for a collaboration that has no spatial interface is exactly what this proposal avoids. Every responsible body is a suggestion, not an agreed arrangement [source:SITE-HD-GOV-WORKREPORT].
 
 ## Overall design area: renewal at regulatory-plan urban design depth
 
@@ -169,7 +207,34 @@ The green framework is the corridor park plus pulse-point parks, green ratio 20.
 
 ## Renewal project list, policies and phasing
 
-Phasing follows the order of network formation: phase 1 completes the backbone and key-area pulse points, phase 2 densifies the capillary layer and stitches east-west, phase 3 keeps reserve capacity and iterates with scenario load [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation] [depth:renewal_project_list]. There is a methodological reason: networks formed *during growth* are more robust than networks optimised once afterwards, and the outcome does not depend on boundary conditions [source:METHOD-PHENOTYPES-RK-2019]. Built edges should carry a lower bound and not be freely pruned — that is how sunk cost enters the model. Policy suggestions are conceptual and constitute no investment, tenanting or approval arrangement.
+Phasing follows the order of network formation: phase 1 completes the backbone and key-area pulse points, phase 2 densifies the capillary layer and stitches east-west, phase 3 keeps reserve capacity and iterates with scenario load [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation] [depth:renewal_project_list]. Behind this order is a **hypothesis to be tested**, not a settled conclusion: the distribution-network literature proposes that networks formed during growth may be more robust than networks optimised once afterwards [source:METHOD-GROWTH-RK-2016]. That result comes from physical models of vascular and distribution networks, is registered as background_only, and **cannot establish local transport or operational performance**. It informs the phasing order here but is not used as evidence for any spatial conclusion, and must be checked against local measurement. Built edges should carry a lower bound and not be freely pruned — that is how sunk cost enters the model. Policy suggestions are conceptual and constitute no investment, tenanting or approval arrangement.
+
+### First reversible pilots
+
+Phasing that states order without stating responsibility is not an implementation path. The pilots below are all **reversible**: each names its lead and collaborating bodies, prerequisite data, cost class (class only — no amount is invented here), success indicator, **stop threshold** and restoration plan. Any pilot reaching its stop threshold exits and is restored.
+
+| ID | Pilot | Space type | Lead and collaborators | Prerequisite data | Cost class | Success indicator | Stop threshold | Restoration |
+|---|---|---|---|---|---|---|---|---|
+| P-01 | Corridor guide, first segment | 线性开放空间 / 主廊北段 | 遗址公园运营方牵头；街道、志愿者团队协作 | 公开史料、现状步道中线、无障碍坡度实测 | 标识与语音层类（无土建） | 月均使用人次、投诉数、志愿讲解留存率 | 任一月投诉数高于基线或志愿讲解留存率下降即停 | 撤除语音层，恢复纸质与铸牌导览 |
+| P-02 | Pulse-point accessible transfer | 重点区脉点广场 | 属地街道牵头；接驳调度方、残障者代表协作 | 现状高差与坡道实测、既有接驳线位 | 小型场地改造类（不含道路工程） | 呼叫响应时长、成功接驳率、使用者满意度 | 响应时长超出人工基线即停 | 回到人工呼叫响应，响应时限承诺不变 |
+| P-03 | East-west stitching cycle trial | 毛细横向连接一段 | 慢行系统养护单位牵头；交通管理部门协作 | 断面流量计数、现状骑行道连续性 | 标线与指示类（不含红线调整） | 断面流量、绕行距离下降幅度、事故记录 | 出现任一事故或绕行距离未下降即停 | 恢复固定指示，取消动态引导 |
+| P-04 | Adaptive night lighting pilot | 主廊一段与相邻脉点 | 街道夜间安全值班岗牵头；照明养护方协作 | 现状照度实测、夜间在场计数（不识别个人） | 照明控制类（不新增灯杆） | 照度达标率、夜间步行量、居民反馈 | 照度低于常亮基线或居民反馈转负即停 | 全线回到常亮基线照度 |
+| P-05 | Community co-creation desk | 人才社区公共用房 | 社区规划师牵头；居民议事会、属地街道协作 | 自愿提交的公开意见、现状公共用房台账 | 运营组织类（不含房屋改造） | 提案数、议事会到会率、落实提案比例 | 居民议事会多数反对即停 | 议题回到线下议事会决定 |
+
+The bodies named above are **suggested** responsibilities: concept proposals for a professional team and the relevant parties to take further. They are not agreed arrangements and not a government determination. Cost is a class only; formal estimation requires tenure, utility and engineering conditions that are not available here [depth:renewal_project_list].
+
+### Long-term operating governance
+
+A scenario that can be stopped still needs someone accountable for what follows. These six close the operating loop:
+
+| ID | Stage | Rule |
+|---|---|---|
+| G-1 | Scenario admission | Reviewed by the testing-block committee; the non-AI equivalent path must be demonstrated first |
+| G-2 | Public appeal | Any resident, user or merchant may file; each is logged in a public ledger and answered |
+| G-3 | Safety re-check | Scenarios touching movement, evacuation or personal safety continue only after a separate emergency-authority review |
+| G-4 | Data handling | Only the minimum data registered on the scenario card is retained; no identification; no dependence on non-public data |
+| G-5 | Annual review | The scenario list, stop records and indicator outcomes are published yearly; scenarios below target exit by default |
+| G-6 | Exit responsibility | The lead body owns restoration; the restoration plan is filed with the pilot itself, so stopping without restoring is not permitted |
 
 ## Overall concept, naming system and agent taskbook response
 
@@ -186,6 +251,19 @@ Phasing follows the order of network formation: phase 1 completes the backbone a
 ## Metrics, area recomputation and compliance matrix
 
 All areas are recomputed from the submitted GeoJSON in EPSG:4548 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]. Floor-area ratio is unknown: official controls are absent and no conclusion is drawn [metric:floor_area_ratio] [depth:metrics_recalculation]. Coverage of announcement tasks 1.3/1.4/1.5 and agent.1–agent.6 is in `compliance_matrix.json`, mandatory standards in `standard_matrix.json`, design-depth items in `design_depth_matrix.json`; the prose does not repeat the machine index.
+
+### Chinese-English substantive equivalence check
+
+The automated bilingual gate checks file pairing, not whether the claims are equivalent. Item-by-item self-check:
+
+| Item | Finding |
+|---|---|
+| Core conclusions | Two-phase backbone/capillary, the three key-area roles, and Delaunay's remaining advantage on failure resilience — sentence-for-sentence in both languages |
+| Metric values | All injected from one metrics.json, so the two languages cannot disagree |
+| Evidence references | The [source:]/[metric:]/[depth:]/[standard:]/[data:] tags correspond one-to-one |
+| Figure placement | The five figures sit at the same positions in the same order; only the .en suffix differs |
+| Disclaimers | Provisional boundary, control plan only technically reviewed, and concept-proposal status all appear in both languages |
+| Known non-equivalence | The English is longer because Chinese planning terms expand into explanatory English; no claim is added or removed |
 
 ## References
 

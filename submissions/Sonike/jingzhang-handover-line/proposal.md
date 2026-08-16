@@ -48,7 +48,9 @@ English brief — **One test decides everything here: for any AI service on this
 
 生成方法是确定性的：EPSG:4326负责交换，EPSG:4548负责面积和长度；用地由场地边界拓扑切分，绿地、公共空间、建筑类型单元和线路均由同一空间模型导出，指标不从图面人工抄录。资料缺口诊断见 [depth:existing_conditions_diagnosis]，缺口登记见 assumptions.json，专业覆盖见 standard_matrix.json 与 design_depth_matrix.json。图形、版式、符号和文字为本方案原创程序化生成；六个国际案例只转述公开网页机制，不复用照片、地图、商标或他人图表。Sonike提交，Codex（GPT-5）负责本轮审计、数据与确定性制图，用户操作的Claude Opus 5参与此前编辑轮次；具体披露与版本见agent.json、copyright_statement.md和changelog.md，人类保留最终判断。
 
-![京张交接线总体概念与证据总览图](assets/figures/site-overview.png)
+总平面图内此前只画了边界、三区与主轴，框内约 75% 是底色。现补入**四处朝圣地标**——交接钟、公开交接台、百年值班簿、零号接管亭——并在图内左侧空白带列出各自的荣誉角色。**这四处是任务书点名的内容，此前在评审直送的五张图件里一处都没有出现过。**
+
+![京张交接线总体概念图：三座交接场、四处朝圣地标与各自的荣誉角色，临时边界](assets/figures/site-overview.png)
 
 ### 合规基线：先分清法定下限，再说本方案自设的标准
 
@@ -82,7 +84,9 @@ English brief — **One test decides everything here: for any AI service on this
 
 总体设计层形成“一条交接线、三座交接场、八条东西缝合支线、二十个更新类型单元”。交接线长度约9,499.778米 [metric:handover_spine_length_m]，八条缝合支线 [metric:cross_link_count] 只表达步行、骑行与公交换乘的概念性连接意图，不表达道路红线、桥隧或工程可行性。重点区层分别细化验证、开源和城市服务的交接协议；临时边界替换后，空间网络会按同一算法裁切和复算，而不是人为拉伸旧图。
 
-![三层范围、用地分区与工作框架图](assets/figures/land-use-structure.png)
+图内左侧空白带补入**用地构成堆叠柱**：七类用地由 `land_use.geojson` 的 `area_sqm_declared` 逐图斑相加，合计 11.413 km² 与场地面积一致，其中 1401 连续公园绿地占 19.8%——与 [metric:green_ratio] 的 19.84% 相互印证。**面积不只写在指标表里，也画在它对应的那张图上。**
+
+![三层范围、用地分区与用地构成：七类用地的面积与占比逐条列出，合计与场地面积一致](assets/figures/land-use-structure.png)
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -641,7 +645,9 @@ English brief — **One test decides everything here: for any AI service on this
 
 compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；standard_matrix.json覆盖六项标准；design_depth_matrix.json覆盖十五项专业深度。确定性、空间、视觉和专业检查共同验证机器可读包，人工评审仍拥有最终判断。建筑强度与高度保持unknown，是合规结果而非遗漏。整个矩阵由 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 和 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 统领。
 
-![面积比例、场景数量与证据链复算面板](assets/figures/metrics-evidence.png)
+**规则检查现在以矩阵示于图面：每一格是一次检查。** 上排十二格是十二条交接账的基线，下面七行是七条协议规则各自的缺陷注入，横向十二个场景——12 + 84 = **96 格**。**红格不是失败，是「这里被挡下了」**：84 条注入全部被拦截，漏检 0，schema 错误 0。把它画出来而不只写成数字，是因为「规则真的会拦住东西」这件事只有逐格摆开才可核对 [data:visual/assets/governance/rule-check-report.json]。
+
+![可复算指标、测量协议、规则检查矩阵（12 基线 + 84 注入 = 96 格，注入全部被拦截）与五步证据链](assets/figures/metrics-evidence.png)
 
 ## 风险、版权与合规说明
 
@@ -661,7 +667,7 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 隐私边界采用数据最小化、自愿参与、目的限定、可撤回、限时保存和人工申诉；不得使用秘密地图、非公开表格、未经授权个人数据、强制人脸识别或无法人工复核的权益决定。公平性以“无智能手机、不会中文、残障、老人和选择不用AI的人仍能获得等价基础服务”为底线。**其中只有涉及医疗健康、社会保障、金融业务、生活缴费等事项的公共服务场所，其人工办理下限由 [source:BARRIER-FREE-ENVIRONMENT-LAW] 第三十九条设定**；[source:ELDERLY-SMART-TECH-PLAN] 是政策要求而非法律义务。**把等价服务推广到全部十二个场景，以及“可停用、可申诉”两项，均为本方案自设标准。**技术失败时先保证照明、通行、求助和公共服务，再处理模型恢复；停止与投诉入口的配置对应 [source:GENERATIVE-AI-INTERIM-MEASURES] 第十四条与第十五条。
 
-版权声明见 report/copyright_statement.md。本包图形、Logo方向、地图符号、排版、文字、几何与PDF均为本次原创或基于仓库清权数据程序化生成；外部案例只作文字转述，未复制图片、地图、商标或受保护版式；本包涉及三款需要单独说明义务的第三方字体：四套 PDF 子集嵌入 OFL-1.1 授权、明确允许嵌入与再分发的 Noto Serif SC；26 张栅格图件（24 张 PNG 与 2 张 JPEG）的**中文**由 macOS 系统字体 STHeiti、**拉丁文字与数字**由 macOS 系统字体 Helvetica，双双在本机渲染阶段栅格化为像素——包内不含任何字体文件，故均不构成再分发。三者的权利依据与独立核验命令逐行见下表；**图纸 PDF 中的拉丁文字属于第四种情形**（按 PDF 规范的基础十四款字体名引用，全程不涉及任何字体文件），与图件里那款同名字体不是一回事，故另列一行。方案是开放共创的概念建议，不替代规划、建筑、交通、景观、市政、消防、文保、法律、隐私与工程专业服务，也不代表政府批准、投资、采购、招商或实施承诺。
+版权声明见 report/copyright_statement.md。本包图形、Logo方向、地图符号、排版、文字、几何与PDF均为本次原创或基于仓库清权数据程序化生成；外部案例只作文字转述，未复制图片、地图、商标或受保护版式；本包涉及三款需要单独说明义务的第三方字体：四套 PDF 子集嵌入 OFL-1.1 授权、明确允许嵌入与再分发的 Noto Serif SC；26 张栅格图件（24 张 PNG 与 2 张 JPEG）的**中文**由 macOS 系统字体 STHeiti、**拉丁文字与数字**由 macOS 系统字体 Helvetica，双双在本机渲染阶段栅格化为像素——包内不含任何字体文件，故均不构成再分发。三者的权利依据与独立核验命令逐行见下表；**图纸 PDF 中的拉丁文字属于第四种情形**（按 PDF 规范的基础十四款字体名引用，全程不涉及任何字体文件），与图件里那款同名字体不是一回事，故另列一行。**画廊封面 `assets/media/cover.png` 属于第五种情形，也是本包唯一一个字体权利链完整闭合的栅格产物**：它只加载 OFL-1.1 的 Noto Sans CJK SC 与 Noto Sans，不触碰任何 macOS 专有字体，因此不并入上面那 26 张的口径。方案是开放共创的概念建议，不替代规划、建筑、交通、景观、市政、消防、文保、法律、隐私与工程专业服务，也不代表政府批准、投资、采购、招商或实施承诺。
 
 ### 权利与构建溯源：逐项写明，且可用命令独立核验
 
@@ -673,6 +679,7 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 | 图纸中的中文文字 | Noto Serif SC Light，已子集嵌入四套 PDF [source:FONT-NOTO-SERIF-SC] | SIL Open Font License 1.1（读自字体 name 表 nameID 13/14），OFL 明确允许嵌入子集并随文档再分发 | 同上命令 → `CID TrueType / UniGB-UCS2-H / emb=yes`；字体名对象为 `<子集前缀>+NotoSerifSC` | 字体文件本身不随包提交（投稿目录不接受 `.ttf`），凭 sources.json 登记的 URL 与 sha256 可独立取得复核 |
 | 栅格图件中的中文文字（24 张 PNG 与 2 张 JPEG） | macOS 系统字体 STHeiti Medium.ttc，经 Pillow 栅格化 [source:FONT-STHEITI-RASTER] | 仅在本机渲染阶段使用，产物为字形像素；包内不含任何 `.ttc`/`.ttf`，故不构成字体再分发 | `find assets -name '*.tt[cf]'` → 无结果 | 在未装该字体的机器上重跑脚本会得到不同字形；这是与 PDF 中文字体不同的一类义务，故单列一行而不并入上一行 |
 | 栅格图件中的拉丁文字与数字（同上 26 张） | macOS 系统字体 Helvetica.ttc，经 Pillow 栅格化 [source:FONT-HELVETICA-RASTER] | 与上一行同性质：实际加载了随 macOS 分发的字体文件并用其字形生成像素，产物为像素而非字体程序；包内不含任何 `.ttc`/`.ttf`，故不构成再分发 | 同上命令 → 无结果 | **与第一行的 Helvetica 同名而不同性质**：PDF 内是按名引用、全程不碰字体文件，此处是真的加载了字体文件；字形来源无法从栅格产物反查，本行属渲染阶段自述，可独立核验的只有「包内无字体文件」这一半 |
+| 画廊封面中的全部文字（`assets/media/cover.png`，1 张 PNG） | OFL-1.1 的 Noto Sans CJK SC 与 Noto Sans [source:FONT-NOTO-COVER] | 字体文件随构建脚本存放在仓库之外，仅在本机渲染阶段读取字形生成像素；包内不含任何字体文件，故不构成再分发 | `find assets -name '*.tt[cfo]'` → 无结果；封面上无任何 STHeiti / Helvetica 字形 | **本包唯一不依赖专有字体的栅格产物**；OFL-1.1 本身也明确允许嵌入与再分发，故该图的字体权利链两端都是闭合的 |
 | 生成工具链 | Python 3.12.13(PSF)、reportlab 4.4.3(BSD)、Pillow 12.3.0(MIT-CMU)、shapely 2.1.2(BSD-3)、pyproj 3.7.2(MIT)、fontTools 4.60.1(MIT)、qpdf 12.3.2(Apache-2.0)、PyMuPDF 1.27.2.3(AGPL-3.0 或 Artifex 商业二选一)、Ghostscript 10.07.0(AGPL-3.0) [source:TOOLCHAIN-BUILD] | 版本与许可逐个读取各依赖自身的分发元数据或 `--version` 自述，非二手转述 | `python -c "import importlib.metadata as m; print(m.version('reportlab'), m.metadata('Pillow')['License-Expression'])"`、`gs --version` | PyMuPDF 与 Ghostscript 仅作**工具**在本机运行，未分发其代码、未链接进任何交付物；嵌入 PDF 的字体子集来自 OFL 字体，不来自任何 AGPL 组件 |
 | 几何与指标 | 九类 GeoJSON 与 metrics.json | 由本包程序化生成，公式与源文件逐项登记 | 按 metrics.json 的 `formula` 与 `source_file` 在 EPSG:4548 复算 | 生成脚本不在包内，故**只主张指标可独立复算，不主张逐字节可复现** |
 | 许可标识 | `COMMUNITY-DISPLAY-ONLY` | 是 `schema/proposal.schema.json` 的 `license` 枚举值之一（另两项为 CC-BY-4.0、CC-BY-SA-4.0） | `git show HEAD:schema/proposal.schema.json` 查该枚举 | 仓库未发布该标识的规范条款文本，故本包按下段自述其含义，不冒充标准许可证 |
@@ -683,15 +690,15 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 **构建溯源。** 自 v1.9 起**全包只有一个版本号**：26 张图件、38 页图纸与两个离线页面的页脚一律为 `JING-ZHANG HANDOVER LINE / PACKAGE v1.15`（图纸另附页码，如 `01-13`）。可核验口径是**页脚一致性**——页数与 `PACKAGE v1.15` 命中数逐套相等（13/13、13/13、6/6、6/6），旧版本号残留逐套为 0，`qpdf --check` 四套 PASS，`pdffonts` 四套均为 `<子集前缀>+NotoSerifSC / CID TrueType / UniGB-UCS2-H / emb=yes`。各版重建的具体路径与逐像素比对结果记在 `changelog.md`，不在此复述。
 
-**两项图件事实一并写在正文，不再只放在 `self_check.json`：** 其一，**包内 26 张图件全部由 PIL / reportlab 程序化绘制，无任何生成式图像素材**——v1.6.2–v1.6.3 曾有一张 gpt-image-2 概念表现图，自 v1.6.4 起其内容已整体替换为程序化绘制的《交接断面》（F/13）。其二，**三处重点区卡片按 `key_areas.geojson` 的真实轮廓、同一比例尺绘制**，附主轴与缝合支线、沿线定位条、指北针与比例尺；卡片上的复算面积按 km² 表示到 0.01，精确值留在 `metrics.json`——这些面积算在临时边界上，在图面最醒目处写到平方米小数位会造成与边界置信度不符的精度印象。
+**两项图件事实一并写在正文，不再只放在 `self_check.json`：** 其一，**`assets/figures/` 下 26 张图件与 `assets/media/cover.png` 全部由 PIL / reportlab 程序化绘制，无任何生成式图像素材**——v1.6.2–v1.6.3 曾有一张 gpt-image-2 概念表现图，自 v1.6.4 起其内容已整体替换为程序化绘制的《交接断面》（F/13）。其二，**三处重点区卡片按 `key_areas.geojson` 的真实轮廓、同一比例尺绘制**，附主轴与缝合支线、沿线定位条、指北针与比例尺；卡片上的复算面积按 km² 表示到 0.01，精确值留在 `metrics.json`——这些面积算在临时边界上，在图面最醒目处写到平方米小数位会造成与边界置信度不符的精度印象。
 
 判断某一成果是否仍然有效，仍应以 manifest 的 sha256 与 changelog 的逐版记录为准；一旦官方边界发布触发全量重算，全部成果将再次在同一次构建中统一。本轮的确定性渲染脚本（图件样式底座、图纸版式底座、几何管线、图件与图纸页生成、图件重印、图纸总装）**未随包提交**：仓库的 `validate_submission.py` 只允许投稿目录内出现数据与素材类文件，`.py` 不在允许扩展名内。因此本版仍如上一版一样，只主张**指标可独立复算**，不主张产物逐字节可复现；脚本可按任务书 `continuous_participation.issue_collaboration_zh` 的约定另开 Issue 附补丁提供。
 
 ## 参考资料
 
-全部二十四条来源在 sources.json 中逐条登记权威等级、采集方法、时空覆盖、许可状态与可用/不可用边界；凡涉及单位换算的写明原文表述与换算方法，凡属行政尺度背景事实的标记 `not_spatially_allocable=true`。
+全部二十五条来源在 sources.json 中逐条登记权威等级、采集方法、时空覆盖、许可状态与可用/不可用边界；凡涉及单位换算的写明原文表述与换算方法，凡属行政尺度背景事实的标记 `not_spatially_allocable=true`。
 
-**每条来源同时给出与中央登记表的对照，便于机器逐项核验。** 本表的 `usable_for_formal` 采用 `data/source_registry.json` 的同一套取值词汇。其中 **7 条**（临时范围与重点区几何、征集公告、智能体任务书、生成式AI暂行办法、无障碍环境建设法、国办发〔2020〕45号）确实在中央表内，其 `registry_source_id`、`registry_authority_level`、`registry_review_status` 与 `usable_for_formal` 四项由脚本从中央表**逐字复制**、未经改写，并标 `usable_for_formal_basis: central_registry_verbatim`；本包对这些来源的用法另受中央表 `allowed_uses` / `prohibited_uses` 约束，已逐条在 `usable_for` / `not_usable_for` 中收窄。其余 **17 条不在中央表内**，一律标 `registry_review_status: not_in_central_registry` 与 `usable_for_formal_basis: participant_self_assessed`——维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录，**但自评状态不等于中央批准，本包不据此主张任何中央审定结论**。字体、语音合成与构建工具链七条标 `not_a_factual_source`：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。
+**每条来源同时给出与中央登记表的对照，便于机器逐项核验。** 本表的 `usable_for_formal` 采用 `data/source_registry.json` 的同一套取值词汇。其中 **7 条**（临时范围与重点区几何、征集公告、智能体任务书、生成式AI暂行办法、无障碍环境建设法、国办发〔2020〕45号）确实在中央表内，其 `registry_source_id`、`registry_authority_level`、`registry_review_status` 与 `usable_for_formal` 四项由脚本从中央表**逐字复制**、未经改写，并标 `usable_for_formal_basis: central_registry_verbatim`；本包对这些来源的用法另受中央表 `allowed_uses` / `prohibited_uses` 约束，已逐条在 `usable_for` / `not_usable_for` 中收窄。其余 **18 条不在中央表内**，一律标 `registry_review_status: not_in_central_registry` 与 `usable_for_formal_basis: participant_self_assessed`——维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录，**但自评状态不等于中央批准，本包不据此主张任何中央审定结论**。字体、语音合成与构建工具链八条标 `not_a_factual_source`：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。
 
 ### 一、任务依据
 
