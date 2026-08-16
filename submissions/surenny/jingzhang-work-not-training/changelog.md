@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v0.2 - 2026-08-16
+
+- Re-rendered the English identity and evidence boards with CJK-capable fallback or English-only labels, removing tofu glyphs.
+- Fitted long English figure titles to explicit right-side safety margins and regenerated the English A3/A0 outputs.
+
 ## v0.1 - 2026-08-15
 
 - Built the distinct SUR-27 concept “京张不跟班 / JINGZHANG WORK, NOT TRAINING” on latest main.
