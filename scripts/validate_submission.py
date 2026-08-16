@@ -2273,6 +2273,105 @@ def validate_proposal_evidence_references(
                 report.add_error(f"{proposal_dir}/proposal.md: missing design depth reference [depth:{item_id}]")
 
 
+def report_identical_bilingual_artifacts(
+    report: ValidationReport,
+    repo_root: Path,
+    proposal_dir: str,
+    manifest_items: dict[str, dict],
+) -> None:
+    """Hint at translated files that are byte-identical to their primary file.
+
+    Identical bytes are a signal, not a verdict: a figure without text or a
+    language-independent PDF may legitimately be shared by both versions. The
+    package declares that intent with `language: "neutral"` instead of a
+    translation contract, so only entries that actually claim a translation are
+    inspected, neutral entries are skipped, and the result is always a
+    non-blocking warning that leaves historical packages passing unchanged.
+
+    The advisory reads package files, so it must not widen the path boundary
+    that `validate_manifest_file()` enforces. `validate_manifest_file()` reports
+    an unsafe manifest path and keeps validating, so a raw entry can still reach
+    this function; every path is therefore re-normalized here and any entry that
+    escapes the package or crosses a symbolic link is skipped instead of read.
+    """
+    base = repo_root / proposal_dir
+
+    def contained_file(raw_path: str) -> Path | None:
+        """Return the package-relative file for a manifest path, or None."""
+        try:
+            safe_path = normalize_changed_path(raw_path)
+        except (ValueError, TypeError):
+            return None
+        if first_symbolic_link(base, safe_path) is not None:
+            return None
+        candidate = base / safe_path
+        if not candidate.is_file():
+            return None
+        try:
+            candidate.resolve().relative_to(base.resolve())
+        except (OSError, ValueError):
+            return None
+        return candidate
+
+    digests: dict[str, str | None] = {}
+
+    def declared_digest(path: str) -> str | None:
+        declared = manifest_items.get(path, {}).get("sha256")
+        if isinstance(declared, str) and declared.strip():
+            return declared.strip().lower()
+        return None
+
+    def digest_for(path: str, resolved: Path) -> str | None:
+        # Declared digests are pending *Git blob* digests (see git_blob_sha256),
+        # while hashing here reads worktree bytes; the two differ whenever the
+        # worktree keeps CRLF line endings. Never mix the two sources in one
+        # comparison - reuse declared digests only when both sides declare one.
+        if path not in digests:
+            try:
+                digests[path] = hashlib.sha256(resolved.read_bytes()).hexdigest()
+            except OSError:
+                digests[path] = None
+        return digests[path]
+
+    for path in sorted(manifest_items):
+        item = manifest_items[path]
+        language = item.get("language")
+        if language == "neutral":
+            continue
+        primary_path = item.get("translation_of")
+        if not isinstance(primary_path, str) or not primary_path:
+            localized = primary_path_from_localized(path)
+            if localized is None or language != localized[1]:
+                continue
+            primary_path = localized[0]
+        if primary_path == path:
+            continue
+        primary_item = manifest_items.get(primary_path)
+        if primary_item is not None and primary_item.get("language") == "neutral":
+            continue
+        translated_file = contained_file(path)
+        primary_file = contained_file(primary_path)
+        if translated_file is None or primary_file is None:
+            continue
+        translated_declared = declared_digest(path)
+        primary_declared = declared_digest(primary_path)
+        if translated_declared is not None and primary_declared is not None:
+            translated_digest = translated_declared
+            primary_digest: str | None = primary_declared
+        else:
+            translated_digest = digest_for(path, translated_file)
+            primary_digest = digest_for(primary_path, primary_file)
+        if translated_digest is None or translated_digest != primary_digest:
+            continue
+        report.add_warning(
+            f"{proposal_dir}/{path}: byte-identical to `{primary_path}`; if the translation is "
+            "still missing, replace it with a rendering in the declared language, and if the file "
+            "carries no language-specific content, declare language=neutral once and share it "
+            "between both versions (see docs/formal-submission-guide.md); this notice does not "
+            "block review"
+        )
+
+
 def validate_bilingual_display(
     report: ValidationReport,
     repo_root: Path,
@@ -2421,6 +2520,8 @@ def validate_bilingual_display(
                 report_bilingual_problem(
                     f"{proposal_dir}/{translation_file}: front matter should set translation_of=proposal.md"
                 )
+
+    report_identical_bilingual_artifacts(report, repo_root, proposal_dir, manifest_items)
 
 
 def validate_ai_package_dir(
