@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.833,
+ "overall_ratio": 0.831,
  "floor": 0.75,
  "sections": [
   {
@@ -27,15 +27,15 @@
   {
    "section": "Three-Level Scope Framework",
    "zh_chars": 826,
-   "en_words": 753,
-   "ratio": 1.163,
+   "en_words": 735,
+   "ratio": 1.135,
    "pass": true
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
    "zh_chars": 5555,
-   "en_words": 3775,
-   "ratio": 0.867,
+   "en_words": 3711,
+   "ratio": 0.852,
    "pass": true
   },
   {
@@ -68,9 +68,9 @@
   },
   {
    "section": "Transport, Rail, Municipal Infrastructure, and Public Services",
-   "zh_chars": 1451,
-   "en_words": 961,
-   "ratio": 0.845,
+   "zh_chars": 1580,
+   "en_words": 1051,
+   "ratio": 0.848,
    "pass": true
   },
   {
@@ -97,8 +97,8 @@
   {
    "section": "The instrument turned on itself",
    "zh_chars": 8736,
-   "en_words": 5628,
-   "ratio": 0.822,
+   "en_words": 5608,
+   "ratio": 0.819,
    "pass": true
   },
   {
