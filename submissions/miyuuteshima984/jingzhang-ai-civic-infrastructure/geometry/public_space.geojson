@@ -25,7 +25,19 @@
         "ai_off_baseline": "fixed wayfinding and human help remain the baseline",
         "ai_on_delta": "dynamic translation/information may supplement but not replace the baseline",
         "reversibility": "remove_sidecar_without_relocating_ordinary_route",
-        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation",
+        "sidecar_lifecycle": [
+          "base_city",
+          "attach_optional",
+          "operate_reviewable",
+          "clean_exit_restore"
+        ],
+        "ordinary_restore_use": "ordinary public arrival/waiting interface with fixed wayfinding",
+        "clean_exit_required": true,
+        "clean_exit_mode": "remove dynamic layer; retain fixed wayfinding, staffed help and ordinary waiting subject to real station data",
+        "field_check_required": true,
+        "host_geometry_changes_for_sidecar": false,
+        "lifecycle_reality_boundary": "conceptual spatial lifecycle; real installation/removal method, ownership, fire safety, utilities and permits require project-stage verification"
       },
       "geometry": {
         "type": "Polygon",
@@ -161,7 +173,19 @@
         "ai_off_baseline": "community commons and human help remain account-free",
         "ai_on_delta": "opt-in navigation/care prompts may attach to a staffed interface",
         "reversibility": "remove_sidecar_without_relocating_ordinary_route",
-        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation",
+        "sidecar_lifecycle": [
+          "base_city",
+          "attach_optional",
+          "operate_reviewable",
+          "clean_exit_restore"
+        ],
+        "ordinary_restore_use": "ordinary civic commons, seating and human help interface",
+        "clean_exit_required": true,
+        "clean_exit_mode": "remove digital layer; retain ordinary commons and human help",
+        "field_check_required": true,
+        "host_geometry_changes_for_sidecar": false,
+        "lifecycle_reality_boundary": "conceptual spatial lifecycle; real installation/removal method, ownership, fire safety, utilities and permits require project-stage verification"
       },
       "geometry": {
         "type": "Polygon",
@@ -254,7 +278,19 @@
         "ai_off_baseline": "public exchange remains open with testing off",
         "ai_on_delta": "temporary controlled-test interface may occupy only a lateral pocket",
         "reversibility": "remove_sidecar_without_relocating_ordinary_route",
-        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation"
+        "evidence_boundary": "conceptual spatial relationship only; field, operating and engineering evidence required before implementation",
+        "sidecar_lifecycle": [
+          "base_city",
+          "attach_optional",
+          "operate_reviewable",
+          "clean_exit_restore"
+        ],
+        "ordinary_restore_use": "ordinary campus courtyard/public exchange",
+        "clean_exit_required": true,
+        "clean_exit_mode": "remove temporary test elements; restore courtyard/public exchange",
+        "field_check_required": true,
+        "host_geometry_changes_for_sidecar": false,
+        "lifecycle_reality_boundary": "conceptual spatial lifecycle; real installation/removal method, ownership, fire safety, utilities and permits require project-stage verification"
       },
       "geometry": {
         "type": "Polygon",

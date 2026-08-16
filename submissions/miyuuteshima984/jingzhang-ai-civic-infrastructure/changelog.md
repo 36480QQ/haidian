@@ -124,3 +124,11 @@
 - Replaced v0.13.g false engineering precision and S0–S3-first narration with route-first spatial contracts and explicit evidence boundaries.
 - Rebuilt all five canonical figure pairs, bilingual A3/A0 first pages, visual HTML and structured evidence mappings around three differentiated urban types.
 - Preserved v0.7 everyday journeys, six reversible AI urban-form interfaces and two implementation paths; restored geometry-derived fixed quantities to canonical recomputation values.
+
+## v0.16 - 2026-08-16
+
+- CLEAN EXIT CITY：把 v0.15.s 的可逆 sidecar 升级为 BASE CITY → ATTACH → OPERATE → CLEAN EXIT 四步空间生命周期。
+- 九个既有 sidecar host 写入 ordinary_restore_use / clean_exit_mode / field_check_required；三条 invariant routes 在完整生命周期内保持不变。
+- phasing 增加 clean-exit 交接规则，不改变任何 phase polygon 或锁定面积指标。
+- 重建 key-area lifecycle hero、metrics evidence、双语 visual 与 A3/A0，令“AI 如何进入并完整退出城市”直接进入 Review Agent 多模态首屏。
+- 不新增 AI 用地，不虚构站口、高差、桥隧、净宽、吞吐、FAR、高度或已确认运营主体。

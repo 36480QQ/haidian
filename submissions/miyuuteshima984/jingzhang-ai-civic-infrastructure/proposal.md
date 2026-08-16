@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以城市完整度作为百年京张AI创新带的空间审查方法：v0.15.s 将普通城市视为主机、AI视为可逆 sidecar；三条不绕行主路保持不变，测试、照护和到达增强只附着于九个既有建筑/公共空间宿主，不创造AI专用用地。"
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.15"
+iteration: "v0.16"
 ---
 
 # 京张城市完整度 / JING-ZHANG CITY COMPLETENESS
@@ -21,25 +21,27 @@ iteration: "v0.15"
 本方案为开放征集阶段的概念性城市设计。当前 `SITE_BOUNDARY` 与三处 `KEY_AREA` 采用仓库维护的 provisional rough geometry，仅用于方案生成、拓扑自检、相对关系、图面表达与包内复算，不构成法定红线、地块、权属、道路红线、控规或工程实施结论。[source:BOUNDARY-SOURCE] [source:ALLOWED-DESIGN-SPACE]
 
 
-<!-- V015-CORE-START -->
-## v0.15.s 核心判断｜AI SIDECAR CITY / AI 侧挂城市
+<!-- V016-CORE-START -->
+## v0.16.s 核心判断｜CLEAN EXIT CITY / 可退出的 AI 城市
 
-**普通城市是主机，AI 只能侧挂。** v0.14.s 已经证明三条 ordinary civic route 在 AI 关闭时仍然成立；v0.15.s 进一步把 AI 的实体落点写进既有建筑、公共空间与路线属性，而不是再创造一层“AI 专用城市”。[metric:invariant_civic_route_count] [metric:ai_sidecar_type_count]
+**AI 不只要能关闭，还必须能被城市完整地撤走。** v0.15.s 已经证明“普通城市是主机，AI 只能侧挂”；v0.16.s 把“可逆”从一句原则升级为空间生命周期：**BASE CITY → ATTACH → OPERATE → CLEAN EXIT**。[metric:sidecar_lifecycle_stage_count] [metric:clean_exit_host_count]
 
-**AI OFF = 完整城市；AI ON = 完整城市 + 可逆侧挂能力。** ROAD-009 / 010 / 011 的几何在 ON/OFF 两态保持不变，变化只发生在主路径侧边的测试、照护与到达接口。[metric:ai_off_route_preservation_ratio] [metric:new_ai_land_use_code_count]
+AI 进入城市时必须同时回答两个问题：它附着在哪里，以及拆掉以后这里恢复成什么普通城市用途。三条 `ROAD-009 / 010 / 011` 在四个生命周期阶段都保持相同 ordinary-city route；变化只发生在九个既有 host 的侧挂层。[metric:clean_exit_restore_use_coverage_ratio] [metric:ai_off_route_preservation_ratio]
 
-| 重点区 | 普通城市主机 | AI sidecar | 机器可读宿主 | 拆掉 sidecar 后 |
+| 重点区 | BASE CITY | ATTACH / OPERATE | CLEAN EXIT 后恢复 | 不变的公共承诺 |
 | --- | --- | --- | --- | --- |
-| 众智园 / `ROAD-009` | 研发首层—吃饭休息—公共绿脊—开放交流 | **TEST POCKET / 测试侧院**：受控测试、临时设备、可替换服务接口退到主路侧边 | `BLDG-012` + `BLDG-013` + `PUBLIC-006` | 工作、休息与公共交流仍沿同一路线完成 |
-| AI 原点 / `ROAD-010` | 居住—遮阴停留—人工帮助/共学—社区客厅 | **CARE PORCH / 照护门廊**：自愿导航、服务匹配、照护提示附着于公共首层与社区界面 | `BLDG-007` + `BLDG-009` + `PUBLIC-004` | 不登录、不授权数据仍可到达人、服务与公共生活 |
-| 大钟寺 / `ROAD-011` | 到达—固定导视—人工问询—普通等候/商业—京张公共界面 | **ARRIVAL SIDECAR / 到达侧带**：动态翻译、信息提示与客流辅助只做增强 | `BLDG-001` + `BLDG-002` + `PUBLIC-001` | 不用 App、动态信息失效时仍能识路、求助、等待和离开 |
+| 众智园 | 研发首层、吃饭休息、绿脊与开放交流 | `TEST POCKET` 只占侧院/服务边，承担受控测试与临时接口 | 测试撤出后回到普通院落、工作休息与公共交流，不迁移 `ROAD-009` | **TEST WITHOUT BLOCKING** |
+| AI 原点 | 住宅、人工帮助、共学、公共首层与社区客厅 | `CARE PORCH` 只增加自愿导航、匹配与照护提示 | 数字层撤出后人工服务、公共首层和社区生活继续成立，不迁移 `ROAD-010` | **CARE WITHOUT ACCOUNT** |
+| 大钟寺 | 固定导视、人工问询、普通等候/商业与京张公共界面 | `ARRIVAL SIDECAR` 只增加动态翻译、信息与客流辅助 | 动态层撤出后固定导视和人工服务继续成立，不迁移 `ROAD-011` | **ARRIVE WITHOUT APP** |
 
-九个宿主 feature 只新增语义属性，不改 Polygon；三条路线只新增 sidecar 关系，不改 LineString。因此 site、green、public-space、building-footprint 六项锁定面积指标不因本轮发生变化。[metric:ai_sidecar_host_feature_count] [metric:sidecar_host_public_space_count]
+九个 sidecar host 都新增 `ordinary_restore_use`、`clean_exit_mode` 与 `field_check_required`；三条 route 新增 `clean_exit_route_preserved=true`。这些都是关系与生命周期语义，不改变建筑、公共空间或道路几何，也不创造第八类 AI 用地。[metric:new_ai_land_use_code_count]
 
-大钟寺仍坚持 **REAL LEVEL DATA REQUIRED**：当前 sidecar 只是关系型到达界面，不虚构真实站口、高差、桥隧、通廊净宽、吞吐量或运营承诺。[data:geometry/key_areas.geojson#PROV-KEY-003]
+**CLEAN EXIT 不是“AI 关机”。** 关机只证明软件停止；clean exit 还要求临时设备、接口、标识与运营依赖能够撤出，宿主空间重新成为普通城市，并保留人工服务、固定导视、日常路径与公共使用权。真实拆除工艺、消防、市政、产权和设施处置仍须项目阶段确认，本案不虚构工程参数。
 
-![AI OFF 与 AI ON 使用同一座城市：三条主路不动，sidecar 只在侧边出现](assets/figures/key-areas.png)
-<!-- V015-CORE-END -->
+大钟寺继续坚持 **REAL LEVEL DATA REQUIRED**：真实站口、竖向高程、桥隧、客流能力、产权与运营主体未确认前，不把 CLEAN EXIT 画成虚构工程线位。[data:geometry/key_areas.geojson#PROV-KEY-003]
+
+![三处重点区从普通城市、AI侧挂到完整退出：主路径与普通城市用途保持连续](assets/figures/key-areas.png)
+<!-- V016-CORE-END -->
 
 ## 设计依据与资料清单
 
@@ -175,24 +177,20 @@ v0.10 以获得 86 分的 v0.7 **design-first** 结构为底座，只吸收会�
 五条设计响应完整记录于 `visual/assets/reality-constraint-register.json`。本轮固定 `mobility-bluegreen.png` 重建为不同类型的现实接口：普通缝合、下穿节点竖向连续性、绿廊人优先界面、站城到达与 official-data 重算触发器，不再用同一种蓝色虚线代表所有问题。
 <!-- V09-REALITY-END -->
 
-<!-- V015-SIDECAR-START -->
-### v0.15.s｜AI SIDECAR CITY：让 AI 有空间，但没有城市主权
+<!-- V016-LIFECYCLE-START -->
+### v0.16.s｜四步空间生命周期：BASE CITY → ATTACH → OPERATE → CLEAN EXIT
 
-v0.15.s 不新增第四条路线，也不创造“AI 专用用地”。它把 v0.7 的六类可逆 AI 城市形态原型重新归并成三个可读的 sidecar：**TEST POCKET、CARE PORCH、ARRIVAL SIDECAR**。普通城市空间是 host；AI 只改变侧向接口、公共首层关系和可替换服务节点。[metric:ai_sidecar_type_count] [metric:new_ai_land_use_code_count]
+这四步不是新的治理状态机，而是每一个 sidecar 都必须通过的**空间交接顺序**。`BASE CITY` 先确认普通城市可独立工作；`ATTACH` 只允许侧向、可识别、可拆除的新增层；`OPERATE` 要保留人工接管和普通路径；`CLEAN EXIT` 则必须把宿主交还给普通用途，并留下可复核的退出记录。[metric:sidecar_lifecycle_stage_count]
 
-| Sidecar | 对应可逆原型 | 宿主 feature | AI OFF | AI ON 的实体变化 | 删除测试 |
-| --- | --- | --- | --- | --- | --- |
-| TEST POCKET | 受控测试口袋 + 可替换服务节点 | `BLDG-012` / `BLDG-013` / `PUBLIC-006` | 工作、休息、绿脊、交流连续 | 侧院/服务边出现可关闭测试与临时设备接口 | 删除接口，不迁移 `ROAD-009` |
-| CARE PORCH | 人优先公共首层 + 无障碍/人工求助节点 | `BLDG-007` / `BLDG-009` / `PUBLIC-004` | 居住、人工帮助、共学、公共客厅连续 | 公共首层增加自愿导航/服务匹配提示 | 删除接口，不要求账号、不迁移 `ROAD-010` |
-| ARRIVAL SIDECAR | 连续站城到达界面 + 固定/人工基线 | `BLDG-001` / `BLDG-002` / `PUBLIC-001` | 固定导视、人工问询、等候/商业连续 | 侧带增加动态翻译与信息辅助 | 关闭动态层，不迁移 `ROAD-011` |
+| 生命周期 | 空间问题 | 众智园 | AI 原点 | 大钟寺 |
+| --- | --- | --- | --- | --- |
+| BASE CITY | 没有 AI 时这里是什么？ | 普通研发/工作院落 + 公共绿脊 | 住宅 + 人工服务 + 社区公共首层 | 固定导视 + 人工帮助 + 等候/商业 |
+| ATTACH | AI 从哪里进入且不占主路？ | 测试侧院 / 服务边 | 公共首层 / 照护门廊 | 到达侧带 / 信息界面 |
+| OPERATE | 运行时什么不能被 AI 接管？ | `ROAD-009` 与普通工作/休息链 | `ROAD-010`、人工帮助与无账号入口 | `ROAD-011`、固定导视与人工问询 |
+| CLEAN EXIT | 拆除后如何恢复普通城市？ | 撤设备与临时接口，恢复院落/公共交流 | 撤数字接口，保留人工服务和公共首层 | 撤动态层，保留固定导视、人工帮助与普通等候 |
 
-第六类“可回退空间版本链”成为三个 sidecar 的共同实施方法：**观察 → 小范围样段 → 公共/专业复核 → 合并或回退**。它不是软件状态机，而是对可拆构件、公共首层接口、测试边界和导视层级的物理版本管理。[metric:ai_sidecar_host_feature_count]
-
-#### 两条实施路径保持不变
-**路径 A｜低扰动可逆动作**：遮阴、座椅、固定导视、人工帮助界面、可拆测试边界、模块化服务节点，可进入现场调查—样段—复核—扩大/撤回的渐进流程。**路径 B｜正式项目依赖动作**：建筑规模、站城竖向、市政容量、道路工程、消防、文保、权属等，必须等待真实项目生成、专业设计与行政许可。[metric:implementation_path_count]
-
-责任仍只写到“拟议角色”级。大钟寺竖向连续性继续标记 **REAL LEVEL DATA REQUIRED**，不虚构桥隧、站口、多层甲板或工程通廊参数。
-<!-- V015-SIDECAR-END -->
+每个 host 的 `ordinary_restore_use` 都是定性空间用途，不声称现场已具备或已完成改造；每次真实 attach / clean exit 前后都需要现场核验。这样，“可逆”不再靠未来承诺，而是在设计时就预留了退出后的城市状态。[metric:clean_exit_restore_use_coverage_ratio]
+<!-- V016-LIFECYCLE-END -->
 
 ## 用地、建筑规模与拆改留方案
 

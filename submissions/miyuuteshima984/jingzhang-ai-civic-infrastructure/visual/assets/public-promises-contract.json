@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.5",
-  "variant": "v0.15.s",
-  "title_zh": "AI侧挂城市 / AI SIDECAR CITY",
-  "status": "concept_spatial_sidecar_with_evidence_boundaries",
-  "principle": "The ordinary city is the host. AI is only a reversible sidecar.",
+  "schema_version": "1.6",
+  "variant": "v0.16.s",
+  "title_zh": "可退出的AI城市 / CLEAN EXIT CITY",
+  "status": "concept_spatial_sidecar_with_clean_exit_lifecycle",
+  "principle": "AI must not only switch off; every sidecar must carry a spatial return state for the ordinary city.",
   "off_on_rule": "AI OFF is a complete city; AI ON is the same city plus lateral reversible capability. Ordinary route geometry does not change.",
   "contracts": [
     {
@@ -23,7 +23,20 @@
         "field survey of entrances/desire lines",
         "professional safety review for any real test interface"
       ],
-      "reality_boundary": "No lane width, speed, emergency-stop timing, bollard design or permit is claimed."
+      "reality_boundary": "No lane width, speed, emergency-stop timing, bollard design or permit is claimed.",
+      "lifecycle": [
+        "base_city",
+        "attach_optional",
+        "operate_reviewable",
+        "clean_exit_restore"
+      ],
+      "clean_exit_required": true,
+      "ordinary_restore_use": "ordinary campus courtyard, work/rest edge and public exchange",
+      "clean_exit_evidence": [
+        "before/after field check",
+        "host restore-use confirmation",
+        "unresolved project-stage constraints recorded"
+      ]
     },
     {
       "id": "ASC-02",
@@ -42,7 +55,20 @@
         "accessibility survey",
         "service capacity and operating-role confirmation"
       ],
-      "reality_boundary": "No service radius, accessibility dimension, staffing level or response-time performance is claimed."
+      "reality_boundary": "No service radius, accessibility dimension, staffing level or response-time performance is claimed.",
+      "lifecycle": [
+        "base_city",
+        "attach_optional",
+        "operate_reviewable",
+        "clean_exit_restore"
+      ],
+      "clean_exit_required": true,
+      "ordinary_restore_use": "account-free public ground floor, staffed human help and civic commons",
+      "clean_exit_evidence": [
+        "before/after field check",
+        "host restore-use confirmation",
+        "unresolved project-stage constraints recorded"
+      ]
     },
     {
       "id": "ASC-03",
@@ -61,7 +87,26 @@
         "verified station entrances and real level data",
         "passenger-flow, ownership and operating evidence before engineering design"
       ],
-      "reality_boundary": "PROV-KEY-003 has known absolute-location risk; no station entrance, bridge/tunnel, level, corridor width or throughput is claimed."
+      "reality_boundary": "PROV-KEY-003 has known absolute-location risk; no station entrance, bridge/tunnel, level, corridor width or throughput is claimed.",
+      "lifecycle": [
+        "base_city",
+        "attach_optional",
+        "operate_reviewable",
+        "clean_exit_restore"
+      ],
+      "clean_exit_required": true,
+      "ordinary_restore_use": "fixed wayfinding, staffed help and ordinary waiting/retail; real station levels remain required",
+      "clean_exit_evidence": [
+        "before/after field check",
+        "host restore-use confirmation",
+        "unresolved project-stage constraints recorded"
+      ]
     }
+  ],
+  "lifecycle": [
+    "base_city",
+    "attach_optional",
+    "operate_reviewable",
+    "clean_exit_restore"
   ]
 }
