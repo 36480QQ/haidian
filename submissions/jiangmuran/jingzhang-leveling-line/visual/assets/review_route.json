@@ -24,7 +24,7 @@
    "what_zh": "解析十二张场景卡的水准点、空间锚点与退出条件",
    "what_en": "Resolve every scenario card's benchmark, spatial anchor and exit condition",
    "exit_code": 0,
-   "seconds": 0.03,
+   "seconds": 0.02,
    "first_line": "check_cards.js: 12 cards, every benchmark and anchor resolves, every exit quantity is defined."
   },
   {
@@ -120,7 +120,7 @@
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.73,
+  "seconds_to_run_every_verifier": 0.72,
   "files_to_read": 9,
   "bytes_to_read": 962753,
   "units_to_read": 1677
