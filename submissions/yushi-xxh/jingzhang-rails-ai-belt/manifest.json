@@ -40,7 +40,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "ad1c3db42d4b1afce18aee81205a6a4d90ba84b283c21d78c459ebd7663f8707"
+      "sha256": "d2f73d6bfdf321f798ffe4cfa103e34355124791f22c504f3d8af811e8e73554"
     },
     {
       "path": "metrics.json",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c823156e52eb4a6fa1605058d24ff8e826e275c0d37744749e1baff4e2ca0682"
+      "sha256": "05e3331629ceb73c61dce657450b526b7fbd5751abe94020ffee2286d3ec5dd4"
     },
     {
       "path": "compliance_matrix.json",
@@ -115,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "8129886537f365dcd1a2e74557b438b9e310a5fa35857859bc4a6ba72776d9e6"
+      "sha256": "7daf1ca7783f413ec38aadd8195774ba5cc327f70810dda0b9c805519540f08a"
     },
     {
       "path": "drawings/a3-booklet.pdf",

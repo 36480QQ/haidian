@@ -81,7 +81,27 @@ The coordinated research area forms a "**one spine, three cores, two wings, cros
 - **Two wings**: Capital & IP Wing (Zhongguancun services; global factor allocation, IP and capital) — Scenario Wing (Xiaoyuehe; scenario enablement and vibrant AI city)
 - **Cross linkage**: east-west connectors via Qinghua East Rd–Chengfu Rd–Xueyuan Rd–Xizhimen Outer St, linking Zhongguancun to the west, Xiaoyuehe and the Future Science City direction to the east; north to Beiwai community and Shangdi, south to the Xizhimen hub
 
-Synergy loop (concept): **Origin Core generates → Innovation Cortex accelerates → Smart Bazaar monetizes → wings feed back**, forming an innovation closed loop; regional interfaces are reserved toward Beiwai, Future Science City, Huairou Science City, the economic development zone, and Jing-Jin-Ji [source:DATA-SRC-AGENT-TASKBOOK-20260518].
+Synergy loop (concept): **Origin Core generates → Innovation Cortex accelerates → Smart Bazaar monetizes → wings feed back**, forming an innovation closed loop.
+
+**Five functions × spatial carriers mapping matrix** (each taskbook function implemented explicitly [source:DATA-SRC-AGENT-TASKBOOK-20260518]):
+
+| Five functions | Spatial carrier | Project anchor | Concept metric |
+|---|---|---|---|
+| AI full-stack self-reliant innovation | Zhongzhiyuan (Cortex) | Model test field, computing center, AI governance lab | Test scenarios, computing nodes |
+| World-class AI ecosystem | AI Origin Community (Core) | Incubators, open-source gallery, founder apartments | Teams incubated, open-source projects |
+| AI+ scenario enablement paradigm | Xiaoyuehe Wing (Scenario Wing) | Scenario test beds, AI Spine Nodes | Scenario cards, pilots landed |
+| Intelligent AI vibrant city | AI Spine Corridor | 15-min living circles, slow-traffic links | Node coverage, connectivity rate |
+| AI governance global discourse | Zhongzhiyuan + Milestone Park | Governance lab, international events, honor system | White papers, annual events |
+
+### Regional Synergy and Global Network
+
+- **North**: link Beiwai community (international talent) and Shangdi-Zhongguancun Software Park; talent-enterprise corridor
+- **East**: interface with Future Science City (basic research) and Huairou Science City (large facilities); "basic research → industrial conversion" gateway
+- **South**: via Xizhimen hub to financial-street capital for full-lifecycle AI financing
+- **Jing-Jin-Ji**: scenario-open mutual recognition, computing coordination, interoperable data spaces (concept)
+- **Global**: open-source collaboration, global developer network, international AI innovation week (see operations)
+
+All regional mechanisms are concepts: joint scenario releases, talent outposts, computing scheduling protocols (concept).
 
 ### Future City Form
 
@@ -184,6 +204,14 @@ Ecosystem elements are organized along eight factors — "**land, space, industr
 
 Scenario-space-operation mapping follows "**open scenarios, data minimization, human reviewability, traceable accountability**" [standard:GENERATIVE-AI-INTERIM-MEASURES][standard:BARRIER-FREE-ENVIRONMENT-LAW]; standard scenarios reference the repository scenario library (AI+traffic walkability, AI cultural guide, AI health navigation, enterprise co-pilot, public-safety review, low-speed robot delivery) [agent.3].
 
+### AI Governance and Data-Space Mechanisms (concept)
+
+- **Three-tier data governance**: public data (open, compliant release), enterprise data (authorized, anonymized), personal data (minimized, localized, anonymized); collection/storage/use/destruction boundaries written into scenario operating contracts (concept)
+- **Scenario-open filing process**: application → safety assessment (privacy+ethics+public safety) → filing and disclosure → scoped trial → monitored operation (human sampling + data audit) → formal rollout or exit
+- **Human review committee** (concept): resident representatives, experts, enterprises, universities, government; quarterly reviews, complaint handling, expansion/termination decisions
+- **AI content labeling**: AI-generated content (guides, consultations, publicity) carries unified labels and provenance per generative-AI rules [standard:GENERATIVE-AI-INTERIM-MEASURES]
+- **Algorithm audit**: periodic audits and emergency human-takeover plans for high-impact scenarios (transport, safety, health)
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 ### Land Use Layout
@@ -236,6 +264,14 @@ The **AI Spine Corridor** is the backbone (~9.7 km concept green belt), connecti
 
 Supporting **AI Spine Node** public-space component library (shade pergolas, winter warm rooms, smart seating, drinking water, barrier-free facilities) on a 15-minute walk circle; landmarks and wayfinding require cleared designs, never over-entertainment.
 
+### Inclusive Design (all-age friendly)
+
+- **Age-friendly and barrier-free**: requirements of the Barrier-Free Environment Law across public space and AI scenarios [standard:BARRIER-FREE-ENVIRONMENT-LAW]; large-print/voice interactions at nodes
+- **Child-friendly**: safe school routes (slow traffic + crossing guards), play spaces, AI science corners
+- **New-economy workers**: rider/driver services at AI Spine Nodes (charging, water, rest, first aid)
+- **Low-cost innovation space**: founder apartments and shared workstations to control living costs for innovators
+- **Marginalized-group participation**: reserved seats for residents (incl. elderly) and persons with disabilities in scenario reviews and renewal participation
+
 ### Urban Character and Climate Adaptation
 
 Beijing has a temperate monsoon climate; design responds to both seasons: summer shade along the corridor (trees + pergolas), winter sunlight (deciduous trees + warm-room nodes); the north-south AI Spine Corridor organizes ventilation, mitigating heat islands; fifth-façade and rooftop PV integration [depth:blue_green_public_space][standard:MOHURD-URBAN-DESIGN-MEASURES].
@@ -262,6 +298,20 @@ Beijing has a temperate monsoon climate; design responds to both seasons: summer
 ### Implementation Policy Suggestions (concept)
 
 Mixed-use land with "industry + talent" conditions, scenario-open filing system, computing vouchers (concept), developer-community co-governance, and "assess-disclose-co-build" public participation procedures for renewal projects [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
+### Phase-0 Pilot Package (concept, 5 pilots)
+
+Five lightweight pilots to strengthen implementability (all concepts; periods, actors, and metrics are directional and require professional assessment):
+
+| # | Pilot | Location | Concept period | Suggested actors | Concept metrics | Exit/scale mechanism |
+|---|---|---|---|---|---|---|
+| 1 | AI Spine demonstration segment | Qinghua East Rd–Chengfu Rd, ~2 km | 6-12 months | Government + operator + community | Daily walkers, gaps closed, satisfaction | Scale to full line if targets met |
+| 2 | Origin Plaza open-source pop-ups | AI Origin Community | 3-month weekend program | Community + developer orgs | Events, participants, new OSS projects | Become monthly brand events |
+| 3 | Delivery robot pilot | Xiaoyuehe Wing ~1 km² | 6 months | Platforms + property + regulatory sandbox | Orders, incident rate, satisfaction | Expand zone if compliant |
+| 4 | AI cultural guide pilot | Dazhongsi–Qinghuayuan segment | 6 months | Cultural operator + universities | Usage, content review pass rate | Become permanent guide |
+| 5 | Test-bed first phase | Zhongzhiyuan, 1 scenario | 12 months | Test operator + enterprises | Applications, deployments, compliance rate | Annual scenario release mechanism |
+
+Pilot principles: **small scope, measurable, exitable, scalable**; none alter statutory planning or promise investment returns.
 
 ### Phasing
 
