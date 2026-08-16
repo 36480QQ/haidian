@@ -64,18 +64,17 @@
         "submissions/zachshi-ai/jingzhang-ai-civic-services/spatial.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/standard_matrix.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/claim-provenance.json",
-        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/co-mobility-contracts.json",
-        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/co-mobility-license.schema.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/conversion-pathways.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/governance-raci.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/guarantee-receipt.schema.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/guarantee-tabletop-evidence.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/honor-display-system.json",
-        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/license-tabletop-evidence.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/independent-verification-protocol.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/logo-specimen.svg",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/public-interest-audit.json",
-        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/robustness-simulation-evidence.json",
-        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/robustness-simulation.js",
-        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/run_license_tabletop.js",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/run_guarantee_tabletop.js",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/scenario-cards.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/service-guarantee-contracts.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/test-scenario-protocols.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/index.en.html",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/index.html"
@@ -83,7 +82,7 @@
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-ai-civic-services": "formal"
       },
-      "total_bytes": 2745931,
+      "total_bytes": 2777470,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -162,14 +161,14 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 23,
+        "known_metric_refs_required": 26,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 12,
           "standard": 2,
-          "depth": 3,
-          "data": 21,
+          "depth": 4,
+          "data": 23,
           "metric": 11
         }
       }

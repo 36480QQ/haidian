@@ -341,6 +341,70 @@
       ],
       "reason": "No authorized field baseline",
       "rationale": "待现场校准"
+    },
+    "guarantee_contract_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/service-guarantee-contracts.json"
+      ],
+      "formula": "count(contracts)",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "12个场景保障合同（三保一验机制）"
+    },
+    "guarantee_tabletop_case_count": {
+      "status": "known",
+      "value": 72,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/guarantee-tabletop-evidence.json"
+      ],
+      "formula": "12 scenarios x 6 branches",
+      "confidence": "high",
+      "assumptions": [
+        "Synthetic only"
+      ],
+      "rationale": "72个合成案例（48阻断/12保障/12升级）"
+    },
+    "verification_audit_item_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/independent-verification-protocol.json"
+      ],
+      "formula": "count(audit_items)",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "独立验证5项阈值"
+    },
+    "field_guarantee_fulfillment_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "",
+      "confidence": "unknown",
+      "assumptions": [
+        "No authorized baseline"
+      ],
+      "reason": "No authorized field baseline; cannot fill 0, 100% or estimate",
+      "rationale": "现场保障兑现率待试点"
+    },
+    "field_deadline_met_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "",
+      "confidence": "unknown",
+      "assumptions": [
+        "No authorized baseline"
+      ],
+      "reason": "No authorized field baseline",
+      "rationale": "现场时限达标率待试点"
     }
   }
 }

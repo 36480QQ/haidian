@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for civic-service urban design proposal generation, geometry derivation, and bilingual narrative authoring"
   },
-  "generated_at": "2026-08-11T10:45:19Z",
+  "generated_at": "2026-08-16T08:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b9dd5899f8fd4e21335899c5305b371b3394fc5b62df736fd1619478f6d4a8b4"
+      "sha256": "671ead2434b0a424abe067a5540d76fec74a1fce1b494a05028da35ce0333fc7"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "1f95109249f962a9a2f34bd06e84b60a75836bb0f6ab8ced0d9650b521901400"
+      "sha256": "1f6c200c2746a8671e100cf703e891aab34737e2708b047392c1e39745c581ee"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "efcb78c478cc319fbe63cbb1486043a4bd86b9910d6d3e8da399b6060a0b66e8"
+      "sha256": "ef477422417eac0a7472d909f70cdfa6df5f9039b6a8692a1bd9e524164e548d"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "451b467cb1a3cfe506d1d582fe39b65fcf86176cf8873d427338936211328808"
+      "sha256": "3bff956a46bfd6728df38dc066c40a74dc21ca462736820c07674bc41344e4ea"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "fba6aacd63b9bfbdceecc24752dd129c1ccf48dddc9400ee04081aa00bbf4841"
+      "sha256": "f71723520507da3117795827fcf252ecc12617fc3a71906f1a50f08493d63f2c"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "69fc41e703f5248acc4df6e76f34a30a352eb05ccf63f2eae21c2aa23f8da513"
+      "sha256": "b5554f22eb317ac0d6c041aabd22d9f38426d8ccad5c638701384e9a5413e04d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -292,34 +292,10 @@
       "sha256": "c267d1f2db27c70f3df057d27bf43cee5578e6eea10336cdfb71f6c741572aad"
     },
     {
-      "path": "visual/assets/co-mobility-contracts.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "f5b378ed0a8d8510bce98cd7e65c9eb1423d9ff069e674cabb25cba7b5f30217"
-    },
-    {
-      "path": "visual/assets/co-mobility-license.schema.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "f77329408acf666375f5ab5aa5fad8617bc319d57ee4e93037648e1c676587f9"
-    },
-    {
-      "path": "visual/assets/run_license_tabletop.js",
-      "role": "verification_script",
-      "required": false,
-      "sha256": "fbbca244123b11704442e05622fe74da2de7bcd7f57a2cc157b5b5a92de9546d"
-    },
-    {
-      "path": "visual/assets/license-tabletop-evidence.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "c5143f5f85a9ad69428b8c0fddbb8e876726912adb7b4df8535aafc08426fdff"
-    },
-    {
       "path": "visual/assets/scenario-cards.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "cc77c6e3600e0e5ca589093dd87c216678d8c8529783bea24981b5f09af9a1d0"
+      "sha256": "98145171b9d54811564659e04e681281dd53f070177181514d022cab630ffa44"
     },
     {
       "path": "visual/assets/claim-provenance.json",
@@ -358,18 +334,6 @@
       "sha256": "9a6390e65aa537b44dfbdefe0f2033b9c0310ed03d124460e44da762df28071a"
     },
     {
-      "path": "visual/assets/robustness-simulation.js",
-      "role": "verification_script",
-      "required": false,
-      "sha256": "d254d2df3c09229b3d0fdda64cbdbe71d35237b2e8b9bf86a89e9476c3f7c0d7"
-    },
-    {
-      "path": "visual/assets/robustness-simulation-evidence.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "45917f837e282e64e9f8d0f7be628d6ec97af53b77ccf80354433919057f201d"
-    },
-    {
       "path": "spatial.json",
       "role": "asset",
       "required": false,
@@ -379,13 +343,43 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "479b09b9ed2c002cbe4fd73f0c867f311ba4a49b964b74e443356c826d4aec86"
+      "sha256": "5e40013be1c420b31554a2a93809f29a0603172d3bf7747f3964d3094e2da88c"
     },
     {
       "path": "simulation.json",
       "role": "evidence_data",
       "required": false,
       "sha256": "4717693a5a4a463193d1c59697a150855cfd80d928af85e31c47f579aa131727"
+    },
+    {
+      "path": "visual/assets/service-guarantee-contracts.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "bb94051ab3a0645bc661bdd5e89d90e7fd8ee22dc41f8356435295f60cd85b2f"
+    },
+    {
+      "path": "visual/assets/guarantee-receipt.schema.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "58bab8ab32540ea2e340046c91e769ad293c73d68a9c52ad094f0a127241753c"
+    },
+    {
+      "path": "visual/assets/run_guarantee_tabletop.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "725516aecb73eaa88456aeb5d7f5d8e1cc27a22c0fb4a30b1121118e2416860b"
+    },
+    {
+      "path": "visual/assets/guarantee-tabletop-evidence.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "a5db1d6b885517d5b9601746d2302230e109df8f9b3eeeca947c3e037e49fea3"
+    },
+    {
+      "path": "visual/assets/independent-verification-protocol.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "57c5934f4e71551d1d2d05c09ab0d1d2f7f3eb2c8b81f55878b6119e7b508551"
     }
   ],
   "validation_claim": {
