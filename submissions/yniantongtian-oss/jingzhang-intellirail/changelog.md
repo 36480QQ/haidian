@@ -1,5 +1,12 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.3 - 2026-08-17
+
+- 三处重点区按公告官方街区类型逐字对词：众智园=花园型、原点社区=近校型、大钟寺=城市型人工智能创新街区，并在重点区对照表新增“官方街区类型”列。
+  Each key area now quotes its official block typology verbatim from the announcement—garden-type at Zhongzhiyuan, near-campus-type at the Origin Community, urban-type at Dazhongsi—and the comparison table gains an "official block type" column.
+- 补入公告点名的重点区要素：国家人工智能平台与标准制定安全治理、五环路区域一体化、建筑绿地水系一体化；清华北大中科院策源、人才特区、开源体系与品牌活动；领军企业牵引、数据要素与数字资产流通机制、规划绿地复合利用。
+  Wove in announcement-named elements per key area: the national AI platform, standards and safety governance, Fifth Ring integration, and building-green-water integration at Zhongzhiyuan; Tsinghua/PKU/CAS sourcing, the talent special zone, open-source system, and brand events at the Origin Community; lead-enterprise pull, data-element and digital-asset circulation, and mixed use of planned green space at Dazhongsi.
+
 ## v1.2 - 2026-08-17
 
 - 压缩合规自我叙述：删去与第二章重复的边界/重算声明，保留一处权威表述；中文净减约 300 字、英文净减约 700 字符。
