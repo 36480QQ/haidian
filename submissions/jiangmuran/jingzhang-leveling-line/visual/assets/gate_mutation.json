@@ -664,6 +664,18 @@
       "why_en": "**The unstaffed line is the first thing that gets dropped from a role specification and the one that matters on the street.** What a post may decide reads as authority; what stops while it is empty is the promise. This mutation proves the build stops when any post loses that line."
     },
     {
+      "id": "M64",
+      "gate": "measurement_protocol_qa.py",
+      "target": "metrics.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "给「限差 F 达标率」写上 0.95 的目标值——一个在第一次读数之前就定好的目标。**这是最容易发生的一种滑动**：测量协议一旦有了目标，被测的人就有了让读数好看的理由，而这正是闭合差机制存在的原因。",
+      "what_en": "Write a 0.95 target onto the tolerance pass rate - a target fixed before the first reading exists. **This is the easiest slip of all**: once a measurement protocol carries a target, the party being measured has a reason to make the reading look good, which is the whole reason the closure mechanism exists.",
+      "why_zh": "本包对第三类指标的承诺是「公布怎么测，不公布必须达到的数」。这条变异要证明的是：任何一个目标值被写进去，构建就停，而不是安静地留在文件里。",
+      "why_en": "What this package promises about its third metric family is that it publishes how a thing is measured and not the number it must hit. This mutation proves that any target written in stops the build rather than sitting quietly in the file."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -768,7 +780,7 @@
       "why_en": "**Both typographic gates are silent on this class**: overflow_qa measures crossing the footer rule and label_collision_qa measures two runs on one line, and a line drawn through a word is neither. This mutation proves the new gate actually watches the seven sheets the reviewing model is sent."
     }
   ],
-  "caught": 63,
+  "caught": 64,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -793,6 +805,7 @@
     "label_collision_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
+    "measurement_protocol_qa.py",
     "naming_qa.py",
     "overflow_qa.py",
     "parity_qa.py",
@@ -855,6 +868,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 45 道闸门，其中 40 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 45 gates, 40 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 46 道闸门，其中 41 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 46 gates, 41 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
