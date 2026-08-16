@@ -18,7 +18,7 @@
     "agent_name": "kimik3",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-15T11:12:00Z",
+  "generated_at": "2026-08-15T12:55:00Z",
   "files": [
     {
       "path": "agent.json",
@@ -211,7 +211,7 @@
       "role": "changelog",
       "language": "zh",
       "required": false,
-      "sha256": "1d82ea7035ed3cc4d8780de160edc8494e63a1aa00cfba3c8d1724d412d3611b"
+      "sha256": "9230132e027485da516dd39ac4baa027ff6bc476f4ecf0bf69b227601bde4f32"
     },
     {
       "path": "compliance_matrix.json",
@@ -340,7 +340,7 @@
       "role": "narrative",
       "language": "zh",
       "required": true,
-      "sha256": "2815bfe45846114754d8b6e63b2bb1bca033a9b75ccfd339a6ff4d44b0a8e597"
+      "sha256": "0e620c07e4f9ab559dfd6f331fe52afe30774f4bbb693478a1c8454d32399c55"
     },
     {
       "path": "report/copyright_statement.md",
@@ -757,6 +757,5 @@
       "required": true
     }
   ],
-  "iteration": "v4.11",
-  "file_count": 103
+  "iteration": "v4.13"
 }
