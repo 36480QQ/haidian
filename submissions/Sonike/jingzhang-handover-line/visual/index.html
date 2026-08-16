@@ -40,7 +40,7 @@
     .off-p{display:block;margin-top:9px;font-weight:700;font-size:15px;line-height:1.45;color:var(--paper)}
     .off-m{display:block;margin-top:7px;font-size:12px;line-height:1.5;color:#9aa39e}
     .off-s{display:inline-block;margin-top:9px;padding:3px 7px;border:1px solid #7d6a2c;font:700 10px/1.3 monospace;color:var(--yellow)}
-    [data-smart="off"] .scenario p{opacity:.34}
+    [data-smart="off"] .scenario p{display:none}/* 原为 opacity:.34：#adb6b1 合成到 #202523 后对比度仅 2.07:1，远低于 WCAG AA 正文的 4.5:1，而这恰是全包唯一以无障碍为论点的页面。相邻两条规则本来就用 display:none，此处统一。 */
     [data-smart="off"] .scenario .handover,[data-smart="off"] .scenario>b{display:none}
     [data-smart="off"] .offline{display:block}
     [data-smart="off"] .scenario{border-color:#7d6a2c}
@@ -84,6 +84,7 @@
         <div class="shift-line"><em>01</em><div><h3>BUILD → VERIFY</h3><p>模型、机器人、算力和数据带着版本、风险、人工负责人和停用办法进入测试。</p></div></div>
         <div class="shift-line"><em>02</em><div><h3>VERIFY → SHARE</h3><p>结果、许可、失败和适用边界共同公开；开源不等于暴露个人数据。</p></div></div>
         <div class="shift-line"><em>03</em><div><h3>SHARE → SERVE</h3><p>公共服务保留人工窗口、无AI等价服务、申诉路径与退出记录。</p></div></div>
+        <div class="shift-line"><em>04</em><div><h3>SERVE → BUILD</h3><p>投诉、维修、异议与停用原因逆向返回研发端，形成公开复盘——四步闭环，问题回到它产生的地方。</p></div></div>
         <div class="manual">人工接管不是备用功能，<br>而是公共空间的基础设施。</div>
       </div>
     </section>

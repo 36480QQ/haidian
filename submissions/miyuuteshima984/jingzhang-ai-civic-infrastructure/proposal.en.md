@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "City Completeness treats the ordinary city as the host and AI as a reversible sidecar. v0.15.s keeps three invariant routes fixed while test, care and arrival enhancements attach only to nine existing building/public-space hosts, with no AI-only land-use category."
 tracks: ["ai-origin-community", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
-iteration: "v0.15"
+iteration: "v0.16"
 ---
 
 # JING-ZHANG CITY COMPLETENESS
@@ -21,25 +21,27 @@ iteration: "v0.15"
 This is a conceptual urban-design submission for the open call. The current `SITE_BOUNDARY` and three `KEY_AREA` features use repository-maintained provisional rough geometry only for generation, topology checks, relative relationships, visualisation and package-level recalculation. They are not statutory redlines, parcels, ownership boundaries, road redlines, regulatory plans or engineering implementation conclusions. [source:BOUNDARY-SOURCE] [source:ALLOWED-DESIGN-SPACE]
 
 
-<!-- V015-CORE-START -->
-## v0.15.s Core Judgment | AI SIDECAR CITY
+<!-- V016-CORE-START -->
+## v0.16.s Core Judgment | CLEAN EXIT CITY
 
-**The ordinary city is the host. AI is only a sidecar.** v0.14.s established three ordinary civic routes that survive AI shutdown. v0.15.s now writes the physical AI attachment points into existing building, public-space and route attributes instead of inventing an AI-only city layer. [metric:invariant_civic_route_count] [metric:ai_sidecar_type_count]
+**AI must not only switch off; the city must be able to remove it cleanly.** v0.15.s established that the ordinary city is the host and AI is only a sidecar. v0.16.s turns reversibility into a spatial lifecycle: **BASE CITY → ATTACH → OPERATE → CLEAN EXIT**. [metric:sidecar_lifecycle_stage_count] [metric:clean_exit_host_count]
 
-**AI OFF = a complete city; AI ON = the same complete city plus reversible sidecar capability.** The geometry of ROAD-009 / 010 / 011 is identical in both states. Only lateral test, care and arrival interfaces change. [metric:ai_off_route_preservation_ratio] [metric:new_ai_land_use_code_count]
+Every AI attachment must answer two questions at entry: where does it attach, and what ordinary-city use returns after removal? `ROAD-009 / 010 / 011` remain the same ordinary civic routes across all four lifecycle stages. Only the lateral layer on nine existing hosts changes. [metric:clean_exit_restore_use_coverage_ratio] [metric:ai_off_route_preservation_ratio]
 
-| Key area | Ordinary-city host | AI sidecar | Machine-readable hosts | After the sidecar is removed |
+| Key area | BASE CITY | ATTACH / OPERATE | Restored after CLEAN EXIT | Invariant public promise |
 | --- | --- | --- | --- | --- |
-| Zhongzhiyuan / `ROAD-009` | R&D ground floor - food/rest - green spine - public exchange | **TEST POCKET**: controlled tests, temporary equipment and replaceable service interfaces stay beside the ordinary route | `BLDG-012` + `BLDG-013` + `PUBLIC-006` | Work, rest and public exchange continue on the same route |
-| AI Origin / `ROAD-010` | Home - shade/stay - human help/learning - civic commons | **CARE PORCH**: opt-in navigation, service matching and care prompts attach to public ground floors and community interfaces | `BLDG-007` + `BLDG-009` + `PUBLIC-004` | Refusing login or data consent still reaches people, services and common life |
-| Dazhongsi / `ROAD-011` | Arrival - fixed wayfinding - staffed help - ordinary waiting/retail - Jing-Zhang public interface | **ARRIVAL SIDECAR**: dynamic translation, information and crowd assistance remain enhancements only | `BLDG-001` + `BLDG-002` + `PUBLIC-001` | Without an app or dynamic information, visitors can still orient, ask, wait and leave |
+| Zhongzhiyuan | R&D ground floors, food/rest, green spine and public exchange | `TEST POCKET` stays at side yards/service edges for bounded tests and temporary interfaces | removal restores ordinary courtyards, work/rest and public exchange without relocating `ROAD-009` | **TEST WITHOUT BLOCKING** |
+| AI Origin | homes, human help, shared learning, public ground floors and civic commons | `CARE PORCH` adds only opt-in navigation, matching and care prompts | removal leaves staffed service, public ground floors and community life intact without relocating `ROAD-010` | **CARE WITHOUT ACCOUNT** |
+| Dazhongsi | fixed wayfinding, staffed help, ordinary waiting/retail and the Jing-Zhang public interface | `ARRIVAL SIDECAR` adds only dynamic translation, information and crowd assistance | removal leaves fixed wayfinding and human service intact without relocating `ROAD-011` | **ARRIVE WITHOUT APP** |
 
-The nine host features receive semantic properties only; their polygons do not change. The three routes receive sidecar relationships only; their LineStrings do not change. The six locked area metrics therefore remain untouched by this iteration. [metric:ai_sidecar_host_feature_count] [metric:sidecar_host_public_space_count]
+All nine sidecar hosts receive `ordinary_restore_use`, `clean_exit_mode` and `field_check_required`; the three routes receive `clean_exit_route_preserved=true`. These are relationship and lifecycle semantics only. They do not change building, public-space or road geometry and they create no eighth AI land-use class. [metric:new_ai_land_use_code_count]
 
-Dazhongsi remains **REAL LEVEL DATA REQUIRED**. The sidecar is a relationship-based arrival interface, not a fabricated station entrance, level, bridge/tunnel, corridor width, throughput or operating commitment. [data:geometry/key_areas.geojson#PROV-KEY-003]
+**CLEAN EXIT is more than AI OFF.** Switching off proves software stops. Clean exit additionally requires temporary equipment, interfaces, signs and operating dependencies to be removable so the host returns to ordinary city use with human service, fixed wayfinding, everyday routes and public access intact. Real de-installation methods, fire safety, utilities, ownership and asset disposal remain project-stage questions rather than fabricated engineering parameters.
 
-![AI OFF and AI ON use the same city: invariant routes stay fixed while sidecars appear laterally](assets/figures/key-areas.en.png)
-<!-- V015-CORE-END -->
+Dazhongsi remains **REAL LEVEL DATA REQUIRED**. Until real station entrances, levels, bridges/tunnels, passenger capacity, ownership and operating roles are verified, clean exit is not drawn as a fake engineering alignment. [data:geometry/key_areas.geojson#PROV-KEY-003]
+
+![Three key areas from base city to AI sidecar to clean exit: ordinary routes and uses remain continuous](assets/figures/key-areas.en.png)
+<!-- V016-CORE-END -->
 
 ## Design Basis and Source List
 
@@ -167,24 +169,20 @@ v0.10 keeps the **design-first** hierarchy of the 86-point v0.7 baseline and abs
 All five response rules are machine-readable in `visual/assets/reality-constraint-register.json`. The fixed `mobility-bluegreen.en.png` is rebuilt to distinguish ordinary stitching, the underpass/vertical-continuity condition, people-first green-corridor frontage, station-city arrival, and the future official-data recomputation trigger.
 <!-- V09-REALITY-END -->
 
-<!-- V015-SIDECAR-START -->
-### v0.15.s | AI SIDECAR CITY: give AI space without giving it urban sovereignty
+<!-- V016-LIFECYCLE-START -->
+### v0.16.s | Four-Step Spatial Lifecycle: BASE CITY → ATTACH → OPERATE → CLEAN EXIT
 
-v0.15.s adds neither a fourth route nor an AI-only land-use category. It regroups the six reversible AI urban-form prototypes from v0.7 into three legible sidecars: **TEST POCKET, CARE PORCH, and ARRIVAL SIDECAR**. Ordinary urban space is the host; AI changes only lateral interfaces, public-ground-floor relationships and replaceable service nodes. [metric:ai_sidecar_type_count] [metric:new_ai_land_use_code_count]
+These four steps are not another governance state machine. They are the **spatial handover sequence** every sidecar must satisfy. `BASE CITY` proves the ordinary city works independently; `ATTACH` permits only a lateral, legible and removable layer; `OPERATE` preserves human takeover and ordinary routes; `CLEAN EXIT` returns the host to ordinary use and leaves reviewable exit evidence. [metric:sidecar_lifecycle_stage_count]
 
-| Sidecar | Reversible prototypes | Host features | AI OFF | Physical AI ON delta | Removal test |
-| --- | --- | --- | --- | --- | --- |
-| TEST POCKET | bounded test pocket + replaceable service node | `BLDG-012` / `BLDG-013` / `PUBLIC-006` | work, rest, green spine and public exchange remain continuous | stoppable test and temporary-equipment interfaces appear at side yards/service edges | remove the interface without relocating `ROAD-009` |
-| CARE PORCH | people-first public ground floor + accessible/human help node | `BLDG-007` / `BLDG-009` / `PUBLIC-004` | home, human help, learning and civic commons remain continuous | opt-in navigation/service-matching prompts attach to public ground floors | remove the interface without login and without relocating `ROAD-010` |
-| ARRIVAL SIDECAR | continuous arrival interface + fixed/human baseline | `BLDG-001` / `BLDG-002` / `PUBLIC-001` | fixed wayfinding, staffed help and ordinary waiting/retail remain continuous | dynamic translation and information assistance appear laterally | switch off the dynamic layer without relocating `ROAD-011` |
+| Lifecycle | Spatial question | Zhongzhiyuan | AI Origin | Dazhongsi |
+| --- | --- | --- | --- | --- |
+| BASE CITY | What is here without AI? | ordinary R&D/work courtyard + public green spine | homes + staffed service + public ground floor | fixed wayfinding + staffed help + waiting/retail |
+| ATTACH | Where can AI enter without occupying the main route? | test side yard / service edge | public ground floor / care porch | arrival side band / information interface |
+| OPERATE | What may AI never take over? | `ROAD-009` and ordinary work/rest chain | `ROAD-010`, human help and account-free entry | `ROAD-011`, fixed wayfinding and staffed help |
+| CLEAN EXIT | What ordinary city returns after removal? | remove equipment/interfaces; restore courtyard/public exchange | remove digital interface; retain staffed service and public ground floor | remove dynamic layer; retain fixed wayfinding, help and ordinary waiting |
 
-The sixth prototype, the reversible spatial version chain, becomes a shared implementation method for all three sidecars: **observe → bounded sample → public/professional review → merge or roll back**. It manages detachable components, public-ground-floor interfaces, test boundaries and wayfinding layers as physical versions rather than as a software state machine. [metric:ai_sidecar_host_feature_count]
-
-#### Two implementation paths remain
-**Path A | low-disturbance reversible actions:** shade, seating, fixed wayfinding, staffed-help interfaces, detachable test boundaries and modular service nodes can move through field survey, sample, review and expand/withdraw cycles. **Path B | formal-project-dependent actions:** building capacity, station-city vertical circulation, utilities, road engineering, fire safety, heritage and ownership require real project evidence, professional design and approval. [metric:implementation_path_count]
-
-Responsibility remains at proposed-role level only. Dazhongsi vertical continuity stays **REAL LEVEL DATA REQUIRED**; no bridge/tunnel, station entrance, multi-level deck or engineering corridor parameter is fabricated.
-<!-- V015-SIDECAR-END -->
+Each host's `ordinary_restore_use` is a qualitative spatial use, not a claim that field conditions are already built or verified. Real attachment and exit require before/after field checks. Reversibility therefore becomes a designed return state rather than a future promise. [metric:clean_exit_restore_use_coverage_ratio]
+<!-- V016-LIFECYCLE-END -->
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
