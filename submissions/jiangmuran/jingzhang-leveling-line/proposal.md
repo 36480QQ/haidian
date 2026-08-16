@@ -1911,6 +1911,12 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 
 <!-- FIGINDEX:END -->
 
+<!-- PDFPAGE1:BEGIN -->
+
+**另有四张图像来自两份 PDF 的第一页**（中英各一）：A0 展板第一页是 FIG.10 与 FIG.09，A3 文册第一页是封面（含十分钟可达对比条带）。评审只收到第一页，其后不看。
+
+<!-- PDFPAGE1:END -->
+
 ![FIG.05 慢行、蓝绿与附合路线图](assets/figures/mobility-bluegreen.png)
 
 ![FIG.06 指标复算与闭合差证据图](assets/figures/metrics-evidence.png)

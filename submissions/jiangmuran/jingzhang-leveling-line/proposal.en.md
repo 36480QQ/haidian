@@ -1740,6 +1740,12 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 
 <!-- FIGINDEX:END -->
 
+<!-- PDFPAGE1:BEGIN -->
+
+**Four more of the images come from page 1 of each PDF**, one per language: board page 1 carries FIG.10 and FIG.09, and the booklet's first page is its cover with the ten-minute reach strip. The reviewer receives page 1 and nothing below it.
+
+<!-- PDFPAGE1:END -->
+
 ### What a reviewer can check without contacting the author
 
 Every item can be completed independently:
