@@ -739,12 +739,14 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 上一句"版权声明见 report/copyright_statement.md"是不够的——**指向一份文件不等于给出证据**。评审者与任何第三方都应当能不打开那份文件就判断本包的权利状况，因此把结论连同核验方式一并列在下表。表中每一行都可以用给出的命令在本包上复现。
 
+**两类字体的义务不同，因此权利依据也分开给。** OFL-1.1 明确允许嵌入与再分发，四套 PDF 中 `emb=yes` 的中文字体因此只有 Noto Serif SC；macOS 系统字体则走另一条路——Apple 软件许可协议第 2 节 E 条把「**使用字体 display and print content**」与「**嵌入字体**」写成两种不同的行为，后者另受各字体的嵌入限制约束 [source:FONT-APPLE-SLA-CLAUSE-E]。**本包只做前一件、完全没有做后一件**，且这一点可以被独立核验：`find <包> -name '*.tt[cf]' -o -name '*.otf'` 结果为 **0**，`pdffonts` 显示四套 PDF 中 `emb=yes` 的**只有 NotoSerifSC**。**要如实说明的是**：条款用词是 display and print content，而本包分发的是渲染出来的像素文件；「生成并分发像素产物」是否等同于该条所称用法，**是我们对条款的理解，不是法律意见**，也未取得 Apple 的任何确认。此前本包在这一格只写了自己的行为（未再分发字体文件），**没有指出允许该行为的条款在哪**——那等于只给了一半证据。
+
 | 资产类别 | 实际使用 | 权利依据 | 独立核验方式 | 已知限制 |
 | --- | --- | --- | --- | --- |
 | 图纸 PDF 中的拉丁文字 | Helvetica 家族与 ZapfDingbats [source:FONT-PDF-BASE14] | PDF 规范内置基础字体，按字体名引用，**不嵌入、不再分发字体文件**；此行**只涵盖四套 PDF**，不涵盖栅格图件 | `pdffonts drawings/a3-booklet.pdf` → `Type 1 / WinAnsi / emb=no` | 字形由阅读器提供；与中文不同，这十四款字体是规范要求阅读器自备的，故不构成显示风险 |
 | 图纸中的中文文字 | Noto Serif SC Light，已子集嵌入四套 PDF [source:FONT-NOTO-SERIF-SC] | SIL Open Font License 1.1（读自字体 name 表 nameID 13/14），OFL 明确允许嵌入子集并随文档再分发 | 同上命令 → `CID TrueType / UniGB-UCS2-H / emb=yes`；字体名对象为 `<子集前缀>+NotoSerifSC` | 字体文件本身不随包提交（投稿目录不接受 `.ttf`），凭 sources.json 登记的 URL 与 sha256 可独立取得复核 |
-| 栅格图件中的中文文字（24 张 PNG 与 2 张 JPEG） | macOS 系统字体 STHeiti Medium.ttc，经 Pillow 栅格化 [source:FONT-STHEITI-RASTER] | 仅在本机渲染阶段使用，产物为字形像素；包内不含任何 `.ttc`/`.ttf`，故不构成字体再分发 | `find assets -name '*.tt[cf]'` → 无结果 | 在未装该字体的机器上重跑脚本会得到不同字形；这是与 PDF 中文字体不同的一类义务，故单列一行而不并入上一行 |
-| 栅格图件中的拉丁文字与数字（同上 26 张） | macOS 系统字体 Helvetica.ttc，经 Pillow 栅格化 [source:FONT-HELVETICA-RASTER] | 与上一行同性质：实际加载了随 macOS 分发的字体文件并用其字形生成像素，产物为像素而非字体程序；包内不含任何 `.ttc`/`.ttf`，故不构成再分发 | 同上命令 → 无结果 | **与第一行的 Helvetica 同名而不同性质**：PDF 内是按名引用、全程不碰字体文件，此处是真的加载了字体文件；字形来源无法从栅格产物反查，本行属渲染阶段自述，可独立核验的只有「包内无字体文件」这一半 |
+| 栅格图件中的中文文字（24 张 PNG 与 2 张 JPEG） | macOS 系统字体 STHeiti Medium.ttc，经 Pillow 栅格化 [source:FONT-STHEITI-RASTER] | **条款出处**：Apple 软件许可协议第 2 节 E 条「Fonts」允许在运行该软件时用其附带字体 display and print content，并把**嵌入**单列为另一种受限行为 [source:FONT-APPLE-SLA-CLAUSE-E]。本包落在前一类：渲染为像素，不嵌入、不再分发字体文件 | `find assets -name '*.tt[cf]'` → 无结果 | 在未装该字体的机器上重跑脚本会得到不同字形；这是与 PDF 中文字体不同的一类义务，故单列一行而不并入上一行 |
+| 栅格图件中的拉丁文字与数字（同上 26 张） | macOS 系统字体 Helvetica.ttc，经 Pillow 栅格化 [source:FONT-HELVETICA-RASTER] | 与上一行同条款、同性质 [source:FONT-APPLE-SLA-CLAUSE-E]：实际加载了随 macOS 分发的字体文件并用其字形生成像素，产物为像素而非字体程序，不构成再分发 | 同上命令 → 无结果 | **与第一行的 Helvetica 同名而不同性质**：PDF 内是按名引用、全程不碰字体文件，此处是真的加载了字体文件；字形来源无法从栅格产物反查，本行属渲染阶段自述，可独立核验的只有「包内无字体文件」这一半 |
 | 画廊封面中的全部文字（`assets/media/cover.png`，1 张 PNG） | OFL-1.1 的 Noto Sans CJK SC 与 Noto Sans [source:FONT-NOTO-COVER] | 字体文件随构建脚本存放在仓库之外，仅在本机渲染阶段读取字形生成像素；包内不含任何字体文件，故不构成再分发 | `find assets -name '*.tt[cfo]'` → 无结果；封面上无任何 STHeiti / Helvetica 字形 | **本包唯一不依赖专有字体的栅格产物**；OFL-1.1 本身也明确允许嵌入与再分发，故该图的字体权利链两端都是闭合的 |
 | 生成工具链 | Python 3.12.13(PSF)、reportlab 4.4.3(BSD)、Pillow 12.3.0(MIT-CMU)、shapely 2.1.2(BSD-3)、pyproj 3.7.2(MIT)、fontTools 4.60.1(MIT)、qpdf 12.3.2(Apache-2.0)、PyMuPDF 1.27.2.3(AGPL-3.0 或 Artifex 商业二选一)、Ghostscript 10.07.0(AGPL-3.0) [source:TOOLCHAIN-BUILD] | 版本与许可逐个读取各依赖自身的分发元数据或 `--version` 自述，非二手转述 | `python -c "import importlib.metadata as m; print(m.version('reportlab'), m.metadata('Pillow')['License-Expression'])"`、`gs --version` | PyMuPDF 与 Ghostscript 仅作**工具**在本机运行，未分发其代码、未链接进任何交付物；嵌入 PDF 的字体子集来自 OFL 字体，不来自任何 AGPL 组件 |
 | 几何与指标 | 九类 GeoJSON 与 metrics.json | 由本包程序化生成，公式与源文件逐项登记 | 按 metrics.json 的 `formula` 与 `source_file` 在 EPSG:4548 复算 | 生成脚本不在包内，故**只主张指标可独立复算，不主张逐字节可复现** |
@@ -762,7 +764,7 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 ## 参考资料
 
-全部二十八条来源在 sources.json 中逐条登记权威等级、采集方法、时空覆盖、许可状态与可用/不可用边界；凡涉及单位换算的写明原文表述与换算方法，凡属行政尺度背景事实的标记 `not_spatially_allocable=true`。
+全部二十九条来源在 sources.json 中逐条登记权威等级、采集方法、时空覆盖、许可状态与可用/不可用边界；凡涉及单位换算的写明原文表述与换算方法，凡属行政尺度背景事实的标记 `not_spatially_allocable=true`。
 
 **每条来源同时给出与中央登记表的对照，便于机器逐项核验。** 本表的 `usable_for_formal` 采用 `data/source_registry.json` 的同一套取值词汇。其中 **10 条**（临时范围与重点区几何、征集公告、智能体任务书、城市设计管理办法、控规编制审批办法、用地用海分类指南、生成式AI暂行办法、无障碍环境建设法、国办发〔2020〕45号）确实在中央表内——**中央登记表现有的 9 个来源已被本包 100% 挂接**，v1.15 时还漏着住建部两部办法与自然资源部分类指南三条，其 `registry_source_id`、`registry_authority_level`、`registry_review_status` 与 `usable_for_formal` 四项由脚本从中央表**逐字复制**、未经改写，并标 `usable_for_formal_basis: central_registry_verbatim`；本包对这些来源的用法另受中央表 `allowed_uses` / `prohibited_uses` 约束，已逐条在 `usable_for` / `not_usable_for` 中收窄。其余 **18 条不在中央表内**，一律标 `registry_review_status: not_in_central_registry` 与 `usable_for_formal_basis: participant_self_assessed`——维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录，**但自评状态不等于中央批准，本包不据此主张任何中央审定结论**。字体、语音合成与构建工具链八条标 `not_a_factual_source`：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。
 

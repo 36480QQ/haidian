@@ -473,6 +473,48 @@
       "usable_for_formal_basis": "participant_self_assessed"
     },
     {
+      "id": "FONT-APPLE-SLA-CLAUSE-E",
+      "url": "https://www.apple.com/legal/sla/docs/macOS1013.pdf",
+      "source_type": "official_public",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "Apple Inc. Software License Agreement for macOS，第 2 节 E 条「Fonts」（系统字体的使用与嵌入边界）",
+      "publisher": "Apple Inc.",
+      "retrieved_at": "2026-08-16",
+      "accessed_date": "2026-08-16",
+      "collection_method": "从 Apple 法律条款公开页下载 macOS High Sierra 版软件许可协议 PDF，用 pdftotext 提取第 2 节 E 条全文（原文见 observations）。该条在检索到的多个 macOS/OS X 版本协议中措辞一致；本条引用的是可公开下载、任何人都能复核的那一版。",
+      "source_locator": "Section 2.E «Fonts»",
+      "spatial_coverage": "不适用",
+      "temporal_coverage": "该版本协议文本；本机所用 macOS 版本的协议随系统提供",
+      "license_or_reuse_terms": "Apple 公开发布的许可协议文本；本包只引用其中一条并注明出处，不复制全文。",
+      "usage": "为 FONT-STHEITI-RASTER 与 FONT-HELVETICA-RASTER 两条提供**可核验的许可条款出处**。此前这两条只写了本包的行为（未再分发字体文件），没有指出允许该行为的条款在哪；本条补上这一半。",
+      "observations": [
+        {
+          "id": "apple_sla_clause_e_fonts_verbatim",
+          "value": "Subject to the terms and conditions of this License, you may use the fonts included with the Apple Software to display and print content while running the Apple Software; however, you may only embed fonts in content if that is permitted by the embedding restrictions accompanying the font in question.",
+          "unit": "license_clause",
+          "scope": "Apple Inc. Software License Agreement for macOS, Section 2.E «Fonts»",
+          "source_text": "E. Fonts. Subject to the terms and conditions of this License, you may use the fonts included with the Apple Software to display and print content while running the Apple Software; however, you may only embed fonts in content if that is permitted by the embedding restrictions accompanying the font in question. These embedding restrictions can be found in the Font Book/Preview/Show Font Info panel.",
+          "not_spatially_allocable": true
+        }
+      ],
+      "usable_for": [
+        "说明本包为何认为「在 macOS 上把系统字体渲染成像素」落在该条款允许的用法内",
+        "把「使用」与「嵌入」两种行为区分开——该条对二者的规定并不相同"
+      ],
+      "not_usable_for": [
+        "作为法律意见或对本包用法的合规结论",
+        "主张 Apple 对本包的用法作过任何认可",
+        "推断本机所用 macOS 版本协议的逐字内容（本条引用的是可公开下载的那一版）",
+        "覆盖任何**嵌入**了 Apple 字体的情形——本包不存在这种情形，四套 PDF 嵌入的是 OFL 的 Noto Serif SC"
+      ],
+      "limitations": "该条允许「display and print content」，本包的用法是把字形渲染为 PNG 像素并随包分发这些像素。**「生成并分发像素产物」与「display and print」之间的对应关系，是参赛者对条款的理解，不是法律意见**，也未取得 Apple 的任何确认；如需正式结论应由法律专业人员判断。本条能被独立核验的部分是：包内不含任何字体文件（`find <包> -name '*.tt[cf]' -o -name '*.otf'` 结果为 0），四套 PDF 中 emb=yes 的中文字体只有 NotoSerifSC（`pdffonts` 可查），**即本包确实没有嵌入任何 Apple 字体**。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
       "id": "FONT-STHEITI-RASTER",
       "source_type": "standard_resource",
       "evidence_class": "build_toolchain",
@@ -484,7 +526,7 @@
       "collection_method": "Pillow 在本机以系统字体路径加载并直接栅格化为 PNG 像素；生成物为字形图像，包内不含 .ttc/.ttf 文件。",
       "spatial_coverage": "不适用",
       "temporal_coverage": "不适用",
-      "license_or_reuse_terms": "仅在本机渲染阶段使用，输出为栅格像素；未复制、未嵌入、未再分发字体文件本身。",
+      "license_or_reuse_terms": "许可条款出处：Apple Inc. Software License Agreement for macOS 第 2 节 E 条「Fonts」允许在运行该软件时使用其附带字体 display and print content，并把「嵌入」单列为另一种受限行为 [见 FONT-APPLE-SLA-CLAUSE-E]。本包的用法落在前一类：在本机把字形渲染为像素，**未复制、未嵌入、未再分发字体文件本身**；四套 PDF 中嵌入的中文字体是 OFL 授权的 Noto Serif SC，不是 Apple 字体。「生成并分发像素产物」与条款所称 display and print 的对应关系属参赛者的理解，非法律意见。",
       "usage": "assets/figures/ 下 26 张栅格图件中的中文文字。同批图件的拉丁文字与数字另见 FONT-HELVETICA-RASTER。",
       "usable_for": [
         "说明栅格图件中中文字形的渲染来源"
@@ -492,7 +534,8 @@
       "not_usable_for": [
         "主张对该字体的任何权利",
         "在其他机器上复现完全一致的字形",
-        "证明同批图件中拉丁字形的来源（见 FONT-HELVETICA-RASTER）"
+        "证明同批图件中拉丁字形的来源（见 FONT-HELVETICA-RASTER）",
+        "作为该用法已获法律确认的证明（条款出处见 FONT-APPLE-SLA-CLAUSE-E，但对应关系是自述）"
       ],
       "limitations": "在未安装该字体的机器上重跑生成脚本会得到不同字形；图件因此按当前栅格产物归档，而非按运行时重绘。",
       "registry_source_id": null,
@@ -512,7 +555,7 @@
       "collection_method": "Pillow 在本机以系统字体路径 /System/Library/Fonts/Helvetica.ttc 加载并直接栅格化为像素；取 .ttc 内第 3 号字面（Bold Oblique）绘制页脚图签与左上角图号，另按需取常规与粗体字面绘制指北针字母与比例尺数字。生成物为字形图像，包内不含 .ttc/.ttf 文件。",
       "spatial_coverage": "不适用",
       "temporal_coverage": "不适用",
-      "license_or_reuse_terms": "仅在本机渲染阶段使用，输出为栅格像素；未复制、未嵌入、未再分发字体文件本身。与四套 PDF 中按名引用的基础十四款字体（FONT-PDF-BASE14）不是同一件事：那里不涉及任何字体文件，这里实际加载了随 macOS 分发的字体文件并用其字形生成像素。",
+      "license_or_reuse_terms": "许可条款出处：Apple Inc. Software License Agreement for macOS 第 2 节 E 条「Fonts」允许在运行该软件时使用其附带字体 display and print content，并把「嵌入」单列为另一种受限行为 [见 FONT-APPLE-SLA-CLAUSE-E]。本包的用法落在前一类：在本机把字形渲染为像素，**未复制、未嵌入、未再分发字体文件本身**；四套 PDF 中嵌入的中文字体是 OFL 授权的 Noto Serif SC，不是 Apple 字体。「生成并分发像素产物」与条款所称 display and print 的对应关系属参赛者的理解，非法律意见。",
       "usage": "assets/figures/ 下 26 张栅格图件中的拉丁文字与数字：页脚版本图签、左上角图号、指北针字母与比例尺数字。",
       "usable_for": [
         "说明栅格图件中拉丁字形与数字的渲染来源"
@@ -520,7 +563,8 @@
       "not_usable_for": [
         "主张对该字体的任何权利",
         "在其他机器上复现完全一致的字形",
-        "证明四套 PDF 中拉丁字形的来源（PDF 内为按名引用，见 FONT-PDF-BASE14）"
+        "证明四套 PDF 中拉丁字形的来源（PDF 内为按名引用，见 FONT-PDF-BASE14）",
+        "作为该用法已获法律确认的证明（条款出处见 FONT-APPLE-SLA-CLAUSE-E，但对应关系是自述）"
       ],
       "limitations": "字形来源无法从栅格产物反查，本条为渲染阶段的自述；可独立核验的只有「包内不含任何字体文件」这一半（`find submissions/Sonike/jingzhang-handover-line -name '*.tt[cf]'` 无结果）。在未安装该字体的机器上重跑生成脚本会得到不同字形；图件因此按当前栅格产物归档，而非按运行时重绘。",
       "registry_source_id": null,
