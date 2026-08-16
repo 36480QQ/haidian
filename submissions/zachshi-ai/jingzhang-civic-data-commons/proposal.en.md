@@ -194,9 +194,38 @@ Phasing extents are conceptual recommendations, subject to formal implementation
 
 The proposal designs a "four-season citizen co-creation program": spring "Open Data Hackathon" (Zhongzhiyuan), summer "AI Service Experience Week" (AI-Origin Community), autumn "Enterprise Data Co-Creation Day" (Dazhongsi), winter "Civic Data Commons Outcomes Exhibition" (full line). The program must be coordinated with public-space permits, event safety, and copyright clearance, and must not be written as confirmed government arrangements [source:agent-taskbook].
 
+### Core Mechanism: Data Receipt (original to this proposal)
+
+The chronic problem with public-data opening is "declared open, yet no one can track where the data went, who used it, for what purpose, and when it was deleted." This proposal introduces an original **Data Receipt mechanism**: turning every use of public data into an auditable receipt [E:DATA-COMMONS-RECEIPT] [source:data-security-law].
+
+**Receipt elements (required for every use):**
+- Dataset ID (DS-xx) and data provider
+- User type (service operator / developer / research / public)
+- Purpose of use (must be specific; generic terms such as "data analysis" are not allowed)
+- Data-minimization confirmation (whether only the required fields are taken)
+- Retention period (days) and whether deletion is required
+- **Named human reviewer** (data compliance officer / security officer / accessibility advisor, etc.)
+- Status (open / pending / closed) and deletion record
+
+**Receipt ledger for the 12 public datasets** (full version in `visual/assets/data-receipt-ledger.json`):
+
+| Dataset | Purpose of use | Retention period | Human reviewer | Deletion required |
+| --- | --- | --- | --- | --- |
+| Public-space openness data | Shared-mobility network route planning | 90 days | Data compliance officer | Yes |
+| Slow-traffic aggregated data | Data-station siting and scheduling | 180 days | Data compliance officer | Yes |
+| Cultural-heritage site public information | Cultural guide generation | 365 days | Heritage protection advisor | No |
+| Weather and air-quality public data | Operations-window determination | 30 days | Security officer | Yes |
+| Accessibility-facility survey data | Barrier-free route planning | 180 days | Accessibility advisor | No |
+| Rail-station passenger-flow aggregated data | Metro connection scheduling | 90 days | Data compliance officer | Yes |
+| Public-feedback aggregate statistics | Service-quality improvement | 180 days | Public oversight representative | Yes |
+
+**Rule-closure verification.** `run_receipt_tabletop.js` correctly classifies all 72 synthetic cases from 12 receipts × 6 rule branches (complete / missing purpose / missing human review / missing retention period / deletion missing / closed without deletion) — 48 blocked / 12 auditable / 12 flagged — proving that the receipt rules are logically closed. This proves only classification correctness, however, and does not constitute data authorization, compliance, or evidence of actual use; on-site performance remains null, with status `not_authorized_not_run` [data:visual/assets/receipt-tabletop-evidence.json#blocked].
+
+**Relationship with "data as a public good."** The Data Receipt mechanism makes "public good" live up to its name: when data is used, it is like a public item being lent out — there must be a loan record, a return period, and a responsible person. The ledger is public (de-identified) and open to public and regulatory inspection, and every receipt has a named human reviewer — the whereabouts of data go from "no one knows" to "everyone can check" [source:public-data-policy].
+
 ### Open-Data Policy Roadmap
 
-It recommends establishing a tiered open-data catalogue (public / registered-use / restricted-use), with supporting data-security assessment, AI-service registration disclosure, and citizen feedback mechanisms. Policy recommendations must comply with current laws and regulations and are conceptual only; they do not constitute government-approved conclusions or implementation commitments [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:data-security-law].
+It recommends establishing a tiered open-data catalogue (public / registered-use / restricted-use), with supporting data-security assessment, AI-service registration disclosure, and citizen feedback mechanisms; each tier of opening is paired with a Data Receipt as the implementation tool for data-security assessment. Policy recommendations must comply with current laws and regulations and are conceptual only; they do not constitute government-approved conclusions or implementation commitments [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:data-security-law].
 
 ### Developer Community Operation Mechanism
 

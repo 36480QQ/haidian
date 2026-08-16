@@ -367,6 +367,30 @@
       ],
       "reason": "No authorized field baseline",
       "rationale": "待现场校准"
+    },
+    "data_receipt_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/data-receipt-ledger.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "12"
+    },
+    "receipt_tabletop_case_count": {
+      "status": "known",
+      "value": 72,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/data-receipt-ledger.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "72"
     }
   }
 }
