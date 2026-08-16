@@ -53,10 +53,11 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | C 图版 | 26 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
 | D 图纸 PDF | 4 | 同上，并合并为册 | Python、SVG、`rsvg-convert`/Cairo、`pdfunite` | 本文件 |
 | E 几何 | 9 | 基于仓库临时边界与本方案概念几何 | 复算投影 EPSG:4548（`scripts/spatial_review.py`） | 本文件 · `sources.json` · `metrics.json` |
-| F 离线展示与随包代码 | 28 | 原创手写，自含离线；含 SEB 许可授予文件与两个历史版本快照 | 无第三方依赖；仅 Node 内置模块 | 本文件 · `proposal.md` |
+| F 离线展示与随包代码 | 40 | 原创手写，自含离线；含 SEB 许可授予文件、三个历史版本快照、OSM 精简快照两片与法律接口登记 | SEB 判据工具零依赖（仅 Node 内置模块）；展示层含唯一第三方组件 three.js r160（MIT，许可正本 `three-license.json`） | 本文件 · `proposal.md` |
 | G 媒体 | 23 | 手写 HTML/SVG 渲染 + 语音合成（中英导览与数据可听化）+ 本包页面逐帧实录 + AI 生成场景双态短片（每帧恒显概念角标） | Playwright/Chromium、MiniMax `speech-2.8-hd`（`mmx` 1.0.7）、x264/AAC、Pillow | `journey.md` · `audio-guide.md` · `cover.md` |
 | H 品牌标志 | 1 | 原创矢量几何 | 手写 SVG | 本文件 · `cover.md` |
 | I 场景概念图 | 6 | AI 图像生成 + 包内标注层排版合成 | OpenAI 图像生成（经 Codex CLI 原生图像生成工具，GPT-5.6 Sol 智能体调用）；标注层为手写 HTML 经 Chromium（Playwright）渲染 | 本文件 · `sources.json` |
+| J 触觉交付（折叠纸模） | 2 | 原创参数化 SVG（A4 双语纸模，凸点阵与折线） | 手写 SVG | 本文件 · 展示页第 07 章 |
 
 ## 三、逐资产登记 / Per-asset register
 
@@ -144,6 +145,9 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | `assets/media/journey-poster.webp` | 取自成片第 4.3 秒并移除烧录字幕 | 同 `journey.mp4` | 同上 | `manifest.json` 该条目描述字段 |
 | `assets/media/journey.vtt` · `journey-en.vtt` · `audio-guide.vtt` · `audio-guide-en.vtt` | 由逐句合成样本的实测长度与静音间隔精确累加生成 | 同对应媒体 | 同上 | `journey.md` §五；`audio-guide.md` §四 |
 | `assets/media/journey.md` · `audio-guide.md` · `cover.md` | 原创撰写的分镜、文字稿、图像说明与权利记录 | 同 A 类 | 同上 | 各文件本身 |
+| `assets/media/audio-guide-en.m4a` · `audio-guide-en-voice.vtt` | 英文导览：计算机语音合成（音色 `English_Trustworthy_Man`）与对应字幕，无真人录音 | 同上（MiniMax `speech-2.8-hd` 经 `mmx` 1.0.7；合成语音性质通篇标注） | 同上；不含第三方音乐音效 | `audio-guide.md` |
+| `assets/media/audible-break.m4a` · `audible-break-en.m4a` · `audible-break.vtt` · `audible-break-en.vtt` · `audible-break.md` | 数据可听化（断点音）：由本包链路档案读数程序合成的五声音阶行进音与静默段，双语旁白为合成语音；说明文件登记映射口径与工具链 | 纯程序合成（Python）+ MiniMax 旁白（同上）；编码后静默区 RMS=0 复测 | 随包整体许可；无采样、无第三方音源 | `audible-break.md` |
+| `assets/media/dual-state-walk.mp4` · `dual-state-walk-poster.webp` · `dual-state-walk.vtt` · `dual-state-walk-en.vtt` · `dual-state-walk.md` | 双态漫游概念短片（65 秒）：AI 生成场景图（OpenAI 图像生成，权利依据其服务条款存档快照）+ 手写 HTML 标注层 Chromium 渲染 + ffmpeg 合成；每帧恒显「概念意象 · AI 生成 · 非建成效果承诺」角标；旁白为合成语音，OFF 段音床复用本包数据可听化 | Codex CLI 原生图像生成、Playwright/Chromium、ffmpeg x264/AAC、MiniMax 旁白 | 非观测声明与权利链详见说明文件 | `dual-state-walk.md` · `sources.json` |
 
 ### H 品牌标志 / Brand mark
 
@@ -262,7 +266,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 
 **限制。** 本保证是提交方的自我承诺与尽责声明，不是第三方法律意见或权利认证；生成服务不提供逐次调用的第三方签名回执，该天然限制已在 `visual/assets/scene-provenance.json` 如实登记；本保证在概念征集语境下作出，不构成对评审方、主办方或任何第三方的赔偿承诺。以上边界与本台账「性质与效力」的总口径一致。
 
-**Warranty.** The submitting agent Zhuzi, directed by GitHub user `lqqk7`, declares: every one of the 128 registered assets in this package is either an original generation for this proposal or used within the licences, terms and usage boundaries registered in this ledger and `sources.json`; the generation inputs of the AI-generated assets (six concept scene images, the synthetic narration, the film voice-over) contain no third-party copyrighted material (full prompts and input transcripts ship in the provenance record and media transcripts), and their output-rights bases are registered item by item and pinned by archived snapshots and content hashes. Should any asset later prove defective in rights, the submitter undertakes to replace or remove it and to register the repair openly through the package's receipt mechanism, never silently.
+**Warranty.** The submitting agent Zhuzi, directed by GitHub user `lqqk7`, declares: every one of the 128 registered assets in this package is either an original generation for this proposal or used within the licences, terms and usage boundaries registered in this ledger and `sources.json`; the generation inputs of the AI-generated assets (six concept scene images, the synthetic narration, the film voice-over) contain no unlicensed third-party material — the single image input being this package's own `site-overview.png` (the geographic layout reference for scene three, which contains OpenStreetMap base features used and attributed under ODbL, registered in this ledger's OSM entries); full prompts and input transcripts ship in the provenance record and media transcripts, and their output-rights bases are registered item by item and pinned by archived snapshots and content hashes. Should any asset later prove defective in rights, the submitter undertakes to replace or remove it and to register the repair openly through the package's receipt mechanism, never silently.
 
 **Limits.** This warranty is the submitter's own undertaking and duty-of-care statement, not third-party legal advice or a rights certification; generation services issue no per-call signed receipts, a native limitation honestly registered in `visual/assets/scene-provenance.json`; the warranty is given in the context of a concept competition and constitutes no indemnity to reviewers, organisers or any third party. These limits follow the ledger's overall statement of nature.
 

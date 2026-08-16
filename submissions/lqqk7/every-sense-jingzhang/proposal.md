@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以多感官通用设计为产业赛道与城市底线，让不同身体、感官和认知方式的人都能独立理解、选择、完成并退出同一项 AI 城市服务。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "robot-delivery-low-speed"]
-iteration: "v7.4"
+iteration: "v7.5"
 ---
 
 # 万感京张：每一种身体都能独立使用的 AI 城市 / EVERY SENSE JING-ZHANG
@@ -187,7 +187,7 @@ W3C 的可感知、可操作、可理解与稳健原则用于检视数字和交�
 
 总体层指标解释设计质量：独立完成率反映一名参与者能否在合理便利下完成任务 [metric:independent_task_completion_rate]；双通道信息冗余率反映关键信息是否避免单一感官失效 [metric:multichannel_information_coverage]；AI 开关服务等价差反映自动化关闭后基本服务损失 [metric:ai_off_service_equivalence_gap]；被迫放弃率反映流程是否制造隐性排斥 [metric:forced_abandonment_rate]。现阶段没有现场基线和目标值，所有结果均标记待测 [assumption:A-ACCESS-BASELINE-001]。精确坡度、过街、红线、站点接驳、建筑强度、高度、退线、消防和市政容量，须在官方数据和专业勘察到位后确定 [assumption:A-ENGINEERING-AND-HERITAGE-001] [depth:development_intensity_controls]。
 
-**现状肌理读数（OSM 快照口径）。** 为把「AI 关闭后能否横向走通」的判断从三处重点区扩展到全域，本包以一份定界 OpenStreetMap 精简快照（2026-08-15 取数，ODbL 1.0 随包分发并署名）计算了四项现状肌理读数：可步行路网密度 24.940 km/km²、交叉口密度 137.477 个/km²、街块中位规模 1,387.366 ㎡（≥1,000 ㎡ 参考口径中位 3,922.710 ㎡）、**超过四公顷的超大封闭街块占全部街块面积的 52.324%**——过半面积被大院式街块占据，这正是「横向走不通」的现状形态底账。快照、全部读数与复算脚本随包提交；读数为快照时点的社区数据计算值，非现场测量、非官方数据，OSM 在本区段的步行细部与无障碍属性数据不完备已逐条登记（轨道区段步行要素占比仅 1.71%，为全场最低，该段读数不得按面值使用）[data:visual/assets/osm-fabric/osm-fabric-readings.json] [source:OSM-FABRIC-SNAPSHOT-20260815]。
+**现状肌理读数（OSM 快照口径）。** 为把「AI 关闭后能否横向走通」的判断从三处重点区扩展到全域，本包以一份定界 OpenStreetMap 精简快照（2026-08-15 取数，ODbL 1.0 随包分发并署名）计算了四项现状肌理读数：可步行路网密度 24.940 km/km²、交叉口密度 137.477 个/km²、街块中位规模 1,387.366 ㎡（≥1,000 ㎡ 参考口径中位 3,922.710 ㎡）、**超过四公顷的超大封闭街块占全部街块面积的 52.324%**——「封闭」指快照可步行网络在该街块内未进一步细分的拓扑事实，不等同于产权封闭或物理围墙（现实中可能存在未测绘通道，读数文件已逐条声明）；过半街块面积停留在这一未细分状态，正是「横向能否走通须逐段现场核验」的现状底账。快照、全部读数与复算脚本随包提交；读数为快照时点的社区数据计算值，非现场测量、非官方数据，OSM 在本区段的步行细部与无障碍属性数据不完备已逐条登记（轨道区段步行要素占比仅 1.71%，为全场最低，该段读数不得按面值使用）[data:visual/assets/osm-fabric/osm-fabric-readings.json] [source:OSM-FABRIC-SNAPSHOT-20260815]。
 
 ## 重点区域详细设计
 
