@@ -686,7 +686,7 @@ English brief — **One test decides everything here: for any AI service on this
 
 compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；standard_matrix.json**覆盖组织方 `brief/site-package/standards/standards.json` 的全部九项标准**，含三项合规类标准（生成式AI暂行办法、无障碍环境建设法、国办发〔2020〕45号），九条的章节、图纸、几何、指标、来源与假设引用逐项可解析，断链为 0；design_depth_matrix.json覆盖十五项专业深度、状态一律 `complete`——**这不是自评满分，而是正式阶段的硬性要求**：`validate_submission.py:2010` 规定 formal 阶段每一项必须为 `complete`，否则确定性校验直接失败（schema 允许的 `data_gap` 只适用于更早阶段）。**因此「complete」在这里的含义是「该深度项已被回应」，不等于「其中的法定量已确定」**：开发强度与建筑高度的定量控制当前仍未赋值，缺口按口径记在 metrics.json 的 unknown、A-CONTROLS-001 与本节，不以估算填充。确定性、空间、视觉和专业检查共同验证机器可读包，人工评审仍拥有最终判断。建筑强度与高度保持unknown，是合规结果而非遗漏。整个矩阵由 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 和 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 统领。
 
-**规则检查以矩阵示于图面：每一格是一次检查。** 上排十二格是十二条交接账的基线，下面七行是七条协议规则各自的缺陷注入，横向十二个场景——12 + 84 = **96 格**。图上带色键：青格是基线通过，**红格是「注入了缺陷并被挡下了」**——84 条注入全部被拦截，漏检 0，schema 错误 0。把它画出来而不只写成数字，是因为「规则真的会拦住东西」这件事只有逐格摆开才可核对 [data:visual/assets/governance/rule-check-report.json]。
+**规则检查以矩阵示于图面：每一格是一次检查。** 上排十二格是十二条交接账的基线，下面七行是七条协议规则各自的缺陷注入，横向十二个场景——12 + 84 = **96 格**。**七行各自写着它拦的是什么**——R1 双控分离、R2 人工优先、R3 未决即停、R4 回滚先行、R5 合成隔离、R6 拒收具因、R7 未指派不签，读图的人不必回正文查编号。图上带色键：青格是基线通过，**红格是「注入了缺陷并被挡下了」**——84 条注入全部被拦截，漏检 0，schema 错误 0。把它画出来而不只写成数字，是因为「规则真的会拦住东西」这件事只有逐格摆开才可核对 [data:visual/assets/governance/rule-check-report.json]。
 
 ![可复算指标、测量协议、规则检查矩阵（12 基线 + 84 注入 = 96 格，注入全部被拦截）与五步证据链](assets/figures/metrics-evidence.png)
 
