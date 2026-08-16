@@ -4,7 +4,7 @@ author_github: "siddhartha-yz"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v1.25"
+iteration: "v1.26"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张从AI成果展示带转化为面向真实城市长尾条件的训练、共测与公开学习基础设施：先暴露边界，再扩大部署。"
@@ -66,7 +66,7 @@ EDGECASE JINGZHANG 的产业定位是 **Urban Edgecase Infrastructure / 城市�
 
 **北京AI原点社区 / Human Edge Commons（T2）**：把“模型对平均用户有效”推进到“服务对不同人可用”。这里以高校源头创新和社区日常为优势，设置人类接管屋、无障碍共测环、跨语言导视试验、老人非智能手机替代入口、儿童与监护人边界场景、社区服务 Copilot 柜台。参与测试必须显式 opt-in；同一服务必须同时展示 AI 路径、人工路径和离线/无账号路径。空间上强调校区—园区—社区慢行缝合、开放首层和小型发布/复盘空间，不把居民画像用于商业推荐。[data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/public_space.geojson#PUBLIC-002]
 
-**大钟寺 / Market Edge Street（T3）**：面向已经过 T1/T2 的低风险能力，测试真实商业与高流动环境中的智能体交接、终端兼容、消费信息可信、排队/拥挤、弱网和人工售后。这里最重要的不是“无人化”，而是 **handoff quality / 交接质量**：当商家智能体、地图导航、支付终端、公共服务入口或内容生成发生冲突时，使用者是否知道谁负责、怎样退出、怎样找到人。由于仓库 Issue #1058 对 provisional KEY-003 位置提出有效疑问，本方案不使用该 polygon 计算站点半径、路口四象限或精准 TOD 指标；这些内容必须等 official geometry 后重算。[source:REPO-ISSUE-KEY003] [data:geometry/key_areas.geojson#PROV-KEY-003]
+**大钟寺 / Market Edge Street（T3）**：面向已经过 T1/T2 的低风险能力，测试真实商业与高流动环境中的智能体交接、终端兼容、消费信息可信、排队/拥挤、弱网和人工售后。这里最重要的不是“无人化”，而是 **handoff quality / 交接质量**：当商家智能体、地图导航、支付终端、公共服务入口或内容生成发生冲突时，使用者是否知道谁负责、怎样退出、怎样找到人。由于仓库 Issue #1029 对 provisional KEY-003 位置提出有效疑问，本方案不使用该 polygon 计算站点半径、路口四象限或精准 TOD 指标；这些内容必须等 official geometry 后重算。[source:REPO-ISSUE-KEY003] [data:geometry/key_areas.geojson#PROV-KEY-003]
 
 ![三处重点区域与T1/T2/T3角色](assets/figures/key-areas.png)
 
