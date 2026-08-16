@@ -13,6 +13,8 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 # The Leveling Line: making robots and AI public services re-measurable in the city
 
+> **The one-line test: every AI service here must be readable on site by independent parties; if f > F the route returns for re-survey and the service drops to its non-AI equivalent.**
+
 > A hundred years ago, the first thing Zhan Tianyou did on the Jing-Zhang railway was not to cut through mountains. It was to survey.
 >
 > And the method of leveling is not "measure accurately". It is **measure back** — depart from a known point, carry the height station by station, close the loop, and return. The difference on return is the **closure error**. Within tolerance, every station on the line is accepted; over tolerance, the whole run is void and re-measured. You may not patch the worst station and keep the rest.
@@ -27,14 +29,14 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 | What a reviewer will ask | This proposal's answer | What can be checked |
 |---|---|---|
-| What is the core claim | Trust does not come from one accurate reading. It comes from **measuring back**: run the circuit, return, and if the closure error exceeds tolerance the whole route is re-measured — no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 10/10 cases including 8 refusal branches |
+| What is the core claim | See the one-line test above; no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 10/10 cases including 8 refusal branches |
 | Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 41 of 793 (5.2%, thinnest of the eight), AI public services 92 | `visual/assets/field_map.json`; the census script is re-runnable |
 | What is done spatially | One spine of 9,443 m, eight tiered benchmarks, three key areas, a complete seven-class land-use partition with no overlaps and no gaps | Nine GeoJSON layers plus `node visual/assets/verify.js`, which independently recomputes every class-1 metric |
 | Why the three red lines are enforceable | Not on a designer's goodwill but on **current law**: Barrier-free Environment Construction Law Art. 39; Interim Measures for Generative AI Services Arts. 14 and 15; Guobanfa [2020] No. 45 | The first two are `regulatory_baseline` in `sources.json` (five in that class); Guobanfa [2020] No. 45 is policy, graded `background_only`. All three carry article locators and how each was obtained |
 | Who carries the public value | Personas P4–P7 are **the people who take the readings**, not a list of beneficiaries; a resident may initiate a re-survey of a judgement affecting them, at the third-order point nearest home | Human review points and exit conditions on all twelve scenario cards; all eight points in `geometry/public_space.geojson` cross jurisdictions |
 | What can start now | The four-week closure trial (S08 / RT-N / F3), which **depends on no unpublished official data** — as do R1–R3 and R8 | The renewal table carries responsible role, preconditions, cost band, KPI and exit condition per project |
 | What is deliberately withheld | Plot ratio, height, density, setbacks, redlines, any demolition or relocation conclusion | The organisers register **five controls** as missing in `planning_limits.json`; four are `unknown` here with their precondition quoted, and `green_ratio` — this proposal's own corridor share under the same name — says in both languages it is not the statutory control. `planning_controls_qa` checks against `upstream/main` |
-| Where the method stops | Closure error measures consistency; it **cannot measure whether something helps**. The counterfactual needs control segments, and this proposal supplies only the other half | Rule 8 states it, and names a proposal in this call that is more complete on exactly that point |
+| Where the method stops | Closure error measures consistency, **not whether something helps**. The counterfactual needs control segments, which this proposal does not supply | Rule 8 states it, and names a proposal in this call more complete on that point |
 | How far the data can be trusted | Boundaries are provisional substitutes; when official polygons appear the package is **recomputed as a whole, never file by file**. Self-collected data is graded `background_only` throughout | The OSM cross-check reports this proposal's own spine as 1,116.7 m from the surveyed park — a reading that counts against it, published anyway |
 
 ## One person's day: what the mechanism looks like on the street
