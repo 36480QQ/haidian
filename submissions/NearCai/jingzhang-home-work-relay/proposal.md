@@ -1,5 +1,5 @@
 ---
-title: "京张居业接力 / HOME-WORK RELAY"
+title: "行止有居——京张居业接力"
 subtitle: "可转换之家与居业短链"
 author_github: "NearCai"
 author_display: "NearCai × OpenAI Codex"
@@ -8,19 +8,19 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.0"
-summary: "以京张铁路的编组、换挂与直通为文化线索，用一线、三站、四居、六份接力合同和九态人工交接构建可转换住房、工作空间与公共服务之间的短链；v2.0 将空间骨架、三处站点原型和运营合同分层表达，全部空间表达均为基于 provisional geometry 的概念建议。"
+iteration: "v1.3"
+summary: "以京张铁路的编组、换挂与直通为文化线索，用一线、三站、四居、六份接力合同和九态人工交接构建可转换住房、工作空间与公共服务之间的短链；全部空间表达均为基于 provisional geometry 的概念建议。"
 tracks: ["youth-friendly-public-space", "ai-public-services", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "ai-health-service-navigation", "ai-traffic-walkability", "ai-cultural-guide"]
 ---
 
-# 京张居业接力 / HOME-WORK RELAY
+# 行止有居——京张居业接力
 
 **副标题：可转换之家与居业短链**
 
 “行”是沿京张廊道抵达、转岗、迁居与再出发，“止”是在一段人生和一项事业中获得安顿，“有居”则要求住处、工位、照护与公共服务不因一次转换而彼此断开。本方案把铁路的“编组、换挂、直通”转译为城市生活机制：人可以换项目、换团队、换户型或暂时离开，但不必退出已经建立的社区关系和服务网络。方案署名为 **NearCai × OpenAI Codex**，是一项开放共创的概念建议，不是经审定的规划或实施承诺。
 
-v2.0 保留 93 分版本的 **HOME-WORK RELAY CONTRACT**，并把“空间骨架”和“运营转换”明确拆开：前者呈现铁路遗产叙事、公共路径、庭院、门厅和三处站点的相对关系；后者处理租期、户型、工位、服务、私宅同意、离开与回流。每份合同都声明负责与批准角色、最小输入、九态入口与目标、同意方、AI 禁区、人工决定、无 AI 与断网路径、停止触发、恢复证据和待试点校准的服务时钟。12 项本地桌面检查只验证这些结构与正反例，其中含“家庭评分”的负向 fixture 必须被拒绝；它们不是现场测试或服务绩效 [metric:relay_contract_count] [metric:relay_state_count] [metric:relay_tabletop_check_count]。
+v1.2 将原来的“六接力”从叙事升级为 **HOME-WORK RELAY CONTRACT**。租期、户型、工位、服务、私宅同意、离开与回流各有一份合同；每份合同都声明负责与批准角色、最小输入、九态入口与目标、同意方、AI 禁区、人工决定、无 AI 与断网路径、停止触发、恢复证据和待试点校准的服务时钟。12 项本地桌面检查只验证这些结构与正反例，其中含“家庭评分”的负向 fixture 必须被拒绝；它们不是现场测试或服务绩效 [metric:relay_contract_count] [metric:relay_state_count] [metric:relay_tabletop_check_count]。
 
 ## 设计依据与资料清单
 
@@ -85,8 +85,6 @@ v2.0 保留 93 分版本的 **HOME-WORK RELAY CONTRACT**，并把“空间骨架
 总体方案达到的是“控规深度问题清单加可复算概念设计”，而不是法定控规成果。official boundary、宗地、权属、现状建筑、市政和交通底数到位后，应以相同数据模型重做叠合、容量与实施校核；在此之前，任何面积与比例只说明提交图层自身的一致性 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:metrics_recalculation]。
 
 ## 重点区域详细设计
-
-v2.0 的三张站点图不再把站点表现为功能色块或高度示意，而是把公共门厅、庭院、可变内装、照护门廊、服务凹湾和私宅门槛画成可供专业团队进一步核查的相对剖面。图中的人行、维护、照护和普通服务路径只表达可见与分流的原则；没有道路红线、建筑高度、消防距离、权属或施工结论 [depth:three_key_area_detailed_design] [source:ISSUE-KEYAREA-1029]。
 
 ![三处重点区与三座居业接力站](assets/figures/key-areas.png)
 
