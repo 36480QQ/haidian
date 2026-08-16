@@ -8,8 +8,7 @@
       "report_sections": [
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -21,13 +20,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
+        "physarum_recommended_plan_uds",
         "key_area_count"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
@@ -59,10 +55,8 @@
       "title_zh": "建设适配AI新质生产力的新型城市形态",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "交通、轨道、市政与公共服务设施"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -74,14 +68,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_network_edge_count",
+        "physarum_efficiency_index"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/spatial_function_synergy.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -112,10 +103,8 @@
       "title_zh": "打造全球AI创新人才向往的高品质城区",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "蓝绿空间、公共空间与城市风貌",
+        "无障碍与包容性设计（GB 50763-2012）"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -127,14 +116,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "public_space_ratio"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/inclusive_matrix.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -165,10 +151,7 @@
       "title_zh": "统筹研究范围",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "三层范围工作框架"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -180,14 +163,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "site_area_sqm"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/site-overview.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -218,10 +197,8 @@
       "title_zh": "总体设计范围",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "用地、建筑规模与拆改留方案"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -233,14 +210,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "building_footprint_area_sqm",
+        "floor_area_ratio"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/land-use-structure.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -271,9 +245,6 @@
       "title_zh": "重点区域范围",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
       ],
       "geojson_layers": [
@@ -286,14 +257,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "key_area_count"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/key-areas.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -324,10 +291,7 @@
       "title_zh": "统筹研究范围：AI创新生态体系",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "统筹研究范围产业与未来城市研究"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -339,14 +303,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_recommended_plan_uds"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/case_ecosystem.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -378,9 +338,7 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "统筹研究范围产业与未来城市研究"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -392,14 +350,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_network_edge_count"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/8d_mechanism.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -430,10 +384,7 @@
       "title_zh": "总体设计范围：产业目标与功能布局",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -445,14 +396,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "key_area_count"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/spatial_function_synergy.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -483,10 +430,7 @@
       "title_zh": "总体设计范围：城市更新总体框架",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "用地、建筑规模与拆改留方案"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -498,14 +442,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "floor_area_ratio",
+        "building_footprint_area_sqm"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/land_use_plan.pdf"
       ],
       "visual_sections": [
         "总览地图",
@@ -536,10 +477,7 @@
       "title_zh": "总体设计范围：交通轨道市政配套设施",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "交通、轨道、市政与公共服务设施"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -551,14 +489,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_efficiency_index"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/road_section.pdf"
       ],
       "visual_sections": [
         "总览地图",
@@ -589,10 +523,7 @@
       "title_zh": "总体设计范围：京张遗址公园活力带",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -604,14 +535,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_heritage_crossing_count"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/mobility-bluegreen.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -642,10 +570,7 @@
       "title_zh": "总体设计范围：城市风貌",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -657,14 +582,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "public_space_ratio"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/brand_identity.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -695,9 +616,6 @@
       "title_zh": "重点区域范围详细设计必选项",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
       ],
       "geojson_layers": [
@@ -710,14 +628,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "site_area_sqm"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.pdf"
       ],
       "visual_sections": [
         "总览地图",
@@ -748,9 +663,6 @@
       "title_zh": "众智园AI自主创新加速区",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
       ],
       "geojson_layers": [
@@ -763,14 +675,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_baseline_efficiency"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/pilot_node_plan.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -801,9 +709,6 @@
       "title_zh": "北京AI原点社区",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
       ],
       "geojson_layers": [
@@ -816,14 +721,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "green_ratio"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/pilot_node_section.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -854,9 +755,6 @@
       "title_zh": "大钟寺AI产业聚集区",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
       ],
       "geojson_layers": [
@@ -869,14 +767,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "public_space_ratio"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/phasing_plan.pdf"
       ],
       "visual_sections": [
         "总览地图",
@@ -908,9 +802,7 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -923,12 +815,9 @@
       ],
       "metrics": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_network_edge_count"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
@@ -960,10 +849,7 @@
       "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "三大定位、五大功能与三区两翼协同（agent.2）"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -975,14 +861,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_recommended_plan_uds",
+        "physarum_efficiency_index"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/spatial_function_synergy.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -1013,10 +896,7 @@
       "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1028,14 +908,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "test_scenario_count"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/fallback_flow.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -1066,10 +942,7 @@
       "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1081,14 +954,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "green_ratio"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/pilot_node_section.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -1119,10 +989,7 @@
       "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "地标、组件系统与荣誉机制（agent.5）"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1134,14 +1001,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_heritage_crossing_count"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/brand_identity.png"
       ],
       "visual_sections": [
         "总览地图",
@@ -1172,10 +1035,7 @@
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "文化导视、国际叙事、年度活动与长期运营（agent.6）"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1187,14 +1047,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "physarum_run7_frozen_objective"
       ],
       "drawings": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/operation_funnel.png"
       ],
       "visual_sections": [
         "总览地图",
