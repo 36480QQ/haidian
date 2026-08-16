@@ -865,9 +865,22 @@
       "what_en": "Restore the threefold vertical exaggeration in the spine section while the caption still says there is none. **This is the state the first version of this drawing was actually in**, changed before it shipped.",
       "why_zh": "**一幅与自己题注矛盾的图，比没有那幅图更糟**：它把一句可核对的话变成装饰。这条变异要证明的是：断面的竖向与横向比例一旦不同，构建就停。",
       "why_en": "**A drawing that contradicts its own caption is worse than no drawing**: it turns a checkable sentence into decoration. This mutation proves that the section's vertical and horizontal scales parting company stops the build."
+    },
+    {
+      "id": "M72",
+      "gate": "computed_value_qa.py",
+      "target": "build_figure_index.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把图纸索引的注释规则改回「只给评审收到的五张保留」——**这正是本轮第一次剪裁时的真实状态**：一句带实测量的注释被连同装饰一起剪掉，而 `computed_value_qa` 当场报出那条模式再也匹配不到任何一处。",
+      "what_en": "Put the figure index's note rule back to keeping notes only for the five sheets the reviewer receives. **This is the state the first cut of this round was actually in**: a note carrying a measured quantity went out with the descriptive ones, and computed_value_qa reported its pattern as matching nothing.",
+      "why_zh": "**剪裁要剪装饰，不剪读数。** 这条变异要证明的是：任何一句带构建算得出的数的句子被剪掉，构建就停——而不是安静地少掉一处可核对的东西。",
+      "why_en": "**A cut removes decoration, not readings.** This mutation proves that dropping any sentence carrying a number the build computes stops the build rather than quietly losing something checkable."
     }
   ],
-  "caught": 71,
+  "caught": 72,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
