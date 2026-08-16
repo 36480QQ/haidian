@@ -1699,22 +1699,22 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 <!-- FIGINDEX:BEGIN -->
 
-There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration. **The reviewing model receives 5 of them directly, marked below**; the rest arrive in the two PDFs and the offline page.
 
 | Sheet | Content | What to read on it |
 |---|---|---|
-| FIG.00 | The leveling line: a city that publishes its own error | The proposal in one line: the red height difference is the closure error, the one thing it asks to be trusted on |
-| FIG.01 | Overall concept and site overview | Three areas and two wings named on the map; five functions on one loop. Cross-check kept as a footnote: 412.5 m to the park |
-| FIG.02 | Evidence chain as an unclosed leveling circuit | The red gap left of the circuit is the closure error; three cards below measure the call |
-| FIG.03 | Three scope levels and network tiers | The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give |
-| FIG.04 | Three areas, two wings and benchmark layout | Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points |
-| FIG.05 | Slow mobility, blue-green and connecting routes | The two connecting routes and their direction; tolerance bands lower right |
-| FIG.06 | Recomputed metrics and closure evidence | Three metric classes at left; at right the run: ten cases, two passed and eight refused with reasons |
-| FIG.07 | Identity: mark, construction and applications | The mark draws the method: the datum departs, rises, returns, does not land back on the datum |
-| FIG.08 | Innovation ecosystem and element mechanisms | The chain of custody for each element; the red box where the funding row is deliberately left blank; the gap all six cases point at |
-| FIG.09 | Landmarks, kit of parts, signage syntax and operating cycle | The actual form of the five standard components; the numbering grammar; a calendar organised by re-survey cycle rather than by festival |
-| FIG.10 | The benchmark on the street and how the kerb is shared | A third-order benchmark drawn at human eye height: the stone flush with the ground, the current `f ≤ F` on the reading plate, the appeal route given as both a QR code and a phone number; the four figures standing there are the people who take the readings, not staffage. The kerb section below **draws the order and not the widths** |
-| FIG.11 | Regional coordination interfaces: extending the levelling network | Every row states not only what is exchanged but **what is explicitly not exchanged** and what must hold before the interface opens; the output of coordination is a number (cross-network closure error), not a statement of intent |
+| FIG.00 | The leveling line: a city that publishes its own error | — |
+| ● FIG.01 | Overall concept and site overview | Three areas and two wings named on the map; five functions on one loop. Cross-check kept as a footnote: 412.5 m to the park |
+| FIG.02 | Evidence chain as an unclosed leveling circuit | — |
+| ● FIG.03 | Three scope levels and network tiers | The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give |
+| ● FIG.04 | Three areas, two wings and benchmark layout | Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points |
+| ● FIG.05 | Slow mobility, blue-green and connecting routes | The two connecting routes and their direction; tolerance bands lower right |
+| ● FIG.06 | Recomputed metrics and closure evidence | Three metric classes at left; at right the run: ten cases, two passed and eight refused with reasons |
+| FIG.07 | Identity: mark, construction and applications | — |
+| FIG.08 | Innovation ecosystem and element mechanisms | — |
+| FIG.09 | Landmarks, kit of parts, signage syntax and operating cycle | — |
+| FIG.10 | The benchmark on the street and how the kerb is shared | — |
+| FIG.11 | Regional coordination interfaces: extending the levelling network | — |
 | FIG.12 | Four-quadrant pedestrian connection and device queue reservoir at Dazhongsi | A 1:500 type drawing: holding areas in all four quadrants, the queue reservoir set behind the building line, and an **as-measured column left empty** — carrying capacity must be computed on site from measured effective clear width |
 | FIG.13 | The three key areas in section, at one scale | One horizontal scale, one datum convention, no vertical exaggeration — and three different problems: reaching a river across a 100% single-use block; step-free continuity over a 1.2 m rise; a station below grade with the device queue held behind the building line. **±0.00 is each area's own benchmark, not a shared absolute datum** |
 | FIG.14 | The through-block public route to the Qing river | FIG.13's section says this edge needs a public route across the R&D block to the levee path, and no drawing showed it. 6.0 m clear, centres at most 250 m apart (four of them, divided into a 939.0 m frontage), **open 24 hours and ungated**; the fallback alignment and the cost of a refusal are drawn, the cost in minutes |
@@ -1722,8 +1722,8 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 | FIG.16 | The benchmark and its reading plate, as a construction detail | It all rests on one object and **no dimension appeared anywhere in the package**. Plan at 1:20, section and elevation at 1:10, nine dimensions each with the reason it is that number; **the one blank is frost depth D** — a local geotechnical value with no verifiable source here, so the sheet gives the rule, not the number |
 | FIG.17 | The step-free link from the origin community to the heritage park | FIG.13's section says this place exists to put a 1:12 ramp where the steps are, no drawing had shown it. One decision: **the ramp sits on the desire line, the steps beside it** — the usual arrangement offsets the ramp and charges its user twice that offset every trip, while nobody on the steps walks a metre further |
 | FIG.18 | Maintenance: putting the wear on the parts that can be swapped | A monthly re-survey is a maintenance problem. One asymmetry drives it: **the stone is the only part never replaced and the only one a person cannot carry** (about 230 kg) — a benchmark that moves is not the same one — so wear goes on the face, post, seat and strip; the last block states what happens if a stone is lost |
-| FIG.19 | Monuments beside heritage fabric: the no-drilling construction and its setback rule | The call is for a belt along a hundred-year-old railway and this proposal's central act is sinking concrete. Three constructions by distance, with the cost stated: **without excavation there is no foundation below the frost line, so the surface-set marker cannot carry first- or second-order duty**. Where d starts depends on the official heritage layer — absent here, recorded as a gap |
-| FIG.20 | Reading after dark, without lighting the benchmark | Three third-order points are read monthly by residents, many days after dark. A lamp is the obvious answer and the wrong one: **a dead lamp leaves a plate that looks maintained and cannot be read** — a failure you cannot see. It retroreflective and the reader brings the light; a dirty face looks dirty, in daylight |
+| FIG.19 | Monuments beside heritage fabric: the no-drilling construction and its setback rule | — |
+| FIG.20 | Reading after dark, without lighting the benchmark | — |
 | FIG.21 | How far the nearest benchmark actually is: this proposal's own rule, applied to itself | This proposal argues review fifteen minutes away has not been given — and **nobody measured the walk**. The worst place on the line is 1,111 m from the nearest benchmark, **30.9 min for P5, twice the limit this proposal holds others to**, six of nine segments fail. The rule ships as spacing; the positions await the official alignment |
 | FIG.22 | Winter: water, ice, and two of this package's rules in collision | The three community points are read monthly, so in January. KIT-01 wants it stone flush with no trip hazard, FIG.16 gave ±5 mm — **a mark flush into level paving sits in whatever the paving collects: the tolerance that makes it safe in September makes it dangerous in January**. The answer is a local high point, not a ring |
 | FIG.23 | Finding the nearest benchmark: which way, and how far | Markers appear only where FIG.21 fails: 48 at 150 m, on the existing KIT-04, nothing new built. The face answers four things: direction, distance, P5 time, id. **And states what signage cannot do — it does not make 1,111 m near; mitigation, not a fix** |
