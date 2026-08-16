@@ -29,6 +29,12 @@
         "submissions/haoan/jingzhang-ai-belt/assets/figures/metrics-evidence.png",
         "submissions/haoan/jingzhang-ai-belt/assets/figures/mobility-bluegreen.en.png",
         "submissions/haoan/jingzhang-ai-belt/assets/figures/mobility-bluegreen.png",
+        "submissions/haoan/jingzhang-ai-belt/assets/figures/network-synergy.en.png",
+        "submissions/haoan/jingzhang-ai-belt/assets/figures/network-synergy.png",
+        "submissions/haoan/jingzhang-ai-belt/assets/figures/scenario-lifecycle.en.png",
+        "submissions/haoan/jingzhang-ai-belt/assets/figures/scenario-lifecycle.png",
+        "submissions/haoan/jingzhang-ai-belt/assets/figures/section-concept.en.png",
+        "submissions/haoan/jingzhang-ai-belt/assets/figures/section-concept.png",
         "submissions/haoan/jingzhang-ai-belt/assets/figures/site-overview.en.png",
         "submissions/haoan/jingzhang-ai-belt/assets/figures/site-overview.png",
         "submissions/haoan/jingzhang-ai-belt/assumptions.json",
@@ -58,6 +64,7 @@
         "submissions/haoan/jingzhang-ai-belt/report/proposal.html",
         "submissions/haoan/jingzhang-ai-belt/self_check.json",
         "submissions/haoan/jingzhang-ai-belt/sources.json",
+        "submissions/haoan/jingzhang-ai-belt/spatial.json",
         "submissions/haoan/jingzhang-ai-belt/standard_matrix.json",
         "submissions/haoan/jingzhang-ai-belt/visual/assets/base-osm.json",
         "submissions/haoan/jingzhang-ai-belt/visual/assets/map-data.js",
@@ -67,7 +74,7 @@
       "ai_package_stages": {
         "submissions/haoan/jingzhang-ai-belt": "formal"
       },
-      "total_bytes": 6838217,
+      "total_bytes": 8424676,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -142,7 +149,7 @@
       "summary": {
         "standard_matrix_items": 8,
         "design_depth_items": 15,
-        "known_metric_refs_required": 12,
+        "known_metric_refs_required": 13,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
