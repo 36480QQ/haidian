@@ -271,7 +271,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 57 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 1,727 bytes to spare. The package totals 40.0 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 57 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 1,726 bytes to spare. The package totals 40.0 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -295,7 +295,7 @@
       "severity": "info",
       "target": "compliance/standard/design_depth matrices",
       "source": "package-provided",
-      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 618 declared across three matrices, 618 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 23 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
+      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 650 declared across three matrices, 650 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 23 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
     },
     {
       "check_id": "PKG_MEASUREMENT_PROTOCOL_QA",
@@ -311,7 +311,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 569 distinct names harvested from the package — 553 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 572 distinct names harvested from the package — 556 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_ORGANISER_REVIEW_QA",
@@ -487,7 +487,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "standards_alignment_qa.py — standards alignment: all 5 standards the organisers mark mandatory are answered in standard_matrix.json, plus 1 optional (MOHURD-ARCH-DESIGN-DEPTH-2016); 6 cited ids all exist in the registry (read from upstream/main)"
+      "message": "standards_alignment_qa.py — standards alignment: all 9 standards in the organisers' registry are answered in standard_matrix.json — 5 mandatory and 4 optional (BARRIER-FREE-ENVIRONMENT-LAW, ELDERLY-SMART-TECH-PLAN-2020-45, GENERATIVE-AI-INTERIM-MEASURES, MOHURD-ARCH-DESIGN-DEPTH-2016); 9 cited ids all exist in the registry (read from upstream/main). The floor was 'nothing mandatory missing' and is now 'nothing registered unanswered'; a standard this package declines would be declined in this gate with its reason, not by saying nothing"
     },
     {
       "check_id": "PKG_STATUTE_QUOTE_QA",

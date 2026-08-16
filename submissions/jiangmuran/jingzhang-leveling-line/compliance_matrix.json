@@ -71,8 +71,7 @@
         "核心指标"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "ELDERLY-SMART-TECH-PLAN"
+        "OFFICIAL-ANNOUNCEMENT"
       ],
       "assumption_ids": [
         "A-CLOSURE-001"
@@ -80,14 +79,17 @@
       "self_check_ids": [
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」「AI 创新生态、人才画像与 AI+ 场景」；图层 public_space.geojson；指标 public_space_ratio、benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；指标 persona_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 street-eye-level.png、kit-of-parts.png；来源 OFFICIAL-ANNOUNCEMENT、ELDERLY-SMART-TECH-PLAN（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」「AI 创新生态、人才画像与 AI+ 场景」；图层 public_space.geojson；指标 public_space_ratio、benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；指标 persona_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 street-eye-level.png、kit-of-parts.png；来源 OFFICIAL-ANNOUNCEMENT（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 14,
-        "reviewer_can_read_whole": 11,
+        "reviewer_can_read_whole": 10,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 3
-      }
+        "reviewer_cannot_open": 4
+      },
+      "standard_ids": [
+        "ELDERLY-SMART-TECH-PLAN-2020-45"
+      ]
     },
     {
       "requirement_id": "1.3.3",
@@ -656,8 +658,7 @@
         "来源"
       ],
       "source_ids": [
-        "KEY-AREA-SOURCE",
-        "BARRIER-FREE-ENVIRONMENT-LAW"
+        "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
         "A-CLOSURE-002"
@@ -665,14 +666,17 @@
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本条由正文小节「北京 AI 原点社区」「三片区共同的拆改留原则」；图层 constraints.geojson；指标 benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；指标 tabletop_case_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 key-areas.png、evidence-circuit.png；来源 KEY-AREA-SOURCE、BARRIER-FREE-ENVIRONMENT-LAW（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「北京 AI 原点社区」「三片区共同的拆改留原则」；图层 constraints.geojson；指标 benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；指标 tabletop_case_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 key-areas.png、evidence-circuit.png；来源 KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 13,
-        "reviewer_can_read_whole": 10,
+        "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 2
-      }
+        "reviewer_cannot_open": 3
+      },
+      "standard_ids": [
+        "BARRIER-FREE-ENVIRONMENT-LAW"
+      ]
     },
     {
       "requirement_id": "1.5.3.3",
@@ -824,9 +828,7 @@
         "AI 场景"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK",
-        "GENERATIVE-AI-INTERIM-MEASURES",
-        "BARRIER-FREE-ENVIRONMENT-LAW"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
         "A-CLOSURE-001",
@@ -835,14 +837,18 @@
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本条由正文小节「AI 创新生态、人才画像与 AI+ 场景」；图层 constraints.geojson、public_space.geojson；指标 scenario_card_count、scenario_cards_operational_count、persona_count、tabletop_case_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 evidence-circuit.png；来源 AGENT-TASKBOOK、GENERATIVE-AI-INTERIM-MEASURES、BARRIER-FREE-ENVIRONMENT-LAW（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「AI 创新生态、人才画像与 AI+ 场景」；图层 constraints.geojson、public_space.geojson；指标 scenario_card_count、scenario_cards_operational_count、persona_count、tabletop_case_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 evidence-circuit.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 15,
-        "reviewer_can_read_whole": 12,
+        "reviewer_can_read_whole": 10,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 3
-      }
+        "reviewer_cannot_open": 5
+      },
+      "standard_ids": [
+        "BARRIER-FREE-ENVIRONMENT-LAW",
+        "GENERATIVE-AI-INTERIM-MEASURES"
+      ]
     },
     {
       "requirement_id": "agent.4",
@@ -869,8 +875,7 @@
         "建筑"
       ],
       "source_ids": [
-        "AGENT-TASKBOOK",
-        "ELDERLY-SMART-TECH-PLAN"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
         "A-HERITAGE-001"
@@ -878,14 +883,17 @@
       "self_check_ids": [
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 buildings.geojson、public_space.geojson；指标 public_space_ratio、building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、street-eye-level.png；来源 AGENT-TASKBOOK、ELDERLY-SMART-TECH-PLAN（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 buildings.geojson、public_space.geojson；指标 public_space_ratio、building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 14,
-        "reviewer_can_read_whole": 10,
+        "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 4
-      }
+        "reviewer_cannot_open": 5
+      },
+      "standard_ids": [
+        "ELDERLY-SMART-TECH-PLAN-2020-45"
+      ]
     },
     {
       "requirement_id": "agent.5",
@@ -974,10 +982,10 @@
   ],
   "reviewer_reachability_total": {
     "references": 287,
-    "reviewer_can_read_whole": 213,
+    "reviewer_can_read_whole": 208,
     "reviewer_sees_as_image": 17,
     "reviewer_sees_first_page_only": 0,
-    "reviewer_cannot_open": 57,
+    "reviewer_cannot_open": 62,
     "note_zh": "评审模型整份收到九个文件，不含 `geometry/` 与 `visual/assets/`（见 `scripts/review_submission.py::build_review_input`）。本表逐条标出它能打开多少、打不开多少——**这不是免责，是让评审知道哪一行的证据它可以自己核，哪一行只能听我说**。数字由构建算出，管线若开始多送文件，它们会自己变。"
   },
   "rubric_coverage": {
