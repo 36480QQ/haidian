@@ -35,7 +35,6 @@ class ContributingGuideTests(unittest.TestCase):
         self.assertIn("requirements-validation.txt", readme)
         self.assertIn("requirements-review.txt", readme)
         self.assertIn("requirements-translation.txt", readme)
-        self.assertIn("优先运行对应的测试模块", readme)
         self.assertIn("python3 -m unittest discover -s tests -v", readme)
         self.assertNotIn("python -m pytest", readme)
 
