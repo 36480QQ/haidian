@@ -1,4 +1,10 @@
 # 方案迭代记录
+## v0.8 - 2026-08-16
+
+- Fixed corrupted Chinese text in `visual/index.html` v0.5/v0.6 evidence sections so the offline exhibit is human-readable rather than only machine-valid.
+- Added merged provisional-boundary basis evidence: four announcement-named street centerlines read 533-898 m west of current `PROV-SITE-001` edges under the background OSM comparison.
+- Updated assumptions, sources, bilingual proposal text and visual HTML to keep these readings as recalculation triggers only, not official boundary or score claims.
+
 ## v0.7 - 2026-08-15
 
 - Added Issue #846 spatial-risk response: PROV-SITE-001 / OSM park 412.5 m discrepancy and the peer-reported PROV-KEY-003 / Dazhongsi anchor offset are now logged as background-only risk triggers, not official geometry.
