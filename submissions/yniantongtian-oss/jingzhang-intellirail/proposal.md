@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗产公共空间为主轴，构建一轴三核两翼多点的创新带；用可复算的临时空间图层、十二类AI+场景、三类验证沙盒和长期运营闭环，把产业创新、日常生活与百年铁路文脉组织为同一套城市设计。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.3"
+iteration: "v1.4"
 ---
 
 # 京张智轨：百年京张AI创新带城市设计
@@ -44,6 +44,22 @@ iteration: "v1.3"
 | 功能五 | AI治理全球话语权 | 数据合规会客厅、模型卡展陈、公共申诉与独立审计 |
 | 空间结构 | 三区两翼 | 一轴三核两翼多点（对应关系见下章） |
 | 产业协同 | 联动“两区一带” | 三核差异化分工、两翼横向缝合与区域协同节 |
+
+正文承诺与本包交付一一对应，检索路径如下：
+
+| 交付内容 | 本包文件 |
+| --- | --- |
+| 双语方案正文 | proposal.md、proposal.en.md |
+| 渲染阅读版（双语） | report/proposal.html、report/proposal.en.html |
+| 九个空间图层 | geometry/*.geojson |
+| 核心指标与复算口径 | metrics.json |
+| 合规、标准与设计深度矩阵 | compliance_matrix.json、standard_matrix.json、design_depth_matrix.json |
+| 来源分级与假设记录 | sources.json、assumptions.json |
+| 四门自检报告 | self_check.json |
+| 五张图件（中英各一） | assets/figures/*.png |
+| A3 册页与 A0 展板（中英各一） | drawings/*.pdf |
+| 离线视觉页（双语） | visual/index.html、visual/index.en.html |
+| 迭代记录 | changelog.md |
 
 ## 三层范围工作框架
 

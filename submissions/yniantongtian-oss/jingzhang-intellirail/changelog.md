@@ -1,5 +1,10 @@
 # 方案迭代记录 / Jing-Zhang Intelli-Rail Changelog
 
+## v1.4 - 2026-08-17
+
+- 新增“承诺—交付”索引表：正文承诺的每类交付内容对应到包内具体文件，供评审快速核验。
+  Added a promise-to-deliverable index mapping every category of promised content to the exact package files for quick review verification.
+
 ## v1.3 - 2026-08-17
 
 - 三处重点区按公告官方街区类型逐字对词：众智园=花园型、原点社区=近校型、大钟寺=城市型人工智能创新街区，并在重点区对照表新增“官方街区类型”列。

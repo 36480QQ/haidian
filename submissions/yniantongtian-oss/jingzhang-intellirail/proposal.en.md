@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-space-first innovation belt structured as one heritage spine, three differentiated hubs, two cross-corridor service wings, and twelve auditable AI+ scenarios, with provisional geometry and full recalculation triggers."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.3"
+iteration: "v1.4"
 ---
 
 # Jing-Zhang Intelli-Rail
@@ -44,6 +44,22 @@ Structural statements from the announcement and taskbook are matched section by 
 | Function 5 | Global Voice in AI Governance | Data-compliance salon, model-card displays, public appeals and independent audit |
 | Spatial structure | Three Zones and Two Wings | One spine, three hubs, two wings, multiple nodes (mapped in the next chapter) |
 | Industrial linkage | "Two districts, one belt" coordination | Differentiated three-hub division and transverse wing stitching |
+
+Every promise in the prose maps to a file in this package:
+
+| Deliverable | Package files |
+| --- | --- |
+| Bilingual proposal text | proposal.md, proposal.en.md |
+| Rendered reading edition (bilingual) | report/proposal.html, report/proposal.en.html |
+| Nine spatial layers | geometry/*.geojson |
+| Core metrics and recalculation basis | metrics.json |
+| Compliance, standards, and design-depth matrices | compliance_matrix.json, standard_matrix.json, design_depth_matrix.json |
+| Source grading and assumption records | sources.json, assumptions.json |
+| Four-gate self-check report | self_check.json |
+| Five figures (zh and en) | assets/figures/*.png |
+| A3 booklet and A0 boards (zh and en) | drawings/*.pdf |
+| Offline visual page (bilingual) | visual/index.html, visual/index.en.html |
+| Iteration record | changelog.md |
 
 ## Three-Level Scope Framework
 
