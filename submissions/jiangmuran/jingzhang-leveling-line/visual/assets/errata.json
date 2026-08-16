@@ -503,8 +503,8 @@
   },
   {
    "id": "E200",
-   "commit": "5b1f9bab",
-   "file": "sources.json",
+   "commit": "bc5a02c8",
+   "file": "visual/assets/gate_mutation.json",
    "found_by": "own-gate",
    "shape": "check-measured-the-convenient-thing",
    "what_zh": "变异 M56 损坏 `i18n_drawings.py`、跑完闸门、把原字节写回——**而 `__pycache__` 里留着的是照损坏版编译出来的字节码**。写回时文件大小与时间戳落在缓存认可的范围内，于是同一次构建里后面的 `term_consistency_qa` 导入模块，读到的是那张已经不在源文件里的翻译表，在**完好无损的包上**报出一处并不存在的用词分歧，构建停住。",
