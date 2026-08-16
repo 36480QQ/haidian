@@ -351,7 +351,7 @@ The spine is cut laterally by several existing arterials, and stitching those cu
 
 **This section had a classification and no geometry — now it has one.** For most of this package's life `roads.geojson` held the spine and the two survey routes and nothing else, while the proposal spent a whole subsection classifying stitching points. That is the same defect this package reports in other people's structured fields, so it is closed.
 
-Intersecting the submitted spine `ROAD-001` with OSM-surveyed arterials (trunk/primary/secondary, named only) in EPSG:4548 yields **eleven east-west stitching points**, written into [data:geometry/roads.geojson#ROAD-001] as ROAD-101 through ROAD-111. Each is a 90 m connection across the corridor, perpendicular to the spine (E204: it used to run along it, joining neither side to the other):
+Intersecting the submitted spine `ROAD-001` with OSM-surveyed arterials (trunk/primary/secondary, named only) in EPSG:4548 yields **eleven east-west stitching points**, written into [data:geometry/roads.geojson#ROAD-001] as ROAD-101 through ROAD-111. Each is a 90 m connection across the corridor, perpendicular to the spine (E204: it used to run along it):
 
 | Stitching point | Class | Nearest mapped crossing |
 |---|---|---|
@@ -554,7 +554,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (478); a non-AI equivalent path (362); an on-site safety officer (326); remote and physical e-stop (173); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 478. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (478); a non-AI equivalent path (362); an on-site safety officer (327); remote and physical e-stop (173); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 478. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1222,14 +1222,14 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-203 entries. By finder:
+204 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 25 | The audit was run against the shipped package, not a draft |
+| Independent audit | 25 | Run against the shipped package, not a draft |
 | The author | 140 | Found while working |
-| This package's own gate | 15 | Caught at build time — which is what a gate is for |
-| An outside adversarial read | 18 | A reader outside this package, on the files the reviewer gets |
+| This package's own gate | 15 | Caught at build time, which is what a gate is for |
+| An outside adversarial read | 19 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
 
 <!-- ERRATA:COUNT:END -->
@@ -1256,9 +1256,9 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | No file behind it | 6 |
 | A total excluding | 5 |
 | A source unnameable | 5 |
+| Geometry not meaning it | 5 |
 | Recorded where found | 5 |
 | Outlived a corpus | 4 |
-| Geometry not meaning it | 4 |
 | Drawn without its ground | 2 |
 | Answers what it cannot | 2 |
 | Attributed to a file that refuses | 1 |
@@ -1738,7 +1738,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would repeat, at the scale of a checklist, this package's erratum about `analysis/`: an invitation to verify addressed to someone who cannot.
 
-**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files, 918 KB, 1,663 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
+**FIG.21 measured the walk to a benchmark; nothing measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 923 KB, 1,667 entries left to read, per item in `visual/assets/review_route.json`. Timings bound effort, not difficulty.
 
 **This disclosure has a shelf life, so it states where the fix stands.** The gap is upstream Issue #2170; the maintainers opened PR #2181, which adds an auditable access boundary to the review input, states that participant verification scripts are never executed, and corrects the review prompt so that a model **may not deduct points or fail a gate merely because it cannot open a registered artifact**. Once it merges the count above is unchanged; its consequence is not, because unreachability stops being read as the participant having withheld something. This package has already taken that recovery route: the key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
