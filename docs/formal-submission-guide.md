@@ -195,7 +195,7 @@ python3 scripts/fetch_standard_references.py --update-standards
 
 ## 4. `compliance_matrix.json`
 
-`compliance_matrix.json` 是“任务响应表”。它告诉评审器和人类评审：官方公告 1.3、1.4、1.5 与面向智能体任务书 `agent.1` 至 `agent.6` 的每个必选任务，在方案中由哪些章节、图层、指标、图纸、HTML 页面、来源和自检项支撑。
+`compliance_matrix.json` 是“任务响应表”。它告诉评审器和人类评审：官方公告 1.3、1.4、1.5 与面向智能体任务书 `agent.1` 至 `agent.6` 的每个必选任务，在方案中由哪些章节、图层、指标、图纸、HTML 页面、来源、标准和自检项支撑。`source_ids` 只填写 `sources.json` / 中央来源登记中的来源 ID；专业标准 ID 应填写到独立的 `standard_ids`，并同时在 `standard_matrix.json` 中声明，不得混入 `source_ids`。
 
 必须覆盖这些 `requirement_id`：
 
@@ -238,6 +238,7 @@ agent.6 一带全球AI创新活动体系与长期运营设计
   "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
   "visual_sections": ["建筑与更新项目", "任务覆盖"],
   "source_ids": ["OFFICIAL-ANNOUNCEMENT", "OFFICIAL-DESIGN-BOUNDARY"],
+  "standard_ids": ["MOHURD-URBAN-DESIGN-MEASURES"],
   "assumption_ids": ["A-CONTROLS-001"],
   "self_check_ids": ["LAND_USE_TOPOLOGY", "BOUNDARY_TRUST"]
 }

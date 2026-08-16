@@ -227,6 +227,7 @@ submission/
 - Provisional geometry must disclose precision limits and must not claim to be an official redline, but organizer data gaps alone do not block content scoring.
 - Every announcement task in sections 1.3, 1.4, and 1.5 must be covered in `compliance_matrix.json`.
 - Every agent-open-call task in `agent_taskbook.json` (`agent.1` through `agent.6`) must be covered in `compliance_matrix.json` and explained in `proposal.md`.
+- In `compliance_matrix.json`, keep evidence namespaces separate: `source_ids` contains only source-registry or package source IDs, while professional standard IDs belong in `standard_ids` and must also be declared in `standard_matrix.json`.
 - Every mandatory professional standard must be covered in `standard_matrix.json`.
 - Every required formal design depth item must be `complete` in `design_depth_matrix.json`.
 - New `proposal.md` files must set `proposal_format_version: "2"`. Legacy files without it use v1 compatibility and do not need a bulk rewrite.
