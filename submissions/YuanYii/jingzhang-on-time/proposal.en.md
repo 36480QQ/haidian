@@ -15,7 +15,7 @@ bilingual_contract_version: "1"
 
 > **Proposition: AI public services in the city should run like trains on a published timetable — punctuality is verifiable, changes require public notice, suspensions are announced in advance, delays come with compensation, and cross-service transfers are connected by schedule.**
 >
-> Version: v4.0 | 2026-08-14 | YuanYii | fourth submission (single naming system restored + section transitions polished)
+> Version: v5.0 | 2026-08-15 | YuanYii | fifth submission (public-evidence deepening + KPI baseline linking + scenario-card assertion linkage)
 >
 > One Diagram, Nine Stations, One Spine: the Jing-Zhang Railway Heritage Park serves as the operating-diagram main line (9.5 km spine), forming a three-tier spatial control system (regional study — overall design — key areas); the Urban Operating Diagram is the governance core — every AI service commitment is drawn on the diagram.
 
@@ -37,7 +37,7 @@ The formal package follows the announcement and agent taskbook as the primary au
 
 ## 02 Site Analysis and Data Boundaries
 
-All claims are reversible and reviewable. Drawings are generated on provisional constraint boundaries and do not constitute statutory control red lines. Official polygons, building census, FAR and real road networks are not yet published — all areas are provisional (official_boundary=false), buildings.geojson keeps status=unknown, and the demolition-retention-reconstruction proposal is a conceptual draft (confidence=low). Operating-diagram KPIs remain unknown until the first-service pilot: design blueprints are never presented as measured performance.
+All claims are reversible and reviewable. Drawings are generated on provisional constraint boundaries and do not constitute statutory control red lines. Official polygons, building census, FAR and real road networks are not yet published — all areas are provisional (official_boundary=false), buildings.geojson keeps status=unknown, and the demolition-retention-reconstruction proposal is a conceptual draft (confidence=low). Operating-diagram KPIs remain unknown until the first-service pilot: design blueprints are never presented as measured performance. **KPI baseline linking (v5)**: each KPI is explicitly tied to a pre-pilot baseline — punctuality/delay vs BL-01 (2.5 km operating corridor), suspension fulfilment vs BL-02 (15-gap stitching), window execution vs BL-04 (85.6% green coverage), transfer connection vs BL-03 (20.6% TOD circle); the 90-day D61-D90 gate compares directly against these baselines, with the assessment basis published in advance.
 
 **Verified context (public sources):** the ~9 km corridor with the first 2.5 km / 16.8 ha phase open; Qinghuayuan Station as a century-old anchor; 37 universities along the corridor; TOD stations (Wudaokou / Qinghua East Road West / Dazhongsi); ~15 main-spine pedestrian gaps (EPSG:4548 measured basis carried over).
 
@@ -101,7 +101,7 @@ Governance objects passing the mechanism triple-check (input / decision logic / 
 | constraints.geojson | ZN-PUB | R-DESIGN | G3 | active | Empty constraint set (official constraints unpublished) |
 | phasing.geojson | ZN-KA | R-DELIVERY | G1 | active | Six renewal projects phased (PH-01) |
 
-Rule: any layer with status=unknown is not a basis for governance effect; objects below gate G1 are not registered on the operating diagram (linked to T-01); raci roles map one-to-one to scenario-card responsibility fields (R-STATION-OPS / R-COMMUNITY-CARE / R-DELIVERY). Since v2 the in-text assertion table and geojson properties are cross-checked bidirectionally; layers missing any element do not enter mechanism triple-check.
+Rule: any layer with status=unknown is not a basis for governance effect; objects below gate G1 are not registered on the operating diagram (linked to T-01); raci roles map one-to-one to scenario-card responsibility fields (R-STATION-OPS / R-COMMUNITY-CARE / R-DELIVERY). **Scenario-card assertion linking (v5)**: each of the eight scenario cards (T-01~08) carries zone_id/raci/gate references — e.g. T-01 registration anchors ZN-KA + R-STATION-OPS + G1, T-07 first-service pilot anchors ZN-KA + R-DELIVERY + G2; a card missing any assertion field is not counted in service coverage (isomorphic with check_timetable.js). Since v2 the in-text assertion table and geojson properties are cross-checked bidirectionally; layers missing any element do not enter mechanism triple-check.
 
 ## 09 AI Innovation Ecosystem and 8 Scenario Cards
 
@@ -152,7 +152,7 @@ Six renewal projects run inside the diagram Proof-Mile loop (verify small first,
 
 [data:geometry/phasing.geojson#PH-01] [metric:punctuality_rate]
 
-**Verifiable current evidence (v2)**: Phase-1 of the Jing-Zhang Heritage Park corridor (2.5 km / 16.8 ha) is already in operation (publicly verifiable) — the physical basis and ridership anchor of the diagram main line; the 15 current spine gaps are EPSG:4548 measured (registered as baseline); 37 universities and the TOD skeleton (Wudaokou / East Qinghua Rd W. / Dazhongsi) are publicly verifiable.
+**Verifiable current evidence (v5)**: Phase-1 of the Jing-Zhang Heritage Park corridor (2.5 km / 16.8 ha) is already in operation — the physical basis and ridership anchor of the diagram main line. Publicly verifiable facts include: the operating corridor section, 37 universities along the corridor (public roster), three TOD stations (Wudaokou / East Qinghua Rd W. / Dazhongsi), and 15 current main-spine gaps (EPSG:4548 measured basis, carried from v1). Sources and measurement bases are registered in visual/assets/baseline_registry.json (BL-01~04) for item-by-item review.
 
 **Log contract (v2, code-level)**: visual/assets/logs_schema.json defines 6 event types (registration / trial / on-time / delay / suspension / compensation) with fields (service_id / time / stop / status code / human-takeover flag / evidence hash), isomorphic with check_timetable.js — logs start at pilot; KPIs use logs as the single source of truth; **pre-pilot stays unknown, no fabrication** (v1 commitment kept).
 
