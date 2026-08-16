@@ -940,9 +940,22 @@
       "what_en": "Put the share bars back to full strength. **This is the state this package was actually in until E231**: one hex at 0.46 in the plan and full strength in the bars, which a reader sees as two blues.",
       "why_zh": "**一个色值画在两种画法下，就是两种颜色。** 这条变异要证明的是：同一张图里同一个类别的画法一旦分叉，构建就停。",
       "why_en": "**One hex drawn two ways is two colours.** This mutation proves that the two renderings of one class on one sheet parting company stops the build."
+    },
+    {
+      "id": "M78",
+      "gate": "sheet_layer_key_qa.py",
+      "target": "fig_routes.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把新增可达那条图例的层名改掉——图上仍然画着那一层，图例却指向一个不存在的层名。**这正是本包直到 E232 之前的真实状态**：本图唯一在论证的那一层，图上没人给它命名。",
+      "what_en": "Rename the layer on the key entry for the gained catchment: the layer is still drawn and the key now points at a name nothing carries. **This is the state this package was actually in until E232**: the one layer the sheet argues from had no name anywhere on it.",
+      "why_zh": "**画出来却没被命名的面，读者只能猜。** 这条变异要证明的是：声明了的层面一旦失去图例，构建就停。",
+      "why_en": "**An area drawn and never named leaves the reader guessing.** This mutation proves that a declared layer losing its key stops the build."
     }
   ],
-  "caught": 77,
+  "caught": 78,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -983,6 +996,7 @@
     "role_spec_qa.py",
     "schema_conformance_qa.py",
     "sheet_claim_qa.py",
+    "sheet_layer_key_qa.py",
     "sheet_legend_qa.py",
     "sheet_scale_qa.py",
     "sources_qa.py",
@@ -1039,6 +1053,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 55 道闸门，其中 50 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 55 gates, 50 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 56 道闸门，其中 51 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 56 gates, 51 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
