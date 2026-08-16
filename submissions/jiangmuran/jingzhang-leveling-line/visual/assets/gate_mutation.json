@@ -640,6 +640,18 @@
       "why_en": "**Answering a dimension and being findable under its name are two different things.** The reviewer searches with the taskbook's words while this package wrote in its own, each assuming the other would do the mapping. This mutation proves that a term leaving the prose stops the build, rather than going unnoticed for a dozen rounds as it did."
     },
     {
+      "id": "M62",
+      "gate": "taskbook_terms_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把正文里的「可实施性」换成本方案自己的说法——七个打分维度之一从此不再以那个名字出现。**这正是本包直到 E216 之前的真实状态**：分数由这七项算出，而七个词一个也不在正文里。",
+      "what_en": "Replace the review script's term for implementability in the prose with this package's own wording, so one of the seven scored dimensions no longer appears under that name. **This is the state this package was actually in until E216**: the score is computed from these seven and not one of them was in the document.",
+      "why_zh": "**七个维度是分数本身，不是附录。** 这条变异要证明的是：任何一个打分维度名从正文里消失，构建就停。",
+      "why_en": "**The seven are the score itself, not an appendix.** This mutation proves that a scored dimension leaving the prose stops the build."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -744,7 +756,7 @@
       "why_en": "**Both typographic gates are silent on this class**: overflow_qa measures crossing the footer rule and label_collision_qa measures two runs on one line, and a line drawn through a word is neither. This mutation proves the new gate actually watches the seven sheets the reviewing model is sent."
     }
   ],
-  "caught": 61,
+  "caught": 62,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
