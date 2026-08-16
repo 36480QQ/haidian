@@ -808,6 +808,18 @@
       "why_en": "**This is exactly what the erratum records: three type words loose in the prose is not three areas each answering its own type.** The mutation proves the gate checks the pairing rather than the word count — otherwise sprinkling the announcement's vocabulary through the text would pass, which is the move this proposal objects to elsewhere."
     },
     {
+      "id": "M86",
+      "gate": "positioning_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把小月河场景赋能翼那一行的功能换成另一区的功能。**任务书的五大功能全部仍在文里**，只是有一条不再挂在任务书指给它的那个单元上。",
+      "what_en": "Swap the function on the Xiaoyue river wing's row for another area's. **All five of the taskbook's functions remain in the document**; one is simply no longer joined to the unit the taskbook assigns it to.",
+      "why_zh": "**评审脚本的「功能匹配度」问的是对位，不是出现。** 一条散在正文里、不挂在任何单元上的功能，正是 E239 记的那种「答对了但没答在对位上」；这条变异要证明闸门查的是那件事。",
+      "why_en": "**The review script's 功能匹配度 asks about the pairing, not the presence.** A function loose in the prose and joined to no unit is exactly the shape the erratum records; this mutation proves the gate checks the pairing."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1042,7 +1054,7 @@
       "why_en": "**The reviewer scores seven dimensions and every one has to have somewhere to go.** This mutation proves that a dimension losing its mapping stops the build rather than quietly going unanswered."
     }
   ],
-  "caught": 85,
+  "caught": 86,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1080,6 +1092,7 @@
     "pdf_page1_qa.py",
     "peer_claim_qa.py",
     "planning_controls_qa.py",
+    "positioning_qa.py",
     "reading_calendar_qa.py",
     "registry_alignment_qa.py",
     "review_rules_qa.py",
@@ -1142,6 +1155,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 58 道闸门，其中 55 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 58 gates, 55 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 59 道闸门，其中 56 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 59 gates, 56 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
