@@ -96,7 +96,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 11555631,
+      "total_bytes": 11559420,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -168,14 +168,14 @@
       "ok": true,
       "issues": [],
       "summary": {
-        "standard_matrix_items": 6,
+        "standard_matrix_items": 9,
         "design_depth_items": 15,
         "known_metric_refs_required": 36,
         "proposal_format_version": "1",
         "evidence_contract": "legacy-exhaustive-inline",
         "proposal_reference_counts": {
           "source": 28,
-          "standard": 6,
+          "standard": 9,
           "depth": 15,
           "data": 32,
           "metric": 47

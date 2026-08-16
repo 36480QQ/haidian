@@ -54,7 +54,7 @@ English brief — **One test decides everything here: for any AI service on this
 
 ### 合规基线：先分清法定下限，再说本方案自设的标准
 
-本方案反复出现三条红线——可停用、可投诉、无AI等价服务。**其中只有一部分有法定出处，其余是本方案自设的公共服务标准。** 下表逐行分开写明两者，因为把自愿采用的标准读成普遍法定义务，本身就是一种误导；法条的适用对象与效果以官方原文为准，本表不作法律意见。
+本方案反复出现三条红线——可停用、可投诉、无AI等价服务。**其中只有一部分有法定出处，其余是本方案自设的公共服务标准。** 下表逐行分开写明两者，因为把自愿采用的标准读成普遍法定义务，本身就是一种误导；法条的适用对象与效果以官方原文为准，本表不作法律意见。本节对照的三份文件在 `standard_matrix.json` 中逐条登记响应情况与适用边界 [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
 
 | 本方案红线 | 法定依据与其**实际效果** | 依据未覆盖、由本方案自设的部分 | 本方案承担的空间与运营后果 |
 | --- | --- | --- | --- |
@@ -407,6 +407,10 @@ English brief — **One test decides everything here: for any AI service on this
 
 交通结构由一条连续步行骑行主轴与八条东西缝合支线组成，概念线路总长18,855.117米 [metric:conceptual_movement_length_m]，见 [data:geometry/roads.geojson#ROAD-001]。主轴服务全带连续体验，支线只标识需要由专业交通研究解决的连接方向；每个交接场设置“到达—减速—辨识—人工求助—继续”的五步界面。轨道站点、北五环跨越、道路断面、停车与非机动车容量均缺正式数据，因此不声称新建桥隧或调整道路红线。后续交通模型需验证十五分钟慢行覆盖、换乘冲突、消防与物流时段，并响应 [depth:traffic_rail_slow_parking]。
 
+**同一次核对把「不使用自造分类」这条纪律从用地图层补到了道路与建筑图层。** 组织方场地包除用地代码外还提供了两套词汇——`brief/site-package/enums/road_classes.json`（9 类道路等级）与 `building_types.json`（13 类建筑类型），`validate_submission.py:1225` 与 `:1231` 都会逐条校验。而本包此前**一条都没用**：道路只有自造的 `movement_class`、建筑只有自造的 `typology`。**这与本包在 `standard_matrix.json` 里自己立的规矩（「不使用自造分类替代」）相抵触——那条纪律只在用地图层执行了。**现已按组织方词汇补齐：9 条道路 `road_class` 为 1 条 `greenway` + 8 条 `transit_connection`；20 个更新单元 `building_type` 为开放研发院 `ai_r_and_d`、验证工坊 `lab`、共享服务栈 `incubator`、社区协作屋 `community_service` 各 5 个 [data:geometry/roads.geojson#ROAD-001] [data:geometry/buildings.geojson#BLDG-001]。
+
+**两套字段是并存而非替换，理由写在这里以免被读成冗余。** 组织方枚举是**单值**字段，承担的是全场可比：任何人拿同一套词汇即可横向统计各投稿的道路与建筑构成。但八条东西支线的实际功能是「慢行 + 轨道接驳」复合，单值枚举里选 `transit_connection` 会把慢行这一半丢掉，选 `pedestrian` 或 `cycleway` 又会把接驳这一半丢掉——因此 `movement_class: walk_cycle_and_transit_connection` 必须保留，它记的是本包的设计意图；`typology` 同理，「验证工坊」「共享服务栈」这类原型名承载的是八个共享栈的空间语义，`lab` 与 `incubator` 记不下来。**结论是：官方字段负责可比，自造字段负责表达，前者在前后者在后，不允许只有后者。**
+
 市政采用“普通服务先行、智能层可拔插”。每个节点先具备照明、供电、排水、通讯、消防、无障碍和人工服务，再增加边缘计算、传感和模型接口；智能层断电或停用时，基础功能继续。端侧算力采用独立计量、热管理和任务排队，雨水花园优先重力排水与可维护植物，数字标识保留固定文字和触觉版本。分布式能源与端侧算力按“同址计量、同址公示、同址可停”与传统供电、供热和通信设施衔接：屋顶与构筑物预留分布式发电和储能位置，余热优先就近利用，能耗与温升数据在SCN-03同步公示；是否接入、以何种规模接入，须由能源与市政主管部门依据容量核定。由于地下管线与容量未知，所有设施只表达接口和需求，不承诺接入规模、能源绩效或资金安排，对应 [depth:municipal_new_infrastructure] 与 [data:geometry/constraints.geojson#CONSTRAINTS-DATA-GAP]。
 
 道路微循环的改善方向是“先接通断点，再谈拓宽”：优先打通园区与社区之间被围墙、停车和货运占用的支路与地块出入通道，使短距离出行不必绕行主干路；支路与地块出入道路属可由方案讨论的层级，主干路与快速路则只表达需求、不提调整建议。八条东西缝合支线的作用正是把这些断点显性化，交由交通专业依据官方路网、断面与流量数据核定，本方案不给出红线、渠化或信号方案。
@@ -659,7 +663,7 @@ English brief — **One test decides everything here: for any AI service on this
 
 三条边界写进了 schema 而不只是写在正文里：`baseline` 与 `target` 的类型被约束为 `null`，任何数值都无法在不修改 schema 的前提下悄悄写入；缺失值处理一律禁止插值与用区级平均值替代；发布门槛任一条不成立，指标即保持未赋值。所以这不是“把赋值推给别人”，而是把赋值方法交出来接受质疑——公布测量协议不等于公布目标，口径与频率属于方法，目标值属于主管部门决策。
 
-compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；standard_matrix.json覆盖六项标准；design_depth_matrix.json覆盖十五项专业深度、状态一律 `complete`——**这不是自评满分，而是正式阶段的硬性要求**：`validate_submission.py:2010` 规定 formal 阶段每一项必须为 `complete`，否则确定性校验直接失败（schema 允许的 `data_gap` 只适用于更早阶段）。**因此「complete」在这里的含义是「该深度项已被回应」，不等于「其中的法定量已确定」**：开发强度与建筑高度的定量控制当前仍未赋值，缺口按口径记在 metrics.json 的 unknown、A-CONTROLS-001 与本节，不以估算填充。确定性、空间、视觉和专业检查共同验证机器可读包，人工评审仍拥有最终判断。建筑强度与高度保持unknown，是合规结果而非遗漏。整个矩阵由 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 和 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 统领。
+compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；standard_matrix.json**覆盖组织方 `brief/site-package/standards/standards.json` 的全部九项标准**——此前只登记了六项，三项合规类标准（生成式AI暂行办法、无障碍环境建设法、国办发〔2020〕45号）虽在正文被逐条引用、也在 sources.json 中登记，却从未进入标准矩阵，**而标准矩阵正是评审用来检索「响应了哪些标准」的那张表**；现已补齐，九条的章节、图纸、几何、指标、来源与假设引用逐项复核，断链为 0；design_depth_matrix.json覆盖十五项专业深度、状态一律 `complete`——**这不是自评满分，而是正式阶段的硬性要求**：`validate_submission.py:2010` 规定 formal 阶段每一项必须为 `complete`，否则确定性校验直接失败（schema 允许的 `data_gap` 只适用于更早阶段）。**因此「complete」在这里的含义是「该深度项已被回应」，不等于「其中的法定量已确定」**：开发强度与建筑高度的定量控制当前仍未赋值，缺口按口径记在 metrics.json 的 unknown、A-CONTROLS-001 与本节，不以估算填充。确定性、空间、视觉和专业检查共同验证机器可读包，人工评审仍拥有最终判断。建筑强度与高度保持unknown，是合规结果而非遗漏。整个矩阵由 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 和 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 统领。
 
 **规则检查以矩阵示于图面：每一格是一次检查。** 上排十二格是十二条交接账的基线，下面七行是七条协议规则各自的缺陷注入，横向十二个场景——12 + 84 = **96 格**。图上带色键：青格是基线通过，**红格是「注入了缺陷并被挡下了」**——84 条注入全部被拦截，漏检 0，schema 错误 0。把它画出来而不只写成数字，是因为「规则真的会拦住东西」这件事只有逐格摆开才可核对 [data:visual/assets/governance/rule-check-report.json]。
 
