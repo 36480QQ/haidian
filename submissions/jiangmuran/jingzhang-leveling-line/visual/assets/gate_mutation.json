@@ -852,9 +852,22 @@
       "what_en": "Put FIG.01's cross-check box back on the hand-set offset of 30. **This is the state this package was actually in until E223**: the box's top rule ran through all three KPI captions, and in English the wrapped 'order)' sat inside it.",
       "why_zh": "**一个手写的间距和一段会换行的文字，是同一件事的两份副本。** 这条变异要证明的是：那段文字一旦多出一行，构建就停，而不是安静地印出一条穿字的红线。",
       "why_en": "**A hand-set gap and a paragraph that wraps are two copies of one fact.** This mutation proves that one more line of caption stops the build rather than quietly printing a rule through the words."
+    },
+    {
+      "id": "M71",
+      "gate": "sheet_scale_qa.py",
+      "target": "fig_routes.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把主脊断面的竖向放大改回三倍，而题注仍写「无垂直放大」——**这正是这幅图第一版的真实状态**，出图前才改掉。",
+      "what_en": "Restore the threefold vertical exaggeration in the spine section while the caption still says there is none. **This is the state the first version of this drawing was actually in**, changed before it shipped.",
+      "why_zh": "**一幅与自己题注矛盾的图，比没有那幅图更糟**：它把一句可核对的话变成装饰。这条变异要证明的是：断面的竖向与横向比例一旦不同，构建就停。",
+      "why_en": "**A drawing that contradicts its own caption is worse than no drawing**: it turns a checkable sentence into decoration. This mutation proves that the section's vertical and horizontal scales parting company stops the build."
     }
   ],
-  "caught": 70,
+  "caught": 71,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -893,6 +906,7 @@
     "role_spec_qa.py",
     "schema_conformance_qa.py",
     "sheet_claim_qa.py",
+    "sheet_scale_qa.py",
     "sources_qa.py",
     "stale_corpus_qa.py",
     "standards_alignment_qa.py",
@@ -947,6 +961,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 51 道闸门，其中 46 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 51 gates, 46 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 52 道闸门，其中 47 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 52 gates, 47 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
