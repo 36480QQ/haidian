@@ -3629,6 +3629,36 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
             self.assertIn("Result: PASS", completed.stdout)
 
+    def test_local_submission_wrapper_accepts_only_verified_owner_alias(self) -> None:
+        base = "submissions/zymk8353/jingzhang-safe-return-line"
+        common = [
+            sys.executable,
+            str(REPO_ROOT / "scripts" / "validate_local_submission.py"),
+            base,
+            "--repo-root",
+            str(REPO_ROOT),
+            "--pr-author",
+            "zyaoii",
+            "--json",
+        ]
+        allowed = subprocess.run(
+            [*common, "--pr-author-id", "51290995"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(allowed.returncode, 0, allowed.stdout + allowed.stderr)
+        self.assertTrue(json.loads(allowed.stdout)["ok"])
+
+        denied = subprocess.run(
+            [*common, "--pr-author-id", "7"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertNotEqual(denied.returncode, 0)
+        self.assertFalse(json.loads(denied.stdout)["ok"])
+
     def test_local_submission_wrapper_can_enforce_forward_manifest_contract(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
