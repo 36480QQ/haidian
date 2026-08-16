@@ -65,17 +65,17 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 383498,
+   "bytes": 385255,
    "unit": "entries",
-   "count": 223
+   "count": 224
   },
   {
    "path": "visual/assets/gate_mutation.json",
    "what_zh": "闸门变异测试台",
    "what_en": "The gate mutation harness",
-   "bytes": 85292,
+   "bytes": 86328,
    "unit": "mutations",
-   "count": 69
+   "count": 70
   },
   {
    "path": "visual/assets/naming.json",
@@ -113,17 +113,17 @@
    "path": "agent.json",
    "what_zh": "生成方法的完整披露",
    "what_en": "Full disclosure of the generation method",
-   "bytes": 6252,
+   "bytes": 6280,
    "unit": "top-level keys",
    "count": 10
   }
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.74,
+  "seconds_to_run_every_verifier": 0.72,
   "files_to_read": 9,
-  "bytes_to_read": 997940,
-  "units_to_read": 1698
+  "bytes_to_read": 1000761,
+  "units_to_read": 1700
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",

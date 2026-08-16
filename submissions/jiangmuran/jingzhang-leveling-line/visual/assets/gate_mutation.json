@@ -712,6 +712,18 @@
       "why_en": "This mutation proves the entrance and the mechanism are tied together: soften either one and the build stops."
     },
     {
+      "id": "M70",
+      "gate": "first_screen_qa.py",
+      "target": "visual/index.html",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把离线页的「评审路线」换回总览地图之前——**这正是本包直到 E224 之前的真实状态**：评审截图的第一屏是五条它跑不了的命令。",
+      "what_en": "Put the reviewer's route back above the alignment overview on the offline page. **This is the state this package was actually in until E224**: the first screen the reviewer screenshots was five commands it is not allowed to run.",
+      "why_zh": "**第一屏是评审收到的十八张图像之一，不是目录页。** 这条变异要证明的是：不含图的小节一旦排到第一节，构建就停。",
+      "why_en": "**The first screen is one of the eighteen images the reviewer receives, not a contents page.** This mutation proves that a drawing-less section moving into first place stops the build."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -842,7 +854,7 @@
       "why_en": "**A hand-set gap and a paragraph that wraps are two copies of one fact.** This mutation proves that one more line of caption stops the build rather than quietly printing a rule through the words."
     }
   ],
-  "caught": 69,
+  "caught": 70,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -859,6 +871,7 @@
     "evidence_ref_qa.py",
     "figure_citation_qa.py",
     "figure_title_qa.py",
+    "first_screen_qa.py",
     "formal_visual_metrics_qa.py",
     "forward_reference_qa.py",
     "frame_collision_qa.py",
@@ -934,6 +947,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 50 道闸门，其中 45 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 50 gates, 45 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 51 道闸门，其中 46 道已被证明会失败；其余 5 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 51 gates, 46 have been shown capable of failing and 5 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
