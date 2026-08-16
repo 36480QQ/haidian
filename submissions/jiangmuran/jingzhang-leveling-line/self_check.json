@@ -255,7 +255,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "i18n_order_qa.py — i18n order: 360 numeric templates checked; every slot that carries a unit or a figure number in both editions carries the same one — the check is silent about slots whose English rephrases the unit away, and says so rather than guessing"
+      "message": "i18n_order_qa.py — i18n order: 363 numeric templates checked; every slot that carries a unit or a figure number in both editions carries the same one — the check is silent about slots whose English rephrases the unit away, and says so rather than guessing"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -263,7 +263,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 57 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 28 bytes to spare. The package totals 39.9 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 57 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 28 bytes to spare. The package totals 40.0 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -519,7 +519,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "term_consistency_qa.py — term consistency: 1738 distinct Chinese terms across i18n_en 644, i18n_drawings 783, i18n_html 336; 25 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 1 declared exception(s), each still in use"
+      "message": "term_consistency_qa.py — term consistency: 1742 distinct Chinese terms across i18n_en 648, i18n_drawings 783, i18n_html 336; 25 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 1 declared exception(s), each still in use"
     },
     {
       "check_id": "PKG_UPSTREAM_DRIFT_QA",
