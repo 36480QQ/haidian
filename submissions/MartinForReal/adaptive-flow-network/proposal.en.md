@@ -252,6 +252,26 @@ A scenario that can be stopped still needs someone accountable for what follows.
 
 All areas are recomputed from the submitted GeoJSON in EPSG:4548 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]. Floor-area ratio is unknown: official controls are absent and no conclusion is drawn [metric:floor_area_ratio] [depth:metrics_recalculation]. Coverage of announcement tasks 1.3/1.4/1.5 and agent.1–agent.6 is in `compliance_matrix.json`, mandatory standards in `standard_matrix.json`, design-depth items in `design_depth_matrix.json`; the prose does not repeat the machine index.
 
+### Traceable registration of every number shown on a figure
+
+Every number shown on a figure must trace back to a registered metric in `metrics.json` with a formula, source files and an explicit disclaimer. The table registers this proposal's **model-internal network metrics** — all of them appear on the boards, so all of them are registered, and each is declared **not a statutory planning indicator**:
+
+| Metric | Value | Unit | Formula | Citation |
+|---|---|---|---|---|
+| `network_node_coverage` | 0.387 | ratio | `retained_network_nodes / lattice_nodes` | [metric:network_node_coverage] |
+| `network_independent_loops` | 109 | count | `edges - nodes + connected_components` | [metric:network_independent_loops] |
+| `network_loop_density` | 0.424 | ratio | `independent_loops / retained_network_nodes` | [metric:network_loop_density] |
+| `network_fault_tolerance` | 0.967 | ratio | `share of single-edge removals that keep sampled node pairs connected` | [metric:network_fault_tolerance] |
+| `network_failure_resilience_betweenness` | 0.399 | ratio | `area under the largest-connected-component curve, edges removed highest-edge-betweenness first` | [metric:network_failure_resilience_betweenness] |
+| `network_failure_resilience_random` | 0.315 | ratio | `same curve, mean of 5 random removal orders` | [metric:network_failure_resilience_random] |
+| `network_recovery_resilience` | 0.684 | ratio | `0.5*min(loop_density/0.5,1) + 0.5*min(degree_CV/0.8,1)` | [metric:network_recovery_resilience] |
+| `network_total_length_norm_mst` | 0.55 | ratio | `design_total_length / mst_total_length` | [metric:network_total_length_norm_mst] |
+| `land_use_coverage_ratio` | 1 | ratio | `union(land_use polygons) / site_boundary area` | [metric:land_use_coverage_ratio] |
+| `load_scenario_min_jaccard` | 0.679 | ratio | `min over interpretable load scenarios of |E_scenario ∩ E_shipped| / |E_scenario ∪ E_shipped|` | [metric:load_scenario_min_jaccard] |
+| `solver_final_step_backbone` | 6.14e-09 | dimensionless | `max |D_(k+1) - D_k| at the final iteration, gamma = backbone` | [metric:solver_final_step_backbone] |
+
+Every row is recomputable from the submitted GeoJSON and the published generation parameters. **They measure the generated network itself, not any statutory control on the site**; none of them may be read as a floor area ratio, building density, road redline or control-plan conclusion [depth:metrics_recalculation].
+
 ### Chinese-English substantive equivalence check
 
 The automated bilingual gate checks file pairing, not whether the claims are equivalent. Item-by-item self-check:
