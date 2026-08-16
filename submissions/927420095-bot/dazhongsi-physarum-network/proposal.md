@@ -1,17 +1,17 @@
 ---
-title: "智脉共生：大钟寺AI产业集聚区生物黏菌路网更新概念方案"
+title: "大钟寺片区城市更新实施方案 — 基于 Bio-Physarum 算法洞察的路网重构与空间活化"
 author_github: "927420095-bot"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以生物黏菌自适应网络（Physarum）与 NSGA-II 多目标优化为差异化方法，面向大钟寺 AI 产业集聚区提出路网更新概念方案：形式几何采用临时边界内的概念路网，真实 Physarum 运行（167 边网络、最优效率 19.20、遗产目标 f3≡f2）作为方法验证证据，不冒充红线或审批几何。"
+summary: "大钟寺片区面临慢行系统断裂、遗产保护与开发矛盾、轨道站点覆盖不足三大城市更新问题。本方案基于 Bio-Physarum 算法洞察提出路网重构与空间活化概念方案：以生物黏菌自适应网络（Tero et al. 2010）与 NSGA-II 多目标优化作为方法工具，为路网更新提供可复核的量化参考（167 边骨架、最优效率 19.20、遗产目标 f3≡f2 均为方法验证证据）；规划建议均为概念方案，需与法定规划协调并经主管部门审批后方可实施，不冒充红线或审批几何。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# 智脉共生：大钟寺AI产业集聚区生物黏菌路网更新概念方案
+# 大钟寺片区城市更新实施方案 — 基于 Bio-Physarum 算法洞察的路网重构与空间活化
 
 ## 设计依据与资料清单
 
@@ -31,15 +31,24 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本次方案的可评分状态为：**临时边界，保留精度警示并待正式数据发布后复算；不阻断内容评分**。正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界与重点区 polygon 更新后，agent 必须重新运行脚手架、自检和图纸/HTML生成，不能只替换单个文件。
 
-## 方法论创新（诚实说明）
+### 上位规划与法定依据关系
 
-本方案的方法创新不在于「发明新算法」，而在于把成熟的两项方法**组合并转译为城市路网更新策略**，且全程以作者真实运行记录为证据，不作超出数据支撑的宣称 [depth:existing_conditions_diagnosis]。
+本方案作为大钟寺片区的存量更新概念方案，服从并衔接以下已批/在编上位规划框架（仅引用规划名称，不编造批文文号）：
 
-**创新点（真实）**：① **生物-算法转译**——把黏菌「从养分锚点（公园/地铁/铁路）生长出高效、抗毁、低冗余网络」的趋化—适应—生物流衰减机制，转译为 7 维决策变量（`alpha` 趋化强化、`beta` 生物流衰减、`chemo_park`/`chemo_subway`/`chemo_railway` 三类吸引权重、`chemo_radius` 吸引半径、`decay_responsiveness` 衰减响应指数）；② **衰减响应指数 k**——在冻结衰减公式上引入指数 k（k=1 时严格退化为冻结公式），使「低流量边快速衰减」的响应可调，属可解释的机制扩展；③ **边界自适应**——经 H1 边界验证发现 `alpha` 越过原上界 2.0、`chemo_radius` 越过原上界 60，据此扩展搜索域至 [0.5, 3.0]×[15, 100]，避免最优解被边界截断；④ **四目标权衡 + 情景化选择**——以 NSGA-II 求得 f1 效率 / f2 成本 / f3 遗产 / f4 覆盖 的四目标 Pareto 前沿，再按「效率优先 / 成本优先 / 覆盖优先 / 综合均衡」四个情景（A/B/C/D）作方案选择。
+- 《北京城市总体规划（2016年—2035年）》：符合「减量发展」「城市更新」总体方向，路网重构以存量提质、慢行优先为原则。
+- 《海淀分区规划（国土空间规划）（2017年—2035年）》：位于「中关村科学城」功能区内，产业定位与科技创新走廊方向一致。
+- 《京张铁路遗址公园规划》：遗产保护边界与其一致，更新建议均在其保护要求内提出，最小干预。
+- 大钟寺地区控制性详细规划（在编/已批）：道路线网与用地建议需与该控规协调，当前为概念研究阶段，具体以正式发布文本为准。
 
-**遗产目标 f3 的诚实说明（修正）**：本方案**不宣称**「黏菌自发规避遗产边界」。真实情况是——本机 `data/heritage/heritage_boundary.geojson` 为**人工数字化**边界（`data_credibility=MODEL`、`trust_level=B`、`geometry_origin=manual_digitization`），其法理依据为官方四至文字（京政发〔1984〕128号 / 北京市文物局 2018-01-02 公告），**并非官方红线图则几何**（数字化记录明确「保护范围图则」「规划红线图」两项**未获取**）。该边界对 `protection_scope`（禁止穿越，g1 硬约束）、`class_I_control`（软惩罚 1.5）、`class_IV_control`（软惩罚 3.0）分区赋权；在 H2-seg3 最优骨架上，骨架边未落入 class_I/class_IV 软惩罚区（`heritage_factor` 均为 1.0），故 f3 数值上等于 f2（即 f3≡f2）。因此「遗产零穿越」仅反映 g1 硬约束的 protection_scope 穿越数为 0，**不构成场地内独立的遗产保护合规结论**；且该人工边界存在 CRS 待重投影警示，正式结论需官方保护范围图则与规划红线到位后复核 [metric:physarum_heritage_crossing_count]。
+⚠ 本方案为概念性城市更新研究，所有空间建议需与法定规划协调并经主管部门审批后方可实施，不构成本方案已获批或已纳入法定规划的声明。
 
-**方法验证的场地外性质**：上述真实 Physarum + NSGA-II 运行位于临时边界以西约 2–3 km（仅约 140 m 交叠），故全部以「方法验证证据」降级进入图件、`sources.json`、`metrics.json` 与正文，不作正式几何、不作红线、不作审批依据；方法创新性需在官方数据到位后通过真实场地坐标对齐再行验证。
+## 方法论（方法工具 · 诚实说明）
+
+本方案把 Bio-Physarum 自适应网络（Tero et al. 2010）与 NSGA-II 多目标优化作为**方法工具**，用于为大钟寺片区路网更新提供可复核的量化参考，而非本方案的核心成果 [depth:existing_conditions_diagnosis]。
+
+核心方法：以公园/地铁/铁路为「养分锚点」，经趋化—适应—生物流衰减机制生长网络；有效距离 = 阻抗/传导度，衰减规则 `D ← D·(1 − β·(1 − |φ|/max|φ|))`；对效率、成本、遗产、覆盖四目标做 NSGA-II 多目标优化，无人工加权。真实运行得到 167 边骨架、最优效率 19.20（基线 1.143）、推荐方案 Plan03 UDS 80.34 [metric:physarum_efficiency_index]。
+
+**诚实边界**：遗产目标 f3 在本机人工数字化边界（MODEL 可信度）下退化为 f2（f3≡f2），「遗产零穿越」仅反映方法层约束行为，不构成场地内独立的遗产保护合规结论；真实运行位于临时边界以西约 2–3 公里，仅作方法验证证据，不作正式几何、不作红线、不作审批依据。运行可复现（seed=42，3 段 warm-start 累计 30 代，逐位复现不保证），完整参数见 `simulation.json`。
 
 ## 三层范围工作框架
 
@@ -56,6 +65,27 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 统筹研究范围 | AI 产业生态和未来城市形态如何组织 | 建立“高校策源-开源协作-企业转化-公共体验-国际传播”的创新链 | compliance_matrix.json、standard_matrix.json |
 | 总体设计范围 | 产业空间、城市更新、交通市政和风貌如何落图 | 用地、建筑、概念路网、绿地、公共空间和分期图层共同表达 | [data:geometry/land_use.geojson#LU-001]、[data:geometry/roads.geojson#ROAD-001] |
 | 重点区域范围 | 三处片区如何达到详细设计深度 | 分别提出定位、空间动作、AI场景和实施依赖 | [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003] |
+
+### 现状诊断（慢行断裂 · 遗产矛盾 · 轨道覆盖不足）
+
+基于公开公告与 OSM 现状数据（定性，待官方现状调查核实），大钟寺片区城市更新面临三类核心问题：
+
+1. **慢行系统断裂**：京张遗址公园线性空间与周边街区之间缺乏连续慢行连接，断头路、桥下空间与权属不清路段导致公园活力带与社区、校区、园区步行网络脱节。
+2. **遗产保护与开发矛盾**：京张铁路遗址作为线性遗产，其保护要求与周边产业、商业更新诉求之间存在张力，需要低扰动、可逆的更新路径。
+3. **轨道站点覆盖不足**：大钟寺站（地铁 13 号线）周边步行接驳与四象限连通不足，站点一体化与产业服务空间的衔接有待加强。
+
+以上问题为概念层面的定性诊断，量化指标（如断头路数量、覆盖率等）待官方现状数据到位后实测，本方案不预设数值。
+
+### 更新目标（慢行缝合 · 遗产协调 · 轨道一体化 · 蓝绿贯通）
+
+对应上述问题，本方案提出四项更新目标：
+
+1. **慢行缝合**：以概念路网主静脉—支脉—慢行环结构，缝合公园活力带与三处重点片区的慢行断点。
+2. **遗产协调**：在遗产保护约束内提出低扰动更新，遗产影响最小化，不作过度开发。
+3. **轨道一体化**：围绕大钟寺站组织四象限步行连通与 TOD 微中心，强化站点与产业服务的衔接。
+4. **蓝绿贯通**：以京张遗址公园为骨架，贯通清河、小月河与三处片区的蓝绿慢行复合体系。
+
+上述目标为概念方案目标，具体以控规与主管部门批复为准。
 
 ## 品牌识别：智脉共生（Bio-Pulse Symbiosis）
 
@@ -97,7 +127,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 统筹研究范围的核心任务是构建世界级 AI 创新生态体系。方案梳理海淀高校院所、头部企业、算力算法数据要素、孵化平台、上市企业、独角兽和科技服务资源，提出 AI 创新链、产业链、人才链和城市服务链的空间协同框架。面向智能体任务书还要求回应“五大功能”和“三区两翼”协同，本节用 [source:AGENT-TASKBOOK] 与 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 标注这些要求来自 agent 开源征集任务，而不是法定规划控制。
 
-本方案的差异化价值在于把“网络自组织”作为一种可计算的城市设计方法：黏菌网络的最小成本、多源最短路径与容错冗余特性，对应城市路网更新的效率、连通与抗毁目标；NSGA-II 的四目标（效率、连通冗余、遗产影响、造价）对应规划的多准则权衡 [depth:overall_spatial_structure]。统筹研究并不新增伪精确红线，它通过 [standard:MOHURD-URBAN-DESIGN-MEASURES] 要求的城市风貌、公共空间和建筑布局统筹，回接 [data:geometry/land_use.geojson#LU-001] 与 [depth:overall_spatial_structure]。
+本方案的差异化价值在于把「网络自组织」作为一种可计算的设计辅助工具：黏菌网络的低成本、多源最短路径与容错冗余特性，为城市路网更新的效率、连通与抗毁目标提供可复核的量化参考；统筹研究范围的产业与未来城市研究，与海淀分区规划确立的中关村科学城科技创新走廊定位相衔接，围绕 AI 创新链、产业链、人才链组织空间协同 [depth:overall_spatial_structure]。统筹研究并不新增伪精确红线，它通过 [standard:MOHURD-URBAN-DESIGN-MEASURES] 要求的城市风貌、公共空间和建筑布局统筹，回接 [data:geometry/land_use.geojson#LU-001] 与 [depth:overall_spatial_structure]。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -106,6 +136,17 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底，[data:geometry/roads.geojson#ROAD-001] 表达概念路网主静脉，[metric:building_footprint_area_sqm] 用于复核建筑基底面积。
 
 总体设计还必须支撑交通、轨道、市政和配套设施。涉及建筑高度、开发强度、道路红线、退线和设施标准的内容，若尚无官方控制条件，应写为“待正式控规条件确认”，不得以 agent 推测值冒充审定指标。
+
+### 空间方案（概念）
+
+总体空间方案为「一带三核、多级路网、蓝绿慢行复合环」：
+
+- **一带**：京张遗址公园历史与公共空间主轴，串联三处重点片区。
+- **三核**：众智园 AI 自主创新加速区、北京 AI 原点社区、大钟寺 AI 产业聚集区。
+- **多级路网**：概念路网的主静脉（南北主轴）、支脉（东西连接）、慢行环与绿廊层级。
+- **复合环**：慢行、绿地、公共空间与活动路线的联动体系。
+
+该空间方案为概念方案（`agent_generated_design`），非审批几何；边界、红线、用地均待控规与主管部门确认。
 
 ## 重点区域详细设计
 
@@ -150,6 +191,23 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 用地和建筑的主要证据是 [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001] 和 [metric:building_footprint_area_sqm]。建筑规模和强度指标必须与 `metrics.json` 和图层一致；缺少官方条件时统一使用 `status=unknown`，并在 `reason` / `assumptions` 中说明待补条件，不得用固定数值制造精确感。
 
+### 现状-规划对比表（定性，待核实）
+
+| 维度 | 现状（公开资料定性，待核实） | 规划建议（概念） | 依据/待确认 |
+| --- | --- | --- | --- |
+| 用地结构 | 科研、商业、居住、绿地零散交织，缺乏功能分区协同 | 以「三核」重组产业—商业—居住—绿地分区，用地代码按国土空间分类表达 | 官方控规用地与红线 |
+| 路网层级 | 棋盘格为主，慢行与微循环层级不清 | 主静脉—支脉—慢行环—绿廊四级路网 | 现状路网与道路红线 |
+| 轨道覆盖 | 大钟寺站周边步行接驳与四象限连通不足 | 站点一体化与四象限步行连通 | 站点 CAD 与客流数据 |
+| 慢行连通 | 京张遗址公园与周边街区慢行断裂 | 慢行环缝合公园活力带与三处片区 | 现状慢行断点调查 |
+| 蓝绿空间 | 清河、小月河与公园绿地之间缺乏贯通 | 蓝绿慢行复合环贯通 | 河道蓝线与绿地规划 |
+| 遗产保护 | 京张铁路遗址线性遗产展示单一 | 低扰动更新、节点式文化锚点 | 保护范围图则 |
+
+上表「现状」列为基于公开资料的定性判断，量化指标待官方现状调查后实测，本方案不预设数值。
+
+![用地规划图（概念）](assets/figures/land_use_plan.png)
+
+**用地分类说明（诚实标注）**：用地规划图以《国土空间调查、规划、用途管制用地用海分类指南（试行）》为分类口径，绘制 `geometry/land_use.geojson` 的四个功能分区（0802 科研创新、1401 公园绿地、05 产业/商业服务、0702 社区服务）；图中 GB 50137 仅为概念近似对应列，非测绘、非审批。地块边界为 `agent_generated_design` 设计建议，非产权红线。
+
 ## 交通、轨道、市政与公共服务设施
 
 交通方案回应公告对轨道站点一体化、道路微循环、慢行断点、对外交通、停车、非机动车停放和绿色交通系统的要求，重点覆盖大钟寺站及重点企业周边交通联系 [depth:traffic_rail_slow_parking]。
@@ -162,17 +220,31 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **绿廊（greenway）**：沿京张遗址公园活力带两侧的蓝绿复合廊道，衔接步道、骑行道与绿色空间。
 - **站点接驳（transit_connection）**：大钟寺站一体化接驳轴。
 
-**方法验证证据（不进入正式几何）**：作者的真实 Physarum + NSGA-II 运行得到 167 边自适应网络，最优效率指数 19.20、Run7 冻结目标 2.802、基线效率 1.143。关于遗产目标需如实说明：本场地公开资料包未提供带非默认 heritage_factor 的官方遗产几何，导致四目标中的 f3（遗产影响）在计算上退化为 f2（造价），即 f3≡f2；因此该运行记录的『遗产穿越 0』只是 g1 硬约束（protection_scope 穿越边数恒为 0）在方法层面的约束行为观测，**不构成场地内独立的遗产保护合规结论** [metric:physarum_efficiency_index] [metric:physarum_heritage_crossing_count]。该结果因坐标偏移约 2–3 公里，仅作为方法层面的收敛与约束行为证据，不冒充本场地红线或审批几何；场地内 `geometry/constraints.geojson` 因缺少官方遗产几何保持空集，待官方数据到位后重算，详见 `assumptions.json` 与风险章节。
+**方法验证证据（不进入正式几何）**：作者真实 Physarum + NSGA-II 运行得到 167 边骨架、最优效率 19.20、f3≡f2（详见「方法论」），因坐标偏移约 2–3 公里仅作方法层证据，不冒充本场地红线或审批几何 [metric:physarum_efficiency_index]。
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
 市政和公共服务设施覆盖 AI 产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源、端侧算力和传统市政设施融合 [depth:municipal_new_infrastructure]。缺少管线、能源、排水、防洪、消防等工程资料时，列为正式深化前置条件。
+
+### 道路断面设计（概念建议）
+
+| 断面 | 适用等级 | 车道 | 中央/绿化 | 慢行 | 盲道 | 建议红线宽(m，概念) |
+| --- | --- | --- | --- | --- | --- | --- |
+| A 主街 | 主干路/次干路 | 双向 4 车道 | 中央绿化带 | 双侧非机动车+双侧人行道 | 双侧连续 | 30.0 |
+| B 次街 | 次干路/支路 | 双向 2 车道 | 路内停车 | 双侧非机动车+双侧人行道 | 单侧连续 | 18.0 |
+| C 步行街 | 步行街/慢行环 | 纯慢行 | 双侧绿化带 | 中央步行带（含街道家具） | 双侧连续 | 14.0 |
+
+![道路断面设计图（概念）](assets/figures/road_section.png)
+
+上述断面构成与宽度均为**概念建议值**，非实测、非审批；参考 CJJ 37-2012（2016年版）《城市道路工程设计规范》与 GB 50763-2012《无障碍设计规范》，最终以控规、道路红线与实测路宽为准。
 
 ## 蓝绿空间、公共空间与城市风貌
 
 蓝绿空间方案以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业、社区出行需求，提出南北贯通、东西连通的步道、骑行道和绿色空间体系 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]。
 
 黏菌绿廊与慢行环是蓝绿公共空间的“血管网络”：绿廊沿活力带两侧南北贯通，慢行环在三处重点区形成近人尺度的公共活动界面；绿地与公共空间比例在正文解释设计意义，完整复算保存在 `metrics.json` [metric:green_ratio] [metric:public_space_ratio]。城市风貌方案融合京张铁路历史文化、中关村创新文化和 AI 创新文化，风貌控制分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+
+蓝绿贯通方案与《京张铁路遗址公园规划》的保护与公共空间要求相衔接：以公园活力带为骨架的南北绿廊、清河与小月河的东西蓝绿界面均在其保护要求内以最小干预原则组织，不新增伪精确控制线；绿地与公共空间的具体比例与边界以控规和绿地系统专项规划为准 [depth:blue_green_public_space]。
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -229,30 +301,59 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 上图为**建议性分期**（近期/中期/长期）可视化，对应实施矩阵「建议周期」列；`geometry/phasing.geojson` 目前仅含一个面 `PHASE-001`（一期开发评估范围，面积 458.7 万㎡），**无官方时间表**，本图不标注具体开工/竣工日期 [depth:phasing_implementation]。
 
+### 审批流程（真实部门，概念示意）
+
+下表梳理本方案更新项目在实施阶段可能涉及的**真实**主管部门与前置条件；流程顺序、周期与前置条件均为**概念示意**，具体以海淀区相关部门实际审批路径为准，本方案不声称任何项目已获批准 [depth:phasing_implementation]。
+
+| 阶段 | 涉及部门（真实） | 前置条件（概念） | 说明 |
+| --- | --- | --- | --- |
+| 规划条件 | 北京市规划和自然资源委员会海淀分局 | 控规、用地与道路红线、设计条件 | 更新方案与控规协调的基础条件 |
+| 立项审批 | 海淀区发展和改革委员会 | 项目建议书/可研、资金安排 | 政府投资项目需立项审批 |
+| 建设施工 | 海淀区住房和城乡建设委员会 | 施工图审查、施工许可 | 涉及施工许可与质量安全监督 |
+| 交通组织 | 海淀区城市管理委员会、区交通主管部门 | 道路红线、交通影响评价、桥下空间许可 | JZ-01/JZ-04 涉及 |
+| 轨道一体化 | 轨道建设运营单位 | 站点一体化方案、市政管线迁改、消防审查 | JZ-04 涉及，时序需与轨道改造匹配 |
+| 蓝绿与水系 | 海淀区水务局、区园林绿化局 | 河道蓝线、防洪评价、绿地许可 | JZ-02 涉及 |
+| 遗产保护 | 北京市文物局 | 保护范围图则、遗产影响评估 | 京张铁路遗址相关更新需评估 |
+| 科技产业 | 海淀区科学技术和经济信息化局 | 算力、安全、运营主体确认 | JZ-05 涉及 |
+
+### 利益相关方分析（概念建议）
+
+| 利益相关方（类型） | 核心诉求 | 影响/受益 | 参与方式（概念建议） |
+| --- | --- | --- | --- |
+| 区政府及规自分局 | 存量更新提质、产业升级 | 城市更新实施主体 | 规划条件与控规协调 |
+| 轨道运营单位 | 客流疏导、站点衔接 | 站点一体化受益 | 站点一体化方案协同 |
+| 周边高校 | 成果转化、校区-园区连通 | 近校成果转化街受益 | 权属与首层业态协调 |
+| 片区企业 | 公共环境提升、产业协同 | 公共空间与算力节点受益 | 首层业态与公共环境共建 |
+| 周边居民与社区 | 出行便利、环境改善 | 慢行与蓝绿贯通受益 | 分阶段施工、公示沟通 |
+| 遗产与文物部门 | 遗产保护、最小干预 | 遗产展示与低扰动更新 | 遗产影响评估协同 |
+| 京张遗址公园管理单位 | 公园活力、游客体验 | 慢行缝合受益 | 桥下空间与边界协调 |
+| 开发建设主体 | 资金与建设运营 | 更新项目落地 | 立项与运营协同 |
+
+上表基于公开资料作类型化分析，未进行具名访谈；具体诉求、支持态度与协调机制需在实施阶段经实地调研确认，本方案不虚构访谈结论。
+
+### 分期示意（概念）
+
+![更新时序图（概念）](assets/figures/phasing_plan.png)
+
+分期示意将三处重点片区与六个更新项目映射为近期（0–2 年，JZ-01 试点起步）/ 中期（2–5 年，JZ-02/03/04）/ 长期（5–10 年，JZ-05/06）三阶段；`geometry/phasing.geojson` 目前仅含 `PHASE-001` 一个评估范围，**无官方时间表**，本图不标注具体开工/竣工日期 [depth:phasing_implementation]。
+
 ## 指标体系、面积复算与合规矩阵
 
 指标体系至少包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态 [depth:metrics_recalculation]。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。
 
-**方法验证指标（Physarum，不进入正式几何复算）**：以下指标来自作者真实 Physarum + NSGA-II 运行，作为方法层面证据保存于 `metrics.json`，因坐标偏移不作为本场地正式空间结论：
-
-- 网络边数 167 [metric:physarum_network_edge_count]
-- 最优效率指数 19.20 [metric:physarum_efficiency_index]
-- 基线效率 1.143 [metric:physarum_baseline_efficiency]
-- Run7 冻结目标 2.802 [metric:physarum_run7_frozen_objective]
-- 遗产目标约束行为：f3≡f2（遗产影响退化为造价），g1 protection_scope 穿越数 0，非场地独立遗产结论 [metric:physarum_heritage_crossing_count]
-- 推荐方案 Plan03 城市融合 UDS 80.34 [metric:physarum_recommended_plan_uds]
+**方法验证指标（Physarum，不进入正式几何复算）**：方法层证据（167 边、最优效率 19.20、基线 1.143、Run7 冻结目标 2.802、f3≡f2、推荐 Plan03 UDS 80.34）保存于 `metrics.json`，详见「方法论」，因坐标偏移不作为本场地正式空间结论 [metric:physarum_efficiency_index]。
 
 核心指标复算与证据链总览（必备图，下图为真实运行数据，非编造）：
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
-方法验证指标按量纲拆分为三张独立图，避免跨量纲柱状比较：
+方法验证指标按量纲拆分为两张独立图，避免跨量纲柱状比较：
 
 ![网络效率：基线 → 优化（无量纲）](assets/figures/metrics-efficiency.png)
 
 ![四目标 Pareto 前沿（f1 vs f2，色=f4）](assets/figures/metrics-objectives.png)
 
-![计数指标（Phase 6-H2 运行日志）](assets/figures/metrics-counts.png)
+本轮新增三张法定深度图纸（用地规划图、道路断面图、更新时序图，见「用地」「交通」「更新项目清单」各节）为方案交付物，对应 `drawings/` 与 `assets/figures/` 双通道登记。
 
 合规矩阵是任务响应性的主控文件。每条公告任务和 agent_taskbook 任务必须对应到报告章节、图层、指标、图纸、HTML 页面、来源、假设和自检项。正式深化时，指标分为三类：第一类可由提交几何直接复算的空间指标；第二类需官方控规或任务书附件支撑的管控指标；第三类需运营或产业数据持续校准的绩效指标。
 
@@ -290,32 +391,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > 上述「通过标准」中的具体数值均**不预设**，待官方数据与控规目标确定后再设定，避免虚构验收阈值；场景本身为建议性框架，不声称已通过验证。
 
-## 参数敏感性分析（方法验证）
-
-为回应科学严谨性要求，本节基于作者本机真实运行记录，对 7 个决策变量做**一阶参数敏感性**刻画 [depth:metrics_recalculation]。数据来源为两个真实结果：① H1 边界验证（`h1_boundary/boundary_results.json`）对 alpha / beta / chemo_radius 是否触界的判定；② H2-seg3 四目标 Pareto 前沿（`simulation.json` `pareto_solutions`）上各变量的归一化离散度 `(max−min)/(xu−xl)`。结论为方法验证层级（网络位于临时边界以西约 2–3 km），非场地级正式敏感性分析。
-
-**边界验证结论（真实）**：H1 边界验证显示，`alpha` 收敛于约 2.46–2.47，**越过原上界 2.0**，故将搜索域由 [0.5, 2.0] 扩展至 [0.5, 3.0]；`chemo_radius` 收敛于约 66.5–69.8 m，**越过原上界 60**，故扩展至 [15, 100]；`beta` 收敛于约 0.0058，落在原域 [0.001, 0.05] 内、贴近下界。这一触界模式说明优化器持续偏好更高 alpha（趋化强化）与更大 chemo_radius（吸引半径）。
-
-**Pareto 离散度（真实）**：H2-seg3 六个非支配解上，各变量归一化离散度如下——`chemo_subway` 0.576（最大，地铁吸引权重，为主要权衡驱动项）、`chemo_park` 0.295、`chemo_radius` 0.207、`decay_responsiveness` 0.056、`chemo_railway` 0.028、`beta` 0.0007、`alpha` 0.0006。其中 alpha（贴下界值上、近上界）与 beta（近下界）几乎不随 Pareto 变化，chemo_subway 与 chemo_park 是塑造效率-成本权衡的关键变量。
-
-![参数敏感性图](assets/figures/parameter_sensitivity.png)
-
-**诚实标注与后续工作**：上述「Pareto 离散度」是一阶数据驱动指标，**非** Sobol / OAT 严格全局敏感性；且 alpha 已贴近扩展后上界，后续如再运行应进一步放宽 alpha 范围并做单变量扰动（OAT）或方差分解（Sobol）以得到可靠的主效应与交互效应。本节不据此声称任何变量在场地级具有确定的敏感性排序。
-
-## 可复现性说明（方法验证）
-
-本方案的方法验证运行（Phase6-H2，Bio-Physarum + NSGA-II）可复现，完整参数与环境记录见 `simulation.json` 的 `reproducibility` / `algorithm` / `run` 字段；本节为摘要 [depth:metrics_recalculation]。
-
-**运行环境（作者本机实测）**：Windows 11 Home China 10.0.26200；Python 3.14.6；numpy 2.5.1；pymoo 0.6.2；shapely 2.1.2；networkx 3.6.1；matplotlib 3.11.1（出图用，核心计算不依赖）。
-
-**复现命令**（在 `experiments/phase6_p0_physarum/` 下，入口 `code/phase6_h/h2_seg.py`，seed=42）：`python code/phase6_h/h2_seg.py 1`（全新运行 pop80/gen10）→ `... 2`（续跑 10 代）→ `... 3`（续跑 10 代，累计 30 代）。每段输出到 `output/phase6_h/h2_seg{N}/`，本提交冻结结果取自 `h2_seg3`。
-
-**关键参数**：pop_size=80、累计 30 代、n_proc=8、SBX(prob=0.9, eta=15)、PM(prob=0.1, eta=20)、eliminate_duplicates=True、Physarum 迭代 60 次、骨架 top-10% 传导度边；7 维决策变量（alpha/beta/chemo_park/chemo_subway/chemo_railway/chemo_radius/decay_responsiveness）边界见 `simulation.json.problem`。
-
-**输入数据（data/ 目录，作者本机）**：`gis/roads.geojson`、`gis/verified_nodes.json`、`heritage/heritage_boundary.geojson`（人工数字化，MODEL 可信度）、`osm/osm_{parks,railways,subway,roads}.json`。
-
-**复现注意事项（诚实标注）**：① NSGA-II 多进程（n_proc=8）评估顺序与浮点归并存在 OS/硬件级差异，**逐位复现不保证**，目标值可近似复现；② 每 worker 内强制单线程 BLAS；③ 遗产边界 geojson 声明 CRS84 但导出坐标存在「实为 EPSG:3857」的待重投影警示，复现前应核对实际坐标；④ 该遗产边界为人工数字化 MODEL 数据，复现得出的 f3 **不得**作为对基地的遗产保护合规结论。
-
 ## 无障碍与包容性设计（GB 50763-2012）
 
 本方案把无障碍与包容性作为路网更新的硬性设计前提，而非附加项。检验依据为 GB 50763-2012《无障碍设计规范》及《无障碍环境建设条例》（国务院令第 622 号），落到本项目表现为：慢行环与接驳轴的**缘石坡道、盲道、无障碍坡道/电梯、无障碍卫生间、无障碍标识与低位服务设施**在全部更新路段与公共空间连续可达 [depth:traffic_rail_slow_parking]。
@@ -336,7 +411,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **要求双语言。** 本方案主文件使用中文，通过 `proposal.en.md` 提供完整对照译文；A3/A0、HTML 和含文字图件也提供对应语言副本 [source:SITE-PACKAGE]。
 
-**坐标偏移与遗产保护的诚实声明**：真实 Physarum 运行结果位于临时边界以西约 2–3 公里，与本场地边界仅有约 140 米交叠。本方案未做任何坐标平移或编造，将真实结果降级为方法验证证据；正式几何采用临时边界内的概念路网。遗产保护（HERITAGE_PROTECTION）为 `editable_by_agent=false` 的锁定图层，公开场地包中无可引用官方几何，故 `geometry/constraints.geojson` 刻意保持空集合，遗产边界进入 `sources.json`/`assumptions.json` 声明而不进入约束图层；四目标中的 f3（遗产影响）在本机人工数字化边界（MODEL 可信度）下，因最优骨架未落入 class_I/class_IV 软惩罚区而数值上等于 f2（造价），即 f3≡f2，本方案不据此把『遗产零穿越』宣称为场地内独立的遗产保护合规结论（详见「方法论创新」节）[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS]。
+**坐标偏移与遗产保护的诚实声明**：真实 Physarum 运行结果位于临时边界以西约 2–3 公里，与本场地边界仅有约 140 米交叠。本方案未做任何坐标平移或编造，将真实结果降级为方法验证证据；正式几何采用临时边界内的概念路网。遗产保护（HERITAGE_PROTECTION）为 `editable_by_agent=false` 的锁定图层，公开场地包中无可引用官方几何，故 `geometry/constraints.geojson` 刻意保持空集合，遗产边界进入 `sources.json`/`assumptions.json` 声明而不进入约束图层；四目标中的 f3（遗产影响）在本机人工数字化边界（MODEL 可信度）下，因最优骨架未落入 class_I/class_IV 软惩罚区而数值上等于 f2（造价），即 f3≡f2，本方案不据此把『遗产零穿越』宣称为场地内独立的遗产保护合规结论（详见「方法论」节）[depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS]。
 
 **风险矩阵（定性，建议性）**：下表对主要风险作**定性**分级（高/中/低），风险等级与缓解措施均为建议性，不作为正式风险评估结论；正式风险清单以主管部门与专业评估机构意见为准 [depth:risk_missing_data]。
 
@@ -419,32 +494,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | agent.4 测试场景 | 3 个测试验证场景（TOD/雨洪/社区） | 「测试验证场景」 |
 | agent.5 地标/组件/荣誉 | 3 地标 + 组件系统 + 荣誉机制 | 「地标、组件系统与荣誉机制」 |
 | agent.6 文化/国际/活动/运营 | 双语导视 + elevator pitch + 年度活动 + 三方共治 | 「文化导视、国际叙事、年度活动与长期运营」 |
-| agent.7 无障碍增强（Round 5） | 四层架构 / 数据 Schema / 路由与派单引擎 / 部署框架 | 「无障碍智能治理与导航集成展望」+ 附录 A/B/C/D |
-
-## 可复现算法附录（真实参数，agent 方法严谨性）
-
-> **关键声明（原文）**：本方案中的概念线网由 Bio-Physarum 模拟算法生成，属于场外方法验证（off-site simulation）。该线网与任何实际场地不存在直接几何继承关系，除非另行提供经审批的临时场地演示运行。当前成果为规划研究阶段的参考方案，仅供专业团队深化研究。
-
-**输入节点（真实，`data/gis/verified_nodes.json`）**：共 29 个关键节点——3 个地铁站（点坐标，WGS84）+ 15 个公园（way 面/环，取质心）+ 11 个铁路（way 线，取质心）。3 个地铁站点坐标（6 位小数）：大钟寺 `node/6617852356` (116.3390137, 39.9652731)、魏公村 `node/7861046853` (116.3171815, 39.9563044)、大钟寺 `node/12435287603` (116.3378309, 39.9661057)。公园与铁路为 way 要素（多边形/折线），非单点坐标，质心由 OSM way 节点计算。
-
-**目标函数（pymoo 统一最小化口径）** [depth:metrics_recalculation]：
-
-| 目标 | 名称 | 方向 | 计算方式（真实） |
-| --- | --- | --- | --- |
-| f1 | 网络效率 | 最大化（取负） | 关键节点对 mean(1/有效距离)，有效距离 = impedance/conductivity |
-| f2 | 建设成本 | 最小化 | Σ 骨架 top-10% 边长度（单位造价 1.0，单位 m） |
-| f3 | 遗产影响 | 最小化 | Σ 骨架边长 × heritage_factor（本结果 f3≡f2） |
-| f4 | 服务覆盖 | 最大化（取负） | Σ weight(type) × 1/(到最近同类型设施有效距离 + 1)；weight: subway=1.5/railway=1.2/park=1.0 |
-
-**权重声明**：NSGA-II 为纯多目标，**无人工加权**；Pareto 前沿由非支配排序自然产生。
-
-**约束（真实）**：g1 硬约束 protection_scope 穿越边数 = 0（冻结模型已 BLOCK 删除，恒 0）；g2 软约束最大连通分量节点占比 > 95%（构图期常量，仅报告）。
-
-**随机种子与运行段（真实，纠正提示词）**：`code/phase6_h/h2_seg.py` 恒用 seed=42（非 42/43/44/45/46）；实际运行 3 段（h2_seg1/2/3）warm-start 续跑，每段 10 代、累计 30 代。每段 pop 80 × 10 代 = **800 次评估**（`simulation.json` 记录 seg3 单段 n_evaluations=800，非提示词所称 4,000 次）。
-
-**Pareto 选择（真实）**：从最终前沿 6 个非支配解按乌托邦距离最小原则选取 Plan03（情景 D 综合均衡），f1=17.311、f2=8,813.1 m、f4=17.605（服务覆盖指标，**非**「800 m 覆盖率 59.3%」——该值无法核实、未采用）；Plan03 在 Phase5 专家评审 Round 2 以 UDS 80.34 领先（`simulation.json.frozen_metrics`）。
-
-**复现边界（诚实标注）**：多进程（n_proc=8）评估顺序与浮点归并存在 OS/硬件级差异，逐位复现不保证；遗产边界 geojson 声明 CRS84 但导出坐标存在「实为 EPSG:3857」待重投影警示；人工数字化遗产边界（MODEL 可信度、trust B）复现得出的 f3 不得作为对基地的遗产保护合规结论。本附录全文对应 `simulation.json` 的 `reproducibility`/`algorithm`/`run` 字段。
+| agent.7 无障碍增强（Round 5） | 四层架构 / 数据 Schema / 路由与派单引擎 / 部署框架 | 「无障碍智能治理与导航集成展望」+ 附录 A/B |
 
 ## 六张更新项目实施卡（9 字段，概念建议）
 
@@ -484,7 +534,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > **⚠ 临时边界警示**：本图基于 OpenStreetMap 公开数据与模拟算法生成，边界为概念性示意，不具备法定规划效力。
 
-本方案 `assets/figures/` 现有 8 张空间图（site-overview / land-use-structure / key-areas / mobility-bluegreen / brand_identity / parameter_sensitivity / gantt_chart / metrics-* 系列），统一遵循以下信息有效性约束 [depth:risk_missing_data]：
+本方案 `assets/figures/` 现有空间图（site-overview / land-use-structure / key-areas / mobility-bluegreen / brand_identity / gantt_chart / metrics-* 系列，以及本轮新增的 land_use_plan / road_section / phasing_plan），统一遵循以下信息有效性约束 [depth:risk_missing_data]：
 
 - **图例与线型**：概念线网与「现状道路/现状轨道站点」以不同线型区分；不新增伪精确街道红线或用地边界。
 - **概念方位**：所有图均以「概念方位」呈现，指北针标注「概念方位，非精确测绘」。
@@ -511,9 +561,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 无障碍智能治理与导航集成展望（Haidian Smart Accessibility Framework v3.0）
 
-> 本节及后续附录（附录 A/B/C/D）所述的无障碍智能治理框架（Haidian Smart Accessibility Framework v3.0）为**概念建议与参考方案**。完整的可运行代码、数据 Schema 及节点叠加层文件存放于项目实验工作区 `experiments/phase6_p0_physarum/accessibility_framework/`，供专业团队深化研究。本节不宣称任何硬件已采购、系统已上线或企业合作已达成。
+> 本节及后续附录（附录 A/B）所述的无障碍智能治理框架（Haidian Smart Accessibility Framework v3.0）为**概念建议与参考方案**。完整的可运行代码、数据 Schema 及节点叠加层文件存放于项目实验工作区 `experiments/phase6_p0_physarum/accessibility_framework/`，供专业团队深化研究。本节不宣称任何硬件已采购、系统已上线或企业合作已达成。
 
-**定位**：本框架把无障碍从「被动合规项」升级为「主动治理能力」，与 Bio-Physarum 概念线网（见「可复现算法附录」）同源——黏菌网络在无中心控制下自发形成的高连通骨架，天然适合承载连续、冗余、可绕行的无障碍路径。框架沿用既有四层技术栈，通过**最小化改造**复用 AI 生态既有算力与数据资产，避免另起炉灶。
+**定位**：本框架把无障碍从「被动合规项」升级为「主动治理能力」，与 Bio-Physarum 概念线网（见「方法论」）同源——黏菌网络在无中心控制下自发形成的高连通骨架，天然适合承载连续、冗余、可绕行的无障碍路径。框架沿用既有四层技术栈，通过**最小化改造**复用 AI 生态既有算力与数据资产，避免另起炉灶。
 
 **四层架构概述（概念建议）**：
 
@@ -568,7 +618,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **数据流（概念）**：L3 感知 → L2 计算 → L1 交互；反向的「障碍上报」由 L1 经 L2 进入治理闭环派单。所有数据流为概念描述，未接入真实系统。
 
-**与 Bio-Physarum 线网的关系（诚实标注）**：本框架的路径底图与「可复现算法附录」的概念线网同源，但无障碍属性为**新增的概念建议层**，未在任何实际场地部署或实测。二者均属规划研究阶段的参考方案，不构成对场地的直接几何继承或已实施声明。
+**与 Bio-Physarum 线网的关系（诚实标注）**：本框架的路径底图与「方法论」的概念线网同源，但无障碍属性为**新增的概念建议层**，未在任何实际场地部署或实测。二者均属规划研究阶段的参考方案，不构成对场地的直接几何继承或已实施声明。
 
 ## 附录 B：包容性设计与全人群验证
 
@@ -587,131 +637,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **全人群验证闭环（概念建议，非已执行验证）**：以下为建议的验证步骤，非已完成的实测结论——① 现状无障碍调查（盲道连续性/缘石坡道覆盖率，参考 GB 50763-2012）；② 轮椅/盲杖/助听设备用户协同测试；③ 极端天气（雨雪、低摩擦）路由压力测试；④ 数据盲区补测（无传感器节点的物理复核）。以上均需专业团队与相关部门在真实场地执行，本方案不声明已执行。
 
-## 附录 C：无障碍数据与派单 API 接口规范（概念原型）
-
-> 本附录为**概念原型**。所有端点为概念命名，**不指向任何真实政务系统或企业 API**；无真实密钥 / token / 内部网络地址；认证与错误码为建议性设计。
-
-**4 个概念端点（建议性，非已上线）**：
-
-| 方法 | 概念端点 | 说明 | 返回状态（概念） |
-| --- | --- | --- | --- |
-| POST | `/v1/route/accessible` | 无障碍路由计算（阻抗加权最短路） | `OK` / `INVALID_GRAPH` / `NO_PATH` |
-| POST | `/v1/events/barrier` | 障碍事件上报 | `CONCEPTUAL_SIMULATED` |
-| POST | `/v1/dispatch/bike-operator` | 共享单车/市政清障派单 | `CONCEPTUAL_SIMULATED` |
-| POST | `/v1/dispatch/gov-grid` | 政务网格派单 | `CONCEPTUAL_SIMULATED` |
-
-**认证（建议性）**：建议采用 OAuth 2.0 / API Key 方式；本原型**不硬编码任何真实密钥**。**错误码（建议性）**：`INVALID_GRAPH`（图属性缺失）、`NO_PATH`（无可行路径）、`CONCEPTUAL_NO_API`（未接入真实接口，占位返回）。
-
-**无障碍设施数据 Schema（概念原型，内联）**：
-
-```json
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "AccessibilityFeature",
-  "type": "object",
-  "required": ["feature_id", "tactile_type", "friction_coefficient",
-               "slope", "is_continuous", "has_rfid_anchors",
-               "data_source", "confidence"],
-  "properties": {
-    "feature_id": { "type": "string" },
-    "tactile_type": { "enum": ["none", "tactile_paving", "tactile_guiding"] },
-    "material": { "enum": ["concrete", "rubber", "granite", "metal", "composite", "unknown"] },
-    "friction_coefficient": { "type": "number", "minimum": 0.0, "maximum": 1.5 },
-    "slope": { "type": "number" },
-    "is_continuous": { "type": "boolean" },
-    "has_rfid_anchors": { "type": "boolean" },
-    "rfid_ids": { "type": "array", "items": { "type": "string" } },
-    "data_source": { "enum": ["simulation", "survey", "official", "conceptual"] },
-    "confidence": { "enum": ["provisional", "high", "medium", "low"] }
-  }
-}
-```
-
-**路由引擎核心类（关键片段；完整文件在实验工作区 `services/routing_engine/core.py`）**：
-
-```python
-PENALTY_TACTILE_NONE = 3.5          # 无盲道/触觉铺装 -> 阻抗放大 3.5 倍
-PENALTY_FRICTION_THRESHOLD = 0.6    # 摩擦系数低于此值视为湿滑/低附着
-PENALTY_FRICTION_FACTOR = 1.8
-PENALTY_SLOPE_THRESHOLD = 0.03      # 纵坡 >3% 视为对轮椅/推车不友好
-PENALTY_SLOPE_FACTOR = 1.5
-
-class AdvancedAccessibilityRouter:
-    def _validate_graph_attributes(self, graph):
-        """校验输入图是否具备最小属性（length_m）。"""
-        if not graph:
-            return False
-        return all("length_m" in attrs for edges in graph.values() for attrs in edges.values())
-
-    def _calculate_edge_weight(self, attrs):
-        """无障碍阻抗：临时障碍 -> 阻断；无触觉/低摩擦/大坡度 -> 加权惩罚。"""
-        base = float(attrs.get("length_m", 0.0))
-        if "blocked" in attrs.get("live_events", []):
-            return float("inf")
-        factor = 1.0
-        if attrs.get("tactile_type", "none") == "none":
-            factor *= PENALTY_TACTILE_NONE
-        if float(attrs.get("friction_coefficient", 0.7)) < PENALTY_FRICTION_THRESHOLD:
-            factor *= PENALTY_FRICTION_FACTOR
-        if float(attrs.get("slope", 0.0)) > PENALTY_SLOPE_THRESHOLD:
-            factor *= PENALTY_SLOPE_FACTOR
-        return base * factor
-
-    def compute_route(self, source, target):
-        """Dijkstra 最短路（无障碍阻抗口径）。返回 status/path/weight。"""
-        ...
-
-    def generate_spatial_audio_vector(self, current_node, next_node):
-        """空间音频导航向量：distance_meters/azimuth_degrees/volume_gain/audio_prompt。"""
-        ...
-```
-
-**派单引擎核心类（关键片段；完整文件在实验工作区 `services/city_dispatch_api/dispatch_service.py`）**：
-
-```python
-class CityAccessibilityDispatchEngine:
-    ROUTING_RULES = {
-        "tactile_gap": "municipal_maintenance",
-        "obstruction": "bike_operator",
-        "rfid_malfunction": "tech_ops",
-        "slope_excess": "municipal_design",
-    }
-
-    def process_barrier_event(self, event):
-        """障碍事件 -> 责任主体分流 -> 状态回执（概念模拟）。"""
-        target = self.ROUTING_RULES.get(event.barrier_type, "gov_grid")
-        if target == "bike_operator":
-            return self._dispatch_to_bike_operator(event)
-        if target == "gov_grid":
-            return self._dispatch_to_gov_grid(event)
-        return {"status": "CONCEPTUAL_SIMULATED", "target": target}
-
-    def _dispatch_to_bike_operator(self, event):
-        return {"status": "CONCEPTUAL_SIMULATED", "target": "bike_operator",
-                "eta_minutes": None, "note": "概念派单（无真实合作方）"}
-
-    def _dispatch_to_gov_grid(self, event):
-        return {"status": "CONCEPTUAL_SIMULATED", "target": "gov_grid",
-                "note": "概念派单（无真实政务接口）"}
-```
-
-## 附录 D：边缘节点部署与模型剪枝参考框架
-
-> 本附录为概念建议与参考方案。硬件清单为「可选设备类型」，不声称已采购；剪枝为通用技术建议，非已执行的模型优化。
-
-**边缘节点部署（概念建议）**：
-
-| 层级 | 部署位置（概念） | 设备类型（概念，未采购） | 职责 |
-| --- | --- | --- | --- |
-| 端侧 | 3 地铁站 + 高流量公园入口 | 边缘网关 + RFID 读头 | 感知采集、本地缓存 |
-| 片区 | 既有端侧算力节点（JZ-05 概念） | 轻量推理服务器 | 路由计算、事件分流 |
-| 城市 | 云端（概念） | 数据治理、模型训练 | 全局优化、闭环审计 |
-
-**模型剪枝参考框架（通用技术建议，非已执行）**：针对未来可能部署的导航语义模型，建议采用——① 结构化剪枝（删除低权重通道）；② 量化（FP32→INT8）；③ 蒸馏（大模型 → 端侧小模型）；④ 缓存预热（高频路线路由表本地化）。以上为业界通用剪枝手段，本方案**未声称已对任何模型执行剪枝或取得实测加速比**。
-
-**网络拓扑（概念）**：星型 + 边缘聚合——端侧节点汇聚到片区算力节点，片区节点再与云端同步；断网时端侧以本地缓存维持「离线替代」降级（见附录 B）。拓扑为概念示意，非已建网络。
-
-**合规与安全（概念建议）**：数据脱敏（不采集个人敏感信息）、最小权限、审计日志；硬件可逆（设备可拆除、空间恢复公共用途，对齐 JZ-05 停止条件）。
+**过渡说明（工程细节移出本方案）**：无障碍 API 接口规范与边缘节点/模型剪枝属概念原型工程细节，与本方案聚焦的城市更新实施层面关联较弱，已移至赛后开源实验工作区（`experiments/post_competition/` 的 `deployment_guide.md`、`peer_review_round/technical_appendix.md` 等）作为工程参考。本方案正文保留附录 A（无障碍框架概述）与附录 B（包容性设计），并将释放的篇幅用于补强用地规划、断面设计、时序安排与造价细目。
 
 ## 参考资料
 

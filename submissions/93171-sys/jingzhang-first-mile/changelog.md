@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v9.1 - 2026-08-16
+
+- Reworked the Chinese and English opening narrative around four plain questions: who owns the problem, who becomes the first user, who takes over operations and what evidence permits reuse.
+- Reduced repeated contrast formulas and machine-facing language in the human-reading layer while preserving every source, assumption, gate, stop condition and claim boundary.
+- Rewrote the visual-index first screen and twelve scenario-card summaries so a reviewer can identify the three-station chain, the 90-day pilot and each scenario's operating boundary without reading the full report.
+- Kept the submission scope unchanged: no new site, partnership, user result, order, funding or approval claim was introduced during copy editing.
+
 ## v9.0 - 2026-08-15
 
 - Rebuilt all five mandatory bilingual review figures around the evidence that the official reviewer can see directly: OSM-based real-place orientation, the provisional land-use partition, three differentiated key areas, the ordinary-route/blue-green public baseline, and the G0-G4 delivery ledger.
