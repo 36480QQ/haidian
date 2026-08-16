@@ -1646,5 +1646,25 @@
     ],
     "w1_would_reach_first": 2,
     "applied_today_zh": "按今天的几何，规则 W1 会先落到 2 个街区上（共 11 个）；距离为几何中心到最近水准点的直线距离，**不是步行距离**——一个还不存在的街区，走不出步行距离。"
+  },
+  "organiser_review": {
+    "scope_zh": "**评审在读本文之前，先拿到组织方自己对本包的四份机器判定**：确定性校验、空间复核、视觉复核、专业复核。下表把它们返回的每一条按 id 列出，并逐条作答——**答的不是辩解，是承认判读成立之后随之而来的东西**。清单由构建从 `upstream/main` 上的那几个脚本现跑得到，不是抄下来的（E230）。",
+    "scope_en": "Before it reads a word of this proposal, the reviewer is handed four machine verdicts on this package from the organisers' own tools: deterministic validation, spatial review, visual review, professional review. Every issue they return is listed here by id and answered - not defended, but accepted with what follows from it stated. The list is produced by running their scripts at upstream/main rather than copied.",
+    "issues": [
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "from_review": "spatial",
+        "count": 3,
+        "their_message_en": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+        "targets": [
+          "PROV-KEY-001",
+          "PROV-KEY-002",
+          "PROV-KEY-003"
+        ],
+        "answer_zh": "**这条判读是对的，本方案同意。** 三处重点区多边形是依公告文字推定的临时替代边界，不是官方红线；由它们算出的每一个面积在 `metrics.json` 里都标 `evidence_class: provisional`，评审收到的五张图题头也各有一行红字写明这件事。官方 polygon 发布后按 A-BOUNDARY-001 **整体重算**，不做逐块替换。本方案不请求豁免这条判读，只请求它按其原意使用：不得作为红线或精确面积依据，内容评分不受影响。",
+        "answer_en": "This reading is correct and this proposal agrees. The three key-area polygons are provisional substitutes inferred from the announcement text, not official redlines; every area computed from them carries evidence_class provisional in metrics.json, and each of the five sheets the reviewer receives states it in red under its claim. When the official polygons are published, everything recomputes wholesale under A-BOUNDARY-001 rather than block by block. No waiver is requested - only that the finding be used as written: not a redline or a precise-area basis, and content scoring unaffected."
+      }
+    ]
   }
 }
