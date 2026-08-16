@@ -12,7 +12,7 @@
     "agent_name": "柱子 / Zhuzi",
     "model": "Claude Fable 5 via Claude Code",
     "model_family": "claude",
-    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.1 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
+    "model_detail": "v1.0 scaffolded and authored with OpenAI GPT-5.6 Sol via Codex; v2.0-v7.3 iterations authored with Anthropic Claude Fable 5 via Claude Code with Claude Opus subagents; audio narration synthesized with MiniMax speech-2.8-hd (disclosed in assets/media transcripts)"
   },
   "generated_at": "2026-08-14T14:42:57Z",
   "files": [
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e0319bd752dacce259087adc586770ecf73b0ac1b790114430a4263681dfe1bb"
+      "sha256": "512beded2e30868c1b2a1106ce12ed09e8e569d33c2a2d6ac342f0fcc5756321"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "2c35522472e753aeeaf68d5621b6a94b45afcb37286a54469637cd10ac366320"
+      "sha256": "4c2a4539585a62336ad1f3938c02370852bff66e3bca8a949837116a285f8988"
     },
     {
       "path": "metrics.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "3eb52d7f0f1042168935b9d520cda99ed9c96d3b8cc51c6d6fd42da4b9588a0c"
+      "sha256": "a7ddd02388425ec16ce41c26b6f2a40509dea58793c6be9364ba152d87893104"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f7c75ba4b49268060a40602e4bad820a0163433f4bb1e8887b7c29a6f072ed16"
+      "sha256": "5868ed2493e805d37f81dc70702b5a83101007a800713b43abfb94ec50fcaca1"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "path": "risk.json",
       "role": "other",
       "required": false,
-      "sha256": "fc2f6fc235201ae4d9371be4297077513056ccda4e675acea339abfb8a9c9a9a",
+      "sha256": "b27e2320fa41c1b9e235d0f88d3b1cfe960b55ba3dcc15f744a9d3805c8688e1",
       "role_detail": "risk_register"
     },
     {
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "538a94af79bd642df99231ce4c1f25e576bb40a9df32a2369ffb5c28e55493fb"
+      "sha256": "4b3aaaa2df66fde28b8be2d3e6e7af53b28cfdf34ea5cf06a6b974aa266b7841"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "01eb37ba79451a0844022d7b22c938f85bf016c785ff408982bb1357971f8718"
+      "sha256": "d82c9b80a24f1b132680231b69e83966572a9ceb02c8c5e854aebe928b885ba7"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f9bf2157dad091c2b704826e8e3906d8bf2d771590b7dda008aac2240175d352"
+      "sha256": "1c256d63782e0b10840e7a6c2808b55a6a689d87a834c102126d78b6504c764c"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a6631993a86c4426ef3da90572e63e8ab0ee289a24f144f7f2a7ab1d71cfc8f0"
+      "sha256": "3f759dd3d43b0e91d39717206726607035250ec499d7abda690dd32ea80f679a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c09a063ed6e0454ae0024a52cbbe20f051e9d695b78f88b57378344eca0c1191"
+      "sha256": "eafa0e40cb4cfdbaf980e2dd63ccab7019d0567f1823bdd3536c31b0ff8324da"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5ea7838c7c37ff48c286055dab4f0b9a7c27aae2cc8e8d4a0501afa1a18784ab"
+      "sha256": "1d72bcbd3926bb41922d509176690d3170a0bfc81a2cefc969176f1095fbf6b9"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c7a7d9dfe34ff92b3f3fc4479a1a69f2ddc7668ae63c171a76995c5957b78aa9"
+      "sha256": "e8df41a0552ee201658d67b3f3c17f353bf1b093ad6da62480c643a2a0d0d641"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -260,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "1a1167665c10ae9e18bfcf6379c2caad2532f29a13136982f707f994983b9d3d"
+      "sha256": "9ee6447024c1be1c4b5edcf8b417176c7d71a574096f1616ee69d3a1e40175f5"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -268,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "bc999e643d8191e522e610a9f3988a7db4b3ea544ca5702acd74d877ef92ab5d"
+      "sha256": "3ac3f42f29c31fdfcb9949298eadc7283e50a598d0a03ba96ff840c33ff5bacf"
     },
     {
       "path": "visual/index.en.html",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "90775b26d06cb4ccc7686fe2b04fd2baa245826e1322d06a8fb73af8ad7cb570"
+      "sha256": "fc8ddb23208b2c1f4f63f029659477fcdf7039b96f035d261aa55f9dfe436404"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -509,7 +509,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "ccef38ea4fabaddb74ee7c2899d6cda494471f03f45aaa3a1f03ad45f3a0d841"
+      "sha256": "3ce47088a2238d6db4d4ac68528bf419180e694a4e5c89a67379d840adde5535"
     },
     {
       "path": "assets/media/cover.webp",
@@ -568,7 +568,52 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "417c9c6abdf7d2e2abfdd9390d5b6db71dd0dc3ae284506b3ae88db64e1184f6"
+      "sha256": "638d8bfd26f259f5d5ebd0c65c02d6acd55ac06aeee384925544e2caa26400ae"
+    },
+    {
+      "path": "visual/assets/three.min.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "three.js r160（MIT，离线单文件；由官方 module 构建机械可复现重封装，转换步骤全文披露于 three-license.json）",
+      "title_en": "three.js r160 (MIT, offline single file; mechanically reproducible rewrap of the official module build, transformation disclosed in full in three-license.json)",
+      "sha256": "99361e0a3fcca3125a494b27f421cf9078bbf1847c2b82a839a2135ebe91b532"
+    },
+    {
+      "path": "visual/assets/three-license.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "three.js MIT 许可正本与溯源（上游 URL/哈希/重封装步骤，许可全文可逐字节重建）",
+      "title_en": "three.js MIT licence text and provenance (upstream URL/hash/rewrap steps; licence text byte-reconstructable)",
+      "sha256": "48908e262070aafd75b8efe18a8e10e0869677ffcf4a07fefb4b6a9d7c53bd53"
+    },
+    {
+      "path": "visual/assets/spine3d.js",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三维主脊场景（几何 100% 同源于 scene-data.js，AI 开关+昼夜+节点漫游，无 WebGL 静态降级）",
+      "title_en": "3-D spine scene (geometry 100% sourced from scene-data.js; AI switch, day/night, node fly-to; static fallback without WebGL)",
+      "sha256": "ba46f06f087da349ee1b3e4d844dac8dd2e8c3f5f1467e262ef1b612a8156b4c"
+    },
+    {
+      "path": "visual/assets/spine3d.css",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三维主脊章样式",
+      "title_en": "3-D spine chapter styles",
+      "sha256": "4f1a3052d0411f8a4280670b63df598211ca5d3c5990b6e2f1a6ce180016f914"
+    },
+    {
+      "path": "visual/assets/scene-time.css",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "交互场景四时段控件样式",
+      "title_en": "Four-period control styles for the interactive scene",
+      "sha256": "c66d7a8b0ef5e901adceb1b4caebf10d5eb8bf96007448bfad10d38cfea42e05"
     },
     {
       "path": "visual/assets/scene.css",
@@ -582,7 +627,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "c8e17d3f087f46285a3a5030f015eafe85d73f1ca739ddf0006e56fe9f56a024"
+      "sha256": "f7428ec660ebc6eeb7f171695316a40fcb169017b944d5c7f7a0f3f37465052b"
     },
     {
       "path": "visual/assets/scene-fallback.png",
@@ -650,7 +695,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "1f28c5d9c8a9745c7557a57607c461a845bafd45612e3749024b5d496a3172b6"
+      "sha256": "76faa4784a80a425ac409f5ad683514780dd64a6a99f5e069690eba4d0d6a060"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -740,7 +785,7 @@
       "language": "neutral",
       "title_zh": "SEB 桌面推演正反样例四十条",
       "title_en": "SEB tabletop fixtures, thirteen positive and twenty-seven negative",
-      "sha256": "59fc5edc584dff286a6971da94b45b873ab487b2e58e8fe4891bc0c93ce3df9b"
+      "sha256": "9c22d82660c5023e2a69dcacd2df03fc8bc448869db94812d52a46cd97abb8d4"
     },
     {
       "path": "visual/assets/seb-change-receipt-sample.json",
@@ -767,7 +812,7 @@
       "language": "neutral",
       "title_zh": "OP-04 节点九十天实施包（概念级：条件序列分期、双分支预算、采购、RACI、班表、投保建议、维护与退出）",
       "title_en": "OP-04 ninety-day implementation pack (concept-level: conditional phasing, two-branch budget, procurement, RACI, rosters, insurance suggestions, maintenance and exit)",
-      "sha256": "6e0631a4b8b90a11f815cf812fdee75540f955f4819c0bbfaec943cf9d76749e"
+      "sha256": "a9b4e68ed63e030c55a964772b91a9e4caf276b161326e69311ddc93d269eecc"
     },
     {
       "path": "visual/assets/op04-pilot-readiness.json",

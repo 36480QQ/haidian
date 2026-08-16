@@ -4,7 +4,7 @@ author_github: "siddhartha-yz"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v1.24"
+iteration: "v1.25"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Turn the Centennial Jing-Zhang corridor from an AI showcase into civic infrastructure for exposing, co-testing, learning from, and repairing long-tail conditions before systems scale."
@@ -177,4 +177,6 @@ The fourth risk is copyright and representation. The five figures are generated 
 - Seoul Metropolitan Government Seoul AI Hub. [source:CASE-SEOUL-AI-HUB]
 - Mila Ventures research-to-venture ecosystem. [source:CASE-MILA]
 - Vector Institute research-to-adoption ecosystem. [source:CASE-VECTOR]
-- `metrics.json`, `assumptions.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json` are the machine-readable evidence index for this package.
+The machine-readable evidence index for this package is:
+
+- `metrics.json`, `assumptions.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json`
