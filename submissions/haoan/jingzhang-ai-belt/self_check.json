@@ -10,8 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/haoan/jingzhang-ai-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/haoan/jingzhang-ai-belt/changelog.md: 可能涉及非公开或敏感资料; maintainer review required"
+        "submissions/haoan/jingzhang-ai-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/haoan/jingzhang-ai-belt/proposal.md"
@@ -37,6 +36,10 @@
         "submissions/haoan/jingzhang-ai-belt/assets/figures/section-concept.png",
         "submissions/haoan/jingzhang-ai-belt/assets/figures/site-overview.en.png",
         "submissions/haoan/jingzhang-ai-belt/assets/figures/site-overview.png",
+        "submissions/haoan/jingzhang-ai-belt/assets/media/cover.png",
+        "submissions/haoan/jingzhang-ai-belt/assets/media/guided-tour-transcript.md",
+        "submissions/haoan/jingzhang-ai-belt/assets/media/guided-tour-zh.vtt",
+        "submissions/haoan/jingzhang-ai-belt/assets/media/guided-tour.mp4",
         "submissions/haoan/jingzhang-ai-belt/assumptions.json",
         "submissions/haoan/jingzhang-ai-belt/changelog.md",
         "submissions/haoan/jingzhang-ai-belt/compliance_matrix.json",
@@ -74,7 +77,7 @@
       "ai_package_stages": {
         "submissions/haoan/jingzhang-ai-belt": "formal"
       },
-      "total_bytes": 8479400,
+      "total_bytes": 11111903,
       "maintainer_bypass": false
     },
     "stderr": ""
