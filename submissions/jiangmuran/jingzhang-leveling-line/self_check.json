@@ -151,7 +151,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_state_qa.py — 本次构建未记录到该闸门的输出，因此不声称它跑过"
+      "message": "claim_state_qa.py — 该闸门在本文件写定之后才运行（它校验的是已定稿的随包内容，其中包括本文件），因此它的读数按构造不可能出现在这里；结果见构建输出。"
     },
     {
       "check_id": "PKG_COMPUTE_SITING_QA",
@@ -671,7 +671,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "upstream_validator_qa.py — 本次构建未记录到该闸门的输出，因此不声称它跑过"
+      "message": "upstream_validator_qa.py — 该闸门在本文件写定之后才运行（它校验的是已定稿的随包内容，其中包括本文件），因此它的读数按构造不可能出现在这里；结果见构建输出。"
     },
     {
       "check_id": "PKG_VISUAL_PACKET_QA",
