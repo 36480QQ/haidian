@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "review_date": "2026-08-17",
   "version": "V6",
   "calibration_baseline": "PR #3071 Review Agent 81/100",
@@ -34,7 +34,7 @@
         "V5 canonical key-areas and PDF first-page review"
       ],
       "remediation": "Rebuild S7 as the flagship four-scale sample from shared local-metre objects and surface it in every Review Agent entry point.",
-      "verification": "Pending: label-off blind review of canonical figures, A0 first board, A3 cover and visual first screen.",
+      "verification": "Technical evidence complete: five canonical figures, four PDF first pages, bilingual proposal pages and bilingual visual first screens form an 18-image review pack; 68 traceable geometry objects and all four S7 states pass offline QA. Pending: user-led label-off blind review before any Ready PR.",
       "status": "open"
     },
     {
@@ -58,7 +58,7 @@
         "390×844 and 1440×1600 Playwright interaction screenshots"
       ],
       "remediation": "Scoped the layout to header.hero and explicitly reset the nested tier.hero chip; added automated scenario-card screenshot QA.",
-      "verification": "Closed with desktop, mobile and English tests: 42 geometry objects, schema 1.3.0, hash restoration, reduced motion, no external requests and zero console errors.",
+      "verification": "Rechecked for V6 with desktop 1440×1600, mobile 390×844 and English: 68 geometry objects, schema 1.4.0, scenario and operating-state hash restoration, reduced motion, no external requests and zero console/page errors.",
       "status": "closed"
     },
     {
