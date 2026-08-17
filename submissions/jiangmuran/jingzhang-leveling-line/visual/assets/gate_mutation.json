@@ -928,6 +928,30 @@
       "why_en": "**An item declaring urban-design depth whose evidence contains no built form is claiming more than it shows.** That file is one of the three matrices the reviewing model reads whole, and this item is the delivered face of a top-level brief requirement. The mutation proves the build stops when an item declaring a dimension stops citing the kind of evidence that dimension is made of."
     },
     {
+      "id": "M109",
+      "gate": "geometry_citation_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把十一个东西缝合点的机读锚点改回主脊 `ROAD-001`——**句子里的括号仍然写着「ROAD-101 至 ROAD-111」**，改的只是机器跟着走的那一个指向哪里。",
+      "what_en": "Put the machine-readable anchor for the eleven east-west stitching points back on the spine `ROAD-001` — **the sentence's own parenthetical still says ROAD-101 through ROAD-111**; what changes is where the copy a machine follows points.",
+      "why_zh": "这是修复前的原文：一句话里两份同一个事实，**而机器跟着走的那一份是错的那一份**。`ROAD-001` 是 9,443 m 的主脊，身上根本没有 `stitching_street` 这个属性；**顺着那个锚点走的评审，落在一条长线上，看不到那句话正在讲的十一段 90 m 连通提案。**十一个要素由图层的 `stitching_street` 属性现算，不手写。",
+      "why_en": "This is the pre-fix text: two copies of one fact inside a single sentence, **and the copy a machine follows was the wrong one**. `ROAD-001` is the 9,443 m spine and carries no `stitching_street` property at all, so **a reviewer following that anchor landed on one long line and saw none of the eleven 90 m connection proposals the sentence is about.** The eleven are recomputed from the layer's `stitching_street` property rather than typed."
+    },
+    {
+      "id": "M108",
+      "gate": "geometry_citation_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "从文化用地那一行的引用里删掉一个要素号（LU-B03）——**图层一个字没改，那一行也还在引图层**，改的只是它引的那一组要素是否仍等于图层放在该代码下的那一组。",
+      "what_en": "Drop one feature id (LU-B03) from the cultural-use row's citation — **the layer is untouched and the row still cites the layer**; what changes is whether the set it cites still equals the set the layer puts under that code.",
+      "why_zh": "本包在前言摘要里声明「七类用地完整剖分（无重叠无缺口）」，而 `land_use.geojson` 的 22 个要素此前在正文里**只被引过一次**。一个被告知剖分完整的评审，能核对四项面积读数，**却无法从任何一行走到那一行由哪些多边形组成**。接上之后这组引用必须由图层现算而非手写：**一个逐行手做七次的决定，必然有一次会做错**。",
+      "why_en": "This package states in its front-matter summary that seven land-use classes are partitioned with no overlap and no gap, while `land_use.geojson`'s 22 features were cited **once** in the prose. A reviewer told the partition is complete can check the four area readings and **cannot get from any row to the polygons that row is made of**. Once joined, the set has to be recomputed from the layer rather than typed: **a per-row decision made by hand seven times is one that will be got wrong once.**"
+    },
+    {
       "id": "M107",
       "gate": "source_citation_qa.py",
       "target": "proposal.md",
@@ -1289,7 +1313,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 105,
+  "caught": 107,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1318,6 +1342,7 @@
     "frame_collision_qa.py",
     "garden_crossing_qa.py",
     "gate_count_qa.py",
+    "geometry_citation_qa.py",
     "harness_reference_qa.py",
     "i18n_order_qa.py",
     "intake_limits_qa.py",
@@ -1407,6 +1432,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 76 道闸门，其中 73 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 76 gates, 73 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 77 道闸门，其中 74 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 77 gates, 74 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
