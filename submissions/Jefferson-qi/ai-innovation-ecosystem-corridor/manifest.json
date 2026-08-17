@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "ai-innovation-ecosystem-corridor",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8b19537a7e04f7199334b6809b2fc1544bdf9da450d385f95dd67cfd25595055"
+      "sha256": "76b1166807d6ae19fe57fbcb497b034fc2f600da182b7be8f468062de2bee2a5"
     },
     {
       "path": "compliance_matrix.json",
@@ -298,6 +298,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
