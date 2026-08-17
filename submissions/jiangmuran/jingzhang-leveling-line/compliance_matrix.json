@@ -48,6 +48,11 @@
       "risk_ids": [
         "RISK-MATURITY-001",
         "RISK-DELIVERY-001"
+      ],
+      "geometry_feature_ids": [
+        "PROV-KEY-001",
+        "PROV-KEY-002",
+        "PROV-KEY-003"
       ]
     },
     {
@@ -97,6 +102,9 @@
       "risk_ids": [
         "RISK-POLICY-001",
         "RISK-DELIVERY-001"
+      ],
+      "geometry_feature_ids": [
+        "PUBLIC-001"
       ]
     },
     {
@@ -141,6 +149,9 @@
       "risk_ids": [
         "RISK-EQUITY-001",
         "RISK-ACCEPTANCE-001"
+      ],
+      "geometry_feature_ids": [
+        "SITE-001"
       ]
     },
     {
@@ -187,6 +198,9 @@
       },
       "risk_ids": [
         "RISK-POLICY-001"
+      ],
+      "geometry_feature_ids": [
+        "SITE-001"
       ]
     },
     {
@@ -232,6 +246,12 @@
       },
       "risk_ids": [
         "RISK-POLICY-001"
+      ],
+      "geometry_feature_ids": [
+        "SITE-001",
+        "PROV-KEY-001",
+        "PROV-KEY-002",
+        "PROV-KEY-003"
       ]
     },
     {
@@ -276,6 +296,11 @@
       },
       "risk_ids": [
         "RISK-POLICY-001"
+      ],
+      "geometry_feature_ids": [
+        "PROV-KEY-001",
+        "PROV-KEY-002",
+        "PROV-KEY-003"
       ]
     },
     {
@@ -366,6 +391,10 @@
       "risk_ids": [
         "RISK-ACCEPTANCE-001",
         "RISK-EQUITY-001"
+      ],
+      "geometry_feature_ids": [
+        "BLDG-001",
+        "BLDG-004"
       ]
     },
     {
@@ -412,6 +441,9 @@
       "risk_ids": [
         "RISK-DELIVERY-001",
         "RISK-COST-001"
+      ],
+      "geometry_feature_ids": [
+        "PROV-KEY-001"
       ]
     },
     {
@@ -503,6 +535,9 @@
       "risk_ids": [
         "RISK-JURISDICTION-001",
         "RISK-ACCEPTANCE-001"
+      ],
+      "geometry_feature_ids": [
+        "ROAD-001"
       ]
     },
     {
@@ -548,6 +583,9 @@
       "risk_ids": [
         "RISK-JURISDICTION-001",
         "RISK-EQUITY-001"
+      ],
+      "geometry_feature_ids": [
+        "GREEN-001"
       ]
     },
     {
@@ -594,6 +632,10 @@
       },
       "risk_ids": [
         "RISK-POLICY-001"
+      ],
+      "geometry_feature_ids": [
+        "GREEN-001",
+        "PUBLIC-001"
       ]
     },
     {
@@ -640,6 +682,11 @@
       "risk_ids": [
         "RISK-POLICY-001",
         "RISK-DELIVERY-001"
+      ],
+      "geometry_feature_ids": [
+        "PROV-KEY-001",
+        "PROV-KEY-002",
+        "PROV-KEY-003"
       ]
     },
     {
@@ -687,6 +734,10 @@
       "risk_ids": [
         "RISK-MATURITY-001",
         "RISK-COST-001"
+      ],
+      "geometry_feature_ids": [
+        "PROV-KEY-001",
+        "CONSTRAINT-001"
       ]
     },
     {
@@ -735,6 +786,10 @@
       "risk_ids": [
         "RISK-EQUITY-001",
         "RISK-ACCEPTANCE-001"
+      ],
+      "geometry_feature_ids": [
+        "PROV-KEY-002",
+        "BLDG-001"
       ]
     },
     {
@@ -781,6 +836,11 @@
       "risk_ids": [
         "RISK-JURISDICTION-001",
         "RISK-ACCEPTANCE-001"
+      ],
+      "geometry_feature_ids": [
+        "PROV-KEY-003",
+        "BLDG-003",
+        "BLDG-005"
       ]
     },
     {
@@ -827,6 +887,10 @@
       },
       "risk_ids": [
         "RISK-DELIVERY-001"
+      ],
+      "geometry_feature_ids": [
+        "ROAD-001",
+        "PUBLIC-001"
       ]
     },
     {
@@ -923,6 +987,11 @@
         "RISK-MATURITY-001",
         "RISK-PRIVACY-001",
         "RISK-EQUITY-001"
+      ],
+      "geometry_feature_ids": [
+        "CONSTRAINT-001",
+        "CONSTRAINT-002",
+        "CONSTRAINT-003"
       ]
     },
     {
@@ -972,6 +1041,11 @@
       "risk_ids": [
         "RISK-EQUITY-001",
         "RISK-ACCEPTANCE-001"
+      ],
+      "geometry_feature_ids": [
+        "BLDG-001",
+        "BLDG-002",
+        "PUBLIC-001"
       ]
     },
     {
@@ -1063,6 +1137,11 @@
       "risk_ids": [
         "RISK-COST-001",
         "RISK-DELIVERY-001"
+      ],
+      "geometry_feature_ids": [
+        "PHASE-001",
+        "PHASE-002",
+        "PHASE-003"
       ]
     }
   ],
