@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Re-imagining the Jingzhang Railway Heritage Park as a 'silver-age service spine' for the elderly communities along the corridor: an AI-assisted public-service belt covering elderly medical visits, civic errands and barrier-free mobility. The proposal sets out the 'Jingzhang Silver-Age Accessibility Belt' concept, linking three key areas and沿线 communities, hospitals, civic-service points and metro entrances via a ~9 km continuous barrier-free slow-mobility spine, with 10 AI elderly-service scenario cards (incl. 3 test/validation scenarios), 5 elderly personas, 3 warmth landmarks, 8 elderly-use land types and 7 silver service nodes — an experienceable, replicable and iterable concept for elderly-friendly barrier-free smart services."
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v4.0"
+iteration: "v5.0"
 ---
 
 # Jingzhang Silver-Age Accessibility Belt: AI-Assisted Medical, Civic and Barrier-Free Mobility Services for the Elderly
@@ -243,29 +243,35 @@ The common failing of AI elderly services is "the machine processes the elderly 
 
 **Relation to "the elderly as the active party".** The core of Silver Relay is not making AI understand the elderly better, but **requiring every AI service to hand the baton back to a named person**. The three rules — signed receipt, follow-up visit and no-AI equivalence — jointly guarantee: AI may help, but it will never "decide for the elderly" — the elderly always remain the active party of the service, and the machine always remains the assistant [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
 
-### Block Confirmation: Internalising Railway Dispatching Methodology (original to this proposal, v4)
+### Core Mechanism: Intergenerational Connection Points (original to this proposal, v5)
 
-Silver Relay answered "AI must hand the baton to a human", but not yet "who is responsible at the instant of the handover". This proposal transplants the **block confirmation** methodology from railway dispatching: only one train may occupy the same block at any given moment — likewise for elderly services, **only one responsible party (AI or human) handles the same service at any given moment** [E:SILVER-BLOCK-CONFIRMATION].
+Silver Relay answered "AI must hand the baton to a human", but an even more fundamental question remains. The proposal puts forward a counter-intuitive fact: **the more AI elderly services there are, the lonelier the elderly become** — technology replaces human contact; services become "more efficient", but connections become fewer. The core question for Silver Relay is not "how fast is it done", but **"whether the elderly person's connection with society is strengthened"** — using "connection" as the lens (just as human-hours uses time as its lens, this proposal uses connection as its lens) [E:SILVER-CONNECTION-POINTS].
 
-**Block-confirmation rules:**
-- **The AI block must release before the human block may occupy** — after AI completes its navigation it must "release" (explicitly telling the elderly person the service has been handed over to a human), and only then does the human handover "occupy" (explicitly accepted). No gaps (the elderly person is never left unattended), no overlaps (no two parties "handling" the elderly person at once).
-- **Handovers carry confirmation** — the elderly person or their proxy confirms "I have been handed over to a human", and only then is the handover complete. Without such confirmation, the AI block must not release.
-- **Follow-up-visit closure is retained** — the 24–72-hour follow-up visit confirming the service was truly completed remains the final link of the block chain.
+**Design principle: every AI service point is not a "service endpoint" but a "connection starting point".** AI handles the task, but the goal of spatial design is to make the elderly person stay and talk — after the task is done, the space guides the elderly person toward connection with volunteers, family members and peers [data:visual/assets/connection-points.json#design-principle].
 
-**Lens: An Elder's Day.** The service chain is designed around the elderly person's complete day from waking to sleep, rather than as a checklist of service points: morning medication reminder → morning medical visit (block: AI navigation → triage escort) → midday meal assistance (AI recommendation → human confirmation of dietary restrictions) → afternoon errands / digital aid (AI checklist → window / volunteer teaching) → evening safety (AI navigation → duty officer confirms safe arrival) → pre-sleep follow-up confirmation. Every link has one and only one responsible party [data:visual/assets/block-confirmation-table.json#lens].
+**5 Intergenerational Connection Points (placed along the corridor; full specifications in `visual/assets/connection-points.json`):**
 
-**No-AI baseline (negative space).** With no AI service at all, An Elder's Day can still be fully completed through community volunteers, family and traditional service modes. AI is a switchable overlay; block confirmation ensures that when it is switched off there are **no gaps** — the elderly person is never left unattended simply because "AI was turned off" [data:visual/assets/block-confirmation-table.json#negative-baseline].
-
-**Block table for the 10 scenarios** (full list in `visual/assets/block-confirmation-table.json`):
-
-| Scenario | AI block | Human block | Block confirmation |
+| Station | Location | Connection design | No-AI equivalence |
 | --- | --- | --- | --- |
-| Silver medical navigation | AI navigation (release) | Triage escort (occupy) | AI block releases → human block occupies |
-| Silver civic-errand navigation | AI document checklist (release) | Human verification at the window (occupy) | AI block releases → window block occupies |
-| Silver digital aid | AI tutorial (release) | Intergenerational volunteer teaching (occupy) | AI block releases → volunteer block occupies |
-| Silver night safety | AI navigation (release) | Duty officer confirms safe arrival (occupy) | AI block releases → duty block occupies |
+| CP-01 Origin Community Station | Silver service kiosk | Face-to-face connection benches (not row seating facing screens) + intergenerational message wall (handwritten notes, AI not involved) | Community activity room: tea / benches / duty volunteer |
+| CP-02 Zhongzhiyuan Station | Beside the silver health kiosk | Intergenerational pairing corner: young volunteers on rotation; the elderly may book chats / walks / learning sessions | Volunteer rotation corner |
+| CP-03 Mid-Park Station | Mid-corridor kiosk | Face-to-face benches + park activity notice board (paper) | Park rest point + notice board |
+| CP-04 Dazhongsi Station | Silver Service Port | Intergenerational culture corner: sharing platform for old crafts / old stories, the elderly and young people teach each other | Culture corner; mutual-teaching activities continue as usual |
+| CP-05 South End Station | South-end service node | Face-to-face benches + community photo wall | Community rest point + photo wall |
 
-The relation between block confirmation and Silver Relay: relay is the act of "handing over the baton"; block confirmation is the "rule of responsibility at the instant of the handover" — relay guarantees someone takes the baton, block confirmation guarantees the handover has no gap and no overlap. Together they guarantee that "the elderly always remain the active party, and someone is always responsible" [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+**Connection receipt (the true success indicator of a service).** In addition to the relay receipt, every service concurrently generates a **connection receipt**: whether the service produced a connection, with whom, whether there was a follow-up visit, and whether the connection is maintained. The relay receipt proves "someone is responsible"; the connection receipt proves "someone is connected" — **a service done well while the elderly person remains lonely does not count as success**. The full set of 10 connection receipts is in `visual/assets/connection-receipt.json` [data:visual/assets/connection-receipt.json#receipts]:
+
+| Scenario | Connection design | Follow-up visit |
+| --- | --- | --- |
+| Silver medical navigation | Triage escort shifts into accompanied conversation | 24h: whether the person met someone new |
+| Silver digital aid | Intergenerational volunteer teaching is itself the connection (fixed pairing) | 72h: whether the pairing contact is maintained |
+| Silver meal-assistance service | Eating at the same table at the meal point (shared tables encouraged) | 72h: whether the person made another appointment with tablemates |
+
+**Negative-space baseline.** With no AI service at all, the connection functions of the traditional community network (volunteers / family / community activity rooms) remain intact — when AI is switched off, connections are not interrupted [data:visual/assets/connection-points.json#negative-baseline].
+
+**Rule-closure verification.** `run_connection_tabletop.js` correctly classifies all 60 synthetic cases — 10 receipts × 6 rule branches (complete / task done but not connected / connection not recorded / missing follow-up visit / connection broken / missing no-AI path) — as 30 blocked / 10 connected / 20 flagged, proving the connection rules are logically closed. But this only proves classification correctness; it does not constitute on-site elderly-service, connection-effectiveness or authorisation evidence — on-site performance remains null with status `not_authorized_not_run` [data:visual/assets/connection-tabletop-evidence.json#blocked].
+
+**Relation to Silver Relay.** Relay answers "to whom does AI hand the baton" (responsibility); the Connection Points answer "what remains after the handover" (connection) — relay guarantees the elderly person always has someone responsible; the Connection Points guarantee the elderly person is not merely "served" but "connected". Together they form the complete closed loop of "the elderly as the active party": **someone is responsible, and someone is connected** [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
 
 ### Conceptual Renewal Project List
 
