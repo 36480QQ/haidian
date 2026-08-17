@@ -8,7 +8,7 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
-        "第二幕：把同一台仪器用在场地上",
+        "场地数据本身的闭合差：同一件事的两份来源对不上",
         "设计依据与资料清单"
       ],
       "drawing_refs": [
@@ -32,7 +32,7 @@
       "self_check_ids": [
         "BOUNDARY_TRUST"
       ],
-      "evidence_summary_zh": "本条由正文小节「第二幕：把同一台仪器用在场地上」「设计依据与资料清单」；图层 site_boundary.geojson；指标 site_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 field_census_corpus_size（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 site-overview.png；来源 BOUNDARY-SOURCE、OSM-REFERENCE-2026-08（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「场地数据本身的闭合差：同一件事的两份来源对不上」「设计依据与资料清单」；图层 site_boundary.geojson；指标 site_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 field_census_corpus_size（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 site-overview.png；来源 BOUNDARY-SOURCE、OSM-REFERENCE-2026-08（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 11,
         "reviewer_can_read_whole": 9,
