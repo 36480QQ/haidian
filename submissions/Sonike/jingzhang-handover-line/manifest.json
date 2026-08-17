@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6ce5160bfbd834d040cad682bb1e78eee994ff27c7e70e22da944b0e0a6f1a26"
+      "sha256": "d194ef9622241f5080e864f4d93ce04c9fef4a724130282f7c4c1f1d24b18035"
     },
     {
       "path": "agent.json",
@@ -37,7 +37,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "dfbd0a6ac723cca85e02dc98d6767870c95729da919d252ff3f7d5a8bceafe9f"
+      "sha256": "063bf2d6de9f4ee130fdc4a403822487a32ff7234ebf8789d7fd29bd4e9f7738"
     },
     {
       "path": "assumptions.json",
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ab20e9d24a7fab988b860e9b47cf748f07be570d22551f52713675e84df7c3ad"
+      "sha256": "e376f55dea64fb8dc9f61024753c3e16a6cb28c098e2b9a380eccd3dea170080"
     },
     {
       "path": "compliance_matrix.json",
@@ -73,14 +73,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "1b54098b546590745c5e9ad43420a46d82e4e78ffa738a57a3982469342337f4"
+      "sha256": "9c9e32003bb0b3061b8f0321e059e895ff714b4fd65281e3dfc2cae9c45ef4b4"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e28fdf6eba475a3331495e22040e28674a8a30e061540fa5bed62f69f2a9e61a"
+      "sha256": "6e11b3c34984c26c863f71e6b2ec250bb6abfa3d8d39b9ed16adf3f003d5a9e4"
     },
     {
       "path": "report/narrative.md",
@@ -210,7 +210,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ca6d7696415a9aaf4d0df108ab88355c8d079a17aa77baff6876333d678ff61c"
+      "sha256": "253c9fd01c7134a9e2bbca00dae7d3c3b643e594722991621363b4b5097d9c85"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "852eb58e763ecf0c513bfdcb98dc6b0b20defcddc2b243b89c0e101998bd3b0c"
+      "sha256": "661822b02e14eb2b1a42d533ac84fc150d9c52a693df0d30f0560a219e83601a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -349,7 +349,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "5ad426a1de6100b076b64af359a710b0b2806e46949be73b6fb0bde9172e491e"
+      "sha256": "f74ea48a01b4f49044db2ae12ff48ab07c63ae44337a2acd559249850ff9f4d7"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
