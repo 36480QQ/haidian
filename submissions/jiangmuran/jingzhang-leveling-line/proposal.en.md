@@ -995,6 +995,8 @@ Layers [data:geometry/green_space.geojson#GREEN-001] and [data:geometry/public_s
 
 ### Three AI pilgrimage landmarks (agent.4)
 
+The count is [metric:landmark_count]; the three stand on origin- and first-order points [metric:benchmark_first_order_count].
+
 Landmarks here are not objects to look at; they are **instruments to read**. All three speak engineering language and refuse spectacle.
 
 **L1 — The origin benchmark stone (BM-0, the AI Origin Community).** A metal stone set into the ground, flush with the surface, under a metre across. Its face carries the starting elevation and number, and the paving around it is laid with the numbered sequence of every merged proposal — **contributors' GitHub IDs are inscribed here.** This meets the call's inscription promise without inventing a device: a benchmark stone has always been a permanent mark for whoever re-measures a century later.
@@ -1293,6 +1295,35 @@ Every reading here is taken by one party and countersigned by another, and those
 ### Pilot agreement components
 
 Launching the first trial needs an agreement, not only a proposal. This document does not draft the text — that is legal work — but lists the components none of which can be omitted: composition and replacement rules for the four review categories, including absence handling and how resident representatives are selected; **freezing and publication of the question set**, unmodifiable once the trial starts; ownership and publication deadline for readings; site use and safety responsibility, including who carries the safety plan and insurance; **exit and resumption** under rule 7, written into the agreement rather than agreed verbally; a specific list of personal data not collected, and the consequence of breach; and a review cycle for the agreement itself, since it is a living document.
+
+### The F1 admission trial: this proposal's own strictest gate, walked once
+
+**From its first summary sentence this proposal has said that F1 scenarios must obtain a passing closure record at the controlled test field before entering public service, and this document never once wrote that passing record out.** The previous section walks F3 — the widest tolerance, the class that can be taken down immediately when a conclusion is wrong. The strictest class was repeatedly declared and never executed. What follows supplies it, using only quantities the package already publishes and adding no new self-set value.
+
+| Item | Setting | Basis |
+|---|---|---|
+| Scenario | **S11 AI industry test and validation field (F1)**, at the Zhongzhiyuan controlled test field | Scenario and ground are registered: [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/constraints.geojson#CONSTRAINT-001] (5.30 ha, enclosed by time of day rather than permanently) |
+| What is measured | **Stopping distance**, not answer consistency | The public risk of a low-speed device is whether it stops; A-DEVICE-002 already derives **2.59 m** from v·t + v²/(2a) |
+| Definition of f | The range of stopping distances for one device on one test line, **each measured once by a different party** | Closure error measures whether two independent readings agree; this is its direct translation onto a device — not measuring accurately, but different people measuring back |
+| Device envelope | Height 1,300 mm, turning Ø1,800 mm, kerb mass ≤ 120 kg, site speed ≤ 6 km/h | The seven envelope figures registered by A-DEVICE-001, **four of which have no source** and are marked red on the sheet |
+| Review parties | One group of each of the four kinds, **unanimity required** to admit | The same standard clause 7 sets for F1 recovery: admission and recovery should not differ in strictness |
+| Initial F1 tolerance | **This proposal does not give one** | The reason is the next paragraph, and it is the most important line in this section |
+| Non-AI equivalent | Retained throughout, and not withdrawn after admission | An F1 class may never cancel its equivalent path on the grounds of having passed |
+
+**Why no initial F1 value.** 2.59 m is not a measurement: v, t and a are all self-set, as A-DEVICE-002 itself records. **Using a self-set value as a tolerance to judge a real device fit or unfit is passing reasoning off as measurement** — the thing this proposal argues against throughout. So this gate **cannot be walked** on the data this package holds, and saying so is worth more than a presentable number: the initial F1 value must be set jointly by the four review parties after the first on-site measurement, and this proposal hands over only the definition, the formula and the procedure.
+
+**The first on-site round therefore produces exactly three things**: the range of stopping distances for one device in different hands (the first real f), how that range converges with repeated readings (how many readings count as stable), and the deviation of 2.59 m from the measured value — which decides directly whether the closure conditions of A-DEVICE-001 and A-DEVICE-002 hold. **Nothing published rested on those two assumptions before**; this section makes them bear weight for the first time.
+
+| Step | Entry condition | Exit condition |
+|---|---|---|
+| 1 On-site baseline | Device within the A-DEVICE-001 envelope; all four parties present | At least 3 independent stopping-distance readings obtained |
+| 2 Tolerance setting | Baseline obtained and the range has converged | Four parties unanimously agree an initial F1 and publish the algorithm |
+| 3 On-site pass | F1 has been set | **Two consecutive re-survey cycles with f ≤ F1**; passing once may be luck |
+| 4 On-street | On-site pass + removal bond in place + benchmark coverage along the route met | Continues to meet the cycle; over tolerance the whole route returns and the device is removed |
+
+**The third condition of step 4 does not hold today.** FIG.21 measures six of the nine segments as failing this proposal's own fifteen-minute rule — **so under this section's own admission conditions there is no stretch of this belt today on which an F1 device may operate**. That is not the gate written too strictly; it is the state the gate exists to stop, recorded honestly once.
+
+**Responsibility boundary**: this proposal names no implementing body, assumes no agreement from any institution, and sets no tolerance on anyone's behalf. The above is a procedural suggestion for the park operator, an accredited testing body, the local sub-district office and device firms to evaluate independently [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ### Annual programme and long-term operation (agent.6)
 
@@ -1750,7 +1781,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.68 s**; 9 files, 1146 KB, 1,805 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.69 s**; 9 files, 1147 KB, 1,806 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
@@ -1794,7 +1825,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`; two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` the argument alone. Six files ship behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 72 of 75 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`; two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` the argument alone. Six files ship behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 73 of 76 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
 
 <!-- PDFPAGE1:BEGIN -->
 
