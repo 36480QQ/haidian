@@ -53,6 +53,7 @@ scenarios:
 | Q2 · 不注册、不扫码、不使用 AI 能否完成普通任务？ | 能。实体导向、无屏信息、连续非 AI／无障碍意图路径、纸面或口头说明、人工交接和清晰退出先独立成立。 | `visual/index.html#ordinary-life` | A3 P8；A0 P5 |
 | Q3 · 三处为什么不能互相复制？ | 众智园是平行验证庭、设备隔离边与实体停止点；原点社区是一街两院四节点与逐点撤回；大钟寺是四向通勤、路外发布厅与人工台。 | `visual/index.html#areas` | A3 P4—P7；A0 P3—P4 |
 | Q4 · 验证轨为什么不是连续占地？ | 它只表达自愿、公告、限域、可停止和可拆除的旁侧任务叠层；双轨是任务关系，不是坐标、距离、连续足迹或建设线位。 | `visual/index.html#cold-read-proof-boundary` | A3 P1、P3；A0 P1 |
+| Q5 · 故障时停止什么、保留什么？ | 停止并隔离自动化、采集、扩声、显示或服务叠层；连续日常轨、完整非 AI 路径、无屏信息、人工接管、撤回、申诉与安全离开继续。 | `visual/index.html#four-state-motion` | A3 P9；A0 P6 |
 
 **包内导航与评审交接索引。** 本包全部 141 个路径的评审定位统一见 `visual/assets/review-handoff-index.json`：七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、全部 21 个章节阅读单元、D01—D08/H01—H07 交接、八问冷读）与逐文件登记（现行／历史快照／机器输入／冻结／临时五类状态、语言对、轮次来源与权利回链）。`round15-baseline.json` 是历史快照而非现行状态，`t02-g0-g1-replay-fixtures.json` 是合成回放机器输入，两者均不得被误读为当前证据。索引只负责定位，不生成新证据、不改变成熟度或权利状态 [data:visual/assets/review-handoff-index.json]。
 
