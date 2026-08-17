@@ -206,22 +206,37 @@ This proposal takes public interest as the first principle of AI scenario and pu
 
 ## 10 Renewal Projects, Implementation Policy, and Phasing
 
-### 10.1 Renewal Project List (conceptual)
+### 10.1 Renewal Project List (conceptual, with responsible actors and quantified targets)
 
-| Code | Project | Type | Key dependencies | Phase |
-| --- | --- | --- | --- | --- |
-| JZ-01 | Dazhongsi station-city public living room | Public space / transit | Transit station, intersections, municipal pipelines | Phase 1 |
-| JZ-02 | Origin open-source release plaza | Public space / industry | Campus boundaries, ownership, ground-floor programs | Phase 1 |
-| JZ-03 | Zhongzhiyuan Qinghe innovation interface | Blue-green / industry | River blue line, ecology, flood conditions | Phase 1 |
-| JZ-04 | Intellima Green Spine gap stitching | Public space / transport | Road redlines, under-bridge space, traffic review | Phase 2 |
-| JZ-05 | Xiaoyuehe intelligent-transport test field | New infrastructure / transport | Energy, compute, safety, operator | Phase 2 |
-| JZ-06 | Global AI Open Week public route | Operations / brand | Public-space permits, event safety, rights clearing | Phase 2 |
+| Code | Project | Type | Key dependencies | Responsible actor (conceptual) | Quantified target (conceptual) | Phase |
+| --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | Dazhongsi station-city public living room | Public space / transit | Transit station, intersections, municipal pipelines | Transit operator, district platform, commercial operator | One station-city living room; four-quadrant walking covering main entrances | Phase 1 |
+| JZ-02 | Origin open-source release plaza | Public space / industry | Campus boundaries, ownership, ground-floor programs | Universities, park operator, open-source community | One release plaza; ≥12 annual open-source events | Phase 1 |
+| JZ-03 | Zhongzhiyuan Qinghe innovation interface | Blue-green / industry | River blue line, ecology, flood conditions | District platform, park operator | One waterfront innovation interface; supporting green linked to the greenway network | Phase 1 |
+| JZ-04 | Intellima Green Spine gap stitching | Public space / transport | Road redlines, under-bridge space, traffic review | Transport, landscaping, local sub-district | Improved spine connectivity; major gap list progressively cleared | Phase 2 |
+| JZ-05 | Xiaoyuehe intelligent-transport test field | New infrastructure / transport | Energy, compute, safety, operator | Traffic management, park operator, technology operator | One test field; ≥3 open industry test/validation scenarios | Phase 2 |
+| JZ-06 | Global AI Open Week public route | Operations / brand | Public-space permits, event safety, rights clearing | Event operator, venues, community | Annual Open Week; global developer participation growing yearly | Phase 2 |
+| JZ-07 | Data-element living room | Industry / governance | Data compliance, authorization, audit | Data authority, operator | One living room; public data catalog and governance rules first | Phase 2 |
+| JZ-08 | Community AI lifestyle sample street | Public services / renewal | Community, ground-floor programs, operator | Sub-district, community, service operator | One sample street; services covering health/education/legal matters | Phase 2 |
 
-### 10.2 Phasing
+The responsible actors and quantified targets above are conceptual suggestions and deepening directions for professional teams to calibrate against ownership, policy, and fiscal reality; they constitute no government or enterprise commitment [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/phasing.geojson#PHASE-001].
+
+### 10.2 Implementation Mechanism and Responsibility Division (conceptual)
+
+The proposal advances implementation mechanisms that can be deepened further, translating the spatial concept into an operable project sequence and responsibility arrangement [depth:renewal_project_list]:
+
+- **Responsibility matrix (conceptual)**: government and public bodies provide spatial supply, policy, and public goods [data:geometry/public_space.geojson#PUBLIC-P-1]; universities and research institutes provide origination innovation and result translation; enterprises provide industry, compute, and commercial operation; communities and the public participate in governance and experience feedback; specialized operators provide scenarios, events, and data services.
+- **Funding sources (conceptual)**: a combination of government guiding funds, public-space operation revenue, industrial funds, and social capital; operation-led projects can start with lightweight facilities and activities, while major engineering awaits defined funding and actors. Funding arrangements constitute no investment commitment [source:AGENT-TASKBOOK].
+- **Quick wins**: operation-led projects (scenario open days, the open-source release hall, developer festivals) have low engineering dependency and can start first; light facilities such as the Intellima Green Spine public living room and data-element living room then build visible results; station integration and test fields follow as asset-heavy projects [depth:phasing_implementation].
+- **Quantified indicator system (conceptual targets)**: green ratio, public-space ratio, slow-traffic connectivity, AI scenario-node count, annual event count, developer-community scale, and resident-enterprise count are set as assessable performance targets [metric:green_ratio] [metric:public_space_ratio], to be calibrated by professional teams during deepening.
+- **Policy-tool suggestions**: urban-renewal coordinated implementation, industrial space supply, innovation-platform services, data-governance rules, public participation, and property-right synergy [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+- **Preconditions and trigger mechanisms**: each project's implementation depends on official regulatory controls, ownership, municipal, and engineering conditions; once official boundaries and regulatory plans are published, all related indicators and phasing are updated per the recalculation path in Section 11 [metric:site_area_sqm].
+
+### 10.3 Phasing
 
 Implementation is expressed in two phases [data:geometry/phasing.geojson#PHASE-001]: **Phase 1 (three-core kickoff and station AI living rooms)** covers the southern Dazhongsi and Origin nodes, ≈626.4 ha [metric:phase_1_area_sqm]; **Phase 2 (spine completion and two-wing stitching)** covers Zhongzhiyuan, the northern Intellima Green Spine, and the Xiaoyuehe wing, ≈514.9 ha [data:geometry/phasing.geojson#PHASE-002] [metric:phase_2_area_sqm]. Phasing expresses a conceptual advancement path only and does not constitute an approval sequence.
 
-### 10.3 Global AI Innovation Event System and Long-Term Operations
+### 10.4 Global AI Innovation Event System and Long-Term Operations
 
 The Agent taskbook requires an annual event system, brand IP, developer-community operations, scenario-open operations, and international communication/recruitment conversion [source:AGENT-TASKBOOK]. The proposal advances a conceptual operations framework [depth:phasing_implementation]:
 
