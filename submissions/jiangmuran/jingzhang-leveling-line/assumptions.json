@@ -475,8 +475,6 @@
       "carries_no_metric_note_en": "**No published number in this package rests on this assumption.** That is not an oversight but the nature of it: if it fails, no value in `metrics.json` changes, so **no check on the numbers can catch it**. `if_wrong_zh` above says what failure would look like; only outside judgement can detect it, not this package's gates. Listing it separately and saying so is the whole of what this proposal can do about it."
     }
   ],
-  "note_zh": "**本文件是评审模型整份读取的九个文件之一，而 `geometry/` 与 `visual/assets/` 不是**（见 `scripts/review_submission.py::build_review_input`）。因此每条假设除了陈述，还写出：`derivation_zh`——这个读数实际是怎么得出的；`if_wrong_zh`——如果它错了，本方案的哪个结论会变、哪个不会；`what_would_close_it_zh`——什么能让它不再是假设；以及 `affects_metrics`——**由 metrics.json 的 assumption_ids 反向索引算出**，使读这份文件的人能看出每条假设承载了多少个数字。一条没有写出后果的假设是免责声明，不是假设。",
-  "note_en": "**This file is one of the nine the reviewing model receives whole; `geometry/` and `visual/assets/` are not** (see `scripts/review_submission.py::build_review_input`). So each assumption states, besides itself: how the reading was actually derived; what changes and what does not if it is wrong; what would stop it being an assumption; and `affects_metrics`, **computed by reversing `metrics.json`'s `assumption_ids`**, so someone reading this file can see how many numbers each assumption carries. An assumption with no stated consequence is a disclaimer, not an assumption.",
   "ownership_counts": {
     "mixed": 1,
     "not_applicable": 1,
@@ -484,7 +482,5 @@
     "organizer": 3,
     "participant": 11,
     "permanently_open": 1
-  },
-  "ownership_note_zh": "**每条假设除了「什么能关闭它」，还写明「谁能关闭它」。** 一份只说条件不说责任的登记表，会把两种情况混成一种：本方案还没做的，和本方案做不了的。本册 19 条的归属为 mixed 1、not_applicable 1、operator_after_award 2、organizer 3、participant 11、permanently_open 1。仓库的评审脚本只把以 `组织方：`／`主办方：` 开头的动作视为外部所有，其余一律 fail-closed 归还参与方（`is_organizer_owned_action`）；本包因此只在三条确属主管部门发布的项上使用该前缀，**A-CONTROLS-001 拆开写而不整条认领，A-LIGHTING-001 记为本方案自己的欠缺**——没拿到一份已公开的标准，不是别人的问题。",
-  "ownership_note_en": "**Each assumption states who can close it, not only what would close it.** A register that gives the condition but not the responsibility merges two different things: what this package has not done, and what this package cannot do. Across 19 records the split is mixed 1, not_applicable 1, operator_after_award 2, organizer 3, participant 11, permanently_open 1. The repository's review script treats an action as externally owned only when it begins `组织方：`/`主办方：` and returns everything else fail-closed to the participant (`is_organizer_owned_action`), so that prefix is used here for the three items that are genuinely an authority's publication and for nothing else — **A-CONTROLS-001 is split rather than claimed whole, and A-LIGHTING-001 is booked as this package's own shortfall**, because not having obtained a published standard is nobody else's fault."
+  }
 }
