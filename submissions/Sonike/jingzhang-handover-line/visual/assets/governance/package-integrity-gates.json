@@ -10,7 +10,7 @@
       "statement_en": "Every reference in the three matrices must resolve to a real entity inside the package.",
       "checks": "standard_matrix / compliance_matrix / design_depth_matrix 的 proposal_sections、drawing_refs、geometry_refs、metric_refs、source_ids、assumption_ids",
       "decision_rule_zh": "章节名须逐字等于 proposal.md 的某个 ## / ### 标题；drawing_refs 的 `文件#pN` 中 N 不得超过该 PDF 页数；其余四类须分别命中 geometry/*.geojson 文件名、metrics.json 的键、sources.json 的 id、assumptions.json 的 id。",
-      "current_result": "154/154 引用可解析，断链 0",
+      "current_result": "907/907 引用可解析，断链 0（含 self_check_ids 97 处、standard_ids、geometry_feature_ids、scenario_ids、gate_ids）",
       "caught_real_defects": [
         {
           "when": "2026-08-16",
@@ -20,6 +20,11 @@
         {
           "when": "2026-08-16（更早一轮）",
           "what": "矩阵指向 11 个不存在的章节名（断链），另有 18 个正文章节从未被任何矩阵引用。前者已清零，后者已由 13 条新指针降到 7。"
+        },
+        {
+          "when": "2026-08-17",
+          "what": "本闸门自陈「154/154，断链 0」，当场重跑发现两件事：一是自陈数字早已过期（矩阵本轮新增六个交叉索引字段后引用总数为 907）；二是更严重的——三个矩阵的 self_check_ids 共引用 19 个标签 97 次，其中 16 个标签、81 处引用在包内没有任何实体定义，self_check.json 只有 4 个真实 check_id。也就是说「断链 0」这句话此前是错的。",
+          "fix": "把 19 个标签逐条定义写进 compliance_matrix.json 顶层的 self_check_expectations（矩阵本身在评审输入内，引用与定义同文件可解析），每条写明断言什么、证据在包内哪个文件的哪个字段、怎么独立核验；covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。修后实测 907/907、断链 0。"
         }
       ]
     },
@@ -74,12 +79,17 @@
       "statement_en": "The Chinese and English proposals must have identical section structure at every level.",
       "checks": "proposal.md 与 proposal.en.md 的 ## / ### 计数",
       "decision_rule_zh": "两侧 h2 数相等且 h3 数相等；任一侧新增章节必须同一轮补齐另一侧。",
-      "current_result": "h2 15/15，h3 27/27",
+      "current_result": "h2 15/15，h3 28/28，层级序列逐位一致",
       "caught_real_defects": [
         {
           "when": "2026-08-16",
           "what": "本闸门抓到的第一处缺陷，就出在为它自己写的那一节上：新增《十四道包自检闸门》后 h3 由 26 变 27，而正文表格与本文件里都还写着 26/26——**一份讲一致性的文档，自陈落后于自身状态**。已同步为 27/27。",
           "note": "自陈型数字必须在每轮结束时重测一遍，不能沿用上一轮的写法。"
+        },
+        {
+          "when": "2026-08-17",
+          "what": "本闸门自陈仍写 h3 27/27，而当前包为 28/28——它第二次抓到「为它自己写的那一节让自陈数字过时了」。",
+          "fix": "当场重跑并写回实测值；同轮把 G01 的自陈数字一并更正。"
         }
       ]
     },
@@ -208,6 +218,6 @@
   "totals": {
     "gate_count": 14,
     "gates_that_caught_real_defects": 12,
-    "note_zh": "14 道闸门中有 12 道在真实使用中抓到过缺陷，逐条记在 caught_real_defects 里，并可在 changelog.md 对应条目中找到当轮的修复记录。其中 G11 抓到的是**组织方场地包的错误**而非本包的（已提 Issue #2977）；G01 抓到的是**本包作者当轮新写的错引**；G05 更直接——它抓到的是**为它自己写的那一节让自陈数字过时了**。闸门对自己人同样生效，这一点比闸门数量重要。"
+    "note_zh": "14 道闸门中有 12 道在真实使用中抓到过缺陷，逐条记在 caught_real_defects 里，并可在 changelog.md 对应条目中找到当轮的修复记录。其中 G11 抓到的是**组织方场地包的错误**而非本包的（已提 Issue #2977）；G01 抓到的是**本包作者当轮新写的错引**；G05 更直接——它抓到的是**为它自己写的那一节让自陈数字过时了**。闸门对自己人同样生效，这一点比闸门数量重要。2026-08-17 又添两例：G05 第二次抓到自陈数字过期（h3 27→28），G01 抓到的更重——它自己那句「断链 0」当时是错的，三个矩阵里有 81 处 self_check_ids 引用在包内无定义，已补 self_check_expectations 注册表后实测 907/907。"
   }
 }
