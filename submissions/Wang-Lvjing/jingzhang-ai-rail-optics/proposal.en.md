@@ -71,6 +71,18 @@ Eight global cases are studied to answer how a world-class AI ecosystem is organ
 
 All transfers are conceptual suggestions and imply no investment or recruitment commitment to any enterprise.
 
+### 3.5 AI-Native Urban Form and Planning-Method Innovation
+
+This section elevates "how AI changes the city" from the scenario layer to the spatial and planning-mechanism layer, proposing five innovation mechanisms that can be deepened into spatial design [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]:
+
+1. **Edge-compute and public-service composite layer ("compute stations")**: distributed computing is co-located with public-service centers and low-carbon energy facilities, forming "municipal + compute + service" tri-purpose new-infrastructure nodes [data:geometry/public_space.geojson#PUBLIC-P-2]. This turns AI from a "cloud black box" into a perceptible street-corner public facility and lowers the entry barrier for small and micro enterprises.
+2. **Programmable public space and time-space elasticity**: the Intellima Green Spine and public living rooms support "time-slot reuse" — the same space hosts different AI scenarios across morning commute, midday roadshows, and nighttime digital performances [data:geometry/green_space.geojson#GREEN-LU-DS1]. Space use moves from "static functional zoning" toward "time-space programming", a planning response to land-use elasticity and urban vitality.
+3. **Data-element spatial governance**: the Dazhongsi "data-element living room" and open-public-data mechanism govern "space assets" and "data assets" together [data:geometry/land_use.geojson#LU-EE], cultivating a compliant, authorized, auditable urban-service interface for data-element circulation — the spatial carrier of global voice in AI governance.
+4. **Plan-simulate-test loop**: city digital twins support planning deliberation, and the Xiaoyuehe intelligent-transport test field provides real-world validation [data:geometry/public_space.geojson#PUBLIC-P-4], forming a "planning hypothesis → spatial simulation → field test → feedback revision" loop that answers the taskbook requirement to write test scenarios into space.
+5. **"Three-areas/two-wings" planning units and elastic reserve**: using the three areas and two wings as coordinating planning units, combined with the territorial-spatial "reserve land" approach to set elastic pre-control space that retains adaptability for future AI-native functions [depth:land_use_layout].
+
+All mechanisms are conceptual suggestions for professional teams to deepen within the statutory planning framework; conclusions involving development intensity, road redlines, and engineering plans await official regulatory conditions [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
 ## 4 Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall design area is organized at regulatory-plan urban-design depth. The spatial structure is **"one belt linking three cores, two wings stitching, blue-green composite, multi-node scenarios"** [depth:overall_spatial_structure]:
@@ -104,6 +116,17 @@ Development intensity and building height depend on unpublished official regulat
 Programs, building scale, retain/renovate/demolish classification, public-space connectivity, and transport organization of the three key areas are developed at regulatory-implementation depth. Given the lack of existing-building, ownership, and regulatory data, all retain/renovate/demolish conclusions are expressed as methods and a to-be-calibrated list for professional teams [depth:retain_renovate_demolish]; no parcel-level conclusion is fabricated.
 
 ## 6 AI Innovation Ecosystem, Personas, and AI+ Scenarios
+
+The response mapping of the six Agent taskbook tasks within this proposal is as follows [source:AGENT-TASKBOOK]:
+
+| Agent task | Proposal response (sections and content) |
+| --- | --- |
+| agent.1 Overall concept and functional coordination | Chapter 3: JingZhang Intellima naming, logo direction, three positionings, five functions, three-areas/two-wings synergy loop |
+| agent.2 AI full-stack system and world-class ecosystem | Chapter 3: three areas/two wings, 5–8 global ecosystem cases, ecosystem mapping and factor mechanisms |
+| agent.3 Scenario empowerment and vital city | Chapter 6: 12 scenario cards (incl. 4 industry test/validation), 6 persona types, privacy and human-review boundaries |
+| agent.4 AI public space, new formats, pilgrimage landmarks | Chapter 9: Intellima Green Spine and public living rooms, 3 AI pilgrimage landmarks, honor-display system and component library |
+| agent.5 Cultural narrative | Chapter 9: Jing-Zhang–Zhongguancun–AI new-culture narrative, signage symbols, international communication narrative |
+| agent.6 Global events and long-term operations | Chapter 10: annual event system, brand IP, developer-community operations, scenario openness, international conversion |
 
 ### 6.1 User Personas (6 types)
 
@@ -170,6 +193,16 @@ Three candidate AI pilgrimage landmarks are proposed [source:AGENT-TASKBOOK]:
 3. **Digital Bell-Drum · Dazhongsi Intelligent Landmark**: echoing Dazhongsi's historic bell culture with an interactive digital soundscape and AI content display as a new bell-drum of the intelligent era.
 
 The honor-display system includes a public code wall, contributor wall, AI milestone corridor, and an annual "Intellima Prize", distributed along the green spine and public living rooms, supported by a wayfinding and signage system with accessibility design. All landmarks and brand elements are conceptual directions requiring professional deepening and rights clearing; they do not constitute approved construction [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+### 9.4 Public Interest and Inclusive Design
+
+This proposal takes public interest as the first principle of AI scenario and public-space design, making explicit the benefit pathways and protection boundaries for every group [source:AGENT-TASKBOOK]:
+
+- **Accessibility and intergenerational inclusion**: public spaces and AI service interfaces follow barrier-free environment requirements, providing parallel voice, tactile, large-type, and human-service channels [standard:BARRIER-FREE-ENVIRONMENT-LAW]; for elderly high-frequency service scenarios, "traditional service parallel to intelligent service" is maintained so that intelligentization does not become an access barrier [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
+- **Resident and community benefit**: the Intellima Green Spine, public living rooms, and embedded community services prioritize commute, leisure, and daily needs [data:geometry/public_space.geojson#PUBLIC-P-4]; renewal projects advance in a low-disturbance, incremental way to minimize disruption to existing life [depth:renewal_project_list].
+- **Youth and university opportunity**: the open-source release hall, result-translation street, and talent community provide employment, entrepreneurship, and learning opportunities for young developers, startup teams, and faculty and students [data:geometry/public_space.geojson#PUBLIC-P-3].
+- **Visitor and public experience**: the JingZhang Intellima narrative and pilgrimage landmarks offer the public an experience that is visitable, shareable, and participatory [depth:blue_green_public_space].
+- **Data dividend and privacy protection**: AI scenarios adhere to data minimization, explainability, and human review; public-data benefits flow back to community governance; resident profiles are never used for commercial recommendation, and no unauthorized personal profiles are output [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ## 10 Renewal Projects, Implementation Policy, and Phasing
 
