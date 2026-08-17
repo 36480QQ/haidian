@@ -33,6 +33,8 @@ scenarios:
 
 ![Three-frame site reading: published background orientation, the provisional design container, and Twin-Track Jing-Zhang design relationships remain separate and never co-register; G0 concept, provisional geometry, not to scale, with no official redline or station anchor claimed](assets/figures/site-overview.en.png)
 
+> **Editorial hierarchy: 13 required chapters + 8 extended evidence units.** The required proposal consists of Chapters 1–12, from “Design Basis and Source List” through “Risk, Copyright, and Compliance,” plus Chapter 13, “References,” at the end. This reading entry is Extended Evidence E0; the seven H2 units between Chapters 12 and 13 are E1–E7. Extended evidence expands verification, professional handoff, and field-replacement rules. It does not replace a required chapter or change any G0 status, provisional boundary, unknown, non-AI path, rights block, or professional veto.
+
 ## 30-Second / 3-Minute / 15-Minute Entry
 
 | Reading time | Answer only this | Start here | Misreading to stop |
@@ -46,6 +48,8 @@ scenarios:
 Figure 01 deliberately separates three frames. **A, background orientation**, converts published reports into field questions; it is not survey or as-built evidence. **B, the provisional design container**, supports concept organization and intake checks only; it is not an official redline. **C, design relationships**, shows task relay, adjacent proof, staffed handover, stop, and restoration only; it establishes no coordinate, distance, or approval order. The three frames must not be merged into one apparently real site map. The recorded 0% overlap and about 412.5-metre separation in the existing OSM background check remain an unresolved background divergence. `PROV-KEY-003` remains unanchored to Dazhongsi station, a road, parcel, or building. The geometry therefore stays in place, with explicit recalculation triggers [data:visual/assets/site-grounding-register.json#JZ-SITE-READING-R17] [assumption:A-SITE-READING-020].
 
 The proposal retains twelve existing machine-readable scenes, eight projects, and three key areas. The front-matter `scenarios` list uses the repository’s six current scenario-registry families only as discovery metadata; it deletes, renumbers, and advances no `SCENE-*` object. Chinese and English prose, structured evidence, figures, and the offline entry share one conclusion: **document completeness proves neither field maturity nor approval.** [assumption:A-JURY-CONVERGENCE-019] [assumption:A-SITE-READING-020]
+
+> **Formal proposal · Chapters 1–12 of 13.** The following twelve chapters retain the required headings and order. Chapter 13, “References,” resumes after the extended evidence.
 
 ## Design Basis and Source List
 
@@ -610,6 +614,9 @@ The rights matrix strictly separates “reviewable inside the repository” from
 | Release of OSM, fonts, logo, software, or generated assets | Blocked pending component audit | ODbL, font-embedding, trademark, and tool-output terms audit |
 
 All current AI scenarios are in G0 conceptual status. The eight projects and four-season events are proposals: they are not approved, built, or operating, and no organization has committed to them. Entry to a higher operating gate may be discussed only after statutory approval, responsible entities, professional review, public participation, funding and operations, and incident response are all defined.
+
+> **Extended evidence · E1–E7 (E0 is the opening reading entry).** The following seven H2 units expand verification, professional handoff, reversible components, accessible evidence tracing, and field-input replacement. They are evidence supplements, not additional required chapters, a separate proposal, or a maturity upgrade.
+
 ## The Century-Time Museum: A Verifiable, Correctable, Screen-free Time Education Line
 
 ### Strategic Proposition
@@ -954,6 +961,8 @@ The source record [source:SOURCE-JZ-COMMONS-LOOP-METHOD-R15] contributes one met
 ![Field evidence intake and replacement pack: eight empty packets, custody, professional dispositions and three differentiated future field routes; field collection, approval and duty acceptance all remain 0](assets/figures/field-evidence-intake.en.png)
 
 The contract covers the existing 12 scenes, 8 projects, 3 key areas, 99 slots, geometry, and metrics. Every object remains G0, provisional, NO-GO and `not_fully_cleared`. The contract is not a field brief, procurement order, survey result, professional opinion, approval record or implementation authorization.
+
+> **Formal proposal · Chapter 13 of 13.** The extended evidence ends here; “References” resumes the formal proposal.
 
 ## References
 
