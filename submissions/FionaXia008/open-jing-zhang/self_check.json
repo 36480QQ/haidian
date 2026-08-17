@@ -5,6 +5,34 @@
   "package_state": "ready_for_review",
   "ok": true,
   "can_enter_formal_review": true,
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "errors": 0,
+      "warnings": 16
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "issues": 3,
+      "issue_severity": "minor"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "issues": 0
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "issues": 0
+    }
+  ],
   "gates": {
     "deterministic_validation": {
       "result": "pass",
