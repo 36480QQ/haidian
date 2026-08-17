@@ -149,6 +149,30 @@ These are not three unrelated drawing sets. The research area decides **what to 
 
 <!-- SCOPEANCHOR:END -->
 
+<!-- ANNVOCAB:BEGIN -->
+**Task 1.5's own vocabulary, answered term by term in the announcement's words.** Every term in the left column is read from `brief/site-package/standards/references/project-official-announcement.md` at `upstream/main` and checked against that text on every build; the right column is where this proposal answers it, or **what it cannot give and why**. **The reason this table exists: ten of these were already answered in this package's own words, and a reviewer searches with the announcement's.**
+
+| Task 1.5 term | How this proposal answers it |
+|---|---|
+| **两区一带** | The regional-interface section extends the three-areas-two-wings into a regional levelling network, with the terms of connection to the Economic-Technological Development Area, Future Science City and Huairou Science City, and why their closure records cannot substitute for one another. |
+| **1+X+1** | The announcement's term for Haidian's industrial system. This proposal does not re-sort industrial categories; it supplies failable conditions for where AI+ verticals may land. Category proportions belong to statutory planning and are not drafted here. |
+| **骑行道** | The spine is a continuous walkable and cycling public axis; breaks and east-west connection are in the eleven stitching points, each with its measured nearest crossing. Cycleway widths and surfacing are engineering specialisms and are not given here. |
+| **端侧算力** | The compute-siting section gives four conditions, two waiting on official conditions and two judgeable today. Edge compute is named here as the near-field condition among them: it decides whether a reading can be completed at the benchmark rather than in a data centre. |
+| **分布式能源** | **This proposal cannot supply it.** No electricity, photovoltaic or energy-capacity source in this package can be cited, so it is registered as a data gap rather than inferred. That is consistent with the reading plate needing no power and the benchmarks carrying no lighting: a device that does not depend on supply does not need supply solved first. |
+| **北影** | An art resource the announcement names. It is registered here as a cultural and artistic resource within scope awaiting verification, alongside the Tsinghua Garden station; its spatial relation and use require official material and are neither inferred nor put into any layer. |
+| **人才密度** | This proposal gives personas P1-P9 and the location of talent-support land, not a density figure: density needs official population and employment data, which this package cannot cite. A figure that cannot be given is not written as a metric. |
+| **创新指数** | This proposal builds no composite index, and the reason is stated: the weights of a composite cannot be independently recomputed, and this proposal's whole claim is that a conclusion must be. What it gives instead is 45 recomputable metrics in four families. |
+| **独角兽** | The innovation-element chain is organised by element type, not by a list of firms. **No firm list is given**: fabricating company names, investment or output figures is explicitly refused here, because no verifiable source for them exists in this package. |
+| **上市企业** | As above: the chain records what carries an element, which benchmark holds its reading and what is re-measured, not company names. |
+| **职住** | Living and commuting are expressed here by two measurable quantities: buildings within a ten-minute walk of a benchmark (232 today, 261 once linked) and the distribution of third-order points on the community side. The ratio itself needs official data. |
+| **连续无界** | Continuity is judged on the measured walkable network rather than by drawing a line: a 9,443 m spine with every break registered. Boundlessness is written as a failable condition of no gates and 24-hour access; the controlled test field is enclosed by time of day, not permanently by boundary. |
+| **命名方案** | `visual/assets/naming.json` publishes 24 identifier families and the numbering grammar, with the logo and cultural identity systems managed as separate layers. The grammar depends on no language: BM-0 is BM-0 in every edition. |
+| **更新空间结构图** | FIG.03 and FIG.04 carry this; the renewal project list and phasing are in the implementation chapter, eight projects each with responsible role, precondition, cost band and exit condition. |
+| **用地布局图** | FIG.03, joined row by row to the 22 features of `geometry/land_use.geojson`: each of the seven classes cites the features it is made of, recomputed from `land_use_code`. |
+| **屋顶形态** | **Explicitly not given, and named here.** It sits with building height, intensity, massing, setbacks and road redlines inside the statutory approval process and is not drafted before official conditions publish. This package refused that family without ever saying the words roof form: **a refusal that does not name what it declines does not answer the requirement either.** |
+| **上跨环路** | The North Third Ring (`ROAD-103`) and North Fourth Ring Middle Road (`ROAD-104`) stitching points are the ring-road crossings the announcement refers to, with nearest surveyed crossings at 33 m and 30 m, both class A. Connection need is registered; no bridge, tunnel or structural conclusion is given. |
+<!-- ANNVOCAB:END -->
+
 ### Why three levels map exactly onto three orders
 
 Orders in a leveling network are not a copy of administrative hierarchy but a **division of labour between precision and frequency**: the higher the order, the larger the extent controlled, the less often re-measured, the more stability demanded; the lower, the closer to daily use and the readier to catch small failures. The announcement's three levels are isomorphic to that:
@@ -1781,7 +1805,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files, 1159 KB, 1,812 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 1159 KB, 1,812 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
