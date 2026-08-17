@@ -52,15 +52,16 @@ The core of the coordinated research area is building a world-class AI innovatio
 | L4 Living | Xiaoyuehe scenario enablement wing | Smart living, health & elderly care, accessible real-world validation | Jobs–housing reciprocity with Huilongguan–Xierqi residential blocks |
 | L5 Co-building | Dazhongsi international exchange district | International roadshows, data elements, co-built events | External links with Xueyuan Road and the Asia-Olympic exchange resources |
 
-**Explicit mapping of the taskbook's five functions across three positionings and three areas/two wings (agent.1)**: the taskbook's five functions — full-stack autonomous AI innovation, world-class AI innovation ecosystem, an AI+ scenario-empowerment paradigm, an intelligent AI vital city, and global AI governance discourse — are each anchored to the three areas/two wings and three positionings, so functions and space never diverge:
+**Explicit mapping of the taskbook's five functions across three positionings and three areas/two wings (agent.1)**: the taskbook's five functions and area/wing roles — full-stack autonomous AI innovation, world-class AI innovation ecosystem, an AI+ scenario-empowerment paradigm, an intelligent AI vital city, global AI governance discourse, and AI-native new business formats — are each anchored to the three areas/two wings and three positionings, so functions and space never diverge:
 
-| Taskbook five functions | Primary carrier | Corresponding positioning | Key mechanism |
+| Taskbook function / role | Primary carrier | Corresponding positioning | Key mechanism |
 | --- | --- | --- | --- |
 | Full-stack autonomous AI innovation | Zhongzhiyuan AI Autonomous Innovation Acceleration Area | AI integration innovation belt | full toolchains, autonomous models, red-team testing, edge compute |
+| Global AI governance discourse | Zhongzhiyuan AI Autonomous Innovation Acceleration Area | AI integration innovation belt | international standards, red-team testing regime, data elements, global publishing |
 | World-class AI innovation ecosystem | AI Origin Community | AI integration innovation belt | university provisioning, open-source collaboration, talent community, outcome transformation |
 | AI+ scenario-empowerment paradigm | Xiaoyuehe scenario empowerment wing | Urban AI living-experience belt | scenario opening, test validation, accessible real-world validation, livelihood services |
 | Intelligent AI vital city | Xiaoyuehe wing + Heritage Park | Urban AI living-experience belt | smart living, all-age accessibility, public experience, vital city |
-| Global AI governance discourse | Dazhongsi AI Industry Cluster | Heritage belt × AI integration belt | international roadshows, standards governance, data elements, global publishing |
+| AI-native new business formats | Dazhongsi AI Industry Cluster | Heritage belt × AI integration belt | new-business-format incubation, international roadshows, data elements |
 
 The three-positioning-to-three-areas/two-wings correspondence is thus readable back: the five-tier ladder is the "capability layering" and this table is the "taskbook function → space → positioning" official-caliber placement; both coexist without conflict [source:AGENT-TASKBOOK] [depth:overall_spatial_structure].
 
