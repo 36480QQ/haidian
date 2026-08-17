@@ -319,7 +319,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 583 distinct names harvested from the package — 567 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 584 distinct names harvested from the package — 568 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -599,7 +599,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 251 条，按发现者：audit 27、external 28、external-reviewer 5、own-gate 18、rival-read 8、self 165；最常见形状：check-measured-the-convenient-thing 45、two-copies-of-one-thing-drifted 36、deliverable-not-inspected-before-shipping 29、claim-outlived-the-package 19。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 23 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 251 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 252 条，按发现者：audit 27、external 28、external-reviewer 5、own-gate 18、rival-read 9、self 165；最常见形状：check-measured-the-convenient-thing 45、two-copies-of-one-thing-drifted 36、deliverable-not-inspected-before-shipping 29、claim-outlived-the-package 19。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 23 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 252 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -811,7 +811,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 26710475,
+      "total_bytes": 26714397,
       "maintainer_bypass": false
     },
     "stderr": ""
