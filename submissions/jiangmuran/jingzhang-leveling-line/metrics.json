@@ -671,7 +671,7 @@
     },
     "matrix_reference_count": {
       "status": "known",
-      "value": 650,
+      "value": 690,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -681,7 +681,7 @@
         "standard_matrix.json",
         "design_depth_matrix.json"
       ],
-      "formula": "count(references declared in the 18 reference fields of the three matrices)",
+      "formula": "count(references declared in the 19 reference fields of the three matrices)",
       "confidence": "high",
       "assumptions": [
         "这是**被声明**的引用数；其中能被解析规则核对的那部分由 matrix_refs_qa 分别报出，两个数取自同一个定义，不再各算各的（此前二者相差 5）。每条条目的证据摘要由其自身引用生成，44 条互不相同。"
@@ -747,7 +747,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 252,
+      "value": 253,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"

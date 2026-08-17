@@ -880,6 +880,18 @@
       "why_en": "**An empty list and an absent list are two different claims.** The mutation proves that quietly removing one item from the machine's record stops the build."
     },
     {
+      "id": "M94",
+      "gate": "risk_join_qa.py",
+      "target": "risk.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把公平与包容那条风险的责任岗位改成一个岗位册里没有的名字。**风险条目本身一字未动**，触发条件、暂停阈值、恢复条件都在——只是没有人担这一条了。",
+      "what_en": "Change the post owning the equity risk to a name the register does not contain. **The risk entry is otherwise untouched** - trigger, threshold and resume condition all still there - but nobody nameable holds it.",
+      "why_zh": "**一条没有人担的风险，写得再完整也只是文字。** 这条变异要证明的是：责任岗位必须解析到岗位册里的一个岗位，解析不到即构建停。",
+      "why_en": "**A risk nobody holds is prose however complete it reads.** The mutation proves the owning post must resolve against the register, and the build stops when it does not."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1140,7 +1152,7 @@
       "why_en": "**An area compared against another area's official figure produces a difference that means nothing.** The mutation proves that a mispaired per-area comparison stops the build rather than quietly reporting a larger number."
     }
   ],
-  "caught": 93,
+  "caught": 94,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1186,6 +1198,7 @@
     "reading_calendar_qa.py",
     "registry_alignment_qa.py",
     "review_rules_qa.py",
+    "risk_join_qa.py",
     "role_spec_qa.py",
     "scarce_surface_qa.py",
     "schema_conformance_qa.py",
@@ -1248,6 +1261,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 66 道闸门，其中 63 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 66 gates, 63 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 67 道闸门，其中 64 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 67 gates, 64 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
