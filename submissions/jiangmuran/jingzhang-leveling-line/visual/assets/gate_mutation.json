@@ -940,6 +940,18 @@
       "why_en": "**An item declaring urban-design depth whose evidence contains no built form is claiming more than it shows.** That file is one of the three matrices the reviewing model reads whole, and this item is the delivered face of a top-level brief requirement. The mutation proves the build stops when an item declaring a dimension stops citing the kind of evidence that dimension is made of."
     },
     {
+      "id": "M105",
+      "gate": "scenario_verification_qa.py",
+      "target": "visual/assets/scenario_cards.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一张**安全类**卡的对照方式从「前后对照」改成「并行对照」——也就是让一部分人少一层保护，好让比较更干净。**卡上一个字没改**，改的只是它说自己用哪种对照。",
+      "what_en": "Change a **safety** card's control from before-and-after to a parallel control — that is, withhold a layer of protection from some people so the comparison comes out cleaner. **Not a word of the card changes**; only which kind of control it says it runs.",
+      "why_zh": "**这不是一个研究设计问题，是一个不该做的决定。** 闸门要求：凡声明并行对照的卡，其对照文本必须就是这张卡自己声明的非 AI 等价路径；安全类卡一旦改口说自己并行，那段文本对不上，构建就停。**一个未经声明就把人置于更少保护之下的比较，正是本方案通篇反对的那种做法。**",
+      "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1278,7 +1290,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 104,
+  "caught": 105,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1335,6 +1347,7 @@
     "risk_join_qa.py",
     "role_spec_qa.py",
     "scarce_surface_qa.py",
+    "scenario_verification_qa.py",
     "schema_conformance_qa.py",
     "scope_anchor_qa.py",
     "sent_figure_title_qa.py",
@@ -1395,6 +1408,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 75 道闸门，其中 72 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 75 gates, 72 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 76 道闸门，其中 73 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 76 gates, 73 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

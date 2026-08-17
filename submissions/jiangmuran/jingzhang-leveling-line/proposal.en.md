@@ -27,17 +27,37 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 ## Executive brief, one page
 
-| What a reviewer will ask | This proposal's answer | What can be checked |
+**A street has to be measurable back to where it started.**
+
+Levelling trusts no single reading. It walks a loop back to its origin, reads the same point twice,
+and calls the difference the **closure error**. Inside the **tolerance**, the loop counts; over it,
+the whole route is re-surveyed — **no correcting one station and keeping the rest**. That is a rule
+public works have used for two hundred years, and this proposal moves it, unchanged, onto a 9.4 km
+belt: **one spine, eight benchmarks, two connecting routes, three key areas, twelve scenarios,
+three tolerance classes**.
+
+**AI here is not the thing on display. It is the thing being re-measured.** A system that cannot
+state its own closure error does not belong in public space.
+
+Each key area carries one clause of that rule:
+
+- **Zhongzhiyuan — it can be measured.** The controlled test ground, where an F1 scenario earns its
+  first closure record. Equipment that fails here does not reach the street.
+- **AI Origin Community — it can be read.** The origin benchmark L1 and the public evidence hall
+  stand outside the door, facing the footway: **anyone who walks up can take a reading**, with no
+  network and no opening hours.
+- **Dazhongsi — it can be stopped.** The high-frequency reading point. Two consecutive cycles over
+  tolerance and the whole segment goes offline, falling back to the non-AI equivalent rather than
+  down to a worse AI.
+
+| What a reviewer asks | The answer | What can be checked |
 |---|---|---|
-| What is the core claim | See the one-line test above; no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 10/10 cases including 8 refusal branches |
-| Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 41 of 793 (5.2%, thinnest of the eight), AI public services 92 | `visual/assets/field_map.json`; the census script is re-runnable |
-| What is done spatially | One spine of 9,443 m, eight tiered benchmarks, three key areas, a complete seven-class land-use partition with no overlaps and no gaps | Nine GeoJSON layers plus `node visual/assets/verify.js`, which independently recomputes every class-1 metric |
-| Why the three red lines are enforceable | Not on a designer's goodwill but on **current law**: Barrier-free Environment Construction Law Art. 39; Interim Measures for Generative AI Services Arts. 14 and 15; Guobanfa [2020] No. 45 | The first two are `regulatory_baseline` in `sources.json` (five in that class); Guobanfa [2020] No. 45 is policy, graded `background_only`. All three carry article locators and how each was obtained |
-| Who carries the public value | Personas P4–P7 are **the people who take the readings**, not a list of beneficiaries; a resident may initiate a re-survey of a judgement affecting them, at the third-order point nearest home | Human review points and exit conditions on all twelve scenario cards; all eight points in `geometry/public_space.geojson` cross jurisdictions |
-| What can start now | The four-week closure trial (S08 / RT-N / F3), which **depends on no unpublished official data**; which other projects share that property is counted from the dependency table by a stated rule, not listed by hand here | The renewal table carries responsible role, preconditions, cost band, KPI and exit condition per project |
-| What is deliberately withheld | Plot ratio, height, density, setbacks, redlines, any demolition or relocation conclusion | The organisers register **five controls** as missing in `planning_limits.json`; four are `unknown` here with their precondition quoted, and `green_ratio` — this proposal's own corridor share under the same name — says in both languages it is not the statutory control. `planning_controls_qa` checks against `upstream/main` |
-| Where the method stops | Closure error measures consistency, **not whether something helps**. The counterfactual needs control segments, which this proposal does not supply | Rule 8 states it, and names a proposal in this call more complete on that point |
-| How far the data can be trusted | Boundaries are provisional substitutes; when official polygons appear the package is **recomputed as a whole, never file by file**. Self-collected data is graded `background_only` throughout | The OSM cross-check reports this proposal's own spine as 1,116.7 m from the surveyed park — a reading that counts against it, published anyway |
+| Why these two tracks | Because a wrong reading hurts somebody. **Measured**: robotics 41 of 793 (5.2%, thinnest of the eight), AI public services 92  | `visual/assets/field_map.json`; the census script re-runs |
+| What is done in space | A 9,443 m spine, 8 graded benchmarks, 3 key areas, a complete seven-class land-use partition with no overlap and no gap | Nine GeoJSON layers and `node visual/assets/verify.js`, which recomputes every class-1 metric independently |
+| Why the three red lines bind | Not on the designer's goodwill but on law in force: Accessibility Act art. 39, Generative AI Measures arts. 14 and 15, State Council 2020/45 | `sources.json`, each with article number and how it was obtained |
+| Where the method stops | The closure error measures agreement, **not whether a thing helped** — that needs a control, and the control is written on every scenario card | Twelve cards, each with an effect question, a control and three stages |
+| How far the data can be trusted | The boundary is a provisional stand-in, recomputed as a whole rather than file by file once the official polygon is published; this proposal's spine is 1,116.7 m from the surveyed park — **a reading against its own case is published too** | `node visual/assets/check_osm.js` recomputes it from the shipped coordinates |
+| What is deliberately withheld | Plot ratio, building height, density, setbacks, and any demolition or relocation conclusion | The five controls the organisers register as missing; four stay `unknown` with the precondition quoted from the organisers verbatim |
 
 ## One person's day: what the mechanism looks like on the street
 
@@ -563,6 +583,42 @@ Every card fixes the same fields: users served, spatial carrier, data sources, p
 **The table below is generated from `visual/assets/scenario_cards.json`, not hand-written.** The cards used to be a table nothing could join: six named a benchmark as `BM-2x` or `BM-3xx`, resolving to no point in `public_space.geojson`; eleven wrote their exit condition as "over the limit" without defining the quantity, threshold or executing role;. The cards are data now: `node visual/assets/check_cards.js` resolves every benchmark, anchor, exit quantity and executing role against something that exists and refuses the set otherwise,
 
 **A tolerance marked `*` has no value yet.** F3's initial 0.20 is published; F1 and F2 are set by the tolerance assembly at BM-1 and are not drafted here. Writing a plausible-looking number for them would be the substitution this proposal spends its length objecting to, so ten cards are marked `operational: false` with the reason stated: nine because the tolerance is unset — those are the nine marked `*` — and S01 because its tolerance is published but its exit threshold is not. The two reasons are different and the file says which is which, rather than letting either gap hide inside a phrase.
+
+<!-- VERIFY:BEGIN -->
+
+The closure error measures whether two readings agree, not whether the thing helped. This proposal declares that limit itself, and until now not one of the twelve cards said how anyone would find out. The control is not newly invented: every card already declared a non-AI equivalent for rights and accessibility reasons — the same task, the same place, without the machine — which is exactly a control and had never been used as one. 8 of the twelve can run a parallel control; the 4 safety cards use a before-and-after instead and say why.
+
+| Card | Scenario | What "it worked" means here | The quantity that answers it | Control |
+|---|---|---|---|---|
+| S01 | Scenario open day and public trial route | Did more people come than without it, and did they look more like who actually lives here | Attendance and the skew of participants' home locations | Parallel (this card&#39;s non-AI path) |
+| S02 | Walking-network breakpoint detection and repair | Were the identified breaks actually repaired, and did the detour on that segment fall | Share of identified breaks repaired, and the change in detour distance | Parallel (this card&#39;s non-AI path) |
+| S03 | Agent business service desk | Did people finish faster, rather than get handed on faster | First-contact completion rate, and the rate of transfer to a staffed counter | Parallel (this card&#39;s non-AI path) |
+| S04 | AI health service navigation | Did navigation send people to the right department without leaving an emergency in place | First-triage accuracy, and missed identifications of an emergency | Before/after (safety) |
+| S05 | Data-asset authorisation chain, made visible | Did residents exercise refusal more once the chain was visible | Withdrawals of consent, and the share of services still usable afterwards | Parallel (this card&#39;s non-AI path) |
+| S06 | Low-speed robot delivery and inspection | Did delivery reduce human legwork rather than shift the burden onto those giving way | Staff hours per delivery, and the count of pedestrian give-way events | Before/after (safety) |
+| S07 | Open collaboration and publication | Was what was published actually used by anybody else | External reuses, and corrections submitted from outside | Parallel (this card&#39;s non-AI path) |
+| S08 | AI cultural guide | After the walk, were people's accounts of this history closer to the record | The change in correct answers on the same question set before and after | Parallel (this card&#39;s non-AI path) |
+| S09 | Everyday-services demonstration street | Did the street reduce the number of trips a daily errand takes | Trips and total walking distance to complete one daily errand | Parallel (this card&#39;s non-AI path) |
+| S10 | Public-safety operations review | Did the review change what happened next, rather than only produce a report | Share of review actions implemented within the next cycle | Before/after (safety) |
+| S11 | AI industry test and validation range | Did devices passing here have fewer incidents once on the street | Street incident rate of devices tested here against comparable untested devices | Before/after (safety) |
+| S12 | Live verification of step-free routes | Did live checking mean one fewer impassable point per trip for a wheelchair user | Impassable points encountered per trip | Parallel (this card&#39;s non-AI path) |
+
+**Three stages, each with a way out:**
+
+1. Prototype: one point, one session, verifying only that a reading can be taken and recomputed
+2. Pilot: run alongside the non-AI equivalent for one full re-survey cycle and compare the effect measure
+3. Rollout: two consecutive cycles no worse than the control on the effect measure, and within tolerance, before adding points
+
+**The effect question is written before the measurement.** A question written after the data is not
+a question. All twelve, with their metrics, ship in `visual/assets/scenario_cards.json`, and
+`scenario_verification_qa` checks each card on every build.
+
+**Four cards run no parallel control and say why.** S04, S06, S10 and S11 are safety scenarios:
+withholding a layer of protection from some people to obtain a cleaner comparison is not a study
+design but a decision that should not be taken. They use a before-and-after at the same place and
+keep the non-AI equivalent available.
+
+<!-- VERIFY:END -->
 
 <!-- CARDS:BEGIN -->
 **2 of the twelve cards can run today and 10 cannot** - not because the design is unfinished but because tolerance F and the trigger thresholds are unset, and the mechanism has those set by the four review parties, not by this proposal. Each card carries operational and not_operational_because in scenario_cards.json; a tolerance class marked * is one of them.
@@ -1393,16 +1449,16 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-264 entries. By finder:
+267 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 27 | Run against the shipped package, not a draft |
-| The author | 170 | Found while working |
+| The author | 171 | Found while working |
 | This package's own gate | 18 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 30 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 14 | Seen elsewhere, absent here |
+| Reading a rival's package | 16 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1426,14 +1482,14 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | A reference did not resolve | 11 |
 | Outlived its line | 9 |
 | Not itself | 9 |
+| Geometry not meaning it | 7 |
 | A total excluding | 6 |
 | A source unnameable | 6 |
-| Geometry not meaning it | 6 |
 | No file behind it | 6 |
+| Answers what it cannot | 5 |
 | Answered under another name | 4 |
 | Outlived a corpus | 4 |
 | Answered in our own words, not theirs | 3 |
-| Answers what it cannot | 3 |
 | Drawn without its ground | 2 |
 | A rule with nobody to apply it | 2 |
 | Attributed to a file that refuses | 1 |
@@ -1655,7 +1711,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`; two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` the argument alone. Six files ship behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 72 of 75 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`; two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` the argument alone. Six files ship behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 73 of 76 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
 
 <!-- FIGINDEX:BEGIN -->
 
@@ -1729,7 +1785,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files, 1103 KB, 1,779 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.7 s**; 9 files, 1113 KB, 1,791 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
