@@ -1,13 +1,13 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.788,
+ "overall_ratio": 0.789,
  "floor": 0.75,
  "sections": [
   {
    "section": "Executive brief, one page",
-   "zh_chars": 630,
-   "en_words": 432,
-   "ratio": 0.875,
+   "zh_chars": 653,
+   "en_words": 447,
+   "ratio": 0.873,
    "pass": true
   },
   {
@@ -82,9 +82,9 @@
   },
   {
    "section": "Renewal Projects, Implementation Policy, and Phasing",
-   "zh_chars": 3216,
-   "en_words": 1942,
-   "ratio": 0.77,
+   "zh_chars": 3961,
+   "en_words": 2441,
+   "ratio": 0.786,
    "pass": true
   },
   {
