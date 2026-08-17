@@ -1,7 +1,7 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded; floor = 0.75 x 0.784 field baseline.",
  "floor": 0.588,
- "overall_ratio": 0.663,
+ "overall_ratio": 0.661,
  "overall_pass": true,
  "sections": [
   {
@@ -90,16 +90,16 @@
   },
   {
    "section_zh": "蓝绿空间、公共空间与城市风貌",
-   "zh_chars": 1341,
-   "en_words": 803,
-   "ratio": 0.599,
+   "zh_chars": 1472,
+   "en_words": 878,
+   "ratio": 0.596,
    "pass": true
   },
   {
    "section_zh": "更新项目清单、实施政策与分期计划",
-   "zh_chars": 1363,
-   "en_words": 903,
-   "ratio": 0.663,
+   "zh_chars": 1600,
+   "en_words": 1040,
+   "ratio": 0.65,
    "pass": true
   },
   {
