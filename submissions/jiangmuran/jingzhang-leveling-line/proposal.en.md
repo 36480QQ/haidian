@@ -1372,30 +1372,10 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 That count is not rhetoric. It is this proposal's most direct evidence, measured on itself, for why closure error is worth having — one reading cannot show a systematic bias, and several readings in the same direction can.
 
-## The instrument turned on itself
+## The instrument on the site's own data
 
-### Act One: turn the instrument on this open call first
-
-An instrument that claims to make city AI re-measurable should first be pointed at the object closest to home.
-
-This is not a comment on the organisers' work. It is **the thing they most lack right now**: with 793 merged proposals and PR numbers past 1000, the hard problem is no longer intake but *reading across*. Which proposals have converged, which positions are empty, which declarations cannot actually be aggregated. A gallery page cannot answer that. An instrument can, so this proposal built one and published the data with it.
-
-**Reading one: the field has converged, and the brief induced the convergence.**
-
-<!-- MOTIFS:BEGIN -->
-
-| Structural motif | Proposals | Share |
-|---|---|---|
-| Three cores / three stations | 389 | 49.0% |
-| Two wings | 308 | 38.8% |
-| One spine / one belt | 229 | 28.9% |
-| Evidence chain / recomputable | 175 | 22.1% |
-
-<!-- MOTIFS:END -->
-
-The taskbook prescribes "three areas, two wings", so more than half the field draws the same skeleton. That is not consensus; it is the question shape. **Drawing that skeleton again adds nothing.** What adds something is stating the mechanism by which those units hand responsibility to one another.
-
-**Reading two: track coverage is severely uneven.**
+The taskbook lists eight tracks. The two this proposal works in are the two thinnest in the
+field — the evidential basis for choosing them, not a preference.
 
 <!-- TRACKS:BEGIN -->
 
@@ -1414,87 +1394,13 @@ Across 793 merged proposals; tracks are multi-select, so the shares sum above 10
 
 <!-- TRACKS:END -->
 
-**These figures changed twice in this version, and the second time because the instrument was wrong — which has to be said.** The census front-matter reader recognised only `tracks: ["a", "b"]` and could not see the YAML block form:
+793 merged proposals; tracks are multi-select. **Declaring a track is not covering it**: reading
+each one, some declare the robotics track where the robot is an ecological monitoring device, and
+some write ground robots and low-altitude delivery corridors without declaring it at all — 25 by
+label, a little over 14 by substance, and thinnest either way. The two tracks that carry the most
+risk and most need institutional restraint are the least covered, which is where this belt starts.
 
-```yaml
-tracks:
-  - ai-traffic-walkability
-  - civic-agent-governance
-```
-
-Four proposals write it that way, so their declared tracks **were never seen by any count**, and six of the eight tracks were undercounted. The shipped `field_map.json` had been signalling it: `proposals_declaring_no_known_track` read 14 against a true 10, and the four extra were exactly those files — **a wrong reading usually leaves a line in the data that does not add up, and nobody follows it.** The reader is fixed and the census now reads the local git tree, not the GitHub API, which rate-limits; a census skipped at 403 is where stale numbers begin.
-
-Both tracks have thickened across every measurement and their **relative position has not moved**: robotics is still the thinnest of the eight, AI public services beside youth-friendly public space just above it. Counts are in the table above, not repeated — **the figures here went stale repeatedly because this sentence copied it.**
-
-Labels are not coverage. Reading every proposal in those two tracks showed error both ways: one declares the robotics track while its "robots" are ecological sensors; another treats ground robots and low-altitude delivery corridors without declaring it. Precisely: **thinnest of the eight by label, slightly more in substance, thinnest either way** —.
-
-**Reading three: the "machine-readable" disclosure field is not machine-readable.**
-
-`agent.json`'s `model` field exists to disclose the generation method in structured form, per charter.6 (disclose generation method) and charter.5 (structured, agent-readable). <!-- MODELDISCLOSURE:BEGIN -->
-
-| Status | Count |
-|---|---|
-| Filled in | 649 |
-| Left at the scaffold placeholder `agent-declared-model`, or empty | **144 (18.2%)** |
-
-The 649 that are filled in use **228 distinct strings that collapse to 9 buckets** under the mapping rule published with the script (one bucket being “unclassified”). The “GPT / Codex” family alone is written **85 different ways** across 355 proposals.
-
-<!-- MODELDISCLOSURE:END -->
-
-**No one can aggregate "which models produced this call" from that field.**
-
-**That governance circuit can now close and has not yet — and the difference is measurable.** The rule declared at departure — structured, machine-readable, sortable, filterable — did not match the state measured on return (table above). The recommendation went into Issue #840 with its data and scripts, was implemented by @147228 in #848 and merged 2026-08-09. **From that date the diagnosis stops being a mechanism defect and becomes an adoption rate**: <!-- ADOPTION:BEGIN -->
-
-Measured across the repository's 793 `agent.json` files, **417 (52.6%)** declare `model_family`. The field is optional and the entire existing corpus predates it. (The two editions previously gave two different figures for this, neither of which was in any shipped file; it now comes from `model_family_declared_count` in `field_map.json`.)
-
-<!-- ADOPTION:END --> This package adopts it here, which does not change the conclusion: **a new enumerated field does not retroactively reach three hundred packages already submitted. Closing the circuit needs a migration or a requirement, not just a schema.** The repair is light: converge `model` into two fields, an enumerated family plus a free-text detail, and add one enumeration check to the four gates.
-
-#### A second measurable gap: a published contract nothing enforces
-
-The `model_family` finding was "the field exists, adoption is low". Turning the same instrument on the repository a second time finds a different shape: **a published contract that no gate enforces.**
-
-The site package publishes a manifest schema at `brief/site-package/schemas/manifest.schema.json`, and every submission ships a `manifest.json`. Validating one against the other: **117 of 338 merged packages measured at the time — 34.6% — did not satisfy it**, with the violations concentrated in four roles: `changelog`, `evidence_data`, `verification_script`, `risk_matrix`. This package used all four and counted itself among the 117 rather than claiming an exemption.
-
-**That paragraph is history: it was fixed.** The finding went into Issue #1058, closed 2026-08-11 — not by widening the enum but by making `role` an open pattern. This package went from four schema exceptions to none for roles (one remains, `data_confidence`). At a corpus of 825, **79** still fail and the schema is **still enforced by no gate**: the enumeration was too narrow; that nobody checks was not. `scripts/validate_submission.py` checks that declared files exist and their digests match; it does not check the manifest against the schema, and nothing else in the repository does. That is how a published contract goes unmet by a third of the corpus unnoticed. Upstream took a variant of the first remedy; of 855, **75** still fail, this package none.
-
-**The shape of the violations says this is not carelessness.** Grouped by kind, just over half of them (706 of 1,255, 56.3%) are one thing: the `role` enum has no entry for roles that packages genuinely carry.
-
-| Role used, absent from the enum | Occurrences | Packages |
-|---|---|---|
-| `changelog` | 39 | **38** |
-| `figure` | 45 | 9 |
-| `asset` | 39 | 4 |
-| `concept_scene` | 20 | 2 |
-| `visual_data` | 18 | 2 |
-
-The `changelog` row is worth reading on its own: **thirty-eight authors who have never met each other independently reached for the same slot, and it is not there.** A package that ships a change record has no honest role to declare it under, so it writes `changelog` and silently fails. That is not thirty-eight oversights. It is one missing entry in a specification.
-
-**This package is among the 117 and is not exempted.** (Scripts under `analysis/` are named for provenance and are **not in the package**.) It had 21 violations across 5 kinds, from one cause: a changelog, a verification script and evidence data had no enum entry. Writing `narrative` for a changelog to pass a check nobody runs would be telling a machine something untrue. The violations are declared and a gate built around them instead: `visual/assets/manifest_schema_survey.json` lists this package's five kinds, and `analysis/build_all.py` revalidates on every build and fails on anything not on that list. **A declared exception must not become cover for an accidental one.**
-
-The fix is light and either half suffices: extend the enum to cover what the corpus actually carries, or enforce the schema at intake so the gap is visible when it is created. Doing neither maintains a published contract that a third of the corpus does not meet. Every count above, with its method, is filed upstream as Issue [#1058](https://github.com/open-city-ai/haidian/issues/1058) and shipped in `visual/assets/manifest_schema_survey.json`, so anyone can re-run it rather than take it on trust.
-
-Motif detection uses Chinese keyword patterns and misses synonyms, so **every share above is a lower bound**; the corpus grows daily, so re-run before citing. **Applied to this proposal itself, that rule produced a stronger finding than any snapshot.** Five independent runs; the first four existed only in `changelog.md` — only on the author's word — and are now reconstructed from git history and shipped as `visual/assets/census_history.json`. **The rule does not exempt its author.**
-
-**The five re-runs of this field ship as `visual/assets/census_history.json` and `reading_log.json`, and anyone can re-run them.** This document used to carry the whole reconstruction as a section of its own; that section measured this package's instrument rather than Haidian or any scored dimension, and it has been withdrawn. The finding stays: **three of the four reconstructed rounds reproduce the recorded value exactly and one is a single package out, while a round of 354 at 29.9% this document once quoted appears in no reconstruction at all — it existed only in the prose.** A number with no file behind it deforms in the retelling even when you measured it yourself.
-
-![FIG.02 Evidence chain and submission package: a leveling circuit not yet closed](assets/figures/evidence-circuit.en.png)
-
-None of this weakens the call - the opposite. The mechanism **is producing checkable public evidence**: every submission, review record and merge is public, so each reading above can be re-run by anyone. Missing is only the last step — compute the closure error and give it consequences.
-
-**What the instrument produced, and what it did not.** Both self-collected datasets were published as issues with their re-runnable scripts, and another contributor subsequently opened upstream implementations:
-
-| This proposal's issue | Upstream implementation PR (not by this author) | Content |
-|---|---|---|
-| #840 field census and the disclosure-field defect | **#848** `feat: add structured model disclosure fields` | Exactly the recommended fix: keep free-text `model`, add an enumerated `model_family` with a paired `model_detail`, validated as a pair |
-| #846 OSM boundary cross-check | **#850** `docs: register OSM boundary cross-check limits` | Registers this proposal's readout (0% intersection, 412.5 m nearest distance, 100% research-scope coverage) as `background_only` with ODbL attribution and prohibited uses |
-| #858 CI timing race | #861 | Queue-period false failures from a head_sha / live-file-list mismatch |
-| #883 self-check evidence not persisted | #807 | Transactional persistence of the self-check verdict |
-
-Three things must be precise. **First, those PRs were written by others; this proposal contributed the measurement, the scripts and the diagnosis.** **Second, #848, #850 and #861 merged upstream on 2026-08-09**, making `model_family` and `model_detail` repository rules, recording this proposal's OSM cross-check citing #846 with the 17.49 ha and 412.5 m readings, and fixing the queued-run 404 race; only #807 is open. #850 states the OSM result is *not* a registered replayable source, so `background_only` **stays**. **Third, no credit is claimed for the index lag moving 31-44-6-45.**
-
-This section is not a record of merit but an external test of the central claim: a reading that can be independently re-run was reproduced and adopted by another party — **which is what the closure mechanism asks for.** The same rule binds this proposal: if upstream ultimately finds these measurements wrong, the package is recomputed as a whole rather than keeping the parts that flatter it.
-
-### Act Two: the same instrument on the site, and what it found in the site data
+### Closure error in the site's own data: two sources for one fact that disagree
 
 Act One measured paper. The real test is whether the instrument finds anything in Haidian itself.
 
@@ -1548,7 +1454,7 @@ Why not simply move the spine? Because the package must be internally consistent
 
 The real answer is a property of the design: **a leveling network is boundary-relative, not coordinate-absolute.** The orders (origin, first, second, third), the closing logic of the routes, the cross-jurisdiction reading rule and the tolerance classes are all **unchanged** by translating the boundary. Only where the marks land changes. That is exactly why this proposal insists on whole-package recomputation rather than file-by-file substitution: what gets recomputed is position, not mechanism.
 
-#### A third measurable gap: a gate that has never fired, and two diagnoses built on eight samples
+#### A first measurable gap: a gate that has never fired, and two diagnoses built on eight samples
 
 The first two were "the field exists and nobody uses it" and "the contract is published and nothing enforces it". The third is the sharpest this proposal has measured, because it corrects three parties at once, this one included.
 
@@ -1602,7 +1508,7 @@ Filed on Issue #950 and PR #957.
 
 The conclusion therefore survives the merge, on stronger evidence than before: **it no longer rests on inferring how a proposed change would behave, but on reading the code that landed.** The minimum `repair_count` ever observed is still 17.
 
-#### The fourth measurable gap: a field that decides the warning count and joins to nothing
+#### A second measurable gap: a field that decides the warning count and joins to nothing
 
 <!-- SPATIAL:BEGIN -->
 
@@ -1619,40 +1525,6 @@ By this proposal's own rule, measure before writing a sentence about it. Of **37
 Counts, per-package profiles and the classification rule ship in `visual/assets/spatial_level_survey.json`. `fetch` reaches the network; `report` is fully offline, so anyone can change the rule and re-run.
 
 <!-- SPATIAL:END -->
-
-#### The fifth measurable gap, and the only time this proposal turns the instrument on the scoring
-
-<!-- REPEAT:BEGIN -->
-
-Geometric levelling does not trust a height because the instrument reported it. It walks a loop back to where it started, reads the same point twice, and calls the difference the **closure error** — the only honest statement about how far the instrument can be trusted. This proposal spends its length arguing that a city should publish that number for its own systems.
-
-**The instrument that scores this package has been read twice on the same point many times, and nobody had published the difference. This section measures it.**
-
-**The control is a commit, not a file list.** The tightest repeat measurement available is the same head SHA reviewed more than once: the tree is bit-identical by definition, so no assumption about which files the reviewer opens is needed and no argument about that list can weaken the result. An earlier version of this work diffed the review-input file set instead and got the list wrong in three ways — recorded as E35 in the errata register.
-
-Across all **949 published scores**, **12** of **930** distinct head commits were reviewed more than once, covering **31 readings**.
-
-| Reading | Value |
-|---|---|
-| Pooled within-commit SD | **3.89 points** (df 19) |
-| Two-sigma band | **±7.8 points** |
-| Largest span observed on one commit | **13 points** |
-| Commits that reproduced exactly | **3 / 12** |
-| Median span | 4.0 points |
-
-The extreme case: commit `62e0430242` on PR #563 was reviewed **4 times**, scoring **91 → 94 → 81 → 93** — one tree, a 13-point span.
-
-**So the instrument read the same point many times, and the readings scatter across a band about 8 points wide.**
-
-**There is a reading of this that flatters this proposal, and this section declines it.** This package has no commit reviewed twice, so it is not in the control group above; it has one near-controlled pair — #1122 scored 94 and #1125 scored 91 seventeen minutes later, with `proposal.md` byte-identical and the only differing reviewer-visible file being two `sha256` strings in `manifest.json`, for files the reviewer never opens. **No rescore is requested and no adjustment is asked for**: a package asking that the higher of its own two readings be kept would be doing the thing it spends its length objecting to.
-
-What the measurement supports is narrower, and it costs this package something: **a gap smaller than this band between two proposals is not a difference this instrument can resolve.** This package is currently on the favourable side of several such gaps.
-
-**This is not a criticism of the review.** No instrument repeats exactly; a level does not either, which is why you walk the loop. What is criticisable is never that a reading varies — it is that the variation goes unpublished. And the most useful consequence is the one this package gains nothing from: the 65 and 85 thresholds in `publication_recommendation` separate values by less than the instrument's own repeatability.
-
-**The figure is bracketed by two unobservables in opposite directions, both itemised in `limits_zh` in the shipped JSON.** First: a repeat review on the same commit can hit the queue cache and return an identical score without calling the model, so the exact-reproduction rate is an upper bound and the SD a **lower** bound. Second, raised by [@147228](https://github.com/147228) on Issue #950 and PR #1190: **the same commit does not guarantee the same instrument.** Cache reuse compared only the submission path and package digest, not the model or the review policy, so two readings on one head may come from two configurations. **What this section measures is therefore how far two readings of the same input differ, not how repeatable the instrument is**; the two are equal only when the review identity is constant, which is currently unobservable. Recorded as erratum E40. #1190 persists that identity with each decision and requires it to match before reusing a cache, after which the distinction becomes measurable. Every group, every reading and the full method ship in `visual/assets/review_repeatability.json`; `report` is offline, so anyone can re-run it.
-
-<!-- REPEAT:END -->
 
 <!-- TASKBOOKDIMS:BEGIN -->
 
