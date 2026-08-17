@@ -10,7 +10,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v3.0"
+iteration: "v3.1"
 ---
 
 # X JINGZHANG
@@ -311,14 +311,19 @@ Every scene uses the same RACI floor: an operator is accountable, a professional
 
 ![Twelve scenes, accountability and stop logic](assets/figures/scenario-operations.en.png)
 
-Resources follow a four-plus-eight strategy: four flagship scenes receive design development while eight remain registered reserves. Each flagship adds 90-day and 180-day gates. Full RACI, data expiry and restoration duties are in `visual/assets/review-evidence.json#flagship_scenarios`.
+The twelve scenes no longer receive equal emphasis. One low-speed embodied-AI product in SC-03 becomes the flagship chain through all three stations, supported by SC-01 technical red-teaming, SC-05 open release and SC-10 public service. The other scenes remain registered reserves. Three station contracts align the AI boundary, spatial topology, human sign-off, 90/180-day evidence and failed restoration on one review surface. [data:visual/assets/three-station-flagship-contracts.json]
 
-| Flagship scene | 90-day gate | 180-day gate | Immediate stop | Everyday state after restoration |
+### Three flagship contracts: one product, three non-substitutable reviews
+
+| Station contract | AI system and data boundary | Required spatial operation | 90 / 180-day evidence gate | What the city retains after FAIL |
 | --- | --- | --- | --- | --- |
-| Model red-team and controlled robotics test | Three boundary, stop, demobilisation and public-route drills | Independent reproducibility; monthly takeover and complaint reporting | Boundary breach, collision, unauthorised data or takeover failure | Ordinary court and open green space |
-| Open release and enterprise translation | Complete licence, retest, version and withdrawal tickets | Traceable research-prototype-enterprise retest chain | Unclear rights, two failed retests or lock-in risk | Collaboration, learning and ordinary exhibition |
-| Public AI trial and appeal | Test notice comprehension, non-AI service and appeal access | Report cohort gaps, complaints and withdrawal execution | Identity tracking, absent staff or broken non-AI route | Ordinary retail, rest and staffed service |
-| Accessible mobility and ecological stewardship | Register route breaks, alternatives and manual inspection | Quarterly access, night, false-alert and closure reporting | Route break, extreme weather or unverified ecological risk | Paper and staffed navigation with safe passage |
+| **Zhongzhi TEST**: can it work inside its envelope? | LiDAR/depth sensing, localisation and local map, geofence, minimum-risk stop, physical/remote stop and versioned event log; authorised fixtures, telemetry and events only, with no face identity or persistent person track | Civic main line stays continuous at the edge; observation buffer and machine pocket step inward; machines enter only through one staffed no-bypass crossing | Day 90 first requires candidate roles, field base, civic-route audit, insurance/permission gaps and a four-fixture plan; day 180 then tests two versioned cycles, independent reproduction, severe finding closure and restoration | Close the machine pocket while the civic line remains open; restore an ordinary court and open green after equipment leaves |
+| **AI Origin RELEASE**: is this exact version eligible for publication? | Exact package hash, SBOM, model/data card, licence inventory, reproduction runner and withdrawal register; predecessor hash, version and rights metadata only, not undisclosed private code | Method, rights and withdrawal tables share one ground-floor field of view; HOLD at any table closes release while learning and collaboration continue | Day 90 requires roles, hash/dependency schema, licence gaps, reproduction and withdrawal drills; day 180 then tests dual reproduction, upstream hashes, dispute handling and two withdrawal records | Withdraw product status and release interface while methods learning, collaboration and ordinary exhibition remain |
+| **Dazhongsi USE**: can the public continue on equal terms? | Public status, bounded route, staffed takeover, anonymous complaint, non-AI service state and RETURN task generator; no default identity, face or commercial-behaviour profile | Trial pocket runs parallel to the civic chain; non-AI service and complaint are directly reachable; retail, rest and staffed service survive equipment removal | Day 90 requires route/service audit, notice comprehension, non-AI parity and complaint/restoration drills; day 180 then tests two cohort reviews, accessible parity, staffed service, dissent closure and return trace | Close the trial pocket while the civic chain remains open; create a new Zhongzhi fixture and restore the ordinary square |
+
+Both gates are **proposed acceptance thresholds, not achieved performance**. Candidate organisations, field dimensions, budgets, insurance, permissions and public acceptance remain unconfirmed. A rerunnable script checks each contract against the existing topology, scenes and JZ-06-JZ-08 projects; the current repository result is `37/37 PASS`. This proves contract consistency only, not field, safety, accessibility, certification or approval. [data:visual/assets/three-station-flagship-contract-results.json]
+
+![Three flagship contracts align technical systems, spatial topology, delivery evidence and failed restoration](assets/figures/three-station-flagship-contracts.en.png)
 
 ### Identity, three landmarks and eight components
 
