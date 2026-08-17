@@ -889,13 +889,13 @@ The interchange takes **1207 urban road land**, the only transport code in the p
 
 | Land use | Code | Basis for position |
 |---|---|---|
-| Cultural use | 0803 [data:geometry/land_use.geojson#LU-001,LU-B01,LU-B02,LU-B03] | Where the origin benchmark stone and public evidence hall sit; the core of BM-0 |
-| AI R&D and research | 0802 [data:geometry/land_use.geojson#LU-002,LU-B04] | The extent of the Zhongzhiyuan first-order benchmark |
-| Community services and talent support | 0702 [data:geometry/land_use.geojson#LU-003] | The extent of the AI Origin Community |
-| Industry and commercial services | 05 [data:geometry/land_use.geojson#LU-004,LU-B05] | The extent of the Dazhongsi high-frequency reading point |
-| Park, green and open space | 1401 [data:geometry/land_use.geojson#LU-005] | The spine green corridor |
-| Urban and rural road land | 1207 [data:geometry/land_use.geojson#LU-B06] | The station-hall approach where stop and benchmark coincide |
-| **Left blank by this proposal** | **16** [data:geometry/land_use.geojson#LU-006,LU-007,LU-008,LU-009,LU-010,LU-011,LU-012,LU-013,LU-014,LU-015,LU-016] | The existing built-up area outside the above |
+| Cultural use | 0803 | Where the origin benchmark stone and public evidence hall sit; the core of BM-0 [data:geometry/land_use.geojson#LU-001,LU-B01,LU-B02,LU-B03] |
+| AI R&D and research | 0802 | The extent of the Zhongzhiyuan first-order benchmark [data:geometry/land_use.geojson#LU-002,LU-B04] |
+| Community services and talent support | 0702 | The extent of the AI Origin Community [data:geometry/land_use.geojson#LU-003] |
+| Industry and commercial services | 05 | The extent of the Dazhongsi high-frequency reading point [data:geometry/land_use.geojson#LU-004,LU-B05] |
+| Park, green and open space | 1401 | The spine green corridor [data:geometry/land_use.geojson#LU-005] |
+| Urban and rural road land | 1207 | The station-hall approach where stop and benchmark coincide [data:geometry/land_use.geojson#LU-B06] |
+| **Left blank by this proposal** | **16** | The existing built-up area outside the above [data:geometry/land_use.geojson#LU-006,LU-007,LU-008,LU-009,LU-010,LU-011,LU-012,LU-013,LU-014,LU-015,LU-016] |
 
 The last row needs explaining, or it will be misread. Code 16 (reserved land) here means **"this proposal leaves that extent blank" — not that the extent has been statutorily designated as reserved land**. That distinction is written into the layer's `note_zh` attribute. Blank was chosen over an inferred use because subdivision inside that extent depends on official regulatory conditions, title verification and structural safety assessment, and all three are currently data gaps. **Filling a gap with a use is passing design intent off as settled control.**
 
@@ -1470,12 +1470,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-283 entries. By finder:
+284 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 27 | Run against the shipped package, not a draft |
-| The author | 184 | Found while working |
+| The author | 185 | Found while working |
 | This package's own gate | 19 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1495,7 +1495,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Nothing fails it | 15 |
 | Recorded where found | 13 |
 | A reference did not resolve | 12 |
-| Not itself | 11 |
+| Not itself | 12 |
 | Outlived its line | 9 |
 | A source unnameable | 7 |
 | Geometry not meaning it | 7 |
@@ -1781,7 +1781,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files, 1150 KB, 1,807 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files, 1152 KB, 1,808 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
@@ -1825,7 +1825,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`; two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` the argument alone. Six files ship behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 73 of 76 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`; two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` the argument alone. Six files ship behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 74 of 77 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
 
 <!-- PDFPAGE1:BEGIN -->
 
