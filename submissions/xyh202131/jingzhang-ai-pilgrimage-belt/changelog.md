@@ -1,5 +1,16 @@
 # 方案迭代记录 / Changelog
 
+## v37.0 - 2026-08-17
+
+**Browser QA matrix re-validation after the foreign-restore incident / 外部恢复事件后的浏览器 QA 矩阵复验**
+
+- 第 35—36 轮修复了外部恢复提交 `b6c05fffe` 造成的台账过期并建立回归护栏；本轮补上最后一环：用第 22 轮同一零依赖 CDP 驱动（Chrome headless + DevTools Protocol + Node.js 22 内置 WebSocket）对当前包字节重跑 18 例双语浏览器矩阵，全部通过——1440×900 与 390×844 无横向溢出、无 JS 五步漫游与证据库回退可见、reduced-motion 保持状态 01、12.25 秒运动边界为状态 02、首个焦点为跳过链接、图片缺 alt 0、aria-live 存在、h1=1、控制台/请求/外域 0。交互层确认未受恢复事件影响。
+- Rounds 35–36 repaired the ledger staleness caused by the foreign restore commit `b6c05fffe` and built regression guards; this round closes the last gap: the same zero-dependency CDP driver as Round 22 (Chrome headless + DevTools Protocol + Node.js 22 built-in WebSocket) re-runs the 18-case bilingual browser matrix on the current package bytes — all pass: no horizontal overflow at 1440×900 and 390×844, no-JS five-step walk and evidence library fallback visible, reduced-motion stays in state 01, the 12.25 s motion boundary is state 02, first focus is the skip link, 0 images missing alt, aria-live present, h1=1, 0 console errors / failed requests / external hosts. The interactive layer is confirmed unaffected by the restore incident.
+- 证据登记：site-grounding 新增 `browser_matrix_r37` 合同（18/18 all_pass、执行日 2026-08-17、与第 22 轮同驱动同断言）；无任何内容、图面、PDF 或数据变化。
+- Evidence: site-grounding gains the `browser_matrix_r37` contract (18/18 all_pass, executed 2026-08-17, same driver and assertions as Round 22); no content, figure, PDF or data change.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits and 141 paths.
+
 ## v36.0 - 2026-08-15
 
 **Compliance evidence-namespace separation & presentation regression guard / 合规证据命名空间分离与展示回归护栏**
