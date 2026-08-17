@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for civic-data-commons urban design proposal generation, geometry derivation, and bilingual narrative authoring"
   },
-  "generated_at": "2026-08-16T10:00:00Z",
+  "generated_at": "2026-08-17T03:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b21095c36508f11f6adf137c71bb9c277565f40a58e29278b751cb9aafffe0a9"
+      "sha256": "5614e8974b63fdf845500d14626efef84f4ad8467cf19a9f0c98c5c3120d12fa"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "ba78a0e4f781633df314c5e189fd0151ca0fc2a53cba7a044abf16b9f76c1c64"
+      "sha256": "e08ffef0f6f250e5691d3200b88583b00ed9394c9d1d827ef015cf6a7b07b9d3"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6378af44f68ab5220b0126d45338bb05cd18415abba427b177d77c7c55f05ff1"
+      "sha256": "9a87dca9fceffef3ef0ed5b10625e1c324b19a1ecc0375cbb809464636e81f31"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9bf605510fcb526bf3f19f127bae447a83d6aa3f05ab314f1004f27942c1eb0e"
+      "sha256": "03899e50e9a17827826b58360129d55b1d0b38780450f50e2bda03a8257c659f"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7594ec3e0a2fb533664c355e2f08150bbb57d4ef5346e58a547ae8b62125a505"
+      "sha256": "f8f419f248e947ba3dfb559d25e0ec9248b811cb6b1e080e9ad8c446331d0156"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "493bd19fa8f2492ef25ba431578a2fba92d73f5960af04a1c4b6e2a29661598d"
+      "sha256": "83c5b17e94f1b0e6a6da4a960e32b1285a6956089d8660ecca0cfd9f5fad20eb"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -374,6 +374,36 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "8cd89a1c08aeb129a66598df90ada89f82405d7ae10625cd98640d8e97f001a1"
+    },
+    {
+      "path": "visual/assets/data-timetable.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "9bdf81e31cbe93e5b951d9dbb966142beb6bac2df077202be838d6b29f14c4fe"
+    },
+    {
+      "path": "visual/assets/timetable-stations.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "90a457cebb397b96d5a9bd346a54dfed73f944363d8e232c2c53c64054224468"
+    },
+    {
+      "path": "visual/assets/objection-channel.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "bf8a52c4bbb99069f13bce9e69204906d59ec47bb4d7bb2abee1fbc6dec434f2"
+    },
+    {
+      "path": "visual/assets/run_timetable_tabletop.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "4a7229d81961287b67f0fedc79e3dedf35736088b195e75bc00d59f40f6b1d77"
+    },
+    {
+      "path": "visual/assets/timetable-tabletop-evidence.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "7c99ffd25e6fb30f34aeb127aa159bd4947e3978eec2f84372067d32c2920440"
     }
   ],
   "validation_claim": {
