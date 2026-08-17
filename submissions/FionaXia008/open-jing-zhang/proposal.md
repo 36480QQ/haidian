@@ -50,7 +50,7 @@ iteration: "v1.0"
 
 ### 总体设计范围
 
-面积：约 11.4 平方公里 [metric:overall_design_area]。以京张遗址公园周边 1-2 公里的城市地区和产业区为范围 [source:SRC-DESIGN-BRIEF]。本范围用于总体城市设计、用地布局、交通组织、蓝绿空间系统和城市风貌控制，达到控制性详细规划的城市设计深度 [standard:MOHURD-CTRL-PLAN]。
+面积：约 11.4 平方公里 [metric:overall_design_area] [metric:site_area_sqm]。以京张遗址公园周边 1-2 公里的城市地区和产业区为范围 [source:SRC-DESIGN-BRIEF]。本范围用于总体城市设计、用地布局、交通组织、蓝绿空间系统和城市风貌控制，达到控制性详细规划的城市设计深度 [standard:MOHURD-CTRL-PLAN]。
 
 使用 provisional 粗略替代边界 [data:geometry/site_boundary.geojson#SITE-001]。待官方精确红线发布后，用地分区、面积指标和建筑规模需全面重算。
 
@@ -494,7 +494,7 @@ iteration: "v1.0"
 
 ### 开源铁道主轴
 
-京张铁路遗址公园是整条带的「主干分支」——贯穿南北的文化轴线和公共空间脊梁 [data:geometry/green_space.geojson#GS-001]。
+京张铁路遗址公园是整条带的「主干分支」——贯穿南北的文化轴线和公共空间脊梁 [data:geometry/green_space.geojson#GS-001]。全域绿地率约 28.1% [metric:green_ratio]。
 
 主轴沿线设置以下空间节点：
 1. **First Commit 纪念碑**（Fork 区北端）[data:geometry/public_space.geojson#PS-001]
@@ -503,7 +503,7 @@ iteration: "v1.0"
 4. **开源之墙**（Main 区核心）[data:geometry/public_space.geojson#PS-002]
 5. **README Wall**（Release 区）[data:geometry/public_space.geojson#PS-005]
 
-共设置 5 个公共空间节点 [metric:public_space_nodes]。
+共设置 5 个公共空间节点 [metric:public_space_nodes]。公共空间面积占比 [metric:public_space_ratio]（当前 public_space.geojson 仅含节点和线性要素，无面状公共空间）。
 
 ### 小月河蓝绿廊道
 

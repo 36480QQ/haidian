@@ -61,7 +61,7 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "design_intent": "高校科研成果转化、技术转移平台、创业孵化器",
-        "area_sqm_declared": 600000,
+        "area_sqm_declared": 1460278.898,
         "source_id": "SRC-DESIGN-BRIEF"
       },
       "geometry": {
@@ -151,7 +151,7 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "design_intent": "AI产品展示、技术交易市场、创新成果商业化平台",
-        "area_sqm_declared": 1200000,
+        "area_sqm_declared": 3832042.599,
         "source_id": "SRC-DESIGN-BRIEF"
       },
       "geometry": {
@@ -241,7 +241,7 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "design_intent": "北京北站衔接、城市交通转换、对外联系枢纽",
-        "area_sqm_declared": 600000,
+        "area_sqm_declared": 616875.345,
         "source_id": "SRC-DESIGN-BRIEF"
       },
       "geometry": {
@@ -266,6 +266,123 @@
             ],
             [
               116.342,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-007",
+      "properties": {
+        "id": "LU-007",
+        "layer": "LAND_USE",
+        "name_zh": "边界过渡区——site边界与规划用地之间的过渡地带",
+        "land_use_code": "16",
+        "land_use_category": "其他用地",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "design_intent": "填充site边界与主要用地分区之间的过渡地带",
+        "area_sqm_declared": 1810741.28,
+        "source_id": "SRC-PROVISIONAL-BOUNDARY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.355,
+              39.939
+            ],
+            [
+              116.355,
+              39.944
+            ],
+            [
+              116.355,
+              39.94984
+            ],
+            [
+              116.353,
+              39.9835
+            ],
+            [
+              116.353,
+              39.9935
+            ],
+            [
+              116.354,
+              40.0075
+            ],
+            [
+              116.354,
+              40.026
+            ],
+            [
+              116.343,
+              40.026
+            ],
+            [
+              116.343,
+              40.0075
+            ],
+            [
+              116.342,
+              39.9935
+            ],
+            [
+              116.342,
+              39.9835
+            ],
+            [
+              116.342,
+              39.94984
+            ],
+            [
+              116.342,
+              39.944
+            ],
+            [
+              116.342,
+              39.939
+            ],
+            [
+              116.3407,
               39.939
             ]
           ]

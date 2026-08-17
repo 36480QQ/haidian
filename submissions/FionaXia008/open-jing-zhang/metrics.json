@@ -107,25 +107,29 @@
       "required_for_formal_submission": true
     },
     "green_ratio": {
-      "status": "unknown",
-      "value": null,
+      "status": "known",
+      "value": 0.280717,
       "unit": "ratio",
-      "source_files": [],
-      "formula": "requires_approved_green_space_standards",
-      "confidence": "none",
-      "assumptions": [],
-      "reason": "绿地率控规条件未公开",
-      "required_for_formal_submission": true
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area / site_area",
+      "confidence": "medium",
+      "assumptions": [
+        "基于provisional geometry的绿地率估算"
+      ],
+      "note": "绿地面积/总用地面积，基于投影面积计算（EPSG:4548）"
     },
     "green_space_area": {
-      "status": "unknown",
-      "value": null,
+      "status": "known",
+      "value": 3203768.523,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
       "formula": "estimated_from_green_space_geometry",
-      "confidence": "low",
+      "confidence": "medium",
       "assumptions": [
         "基于provisional geometry的粗略估算",
         "包含开源铁道主轴绿带和小月河蓝绿廊道"
@@ -192,6 +196,34 @@
       "confidence": "high",
       "assumptions": [],
       "note": "Open Jing-Zhang Summit、Fork-a-Thon、Commit Challenge、Open Rail Day、Fork a City全球挑战"
+    },
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "projected_area_EPSG4548",
+      "confidence": "medium",
+      "assumptions": [
+        "基于provisional geometry的投影面积计算"
+      ],
+      "note": "总体设计范围投影面积（EPSG:4548），待官方geometry确认后重算"
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "public_space_polygon_area / site_area",
+      "confidence": "medium",
+      "assumptions": [
+        "public_space.geojson仅包含Point/LineString要素，无面状要素"
+      ],
+      "note": "公共空间面积占比为0，因当前public_space仅有节点和线性要素，无面状公共空间"
     }
   },
   "units": {
