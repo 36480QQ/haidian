@@ -37,7 +37,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "059a5fb8b160209b5a242b5ae21bd143c9d76a6eef87b0d6227bcc2bf4302972"
+      "sha256": "c36351962f63f7a17aa03dd83b0a7157a3a168a05bde1f106f9ef7b61e756a6c"
     },
     {
       "path": "assumptions.json",
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "032b03d431d3bdb63a224c3dae8f87410b4d340b71f9cec4747bf4d920b76f63"
+      "sha256": "6c7e5de06f32c397fb0224e464cde9b0cc52e1a5c752fe85127a207b3e5bcf2c"
     },
     {
       "path": "compliance_matrix.json",
@@ -349,7 +349,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "7c8028d9ddc481599e3ae83edb5fc1edd4be070c3b3121418c5512ce380120e1"
+      "sha256": "ec29fff2e13fe7775acc6e609e248a6da8c983cde6f7cfdb8b96988c2be8fbfc"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
