@@ -928,6 +928,18 @@
       "why_en": "**An item declaring urban-design depth whose evidence contains no built form is claiming more than it shows.** That file is one of the three matrices the reviewing model reads whole, and this item is the delivered face of a top-level brief requirement. The mutation proves the build stops when an item declaring a dimension stops citing the kind of evidence that dimension is made of."
     },
     {
+      "id": "M109",
+      "gate": "geometry_citation_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把十一个东西缝合点的机读锚点改回主脊 `ROAD-001`——**句子里的括号仍然写着「ROAD-101 至 ROAD-111」**，改的只是机器跟着走的那一个指向哪里。",
+      "what_en": "Put the machine-readable anchor for the eleven east-west stitching points back on the spine `ROAD-001` — **the sentence's own parenthetical still says ROAD-101 through ROAD-111**; what changes is where the copy a machine follows points.",
+      "why_zh": "这是修复前的原文：一句话里两份同一个事实，**而机器跟着走的那一份是错的那一份**。`ROAD-001` 是 9,443 m 的主脊，身上根本没有 `stitching_street` 这个属性；**顺着那个锚点走的评审，落在一条长线上，看不到那句话正在讲的十一段 90 m 连通提案。**十一个要素由图层的 `stitching_street` 属性现算，不手写。",
+      "why_en": "This is the pre-fix text: two copies of one fact inside a single sentence, **and the copy a machine follows was the wrong one**. `ROAD-001` is the 9,443 m spine and carries no `stitching_street` property at all, so **a reviewer following that anchor landed on one long line and saw none of the eleven 90 m connection proposals the sentence is about.** The eleven are recomputed from the layer's `stitching_street` property rather than typed."
+    },
+    {
       "id": "M108",
       "gate": "geometry_citation_qa.py",
       "target": "proposal.md",
@@ -1301,7 +1313,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 106,
+  "caught": 107,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
