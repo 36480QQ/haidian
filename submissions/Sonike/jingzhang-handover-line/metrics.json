@@ -758,7 +758,7 @@
     "talent_density": {
       "status": "unknown",
       "value": null,
-      "unit": "index",
+      "unit": "persons_per_ha",
       "source_files": [],
       "formula": "ai_related_workforce_and_students / employment_land_area",
       "measurement_unit": "persons_per_hectare_of_authorised_employment_land",
@@ -767,7 +767,7 @@
       "assumptions": [
         "A-BASELINE-001"
       ],
-      "reason": "公告要求研提人才密度；需官方就业、学籍统计与用地权属数据，仓库未提供，暂不赋值。",
+      "reason": "公告要求研提人才密度；需官方就业、学籍统计与用地权属数据，仓库未提供，暂不赋值。单位声明由 index 更正为 persons_per_ha——原值是占位词，与该指标实际的人／公顷口径不符。",
       "measurement_protocol": {
         "path": "visual/assets/governance/measurement-protocol.json",
         "metric_id": "talent_density",
@@ -783,7 +783,7 @@
     "output_scale": {
       "status": "unknown",
       "value": null,
-      "unit": "none",
+      "unit": "cny_per_year",
       "source_files": [],
       "formula": "annual_output_of_ai_and_ai_plus_industries(statistical_scope)",
       "measurement_unit": "CNY_per_calendar_year_at_published_constant_price",
@@ -792,7 +792,7 @@
       "assumptions": [
         "A-BASELINE-001"
       ],
-      "reason": "公告要求研提产值规模；需统计部门口径与企业名录，仓库未提供，暂不赋值。",
+      "reason": "公告要求研提产值规模；需统计部门口径与企业名录，仓库未提供，暂不赋值。单位声明由 none 更正为 cny_per_year——原值是占位词，与该指标实际的元／年口径不符。",
       "measurement_protocol": {
         "path": "visual/assets/governance/measurement-protocol.json",
         "metric_id": "output_scale",
