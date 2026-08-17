@@ -1063,6 +1063,35 @@
         },
         "certification_note": "Programmatic browser and print-layout verification only; not assistive-technology certification, human field observation, approval, operational evidence or a rights grant."
       },
+      "cold_read_baseline_r39": {
+        "contract_id": "JZ-COLD-READ-BASELINE-R39",
+        "executed_at": "2026-08-17",
+        "purpose": "Give each of the eight existing editorial cold-read questions one primary answer, one distinct front-stage anchor and existing A3/A0 page locators without adding facts, media, pages or maturity.",
+        "red_before": {
+          "questions": 8,
+          "generic_surface_entries": 4,
+          "per_question_answers": 0,
+          "per_question_primary_anchors": 0,
+          "per_question_pdf_locators": 0,
+          "conflict": "the front stage claimed that per-question entries existed in the index"
+        },
+        "result_after_repair": {
+          "questions": 8,
+          "primary_answers": 8,
+          "unique_answer_ids": 8,
+          "unique_primary_anchors": 8,
+          "missing_bilingual_anchors": 0,
+          "proposal_rows_per_language": 8,
+          "visual_rows_per_language": 8,
+          "report_rows_per_language": 8,
+          "a3_page_counts": [14, 14],
+          "a0_page_counts": [8, 8]
+        },
+        "media_added": 0,
+        "facts_or_claims_added": 0,
+        "pdfs_rebuilt": 0,
+        "editorial_boundary": "Cold-read answers and timing targets are editorial review only, not measured public feedback, expert opinion, jury results, accessibility certification, professional acceptance or approval."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,
