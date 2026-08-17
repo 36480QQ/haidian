@@ -44,8 +44,8 @@ iteration: "v1.0"
 | 范围 | 面积（公告） | 面积（provisional 复算） | 本包处理 |
 |---|---|---|---|
 | 统筹研究范围 | 43.6 km² | 43.6092 km²（PROV-RESEARCH-001） | 不在提交几何内，仅作上下文背景；本包不覆盖 `[source:OFFICIAL-ANNOUNCEMENT]` |
-| 总体设计范围 | 11.4 km² | 11.4128 km²（PROV-SITE-001） | 本包 site_boundary 直接沿用；所有 design layer 基于其派生 `[data:geometry/site_boundary.geojson#PROV-SITE-001]` |
-| 重点区域范围 | 368.4 ha | 369.2893 ha（PROV-KEY-SCOPE-001） | 由三处 key area 汇总；详细设计落到三个 PROV-KEY polygon 内 |
+| 总体设计范围 | 公告约 11.4 km² | 本包矩形简化 = **12.95 km²**（与公告差约 +13%；detail in `geometry/site_boundary.geojson` derivation_method）| 本包 site_boundary 直接沿用矩形简化；所有 design layer 基于其派生 `[data:geometry/site_boundary.geojson#PROV-SITE-001]` |
+| 重点区域范围 | 368.4 ha | 374.5026 ha（PROV-KEY-SCOPE-001） | 由三处 key area 汇总；详细设计落到三个 PROV-KEY polygon 内 |
 
 > **重要边界声明**：本包使用的总体设计范围与三处重点区均为 maintainer_defined_provisional。当主办方或海淀区发布官方 polygon 后，需要：
 > 1. 把新 polygon 替换 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson`；
@@ -169,11 +169,11 @@ Logo 概念方向：**双轨交叉构成「人」字（致敬青龙桥人字形�
 
 | 指标 | 数值 | 状态 | 来源 |
 |---|---|---|---|
-| 总体设计范围 | 11.41 km² | known | `geometry/site_boundary.geojson` 在 EPSG:4548 复算 |
+| 总体设计范围 | 12.95 km² | known | `geometry/site_boundary.geojson` 在 EPSG:4548 复算 |
 | 重点区域面积 | 369.29 ha | known | 三处 PROV-KEY 汇总 |
-| 概念绿地率 | 12.34% | concept | `geometry/green_space.geojson` |
-| 概念公共空间率 | 7.33% | concept | `geometry/public_space.geojson` |
-| 概念道路中线总长 | X m | known | `geometry/roads.geojson` |
+| 概念绿地率 | 18.82% | concept | `geometry/green_space.geojson` |
+| 概念公共空间率 | 1.41% | concept | `geometry/public_space.geojson` |
+| 概念道路中线总长 | 28,493 m | known | `geometry/roads.geojson` |
 | 容积率 / 建筑高度 / 建筑密度 / 退线 | — | unknown | 缺官方控规 `[standard:MOHURD-CONTROL-DETAILED-PLANNING]` |
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
@@ -250,17 +250,17 @@ Logo 概念方向：**双轨交叉构成「人」字（致敬青龙桥人字形�
 | # | 场景 | 类型 | 用户 | 关键边界 |
 |---|---|---|---|---|
 | N01 | **AI 楼栋管家** | 物业 | 60+ 老人 | 物管数据 + 社区公告；不上传个人隐私 |
-| N02 | **AI 居家适老化** | 适老 | 60+ 退休教师 | 可穿戴 + 声纹；24h 退出按钮 |
+| N02 | **AI 居家适老化** | 适老 | 60+ 退休教师 | 可穿戴信号 + 行为模式（不存储原始声纹/音频）；24h 退出按钮 |
 | N03 | **AI 课后四点班** | 教育 | 30+ 双职工家庭 | 学校通告 + 家长授权 + 高校志愿者 |
 | N04 | **AI 调解员** | 社区治理 | 全部居民 | 社区报告 + 匿名文本；推送给居委会 |
 | N05 | **AI 菜场营养师** | 商业 | 小商户 / 摊主 | 菜品图像（本地）+ 价格 |
 | N06 | **AI 错峰共享停车** | 交通 | 30+ 双职工 | 停车位状态 + 住户授权；收益归业主 |
 | N07 | **AI 文化遗产讲解员** | 文化 | 全球访客 | 文保单位授权资料；多语言 |
-| N08 | **AI 慢病管理社区诊所** | 医疗 | 60+ 慢病居民 | 电子病历授权 + 家庭医生复核 |
+| N08 | **AI 慢病管理社区诊所** | 医疗 | 60+ 慢病居民 | 病历授权摘要（医疗级隐私分级）+ 家庭医生人工复核 |
 | N09 | **AI 居民热线大模型** ⚠️**测试** | 政务 | 全部居民 | 12345 公开数据；**不替代 12345** |
 | N10 | **算力余热进老社区** ⚠️**测试** | 能源 | 大钟寺居民 | 机房热负荷（模拟） |
-| N11 | **AI 慢行安全试点** ⚠️**测试** | 慢行 | 小月河慢行者 | 公共摄像头（边缘） |
-| N12 | **AI 应急呼叫链** | 公共安全 | 全部居民 | 社区公告 + 报警记录；保留人工调度 |
+| N11 | **AI 慢行安全试点** ⚠️**测试** | 慢行 | 小月河慢行者 | 边缘图像识别（不上传中心）；仅识别电动自行车通行模式 |
+| N12 | **AI 应急呼叫链** | 公共安全 | 全部居民 | 报警记录分级访问（仅授权人员）；保留人工调度权 |
 
 场景—空间映射：每个场景对应 `geometry/scenario_node.geojson` 一个 Point + 一个 `geometry/ai_service_zone.geojson` Zone；场景—运营映射详见 `compliance_matrix.json` `[depth:scenario_evidence_design]`。
 
@@ -288,7 +288,7 @@ Logo 概念方向：**双轨交叉构成「人」字（致敬青龙桥人字形�
 
 ### 建筑基底（概念）
 
-`geometry/buildings.geojson` 中包含 13 个概念性建筑基底（朝圣地标 + 关键场景），**总基底面积约 XXX 平方米（详见 metrics.json）**。每个基底：
+`geometry/buildings.geojson` 中包含 13 个概念性建筑基底（朝圣地标 + 关键场景），**总基底面积约 94,085 平方米（详见 metrics.json）**。每个基底：
 - 标注 `building_type`（cultural / mixed_use / lab / community_service / education / mobility_hub / ai_r_and_d）；
 - 标注 `linked_scenarios`；
 - **不替代建筑高度 / 层数 / 容积率 / 工程实施结论**。
@@ -307,7 +307,7 @@ Logo 概念方向：**双轨交叉构成「人」字（致敬青龙桥人字形�
 
 ![慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
-主轴：**京张绿脊（RD-001）** — 沿京张铁路遗址公园南北贯通，连接三个 key area + 两翼；总长约 X m（详见 `metrics.json#road_centerline_total_length_m`）。
+主轴：**京张绿脊（RD-001）** — 沿京张铁路遗址公园南北贯通，连接三个 key area + 两翼；总长约 28,493 m ≈ 28.5 km（详见 `metrics.json#road_centerline_total_length_m`）。
 西翼：**小月河慢行翼（RD-002）** — AI 慢行测试 + 公共测试场。
 东翼：**学院路次干路（RD-003）** — 缝合高校与老社区。
 南端：**大钟寺辐条（RD-004）** — 邻里算力客厅接入。
@@ -406,15 +406,15 @@ Logo 概念方向：**双轨交叉构成「人」字（致敬青龙桥人字形�
 
 | 指标 | 数值 | 状态 | 来源 |
 |---|---|---|---|
-| site_area | 11.41 km² | known | `geometry/site_boundary.geojson` EPSG:4548 复算 |
+| site_area | 12.95 km² | known | `geometry/site_boundary.geojson` EPSG:4548 复算（**注：与公告约 11.4 km² 差约 +13%，因为本包用矩形简化，详见 `geometry/site_boundary.geojson#derivation_method`） |
 | key_detailed_design_area | 369.29 ha | known | 三处 PROV-KEY 汇总 |
 | 众智园 | 192.92 ha | known | `geometry/key_areas.geojson#PROV-KEY-001` |
 | AI 原点 | 104.32 ha | known | `geometry/key_areas.geojson#PROV-KEY-002` |
 | 大钟寺 | 72.05 ha | known | `geometry/key_areas.geojson#PROV-KEY-003` |
-| 概念建筑基底 | X m² | known | `geometry/buildings.geojson` |
-| 概念绿地率 | 12.34% | concept | `geometry/green_space.geojson` |
-| 概念公共空间率 | 7.33% | concept | `geometry/public_space.geojson` |
-| 概念道路中线总长 | X m | known | `geometry/roads.geojson` |
+| 概念建筑基底 | 94,085 m² | known | `geometry/buildings.geojson` |
+| 概念绿地率 | 18.82% | concept | `geometry/green_space.geojson` |
+| 概念公共空间率 | 1.41% | concept | `geometry/public_space.geojson` |
+| 概念道路中线总长 | 28,493 m | known | `geometry/roads.geojson` |
 | 场景节点数 | 12 | known | `geometry/scenario_node.geojson` |
 | 测试场景数 | 3 | known | `geometry/scenario_node.geojson`（is_test_scenario=true） |
 | 分期数 | 3 | known | `geometry/phasing.geojson` |
@@ -473,18 +473,6 @@ Logo 概念方向：**双轨交叉构成「人」字（致敬青龙桥人字形�
 8. 国务院办公厅，《关于切实解决老年人运用智能技术困难实施方案》（国办发〔2020〕45 号）。`https://www.gov.cn/zhengce/content/2020-11/24/content_5563804.htm`
 9. OpenCity-AI Haidian 仓库，`submissions-data.js`（peer proposals 标题 / 摘要 / 状态索引）；本方案仅用作品牌与切入点差异化参照，**不复制任何 peer 内容**。
 10. 临时边界与三处重点区 polygon：`brief/site-package/geometry/provisional_boundaries.geojson`，仅作 AI 生成与 intake 自检。
-<!-- regenerated at 1786431836 -->
-<!-- regenerated 1786498137 -->
-<!-- regenerated 1786504887 -->
-<!-- 1786518202 -->
-<!-- 1786518293 -->
-<!-- 1786518779 -->
-<!-- 1786540547 -->
-<!-- 1786584693 -->
-<!-- 1786584744 -->
-<!-- 1786584780 -->
-<!-- 1786614707 -->
-<!-- 1786614746 -->
-<!-- 1786671150 -->
-<!-- 1786671165 -->
-<!-- 1786671207 -->
+
+
+1786933134

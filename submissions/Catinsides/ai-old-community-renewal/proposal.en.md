@@ -45,8 +45,8 @@ The three scopes come from `brief/site-package/design_brief.json` lines 20–50.
 | Scope | Announced area | Provisional recompute (EPSG:4548) | This package's treatment |
 |---|---|---|---|
 | Coordinated research scope | 43.6 km² | 43.6092 km² (PROV-RESEARCH-001) | Not drawn; used only as upstream context `[source:OFFICIAL-ANNOUNCEMENT]` |
-| Overall design scope | 11.4 km² | 11.4128 km² (PROV-SITE-001) | Directly reused as site_boundary; all design layers derive from it `[data:geometry/site_boundary.geojson#PROV-SITE-001]` |
-| Key detailed design scope | 368.4 ha | 369.2893 ha (PROV-KEY-SCOPE-001) | Assembled from the three key-area polygons; detailed design falls inside each PROV-KEY polygon |
+| Overall design scope | announcement ≈ 11.4 km² | this package rectangle = **12.95 km²** (Δ ≈ +13% vs announcement; detail in `geometry/site_boundary.geojson` derivation_method) | Directly reused as rectangle simplification; all design layers derive from it `[data:geometry/site_boundary.geojson#PROV-SITE-001]` |
+| Key detailed design scope | 368.4 ha | 374.5026 ha (PROV-KEY-SCOPE-001) | Assembled from the three key-area polygons; detailed design falls inside each PROV-KEY polygon |
 
 > **Important boundary statement**: All polygons used in this package are `maintainer_defined_provisional`. When the organizer or Haidian District releases the official polygon, the package must:
 > 1. Replace `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` with the new polygons;
@@ -168,11 +168,11 @@ Five horizontal bands + one Jingzhang green wedge (see `geometry/land_use.geojso
 
 | Metric | Value | Status | Source |
 |---|---|---|---|
-| Overall design scope | 11.41 km² | known | `geometry/site_boundary.geojson` recompute in EPSG:4548 |
+| Overall design scope | 12.95 km² | known | `geometry/site_boundary.geojson` recompute in EPSG:4548 |
 | Key area sum | 369.29 ha | known | three PROV-KEY aggregated |
-| Concept green ratio | 12.34% | concept | `geometry/green_space.geojson` |
-| Concept public-space ratio | 7.33% | concept | `geometry/public_space.geojson` |
-| Concept road centerline total length | X m | known | `geometry/roads.geojson` |
+| Concept green ratio | 18.82% | concept | `geometry/green_space.geojson` |
+| Concept public-space ratio | 1.41% | concept | `geometry/public_space.geojson` |
+| Concept road centerline total length | 28,493 m | known | `geometry/roads.geojson` |
 | FAR / building height / density / setback | — | unknown | awaiting official regulatory plan `[standard:MOHURD-CONTROL-DETAILED-PLANNING]` |
 
 ![Three key areas and design task index](assets/figures/key-areas.png)
@@ -287,7 +287,7 @@ The Xiaoyuehe corridor (west wing) is proposed as the AI scenario open-operation
 
 ### Building footprints (concept)
 
-`geometry/buildings.geojson` contains 13 conceptual building footprints (pilgrimage landmarks + key scenarios). **Total footprint ≈ X m² (see `metrics.json`)**. Each footprint:
+`geometry/buildings.geojson` contains 13 conceptual building footprints (pilgrimage landmarks + key scenarios). **Total footprint ≈ 94,085 m² (see `metrics.json`)**. Each footprint:
 - Tags `building_type` (cultural / mixed_use / lab / community_service / education / mobility_hub / ai_r_and_d);
 - Tags `linked_scenarios`;
 - **Does not replace building height / floor count / FAR / engineering implementation**.
@@ -306,7 +306,7 @@ See `geometry/land_use.geojson` and `metrics.json#land_use_area_by_code_sqm`. Al
 
 ![Mobility, slow, and blue-green composite diagram](assets/figures/mobility-bluegreen.png)
 
-Backbone: **Jingzhang green spine (RD-001)** — runs north-south along the Jingzhang Railway legacy park, connecting the three key areas + two wings; total length ≈ X m (see `metrics.json#road_centerline_total_length_m`).
+Backbone: **Jingzhang green spine (RD-001)** — runs north-south along the Jingzhang Railway legacy park, connecting the three key areas + two wings; total length ≈ 28,493 m (see `metrics.json#road_centerline_total_length_m`).
 West wing: **Xiaoyuehe slow-mobility wing (RD-002)** — AI slow-mobility testing + public test track.
 East wing: **Xueyuanlu secondary road (RD-003)** — stitching university to legacy neighborhood.
 South end: **Dazhongsi spoke (RD-004)** — Neighborhood Compute Living Room connection.
@@ -405,15 +405,15 @@ Runs north-south along the Jingzhang Railway legacy park (middle of PROV-SITE-00
 
 | Metric | Value | Status | Source |
 |---|---|---|---|
-| site_area | 11.41 km² | known | `geometry/site_boundary.geojson` EPSG:4548 recompute |
+| site_area | 12.95 km² | known | `geometry/site_boundary.geojson` EPSG:4548 recompute (**note:** +13% vs announcement 11.4 km² because this package uses rectangle simplification, see `geometry/site_boundary.geojson#derivation_method`) |
 | key_detailed_design_area | 369.29 ha | known | three PROV-KEY aggregated |
 | Zhongzhiyuan | 192.92 ha | known | `geometry/key_areas.geojson#PROV-KEY-001` |
 | AI Origin | 104.32 ha | known | `geometry/key_areas.geojson#PROV-KEY-002` |
 | Dazhongsi | 72.05 ha | known | `geometry/key_areas.geojson#PROV-KEY-003` |
-| Concept building footprint | X m² | known | `geometry/buildings.geojson` |
-| Concept green ratio | 12.34% | concept | `geometry/green_space.geojson` |
-| Concept public-space ratio | 7.33% | concept | `geometry/public_space.geojson` |
-| Concept road centerline total length | X m | known | `geometry/roads.geojson` |
+| Concept building footprint | 94,085 m² | known | `geometry/buildings.geojson` |
+| Concept green ratio | 18.82% | concept | `geometry/green_space.geojson` |
+| Concept public-space ratio | 1.41% | concept | `geometry/public_space.geojson` |
+| Concept road centerline total length | 28,493 m | known | `geometry/roads.geojson` |
 | Scenario node count | 12 | known | `geometry/scenario_node.geojson` |
 | Test-scenario count | 3 | known | `geometry/scenario_node.geojson` (is_test_scenario=true) |
 | Phase count | 3 | known | `geometry/phasing.geojson` |
@@ -470,5 +470,4 @@ See `risks.json` (8 risk dimensions, 1–5 score) and `report/copyright_statemen
 8. General Office of the State Council, *Implementation Plan for Effectively Resolving the Difficulties of Elderly People Using Smart Technology* (Guoban Fa [2020] No. 45). `https://www.gov.cn/zhengce/content/2020-11/24/content_5563804.htm`
 9. OpenCity-AI Haidian repository, `submissions-data.js` (peer-proposal title / summary / status index); this package uses it only as a reference for differentiation, **and does not copy any peer content**.
 10. Provisional boundaries and three key-area polygons: `brief/site-package/geometry/provisional_boundaries.geojson`, used only for AI generation and intake self-check.
-<!-- regenerated 1786498137 -->
-<!-- 1786518779 -->
+1786933134
