@@ -952,6 +952,18 @@
       "why_en": "This package states in its front-matter summary that seven land-use classes are partitioned with no overlap and no gap, while `land_use.geojson`'s 22 features were cited **once** in the prose. A reviewer told the partition is complete can check the four area readings and **cannot get from any row to the polygons that row is made of**. Once joined, the set has to be recomputed from the layer rather than typed: **a per-row decision made by hand seven times is one that will be got wrong once.**"
     },
     {
+      "id": "M111",
+      "gate": "land_use_enum_qa.py",
+      "target": "geometry/land_use.geojson",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一块商服地块的用地代码改回 `05`——**要素名一个字没动**，改的只是这个代码在组织方枚举里现在指什么。",
+      "what_en": "Put one commercial parcel's land-use code back to `05` — **its name is untouched**; what changes is what that code now means in the organisers' enum.",
+      "why_zh": "组织方 2026-08-16 把 `05` 由商业服务业用地改为**湿地**，另立 `09`。**`05` 本身合法，成员性检查永远抓不到这条**——错的是要素的名字断言了另一个代码的含义。这条缺陷是靠看对手迁移才发现的，不是靠本包任何一道检查；枚举现在每次构建都从 `upstream/main` 读回来比对，**组织方那边一动，构建就停，而不是照常发货**。",
+      "why_en": "The organisers moved `05` from commercial services to **wetland** on 2026-08-16 and added `09`. **`05` is itself valid, so no membership check could ever catch this** — what is wrong is that the feature's name asserts the meaning of a different code. This defect surfaced from watching a rival migrate, not from any check here; the enum is now read back from `upstream/main` on every build, so **a change on their side stops the build instead of shipping silently.**"
+    },
+    {
       "id": "M107",
       "gate": "source_citation_qa.py",
       "target": "proposal.md",
@@ -1326,7 +1338,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 108,
+  "caught": 109,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1360,6 +1372,7 @@
     "i18n_order_qa.py",
     "intake_limits_qa.py",
     "label_collision_qa.py",
+    "land_use_enum_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
     "measurement_protocol_qa.py",
@@ -1445,6 +1458,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 77 道闸门，其中 74 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 77 gates, 74 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 78 道闸门，其中 75 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 78 gates, 75 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
