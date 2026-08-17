@@ -46,7 +46,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "44c321384ec80126c01003ca41529f3ac6bef3e2189ee1c3c75d6f9f4e5526df"
+      "sha256": "9ffc62fe26568efe359fdc4e441434ad8bc20a1c6b974127902eafb1c179b8cc"
     },
     {
       "path": "assumptions.json",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "607a5db04756995757d0176fb2f297cd65cf28323444693eac376b010d9395c5"
+      "sha256": "d6113702c390723a20a0d0e67bf7c9ca7d527009b1fe8fcf0960798cb560d3dc"
     },
     {
       "path": "compliance_matrix.json",
@@ -277,7 +277,7 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "914ab84da17d7b5d1b2ba391e382ff28a5de2da1533954cefda297bbe33b7c85"
+      "sha256": "fa667e6fab4cb4ef5c32d2721f9bd4e5fdf11dca41fad7cd2d5dfaa9caf23ba0"
     },
     {
       "path": "geometry/site_boundary.geojson",
