@@ -6,7 +6,7 @@ language: "en"
 chinese_translation: "included"
 translation_file: "proposal.zh.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.8"
+iteration: "v1.9"
 summary: "On single-track railways a driver could enter a section only while holding its token, and no second token was released until the first came back. Token Block applies that hundred-year-old safety rule to urban AI governance: the Jing-Zhang heritage corridor becomes one continuously operated, publicly bookable AI test track — one token, one section, returned before the next is issued — with three stations, two switches, and an evidence chain that lets any professional team recompute every claim."
 summary_zh: "单线铁路上，司机必须持有区间令牌才能进入，令牌未归还前发不出第二枚。本方案把这条百年行车安全规则用于城市AI治理：把京张遗址公园全线做成一条持续运营、公众可预约的AI测试轨道——一枚令牌，一个区间，归还之后才发下一枚——三站两岔、一线到底，并附可被专业团队逐项复算的证据链。全部空间建议均为概念建议，不替代法定规划。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
@@ -261,6 +261,13 @@ and sites return to public use. Procurement is scoped as [metric:procurement_the
 themes without amounts, and [metric:monitoring_window_count] monitoring windows at 3, 12 and
 36 months state exactly when each of the six performance metrics starts accruing real data —
 the route by which every `unknown` becomes known.
+
+**Measured, not asserted.** Each of the six performance metrics carries one of
+[metric:measurement_plan_count] registered measurement plans: the observation source (each tied
+to a work-package evidence output), census-or-sample rule, reported statistic, the degradation
+rule that routes it into gates G2–G4, and the public ledger fields its records must carry.
+Baselines are measured in year one; the plans fix methods, and trigger parameters are finalised
+by the Line Operator once the year-one baseline is published.
 
 **Operations and the annual system.** The belt is proposed to run an annual Global AI Week using the line itself as the venue, a rolling scenario-open calendar publishing which segments are bookable, a developer community anchored at the Zero-Kilometre release hall, and a conversion pathway that moves a team from open-source contributor to bookable-track user to tenant. Brand assets accumulate in the belt rather than in any single event: the line, the station names, the marker, the board. All of this is an operating proposal for professional and operating teams to develop — not a confirmed government programme, funding commitment, investment arrangement or approved event schedule.
 
