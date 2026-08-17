@@ -64,6 +64,7 @@
         "submissions/zachshi-ai/jingzhang-ai-civic-services/spatial.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/standard_matrix.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/claim-provenance.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/completion-checklist.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/conversion-pathways.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/governance-raci.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/guarantee-receipt.schema.json",
@@ -82,7 +83,7 @@
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-ai-civic-services": "formal"
       },
-      "total_bytes": 2777470,
+      "total_bytes": 2796961,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -168,7 +169,7 @@
           "source": 12,
           "standard": 2,
           "depth": 4,
-          "data": 23,
+          "data": 25,
           "metric": 11
         }
       }

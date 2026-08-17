@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for urban design proposal generation, elderly-accessibility service design, geometry derivation, and bilingual narrative authoring"
   },
-  "generated_at": "2026-08-16T11:00:00Z",
+  "generated_at": "2026-08-17T05:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ec2974e2b775f15911501e957aa8c4cb6fa52a2eaf81084763f92a9ddddfb7e5"
+      "sha256": "f3fa6fd22d6e05dc4eb0482e0d721c10a8301525d05affa38d8b6b9b91bade71"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "b161a97d56a8e1a11a2eba22db4d1f321f2b70600f42e9b9298d632f85167bc3"
+      "sha256": "4c1bfe044b2a8cf3e0f9bba7b6d150ee86239321fdb519018ae8546dc28317e7"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "34e87f9a1fecf5c4bb1d14e9cd9f98c5f60fac04c77b5edd15c909f9d51274f1"
+      "sha256": "26af7c238f9ad7df20a7119c00c716c4a02b7a3583de479ebc8fa452193be0ee"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9cbab3d934796f30a47a65ecc5f0ab5acb37ff19ccc63ca4a71556020ca5b419"
+      "sha256": "9e0de240f8373ce60d4e51c0a318cf232ce56d7dd68e5173f77e86d3f676d399"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "58fd87376a6a03858553799ac47d3a3a3fb41a99825b2b79c742cb92bd73752b"
+      "sha256": "815de92558317e224ab9d4f6f3f813eeaf7f537b2973b1d5acab3ab687fa9c15"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "77969834d5563d737e3deeed24d0d92cefe55ef8f44b67ad22034db9b352b6c7"
+      "sha256": "074bbb22808e10d4b153c0988e5ed1447d9e5ced7bc67546470a974e07927afa"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -374,6 +374,30 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "fa216d9a50c507b42095694d4f1a94e5146afa15ca869b674194dc641cb55a48"
+    },
+    {
+      "path": "visual/assets/connection-points.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "9ec1d206a5360fe32d677221b45e00128f534b4df6c86039195a8dc23de108ad"
+    },
+    {
+      "path": "visual/assets/connection-receipt.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "020ce1420801717d4b6c07bc124fcec02333363fe88563730e461efaafccb7c1"
+    },
+    {
+      "path": "visual/assets/run_connection_tabletop.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "3397f61054e302f1f4cac70a95c45e165ae684da5f99598c20d34f45f000250a"
+    },
+    {
+      "path": "visual/assets/connection-tabletop-evidence.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "6255b63c80d53ec9c102c1572c58e37054df65b7dee0c696ef6f80a58acda03e"
     }
   ],
   "validation_claim": {

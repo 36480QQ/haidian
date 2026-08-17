@@ -13,7 +13,7 @@
     "model": "GPT-5/Codex desktop + Claude Opus 5 (user-operated earlier iterations)",
     "collaboration_note": "Sonike submits; both agents contributed across disclosed iterations; human reviewers retain final judgment."
   },
-  "generated_at": "2026-08-08T12:00:00Z",
+  "generated_at": "2026-08-17T10:40:42Z",
   "files": [
     {
       "path": "manifest.json",
@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "229dcd6bfc500b42d4757d5ce5a4d7109979966004cc80f2a3139ba812db0617"
+      "sha256": "1dd5b16f8f6bd64a31ee62582562bf4aecc05650a8475a8775bc5fad4658a3bc"
     },
     {
       "path": "agent.json",
@@ -37,124 +37,124 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "059a5fb8b160209b5a242b5ae21bd143c9d76a6eef87b0d6227bcc2bf4302972"
+      "sha256": "f5fb96804a264116364e9eb39a5262785f0aad3d54b46b624a26cdf68880eecb"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "7b860a45807f858c47de22f6bb2ebf69672b838f12b2996357e5c0fb2e1ade60"
+      "sha256": "08345cd62b0c01f54eeddad47636b93ccb87309b93d537ef21bc2cad1b52a1a7"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "290e763046f9a9bb1e7a3c675778d0db4507a63d5ac44dd3073192e3e328f231"
+      "sha256": "99cb86e3731b05cadb04e2312cd1817aa5ec6cc4cdc5eb0ada22c5ffc2a0b05b"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e83046c507b5af62daea8cab63e4c0bcbc904de59283ba255b555e9f6cd72951"
+      "sha256": "8f734ea81dc232aee5032dca1cf198e63698ac2ba0f6d051e9789d9aceff44da"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "4321876d1108c1bee946f9838edf6e642dcbeafbce19cc0144e645a7d0f27c19"
+      "sha256": "7d06b51f85a9f30e95162b6724588650800d07d176176b5eeed876ba80b2b210"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "6cb1459788eea7ce12ba941d8da715ff63937be9dc12b473cbeb10e7059b329c"
+      "sha256": "74474ae71f35fe0a244494187f7cb04d0042bdead6a725098cacfd5191b55707"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "f534c17f292448e3430f02466897040899f03d37a0ba63d741304361e1945fac"
+      "sha256": "9c9e32003bb0b3061b8f0321e059e895ff714b4fd65281e3dfc2cae9c45ef4b4"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "dfbc70c8da881bc797e6fd9ebb3dfc8a08989cc75b8a9c858c29fefa0f3ae06d"
+      "sha256": "f68493a678f2efdffd7286163ba756355f72587db51528c36fa1d3c4778937e6"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "31b83246093834fe242e09d3dec151830da16570af354acbe12f9b4ad76804a8"
+      "sha256": "40012667c1f2b854d7f25fe4a3f957b14df4da9a88a17efdec0a83bd9079f782"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "d8cc05ceb55668f5aefd5102bec23cad73221aebf57f9be11748a8155824d082"
+      "sha256": "063b69218379dd39e3e8210b9991fa2834c97222cb04ef5ce0959b781b803fa3"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "193ed530a85b021c324ea576162aa95e53b6042b4b60d4ebba8c8eb57e78b572"
+      "sha256": "5e087693ede646716d41f1916194391676ccb7fc06eec54c0c05a7340fe75737"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "34a0323b976d119a18eb1d14acfcf6a4c09d7ad46d09a01a37a4eb2272d2ae75"
+      "sha256": "ba10019d15b9e7bd2a6d57096c7a3bcb40159fe2fc4694664086ae31185c6704"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9f03a92576b65fbe4907a67250d7cb19563ffd2c698312869c7d3c6941f5951f"
+      "sha256": "849766d30514a17a49ad179411d5a985e710e8f0effab12233800239c9d3e53f"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "ca9bd34de9a58a5a59c1b0d6c36cb2649c831ba84b636b6a54273e3afda999b9"
+      "sha256": "36c20a454328f2bdcfcb46e77634be3d1c066778d9d00263503f3aa2b92d3fb6"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "0df91a5390fabdff80f44fbb9591dd426935d06b522605979ff81ba261bfc683"
+      "sha256": "dbbf3cb2734d59d2e51843f002207c54c5b72c47f3bef50e7571accf1b40b8b4"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "e0f9b50e2eb25d0a931038d9781cec35454428805b5558345affd87abc4bdfe8"
+      "sha256": "90fb903e64fca9fe7d282d6da6452a6dce1dead150e433f59b041e65d585048e"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "1985208a408ee2978c25b2cf5f8cc6a377f13e7b33e774f3aef122dd71c56453"
+      "sha256": "6685ed14bcda9325db4e66b217dd7e4cb45694df2d94b47da957290b91aec39f"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f35a58abd4dd6834fcf23a3e0aeccdddc1d7e7508a62b6c9688a2f2334c13217"
+      "sha256": "cd8359c98b20db65f2dcebaabd346eecfa7b35a1a7c7c0d04cbbf0a8774c56f8"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "5cc85b59a83c729feeec251cf4bac03e2b2456a1aa70879f7bdc369b7d677332"
+      "sha256": "d46d524e241e3f8b014a1c04263730589e7a5e34aa1e9be10984bcf10673b66a"
     },
     {
       "path": "geometry/constraints.geojson",
@@ -184,19 +184,19 @@
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "00656de2f9edf1a525dce69891165b881eaa05cd5af18743fc4dac559cd273d6"
+      "sha256": "32d2675fdb95a2b09883f4cd1030bd8c0b70d1d47e2d2de4785f3f34f5addd48"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "ef5bd299c7fda14cd9f8a5973bac49011408af9eb4f2edbe0ef87eb7bcd57644"
+      "sha256": "39d736bec39833c7b219e0a691cdd9ec957df8f393eadfd5c587c9edda464319"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "7445e4ebff86dda038a72bbf1c6fbb25fe8a5f2b3e3557348938e82fa2d42561"
+      "sha256": "874e52d6922c1afa71002226e90299697cfe075717a6686a85d14e5f03929f8c"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -210,7 +210,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ba4e3609f6d704fb3db29ba55dd7a8d7afb7c502ba85f84effdaa6d6ca2ef802"
+      "sha256": "dce9963bea19e215b26e36e5ebf9b03059b2865296be0a8e7fb6d4280c37cf21"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6a33da537d2284e254ecb6e9e489473b467f53ea394458ec3d09cd12032ae64b"
+      "sha256": "781b46d952fb0bf7e68eac99d09d7293d90ae6f6b52da9175417c2a9e7b0857a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -226,7 +226,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "d9326bf0a5db2142698ba8df27abda35bf8ae871997db20d093a7b7c53089ca0"
+      "sha256": "35990df8ef3cc2df61db817e69939962580b409e2115498cec63fadbc946d3ba"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -234,7 +234,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "5f93cf2e60ecb60b5741bb8b4f68ccfd3cffaf8d0dfc86b506bca07b51564fb1"
+      "sha256": "7c1f6f009d8d68dc9915e7e4734495583a0b8e1a4ea10630110eb7c0e186e6a8"
     },
     {
       "path": "visual/index.en.html",
@@ -242,7 +242,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "7cbdf1d364bbc0fba47e6a936b6ab00ab94484c70696ddeaa935ff600ad1b220"
+      "sha256": "17ff3bc014e3511df92ca8b7312428e4c04ec5c236a6c54441bafba8257b1c5d"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -250,7 +250,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "14083fecb548ef7cfec06006e733862f8816e476d8fcd1fc6dd8ec64c7deb438"
+      "sha256": "a5d78c5b68edb45174b207894874a7f1860b4ba47f50be315042d49a52e1d458"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -258,7 +258,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "06d558709d08d5cf63bb13935319d9cd0093fcfc05ed667558a1401e14f3c08f"
+      "sha256": "c9044f01f36c2c30d162f2938c01830db94db451d7c71142a22fcbbfc3154c1a"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -266,14 +266,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "04cebf59ddf5a3f86c13bfdd1fb5e3b23d1579688150b8a9589fc9b61afe96cb"
+      "sha256": "d5e5c714255b38066f0a384cc3e6d75e6343631608fb34d51d4ae988d845a030"
     },
     {
       "path": "assets/figures/ecosystem-map.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "87671a2f6ad02386690e7ad1414dcb37623fee87bde175c7a9974f3243b90cd6"
+      "sha256": "e0aed204f49e6a930816425b09f3ffda97be6b5dce6471247faf139fa4961c12"
     },
     {
       "path": "assets/figures/ecosystem-map.en.png",
@@ -281,14 +281,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/ecosystem-map.png",
-      "sha256": "c4a4cb1b539832779998085dd603dcb193de55cf828f59220262e4d31b73978a"
+      "sha256": "bdd9147cd842460f582b9df825a74e46cbb31ee1956f6048972537f70785a47c"
     },
     {
       "path": "assets/figures/renewal-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "4c0871a74485cd6b2325dded355fa9817a2a330cc58899317778a75bad18b332"
+      "sha256": "14f3af32c929b0afe737cb2d71c58e6e647833f26ff3448f65982dbed73f8e15"
     },
     {
       "path": "assets/figures/renewal-structure.en.png",
@@ -296,14 +296,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/renewal-structure.png",
-      "sha256": "b441244c69ccc2ffc8b6a42b825f91e273b438053768bbda9d64c989bf613185"
+      "sha256": "30923c371b31a0f70f563c42c771689eadd1191d40d6890e5cb0628be77edb5f"
     },
     {
       "path": "assets/figures/logo-identity.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "5aded637d8ff1cb74265d55b1fec4ef94ae4e66e8b6e3cf9af432e4614144164"
+      "sha256": "e10f371393bc427d13dc2936f7b406a82463a47f1fcc53b2bb1c7652de3b107f"
     },
     {
       "path": "assets/figures/logo-identity.en.png",
@@ -311,14 +311,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/logo-identity.png",
-      "sha256": "33f2a5f25ae0a5c37752a16cf48f8ad8bf8026cd2dd24c095703af8bfa8b5388"
+      "sha256": "2ac8b3a0ae27eba8198f6e0c747224b77e98344df1279a85cda56068ea0e82ad"
     },
     {
       "path": "assets/figures/adaptive-model.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f1763dd2a5a4318f37b09190e3eff408066b6e3253765944d8b848bcd4a08b5c"
+      "sha256": "9447a78c7adc22c70b01efa0e9013caeabc62e1e4628a9f3e1a5f0bf446cdd16"
     },
     {
       "path": "assets/figures/adaptive-model.en.png",
@@ -326,7 +326,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/adaptive-model.png",
-      "sha256": "35a3430eddbf1af8cef2a8e4e5e2e5f073728f650c5d3dae640d9ab4d05964ba"
+      "sha256": "443397ff326ae0fd07f6e0e53e89a7e6a7e97eb16fa7db81413ac1523d592290"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -334,7 +334,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "7152ee39228442884dde049df28c980de94b19912b8993fc4e000ad1a244cf86"
+      "sha256": "b71beb625b659d0f26a2e189a14a001ca53891a8e05ffcc5887f827ff006612b"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -342,21 +342,21 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "1c13c2b3992706a2aa3402af20f2827d5dc30e0c4f7dddc213a83fe5c4c1d6bc"
+      "sha256": "36a1f5ac21d0cbf0672bdc6e880934667d3dfbc38a2ec406f119970496d2d2ee"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "15d91682f9769b71268a3d22a15e6aa0686f68c4fae5ea624390456ff2131c11"
+      "sha256": "79e1d67b827a746de10d3486029b8c0ff542dec404a1bb8bd8f45a854cd6ba51"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "b857b8c9c2cd9393e63a949c403a10b8cd6ab6772cb9a42aec52a0bb27cafc91"
+      "sha256": "d928ec26019dd87b739f127b6982fc5e0ebc5cdab0cedfa317ab572d1ce381dd"
     },
     {
       "path": "assets/figures/spatial-prototype.en.png",
@@ -364,14 +364,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/spatial-prototype.png",
-      "sha256": "666151071f4cc9d1ecdd062c6fd5bc68472d70407a84d164a4ff51be548c91cb"
+      "sha256": "e75226d049fbf38806dc519f737d162428d52157c9759eeb45a2649b6b9cc4f3"
     },
     {
       "path": "assets/figures/delivery-contract.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8abb6a41b12e018be0e19722848baf0bf1d3cd3e94d76ababe5fc129d43bca0a"
+      "sha256": "c87196b44533506781af0984d4bf604f1e54645d054d0411b1f6afd4c167a636"
     },
     {
       "path": "assets/figures/delivery-contract.en.png",
@@ -379,7 +379,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/delivery-contract.png",
-      "sha256": "20a434d3063655c549adf4018961b3aeed7abbc858a2b84c26729b3d92578b6c"
+      "sha256": "35be7682acf4442f81b995e257e55db56c42cca9133c6fdcd3d748bb7c67ec72"
     },
     {
       "path": "visual/assets/governance/shift-ledger.schema.json",
@@ -416,7 +416,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "1002edff13c4430fb58d08b59c1a1d000991d01e954008653aa2158083d593f2"
+      "sha256": "b854837175ac73f5a850800244949ccbc0eee7af07c3a88b19bda985eb0b13fd"
     },
     {
       "path": "assets/figures/shift-ledger.en.png",
@@ -424,14 +424,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/shift-ledger.png",
-      "sha256": "74f952ec63de7de8b5cec6d2045b2e18e65de8ea67e056b648322ae777106ccd"
+      "sha256": "c9ac91c426e238fb681f2d8165255c7a172b4df8a634a538d07e5f81c90f062d"
     },
     {
       "path": "assets/figures/handover-scene.jpg",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8fcc97894214a060076692ed27b3a82557c5fc8888c954d6e7ca874361872a51"
+      "sha256": "09894fe51e629375b0b7d8ca3bc7bdc3f0f02b9a109de48eebff9a44aff23936"
     },
     {
       "path": "assets/figures/handover-scene.en.jpg",
@@ -439,7 +439,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/handover-scene.jpg",
-      "sha256": "2d124acc5fd3a4bcdbff366f69a068d6a83e34e8e27449480ea741321d77c0dd"
+      "sha256": "30a1f9514905af6906b4b2468c3c7f1d5fc38655cb134100b6d9dde06b2b19a8"
     },
     {
       "path": "assets/media/cover.png",
@@ -500,6 +500,95 @@
       "caption": "assets/media/audio-guide-en.vtt"
     },
     {
+      "path": "assets/media/guided-tour.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "0d6d88793aaad3bee339bcbe854b1ac037c64fcce9b1b3878f486ac4ac88ad97",
+      "title_zh": "三分钟导览视频字幕（中文）",
+      "title_en": "Guided-tour video captions (Chinese)",
+      "description_zh": "与音频导览逐句一致的 WebVTT 字幕，时间轴按各句字符数占比在实测总时长上分配。",
+      "description_en": "WebVTT captions matching the audio guide sentence for sentence; the timeline distributes each line by character share across the measured total duration."
+    },
+    {
+      "path": "assets/media/guided-tour-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "206f212a4bff230920d6b056d06c887997acb555f191140fab8bca0fe8de2088",
+      "title_zh": "三分钟导览视频字幕（英文）",
+      "title_en": "Guided-tour video captions (English)",
+      "description_zh": "英文版字幕，与英文音频导览逐句一致。",
+      "description_en": "English captions matching the English audio guide sentence for sentence."
+    },
+    {
+      "path": "assets/media/guided-tour.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "d1362e71ab128efe39dbd839b07f836a283e155d9bd4be1b76d1bf9bb7a40927",
+      "title_zh": "三分钟导览视频文字稿与分镜（中文）",
+      "title_en": "Guided-tour transcript and shot list (Chinese)",
+      "description_zh": "逐句文字稿，外加九段分镜表：写明每一段配的是哪张图件、为什么配它。",
+      "description_en": "Sentence-by-sentence transcript plus a nine-shot list stating which figure each segment shows and why."
+    },
+    {
+      "path": "assets/media/guided-tour-en.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "2251cb42e3087ff4fe228deefa18ba32c33355ae795500fb718c097981a720d4",
+      "title_zh": "三分钟导览视频文字稿与分镜（英文）",
+      "title_en": "Guided-tour transcript and shot list (English)",
+      "description_zh": "英文版文字稿与分镜表。",
+      "description_en": "English transcript and shot list."
+    },
+    {
+      "path": "assets/media/guided-tour.mp4",
+      "role": "video",
+      "required": false,
+      "sha256": "a8d2dd5db7af4b42c73bef42f3f608f186bbef9ca0ad51d85a94f5115bacbe34",
+      "title_zh": "京张交接线 · 三分钟导览视频（中文）",
+      "title_en": "Jing-Zhang Handover Line · three-minute guided tour (Chinese)",
+      "description_zh": "任务书「表达完整度」点名文本、图像、表格、场景卡、视频/声音与交互网页；本包此前有声音而无视频，本文件补上这一类。**视频不引入任何新主张**：音轨与 audio-guide.m4a 完全相同，字幕逐句一致，画面全部取自包内已有图件。**九个切换点按音轨内容而非均分设置**——讲三座交接场时切 F/03，讲公开交接桌时切 F/10，讲十二个场景的拒收状态时切 F/05 的 96 格矩阵；分镜表见文字稿。1280×720、12 fps（画面为静帧，低帧率只为减小体积），H.264 + AAC，181.8 秒。",
+      "description_en": "The taskbook's expression-completeness clause names text, images, tables, scenario cards, video/sound and an interactive page; this package had sound but no video, and this file supplies that kind. **The video introduces no new claim**: the audio track is identical to audio-guide.m4a, the captions match it sentence for sentence, and every frame is a figure already in the package. **Its nine cuts follow the narration rather than an even split** — F/03 for the three handover yards, F/10 at the public handover table, F/05's 96-cell matrix at the refusal state of all twelve scenarios; the shot list is in the transcript. 1280×720, 12 fps (static frames; the low rate only reduces size), H.264 + AAC, 181.8 s.",
+      "transcript": "assets/media/guided-tour.md",
+      "poster": "assets/media/cover.png",
+      "caption": "assets/media/guided-tour.vtt"
+    },
+    {
+      "path": "assets/media/guided-tour.en.mp4",
+      "role": "video",
+      "required": false,
+      "sha256": "55d4aa5b80838e547e97e5ca79f8ba65f81722d9a42673aee172cb3c5a5830e7",
+      "title_zh": "京张交接线 · 三分钟导览视频（英文）",
+      "title_en": "Jing-Zhang Handover Line · three-minute guided tour (English)",
+      "description_zh": "英文版导览视频，结构与中文版相同，画面改用图件的英文版本；176.5 秒。",
+      "description_en": "English guided tour; same structure as the Chinese edition with the English figure editions; 176.5 s.",
+      "transcript": "assets/media/guided-tour-en.md",
+      "poster": "assets/media/cover.png",
+      "caption": "assets/media/guided-tour-en.vtt"
+    },
+    {
+      "path": "assets/tactile/tactile-corridor-map.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "4669253c98477d32c72383a08ab52b5c8b51a2191600083cd5c8be3d00f4b1e9",
+      "title_zh": "京张交接线 · 触觉走廊图（可制版矢量图）",
+      "title_en": "Jing-Zhang Handover Line · tactile corridor map (embossing-ready vector)",
+      "description_zh": "面向热敏膨胀纸打印或激光雕刻制版的矢量走廊图，用于兑现组件库中「触觉导视牌」与 SCN-05 无AI兜底所写的「触觉地图」。走廊轮廓、慢行主轴与八条东西支线取自 geometry/*.geojson 的真实几何；三座交接场用圆/方/三角三种可触辨形状区分，十二个人工接管点用实心圆点，四处朝圣地标用菱形——**全图不依赖颜色即可辨认**。凸起高度、点径与间距不写死：须按 GB/T 15720 及现行无障碍设计规范由制版厂商核定，图内已注明此边界。",
+      "description_en": "A vector corridor map prepared for swell-paper printing or laser embossing, delivering the tactile map named in the component library's tactile wayfinding sign and in the no-AI fallback of SCN-05. Corridor outline, active-mobility spine and the eight east-west stitch links come from the real geometry in geometry/*.geojson; the three yards are distinguished by circle / square / triangle, the twelve human-takeover points by filled dots and the four civic landmarks by diamonds — **the whole drawing is legible without colour**. Raised height, dot diameter and spacing are deliberately not fixed here: they must be verified by the fabricator against GB/T 15720 and current accessibility codes, as stated on the drawing."
+    },
+    {
+      "path": "assets/tactile/tactile-corridor-map.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/tactile/tactile-corridor-map.svg",
+      "sha256": "63e0e6fb013ee0410e625680e451f4da648fc28cbff41f26cb8c53b8b9df9438",
+      "title_zh": "京张交接线 · 触觉走廊图（英文版）",
+      "title_en": "Jing-Zhang Handover Line · tactile corridor map (English edition)",
+      "description_zh": "触觉走廊图的英文版，图形与中文版完全相同，仅文字为英文。",
+      "description_en": "English edition of the tactile corridor map; graphics identical to the Chinese edition, text in English only."
+    },
+    {
       "path": "visual/assets/governance/role-spec.schema.json",
       "role": "governance_contract",
       "required": false,
@@ -522,6 +611,17 @@
       "role": "governance_specification",
       "required": false,
       "sha256": "3b35bafd3c250364a4f7cf494c83340f527c52f94f416c053ba4b2540c598556"
+    },
+    {
+      "path": "visual/assets/public-handover-table-3d.json",
+      "role": "visualization",
+      "required": false,
+      "sha256": "bb6b133d3b7a5ceaa48c9759a9f0ceeaba89abb726b571cda3e4cb71a281cdca",
+      "title_zh": "公开交接桌 · 三维关系模型（base64 封装 STL，含重建参数与自校验哈希）",
+      "title_en": "Public Handover Table · 3D relation model (base64-wrapped STL with rebuild parameters and self-verifying hash)",
+      "description_zh": "任务书表达完整度点名「视频/声音、三维或交互网页」，本文件补上三维这一类。**它是关系模型不是施工模型**：正文写明这张桌子的位置、尺寸、材料、无障碍净宽与桌面高度须依现场测绘与无障碍规范确定、本方案不预设数字，因此模型一律使用无量纲相对单位，只表达四段的顺序、相邻关系与共同在场，**任何按本文件推算的实际尺寸都是误用**。顺序不可调换是这张桌子的全部主张，模型把它做成几何事实：四段沿同一轴线相接，交出位有四个版本卡插槽、接入位有单个判定牌位、未决栏是唯一高出台面的竖板，**人工窗口在最外端且是唯一落地的一段**——撤除时这一段不撤。144 个三角面，binary STL 以 base64 内嵌，附 sha256 供解码后自校验。",
+      "description_en": "The taskbook's expression-completeness clause names video/sound, three-dimensional or interactive web form; this file supplies the three-dimensional kind. **It is a relation model, not a construction model**: the proposal states that this table's position, size, material, accessible clear width and worktop height must be set by site survey and accessibility codes and that no figure is assumed, so the model uses dimensionless relative units and expresses only the order, adjacency and simultaneous presence of the four segments — **any real dimension derived from it is a misuse**. That the order cannot be swapped is the whole claim of the table, and the model makes it a geometric fact: the four segments meet along one axis; the hand-out station carries four version-card slots, the take-in station a single verdict plate, the open-items board is the only element rising above the worktop, and **the human counter is outermost and the only segment reaching the ground** — the segment that stays when the rest is removed. 144 triangles, binary STL embedded as base64 with a sha256 for post-decode verification.",
+      "language": "neutral"
     }
   ],
   "validation_claim": {

@@ -1,5 +1,60 @@
 # 方案迭代记录 / Changelog
 
+## v39.0 - 2026-08-17
+
+**Eight-question cold-read baseline and unique answer routing / 八问冷读基线与唯一答案路由**
+
+- 串行门：第 38 轮 PR #3094 已合并（head `bb0d3461280ba681271208c3e41aaa3e83913627`，merge `4f773dd1ab5592854f223f199a6cc9cd1fdf11b2`），merge 已进入 canonical `main@f7e4537deced08b10bed290210b76d57e8240ed4`；投稿人 `xyh202131` 开放 PR 为 0，源工作树洁净。本轮由该固定点开始。
+- Serial gate: Round 38 PR #3094 is merged (head `bb0d3461280ba681271208c3e41aaa3e83913627`, merge `4f773dd1ab5592854f223f199a6cc9cd1fdf11b2`) and the merge is contained in canonical `main@f7e4537deced08b10bed290210b76d57e8240ed4`; contributor `xyh202131` has zero open PRs and the source worktree was clean. This round starts from that fixed point.
+
+| 已具备 / Already present | 仍薄弱 / RED | 必须冻结 / Locked | 本轮实施 / Implemented |
+|---|---|---|---|
+| 30 秒总纲、3 分钟四态、15 分钟证据库；双语 proposal/visual/report；A3 14+14、A0 8+8 | `cold-read-8` 只有八个问题和四个泛化入口，却没有逐题答案、唯一锚点或 PDF 页码；前台仍声称逐题入口已存在 | 双轨总纲、三原型、JZ-AIOS 内核、geometry、metrics、12/8/3/36、G0/NO-GO/provisional/rights、媒体与 PDF 页数 | 八问各增一个双语主答案、一个唯一前台锚点和 A3/A0 页码；机器索引记录 8/8 与唯一性断言；报告同步 |
+
+- 修复前 RED 可重放：`visual/assets/review-handoff-index.json#cold-read-8` 的 `questions` 为 8，但无 `answer_map`；四个 `entry_points` 仅指向整份 proposal、整页 visual 与两份中文 PDF，无法回答“主答案在哪里”。修复后 `answer_map` 为 Q1—Q8，8 个 ID、8 个不同前台锚点、双语锚点缺失 0；proposal、visual 与 report 使用同一答案和印刷页码。
+- Reproducible RED: before repair, `visual/assets/review-handoff-index.json#cold-read-8` had eight `questions` but no `answer_map`; four `entry_points` only named the whole proposal, visual and two Chinese PDFs, so they could not locate a primary answer. After repair, `answer_map` contains Q1–Q8 with eight IDs, eight distinct front-stage anchors and zero missing bilingual anchors; proposal, visual and report use the same answers and print locators.
+- 冷读答案只复述既有事实与限制，属于编辑复核，不是公众反馈、专家意见、评审结果或批准。本轮无新媒体；生成方法、来源、模型、权利与不可证明事项均未变化。
+- Cold-read answers restate existing facts and limits only. They are editorial review, not public feedback, expert opinion, a jury result or approval. This round adds no new media; generation method, source, model, rights and non-provable matters are unchanged.
+- 四份 PDF 内容与字节不变，原有页面已覆盖八问，索引只增加精确页码：A3 14/14、A0 8/8。geometry 九文件、`metrics.json`、封面和普通生活媒体字节保持冻结；未新增主张、事实、页面、场景、项目、重点区、合同或成熟度。
+- All four PDFs keep their content and bytes; existing pages already cover the eight questions and the index only adds exact page locators: A3 14/14 and A0 8/8. The nine geometry files, `metrics.json`, cover and ordinary-life media remain byte-frozen; no claim, fact, page, scene, project, key area, contract or maturity is added.
+
+## v38.0 - 2026-08-17
+
+**Reviewer-path compression and publication legibility / 评审路径压缩与出版可读性**
+
+- 离线 visual 将主导航固定为六项，把完整证据索引移出粘性导航；12 行公共信号表与后台证据库默认收起但保留原生无 JavaScript 操作，打印时完整展开。五场景浏览器复核覆盖中英文桌面、中文移动端、无 JavaScript 与减少动态：无溢出、无外域请求、无缺失 alt、无重复 ID，中文/英文桌面前台分别压缩到 9.854/10.428 个视口高度。
+- The offline visual fixes the primary navigation at six items and moves the full evidence index outside the sticky bar. The 12-row public-signal table and backstage library are initially collapsed but remain native and operable without JavaScript, while print reveals the complete table. A five-scenario browser review covers bilingual desktop, Chinese mobile, no JavaScript and reduced motion: no overflow, external request, missing alt or duplicate ID; the Chinese/English desktop front stage is reduced to 9.854/10.428 viewport heights.
+- 中英文 proposal 与离线报告明确区分 13 个 formal 章节和 8 个 extended evidence 单元，保留原有 21 个 H2、21 幅图、全部正文和逐章证据标记。未删除未知、G0、provisional、非 AI 路径、权利阻断或专业否决。
+- The bilingual proposals and offline reports explicitly distinguish 13 formal chapters from 8 extended evidence units while preserving all 21 H2 units, 21 figures, prose and per-chapter evidence markers. Unknowns, G0, provisional status, non-AI paths, rights blocks and professional vetoes remain intact.
+- 四份出版物在原路径重建，页数保持 A3 14+14、A0 8+8；A3 图面区扩大并收束证据侧栏，A0 主图区扩大并压缩判断带。两次同一固定构建逻辑的新进程逐文件字节一致；A3 最小矢量字号 9.2 pt，A0 为 12 pt，书签 14/14/8/8，无加密或控件。
+- All four publications are rebuilt in place with unchanged page counts (A3 14+14, A0 8+8). A3 gains a larger figure field and tighter evidence sidebar; A0 gains a larger figure field and shorter judgment band. Two fresh processes using the same frozen build logic are byte-identical file by file; minimum vector type is 9.2 pt on A3 and 12 pt on A0, with 14/14/8/8 outlines and no encryption or widgets.
+- 本轮不新增媒体、来源、事实、方案方向、场景、项目、重点区或治理合同；`sources.json`、geometry 九文件、`metrics.json`、封面、普通生活三联图和重点区图件保持字节不变。12/8/3/36、G0、NO-GO、provisional、现实结果 0、`not_fully_cleared` 与独立逐文件清权 0 不变。
+- This round adds no media, source, fact, design direction, scenario, project, key area or governance contract. `sources.json`, all nine geometry files, `metrics.json`, the cover, ordinary-life triptych and key-area figures keep their bytes. The 12/8/3/36 counts, G0, NO-GO, provisional status, zero real-world outcomes, `not_fully_cleared` and zero independent file-level audits remain unchanged.
+
+## v37.0 - 2026-08-17
+
+**Browser QA matrix re-validation after the foreign-restore incident / 外部恢复事件后的浏览器 QA 矩阵复验**
+
+- 第 35—36 轮修复了外部恢复提交 `b6c05fffe` 造成的台账过期并建立回归护栏；本轮补上最后一环：用第 22 轮同一零依赖 CDP 驱动（Chrome headless + DevTools Protocol + Node.js 22 内置 WebSocket）对当前包字节重跑 18 例双语浏览器矩阵，全部通过——1440×900 与 390×844 无横向溢出、无 JS 五步漫游与证据库回退可见、reduced-motion 保持状态 01、12.25 秒运动边界为状态 02、首个焦点为跳过链接、图片缺 alt 0、aria-live 存在、h1=1、控制台/请求/外域 0。交互层确认未受恢复事件影响。
+- Rounds 35–36 repaired the ledger staleness caused by the foreign restore commit `b6c05fffe` and built regression guards; this round closes the last gap: the same zero-dependency CDP driver as Round 22 (Chrome headless + DevTools Protocol + Node.js 22 built-in WebSocket) re-runs the 18-case bilingual browser matrix on the current package bytes — all pass: no horizontal overflow at 1440×900 and 390×844, no-JS five-step walk and evidence library fallback visible, reduced-motion stays in state 01, the 12.25 s motion boundary is state 02, first focus is the skip link, 0 images missing alt, aria-live present, h1=1, 0 console errors / failed requests / external hosts. The interactive layer is confirmed unaffected by the restore incident.
+- 证据登记：site-grounding 新增 `browser_matrix_r37` 合同（18/18 all_pass、执行日 2026-08-17、与第 22 轮同驱动同断言）；无任何内容、图面、PDF 或数据变化。
+- Evidence: site-grounding gains the `browser_matrix_r37` contract (18/18 all_pass, executed 2026-08-17, same driver and assertions as Round 22); no content, figure, PDF or data change.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits and 141 paths.
+
+## v36.0 - 2026-08-15
+
+**Compliance evidence-namespace separation & presentation regression guard / 合规证据命名空间分离与展示回归护栏**
+
+- 规则层更新：formal-submission-guide 与 SKILL.md 要求 `compliance_matrix.json` 分开证据命名空间——`source_ids` 只放来源登记 ID，专业标准 ID 必须放 `standard_ids` 并在 `standard_matrix.json` 声明；新增 `compliance_matrix.schema.json` 与 `land_use_codes.json`。本轮重读并响应：6 行（1.3.2/1.4.2/1.5.1.2/1.5.2.2/1.5.2.4/1.5.2.5）把 `STD-URBAN-DESIGN` 从 `source_ids` 移入 `standard_ids=["MOHURD-URBAN-DESIGN-MEASURES"]`（该标准在 standard_matrix 中已声明，STD-URBAN-DESIGN 仍是其在 sources.json 中的快照来源）；23 行 schema 必填字段齐全、schema_version 0.1.0、9 个用地代码全部在新枚举内。
+- Rule-layer update: the guide and SKILL.md now require `compliance_matrix.json` to separate evidence namespaces — `source_ids` carries only source-registry IDs while professional standard IDs belong in `standard_ids` and must also be declared in `standard_matrix.json`; a new `compliance_matrix.schema.json` and `land_use_codes.json` were added. This round re-reads and responds: in the six rows (1.3.2/1.4.2/1.5.1.2/1.5.2.2/1.5.2.4/1.5.2.5) `STD-URBAN-DESIGN` moves from `source_ids` to `standard_ids=["MOHURD-URBAN-DESIGN-MEASURES"]` (already declared in standard_matrix; STD-URBAN-DESIGN remains its snapshot source in sources.json); all 23 rows carry the schema-required fields, schema_version 0.1.0, and all 9 used land-use codes are inside the new enum.
+- 展示回归护栏（第 36 轮）：第 24 轮对比度修复值（--red/--green/#8a5a00/#5c6663）、第 25 轮阅读入口 h2、第 27 轮官方章节标题纳入索引生成器强制不变量（`presentation_contract_regression_guard`），任何静默回退都会使再生成失败——外部恢复提交 `b6c05fffe` 的历史教训永久关闭。
+- Presentation regression guard (Round 36): the Round 24 contrast values (--red/--green/#8a5a00/#5c6663), the Round 25 reading-entry h2 and the Round 27 official chapter heading join the index generator's enforced invariants (`presentation_contract_regression_guard`), so any silent reversion fails regeneration — the lesson of the foreign restore commit `b6c05fffe` is closed permanently.
+- 无主张、数据、机制、图面、PDF 或成熟度变化；geometry 九文件、metrics 值、sources/assumptions 内容字节未变。
+- No claim, datum, mechanism, figure, PDF or maturity change; the nine geometry files, metric values and sources/assumptions content bytes are unchanged.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits and 141 paths.
+
 ## v35.0 - 2026-08-15
 
 **Rights-ledger digest coherence repair & second freshness audit / 权利台账摘要一致性修复与第二次来源新鲜度审计**

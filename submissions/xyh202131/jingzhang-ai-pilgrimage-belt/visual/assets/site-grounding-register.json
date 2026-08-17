@@ -991,6 +991,107 @@
         "result": "refresh_records now carry 50 Round 35 records; summary updated to audit_round r35, executed 2026-08-15, 48/2/50; review_due set is identical to Round 21 and freezes upgrades without deleting any statement",
         "certification_note": "Freshness digests fix the bytes retrieved this pass only and are not publisher signatures; the audit is not a rights clearance or a validity guarantee."
       },
+      "compliance_namespace_r36": {
+        "contract_id": "JZ-COMPLIANCE-NAMESPACE-R36",
+        "executed_at": "2026-08-15",
+        "rule_layer_basis": "The formal-submission-guide and SKILL.md now require compliance_matrix.json to keep evidence namespaces separate: source_ids may only contain source-registry/package source IDs, while professional standard IDs belong in standard_ids and must also be declared in standard_matrix.json. The new brief/site-package/schemas/compliance_matrix.schema.json formalizes the row shape.",
+        "baseline_findings": {
+          "rows_mixing_standard_in_source_ids": 6,
+          "mixed_id": "STD-URBAN-DESIGN",
+          "matching_standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
+          "land_use_codes_vs_new_enum": "all 9 used codes present in brief/site-package/enums/land_use_codes.json",
+          "schema_required_fields": "all present in all 23 rows",
+          "schema_version": "0.1.0"
+        },
+        "fixes": [
+          {
+            "file": "compliance_matrix.json",
+            "change": "removed STD-URBAN-DESIGN from source_ids in the six rows (1.3.2, 1.4.2, 1.5.1.2, 1.5.2.2, 1.5.2.4, 1.5.2.5) and added standard_ids=[MOHURD-URBAN-DESIGN-MEASURES] to each; STD-URBAN-DESIGN remains registered in sources.json and remains the snapshot source of MOHURD-URBAN-DESIGN-MEASURES in standard_matrix.json"
+          }
+        ],
+        "result_after_fix": "0 rows mix standard ids into source_ids; 6 rows carry standard_ids; current self_check and strict scoring pass under the new rule layer; the presentation-contract regression guard (r24 contrast, r25 h2, r27 heading) is now also enforced by the index generator on every regeneration",
+        "certification_note": "Namespace separation is a structural compliance check; it is not an approval or a rights grant."
+      },
+      "browser_matrix_r37": {
+        "contract_id": "JZ-BROWSER-MATRIX-R37",
+        "executed_at": "2026-08-17",
+        "purpose": "Re-validation of the Round 22 browser QA matrix after the foreign-restore incident (commit b6c05fffe, repaired in Rounds 35-36): prove the interactive and fallback behaviours of both visual pages still hold on the current package bytes",
+        "environment": "Google Chrome headless + Chrome DevTools Protocol + Node.js 22 built-in WebSocket; the same zero-dependency package-external driver as Round 22, repointed to this package",
+        "case_count": 18,
+        "bilingual": ["zh", "en"],
+        "result": "all_pass",
+        "key_measurements": {
+          "viewport_1440x900_page_overflow": false,
+          "viewport_390x844_page_overflow": false,
+          "no_javascript_walk_steps_visible": 5,
+          "no_javascript_library_open": true,
+          "reduced_motion_stays_on_state_01": true,
+          "motion_boundary_at_12_25s_state": "02",
+          "first_focusable_is_skip_link": true,
+          "images_missing_alt": 0,
+          "aria_live_present": true,
+          "h1_count": 1,
+          "console_errors": 0,
+          "failed_requests": 0,
+          "external_hosts": 0
+        },
+        "visual_content_changes": 0,
+        "certification_note": "Programmatic browser verification of layout and interaction only; it is not assistive-technology certification, human visual inspection, field evidence or an approval of any kind."
+      },
+      "reviewer_path_matrix_r38": {
+        "contract_id": "JZ-REVIEWER-PATH-MATRIX-R38",
+        "executed_at": "2026-08-17",
+        "purpose": "Verify the compressed six-part reviewer path, native evidence disclosure, offline fallback, responsive safety and reduced-motion behavior on the final Round 38 visual bytes",
+        "environment": "Bundled Playwright 1.62.1 with installed Google Chrome, one local HTTP server, no remote dependency",
+        "case_count": 5,
+        "cases": ["zh-desktop", "en-desktop", "zh-mobile", "zh-no-js", "zh-reduced-motion"],
+        "result": "all_pass",
+        "key_measurements": {
+          "primary_navigation_items_per_language": 6,
+          "evidence_index_links_per_language": 25,
+          "public_signal_rows_per_language": 12,
+          "zh_desktop_front_stage_viewports": 9.854,
+          "en_desktop_front_stage_viewports": 10.428,
+          "viewport_overflow_cases": 0,
+          "missing_alt_images": 0,
+          "duplicate_ids": 0,
+          "console_or_page_errors": 0,
+          "failed_or_remote_requests": 0,
+          "no_javascript_native_disclosures_operable": true,
+          "reduced_motion_transition_seconds": 0,
+          "print_signal_rows_visible": 12
+        },
+        "certification_note": "Programmatic browser and print-layout verification only; not assistive-technology certification, human field observation, approval, operational evidence or a rights grant."
+      },
+      "cold_read_baseline_r39": {
+        "contract_id": "JZ-COLD-READ-BASELINE-R39",
+        "executed_at": "2026-08-17",
+        "purpose": "Give each of the eight existing editorial cold-read questions one primary answer, one distinct front-stage anchor and existing A3/A0 page locators without adding facts, media, pages or maturity.",
+        "red_before": {
+          "questions": 8,
+          "generic_surface_entries": 4,
+          "per_question_answers": 0,
+          "per_question_primary_anchors": 0,
+          "per_question_pdf_locators": 0,
+          "conflict": "the front stage claimed that per-question entries existed in the index"
+        },
+        "result_after_repair": {
+          "questions": 8,
+          "primary_answers": 8,
+          "unique_answer_ids": 8,
+          "unique_primary_anchors": 8,
+          "missing_bilingual_anchors": 0,
+          "proposal_rows_per_language": 8,
+          "visual_rows_per_language": 8,
+          "report_rows_per_language": 8,
+          "a3_page_counts": [14, 14],
+          "a0_page_counts": [8, 8]
+        },
+        "media_added": 0,
+        "facts_or_claims_added": 0,
+        "pdfs_rebuilt": 0,
+        "editorial_boundary": "Cold-read answers and timing targets are editorial review only, not measured public feedback, expert opinion, jury results, accessibility certification, professional acceptance or approval."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,

@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the Jingzhang Railway heritage corridor as the main axis, this proposal links the subdistrict offices, community health centers, and legal aid points along the corridor into a single AI civic-service network. The proposal puts forward the overall concept of an 'AI Civic Service Spine': a one-stop government, health, and legal civic service hub is built in the AI Origin Community; citizen service stations are deployed along the main axis of the heritage park; and the belt is formed of 13 service passage segments, 6 civic-service buildings, 3 service hub plazas, and 5 street-side stations, supported by 12 AI scenario cards, 5 categories of user personas, and 3 civic-service landmark destinations. AI is used only for service navigation and public information Q&A; it does not diagnose and does not approve, and all content is manually reviewed by medical, legal, and data-security professionals."
 tracks: ["ai-public-services"]
 scenarios: ["ai-health-service-navigation"]
-iteration: "v1.0"
+iteration: "v4.0"
 ---
 
 # Jingzhang AI Civic Services Belt: A One-Stop Government, Health and Legal Services Network
@@ -96,6 +96,30 @@ The chronic problem with AI in government services is "it answers very well, but
 **Rule-closure validation.** `run_guarantee_tabletop.js` correctly classifies all 72 synthetic cases of 12 scenarios × 6 rule branches (complete / missing human fallback / missing time limit / missing receipt / missing escalation chain / time overrun) — 48 blocked / 12 guaranteed / 12 escalated — demonstrating that the guarantee-chain rule logic is closed. However, this only proves correct classification and does not constitute on-site service evidence; on-site performance remains null with status `not_authorized_not_run` [data:visual/assets/guarantee-tabletop-evidence.json#blocked].
 
 **Relationship to "someone is responsible when things cannot be done."** The core of the Three Guarantees, One Verification is not to make AI smarter, but to give "cannot be done" a clear responsible person, a clear time limit, auditable records, and an independent verifier. This is what distinguishes it from mature platforms such as City Brain, Suishenban, and Jingtong — those platforms provide navigation functions, while this proposal provides the **responsibility infrastructure** of navigation: behind every navigation there is a traceable guarantee receipt, and behind every receipt there is a named human responsibility position [source:shanghai-suishenban].
+
+### Completion Checklist: Internalizing the WHO Surgical Safety Checklist Methodology (Original to This Proposal, v4)
+
+The Three Guarantees, One Verification answers "who is responsible, how fast the response, how the trail is kept, and who verifies," but it does not yet answer "what is confirmed at each step." This proposal transplants the methodology of the WHO Surgical Safety Checklist: **three-phase checks of before/during/after, with item-by-item oral confirmation required before proceeding** [E:CIVIC-COMPLETION-CHECKLIST].
+
+**The lens: Completed.** Service success is judged by whether "the matter is done (办成)," not by whether "the AI answered well." The checklist breaks "getting it done" into actions that can be confirmed item by item — the before-check (materials/permissions/fallback person), the during-check (steps), and the after-check (completion/receipt); any item not confirmed means the next phase is not entered [data:visual/assets/completion-checklist.json#lens].
+
+**Three-phase checklist rules:**
+- **Before-check**: the matter name, the material list, handling permissions, and the human fallback window — if materials are incomplete, the applicant is told on the spot to make corrections, and handling does not begin.
+- **During-check**: handling steps, completeness of materials, and whether supplements are needed — the AI only confirms the steps and does not perform substantive review.
+- **After-check**: the acceptance receipt, notification of the handling time limit, and the complaint channel — confirming "completed" or "accepted"; if not completed, the escalation chain is triggered.
+
+**No-AI baseline (negative space).** Without any AI, citizens can still get matters done through human windows, hotlines, and community networks. AI is a layer that can be switched off; with AI switched off, the checklist **degrades into a purely human three-phase check** — completion does not depend on AI [data:visual/assets/completion-checklist.json#negative-baseline].
+
+**The checklists for the 12 categories of services** (full version at `visual/assets/completion-checklist.json`):
+
+| Service type | Before-check | During-check | After-check |
+| --- | --- | --- | --- |
+| Government handling | Matter/materials/permissions/window fallback | Steps/material completeness | Acceptance receipt/time limit/12345 |
+| Health services | Department/procedure/service-desk fallback | Referral pathway (AI does not diagnose) | Follow-up/return-visit reminders/health hotline |
+| Legal aid | Aid category/materials/legal-aid-point fallback | Eligibility preliminary-review boundary | Acceptance confirmation/time limit/legal-aid hotline |
+| Emergency rescue | Emergency points/duty dispatch | Emergency boundary (direct transfer to hotline) | Dispatch response/emergency command center |
+
+**Relationship to the Three Guarantees, One Verification.** The receipt is the record of the check result, and verification is the spot-check of the checks — the Three Guarantees, One Verification answers the "responsibility chain," while the checklist answers "what is confirmed at each step." Together the two guarantee: for every matter a citizen handles, every step has someone confirming it, a record of it, and verifiability [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
 ### Spatial Structure
 

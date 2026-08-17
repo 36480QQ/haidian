@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Re-imagining the Jingzhang Railway Heritage Park as a 'silver-age service spine' for the elderly communities along the corridor: an AI-assisted public-service belt covering elderly medical visits, civic errands and barrier-free mobility. The proposal sets out the 'Jingzhang Silver-Age Accessibility Belt' concept, linking three key areas and沿线 communities, hospitals, civic-service points and metro entrances via a ~9 km continuous barrier-free slow-mobility spine, with 10 AI elderly-service scenario cards (incl. 3 test/validation scenarios), 5 elderly personas, 3 warmth landmarks, 8 elderly-use land types and 7 silver service nodes — an experienceable, replicable and iterable concept for elderly-friendly barrier-free smart services."
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v1.0"
+iteration: "v5.0"
 ---
 
 # Jingzhang Silver-Age Accessibility Belt: AI-Assisted Medical, Civic and Barrier-Free Mobility Services for the Elderly
@@ -242,6 +242,36 @@ The common failing of AI elderly services is "the machine processes the elderly 
 **Rule-closure verification.** `run_silver_relay.js` correctly classifies all 60 synthetic cases — 10 scenarios × 6 rule branches (complete / missing baton human / no consent / no signed receipt / missing follow-up visit / missing no-AI path) — as 50 blocked / 10 relayed, proving the relay rules are logically closed. But this only proves classification correctness; it does not constitute on-site elderly-service, compliance or authorisation evidence — on-site performance remains null with status `not_authorized_not_run` [data:visual/assets/relay-tabletop-evidence.json#blocked].
 
 **Relation to "the elderly as the active party".** The core of Silver Relay is not making AI understand the elderly better, but **requiring every AI service to hand the baton back to a named person**. The three rules — signed receipt, follow-up visit and no-AI equivalence — jointly guarantee: AI may help, but it will never "decide for the elderly" — the elderly always remain the active party of the service, and the machine always remains the assistant [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
+
+### Core Mechanism: Intergenerational Connection Points (original to this proposal, v5)
+
+Silver Relay answered "AI must hand the baton to a human", but an even more fundamental question remains. The proposal puts forward a counter-intuitive fact: **the more AI elderly services there are, the lonelier the elderly become** — technology replaces human contact; services become "more efficient", but connections become fewer. The core question for Silver Relay is not "how fast is it done", but **"whether the elderly person's connection with society is strengthened"** — using "connection" as the lens (just as human-hours uses time as its lens, this proposal uses connection as its lens) [E:SILVER-CONNECTION-POINTS].
+
+**Design principle: every AI service point is not a "service endpoint" but a "connection starting point".** AI handles the task, but the goal of spatial design is to make the elderly person stay and talk — after the task is done, the space guides the elderly person toward connection with volunteers, family members and peers [data:visual/assets/connection-points.json#design-principle].
+
+**5 Intergenerational Connection Points (placed along the corridor; full specifications in `visual/assets/connection-points.json`):**
+
+| Station | Location | Connection design | No-AI equivalence |
+| --- | --- | --- | --- |
+| CP-01 Origin Community Station | Silver service kiosk | Face-to-face connection benches (not row seating facing screens) + intergenerational message wall (handwritten notes, AI not involved) | Community activity room: tea / benches / duty volunteer |
+| CP-02 Zhongzhiyuan Station | Beside the silver health kiosk | Intergenerational pairing corner: young volunteers on rotation; the elderly may book chats / walks / learning sessions | Volunteer rotation corner |
+| CP-03 Mid-Park Station | Mid-corridor kiosk | Face-to-face benches + park activity notice board (paper) | Park rest point + notice board |
+| CP-04 Dazhongsi Station | Silver Service Port | Intergenerational culture corner: sharing platform for old crafts / old stories, the elderly and young people teach each other | Culture corner; mutual-teaching activities continue as usual |
+| CP-05 South End Station | South-end service node | Face-to-face benches + community photo wall | Community rest point + photo wall |
+
+**Connection receipt (the true success indicator of a service).** In addition to the relay receipt, every service concurrently generates a **connection receipt**: whether the service produced a connection, with whom, whether there was a follow-up visit, and whether the connection is maintained. The relay receipt proves "someone is responsible"; the connection receipt proves "someone is connected" — **a service done well while the elderly person remains lonely does not count as success**. The full set of 10 connection receipts is in `visual/assets/connection-receipt.json` [data:visual/assets/connection-receipt.json#receipts]:
+
+| Scenario | Connection design | Follow-up visit |
+| --- | --- | --- |
+| Silver medical navigation | Triage escort shifts into accompanied conversation | 24h: whether the person met someone new |
+| Silver digital aid | Intergenerational volunteer teaching is itself the connection (fixed pairing) | 72h: whether the pairing contact is maintained |
+| Silver meal-assistance service | Eating at the same table at the meal point (shared tables encouraged) | 72h: whether the person made another appointment with tablemates |
+
+**Negative-space baseline.** With no AI service at all, the connection functions of the traditional community network (volunteers / family / community activity rooms) remain intact — when AI is switched off, connections are not interrupted [data:visual/assets/connection-points.json#negative-baseline].
+
+**Rule-closure verification.** `run_connection_tabletop.js` correctly classifies all 60 synthetic cases — 10 receipts × 6 rule branches (complete / task done but not connected / connection not recorded / missing follow-up visit / connection broken / missing no-AI path) — as 30 blocked / 10 connected / 20 flagged, proving the connection rules are logically closed. But this only proves classification correctness; it does not constitute on-site elderly-service, connection-effectiveness or authorisation evidence — on-site performance remains null with status `not_authorized_not_run` [data:visual/assets/connection-tabletop-evidence.json#blocked].
+
+**Relation to Silver Relay.** Relay answers "to whom does AI hand the baton" (responsibility); the Connection Points answer "what remains after the handover" (connection) — relay guarantees the elderly person always has someone responsible; the Connection Points guarantee the elderly person is not merely "served" but "connected". Together they form the complete closed loop of "the elderly as the active party": **someone is responsible, and someone is connected** [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
 
 ### Conceptual Renewal Project List
 
