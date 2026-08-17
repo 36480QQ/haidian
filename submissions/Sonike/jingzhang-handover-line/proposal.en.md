@@ -501,6 +501,23 @@ Feasibility is most often reduced to "delivered in three phases". This section s
 
 **On the metrics row.** Of the 47 metrics here, **36 are already assigned** — site area, green ratio, public-space share, spine length, scenario-node count, land-use element count and so on — all recomputable in EPSG:4548 from the stated `formula` and `source_file`, so anyone with the same geometry arrives at the same number. The rest are statutory-control and industrial-performance metrics whose targets must be set by the competent authorities from official regulatory planning, design guidance and a real operating baseline; this proposal does not set them on their behalf, but does state a directly executable measurement protocol for each (definition, collecting role, sampling unit and scope, frequency or trigger, denominator, missing-value handling, quality checks, dispute review, privacy and retention, publication gate), with three boundaries written into the schema rather than the prose: targets are typed as `null`, missing values may not be interpolated or substituted by district averages, and a failed publication gate means no publication [data:visual/assets/governance/measurement-protocol.json]. **Publishing a measurement protocol is not publishing a target — the method is finished here, the decision is left to those entitled to make it.**
 
+### A one-page go/no-go dossier for the first prototype: seven fields, none omitted, unknowns written as null with their release condition
+
+**The Public Handover Table is chosen as the first prototype because it is the lowest-risk object in the whole proposal**: one table, two work surfaces, four cards; no power, no network, no fixed structure, and nothing left in the ground when it is removed. Below is its go/no-go dossier. **All seven fields appear.** What this package can establish is filled in; what it cannot is written as `null` with the condition for release — **a machine-passed check is never presented as permission to start**.
+
+| Field | Current value | Release condition (no-go → go) |
+| --- | --- | --- |
+| Site authorisation | `null` | Written consent from the site owner plus a temporary-occupation permit, limited to the footprint of one table |
+| A / R / C-I roles | **A: `R-PUBLIC-SPACE`**; R: transport, landscape, accessibility, lighting, maintenance; C-I: users along the line and `R-DISSENT` [data:visual/assets/governance/role-spec.json] | Named people actually assigned and published; `assignment_status` moves from `unassigned` |
+| Permits and insurance | `null` | Public liability cover in force and a permit that matches the actual form — a table with no power, no network and no collection |
+| One-off and recurring budget | `null` | Once an operator exists, one figure for installation and one for annual upkeep; no scheduling before both exist |
+| Maintenance and data-deletion duty | **Established**: the table produces paper cards only, filed into the public logbook; **it generates no electronic personal data, so no deletion window is required** — another reason it is the first prototype | — (already holds) |
+| Human fallback | **Established**: the table is itself the no-AI form; the smart layer takes no part in the hand-out or take-in judgement, and the tactile corridor map and human wayfinding stand alone | — (already holds) |
+| Rollback drill result | `null` \| **currently 0/12, not executed** | One observable drill under authorisation, with hand-out and take-in held by two separate roles, recording both result types, service interruption time and the reviewer; until then the smart layer stays OFF |
+
+**Three of the seven hold, four are `null`, so this prototype currently reads `no-go`.** That is not a cautious phrasing but how the dossier is meant to work: any `null` blocks a start, and every `null` names who can fill it and under what condition.
+
+
 ### Pilot Delivery Contract: responsibility, acceptance and handback on one line
 
 The following are metric definitions that may be calibrated only after authorisation—not current government service levels, procurement clauses, budget commitments or approved deadlines. Until a real operator, service window and baseline are confirmed, KPI and response-time targets remain `null`; the table retains only binary "missing means no opening" gates and rollback states. `A` is the one future authorised role accountable for the result; `R` delivers it; `C-I` includes rights-holders, specialists and users who must participate before the decision and remain informed. If site rights, accountable party, permits, recurring resources, maintenance or asset disposition at exit is missing, the package does not open or expand.
