@@ -1175,9 +1175,22 @@
       "what_en": "Narrow by one the rule deciding which metrics count this package, so several apparatus metrics are reclassified as site numbers the verifier does not re-derive. **No metric value moves**; what moves is what each says it is.",
       "why_zh": "**这条分类的错误方向永远是让本包看起来测的场地更多。** 这条变异就朝那个方向走一步，证明两个标签一旦互相矛盾，构建就停。",
       "why_en": "**The error in this classification always runs toward making the package look as though it measured more of the site.** The mutation takes one step that way and proves the build stops when the two labels contradict."
+    },
+    {
+      "id": "M97",
+      "gate": "metric_subject_qa.py",
+      "target": "recompute_metrics.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把「测的是什么」的推导退回到只看名字怎么拼——这正是修复前的规则。于是那条自己写着「现状步行网络上」的指标，又一次被登记为测的是本方案。",
+      "what_en": "Return the subject derivation to reading the spelling of a name alone — the rule as it stood before the fix. The metric whose own note begins 「现状步行网络上」 is once again filed as measuring this proposal.",
+      "why_zh": "**那个数是送审图纸标题句里的「前」——「由 232 增至 261」。** 一个分不清自己基准与结果的包，没有资格解释两者之差；这条变异证明的是：手工名单一旦与指标自己写的话不符，构建就停。",
+      "why_en": "**That number is the before term of the headline on a sheet the reviewer is sent — 「由 232 增至 261」.** A package whose metadata cannot tell its own baseline from its own result cannot be asked to defend the difference. The mutation proves the build stops when the hand-kept list drifts from what the metric says about itself."
     }
   ],
-  "caught": 96,
+  "caught": 97,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1211,6 +1224,7 @@
     "matrix_refs_qa.py",
     "measurement_protocol_qa.py",
     "metric_label_qa.py",
+    "metric_subject_qa.py",
     "naming_qa.py",
     "official_area_qa.py",
     "organiser_review_qa.py",
@@ -1287,6 +1301,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 68 道闸门，其中 65 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 68 gates, 65 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 69 道闸门，其中 66 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 69 gates, 66 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
