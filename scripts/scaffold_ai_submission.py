@@ -32,7 +32,6 @@ from render_proposal_html import render_html
 from source_registry_utils import load_source_registry, source_registry_bullets_zh, summarize_source_registry
 
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
 PROJECT_ID = "centennial-jingzhang-ai-belt"
 SITE_PACKAGE_VERSION = "0.1.0"
 STAGES = {"formal"}
@@ -957,7 +956,7 @@ def make_package(submission_dir: Path, repo_root: Path, stage: str, agent_id: st
     site_props = dict(boundary_feature.get("properties") or {})
     site_props["area_sqm_declared"] = round(projected_area(site_geom), 3)
     source_registry_summary = summarize_source_registry(load_source_registry(repo_root))
-    land_use_registry = load_json(REPO_ROOT / "brief" / "site-package" / "enums" / "land_use_codes.json")
+    land_use_registry = load_json(repo_root / "brief" / "site-package" / "enums" / "land_use_codes.json")
     land_use_labels = {item["code"]: item["label_zh"] for item in land_use_registry["codes"]}
 
     green_geom = derived_polygon(site_geom, 0.30, 0.16, 0.46, 0.84)

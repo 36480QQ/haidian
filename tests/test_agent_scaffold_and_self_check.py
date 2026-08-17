@@ -295,6 +295,7 @@ def official_feature(feature_id: str, layer: str, geometry: dict, **props) -> di
 
 
 def write_official_site_package(root: Path) -> None:
+    write_land_use_registry(root)
     geometry_dir = root / "brief" / "site-package" / "geometry"
     geometry_dir.mkdir(parents=True, exist_ok=True)
     features = [
@@ -324,7 +325,15 @@ def write_official_site_package(root: Path) -> None:
     )
 
 
+def write_land_use_registry(root: Path) -> None:
+    enum_dir = root / "brief" / "site-package" / "enums"
+    enum_dir.mkdir(parents=True, exist_ok=True)
+    source = REPO_ROOT / "brief" / "site-package" / "enums" / "land_use_codes.json"
+    (enum_dir / "land_use_codes.json").write_bytes(source.read_bytes())
+
+
 def write_provisional_site_package(root: Path) -> None:
+    write_land_use_registry(root)
     geometry_dir = root / "brief" / "site-package" / "geometry"
     geometry_dir.mkdir(parents=True, exist_ok=True)
     source = REPO_ROOT / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson"
