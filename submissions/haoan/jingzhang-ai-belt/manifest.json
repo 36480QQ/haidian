@@ -102,7 +102,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "38dfe2fea1c81a342b3cf6a4644a1b01d6e70e9f984a2ef9311e80915974ada3"
+      "sha256": "0e7ae51fdc36efc101e5289ce7500e24429d6208be32eda8f8fc3dff0083fc56"
     },
     {
       "path": "compliance_matrix.json",
@@ -160,7 +160,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "57f28d254d3e05bdbbfd0333c481daab14fb75c57df46313616f7b077d6a1240"
+      "sha256": "ceadd105bb9182d1caceff7258c378fbeca389f0588f66623b087f2bad7d4abe"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -289,7 +289,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "6e8f3e906ba27bc2080b7054dcbe8f4e38bc56a3e8cd3aaedba0dda7a0d733b1"
+      "sha256": "88e76ad26723feb85b3d91cbcdd000fd44478e54ea2c39f108ff1f5cf6319a3c"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -343,14 +343,14 @@
       "poster": "assets/media/cover.png",
       "caption": "assets/media/guided-tour-zh.vtt",
       "transcript": "assets/media/guided-tour-transcript.md",
-      "sha256": "37abb136ac6d7be5114f0dcbc253cfead338867fe345ef3cf86164041943e950"
+      "sha256": "e86b202d8618af8082d67f40ba87de50113ec01f934ebb1025356895066072c7"
     },
     {
       "path": "assets/media/guided-tour-zh.vtt",
       "role": "caption_track",
       "required": false,
       "language": "zh",
-      "sha256": "7e161f97ddb4b5e103248d1428372dce998e3e16de6f65f4ab3f1cffd6834a2d"
+      "sha256": "63fa18f0189fcae3f7c0a94c89e246aa9f672136672f8b8e2207fa6b3f9bae88"
     },
     {
       "path": "assets/media/guided-tour-transcript.md",
@@ -361,7 +361,7 @@
       "title_en": "Guided tour bilingual transcript",
       "description_zh": "分镜表 + 中英逐句文稿 + 时间轴 + 工具出处披露（say TTS / ffmpeg / PIL）。",
       "description_en": "Shot list, sentence-by-sentence bilingual script, timeline, and tool provenance (say TTS / ffmpeg / PIL).",
-      "sha256": "d38bfa3c651e01ea8f097a87f776100667c57ad13fad16f26780a4948f81cddb"
+      "sha256": "c52844cc19bb8b140740589505833c982795d2370b27b71c62ec0d7cc18cd357"
     },
     {
       "path": "assets/media/cover.png",
