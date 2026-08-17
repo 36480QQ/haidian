@@ -504,8 +504,8 @@
       "named_the_damage": true,
       "what_zh": "把正文里手写的最近距离从 412.5 m 改成 481.2 m，模拟图层改动后句子没跟着改。",
       "what_en": "Change one hand-written nearest-distance from 412.5 m to 481.2 m, simulating a layer that moved while the sentence did not.",
-      "why_zh": "`412.5 m` 在中文版生成块之外手写了六处。图层一改，六句话同时变错，而旁边生成的表是对的——闸门必须抓住这种不一致，否则它保护的正是它自己声称在防的缺陷。",
-      "why_en": "`412.5 m` is hand-written six times in the Chinese edition outside any generated block. If the layer moves, six sentences go wrong at once while the generated table beside them goes right — the gate has to catch that, or it protects exactly the defect it claims to prevent."
+      "why_zh": "图层一改而句子没跟着改，正是本包记过多次的形状。闸门必须抓住这种不一致，否则它保护的正是它自己声称在防的缺陷。",
+      "why_en": "A layer that moves while the sentence does not is a shape this package has logged many times. The gate has to catch it, or it protects exactly the defect it claims to prevent."
     },
     {
       "id": "M7",

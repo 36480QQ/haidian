@@ -1,9 +1,9 @@
 {
   "generated_by": "analysis/claim_audit_qa.py",
-  "measurements_zh": 85,
-  "measurements_en": 85,
-  "bare_numbers_zh": 178,
-  "bare_numbers_en": 172,
+  "measurements_zh": 80,
+  "measurements_en": 80,
+  "bare_numbers_zh": 150,
+  "bare_numbers_en": 143,
   "bare_numbers_only_in_zh": [
     "0701",
     "0804",
@@ -17,8 +17,7 @@
   ],
   "bare_numbers_only_in_en": [
     "2016",
-    "2023",
-    "404"
+    "2023"
   ],
   "bare_numbers_note_zh": "裸数字（三位以上或带小数、但后面没有单位）只报不拦。在正文里，一个裸数字同样可能是编号、用地代码或年份——按它拦，就要维护一份「名字」白名单，那正是本文件所说的「一个数一个数地关掉闸门」。带单位的数按构造就是测量值，拦的是那一组。",
   "bare_numbers_note_en": "Bare numbers — three digits or more, or a decimal, with no unit after them — are reported and not blocked. In prose a bare number is as often an identifier, a land-use code or a year as it is a measurement, and blocking on those would mean maintaining an allowlist of names: this file's own definition of switching a gate off one number at a time. A number carrying a unit is a measurement by construction, and that is the set held to parity.",
@@ -26,7 +25,7 @@
   "only_in_en": [],
   "check_designed_but_not_shipped": {
     "name": "no number hand-copied out of a generated block",
-    "candidates": 79,
+    "candidates": 75,
     "why_not_shipped_zh": "无法区分「生成的句子」与「手写的句子」，而这正是唯一使该发现有意义的区分。直接上线意味着 67 条无理由白名单——等于一次性把闸门关掉，却仍然打印通过。",
     "why_not_shipped_en": "It cannot tell a generated sentence from a hand-written one, which is the only distinction that makes the finding mean anything. Shipping it would have meant a 67-entry allowlist: the gate switched off wholesale while still printing a pass.",
     "what_would_make_it_work_zh": "像标记生成块那样，把生成的句子也标记出来。",

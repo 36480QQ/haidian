@@ -1308,7 +1308,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-257 entries. By finder:
+258 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
@@ -1317,7 +1317,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | This package's own gate | 18 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 29 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 11 | Seen elsewhere, absent here |
+| Reading a rival's package | 12 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1338,7 +1338,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Uncheckable | 19 |
 | Nothing fails it | 14 |
 | Recorded where found | 11 |
-| A reference did not resolve | 10 |
+| A reference did not resolve | 11 |
 | Outlived its line | 9 |
 | Not itself | 9 |
 | A source unnameable | 6 |
@@ -1399,6 +1399,10 @@ each one, some declare the robotics track where the robot is an ecological monit
 some write ground robots and low-altitude delivery corridors without declaring it at all — 25 by
 label, a little over 14 by substance, and thinnest either way. The two tracks that carry the most
 risk and most need institutional restraint are the least covered, which is where this belt starts.
+Thinness is not the same as absence: each of these two tracks already has proposals in it, and
+several are good. What is missing across both is the part this proposal supplies — a stated
+tolerance, a published closure error, and a named condition under which the service stops. A track
+can be crowded with intentions and still have nobody willing to write down when to switch it off.
 
 ### Closure error in the site's own data: two sources for one fact that disagree
 
@@ -1454,77 +1458,19 @@ Why not simply move the spine? Because the package must be internally consistent
 
 The real answer is a property of the design: **a leveling network is boundary-relative, not coordinate-absolute.** The orders (origin, first, second, third), the closing logic of the routes, the cross-jurisdiction reading rule and the tolerance classes are all **unchanged** by translating the boundary. Only where the marks land changes. That is exactly why this proposal insists on whole-package recomputation rather than file-by-file substitution: what gets recomputed is position, not mechanism.
 
-#### A first measurable gap: a gate that has never fired, and two diagnoses built on eight samples
+**What this measurement does not license.** OpenStreetMap is crowd-sourced, and its park polygon may
+cover only the built and surveyed stretch rather than the planned whole; the provisional boundary is
+itself marked as inferred from the textual bounds, with its error described in the repository's own
+`provisional_boundaries_basis.md`. **This proposal does not adjudicate which side is right.** It
+reports one recomputable fact — that the two routes return to the same object 412.5 m apart — and
+leaves the ruling to the official polygon. The raw OSM coordinates and every definition ship in
+`visual/assets/osm_reference.json` and are recomputed from those coordinates by the shipped
+`node visual/assets/check_osm.js`, in EPSG:4548 [source:OSM-REFERENCE-2026-08]. The whole of this
+section is drawn to scale in FIG.01 — the inferred boundary, the surveyed park, this proposal's own
+position and the 412.5 m between them, on one sheet. A difference stated in prose is an assertion;
+drawn at scale it is evidence. FIG.02 carries the same comparison as a closure diagram.
 
-The first two were "the field exists and nobody uses it" and "the contract is published and nothing enforces it". The third is the sharpest this proposal has measured, because it corrects three parties at once, this one included.
-
-`publication_recommendation` in `ai_review_submission.py` returns `featured-candidate` only when the score is at least 85 **and** `required_next_actions_zh` is empty. Issue #950 sampled eight submissions, found an organizer-owned recalculation item in all eight, and concluded that organizer data gaps indirectly kill `featured-candidate`. PR #957 was written from that diagnosis, routing actions prefixed with the Chinese word for organizer into `data_gaps_zh`.
-
-**This proposal agreed with that diagnosis and treated it as settled. Measured, it does not hold.**
-
-Over **all 1,069 pull requests** — not a sample, including every review body, comment body and label event:
-
-| Reading | Value |
-|---|---|
-| Times `review/formal-ready` has ever been attached | **0** |
-| Times `publish-qualified` (the weaker tier, score ≥ 65) has been emitted | **0** |
-| Action items matching #957's literal rule | 0 of 1,203 (**a necessary consequence of the old convention; withdrawn as evidence, see below**) |
-| Verdicts carrying the auto-appended summary item | **146 of 146** |
-| PRs that would flip to `featured-candidate`, under four rules | **0 / 0 / 0 / 0** |
-
-The first of the three is withdrawn; the other two are each sufficient on their own:
-
-**One: withdrawn — and the withdrawal is the part of this section worth reading.** This proposal first wrote that #957's matcher requires colon-terminated prefixes, that 0 of 1,203 historical actions match, and that it is therefore inert. Two hours later @Sonike, the author of Issue #950, pointed out that the inference does not hold: **those 1,203 items were all produced under the old prompt, which never asked for that prefix, so counting it there is guaranteed to return zero.** #957 changes the prompt too; under the new one Sonike measured four of five samples emitting it.
-
-**Same shape as the error this proposal had just identified in his work**: a measurement answering a question it cannot answer. His eight samples showed the item present in all eight, not that it was the cause; this proposal's 1,203 showed nobody wrote that prefix under the old prompt, not that the matcher will miss under the new. **The same mistake inside two hours.**
-
-**Two: a perfect matcher would not help.** The summary item — 'complete the N detailed required repairs listed in the seven-dimension score' — is appended *before* the organizer split and carries no organizer prefix, so it always lands on the participant side. All 146 verdicts carry it.
-
-**Three: the organizer item is never the only blocker.** After the most generous stripping, every remaining count is **3 or more** — the shipped file buckets it as "3+" and does not keep the minimum, so no number is given here that it cannot support, and the number of PRs left with only organizer items is 0 under every rule.
-
-Organizer dependencies are real: the word for official appears 122 times across the items, recompute 59, organizer 45. The measurement establishes one thing only: **removing them changes no outcome.**
-
-**The shape of this finding is the proposal's whole subject.** #950 and #957 are careful work; the diagnosis held in all eight it was drawn from. **The difference is not care. It is n.** One reading cannot show a systematic bias and a full corpus can — so this proposal argues not for caution but for grounding judgements in readings someone else can re-run, all in `visual/assets/review_gate_survey.json`.,.
-
-**There is a sequel, and it moves the conclusion from 'unlikely' to 'never close'.** After accepting the correction, @Sonike went back and located the summary item's exact trigger: `repair_count > 0` appends it unconditionally, and 56% of dimensions scoring 5/5 still carry `required_repairs_zh` in his twenty samples — putting the odds of all seven being clean at roughly 0.3%.
-
-This proposal replaced that estimate with an observation, because **the summary item states the repair total**, so `repair_count` can be read directly from all 146 historical verdicts:
-
-| Reading | Value |
-|---|---|
-| Minimum `repair_count` ever observed | **17** |
-| Repair counts of the three verdicts scoring ≥85 | 17 / 20 / 21 |
-| Verdicts with all seven dimensions at 5/5 | **0** |
-| Most dimensions at 5/5 in any single verdict | **4 of 7** |
-| Correlation between weighted score and repair count | r = −0.240 |
-
-The gate needs `required_next_actions_zh` empty, which needs `repair_count == 0`. **The closest the corpus has ever come is 17.** The verdict scoring 89 carried 17 repairs and one scoring 57 carried 17 as well — **this gate does not measure quality tier, it measures whether the reviewer has anything to say, and a reviewer always does.**
-
-**This proposal does not argue for loosening it, for his reason and more so**: this package's previous version scored 91 and is one of the three ≥85 verdicts in that data. It has no neutral position here, so it publishes the mechanism and the numbers and proposes nothing — no change, no request to adjust any submission's tier. Whether to loosen depends on what the organizers want `featured-candidate` to mean, which is a curatorial judgement and not a technical defect.
-
-Filed on Issue #950 and PR #957.
-
-**Postscript: #957 merged on 2026-08-10, so this section can now be restated against merged code rather than against a proposal.** The organizer split is live: an action carrying either of the two organizer-owned prefixes moves into `data_gaps_zh` and no longer counts toward `required_next_actions_zh`. **The summary item is untouched** — the sentence `ai_review_submission.py` appends unconditionally whenever `repair_count > 0` carries no prefix, so it still lands in participant actions and still makes the list non-empty.
-
-The conclusion therefore survives the merge, on stronger evidence than before: **it no longer rests on inferring how a proposed change would behave, but on reading the code that landed.** The minimum `repair_count` ever observed is still 17.
-
-#### A second measurable gap: a field that decides the warning count and joins to nothing
-
-<!-- SPATIAL:BEGIN -->
-
-This one starts from the string of warnings this package's own PR carries and others do not. **Every submission's deterministic validation is printed on its PR, which makes the warning count one of the few numbers in this call that anyone can compare across packages.** 14 of this package's warnings come from a single field: one per `public_level: "provisional"` in `spatial.json`.
-
-By this proposal's own rule, measure before writing a sentence about it. Of **371 submissions**, **20** ship a `spatial.json`, holding **231 concept objects** split **public 56 / cleared 2 / provisional 173**. **13 packages** declare every item provisional; **6** declare at least one public. This package's 14 are all provisional, ranking **3 of 20** by warning count.
-
-`validate_submission.py` does two things with the field: checks membership in `{public, cleared, provisional}`, and warns once per provisional item. **It joins the value to nothing** — not `sources.json`, not the geometry, not the boundary the object rests on — and `docs/spatial.md` defines it in one line. The value is self-declared, unchecked, and exactly one of its three settings produces a warning.
-
-**What the measurement supports is much narrower than it first looks.** With a one-line definition and `geometry.mode` fixed at `concept`, the same node can honestly carry different levels in two packages that describe it identically. **The only conclusion available is that warning counts are not comparable across packages.** What is *not* available is that any package chose wrongly — this proposal did not measure that, so it does not say it, and names no package.
-
-**This proposal is not neutral here, and says so as it did in the previous section:** all 14 of its items are provisional, so any check that moved items out of `public` would relatively advantage it. So this reports the distribution, proposes no change, and does not ask for its own items to be reclassified into the setting that emits no warning. **The boundaries genuinely are provisional, and `provisional` is the only honest word for them**; rewriting that to shed 14 warnings is the thing this proposal spends its length arguing against.
-
-Counts, per-package profiles and the classification rule ship in `visual/assets/spatial_level_survey.json`. `fetch` reaches the network; `report` is fully offline, so anyone can change the rule and re-run.
-
-<!-- SPATIAL:END -->
+![FIG.01 Site overview and cross-check](assets/figures/site-overview.png)
 
 <!-- TASKBOOKDIMS:BEGIN -->
 
@@ -1533,6 +1479,17 @@ The review script scores **7 dimensions, 0-5 each** - brief relevance, originali
 <!-- TASKBOOKDIMS:END -->
 
 ## Risk, Copyright, and Compliance
+
+**Four measurements about this open call itself ship with the package and are not recited in the
+proposal.** `visual/assets/review_gate_survey.json`, `visual/assets/review_repeatability.json`,
+`visual/assets/spatial_level_survey.json` and `visual/assets/manifest_schema_survey.json` measure,
+respectively, which review gates have ever fired, how far two readings of one input fall apart, how
+comparable the `spatial.json` warning count is across packages, and how many manifests satisfy the
+published schema. All four are real readings, all four re-run, and the fixes two of them argued for
+are merged upstream. **They measure this contest, not Haidian** — so the data stays in the package
+and the narration stays out of a document about a place. The line itself is part of the argument:
+**say what an instrument measured, and if it did not measure this ground, keep it out of this
+ground's proposal.**
 
 This section corresponds to [depth:risk_missing_data].
 
@@ -1687,7 +1644,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1075 KB, 1,762 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1078 KB, 1,763 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
