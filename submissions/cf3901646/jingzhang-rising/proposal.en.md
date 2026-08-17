@@ -95,11 +95,11 @@ The three levels are bound by two-way verification: if a strategy at one level c
 | Overall design area | How industry, renewal, transport and character land on the map | One spine, three terraces, two wings, two stitching systems; 31 parcels | [data:geometry/land_use.geojson#LU-001] [data:geometry/roads.geojson#ROAD-001] |
 | Key areas | How the three districts reach detailed-design depth | Three distinct sets of moves for Origin Terrace, Origin Works and Bell Hub | [data:geometry/key_areas.geojson#PROV-KEY-003] |
 
-## The Coordination Loop: Three Positionings, Five Functions, Three Districts and Two Wings
+### The Coordination Loop: Three Positionings, Five Functions, Three Districts and Two Wings
 
 The announcement and the agent taskbook fix three frameworks: the three positionings, the five functions, and the three districts with two wings [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. This proposal does not reinvent them and does not rename them. It answers the harder question: how the three close into a loop rather than sitting as three separate lists [depth:overall_spatial_structure].
 
-### 1. The three positionings are a timeline, not three parallel belts
+#### 1. The three positionings are a timeline, not three parallel belts
 
 | Positioning (official) | Question answered | Time | What this proposal does |
 | --- | --- | --- | --- |
@@ -109,7 +109,7 @@ The announcement and the agent taskbook fix three frameworks: the three position
 
 These are yesterday, today and tomorrow on one line, not three parallel belts. A proposal that only tells history becomes a memorial park; one that only builds industry becomes a business park; one that only sells experience becomes a shopping street. All three share the same 9,574.15 m heritage spine [metric:heritage_spine_length_m], so the positionings layer on one route instead of competing for land.
 
-### 2. How the five functions divide the work
+#### 2. How the five functions divide the work
 
 | Function (official) | Core role | Spatial anchor | Verifiable delivery |
 | --- | --- | --- | --- |
@@ -121,7 +121,7 @@ These are yesterday, today and tomorrow on one line, not three parallel belts. A
 
 The fifth function carries the heaviest investment here, deliberately. Catching up on chips and models takes time, but the vacancy in governance rules exists right now. No city anywhere has answered who is accountable once AI enters public service. The answer offered here is not a declaration but a copyable checklist: six public-answer-sheet items and five hard requirements for the human channel. That is the most citable path, and the truest sense of the word "voice" [depth:risk_missing_data].
 
-### 3. The loop: making factors actually circulate
+#### 3. The loop: making factors actually circulate
 
 Three districts and two wings, if merely placed side by side, are only a zoning diagram. Here they are organised as one directed, closed loop:
 
@@ -139,7 +139,7 @@ The value of this loop is that it can be checked. Every break has an observable 
 
 Why the two wings are wings and not districts. Neither wing holds independent spatial primacy. Their job is to feed the three districts in both directions: one supplies factors and capital, the other supplies scenarios and validation. A wing is judged not by its own output but by how many additional closed loops it lets the three districts complete.
 
-### 4. Regional innovation coordination
+#### 4. Regional innovation coordination
 
 The belt is not an island, and its place in Beijing and the wider region must be stated [depth:three_level_scope_framework]:
 
@@ -323,15 +323,15 @@ This proposal therefore draws an explicit distinction:
 
 This distinction is drawn because the persuasive power of urban design rests on factual accuracy. A proposal that draws an engineering relic sixty kilometres away into its own structural diagram will not survive professional scrutiny, however handsome the drawing [standard:MOHURD-URBAN-DESIGN-MEASURES]. This proposal would rather forgo a layer of formal resonance than sacrifice factual rigour [assumption:A-CONTROLS-001].
 
-## Regional Collaboration: Turning "Jing-Zhang" From a Historical Noun Back Into a Functional Relationship
+### Regional Collaboration: Turning "Jing-Zhang" From a Historical Noun Back Into a Functional Relationship
 
-### 1. Why regional collaboration must be answered
+#### 1. Why regional collaboration must be answered
 
 "Jing-Zhang" is a two-ended place name. Most proposals use only the "Jing" end and consume "Zhang" as historical rhetoric. This proposal treats that as the single largest waste in the brief: Zhangjiakou is not the backdrop of the Jing-Zhang story; it is the other half of today's AI infrastructure.
 
 An innovation belt that closes its loop inside Haidian is a park. Only when it carries a division of labour between the two ends of the corridor does it deserve the word "belt." Coordinated Development of the Beijing-Tianjin-Hebei Region was elevated to a national strategy in February 2014, and in April 2015 the Political Bureau meeting reviewed and approved the Outline Plan, setting out its strategic goals and priority tasks. Regional collaboration here is therefore not an appended chapter; it is the condition for honouring the name "Jing-Zhang."
 
-### 2. Algorithms in Haidian, computing power and green electricity in Zhangjiakou
+#### 2. Algorithms in Haidian, computing power and green electricity in Zhangjiakou
 
 This is the hard core of the regional argument, and it rests on two verifiable public-policy facts.
 
@@ -352,7 +352,7 @@ This division also answers a constraint Haidian cannot avoid: reduction-led deve
 
 A necessary boundary statement: the Zhangjiakou end is outside the scope of this urban design. This proposal makes no land-use, indicator or construction arrangement for Zhangjiakou and makes no commitment on any party's behalf. What the Haidian end can do is reserve the spatial and institutional interfaces required to take up this division of labour — the three interfaces below.
 
-### 3. Three interfaces reserved at the Haidian end
+#### 3. Three interfaces reserved at the Haidian end
 
 Interface one: compute scheduling (Zhihui Bell). A compute-scheduling and green-power accounting counter offers firms in the belt one-stop brokerage for "local inference plus remote training," and publishes the renewable share of every scheduled job. Developers should not have to negotiate for machine rooms themselves; cross-regional collaboration becomes a public service you can order over a counter.
 
@@ -360,7 +360,7 @@ Interface two: mutual recognition of standards (Zhiyuan Terrace). The model eval
 
 Interface three: two-way talent (Origin Works). A "corridor desk" scheme lets open-source teams registered at Origin Works apply for short residencies and compute quotas at collaborating nodes, and vice versa. Talent movement is the most honest indicator of collaboration: what counts is whether people come, not whether documents are signed.
 
-### 4. Relationship to Beijing's "three cities and one zone" and neighbouring districts
+#### 4. Relationship to Beijing's "three cities and one zone" and neighbouring districts
 
 Beijing has built an innovation layout known as the "three cities and one zone," centred on Zhongguancun Science City, Huairou Science City, Future Science City (in Changping) and the Beijing Economic-Technological Development Area (Yizhuang). This design area lies within Zhongguancun Science City, so the belt must fill a gap rather than start a parallel venture:
 
@@ -371,7 +371,7 @@ Beijing has built an innovation layout known as the "three cities and one zone,"
 
 The Beijing-Zhangjiakou high-speed railway opened on 30 December 2019, connecting the Beijing, Yanqing and Zhangjiakou competition zones of the Beijing 2022 Winter Olympics. That line turned "one hour between the two ends of the corridor" from an aspiration into an accomplished fact, and gives the division of labour above a realistic commuting and operations basis. (Note: the official host city of the Beijing 2022 Winter Olympics was Beijing, with Zhangjiakou as one competition zone; this proposal does not use the phrase "co-hosted.")
 
-## International Communication: Reproducibility as the Common Language
+### International Communication: Reproducibility as the Common Language
 
 International communication here does not rely on promotional-film image projection. It rests on one thing an outsider can independently verify: every spatial conclusion in this proposal can be recomputed by a third party from the layers shipped in this package.
 
@@ -383,7 +383,7 @@ Second, open-source reproducibility. Metrics are recomputed from layers, methods
 
 Third, human fallback and the public answer sheet as an exportable institutional sample. Cities everywhere face the same question: once AI enters public service, who is answerable when it fails. The answer offered here is a reproducible minimum requirement rather than a statement of principle. This is the part of the belt most likely to be cited internationally, and it is the most persuasive form a Chinese contribution can take — not announcing that we have solved it, but publishing how we do it and what happens when it fails.
 
-## Long-Term Operations: Making Sure Someone Still Runs This Belt in Ten Years
+### Long-Term Operations: Making Sure Someone Still Runs This Belt in Ten Years
 
 The commonest failure in urban design is not that a thing cannot be built, but that no one is answerable for keeping it running once built. Three mechanisms are proposed.
 
