@@ -102,7 +102,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5ac08eb9db37721fc8b46a85f32c77ef9fc62408ba3cc81d0ddeb55e627a65b0"
+      "sha256": "38dfe2fea1c81a342b3cf6a4644a1b01d6e70e9f984a2ef9311e80915974ada3"
     },
     {
       "path": "compliance_matrix.json",
@@ -160,14 +160,14 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "0c390abf4ca6b62a049dda7800b9f8b270eab2e6183e7131972febb31716793d"
+      "sha256": "57f28d254d3e05bdbbfd0333c481daab14fb75c57df46313616f7b077d6a1240"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "daf90f86e64bc7c7d5e5e1ef8d7d65c3c88ae2bb7f663a45d71d665a14eec5f4"
+      "sha256": "3b47cd8b1c9fb934e0a007b817c2ecd9d70445a928515ccf3d845f6ea7dda1b9"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -195,7 +195,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "7a3769520e8ac0556a509d4966a638928e4754b15c687b0bf935d13fe465f20b"
+      "sha256": "8847efe5d8148a3be815757e846f758630391cb44651fe6f5f8f4be0f3403252"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -289,7 +289,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "11214421bdb29dae9a84864bd634c6a2758d348f528b4c08613cf615ed43ec1a"
+      "sha256": "6e8f3e906ba27bc2080b7054dcbe8f4e38bc56a3e8cd3aaedba0dda7a0d733b1"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -297,7 +297,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "bdbfd068f69364b5c09f52dee5adf278833a921b2097210e4976c2cb6d3ea795"
+      "sha256": "b73793d1a5c7bd981f9b69d3fb2fb69e42586a49f3820bda69b4e3d23489b871"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -329,7 +329,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "2f51608ca8e3354680f02a4dfac3257512f339d9bc47a2a295b25bf02daa09cd"
+      "sha256": "14730cb7d06414d990cbe89d035d7a1b1d70338877c7dc53b6e8f3d9715f76b8"
     },
     {
       "path": "assets/media/guided-tour.mp4",
