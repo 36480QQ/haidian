@@ -382,6 +382,10 @@ main > section {
   }
 }
 
+details.signal-static-fallback:not([open]) > :not(summary) {
+  display: none;
+}
+
 @media print {
   .primary-nav {
     position: static;
@@ -394,6 +398,7 @@ main > section {
 
   details.entry-evidence:not([open]) > :not(summary),
   details.backstage-library:not([open]) > :not(summary),
+  details.signal-static-fallback:not([open]) > :not(summary),
   .ordinary-life > details:not([open]) > :not(summary),
   .front-stage-areas > details:not([open]) > :not(summary) {
     display: block !important;
