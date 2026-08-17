@@ -9,7 +9,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v3.0.2"
+iteration: "v3.0"
 ---
 
 # X京张 X JINGZHANG
@@ -18,7 +18,7 @@ iteration: "v3.0.2"
 
 ## 三分钟读懂：一件产品如何被城市允许，又被城市退回
 
-一台低速具身服务原型以0.8版进入众智园。09:17，它在“行人意外穿越”工况中越界，现场人员5秒内急停，Test Receipt记为FAIL；机器撤出，公众院落继续开放。0.9版完成复测后取得新的Test Receipt，在AI原点公开对应版本、许可、责任人与撤回办法，才取得有期限的Release Ticket。它随后进入大钟寺限定试用；72岁的周阿姨不需要手机即可指出设备和排队影响无障碍主链，Public Verdict立即退回正在试用的0.9版，并生成新的路径占用测试工况。试用关闭、人工服务继续；整改后的0.10版只有重新通过众智园测试，才能再次申请发布。[data:visual/assets/x-lifecycle-valid-example.json] [data:visual/assets/lived-lifecycle.json]
+一台低速具身服务原型以0.8版进入众智园。09:17，它在“行人意外穿越”工况中越界，现场人员5秒内急停，Test Receipt记为FAIL；机器撤出，公众院落继续开放。0.9版完成复测后取得新的Test Receipt，在AI原点公开对应版本、许可、责任人与撤回办法，才取得有期限的Release Ticket。它随后进入大钟寺限定试用；72岁的周阿姨不需要手机即可指出设备和排队影响无障碍主链，Public Verdict立即变为RETURN。试用关闭、人工服务继续，0.10版带着新工况返回众智园。[data:visual/assets/x-lifecycle-valid-example.json] [data:visual/assets/lived-lifecycle.json]
 
 这就是X：不是一个Logo，也不是一串后台审批，而是产品每进入下一段城市空间时都要接受一次公开交叉核对。技术PASS不能替代权利判断，Release Ticket不能替代公众决定，新版本PASS也不能覆盖0.8版的失败历史。[data:visual/assets/verify-x-lifecycle.js] [metric:x_lifecycle_test_case_count]
 
@@ -217,7 +217,7 @@ SC-03不再停留在“具身智能”标签，而采用可执行的 X Receipt �
 
 ![X运行闭环、SC-03合成演练与真实试点阻断项](assets/figures/x-lifecycle.png)
 
-### 一件AI产品如何穿过三站：从0.8失败到0.10复测
+### 一件AI产品如何穿过三站：从0.8失败到0.10返回
 
 为了让X不只停留在品牌层，本方案用同一台低速具身服务原型贯穿三站。以下过程是基于固定规则编排的合成运行叙事，不表示真实产品、企业、场地或审批已经存在。产品在任何时刻只有一个有效版本；每次跨站必须携带上一站票据的哈希，版本、场景或权利状态变化都会使下游票据失效。这样，城市面对的不是一个模糊的“机器人项目”，而是一条可以被暂停、追问和倒退的决定链。[data:visual/assets/lived-lifecycle.json] [metric:product_lifecycle_event_count]
 
@@ -231,7 +231,7 @@ SC-03不再停留在“具身智能”标签，而采用可执行的 X Receipt �
 | L06 公众试用 | 大钟寺·0.9-limited-use | 有人服务、三层告知和无AI通道同时到位 | 公共服务负责人签OPEN | 机器仅进入可撤试用口袋，公众主链不变 | 开场检查、值守表、告知理解抽查 |
 | L07 公众异议 | 大钟寺·0.9-limited-use | 轮椅优先路径附近出现设备或排队干扰 | 服务人员记录COMPLAINT | 机器立即HOLD，优先清空无障碍交叉口 | 匿名投诉票、处置时钟、受影响群体 |
 | L08 城市退回 | 大钟寺·0.9-limited-use | 路线问题不能在当场通过位置调整消除 | 用户与无障碍复核人签RETURN | 试用口袋关闭，纸质与人工服务继续 | Public Verdict、空间复原检查、修订要求 |
-| L09 新版复测 | 众智园·0.10-retest | 0.9被退回后形成0.10版，并连同新的路径占用工况进入受控测试 | 状态改为PENDING | 未经复测不得回到AI原点或大钟寺 | 新测试任务书与前次三张票据链 |
+| L09 返回起点 | 众智园·0.10-return | 新版本连同新的路径占用工况返回受控测试 | 状态改为PENDING | 未经复测不得回到AI原点或大钟寺 | 新测试任务书与前次三张票据链 |
 
 这条链最重要的不是“最终通过”，而是允许产品在L01、L04和L08三次失败，并让失败产生不同后果。技术失败返回测试，权利失败阻断发布，公众使用失败同时改变控制逻辑与空间布置。任何人都不能用后续版本的成绩覆盖旧版本失败，也不能拿众智园的技术PASS替代AI原点的权利判断或大钟寺的公众判断。三站之间因此不是展览巡游，而是三种不同公共权力的接力。
 
