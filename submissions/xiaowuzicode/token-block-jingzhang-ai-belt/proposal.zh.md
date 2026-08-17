@@ -5,7 +5,7 @@ author_github: "xiaowuzicode"
 language: "zh"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.8"
+iteration: "v1.9"
 summary: "单线铁路上，司机必须持有区间令牌才能进入，令牌未归还前发不出第二枚。本方案把这条百年行车安全规则用于城市AI治理：把京张遗址公园全线做成一条持续运营、公众可预约的AI测试轨道——一枚令牌，一个区间，归还之后才发下一枚——三站两岔、一线到底，并附可被专业团队逐项复算的证据链。全部空间建议均为概念建议，不替代法定规划。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
@@ -238,6 +238,8 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 **从九十天叙事到一百天工作包。** 上文的试点描述现在由机读交付框架 `visual/assets/implementation.json` 承载，让"先做什么"可以像令牌协议一样被审计。它登记了 [metric:work_package_count] 个首期一百天工作包——两个线级包（令牌台账与首个预约窗口、主线慢行贯通性排查），三个重点区各约三个：从到发场站前广场临时开放、零公里碑与发布厅临时馆，到编组场草甸整理。每个工作包声明其前置条件、依赖关系，以及最重要的**证据产出**——该包"算完成"所必须存在的那份记录，其中多项直接为六项 C 类绩效指标供数。造价记为相对投入量级（light / medium / heavy），绝对造价待权属、现状建筑与市政条件确认后测算。
 
 **退出门 G0–G4——把停止条件形式化。** 上文的散文式停止条件被登记为 [metric:exit_gate_count] 道可执行的门：G0 规定治理主体未组建就不启动任何包；G1 规定官方边界与假设抵触时暂停并复算；G2 规定安全复核不通过时布设回退到上一可用状态；G3 规定治理违规即收回令牌、暂停预约；G4 是百日期末移交评估——证据产出不达标即转入整改或有序退出：可逆设施拆除、场地归还公共使用。采购按 [metric:procurement_theme_count] 类主题划定范围但不写金额；[metric:monitoring_window_count] 个监测窗（3 / 12 / 36 个月）逐项写明六项绩效指标各自从何时开始积累真实数据——每个 `unknown` 变成 known 的路线图。
+
+**先测量，后主张。** 六项绩效指标各配一份已登记的测量方案（共 [metric:measurement_plan_count] 份）：观测来源（逐项挂接工作包证据产出）、普查或抽样规则、报告统计口径、接入 G2–G4 各门的恶化规则，以及记录必须携带的公开账本字段。基线值一律首年实测；方案规定方法，触发参数由线路运营方在首年基线发布后正式确定。
 
 **运营与年度体系。** 建议本带运行一个以线本身为场地的年度全球AI活动周；一张滚动的场景开放日历，公示哪些区段当前可预约；一个锚定在零公里发布厅的开发者社区；以及一条把团队从开源贡献者→轨道预约用户→入驻主体的转化通道。品牌资产沉淀在**带**里而不是任何单场活动里：线、站名、里程碑、到达板。以上全部是**供专业与运营团队深化的运营建议**，不是已确定的政府项目、资金承诺、投资安排或已批准活动排期。
 
