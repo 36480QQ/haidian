@@ -63,8 +63,11 @@
         "submissions/zachshi-ai/jingzhang-ai-civic-services/sources.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/spatial.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/standard_matrix.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/accountability-stands.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/accountability-tabletop-evidence.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/claim-provenance.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/completion-checklist.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/completion-display.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/conversion-pathways.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/governance-raci.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/guarantee-receipt.schema.json",
@@ -73,6 +76,7 @@
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/independent-verification-protocol.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/logo-specimen.svg",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/public-interest-audit.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/run_accountability_tabletop.js",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/run_guarantee_tabletop.js",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/scenario-cards.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/service-guarantee-contracts.json",
@@ -83,7 +87,7 @@
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-ai-civic-services": "formal"
       },
-      "total_bytes": 2796961,
+      "total_bytes": 2824437,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -162,14 +166,14 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 26,
+        "known_metric_refs_required": 29,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 12,
           "standard": 2,
           "depth": 4,
-          "data": 25,
+          "data": 27,
           "metric": 11
         }
       }
