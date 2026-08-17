@@ -12,8 +12,7 @@
 | --- | --- | --- | --- |
 | 图纸拉丁文字 | Helvetica 家族与 ZapfDingbats | PDF 内置基础字体，按名引用，不嵌入不再分发 | `pdffonts drawings/a3-booklet.pdf` → `Type 1 / WinAnsi / emb=no` |
 | 图纸中文文字 | Noto Serif SC Light，子集嵌入四套 PDF | SIL Open Font License 1.1（读自字体 name 表 nameID 13/14），OFL 明确允许嵌入子集并随文档再分发 | 同上 → `CID TrueType / UniGB-UCS2-H / emb=yes`，字体名为 `<子集前缀>+NotoSerifSC` |
-| 五张送审图件文字（10 张 PNG） | OFL-1.1 的 Noto Sans CJK SC（Medium／Light）与 Noto Sans | OFL 明文允许使用与再分发；字体文件在仓库外工具链目录，仅渲染阶段读取字形 | `find assets -name '*.tt[cf]' -o -name '*.otf'` → 无结果 |
-| 其余七张图件文字（14 张 PNG）与 2 张 JPEG | macOS 系统字体 STHeiti Medium.ttc 与 Helvetica.ttc | 仅本机渲染，产物为字形像素；包内无字体文件。**该条款与「分发像素产物」的对应属本包理解，不是确定性证明** | 同上命令 → 无结果 |
+| 全部栅格产物文字（24 张 PNG 与 2 张 JPEG） | OFL-1.1 的 Noto Sans CJK SC（Medium／Light）与 Noto Sans | OFL 明文允许使用与再分发；字体文件在仓库外工具链目录，仅渲染阶段读取字形 | `find assets -name '*.tt[cf]' -o -name '*.otf'` → 无结果 |
 | 工具链 | Python 3.12.13(PSF)、reportlab 4.4.3(BSD)、Pillow 12.3.0(MIT-CMU)、shapely 2.1.2(BSD-3)、pyproj 3.7.2(MIT)、fontTools 4.60.1(MIT)、qpdf 12.3.2(Apache-2.0)、PyMuPDF 1.27.2.3(AGPL-3.0 或 Artifex 商业)、Ghostscript 10.07.0(AGPL-3.0) | 版本与许可逐个读取依赖自身分发元数据或 `--version` 自述 | `importlib.metadata.version()` / `metadata()['License-Expression']`、`gs --version` |
 
 **v1.11 关闭了此前登记在案的中文字体阅读依赖。** v1.10 及更早版本的 CJK 字形 `emb=no`，需要阅读器自带中文字体包；本版把四套 PDF 的中文字体程序替换为子集嵌入的 Noto Serif SC（OFL-1.1，允许嵌入与再分发），只改字体程序、不动内容流，断行与字位逐项不变，内嵌图件经提取比对逐像素相同，PDF 内的字体名对象同步改为 `NotoSerifSC` 以免自述与实际不符。拉丁文字仍不嵌入：基础十四款字体由 PDF 规范要求阅读器自备，不构成显示风险，若为凑 `emb=yes` 而嵌入仿制实现并继续挂 Helvetica 之名反而是更差的溯源。
@@ -48,4 +47,4 @@ The three statutory and policy instruments cited in v1.6 (the Interim Measures f
 
 The six global cases are paraphrased from institutional pages or official city material; no protected image, map, trademark, branded layout or long passage is reproduced. The provisional site and key-area geometry explicitly remain non-official. This package is marked `COMMUNITY-DISPLAY-ONLY` for open-call review, public display and knowledge capture; it must not be represented as statutory approval or a professional implementation decision.
 
-**2026-08-17 起栅格字体权利链分两级。** 五张送审图件（`site-overview`／`land-use-structure`／`key-areas`／`mobility-bluegreen`／`metrics-evidence`，中英共 10 张 PNG）已由 macOS 系统字体迁移为 OFL-1.1 的 Noto Sans CJK SC 与 Noto Sans，权利依据不再依赖对任何条款的解释；中文取 Medium 档以补回 Noto CJK 相对 STHeiti 偏细的字面差。其余七张图件（14 张 PNG）与 2 张 JPEG **其生成器已不在现行工具链内，本轮无法迁移**，权利依据仍停在 Apple SLA 第 2 节 E 条的解释一级；迁移条件是重建其生成器。`COMMUNITY-DISPLAY-ONLY` 的完整条款（版本 1.0）逐条写在 `proposal.md` 的风险与合规一节，含适用资产范围、授权、限制、保证与终止条款。
+**2026-08-17 栅格字体权利链已完全闭合。** 包内全部 24 张 PNG 与 2 张 JPEG 的文字均由 OFL-1.1 的 Noto Sans CJK SC 与 Noto Sans 栅格化，OFL 明文允许使用与再分发，因此不再依赖对任何条款的解释。迁移分两步完成：先迁五张送审图件，再重建其余七张图件与断面图的生成器后一并迁移；中文取 Medium 档，以补回 Noto CJK 相对 STHeiti 偏细的字面差。`sources.json` 中的 FONT-STHEITI-RASTER 与 FONT-HELVETICA-RASTER 已降级为历史登记，仅说明 v1.15 之前版本的栅格产物由何种字体生成，不再作为当前任何产物的权利依据。`COMMUNITY-DISPLAY-ONLY` 的完整条款（版本 1.0）逐条写在 `proposal.md` 的风险与合规一节。
