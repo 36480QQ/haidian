@@ -105,9 +105,9 @@
    "path": "changelog.md",
    "what_zh": "含本包自己查出并改正的错误",
    "what_en": "Including the errors found and corrected here",
-   "bytes": 58961,
+   "bytes": 59431,
    "unit": "lines",
-   "count": 547
+   "count": 551
   },
   {
    "path": "agent.json",
@@ -122,8 +122,8 @@
   "commands": 5,
   "seconds_to_run_every_verifier": 0.75,
   "files_to_read": 9,
-  "bytes_to_read": 1125915,
-  "units_to_read": 1773
+  "bytes_to_read": 1126385,
+  "units_to_read": 1777
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",
