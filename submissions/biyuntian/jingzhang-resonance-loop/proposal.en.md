@@ -60,11 +60,49 @@ The overall structure is a “resonance loop”: a heritage-and-public-space spi
 
 The priority is consistent from north to south: **continuous movement first, legible explanation second, bounded service third, technology display last**. A service appears only when adjacent walking, accessibility, lighting, staffed access and maintenance are verifiable. If construction, weather, crowding, rights or safety interrupt any segment, it returns to the previous segment or becomes offline/staffed. In this way railway culture, Zhongguancun’s collaborative culture and new AI culture do not merely coexist on one masterplan; each takes its turn along the same everyday route.
 
+### Six Interface Delivery Cards: Turning a Public Interface into Verifiable Place Actions
+
+To keep the six-part chain from remaining a narrative only, this edition arranges it as **six delivery cards, R01–R06**. Each card is tied only to the submitted provisional study extent, key-area index, road/public-space layers and items awaiting site verification. An “anchor” identifies the type of existing interface to be checked; it is **not a coordinate, works boundary or permit**. Every segment begins with an everyday question and ends with a retained benefit that does not depend on an algorithm continuing to run.
+
+| Interface | Everyday question to answer first | First reversible action | Public benefit that remains | Stop / rollback trigger |
+| --- | --- | --- | --- | --- |
+| R01 Railway-memory threshold | Can a walker read the railway trace without being hurried? | Walk the route and mark gaps in shade, seating, wayfinding and emergency help | Printed route map and maintenance notes | Where heritage, movement or safety is unclear, retain observation and staffed interpretation only |
+| R02 Campus–park transition | Can class-change and commuter movement pass continuously and accessibly? | Check walking gaps, rain refuge and staffed-help locations | Physical map, movable seating and issue cards | Do not add installations or events before crossing, fire and accessibility conditions are verified |
+| R03 Trusted-test return court | When a display is off, is the court still a place to stay? | Non-production observation with temporary shade, printed explanation and staffed answers | Usable court and takeover explanation | If the principal route is blocked, information misleads or no person can take over, remove the display and return to staffed interpretation |
+| R04 Open-source knowledge front desk | Can a visitor without login understand a result, see attribution and get help? | Reversible result cards, rights notes and staffed consultation time | Physical guide, attribution/withdrawal route and shared table | Where rights or maintenance responsibility are unclear, remove content and return to offline explanation |
+| R05 Cross-line safety stitch | Have safety, orientation and transfer gaps at road/rail conditions been identified without promising works? | Peak, night and rain observation; temporary static guidance only | Issue map, accessible detour note and staffed transfer help | For road, rail or municipal works, stop site action and hand it to professional review |
+| R06 Station-city everyday gate | Are public direction, seating and staffed help first at peaks and at night? | Check station wayfinding, shade, night legibility and merchant interface | Static guidance, accessible stopping point and staffed desk | On crowding, complaint or night-safety risk, return to ordinary static service |
+
+R01–R06 form one spatial grammar: **question → reversible action → retained benefit → stop condition**; the count is reproducible as [metric:public_interface_count]. The machine-readable anchors, first actions, suggested coordination roles and rollback routes are in `visual/assets/interface-delivery-matrix.json`; provisional spatial evidence remains [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]. No card is a physical delivery instruction before official boundary, transport, municipal, fire, heritage and tenure information is available.
+
+### Twelve Reversible Micro-Projects: Each Has a First Move and an Exit Gate
+
+The three anchor packages are further split into twelve small, reversible actions rather than judged through one-off construction scale. M01–M12 enter only the delivery gates G0–G5 they can meet. If accessibility, human takeover, rights or maintenance cannot be verified, the action remains desk research, becomes staffed, or is withdrawn. Listed roles are **suggested coordination interfaces**, not appointed implementers.
+
+| Micro-project | Interface | First action | Suggested coordination interface | Minimum public evidence | Rollback |
+| --- | --- | --- | --- | --- | --- |
+| M01 | R01 | Printed railway timeline guide | Cultural interpretation / site maintenance | Cleared text and route observation | Remove display; retain ordinary guidance |
+| M02 | R01 | Heritage stopping and maintenance note | Park maintenance | Accessibility and maintenance check | Remove temporary item; restore routine maintenance |
+| M03 | R02 | Campus-walking issue map | District operations / accessibility | Walk-through and rain observation | Retain desk-based issue list only |
+| M04 | R02 | Movable seating and physical wayfinding test | Site maintenance / safety | Clear-width and removal record | Remove elements; restore open space |
+| M05 | R03 | Trusted-test explanation desk | Technical operations / staffed answers | Test scope, anomaly and takeover record | Turn off digital explanation; use staffed explanation |
+| M06 | R03 | Reversible shade-and-seating court | Public-space maintenance | Court observation after display is off | Remove elements and revise layout |
+| M07 | R04 | Open-source result cards and attribution rack | Open-source community / translation | Authorisation, attribution and withdrawal summary | Remove content; retain blank information rack |
+| M08 | R04 | Rights consultation and shared worktable | IP / staffed service | Service period and no-login route | Use appointment-based staffed consultation; collect no extra data |
+| M09 | R05 | Peak/night continuity observation | Transport / accessibility / safety | Time-window observation summary | Do not enter site; submit issue map only |
+| M10 | R05 | Temporary static transfer guidance | Site management / transport | Professional check and complaint summary | Remove immediately; restore existing guidance |
+| M11 | R06 | Station-city everyday help desk | District operations / merchants | Staffed-service, feedback and maintenance record | Revert to ordinary staffed enquiry point |
+| M12 | R06 | Night static guidance and stopping point | Accessibility / lighting / safety | Night observation and safety review | Pause night activity; restore routine cues |
+
+The count is reproducible as [metric:reversible_micro_project_count]. This matrix defines “implementation feasibility” as an intelligible public process: observe, try, retain a non-digital benefit, review it through a clear role, and only then discuss professional delivery. It does not promise investment, construction, tenanting or approval outcomes [depth:renewal_project_list] [depth:phasing_implementation].
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 Five operating personas keep the spatial proposal grounded: a researcher, a start-up product lead, a neighbourhood resident, a public-service operator and a visitor. Each has a clear entry point, consent boundary, human contact and feedback route.
 
 Ten grouped scenarios are proposed as pilots, never as claims of deployed systems: accessible walking and station transfer; route confidence and night-time safety support; enterprise-service copilot; research-to-prototype matching; shared device booking; public-space event coordination; heritage interpretation; environmental observation; civic issue triage; and emergency-information review. Personal data minimisation, consent, reversible pilots, audit logs and trained human reviewers are prerequisites for every scenario [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+**AI+ law** enters the AI Origin open-source conversion front desk as a seventh first-use service card. It explains only the boundaries of display consent, attribution, withdrawal, intellectual property and public-service referral, while retaining a printed rights guide and qualified human advice. It does not generate case-specific legal advice, replace lawyers or public authorities, or collect personal information unrelated to the service. If the human referral, service boundary or correction route is unavailable, it stops and returns to offline advice [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:AGENT-TASKBOOK].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -121,6 +159,27 @@ The package records calculable areas, green/public-space ratios, building footpr
 ## Design Upgrade: Resonance Protocol and Three Operable Prototypes
 
 The **Resonance Protocol** organizes a public-responsibility chain from spatial prototype to long-term operation. It asks every AI service to be understandable, voluntary, capable of human takeover and open to public review before it moves from a one-off demonstration to routine use along the corridor [source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES]. It is not an administrative approval process.
+
+### Review Handoff Cards: Turning Vision into a Checkable Next Step
+
+To avoid a complete concept without a credible next step, every spatial action must leave a short handoff record before it can advance. The record is neither an approval nor a project promise. It lets the public, maintainers and later specialists decide whether to retain, revise, switch to people or exit.
+
+| Handoff card | Spatial fact checked first | Civic benefit that must remain | Responsibility interface | If it cannot pass |
+| --- | --- | --- | --- | --- |
+| Movement card | principal route, crossing, accessibility, shade and night legibility | physical route map, ground cues, rest point and staffed inquiry | park/street operations and accessibility specialists | add no digital service; correct the route or use staffed guidance first |
+| Rights card | consent for displayed material; usable attribution and withdrawal path | readable consent notice, withdrawal route and staffed advice hours | university transfer, open-source community and IP-service roles | remove or do not publish; a “pilot” never bypasses rights clarification |
+| Takeover card | whether a person can take over after misleading guidance, crowding or an incident | staffed desk, stop condition and revision digest | scenario operator and on-site safety role | reduce the scope, turn off automated prompts and retain static information |
+| Care card | whether facilities are still maintained in rain, at night and at peaks | care card, offline reporting route and review date | landscape, facility, merchant or venue maintainer | remove temporary elements or pause activity; restore routine care first |
+
+![Four review handoff cards: movement, rights, human takeover and everyday care turn three-anchor actions into verifiable civic benefits, responsibility interfaces and exit responses](assets/figures/handoff-cards.en.svg)
+
+These four cards give AI+ education, health, commerce, energy, walking and park care one shared baseline: **technology enters public space only when movement, rights, takeover and care are all explainable**. They are the minimum common language that takes the six open-call tasks from drawing to long-term operation [source:AGENT-TASKBOOK] [depth:phasing_implementation].
+
+### Three-Anchor Pilot Observation Ledger: Observe Whether Service Works, Never Score People
+
+Zhongzhiyuan, AI Origin and Dazhongsi each begin with one public question, not attendance, commercial conversion or individual behavioural data. Zhongzhiyuan observes whether a principal route remains clear, staffed explanation is available and the test court still works after an exhibit closes. AI Origin observes no-login access, consent/attribution, staffed advice and withdrawal response. Dazhongsi observes station guidance, accessible stopping, night-time staffed inquiry and crowding-triggered downgrade. Every record is an aggregate condition of space and service; identity, journey, device identifiers and identifiable feedback are excluded.
+
+The ledger has only four outcomes: **retain small, revise, switch to people, exit**. It hands later specialists a readable record of site conditions; it is not a live dashboard, approval record, construction promise or people-scoring system. The machine-readable version is `visual/assets/pilot-observation-ledger.json` [data:geometry/public_space.geojson#PUBLIC-001] [depth:phasing_implementation].
 
 ### Lasting Returns: Each Digital Trial Leaves an Offline Civic Improvement
 

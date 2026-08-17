@@ -1,5 +1,23 @@
 # 方案迭代记录
 
+## v1.7 - 2026-08-17
+
+- Turned the six-part public-interface chain into six bilingual R01–R06 delivery cards: each card now states an observable everyday question, a reversible first action, an offline retained benefit and an explicit stop / rollback condition.
+- Added a bilingual twelve-item micro-project matrix (M01–M12), with suggested coordination interfaces, minimum public evidence and return actions; this strengthens implementation evidence without asserting unverified construction, approvals or funding.
+- Added machine-readable `interface-delivery-matrix.json` and reproducible counts for the six interface cards and twelve reversible actions; refreshed bilingual offline reports and visual indexes after validation.
+
+## v1.6 - 2026-08-16
+
+- Added bilingual review-handoff diagrams and proposal sections for movement, rights, human takeover and everyday care, linking every pilot to a retained civic benefit, named responsibility interface and exit response.
+- Strengthened the high-weight review evidence for implementation feasibility and expression completeness without adding unverified engineering controls or implementation promises.
+
+## v1.5 - 2026-08-16
+
+- Rewrote the Chinese primary narrative from template-style requirements into concrete, reviewable spatial decisions, while retaining every provisional-boundary and professional-review limitation.
+- Added bilingual **Review Handoff Cards** for movement, rights, human takeover and everyday care; each identifies the spatial fact to test, retained civic benefit, accountable interface and withdrawal response.
+- Clarified the three-anchor roles, six task-to-evidence chain, place-based AI+ scenarios, movement-first mobility logic, blue-green care sequence and three-stage implementation path.
+- Re-rendered the bilingual offline proposal reports and refreshed the formal package manifest after validation.
+
 ## v1.4 - 2026-08-13
 
 - Added a bilingual climate–space–service care loop that ties sun, rain and evening conditions to shade, drainage, night guidance, human maintenance and bounded low-carbon compute explanation.

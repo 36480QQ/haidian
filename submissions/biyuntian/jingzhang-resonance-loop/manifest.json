@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e5c87f97cd588fee8c80b5a86573990ac7d85fb96d8fb80ec8c4be50fbb01679"
+      "sha256": "f20367cb8b0c5f65d71d08167f786f6554181fc60834c1353da974d06ea3ed9b"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "b09578e91f710547e44fd9d9e8a1d4ade394348e98a9b98644b16ccd9ec13303"
+      "sha256": "d9441fa29777fae096d1e0129523dd2e93d449a218bba2bb6a7eee35c8e13a3b"
     },
     {
       "path": "assumptions.json",
@@ -68,7 +68,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "d2e3c01ff5268c0831b2dc9291cf482692d0023f476a9056acd48b2efdcad7be"
+      "sha256": "206b44aec2d3fd2ad30a2afa0f3e24facb818d2439aa8df3e3fb890d706dcb21"
     },
     {
       "path": "spatial.json",
@@ -99,7 +99,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f8830662fedbf960b1b1e02dece6151184adef52f64c7d85d23680c9b1a5ae00"
+      "sha256": "0c77a806ead36be5673ec6ba9167844c941bc5b9208a0e8b63b55986002e0b90"
     },
     {
       "path": "report/narrative.md",
@@ -125,14 +125,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ea347ce2dcb4db510938c33be56a173c5b6adf65262e39ef3a221b9ebc7b807c"
+      "sha256": "646e5c30a237b05fc92ac006a086041625e534bee03d464e9d4527575447aa14"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "db0d6ff88598d2828899c957dcee180b5614232f9b8b99445071eb11f0bf761b"
+      "sha256": "769faf4a7604146b5645f7d7014e85a3f2c049076b788bfa7b83b897df2064e9"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5bfa03558cda696ea0f0af3c1136bd564afbbe5a311a3a422d2efb3898fb0e8c"
+      "sha256": "5424ada5443527b3ed56f064e7448aef15a1b2b9ff6efdf5c18492e569452383"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1f81052878ffcb39764d63ccb2a65165742414ee0b4e89f3102cf5bf25a59089"
+      "sha256": "a4ecd4b0805c08c353562cc73af0dfd5a85b44036aab971b06feb944f02e1561"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "5517478ce40a66fda3fa563cec2e4e9fdaa307bfc1c14a51c045a037aebbc4b0"
+      "sha256": "adf4138803ef99e3e6ddf169e7734e60f7393f9bf1c28f9d620b47d17d2480fe"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -317,6 +317,21 @@
       "language": "en",
       "translation_of": "assets/figures/resonance-return-system.svg",
       "sha256": "c0254b8269df22e4daadb04aaff8ec011dc801f6da766635aaca80d33faacc56"
+    },
+    {
+      "path": "assets/figures/handoff-cards.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "3c2fa0388e7af7c11ffff82b86d51938705d6a1501a1857bcf370969a1766554"
+    },
+    {
+      "path": "assets/figures/handoff-cards.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/handoff-cards.svg",
+      "sha256": "acc5a36ba42cdbae1650d66099fe256d6f03a023d3c5f1a57c7a7393f0cd3035"
     },
     {
       "path": "assets/figures/culture-operation-loop.svg",
@@ -452,6 +467,31 @@
       "language": "en",
       "translation_of": "assets/figures/climate-care-loop.svg",
       "sha256": "93a3f91cf6abdb9e7ba9a553ebeda3409960216ed25c755de22b414606a14f29"
+    },
+    {
+      "path": "assets/figures/aerial-haidian-corridor.png",
+      "role": "figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "668477799dd5a4f54468568bed522f8013456b6ee49d6f51f820f42f646f934f"
+    },
+    {
+      "path": "visual/assets/pilot-observation-ledger.json",
+      "role": "visual_data",
+      "required": false,
+      "sha256": "e193a50747b526750eeead3015c263cc050c6831a44e1b817007cabc0b2aab20"
+    },
+    {
+      "path": "visual/assets/scenario-persona-matrix.json",
+      "role": "visual_data",
+      "required": false,
+      "sha256": "12d807df2f0e530602be4592e839be234ce737f342b87dac9f133372251d85a9"
+    },
+    {
+      "path": "visual/assets/interface-delivery-matrix.json",
+      "role": "visual_data",
+      "required": false,
+      "sha256": "d5d3889d218fedb7b0364d0b3393751516967439f8bf2ecf132277fd99b3adc3"
     }
   ],
   "validation_claim": {
