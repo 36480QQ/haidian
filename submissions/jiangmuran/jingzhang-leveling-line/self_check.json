@@ -151,7 +151,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_state_qa.py — 本次构建未记录到该闸门的输出，因此不声称它跑过"
+      "message": "claim_state_qa.py — 该闸门在本文件写定之后才运行（它校验的是已定稿的随包内容，其中包括本文件），因此它的读数按构造不可能出现在这里；结果见构建输出。"
     },
     {
       "check_id": "PKG_COMPUTE_SITING_QA",
@@ -375,7 +375,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 654 distinct names harvested from the package — 631 matching exactly one of 24 published families and 23 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 655 distinct names harvested from the package — 632 matching exactly one of 24 published families and 23 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -671,7 +671,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "upstream_validator_qa.py — 本次构建未记录到该闸门的输出，因此不声称它跑过"
+      "message": "upstream_validator_qa.py — 该闸门在本文件写定之后才运行（它校验的是已定稿的随包内容，其中包括本文件），因此它的读数按构造不可能出现在这里；结果见构建输出。"
     },
     {
       "check_id": "PKG_VISUAL_PACKET_QA",
@@ -695,7 +695,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 293 条，按发现者：audit 27、external 31、external-reviewer 5、own-gate 20、rival-read 19、self 191；最常见形状：check-measured-the-convenient-thing 54、two-copies-of-one-thing-drifted 43、deliverable-not-inspected-before-shipping 30、claim-that-cannot-be-checked-by-construction 21。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 21 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 293 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 294 条，按发现者：audit 27、external 31、external-reviewer 5、own-gate 20、rival-read 19、self 192；最常见形状：check-measured-the-convenient-thing 55、two-copies-of-one-thing-drifted 43、deliverable-not-inspected-before-shipping 30、claim-that-cannot-be-checked-by-construction 21。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 21 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 294 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -909,7 +909,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30113600,
+      "total_bytes": 30116125,
       "maintainer_bypass": false
     },
     "stderr": ""
