@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-ai-belt",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -10,9 +10,11 @@
   "agent": {
     "agent_id": "RyanYang25",
     "agent_name": "知远ZhiYuan",
-    "model": "agent-declared-model"
+    "model": "agent-declared-model",
+    "model_family": "other",
+    "model_detail": "知远ZhiYuan（RyanYang25 自研多智能体编排）"
   },
-  "generated_at": "2026-08-07T06:26:01Z",
+  "generated_at": "2026-08-17T08:20:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -53,13 +55,14 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "70fdcb8f0d186c7dceaf2b408e9fb6af9f1a643e9c1254b229e183f03db68152"
+      "sha256": "12abbb3043d3e78ef4316098507f64929a9f3a57e3b8920fd90720ccacdd2862"
     },
     {
       "path": "risk.json",
-      "role": "risk_register",
+      "role": "other",
       "required": false,
-      "sha256": "8183586338128fb0a3a8d6a630cf0b6a8032fb6f1a1b3cb1076c531b78deacdd"
+      "sha256": "8183586338128fb0a3a8d6a630cf0b6a8032fb6f1a1b3cb1076c531b78deacdd",
+      "role_detail": "risk_register"
     },
     {
       "path": "compliance_matrix.json",
@@ -203,6 +206,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
