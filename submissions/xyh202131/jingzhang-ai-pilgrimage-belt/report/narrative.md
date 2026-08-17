@@ -4,6 +4,12 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 37 Browser QA matrix re-validation after the foreign-restore incident / 第 37 轮外部恢复事件后的浏览器 QA 矩阵复验
+
+第 37 轮在第 36 轮 PR #3043 合并（`1e967d1b0eb83ca8c90862d6fce7cd94b18c0406` 进入 `origin/main`）后开始，规则层无变化。第 35—36 轮修复了外部恢复提交 `b6c05fffe` 的台账后遗症并建立回归护栏；本轮用第 22 轮同款零依赖 CDP 驱动在 2026-08-17 对当前包字节重跑 18 例双语浏览器矩阵，全部通过（无横向溢出、无 JS 回退可见、reduced-motion 状态 01、运动边界状态 02、跳过链接为首焦点、0 缺 alt、aria-live、h1=1、控制台/请求/外域 0），确认交互层未受恢复事件影响；site-grounding 新增 `browser_matrix_r37` 合同记录该复验。无内容、图面、PDF 或数据变化。外部开放 PR #1471 状态未变，按第 30—36 轮同款操作者决定继续并监控。
+
+Round 37 began after Round 36 PR #3043 merged (`1e967d1b0eb83ca8c90862d6fce7cd94b18c0406` entered `origin/main`); the rule layer is unchanged. Rounds 35–36 repaired the ledger aftermath of the foreign restore commit `b6c05fffe` and built regression guards; this round re-runs the 18-case bilingual browser matrix on 2026-08-17 with the same zero-dependency CDP driver as Round 22 against the current package bytes — all pass (no horizontal overflow, no-JS fallback visible, reduced-motion state 01, motion-boundary state 02, skip link first focus, 0 missing alt, aria-live, h1=1, 0 console/request/external-host errors), confirming the interactive layer is unaffected by the restore incident; site-grounding gains the `browser_matrix_r37` contract recording the re-validation. No content, figure, PDF or data change. External open PR #1471 is unchanged; the operator decision to proceed while monitoring continues, as in Rounds 30–36.
+
 ## Round 36 Compliance evidence-namespace separation & presentation regression guard / 第 36 轮合规证据命名空间分离与展示回归护栏
 
 第 36 轮在第 35 轮 PR #2848 合并（`4348bfcb96b373937c6e62d86afb8dcfde8ae717` 进入 `origin/main`）后开始。规则层大更新（guide/SKILL 的证据命名空间规则、compliance_matrix.schema.json、land_use_codes.json 及一批脚本）。本轮重读并响应：6 行合规矩阵把 `STD-URBAN-DESIGN` 从 `source_ids` 移到 `standard_ids=["MOHURD-URBAN-DESIGN-MEASURES"]`（与 standard_matrix 一致、快照来源保留在 sources.json）；23 行 schema 必填字段齐全、9 个用地代码全部在新枚举内，新规则层下 self-check 与 strict 8/8 通过。同时把第 24—27 轮的展示契约（对比度值、h2 阅读入口、官方章节标题）纳入索引生成器强制不变量，任何静默回退都会使再生成失败。外部开放 PR #1471 状态未变，按第 30—35 轮同款操作者决定继续并监控。
