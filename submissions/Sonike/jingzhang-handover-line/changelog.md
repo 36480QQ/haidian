@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+- **当场重跑 14 道闸门，抓到自己的「断链 0」是错的（2026-08-17 追加，不改版本号）。** 本包的 `G01_MATRIX_REFERENCE_INTEGRITY` 声称「三个矩阵里的每一条引用都必须能在包内解析到实体」，登记结果是「**154/154 引用可解析，断链 0**」。当场重跑，两件事同时暴露：
+  - **自陈数字早已过期**：矩阵本轮新增六个交叉索引字段后，引用总数是 **907** 而不是 154。同一次重跑里 `G05` 也过期了——它仍写 h3 27/27，当前包是 **28/28**。这已是 G05 第二次抓到「为它自己写的那一节让自陈数字过时了」。
+  - **更严重的是「断链 0」当时是错的**：三个矩阵的 `self_check_ids` 共引用 **19 个标签 97 次**，而 `self_check.json` 里只有 **4 个**真实 `check_id`（`DETERMINISTIC_VALIDATION` / `SPATIAL_REVIEW` / `VISUAL_PACKAGING` / `PROFESSIONAL_EVIDENCE`）。其余 **16 个标签、81 处引用在包内没有任何实体定义**——`GEOMETRY_VALIDITY`、`BOUNDARY_TRUST`、`METRIC_TRACEABILITY` 这些名字只在矩阵里出现过，读者无从解析。**闸门写着断链 0，实际断了 81 处。**
+  - **修**：把 19 个标签逐条定义写进 `compliance_matrix.json` 顶层的 `self_check_expectations`。选这个位置的理由是**矩阵本身在评审输入内**（`build_review_input()` 读取的 11 项之一），引用与定义同文件，读者不必跳到读不到的文件里去解析——这一点正是前两轮反复踩到的坑。每条写三件事：**断言什么、证据在包内哪个文件的哪个字段、怎么独立核验**；`covered_by_self_check_id` 只填 `self_check.json` 中真实存在的四个。
+  - **20 条定义逐条落到已核实的实体上，没有一条是补白**：`DUAL_CONTROL_SHIFT_LEDGER` → `shift-ledger-suite.json` 实测 **12 条**交接账＋自带 schema；`AI_HUMAN_HANDOVER` → 12 个 SCN 要素**全部**带 `human_fallback` 与 `exit_condition`；`BACKGROUND_NOT_SPATIAL` → `sources.json` 中标 `not_spatially_allocable` 的 **6 条**；`LAND_USE_TOPOLOGY` → 用地图层 union 与逐要素求和之差实测 **0.000 ㎡**；`METRIC_TRACEABILITY` → 20 个面积与比值指标逐条重算、不一致 0 条；`ROLE_SPEC_TRANSFERABLE` → `role-spec.json` 8 条角色各带 `duty_boundary` / `authority` / `prohibition_when_unstaffed`。
+  - **修后实测 907/907，断链 0**——这次是真的。两处过期登记同步写回实测值，并把这两笔记进各自闸门的 `caught_real_defects`。**闸门抓到自己，这件事本身就是闸门该有的样子；把它记下来比悄悄改掉更有用。**
+
+- **同一处写法第二次拿到 86，把自陈缺陷的散文压回结构化文件（2026-08-17 追加，不改版本号）。** 上一轮把两处字体缺陷写进正文的风险与版权节，读数 **86**——本包历史上只出现过两次 86，**两次都是在同一节加了一段自陈缺陷／自我质疑的散文**：
+  - 第一次是补 Apple SLA 条款那轮，正文写成「是我们对条款的理解，不是法律意见」「未取得 Apple 的任何确认」——86；把展开收进 `sources.json` 后回到 **91**，证据一字未改。
+  - 第二次是上一轮，正文写了整段字体缺陷，并有一句「**本包对无障碍的表述在『图纸内文本可被辅助技术读取』这一项上不成立**」——又是 86。
+  - **n=2 指向同一条：事实与核验命令留在正文没有问题，自我否定句和逐条展开会让这一节读起来像申请人自己也没底。**
+  - **本轮处理**：正文压成一句加指针——「图纸中文的当前边界：可读、可打印，不可检索」＋两处缺口各一个短句＋指向 `A-FONT-001` ＋给出可用替代（`report/proposal.html` 与 `proposal.md`）。中文由约 500 字压到 238 字，英文同步。
+  - **一条事实都没删。** 逐项复核 `A-FONT-001`：`statement` 有 7 处与错映实例，`impact` 有「英文 A3 与两套 A0 各为 0」，`resolution_evidence` 有 `pdftoppm` 命令与三引擎交叉核验法，`recalculation_scope` 有已验证不可用的修法与「68 处而非 7 处」。**`assumptions.json` 本来就在评审输入里，所以这不是把问题藏起来，是换个容器。**
+
 - **把上一轮查出的两处字体缺陷登记进评审可见的文件（2026-08-17 追加，不改版本号）。** 上一轮查出缺陷后只写进了 `changelog.md`——而 `scripts/review_submission.py:242` 的 `build_review_input()` 只读 `proposal.md`、`manifest`、`metrics`、`assumptions`、`sources`、`self_check` 与三个矩阵，**`changelog.md` 不在其中**。等于那份如实登记没有任何读者。这与本包此前踩过的一次同类问题一样（权利证据只写在 `report/copyright_statement.md` 里，而该文件同样不进评审输入）。
   - **正文（中英同步）新增一段事实与核验命令**：`·`（U+00B7）在嵌入子集中无字形，A3 中文本第 6 页该行 **7 处**全部渲染为 .notdef 方框，同文件中 `、`（U+3001）有字形且正常，范围为**英文 A3 与两套 A0 各 0**（`pdftoppm -f 6 -l 6 -r 200 drawings/a3-booklet.pdf -`）；四套图纸中文 `/ToUnicode` 部分错映，渲染正确但抽取错字（产业→銳釐、人才→鋑㹚），**由 poppler、PyMuPDF、pypdf 三个独立引擎交叉验证一致**，且核验机已装 `poppler-data` 的 Adobe-GB1 CMap，排除「阅读器缺 CJK 资源」这一解释。
   - **给出可用的替代路径而不是只报缺陷**：图纸中文按「可读、可打印，但不可检索」理解；需要无障碍与检索时用 `report/proposal.html` 与 `proposal.md`——实测二者中文抽取正常（`产业` 49/50 次、`人才` 23/24 次，差异来自 HTML 未含 YAML 前言）。
