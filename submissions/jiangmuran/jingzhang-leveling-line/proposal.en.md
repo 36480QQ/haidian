@@ -616,7 +616,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (479); a non-AI equivalent path (363); an on-site safety officer (327); remote and physical e-stop (174); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 479. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (479); a non-AI equivalent path (364); an on-site safety officer (327); remote and physical e-stop (174); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 479. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1191,6 +1191,43 @@ Three rules run through the table. **Cost band, exit condition and resumption co
 
 **On the three columns restored to the table above.** *Cooperation mechanism* asks what agreement has to exist between parties before the project is more than an intention — for R4 that is a cross-jurisdiction joint observation agreement, which is this proposal's core mechanism and also its hardest precondition. *Land and title dependency* states, in one phrase, whether the project touches land whose ownership or management is unresolved: four of the eight need nothing beyond existing public space, and the two that need multiple parcels and road redlines are the two placed in the long phase for exactly that reason. *Approval path* names the consent that would actually be required, at the level of a filing or a permit, without asserting which authority issues it — this proposal has no standing to describe another body's procedure and says only what class of approval the work falls into. Together the three columns are what separates a project list from a wish list, which is the claim the paragraph above the table makes, and it should be able to survive the table being read.
 
+<!-- RESOURCEFRAME:BEGIN -->
+
+**This chapter gave a cost band per project — A, B or C — and said why: without engineering and
+tenure conditions, a three-significant-figure construction estimate is manufactured certainty.
+That reasoning holds for capital cost and this entry leaves it alone.**
+
+**It does not hold for running cost, and the running cost has always been computable here.**
+Sessions per year are converted from the cadence each point declares in `spatial.json`, hours come
+from a published per-order model, money from a stated rate band, and volunteer hours are counted
+and deliberately unpriced. **Until now this table appeared only on FIG.15, which is not one of the
+five figures the review pipeline sends** — so a reader of this chapter saw A/B/C and a pointer to a
+drawing they could not open, and reasonably concluded the proposal declines to talk about money.
+
+| Phase | Projects | Benchmarks added | Cumulative | Sessions/yr | Paid hours | Annual CNY |
+|---|---|---|---|---|---|---|
+| Near | R1, R2, R3, R4 | BM-0 | 1 | 1 | 16–25 | 2,484–7,922 |
+| Mid | R5, R6, R7 | BM-1, BM-2, BM-301, BM-302, BM-303 | 6 | 39 | 97–154 | 13,864–45,492 |
+| Far | R8 | BM-21, BM-22 | 8 | 47 | 139–220 | 19,444–63,922 |
+
+Three ways to read it:
+
+1. **A whole near phase runs at CNY 2,484–7,922 a year
+   across 1 sessions.** That is the real order of magnitude of getting
+   the first loop closed, and it needs no official data and no new construction.
+2. **The completed network runs at CNY 19,444–63,922 a
+   year across 47 sessions.** Whether a governance mechanism can actually
+   be sustained is decided by that annual figure; **a mechanism that cannot state it is sustained
+   by enthusiasm, and enthusiasm does not enter a budget.**
+3. **Volunteer hours are listed separately and not priced.** Pricing them would inflate the cost
+   with money nobody pays; leaving them out would pretend they are free. They are what this
+   mechanism asks of the community every year, and that has to be visible.
+
+Every phase reading ships in `visual/assets/resource_frame.json`, with the model imported from
+`build_operations` rather than restated, and `resource_frame_qa` recomputes it on every build.
+
+<!-- RESOURCEFRAME:END -->
+
 **Phasing is triggered, not dated.** Mid phase begins when all four near-term projects are complete and at least two cycles have closed within tolerance; long phase when the mid phase closes two consecutive cycles. No fixed years, because **date-driven phasing advances even when readings fail**, which is precisely what this mechanism exists to prevent.
 
 <!-- ROLESPEC:BEGIN -->
@@ -1563,11 +1600,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **157 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **158 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 134 |
+| `author-originated` | 135 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
