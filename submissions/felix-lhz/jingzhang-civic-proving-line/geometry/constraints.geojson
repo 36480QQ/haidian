@@ -1276,6 +1276,456 @@
           39.9564753
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-ENT-N",
+      "properties": {
+        "id": "V6-D-ENT-N",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "directional_entrance",
+        "name_zh": "directional_entrance",
+        "name_en": "directional entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349,
+          39.9578504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-ENT-E",
+      "properties": {
+        "id": "V6-D-ENT-E",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "directional_entrance",
+        "name_zh": "directional_entrance",
+        "name_en": "directional entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.350125,
+          39.957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-ENT-S",
+      "properties": {
+        "id": "V6-D-ENT-S",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "directional_entrance",
+        "name_zh": "directional_entrance",
+        "name_en": "directional entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349,
+          39.956222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-ENT-W",
+      "properties": {
+        "id": "V6-D-ENT-W",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "directional_entrance",
+        "name_zh": "directional_entrance",
+        "name_en": "directional entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347875,
+          39.957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-STAFF-BASE",
+      "properties": {
+        "id": "V6-D-STAFF-BASE",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "baseline_staff_position",
+        "name_zh": "baseline_staff_position",
+        "name_en": "baseline staff position"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3484375,
+          39.9572895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-STAFF-TRIAL",
+      "properties": {
+        "id": "V6-D-STAFF-TRIAL",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "trial_staff_position",
+        "name_zh": "trial_staff_position",
+        "name_en": "trial staff position"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349293,
+          39.9567286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-ESTOP-01",
+      "properties": {
+        "id": "V6-D-ESTOP-01",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "emergency_stop",
+        "name_zh": "emergency_stop",
+        "name_en": "emergency stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3493399,
+          39.9567467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-ESTOP-02",
+      "properties": {
+        "id": "V6-D-ESTOP-02",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "emergency_stop",
+        "name_zh": "emergency_stop",
+        "name_en": "emergency stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498789,
+          39.9567467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-UTILITY",
+      "properties": {
+        "id": "V6-D-UTILITY",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "isolated_utility_interface",
+        "name_zh": "isolated_utility_interface",
+        "name_en": "isolated utility interface"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498907,
+          39.9563848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-FIRE-GATE",
+      "properties": {
+        "id": "V6-D-FIRE-GATE",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "fire_access_gate",
+        "name_zh": "fire_access_gate",
+        "name_en": "fire access gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3479218,
+          39.9576875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-APPEAL",
+      "properties": {
+        "id": "V6-D-APPEAL",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "appeal_and_exit_notice",
+        "name_zh": "appeal_and_exit_notice",
+        "name_en": "appeal and exit notice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3481562,
+          39.9564391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-WATER",
+      "properties": {
+        "id": "V6-D-WATER",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "drinking_water",
+        "name_zh": "drinking_water",
+        "name_en": "drinking water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348625,
+          39.9572895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-LIGHT-01",
+      "properties": {
+        "id": "V6-D-LIGHT-01",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "lighting",
+        "name_zh": "lighting",
+        "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3481328,
+          39.9571628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-LIGHT-02",
+      "properties": {
+        "id": "V6-D-LIGHT-02",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "lighting",
+        "name_zh": "lighting",
+        "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3487187,
+          39.9571628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-LIGHT-03",
+      "properties": {
+        "id": "V6-D-LIGHT-03",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "lighting",
+        "name_zh": "lighting",
+        "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3492813,
+          39.9571628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-LIGHT-04",
+      "properties": {
+        "id": "V6-D-LIGHT-04",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "lighting",
+        "name_zh": "lighting",
+        "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498672,
+          39.9571628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-LIGHT-05",
+      "properties": {
+        "id": "V6-D-LIGHT-05",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "lighting",
+        "name_zh": "lighting",
+        "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3487891,
+          39.9563667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-LIGHT-06",
+      "properties": {
+        "id": "V6-D-LIGHT-06",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "point_role": "lighting",
+        "name_zh": "lighting",
+        "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3499844,
+          39.9563667
+        ]
+      }
     }
   ],
   "data_gap": {

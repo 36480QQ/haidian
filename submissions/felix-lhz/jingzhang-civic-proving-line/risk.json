@@ -1,7 +1,7 @@
 {
   "$schema": "https://example.org/risk-register.schema.json",
   "version": 1,
-  "summary": "V5 把普通路径、试验边界、人工岗位、急停和撤场线写入可追踪 WGS84 概念几何，并以 E0—E4 证据阶梯阻止概念设计被误读为现场成效。",
+  "summary": "V6 把 S7 的公共路线、路缘、常规接驳、AI 试验边界、雨水花园、人工岗位、双急停、消防和撤场写入同一组可追踪概念对象；空间深度 major 在盲审前保持开放，现场成效与采用决定保持 unknown。",
   "dimensions": [
     {
       "id": "spatial_dispute",
@@ -85,5 +85,6 @@
       "id": "E4"
     }
   ],
-  "zero_tolerance_rule": "baseline_no_regression + safety_event_zero_tolerance + committee_threshold_after_E2"
+  "zero_tolerance_rule": "baseline_no_regression + safety_event_zero_tolerance + committee_threshold_after_E2",
+  "v6_flagship_rule": "baseline_route_continuous_in_OPEN_TRIAL_PAUSE_RETIRE + zero_tolerance_safety + human_authority"
 }

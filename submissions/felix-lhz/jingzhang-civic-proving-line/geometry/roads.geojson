@@ -657,6 +657,366 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-BASE-NS",
+      "properties": {
+        "id": "V6-D-BASE-NS",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "baseline",
+        "design_width_m": 4,
+        "name_zh": "baseline",
+        "name_en": "baseline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.349,
+            39.956222
+          ],
+          [
+            116.349,
+            39.9568733
+          ],
+          [
+            116.3489531,
+            39.9569638
+          ],
+          [
+            116.349,
+            39.9571267
+          ],
+          [
+            116.349,
+            39.9578504
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-BASE-EW",
+      "properties": {
+        "id": "V6-D-BASE-EW",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "baseline",
+        "design_width_m": 4,
+        "name_zh": "baseline",
+        "name_en": "baseline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.347875,
+            39.957
+          ],
+          [
+            116.3488125,
+            39.957
+          ],
+          [
+            116.3489531,
+            39.9570362
+          ],
+          [
+            116.3491875,
+            39.957
+          ],
+          [
+            116.350125,
+            39.957
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-CROSS-N",
+      "properties": {
+        "id": "V6-D-CROSS-N",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "crossing",
+        "design_width_m": 4,
+        "name_zh": "crossing",
+        "name_en": "crossing"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3488594,
+            39.9571267
+          ],
+          [
+            116.3491406,
+            39.9571267
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-CROSS-S",
+      "properties": {
+        "id": "V6-D-CROSS-S",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "crossing",
+        "design_width_m": 4,
+        "name_zh": "crossing",
+        "name_en": "crossing"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3488594,
+            39.9568733
+          ],
+          [
+            116.3491406,
+            39.9568733
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-TRANSIT",
+      "properties": {
+        "id": "V6-D-TRANSIT",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "conventional_transit",
+        "design_width_m": 6,
+        "name_zh": "conventional_transit",
+        "name_en": "conventional transit"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.348039,
+            39.9575066
+          ],
+          [
+            116.3487891,
+            39.9575066
+          ],
+          [
+            116.3492109,
+            39.9575066
+          ],
+          [
+            116.349961,
+            39.9575066
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-EMERGENCY",
+      "properties": {
+        "id": "V6-D-EMERGENCY",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "emergency",
+        "design_width_m": 4,
+        "name_zh": "emergency",
+        "name_en": "emergency"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3492813,
+            39.9567286
+          ],
+          [
+            116.3498555,
+            39.9567286
+          ],
+          [
+            116.3500665,
+            39.9569276
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-REMOVAL",
+      "properties": {
+        "id": "V6-D-REMOVAL",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "removal",
+        "design_width_m": 4,
+        "name_zh": "removal",
+        "name_en": "removal"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3495625,
+            39.9563848
+          ],
+          [
+            116.350125,
+            39.9563848
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-FIRE",
+      "properties": {
+        "id": "V6-D-FIRE",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "fire_access",
+        "design_width_m": 4,
+        "name_zh": "fire_access",
+        "name_en": "fire access"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3479218,
+            39.9576875
+          ],
+          [
+            116.3485078,
+            39.9576875
+          ],
+          [
+            116.3487656,
+            39.9575066
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-CURB-N",
+      "properties": {
+        "id": "V6-D-CURB-N",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "curb_edge",
+        "design_width_m": 0.15,
+        "name_zh": "curb_edge",
+        "name_en": "curb edge"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.348039,
+            39.9574342
+          ],
+          [
+            116.349961,
+            39.9574342
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-CURB-S",
+      "properties": {
+        "id": "V6-D-CURB-S",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "route_role": "curb_edge",
+        "design_width_m": 0.15,
+        "name_zh": "curb_edge",
+        "name_en": "curb edge"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.348039,
+            39.957579
+          ],
+          [
+            116.349961,
+            39.957579
+          ]
+        ]
+      }
     }
   ]
 }

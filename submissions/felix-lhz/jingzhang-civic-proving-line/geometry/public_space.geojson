@@ -1338,6 +1338,456 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-FORECOURT",
+      "properties": {
+        "id": "V6-D-FORECOURT",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "conventional_forecourt",
+        "name_zh": "conventional_forecourt",
+        "name_en": "conventional forecourt"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.348039,
+              39.9571267
+            ],
+            [
+              116.349961,
+              39.9571267
+            ],
+            [
+              116.349961,
+              39.9576875
+            ],
+            [
+              116.348039,
+              39.9576875
+            ],
+            [
+              116.348039,
+              39.9571267
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-PLATFORM",
+      "properties": {
+        "id": "V6-D-PLATFORM",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "conventional_platform",
+        "name_zh": "conventional_platform",
+        "name_en": "conventional platform"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3481093,
+              39.9574161
+            ],
+            [
+              116.3498907,
+              39.9574161
+            ],
+            [
+              116.3498907,
+              39.9575971
+            ],
+            [
+              116.3481093,
+              39.9575971
+            ],
+            [
+              116.3481093,
+              39.9574161
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-TRIAL",
+      "properties": {
+        "id": "V6-D-TRIAL",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "ai_trial",
+        "name_zh": "ai_trial",
+        "name_en": "ai trial"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3493047,
+              39.9563667
+            ],
+            [
+              116.3499141,
+              39.9563667
+            ],
+            [
+              116.3499141,
+              39.9567829
+            ],
+            [
+              116.3493047,
+              39.9567829
+            ],
+            [
+              116.3493047,
+              39.9563667
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-BUFFER",
+      "properties": {
+        "id": "V6-D-BUFFER",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "safety_buffer",
+        "name_zh": "safety_buffer",
+        "name_en": "safety buffer"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3492344,
+              39.9563125
+            ],
+            [
+              116.3499844,
+              39.9563125
+            ],
+            [
+              116.3499844,
+              39.9568372
+            ],
+            [
+              116.3492344,
+              39.9568372
+            ],
+            [
+              116.3492344,
+              39.9563125
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-EVIDENCE",
+      "properties": {
+        "id": "V6-D-EVIDENCE",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "evidence_square",
+        "name_zh": "evidence_square",
+        "name_en": "evidence square"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3480859,
+              39.9563667
+            ],
+            [
+              116.3487422,
+              39.9563667
+            ],
+            [
+              116.3487422,
+              39.9568191
+            ],
+            [
+              116.3480859,
+              39.9568191
+            ],
+            [
+              116.3480859,
+              39.9563667
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-EGRESS",
+      "properties": {
+        "id": "V6-D-EGRESS",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "evacuation_apron",
+        "name_zh": "evacuation_apron",
+        "name_en": "evacuation apron"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3487891,
+              39.9568372
+            ],
+            [
+              116.3492109,
+              39.9568372
+            ],
+            [
+              116.3492109,
+              39.9571628
+            ],
+            [
+              116.3487891,
+              39.9571628
+            ],
+            [
+              116.3487891,
+              39.9568372
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-RAIN-W",
+      "properties": {
+        "id": "V6-D-RAIN-W",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "rain_garden",
+        "name_zh": "rain_garden",
+        "name_en": "rain garden"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3479687,
+              39.9571809
+            ],
+            [
+              116.3480625,
+              39.9571809
+            ],
+            [
+              116.3480625,
+              39.9576513
+            ],
+            [
+              116.3479687,
+              39.9576513
+            ],
+            [
+              116.3479687,
+              39.9571809
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-RAIN-E",
+      "properties": {
+        "id": "V6-D-RAIN-E",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "rain_garden",
+        "name_zh": "rain_garden",
+        "name_en": "rain garden"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3499375,
+              39.9571809
+            ],
+            [
+              116.3500313,
+              39.9571809
+            ],
+            [
+              116.3500313,
+              39.9576513
+            ],
+            [
+              116.3499375,
+              39.9576513
+            ],
+            [
+              116.3499375,
+              39.9571809
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-SHADE-NW",
+      "properties": {
+        "id": "V6-D-SHADE-NW",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "shade_rest",
+        "name_zh": "shade_rest",
+        "name_en": "shade rest"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3481562,
+              39.957199
+            ],
+            [
+              116.3486719,
+              39.957199
+            ],
+            [
+              116.3486719,
+              39.95738
+            ],
+            [
+              116.3481562,
+              39.95738
+            ],
+            [
+              116.3481562,
+              39.957199
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V6-D-RESTORE",
+      "properties": {
+        "id": "V6-D-RESTORE",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "space_role": "retired_public_use",
+        "name_zh": "retired_public_use",
+        "name_en": "retired public use"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3493047,
+              39.9563667
+            ],
+            [
+              116.3499141,
+              39.9563667
+            ],
+            [
+              116.3499141,
+              39.9567829
+            ],
+            [
+              116.3493047,
+              39.9567829
+            ],
+            [
+              116.3493047,
+              39.9563667
+            ]
+          ]
+        ]
+      }
     }
   ]
 }
