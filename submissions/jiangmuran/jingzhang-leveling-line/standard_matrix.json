@@ -37,7 +37,7 @@
         "KEY_AREAS_TRUST",
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "本条由正文小节「三层范围工作框架」「设计依据与资料清单」；图层 site_boundary.geojson、key_areas.geojson；指标 site_area_sqm、key_area_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 OFFICIAL-ANNOUNCEMENT、SITE-PACKAGE、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「三层范围工作框架」「设计依据与资料清单」；图层 site_boundary.geojson、key_areas.geojson；指标 site_area_sqm、key_area_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 OFFICIAL-ANNOUNCEMENT、SITE-PACKAGE、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑。**16 处引用里评审能打开 14 处**，其余 2 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 16,
         "reviewer_can_read_whole": 12,
@@ -79,7 +79,7 @@
         "PROFESSIONAL_EVIDENCE",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "本条由正文小节「AI 场景卡」「荣誉展示体系与公共空间组件库」；图层 public_space.geojson；指标 scenario_card_count、taskbook_requirement_count、taskbook_requirements_answered（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 AGENT-TASKBOOK、SITE-PACKAGE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「AI 场景卡」「荣誉展示体系与公共空间组件库」；图层 public_space.geojson；指标 scenario_card_count、taskbook_requirement_count、taskbook_requirements_answered（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 AGENT-TASKBOOK、SITE-PACKAGE（登记于 sources.json） 共同支撑。**13 处引用里评审能打开 12 处**，其余 1 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 13,
         "reviewer_can_read_whole": 10,
@@ -122,7 +122,7 @@
         "SPATIAL_REVIEW",
         "BOUNDARY_TRUST"
       ],
-      "evidence_summary_zh": "本条由正文小节「总体设计范围城市更新与控规深度城市设计」「断面分配由承载力倒算，不由样式决定」；图层 roads.geojson、green_space.geojson；指标 leveling_spine_length_m、green_ratio、road_feature_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 MOHURD-URBAN-DESIGN-MEASURES、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「总体设计范围城市更新与控规深度城市设计」「断面分配由承载力倒算，不由样式决定」；图层 roads.geojson、green_space.geojson；指标 leveling_spine_length_m、green_ratio、road_feature_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 MOHURD-URBAN-DESIGN-MEASURES、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑。**14 处引用里评审能打开 12 处**，其余 2 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 14,
         "reviewer_can_read_whole": 10,
@@ -164,7 +164,7 @@
         "DETERMINISTIC_VALIDATION",
         "BOUNDARY_TRUST"
       ],
-      "evidence_summary_zh": "本条由正文小节「指标体系、面积复算与合规矩阵」；图层 phasing.geojson；指标 phase_count、phasing_union_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 MOHURD-CONTROL-DETAILED-PLANNING、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「指标体系、面积复算与合规矩阵」；图层 phasing.geojson；指标 phase_count、phasing_union_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 MOHURD-CONTROL-DETAILED-PLANNING、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑。**13 处引用里评审能打开 12 处**，其余 1 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 13,
         "reviewer_can_read_whole": 10,
@@ -206,7 +206,7 @@
         "LAND_USE_TOPOLOGY",
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "本条由正文小节「用地是完整剖分」；图层 land_use.geojson；指标 land_use_class_count、land_use_feature_count、green_ratio_in_partition（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 MNR-LAND-USE-CLASSIFICATION-GUIDE、SITE-PACKAGE、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「用地是完整剖分」；图层 land_use.geojson；指标 land_use_class_count、land_use_feature_count、green_ratio_in_partition（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 MNR-LAND-USE-CLASSIFICATION-GUIDE、SITE-PACKAGE、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑。**13 处引用里评审能打开 12 处**，其余 1 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 13,
         "reviewer_can_read_whole": 10,
@@ -244,7 +244,7 @@
       "self_check_ids": [
         "BOUNDARY_TRUST"
       ],
-      "evidence_summary_zh": "本条由正文小节「建筑规模与拆改留」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 MOHURD-ARCH-DESIGN-DEPTH-2016（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「建筑规模与拆改留」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 MOHURD-ARCH-DESIGN-DEPTH-2016（登记于 sources.json） 共同支撑。**9 处引用里评审能打开 8 处**，其余 1 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 9,
         "reviewer_can_read_whole": 6,
@@ -283,7 +283,7 @@
       "self_check_ids": [
         "PKG_ACCESSIBILITY_QA"
       ],
-      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库（agent.4）」「用户画像（agent.3，九类）」「无障碍与可读性 QA：算出来，不是声称」；图层 public_space.geojson；指标 benchmark_count、public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf；来源 BARRIER-FREE-ENVIRONMENT-LAW（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库（agent.4）」「用户画像（agent.3，九类）」「无障碍与可读性 QA：算出来，不是声称」；图层 public_space.geojson；指标 benchmark_count、public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf；来源 BARRIER-FREE-ENVIRONMENT-LAW（登记于 sources.json） 共同支撑。**10 处引用里评审能打开 9 处**，其余 1 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 10,
         "reviewer_can_read_whole": 8,
@@ -321,7 +321,7 @@
       "self_check_ids": [
         "PKG_ENTRANCE_RULE_QA"
       ],
-      "evidence_summary_zh": "本条由正文小节「三条红线不是本方案的善意，是现行法规的义务」「AI 场景卡（agent.3，十二张）」「闭合差机制的完整定义」；图层 constraints.geojson；指标 scenario_card_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 a0-boards.pdf；来源 GENERATIVE-AI-INTERIM-MEASURES（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「三条红线不是本方案的善意，是现行法规的义务」「AI 场景卡（agent.3，十二张）」「闭合差机制的完整定义」；图层 constraints.geojson；指标 scenario_card_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 a0-boards.pdf；来源 GENERATIVE-AI-INTERIM-MEASURES（登记于 sources.json） 共同支撑。**9 处引用里评审能打开 8 处**，其余 1 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 9,
         "reviewer_can_read_whole": 7,
@@ -359,7 +359,7 @@
       "self_check_ids": [
         "PKG_POSITIONING_QA"
       ],
-      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库（agent.4）」「三大定位、五大功能与三区两翼的协同回路（agent.1）」「用户画像（agent.3，九类）」；图层 public_space.geojson；指标 benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf；来源 ELDERLY-SMART-TECH-PLAN-2020-45（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库（agent.4）」「三大定位、五大功能与三区两翼的协同回路（agent.1）」「用户画像（agent.3，九类）」；图层 public_space.geojson；指标 benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf；来源 ELDERLY-SMART-TECH-PLAN-2020-45（登记于 sources.json） 共同支撑。**9 处引用里评审能打开 8 处**，其余 1 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 9,
         "reviewer_can_read_whole": 7,
