@@ -7,9 +7,9 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗址走廊为创新主轴，串联智谷（众智园）、源社区（AI原点）和钟界（大钟寺）三核，构建集AI全栈研发、场景赋能、公共空间、文化叙事和长期运营于一体的世界级AI生态创新廊。核心概念'创新圈'——院校是创新源，走廊连接创新源，三核是创新集聚节点，三环（蓝绿慢行环+创新联络环+AI服务环）构成创新循环圈，AI场景是智能感知终端。空间结构'一廊三核两翼三环'，城市更新'留改拆新'四类分级，分期实施'筑基—成链—生态'三阶段叙事。"
-tracks: ["ai-traffic-walkability", "jingzhang-heritage", "ai-origin-community", "enterprise-service", "ai-public-service"]
-scenarios: ["ai-traffic-walkability", "ai-medical", "robot-delivery", "ai-guide", "enterprise-service", "public-safety"]
-iteration: "v7.0"
+tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
+scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
+iteration: "v7.2"
 ---
 
 # AI生态创新廊 · 智汇百年京张
@@ -520,7 +520,7 @@ AI不是附加功能而是城市基础设施。每个邻里中心嵌入AI+社区
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
-## AI生态创新、人才画像与AI+场景
+## AI 创新生态、人才画像与 AI+ 场景
 
 ### 用户画像（5类）
 
@@ -1194,6 +1194,8 @@ AI不是附加功能而是城市基础设施。每个邻里中心嵌入AI+社区
 7. 数据安全风险评估报告（数据处理活动上线前完成）
 
 ## 参考资料
+
+[source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]
 
 ### 公告与任务书
 

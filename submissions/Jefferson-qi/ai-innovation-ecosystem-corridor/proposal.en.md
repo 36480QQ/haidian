@@ -4,12 +4,12 @@ author_github: "Jefferson-qi"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-translation_file: "proposal.md"
+translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Jing-Zhang Railway heritage corridor as the innovation main axis, connecting three cores — Wisdom Valley (Zhongzhiyuan), Source Community (AI Origin), and Bell Boundary (Dazhongsi) — to build a world-class AI ecosystem innovation corridor integrating full-stack AI R&D, scenario empowerment, public space, cultural narrative, and long-term operation. Core concept 'Innovation Circle' — universities are innovation sources, the corridor connects innovation sources, three cores are innovation agglomeration nodes, three rings (blue-green slow-mobility ring + innovation liaison ring + AI service ring) form the innovation circulation circle, and AI scenarios are intelligent perception terminals. Spatial structure 'one corridor, three cores, two wings, three rings', urban renewal 'retain-renovate-demolish-new' four-tier classification, phased implementation in three stages: Foundation — Chain — Ecosystem."
-tracks: ["ai-traffic-walkability", "jingzhang-heritage", "ai-origin-community", "enterprise-service", "ai-public-service"]
-scenarios: ["ai-traffic-walkability", "ai-medical", "robot-delivery", "ai-guide", "enterprise-service", "public-safety"]
-iteration: "v7.0"
+tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
+scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
+iteration: "v7.2"
 ---
 
 # AI Ecosystem Innovation Corridor: Smart-Convergence the Century-Old Jing-Zhang

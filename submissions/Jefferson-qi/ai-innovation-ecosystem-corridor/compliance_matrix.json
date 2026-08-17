@@ -1,175 +1,787 @@
 {
   "schema_version": "0.1.0",
-  "proposal_id": "ai-innovation-ecosystem-corridor",
-  "entries": [
+  "requirements": [
+    {
+      "requirement_id": "1.3.1",
+      "title_zh": "一带总体概念与功能统筹方案设计",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.3.2",
+      "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.3.3",
+      "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.4.1",
+      "title_zh": "AI公共空间智能原生新业态与朝圣地标设计",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.4.2",
+      "title_zh": "百年京张文化中关村文化与AI新文化融合叙事设计",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.4.3",
+      "title_zh": "一带全球AI创新活动体系与长期运营设计",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.1.1",
+      "title_zh": "设计深度-统筹研究范围产业与未来城市研究",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.1.2",
+      "title_zh": "设计深度-总体设计范围城市更新与控规城市设计",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.2.1",
+      "title_zh": "设计深度-重点区域详细设计-众智园",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.2.2",
+      "title_zh": "设计深度-重点区域详细设计-AI原点社区",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.2.3",
+      "title_zh": "设计深度-重点区域详细设计-大钟寺",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.2.4",
+      "title_zh": "设计深度-用地建筑规模与拆改留方案",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.2.5",
+      "title_zh": "设计深度-交通轨道市政与公共服务设施",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.3.1",
+      "title_zh": "设计深度-更新项目清单与分期计划",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.3.2",
+      "title_zh": "设计深度-指标体系与面积复算",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.3.3",
+      "title_zh": "设计深度-风险版权与合规说明",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
+    {
+      "requirement_id": "1.5.3.required",
+      "title_zh": "设计深度-蓝绿空间公共空间与城市风貌",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
+      "evidence_location": "proposal.md",
+      "coverage_notes": "方案覆盖"
+    },
     {
       "requirement_id": "agent.1",
       "title_zh": "一带总体概念与功能统筹方案设计",
-      "covered": true,
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
       "evidence_location": "proposal.md#统筹研究范围产业与未来城市研究",
       "coverage_notes": "命名体系(AI创新生态廊)、Logo方向(轨道+神经)、三大定位协同、五大功能映射、三区两翼协同回路、总体空间结构图"
     },
     {
       "requirement_id": "agent.2",
       "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
-      "covered": true,
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
       "evidence_location": "proposal.md#全球AI创新生态案例研究",
       "coverage_notes": "6个全球AI创新生态案例、生态图谱、众智园全栈体系、AI原点社区生态、中关村翼支撑机制"
     },
     {
       "requirement_id": "agent.3",
       "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
-      "covered": true,
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
       "evidence_location": "proposal.md#AI创新生态人才画像与AI+场景",
       "coverage_notes": "12张AI场景卡(>10)、4个测试验证场景(>3)、5类用户画像(>=5)、场景-空间-运营映射、隐私边界和人工复核"
     },
     {
       "requirement_id": "agent.4",
       "title_zh": "AI公共空间智能原生新业态与朝圣地标设计",
-      "covered": true,
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
       "evidence_location": "proposal.md#蓝绿空间公共空间与城市风貌",
       "coverage_notes": "京张遗址公园AI公共空间、东西缝合南北贯通、大钟寺智能原生消费、4个AI朝圣地标(>3)、荣誉展示体系"
     },
     {
       "requirement_id": "agent.5",
       "title_zh": "百年京张文化中关村文化与AI新文化融合叙事设计",
-      "covered": true,
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
       "evidence_location": "proposal.md#统筹研究范围产业与未来城市研究",
       "coverage_notes": "京张铁路历史文化(詹天佑→AI)、中关村创新文化、AI新文化叙事、空间文化系统、国际传播叙事"
     },
     {
       "requirement_id": "agent.6",
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
-      "covered": true,
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "metrics.json"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "provisional_boundary"
+      ],
+      "self_check_ids": [
+        "deterministic_validation"
+      ],
       "evidence_location": "proposal.md#更新项目清单实施政策与分期计划",
       "coverage_notes": "年度活动体系(4项)、开发者社区运营、场景开放运营、公共体验路线、国际传播和招引转化"
-    },
-    {
-      "requirement_id": "announcement.1.3",
-      "title_zh": "公告设计任务覆盖",
-      "covered": true,
-      "evidence_location": "proposal.md (全文)",
-      "coverage_notes": "三层范围、三处重点区、设计任务、产业生态、公共空间、交通市政、实施分期全覆盖"
-    },
-    {
-      "requirement_id": "announcement.1.4",
-      "title_zh": "智能体任务覆盖",
-      "covered": true,
-      "evidence_location": "compliance_matrix.json#agent.1-6",
-      "coverage_notes": "六项智能体任务全部覆盖并在正文中展开"
-    },
-    {
-      "requirement_id": "announcement.1.5",
-      "title_zh": "设计深度要求",
-      "covered": true,
-      "evidence_location": "design_depth_matrix.json",
-      "coverage_notes": "所有设计深度项标记为complete"
-    },
-    {
-      "requirement_id": "bilingual",
-      "title_zh": "双语合同",
-      "covered": true,
-      "evidence_location": "proposal.md + proposal.en.md",
-      "coverage_notes": "bilingual_contract_version: 1，中文主稿配英文翻译"
-    },
-    {
-      "requirement_id": "boundary_clause",
-      "title_zh": "边界条款",
-      "covered": true,
-      "evidence_location": "proposal.md#风险版权与合规说明",
-      "coverage_notes": "所有空间落地建议表述为概念建议，不替代正式规划"
-    },
-    {
-      "requirement_id": "provisional_boundary",
-      "title_zh": "临时边界声明",
-      "covered": true,
-      "evidence_location": "proposal.md#三层范围工作框架",
-      "coverage_notes": "明确标注provisional_rough，说明限制和替换条件"
-    },
-    {
-      "requirement_id": "regional_synergy",
-      "title_zh": "区域协同",
-      "covered": true,
-      "evidence_location": "proposal.md#区域协同：从三区两翼到京津冀创新网络",
-      "coverage_notes": "覆盖北纬社区、未来科学城、怀柔科学城、经开区、京津冀五个协同方向，均标注为概念建议"
-    },
-    {
-      "requirement_id": "scenario_governance",
-      "title_zh": "AI场景治理矩阵",
-      "covered": true,
-      "evidence_location": "proposal.md#AI场景治理矩阵",
-      "coverage_notes": "覆盖数据生命周期、模型审计、人工复核、申诉退出、事故暂停、无障碍替代、阶段KPI、运营主体类型、未获批准声明"
-    },
-    {
-      "requirement_id": "implementation_detail",
-      "title_zh": "更新项目实施矩阵",
-      "covered": true,
-      "evidence_location": "proposal.md#更新项目实施矩阵",
-      "coverage_notes": "18项更新项目逐项列出前置条件、权属审批依赖、成本量级、建设运维责任、阶段闸门和停止条件"
-    },
-    {
-      "requirement_id": "public_interest",
-      "title_zh": "公共利益保障",
-      "covered": true,
-      "evidence_location": "proposal.md#公共利益保障与包容性设计",
-      "coverage_notes": "覆盖残障人士无障碍、儿童照护者、低收入租户、非数字用户、现有小商户、居民参与、影响评估、申诉救济、反排斥保障"
-    },
-    {
-      "requirement_id": "copyright_ledger",
-      "title_zh": "版权与来源清单",
-      "covered": true,
-      "evidence_location": "report/copyright_statement.md",
-      "coverage_notes": "逐项覆盖字体、图标、地图、图片、数据、代码、模板和外部文档的来源和许可状态"
-    },
-    {
-      "requirement_id": "metric_classification",
-      "title_zh": "指标分类与设计目标",
-      "covered": true,
-      "evidence_location": "metrics.json",
-      "coverage_notes": "区分official/provisional/design_target/design_concept/unknown五类状态，设计目标值与基线值分离"
-    },
-    {
-      "requirement_id": "legal_policy_basis",
-      "title_zh": "法律政策依据与实施路径",
-      "covered": true,
-      "evidence_location": "proposal.md#法律政策依据与实施路径",
-      "coverage_notes": "城市更新合规依据4部法规（北京市城市更新条例等）、海淀区AI产业政策5项（10亿/年资金、200亿基金等）、多元资金筹措机制表、五年过渡期政策适用"
-    },
-    {
-      "requirement_id": "risk_compliance_framework",
-      "title_zh": "风险识别与合规框架",
-      "covered": true,
-      "evidence_location": "proposal.md#风险版权与合规说明",
-      "coverage_notes": "法律合规框架3类13部法规、风险识别矩阵5类（数据安全/AI算法/城市更新/社会稳定/技术安全）、AI场景合规审查清单12项、具体条款引用"
-    },
-    {
-      "requirement_id": "ai_service_compliance",
-      "title_zh": "AI服务合规审查清单",
-      "covered": true,
-      "evidence_location": "proposal.md#AI场景合规审查清单",
-      "coverage_notes": "算法备案(暂行办法第17条)、安全评估、内容标识(第12条)、用户告知(个保法第17条)、单独同意(第29条)、公共场所告知(第26条)、科技伦理审查、退出机制等12项审查标准"
-    },
-    {
-      "requirement_id": "executive_summary",
-      "title_zh": "执行摘要",
-      "covered": true,
-      "evidence_location": "proposal.md#执行摘要",
-      "coverage_notes": "方案核心要点概览（三层范围、三区两翼、18项实施矩阵、12个AI场景、5类弱势群体、法律政策依据）"
-    },
-    {
-      "id": "v6_concept_upgrade",
-      "description": "v6.0概念升级与空间结构重构：铁脉→智脉、一廊三区→一脉三核、保留改造新建→留改拆新、新增太湖科学城案例研究",
-      "status": "completed",
-      "date": "2026-08-14",
-      "items": [
-        "核心概念从铁脉智链·创新共生(IPSIS)升级为智脉(Wisdom Vein)",
-        "空间结构从一廊三区两翼多节点重构为一脉三核两翼三环",
-        "城市更新框架从保留-改造-新建升级为留改拆新四类分级",
-        "用地布局新增自然资源部用地用海分类指南编码表",
-        "建筑规模新增三核片区开发强度建议表(智谷24-45m/源社区30-60m/钟界18-36m)",
-        "案例研究新增国内科学城演变规律与启示(以太湖科学城为参照)",
-        "中英文全文同步更新，HTML报告重新生成"
-      ]
     }
   ]
 }

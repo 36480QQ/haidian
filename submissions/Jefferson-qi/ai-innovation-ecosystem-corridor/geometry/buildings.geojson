@@ -10,7 +10,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-001",
         "building_type": "ai_r_and_d",
         "official_boundary": false
@@ -51,7 +51,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-002",
         "building_type": "ai_r_and_d",
         "official_boundary": false
@@ -92,7 +92,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-003",
         "building_type": "lab",
         "official_boundary": false
@@ -133,7 +133,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-004",
         "building_type": "incubator",
         "official_boundary": false
@@ -152,11 +152,11 @@
             ],
             [
               116.349,
-              40.022000000000006
+              40.022
             ],
             [
               116.343,
-              40.022000000000006
+              40.022
             ],
             [
               116.343,
@@ -174,7 +174,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-005",
         "building_type": "mixed_use",
         "official_boundary": false
@@ -215,7 +215,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-006",
         "building_type": "mixed_use",
         "official_boundary": false
@@ -256,7 +256,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-007",
         "building_type": "talent_apartment",
         "official_boundary": false
@@ -270,16 +270,16 @@
               39.988
             ],
             [
-              116.35199999999999,
+              116.352,
               39.988
             ],
             [
-              116.35199999999999,
-              39.992000000000004
+              116.352,
+              39.992
             ],
             [
               116.348,
-              39.992000000000004
+              39.992
             ],
             [
               116.348,
@@ -297,7 +297,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-008",
         "building_type": "office",
         "official_boundary": false
@@ -338,7 +338,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-009",
         "building_type": "office",
         "official_boundary": false
@@ -349,11 +349,11 @@
           [
             [
               116.347,
-              39.943999999999996
+              39.944
             ],
             [
               116.353,
-              39.943999999999996
+              39.944
             ],
             [
               116.353,
@@ -365,7 +365,7 @@
             ],
             [
               116.347,
-              39.943999999999996
+              39.944
             ]
           ]
         ]
@@ -379,7 +379,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-010",
         "building_type": "retail",
         "official_boundary": false
@@ -389,7 +389,7 @@
         "coordinates": [
           [
             [
-              116.35000000000001,
+              116.35,
               39.945
             ],
             [
@@ -398,14 +398,14 @@
             ],
             [
               116.354,
-              39.949000000000005
+              39.949
             ],
             [
-              116.35000000000001,
-              39.949000000000005
+              116.35,
+              39.949
             ],
             [
-              116.35000000000001,
+              116.35,
               39.945
             ]
           ]
@@ -420,7 +420,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-011",
         "building_type": "cultural",
         "official_boundary": false
@@ -431,11 +431,11 @@
           [
             [
               116.343,
-              39.949999999999996
+              39.95
             ],
             [
               116.349,
-              39.949999999999996
+              39.95
             ],
             [
               116.349,
@@ -447,7 +447,7 @@
             ],
             [
               116.343,
-              39.949999999999996
+              39.95
             ]
           ]
         ]
@@ -461,7 +461,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-012",
         "building_type": "education",
         "official_boundary": false
@@ -502,7 +502,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-013",
         "building_type": "community_service",
         "official_boundary": false
@@ -513,11 +513,11 @@
           [
             [
               116.343,
-              39.967999999999996
+              39.968
             ],
             [
               116.347,
-              39.967999999999996
+              39.968
             ],
             [
               116.347,
@@ -529,7 +529,7 @@
             ],
             [
               116.343,
-              39.967999999999996
+              39.968
             ]
           ]
         ]
@@ -543,7 +543,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-014",
         "building_type": "ai_r_and_d",
         "official_boundary": false
@@ -557,16 +557,16 @@
               40.003
             ],
             [
-              116.34899999999999,
+              116.349,
               40.003
             ],
             [
-              116.34899999999999,
-              40.007000000000005
+              116.349,
+              40.007
             ],
             [
               116.345,
-              40.007000000000005
+              40.007
             ],
             [
               116.345,
@@ -584,7 +584,7 @@
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
-        "geometry_role": "design_concept",
+        "geometry_role": "design_proposal",
         "name_zh": "建筑BLD-015",
         "building_type": "mobility_hub",
         "official_boundary": false
@@ -595,11 +595,11 @@
           [
             [
               116.346,
-              39.977000000000004
+              39.977
             ],
             [
               116.35,
-              39.977000000000004
+              39.977
             ],
             [
               116.35,
@@ -611,7 +611,7 @@
             ],
             [
               116.346,
-              39.977000000000004
+              39.977
             ]
           ]
         ]
