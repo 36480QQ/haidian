@@ -889,13 +889,13 @@ The interchange takes **1207 urban road land**, the only transport code in the p
 
 | Land use | Code | Basis for position |
 |---|---|---|
-| Cultural use | 0803 | Where the origin benchmark stone and public evidence hall sit; the core of BM-0 |
-| AI R&D and research | 0802 | The extent of the Zhongzhiyuan first-order benchmark |
-| Community services and talent support | 0702 | The extent of the AI Origin Community |
-| Industry and commercial services | 05 | The extent of the Dazhongsi high-frequency reading point |
-| Park, green and open space | 1401 | The spine green corridor |
-| Urban and rural road land | 1207 | The station-hall approach where stop and benchmark coincide |
-| **Left blank by this proposal** | **16** | The existing built-up area outside the above |
+| Cultural use | 0803 [data:geometry/land_use.geojson#LU-001,LU-B01,LU-B02,LU-B03] | Where the origin benchmark stone and public evidence hall sit; the core of BM-0 |
+| AI R&D and research | 0802 [data:geometry/land_use.geojson#LU-002,LU-B04] | The extent of the Zhongzhiyuan first-order benchmark |
+| Community services and talent support | 0702 [data:geometry/land_use.geojson#LU-003] | The extent of the AI Origin Community |
+| Industry and commercial services | 05 [data:geometry/land_use.geojson#LU-004,LU-B05] | The extent of the Dazhongsi high-frequency reading point |
+| Park, green and open space | 1401 [data:geometry/land_use.geojson#LU-005] | The spine green corridor |
+| Urban and rural road land | 1207 [data:geometry/land_use.geojson#LU-B06] | The station-hall approach where stop and benchmark coincide |
+| **Left blank by this proposal** | **16** [data:geometry/land_use.geojson#LU-006,LU-007,LU-008,LU-009,LU-010,LU-011,LU-012,LU-013,LU-014,LU-015,LU-016] | The existing built-up area outside the above |
 
 The last row needs explaining, or it will be misread. Code 16 (reserved land) here means **"this proposal leaves that extent blank" — not that the extent has been statutorily designated as reserved land**. That distinction is written into the layer's `note_zh` attribute. Blank was chosen over an inferred use because subdivision inside that extent depends on official regulatory conditions, title verification and structural safety assessment, and all three are currently data gaps. **Filling a gap with a use is passing design intent off as settled control.**
 
