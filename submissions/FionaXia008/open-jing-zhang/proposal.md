@@ -494,7 +494,7 @@ iteration: "v1.0"
 
 ### 开源铁道主轴
 
-京张铁路遗址公园是整条带的「主干分支」——贯穿南北的文化轴线和公共空间脊梁 [data:geometry/green_space.geojson#GS-001]。全域绿地率约 28.1% [metric:green_ratio]。
+京张铁路遗址公园是整条带的「主干分支」——贯穿南北的文化轴线和公共空间脊梁 [data:geometry/green_space.geojson#GS-001]。全域绿地率约 28.1% [metric:green_ratio]，绿地面积 [metric:green_space_area]。
 
 主轴沿线设置以下空间节点：
 1. **First Commit 纪念碑**（Fork 区北端）[data:geometry/public_space.geojson#PS-001]
