@@ -80,7 +80,7 @@ The frame also carries a **land-use composition bar**: the seven classes are sum
 
 ## Coordinated Research Area: Industry and Future City Research
 
-The official call and the agent taskbook already fix the belt's three positions, five functions and "three areas, two wings" structure. This proposal does not invent a competing vocabulary; it translates each official term into an identifiable spatial carrier, an operable mechanism and a checkable evidence entry. "Handover Line" is the spatial name of that translation, not a replacement for the official positioning.
+The official call and the agent taskbook already fix the belt's three positions, five functions and "three areas, two wings" structure. The table below maps each official term to an identifiable spatial carrier, an operable mechanism and a checkable evidence entry. "Handover Line" is the spatial name of that translation, not a replacement for the official positioning.
 
 | Official position / function | Spatial and operational carrier | Evidence entry |
 | --- | --- | --- |
@@ -662,7 +662,7 @@ Those 96 cells test whether the **handover protocol rules** close. But a submiss
 
 ## Risk, Copyright, and Compliance
 
-The central risk is confusing provisional data and concept work with an official decision. These dependencies are governed by [depth:risk_missing_data], and the empty [data:geometry/constraints.geojson#CONSTRAINTS-DATA-GAP] is itself the evidence that no public constraint geometry was fabricated — not a claim that no constraints exist.
+The central risk is confusing provisional data and concept work with an official decision. These dependencies are governed by [depth:risk_missing_data]; the empty [data:geometry/constraints.geojson#CONSTRAINTS-DATA-GAP] means no public constraint geometry was available, not that no constraints exist.
 
 | Risk | Handling this round | Action required before deepening | Register |
 | --- | --- | --- | --- |
@@ -678,7 +678,7 @@ The central risk is confusing provisional data and concept work with an official
 
 Privacy uses data minimisation, voluntary participation, purpose limitation, withdrawal, limited retention and human appeal. Secret maps, non-public tables, unauthorised personal data, mandatory facial recognition and unreviewable rights decisions are excluded. People without a smartphone, non-Chinese speakers, disabled people, older people and anyone who declines AI retain equivalent basic service. **Only for public service venues handling healthcare, social security, financial business or utility payment is the human-processing floor set by [source:BARRIER-FREE-ENVIRONMENT-LAW] Article 39**; [source:ELDERLY-SMART-TECH-PLAN] is policy guidance, not a legal duty. **Extending equivalent service to all twelve scenarios, and adding "stoppable" and "contestable", are standards set by this proposal** — Articles 14 and 15 of [source:GENERATIVE-AI-INTERIM-MEASURES] inform them but do not require them.
 
-All figures, diagrams, visual identity, text, geometry and PDFs are original for this submission or programmatically derived from cleared repository data. External cases are paraphrased without copying photographs, maps, trademarks or protected layouts. Three third-party typefaces require separate statements of obligation: Noto Serif SC, licensed under OFL-1.1 (which expressly permits embedding and redistribution), is subset-embedded in all four PDFs; across the 26 raster figures (24 PNG and 2 JPEG) the **Chinese** type comes from the macOS system font STHeiti and the **Latin type and numerals** from the macOS system font Helvetica, both rasterised into pixels at local render time — no font file is shipped in the package, so neither constitutes redistribution. The rights basis and the independent verification command for all three are given row by row in the table below; **Latin type inside the drawing PDFs is a fourth, distinct case** (referenced by PDF base-fourteen font name, touching no font file at any point) and is not the same thing as the identically named face inside the figures, so it keeps its own row. The proposal is an open co-design recommendation; it does not replace planning, architecture, transport, landscape, municipal, heritage, legal, privacy or engineering services, and makes no claim of government approval, funding, procurement or delivery.
+All figures, diagrams, visual identity, text, geometry and PDFs are original for this submission or programmatically derived from cleared repository data. External cases are paraphrased without copying photographs, maps, trademarks or protected layouts. Typefaces fall into five situations; the rights basis and an independent verification command for each are listed row by row in the table below. This proposal is an open-collaboration concept and does not replace planning, architectural, transport, landscape, municipal, fire-safety, heritage, legal, privacy or engineering services, nor does it represent government approval, investment, procurement, tenanting or an implementation commitment.
 
 ### Rights and build provenance: itemised, and verifiable by command
 
