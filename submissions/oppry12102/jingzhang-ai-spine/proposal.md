@@ -45,6 +45,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 现状证据账：已核事实—剩余未知—设计后果
 
+
+![现状约束与既有网络图](assets/figures/plan-02-constraints.png)
+
 本方案把关键缺口写成四行"证据账"，每行区分本轮可核事实、仍不能证明与设计后果；新事实只缩小未知范围，不自动补线、不激活服务、不制造精确感 [depth:existing_conditions_diagnosis]：
 
 | 维度 | 本轮可核事实 | 仍不能证明 | 设计后果 |
@@ -67,6 +70,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 这正是本方案的立意：把京张智脊做成一条"从历史自强走向智能引领"的公共创新界面。北京 AI 原点社区作为旗舰详细设计落点（见后文"重点区域详细设计"），把清华园车站的三重记忆、"人"字形的工程智慧与问责走廊的当代纪律叠合在同一处场所——让路过的人在铁轨遗存旁读到一个民族的两次自强：第一次，我们学习追赶世界的先进技术；这一次，我们与世界共同定义智能时代的规则 [source:DATA-JINGZHANG-HISTORY] [depth:overall_spatial_structure]。
 
 ## 三层范围工作框架
+
+
+![区位与总体范围图](assets/figures/plan-01-location.png)
 
 本方案按照公告确定的三个层次组织工作：统筹研究范围关注 43.6 平方公里的 AI 产业生态、战略定位、创新链和未来城市形态；总体设计范围关注 11.4 平方公里京张遗址公园周边 1-2 公里城市地区和产业区，形成城市更新总体框架、产业空间布局、交通市政支撑和城市风貌控制；重点区域范围关注 368.4 公顷三处详细设计地区，明确功能业态、建筑规模、拆改留分类、公共空间连通和交通组织。三层范围在任务覆盖矩阵中逐条映射，公告 1.3、1.4、1.5 与智能体任务书第 1 至 6 条的必选任务都有章节、图层、指标、图纸和电子展示证据。三层工作框架的深度由 [depth:three_level_scope_framework] 与 [depth:overall_spatial_structure] 约束，空间证据以 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#PROV-KEY-001] 为准，任务依据以 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 为准。
 
@@ -171,7 +177,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案在总体设计范围提出"一带三核、多点场景、蓝绿慢行复合环"的城市更新总体结构，落到 10 个用地分区、6 个建筑组团、4 条道路、1 条连续绿带与 3 个公共节点，形成可复算、可停、可问责的空间底图 [depth:land_use_layout] [depth:development_intensity_controls]。
 
+
+![空间结构图（一带三核多点）](assets/figures/plan-04-structure.png)
+
 **用地结构**：用地分区图层的十个分区完整覆盖设计边界且无重叠，用四类官方用地代码表达三核与绿廊的职能分工 [data:geometry/land_use.geojson#LU-001]。0802 AI 研发创新用地落位三核中的两处策源极——北京 AI 原点社区创新策源片区（约 83.56 万平方米）与众智园全栈自主创新加速片区（约 181.70 万平方米）；09 商业服务业用地承载转化与消费职能——大钟寺智能原生与商业服务片区（约 191.26 万平方米）与北部连接带产业服务与配套（约 121.91 万平方米）；0702 社区服务与配套用地（约 243.63 万平方米）承接南部连接带的职住与生活服务；1401 公园绿地与开敞空间五段，共同构成京张遗址公园绿地主轴。十区比例是当前概念几何的复算表达，不是控规调整决定 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
+
+
+![用地规划图（用地用海分类用色与编码）](assets/figures/plan-03-landuse.png)
 
 **建筑基底**：建筑基底图层的六个组团，按三核各两组团组织——众智园全栈自主研发组团与标准治理展示组团、原点社区开源协作组团与成果转化组团、大钟寺智能终端展示组团与国际交往商务组团，建筑基底复算约 42.79 万平方米 [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。这些是更新建筑基底/保留基底的表达，不是现状建筑普查；权属、结构、高度与拆改留待官方数据确认后复核 [depth:retain_renovate_demolish]。
 
@@ -179,37 +191,12 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **矢量规划图则**：本方案配套十四张矢量规划图则，把上述空间结构落成可打开核验的图纸——整体层面九张：区位与总体范围图、现状约束与既有网络图、用地规划图（按用地用海分类用色与编码）、空间结构图、三处重点区总平面图、绿地与公共空间系统图、交通与慢行系统图、分期实施图、蓝绿风貌系统图；体系层面两张：分级体系图（总体—重点区—场所三级设计控制）、子系统体系图（产业创新、蓝绿生态、交通慢行、公共服务四大子系统叠合）；重点区详细图则三张：众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业聚集区各自的 1:2000 级详细图则，分别标注算力账本广场、问责走廊、可停服务街三处空间意象的落点、区内用地切块、研发组团与公共节点。每张图则均带图名、图例、指北针、比例尺、临时边界红虚线与来源注记，可直接放大核验各分区、绿道与节点的落位关系。
 
-![百年回响·规划图则目录索引（14张矢量图则）](assets/figures/plan-15-index.png)
-
-上方为图则目录索引；以下即十四张图则（矢量 PDF 原图见 `drawings/`，此处为可直接查看的图件）
-
-![区位与总体范围图](assets/figures/plan-01-location.png)
-
-![现状约束与既有网络图](assets/figures/plan-02-constraints.png)
-
-![用地规划图（用地用海分类用色与编码）](assets/figures/plan-03-landuse.png)
-
-![空间结构图（一带三核多点）](assets/figures/plan-04-structure.png)
-
-![三处重点区总平面图](assets/figures/plan-05-keyareas.png)
-
-![绿地与公共空间系统图](assets/figures/plan-06-green-public.png)
-
-![交通与慢行系统图](assets/figures/plan-07-mobility.png)
-
-![分期实施图（三期滚动）](assets/figures/plan-08-phasing.png)
-
-![蓝绿风貌系统图](assets/figures/plan-09-blue-green.png)
 
 ![分级体系图（总体—重点区—场所三级设计控制）](assets/figures/plan-10-hierarchy.png)
 
 ![子系统体系图（四大子系统叠合）](assets/figures/plan-11-subsystems.png)
 
-![众智园AI自主创新加速区详细图则（约1:2000）](assets/figures/plan-12-keyarea-zhongzhiyuan.png)
-
-![北京AI原点社区详细图则（约1:2000）](assets/figures/plan-13-keyarea-origin.png)
-
-![大钟寺AI产业聚集区详细图则（约1:2000）](assets/figures/plan-14-keyarea-dazhongsi.png)
+以下十四张矢量图则按主题分散嵌入对应章节，便于图文对照：区位与总体范围（三层范围工作框架）、现状约束与既有网络（现状证据账）、空间结构（总体设计范围）、用地规划（用地结构）、分级体系与子系统体系（矢量规划图则）、三处重点区总平面与三张详细图则（重点区域详细设计）、绿地与公共空间系统（蓝绿空间）、交通与慢行系统（交通）、分期实施（分期计划）、蓝绿风貌系统（城市风貌）。矢量 PDF 原图见 `drawings/`，本页为可直接查看的渲染图件。
 
 控规深度的管控指标——容积率、建筑高度、建筑密度、退线、道路红线与设施标准——在缺少官方控制条件时统一标记为「待正式数据补齐」，进入指标复算表与假设清单，并写明待补条件与复算路径，不用智能体推测值冒充审定指标 [depth:development_intensity_controls] [metric:floor_area_ratio]。指标复算表复算核心面积、比例与图层数量，任务覆盖矩阵把每个任务与图层、指标、图纸挂接。
 
@@ -217,7 +204,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 三处重点区域是本方案的三个详细设计落点。众智园 AI 自主创新加速区围绕国家人工智能平台、全栈自主创新、标准制定、安全治理、产业展示、对外交通、清河文化、低碳绿色创新交往环境和绿色空间 AI 场景展开；北京 AI 原点社区围绕近校创新、成果孵化转化、人才特区、开源体系、品牌活动、建筑拆改留、成果展示发布、居住生活配套、校区园区慢行联系和轨道站点一体化展开；大钟寺 AI 产业聚集区围绕领军企业、智能体、智能终端、内容消费、数据要素、数字资产、商业服务、规划绿地复合利用、大钟寺站一体化和路口四象限步行连通展开。三处详细设计均引用 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]，并由 [depth:three_key_area_detailed_design] 检查深度。
 
+
+![三处重点区总平面图](assets/figures/plan-05-keyareas.png)
+
 在三处重点区中，**北京 AI 原点社区是本方案的旗舰详细设计落点**，承载"百年回响"的空间叙事。其详细设计围绕一条"原点轴"组织：以静卧于成府路西南的清华园车站遗存为历史锚点（1909 自强原点 / 1949 赶考起点 / 2026 创新原点三重身份在此叠加 [source:DATA-JINGZHANG-HISTORY]），向北串起开源协作组团与成果转化组团两个研发组团，把"近校孵化—成果发布—人才特区服务"接成一条可步行的连续界面。图形语言上延续詹天佑"人"字形折返线母题：主轴在车站遗存前做一次"折返"，把研发后台与公共前台分开——公共前台的问责走廊沿折返线铺陈，把每个更新项目的责任主体、申诉接口与兜底路径写在地上，受损失者沿走廊即可找到名字、申诉与兜底 [data:geometry/key_areas.geojson#PROV-KEY-002] [metric:public_space_ratio]；研发后台的开源发布厅与孵化空间退居走廊内侧，失败时公共房间可整体关闭而不挤占照护与孵化核心。区内 0802 AI 研发创新用地（约 83.56 万平方米）与 1401 公园绿地叠合，慢行绿道南北穿越，把五道口—清华—北大的院所链接入这条"从历史自强走向智能引领"的原点轴 [data:geometry/land_use.geojson#LU-001] [depth:three_key_area_detailed_design]。
+
+
+![北京AI原点社区详细图则（约1:2000）](assets/figures/plan-13-keyarea-origin.png)
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
@@ -230,6 +223,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 大钟寺AI产业聚集区 | 城市型智能经济与国际交往街区 | 围绕大钟寺站一体化、四象限步行连通、商业服务和重点企业公共环境更新 | 智能体与智能终端展示、内容消费、数据要素与国际路演 | [data:geometry/key_areas.geojson#PROV-KEY-003]、[metric:key_area_count] |
 
 三处片区的空间动作都服从同一纪律：众智园把测试前台与维护、数据后台隔离，模型或设施可现场停机；原点社区把公共前台放在研究与社区生活之间，失败时公共房间关闭、照护与孵化核心不被挤占；大钟寺把站点四象限组织成有明确时段的门厅序列，静态指引在数字系统停用时仍能完成基本任务。三处都保留"无 AI 等价路径 + 停止条件 + 人工回退"，任一条件不满足即不开放增量服务 [depth:three_key_area_detailed_design]。
+
+
+![众智园AI自主创新加速区详细图则（约1:2000）](assets/figures/plan-12-keyarea-zhongzhiyuan.png)
+
+![大钟寺AI产业聚集区详细图则（约1:2000）](assets/figures/plan-14-keyarea-dazhongsi.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -304,13 +302,21 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
+
+![交通与慢行系统图](assets/figures/plan-07-mobility.png)
+
 市政与公共服务采用"底盘—增量—停机"三层组织 [depth:municipal_new_infrastructure]：底盘层是照明、无障碍、紧急联系、饮水/卫生、人工或电话、静态导视和安全断电；增量层是算力、机器人、预约、数字导视和活动；停机层是本地隔离、人工接管、关闭信息、清场复位与事件记录。每层都标明供给入口、日常运维、故障隔离、人工替代和重开证据。能源、给排水、消防、通信、垃圾、噪声、热环境和端侧算力容量仍待正式数据补齐，因此这一组织方式不表示管线、负荷、设备或工程可行性；缺预算、岗位、替班、维护窗、人工替代或申诉责任时，对应增量服务保持「未激活」状态 [assumption:A-CONTROLS-001]。
 
 ## 蓝绿空间、公共空间与城市风貌
 
+
+![绿地与公共空间系统图](assets/figures/plan-06-green-public.png)
+
 蓝绿空间以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业、社区出行需求，形成南北贯通、东西连通的步道、骑行道和绿色空间体系；识别慢行断点、上跨环路节点、公园南端和北端景观节点，提出停车、体育、创新交往、科技测试、应用展示和公共服务复合利用策略。京张遗址公园连续绿带是恢复与交接的连续绿廊概念面，复算约 246 万平方米 [data:geometry/green_space.geojson#GREEN-001]；三个公共节点——大钟寺站四象限公共节点、AI 原点社区公共活动界面、众智园清河创新交往界面——合计构成公共界面 [data:geometry/public_space.geojson#PUBLIC-001]。绿地率约 21.56%、公共空间率约 10.89% 可由临时几何复算，但只描述投稿图层，不写成现状或规划绩效 [metric:green_ratio] [metric:public_space_ratio]。绿廊中的数字服务可以关闭，遮荫、座椅、无障碍、饮水、静态指引和安全联系构成非数字底盘；公共界面显示谁在值守、什么未开放、如何申诉、何时重开。若工作人员不足或维护未完成，服务关闭而非挤压后台时间 [depth:blue_green_public_space]。
 
 城市风貌融合京张铁路历史文化、中关村创新文化和 AI 创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面和公共艺术引导；导视标识、文化符号、国际传播叙事、AI 朝圣地标、贡献墙或荣誉展示体系均须有清权来源。风貌控制分清官方管控、设计建议和待确认条件，不在没有文保或控规依据时给出伪精确控制线 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+
+![蓝绿风貌系统图](assets/figures/plan-09-blue-green.png)
 
 ### AI 朝圣地标与荣誉展示体系
 
@@ -323,6 +329,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 荣誉展示体系与三个地标共用一套规则：贡献墙、里程碑墙与年度榜单只收录公开、可核验、可清权的内容，不采集个人行为轨迹，不输出未经授权的个人画像，并保留人工下架与更正通道 [source:AGENT-TASKBOOK]。所有地标均不娱乐化、网红化或低俗化，不违反文保、绿地、蓝线与交通安全约束 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 ## 更新项目清单、实施政策与分期计划
+
+
+![分期实施图（三期滚动）](assets/figures/plan-08-phasing.png)
 
 本方案形成可审查的更新项目清单，说明项目位置、类型、功能、责任主体、依赖条件、实施阶段、风险和评估指标；政策建议覆盖城市更新统筹实施、空间供给、运营机制、产业服务、公共参与、数据治理和产权协同。分期图层表达分期范围 [data:geometry/phasing.geojson#PHASE-001]，任务覆盖矩阵把每个任务与分期和图纸挂接；没有权属、资金、实施主体和审批路径的内容写成实施风险，不写成落地承诺 [depth:renewal_project_list] [depth:phasing_implementation]。
 

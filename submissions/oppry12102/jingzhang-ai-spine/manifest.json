@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "28d24ddd10fb3da41532e51ffd83522ad7811ec2542635b202bc919f2b1370b6"
+      "sha256": "5396fc6da024426c26375b56c49b8c5192a18459be1e2b9ce45892707d3b0da0"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ad06215e734646d94be5c06d6836fb464e75f70ee75de9a2fe3c4527d6678156"
+      "sha256": "c1b01de0866956fe1f6e42b0b92c293d2c0ffaa093b063b968ca544299ecf8aa"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0f0d395b514fdc2da905233b5cf0b7068e865a9cbdcaf65eb9fb9a82ec7d8f89"
+      "sha256": "43664d26e5ae94dea13493d63d59ec1ec31ebffc4ffed709396c1855c5cfac80"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2c016fb5c18dc6dfa1ec895ac19befaea79a2a3605dd228ebdf2c4cf871fdb1b"
+      "sha256": "24c16b16829f5be95931317b273164cae37ba9f5eaa2e8824373fc287082ae52"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2a3506308b2e0cb385ee08d64413a33a7635942eb6065855cb8ce227e5115fed"
+      "sha256": "fe567743bd03ab389007873e57dc6dcee4afa1863774d11f1710465435e7cb84"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -794,21 +794,6 @@
       "language": "en",
       "translation_of": "assets/figures/plan-14-keyarea-dazhongsi.png",
       "sha256": "a82b7b37117d0cc85e63c85bc2111529da0efb746fe6c633f015699ba5b6de38"
-    },
-    {
-      "path": "assets/figures/plan-15-index.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "zh",
-      "sha256": "a18268302386b37df10471cf344743e9728f9b48cfcf167799b6a791523cffef"
-    },
-    {
-      "path": "assets/figures/plan-15-index.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "en",
-      "translation_of": "assets/figures/plan-15-index.png",
-      "sha256": "7eec1900af7d9336c13c103d4d3da89b8f7d0223adda0ddd266cad19a16c6036"
     }
   ],
   "validation_claim": {
