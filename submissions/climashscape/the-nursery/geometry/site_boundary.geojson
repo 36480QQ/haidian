@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "feature_0",
+      "type": "Feature",
+      "properties": {
+        "boundary_type": "study_area",
+        "area_ha": 1141,
+        "note": "统筹研究范围概念边界",
+        "status": "provisional",
+        "id": "site_boundary_0",
+        "layer": "SITE_BOUNDARY",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3,
+              39.95
+            ],
+            [
+              116.38,
+              39.95
+            ],
+            [
+              116.38,
+              39.99
+            ],
+            [
+              116.3,
+              39.99
+            ],
+            [
+              116.3,
+              39.95
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
