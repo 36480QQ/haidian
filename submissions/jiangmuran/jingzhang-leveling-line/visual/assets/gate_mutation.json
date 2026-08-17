@@ -1188,9 +1188,22 @@
       "what_en": "Return the subject derivation to reading the spelling of a name alone — the rule as it stood before the fix. The metric whose own note begins 「现状步行网络上」 is once again filed as measuring this proposal.",
       "why_zh": "**那个数是送审图纸标题句里的「前」——「由 232 增至 261」。** 一个分不清自己基准与结果的包，没有资格解释两者之差；这条变异证明的是：手工名单一旦与指标自己写的话不符，构建就停。",
       "why_en": "**That number is the before term of the headline on a sheet the reviewer is sent — 「由 232 增至 261」.** A package whose metadata cannot tell its own baseline from its own result cannot be asked to defend the difference. The mutation proves the build stops when the hand-kept list drifts from what the metric says about itself."
+    },
+    {
+      "id": "M98",
+      "gate": "sheet_scale_qa.py",
+      "target": "fig_key_areas.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "让窗口申报**要的那个跨度**，而不是**画出来的那片地**——即修复前的写法。比例由较紧的一轴定，于是画框东西向实地 1,667 m，申报却写 1,500 m。",
+      "what_en": "Make the window declare the span it asked for instead of the ground it draws — the wording as it stood before the fix. The scale is set by the tighter axis, so the frame carries 1,667 m of real ground east-west while declaring 1,500 m.",
+      "why_zh": "**照 1,500 m 见方去量这三幅平面，每一段东西向距离都短读 11%。** 这条闸门本来就在，只查了那张把比例写进属性的剖面，而三张把范围写进句子的平面，谁也没查——变异证明：画框除以自己申报的比例，一旦不等于自己申报的范围，构建就停。",
+      "why_en": "**Scaled against a 1,500 m square, every east-west distance in these three plans reads 11% short.** The gate already existed and checked the one drawing that declared its scale in an attribute, while three drawings declaring an extent in a sentence were covered by nothing. The mutation proves the build stops when a frame divided by its own declared scale does not equal its own declared extent."
     }
   ],
-  "caught": 97,
+  "caught": 98,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
