@@ -1802,5 +1802,148 @@
   ],
   "gate_scope_note_zh": "requirements[].gate_ids 只登记「该闸门失效会使这一条的证据失效」的闸门；对全部 23 条同样成立、无法按条目区分的包级闸门登记在 package_level_gates。闸门定义与判定规则见 visual/assets/governance/package-integrity-gates.json。",
   "gate_scope_note_en": "requirements[].gate_ids lists only the gates whose failure would invalidate that row's evidence; gates that hold identically for all 23 rows are recorded in package_level_gates. Definitions and decision rules live in visual/assets/governance/package-integrity-gates.json.",
-  "cross_reference_derivation_zh": "standard_ids、geometry_feature_ids、scenario_ids、gate_ids、report_sections_en、visual_sections_en 六个字段由包内文件推导，不手工填写：standard_ids 取 standard_matrix.json 中 proposal_sections 与本条 report_sections 相交的标准，外加公告条款对 PROJECT-OFFICIAL-ANNOUNCEMENT、智能体任务对 PROJECT-AGENT-OPEN-CALL-TASKBOOK 的定义性挂接；geometry_feature_ids 取本条所属章节正文中 [data:geometry/<层>#<ID>] 命中且该层已在 geojson_layers 声明的要素；scenario_ids 取同一章节正文出现的 SCN 编号；report_sections_en 与 visual_sections_en 按中英标题的同序位置映射，不是机器翻译。title_en 为本包自译，组织方仅发布中文条款标题。"
+  "cross_reference_derivation_zh": "standard_ids、geometry_feature_ids、scenario_ids、gate_ids、report_sections_en、visual_sections_en 六个字段由包内文件推导，不手工填写：standard_ids 取 standard_matrix.json 中 proposal_sections 与本条 report_sections 相交的标准，外加公告条款对 PROJECT-OFFICIAL-ANNOUNCEMENT、智能体任务对 PROJECT-AGENT-OPEN-CALL-TASKBOOK 的定义性挂接；geometry_feature_ids 取本条所属章节正文中 [data:geometry/<层>#<ID>] 命中且该层已在 geojson_layers 声明的要素；scenario_ids 取同一章节正文出现的 SCN 编号；report_sections_en 与 visual_sections_en 按中英标题的同序位置映射，不是机器翻译。title_en 为本包自译，组织方仅发布中文条款标题。",
+  "self_check_expectations": [
+    {
+      "expectation_id": "DETERMINISTIC_VALIDATION",
+      "assertion_zh": "确定性校验通过：目录归属、变更范围、schema、枚举、大小与命名全部合规。",
+      "evidence_in_package": "self_check.json#checks[check_id=DETERMINISTIC_VALIDATION]",
+      "covered_by_self_check_id": "DETERMINISTIC_VALIDATION",
+      "independent_verification_zh": "`scripts/validate_submission.py --pr-author Sonike --changed-files-list <清单>` 结果为 PASS。"
+    },
+    {
+      "expectation_id": "SPATIAL_REVIEW",
+      "assertion_zh": "空间复核通过：几何有效、坐标系一致、图层与指标口径对得上。",
+      "evidence_in_package": "self_check.json#checks[check_id=SPATIAL_REVIEW]",
+      "covered_by_self_check_id": "SPATIAL_REVIEW",
+      "independent_verification_zh": "`scripts/self_check_submission.py` 输出的 spatial_review 段。"
+    },
+    {
+      "expectation_id": "VISUAL_PACKAGING",
+      "assertion_zh": "视觉打包通过：送审视觉输入齐备、可读、无占位符。",
+      "evidence_in_package": "self_check.json#checks[check_id=VISUAL_PACKAGING]",
+      "covered_by_self_check_id": "VISUAL_PACKAGING",
+      "independent_verification_zh": "同上输出的 visual_review 段，issues 为 0。"
+    },
+    {
+      "expectation_id": "PROFESSIONAL_EVIDENCE",
+      "assertion_zh": "专业证据复核通过：论断挂得上来源、标准、指标或几何。",
+      "evidence_in_package": "self_check.json#checks[check_id=PROFESSIONAL_EVIDENCE]",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "同上输出的 professional_review 段。"
+    },
+    {
+      "expectation_id": "BOUNDARY_TRUST",
+      "assertion_zh": "总体设计范围用的是临时粗略边界，不冒充官方红线；该性质在几何属性、假设与正文中同时标注。",
+      "evidence_in_package": "geometry/site_boundary.geojson#properties.official_boundary=false；assumptions.json#A-BOUNDARY-001",
+      "covered_by_self_check_id": "SPATIAL_REVIEW",
+      "independent_verification_zh": "读 site_boundary 的 official_boundary 与 boundary_precision 两个字段；两者分别为 false 与 provisional_rough。"
+    },
+    {
+      "expectation_id": "KEY_AREAS_TRUST",
+      "assertion_zh": "三处重点区范围同样是临时粗略范围，各自记录推导方法与不得用作的用途。",
+      "evidence_in_package": "geometry/key_areas.geojson#PROV-KEY-001/002/003 的 derivation_method 与 usage_note",
+      "covered_by_self_check_id": "SPATIAL_REVIEW",
+      "independent_verification_zh": "三个要素的 official_boundary 均为 false，且 area_sqm_calculated 与公告约面积的差可逐个复算。"
+    },
+    {
+      "expectation_id": "GEOMETRY_VALIDITY",
+      "assertion_zh": "九个图层的几何有效、无自交、投影一致，要素 id 唯一。",
+      "evidence_in_package": "geometry/*.geojson",
+      "covered_by_self_check_id": "SPATIAL_REVIEW",
+      "independent_verification_zh": "用 shapely 逐要素 `is_valid`；投影统一 EPSG:4326 存储、EPSG:4548 计算。"
+    },
+    {
+      "expectation_id": "LAND_USE_TOPOLOGY",
+      "assertion_zh": "用地图层内部无重叠，因此按子集求和等于并集面积。",
+      "evidence_in_package": "geometry/land_use.geojson",
+      "covered_by_self_check_id": "SPATIAL_REVIEW",
+      "independent_verification_zh": "`unary_union` 面积与逐要素求和之差实测为 0.000 ㎡；七个用地代码子集各自单独验过。"
+    },
+    {
+      "expectation_id": "METRIC_TRACEABILITY",
+      "assertion_zh": "每个 known 指标都有公式、来源图层与假设；面积与比值可按公式重算。",
+      "evidence_in_package": "metrics.json#formula / source_files / assumptions / verification",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "20 个面积与比值指标已逐条重算，面积容差 0.001 ㎡、比值容差 1e-6，不一致 0 条。"
+    },
+    {
+      "expectation_id": "MEASUREMENT_PROTOCOL_COMPLETE",
+      "assertion_zh": "对外声称要测的量，都写明了测什么、谁测、多久测一次、不合格怎么办。",
+      "evidence_in_package": "visual/assets/governance/measurement-protocol.json（另附 .schema.json）",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "用同目录的 schema 校验该文件；协议条目与 metrics.json 的 known 指标可逐项对照。"
+    },
+    {
+      "expectation_id": "SOURCE_PROVENANCE",
+      "assertion_zh": "每条来源登记权威级别、证据类别、采集方式、时空覆盖与可用／不可用范围。",
+      "evidence_in_package": "sources.json#sources[].authority_level / evidence_class / usable_for",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "逐条字段可读；挂接中央登记表的来源另带 registry_source_id。"
+    },
+    {
+      "expectation_id": "BACKGROUND_NOT_SPATIAL",
+      "assertion_zh": "行政尺度的统计事实只作背景，不下沉到地块，且逐条标注不可空间分配。",
+      "evidence_in_package": "sources.json 中标 not_spatially_allocable 的 6 条来源与其 observations",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "检索 sources.json 的 not_spatially_allocable 字段，实测 6 条；这些数字不出现在任何几何属性里。"
+    },
+    {
+      "expectation_id": "REGULATORY_BASELINE",
+      "assertion_zh": "组织方标准清单逐条登记，并写明本包是落实、部分落实还是数据缺口。",
+      "evidence_in_package": "standard_matrix.json#standards[].review_status",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "9 条官方标准 9 条已登记；data_gap 者单独标出，不充当审定依据。"
+    },
+    {
+      "expectation_id": "COPYRIGHT_TRACEABILITY",
+      "assertion_zh": "图形、字体、数据与工具链逐类写明权利依据与独立核验命令。",
+      "evidence_in_package": "proposal.md 权利表；report/copyright_statement.md",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "字体一行可用 `pdffonts drawings/*.pdf` 与 `find <包> -name '*.tt[cf]' -o -name '*.otf'` 当场核。"
+    },
+    {
+      "expectation_id": "AI_HUMAN_HANDOVER",
+      "assertion_zh": "十二个场景各自写明人工兜底渠道与退出条件，不存在只能由 AI 提供的必需服务。",
+      "evidence_in_package": "geometry/public_space.geojson 的 12 个 SCN 要素#human_fallback / exit_condition",
+      "covered_by_self_check_id": "SPATIAL_REVIEW",
+      "independent_verification_zh": "12 个 SCN 要素全部带这两个字段，可逐个读出；缺任一即该场景不得开放。"
+    },
+    {
+      "expectation_id": "DUAL_CONTROL_SHIFT_LEDGER",
+      "assertion_zh": "交出与接入是两次独立判断，每个场景各有一份机器可读的双联交接账。",
+      "evidence_in_package": "visual/assets/governance/shift-ledger-suite.json（12 条）＋ shift-ledger.schema.json",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "用 shift-ledger.schema.json 校验 suite 里的 12 条；example-scn05 另给出含 5 条未决项的实例。"
+    },
+    {
+      "expectation_id": "ROLE_SPEC_TRANSFERABLE",
+      "assertion_zh": "八个角色写成可交接的岗位规格：最低资质、能与不能决定什么、缺岗时什么不得开放。",
+      "evidence_in_package": "visual/assets/governance/role-spec.json（另附 .schema.json）",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "8 条角色各带 duty_boundary、authority、two_person_review 与 prohibition_when_unstaffed。"
+    },
+    {
+      "expectation_id": "GOVERNANCE_SCHEMA_VALIDATION",
+      "assertion_zh": "治理类结构化文件都能通过自带 schema 的校验，不是自由格式 JSON。",
+      "evidence_in_package": "visual/assets/governance/validation-report.json",
+      "covered_by_self_check_id": "PROFESSIONAL_EVIDENCE",
+      "independent_verification_zh": "该报告记录每个治理文件对应的 schema 与校验结果，可用 jsonschema 重跑。"
+    },
+    {
+      "expectation_id": "DRAWING_VERSION_CONSISTENCY",
+      "assertion_zh": "四套图纸的页数与版本印记命中数逐套相等，无旧版本号残留。",
+      "evidence_in_package": "drawings/*.pdf 页脚",
+      "covered_by_self_check_id": "VISUAL_PACKAGING",
+      "independent_verification_zh": "`qpdf --show-npages` 与 `pdftotext <pdf> - | grep -c 'PACKAGE v1.15'` 逐套比对：13/13、13/13、6/6、6/6。"
+    },
+    {
+      "expectation_id": "VISUAL_STATIC",
+      "assertion_zh": "送审视觉输入是静态图像，不依赖动画、脚本或网络即可完整呈现。",
+      "evidence_in_package": "assets/figures/*.png、drawings/*.pdf、visual/index[.en].html 首屏",
+      "covered_by_self_check_id": "VISUAL_PACKAGING",
+      "independent_verification_zh": "四个 HTML 的外部 http(s) 引用数为 0；图件与图纸均为静态位图或矢量。"
+    }
+  ],
+  "self_check_expectations_note_zh": "三个矩阵的 self_check_ids 引用的就是本表的 expectation_id。此前这些标签只在矩阵里出现、包内没有定义，而本包的 G01 闸门声称「三个矩阵里的每一条引用都必须能在包内解析到实体」——该自陈对其中 16 个标签（81 处引用）并不成立。本表把它们逐条定义在矩阵自身，因此引用与定义同文件可解析。covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。"
 }
