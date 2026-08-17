@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+- **重建八个丢失的图件生成器，包内 26 个栅格产物全部转 OFL；本地逐维复测 `risk_compliance` 由 4 升到 5（2026-08-17 追加，不改版本号）。** 本地评审在 `risk_compliance` 的 required repair 精确点名：用 SIL OFL 字体重新生成 `logo-identity`／`ecosystem-map`／`spatial-prototype`／`shift-ledger`／`delivery-contract`／`renewal-structure`／`adaptive-model`。这七张（加断面图 `handover-scene`）的原生成器已不在工具链内，全盘与 git 历史均搜不到，因此**重写生成器**。
+  - **写法是一套参数化区块渲染器 + 声明式内容规格**，而不是八个独立脚本：`strip_cards`（顶部色条卡）、`bar_rows`（左侧色条行，含紧凑模式）、`stat_cards`（大数字卡）、`dark_bar`（深色规则栏）、`flow_cards`（带箭头流程）、`bullets`、走廊定位图（复用 `jzgeo`，SCN-05 可高亮）、以及 F/10 的**轴测剪切变换**（对提交几何做 shear + squash，非透视，建筑另绘顶面）。内容逐条取自包内既有事实，不新增任何主张。
+  - **十四张 PNG 与两张 JPEG 全部重新生成**，尺寸与原图一致（1600×1000）。换进四套图纸时用的是**逐字节精确匹配**而非灰度指纹：a3 各命中 4 张、a0 各命中 1 张，每张一次不重复；四套 `qpdf --check` 全 PASS，页数与 `PACKAGE v1.15` 命中数相等（13/13、13/13、6/6、6/6），包内字体文件数仍为 **0**。
+  - **过程中修掉四个自造缺陷**：`font_latin` 画中文导致「主标识」渲染成方框（同一个坑本包记录过一次，这次又踩）、`→`(U+2192) 在 NotoSans 缺字形改用 ASCII、英文串里混进一个中文词、以及卡片说明文字溢出边界（为此给 `bar_rows` 加了紧凑模式）。
+  - **权利表由两级合并为一行**：全部 24 张 PNG 与 2 张 JPEG 的文字均由 OFL-1.1 的 Noto Sans CJK SC（Medium／Light）与 Noto Sans 栅格化，**OFL 明文允许使用与再分发，因此栅格产物的权利依据不再依赖对任何条款的解释**。中文取 Medium 档，以补回 Noto CJK 相对 STHeiti 偏细的字面差。
+  - **确定性校验抓到一个连锁问题，且它让登记方式变得更诚实。** 把 `FONT-STHEITI-RASTER` 与 `FONT-HELVETICA-RASTER` 降级为历史登记后，正文不再引用这两条来源，校验直接 FAIL（每条 `sources.json` 条目须有正文 `[source:]` 引用）。**选择保留历史登记而不是删除**——迁移过程是事实，值得留档——因此在正文补一段带引用的说明：写明 v1.15 之前由何种字体生成、当时的权利依据只到「条款解释」一级、以及两步迁移的完成方式。校验随后 PASS。
+  - **本地逐维复测（同模型 `gpt-5.6-sol`、`high`、同 18 张视觉输入，同版本跑三次）**：`risk_compliance` 由 4 升到 **5（三次全中）**，加权中位由 94.0 升到 **96.0**；三次均为 `formal-review-ready`、`can_enter_formal_review=true`、**`required_next_actions` 为 0**。七维中六维满分，`implementation_feasibility` 停在 4——其 repair 明确要求获授权阶段的实地演练，当前不可做。
+
 - **修好 PDF 的 ToUnicode 与缺字方框；本地逐维复测 `expression_completeness` 由 4 升到 5（2026-08-17 追加，不改版本号）。** 此前把这两处判为「不可修」，那个诊断是错的：我搜「土地」的 UCS-2 裸字节没找到就断定编码不是 UCS-2，而 **CJK 走的是十六进制串 `<...>`，裸字节搜不到**。重查后十六进制串 `4eac5f204ea463a57ebf` 正是「京张交接线」，`00b7`（`·`）全文恰好 **7 次且全部落在 4 位码元边界上**，与 7 个缺字方框一一对应。
   - **ToUnicode 的根因**：它写的是 `<0020>→<003f>`、`<0030>→<004f>`、`<0041>→<0060>`——**code→字形索引**而不是 code→Unicode，是 Ghostscript 换嵌字体那一轮生成错的。而 `/Encoding` 为 `UniGB-UCS2-H`、串内即 UCS-2 码位，**正确的 ToUnicode 就是恒等映射**，故整体换成一条 `<0000><ffff><0000>` 的 bfrange，流长交由 `fix-qdf` 重算。
   - **缺字**：在十六进制串的 4 位码元边界上把 `00b7` 换成 `3001`（顿号，该字在同一子集中有字形），全文恰 7 处、无过匹配。**此前试过在 `(...)` 字面量里按裸字节替换，一次命中 68 处——那些全是跨字边界的巧合，会损坏其它文字**；该失败修法与原因已一并留在 `A-FONT-001` 的 `recalculation_scope`，供后续避坑。
