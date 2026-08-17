@@ -564,6 +564,42 @@ Every card fixes the same fields: users served, spatial carrier, data sources, p
 
 **A tolerance marked `*` has no value yet.** F3's initial 0.20 is published; F1 and F2 are set by the tolerance assembly at BM-1 and are not drafted here. Writing a plausible-looking number for them would be the substitution this proposal spends its length objecting to, so ten cards are marked `operational: false` with the reason stated: nine because the tolerance is unset — those are the nine marked `*` — and S01 because its tolerance is published but its exit threshold is not. The two reasons are different and the file says which is which, rather than letting either gap hide inside a phrase.
 
+<!-- VERIFY:BEGIN -->
+
+The closure error measures whether two readings agree, not whether the thing helped. This proposal declares that limit itself, and until now not one of the twelve cards said how anyone would find out. The control is not newly invented: every card already declared a non-AI equivalent for rights and accessibility reasons — the same task, the same place, without the machine — which is exactly a control and had never been used as one. 8 of the twelve can run a parallel control; the 4 safety cards use a before-and-after instead and say why.
+
+| Card | Scenario | What "it worked" means here | The quantity that answers it | Control |
+|---|---|---|---|---|
+| S01 | Scenario open day and public trial route | Did more people come than without it, and did they look more like who actually lives here | Attendance and the skew of participants' home locations | Parallel (this card&#39;s non-AI path) |
+| S02 | Walking-network breakpoint detection and repair | Were the identified breaks actually repaired, and did the detour on that segment fall | Share of identified breaks repaired, and the change in detour distance | Parallel (this card&#39;s non-AI path) |
+| S03 | Agent business service desk | Did people finish faster, rather than get handed on faster | First-contact completion rate, and the rate of transfer to a staffed counter | Parallel (this card&#39;s non-AI path) |
+| S04 | AI health service navigation | Did navigation send people to the right department without leaving an emergency in place | First-triage accuracy, and missed identifications of an emergency | Before/after (safety) |
+| S05 | Data-asset authorisation chain, made visible | Did residents exercise refusal more once the chain was visible | Withdrawals of consent, and the share of services still usable afterwards | Parallel (this card&#39;s non-AI path) |
+| S06 | Low-speed robot delivery and inspection | Did delivery reduce human legwork rather than shift the burden onto those giving way | Staff hours per delivery, and the count of pedestrian give-way events | Before/after (safety) |
+| S07 | Open collaboration and publication | Was what was published actually used by anybody else | External reuses, and corrections submitted from outside | Parallel (this card&#39;s non-AI path) |
+| S08 | AI cultural guide | After the walk, were people's accounts of this history closer to the record | The change in correct answers on the same question set before and after | Parallel (this card&#39;s non-AI path) |
+| S09 | Everyday-services demonstration street | Did the street reduce the number of trips a daily errand takes | Trips and total walking distance to complete one daily errand | Parallel (this card&#39;s non-AI path) |
+| S10 | Public-safety operations review | Did the review change what happened next, rather than only produce a report | Share of review actions implemented within the next cycle | Before/after (safety) |
+| S11 | AI industry test and validation range | Did devices passing here have fewer incidents once on the street | Street incident rate of devices tested here against comparable untested devices | Before/after (safety) |
+| S12 | Live verification of step-free routes | Did live checking mean one fewer impassable point per trip for a wheelchair user | Impassable points encountered per trip | Parallel (this card&#39;s non-AI path) |
+
+**Three stages, each with a way out:**
+
+1. Prototype: one point, one session, verifying only that a reading can be taken and recomputed
+2. Pilot: run alongside the non-AI equivalent for one full re-survey cycle and compare the effect measure
+3. Rollout: two consecutive cycles no worse than the control on the effect measure, and within tolerance, before adding points
+
+**The effect question is written before the measurement.** A question written after the data is not
+a question. All twelve, with their metrics, ship in `visual/assets/scenario_cards.json`, and
+`scenario_verification_qa` checks each card on every build.
+
+**Four cards run no parallel control and say why.** S04, S06, S10 and S11 are safety scenarios:
+withholding a layer of protection from some people to obtain a cleaner comparison is not a study
+design but a decision that should not be taken. They use a before-and-after at the same place and
+keep the non-AI equivalent available.
+
+<!-- VERIFY:END -->
+
 <!-- CARDS:BEGIN -->
 **2 of the twelve cards can run today and 10 cannot** - not because the design is unfinished but because tolerance F and the trigger thresholds are unset, and the mechanism has those set by the four review parties, not by this proposal. Each card carries operational and not_operational_because in scenario_cards.json; a tolerance class marked * is one of them.
 
