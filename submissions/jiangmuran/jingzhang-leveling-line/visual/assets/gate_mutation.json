@@ -4,6 +4,30 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M112",
+      "gate": "claim_state_qa.py",
+      "target": "manifest.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 E203 那句「如实留 false」放回 `validation_claim` 的说明里，而标志此时是 true——**这正是本包实际提交过的状态，而且它在包里躺了很多轮没人看见**。",
+      "what_en": "Put E203's sentence saying the flag is honestly left false back into the validation_claim explanation while the flag itself is true - **this is the state this package actually shipped in, unnoticed, for many rounds**.",
+      "why_zh": "`manifest.json` 由评审整份读取，所以这一处矛盾没有藏身之处：同一个对象里，标志说被自检过、挂在它上面的说明说没有。本包自己写下过判据——`set_self_checked` 的 docstring 就说「通过自检后仍留 false 是包内自相矛盾，而这一类矛盾正是评审会挑出来的」——然后撞上了它。`claim_state_qa` 此前只问标志是不是 true；**它从不读挨着标志的那句话**。这条变异钉住的是反方向的问题：那句话是否还在说这个标志。",
+      "why_en": "manifest.json is read whole by the review harness, so this contradiction has nowhere to sit: in one object the flag says the package was self-checked and the explanation beside it says it was not. This package wrote the test down itself - set_self_checked's docstring says leaving the flag false after a passing self-check is a package-internal contradiction, and that contradictions of exactly this kind are what review flags - and then walked into it. claim_state_qa only ever asked whether the flag was true; **it never read the sentence next to the flag**. This mutation pins the reverse direction: whether that sentence is still about this flag."
+    },
+    {
+      "id": "M113",
+      "gate": "claim_state_qa.py",
+      "target": "manifest.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 `PKG_` 条数改回手写时代的 43——**这个数字曾经是对的**，它只是没跟着文件一起长。",
+      "what_en": "Change the PKG_ row count back to the hand-typed era's 43 - **that number was once correct**; it simply did not grow with the file.",
+      "why_zh": "手写的数不会随文件一起长：写下时 43 是真的，随后闸门读数涨到 81，而句子一动不动，在评审整份读取的文件里把自己的证据说少了 38 条。本包的规矩是**能现算的数不手写**；这条变异检查那条规矩这一次真的落地了，而不只是写在登记册里。",
+      "why_en": "A typed number does not grow with the file: 43 was true when it was written, the gate readings then rose to 81, and the sentence did not move - understating its own evidence by 38 rows in a file the reviewer reads whole. This package's rule is that a number it can derive is never typed; this mutation checks that the rule actually landed here rather than only being recorded in the register."
+    },
+    {
       "id": "M45",
       "gate": "upstream_validator_qa.py",
       "target": "manifest.json",
@@ -1338,7 +1362,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 109,
+  "caught": 111,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
