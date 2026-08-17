@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v2.4 - 2026-08-17
+
+### 图纸预览一致性：把 A3/A0 预览 PDF 与 v2.2 图件对齐
+
+- v2.3 把 16 张固定图件统一为 v2.2 页脚并嵌入折返规则矩阵与零号折返亭星标，但 `drawings/` 下的 A3 booklets 与 A0 boards 仍是 v1.5（2026-08-09）旧渲染，首页页脚与正文/图件版本戳不一致——评审把 `rendered_preview_paths` 当作视觉证据，版本戳不一致会被视作表达完整度缺口。
+- 本版本仅重新生成 4 份 PDF（A3 booklet 中英 + A0 boards 中英），页脚统一为 "2026-08-16 (v2.2)" 与图件一致，嵌入当前 v2.3 图件（含规则检查矩阵面板与零号折返亭星标），中文章节标题使用内嵌 SimHei 子集字体确保任意渲染器可读。A3 booklet 4 页对应 site-overview / key-areas / land-use-structure / metrics-evidence；A0 boards 2 板对应 masterplan（site-overview + key-areas）与 spatial-systems（mobility-bluegreen + metrics-evidence）。
+- 不修改任何正文、图件、几何、治理文件、指标与合规矩阵；manifest 与 self_check 仅更新 4 份 PDF 的 sha256 与四门复跑结果。不新增任何实施主张。
+
 ## v2.2 - 2026-08-16
 
 ### 机制深标：把折返协议从"一个样例"扩成"十张场景卡的完整规则闭环"
