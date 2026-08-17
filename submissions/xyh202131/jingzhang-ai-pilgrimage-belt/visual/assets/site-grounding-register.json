@@ -1012,6 +1012,32 @@
         "result_after_fix": "0 rows mix standard ids into source_ids; 6 rows carry standard_ids; current self_check and strict scoring pass under the new rule layer; the presentation-contract regression guard (r24 contrast, r25 h2, r27 heading) is now also enforced by the index generator on every regeneration",
         "certification_note": "Namespace separation is a structural compliance check; it is not an approval or a rights grant."
       },
+      "browser_matrix_r37": {
+        "contract_id": "JZ-BROWSER-MATRIX-R37",
+        "executed_at": "2026-08-17",
+        "purpose": "Re-validation of the Round 22 browser QA matrix after the foreign-restore incident (commit b6c05fffe, repaired in Rounds 35-36): prove the interactive and fallback behaviours of both visual pages still hold on the current package bytes",
+        "environment": "Google Chrome headless + Chrome DevTools Protocol + Node.js 22 built-in WebSocket; the same zero-dependency package-external driver as Round 22, repointed to this package",
+        "case_count": 18,
+        "bilingual": ["zh", "en"],
+        "result": "all_pass",
+        "key_measurements": {
+          "viewport_1440x900_page_overflow": false,
+          "viewport_390x844_page_overflow": false,
+          "no_javascript_walk_steps_visible": 5,
+          "no_javascript_library_open": true,
+          "reduced_motion_stays_on_state_01": true,
+          "motion_boundary_at_12_25s_state": "02",
+          "first_focusable_is_skip_link": true,
+          "images_missing_alt": 0,
+          "aria_live_present": true,
+          "h1_count": 1,
+          "console_errors": 0,
+          "failed_requests": 0,
+          "external_hosts": 0
+        },
+        "visual_content_changes": 0,
+        "certification_note": "Programmatic browser verification of layout and interaction only; it is not assistive-technology certification, human visual inspection, field evidence or an approval of any kind."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,
