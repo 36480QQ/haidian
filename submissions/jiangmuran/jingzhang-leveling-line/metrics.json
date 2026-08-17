@@ -1148,6 +1148,26 @@
         "visual/assets/osm_fabric.json"
       ],
       "formula": "dijkstra(walkable OSM graph) summed over consecutive benchmarks in survey order, BM-2 → BM-301 → BM-302 → BM-0 → BM-303 → BM-1",
+      "chain_benchmarks": [
+        "BM-2",
+        "BM-301",
+        "BM-302",
+        "BM-0",
+        "BM-303",
+        "BM-1"
+      ],
+      "excluded_benchmarks": [
+        {
+          "benchmark": "BM-21",
+          "reason_zh": "在本包这份 OSM 可步行图上，与任何其他水准点之间都不存在可步行路径——不是绕得远，是**走不到**。这是现状读数，不是本方案的取舍。",
+          "reason_en": "On this package's walkable OSM graph there is no walkable path between it and any other benchmark at all — not a detour, unreachable. That is a reading about today's ground, not a choice this proposal made."
+        },
+        {
+          "benchmark": "BM-22",
+          "reason_zh": "以支线到达，不在顺线序列上；其步行距离单独登记，不并入这条链，否则同一段路会被算两遍。",
+          "reason_en": "Reached by a spur rather than in line; its walking distance is registered separately and not folded into this chain, which would count one leg twice."
+        }
+      ],
       "confidence": "medium",
       "assumptions": [
         "OpenStreetMap via the Overpass API, ODbL 1.0, in EPSG:4548. Crowd-sourced: absence from the map is not absence from the ground.",
