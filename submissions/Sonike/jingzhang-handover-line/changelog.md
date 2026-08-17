@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+- **修好 PDF 的 ToUnicode 与缺字方框；本地逐维复测 `expression_completeness` 由 4 升到 5（2026-08-17 追加，不改版本号）。** 此前把这两处判为「不可修」，那个诊断是错的：我搜「土地」的 UCS-2 裸字节没找到就断定编码不是 UCS-2，而 **CJK 走的是十六进制串 `<...>`，裸字节搜不到**。重查后十六进制串 `4eac5f204ea463a57ebf` 正是「京张交接线」，`00b7`（`·`）全文恰好 **7 次且全部落在 4 位码元边界上**，与 7 个缺字方框一一对应。
+  - **ToUnicode 的根因**：它写的是 `<0020>→<003f>`、`<0030>→<004f>`、`<0041>→<0060>`——**code→字形索引**而不是 code→Unicode，是 Ghostscript 换嵌字体那一轮生成错的。而 `/Encoding` 为 `UniGB-UCS2-H`、串内即 UCS-2 码位，**正确的 ToUnicode 就是恒等映射**，故整体换成一条 `<0000><ffff><0000>` 的 bfrange，流长交由 `fix-qdf` 重算。
+  - **缺字**：在十六进制串的 4 位码元边界上把 `00b7` 换成 `3001`（顿号，该字在同一子集中有字形），全文恰 7 处、无过匹配。**此前试过在 `(...)` 字面量里按裸字节替换，一次命中 68 处——那些全是跨字边界的巧合，会损坏其它文字**；该失败修法与原因已一并留在 `A-FONT-001` 的 `recalculation_scope`，供后续避坑。
+  - **三引擎交叉复验**：poppler、PyMuPDF、pypdf 抽取一致且与图面相符——A3 第 6 页「八个共享栈，把能力交到下一班」、A0 第 1 页「京张交接线」（修复前分别抽成「頙釮頠銸䐛」「銺㬪銯㾲」）；A3 第 6 页 `·` 计数 0、`、` 计数 7，渲染确认无 .notdef 方框。四套 `qpdf --check` 全 PASS，页数与 `PACKAGE v1.15` 命中数相等（13/13、13/13、6/6、6/6），未嵌入的 CID 中文字体为 0。
+  - `A-FONT-001` 状态转为 **resolved**，正文中英同步改为「图纸中文可读、可打印，**也可检索**」。
+  - **本地逐维复测（同模型 `gpt-5.6-sol`、`high`、同 18 张视觉输入，同版本跑三次）**：`expression_completeness` 由 4 升到 **5（三次全中）**，加权中位由 91.0 升到 **94.0**。仍为 4 的两维：`implementation_feasibility`（repair 要求获授权阶段的实地演练，当前不可做）与 `risk_compliance`（repair 点名要用 OFL 字体重新生成其余七张图件，其生成器需重建）。
+
 - **用官方同款模型跑通逐维度诊断，并按它指出的两项修（2026-08-17 追加，不改版本号）。** 此前一整天只能看到总分，`feasibility=4` 这类维度判断都是从历史 verdict 推的**推测**。本轮用本机 codex 通道跑通了与官方同构的评审：模型 `gpt-5.6-sol`、`reasoning_effort=high`、18 张视觉输入按 `ai_review_submission.py` 的参数逐字复现（图件 5×2；PDF 首页 `pdftoppm -jpeg -jpegopt quality=82,progressive=y,optimize=y -f 1 -l 1 -r 72`；HTML 首屏 Chrome `--window-size=1440,1600`），文本用 `system_instructions + build_prompt + compact_review_input`，输出走 `advisory_review.schema.json`（须先过脚本自带的 `api_response_schema()` 补 `type`，否则 400）。
   - **同版本独立跑三次，逐维中位数**：`brief_alignment` 5、`originality` 5、`ai_planning_innovation` 5、`public_interest_inclusion` 5、`implementation_feasibility` 4、`expression_completeness` 4、`risk_compliance` 4（三次分别 4/4/3），加权中位 **91.0**，三次均判 `request-changes`。**七维中已有五维稳定满分。**
   - **由此得到到 96 的确切算式**：feasibility 的 repair 明确写「在后续获授权阶段」完成实地演练，当前不可做，停在 4 = 16 分；因此 `20+10+15+16+10+10+15 = 96` 只差 `expression` 与 `risk` 各 +1。
