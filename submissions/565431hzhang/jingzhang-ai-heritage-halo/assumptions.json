@@ -5,79 +5,13 @@
       "id": "A-CONTROLS-001",
       "status": "pending_professional_confirmation",
       "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
-      "impact": "Statutory controls need professional confirmation."
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
     },
     {
       "id": "A-GATE-001",
       "status": "design_principle",
-      "statement": "京张四闸实施放行机制：每个项目必须依次通过G0资格闸、G1试点闸、G2放行闸、G3退役闸。缺任一闸则项目保持halted。",
-      "impact": "四闸为概念框架，待主管部门确认标准。"
-    },
-    {
-      "id": "A-BOUNDARY-001",
-      "status": "pending_official_data",
-      "statement": "Official precise polygon not published. Repository provides provisional rough boundaries.",
-      "impact": "All geometry files provisional_constraint, not official redline."
-    },
-    {
-      "id": "A-FIELD-001",
-      "status": "not_authorized",
-      "statement": "No field survey conducted. All AI scenario performance marked unverified.",
-      "impact": "No operational claims without field evidence."
-    },
-    {
-      "id": "A-BUILDING-001",
-      "status": "pending_current_conditions_survey",
-      "statement": "Building counts, heights, function ratios are conceptual estimates.",
-      "impact": "B-level parameters, pending official survey."
-    },
-    {
-      "id": "A-DAZHONGSI-001",
-      "status": "pending_verification",
-      "statement": "Public Issue #1029 notes Dazhongsi provisional key area may be misaligned.",
-      "impact": "Treated as relocatable design container only."
-    },
-    {
-      "id": "A-INVESTMENT-001",
-      "status": "concept_level",
-      "statement": "Investment estimates concept-level (50%). Six projects total 10.4-21.6B RMB.",
-      "impact": "Formal estimates require professional consultancy."
-    },
-    {
-      "id": "A-OPERATION-001",
-      "status": "concept_level",
-      "statement": "Operations governance and phased implementation are conceptual frameworks.",
-      "impact": "C-level assumptions. Pilots should precede capital-intensive construction."
-    },
-    {
-      "id": "A-TRAFFIC-001",
-      "status": "pending_traffic_study",
-      "statement": "道路红线和交通组织方案基于公开资料推断，未经交通影响评价。慢行断点数量和位置需现场踏勘确认。",
-      "impact": "交通方案为概念建议，正式方案需交通影响评价和路口渠化设计。"
-    },
-    {
-      "id": "A-ECOLOGY-001",
-      "status": "pending_ecological_survey",
-      "statement": "绿地系统基于概念设计，未经生态本底调查。清河和小月河的蓝线范围、防洪标准和生态敏感区需水务部门确认。",
-      "impact": "绿地布局和雨洪设施需生态本底调查和蓝线确认后调整。"
-    },
-    {
-      "id": "A-HERITAGE-001",
-      "status": "pending_heritage_survey",
-      "statement": "京张铁路遗址的保护范围和建设控制地带未经文保部门确认。清华园车站旧址的保护等级待定。",
-      "impact": "文保范围内的建设活动需文保审批，可能影响重点区域设计方案。"
-    },
-    {
-      "id": "A-INDUSTRY-001",
-      "status": "concept_level",
-      "statement": "AI产业招商目标(企业数量/类型/规模)基于产业定位推断，未经市场需求调研和招商可行性分析。",
-      "impact": "产业空间比例和招商目标需市场需求调研和产业规划确认。"
-    },
-    {
-      "id": "A-COMMUNITY-001",
-      "status": "pending_public_consultation",
-      "statement": "社区参与方案(社区共建委员会/申诉回退机制)未经居民协商。社区对AI设施和数据采集的接受度未调查。",
-      "impact": "社区参与机制需公示和协商后调整，可能影响AI场景部署节奏。"
+      "statement": "京张四闸实施放行机制：每个项目必须依次通过G0资格闸（权属/资金/审批/运营主体）、G1试点闸（轻量先行90天）、G2放行闸（Go/No-Go评审）、G3退役闸（退役记录）。缺任一闸则项目保持halted。",
+      "impact": "四闸为概念框架，待主管部门和运营主体确认闸门标准和评审流程。"
     }
   ]
 }
