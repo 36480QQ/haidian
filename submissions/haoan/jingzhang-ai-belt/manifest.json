@@ -102,7 +102,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "bf1e4fdd9e534f2800d3fc5ec315c1ee2d9a52fc1b9b0ecdde15e3cc0fc24382"
+      "sha256": "d75b99f9eb215300da64af79e8995ba9f9aa957c2921365e48e5408d06c98fdd"
     },
     {
       "path": "compliance_matrix.json",
@@ -188,14 +188,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "9609c9deeb57ff4e82a49188493549bbe9d5c7c1b02c06b6789a27c3eb069ea4"
+      "sha256": "299d51fd4486fca344e14ebce6a51c007120d5c869b66baf657b9139ce9283f1"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8847efe5d8148a3be815757e846f758630391cb44651fe6f5f8f4be0f3403252"
+      "sha256": "d967998a00f2fa1887eba8f31d19f7c18769c1561740641d5eb02b34b0a0d337"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -321,7 +321,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "9aedf5c5ff879030e7e17589b1c7a717847ed8318eac2a97e8604f0a0822e84a"
+      "sha256": "05b22c02c38381c2c61b1e281cd1fc320e9555cf7c7a830fbde2feb2c7215dfb"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -329,7 +329,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "14730cb7d06414d990cbe89d035d7a1b1d70338877c7dc53b6e8f3d9715f76b8"
+      "sha256": "79da38b1545ea4d60a5fae58caa403dcd7be8a99bbedcb1b921f49685c5b6d69"
     },
     {
       "path": "assets/media/guided-tour.mp4",
@@ -343,7 +343,7 @@
       "poster": "assets/media/cover.png",
       "caption": "assets/media/guided-tour-zh.vtt",
       "transcript": "assets/media/guided-tour-transcript.md",
-      "sha256": "b426b83d5865a55f0801144f8eedbc2098a801a43272e8a91a2f29f35039a0d2"
+      "sha256": "ba7de91596f76fa5c83653978ef88ba694c1d21062ef2ab3f9781ffc4603c7d0"
     },
     {
       "path": "assets/media/guided-tour-zh.vtt",
@@ -372,7 +372,7 @@
       "title_en": "Jing-Zhang AI Spine cover",
       "description_zh": "封面：方案名、三核、核心指标与 provisional 声明一屏概览。",
       "description_en": "Cover: proposal name, three cores, core metrics and the provisional disclaimer at a glance.",
-      "sha256": "cba5540390d2904891a85433b1ca8658f08c546a501b1229150593fbf65ca91d"
+      "sha256": "1f178b84673c30b041c41a3e2fefb49124f4befafc0d3b3340bf1119f7cb8dbb"
     }
   ],
   "validation_claim": {
