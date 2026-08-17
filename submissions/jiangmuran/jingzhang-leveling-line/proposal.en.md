@@ -145,6 +145,8 @@ These are not three unrelated drawing sets. The research area decides **what to 
 
 **That park's name occurred zero times in this document.** It was called the surveyed park and the heritage park, and handled in one register only: as the object **1,116.7 m** away from this package's inferred spine. The fifth design requirement uses the same vocabulary - a vitality belt along that park, working with the phases already built - and that phrase was absent too (E240).
 
+**An approved statutory plan now covers this belt.** The block-level regulatory detailed plan **HD00-1601** and adjacent blocks along the Jing-Zhang Rail Heritage Park was **approved 2026-08-11**: about **1,668.2 ha**, **nine blocks**, structured as one belt, one axis, two centres and multiple nodes [source:HAIDIAN-CONTROL-PLAN-HD00-1601]. **That one belt is the belt this spine follows**, and one of the two centres is **Dazhongsi**, one of this proposal's three key areas. This proposal therefore positions itself as conceptual deepening above that plan, not a parallel set of conclusions: it does not rewrite the structure and infers no drawing data from a news account — redlines, plot ratio, height and setbacks stay empty under A-CONTROLS-001.
+
 **This is a position, not a label.** The spine is **not a corridor waiting to be built** but interface stitching and reach completion on ground already open; the 1,116.7 m reading is unchanged but now also states **the distance the spine must be brought home by when the official polygons publish**. Reach completion is measured by FIG.21's fifteen-minute rule, stitching by the eleven named points. The announcement's boundary streets for both scopes are tabulated in the Chinese edition, unaltered. **Scope**: no conclusion is offered on the park's built phases, which need its original scheme and would be a data gap. What changes is where this proposal puts itself: **on built public ground rather than on a blank sheet.**
 
 <!-- SCOPEANCHOR:END -->
@@ -916,7 +918,7 @@ The interchange takes **1207 urban road land**, the only transport code in the p
 | Cultural use | 0803 | Where the origin benchmark stone and public evidence hall sit; the core of BM-0 [data:geometry/land_use.geojson#LU-001,LU-B01,LU-B02,LU-B03] |
 | AI R&D and research | 0802 | The extent of the Zhongzhiyuan first-order benchmark [data:geometry/land_use.geojson#LU-002,LU-B04] |
 | Community services and talent support | 0702 | The extent of the AI Origin Community [data:geometry/land_use.geojson#LU-003] |
-| Industry and commercial services | 05 | The extent of the Dazhongsi high-frequency reading point [data:geometry/land_use.geojson#LU-004,LU-B05] |
+| Industry and commercial services | 09 | The extent of the Dazhongsi high-frequency reading point [data:geometry/land_use.geojson#LU-004,LU-B05] |
 | Park, green and open space | 1401 | The spine green corridor [data:geometry/land_use.geojson#LU-005] |
 | Urban and rural road land | 1207 | The station-hall approach where stop and benchmark coincide [data:geometry/land_use.geojson#LU-B06] |
 | **Left blank by this proposal** | **16** | The existing built-up area outside the above [data:geometry/land_use.geojson#LU-006,LU-007,LU-008,LU-009,LU-010,LU-011,LU-012,LU-013,LU-014,LU-015,LU-016] |
@@ -1494,16 +1496,16 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-288 entries. By finder:
+291 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 27 | Run against the shipped package, not a draft |
-| The author | 188 | Found while working |
+| The author | 189 | Found while working |
 | This package's own gate | 20 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 17 | Seen elsewhere, absent here |
+| Reading a rival's package | 19 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1511,8 +1513,8 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 | Shape | Count |
 |---|---|
-| An easy measure | 52 |
-| Two copies drifted | 42 |
+| An easy measure | 53 |
+| Two copies drifted | 43 |
 | Shipped unseen | 30 |
 | Outlived the package | 20 |
 | Uncheckable | 20 |
@@ -1521,7 +1523,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | A reference did not resolve | 12 |
 | Not itself | 12 |
 | Outlived its line | 9 |
-| A source unnameable | 7 |
+| A source unnameable | 8 |
 | Geometry not meaning it | 7 |
 | Answers what it cannot | 7 |
 | A total excluding | 6 |
@@ -1805,7 +1807,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.76 s**; 9 files, 1163 KB, 1,814 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files, 1166 KB, 1,818 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

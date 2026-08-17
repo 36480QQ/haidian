@@ -838,7 +838,7 @@
       "caught": true,
       "exit_code": 1,
       "named_the_damage": true,
-      "what_zh": "把本包对自己来源构成的自陈从「6 条」改成「9 条」——**登记册一条没动**，动的是这份包对自己说的话，而且改的方向是让缺口看起来小一些。",
+      "what_zh": "把本包对自己来源构成的自陈从「7 条」改成「9 条」——**登记册一条没动**，动的是这份包对自己说的话，而且改的方向是让缺口看起来小一些。",
       "what_en": "Change this package's own statement about its evidence base from six locally published source to four. **The registry does not change**; what changes is what the package says about itself, in the direction that makes the gap look smaller.",
       "why_zh": "**一份自陈缺口的文件，最容易失真的方向就是把缺口说小。** 这条变异要证明的是：这句话由 `sources.json` 现算核对，说小了会被拦下。",
       "why_en": "**A document that declares its own gaps is most likely to deform in the direction of making them smaller.** The mutation proves the sentence is recomputed against sources.json and an understatement is caught."
@@ -986,6 +986,19 @@
       "what_en": "Change a **safety** card's control from before-and-after to a parallel control — that is, withhold a layer of protection from some people so the comparison comes out cleaner. **Not a word of the card changes**; only which kind of control it says it runs.",
       "why_zh": "**这不是一个研究设计问题，是一个不该做的决定。** 闸门要求：凡声明并行对照的卡，其对照文本必须就是这张卡自己声明的非 AI 等价路径；安全类卡一旦改口说自己并行，那段文本对不上，构建就停。**一个未经声明就把人置于更少保护之下的比较，正是本方案通篇反对的那种做法。**",
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
+    },
+    {
+      "id": "M110",
+      "gate": "pdf_page1_qa.py",
+      "target": "build_drawings.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 A3 文册封面那行地名换成一句不含地名的口号——**页面照样排得出、照样好看**，改的只是它还说不说得出自己画的是哪里。",
+      "what_en": "Replace the place line on the A3 booklet cover with a slogan carrying no place name — **the page still composes and still looks finished**; what changes is whether it can say where what it draws is.",
+      "why_zh": "主办方对每份 PDF 只取第 1 页，而文册的第 1 页就是封面：**这一页是评审就这份文册所能看到的全部。** 封面此前写了机制、闭合规则与六项读数，一个地名都没有；而 `brief_alignment` 占 20%，问的正是本方案是否围绕这条带、三层范围与三大重点片区展开。地名由 `key_areas.geojson` 现算，因此这道检查读的是合版后的矢量源——**不是对成品 PDF 做文本抽取**：封面自己的标题就抽不出来，抽取分不清「写了地名」和「没写地名」。",
+      "why_en": "The harness takes page 1 only of each PDF and the booklet's page 1 is its cover, so **that page is the whole of this deliverable the reviewer sees**. The cover used to state the mechanism, the closure rule and six readings and name no place at all, while brief_alignment — 20% of the weighted score — asks whether the proposal is built around this belt, this scope and these three areas. The names are recomputed from `key_areas.geojson`, and this check reads the composed vector source rather than **extracting text from the finished PDF**: the cover's own title does not extract, so extraction cannot tell a named page from an unnamed one."
     },
     {
       "id": "M60",
@@ -1313,7 +1326,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 107,
+  "caught": 108,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
