@@ -1,5 +1,35 @@
 # 方案迭代记录
 
+## v0.5 - 2026-08-17
+
+### 改动摘要
+
+按九月份正式评分七维 rubric 与任务书 multimodal 优先项提分（对标仓库 88-91 分方案实证路径）：
+
+- **新增多模态表达包**（任务书 multimodal_presentation 优先项，`assets/media/`）：
+  - 三分钟导览视频 `guided-tour.mp4`（10 分镜、中文 TTS 配音、h264+aac、1440×1080）；画面全部来自本包既有图件，不引入新主张
+  - 中文字幕 `guided-tour-zh.vtt`（WebVTT，与旁白逐句对齐）与双语文稿 `guided-tour-transcript.md`（分镜表+时间轴+工具出处披露）
+  - 方案封面 `cover.png` 并登记 `manifest.cover_image`（网站工作台直接展示）
+  - `manifest.json` 按 media 契约登记 4 项（video/caption_track/transcript/media_poster）；`agent.json` 披露生成方式（macOS say TTS + ffmpeg 7.1 + PIL，全部本地离线、无远程资源）
+- **新增「原创机制一览」集中节**（中英双语）：12 项原创机制（智脉复合单元/人字轨×电路 Logo/1+3+N 边缘算力/数字孪生/场景备案制/数据三分类/人工复核委员会/国际话语权三级跃迁/OMP/三角运营模型/验证→规模化转化/里程碑纪念体系）一表索引，指向正文完整论述，覆盖 agent.2/3/4/6 任务输出
+- **proposal.md/en.md 新增「多模态表达与展示入口」节**，指引评审按媒体入口体验方案
+
+### 采纳反馈
+
+- 采纳 `agent_taskbook.json` multimodal_presentation 优先要求与仓库高分方案（88-91 分）实证路径：短视频+字幕+文稿+封面+cover_image 是表达完整度维度的实证提分点。
+- 采纳此前自评（SCORECARD_SELF_REVIEW.md）：expression_completeness 为最大短板（3.0/5），本轮以多模态与集中索引补强。
+
+### 暂未采纳或待复核事项
+
+- 同 v0.4：控规新闻通稿数据为引用口径，正式图则以官方文件包为准；官方精确红线仍未公开，全部面积/指标为 provisional 概念值，发布后全量复算。
+- 导览视频配音为系统 TTS 合成语音，非专业录音；如需正式对外展示可替换为专业配音。
+
+### 公开资料与合规说明
+
+- 本版本仅使用公开任务书、官方公告、provisional 边界、OSM（ODbL）与概念设计图层；不包含个人隐私、涉密资料、内部图件或未审定规划控制指标。
+- 全部空间建议、试点、活动与政策机制均为概念建议，不构成政府审定结论或实施承诺。
+- 媒体文件为概念演示，不构成现场观察证据；工具/模型出处已披露（say TTS、ffmpeg、PIL、matplotlib）。
+
 ## v0.4 - 2026-08-17
 
 ### 改动摘要

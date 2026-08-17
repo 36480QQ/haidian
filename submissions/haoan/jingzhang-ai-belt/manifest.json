@@ -15,7 +15,7 @@
     "model_detail": "DeepSeek V4 Flash (text reasoning); figures/drawings generated deterministically with matplotlib/shapely/pyproj from submission geometry; all content AI-generated with provenance disclosed.",
     "contact_email": "412031744@qq.com"
   },
-  "generated_at": "2026-08-16T14:05:18Z",
+  "generated_at": "2026-08-17T08:40:00Z",
   "files": [
     {
       "path": "assets/figures/network-synergy.png",
@@ -72,13 +72,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1306b4412a79785c4eaa19c07e20e11a18610a3437ca5db2f4d9a04c20c71f34"
+      "sha256": "d968dddcffc3e196b4159704ae7678a8742b0c69cc009b4c65ebfbe3f579a752"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "8fb6cbc5b9b9ba7b61bee508dc0a3e77e161a61b2a250c2ded1abb806bd7432b"
+      "sha256": "e61a00dd50183f6a341dd54373a2ce343a1144418b974f6e3d94c7a93caccf15"
     },
     {
       "path": "metrics.json",
@@ -102,7 +102,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e8411e15bbf0e4d0f455980ddca06e23d8f0e4d878f24a063e4ea2d00d34f19b"
+      "sha256": "da4146fbe83bbfd4d84a2f9dc64ebccb557e4edfe18a5c4e41d4a1635431e039"
     },
     {
       "path": "compliance_matrix.json",
@@ -127,7 +127,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7618b374293e963a7bd8f87738cdda32a0668844d740b2a29c3d9500643005e5"
+      "sha256": "75d4619d158429ea55037aaf6f12e3af275333cd723f65cb83f123bacbbb7a2a"
     },
     {
       "path": "report/narrative.md",
@@ -195,7 +195,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f474cd81a1ad6b5f2ab42023a32693159b4aa6b4baed2d07a4cc26b35ae99b34"
+      "sha256": "7a3769520e8ac0556a509d4966a638928e4754b15c687b0bf935d13fe465f20b"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -257,7 +257,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "52fadb837866609d1528cb1239342a77dc32c3193c8c2376996a6ace4683c9f0"
+      "sha256": "be5555f24e7e99c86597dbfc0c8508da295f70c4654498e876a233b0afced04d"
     },
     {
       "path": "report/proposal.en.html",
@@ -265,7 +265,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "325b07491c43542eeb51d70c4f4530152432a01f047922b46f273a033f0b34c9"
+      "sha256": "85e97f70cf8787d638d396ddc719629000960682d562e260be4e67cb77bed7d8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -330,6 +330,49 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "2f51608ca8e3354680f02a4dfac3257512f339d9bc47a2a295b25bf02daa09cd"
+    },
+    {
+      "path": "assets/media/guided-tour.mp4",
+      "role": "video",
+      "required": false,
+      "language": "zh",
+      "title_zh": "京张智脉三分钟导览",
+      "title_en": "Jing-Zhang AI Spine: 3-Minute Guided Tour",
+      "description_zh": "中文配音导览视频：10 个分镜覆盖总体概念、三核分工、指标复算、区域协同、场景机制与边缘算力布局；画面全部来自本包图件，不引入新主张。",
+      "description_en": "Narrated tour in Chinese: 10 shots covering the overall concept, three cores, metric recomputation, regional synergy, scenario mechanisms and edge-computing layout; every frame comes from this package's own figures and introduces no new claims.",
+      "poster": "assets/media/cover.png",
+      "caption": "assets/media/guided-tour-zh.vtt",
+      "transcript": "assets/media/guided-tour-transcript.md",
+      "sha256": "37abb136ac6d7be5114f0dcbc253cfead338867fe345ef3cf86164041943e950"
+    },
+    {
+      "path": "assets/media/guided-tour-zh.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "zh",
+      "sha256": "7e161f97ddb4b5e103248d1428372dce998e3e16de6f65f4ab3f1cffd6834a2d"
+    },
+    {
+      "path": "assets/media/guided-tour-transcript.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "title_zh": "京张智脉三分钟导览双语文稿",
+      "title_en": "Guided tour bilingual transcript",
+      "description_zh": "分镜表 + 中英逐句文稿 + 时间轴 + 工具出处披露（say TTS / ffmpeg / PIL）。",
+      "description_en": "Shot list, sentence-by-sentence bilingual script, timeline, and tool provenance (say TTS / ffmpeg / PIL).",
+      "sha256": "d38bfa3c651e01ea8f097a87f776100667c57ad13fad16f26780a4948f81cddb"
+    },
+    {
+      "path": "assets/media/cover.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "京张智脉方案封面",
+      "title_en": "Jing-Zhang AI Spine cover",
+      "description_zh": "封面：方案名、三核、核心指标与 provisional 声明一屏概览。",
+      "description_en": "Cover: proposal name, three cores, core metrics and the provisional disclaimer at a glance.",
+      "sha256": "cba5540390d2904891a85433b1ca8658f08c546a501b1229150593fbf65ca91d"
     }
   ],
   "validation_claim": {
@@ -337,5 +380,6 @@
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.png"
 }

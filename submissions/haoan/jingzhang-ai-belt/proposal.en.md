@@ -26,6 +26,38 @@ All spatial recommendations in this proposal are **concept proposals, reference 
 
 ![Master concept and evidence relations](assets/figures/site-overview.en.png)
 
+### Multimodal Presentation and Experience Entry Points
+
+Following the taskbook requirement that proposals are ultimately for people to read, watch, and experience [source:DATA-SRC-AGENT-TASKBOOK-20260518], this package provides multimodal presentation (all local and offline; no remote resources, no autoplay):
+
+- **Three-minute guided tour**: `assets/media/guided-tour.mp4` (Chinese narration + Chinese captions `assets/media/guided-tour-zh.vtt` + bilingual transcript `assets/media/guided-tour-transcript.md`); every frame comes from this package's own figures and introduces no new claims
+- **Cover**: `assets/media/cover.png` (proposal name, three cores and core metrics at a glance; registered as `manifest.cover_image`)
+- **Offline interactive page**: `visual/index.html` and `visual/index.en.html` (Canvas layer toggling; core metric `data-value` matches `metrics.json`)
+- **Drawings and reading versions**: `drawings/a3-booklet.pdf` (13 pages) / `drawings/a0-boards.pdf` (8 boards, bilingual) and `report/proposal.html`
+
+All media are conceptual presentation and design expression, not observed site evidence; tools, models and generation methods are disclosed in `guided-tour-transcript.md` and `manifest.json`.
+
+## Index of Original Mechanisms
+
+Centralized index of the original concepts and mechanisms this proposal contributes to "AI × city" (all conceptual; full arguments appear in the main text [agent.1][agent.4]):
+
+| # | Original mechanism (concept) | One-liner | Section |
+|---|---|---|---|
+| 1 | AI-Spine Mixed-Use Units (integration-led) | 7 mixed "innovation × livability" units along the belt; industry and residence co-located | Overall-level structure |
+| 2 | "Human-Switchback × Circuit" logo motif | Qinglongqiao switchback lines isomorphic with IC traces; human-machine symbiosis | Naming & visual identity |
+| 3 | 1+3+N edge-computing system | 1 city-agent center + 3 regional hubs + N station compute boxes; power nearby, shared corridors, scenario-bound | Edge-computing layout |
+| 4 | Digital-twin mapping framework | 6-layer physical-digital mapping with twin_id geofences; scenario test boundaries equal twin boundaries | Digital twin |
+| 5 | Scenario open-filing and full lifecycle | Apply → safety review → filing → trial → monitoring → formalize/exit, human-reviewable | AI governance |
+| 6 | Three-tier data governance | Public/enterprise/personal data with tiered authorization, minimization and destruction boundaries | AI governance |
+| 7 | Human review committee | Quarterly reviews and termination power with residents/experts/enterprises/universities/government | AI governance |
+| 8 | International discourse three-step jump | Local validation → standard export → global co-building; annual benchmark and Jing-Zhang Declaration | International discourse |
+| 9 | Open Milestone Pass (OMP) | Bronze/silver/gold/diamond milestones + spatial rights + GitHub binding | OMP |
+| 10 | Triangle operation model & three funding sources | Government guidance / park operator / developer co-creation; public-quasi-market split | Operation model |
+| 11 | Scenario "validation→scaling" conversion | KPI-threshold promotion, exit when unmet, auditable ledger | Implementation assurance |
+| 12 | Milestone monument commemoration system | Railway milestone culture into AI contribution honors and physical commemoration | Landmarks |
+
+These 12 mechanisms cover agent.2 (ecosystem mechanisms), agent.3 (scenario mechanisms), agent.4 (spatial carriers) and agent.6 (operation mechanisms), consistent with the item-by-item mapping in `compliance_matrix.json` [agent.1][agent.2][agent.3][agent.4][agent.6].
+
 ## Site Understanding and Policy Basis
 
 ### Historical Thread: A Railway that Materialized Self-Reliance
