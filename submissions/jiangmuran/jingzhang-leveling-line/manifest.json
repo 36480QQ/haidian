@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-17T13:41:51-07:00",
+  "generated_at": "2026-08-17T13:46:41-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -1183,15 +1183,15 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "medium",
     "extensions": {
       "x-self-checked-reason": {
         "schema_version": "0.1",
         "data": {
-          "why_false_zh": "组织方的 `--mark-self-checked` 会用它自己的 checks 数组重写 `self_check.json`，那会删掉本包写在其中的 43 条 `PKG_` 读数；而此后对该文件的任何一次写入都会使这个标志所针对的摘要失效，标志随即回到 false。因此本包选择保留读数、如实留 false，而不是让标志好看。四道组织方闸门的实跑结果在 `self_check.json` 里逐条可读。",
-          "why_false_en": "The organisers' --mark-self-checked rewrites self_check.json with its own checks array, which would delete the 43 PKG_ readings this package writes there; and any later write to that file invalidates the digest the flag was set against, returning it to false. So the readings are kept and the flag is left false rather than made to look better. The four organiser gates and their results are readable row by row in self_check.json.",
+          "why_not_mark_self_checked_zh": "组织方的 `--mark-self-checked` 会用它自己的 checks 数组重写 `self_check.json`，那会删掉本包写在其中的 81 条 `PKG_` 读数——正是让这份文件值得一读的那些闸门读数。因此本包不用那个开关：本函数在每次刷新时先把这个标志清为 false（新摘要尚未被核过），再由 `finalise_claim` 在**通过**的一次运行之后置回 true；manifest 不含自身的摘要，写这一个字段不会使任何摘要失效。四道组织方闸门的实跑结果在 `self_check.json` 里逐条可读。",
+          "why_not_mark_self_checked_en": "The organisers' --mark-self-checked rewrites self_check.json with its own checks array, which would delete the 81 PKG_ readings this package writes there - the gate readings that make the file worth reading. So that switch is not used: this function clears the flag on every refresh, because digests nobody has checked yet cannot be claimed as checked, and finalise_claim sets it back to true after a passing run. The manifest carries no digest of itself, so writing this one field invalidates nothing. The four organiser gates and their results are readable row by row in self_check.json.",
           "four_gate_result_lives_in": "self_check.json"
         }
       }
