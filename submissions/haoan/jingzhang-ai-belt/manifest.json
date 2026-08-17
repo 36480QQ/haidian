@@ -78,7 +78,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "e61a00dd50183f6a341dd54373a2ce343a1144418b974f6e3d94c7a93caccf15"
+      "sha256": "ce67f8fbd8e57fb6282610d5b7cd48d0aa812ff8fb06ae7290a2d999e78b13b3"
     },
     {
       "path": "metrics.json",
@@ -102,7 +102,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0e7ae51fdc36efc101e5289ce7500e24429d6208be32eda8f8fc3dff0083fc56"
+      "sha256": "bf1e4fdd9e534f2800d3fc5ec315c1ee2d9a52fc1b9b0ecdde15e3cc0fc24382"
     },
     {
       "path": "compliance_matrix.json",
@@ -343,14 +343,14 @@
       "poster": "assets/media/cover.png",
       "caption": "assets/media/guided-tour-zh.vtt",
       "transcript": "assets/media/guided-tour-transcript.md",
-      "sha256": "e86b202d8618af8082d67f40ba87de50113ec01f934ebb1025356895066072c7"
+      "sha256": "b426b83d5865a55f0801144f8eedbc2098a801a43272e8a91a2f29f35039a0d2"
     },
     {
       "path": "assets/media/guided-tour-zh.vtt",
       "role": "caption_track",
       "required": false,
       "language": "zh",
-      "sha256": "63fa18f0189fcae3f7c0a94c89e246aa9f672136672f8b8e2207fa6b3f9bae88"
+      "sha256": "71afc825571256b186ade317ef7688a92ef673c17f302432e837b148787c2791"
     },
     {
       "path": "assets/media/guided-tour-transcript.md",
@@ -361,7 +361,7 @@
       "title_en": "Guided tour bilingual transcript",
       "description_zh": "分镜表 + 中英逐句文稿 + 时间轴 + 工具出处披露（say TTS / ffmpeg / PIL）。",
       "description_en": "Shot list, sentence-by-sentence bilingual script, timeline, and tool provenance (say TTS / ffmpeg / PIL).",
-      "sha256": "c52844cc19bb8b140740589505833c982795d2370b27b71c62ec0d7cc18cd357"
+      "sha256": "62a4ec7b33faecc91589921be18d57f1f104878cc9256093b762db0333e86134"
     },
     {
       "path": "assets/media/cover.png",
