@@ -1225,9 +1225,22 @@
       "what_en": "Make the window declare the span it asked for instead of the ground it draws — the wording as it stood before the fix. The scale is set by the tighter axis, so the frame carries 1,667 m of real ground east-west while declaring 1,500 m.",
       "why_zh": "**照 1,500 m 见方去量这三幅平面，每一段东西向距离都短读 11%。** 这条闸门本来就在，只查了那张把比例写进属性的剖面，而三张把范围写进句子的平面，谁也没查——变异证明：画框除以自己申报的比例，一旦不等于自己申报的范围，构建就停。",
       "why_en": "**Scaled against a 1,500 m square, every east-west distance in these three plans reads 11% short.** The gate already existed and checked the one drawing that declared its scale in an attribute, while three drawings declaring an extent in a sentence were covered by nothing. The mutation proves the build stops when a frame divided by its own declared scale does not equal its own declared extent."
+    },
+    {
+      "id": "M101",
+      "gate": "resource_frame_qa.py",
+      "target": "fig_phasing.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把维护工时从分期运营成本里再拿掉一次——**这正是修复前的状态**。系数一个没改，少的是一整项：换件与换件的工。",
+      "what_en": "Drop the maintenance hours from the per-phase running cost again — **exactly the state before the fix**. No coefficient changes; what goes missing is a whole term: part swaps and the labour they take.",
+      "why_zh": "**一份忘了维护的运营成本，永远显得可持续。** 这一项的缺席，正是让一套靠维护活着的机制在纸面上负担得起、在第三年负担不起的那一项。本包已经因为同一处遗漏改过一次（FIG.18 说换件已计入而表里没有），而这个函数是在那次修复之后写的，又漏了一次——变异证明：两条推导一旦对不上，构建就停。",
+      "why_en": "**A running cost that forgets upkeep always looks sustainable.** This is the term whose absence makes a maintenance-dependent mechanism affordable on paper and unaffordable in year three. The package has already been corrected once for the same omission — FIG.18 said its part swaps were in the table and they were not — and this function was written after that fix and dropped them again. The mutation proves the build stops the moment the two derivations disagree."
     }
   ],
-  "caught": 100,
+  "caught": 101,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1276,6 +1289,7 @@
     "project_dependency_qa.py",
     "reading_calendar_qa.py",
     "registry_alignment_qa.py",
+    "resource_frame_qa.py",
     "review_rules_qa.py",
     "risk_join_qa.py",
     "role_spec_qa.py",
@@ -1340,6 +1354,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 71 道闸门，其中 68 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 71 gates, 68 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 72 道闸门，其中 69 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 72 gates, 69 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
