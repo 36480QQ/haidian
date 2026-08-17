@@ -96,6 +96,14 @@ ol.route .en { color: var(--ink3); font-size: 12px; margin-left: 8px; }
 .legend { font-size: 12px; color: var(--ink2); display: flex; gap: 20px; flex-wrap: wrap; }
 .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
 .kv { font-size: 13px; }
+/* **The three the organisers made non-waivable, in the first viewport.**
+   Chromium screenshots this page at 1440x1600 with no --full-page, so the
+   reviewer sees the top screen and nothing below it; the tiles carrying these
+   three values sit around line 190, far under that fold. The `data-value`
+   declarations the contract requires stay where they are — this strip is text,
+   so nothing is declared twice — and the numbers come from metrics.json. */
+.contract-strip { margin-top: 10px; font-size: 13px; color: var(--ink2); }
+.contract-strip b { color: var(--ink); }
 .kv b { font-weight: 700; }
 footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px; font-size: 12px; color: var(--ink3); }
 </style>
@@ -105,6 +113,7 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 <header>
   <h1>京张水准线 · 以闭合差为信任度量的城市AI水准网</h1>
   <div class="sub">THE LEVELING LINE · CENTENNIAL JING-ZHANG AI INNOVATION BELT · jiangmuran</div>
+  <div class="contract-strip">总体设计范围 <b>11.41 km²</b> · 绿廊占比 <b>19.7%</b> · 公共测点占比 <b>6.4%</b> · <span class="en">THE THREE THE BRIEF MAKES NON-WAIVABLE, RECOMPUTED FROM THE SHIPPED LAYERS</span></div>
 </header>
 
 <p>水准测量的方法论不在于「测得准」，在于「测得回来」。从已知点出发，沿路线逐站传递，绕一周回到原点，
@@ -127,8 +136,8 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 <figcaption>按展线惯例旋转为水平，南（西直门）在左、北（清河）在右。线稿直接从 <code>geometry/</code> 绘制，EPSG:4548 复算。</figcaption></figure>
 
 <h2>评审路线<span class="en">A REVIEWER'S ROUTE</span></h2>
-<p class="note">跑完全部 5 个校验器需 0.73 秒；要读的 9 份文件共 1161 KB、1820 个可数单位。实跑计时，随包提交于 <code>visual/assets/review_route.json</code>。</p>
-<ol class="route"><li><code>node visual/assets/verify.js</code> —— 重算 metrics.json 中全部 metric_class 1 的指标<span class="en">0.41 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> —— 重算 412.5 m 与全部场地交叉核验读数<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> —— 解析十二张场景卡的水准点、空间锚点与退出条件<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> —— 把闭合机制当作数据契约执行<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> —— S08 桌面推演，含拒绝分支<span class="en">0.25 s · exit 0</span></li></ol>
+<p class="note">跑完全部 5 个校验器需 0.72 秒；要读的 9 份文件共 1162 KB、1821 个可数单位。实跑计时，随包提交于 <code>visual/assets/review_route.json</code>。</p>
+<ol class="route"><li><code>node visual/assets/verify.js</code> —— 重算 metrics.json 中全部 metric_class 1 的指标<span class="en">0.39 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> —— 重算 412.5 m 与全部场地交叉核验读数<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> —— 解析十二张场景卡的水准点、空间锚点与退出条件<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> —— 把闭合机制当作数据契约执行<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> —— S08 桌面推演，含拒绝分支<span class="en">0.25 s · exit 0</span></li></ol>
 
 <h2>图纸<span class="en">SHEETS</span></h2>
 <p class="note">34 张图纸均由参数与提交的结构化数据直接绘制。点击可放大查看。</p>

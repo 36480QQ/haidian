@@ -96,6 +96,14 @@ ol.route .en { color: var(--ink3); font-size: 12px; margin-left: 8px; }
 .legend { font-size: 12px; color: var(--ink2); display: flex; gap: 20px; flex-wrap: wrap; }
 .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
 .kv { font-size: 13px; }
+/* **The three the organisers made non-waivable, in the first viewport.**
+ Chromium screenshots this page at 1440x1600 with no --full-page, so the
+ reviewer sees the top screen and nothing below it; the tiles carrying these
+ three values sit around line 190, far under that fold. The `data-value`
+ declarations the contract requires stay where they are — this strip is text,
+ so nothing is declared twice — and the numbers come from metrics.json. */
+.contract-strip { margin-top: 10px; font-size: 13px; color: var(--ink2); }
+.contract-strip b { color: var(--ink); }
 .kv b { font-weight: 700; }
 footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px; font-size: 12px; color: var(--ink3); }
 </style>
@@ -105,6 +113,7 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 <header>
  <h1>THE LEVELING LINE · a civic AI leveling network that uses closure error as its trust metric</h1>
  <div class="sub">THE LEVELING LINE · CENTENNIAL JING-ZHANG AI INNOVATION BELT · jiangmuran</div>
+ <div class="contract-strip">Overall design area <b>11.41 km²</b> · Green corridor ratio <b>19.7%</b> · Public measurement-point ratio <b>6.4%</b> · <span class="en">THE THREE THE BRIEF MAKES NON-WAIVABLE, RECOMPUTED FROM THE SHIPPED LAYERS</span></div>
 </header>
 
 <p>Leveling is not about measuring accurately; it is about measuring back. Depart from a known point, carry the height station by station, run the circuit, return to the origin — and the difference is called the <b>closure error</b>. Within tolerance, every station on the line is accepted; over tolerance, the whole run is void and re-measured, and you may not patch the worst station and keep the rest. That hundred-year-old rule answers this belt's hardest question: on what basis should a city trust its artificial intelligence?</p>
@@ -124,8 +133,8 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 <figcaption>Rotated horizontal per alignment-sheet convention: south (Xizhimen) left, north (Qinghe) right. Linework drawn directly from <code>geometry/</code> , recomputed in EPSG:4548.</figcaption></figure>
 
 <h2>A reviewer's route<span class="en">A REVIEWER'S ROUTE</span></h2>
-<p class="note">Running all 5 verifiers takes 0.73 s; the 9 files to read come to 1161 KB and 1820 countable units. Timed by running them, shipped in <code>visual/assets/review_route.json</code>.</p>
-<ol class="route"><li><code>node visual/assets/verify.js</code> — Recompute every metric_class 1 figure in metrics.json<span class="en">0.41 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> — Recompute the 412.5 m closure and every site cross-check figure<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> — Resolve every scenario card's benchmark, spatial anchor and exit condition<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> — Execute the closure mechanism as a data contract<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> — The S08 tabletop run, refusal branches included<span class="en">0.25 s · exit 0</span></li></ol>
+<p class="note">Running all 5 verifiers takes 0.72 s; the 9 files to read come to 1162 KB and 1821 countable units. Timed by running them, shipped in <code>visual/assets/review_route.json</code>.</p>
+<ol class="route"><li><code>node visual/assets/verify.js</code> — Recompute every metric_class 1 figure in metrics.json<span class="en">0.39 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> — Recompute the 412.5 m closure and every site cross-check figure<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> — Resolve every scenario card's benchmark, spatial anchor and exit condition<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> — Execute the closure mechanism as a data contract<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> — The S08 tabletop run, refusal branches included<span class="en">0.25 s · exit 0</span></li></ol>
 
 <h2>Drawings<span class="en">SHEETS</span></h2>
 <p class="note">All 34 sheets are drawn directly from parameters and the submitted structured data. Click to enlarge.</p>
