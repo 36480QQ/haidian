@@ -34,7 +34,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 | What is done spatially | One spine of 9,443 m, eight tiered benchmarks, three key areas, a complete seven-class land-use partition with no overlaps and no gaps | Nine GeoJSON layers plus `node visual/assets/verify.js`, which independently recomputes every class-1 metric |
 | Why the three red lines are enforceable | Not on a designer's goodwill but on **current law**: Barrier-free Environment Construction Law Art. 39; Interim Measures for Generative AI Services Arts. 14 and 15; Guobanfa [2020] No. 45 | The first two are `regulatory_baseline` in `sources.json` (five in that class); Guobanfa [2020] No. 45 is policy, graded `background_only`. All three carry article locators and how each was obtained |
 | Who carries the public value | Personas P4–P7 are **the people who take the readings**, not a list of beneficiaries; a resident may initiate a re-survey of a judgement affecting them, at the third-order point nearest home | Human review points and exit conditions on all twelve scenario cards; all eight points in `geometry/public_space.geojson` cross jurisdictions |
-| What can start now | The four-week closure trial (S08 / RT-N / F3), which **depends on no unpublished official data** — as do R1–R3 and R8 | The renewal table carries responsible role, preconditions, cost band, KPI and exit condition per project |
+| What can start now | The four-week closure trial (S08 / RT-N / F3), which **depends on no unpublished official data**; which other projects share that property is counted from the dependency table by a stated rule, not listed by hand here | The renewal table carries responsible role, preconditions, cost band, KPI and exit condition per project |
 | What is deliberately withheld | Plot ratio, height, density, setbacks, redlines, any demolition or relocation conclusion | The organisers register **five controls** as missing in `planning_limits.json`; four are `unknown` here with their precondition quoted, and `green_ratio` — this proposal's own corridor share under the same name — says in both languages it is not the statutory control. `planning_controls_qa` checks against `upstream/main` |
 | Where the method stops | Closure error measures consistency, **not whether something helps**. The counterfactual needs control segments, which this proposal does not supply | Rule 8 states it, and names a proposal in this call more complete on that point |
 | How far the data can be trusted | Boundaries are provisional substitutes; when official polygons appear the package is **recomputed as a whole, never file by file**. Self-collected data is graded `background_only` throughout | The OSM cross-check reports this proposal's own spine as 1,116.7 m from the surveyed park — a reading that counts against it, published anyway |
@@ -1137,6 +1137,54 @@ Every column is mandatory, because **a project list without an owner, preconditi
 | R7 | S06 low-speed robot segmented admission | Mid | Operator; joint measurement by all jurisdictions | Closure records recognised as devices move between segments | R4 complete; ice and noise baselines obtained | **B** | Depends on R4 benchmark coverage | Low-speed device road-testing permits | Segment ceilings published; zero safety incidents | Any safety incident → network-wide suspension of that type |
 | R8 | Annual zeroing and network-wide re-survey | Long | Four review categories in rotation | Annual exchange of readings plus cross-region tolerance recognition | Two consecutive compliant cycles in mid phase | **A** | Uses the existing L3 space | Large-event approval | Annual readings and tolerance revisions logged | Two years without execution → considered terminated |
 
+<!-- PROJECTDEPS:BEGIN -->
+
+**Which of the eight waits on which.** Across the preconditions above, **exactly one row names
+another project**: R7 waits on R4. The other seven wait on conditions outside this proposal — a
+permit, a jurisdiction ruling, an official boundary, an engineering review. Those two kinds of
+waiting fail differently and are relieved by different people, so they are recorded apart:
+
+| Project | Phase | Cost | Waits on project | Waits on external condition (who lifts it) |
+|---|---|---|---|---|
+| R1 | near | A | — | a use permit on existing public land (a use permit, from the site's manager) |
+| R2 | near | A | — | — |
+| R3 | near | A | — | — |
+| R4 | near-mid | B | — | a ruling on which authority holds each point (official data or a statutory condition, from the authority) |
+| R5 | mid | B | — | an enclosed site and a safety assessment (a use permit, from the site's manager) |
+| R6 | mid | C | — | the official boundary and the statutory plan (official data or a statutory condition, from the authority); an engineering review (an engineering review, from the reviewing body) |
+| R7 | mid | B | R4 | a baseline for the ice-and-snow and noise readings (this programme's own reading record, from the review parties) |
+| R8 | far | A | — | two consecutive mid-term cycles within tolerance (this programme's own reading record, from the review parties) |
+
+Three readings computed from that table rather than asserted over it:
+
+1. **The longest dependency chain in the programme is 2 projects:
+   R4 → R7**, across 1 edge(s) among eight.
+   That is not a thin schedule; it is what this mechanism is. Benchmarks produce readings
+   independently and the network closes by recomputation, not by building one segment after
+   another.
+2. **Under a stated rule — waits on no project and on no official data —
+   5 projects qualify:
+   R1, R2, R3, R5, R8.** This chapter previously said four, naming
+   R1-R3 and R8; that was a hand count against a rule nobody had written down, and it missed R5,
+   which waits on an enclosed site and a safety assessment, neither of which is official data.
+   Tighten it one more turn — **can start today**, meaning near-phase and waiting on no
+   engineering review and on none of this programme's own readings — and
+   3 qualify: R1, R2, R3.
+   **"Needs no official data" and "can begin today" are not the same set**, and until now the
+   two sentences were used as one.
+3. **What actually gates the programme is an administrative decision, not construction.** Only
+   R4 and R6 wait on official data — R4 is the head of the one dependency chain, R6 is the only
+   C-band project. **An implementation plan whose critical path runs through an approval rather
+   than through a site is planned differently**: what you do while waiting is finish the four
+   projects that need no official data and leave readings behind, not push the dates back.
+
+Every dependency and blocker ships in `visual/assets/renewal_projects.json`, read from this table
+on every build, and `project_dependency_qa` re-checks it each time: a dependency must name a
+project that exists, the graph must be acyclic, and nothing may wait on a project scheduled after
+it.
+
+<!-- PROJECTDEPS:END -->
+
 Three rules run through the table. **Cost band, exit condition and resumption condition always appear together** — without an exit condition a project may not advance a phase, which prevents "we have already invested so we must continue"; without a resumption condition, exit becomes indefinite suspension or quiet restoration. Resumption always follows rule 7 above. **Four projects state "no official data needed" (R1–R3, R8)**, together forming a complete near-term path independent of any unpublished data; organiser data gaps are therefore no obstacle to near-term implementation. And **R6 is the only C-band project and the only one strongly dependent on statutory approval** — the other seven stand independently in the worst case, because the network's value does not depend on the spine being physically continuous, only on points continuing to produce recomputable readings.
 
 **Responsibility boundary.** This proposal names no implementing body, assumes no institution has agreed to anything, and touches no funding arrangement. What is written above is an operating suggestion that a park operator, a university team and a community self-organisation can each evaluate independently and each decide separately whether to adopt [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. That separation matters more than it may appear: a trial that requires all three to agree before anything happens is a trial that does not happen, and the four-week unit is scoped so that any one of them can start the part it controls.
@@ -1515,11 +1563,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **156 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **157 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 133 |
+| `author-originated` | 134 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |

@@ -8,7 +8,7 @@
    "what_zh": "重算 metrics.json 中全部 metric_class 1 的指标",
    "what_en": "Recompute every metric_class 1 figure in metrics.json",
    "exit_code": 0,
-   "seconds": 0.41,
+   "seconds": 0.39,
    "first_line": "Independent recomputation of class-1 metrics"
   },
   {
@@ -24,7 +24,7 @@
    "what_zh": "解析十二张场景卡的水准点、空间锚点与退出条件",
    "what_en": "Resolve every scenario card's benchmark, spatial anchor and exit condition",
    "exit_code": 0,
-   "seconds": 0.03,
+   "seconds": 0.02,
    "first_line": "check_cards.js: 12 cards, every benchmark and anchor resolves, every exit quantity is defined."
   },
   {
@@ -65,7 +65,7 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 452651,
+   "bytes": 453221,
    "unit": "entries",
    "count": 258
   },
@@ -113,16 +113,16 @@
    "path": "agent.json",
    "what_zh": "生成方法的完整披露",
    "what_en": "Full disclosure of the generation method",
-   "bytes": 7008,
+   "bytes": 7077,
    "unit": "top-level keys",
    "count": 10
   }
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.73,
+  "seconds_to_run_every_verifier": 0.71,
   "files_to_read": 9,
-  "bytes_to_read": 1103909,
+  "bytes_to_read": 1104548,
   "units_to_read": 1763
  },
  "limits_zh": [
