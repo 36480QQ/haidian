@@ -601,6 +601,20 @@ English brief — **One test decides everything here: for any AI service on this
 
 **这不是宣传片，是无障碍交付物。** 一份强调「不用 AI 也能办成同一件事」的方案，如果自己只能被读、不能被听，那条判据在它自己身上就不成立。音频对应视障读者、低视力读者、阅读困难者，以及任何在通勤途中无法看屏幕的人。
 
+判据的后半句是「**能力受限时是否提供可访问的后备表达**」。下表把它点名的每一种形态对到本包的实际交付物，并写明该形态不可用时读者仍能从哪里拿到同一份内容——**每一行的后备都不需要联网、不需要装 App、不需要能看屏幕或能听声音中的某一种。**
+
+| 判据点名的形态 | 本包交付 | 该形态不可用时的可访问后备 |
+| --- | --- | --- |
+| 文本 | `proposal.md` / `proposal.en.md`；渲染版 `report/proposal[.en].html` | Markdown 源文件本身即完整正文，不依赖任何渲染器 |
+| 图像 | 28 张图件 `assets/figures/*.png`，中英各一套 | 每张图的结论同时以文字写在正文对应表格里 |
+| 示意图 | 四套图纸 `drawings/*.pdf`（A3 13 页、A0 6 页，中英各一） | 图纸的几何全部来自 `geometry/*.geojson`，可独立重绘 |
+| 表格 | 正文全部结构化表格 | 同一批事实另存于 `metrics.json` 与三个矩阵，机器可读 |
+| 场景卡 | 十二个场景表 | 每张卡的字段在 `geometry/public_space.geojson` 的 SCN 要素属性中机器可读 |
+| 声音 | 中英三分钟音频导览 [data:assets/media/audio-guide.m4a] | 逐句字幕 `.vtt` 与全文稿 `.md`，听不了也能读完同一段内容 |
+| 视频 | 中英三分钟导览视频 [data:assets/media/guided-tour.mp4] | 音轨与音频导览完全相同、字幕逐句一致、画面取自包内图件，看不了也不丢信息 |
+| 三维 | 公开交接桌关系模型 [data:visual/assets/public-handover-table-3d.json]（内嵌 STL） | 同一模型的尺寸与构件关系在正文「公开交接桌」表中逐行给出 |
+| 交互网页 | `visual/index[.en].html` 的智能层开关 | 关闭脚本后仍是完整静态页；四个 HTML 的外部 http(s) 请求数为 0，离线可开 |
+
 三件事按同一标准处理，与包内其他交付物一致：
 
 - **文字稿与字幕逐句一致** [data:assets/media/audio-guide.md] [data:assets/media/audio-guide.vtt]。**任何时候读文字稿都等价于听音频**——不设只在音频里出现的信息，也不设只在文本里出现的信息。

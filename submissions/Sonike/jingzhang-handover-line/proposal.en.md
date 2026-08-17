@@ -575,6 +575,20 @@ The taskbook defines expression completeness as forming a complete result "in te
 
 **This is not a promotional film; it is an accessibility deliverable.** A proposal insisting that the same task must be completable without AI would fail its own test if it could only be read and never heard. The audio serves blind and low-vision readers, readers with reading difficulties, and anyone who cannot look at a screen while commuting.
 
+The second half of that criterion asks whether **an accessible fallback is offered when a capability is unavailable**. The table below maps each named form to what this package actually ships, and states where a reader can still get the same content when that form is unavailable — **no fallback requires a network connection, an app, or the ability to use any one of sight or hearing.**
+
+| Form named in the criterion | What this package ships | Accessible fallback when that form is unavailable |
+| --- | --- | --- |
+| Text | `proposal.md` / `proposal.en.md`; rendered `report/proposal[.en].html` | The Markdown source is the full text and needs no renderer |
+| Images | 28 figures in `assets/figures/*.png`, one set per language | Every figure's conclusion is also written out in the corresponding table |
+| Diagrams | Four drawing sets `drawings/*.pdf` (A3 13 pp, A0 6 pp, per language) | All drawing geometry comes from `geometry/*.geojson` and can be redrawn independently |
+| Tables | All structured tables in the text | The same facts are also in `metrics.json` and the three matrices, machine-readable |
+| Scenario cards | The twelve-scenario table | Every card's fields are machine-readable in the SCN feature properties of `geometry/public_space.geojson` |
+| Sound | Three-minute audio guide, both languages [data:assets/media/audio-guide.m4a] | Line-by-line `.vtt` captions and a full `.md` transcript — readable without listening |
+| Video | Three-minute guided tour, both languages [data:assets/media/guided-tour.mp4] | Same audio track as the audio guide, captions line-for-line identical, every frame drawn from figures already in the package — nothing is lost by not watching |
+| 3D | Public Handover Table relation model [data:visual/assets/public-handover-table-3d.json] (embedded STL) | The same dimensions and part relations are given row by row in the "Public Handover Table" table |
+| Interactive page | The smart-layer switch in `visual/index[.en].html` | With scripting off it remains a complete static page; all four HTML files make 0 external http(s) requests and open offline |
+
 Three things are handled to the same standard as every other deliverable here:
 
 - **Transcript and captions match sentence for sentence** [data:assets/media/audio-guide.md] [data:assets/media/audio-guide.vtt]. **Reading the transcript is at any point equivalent to listening** — nothing appears only in the audio, and nothing only in the text.
