@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Restructuring the Jingzhang AI Innovation Belt into a service-oriented city spine built on 'data as a public good': one spine (the open civic-data axis), three hearts (Zhongzhiyuan data factory, AI-Origin community service living room, Dazhongsi enterprise data port), and many nodes (citizen-participatory AI service pods). Public data opens along the belt; citizens and developers co-create AI services at co-creation nodes; the digital platform and physical space are designed as one, forming a governable, experienceable, and replicable civic-data commons."
 tracks: ["ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide"]
-iteration: "v4.0"
+iteration: "v5.0"
 ---
 
 # Jingzhang AI Civic Data Commons: A Co-Created Service-Oriented City Spine
@@ -223,26 +223,37 @@ The chronic problem with public-data opening is "declared open, yet no one can t
 
 **Relationship with "data as a public good."** The Data Receipt mechanism makes "public good" live up to its name: when data is used, it is like a public item being lent out — there must be a loan record, a return period, and a responsible person. The ledger is public (de-identified) and open to public and regulatory inspection, and every receipt has a named human reviewer — the whereabouts of data go from "no one knows" to "everyone can check" [source:public-data-policy].
 
-### Data Reconciliation: Internalizing Double-Entry Bookkeeping (original to this proposal, v4)
+### Core Mechanism: Data Timetable (original to this proposal, v5)
 
-Data receipts solve "every use is recorded," but single-entry records capture only the user side. This proposal transplants the **double-entry bookkeeping and period-end reconciliation** methodology from accounting: every data use must be recorded as a pair — **debit** (the user receives the data), **credit** (the public data pool records this use) — and the period-end reconciliation must balance [E:DATA-RECONCILIATION].
+The Data Receipt solves "every use is recorded," but the records lie in a ledger — **citizens still cannot see them**. The core insight of this proposal comes from the Jingzhang railway itself: **the Jingzhang railway's publicness is built on being seen — tracks, stations, and timetables are seen by citizens every day; data is this century's "invisible public infrastructure." Publicness = visibility.** The Data Timetable turns every data use into a row on a timetable, so that citizens read data the way they read a railway timetable [E:DATA-TIMETABLE] [source:official-announcement].
 
-**Three reconciliation rules:**
-- **R1 Paired bookkeeping:** every data use must be booked as a debit–credit pair; an imbalance is flagged as a discrepancy. Data is not "taken away" but "lent out with a record."
-- **R2 Period-end reconciliation:** at the end of each quarter, verify the debit–credit balance, retention periods, and deletion records of all receipts; discrepancies must be clarified before the next reconciliation cycle. **A receipt that cannot be balanced is a discrepancy, not a settled record.**
-- **R3 Public results:** reconciliation results are made public (de-identified), and discrepancy records enter the public ledger for public and regulatory inspection.
+**Timetable row (isomorphic with a railway timetable).** Each row shows: data / provider / user / purpose / display period / retention period / deletion requirement / display status / objection status / human reviewer — corresponding to a railway timetable's train number / origin / destination / status / remarks. All 12 rows are fully registered in `visual/assets/data-timetable.json` [data:visual/assets/data-timetable.json#rows]:
 
-**No-data baseline (negative space).** Even with no data services at all, citizens can still complete basic services through manual counters, paper forms, and community networks. Data services are a closable overlay layer; reconciliation ensures that closing them leaves **no unsettled records** — just as books are settled before closing the account, the ledger must balance before data services are shut down [data:visual/assets/reconciliation-ledger.json#negative-baseline].
+| Data | User | Purpose | Display period | Deletion | Reviewer |
+| --- | --- | --- | --- | --- | --- |
+| Public-space openness data | Service operator | Shared-mobility network route planning | 90 days | Yes | Data compliance officer |
+| Slow-traffic aggregated data | Service operator | Data-station siting and scheduling | 180 days | Yes | Data compliance officer |
+| Cultural-heritage site public information | Developer | Cultural guide generation | 365 days | No | Heritage protection advisor |
+| Rail-station passenger-flow aggregated data | Service operator | Metro connection scheduling | 90 days | Yes | Data compliance officer |
+| Public-feedback aggregate statistics | Research | Service-quality improvement | 180 days | Yes | Public oversight representative |
 
-**Double-entry ledger for the 12 datasets** (full version in `visual/assets/reconciliation-ledger.json`; debit–credit paired, balanced quarterly):
+**Timetable stations (5, distributed along the corridor).** Full specifications are in `visual/assets/timetable-stations.json` [data:visual/assets/timetable-stations.json#stations]:
 
-| Dataset | Debit (user receives) | Credit (public pool records) | Balance |
+| Station | Location | Display form | No-AI equivalent |
 | --- | --- | --- | --- |
-| Public-space openness data | Service operator – route planning | Public pool – use record (90 days / delete) | ✓ |
-| Cultural-heritage site public information | Developer – guide generation | Public pool – use record (365 days / retain) | ✓ |
-| Public-feedback aggregate statistics | Research – quality improvement | Public pool – use record (180 days / delete) | ✓ |
+| TS-01 Zhongzhiyuan Station | Innovation Exchange Plaza (PS-002) | Flip-board style (conceptual) | Paper timetable |
+| TS-02 Origin Community Station | Service station (PS-011) | Flip-board + paper slot | Paper timetable + manual inquiry by an attendant |
+| TS-03 Mid-Park Station | Mid-point station (PS-012) | Flip-board style | Paper timetable |
+| TS-04 Dazhongsi Station | Smart-Delivery Experience Plaza (PS-013) | Flip-board + electronic screen (conceptual) | Paper timetable |
+| TS-05 South End Station | South-end node (PS-014) | Flip-board style | Paper timetable |
 
-**Relationship between reconciliation and receipts:** a receipt is the record of each transaction, and reconciliation is the general ledger of all records. A single receipt may look complete while the whole fails to balance — reconciliation is how this "individually complete, collectively unbalanced" loophole is caught [source:data-security-law].
+**Data objection channel (the other half of visibility: contestability).** Citizens can anonymously query "where the data is being used" at any timetable station and submit an objection against any row (anonymous submission allowed): false purpose / purpose drift / not deleted after expiry / involves oneself. Objections enter the public ledger; the data compliance officer and the public oversight representative accept and reply to them within 5 working days, and objection records are retained for 180 days. Paper objection forms and telephone objections ensure equal usability for people without digital skills. The full flow is in `visual/assets/objection-channel.json` [data:visual/assets/objection-channel.json#flow].
+
+**Negative-space baseline.** Timetable stations are removable installations; once removed, the corridor reverts to complete park space — **data is visible but takes up no space, and publicness does not depend on the installations' existence**. Even when the Data Timetable is completely out of service, citizens can still complete basic services through manual service windows, paper forms, and community networks [data:visual/assets/timetable-stations.json#negative-baseline].
+
+**Rule-closure verification.** `run_timetable_tabletop.js` correctly classifies all 72 synthetic cases from 12 rows × 6 rule branches (complete / missing purpose / missing human reviewer / missing retention period / not deleted after expiry / objection unanswered) — 36 blocked / 12 displayable / 24 flagged — proving that the timetable display rules are logically closed. This proves only classification correctness, however, and does not constitute data authorization, compliance, or evidence of actual use; on-site performance remains null, with status `not_authorized_not_run` [data:visual/assets/timetable-tabletop-evidence.json#blocked].
+
+**Relationship with the Data Receipt.** The receipt is "the record of each use" (management side); the timetable is "the disclosure of each use" (public side) — the receipt ensures every data use is traceable, and the timetable ensures citizens can see and question it. Together they form the visibility loop of "civic data infrastructure": **invisible data is not public; data that is visible and contestable is** [source:public-data-policy].
 
 ### Open-Data Policy Roadmap
 
