@@ -52,6 +52,8 @@ English brief — **One test decides everything here: for any AI service on this
 
 ![京张交接线总体概念图：三座交接场、四处朝圣地标与各自的荣誉角色，临时边界](assets/figures/site-overview.png)
 
+> **这张图怎么看。** 左侧地图里，红线是京张交接线主轴，蓝色横线是东西缝合支线，虚线框是临时边界；三个色块自北向南依次是研制、开源、城市三座交接场，红—青—黄对应 BUILD→VERIFY→SHARE→SERVE 的责任转换次序。四个菱形 01–04 是公共地标：交接钟、公开交接台、百年值班簿、零号接管亭。右栏四段是交接协议的四步，末句是全案的判据。
+
 ### 合规基线：先分清法定下限，再说本方案自设的标准
 
 本方案反复出现三条红线——可停用、可投诉、无AI等价服务。**其中只有一部分有法定出处，其余是本方案自设的公共服务标准。** 下表逐行分开写明两者，因为把自愿采用的标准读成普遍法定义务，本身就是一种误导；法条的适用对象与效果以官方原文为准，本表不作法律意见。本节对照的三份文件在 `standard_matrix.json` 中逐条登记响应情况与适用边界 [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
@@ -87,6 +89,8 @@ English brief — **One test decides everything here: for any AI service on this
 图内左侧另给出**用地构成堆叠柱**：七类用地由 `land_use.geojson` 的 `area_sqm_declared` 逐图斑相加，合计 11.413 km² 与场地面积一致，其中 1401 连续公园绿地占 19.8%——与 [metric:green_ratio] 的 19.84% 相互印证。**面积不只写在指标表里，也画在它对应的那张图上。**
 
 ![三层范围、用地分区与用地构成：七类用地的面积与占比逐条列出，合计与场地面积一致](assets/figures/land-use-structure.png)
+
+> **这张图怎么看。** 左侧竖条是七类用地各自的面积与占比，逐图斑相加合计 11.413 km²，与场地面积一致；走廊图按用地代码着色，三个圆点是三座交接场，图上下两端标出中关村科技服务翼与小月河场景赋能翼。页脚「11 TOPOLOGICAL FEATURES / 0 INTENTIONAL GAPS」的意思是十一个图斑联合覆盖临时范围、没有有意留下的空隙。右栏 43.6 km² → 11.4 km² → 3 是三层范围逐级收敛的关系，不是三个并列数字。
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -306,6 +310,8 @@ English brief — **One test decides everything here: for any AI service on this
 
 ![三处重点区域放大平面：用地分区、绿廊、更新类型单元、主轴与缝合支线、场景节点编号，同一比例尺，临时范围](assets/figures/key-areas.png)
 
+> **这张图怎么看。** 三张卡共用同一比例尺，因此卡与卡之间的大小差异是真实面积差异。主图画的是各重点区的真实轮廓，以及区内的用地分区、连续绿廊、更新类型单元与落在区内的场景节点编号。更新单元分两档：米色实填的是保留优先、适应性再利用，只描边不填色的是介入前先查证——图面上「还没定」不做成已定的样子。每张卡右侧细长条是沿线定位，深色块表示本区在整条带中的位置。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 场景设计不把AI当成自动化装饰，而把它视为一项随时需要交接的公共服务。八类用户画像各自对应明确的空间载体、场景与评价口径；任何画像都不用于商业追踪，也不以画像分配资源或排序个人。
@@ -468,6 +474,8 @@ English brief — **One test decides everything here: for any AI service on this
 **慢行与蓝绿一图之内同时给出走廊定位与交接断面**：左侧是走廊真实轮廓与十二个接管点的沿线位置，右侧是断面的六段次序与相邻规则——**规则本身就是设计内容，所以它必须和它约束的那条走廊出现在同一张图上**，而不是分置两图各自成立。
 
 ![慢行主轴与蓝绿基底：走廊真实轮廓、十二个接管点，以及首层交接台—无障碍步道—零号接管亭—保留铁轨—机器专用道—绿化休憩带的断面次序与相邻规则](assets/figures/mobility-bluegreen.png)
+
+> **这张图怎么看。** 左图红线是连续步行骑行主轴，八条蓝线是东西缝合支线，浅绿是蓝绿舒适基底；青色圆点 01–12 是十二个人工接管点，编号与右侧清单逐条对应。右上 A／B／C 三条是接管的三个前提。右下 SECTION 的六段只表达次序与相邻规则，不表达任何尺寸；底部黑条是那条相邻规则本身——人工窗口、步道、停用入口三者必须连续可达，机器专用道不得插入其间。
 
 ## 蓝绿空间、公共空间与城市风貌
 
@@ -712,6 +720,8 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 ![可复算指标、测量协议、规则检查矩阵（12 基线 + 84 注入 = 96 格，注入全部被拦截）与五步证据链](assets/figures/metrics-evidence.png)
 
+> **这张图怎么看。** 上排六张卡是可按公式复算的已知值，未赋值的指标不在图上出现。RULE CHECK 是 96 格检查：第一行十二格是基线，用电气青；下面七条规则 × 十二个场景共 84 格是逐条注入的缺陷，用炭黑表示已被拦截；信号红只代表漏检——因此**图上没有红色，就是漏检为 0** 这个结论本身。下方五步是证据链，黑条三段分别是基线、缺失值处理与发布门槛的口径。
+
 ### 十四道包自检闸门：不检验设计对不对，只检验这份包自己有没有对齐
 
 上面那 96 格检验的是**交接协议规则**闭不闭合。但一份投稿还有另一层可能失败的地方，与设计好坏无关：矩阵指向了不存在的章节、字段没用组织方的词汇、中英章节数对不上、图件已经改不回原样、图纸印着两个版本号、送审图像多了一张——**这些都不是观点分歧，是可以被机器判定对错的事实**。本包为此固定了十四道闸门 [data:visual/assets/governance/package-integrity-gates.json]。
@@ -767,8 +777,8 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 | --- | --- | --- | --- | --- |
 | 图纸 PDF 中的拉丁文字 | Helvetica 家族与 ZapfDingbats [source:FONT-PDF-BASE14] | PDF 规范内置基础字体，按字体名引用，**不嵌入、不再分发字体文件**；此行**只涵盖四套 PDF**，不涵盖栅格图件 | `pdffonts drawings/a3-booklet.pdf` → `Type 1 / WinAnsi / emb=no` | 字形由阅读器提供；与中文不同，这十四款字体是规范要求阅读器自备的，故不构成显示风险 |
 | 图纸中的中文文字 | Noto Serif SC Light，已子集嵌入四套 PDF [source:FONT-NOTO-SERIF-SC] | SIL Open Font License 1.1（读自字体 name 表 nameID 13/14），OFL 明确允许嵌入子集并随文档再分发 | 同上命令 → `CID TrueType / UniGB-UCS2-H / emb=yes`；字体名对象为 `<子集前缀>+NotoSerifSC` | 字体文件本身不随包提交（投稿目录不接受 `.ttf`），凭 sources.json 登记的 URL 与 sha256 可独立取得复核 |
-| 栅格图件中的中文文字（24 张 PNG 与 2 张 JPEG） | macOS 系统字体 STHeiti Medium.ttc，经 Pillow 栅格化 [source:FONT-STHEITI-RASTER] | Apple 软件许可协议第 2 节 E 条「Fonts」把「使用字体 display and print content」与「嵌入字体」分列为两种行为 [source:FONT-APPLE-SLA-CLAUSE-E]；本包渲染为像素，不嵌入、不再分发字体文件 | `find assets -name '*.tt[cf]'` → 无结果 | 在未装该字体的机器上重跑脚本会得到不同字形；这是与 PDF 中文字体不同的一类义务，故单列一行而不并入上一行 |
-| 栅格图件中的拉丁文字与数字（同上 26 张） | macOS 系统字体 Helvetica.ttc，经 Pillow 栅格化 [source:FONT-HELVETICA-RASTER] | 与上一行同条款、同性质 [source:FONT-APPLE-SLA-CLAUSE-E]：实际加载了随 macOS 分发的字体文件并用其字形生成像素，产物为像素而非字体程序，不构成再分发 | 同上命令 → 无结果 | **与第一行的 Helvetica 同名而不同性质**：PDF 内是按名引用、全程不碰字体文件，此处是真的加载了字体文件；字形来源无法从栅格产物反查，本行属渲染阶段自述，可独立核验的只有「包内无字体文件」这一半 |
+| **五张送审图件的全部文字（10 张 PNG：`site-overview`／`land-use-structure`／`key-areas`／`mobility-bluegreen`／`metrics-evidence`，中英各一）** | OFL-1.1 的 Noto Sans CJK SC（Medium／Light）与 Noto Sans（Regular／Bold／Italic／BoldItalic），经 Pillow 栅格化 [source:FONT-NOTO-RASTER] | **SIL Open Font License 1.1 明文允许使用与再分发**，因此这十张的权利依据不再依赖对任何条款的解释 | `find assets -name '*.tt[cf]' -o -name '*.otf'` → 无结果；字体文件在仓库外的工具链目录，只在渲染阶段读取字形 | 2026-08-17 由 STHeiti／Helvetica 迁移而来。中文取 Medium 档而非 Regular，以补回 Noto CJK 相对 STHeiti 偏细的字面差 |
+| 其余七张图件的文字（14 张 PNG：`logo-identity`／`ecosystem-map`／`spatial-prototype`／`shift-ledger`／`delivery-contract`／`renewal-structure`／`adaptive-model`，中英各一）与 2 张 JPEG | macOS 系统字体 STHeiti Medium.ttc 与 Helvetica.ttc，经 Pillow 栅格化 [source:FONT-STHEITI-RASTER] [source:FONT-HELVETICA-RASTER] | Apple 软件许可协议第 2 节 E 条「Fonts」把「使用字体 display and print content」与「嵌入字体」分列为两种行为 [source:FONT-APPLE-SLA-CLAUSE-E]；本包渲染为像素，不嵌入、不再分发字体文件。**该条款与「分发像素产物」的对应关系属本包理解，不是确定性证明** | 同上命令 → 无结果 | **这七张的生成器已不在现行工具链内，因此本轮无法随前一行一并迁移**；迁移条件是重建其生成器。在迁移完成前，这一行的权利依据仍停在条款解释一级，弱于上一行 |
 | 画廊封面中的全部文字（`assets/media/cover.png`，1 张 PNG） | OFL-1.1 的 Noto Sans CJK SC 与 Noto Sans [source:FONT-NOTO-COVER] | 字体文件随构建脚本存放在仓库之外，仅在本机渲染阶段读取字形生成像素；包内不含任何字体文件，故不构成再分发 | `find assets -name '*.tt[cfo]'` → 无结果；封面上无任何 STHeiti / Helvetica 字形 | **本包唯一不依赖专有字体的栅格产物**；OFL-1.1 本身也明确允许嵌入与再分发，故该图的字体权利链两端都是闭合的 |
 | 生成工具链 | Python 3.12.13(PSF)、reportlab 4.4.3(BSD)、Pillow 12.3.0(MIT-CMU)、shapely 2.1.2(BSD-3)、pyproj 3.7.2(MIT)、fontTools 4.60.1(MIT)、qpdf 12.3.2(Apache-2.0)、PyMuPDF 1.27.2.3(AGPL-3.0 或 Artifex 商业二选一)、Ghostscript 10.07.0(AGPL-3.0) [source:TOOLCHAIN-BUILD] | 版本与许可逐个读取各依赖自身的分发元数据或 `--version` 自述，非二手转述 | `python -c "import importlib.metadata as m; print(m.version('reportlab'), m.metadata('Pillow')['License-Expression'])"`、`gs --version` | PyMuPDF 与 Ghostscript 仅作**工具**在本机运行，未分发其代码、未链接进任何交付物；嵌入 PDF 的字体子集来自 OFL 字体，不来自任何 AGPL 组件 |
 | 几何与指标 | 九类 GeoJSON 与 metrics.json | 由本包程序化生成，公式与源文件逐项登记 | 按 metrics.json 的 `formula` 与 `source_file` 在 EPSG:4548 复算 | 生成脚本不在包内，故**只主张指标可独立复算，不主张逐字节可复现** |
@@ -778,7 +788,17 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 **图纸中文的当前边界：可读、可打印，不可检索。** 换嵌留下两处已定位的缺口——A3 中文本第 6 页 7 处 `·`（U+00B7）在子集中无字形、渲染为方框，四套图纸中文 `/ToUnicode` 部分错映使 PDF 内中文的检索与复制不可靠。实测范围、三引擎交叉核验方法与修复触发条件逐项登记在 `assumptions.json` 的 `A-FONT-001`。需要检索或辅助技术读取时用 `report/proposal.html` 与 `proposal.md`，二者的中文抽取正常。
 
-本包对 `COMMUNITY-DISPLAY-ONLY` 的自述含义：允许为本次开源征集的评审、公开展示、教学与知识沉淀而复制与引用本包内容，须保留出处；不授予商业使用、不授予将本包内容表述为法定规划或政府决定的权利；第三方进一步使用时仍须自行核验其中每一条外部来源的原始权利状态。
+**`COMMUNITY-DISPLAY-ONLY` 完整条款（版本 1.0，2026-08-17）。** 此前此处只写了一句自述含义，不足以让第三方判断复用边界。以下是完整、可执行的条款文本。
+
+**适用资产范围。** 本许可覆盖本投稿目录 `submissions/Sonike/jingzhang-handover-line/` 下由本包作者原创或由仓库清权数据程序化生成的全部内容：`proposal.md` 与 `proposal.en.md`、`report/` 下的渲染页与版权声明、`assets/figures/` 的图件、`drawings/` 的四套图纸、`visual/` 的离线页面与治理类结构化文件、`geometry/` 的九个图层、以及 `metrics.json`、`assumptions.json`、`sources.json` 与三个矩阵。**不覆盖**：本包引用的第三方来源原件（其权利状态见 `sources.json` 逐条登记）、组织方提供的场地包与枚举、以及渲染阶段使用的字体（字体权利见上表，字体文件不随包分发）。
+
+**授权（Grant）。** 在保留出处与本许可文本的前提下，任何人可以为下列目的复制、分发与展示上述资产的全部或部分：(1) 本次开源征集的评审、策展与公开展示；(2) 教学、研究与公共知识沉淀；(3) 非商业的社区活动与公益传播。允许为上述目的制作节选、翻译与格式转换，但须标注为节选或译本，并保留版本号与「概念建议」的性质说明。
+
+**限制（Restrictions）。** 未经作者另行书面授权，不得：(1) 用于商业目的，包括销售、付费培训、广告投放与商业招商材料；(2) 将本包内容表述为法定规划、控制性详细规划、政府决定、审批结论或实施承诺；(3) 暗示任何政府部门、企业、高校或个人已参与、背书或同意本方案；(4) 移除或改写临时边界（`official_boundary=false`）、未知项与「待专业团队核定」的限定语后再行分发；(5) 单独提取 Logo 与标识系统用于与本项目无关的标识用途。
+
+**保证与责任（Warranty）。** 本包按现状提供，不作任何明示或默示保证，包括对适用性、准确性与不侵权的保证。第三方进一步使用时，仍须自行核验 `sources.json` 中每一条外部来源的原始权利状态。作者不对基于本包作出的任何决策承担责任。
+
+**终止与版本（Termination and versioning）。** 违反上述限制时本许可对违反方自动终止。本许可为版本 1.0；后续版本只在本文件与 `report/copyright_statement.md` 中同步发布，既有分发件继续适用其随附的版本。**选择 `COMMUNITY-DISPLAY-ONLY` 而非标准开源许可证的原因是限制第 (2)(3) 项**——通用许可证不包含「不得表述为政府决定」这类约束，而本次征集的边界条款要求它必须成立。
 
 **构建溯源。** 自 v1.9 起**全包只有一个版本号**：26 张图件、38 页图纸、两个离线页面**与画廊封面**的页脚一律为 `JING-ZHANG HANDOVER LINE / PACKAGE v1.15`（图纸另附页码，如 `01-13`）。可核验口径是**页脚一致性**——页数与 `PACKAGE v1.15` 命中数逐套相等（13/13、13/13、6/6、6/6），旧版本号残留逐套为 0，`qpdf --check` 四套 PASS，`pdffonts` 四套均为 `<子集前缀>+NotoSerifSC / CID TrueType / UniGB-UCS2-H / emb=yes`。各版重建的具体路径与逐像素比对结果记在 `changelog.md`，不在此复述。
 
