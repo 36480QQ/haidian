@@ -5,7 +5,9 @@ language: "zh"
 license: "CC-BY-4.0"
 proposal_format_version: "2"
 translation_file: "proposal.en.md"
-summary: "以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带设计方案，覆盖43.6平方公里，构建三带叠加的空间格局。"
+summary: "以京张铁路遗址公园为空间载体，把三核两翼组织成可验证、可接管、可退出的城市AI试验带；每个场景同时交付空间载体、普通服务路径、测量方法和公开回执。"
+tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
+iteration: "v7"
 ---
 
 # 百年京张AI创新带城市设计方案
@@ -17,6 +19,8 @@ summary: "以京张铁路遗址公园为空间载体，融合百年铁路文化�
 ## 摘要 / Abstract
 
 百年京张AI创新带是以京张铁路遗址公园为空间载体，融合百年铁路文化、中关村创新基因与AI技术革命的未来城市创新带。本方案统筹研究范围覆盖43.6平方公里（公告口径），总体设计范围（几何复算）为11.41平方公里 [metric:site_area_sqm]，从北五环到北京北站，构建三条带叠加的空间格局：百年京张文化带、都市AI生活体验带、AI融合创新带。
+
+**一页判读：这条带子在地上变成什么。** 方案可按四层理解：**空间层**是一轴三核两翼——7.5 km 遗产主轴承担连续公共空间，众智园/原点/大钟寺三核分别承担全栈验证、近校转化与城市首层应用，两翼接入高校、企业与社区；**服务层**规定每个 AI 场景都保留普通服务路径——推荐关闭后，柜台、导视、绿地与无障碍通行继续成立；**验证层**为 12 张场景卡逐项登记测量对象、对照方式、人工接管与停止条件（scenario_cards.json + check_cards.js）；**运营层**把公开问题经"沙盒—证据—复核—扩点/退出"回到年度公共价值审计（operations.json + check_ops.js）。任何 AI 场景进入公共空间前都要回答六件事：落在哪里、普通服务如何保留、测什么、谁复核、何时接管、怎样退出。
 
 The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innovation belt that integrates century-old railway culture, Zhongguancun's innovation DNA, and AI technology revolution, using the Beijing-Zhangjiakou Railway Heritage Park as its spatial carrier. This proposal covers 43.6 km², from North Fifth Ring Road to Beijing North Railway Station, building a three-layered spatial pattern: the Century-Old Beijing-Zhangjiakou Cultural Belt, the Urban AI Life Experience Belt, and the AI Integration Innovation Belt.
 
@@ -96,17 +100,17 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 - 年度开源贡献记录≥1000项
 - 全球开发者访问量≥10万人次/年
 
-**中期目标（2030-2035）**：
-- AI产业产值突破500亿元
-- 独角兽企业培育≥10家
-- 年度国际AI会议≥5场
-- 获得碑刻记录的贡献者≥100人
+**中期目标（2030-2035，情景假设非预测承诺，见 assumptions.json）**：
+- AI产业产值500亿元为情景值——放行证据为年度产值审计与在统企业清单，不达标即修正目标而非口径
+- 独角兽培育≥10家为情景值——以孵化器毕业企业与融资公开记录计数
+- 年度国际AI会议≥5场——以实际举办场次与参会名录登记
+- 荣誉墙入选≥100人——以 operations.json 台账与年度公示为准，编号不排名
 
-**远期目标（2035-2040）**：
-- 成为全球AI创新网络TOP10节点
-- 形成可复制推广的AI城市范式
-- 累计开源贡献≥10万项
-- 国际影响力对标硅谷、波士顿
+**远期方向（2035-2040，方向性目标，以阶段门放行而非日历推进）**：
+- 参与全球AI创新网络对话，位次以年度公开可验证指标为准，不预设名次承诺
+- 形成可复制推广的AI城市范式，以至少一个外部城市采纳组件库条目为放行证据
+- 开源贡献累计规模以年度审计口径计数，随荣誉墙台账同步公开
+- 国际影响力以国际参会者占比、外文媒体报道量等可测项逐年公开，不对标口号
 
 ### 2.3 核心指标 / Core Metrics
 
@@ -1125,6 +1129,15 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 
 ### 8.1 分期实施计划 / Phased Implementation Plan
 
+**四道放行门（G0-G3）**：任何阶段推进不因日历到期自动放行，只因证据齐备放行。
+
+| 放行门 | 扩展前必须存在的证据 | 建议复核角色 | 未通过时的动作 |
+| --- | --- | --- | --- |
+| G0 资料门 | 边界/权属/文保/工程资料缺口登记；临时约束替换为正式资料的触发条件 | 规划、文保及工程专业团队 | 只做研究与可逆原型，不进入不可逆工程 |
+| G1 普通服务门 | AI关闭日演练记录、普通服务路径图、线下柜台/纸质导视核对单 | 场景运营方 + 社区共治会 | 先补普通服务；不能独立运行的AI插件不上线 |
+| G2 安全与包容门 | 人工接管演练、无障碍共测、隐私核对、申诉处理记录 | 专业委员会 + 受影响使用者代表 | 暂停场景，修复后重新共测 |
+| G3 证据门 | 基线、对照、接管/投诉记录、公共收益说明 | 独立审计 + 联合理事会 | 维持原规模、缩点或退出 |
+
 **一期（2027-2030）：基础设施与核心区启动**
 
 重点任务：
@@ -1255,6 +1268,7 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 - **激励体系**：开源贡献积分（可兑换工位/算力/住宿）、年度荣誉墙入选、季度开发者大会演讲席位
 - **行为守则**：采用主流开源社区 CoC 模板，违规由委员会处理，两次违规移出社区
 - **数据边界**：贡献统计只用公开 PR 元数据；个人数据不进荣誉墙（SC-05 同规则）
+- **AI关闭日**：每场景每半年一次全离线演练，验证普通服务能否独立运行（对应基线 B05）；演练记录进入年度公共价值审计
 
 *运营机制全部字段化于 operations.json（developer_community_operation 节），check_ops.js 可校验。*
 
@@ -1341,6 +1355,18 @@ The Beijing-Zhangjiakou AI Innovation Corridor is a future-oriented urban innova
 | 医疗设施覆盖半径 | 1000 | m | 100%覆盖 |
 | 公园绿地500m覆盖 | 100 | % | 完全达标 |
 | 轨道站点800m覆盖 | ≥80 | % | 主要覆盖核心区 |
+
+**第一年基线测量方案（B01-B05）**：设施覆盖率为静态可达性计算；运营成效以下列基线为准，先测后比，不放空数。
+
+| 基线 | 观测与频率 | 统计/对照 | HOLD 规则 |
+| --- | --- | --- | --- |
+| B01 主轴慢行断点 | 首次全线踏勘建清单；干预后月度复测 | 断点数、类别、关闭时长；修复前后对照 | 新增高风险断点 → 属地交通/公园复核 |
+| B02 无障碍连续性 | 轮椅/低视力使用者与审计员共测 | 路线完成、求助、不可达点；AI/纸图/人工三路径比较 | 新增不可达点 → 无障碍场景暂停 |
+| B03 公共空间非商业可用 | 公开日历+现场抽查 | 承诺开放时段与实际占用对照 | 商业挤占基础通行 → 活动缩场 |
+| B04 场景申诉与接管 | 工单与急停日志连续记录 | 首次响应、完整关闭、人工接管原因 | 同类投诉重复未修复 → 对应场景暂停 |
+| B05 AI关闭日演练 | 每场景每半年一次全离线演练 | 普通服务独立运行时长、恢复时间 | 演练失败 → 场景降级直至修复 |
+
+基线值当前保持待实测状态。每项首次发布时同时公开定义、采样边界与责任角色；正式边界变化只重算空间指标，不改测量规则。
 
 ### 9.2 合规矩阵 / Compliance Matrix
 
