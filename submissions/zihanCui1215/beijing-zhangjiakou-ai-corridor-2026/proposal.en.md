@@ -6,6 +6,9 @@ license: "CC-BY-4.0"
 proposal_format_version: "2"
 translation_of: "proposal.md"
 translation_method: "human-authored English edition, substantive parity per section measured by visual/assets/parity_check.js (0.66 words/char, floor 0.588)"
+summary: "A verifiable, take-over-able, exitable urban AI proving belt on the Jing-Zhang rail heritage: every scenario ships its spatial carrier, ordinary-service path, measurement method and public receipt."
+tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
+iteration: "v7"
 ---
 
 # Beijing-Zhangjiakou AI Innovation Corridor Urban Design
@@ -49,9 +52,15 @@ All spatial figures are recomputed under EPSG:4548 from the provisional geometry
 
 **Near-term (2027-2030):** infrastructure coverage 100%; AI-enterprise occupancy 60%; annual open-source contribution records ≥1,000; global developer visits ≥100,000/year.
 
-**Mid-term (2030-2035):** AI industry output exceeding 500 billion yuan (scenario target, assumptions.json); ≥10 unicorn companies; ≥5 international AI conferences annually; ≥100 contributors engraved on the honor wall.
+**Mid-term (2030-2035, scenario assumptions not forecasts, assumptions.json):** 500 bn yuan output is a scenario value — release evidence is the annual output audit and the in-survey enterprise list; missing it means correcting the target, not the yardstick. ≥10 unicorns counted from incubator graduations and public funding records. ≥5 international conferences registered by actual editions and attendance lists. ≥100 honor-wall inductees per the operations.json ledger and annual publication — numbered, never ranked.
 
-**Long-term (2035-2040):** a TOP-10 node of the global AI innovation network; a replicable AI-city paradigm; ≥100,000 cumulative open-source contributions; international standing benchmarked against Silicon Valley and Boston.
+**Long-term direction (2035-2040, directional goals released by stage gates, not by calendar):** participation in the global AI-innovation conversation, standing reported through annually published verifiable indicators rather than a preset ranking promise; a replicable AI-city paradigm whose release evidence is at least one external city adopting a component-library entry; cumulative open-source contributions counted by the annual audit ledger in step with the honor wall; international reach reported through measurable items (international attendee share, non-Chinese media coverage), not slogans.
+
+**One-page reading: what this belt becomes on the ground.** Four layers. **Spatial:** one axis, three cores, two wings — the 7.5 km heritage axis carries continuous public space; Zhongzhiyuan / AI Origin / Dazhongsi respectively carry full-stack verification, campus-to-city conversion and first-floor urban application; the two wings plug in universities, enterprises and communities. **Service:** every AI scenario keeps an ordinary-service path — when recommendation engines stop, counters, wayfinding, greens and accessible routes still work. **Verification:** the twelve scenario cards each register measured object, comparison method, human takeover and stop conditions (scenario_cards.json + check_cards.js). **Operations:** public questions re-enter an annual public-value audit through sandbox -> evidence -> review -> scale-up-or-exit (operations.json + check_ops.js). Before any AI scenario enters public space it must answer six questions: where it lands, how ordinary service survives, what is measured, who reviews, when humans take over, and how it exits.
+
+**One-page reading: what this belt becomes on the ground.** Four layers. **Spatial:** one axis, three cores, two wings — the 7.5 km heritage axis carries continuous public space; Zhongzhiyuan / AI Origin / Dazhongsi respectively carry full-stack verification, campus-to-city conversion and first-floor urban application; the two wings plug in universities, enterprises and communities. **Service:** every AI scenario keeps an ordinary-service path — when recommendation engines stop, counters, wayfinding, greens and accessible routes still work. **Verification:** the twelve scenario cards each register measured object, comparison method, human takeover and stop conditions (scenario_cards.json + check_cards.js). **Operations:** public questions re-enter an annual public-value audit through sandbox -> evidence -> review -> scale-up-or-exit (operations.json + check_ops.js). Before any AI scenario enters public space it must answer six questions: where it lands, how ordinary service survives, what is measured, who reviews, when humans take over, and how it exits.
+
+**One-page reading: what this belt becomes on the ground.** Four layers. **Spatial:** one axis, three cores, two wings — the 7.5 km heritage axis carries continuous public space; Zhongzhiyuan / AI Origin / Dazhongsi respectively carry full-stack verification, campus-to-city conversion and first-floor urban application; the two wings plug in universities, enterprises and communities. **Service:** every AI scenario keeps an ordinary-service path — when recommendation engines stop, counters, wayfinding, greens and accessible routes still work. **Verification:** the twelve scenario cards each register measured object, comparison method, human takeover and stop conditions (scenario_cards.json + check_cards.js). **Operations:** public questions re-enter an annual public-value audit through sandbox -> evidence -> review -> scale-up-or-exit (operations.json + check_ops.js). Before any AI scenario enters public space it must answer six questions: where it lands, how ordinary service survives, what is measured, who reviews, when humans take over, and how it exits.
 
 *All quantitative goals are scenario targets pending official baselines, not forecasts or commitments.*
 
@@ -71,6 +80,18 @@ All spatial figures are recomputed under EPSG:4548 from the provisional geometry
 | Facilities | Education facility radius | 500 | m |
 | | Medical facility radius | 1,000 | m |
 | | Park green 500m coverage | 100 | % |
+
+**First-year baseline plan (B01-B05).** Facility coverage figures are static accessibility computations; operational performance is judged against these baselines — measured first, compared after, no empty numbers.
+
+| Baseline | Observation & frequency | Statistic / comparison | HOLD rule |
+| --- | --- | --- | --- |
+| B01 Axis walking-break list | First full-route survey builds the list; monthly re-measure after fixes | Break count, class, closure time; before/after comparison | New high-risk break -> local traffic/parks review |
+| B02 Accessibility continuity | Wheelchair / low-vision users co-test with auditors | Route completion, help requests, unreachable points; AI/paper/human three-path comparison | New unreachable point -> accessibility scenario suspended |
+| B03 Non-commercial public-space availability | Public calendar + on-site sampling | Promised open hours vs actual occupancy | Commerce squeezing basic passage -> events shrink |
+| B04 Scenario appeals & takeovers | Continuous work-order and emergency-stop logs | First response, full closure, takeover reasons | Repeated unresolved complaints -> scenario suspended |
+| B05 AI-closed-day drills | Full-offline drill per scenario every six months | Duration ordinary service ran independently; recovery time | Drill failure -> scenario degrades until repaired |
+
+Baseline values remain pending first measurement. Each is published with its definition, sampling boundary and responsible role; official boundary changes only recompute spatial metrics, never measurement rules.
 
 ## Three-Level Scope Framework
 
@@ -595,6 +616,15 @@ This chapter consolidates the corridor's mobility and utility frame. The five-ti
 - **AI Innovation Challenge (annual):** rotating themes (AI+healthcare, education, transport); prize-pool scenario target ≥10 M yuan with a ≥1 M top award; open global registration, shortlist of 20, live finals, incubation and investment matching for winners.
 - **Developer Pilgrimage (standing programme):** honor-wall visits, the Developers' Walk, showcase-node study, code-review station sessions; self-guided, docent-led and themed variants ("the large-model route", "the open-source framework route"); target ≥100,000 developer visits annually.
 
+**Four release gates (G0-G3).** No phase advances because a calendar date arrived; phases advance because evidence exists.
+
+| Gate | Evidence required before scaling | Suggested reviewer | Action when not met |
+| --- | --- | --- | --- |
+| G0 Data gate | Registered gaps in boundary/ownership/heritage/engineering data; trigger conditions for swapping provisional constraints | Planning, heritage and engineering professionals | Research and reversible prototypes only; no irreversible works |
+| G1 Ordinary-service gate | AI-closed-day drill records, ordinary-service path maps, offline counter/paper-wayfinding checklists | Scenario operators + community council | Fix ordinary service first; any AI plug-in that cannot run independently stays offline |
+| G2 Safety & inclusion gate | Human-takeover drills, accessibility co-testing, privacy checks, appeal records | Professional committee + affected-user representatives | Suspend the scenario; re-test after repair |
+| G3 Evidence gate | Baselines, comparisons, takeover/complaint records, public-benefit statement | Independent audit + joint council | Hold scale, shrink, or exit |
+
 **Phase-1 tasks in full:** complete the Heritage Park main works; start Zhongzhiyuan accelerator construction; establish the AI Origin Community's basic framework; complete transport and municipal infrastructure; and bring in the first wave of AI innovation enterprises. **Phase-2 tasks:** complete the Dazhongsi cluster; roll out application scenarios across the full set; mature the open-source community ecology; regularise international AI conferences; and see the first unicorn batch through the accelerator pipeline. **Phase-3 tasks:** raise public-space quality; complete the scenario set; widen international influence; consolidate the replicable model; and continue the engraving system as a standing institution.
 
 **Developer community operation (agent.6 deliverable).** For the global open-source community, operation runs on the OPS-1~OPS-4 cadence skeleton in operations.json:
@@ -604,6 +634,7 @@ This chapter consolidates the corridor's mobility and utility frame. The five-ti
 - **Incentives:** open-source contribution points (redeemable for workstations, compute credits, accommodation), annual honor-wall induction, speaking slots at the quarterly developer conference.
 - **Code of conduct:** mainstream open-source CoC template; violations handled by the council; two strikes and out.
 - **Data boundary:** contribution statistics use public PR metadata only; no personal data enters the honor wall (SC-05 rules).
+- **AI-closed days:** every scenario runs a full-offline drill every six months to verify ordinary service runs independently (baseline B05); drill records enter the annual public-value audit.
 
 *All fields machine-readable in operations.json (developer_community_operation node); check_ops.js validates them.*
 
