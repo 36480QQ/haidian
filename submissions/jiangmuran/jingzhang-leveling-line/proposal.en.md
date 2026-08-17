@@ -403,7 +403,7 @@ The spine is cut laterally by several existing arterials, and stitching those cu
 
 **This section had a classification and no geometry — now it has one.** For most of this package's life `roads.geojson` held the spine and the two survey routes and nothing else, while the proposal spent a whole subsection classifying stitching points. That is the same defect this package reports in other people's structured fields, so it is closed.
 
-Intersecting the submitted spine `ROAD-001` with OSM-surveyed arterials (trunk/primary/secondary, named only) in EPSG:4548 yields **eleven east-west stitching points**, written into [data:geometry/roads.geojson#ROAD-001] as ROAD-101 through ROAD-111. Each is a 90 m connection across the corridor, perpendicular to the spine (E204: it used to run along it):
+Intersecting the submitted spine `ROAD-001` with OSM-surveyed arterials (trunk/primary/secondary, named only) in EPSG:4548 yields **eleven east-west stitching points**, written into [data:geometry/roads.geojson#ROAD-101,ROAD-102,ROAD-103,ROAD-104,ROAD-105,ROAD-106,ROAD-107,ROAD-108,ROAD-109,ROAD-110,ROAD-111] as ROAD-101 through ROAD-111. Each is a 90 m connection across the corridor, perpendicular to the spine (E204: it used to run along it):
 
 | Stitching point | Class | Nearest mapped crossing |
 |---|---|---|
