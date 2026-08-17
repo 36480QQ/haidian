@@ -838,8 +838,8 @@
       "caught": true,
       "exit_code": 1,
       "named_the_damage": true,
-      "what_zh": "把本包对自己来源构成的自陈从「3 条」改成「6 条」——**登记册一条没动**，动的是这份包对自己说的话，而且改的方向是让缺口看起来小一些。",
-      "what_en": "Change this package's own statement about its evidence base from three locally published source to four. **The registry does not change**; what changes is what the package says about itself, in the direction that makes the gap look smaller.",
+      "what_zh": "把本包对自己来源构成的自陈从「5 条」改成「8 条」——**登记册一条没动**，动的是这份包对自己说的话，而且改的方向是让缺口看起来小一些。",
+      "what_en": "Change this package's own statement about its evidence base from five locally published source to four. **The registry does not change**; what changes is what the package says about itself, in the direction that makes the gap look smaller.",
       "why_zh": "**一份自陈缺口的文件，最容易失真的方向就是把缺口说小。** 这条变异要证明的是：这句话由 `sources.json` 现算核对，说小了会被拦下。",
       "why_en": "**A document that declares its own gaps is most likely to deform in the direction of making them smaller.** The mutation proves the sentence is recomputed against sources.json and an understatement is caught."
     },
