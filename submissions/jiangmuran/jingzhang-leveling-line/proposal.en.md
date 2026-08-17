@@ -389,6 +389,8 @@ These are existing conditions, not control values, and may not be used as a redl
 
 ### East-west stitching: types and priorities, not engineering conclusions
 
+**This is not a requirement this proposal invented; it is one the district guideline writes down.** The Haidian District urban renewal guideline, 2025 edition, states in its slow-mobility clause: improve the quality of slow-mobility travel, strengthen accessibility design requirements to meet the differing needs of all ages and all people, and raise the continuity and reach of the slow network, **giving priority to connecting the breaks**, linking rail stations, major public service facilities and public spaces [source:HAIDIAN-RENEWAL-GUIDE-2025]. This section supplies **which breaks, by what type, and who decides**; the guideline supplies **that they must be connected**. The same guideline also calls for completing accessible and age-friendly design and exploring **AI-friendly, human-machine-friendly** urban space — so this proposal's three red lines no longer rest on national law and the designer's goodwill alone.
+
 The spine is cut laterally by several existing arterials, and stitching those cuts is one of the central tasks of the overall design area. This proposal classifies each stitching point into three types by **cost and feasibility**, and states plainly where it stops:
 
 | Type | Character | What this proposal supplies |
