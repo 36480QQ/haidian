@@ -1251,9 +1251,22 @@
       "what_en": "Put 「walking all eight」 back at the head of the slow-mobility sheet in place of 「walking the six spine points」 — **the number does not move**; what moves is how many points it says it counted.",
       "why_zh": "**这条链走的是六个点，而两张送审图纸曾在它旁边写着八个。** 少的两个各有正当理由——BM-21 在这张可步行图上与任何其他水准点之间都不存在可步行路径，BM-22 以支线到达——而这两条理由此前**只出现在构建日志里**。变异证明：数量词一旦与它所数的东西对不上，构建就停。",
       "why_en": "**The chain walks six and two of the sent sheets said eight beside it.** The two left out have good reasons — BM-21 has no walkable path to any other benchmark on the mapped network, BM-22 is reached by a spur — and both reasons had only ever appeared in a build log. The mutation proves the build stops when a counting word outruns what it counts."
+    },
+    {
+      "id": "M103",
+      "gate": "proposal_legibility_qa.py",
+      "target": "fig_key_areas.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把重点区窗口里本方案自己画的路径改回 1.1 单位——**即修复前的线宽**，而它底下那张实测 OSM 底图最粗的一级是 1.7。**几何一条没动，动的只是谁画得更细。**",
+      "what_en": "Return this proposal's own routes in the key-area windows to 1.1 units — **the weight before the fix** — under a measured OSM basemap whose heaviest class is drawn at 1.7. **No geometry moves; what moves is which of the two is drawn fainter.**",
+      "why_zh": "**这张图是评审每次都收到的五张之一，而画在上面的六条穿越通道，正是为满足本包公布的可穿越条件才加的。** 它们若与实测街道同粗同色，读图的人看不到任何干预。E242 已在同一张图上为建筑立过这条规矩——设计出来的东西不该是自己画框里最淡的一笔——而线从来没被这条规矩管过。变异证明：本方案的线一旦细于它所依托的底图，构建就停。",
+      "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 102,
+  "caught": 103,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1301,6 +1314,7 @@
     "planning_controls_qa.py",
     "positioning_qa.py",
     "project_dependency_qa.py",
+    "proposal_legibility_qa.py",
     "reading_calendar_qa.py",
     "registry_alignment_qa.py",
     "resource_frame_qa.py",
@@ -1368,6 +1382,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 73 道闸门，其中 70 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 73 gates, 70 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 74 道闸门，其中 71 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 74 gates, 71 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

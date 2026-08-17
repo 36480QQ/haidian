@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 73 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 76 条 = 73 道闸门 + 3 条披露。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 74 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 77 条 = 74 道闸门 + 3 条披露。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -263,7 +263,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 102 mutations, 70 of 73 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 103 mutations, 71 of 74 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -271,7 +271,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 102 deliberate defects across 70 of 73 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 103 deliberate defects across 71 of 74 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_HARNESS_REFERENCE_QA",
@@ -351,7 +351,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 609 distinct names harvested from the package — 593 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 611 distinct names harvested from the package — 595 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -432,6 +432,14 @@
       "target": "package",
       "source": "package-provided",
       "message": "project_dependency_qa.py — project dependencies: 8 projects, 1 dependency edge(s) all resolving and acyclic, longest chain R4 → R7; every blocker carries one of 4 published kinds and a party who can lift it; 5 wait on no official data and 3 can start today, both counted by a stated rule rather than by hand; the count agrees with renewal_project_count in metrics.json. Scope: this cannot tell whether a dependency is the right one, only that the ordering the chapter claims is written down, resolves, and does not contradict the phases beside it"
+    },
+    {
+      "check_id": "PKG_PROPOSAL_LEGIBILITY_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "message": "proposal_legibility_qa.py — proposal legibility: 6 designed group(s) across the sheets the reviewing model receives, each stroked at or above 2.38 units — 1.4× the heaviest class the measured basemap draws (1.7) — each carrying a casing, and each named in the sheet's own words. The floor is weight rather than colour because every hue in this palette sits at 1.6–1.7 contrast against the fabric grey, so hue alone would not separate them. Scope: a legibility rule about weight and naming, not about whether a route is well chosen"
     },
     {
       "check_id": "PKG_READING_CALENDAR_QA",
@@ -527,7 +535,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "sheet_layer_key_qa.py — sheet layer keys: 4 declared layer(s) across both editions, every one with a key swatch on the same sheet and no key without a layer; sheets that declare no layers are out of scope and this does not guess at them"
+      "message": "sheet_layer_key_qa.py — sheet layer keys: 6 declared layer(s) across both editions, every one with a key swatch on the same sheet and no key without a layer; sheets that declare no layers are out of scope and this does not guess at them"
     },
     {
       "check_id": "PKG_SHEET_LEGEND_QA",
@@ -615,7 +623,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "term_consistency_qa.py — term consistency: 1748 distinct Chinese terms across i18n_en 652, i18n_drawings 783, i18n_html 338; 25 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 1 declared exception(s), each still in use"
+      "message": "term_consistency_qa.py — term consistency: 1749 distinct Chinese terms across i18n_en 653, i18n_drawings 783, i18n_html 338; 25 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 1 declared exception(s), each still in use"
     },
     {
       "check_id": "PKG_UPSTREAM_DRIFT_QA",
@@ -655,7 +663,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 262 条，按发现者：audit 27、external 30、external-reviewer 5、own-gate 18、rival-read 14、self 168；最常见形状：check-measured-the-convenient-thing 46、two-copies-of-one-thing-drifted 39、deliverable-not-inspected-before-shipping 29、claim-that-cannot-be-checked-by-construction 20。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 262 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 263 条，按发现者：audit 27、external 30、external-reviewer 5、own-gate 18、rival-read 14、self 169；最常见形状：check-measured-the-convenient-thing 46、two-copies-of-one-thing-drifted 39、deliverable-not-inspected-before-shipping 30、claim-that-cannot-be-checked-by-construction 20。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 263 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -663,7 +671,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：102 处人为缺陷，覆盖 70 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 102 deliberate defects across 70 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：103 处人为缺陷，覆盖 71 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 103 deliberate defects across 71 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -869,7 +877,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 26774307,
+      "total_bytes": 26808161,
       "maintainer_bypass": false
     },
     "stderr": ""
