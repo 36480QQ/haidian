@@ -23,7 +23,7 @@ This section is the one-page entry for review: the left column is the question a
 
 | Review question | This proposal's answer | Verifiable deliverable |
 | --- | --- | --- |
-| What is the core proposition | Jing-Zhang AI Spine: translating the green corridor into a trustable public innovation interface; self-checked by three delivery disciplines — Recalculable, Stoppable, Accountable — with a one-line test standard (recalculable / stoppable / answerable — if any of the three cannot be answered it does not go live) | This section + the indicator-recalculation table + the task-coverage matrix + 14 vector planning sheets (incl. grading hierarchy, subsystem composition and three key-area detail sheets) |
+| What is the core proposition | Jing-Zhang AI Spine: translating the green corridor into a trustable public innovation interface; self-checked by three delivery disciplines — Recalculable, Stoppable, Accountable — with a one-line test standard (recalculable / stoppable / answerable — if any of the three cannot be answered it does not go live) | This section + the indicator-recalculation table + the task-coverage matrix + 14 vector planning sheets (incl. grading hierarchy, subsystem composition and three key-area detail sheets) plus a sheet index |
 | How does it respond spatially | One belt, three cores, multiple points; a blue-green slow-mobility composite ring; the three delivery disciplines land on three drawable spatial images: Zhizhiyuan · Recalculable Ledger Plaza, Dazhongsi · Stoppable Service Street, Origin Community · Accountability Corridor | The spatial layers + five analysis figures + the A3 booklet and A0 boards |
 | How do AI and governance interlock | Each of the ten scenario cards declares "no-AI equivalent path + stop condition + manual fallback"; aligned with the five-field criteria of the Service Equivalence Baseline SEB v0.2 | Scenario-card section + the task-coverage matrix |
 | Where does implementation start | Three stoppable work packages + three phases + six renewal projects (roles / preconditions / outcome indicators / fallback) | Renewal-project-list section + the phasing layer |
@@ -55,6 +55,16 @@ This proposal writes the key gaps as a four-row "evidence ledger", each row sepa
 | Industry / operations | Haidian AI core industry ~¥282.2 B, 1,900+ firms, 104 registered large models [source:DATA-HAIDIAN-AI-INDUSTRY]; eight universities and CAS institutes along the corridor [source:DATA-ALONG-UNIVERSITIES] | Specific tenant entries, budgets, operators, service windows, exit mechanisms | Cases and firms serve as mechanism references, not an investment-attraction list or investment commitment |
 
 This ledger simultaneously enforces the three delivery disciplines "Recalculable, Stoppable, Accountable": what is recalculable is written as a number, what is not is written as awaiting formal data; what is verifiable is written as fact, what is not is written "pending verification, not drawn"; what can be held responsible is written with a role, what cannot is written unactivated.
+
+## A Century in Dialogue: From Self-Strengthening in the First Industrial Revolution to Leadership in the Fourth
+
+This roughly nine-kilometre Jing-Zhang green corridor is where two of China's self-strengthening stories — from two industrial revolutions — overlap on the same ground [source:DATA-JINGZHANG-HISTORY].
+
+In 1909, a poor and weakened China was told that "the engineer who could build the Beijing–Zhangjiakou Railway had not yet been born." Zhan Tianyou (Jeme Tien-yow), leading an all-Chinese team, independently designed and built the country's first trunk railway. His herringbone switchback translated the steep 28‰ grade at Qinglongqiao into engineering wisdom a train could climb, stop on, and be held accountable for at every switchback — a self-strengthening project in which China learned from and caught up with the advanced technology of the First Industrial Revolution [source:DATA-JINGZHANG-HISTORY]. The Qinghuayuan Station, opened the same year, lies within today's provisional extent of the Beijing AI Origin Community; in 1949 it became the first stop of the leadership's "journey to the capital for the examination," and after closing in 2016 it rests southwest of Chengfu Road. One small station anchors three identities at once: the 1909 origin of self-strengthening, the 1949 starting point of the "examination," and the 2026 origin of innovation.
+
+One hundred and seventeen years later, on the same ground, China has become one of the leaders in artificial intelligence. With an AI core-industry scale of 350 billion yuan, 130 registered large models and 26 unicorns, Haidian carries a core share of China's role in global intelligent competition [source:DATA-HAIDIAN-AI-INDUSTRY]. The centenary Jing-Zhang AI Innovation Belt is not a fresh start on a blank slate, but the continuation and elevation of this self-strengthening thread into the Fourth Industrial Revolution — translating the herringbone railway's recalculability, stoppability and accountability on a grade into this proposal's three delivery disciplines for AI systems: Recalculable, Stoppable, Accountable.
+
+This is the conception of the proposal: to make the Jing-Zhang AI Spine a public innovation interface that runs "from historical self-strengthening to intelligent leadership." As the flagship detailed-design anchor (see "Key-Area Detailed Design"), the Beijing AI Origin Community overlays the triple memory of Qinghuayuan Station, the engineering wisdom of the herringbone and the contemporary discipline of the Accountability Corridor in a single place — letting a passerby, beside the rail relics, read a nation's two self-strengthenings: the first time, we learned and caught up with the world's advanced technology; this time, we co-define the rules of the intelligent age with the world [source:DATA-JINGZHANG-HISTORY] [depth:overall_spatial_structure].
 
 ## Three-Level Scope Working Framework
 
@@ -169,11 +179,45 @@ This proposal, in the overall design scope, proposes the urban-renewal overall s
 
 **Vector planning sheets**: this proposal is accompanied by fourteen vector planning sheets that land the spatial structure above as verifiable drawings — nine overall sheets: Location & Overall Scope, Existing Constraints & Networks, Land-Use Plan (land-sea classification colours and codes), Spatial Structure, Three Key-Area Site Plans, Green & Public-Space System, Mobility & Slow-Traffic System, Phased Implementation, and Blue-Green Landscape System; two system sheets: Grading Hierarchy (three-level design control: overall — key areas — places) and Subsystem Composition (four subsystems overlaid: industry-innovation, blue-green ecology, mobility & slow traffic, public service); and three key-area detail sheets at roughly 1:2000: Zhongzhiyuan AI Acceleration Area, Beijing AI Origin Community and Dazhongsi AI Industry Cluster, each marking the anchor of its spatial imagery (Recalculable Ledger Plaza, Accountability Corridor, Stoppable Service Street) together with in-area land-use parcels, R&D clusters and public nodes. Each sheet carries a title, legend, north arrow, scale bar, the provisional-boundary red dashed line and source notes, so the placement of every zone, greenway and node can be zoomed and checked directly.
 
+![A Century in Dialogue · Index of 14 Vector Planning Sheets](assets/figures/plan-15-index.png)
+
+Above is the sheet index; the fourteen sheets follow below (vector originals in `drawings/`; rendered here for direct viewing)
+
+![Location & Overall Scope](assets/figures/plan-01-location.png)
+
+![Existing Constraints & Networks](assets/figures/plan-02-constraints.png)
+
+![Land-Use Plan](assets/figures/plan-03-landuse.png)
+
+![Spatial Structure](assets/figures/plan-04-structure.png)
+
+![Three Key-Area Site Plans](assets/figures/plan-05-keyareas.png)
+
+![Green & Public-Space System](assets/figures/plan-06-green-public.png)
+
+![Mobility & Slow-Traffic System](assets/figures/plan-07-mobility.png)
+
+![Phased Implementation](assets/figures/plan-08-phasing.png)
+
+![Blue-Green Landscape System](assets/figures/plan-09-blue-green.png)
+
+![Grading Hierarchy](assets/figures/plan-10-hierarchy.png)
+
+![Subsystem Composition](assets/figures/plan-11-subsystems.png)
+
+![Zhongzhiyuan AI Acceleration Area Detail (c.1:2000)](assets/figures/plan-12-keyarea-zhongzhiyuan.png)
+
+![Beijing AI Origin Community Detail (c.1:2000)](assets/figures/plan-13-keyarea-origin.png)
+
+![Dazhongsi AI Industry Cluster Detail (c.1:2000)](assets/figures/plan-14-keyarea-dazhongsi.png)
+
 Regulatory-depth control indicators — FAR, building height, building density, setbacks, road redlines and facility standards — in the absence of official control conditions are uniformly marked as awaiting formal data and entered in the indicator-recalculation table and the assumptions list, with the missing conditions and recalculation path stated, never substituting agent-inferred values for approved indicators [depth:development_intensity_controls] [metric:floor_area_ratio]. The indicator-recalculation table recalculates the core areas, ratios and layer counts, and the task-coverage matrix ties each task to layers, metrics and drawings.
 
 ## Key-Area Detailed Design
 
 The three key areas are this proposal's three detailed-design anchors. The Zhizhiyuan AI Autonomous-Innovation Acceleration Area develops around the national AI platform, full-stack autonomy, standard-setting, safety governance, industry display, external transport, Qinghe culture, low-carbon green innovation exchange environment and green-space AI scenarios; the Beijing AI Origin Community develops around near-campus innovation, outcomes incubation and translation, a talent zone, open-source system, brand activities, building retain/renovate/demolish, outcomes display and release, residential and living support, campus-park slow-mobility links and rail-station integration; the Dazhongsi AI Industry Cluster Area develops around leading enterprises, intelligent agents, intelligent terminals, content consumption, data factors, digital assets, commercial services, composite use of planned green space, Dazhongsi Station integration and four-quadrant pedestrian connectivity. All three detailed designs cite [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003], with depth checked by [depth:three_key_area_detailed_design].
+
+Among the three key areas, **the Beijing AI Origin Community is the flagship detailed-design anchor**, carrying the spatial narrative of "A Century in Dialogue." Its detailed design is organized around an "Origin Axis": anchored on the Qinghuayuan Station relic lying southwest of Chengfu Road — where three identities overlap (the 1909 origin of self-strengthening, the 1949 starting point of the "examination," and the 2026 origin of innovation) [source:DATA-JINGZHANG-HISTORY] — the axis runs north to stitch the open-source collaboration cluster and the outcomes-translation cluster into one walkable continuous interface of "near-campus incubation, outcomes release and talent-zone services." Graphically it continues Zhan Tianyou's herringbone-switchback motif: the main axis makes a single "switchback" in front of the station relic, separating the R&D backstage from the public frontstage — the public-facing Accountability Corridor is laid along the switchback, writing each renewal project's responsible body, appeal interface and fallback path on the ground so that anyone harmed can follow the corridor to a name, an appeal and a fallback [data:geometry/key_areas.geojson#PROV-KEY-002] [metric:public_space_ratio]; the backstage open-source release hall and incubation spaces sit inside the corridor, so that on failure the public rooms can close as a whole without encroaching on care and incubation cores. In-area 0802 AI R&D innovation land (~835,600 m²) overlaps with 1401 park green space, and the slow greenway passes north–south, linking the Wudaokou–Tsinghua–PKU institute chain into this Origin Axis that runs "from historical self-strengthening to intelligent leadership" [data:geometry/land_use.geojson#LU-001] [depth:three_key_area_detailed_design].
 
 ![Three key areas index and design tasks](assets/figures/key-areas.png)
 
