@@ -1162,9 +1162,22 @@
       "what_en": "Swap which official figure two of the key areas are compared against. **No polygon moves**; what changes is the official value each is held to.",
       "why_zh": "**一处面积对着另一处的官方值比，比出来的差没有意义。** 这条变异要证明的是：逐区比对一旦配错，构建就停，而不是安静地报出一个更大的差。",
       "why_en": "**An area compared against another area's official figure produces a difference that means nothing.** The mutation proves that a mispaired per-area comparison stops the build rather than quietly reporting a larger number."
+    },
+    {
+      "id": "M96",
+      "gate": "metric_label_qa.py",
+      "target": "recompute_metrics.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把「哪些算本包自计」的推导条件改窄一格，于是几条装置类指标被改判为「场地量但未被复算」。**指标的值一个没动**，动的是它对读者说自己是什么。",
+      "what_en": "Narrow by one the rule deciding which metrics count this package, so several apparatus metrics are reclassified as site numbers the verifier does not re-derive. **No metric value moves**; what moves is what each says it is.",
+      "why_zh": "**这条分类的错误方向永远是让本包看起来测的场地更多。** 这条变异就朝那个方向走一步，证明两个标签一旦互相矛盾，构建就停。",
+      "why_en": "**The error in this classification always runs toward making the package look as though it measured more of the site.** The mutation takes one step that way and proves the build stops when the two labels contradict."
     }
   ],
-  "caught": 95,
+  "caught": 96,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1197,6 +1210,7 @@
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
     "measurement_protocol_qa.py",
+    "metric_label_qa.py",
     "naming_qa.py",
     "official_area_qa.py",
     "organiser_review_qa.py",
@@ -1273,6 +1287,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 67 道闸门，其中 64 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 67 gates, 64 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 68 道闸门，其中 65 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 68 gates, 65 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
