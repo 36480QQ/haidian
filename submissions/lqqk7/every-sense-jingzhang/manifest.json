@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8097e556165f7787a9ca95106bb6e0726fcf9928de7f67b84fc6339d30d2907a"
+      "sha256": "b0c8c0739ef68be8a73be2837e4781f7cd83fe358b24ffbfc453107e604b9549"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "a7ddd02388425ec16ce41c26b6f2a40509dea58793c6be9364ba152d87893104"
+      "sha256": "65ea731911b392858354a6836e5d3e3dc9a77903b36b0593327eed2c3e0f7eeb"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e0ed7f045b65f2b340478141341ecefd142db69afd791bdf948ab759154972c9"
+      "sha256": "47021588788cf8ff5ec956d335bd060f715414a0cbb186290a59631e764cb18c"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "62da85443b2f3c73f74b0d9f79a23fbb5f1b5ddef5fcd4378c81fb12afa40c35"
+      "sha256": "63e1cbb1ddecd4bc525e5fec9679b416e107a8cbd6ab9ef281720c5f1a5aa061"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "5c16cb611de3b561831079c2973dd2dfdb82541f359500065cb726f1ad1795cc"
+      "sha256": "6ae80bafaf9260c79319661b8ee59d33c0a8ece8ad4e2212e9aae6ce62b40a72"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "1c256d63782e0b10840e7a6c2808b55a6a689d87a834c102126d78b6504c764c"
+      "sha256": "9f6a58e90ef8557792b7f5068d4c86905637b7c2dcaf2581621e81b66c2d83f9"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3f759dd3d43b0e91d39717206726607035250ec499d7abda690dd32ea80f679a"
+      "sha256": "dcb9e55c4f191ca4a00fa7d04d31ae9d199ce57365a42b27e451fec967b848fe"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "bd334461c7f4919e9fe010fd25a6449a5948a069218652042bb9d281d7f9740f"
+      "sha256": "e1f4730809130b5d9f950f520112e3e807de98f789cdd5719a485b67c6f5d8f5"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -135,7 +135,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "48e19bbe40ba9912fe4c90a27713496c6ca916a7d363e88707d8da0a036f24eb"
+      "sha256": "2f3c39c375f459a8506d099c9ca8449b14f7839bc609ccfb0501a4b44acd2cb1"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "666ee47ee30992943adc6d326531b4c0af101a8b9626bb3e7e43507913fd6e79"
+      "sha256": "e47a61ddc207166b9b2f9cd9909feca5b1c7b16b74a412ef5371fed1953ef04a"
     },
     {
       "path": "assets/figures/dual-state-plan.png",
@@ -157,7 +157,7 @@
       "required": false,
       "language": "zh",
       "title_zh": "双态平面图版：同一张平面，两种状态，差异只在可撤除叠层",
-      "sha256": "f847f3b4079880cc3d475964c9cf01608dbc7c823bf66fc305721e8dc0bc0565",
+      "sha256": "f407a6360d9e000c712c292353225c82848ccec59c51d8867399dde2b589da82",
       "title_en": "Dual-state plan plate: one plan, two states, the difference only in the removable overlay"
     },
     {
@@ -165,7 +165,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "sha256": "920f2976251856a1197a16a27c52d5175dd7ee202b4d4a32507784c018416203",
+      "sha256": "be9e678d107021a8484062bb24658baf72cae78059a1f88efcc6e57822148d00",
       "translation_of": "assets/figures/dual-state-plan.png"
     },
     {
@@ -173,7 +173,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "2537ea0c69a34e247bcfb3fc52ca067b90888e06ef4d28da8cb31772ad9d0b70"
+      "sha256": "66637036752b25135a53c4a03338a0ccbcc0e649ba5996cb3556a997774d31ad"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "24f26f3e96466d773922eafb359dd748be1e956414e6678036e54a881e1e5e80"
+      "sha256": "52e80693b45ac14c6fcbbb811159c0c90e349472e7fe1d3f62f96f7d9ea3f079"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a81f8627d52dbe855bacdb0c4422b7b9f7892f09079991aacf500ea9a233ea75"
+      "sha256": "22f821315a690a9b2960a07742a84d90f4a5170e5fb6ba8725ae27e73e02f426"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -260,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "9ee6447024c1be1c4b5edcf8b417176c7d71a574096f1616ee69d3a1e40175f5"
+      "sha256": "ae477df9836f5ef8f57eac25bdabe733e2352861700f29c93f83b07f7d6b883d"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -268,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "3ac3f42f29c31fdfcb9949298eadc7283e50a598d0a03ba96ff840c33ff5bacf"
+      "sha256": "86b3fccf98419779c394937dd63b4dbe6025e8707869d619c8f6edb16f814842"
     },
     {
       "path": "visual/index.en.html",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "efaddde7b8c73fcfd006363c249caba09daf1d784f9da196aebe0b4558d08286"
+      "sha256": "59c9dc6fdbea7fd58200d9f8c4ae94f8e450ca158c443cf4bd50ad5d36df2753"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -292,7 +292,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "549d7d069e66c42b616dfa72c00ad8dce05a353170bc4e8d4c771eba70a3dc63"
+      "sha256": "16cec7aa65a623bd2c6917ec19cd0f18680c269b4f516961bf7f59a4fa098c28"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -406,7 +406,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "b1b9bea9fc1d6384e3c606008ac10ae31a7a8d0f880a3d7a198097c7b5af5191"
+      "sha256": "83dc13ec49a4e7fbc396dcba76db78de479c775aab730d2326de67b1db0d035c"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.png",
@@ -428,7 +428,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "9686ea66dc625bc0f0dd60e15f8ed70a5d952ffc9c6e6657b3970f49356bccdd"
+      "sha256": "86367ec9c7455f8882f0512d320b9a49c24680075b9760d7ab563aeaab58323f"
     },
     {
       "path": "assets/figures/scene-dual-state.en.webp",
@@ -436,14 +436,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scene-dual-state.webp",
-      "sha256": "16ee5a2257cdc6e62839d2b63b31bf87edea2c08bd459555e5b04a757eeac880"
+      "sha256": "7b2ee533421474bac89d29eb6b0b59d6f16d21ab06d19a0323f39657de128255"
     },
     {
       "path": "assets/figures/scene-interface-yard.webp",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "3aa484bf51de36585a0b6314f9d4f637cdfdac9c7bd52354e6851bd531f9d5dd"
+      "sha256": "d3d175ec02434a965b40a1c8dde9ce0ba2cf000cb64c1fc1b079e9f1892ff18b"
     },
     {
       "path": "assets/figures/scene-interface-yard.en.webp",
@@ -451,14 +451,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scene-interface-yard.webp",
-      "sha256": "337f91d7930cf057a530edc40265f1c0b7589dd6b500d9d20735de139475dd08"
+      "sha256": "cd4a574f15d795d7a5235c02c7e78fa4ef7411af71f888b26590da12c979e051"
     },
     {
       "path": "assets/figures/scene-corridor-aerial.webp",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "9ecfb48b5674c4e297abc1ada37ec26b411c6b8dc2b5d06360a7c4f5672887cf"
+      "sha256": "a9359bb0b01dd184a1b665820a2b5d49b439ccebd1ee4d0400e1fa6da3de8a56"
     },
     {
       "path": "assets/figures/scene-corridor-aerial.en.webp",
@@ -466,7 +466,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scene-corridor-aerial.webp",
-      "sha256": "90be3cafcabd105e4e29309d3524c5b0542d62f824769c5e34d443330f7f0f4d"
+      "sha256": "7be9b575a12c2e702fe6d23760083699e57a3eca342b564316877acfc85a8cf5"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -474,7 +474,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "1e2ac01b1dd06a868e25b5c39da0aeb4a6768d1785279dec322698b503de3d02"
+      "sha256": "78d8c5cc254a243a61fd3c532170da19d9a5de1c364cece1c57c8c4e795fb90c"
     },
     {
       "path": "visual/assets/osm-context/provenance.json",
@@ -506,10 +506,73 @@
       "sha256": "bebe0662f524ff96a21183ca0daa36c70a6c36dcb1b624e1758ec249301e5d95"
     },
     {
+      "path": "assets/figures/verification-overlay-00-all.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "核验图 00：全部图层叠加（本包提交几何叠加于 OpenStreetMap 底图，中英双语同图）",
+      "title_en": "Verification sheet 00 — All layers overlaid — submitted geometry on an OpenStreetMap basemap, one bilingual sheet",
+      "sha256": "9e0dd4ca9f2ce922614b7f1315053d7b53a6c2f57e43eed8f5fedf8e2b64daa3"
+    },
+    {
+      "path": "assets/figures/verification-overlay-01-landuse.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "核验图 01：用地结构 land_use（本包提交几何叠加于 OpenStreetMap 底图，中英双语同图）",
+      "title_en": "Verification sheet 01 — Land use — submitted geometry on an OpenStreetMap basemap, one bilingual sheet",
+      "sha256": "587d9108a9ef776e2a224b452de31e15d1cad88c9ed91d6c7ad1c3f03d789087"
+    },
+    {
+      "path": "assets/figures/verification-overlay-02-roads.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "核验图 02：线位 roads（本包提交几何叠加于 OpenStreetMap 底图，中英双语同图）",
+      "title_en": "Verification sheet 02 — Roads (centrelines) — submitted geometry on an OpenStreetMap basemap, one bilingual sheet",
+      "sha256": "9f7ba2d28d6ac660b9cae54f920fa3e7e01cba16ef424453b60e7cea9199554e"
+    },
+    {
+      "path": "assets/figures/verification-overlay-03-buildings.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "核验图 03：概念体量 buildings（本包提交几何叠加于 OpenStreetMap 底图，中英双语同图）",
+      "title_en": "Verification sheet 03 — Buildings (concept masses) — submitted geometry on an OpenStreetMap basemap, one bilingual sheet",
+      "sha256": "53f52bdb88d60c0130d382512406c5ca89c88527f8a1db52633814a062c3975d"
+    },
+    {
+      "path": "assets/figures/verification-overlay-04-green.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "核验图 04：绿地 green_space（本包提交几何叠加于 OpenStreetMap 底图，中英双语同图）",
+      "title_en": "Verification sheet 04 — Green space — submitted geometry on an OpenStreetMap basemap, one bilingual sheet",
+      "sha256": "b17fbc63bea2919a1c1b52b9d64d1884c3733a37640b9e1cb15c2ff0eadc216c"
+    },
+    {
+      "path": "assets/figures/verification-overlay-05-publicspace.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "核验图 05：公共空间 public_space（本包提交几何叠加于 OpenStreetMap 底图，中英双语同图）",
+      "title_en": "Verification sheet 05 — Public space — submitted geometry on an OpenStreetMap basemap, one bilingual sheet",
+      "sha256": "54835e32a0f477c90cad68a198230c0aa29c1702411da6d50e5fc92ca91d1628"
+    },
+    {
+      "path": "assets/figures/verification-overlay-06-keyareas.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "核验图 06：重点区 key_areas + 独立完成节点 constraints（本包提交几何叠加于 OpenStreetMap 底图，中英双语同图）",
+      "title_en": "Verification sheet 06 — Key areas + completion nodes — submitted geometry on an OpenStreetMap basemap, one bilingual sheet",
+      "sha256": "e8a4c64a92aa5b50e59993c1f1da23ba165579ed4cfaa7d5b331e9a9354c7e5e"
+    },
+    {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "bca0adbb6f2b80f1d26a2837d9b60a18d28a502f86a608c31f05a3b56a6d6214"
+      "sha256": "7472872bf850332279b7936a69d32c90eafca2e42a4e526115aa06024b3c73a4"
     },
     {
       "path": "assets/media/cover.webp",
@@ -647,7 +710,7 @@
       "poster": "assets/media/journey-poster.webp",
       "caption": "assets/media/journey.vtt",
       "transcript": "assets/media/journey.md",
-      "sha256": "ac8f6764248d35a138782bef5c2a87efa4e8659253be89e585d137432b49a45d"
+      "sha256": "80d764f01434231eebaaa903b8882a6ee8575d2782ceb5467c671d9c34cb9f5d"
     },
     {
       "path": "assets/media/journey-poster.webp",
@@ -677,7 +740,7 @@
       "title_en": "Multimodal short film storyboard, transcript and rights note",
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
-      "sha256": "eb2bf672bfdab95cc4affbf7006dd0bdbde443b56494e774be73d51387f1419f"
+      "sha256": "90a462f2cf7fa7e84915ee085e4ccd5f3194825b12b06ead51397120ad204d26"
     },
     {
       "path": "visual/assets/ethics-protocol.json",
@@ -695,7 +758,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "78ce0f10bfc2a85134a2627f4503b82913b3ba5104a2483e27f1835e2da5ab3b"
+      "sha256": "ee702f3bc49f41fd097803338fc4f2c1bf5bdeab63e00f2e13827b67d03e2ece"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -713,7 +776,7 @@
       "language": "neutral",
       "title_zh": "场景概念图生成档案（提示词全文、工具链、输出哈希）",
       "title_en": "Concept Scene Image Provenance (full prompts, tool chain, output hashes)",
-      "sha256": "e379ffc4e07d932a62071ba39ee78a7b07b5efeda9a1f9c52a38625f1d6a0298"
+      "sha256": "18b585af102996316b4946995365c37ea086ec1e33fc63d7108cd26647487474"
     },
     {
       "path": "visual/assets/seb-spec.json",
@@ -1028,7 +1091,7 @@
       "transcript": "assets/media/dual-state-walk.md",
       "poster": "assets/media/dual-state-walk-poster.webp",
       "caption": "assets/media/dual-state-walk.vtt",
-      "sha256": "da6e0014243a167a154347d2077bfc5812cb27dd0944d9664db00c1b01f56925"
+      "sha256": "a7dbb764877bda3d7a1d45d64da1e9ff2c99d50b817920b11e0868060d61c047"
     },
     {
       "path": "assets/media/dual-state-walk-poster.webp",
