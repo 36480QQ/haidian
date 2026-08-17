@@ -43,9 +43,9 @@
     },
     "generator_enforced": true,
     "heading_parity": {
-      "en": 86,
+      "en": 87,
       "equal": true,
-      "zh": 86
+      "zh": 87
     },
     "ledger_digest_coherence": {
       "checked": 139,
@@ -97,7 +97,7 @@
       "r27_chapter_heading": true
     },
     "route_anchor_resolution": {
-      "checked": 6,
+      "checked": 14,
       "missing": 0
     }
   },
@@ -1964,7 +1964,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 38,
+      "latest_rebuild_round": 39,
       "notes": {
         "en": "Self-registered: the index itself is the 141st registered path and locates the other 140 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
         "zh": "本索引自登记：索引自身是第 141 个登记路径，负责定位其余 140 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
@@ -3008,73 +3008,6 @@
       "route_id": "handoff-d01-d08"
     },
     {
-      "entry_points": [
-        {
-          "anchor": null,
-          "note_en": "Front-stage prose and reading entry",
-          "note_zh": "前台正文与阅读入口",
-          "path": "proposal.md"
-        },
-        {
-          "anchor": "#jury-entry",
-          "note_en": "Front-stage six sections",
-          "note_zh": "前台六段",
-          "path": "visual/index.html"
-        },
-        {
-          "anchor": null,
-          "note_en": "A3 review booklet (14 pages)",
-          "note_zh": "A3 评审册（14 页）",
-          "path": "drawings/a3-booklet.pdf"
-        },
-        {
-          "anchor": null,
-          "note_en": "A0 boards (8 boards)",
-          "note_zh": "A0 展板（8 板）",
-          "path": "drawings/a0-boards.pdf"
-        }
-      ],
-      "label_en": "Eight-question cold read (editorial review only)",
-      "label_zh": "八问冷读复核（仅作编辑复核）",
-      "limit_en": "An independent agent cold read is editorial review only; it is not real public or professional approval opinion.",
-      "limit_zh": "独立 Agent 冷读只能作为编辑复核，不能冒充真实公众或专业审批意见。",
-      "question_en": "Can the eight questions be answered correctly from the front stage alone?",
-      "question_zh": "只看前台能否正确回答八问？",
-      "questions": [
-        {
-          "en": "What is the single core concept?",
-          "zh": "方案唯一核心概念是什么？"
-        },
-        {
-          "en": "Can the ordinary task be completed without registration, QR or AI?",
-          "zh": "不注册、不扫码、不使用 AI 能否完成普通任务？"
-        },
-        {
-          "en": "Why can Zhongzhiyuan, Origin and Dazhongsi not copy one another?",
-          "zh": "众智园、原点社区和大钟寺为什么不能互相复制？"
-        },
-        {
-          "en": "Why is the proof track not continuous occupation?",
-          "zh": "验证轨为什么不是连续占地？"
-        },
-        {
-          "en": "What stops and what continues on failure?",
-          "zh": "发生故障时停止什么、保留什么？"
-        },
-        {
-          "en": "Why is recovery not G1, approval or restart?",
-          "zh": "恢复为什么不等于 G1、批准或重新运行？"
-        },
-        {
-          "en": "Which spatial information remains provisional or unknown?",
-          "zh": "哪些空间信息仍是临时或未知？"
-        },
-        {
-          "en": "Which inputs and professional roles may revise, reject or delete the proposal?",
-          "zh": "哪些资料和专业角色可以修改、拒绝或删除方案？"
-        }
-      ],
-      "route_id": "cold-read-8",
       "answer_map": [
         {
           "answer_en": "Twin-Track Jing-Zhang: the ordinary track is continuous, the proof track intermittent and adjacent, the three prototypes non-interchangeable, and everything remains G0.",
@@ -3248,7 +3181,74 @@
           "question_en": "Which inputs and professional roles may revise, reject or delete the proposal?",
           "question_zh": "哪些资料和专业角色可以修改、拒绝或删除方案？"
         }
-      ]
+      ],
+      "entry_points": [
+        {
+          "anchor": null,
+          "note_en": "Front-stage prose and reading entry",
+          "note_zh": "前台正文与阅读入口",
+          "path": "proposal.md"
+        },
+        {
+          "anchor": "#jury-entry",
+          "note_en": "Front-stage six sections",
+          "note_zh": "前台六段",
+          "path": "visual/index.html"
+        },
+        {
+          "anchor": null,
+          "note_en": "A3 review booklet (14 pages)",
+          "note_zh": "A3 评审册（14 页）",
+          "path": "drawings/a3-booklet.pdf"
+        },
+        {
+          "anchor": null,
+          "note_en": "A0 boards (8 boards)",
+          "note_zh": "A0 展板（8 板）",
+          "path": "drawings/a0-boards.pdf"
+        }
+      ],
+      "label_en": "Eight-question cold read (editorial review only)",
+      "label_zh": "八问冷读复核（仅作编辑复核）",
+      "limit_en": "An independent agent cold read is editorial review only; it is not real public or professional approval opinion.",
+      "limit_zh": "独立 Agent 冷读只能作为编辑复核，不能冒充真实公众或专业审批意见。",
+      "question_en": "Can the eight questions be answered correctly from the front stage alone?",
+      "question_zh": "只看前台能否正确回答八问？",
+      "questions": [
+        {
+          "en": "What is the single core concept?",
+          "zh": "方案唯一核心概念是什么？"
+        },
+        {
+          "en": "Can the ordinary task be completed without registration, QR or AI?",
+          "zh": "不注册、不扫码、不使用 AI 能否完成普通任务？"
+        },
+        {
+          "en": "Why can Zhongzhiyuan, Origin and Dazhongsi not copy one another?",
+          "zh": "众智园、原点社区和大钟寺为什么不能互相复制？"
+        },
+        {
+          "en": "Why is the proof track not continuous occupation?",
+          "zh": "验证轨为什么不是连续占地？"
+        },
+        {
+          "en": "What stops and what continues on failure?",
+          "zh": "发生故障时停止什么、保留什么？"
+        },
+        {
+          "en": "Why is recovery not G1, approval or restart?",
+          "zh": "恢复为什么不等于 G1、批准或重新运行？"
+        },
+        {
+          "en": "Which spatial information remains provisional or unknown?",
+          "zh": "哪些空间信息仍是临时或未知？"
+        },
+        {
+          "en": "Which inputs and professional roles may revise, reject or delete the proposal?",
+          "zh": "哪些资料和专业角色可以修改、拒绝或删除方案？"
+        }
+      ],
+      "route_id": "cold-read-8"
     }
   ],
   "reality_guard": {
