@@ -1,16 +1,20 @@
 ---
-title: "京张智链：百年铁路上的AI创新公共生活带"
+title: "Jing-Zhang Civic Link: An AI Innovation and Public-Life Belt Along the Centennial Railway"
 author_github: "viviseason"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
+summary: "A three-part people-first test translates Jacobs' everyday diversity, Newman's low automobile dependence, and Gehl's public-life observation into auditable conditions for walkable, stayable, reviewable, and reversible civic AI scenarios. Official geometry and local baseline data remain pending."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 ---
 
-# 京张智链：百年铁路上的AI创新公共生活带
+# Jing-Zhang Civic Link: An AI Innovation and Public-Life Belt Along the Centennial Railway
+
+The proposal treats the Jing-Zhang railway heritage as a working civic interface rather than a historical backdrop. Its design objective is to organize a public-life link among Zhongzhiyuan, the Beijing AI Origin Community, and Dazhongsi through walking, cycling, and public transport, then place research releases, enterprise trials, community services, learning, and international exchange within that network. The current `ROAD-001` is only a conceptual segment near the AI Origin Community and does not prove a continuous connection among all three key areas. A real corridor must be rebuilt after street, station entrance, crossing, and barrier data are obtained. Every spatial move remains a conceptual suggestion for professional development and is not a statutory plan, engineering finding, or government implementation commitment. [source:AGENT-TASKBOOK] [data:geometry/roads.geojson#ROAD-001] [depth:overall_spatial_structure]
+
+The Civic Link is governed by three people-first tests. A proposal must demonstrate diversity of use and time, observable public-life quality, and low-car access before an AI scenario can enter a public-space trial. Scenarios that lack a baseline remain in research or a controlled sandbox.
 
 ## 设计依据与资料清单
 
@@ -28,9 +32,9 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
-本脚手架在官方 `SITE_BOUNDARY` 或三处 `KEY_AREA` 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均必须标注为 `provisional_constraint`、`official_boundary=false`，只能用于方案生成、自检、可视化和设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论。该组织方数据缺口本身不阻断内容评分；替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 和 metrics 均需重算。
+Because the official `SITE_BOUNDARY` and three `KEY_AREA` polygons have not been supplied, this version uses `brief/site-package/geometry/provisional_boundaries.geojson` as a temporary constraint. `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` are marked `provisional_constraint` and `official_boundary=false`; they may support generation, self-checking, visualization, data discovery, and design discussion only. They are not official redlines, approval evidence, precise-area evidence, or statutory controls. This organizer data gap does not block content scoring, but all design layers and metrics must be recalculated when authenticated official polygons arrive.
 
-本次脚手架生成的可评分状态为：**临时边界，保留精度警示并待正式数据发布后复算；不阻断内容评分**。因此，正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界和重点区 polygon 更新后，agent 必须重新运行脚手架、自检和图纸/HTML生成，不能只替换单个文件。
+The current boundary status is: **provisional boundary, precision warning retained, full recalculation required when official data are released; content scoring remains eligible**. Spatial structures, scenarios, projects, and indicators are therefore open to discussion and audit but must remain replaceable. Once the official boundary and key-area polygons are released, geometry, metrics, figures, drawings, and HTML will be regenerated together rather than replacing a single file.
 
 边界解释可回到总体范围图层和面积复算 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。三处重点区则由独立图层和数量指标核对 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]。这意味着读者可以从正文进入证据，但不必先读一串机器编号。
 
@@ -60,6 +64,12 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 未来城市形态研究应回答人工智能如何改变工作、生活、社交、学习、交通和公共服务。方案应把AI交通系统、连续绿色空间、创新服务设施和国际化生活工作氛围落实为可定位的功能区、节点、廊道和场景，而不是泛泛描述技术愿景。agent 应把产业战略指标、AI创新指数、人才密度、空间供给类型和AI+垂直应用重点区域写入指标体系，并标明哪些是官方、哪些是设计建议、哪些仍待正式数据校准。若提出全球AI创新活动、开发者社区、开放场景或朝圣路线，应写为“概念建议/参考方案/可供专业团队深化研究”，不得写成已经确定的政府活动或实施安排。
 
+### Three People-First Tests
+
+Jane Jacobs informs the diversity test: innovation depends on mixed primary uses, short and optional paths, buildings of varied ages and costs, active ground-floor edges, and repeated everyday encounters rather than the scale of a single-purpose technology park [source:JACOBS-1961-DEATH-LIFE]. Peter Newman and Jeffrey Kenworthy inform the low-car test: station access, walking, cycling, and public transport must structure the plan before a smart-mobility interface is added [source:NEWMAN-KENWORTHY-1999-SUSTAINABILITY-CITIES]. Jan Gehl informs the public-life test: the design must first observe who walks, stays, sits, talks, and uses civic services, then decide which spatial components and AI scenarios are justified [source:GEHL-2010-CITIES-FOR-PEOPLE].
+
+These are veto tests, not stylistic references. A single-enterprise public-space project does not proceed without use and time diversity; a slow-mobility corridor is not claimed without a verified pedestrian network and station-access baseline; safety, comfort, and vitality are not claimed without anonymized public-life observations. The indicator definitions, acquisition plan, field protocol, and licensing boundaries are recorded in `visual/assets/people-first-research.json`.
+
 ## 总体设计范围城市更新与控规深度城市设计
 
 总体设计范围要求达到控制性详细规划的城市设计深度。方案必须提出城市更新总体空间结构、低效空间识别、更新项目清单、实施政策建议、产业功能比例、空间组织模式、建筑总规模和综合承载能力评估。`geometry/land_use.geojson` 应完整覆盖设计边界且无重叠，`geometry/buildings.geojson` 应表达更新建筑基底或保留建筑基底，`geometry/roads.geojson` 应表达微循环、慢行和轨道接驳关系，`metrics.json` 应复算核心面积、比例和图层数量。
@@ -86,9 +96,9 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-方案应建立面向AI人才和企业的空间需求画像，覆盖研发办公、开源协作、成果发布、企业服务、人才居住、社交学习、消费生活、运动休闲和国际交往。AI+场景应围绕公告提出的交通、服务、消费、医疗、教育、法律、生活服务等方向，形成产业发展场景和AI赋能城市功能场景。每个场景应说明服务对象、空间位置、数据来源、隐私边界、人工复核机制和运营主体。
+The five user profiles are design checks rather than behavioral profiles: open-source developers, start-up teams, enterprise visitors, nearby residents, and university students and staff must all be able to use the public realm. Every AI scenario must declare its target users, spatial carrier, admission question, minimum evidence, privacy boundary, human fallback, pause condition, steward function, and public-return metric. A card without these fields remains a concept and cannot enter a public-space trial.
 
-AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geometry/public_space.geojson#PUBLIC-001]，慢行与交通场景引用 [data:geometry/roads.geojson#ROAD-001]，开放空间场景引用 [data:geometry/green_space.geojson#GREEN-001] 和 [metric:public_space_ratio]、[metric:green_ratio]。这些引用让评审者知道场景不是口号，而是位于具体图层和指标中的设计对象。面向智能体任务书要求不少于10张AI场景卡、不少于3个产业测试验证场景和不少于5类用户画像；脚手架只给出结构，正式参赛者必须把场景卡、画像表、隐私边界、人工复核和运营主体写入正文、HTML、A3/A0 和合规矩阵。
+Public-space scenarios reference [data:geometry/public_space.geojson#PUBLIC-001], mobility scenarios reference [data:geometry/roads.geojson#ROAD-001], and open-space scenarios reference [data:geometry/green_space.geojson#GREEN-001], [metric:public_space_ratio], and [metric:green_ratio]. These are intended carrier types, not proof of real placement. `visual/assets/people-first-research.json` now records the people-first gates, minimum evidence, human fallback, pause trigger, steward function, and public-return metric for all ten cards. Steward functions are requirements to be assigned later, not confirmed appointments; each scenario still requires a verified node, public-life baseline, and mobility network before release.
 
 | 用户画像 | 典型需求 | 空间响应 | 自检边界 |
 | --- | --- | --- | --- |
@@ -127,6 +137,8 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 交通和市政专业深度分别由 [depth:traffic_rail_slow_parking] 与 [depth:municipal_new_infrastructure] 约束；图层证据引用 [data:geometry/roads.geojson#ROAD-001]、[data:geometry/public_space.geojson#PUBLIC-001] 和 [data:geometry/constraints.geojson#CONSTRAINTS]。当道路红线、管线、消防和市政条件缺失时，应通过 assumptions 说明待补，而不是把策略写成审定条件。
 
+Mobility development follows the low-car test. The next baseline must assemble station entrances, bus stops, pedestrian and cycle networks, crossings, and impermeable barriers before calculating 400 m and 800 m network bands, station coverage, route directness, and frequent-transit access. These distances are comparative analysis parameters, not statutory Beijing service radii. All corresponding metrics remain `unknown` [source:NEWMAN-KENWORTHY-1999-SUSTAINABILITY-CITIES].
+
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
 市政和公共服务设施应覆盖AI产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源、端侧算力和传统市政设施融合。方案应说明设施标准、空间布局、服务半径、运营模式和分期实施逻辑。缺少管线、能源、排水、防洪、消防等工程资料时，应列为正式深化前置条件。
@@ -136,6 +148,8 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 蓝绿空间方案应以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业、社区出行需求，提出南北贯通、东西连通的步道、骑行道和绿色空间体系。方案应识别慢行断点、上跨环路节点、公园南端和北端景观节点，提出停车、体育、创新交往、科技测试、应用展示和公共服务复合利用策略。
 
 蓝绿公共空间由设计深度项和绿地、公共空间图层共同校核 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]。绿地与公共空间比例在正文解释设计意义，完整复算保存在 `metrics.json`；城市风貌、公共空间和建筑控制的统筹则回到专业标准矩阵 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+
+Area ratios describe allocation but do not prove that a place works for people. Public-space development will use anonymized, time-based observations at twelve locations to record walking, cycling, staying, seating use, activity types, shade, ground-floor edges, crossings, and accessible-route continuity. Until that survey exists, the proposal does not claim observed vitality, safety, or comfort. Gehl's lens asks whether people choose to stay; Jacobs' lens asks whether uses and street edges sustain everyday activity across time [source:GEHL-2010-CITIES-FOR-PEOPLE] [source:JACOBS-1961-DEATH-LIFE].
 
 城市风貌方案应融合京张铁路历史文化、中关村创新文化和AI创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面和公共艺术引导。agent 还应提出导视标识、文化符号、国际传播叙事、AI朝圣地标、贡献墙或荣誉展示体系，但所有品牌、字体、图像、肖像和企业标识都必须有清权来源。风貌控制应分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线。
 
@@ -168,6 +182,8 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 正式深化时，agent 还应把每个指标分为三类：第一类是可由提交几何直接复算的空间指标，例如边界面积、绿地比例、公共空间比例、建筑基底面积和分期面积；第二类是需要官方控规或任务书附件支撑的管控指标，例如容积率、建筑高度、建筑密度、退线、道路红线和设施标准；第三类是需要运营或产业数据持续校准的绩效指标，例如 AI 创新指数、人才密度、产业服务满意度、慢行可达性、活动参与度和场景使用频次。三类指标应分别进入 `metrics.json`、`assumptions.json` 和 `compliance_matrix.json`，避免把运营愿景误写成审定规划条件。
 
+This revision adds ten people-first metrics: land-use mix entropy, pedestrian intersection density, walkable block length, active frontage, public-life observations, accessible-route continuity, station walking coverage, route directness, frequent-transit access, and shade coverage. Every value is currently `unknown`. The package publishes formulas and evidence requirements first, then will establish a baseline from licensed public data, anonymized field observation, and professional review rather than filling gaps with estimates.
+
 ## 风险、版权与合规说明
 
 **要求双语言。** 方案主文件可使用中文或英文，但必须通过 `proposal.en.md` 或 `proposal.zh.md` 提供完整对照译文；A3/A0、HTML 和含文字图件也必须提供对应语言副本，并优先使用 `docs/terminology-glossary.md` 的赛事推荐译法。v2 包缺少任一必需译稿、语言映射或有效文件时，finalize 与 CI 会阻断提交。所有图片、图纸、图标、数据和代码资产必须在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。
@@ -188,5 +204,9 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 - data/processed/agent_task_requirements.csv
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
+- Jane Jacobs, *The Death and Life of Great American Cities*, 1961 [source:JACOBS-1961-DEATH-LIFE]
+- Peter Newman and Jeffrey Kenworthy, *Sustainability and Cities: Overcoming Automobile Dependence*, 1999 [source:NEWMAN-KENWORTHY-1999-SUSTAINABILITY-CITIES]
+- Jan Gehl, *Cities for People*, 2010 [source:GEHL-2010-CITIES-FOR-PEOPLE]
+- People-first urban design and data evidence plan: `visual/assets/people-first-research.json`
 - 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]

@@ -12,6 +12,30 @@
       "status": "pending_professional_confirmation",
       "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
       "impact": "The package can be reviewed as an AI-generated conceptual design using submitted provisional constraints; statutory controls and implementation conclusions still require official data and professional confirmation."
+    },
+    {
+      "id": "A-MOBILITY-BASELINE-001",
+      "status": "pending_public_data_collection",
+      "statement": "A verified pedestrian, cycle, street, crossing, station-entrance and public-transport network baseline has not yet been collected for the design area.",
+      "impact": "ROAD-001 is a conceptual design marker rather than evidence of a continuous route linking all three key areas. Network coverage, detour, station access and automobile-dependence claims remain unknown until official or rights-cleared network data are processed."
+    },
+    {
+      "id": "A-PUBLIC-LIFE-001",
+      "status": "pending_field_observation",
+      "statement": "No anonymized, time-stamped public-life survey has yet measured pedestrian and cycle flow, staying activities, seating use, active frontages, shade, accessibility or crossing delay.",
+      "impact": "The proposal may use Gehl's framework to define a survey and design questions, but it must not claim observed vitality, safety, comfort or public-space performance before field evidence is collected."
+    },
+    {
+      "id": "A-URBAN-DIVERSITY-001",
+      "status": "pending_official_or_cleared_inventory",
+      "statement": "Parcel uses, ground-floor uses, entrances, opening hours, building age, condition, vacancy and retain-renovate-new-build status are not available at a reliable site scale.",
+      "impact": "Jacobs-inspired diversity, short-block, active-edge and incremental-renewal metrics remain unknown. Current conceptual land-use bands and the single building footprint cannot be treated as an existing-conditions inventory."
+    },
+    {
+      "id": "A-EXTERNAL-DATA-001",
+      "status": "pending_license_and_quality_review",
+      "statement": "OSM, remote-sensing, open-statistics and other external datasets are candidate background sources only until publisher, retrieval date, license, coverage, coordinate reference system, transformation and limitations are recorded.",
+      "impact": "External data may support discovery and reproducible analysis after review, but cannot be promoted into official boundaries, road redlines, statutory controls, ownership or implementation facts."
     }
   ]
 }
