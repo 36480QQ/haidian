@@ -26,14 +26,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "5db3794996527f21dad998459108c0351ddfd0fd8d74ea0d9d86dd1ab385f4f1",
+      "sha256": "42fb701772c6f36054dc680a565950e512cd7992a7bacfe6509dd3ba0c826da6",
       "language": "en"
     },
     {
       "path": "report/proposal.zh.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "57ab27888e2c79de3ee19acbbaf1f17deaba08e2de082b89465123122821f68b",
+      "sha256": "43fa819593563e09e8c331bc4e0cc3579653f921bfaafe617274e49baa259229",
       "language": "zh",
       "translation_of": "report/proposal.html"
     },
@@ -41,7 +41,7 @@
       "path": "proposal.zh.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e63437211b4632962082069ee56ef3436e72c2edd7947863b286d8aee31c847b",
+      "sha256": "088ffb86729ca6022abdf38d24c69e9eb7d6eda84b033b145c23e1f5c2e50be8",
       "language": "zh",
       "translation_of": "proposal.md"
     },
@@ -49,7 +49,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "39f671e62641ae4fc209ff1223fd4677d64cce90638ad6f107d06db89bc1fd9b"
+      "sha256": "86598263cfa0bc3fac628bc40d24ae50541e2443674ae3b28277f9669bf723f9"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8a77ae785ab9dc64803913b4b54fb2b774099ac6781ffac6ae8e2c77450ac42e"
+      "sha256": "1a4eb6e62ccfcf4f612718ccfb8220a4413b03277eaf5c3515aef493888b3fd2"
     },
     {
       "path": "compliance_matrix.json",
@@ -103,7 +103,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "7922893f0728ea501f6ab8c9931b523dbf8c145740535dcbbf9c60dcd0163ac5",
+      "sha256": "a6b6bf6c788213c425a6425f8d00a077c772b7b6a845fc277c1cb7d3c81e06c9",
       "language": "en"
     },
     {
@@ -136,7 +136,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "e771d69748abc4ea8b5742ea370211a411d59ad88b05e6a9a59d699f28b5002e"
+      "sha256": "868c4740d685874db423ed2d85eab0a8ab33ccd8b9b1569624ff0c6b8e5be647"
     },
     {
       "path": "assets/figures/identity-system.png",
