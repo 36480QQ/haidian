@@ -94,8 +94,10 @@
         "assets/figures/hero-leveling-line.png"
       ],
       "geometry_refs": [
-        "geometry/roads.geojson",
-        "geometry/public_space.geojson"
+        "geometry/buildings.geojson",
+        "geometry/land_use.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
       ],
       "metric_refs": [
         "leveling_spine_length_m",
@@ -110,7 +112,7 @@
       "self_check_ids": [
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "本条由正文小节「总体概念与命名体系」；图层 roads.geojson、public_space.geojson；指标 leveling_spine_length_m、benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 site-overview.png、hero-leveling-line.png；来源 BOUNDARY-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「总体概念与命名体系」；图层 buildings.geojson、land_use.geojson、public_space.geojson、roads.geojson；指标 leveling_spine_length_m、benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 site-overview.png、hero-leveling-line.png；来源 BOUNDARY-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "standard_ids": [
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
@@ -444,8 +446,11 @@
         "assets/figures/key-areas.png"
       ],
       "geometry_refs": [
+        "geometry/buildings.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson"
+        "geometry/land_use.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
       ],
       "metric_refs": [
         "key_area_count",
@@ -461,7 +466,7 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 key_areas.geojson、land_use.geojson；指标 key_area_count、benchmark_first_order_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 buildings.geojson、key_areas.geojson、land_use.geojson、public_space.geojson、roads.geojson；指标 key_area_count、benchmark_first_order_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "detail_section_coverage": {
         "units_published_by_the_taskbook": 5,
         "with_a_detail_section": 3,
