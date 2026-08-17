@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.799,
+ "overall_ratio": 0.797,
  "floor": 0.75,
  "sections": [
   {
@@ -89,23 +89,23 @@
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
-   "zh_chars": 4353,
-   "en_words": 2670,
-   "ratio": 0.782,
+   "zh_chars": 5250,
+   "en_words": 3140,
+   "ratio": 0.763,
    "pass": true
   },
   {
    "section": "The instrument on the site's own data",
-   "zh_chars": 2223,
-   "en_words": 1327,
-   "ratio": 0.761,
+   "zh_chars": 4764,
+   "en_words": 2981,
+   "ratio": 0.798,
    "pass": true
   },
   {
    "section": "Risk, Copyright, and Compliance",
-   "zh_chars": 2138,
-   "en_words": 1494,
-   "ratio": 0.891,
+   "zh_chars": 3005,
+   "en_words": 2001,
+   "ratio": 0.849,
    "pass": true
   },
   {
