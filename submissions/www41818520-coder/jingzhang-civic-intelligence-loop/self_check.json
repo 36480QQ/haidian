@@ -10,7 +10,6 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/www41818520-coder/jingzhang-civic-intelligence-loop/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
         "submissions/www41818520-coder/jingzhang-civic-intelligence-loop/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -63,7 +62,7 @@
       "ai_package_stages": {
         "submissions/www41818520-coder/jingzhang-civic-intelligence-loop": "formal"
       },
-      "total_bytes": 20323366,
+      "total_bytes": 25472518,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -143,9 +142,9 @@
         "proposal_reference_counts": {
           "source": 5,
           "standard": 5,
-          "depth": 15,
+          "depth": 14,
           "data": 11,
-          "metric": 5
+          "metric": 3
         }
       }
     },

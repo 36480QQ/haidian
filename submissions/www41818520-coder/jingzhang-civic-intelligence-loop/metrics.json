@@ -13,10 +13,11 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
-      ]
+        "The submitted boundary is a provisional rough constraint calibrated to the announced approximately 11.4 square kilometres; it is not an official redline."
+      ],
+      "reason": "Known only as a reproducible submission-layer calculation; it must be recalculated when the organiser publishes precise official polygons."
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -27,7 +28,9 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "The footprint is an agent-generated design-proposal layer, not an existing-building survey or approved building scale."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -39,7 +42,9 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "The ratio is calculated from submission design layers clipped by a provisional rough boundary and is not an existing or approved planning index."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -51,7 +56,9 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "The ratio is calculated from submission design layers clipped by a provisional rough boundary and is not a statutory public-space control."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",

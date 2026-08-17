@@ -6,165 +6,165 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A conceptual urban-design proposal that makes the Jing-Zhang corridor an enterable, understandable and human-governed city-scale Agent: people ask, the city responds. All geometry is provisional and must be recalculated when official files are issued."
+summary: "A conceptual urban-design proposal that turns the Jing-Zhang heritage park and its urban interfaces into an enterable, understandable, participatory and human-governed city-scale Agent: people ask, the city responds. All spatial geometry is provisional and must be recalculated when official files are issued."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-<!-- PARTICIPANT-DESIGN: Jing-Zhang Civic Intelligence Loop. Prepared by Codex for www41818520-coder. All spatial moves are conceptual suggestions for professional deepening; provisional geometry is explicitly retained pending organiser-supplied official files. -->
+<!-- PARTICIPANT-DESIGN: Jing-Zhang City as Agent. Prepared by Codex for www41818520-coder. All spatial moves are conceptual suggestions for professional deepening; provisional geometry is explicitly retained pending organiser-supplied official files. -->
 
-# Jing-Zhang City as Agent
+# Jing-Zhang City as Agent: A Capable City, Governed by Its People
 
-## A public knowledge infrastructure for trustworthy AI
+> **Core proposition: give the city capability and give people authority. People ask; the city responds.**
 
-**Core proposition:** A capable city, governed by its people. People ask; the city responds.
+“City as Agent” is neither software vocabulary pasted onto the city nor a proposal to hand the city to a super-AI. A city is already a continuously operating public system. What the existing city lacks is a closed loop in which problems are visible, tools are callable, actions are verifiable, processes are accountable and people can take over. The proposal translates the Agent cycle of sensing, asking, collaborating, acting, verifying and learning into one walkable public baseline, three task platforms, nine civic interfaces and a long-term operating institution.
 
-The proposal starts with the autonomous engineering spirit of the Jing-Zhang Railway. It does not treat that history as decoration. Railway engineering had to confront real terrain, real constraints, tests and responsibility. The corresponding proposition for AI is equally practical: research must be open to explanation; a system must show its boundary; a human must be able to review it; and the city must be allowed to correct it.
+## Design Basis and Source List
 
-`Jing-Zhang City as Agent` is therefore not a sealed AI park or a technology spectacle. It is a walkable civic operating system where a problem becomes visible, tools can be called, action can be verified, responsibility can be traced and people can take over. Research, collaboration, trustworthy verification, voluntary public experience, feedback and contribution archiving become spatially legible. It gives global visitors a concise Chinese proposition: autonomous innovation is inseparable from engineering responsibility, public value and people's governance.
+The proposal follows the official announcement, the agent taskbook and the repository site package. The public materials still do not provide organiser-owned precise official redlines or key-area polygons suitable for approval. `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` therefore remain `provisional_constraint` with `official_boundary=false`. They support conceptual design, visual placement and machine recalculation only; they are not parcel, road, heritage or engineering redlines. When official files are released, boundary, key areas, land use, roads, green space, public space, buildings, phasing and metrics must be updated together. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]
 
-The proposal follows the official announcement and the agent open-call taskbook. Its figures, matrices, machine-readable geometry and design depth form one reviewable package rather than a standalone vision statement. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
+![Relationship between sources, evidence and the submission package](assets/figures/site-overview.en.png)
 
-## Scope, evidence and limits
+Every spatial judgement follows three evidence rules: public information is never upgraded into an approval conclusion; a design suggestion must locate itself in a layer, metric or implementation project; and missing official information remains unknown rather than hidden behind false precision. [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
-The taskbook distinguishes a coordinated research area of 43.6 km², an overall design area of approximately 11.4 km² around the Jing-Zhang heritage park, and three key detailed-design areas totalling approximately 368.4 ha: Zhongzhiyuan, Beijing AI Origin and Dazhongsi. The proposal uses these three scales to connect AI ecosystem strategy, city-scale public realm, and station-scale public interfaces. [source:AGENT-TASKBOOK]
+## Three-Level Scope Framework
 
-The organiser-owned official boundary and key-area polygons are not available in the public material supplied to this submission. The files in `geometry/` are therefore expressly marked as `provisional_constraint`: they support conceptual diagrams, package validation and later recalculation only. They are neither official redlines nor statutory controls, and no proposed area, building parameter, ownership decision, conservation decision, traffic capacity or implementation commitment should be inferred from them. When official files are issued, the boundary, key areas, land use, roads, green space, public space, buildings, phasing and metrics must be recalculated together. [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]
+The task has three scales: the 43.6 km² coordinated research area organises the AI innovation ecosystem and future urban form; the approximately 11.4 km² overall design area organises renewal, transport, municipal infrastructure, public space and character around the Jing-Zhang heritage park; and three key areas totalling approximately 368.4 ha test spatial prototypes, scenarios and delivery mechanisms. Machine-recalculated provisional geometry is used only for internal package consistency and cannot replace announced scale or official redlines. [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_level_scope_framework]
 
-![One spine, three stations and two wings](assets/figures/site-overview.en.png)
+![Three-level scope and spatial framework](assets/figures/land-use-structure.en.png)
 
-## Spatial concept: one public baseline, three task platforms, nine civic interfaces
+### Why the city becomes an Agent
 
-The structure is called **One Public Baseline, Three Task Platforms and Nine Civic Interfaces**. The city is already a continuously operating public system; the design repairs its broken loops of sensing, task decomposition, tool use, collaboration, verification, action, feedback and memory. This is a spatial translation of Agent logic, not a software metaphor pasted onto the city.
+The Chinese voice of the Jing-Zhang Railway is not a nostalgic motif but an engineering ethic: confront real terrain and constraints, measure, test, correct, maintain and take responsibility. AI-enabled city-building one century later must follow the same principles. Technology becomes urban capability only after it declares its boundary, accepts human review, allows public correction and retains an accountable record.
 
-The **Jing-Zhang Contribution Walk** is the public baseline. The heritage park remains an easy-to-enter route for walking, resting, photographing and everyday life. A continuous but rhythmically expanding and contracting **Information Canopy** makes task state visible, routes work between participating units and shelters public workbenches. It joins three complementary task platforms:
+The spatial structure is “One Public Baseline, Three Task Platforms and Nine Civic Interfaces.” The heritage park retains walking, resting, photography and non-digital service. A continuous but expanding and contracting Information Canopy shows anonymised task state. Zhongzhiyuan, Beijing AI Origin and Dazhongsi respectively undertake sensing and calibration, collaboration and tool use, and takeover and memory. Nine interfaces connect universities, enterprises, communities, rail stations, public services and park operations. [depth:overall_spatial_structure] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
-| Station | Place | Public role | Essential spatial components |
+## Coordinated Research Area: Industry and Future City Research
+
+The ecosystem is not an enterprise inventory but a complete chain of basic research, open-source rights clearance, engineering incubation, professional testing, small urban samples, and industrial and international communication. Universities produce knowledge and methods; enterprises and developers make tools; professional bodies verify safety and boundaries; real neighbourhoods provide low-risk feedback; and capital, intellectual property and international collaboration support only outcomes that have passed public-value review. [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+“City as Agent” also creates a new innovation space: laboratories, semi-open working platforms, real urban interfaces and public-memory spaces together become research infrastructure. The ecosystem is judged not by screen count but by whether research reaches real tasks, people can refuse or correct a service, and failures become readable knowledge for the next cycle.
+
+The identity uses railway rust red, signal bone white, information cyan-blue and verification green. Red represents the historical baseline and the right to pause; cyan-blue represents task flow; bone white represents a maintainable public base; green represents completion after public verification. The Chinese slogan “A capable city, governed by its people” communicates a global proposition: autonomous innovation, engineering responsibility, public value and people’s governance must stand together.
+
+## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
+
+The overall design does not blanket 11.4 km² with devices. It aligns four systems:
+
+1. **Land use and renewal:** AI research, open park, industrial services and community support reinforce one another.
+2. **Mobility and stitching:** the north-south heritage-park slow-mobility spine meets nine east-west interfaces that connect rail, campuses, communities and industry.
+3. **Blue-green public space:** railway park, rain gardens, continuous shade and public verification places form the ordinary urban baseline.
+4. **Information and tasks:** status canopy, three platforms, human windows and work-unit relays make civic tasks visible, routable and open to takeover.
+
+Current land-use, building, road and phasing layers are conceptual design proposals. Development intensity, building height, precise retain-renovate-demolish decisions, road redlines and engineering feasibility remain pending. Professional teams must deepen them after official controls, ownership, survey, heritage, municipal and transport information is available. [data:geometry/land_use.geojson#LU-001] [data:geometry/roads.geojson#ROAD-001] [depth:development_intensity_controls]
+
+## Detailed Design of Key Areas
+
+The three key areas do not repeat one form; together they complete one city-scale Agent. [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
+
+### 1. Zhongzhiyuan: Public Verification Garden — SENSE + VERIFY
+
+The urban problem is the missing public interface between strong innovation capacity and communities, ecology and everyday experience. Spatial moves include a low-intervention environmental calibration belt, an accessible public verification loop, a university-park joint test bench, a non-collection bypass and a staffed explanation desk. University laboratories, park operators, community representatives and professional reviewers share responsibility. Display cannot substitute for certification, and sensitive or commercially confidential data cannot enter the public interface.
+
+### 2. Beijing AI Origin: Civic Works Commons — PLAN + TOOL USE
+
+Universities, enterprises and public space are close to one another, yet they lack a common workplace that converts real problems into projects and maintains them over time. A flagship Information Platform, open-source tool bench, small urban test field, human takeover point and accountable sign-off desk form a semi-open intelligent workplace. People can ask; developers and enterprises can call tools; but action boundaries, owners, pause state and human alternatives must remain visible.
+
+### 3. Dazhongsi: City Echo Exchange — TAKEOVER + MEMORY
+
+Rail, commerce and community flows converge, yet complaints, scenario feedback and innovation outcomes rarely become public memory. A station-city service interface, dispute-review hall, open-source gallery, contribution wall and annual shutdown drill allow human takeover when services fail. The proposal makes no claims about station operation, property rights, tenancy, road reconstruction or underground engineering feasibility.
+
+![Index and design tasks for the three key areas](assets/figures/key-areas.en.png)
+
+Each key area first uses existing public paths and reversible sites. A 3 m prototype tests use, safety, light and sound, accessibility and human fallback before expansion. Official polygons will trigger clipping, recalculation and interface relocation.
+
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios
+
+Five core personas are corridor residents and families; wheelchair users and people with limited mobility; university students and teachers; AI developers and entrepreneurs; and city-service and maintenance staff. Visitors and global developers form an optional sixth group but cannot displace everyday rights. Every person has the right to know what a system does, refuse data collection, request human help, challenge a result and leave a scenario. [source:AGENT-TASKBOOK] [depth:traffic_rail_slow_parking]
+
+| ID | AI+ scenario | Primary place | Human boundary and exit |
 | --- | --- | --- | --- |
-| Origin Station | Beijing AI Origin | Open collaboration | City Question Desk, Open-source Collaboration Table, Contribution Reading Room, low-light evening study gallery |
-| Trustworthy Verification Gallery | Zhongzhiyuan | Testing and accountable review | Visible Test Bench, Standards-and-Boundary Wall, Human Review Window, calm engineering garden |
-| City Echo Field | Dazhongsi | Voluntary urban experience and correction | Optional Service Experience, Feedback Table, service-review desk, low-noise release corner |
+| S01 | Ecological calibration and rain observation | Zhongzhiyuan | Professional judgement; sensor-free path retained |
+| S02 | Accessible route explanation | Corridor walk | Physical signs and staffed enquiry remain primary |
+| S03 | Community-service navigation | Community interface | Service remains available without registration or face recognition |
+| S04 | City-question proposal | AI Origin | Voluntary submission; no behavioural profiling |
+| S05 | Public AI tutor test | Education space | Teacher review; protection of minors |
+| S06 | Health-service navigation | Dazhongsi | Resource and referral navigation only; no diagnosis |
+| S07 | Low-disturbance night safety guidance | Whole corridor | Human patrol and ordinary lighting cannot be replaced |
+| S08 | Cycling parking and transfer assistance | Station interface | No automatic penalty; human appeal retained |
+| S09 | Transparent commercial recommendation | Dazhongsi | Basis, price, complaint and withdrawal are visible |
+| S10 | Explainable enterprise-service matching | Technology-services wing | Human consultant review; no policy-result promise |
+| S11 | Bilingual railway-culture guide | Heritage park | Paper, physical signs and human guide run in parallel |
+| S12 | City-question echo and archive | Three platforms | Aggregated anonymity; public can request adjustment or pause |
 
-The **Zhongguancun Services Wing** connects results to intellectual-property support, capital services, international collaboration and release. The **Xiaoyuehe Scenario Wing** returns technology to ordinary urban life: optional experience, accessibility, human fallback and feedback. The two wings are not separate districts with invented boundaries; they are operational directions that coordinate with the three platforms. Others display AI outcomes; here the public can see and participate in how the Agent works.
+Three priority hard tests are: misinformation, privacy and clinical human fallback for health services; bias, minor protection and teacher takeover for education; and recommendation basis, complaint, withdrawal and non-digital alternatives for commerce and public service. Every scenario contract includes a real problem, minimum data, professional responsibility, human alternative, public verification and scheduled exit.
 
-The form borrows its restraint from railway components, test benches and archive cases: durable, readable and capable of repair. It deliberately avoids an iconic “AI landmark” disconnected from daily use.
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-## The trustworthy contribution loop
+Conceptual land use comprises continuous zones for research and innovation, open park, industrial service and community support. It explains functional coordination rather than statutory reclassification. The building layer only shows a potential renewal carrier for professional discussion. Complete existing-building, ownership, structure, fire, heritage and regulatory information is absent, so the proposal makes no parcel-level demolition, construction, height or FAR decision. [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]
 
-The proposal’s land-use and programme logic is a civic loop, not a one-way innovation showcase:
+Retain-renovate-demolish is a decision protocol rather than a predetermined result: verify heritage and ownership first; assess structure and use safety; prioritise repair and reversible adaptation where existing space can carry public service; use demountable modules for new structures and avoid rail relics, trees, utilities and fire access; obtain separate approval for every permanent intervention.
 
-1. **City question** — residents, students and frontline service workers can voluntarily name a real issue.
-2. **Research and collaboration** — universities, developers and enterprises turn an appropriate question into a clearly bounded task.
-3. **Trustworthy verification** — a system’s intended use, limit, test case, challenge path and human reviewer are made understandable.
-4. **Voluntary experience** — public services or commercial prototypes can be tried, but never become compulsory.
-5. **City echo** — users and workers can say keep, adjust or pause; the reason is recorded.
-6. **Contribution archive** — cleared outcomes, corrections and credit are made available for public reading and global dialogue.
+## Transport, Rail, Municipal Infrastructure, and Public Services
 
-Three lines cannot be omitted from this loop: **public interest, human review and data minimisation**. A high adoption rate alone is not success. The relevant test is whether a person can more easily arrive, understand, ask for help and improve a real city problem.
+Ordinary urban capability comes first: continuous walking and cycling, accessible detours, rail transfer, shaded rest, legible wayfinding and staffed enquiry must work with AI switched off. Nine east-west interfaces express collaborative directions between campuses, communities, industry, stations and park; they are not bridge, tunnel or road alignments. [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]
 
-![The trusted contribution loop](assets/figures/land-use-structure.en.png)
+The Information Platform is the core facility prototype. Its continuous ribbon roof provides shade and rain cover while displaying project state. The civic workbench supports computers, tools and authorised information interfaces. A staffed window handles minimisation, takeover and complaints. A work-unit relay routes tasks to a university, enterprise, community service or public agency. Results return to the same place for public verification. The canopy displays anonymised task state, never personal trajectories. [data:geometry/public_space.geojson#PUBLIC-001] [depth:municipal_new_infrastructure]
 
-## Detailed design for the three key areas
+Begin with a reversible 3 m prototype and expand through an approximately 6 m conceptual module. Final span, structure, material, waterproofing, luminance, acoustics, power, network, fire, accessibility and utility conditions require survey and specialist design.
 
-### 1. Origin Station — Beijing AI Origin
+## Blue-Green Network, Public Space, and Urban Character
 
-The Origin Station makes knowledge accumulation and public explanation spatially visible. A **City Question Desk** accepts voluntarily submitted questions; it must disclose what will happen next and must not turn submissions into behavioural profiles. The **Open-source Collaboration Table** is a long working surface for daytime learning and making, and evening small-group exchanges. A **Contribution Reading Room** links railway history, Zhongguancun culture and contemporary AI work through evidence rather than slogans. A modest release threshold connects campus, park and street without claiming access to unauthorised campus or enterprise premises.
+The railway heritage is first an everyday public space, not an AI-exhibition background. Walking, photography, play, reading and shaded rest remain. Rain gardens, continuous canopy, low-disturbance night lighting and Information Platforms support this ordinary baseline. Water extends beyond local board boundaries as an ecological context, but it does not replace river blue lines or flood conclusions. [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space]
 
-The intended atmosphere is a near-campus working neighbourhood, not a visitor centre. Professional teams must confirm permissions, building reuse, campus interfaces, fire safety and operating responsibility before any construction or programme commitment.
+The architecture combines reflective stainless steel, bone-white structure, low-luminance cyan-blue information light and railway-signal red. Its technological character comes from visible information flow, real work, modular maintenance and day-night state change, not from a sealed black object. The cultural route follows Measure—Build—Switch Track—Open Source—Verify, linking Jing-Zhang engineering culture, Zhongguancun innovation culture and public responsibility for AI.
 
-### 2. Trustworthy Verification Gallery — Zhongzhiyuan
+![Mobility, blue-green public space and 90-minute experience route](assets/figures/mobility-bluegreen.en.png)
 
-Zhongzhiyuan is proposed as a place where verification is as visible as demonstration. The **Visible Test Bench** uses cleared simulations and public cases to show what a tool is for, what it cannot decide and how a person can challenge it. The **Standards-and-Boundary Wall** is not a certificate dispenser; it explains task boundaries, data permissions, review roles and revision records. The **Human Review Window** gives city service workers, researchers and operators a tangible role in confirming, correcting or rejecting an AI suggestion.
+## Renewal Projects, Implementation Policy, and Phasing
 
-The gallery translates the Chinese engineering tradition of test, correction and responsibility into a contemporary public interface. It may not disclose private datasets, security-sensitive system details or commercially confidential material.
-
-### 3. City Echo Field — Dazhongsi
-
-At Dazhongsi, the city is not technology’s end point but its evaluator. An **Optional Service Experience** can host AI-enabled wayfinding, accessibility, commercial or service-navigation prototypes, always beside a non-AI and human-served alternative. An anonymised **City Echo Wall** can show aggregate keep / adjust / pause feedback, not individual tracking. A **Service Review Desk** supports merchants, operators and public-service workers in resolving pending items. A quiet evening corner can host cleared contribution releases, small conversations and developer exchange.
-
-The proposal does not claim authority to change property rights, station operations, traffic arrangements or commercial tenancy. These are conditions for later professional design and coordination.
-
-![Three detailed stations](assets/figures/key-areas.en.png)
-
-## Ten scenario cards: AI with a place, a choice and a reviewer
-
-| # | Scenario | Primary place | Choice, boundary and human fallback |
+| Project | Content | Place | Critical dependency |
 | --- | --- | --- | --- |
-| 01 | City Question Proposal Desk | Origin Station | Questions are voluntary; staff publish handling status and do not profile contributors. |
-| 02 | Open-source Collaboration Table | Origin Station | Collaboration is open, but registration, tracking and disclosure of every result are not required. |
-| 03 | Railway Engineering Spirit Guide | Contribution Walk | Explains constraint, experiment and correction through paper and human-guided alternatives. |
-| 04 | Visible Trustworthy Verification | Zhongzhiyuan | Uses cleared simulations; shows limits, challenges and revision rather than confidential products. |
-| 05 | Accessible Walkability Assistant | Walk and Xiaoyuehe Wing | Suggests detours, rests and help points; cannot replace physical signage or enquiry staff. |
-| 06 | AI Learning Companion Workshop | Origin / university-edge space | Educators or hosts explain tool limits, attribution and appropriate use. |
-| 07 | Health Service Navigation | City Echo Field | Navigates resources and referrals only; no diagnosis, with an offline counter retained. |
-| 08 | Intelligent Native Commerce Experience | Dazhongsi public commercial edge | People can use service without face recognition or AI; price, rules and complaint route remain legible. |
-| 09 | Public Maintenance Review Desk | Between Verification and Echo | Human workers decide accept / adjust / pause and record the reason. |
-| 10 | Global Contribution Release Night | Walk node / Dazhongsi corner | Small, low-noise release of cleared work and correction records; not an official award or government promise. |
+| P01 Continuous public baseline | Slow mobility, accessibility, shade, human service | Whole corridor | Survey, heritage, transport, park operation |
+| P02 Three task platforms | Calibration, collaboration, takeover | Three key areas | Site authority, accountable host, fire and maintenance |
+| P03 Nine civic interfaces | University, community, enterprise, station collaboration | Corridor nodes | Ownership, roads, rail and flow data |
+| P04 Information Canopy system | Status display, relay, human takeover | Platforms and work units | Privacy, network, luminance, energy and safety |
+| P05 Public railway memory | Developer walk, outcome gallery, honour wall | Heritage park | Heritage, copyright and distinction between proposal, selection and implementation |
+| P06 Twelve AI+ scenarios | Health, education, commerce and others | Real neighbourhoods | Sector responsibility, legal data use and non-AI alternative |
+| P07 Annual open verification season | Questions, prototype, verification, archive | Four-season cycle | Host, budget, safety and international-authorisation conditions |
+| P08 Data and exit institution | Minimum data, shutdown and recalculation | Whole lifecycle | Audit, complaint, archive and accountable sign-off |
 
-The three priority verification settings are: (a) walkability and accessibility, using public-space observation, voluntary anonymous feedback and service-worker review; (b) public trustworthy-AI verification, using bounded simulations, explicit challenge paths and revision records; and (c) city-echo review, in which AI and non-AI services run in parallel and users can refuse either without penalty. [depth:traffic_rail_slow_parking]
+Delivery uses four reversible gates. G0 (0–3 months) completes survey, ownership, utilities, heritage, needs and data audits. G1 (3–6 months) tests a 3 m prototype for shutdown, light and sound, accessibility and human fallback. G2 (6–18 months) pilots one node in each key area and publishes work-order status. G3 annually decides continuation, restriction, relocation or exit according to public value, safety and maintenance capacity. [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]
 
-## A 90-minute global visitor journey
+The annual loop is Spring City Questions, Summer Open Co-creation, Autumn Public Verification and Winter Works Archive. It is a reference operating framework, not an announced government event or implementation commitment.
 
-A visitor should be able to understand the proposition without downloading an app or consenting to surveillance:
+## Metrics, Area Recalculation, and Compliance Matrix
 
-- **0 minutes — arrive:** meet the Jing-Zhang railway and the idea of autonomous engineering under real constraints.
-- **15 minutes — understand:** read a contribution map and the difference between an idea, a test and a public claim.
-- **30 minutes — collaborate:** encounter an open question and a working table.
-- **50 minutes — verify:** see task boundaries, failure cases and human review.
-- **70 minutes — echo:** try an optional city service or leave a non-identifying response.
-- **90 minutes — carry forward:** take away a readable, citable contribution record.
-
-The walking, blue-green and accessibility network in the figure is experiential and conceptual; it is not a surveyed route or an engineering drawing. AI appears only when it is needed. Paper, physical signs and human assistance remain first-class choices.
-
-The **Information Platform** is the core spatial prototype. It is not an enclosed exhibition hall but a semi-open civic workplace embedded in shade, the heritage walk and ordinary street life. A continuous ribbon canopy uses reflective stainless steel, low-luminance blue information light and maintainable modular construction. Its soffit becomes a task-status surface: people can see whether a project is asking, collaborating, verifying, acting or receiving feedback, and authorised participants can route work to another unit. Ordinary seating, staffed help, non-digital wayfinding, step-free access and the right to leave remain available at all times.
-
-![90-minute contribution walk](assets/figures/mobility-bluegreen.en.png)
-
-## Ecosystem, culture and long-term operation
-
-The ecosystem is deliberately complete: university research and young developers generate questions and knowledge; open collaboration and enterprise services support translation; verification and responsible review improve legitimacy; public experience produces non-extractive feedback; archive and international communication make contribution legible beyond the site. This translates the taskbook’s research-to-incubation-to-capital-service chain into a spatial and operational chain, rather than assuming that a new building alone produces innovation. [source:AGENT-TASKBOOK]
-
-The cultural narrative is:
-
-> **Jing-Zhang Railway: autonomous engineering under real constraints → Zhongguancun: knowledge creation through collaboration → Trustworthy AI: open verification, human review, service to the city and continuous correction.**
-
-Its annual operating proposal is the **Jing-Zhang Contribution Season**:
-
-| Season | Public purpose | Minimum public record |
+| Metric | Current status | Meaning |
 | --- | --- | --- |
-| Spring | City questions | source of question, relevance and handling route |
-| Summer | Open collaboration and verification | task boundary, test method and human-review role |
-| Autumn | City echo and correction | feedback, keep / adjust / pause decision and reason |
-| Winter | Archive and update | cleared contribution, credit and revision record |
+| Overall design scale | Announced approx. 11.4 km²; provisional geometry recalculates 11.4128 km² | Internal package consistency only; recalculate with official boundary |
+| Key areas | 3 | Provisional rough extents pending official polygons |
+| Green ratio | 12.34% | Recalculated from submission design layer; not an existing or approved index |
+| Public-space ratio | 7.33% | Recalculated from submission design layer; not a statutory control |
+| Illustrative building footprint | 310,807 m² | Design-proposal layer, not approved building scale |
+| FAR, building height and precise retain-renovate-demolish | unknown | No official controls or complete professional survey; no invented conclusion |
 
-This is a reference operational framework, not an announced government programme. Any host, funding, safety management, accessibility provision, data processing and international collaboration must be separately authorised.
+GeoJSON and `metrics.json` support recalculation; `compliance_matrix.json` checks task coverage; `standard_matrix.json` and `design_depth_matrix.json` record standards and professional depth. Official data will trigger replacement of provisional geometry, metric recalculation, key-area placement review, and synchronised updates to drawings, narrative and manifest. [metric:site_area_sqm] [metric:green_ratio] [depth:metrics_recalculation]
 
-## Delivery, phasing and evidence
+![Metrics, evidence chain, delivery gates and compliance summary](assets/figures/metrics-evidence.en.png)
 
-The proposal prioritises a reversible, low-risk start: first make the narrative, signage, working table, feedback mechanism and contribution archive legible through light-touch installations and programmes; then deepen station interfaces after permissions, ownership, transport, heritage, municipal, safety and operating conditions are verified; only then consider physical construction or permanent service integration. The submitted phasing layer and implementation matrix identify dependencies rather than inventing approvals. [data:geometry/phasing.geojson#PHASE-001]
+## Risk, Copyright, and Compliance
 
-The first physical test should therefore be one reversible, full-scale Information Platform at a public interface with clear operating responsibility and no intervention in the railway relic itself. It tests shade, lighting, noise, accessibility, legibility, task routing and human takeover. Only validated modules expand to the three key areas, and only after that can a corridor-wide task bus and annual contribution archive be considered. Expansion is judged by whether people can arrive, understand, ask for help and correct the system more easily - never by screen count or AI adoption alone. [depth:phasing_implementation]
+This is an open co-creation proposal, not a planning approval, engineering-feasibility study or construction document. It cannot establish road redlines, property disposition, building demolition, station alteration, bridge, tunnel or underground feasibility, traffic capacity, structural safety, medical judgement or public-investment commitment. [data:geometry/constraints.geojson#CONSTRAINTS] [depth:risk_missing_data] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
-Evidence is organised as follows:
+Professional deepening must obtain official boundary and controls; cadastral and ownership records; heritage and archaeology requirements; existing-building and structural survey; transport, rail and parking information; municipal utilities and energy; fire, flood and accessibility requirements; visitor flow and operation; funding and security governance; and the legal basis and public-interest case for each AI service. Images, marks, fonts, datasets, cases and contributor names require rights clearance before implementation.
 
-| Status | What belongs there | Who can check |
-| --- | --- | --- |
-| Known | Open-call task, public materials, submission files | organiser, public, jury |
-| Pending | official boundary, ownership, flows and sector data | recalculation after organiser supply |
-| Design commitment | human review, optional participation, contribution record | users and operators |
+Every AI service requires an accountable operator, human reviewer, escalation and complaint route, non-AI alternative, minimum-data rule, scheduled exit and named authority for return to service. People are not data sources “kept in the loop”; they are urban subjects with the rights to ask, verify, refuse and take over.
 
-Spatial measures and metrics are reproduced in `geometry/`, `metrics.json`, `assumptions.json`, `sources.json`, `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json`. They are evidence for this conceptual package, not statutory design control. [metric:site_area_sqm] [metric:key_area_count]
+## References
 
-![Evidence and operating rhythm](assets/figures/metrics-evidence.en.png)
+References are not a decorative end list. The proposal separates them into task authority, spatial constraints, public background and participant-generated design. The official announcement establishes the three scope levels, professional outputs and mandatory tasks. The agent taskbook establishes the six Agent tasks, scenario counts, review dimensions and co-creation limits. The site package supplies currently available provisional geometry, enumerations, metric structure and validation contract. The source registry determines whether a source can support a formal claim, background narrative or provisional lead. Complete titles, links, limits and processing paths are recorded in `sources.json`. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
 
-## Rights, risk and professional deepening
+Spatial layers and metrics are not new authoritative sources; they are reproducible participant-generated design evidence derived from the registered materials. `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` explicitly retain provisional status. Land use, buildings, roads, green space, public space and phasing express design logic only. `metrics.json` records formula, source file, confidence and recalculation conditions. Official redlines, regulatory controls, ownership, heritage, utilities and engineering information remain professional-deepening gaps and cannot be replaced by OSM, renderings or provisional rectangles. [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]
 
-No AI scenario may substitute for planning approval, medical judgement, human service or an individual’s right to refuse. Data must be minimal, authorised, understandable and proportionate; private, sensitive or commercially confidential data must not enter public display. Each operation needs an accountable host, an escalation route, a human reviewer and an accessible non-AI alternative. Images, names, marks, datasets and cases require rights clearance before use.
-
-Formal professional deepening must verify: official boundaries; cadastral and ownership conditions; heritage and archaeological requirements; present building condition; traffic, rail, pedestrian, cycling, parking and municipal capacity; fire, flood, energy and accessibility requirements; operating, funding and security arrangements; and the maturity, legal basis and public-interest case for every AI service.
-
-The project’s value is therefore not a promise that AI will solve everything. It is a more demanding proposition: Chinese AI innovation can show its work, make its limits readable, accept correction and leave a durable public record of contribution.
-
-## Sources
-
-Primary sources, public-material scope, processing routes and reuse limits are registered in `sources.json`. The authoritative task and scope references are [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK] and [source:SOURCE-REGISTRY].
+Reviewers can move from claim-adjacent `[source:...]`, `[data:...]`, `[metric:...]`, `[standard:...]` and `[depth:...]` labels into machine evidence, then return to the A0/A3 drawings to understand spatial judgement. This two-way relationship prevents drawings from becoming unsupported slogans and prevents JSON from becoming a black box that humans must decipher unaided.
