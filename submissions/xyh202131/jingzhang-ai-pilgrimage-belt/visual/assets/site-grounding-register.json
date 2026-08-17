@@ -991,6 +991,27 @@
         "result": "refresh_records now carry 50 Round 35 records; summary updated to audit_round r35, executed 2026-08-15, 48/2/50; review_due set is identical to Round 21 and freezes upgrades without deleting any statement",
         "certification_note": "Freshness digests fix the bytes retrieved this pass only and are not publisher signatures; the audit is not a rights clearance or a validity guarantee."
       },
+      "compliance_namespace_r36": {
+        "contract_id": "JZ-COMPLIANCE-NAMESPACE-R36",
+        "executed_at": "2026-08-15",
+        "rule_layer_basis": "The formal-submission-guide and SKILL.md now require compliance_matrix.json to keep evidence namespaces separate: source_ids may only contain source-registry/package source IDs, while professional standard IDs belong in standard_ids and must also be declared in standard_matrix.json. The new brief/site-package/schemas/compliance_matrix.schema.json formalizes the row shape.",
+        "baseline_findings": {
+          "rows_mixing_standard_in_source_ids": 6,
+          "mixed_id": "STD-URBAN-DESIGN",
+          "matching_standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
+          "land_use_codes_vs_new_enum": "all 9 used codes present in brief/site-package/enums/land_use_codes.json",
+          "schema_required_fields": "all present in all 23 rows",
+          "schema_version": "0.1.0"
+        },
+        "fixes": [
+          {
+            "file": "compliance_matrix.json",
+            "change": "removed STD-URBAN-DESIGN from source_ids in the six rows (1.3.2, 1.4.2, 1.5.1.2, 1.5.2.2, 1.5.2.4, 1.5.2.5) and added standard_ids=[MOHURD-URBAN-DESIGN-MEASURES] to each; STD-URBAN-DESIGN remains registered in sources.json and remains the snapshot source of MOHURD-URBAN-DESIGN-MEASURES in standard_matrix.json"
+          }
+        ],
+        "result_after_fix": "0 rows mix standard ids into source_ids; 6 rows carry standard_ids; current self_check and strict scoring pass under the new rule layer; the presentation-contract regression guard (r24 contrast, r25 h2, r27 heading) is now also enforced by the index generator on every regeneration",
+        "certification_note": "Namespace separation is a structural compliance check; it is not an approval or a rights grant."
+      },
       "replay_expectations": {
         "t02_fixture_count": 10,
         "t02_exact_matches": 10,

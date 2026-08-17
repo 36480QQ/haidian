@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v36.0 - 2026-08-15
+
+**Compliance evidence-namespace separation & presentation regression guard / 合规证据命名空间分离与展示回归护栏**
+
+- 规则层更新：formal-submission-guide 与 SKILL.md 要求 `compliance_matrix.json` 分开证据命名空间——`source_ids` 只放来源登记 ID，专业标准 ID 必须放 `standard_ids` 并在 `standard_matrix.json` 声明；新增 `compliance_matrix.schema.json` 与 `land_use_codes.json`。本轮重读并响应：6 行（1.3.2/1.4.2/1.5.1.2/1.5.2.2/1.5.2.4/1.5.2.5）把 `STD-URBAN-DESIGN` 从 `source_ids` 移入 `standard_ids=["MOHURD-URBAN-DESIGN-MEASURES"]`（该标准在 standard_matrix 中已声明，STD-URBAN-DESIGN 仍是其在 sources.json 中的快照来源）；23 行 schema 必填字段齐全、schema_version 0.1.0、9 个用地代码全部在新枚举内。
+- Rule-layer update: the guide and SKILL.md now require `compliance_matrix.json` to separate evidence namespaces — `source_ids` carries only source-registry IDs while professional standard IDs belong in `standard_ids` and must also be declared in `standard_matrix.json`; a new `compliance_matrix.schema.json` and `land_use_codes.json` were added. This round re-reads and responds: in the six rows (1.3.2/1.4.2/1.5.1.2/1.5.2.2/1.5.2.4/1.5.2.5) `STD-URBAN-DESIGN` moves from `source_ids` to `standard_ids=["MOHURD-URBAN-DESIGN-MEASURES"]` (already declared in standard_matrix; STD-URBAN-DESIGN remains its snapshot source in sources.json); all 23 rows carry the schema-required fields, schema_version 0.1.0, and all 9 used land-use codes are inside the new enum.
+- 展示回归护栏（第 36 轮）：第 24 轮对比度修复值（--red/--green/#8a5a00/#5c6663）、第 25 轮阅读入口 h2、第 27 轮官方章节标题纳入索引生成器强制不变量（`presentation_contract_regression_guard`），任何静默回退都会使再生成失败——外部恢复提交 `b6c05fffe` 的历史教训永久关闭。
+- Presentation regression guard (Round 36): the Round 24 contrast values (--red/--green/#8a5a00/#5c6663), the Round 25 reading-entry h2 and the Round 27 official chapter heading join the index generator's enforced invariants (`presentation_contract_regression_guard`), so any silent reversion fails regeneration — the lesson of the foreign restore commit `b6c05fffe` is closed permanently.
+- 无主张、数据、机制、图面、PDF 或成熟度变化；geometry 九文件、metrics 值、sources/assumptions 内容字节未变。
+- No claim, datum, mechanism, figure, PDF or maturity change; the nine geometry files, metric values and sources/assumptions content bytes are unchanged.
+- 冻结项保持不变：12/8/3/36、G0、NO-GO、provisional、`not_fully_cleared`、独立逐文件清权 0、141 路径。
+- Frozen items remain unchanged: 12/8/3/36, G0, NO-GO, provisional, `not_fully_cleared`, 0 independent file-level audits and 141 paths.
+
 ## v35.0 - 2026-08-15
 
 **Rights-ledger digest coherence repair & second freshness audit / 权利台账摘要一致性修复与第二次来源新鲜度审计**
