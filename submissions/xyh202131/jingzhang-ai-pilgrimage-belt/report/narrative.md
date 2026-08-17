@@ -4,6 +4,12 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 36 Compliance evidence-namespace separation & presentation regression guard / 第 36 轮合规证据命名空间分离与展示回归护栏
+
+第 36 轮在第 35 轮 PR #2848 合并（`4348bfcb96b373937c6e62d86afb8dcfde8ae717` 进入 `origin/main`）后开始。规则层大更新（guide/SKILL 的证据命名空间规则、compliance_matrix.schema.json、land_use_codes.json 及一批脚本）。本轮重读并响应：6 行合规矩阵把 `STD-URBAN-DESIGN` 从 `source_ids` 移到 `standard_ids=["MOHURD-URBAN-DESIGN-MEASURES"]`（与 standard_matrix 一致、快照来源保留在 sources.json）；23 行 schema 必填字段齐全、9 个用地代码全部在新枚举内，新规则层下 self-check 与 strict 8/8 通过。同时把第 24—27 轮的展示契约（对比度值、h2 阅读入口、官方章节标题）纳入索引生成器强制不变量，任何静默回退都会使再生成失败。外部开放 PR #1471 状态未变，按第 30—35 轮同款操作者决定继续并监控。
+
+Round 36 began after Round 35 PR #2848 merged (`4348bfcb96b373937c6e62d86afb8dcfde8ae717` entered `origin/main`). The rule layer changed substantially (evidence-namespace rules in the guide/SKILL, compliance_matrix.schema.json, land_use_codes.json and a batch of scripts). This round re-reads and responds: six compliance-matrix rows move `STD-URBAN-DESIGN` from `source_ids` to `standard_ids=["MOHURD-URBAN-DESIGN-MEASURES"]` (consistent with standard_matrix; the snapshot source stays in sources.json); all 23 rows carry the schema-required fields, all 9 used land-use codes are inside the new enum, and self-check plus strict 8/8 pass under the new rule layer. The Round 24–27 presentation contracts (contrast values, h2 reading entry, official chapter heading) also join the index generator's enforced invariants so any silent reversion fails regeneration. External open PR #1471 is unchanged; the operator decision to proceed while monitoring continues, as in Rounds 30–35.
+
 ## Round 35 Rights-ledger digest coherence repair & second freshness audit / 第 35 轮权利台账摘要一致性修复与第二次来源新鲜度审计
 
 第 35 轮在第 34 轮 PR #2844 合并（`4932063f8a3a1fec988b06e3a812aa0ed2b64d1f` 进入 `origin/main`）后开始，规则层无变化。两件事：(1) 全量台账-vs-磁盘审计发现 13 条权利台账摘要过期——根因是外部恢复提交 `b6c05fffe`（经 PR #2782 在第 29 轮前合入 main）把台账重写回旧快照，第 20—28 轮更新过的文件没有同步台账；manifest 一直正确但无门核验台账。本轮重同步全部 13 条摘要，并把台账摘要一致性加入索引生成器强制不变量（违反即失败）。(2) 第二次来源新鲜度审计：48/2/50（2 条 review_due 与第 21 轮相同），15 条来源摘要相对第 21 轮变化，refresh_records 与 summary 已更新。外部开放 PR #1471 状态未变，按第 30—34 轮同款操作者决定继续并监控。
