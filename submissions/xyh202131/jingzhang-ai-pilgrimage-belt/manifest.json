@@ -81,7 +81,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4d4acc918854c80c04754fa2fe447c7909b3ba234b34c9d255f5854a6f563e84"
+      "sha256": "a4eba048e05f0bcc90890eb5c03f9bc021679c59a77bd688c25ee23683315895"
     },
     {
       "path": "changelog.md",
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "c838ba5fa437d7bf56b6aa939d4f91904464d6964f0d61474c5710e35a276639"
+      "sha256": "9f2e99770a890d50d003aef8637af737edc81c2faebb488894c5a86780036798"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -1100,7 +1100,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "low",
     "readiness_contract": "persisted-self-check-v1",

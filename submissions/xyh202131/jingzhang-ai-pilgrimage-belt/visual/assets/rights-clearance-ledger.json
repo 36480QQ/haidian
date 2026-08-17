@@ -606,9 +606,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4d4acc918854c80c04754fa2fe447c7909b3ba234b34c9d255f5854a6f563e84",
+        "digest": "a4eba048e05f0bcc90890eb5c03f9bc021679c59a77bd688c25ee23683315895",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 38 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from the final Round 39 persisted self-check bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
