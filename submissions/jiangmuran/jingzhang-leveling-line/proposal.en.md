@@ -685,7 +685,7 @@ keep the non-AI equivalent available.
 
 ### Three red lines are not this proposal's goodwill; they are existing legal obligations
 
-This package had been presenting the equivalent non-AI path, the stop-on-detection rule, and the numeric appeal deadline as its own design judgements. Reading the highest-scoring proposals in this call made clear that this weakens them: **all three are already obligations under current Chinese law and policy, and writing them as design preferences reduces their force.** Each instrument below was read in full on the official publisher's site; article numbers and substance are cited, full text is not.
+This package had presented the equivalent non-AI path, the stop-on-detection rule and the numeric appeal deadline as its own design judgements, which weakens them: **all three are already obligations under current Chinese law and policy, and writing them as design preferences reduces their force.** Each instrument below was read in full on the official publisher's site; article numbers and substance are cited, full text is not.
 
 | This proposal's rule | Verified legal basis | What changes |
 |---|---|---|
@@ -757,7 +757,7 @@ Those counts used to come from hand-reading eighteen proposals, with neither the
 1. **Any safety incident suspends the whole network** — not the machine involved, not the segment involved, but every machine of that type on the line, stopped and re-measured. The reason is the same as the general principle: local patching is not permitted.
 2. **Tolerance scales with kinetic energy.** F tightens with the product of mass and speed. To run faster or heavier, an operator must first obtain a stricter closure clearance — not apply for an exemption.
 
-**Incident handling and appeal, with a clock on it.** Across the 40 proposals in these two tracks, almost everyone writes that decisions can be appealed, and **six give a numeric time limit — four excluding this one.** A right of appeal without a deadline cannot be enforced, because there is no way to tell whether it has been honoured. Appeal is therefore written as measurable commitments, and the time limits enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.**
+**Incident handling and appeal, with a clock on it.** Across the 40 proposals in these two tracks almost everyone writes that decisions can be appealed, and **six give a numeric time limit — four other than this.** A right of appeal without a deadline cannot be enforced: there is no way to tell whether it was honoured. Appeal is therefore written as measurable commitments, and the time limits enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.**
 
 **Insurance and a removal bond, so exit can be executed.** Eleven of the 40 mention a bond or insurance, ten excluding this one, always as one word in a list, none designing the risk transfer. Yet this proposal's core rule returns the whole route for re-survey and removes the devices, and without funding that defers into indefinite observation. Admission therefore requires a **removal bond** for removal and site restoration, scaled to device count and area, released on **a full re-survey cycle within tolerance** rather than on entering operation; the claims route for an injured pedestrian is published at admission; and F1 risk transfer must be in place before closure clearance.
 
@@ -765,7 +765,7 @@ Those counts used to come from hand-reading eighteen proposals, with neither the
 
 ### Jurisdictional seams: where pilots on this belt actually die
 
-Across the 40 proposals in these two tracks, jurisdiction, ownership boundaries and park management match in two — one excluding this proposal. Yet this is where low-speed device pilots most often fail in reality: a machine leaves the heritage park's green space onto a municipal road, passes a campus frontage, and enters the forecourt of a privately held parcel — **changing responsible party at every crossing.** Technically it never stopped moving; in responsibility it changed hands four times.
+Across the 40 proposals in these two tracks, jurisdiction, ownership boundaries and park management match in two — one other than this. Yet this is where low-speed device pilots most often fail: a machine leaves the park's green space onto a municipal road, passes a campus frontage, enters a privately held forecourt — **changing responsible party at every crossing.** Technically it never stopped moving; in responsibility it changed hands four times.
 
 This proposal writes jurisdiction into the geometry rather than into prose. Every point in `geometry/public_space.geojson` carries `jurisdictions` and `is_seam_point` attributes [data:geometry/public_space.geojson#PUBLIC-001], so the claim is machine-checkable. The measured result is worth stating on its own line:
 
@@ -785,7 +785,7 @@ Rule 4 (defined below in full) is the important one. The real failure mode at a 
 
 **Explicitly not done:** jurisdiction types here are **inferred from position**, flagged as such in the layer attribute `jurisdiction_note_zh`, and must be replaced once official ownership and management boundaries are verified — after which the section is recomputed. This proposal assigns no responsibility to any authority and makes no commitment on anyone's behalf; the above is a mechanism offered for independent evaluation by each authority.
 
-**Substitution and employment: the half that also has to be said.** Low-speed delivery robots displace specific people's work. This proposal neither pretends the problem does not exist nor claims to solve it, but it refuses to place it outside the design scope:
+**Substitution and employment: the half that also has to be said.** Low-speed delivery robots displace specific people's work. This proposal neither pretends the problem away nor claims to solve it, but refuses to place it outside the design scope:
 
 - Changes in delivery employment within a pilot area must be **registered as a baseline at admission and published each re-survey cycle**, alongside the device count.
 - Existing couriers and delivery workers are real users of the spine. Their needs for dwelling, charging, shade and toilets enter the public-space kit of parts at the same level as device chargers, and must not be reduced to make room for devices.
@@ -953,7 +953,7 @@ The rule has real veto power. It means positions inside campuses, behind compoun
 
 ### Device charging, standby, and kerb allocation
 
-Few proposals in these two tracks address where low-speed devices are charged and parked. This sentence used to say none, which was a hand-read and was refuted by this package's own data once a probe was added for it: of the 40 proposals, **26** mention charging or parking and only **3**, this one included, touch siting — two others, `LaoFang114514` and `xiaofenggan01`. Mentioning it is normal; saying where it goes is not. This is a gap that stalls real pilots: a device fleet needs charging bays, standby bays and maintenance bays, all three occupy kerb or ground space, and all three want to be where the people are.
+Few proposals in these two tracks address where low-speed devices are charged and parked: of the 40, **26** mention charging or parking and only **3**, this one included, touch siting. Mentioning it is normal; saying where it goes is not. This gap stalls real pilots: a fleet needs charging, standby and maintenance bays; all three occupy kerb or ground space, and all three want to be where the people are.
 
 What this proposal supplies is a **priority order for kerb allocation**, not a set of positions:
 
@@ -1002,7 +1002,7 @@ Device failure at intersections is not a failure to yield; it is **accumulation*
 
 ### Emergency access: a constraint that cannot be traded away
 
-Across the 40 proposals in these two tracks, fire lanes, ambulances and emergency access match in three — two excluding this proposal. This proposal writes it as a hard constraint rather than a note:
+Across the 40, fire lanes, ambulances and emergency access match in three — two other than this. This proposal writes it as a hard constraint rather than a note:
 
 - **No charging point, parking bay or queue storage** may be placed within a fire lane or emergency access route;
 - device behaviour on detecting an approaching emergency vehicle enters the fixed test battery, and its readings enter the closure error;
@@ -1332,6 +1332,21 @@ Every reading here is taken by one party and countersigned by another, and those
 
 <!-- ROLESPEC:END -->
 
+<!-- READCAL:BEGIN -->
+**Eight benchmarks: where each stands, how often it is read, who reads it and who countersigns.** This existed only as machine fields — rows saying `BM-303` and `ROLE-COMMUNITY-SELFORG` — while the places sat in `geometry/public_space.geojson`, which the reviewer cannot open: **a table about who reads what, and where, arrived as identifiers with no referents.** Places and ids are joined by the build; a failed join fails it.
+
+| Id | Place | Order | Cadence | Read by | Countersigned |
+|---|---|---|---|---|---|
+| `BM-0` | **AI Origin Community** | origin | annual datum run and closing check | professional body | international visitor |
+| `BM-1` | **Zhongzhiyuan** | first | annual re-survey | professional body | resident representative |
+| `BM-2` | **Dazhongsi** | first | annual re-survey | professional body | resident representative |
+| `BM-21` | **Zhongguancun technology-services wing access point** | second | quarterly re-survey | park operator | professional body |
+| `BM-22` | **Xiaoyuehe scenario wing access point** | second | quarterly re-survey | park operator | professional body |
+| `BM-301` | **North Third Ring south-section community** | third | monthly re-survey | community self-organisation | park operator |
+| `BM-302` | **Xueyuan Road rail station** | third | monthly re-survey | community self-organisation | park operator |
+| `BM-303` | **Qinghe south-bank community** | third | monthly re-survey | community self-organisation | park operator |
+<!-- READCAL:END -->
+
 ### Pilot agreement components
 
 Launching the first trial needs an agreement, not only a proposal. This document does not draft the text — that is legal work — but lists the components none of which can be omitted: composition and replacement rules for the four review categories, including absence handling and how resident representatives are selected; **freezing and publication of the question set**, unmodifiable once the trial starts; ownership and publication deadline for readings; site use and safety responsibility, including who carries the safety plan and insurance; **exit and resumption** under rule 7, written into the agreement rather than agreed verbally; a specific list of personal data not collected, and the consequence of breach; and a review cycle for the agreement itself, since it is a living document.
@@ -1439,7 +1454,7 @@ It calls none of this proposal's generation scripts and needs neither Python nor
 
 ### Accessibility and legibility QA: computed, not asserted
 
-Reviews of the highest-scoring concurrent submissions repeatedly ask for the same thing: distance-legibility and colour-contrast testing on A0 boards, and alt-text, keyboard, screen-reader and contrast checks on the HTML. That request is usually answered with a sentence. Here it is computed, shipped as `visual/assets/accessibility_qa.json`, and **enforced as a build gate — failure stops the build rather than warning.** To be exact: `analysis/` is not in the package, so a reviewer cannot re-run the gate itself; re-runnable is the shipped `accessibility_qa.json` and the five `.js` checkers.
+Reviews of the highest-scoring concurrent submissions keep asking for the same thing: distance-legibility and colour-contrast testing on A0 boards, and alt-text, keyboard, screen-reader and contrast checks on the HTML — usually answered with a sentence. Here it is computed, shipped as `visual/assets/accessibility_qa.json`, and **enforced as a build gate — failure stops the build rather than warning.** `analysis/` is not in the package, so what a reviewer can re-run is the shipped `accessibility_qa.json` and the five `.js` checkers, not the gate.
 
 Contrast (WCAG 2.1, ≥ 4.5 body text, ≥ 3.0 large text and graphical objects, against the paper surface): principal ink 11.44, secondary text 4.56, muted annotation 3.00, datum red 4.74, instrument blue 4.59, brass 4.51, surveyed green 6.86 — all clearing their floors. **Four of these failed before this revision** — muted annotation at 2.30, brass 3.47, olive 2.60, secondary 4.30. The script found them; new values were then derived against the target ratios and applied throughout. Chosen by eye, all four looked "clear enough".
 
@@ -1504,7 +1519,7 @@ The repository's `validate_submission.py` carries `validate_simulation_consisten
 
 Of the current 793, **9** ship a standalone errata file — this proposal and `147228`, `LShengYi`, `dingle2001`, `felix-lhz`, `irisquirrel`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder` — and **13** use self-correction language in the body. When this proposal first wrote that sentence the figure was 1, itself. It is not any more.
 
-It is corrected rather than left standing because **the sentence is an instance of this proposal’s own argument**: an assertion that stopped being true when the corpus changed goes on reading as true unless its author re-measures it. The errata file in `147228`, `LShengYi`, `dingle2001`, `felix-lhz`, `irisquirrel`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder` — `visual/assets/errata.json` under that submission, readable in the same repository — carries `found_by` and `shape` fields whose shape vocabulary overlaps this register’s closely (`two_copies_drifted`, `known_value_not_recomputed`), **which says the notation travels and is not this proposal’s property**. **So this proposal no longer claims nobody else does this. It claims something narrower and more checkable: an errata register should be generated by the build and held by a gate to ‘every entry joins back to the repository’, not maintained by hand.** `build_errata.py` verifies at build time that each entry’s commit exists and actually touched the file it blames. That is a difference an outsider can check; a count of entries is not.
+It is corrected rather than left standing because **the sentence is an instance of this proposal’s own argument**: an assertion that stopped being true when the corpus changed goes on reading as true unless its author re-measures it. **So this proposal no longer claims nobody else does this. It claims something narrower and checkable: an errata register should be generated by the build and held by a gate to ‘every entry joins back to the repository’, not maintained by hand.** `build_errata.py` verifies on every build that each entry’s commit exists and actually touched the file it blames. That is a difference an outsider can check; a count of entries is not.
 
 <!-- SELFCORRECTION:END -->
 
@@ -1724,7 +1739,7 @@ mechanism survives is decided by rostering rather than by the annual total. All 
 are required, which sets a **network floor of 22 people**: below that, a valid closure cannot be
 assembled at all.
 
-**The errata register and the self-check outputs ship, and are not recited here.** `visual/assets/errata.json` and `errata.en.json` record, entry by entry, what was wrong, what shape the error had, who found it and which commit fixed it, and `build_errata.py` verifies at build time that the commit exists and touched the file it blames — **a register that cannot be joined to the repository is itself the defect it records.** This names where it is and nothing more: it is the correction history of this document, not of Haidian.
+**The errata register and self-check outputs ship, and are not recited here.** `visual/assets/errata.json` records entry by entry what was wrong, its shape, who found it and which commit fixed it, and the build verifies that commit exists and touched the file it blames — **a register that cannot be joined to the repository is itself the defect it records.** This names where it is and nothing more: it is the correction history of this document, not of Haidian.
 
 **The self-check outputs ship too.** `self_check.json`, which the organisers read
 whole, carries the raw verdicts of the four machine gates. Six further self-check outputs ship
@@ -1866,7 +1881,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`; two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` the argument alone. Six files ship behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 76 of 79 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The sheets compose into the A3 booklet and A0 boards, with the HTML renderings and the supporting `visual/assets/` files listed file by file in `manifest.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody knows exists.**
 
 <!-- PDFPAGE1:BEGIN -->
 
