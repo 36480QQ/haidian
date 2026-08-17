@@ -50,6 +50,13 @@
       "message": "Static HTML visualization generated without external dependencies."
     },
     {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html + assets/figures/*.png",
+      "message": "Visual packaging check passed. All five required figures present, visual/index.html is offline static HTML with core metrics, no external dependencies."
+    },
+    {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "blocking",
