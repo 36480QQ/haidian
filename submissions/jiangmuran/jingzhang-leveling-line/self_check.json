@@ -143,7 +143,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 152/146 bare numbers reported but not blocked, and one designed check (78 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 152/146 bare numbers reported but not blocked, and one designed check (81 candidates) not shipped"
     },
     {
       "check_id": "PKG_CLAIM_STATE_QA",
@@ -311,7 +311,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 59 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 9,103 bytes to spare. The package totals 28.7 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 59 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 3,724 bytes to spare. The package totals 28.7 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -327,7 +327,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "markdown_structure_qa.py — markdown structure: 113 tables across both editions, every separator and row matching its header, every ordered list strictly increasing"
+      "message": "markdown_structure_qa.py — markdown structure: 115 tables across both editions, every separator and row matching its header, every ordered list strictly increasing"
     },
     {
       "check_id": "PKG_MATRIX_REFS_QA",
@@ -367,7 +367,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 644 distinct names harvested from the package — 622 matching exactly one of 24 published families and 22 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 645 distinct names harvested from the package — 623 matching exactly one of 24 published families and 22 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -687,7 +687,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 286 条，按发现者：audit 27、external 31、external-reviewer 5、own-gate 20、rival-read 17、self 186；最常见形状：check-measured-the-convenient-thing 52、two-copies-of-one-thing-drifted 42、deliverable-not-inspected-before-shipping 30、claim-outlived-the-package 20。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 21 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 286 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 287 条，按发现者：audit 27、external 31、external-reviewer 5、own-gate 20、rival-read 17、self 187；最常见形状：check-measured-the-convenient-thing 52、two-copies-of-one-thing-drifted 42、deliverable-not-inspected-before-shipping 30、claim-outlived-the-package 20。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 21 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 287 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -901,7 +901,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30014939,
+      "total_bytes": 30041109,
       "maintainer_bypass": false
     },
     "stderr": ""
