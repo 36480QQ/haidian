@@ -928,6 +928,18 @@
       "why_en": "**Putting a limit in the sentence a reviewer reads is what makes it checkable, and it also means loosening the sentence would loosen the gate.** This package refuses that move everywhere else and refuses it here: the gate keeps the strictest figure ever published as a floor and fails when the prose goes laxer. **A tolerance may only tighten — E260 changed the geometry, not the two numbers.**"
     },
     {
+      "id": "M104",
+      "gate": "depth_dimension_evidence_qa.py",
+      "target": "design_depth_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把「三大重点片区详细设计」一条的证据里，**建成形态那一层拿掉**——即修复前的状态。该条声明的专业维度是城市设计，状态是 complete，而本包 6 个建筑基底里有 5 个就落在那三块地里。",
+      "what_en": "Remove the built-form layer from the evidence of the three-key-area detailed design item — the state before the fix. That item declares the urban design dimension and a status of complete, and 5 of this package's 6 building footprints sit inside those three blocks.",
+      "why_zh": "**一份声明了城市设计深度、而证据里没有建成形态的条目，宣称的比它拿得出的多。** 那是评审整份读到的三份矩阵之一，也是任务书点名的「重点区域详细设计」的交付面。变异证明：一条声明某个专业维度的条目，一旦不引用那个维度赖以成立的证据种类，构建就停。",
+      "why_en": "**An item declaring urban-design depth whose evidence contains no built form is claiming more than it shows.** That file is one of the three matrices the reviewing model reads whole, and this item is the delivered face of a top-level brief requirement. The mutation proves the build stops when an item declaring a dimension stops citing the kind of evidence that dimension is made of."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1266,7 +1278,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 103,
+  "caught": 104,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1283,6 +1295,7 @@
     "compute_siting_qa.py",
     "computed_value_qa.py",
     "declared_geometry_qa.py",
+    "depth_dimension_evidence_qa.py",
     "entrance_rule_qa.py",
     "evidence_ceiling.py",
     "evidence_ref_qa.py",
@@ -1382,6 +1395,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 74 道闸门，其中 71 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 74 gates, 71 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 75 道闸门，其中 72 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 75 gates, 72 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
