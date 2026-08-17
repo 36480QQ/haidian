@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 65 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 68 条 = 65 道闸门 + 3 条披露。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 66 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 69 条 = 66 道闸门 + 3 条披露。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -247,7 +247,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 92 mutations, 62 of 65 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 93 mutations, 63 of 66 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -255,7 +255,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 92 deliberate defects across 62 of 65 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 93 deliberate defects across 63 of 66 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_HARNESS_REFERENCE_QA",
@@ -319,7 +319,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 582 distinct names harvested from the package — 566 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 584 distinct names harvested from the package — 568 matching exactly one of 24 published families and 16 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -336,6 +336,14 @@
       "target": "package",
       "source": "package-provided",
       "message": "organiser_review_qa.py — organiser review: 1 issue id(s) emitted by the organisers' spatial, visual and professional reviews (run from upstream/main, not from this checkout), every one answered by id and severity in compliance_matrix.json, and nothing answered that they have stopped emitting"
+    },
+    {
+      "check_id": "PKG_ORGANISER_VERDICT_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "message": "organiser_verdict_qa.py — organiser verdicts: all 4 blocks the organisers' self-check produces are persisted whole (deterministic rc=0, spatial rc=0, visual rc=0, professional rc=0), with 3 issue-id lists carrying 3 id(s) between them and review_status=formal-review-ready. Scope: this does not judge the verdicts — whether an issue is answered well is the reviewer's call; what is held is that the record is handed over rather than summarised away"
     },
     {
       "check_id": "PKG_OVERFLOW_QA",
@@ -591,7 +599,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 251 条，按发现者：audit 27、external 28、external-reviewer 5、own-gate 18、rival-read 8、self 165；最常见形状：check-measured-the-convenient-thing 45、two-copies-of-one-thing-drifted 36、deliverable-not-inspected-before-shipping 29、claim-outlived-the-package 19。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 23 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 251 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 252 条，按发现者：audit 27、external 28、external-reviewer 5、own-gate 18、rival-read 9、self 165；最常见形状：check-measured-the-convenient-thing 45、two-copies-of-one-thing-drifted 36、deliverable-not-inspected-before-shipping 29、claim-outlived-the-package 19。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 23 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 252 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -599,11 +607,309 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：92 处人为缺陷，覆盖 62 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 92 deliberate defects across 62 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：93 处人为缺陷，覆盖 63 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 93 deliberate defects across 63 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
   "can_enter_formal_review": true,
   "review_status": "formal-review-ready",
-  "package_type": "professional_design_package"
+  "package_type": "professional_design_package",
+  "submission_dir": "submissions/jiangmuran/jingzhang-leveling-line",
+  "pr_author": "jiangmuran",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/jiangmuran/jingzhang-leveling-line/manifest.json: packages marked ready_for_review must set validation_claim.self_checked=true after running self_check; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
+        "submissions/jiangmuran/jingzhang-leveling-line/self_check.json: packages marked ready_for_review must persist ok=true; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
+        "submissions/jiangmuran/jingzhang-leveling-line/self_check.json: packages marked ready_for_review must persist can_enter_formal_review=true; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
+        "submissions/jiangmuran/jingzhang-leveling-line/self_check.json: packages marked ready_for_review must persist pass/blocking gates for DETERMINISTIC_VALIDATION, PROFESSIONAL_EVIDENCE, SPATIAL_REVIEW, VISUAL_PACKAGING; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[3]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[4]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[5]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[7]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[8]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[9]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[10]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[11]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[12]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json: items[13]: provisional spatial concept needs maintainer review before being treated as public-facing context"
+      ],
+      "proposal_files": [
+        "submissions/jiangmuran/jingzhang-leveling-line/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/jiangmuran/jingzhang-leveling-line/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/jiangmuran/jingzhang-leveling-line/agent.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/closure.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/closure.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/crossing.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/crossing.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/detail.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/detail.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/device.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/device.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/ecosystem.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/ecosystem.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/evidence-circuit.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/evidence-circuit.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/heritage.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/heritage.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/hero-leveling-line.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/hero-leveling-line.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/identity.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/identity.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/key-areas.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/key-areas.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/kit-of-parts.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/kit-of-parts.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/land-use-structure.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/land-use-structure.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/maintenance.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/maintenance.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/metrics-evidence.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/metrics-evidence.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/mobility-bluegreen.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/mobility-bluegreen.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/night.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/night.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/origin.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/origin.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/phasing.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/phasing.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/reach.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/reach.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/region-interface.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/region-interface.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/riverfront.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/riverfront.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/roster.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/roster.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/sections.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/sections.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/site-overview.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/site-overview.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/station.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/station.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/steplink.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/steplink.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/street-eye-level.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/street-eye-level.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/third.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/third.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/visit.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/visit.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/volunteer.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/volunteer.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/wayfind.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/wayfind.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/wing.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/wing.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/winter.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/winter.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/year.en.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/figures/year.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/closure-advance.md",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/closure-advance.mp4",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/closure-advance.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/closure-advance.vtt",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/cover.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/leveling-line.md",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/leveling-line.mp4",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/leveling-line.png",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/leveling-line.vtt",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/leveling-year.md",
+        "submissions/jiangmuran/jingzhang-leveling-line/assets/media/leveling-year.mp3",
+        "submissions/jiangmuran/jingzhang-leveling-line/assumptions.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/changelog.md",
+        "submissions/jiangmuran/jingzhang-leveling-line/compliance_matrix.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/design_depth_matrix.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/drawings/a0-boards.en.pdf",
+        "submissions/jiangmuran/jingzhang-leveling-line/drawings/a0-boards.pdf",
+        "submissions/jiangmuran/jingzhang-leveling-line/drawings/a3-booklet.en.pdf",
+        "submissions/jiangmuran/jingzhang-leveling-line/drawings/a3-booklet.pdf",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/buildings.geojson",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/constraints.geojson",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/green_space.geojson",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/key_areas.geojson",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/land_use.geojson",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/phasing.geojson",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/public_space.geojson",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/roads.geojson",
+        "submissions/jiangmuran/jingzhang-leveling-line/geometry/site_boundary.geojson",
+        "submissions/jiangmuran/jingzhang-leveling-line/manifest.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/metrics.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/proposal.en.md",
+        "submissions/jiangmuran/jingzhang-leveling-line/proposal.md",
+        "submissions/jiangmuran/jingzhang-leveling-line/report/copyright_statement.md",
+        "submissions/jiangmuran/jingzhang-leveling-line/report/narrative.md",
+        "submissions/jiangmuran/jingzhang-leveling-line/report/proposal.en.html",
+        "submissions/jiangmuran/jingzhang-leveling-line/report/proposal.html",
+        "submissions/jiangmuran/jingzhang-leveling-line/risk.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/self_check.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/sources.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/spatial.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/standard_matrix.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/accessibility_qa.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/agent_declarations.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/block_types.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/census.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/census_history.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/check_cards.js",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/check_closure.js",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/check_osm.js",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/claim_audit.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/closure-record.schema.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/errata.en.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/errata.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/evidence_ceiling.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/example-s08-closure-record.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/field_extras.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/field_map.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/gate_mutation.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/i18n_order_qa.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/label_collision_qa.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/manifest_schema_survey.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/naming.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/operations.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/osm_fabric.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/osm_reference.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/osm_stitching.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/parity_qa.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/personas.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/reading_log.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/review_gate_survey.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/review_repeatability.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/review_route.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/rights_ledger.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/role_spec.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/run_s08_tabletop.js",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/s08-tabletop-evidence.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/scenario_cards.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/score_correlates.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/spatial_level_survey.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/taskbook_coverage.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/track_scan.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/verify.js",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/visual_packet_qa.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/year_explorer.js",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/assets/year_model.json",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/index.en.html",
+        "submissions/jiangmuran/jingzhang-leveling-line/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/jiangmuran/jingzhang-leveling-line": "formal"
+      },
+      "total_bytes": 26714397,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 2244081.797,
+        "public_space_area_sqm": 733011.382,
+        "building_footprint_area_sqm": 82276.0,
+        "green_ratio": 0.196628,
+        "public_space_ratio": 0.064227
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.385554,
+        "leveling_spine_length_m": 9443.264658,
+        "benchmark_count": 8.0,
+        "green_ratio": 0.196628,
+        "public_space_ratio": 0.064227,
+        "building_footprint_area_sqm": 82276.0,
+        "key_area_count": 3.0
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 9,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 44,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 12,
+          "standard": 6,
+          "depth": 15,
+          "data": 17,
+          "metric": 11
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "next_actions": []
 }
