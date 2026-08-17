@@ -747,7 +747,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 255,
+      "value": 256,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -1367,9 +1367,9 @@
       "evidence_class": "background_only",
       "confidence_is_about": "computation",
       "metric_class": "measured_not_reverified",
-      "measures": "proposed_design",
-      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
-      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "measures": "existing_conditions",
+      "recalculation_trigger_zh": "新的 OSM 抽取或官方实测成果取代当前读数时重算；本包读数为众包数据，不作为法定依据。",
+      "recalculation_trigger_en": "A new OSM extract or an official survey superseding this reading. The reading is crowd-sourced and is not a statutory basis.",
       "verification_role_zh": "交通工程",
       "verification_role_en": "Transport engineering",
       "note_zh": "现状步行网络上，十分钟走得到任一水准点的建筑基底数。",
