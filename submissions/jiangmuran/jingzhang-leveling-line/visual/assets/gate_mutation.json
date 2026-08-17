@@ -916,6 +916,18 @@
       "why_en": "**A dependency that does not resolve and no dependency at all are the same thing to a reader — but only the first looks like something.** Implementation feasibility carries a fifth of the score and what this chapter delivers is which project waits on which. The mutation proves the build stops when the ordering names a project that is not there, rather than printing it anyway."
     },
     {
+      "id": "M100",
+      "gate": "garden_crossing_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把本包为「花园型」地块公布的间距条件从 250 m 改写为 500 m——**几何一条没动，改的是那句条件本身**。闸门的限值正是从这句话里解析出来的，因此若无下限，放宽这句话就等于放宽这道闸门。",
+      "what_en": "Rewrite the spacing this package published for the garden-type block from 250 m to 500 m — **no geometry moves; what moves is the criterion itself**. The gate parses its limit out of that sentence, so without a floor, loosening the sentence would loosen the gate with it.",
+      "why_zh": "**把限值写在评审读得到的句子里，是为了让它可被核对；但那也意味着改松那句话就能改松这道闸门。** 本包在别处从不允许这种事，这里也不允许：闸门另存一条已公布过的最严值作下限，改松即停。**限差只可收紧——E260 修的是几何，不是那两个数。**",
+      "why_en": "**Putting a limit in the sentence a reviewer reads is what makes it checkable, and it also means loosening the sentence would loosen the gate.** This package refuses that move everywhere else and refuses it here: the gate keeps the strictest figure ever published as a floor and fails when the prose goes laxer. **A tolerance may only tighten — E260 changed the geometry, not the two numbers.**"
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1215,7 +1227,7 @@
       "why_en": "**Scaled against a 1,500 m square, every east-west distance in these three plans reads 11% short.** The gate already existed and checked the one drawing that declared its scale in an attribute, while three drawings declaring an extent in a sentence were covered by nothing. The mutation proves the build stops when a frame divided by its own declared scale does not equal its own declared extent."
     }
   ],
-  "caught": 99,
+  "caught": 100,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1240,6 +1252,7 @@
     "formal_visual_metrics_qa.py",
     "forward_reference_qa.py",
     "frame_collision_qa.py",
+    "garden_crossing_qa.py",
     "gate_count_qa.py",
     "harness_reference_qa.py",
     "i18n_order_qa.py",
@@ -1327,6 +1340,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 70 道闸门，其中 67 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 70 gates, 67 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 71 道闸门，其中 68 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 71 gates, 68 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
