@@ -416,6 +416,8 @@
    "effect_metric_zh": "首次分诊正确率，与急症识别的漏报数",
    "effect_metric_en": "First-triage accuracy, and missed identifications of an emergency",
    "control_kind": "before_after",
+   "no_withhold_reason_zh": "安全类场景：为取得更干净的比较而让一部分人少一层保护，不是研究设计，是一个不该做的决定。",
+   "no_withhold_reason_en": "A safety scenario: withholding a layer of protection from some people to obtain a cleaner comparison is not a study design but a decision that should not be taken.",
    "control_zh": "不设并行对照——本卡为安全类场景，为取得更干净的比较而让一部分人少一层保护，不是研究设计而是一个不该做的决定。改用同一地点的前后对照，并保留非 AI 等价路径：人工导医台与纸质的机构—科室—排班目录，导航由实体标识与工作人员承担；该路径永久保留，不因 AI 恢复而撤除",
    "control_en": "No parallel control. This is a safety scenario, and withholding a layer of protection from some people to obtain a cleaner comparison is not a study design but a decision that should not be taken. A before-and-after at the same place is used instead, and the non-AI equivalent stays available: A staffed help desk and a printed directory of institutions, departments and clinic hours; wayfinding falls to signage and staff. Permanent: it is not withdrawn when the AI comes back",
    "verify_stages_zh": [
@@ -551,6 +553,8 @@
    "effect_metric_zh": "单位配送量的人力工时，与行人让行事件次数",
    "effect_metric_en": "Staff hours per delivery, and the count of pedestrian give-way events",
    "control_kind": "before_after",
+   "no_withhold_reason_zh": "安全类场景：为取得更干净的比较而让一部分人少一层保护，不是研究设计，是一个不该做的决定。",
+   "no_withhold_reason_en": "A safety scenario: withholding a layer of protection from some people to obtain a cleaner comparison is not a study design but a decision that should not be taken.",
    "control_zh": "不设并行对照——本卡为安全类场景，为取得更干净的比较而让一部分人少一层保护，不是研究设计而是一个不该做的决定。改用同一地点的前后对照，并保留非 AI 等价路径：设备停运并退回停放点，配送回到人工投递；主脊的行人与无障碍通行不受影响——设备带本就是扣除行人服务水平预留后的余量。该路径永久保留",
    "control_en": "No parallel control. This is a safety scenario, and withholding a layer of protection from some people to obtain a cleaner comparison is not a study design but a decision that should not be taken. A before-and-after at the same place is used instead, and the non-AI equivalent stays available: Devices stop and return to their bays; delivery reverts to people. Pedestrian and step-free movement on the spine is unaffected — the device band was always the remainder after the pedestrian reserve. Permanent",
    "verify_stages_zh": [
@@ -828,6 +832,8 @@
    "effect_metric_zh": "复盘提出的改动中在下一周期内落实的比例",
    "effect_metric_en": "Share of review actions implemented within the next cycle",
    "control_kind": "before_after",
+   "no_withhold_reason_zh": "安全类场景：为取得更干净的比较而让一部分人少一层保护，不是研究设计，是一个不该做的决定。",
+   "no_withhold_reason_en": "A safety scenario: withholding a layer of protection from some people to obtain a cleaner comparison is not a study design but a decision that should not be taken.",
    "control_zh": "不设并行对照——本卡为安全类场景，为取得更干净的比较而让一部分人少一层保护，不是研究设计而是一个不该做的决定。改用同一地点的前后对照，并保留非 AI 等价路径：复盘会与纸质记录；全部处置建议本就由人决定。该路径永久保留",
    "control_en": "No parallel control. This is a safety scenario, and withholding a layer of protection from some people to obtain a cleaner comparison is not a study design but a decision that should not be taken. A before-and-after at the same place is used instead, and the non-AI equivalent stays available: A review meeting and a paper record; every disposal decision was always a person's. Permanent",
    "verify_stages_zh": [
@@ -894,6 +900,8 @@
    "effect_metric_zh": "场内通过设备的上街安全事件率，对照未在此测试的同类设备",
    "effect_metric_en": "Street incident rate of devices tested here against comparable untested devices",
    "control_kind": "before_after",
+   "no_withhold_reason_zh": "安全类场景：为取得更干净的比较而让一部分人少一层保护，不是研究设计，是一个不该做的决定。",
+   "no_withhold_reason_en": "A safety scenario: withholding a layer of protection from some people to obtain a cleaner comparison is not a study design but a decision that should not be taken.",
    "control_zh": "不设并行对照——本卡为安全类场景，为取得更干净的比较而让一部分人少一层保护，不是研究设计而是一个不该做的决定。改用同一地点的前后对照，并保留非 AI 等价路径：测试场停止对外服务，测试边界由物理围挡与值守承担；AI 恢复不豁免重新取得闭合合格。该路径永久保留",
    "control_en": "No parallel control. This is a safety scenario, and withholding a layer of protection from some people to obtain a cleaner comparison is not a study design but a decision that should not be taken. A before-and-after at the same place is used instead, and the non-AI equivalent stays available: The test ground stops serving the public and its boundary is held by physical barriers and staff; restoring the AI does not waive re-earning a passing closure. Permanent",
    "verify_stages_zh": [
