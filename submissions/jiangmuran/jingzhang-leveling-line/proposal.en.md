@@ -181,10 +181,10 @@ These are not three unrelated drawing sets. The research area decides **what to 
 | Term | Source | How this proposal answers it |
 |---|---|---|
 | **全生命周期** | Announcement 1.3 | Four rules: the F1 trial decides whether a service may open; it is re-levelled on a cycle by its order; **over tolerance the whole route returns and the service drops to its non-AI equivalent**; resumption needs two passing cycles, a published cause and four-party agreement - the end of the lifecycle is written down, not left open. |
-| **运营策略** | Announcement 1.3 | Not a festival calendar but a re-levelling one: monthly community re-levelling days (third order), quarterly scenario open days (second), half-yearly route re-levelling (first), annual return-to-zero. **Every event is also a reading**, so readings stop before the events do. |
+| **运营策略** | Announcement 1.3 | Not a festival calendar but a re-levelling one: monthly community days (third order), quarterly scenario open days (second), half-yearly route re-levelling (first), annual return-to-zero. **Every event is also a reading**, so readings stop before the events do. |
 | **场景-空间-运营** | Taskbook | Each of the twelve scenario cards is bound to a benchmark order (space) and a re-levelling cycle with a lead post (operation): third - monthly - P4/P5/P7, second - quarterly - P2/P3, first-order route - half-yearly - accredited body. **Three columns of one table.** |
-| **招引转化** | Taskbook | The path: take part in re-levelling, propose a scenario, enter the test ground, pass the levelling, then operate - each step gated on a reading, not an opinion. **The taskbook forbids writing investment promotion as settled commitment**, so this is a channel, not a list of firms. |
-| **运营团队** | Taskbook | The transferability criterion asks who can carry the work further. The answer is the post specification: **who may decide what, and what may not open while a post is vacant** - so a team taking this over need not read the whole document to find its limits. |
+| **招引转化** | Taskbook | The path: take part in re-levelling, propose a scenario, enter the test ground, pass the levelling, then operate - each step gated on a reading, not an opinion. **The taskbook forbids writing investment promotion as settled commitment**, so this is a channel, not a firm list. |
+| **运营团队** | Taskbook | The transferability criterion asks who carries the work further. The answer is the post specification: **who may decide what, and what may not open while a post is vacant** - so a team taking this over need not read the whole document to find its limits. |
 | **活动品牌** | Taskbook | The taskbook asks for an event brand and in the same clause forbids slogans with no operating mechanism. **This package coins no brand name**: a brand with no repeatable act behind it is a slogan. The four acts carry it; naming them is the responsible body's call. |
 | **传播视觉** | Taskbook | The part this package can be answerable for is the part that recomputes: the wayfinding numbering syntax, the rule that **numbers are never translated** (`BM-0` is `BM-0` in every language), and the compression order when space runs short - captions first, English second, never the numbers. Logo, colour and typeface are licensed assets. |
 <!-- OPSVOCAB:END -->
@@ -685,7 +685,7 @@ keep the non-AI equivalent available.
 
 ### Three red lines are not this proposal's goodwill; they are existing legal obligations
 
-This package had been presenting the equivalent non-AI path, the stop-on-detection rule, and the numeric appeal deadline as its own design judgements. Reading the highest-scoring proposals in this call made clear that this weakens them: **all three are already obligations under current Chinese law and policy, and writing them as design preferences reduces their force.** The three instruments below were each read in full by this proposal's author on the official publisher's site; article numbers and substance are cited, full text is not reproduced.
+This package had been presenting the equivalent non-AI path, the stop-on-detection rule, and the numeric appeal deadline as its own design judgements. Reading the highest-scoring proposals in this call made clear that this weakens them: **all three are already obligations under current Chinese law and policy, and writing them as design preferences reduces their force.** Each instrument below was read in full on the official publisher's site; article numbers and substance are cited, full text is not.
 
 | This proposal's rule | Verified legal basis | What changes |
 |---|---|---|
@@ -1510,12 +1510,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-296 entries. By finder:
+297 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 27 | Run against the shipped package, not a draft |
-| The author | 194 | Found while working |
+| The author | 195 | Found while working |
 | This package's own gate | 20 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1553,6 +1553,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Read off, not computed | 1 |
 | A requirement nobody runs | 1 |
 | The scarcest surface, spent on someone else | 1 |
+| A self-count left behind | 1 |
 | Six classes for seven | 1 |
 | Paid in honesty | 1 |
 | A term of art misapplied | 1 |
@@ -1821,7 +1822,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1171 KB, 1,826 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1160 KB, 1,827 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
