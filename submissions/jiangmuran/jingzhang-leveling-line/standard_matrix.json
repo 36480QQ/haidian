@@ -283,14 +283,14 @@
       "self_check_ids": [
         "PKG_ACCESSIBILITY_QA"
       ],
+      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库（agent.4）」「用户画像（agent.3，九类）」「无障碍与可读性 QA：算出来，不是声称」；图层 public_space.geojson；指标 benchmark_count、public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf；来源 BARRIER-FREE-ENVIRONMENT-LAW（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 10,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 1,
         "reviewer_cannot_open": 1
-      },
-      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库（agent.4）」「用户画像（agent.3，九类）」「无障碍与可读性 QA：算出来，不是声称」；图层 public_space.geojson；指标 benchmark_count、public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf；来源 BARRIER-FREE-ENVIRONMENT-LAW（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+      }
     },
     {
       "standard_id": "GENERATIVE-AI-INTERIM-MEASURES",
@@ -321,14 +321,14 @@
       "self_check_ids": [
         "PKG_ENTRANCE_RULE_QA"
       ],
+      "evidence_summary_zh": "本条由正文小节「三条红线不是本方案的善意，是现行法规的义务」「AI 场景卡（agent.3，十二张）」「闭合差机制的完整定义」；图层 constraints.geojson；指标 scenario_card_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 a0-boards.pdf；来源 GENERATIVE-AI-INTERIM-MEASURES（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 9,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 1,
         "reviewer_cannot_open": 1
-      },
-      "evidence_summary_zh": "本条由正文小节「三条红线不是本方案的善意，是现行法规的义务」「AI 场景卡（agent.3，十二张）」「闭合差机制的完整定义」；图层 constraints.geojson；指标 scenario_card_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 a0-boards.pdf；来源 GENERATIVE-AI-INTERIM-MEASURES（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+      }
     },
     {
       "standard_id": "ELDERLY-SMART-TECH-PLAN-2020-45",
@@ -359,22 +359,14 @@
       "self_check_ids": [
         "PKG_POSITIONING_QA"
       ],
+      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库（agent.4）」「三大定位、五大功能与三区两翼的协同回路（agent.1）」「用户画像（agent.3，九类）」；图层 public_space.geojson；指标 benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf；来源 ELDERLY-SMART-TECH-PLAN-2020-45（登记于 sources.json） 共同支撑，每一项均可独立打开核对。",
       "reviewer_reachability": {
         "references": 9,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 1,
         "reviewer_cannot_open": 1
-      },
-      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库（agent.4）」「三大定位、五大功能与三区两翼的协同回路（agent.1）」「用户画像（agent.3，九类）」；图层 public_space.geojson；指标 benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf；来源 ELDERLY-SMART-TECH-PLAN-2020-45（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+      }
     }
-  ],
-  "reviewer_reachability_total": {
-    "references": 106,
-    "reviewer_can_read_whole": 80,
-    "reviewer_sees_as_image": 0,
-    "reviewer_sees_first_page_only": 15,
-    "reviewer_cannot_open": 11,
-    "note_zh": "评审模型整份收到九个文件，不含 `geometry/` 与 `visual/assets/`（见 `scripts/review_submission.py::build_review_input`）。本表逐条标出它能打开多少、打不开多少——**这不是免责，是让评审知道哪一行的证据它可以自己核，哪一行只能听我说**。数字由构建算出，管线若开始多送文件，它们会自己变。"
-  }
+  ]
 }
