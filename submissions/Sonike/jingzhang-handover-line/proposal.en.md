@@ -44,6 +44,8 @@ The site plan also marks the **four civic landmarks** — Handover Bell, Public 
 
 ![Overall concept of the Handover Line: three handover yards, four civic landmarks and their honour roles, provisional boundary](assets/figures/site-overview.en.png)
 
+> **How to read this figure.** In the map on the left, the red line is the Handover Line spine, the blue cross-lines are the east–west stitch links, and the dashed frame is the provisional boundary. The three colour blocks, north to south, are the Build, Verify and Serve handover yards; red–teal–yellow follows the BUILD→VERIFY→SHARE→SERVE order of responsibility transfer. The four diamonds 01–04 are the civic landmarks: Handover Clock, Public Handover Table, Century Logbook, Manual Override Pavilion. The four blocks on the right are the four steps of the protocol; the closing line is the test the whole proposal is held to.
+
 ### Compliance baseline: separate the statutory floor from what this proposal sets for itself
 
 Three red lines recur throughout this proposal — stoppable, contestable, and backed by a no-AI equivalent. **Only part of each has a statutory source; the rest is a public-service standard this proposal adopts voluntarily.** The table below separates the two line by line, because presenting a voluntarily adopted standard as a general legal duty is itself a form of misrepresentation. The scope and effect of each provision follow the official text; this table is not legal advice. The three documents compared in this section are registered item by item in `standard_matrix.json`, with the response and the applicability boundary for each [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
@@ -77,6 +79,8 @@ Capability does not only travel outward: complaints, maintenance records and shu
 The frame also carries a **land-use composition bar**: the seven classes are summed parcel by parcel from `area_sqm_declared` in `land_use.geojson`, totalling 11.413 km² in agreement with the site area, with 1401 continuous parkland at 19.8% — corroborating the 19.84% of [metric:green_ratio]. **Areas are not only tabulated in the metrics file; they are drawn on the figure they belong to.**
 
 ![Three-level scope, land-use partition and land-use composition: area and share for each of the seven classes, totalling the site area](assets/figures/land-use-structure.en.png)
+
+> **How to read this figure.** The stacked bar on the left gives each of the seven land-use classes its area and share; summed feature by feature they come to 11.413 km², matching the site area. The corridor is coloured by land-use code, the three dots are the three handover yards, and the two wings are labelled at top and bottom. The footer "11 TOPOLOGICAL FEATURES / 0 INTENTIONAL GAPS" means the eleven polygons jointly cover the provisional extent with no deliberate voids. On the right, 43.6 km² → 11.4 km² → 3 is a chain of narrowing scopes, not three parallel numbers.
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -292,6 +296,8 @@ The southern yard hands capability to daily civic service. The Dazhongsi station
 
 ![Three key areas as enlarged plans: land-use zoning, green corridor, renewal-type units, spine and stitch links, numbered scenario nodes, one shared scale, provisional extents](assets/figures/key-areas.en.png)
 
+> **How to read this figure.** All three cards share one scale, so differences in size between cards are real differences in area. Each map shows that key area's true outline together with its land-use zoning, continuous green corridor, renewal-type units and the numbered scenario nodes that fall inside it. Renewal units come in two classes: solid beige is retain-first adaptive reuse, outline-only is investigate before intervention — what is undecided is not drawn as if decided. The narrow strip at the right of each card is the along-line locator; the filled block marks where this area sits in the whole belt.
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 Eight personas anchor the system. Each is bound to a spatial carrier, a scenario and an aggregate measure; none becomes a commercial tracking profile, and no persona is used to allocate resources or rank an individual.
@@ -448,6 +454,8 @@ These are system and basis proposals; actual provision ratios, capacity and conn
 **One figure carries both the corridor locator and the handover section**: the corridor's true outline with the twelve takeover points on the left, the six-part section order and its adjacency rule on the right — **the rule is itself design content, so it has to appear on the same sheet as the corridor it governs**, not on a separate one.
 
 ![Active-mobility spine and blue-green ground: the corridor's true outline, the twelve takeover points, and the section order — handover counter, accessible walk, Takeover Kiosk Zero, retained track, machine-only lane, planting and rest — with its adjacency rule](assets/figures/mobility-bluegreen.en.png)
+
+> **How to read this figure.** On the left, the red line is the continuous walk-and-cycle spine, the eight blue lines are east–west stitch links, and the pale green is the blue-green comfort ground. The teal dots 01–12 are the twelve human-takeover points, numbered to match the list on the right one for one. A, B and C at top right are the three preconditions for takeover. The six bands of the SECTION at lower right express order and adjacency only, never any dimension; the black bar beneath is that adjacency rule itself — staffed counter, footway and stop-entry must be continuously reachable, and the machine lane may not be inserted between them.
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -656,6 +664,8 @@ A definition and a data precondition alone leave a reader unable to tell who wou
 **The rule check is drawn as a matrix: every cell is one check.** The top row of twelve is the baseline for the twelve handover ledgers; the seven rows below are defect injections for each of the seven protocol rules, across twelve scenarios — 12 + 84 = **96 cells**. **Each row now names what it stops** — R1 dual control, R2 human first, R3 open halts, R4 rollback first, R5 synthetic apart, R6 reasoned refusal, R7 appointed only — so a reader need not go back to the text to decode the numbering. The figure carries a colour key: teal is a baseline that passed, **red is "a defect was injected here and it was stopped"** — all 84 injections were intercepted, 0 missed, 0 schema errors. It is drawn rather than merely counted because the claim that the rules actually stop something can only be checked cell by cell [data:visual/assets/governance/rule-check-report.json].
 
 ![Recomputable metrics, measurement protocol, the rule-check matrix (12 baselines + 84 injections = 96 cells, all injections intercepted) and the five-step evidence chain](assets/figures/metrics-evidence.en.png)
+
+> **How to read this figure.** The six cards on top are known values recomputable from their formulas; unassigned indicators do not appear here. RULE CHECK is a 96-cell matrix: the first row of twelve is the baseline in electric teal; the seven rules × twelve scenarios below — 84 cells — are injected defects shown in coal to mean intercepted. Signal red is reserved for a leak, so **the absence of red is itself the finding that zero leaked**. The five steps beneath are the evidence chain, and the three segments of the black bar are the rules for baselines, missing values and the publication gate.
 
 ### Fourteen package self-check gates: not whether the design is right, but whether the package agrees with itself
 
