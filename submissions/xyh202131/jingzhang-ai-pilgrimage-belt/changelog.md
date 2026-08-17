@@ -1,5 +1,18 @@
 # 方案迭代记录 / Changelog
 
+## v38.0 - 2026-08-17
+
+**Reviewer-path compression and publication legibility / 评审路径压缩与出版可读性**
+
+- 离线 visual 将主导航固定为六项，把完整证据索引移出粘性导航；12 行公共信号表与后台证据库默认收起但保留原生无 JavaScript 操作，打印时完整展开。五场景浏览器复核覆盖中英文桌面、中文移动端、无 JavaScript 与减少动态：无溢出、无外域请求、无缺失 alt、无重复 ID，中文/英文桌面前台分别压缩到 9.854/10.428 个视口高度。
+- The offline visual fixes the primary navigation at six items and moves the full evidence index outside the sticky bar. The 12-row public-signal table and backstage library are initially collapsed but remain native and operable without JavaScript, while print reveals the complete table. A five-scenario browser review covers bilingual desktop, Chinese mobile, no JavaScript and reduced motion: no overflow, external request, missing alt or duplicate ID; the Chinese/English desktop front stage is reduced to 9.854/10.428 viewport heights.
+- 中英文 proposal 与离线报告明确区分 13 个 formal 章节和 8 个 extended evidence 单元，保留原有 21 个 H2、21 幅图、全部正文和逐章证据标记。未删除未知、G0、provisional、非 AI 路径、权利阻断或专业否决。
+- The bilingual proposals and offline reports explicitly distinguish 13 formal chapters from 8 extended evidence units while preserving all 21 H2 units, 21 figures, prose and per-chapter evidence markers. Unknowns, G0, provisional status, non-AI paths, rights blocks and professional vetoes remain intact.
+- 四份出版物在原路径重建，页数保持 A3 14+14、A0 8+8；A3 图面区扩大并收束证据侧栏，A0 主图区扩大并压缩判断带。两次同一固定构建逻辑的新进程逐文件字节一致；A3 最小矢量字号 9.2 pt，A0 为 12 pt，书签 14/14/8/8，无加密或控件。
+- All four publications are rebuilt in place with unchanged page counts (A3 14+14, A0 8+8). A3 gains a larger figure field and tighter evidence sidebar; A0 gains a larger figure field and shorter judgment band. Two fresh processes using the same frozen build logic are byte-identical file by file; minimum vector type is 9.2 pt on A3 and 12 pt on A0, with 14/14/8/8 outlines and no encryption or widgets.
+- 本轮不新增媒体、来源、事实、方案方向、场景、项目、重点区或治理合同；`sources.json`、geometry 九文件、`metrics.json`、封面、普通生活三联图和重点区图件保持字节不变。12/8/3/36、G0、NO-GO、provisional、现实结果 0、`not_fully_cleared` 与独立逐文件清权 0 不变。
+- This round adds no media, source, fact, design direction, scenario, project, key area or governance contract. `sources.json`, all nine geometry files, `metrics.json`, the cover, ordinary-life triptych and key-area figures keep their bytes. The 12/8/3/36 counts, G0, NO-GO, provisional status, zero real-world outcomes, `not_fully_cleared` and zero independent file-level audits remain unchanged.
+
 ## v37.0 - 2026-08-17
 
 **Browser QA matrix re-validation after the foreign-restore incident / 外部恢复事件后的浏览器 QA 矩阵复验**
