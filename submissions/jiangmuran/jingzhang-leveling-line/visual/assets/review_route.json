@@ -8,7 +8,7 @@
    "what_zh": "重算 metrics.json 中全部 metric_class 1 的指标",
    "what_en": "Recompute every metric_class 1 figure in metrics.json",
    "exit_code": 0,
-   "seconds": 0.4,
+   "seconds": 0.39,
    "first_line": "Independent recomputation of class-1 metrics"
   },
   {
@@ -40,7 +40,7 @@
    "what_zh": "S08 桌面推演，含拒绝分支",
    "what_en": "The S08 tabletop run, refusal branches included",
    "exit_code": 0,
-   "seconds": 0.27,
+   "seconds": 0.24,
    "first_line": "S08 closure-mechanism tabletop"
   }
  ],
@@ -65,17 +65,17 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 438902,
+   "bytes": 440967,
    "unit": "entries",
-   "count": 252
+   "count": 253
   },
   {
    "path": "visual/assets/gate_mutation.json",
    "what_zh": "闸门变异测试台",
    "what_en": "The gate mutation harness",
-   "bytes": 112663,
+   "bytes": 113740,
    "unit": "mutations",
-   "count": 94
+   "count": 95
   },
   {
    "path": "visual/assets/naming.json",
@@ -105,7 +105,7 @@
    "path": "changelog.md",
    "what_zh": "含本包自己查出并改正的错误",
    "what_en": "Including the errors found and corrected here",
-   "bytes": 58960,
+   "bytes": 58961,
    "unit": "lines",
    "count": 547
   },
@@ -120,10 +120,10 @@
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.73,
+  "seconds_to_run_every_verifier": 0.7,
   "files_to_read": 9,
-  "bytes_to_read": 1085275,
-  "units_to_read": 1753
+  "bytes_to_read": 1088418,
+  "units_to_read": 1755
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",

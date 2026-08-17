@@ -892,6 +892,18 @@
       "why_en": "**A risk nobody holds is prose however complete it reads.** The mutation proves the owning post must resolve against the register, and the build stops when it does not."
     },
     {
+      "id": "M95",
+      "gate": "matrix_refs_qa.py",
+      "target": "compliance_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一条要求点名的受控边界改成一个几何里没有的编号。**图层引用一字未动**——它仍然指着 constraints.geojson，只是「哪一个」指向了不存在的东西。",
+      "what_en": "Change a controlled boundary a requirement names to an id the geometry does not carry. **The layer reference is untouched** - it still points at constraints.geojson; only the which-one points at nothing.",
+      "why_zh": "**指向图层的引用永远解析得到，指向要素的引用才可能指错。** 这正是把粒度做细的代价与好处：本条变异要证明的是，细了以后错得出来、也拦得住。",
+      "why_en": "**A reference to a layer always resolves; only a reference to a feature can be wrong.** That is the cost and the point of the finer grain, and the mutation proves that being wrong is now possible and caught."
+    },
+    {
       "id": "M60",
       "gate": "review_rules_qa.py",
       "target": "review_rules_qa.py",
@@ -1152,7 +1164,7 @@
       "why_en": "**An area compared against another area's official figure produces a difference that means nothing.** The mutation proves that a mispaired per-area comparison stops the build rather than quietly reporting a larger number."
     }
   ],
-  "caught": 94,
+  "caught": 95,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
