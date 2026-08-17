@@ -616,7 +616,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (479); a non-AI equivalent path (363); an on-site safety officer (327); remote and physical e-stop (174); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 479. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (479); a non-AI equivalent path (364); an on-site safety officer (327); remote and physical e-stop (174); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 479. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1191,6 +1191,43 @@ Three rules run through the table. **Cost band, exit condition and resumption co
 
 **On the three columns restored to the table above.** *Cooperation mechanism* asks what agreement has to exist between parties before the project is more than an intention — for R4 that is a cross-jurisdiction joint observation agreement, which is this proposal's core mechanism and also its hardest precondition. *Land and title dependency* states, in one phrase, whether the project touches land whose ownership or management is unresolved: four of the eight need nothing beyond existing public space, and the two that need multiple parcels and road redlines are the two placed in the long phase for exactly that reason. *Approval path* names the consent that would actually be required, at the level of a filing or a permit, without asserting which authority issues it — this proposal has no standing to describe another body's procedure and says only what class of approval the work falls into. Together the three columns are what separates a project list from a wish list, which is the claim the paragraph above the table makes, and it should be able to survive the table being read.
 
+<!-- RESOURCEFRAME:BEGIN -->
+
+**This chapter gave a cost band per project — A, B or C — and said why: without engineering and
+tenure conditions, a three-significant-figure construction estimate is manufactured certainty.
+That reasoning holds for capital cost and this entry leaves it alone.**
+
+**It does not hold for running cost, and the running cost has always been computable here.**
+Sessions per year are converted from the cadence each point declares in `spatial.json`, hours come
+from a published per-order model, money from a stated rate band, and volunteer hours are counted
+and deliberately unpriced. **Until now this table appeared only on FIG.15, which is not one of the
+five figures the review pipeline sends** — so a reader of this chapter saw A/B/C and a pointer to a
+drawing they could not open, and reasonably concluded the proposal declines to talk about money.
+
+| Phase | Projects | Benchmarks added | Cumulative | Sessions/yr | Paid hours | Annual CNY |
+|---|---|---|---|---|---|---|
+| Near | R1, R2, R3, R4 | BM-0 | 1 | 1 | 16–25 | 2,484–7,922 |
+| Mid | R5, R6, R7 | BM-1, BM-2, BM-301, BM-302, BM-303 | 6 | 39 | 97–154 | 13,864–45,492 |
+| Far | R8 | BM-21, BM-22 | 8 | 47 | 139–220 | 19,444–63,922 |
+
+Three ways to read it:
+
+1. **A whole near phase runs at CNY 2,484–7,922 a year
+   across 1 sessions.** That is the real order of magnitude of getting
+   the first loop closed, and it needs no official data and no new construction.
+2. **The completed network runs at CNY 19,444–63,922 a
+   year across 47 sessions.** Whether a governance mechanism can actually
+   be sustained is decided by that annual figure; **a mechanism that cannot state it is sustained
+   by enthusiasm, and enthusiasm does not enter a budget.**
+3. **Volunteer hours are listed separately and not priced.** Pricing them would inflate the cost
+   with money nobody pays; leaving them out would pretend they are free. They are what this
+   mechanism asks of the community every year, and that has to be visible.
+
+Every phase reading ships in `visual/assets/resource_frame.json`, with the model imported from
+`build_operations` rather than restated, and `resource_frame_qa` recomputes it on every build.
+
+<!-- RESOURCEFRAME:END -->
+
 **Phasing is triggered, not dated.** Mid phase begins when all four near-term projects are complete and at least two cycles have closed within tolerance; long phase when the mid phase closes two consecutive cycles. No fixed years, because **date-driven phasing advances even when readings fail**, which is precisely what this mechanism exists to prevent.
 
 <!-- ROLESPEC:BEGIN -->
@@ -1356,7 +1393,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-260 entries. By finder:
+261 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
@@ -1365,7 +1402,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | This package's own gate | 18 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 30 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 13 | Seen elsewhere, absent here |
+| Reading a rival's package | 14 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1380,7 +1417,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Shape | Count |
 |---|---|
 | An easy measure | 46 |
-| Two copies drifted | 38 |
+| Two copies drifted | 39 |
 | Shipped unseen | 29 |
 | Uncheckable | 20 |
 | Outlived the package | 19 |
@@ -1563,11 +1600,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **157 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **158 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 134 |
+| `author-originated` | 135 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |
@@ -1618,7 +1655,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`; two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` the argument alone. Six files ship behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 68 of 71 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
+**The forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`; two renderings open directly: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index over the shipped data; `report/narrative.md` the argument alone. Six files ship behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 69 of 72 gates can fail), `claim_audit.json`, `agent_declarations.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to the origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you find out only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed elevation. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not what makes them a mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for identical work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function, the model ships as `year_model.json`, and a gate compares them over 10 arrangements. **Listing them is not housekeeping: a product the prose never names is one nobody has been told exists.**
 
 <!-- FIGINDEX:BEGIN -->
 
@@ -1692,7 +1729,7 @@ Every item can be completed independently:
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.7 s**; 9 files, 1087 KB, 1,767 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1091 KB, 1,769 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
