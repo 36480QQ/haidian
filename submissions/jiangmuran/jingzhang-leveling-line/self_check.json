@@ -159,7 +159,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 154/144 bare numbers reported but not blocked, and one designed check (83 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 155/145 bare numbers reported but not blocked, and one designed check (83 candidates) not shipped"
     },
     {
       "check_id": "PKG_CLAIM_STATE_QA",
@@ -207,7 +207,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "edition_render_qa.py — edition renders: 54 figure embed(s) across the two editions each point at their own edition's render, and every path ships — 34 sheets, each drawn twice. Scope: this checks which render a page embeds, not what is drawn on it; a sheet whose English text is wrong belongs to cjk_leak_qa and the translation table"
+      "message": "edition_render_qa.py — edition renders: 176 figure reference(s) across the 6 pages the reviewer is sent — two Markdown editions and both HTML deliverables in both languages — each point at their own edition's render, and every path resolves; 34 sheets, each drawn twice. Scope: this checks which render a page embeds, not what is drawn on it; a sheet whose English text is wrong belongs to cjk_leak_qa and the translation table"
     },
     {
       "check_id": "PKG_ENTRANCE_RULE_QA",
@@ -295,7 +295,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 130 mutations, 90 of 93 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 131 mutations, 90 of 93 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -303,7 +303,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 130 deliberate defects across 90 of 93 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 131 deliberate defects across 90 of 93 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_GEOMETRY_CITATION_QA",
@@ -431,7 +431,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 655 distinct names harvested from the package — 631 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 657 distinct names harvested from the package — 633 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -527,7 +527,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "register_split_qa.py — register split: 272 + 72 = 344 entries, both halves stating the same total of 344, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
+      "message": "register_split_qa.py — register split: 273 + 72 = 345 entries, both halves stating the same total of 345, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
     },
     {
       "check_id": "PKG_REGISTRY_ALIGNMENT_QA",
@@ -815,7 +815,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 344 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 24、rival-read 24、self 220；最常见形状：check-measured-the-convenient-thing 60、two-copies-of-one-thing-drifted 54、deliverable-not-inspected-before-shipping 31、claim-that-cannot-be-checked-by-construction 28。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 344 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 345 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 24、rival-read 24、self 221；最常见形状：check-measured-the-convenient-thing 61、two-copies-of-one-thing-drifted 54、deliverable-not-inspected-before-shipping 31、claim-that-cannot-be-checked-by-construction 28。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 345 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -823,7 +823,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：130 处人为缺陷，覆盖 90 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 130 deliberate defects across 90 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：131 处人为缺陷，覆盖 90 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 131 deliberate defects across 90 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -1030,7 +1030,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30432178,
+      "total_bytes": 30436214,
       "maintainer_bypass": false
     },
     "stderr": ""
