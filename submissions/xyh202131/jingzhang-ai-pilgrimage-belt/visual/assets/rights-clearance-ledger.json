@@ -3,7 +3,7 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-18",
-  "as_of_semantics": "date of last real content edit, verified from git history during the Round 26 as_of consistency audit; it is not a validity or freshness guarantee",
+  "as_of_semantics": "date of last real content edit; this round adds 4 generated media (ASSET-150..153) plus supporting rights ledger entries, with all new entries generated for the package and remaining pending independent review",
   "scope": "Round 20 bilingual review handoff package index and Round 40 spatial-distinction redraw/republication",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
@@ -30,7 +30,7 @@
     "pending_round19_final_bytes": "Round 19 provenance structure is recorded, but the stored digest is deliberately retained as a prior snapshot until concurrent review stabilizes the exact file bytes; it is not a final identity claim."
   },
   "file_coverage": {
-    "expected_manifest_entries": 149,
+    "expected_manifest_entries": 153,
     "expected_non_manifest_entries": 148,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
@@ -238,7 +238,11 @@
           "assets/figures/spatial-atlas.svg",
           "assets/figures/spatial-atlas.en.svg",
           "assets/figures/spatial-atlas.png",
-          "assets/figures/spatial-atlas.en.png"
+          "assets/figures/spatial-atlas.en.png",
+          "assets/media/4-state-motion.mp4",
+          "assets/media/4-state-narration.mp3",
+          "assets/media/4-state-narration.vtt",
+          "assets/media/4-state-narration-script.md"
         ],
         "limits": [
           "No standalone source font file is shipped. The four Round 19 PDFs contain visible NotoSansSC-Medium/Bold subsets and retain an unused, unembedded Helvetica resource. The accepted synthetic Round 19 cover contains rasterized DengXian glyph pixels. HTML requests system font stacks, and concrete fonts resolved while rasterizing the thirty-four checked-in SVG files were not recorded. Embedding, referencing, or rasterization does not establish license compliance.",
@@ -8267,6 +8271,189 @@
         "RIGHTS-OPEN-02",
         "RIGHTS-OPEN-04",
         "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-150",
+      "path": "assets/media/4-state-motion.mp4",
+      "role": "multimedia_video",
+      "language": "neutral",
+      "asset_class": "generated_video_visual",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "platform video generation API (AIGC labelled, ContentProducer: MiniMax AI, exact model version not asserted by the package)",
+        "digest_status": "self_reference_not_applicable",
+        "reason": "The video is a generated binary; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md#four-state-concept",
+          "visual/assets/ordinary-life-media-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-VIDEOGEN-PLATFORM",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "generated_visual_with_text_prompt",
+        "evidence_ref": "../../assets/media/4-state-narration-script.md",
+        "limitation": "Generated for this package; model, output terms, rasterized text, and exact file bytes remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../assets/media/4-state-narration-script.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-151",
+      "path": "assets/media/4-state-narration.mp3",
+      "role": "multimedia_audio",
+      "language": "zh",
+      "asset_class": "generated_audio_narration",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "platform TTS API (AIGC labelled, ContentProducer: MiniMax AI, voice male-qn-qingse and speed 0.9 specified by the caller; exact model version not asserted)",
+        "digest_status": "self_reference_not_applicable",
+        "reason": "The audio is a generated binary; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "assets/media/4-state-narration-script.md",
+          "proposal.md#four-state-concept"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-TTS-PLATFORM",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "generated_audio_from_text",
+        "evidence_ref": "../../assets/media/4-state-narration-script.md",
+        "limitation": "Generated for this package; voice, output terms, and exact file bytes remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../assets/media/4-state-narration-script.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-152",
+      "path": "assets/media/4-state-narration.vtt",
+      "role": "multimedia_subtitle_vtt",
+      "language": "zh",
+      "asset_class": "generated_subtitle_track",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "Hand-authored text with timecodes aligned to ASSET-151 audio length",
+        "digest_status": "self_reference_not_applicable",
+        "reason": "Plain-text subtitle file; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "assets/media/4-state-narration-script.md",
+          "assets/media/4-state-narration.mp3"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../assets/media/4-state-narration-script.md",
+        "limitation": "Editable plain text; can be regenerated to match a re-recorded audio length."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "../../agent.json",
+        "../../assets/media/4-state-narration-script.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-153",
+      "path": "assets/media/4-state-narration-script.md",
+      "role": "multimedia_script",
+      "language": "zh",
+      "asset_class": "narrative_or_change_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "Hand-authored markdown script + generation method + rights disclosure",
+        "digest_status": "self_reference_not_applicable",
+        "reason": "Plain-text documentation file; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md#four-state-concept"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../assets/media/4-state-narration-script.md",
+        "limitation": "Editable documentation; must be updated in lockstep with audio re-recording or video reshoot."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "../../agent.json",
+        "../../proposal.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
       ],
       "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
     }

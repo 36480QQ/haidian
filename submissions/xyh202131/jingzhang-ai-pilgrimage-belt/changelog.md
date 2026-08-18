@@ -1,5 +1,28 @@
 # 方案迭代记录 / Changelog
 
+## v45.0 - 2026-08-18
+
+**Multimedia 4-state motion and narration (video + audio + srt + script) / 多模态 4 态运动与旁白**
+
+- 串行门：第 44 轮 PR #3253 已合并（head `8811aa404` 进入 canonical `main`）；同包开放 PR 为 0，源工作树洁净。本轮只在"普通 / 验证 / 故障 / 恢复"四态叙事已有 12 类机器证据 + 8 项可视化 + 5 个外发登记的基础上，补 1 段概念视频、1 段音频旁白、srt 字幕和文字稿，并把它们登记进 rights ledger，不新增场景、项目、重点区、治理合同、成熟度或页面。
+- Serial gate: Round 44 PR #3253 is merged (head `8811aa404` entered canonical `main`); the package had zero open PRs and the source worktree was clean. This round adds one concept video, one audio narration, srt subtitles and a script, registering all four in the rights ledger on top of the existing 12 evidence classes, 8 figures and 5 outreach registers; no new scene, project, key area, governance contract, maturity or page is introduced.
+
+| 已具备 / Already present | 仍薄弱 / RED | 必须冻结 / Locked | 本轮实施 / Implemented |
+|---|---|---|---|
+| 4 态叙事在 12 类合同/登记/机器证据中已存在；visual/index.html 已有 4 态 grid 但只有静态文字；assets/media 已有 2 张 webp + 1 个 md；rights ledger 149 条；audit_records 0 | visual 缺视频/音频入口；音频无字幕/文字稿；权利台账缺新模型/工具/输入披露 | 双轨总纲、三原型、JZ-AIOS、G0—G3、四轴、三载体、九份 geometry、`metrics.json`、12/8/3/36、G0/NO-GO/provisional/rights、媒体与 A3 14+14/A0 8+8 页 | `assets/media/4-state-motion.mp4`（0.74 MB）、`4-state-narration.mp3`（0.66 MB）、`4-state-narration.vtt`（WebVTT 字幕，654 B）、`4-state-narration-script.md`；visual/index.html 嵌入 `<video controls preload="none" playsinline>` + `<audio controls preload="none">` + `<track kind="captions" src=...vtt>` + 文字稿链接，**全部不自动播放**；rights ledger 加 ASSET-150..153 共 4 条记录（含模型/工具/输入/限制全披露），`as_of` 更新到 2026-08-18 |
+
+- 修复前 RED：4 态概念在 `proposal.md` 第 6 章、第 8 章、第 12 章和 `visual/index.html` 的 grid 中都以纯文字描述；访问者必须阅读三遍中英正文+grid 才能拼出"普通-验证-故障-恢复"的 12 秒节奏；缺独立可视化通道；缺配套音频无障碍入口。修复后，单条 30–48 秒概念视频 + 40 秒旁白 + srt 字幕 + 文字稿为访问者提供"看+听+读"三通道可选入口；中英文 visual 完全等价。
+- Reproducible RED: the four-state concept appeared only as text in proposal.md sections 6/8/12 and in the visual grid. Visitors had to read three bilingual passages plus the grid to assemble the 12-second pacing; no independent visual channel existed and no accessibility audio was present. After repair a 30–48 second concept video, a 40-second narration, srt captions and a script together provide a see+hear+read triple channel; bilingual visual pages stay strictly equivalent.
+
+- 视频/音频生成平台 API（AIGC 标签，ContentProducer `MiniMax AI`，确切模型版本包内未声明）和不可证明事项全部登记到 rights ledger；visual/index.html 的水印"`<code>G0 概念 · 临时几何 · 非现场证据 · 非批准方案</code>`"出现在视频嵌入的 `<figcaption>`，不进入视频帧本身；srt 字幕 + 文字稿是"音频必须配"的可访问性兜底；任一变更必须同步另外两份。
+- Generation parameters, model names and unprovable items are recorded in the rights ledger. The bilingual visual `<figcaption>` carries the watermark "`<code>G0 概念 · 临时几何 · 非现场证据 · 非批准方案</code>`" but the watermark is not baked into the video frames themselves. The srt captions and script are the accessibility fallback required by the AGENTS.md "no autoplay" rule; any change must lockstep-update the other two files.
+
+- 本轮把 rights ledger `expected_manifest_entries` 149 → 153；4 条新记录全部 `not_fully_cleared` / `generated_derivative_pending_embedded_asset_audit`；`audit_records` 仍为 0；`public_or_professional_reuse_blocked` 保持 true。
+- This round lifts the rights-ledger `expected_manifest_entries` from 149 to 153. All four new records are `not_fully_cleared` / `generated_derivative_pending_embedded_asset_audit`; `audit_records` remains 0; `public_or_professional_reuse_blocked` stays true.
+
+- 不再视 48 秒为现场故障恢复时长；它是普通—验证—故障—恢复的展示节奏（每态 12 秒）。视频和音频均不证明任何现场状态、批准、运行或公众反馈；D/H/P/C、G0、provisional、零独立清权、现实结果 0、`not_fully_cleared`、A3 14+14 / A0 8+8 页不变。
+- The 48 seconds is still presentation pacing, not real recovery duration. The video and audio do not prove any field state, approval, operation or public feedback; D/H/P/C, G0, provisional status, zero independent clearance, zero real-world outcomes, `not_fully_cleared` and A3 14+14 / A0 8+8 page counts remain unchanged.
+
 ## v44.0 - 2026-08-18
 
 **Professional handoff, veto and NO-GO trace / 专业交接、否决与 NO-GO 追踪**

@@ -251,6 +251,26 @@
       "asset_mapping": "self_check.json and manifest.json",
       "recipe_state": "commands_recorded_remote_state_time_varying",
       "rights_effect": "validation_does_not_establish_clearance"
+    },
+    {
+      "output_scope": "Generated concept video (4-state motion)",
+      "tool_ids": [
+        "TOOL-VIDEOGEN-PLATFORM",
+        "TOOL-PYTHON"
+      ],
+      "asset_mapping": "visual/assets/rights-clearance-ledger.json#ASSET-150",
+      "recipe_state": "generated_visual_with_text_prompt; final bytes pinned by Git blob SHA-256 at PR time",
+      "rights_effect": "not_fully_cleared"
+    },
+    {
+      "output_scope": "Generated narration audio (4-state TTS)",
+      "tool_ids": [
+        "TOOL-TTS-PLATFORM",
+        "TOOL-PYTHON"
+      ],
+      "asset_mapping": "visual/assets/rights-clearance-ledger.json#ASSET-151",
+      "recipe_state": "generated_audio_from_text; voice male-qn-qingse at speed 0.9; final bytes pinned by Git blob SHA-256 at PR time",
+      "rights_effect": "not_fully_cleared"
     }
   ],
   "self_declared_limits": [
@@ -275,7 +295,8 @@
     "Round 38 improves only package reading and publication layout. Browser, structural, visual and deterministic-build checks are not field evidence, assistive-technology certification, professional acceptance, approval, real recovery, maturity advancement or rights clearance; G0, provisional boundaries, zero real-world outcomes, non-AI paths, professional vetoes and not_fully_cleared remain unchanged.",
     "Round 39 establishes an editorial cold-read baseline only. Eight primary answers, unique front-stage anchors and existing PDF page locators improve answer location but are not public feedback, expert opinion, jury results, accessibility certification or approval. This round adds no media, claim, fact, page, scene, project, key area, contract or maturity; geometry, metrics, PDF bytes, G0, provisional status, zero real-world outcomes, non-AI paths, professional vetoes and not_fully_cleared remain unchanged.",
     "Round 43 makes an editorial spatial reading path explicit only. The three-switchyard atlas is a G0, provisional, not-to-scale concept diagram; it is not a real site, built state, approved plan, accessibility result, staffing commitment, recovery duration, public feedback, professional acceptance, authorization, G1 or rights clearance.",
-    "Round 44 closes machine and editorial traceability among future replacement packets, unsubmitted handoff packs, suggested discipline types and fail-closed records only. Its final browser repair makes the already-promised no-JavaScript five-step fallback actually visible; this is not accessibility certification or comprehension measurement. Suggested types are not confirmed people, institutions, partners or accepted duties; the repair creates no real material, professional opinion, approval, authorisation, restart, G1, field outcome or rights clearance."
+    "Round 44 closes machine and editorial traceability among future replacement packets, unsubmitted handoff packs, suggested discipline types and fail-closed records only. Its final browser repair makes the already-promised no-JavaScript five-step fallback actually visible; this is not accessibility certification or comprehension measurement. Suggested types are not confirmed people, institutions, partners or accepted duties; the repair creates no real material, professional opinion, approval, authorisation, restart, G1, field outcome or rights clearance.",
+    "Round 45 adds a generated concept video and a TTS narration of the existing four-state narrative only. Video is 30-48 seconds of an abstract schematic motion diagram in muted earth tones; audio is a ~40 second TTS narration; both must not autoplay, both are G0 concept and not site/construction/approval evidence. Platform API (AIGC labelled, exact model version not asserted by the package), prompt and unprovable items are recorded in rights-clearance-ledger.json#ASSET-150..153; 48 seconds remains presentation pacing, not real recovery duration; audit_records remains 0; not_fully_cleared and public_or_professional_reuse_blocked remain true."
   ],
   "round_43_provenance": {
     "scope": "Spatial-atlas readability repair only: one existing ordinary task appears as three non-interchangeable G0 spatial relations without new scenes, projects, key areas, contracts, maturity or factual claims.",
@@ -295,5 +316,41 @@
     "two_fresh_processes_byte_identical": true,
     "new_media": false,
     "reality_boundary": "H01-H07 remain not_submitted and P01-P07 remain suggested types with zero acceptance; any material gap remains NO-GO, and no field evidence, approval, authorization, restart, G1, rights clearance or real-world outcome is asserted."
+  },
+  "round_45_provenance": {
+    "scope": "Multimedia 4-state concept only: add one generated video, one generated audio narration, srt captions and a written script for the existing 普通/验证/故障/恢复 narrative. No new scene, project, key area, governance contract, maturity or page is introduced.",
+    "video_generation": {
+      "tool_id": "TOOL-VIDEOGEN-PLATFORM",
+      "input": "Abstract conceptual motion diagram in muted earth tones; four sequential states (普通 / 验证 / 故障 / 恢复) with smooth fade transitions, each 12 seconds; persistent watermark 'G0 概念 · 临时几何 · 非现场证据 · 非批准方案' in the corner of every state; no real architecture, no real people, no real place, no photography.",
+      "output_file": "assets/media/4-state-motion.mp4",
+      "duration_seconds_range": "30-48",
+      "resolution": "1080P",
+      "aspect_ratio": "16:9",
+      "asset_record": "visual/assets/rights-clearance-ledger.json#ASSET-150"
+    },
+    "audio_generation": {
+      "tool_id": "TOOL-TTS-PLATFORM",
+      "input": "Plain Chinese narration script (~100 chars, ~40 sec) covering the four-state narrative; voice male-qn-qingse, speed 0.9.",
+      "output_file": "assets/media/4-state-narration.mp3",
+      "language": "zh",
+      "asset_record": "visual/assets/rights-clearance-ledger.json#ASSET-151"
+    },
+    "subtitle_and_script": {
+      "files": [
+        "assets/media/4-state-narration.srt",
+        "assets/media/4-state-narration-script.md"
+      ],
+      "lockstep_rule": "Any change to audio, video or script must update the other two. Srt timecodes are aligned to ASSET-151 audio length.",
+      "asset_records": [
+        "visual/assets/rights-clearance-ledger.json#ASSET-152",
+        "visual/assets/rights-clearance-ledger.json#ASSET-153"
+      ]
+    },
+    "visual_html_update": {
+      "file": "visual/index.html",
+      "embed_strategy": "<video controls preload=\"none\" playsinline> + <audio controls preload=\"none\">; no autoplay; explicit fallback text + download link for browsers that do not support HTML5 video/audio.",
+      "lockstep_rule": "Any change to ASSET-150..153 must update the bilingual visual page."
+    },
+    "reality_boundary": "48 seconds remains presentation pacing, not real recovery duration. Video and audio do not prove any field state, approval, operation, public feedback, accessibility result, professional acceptance, authorization, G1 or rights clearance. Generated media are concept illustrations, not site or construction evidence. audit_records remains 0; not_fully_cleared and public_or_professional_reuse_blocked remain true."
   }
 }
