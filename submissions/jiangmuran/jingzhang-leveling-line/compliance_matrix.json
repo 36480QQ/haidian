@@ -1968,5 +1968,23 @@
         }
       }
     ]
+  },
+  "license_bound": {
+    "read_from": "schema/proposal.schema.json @ upstream/main",
+    "declared": "COMMUNITY-DISPLAY-ONLY",
+    "published_values": [
+      "COMMUNITY-DISPLAY-ONLY",
+      "CC-BY-4.0",
+      "CC-BY-SA-4.0"
+    ],
+    "occurrences_outside_submissions": [
+      "agent.html",
+      "schema/proposal.schema.json",
+      "scripts/scaffold_ai_submission.py",
+      "scripts/validate_submission.py",
+      "templates/proposal.md"
+    ],
+    "statement_zh": "本包声明的 `license` 是 `COMMUNITY-DISPLAY-ONLY`，它是组织方 `schema/proposal.schema.json` 允许的三个值之一，另两个是 `CC-BY-4.0` 与 `CC-BY-SA-4.0`——**两者都允许商业使用**，因此不存在一个既非商业、又能表明「这不是政府决定」的标准选项。**仓库里没有任何一处给出这个标识的条款文本**：它在 `submissions/` 之外只出现在 5 个文件里（`agent.html`、`schema/proposal.schema.json`、`scripts/scaffold_ai_submission.py`、`scripts/validate_submission.py`、`templates/proposal.md`），全部是枚举值、模板占位或校验白名单。所以此处只给**上界**，不编造条款：**本包授予的每一项使用，CC BY-NC 4.0 都同样允许**，因此按 CC BY-NC 4.0 行事的第三方不会越出本包的许可。这不主张本包的授权与 CC BY-NC 4.0 一样宽，只主张不比它更宽。",
+    "statement_en": "This package declares license COMMUNITY-DISPLAY-ONLY, one of three values allowed by the organisers' schema/proposal.schema.json. The other two, CC-BY-4.0 and CC-BY-SA-4.0, both permit commercial use, so there is no standard option that is at once non-commercial and able to say this is not a government decision. No file in the repository states the terms of this identifier: outside submissions/ it occurs in 5 files (agent.html, schema/proposal.schema.json, scripts/scaffold_ai_submission.py, scripts/validate_submission.py, templates/proposal.md), always as an enum value, a template placeholder or a validation whitelist entry. Rather than invent terms, only an upper bound is given: every use this package grants is also granted by CC BY-NC 4.0, so a third party acting within CC BY-NC 4.0 cannot exceed this package's licence. This claims no lower bound - it does not say the grant is as wide as CC BY-NC 4.0, only that it is no wider."
   }
 }

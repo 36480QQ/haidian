@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M130",
+      "gate": "license_bound_qa.py",
+      "target": "compliance_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把「**只主张不比它更宽**」的免责句删掉，改成「本包的授权与 CC BY-NC 4.0 一样宽」——**上界变成了双边主张**。",
+      "what_en": "Drop the no-lower-bound disclaimer and assert the grant is as wide as CC BY-NC 4.0 - **an upper bound turned into a two-sided claim**.",
+      "why_zh": "`COMMUNITY-DISPLAY-ONLY` 的条款文本**在整个仓库里都不存在**：它只作为枚举值、模板占位与校验白名单出现在五个文件里。既然没有条款可比，**能诚实说出口的只有上界**——「本包授予的每一项使用，CC BY-NC 4.0 都同样允许」。说它「一样宽」，就是在替组织方发明条款。",
+      "why_en": "No text for COMMUNITY-DISPLAY-ONLY exists anywhere in the repository: it appears in five files only as an enum value, a template placeholder and a validation whitelist entry. With no terms to compare against, **only the upper bound can be said honestly** - every use this package grants is also granted by CC BY-NC 4.0. Saying the two are equally wide invents terms on the organisers' behalf."
+    },
+    {
       "id": "M129",
       "gate": "sources_qa.py",
       "target": "sources.json",
@@ -1555,7 +1567,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 127,
+  "caught": 128,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1594,6 +1606,7 @@
     "label_collision_qa.py",
     "land_use_enum_qa.py",
     "landuse_count_qa.py",
+    "license_bound_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
     "measurement_protocol_qa.py",
@@ -1687,6 +1700,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 90 道闸门，其中 87 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 90 gates, 87 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 91 道闸门，其中 88 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 91 gates, 88 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
