@@ -279,7 +279,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No sheet may print a heading and its English gloss as the same words twice.",
-      "message": "figure_gloss_qa.py — figure gloss: 12 heading(s) are set as a Chinese line with an English gloss under it, and none of them collapses to the same words twice in the English render — read from the figure modules, where the pair is written, rather than by comparing the two builds position by position, which the two languages' different line wrapping makes unsound. This does not judge whether a gloss is a good translation, and a label that repeats on purpose — a road named twice along its length — is not this check"
+      "message": "figure_gloss_qa.py — figure gloss: 12 heading(s) are set as a Chinese line with an English gloss under it, and none of them collapses to the same words twice in the English render — read from the figure modules, where the pair is written, rather than by comparing the two builds position by position, which the two languages' different line wrapping makes unsound. The same rule is held over the 18 text calls in build_drawings.py, which composes the pages the reviewer receives as page 1 of each PDF: every title pair there that would collapse is guarded in the source above it. This does not judge whether a gloss is a good translation, and a label that repeats on purpose — a road named twice along its length, or a footer appearing once per sheet on a board that composes two — is not this check"
     },
     {
       "check_id": "PKG_FIGURE_TITLE_QA",
@@ -342,7 +342,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Fail when the prose describing the mutation harness has gone stale.",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 143 mutations, 97 of 100 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 144 mutations, 97 of 100 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -351,7 +351,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Prove the gates can fail, by making them fail on purpose.",
-      "message": "gate_mutation_qa.py — gate mutation: 143 deliberate defects across 97 of 100 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 144 deliberate defects across 97 of 100 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_GEOMETRY_CITATION_QA",
@@ -405,7 +405,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The intake caps, enforced where a mutation can reach them.",
-      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 117 bytes to spare. The package totals 29.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 116 bytes to spare. The package totals 29.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_INTERNED_RENDER_QA",
@@ -513,7 +513,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Every identifier in the package obeys the published naming system.",
-      "message": "naming_qa.py — naming: 669 distinct names harvested from the package — 645 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 671 distinct names harvested from the package — 647 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -630,7 +630,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Two files, one register: the halves must agree, and no prose may state the split.",
-      "message": "register_split_qa.py — register split: 273 + 88 = 361 entries, both halves stating the same total of 361, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
+      "message": "register_split_qa.py — register split: 274 + 88 = 362 entries, both halves stating the same total of 362, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
     },
     {
       "check_id": "PKG_REGISTRY_ALIGNMENT_QA",
@@ -971,7 +971,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 361 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 26、rival-read 26、self 233；最常见形状：check-measured-the-convenient-thing 62、two-copies-of-one-thing-drifted 58、deliverable-not-inspected-before-shipping 33、claim-that-cannot-be-checked-by-construction 30。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 361 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 362 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 26、rival-read 26、self 234；最常见形状：check-measured-the-convenient-thing 62、two-copies-of-one-thing-drifted 58、deliverable-not-inspected-before-shipping 33、claim-that-cannot-be-checked-by-construction 30。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 362 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -979,7 +979,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：143 处人为缺陷，覆盖 97 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 143 deliberate defects across 97 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：144 处人为缺陷，覆盖 97 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 144 deliberate defects across 97 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -1186,7 +1186,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30529649,
+      "total_bytes": 30535135,
       "maintainer_bypass": false
     },
     "stderr": ""

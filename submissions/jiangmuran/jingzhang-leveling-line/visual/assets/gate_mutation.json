@@ -1336,6 +1336,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M146",
+      "gate": "figure_gloss_qa.py",
+      "target": "build_drawings.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "删掉 A3 封面上那个 `if`。封面在中文里是名字加它的罗马化拼写；**英文里译出来的标题本身就是那串拼写**，于是两行都印 `THE LEVELING LINE`——而 A3 文册第一页正是评审收到的四张图像之一。",
+      "what_en": "Delete the guard on the A3 cover. In Chinese the cover is the name followed by its romanisation; **in English the translated title is that romanisation**, so both lines print THE LEVELING LINE - on page 1 of the A3 booklet, one of the four images the reviewer receives.",
+      "why_zh": "这处此前是**手工修好的**：打开英文 PDF 看见了，就加了一个 `if`，然后没有任何东西守着它。E360 与 E361 分别在图纸与网页上修了同一个缺陷并各配了闸门，**唯独这一处——最早修好的那一处——是裸的**。本轮把四个面一次扫完，扫出来的不是新的重复，而是**已经修好的那处没有闸门**：删掉一行就会悄悄退回去。",
+      "why_en": "This one had been **fixed by hand**: the English PDF was opened, the duplicate was seen, an `if` was added, and nothing was left holding it. E360 and E361 fixed the same defect on the drawing sheets and on the HTML pages and each left a gate behind; **this site - the one fixed first - was bare**. Sweeping all four surfaces in one pass this round turned up no new duplication and instead turned up that the already-fixed place had no gate: delete one line and it regresses in silence."
+    },
+    {
       "id": "M145",
       "gate": "html_gloss_qa.py",
       "target": "build_visual_en.py",
@@ -1752,7 +1765,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 143,
+  "caught": 144,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
