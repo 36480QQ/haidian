@@ -1526,11 +1526,11 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-325 entries. By finder:
+326 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 31 | Run against the shipped package, not a draft |
+| Independent audit | 32 | Run against the shipped package, not a draft |
 | The author | 212 | Found while working |
 | This package's own gate | 24 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
@@ -1549,8 +1549,8 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Uncheckable | 25 |
 | Outlived the package | 22 |
 | Nothing fails it | 17 |
+| Outlived its line | 14 |
 | Recorded where found | 14 |
-| Outlived its line | 13 |
 | A reference did not resolve | 12 |
 | Not itself | 12 |
 | A source unnameable | 10 |
@@ -1838,7 +1838,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files, 1167 KB, 1,807 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.7 s**; 9 files, 1167 KB, 1,807 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
