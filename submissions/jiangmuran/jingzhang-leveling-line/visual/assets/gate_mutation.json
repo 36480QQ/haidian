@@ -28,6 +28,18 @@
       "why_en": "This is exactly the state two depth items were in before E353: the limit had a condition on the way in and none on the way out, so **the reference went and the declaration stayed**. The file then carried a sentence about a document the item cites, for an item that does not cite it, and design_depth_matrix.json is read whole by the reviewer."
     },
     {
+      "id": "M142",
+      "gate": "figure_title_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版正文里 FIG.06 的图题改回「the field census」，而图纸自己画的是「CLOSURE EVIDENCE」。**这是 E358 之前的真实状态**，且 FIG.06 是评审直接收到的五张图之一。",
+      "what_en": "Put FIG.06's caption in the English running text back to 'the field census' while the sheet itself draws 'CLOSURE EVIDENCE'. **This is the real state before E358**, and FIG.06 is one of the five sheets the reviewer is sent.",
+      "why_zh": "一张图的名字写在四处：图纸自己的页眉、两个可视页面的 `figcaption`、两版的图纸索引，以及正文里嵌入处的图题。本包早就有「图题必须是图纸给自己起的名字」这条规则，**却只在前两处执行**：正文嵌入处那一份从来没有被读过，而它正是评审在论证同一段里读到的那一份。更糟的是索引里那五行——**恰好是评审真正收到的那五张**——因为行首多了一个标记符号而被解析器整体跳过，**分母又是同一个过滤器算出来的**，所以缺口在读数里根本不可能显形。",
+      "why_en": "A sheet's name is written in four places: the header the sheet draws, the figcaption on the two visual pages, the drawing index in each edition, and the caption on the embed in the running text. This package already had the rule that a caption must be the name the drawing gives itself, and **enforced it on the first two only** - the embed copy, the one a reviewer reads in the same paragraph as the argument, had never been read by anything. Worse, the five index rows carrying a leading marker - **exactly the five sheets the reviewer receives** - were dropped by the row parser, and **the denominator was computed by the same filter**, so the gap could never appear in the reading."
+    },
+    {
       "id": "M141",
       "gate": "sheet_placement_qa.py",
       "target": "proposal.en.md",
@@ -1701,7 +1713,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 139,
+  "caught": 140,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
