@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "dataset_id": "jingzhang-two-answers",
   "title": {
-    "zh": "京张双答：把回执画进城市",
-    "en": "Jing-Zhang Two Answers: Draw the Receipt into the City"
+    "zh": "京张双答：大钟寺城市采纳样板",
+    "en": "Jing-Zhang Two Answers: Dazhongsi Civic Adoption Sample"
   },
   "status_note": {
-    "zh": "运营绩效均待现场基线；known 仅用于可复算的文档覆盖数。",
-    "en": "Operational performance awaits field baselines; known values are limited to reproducible document coverage counts."
+    "zh": "当前为 E1 概念设计，S7 未现场运行，回执结论保持待定。",
+    "en": "Current status is E1 concept design; S7 is not field-run and the receipt decision remains pending."
   },
   "admission_rule": [
     "baseline_independently_complete",
@@ -328,7 +328,36 @@
         "zh": "由复制场景运营者在 E2 前登记",
         "en": "Registered by the replication-scene operator before E2"
       },
-      "receipt_state": "CATALOGUE_READY_E2_PENDING"
+      "receipt_state": "CATALOGUE_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "BASELINE-T1"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "FALLBACK-T1"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "发现无权数据、无法解释的外联或复现环境越界时立即停止。",
+          "en": "Stop T1 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "删除临时副本，保留经人工确认的清单、日志哈希和普通登记台。",
+        "en": "Remove and isolate the optional T1 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-002",
@@ -607,7 +636,36 @@
         "zh": "每日开场检查、每次试验前联锁检查、每周资产盘点、每月公开复盘",
         "en": "Daily opening check, interlock check before every trial, weekly asset inventory, monthly public review"
       },
-      "receipt_state": "E1_READY_E2_PENDING"
+      "receipt_state": "E1_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "ROUTE-Z-BYPASS"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "ROUTE-Z-EMERGENCY"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "任何人进入安全缓冲区、连续两次近失误或急停失效即停止。",
+          "en": "Stop T2 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "机器人撤库、临时围栏拆除；保留步行路径、座椅与事件公告位。",
+        "en": "Remove and isolate the optional T2 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-003",
@@ -884,7 +942,36 @@
         "zh": "由复制场景运营者在 E2 前登记",
         "en": "Registered by the replication-scene operator before E2"
       },
-      "receipt_state": "CATALOGUE_READY_E2_PENDING"
+      "receipt_state": "CATALOGUE_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "BASELINE-T3"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "FALLBACK-T3"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "超过许可噪声/热环境、异常外传或降级失败时停止。",
+          "en": "Stop T3 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "机柜整机移除，恢复预留空腔与普通电气检修口。",
+        "en": "Remove and isolate the optional T3 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-004",
@@ -1164,7 +1251,36 @@
         "zh": "由复制场景运营者在 E2 前登记",
         "en": "Registered by the replication-scene operator before E2"
       },
-      "receipt_state": "CATALOGUE_READY_E2_PENDING"
+      "receipt_state": "CATALOGUE_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "BASELINE-S1"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "FALLBACK-S1"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "高风险事项被自动决定、连续误分诊或人工窗口不可用时停止 AI。",
+          "en": "Stop S1 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "撤除终端，继续使用人工窗口、纸质目录和预约电话。",
+        "en": "Remove and isolate the optional S1 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-005",
@@ -1446,7 +1562,36 @@
         "zh": "每日开场检查、每次试验前联锁检查、每周资产盘点、每月公开复盘",
         "en": "Daily opening check, interlock check before every trial, weekly asset inventory, monthly public review"
       },
-      "receipt_state": "E1_READY_E2_PENDING"
+      "receipt_state": "E1_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "ROUTE-A-PASSAGES"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "ROUTE-A-EMERGENCY"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "出现身份误用、翻译改变权利义务或错误无法及时纠正时停止。",
+          "en": "Stop S2 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "关闭终端，保留人工接待、纸质地图和静态双语导视。",
+        "en": "Remove and isolate the optional S2 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-006",
@@ -1726,7 +1871,36 @@
         "zh": "由复制场景运营者在 E2 前登记",
         "en": "Registered by the replication-scene operator before E2"
       },
-      "receipt_state": "CATALOGUE_READY_E2_PENDING"
+      "receipt_state": "CATALOGUE_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "BASELINE-S3"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "FALLBACK-S3"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "抓取无许可内容、生成不可追溯建议或压过社区选择时停止。",
+          "en": "Stop S3 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "删除临时候选库，保留纸质问题卡、工作坊桌和公开来源清单。",
+        "en": "Remove and isolate the optional S3 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-007",
@@ -1993,7 +2167,36 @@
         "zh": "由复制场景运营者在 E2 前登记",
         "en": "Registered by the replication-scene operator before E2"
       },
-      "receipt_state": "CATALOGUE_READY_E2_PENDING"
+      "receipt_state": "CATALOGUE_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "BASELINE-S4"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "FALLBACK-S4"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "出现无来源断言、错误未纠正或影响遗产安全时停止。",
+          "en": "Stop S4 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "撤除终端，保留触摸模型、标牌、纸质路线与人工讲解点。",
+        "en": "Remove and isolate the optional S4 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-008",
@@ -2261,7 +2464,36 @@
         "zh": "由复制场景运营者在 E2 前登记",
         "en": "Registered by the replication-scene operator before E2"
       },
-      "receipt_state": "CATALOGUE_READY_E2_PENDING"
+      "receipt_state": "CATALOGUE_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "BASELINE-S5"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "FALLBACK-S5"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "导航引向障碍、无障碍路径中断或退出后仍留存轨迹时停止。",
+          "en": "Stop S5 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "关闭动态服务；静态导视、触觉节点和人工问路保持不变。",
+        "en": "Remove and isolate the optional S5 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-009",
@@ -2529,7 +2761,36 @@
         "zh": "由复制场景运营者在 E2 前登记",
         "en": "Registered by the replication-scene operator before E2"
       },
-      "receipt_state": "CATALOGUE_READY_E2_PENDING"
+      "receipt_state": "CATALOGUE_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "BASELINE-S6"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "FALLBACK-S6"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "预警来源中断、现场值异常或提示与人工判断冲突时转人工并停止。",
+          "en": "Stop S6 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "拆除传感插件，保留树荫、雨棚、座椅、饮水和公告牌。",
+        "en": "Remove and isolate the optional S6 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-010",
@@ -2814,7 +3075,86 @@
         "zh": "每日开场检查、每次试验前联锁检查、每周资产盘点、每月公开复盘",
         "en": "Daily opening check, interlock check before every trial, weekly asset inventory, monthly public review"
       },
-      "receipt_state": "E1_READY_E2_PENDING"
+      "receipt_state": "E1_FLAGSHIP_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [
+        "V6-D-CURB-N",
+        "V6-D-CURB-S",
+        "V6-D-CROSS-N",
+        "V6-D-CROSS-S",
+        "V6-D-TRANSIT"
+      ],
+      "baseline_route_geometry": [
+        "V6-D-BASE-NS",
+        "V6-D-BASE-EW",
+        "V6-D-CROSS-N",
+        "V6-D-CROSS-S"
+      ],
+      "trial_boundary_geometry": [
+        "V6-D-TRIAL",
+        "V6-D-BUFFER"
+      ],
+      "human_post_geometry": [
+        "V6-D-STAFF-BASE",
+        "V6-D-STAFF-TRIAL",
+        "V6-D-ESTOP-01",
+        "V6-D-ESTOP-02"
+      ],
+      "emergency_route_geometry": [
+        "V6-D-EMERGENCY",
+        "V6-D-FIRE",
+        "V6-D-EGRESS"
+      ],
+      "state_views": {
+        "OPEN": [
+          "V6-D-BASE-NS",
+          "V6-D-BASE-EW",
+          "V6-D-CROSS-N",
+          "V6-D-CROSS-S",
+          "V6-D-TRANSIT",
+          "V6-D-FORECOURT",
+          "V6-D-PLATFORM",
+          "V6-D-SERVICE"
+        ],
+        "TRIAL": [
+          "V6-D-TRIAL",
+          "V6-D-BUFFER",
+          "V6-D-CONTROL",
+          "V6-D-STAFF-TRIAL",
+          "V6-D-ESTOP-01",
+          "V6-D-ESTOP-02"
+        ],
+        "PAUSE": [
+          "V6-D-EMERGENCY",
+          "V6-D-EGRESS",
+          "V6-D-STAFF-BASE",
+          "V6-D-APPEAL"
+        ],
+        "RETIRE": [
+          "V6-D-REMOVAL",
+          "V6-D-RESTORE",
+          "V6-D-EVIDENCE",
+          "V6-D-EVIDENCE-WALL"
+        ]
+      },
+      "measurement_denominator": {
+        "zh": "每种模式下连续记录 100 次符合准入条件的接驳通行；同时保留全部严重事件记录",
+        "en": "Record 100 eligible interchange passages in each mode; retain every severe-event record"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后连续 7 个运行日，分层记录高峰/平峰、昼/夜、天气和辅助需求",
+        "en": "Seven consecutive operating days after the E2 prototype, stratified by peak/off-peak, day/night, weather and assistance needs"
+      },
+      "zero_tolerance_events": [
+        "collision_or_person_in_safety_buffer",
+        "emergency_stop_failure",
+        "baseline_route_blocked_or_accessibility_regressed",
+        "human_takeover_timeout"
+      ],
+      "recovery_protocol": {
+        "zh": "立即停机并关闭试验边界；人工完成当前任务；开放两条普通路线；记录事件；设备经撤场线移出；委员会复核后方可重新申请 TRIAL。",
+        "en": "Stop and close the trial boundary; staff complete the current task; reopen both baseline routes; log the event; remove equipment via the removal route; only the committee may authorise a new TRIAL application."
+      }
     },
     {
       "id": "SCN-011",
@@ -3096,7 +3436,36 @@
         "zh": "由复制场景运营者在 E2 前登记",
         "en": "Registered by the replication-scene operator before E2"
       },
-      "receipt_state": "CATALOGUE_READY_E2_PENDING"
+      "receipt_state": "CATALOGUE_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "BASELINE-S8"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "FALLBACK-S8"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "人工不可用、错误影响办事权利或未授权采集身份信息时停止。",
+          "en": "Stop S8 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "终端断电封存，普通服务台、纸质目录和电话继续运行。",
+        "en": "Remove and isolate the optional S8 equipment; retain the complete staffed, static and accessible baseline."
+      }
     },
     {
       "id": "SCN-012",
@@ -3379,7 +3748,36 @@
         "zh": "由复制场景运营者在 E2 前登记",
         "en": "Registered by the replication-scene operator before E2"
       },
-      "receipt_state": "CATALOGUE_READY_E2_PENDING"
+      "receipt_state": "CATALOGUE_READY_E2_PENDING",
+      "dimension_basis": "prototype_design_assumption_pending_survey",
+      "interface_geometry_refs": [],
+      "baseline_route_geometry": [
+        "BASELINE-S9"
+      ],
+      "trial_boundary_geometry": [],
+      "human_post_geometry": [],
+      "emergency_route_geometry": [
+        "FALLBACK-S9"
+      ],
+      "state_views": {},
+      "measurement_denominator": {
+        "zh": "E2 前由场景运营者登记同题分母",
+        "en": "Operator registers the same-task denominator before E2"
+      },
+      "baseline_window": {
+        "zh": "E2 原型后建立",
+        "en": "Established after the E2 prototype"
+      },
+      "zero_tolerance_events": [
+        {
+          "zh": "计数漂移、容量接近上限、出口受阻或任何安全事件时停止入场/AI。",
+          "en": "Stop S9 when safety, rights, data minimisation, human takeover or reliable degradation fails; the human lead has final authority."
+        }
+      ],
+      "recovery_protocol": {
+        "zh": "拆除计数插件，保留普通活动电源、容量牌和疏散设施。",
+        "en": "Remove and isolate the optional S9 equipment; retain the complete staffed, static and accessible baseline."
+      }
     }
   ],
   "subtitle": {
@@ -3387,7 +3785,7 @@
     "en": "The baseline stands first; AI earns civic adoption only through a public same-task, same-user, same-space test."
   },
   "field_status": "not_field_run",
-  "publication_version": "V5",
+  "publication_version": "V6",
   "evidence_ladder": [
     {
       "id": "E0",

@@ -21,6 +21,8 @@ This is a concept and reference scheme. It is not a statutory plan, government a
 
 ![Jing-Zhang Civic Loop: one spine and three nodes](assets/figures/site-overview.en.png)
 
+All five core figures use one coordinate system to combine package geometry with OpenStreetMap road, rail, water, park and station context. OSM helps a reviewer recognise urban fabric only; it does not define boundaries, parcels, road redlines, engineering or approvals. Provisional extents remain faint and dashed, while retrieval time, extent, licence, and query/response hashes are recorded in the source register. [source:OSM-CONTEXT-20260818]
+
 ## 1. Evidence base, limits and scope
 
 Facts, inferences, design recommendations and items awaiting professional confirmation are kept separate. Registered official facts enter `sources.json` and `metrics.json`; design judgements remain in the narrative and matrices; missing statutory boundaries, ownership, utilities, heritage GIS and delivery responsibility remain in `assumptions.json`. Provisional geometry supports concept comparison and package checks only. [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]
@@ -122,17 +124,17 @@ The mobility figure reads the green and public-space layers together so continui
 
 ### 5.1 Zhongzhiyuan: test before scaling
 
-Zhongzhiyuan is a controlled sandbox for trustworthy testing and edge compute: bookable test rooms, low-disturbance explanation space, maintenance and human help, and shared validation for university and start-up teams. Every test needs authority, time limits, a data list, stop conditions and human review. No compute supply, investment, tenant or procurement commitment is implied. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]
+Zhongzhiyuan is a controlled sandbox for trustworthy testing and edge compute. Staffed benchmarks, isolated test rooms, a low-disturbance explanation gallery, maintenance space and human help form an outside-to-inside permission gradient. Visitors who never enter a test zone can still understand the purpose through paper notes, staffed explanation and offline exhibits. AI operates only in authorised units isolated from production. Purpose, data, device, energy/latency baseline, responsible person and recovery drill must be fixed before entry; a permission breach, inexplicable output or failed recovery stops the system, disconnects the interface and triggers human review. No compute supply, investment, tenant or procurement commitment is implied. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]
 
 ### 5.2 Beijing AI Origin Community: participation in ordinary life
 
-The Origin Community is a civic living room for open-source release, resident feedback and intergenerational collaboration. Since a talent-service station already covers 17 high-frequency items with digital and human support, the proposal extends rather than duplicates it: no-account terminals, paper guidance, quiet waiting, complex-case referral, workshops and reversible trials. People may decline AI or request human explanation. [source:AI-ORIGIN-TALENT-SERVICE-2026] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
+The Origin Community is a civic living room for open-source release, resident feedback and intergenerational collaboration. Since a talent-service station already covers 17 high-frequency items with digital and human support, the proposal extends rather than duplicates it: paper wayfinding, no-account access, quiet waiting, a staffed desk, complex-case referral, workshops and reversible trials. Paper and human routes must complete the task independently before an explainable AI guide is compared with them. If any group is blocked, the alternative fails, collection exceeds its notice or an appeal cannot be handled, AI triage stops and the staffed route resumes. People may decline AI, and no behavioural trail supports commercial recommendation. [source:AI-ORIGIN-TALENT-SERVICE-2026] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
 
 Its provisional polygon is used only to locate this concept for comparison and must be replaced before any site-specific implementation judgement. [data:geometry/key_areas.geojson#PROV-KEY-002]
 
 ### 5.3 Dazhongsi: industry display as a public interface
 
-Dazhongsi is an interface for industry service, explainable data governance and international exchange. Auditable case galleries, an enterprise-service desk, a talent meeting place and transit-linked public space create an open ground floor. Every company case, brand, product, dataset and partnership requires rights clearance; none is presented as a confirmed tenant or investment outcome. [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]
+Dazhongsi is a civic interface for industry service, explainable data governance and international exchange. A continuous station-to-ground-floor walk, staffed rights desk, auditable case gallery, enterprise-service desk and talent meeting place form the open edge. Without AI, signs, people and paper rights notes still support a complete visit. AI uses only rights-cleared synthetic data to demonstrate permission, withdrawal and audit. Every company case, brand, product, dataset and partnership is cleared item by item; if withdrawal fails, provenance is unclear or the audit chain breaks, the exhibit is removed and human explanation takes over. Nothing is presented as a confirmed tenant or investment outcome. [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]
 
 ## AI innovation ecosystem, talent profiles and AI+ scenarios
 
@@ -159,9 +161,13 @@ Open-source developers need reproducible collaboration; start-ups need low-cost 
 
 ### 6.3 Three industry tests
 
-- **T1 civic-service accessibility:** compare AI guidance, paper signs and human explanation using anonymous aggregates; pause if any group cannot complete the task.
-- **T2 edge model and low-carbon operation:** compare local operation, delay, energy and recovery as a proof of concept only.
-- **T3 data authorisation and industry display:** use cleared synthetic data to demonstrate permission, withdrawal and audit; never imply compliance certification.
+| Test and location | Non-AI baseline | AI increment and minimum data | Entry gate | Stop, takeover and exit | Evidence produced |
+| --- | --- | --- | --- | --- | --- |
+| **T1 civic-service accessibility / AI Origin Community** | Paper signs, staffed desk and no-account access complete the service | Explainable guidance and triage; de-identified task aggregates only, no individual trail | Accessibility cold-read plus privacy, appeal and human-referral checks | Stop if any group is blocked, the fallback fails or collection exceeds notice; staff take over, sessions are deleted and aggregate lessons published | Completion, comprehension barriers and repair list; not a service-performance promise |
+| **T2 edge model and low-carbon operation / Zhongzhiyuan** | Staffed benchmark, offline explanation and ordinary information work independently | Isolated comparison of local inference, delay, energy and recovery; no production data | Rights holder, professional and test owner sign purpose, boundary, baseline and recovery drill | Disconnect on permission breach, predeclared energy/latency ceiling breach or failed recovery; staff record and seal logs | Reproducible record, failure modes and continue/stop advice; not deployment permission or certification |
+| **T3 data authority and industry display / Dazhongsi** | Staffed rights check, paper note and in-person explanation support the visit | Item-cleared synthetic data demonstrates permission, withdrawal and audit | Provenance, licence, brand, purpose, retention and withdrawal are signed item by item | Remove the exhibit if withdrawal fails, provenance is unclear, audit breaks or viewers mistake data for real records; explain and delete manually | Rights register, withdrawal record and audit gaps; not compliance certification or tenant outcome |
+
+The shared grammar is baseline first, bounded entry, human watch, stop on failure and annual retain/revise/retire. The three tests keep different baselines, data, spatial carriers and stopping reasons. A result only determines whether another review cycle is worthwhile; it never triggers procurement, deployment, expansion or construction automatically. [metric:industry_validation_scenarios] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]
 
 ## 7. AI public space, pilgrimage landmarks and culture
 
@@ -192,9 +198,20 @@ The metrics system turns the spatial narrative into a recalculable, explainable 
 
 ## 9. Metrics, recalculation and compliance
 
-Within the provisional geometry, the submitted area recalculates to about 11,412,825 m²; green-space ratio is about 12.34%; public-space ratio is about 7.33%; and there are three key areas. These values describe only package geometry and are not statutory planning indicators.
+Within the provisional geometry, the submitted area recalculates to about 11,412,825 m²; green-space ratio is about 12.34%; public-space ratio is about 7.33%; and there are three key areas [metric:key_area_count]. These values describe only package geometry and are not statutory planning indicators.
 
-Six official context metrics are recorded separately: Haidian population, national key laboratories and registered large models; Phase I park length and area; and high-frequency talent-service items at Origin Community. They explain the need for mixed public service, real testing and connection to existing services. They do not size land, buildings, users or performance. [metric:haidian_national_key_labs_2025] [metric:jingzhang_park_phase1_area_sqm] [metric:ai_origin_high_frequency_talent_services_2026] [assumption:A-CONTEXT-007]
+Projected in EPSG:4548, the conceptual partition contains 2,674,562 m² of 0802 research land [metric:land_use_0802_area_sqm], 2,589,339 m² of 1401 park green space [metric:land_use_1401_area_sqm], 3,366,138 m² of 09 commercial and service land [metric:land_use_09_area_sqm], and 2,782,793 m² of 0702 community-service support [metric:land_use_0702_area_sqm]. These zones only complete the provisional package partition. Industry support is a programme mix within code 09; it is no longer mislabeled 05 (wetland), and none of the areas implies approved land use.
+
+| Additional recalculation | Result and limit |
+| --- | --- |
+| Concept building footprints | 310,807 m² [metric:building_footprint_area_sqm], about 2.72% of the provisional extent [metric:building_density]; neither existing nor statutory building coverage. |
+| Blue-green and public space | 1,408,601 m² in the green design layer [metric:green_space_area_sqm] and 836,346 m² in the public-space layer [metric:public_space_area_sqm]; both recalculate with official geometry. |
+| Reference phasing | 4,587,014 m² in reference work packages [metric:phasing_area_sqm]; sequence only, not construction scale or investment. |
+| Three key areas | Zhongzhiyuan 1,929,202 m² [metric:key_area_zhongzhiyuan_area_sqm]; AI Origin 1,043,237 m² [metric:key_area_ai_origin_area_sqm]; Dazhongsi 720,454 m² [metric:key_area_dazhongsi_area_sqm]. All come from provisional polygons and do not replace announced approximate areas or official redlines. |
+
+The road layer is a conceptual centreline without official redlines or sections, so road-area ratio remains unknown [metric:road_area_ratio]. Total floor area also remains unknown without an existing survey and approved conditions [metric:total_floor_area_sqm]. Each unknown is an explicit trigger for the next evidence update.
+
+Six official context metrics are recorded separately: Haidian population, national key laboratories and registered large models [metric:haidian_registered_large_models_2025]; Phase I park length and area; and high-frequency talent-service items at Origin Community. They explain the need for mixed public service, real testing and connection to existing services. They do not size land, buildings, users or performance. [metric:haidian_national_key_labs_2025] [metric:jingzhang_park_phase1_area_sqm] [metric:ai_origin_high_frequency_talent_services_2026]
 
 `metrics.json` records status, value, unit, formula, source files, confidence and assumptions. The compliance, standard and design-depth matrices connect announcement requirements to report sections, layers, metrics, drawings and review checks. Replacing official boundaries requires coordinated updates to geometry, metrics, figures, PDFs, HTML, matrices and manifest hashes. [depth:metrics_recalculation]
 

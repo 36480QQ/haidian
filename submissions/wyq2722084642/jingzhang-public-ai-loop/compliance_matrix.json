@@ -877,7 +877,8 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "key_area_zhongzhiyuan_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -931,6 +932,7 @@
         "green_ratio",
         "public_space_ratio",
         "key_area_count",
+        "key_area_ai_origin_area_sqm",
         "ai_origin_high_frequency_talent_services_2026"
       ],
       "drawings": [
@@ -987,7 +989,9 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "key_area_dazhongsi_area_sqm",
+        "land_use_09_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1167,6 +1171,8 @@
         "green_ratio",
         "public_space_ratio",
         "key_area_count",
+        "ai_scenario_cards",
+        "industry_validation_scenarios",
         "haidian_resident_population_2025",
         "haidian_national_key_labs_2025",
         "haidian_registered_large_models_2025"

@@ -192,6 +192,126 @@
       "assumptions": [
         "公共空间面积由提交几何计算，公共空间率 = 公共空间面积 / 站点计算总面积；临时边界，待复算"
       ]
+    },
+    "reference_case_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "cases",
+      "source_files": [
+        "case_studies.json"
+      ],
+      "formula": "count_public_reference_cases",
+      "confidence": "high",
+      "assumptions": [
+        "公开资料汇编的标杆参考案例数，非本项目参与方"
+      ]
+    },
+    "ecosystem_actor_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "actors",
+      "source_files": [
+        "ecosystem_map.json"
+      ],
+      "formula": "count_ecosystem_actor_types",
+      "confidence": "high",
+      "assumptions": [
+        "角色类型节点，非具体企业名单"
+      ]
+    },
+    "ecosystem_relation_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "relations",
+      "source_files": [
+        "ecosystem_map.json"
+      ],
+      "formula": "count_ecosystem_edges",
+      "confidence": "high",
+      "assumptions": [
+        "生态协同关系数"
+      ]
+    },
+    "regional_coordination_link_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "links",
+      "source_files": [
+        "regional_coordination.json"
+      ],
+      "formula": "count_regional_coordination_relations",
+      "confidence": "high",
+      "assumptions": [
+        "基于真实北京科创格局的协同关系，非法定区域规划"
+      ]
+    },
+    "industry_space_mapping_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "mappings",
+      "source_files": [
+        "industry_space_mapping.json",
+        "brief/site-package/design_brief.json"
+      ],
+      "formula": "count_industry_space_mappings",
+      "confidence": "high",
+      "assumptions": [
+        "面积为官方公告值，产业-空间落位为概念建议"
+      ]
+    },
+    "annual_event_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "events",
+      "source_files": [
+        "event_operation_system.json"
+      ],
+      "formula": "count_annual_events",
+      "confidence": "high",
+      "assumptions": [
+        "概念建议的年度活动体系，非已确定事项"
+      ]
+    },
+    "test_validation_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "scenarios",
+      "source_files": [
+        "test_validation_scenarios.json",
+        "proposal.md"
+      ],
+      "formula": "count_test_validation_scenarios",
+      "confidence": "high",
+      "assumptions": [
+        "满足 agent.3 要求 ≥3 个 AI 产业测试验证场景"
+      ]
+    },
+    "public_component_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "components",
+      "source_files": [
+        "component_library.json"
+      ],
+      "formula": "count_public_space_components",
+      "confidence": "high",
+      "assumptions": [
+        "概念模块，工程以专业深化为准"
+      ]
+    },
+    "accessibility_group_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "groups",
+      "source_files": [
+        "accessibility_inclusion.json",
+        "metrics.json"
+      ],
+      "formula": "count_accessibility_groups",
+      "confidence": "high",
+      "assumptions": [
+        "参照 GB 50763 与公共空间指标设定"
+      ]
     }
   }
 }

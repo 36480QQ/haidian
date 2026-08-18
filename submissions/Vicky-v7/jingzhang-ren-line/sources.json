@@ -84,6 +84,14 @@
    "source_type": "agent_inferred_from_public_data",
    "usage": "Shenzhen Nanshan district park public materials; vertical industry-chain ecosystems. Retrieved 2026-08. Design reference only.",
    "limitations": "Background design reference; not formal scoring evidence; details pending verification."
+  },
+  {
+   "id": "OSM-BASEMAP",
+   "url": "https://www.openstreetmap.org/copyright",
+   "source_type": "osm",
+   "usage": "Existing-condition context extract (major roads, railways, subway lines and stations, water, parks) fetched via Overpass API on 2026-08-17, bbox 39.930-40.035N / 116.300-116.385E, simplified and clipped; stored as EXISTING_* layers in geometry/constraints.geojson and drawn as the figure base map.",
+   "license": "ODbL 1.0 — © OpenStreetMap contributors",
+   "limitations": "Community-maintained data, not a survey or statutory basemap; positions approximate; not usable for redlines, ownership or engineering decisions."
   }
  ]
 }

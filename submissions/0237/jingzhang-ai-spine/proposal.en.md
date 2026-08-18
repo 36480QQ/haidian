@@ -52,6 +52,25 @@ The overall concept proposed here is the "Jing-Zhang AI Spine Symbiosis Belt": w
 
 ## Coordinating-Study Scope: Industry and Future-City Research
 
+
+<!-- EVIDENCE-INJECTED:regional_coordination -->
+
+### Regional Innovation Coordination (conceptual)
+
+> Coordination drawn from the real Beijing science-city layout; not a substitute for statutory territorial or regional planning.
+
+**Core node**：Zhongguancun Science City (where the belt sits)
+
+| Node | Relation | Mechanism |
+|---|---|---|
+| Beiwei Community | high-quality talent living & youth-innovation support | talent-housing-commute link |
+| Future Science City (Changping) | frontier basic research spillover | joint lab & pilot uptake |
+| Huairou Science City | large facilities & intelligent compute supply | compute scheduling & data trust |
+| Beijing ETDZ (Yizhuang) | AI manufacturing & industry conversion | R&D-pilot-mass production loop |
+| Jing-Jin-Ji coordination | Zhangjiakou renewables/compute & regional market | green-compute & scenario spillover |
+
+<!-- /EVIDENCE-INJECTED:regional_coordination -->
+
 The core task of the coordinating-study scope is to build a world-class AI innovation ecosystem. The proposal should map Haidian's universities and research institutes, leading enterprises, computing/algorithm/data factors, incubation platforms, listed companies, unicorns, and tech-service resources, and propose a spatial-collaboration framework for the AI innovation chain, industry chain, talent chain, and city-service chain. Naming and logo design should serve the overall identity of "Centennial Jing-Zhang Cultural Belt, Urban AI Living-Experience Belt, AI Fusion Innovation Belt"; they must not stop at slogans but explain their relationship to the industry ecosystem, public space, and cultural resources. The agent open-call taskbook also requires responses to the "five major functions" and "three zones, two wings" coordination, forming a naming system, visual identity, overall spatial-structure diagram, scenario opening, and operation mechanism that can be deepened further; this section must mark these requirements as coming from the agent open call, not from statutory planning control, using [source:AGENT-TASKBOOK] and [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 The coordinating study does not add pseudo-precise redlines; through the urban character, public space, and building-layout coordination required by [standard:MOHURD-URBAN-DESIGN-MEASURES], it connects back to [data:geometry/land_use.geojson#LU-001], [data:geometry/public_space.geojson#PUBLIC-001], and [depth:overall_spatial_structure], explaining that industry strategy must finally land on a visible, verifiable spatial structure.
@@ -83,6 +102,96 @@ The three key areas must appear in `geometry/key_areas.geojson`. If the reposito
 | Dazhongsi AI Industry Cluster | Urban-type intelligent economy and international-exchange block | Around Dazhongsi-station integration, four-quadrant pedestrian connectivity, commercial services, and key-enterprise public-environment renewal | Agent and intelligent-terminal showcase, content consumption, data factors, and international roadshow | [data:geometry/key_areas.geojson#PROV-KEY-003], [metric:key_area_count] |
 
 ## AI Innovation Ecosystem, Talent Personas, and AI+ Scenarios
+
+
+<!-- EVIDENCE-INJECTED:test_validation_scenarios -->
+
+### AI Industry Test & Validation Scenarios (>=3, conceptual)
+
+> Test/validation scenarios only, not approved operations; mandatory human-review gate.
+
+| ID | Scenario | Objective | Method | Pass criteria | Human gate |
+|---|---|---|---|---|---|
+| TV-01 | Edge Compute Stress Test | 验证慢行导览/巡检在端侧低功耗设备上的时延与稳定性 | 在众智园部署边缘节点，注入并发请求，记录 P95 时延与掉线率 | P95 时延<800ms 且掉线率<2% | 异常由人工复核并决定是否回退模型 |
+| TV-02 | Multimodal Guide Accuracy & Hallucination Test | 验证文化导览的事实准确性，防止历史事实扭曲 | 基于京张铁路史实题库做问答评测，人工抽检事实一致性 | 事实一致率≥95% 且零歪曲历史 | 疑似幻觉由人工复核并锁定知识边界 |
+| TV-03 | Data-Minimization Compliance Test | 验证不采集行为轨迹、不将居民画像用于商业推荐 | 审计数据流与权限，模拟越权访问尝试 | 零越权、零行为轨迹留存、零商业推荐调用 | 合规官签字确认后方可上线 |
+
+<!-- /EVIDENCE-INJECTED:test_validation_scenarios -->
+
+
+<!-- EVIDENCE-INJECTED:industry_space_mapping -->
+
+### AI Industry–Space Mapping (conceptual)
+
+> Areas are official announcement values. Industry-space placement is conceptual and subject to statutory planning and engineering conditions; FAR, height, density, and green ratio are currently missing and not assumed.
+
+| Sector / Space | Anchor | Area (10k㎡) | Role |
+|---|---|---|---|
+| Full-stack autonomous AI (foundation models/chips/frameworks) | 众智园（AI 加速区） | 192.1 | 研发策源与中试 |
+| AI origin community & open source | AI 原点社区 | 104.3 | 人才集聚与开发者社区 |
+| AI-native consumption & business | 大钟寺 AI 产业簇群 | 72.0 | 场景体验与商业化 |
+| Zhongguancun tech-service wing | 中关村科技服务翼 | — | 要素保障与服务支撑 |
+| Xiaoyuehe scenario-enablement wing | 小月河场景赋能翼 | — | 场景开放与验证 |
+
+<!-- /EVIDENCE-INJECTED:industry_space_mapping -->
+
+
+<!-- EVIDENCE-INJECTED:ecosystem_map -->
+
+### Jing-Zhang AI Innovation Ecosystem Map (conceptual)
+
+> Ecosystem structure derived from the taskbook agent system and real Haidian innovation actor types. Actors are role types, not named entities, to avoid fabricating company lists.
+
+**Ecosystem nodes**
+
+| ID | Type | Label | Examples |
+|---|---|---|---|
+| N1 | research | Research | 高校与院所（基础模型、机器人、芯片） |
+| N2 | industry | AI Industry | 大模型/机器人/智能芯片/AI+行业应用 |
+| N3 | government | Governance | 海淀/北京 规划、数据、合规与活动统筹 |
+| N4 | capital | Capital | 创投、政府引导基金、场景采购 |
+| N5 | compute_data | Compute & Data | 智算中心、开放数据、数据受托 |
+| N6 | community | Dev & Community | 开发者、居民、高校师生、访客 |
+| N7 | international | International | 海外开源、路演与国际评测 |
+| N8 | landmark | Landmarks | AI 时光驿站/原点纪念碑/智能原生聚落 |
+
+**Coordination edges**
+
+| From | To | Relation |
+|---|---|---|
+| Research | AI Industry | tech transfer |
+| Governance | Compute & Data | open data & compliance |
+| Compute & Data | AI Industry | compute/data support |
+| Capital | AI Industry | capital enablement |
+| AI Industry | Dev & Community | scenarios & jobs |
+| Dev & Community | Landmarks | experience & co-creation |
+| International | AI Industry | global link |
+| Governance | Landmarks | public experience ops |
+| AI Industry | Governance | conversion feedback |
+
+The AI Spine physically and digitally carries the ecosystem across the three cores and two wings.
+
+<!-- /EVIDENCE-INJECTED:ecosystem_map -->
+
+
+<!-- EVIDENCE-INJECTED:case_studies -->
+
+### Global AI Innovation Ecosystem Benchmark Cases (Public Reference Compilation)
+
+> This table compiles publicly disclosed benchmark cases for methodological reference and design benchmarking only. It implies no partnership, investment, or government commitment; none of the cases are participants of this project. Citations follow each city/project's public disclosures.
+
+| # | Case | Location | Focus | Lesson for Jing-Zhang |
+|---|---|---|---|---|
+| CS-01 | Quayside, Toronto (Sidewalk Labs) | 加拿大·多伦多 | 滨水智能街区、数据信托与城市平台 | 本带应设置数据最小化与人工复核的硬边界，并以开源贡献墙承载公众可审计的城市数据治理叙事。 |
+| CS-02 | Masdar City | 阿联酋·阿布扎比 | 零碳规划城区、可再生能源与紧凑形态 | 本带蓝绿慢行复合环可借鉴其「低碳—科创」耦合，但需以真实控规与市政条件为前提（当前为概念建议）。 |
+| CS-03 | Songdo IBD | 韩国·仁川 | u-City 城市级 ICT 骨干与传感器网络 | 本带应以场景—空间—运营映射为先，避免空降基础设施而缺运营主体。 |
+| CS-04 | Kalasatama, Helsinki | 芬兰·赫尔辛基 | 开放数据平台与市民共创 | 本带 AI 场景开放运营机制可借鉴「市民共创 + 开放数据」双轮。 |
+| CS-05 | Amsterdam Smart City | 荷兰·阿姆斯特丹 | 自下而上试验与 AI 伦理登记 | 本带可设「场景伦理登记 + 开发者社区治理」机制，提升可审计与信任。 |
+| CS-06 | Virtual Singapore | 新加坡 | 国家三维城市数字孪生与仿真 | 本带可建立「一带数字孪生沙盘」作为方案推演与公众体验载体（概念建议）。 |
+| CS-07 | Barcelona Superblocks & 22@ | 西班牙·巴塞罗那 | 公共空间回收、开放数据强制与科创街区 | 本带蓝绿慢行复合环与公共空间组件库可借鉴其「空间回收 + 开放数据」路径。 |
+| CS-08 | Shenzhen AI Industry Clusters | 中国·深圳 | 产学研一体与真实场景大规模验证 | 本带可借鉴「真实场景开放—企业验证—招引转化」闭环，呼应 agent.6 转化路径。 |
+
+<!-- /EVIDENCE-INJECTED:case_studies -->
 
 The proposal should establish spatial-demand personas for AI talent and enterprises, covering R&D office, open-source collaboration, achievement release, enterprise services, talent living, social learning, consumption life, sports leisure, and international exchange. AI+ scenarios should form industry-development scenarios and AI-enabled urban-function scenarios around the directions proposed by the announcement — mobility, services, consumption, healthcare, education, law, living services. Each scenario should state its service target, spatial location, data source, privacy boundary, human-review mechanism, and operation subject.
 
@@ -133,6 +242,45 @@ Municipal and public-service facilities should cover AI industry-service facilit
 
 ## Blue-Green Space, Public Space, and Urban Character
 
+
+<!-- EVIDENCE-INJECTED:accessibility_inclusion -->
+
+### Accessibility & Digital-Inclusion Requirement Matrix (conceptual)
+
+> Aligned with GB 50763 Accessibility Design Code and public-space metrics (metrics.json)
+
+| Group | Space | Service | Metric |
+|---|---|---|---|
+| Older adults | 连续无障碍坡道、休息节点≤150m、放大字体与语音 | 现场人工服务、非智能替代渠道 | 无障碍连续性达标率、人工服务可达率 |
+| Children | 安全活动场地、低矮导视、软质铺装 | 亲子活动与安全教育 | 儿童友好空间覆盖率 |
+| Persons with disabilities | 无障碍通行、盲道连续、轮椅可达与低位设施 | 辅助技术接入、投诉反馈闭环 | 无障碍设施完好率、投诉闭环率 |
+| Low-digital-literacy | 非智能替代渠道（电话/窗口/纸质） | 人工引导、零强制数字化 | 非智能渠道可用率 |
+| Night workers | 充足夜间照明、安全路径 | 夜间可访问的休息与应急呼叫 | 夜间照明覆盖率、应急响应时长 |
+
+All AI services must offer human review and non-smart alternatives; resident profiles must not be used for commercial recommendation (see test_validation_scenarios TV-03).
+
+<!-- /EVIDENCE-INJECTED:accessibility_inclusion -->
+
+
+<!-- EVIDENCE-INJECTED:component_library -->
+
+### Public-Space Component Library & Honor Display System (conceptual)
+
+> Conceptual modules; dimensions/materials subject to professional deepening; no unauthorized modification of enterprise-owned facilities; no violation of heritage, green-line, blue-line, or traffic safety constraints.
+
+| ID | Component | Function | Spec | Milestone |
+|---|---|---|---|---|
+| C1 | AI Wayfinding Sign | 多语种导览+无障碍语音 | 低眩光屏、离线兜底信息 | 地标 L1 沿线 |
+| C2 | Eco Monitoring Post | 空气质量/噪声/碳汇可视化 | 太阳能供电、开放数据接口 | 蓝绿慢行复合环 |
+| C3 | Accessible Rest Module | 座椅+充电+呼叫 | 连续坡道可达、夜间照明 | 全环连续布置 |
+| C4 | Culture Pavilion | 展览/路演/开放日 | 可拆装、低影响基础 | 地标 L2/L4 |
+| C5 | Light & Honor Wall | 开源贡献与荣誉展示 | 低能耗投影、可更新内容 | 地标 L3 |
+| C6 | Active-Mobility Markers | 慢行/骑行连续指引 | 与道路红线协调 | 东西缝合/南北贯通 |
+
+**Honor Display System**: open-contribution wall, annual innovation ranking, pilgrimage-landmark plaques, and public-feedback wall, driven by the developer-community governance and event system (see the annual events and developer-community operation section above).
+
+<!-- /EVIDENCE-INJECTED:component_library -->
+
 The blue-green-space scheme should take the Jing-Zhang Heritage Park vitality belt as the backbone, coordinate the Qinghe River, Xiaoyue River, and surrounding universities, enterprises, and community travel demand, and propose a north-south through, east-west connected system of walkways, cycleways, and green-space. It should identify slow-mobility breakpoints, over-ring nodes, park south and north landscape nodes, and propose strategies for parking, sports, innovation interaction, technology testing, application showcase, and public-space composite use.
 
 Blue-green public space is jointly checked by the design-depth items and the green-space and public-space layers [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]. The green-space and public-space ratios are explained for design significance in the body; the full recalculation is preserved in `metrics.json`; the coordination of urban character, public space, and building control returns to the professional standard matrix [standard:MOHURD-URBAN-DESIGN-MEASURES].
@@ -155,6 +303,31 @@ The following 4 pilgrimage nodes and honor-display systems are conceptual spatia
 The proposal establishes an original vector brand identity: the mark takes the centennial Jing-Zhang railway heritage as the "spine" linking the three key-area nodes (Wisdom Garden · Beijing AI Origin · Dazhongsi), with a diamond node representing the AI-agent accelerator. Palette: Spine Blue #2E6BE6, Vitality Teal #00B4A6, Innovation Purple #7C5CFC, accent Amber #F2A93B, neutral Ink #16222E and Rock Grey #C2CCD8; type scale led by Noto Sans SC for consistent CN/EN delivery. All graphics are original vector with rights-cleared sources, applied to board title bands, web header, report cover, and the honor-display system.
 
 ## Renewal Project List, Implementation Policy, and Phasing Plan
+
+
+<!-- EVIDENCE-INJECTED:event_operation_system -->
+
+### Global AI Innovation Event System & Long-term Operation (conceptual)
+
+> All conceptual proposals for professional deepening; no exaggerated government commitments or event effects, not confirmed actions.
+
+| ID | Event | Cadence | Role | KPI |
+|---|---|---|---|---|
+| E1 | Jing-Zhang AI Innovation Week | 每年秋季 | 主论坛+展览+路演 | 参会/对接数、落地意向数 |
+| E2 | Open-source Hackathon | 每季度 | 开发者贡献与组件孵化 | 提交项目数、复用率 |
+| E3 | Global Roadshow & Benchmark | 每半年 | 国际链接与招商 | 海外节点对接数 |
+| E4 | Public Open Day & Experience Season | 每月/每季 | 公众体验与反馈 | 参与人数、满意度、投诉闭环率 |
+| E5 | Landmark Honor Exhibition | 持续 | 荣誉展示体系运营 | 展陈更新频次、访客数 |
+
+**Dev community governance**：Dev community governance: contribution incentives + ethics registry + scenario-open review
+
+**Scenario-open operation**：Scenario-open operation: apply → ethics & compliance review → small-sample test → public feedback → iterate or exit
+
+**Conversion pathway**：event exposure → scenario match → company landing → attraction & registration → jobs & tax → ecosystem feedback
+
+**Phase KPIs**：Near-term (1y): 活动体系搭建、≥3 测试场景上线、社区基数建立；Mid-term (2-3y): 年度活动稳定、招引转化路径跑通；Long-term (3-5y): 品牌资产沉淀、国际节点常态链接
+
+<!-- /EVIDENCE-INJECTED:event_operation_system -->
 
 The implementation scheme should form a reviewable renewal-project list, stating project location, type, function, responsible subject, dependency conditions, implementation phase, risk, and evaluation metrics. Policy suggestions should cover urban-renewal coordinated implementation, spatial supply, operation mechanism, industry services, public participation, data governance, and property-right coordination. `geometry/phasing.geojson` should express the phasing scope; `compliance_matrix.json` should tie each task to phasing and drawings.
 
