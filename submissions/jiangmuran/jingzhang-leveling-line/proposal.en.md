@@ -119,9 +119,7 @@ The census deliberately does not read `submissions-data.js`. That file is a gene
 
 Data products ship in `visual/assets/` and the numbers can be checked directly. The generation scripts cannot ship: the submission format's allow-list accepts no `.py` anywhere (`assets/*` takes images only, `report/*` five fixed names, `geometry/*` nine named files). They are published in the accompanying issue instead. Both self-collected sources are graded `background_only` in `sources.json`: they are the empirical basis of the argument, **not** evidence for any spatial or statutory conclusion.
 
-![FIG.01 Overall concept and site cross-check](assets/figures/site-overview.en.png)
-
-> **How to read it.** Three areas and two wings named on the map; five functions on one loop. Cross-check kept as a footnote: 412.5 m to the park
+![FIG.02 Evidence chain as an unclosed leveling circuit](assets/figures/evidence-circuit.en.png)
 
 Official `SITE_BOUNDARY` and the three `KEY_AREA` polygons remain unpublished. This package labels `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` as `provisional_constraint` with `official_boundary=false`; they are for generation, self-check, visualisation and discussion only, never as an official redline, approval basis or precise-area basis. When official polygons appear, **every layer and metric is recomputed as a whole** — never one file at a time. Same rule this proposal applies to the city: over tolerance, re-measure the section, do not patch a station.
 
@@ -1039,7 +1037,7 @@ Layers [data:geometry/green_space.geojson#GREEN-001] and [data:geometry/public_s
 
 ![FIG.05 Slow mobility, blue-green and closing routes](assets/figures/mobility-bluegreen.en.png)
 
-> **How to read it.** The two connecting routes and their direction; tolerance bands lower right
+> **How to read it.** The line and direction of both connecting routes, and the tolerance bands by order at lower right
 
 ### Three AI pilgrimage landmarks (agent.4)
 
@@ -1461,7 +1459,7 @@ It calls none of this proposal's generation scripts and needs neither Python nor
 
 ![FIG.06 Recomputed metrics and the field census](assets/figures/metrics-evidence.en.png)
 
-> **How to read it.** Three metric classes at left; at right the run: ten cases, two passed and eight refused with reasons
+> **How to read it.** At left, what separates the three classes of metric; at right, the one time the mechanism was actually run - ten cases, two accepted and eight refused with reasons
 
 ### Accessibility and legibility QA: computed, not asserted
 
@@ -1538,12 +1536,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-355 entries. By finder:
+356 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 40 | Run against the shipped package, not a draft |
-| The author | 228 | Found while working |
+| The author | 229 | Found while working |
 | This package's own gate | 26 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1557,7 +1555,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 |---|---|
 | An easy measure | 62 |
 | Two copies drifted | 57 |
-| Shipped unseen | 31 |
+| Shipped unseen | 32 |
 | Uncheckable | 29 |
 | Outlived the package | 25 |
 | Nothing fails it | 19 |
@@ -1706,12 +1704,12 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 | Sheet | Content | What to read on it |
 |---|---|---|
 | FIG.00 | The leveling line: a city that publishes its own error | — |
-| ● FIG.01 | Overall concept and site overview | Three areas and two wings named on the map; five functions on one loop. Cross-check kept as a footnote: 412.5 m to the park |
+| ● FIG.01 | Overall concept and site overview | Three areas and two wings, each named on the map; the five functions drawn as five positions on one closing loop. The site cross-check is kept at footnote weight: the inferred boundary lies 412.5 m from the segment OSM has mapped |
 | FIG.02 | Evidence chain as an unclosed leveling circuit | — |
 | ● FIG.03 | Three scope levels and network tiers | The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give |
 | ● FIG.04 | Three areas, two wings and benchmark layout | Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points |
-| ● FIG.05 | Slow mobility, blue-green and connecting routes | The two connecting routes and their direction; tolerance bands lower right |
-| ● FIG.06 | Recomputed metrics and closure evidence | Three metric classes at left; at right the run: ten cases, two passed and eight refused with reasons |
+| ● FIG.05 | Slow mobility, blue-green and connecting routes | The line and direction of both connecting routes, and the tolerance bands by order at lower right |
+| ● FIG.06 | Recomputed metrics and closure evidence | At left, what separates the three classes of metric; at right, the one time the mechanism was actually run - ten cases, two accepted and eight refused with reasons |
 | FIG.07 | Identity: mark, construction and applications | — |
 | FIG.08 | Innovation ecosystem and element mechanisms | — |
 | FIG.09 | Landmarks, kit of parts, signage syntax and operating cycle | — |
@@ -1840,7 +1838,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files none of which the reviewer receives, 1189 KB, 1,824 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files none of which the reviewer receives, 1191 KB, 1,825 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

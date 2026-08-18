@@ -369,7 +369,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Two English sections exist without a heading, and nothing said so.",
-      "message": "heading_parity_qa.py — heading parity: both editions carry 16 chapters; the Chinese has 57 subsections and the English 55, a declared deficit of 2 — 「合规矩阵」、「任务书自己的十三项评审维度」 — whose English content ships but carries no heading of its own. The headings are not added because proposal.en.md is at the organisers' 256 KiB cap with single digits free and no mechanical slack, so they would cost about sixty-six bytes of English a reviewer reads in exchange for signposts to text he can already read. Scope: this counts headings and checks the declared pair still has its English content; whether that content reads well is parity_qa's ratio and a human's judgement"
+      "message": "heading_parity_qa.py — heading parity: both editions carry 16 chapters; the Chinese has 57 subsections and the English 57, a declared deficit of 0. It was 2 until E356: 「合规矩阵」、「任务书自己的十三项评审维度」 shipped their content with no heading of their own, declared by name because the English edition had single-digit bytes free. E355 freed 1,751 bytes and both headings went in, so the floor is now zero and each of those two is checked by name. Scope: this counts headings and checks the declared pair still has its English content; whether that content reads well is parity_qa's ratio and a human's judgement"
     },
     {
       "check_id": "PKG_I18N_ORDER_QA",
@@ -387,7 +387,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The intake caps, enforced where a mutation can reach them.",
-      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 1,750 bytes to spare. The package totals 29.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 593 bytes to spare. The package totals 29.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_INTERNED_RENDER_QA",
@@ -495,7 +495,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Every identifier in the package obeys the published naming system.",
-      "message": "naming_qa.py — naming: 658 distinct names harvested from the package — 634 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 659 distinct names harvested from the package — 635 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -540,7 +540,7 @@
       "target": "proposal.md / proposal.en.md",
       "source": "package-provided",
       "what_it_holds_en": "Measure whether the English edition says what the Chinese one says.",
-      "message": "双语内容一致性 — bilingual content parity: overall 78%, 16/16 sections at or above floor"
+      "message": "双语内容一致性 — bilingual content parity: overall 79%, 16/16 sections at or above floor"
     },
     {
       "check_id": "PKG_PDF_PAGE1_QA",
@@ -603,7 +603,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Two files, one register: the halves must agree, and no prose may state the split.",
-      "message": "register_split_qa.py — register split: 267 + 88 = 355 entries, both halves stating the same total of 355, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
+      "message": "register_split_qa.py — register split: 268 + 88 = 356 entries, both halves stating the same total of 356, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
     },
     {
       "check_id": "PKG_REGISTRY_ALIGNMENT_QA",
@@ -935,7 +935,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 355 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 26、rival-read 25、self 228；最常见形状：check-measured-the-convenient-thing 62、two-copies-of-one-thing-drifted 57、deliverable-not-inspected-before-shipping 31、claim-that-cannot-be-checked-by-construction 29。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 355 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 356 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 26、rival-read 25、self 229；最常见形状：check-measured-the-convenient-thing 62、two-copies-of-one-thing-drifted 57、deliverable-not-inspected-before-shipping 32、claim-that-cannot-be-checked-by-construction 29。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 356 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -1150,7 +1150,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30523953,
+      "total_bytes": 30532346,
       "maintainer_bypass": false
     },
     "stderr": ""
