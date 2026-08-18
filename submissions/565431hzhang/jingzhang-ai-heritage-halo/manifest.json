@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5c7c18808e03f268a70c061732a626f18eeb7fded8e45905b97074375187cfd3"
+      "sha256": "c868ef135dd74dcf15fc4bc82da769c0499f4c99a17b59f0d1f91004be3352bc"
     },
     {
       "path": "compliance_matrix.json",
@@ -235,7 +235,7 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "230d48d60b728a91e42d2e46c6c40fc3412218dc04c075c4736a0dd1737b7ca3"
+      "sha256": "e87a221505a566d61dd11b3ca9ffccd4e66e583a41b8a818b7b3b4b54cee5406"
     },
     {
       "path": "geometry/constraints.geojson",
@@ -247,7 +247,7 @@
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "e2b991a817b6fff20b5603f7665460baf6211d1e9862d0832876427573e72f18"
+      "sha256": "d86f6ceab63b8149e3432af8655ec270df230b4ef871220b1038486138a17ad4"
     },
     {
       "path": "geometry/key_areas.geojson",
@@ -259,25 +259,25 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "2a8acb9d33bccce44bbd8a517dff91bf65ecd40490a9ca3e978e04b05bd68c57"
+      "sha256": "9d41a30bff5c3b3ea1f3eff3df5eeb8a5e03a929e7b76e8871e39e94139e9aa4"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "3c1a7807fd0b47ec3c954e6d54a18cfc48f173214108a4fe29758f821f4f66dd"
+      "sha256": "fe93c7317666fe478fdd42cc41e91b10d78dd3bb63dc21708b0ce43e08c9ec57"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "0598bcca01c41bc77c265da3dd0140989fcd5bd2a0691a5886c8fb7855b38442"
+      "sha256": "ef0e559814a0ca32ac9c2dcee7f1c9d9dfdd7211023f7af7e9a6af3c508ae9fe"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "36ade98eed1d356141561b54532093177ab97fb5301088e989246f973149b386"
+      "sha256": "fb1b3a8ddd5bd768994bdccb872a75159bd3a1062b25081ee2c8db1a1f4f5b19"
     },
     {
       "path": "geometry/site_boundary.geojson",
