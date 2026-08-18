@@ -122,6 +122,8 @@
         "professional_disciplines_with_explicit_decision_rights": 0,
         "competing_15_minute_professional_handoff_starts": 2,
         "clickable_governing_contract_links_in_canonical_visual_handoff": 0,
+        "no_javascript_visible_walkthrough_steps_per_language": 0,
+        "no_javascript_red_reproduction": "Disable JavaScript and load either bilingual visual page at 390x844. The five articles remain in the DOM, but the source-level parent details is closed and all five are invisible.",
         "a0_page_8_current_count_labels": "141/141 while manifest and rights records were 149"
       },
       "post_repair": {
@@ -139,6 +141,9 @@
         "go_decisions": 0,
         "canonical_15_minute_professional_handoff_starts": 1,
         "governing_contract_links_per_language": 5,
+        "no_javascript_visible_walkthrough_steps_per_language": 5,
+        "no_javascript_package_index_present_per_language": true,
+        "no_javascript_mobile_page_overflow_px": 0,
         "current_manifest_paths": 149,
         "current_non_manifest_paths": 148,
         "current_rights_ledger_records": 149,
