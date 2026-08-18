@@ -1,0 +1,32 @@
+{
+  "schema_version": "shared-floor-immutable-artifact-v1",
+  "rights": "COMMUNITY-DISPLAY-ONLY",
+  "source_path": "run_contract.json",
+  "source_sha256": "4b5f7615417211367773994f902f3207ae716db1252dabb8ca30d55d2491dfb6",
+  "source_size_bytes": 1196,
+  "content": {
+    "schema_version": "0.1.0",
+    "run_kind": "deterministic_design_search",
+    "created_at": "2026-08-13T09:00:00Z",
+    "created_at_semantics": "pinned evidence epoch supplied to the deterministic harness; not wall-clock execution time",
+    "official_repo_head": "aa6904397a6cc09cf27fb1c3989c3b80a1f91a36",
+    "proposal_builder_sha256": "593a8f38cb5a2c978fdda83a471721a8b9f8e3e6a8c86149999b6f1e995673ba",
+    "harness_runner_sha256": "dd0b7ac5df4896387df71a51c87f64e32075f1c0ea89b8b96f81c0cbcc57f874",
+    "candidate_count": 3,
+    "reference_envelope": [
+      -350.0,
+      -120.0,
+      350.0,
+      120.0
+    ],
+    "reference_programme_range_sqm": [
+      75000.0,
+      90000.0
+    ],
+    "hard_gate_policy": "all gates must pass before preference scoring",
+    "counterfactual_policy": "6 valid one-bay rebind probes, 18 named-gate fault injections and one permutation-invariance control must all pass",
+    "recovery_policy": "12 deterministic milestone/minefield handoff traces must reach a safe final state with zero unsafe actions",
+    "selection_policy": "hard gates then Pareto eligibility; normalized score is diagnostic only; blind order-swapped pairwise jury is still required",
+    "human_equivalent_claim": false
+  }
+}

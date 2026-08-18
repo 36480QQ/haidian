@@ -1,0 +1,578 @@
+{
+  "schema_version": "shared-floor-immutable-artifact-v1",
+  "rights": "COMMUNITY-DISPLAY-ONLY",
+  "source_path": "counterfactual-rebind-gate-challenge.json",
+  "source_sha256": "21c1988f01c248ef69ff2e2d0e7040c92404597b937300dd0347d199fb8906cf",
+  "source_size_bytes": 25131,
+  "content": {
+    "schema_version": "jingzhang-counterfactual-receipt-v1",
+    "evaluation_type": "deterministic_typed_geometry_rebind_and_gate_challenge",
+    "claim_boundary": {
+      "evidence_scope": "participant-authored proxy-state verifier adequacy",
+      "official_boundary_validation": false,
+      "real_world_performance_validation": false,
+      "model_execution": false,
+      "synthetic_user_execution": false,
+      "interpretation": "valid cases probe a small one-bay rebind seam; fault cases prove named gates reject injected defects"
+    },
+    "valid_rebind": {
+      "case_count": 6,
+      "pass_count": 6,
+      "pass_rate": 1.0,
+      "cases": [
+        {
+          "case_id": "compact-one-bay",
+          "input_parameters": {
+            "prototype_x_offsets_m": {
+              "proof": -234.0,
+              "origin": 0.0,
+              "exchange": 234.0
+            }
+          },
+          "input_parameters_sha256": "12d4f0024435cbf9105809d1885a9825b8c7739bc9e4c9cbc4269313dcc86925",
+          "candidate_spec_sha256": "d76233ab9af1da79acb5530436bebcaed85715952fe6f9f16b040784ea63feb1",
+          "semantic_evaluation_sha256": "4a6436990aa0e94e4eab45fd32b08ae3a640428ccf0fb025c0df25f5fcacb9cb",
+          "failed_gates": [],
+          "pass": true
+        },
+        {
+          "case_id": "expanded-one-bay",
+          "input_parameters": {
+            "prototype_x_offsets_m": {
+              "proof": -246.0,
+              "origin": 0.0,
+              "exchange": 246.0
+            }
+          },
+          "input_parameters_sha256": "44f6fe7329b1c1ff4b6951b0d78080cc45d4eae2f138931a58b2d3efe5f67dfb",
+          "candidate_spec_sha256": "13ae09ca660cddbfdea4a8dfdd3d4917119b601b5638e0b4e30515e25f84c31f",
+          "semantic_evaluation_sha256": "e9c0777e59019ccdf079bc6d9caf75d65de10d40bb8b4038ea020da7edd91657",
+          "failed_gates": [],
+          "pass": true
+        },
+        {
+          "case_id": "west-shifted-one-bay",
+          "input_parameters": {
+            "prototype_x_offsets_m": {
+              "proof": -246.0,
+              "origin": -6.0,
+              "exchange": 234.0
+            }
+          },
+          "input_parameters_sha256": "6edb3dab7f22c0fcc118804f44a7fe5b99dd0a1d60348ea8a9017019a124363d",
+          "candidate_spec_sha256": "79b661ccb3b48762cefac79c1720b70e9461db5fa7b4f7c45c6f6cb15e007f77",
+          "semantic_evaluation_sha256": "03e7712d41b1ea607eba06b3d8477e1e8a447833368ebc1cd836fe633937cb59",
+          "failed_gates": [],
+          "pass": true
+        },
+        {
+          "case_id": "east-shifted-one-bay",
+          "input_parameters": {
+            "prototype_x_offsets_m": {
+              "proof": -234.0,
+              "origin": 6.0,
+              "exchange": 246.0
+            }
+          },
+          "input_parameters_sha256": "9c352c59bd72bded32305e8e414dbaa2ef4467f000a8c125b4eb0acf8c7b947d",
+          "candidate_spec_sha256": "dfb791518639279e7a808b6bd6950a9a5ff0be8338eec9fff45042dcb4a41656",
+          "semantic_evaluation_sha256": "5e3837f23fadb4e5af0396d11fceabfa57bb7f0025948cc07d6ede5b5f86ce72",
+          "failed_gates": [],
+          "pass": true
+        },
+        {
+          "case_id": "origin-west-one-bay",
+          "input_parameters": {
+            "prototype_x_offsets_m": {
+              "proof": -240.0,
+              "origin": -6.0,
+              "exchange": 240.0
+            }
+          },
+          "input_parameters_sha256": "3065892b13f51aca2abdbef5c24b4ca1aeeb4467d78ccf8d04af4c59ba789d80",
+          "candidate_spec_sha256": "47910e45c46b67419c089a2bfaa8930761bd7996ea0268bead0c8b2b56b60ee7",
+          "semantic_evaluation_sha256": "060c2da4e0c282b98f6176fb54c8db0fa678ff0568a697a454f6bdb95efabdf8",
+          "failed_gates": [],
+          "pass": true
+        },
+        {
+          "case_id": "origin-east-one-bay",
+          "input_parameters": {
+            "prototype_x_offsets_m": {
+              "proof": -240.0,
+              "origin": 6.0,
+              "exchange": 240.0
+            }
+          },
+          "input_parameters_sha256": "c4d652c1fdf185047c16abcdd0df0b078f6befac3292def8e68391eeec91464c",
+          "candidate_spec_sha256": "0090aec99a35abbd17598ab7ea583dc072965a2e012256f3e7ba2631ba742885",
+          "semantic_evaluation_sha256": "9431b003165e9030196fbda1d60fc6f2d1dd9957ba1af0dcb971245d780ecc19",
+          "failed_gates": [],
+          "pass": true
+        }
+      ]
+    },
+    "gate_challenge": {
+      "design_root_count": 3,
+      "fault_class_count": 6,
+      "case_count": 18,
+      "expected_gate_detection_count": 18,
+      "expected_gate_detection_rate": 1.0,
+      "false_accept_count": 0,
+      "cases": [
+        {
+          "case_id": "C01-CIVIC-PROVING-LINE:outside-envelope",
+          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "challenge_id": "outside-envelope",
+          "mutation": {
+            "challenge_id": "outside-envelope",
+            "feature_id": "PL-TRIAL-01",
+            "field": "x",
+            "before": -300,
+            "after": 490.0
+          },
+          "mutation_sha256": "0ef896ff6b29a43956ceaa2f8a59286d1d129c5bef946aff10d56171d0df5715",
+          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
+          "mutated_candidate_spec_sha256": "1faa6920c6d882bc23d3ccc59405b91450cf9757c15f251fc07384d904d72ad4",
+          "evaluation_sha256": "03a548f3a19e07b05d66299c57df24c74a43d6fc93c098b57481f3e69494a323",
+          "expected_failed_gate": "inside_reference_envelope",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "inside_reference_envelope"
+          ]
+        },
+        {
+          "case_id": "C01-CIVIC-PROVING-LINE:duplicate-feature-id",
+          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "challenge_id": "duplicate-feature-id",
+          "mutation": {
+            "challenge_id": "duplicate-feature-id",
+            "feature_id": "PL-TRIAL-02",
+            "field": "id",
+            "before": "PL-TRIAL-02",
+            "after": "PL-TRIAL-01"
+          },
+          "mutation_sha256": "8f2fdecc717a849ef2b61ae8ff952e6cf03d34f6f11efdb3e95b279d666dd5f6",
+          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
+          "mutated_candidate_spec_sha256": "f2cd62883d7821ba8dd7f75746cfd2ddd5a3c89fe188866f3d7f1318ffb1c7be",
+          "evaluation_sha256": "2105d32078ef7ae921daaef618407fcb94c329929e7ee098c643fdeb17cbd87d",
+          "expected_failed_gate": "feature_ids_unique",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "feature_ids_unique"
+          ]
+        },
+        {
+          "case_id": "C01-CIVIC-PROVING-LINE:same-layer-mass-overlap",
+          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "challenge_id": "same-layer-mass-overlap",
+          "mutation": {
+            "challenge_id": "same-layer-mass-overlap",
+            "feature_id": "PL-TRIAL-02",
+            "overlaps_feature_id": "PL-TRIAL-01"
+          },
+          "mutation_sha256": "5d07eab8572660ff84aaea219430d5b746a20388df95200549984c795041a86e",
+          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
+          "mutated_candidate_spec_sha256": "50fda2453eacb49b7aceb3e4efaa2980ba9bbcfd9b1204e5864b86826a4ba83a",
+          "evaluation_sha256": "74de19c8efab9b633ea17819263b2c1e6a126bd7de115741435f6014f5bea08b",
+          "expected_failed_gate": "unintended_mass_overlaps_zero",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "unintended_mass_overlaps_zero"
+          ]
+        },
+        {
+          "case_id": "C01-CIVIC-PROVING-LINE:support-infill-overlap",
+          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "challenge_id": "support-infill-overlap",
+          "mutation": {
+            "challenge_id": "support-infill-overlap",
+            "feature_id": "FAULT-INFILL-C01-CIVIC-PROVING-LINE",
+            "overlaps_feature_id": "PL-ANCHOR-01",
+            "storeys": 0
+          },
+          "mutation_sha256": "54d2ae960507d17c5343349e7135a0f8fbd3d6c54fc32c8f6e3ec326aca54d3c",
+          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
+          "mutated_candidate_spec_sha256": "0a266872376563b593897547a3a0c8df84b92d48cd87058995f510ae8aa9a04d",
+          "evaluation_sha256": "bab129d9d4fce5cd0535352d6119d344f06ef61159cec79a532f48d6d38066f6",
+          "expected_failed_gate": "support_infill_overlap_zero",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "support_infill_overlap_zero",
+            "unintended_mass_overlaps_zero"
+          ]
+        },
+        {
+          "case_id": "C01-CIVIC-PROVING-LINE:isolated-public-route-component",
+          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "challenge_id": "isolated-public-route-component",
+          "mutation": {
+            "challenge_id": "isolated-public-route-component",
+            "feature_id": "FAULT-ISOLATED-ROUTE-C01-CIVIC-PROVING-LINE",
+            "start": [
+              -345.0,
+              112.0
+            ],
+            "end": [
+              -330.0,
+              112.0
+            ]
+          },
+          "mutation_sha256": "d6117a6d57a84e3557fca0436e6cd5ccffe93c95444a716bd43ae03463b938cc",
+          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
+          "mutated_candidate_spec_sha256": "c80bbd2c75d8da0a852a1e8a8da72fb240178ecfd6d55d321c17cdf334e950bb",
+          "evaluation_sha256": "2e4ea8a3429e53d23892f85a9a56ef787729edd5bf43ec4c1a5b33dac86a469d",
+          "expected_failed_gate": "public_route_network_connected",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "public_route_network_connected"
+          ]
+        },
+        {
+          "case_id": "C01-CIVIC-PROVING-LINE:unreachable-public-room",
+          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "challenge_id": "unreachable-public-room",
+          "mutation": {
+            "challenge_id": "unreachable-public-room",
+            "feature_id": "PL-OBS-01",
+            "field": "y",
+            "before": -42,
+            "after": 500.0
+          },
+          "mutation_sha256": "ae12bb5f581e5eb662a23138dd2d9b1b7133a520a2bbd95238679f93cf72d084",
+          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
+          "mutated_candidate_spec_sha256": "f81b4a1e033384cf6e6cfdc72670fb406f3b4943741a3fc497a795b5e4446d91",
+          "evaluation_sha256": "15828a2d5794b8e3d3d03d6931f1733d5564590a7a04f2ccf628b5e718e32438",
+          "expected_failed_gate": "every_public_room_reached",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "every_public_room_reached"
+          ]
+        },
+        {
+          "case_id": "C02-FOUR-SEASON-COURTYARDS:outside-envelope",
+          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "challenge_id": "outside-envelope",
+          "mutation": {
+            "challenge_id": "outside-envelope",
+            "feature_id": "FS-01-N",
+            "field": "x",
+            "before": -280,
+            "after": 506.0
+          },
+          "mutation_sha256": "7933fd857f2cb3243ab2383d53cdb809bb6ed78d372bc266821ac1aed4ead4f9",
+          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
+          "mutated_candidate_spec_sha256": "d9eb778bb5a79a886efe5131c132d3261299b5ffe27e69188e214f27f5eae089",
+          "evaluation_sha256": "467ab54c8022211f73da5c4e37a0c6cfc3026d9b912f2a2905e52a7bc0cdd2b9",
+          "expected_failed_gate": "inside_reference_envelope",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "inside_reference_envelope"
+          ]
+        },
+        {
+          "case_id": "C02-FOUR-SEASON-COURTYARDS:duplicate-feature-id",
+          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "challenge_id": "duplicate-feature-id",
+          "mutation": {
+            "challenge_id": "duplicate-feature-id",
+            "feature_id": "FS-01-W",
+            "field": "id",
+            "before": "FS-01-W",
+            "after": "FS-01-N"
+          },
+          "mutation_sha256": "3c63d52e38f7945217f21bb9f302d9b36187308774e4af4487ac435ce2bdc475",
+          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
+          "mutated_candidate_spec_sha256": "90fb5953ef7fd8088cbf67e59f79923db643ed79d2dcebdf5f7b014e41971c9a",
+          "evaluation_sha256": "0c67733fe33a85403b8fb1e067820c0198854a13632b2a8e26e0fee548097835",
+          "expected_failed_gate": "feature_ids_unique",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "feature_ids_unique"
+          ]
+        },
+        {
+          "case_id": "C02-FOUR-SEASON-COURTYARDS:same-layer-mass-overlap",
+          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "challenge_id": "same-layer-mass-overlap",
+          "mutation": {
+            "challenge_id": "same-layer-mass-overlap",
+            "feature_id": "FS-01-W",
+            "overlaps_feature_id": "FS-01-N"
+          },
+          "mutation_sha256": "bdb5612f4ecd278ca1725920cc78b24be2363e7ca2812b833df1973ab181ecfd",
+          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
+          "mutated_candidate_spec_sha256": "d82f4be8f11e9d22f308ed7728aeca62837ccb212dee9f7fa415402aca40954a",
+          "evaluation_sha256": "cf0b1a650036613a45be22b55e251c68e8807d0bc5ad3e0722bcb36331a50a33",
+          "expected_failed_gate": "unintended_mass_overlaps_zero",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "unintended_mass_overlaps_zero"
+          ]
+        },
+        {
+          "case_id": "C02-FOUR-SEASON-COURTYARDS:support-infill-overlap",
+          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "challenge_id": "support-infill-overlap",
+          "mutation": {
+            "challenge_id": "support-infill-overlap",
+            "feature_id": "FAULT-INFILL-C02-FOUR-SEASON-COURTYARDS",
+            "overlaps_feature_id": "FS-01-N",
+            "storeys": 0
+          },
+          "mutation_sha256": "3e3a44e06c5e694d526c96598c88ab8ce4210c241575bfec10d9557c30709ad7",
+          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
+          "mutated_candidate_spec_sha256": "08f8f7ce8bd39c90d7d6c885c39ce9b073e381fa21f801cc5dac73aa346f47dc",
+          "evaluation_sha256": "af306047c1aebd5d3332f15c914a8a7b83c8ff6f88bf7ab7d57666d22069a329",
+          "expected_failed_gate": "support_infill_overlap_zero",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "support_infill_overlap_zero",
+            "unintended_mass_overlaps_zero"
+          ]
+        },
+        {
+          "case_id": "C02-FOUR-SEASON-COURTYARDS:isolated-public-route-component",
+          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "challenge_id": "isolated-public-route-component",
+          "mutation": {
+            "challenge_id": "isolated-public-route-component",
+            "feature_id": "FAULT-ISOLATED-ROUTE-C02-FOUR-SEASON-COURTYARDS",
+            "start": [
+              -345.0,
+              112.0
+            ],
+            "end": [
+              -330.0,
+              112.0
+            ]
+          },
+          "mutation_sha256": "a3dbf2b5e9cc260f31eda770a5fddfbda1aee91210544eec4e55dd82810d843e",
+          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
+          "mutated_candidate_spec_sha256": "301bad1751003954a7552ce87b8c3616918b9cb6b38be8ab9ac1587c1fd1e1a4",
+          "evaluation_sha256": "94149a32697e709cf090ee298d92f54ae1b3bc30ebbec7daa8992671fdff7bac",
+          "expected_failed_gate": "public_route_network_connected",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "public_route_network_connected"
+          ]
+        },
+        {
+          "case_id": "C02-FOUR-SEASON-COURTYARDS:unreachable-public-room",
+          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "challenge_id": "unreachable-public-room",
+          "mutation": {
+            "challenge_id": "unreachable-public-room",
+            "feature_id": "FS-COURT-01",
+            "field": "y",
+            "before": -48,
+            "after": 500.0
+          },
+          "mutation_sha256": "066691bcd410cdf9b27c25b2edae1def2372162484f96801ace4c94f0d3f95e9",
+          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
+          "mutated_candidate_spec_sha256": "6a3ec7c5597696324ae297d54c09ca677566b784679d5c65671e422b8810115d",
+          "evaluation_sha256": "aa54fe130b1dfd4de92e6ed9f48b0aa93767d5dff06d079a128db7d23069b72f",
+          "expected_failed_gate": "every_public_room_reached",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "every_public_room_reached"
+          ]
+        },
+        {
+          "case_id": "C03-SHARED-FLOOR:outside-envelope",
+          "candidate_id": "C03-SHARED-FLOOR",
+          "challenge_id": "outside-envelope",
+          "mutation": {
+            "challenge_id": "outside-envelope",
+            "feature_id": "ZY-NORTH",
+            "field": "x",
+            "before": -240.0,
+            "after": 588.0
+          },
+          "mutation_sha256": "ec80094c8e08fa8e58b700ae46a74f2b4df829c9d4f3621f0a8574de135f98d6",
+          "source_candidate_spec_sha256": "b4bfcfd1b3d017a4b707b0355504b9eaaebc46df107c2a3330b48f1df1ea5460",
+          "mutated_candidate_spec_sha256": "8ee233f992f50782a4aa93782f4a76143a9b57114424cadbac1b11f1e16962ff",
+          "evaluation_sha256": "dfd9d8d38458a97df3eccc8ed4e5fcb02bea9c56e1086ffc27fce75fbc9ab137",
+          "expected_failed_gate": "inside_reference_envelope",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "inside_reference_envelope"
+          ]
+        },
+        {
+          "case_id": "C03-SHARED-FLOOR:duplicate-feature-id",
+          "candidate_id": "C03-SHARED-FLOOR",
+          "challenge_id": "duplicate-feature-id",
+          "mutation": {
+            "challenge_id": "duplicate-feature-id",
+            "feature_id": "ZY-WEST",
+            "field": "id",
+            "before": "ZY-WEST",
+            "after": "ZY-NORTH"
+          },
+          "mutation_sha256": "9991b1e27f0ced4977a06d7f20a77b81fc63a1413ecf1f2162dc943240291368",
+          "source_candidate_spec_sha256": "b4bfcfd1b3d017a4b707b0355504b9eaaebc46df107c2a3330b48f1df1ea5460",
+          "mutated_candidate_spec_sha256": "f2b02e0f4ed5b68710ca6f786082110475f0d889634fc2d56d92a2a8e50e1058",
+          "evaluation_sha256": "5da48a69e5f79437c6312a296618ea09a57323c5dd7c4cb5f3138fc4735c3479",
+          "expected_failed_gate": "feature_ids_unique",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "feature_ids_unique"
+          ]
+        },
+        {
+          "case_id": "C03-SHARED-FLOOR:same-layer-mass-overlap",
+          "candidate_id": "C03-SHARED-FLOOR",
+          "challenge_id": "same-layer-mass-overlap",
+          "mutation": {
+            "challenge_id": "same-layer-mass-overlap",
+            "feature_id": "ZY-WEST",
+            "overlaps_feature_id": "ZY-NORTH"
+          },
+          "mutation_sha256": "c330e13f8f6481def80bdc4f6a6e340e1015a096cf32e26e47ac265efb586254",
+          "source_candidate_spec_sha256": "b4bfcfd1b3d017a4b707b0355504b9eaaebc46df107c2a3330b48f1df1ea5460",
+          "mutated_candidate_spec_sha256": "0cf9474d0252053c9f12bb7703d5aa6ccb9c93edfbd2fd611bb840a6ed73b4a9",
+          "evaluation_sha256": "2b3a00485dfa55f13589f507849b3203e07ac1d9cadb5a258b7500f181948bca",
+          "expected_failed_gate": "unintended_mass_overlaps_zero",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "unintended_mass_overlaps_zero"
+          ]
+        },
+        {
+          "case_id": "C03-SHARED-FLOOR:support-infill-overlap",
+          "candidate_id": "C03-SHARED-FLOOR",
+          "challenge_id": "support-infill-overlap",
+          "mutation": {
+            "challenge_id": "support-infill-overlap",
+            "feature_id": "FAULT-INFILL-C03-SHARED-FLOOR",
+            "overlaps_feature_id": "ZY-NORTH",
+            "storeys": 0
+          },
+          "mutation_sha256": "4dab412318f6477d200b167f24213d2c8544943cf622a949a061aa5b99637e9a",
+          "source_candidate_spec_sha256": "b4bfcfd1b3d017a4b707b0355504b9eaaebc46df107c2a3330b48f1df1ea5460",
+          "mutated_candidate_spec_sha256": "f466fc6735c64ab00933debed91452a8fd8ffea6b62ffc07f35334bdff1835ba",
+          "evaluation_sha256": "46736dc3e07259fe11942cf78ed29a9fe47133cfecad0ed3cfc1940f52cb501b",
+          "expected_failed_gate": "support_infill_overlap_zero",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "support_infill_overlap_zero",
+            "unintended_mass_overlaps_zero"
+          ]
+        },
+        {
+          "case_id": "C03-SHARED-FLOOR:isolated-public-route-component",
+          "candidate_id": "C03-SHARED-FLOOR",
+          "challenge_id": "isolated-public-route-component",
+          "mutation": {
+            "challenge_id": "isolated-public-route-component",
+            "feature_id": "FAULT-ISOLATED-ROUTE-C03-SHARED-FLOOR",
+            "start": [
+              -345.0,
+              112.0
+            ],
+            "end": [
+              -330.0,
+              112.0
+            ]
+          },
+          "mutation_sha256": "d915b083d174ccc047060db5bf78c42f4816b5c0f258e4e69e14164e01169676",
+          "source_candidate_spec_sha256": "b4bfcfd1b3d017a4b707b0355504b9eaaebc46df107c2a3330b48f1df1ea5460",
+          "mutated_candidate_spec_sha256": "8be7779c9dee4baaf5255776c9451fdeea4fd6827ec8c3e2a2a718ea63eb75c7",
+          "evaluation_sha256": "474feb7dad8f5b197062fb9bd0561050d726b47f04b5275e755b3f5cfaa9b1f0",
+          "expected_failed_gate": "public_route_network_connected",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "public_route_network_connected"
+          ]
+        },
+        {
+          "case_id": "C03-SHARED-FLOOR:unreachable-public-room",
+          "candidate_id": "C03-SHARED-FLOOR",
+          "challenge_id": "unreachable-public-room",
+          "mutation": {
+            "challenge_id": "unreachable-public-room",
+            "feature_id": "SF-PROOF-1",
+            "field": "y",
+            "before": 0.0,
+            "after": 500.0
+          },
+          "mutation_sha256": "39876150a49dbf65b53d57bbeb271113712b2a9ff6a42c45282679be31a43338",
+          "source_candidate_spec_sha256": "b4bfcfd1b3d017a4b707b0355504b9eaaebc46df107c2a3330b48f1df1ea5460",
+          "mutated_candidate_spec_sha256": "714fb5746459f38ab06363cf92c1bc8e2d4599bc59ca35c1b9bb6702e1fc808e",
+          "evaluation_sha256": "4cdfb3ab7cce498194a0e438532bb1a27c5710ad1ae9625680fdb0d1c605ca9c",
+          "expected_failed_gate": "every_public_room_reached",
+          "expected_gate_value": false,
+          "observed_gate_value": false,
+          "target_gate_detected": true,
+          "hard_gate_pass_after_fault": false,
+          "failed_gates": [
+            "every_public_room_reached",
+            "root_summer_shade_minimum"
+          ]
+        }
+      ]
+    },
+    "permutation_invariance": {
+      "candidate_id": "C03-SHARED-FLOOR",
+      "transformation": "reverse masses, routes and public-room serialization order",
+      "base_spec_sha256": "b4bfcfd1b3d017a4b707b0355504b9eaaebc46df107c2a3330b48f1df1ea5460",
+      "permuted_spec_sha256": "d2c2bdfbf951d3c03e0a5738a4e4d453dd64b375c5ac0489e9a2966cada10133",
+      "base_semantic_evaluation_sha256": "6eb8c895d88de7aa9917ab9a3a59bb05357a61b3f835fca7e6d060e24f958d3f",
+      "permuted_semantic_evaluation_sha256": "6eb8c895d88de7aa9917ab9a3a59bb05357a61b3f835fca7e6d060e24f958d3f",
+      "pass": true
+    },
+    "receipt_sha256": "7a0c86b2289fcabb4d507b1a129a9d356c1d0d414053a1849eb90fc16558a0f2"
+  }
+}
