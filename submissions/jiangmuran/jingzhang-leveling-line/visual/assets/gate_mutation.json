@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M137",
+      "gate": "heading_parity_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版又一个 `###` 标题降级为粗体行。**正文一个字不少**，只是它不再是一节——英文读者扫标题时找不到它。中英小节数之差因此从**已声明的 2** 变成 3。",
+      "what_en": "Demote one more English `###` heading to a bold line. **Not a word of text is lost**; it simply stops being a section, so an English reader scanning headings never finds it. The subsection deficit moves from the **declared 2** to 3.",
+      "why_zh": "本包与英文版之间确实差两个小节标题——`合规矩阵` 与 `任务书自己的十三项评审维度`——**内容都在，缺的只是标题**，而英文版卡在 256 KiB 上限、只剩个位数字节，补标题要拿评审读得到的英文正文去换指路牌，不划算。**所以这个差额被写下来、按名声明**；一旦它悄悄变成 3，就说明有人删了标题而没写下删的是哪一个。",
+      "why_en": "There really are two subsection headings the English edition lacks - the compliance matrix and the taskbook's thirteen review dimensions - **with the content present and only the signpost missing**, and proposal.en.md sits at the 256 KiB cap with single digits free, so adding them would trade English a reviewer reads for signposts to text he can already read. **The deficit is therefore written down and declared by name**; the moment it quietly becomes three, a heading has gone without anyone recording which."
+    },
+    {
       "id": "M135",
       "gate": "shipped_bilingual_qa.py",
       "target": "standard_matrix.json",
@@ -1640,7 +1652,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 134,
+  "caught": 135,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1675,6 +1687,7 @@
     "gate_count_qa.py",
     "geometry_citation_qa.py",
     "harness_reference_qa.py",
+    "heading_parity_qa.py",
     "i18n_order_qa.py",
     "intake_limits_qa.py",
     "interned_render_qa.py",
@@ -1777,6 +1790,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 95 道闸门，其中 92 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 95 gates, 92 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 96 道闸门，其中 93 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 96 gates, 93 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
