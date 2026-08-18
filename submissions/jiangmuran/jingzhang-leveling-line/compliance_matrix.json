@@ -1615,6 +1615,7 @@
       {
         "dimension_id": "brief_alignment",
         "title_zh": "任务书相关性",
+        "review_focus_zh": "是否围绕百年京张 AI 创新带、三层范围、三大重点片区和公告 1.5 任务展开。",
         "report_sections": [
           "三层范围工作框架",
           "总体设计范围城市更新与控规深度城市设计",
@@ -1624,11 +1625,17 @@
           "compliance_matrix.json#requirements",
           "compliance_matrix.json#taskbook_units",
           "assets/figures/land-use-structure.png"
-        ]
+        ],
+        "focus_answers_zh": {
+          "三层范围": "三层范围工作框架：统筹研究、总体设计、重点区三层各自的读数与限差",
+          "三大重点片区": "三处重点区逐一给出用地、剖面与接入规则，面积逐块与官方数值对照",
+          "公告 1.5": "任务书逐条覆盖：63 条要求逐条指向本文小节，随包 taskbook_coverage.json"
+        }
       },
       {
         "dimension_id": "originality",
         "title_zh": "原创性",
+        "review_focus_zh": "是否提出清晰的新概念、新机制或新场景，避免空泛拼贴。",
         "report_sections": [
           "闭合差机制的完整定义",
           "场地数据本身的闭合差：同一件事的两份来源对不上"
@@ -1637,11 +1644,17 @@
           "proposal.md#闭合差机制的完整定义",
           "metrics.json#existing_walk_between_benchmarks_m",
           "assets/figures/metrics-evidence.png"
-        ]
+        ],
+        "focus_answers_zh": {
+          "新概念": "闭合差机制：把测量学的闭合差用作公共服务的信任量纲",
+          "新机制": "超限即整段退回非AI等价路径，且退回条件写进每张场景卡",
+          "新场景": "十二张场景卡，两张已进入运行态，其余写明进入条件"
+        }
       },
       {
         "dimension_id": "ai_planning_innovation",
         "title_zh": "AI 与城市规划创新性",
+        "review_focus_zh": "是否把 AI 能力与产业、空间、交通、公共服务、文化和治理结合。",
         "report_sections": [
           "主战场一：低速机器人与自动驾驶接驳（agent.3，F1）",
           "主战场二：AI公共服务——医疗、教育、法律、生活（agent.3，F1/F2）",
@@ -1651,11 +1664,20 @@
           "design_depth_matrix.json",
           "assets/figures/metrics-evidence.png",
           "proposal.md#主战场一：低速机器人与自动驾驶接驳（agent.3，F1）"
-        ]
+        ],
+        "focus_answers_zh": {
+          "产业": "机器人与自动驾驶、AI公共服务两条赛道的用地、测试场与接入规则",
+          "空间": "主脊、三处重点区与十一个功能单元的完整剖分",
+          "交通": "十一处缝合点、步行十五分钟规则与其自评失败区段",
+          "公共服务": "场景卡的服务对象、无AI等价路径与申诉时限",
+          "文化": "遗址公园沿线的文化用地、年度归零仪式与公共证据厅",
+          "治理": "岗位规格、四类复核主体与读数日程表"
+        }
       },
       {
         "dimension_id": "implementation_feasibility",
         "title_zh": "可实施性",
+        "review_focus_zh": "是否有阶段路径、试点区域、参与主体、指标和可核验数据边界。",
         "report_sections": [
           "更新项目清单（八项，逐项给出责任角色、前置条件、成本级别、阶段KPI与退出条件）",
           "首轮闭合试验：一个四周内可跑完的最小实施单元",
@@ -1666,11 +1688,19 @@
           "compliance_matrix.json#reading_calendar",
           "assets/figures/mobility-bluegreen.png",
           "drawings/a0-boards.pdf#page1"
-        ]
+        ],
+        "focus_answers_zh": {
+          "阶段路径": "R1–R8 按依赖而非工期排序，近中远三期由闭合结果触发",
+          "试点区域": "三处重点区，其中两张场景卡已进入运行态",
+          "参与主体": "role_spec.json 的八岗位与四类复核主体，含缺岗禁令",
+          "指标": "58 项指标分四族，每项带 measures 与作废条件",
+          "可核验数据边界": "assumptions.json 逐条写明前置条件；官方数据未公开处标 unknown"
+        }
       },
       {
         "dimension_id": "public_interest_inclusion",
         "title_zh": "公共利益与包容性",
+        "review_focus_zh": "是否兼顾居民、青年人才、企业、高校、游客和弱势群体。",
         "report_sections": [
           "用户画像（agent.3，九类）",
           "测点用地的公共性：一条会否决选址的规则",
@@ -1680,11 +1710,20 @@
           "assumptions.json#A-ROSTER-001",
           "assets/figures/key-areas.png",
           "drawings/a0-boards.pdf#page1"
-        ]
+        ],
+        "focus_answers_zh": {
+          "居民": "画像 P4 周边长期居民（老年人），非智能手机路径不可豁免",
+          "青年人才": "画像 P2 创业团队与开发者、P3 高校师生",
+          "企业": "画像 P2 与 P8 企业服务与运营人员，承担季度复测",
+          "高校": "画像 P3 高校师生，三等点高频使用者",
+          "游客": "画像 P9 国际访客与研究者，承担外部独立复测",
+          "弱势群体": "画像 P5 轮椅使用者与行动障碍者、P6 儿童与照护者、P7 一线服务人员"
+        }
       },
       {
         "dimension_id": "risk_compliance",
         "title_zh": "风险与合规意识",
+        "review_focus_zh": "是否尊重公开资料边界、隐私、版权和政策不确定性。",
         "report_sections": [
           "三条红线不是本方案的善意，是现行法规的义务",
           "八维风险自评（随包提交 `risk.json`）",
@@ -1695,11 +1734,18 @@
           "sources.json#rights_summary",
           "assumptions.json#A-BOUNDARY-001",
           "self_check.json"
-        ]
+        ],
+        "focus_answers_zh": {
+          "公开资料边界": "sources.json 三十条来源逐条写明取证方式与不可用于何处",
+          "隐私": "场景卡逐张写明数据输入与人工复核，个人数据不进读数",
+          "版权": "权利与许可台账逐个文件归类，与 manifest 文件数三方相等",
+          "政策不确定性": "A-BOUNDARY-001 等假设逐条写明失效条件，官方 polygon 发布即整体重算"
+        }
       },
       {
         "dimension_id": "expression_completeness",
         "title_zh": "表达完整度",
+        "review_focus_zh": "是否形成可读正文、图纸、HTML、指标、图层和证据引用的完整闭环。",
         "report_sections": [
           "图纸索引与阅读方式",
           "双语导视规则",
@@ -1709,7 +1755,12 @@
           "assets/figures/site-overview.png",
           "drawings/a3-booklet.pdf#page1",
           "manifest.json"
-        ]
+        ],
+        "focus_answers_zh": {
+          "指标": "metrics.json 58 项，27 项由随包 verify.js 独立重算",
+          "图层": "geometry/ 逐个图层随包，空间自检要求全部落在提交边界内",
+          "证据引用的完整闭环": "五个命名空间的引用双向校验，解析不到即构建失败"
+        }
       }
     ],
     "taskbook_read_from": "brief/site-package/agent_taskbook.json @ upstream/main",
