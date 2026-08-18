@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 101 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 104 条 = 101 道闸门 + 3 条披露。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 102 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 105 条 = 102 道闸门 + 3 条披露。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -180,7 +180,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A number in one edition and not the other is a claim only half the readers get.",
-      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 158/149 bare numbers reported but not blocked, and one designed check (81 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 159/149 bare numbers reported but not blocked, and one designed check (81 candidates) not shipped"
     },
     {
       "check_id": "PKG_CLAIM_STATE_QA",
@@ -342,7 +342,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Fail when the prose describing the mutation harness has gone stale.",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 146 mutations, 98 of 101 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 147 mutations, 99 of 102 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -351,7 +351,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Prove the gates can fail, by making them fail on purpose.",
-      "message": "gate_mutation_qa.py — gate mutation: 146 deliberate defects across 98 of 101 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 147 deliberate defects across 99 of 102 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_GEOMETRY_CITATION_QA",
@@ -513,7 +513,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Every identifier in the package obeys the published naming system.",
-      "message": "naming_qa.py — naming: 668 distinct names harvested from the package — 644 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 670 distinct names harvested from the package — 646 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -606,6 +606,15 @@
       "message": "positioning_qa.py — positioning: 3 positionings and 5 functions read from brief/site-package/standards/references/agent-open-call-taskbook-0518.md @ upstream/main, every one occurring in proposal.md, each positioning with a row carrying a failable condition and each of the 5 area-to-function assignments joined as the taskbook joins it; whether the answer is good is the reviewer's call and this does not claim it"
     },
     {
+      "check_id": "PKG_PRINTED_DIFFERENCE_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "what_it_holds_en": "A reader who subtracts what is on the page must get what is on the page.",
+      "message": "printed_difference_qa.py — printed difference: 6 surface(s) print both the walked reading 11,472 m and the drawn spine 9,443 m; 4 of them state the difference, and every one states it as 2,029 m — the number a reader subtracting the two printed figures arrives at, not the rounded difference of the values behind them, which is 2,028. This checks that one pair across both editions and every built sheet; it does not hunt for arithmetic in general, and the readings themselves are held by benchmark_chain_qa and verify.js"
+    },
+    {
       "check_id": "PKG_PROJECT_DEPENDENCY_QA",
       "result": "pass",
       "severity": "info",
@@ -639,7 +648,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Two files, one register: the halves must agree, and no prose may state the split.",
-      "message": "register_split_qa.py — register split: 269 + 96 = 365 entries, both halves stating the same total of 365, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
+      "message": "register_split_qa.py — register split: 270 + 96 = 366 entries, both halves stating the same total of 366, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
     },
     {
       "check_id": "PKG_REGISTRY_ALIGNMENT_QA",
@@ -980,7 +989,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 365 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 26、rival-read 26、self 237；最常见形状：check-measured-the-convenient-thing 63、two-copies-of-one-thing-drifted 59、deliverable-not-inspected-before-shipping 33、claim-that-cannot-be-checked-by-construction 30。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 365 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 366 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 26、rival-read 26、self 238；最常见形状：check-measured-the-convenient-thing 63、two-copies-of-one-thing-drifted 59、deliverable-not-inspected-before-shipping 33、claim-that-cannot-be-checked-by-construction 30。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 366 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -988,7 +997,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：146 处人为缺陷，覆盖 98 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 146 deliberate defects across 98 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：147 处人为缺陷，覆盖 99 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 147 deliberate defects across 99 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -1195,7 +1204,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30620339,
+      "total_bytes": 30624985,
       "maintainer_bypass": false
     },
     "stderr": ""
