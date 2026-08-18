@@ -1580,8 +1580,8 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 ## The instrument on the site's own data
 
-The taskbook lists eight tracks. The two this proposal works in are the two thinnest in the
-field — the evidential basis for choosing them, not a preference.
+The taskbook lists eight tracks. Both this proposal works in are thinly covered; the table
+below says how thinly. That is the basis, not a preference.
 
 <!-- TRACKS:BEGIN -->
 
@@ -1596,7 +1596,7 @@ field — the evidential basis for choosing them, not a preference.
 | youth-friendly public space | 72 | 9.1% |
 | **robotics and autonomous mobility** | **41** | 5.2% |
 
-Across 793 merged proposals; tracks are multi-select, so the shares sum above 100%. The two bold rows are the tracks this proposal works in, and the two thinnest in the field.
+Across 793 merged proposals; tracks are multi-select, so the shares sum above 100%. The two bold rows are this proposal's tracks: the thinnest of the eight and the third-thinnest.
 
 <!-- TRACKS:END -->
 
@@ -1837,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 1169 KB, 1,810 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files, 1171 KB, 1,811 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
