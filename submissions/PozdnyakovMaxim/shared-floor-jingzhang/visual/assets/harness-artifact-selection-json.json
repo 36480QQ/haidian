@@ -1,0 +1,57 @@
+{
+  "schema_version": "shared-floor-immutable-artifact-v1",
+  "rights": "COMMUNITY-DISPLAY-ONLY",
+  "source_path": "selection.json",
+  "source_sha256": "e9bc2fac996adda50766ab6eb5d779970a52c9538d936b74735fff4720f36e65",
+  "source_size_bytes": 1460,
+  "content": {
+    "run_id": "jingzhang-d775d3c540f6",
+    "provisional_preferred_candidate_id": "C03-SHARED-FLOOR",
+    "selection_status": "eligible_for_blind_pairwise",
+    "pareto_candidate_ids": [
+      "C01-CIVIC-PROVING-LINE",
+      "C02-FOUR-SEASON-COURTYARDS",
+      "C03-SHARED-FLOOR"
+    ],
+    "diagnostic_ranking_only": [
+      "C02-FOUR-SEASON-COURTYARDS",
+      "C03-SHARED-FLOOR",
+      "C01-CIVIC-PROVING-LINE"
+    ],
+    "scores": {
+      "C01-CIVIC-PROVING-LINE": {
+        "programme_fit": 0.0,
+        "open_ground": 0.488784,
+        "winter_sun": 1.0,
+        "summer_shade": 0.0,
+        "adaptability": 1.0,
+        "route_redundancy": 0.0,
+        "weighted_preference_aid": 0.423318
+      },
+      "C02-FOUR-SEASON-COURTYARDS": {
+        "programme_fit": 0.106302,
+        "open_ground": 1.0,
+        "winter_sun": 0.415527,
+        "summer_shade": 1.0,
+        "adaptability": 0.0,
+        "route_redundancy": 1.0,
+        "weighted_preference_aid": 0.533589
+      },
+      "C03-SHARED-FLOOR": {
+        "programme_fit": 1.0,
+        "open_ground": 0.0,
+        "winter_sun": 0.0,
+        "summer_shade": 0.78466,
+        "adaptability": 0.82334,
+        "route_redundancy": 0.0,
+        "weighted_preference_aid": 0.482367
+      }
+    },
+    "hard_gate_pass": {
+      "C01-CIVIC-PROVING-LINE": true,
+      "C02-FOUR-SEASON-COURTYARDS": true,
+      "C03-SHARED-FLOOR": true
+    },
+    "decision_note": "The numeric aid is subordinate to hard gates and Pareto eligibility. It is not a professional jury score and cannot select the winner."
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "schema_version": "shared-floor-immutable-artifact-v1",
+  "rights": "COMMUNITY-DISPLAY-ONLY",
+  "source_path": "candidates/C01-CIVIC-PROVING-LINE/design_state.json",
+  "source_sha256": "67dbc29a6f1469cf99fdd86f17a53ac138f4c9658ca94797e31690b3bc8825de",
+  "source_size_bytes": 5868,
+  "content": {
+    "candidate_id": "C01-CIVIC-PROVING-LINE",
+    "title_zh": "京张验线",
+    "title_en": "The Civic Proving Line",
+    "causal_thesis": "Turn the railway into a physical sequence of admission, observation, refusal, ordinary use and retirement so embodied AI cannot jump directly from laboratory to public space.",
+    "masses": [
+      {
+        "id": "PL-TRIAL-01",
+        "x": -300,
+        "y": 0,
+        "width": 40,
+        "depth": 20,
+        "height": 8,
+        "storeys": 2,
+        "layer": "infill",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      },
+      {
+        "id": "PL-TRIAL-02",
+        "x": -200,
+        "y": 0,
+        "width": 40,
+        "depth": 20,
+        "height": 8,
+        "storeys": 2,
+        "layer": "infill",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      },
+      {
+        "id": "PL-TRIAL-03",
+        "x": -100,
+        "y": 0,
+        "width": 40,
+        "depth": 20,
+        "height": 8,
+        "storeys": 2,
+        "layer": "infill",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      },
+      {
+        "id": "PL-TRIAL-04",
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "depth": 20,
+        "height": 8,
+        "storeys": 2,
+        "layer": "infill",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      },
+      {
+        "id": "PL-TRIAL-05",
+        "x": 100,
+        "y": 0,
+        "width": 40,
+        "depth": 20,
+        "height": 8,
+        "storeys": 2,
+        "layer": "infill",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      },
+      {
+        "id": "PL-TRIAL-06",
+        "x": 200,
+        "y": 0,
+        "width": 40,
+        "depth": 20,
+        "height": 8,
+        "storeys": 2,
+        "layer": "infill",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      },
+      {
+        "id": "PL-TRIAL-07",
+        "x": 300,
+        "y": 0,
+        "width": 40,
+        "depth": 20,
+        "height": 8,
+        "storeys": 2,
+        "layer": "infill",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      },
+      {
+        "id": "PL-ANCHOR-01",
+        "x": -240,
+        "y": 64,
+        "width": 110,
+        "depth": 40,
+        "height": 24,
+        "storeys": 5,
+        "layer": "support",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      },
+      {
+        "id": "PL-ANCHOR-02",
+        "x": 0,
+        "y": 64,
+        "width": 110,
+        "depth": 40,
+        "height": 24,
+        "storeys": 5,
+        "layer": "support",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      },
+      {
+        "id": "PL-ANCHOR-03",
+        "x": 240,
+        "y": 64,
+        "width": 110,
+        "depth": 40,
+        "height": 24,
+        "storeys": 5,
+        "layer": "support",
+        "angle": 0.0,
+        "public_through_route": false,
+        "summer_only_shade": false
+      }
+    ],
+    "routes": [
+      {
+        "id": "PL-PUBLIC",
+        "start": [
+          -345,
+          -100
+        ],
+        "end": [
+          345,
+          -100
+        ],
+        "kind": "public",
+        "operating_rule": "always"
+      },
+      {
+        "id": "PL-ROOM-LINK-01",
+        "start": [
+          -300,
+          -100
+        ],
+        "end": [
+          -300,
+          -59
+        ],
+        "kind": "public",
+        "operating_rule": "always"
+      },
+      {
+        "id": "PL-ROOM-LINK-02",
+        "start": [
+          -200,
+          -100
+        ],
+        "end": [
+          -200,
+          -59
+        ],
+        "kind": "public",
+        "operating_rule": "always"
+      },
+      {
+        "id": "PL-ROOM-LINK-03",
+        "start": [
+          -100,
+          -100
+        ],
+        "end": [
+          -100,
+          -59
+        ],
+        "kind": "public",
+        "operating_rule": "always"
+      },
+      {
+        "id": "PL-ROOM-LINK-04",
+        "start": [
+          0,
+          -100
+        ],
+        "end": [
+          0,
+          -59
+        ],
+        "kind": "public",
+        "operating_rule": "always"
+      },
+      {
+        "id": "PL-ROOM-LINK-05",
+        "start": [
+          100,
+          -100
+        ],
+        "end": [
+          100,
+          -59
+        ],
+        "kind": "public",
+        "operating_rule": "always"
+      },
+      {
+        "id": "PL-ROOM-LINK-06",
+        "start": [
+          200,
+          -100
+        ],
+        "end": [
+          200,
+          -59
+        ],
+        "kind": "public",
+        "operating_rule": "always"
+      },
+      {
+        "id": "PL-ROOM-LINK-07",
+        "start": [
+          300,
+          -100
+        ],
+        "end": [
+          300,
+          -59
+        ],
+        "kind": "public",
+        "operating_rule": "always"
+      }
+    ],
+    "public_rooms": [
+      {
+        "id": "PL-OBS-01",
+        "x": -300,
+        "y": -42,
+        "width": 64,
+        "depth": 34,
+        "kind": "observation-sandbox"
+      },
+      {
+        "id": "PL-OBS-02",
+        "x": -200,
+        "y": -42,
+        "width": 64,
+        "depth": 34,
+        "kind": "observation-closed-proof"
+      },
+      {
+        "id": "PL-OBS-03",
+        "x": -100,
+        "y": -42,
+        "width": 64,
+        "depth": 34,
+        "kind": "observation-public-observation"
+      },
+      {
+        "id": "PL-OBS-04",
+        "x": 0,
+        "y": -42,
+        "width": 64,
+        "depth": 34,
+        "kind": "observation-escorted-use"
+      },
+      {
+        "id": "PL-OBS-05",
+        "x": 100,
+        "y": -42,
+        "width": 64,
+        "depth": 34,
+        "kind": "observation-timed-public-use"
+      },
+      {
+        "id": "PL-OBS-06",
+        "x": 200,
+        "y": -42,
+        "width": 64,
+        "depth": 34,
+        "kind": "observation-ordinary-adoption"
+      },
+      {
+        "id": "PL-OBS-07",
+        "x": 300,
+        "y": -42,
+        "width": 64,
+        "depth": 34,
+        "kind": "observation-review-and-retirement"
+      }
+    ],
+    "invariants": [
+      "ordered-risk-stage-sequence",
+      "public-observation-without-core-entry",
+      "human-handoff-at-every-stage",
+      "trial-removal-preserves-public-route"
+    ]
+  }
+}
