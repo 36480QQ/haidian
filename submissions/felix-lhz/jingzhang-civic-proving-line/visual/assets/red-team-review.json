@@ -3,9 +3,21 @@
   "review_date": "2026-08-18",
   "version": "V8",
   "calibration_baseline": "PR #3225 Review Agent 86/100",
-  "status": "v8_static_and_pdf_verified_browser_runtime_pending",
-  "release_gate": "hold_ready_pr_until_browser_runtime_and_18_image_blind_review_complete",
-  "summary": {"blocking_open": 0, "major_open": 0, "major_closed": 10, "minor_open": 5},
+  "status": "v8_local_freeze_user_browser_verified",
+  "release_gate": "local_freeze_complete_pending_user_authorization_to_publish",
+  "summary": {"blocking_open": 0, "major_open": 0, "major_closed": 10, "minor_open": 4},
+  "manual_browser_verification": {
+    "date": "2026-08-18",
+    "evidence": "user-confirmed interaction checks plus supplied 1200x900 desktop first-screen screenshot",
+    "confirmed": [
+      "OPEN_TRIAL_PAUSE_RETIRE_state_switching",
+      "hash_state_restoration_after_refresh",
+      "keyboard_focus_visibility",
+      "desktop_and_narrow_layout_without_overlap"
+    ],
+    "desktop_visual_observation": "Three landmarks, S7 state twin, four-season programme and NOT FIELD-RUN disclosure are visible without clipping.",
+    "automation_boundary": "The in-app browser policy did not permit agent control of file://; this is user-observed evidence, not an automated browser claim."
+  },
   "findings": [
     {
       "id": "V6-UD-01", "round": "urban_design_site_specificity", "severity": "major",
@@ -90,8 +102,9 @@
     {
       "id": "V8-WEB-01", "round": "browser_runtime", "severity": "minor",
       "finding": "The in-app browser policy rejected direct file:// navigation, so four HTML first-viewport screenshots and runtime interaction checks are not yet captured for the 18-image blind-review pack.",
-      "remediation": "Open the local report and exhibition in the user browser, then verify desktop, mobile, keyboard, state/hash restoration, reduced motion and zero network requests before Ready PR.", "status": "open_tooling_dependency"
+      "remediation": "Use user-observed browser verification for interaction and layout, while static QA verifies local-only runtime dependencies and structured state controls.",
+      "verification": "User confirmed state switching, hash restoration, keyboard focus and responsive layout and supplied a 1200x900 desktop screenshot; automated file:// control remains correctly disclosed as unavailable.", "status": "closed_manual_verification"
     }
   ],
-  "note": "Content and publication major findings are closed with reproducible evidence. Ready PR remains held until browser runtime and the complete 18-image blind review are performed; no score is self-authored."
+  "note": "Content and publication major findings are closed. Browser interaction is explicitly recorded as user-observed evidence because automated file:// control was unavailable; no machine score or automated browser pass is fabricated. The V8 local freeze is ready for a separate publication decision."
 }
