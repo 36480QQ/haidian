@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M129",
+      "gate": "sources_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把其中一个国际案例「明确不迁移什么」的那句话清空，只留下「可借鉴点」。**案例表因此只说它借了什么，不说它不借什么**——而评审整份读到 `sources.json`。",
+      "what_en": "Empty one international case's statement of what is explicitly not transferred, leaving only what it lends. **The case table then says what was borrowed and not what was refused** - and the reviewer receives sources.json whole.",
+      "why_zh": "**一个只写「可借鉴」的先例，等于把这个先例整个认领下来。**新加坡 AI Verify 提供的是复测的技术形态，而本方案不发证书、不认可任何机构背书——不写下这一句，读者有理由以为本方案也想要那套认证。这条做法借自本轮实测得分最高的一份方案：先例表里专设一列写明不迁移什么。",
+      "why_en": "**A precedent cited only for what it lends is a precedent claimed whole.** Singapore's AI Verify supplies the technical shape of re-testing, while this proposal issues no certificate and accepts no institutional endorsement; without that sentence a reader may reasonably assume the certification comes with it. The practice is borrowed from the highest-scoring proposal measured this round, whose precedent table carries a column for what is deliberately not transferred."
+    },
+    {
       "id": "M127",
       "gate": "rubric_focus_qa.py",
       "target": "compliance_matrix.json",
@@ -1543,7 +1555,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 126,
+  "caught": 127,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
