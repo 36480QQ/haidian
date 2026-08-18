@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M126",
+      "gate": "rubric_focus_qa.py",
+      "target": "compliance_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把答的词从「游客」改成「观光客」——**意思一样，而组织方公布的那句话里没有这个词**。评审是拿着 `review_focus_zh` 逐维度打分的；答一个他不会去搜的词，等于没答。",
+      "what_en": "Answer 观光客 instead of 游客 - **the same thing, and not a word the sentence the organisers publish contains**. The reviewer scores each dimension against review_focus_zh; answering a word he will not search for is not answering.",
+      "why_zh": "本包读了维度的 id 与标题，**丢掉了 `review_focus_zh`**——那句话才是这个维度实际要看的东西。于是这张对照表只答了「哪一节」，从没答过「这个维度点名的那几样」。公共利益那一维点名六类人，正文六类全都写了，**但「游客」全文只出现一次、「弱势」一次也没有**——因为本包管他们叫国际访客、轮椅使用者、儿童与照护者、一线服务人员。本包早就有这条规矩（用公告的词答公告的问题），只是从没用在评分维度上。",
+      "why_en": "This package read each dimension's id and title and **dropped review_focus_zh**, the sentence saying what the dimension is actually scored on. The map therefore answered which section and never the things the dimension names. Public interest names six constituencies; the proposal covers all six, **but says 游客 once and 弱势 never**, because it calls them international visitors, wheelchair users, children with carers and frontline workers. The package already had this rule for the announcement's own vocabulary and had never applied it to the rubric."
+    },
+    {
       "id": "M125",
       "gate": "metric_class_prose_qa.py",
       "target": "proposal.md",
@@ -1506,7 +1518,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 123,
+  "caught": 124,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1569,6 +1581,7 @@
     "review_rules_qa.py",
     "risk_join_qa.py",
     "role_spec_qa.py",
+    "rubric_focus_qa.py",
     "scarce_surface_qa.py",
     "scenario_verification_qa.py",
     "schema_conformance_qa.py",
@@ -1636,6 +1649,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 88 道闸门，其中 85 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 88 gates, 85 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 89 道闸门，其中 86 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 89 gates, 86 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
