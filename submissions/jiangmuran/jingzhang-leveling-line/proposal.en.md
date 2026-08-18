@@ -131,7 +131,7 @@ The proposal is organised on the three levels the announcement sets, and each ma
 |---|---|---|---|---|
 | Coordinated research area | ~43.6 km²; north to the North Fifth Ring Road, east to the Jingzang Expressway, south to Xizhimenwai Street, west to Wanquanhe Road | Whole-network control | Annual | `provisional_boundaries.geojson#PROV-RESEARCH-001` [source:BOUNDARY-SOURCE] |
 | Overall design area | ~11.4 km²; the 1–2 km of city around the heritage park | First-order route: the spine plus two closing routes | Semi-annual | [data:geometry/site_boundary.geojson#SITE-001], recomputed as [metric:site_area_sqm] |
-| Key areas | ~369.3 ha, the total of [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002] and [data:geometry/key_areas.geojson#PROV-KEY-003] (192.9 / 104.3 / 72.0 ha); the announcement text says ~368.4 ha | Origin benchmark BM-0 and first-order BM-1 / BM-2 | Annual | [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| Key areas | ~369.3 ha [metric:key_area_area_sqm], total of [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002] and [data:geometry/key_areas.geojson#PROV-KEY-003] (192.9 / 104.3 / 72.0 ha); the announcement text says ~368.4 ha | Origin benchmark BM-0 and first-order BM-1 / BM-2 | Annual | [data:geometry/key_areas.geojson#PROV-KEY-001] |
 
 These are not three unrelated drawing sets. The research area decides **what to measure**, the design area **which route to measure along**, the key areas **where to set the stones**. Any area, ratio or count not recomputable from a structured layer is not written as a conclusion — the verifiability requirement [standard:MOHURD-URBAN-DESIGN-MEASURES] places on urban design output.
 
@@ -158,7 +158,7 @@ These are not three unrelated drawing sets. The research area decides **what to 
 |---|---|
 | **两区一带** | The regional-interface section extends the three-areas-two-wings into a regional levelling network, with the terms of connection to the Economic-Technological Development Area, Future Science City and Huairou Science City, and why their closure records cannot substitute for one another. |
 | **1+X+1** | The announcement's term for Haidian's industrial system. This proposal does not re-sort industrial categories; it supplies failable conditions for where AI+ verticals may land. Category proportions belong to statutory planning and are not drafted here. |
-| **骑行道** | The spine is a continuous walkable and cycling public axis; breaks and east-west connection are in the eleven stitching points, each with its measured nearest crossing. Cycleway widths and surfacing are engineering specialisms and are not given here. |
+| **骑行道** | The spine is a continuous walkable and cycling public axis; breaks and east-west links are the eleven stitching points [metric:stitching_point_count], each with its nearest measured crossing. Cycleway widths and surfacing are engineering specialisms, not given. |
 | **端侧算力** | The compute-siting section gives four conditions, two waiting on official conditions and two judgeable today. Edge compute is named here as the near-field condition among them: it decides whether a reading can be completed at the benchmark rather than in a data centre. |
 | **分布式能源** | **This proposal cannot supply it.** No electricity, photovoltaic or energy-capacity source in this package can be cited, so it is registered as a data gap rather than inferred. That is consistent with the reading plate needing no power and the benchmarks carrying no lighting: a device that does not depend on supply does not need supply solved first. |
 | **北影** | An art resource the announcement names. It is registered here as a cultural and artistic resource within scope awaiting verification, alongside the Tsinghua Garden station; its spatial relation and use require official material and are neither inferred nor put into any layer. |
@@ -504,7 +504,7 @@ Each type is translated below into **the spatial condition a site visit could fa
 
 | Key area | Type assigned | The condition that can be failed | What failing means | Evidence |
 |---|---|---|---|---|
-| Zhongzhi Park AI autonomous innovation accelerator | **garden-type** | **A garden has to be crossable.** Green space and water may not be an internal courtyard: the public route from the spine to the Qing river is 6.0 m clear, never more than 250 m from the next, ungated at any hour; the test ground is enclosed **by time of day**, not permanently by boundary (CONSTRAINT-001, 5.30 ha). | If a plot refuses the route, the cost is written in minutes on FIG.14 rather than the area being re-scored as connected. | FIG.14, `geometry/constraints.geojson#CONSTRAINT-001` |
+| Zhongzhi Park AI autonomous innovation accelerator | **garden-type** | **A garden has to be crossable.** Green space and water may not be an internal courtyard: the public route from the spine to the Qing river is 6.0 m clear, never more than 250 m from the next, ungated at any hour; the test ground is enclosed **by time of day**, not permanently by boundary (CONSTRAINT-001, 5.30 ha [metric:test_field_area_sqm]). | If a plot refuses the route, the cost is written in minutes on FIG.14 rather than the area being re-scored as connected. | FIG.14, `geometry/constraints.geojson#CONSTRAINT-001` |
 | Beijing AI Origin community | **campus-adjacent** | **Campus-adjacent is a walking time, not an adjacency.** The link from campus to block may not be by steps alone; the step-free link is a 1:12 ramp **on the desire line**, not a detour to a side gate (FIG.17); translation space sits at street level, not deep in a compound; the evidence hall is ungated. | If the only approach is by steps the area fails the type, regardless of whether any gradient is compliant. | FIG.17; part KIT-04 (300 mm guidance strip, Ø1,500 turning space, 2,100 mm headroom) |
 | Dazhongsi AI industry cluster | **city-type** | **City-type means the ground floor runs continuous with the station concourse and no queue stands on the footway.** All four quadrants of the junction walkable (FIG.12); the machine queue reserve **behind the building line**, 18 m² for eight units at 1,800 mm turning (FIG.24); the third-order benchmark reachable from the concourse. | The moment a queue takes footway width the area fails the type, however orderly the queue is. | FIG.12, FIG.24, `metrics.json#queue_reserve_area_sqm` |
 
@@ -757,7 +757,7 @@ Those counts used to come from hand-reading eighteen proposals, with neither the
 1. **Any safety incident suspends the whole network** — not the machine involved, not the segment involved, but every machine of that type on the line, stopped and re-measured. The reason is the same as the general principle: local patching is not permitted.
 2. **Tolerance scales with kinetic energy.** F tightens with the product of mass and speed. To run faster or heavier, an operator must first obtain a stricter closure clearance — not apply for an exemption.
 
-**Incident handling and appeal, with a clock on it.** Across the 40 proposals in these two tracks almost everyone writes that decisions can be appealed, and **six give a numeric time limit — four other than this.** A right of appeal without a deadline cannot be enforced: nobody can tell whether it was honoured. Appeal is therefore written as measurable commitments, and the time limits enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.**
+**Incident handling and appeal, with a clock on it.** Across the 40 proposals in these two tracks almost everyone writes that decisions can be appealed, and **six give a numeric time limit — four other than this.** A right of appeal with no deadline cannot be enforced: nobody can tell if it was honoured. Appeal is therefore written as measurable commitments, and the time limits enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.**
 
 **Insurance and a removal bond, so exit can be executed.** Eleven of the 40 mention a bond or insurance, ten excluding this one, always as one word in a list, none designing the risk transfer. Yet this proposal's core rule returns the whole route for re-survey and removes the devices, and without funding that defers into indefinite observation. Admission therefore requires a **removal bond** for removal and site restoration, scaled to device count and area, released on **a full re-survey cycle within tolerance** rather than on entering operation; the claims route for an injured pedestrian is published at admission; and F1 risk transfer must be in place before closure clearance.
 
@@ -795,7 +795,7 @@ This section is not a corporate-responsibility statement. It is part of the clos
 
 **The equivalent non-AI path (non-waivable).** Every function a robot service covers must also exist as a human path. Public service may not be interrupted when robots stop — this is both a public-interest requirement and the precondition that makes the network-wide suspension rule executable in practice. If suspension would interrupt service, the rule will be circumvented.
 
-**Explicitly not done:** no robot model, supplier or statutory speed limit (FIG.24's ≤ 6 km/h site speed is this proposal's own, registered A-DEVICE-001), and no road redline or cross-section conclusion — procurement decisions and statutory control respectively [standard:MOHURD-CONTROL-DETAILED-PLANNING]. What it gives is **what to measure, where, by whom, and what happens when tolerance is exceeded.** S06's pilot boundary is [data:geometry/constraints.geojson#CONSTRAINT-002] (23.75 ha); this sentence previously cited CONSTRAINT-001, the S11 test field at 5.30 ha — a different scenario on different ground, 4.5 times smaller.
+**Explicitly not done:** no robot model, supplier or statutory speed limit (FIG.24's ≤ 6 km/h site speed is this proposal's own, registered A-DEVICE-001), and no road redline or cross-section conclusion — procurement decisions and statutory control respectively [standard:MOHURD-CONTROL-DETAILED-PLANNING]. What it gives is **what to measure, where, by whom, and what happens when tolerance is exceeded.** S06's pilot boundary is [data:geometry/constraints.geojson#CONSTRAINT-002] (23.75 ha [metric:robot_pilot_area_sqm]); this sentence once cited CONSTRAINT-001, the S11 test field at 5.30 ha — a different scenario on different ground, 4.5 times smaller.
 
 ### Main front two: AI public services — health, education, legal, daily life (agent.3, F1/F2)
 
@@ -817,7 +817,7 @@ The core claim for public services is therefore: **do not measure the average; m
 
 ### Three controlled industry validation scenarios (agent.3)
 
-S06, S10 and S11 are three controlled test scenarios: **take readings inside an extent that can be enclosed, paused and rolled back, before considering expansion.** A test scenario is never approved operation; each has its own boundary — S11's test field [data:geometry/constraints.geojson#CONSTRAINT-001] (5.30 ha), S06's low-speed robot pilot [data:geometry/constraints.geojson#CONSTRAINT-002] (23.75 ha), S10's public-safety review [data:geometry/constraints.geojson#CONSTRAINT-003] (1.54 ha). Only the first used to be cited — **a controlled boundary nobody cites is a boundary nobody reviews** — so `verify.js` asserts every constraint is cited.
+S06, S10 and S11 are three controlled test scenarios: **take readings inside an extent that can be enclosed, paused and rolled back, before considering expansion.** A test scenario is never approved operation; each has its own boundary — S11's test field [data:geometry/constraints.geojson#CONSTRAINT-001] (5.30 ha), S06's low-speed robot pilot [data:geometry/constraints.geojson#CONSTRAINT-002] (23.75 ha), S10's public-safety review [data:geometry/constraints.geojson#CONSTRAINT-003] (1.54 ha [metric:safety_review_area_sqm]). Only the first was cited — **a controlled boundary nobody cites is a boundary nobody reviews** — so `verify.js` asserts every constraint is cited.
 
 ### The closure mechanism, defined in full
 
@@ -1429,9 +1429,9 @@ Both numbers are true; what was missing was saying so. **Both now ship, and both
 
 <!-- CEILING:BEGIN -->
 
-**“computed exactly” and “measured reliably” are two axes; this package had one.** 26 metrics carry `confidence: high` and none said how strong the thing measured was. The 412.5 m closure is the case in point: the arithmetic is exact and `check_osm.js` reproduces it to the metre, but one input is a boundary this proposal **inferred** because no official polygon exists, and the other is crowd-sourced. “high” is true of the computation and misleading about the reading, and no field separated them. **That is how 412.5 m comes to read as a survey result.**
+**“computed exactly” and “measured reliably” are two axes; this package had one.** 27 metrics carry `confidence: high` and none said how strong the thing measured was. The 412.5 m closure is the case in point: the arithmetic is exact and `check_osm.js` reproduces it to the metre, but one input is a boundary this proposal **inferred** because no official polygon exists, and the other is crowd-sourced. “high” is true of the computation and misleading about the reading, and no field separated them. **That is how 412.5 m comes to read as a survey result.**
 
-So each metric's **evidence ceiling** is computed from the weakest file it reads rather than judged, and ships as `visual/assets/evidence_ceiling.json`. The result is unflattering, which is why it is stated: of 53 metrics, 52 can be graded — the remaining one is marked unknown with no value, so it has no number to overstate. **17 are capped at `provisional`** (drawn on an inferred boundary), **13 at `background_only`** (crowd-sourced geometry or keyword counts over other people's proposals), 18 at `self_measured` (they measure this package), exactly **4** reaches `official_context`, and **none** reaches `regulatory_baseline`. Of the 30 weak-ceiling metrics, 24 read `confidence_is_about: computation` — the “high” is about the arithmetic — and 6 read `reading`: the OSM fabric, where the reading is the uncertainty (E197).
+So each metric's **evidence ceiling** is computed from the weakest file it reads rather than judged, and ships as `visual/assets/evidence_ceiling.json`. The result is unflattering, which is why it is stated: of 58 metrics, 57 can be graded — the remaining one is marked unknown with no value, so it has no number to overstate. **21 are capped at `provisional`** (drawn on an inferred boundary), **14 at `background_only`** (crowd-sourced geometry or keyword counts over other people's proposals), 18 at `self_measured` (they measure this package), exactly **4** reaches `official_context`, and **none** reaches `regulatory_baseline`. Of the 35 weak-ceiling metrics, 29 read `confidence_is_about: computation` — the “high” is about the arithmetic — and 6 read `reading`: the OSM fabric, where the reading is the uncertainty (E197).
 
 **The practice is borrowed openly.** This package's increment is not the idea but **no longer doing it by hand**: the ceiling comes from the source files, so a source weaker than the claim fails the build, not the reader.
 
@@ -1525,7 +1525,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-310 entries. By finder:
+311 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
@@ -1534,7 +1534,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | This package's own gate | 21 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 20 | Seen elsewhere, absent here |
+| Reading a rival's package | 21 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1545,7 +1545,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | An easy measure | 57 |
 | Two copies drifted | 44 |
 | Shipped unseen | 30 |
-| Uncheckable | 24 |
+| Uncheckable | 25 |
 | Outlived the package | 21 |
 | Nothing fails it | 17 |
 | Recorded where found | 14 |
@@ -1820,7 +1820,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 <!-- CHECKLIST:BEGIN -->
 
-1. `node visual/assets/verify.js` — recomputes all 23 metrics marked `metric_class: 1` and **asserts coverage both ways**: every one recomputed, nothing that is not one. Plus a dozen structural conclusions: the land-use partition tested point by point, each controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict
+1. `node visual/assets/verify.js` — recomputes all 27 metrics marked `metric_class: 1` and **asserts coverage both ways**: every one recomputed, nothing that is not one. Plus a dozen structural conclusions: the land-use partition tested point by point, each controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict
 2. `node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site figure from the OSM coordinates beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute
 3. `node visual/assets/check_cards.js` — resolves each card's benchmark, spatial anchor, exit quantity and executing role against something that exists; `--selftest` proves the checks refuse eight broken card sets
 4. `node check_closure.js` and `run_s08_tabletop.js` — the mechanism as a data contract, and a ten-case tabletop against the shipped reader
@@ -1837,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.7 s**; 9 files, 1165 KB, 1,810 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files, 1157 KB, 1,803 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

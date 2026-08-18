@@ -122,7 +122,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 |---|---|---|---|---|
 | 统筹研究范围 | 约 43.6 km²，北至北五环路、东至京藏高速、南至西直门外大街、西至万泉河路 | 水准网整体控制 | 年 | 仓库 `provisional_boundaries.geojson#PROV-RESEARCH-001` [source:BOUNDARY-SOURCE] |
 | 总体设计范围 | 约 11.4 km²，遗址公园周边 1–2 km 城市地区 | 一等水准路线（主脊 + 两条附合路线） | 半年 | [data:geometry/site_boundary.geojson#SITE-001]，复算 [metric:site_area_sqm] |
-| 重点区域范围 | 约 369.3 ha（由 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003] 三处合计复算：192.9 / 104.3 / 72.0 ha；公告文字为约 368.4 ha） | 水准原点 BM-0 与一等水准点 BM-1 / BM-2 | 年 | [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| 重点区域范围 | 约 369.3 ha [metric:key_area_area_sqm]（由 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003] 三处合计复算：192.9 / 104.3 / 72.0 ha；公告文字为约 368.4 ha） | 水准原点 BM-0 与一等水准点 BM-1 / BM-2 | 年 | [data:geometry/key_areas.geojson#PROV-KEY-001] |
 
 三层不是三套互不相干的图纸。统筹研究决定测什么，总体设计决定沿哪条路线测，重点区域决定在哪里立标石。任何无法从结构化图层复算的面积、比例或数量，不写入结论——这是 [standard:MOHURD-URBAN-DESIGN-MEASURES] 对城市设计成果可核验性的基本要求。
 
@@ -463,7 +463,7 @@ Logo 方向取自水准点标石的实物形态与水准仪的读数十字丝，
 
 **这一节此前只有分类，没有几何——现在有了。** 本方案的 `roads.geojson` 长期只含主脊与两条测量路线，而正文用整整一节讨论缝合点，却拿不出任何可被核验的空间对象。这与本方案在别人结构化字段里报告的缺陷是同一个，因此补齐：
 
-以提交的主脊 `ROAD-001` 与 OSM 实测干道（trunk/primary/secondary，须有名称）在 EPSG:4548 下求交，得到 **11 个东西缝合点**，逐一写入 [data:geometry/roads.geojson#ROAD-101,ROAD-102,ROAD-103,ROAD-104,ROAD-105,ROAD-106,ROAD-107,ROAD-108,ROAD-109,ROAD-110,ROAD-111]（ROAD-101 至 ROAD-111），每段为垂直于主脊、横跨走廊的 90 m 连通提案（此前误取「垂直于该干道」，那个方向沿走廊而行，连不通它本要缝的东西两侧，见 E204）：
+以提交的主脊 `ROAD-001` 与 OSM 实测干道（trunk/primary/secondary，须有名称）在 EPSG:4548 下求交，得到 **11 个东西缝合点** [metric:stitching_point_count]，逐一写入 [data:geometry/roads.geojson#ROAD-101,ROAD-102,ROAD-103,ROAD-104,ROAD-105,ROAD-106,ROAD-107,ROAD-108,ROAD-109,ROAD-110,ROAD-111]（ROAD-101 至 ROAD-111），每段为垂直于主脊、横跨走廊的 90 m 连通提案（此前误取「垂直于该干道」，那个方向沿走廊而行，连不通它本要缝的东西两侧，见 E204）：
 
 | 缝合点 | 类别判定 | 最近已测绘过街设施 |
 |---|---|---|
@@ -866,7 +866,7 @@ Logo 方向取自水准点标石的实物形态与水准仪的读数十字丝，
 
 ### 三个产业测试验证场景（agent.3）
 
-S06、S10、S11 构成三个受控测试场景，共同特征是：**先在可封闭、可暂停、可回滚的范围内取得读数，再考虑扩大**。测试场景一律不得表述为已批准运营。三者各有各的边界，不共用一块：S11 测试场 [data:geometry/constraints.geojson#CONSTRAINT-001]（5.30 ha）、S06 低速机器人试点 [data:geometry/constraints.geojson#CONSTRAINT-002]（23.75 ha）、S10 公共安全复盘 [data:geometry/constraints.geojson#CONSTRAINT-003]（1.54 ha）。此前三处只引了第一个，另外两个要素因此在包里无人引用——**一条无人引用的受控边界，等于一条无人复核的边界**，现由 `verify.js` 逐个断言每条约束都被正文引用。
+S06、S10、S11 构成三个受控测试场景，共同特征是：**先在可封闭、可暂停、可回滚的范围内取得读数，再考虑扩大**。测试场景一律不得表述为已批准运营。三者各有各的边界，不共用一块：S11 测试场 [data:geometry/constraints.geojson#CONSTRAINT-001]（5.30 ha [metric:test_field_area_sqm]）、S06 低速机器人试点 [data:geometry/constraints.geojson#CONSTRAINT-002]（23.75 ha [metric:robot_pilot_area_sqm]）、S10 公共安全复盘 [data:geometry/constraints.geojson#CONSTRAINT-003]（1.54 ha [metric:safety_review_area_sqm]）。此前三处只引了第一个，另外两个要素因此在包里无人引用——**一条无人引用的受控边界，等于一条无人复核的边界**，现由 `verify.js` 逐个断言每条约束都被正文引用。
 
 ### 闭合差机制的完整定义
 
@@ -1490,7 +1490,7 @@ FIG.15 把三期增量、各期新增测点与**每一期建成后的年运营�
 
 ## 指标体系、面积复算与合规矩阵
 
-**这份文件里有 53 项指标，它们不是在量同一件事，因此分成四族写明。**9 项**量现状**——路网密度、交叉口、街块中位规模、建筑基底覆盖，从 OpenStreetMap 在 EPSG:4548 下算出，定级 `background_only`；27 项**量本方案自己的设计**——主脊长度、测点数、各类占比、法定管控项的未知登记；9 项**量任务书要求的交付内容**——场景卡、画像、地标、案例、更新项目与覆盖；8 项**量本包自己的核验装置**——矩阵引用、校验器、勘误、权利台账、语料规模。每项都带 `measures`，读者不必靠猜。**每一项还写明什么会让它作废、以及哪一个专业会为它签字**——`recalculation_trigger` 与 `verification_role`：现状读数等 OSM 或官方实测取代；设计读数在官方 polygon 发布后**整体重算**，不得只换一个文件；本方案不起草的管控项，签字方是法定控规编制单位，不是本方案。两项都由构建从该指标已有的族别与所读图层派生，不逐条手写。
+**这份文件里有 58 项指标，它们不是在量同一件事，因此分成四族写明。**9 项**量现状**——路网密度、交叉口、街块中位规模、建筑基底覆盖，从 OpenStreetMap 在 EPSG:4548 下算出，定级 `background_only`；32 项**量本方案自己的设计**——主脊长度、测点数、各类占比、法定管控项的未知登记；9 项**量任务书要求的交付内容**——场景卡、画像、地标、案例、更新项目与覆盖；8 项**量本包自己的核验装置**——矩阵引用、校验器、勘误、权利台账、语料规模。每项都带 `measures`，读者不必靠猜。**每一项还写明什么会让它作废、以及哪一个专业会为它签字**——`recalculation_trigger` 与 `verification_role`：现状读数等 OSM 或官方实测取代；设计读数在官方 polygon 发布后**整体重算**，不得只换一个文件；本方案不起草的管控项，签字方是法定控规编制单位，不是本方案。两项都由构建从该指标已有的族别与所读图层派生，不逐条手写。
 
 指标分三类，分别进入 `metrics.json`、`assumptions.json` 与 `compliance_matrix.json` [depth:metrics_recalculation]。**三类是「可复算性」一轴上的三档；另有两值不在这轴上，不说清则 21 项像掉在分类外**：`package_self_count`（17）数本包自身产物，不由几何推出；`measured_not_reverified`（4）已实测、未被随包校验器复算。**都不是更弱的第三类。**
 
@@ -1522,9 +1522,9 @@ FIG.15 把三期增量、各期新增测点与**每一期建成后的年运营�
 
 <!-- CEILING:BEGIN -->
 
-**「算得准」和「测得可靠」是两根轴，本包此前只有一根。** `metrics.json` 里 26 条写着`confidence: high`，而没有一条写它测的东西有多强。412.5 m 这个闭合差就是例子：算式是精确的，`check_osm.js` 能复算到米；但它的两个输入，一个是本方案在官方 polygon 未发布时**推定**的边界，另一个是众包几何。「high」对算式成立，对读数误导——而文件里没有任何字段能把这两件事分开。**「412.5 m」正是这样读起来像一次实测的。**
+**「算得准」和「测得可靠」是两根轴，本包此前只有一根。** `metrics.json` 里 27 条写着`confidence: high`，而没有一条写它测的东西有多强。412.5 m 这个闭合差就是例子：算式是精确的，`check_osm.js` 能复算到米；但它的两个输入，一个是本方案在官方 polygon 未发布时**推定**的边界，另一个是众包几何。「high」对算式成立，对读数误导——而文件里没有任何字段能把这两件事分开。**「412.5 m」正是这样读起来像一次实测的。**
 
-因此每条指标的**证据上限**由它读取的文件里最弱的一份算出，不由作者判断，随包为 `visual/assets/evidence_ceiling.json`。结果不好看，所以照写：53 条指标中 52 条可定上限（余下一条是如实标记 unknown、没有取值的，也就没有可被高估的数），**17 条的上限是 `provisional`**（画在推定边界上），**13 条是 `background_only`**（众包几何或关键词统计），18 条 `self_measured`（测的是本包自己），只有 **4 条**够得上 `official_context`，**没有一条**够得上 `regulatory_baseline`。上限为 provisional／background 的 30 条里，24 条 `confidence_is_about` 写作 `computation`——「高」说的是算式，不是读数；另 6 条写作 `reading`，是 OSM 肌理的读数，那里可疑的本来就是读数本身。**两个数由构建从 `evidence_ceiling.json` 数出**（E197）。
+因此每条指标的**证据上限**由它读取的文件里最弱的一份算出，不由作者判断，随包为 `visual/assets/evidence_ceiling.json`。结果不好看，所以照写：58 条指标中 57 条可定上限（余下一条是如实标记 unknown、没有取值的，也就没有可被高估的数），**21 条的上限是 `provisional`**（画在推定边界上），**14 条是 `background_only`**（众包几何或关键词统计），18 条 `self_measured`（测的是本包自己），只有 **4 条**够得上 `official_context`，**没有一条**够得上 `regulatory_baseline`。上限为 provisional／background 的 35 条里，29 条 `confidence_is_about` 写作 `computation`——「高」说的是算式，不是读数；另 6 条写作 `reading`，是 OSM 肌理的读数，那里可疑的本来就是读数本身。**两个数由构建从 `evidence_ceiling.json` 数出**（E197）。
 
 **这条做法是公开借鉴来的。** 本方案的增量不是想到，而是**不再靠人做**：上限由来源文件推出，加入比结论更弱的来源会让构建失败，而不是让读者受骗。
 
@@ -1660,7 +1660,7 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **310 条**。按发现者分：
+当前 **311 条**。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
@@ -1669,7 +1669,7 @@ node visual/assets/verify.js
 | 本包自己的闸门 | 21 | 构建时被抓出——这是闸门本该做的事 |
 | 包外对抗性通读 | 31 | 由本包之外的读者按评审收到的那几份文件逐条挑错 |
 | **包外评审** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190、仓库 CI |
-| 读别人的方案 | 20 | 在别人的包里看见本包缺的那一样 |
+| 读别人的方案 | 21 | 在别人的包里看见本包缺的那一样 |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1680,7 +1680,7 @@ node visual/assets/verify.js
 | 检查测了方便测的东西 | 57 |
 | 同一件事的两份拷贝各自漂移 | 44 |
 | 交付物在提交前没被看过 | 30 |
-| 这个说法在这种载体上原理上无法被核对 | 24 |
+| 这个说法在这种载体上原理上无法被核对 | 25 |
 | 声明活得比包的内容久 | 21 |
 | 写成硬约束，却判不了不合格 | 17 |
 | 记在了发现它的地方，没记在别人会去查的地方 | 14 |
@@ -1949,7 +1949,7 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 
 <!-- CHECKLIST:BEGIN -->
 
-1. `node visual/assets/verify.js` —— 独立重算 `metrics.json` 里全部 23 条 `metric_class: 1` 指标，并**双向断言这一覆盖**（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析。退出码即结论；
+1. `node visual/assets/verify.js` —— 独立重算 `metrics.json` 里全部 27 条 `metric_class: 1` 指标，并**双向断言这一覆盖**（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析。退出码即结论；
 2. `node visual/assets/check_osm.js` —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测；
 3. `node visual/assets/check_cards.js` —— 逐张场景卡把水准点、空间锚点、退出量与执行角色解析到实际对象；`--selftest` 用八份人为改坏的卡片证明这些检查会拒绝；
 4. `node visual/assets/check_closure.js` 与 `run_s08_tabletop.js` —— 闭合差机制的数据契约与十例桌面演练；
@@ -1966,7 +1966,7 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 
 因此上面 12 项里，**AI 评审能按字面执行的是 0 项**：其余各项指名的文件不在它收到的东西里。**拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。**这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。
 
-**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.7 秒**；另有 9 份文件、1165 KB、1,810 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
+**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.74 秒**；另有 9 份文件、1157 KB、1,803 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
 
 **这条披露有时效，而缺口已经补上。** Issue #2170 对应的 PR #2181 已并入 `upstream/main`：review-input 里有了可审计的访问边界，明确参赛者的校验脚本从不执行，并要求评审**不得仅因打不开一份未提供的 artifact 就扣分或判 gate 失败**。上面的「0 项」不变，变的是它的后果：可达性不再被误读为投稿方没有提供（E210）。本包已按该恢复路径做过——关键推导同步写进 `assumptions.json` 与 `metrics.json`，三份矩阵逐行标注证据的可达程度。
 

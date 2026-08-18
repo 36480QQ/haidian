@@ -9,7 +9,7 @@
       "area_en": "Zhongzhi Park AI autonomous innovation accelerator",
       "type_en": "garden-type",
       "criterion_zh": "**「园」必须可穿越。** 绿地与水系不得只作地块内部庭院：自主脊到清河的公共通道净宽 ≥ 6.0 m、中心间距 ≤ 250 m、24 小时不设门禁；受控测试场按**时段**围合而非按边界永久围合（CONSTRAINT-001，5.30 ha）。",
-      "criterion_en": "**A garden has to be crossable.** Green space and water may not be an internal courtyard: the public route from the spine to the Qing river is 6.0 m clear, never more than 250 m from the next, ungated at any hour; the test ground is enclosed **by time of day**, not permanently by boundary (CONSTRAINT-001, 5.30 ha).",
+      "criterion_en": "**A garden has to be crossable.** Green space and water may not be an internal courtyard: the public route from the spine to the Qing river is 6.0 m clear, never more than 250 m from the next, ungated at any hour; the test ground is enclosed **by time of day**, not permanently by boundary (CONSTRAINT-001, 5.30 ha [metric:test_field_area_sqm]).",
       "fails_zh": "通道被地块拒绝时，代价按 FIG.14 写成分钟，不改判为「已连通」。",
       "fails_en": "If a plot refuses the route, the cost is written in minutes on FIG.14 rather than the area being re-scored as connected.",
       "evidence_zh": "FIG.14、`geometry/constraints.geojson#CONSTRAINT-001`",

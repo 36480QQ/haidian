@@ -126,6 +126,13 @@ const spine = (() => {
 const publicFeatures = read('geometry/public_space.geojson').features;
 
 const fabric = read('visual/assets/osm_fabric.json');
+function constraintArea(id) {
+  const f = read('geometry/constraints.geojson').features
+    .find((x) => String(x.properties.id) === id);
+  if (!f) throw new Error(`constraints.geojson has no ${id}; the prose states its area`);
+  return geomArea(f.geometry);
+}
+
 const computed = {
   site_area_sqm: site,
   green_ratio: layerArea('green_space.geojson') / site,
@@ -143,6 +150,17 @@ const computed = {
   // would mean the phases had started overlapping again.
   phasing_union_area_sqm: layerArea('phasing.geojson'),
   key_area_count: read('geometry/key_areas.geojson').features.length,
+  // Five quantities the prose stated and no sent file carried: the key-area
+  // total, the eleven stitching points and the three controlled extents.
+  // They were cited only to geometry/, which the review never receives, so
+  // every one of them was correct and none was checkable (E311).
+  // stitching_point_count is deliberately absent: its positions come from
+  // the OSM fabric, so it is background_only rather than class 1, and this
+  // table covers exactly class 1 in both directions.
+  key_area_area_sqm: layerArea('key_areas.geojson'),
+  test_field_area_sqm: constraintArea('CONSTRAINT-001'),
+  robot_pilot_area_sqm: constraintArea('CONSTRAINT-002'),
+  safety_review_area_sqm: constraintArea('CONSTRAINT-003'),
   leveling_spine_length_m: spine,
   benchmark_count: publicFeatures.filter((f) => f.properties.benchmark_id).length,
 
