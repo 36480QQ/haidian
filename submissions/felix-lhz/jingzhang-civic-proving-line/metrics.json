@@ -365,7 +365,7 @@
     },
     "s7_traceable_spatial_object_count": {
       "status": "known",
-      "value": 41,
+      "value": 98,
       "unit": "count",
       "source_files": [
         "geometry/roads.geojson",
@@ -373,20 +373,21 @@
         "geometry/buildings.geojson",
         "geometry/constraints.geojson"
       ],
-      "formula": "count(features where id starts with V6-D-)",
+      "formula": "count(features where id starts with V7-D-)",
       "confidence": "high",
       "assumptions": [
-        "A-SPATIAL-ATLAS-001"
+        "A-SPATIAL-ATLAS-001",
+        "A-V7-S7-DIMENSIONS"
       ]
     },
     "s7_review_scale_count": {
       "status": "known",
-      "value": 4,
+      "value": 5,
       "unit": "count",
       "source_files": [
         "visual/assets/spatial-atlas.json"
       ],
-      "formula": "count(1:5000, 1:2000, 1:500, 1:200 review scales)",
+      "formula": "count(1:5000, 1:2000, 1:500, 1:200, assembly axonometric)",
       "confidence": "high",
       "assumptions": [
         "A-SPATIAL-ATLAS-001"
@@ -404,7 +405,34 @@
       "assumptions": [
         "A-METRICS-001"
       ],
-      "reason": "S7 has not been field-run; the denominator and stratification protocol are designed but no observations exist."
+      "reason": "Not field-run."
+    },
+    "s7_prototype_kit_item_count": {
+      "status": "known",
+      "value": 17,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-atlas.json"
+      ],
+      "formula": "count(local_design.prototype_kit)",
+      "confidence": "high",
+      "assumptions": [
+        "A-V7-S7-DIMENSIONS"
+      ]
+    },
+    "s7_formal_cost_status": {
+      "status": "unknown",
+      "value": null,
+      "unit": "CNY",
+      "source_files": [
+        "visual/assets/spatial-atlas.json"
+      ],
+      "formula": "sum(design_quantity × pending_market_quote)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-V7-S7-DIMENSIONS"
+      ],
+      "reason": "Formal market quotes are pending."
     }
   }
 }
