@@ -36,5 +36,13 @@
       "target": "proposal.md",
       "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
     }
-  ]
+  ],
+  "ok": true,
+  "can_enter_formal_review": true,
+  "gates": {
+    "DETERMINISTIC_VALIDATION": "pass",
+    "PROFESSIONAL_EVIDENCE": "pass",
+    "SPATIAL_REVIEW": "pass",
+    "VISUAL_PACKAGING": "pass"
+  }
 }
