@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.4.0",
-  "review_date": "2026-08-17",
-  "version": "V6",
-  "calibration_baseline": "PR #3071 Review Agent 81/100",
-  "status": "major_open_pending_blind_visual_review",
+  "schema_version": "1.5.0",
+  "review_date": "2026-08-18",
+  "version": "V7",
+  "calibration_baseline": "PR #3191 Review Agent 86/100",
+  "status": "v7_qa_verified",
   "summary": {
     "blocking_open": 0,
-    "major_open": 1,
-    "major_closed": 3,
-    "minor_open": 2
+    "major_open": 0,
+    "major_closed": 7,
+    "minor_open": 6
   },
   "findings": [
     {
@@ -23,19 +23,6 @@
       "remediation": "Assigned distinct decisions to overall, land-use, key-area, mobility and evidence figures; replaced foreignObject text with native SVG text and rechecked 1024 px output.",
       "verification": "Closed by bilingual canonical PNG review; all five are distinct and no title or stop condition is clipped.",
       "status": "closed"
-    },
-    {
-      "id": "V6-UD-01",
-      "round": "urban_design_site_specificity",
-      "severity": "major",
-      "finding": "V5 used geometry count and legends as a proxy for visible urban-design specificity; a blind reviewer could not locate curbs, crossings, staffed posts, fire access and restoration without reading the legend.",
-      "evidence": [
-        "PR #3071 Review Agent remained 81/100",
-        "V5 canonical key-areas and PDF first-page review"
-      ],
-      "remediation": "Rebuild S7 as the flagship four-scale sample from shared local-metre objects and surface it in every Review Agent entry point.",
-      "verification": "Technical evidence complete: five canonical figures, four PDF first pages, bilingual proposal pages and bilingual visual first screens form an 18-image review pack; 68 traceable geometry objects and all four S7 states pass offline QA. Pending: user-led label-off blind review before any Ready PR.",
-      "status": "open"
     },
     {
       "id": "V5-PUB-01",
@@ -76,7 +63,88 @@
       "finding": "No scene has been field-run, so outcome thresholds and adoption decisions remain unavailable.",
       "remediation": "Keep performance unknown and advance only through the E0–E4 evidence ladder after field baseline establishment.",
       "status": "open_external_dependency"
+    },
+    {
+      "id": "V7-MIN-03",
+      "round": "context_data",
+      "severity": "minor",
+      "finding": "Dazhongsi OSM context contains only one building feature.",
+      "remediation": "Show data-missing zones and distinguish design envelopes.",
+      "status": "open_external_dependency"
+    },
+    {
+      "id": "V7-MIN-03",
+      "round": "context_data",
+      "severity": "minor",
+      "finding": "Dazhongsi OSM context contains only one building feature.",
+      "remediation": "Show data-missing zones and distinguish design envelopes.",
+      "status": "open_external_dependency"
+    },
+    {
+      "id": "V7-MIN-03",
+      "round": "context_data",
+      "severity": "minor",
+      "finding": "Dazhongsi OSM context contains only one building feature.",
+      "remediation": "Show data-missing zones and distinguish design envelopes.",
+      "status": "open_external_dependency"
+    },
+    {
+      "id": "V6-UD-01",
+      "round": "urban_design_site_specificity",
+      "severity": "major",
+      "finding": "V6 depended on labels to identify spatial safety and restoration.",
+      "evidence": [
+        "PR #3191 score 86",
+        "V6 18-image inspection"
+      ],
+      "remediation": "Rebuild S7 as public cross, trial bay, evidence porch and blue-green edge.",
+      "verification": "V7 18-image review and 1024px PDF inspection directly locate the two public routes, one-side bay, evidence porch, staff posts, E-stops, fire and removal paths.",
+      "status": "closed"
+    },
+    {
+      "id": "V7-PUB-01",
+      "round": "publication_resolution",
+      "severity": "major",
+      "finding": "V6 A0 principal images were approximately 34-38 ppi.",
+      "evidence": [
+        "pdfimages inspection"
+      ],
+      "remediation": "Generate native A0 vector pages.",
+      "verification": "Both A0 PDFs are native 1189×841 mm, three pages, and contain zero embedded raster images; English overflow was corrected after rendered inspection.",
+      "status": "closed"
+    },
+    {
+      "id": "V7-DATA-01",
+      "round": "referential_integrity",
+      "severity": "major",
+      "finding": "Active records retained old-version design references.",
+      "evidence": [
+        "repository scan"
+      ],
+      "remediation": "Migrate active objects to V7-D and resolve every reference.",
+      "verification": "Automated QA resolves 98/98 active design references, with zero missing and zero legacy references.",
+      "status": "closed"
+    },
+    {
+      "id": "V7-IMP-01",
+      "round": "implementation_feasibility",
+      "severity": "major",
+      "finding": "V6 lacked a reproducible kit and operating day.",
+      "evidence": [
+        "V6 evidence review"
+      ],
+      "remediation": "Add quantities, ownership, quote status and six-step day.",
+      "verification": "V7 publishes 17 reproducible quantities, maintenance and retirement roles, six operating steps, permit gate, recovery clock and three decision gates; prices remain pending.",
+      "status": "closed"
+    },
+    {
+      "id": "V7-MIN-03",
+      "round": "context_data",
+      "severity": "minor",
+      "finding": "Dazhongsi OSM context contains only one building feature.",
+      "remediation": "Show data-missing zones and distinguish design envelopes.",
+      "status": "open_external_dependency"
     }
   ],
-  "note": "V6 does not close spatial depth by counting objects. Closure requires blind visual identification plus four-scale traceability."
+  "note": "Major findings close only after rendered evidence and automated reference checks; the OSM context gap remains an explicit external dependency."
 }

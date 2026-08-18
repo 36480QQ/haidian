@@ -1,243 +1,87 @@
-const fs = require('fs');
-const path = require('path');
+const fs=require('fs'),path=require('path');
+const ROOT=path.resolve(__dirname,'..','..'),GEO=path.join(ROOT,'geometry');
+const read=f=>JSON.parse(fs.readFileSync(f,'utf8')),write=(f,v)=>fs.writeFileSync(f,`${JSON.stringify(v,null,2)}\n`),bi=(zh,en)=>({zh,en});
+const centre=[116.3490,39.9570],lngM=1/(111320*Math.cos(centre[1]*Math.PI/180)),latM=1/110540;
+const wgs=([x,y])=>[+(centre[0]+x*lngM).toFixed(7),+(centre[1]+y*latM).toFixed(7)],close=p=>[...p,p[0]];
+const length=p=>p.slice(1).reduce((s,n,i)=>s+Math.hypot(n[0]-p[i][0],n[1]-p[i][1]),0);
+const area=p=>Math.abs(p.reduce((s,n,i)=>{const q=p[(i+1)%p.length];return s+n[0]*q[1]-q[0]*n[1]},0)/2),round=n=>+n.toFixed(1);
+const common=(id,layer,extra={})=>({id,layer,source_type:'agent_generated_design',confidence:'low',geometry_role:'design_proposal',status:'concept_proposal',station:'dazhongsi',evidence_level:'E1_concept_design',dimension_basis:'prototype_design_assumption_pending_survey',assembly_state:'reversible_prototype',maintenance_owner:'scenario_operator_pending_appointment',retirement_destination:'reuse_or_return_to_supplier',...extra});
+const feature=(kind,id,points,extra={})=>({type:'Feature',id,properties:common(id,kind==='line'?'ROAD_CENTERLINE':kind==='point'?'REGULATORY_CONTROL':kind==='building'?'BUILDING_FOOTPRINT':'PUBLIC_SPACE',extra),geometry:kind==='line'?{type:'LineString',coordinates:points.map(wgs)}:kind==='point'?{type:'Point',coordinates:wgs(points)}:{type:'Polygon',coordinates:[close(points).map(wgs)]}});
 
-const ROOT = path.resolve(__dirname, '..', '..');
-const GEO = path.join(ROOT, 'geometry');
-const read = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
-const write = (file, value) => fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`);
-const bilingual = (zh, en) => ({ zh, en });
-const centre = [116.3490, 39.9570];
-const lngPerMetre = 1 / (111320 * Math.cos(centre[1] * Math.PI / 180));
-const latPerMetre = 1 / 110540;
-const wgs = ([x, y]) => [
-  Number((centre[0] + x * lngPerMetre).toFixed(7)),
-  Number((centre[1] + y * latPerMetre).toFixed(7)),
+const D={
+ extent_m:[-100,-90,100,96],
+ scale_note:bi('原型设计假设，待测绘、站口、道路红线、消防、管线和交通组织复核','Prototype design assumption pending survey, station-exit, road-line, fire, utility and traffic verification'),
+ spatial_signature:bi('公共十字不断线，AI 只进入东南可逆试验湾，城市决定留在西南证据门廊。','The public cross stays continuous, AI enters only the southeast reversible bay, and the civic decision remains at the southwest evidence porch.'),
+ routes:[
+  ['V7-D-BASE-NS','baseline',4,[[0,-90],[0,-16],[-4,-4],[0,16],[0,96]]],['V7-D-BASE-EW','baseline',4,[[-100,0],[-18,0],[-4,4],[18,0],[100,0]]],
+  ['V7-D-TACTILE-NS','tactile_guidance',.4,[[-1,-88],[-1,-15],[-5,-3],[-1,15],[-1,94]]],['V7-D-TACTILE-EW','tactile_guidance',.4,[[-98,1],[-18,1],[-4,5],[18,1],[98,1]]],
+  ['V7-D-CROSS-N','crossing',4,[[-13,16],[13,16]]],['V7-D-CROSS-S','crossing',4,[[-13,-16],[13,-16]]],['V7-D-RAMP-N','curb_ramp',2,[[0,13],[0,19]]],['V7-D-RAMP-S','curb_ramp',2,[[0,-13],[0,-19]]],
+  ['V7-D-TRANSIT','conventional_transit',6,[[-84,58],[-18,58],[18,58],[84,58]]],['V7-D-EMERGENCY','emergency',4,[[24,-32],[74,-32],[94,-8]]],['V7-D-REMOVAL','removal',4,[[48,-70],[100,-70]]],['V7-D-FIRE','fire_access',4,[[-94,78],[-44,78],[-20,58]]],
+  ['V7-D-CURB-N','curb_edge',.15,[[-84,50],[84,50]]],['V7-D-CURB-S','curb_edge',.15,[[-84,66],[84,66]]],['V7-D-SERVICE-ROUTE','service_and_storage',3,[[46,-78],[88,-78],[98,-70]]]
+ ].map(([id,role,width_m,points])=>({id,role,width_m,points})),
+ spaces:[
+  ['V7-D-FORECOURT','conventional_forecourt',[[-84,16],[84,16],[84,78],[-84,78]]],['V7-D-PLATFORM','conventional_platform',[[-78,48],[78,48],[78,68],[-78,68]]],
+  ['V7-D-WAIT-W','waiting_zone',[[-76,22],[-22,22],[-22,44],[-76,44]]],['V7-D-WAIT-E','waiting_zone',[[22,22],[76,22],[76,44],[22,44]]],
+  ['V7-D-TRIAL','ai_trial',[[28,-72],[80,-72],[80,-26],[28,-26]]],['V7-D-BUFFER','safety_buffer',[[22,-78],[86,-78],[86,-20],[22,-20]]],
+  ['V7-D-EVIDENCE','evidence_porch_apron',[[-80,-72],[-20,-72],[-20,-20],[-80,-20]]],['V7-D-EGRESS','evacuation_apron',[[-18,-18],[18,-18],[18,18],[-18,18]]],
+  ['V7-D-RAIN-W','rain_garden',[[-90,20],[-82,20],[-82,74],[-90,74]]],['V7-D-RAIN-E','rain_garden',[[82,20],[90,20],[90,74],[82,74]]],
+  ['V7-D-SHADE-W','shade_rest',[[-74,24],[-26,24],[-26,42],[-74,42]]],['V7-D-SHADE-E','shade_rest',[[26,24],[74,24],[74,42],[26,42]]],
+  ['V7-D-RESTORE','retired_public_use',[[28,-72],[80,-72],[80,-26],[28,-26]]],['V7-D-NODATA','open_data_missing_context_hatch',[[-100,-90],[100,-90],[100,-80],[-100,-80]]]
+ ].map(([id,role,points])=>({id,role,points})),
+ buildings:[
+  ['V7-D-PORCH','staffed_evidence_porch',[[-74,-64],[-26,-64],[-26,-44],[-74,-44]]],['V7-D-SERVICE','staffed_public_service',[[-70,26],[-44,26],[-44,40],[-70,40]]],
+  ['V7-D-CONTROL','trial_control',[[58,-18],[78,-18],[78,-4],[58,-4]]],['V7-D-STORAGE','equipment_storage',[[48,-86],[76,-86],[76,-76],[48,-76]]],
+  ['V7-D-EVIDENCE-WALL','public_evidence_interface',[[-72,-62],[-28,-62],[-28,-58],[-72,-58]]]
+ ].map(([id,role,points])=>({id,role,points})),points:[],states:{}
+};
+const add=(id,xy,role)=>D.points.push({id,xy,role});
+[
+ ['V7-D-ENT-N',[0,96],'directional_entrance'],['V7-D-ENT-E',[100,0],'directional_entrance'],['V7-D-ENT-S',[0,-90],'directional_entrance'],['V7-D-ENT-W',[-100,0],'directional_entrance'],
+ ['V7-D-STAFF-BASE',[-50,-52],'baseline_staff_position'],['V7-D-STAFF-TRIAL',[26,-32],'trial_staff_position'],['V7-D-ESTOP-01',[31,-30],'emergency_stop'],['V7-D-ESTOP-02',[77,-30],'emergency_stop'],
+ ['V7-D-UTILITY',[78,-68],'isolated_utility_interface'],['V7-D-FIRE-GATE',[-94,78],'fire_access_gate'],['V7-D-APPEAL',[-70,-60],'appeal_and_exit_notice'],['V7-D-WATER',[-30,32],'drinking_water'],
+ ['V7-D-STATE-OPEN',[-64,-52],'public_state_board'],['V7-D-STATE-TRIAL',[54,-24],'trial_state_board'],['V7-D-COUNTER',[-56,-52],'manual_non_identifying_counter'],['V7-D-STORAGE-GATE',[78,-80],'equipment_storage_gate'],['V7-D-RAMP-PT-N',[0,16],'curb_ramp'],['V7-D-RAMP-PT-S',[0,-16],'curb_ramp']
+].forEach(x=>add(...x));
+for(let i=0;i<8;i++)add(`V7-D-LIGHT-${String(i+1).padStart(2,'0')}`,[-78+i*22,i<4?18:-74],'lighting');
+for(let i=0;i<8;i++)add(`V7-D-SEAT-${String(i+1).padStart(2,'0')}`,[-68+(i%4)*42,i<4?28:38],'public_seating');
+for(let i=0;i<12;i++)add(`V7-D-TREE-${String(i+1).padStart(2,'0')}`,[-86+(i%6)*34,i<6?20:72],'tree_pit_design_assumption');
+for(let i=0;i<18;i++)add(`V7-D-BARRIER-${String(i+1).padStart(2,'0')}`,[24+(i%6)*12,-76+Math.floor(i/6)*28],'removable_barrier_module');
+D.states={OPEN:['V7-D-BASE-NS','V7-D-BASE-EW','V7-D-TACTILE-NS','V7-D-TACTILE-EW','V7-D-TRANSIT','V7-D-FORECOURT','V7-D-PLATFORM','V7-D-SERVICE','V7-D-PORCH'],TRIAL:['V7-D-TRIAL','V7-D-BUFFER','V7-D-CONTROL','V7-D-STAFF-TRIAL','V7-D-ESTOP-01','V7-D-ESTOP-02','V7-D-STATE-TRIAL'],PAUSE:['V7-D-EMERGENCY','V7-D-EGRESS','V7-D-STAFF-BASE','V7-D-APPEAL','V7-D-STATE-OPEN'],RETIRE:['V7-D-REMOVAL','V7-D-SERVICE-ROUTE','V7-D-RESTORE','V7-D-EVIDENCE','V7-D-PORCH','V7-D-EVIDENCE-WALL','V7-D-STORAGE']};
+const all=()=>[...D.routes,...D.spaces,...D.buildings,...D.points],by=id=>all().find(x=>x.id===id),routeArea=ids=>ids.reduce((s,id)=>s+length(by(id).points)*by(id).width_m,0),spaceArea=ids=>ids.reduce((s,id)=>s+area(by(id).points),0);
+const kits=[
+ ['KIT-PAV-01','accessible_paving','sqm',round(routeArea(['V7-D-BASE-NS','V7-D-BASE-EW'])),'sum(route_length × design_width)','permanent','public_realm_operator','retain_in_place'],
+ ['KIT-ACC-01','tactile_guidance','linear_m',round(length(by('V7-D-TACTILE-NS').points)+length(by('V7-D-TACTILE-EW').points)),'sum(tactile_route_length)','permanent','public_realm_operator','retain_in_place'],
+ ['KIT-ACC-02','curb_ramps','count',2,'count(curb_ramp_points)','permanent','public_realm_operator','retain_in_place'],['KIT-BGR-01','rain_gardens','sqm',round(spaceArea(['V7-D-RAIN-W','V7-D-RAIN-E'])),'sum(rain_garden_area)','permanent','landscape_operator','retain_in_place'],
+ ['KIT-SHA-01','shade_canopies','sqm',round(spaceArea(['V7-D-SHADE-W','V7-D-SHADE-E'])),'sum(shade_rest_area)','permanent','public_realm_operator','retain_or_reuse'],['KIT-FUR-01','public_seats','count',8,'count(public_seating_points)','permanent','public_realm_operator','retain_or_reuse'],
+ ['KIT-WAT-01','drinking_water_point','count',1,'count(drinking_water_points)','permanent','public_realm_operator','retain_in_place'],['KIT-LGT-01','lighting_points','count',8,'count(lighting_points)','permanent','public_realm_operator','retain_or_reuse'],
+ ['KIT-SAF-01','removable_barrier_modules','count',18,'count(removable_barrier_points)','trial_only','safety_operator','store_for_next_trial'],['KIT-SAF-02','emergency_stops','count',2,'count(emergency_stop_points)','trial_only','safety_operator','return_or_reuse'],
+ ['KIT-EVD-01','public_state_boards','count',2,'count(public_state_board_points)','all_states','civic_evidence_operator','retain_as_public_notice'],['KIT-EVD-02','evidence_porch','sqm',round(area(by('V7-D-PORCH').points)),'polygon_area(evidence_porch)','all_states','baseline_service_operator','retain_or_adapt'],
+ ['KIT-OPS-01','staffed_service_kiosk','count',1,'count(staffed_public_service)','all_states','baseline_service_operator','retain_or_redeploy'],['KIT-AI-01','trial_control_kiosk','count',1,'count(trial_control)','trial_only','ai_operator','return_to_supplier'],
+ ['KIT-AI-02','isolated_edge_cabinet','count',1,'count(isolated_utility_interface)','trial_only','ai_operator','return_to_supplier'],['KIT-DAT-01','manual_non_identifying_counter','count',1,'count(manual_non_identifying_counter)','open_and_trial','data_steward','reuse_in_next_baseline'],
+ ['KIT-RET-01','equipment_storage_module','count',1,'count(equipment_storage)','trial_pause_retire','asset_operator','retain_or_redeploy']
 ];
-const close = (points) => [...points, points[0]];
+D.prototype_kit=kits.map(([id,item,unit,quantity,quantity_method,assembly_state,maintenance_owner,retirement_destination])=>({id,item,unit,quantity,quantity_method,assembly_state,maintenance_owner,maintenance_cycle:item.includes('emergency')?'pre_trial_function_test':item.includes('lighting')?'monthly_visual_check':'pre_opening_visual_check',retirement_destination,quote_status:'pending_market_quote',unit_price:null,total_cost_formula:`quantity(${quantity} ${unit}) × pending_market_quote`}));
+D.daily_operation_steps=[
+ ['DAY-01','OPEN','开场检查公共十字、盲道、坡道、照明和人工岗位。','Opening check of public cross, tactile guidance, ramps, lighting and staffed posts.'],['DAY-02','OPEN','普通接驳独立运行并建立非识别基线记录。','Conventional interchange runs independently and establishes a non-identifying baseline log.'],
+ ['DAY-03','TRIAL','许可与检查表齐全后，在东南湾开启单次受控试验。','After permits and checks are complete, open one controlled trial in the southeast bay.'],['DAY-04','PAUSE','触发停止时设备停机、人工完成任务、公共十字保持开放。','On a stop trigger, equipment halts, staff complete the task and the public cross stays open.'],
+ ['DAY-05','OPEN','闭场前对照普通与试验记录，回执保持采用、修改或停止三选一。','Before close, compare baseline and trial logs; the receipt remains adopt, revise or stop only.'],['DAY-06','RETIRE','设备经撤场线进入存储或供应商回收，试验湾恢复普通用途。','Equipment follows the removal route to storage or supplier return; the bay returns to ordinary use.']
+].map(([id,state,zh,en])=>({id,state,zh,en}));
 
-const common = (id, layer, extra = {}) => ({
-  id,
-  layer,
-  source_type: 'agent_generated_design',
-  confidence: 'low',
-  geometry_role: 'design_proposal',
-  status: 'concept_proposal',
-  station: 'dazhongsi',
-  evidence_level: 'E1_concept_design',
-  dimension_basis: 'prototype_design_assumption_pending_survey',
-  ...extra,
-});
-const line = (id, points, extra = {}) => ({
-  type: 'Feature', id,
-  properties: common(id, 'ROAD_CENTERLINE', extra),
-  geometry: { type: 'LineString', coordinates: points.map(wgs) },
-});
-const polygon = (id, points, extra = {}) => ({
-  type: 'Feature', id,
-  properties: common(id, 'PUBLIC_SPACE', extra),
-  geometry: { type: 'Polygon', coordinates: [close(points).map(wgs)] },
-});
-const building = (id, points, extra = {}) => ({
-  type: 'Feature', id,
-  properties: common(id, 'BUILDING_FOOTPRINT', {
-    retain_renovate_demolish_status: 'concept_adaptive_reuse_or_reversible_structure',
-    ...extra,
-  }),
-  geometry: { type: 'Polygon', coordinates: [close(points).map(wgs)] },
-});
-const point = (id, xy, extra = {}) => ({
-  type: 'Feature', id,
-  properties: common(id, 'REGULATORY_CONTROL', extra),
-  geometry: { type: 'Point', coordinates: wgs(xy) },
-});
+const roads=read(path.join(GEO,'roads.geojson')),spaces=read(path.join(GEO,'public_space.geojson')),buildings=read(path.join(GEO,'buildings.geojson')),constraints=read(path.join(GEO,'constraints.geojson'));
+[roads,spaces,buildings,constraints].forEach(c=>c.features=c.features.filter(f=>!/^V[567]-D-/.test(String(f.id||f.properties?.id))));
+roads.features.push(...D.routes.map(r=>feature('line',r.id,r.points,{route_role:r.role,design_width_m:r.width_m,quantity_method:`line_length × ${r.width_m}m`,name_zh:r.role,name_en:r.role.replaceAll('_',' ')})));
+spaces.features.push(...D.spaces.map(s=>feature('space',s.id,s.points,{space_role:s.role,quantity_method:'polygon_area(local_metre_design)',name_zh:s.role,name_en:s.role.replaceAll('_',' ')})));
+buildings.features.push(...D.buildings.map(b=>feature('building',b.id,b.points,{building_type:['trial_control','equipment_storage'].includes(b.role)?'mobility_hub':'community_service',building_role:b.role,quantity_method:'polygon_area(local_metre_design)',name_zh:b.role,name_en:b.role.replaceAll('_',' ')})));
+constraints.features.push(...D.points.map(p=>feature('point',p.id,p.xy,{point_role:p.role,quantity_method:'count(point_feature)',name_zh:p.role,name_en:p.role.replaceAll('_',' ')})));
+write(path.join(GEO,'roads.geojson'),roads);write(path.join(GEO,'public_space.geojson'),spaces);write(path.join(GEO,'buildings.geojson'),buildings);write(path.join(GEO,'constraints.geojson'),constraints);
 
-// All coordinates below are local-metre prototype assumptions. They are not surveyed site facts.
-const localDesign = {
-  extent_m: [-96, -86, 96, 94],
-  scale_note: bilingual('原型设计假设，待测绘、站口、道路红线和交通组织复核', 'Prototype design assumption pending survey, station-exit, road-line and traffic verification'),
-  routes: [
-    { id: 'V6-D-BASE-NS', role: 'baseline', width_m: 4.0, points: [[0,-86],[0,-14],[-4,-4],[0,14],[0,94]] },
-    { id: 'V6-D-BASE-EW', role: 'baseline', width_m: 4.0, points: [[-96,0],[-16,0],[-4,4],[16,0],[96,0]] },
-    { id: 'V6-D-CROSS-N', role: 'crossing', width_m: 4.0, points: [[-12,14],[12,14]] },
-    { id: 'V6-D-CROSS-S', role: 'crossing', width_m: 4.0, points: [[-12,-14],[12,-14]] },
-    { id: 'V6-D-TRANSIT', role: 'conventional_transit', width_m: 6.0, points: [[-82,56],[-18,56],[18,56],[82,56]] },
-    { id: 'V6-D-EMERGENCY', role: 'emergency', width_m: 4.0, points: [[24,-30],[73,-30],[91,-8]] },
-    { id: 'V6-D-REMOVAL', role: 'removal', width_m: 4.0, points: [[48,-68],[96,-68]] },
-    { id: 'V6-D-FIRE', role: 'fire_access', width_m: 4.0, points: [[-92,76],[-42,76],[-20,56]] },
-    { id: 'V6-D-CURB-N', role: 'curb_edge', width_m: 0.15, points: [[-82,48],[82,48]] },
-    { id: 'V6-D-CURB-S', role: 'curb_edge', width_m: 0.15, points: [[-82,64],[82,64]] },
-  ],
-  spaces: [
-    { id: 'V6-D-FORECOURT', role: 'conventional_forecourt', points: [[-82,14],[82,14],[82,76],[-82,76]] },
-    { id: 'V6-D-PLATFORM', role: 'conventional_platform', points: [[-76,46],[76,46],[76,66],[-76,66]] },
-    { id: 'V6-D-TRIAL', role: 'ai_trial', points: [[26,-70],[78,-70],[78,-24],[26,-24]] },
-    { id: 'V6-D-BUFFER', role: 'safety_buffer', points: [[20,-76],[84,-76],[84,-18],[20,-18]] },
-    { id: 'V6-D-EVIDENCE', role: 'evidence_square', points: [[-78,-70],[-22,-70],[-22,-20],[-78,-20]] },
-    { id: 'V6-D-EGRESS', role: 'evacuation_apron', points: [[-18,-18],[18,-18],[18,18],[-18,18]] },
-    { id: 'V6-D-RAIN-W', role: 'rain_garden', points: [[-88,20],[-80,20],[-80,72],[-88,72]] },
-    { id: 'V6-D-RAIN-E', role: 'rain_garden', points: [[80,20],[88,20],[88,72],[80,72]] },
-    { id: 'V6-D-SHADE-NW', role: 'shade_rest', points: [[-72,22],[-28,22],[-28,42],[-72,42]] },
-    { id: 'V6-D-RESTORE', role: 'retired_public_use', points: [[26,-70],[78,-70],[78,-24],[26,-24]] },
-  ],
-  buildings: [
-    { id: 'V6-D-SERVICE', role: 'staffed_public_service', points: [[-70,24],[-42,24],[-42,40],[-70,40]] },
-    { id: 'V6-D-CONTROL', role: 'trial_control', points: [[58,-16],[76,-16],[76,-2],[58,-2]] },
-    { id: 'V6-D-EVIDENCE-WALL', role: 'public_evidence_interface', points: [[-74,-64],[-26,-64],[-26,-59],[-74,-59]] },
-  ],
-  points: [
-    ['V6-D-ENT-N',[0,94],'directional_entrance'], ['V6-D-ENT-E',[96,0],'directional_entrance'],
-    ['V6-D-ENT-S',[0,-86],'directional_entrance'], ['V6-D-ENT-W',[-96,0],'directional_entrance'],
-    ['V6-D-STAFF-BASE',[-48,32],'baseline_staff_position'], ['V6-D-STAFF-TRIAL',[25,-30],'trial_staff_position'],
-    ['V6-D-ESTOP-01',[29,-28],'emergency_stop'], ['V6-D-ESTOP-02',[75,-28],'emergency_stop'],
-    ['V6-D-UTILITY',[76,-68],'isolated_utility_interface'], ['V6-D-FIRE-GATE',[-92,76],'fire_access_gate'],
-    ['V6-D-APPEAL',[-72,-62],'appeal_and_exit_notice'], ['V6-D-WATER',[-32,32],'drinking_water'],
-    ['V6-D-LIGHT-01',[-74,18],'lighting'], ['V6-D-LIGHT-02',[-24,18],'lighting'],
-    ['V6-D-LIGHT-03',[24,18],'lighting'], ['V6-D-LIGHT-04',[74,18],'lighting'],
-    ['V6-D-LIGHT-05',[-18,-70],'lighting'], ['V6-D-LIGHT-06',[84,-70],'lighting'],
-  ].map(([id, xy, role]) => ({ id, xy, role })),
-  states: {
-    OPEN: ['V6-D-BASE-NS','V6-D-BASE-EW','V6-D-CROSS-N','V6-D-CROSS-S','V6-D-TRANSIT','V6-D-FORECOURT','V6-D-PLATFORM','V6-D-SERVICE'],
-    TRIAL: ['V6-D-TRIAL','V6-D-BUFFER','V6-D-CONTROL','V6-D-STAFF-TRIAL','V6-D-ESTOP-01','V6-D-ESTOP-02'],
-    PAUSE: ['V6-D-EMERGENCY','V6-D-EGRESS','V6-D-STAFF-BASE','V6-D-APPEAL'],
-    RETIRE: ['V6-D-REMOVAL','V6-D-RESTORE','V6-D-EVIDENCE','V6-D-EVIDENCE-WALL'],
-  },
-};
+const refs=all().map(x=>x.id);
+const atlasPath=path.join(__dirname,'spatial-atlas.json'),atlas=read(atlasPath);atlas.schema_version='1.5.0';atlas.publication_version='V7';atlas.subtitle=bi('大钟寺城市采纳站：公共十字、可逆试验湾与证据门廊','Dazhongsi Civic Adoption Station: public cross, reversible trial bay and evidence porch');atlas.dimension_basis='prototype_design_assumption_pending_survey';
+atlas.stations=atlas.stations.map(s=>s.id==='dazhongsi'?{...s,flagship_weight:.65,local_design:D,city_scale:'1:5000',plan_scale:'1:2000',detail_scale:'1:500',section_scale:'1:200',assembly_view:'exploded_reversible_kit',dimension_basis:D.scale_note,interface_geometry_refs:['V7-D-CURB-N','V7-D-CURB-S','V7-D-CROSS-N','V7-D-CROSS-S','V7-D-TRANSIT'],baseline_route_geometry:['V7-D-BASE-NS','V7-D-BASE-EW','V7-D-TACTILE-NS','V7-D-TACTILE-EW','V7-D-CROSS-N','V7-D-CROSS-S'],trial_boundary_geometry:['V7-D-TRIAL','V7-D-BUFFER'],human_post_geometry:['V7-D-STAFF-BASE','V7-D-STAFF-TRIAL','V7-D-ESTOP-01','V7-D-ESTOP-02'],emergency_route_geometry:['V7-D-EMERGENCY','V7-D-FIRE','V7-D-EGRESS'],curb_refs:['V7-D-CURB-N','V7-D-CURB-S'],tactile_route_refs:['V7-D-TACTILE-NS','V7-D-TACTILE-EW'],drainage_refs:['V7-D-RAIN-W','V7-D-RAIN-E'],lighting_refs:D.points.filter(x=>x.role==='lighting').map(x=>x.id),storage_refs:['V7-D-STORAGE','V7-D-STORAGE-GATE','V7-D-SERVICE-ROUTE'],state_views:D.states,geometry_refs:refs,prototype_kit:D.prototype_kit,daily_operation_steps:D.daily_operation_steps}:{...s,flagship_weight:.175});write(atlasPath,atlas);
 
-const roads = read(path.join(GEO, 'roads.geojson'));
-const spaces = read(path.join(GEO, 'public_space.geojson'));
-const buildings = read(path.join(GEO, 'buildings.geojson'));
-const constraints = read(path.join(GEO, 'constraints.geojson'));
-[roads, spaces, buildings, constraints].forEach((collection) => {
-  collection.features = collection.features.filter((feature) => !String(feature.id || feature.properties?.id).startsWith('V6-D-'));
-});
-roads.features.push(...localDesign.routes.map((r) => line(r.id, r.points, {
-  route_role: r.role, design_width_m: r.width_m,
-  name_zh: r.role, name_en: r.role.replaceAll('_', ' '),
-})));
-spaces.features.push(...localDesign.spaces.map((s) => polygon(s.id, s.points, {
-  space_role: s.role, name_zh: s.role, name_en: s.role.replaceAll('_', ' '),
-})));
-buildings.features.push(...localDesign.buildings.map((b) => building(b.id, b.points, {
-  building_type: b.role === 'trial_control' ? 'mobility_hub' : 'community_service',
-  building_role: b.role, name_zh: b.role, name_en: b.role.replaceAll('_', ' '),
-})));
-constraints.features.push(...localDesign.points.map((p) => point(p.id, p.xy, {
-  point_role: p.role, name_zh: p.role, name_en: p.role.replaceAll('_', ' '),
-})));
-write(path.join(GEO, 'roads.geojson'), roads);
-write(path.join(GEO, 'public_space.geojson'), spaces);
-write(path.join(GEO, 'buildings.geojson'), buildings);
-write(path.join(GEO, 'constraints.geojson'), constraints);
+const scenariosPath=path.join(__dirname,'two-answers.json'),scenarios=read(scenariosPath);scenarios.schema_version='1.5.0';scenarios.publication_version='V7';scenarios.title=bi('京张双答：大钟寺城市采纳站','Jing-Zhang Two Answers: Dazhongsi Civic Adoption Station');scenarios.status_note=bi('当前为 E1 概念设计；正式报价、E2 基线、E3 试验和 E4 采用均待后续建立。','Current status is E1 concept design; formal quotes, E2 baseline, E3 trial and E4 adoption remain pending.');
+scenarios.scenarios=scenarios.scenarios.map(s=>{const base={...s,dimension_basis:'prototype_design_assumption_pending_survey',quote_status:'pending_market_quote',permit_gate:'site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL',measurement_clock:bi('停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。','Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2.'),baseline_sample_rule:bi('同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。','Same task, user, space and stratified time; baseline first, then compare only the AI increment.'),recovery_verification:bi('安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。','Safety, baseline-service and public representatives co-sign; adopt / revise / stop only.')};if(s.id!=='SCN-010')return base;return{...base,geometry_refs:refs,interface_geometry_refs:['V7-D-CURB-N','V7-D-CURB-S','V7-D-CROSS-N','V7-D-CROSS-S','V7-D-TRANSIT'],baseline_route_geometry:['V7-D-BASE-NS','V7-D-BASE-EW','V7-D-TACTILE-NS','V7-D-TACTILE-EW','V7-D-CROSS-N','V7-D-CROSS-S'],trial_boundary_geometry:['V7-D-TRIAL','V7-D-BUFFER'],human_post_geometry:['V7-D-STAFF-BASE','V7-D-STAFF-TRIAL','V7-D-ESTOP-01','V7-D-ESTOP-02'],emergency_route_geometry:['V7-D-EMERGENCY','V7-D-FIRE','V7-D-EGRESS'],curb_refs:['V7-D-CURB-N','V7-D-CURB-S'],tactile_route_refs:['V7-D-TACTILE-NS','V7-D-TACTILE-EW'],drainage_refs:['V7-D-RAIN-W','V7-D-RAIN-E'],lighting_refs:D.points.filter(x=>x.role==='lighting').map(x=>x.id),storage_refs:['V7-D-STORAGE','V7-D-STORAGE-GATE','V7-D-SERVICE-ROUTE'],state_views:D.states,prototype_kit_refs:D.prototype_kit.map(x=>x.id),daily_operation_steps:D.daily_operation_steps,measurement_denominator:bi('每种模式连续记录 100 次符合准入条件的接驳通行，并保留全部严重事件。','Record 100 eligible interchange passages in each mode and retain every severe event.'),baseline_window:bi('E2 后连续 7 个运行日，按高峰/平峰、昼/夜、天气和辅助需求分层。','Seven operating days after E2, stratified by peak/off-peak, day/night, weather and assistance need.'),zero_tolerance_events:['collision_or_person_in_safety_buffer','emergency_stop_failure','baseline_route_blocked_or_accessibility_regressed','human_takeover_timeout'],recovery_protocol:bi('停机并关闭试验边界；人工完成任务；两条公共路线持续开放；记录事件；设备经撤场线进入存储或供应商回收；委员会复核后方可重新申请 TRIAL。','Stop and close the trial boundary; staff complete the task; keep both routes open; log the event; move equipment to storage or supplier return; committee review is required before another TRIAL.'),receipt_state:'E1_V7_READY_E2_PENDING'};});write(scenariosPath,scenarios);
 
-const atlasPath = path.join(__dirname, 'spatial-atlas.json');
-const atlas = read(atlasPath);
-atlas.schema_version = '1.4.0';
-atlas.publication_version = 'V6';
-atlas.subtitle = bilingual('大钟寺城市采纳样板：公共路线不可牺牲', 'Dazhongsi Civic Adoption Sample: the public route is non-negotiable');
-atlas.dimension_basis = 'prototype_design_assumption_pending_survey';
-atlas.stations = atlas.stations.map((item) => item.id === 'dazhongsi' ? {
-  ...item,
-  flagship_weight: 0.6,
-  local_design: localDesign,
-  city_scale: '1:5000', plan_scale: '1:2000', detail_scale: '1:500', section_scale: '1:200',
-  dimension_basis: localDesign.scale_note,
-  interface_geometry_refs: localDesign.routes.filter((x) => ['curb_edge','crossing','conventional_transit'].includes(x.role)).map((x) => x.id),
-  baseline_route_geometry: ['V6-D-BASE-NS','V6-D-BASE-EW','V6-D-CROSS-N','V6-D-CROSS-S'],
-  trial_boundary_geometry: ['V6-D-TRIAL','V6-D-BUFFER'],
-  human_post_geometry: ['V6-D-STAFF-BASE','V6-D-STAFF-TRIAL','V6-D-ESTOP-01','V6-D-ESTOP-02'],
-  emergency_route_geometry: ['V6-D-EMERGENCY','V6-D-FIRE','V6-D-EGRESS'],
-  state_views: localDesign.states,
-  geometry_refs: [
-    ...localDesign.routes.map((x) => x.id), ...localDesign.spaces.map((x) => x.id),
-    ...localDesign.buildings.map((x) => x.id), ...localDesign.points.map((x) => x.id),
-  ],
-} : { ...item, flagship_weight: 0.2 });
-write(atlasPath, atlas);
-
-const scenariosPath = path.join(__dirname, 'two-answers.json');
-const scenarios = read(scenariosPath);
-scenarios.schema_version = '1.4.0';
-scenarios.publication_version = 'V6';
-scenarios.title = bilingual('京张双答：大钟寺城市采纳样板', 'Jing-Zhang Two Answers: Dazhongsi Civic Adoption Sample');
-scenarios.status_note = bilingual('当前为 E1 概念设计，S7 未现场运行，回执结论保持待定。', 'Current status is E1 concept design; S7 is not field-run and the receipt decision remains pending.');
-scenarios.scenarios = scenarios.scenarios.map((item) => {
-  const isS7 = item.id === 'SCN-010';
-  const defaultRoute = Array.isArray(item.baseline_route_geometry) ? item.baseline_route_geometry : [item.baseline_route_ref].filter(Boolean);
-  return {
-    ...item,
-    dimension_basis: 'prototype_design_assumption_pending_survey',
-    interface_geometry_refs: isS7 ? ['V6-D-CURB-N','V6-D-CURB-S','V6-D-CROSS-N','V6-D-CROSS-S','V6-D-TRANSIT'] : (item.interface_geometry_refs || []),
-    baseline_route_geometry: isS7 ? ['V6-D-BASE-NS','V6-D-BASE-EW','V6-D-CROSS-N','V6-D-CROSS-S'] : defaultRoute,
-    trial_boundary_geometry: isS7 ? ['V6-D-TRIAL','V6-D-BUFFER'] : (item.trial_boundary_geometry || []),
-    human_post_geometry: isS7 ? ['V6-D-STAFF-BASE','V6-D-STAFF-TRIAL','V6-D-ESTOP-01','V6-D-ESTOP-02'] : (item.human_post_geometry || []),
-    emergency_route_geometry: isS7 ? ['V6-D-EMERGENCY','V6-D-FIRE','V6-D-EGRESS'] : [item.emergency_route_ref].filter(Boolean),
-    state_views: isS7 ? localDesign.states : (item.state_views || {}),
-    measurement_denominator: isS7 ? bilingual('每种模式下连续记录 100 次符合准入条件的接驳通行；同时保留全部严重事件记录', 'Record 100 eligible interchange passages in each mode; retain every severe-event record') : bilingual('E2 前由场景运营者登记同题分母', 'Operator registers the same-task denominator before E2'),
-    baseline_window: isS7 ? bilingual('E2 原型后连续 7 个运行日，分层记录高峰/平峰、昼/夜、天气和辅助需求', 'Seven consecutive operating days after the E2 prototype, stratified by peak/off-peak, day/night, weather and assistance needs') : bilingual('E2 原型后建立', 'Established after the E2 prototype'),
-    zero_tolerance_events: isS7 ? [
-      'collision_or_person_in_safety_buffer', 'emergency_stop_failure',
-      'baseline_route_blocked_or_accessibility_regressed', 'human_takeover_timeout',
-    ] : [item.stop_conditions],
-    recovery_protocol: isS7 ? bilingual('立即停机并关闭试验边界；人工完成当前任务；开放两条普通路线；记录事件；设备经撤场线移出；委员会复核后方可重新申请 TRIAL。', 'Stop and close the trial boundary; staff complete the current task; reopen both baseline routes; log the event; remove equipment via the removal route; only the committee may authorise a new TRIAL application.') : item.exit_and_restore,
-    receipt_state: isS7 ? 'E1_FLAGSHIP_READY_E2_PENDING' : item.receipt_state,
-  };
-});
-write(scenariosPath, scenarios);
-
-const metricsPath = path.join(ROOT, 'metrics.json');
-const metrics = read(metricsPath);
-const v6Count = localDesign.routes.length + localDesign.spaces.length + localDesign.buildings.length + localDesign.points.length;
-metrics.metrics.s7_traceable_spatial_object_count = {
-  status: 'known', value: v6Count, unit: 'count',
-  source_files: ['geometry/roads.geojson','geometry/public_space.geojson','geometry/buildings.geojson','geometry/constraints.geojson'],
-  formula: 'count(features where id starts with V6-D-)', confidence: 'high', assumptions: ['A-SPATIAL-ATLAS-001'],
-};
-metrics.metrics.s7_review_scale_count = {
-  status: 'known', value: 4, unit: 'count', source_files: ['visual/assets/spatial-atlas.json'],
-  formula: 'count(1:5000, 1:2000, 1:500, 1:200 review scales)', confidence: 'high', assumptions: ['A-SPATIAL-ATLAS-001'],
-};
-metrics.metrics.s7_baseline_sample_status = {
-  status: 'unknown', value: null, unit: 'eligible_passages', source_files: ['visual/assets/two-answers.json'],
-  formula: '100 eligible passages per mode after E2 baseline prototype', confidence: 'unknown', assumptions: ['A-METRICS-001'],
-  reason: 'S7 has not been field-run; the denominator and stratification protocol are designed but no observations exist.',
-};
-write(metricsPath, metrics);
-
-const assumptionsPath = path.join(ROOT, 'assumptions.json');
-const assumptions = read(assumptionsPath);
-if (!assumptions.assumptions.some((x) => x.id === 'A-V6-S7-DIMENSIONS')) assumptions.assumptions.push({
-  id: 'A-V6-S7-DIMENSIONS',
-  statement: 'S7 local-metre dimensions, entrance directions, curb lines, transit interface and operating zones are prototype design assumptions, not surveyed existing conditions.',
-  impact: 'All four scales and any engineering dimension require survey, official station-exit information, road-line, utility, fire and traffic verification before E2.',
-  verification_method: 'Licensed survey plus asset-owner, transit, accessibility, fire and traffic-management review.',
-  status: 'open',
-});
-write(assumptionsPath, assumptions);
-
-const redPath = path.join(__dirname, 'red-team-review.json');
-const red = read(redPath);
-red.schema_version = '1.3.0';
-red.review_date = '2026-08-17';
-red.version = 'V6';
-red.calibration_baseline = 'PR #3071 Review Agent 81/100';
-red.status = 'major_open_pending_blind_visual_review';
-red.findings = red.findings.map((finding) => finding.id === 'V5-UD-01' ? {
-  ...finding,
-  id: 'V6-UD-01',
-  severity: 'major',
-  finding: 'V5 used geometry count and legends as a proxy for visible urban-design specificity; a blind reviewer could not locate curbs, crossings, staffed posts, fire access and restoration without reading the legend.',
-  evidence: ['PR #3071 Review Agent remained 81/100', 'V5 canonical key-areas and PDF first-page review'],
-  remediation: 'Rebuild S7 as the flagship four-scale sample from shared local-metre objects and surface it in every Review Agent entry point.',
-  verification: 'Pending: label-off blind review of canonical figures, A0 first board, A3 cover and visual first screen.',
-  status: 'open',
-} : finding);
-red.summary = {
-  blocking_open: 0,
-  major_open: red.findings.filter((x) => x.severity === 'major' && x.status === 'open').length,
-  major_closed: red.findings.filter((x) => x.severity === 'major' && x.status === 'closed').length,
-  minor_open: red.findings.filter((x) => x.severity === 'minor' && String(x.status).startsWith('open')).length,
-};
-red.note = 'V6 does not close spatial depth by counting objects. Closure requires blind visual identification plus four-scale traceability.';
-write(redPath, red);
-
-console.log(`V6 data enriched: ${v6Count} S7 objects, schema 1.4.0, spatial major reopened`);
+const metricsPath=path.join(ROOT,'metrics.json'),metrics=read(metricsPath);metrics.metrics.s7_traceable_spatial_object_count={status:'known',value:refs.length,unit:'count',source_files:['geometry/roads.geojson','geometry/public_space.geojson','geometry/buildings.geojson','geometry/constraints.geojson'],formula:'count(features where id starts with V7-D-)',confidence:'high',assumptions:['A-SPATIAL-ATLAS-001','A-V7-S7-DIMENSIONS']};metrics.metrics.s7_prototype_kit_item_count={status:'known',value:D.prototype_kit.length,unit:'count',source_files:['visual/assets/spatial-atlas.json'],formula:'count(local_design.prototype_kit)',confidence:'high',assumptions:['A-V7-S7-DIMENSIONS']};metrics.metrics.s7_review_scale_count={status:'known',value:5,unit:'count',source_files:['visual/assets/spatial-atlas.json'],formula:'count(1:5000, 1:2000, 1:500, 1:200, assembly axonometric)',confidence:'high',assumptions:['A-SPATIAL-ATLAS-001']};metrics.metrics.s7_baseline_sample_status={status:'unknown',value:null,unit:'eligible_passages',source_files:['visual/assets/two-answers.json'],formula:'100 eligible passages per mode after E2 baseline prototype',confidence:'unknown',assumptions:['A-METRICS-001'],reason:'Not field-run.'};metrics.metrics.s7_formal_cost_status={status:'unknown',value:null,unit:'CNY',source_files:['visual/assets/spatial-atlas.json'],formula:'sum(design_quantity × pending_market_quote)',confidence:'unknown',assumptions:['A-V7-S7-DIMENSIONS'],reason:'Formal market quotes are pending.'};write(metricsPath,metrics);
+const assumptionsPath=path.join(ROOT,'assumptions.json'),assumptions=read(assumptionsPath);assumptions.assumptions=assumptions.assumptions.filter(x=>!/^A-V[67]-S7-DIMENSIONS$/.test(x.id));assumptions.assumptions.push({id:'A-V7-S7-DIMENSIONS',statement:'V7 S7 local dimensions, directional entrances, curbs, public cross, transit interface, trial bay, evidence porch and kit quantities are prototype design assumptions rather than surveyed conditions.',impact:'Every dimension, interface, quantity and quote requires survey and professional review before E2.',verification_method:'Licensed survey, utility detection, official station-exit and road-line information, accessibility/fire/traffic review, prototype measurement and formal supplier quotations.',status:'open'});write(assumptionsPath,assumptions);
+const redPath=path.join(__dirname,'red-team-review.json'),red=read(redPath);red.schema_version='1.5.0';red.review_date='2026-08-18';red.version='V7';red.calibration_baseline='PR #3191 Review Agent 86/100';red.status='v7_qa_verified';red.findings=red.findings.filter(x=>!['V6-UD-01','V7-PUB-01','V7-DATA-01','V7-IMP-01'].includes(x.id));red.findings.push({id:'V6-UD-01',round:'urban_design_site_specificity',severity:'major',finding:'V6 depended on labels to identify spatial safety and restoration.',evidence:['PR #3191 score 86','V6 18-image inspection'],remediation:'Rebuild S7 as public cross, trial bay, evidence porch and blue-green edge.',verification:'V7 18-image review and 1024px PDF inspection directly locate the two public routes, one-side bay, evidence porch, staff posts, E-stops, fire and removal paths.',status:'closed'},{id:'V7-PUB-01',round:'publication_resolution',severity:'major',finding:'V6 A0 principal images were approximately 34-38 ppi.',evidence:['pdfimages inspection'],remediation:'Generate native A0 vector pages.',verification:'Both A0 PDFs are native 1189×841 mm, three pages, and contain zero embedded raster images; English overflow was corrected after rendered inspection.',status:'closed'},{id:'V7-DATA-01',round:'referential_integrity',severity:'major',finding:'Active records retained old-version design references.',evidence:['repository scan'],remediation:'Migrate active objects to V7-D and resolve every reference.',verification:'Automated QA resolves 98/98 active design references, with zero missing and zero legacy references.',status:'closed'},{id:'V7-IMP-01',round:'implementation_feasibility',severity:'major',finding:'V6 lacked a reproducible kit and operating day.',evidence:['V6 evidence review'],remediation:'Add quantities, ownership, quote status and six-step day.',verification:'V7 publishes 17 reproducible quantities, maintenance and retirement roles, six operating steps, permit gate, recovery clock and three decision gates; prices remain pending.',status:'closed'},{id:'V7-MIN-03',round:'context_data',severity:'minor',finding:'Dazhongsi OSM context contains only one building feature.',remediation:'Show data-missing zones and distinguish design envelopes.',status:'open_external_dependency'});red.summary={blocking_open:0,major_open:red.findings.filter(x=>x.severity==='major'&&x.status==='open').length,major_closed:red.findings.filter(x=>x.severity==='major'&&x.status==='closed').length,minor_open:red.findings.filter(x=>x.severity==='minor'&&String(x.status).startsWith('open')).length};red.note='Major findings close only after rendered evidence and automated reference checks; the OSM context gap remains an explicit external dependency.';write(redPath,red);
+console.log(JSON.stringify({version:'V7',schema:'1.5.0',geometry_objects:refs.length,kit_items:D.prototype_kit.length},null,2));
