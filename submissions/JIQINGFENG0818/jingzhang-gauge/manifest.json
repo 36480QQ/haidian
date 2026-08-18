@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a4bae48063e7cc21dd703d3ca248f274f1fdcd67f1fa3ddf84a5148fb125e229"
+      "sha256": "c26cdee9b29bc6b55126047ac46c743453f647c5b763f87d4295a024a4d2ab31"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c2f3aa4c80effa24c586d3a949717459465b7856a0110f69b7624ba799b61d62"
+      "sha256": "36fb38900d39a87fc895a5f4302d8a486c18cba7386c3d09f5ea01b2682ff982"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "133d443ccfab00d7f2df1a8ee806434e27177b160cf2256bd27ccc3e1fa97007"
+      "sha256": "b68e143f87db9458d2637e20dda768b9b5008f33b12134a14f5ca58954a4b079"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c92a32fc1477686eef0b3d94a4706ad24f68189004f97a633f26f0fcb9d4d2fa"
+      "sha256": "9a6458c8a66ec3a18ceb55468921a39be84005c50f450c41a2ce91a53c8e55bf"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +209,7 @@
       "path": "proposal.en.md",
       "role": "proposal_translation",
       "required": false,
-      "sha256": "7c5191b3d3dbad23c00f081438732b6e2dde3c70b052bc6cfd41d9bf3cd9042b",
+      "sha256": "6945eb275ec9fca40f377ea083193aeaf4fc62d8cc297b6f48845834c9c0cfc3",
       "translation_of": "proposal.md",
       "language": "en"
     },
@@ -217,7 +217,7 @@
       "path": "report/proposal.en.html",
       "role": "report",
       "required": false,
-      "sha256": "156d0e52a01b00941e41d6caff2491d146bbae479e7d993bca08234c2a78046d",
+      "sha256": "1fd666760fd8ee433f277c154e2be01d2cdaa195a99a53625be91031aef5a245",
       "translation_of": "report/proposal.html",
       "language": "en"
     },
@@ -225,7 +225,7 @@
       "path": "visual/index.en.html",
       "role": "visual",
       "required": false,
-      "sha256": "98ff0a5877f321f7b11a445299aecb4a1952db99157924021e5658ebf119c608",
+      "sha256": "531c92f66879aad6a9b20b2f97d98bfd2991cbbfe94aab305cd0424fb0fb01f8",
       "translation_of": "visual/index.html",
       "language": "en"
     },
@@ -284,6 +284,26 @@
       "sha256": "9bc4e13ede51a736ec3f1c87c79042fdcad6f212d305514e49ca80f9c12a3a66",
       "translation_of": "assets/figures/metrics-evidence.png",
       "language": "en"
+    },
+    {
+      "path": "assets/identity/jz-gauge-logo.svg",
+      "role": "asset",
+      "required": false,
+      "title_zh": "京张公制标志",
+      "title_en": "The Jing-Zhang Gauge mark",
+      "description_zh": "矢量标志本体：两条平行线加一道横向刻度，横向刻度使用当前版本色。",
+      "description_en": "The vector mark: two parallel lines crossed by one horizontal measure tick carrying the current version colour.",
+      "sha256": "c48538ac98672c4b5349e0a01289a9b074e28faa08727f734526e6f4947713d6"
+    },
+    {
+      "path": "assets/identity/jz-gauge-identity.svg",
+      "role": "asset",
+      "required": false,
+      "title_zh": "视觉识别用法表",
+      "title_en": "Identity usage sheet",
+      "description_zh": "标志构成、中英横向组合、版本色延展、留白与最小尺寸、单色与反白变体的用法规定。",
+      "description_en": "Usage rules for construction, the bilingual lockup, version-colour extension, clear space and minimum size, and the monochrome and reversed variants.",
+      "sha256": "6dae7944a57857c80518b3218a8ffc4e4ea9f87d5783fd39667089624043038b"
     },
     {
       "path": "assets/media/cover.webp",

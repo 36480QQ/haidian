@@ -108,6 +108,7 @@ footer{margin-top:58px;padding-top:20px;border-top:2px solid var(--ink);
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
 /* ── 成果模态一览（页首） ── */
+.plate .mark{display:block;height:54px;width:auto;margin:0 0 16px}
 .modes{margin:0 0 34px}
 .modes .mhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:11px}
 .modes .mhead b{font:600 10px/1 var(--mono);letter-spacing:.3em;color:var(--rail)}
@@ -133,6 +134,7 @@ footer{margin-top:58px;padding-top:20px;border-top:2px solid var(--ink);
 <div class="wrap">
 
 <header class="plate">
+  <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="京张公制标志 The Jing-Zhang Gauge mark"><rect x="41" y="12" width="7" height="96" fill="#17262E"/><rect x="72" y="12" width="7" height="96" fill="#17262E"/><rect x="26" y="56" width="68" height="8" fill="#C2431F"/><rect x="26" y="46" width="3" height="28" fill="#C2431F"/><rect x="91" y="46" width="3" height="28" fill="#C2431F"/></svg>
   <div class="eyebrow">Centennial Jing-Zhang AI Innovation Belt · Urban Design Proposal</div>
   <h1>京张公制<em>THE JING-ZHANG GAUGE</em></h1>
   <div class="specrow">
@@ -148,7 +150,7 @@ footer{margin-top:58px;padding-top:20px;border-top:2px solid var(--ink);
 <section class="modes" id="s-modes" aria-label="成果模态一览">
   <div class="mhead">
     <b>DELIVERABLE MODALITIES</b>
-    <span>成果模态：文本 · 表格 · 图件 · 图纸 · 场景卡 · 视频 · 三维交互网页，均随包提交并可离线打开。</span>
+    <span>成果模态：文本 · 表格 · 图件 · 图纸 · 场景卡 · 视频 · 三维交互网页 · Logo 与识别系统，均随包提交并可离线打开。</span>
   </div>
   <div class="mgrid">
     <div class="mcard">
@@ -165,6 +167,11 @@ footer{margin-top:58px;padding-top:20px;border-top:2px solid var(--ink);
       <img src="../assets/media/gauge-tour-still.webp" alt="三维巡览静帧：三联条带走廊全貌轴测视图">
       <div class="mt">三维交互 / 3D</div>
       <div class="md"><b>三维巡览</b>　自写 WebGL 渲染器，载入 9 图层 1070 个几何要素，键盘可操作。可交互版本见本页末节 <a href="#s-tour">三维巡览</a>。</div>
+    </div>
+    <div class="mcard">
+      <img src="../assets/identity/jz-gauge-identity.svg" alt="京张公制视觉识别用法表：标志构成、双语组合、版本色延展、留白与最小尺寸、单色与反白变体">
+      <div class="mt">标志 / Logo</div>
+      <div class="md"><b>视觉识别系统</b>　标志本体与用法表，含构成、双语组合、版本色延展、留白与最小尺寸、单色与反白变体。文件见 <code>assets/identity/</code>。</div>
     </div>
   </div>
 </section>
