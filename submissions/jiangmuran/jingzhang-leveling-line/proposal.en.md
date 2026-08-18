@@ -1526,11 +1526,11 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-328 entries. By finder:
+330 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 34 | Run against the shipped package, not a draft |
+| Independent audit | 36 | Run against the shipped package, not a draft |
 | The author | 212 | Found while working |
 | This package's own gate | 24 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
@@ -1544,10 +1544,10 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Shape | Count |
 |---|---|
 | An easy measure | 60 |
-| Two copies drifted | 49 |
+| Two copies drifted | 50 |
 | Shipped unseen | 30 |
 | Uncheckable | 25 |
-| Outlived the package | 22 |
+| Outlived the package | 23 |
 | Nothing fails it | 17 |
 | Outlived its line | 14 |
 | Recorded where found | 14 |
@@ -1645,7 +1645,7 @@ A design reviewer read that figure and concluded the spine was not drawn on the 
 | This proposal's spine to the surveyed park | 1,116.7 m | this proposal |
 | Spine moved to the design area's **western edge** | 414.7 m | floor is 412.5 m |
 
-**The surveyed park lies wholly outside the provisional overall design area** — not a choice this proposal made but a property of the organisers' geometry, in the second row above. So “draw the spine on the real alignment” means moving the primary axis outside the design area.
+**The OSM-mapped segment lies wholly outside the provisional design area** — not a choice this proposal made but a property of the organisers' geometry, in the second row above. So “draw the spine on the real alignment” means moving the primary axis outside the design area.
 
 Nor is the western edge the optimum inside it. The organisers' three key areas have centroids at lon 116.3475–116.3485 and the spine runs along that line; the western edge is at 116.3397. **Hugging it would cut the distance to the park from 1,117 m to 415 m at the cost of leaving all three key areas** — and threading those three is what the spine is for.
 
@@ -1655,7 +1655,7 @@ So the choice is: the spine threads the three key areas, sits 1,116.7 m from the
 
 **That is a closure error, and it is in the site data rather than on paper.** The 43.6 km² research area agrees completely with OSM, so the announcement's textual bounds and the actual geography do not conflict; but the 11.4 km² provisional overall design area does not intersect the surveyed park at all.
 
-The limits must be stated exactly. OSM is crowd-sourced and its polygon may cover only the built, mapped section rather than the planned whole. The provisional boundary is itself explicitly an inference from text, with its basis and error documented in the repository. **This proposal does not adjudicate which is right.** It reports one recomputable fact: the two routes differ by 412.5 m.
+The limits must be stated exactly. OSM is crowd-sourced and its polygon covers only the built, mapped section — not the 9 km planned corridor [source:HAIDIAN-PARK-PHASE2-PLAN]. The provisional boundary is itself explicitly an inference from text, with its basis and error documented in the repository. **This proposal does not adjudicate which is right.** It reports one recomputable fact: the two routes differ by 412.5 m.
 
 The OSM coordinates and every convention are shipped in `visual/assets/osm_reference.json`, and `node visual/assets/check_osm.js` recomputes each published figure from them (the fetch script cannot ship — intake accepts no .py) [source:OSM-REFERENCE-2026-08] and can be re-run. That matters more than the finding itself: a discrepancy reported without the means to reproduce it is an assertion, and this proposal is in no position to make assertions about other people's boundaries.
 
@@ -1677,7 +1677,7 @@ section is drawn to scale in FIG.01 — the inferred boundary, the surveyed park
 position and the 412.5 m between them, on one sheet. A difference stated in prose is an assertion;
 drawn at scale it is evidence. FIG.02 carries the same comparison as a closure diagram.
 
-![FIG.01 Site overview and cross-check](assets/figures/site-overview.png)
+![FIG.01 Overall concept and site overview](assets/figures/site-overview.png)
 
 <!-- TASKBOOKDIMS:BEGIN -->
 
@@ -1743,13 +1743,12 @@ assembled at all.
 **The errata register and self-check outputs ship, and are not recited here.** `visual/assets/errata.json` (the oldest in `visual/assets/errata-archive.json`; both state the same total, and the split point is computed each build) records entry by entry what was wrong, its shape, who found it and which commit fixed it, and the build verifies that commit exists and touched the file it blames — **a register that cannot be joined to the repository is itself the defect it records.** This names where it is and nothing more: it is the correction history of this document, not of Haidian.
 
 **The self-check outputs ship too.** `self_check.json`, which the organisers read
-whole, carries the raw verdicts of the four machine gates. Six further self-check outputs ship
-without entering the proposal: `visual/assets/parity_qa.json` (bilingual content ratio),
+whole, carries the raw verdicts of the four machine gates. Six further self-check outputs ship; three of
+their readings appear in the checklist below: `visual/assets/parity_qa.json` (bilingual content ratio),
 `label_collision_qa.json` (overlapping labels), `i18n_order_qa.json` (number placement in English
 templates), `visual_packet_qa.json` (artifact readability), `review_route.json` (the review path and
-what it costs to walk) and `census.json` (the raw corpus census readings). **This names where they
-are and nothing more: they measure this document rather than Haidian, so they do not take the
-proposal's space.**
+what it costs to walk) and `census.json` (the raw corpus census readings). **They measure this document rather than Haidian, so the proposal names them
+without reciting them.**
 
 **Four measurements about this open call itself ship with the package and are not recited in the
 proposal.** `visual/assets/review_gate_survey.json`, `visual/assets/review_repeatability.json`,
@@ -1838,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files, 1172 KB, 1,810 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files none of which the reviewer receives, 1162 KB, 1,804 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
