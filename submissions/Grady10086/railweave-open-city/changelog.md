@@ -1,5 +1,20 @@
 # 方案迭代记录
 
+## v2.6 - 2026-08-18
+
+- 将全包统一为“四个工作阶段、六个决策窗口”：D90 仅办理强制收尾交接，D100 才形成唯一的保留、优化、复原或不转段决定；同步修正正文、任务矩阵、S06 交付包与中英文图面中的旧口径。
+- 重构固定评审图 `mobility-bluegreen`，把 AI 在规划阶段承担的资料分级、三案生成、六则筛选、专业选择与现场反馈完整显性化，明确 AI 提供备选和证据、人工承担判断。
+- 重构固定评审图 `metrics-evidence` 为 S06 百日实施证据板，直接呈现 100—150 米路线、3—5 个决策点、1:1 服务湾、六窗口、六包 BoQ、E0—E6 和单一 A 签收责任。
+- 重排中英文正文与网页首屏：先呈现空间设计、AI 规划、实施准备和公共价值，再呈现一场地、一 S06、100 日；将现场 G0 核验与成果实施准备度分开表达。
+- 修复 A3 标题遮挡，并明确 90/180 日为上线后复盘；A0 首页改为可读的六窗口实施条带，消除四/五/六分组并存。
+- 修复 HTML 重复 H1，并以 1440×1600 真实首屏完成中英文网页和固定 18 图复核。
+
+- Unified the package around four work stages and six decision windows: D90 is close-out handover only, while D100 is the sole retain, modify, remove, or do-not-advance decision.
+- Rebuilt the fixed planning figure to show AI-assisted evidence tiering, option generation, six-rule screening, professional selection, and field-feedback revision.
+- Rebuilt the fixed delivery-evidence figure around the S06 route, accessible bay, six windows, six BoQ packages, E0–E6, and one-accountable-party sign-off.
+- Reordered both narratives and report first screens so spatial design, AI planning, implementation readiness, and public value precede detailed governance boundaries.
+- Repaired the A3 title collision, clarified post-launch 90/180-day review, and replaced the A0 five-part strip with six decision windows.
+
 ## v2.5 - 2026-08-18
 
 - 恢复并强化 RailWeave 独有命题：以百年京张公共空间和普通服务为不断线的城市经线，以区域协同廊道为纬线，以单项 AI 服务为可准入、可暂停、可解编的技术线程；“区域定链、走廊织网、重点区落项目”作为空间转译，不再替代总命题。
