@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M118",
+      "gate": "interned_render_qa.py",
+      "target": "changelog.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 changelog 的发现者分布改回词表下标——**这正是 E316 之前随包的样子**。",
+      "what_en": "Put the changelog's discoverer tally back to vocabulary indices - **exactly how it shipped until E316**.",
+      "why_zh": "收词表和切文件都是为省字节做的表示层决定，而两次都没人回头看**谁在渲染这些字段**：`self_check.json` 那一行读作「按发现者：0 10、1 31」，`changelog.md` 读作「5 191、1 31」。**一个词表下标摆在名字的位置上，是读不懂的证据**——而那一行本包自己称作登记册在评审可读范围内的唯一入口。这道闸门读的是随包成品，不是写它的构建器。",
+      "why_en": "Interning the vocabulary and splitting the register were both byte decisions about an internal representation, and neither time did anyone go back to see **who renders those fields**: the self_check.json row read 0 10, 1 31 and changelog.md read 5 191, 1 31. **An index standing where a name belongs is unreadable evidence** - and that row is the one this package calls the register's only entry point from where a reviewer sits. This gate reads the shipped surfaces, not the builders that write them."
+    },
+    {
       "id": "M116",
       "gate": "boundary_state_qa.py",
       "target": "assumptions.json",
@@ -1410,7 +1422,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 115,
+  "caught": 116,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1444,6 +1456,7 @@
     "harness_reference_qa.py",
     "i18n_order_qa.py",
     "intake_limits_qa.py",
+    "interned_render_qa.py",
     "label_collision_qa.py",
     "land_use_enum_qa.py",
     "markdown_structure_qa.py",
@@ -1532,6 +1545,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 80 道闸门，其中 77 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 80 gates, 77 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 81 道闸门，其中 78 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 81 gates, 78 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
