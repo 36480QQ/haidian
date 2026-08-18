@@ -42,6 +42,13 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "JINGZHANG-HERITAGE",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%AC%E5%BC%A0%E9%93%81%E8%B7%AF",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "low",
+      "usage": "Background humanistic context only: Jing-Zhang railway opened 1909, designed by Zhan Tianyou with a switchback (人字形) line at Qinglongqiao; the former alignment is being reused as the Jing-Zhang Railway Heritage Park (Haidian section). Background-only; not used for any spatial boundary, metric, or formal planning conclusion."
     }
   ]
 }
