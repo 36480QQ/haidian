@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张遗址公园公共慢行主轴串联技术验证、开源转译和公共体验三站，用一张可审计的共证票据约束12个AI场景；全部空间成果基于临时粗略边界，并保留正式数据到位后的整体重算门。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.1"
+iteration: "v0.2"
 ---
 
 # 京张共证线：面向公共验证的AI创新城市共同体
@@ -124,7 +124,7 @@ iteration: "v0.1"
 | 0802 | 验证研发与试验 | 12.8% | 承载受控测试、复盘与标准讨论 |
 | 0804 | 开源教育与文化 | 13.1% | 把技术转为课程、公共说明与文化叙事 |
 | 1401 | 遗址公园与共证绿脊 | 18.2% | 形成连续公共骨架与跨站路线 |
-| 05 | 产业服务与转化 | 20.4% | 支撑创业、法律、知识产权和转译服务 |
+| 09 | 产业服务与转化 | 20.4% | 支撑创业、法律、知识产权和转译服务 |
 | 0702 | 社区服务与人才生活 | 19.6% | 支撑照护、日常服务和多样人才生活 |
 | 16 | 弹性接口与待深化空间 | 16.0% | 为正式控规、设施和公共利益协商保留余地 |
 

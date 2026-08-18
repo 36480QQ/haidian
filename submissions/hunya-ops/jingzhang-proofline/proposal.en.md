@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public slow-mobility and cultural-memory spine links technical validation, open-source translation, and civic experience. One auditable proof ticket governs twelve AI scenarios. Every spatial output uses provisional rough geometry and carries a whole-package regeneration trigger."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.1"
+iteration: "v0.2"
 ---
 
 # Jing-Zhang Proofline: An AI Innovation Urban Commons for Public Verification
@@ -124,7 +124,7 @@ The provisional boundary is partitioned once into six conceptual program bands w
 | 0802 | Validation R&D and testing | 12.8% | Controlled tests, retrospectives, standards discussion |
 | 0804 | Open-source learning and culture | 13.1% | Courses, public explanation, and cultural narrative |
 | 1401 | Heritage park and proof commons spine | 18.2% | Continuous public framework and cross-station route |
-| 05 | Industry services and translation | 20.4% | Venture, legal, IP, and translation support |
+| 09 | Industry services and translation | 20.4% | Venture, legal, IP, and translation support |
 | 0702 | Community services and talent life | 19.6% | Care, daily service, and diverse talent life |
 | 16 | Flexible interface pending detailed study | 16.0% | Space for formal controls, facilities, and public negotiation |
 

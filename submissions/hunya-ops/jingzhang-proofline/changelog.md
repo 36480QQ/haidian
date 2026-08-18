@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.2 - 2026-08-18
+
+- Corrected `LU-004` from land-use code `05` to `09` after the official repository enum clarified that `05` means wetland and `09` means commercial service land.
+- Synchronized the bilingual proposal tables, rendered reports, land-use figures, and A3/A0 drawing sets with the corrected code.
+- Kept the conceptual partition geometry, declared area, share, program role, and all derived metrics unchanged; this revision changes classification semantics only.
+
 ## v0.1 - 2026-08-11
 
 - Established the Jing-Zhang Proofline concept, three linked proof stations, one shared proof-ticket protocol, six personas, twelve scenario cards, four industry tests, and four pilgrimage/honor landmarks.
