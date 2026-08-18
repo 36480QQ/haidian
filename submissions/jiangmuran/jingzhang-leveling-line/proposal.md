@@ -516,7 +516,7 @@ Logo 方向取自水准点标石的实物形态与水准仪的读数十字丝，
 | 北京AI原点社区 [data:geometry/key_areas.geojson#PROV-KEY-002] | **BM-0 水准原点** | 近校创新、开源体系与人才特区 | 设**水准原点标石**与公共证据厅（本次征集全部方案的永久陈列与检索）；校区—园区慢行直连；轨道站一体化 | S01 场景开放日；S07 开源协作；人才服务复测 |
 | 大钟寺AI产业集聚区 [data:geometry/key_areas.geojson#PROV-KEY-003] | **BM-2 高频读数点** | 智能原生消费与商务 | 路口四象限步行连通；规划绿地复合利用；大钟寺站一体化 | S03 智能体商务；S05 数据要素流通；S09 生活服务样板街 |
 
-![FIG.04 三处重点区、两翼与水准点布设图](assets/figures/key-areas.png)
+![FIG.04 三处重点区、两翼与水准点布设](assets/figures/key-areas.png)
 
 > **这张图怎么看。** 按展线惯例横向展开，读 K0–K9 里程与八个分级测点的位置
 
@@ -1089,7 +1089,7 @@ S06、S10、S11 构成三个受控测试场景，共同特征是：**先在可�
 
 蓝绿与公共空间图层见 [data:geometry/green_space.geojson#GREEN-001] 与 [data:geometry/public_space.geojson#PUBLIC-001]，复算比例见 [metric:green_ratio] 与 [metric:public_space_ratio]，空间深度对应 [depth:blue_green_public_space]。
 
-![FIG.05 慢行、蓝绿与附合路线图](assets/figures/mobility-bluegreen.png)
+![FIG.05 慢行、蓝绿与附合路线](assets/figures/mobility-bluegreen.png)
 
 > **这张图怎么看。** 两条附合路线的走向与方向，以及右下的限差分级
 
@@ -1551,7 +1551,7 @@ node visual/assets/verify.js
 
 **这不是装饰。** 该重算器在开发过程中真的推翻过本方案自己的一个数字：`building_footprint_area_sqm` 曾出现 16% 差异，原因是两处建筑基底与相邻设施同心重叠——生成端用并集掩盖了它，独立求和把它暴露了。**处理方式是修几何，不是改指标**：把两处地标错位布置，并在生成链中把「基底重叠」设为硬报错。这段经过写在 `changelog.md` 里。
 
-![FIG.06 指标复算与闭合差证据图](assets/figures/metrics-evidence.png)
+![FIG.06 指标复算与闭合差证据](assets/figures/metrics-evidence.png)
 
 > **这张图怎么看。** 左栏三类指标的区别；右栏是机制被跑过的那一次——十个案例、二接受、八拒绝，拒绝理由逐条引自随包文件
 

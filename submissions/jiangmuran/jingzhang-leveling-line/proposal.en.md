@@ -71,7 +71,7 @@ Rules are easy to write. You find out whether they work by writing somebody's mo
 
 **What she can do.** She may require one re-survey of the judgement that affected her, and the result is published alongside the original reading, anonymised. That right sits at the third-order point nearest her home: **putting the right of review in a specialist institution fifteen minutes away is the same as not granting it.**
 
-![FIG.21 How far the nearest benchmark actually is](assets/figures/reach.en.png)
+![FIG.21 How far the nearest benchmark actually is: this proposal's own rule, applied to itself](assets/figures/reach.en.png)
 
 **That sentence had never been turned on this proposal.** FIG.21 measures the walk along the spine: the worst place on the line is 1,111 m from the nearest benchmark, 30.9 minutes for P5, and six of nine segments fail — **on this rule, this proposal does not meet the standard it holds others to**.
 
@@ -1035,7 +1035,7 @@ Public-service facility baselines are a current data gap. This proposal invents 
 
 Layers [data:geometry/green_space.geojson#GREEN-001] and [data:geometry/public_space.geojson#PUBLIC-001]; recomputed ratios [metric:green_ratio] and [metric:public_space_ratio]; depth [depth:blue_green_public_space].
 
-![FIG.05 Slow mobility, blue-green and closing routes](assets/figures/mobility-bluegreen.en.png)
+![FIG.05 Slow mobility, blue-green and connecting routes](assets/figures/mobility-bluegreen.en.png)
 
 > **How to read it.** The line and direction of both connecting routes, and the tolerance bands by order at lower right
 
@@ -1159,7 +1159,7 @@ A kit of parts is easy to write as a list, and a list is exactly what hides whet
 
 The lower panel is the kerb in section, in the priority order the transport chapter sets, and it **draws sequence without drawing widths**: capacity must be computed on site from measured clear width, and a figure not derived from measurement is fabricated certainty. Device charging sits behind pedestrians and accessibility, and that order is itself the position.
 
-![FIG.10 The benchmark on the street, and how the kerb is shared](assets/figures/street-eye-level.en.png)
+![FIG.10 The benchmark on the street and how the kerb is shared](assets/figures/street-eye-level.en.png)
 
 **Bilingual signage rules.** Most systems set Chinese above English and drop English when space is short. This numbering grammar **depends on no language at all**: `BM-0`, `RT-N`, `F1` read for either language and for neither. Order and cycle are bilingual, Chinese first; readings and tolerances are **numbers first**; the complaint entry is bilingual **plus a non-textual icon**. Three hard rules: **numbers are never translated**, or cross-language reference breaks; when space is short, compress explanation first, then English, **never the number**; and where the two disagree, **the recomputable number governs**.
 
@@ -1457,7 +1457,7 @@ It calls none of this proposal's generation scripts and needs neither Python nor
 
 **This is not decoration.** During development it overturned one of this proposal's own numbers: `building_footprint_area_sqm` diverged by 16% because two landmarks sat concentric with adjacent facilities — the generation side hid the overlap in a union, and independent summation exposed it. **The response was to fix the geometry, not the metric:** the two landmarks were offset, and footprint overlap became a hard build error. The episode is recorded in `changelog.md`. A number that has been overturned by its own verifier is more credible than one never tested.
 
-![FIG.06 Recomputed metrics and the field census](assets/figures/metrics-evidence.en.png)
+![FIG.06 Recomputed metrics and closure evidence](assets/figures/metrics-evidence.en.png)
 
 > **How to read it.** At left, what separates the three classes of metric; at right, the one time the mechanism was actually run - ten cases, two accepted and eight refused with reasons
 
