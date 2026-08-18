@@ -28,15 +28,27 @@
       "why_en": "This is exactly the state two depth items were in before E353: the limit had a condition on the way in and none on the way out, so **the reference went and the declaration stayed**. The file then carried a sentence about a document the item cites, for an item that does not cite it, and design_depth_matrix.json is read whole by the reviewer."
     },
     {
+      "id": "M141",
+      "gate": "sheet_placement_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版设计依据一章里的插图指回 FIG.01。**这正是修复前的真实状态**：英文读者见到 FIG.01 两次，而 FIG.02——证据链那张尚未闭合的水准回路——一次也没有。",
+      "what_en": "Point the design-basis chapter's embed in the English edition back at FIG.01. **This is the real pre-fix state**: the English reader met FIG.01 twice and FIG.02, the unclosed leveling circuit the evidence chapter is about, never.",
+      "why_zh": "两版正文是逐节对译的，因此**同一处该出现同一张图**。读者在哪里遇见一张图是论证的一部分：紧挨着它所说明的那段话是证据，挪到参考资料末尾就只是附件。此前没有任何检查比较过两版的插图位置，于是它们漂了两处——五张评审必收图里的 FIG.05 与 FIG.06 一处，这里一处。**按小节序号比，不按标题比**，因为标题本来就是两种语言。",
+      "why_en": "The two editions are section-for-section translations, so **the same point must carry the same figure**. Where a reader meets a drawing is part of the argument: next to the paragraph it illustrates it is evidence, and at the end of the reference list it is an attachment. Nothing had ever compared the two editions on this, and they had drifted in two places - FIG.05 and FIG.06 among the five sheets the reviewer receives, and this one. The comparison is **by section index, not by title**, because the titles are in two languages by construction."
+    },
+    {
       "id": "M137",
       "gate": "heading_parity_qa.py",
       "target": "proposal.en.md",
       "caught": true,
       "exit_code": 1,
       "named_the_damage": true,
-      "what_zh": "把英文版又一个 `###` 标题降级为粗体行。**正文一个字不少**，只是它不再是一节——英文读者扫标题时找不到它。中英小节数之差因此从**已声明的 2** 变成 3。",
-      "what_en": "Demote one more English `###` heading to a bold line. **Not a word of text is lost**; it simply stops being a section, so an English reader scanning headings never finds it. The subsection deficit moves from the **declared 2** to 3.",
-      "why_zh": "本包与英文版之间确实差两个小节标题——`合规矩阵` 与 `任务书自己的十三项评审维度`——**内容都在，缺的只是标题**，而英文版卡在 256 KiB 上限、只剩个位数字节，补标题要拿评审读得到的英文正文去换指路牌，不划算。**所以这个差额被写下来、按名声明**；一旦它悄悄变成 3，就说明有人删了标题而没写下删的是哪一个。",
+      "what_zh": "把英文版又一个 `###` 标题降级为粗体行。**正文一个字不少**，只是它不再是一节——英文读者扫标题时找不到它。中英小节数之差因此从 **0** 变成 1。",
+      "what_en": "Demote one more English `###` heading to a bold line. **Not a word of text is lost**; it simply stops being a section, so an English reader scanning headings never finds it. The subsection deficit moves from **0** to 1.",
+      "why_zh": "本包与英文版之间曾差两个小节标题——`合规矩阵` 与 `任务书自己的十三项评审维度`——**内容都在，缺的只是标题**，而英文版卡在 256 KiB 上限、只剩个位数字节，补标题要拿评审读得到的英文正文去换指路牌，不划算。**所以这个差额被写下来、按名声明**；一旦它悄悄变成 3，就说明有人删了标题而没写下删的是哪一个。",
       "why_en": "There really are two subsection headings the English edition lacks - the compliance matrix and the taskbook's thirteen review dimensions - **with the content present and only the signpost missing**, and proposal.en.md sits at the 256 KiB cap with single digits free, so adding them would trade English a reviewer reads for signposts to text he can already read. **The deficit is therefore written down and declared by name**; the moment it quietly becomes three, a heading has gone without anyone recording which."
     },
     {
@@ -1689,7 +1701,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 138,
+  "caught": 139,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1767,6 +1779,7 @@
     "sheet_layer_key_qa.py",
     "sheet_legend_qa.py",
     "sheet_literal_qa.py",
+    "sheet_placement_qa.py",
     "sheet_scale_qa.py",
     "shipped_bilingual_qa.py",
     "shipped_validation_qa.py",
@@ -1827,6 +1840,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 96 道闸门，其中 93 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 96 gates, 93 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 97 道闸门，其中 94 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 97 gates, 94 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
