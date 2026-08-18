@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4476b6cfe874aadf7235b3df70abcb8b65362db5c3dba60daf1df2649f398e8b"
+      "sha256": "1f1238f17ce8704caa9acdc7831dddf552ef457b037aab8d7b3f4a170b132b91"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "68eab95f2a5f4ca0baabb8fc73b6f77591c0cfcc38a277b67617cb21629a3c1f"
+      "sha256": "530c3a9cada0a6713b6871c13a4ff0595f0908a55c6f160748260667cc69597e"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8a982847a2ceb32db0607b6cc22064cb01401e7553d36c954ea70333e4ce75cf"
+      "sha256": "16a1a9753b015c8bbf8ba06034c22b76e480784f5d70609d3630a4415c14699f"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b334123e0cd34626e668d3f8a897a18d8d8460ac18f63a2fe85841490c912d38"
+      "sha256": "bb1c347e7eb8d5ab8e162318166c612e3fa8dc8d6ea4273beb73b88b12b02a72"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "093fc832c31413127ba7778ec3d15cdb33a3f6631ed5ef550d9399dd4401b270"
+      "sha256": "a2e7c63e571b91ebf42e794ec11e8f52e502c89f8af858985b01c3b6f6be0cb1"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "728e280203d440bcf5bc0a3862911086551fdb4395df42a5ad9fa1a75853444f"
+      "sha256": "499ab2845137b45cd5ff907a3c3efcb0fce7b937cd9163feb9acae037e99d812"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "4c014e8bbd88ce6c8bd1fb8a575742c8d0b0c77478ed11320f4940de86acde8d"
+      "sha256": "23a5ed4249a1517e84430ea0cc044b2bfb6b9fd376cfb3accd072000585e2212"
     },
     {
       "path": "assets/media/cover.webp",
@@ -776,7 +776,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "320b4dcc4b99023e2df3936744e35c17618421151d74a2e6977f6f6781d3e313"
+      "sha256": "3765691f32050a616e67a2f72d9e309e453568d0a534ce0f717d97ce14c0d878"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -875,7 +875,7 @@
       "language": "neutral",
       "title_zh": "OSM 肌理读数：四项肌理+三项偏差+穿越证据清单+复算脚本全文嵌入（PROVISIONAL）",
       "title_en": "OSM fabric readings: four fabric, three deviation, crossing inventory, with recomputation scripts embedded verbatim (PROVISIONAL)",
-      "sha256": "9fb344992772c890ae797f3724aa7331ba4a5468f45bb3b5f766de7f56c2cb0b"
+      "sha256": "c0acfbe0fcfee543acfe07d0a8bedef7b87be5f933f8d2670a0e684b5a6ef669"
     },
     {
       "path": "visual/assets/seb-tabletop-fixtures.json",
@@ -1160,6 +1160,33 @@
       "title_zh": "片区策略合幅三联图 D-01：三区街块诊断与开放化候选，三分幅同比例尺（中英双语同图）",
       "title_en": "District strategy plate D-01 — block diagnosis and opening candidates across the three key areas, three panels at one shared scale, one bilingual sheet",
       "sha256": "d0006724ff896e6c994bd7d2db6027d082884d3bfa6b54917821f0062cc5790d"
+    },
+    {
+      "path": "visual/assets/sensory-design-code.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "感官设计准则：蓝绿雨洪三层判据、十节点参数区间与母版口径、百年遗产解说序列与材料判据、实施制度框架、五×五参与矩阵（只登记判据与关系，不登记工程参数与法定控制值）",
+      "title_en": "Sensory design code: the blue-green three-layer and stormwater criteria, the node parameter ranges and their master-card caliber, the century heritage interpretation sequence with its material criteria, the delivery-institution framework and the five-by-five participation matrix (criteria and relations only, no engineering parameter and no statutory control value)",
+      "sha256": "358fb66690b399ac8114ffd3b160e94ce2a080b61771aca6bd4fad5fcd1978c6"
+    },
+    {
+      "path": "assets/figures/bluegreen-structure.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "蓝绿三层结构与节点雨洪类型 BG-01：三条层带、三条层间关系判据与十节点铺装径流去向类型（中英双语同图）",
+      "title_en": "Blue-green three-layer structure and node drainage types BG-01 — three layer bands, three inter-layer criteria and the paving-runoff type of each of the ten nodes, one bilingual sheet",
+      "sha256": "8143ce2da10e997bdb3d33b6d1afa8c557888d2be3d22162edb554131e397230"
+    },
+    {
+      "path": "assets/figures/heritage-sequence.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "百年遗产解说序列 HS-01：自北向南三段叙事、绑定节点与地标、既有解说载体与四条遗存材料再利用判据（中英双语同图）",
+      "title_en": "Century heritage interpretation sequence HS-01 — three strands from north to south, their bound nodes and landmarks, the carriers already delivered and four remnant-material reuse criteria, one bilingual sheet",
+      "sha256": "fa05ced5aab92c8e9ecca03be3b17a722eb2b5238d1bc20f67ea6c4898bb1436"
     }
   ],
   "validation_claim": {
