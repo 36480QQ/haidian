@@ -7,10 +7,18 @@ const { chromium } = require('playwright');
 (async () => {
   const root = path.resolve(__dirname, '..');
   const pkg = path.resolve(root, '..');
-  const out = path.join(os.tmpdir(), 'jingzhang-v6-review-evidence');
+  const out = path.join(os.tmpdir(), 'jingzhang-v7-review-evidence');
   fs.mkdirSync(out, { recursive: true });
   const browser = await chromium.launch({ headless: true, executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' });
   const report = { ok: true, pages: [], external_requests: [], console_errors: [], evidence_pack: [] };
+  const geometryFiles = ['roads.geojson','public_space.geojson','buildings.geojson','constraints.geojson'];
+  const geometryIds = new Set(geometryFiles.flatMap((name) => JSON.parse(fs.readFileSync(path.join(pkg, 'geometry', name), 'utf8')).features).map((f) => String(f.id || f.properties?.id || '')));
+  const activeData = [JSON.parse(fs.readFileSync(path.join(root, 'assets', 'two-answers.json'), 'utf8')), JSON.parse(fs.readFileSync(path.join(root, 'assets', 'spatial-atlas.json'), 'utf8'))];
+  const activeRefs = [...new Set(JSON.stringify(activeData).match(/V\d+-D-[A-Z0-9-]+/g) || [])];
+  const missingRefs = activeRefs.filter((id) => !geometryIds.has(id));
+  const legacyRefs = activeRefs.filter((id) => !id.startsWith('V7-D-'));
+  report.reference_integrity = { active_ref_count: activeRefs.length, v7_object_count: [...geometryIds].filter((id) => id.startsWith('V7-D-')).length, missing_refs: missingRefs, legacy_refs: legacyRefs };
+  if (missingRefs.length || legacyRefs.length || report.reference_integrity.v7_object_count < 90) report.ok = false;
   const pages = [
     ['index.html', 1440, 1600, 'visual-zh'],
     ['index.en.html', 1440, 1600, 'visual-en'],
@@ -22,15 +30,15 @@ const { chromium } = require('playwright');
     page.on('console', (message) => { if (message.type() === 'error') report.console_errors.push(message.text()); });
     page.on('pageerror', (error) => report.console_errors.push(error.message));
     await page.goto(`file:///${path.join(root, file).replace(/\\/g, '/')}`, { waitUntil: 'load' });
-    const firstLook = await page.locator('.first-look.v6').isVisible();
-    const stateInit = await page.evaluate(() => document.body.dataset.v6Init || 'missing');
+    const firstLook = await page.locator('.first-look.v7').isVisible();
+    const stateInit = await page.evaluate(() => document.body.dataset.v7Init || 'missing');
     const geometryCount = await page.locator('.v5-object').count();
     const version = await page.locator('#scenario-data').evaluate((node) => JSON.parse(node.textContent).schema_version);
     const screenshot = path.join(out, `${name}-first.png`);
     await page.screenshot({ path: screenshot, fullPage: false });
     await page.locator('[data-state-view="RETIRE"]').click();
     const stateHash = await page.evaluate(() => location.hash);
-    const stateBody = await page.evaluate(() => document.body.dataset.v6State || 'missing');
+    const stateBody = await page.evaluate(() => document.body.dataset.v7State || 'missing');
     const stateRestored = stateHash.includes('state=retire') && stateBody === 'retire';
     await page.locator('[data-mode="baseline"]').click();
     await page.locator('[data-scenario="SCN-010"]').last().click();
@@ -40,7 +48,7 @@ const { chromium } = require('playwright');
     await page.screenshot({ path: interaction, fullPage: false });
     report.pages.push({ name, firstLook, stateInit, geometryCount, version, hashRestored, stateRestored, stateHash, stateBody, screenshot, interaction });
     if (name !== 'visual-mobile') report.evidence_pack.push(screenshot);
-    if (!firstLook || geometryCount < 50 || version !== '1.4.0' || !hashRestored || !stateRestored) report.ok = false;
+    if (!firstLook || geometryCount < 90 || version !== '1.5.0' || !hashRestored || !stateRestored) report.ok = false;
     await page.close();
   }
   for (const [file, name] of [['proposal.html', 'proposal-zh'], ['proposal.en.html', 'proposal-en']]) {
