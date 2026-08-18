@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M140",
+      "gate": "shipped_bilingual_qa.py",
+      "target": "self_check.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一条闸门行「这道闸门守什么」的英文说明换回中文。`self_check.json` 由评审**整份读到**——E354 之前，九十多条闸门读数全都是这个样子。",
+      "what_en": "Turn one gate row's English statement of what it holds back into Chinese. self_check.json is read **whole** by the reviewer, and until E354 all ninety-odd gate readings were in exactly this state.",
+      "why_zh": "九十多条闸门读数原本只有中文。**没有把它们翻译一遍**：读数是证据，把九十条渲染两遍就是九十对可能互相漂移的东西，而两种语言给出不同读数比只有一种更糟。改为让每一行带上该闸门 docstring 已经写好的那句英文——它就在闸门旁边，**因此不会与闸门漂移**，数字仍只留在构建算出的那一条 message 里。",
+      "why_en": "Ninety-odd gate readings were Chinese-only. They are **not translated**: a reading is evidence, ninety rendered twice is ninety pairs that can drift, and two languages disagreeing about a reading is worse than one. Each row instead carries the English sentence the gate's own docstring already opens with - it sits beside the gate, **so it cannot drift from it**, and the numbers stay in the single message the build computes."
+    },
+    {
       "id": "M139",
       "gate": "attribution_kind_qa.py",
       "target": "design_depth_matrix.json",
@@ -1677,7 +1689,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 137,
+  "caught": 138,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
