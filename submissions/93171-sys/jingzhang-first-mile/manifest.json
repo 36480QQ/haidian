@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-first-mile",
   "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "0.1.0",
+  "site_package_version": "0.8.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
@@ -14,7 +14,8 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex (GPT-5 family), human-directed by GitHub user 93171-sys"
   },
-  "generated_at": "2026-08-09T15:37:58Z",
+  "generated_at": "2026-08-14T16:10:00Z",
+  "cover_image": "assets/media/cover-v2.webp",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "324733f0101c0e0d4e84bd6e98f84c1f3c2810c871841db1eaa7641ab3aaf737"
+      "sha256": "0aaf4b6c82bd501bd600abf61bb7a5811a11fa8fa03410a5fe03fdb321a9f10a"
     },
     {
       "path": "agent.json",
@@ -38,37 +39,37 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "43699b1d35419d2deb461c52b819cd4b9c9d70bf980cc207461fd23089ae84b6"
+      "sha256": "eb69b7e117cd8201781014d19ed4362ca7e460f4dd5f086b6680a615f70de70e"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "56b93da2295aa97c0d158bb40440f14908b456a7a0754ae50639cb6f1f892643"
+      "sha256": "0d944cbc8d30cce6f6937c8c93a13fd629ebaedf94a0d17c13df92ef95d68c51"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "ff1ae68894f2e3670639a7196dae2f14a1087cad6b8f46eac362f50a0dfb1891"
+      "sha256": "c0b2cb94cc7dfe85389d540561eca3d0acf6dc12b45d0bff217da41b30e84925"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "4ffa995cdd77a59592ede562c5d2d320a1c7a3983caa47952b61423b67be274e"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "d52c03529232596d1582f4facfedcd39874258255f7b23832f9508a0a2d8b69f"
+      "sha256": "2d824db72aa4564559128b44e6d0242b47f8b7895136ea34aa4a2018d7d03fc9"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "e9056a8c2e87c78c087aa9b20c9f4931b3dd8bf447facb6e91f41835022f65ea"
+      "sha256": "f57869f624de14c31803e8cba85952a4669a11ff5a16ee50a5edd2c86ce29607"
     },
     {
       "path": "design_depth_matrix.json",
@@ -81,79 +82,152 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2ac0f012ae8760cf48896ab407ded723911775bc2f05a666c75529e5f6476e99"
+      "sha256": "cd82b4dcf53d29c5b2995dfb972611a77267872f8b58e828986667ebe18a3749"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "8c22a54f44f72cc9731cd8172749b7b1619f8de5d75619bb7c874b9e2fe8b24b"
+      "sha256": "795641d633586a6db718cf93d98f45664bc3a6eb85398d2d1636108873d0c482"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "23eba033b395ce50502737000991fd5606ca1d00142fd1f9e807030354cc1461"
+      "sha256": "d31dffbca139900f3e3d7122b2befc27f4824f7cec8d636dc5252ca03a0753de"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "sha256": "a0bb3e519fe4e6e272d244e515158e9364d735a4ccf6199982a0ce457cd9d4c4"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "2101586991bb71073fe242de12a03afceb781d67ecad80d97a1f59e9c0ab063f"
+      "sha256": "e03f2321b8ef474b97a10bc4a4c6bd5ad248b04771341205b5ce7a017c954f74"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "28fcfaa347b275aa35409dd1baff20f458d718247bef8dd0e04cfec1817e5fcc"
+      "sha256": "34c7558e2478a31aeedf24f0a93aabc1ed55efdb495193650e7976850d654d77"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ad176f00fd91cb120f1c97c1240205f050c84c540ce5ab15085deb0a3d3d609f"
+      "sha256": "2d62fb8fb6570a2d7bab185b080a44c1a556bf5b660e600fcc00f65403e6cc6f"
+    },
+    {
+      "path": "assets/media/cover-v2.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "京张首发线：三道首程门",
+      "title_en": "Jing-Zhang First Mile: Three Gates",
+      "description_zh": "三处路侧首程节点沿净空保留的京张旧轨串联产品就绪、首位真实用户与运营复用的 AI 生成概念图；非现状照片、非官方效果图。",
+      "description_en": "AI-generated concept cover connecting product readiness, first real use and operational reuse through three trackside nodes while the historic rail remains unobstructed; not a site photo or official rendering.",
+      "sha256": "cba8e991235927bf3700ca9f21239e5883fa51fe6891b300834e36c875c49507"
+    },
+    {
+      "path": "assets/media/jingzhang-first-mile-film-zh.mp4",
+      "role": "video",
+      "required": false,
+      "language": "zh",
+      "title_zh": "京张首发线：中文版",
+      "title_en": "Jingzhang First-Mile Line: Chinese Version",
+      "description_zh": "59.7 秒中文版概念体验短片，仅含普通话旁白与中文字幕，说明众智园产品就绪、AI 原点真实首用、大钟寺首单复用与 90 天 G0–G4 门禁；概念提案，非官方既有工程或实施进度。",
+      "description_en": "A 59.7-second Chinese edition with Mandarin narration and Chinese captions only, covering product readiness at Zhongzhiyuan, real first use at AI Origin, first-order reuse at Dazhongsi and the 90-day G0–G4 gates; a concept proposal, not an approved or completed project.",
+      "poster": "assets/media/cover-v2.webp",
+      "caption": "assets/media/jingzhang-first-mile-film-zh.vtt",
+      "transcript": "assets/media/jingzhang-first-mile-film-zh.md",
+      "sha256": "fb49e2dc5f67fc83312e65beabdb228d4cce3eb8bb1b172ea4e9df6e214ad5fc"
+    },
+    {
+      "path": "assets/media/jingzhang-first-mile-film-en.mp4",
+      "role": "video",
+      "required": false,
+      "language": "en",
+      "title_zh": "京张首发线：英文版",
+      "title_en": "Jingzhang First-Mile Line: English Version",
+      "description_zh": "59.7 秒英文版概念体验短片，仅含英文旁白与英文字幕；画面、场景顺序与中文版一致，两种人声不在同一文件中混合播放。",
+      "description_en": "A 59.7-second English edition with English narration and English captions only. It shares the Chinese edition's picture and scene order, while keeping the two narration languages in separate files.",
+      "poster": "assets/media/cover-v2.webp",
+      "caption": "assets/media/jingzhang-first-mile-film-en.vtt",
+      "transcript": "assets/media/jingzhang-first-mile-film-en.md",
+      "sha256": "bfee5c8203347703ef385964cdf43f631a468b727a733c43673d56efc1be4e9e"
+    },
+    {
+      "path": "assets/media/jingzhang-first-mile-film-zh.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "zh",
+      "sha256": "e62ad6fbfda6501356a86cc346b6334ae5f4e763c4ec370c3cc4289b83ae629f"
+    },
+    {
+      "path": "assets/media/jingzhang-first-mile-film-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "sha256": "a04c5470bbe02d113a3e1eb73863b88d4599ad0648aa486d842d0bad2a66cd8d"
+    },
+    {
+      "path": "assets/media/jingzhang-first-mile-film-zh.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "sha256": "b63ab2199557a0dbef9faf89b78366510d127d9627d711dd1a542970d9781ad7"
+    },
+    {
+      "path": "assets/media/jingzhang-first-mile-film-en.md",
+      "role": "transcript",
+      "required": false,
+      "language": "en",
+      "sha256": "93cfa7ae18efad80a3a174804245750e4db3265e7c1dc32b401d61524769a754"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "6c5ab10feeef6bebc905b2cbfe6aec51f02862d337a0a984ff7d55824becc6a4"
+      "sha256": "69e42a5adb1b07721cf302d88c870ddfb794e8746cdb3e1aba9eb35be697bae0"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "06eb570f6e6b59762dbccc246338e362be977c142e0a8a6cbc63dc3e51def004"
+      "sha256": "b752a6c092621c7ff986339b23cd7e5fb6d4018c36c32428f4763a0b1f8f0019"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "7dd4325384af51f7dffe81b7b505e5a3a4281d2c541ea4a629affa59b7ad1661"
+      "sha256": "da3ffbb0935ebb2df6a3145cd0ed86a4e34ab2c398c03d27c386dc2ff079c1bc"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "cfd63d4241b4ba1c0d0e97c3b9eb1b98744b4093a4c3cbe26f52b5611aa2eefd"
+      "sha256": "f7e2ac54c896064898a4ffc8e96ec7632c7bb6b75727950dda2255431e7ccf0d"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "39ca4b64db28993ba3528f646ed542a190f027e8bb6b096a6dcd451daa3b4a67"
+      "sha256": "9e05ecd86bc39a2d63badba6979fb1a6bab0c3410a3e8b4d341c97ff631fed66"
     },
     {
       "path": "visual/assets/site-context.json",
-      "role": "contextual_data",
+      "role": "evidence_data",
       "required": false,
       "language": "neutral",
       "sha256": "46dc0ff40540cd3fce85218234a013a92568e06ccd442eeb93f40655ee33f854"
@@ -218,7 +292,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7688928fd139b420b95dd5fb1cc01316d9a8b7e472b3dfac43b3a2bbb99154e5"
+      "sha256": "930feb859fe07fc2c5baaaf732df14622485b52ebe770df54e52d7b4171bf2c4"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +300,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1eda6d710aec11afbc7364fcf2742fbabf2c93aa2552fd561c95d498f012f9e2"
+      "sha256": "1ed5d07f4514c11cdf10ea0ef29f1e303ceb1bcb1a3d0f8c16524ac5df2d1616"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +308,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "dd8a7b8c58c97f0f7a6151047b388a6368796d8b1001db352bcafeb16199d494"
+      "sha256": "0cc317a324a617dd1e1e395fba5ad059bf0aff709ad4b774e2f9a028d79b3d2b"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +316,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "ffb80ad4edbf3319261a5c8b13568b5b4f05843609fcac0db71be2cc3e03630f"
+      "sha256": "58e3ef039f435961af773b0867a7a2f96e22559c021d07e22259b2c8e7de36f6"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +324,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "264cba7cd507d1d066aeb4ff1683ed49b37f9120177e133c0718d826a33b21a9"
+      "sha256": "89f2a1d08f6213e3816d88d9d725e89ad0d5b989de0af3c2d9bc0bbfa2a5991f"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -258,7 +332,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "79d29973731b312ebedf8025389541b6fbe60c852b65cf00c275297e17a99e9c"
+      "sha256": "8b72a0f6d9813d619b1916205919c2ecc785bd716820c1a247ebed5d3a479c1e"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -266,7 +340,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "551d3a823012bdc8372c09128c8c7bf77a6de4aca56563c39a040284b20e5300"
+      "sha256": "b3914327aff152b22b848e818ff67dd647dacce397c36544560f6113777ae4f3"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -274,7 +348,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "12760ce85849fa77cc555b3d07863e4720d91cebc41f88dcd0e3067d7dd6b5f3"
+      "sha256": "6351908ae4d2264e6dd9f30365c78dbe36005dc7e6a9fa60fbf2fc7fef83c4e8"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -282,7 +356,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "b55caad7f38357e937e6c2b5721de02128c107f5fbc2daeeea41ff27121859fb"
+      "sha256": "2cad06906ea61088dc7110340fb449b2971121f96d779c4909575562f3de96ac"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -290,7 +364,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "2bbfa79ab38003d426fdac291663acd1f15d7945c8c8f14ffb141608c6d34c4e"
+      "sha256": "b9147c526c611b7fd0ec407802652aa33d604effb0e0dfb8df4c6ac317c24109"
     },
     {
       "path": "assets/figures/brand-system.png",
@@ -576,11 +650,64 @@
       "language": "en",
       "translation_of": "assets/figures/three-flagship-scenes.png",
       "sha256": "bc9ec23e8edc71cf9e586231bf0cc44475135b9a76e9acfcb241add5ca1b77ce"
+    },
+    {
+      "path": "visual/assets/taskbook-strategy-crosswalk.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "155bb571765f4ecd46945498481fa55ba9bc507c5b9f11110bf3dcc0589280c9"
+    },
+    {
+      "path": "assets/figures/taskbook-crosswalk.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "55fb9ee36adbe3ae4abd9db26de6b531cb9d3025347a899903abb22d2bb052a8"
+    },
+    {
+      "path": "assets/figures/taskbook-crosswalk.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/taskbook-crosswalk.png",
+      "sha256": "1997a5b028c307a3c60b812438e08c06f163c1220652bf9262e61bd1d3f158ca"
+    },
+    {
+      "path": "assets/figures/full-stack-adoption-system.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "97b17bbff7f15936e65dd79c8cbe7c3b731dad5fc2b76277d0c5960ba8a120e4"
+    },
+    {
+      "path": "assets/figures/full-stack-adoption-system.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/full-stack-adoption-system.png",
+      "sha256": "d3b2296ec55f21da08f580eb95ca00b1b4a63bba793989e949515f6ccc8aa9e3"
+    },
+    {
+      "path": "assets/figures/urban-life-governance.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "54b54e9d7a23d8ed0e941240cf3503b488a6a9f1d27527c997a2233e627c18c2"
+    },
+    {
+      "path": "assets/figures/urban-life-governance.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/urban-life-governance.png",
+      "sha256": "1b1e99caf41d34894d02a9bc699ad3d441e5c6abbb6d9a35af5ac776b7c0ae1d"
     }
   ],
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "mixed_provisional_and_conceptual",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

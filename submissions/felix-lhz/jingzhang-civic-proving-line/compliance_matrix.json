@@ -1,0 +1,1458 @@
+{
+  "schema_version": "0.1.0",
+  "requirements": [
+    {
+      "requirement_id": "1.3.1",
+      "title_zh": "构建世界级AI创新生态体系",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.3.2",
+      "title_zh": "建设适配AI新质生产力的新型城市形态",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.3.3",
+      "title_zh": "打造全球AI创新人才向往的高品质城区",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.4.1",
+      "title_zh": "统筹研究范围",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.4.2",
+      "title_zh": "总体设计范围",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.4.3",
+      "title_zh": "重点区域范围",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.5.1.1",
+      "title_zh": "统筹研究范围：AI创新生态体系",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.5.1.2",
+      "title_zh": "统筹研究范围：适配人工智能的未来城市形态",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.5.2.1",
+      "title_zh": "总体设计范围：产业目标与功能布局",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.5.2.2",
+      "title_zh": "总体设计范围：城市更新总体框架",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.5.2.3",
+      "title_zh": "总体设计范围：交通轨道市政配套设施",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count",
+        "s7_review_scale_count",
+        "s7_baseline_sample_status"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas.png",
+        "assets/figures/metrics-evidence.png"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "S7 以常规交通优先、两条公共路线、独立试验湾、消防/疏散/撤场和四态运营回应交通、轨道与新型设施组织；尺寸与站口方向待专业复核。"
+    },
+    {
+      "requirement_id": "1.5.2.4",
+      "title_zh": "总体设计范围：京张遗址公园活力带",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.5.2.5",
+      "title_zh": "总体设计范围：城市风貌",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.5.3.required",
+      "title_zh": "重点区域范围详细设计必选项",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count",
+        "s7_review_scale_count",
+        "s7_baseline_sample_status"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas.png",
+        "assets/figures/metrics-evidence.png"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "三处均保留详细设计证据，S7 作为旗舰完成四级尺度、可见城市界面、RACI、许可、测量分母和恢复程序。"
+    },
+    {
+      "requirement_id": "1.5.3.1",
+      "title_zh": "众智园AI自主创新加速区",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.5.3.2",
+      "title_zh": "北京AI原点社区",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本要求通过双答正文、12 个场景节点、结构化对照数据、双语图纸、离线交互和自检证据共同响应；现场绩效不作虚构。"
+    },
+    {
+      "requirement_id": "1.5.3.3",
+      "title_zh": "大钟寺AI产业聚集区",
+      "mandatory": true,
+      "report_sections": [
+        "决策摘要与设计依据",
+        "区域协同与案例转译",
+        "一脊三站两翼空间结构",
+        "双答协议与十二场景",
+        "三处重点区与一比一原型",
+        "实施治理指标与风险"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count",
+        "paired_scenario_count",
+        "ordinary_baseline_coverage_count",
+        "human_review_coverage_count",
+        "stop_condition_coverage_count",
+        "s7_review_scale_count",
+        "s7_baseline_sample_status"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas.png",
+        "assets/figures/metrics-evidence.png"
+      ],
+      "visual_sections": [
+        "总体双答结构",
+        "十二场景筛选与三态对照",
+        "指标准入和证据链"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "大钟寺以常规接驳前场、四象限公共路线、独立低速湾、雨水花园、证据广场和可恢复普通用途形成旗舰城市采用样板。"
+    },
+    {
+      "requirement_id": "agent.1",
+      "title_zh": "一带总体概念与功能统筹方案设计",
+      "mandatory": true,
+      "report_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "三座回执地标、文化里程与国际传播"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "receipt_landmark_count",
+        "east_west_stitch_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
+        "assets/figures/site-overview.png",
+        "assets/figures/culture-brand.png"
+      ],
+      "visual_sections": [
+        "三层范围工作框架",
+        "总体设计范围城市更新与控规深度城市设计",
+        "三座回执地标、文化里程与国际传播"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001",
+        "A-V8-LANDMARKS",
+        "A-V8-OPERATIONS"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "V8 以“京张双答 / 三站一历”统一名称、四色情报、三座不同轮廓的回执地标和一脊三站两翼总图响应总体概念、视觉识别与功能统筹。"
+    },
+    {
+      "requirement_id": "agent.2",
+      "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
+      "mandatory": true,
+      "report_sections": [
+        "统筹研究范围产业与未来城市研究",
+        "AI创新生态、人才画像与AI+场景"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "industry_test_count",
+        "annual_program_cycle_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
+        "assets/figures/land-use-structure.png",
+        "assets/figures/ecosystem-synergy.png"
+      ],
+      "visual_sections": [
+        "统筹研究范围产业与未来城市研究",
+        "AI创新生态、人才画像与AI+场景"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001",
+        "A-V8-LANDMARKS",
+        "A-V8-OPERATIONS"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "七个国际案例各转译一种机制；问题、复现、转译、受控试验、城市回执和开放知识包把土地、人才、算力、数据、场景与服务翼连成可追踪生态。"
+    },
+    {
+      "requirement_id": "agent.3",
+      "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
+      "mandatory": true,
+      "report_sections": [
+        "AI创新生态、人才画像与AI+场景"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "paired_scenario_count",
+        "industry_test_count",
+        "stress_profile_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas.png",
+        "assets/figures/persona-journeys.png"
+      ],
+      "visual_sections": [
+        "AI创新生态、人才画像与AI+场景"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001",
+        "A-V8-LANDMARKS",
+        "A-V8-OPERATIONS"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "12 张双答场景、3 项产业测试和6类压力画像保持稳定ID；三项英雄场景落到平面、剖面、运营、人工责任、停止与恢复。"
+    },
+    {
+      "requirement_id": "agent.4",
+      "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计",
+        "三座回执地标、文化里程与国际传播"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "receipt_landmark_count",
+        "east_west_stitch_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas.png",
+        "assets/figures/culture-brand.png",
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "visual_sections": [
+        "重点区域详细设计",
+        "三座回执地标、文化里程与国际传播"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001",
+        "A-V8-LANDMARKS",
+        "A-V8-OPERATIONS"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "验真环、共译门、回执廊是三座可辨认的AI公共地标；公共旁路、穿行大厅和公共十字先成立，公开荣誉只登记证据、贡献和人工决定。"
+    },
+    {
+      "requirement_id": "agent.5",
+      "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
+      "mandatory": true,
+      "report_sections": [
+        "三座回执地标、文化里程与国际传播",
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "receipt_landmark_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
+        "assets/figures/culture-brand.png",
+        "assets/figures/site-overview.png"
+      ],
+      "visual_sections": [
+        "三座回执地标、文化里程与国际传播",
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE",
+        "JINGZHANG-PARK-PHASE-1",
+        "JINGZHANG-PARK-PHASE-2",
+        "ZHONGGUANCUN-CULTURE-HISTORY"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001",
+        "A-V8-LANDMARKS",
+        "A-V8-OPERATIONS"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "城市证据里程以京张铁路记忆、中关村公开实验、开源转译和城市回执形成文化序列，并提供双语、触觉、高对比和无智能手机入口。"
+    },
+    {
+      "requirement_id": "agent.6",
+      "title_zh": "一带全球AI创新活动体系与长期运营设计",
+      "mandatory": true,
+      "report_sections": [
+        "一带全球AI创新活动体系与长期运营设计",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "annual_program_cycle_count",
+        "s7_pilot_phase_count",
+        "public_ledger_record_status"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
+        "assets/figures/implementation-roadmap.png",
+        "assets/figures/metrics-evidence.png"
+      ],
+      "visual_sections": [
+        "一带全球AI创新活动体系与长期运营设计",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-OPERATIONS-001",
+        "A-METRICS-001",
+        "A-V8-LANDMARKS",
+        "A-V8-OPERATIONS"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "春季基线审计、夏季开发者验真、秋季公众采纳、冬季退出复盘形成城市采纳年；S7另设90天试点、角色分离、许可门和知识归档。"
+    }
+  ],
+  "v3_evidence_index": {
+    "version": "V3",
+    "overall": "A0-01 / A3 pp.5-7 / assets/figures/site-overview.png",
+    "stations": "A0-02 / A3 pp.8-13 / station-*.png",
+    "scenarios": "A0-03 / A3 pp.14-19 / visual/assets/two-answers.json",
+    "open_context": "visual/assets/context-open-map.json; display_context_only; ODbL",
+    "traceability": "12/12 plan_anchor + section_ref + operator_flow_ref + exit_asset_ref",
+    "unknowns": "footfall, energy, efficiency, investment, satisfaction, intensity and field performance remain unknown"
+  },
+  "v8_evidence_index": {
+    "version": "V8",
+    "concept": "Three Stations, One Civic Year",
+    "landmarks": "LMK-01..03",
+    "annual_program": "YEAR-SPRING..WINTER",
+    "pilot": "S7-90D / P90-01..05",
+    "field_status": "not_field_run"
+  }
+}

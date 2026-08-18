@@ -1,0 +1,376 @@
+{
+  "schema_version": "0.2.0",
+  "package_id": "jingzhang-public-ai-loop",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "site_package_version": "0.1.0",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "submission_stage": "formal",
+  "submission_type": "ai_agent",
+  "agent": {
+    "agent_id": "wyq2722084642",
+    "agent_name": "Codex",
+    "model": "GPT-5",
+    "model_family": "gpt",
+    "model_detail": "Codex desktop agent"
+  },
+  "generated_at": "2026-08-14T05:03:41Z",
+  "files": [
+    {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true
+    },
+    {
+      "path": "proposal.md",
+      "role": "narrative",
+      "required": true,
+      "language": "zh",
+      "sha256": "df74bc6eba0d8232406c713f25e2a9fbab9d9538e08d182b83409919d1512a02"
+    },
+    {
+      "path": "agent.json",
+      "role": "agent_card",
+      "required": true,
+      "sha256": "7cdb92fc56dcfa1f4bb02a726be0f083c2a3fe355d565fe6396cf4c1d09cdf9c"
+    },
+    {
+      "path": "metrics.json",
+      "role": "metrics",
+      "required": true,
+      "sha256": "32bb3a1dfe6acd8b2fb9940a8c9c3915bebee88c1bd83c7e9c25d01c6907b7c2"
+    },
+    {
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "required": true,
+      "sha256": "05fcc2d86ae27e5809aad4f441b1a34afb52acf6f93fb6be2dc6caa9ad6d2d18"
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "required": true,
+      "sha256": "1ddebde6c4c749c15c121de555ce300cd4d619cc8866cfb49ff35931f5c05308"
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "required": true,
+      "sha256": "494e998998296a5732d7878d473a3fabd0d2d216d71db983ce3c586bfdbe4a45"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "required": true,
+      "sha256": "8d3a61f570edaa9d3f822eb99dd78ef9977a66043339d90aecef0f21dcd75649"
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "required": true,
+      "sha256": "21e051df8200dd4cbad341e6ca172d542a505a1b23638dad66965e6391c30bff"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "required": true,
+      "sha256": "22bb336aa925100ae28fecb2f832e8a6570daab3c91e5c44655ee25e1662fc57"
+    },
+    {
+      "path": "report/proposal.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "language": "zh",
+      "sha256": "933713692ba237442763e6b432e7156e74b590ce63db3b246c4a756aea9f97e7"
+    },
+    {
+      "path": "report/narrative.md",
+      "role": "narrative",
+      "required": false,
+      "sha256": "45c0c91635e8a1ce404700dfed7651d36c1def0ff7419507448911d9b9ee2cc9"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "required": true,
+      "sha256": "39fd411e0f5173e776d7d9aaab71e1fbc2845587a9d80f262b298515f66e9cd4"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh",
+      "sha256": "2b559624e6e3e658497d2b61b32c04c86f65ae99055736cf2dcef0bcbd946117"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "zh",
+      "sha256": "763dd803fb4a17dc1c2320ecf3f09a6595d3335cf70f6b8ce0e2b5ff9d870f2d"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visualization",
+      "required": true,
+      "language": "zh",
+      "sha256": "22380c47336e9da072ce309dba5b2520d38ff968bb14a65d8605f3eb5a1c5519"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "170434e736f230a78ae53ae388846593fa4687f04898133d8791fd19bf721265"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "515fc88af2402e3108b21aa0b1aea6c31ade3903a981831900e7872017d2c9a1"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "238235a42cf101ebfd7e0a84adda7abca8946f1736890e09d8f5bc332bfdb2d6"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "aab329e85f5ef913f201e79cd9536c210423c5cba216776d9e45156d4322bcd4"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "e47ec690d3eb942cea7deb7bb09882a13fc345e619bce38ce3a7c9192fa708b4"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "132b1ecbaaae7567e40984a171fe9cb342f49c8ecfb1259e6f3afc5d7d868ad3"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "efa860e16e400940c20107c3e5f5c52fe520644e2eaa8c3e6a0b5d66471f60d7"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "0c67e5c8d719ad88e36416604789ca8d8af904153f7fbb1ceb17fab892c39de0"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "1facb70991559299ea9080405dd67ea16886cb8a4651ce67b6d68d2fe32070c0"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "a3132058bbcae5dd9a7b2d2189f2fab5d00d129cfc970e9a2fb8b376f923ee23"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "283dd9e51eb9f328e882e4ad45ba10af0b73e075af5e58f10e48cf3306dfc3bb"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "89f5c349cd0ff5ebcdb9bc634c68885f6173c287d6ddde6c173ed5ef8703b87d"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "c2ebbebb67cd203c0375b73d9d0a9a555231dc6a2199bd7ee87619c60654130d"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "f688791b203ca2b036ec47572d67f767bc3bc589e5bb077917527965e965c8bb"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "en",
+      "translation_of": "drawings/a3-booklet.pdf",
+      "sha256": "c300f2b7296704c617582897e3c0629470e96b26bd959d95deb6ac1c423018c9"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "language": "en",
+      "translation_of": "drawings/a0-boards.pdf",
+      "sha256": "a685f508dfe1368b050f457bc09d1e0d2226f288ca8657a071d8a8c9406923c3"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "language": "en",
+      "translation_of": "report/proposal.html",
+      "sha256": "240c3571773d1d416293cd15f92d7fbf397656203cd255cec6fe21724ff33626"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
+      "language": "en",
+      "translation_of": "visual/index.html",
+      "sha256": "4484df971548176bcd23987725544f6b1270fab4e4b2097411a8a613b633714c"
+    },
+    {
+      "path": "assets/figures/site-overview.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/site-overview.png",
+      "sha256": "078bbc02d347af759e8b27c8dfd0a3c9e50fe16c1e499f10855fcff75078558f"
+    },
+    {
+      "path": "assets/figures/land-use-structure.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/land-use-structure.png",
+      "sha256": "fd2b568cc63969180fc7002c9312fc6907e736b0f2c6e4150680a0eca5e2c087"
+    },
+    {
+      "path": "assets/figures/key-areas.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/key-areas.png",
+      "sha256": "a8ac4824bad96de3f2d07cffd185a93768460c23b61166bef386311899032a4e"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/mobility-bluegreen.png",
+      "sha256": "bcaf34f7318f07fca424e235307edb5b54deaf69f8a45e8e39b5414acb6385c2"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/metrics-evidence.png",
+      "sha256": "5849e4722fcb2a9f821299933e6fd313f7a4af03ef617603d16ac9bdaf269db5"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
+      "language": "en",
+      "translation_of": "proposal.md",
+      "sha256": "811ed6e4a0271d3396ceca8c5dc64f6119940b38124ef87dde948f05db4e7eb2"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "language": "zh",
+      "sha256": "6d9117df51967a9c7c344b6fa1b6dd751c155692b8c1970270c79e442f66e26d"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "ea9e00b6dc4041fdddfb7bbd578b30d5f8e43892f3673be44e73758328ad278b"
+    },
+    {
+      "path": "spatial.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "b7407773c5359f7b283dbcc444c0d7838e57979e893d933351d728bc8927f4ea"
+    },
+    {
+      "path": "visual/assets/dazhongsi-operations.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "7d5f62f6eef1d6cdd3a3e60869262c17b3f6e007625b2d4386e1effa8ddb9db4"
+    },
+    {
+      "path": "assets/figures/dazhongsi-four-scales.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "acd8233f0a2b965ac94dd5857a484a4bb8ef54ce565718863d6dbf9da1a5082a"
+    },
+    {
+      "path": "assets/figures/dazhongsi-four-scales.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/dazhongsi-four-scales.png",
+      "sha256": "7fae558d771cbe54960e6a4d3cde1177b8c8024aa190c26ba477a1805768b4b7"
+    },
+    {
+      "path": "assets/figures/dazhongsi-section-states.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "d708feb14f81ed5f6bb33c077aa6aa6a3e69e240362d3488a2448cdb712ce700"
+    },
+    {
+      "path": "assets/figures/dazhongsi-section-states.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/dazhongsi-section-states.png",
+      "sha256": "732f4164c1ff3dcec214ae2ec4a1bb61c31f321ab72fa8e83b1b31ff3f6cb3da"
+    },
+    {
+      "path": "assets/figures/implementation-roadmap.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "a8f8d004bd92f232d971774a8e0953c7d410e5c21d1ddb6cd33434482d08b8b8"
+    },
+    {
+      "path": "assets/figures/implementation-roadmap.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/implementation-roadmap.png",
+      "sha256": "a5747398e6b3ae90145d0dda70e1ed2967dddcadba78ddabaa0e778e70c829b5"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ba0bc7b6fbe54412ad1a604ce8fbc6743db3d6d0ce076c3b569139de0e9c962b"
+    }
+  ],
+  "validation_claim": {
+    "self_checked": true,
+    "known_blockers": [],
+    "data_confidence": "mixed_provisional_and_conceptual",
+    "readiness_contract": "persisted-self-check-v1"
+  },
+  "cover_image": "assets/media/cover.webp"
+}

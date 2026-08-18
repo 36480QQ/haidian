@@ -6,48 +6,69 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "An original First-Mile Gate identity and a three-station operating chain turn the existing Jing-Zhang public-space spine into adoption infrastructure: product readiness, real first use, verifiable first order and reuse, with ordinary routes, human handoff, pause, exit and public evidence built in."
+summary: "Jing-Zhang First Mile turns the existing public-space spine into AI-adoption infrastructure: Zhongzhiyuan prepares the product, AI Origin verifies the first real user, and Dazhongsi handles operations, first order and reuse; the original First-Mile Gate makes ordinary routes, human handoff, pause, exit and public evidence visible at every step."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # JING-ZHANG FIRST MILE
 
-![One-page executive brief: from technology launch to first user, operable scenario, verifiable order and verified reuse](assets/figures/selection-brief.en.png)
+![Executive review board: real orientation, three-station duties, public baseline and launch outcomes](assets/figures/site-overview.en.png)
 
-This proposal addresses one problem that many AI showcase districts leave unresolved: **after technology leaves the laboratory, who helps it gain its first real user and turn one use into an operable, procurable and reusable city service?** Zhongzhiyuan, AI Origin and Dazhongsi form a continuous product-ready–first-use–first-order handoff. The minimum public promise is that the ordinary route, staffed service and commons still work when AI is removed. Reviewers can inspect the task journey, First-Mile Passport, quantity basis, G0–G4 gates and failure archive rather than trusting a future-looking image.
+Jing-Zhang First Mile focuses on the first passage after technology leaves the laboratory: **who owns the real problem, who becomes the first user, who takes over after the pilot, and how does one use become a procurable and reusable city service?** Zhongzhiyuan, AI Origin and Dazhongsi form a continuous product-ready–first-use–first-order handoff. Its minimum public promise is simple: if AI is removed, the ordinary route, staffed service and commons still work. Reviewers can inspect the task journey, First-Mile Passport, quantity basis, G0–G4 gates and failure archive item by item.
+
+![One-page executive brief: from technology launch to first user, operable scenario, verifiable order and verified reuse](assets/figures/selection-brief.en.png)
 
 ## Centennial Jing-Zhang Culture and a New AI Culture: From Engineering Autonomy to Urban Adoption
 
 ![Centennial Jing-Zhang culture line translating railway grammar into an AI urban-adoption mechanism](assets/figures/century-first-mile.en.png)
 
-The proposal does not treat “centennial Jing-Zhang” as nostalgic decoration. It treats it as a living civic culture. A century ago, the railway completed a first mile from knowledge to real operation through engineering autonomy. Today, Haidian must help AI complete the first mile from model to real city. Their shared values are not technological spectacle but **autonomy, truth-seeking, collaboration, access and public learning**. Railway grammar becomes five institutions: the rail line becomes a continuous three-station adoption chain; sleepers become G0–G4 evidence gates; the platform becomes an equal first-use interface; train formation becomes a responsibility handoff among developer, user and operator; and the timetable becomes a reviewable four-season civic rhythm.
+We read “centennial Jing-Zhang” as a civic culture that can still guide the city. A century ago, the railway completed a first passage from knowledge to real operation through engineering autonomy. Today, Haidian must help AI complete the passage from model to real city. The two eras share **autonomy, truth-seeking, collaboration, access and public learning**. Railway grammar becomes five institutions: the rail line maps to a continuous three-station adoption chain; sleepers to G0–G4 evidence gates; the platform to an equal first-use interface; train formation to the responsibility handoff among developer, user and operator; and the timetable to a reviewable four-season civic rhythm.
 
 Culture therefore enters space, operation and public memory together. Qinghuayuan Station, Dazhongsi and the existing heritage park are orientation and narrative anchors. The First-Mile Gate is not another technology totem: it publicly shows the open entrance, evidence state, staffed service and right to exit. Annual recognition rewards solved real problems, ordinary users completing tasks, unfamiliar operators taking over, and failures being openly reviewed—not launch volume. This is a design-value translation; it does not invent railway history, heritage boundaries or an official commemorative interpretation [source:OFFICIAL-ANNOUNCEMENT] [source:OSM-CONTEXT-2026].
 
+## Three Positionings and Five Functions: From the Taskbook to Testable Mechanisms
+
+![Crosswalk of the three positionings, five functions and First-Mile evidence](assets/figures/taskbook-crosswalk.en.png)
+
+The proposal answers the taskbook's three positionings—**Centennial Jing-Zhang Cultural Belt, Urban AI Life Experience Belt and AI Convergence Innovation Belt**—and five functions—**Full-Stack Independent AI Innovation System, World-Class AI Innovation Ecosystem, New Paradigm of AI-Enabled Scenarios, Intelligent and Vibrant AI City, and Global Voice in AI Governance**. The three positionings form one working chain: the cultural belt supplies autonomy, truth-seeking, access and public learning; the life-experience belt tests public value through ordinary work, living, learning and social tasks; and the convergence belt connects research, first use, first order and reuse. The five functions are implemented through technical capability, ecosystem collaboration, scenario methods, city life and governance output [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+| Taskbook requirement | First-Mile response | Primary spatial anchor | Evidence a reviewer can open |
+| --- | --- | --- | --- |
+| Centennial Jing-Zhang Cultural Belt | Translate engineering autonomy into G0—G4, accountable handoff and a public failure culture | Continuous heritage-park public realm, First-Mile Gate and three handoff landmarks | Centennial culture figure, identity system and culture chapter |
+| Urban AI Life Experience Belt | Test usefulness through four daily domains while preserving ordinary routes, staffed help and harmless exit | Everyday public realm, centred on the AI Origin First-Use Commons | Urban-life/governance figure, first-user journey and 12 scenario cards |
+| AI Convergence Innovation Belt | Replace a showcase corridor with product readiness, first real use, first operational order and verified reuse | Zhongzhiyuan—AI Origin—Dazhongsi and the two wings | Three-station structure, First-Mile Passport and delivery ledger |
+| Full-Stack Independent AI Innovation System | Connect compute, data, model, tooling, operations and adoption through a six-layer evidence stack | Zhongzhiyuan Product-Ready Yard, handing off to the other stations | Full-stack adoption figure and G1 readiness gate |
+| World-Class AI Innovation Ecosystem | Organise cross-sector and cross-region collaboration around reusable outcomes, not a list of parks | Three Zones and Two Wings, plus proposed regional interfaces | Seven global cases, reuse pack and six-party alliance |
+| New Paradigm of AI-Enabled Scenarios | Give every scenario a problem owner, non-AI baseline, human takeover, cost state and stop condition | 12 scenarios and 3 testing settings | Scenario cards and gate summary |
+| Intelligent and Vibrant AI City | Keep travel, service, free stay, accessibility and night-time help functional after AI is removed | Day/night work—living—learning—social task chain | Urban-life/governance and mobility-blue-green figures |
+| Global Voice in AI Governance | Publish gates, passport, failure archive, dual ledgers and reuse packs as a versioned open protocol | First-Mile Console, failure/reuse archive and Global First Mile Network | JZ-AUP v1.0 draft and long-term operating model |
+
+The three positionings and five functions are registered as [metric:official_positioning_count] and [metric:official_function_count]. A requirement is not complete because it appears once in prose: each item needs a mechanism, place, evidence and stop condition. The detailed mapping remains machine-readable in the task coverage matrix and `visual/assets/taskbook-strategy-crosswalk.json`.
+
 ## Design Basis and Source List
 
-This formal proposal takes the *Prequalification Announcement for the Centennial Jing-Zhang AI Innovation Belt International Urban Design Call* issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources as its primary basis. The maintainer-registered provisional boundary, key areas, enumerations, metrics and source registry in `brief/site-package/` form the machine-readable basis. Before generating the proposal, the AI agent read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json` and `data/processed/agent_fact_pack.md`, then used the four processed CSV files to map scope, task coverage, source use and missing data. Each design claim is separated into a traceable source, a recomputable metric, a checkable geometry layer and a human-reviewable assumption [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis].
+The proposal uses three layers of material. The official announcement and agent taskbook define the scope, tasks and expected depth. Registered public sources locate roads, waterways, transit, heritage and existing public space. The proposal's own geometry, metrics and figures explain design choices only. Each layer has a different role, and design inference is never presented as an “official fact” [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis].
 
-`data/source_registry.json` records the permitted use of public, rights-cleared and provisional material [source:SOURCE-REGISTRY]. Neither background-only nor provisional-only material may be promoted into an official boundary, statutory regulatory plan, formal scoring basis or government implementation commitment. `data/processed/agent_fact_pack.md` is a navigation layer rather than a new authority [source:PROCESSED-FACT-PACK]. The complete source and professional-standard mappings remain in `sources.json`, `standard_matrix.json` and `design_depth_matrix.json`.
+At submission, five registered sources can support formal argument and one supports provisional geometry only. The rule is simple: public evidence supports facts, provisional material supports comparison, and missing information stays visibly open. Full provenance, rights, standards and design-depth records remain in the audit layer rather than crowding the reading layer [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK].
 
 ![Source, geometry, metric and submission chain](assets/figures/site-overview.en.png)
 
-Because official `SITE_BOUNDARY` and `KEY_AREA` polygons have not yet been supplied in the repository, the package uses the rough geometry in `brief/site-package/geometry/provisional_boundaries.geojson`. Both `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` remain `provisional_constraint` with `official_boundary=false`. They support concept generation, checking and discussion only; they are not official redlines, approval evidence, statutory controls or a precise-area basis. When official polygons arrive, all dependent land-use, road, green, public-space, building, phasing and metric outputs must be recalculated [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:site_area_sqm] [metric:key_area_count].
+The largest unresolved evidence gap is the official overall boundary and the three key-area redlines. The current extents are therefore one shared **conceptual ruler**: useful for comparing station relationships, spatial ratios and project counts, but not for approval, demolition or engineering set-out. When official geometry arrives, land use, roads, green space, public space, buildings, phasing and areas will be recalculated together. This organizer-owned gap does not reduce content eligibility [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:site_area_sqm].
 
 ## Three-Level Scope Framework
 
-The proposal follows the three levels established by the announcement. The 43.6 km² Coordinated Research Area addresses the AI industry ecosystem, strategic positioning, innovation chain and future urban form. The approximately 11.4 km² Overall Design Area addresses the urban area and industrial districts around Jing-Zhang Railway Heritage Park, including the renewal framework, industrial space, transport and municipal support, and character control. The three Key-Area Detailed Design Areas address use, building carriers, retain-renovate-demolish methodology, public-space continuity, mobility and implementation projects. The levels are cross-mapped in `compliance_matrix.json` so that announcement clauses 1.3, 1.4 and 1.5 and mandatory tasks agent.1–agent.6 have report, geometry, metric, drawing and HTML evidence [depth:three_level_scope_framework] [depth:overall_spatial_structure] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
+Each scale answers one question. The 43.6 km² Coordinated Research Area asks which link is missing from Haidian's AI innovation chain. The approximately 11.4 km² Overall Design Area arranges industry, mobility, public space and renewal projects. The 368.4-hectare Key-Area scope takes the Build—Use—Order handoff down to buildings, streets and operating interfaces. The large scale sets direction, the middle scale builds the system, and the small scale tests whether people can actually use it [depth:three_level_scope_framework] [depth:overall_spatial_structure] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
 
 ![Three levels, three stations and the spatial workflow](assets/figures/land-use-structure.en.png)
 
-The three levels are not separate drawing sets. Strategic research defines the industry and city proposition; overall design turns it into renewal projects, spatial structure and service capacity; detailed design tests whether the proposal can operate at the level of block, building, street, public space and AI scenario. All non-recomputable areas, ratios, capacities and quantities remain unknown rather than being presented as precise conclusions.
+The three scales correct one another along the same chain. Industry strategy must find a spatial carrier; each spatial move must become a project; and the key-area trials must be able to revise the original industry and operating assumptions. Areas, ratios, capacities and quantities are recomputed from one set of layers. Where evidence is missing, the control remains pending rather than acquiring a false precision [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
 
 ![Real-place atlas locating the heritage park, Qinghe and Xiaoyue rivers, transit, campuses and three provisional key areas](assets/figures/spatial-atlas.en.png)
 
 The atlas grounds the adoption chain in real urban relationships. The north meets Qinghe and technology campuses, which supports product readiness and safe handoff. The middle meets Wudaokou, Qinghuayuan heritage and transit, which supports first users and university–community co-testing. The south meets Dazhongsi heritage, transit and everyday commerce, which supports acceptance, first orders and reuse. Cross streets, campuses, communities and stations create lateral “launch ports,” so the belt is not merely a north–south visitor promenade. The base uses registered OSM orientation data; key-area extents remain provisional constraints and are not survey, redline, engineering or approval evidence [source:OSM-CONTEXT-2026] [assumption:A-CONTEXT-MAP-001].
 
-The overall concept is **Jing-Zhang First Mile**. The “first mile” is not a distance or a product launch event. It is the fragile passage after an AI system leaves the laboratory: a need may have no accountable owner; a prototype may have no evidence that an ordinary user can finish a task; a visible pilot may have no operating handoff, procurement path or repeat use; and the public service may disappear when the technology team leaves.
+The overall concept is **Jing-Zhang First Mile**. The “first mile” is the fragile passage after an AI system leaves the laboratory. Four breaks are common: a real need has no accountable owner; a prototype can demonstrate but has no evidence that an ordinary user can finish a task; a visible pilot lacks operating handoff, procurement path or repeat use; and the public service disappears when the technology team leaves.
 
 The proposal therefore builds a city-scale launch operating system that helps one product gain four outcomes in order: **its first real user, first operable scenario, first verifiable order and first verified reuse**. The three key areas form a governed handoff chain:
 
@@ -106,17 +127,27 @@ Four transferable objects connect the stations and wings:
 3. **Urban First-Use Credential:** version, place, people, human handoff, defects, cost range, accountable person and reuse permission after a pilot.
 4. **Reuse Pack:** interfaces, training, service level, exit restoration, licence and conditions that must be retested after relocation.
 
-The public operating interface is the **First Mile Console**. It is for operators before it is a promotional dashboard: it shows which gate each task has reached, which evidence is missing, which scenario is paused and which human service remains available. The public sees only de-identified information relevant to rights and accountability. This adapts the contributor's local practice—1Cake-style hypothesis ledgers, operational dashboards, lean launch discipline, retail-style portfolio management and proof libraries—into a civic evidence system. That experience calibrates method; it is not competition evidence or an official fact [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure].
+The **First Mile Console** is the field interface for this operating system. Operators can see which gate each task has reached, which evidence is missing, which scenario is paused and which staffed service remains available. The public sees only de-identified information relevant to rights and accountability. The interface prioritises current status, responsibility and a durable record; it does not present design method as competition evidence or an official fact [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure].
+
+### Zhongzhiyuan Full-Stack Independent AI Innovation System: Six Evidence Layers
+
+![How six full-stack layers become real urban adoption through the three stations](assets/figures/full-stack-adoption-system.en.png)
+
+“Full-stack independence” does not mean building every component in a closed system. It means critical capabilities are **replaceable, auditable, transferable and able to degrade safely**. The six layers are compute and edge; data and intellectual property; model evaluation and safety; tooling, open source and deployment; scenario operations and service; and adoption, procurement and reuse. Each layer has minimum evidence. Data requires licence, minimisation and deletion. Models require capability limits, red-team tests and human takeover. Tooling requires deployment by an unfamiliar team. Operations require a non-AI baseline, roster and service level. Adoption requires acceptance, cost, procurement state, training and exit restoration.
+
+Zhongzhiyuan prepares L1—L4 and exits through G1. AI Origin tests L3—L5 through real tasks and G2. Dazhongsi verifies L5—L6 operations, first-order and reuse conditions through G3—G4. Technical leadership cannot bypass user completion, operator takeover or adoption evidence; likewise, a satisfying interaction cannot conceal licensing, safety or maintenance gaps. The structured stack is recorded in `visual/assets/taskbook-strategy-crosswalk.json` as an open draft for professional and ecosystem development, not as a claim that a national platform, company or government has adopted it [source:AGENT-TASKBOOK] [assumption:A-PILOT-001].
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-At this level, the proposal converts the operating chain into checkable land use, building carriers, roads, green space, public space and phases. `geometry/land_use.geojson` provides a topology-safe conceptual partition, `geometry/buildings.geojson` provides six conceptual carriers rather than a building survey, `geometry/roads.geojson` provides a first-mile spine, transverse links and slow-mobility connections, and `metrics.json` recomputes the quantities [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [metric:building_footprint_area_sqm] [depth:land_use_layout] [depth:development_intensity_controls].
+At this level, the First Mile workflow becomes a set of checkable spatial objects: a complete conceptual land partition, six programme carriers, a north—south working spine, transverse slow-mobility links and phases tied to the three stations. Together they answer where activity occurs, who uses it and how responsibility moves. The masterplan explains spatial organisation; later specialist work must establish the professional conclusions [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout].
+
+Building footprints and road layers test carrying locations and mobility relationships; areas and quantities are recomputed from the same data [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [metric:building_footprint_area_sqm]. Heights, intensity, road lines, setbacks and facility standards remain pending official planning controls and field evidence.
 
 Five reversible spatial components carry the workflow: street-level **First Mile Windows** receive needs and teams; shared-building **Productization Workbenches** handle standards, data, compliance and operations; public **First-Use Rooms** host small real tasks; the Dazhongsi **First-Order Living Room** supports procurement consultation and reuse demonstrations; and **Evidence Beacons** show project state, human entry and exit method. Existing ground floors, park edges, underused interfaces and leftover spaces should be tested before new construction. Exact buildings, equipment, engineering quantities, heights, intensities, road lines and setbacks remain pending official planning, ownership, fire and municipal conditions.
 
 ## Detailed Design of Key Areas
 
-The three key areas are designed as consecutive delivery gates rather than themed campuses [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design].
+Each key area has one primary responsibility. Zhongzhiyuan prepares a product to leave the laboratory; AI Origin handles an ordinary person's first real use; Dazhongsi handles operating takeover, first order and cross-district reuse. The three stations share one gate system, and their tasks connect without substituting for one another [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design].
 
 ![Three key areas and their delivery responsibilities](assets/figures/key-areas.en.png)
 
@@ -126,13 +157,13 @@ The three key areas are designed as consecutive delivery gates rather than theme
 | Beijing AI Origin Community | **Use & Adopt** | A visible problem desk, first-use rooms and a university–community slow-mobility link | Evidence that ordinary users and unfamiliar staff can finish, correct and exit a real task |
 | Dazhongsi AI Industry Cluster | **Operate & Scale** | First-order living room, AI-native retail, reuse stage and four-quadrant walking links | Cost, service level, contract/procurement status, training and exit terms in a reuse pack |
 
-Zhongzhiyuan may not send an unproductized prototype into public space; AI Origin may not convert positive feedback into a claim of market demand; Dazhongsi may not call a display, intent or media impression an order. Each cross-station handoff is jointly acknowledged by the previous station, next station and affected users. Failed projects remain searchable public knowledge.
+Each station joins programme carriers, public space, slow-mobility links and a first-phase project. Current extents compare spatial relationships only; exact siting still requires redlines, existing-building surveys, ownership, traffic, utilities, fire and heritage evidence [data:geometry/key_areas.geojson#PROV-KEY-003]. Zhongzhiyuan may not send an unproductized prototype into public space; AI Origin may not convert positive feedback into a claim of market demand; and Dazhongsi may not call a display, intent or media impression an order.
 
 ### Three Real Places: Each Answers One Irreplaceable Question
 
 ![Zhongzhiyuan real-place relationships, spatial moves and product-readiness stop condition](assets/figures/place-zhongzhiyuan.en.png)
 
-Zhongzhiyuan is not another AI exhibition hall. Between Qinghe, the heritage park and northern campuses, it forms a research back-of-house, visible test yard and safe-handoff desk. The ordinary public route stays continuous; a prototype without a data owner, human takeover and maintenance plan stops before G1.
+Between Qinghe, the heritage park and northern campuses, Zhongzhiyuan forms a research back-of-house, visible test yard and safe-handoff desk that turns prototypes into deployable products. The ordinary public route stays continuous; a prototype without a data owner, human takeover and maintenance plan stops before G1.
 
 ![AI Origin real-place relationships, spatial moves and first-user stop condition](assets/figures/place-ai-origin.en.png)
 
@@ -142,7 +173,7 @@ AI Origin connects Wudaokou, Qinghuayuan heritage, transit and campus life throu
 
 Dazhongsi links station, heritage interface, public living room and everyday commerce in one arrival loop, allowing a procurement clinic, non-commercial stay, training and reuse archive to coexist. If acceptance, cost, liability, procurement state, training or exit is blank, the pilot is not a first order. All three diagrams use presentation-level orientation; exact siting still requires official redlines, survey, ownership, traffic, fire, trees and heritage review.
 
-The detailed-design geometry uses provisional extents. Functions, building carriers, public-space continuity, mobility and project nodes are concept recommendations for professional development, not final legal parcels or approved construction.
+Functions, building carriers, public-space continuity, mobility and project nodes remain concept recommendations for professional development, not final legal parcels or approved construction.
 
 ### From Regional Concept to Reviewable, Scaled Modules
 
@@ -168,7 +199,15 @@ The three flagship experiences share one public-space baseline while changing pr
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-The First Mile does not substitute visitor numbers for user value. Six personas collaborate along the same chain [metric:persona_count]:
+### Urban AI Life Experience Belt: Four Real Task Domains in One Day
+
+![Work, living, learning and social experience with the JZ-AUP governance protocol](assets/figures/urban-life-governance.en.png)
+
+The life-experience belt measures whether an ordinary person can **complete a real task more easily while retaining choice**. The 08:00 work chain tests commuting, finding service and completing one work task. The 12:30 living chain tests eating, public service, shopping and accessible stay. The 18:00 learning chain tests railway-culture understanding, first-use training and correction. The 20:30 social chain tests the public living room, evening activity and a safe trip home. Every chain first secures a non-AI public baseline, then allows AI as an optional enhancement.
+
+The day/night chain turns vitality into four observable outcomes: task completion, reachable human help, harmless exit and continued free public use. Three-station windows, walking/cycling links and first-use rooms support the day. Night scenarios open only with lighting, staffing, help, removal and noise-management conditions. Testing may not weaken the everyday rights of older adults, children, disabled people, people without smartphones or people who decline data permission [data:geometry/public_space.geojson#PUBLIC-001] [depth:public_service_municipal_infrastructure].
+
+Six personas collaborate along the same chain. They are described through real tasks and rights boundaries, so visitor counts never stand in for user value [metric:persona_count]:
 
 | Persona | Real task | Spatial response | Non-negotiable boundary |
 | --- | --- | --- | --- |
@@ -179,7 +218,7 @@ The First Mile does not substitute visitor numbers for user value. Six personas 
 | Resident, older adult, child or disabled person | Safely complete travel, service, shopping or leisure tasks | Ordinary and AI-assisted paths coexist | No default face recognition; preserve non-digital service |
 | Investor, legal, standards or data specialist | Decide whether and how to continue responsibly | Joint clinic in the services wing | Advice does not replace approval; disclose conflicts |
 
-### Twelve Scenario Cards: Every Scenario Must Pass the Gates
+### Twelve Scenario Cards: From a Real Task to an Acceptable Result
 
 The twelve scenarios [metric:scenario_card_count] each require a user, problem owner, place, non-AI baseline, minimal data, human handoff, operator, cost status, success measure and stop condition.
 
@@ -200,7 +239,7 @@ The twelve scenarios [metric:scenario_card_count] each require a user, problem o
 
 Scenarios 02, 03 and 08 form three industry test settings [metric:industry_test_scenario_count]. They separately test technical reliability, operational takeover and physical safety; passing one cannot substitute for the others.
 
-### Three Pilgrimage Landmarks: Celebrate Completed Handoffs, Not Technology Worship
+### Three AI Pilgrimage Landmarks: Make Handoff, First Use and Public Learning Visible
 
 1. **First-Mile Zero:** connects Zhan Tianyou's independent engineering spirit with the disciplined passage from prototype to real use; historical content requires professional review.
 2. **First User Table:** records verified improvements jointly made by residents, shop staff, property operators, developers and reviewers; it has no commercial ranking.
@@ -222,7 +261,7 @@ The mobility proposal connects the three stations through the heritage-park spin
 
 ![Mobility, slow movement and blue-green public space](assets/figures/mobility-bluegreen.en.png)
 
-By July 2026, Beijing's official landscape authority had reported completion of phase-two supporting works for the Jing-Zhang Railway Heritage public space, including approximately 30.01 hectares in the northern segment and a north-south/east-west fishbone slow-mobility network. The earlier 2.5-kilometre first phase retained rail tracks, switches and station heritage [source:JZ-PARK-PHASE2-COMPLETE-2026] [source:JZ-PARK-PHASE1-2023]. This proposal therefore does not claim the completed public space as its own work or invent another future green axis. It adds four light and removable adoption services: First Mile Windows, evidence beacons, staffed handoff points and AI-assisted routes limited by place and time. With AI switched off, paths remain open, shade remains and seating still works.
+By July 2026, Beijing's official landscape authority had reported completion of phase-two supporting works for the Jing-Zhang Railway Heritage public space, including approximately 30.01 hectares in the northern segment and a north-south/east-west fishbone slow-mobility network. The earlier 2.5-kilometre first phase retained rail tracks, switches and station heritage [source:JZ-PARK-PHASE2-COMPLETE-2026] [source:JZ-PARK-PHASE1-2023]. This proposal uses that completed public-space spine and adds four light, removable adoption services: First Mile Windows, evidence beacons, staffed handoff points and AI-assisted routes limited by place and time. Existing public space is not counted as a new proposal outcome. With AI switched off, paths remain open, shade remains and seating still works.
 
 AI industry services, talent services, edge compute, distributed energy and conventional infrastructure should share adaptable carriers where technically appropriate. Pipe networks, energy, drainage, flood control and fire protection are prerequisites for formal design; their absence is recorded as an assumption rather than filled with agent-generated precision.
 
@@ -249,13 +288,13 @@ The implementation package is a portfolio of small, reversible projects rather t
 | FM-07 | First Mile Console and Public Evidence Library | G0–G4 state, responsibility, expiry, pause and reuse record | Data classification, cybersecurity, de-identification and maintenance |
 | FM-08 | Global First Mile City Network | Bilingual reuse packs, annual failure review and cross-city task exchange | Voluntary partners, rights/data licences, no invented commitment |
 
-### The First 90 Days: Verify One First Real User, Not the Whole Belt
+### The First 90 Days: Verify One Real First User
 
 The first concept pilot is the **AI Startup Service Copilot** at Beijing AI Origin Community. It works only with public information on policy, space, compute, talent and scenarios; it does not replace approval or professional advice. G0 recruits 5–8 real founders and 2–3 service staff to freeze three common tasks and the existing human baseline. G1 tests sourcing, refusal and human escalation with rights-cleared content and synthetic questions. G2 runs limited use beside a visible human desk. G3 asks an unfamiliar staff member to take over. Only after task completion, human fallback and the reuse pack pass G4 may reuse at Zhongzhiyuan or Dazhongsi be considered. Participant counts are research recruitment guidance, not completed samples or official targets.
 
-The first phase buys no robots, builds no heavy exhibition hall, collects no face or continuous trajectory, and does not use response count, event traffic or publicity as success. Real completion, repeat use and operator handoff remain unknown before the trial [metric:first_user_task_completion_rate] [metric:repeat_use_rate] [metric:operator_handoff_pass_rate].
+The first phase buys no robots, builds no heavy exhibition hall, collects no face or continuous trajectory, and does not use response count, event traffic or publicity as success. Real completion, repeat use and operator handoff still need a trial baseline [metric:first_user_task_completion_rate] [metric:repeat_use_rate] [metric:operator_handoff_pass_rate].
 
-Before G0, the field team uses `visual/assets/field-validation-protocol.json`: walk the ordinary route, accessibility breaks and distance to human service; interview recruits with the same 12 questions; record human-baseline time, error, escalation and exit for three tasks; obtain consent and store de-identified results. Five to eight founders and two to three service staff are **recruitment targets**, not completed samples. Synthetic tests, internal reviews and the concept visualization are not user evidence.
+Before G0, the field team follows the submitted **Field Validation Protocol** (`visual/assets/field-validation-protocol.json`). It walks the ordinary route, accessibility breaks and distance to staffed service; interviews recruits with the same 12 questions; records human-baseline time, error, escalation and exit for three tasks; obtains consent; and stores de-identified results. Five to eight founders and two to three service staff are **recruitment targets**, not completed samples. No interviews have yet been completed, and synthetic tests, internal reviews and concept visualisations do not count as user evidence.
 
 ![Six-step first-user journey across user, front-line staff, AI assistance and evidence-gate swimlanes](assets/figures/first-user-journey.en.png)
 
@@ -263,7 +302,7 @@ A first user is not an event check-in. It is a person who completes a real decis
 
 ![Synthetic empty First-Mile Passport example: reproducible structure with organization, participant, performance and order fields left null](assets/figures/first-mile-passport.en.png)
 
-Each pilot produces a **First-Mile Passport** following `visual/assets/first-mile-passport.example.json`. It records the problem owner, first user, real task, human baseline, data boundary, human handoff, unit cost, exit/deletion, human-decision delta and reuse condition. G0–G4 are expiring and revocable states, not permanent badges. The current example is explicitly `synthetic_non_operational`; every real organization, participant, performance, reuse and procurement field is null. It proves only that the record and handoff structure are reproducible, not that a pilot occurred [source:FIRST-MILE-PASSPORT-SAMPLE].
+Each pilot produces a **First-Mile Passport** following `visual/assets/first-mile-passport.example.json`. It records the problem owner, first user, real task, human baseline, data boundary, human handoff, unit cost, exit/deletion, human-decision delta and reuse condition. G0–G4 expire and can be revoked. The submitted passport is a blank **synthetic example that has not operated**: every real organisation, participant, performance, reuse and procurement field is null. It tests the record and handoff structure; it does not claim that a pilot occurred [source:FIRST-MILE-PASSPORT-SAMPLE].
 
 ![90-day implementation ledger linking accountability, output, cost, release guidance and stop conditions](assets/figures/implementation-ledger.en.png)
 
@@ -275,33 +314,39 @@ The range is derived from `visual/assets/pilot-bom.json`: one human-baseline pac
 
 Phasing follows a small, reversible and operations-first discipline. Phase 1 funds problem research, staffed service, accessibility, safety and the evidence system. Phase 2 introduces equipment and spatial retrofit only after the first gates. Phase 3 expands only services that have been genuinely reused. Budgets must record category, quantity basis, price source, range and approval state. The RMB 0.98–1.84 million range supports first-pilot option comparison only; it is not extrapolated to a whole-belt investment or a fiscal commitment [depth:phasing_implementation].
 
-The annual rhythm supports the workflow rather than standalone events: publish city problem orders in spring, run product-readiness challenges in summer, host a real-user first-use week in autumn, and publish the failure, reuse and exit ledger in winter.
+The annual programme keeps the workflow running: publish city problem orders in spring, run product-readiness challenges in summer, host a real-user first-use week in autumn, and publish the failure, reuse and exit ledger in winter.
 
 ## Long-Term Operation and a Global Public Brand Asset
 
 ![Six-party operating alliance, annual rhythm, dual ledgers and three-year roadmap](assets/figures/long-term-operating-model.en.png)
 
-The First Mile cannot become an ownerless design after the call. A lightweight six-party alliance is proposed: problem owners define real tasks and retain stop authority; product teams maintain versions and failure limits; site operators handle rosters, takeover and recovery; residents and first users help define success and harm; universities and professional bodies support evaluation, ethics, standards and rights clearance; government or platform operators coordinate space, rules and procurement interfaces only within their authority. No single party may declare success alone. This is a governance proposal, not a claim that any named institution has agreed to participate.
+The First Mile still needs accountable operators after the call. A lightweight six-party alliance is proposed: problem owners define real tasks and retain stop authority; product teams maintain versions and failure limits; site operators handle rosters, takeover and recovery; residents and first users help define success and harm; universities and professional bodies support evaluation, ethics, standards and rights clearance; government or platform operators coordinate space, rules and procurement interfaces only within their authority. Project status must be confirmed through evidence from more than one party. This is a governance proposal, not a claim that any named institution has agreed to participate.
 
 Four public checkpoints structure the year: spring problem orders, summer product readiness, autumn first-use week, and winter failure/reuse ledger. Every pilot keeps two accounts: a **public-value ledger** records who completed which task, fairness of access and right to exit; an **operating-economics ledger** records staffing, maintenance, unit service cost, procurement/cooperation status and restoration cost. Year 1 proves one place, one user type and one operating roster. Year 2 replicates only G4 services and records which conditions must be retested after moving. Year 3 may form a Global First Mile Network through open interfaces, bilingual reuse packs and city-to-city task exchange. Its success is measured by verified reuse and the quality of openly documented failure, not the number of city logos.
 
+### JZ-AUP v1.0: Make a “Global Voice” Executable, Contestable and Reusable
+
+The governance output is named the **Jing-Zhang AI Urban Adoption Protocol (JZ-AUP v1.0)**. It consists of five directly inspectable objects: the First-Mile Task Order, G0—G4 gate record, First-Mile Passport, Failure and Reuse Archive, and the Public-Value and Operating-Economics Ledgers. Every object records version, accountable person, evidence state, pause/exit method and public scope. Cities exchange only authorised, de-identified structures and reuse conditions, never personal data, and a one-time pass does not automatically become a permanent licence.
+
+The protocol proposes one bilingual annual release covering problem orders, rule changes, representative failures, exit restoration and reuse packs that pass G4, with challenge review by users, operators, developers and independent professionals. A global voice comes from a method that other cities can inspect, criticise, modify and retest under different conditions. Governance knowledge is reused only after cross-team takeover, cross-place retesting and real exit records exist. JZ-AUP is currently an open protocol draft authored by this proposal, not an official standard, international recognition or a commitment from partner cities [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Known spatial metrics are recomputed from the GeoJSON layers. The provisional Overall Design Area is approximately 11.41 km²; current concept partitions yield a green ratio of approximately 15.27% and public-space ratio of approximately 21.98%. These are reproducible design quantities under provisional geometry, not statutory targets. Scenario cards, industry tests, personas, service zones, landmarks and gates are countable design commitments. FAR and operating outcomes remain unknown where evidence does not yet exist [depth:metrics_recalculation] [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001].
+Spatial metrics are recomputed directly from the layers. The provisional Overall Design Area is approximately 11.41 km²; current concept partitions yield a green ratio of approximately 15.27% and public-space ratio of approximately 21.98%. These numbers support comparison within one shared extent; they are not statutory controls. Scenario cards, industry tests, personas, service zones, landmarks and gates are countable design commitments. FAR and real operating outcomes await official evidence and trial results [depth:metrics_recalculation] [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001].
 
 ![Recomputable metrics and the evidence chain](assets/figures/metrics-evidence.en.png)
 
-`compliance_matrix.json` is the control file for task responsiveness. Each mandatory announcement and agent-taskbook item maps to report sections, geometry, metrics, drawings, visual sections, sources, assumptions and self-checks. `standard_matrix.json` maps the official and professional design standards. `design_depth_matrix.json` maps the fifteen required planning, urban-design, architectural, transport, infrastructure and implementation outputs. A missing mandatory item blocks formal scoring.
+Full formulae, sources, confidence and task coverage remain in the structured audit layer. The narrative separates numbers into three categories: spatial quantities recomputed from geometry, controls awaiting official conditions, and performance that must be recorded through operation. Each category is labelled so that an aspiration is not presented as an achieved result.
 
 Performance is read through four layers: technology (error, handoff and safety), user (real task completion and harmless exit), operations (takeover, maintenance and service level), and adoption (repeat use, procurement/cooperation status and cross-district reuse). A good result at one layer cannot prove project success, and test volume, launch-event attendance or media reach cannot substitute for real adoption.
 
 ## Risk, Copyright, and Compliance
 
-This package does not claim official approval, a statutory plan, final land ownership, final construction scale, guaranteed procurement, committed funding or implementation. Missing official boundaries, detailed regulatory controls, road lines, buildings, ownership, municipal, fire and heritage conditions remain explicit assumptions [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE].
+This is a concept-design and governance proposal. It does not claim official approval, a statutory plan, final land ownership, construction scale, procurement, funding or implementation commitment. Overall and key-area boundaries, detailed controls, road lines, buildings, ownership, utilities, fire and heritage conditions remain open for professional review [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE].
 
 Four project-specific risks govern the design. First, public space must not become a privatized showroom: ordinary routes, free staying and non-consumption remain primary. Second, “first order” must not be presented as a government procurement promise: every procurement, funding and contract state is labelled. Third, transparent entry is reserved for university teams, independent developers and small firms as well as leading companies. Fourth, no device is procured before staffing, maintenance, expiry review and exit restoration have owners and resources.
 
-The Chinese proposal, this complete English counterpart, bilingual figures, bilingual A3/A0 drawings and bilingual offline HTML follow the repository's bilingual contract. Assets and code are recorded in `sources.json` and `report/copyright_statement.md`. The offline HTML loads no remote scripts, map tiles, fonts, iframes, forms or external APIs and does not track reviewers. The AI agent remains accountable for factual claims, source mapping, rights, geometry, metrics and expression; maintainers and professional reviewers may request revision or reject unsupported content.
+Chinese and English narratives, figures, drawings and offline pages stay paired; asset provenance and rights are recorded in the source list and copyright statement. The authors remain accountable for facts, sources, rights, geometry and metrics. Any unsupported claim may be revised or removed through professional review.
 
 ## References
 

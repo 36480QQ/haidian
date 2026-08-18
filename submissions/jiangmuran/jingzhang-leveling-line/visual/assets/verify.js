@@ -125,6 +125,14 @@ const spine = (() => {
 })();
 const publicFeatures = read('geometry/public_space.geojson').features;
 
+const fabric = read('visual/assets/osm_fabric.json');
+function constraintArea(id) {
+  const f = read('geometry/constraints.geojson').features
+    .find((x) => String(x.properties.id) === id);
+  if (!f) throw new Error(`constraints.geojson has no ${id}; the prose states its area`);
+  return geomArea(f.geometry);
+}
+
 const computed = {
   site_area_sqm: site,
   green_ratio: layerArea('green_space.geojson') / site,
@@ -142,9 +150,58 @@ const computed = {
   // would mean the phases had started overlapping again.
   phasing_union_area_sqm: layerArea('phasing.geojson'),
   key_area_count: read('geometry/key_areas.geojson').features.length,
+  // Five quantities the prose stated and no sent file carried: the key-area
+  // total, the eleven stitching points and the three controlled extents.
+  // They were cited only to geometry/, which the review never receives, so
+  // every one of them was correct and none was checkable (E311).
+  // stitching_point_count is deliberately absent: its positions come from
+  // the OSM fabric, so it is background_only rather than class 1, and this
+  // table covers exactly class 1 in both directions.
+  key_area_area_sqm: layerArea('key_areas.geojson'),
+  test_field_area_sqm: constraintArea('CONSTRAINT-001'),
+  robot_pilot_area_sqm: constraintArea('CONSTRAINT-002'),
+  safety_review_area_sqm: constraintArea('CONSTRAINT-003'),
   leveling_spine_length_m: spine,
   benchmark_count: publicFeatures.filter((f) => f.properties.benchmark_id).length,
+
+  // These eight are as recomputable from the shipped layers as the nine above,
+  // and were outside this table because "class 1" was a category the prose
+  // described and no file carried. An independent verifier that checks the
+  // metrics someone remembered to list is checking the list, not the metrics.
+  // `metric_class` is a field in metrics.json now, and structural claim 17
+  // below asserts this table covers every metric that carries class 1.
+  land_use_feature_count: read('geometry/land_use.geojson').features.length,
+  road_feature_count: read('geometry/roads.geojson').features.length,
+  phase_count: read('geometry/phasing.geojson').features.length,
+  land_use_class_count: new Set(
+    read('geometry/land_use.geojson').features.map((f) => String(f.properties.land_use_code)),
+  ).size,
+  industry_test_scenario_count: read('geometry/constraints.geojson').features.length,
+  benchmark_first_order_count: publicFeatures.filter(
+    (f) => f.properties.benchmark_order === 'first').length,
+  benchmark_third_order_count: publicFeatures.filter(
+    (f) => f.properties.benchmark_order === 'third').length,
+  phased_share_of_design_scope: layerArea('phasing.geojson') / site,
+
+  // The measured existing fabric, from the shipped `osm_fabric.json`. Two are
+  // re-derived from that file's own components — density from length and area,
+  // coverage from footprint and area — and four are the readings it carries,
+  // checked here against the copies in metrics.json. Copying a number into a
+  // second file is how two copies of one fact start to drift.
+  //
+  // Written out rather than spread in from a helper: the coverage gate reads
+  // the keys of this literal, so a key it cannot see here is a metric nobody
+  // can tell is covered.
+  existing_street_length_m: fabric.streets.total_km * 1000,
+  existing_street_density_m_per_sqm:
+    (fabric.streets.total_km * 1000) / (fabric.boundary.area_km2 * 1e6),
+  existing_junction_count: fabric.streets.junctions,
+  existing_block_median_area_sqm: fabric.blocks.median_ha * 1e4,
+  existing_oversized_built_block_count: fabric.blocks.oversized_built_count,
+  existing_building_coverage_ratio:
+    (fabric.buildings.footprint_km2 * 1e6) / (fabric.boundary.area_km2 * 1e6),
 };
+
 
 // Areas are compared with a relative tolerance: this file re-implements the
 // projection independently, so agreement to 1e-4 is the meaningful claim, not
@@ -320,14 +377,40 @@ check('every class-1 table row quotes the current building footprint',
 // This closes that door from the reader's side rather than the author's.
 const cards = read('visual/assets/scenario_cards.json').cards;
 const tableIds = [...prose.matchAll(/^\| (S\d\d) \|/gm)].map((m) => m[1]);
-check('the card table carries every card in scenario_cards.json, in both editions',
-      tableIds.length === cards.length * 2 &&
-      cards.every((c) => tableIds.filter((id) => id === c.id).length === 2),
-      `${cards.length} cards, ${tableIds.length} table rows across both editions`);
+// Two tables per edition now carry the cards: the card table itself and the
+// verification table added with E265, which states for each card what "it
+// worked" would mean and what it is compared against. The count below was
+// `* 2` when there was one table, and raising it to `* 4` makes the check
+// stricter rather than looser: every card must appear in BOTH tables in BOTH
+// editions, so a card that gains a scenario and no way of finding out whether
+// it helped fails here.
+check('both card tables carry every card in scenario_cards.json, in both editions',
+      tableIds.length === cards.length * 4 &&
+      cards.every((c) => tableIds.filter((id) => id === c.id).length === 4),
+      `${cards.length} cards, ${tableIds.length} table rows across two tables and both editions`);
 
 check('floor_area_ratio stays unknown until official FAR controls exist',
       metrics.floor_area_ratio.status === 'unknown' && metrics.floor_area_ratio.value === null,
       `${metrics.floor_area_ratio.status} / ${metrics.floor_area_ratio.value}`);
+
+// The claim on the reviewer's checklist is that this file recomputes *every*
+// class-1 metric. Until metrics.json carried `metric_class`, that could not be
+// checked: the category lived in three prose paragraphs, this table held nine
+// entries, and eight equally recomputable metrics sat outside both. Now the
+// coverage is asserted in both directions, so the claim fails loudly if either
+// side gains a metric the other does not.
+(() => {
+  const declaredClass1 = Object.entries(metrics)
+    .filter(([, v]) => v.metric_class === 1).map(([k]) => k).sort();
+  const recomputedHere = Object.keys(computed).sort();
+  const missing = declaredClass1.filter((k) => !recomputedHere.includes(k));
+  const extra = recomputedHere.filter((k) => !declaredClass1.includes(k));
+  check('this file recomputes every metric metrics.json marks class 1, and only those',
+        missing.length === 0 && extra.length === 0,
+        missing.length || extra.length
+          ? `missing: [${missing}] not class 1: [${extra}]`
+          : `${declaredClass1.length} class-1 metrics, all recomputed here`);
+})();
 
 console.log('\nStructural claims the proposal makes, asserted against the data');
 console.table(structural);

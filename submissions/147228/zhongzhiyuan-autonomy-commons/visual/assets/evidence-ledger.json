@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
   "proposal_id": "zhongzhiyuan-autonomy-commons",
-  "revision": "v3.5",
+  "revision": "v3.8",
   "author_github": "147228",
-  "method": "每条记录是一个可审计的设计决策：先写风险，再写空间响应、目标指标、输入证据、人工复核和回退条件。target_score 不是现状事实，必须在官方边界、现场测绘或专业模拟到位后复核。气候与健康记录是通用方法底座；自动驾驶节点的专属证据位于 autonomy_nodes、autonomous-scenarios、curbside-test-gates 与 autonomy-spatial-chain。",
+  "method": "每条记录是一个可审计的设计决策：先写风险，再写空间响应、目标指标、输入证据、人工复核和回退条件。target_score 不是现状事实，必须在官方边界、现场测绘或专业模拟到位后复核。",
   "records": [
     {"id":"climate-risk-baseline","domain":"climate","title_zh":"气候风险基线","status":"design_target","target_score":90,"decision_zh":"把热浪、极端降水、干旱和复合事件作为同一张压力表，先建立风险分区再决定设施。","metric":{"name":"hazard_gate_score","target":90,"unit":"score_0_100","formula":"IPCC-AR6-URBAN-RISK与BEIJING-CLIMATE-ADAPTATION-2024作为背景证据；现场与高分辨率气象数据到位后复核。"},"inputs":["source:IPCC-AR6-URBAN-RISK","source:AGENT-TASKBOOK"],"evidence_refs":["report/proposal.html","geometry/constraints.geojson"],"verification_zh":"IPCC-AR6-URBAN-RISK与BEIJING-CLIMATE-ADAPTATION-2024作为背景证据；现场与高分辨率气象数据到位后复核。","boundary_zh":"仅作设计目标，不替代场地气候模拟。"},
     {"id":"heat-comfort","domain":"climate","title_zh":"热舒适与遮阴","status":"design_target","target_score":90,"decision_zh":"以连续遮阴、可饮水、可休息和热浪触发器优先于装饰性硬质铺装。","metric":{"name":"heat_action_coverage","target":90,"unit":"percent","formula":"由树冠、廊架、可开启避暑点和热浪响应记录共同计算。"},"inputs":["source:SITE-PACKAGE","source:AGENT-TASKBOOK"],"evidence_refs":["report/proposal.html","geometry/constraints.geojson"],"verification_zh":"由树冠、廊架、可开启避暑点和热浪响应记录共同计算。","boundary_zh":"不得把目标覆盖率写成现状。"},

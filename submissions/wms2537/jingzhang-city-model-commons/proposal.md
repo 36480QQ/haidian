@@ -7,7 +7,7 @@ translation_file: "proposal.en.md"
 license: "CC-BY-4.0"
 summary: "以百年京张铁路遗产为公共版本线，建设由开放三维语义城模、可复现实验、受控实地验证和公众审计共同组成的空间智能公地。三处重点区分别承担基准验证、开源共创与日常服务，把AI从城市表面的设备标签转化为可理解、可模拟、可问责、可回滚的公共能力。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
-iteration: "v1.3"
+iteration: "v1.4"
 ---
 
 # 京张城模公地
@@ -45,7 +45,7 @@ iteration: "v1.3"
 
 提交采用 EPSG:4326 交换 GeoJSON，并在 EPSG:4548 下复算面积和长度。当前临时总体边界复算约 **11.413 km²**，与公告约 11.4 km² 的差异约 0.11%；该吻合只说明临时几何可支持概念工作，不能升级为官方红线或审定面积。[data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm] [metric:site_area_deviation_ratio]
 
-容积率、建筑高度、法定建筑密度、道路退线、现状建筑总基底、市政容量和文保控制面积均明确保持 unknown。建筑、道路、用地和分期图层表达“可供专业团队深化的参考方案”，不构成批准、拆除、新建、工程线位、投资或实施承诺。[metric:floor_area_ratio] [metric:building_height_m] [metric:official_building_density] [metric:road_redline_setback_m] [metric:existing_building_footprint_sqm] [depth:existing_conditions_diagnosis] [depth:risk_missing_data]
+全域及该局部官方资料证据单元之外的容积率、建筑高度、法定建筑密度、道路退线、现状建筑总基底、市政容量和文保控制面积均明确保持 unknown。大钟寺 HD00-1603-01/03A 另有有范围限定的官方控制证据，但不改变全域临时几何，也不构成对本方案的批准。建筑、道路、用地和分期图层表达“可供专业团队深化的参考方案”，不构成批准、拆除、新建、工程线位、投资或实施承诺。[metric:floor_area_ratio] [metric:building_height_m] [metric:official_building_density] [metric:road_redline_setback_m] [metric:existing_building_footprint_sqm] [depth:existing_conditions_diagnosis] [depth:risk_missing_data]
 
 ### 海淀证据基线与区域协同：公开事实 → 设计响应 → 验证门
 
@@ -58,6 +58,19 @@ iteration: "v1.3"
 | 北京老龄事业公开报告提供老龄社会背景 [source:DATA-SRC-BEIJING-AGEING-2024] | 遮阴、座椅、实体导视、人工求助和无障碍连续性先于可选 AI；老年、残障、照护者和拒绝采集者都保留非数字路径 | 由知情同意的全龄用户参与热安全/无障碍走查，公开断点、求助和负面结果 |
 | 官方公开介绍将京张铁路遗址公园描述为约 9 km 的城市更新与绿地系统，并涉及桥下空间与 13 号线语境 [source:DATA-SRC-JINGZHANG-PARK-20230630] | 把遗产绿脊作为“开放版本线”，做站点—公园—服务节点的接口；不虚构站点、红线或桥下工程线位 | 以官方站点、道路、文保、权属、消防和应急数据校核后再落物理线位 |
 | 海淀政府工作报告将 AI、数据、安全与创新带放入当前发展语境 [source:DATA-SRC-HAIDIAN-2026-WORK-REPORT] | 城模公地承担研究到街道的翻译、受控验证和公共问责，不把政策语境写成已批准项目 | 每个试点先锁定责任主体、数据许可、安全审查、公共服务基线和退出决定 |
+
+### 大钟寺局部官方资料证据：局部 guardrail，不是全域红线
+
+北京公共资源交易页面及其公开附件为大钟寺重点区补上了一块可复核的局部官方资料证据：HD00-1603-01 与 HD00-1603-03A 合计 **39,522.111 m²**，并有规划用地测量报告、供地“多规合一”审核、局部市政交通方案和水影响审查。[source:DATA-SRC-DAZHONGSI-TRANSACTION-20251231] [source:DATA-SRC-DAZHONGSI-SURVEY-20250806] [source:DATA-SRC-DAZHONGSI-SUPPLY-REVIEW-20251218] [source:DATA-SRC-DAZHONGSI-MUNICIPAL-TRAFFIC-2025] [source:DATA-SRC-DAZHONGSI-WATER-20250819] [data:visual/assets/site_evidence_baseline.json#OBS-DAZHONGSI-BLUE-JING-LIJIA-2025] [metric:dazhongsi_local_unit_area_sqm]
+
+| 局部已核实事实 | 在本方案中的用法 | 不能外推的结论 |
+| --- | --- | --- |
+| HD00-1603-01 控制高度 **60 m**、容积率 **2.45**、地上建筑规模 96,656.065 m²、绿地率下限 **25%** [metric:dazhongsi_local_b4_height_control_m] [metric:dazhongsi_local_b4_far_control] [metric:dazhongsi_local_b4_green_ratio_min] | 作为大钟寺服务廊、站点界面和可逆更新的局部体量/绿地 guardrail；先做首层开放、无障碍和可维护接口 | 不是 72 ha 重点区或 11.4 km² 总体设计范围的 FAR、高度或法定绿地率 |
+| 北三环建筑控制线退让不少于 **30 m** [source:DATA-SRC-DAZHONGSI-SUPPLY-REVIEW-20251218] [metric:dazhongsi_north_third_ring_setback_m] | 把退让带作为安全、树荫、步行连续和站点到公共空间的设计检查项，不把临时线位画成红线 | 不替代全域道路红线、消防、出入口和工程审批 |
+| 大钟寺站约 **300 m** 一体化管控语境；局部交通方案含 3,190 人次/小时早高峰模型和约 0.14 ha 非机动车停车场 [source:DATA-SRC-DAZHONGSI-MUNICIPAL-TRAFFIC-2025] [metric:dazhongsi_station_integration_radius_m] | 将“城市运行市集”首发验证限定为站点—服务廊—公共空间的可达性、人工求助和运营成本测试 | 不把报审稿模型当作全带客流基线、已批停车或工程容量 |
+| 规划水平年 2027、综合径流系数上限 **0.34**，雨水入土城沟、污水入清河再生水厂 [source:DATA-SRC-DAZHONGSI-WATER-20250819] [metric:dazhongsi_runoff_coefficient_max] | 把水敏更新、维护责任和极端天气回滚写入大钟寺试点的开放门槛与成本回收记录 | 不构成全带水系统模型或海绵城市审批结论 |
+
+测量报告含桩点坐标，但可见文本没有给出完整 GIS CRS、轴顺序和单位元数据；因此本包**不把该局部坐标写入 GeoJSON，也不替换 KEY-003 临时 polygon**。先确认测绘单位的坐标与授权，再进行边界重建和现场复核。[assumption:A-BOUNDARY-001] [assumption:A-CONTROLS-001] [depth:existing_conditions_diagnosis]
 
 **五个区域接口。** 以“问题—能力—凭证”而不是机构名单建立协同；所有方向均需对方另行同意，交换去标识化或公开材料，并把权利/IP、安全责任、维护记录和拒绝/撤回/不互认路径写入接口合同。[source:DATA-SRC-HAIDIAN-15FYP-20251208] [assumption:A-REGIONAL-SYNERGY-001] [data:visual/assets/site_evidence_baseline.json#REG-NORTH-LATITUDE]
 
@@ -163,6 +176,8 @@ iteration: "v1.3"
 ### 大钟寺：城市运行市集 / Urban Runtime Market
 
 大钟寺检验 AI 能否在最普通的商业、通勤、文化和社区服务中创造可感知价值。空间形成“**百年道岔厅—日常智能服务廊—无障碍服务站—减废共创站—夜间慢界面**”。百年道岔厅以“选择与分岔”连接铁路工程史和算法决策；服务廊聚合跨店排队、库存、减废和活动信息；无障碍站同时提供实体导视、人工服务和主动开启的 AI 共驾；减废站帮助商户共享可匿名的供需和食物浪费数据。[data:geometry/key_areas.geojson#KEY-003] [data:geometry/buildings.geojson#BLD-009] [data:geometry/public_space.geojson#PS-001]
+
+首个局部验证使用官方资料可复核的 HD00-1603-01/03A 单元：60 m、FAR 2.45、绿地率下限 25% 和北三环 30 m 退让只作为该单元的设计护栏；大钟寺站 300 m 一体化语境和径流系数 0.34 则转化为站点可达性、雨洪维护和运营成本的验证门。它们不覆盖大钟寺 72 ha 临时重点区，也不改变“先复用、再验证、后扩展”的分期。[source:DATA-SRC-DAZHONGSI-SUPPLY-REVIEW-20251218] [source:DATA-SRC-DAZHONGSI-MUNICIPAL-TRAFFIC-2025] [source:DATA-SRC-DAZHONGSI-WATER-20250819] [metric:dazhongsi_local_b4_height_control_m] [metric:dazhongsi_local_b4_far_control] [metric:dazhongsi_local_b4_green_ratio_min] [metric:dazhongsi_north_third_ring_setback_m] [metric:dazhongsi_station_integration_radius_m] [metric:dazhongsi_runoff_coefficient_max]
 
 这里禁止以不透明画像实施差别价格，禁止把人脸识别当作进入公共服务的默认条件，也不以算法替代商户和用户申诉。夜间活动通过照明、可见人员、连续座椅和清晰撤离路径保障，而不是只依赖“智能监控”。三处重点区的详细性体现在角色、界面、用户、运营和治理边界明确；精确建筑线位仍须官方底图与专业调查深化。[depth:three_key_area_detailed_design]
 

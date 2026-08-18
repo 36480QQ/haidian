@@ -23,6 +23,10 @@ Repository Issue #846 records a material background risk: the provisional design
 
 ![Overall concept: pause is a selectable urban rhythm](assets/figures/site-overview.en.png)
 
+![Concept vision: a public-realm spine that supports stopping, moving and changing intensity](assets/figures/concept-overview.jpg)
+
+*AI-generated conceptual visualization for atmosphere and component relationships only. It is not an actual aerial view and does not establish a redline, area or metric basis, regulatory condition, engineering-feasibility finding or implementation commitment.*
+
 ## Three-Level Scope Framework
 
 The coordinated research area frames common rules for the innovation ecosystem and talent district. The overall design area organizes one pause spine, three rhythm courts, six east-west transition crossings and twelve pause stations. The three key areas test a complete chain: calm validation before release, shared-learning pause during creation, and civic reflection after adoption [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework] [data:geometry/site_boundary.geojson#SITE-001].
@@ -58,6 +62,18 @@ The three rhythm courts are distinct public checkpoints in the AI maturity chain
 | Dazhongsi Civic Reflection Court | Post-adoption review | Station waiting realm, public trial, complaint and exit desk, cultural events | Civic adoption forum, AI service review wall, quiet night route | Station, roads, utilities, commerce and heritage review |
 
 ![Three rhythm courts: validation, shared learning and reflection](assets/figures/key-areas.en.png)
+
+![Concept vision: Zhongzhiyuan Calm Validation Court accommodates controlled low-speed testing within a low-stimulation public realm](assets/figures/concept-zhongzhiyuan.jpg)
+
+*AI-generated conceptual visualization for atmosphere, user choice and component relationships only. It does not establish a redline, metric, regulatory condition, engineering-feasibility finding or implementation commitment.*
+
+![Concept vision: AI Origin Shared-Learning Pause Court combines an open workshop with quiet edges](assets/figures/concept-ai-origin.jpg)
+
+*AI-generated conceptual visualization for atmosphere, user choice and component relationships only. It does not establish a redline, metric, regulatory condition, engineering-feasibility finding or implementation commitment.*
+
+![Concept vision: Dazhongsi Civic Reflection Court prioritizes face-to-face public review over technological spectacle](assets/figures/concept-dazhongsi.jpg)
+
+*AI-generated conceptual visualization for atmosphere, user choice and component relationships only. It does not establish a redline, metric, regulatory condition, engineering-feasibility finding or implementation commitment.*
 
 The three pilgrimage and honor nodes are the Centennial Waiting Hall, Origin Pause Court and Dazhongsi Reflection Platform. They display the question, test conditions, failure records, responsible human and current status; a submission is not presented as selected, and a pilot is not presented as implemented.
 
@@ -106,13 +122,103 @@ Municipal and digital services follow four rules: space-level state, edge proces
 
 ![Slow mobility, blue-green space and three sensory intensities](assets/figures/mobility-bluegreen.en.png)
 
+
+## Public-Life Computation, Flow Distribution, and Human–Robot Coexistence
+
+Beyond memorial halls, the proposal treats public life itself as a design object: who uses space at which hours, how flows are allocated, and how robots share routes with people. Only space-level aggregate states and reversible operating rules are proposed. The text does not build personal profiles and does not replace traffic engineering, fire protection or robot-safety design [depth:municipal_new_infrastructure] [source:SOURCE-REGISTRY].
+
+### Public-Life Computation Desk
+
+Pause stations and crossings read seat occupancy, slow-mobility throughput, sound-level bands and open/closed windows only. Edge devices aggregate these into paper-board or low-brightness point/band/block displays for operations and public review. No emotion recognition, face recognition, trajectory reconstruction or individual-attention inference is allowed [depth:municipal_new_infrastructure].
+
+![Concept vision: public life computed only as space-level occupancy and flow state](assets/figures/concept-public-life-computation.jpg)
+
+*AI-generated conceptual visualization for low-intrusion sensing and aggregate-state display only. Paper-board graphics in the image are not real data charts and do not establish traffic metrics, privacy compliance or engineering feasibility.*
+
+### Rhythm Flow Allocation
+
+The north–south spine keeps a continuous accessible walk. Parallel switchable bands handle cycling, staying, temporary events and low-speed robot service. Texture and color mark speed classes; key nodes keep human guidance and closable sections. Peak periods prioritize walking and wheelchair routes; event setups reverse to daily sections afterwards [data:geometry/roads.geojson#ROAD-001] [metric:pause_spine_length_m].
+
+![Concept vision: multi-path slow mobility and switchable flow allocation](assets/figures/concept-flow-distribution.jpg)
+
+*AI-generated conceptual visualization for multi-path assignment and robot yielding only. It does not establish road redlines, section dimensions, capacity or signal timing.*
+
+### Human–Robot Coexistence
+
+Low-speed delivery and service robots use side service bands and docking pockets, and must yield in pedestrian-priority zones. Crossings provide audible/visible intent cues, safety buffers and manual e-stop pillars. Maintenance, charging and takeover points are visible but separated from primary rest surfaces. Tactile paths, wheelchairs, children and pets are never displaced by robots [depth:traffic_rail_slow_parking].
+
+![Concept vision: walkable shared streets where robots yield to people](assets/figures/concept-human-robot-coexistence.jpg)
+
+*AI-generated conceptual visualization for coexistence components and priority order only. It is not product selection, safety certification or operating permission.*
+
+Preconditions: road-redline, accessibility and fire-lane survey; robot operator, insurance and emergency-takeover agreements; minimal-retention space-level data and public review rules. This section is conceptual advice, not an engineering conclusion.
+
 ## Blue-Green Network, Public Space, and Urban Character
 
 The green spine and three rhythm courts form the public-space frame. Twelve pause stations cycle through quiet, social and event modes; each provides non-digital signs, sitting and leaning surfaces, wheelchair and stroller space, shade, water and human help. Sensors support space maintenance and never identify people [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space].
 
+![Concept vision: three selectable intensities in the same public-space family—quiet, social and event](assets/figures/concept-sensory-modes.jpg)
+
+*AI-generated conceptual visualization for operating atmosphere, occupancy change and component relationships only. It does not establish capacity metrics, regulatory conditions, engineering-feasibility findings or implementation commitments.*
+
+![Concept vision: reusable Pause Station component kit](assets/figures/concept-component-kit.jpg)
+
+*AI-generated conceptual visualization showing relationships among seating, shade, tactile wayfinding, water, wheelchair and stroller companion space, human help and rain gardens. It is not a construction detail, standards manual or equipment-selection commitment.*
+
 Green and public-space areas come from geometry unions. Their ratios are concept-package readings rather than statutory green-space or public-space controls [metric:green_space_area_sqm] [metric:green_ratio] [metric:public_space_area_sqm].
 
 The character system draws from rail, station, waiting and signal: continuous deep-blue twin lines are a public commitment, warm copper ticks record history, signal yellow marks human confirmation, and moss-green nodes mark places to stay. Building color, massing and height await official controls; the proposal addresses ground interfaces and signs only [standard:MOHURD-URBAN-DESIGN-MEASURES] [metric:public_space_ratio].
+
+![Concept vision: translating railway waiting culture into a future-facing public reflection space](assets/figures/concept-heritage-future.jpg)
+
+*AI-generated conceptual visualization for the relationship between heritage atmosphere and contemporary public discussion only. It is not an authentic reconstruction of any named station or protected building and does not establish a conservation, alteration or implementation commitment.*
+
+
+## Drainage, Special-Safety Protection, and Age-Friendly Adaptation
+
+Blue-green public space must also drain, shelter and serve all ages. Historic extreme rainfall shows that underpasses and low-lying channels carry systemic risk. Those events are design triggers only; the package does not claim any design-storm return period or drainage capacity [source:BEIJING-721-WEATHER] [source:BEIJING-2025-EXTREME-RAIN] [depth:blue_green_public_space].
+
+### Blue-Green Drainage Chain
+
+Paving prefers infiltration and organized collection. Swales, rain gardens and detention pockets connect to clear overflow routes and maintenance access. Continuous accessible routes must not be broken by “flood shortcuts.” Underpass and low-lying transfer nodes remain risk markers until official municipal baselines arrive and are not construction commitments [data:geometry/green_space.geojson#GREEN-001] [data:geometry/constraints.geojson#CONSTRAINTS].
+
+![Concept vision: infiltrate–detain–overflow blue-green drainage chain](assets/figures/concept-drainage-resilience.jpg)
+
+*AI-generated conceptual visualization for rainfall organization and public-space relationships only. It does not establish drainage capacity, design storms, underpass depth or municipal engineering conclusions.*
+
+### Special-Safety Protection
+
+Event periods and extreme weather prepare refuge pockets: clear escape sightlines, human help/first-aid cabinets, low-glare path lights, robot manual e-stops and human radio access. Special-safety states prioritize human confirmation; automation may only assist aggregate alerts and never auto-block personal routes [depth:risk_missing_data].
+
+![Concept vision: refuge pockets and human-first special-safety protection](assets/figures/concept-safety-protection.jpg)
+
+*AI-generated conceptual visualization for refuge and human-takeover components only. It is not a fire, civil-defense, emergency-plan or security staffing conclusion.*
+
+### Age-Friendly Everyday Space
+
+The slow spine stays continuous and level. Seating and handrails densify; water, shade, low-glare lighting and human service points follow the station rhythm. Wheelchair, stroller and walker companion space is default, not an event add-on. Age-friendly access is the base condition for dignity and efficiency [standard:MOHURD-URBAN-DESIGN-MEASURES].
+
+![Concept vision: multigenerational, rest-friendly age-adapted public space](assets/figures/concept-age-friendly.jpg)
+
+*AI-generated conceptual visualization for age-friendly components and multigenerational atmosphere only. It does not establish accessibility acceptance, care services or medical facilities.*
+
+## Nightlife, Vendor Markets, and Walk-In Public Concession
+
+Nightlife is not a walled consumption compound. It is a walk-in public concession: night markets, small-vendor stalls, cultural-creative markets and old-city memory sales coexisting with railway heritage atmosphere and gentle civic tech. Edges stay open from surrounding streets. Gated high-wall courtyard management is not the public-life model [depth:blue_green_public_space] [depth:renewal_project_list].
+
+### Walk-In Night Market and Vendor Band
+
+In event-mode windows, selected crossings and station edges release foldable stall modules for food, crafts, second-hand and city-memory objects, and creative goods. Power/water pedestals, waste sorting, wide fire access and emergency lanes remain clear. Stalls set up and clear daily so they never permanently occupy the slow spine.
+
+### Dignity, Efficiency, and Fusion
+
+Older people need rest with dignity; vendors need loading, power and water efficiency; pets need manageable companion space; robots only restock behind stalls at low speed and yield. Governance focuses on transparent permits, noise and fume edges, cleaning reset and grievance channels—not locking vitality behind walls.
+
+![Concept vision: open night market and vendor commons as walk-in public concession](assets/figures/concept-night-market-commons.jpg)
+
+*AI-generated conceptual visualization for night-market atmosphere, open edges and multi-actor coexistence only. Signs and pavement marks in the image are not statutory wayfinding or approval products, and do not establish business permits, fire acceptance or implementation commitments.*
+
+Preconditions: market and night-operation permits; fire and public-safety review; noise boundary assessment; vendor rights and exit mechanisms; cleaning and waste contracts. This section is conceptual advice for professional and community deepening.
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -126,10 +232,18 @@ The character system draws from rail, station, waiting and signal: continuous de
 | P06 Quiet night route home | Mobility/lighting | Public-information audit and temporary signs | Traffic, lighting and safety review |
 | P07 Centennial waiting history | Culture | Licensed oral history, archives and movable exhibit | Historical, copyright and heritage review |
 | P08 Global Urban Rhythm Week | Long-term operation | Small public-program prototype | Approval, safety, communication and budget |
+| P09 Public-life computation sample | Data/ops | Demo space-level occupancy and flow aggregation | Privacy, minimal retention, human review |
+| P10 Blue-green drainage and refuge audit | Resilience/safety | Mark infiltrate–detain–overflow and refuge pockets | Municipal baseline, fire/emergency review |
+| P11 Age-friendly station upgrade | Age/access | Prototype seating, handrails, low glare, companion space | Accessibility and maintenance standards |
+| P12 Walk-in night market and vendor band | Public life/market | Foldable stalls, service pedestals, clear fire lanes | Permits, noise, fire and vendor rights |
 
 The three phases are Measure Rhythms First, Connect Spaces Second and Deepen Construction Last. Official data, rights impact, professional safety and public reflection gate every scale-up; phase areas prove coverage only and do not claim a government schedule [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation].
 
 The phase readings are [metric:phase_1_area_sqm], [metric:phase_2_area_sqm] and [metric:phase_3_area_sqm]. A reference annual cycle is spring problem collection, summer controlled testing, autumn civic adoption and winter public reflection; names, dates, funding and organizers are not confirmed.
+
+![Concept vision: reversible operation from morning maintenance through daytime learning and evening review to night-time reset](assets/figures/concept-day-night.jpg)
+
+*AI-generated conceptual visualization for time-of-day change, reversible setup and human operations only. It does not establish opening hours, event schedules, lighting metrics, security findings or implementation commitments.*
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -155,3 +269,5 @@ Text, geometry, figures, HTML and PDFs were originally generated by Codex for th
 - Provisional boundary and three key areas [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
 - International cases are mechanism references limited by `A-CASE-TRANSFER-001` [source:CASE-KENDALL] [source:CASE-ONE-NORTH] [source:CASE-KALASATAMA]
 - Public-space and civic-adoption cases [source:CASE-SUPERBLOCK] [source:CASE-NYC-POPS] [source:CASE-QUAYSIDE]
+- Beijing extreme-rain and urban-construction risk triggers (background facts only; not site engineering metrics) [source:BEIJING-721-WEATHER] [source:BEIJING-2025-EXTREME-RAIN] [source:BEIJING-2025-ROAD-DAMAGE]
+- AI concept visualization generation record and limits [source:AI-CONCEPT-VISUALIZATIONS]

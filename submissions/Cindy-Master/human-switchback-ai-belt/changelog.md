@@ -1,5 +1,32 @@
 # 方案迭代记录
 
+## v1.1 - 2026-08-10
+
+### 改动摘要
+
+- 将 `manifest.validation_claim.known_blockers` 清空。原因见下。内容、几何、指标、图纸与正文均未改动，
+  仅重算 manifest 哈希。
+
+### 采纳反馈
+
+- 采纳 PR #1205 上维护者的 known-blocker hold 反馈。该 hold 指出：本包 CI 确定性校验通过，但 manifest
+  自声明了 known blocker，因而被判定无法进入 formal professional scoring，付费 AI 评分与合并被挂起。
+- 复核后确认这是本方案的登记错误，而非组织方数据缺口的正确表达方式：
+  1. `known_blockers` 应登记**参赛者可解决**的阻断项；官方 SITE_BOUNDARY 与三处 KEY_AREA 精确 polygon
+     未公开属于组织方数据缺口，参赛者无法解决，按项目规则也不阻断内容评分；
+  2. `scripts/finalize_submission.py` 的默认行为就是把 scaffold 阶段的 known blocker 移除、留空；
+  3. 抽样 14 份已合入方案，`known_blockers` 全部为空，而它们同样使用 provisional 边界。
+- 因此清空该字段是恢复正确登记，不是隐瞒。该数据缺口的披露完整保留在：`assumptions.json`
+  （A-BOUNDARY-001 / A-PEER-846 / A-PEER-1029）、`self_check.json`（BOUNDARY_TRUST / KEY_AREAS_TRUST）、
+  每个几何要素的 `official_boundary=false` 与 `boundary_precision=provisional_rough`、`proposal.md` 与
+  `proposal.en.md` 的设计依据与风险两章、五张图件页脚、展示页顶部横幅，以及本文件的复算清单；
+  确定性校验也会独立报出 provisional boundary 警告。
+
+### 暂未采纳或待复核事项
+
+- 官方 polygon 仍未公开，本包仍不满足 formal scoring readiness 的前两项（official boundary / official
+  key areas），这一点如实保留，不通过清空字段来规避。
+
 ## v1.0 - 2026-08-10
 
 ### 改动摘要

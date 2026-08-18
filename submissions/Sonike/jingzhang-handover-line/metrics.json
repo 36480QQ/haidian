@@ -16,7 +16,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "green_space_area_sqm": {
       "status": "known",
@@ -30,7 +33,11 @@
       "assumptions": [
         "A-BOUNDARY-001",
         "A-BASELINE-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "union 实测：geometry/green_space.geojson：1 个面要素，union=2264695.802 ㎡，逐要素求和=2264695.802 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "green_ratio": {
       "status": "known",
@@ -45,7 +52,12 @@
       "assumptions": [
         "A-BOUNDARY-001",
         "A-BASELINE-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "numerator_definition": "green_space_area_sqm = area(union(green_space), EPSG:4548)；图层 geometry/green_space.geojson；投影 EPSG:4548",
+      "denominator_definition": "site_area_sqm = polygon_area(provisional_site_boundary, EPSG:4548)；图层 geometry/site_boundary.geojson；投影 EPSG:4548",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "public_space_area_sqm": {
       "status": "known",
@@ -59,7 +71,11 @@
       "assumptions": [
         "A-BOUNDARY-001",
         "A-BASELINE-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "union 实测：geometry/public_space.geojson：1 个面要素，union=1039257.211 ㎡，逐要素求和=1039257.211 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "public_space_ratio": {
       "status": "known",
@@ -74,7 +90,12 @@
       "assumptions": [
         "A-BOUNDARY-001",
         "A-BASELINE-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "numerator_definition": "public_space_area_sqm = area(union(PUBLIC_SPACE polygons), EPSG:4548)；图层 geometry/public_space.geojson；投影 EPSG:4548",
+      "denominator_definition": "site_area_sqm = polygon_area(provisional_site_boundary, EPSG:4548)；图层 geometry/site_boundary.geojson；投影 EPSG:4548",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -87,7 +108,9 @@
       "confidence": "low",
       "assumptions": [
         "A-BUILDING-001"
-      ]
+      ],
+      "overlap_treatment": "union 实测：geometry/buildings.geojson：20 个面要素，union=221014.099 ㎡，逐要素求和=221014.099 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "handover_spine_length_m": {
       "status": "known",
@@ -166,7 +189,8 @@
       "assumptions": [
         "A-OPERATIONS-001",
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。"
     },
     "key_area_count": {
       "status": "known",
@@ -179,7 +203,8 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。"
     },
     "renewal_cell_count": {
       "status": "known",
@@ -205,7 +230,8 @@
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。"
     },
     "phase_count": {
       "status": "known",
@@ -220,19 +246,6 @@
         "A-CONTROLS-001"
       ]
     },
-    "land_use_05_sqm": {
-      "status": "known",
-      "value": 2133693.511,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/land_use.geojson"
-      ],
-      "formula": "sum(area(land_use where land_use_code=05), EPSG:4548)",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
-      ]
-    },
     "land_use_0701_sqm": {
       "status": "known",
       "value": 1459314.115,
@@ -244,7 +257,11 @@
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "land_use_0702_sqm": {
       "status": "known",
@@ -257,7 +274,11 @@
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "land_use_0802_sqm": {
       "status": "known",
@@ -270,7 +291,11 @@
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "land_use_0803_sqm": {
       "status": "known",
@@ -283,7 +308,11 @@
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "land_use_0804_sqm": {
       "status": "known",
@@ -296,7 +325,11 @@
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "land_use_1401_sqm": {
       "status": "known",
@@ -309,7 +342,11 @@
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "conceptual_building_coverage_ratio": {
       "status": "known",
@@ -324,7 +361,12 @@
       "assumptions": [
         "A-BOUNDARY-001",
         "A-BUILDING-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "numerator_definition": "building_footprint_area_sqm = area(union(conceptual_typology_cells), EPSG:4548)；图层 geometry/buildings.geojson；投影 EPSG:4548",
+      "denominator_definition": "site_area_sqm = polygon_area(provisional_site_boundary, EPSG:4548)；图层 geometry/site_boundary.geojson；投影 EPSG:4548",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "versioned_asset_count": {
       "status": "known",
@@ -357,13 +399,14 @@
     },
     "schema_valid_synthetic_shift_count": {
       "status": "known",
-      "value": 1,
+      "value": 12,
       "unit": "count",
       "source_files": [
-        "visual/assets/governance/example-scn05-shift-ledger.json",
+        "visual/assets/governance/shift-ledger-suite.json",
+        "visual/assets/governance/rule-check-report.json",
         "visual/assets/governance/validation-report.json"
       ],
-      "formula": "count(synthetic shift-ledger instances with structural error_count = 0)",
+      "formula": "count(synthetic shift-ledger instances validating against shift-ledger.schema.json with 0 errors)",
       "confidence": "high",
       "assumptions": [
         "A-OPERATIONS-001"
@@ -374,9 +417,36 @@
       "value": 0,
       "unit": "count",
       "source_files": [
+        "visual/assets/governance/rule-check-report.json",
         "visual/assets/governance/validation-report.json"
       ],
-      "formula": "count(jsonschema validation errors for the bundled synthetic SCN-05 instance)",
+      "formula": "count(jsonschema validation errors across all 12 bundled synthetic instances)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "shift_protocol_rule_check_count": {
+      "status": "known",
+      "value": 96,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/rule-check-report.json"
+      ],
+      "formula": "count(12 baseline checks + 12 scenarios x 7 injected-defect checks)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "shift_protocol_rule_check_miss_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/rule-check-report.json"
+      ],
+      "formula": "count(injected defects not intercepted by the protocol rules)",
       "confidence": "high",
       "assumptions": [
         "A-OPERATIONS-001"
@@ -394,7 +464,10 @@
       "assumptions": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "phase_2_area_sqm": {
       "status": "known",
@@ -408,7 +481,10 @@
       "assumptions": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "phase_3_area_sqm": {
       "status": "known",
@@ -422,7 +498,10 @@
       "assumptions": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "key_area_zhongzhiyuan_sqm": {
       "status": "known",
@@ -435,7 +514,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "key_area_origin_community_sqm": {
       "status": "known",
@@ -448,7 +530,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "key_area_dazhongsi_sqm": {
       "status": "known",
@@ -461,7 +546,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     },
     "total_floor_area_sqm": {
       "status": "unknown",
@@ -653,7 +741,7 @@
     "talent_density": {
       "status": "unknown",
       "value": null,
-      "unit": "index",
+      "unit": "persons_per_ha",
       "source_files": [],
       "formula": "ai_related_workforce_and_students / employment_land_area",
       "measurement_unit": "persons_per_hectare_of_authorised_employment_land",
@@ -662,7 +750,7 @@
       "assumptions": [
         "A-BASELINE-001"
       ],
-      "reason": "公告要求研提人才密度；需官方就业、学籍统计与用地权属数据，仓库未提供，暂不赋值。",
+      "reason": "公告要求研提人才密度；需官方就业、学籍统计与用地权属数据，仓库未提供，暂不赋值。单位声明由 index 更正为 persons_per_ha——原值是占位词，与该指标实际的人／公顷口径不符。",
       "measurement_protocol": {
         "path": "visual/assets/governance/measurement-protocol.json",
         "metric_id": "talent_density",
@@ -678,7 +766,7 @@
     "output_scale": {
       "status": "unknown",
       "value": null,
-      "unit": "none",
+      "unit": "cny_per_year",
       "source_files": [],
       "formula": "annual_output_of_ai_and_ai_plus_industries(statistical_scope)",
       "measurement_unit": "CNY_per_calendar_year_at_published_constant_price",
@@ -687,7 +775,7 @@
       "assumptions": [
         "A-BASELINE-001"
       ],
-      "reason": "公告要求研提产值规模；需统计部门口径与企业名录，仓库未提供，暂不赋值。",
+      "reason": "公告要求研提产值规模；需统计部门口径与企业名录，仓库未提供，暂不赋值。单位声明由 none 更正为 cny_per_year——原值是占位词，与该指标实际的元／年口径不符。",
       "measurement_protocol": {
         "path": "visual/assets/governance/measurement-protocol.json",
         "metric_id": "output_scale",
@@ -746,6 +834,140 @@
         "baseline": null,
         "target": null
       }
+    },
+    "stitch_grade_break_crossing_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(roads where movement_class != 'greenway_walk_cycle')",
+      "confidence": "medium",
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ],
+      "measurement_protocol": "八条东西缝合支线与主轴各交汇一次，因此交汇点数等于支线条数；主轴沿废弃铁路线形，支线接回城市街道标高，交汇处即高差可能出现的位置。",
+      "recalculation_trigger": "官方几何或道路红线到位后按同一公式复算；支线条数变化即更新。",
+      "verification": "已复算：读 geometry/roads.geojson，movement_class 非 greenway_walk_cycle 的要素为 ROAD-002…ROAD-009，共 8 条。"
+    },
+    "spine_longitudinal_gradient_max_pct": {
+      "status": "unknown",
+      "value": null,
+      "unit": "percent",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "max(abs(delta_elevation / horizontal_run)) along ROAD-001",
+      "confidence": "low",
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ],
+      "reason": "主轴纵坡需现状高程测量。仓库未提供 DEM 或纵断面测量数据，几何图层亦无高程字段，因此保持未赋值——不以「铁路线形通常平缓」推算出一个数字。",
+      "measurement_protocol": "取得纵断面测量后，沿 ROAD-001 逐段计算纵坡，取绝对值最大者；与无障碍规范限值比较后决定该段是否需要设置休息平台或绕行。"
+    },
+    "land_use_09_sqm": {
+      "status": "known",
+      "value": 2133693.511,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area(land_use where land_use_code=09), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。；2026-08-18：组织方在 PR #3017 修正枚举（05=湿地、新增 09=商业服务业）后，本指标由 land_use_05_sqm 更名为 land_use_09_sqm，筛选条件同步由 land_use_code=05 改为 09；**几何与数值未变**，LU-003 与 LU-007 的 area_sqm_declared 与几何哈希迁移前后逐条相同。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
+    },
+    "simulation_task_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(simulation.tasks)",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "simulation.json 的 task_count 与 tasks.length 均为 12；每条任务对应 SCN-01 至 SCN-12 之一。"
+    },
+    "simulation_success_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks where outcome ends_with '_success') / count(tasks)",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "12 条任务的 outcome 均为 offline_tabletop_success；该值仅代表离线合成桌面演练。"
+    },
+    "tool_schema_pass_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks where dispatch_schema_valid=true) / count(tasks)",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "12 条任务均保留场景、交出角色、接入角色、人工服务与审计字段。"
+    },
+    "audit_completeness": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks where audit_complete=true) / count(tasks)",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "每条任务均记录四项断言、角色类型、人工兜底、结果与现场未执行状态。"
+    },
+    "offline_takeover_assertion_count": {
+      "status": "known",
+      "value": 48,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks) * 4",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "十二个场景分别执行智能层关闭、人工接管、合成记录清零与回滚四项断言。"
+    },
+    "offline_takeover_assertion_pass_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "summary.offline_assertions_passed / summary.offline_assertions_run",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "simulation.json 记录 48/48 项离线断言通过；不外推为现场绩效。"
+    },
+    "field_rehearsal_task_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "summary.field_rehearsal_tasks_completed",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "verification": "没有场地授权、角色指派或真实使用者参与，本轮未进行任何现场演练。"
     }
   }
 }

@@ -1,111 +1,118 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.865,
+ "overall_ratio": 0.786,
  "floor": 0.75,
  "sections": [
   {
    "section": "Executive brief, one page",
-   "zh_chars": 555,
-   "en_words": 420,
-   "ratio": 0.965,
+   "zh_chars": 721,
+   "en_words": 515,
+   "ratio": 0.911,
    "pass": true
   },
   {
    "section": "One person's day: what the mechanism looks like on the street",
-   "zh_chars": 864,
-   "en_words": 583,
-   "ratio": 0.861,
-   "pass": true
-  },
-  {
-   "section": "Design Basis and Source List",
-   "zh_chars": 6512,
-   "en_words": 4290,
-   "ratio": 0.84,
-   "pass": true
-  },
-  {
-   "section": "Three-Level Scope Framework",
-   "zh_chars": 726,
-   "en_words": 752,
-   "ratio": 1.321,
-   "pass": true
-  },
-  {
-   "section": "Coordinated Research Area: Industry and Future City Research",
-   "zh_chars": 3326,
-   "en_words": 2234,
-   "ratio": 0.857,
-   "pass": true
-  },
-  {
-   "section": "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
-   "zh_chars": 1765,
-   "en_words": 1213,
+   "zh_chars": 938,
+   "en_words": 645,
    "ratio": 0.877,
    "pass": true
   },
   {
-   "section": "Detailed Design of Key Areas",
-   "zh_chars": 1626,
-   "en_words": 1173,
-   "ratio": 0.92,
+   "section": "Design Basis and Source List",
+   "zh_chars": 1080,
+   "en_words": 669,
+   "ratio": 0.79,
    "pass": true
   },
   {
-   "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 10601,
-   "en_words": 6927,
+   "section": "Three-Level Scope Framework",
+   "zh_chars": 3925,
+   "en_words": 2307,
+   "ratio": 0.75,
+   "pass": true
+  },
+  {
+   "section": "Coordinated Research Area: Industry and Future City Research",
+   "zh_chars": 6458,
+   "en_words": 4045,
+   "ratio": 0.799,
+   "pass": true
+  },
+  {
+   "section": "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+   "zh_chars": 2328,
+   "en_words": 1521,
    "ratio": 0.833,
    "pass": true
   },
   {
+   "section": "Detailed Design of Key Areas",
+   "zh_chars": 4608,
+   "en_words": 2732,
+   "ratio": 0.756,
+   "pass": true
+  },
+  {
+   "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+   "zh_chars": 11274,
+   "en_words": 7029,
+   "ratio": 0.795,
+   "pass": true
+  },
+  {
    "section": "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
-   "zh_chars": 2217,
-   "en_words": 1559,
-   "ratio": 0.897,
+   "zh_chars": 2518,
+   "en_words": 1590,
+   "ratio": 0.805,
    "pass": true
   },
   {
    "section": "Transport, Rail, Municipal Infrastructure, and Public Services",
-   "zh_chars": 1434,
-   "en_words": 960,
-   "ratio": 0.854,
+   "zh_chars": 1580,
+   "en_words": 1046,
+   "ratio": 0.844,
    "pass": true
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 2817,
-   "en_words": 1667,
-   "ratio": 0.755,
+   "zh_chars": 5382,
+   "en_words": 3258,
+   "ratio": 0.772,
    "pass": true
   },
   {
    "section": "Renewal Projects, Implementation Policy, and Phasing",
-   "zh_chars": 2395,
-   "en_words": 1670,
-   "ratio": 0.889,
+   "zh_chars": 6092,
+   "en_words": 3607,
+   "ratio": 0.755,
    "pass": true
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
-   "zh_chars": 4024,
-   "en_words": 2696,
-   "ratio": 0.855,
+   "zh_chars": 5179,
+   "en_words": 3051,
+   "ratio": 0.751,
+   "pass": true
+  },
+  {
+   "section": "The instrument on the site's own data",
+   "zh_chars": 4886,
+   "en_words": 2979,
+   "ratio": 0.778,
    "pass": true
   },
   {
    "section": "Risk, Copyright, and Compliance",
-   "zh_chars": 1363,
-   "en_words": 1014,
-   "ratio": 0.949,
+   "zh_chars": 3096,
+   "en_words": 2009,
+   "ratio": 0.828,
    "pass": true
   },
   {
    "section": "References",
-   "zh_chars": 1087,
-   "en_words": 869,
-   "ratio": 1.02,
+   "zh_chars": 1277,
+   "en_words": 774,
+   "ratio": 0.773,
    "pass": true
   }
  ],

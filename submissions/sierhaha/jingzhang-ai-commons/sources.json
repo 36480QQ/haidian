@@ -67,6 +67,30 @@
    "source_type": "official_public",
    "usage": "Mandatory professional standard snapshot: land use classification guide.",
    "registry_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+  },
+  {
+   "id": "POLICY-CARBON-PEAK",
+   "url": "https://www.gov.cn/zhengce/content/2021-10/26/content_5644984.htm",
+   "source_type": "official_public",
+   "usage": "国务院《2030年前碳达峰行动方案》（国发〔2021〕23号）：能源专节的碳中和与新型电力系统政策背景。",
+   "retrieved": "2026-08-09",
+   "url_verified": true
+  },
+  {
+   "id": "FONT-NOTO-CJK",
+   "source_type": "open_source",
+   "url": "https://github.com/notofonts/noto-cjk",
+   "license": "SIL Open Font License 1.1",
+   "usage": "图件/图纸（PDF）中文字体：Noto Sans CJK SC，matplotlib 嵌入显示子集；OFL-1.1 允许自由使用与嵌入分发。",
+   "retrieved": "2026-08-10"
+  },
+  {
+   "id": "OSM-BASEMAP",
+   "source_type": "open_source",
+   "url": "https://www.openstreetmap.org/",
+   "license": "ODbL 1.0",
+   "usage": "总览图/空间结构图底图（道路/水系/铁路/公园，经 Overpass API 提取）；图面署名 © OpenStreetMap contributors。",
+   "retrieved": "2026-08-13"
   }
  ]
 }

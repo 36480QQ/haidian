@@ -39,7 +39,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "Submission-side validation record; not an organizer acceptance decision.",
       "font_note": "Not applicable.",
-      "hash_sha256": "b3dded609c09915ee4ee3a2689d000486268b122831f64721201f38b50a5574d"
+      "hash_sha256": "721e93a4f67dda3665abae8d5785f6a3deaf7d342b5bc45ad35cd1bef7ee78b5"
     },
     {
       "path": "visual/assets/autonomous-evidence-crosswalk.json",
@@ -248,40 +248,6 @@
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
       "hash_sha256": "27166c425eb1eb27e00207c647a8814ef6ceedbae5e2b07c99568dda5e632d2e"
-    },
-    {
-      "path": "assets/figures/identity-system.en.png",
-      "asset_class": "derived_figure",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
-      "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
-      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "7c5cb21debadffc4aa2624da6c5a2fe2933d9831537008f3f4bc905d30cb7df2"
-    },
-    {
-      "path": "assets/figures/identity-system.png",
-      "asset_class": "derived_figure",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
-      "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
-      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "706f7573eb8e7733009150770184dca13b0e46f8ead63f693867793fde9da9c5"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -505,7 +471,7 @@
       "hash_sha256": "19d193d2421320133f2dd554aeae5c92eb0f21e5232ce1aab7276f60a2425913"
     },
     {
-      "path": "assets/identity/autonomy-commons-mark.svg",
+      "path": "assets/identity/jingzhang-commons-mark.svg",
       "asset_class": "identity_asset",
       "author": "许丙南 / Codex",
       "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
@@ -519,7 +485,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "d36361ccb6ac8632993811bf94108833c433fd486d3762dde1e951588e435164"
+      "hash_sha256": "1dbaba9605e01130986073cb53160b0b90a2866dca035df89396107f72f483fa"
     },
     {
       "path": "assumptions.json",
@@ -553,7 +519,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "00ecb7d4c58747b0f1c81a337c6381dcb22eebca14f3fc8390e1284249e45f58"
+      "hash_sha256": "8bb1e1a3f5ffce14f0c6af007b9d0733031e1c00de118e7ee7d5c6013f068d1e"
     },
     {
       "path": "compliance_matrix.json",
@@ -791,7 +757,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "52b101c0425118c941302aeb1511dd99504dbb935044de169af850c6c2dd369f"
+      "hash_sha256": "da7bb1e6953bdbbc5594fac308f3f3c689028e10351349a5f491af561465e37b"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -825,7 +791,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "5544d6de58ec5ecbb8994dd625e733f3bf688fc6288b0d294d7db1342a89b25b"
+      "hash_sha256": "705f2f75d9e17a6b3a63b36bd0bbabf17e2cec3988bd2f8283c50bc194ad3715"
     },
     {
       "path": "proposal.en.md",
@@ -842,7 +808,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "a090bd96be3654996445edc82bd12df2a7289e113ae89e937ecae6df13dbb160"
+      "hash_sha256": "f678b6cae1f8484d05640387f1a93c1226e7dd7c57c3bf8f9371a6250e211a02"
     },
     {
       "path": "proposal.md",
@@ -859,7 +825,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "507add5e325548cff4a694ce9e26085c9b34857ac095fd079de0fe113fd4c701"
+      "hash_sha256": "2a297a03c87e3ccb968167454c0850afa4d7b62d2cef491183cc8f9e591b77d0"
     },
     {
       "path": "report/copyright_statement.md",
@@ -876,7 +842,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "975a2d283ba2e66ab5442dd029e48f190aec619bcf244c60eb428b4fe891f064"
+      "hash_sha256": "48aa0ffed416efdd55caeaac58c8c1f92407fc00e3f642e551f24d35c635c52b"
     },
     {
       "path": "report/narrative.md",
@@ -910,7 +876,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "c7c62fd7ffd2c2b5df4f63a016869d972018a564bfee5c76b286f4293f803562"
+      "hash_sha256": "7e13b69af0d6247ebba1e25c50069500e459e597e1b6aed2e76835614e204dbb"
     },
     {
       "path": "report/proposal.html",
@@ -927,7 +893,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "3ec9220b11284181d0553e24f2bf41fdb837b0e958cb226435699ae6f93f6851"
+      "hash_sha256": "fc1bb884fd4820ac1b2b009e5ecdd5b5963a02987b3e280cae36330dfb66b065"
     },
     {
       "path": "sources.json",
@@ -1029,7 +995,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "122cbbb2864c791cefbf537a29a341b697bb6db58ffe97a326d1ae6e0334ca42"
+      "hash_sha256": "5267c2544752bbb82f13f86d26ed4cad07de0da1d5977cf820462db0d474cf08"
     },
     {
       "path": "visual/assets/identity-system.json",
@@ -1046,7 +1012,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "3c0aed20d6342d1d938f9eaefa527294e6b2050f238291d8e85945d5fe21567f"
+      "hash_sha256": "b43b8abe9c1a087214673b01f64a2fedf3632aa4e2d2eacf53572b7d4190e853"
     },
     {
       "path": "visual/assets/indicator-selection.json",
@@ -1182,7 +1148,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "8b65cb7cc56f7494a6e4d5685fb589e6ec70199f24d29efd1120a10a06b115a3"
+      "hash_sha256": "7a0355020b11d987935e784591135b24255897ded7b4a10fdfbf9fd329763595"
     },
     {
       "path": "visual/assets/autonomy-curbside-tabletop-contract.json",
@@ -1265,7 +1231,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "d5735e7f3d19696b17479521bec4ab02613d0520191dc9c8b6ae53e2712079e1"
+      "hash_sha256": "e78d60bf70f57d62536e101db6c84f33ad0a9aa07ec2810359c5a14f67433b0e"
     },
     {
       "path": "visual/index.html",
@@ -1282,75 +1248,202 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "9591fb3aa9286769b6dcd5fdb8b77abbd80df25aeaa1eed33601aa330ff0b1f7"
+      "hash_sha256": "33b9a738ead36bd291dcbcbdac27d5a90865f1a9f77a5b0116a2a6d2faa9c2a3"
     },
     {
-      "path": "visual/assets/autonomy-spatial-chain.json",
-      "asset_class": "spatial_evidence_register",
+      "path": "visual/assets/annual-event-system.json",
+      "asset_class": "annual_event_system",
       "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "authored and replayed in the submission worktree",
       "source_inputs": [
-        "proposal.md",
-        "visual/assets/autonomy_nodes.json",
-        "visual/assets/autonomous-scenarios.json"
+        "submission package files and validation rules"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "Machine-readable spatial trace only; all geometries remain provisional.",
-      "font_note": "Local system font references only; no font file redistributed.",
-      "hash_sha256": "7a4d5ea94bfe5d67f9367966f26da59b61de88b285d4b994b636ef4c7f76379e"
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "f8ce3400f5439ab6595e4f99a30ded7c70c7cdd5e7f1f8e7a7ad01c80af2f5d7"
     },
     {
-      "path": "visual/assets/check-autonomy-spatial-chain.js",
-      "asset_class": "validation_script",
+      "path": "visual/assets/check_public_route_continuity.js",
+      "asset_class": "reproducibility_checker",
       "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "authored and replayed in the submission worktree",
       "source_inputs": [
-        "proposal.md",
-        "visual/assets/autonomy_nodes.json",
-        "visual/assets/autonomous-scenarios.json"
+        "submission package files and validation rules"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "Offline structural checker; it is not a safety certification or deployment approval.",
-      "font_note": "Local system font references only; no font file redistributed.",
-      "hash_sha256": "209e9c8373ec661567e89e7a7ab1056e4f8c8c96b77042011f8b065f42eafb8c"
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "41e3e77905e607fb97061c0159d6c39a247187cdffcd0464fd4e2d5531cd585e"
     },
     {
-      "path": "assets/figures/autonomy-spatial-chain.svg",
-      "asset_class": "original_bilingual_schematic",
+      "path": "visual/assets/run_public_route_continuity.js",
+      "asset_class": "reproducibility_runner",
       "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "authored and replayed in the submission worktree",
       "source_inputs": [
-        "proposal.md",
-        "visual/assets/autonomy_nodes.json",
-        "visual/assets/autonomous-scenarios.json"
+        "submission package files and validation rules"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "Self-generated conceptual figure; no official boundary, road or deployment claim.",
-      "font_note": "Local system font references only; no font file redistributed.",
-      "hash_sha256": "0e0a112b306617564e1fdb0838e19f762db28c58b443e3695a00c3ac7952efe0"
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "d8c5bfdb982b1346cedfc43a6f44902e7ee096128587732e8bdfc37f557083e6"
     },
     {
-      "path": "assets/figures/autonomy-spatial-chain.en.svg",
-      "asset_class": "original_bilingual_schematic",
+      "path": "visual/assets/public-route-continuity.schema.json",
+      "asset_class": "evidence_contract_schema",
       "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "authored and replayed in the submission worktree",
       "source_inputs": [
-        "proposal.md",
-        "visual/assets/autonomy_nodes.json",
-        "visual/assets/autonomous-scenarios.json"
+        "submission package files and validation rules"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "English counterpart of the self-generated conceptual figure; no official boundary, road or deployment claim.",
-      "font_note": "Local system font references only; no font file redistributed.",
-      "hash_sha256": "82e65c8a88497391f650293dedf5045ad33213f53bf2f595b85c9b446d33e9e6"
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "99f5a62f90fb906299044b1a05a353a0b8b5d147156d049af0457d4f861f6ca6"
+    },
+    {
+      "path": "visual/assets/example-public-route-continuity.json",
+      "asset_class": "evidence_fixture",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored and replayed in the submission worktree",
+      "source_inputs": [
+        "submission package files and validation rules"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "bf3ae32a838c6b7b57fd2bcf51221fd031d2c670ff83cc8e4178a19814c5f59e"
+    },
+    {
+      "path": "visual/assets/persona-role-matrix.json",
+      "asset_class": "persona_role_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored and replayed in the submission worktree",
+      "source_inputs": [
+        "submission package files and validation rules"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "4eb0daa6790a26a3f050714ea714f655ec88de0e7b6107807faca067fde6452b"
+    },
+    {
+      "path": "visual/assets/public-landmarks.json",
+      "asset_class": "public_landmark_catalog",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored and replayed in the submission worktree",
+      "source_inputs": [
+        "submission package files and validation rules"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "da56f2b3cc53ac5b09c2c97b354a83bac479049c766dac6c9c4ddb36fc187c8d"
+    },
+    {
+      "path": "visual/assets/scenario-operation-contract.json",
+      "asset_class": "evidence_contract",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored and replayed in the submission worktree",
+      "source_inputs": [
+        "submission package files and validation rules"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "fb79e12e2a3634ddf1df4a622e99c3569b6fba4be2a27111ec3d08d70c475979"
+    },
+    {
+      "path": "visual/assets/check_scenario_operation_contract.js",
+      "asset_class": "reproducibility_checker",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored and replayed in the submission worktree",
+      "source_inputs": [
+        "submission package files and validation rules"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "8ef9cc332a922ee369606f2104b762191bba339fdbd06b4bb715c0f5b47e06aa"
+    },
+    {
+      "path": "visual/assets/run_scenario_operation_contract.js",
+      "asset_class": "reproducibility_runner",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored and replayed in the submission worktree",
+      "source_inputs": [
+        "submission package files and validation rules"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "c55422345337ae3d3d12703c60120063413e09fd816d7222b4b3f25b445f884d"
+    },
+    {
+      "path": "visual/assets/taskbook_coverage.json",
+      "asset_class": "taskbook_coverage",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored and replayed in the submission worktree",
+      "source_inputs": [
+        "submission package files and validation rules"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "c36879c52ad3d79eb095d108d95a476be474637bdb102af81670d62a732be16b"
+    },
+    {
+      "path": "visual/assets/errata.json",
+      "asset_class": "errata_log",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored and replayed in the submission worktree",
+      "source_inputs": [
+        "submission package files and validation rules"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "338020c1551b22481d36c74be92dac009a29b17aab735a99d30cfae371ff8cfd"
+    },
+    {
+      "path": "visual/assets/verify.js",
+      "asset_class": "reproducibility_verifier",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored and replayed in the submission worktree",
+      "source_inputs": [
+        "submission package files and validation rules"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Submission evidence or checker only; it does not claim field performance, permit or organizer acceptance.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "dda32ab263580526ca250484c97a588df676c2b80761b9a096a14bfb446c32bd"
     }
   ],
   "review_protocol": [

@@ -2,7 +2,50 @@
 """Trusted spatial review for AI urban design packages.
 
 This script is intended for local/maintainer use. It depends on geospatial
-libraries and should not replace the dependency-free required PR validator.
+libraries (``shapely``, ``pyproj``, and optionally ``jsonschema``) and should
+not replace the dependency-free required PR validator.
+
+Checks performed
+----------------
+- ``site_boundary.geojson`` is non-empty and forms a valid polygon.
+- ``key_areas.geojson`` has exactly the three required key-area polygons, each
+  inside the site boundary and non-overlapping.  Official area values are
+  compared against known announcement figures (±3 % tolerance).
+- ``land_use.geojson`` completely covers the site boundary with no gaps or
+  overlaps between polygons (topology-safe partition check).
+- ``buildings.geojson``, ``green_space.geojson``, and ``public_space.geojson``
+  are all inside the site boundary.
+- Computed spatial metrics (site area, green ratio, public-space ratio, building
+  footprint area) are compared against declared ``metrics.json`` values (1 %
+  relative tolerance for areas, 1 % absolute tolerance for ratios).
+- When ``jsonschema`` is installed, GeoJSON layers are validated against the
+  repository's schema files.
+
+Spatial metrics computed
+------------------------
+- ``site_area_sqm`` — projected area of site boundary (EPSG:4548)
+- ``green_space_area_sqm`` — union of green-space features
+- ``public_space_area_sqm`` — union of public-space features
+- ``building_footprint_area_sqm`` — union of building footprints
+- ``green_ratio`` — ``green_space_area_sqm / site_area_sqm``
+- ``public_space_ratio`` — ``public_space_area_sqm / site_area_sqm``
+
+Usage
+-----
+Human-readable output::
+
+    python3 scripts/spatial_review.py submissions/<login>/<slug>
+
+Machine-readable JSON::
+
+    python3 scripts/spatial_review.py submissions/<login>/<slug> --json
+
+Install required dependencies first::
+
+    python3 -m pip install -r requirements-review.txt
+
+This script is gate 2 of the four-gate self-check. Run it directly or through
+``self_check_submission.py``.
 """
 
 from __future__ import annotations
@@ -14,6 +57,8 @@ import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
+
+from metric_types import is_json_number
 
 
 try:
@@ -44,6 +89,11 @@ RELATIVE_AREA_TOLERANCE = 0.01
 AREA_REPORTING_COMPARISON_EPSILON = 1e-9
 TOPOLOGY_RELATIVE_AREA_TOLERANCE = 0.0001
 KEY_AREA_RELATIVE_TOLERANCE = 0.03
+# These thresholds are diagnostic only. They must not weaken the strict
+# overlap check above; they identify a common projection-chord sliver shape
+# so contributors get a useful remediation hint alongside the failure.
+SLIVER_OVERLAP_MAX_AREA_SQM = 10.0
+SLIVER_OVERLAP_MAX_AREA_PERIMETER_RATIO_M = 0.05
 OFFICIAL_KEY_AREA_AREAS = {
     "zhongzhiyuan_ai_acceleration_area": 1921000.0,
     "beijing_ai_origin_community": 1043000.0,
@@ -167,7 +217,18 @@ def load_feature_geometries(
                 )
             )
         declared = props.get("area_sqm_declared")
-        if isinstance(declared, (int, float)) and geom.geom_type in {"Polygon", "MultiPolygon"}:
+        if isinstance(declared, bool):
+            report.add(
+                SpatialIssue(
+                    "DECLARED_AREA_TYPE",
+                    "major",
+                    str(path),
+                    "Declared area must be a JSON number, not a boolean.",
+                    feature_id,
+                    actual=declared,
+                )
+            )
+        elif is_json_number(declared) and geom.geom_type in {"Polygon", "MultiPolygon"}:
             delta = abs(float(declared) - float(geom.area))
             allowed_delta = max(AREA_TOLERANCE_SQM, abs(float(geom.area)) * RELATIVE_AREA_TOLERANCE)
             if delta > allowed_delta:
@@ -191,6 +252,26 @@ def union_geometries(items: list[tuple[str, Any, dict]]) -> Any | None:
     if not geometries:
         return None
     return unary_union(geometries)
+
+
+def projection_chord_sliver_hint(overlap: Any) -> str | None:
+    """Return a remediation hint for a small, very thin projected overlap."""
+    area = float(overlap.area)
+    perimeter = float(overlap.length)
+    if (
+        area <= SLIVER_OVERLAP_MAX_AREA_SQM
+        and perimeter > 0
+        and area / perimeter <= SLIVER_OVERLAP_MAX_AREA_PERIMETER_RATIO_M
+    ):
+        ratio = area / perimeter
+        return (
+            " Possible projection-chord sliver: the overlap is "
+            f"{area:.3f} m² with an area/perimeter ratio of {ratio:.4f} m. "
+            "If adjacent edges follow a constant latitude, generate them "
+            "with the same densified vertices before projecting to EPSG:4548; "
+            "the 1 m² overlap threshold remains unchanged."
+        )
+    return None
 
 
 def check_inside_site(
@@ -245,12 +326,16 @@ def check_land_use_coverage(report: SpatialReport, site: Any, land_items: list[t
         for other_id, other_geom, _other_props in land_items[index + 1 :]:
             overlap = geom.intersection(other_geom)
             if not overlap.is_empty and overlap.area > AREA_TOLERANCE_SQM:
+                message = f"Land-use polygon overlaps `{other_id}`."
+                hint = projection_chord_sliver_hint(overlap)
+                if hint:
+                    message += hint
                 report.add(
                     SpatialIssue(
                         "LAND_USE_OVERLAP",
                         "major",
                         "geometry/land_use.geojson",
-                        f"Land-use polygon overlaps `{other_id}`.",
+                        message,
                         feature_id,
                         expected="no overlap",
                         actual=round(float(overlap.area), 3),
@@ -316,9 +401,20 @@ def check_key_areas(report: SpatialReport, site: Any, key_items: list[tuple[str,
                 )
             )
         expected_area = props.get("official_area_sqm")
-        if not isinstance(expected_area, (int, float)) and is_official:
+        if is_official and isinstance(expected_area, bool):
+            report.add(
+                SpatialIssue(
+                    "KEY_AREA_AREA_TYPE",
+                    "major",
+                    "geometry/key_areas.geojson",
+                    "Official key-area area must be a JSON number, not a boolean.",
+                    feature_id,
+                    actual=expected_area,
+                )
+            )
+        elif not is_json_number(expected_area) and is_official:
             expected_area = OFFICIAL_KEY_AREA_AREAS.get(area_id)
-        if isinstance(expected_area, (int, float)) and is_official:
+        if is_json_number(expected_area) and is_official:
             delta = abs(float(expected_area) - float(geom.area))
             allowed = max(AREA_TOLERANCE_SQM, float(expected_area) * KEY_AREA_RELATIVE_TOLERANCE)
             if delta > allowed:
@@ -365,7 +461,7 @@ def metric_value(metrics: dict, name: str) -> float | None:
     if not isinstance(metric, dict):
         return None
     value = metric.get("value")
-    if isinstance(value, (int, float)) and not isinstance(value, bool):
+    if is_json_number(value):
         return float(value)
     return None
 
@@ -492,6 +588,21 @@ def review_submission(submission_dir: Path, repo_root: Path, stage: str) -> Spat
     }
 
     metrics = load_metrics(submission_dir)
+    for name, metric in metrics.items():
+        if (
+            isinstance(metric, dict)
+            and metric.get("status") == "known"
+            and not is_json_number(metric.get("value"))
+        ):
+            report.add(
+                SpatialIssue(
+                    "METRIC_VALUE_TYPE",
+                    "major",
+                    "metrics.json",
+                    f"{name} must use a finite JSON number.",
+                    actual=metric.get("value"),
+                )
+            )
     check_metric_close(report, metrics, "site_area_sqm", site_area, "sqm")
     check_metric_close(report, metrics, "green_space_area_sqm", green_area, "sqm")
     check_metric_close(report, metrics, "public_space_area_sqm", public_area, "sqm")
@@ -503,7 +614,7 @@ def review_submission(submission_dir: Path, repo_root: Path, stage: str) -> Spat
     for name, metric in metrics.items():
         if isinstance(metric, dict) and metric.get("unit") == "ratio":
             value = metric.get("value")
-            if isinstance(value, (int, float)) and not 0 <= float(value) <= 1:
+            if is_json_number(value) and not 0 <= float(value) <= 1:
                 report.add(
                     SpatialIssue(
                         "METRIC_RATIO_RANGE",
