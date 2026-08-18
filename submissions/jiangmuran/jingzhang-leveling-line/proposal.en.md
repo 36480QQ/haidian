@@ -141,7 +141,7 @@ These are not three unrelated drawing sets. The research area decides **what to 
 
 **The announcement defines the overall design area as the city and industrial ground within one to two kilometres of the Jing-Zhang Rail Heritage Park.** The thing that draws this proposal's boundary is therefore **public ground that already exists and is already open**, not a site feature it may mention or not.
 
-**How far that ground is already built is not this proposal's estimate.** The park is listed on Beijing's park register [source:HAIDIAN-PARK-REGISTER]; phase two completes it as a **9 km** composite heritage greenway [source:HAIDIAN-PARK-PHASE2-OPEN]; phase two is scheduled to break ground before year end [source:HAIDIAN-PARK-PHASE2-PLAN]. **All three were registered and none was cited** — the thing that draws this proposal's boundary was being treated as background rather than as a given (E282). The organiser has likewise issued the Zhongguancun Science City AI full-scenario empowerment action plan 2024-2026 [source:ZGC-AI-EMPOWERMENT-PLAN-2024-2026], and the AI Origin Community was named in Beijing's first batch of AI innovation districts [source:BEIJING-AI-BLOCKS-FIRST-BATCH]: **the existing policy identity of one of the three key areas**, which not citing turns into an object this proposal names itself.
+**How far that ground is already built is not this proposal's estimate.** The park is listed on Beijing's park register [source:HAIDIAN-PARK-REGISTER]; phase two completes it as a **9 km** composite heritage greenway [source:HAIDIAN-PARK-PHASE2-OPEN]; phase two is scheduled to break ground before year end [source:HAIDIAN-PARK-PHASE2-PLAN], and its **approval** names the Haidian landscape bureau as construction unit, about 23.08 ha [source:HAIDIAN-PARK-PHASE2-APPROVAL] - which body the park-operator post answers to. **The first three were registered and none was cited** — the thing that draws this proposal's boundary was being treated as background rather than as a given (E282). The organiser has likewise issued the Zhongguancun Science City AI full-scenario empowerment action plan 2024-2026 [source:ZGC-AI-EMPOWERMENT-PLAN-2024-2026], and the AI Origin Community was named in Beijing's first batch of AI innovation districts [source:BEIJING-AI-BLOCKS-FIRST-BATCH]: **the existing policy identity of one of the three key areas**, which not citing turns into an object this proposal names itself.
 
 **That park's name occurred zero times in this document.** It was called the surveyed park and the heritage park, and handled in one register only: as the object **1,116.7 m** away from this package's inferred spine. The fifth design requirement uses the same vocabulary - a vitality belt along that park, working with the phases already built - and that phrase was absent too (E240).
 
@@ -182,9 +182,9 @@ These are not three unrelated drawing sets. The research area decides **what to 
 |---|---|---|
 | **全生命周期** | Announcement 1.3 | Four rules: the F1 trial decides whether a service may open; it is re-levelled on a cycle by its order; **over tolerance the whole route returns and the service drops to its non-AI equivalent**; resumption needs two passing cycles, a published cause and four-party agreement - the end of the lifecycle is written down, not left open. |
 | **运营策略** | Announcement 1.3 | Not a festival calendar but a re-levelling one: monthly community days (third order), quarterly scenario open days (second), half-yearly route re-levelling (first), annual return-to-zero. **Every event is also a reading**, so readings stop before the events do. |
-| **场景-空间-运营** | Taskbook | Each of the twelve scenario cards is bound to a benchmark order (space) and a re-levelling cycle with a lead post (operation): third - monthly - P4/P5/P7, second - quarterly - P2/P3, first-order route - half-yearly - accredited body. **Three columns of one table.** |
+| **场景-空间-运营** | Taskbook | Each of the twelve scenario cards is bound to a benchmark order (space) and a re-levelling cycle with a lead post (operation): third - monthly - P4/P5/P7, second - quarterly - P2/P3, first-order route - half-yearly - accredited body. **One table, three columns.** |
 | **招引转化** | Taskbook | The path: take part in re-levelling, propose a scenario, enter the test ground, pass the levelling, then operate - each step gated on a reading, not an opinion. **The taskbook forbids writing investment promotion as settled commitment**, so this is a channel, not a firm list. |
-| **运营团队** | Taskbook | The transferability criterion asks who carries the work further. The answer is the post specification: **who may decide what, and what may not open while a post is vacant** - so a team taking this over need not read the whole document to find its limits. |
+| **运营团队** | Taskbook | The transferability criterion asks who carries the work further. The answer is the post specification: **who may decide what, and what may not open while a post is vacant** - so a team taking this over need not read the whole document. |
 | **活动品牌** | Taskbook | The taskbook asks for an event brand and in the same clause forbids slogans with no operating mechanism. **This package coins no brand name**: a brand with no repeatable act behind it is a slogan. The four acts carry it; naming them is the responsible body's call. |
 | **传播视觉** | Taskbook | The part this package can be answerable for is the part that recomputes: the wayfinding numbering syntax, the rule that **numbers are never translated** (`BM-0` is `BM-0` in every language), and the compression order when space runs short - captions first, English second, never the numbers. Logo, colour and typeface are licensed assets. |
 <!-- OPSVOCAB:END -->
@@ -702,13 +702,13 @@ That is a stronger claim than the original and a less comfortable one: it points
 
 **The boundary has to be stated too**: this is not legal advice, the summaries of provisions may be incomplete, and applicability must be judged by qualified professionals. The claim made here is only that these three red lines **have a basis in law** — not that this proposal's reading of the provisions carries any authority.
 
-**Privacy and human-review boundary, common to all twelve cards.** Only public or authorised data is used; no profile of an identifiable individual is built; no undisclosed continuous tracking takes place; any judgement with legal or major life consequences for a person must be made by a qualified human and logged; and every scenario must have an **equivalent non-AI service path**, so that a resident who declines to use AI loses no public service. None of these boundaries can be waived by operational adjustment.
+**Privacy and human-review boundary, common to all twelve cards.** Only public or authorised data is used; no profile of an identifiable individual is built; no undisclosed tracking takes place; any judgement with legal or major life consequences for a person must be made by a qualified human and logged; and every scenario must have an **equivalent non-AI service path**, so that a resident who declines to use AI loses no public service. None of these boundaries can be waived by operational adjustment.
 
 ### Main front one: low-speed robots and autonomous shuttles (agent.3, F1)
 
-**The problem is not the model; it is the ground.** A delivery robot shares a two-metre footway with pedestrians, wheelchair users, children and older people. Its failure is not a wrong sentence; it is physical contact. And the hole in current practice is specific: a robot typically **obtains one certification in a test field and is then admitted to all streets.** Yet the same machine behaves entirely differently in night rain, in an event-day crowd, over a lifted manhole cover, or at a width where a wheelchair is passing. **One certification standing in for unlimited conditions is an invalid transfer of trust.**
+**The problem is not the model; it is the ground.** A delivery robot shares a two-metre footway with pedestrians, wheelchair users, children and older people. Its failure is not a wrong sentence; it is physical contact. The hole in current practice is specific: a robot typically **obtains one certification in a test field and is then admitted to all streets.** Yet the same machine behaves entirely differently in night rain, in an event-day crowd, over a lifted manhole cover, or at a width where a wheelchair is passing. **One certification standing in for unlimited conditions is an invalid transfer of trust.**
 
-The leveling network replaces that with a segment-by-segment regime whose core rule is one sentence:
+The leveling network replaces it with a segment-by-segment regime whose core rule is one sentence:
 
 > **No benchmark, no robot.**
 
@@ -716,7 +716,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (479); a non-AI equivalent path (364); an on-site safety officer (329); remote and physical e-stop (175); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 479. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (479); a non-AI equivalent path (364); an on-site safety officer (330); remote and physical e-stop (175); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 479. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -750,14 +750,14 @@ Those counts used to come from hand-reading eighteen proposals, with neither the
 | **Emergency access yielding** | 2 proposals, 2× | Fire-lane occupancy detection, ambulance approach behaviour, charger placement against emergency routes | A robot blocking a fire lane trades F3 convenience for F1 risk |
 | **Wheelchair passing** | 0 as an independent item | Handling where clear width is insufficient; **read by wheelchair users in person** | Who takes the reading decides what can be measured |
 
-**Why these particular blanks are the ones closure error fills.** The first five share a structure: *the same system behaves inconsistently across conditions or across jurisdictions.* That is the definition domain of closure error. Other frameworks can register a robot's declarations and assess its risk class, but **none of them answers whether it is the same machine in January as in September.**
+**Why these particular blanks are the ones closure error fills.** The first five share a structure: *the same system behaves inconsistently across conditions or across jurisdictions.* That is the definition domain of closure error. Other frameworks register a robot's declarations and assess its risk class, but **none of them answers whether it is the same machine in January as in September.**
 
 **Closure error and tolerance (F1).** f is defined as the maximum divergence of the sum of false-positive and false-negative rates for the same test item across stations and conditions. F1 takes the network's strictest tolerance, and two rules hold:
 
 1. **Any safety incident suspends the whole network** — not the machine involved, not the segment involved, but every machine of that type on the line, stopped and re-measured. The reason is the same as the general principle: local patching is not permitted.
 2. **Tolerance scales with kinetic energy.** F tightens with the product of mass and speed. To run faster or heavier, an operator must first obtain a stricter closure clearance — not apply for an exemption.
 
-**Incident handling and appeal, with a clock on it.** Across the 40 proposals in these two tracks almost everyone writes that decisions can be appealed, and **six give a numeric time limit — four other than this.** A right of appeal with no deadline cannot be enforced: nobody can tell if it was honoured. Appeal is therefore written as measurable commitments, and the time limits enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.**
+**Incident handling and appeal, with a clock on it.** Across the 40 proposals in these two tracks almost everyone writes that decisions can be appealed; **six give a numeric time limit, four other than this.** A right of appeal with no deadline cannot be enforced: nobody can tell if it was kept. Appeal is therefore written as measurable commitments, and the limits enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.**
 
 **Insurance and a removal bond, so exit can be executed.** Eleven of the 40 mention a bond or insurance, ten excluding this one, always as one word in a list, none designing the risk transfer. Yet this proposal's core rule returns the whole route for re-survey and removes the devices, and without funding that defers into indefinite observation. Admission therefore requires a **removal bond** for removal and site restoration, scaled to device count and area, released on **a full re-survey cycle within tolerance** rather than on entering operation; the claims route for an injured pedestrian is published at admission; and F1 risk transfer must be in place before closure clearance.
 
@@ -765,7 +765,7 @@ Those counts used to come from hand-reading eighteen proposals, with neither the
 
 ### Jurisdictional seams: where pilots on this belt actually die
 
-Across the 40, jurisdiction, ownership boundaries and park management match in two — one other than this. Yet this is where low-speed device pilots most often fail: a machine leaves the park's green space onto a municipal road, passes a campus frontage, enters a private forecourt — **changing responsible party at every crossing.** Technically it never stopped moving; in responsibility it changed hands four times.
+Across the 40, jurisdiction, ownership boundaries and park management match in two — one other than this. Yet this is where low-speed device pilots most often fail: a machine leaves the park onto a municipal road, passes a campus frontage, enters a private forecourt — **changing responsible party at every crossing.** Technically it never stopped; in responsibility it changed hands four times.
 
 This proposal writes jurisdiction into the geometry rather than into prose. Every point in `geometry/public_space.geojson` carries `jurisdictions` and `is_seam_point` attributes [data:geometry/public_space.geojson#PUBLIC-001], so the claim is machine-checkable. The measured result is worth stating on its own line:
 
@@ -785,7 +785,7 @@ Rule 4 (defined below in full) is the important one. The real failure mode at a 
 
 **Explicitly not done:** jurisdiction types here are **inferred from position**, flagged as such in the layer attribute `jurisdiction_note_zh`, and must be replaced once official ownership and management boundaries are verified — after which the section is recomputed. This proposal assigns no responsibility to any authority and makes no commitment on anyone's behalf; the above is a mechanism offered for independent evaluation by each authority.
 
-**Substitution and employment: the half that also has to be said.** Low-speed delivery robots displace specific people's work. This proposal neither pretends the problem away nor claims to solve it, but refuses to put it outside the design scope:
+**Substitution and employment: the half that also has to be said.** Low-speed delivery robots displace specific people's work. This proposal neither pretends the problem away nor claims to solve it, but refuses to put it outside scope:
 
 - Changes in delivery employment within a pilot area must be **registered as a baseline at admission and published each re-survey cycle**, alongside the device count.
 - Existing couriers and delivery workers are real users of the spine. Their needs for dwelling, charging, shade and toilets enter the public-space kit of parts at the same level as device chargers, and must not be reduced to make room for devices.
@@ -829,7 +829,7 @@ This is the technical core and is written so a professional team can check it di
 4. **Judge.** If f ≤ F the scenario is level for this cycle, may continue operating, and enters the next cycle. If f > F, **the whole route returns for re-survey**, and the scenario drops to its non-AI equivalent until it passes.
 5. **No local repair.** Amending only the worst station while keeping the other readings is forbidden. This prohibition is the key to the whole mechanism — it is what makes "tune the parameters until the metric looks good" structurally ineffective.
 6. **Setting and revising tolerance F** happens publicly in the tolerance chamber at BM-1, with reasons logged for every revision. **F may only tighten on evidence; it may never loosen because a scenario failed to meet it.**
-7. **Resumption.** What it takes to come back after a return: the whole route re-surveyed, f ≤ F for two consecutive cycles, a written and published account of the exceedance, unanimous confirmation by all four review parties where the return followed an F1 safety incident, and a halved cycle after resumption. **Returning is easy and resuming is slow**, deliberately. Set out in full under "Rule 7" below.
+7. **Resumption.** What it takes to come back: the whole route re-surveyed, f ≤ F for two consecutive cycles, a written and published account of the exceedance, unanimous confirmation by all four review parties where the return followed an F1 safety incident, and a halved cycle after resumption. **Returning is easy and resuming is slow**, deliberately. Set out in full under "Rule 7" below.
 8. **The rule this proposal cannot supply.** Closure error cannot measure whether a scenario is *worth having*. It is a consistency test, not a utility test; supplying that needs a control group and this proposal has not done that work. Why an absence gets several its own is under "Rule 8" below.
 
 **Two of the eight are set out below rather than here, because each needs more than a line; they are numbered here because they belong to this definition. A list calling itself the complete definition while stopping at rule 6, in a document that cites rule 7 five times, is a shape this package would log in its own errata register.** Rules 5 and 6 close the two common governance failure modes — patching, and moving the goalposts — at the level of the mechanism rather than the level of intention. That is the substantive difference between this and register-and-assess frameworks.
@@ -838,7 +838,7 @@ This is the technical core and is written so a professional team can check it di
 
 This proposal argues throughout that a declaration nobody can machine-check is not evidence. Until this revision, **its own central declaration — the closure mechanism — existed only as prose and tables.** That is the same defect this package reports in other people's structured fields, sitting in its own.
 
-So a closure record is defined as a **data contract**, and the package ships a runnable reader for it:
+So a closure record is defined as a **data contract**, with a runnable reader shipped for it:
 
 | File | What it does |
 |---|---|
@@ -848,7 +848,7 @@ So a closure record is defined as a **data contract**, and the package ships a r
 
 The point is the third one **refusing to accept a record's own conclusions**. It recomputes f and rejects any record whose declared f disagrees. It derives `passed` and `action` from f against F and rejects a record that claims otherwise. And it enforces four rules: every circuit departs from BM-0; review parties may not be homogeneous; a missing non-AI path is a rejection, because without one a return would interrupt public service and the stop rule would simply be circumvented; and step-free and wheelchair items must be read by the affected user in person.
 
-**The reader has been tested to reject, not only to pass.** Two adversarial cases were run: worsening one station's reading while keeping the old f produces *"declares 0.13 but the stations recompute to 0.36"* and knocks out `passed` and `action` with it; deleting the worst-performing station to make the number look better is rejected for having fewer than three stations and only two distinct review parties — **which is what rule 5, no local repair, looks like in code.** The exit code is the verdict: 1 rejected, 0 accepted.
+**The reader is tested to reject, not only to pass.** Two adversarial cases were run: worsening one station's reading while keeping the old f produces *"declares 0.13 but the stations recompute to 0.36"* and knocks out `passed` and `action` with it; deleting the worst-performing station to make the number look better is rejected for having fewer than three stations and only two distinct review parties — **which is what rule 5, no local repair, looks like in code.** The exit code is the verdict: 1 rejected, 0 accepted.
 
 `verify.js` shows that this proposal's **numbers** can be independently recomputed. `check_closure.js` shows that its **mechanism** can be independently executed. A proposal claiming to adjudicate trust should be able to produce both.
 
@@ -953,7 +953,7 @@ The rule has real veto power. It means positions inside campuses, behind compoun
 
 ### Device charging, standby, and kerb allocation
 
-Few proposals in these two tracks address where low-speed devices are charged and parked: of the 40, **26** mention charging or parking and only **3**, this one, touch siting. Mentioning it is normal; saying where it goes is not. This gap stalls real pilots: a fleet needs charging, standby and maintenance bays; all three take kerb or ground space, and all want to be where the people are.
+Few proposals in these two tracks address where low-speed devices are charged and parked: of the 40, **26** mention charging or parking and only **3**, this one, touch siting. Mentioning it is normal; saying where it goes is not. This gap stalls real pilots: a fleet needs charging, standby and maintenance bays, all taking kerb or ground space where the people are.
 
 What this proposal supplies is a **priority order for kerb allocation**, not a set of positions:
 
@@ -1002,7 +1002,7 @@ Device failure at intersections is not a failure to yield; it is **accumulation*
 
 ### Emergency access: a constraint that cannot be traded away
 
-Across the 40, fire lanes, ambulances and emergency access match in three — two other than this. This proposal writes it as a hard constraint rather than a note:
+Across the 40, fire lanes, ambulances and emergency access match in three, two other than this. This proposal writes it as a hard constraint rather than a note:
 
 - **No charging point, parking bay or queue storage** may be placed within a fire lane or emergency access route;
 - device behaviour on detecting an approaching emergency vehicle enters the fixed test battery, and its readings enter the closure error;
@@ -1454,7 +1454,7 @@ It calls none of this proposal's generation scripts and needs neither Python nor
 
 ### Accessibility and legibility QA: computed, not asserted
 
-Reviews of the highest-scoring concurrent submissions keep asking for one thing: distance-legibility and colour-contrast testing on A0 boards, and alt-text, keyboard, screen-reader and contrast checks on the HTML — usually answered with a sentence. Here it is computed, shipped as `visual/assets/accessibility_qa.json`, and **enforced as a build gate — failure stops the build rather than warning.** `analysis/` is not in the package, so a reviewer re-runs the shipped `accessibility_qa.json` and the five `.js` checkers, not the gate.
+Reviews of the highest-scoring submissions keep asking for one thing: distance-legibility and colour-contrast testing on A0 boards, and alt-text, keyboard, screen-reader and contrast checks on the HTML — usually answered with a sentence. Here it is computed, shipped as `accessibility_qa.json`, and **enforced as a build gate — failure stops the build rather than warning.** `analysis/` is not in the package, so a reviewer re-runs the shipped `accessibility_qa.json` and the five `.js` checkers, not the gate.
 
 Contrast (WCAG 2.1, ≥ 4.5 body text, ≥ 3.0 large text and graphical objects, against the paper surface): principal ink 11.44, secondary text 4.56, muted annotation 3.00, datum red 4.74, instrument blue 4.59, brass 4.51, surveyed green 6.86 — all clearing their floors. **Four of these failed before this revision** — muted annotation at 2.30, brass 3.47, olive 2.60, secondary 4.30. The script found them; new values were then derived against the target ratios and applied throughout. Chosen by eye, all four looked "clear enough".
 
@@ -1525,12 +1525,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-319 entries. By finder:
+320 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 27 | Run against the shipped package, not a draft |
-| The author | 210 | Found while working |
+| The author | 211 | Found while working |
 | This package's own gate | 24 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1552,7 +1552,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Outlived its line | 13 |
 | A reference did not resolve | 12 |
 | Not itself | 12 |
-| A source unnameable | 9 |
+| A source unnameable | 10 |
 | A total excluding | 8 |
 | Answered under another name | 7 |
 | Geometry not meaning it | 7 |
@@ -1837,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1164 KB, 1,807 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 1166 KB, 1,808 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
