@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1f1238f17ce8704caa9acdc7831dddf552ef457b037aab8d7b3f4a170b132b91"
+      "sha256": "094b73d713602888dba5b7096955c8368788aa4da35f9ebf06ec51e66e4d283a"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "530c3a9cada0a6713b6871c13a4ff0595f0908a55c6f160748260667cc69597e"
+      "sha256": "7deb6be094c00eb0991b2e722e735e04f559b33e46493a1656193cc99c7b9ca8"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "16a1a9753b015c8bbf8ba06034c22b76e480784f5d70609d3630a4415c14699f"
+      "sha256": "351a1ea8c9a815b05120e8257e25c2b36c3bed74cf4d76bef011e0ecde351cc5"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "bb1c347e7eb8d5ab8e162318166c612e3fa8dc8d6ea4273beb73b88b12b02a72"
+      "sha256": "cc7ccf4817bfde8553e8642fdb3bf4273d7a3802f49398b7eae8700de5782c78"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "92fb2925096e9e2e34c7c0b2c4a43dc393a17dd252f9529c3e6bddb38b1babcf"
+      "sha256": "45db1b9a8b1762be1b452549950836a48e28a348a8d554e9a9f4b9411352cce3"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a2e7c63e571b91ebf42e794ec11e8f52e502c89f8af858985b01c3b6f6be0cb1"
+      "sha256": "8591b57324463836490f04d25e37a015fb81a24753d50c894a948f97aa0e1947"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "499ab2845137b45cd5ff907a3c3efcb0fce7b937cd9163feb9acae037e99d812"
+      "sha256": "8676703c52bc56aa5c8e93b5ab1208becc8fc7d641c4a3556a922885a88da59b"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "37d533cf616216b624cfbbc48aa7a849d9ed9b7e81a3c3942797bbbe7853778a"
+      "sha256": "a66d7fbeda60ea6c08ba8c4623272cc330b77b9857c9f0e0091a451b77443689"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "23a5ed4249a1517e84430ea0cc044b2bfb6b9fd376cfb3accd072000585e2212"
+      "sha256": "b21f34559f3372f07a67647ee0b68a7f615c8add4beaa4d2d200aecaf4b286ca"
     },
     {
       "path": "assets/media/cover.webp",
@@ -758,7 +758,7 @@
       "title_en": "Multimodal short film storyboard, transcript and rights note",
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
-      "sha256": "263f8cd43c6f443f89acab2d5c35ed334d9cf530a6e58094c1de6fb0711f5654"
+      "sha256": "3543332c17cbab25fed44d91c2607674a98f5ffa2e50fca98daa157c70a014dd"
     },
     {
       "path": "visual/assets/ethics-protocol.json",
@@ -776,7 +776,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "3765691f32050a616e67a2f72d9e309e453568d0a534ce0f717d97ce14c0d878"
+      "sha256": "b5ab247bcef27b7ef82b46352d7a2ac219e15e89e4598907f70a5884e59a98e8"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -785,7 +785,7 @@
       "language": "neutral",
       "title_zh": "随包自检闸门台账（十道闸门，逐道登记口径、当前读数与历史查获缺陷共 27 条）",
       "title_en": "Package self-check gate register (ten gates, each with its criterion, current reading and the 27 defects the gates actually caught)",
-      "sha256": "e01c93c50b8029a9ec00bc8bd6ff1aa63e75a990b898a44397464bb8d3222815"
+      "sha256": "30a26f360ec4e2d899761a5413049f097f1fbb63ff1f96dc08bc74d8baf1a982"
     },
     {
       "path": "visual/assets/service-desk-gonogo.json",
@@ -1168,7 +1168,7 @@
       "language": "neutral",
       "title_zh": "感官设计准则：蓝绿雨洪三层判据、十节点参数区间与母版口径、百年遗产解说序列与材料判据、实施制度框架、五×五参与矩阵（只登记判据与关系，不登记工程参数与法定控制值）",
       "title_en": "Sensory design code: the blue-green three-layer and stormwater criteria, the node parameter ranges and their master-card caliber, the century heritage interpretation sequence with its material criteria, the delivery-institution framework and the five-by-five participation matrix (criteria and relations only, no engineering parameter and no statutory control value)",
-      "sha256": "358fb66690b399ac8114ffd3b160e94ce2a080b61771aca6bd4fad5fcd1978c6"
+      "sha256": "8ee3bc38c1ec19f4a1b0cd02fdf4698be329c484838f58e9ab955867b4f62cb4"
     },
     {
       "path": "assets/figures/bluegreen-structure.png",
