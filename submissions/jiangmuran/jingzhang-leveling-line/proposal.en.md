@@ -506,7 +506,7 @@ Each type is translated below into **the spatial condition a site visit could fa
 |---|---|---|---|---|
 | Zhongzhi Park AI autonomous innovation accelerator | **garden-type** | **A garden has to be crossable.** Green space and water may not be an internal courtyard: the public route from the spine to the Qing river is 6.0 m clear, never more than 250 m from the next, ungated at any hour; the test ground is enclosed **by time of day**, not permanently by boundary (CONSTRAINT-001, 5.30 ha [metric:test_field_area_sqm]). | If a plot refuses the route, the cost is written in minutes on FIG.14 rather than the area being re-scored as connected. | FIG.14, `geometry/constraints.geojson#CONSTRAINT-001` |
 | Beijing AI Origin community | **campus-adjacent** | **Campus-adjacent is a walking time, not an adjacency.** The link from campus to block may not be by steps alone; the step-free link is a 1:12 ramp **on the desire line**, not a detour to a side gate (FIG.17); translation space sits at street level, not deep in a compound; the evidence hall is ungated. | If the only approach is by steps the area fails the type, regardless of whether any gradient is compliant. | FIG.17; part KIT-04 (300 mm guidance strip, Ø1,500 turning space, 2,100 mm headroom) |
-| Dazhongsi AI industry cluster | **city-type** | **City-type means the ground floor runs continuous with the station concourse and no queue stands on the footway.** All four quadrants of the junction walkable (FIG.12); the machine queue reserve **behind the building line**, 18 m² for eight units at 1,800 mm turning (FIG.24); the third-order benchmark reachable from the concourse. | The moment a queue takes footway width the area fails the type, however orderly the queue is. | FIG.12, FIG.24, `metrics.json#queue_reserve_area_sqm` |
+| Dazhongsi AI industry cluster | **city-type** | **City-type means the ground floor runs continuous with the station concourse and no queue stands on the footway.** All four quadrants of the junction walkable (FIG.12); the machine queue reserve **behind the building line**, 18 m² for eight units at 1,800 mm turning (FIG.24); the third-order benchmark reachable from the concourse. | The moment a queue takes footway width the area fails the type, however orderly the queue is. | FIG.12, FIG.24; **no metric stands behind the 18 m²** |
 
 **The three conditions do not transfer, which is what makes them three types.** Move the garden condition to Dazhongsi and you get a waterfront nobody needs; move the city-type condition to Zhongzhi Park and you get a concourse that is not there. FIG.13's three sections at one scale are the drawn evidence; the three conditions ship as `visual/assets/block_types.json`.
 
@@ -692,7 +692,7 @@ This package had presented the equivalent non-AI path, the stop-on-detection rul
 | Every scenario must have an **equivalent non-AI service path** | Barrier-free Environment Construction Law, **Article 39**: public service venues handling medical care, social security, financial or utility payment matters shall retain traditional service methods including on-site guidance and manual handling [source:BARRIER-FREE-ENVIRONMENT-LAW] | From a designer's goodwill to a **statutory duty** |
 | On detection, **stop generation and transmission** rather than observe first | Interim Measures for the Management of Generative AI Services, **Article 14**: on finding unlawful content the provider shall promptly stop generation, stop transmission and eliminate it [source:GENERATIVE-AI-INTERIM-MEASURES] | From this proposal's stop rule to a **provider obligation** |
 | Appeal must carry a **numeric time limit** or it is unenforceable | Same Measures, **Article 15**: establish complaint and reporting mechanisms with a convenient entry, and **publish the handling process and the feedback time limit** | From this proposal's argument to **compliance with an existing requirement** |
-| Persona P4's **non-smartphone path** is non-waivable | Implementation Plan on Resolving Older People's Difficulties with Smart Technology (Guobanfa [2020] No. 45): keep traditional service methods running in parallel with smart innovation, retain the methods older people know across daily-life settings, and it names travel, medical care, consumption, culture and administrative affairs as the high-frequency cases [source:ELDERLY-SMART-TECH-PLAN] | From a persona constraint to a **policy basis with a scenario list to check against** |
+| Persona P4's **non-smartphone path** is non-waivable | Implementation Plan on Resolving Older People's Difficulties with Smart Technology (Guobanfa [2020] No. 45): keep traditional service methods running in parallel with smart innovation, retain the methods older people know across daily-life settings, and it names travel, medical care, consumption, culture and administrative affairs as the high-frequency cases [source:ELDERLY-SMART-TECH-PLAN-2020-45] | From a persona constraint to a **policy basis with a scenario list to check against** |
 
 **The third row has rewritten one of this proposal's findings twice.** The original hand-read eighteen proposals in the two tracks: nearly all say decisions can be appealed, exactly one gives a numeric time limit, and the deadline was presented here as this package's increment. Both halves are corrected. **First**, Article 15 has required publishing a feedback time limit since 2023, so it was never this proposal's invention. **Second**, a re-runnable scan over all 40 (`visual/assets/track_scan.json`) returns **six** hits, **five** excluding this proposal — so "exactly one" was wrong too. The real finding is not that this proposal thought of a deadline. It is that —
 
@@ -1525,11 +1525,11 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-324 entries. By finder:
+325 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 30 | Run against the shipped package, not a draft |
+| Independent audit | 31 | Run against the shipped package, not a draft |
 | The author | 212 | Found while working |
 | This package's own gate | 24 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
@@ -1542,7 +1542,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 | Shape | Count |
 |---|---|
-| An easy measure | 58 |
+| An easy measure | 59 |
 | Two copies drifted | 49 |
 | Shipped unseen | 30 |
 | Uncheckable | 25 |
@@ -1837,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1163 KB, 1,805 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1167 KB, 1,807 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
@@ -1881,7 +1881,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 80 of 83 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
+**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 81 of 84 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
 
 <!-- PDFPAGE1:BEGIN -->
 
