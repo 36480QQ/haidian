@@ -876,6 +876,8 @@ geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和
 
 六项任务继续由 `compliance_matrix.json` 作为完整覆盖台账；上表只提供评审入口，不替代原矩阵，也不构成第七项任务 [data:visual/assets/implementation-handoff-matrix.json#agent_task_review_crosswalk]。
 
+**五项本地合同直达。** [D01—D08 官方资料替换登记](visual/assets/implementation-handoff-matrix.json#/official_data_replacement_register) · [P01—P07 建议专业类型矩阵](visual/assets/implementation-handoff-matrix.json#/professional_discipline_matrix) · [H01—H07 未提交交接包定义](visual/assets/implementation-handoff-matrix.json#/handoff_pack_definitions) · [D01—D08 替换资料模板](visual/assets/field-evidence-intake-contract.json#/replacement_packet_templates) · [关闭类别与计数](visual/assets/readiness-closure-contract.json#/closure_categories)。这些链接只定位现行合同，不证明资料已提交、专业方已接受责任或关闭已完成。
+
 ### 八类官方数据替换：收到资料后不是“贴图”，而是触发重算
 
 | 替换包 | 当前状态 | 必须补入的现实材料 | 触发动作 | 建议专业类型（未接受责任） | 受影响输出 |

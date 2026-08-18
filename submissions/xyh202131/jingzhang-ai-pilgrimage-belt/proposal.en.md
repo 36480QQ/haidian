@@ -876,6 +876,8 @@ The review sequence does not relax any evidence gate. The single concept is Twin
 
 `compliance_matrix.json` remains the complete coverage ledger for all six duties. This table is a review entry only; it neither replaces that matrix nor creates a seventh task [data:visual/assets/implementation-handoff-matrix.json#agent_task_review_crosswalk].
 
+**Five direct local contract links.** [D01–D08 official-input replacement register](visual/assets/implementation-handoff-matrix.json#/official_data_replacement_register) · [P01–P07 suggested-discipline matrix](visual/assets/implementation-handoff-matrix.json#/professional_discipline_matrix) · [H01–H07 unsubmitted handoff-pack definitions](visual/assets/implementation-handoff-matrix.json#/handoff_pack_definitions) · [D01–D08 replacement-packet templates](visual/assets/field-evidence-intake-contract.json#/replacement_packet_templates) · [closure categories and counts](visual/assets/readiness-closure-contract.json#/closure_categories). These links only locate current contracts; they do not prove submitted evidence, accepted professional duty, or completed closure.
+
 ### Eight Authoritative-Data Replacements: New Evidence Triggers Recalculation, Not Pasting
 
 | Replacement pack | Current state | Required real-world input | Triggered action | Suggested disciplines (no accepted duty) | Affected outputs |
