@@ -1336,6 +1336,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M143",
+      "gate": "palette_cvd_qa.py",
+      "target": "figures.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 `0803 文化用地` 的填色改回 `#8E6FB0`。**这是 E359 之前的真实状态**：经 Viénot 1999 二色觉模拟复算，它与 `0802 科研用地` 对红色盲只差 CIEDE2000 **2.9**——七类剖分里有两类是同一种颜色，而这张图是评审直接收到的五张之一。",
+      "what_en": "Put the fill for 0803 cultural land back to #8E6FB0. **This is the real state before E359**: through a Vienot 1999 dichromacy simulation it sits CIEDE2000 **2.9** from 0802 research land for a protanope - two of the seven classes rendered the same colour, on one of the five sheets the reviewer is sent.",
+      "why_zh": "本包公布了实测对比度，然后写道色觉障碍者实读「必须由人完成」。**这句一半是真的、一半是拿声称顶替了算术**：一个真实读者能不能用这张图，需要真实读者；但两块填色对二色觉者相距多远，是**可以算的**，而本方案的整个主张就是可复算的数优于保证。闸门守的是已公布的最差一对，**只能往上抬**——为了让检查通过而放宽容差，正是本册拒绝的那个动作。",
+      "why_en": "This package published measured contrast ratios and then said that reading by people with colour vision deficiency must be done by a person. Half of that is true and half was a claim standing in for arithmetic: whether a real reader can use the drawing needs a real reader, but **how far apart two fills are for a dichromat is computable**, and this package's whole argument is that a recomputable number beats an assurance. The gate holds the published worst pair and can only be raised - widening a tolerance to make a check pass is the move this register refuses."
+    },
+    {
       "id": "M138",
       "gate": "shipped_bilingual_qa.py",
       "target": "build_matrix_evidence.py",
@@ -1713,7 +1726,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 140,
+  "caught": 141,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1767,6 +1780,7 @@
     "organiser_review_qa.py",
     "organiser_verdict_qa.py",
     "overflow_qa.py",
+    "palette_cvd_qa.py",
     "parity_qa.py",
     "pdf_page1_qa.py",
     "planning_controls_qa.py",
@@ -1852,6 +1866,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 97 道闸门，其中 94 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 97 gates, 94 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 98 道闸门，其中 95 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 98 gates, 95 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
