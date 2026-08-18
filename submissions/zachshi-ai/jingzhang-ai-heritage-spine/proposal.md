@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗产走廊为脊梁，串联众智园AI加速区、北京AI原点社区和大钟寺AI产业集聚区，构建三区两翼协同的世界级AI创新生态带。方案提出'AI原点·京张脊梁'总体概念，通过遗产公园慢行主轴缝合东西、贯通南北，布局10类用地、15栋概念建筑、12张AI场景卡和3个朝圣地标，形成可体验、可推广、可迭代的智能城市概念方案。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide", "robot-delivery-low-speed"]
-iteration: "v4.0"
+iteration: "v5.0"
 ---
 
 # 京张AI创新遗产脊梁：百年铁路走廊的智能城市新生
@@ -301,6 +301,25 @@ Logo方向以京张铁路轨距线为视觉母题，融合AI神经网络节点�
 | 智递方舟驿站 | 表面叠加 | 模块整体可迁移 | 银灰模块化外观 | 驿站可转人工服务点 |
 
 三原则与 G 门衔接：每个节点在 G0 空间门前必须提交干预登记，登记未过（如拟改动遗产本体）即不得进入设计深化。登记表全部 `not_authorized_not_run`，现场实施须经文保部门专业审定 [depth:risk_missing_data]。
+
+### 元层验证：回授物使用验证（本方案原创，v5）
+
+人字轨道语法承诺"每个 AI 节点欠文化一件实体回授物"。这个承诺**可以被验证**：从不被触摸、阅读或到访的回授物是摆设，不是回授。回授的定义包含"被使用"--因此回授物验证 = 使用验证 [E:HERITAGE-USAGE-VERIFICATION]。
+
+**12 件回授物的使用登记**（逐件定义使用指标与"摆设化"判据，完整见 `visual/assets/reciprocity-usage-register.json`）[data:visual/assets/reciprocity-usage-register.json#artifacts]：
+
+| 回授物 | 使用指标 | 达标线 | 摆设化判据 |
+| --- | --- | --- | --- |
+| 人字轨道实景模型+全线历史地图 | 模型互动次数+地图月取用 | 地图 ≥400 份/月 | <120 份即地标吸引力不足 |
+| 车站历史时间轴+纸面导览册 | 导览册月取用量 | ≥300 份/月 | <100 份即调整位置与内容 |
+| 社区记忆征集箱 | 月投稿数 | ≥20 件/月 | <5 件即征集机制失效 |
+| 驿站服务承诺牌 | 注视率（进入驿站者中注视比例） | ≥30% | <10% 即移至入口视线 |
+
+**使用量的诚实状态。** 所有使用量当前为 `unknown`--现场数据到来之前，不填 0 也不填估值。这是使用验证与"摆设化"之间最关键的边界：**unknown 不是没人用，是还没测**。
+
+**规则闭合验证。** `run_reciprocity_usage_tabletop.js` 对 12 回授物 × 6 条规则分支（达标/低于下限/仅虚拟物/未测量/缺阈值/节点缺回授物）共 72 个合成案例全部正确分类（12 回授/12 摆设风险/12 unknown/36 阻断）--仅证明规则逻辑闭合，不构成现场参观、取用或授权证据 [data:visual/assets/reciprocity-usage-evidence.json#blocked]。
+
+**与人字轨道语法的关系。** 语法要求"回授物必须是实体"（虚拟不算），使用验证进一步要求"实体必须被使用"（摆设不算）--两者共同把"文化不被消费"从设计原则升级为**可测量、可判摆设、可促整改**的工程承诺：低于下限的回授物不是被丢弃，而是被重新策展或迁址，直到它真正回到文化使用中 [depth:metrics_recalculation]。
 
 ### 文化导览路线与空间叙事主线
 
