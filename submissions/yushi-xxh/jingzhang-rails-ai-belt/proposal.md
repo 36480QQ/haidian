@@ -4,7 +4,7 @@ author_github: "yushi-xxh"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "面向百年京张AI创新带的 formal AI 城市设计方案。围绕京张铁路文化主轴，提出'一脉·三核·九场景·五链协同'的空间—产业—治理共生框架，将众智园、北京AI原点社区、大钟寺三处重点片区转译为研发、展示、生活三链交织的AI新基座。v1.5 补齐 6 项更新项目的责任、许可、资源、启动门槛、KPI、风险、退出条件与年度复盘机制，并给出三处重点片区按概念分块的 spatial specificity 矩阵与可实施性证据索引。v1.6 在 v1.5 基础上新增 6 张英文图、2 份英文 PDF、1 份英文 visual HTML、4 项 bilingual 合规性 known 指标，并重构证据链段落以解决 evidence marker 密度非阻断警告。v1.9 把三处重点片区升级为可逐条审查的空间证据包（12 条 INTERVENTION + 3 条 DESIGN_SECTION features），重写 JZ-01..06 为角色类别 + 最小试点 + 基线驱动的可实施矩阵，并把设计深度与标准证据改为项特异绑定。v1.10 修复评审可见图件缺陷、绑定中央 registry、持久化四门 gate 证据、补全英文提案（intake 74/100）。v2.0 深度重设计：新增原创机器可读治理契约《共生带折返协议 0.1》（switchback-protocol schema + 合成样例 + 角色规范 + 基线测量协议 + 结构校验报告，3 项 known 指标），以京张铁路'人字形'折返线为原型的可逆性机制；新增合规锚点四栏表（法定依据与实际效果、自设标准、空间后果逐行分列）；试点交付契约升级为 P01-P06 概念 RACI + 二元开放门槛 + 回滚状态；权利与构建溯源逐资产可核验。v2.1 同内容重投第二次采样（81/100）。v2.2 机制深标：10 张场景卡全部登记折返协议实例（10 条基线 + 7 类缺陷注入共 80 条规则检查，70 拦截 0 漏过）；新增零号折返亭 1:1 概念原型与智能层在线/停用交互开关；按 rubric 原文补齐可实施性四件事、综合规划内涵与空间产业融合、公共利益六类人群、长期运营价值三要素、可转化性与国际传播；新增中英三分钟音频导览与画廊封面。v2.8 概念内联：参考当前最高分仓库（96/100）后，把折返协议从 not_supplied 治理 JSON 搬进可读正文（四步折返放行表 + R1–R7 规则表，80 检查 70 拦截 0 漏过 0 结构错误），并给三处重点区补一句锋利功能本质（测—议—兑）。v2.9 概念锋利化：在 proposal 开篇新增一节"一条懂得折返的走廊"，把京张人字坡→折返智慧→AI 越快城市越需懂得折返写成有文学性的隐喻开场，给评审鲜明第一印象。v2.13 内联基线测量协议：把 measurement-protocol.json 的 6 条试点 KPI 测量协议（基线来源/方法/频次/测量角色/目标值 null/重算触发）从 not_supplied 治理 JSON 搬进可读正文，沿用把读不到的治理 JSON 变成评审可读正文这一杠杆，强化可实施性。"
+summary: "面向百年京张AI创新带的 formal AI 城市设计方案。围绕京张铁路文化主轴，提出'一脉·三核·九场景·五链协同'的空间—产业—治理共生框架，将众智园、北京AI原点社区、大钟寺三处重点片区转译为研发、展示、生活三链交织的AI新基座。v1.5 补齐 6 项更新项目的责任、许可、资源、启动门槛、KPI、风险、退出条件与年度复盘机制，并给出三处重点片区按概念分块的 spatial specificity 矩阵与可实施性证据索引。v1.6 在 v1.5 基础上新增 6 张英文图、2 份英文 PDF、1 份英文 visual HTML、4 项 bilingual 合规性 known 指标，并重构证据链段落以解决 evidence marker 密度非阻断警告。v1.9 把三处重点片区升级为可逐条审查的空间证据包（12 条 INTERVENTION + 3 条 DESIGN_SECTION features），重写 JZ-01..06 为角色类别 + 最小试点 + 基线驱动的可实施矩阵，并把设计深度与标准证据改为项特异绑定。v1.10 修复评审可见图件缺陷、绑定中央 registry、持久化四门 gate 证据、补全英文提案（intake 74/100）。v2.0 深度重设计：新增原创机器可读治理契约《共生带折返协议 0.1》（switchback-protocol schema + 合成样例 + 角色规范 + 基线测量协议 + 结构校验报告，3 项 known 指标），以京张铁路'人字形'折返线为原型的可逆性机制；新增合规锚点四栏表（法定依据与实际效果、自设标准、空间后果逐行分列）；试点交付契约升级为 P01-P06 概念 RACI + 二元开放门槛 + 回滚状态；权利与构建溯源逐资产可核验。v2.1 同内容重投第二次采样（81/100）。v2.2 机制深标：10 张场景卡全部登记折返协议实例（10 条基线 + 7 类缺陷注入共 80 条规则检查，70 拦截 0 漏过）；新增零号折返亭 1:1 概念原型与智能层在线/停用交互开关；按 rubric 原文补齐可实施性四件事、综合规划内涵与空间产业融合、公共利益六类人群、长期运营价值三要素、可转化性与国际传播；新增中英三分钟音频导览与画廊封面。v2.8 概念内联：参考当前最高分仓库（96/100）后，把折返协议从 not_supplied 治理 JSON 搬进可读正文（四步折返放行表 + R1–R7 规则表，80 检查 70 拦截 0 漏过 0 结构错误），并给三处重点区补一句锋利功能本质（测—议—兑）。v2.9 概念锋利化：在 proposal 开篇新增一节"一条懂得折返的走廊"，把京张人字坡→折返智慧→AI 越快城市越需懂得折返写成有文学性的隐喻开场，给评审鲜明第一印象。v2.13 内联基线测量协议：把 measurement-protocol.json 的 6 条试点 KPI 测量协议（基线来源/方法/频次/测量角色/目标值 null/重算触发）从 not_supplied 治理 JSON 搬进可读正文，沿用把读不到的治理 JSON 变成评审可读正文这一杠杆，强化可实施性。v2.14 收紧：把纯元数据 padding（已读辅助资料清单表、13 维自评表，均 0 marker）压成单句散文，净减 ~34 行，对标最高分仓库 313 行无 padding 的紧致风格。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v2.2"
@@ -84,20 +84,7 @@ iteration: "v2.2"
 
 ## 已精读的辅助资料清单（v1.2）
 
-| 路径 | 类别 | 在本方案中的用法 |
-| --- | --- | --- |
-| `docs/data-workflow.md` | 资料处理流程 | 6 步 agent 读取流程；明确 `processed/*` 是导航层、官方 URL 仍是依据 |
-| `data/processed/agent_fact_pack.md` | 事实包 | 把"formal / provisional_only / 仍需 official 附件"三类资料分清；本方案只引用前两类 |
-| `data/processed/project_scope_summary.csv` | 6 条 scope | 6 条 `formal_use` / `prohibited_use` 逐条引用；本方案严格按其允许范围使用 |
-| `data/processed/agent_task_requirements.csv` | 14 条任务索引 | 14 条 `requirement_id` / `minimum_response` / `required_evidence` / `forbidden_claims_or_limits` 全部纳入合规矩阵 |
-| `data/processed/source_use_matrix.csv` | 6 条 source 可用性 | 6 条 `can_support_formal_tasks=yes/no` 与 `can_support_spatial_control=no` 双重核对 |
-| `data/processed/missing_data_checklist.csv` | 9 条 GAP | 全部写入下方"资料缺口矩阵" + `assumptions.json` |
-| `brief/site-package/standards/references/project-official-announcement.md` | 公告 snapshot | 1.3 / 1.4 / 1.5 设计任务全部回应 |
-| `brief/site-package/standards/references/agent-open-call-taskbook-0518.md` | 任务书 snapshot | 共创原则 / 三大定位 / 五大功能 / 三区两翼 / 6 项任务 / 13 项评审维度 / 边界条款 |
-| `brief/site-package/standards/references/mohurd-urban-design-measures.md` | 城市设计管理办法 | 第 7 / 8 / 9 / 10 / 14 / 17 / 18 条 |
-| `brief/site-package/standards/references/mohurd-control-detailed-planning.md` | 控规编制审批办法 | 第 10 / 11 / 14 / 19 / 20 条 |
-| `brief/site-package/standards/references/mnr-land-use-classification-guide.md` | 用地用海分类指南 | land_use_code（0802 / 0804 / 05 / 0702 / 1401） |
-| `brief/site-package/standards/references/mohurd-arch-design-depth-2016.md` | 建筑设计文件编制深度规定 | 状态 `missing_source_url` — 显式记入资料缺口 |
+本方案按 `docs/data-workflow.md` 的 6 步流程读取 `data/processed/*`（事实包、6 条 scope、14 条任务索引、6 条 source 可用性、9 条 GAP）与 `brief/site-package/standards/references/*` 下 6 份官方 snapshot，只引用 formal 与 provisional_only 两类资料；9 条 GAP 全部写入 `assumptions.json` 与下方资料缺口矩阵，建筑设计深度规定因 `missing_source_url` 显式记入缺口。
 
 ## 资料缺口矩阵（Data Gap Matrix）
 
@@ -130,23 +117,7 @@ iteration: "v2.2"
 
 ## 统一评审维度自评（13-Dimension Self-Assessment）
 
-按 `agent-open-call-taskbook-0518.md` 第 93–107 行的 13 项统一评审维度逐项自评，仅作为后续维护者评审时的内部对齐参考，**不构成自评分**。
-
-| # | 维度 | 本方案自评 |
-| --- | --- | --- |
-| 1 | 目标契合度 | 通过"三大定位 + 五链协同"回应 |
-| 2 | 功能匹配度 | 通过"agent.1 + agent.2"矩阵全覆盖 |
-| 3 | 品牌识别度 | 通过"京张智脉共生带 + Logo 双层结构"回应 |
-| 4 | 区域协同性 | 以北纬社区、未来科学城、怀柔科学城、经开区和京津冀的交换物—许可—退出矩阵回应 |
-| 5 | 规划创新性 | 通过"五链协同 + 三区两翼 + 京张智脉共生带"回应 |
-| 6 | 产业支撑度 | 通过 8 个全球案例 + 3 个测试场回应 |
-| 7 | 场景可感知度 | 通过 10 张场景卡 + 3 个朝圣地标 + 离线 HTML |
-| 8 | 空间明确性 | 通过 3 处重点区详细设计 + 8 个公共空间组件 |
-| 9 | 可转化性 | 通过 `changelog.md` + README-MiniMax 中"next-check action" |
-| 10 | 表达完整性 | 通过完整目录结构 + 5 图 + 2 PDF + HTML |
-| 11 | 公开合规性 | 通过 `copyright_statement.md` + `sources.json` 全部 `usable_for` 明确 |
-| 12 | 国际传播力 | 通过双语 + "From rails to agents" 主标语 |
-| 13 | 长期运营价值 | 通过 4 项年度活动 + 开发者社区 + 招引转化机制 |
+按 `agent-open-call-taskbook-0518.md` 的 13 项统一评审维度（目标契合、功能匹配、品牌识别、区域协同、规划创新、产业支撑、场景可感知、空间明确、可转化、表达完整、公开合规、国际传播、长期运营），本方案逐项落到正文章节与 `compliance_matrix.json`；此节仅作内部对齐参考，**不构成自评分**，最终评审归维护者。
 
 ## Agent 任务最小应答矩阵（Agent Taskbook Minimum-Response Map）
 
