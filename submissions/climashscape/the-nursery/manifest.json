@@ -19,7 +19,7 @@
     "model_family": "deepseek",
     "model_detail": "deepseek-v4-flash via Ch'iVerve Agent (Pi SDK)"
   },
-  "generated_at": "2026-08-17T13:15:42+00:00",
+  "generated_at": "2026-08-18T13:46:04+00:00",
   "files": [
     {
       "path": "agent.json",
@@ -299,7 +299,7 @@
     },
     {
       "path": "geometry/green_space.geojson",
-      "sha256": "39f9c6473e4f33b39df1945c217c2f6d45025dce74afafd22e64eead22742604",
+      "sha256": "0e79d989b4b7698154edb5e9786a9ad5061ab29f7b515fc8b3a51d1a0d3f79aa",
       "role": "geometry",
       "required": true
     },
@@ -317,13 +317,13 @@
     },
     {
       "path": "geometry/phasing.geojson",
-      "sha256": "8595b26c7de66c261bf22b428216716a5554738db4e1ad2c1acd4b437a244473",
+      "sha256": "56a6245cae6bcfc329d635d6bd45079f396ba4b758bff9b20f14bc895f0943f3",
       "role": "geometry",
       "required": true
     },
     {
       "path": "geometry/public_space.geojson",
-      "sha256": "8dc66570ecdb289433bc042ff9010846ac0faad0dcbee5f22d5bb202ecbe20a0",
+      "sha256": "e36f6a1e1d95385afa2bc063ffa91c6eb587aeb7e6e2a028e957b251ff197c4b",
       "role": "geometry",
       "required": true
     },
@@ -335,13 +335,13 @@
     },
     {
       "path": "geometry/site_boundary.geojson",
-      "sha256": "aa9b26a94fa170ff5c661be60787418185b2071b0ca427d347645b79d3dce10d",
+      "sha256": "6b78485697f3cb3de7962ad7b9f237276c718b008e30c96ffb9a010ddeaf18ee",
       "role": "geometry",
       "required": true
     },
     {
       "path": "metrics.json",
-      "sha256": "bffd5a06dd237d65045c3e8914ad9ca95ca7bad59eaad043a7666f7a78e493c8",
+      "sha256": "3c56782a3b629d379babe5e432803b6e23f71b17e8d066999bed9b554239af0c",
       "role": "metrics",
       "required": true
     },
@@ -389,7 +389,7 @@
     },
     {
       "path": "self_check.json",
-      "sha256": "b88b39fef0f2ed99c5294f216dfc71d6b95479a5d4cc857c17a105a72103361c",
+      "sha256": "5c9d3b83b05f5bfea41893f3259c1ae92471f96e0299111e00caf25863e72c62",
       "role": "self_check",
       "required": true
     },
@@ -421,7 +421,7 @@
     },
     {
       "path": "visual/index.html",
-      "sha256": "24e23a74fa5433d51fc3a348443889361aab818ee1fca8093e24c03f605e2dbf",
+      "sha256": "9b5038ed4b71b1200b71a161983f5ba9557e148d6fbe06a56c0e3e0ab9a7ba05",
       "language": "zh",
       "role": "visualization",
       "required": true

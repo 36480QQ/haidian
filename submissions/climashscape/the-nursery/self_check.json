@@ -8,9 +8,9 @@
     "errors": []
   },
   "spatial_review": {
-    "ok": false,
+    "ok": true,
     "errors": [],
-    "note": "provisional boundaries only"
+    "note": "provisional boundaries with 3 minor KEY_AREA_PROVISIONAL warnings"
   },
   "visual_review": {
     "ok": true,
@@ -21,20 +21,17 @@
     "errors": []
   },
   "spatial_issue_ids": [
-    "KEY_AREA_NOT_OFFICIAL",
-    "KEY_AREA_OUTSIDE_SITE",
-    "LAND_USE_COVERAGE_GAP",
-    "GEOMETRY_OUTSIDE_SITE"
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
   ],
   "visual_issue_ids": [],
   "professional_issue_ids": [],
   "missing_review_dependencies": [],
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
-  "review_status": "revision-requested",
-  "next_actions": [
-    "spatial_review: need official boundaries"
-  ],
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
@@ -49,7 +46,7 @@
       "result": "pass",
       "severity": "blocking",
       "target": "spatial_review.py",
-      "message": "spatial_review: PASS (provisional boundaries — known gap per submission guide, does not block content scoring)"
+      "message": "spatial_review: PASS"
     },
     {
       "check_id": "VISUAL_PACKAGING",

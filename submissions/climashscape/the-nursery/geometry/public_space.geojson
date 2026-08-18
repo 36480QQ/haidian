@@ -3,129 +3,123 @@
   "features": [
     {
       "type": "Feature",
+      "id": "feature_0",
       "properties": {
-        "name_zh": "铁轨之树(众智园南入口)",
-        "status": "concept",
         "id": "public_space_0",
         "layer": "PUBLIC_SPACE",
+        "name_zh": "年轮广场",
         "source_type": "agent_generated_design",
-        "confidence": "unknown",
+        "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          116.3485,
-          40.010275
+          [
+            [
+              116.34685,
+              40.019525
+            ],
+            [
+              116.35015,
+              40.019525
+            ],
+            [
+              116.35015,
+              40.013975
+            ],
+            [
+              116.34685,
+              40.013975
+            ],
+            [
+              116.34685,
+              40.019525
+            ]
+          ]
         ]
-      },
-      "id": "feature_0"
+      }
     },
     {
       "type": "Feature",
+      "id": "feature_1",
       "properties": {
-        "name_zh": "年轮广场(治理中枢)",
-        "status": "concept",
         "id": "public_space_1",
         "layer": "PUBLIC_SPACE",
+        "name_zh": "遮荫凉棚",
         "source_type": "agent_generated_design",
-        "confidence": "unknown",
+        "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          116.348,
-          40.002625
+          [
+            [
+              116.34585,
+              39.99
+            ],
+            [
+              116.34915,
+              39.99
+            ],
+            [
+              116.34915,
+              39.987
+            ],
+            [
+              116.34585,
+              39.987
+            ],
+            [
+              116.34585,
+              39.99
+            ]
+          ]
         ]
-      },
-      "id": "feature_1"
+      }
     },
     {
       "type": "Feature",
+      "id": "feature_2",
       "properties": {
-        "name_zh": "守护者塔楼-众智园",
-        "status": "concept",
         "id": "public_space_2",
         "layer": "PUBLIC_SPACE",
+        "name_zh": "果篮广场",
         "source_type": "agent_generated_design",
-        "confidence": "unknown",
+        "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          116.3485,
-          40.01675
+          [
+            [
+              116.34655000000001,
+              39.947796000000004
+            ],
+            [
+              116.35045,
+              39.947796000000004
+            ],
+            [
+              116.35045,
+              39.94604400000001
+            ],
+            [
+              116.34655000000001,
+              39.94604400000001
+            ],
+            [
+              116.34655000000001,
+              39.947796000000004
+            ]
+          ]
         ]
-      },
-      "id": "feature_2"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name_zh": "守护者塔楼-AI原点",
-        "status": "concept",
-        "id": "public_space_3",
-        "layer": "PUBLIC_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "unknown",
-        "geometry_role": "provisional_constraint",
-        "official_boundary": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.3475,
-          39.9885
-        ]
-      },
-      "id": "feature_3"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name_zh": "守护者塔楼-大钟寺",
-        "status": "concept",
-        "id": "public_space_4",
-        "layer": "PUBLIC_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "unknown",
-        "geometry_role": "provisional_constraint",
-        "official_boundary": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.3485,
-          39.946920000000006
-        ]
-      },
-      "id": "feature_4"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name_zh": "清华园站文化节点(人字纹致敬)",
-        "status": "concept",
-        "id": "public_space_5",
-        "layer": "PUBLIC_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "unknown",
-        "geometry_role": "provisional_constraint",
-        "official_boundary": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.35549999999999,
-          39.9885
-        ]
-      },
-      "id": "feature_5"
+      }
     }
   ]
 }
