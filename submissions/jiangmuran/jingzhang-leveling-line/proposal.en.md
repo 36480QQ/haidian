@@ -1475,6 +1475,8 @@ Distance legibility: A0 is 841 mm across a 1600-unit canvas; by the signage conv
 
 **The script checks what is computable and does not replace human testing.** Screen-reader listening, reading by people with colour vision deficiency, and on-site legibility from a printed A0 must be done by people; this proposal does not claim to have done them, only that the computable part has been computed and can be re-run.
 
+**One of those is now computed.** The seven land-use fills, measured through a Vienot 1999 dichromacy simulation and CIEDE2000, are at least 10.0 apart in all four vision types; culture and research land were **2.9** apart for a protanope. **A simulation is not a person**: the limit above is narrowed, not discharged. The closest pair in each vision type is recorded in `self_check.json`.
+
 ### Recomputation discipline
 
 | Trigger | Scope of recomputation |
