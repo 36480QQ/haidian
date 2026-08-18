@@ -1276,6 +1276,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M136",
+      "gate": "attribution_kind_qa.py",
+      "target": "build_matrix_evidence.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把归属说明改回那句一刀切的话：「这是一份公开可得的文件，本包没有取得它」。**它对 `key_area_count` 是假的**——那是一项 class 1 指标，**有值（3）**，既不是文件，本包也没有「没取到」它。",
+      "what_en": "Restore the one-size sentence: this is a publicly available document that this package did not obtain. **It is false for key_area_count** - a class-1 metric with a value of 3, which is neither a document nor something this package failed to obtain.",
+      "why_zh": "这句话是为 MOHURD-ARCH-DESIGN-DEPTH-2016 写的——一份本包确实没打开的文件——然后被原样用在 `limited_by` 点到的任何东西上。**模板被复用到它装不下的槽位里，就会生成一句读起来通顺的假话**，而 `design_depth_matrix.json` 由评审整份读到。真正的受限原因也不是「没有值」，是**那个值算自临时替代几何**。",
+      "why_en": "The sentence was written for MOHURD-ARCH-DESIGN-DEPTH-2016, a document this package genuinely never opened, and then reused verbatim for whatever limited_by named. **A template reused in a slot it does not fit produces a fluent falsehood**, and design_depth_matrix.json is read whole by the reviewer. The real limitation is not that the value is missing but that it is computed from provisional stand-in geometry."
+    },
+    {
       "id": "M128",
       "gate": "sheet_literal_qa.py",
       "target": "fig_routes.py",
@@ -1627,12 +1640,13 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 133,
+  "caught": 134,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
     "announcement_terms_qa.py",
     "assumption_refs_qa.py",
+    "attribution_kind_qa.py",
     "benchmark_chain_qa.py",
     "block_type_qa.py",
     "boundary_state_qa.py",
@@ -1763,6 +1777,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 94 道闸门，其中 91 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 94 gates, 91 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 95 道闸门，其中 92 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 95 gates, 92 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
