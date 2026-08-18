@@ -2,7 +2,9 @@
   "schema_version": "0.1.0",
   "document_id": "people-first-research-v0.1",
   "date": "2026-08-17",
-  "status": "research_and_collection_plan",
+  "status": "remote_open_data_acquisition_in_progress",
+  "research_mode": "remote_only_participant_with_future_local_validation",
+  "field_evidence_policy": "The participant cannot conduct on-site fieldwork. Licensed public data may establish network, morphology, service and land-cover proxies, but it must not be represented as observed public life, perceived comfort, accessibility compliance or verified ground-floor activity. Those claims remain unknown until a local professional or cleared community partner completes the declared protocol.",
   "authority_boundary": "This file defines design methods, candidate indicators and data-collection protocols. It is not existing-conditions evidence, a statutory planning control, an engineering conclusion or an implementation approval.",
   "design_thesis": {
     "name_zh": "三重人本检验",
@@ -124,7 +126,8 @@
         "id": "SC-01",
         "name": "open_source_release_hall",
         "spatial_carrier": "beijing_ai_origin_community",
-        "people_first_gate": ["diversity_test", "public_life_test"],
+        "target_users": ["students", "researchers", "developers", "residents", "visitors", "people_with_disabilities"],
+        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Authorized event schedule, step-free route audit, aggregate attendance and day-evening use baseline.",
         "human_fallback": "Staffed registration, information and presentation support without mandatory app or facial recognition.",
         "pause_trigger": "Pause public trials when access, crowding, safety review, content rights or manual service cannot be maintained.",
@@ -135,7 +138,8 @@
         "id": "SC-02",
         "name": "safety_governance_sandbox",
         "spatial_carrier": "zhongzhiyuan_ai_acceleration_area",
-        "people_first_gate": ["diversity_test", "public_life_test"],
+        "target_users": ["researchers", "startups", "regulators", "affected_residents", "civil_society_reviewers"],
+        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Declared test purpose, authorized test data, risk classification, audit log and affected-user notice.",
         "human_fallback": "Qualified reviewer controls admission, interpretation and incident response.",
         "pause_trigger": "Stop on scope drift, unapproved data, unresolved harmful output, failed audit logging or complaint escalation.",
@@ -146,7 +150,8 @@
         "id": "SC-03",
         "name": "edge_compute_service_point",
         "spatial_carrier": "overall_design_area_service_nodes",
-        "people_first_gate": ["public_life_test", "low_car_test"],
+        "target_users": ["residents", "workers", "older_adults", "people_with_disabilities", "service_staff"],
+        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Energy capacity, heat and noise review, accessible service route, data inventory and maintenance plan.",
         "human_fallback": "In-person or telephone service channel for essential public services.",
         "pause_trigger": "Stop public service when security, energy, thermal, noise, accessibility or maintenance limits are exceeded.",
@@ -157,7 +162,8 @@
         "id": "SC-04",
         "name": "ai_assisted_slow_mobility_navigation",
         "spatial_carrier": "jingzhang_public_life_network",
-        "people_first_gate": ["public_life_test", "low_car_test"],
+        "target_users": ["pedestrians", "cyclists", "wheelchair_users", "caregivers", "visitors"],
+        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Verified walk-cycle graph, crossings, barriers, step-free routes and time-stamped aggregate counts.",
         "human_fallback": "Static high-contrast and tactile wayfinding plus staffed assistance at key events.",
         "pause_trigger": "Withdraw routing when closures, accessibility status, positioning accuracy or emergency detours are stale or unsafe.",
@@ -168,6 +174,7 @@
         "id": "SC-05",
         "name": "dazhongsi_international_demo_living_room",
         "spatial_carrier": "dazhongsi_ai_industry_cluster",
+        "target_users": ["local_residents", "station_users", "entrepreneurs", "international_visitors", "service_workers"],
         "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Station access, event timetable, public-private space boundary, rights clearance and day-evening public-life baseline.",
         "human_fallback": "On-site multilingual reception and non-digital booking channel.",
@@ -179,7 +186,8 @@
         "id": "SC-06",
         "name": "qinghe_low_car_innovation_edge",
         "spatial_carrier": "zhongzhiyuan_qinghe_edge",
-        "people_first_gate": ["public_life_test", "low_car_test"],
+        "target_users": ["residents", "workers", "cyclists", "children_and_caregivers", "older_adults"],
+        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Flood and ecological controls, path continuity, entrances, shade, seating, cycle access and staying observations.",
         "human_fallback": "Conventional environmental signage, maintenance contact and accessible detour.",
         "pause_trigger": "Close affected segments for flood, ecological, heat, maintenance or accessibility hazards.",
@@ -190,6 +198,7 @@
         "id": "SC-07",
         "name": "campus_neighborhood_transfer_street",
         "spatial_carrier": "beijing_ai_origin_community",
+        "target_users": ["students", "founders", "residents", "small_operators", "legal_and_ip_service_users"],
         "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Ground-floor uses, rents or affordability proxies, opening hours, entrances, walking barriers and authorized service demand.",
         "human_fallback": "Walk-in legal, intellectual-property and enterprise-service desk.",
@@ -201,7 +210,8 @@
         "id": "SC-08",
         "name": "data_governance_meeting_room",
         "spatial_carrier": "dazhongsi_ai_industry_cluster",
-        "people_first_gate": ["diversity_test", "public_life_test"],
+        "target_users": ["residents", "developers", "public_officials", "researchers", "rights_advocates"],
+        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Dataset provenance, legal basis, permission scope, retention, audit and public explanation for every demonstration.",
         "human_fallback": "Qualified staff explain decisions and accept correction or complaint requests.",
         "pause_trigger": "Stop on uncertain provenance, excessive collection, re-identification risk, failed deletion or misleading claims.",
@@ -212,6 +222,7 @@
         "id": "SC-09",
         "name": "inclusive_ai_daily_service_street",
         "spatial_carrier": "community_commercial_interfaces_to_be_verified",
+        "target_users": ["older_adults", "people_with_disabilities", "caregivers", "residents", "service_workers"],
         "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Resident needs, existing services, opening hours, accessible routes, non-digital demand and sector-specific authorization.",
         "human_fallback": "Parallel staffed service for medical, education, legal and daily-life requests where applicable.",
@@ -223,6 +234,7 @@
         "id": "SC-10",
         "name": "global_ai_public_life_route",
         "spatial_carrier": "three_key_areas_and_jingzhang_network_to_be_verified",
+        "target_users": ["residents", "visitors", "international_participants", "families", "people_with_disabilities"],
         "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
         "minimum_evidence": "Continuous verified route, venue permissions, heritage controls, accessible alternatives, transit plan and event capacity.",
         "human_fallback": "Printed and tactile route information, staffed checkpoints and non-digital participation.",
@@ -273,6 +285,124 @@
         "heritage controls, water and green lines, utilities, fire, flood, underground-space and energy capacity",
         "official transport survey, OD, ridership, parking and mode-share data"
       ]
+    }
+  ],
+  "remote_open_data_protocol": {
+    "discovery_extent": {
+      "status": "provisional_bbox_for_search_and_clipping_only",
+      "crs": "EPSG:4326",
+      "west": 116.3397,
+      "south": 39.939,
+      "east": 116.3553,
+      "north": 40.0265,
+      "limitation": "The bbox and submitted provisional polygons are not official planning boundaries, road redlines or parcel controls."
+    },
+    "evidence_classes": [
+      {
+        "class": "network_and_access_proxy",
+        "may_support": ["walkable network continuity", "intersection density", "route directness", "station entrance and stop access", "crossing and barrier screening"],
+        "cannot_prove": ["legal public access", "step-free compliance", "current opening status", "traffic safety performance"]
+      },
+      {
+        "class": "morphology_and_service_proxy",
+        "may_support": ["building grain", "block permeability screening", "mapped POI diversity", "mapped opening-hours coverage", "green and water cover screening"],
+        "cannot_prove": ["approved land use", "building age", "ownership", "vacancy", "rent affordability", "active frontage"]
+      },
+      {
+        "class": "public_life_observation",
+        "may_support": ["selection of future observation locations and time windows"],
+        "cannot_prove": ["pedestrian or cycle flows", "staying activity", "comfort", "social interaction", "perceived safety"]
+      }
+    ],
+    "metric_status_rule": "A metric may become known only when the downloaded artifact, license, raw SHA-256, query, CRS, clipping method, completeness limitation and calculation are recorded. Gehl-style observed public-life metrics remain unknown without a time-stamped local survey.",
+    "future_local_validation": "A local planning professional, university studio or cleared community partner may execute the field protocol later. Their aggregate observations must be separately attributed and must not contain names, faces, device identifiers or individual trajectories."
+  },
+  "open_data_candidates": [
+    {
+      "id": "OSM-OVERPASS",
+      "publisher": "OpenStreetMap contributors",
+      "url": "https://overpass-api.de/",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "preferred_formats": ["Overpass JSON", "derived GeoJSON"],
+      "status": "partial_snapshot_acquired_not_integrated_as_existing_conditions",
+      "intended_layers": ["walk_cycle_network", "crossings", "barriers", "buildings", "station_entrances", "bus_stops", "poi", "green_water"],
+      "formal_boundary": "Background and reproducible proxy analysis only; never an official boundary, road redline, ownership or statutory control.",
+      "retrieval_record": {
+        "cache_status": "local_reproducible_research_cache_not_submission_geometry",
+        "endpoint": "https://overpass-api.de/api/interpreter",
+        "retrieved_at_utc_range": "2026-08-17T13:22:39Z_to_2026-08-17T13:22:51Z",
+        "available_layers": [
+          {
+            "layer": "mobility",
+            "raw_sha256": "2b6579850c51f6e6cd0c4a7b58d12d1fb85ac556f1b877608049a0e8ceb1f88d",
+            "query_sha256": "06e09ba2dafb16c9aa7e7137dad5574f46ae3d980d71d121cfdc59b32858fe3d",
+            "raw_elements": 4216,
+            "kept_after_provisional_clip": 3804
+          },
+          {
+            "layer": "buildings",
+            "raw_sha256": "8e33759f1489e10f934e3ce17da66cd4d0c03c01189c9b2c44b9d4b0491ad5c4",
+            "query_sha256": "5dd966b2a52f6dad40ee69cea99789027d71de2d885e053f48bbe41e627fcad4",
+            "raw_elements": 1941,
+            "kept_after_provisional_clip": 1730
+          }
+        ],
+        "unavailable_layers": [
+          {
+            "layer": "poi",
+            "status": "invalid_empty_file_after_three_http_429_responses",
+            "metric_policy": "activity_mix_proxy_remains_unknown"
+          },
+          {
+            "layer": "green_water",
+            "status": "missing_not_downloaded",
+            "metric_policy": "blue_green_proxy_remains_unknown"
+          }
+        ],
+        "integration_policy": "Do not replace submitted conceptual geometry or publish raw-derived target values until relation/way duplication, feature completeness, a second source cross-check and professional review are complete."
+      }
+    },
+    {
+      "id": "BBBIKE-OSM-EXTRACT",
+      "publisher": "BBBike and OpenStreetMap contributors",
+      "url": "https://extract.bbbike.org/",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "preferred_formats": ["GeoJSON", "Esri Shapefile"],
+      "status": "manual_fallback_candidate",
+      "intended_layers": ["custom_bbox_osm_extract"],
+      "formal_boundary": "Use only if the generated extract preserves OSM attribution and query extent metadata."
+    },
+    {
+      "id": "BEIJING-OPEN-DATA",
+      "publisher": "Beijing Municipal Government",
+      "url": "https://data.beijing.gov.cn/",
+      "license": "terms_review_required_per_dataset",
+      "preferred_formats": ["API", "CSV", "GeoJSON or Shapefile when explicitly offered"],
+      "status": "candidate_needs_dataset_and_terms_review",
+      "intended_layers": ["public_transport", "public_services", "statistics", "parks_and_facilities"],
+      "formal_boundary": "Public reachability alone does not establish redistribution rights or formal planning authority."
+    },
+    {
+      "id": "ESA-WORLDCOVER",
+      "publisher": "European Space Agency",
+      "url": "https://esa-worldcover.org/en/data-access",
+      "license": "CC BY 4.0; verify dataset release terms at retrieval",
+      "preferred_formats": ["Cloud Optimized GeoTIFF"],
+      "status": "candidate_for_land_cover_cross_check",
+      "intended_layers": ["tree_cover", "grass", "built_up", "water"],
+      "formal_boundary": "Land-cover cross-check only; not a green-line, flood-line or heritage-control source."
+    },
+    {
+      "id": "COPERNICUS-SENTINEL-2",
+      "publisher": "European Union Copernicus Programme",
+      "url": "https://dataspace.copernicus.eu/",
+      "license": "Copernicus data terms; verify product and attribution at retrieval",
+      "preferred_formats": ["STAC metadata", "GeoTIFF or SAFE imagery"],
+      "status": "candidate_for_vegetation_and_surface_cross_check",
+      "intended_layers": ["seasonal_vegetation", "surface_water", "land_cover_change_screening"],
+      "formal_boundary": "Remote-sensing interpretation only; not a planning, ownership or engineering conclusion."
     }
   ],
   "data_acquisition_backlog": [
@@ -340,6 +470,8 @@
     "secret maps or non-public planning material"
   ],
   "field_protocol": {
+    "execution_status": "not_executed_participant_is_remote",
+    "role_in_submission": "future independent validation protocol; not current evidence",
     "minimum_locations": 12,
     "time_windows": [
       "weekday_morning_peak",

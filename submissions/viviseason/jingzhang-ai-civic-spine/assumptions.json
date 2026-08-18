@@ -23,7 +23,7 @@
       "id": "A-PUBLIC-LIFE-001",
       "status": "pending_field_observation",
       "statement": "No anonymized, time-stamped public-life survey has yet measured pedestrian and cycle flow, staying activities, seating use, active frontages, shade, accessibility or crossing delay.",
-      "impact": "The proposal may use Gehl's framework to define a survey and design questions, but it must not claim observed vitality, safety, comfort or public-space performance before field evidence is collected."
+      "impact": "The participant cannot conduct on-site fieldwork. The proposal may use Gehl's framework and licensed open data to select future observation locations and diagnose network or land-cover proxies, but it must not claim observed vitality, safety, comfort or public-space performance before a local professional or cleared community partner completes the declared protocol."
     },
     {
       "id": "A-URBAN-DIVERSITY-001",
@@ -36,6 +36,12 @@
       "status": "pending_license_and_quality_review",
       "statement": "OSM, remote-sensing, open-statistics and other external datasets are candidate background sources only until publisher, retrieval date, license, coverage, coordinate reference system, transformation and limitations are recorded.",
       "impact": "External data may support discovery and reproducible analysis after review, but cannot be promoted into official boundaries, road redlines, statutory controls, ownership or implementation facts."
+    },
+    {
+      "id": "A-REMOTE-RESEARCH-001",
+      "status": "declared_method_boundary",
+      "statement": "This submission is being developed remotely without participant field access. Network, morphology, mapped-service and land-cover evidence will therefore be separated from observed public-life evidence.",
+      "impact": "Open-data proxy metrics may become known only with a reproducible artifact, license, query, raw SHA-256, CRS, transformation and limitation record. Public-life counts, perceived comfort, active frontage, accessibility compliance and current access conditions remain unknown until independently observed on site."
     }
   ]
 }
