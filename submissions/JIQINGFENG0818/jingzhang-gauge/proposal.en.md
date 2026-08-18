@@ -46,6 +46,22 @@ This proposal strictly separates formal-ready, background-only, and provisional-
 - `standard_matrix.json` responds to the mandatory professional standards [standard:MOHURD-URBAN-DESIGN-MEASURES], [standard:MOHURD-CONTROL-DETAILED-PLANNING], [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 - `design_depth_matrix.json` marks the completion status of each design-depth item [depth:land_use_layout]
 
+### Deliverable modalities and inventory
+
+The agent taskbook requires the result to "form a complete deliverable through text, images, diagrams, tables, scenario cards, video/sound, three-dimensional or interactive web pages that humans can directly understand" [source:AGENT-TASKBOOK]. The deliverable, specification, and verification route for each modality in this package are listed below. Every file ships with the package and opens offline:
+
+| Modality | Deliverable | Specification and content | How to verify |
+|---|---|---|---|
+| Text | `proposal.md` / `proposal.en.md` | Full bilingual text answering agent.1–agent.6 item by item | Read directly |
+| Tables | 18 tables in the body text | Function-mechanism mapping, scenario cards, metric recalculation, risk handling, compliance correspondence | Readable in the body text |
+| Images and diagrams | Five bilingual PNG pairs under `assets/figures/` | Evidence chain, land-use structure, key areas, mobility and blue-green, metric recalculation | View directly |
+| Drawings | `drawings/a0-boards.pdf`, `drawings/a3-booklet.pdf` (each with an English counterpart) | A0 boards and A3 booklet | Open in a PDF reader |
+| Scenario cards | Section "AI scenario cards (agent.3, 16 cards)" | Each card carries its spatial carrier, maturity tier, and human-review boundary | Readable in the body text |
+| Video | `assets/media/gauge-mechanism.mp4` | 55 seconds, 1280×720, 24 fps, H.264, **silent**; six segments explaining the core mechanism, every frame drawn programmatically from the geometry and metrics submitted in this package | `gauge-mechanism.vtt` captions and the `gauge-mechanism.md` full transcript ship alongside, so all information remains obtainable without sound |
+| Three-dimensional and interactive web page | The closing "3D tour" section of `visual/index.html`, driven by `visual/assets/gauge-tour.js` (386 lines) and `gauge-tour-data.js` | A hand-written WebGL 1 renderer loading 1,070 geometry features across the 9 layers of this package; arrow keys rotate and zoom, Shift+Up/Down adjusts pitch, number keys 0–3 switch viewpoints, Space orbits, R resets, and the canvas carries a keyboard-accessible label | Open `visual/index.html` locally in a browser and scroll to the closing section; no remote resource is loaded at runtime |
+
+The media files and the 3D tour scripts above are registered with their paths and roles in `manifest.json` and can be opened directly within the repository.
+
 ### Data gaps (disclosed here explicitly)
 
 The organiser has not yet released the official red line or precise key-area polygons. In `planning_limits.json`, five official control indicators — floor area ratio, building height, building density, green ratio, and setback — all carry the status `missing` [source:SITE-PACKAGE]. This proposal **does not fill them in**; they remain `unknown`, and the recalculation scope after official data becomes available is set out in the metrics chapter.
@@ -533,6 +549,13 @@ None of the sixteen scenario cards depends on individual identity recognition. E
 ### Copyright
 
 The text, geometry, figures, and visualisation in this proposal are original outputs. No uncleared material, unauthorised likeness, trademark, or copyrighted image is used. `visual/index.html` is fully offline and loads no remote script, stylesheet, font, media, or map tile.
+
+The rights status of each modality asset is stated item by item below:
+
+- **Video**: `assets/media/gauge-mechanism.mp4` is produced by this proposal. Every frame is drawn programmatically from the geometry and metrics submitted in this package; no third-party footage, stock-library shot, aerial photograph, or satellite imagery is used. The video is silent, containing no speech, music, or sound effects, so no soundtrack, sound-library, or voice-over licence is involved. `assets/media/gauge-mechanism.md` records its segment-by-segment content and rights note, and `assets/media/gauge-mechanism.vtt` supplies the full captions.
+- **3D tour code**: `visual/assets/gauge-tour.js` (386 lines) is a hand-written WebGL 1 renderer with no third-party runtime library such as Three.js; `visual/assets/gauge-tour-data.js` is a static export of this package's own geometry. Neither issues a network request at runtime.
+- **Fonts**: neither `visual/index.html` nor `report/proposal.html` embeds a font file or declares `@font-face`; both only declare an ordered system font stack, so no font file is distributed or licensed.
+- **Cover and posters**: `assets/media/cover.webp` (1600×900), `assets/media/gauge-mechanism.webp` (1280×720), and `assets/media/gauge-tour-still.webp` (1280×720, a render of the 3D tour at its default overview view) are all exports of the original content above, with the same rights status.
 
 ## References
 
