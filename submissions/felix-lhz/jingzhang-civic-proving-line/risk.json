@@ -1,7 +1,7 @@
 {
   "$schema": "https://example.org/risk-register.schema.json",
   "version": 1,
-  "summary": "V7 把 S7 的公共十字、触觉引导、路缘、常规接驳、可逆试验湾、证据门廊、蓝绿边界、岗位、双急停、消防、存储和撤场写入同一组可追踪对象；正式报价、现场成效与采用决定保持 unknown。",
+  "summary": "V8 保持公共基线、人工决定和可逆退出，同时把三座回执地标、四季活动和90天试点标为概念协议；公开资料不支持的站口、建筑、机构承诺、报价和现场绩效继续待补。",
   "dimensions": [
     {
       "id": "spatial_dispute",
@@ -87,5 +87,6 @@
   ],
   "zero_tolerance_rule": "baseline_no_regression + safety_event_zero_tolerance + committee_threshold_after_E2",
   "v6_flagship_rule": "baseline_route_continuous_in_OPEN_TRIAL_PAUSE_RETIRE + zero_tolerance_safety + human_authority",
-  "v7_flagship_rule": "public_cross_continuous_in_OPEN_TRIAL_PAUSE_RETIRE + reversible_trial_bay + staffed_evidence_porch + human_authority"
+  "v7_flagship_rule": "public_cross_continuous_in_OPEN_TRIAL_PAUSE_RETIRE + reversible_trial_bay + staffed_evidence_porch + human_authority",
+  "v8_operating_rule": "baseline_first + landmark_as_public_interface + seasonal_entry_gate + role_separation + public_ledger + adopt_revise_stop"
 }

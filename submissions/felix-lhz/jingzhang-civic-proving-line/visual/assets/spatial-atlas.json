@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.5.0",
+  "schema_version": "1.6.0",
   "dataset_id": "jingzhang-two-answers-spatial-atlas",
   "status": "concept_proposal_under_provisional_boundaries",
   "view_box": [
@@ -3307,7 +3307,7 @@
     "zh": "仅为临时边界下的概念性空间布局；不得作为现状测绘、法定总平面、道路红线或审批依据。",
     "en": "Conceptual spatial layout under provisional boundaries; not a survey, statutory plan, road redline or approval basis."
   },
-  "publication_version": "V7",
+  "publication_version": "V8",
   "context_dataset": "context-open-map.json",
   "spine": {
     "id": "public_baseline_spine",
@@ -3347,8 +3347,8 @@
     "status": "concept_proposal"
   },
   "subtitle": {
-    "zh": "大钟寺城市采纳站：公共十字、可逆试验湾与证据门廊",
-    "en": "Dazhongsi Civic Adoption Station: public cross, reversible trial bay and evidence porch"
+    "zh": "三站一历：三座回执地标与一个城市年度",
+    "en": "Three Stations, One Civic Year: three receipt landmarks and one operating calendar"
   },
   "hero_scenes": [
     "SCN-002",
@@ -3403,5 +3403,169 @@
       }
     }
   ],
-  "dimension_basis": "prototype_design_assumption_pending_survey"
+  "dimension_basis": "prototype_design_assumption_pending_survey",
+  "landmarks": [
+    {
+      "id": "LMK-01",
+      "station_ref": "zhongzhiyuan",
+      "title": {
+        "zh": "众智园·验真环",
+        "en": "Zhongzhiyuan Verification Ring"
+      },
+      "spatial_archetype": "complete_public_bypass_around_controlled_verification_ring",
+      "public_baseline_refs": [
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "ai_plugin_refs": [
+        "A01",
+        "A02"
+      ],
+      "evidence_interface_refs": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "heritage_story_ref": "MILE-02-EXPERIMENT",
+      "honor_display_rule": {
+        "zh": "只登记任务、复现条件、许可、失败原因、证据等级和人工决定；不设置企业广告排行榜。",
+        "en": "Record task, reproducibility conditions, licence, failure reason, evidence level and human decision only; no promotional ranking."
+      },
+      "state_views": [
+        "OPEN",
+        "TRIAL",
+        "PAUSE",
+        "RETIRE"
+      ],
+      "scene_refs": [
+        "SCN-001",
+        "SCN-002",
+        "SCN-003"
+      ],
+      "status": "concept_proposal"
+    },
+    {
+      "id": "LMK-02",
+      "station_ref": "ai_origin",
+      "title": {
+        "zh": "AI 原点·共译门",
+        "en": "AI Origin Translation Gate"
+      },
+      "spatial_archetype": "three_no_account_public_passages_through_staffed_translation_interface",
+      "public_baseline_refs": [
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "ai_plugin_refs": [
+        "A03"
+      ],
+      "evidence_interface_refs": [
+        "E01",
+        "E03"
+      ],
+      "heritage_story_ref": "MILE-03-OPEN_KNOWLEDGE",
+      "honor_display_rule": {
+        "zh": "公开问题、人工复核和可复用知识包，不展示未经复核的模型自评分。",
+        "en": "Display public questions, human review and reusable knowledge packs, never unreviewed model self-scores."
+      },
+      "state_views": [
+        "OPEN",
+        "TRIAL",
+        "PAUSE",
+        "RETIRE"
+      ],
+      "scene_refs": [
+        "SCN-004",
+        "SCN-005",
+        "SCN-006"
+      ],
+      "status": "concept_proposal"
+    },
+    {
+      "id": "LMK-03",
+      "station_ref": "dazhongsi",
+      "title": {
+        "zh": "大钟寺·回执廊",
+        "en": "Dazhongsi Receipt Porch"
+      },
+      "spatial_archetype": "continuous_public_cross_one_side_reversible_trial_bay_and_staffed_receipt_porch",
+      "public_baseline_refs": [
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "ai_plugin_refs": [
+        "A01",
+        "A03"
+      ],
+      "evidence_interface_refs": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "heritage_story_ref": "MILE-04-CIVIC_DECISION",
+      "honor_display_rule": {
+        "zh": "回执只允许 adopt、revise、stop，并记录复核日期、申诉入口和退出资产。",
+        "en": "Receipts allow adopt, revise or stop only and record review date, appeal access and exit assets."
+      },
+      "state_views": [
+        "OPEN",
+        "TRIAL",
+        "PAUSE",
+        "RETIRE"
+      ],
+      "scene_refs": [
+        "SCN-010",
+        "SCN-011",
+        "SCN-012"
+      ],
+      "status": "concept_proposal"
+    }
+  ],
+  "annual_program_refs": [
+    "YEAR-SPRING",
+    "YEAR-SUMMER",
+    "YEAR-AUTUMN",
+    "YEAR-WINTER"
+  ],
+  "heritage_mile_system": {
+    "status": "concept_proposal",
+    "graphic_language": "heritage_graphite_rail + public_green_baseline + candidate_amber_joint + evidence_blue_receipt",
+    "milestones": [
+      {
+        "id": "MILE-01-RAIL",
+        "title": {
+          "zh": "京张铁路记忆",
+          "en": "Jing-Zhang Railway Memory"
+        },
+        "evidence_source": "JINGZHANG-PARK-PLANNING-INTERPRETATION"
+      },
+      {
+        "id": "MILE-02-EXPERIMENT",
+        "title": {
+          "zh": "公开实验",
+          "en": "Open Experiment"
+        },
+        "evidence_source": "ZHONGGUANCUN-CULTURE-HISTORY"
+      },
+      {
+        "id": "MILE-03-OPEN_KNOWLEDGE",
+        "title": {
+          "zh": "开源转译",
+          "en": "Open Knowledge Translation"
+        },
+        "evidence_source": "AGENT-TASKBOOK"
+      },
+      {
+        "id": "MILE-04-CIVIC_DECISION",
+        "title": {
+          "zh": "城市采纳回执",
+          "en": "Civic Adoption Receipt"
+        },
+        "evidence_source": "agent_generated_design"
+      }
+    ]
+  }
 }
