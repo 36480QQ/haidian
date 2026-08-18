@@ -6,6 +6,48 @@
       "status": "pending_professional_confirmation",
       "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
       "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_official_redlines",
+      "statement": "本方案全部空间图层基于 brief/site-package/geometry/provisional_boundaries.geojson 的临时边界与公开资料推断绘制；三重点区面积仅与官方公布口径（众智园192.1公顷、AI原点社区104.3公顷、大钟寺72.0公顷）做±3%一致性校验，不构成勘界或权属结论。官方红线、坐标与控规图则发布前，一切边界均为概念示意。",
+      "impact": "边界任何调整都会传导至9公里主轴线位、节点选点与面积指标；正式深化必须以官方矢量数据重绘全部空间图层。"
+    },
+    {
+      "id": "A-RECALC-001",
+      "status": "standing_trigger",
+      "statement": "复算触发器清单：当官方发布或更新以下任一项——道路红线、用地红线/权属边界、文物保护范围及建设控制地带、控规图则、轨道交通及市政管线控制线——须逐项重算：(1) 图层：三重点区边界图层、9公里主轴线位、46处出入口（应答门）点位、断点连通策略图层、蓝绿空间与慢行网络图层；(2) 指标：三区面积及±3%校验值、沿线社区数与人口覆盖口径、道钉带分段长度、要素服务驿站布点数量；(3) 图纸：总平面概念图、大钟寺钟声广场四象限缝合示意、清华园车站零公里桩概念选点示意、跨五环人字天桥概念节点图、逐断点客厅连通示意、机器人/无障碍两用坡道示意。",
+      "impact": "触发后，上述图层、指标、图纸在完成复算并复核前，不得对外引用旧版数值或旧版图面。"
+    },
+    {
+      "id": "A-ROBOT-001",
+      "status": "concept_only",
+      "statement": "机器人坡道=无障碍坡道的两用通道（低速配送机器人与轮椅共用）、低速配送机器人测试动线及其在一期16.8公顷段的选址，均为概念示意，不含坡度、净宽、荷载、消防疏散、运营时段等任何工程或运营结论；须由专业团队按无障碍设计相关规范与北京市低速无人配送车辆管理相关规定深化，并以实际建成的出入口条件为准。",
+      "impact": "相关图示与文字只能以概念建议/参考方案表述，不得作为施工图设计、设备选型或运营审批依据。"
+    },
+    {
+      "id": "A-GATE-001",
+      "status": "pending_as_built",
+      "statement": "“46个出入口”为二期规划口径（来源 PARK2-PLAN-2024：沿线设置46个出入口便利市民穿行），以实际建成数量为准；“应答门×社区认领”机制的点位数量随实际建成数同步调整。",
+      "impact": "出入口数量增减只影响机制点位数，不影响机制本身成立；正文一律写“依托二期规划的46个出入口（以实际建成为准）”。"
+    },
+    {
+      "id": "A-HERITAGE-001",
+      "status": "pending_heritage_consultation",
+      "statement": "清华园车站旧址的文物保护范围与建设控制地带GIS数据缺失；“零公里桩”“应答簿”等装置一律标注为待文物部门协商的概念选点，不在可能的文保范围内做任何落位结论；3月25日开放日仅为公益纪念性质的概念建议，无企业冠名、无商业活动。“应答钟”为大钟寺古钟博物馆之侧新铸之钟的概念建议，与馆藏文物古钟仅为文化呼应关系，绝不涉及敲击或使用文物。",
+      "impact": "文保红线与协商结果明确前，站区及大钟寺相关图面只做示意；协商结果可能改变选点、体量或取消装置。"
+    },
+    {
+      "id": "A-DATA-001",
+      "status": "time_sensitive",
+      "statement": "备案大模型数量为时点口径而非实时值：正文统一采用区政府2026年2月口径122款（HD-PLAN-2026）；北京日报2026年2月中旬口径128款（BJD-AI-2026）作时点差异脚注；全市累计209款为北京市2025年统计公报口径（BJ-STAT-2025）。所谓“首都之窗4月口径130款”经核查在提示页面（海淀概况页）中未找到出处，未定位到可靠来源前正文不得引用该数字。人字天桥显示屏等一切数字展示表述为“按统计发布周期更新”，绝不写实时。",
+      "impact": "任何新备案批次或新统计口径发布后，须整体复核道钉数量、脚注与显示屏相关表述。"
+    },
+    {
+      "id": "A-CTRL-001",
+      "status": "declared",
+      "statement": "HD00-1601等街区控规已于2026年8月11日获批公布（HD-CTRL-PLAN-2026），法定空间结构为“一带一轴两心多点”。本方案定位为该已批控规之上的概念深化建议，不与法定规划并列、不替代法定规划；批复的具体控制指标未公开部分以官方发布为准，本方案不引用、不推测任何法定控制指标。",
+      "impact": "控规批复全文或图则公开后，应复核本方案空间概念与法定结构的对位表述，并在后续版本更新定位声明与相关章节。"
     }
   ]
 }
