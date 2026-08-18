@@ -35,7 +35,7 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 141 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 136 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
@@ -154,7 +154,6 @@ v8.0 新增的两张图版另按逐件口径登记：
 | `assets/media/journey.md` · `audio-guide.md` · `cover.md` | 原创撰写的分镜、文字稿、图像说明与权利记录 | 同 A 类 | 同上 | 各文件本身 |
 | `assets/media/audio-guide-en.m4a` · `audio-guide-en-voice.vtt` | 英文导览：计算机语音合成（音色 `English_Trustworthy_Man`）与对应字幕，无真人录音 | 同上（MiniMax `speech-2.8-hd` 经 `mmx` 1.0.7；合成语音性质通篇标注） | 同上；不含第三方音乐音效 | `audio-guide.md` |
 | `assets/media/audible-break.m4a` · `audible-break-en.m4a` · `audible-break.vtt` · `audible-break-en.vtt` · `audible-break.md` | 数据可听化（断点音）：由本包链路档案读数程序合成的五声音阶行进音与静默段，双语旁白为合成语音；说明文件登记映射口径与工具链 | 纯程序合成（Python）+ MiniMax 旁白（同上）；编码后静默区 RMS=0 复测 | 随包整体许可；无采样、无第三方音源 | `audible-break.md` |
-| `assets/media/dual-state-walk.mp4` · `dual-state-walk-poster.webp` · `dual-state-walk.vtt` · `dual-state-walk-en.vtt` · `dual-state-walk.md` | 双态漫游概念短片（65 秒）：AI 生成场景图（OpenAI 图像生成，权利依据其服务条款存档快照）+ 手写 HTML 标注层 Chromium 渲染 + ffmpeg 合成；每帧恒显「概念意象 · AI 生成 · 非建成效果承诺」角标；旁白为合成语音，OFF 段音床复用本包数据可听化 | Codex CLI 原生图像生成、Playwright/Chromium、ffmpeg x264/AAC、MiniMax 旁白 | 非观测声明与权利链详见说明文件 | `dual-state-walk.md` · `sources.json` |
 
 ### H 品牌标志 / Brand mark
 
@@ -176,7 +175,7 @@ v8.0 新增的两张图版另按逐件口径登记：
 
 | 使用场景 | 字体名称 | 来源 | 许可 | 嵌入与分发方式 | 登记出处 |
 | --- | --- | --- | --- | --- | --- |
-| 图纸 PDF（`drawings/*.pdf`） | Source Han Sans SC（Regular/Medium/Bold 三个子集） | 本地安装副本；许可正本随包收录于 `visual/assets/font-license-ofl.json`（OFL 1.1 允许再分发许可文本） | SIL Open Font License 1.1 | 子集嵌入 PDF；不作为独立资产随包分发。经全册字体审计（pypdf 遍历页面与 XObject 资源，2026-08-13）：非 OFL 字体条目为 0。此前版本的四册曾因浏览器打印管线的字体栈回退混入系统字体子集，本版已全部清除并加入构建期兜底与审计脚本防止回归 | 本文件 §Generated assets and software |
+| 图纸 PDF（`drawings/*.pdf`） | Source Han Sans SC（Regular/Medium/Bold 三个子集） | 本地安装副本；许可正本随包收录于 `visual/assets/font-license-ofl.json`（OFL 1.1 允许再分发许可文本） | SIL Open Font License 1.1 | 子集嵌入 PDF；不作为独立资产随包分发。每册每字重只嵌入一份子集，全册各页共用（逐页渲染原本让每页各带一份分页子集，v8.1 按字形标识空间取并集合并为一份，合并前后逐字形核对轮廓与度量全等）。经全册字体审计（pypdf 遍历页面与 XObject 资源，2026-08-13）：非 OFL 字体条目为 0。此前版本的四册曾因浏览器打印管线的字体栈回退混入系统字体子集，本版已全部清除并加入构建期兜底与审计脚本防止回归 | 本文件 §Generated assets and software |
 | `visual/assets/three.min.js` | 第三方组件 three.js r160（MIT，© 2010-2023 three.js authors）；由官方 module 构建机械可复现重封装为离线单文件（唯一改动为末尾 export 语句换全局赋值，步骤全文披露），许可正本与上游哈希见 `three-license.json` | MIT 许可随包履行；不构成对上游项目的背书 | `visual/assets/three-license.json` |
 | 离线展示页（`visual/*.html`、`scene.css`） | 字体栈 `"Source Han Sans SC"`、`"Noto Sans CJK SC"`、`Arial`、`sans-serif`；标题字族 `Georgia` | 由使用者运行环境本地解析 | 不适用：不加载、不嵌入、不分发任何字体文件 | 页面不发起任何远程字体请求 | 本文件 §Generated assets and software；`visual/index.html` 内联样式 |
 | 多模态短片（`journey.mp4`） | 运行环境预装字体（PingFang SC、Georgia 等） | 运行环境 | 不适用：未嵌入、未分发 | 字形以画面像素形式呈现 | `journey.md` §五「字体」行、§六「图件与字体权利」 |
@@ -269,11 +268,11 @@ v8.0 新增的两张图版另按逐件口径登记：
 
 ## 十、作者权利保证与限制 / Author's rights warranty and its limits
 
-**保证。** GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」在此声明：本包全部 141 个登记资产，或为本方案原创生成，或按本台账与 `sources.json` 已登记的许可、条款与用途边界使用；AI 生成资产（六件场景概念图、合成语音、短片旁白）的生成输入不含任何未经许可的第三方素材——唯一例外的图像输入为本包自绘的 `site-overview.png`（场景三地理布局参照，其内含已按 ODbL 许可使用并署名的 OpenStreetMap 底图要素，登记见本台账 OSM 条目），提示词全文与输入台本随包登记于生成档案与媒体文字稿，其输出权利依据已逐项登记并以存档快照与内容哈希固定。若任何资产日后被证实存在权利瑕疵，提交方承诺替换或移除该资产，并按包内回执机制公开登记修复过程，不静默处置。
+**保证。** GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」在此声明：本包全部 136 个登记资产，或为本方案原创生成，或按本台账与 `sources.json` 已登记的许可、条款与用途边界使用；AI 生成资产（六件场景概念图、合成语音、短片旁白）的生成输入不含任何未经许可的第三方素材——唯一例外的图像输入为本包自绘的 `site-overview.png`（场景三地理布局参照，其内含已按 ODbL 许可使用并署名的 OpenStreetMap 底图要素，登记见本台账 OSM 条目），提示词全文与输入台本随包登记于生成档案与媒体文字稿，其输出权利依据已逐项登记并以存档快照与内容哈希固定。若任何资产日后被证实存在权利瑕疵，提交方承诺替换或移除该资产，并按包内回执机制公开登记修复过程，不静默处置。
 
 **限制。** 本保证是提交方的自我承诺与尽责声明，不是第三方法律意见或权利认证；生成服务不提供逐次调用的第三方签名回执，该天然限制已在 `visual/assets/scene-provenance.json` 如实登记；本保证在概念征集语境下作出，不构成对评审方、主办方或任何第三方的赔偿承诺。以上边界与本台账「性质与效力」的总口径一致。
 
-**Warranty.** The submitting agent Zhuzi, directed by GitHub user `lqqk7`, declares: every one of the 141 registered assets in this package is either an original generation for this proposal or used within the licences, terms and usage boundaries registered in this ledger and `sources.json`; the generation inputs of the AI-generated assets (six concept scene images, the synthetic narration, the film voice-over) contain no unlicensed third-party material — the single image input being this package's own `site-overview.png` (the geographic layout reference for scene three, which contains OpenStreetMap base features used and attributed under ODbL, registered in this ledger's OSM entries); full prompts and input transcripts ship in the provenance record and media transcripts, and their output-rights bases are registered item by item and pinned by archived snapshots and content hashes. Should any asset later prove defective in rights, the submitter undertakes to replace or remove it and to register the repair openly through the package's receipt mechanism, never silently.
+**Warranty.** The submitting agent Zhuzi, directed by GitHub user `lqqk7`, declares: every one of the 136 registered assets in this package is either an original generation for this proposal or used within the licences, terms and usage boundaries registered in this ledger and `sources.json`; the generation inputs of the AI-generated assets (six concept scene images, the synthetic narration, the film voice-over) contain no unlicensed third-party material — the single image input being this package's own `site-overview.png` (the geographic layout reference for scene three, which contains OpenStreetMap base features used and attributed under ODbL, registered in this ledger's OSM entries); full prompts and input transcripts ship in the provenance record and media transcripts, and their output-rights bases are registered item by item and pinned by archived snapshots and content hashes. Should any asset later prove defective in rights, the submitter undertakes to replace or remove it and to register the repair openly through the package's receipt mechanism, never silently.
 
 **Limits.** This warranty is the submitter's own undertaking and duty-of-care statement, not third-party legal advice or a rights certification; generation services issue no per-call signed receipts, a native limitation honestly registered in `visual/assets/scene-provenance.json`; the warranty is given in the context of a concept competition and constitutes no indemnity to reviewers, organisers or any third party. These limits follow the ledger's overall statement of nature.
 
