@@ -876,7 +876,7 @@ geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和
 
 六项任务继续由 `compliance_matrix.json` 作为完整覆盖台账；上表只提供评审入口，不替代原矩阵，也不构成第七项任务 [data:visual/assets/implementation-handoff-matrix.json#agent_task_review_crosswalk]。
 
-**五项本地合同直达。** [D01—D08 官方资料替换登记](visual/assets/implementation-handoff-matrix.json#/official_data_replacement_register) · [P01—P07 建议专业类型矩阵](visual/assets/implementation-handoff-matrix.json#/professional_discipline_matrix) · [H01—H07 未提交交接包定义](visual/assets/implementation-handoff-matrix.json#/handoff_pack_definitions) · [D01—D08 替换资料模板](visual/assets/field-evidence-intake-contract.json#/replacement_packet_templates) · [关闭类别与计数](visual/assets/readiness-closure-contract.json#/closure_categories)。这些链接只定位现行合同，不证明资料已提交、专业方已接受责任或关闭已完成。
+**五项本地合同入口。** [D01—D08 官方资料替换登记](visual/assets/implementation-handoff-matrix.json)（键 `official_data_replacement_register`） · [P01—P07 建议专业类型矩阵](visual/assets/implementation-handoff-matrix.json)（键 `professional_discipline_matrix`） · [H01—H07 未提交交接包定义](visual/assets/implementation-handoff-matrix.json)（键 `handoff_pack_definitions`） · [D01—D08 替换资料模板](visual/assets/field-evidence-intake-contract.json)（键 `replacement_packet_templates`） · [关闭类别与计数](visual/assets/readiness-closure-contract.json)（键 `closure_categories`）。离线浏览器会打开对应 JSON 文件，括号内键名用于文件内搜索；这些入口不证明资料已提交、专业方已接受责任或关闭已完成。
 
 ### 八类官方数据替换：收到资料后不是“贴图”，而是触发重算
 
@@ -938,13 +938,13 @@ P01—P07 是结构化合同中的建议专业类型编号，不是当前人员�
 
 ### 类型化未知与专业否决权
 
-每个构件的 `TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE / EXACT LOCATION / INSTALLATION METHOD / RESTORATION DURATION` 当前均为 `null / unknown`。D01—D08 决定真实边界、测绘、权属、无障碍共测、交通高峰、专项约束、职责和权利；H01—H07决定责任、批准范围、基线、数据安全、停止恢复、公共同任务和独立复测。专业结论与概念冲突时，先保护普通公共权利并停止验证叠层；专业团队可以修改、拒绝或删除构件概念，不得篡改官方资料迁就图面。安装、获批详图、责任接受、现场检查、真实拆除和恢复验收均为 0；全部对象仍为 G0、临时范围和 `not_fully_cleared`。
+每个构件的 `TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE / EXACT LOCATION / INSTALLATION METHOD / RESTORATION DURATION` 当前均为 `null / unknown`。D01—D08 定义待替换的真实边界、测绘、权属、无障碍共测、交通高峰、专项约束、职责和权利资料；尚未提交的 H01—H07 交接包组织责任、批准范围、基线、数据安全、停止恢复、公共同任务和独立复测证据。未来胜任且明确接受范围的专业方，只能在该范围内复算、修改、附条件、拒绝或删除受影响的构件概念。专业证据与概念冲突时，先保护普通公共权利并停止验证叠层，不得篡改官方资料迁就图面。安装、获批详图、责任接受、现场检查、真实拆除和恢复验收均为 0；全部对象仍为 G0、临时范围和 `not_fully_cleared`。
 
 ## 后台五步可访问证据漫游
 
 15 分钟专业交接的唯一起点是 `visual/index.html#review-handoff`；`visual/index.html#accessible-review-walk` 是从该起点继续的五步工具，不是第二入口。五步依次读取：双轨京张空间语法 → 三处不可互换原型 → 非 AI 普通任务 → 故障与恢复 → 真实资料替换和专业 NO-GO。页面完全离线，无账号、扫码、远程资源或 AI 依赖；禁用 JavaScript 时五步正文、限制与证据回链仍按文档顺序完整可读。五步合同来源见 `review-walkthrough.json` [source:SOURCE-JZ-REVIEW-WALK-R14]。键盘增强只提供直接定位、前后步和 Home/End 导航，打印模式展开全部内容；这些是可访问性意图与评审呈现，不是 WCAG 认证或新增证据。
 
-方案只包含既有 12 场景、8 项目、3 重点区、99 个关闭槽以及既有 geometry；批准、现场测试、运营、专业责任接受和权利清除均为 **0**。G0、临时边界、D01—D08、H01—H07 与 `not_fully_cleared` 保持有效。专业团队可修改、拒绝或删除概念；重大资料、普通权利或权利缺口继续 NO-GO。
+方案只包含既有 12 场景、8 项目、3 重点区、99 个关闭槽以及既有 geometry；批准、现场测试、运营、专业责任接受和权利清除均为 **0**。G0、临时边界、D01—D08、H01—H07 与 `not_fully_cleared` 保持有效。只有未来胜任且明确接受范围的专业方，才可在该范围内复算、修改、附条件、拒绝或删除受影响概念；重大资料、普通权利或权利缺口继续 NO-GO。
 
 ## 现场证据采集与替换包
 
@@ -967,7 +967,7 @@ P01—P07 是结构化合同中的建议专业类型编号，不是当前人员�
 | D07 责任运营 | 0 材料 / `null` | 书面责任接受、可达联络、覆盖时窗、替补、停/启权、预算及维护退役责任 | 未来在线、志愿劳动充分、服务质量或采购 |
 | D08 权利复用 | 0 材料 / `null` | 对象/版本、权利人依据、条款、同意、地域、期限、翻译/衍生权、撤回和独立审计 | 全包清权、内容真实或权利人背书 |
 
-专业处置只允许七种状态：未提交、已收未核、退回补全、冲突挂起、专业拒绝、接收用于复算、过期。`accepted_for_recalculation` 只允许替换类型化占位并触发下游重算，不等于场地、规划、建设、运营、部署或 G1 批准。冲突时先保护普通公共权利并暂停受影响验证叠层；专业团队可以修改、拒绝或删除概念，不得修改官方证据迁就图面 [data:visual/assets/field-evidence-intake-contract.json#professional_disposition_contract]。
+专业处置只允许七种状态：未提交、已收未核、退回补全、冲突挂起、专业拒绝、接收用于复算、过期。`accepted_for_recalculation` 只允许未来胜任且明确接受范围的专业方在该范围内替换类型化占位并触发下游重算；该专业方也只能在范围内修改、附条件、拒绝或删除受影响概念。这些处置均不等于场地、规划、建设、运营、部署或 G1 批准。冲突时先保护普通公共权利并暂停受影响验证叠层，不得修改官方证据迁就图面 [data:visual/assets/field-evidence-intake-contract.json#professional_disposition_contract]。
 
 ### 三条不可互换的未来现场路
 
