@@ -389,7 +389,16 @@
         "D02_EXISTING_CONDITION_SURVEY",
         "D03_REGULATORY_OWNERSHIP"
       ],
+      "current_status": "suggested_role_type_only",
+      "accepted_responsibility_count": 0,
       "decision_scope": "boundary comparison, control conflict, public-space hierarchy and spatial revision",
+      "decision_rights": [
+        "revise_affected_concept",
+        "reject_affected_concept",
+        "delete_affected_concept",
+        "maintain_no_go"
+      ],
+      "decision_rights_boundary": "These rights apply only within decision_scope; listing a suggested role type neither assigns nor evidences accepted responsibility.",
       "cannot_be_replaced_by": "concept figures or repository validation"
     },
     {
@@ -399,7 +408,16 @@
         "D04_ACCESSIBILITY_PUBLIC_PARITY",
         "D06_SPECIALIST_CONSTRAINTS"
       ],
+      "current_status": "suggested_role_type_only",
+      "accepted_responsibility_count": 0,
       "decision_scope": "ordinary route, levels, rest, surfaces, maintenance clear zones and group co-test",
+      "decision_rights": [
+        "revise_affected_concept",
+        "reject_affected_concept",
+        "delete_affected_concept",
+        "maintain_no_go"
+      ],
+      "decision_rights_boundary": "These rights apply only within decision_scope; listing a suggested role type neither assigns nor evidences accepted responsibility.",
       "cannot_be_replaced_by": "green line in a concept diagram"
     },
     {
@@ -409,7 +427,16 @@
         "D05_TRANSPORT_AND_PEAK_CONTINUITY",
         "D06_SPECIALIST_CONSTRAINTS"
       ],
+      "current_status": "suggested_role_type_only",
+      "accepted_responsibility_count": 0,
       "decision_scope": "six interfaces, four-quadrant continuity, peak conflict and safe detour",
+      "decision_rights": [
+        "revise_affected_concept",
+        "reject_affected_concept",
+        "delete_affected_concept",
+        "maintain_no_go"
+      ],
+      "decision_rights_boundary": "These rights apply only within decision_scope; listing a suggested role type neither assigns nor evidences accepted responsibility.",
       "cannot_be_replaced_by": "directional OSM background"
     },
     {
@@ -419,7 +446,16 @@
         "D03_REGULATORY_OWNERSHIP",
         "D06_SPECIALIST_CONSTRAINTS"
       ],
+      "current_status": "suggested_role_type_only",
+      "accepted_responsibility_count": 0,
       "decision_scope": "ground-floor interface, removable-component interface and existing-building limits",
+      "decision_rights": [
+        "revise_affected_concept",
+        "reject_affected_concept",
+        "delete_affected_concept",
+        "maintain_no_go"
+      ],
+      "decision_rights_boundary": "These rights apply only within decision_scope; listing a suggested role type neither assigns nor evidences accepted responsibility.",
       "cannot_be_replaced_by": "massing prototypes"
     },
     {
@@ -429,7 +465,16 @@
         "D06_SPECIALIST_CONSTRAINTS",
         "D07_RESPONSIBILITY_OPERATIONS"
       ],
+      "current_status": "suggested_role_type_only",
+      "accepted_responsibility_count": 0,
       "decision_scope": "railway, heritage, municipal, water, fire, emergency, structural, light and noise constraints",
+      "decision_rights": [
+        "revise_affected_concept",
+        "reject_affected_concept",
+        "delete_affected_concept",
+        "maintain_no_go"
+      ],
+      "decision_rights_boundary": "These rights apply only within decision_scope; listing a suggested role type neither assigns nor evidences accepted responsibility.",
       "cannot_be_replaced_by": "a complete closure template"
     },
     {
@@ -439,7 +484,16 @@
         "D07_RESPONSIBILITY_OPERATIONS",
         "D08_RIGHTS_AND_REUSE"
       ],
+      "current_status": "suggested_role_type_only",
+      "accepted_responsibility_count": 0,
       "decision_scope": "minimum data, prohibited data, human review, evidence version, appeal and rights clearance",
+      "decision_rights": [
+        "revise_affected_concept",
+        "reject_affected_concept",
+        "delete_affected_concept",
+        "maintain_no_go"
+      ],
+      "decision_rights_boundary": "These rights apply only within decision_scope; listing a suggested role type neither assigns nor evidences accepted responsibility.",
       "cannot_be_replaced_by": "synthetic replay PASS"
     },
     {
@@ -450,7 +504,16 @@
         "D07_RESPONSIBILITY_OPERATIONS",
         "D08_RIGHTS_AND_REUSE"
       ],
+      "current_status": "suggested_role_type_only",
+      "accepted_responsibility_count": 0,
       "decision_scope": "ordinary/no-event baseline, staffed access, complaint, quiet time, maintenance, retirement and annual decision",
+      "decision_rights": [
+        "revise_affected_concept",
+        "reject_affected_concept",
+        "delete_affected_concept",
+        "maintain_no_go"
+      ],
+      "decision_rights_boundary": "These rights apply only within decision_scope; listing a suggested role type neither assigns nor evidences accepted responsibility.",
       "cannot_be_replaced_by": "event calendar or volunteer assumption"
     }
   ],
