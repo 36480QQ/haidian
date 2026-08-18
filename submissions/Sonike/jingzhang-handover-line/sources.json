@@ -305,7 +305,7 @@
       "spatial_coverage": "中华人民共和国境内（全国统一分类口径）",
       "temporal_coverage": "2023-11-22 印发施行，替代 2020 年 11 月试行版",
       "license_or_reuse_terms": "国家机关公开发布的规范性文件，依法公开；本包只引用代码与类名对应关系并注明出处，不复制正文。",
-      "usage": "作为 land_use_code 语义的权威口径，用于逐条核对本包 geometry/land_use.geojson 的 7 个代码，以及组织方场地包枚举 brief/site-package/enums/land_use_codes.json 的 16 条。核对结果：本包 7 个代码与该枚举完全一致；该枚举 16 条中 15 条与本指南一致，1 条（05）与本指南冲突，详见 observations 与 transformations。",
+      "usage": "作为 land_use_code 语义的权威口径，用于逐条核对本包 geometry/land_use.geojson 的 7 个代码，以及组织方场地包枚举 brief/site-package/enums/land_use_codes.json。**核对历史与当前状态**：本包此前曾发现该枚举把 05 标为商业服务业、而本指南中 05 为湿地、商业服务业为 09，已提 Issue #2977；**组织方已于 2026-08-16 在 PR #3017 修正枚举**（恢复 05=湿地、新增 09 与 0901–0904，两个一级代码均仍为合法值），本包随即于 2026-08-18 把 LU-003、LU-007 由 05 迁至 09。**当前状态：本包 7 个代码与修正后的枚举、与本指南三者完全一致，无遗留冲突。**",
       "observations": [
         {
           "id": "luc_code_05_is_wetland",
@@ -346,7 +346,8 @@
           "scope": "本包 11 个用地要素使用的全部代码",
           "source_text": "全部取自组织方枚举 land_use_codes.json；除 05 外均与本指南一致",
           "not_spatially_allocable": true
-        }
+        },
+        "2026-08-18 更新：上述关于 05 的冲突记录已过时——组织方 PR #3017 已修正枚举，本包两个要素已迁至 09，几何与面积未变。"
       ],
       "transformations": [
         {
@@ -359,8 +360,8 @@
         {
           "id": "keep_05_and_flag_conflict",
           "original_statement": "指南中 05 为湿地、商业服务业用地为 09；组织方枚举中 05 为商业服务业用地",
-          "method": "确定性校验 validate_submission.py 以组织方枚举为硬性白名单，代码 09 会被判 unknown land_use_code 并使四道门失败；且该枚举是全场共用口径，单方面改码会破坏各投稿间的用地统计可比性。故保留 05、在正文与本表标注冲突，并按赛事规则走 Issue 反馈",
-          "stored_value": "land_use_code = 05（沿用组织方枚举）；正名 09 已在正文、standard_matrix 与本表登记；组织方修正枚举后同步改码，几何与面积不变",
+          "method": "**本条为 2026-08-18 之前的处理记录，现已过时。** 当时的判断是：确定性校验以组织方枚举为硬性白名单，而彼时枚举中没有 09，改码会被判 unknown land_use_code 使四道门全红，且会破坏全场用地统计的可比性；故保留 05、在正文与本表标注冲突，并按赛事规则走 Issue #2977 反馈。**组织方已于 2026-08-16 以 PR #3017 修正枚举（恢复 05=湿地、新增 09 与 0901–0904，两者均为合法值），该约束因此消失，本包已于 2026-08-18 迁至 09 并通过全部四道门。**",
+          "stored_value": "land_use_code = 09（2026-08-18 迁移完成；此前为 05，系沿用组织方修正前的枚举）。迁移仅改分类代码与指标键名，**几何、面积与占比未变**：LU-003 与 LU-007 的 area_sqm_declared 与几何哈希迁移前后逐条相同，合计仍为 2,133,693.511 ㎡。",
           "unit": "classification_code"
         },
         {
@@ -369,7 +370,8 @@
           "method": "本包为城市设计阶段成果，两个要素均为消费、商务与科技服务的混合业态，业态比例须由控规阶段依实际招商与产业方案确定；无依据时不挑二级类充数",
           "stored_value": "停在一级类，二级类留待控规阶段细分",
           "unit": "classification_code"
-        }
+        },
+        "2026-08-18 更新：上述关于 05 的冲突记录已过时——组织方 PR #3017 已修正枚举，本包两个要素已迁至 09，几何与面积未变。"
       ],
       "usable_for": [
         "作为 land_use_code 与用地类名对应关系的出处（对应中央表 allowed_uses 的 land-use classification terminology）",

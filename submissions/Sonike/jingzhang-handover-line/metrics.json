@@ -246,23 +246,6 @@
         "A-CONTROLS-001"
       ]
     },
-    "land_use_05_sqm": {
-      "status": "known",
-      "value": 2133693.511,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/land_use.geojson"
-      ],
-      "formula": "sum(area(land_use where land_use_code=05), EPSG:4548)",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
-      ],
-      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。",
-      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
-      "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
-      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
-    },
     "land_use_0701_sqm": {
       "status": "known",
       "value": 1459314.115,
@@ -882,6 +865,23 @@
       ],
       "reason": "主轴纵坡需现状高程测量。仓库未提供 DEM 或纵断面测量数据，几何图层亦无高程字段，因此保持未赋值——不以「铁路线形通常平缓」推算出一个数字。",
       "measurement_protocol": "取得纵断面测量后，沿 ROAD-001 逐段计算纵坡，取绝对值最大者；与无障碍规范限值比较后决定该段是否需要设置休息平台或绕行。"
+    },
+    "land_use_09_sqm": {
+      "status": "known",
+      "value": 2133693.511,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area(land_use where land_use_code=09), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ],
+      "recalculation_trigger": "官方几何到位后按同一公式与投影 EPSG:4548 原样复算，只换输入不改公式；触发条件、责任角色与复算范围见 assumptions.json#A-BOUNDARY-001。；2026-08-18：组织方在 PR #3017 修正枚举（05=湿地、新增 09=商业服务业）后，本指标由 land_use_05_sqm 更名为 land_use_09_sqm，筛选条件同步由 land_use_code=05 改为 09；**几何与数值未变**，LU-003 与 LU-007 的 area_sqm_declared 与几何哈希迁移前后逐条相同。",
+      "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
+      "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
+      "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
     }
   }
 }
