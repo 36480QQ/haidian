@@ -40,7 +40,7 @@
    "what_zh": "S08 桌面推演，含拒绝分支",
    "what_en": "The S08 tabletop run, refusal branches included",
    "exit_code": 0,
-   "seconds": 0.23,
+   "seconds": 0.24,
    "first_line": "S08 closure-mechanism tabletop"
   }
  ],
@@ -113,7 +113,7 @@
    "path": "agent.json",
    "what_zh": "生成方法的完整披露",
    "what_en": "Full disclosure of the generation method",
-   "bytes": 8024,
+   "bytes": 8057,
    "unit": "top-level keys",
    "count": 10
   }
@@ -122,7 +122,7 @@
   "commands": 5,
   "seconds_to_run_every_verifier": 0.7,
   "files_to_read": 9,
-  "bytes_to_read": 1210886,
+  "bytes_to_read": 1210919,
   "units_to_read": 1819
  },
  "limits_zh": [
