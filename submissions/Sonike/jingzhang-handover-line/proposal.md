@@ -873,7 +873,7 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 ## 参考资料
 
-全部三十一条来源在 sources.json 中逐条登记权威等级、采集方法、时空覆盖、许可状态与可用/不可用边界；凡涉及单位换算的写明原文表述与换算方法，凡属行政尺度背景事实的标记 `not_spatially_allocable=true`。
+全部三十一条来源在 sources.json 中逐条登记权威等级、采集方法、时空覆盖、许可状态与可用/不可用边界；**其中 21 条的正式可用性判断标为 `participant_self_assessed`，而这 21 条现已全部带上 `independent_verification` 字段**——写明第三方不依赖本包自述即可执行的核验方式：或是可当场运行的命令（`pdffonts` 查嵌入状态、`git show upstream/main:` 读组织方原文、`importlib.metadata` 取依赖版本与许可），或是**以「不存在」来核验**（包内字体文件数 0、生成式图像素材 0、语音引擎与音色文件 0、统计公报的四个数字一个都没进 metrics.json），或是可与公开原页逐句对读的 URL 与检索日。**自评仍然是自评，这一点没有改变；改变的是读者是否必须接受它。** 涉及法律适用的结论仍应由专业人员在正式复用前确认；凡涉及单位换算的写明原文表述与换算方法，凡属行政尺度背景事实的标记 `not_spatially_allocable=true`。
 
 **每条来源同时给出与中央登记表的对照，便于机器逐项核验。** 本表的 `usable_for_formal` 采用 `data/source_registry.json` 的同一套取值词汇。其中 **10 条**（临时范围与重点区几何、征集公告、智能体任务书、城市设计管理办法、控规编制审批办法、用地用海分类指南、生成式AI暂行办法、无障碍环境建设法、国办发〔2020〕45号）确实在中央表内——**中央登记表现有的 9 个来源已被本包 100% 挂接**，v1.15 时还漏着住建部两部办法与自然资源部分类指南三条，其 `registry_source_id`、`registry_authority_level`、`registry_review_status` 与 `usable_for_formal` 四项由脚本从中央表**逐字复制**、未经改写，并标 `usable_for_formal_basis: central_registry_verbatim`；本包对这些来源的用法另受中央表 `allowed_uses` / `prohibited_uses` 约束，已逐条在 `usable_for` / `not_usable_for` 中收窄。其余 **18 条不在中央表内**，一律标 `registry_review_status: not_in_central_registry` 与 `usable_for_formal_basis: participant_self_assessed`——维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录，**但自评状态不等于中央批准，本包不据此主张任何中央审定结论**。字体、语音合成与构建工具链八条标 `not_a_factual_source`：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。
 

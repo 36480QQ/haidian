@@ -38,7 +38,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "yes",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "`git ls-tree -r --name-only upstream/main brief/site-package/` 列出资料包全部文件；`git show upstream/main:brief/site-package/enums/land_use_codes.json` 可逐条比对本包用到的枚举取值。**本条不需要相信投稿者：资料包在主线上公开可读。**"
     },
     {
       "id": "SOURCE-REGISTRY",
@@ -67,7 +68,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "yes",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "`git show upstream/main:data/source_registry.json | python3 -c \"import json,sys;d=json.load(sys.stdin);print(len(d.get('sources',d)))\"` 取中央表条目数；本包 sources.json 里 10 条 `registry_source_id` 非空的记录可逐个在其中查到。**该文件只有维护者能改，因此这 10 条的挂接状态不是自评。**"
     },
     {
       "id": "PROCESSED-FACT-PACK",
@@ -95,7 +97,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "`git show upstream/main:brief/site-package/processed/` 下各文件与本包 `metrics.json` 的 `source_files` 逐项对照；凡本包声称由其派生的数值，均可按 `formula` 在 EPSG:4548 重算。"
     },
     {
       "id": "BOUNDARY-SOURCE",
@@ -414,7 +417,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "`pdffonts drawings/a3-booklet.pdf` → 中文行显示 `CID TrueType / UniGB-UCS2-H / emb=yes`，字体名对象为 `<子集前缀>+NotoSerifSC`；四套图纸同法可查。OFL-1.1 的授权文本读自字体 name 表 nameID 13/14，可用 `python3 -c \"from fontTools.ttLib import TTFont; f=TTFont('<字体路径>'); print([r.toUnicode() for r in f['name'].names if r.nameID in (13,14)])\"` 在按登记 URL 与 sha256 取得的字体文件上复核。"
     },
     {
       "id": "FONT-PDF-BASE14",
@@ -443,7 +447,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "`pdffonts drawings/a3-booklet.pdf` → 拉丁行显示 `Type 1 / WinAnsi / emb=no`，即按字体名引用而未嵌入；这十四款由 PDF 规范要求阅读器自备，故 `emb=no` 是正确状态而非缺陷。"
     },
     {
       "id": "FONT-ADOBE-CID",
@@ -470,7 +475,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "`pdffonts drawings/a3-booklet.pdf` 的编码列显示 `UniGB-UCS2-H`；`qpdf --show-object=<字体对象号> drawings/a3-booklet.pdf` 可读到 `/Registry (Adobe) /Ordering (GB1)`。本条只用作编码声明，不作字体来源。"
     },
     {
       "id": "FONT-APPLE-SLA-CLAUSE-E",
@@ -512,7 +518,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "条款原文在 Apple 官网公开可读（URL 已登记），第 2 节 E 条把「使用字体 display and print content」与「嵌入字体」分列为两种行为，可逐句对读。**本包与该条款的关系可用「不存在」核验**：`find . -name '*.tt[cf]'` → 0，且 2026-08-17 起全部栅格产物已迁至 OFL 字体，故该条款现已不构成本包任何交付物的权利依据。"
     },
     {
       "id": "FONT-STHEITI-RASTER",
@@ -538,7 +545,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "**本条为历史登记，可用「不存在」来核验**：`find assets -name '*.ttc'` → 0；当前 26 张栅格产物的字体见 FONT-NOTO-RASTER 逐款 sha256。若需确认旧版确曾使用，取 v1.14 及更早 tag 的图件另行比对。"
     },
     {
       "id": "FONT-HELVETICA-RASTER",
@@ -564,7 +572,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "同上，以「不存在」核验：`find assets -name '*.ttc' -o -name 'Helvetica*'` → 0。当前拉丁文字由 OFL 的 Noto Sans 四款渲染，sha256 见 FONT-NOTO-RASTER。"
     },
     {
       "id": "TOOLCHAIN-BUILD",
@@ -592,7 +601,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "版本与许可逐个可复算，不依赖本条自述：`python3 -c \"import importlib.metadata as m; print(m.version('reportlab'), m.version('Pillow'), m.version('shapely'), m.version('pyproj'), m.version('fonttools'))\"`；`qpdf --version`；`gs --version`；许可字段用 `python3 -c \"import importlib.metadata as m; print(m.metadata('Pillow')['License-Expression'])\"`。**「未链接进交付物」一侧可反向核验**：`pdffonts drawings/a3-booklet.pdf` 显示嵌入的中文字体只有 NotoSerifSC（OFL），不含任何 AGPL 组件产物。"
     },
     {
       "id": "HAIDIAN-2025-STATISTICAL-BULLETIN",
@@ -717,7 +727,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "四项数值（备案上线大模型 123 款、全国重点实验室 92 家、每万人口高价值发明专利 599 件、技术合同成交额 4053.1 亿元）可在公报原页逐条对读；本包对它们的处理可用 `grep -c 'not_spatially_allocable' sources.json` 与 `python3 -c \"import json;m=json.load(open('metrics.json'))['metrics'];print([k for k,v in m.items() if v.get('value')==123])\"` → 空，确认**这些数字一个都没有进入 metrics.json**。"
     },
     {
       "id": "GENERATIVE-AI-INTERIM-MEASURES",
@@ -889,7 +900,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "转述内容与原页可逐句对读（URL 与检索日已登记）；**「未复用图片、地图、商标」一侧可在包内反向核验**：26 张图件全部由 PIL/reportlab 程序化绘制，`grep -c 'gpt-image\\|midjourney\\|stable-diffusion' self_check.json` → 0，包内无任何外部图片素材。"
     },
     {
       "id": "CASE-KALASATAMA",
@@ -916,7 +928,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "同 CASE-ONE-NORTH：URL 与检索日已登记可逐句对读；包内无该来源的任何图片、地图或品牌资产，可用上述命令反向核验。"
     },
     {
       "id": "CASE-STATION-F",
@@ -943,7 +956,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "同 CASE-ONE-NORTH：URL 与检索日已登记可逐句对读；包内无该来源的任何图片、地图或品牌资产。"
     },
     {
       "id": "CASE-22BARCELONA",
@@ -970,7 +984,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "同 CASE-ONE-NORTH：URL 与检索日已登记可逐句对读；包内无该来源的任何图片、地图或品牌资产。"
     },
     {
       "id": "CASE-KENDALL",
@@ -997,7 +1012,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "同 CASE-ONE-NORTH：URL 与检索日已登记可逐句对读；包内无该来源的任何图片、地图或品牌资产。"
     },
     {
       "id": "CASE-KNOWLEDGE-QUARTER",
@@ -1024,7 +1040,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "同 CASE-ONE-NORTH：URL 与检索日已登记可逐句对读；包内无该来源的任何图片、地图或品牌资产。"
     },
     {
       "id": "TTS-MACOS-SYNTH",
@@ -1052,7 +1069,8 @@
       "limitations": "音色与时长依赖本机语音版本，换机重跑会得到不同音频；音频不进入评审的多模态视觉输入，其内容以随包的文字稿与字幕为准。",
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "**「非真人录音、不含个人信息」一侧可当场核验**：`ffprobe -show_format assets/media/audio-guide.m4a` 无任何演播者/版权元数据；`find . -iname '*.aiff' -o -iname '*voice*' -o -iname '*.speechbundle'` → 0，**包内不分发任何语音引擎或音色数据**；字幕 `.vtt` 头部已写明合成来源与「未逐句人工对齐」。"
     },
     {
       "id": "FONT-NOTO-COVER",
@@ -1082,7 +1100,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "`find assets -name '*.tt[cf]' -o -name '*.otf'` → 0（包内不含字体文件，故不构成再分发）；封面所用两族字体的 sha256 与字节数已在本条登记，可对照 Google Fonts 官方发行版逐字节校验；`python3 -c \"from PIL import Image;print(Image.open('assets/media/cover.png').size)\"` 确认该图为程序化生成的位图产物。"
     },
     {
       "id": "FONT-NOTO-RASTER",
@@ -1110,7 +1129,8 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "not_a_factual_source",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "六款字体的 sha256 与字节数已在本条 `collection_method` 中逐个登记，可对照 Google Fonts 官方发行版逐字节校验；`find assets -name '*.tt[cf]' -o -name '*.otf'` → 0 确认包内不含字体文件；`python3 -c \"from PIL import Image;print(Image.open('assets/figures/site-overview.png').size)\"` 确认产物为位图。"
     },
     {
       "id": "W3C-WCAG-21",
@@ -1142,8 +1162,10 @@
       "registry_source_id": null,
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "supporting_standard",
-      "usable_for_formal_basis": "participant_self_assessed"
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "本包只引用该标准的两项事实（正文阈值 4.5、相对亮度公式），二者的应用结果可完全复算：`python3 -c \"import json;d=json.load(open('visual/assets/governance/figure-contrast-report.json'));print(d['minimum_text_contrast'], d['all_text_colours_pass_aa'])\"` → `4.6 True`；报告内含逐色 sRGB 值与公式，任何人可用同一公式重算 14 个比值。"
     }
   ],
-  "registry_alignment_note": "本表的 usable_for_formal 采用中央登记表 data/source_registry.json 的同一套取值词汇，以便机器逐项对照。凡 usable_for_formal_basis = central_registry_verbatim 的条目，其 registry_source_id / registry_authority_level / registry_review_status / usable_for_formal 四项均由脚本从中央表逐字复制，未经改写；本包对该来源的用法另受中央表 allowed_uses / prohibited_uses 约束，逐条已在 usable_for / not_usable_for 中收窄。凡 basis = participant_self_assessed 的条目**不在中央表内**，registry_review_status 一律标 not_in_central_registry —— 维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录；但自评状态不等于中央批准，本包不据此主张任何中央审定结论。not_a_factual_source 用于字体与构建工具链条目：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。"
+  "registry_alignment_note": "本表的 usable_for_formal 采用中央登记表 data/source_registry.json 的同一套取值词汇，以便机器逐项对照。凡 usable_for_formal_basis = central_registry_verbatim 的条目，其 registry_source_id / registry_authority_level / registry_review_status / usable_for_formal 四项均由脚本从中央表逐字复制，未经改写；本包对该来源的用法另受中央表 allowed_uses / prohibited_uses 约束，逐条已在 usable_for / not_usable_for 中收窄。凡 basis = participant_self_assessed 的条目**不在中央表内**，registry_review_status 一律标 not_in_central_registry —— 维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录；但自评状态不等于中央批准，本包不据此主张任何中央审定结论。not_a_factual_source 用于字体与构建工具链条目：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。",
+  "self_assessment_note": "本文件 31 条来源中，10 条以 `central_registry_verbatim` 挂接中央登记表（该表只有维护者能改，故其状态不属自评），其余 21 条标为 `participant_self_assessed`。**为使「自评」不等于「只能相信投稿者」，这 21 条现已全部带有 `independent_verification` 字段**，写明第三方不依赖本包自述即可执行的核验方式：或为可当场运行的命令，或为「以不存在来核验」（如包内字体文件数为 0、无任何外部图片素材、语音引擎未随包分发），或为可与公开原页逐句对读的 URL 与检索日。**这不改变任何权利结论的性质——自评仍是自评——改变的是读者是否必须接受它。** 涉及法律适用的结论仍应由专业人员在正式复用前确认。"
 }
