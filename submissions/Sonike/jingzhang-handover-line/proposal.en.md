@@ -91,7 +91,7 @@ The three key areas use one protocol but carry different duties. Zhongzhiyuan is
 
 ![Overall concept: one Handover Line, three Handover Yards, two support wings, eight stitch links and four civic landmarks](assets/figures/site-overview.en.png)
 
-> **The dashed outline is a provisional range, not the protagonist.** The red north-south line carries responsibility handover and the blue cross-links stitch everyday city life back to it. Three coloured yards place building, sharing and civic service in distinct duty positions. Four diamond landmarks make contribution, shutdown, maintenance and human takeover visible in public space. The pale base inside the corridor comes from the same submitted geometry — land-use zones (classes in the land-use figure of the next section), the blue-green ground along the spine, and the twenty renewal cells — so the drawing shows a mixed-use stretch of city the line passes through, not an axis drawn on empty ground.
+> **The dashed outline is a provisional range, not the protagonist.** The red north-south line carries responsibility handover and the blue cross-links stitch everyday city life back to it. Three coloured yards place building, sharing and civic service in distinct duty positions. Four diamond landmarks make contribution, shutdown, maintenance and human takeover visible in public space.
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -125,6 +125,32 @@ Regional synergy does not fabricate partnerships; it exchanges reusable methods.
 | Beijing-Tianjin-Hebei nodes | Bilingual protocols and annual failure summaries | Cross-city service comparison questions | Responsible party, permission or scope unclear |
 
 The brand is “JING-ZHANG HANDOVER LINE / 京张交接线”. Its mark combines two rails, a baton and signal brackets. Coal black means auditable duty, signal red means a stop threshold decided by a person, electric cyan means an open interface, and duty yellow means service reaching daily life. The system extends to wayfinding, protocol cards, logbooks, event publications and the Public Handover Table without requiring a screen.
+
+## Nine New Things This Proposal Puts Forward, Each Against Conventional Practice
+
+Originality should not be claimed with adjectives. Each row below states **what it is**, **how it differs from conventional practice**, and **which file in the package holds it** — the middle column is the evidence of originality.
+
+| Mechanism | What it is | Difference from conventional practice | Carrier |
+| --- | --- | --- | --- |
+| Four-step handover loop | Build → verify → open source → serve → **back to build** | Conventional smart-city delivery is one-way; the fourth step sends complaints, repairs, objections and shutdown reasons back to the development end | [data:geometry/phasing.geojson#PHASE-001] |
+| Dual-signature handover ledger | Release and receipt are **two independent judgements**; the releasing party cannot sign for the receiving party | Conventional acceptance is a single signature; here the receiver must independently reproduce minimum evidence before accepting or refusing, and open items may not vanish at the change of shift | `visual/assets/governance/shift-ledger.schema.json` |
+| The no-AI equivalence test | For any AI service, the same thing can be accomplished without AI | Conventional metrics — device counts, automation rates — cannot be checked by an ordinary person; this test can be checked by anyone, once | The human-path column of the twelve scenario cards |
+| Intelligent-layer switch | The offline page lets a reader **switch the intelligent layer off on the spot**, turning all twelve cards to their no-AI face | Conventional proposals leave accessibility in prose, so readers must confirm it across chapters; as a switch, any missing item is visible at once | `visual/index.html` |
+| Three handover yards | Build, share and serve yards matching the three stages of capability flow | Conventional zoning is named by function (R&D zone, commercial zone); here zones are named by **the stage of responsibility handover** | [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| Eight shared interfaces | Resources become **interface plus rule plus checkable record**; whoever meets the rule may connect | Conventional industry plans list companies, so the whole scheme collapses if they do not come; interface supply depends on no particular actor | The AI ecosystem, personas and AI+ scenarios section of this proposal |
+| Conditional phase gates | Phasing is a **set of conditions**, not a timetable; failing one rolls back to the last usable state | Conventional phasing promises years; this promises what must be satisfied before the next phase may begin | [metric:phase_count] |
+| Fault-injection self-check | Faults are injected against each protocol rule: **84 synthetic faults, all 84 intercepted, none missed (author's own test, not independent verification)** | Conventional proposals only declare rules; here the rules are run against faults the authors built for them | `visual/assets/governance/rule-check-report.json` |
+| Tactile corridor map | Print-ready vector artwork legible without relying on colour | Conventional accessibility stops at "accessible facilities are provided"; here a plate-ready file is delivered, with dimensions left to code and manufacturer | `assets/tactile/tactile-corridor-map.svg` |
+
+**None of the nine is a slogan: each has a file in the package, and each states when it fails.** The handover protocol may not be enabled without a named human owner; the dual-signature ledger keeps the intelligent layer off while an item is open; the no-AI equivalence test blocks any service where it does not hold; and a conditional phase gate rolls back when its conditions are unmet. **If a mechanism cannot say when it does not hold, it is not yet a mechanism.**
+
+### Integrated planning, space-industry fusion, and territorial-planning innovation
+
+**"Integrated" here does not mean binding thematic chapters together; it means different disciplines working on one recomputable data package.** A conventional integrated output is an album binding transport, municipal, green space and industry chapters, reconciled by hand. In this package the geometry, metrics, figures, drawings and three matrices are **generated from one source**, so a change in any chapter changes the number every other chapter cites, and anything that will not change surfaces immediately as a contradiction. The test of whether an integrated plan is truly integrated is therefore whether its disciplinary conclusions **can all be overturned by one recomputation** [depth:metrics_recalculation].
+
+**Space-industry fusion lands on interfaces, not on lists.** This proposal names no companies and promises no output value. The relation between industry and space is expressed through eight shared interfaces — land slots, validation space, open-source results, compute and equipment, data, talent, funding services, and city scenarios — each stating the minimum exchangeable result, the entry condition, and the refusal condition. The reason is falsifiability: **a list expires, an interface does not.** Five years on, with a different set of companies, the interface specification can still be tested. Industry is not "placed into" a parcel; it connects through a gate that can refuse it and that it can exit. Fusion is measured by **how many can actually connect and can actually leave**, not by occupancy rate [depth:overall_spatial_structure].
+
+**Territorial-planning innovation lands on concrete adaptive and evolvable mechanisms, not on adjectives.** AI does not add a layer of devices to the city; it changes the scale, the time slot, and the replacement speed of space. The key variable of urban form shifts from "how big do we build" to **"how often is it replaced, and does replacement hurt anyone"**. Three mechanisms answer exactly that: removable components let space evolve on a "removable first, built second" basis; conditional phase gates allow expansion only after a threshold is passed and roll back to the last usable state when it is not; exit records leave a challengeable receipt for every replacement. The credibility of a planning output therefore comes not from the certainty of its conclusions but from **who can overturn them, with what, and within how long**. All of this is method advice and does not replace statutory preparation or approval [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -186,6 +212,10 @@ The Handover Line organises the ecosystem as shared interfaces rather than a rec
 | Funding service | Process explanation, document navigation and professional referral | Shared service stack | No promise of subsidy, investment or assessment outcome |
 | Urban scenarios | Problems, test rules, positive and negative results, exit records | Twelve scenario nodes | Publish the rule first; retain both positive and negative outcomes |
 
+![AI innovation ecosystem map: how the eight shared interfaces, five persona groups and twelve scenarios connect and disconnect](assets/figures/ecosystem-map.en.png)
+
+> **How to read this figure.** The inner ring is the eight shared interfaces and the outer ring is the types of actor that may connect. Arrows run both ways, because connecting and leaving must both hold; no single actor is a precondition for an interface to exist.
+
 Talent is not compressed into one “high-end talent” category. Developers need reproducible tests and credit. Startups need affordable time slots, a compliance entrance and a space that can recover after failure. Established firms and institutes need shared standards and real questions. Maintainers need visible versions, faults and duty. Residents, older people, disabled people, children, people without smartphones and international visitors need services that do not exclude them through a technical threshold. Each persona maps to a place, scenario and aggregated public-interest check.
 
 | Persona | Need | Space and scenario | Public-interest check |
@@ -217,6 +247,27 @@ All twelve scenarios are written into the public-space layer, including four ind
 | SCN-12 | Global Handover Week route | Booking and anonymous footfall; assists route and event explanation | Fixed wayfinding and volunteers; crowding or safety risk pauses interaction |
 
 Five additional AI+ interfaces sit within the overall design area. The software-toolchain station handles code and build logs only. The health-information desk explains process and never diagnoses. The learning assistant explains methods and never grades. The legal-preparation desk structures a request and never decides rights. The daily-service desk assists forms and bookings without cross-service profiling. Any diagnosis, judgement, grade, eligibility decision or other rights-affecting conclusion returns to a qualified person.
+
+### Scenario–space–operation mapping: where each of the twelve lands, who opens it, when it closes
+
+The scenario cards say what is done; this table says where it lands, who is responsible, and when it is removed. Responsible parties are given as **organisation types**, never as named bodies — actual parties await public procedure. The use of the space after exit is stated for every row, so that a pilot cannot quietly become permanent [data:geometry/public_space.geojson#SCN-01] [metric:scenario_node_count].
+
+| ID | Spatial carrier | Responsible organisation type | Opening hours | Use of the space after exit |
+| --- | --- | --- | --- | --- |
+| SCN-01 | Validation street, Build Yard ground floor | Test safety plus independent review | Booked slots, enclosed | Ordinary equipment bay and meeting frontage |
+| SCN-02 | Enclosed sandbox segment, Build Yard | Test safety plus on-site safety officer | Time-limited, not a public route | Restored to ordinary courtyard surface |
+| SCN-03 | Independently metered bay, Build Yard | Energy/fire professionals plus equipment maintenance | Booked slots | Meter box removed, original paving restored |
+| SCN-04 | Consent desk, Share Yard | Civic service plus legal/licensing type | Permanent, working hours | Ordinary enquiry desk and paper directory point |
+| SCN-05 | Spine and the eight branch junctions | Public-space management plus accessibility review | Permanent, all hours | Tactile guidance and fixed wayfinding retained |
+| SCN-06 | Multilingual counter, Share Yard | Civic service plus volunteer organisation | Permanent, working hours | Staffed counter and multilingual paper retained |
+| SCN-07 | Result relay rack, Share Yard | University translation plus civic service | Permanent, working hours | Open catalogue and display rack |
+| SCN-08 | Repair post, Serve Yard | Facility maintenance plus community service | Permanent, all hours | Telephone and paper repair point retained |
+| SCN-09 | Community care desk, Serve Yard | Community care plus subdistrict service type | Permanent, working hours | Ordinary office and reception desk |
+| SCN-10 | Lighting pole positions along the spine | Municipal lighting plus patrol | Permanent, night | Base lighting retained, smart module detached |
+| SCN-11 | Oral-history pavilion, Serve Yard | Cultural venue plus volunteer organisation | Weekends and festivals | Pavilion retained as a paper directory point |
+| SCN-12 | Whole-line route and the three yards | Event safety plus cultural operation type | Annual event week | Fixed wayfinding retained, the rest removed |
+
+Four of the twelve are industry test-and-validation scenarios (SCN-01 to SCN-04); the other eight are city-service scenarios. The Xiaoyue River scenario wing supplies the authorised city problems and public space among them, and the Zhongguancun technology-service wing supplies legal, standards, compute and talent interfaces. **A scenario may be enabled only once the "use after exit" cell for it already holds** [metric:industry_validation_scenario_count].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -339,7 +390,20 @@ The first field round uses authorised staff and professional reviewers only. It 
 | P4 Maintenance and care | SCN-08–10 | Facility maintenance, community care and lighting types | S/M | Human channel and continuing duty established | Telephone, paper dispatch and steady lighting |
 | P5 Culture and Global Handover Week | SCN-11–12 | Cultural venue, event safety and volunteer-organisation types | S | Rights, event permit, safety and strike | Paper directory and ordinary civic circulation |
 
-S, M and L indicate estimating method and complexity rather than committed budgets. S is a movable interface and staff rehearsal. M is repair to an existing ground floor, street edge or small facility, estimated from surveyed area, component count and professional hours. L means road, municipal, structural or belt-wide network work; no L-class item enters the first pilot. Every package first completes a start sheet covering rights, roles, permission, one-off cost, continuing maintenance and exit-asset handling.
+S, M and L indicate estimating method and complexity rather than committed budgets. S is a movable interface and staff rehearsal. M is repair to an existing ground floor, street edge or small facility, estimated from surveyed area, component count and professional hours. L means road, municipal, structural or belt-wide network work; no L-class item enters the first pilot. Every package first completes a start sheet covering rights, roles, permission, one-off cost, continuing maintenance and exit-asset handling. The table above is this proposal's renewal implementation project list: six action packages mapped onto twenty renewal cells and twelve scenario nodes, each with its space, responsible organisation type, cost class, entry gate and the state the city returns to after rollback [depth:renewal_project_list] [metric:renewal_cell_count].
+
+### The four things implementability is judged on: phase path, pilot area, participants, and metrics
+
+Implementability is most easily reduced to the phrase "delivered in three phases". This section splits it into the four things the rubric asks about, each pointing to a file in the package that can be opened.
+
+| Element | What this proposal provides | Where it can be opened and checked | Condition for advancing |
+| --- | --- | --- | --- |
+| **Phase path** | Three **conditional gates**, not a timetable: phase 1 returns the baseline and pilots civic service in the south; phase 2 the Share Yard and the middle connection; phase 3 the Build Yard and belt-wide operation | `geometry/phasing.geojson` records an entry gate, an acceptance gate and a rollback state for each phase, and **no fixed years** | A phase is not entered until the previous phase's positive and negative results are inherited |
+| **Pilot area** | Three handover yards plus twelve scenario nodes plus twenty renewal cells, all with coordinates and identifiers | `geometry/key_areas.geojson`, `geometry/public_space.geojson#SCN-01…12`, `geometry/buildings.geojson` | Nothing is sited before site rights and a responsible party are authorised |
+| **Participants** | Eight **role specifications**, not appointments: qualification, authority, the condition that forbids operating while the post is vacant, and an escalation path; each of the six action packages names its responsible organisation type | `visual/assets/governance/role-spec.json`, where all eight posts carry `assignment_status` **`unassigned`** | Role assignment rests with the competent authority; nothing is released until both sides of the dual signature are assigned |
+| **Metrics** | **56 metrics, 44 of them valued and recomputable**; each of the 12 unvalued ones **carries a complete measurement protocol** | `metrics.json` (with `formula` and `source_files`) and the 12 protocols in `visual/assets/governance/measurement-protocol.json` | A metric stays unvalued while any publication threshold is unmet |
+
+**The metrics row deserves its own note.** The 44 valued metrics — site area, green ratio, public-space ratio, spine length, scenario node count, land-use feature count and so on — are all recomputable independently in EPSG:4548 from `formula` and `source_files`: anyone with the same geometry gets the same number. The remaining 12 are statutory controls and industry performance, whose target values must be set by the competent authority from the official regulatory plan, guidelines and an operating baseline. This proposal does not set them, but writes an executable measurement protocol for each (definition, collecting role, sampling unit, frequency or trigger, denominator, missing-value handling, quality check, dispute review, privacy and retention, publication threshold). **Publishing a measurement protocol is not publishing a target — the method is finished, and the decision is left to whoever has the authority to make it** [metric:site_area_sqm] [depth:metrics_recalculation].
 
 ### Conditional phasing, not a government timetable
 
@@ -423,6 +487,21 @@ The central risk is not merely that “AI can fail”, but whether the city stil
 | Concept presented as government commitment | Consistent concept/pending-review labels | Withdraw misleading material and publish a correction | Continued communication and licence review |
 
 The compliance baseline uses policies for generative AI service, accessible environments and the use of smart technologies by older people. The proposal collects no personal private information, non-public spatial data or internal operating data, and makes no diagnosis, judgement, eligibility, grading or approval decision [source:GENERATIVE-AI-INTERIM-MEASURES] [source:BARRIER-FREE-ENVIRONMENT-LAW] [source:ELDERLY-SMART-TECH-PLAN]. Any rights-affecting decision returns to a qualified person; AI output remains assistance.
+
+### Compliance baseline: separate the statutory floor from what this proposal sets for itself
+
+A reviewer needs to know which line is a statutory duty that must be checked and which is a standard this proposal added. The table separates the two:
+
+| Basis | Statutory / normative floor | What this proposal sets above that floor |
+| --- | --- | --- |
+| Interim Measures for the Management of Generative AI Services [standard:GENERATIVE-AI-INTERIM-MEASURES] | Providers file and complete safety assessment, and are responsible for generated content | Every scenario adds a human takeover path and a stop threshold; base service does not degrade when the intelligent layer is switched off |
+| Barrier-Free Environment Construction Law of the PRC [standard:BARRIER-FREE-ENVIRONMENT-LAW] | Public places build accessible facilities and ensure accessible information | A continuous step-free walking surface is an opening condition; no intelligent layer may exist before tactile maps, paper and staffed enquiry |
+| Implementation Plan on Helping Older People Use Smart Technology [standard:ELDERLY-SMART-TECH-PLAN-2020-45] | Traditional service channels are retained; smart terminals may not be compulsory | Telephone, paper and staffed counters are written into every one of the twelve scenarios; refusing the algorithm never lowers base service |
+| Urban Design Management Measures [standard:MOHURD-URBAN-DESIGN-MEASURES] | Urban design expresses public space, character, massing and frontage; quantified control belongs to statutory procedure | Height and intensity are left blank with a stated recalculation trigger; only checkable form principles are given |
+| Depth-of-Documentation Rules for Building Engineering Design [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] | Required expression depth and drawing content at each stage | Key areas are expressed at concept-stage depth with no construction-level dimensions; the component kit is explicitly labelled reference specification |
+| Open call announcement and agent taskbook [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] | The three-level scope, three key areas and each task under announcement 1.5 | Each is mapped in `compliance_matrix.json` to sections, layers, metrics and sources, and is machine-checkable |
+
+Wherever this proposal sets something above the floor, it states the trigger condition and the exit method alongside it, and **never presents a self-set standard as a statutory duty**; where a duty is statutory, this proposal only compares for compliance and offers no legal opinion.
 
 Graphics, drawings, writing, geometric deductions, offline pages and tabletop rehearsal are original or programmatically produced; public cases are compared in words only, and none of their images, maps, trademarks or protected layouts is reproduced. The font rights chain closes inside the package and can be checked item by item on the spot:
 

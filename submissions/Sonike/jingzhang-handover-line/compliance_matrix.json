@@ -10,13 +10,15 @@
         "AI 创新生态、人才画像与 AI+ 场景",
         "统筹研究范围产业与未来城市研究",
         "国际传播：把“全球关注”建立在可复核的记录上",
-        "荣誉展示体系：可纠错的记录，不是排行榜"
+        "荣誉展示体系：可纠错的记录，不是排行榜",
+        "场景—空间—运营映射：十二个场景各自落在哪、谁开、什么时候关"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
         "Coordinated Research Area: Industry and Future City Research",
         "International communication: build \"global attention\" on a checkable record",
-        "Honour display system: a correctable record, not a leaderboard"
+        "Honour display system: a correctable record, not a leaderboard",
+        "Scenario–space–operation mapping: where each of the twelve lands, who opens it, when it closes"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -114,12 +116,18 @@
       "report_sections": [
         "总体设计范围城市更新与控规深度城市设计",
         "风险、版权与合规说明",
-        "用地、建筑规模与拆改留方案"
+        "用地、建筑规模与拆改留方案",
+        "合规基线：先分清法定下限，再说本方案自设的标准",
+        "本方案提出的九件新东西，逐条对照常规做法",
+        "综合规划内涵、空间产业融合与国土空间规划创新"
       ],
       "report_sections_en": [
         "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
         "Risk, Copyright, and Compliance",
-        "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy"
+        "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
+        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
+        "Nine New Things This Proposal Puts Forward, Each Against Conventional Practice",
+        "Integrated planning, space-industry fusion, and territorial-planning innovation"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -208,12 +216,14 @@
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
         "风险、版权与合规说明",
-        "蓝绿空间、公共空间与城市风貌"
+        "蓝绿空间、公共空间与城市风貌",
+        "合规基线：先分清法定下限，再说本方案自设的标准"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
         "Risk, Copyright, and Compliance",
-        "Blue-Green Network, Public Space, and Urban Character"
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Compliance baseline: separate the statutory floor from what this proposal sets for itself"
       ],
       "geojson_layers": [
         "geometry/green_space.geojson",
@@ -584,13 +594,19 @@
         "AI 创新生态、人才画像与 AI+ 场景",
         "总体设计范围城市更新与控规深度城市设计",
         "风险、版权与合规说明",
-        "统筹研究范围产业与未来城市研究"
+        "统筹研究范围产业与未来城市研究",
+        "合规基线：先分清法定下限，再说本方案自设的标准",
+        "本方案提出的九件新东西，逐条对照常规做法",
+        "综合规划内涵、空间产业融合与国土空间规划创新"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
         "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
         "Risk, Copyright, and Compliance",
-        "Coordinated Research Area: Industry and Future City Research"
+        "Coordinated Research Area: Industry and Future City Research",
+        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
+        "Nine New Things This Proposal Puts Forward, Each Against Conventional Practice",
+        "Integrated planning, space-industry fusion, and territorial-planning innovation"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -671,12 +687,14 @@
       "report_sections": [
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "指标体系、面积复算与合规矩阵",
+        "场景—空间—运营映射：十二个场景各自落在哪、谁开、什么时候关"
       ],
       "report_sections_en": [
         "Coordinated Research Area: Industry and Future City Research",
         "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
-        "Metrics, Area Recalculation, and Compliance Matrix"
+        "Metrics, Area Recalculation, and Compliance Matrix",
+        "Scenario–space–operation mapping: where each of the twelve lands, who opens it, when it closes"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -742,11 +760,15 @@
       "mandatory": true,
       "report_sections": [
         "更新项目清单、实施政策与分期计划",
-        "用地、建筑规模与拆改留方案"
+        "用地、建筑规模与拆改留方案",
+        "综合规划内涵、空间产业融合与国土空间规划创新",
+        "可实施性四件事：阶段路径、试点区域、参与主体与指标，逐项对齐"
       ],
       "report_sections_en": [
         "Renewal Projects, Implementation Policy, and Phasing",
-        "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy"
+        "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
+        "Integrated planning, space-industry fusion, and territorial-planning innovation",
+        "The four things implementability is judged on: phase path, pilot area, participants, and metrics"
       ],
       "geojson_layers": [
         "geometry/buildings.geojson",
@@ -819,11 +841,13 @@
       "mandatory": true,
       "report_sections": [
         "交通、轨道、市政与公共服务设施",
-        "风险、版权与合规说明"
+        "风险、版权与合规说明",
+        "合规基线：先分清法定下限，再说本方案自设的标准"
       ],
       "report_sections_en": [
         "Transport, Rail, Municipal Infrastructure, and Public Services",
-        "Risk, Copyright, and Compliance"
+        "Risk, Copyright, and Compliance",
+        "Compliance baseline: separate the statutory floor from what this proposal sets for itself"
       ],
       "geojson_layers": [
         "geometry/roads.geojson",
@@ -1018,10 +1042,12 @@
       "title_en": "Key area scope: mandatory items of the detailed design",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "可实施性四件事：阶段路径、试点区域、参与主体与指标，逐项对齐"
       ],
       "report_sections_en": [
-        "Detailed Design of Key Areas"
+        "Detailed Design of Key Areas",
+        "The four things implementability is judged on: phase path, pilot area, participants, and metrics"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1280,7 +1306,9 @@
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "导视、标识与符号系统",
-        "本方案许可的边界：给它一条公认许可的上界"
+        "本方案许可的边界：给它一条公认许可的上界",
+        "本方案提出的九件新东西，逐条对照常规做法",
+        "综合规划内涵、空间产业融合与国土空间规划创新"
       ],
       "report_sections_en": [
         "Move Good AI into the City Faster, Give Every Handover a Return Path",
@@ -1288,7 +1316,9 @@
         "Coordinated Research Area: Industry and Future City Research",
         "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
         "Wayfinding, signage, and the symbol set",
-        "The limits of this licence: giving it a recognised upper bound"
+        "The limits of this licence: giving it a recognised upper bound",
+        "Nine New Things This Proposal Puts Forward, Each Against Conventional Practice",
+        "Integrated planning, space-industry fusion, and territorial-planning innovation"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1455,14 +1485,18 @@
         "首个现场原型：公开交接桌",
         "已完成：十二场景离线接管桌面演练",
         "开发者社区与场景开放运营",
-        "风险、版权与合规说明"
+        "风险、版权与合规说明",
+        "合规基线：先分清法定下限，再说本方案自设的标准",
+        "场景—空间—运营映射：十二个场景各自落在哪、谁开、什么时候关"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
         "First field prototype: Public Handover Table",
         "Completed: twelve-scenario offline takeover tabletop",
         "Developer community and scenario-opening operation",
-        "Risk, Copyright, and Compliance"
+        "Risk, Copyright, and Compliance",
+        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
+        "Scenario–space–operation mapping: where each of the twelve lands, who opens it, when it closes"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson"
@@ -1699,7 +1733,8 @@
         "开发者社区与场景开放运营",
         "招引与转化路径",
         "国际传播：把“全球关注”建立在可复核的记录上",
-        "条件分期，而非政府时间表"
+        "条件分期，而非政府时间表",
+        "可实施性四件事：阶段路径、试点区域、参与主体与指标，逐项对齐"
       ],
       "report_sections_en": [
         "Long-Term Operation, Annual Events, and International Communication",
@@ -1707,7 +1742,8 @@
         "Developer community and scenario-opening operation",
         "Attraction and conversion pathway",
         "International communication: build \"global attention\" on a checkable record",
-        "Conditional phasing, not a government timetable"
+        "Conditional phasing, not a government timetable",
+        "The four things implementability is judged on: phase path, pilot area, participants, and metrics"
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
