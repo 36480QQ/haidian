@@ -79,7 +79,7 @@ The evidence is separated into four roles rather than blended into one bibliogra
 
 Regulatory-plan depth, urban design and land-use expression respond respectively to [standard:MOHURD-CONTROL-DETAILED-PLANNING], [standard:MOHURD-URBAN-DESIGN-MEASURES] and [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. Policies for generative AI, accessibility and older people define the service boundary. Requiring an equivalent non-AI path for every service is a higher standard chosen by this proposal; it is not misrepresented as a universal legal obligation.
 
-All graphics, layouts, text, geometry deductions and offline rehearsals were produced by the disclosed participants and agents. External cases are paraphrased only for public mechanisms; no photographs, maps, trademarks or third-party diagrams are reused. Fonts, PDFs and media rights are itemised in `report/copyright_statement.md`. Codex (GPT-5) produced this score-edition revision, Claude Opus 5 participated in earlier iterations, Sonike submits it, and human and professional teams retain final judgement.
+All graphics, layouts, text, geometry deductions and offline rehearsals were produced by the disclosed participants and agents. External cases are paraphrased only for public mechanisms; no photographs, maps, trademarks or third-party diagrams are reused. Font, PDF and media rights are set out as a checkable table in the "Risk, Copyright, and Compliance" section, with the full registration in `sources.json` and `report/copyright_statement.md`. Claude Opus 5 produced this revision, Codex (GPT-5) produced the earlier score-edition rewrite, Sonike submits it, and human and professional teams retain final judgement.
 
 ## Three-Level Scope Framework
 
@@ -105,14 +105,14 @@ Industrial goals must land on a checkable order of magnitude rather than on phra
 
 ### Six international cases: transfer mechanisms, not forms
 
-| Case | Transferable mechanism | Translation on the Handover Line |
-| --- | --- | --- |
-| JTC LaunchPad @ one-north | Startup space and industry services sit close enough to reduce friction between tests and partnerships | Shared service stacks next to validation workshops [source:CASE-ONE-NORTH] |
-| Smart Kalasatama | Resident time and everyday problems calibrate technology | Public-value review in the Serve Handover Yard [source:CASE-KALASATAMA] |
-| STATION F | Large entrepreneurial communities require stable civic services and partner interfaces | Result relay and service desks in the Share Yard [source:CASE-STATION-F] |
-| 22@ Barcelona | Industry renewal and neighbourhood public space advance together | Twenty renewal cells and a continuous public handover ground [source:CASE-22BARCELONA] |
-| Kendall Square K2C2 | Research clusters need walkable cross-district links and civic interfaces | Eight east-west stitch links [source:CASE-KENDALL] |
-| Knowledge Quarter London | Dense institutions collaborate around shared questions rather than one enclosed campus | Five regional exchange interfaces [source:CASE-KNOWLEDGE-QUARTER] |
+| Case | Transferable mechanism | Translation on the Handover Line | Explicitly not transferred |
+| --- | --- | --- | --- |
+| JTC LaunchPad @ one-north | Startup space and industry services sit close enough to reduce friction between tests and partnerships | Shared service stacks next to validation workshops [source:CASE-ONE-NORTH] | Its land-lease regime and rent structure |
+| Smart Kalasatama | Resident time and everyday problems calibrate technology | Public-value review in the Serve Handover Yard [source:CASE-KALASATAMA] | Its resident incentive scheme and personal-data consent model |
+| STATION F | Large entrepreneurial communities require stable civic services and partner interfaces | Result relay and service desks in the Share Yard [source:CASE-STATION-F] | Its single-owner investment scale and membership pricing |
+| 22@ Barcelona | Industry renewal and neighbourhood public space advance together | Twenty renewal cells and a continuous public handover ground [source:CASE-22BARCELONA] | Its floor-area bonus and title-exchange instruments |
+| Kendall Square K2C2 | Research clusters need walkable cross-district links and civic interfaces | Eight east-west stitch links [source:CASE-KENDALL] | Its zoning procedure and transfer of development rights |
+| Knowledge Quarter London | Dense institutions collaborate around shared questions rather than one enclosed campus | Five regional exchange interfaces [source:CASE-KNOWLEDGE-QUARTER] | Its membership legal structure and cost-sharing rules |
 
 Regional synergy does not fabricate partnerships; it exchanges reusable methods. Beiwei Community may contribute authorised community-service questions. Future Science City and Huairou Science City may exchange methods for translating and measuring research outputs. Beijing E-Town may return engineering retest questions. Beijing-Tianjin-Hebei nodes may compare cross-regional service interfaces. The Handover Line exports protocols, rehearsal templates and failure records, not unverified “success”; it receives questions without promising data sharing, procurement or joint operation.
 
@@ -261,7 +261,20 @@ Honour records run a seven-step loop — nomination, evidence, dual review, publ
 
 ### Public-space component library: removable first, built second
 
-Public space along the line uses a kit of removable components rather than bespoke installations: movable barriers and floor decals, handover tables and work benches, shade and seating units, paper directories and duty boards, always-on lighting poles, step-free ramps and tactile guide strips, independently metered socket boxes, and temporary display racks. Each type states its installation method, maintenance responsibility, removal condition, and the standard to which the space is restored after removal. The intelligent layer is only a pluggable module mounted on these components; unplug it and the component is still usable public furniture, leaving no dead shell on the site.
+Public space along the line uses a kit of removable components rather than bespoke installations. Eight component types cover every on-site need of the twelve scenario nodes and four landmarks, and each states its installation method, maintenance responsibility type, and the standard to which the space is restored after removal. **The dimensions and methods below are reference specifications, not construction drawings**: final selection depends on road redlines, survey data, heritage control lines, and fire-safety opinions.
+
+| Component | Reference method (not a construction drawing) | Maintenance responsibility | Removal condition and restoration standard |
+| --- | --- | --- | --- |
+| Movable barriers and floor decals | Ballasted bases, no drilling; decals in removable material | Site operator | Removed the same day a rehearsal ends, leaving no adhesive or holes |
+| Handover tables and work benches | Modular tops in parts one person can carry | Resident duty team | Removed when the project exits; original passage width restored |
+| Shade and seating units | Independent or ballasted footings, never fixed to trees or existing structures | Landscape maintenance | May stay or go; if it stays it joins the public furniture register |
+| Paper directories and duty boards | Replaceable panels, so a revision changes the panel and not the base | Resident duty team | Base retained, panel replaced with each version |
+| Always-on lighting poles | Base lighting layer on its own supply, unaffected by the intelligent layer | Municipal lighting | Never removed with the project; the intelligent module detaches separately |
+| Step-free ramps and tactile guide strips | Gradient, width, and texture to accessibility requirements, continuing existing tactile paving | Site operator plus accessibility review | Never removed with the project; continuity must exist before any intelligent layer |
+| Independently metered socket boxes | Sub-metered from the site supply, with physical disconnection | Equipment maintenance | Whole box removed after disconnection; original paving restored |
+| Temporary display racks | Demountable frames, never hung from existing building facades | Cultural operator | Removed at the end of the display period; the interface returns to its prior state |
+
+The intelligent layer is only a pluggable module mounted on these components: unplug it and the component is still usable public furniture, leaving no dead shell on the site [standard:BARRIER-FREE-ENVIRONMENT-LAW].
 
 ### Wayfinding, signage, and the symbol set
 
@@ -359,6 +372,14 @@ International communication does not run on adjectives. This belt can export fou
 
 Outward statements are bound by the same discipline: they must carry the limits of validity and the unfinished items, must not present conceptual advice as a government decision, and must not present a digital rehearsal as field operation. Chinese and English deliverables correspond section by section and a glossary ships with the package, so that one mechanism does not become two different things in two languages [source:AGENT-TASKBOOK].
 
+### Ready-to-use copy for international communication
+
+The copy below can be published as it stands. A publisher may rewrite the wording but may not drop the three boundaries that follow it; the Chinese version is in the same section of `proposal.md`.
+
+> A century ago the Beijing–Zhangjiakou Railway left this corridor a shift-handover discipline: whoever releases must state what is released, whoever receives must judge independently whether to accept, and nothing unfinished may disappear at the change of shift. The Jing-Zhang Handover Line translates that discipline into a public protocol for artificial intelligence entering the city — build hands to verify, verify hands to open source, open source hands to city service, and complaints and shutdown reasons travel back along the same line. Every intelligent service on the line keeps a staffed counter, a continuous step-free route, and an exit record; anyone can switch the intelligent layer off at Takeover Booth Zero and the service carries on. We do not promise faster technology. We promise that every handover leaves a record someone can question.
+
+Three boundaries must always travel with the copy: first, every spatial proposal is a concept, not a government decision, and replaces no statutory approval; second, what this package has completed is a twelve-scenario offline tabletop rehearsal (12/12) with field rehearsals at 0/12, and it may not be described as built or in operation; third, the boundary geometry is provisional and the whole package is recomputed once official geometry arrives [source:AGENT-TASKBOOK].
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 Metrics fall into three groups. The first is recomputed directly from submitted geometry and answers internal area, length, count and ratio questions. The second depends on official regulatory and engineering material and remains pending. The third concerns operations and industry: it defines a measurement method first, while an authorised body later determines baseline and target. The v2 human layer presents only figures that change a design judgement; complete formulae, source files, confidence and recalculation triggers remain in `metrics.json` [depth:metrics_recalculation].
@@ -397,7 +418,25 @@ The central risk is not merely that “AI can fail”, but whether the city stil
 
 The compliance baseline uses policies for generative AI service, accessible environments and the use of smart technologies by older people. The proposal collects no personal private information, non-public spatial data or internal operating data, and makes no diagnosis, judgement, eligibility, grading or approval decision [source:GENERATIVE-AI-INTERIM-MEASURES] [source:BARRIER-FREE-ENVIRONMENT-LAW] [source:ELDERLY-SMART-TECH-PLAN]. Any rights-affecting decision returns to a qualified person; AI output remains assistance.
 
-Graphics, drawings, writing, geometric deductions, offline pages and tabletop rehearsal are original or programmatically produced. Public cases are compared in text only. Font licences, PDF embedding, audio/video method and toolchain versions are itemised in `sources.json` and `report/copyright_statement.md`. External use must never imply government endorsement, implementation approval, built status or completed public participation.
+Graphics, drawings, writing, geometric deductions, offline pages and tabletop rehearsal are original or programmatically produced; public cases are compared in words only, and none of their images, maps, trademarks or protected layouts is reproduced. The font rights chain closes inside the package and can be checked item by item on the spot:
+
+| Use | Font | Rights basis | How to check on the spot |
+| --- | --- | --- | --- |
+| Chinese embedded in the four PDFs | Noto Serif SC | SIL Open Font License 1.1 permits embedding and redistribution [source:FONT-NOTO-SERIF-SC] | `pdffonts drawings/a3-booklet.pdf`, read the emb column |
+| Latin text in the four PDFs | The PDF base fourteen | Built into the PDF specification; no font file ships with the package [source:FONT-PDF-BASE14] | Same command; base fonts do not appear as embedded |
+| Text in the 26 raster figures | Noto Sans CJK SC / Noto Sans | SIL OFL 1.1; glyphs are rasterised to pixels only [source:FONT-NOTO-RASTER] | Font files in the package number zero: `find <pkg> -name '*.tt[cf]' -o -name '*.otf'` |
+| Gallery cover text | Noto Sans CJK SC / Noto Sans | As above [source:FONT-NOTO-COVER] | As above |
+| Character encoding resource | Adobe CMap UniGB-UCS2-H | Public Adobe CMap; encoding only, no glyphs [source:FONT-ADOBE-CID] | No glyph embedding for it in `pdffonts` output |
+
+Audio is produced by local speech synthesis and contains no real voice samples [source:TTS-MACOS-SYNTH]; toolchain dependencies and their licences are registered item by item [source:TOOLCHAIN-BUILD]. External use must never imply government endorsement, implementation approval, built status or completed public participation.
+
+### The limits of this licence: giving it a recognised upper bound
+
+`COMMUNITY-DISPLAY-ONLY` is not a licence this proposal invented. It is one of the three enum values of the `license` field in the organiser's own `schema/proposal.schema.json` (the other two being `CC-BY-4.0` and `CC-BY-SA-4.0`). The identifier appears five times across the mainline — in `agent.html`, `schema/proposal.schema.json`, `scripts/scaffold_ai_submission.py`, `scripts/validate_submission.py`, and `templates/proposal.md` — always as an enum value, a template placeholder, or a validation whitelist, and **nowhere are its terms defined**. What follows is therefore a reading of an identifier the organiser left blank, not a self-made licence.
+
+The reason for not simply adopting a standard licence is concrete: both other enum values permit commercial use, while this proposal must exclude commercial use *and* forbid presenting the content as a government decision. No standard option satisfies both at once.
+
+So that a reader need not trust our wording first, here is an upper bound they can apply independently: **every use this licence grants is also permitted by CC BY-NC 4.0, so this licence is no broader than CC BY-NC 4.0.** Both require attribution and exclude commercial use; this licence additionally narrows derivatives to marked excerpts and translations and adds three restrictions CC does not carry — no presentation as a government decision, no implication of implementation approval, and no removal of the boundary statements. It follows that **a third party acting within CC BY-NC 4.0 cannot step outside this licence** (the converse does not hold). No legal opinion is needed to work out what may be done.
 
 All space, brand, event, organisation-type, cost-class and indicative-sequence statements are concept advice for professional, operating and communication teams to deepen. Official boundaries, controls, ownership, construction, procurement, budget, personnel, permission and operation must be lawfully confirmed by the competent parties.
 
