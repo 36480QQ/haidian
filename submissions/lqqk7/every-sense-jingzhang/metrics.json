@@ -362,7 +362,7 @@
   },
   "ai_off_declared_network_length_m": {
    "status": "known",
-   "value": 17322.014,
+   "value": 18882.811,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
@@ -376,7 +376,7 @@
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
     "projection": "EPSG:4548",
-    "verified_on": "2026-08-12",
+    "verified_on": "2026-08-18",
     "rounding": "0.001 m",
     "responsible_role": "spatial-analysis professional",
     "recalculation_trigger": "revision of any road centreline or of its design_role declaration",
@@ -399,7 +399,7 @@
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
     "projection": "EPSG:4548",
-    "verified_on": "2026-08-12",
+    "verified_on": "2026-08-18",
     "rounding": "integer count",
     "responsible_role": "spatial-analysis professional",
     "recalculation_trigger": "revision of any road centreline or of its design_role declaration",
@@ -425,7 +425,7 @@
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
     "projection": "EPSG:4548",
-    "verified_on": "2026-08-12",
+    "verified_on": "2026-08-18",
     "rounding": "integer count",
     "responsible_role": "spatial-analysis professional",
     "recalculation_trigger": "revision of any road centreline, of its design_role declaration, or of the node positions in that key area",
@@ -846,7 +846,7 @@
   },
   "ai_on_reachability_union_sqm": {
    "status": "known",
-   "value": 482266.876,
+   "value": 438298.947,
    "unit": "sqm",
    "source_files": [
     "geometry/roads.geojson",
@@ -861,7 +861,7 @@
    "assumptions": [
     "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
     "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
-    "The value is the four-summary reading recomputed for the A3 page 11 reachability ledger after the v7.8 whole-table rerun; the human-readable position of the same figure is 482,000 sqm at three significant digits."
+    "The value is the four-summary reading recomputed for the A3 page 11 reachability ledger after the v8.0 densified-centreline rerun; the human-readable position of the same figure is 438,000 sqm at three significant digits."
    ],
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
@@ -874,7 +874,7 @@
   },
   "ai_off_reachability_union_sqm": {
    "status": "known",
-   "value": 257208.435,
+   "value": 222078.217,
    "unit": "sqm",
    "source_files": [
     "geometry/roads.geojson",
@@ -902,7 +902,7 @@
   },
   "ai_off_reachability_difference_sqm": {
    "status": "known",
-   "value": 225058.441,
+   "value": 216220.73,
    "unit": "sqm",
    "source_files": [
     "geometry/roads.geojson",
@@ -930,7 +930,7 @@
   },
   "ai_off_reachability_shrink_ratio": {
    "status": "known",
-   "value": 0.466668,
+   "value": 0.493318,
    "unit": "ratio",
    "source_files": [
     "geometry/roads.geojson",
@@ -940,12 +940,12 @@
     "assets/figures/mobility-bluegreen-audit.png",
     "changelog.md"
    ],
-   "formula": "ai_off_reachability_difference_sqm / ai_on_reachability_union_sqm = 225058.441 / 482266.876; the same value reads 46.6668% as a percentage and 46.7% at the package's three-significant-digit display rule",
+   "formula": "ai_off_reachability_difference_sqm / ai_on_reachability_union_sqm = 216220.730 / 438298.947; the same value reads 49.3318% as a percentage and 49.3% at the package's three-significant-digit display rule",
    "confidence": "medium",
    "assumptions": [
     "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
     "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
-    "This is the figure whose title on assets/figures/mobility-bluegreen.png reads 46.7%; the ledger on A3 page 11 previously carried an inconsistent 48.16% under a different convention, corrected in v7.8."
+    "This is the figure whose title on assets/figures/mobility-bluegreen.png reads 49.3%; the ledger on A3 page 11 previously carried an inconsistent 48.16% under a different convention, corrected in v7.8."
    ],
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
@@ -958,7 +958,7 @@
   },
   "reachability_audit_network_length_m": {
    "status": "known",
-   "value": 20140.6,
+   "value": 22858.6,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson",
@@ -968,12 +968,12 @@
     "assets/figures/mobility-bluegreen-audit.png",
     "changelog.md"
    ],
-   "formula": "sum(length(centreline)) over the network the reachability ledger of A3 page 11 buffers, recomputed in EPSG:4548; the ledger prints the human-readable 20,141 m",
+   "formula": "sum(length(centreline)) over the network the reachability ledger of A3 page 11 buffers, recomputed in EPSG:4548; the ledger prints the human-readable 22,859 m",
    "confidence": "medium",
    "assumptions": [
     "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
     "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
-    "The figure is a ledger-convention network length and is distinct from ai_off_declared_network_length_m (17,322.014 m), which sums only centrelines whose design_role declares independence from AI. The two are not interchangeable."
+    "The figure is a ledger-convention network length and is distinct from ai_off_declared_network_length_m (18,882.811 m), which sums only centrelines whose design_role declares independence from AI. The two are not interchangeable."
    ],
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
@@ -986,7 +986,7 @@
   },
   "op04_reachability_difference_sqm": {
    "status": "known",
-   "value": 50920,
+   "value": 44356,
    "unit": "sqm",
    "source_files": [
     "geometry/roads.geojson",
@@ -996,7 +996,7 @@
     "assets/figures/mobility-bluegreen-audit.png",
     "changelog.md"
    ],
-   "formula": "the OP-04 row of the ten-node difference ledger on A3 page 11: area(AI-on reachability at OP-04) - area(AI-off reachability at OP-04), recomputed with the same script as the other nine rows; the same row prints a 49.7% share",
+   "formula": "the OP-04 row of the ten-node difference ledger on A3 page 11: area(AI-on reachability at OP-04) - area(AI-off reachability at OP-04), recomputed with the same script as the other nine rows; the same row prints a 63.4% share",
    "confidence": "medium",
    "assumptions": [
     "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
