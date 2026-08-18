@@ -121,8 +121,8 @@
   const labels = isEnglish
     ? ["01 Ordinary", "02 Proof", "03 Failure / stop", "04 Recovery"]
     : ["01 普通", "02 验证", "03 故障／停止", "04 恢复"];
-  const startLabel = isEnglish ? "Start 48-second journey" : "开始 48 秒旅程";
-  const pauseLabel = isEnglish ? "Pause journey" : "暂停旅程";
+  const startLabel = isEnglish ? "Play 48-second interface pacing" : "播放 48 秒界面示意";
+  const pauseLabel = isEnglish ? "Pause interface pacing" : "暂停界面示意";
   const advanceLabel = isEnglish ? "Advance one state" : "前进一个状态";
   let state = 0;
   let running = false;
@@ -155,10 +155,10 @@
     if (toggle) toggle.textContent = reducedMotion.matches ? advanceLabel : startLabel;
     if (complete) {
       render(cards.length - 1, 100);
-      announce(isEnglish ? "Journey complete at " : "旅程完成：");
+      announce(isEnglish ? "Interface pacing ends by displaying " : "界面示意结束，显示：");
       elapsedBeforeStart = 0;
     } else {
-      announce(isEnglish ? "Paused at " : "暂停于 ");
+      announce(isEnglish ? "Interface pacing paused while displaying " : "界面示意暂停于 ");
     }
   }
 
@@ -168,7 +168,7 @@
     const nextState = Math.min(cards.length - 1, Math.floor(elapsed / 12000));
     if (nextState !== state) {
       render(nextState, percent);
-      announce(isEnglish ? "Now at " : "现在进入 ");
+      announce(isEnglish ? "Interface pacing displays " : "界面示意显示 ");
     } else {
       render(state, percent);
     }
@@ -198,7 +198,7 @@
     running = true;
     startedAt = performance.now();
     if (toggle) toggle.textContent = pauseLabel;
-    announce(isEnglish ? "Journey started at " : "旅程开始：");
+    announce(isEnglish ? "Interface pacing starts by displaying " : "界面示意开始，显示：");
     timer = requestAnimationFrame(tick);
   }
 
@@ -209,7 +209,7 @@
     elapsedBeforeStart = 0;
     render(0, 0);
     if (toggle) toggle.textContent = reducedMotion.matches ? advanceLabel : startLabel;
-    announce(isEnglish ? "Reset to " : "已复位至 ");
+    announce(isEnglish ? "Interface pacing reset to " : "界面示意已复位至 ");
   }
 
   toggle?.addEventListener("click", start);

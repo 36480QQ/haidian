@@ -653,7 +653,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-      "digest": "b0389b9488eadc7348f4eeffc30aac89449c564a19732d0db2f9a49c8957094b",
+        "digest": "32c48e7df3d4d89fc2bb5b64d8f4a07635883fec084392e0b980f5ea8bbbcfd5",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -1908,7 +1908,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-      "digest": "3bec39cb7b897e3b8309f036ef21ab87a5d5e811ee06f34e533cf7d1b567751d",
+        "digest": "08d76422964647cb4a443fb5cd94bdd8c7b9575eb592b75164af2b5563692230",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -2169,7 +2169,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-      "digest": "2a131a62605e5f20a6f3c8219f2350a4d908534902f32421da2d9d4a66c1fde1",
+        "digest": "40d9167c19133180c529c10b32bbc3eb4dbb03edeceb9a70d1fe3bf1848e239e",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -3399,7 +3399,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-      "digest": "57bbf61c05dc28f31278ff74acb8ff76b99738dcbbe9c5a30b898609ed3ba51b",
+        "digest": "349c541c7f8e06f3b5ccc2d52f72e957bbd2dedbdcb9af88f7998318e719538c",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -4688,7 +4688,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a30e97e82bc7831efcffbd318ef8821c92cbb0d8faec7af0b28313b9be905d1f",
+        "digest": "28164a208d26a0704270f96c828b66564c50080bde408b82b4787923c97d22f6",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from the frozen Round 18 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
@@ -6609,7 +6609,7 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "8528af15beddc18bf87f4bcc70e00d5b26b5c6a47ee3e238fa91155789bc04eb",
+        "digest": "e4a97d2fef721a9633a04dc055a0d5ada1bf15ab1babeb15030a64c2c5c42af1",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from the final Round 35 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
@@ -6707,7 +6707,7 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "058faa8bb7f750a1286073708190f8920f83c11ac2fbff3bee9fb2bc1c054942",
+        "digest": "722776d52220b92d1924cb4b60f6704474c19627825e1f26d733250c3c0a0e3f",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 was recomputed from the accepted Round 19 file bytes after independent parallel review and is refreshed into manifest.json after this ledger is finalized."
       },
@@ -7805,7 +7805,7 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-      "digest": "3a6927cc81f36e6f76f1293cde27b815688ba43394fe86f6b5ec6217dd7670af",
+        "digest": "23d989c8b0a1d466186c7c8a2ab192478f420c34e9de43a1f86ced1fc74f2301",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },

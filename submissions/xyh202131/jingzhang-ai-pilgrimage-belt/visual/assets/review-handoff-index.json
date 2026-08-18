@@ -31,7 +31,7 @@
       "zh": "场景护照：12 个场景的门级与护照字段覆盖"
     }
   },
-  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R41",
+  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R42",
   "evidence_integrity": {
     "cold_read_answer_map": {
       "answers_checked": 8,
@@ -59,6 +59,25 @@
       },
       "scope_en": "This records only front-stage navigation repair. It does not create evidence, alter the 30-second/3-minute/15-minute claims, certify comprehension, or change maturity, rights or real-world status.",
       "scope_zh": "本记录只说明前台导航修复；不生成证据、不改变 30 秒／3 分钟／15 分钟主张、不认证理解效果，也不改变成熟度、权利或现实状态。"
+    },
+    "four_state_truth_r42": {
+      "audit_type": "editorial_and_declared_enum_check",
+      "red_before": {
+        "motion_controls": ["开始 48 秒旅程", "Start 48-second journey"],
+        "live_region_phrases": ["Journey started at", "Journey complete at"],
+        "recovery_non_authorization_on_visible_cards": 0,
+        "walkthrough_step_4_candidate_non_authorization": false,
+        "service_state_current_value_declared": false
+      },
+      "post_repair": {
+        "motion_is_labeled_interface_pacing": true,
+        "all_visible_recovery_cards_per_language_have_non_authorization_boundary": 2,
+        "walkthrough_step_4_candidate_is_not_authorization": true,
+        "service_state_current_value": "ordinary_non_ai_concept_requirement",
+        "service_state_current_value_declared": true
+      },
+      "scope_zh": "这是编辑和类型集合审计：不测量公众理解、无障碍结果、现实服务、恢复时长、批准、授权、G1 或现场结果。",
+      "scope_en": "This is an editorial and declared-value-set audit: it measures no public comprehension, accessibility result, real service, recovery duration, approval, authorization, G1 or field outcome."
     },
     "generator_enforced": true,
     "heading_parity": {
