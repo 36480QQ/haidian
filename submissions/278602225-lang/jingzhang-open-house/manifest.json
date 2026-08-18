@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex desktop agent, GPT-5 family, directed and reviewed by 278602225-lang"
   },
-  "generated_at": "2026-08-10T15:42:02Z",
+  "generated_at": "2026-08-18T14:16:25Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d084dd6453244f0caadcb508ee99874251aeac4f429ab1e27f2232ad39d97a68"
+      "sha256": "f0406d93bf63ead9a3ff6f87073d9489a2718d4add85dd72eb7555cdf87a7e86"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bc988602b54dc2df53558f4b93bfdd147327ddb1bff6f6bca532a8d1738b1b79"
+      "sha256": "f03b42a8388edcc0f02905aa533ea448e03e6787d7ab491b9db9a9a0eb0127d0"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9b9c9f3d4f8850ee40b52a09f6aa992f8bf0aed589a6a71b14a4cd3840901437"
+      "sha256": "ed6f16463c64cb69882cb5d65873a5ba0210a160380e77f41dba8ec48c52e2b5"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9c74816faab9d59f5ae82cbbe76bd178187699d71ddb4354985cafb2f75cb16c"
+      "sha256": "2d10e92db58c0a45080f3efdc427904b84c938b3019c6e90e9b403893ac60153"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
