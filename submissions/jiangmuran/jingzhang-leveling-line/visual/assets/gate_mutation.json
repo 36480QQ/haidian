@@ -1288,6 +1288,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M138",
+      "gate": "shipped_bilingual_qa.py",
+      "target": "build_matrix_evidence.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "让英文证据摘要直接引用**中文小节名**。**每一行照样通顺**，只是它点名的那一节在英文版里根本不存在——英文读者拿着这行去找，找不到。",
+      "what_en": "Make the English evidence summaries name the **Chinese** section titles. **Every row still reads fluently**; it simply names a section the English edition does not contain, so an English reader following the row finds nothing.",
+      "why_zh": "47 行摘要由构建composed，章节名来自**两版标题按序配对**推出的映射——而那份映射之所以成立，是因为 E351 把英文版缺的两个小节标题按名声明了。**一旦不查映射直接用原名，缺陷不会报错，只会让英文行指向中文目录。**",
+      "why_en": "The 47 summaries are composed by the build, and their section names come from a map derived by pairing the two editions' headings in order - a map that only holds because E351 declared, by name, the two subsections the English edition lacks. **Bypassing the map raises no error; it just makes the English rows point into the Chinese table of contents.**"
+    },
+    {
       "id": "M136",
       "gate": "attribution_kind_qa.py",
       "target": "build_matrix_evidence.py",
@@ -1652,7 +1665,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 135,
+  "caught": 136,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",

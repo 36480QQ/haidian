@@ -125,7 +125,7 @@
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 5
       },
-      "evidence_summary_en": "This entry rests on the section '总体概念与命名体系'; layers buildings.geojson, land_use.geojson, public_space.geojson, roads.geojson; metrics leveling_spine_length_m, benchmark_count (class 1, recomputed independently by visual/assets/verify.js); drawings site-overview.png, hero-leveling-line.png; sources BOUNDARY-SOURCE (registered in sources.json), together. **Of 13 references the reviewer can open 8**; the other 5 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the section 'Naming and identity system (agent.1)'; layers buildings.geojson, land_use.geojson, public_space.geojson, roads.geojson; metrics leveling_spine_length_m, benchmark_count (class 1, recomputed independently by visual/assets/verify.js); drawings site-overview.png, hero-leveling-line.png; sources BOUNDARY-SOURCE (registered in sources.json), together. **Of 13 references the reviewer can open 8**; the other 5 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "land_use_layout",
@@ -166,7 +166,7 @@
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 1
       },
-      "evidence_summary_en": "This entry rests on the section '用地是完整剖分'; layers land_use.geojson; metrics land_use_class_count, land_use_feature_count (class 1, recomputed independently by visual/assets/verify.js); drawings land-use-structure.png; sources SITE-PACKAGE (registered in sources.json), together. **Of 9 references the reviewer can open 8**; the other 1 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the section 'Land use is a complete partition, not scattered zones'; layers land_use.geojson; metrics land_use_class_count, land_use_feature_count (class 1, recomputed independently by visual/assets/verify.js); drawings land-use-structure.png; sources SITE-PACKAGE (registered in sources.json), together. **Of 9 references the reviewer can open 8**; the other 1 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "development_intensity_controls",
@@ -545,7 +545,7 @@
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       },
-      "evidence_summary_en": "This entry rests on the section '更新项目清单'; layers phasing.geojson; metrics renewal_project_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings evidence-circuit.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 9 references the reviewer can open 7**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the section 'Renewal Projects, Implementation Policy, and Phasing'; layers phasing.geojson; metrics renewal_project_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings evidence-circuit.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 9 references the reviewer can open 7**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "phasing_implementation",
@@ -586,7 +586,7 @@
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       },
-      "evidence_summary_en": "This entry rests on the section '首轮闭合试验'; layers phasing.geojson; metrics phase_count (class 1, recomputed independently by visual/assets/verify.js); metrics tabletop_case_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings metrics-evidence.png, evidence-circuit.png; sources AGENT-TASKBOOK, CASE-C6-ARTIFACT-EVALUATION (registered in sources.json), together. **Of 11 references the reviewer can open 9**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the section 'The F1 admission trial: this proposal's own strictest gate, walked once'; layers phasing.geojson; metrics phase_count (class 1, recomputed independently by visual/assets/verify.js); metrics tabletop_case_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings metrics-evidence.png, evidence-circuit.png; sources AGENT-TASKBOOK, CASE-C6-ARTIFACT-EVALUATION (registered in sources.json), together. **Of 11 references the reviewer can open 9**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "metrics_recalculation",
@@ -627,7 +627,7 @@
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
       },
-      "evidence_summary_en": "This entry rests on the section '评审可以自己重算'; layers site_boundary.geojson, land_use.geojson; metrics matrix_reference_count, shipped_verification_script_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings metrics-evidence.png; sources SITE-PACKAGE, FIELD-CENSUS-2026-08 (registered in sources.json), together. **Of 11 references the reviewer can open 9**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the section 'The reviewer can recompute it: `node visual/assets/verify.js`'; layers site_boundary.geojson, land_use.geojson; metrics matrix_reference_count, shipped_verification_script_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings metrics-evidence.png; sources SITE-PACKAGE, FIELD-CENSUS-2026-08 (registered in sources.json), together. **Of 11 references the reviewer can open 9**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "risk_missing_data",

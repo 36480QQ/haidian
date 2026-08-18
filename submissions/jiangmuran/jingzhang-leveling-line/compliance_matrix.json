@@ -352,7 +352,7 @@
       "risk_ids": [
         "RISK-MATURITY-001"
       ],
-      "evidence_summary_en": "This entry rests on the sections 'AI创新生态图谱与要素机制', '全球AI创新生态案例研究'; layers land_use.geojson; metrics industry_test_scenario_count (class 1, recomputed independently by visual/assets/verify.js); metrics case_study_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings ecosystem.png; sources AGENT-TASKBOOK, CASE-C1-ALGORITHM-REGISTER, CASE-C3-AI-VERIFY (registered in sources.json), together. **Of 13 references the reviewer can open 9**; the other 4 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the sections 'Innovation ecosystem and element mechanisms (agent.2)', 'Global AI innovation ecosystem cases (agent.2)'; layers land_use.geojson; metrics industry_test_scenario_count (class 1, recomputed independently by visual/assets/verify.js); metrics case_study_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings ecosystem.png; sources AGENT-TASKBOOK, CASE-C1-ALGORITHM-REGISTER, CASE-C3-AI-VERIFY (registered in sources.json), together. **Of 13 references the reviewer can open 9**; the other 4 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.1.2",
@@ -753,7 +753,7 @@
         "PROV-KEY-001",
         "CONSTRAINT-001"
       ],
-      "evidence_summary_en": "This entry rests on the sections '众智园 AI 自主创新加速区', 'Retain, renovate, demolish: principles common to all three'; layers land_use.geojson; metrics land_use_class_count, benchmark_first_order_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 16 references the reviewer can open 10**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the sections 'Zhongzhiyuan AI Autonomous Innovation Acceleration Area (BM-1, the tolerance datum)', 'Retain, renovate, demolish: principles common to all three'; layers land_use.geojson; metrics land_use_class_count, benchmark_first_order_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 16 references the reviewer can open 10**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.3.2",
@@ -806,7 +806,7 @@
         "PROV-KEY-002",
         "BLDG-001"
       ],
-      "evidence_summary_en": "This entry rests on the sections '北京 AI 原点社区', 'Retain, renovate, demolish: principles common to all three'; layers constraints.geojson; metrics benchmark_count (class 1, recomputed independently by visual/assets/verify.js); metrics tabletop_case_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings key-areas.png, evidence-circuit.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 17 references the reviewer can open 9**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the sections 'Beijing AI Origin Community (BM-0, the network origin)', 'Retain, renovate, demolish: principles common to all three'; layers constraints.geojson; metrics benchmark_count (class 1, recomputed independently by visual/assets/verify.js); metrics tabletop_case_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings key-areas.png, evidence-circuit.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 17 references the reviewer can open 9**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.3.3",
@@ -858,7 +858,7 @@
         "BLDG-003",
         "BLDG-005"
       ],
-      "evidence_summary_en": "This entry rests on the section '大钟寺 AI 产业集聚区'; layers key_areas.geojson, buildings.geojson; metrics building_footprint_area_sqm, key_area_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 16 references the reviewer can open 8**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the section 'Dazhongsi AI Industry Cluster (BM-2, the high-frequency reading point)'; layers key_areas.geojson, buildings.geojson; metrics building_footprint_area_sqm, key_area_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 16 references the reviewer can open 8**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "agent.1",
@@ -1165,7 +1165,7 @@
         "PHASE-002",
         "PHASE-003"
       ],
-      "evidence_summary_en": "This entry rests on the section '荣誉展示体系与公共空间组件库'; layers public_space.geojson; metrics phase_count (class 1, recomputed independently by visual/assets/verify.js); metrics renewal_project_count, errata_entry_count, shipped_verification_script_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings metrics-evidence.png, evidence-circuit.png; sources AGENT-TASKBOOK, CASE-C6-ARTIFACT-EVALUATION (registered in sources.json), together. **Of 20 references the reviewer can open 11**; the other 9 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the section 'Honours, kit of parts, and signage (agent.4, agent.5)'; layers public_space.geojson; metrics phase_count (class 1, recomputed independently by visual/assets/verify.js); metrics renewal_project_count, errata_entry_count, shipped_verification_script_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings metrics-evidence.png, evidence-circuit.png; sources AGENT-TASKBOOK, CASE-C6-ARTIFACT-EVALUATION (registered in sources.json), together. **Of 20 references the reviewer can open 11**; the other 9 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     }
   ],
   "taskbook_units": {
