@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v2.7 - 2026-08-18
+
+- 恢复交通慢行蓝绿核查图和空间—AI—实施—公共价值四闭环证据板，使五组固定评审图各自承担明确的城市设计任务，不再以通用流程图替代交通与公共价值证据。
+- 将三处重点区总图与 AI 原点平面—剖面—运营详图合并为固定可见证据：首屏同时保留三处差异化分工，并把首期 S06 落到 `AN-V21-005` 候选界面、共享首层、无障碍界面和退出闭环。
+- 重构中英文正文及报告首屏，以“百年前让速度服从山势、今天让技术速度服从城市尺度与公共利益”统领空间主张；总体空间图前置，百日六窗口仅完整出现一次。
+- 修复视觉索引首图懒加载风险、报告重复标题和英文返回链接；统一矩阵版本字段与 v2.7 状态表述。
+
+- Restored the access/rail/blue-green audit and the four-loop spatial–AI–delivery–public-value evidence board so each fixed review slot performs its stated urban-design task.
+- Combined the three-key-area overview with the AI Origin plan–section–operation detail, retaining differentiated roles while placing S06 at the `AN-V21-005` candidate interface, shared ground floor, accessible edge, and exit loop.
+- Rebuilt the bilingual opening around one Jing-Zhang proposition: a century ago speed answered to terrain; today technological speed must answer to urban scale and public value. The spatial plan now leads, and the six 100-day windows appear in full only once.
+- Removed the first-image lazy-load risk, duplicate report title, and broken English return link; synchronised matrix version fields with v2.7.
+
 ## v2.6 - 2026-08-18
 
 - 将全包统一为“四个工作阶段、六个决策窗口”：D90 仅办理强制收尾交接，D100 才形成唯一的保留、优化、复原或不转段决定；同步修正正文、任务矩阵、S06 交付包与中英文图面中的旧口径。
