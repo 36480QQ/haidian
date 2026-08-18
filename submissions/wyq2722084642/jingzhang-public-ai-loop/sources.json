@@ -203,10 +203,31 @@
       "limitations": "A design proposal, not legal advice or an approved operating policy."
     },
     {
+      "id": "OSM-CONTEXT-20260818",
+      "title": "OpenStreetMap contextual roads, rail, water, parks and stations",
+      "publisher": "OpenStreetMap contributors",
+      "retrieved_at": "2026-08-18",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "open_public_context_data",
+      "usage": "Contextual urban fabric behind the five proposal figures. The raw and derived working files are not submitted because package assets may only contain approved media formats; reproducibility metadata remains in this source record.",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "retrieved_at_utc": "2026-08-18T01:48:56Z",
+      "bbox_wgs84": [
+        116.329,
+        39.935,
+        116.366,
+        40.031
+      ],
+      "query_sha256": "051cfa8f600ccbb25d24d527be69cd0f5942f5f4e5320b01c102c32bf53a34a5",
+      "response_sha256": "220f29203ba91e9df30e8228d67db3512915b72a7b59ec70499d3f88c4b2ecd0",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "limitations": "Public volunteered context only. It does not define the official project boundary, parcel ownership, road redlines, surveyed conditions, statutory controls, engineering feasibility or approval status."
+    },
+    {
       "id": "PRESENTATION-BUILD-20260814",
       "source_type": "agent_authored_build_process",
-      "retrieved_at": "2026-08-14",
-      "usage": "Local Python, Pillow, and ReportLab build process used to generate the ten bilingual core figures, aligned offline visual pages, 11-page bilingual A3 booklets, and 7-page bilingual A0 board sets from package-authored copy and registered metrics.",
+      "retrieved_at": "2026-08-18",
+      "usage": "Local Python, Matplotlib, Pillow, and ReportLab build process used to generate the ten bilingual core figures, aligned offline visual pages, 11-page bilingual A3 booklets, and 7-page bilingual A0 board sets from package-authored copy, registered metrics and attributed contextual OSM vectors.",
       "license": "COMMUNITY-DISPLAY-ONLY",
       "limitations": "The formal submission allowlist does not include build scripts, so the process is documented but its local helper script is not submitted. It is not a source of statutory controls, surveyed geometry, engineering conclusions, or implementation approval."
     },
