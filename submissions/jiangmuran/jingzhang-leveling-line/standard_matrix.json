@@ -44,7 +44,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 2
-      }
+      },
+      "self_check_scope_zh": "`BOUNDARY_TRUST`、`KEY_AREAS_TRUST` 是**就绪性提醒，不是符合性结论**——严重度 `major`，其原文说的是本包几何仍为临时值、须在专业评分前替换为官方边界。把它们列在这里是为了让读者看见这条依据的临时性，不是为了充数。 直接支撑本条的实跑检查：`SPATIAL_REVIEW`（blocking）。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
@@ -86,7 +87,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 1
-      }
+      },
+      "self_check_scope_zh": "直接支撑本条的实跑检查：`PROFESSIONAL_EVIDENCE`（blocking）、`VISUAL_PACKAGING`（blocking）。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -129,7 +131,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 2
-      }
+      },
+      "self_check_scope_zh": "`BOUNDARY_TRUST` 是**就绪性提醒，不是符合性结论**——严重度 `major`，其原文说的是本包几何仍为临时值、须在专业评分前替换为官方边界。把它们列在这里是为了让读者看见这条依据的临时性，不是为了充数。 直接支撑本条的实跑检查：`SPATIAL_REVIEW`（blocking）。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -171,7 +174,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 1
-      }
+      },
+      "self_check_scope_zh": "`BOUNDARY_TRUST` 是**就绪性提醒，不是符合性结论**——严重度 `major`，其原文说的是本包几何仍为临时值、须在专业评分前替换为官方边界。把它们列在这里是为了让读者看见这条依据的临时性，不是为了充数。 直接支撑本条的实跑检查：`DETERMINISTIC_VALIDATION`（blocking）。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -213,7 +217,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 1
-      }
+      },
+      "self_check_scope_zh": "`LAND_USE_TOPOLOGY` 是**就绪性提醒，不是符合性结论**——严重度 `major`，其原文说的是本包几何仍为临时值、须在专业评分前替换为官方边界。把它们列在这里是为了让读者看见这条依据的临时性，不是为了充数。 直接支撑本条的实跑检查：`SPATIAL_REVIEW`（blocking）。"
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
@@ -251,7 +256,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 2,
         "reviewer_cannot_open": 1
-      }
+      },
+      "self_check_scope_zh": "`BOUNDARY_TRUST` 是**就绪性提醒，不是符合性结论**——严重度 `major`，其原文说的是本包几何仍为临时值、须在专业评分前替换为官方边界。把它们列在这里是为了让读者看见这条依据的临时性，不是为了充数。 **本条没有任何一道实跑检查直接支撑**，其依据是上列章节与所引条文；写明这一点，好过让 `self_check_ids` 看起来像证据。"
     },
     {
       "standard_id": "BARRIER-FREE-ENVIRONMENT-LAW",
@@ -290,7 +296,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 1,
         "reviewer_cannot_open": 1
-      }
+      },
+      "self_check_scope_zh": "**`PKG_ACCESSIBILITY_QA` 不是本条的证据。** 该检查测的是**本文档**的对比度与字号，不是建成环境对残疾人与老年人的无障碍程度——第三十九条说的是后者。本条的依据是设计承诺（每个场景必须有无 AI 等价服务路径，且该路径不得更慢、不得多跑一趟）与所引条文，**不是这道检查**；本包没有任何一道闸门能证明建成环境的无障碍，也不假装有。 **本条没有任何一道实跑检查直接支撑**，其依据是上列章节与所引条文；写明这一点，好过让 `self_check_ids` 看起来像证据。"
     },
     {
       "standard_id": "GENERATIVE-AI-INTERIM-MEASURES",
@@ -328,7 +335,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 1,
         "reviewer_cannot_open": 1
-      }
+      },
+      "self_check_scope_zh": "直接支撑本条的实跑检查：`PKG_ENTRANCE_RULE_QA`（info）。"
     },
     {
       "standard_id": "ELDERLY-SMART-TECH-PLAN-2020-45",
@@ -366,7 +374,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 1,
         "reviewer_cannot_open": 1
-      }
+      },
+      "self_check_scope_zh": "**`PKG_POSITIONING_QA` 不是本条的证据。** 该检查从任务书读出三条定位与五项功能，**与保留非数字服务渠道这件事无关**。本条的依据是同一条设计承诺——申诉入口必须有非扫码方式，否则申诉权对不使用智能手机的居民不成立——而不是这道检查。 **本条没有任何一道实跑检查直接支撑**，其依据是上列章节与所引条文；写明这一点，好过让 `self_check_ids` 看起来像证据。"
     }
   ]
 }
