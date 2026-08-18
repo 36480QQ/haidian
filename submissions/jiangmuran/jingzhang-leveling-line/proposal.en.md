@@ -907,11 +907,11 @@ Land use follows the classification conventions of [standard:MNR-LAND-USE-CLASSI
 
 ### Land use is a complete partition, not scattered zones
 
-Regulatory-plan depth requires land use to cover the site, not to place a few functions on top of it. This package's `land_use.geojson` is therefore a **complete, non-overlapping partition of the overall design area**: eleven functional classes (five areas plus six building plots) are clipped in priority order with successive differencing, and the remainder is cut into blocks along the arterials that actually run through the site. All of it is generated deterministically by script.
+Regulatory-plan depth requires land use to cover the site, not to place a few functions on top of it. This package's `land_use.geojson` is therefore a **complete, non-overlapping partition of the overall design area**: eleven functional parcels (five areas plus six building plots) are clipped in priority order with successive differencing, and the remainder is cut into blocks along the arterials that actually run through the site. All of it is generated deterministically by script.
 
 **The six building plots (LU-B01–LU-B06) are new in this version, and the reason has to be stated or they look like land invented to pass a gate.** Adding the gate surfaced this: three of the six footprints stood on parcels whose land-use code contradicted their own building type. The L2 closure stele and the L3 zeroing point are cultural display, and sat on research land and commercial land respectively; the Xueyuan Road interchange is a mobility hub, and sat entirely inside **park green space** — so 7,820 m² of building footprint was being counted as park in `green_ratio_in_partition`.
 
-Moving the buildings does not work. There is exactly one 0803 cultural parcel in the whole scheme, a 140 m disc at BM-0, 3.16 km from L2 and 4.62 km from L3; stacking three landmarks onto it would destroy the three-point distribution the scheme is built on. So the land changed rather than the buildings: **each footprint now has a plot whose use matches its type, carved out of the surrounding parcel** — which is the ordinary relationship between a building and its plot in a regulatory plan, and was simply never drawn. The `LAND_USE_ALLOWS` gate stayed strict — 1401 park and 16 reserved map to the empty set, hosting nothing — and the geometry moved to satisfy it rather than the gate loosening to accommodate the geometry.
+Moving the buildings does not work. Until that change there was one 0803 cultural parcel, a 140 m disc at BM-0, 3.16 km from L2 and 4.62 km from L3; stacking three landmarks onto it would destroy the three-point distribution the scheme is built on. So the land changed rather than the buildings: **each footprint now has a plot whose use matches its type, carved out of the surrounding parcel** — which is the ordinary relationship between a building and its plot in a regulatory plan, and was simply never drawn. The `LAND_USE_ALLOWS` gate stayed strict — 1401 park and 16 reserved map to the empty set, hosting nothing — and the geometry moved to satisfy it rather than the gate loosening to accommodate the geometry.
 
 The interchange takes **1207 urban road land**, the only transport code in the project's enum subset. It is the closest available match, not an exact one, and that is stated here rather than claimed more strongly. It is also why the partition went from six classes to seven.
 
@@ -1424,7 +1424,7 @@ Because boundaries are provisional, all of the above are **recomputed as a whole
 
 Both numbers are true; what was missing was saying so. **Both now ship, and both are recomputed independently by `verify.js`**: 0.1966 from the green layer, 0.1220 from the land-use layer. Publishing only the first meant a reviewer recomputing from land use would land on a different figure with no way to tell which one counted — **and a recomputation that can reach two answers is not a recomputation.**
 
-**Class 2, requiring official regulatory support, held at `unknown`:** [metric:floor_area_ratio] and building height, density, setbacks, road redlines. Filling estimates into a gap is fabricated certainty.
+**Class 2, requiring official regulatory support, held at `unknown`:** the five metrics whose `metric_class` is 2, [metric:floor_area_ratio] among them. Filling estimates into a gap is fabricated certainty.
 
 **Class 3, requiring continuous re-survey calibration, currently without baselines** (all four now in `metrics.json`, each with a collector, a cadence, a missed-reading rule and a dispute route; baseline and target null, E218)**:** per-scenario closure error f, tolerance compliance rate, non-AI path coverage, and the count of re-surveys initiated by P4/P5/P7. Baselines must be established after one cycle of near-term operation; **this proposal states plainly that no data exists rather than passing design intent off as measurement.**
 
@@ -1502,7 +1502,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**25 of 793** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**26 of 793** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 
@@ -1526,11 +1526,11 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-331 entries. By finder:
+333 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 37 | Run against the shipped package, not a draft |
+| Independent audit | 39 | Run against the shipped package, not a draft |
 | The author | 212 | Found while working |
 | This package's own gate | 24 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
@@ -1544,10 +1544,10 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Shape | Count |
 |---|---|
 | An easy measure | 60 |
-| Two copies drifted | 50 |
+| Two copies drifted | 51 |
 | Shipped unseen | 30 |
 | Uncheckable | 26 |
-| Outlived the package | 23 |
+| Outlived the package | 24 |
 | Nothing fails it | 17 |
 | Outlived its line | 14 |
 | Recorded where found | 14 |
@@ -1837,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files none of which the reviewer receives, 1167 KB, 1,807 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.76 s**; 9 files none of which the reviewer receives, 1174 KB, 1,811 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
@@ -1881,7 +1881,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 83 of 86 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
+**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 85 of 88 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
 
 <!-- PDFPAGE1:BEGIN -->
 
