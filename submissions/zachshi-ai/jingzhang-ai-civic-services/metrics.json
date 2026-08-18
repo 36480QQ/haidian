@@ -405,6 +405,42 @@
       ],
       "reason": "No authorized field baseline",
       "rationale": "现场时限达标率待试点"
+    },
+    "accountability_stand_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/accountability-stands.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "5"
+    },
+    "accountability_case_count": {
+      "status": "known",
+      "value": 72,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/accountability-stands.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "72"
+    },
+    "completion_display_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/accountability-stands.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "4"
     }
   }
 }
