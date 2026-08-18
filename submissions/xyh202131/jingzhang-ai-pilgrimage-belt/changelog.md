@@ -1,5 +1,25 @@
 # 方案迭代记录 / Changelog
 
+## v41.0 - 2026-08-18
+
+**Evidence-first reviewer reading ladder / 证据优先的评审阅读梯**
+
+- 串行门：第 40 轮 PR #3204 已合并（head `d4d9f5dd86ed61a121ed716c964968ae7aaecd16`，merge `596ddd89ffd75edd59cc4f1afa70e6f0ec5e3d9a` 已包含于 canonical `main@5fb96256c5b756f2f7d1880b7594352aa0eb25e1`）；同一投稿包开放 PR 为 0，源工作树洁净。本轮只修复首屏阅读路径的可复现入口断点。
+- Serial gate: Round 40 PR #3204 is merged (head `d4d9f5dd86ed61a121ed716c964968ae7aaecd16`; merge `596ddd89ffd75edd59cc4f1afa70e6f0ec5e3d9a` is contained in canonical `main@5fb96256c5b756f2f7d1880b7594352aa0eb25e1`); the package has zero open PRs and the source worktree was clean. This round repairs only a reproducible first-screen reading-entry break.
+
+| 已具备 / Already present | 仍薄弱 / RED | 必须冻结 / Locked | 本轮实施 / Implemented |
+|---|---|---|---|
+| 双语 visual 已有 30 秒／3 分钟／15 分钟三张阅读卡、六项主导航、八问唯一答案与 D01—D08/H01—H07 证据入口 | 每版有 3 张阅读卡但卡内直接行动链接为 0；3 分钟和 15 分钟的起点只能从说明文字推断，读者必须自行滚动或猜测 | 双轨总纲、三原型、四态与 G0—G3 分离、JZ-AIOS、三载体、九份 geometry、`metrics.json`、12/8/3/36、G0/NO-GO/provisional/rights、媒体和 PDF 页数 | 三张卡各新增一个可键盘访问的静态起步链接：概念/边界 → `#cold-read-proof-boundary`，普通生活 → `#ordinary-life`，证据/交接 → `#review-handoff`；双语结构和六项主导航不变 |
+
+- 修复前 RED 可重放：统计 `visual/index.html` 与 `visual/index.en.html` 的 `.reading-lanes` 内 `<a>` 元素，两版均为 0，而每版均有 3 张卡。修复后每版有 3 个显式起步链接，目标一致且不依赖 JavaScript；`review-handoff-index.json#evidence_integrity.reading_ladder_r41` 保存前后计数与边界。
+- Reproducible RED: counting `<a>` elements inside `.reading-lanes` in both `visual/index.html` and `visual/index.en.html` returned 0 while each page contained three cards. After repair each page exposes three explicit, matching start links without JavaScript; `review-handoff-index.json#evidence_integrity.reading_ladder_r41` preserves the before/after counts and boundary.
+- 本轮无新媒体、来源、主张、场景、项目、重点区、治理合同或页面。修复只改变既有阅读入口，不把概念图、离线导航或验证通过写成现场证据、理解测量、专业意见、批准、G1、授权或清权。四份 PDF 因内容未受影响而保持原字节与页数。
+- This round adds no media, source, claim, scene, project, key area, governance contract or page. It changes only existing reading entry; it does not turn concept figures, offline navigation or a passing check into field evidence, measured comprehension, professional opinion, approval, G1, authorisation or clearance. The four PDFs keep their existing bytes and page counts because their content is unaffected.
+- 权利台账的逐字节核验保持 138 条普通文件，再加 manifest、`self_check.json`、ledger 三个明确例外：manifest 和 ledger 不能哈希自身；`self_check_submission.py` 在同一最终化步骤中重写 `self_check.json` 并把最终 SHA-256 写入 manifest，所以该记录只回链 manifest 的最终摘要。例外不改变 `not_fully_cleared`、独立逐文件清权 0 或任何可用性结论。
+- Rights-ledger byte verification covers 138 ordinary files plus three explicit exceptions: manifest and ledger cannot hash themselves; `self_check_submission.py` rewrites `self_check.json` and writes its final SHA-256 into manifest in the same finalization step, so that record back-links only to the final manifest digest. The exception does not change `not_fully_cleared`, zero independent file-level clearance audits or any use decision.
+- 八个长期真实性反问：修复更清楚而非更花哨；三处继续可由空间关系区分；非 AI 路径继续完整；故障只停验证叠层；恢复不等于授权、批准或 G1；既有图像继续明确为概念展示；中英文、visual、报告和 PDF 指向同一结论；本轮无新媒体，既有生成方法、来源、模型、权利和不可证明事项披露不变。geometry、`metrics.json`、12/8/3/36、G0、NO-GO、provisional、现实结果 0、`not_fully_cleared` 和独立逐文件清权 0 保持不变。
+- Eight long-running truth checks: the repair is clearer rather than more decorative; three places remain distinguishable by spatial relation; the non-AI path stays complete; failure stops only the proof overlay; recovery is not authorisation, approval or G1; existing imagery remains labelled as conceptual display; Chinese, English, visual, report and PDF state the same outcome; and this round adds no media, leaving generation-method, source, model, rights and non-provable-matter disclosures unchanged. Geometry, `metrics.json`, 12/8/3/36, G0, NO-GO, provisional status, zero real-world outcomes, `not_fully_cleared` and zero independent file-level clearance audits remain unchanged.
+
 ## v40.0 - 2026-08-18
 
 **Spatial-distinction cold-read repair / 空间差异冷读修复**

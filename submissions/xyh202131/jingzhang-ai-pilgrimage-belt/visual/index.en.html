@@ -165,6 +165,33 @@
         background: #e4eceb;
         margin: 3px;
       }
+      .reading-lanes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 14px;
+        margin: 22px 0;
+      }
+      .reading-lane {
+        background: #fff;
+        border: 1px solid #d8dbd4;
+        border-radius: 14px;
+        padding: 16px;
+      }
+      .reading-lane strong {
+        color: var(--green);
+        font-size: 20px;
+      }
+      .reading-lane p {
+        margin: 6px 0 0;
+      }
+      .reading-lane-action {
+        display: inline-block;
+        margin-top: 10px;
+        color: var(--ink);
+        font-weight: 700;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
       footer {
         background: var(--ink);
         color: #dce5e9;
@@ -212,9 +239,9 @@
         </figure>
         <p id="cold-read-proof-boundary" class="entry-lead"><strong>One concept:</strong> the continuous ordinary track keeps the ordinary task complete, while the intermittent proof track is a voluntary, bounded and stoppable side overlay: Zhongzhiyuan VERIFY, Origin Community CO-CREATE, Dazhongsi PUBLISH. <strong>One boundary:</strong> the proposal remains G0 with provisional geometry; clarity is not site precision.</p>
         <div class="reading-lanes" aria-label="Three reading depths">
-          <article class="reading-lane"><strong>30 seconds</strong><p>Read Figure 01: twin tracks, three prototypes, failure siding, six signals, and the provisional boundary.</p></article>
-          <article class="reading-lane"><strong>3 minutes</strong><p>Follow the six front-stage sections: cover—ordinary life—four-state journey—three places—public signals—professional handoff.</p></article>
-          <article class="reading-lane"><strong>15 minutes</strong><p>Open the evidence library and audit D01–D08, H01–H07, rights, sources, and recalculation triggers.</p></article>
+          <article class="reading-lane"><strong>30 seconds</strong><p>Recognize one concept and one boundary first: twin tracks, three prototypes, failure siding and provisional geometry.</p><a class="reading-lane-action" href="#cold-read-proof-boundary">Check concept and boundary here →</a></article>
+          <article class="reading-lane"><strong>3 minutes</strong><p>Start with ordinary life, then follow the four-state journey, three places, public signals and professional handoff.</p><a class="reading-lane-action" href="#ordinary-life">Start with ordinary life →</a></article>
+          <article class="reading-lane"><strong>15 minutes</strong><p>Enter through professional handoff, then trace each object to D01–D08, H01–H07, rights, sources and recalculation triggers.</p><a class="reading-lane-action" href="#review-handoff">Start with evidence and handoff →</a></article>
         </div>
         <details class="entry-evidence">
           <summary>Open the three-frame site evidence and provisional-boundary note</summary>

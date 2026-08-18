@@ -4,6 +4,24 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 41 Evidence-first reviewer reading ladder / 第 41 轮证据优先的评审阅读梯
+
+第 41 轮只在第 40 轮 PR #3204 合并（head `d4d9f5dd86ed61a121ed716c964968ae7aaecd16`，merge `596ddd89ffd75edd59cc4f1afa70e6f0ec5e3d9a` 已包含于 canonical `main@5fb96256c5b756f2f7d1880b7594352aa0eb25e1`）、同包无开放 PR、工作树洁净后开始。审计没有寻找新的方案方向，而是检查前台承诺的三档阅读是否能真正启动。RED 是可重复的 DOM 计数：中英文 `.reading-lanes` 各有三张卡，但各有 0 个 `<a>`，因此 3 分钟“从哪里开始”和 15 分钟“从哪里进入证据”只能靠说明文字推断。修复把三张既有卡变成三个原生、可键盘访问、无 JavaScript 的起步链接：30 秒回到一个概念与一个边界，3 分钟从普通生活开始，15 分钟从专业交接进入。链接只定位既有内容，既不展开或隐藏证据，也不制造一个新的阅读层。
+
+结构化索引 `review-handoff-index.json#evidence_integrity.reading_ladder_r41` 保存 3 卡／0 直接行动链接的修复前记录，以及修复后每语言 3 个目标一致的静态链接。这个记录只是编辑导航核验：不认证真实评审者的理解、公众反馈、专家意见或评审结论。它不改变“30 秒／3 分钟／15 分钟”所指的既有内容，也不让离线页面、机器检查或清晰表达变成现场证据、专业责任、批准、G1、授权或权利清除。
+
+权利台账对 138 个普通文件执行摘要核验，并明确三项狭义的字节核验例外。manifest 和 ledger 不能对自身哈希；`self_check_submission.py` 在同一最终化步骤中替换 `self_check.json` 并把其最终 SHA-256 写入 manifest，因此台账只回链该最终 manifest 摘要，不保留会立刻过期的重复摘要。这项机械例外不降低 manifest 校验、权利状态、独立审计数量或使用边界。
+
+本轮无新媒体；生成方法、来源、模型、权利和不可证明事项均未变化。图像继续是 G0 概念展示，不是现状、已建成状态、无障碍结果、人员承诺或现实恢复时间。geometry 九文件、`metrics.json`、12 个场景、8 个项目、3 个重点区、36 个概念用地单元、普通—验证—故障—恢复、非 AI 路径、G0、NO-GO、临时边界、现实结果 0、`not_fully_cleared` 和独立逐文件清权 0 全部保持冻结。正文和 PDF 没有事实改动；四份既有 PDF 因而保留原页数和字节。
+
+Round 41 began only after Round 40 PR #3204 merged (head `d4d9f5dd86ed61a121ed716c964968ae7aaecd16`; merge `596ddd89ffd75edd59cc4f1afa70e6f0ec5e3d9a` is contained in canonical `main@5fb96256c5b756f2f7d1880b7594352aa0eb25e1`), no PR remained open for this package, and the worktree was clean. The audit sought no new design direction; it tested whether the three promised front-stage reading depths could actually begin. The RED was a repeatable DOM count: each Chinese and English `.reading-lanes` contained three cards but zero `<a>` elements, so readers had to infer where the 3-minute path starts and where the 15-minute evidence path enters. The repair turns the existing cards into three native, keyboard-accessible, no-JavaScript start links: 30 seconds returns to one concept and one boundary, 3 minutes starts with ordinary life, and 15 minutes enters through professional handoff. The links locate existing content only; they neither reveal nor hide evidence and do not create another reading layer.
+
+`review-handoff-index.json#evidence_integrity.reading_ladder_r41` retains the 3-card/0-direct-action before record and the repaired three matching static targets per language. This is an editorial navigation check only: it does not certify real reviewer comprehension, public feedback, expert opinion or a jury conclusion. It does not alter the existing content signified by “30 seconds / 3 minutes / 15 minutes,” nor turn an offline page, machine check or clearer expression into field evidence, professional duty, approval, G1, authorisation or rights clearance.
+
+The rights ledger checks 138 ordinary file digests and names three narrow byte-verification exceptions. Manifest and ledger cannot hash themselves. `self_check_submission.py` replaces `self_check.json` and records its final SHA-256 in manifest during the same finalisation step, so the ledger records the final manifest reference instead of retaining a stale duplicate digest. This mechanical exception does not reduce the manifest check, rights status, independent audit count or use boundary.
+
+The round adds no media; generation method, source, model, rights and non-provable matters are unchanged. Imagery remains a G0 concept display, not an existing or built state, accessibility result, staffing commitment or real recovery time. The nine geometry files, `metrics.json`, 12 scenes, 8 projects, 3 key areas, 36 conceptual land-use units, ordinary–proof–failure–recovery, the non-AI path, G0, NO-GO, provisional boundary, zero real-world outcomes, `not_fully_cleared` and zero independent file-level clearance audits all remain frozen. Neither proposal prose nor PDFs change facts, so all four PDFs retain their existing page counts and bytes.
+
 ## Round 40 Spatial-distinction cold-read repair / 第 40 轮空间差异冷读修复
 
 第 40 轮在第 39 轮 PR #3109 已合并（head `1172b6ac6904b67bd7f9d41c0cfad4742d91ed8a`，merge 已进入 canonical `main@44ffc5bbad89245f76ea1eed4f36a38465cf9211`）、同一投稿包无开放 PR、工作树洁净后开始。基线复核确认八问已有唯一答案入口，但两张关键图仍有可复现的冷读问题：三处文字内容不同，平面却先被相同卡片边框读取；关系剖面也先被三条相似横排读取。因此本轮不增加方案内容，只把差异移入空间构图。众智园读作普通旁路与上方可停验证庭的平行分离，人工维护交接位于两者之间；原点社区读作一条居民街串联两院和四个可独立撤回节点；大钟寺读作四向通勤十字，发布厅、人工台和安静休憩均退到路线之外。三处的失败对象与恢复对象不可互换。
