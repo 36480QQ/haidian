@@ -1422,6 +1422,131 @@
       "verification_role_en": "Transport engineering",
       "note_zh": "加上本方案的缝合与测点支线之后，同一口径的建筑基底数。",
       "note_en": "The same count once this proposal's stitching links and benchmark spurs are added."
+    },
+    "key_area_area_sqm": {
+      "status": "known",
+      "value": 3692893,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "sum(area(features(key_areas)), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
+        "三处重点区合计面积；边界为临时替代几何，不作为精确面积依据。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "metric_class": 1,
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation",
+      "measures": "proposed_design",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "本方案编制方",
+      "verification_role_en": "This proposal's author"
+    },
+    "stitching_point_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(features(roads) where id startswith ROAD-1)",
+      "confidence": "high",
+      "assumptions": [
+        "东西缝合点由主脊与实测干道求交得出，逐一登记为 ROAD-101 至 ROAD-111。"
+      ],
+      "assumption_ids": [
+        "A-OSM-001",
+        "A-BOUNDARY-001"
+      ],
+      "metric_class": 1,
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation",
+      "measures": "proposed_design",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "交通工程",
+      "verification_role_en": "Transport engineering"
+    },
+    "test_field_area_sqm": {
+      "status": "known",
+      "value": 53008,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "area(CONSTRAINT-001, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
+        "S11 产业测试场的受控范围；三块地各自独立，不共用一块。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "metric_class": 1,
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation",
+      "measures": "proposed_design",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "本方案编制方",
+      "verification_role_en": "This proposal's author"
+    },
+    "robot_pilot_area_sqm": {
+      "status": "known",
+      "value": 237479,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "area(CONSTRAINT-002, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
+        "S06 低速设备试点的受控范围；三块地各自独立，不共用一块。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "metric_class": 1,
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation",
+      "measures": "proposed_design",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "本方案编制方",
+      "verification_role_en": "This proposal's author"
+    },
+    "safety_review_area_sqm": {
+      "status": "known",
+      "value": 15369,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "area(CONSTRAINT-003, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
+        "S10 公共安全复盘的受控范围；三块地各自独立，不共用一块。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "metric_class": 1,
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation",
+      "measures": "proposed_design",
+      "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole rather than file by file, the same rule this proposal applies to a route that exceeds its tolerance.",
+      "verification_role_zh": "本方案编制方",
+      "verification_role_en": "This proposal's author"
     }
   }
 }
