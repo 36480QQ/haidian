@@ -6,12 +6,13 @@ The bilingual text, structured JSON, design GeoJSON, five paired figures, offlin
 
 ## 视觉资产与字体 / Visual assets and fonts
 
-- 所有核心图均由本包的 GeoJSON、`metrics.json` 与方案程序派生；没有使用外部地图瓦片、卫星影像、图库图片、人物照片、第三方标志或生成式写实场景图。
+- 五组双语核心图均由本包的 GeoJSON、`metrics.json` 与方案程序派生；没有使用外部地图瓦片、卫星影像、图库图片、人物照片或第三方标志。
+- `assets/media/cover.webp` 为 OpenAI `gpt-image-2` 通过 Codex 内置图像生成能力生成的概念体验图。生成提示限定为“北京创新区的站前/路缘异常到达界面”，并明确禁止文字、标志、可识别人脸、真实地标、无人车和现状暗示。它用于传达大钟寺“异常到达不让人无助”的空间感受，不用于证明现状、公众意见、审批、工程条件或性能结果。
 - PNG 图件使用本机 Microsoft YaHei 字体栅格化，字体文件不随包分发。
 - PDF 使用 ReportLab 生成，并嵌入本机 SimHei 的子集；该字体的 OS/2 `fsType=8` 允许可编辑文档嵌入。英文使用本机 Arial 字体。字体文件本身不随包分发。
 - HTML 使用系统字体回退栈，不加载 CDN、远程字体、远程脚本、远程图片、iframe、表单或跟踪代码。
 
-All core figures are programmatically derived from submission data. No remote map tiles, satellite imagery, stock images, people photography, third-party logos, or photorealistic generated scenes are bundled. HTML is offline-only. System font files are not redistributed; only rasterised text or permitted document subsets appear in the outputs.
+The five paired core figures are programmatically derived from submission data. No remote map tiles, satellite imagery, stock images, people photography, or third-party logos are bundled. `assets/media/cover.webp` is a conceptual experience image generated through Codex's built-in OpenAI `gpt-image-2` image-generation capability. Its prompt restricts the image to a generic Beijing innovation-district arrival interface and forbids text, logos, identifiable faces, real landmarks, autonomous vehicles, and claims of existing conditions. It communicates the spatial intent of humane exception arrival at Dazhongsi only; it is not evidence of existing conditions, public opinion, approval, engineering feasibility, or performance. HTML is offline-only. System font files are not redistributed; only rasterised text or permitted document subsets appear in the outputs.
 
 ## 来源与使用边界 / Sources and use boundary
 
