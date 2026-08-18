@@ -36,6 +36,32 @@ This iteration completes one implementation proof that remains under participant
 | How does public interest enter? | Staffed counters, a continuous step-free walk, fixed wayfinding, paper and telephone channels precede the smart layer | Every scenario states its human service and post-exit spatial use |
 | Are claim boundaries honest? | All spatial moves are concepts; provisional geometry is not an official redline; fieldwork, prices and appointments remain subject to due process | Itemised in `assumptions.json` and the risk chapter |
 
+## Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover
+
+The previous section treats "handover" as the core mechanism of this proposal; this section states where it comes from, so that a metaphor is not mistaken for evidence. The facts below are public and verifiable. The proposal extracts transferable practice from them and infers no statutory conclusion.
+
+| Date | Public fact | Source |
+| --- | --- | --- |
+| 1905—1909 | Zhan Tianyou became chief engineer of the Jing-Zhang Railway in May 1905 and the line opened on 2 October 1909, the first state trunk line surveyed, designed, built, and managed entirely by China; a "herringbone" reversing alignment on the hillside beside Qinglongqiao station bought height by lengthening the run | [source:SRC-JINGZHANG-1909] |
+| 1910／1960 | Qinghuayuan Station opened as the first stop north of Xizhimen; in 1960 the section shifted about 800 m east for campus expansion and the old building was put to other uses; it was later restored and retained during the heritage-park works | [source:SRC-QINGHUAYUAN-STATION] [source:SRC-HERITAGE-PARK-P1] |
+| 1952—1954 | The faculty reorganisation created eight institutes — aeronautics, geology, mining, forestry, medicine, iron and steel, petroleum, agricultural machinery — on a university district running north from Jimen Bridge to Qinghua East Road; Xueyuan Road opened at the end of 1954 and gave the "Eight Institutes" their name | [source:SRC-BAXUEYUAN-1952] |
+| 2019-12-30 | The Beijing–Zhangjiakou high-speed railway opened: 174 km long, maximum design speed 350 km/h, and the world's first automatic driving of a Fuxing intelligent EMU at 350 km/h | [source:SRC-JINGZHANG-HSR-2019] |
+| 2023-06 | Phase 1 of the Jing-Zhang Railway Heritage Park was completed between Qinghua East Road and Zhichun Road: 2.5 km long, 16.8 ha, reusing old rails, switches and locomotive elements along the line and retaining the restored Qinghuayuan station building | [source:SRC-HERITAGE-PARK-P1] |
+
+For a century this corridor has been asked the same question: does speed yield to gradient, or the other way round. In 1909 the answer was the switchback; in 2019 it was 350 km/h. AI does not change the question. It only changes what the "gradient" is made of — the continuity, reachability, and exitability of public service.
+
+Three legacies can therefore be inherited. Each maps to one concrete action in this proposal, and each carries an inference that explicitly does not follow.
+
+| Legacy | What this proposal inherits | What does not follow |
+| --- | --- | --- |
+| Alignment | The spine follows the disused alignment, so "continuous and step-free" is an opening condition rather than a favour | Not a measured gradient compliance result; longitudinal survey still required |
+| Level crossing | Eight east–west branches stitch the two sides at historic crossing positions; the railway-crossing etymology of "Wudaokou" coexists with the Wudao Temple account, and this proposal settles neither | No alignment, tenure, or boundary is inferred from a place name |
+| Shift handover | Dual-signature handover: release and receipt are two independent judgements, and unfinished items may not disappear at the change of shift | Not an operating authorisation or a safety certification |
+
+The two timelines meet at Qinghua East Road: the northern end of heritage park Phase 1 and the northern edge of the "Eight Institutes" university district are the same street. The railway left a north–south line; the university district left an east–west population. The one spine and eight branches of this proposal follow those two existing pieces of city structure instead of drawing a new net over them.
+
+The heritage park is the only continuous public carrier these three legacies have today. The Handover Line does not start a second green corridor; it upgrades the park's existing north–south continuity and east–west connections into a public mechanism that also carries research, verification, and city-service handovers. Implementation boundaries, heritage control lines, and tenure remain with the competent authorities, and this proposal draws no engineering conclusion on them [depth:blue_green_public_space].
+
 ## Design Basis and Source List
 
 The proposal is based on the open-call announcement, the Agent taskbook, the repository site package, the public source registry and local snapshots of professional references. The announcement sets an approximately 43.6 sq km coordinated research area, an approximately 11.4 sq km overall design area and three key areas. The taskbook requires three positionings, five functions, three areas and two wings, six Agent tasks and long-term operation. These materials define the assignment and output depth; news graphics, commercial maps, OSM and generated images are never used to infer statutory redlines [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY].
@@ -74,6 +100,8 @@ The Handover Line is not another approval wall. It is a shorter and more trustwo
 The taskbook’s three positionings therefore sit on one timeline. The Centennial Jing-Zhang Cultural Belt preserves the intergenerational memory of independent construction and responsible handover. The Metropolitan AI Life Experience Belt lets ordinary people understand, try, refuse and appeal. The AI Integrated Innovation Belt provides validation, open collaboration and industrial translation. Its five functions become research testing, result validation, open collaboration, civic service and long-term governance rather than five parallel slogans [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 The duties of “three areas and two wings” are equally explicit. The Build, Share and Serve Handover Yards make three acceptance decisions along the chain. The Zhongguancun science-and-technology service wing offers interfaces to universities, standards, legal advice, compute, talent and capital. The Xiaoyue River scenario wing offers authorised urban questions and public spaces. The two wings provide support; they do not make acceptance decisions for the yards.
+
+Industrial goals must land on a checkable order of magnitude rather than on phrases such as "build a highland". The Haidian District 2025 statistical bulletin gives these public figures: 123 filed and launched large models, 92 national key laboratories in the district, 57,900 technology contracts registered during the year with a total value of 405.31 billion yuan, and a year-end permanent population of 3.111 million [source:HAIDIAN-2025-STATISTICAL-BULLETIN]. Their statistical scope is the whole district, far larger than this belt's 43.6 km², so they are used only to converge the problem — they show that this corridor faces real services already inside the filing and safety-assessment process, not an abstract notion of models. They are not used to manufacture target values for this proposal, and not one of them enters `metrics.json`.
 
 ### Six international cases: transfer mechanisms, not forms
 
@@ -227,6 +255,26 @@ Urban character derives from four railway primitives: line, station, shift and l
 
 Four AI pilgrimage landmarks move honour away from capital scale and towards civic contribution. The Handover Bell records when a capability was accepted independently. The Public Handover Table shows positive and negative results with refusal reasons. The Century Logbook credits maintainers, repairers and people who stopped a service in time. Takeover Booth Zero makes basic service, human help and the stop entrance visible. All are concepts subject to ownership, heritage and public-space procedure [metric:civic_landmark_count] [data:geometry/public_space.geojson#LANDMARK-01].
 
+### Honour display system: a correctable record, not a leaderboard
+
+Honour records run a seven-step loop — nomination, evidence, dual review, published objection, correction, withdrawal, appeal — and accept real names, pseudonyms, or anonymity. They are never ranked by traffic or votes. Every record must be open to being challenged and corrected; a withdrawn record keeps its stated reason for withdrawal rather than being erased from public memory. The Century Logbook is its physical carrier, and the Handover Bell and Public Handover Table are its once-a-year public moment [data:geometry/public_space.geojson#LANDMARK-03].
+
+### Public-space component library: removable first, built second
+
+Public space along the line uses a kit of removable components rather than bespoke installations: movable barriers and floor decals, handover tables and work benches, shade and seating units, paper directories and duty boards, always-on lighting poles, step-free ramps and tactile guide strips, independently metered socket boxes, and temporary display racks. Each type states its installation method, maintenance responsibility, removal condition, and the standard to which the space is restored after removal. The intelligent layer is only a pluggable module mounted on these components; unplug it and the component is still usable public furniture, leaving no dead shell on the site.
+
+### Wayfinding, signage, and the symbol set
+
+The logo is only the starting point. What actually lands on the street is four physical symbols that need no screen: the handover mark ("a signature happened here"), the duty board ("who is responsible right now"), the stop bracket ("you can stop here and return to a human"), and the crossing bar (an east–west stitching point). All four take their form from the rails and switches already present in the heritage park; their size, contrast, and tactile edges follow accessibility and contrast requirements, and tactile paving, tactile maps, and staffed enquiry are never dropped because an intelligent layer exists [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:WCAG-CONTRAST].
+
+Cultural signage and handover symbols stay in separate layers: cultural signage tells history, handover symbols tell present responsibility. The two are not mixed with each other, nor confused with the belt-wide logo system. Every symbol uses a replaceable panel, so a revision changes the panel and not the base, and no iteration leaves a batch of discarded hardware in public space.
+
+### Reading this proposal without a screen: audio, video, tactile, and 3D
+
+The same content exists in five forms a person can receive directly, each a fallback for the others rather than a replacement: a three-minute audio guide in Chinese and English with a line-by-line caption script, a short video guide in both languages, a tactile map of the main corridor segment (printable vector linework for blind readers and the staffed enquiry desk), 3D model data for the Public Handover Table, and an interactive page that opens offline. If any one form fails, the other four still explain the same thing on their own; the paper directory and staffed enquiry remain the final layer and depend on no device at all.
+
+Generation methods are disclosed item by item: audio is local speech synthesis, video and figures are procedurally generated, and the tactile map is exported directly from the same geometry. None contains a real person's likeness, a real voice sample, or third-party material; the 3D data describes only the dimensional relations of removable components and is not a survey product. All media are declared in `manifest.json`, play offline, never autoplay, and depend on no remote service [source:TTS-MACOS-SYNTH] [source:TOOLCHAIN-BUILD].
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 Implementation begins with a participant-controlled digital rehearsal and one S-class prototype that can be assembled after authorisation, not with a promise to build the entire belt. The offline rehearsal has already replayed role interfaces, human service, deletion and rollback for twelve scenarios. The first field step is only the Public Handover Table: no live business connection, no public data and no permanent works. At minimum risk, it can test whether two role types decide independently, whether service continues with the smart layer off, and whether the space fully recovers after strike.
@@ -281,6 +329,35 @@ Three phase geometries express the order in which responsibilities may be combin
 An indicative sequence after authority is approximately four weeks for P0 preparation, review, rehearsal and strike; approximately two to three months for one M-class ground-floor or street-interface repair; and a separately commissioned belt network only after official conditions and evidence from the first two stages exist. These are concept-level process estimates that professional teams may adjust to site, procurement and approval; they are not a government programme.
 
 Long-term operation follows a four-season duty roster. Spring publishes urban problems and open handovers. Summer holds Maintainers’ Night and demonstrates reliability and human takeover. Autumn uses Global Handover Week for controlled rehearsal and bilingual exchange. Winter publishes the annual list of shutdowns, complaints, repairs and exits. Brand assets, events and partnership channels are all recallable: misleading endorsement use revokes the brand licence, missing conditions shrink or cancel an event, and unclear duty or permission causes a partnership interface to refuse.
+
+## Long-Term Operation, Annual Events, and International Communication
+
+### Annual event system and event brand
+
+The event system follows the handover chain: four times a year, each event handling one link of the chain, each obliged to leave a downloadable public artefact behind. An event that leaves none is not held the following year.
+
+| Season | Event | Chain link | Public artefact left behind |
+| --- | --- | --- | --- |
+| Spring | Open Problems Week: city service providers publish the year's real problem list | SERVE→BUILD | Problem list and compiled refusal reasons |
+| Summer | Verification Open Days: red-teaming, robot right-of-way and energy trials open to public observation | BUILD→VERIFY | Positive and negative results with stated limits of validity |
+| Autumn | Global Handover Week: international developers, universities and city service providers complete one full handover together | VERIFY→SHARE | Bilingual protocol templates and the annual failure digest |
+| Winter | Annual Handover Ledger: projects retained, amended and discontinued published on one screen | SHARE→SERVE | Annual ledger with an itemised reason for each discontinuation |
+
+The event brand reuses the Handover Line signage and the four symbols rather than starting a second visual system; publications, protocol cards, and duty logbooks share one layout, so any year's record can be cited directly by the next. Host, budget, venue, and partners all await authorisation; this section is a conceptual mechanism and is not written as a settled arrangement [source:AGENT-TASKBOOK].
+
+### Developer community and scenario-opening operation
+
+The developer community is organised around reproducibility, not membership: a submission enters the Share Handover Yard catalogue only with its version, licence, failure record, and withdrawal method attached, and the catalogue is ordered by reproducibility rather than by institutional rank. Scenario opening runs at three authorisation levels — observation, controlled testing, public trial operation — each stating minimum data, the human takeover path, and the use of the space after exit; no level may be skipped before the previous one is passed [data:geometry/public_space.geojson#SCN-01] [metric:scenario_node_count].
+
+### Attraction and conversion pathway
+
+A team has four steps from first contact to staying: observe one full handover during Global Handover Week, then apply for a controlled testing slot, then enter public trial operation at the verification workshop, and finally be judged by the city service provider on whether it enters daily service. Entry conditions, exit conditions, and the public artefact owed at each step are published in advance, so a team can decide for itself whether to come. Space maps onto the four renewal unit types, slots are revocable, and a failure does not convert into a permanent spatial burden. This proposal promises no subsidy, investment, tax, or settlement policy, and replaces no statutory investment-promotion procedure.
+
+### International communication: build "global attention" on a checkable record
+
+International communication does not run on adjectives. This belt can export four things others can pick up directly: the bilingual handover protocol template, the minimum-data and human-takeover list for all twelve scenarios, the annual handover ledger including failures and discontinuations, and the reproducible method for generating the figures and geometry. Together they form a method pack any city can take away and recompute — not a promotional film. Others may take the ruler; they do not have to accept our readings.
+
+Outward statements are bound by the same discipline: they must carry the limits of validity and the unfinished items, must not present conceptual advice as a government decision, and must not present a digital rehearsal as field operation. Chinese and English deliverables correspond section by section and a glossary ships with the package, so that one mechanism does not become two different things in two languages [source:AGENT-TASKBOOK].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -338,5 +415,10 @@ Only task, standard, policy and case sources cited in the human layer are listed
 8. National plan addressing difficulties faced by older people using smart technologies [source:ELDERLY-SMART-TECH-PLAN]
 9. JTC LaunchPad @ one-north, Smart Kalasatama and STATION F mechanism references [source:CASE-ONE-NORTH] [source:CASE-KALASATAMA] [source:CASE-STATION-F]
 10. 22@ Barcelona, Kendall Square K2C2 and Knowledge Quarter London mechanism references [source:CASE-22BARCELONA] [source:CASE-KENDALL] [source:CASE-KNOWLEDGE-QUARTER]
+11. Opening of the Jing-Zhang Railway, the Guangou herringbone alignment, and the history of Qinghuayuan Station [source:SRC-JINGZHANG-1909] [source:SRC-QINGHUAYUAN-STATION]
+12. The Xueyuan Road "Eight Institutes" and the 1952 faculty reorganisation [source:SRC-BAXUEYUAN-1952]
+13. Opening of the Beijing–Zhangjiakou high-speed railway and completion of Jing-Zhang Railway Heritage Park Phase 1 [source:SRC-JINGZHANG-HSR-2019] [source:SRC-HERITAGE-PARK-P1]
+14. Haidian District 2025 statistical bulletin on national economic and social development [source:HAIDIAN-2025-STATISTICAL-BULLETIN]
+15. WCAG 2.1 contrast success criteria [source:W3C-WCAG-21] [standard:WCAG-CONTRAST]
 
 Implementation evidence in this version is bounded jointly by `simulation.json`, `metrics.json` and `assumptions.json#A-OPERATIONS-001`: digital tabletop 12/12 complete, field rehearsal 0/12. The next step is one authorised S-class Public Handover Table field rehearsal, after which professional review decides whether to continue, revise or stop.

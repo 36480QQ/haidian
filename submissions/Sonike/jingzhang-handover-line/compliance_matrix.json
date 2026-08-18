@@ -8,17 +8,15 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "区级公开统计只用来收敛问题，不用来制造目标",
-        "可直接使用的国际传播短文",
-        "可纠错荣誉记录与公共知识沉淀",
-        "统筹研究范围产业与未来城市研究"
+        "统筹研究范围产业与未来城市研究",
+        "国际传播：把“全球关注”建立在可复核的记录上",
+        "荣誉展示体系：可纠错的记录，不是排行榜"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-        "District statistics narrow the question; they do not manufacture a target",
-        "Ready-to-use international communication copy",
-        "Correctable honour record and public knowledge deposit",
-        "Coordinated Research Area: Industry and Future City Research"
+        "Coordinated Research Area: Industry and Future City Research",
+        "International communication: build \"global attention\" on a checkable record",
+        "Honour display system: a correctable record, not a leaderboard"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -114,15 +112,13 @@
       "title_en": "Build an urban form matched to AI new-quality productive forces",
       "mandatory": true,
       "report_sections": [
-        "AI 原生城市形态与规划方法",
-        "合规基线：先分清法定下限，再说本方案自设的标准",
         "总体设计范围城市更新与控规深度城市设计",
+        "风险、版权与合规说明",
         "用地、建筑规模与拆改留方案"
       ],
       "report_sections_en": [
-        "AI-Native Urban Form and Planning Method",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
         "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Risk, Copyright, and Compliance",
         "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy"
       ],
       "geojson_layers": [
@@ -211,12 +207,12 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "合规基线：先分清法定下限，再说本方案自设的标准",
+        "风险、版权与合规说明",
         "蓝绿空间、公共空间与城市风貌"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
+        "Risk, Copyright, and Compliance",
         "Blue-Green Network, Public Space, and Urban Character"
       ],
       "geojson_layers": [
@@ -306,12 +302,10 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
-        "区级公开统计只用来收敛问题，不用来制造目标",
         "统筹研究范围产业与未来城市研究"
       ],
       "report_sections_en": [
         "Three-Level Scope Framework",
-        "District statistics narrow the question; they do not manufacture a target",
         "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
@@ -510,11 +504,9 @@
       "title_en": "Coordinated research area: AI innovation ecosystem",
       "mandatory": true,
       "report_sections": [
-        "区级公开统计只用来收敛问题，不用来制造目标",
         "统筹研究范围产业与未来城市研究"
       ],
       "report_sections_en": [
-        "District statistics narrow the question; they do not manufacture a target",
         "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
@@ -590,14 +582,14 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "AI 原生城市形态与规划方法",
-        "合规基线：先分清法定下限，再说本方案自设的标准",
+        "总体设计范围城市更新与控规深度城市设计",
+        "风险、版权与合规说明",
         "统筹研究范围产业与未来城市研究"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-        "AI-Native Urban Form and Planning Method",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
+        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Risk, Copyright, and Compliance",
         "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
@@ -677,12 +669,12 @@
       "title_en": "Overall design area: industrial goals and functional layout",
       "mandatory": true,
       "report_sections": [
-        "区级公开统计只用来收敛问题，不用来制造目标",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "指标体系、面积复算与合规矩阵"
       ],
       "report_sections_en": [
-        "District statistics narrow the question; they do not manufacture a target",
+        "Coordinated Research Area: Industry and Future City Research",
         "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
         "Metrics, Area Recalculation, and Compliance Matrix"
       ],
@@ -827,11 +819,11 @@
       "mandatory": true,
       "report_sections": [
         "交通、轨道、市政与公共服务设施",
-        "合规基线：先分清法定下限，再说本方案自设的标准"
+        "风险、版权与合规说明"
       ],
       "report_sections_en": [
         "Transport, Rail, Municipal Infrastructure, and Public Services",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself"
+        "Risk, Copyright, and Compliance"
       ],
       "geojson_layers": [
         "geometry/roads.geojson",
@@ -1105,10 +1097,10 @@
       "title_en": "Zhongzhi Park AI autonomous-innovation acceleration zone",
       "mandatory": true,
       "report_sections": [
-        "众智园AI自主创新加速区：研制交接场 / Build→Verify"
+        "众智园：研制交接场 / BUILD→VERIFY"
       ],
       "report_sections_en": [
-        "Zhongzhiyuan AI Acceleration Area: Build→Verify Yard"
+        "Zhongzhiyuan: Build Handover Yard / BUILD→VERIFY"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1166,10 +1158,10 @@
       "title_en": "Beijing AI Origin Community",
       "mandatory": true,
       "report_sections": [
-        "北京AI原点社区：开源交接场 / Verify→Share"
+        "北京 AI 原点社区：开源交接场 / VERIFY→SHARE"
       ],
       "report_sections_en": [
-        "Beijing AI Origin Community: Verify→Share Yard"
+        "Beijing AI Origin Community: Share Handover Yard / VERIFY→SHARE"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1222,10 +1214,10 @@
       "title_en": "Dazhongsi AI industry cluster",
       "mandatory": true,
       "report_sections": [
-        "大钟寺AI产业集聚区：城市交接场 / Share→Serve"
+        "大钟寺：城市交接场 / SHARE→SERVE"
       ],
       "report_sections_en": [
-        "Dazhongsi AI Industry Cluster: Share→Serve Yard"
+        "Dazhongsi: Serve Handover Yard / SHARE→SERVE"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1283,20 +1275,16 @@
       "title_en": "Overall concept and functional coordination scheme for the belt",
       "mandatory": true,
       "report_sections": [
-        "AI 原生城市形态与规划方法",
-        "一页执行摘要 / Executive Brief",
+        "总体设计范围城市更新与控规深度城市设计",
+        "让好 AI 更快进城，让每次交接都有回路",
         "三层范围工作框架",
-        "区级公开统计只用来收敛问题，不用来制造目标",
-        "统筹研究范围产业与未来城市研究",
-        "综合规划内涵与空间产业融合：本方案把「综合」和「融合」落在哪一层"
+        "统筹研究范围产业与未来城市研究"
       ],
       "report_sections_en": [
-        "AI-Native Urban Form and Planning Method",
-        "Executive Brief",
+        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Move Good AI into the City Faster, Give Every Handover a Return Path",
         "Three-Level Scope Framework",
-        "District statistics narrow the question; they do not manufacture a target",
-        "Coordinated Research Area: Industry and Future City Research",
-        "What \"integrated\" and \"fusion\" actually mean here: integrated-planning substance and spatial–industrial fusion"
+        "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1367,19 +1355,15 @@
       "title_en": "Full-stack AI autonomous innovation system and world-class AI innovation ecosystem design",
       "mandatory": true,
       "report_sections": [
-        "不同阶段的团队在这条带上分别拿到什么",
-        "产业环节与空间供给：五个环节，四类单元，一条回路",
-        "众智园AI自主创新加速区：研制交接场 / Build→Verify",
-        "八个共享栈：要素保障不是名单，是可被占用也可被收回的接口",
-        "区级公开统计只用来收敛问题，不用来制造目标",
+        "招引与转化路径",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "众智园：研制交接场 / BUILD→VERIFY",
         "统筹研究范围产业与未来城市研究"
       ],
       "report_sections_en": [
-        "What teams of different sizes actually get here",
-        "Industrial stages and spatial supply: five stages, four cell typologies, one loop",
-        "Zhongzhiyuan AI Acceleration Area: Build→Verify Yard",
-        "Eight shared stacks: factor provision as interfaces that can be taken up and taken back, not a tenant list",
-        "District statistics narrow the question; they do not manufacture a target",
+        "Attraction and conversion pathway",
+        "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+        "Zhongzhiyuan: Build Handover Yard / BUILD→VERIFY",
         "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
@@ -1461,20 +1445,18 @@
       "title_en": "AI+ scenario empowerment paradigm and intelligent, vital AI city design",
       "mandatory": true,
       "report_sections": [
-        "1:1 原型：公开交接桌——把整套协议缩到一张桌子上",
+        "首个现场原型：公开交接桌",
         "AI 创新生态、人才画像与 AI+ 场景",
-        "AI 原生城市形态与规划方法",
-        "双联交接账：交出与接入必须是两次独立判断",
-        "合规基线：先分清法定下限，再说本方案自设的标准",
-        "自选区域：五类“AI+”垂直场景"
+        "总体设计范围城市更新与控规深度城市设计",
+        "一条铁路留下的三件遗产：线形、道口与交接班",
+        "风险、版权与合规说明"
       ],
       "report_sections_en": [
-        "A 1:1 prototype: the public handover table — the whole protocol shrunk to one table",
+        "First field prototype: Public Handover Table",
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-        "AI-Native Urban Form and Planning Method",
-        "Dual-Control Shift Ledger: outgoing and incoming are independent decisions",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
-        "Self-selected area: five \"AI+\" vertical scenarios"
+        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover",
+        "Risk, Copyright, and Compliance"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson"
@@ -1553,15 +1535,15 @@
       "title_en": "AI public space, AI-native new business formats and pilgrimage landmark design",
       "mandatory": true,
       "report_sections": [
-        "1:1 原型：公开交接桌——把整套协议缩到一张桌子上",
-        "合规基线：先分清法定下限，再说本方案自设的标准",
-        "大钟寺AI产业集聚区：城市交接场 / Share→Serve",
+        "首个现场原型：公开交接桌",
+        "风险、版权与合规说明",
+        "大钟寺：城市交接场 / SHARE→SERVE",
         "蓝绿空间、公共空间与城市风貌"
       ],
       "report_sections_en": [
-        "A 1:1 prototype: the public handover table — the whole protocol shrunk to one table",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
-        "Dazhongsi AI Industry Cluster: Share→Serve Yard",
+        "First field prototype: Public Handover Table",
+        "Risk, Copyright, and Compliance",
+        "Dazhongsi: Serve Handover Yard / SHARE→SERVE",
         "Blue-Green Network, Public Space, and Urban Character"
       ],
       "geojson_layers": [
@@ -1634,19 +1616,17 @@
       "title_en": "Narrative design fusing centennial Jing-Zhang culture, Zhongguancun culture and new AI culture",
       "mandatory": true,
       "report_sections": [
-        "三分钟音频导览：不识字、不看屏幕也能听完这份方案",
+        "不看屏幕也能读完这份方案：音频、视频、触觉与三维",
         "参考资料",
-        "可直接使用的国际传播短文",
-        "可纠错荣誉记录与公共知识沉淀",
-        "国际传播力：把「全球关注」建立在可复核的记录上，而不是口号上",
+        "国际传播：把“全球关注”建立在可复核的记录上",
+        "荣誉展示体系：可纠错的记录，不是排行榜",
         "蓝绿空间、公共空间与城市风貌"
       ],
       "report_sections_en": [
-        "A three-minute audio guide: this proposal can be heard, not only read",
+        "Reading this proposal without a screen: audio, video, tactile, and 3D",
         "References",
-        "Ready-to-use international communication copy",
-        "Correctable honour record and public knowledge deposit",
-        "International communication: build **global attention** on checkable records, not slogans",
+        "International communication: build \"global attention\" on a checkable record",
+        "Honour display system: a correctable record, not a leaderboard",
         "Blue-Green Network, Public Space, and Urban Character"
       ],
       "geojson_layers": [
@@ -1706,22 +1686,20 @@
       "title_en": "Global AI innovation event system and long-term operations design for the belt",
       "mandatory": true,
       "report_sections": [
-        "双联交接账：交出与接入必须是两次独立判断",
-        "可实施性四件事：阶段路径、试点区域、参与主体与指标，逐项对齐",
-        "合规基线：先分清法定下限，再说本方案自设的标准",
-        "国际传播力：把「全球关注」建立在可复核的记录上，而不是口号上",
+        "一条铁路留下的三件遗产：线形、道口与交接班",
         "更新项目清单、实施政策与分期计划",
-        "试点交付契约：把“谁负责、怎样验收、何时交回”写在同一行",
-        "长期运营价值：品牌资产、活动机制与合作通道三件事分开写"
+        "风险、版权与合规说明",
+        "国际传播：把“全球关注”建立在可复核的记录上",
+        "授权后第一步：公开交接桌 P0",
+        "长期运营、年度活动与国际传播"
       ],
       "report_sections_en": [
-        "Dual-Control Shift Ledger: outgoing and incoming are independent decisions",
-        "The four parts of feasibility: phase path, pilot areas, participating parties and metrics",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
-        "International communication: build **global attention** on checkable records, not slogans",
+        "Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover",
         "Renewal Projects, Implementation Policy, and Phasing",
-        "Pilot Delivery Contract: responsibility, acceptance and handback on one line",
-        "Long-term operating value: brand assets, event mechanisms and partnership channels, written separately"
+        "Risk, Copyright, and Compliance",
+        "International communication: build \"global attention\" on a checkable record",
+        "First authorised step: Public Handover Table P0",
+        "Long-Term Operation, Annual Events, and International Communication"
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
