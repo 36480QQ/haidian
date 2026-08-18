@@ -158,6 +158,21 @@ The implementation forms a reviewable renewal project list stating location, typ
 | JZ-04 | Dazhongsi four-quadrant walk connectivity | Rail integration / slow mobility | Station, intersection, municipal pipelines | [data:geometry/public_space.geojson] |
 | JZ-05 | AI public service & edge-compute nodes | New infrastructure / public service | Energy, compute, security, operator | [data:geometry/constraints.geojson] |
 | JZ-06 | Global AI Activity Week public route | Operation / brand | Public-space permit, event safety, rights clearance | [data:geometry/phasing.geojson] |
+### Executable-clause demonstration: "shared ground-floor accessible transfer" as the example
+
+To avoid "concept-noun" writing, one design intent is rewritten below as a government-style executable clause, explicitly answering "who does it, for whom, when, to what extent, with what resources, how to check" [source:HAIDIAN-LIANGQU] [source:HAIDIAN-YANGLAO] [depth:executable_language_benchmark].
+
+- Responsible body: coordinated by the subdistrict, with the district reform commission, planning bureau and housing-construction committee supporting per remit; the operator is a community non-profit or platform firm (to be confirmed before formal deepening) [source:HAIDIAN-YANGLAO].
+- Target users: rail commuters, wheelchair and stroller users, older adults, caregivers, students and community residents; "simulated personas" are never passed off as resident opinion - the targets are fixed by field surveys, interviews and public meetings [source:HAIDIAN-YANGLAO].
+- Spatial action: between the Origin Community and the rail station, connect building ground floors continuously into an accessible transfer and shared-service ground floor (rest, wayfinding, nursing, accessible toilets) [data:geometry/public_space.geojson].
+- Threshold and scale (provisional, not an approval value): continuous ground-floor length, accessible ramp clear width, continuous walkable radius use geometry-recomputed values as temporary baselines; formal values await field survey and regulatory plan [metric:public_space_ratio].
+- Resources: mostly retrofit of existing ground floors plus light facilities, no new land take; funding from urban-renewal and public-service budgets, exact amount pending formal project approval [source:HAIDIAN-OPC].
+- Check: acceptance is "continuous accessibility, zero broken links, usable every week"; where no field OD, accessibility audit or public participation exists, honestly mark "unknown" - never write "completed" [depth:executable_language_benchmark].
+- Stop condition: if field survey shows ground floors cannot be connected by ownership, or no operator exists, downgrade to "off-station standalone service point" rather than forcing the connection [depth:risk_missing_data].
+
+This clause demonstrates not technical detail but expressive discipline: state "who, for whom, when, threshold, resource, check" first, then talk concepts.
+
+
 
 Phasing is distinct from the 100-day call cycle: the call cycle is the deadline for submitting deliverables; phasing is the urban-renewal and construction path. The proposal proposes near-term pilots (Years 1-3, focus on three key areas and station integration), mid-term renewal (Years 3-7, focus on middle residential and public-service renewal), long-term governance (Years 7-15, whole-area quality improvement). What can start with lightweight facilities, operations and service desks versus what must wait for formal regulatory, municipal, transport and ownership conditions is stated with boundaries [depth:phasing_implementation].
 
