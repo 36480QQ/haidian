@@ -1,5 +1,21 @@
 # 方案迭代记录 / Changelog
 
+## v42.0 - 2026-08-18
+
+**Four-state truth and recovery boundary / 四态语义与恢复真实性**
+
+- 串行门：第 41 轮 PR #3215 已合并（head `e5b35a1aec70a20d6cd33542f0b1828fa31da756`，merge `7d5d1c7914de610c7e68a89f055063afc077e79f` 已包含于 canonical `main@fb7e7c3b7d2c88bd4acbeceaafc13d8933b3082f`）；同一投稿包开放 PR 为 0，源工作树洁净。本轮只修复四态展示可能被误读为现实恢复、授权或成熟度升级的断点。
+- Serial gate: Round 41 PR #3215 is merged (head `e5b35a1aec70a20d6cd33542f0b1828fa31da756`; merge `7d5d1c7914de610c7e68a89f055063afc077e79f` is contained in canonical `main@fb7e7c3b7d2c88bd4acbeceaafc13d8933b3082f`); the package has zero open PRs and the source worktree was clean. This round repairs only four-state display breaks that could be misread as real recovery, authorization or maturity advance.
+
+| 已具备 / Already present | 仍薄弱 / RED | 必须冻结 / Locked | 本轮实施 / Implemented |
+|---|---|---|---|
+| 48 秒的 `jury-motion-journey.json` 已说明它只是界面节奏；四态卡和无 JavaScript/减少动态后备已存在；四轴和三载体已有合同 | 两版按钮与读屏播报把“48 秒旅程完成”说得像恢复事件；可见恢复卡与第 4 步漫游未明确切开恢复、授权、批准、G1 与重启；服务轴当前值不在其允许值集合 | 双轨总纲、四态数量与动画长度、三原型、JZ-AIOS、三载体、九份 geometry、`metrics.json`、12/8/3/36、G0/NO-GO/provisional、现实结果 0、媒体、PDF、`not_fully_cleared` 与独立清权 0 | 动态统一标为“48 秒界面示意 / interface pacing”；两版全部可见恢复卡和漫游第 4 步明确“材料闭合也不产生重启授权、批准、G1 或现实结果”；服务轴改为已声明的 `ordinary_non_ai_concept_requirement`，并说明它不是观察到的服务可用性 |
+
+- 修复前 RED 可重放：中英文按钮分别是 `开始 48 秒旅程` / `Start 48-second journey`，读屏脚本含 `Journey started at` 与 `Journey complete at`；两版恢复卡缺少不授权语句；漫游第 4 步缺少候选不授权语句；`service_state.current_value=ordinary_non_ai_available_concept_requirement_not_verified_service` 不在 `allowed_values` 中。修复后五类专项断言全部通过，界面动态、静态卡和减少动态均只表达审阅示意。
+- Reproducible RED: the Chinese/English buttons read `开始 48 秒旅程` / `Start 48-second journey`, and the live-region script contained `Journey started at` and `Journey complete at`; both recovery cards lacked a non-authorization statement; walkthrough Step 4 lacked a candidate non-authorization statement; and `service_state.current_value=ordinary_non_ai_available_concept_requirement_not_verified_service` was absent from `allowed_values`. After repair, all five specialized assertion groups pass and motion, static cards and reduced motion express reviewer display only.
+- 本轮无新媒体、模型、来源、主张、场景、项目、重点区、治理合同、页面或 PDF。生成方法、来源、模型、权利与不可证明事项披露不变；概念展示、界面演示、合成回放、文件 PASS 与 PR 合并均不成为现场证据、真实恢复、授权、批准、G1 或清权。非 AI 路径继续完整，故障只停验证叠层，恢复先还原普通使用。
+- This round adds no media, model, source, claim, scene, project, key area, governance contract, page or PDF. Generation-method, source, model, rights and non-provable-matter disclosures remain unchanged; concept display, interface pacing, synthetic replay, a file PASS and PR merge do not become field evidence, real recovery, authorization, approval, G1 or clearance. The non-AI path remains complete, failure stops only the proof overlay, and recovery restores ordinary use first.
+
 ## v41.0 - 2026-08-18
 
 **Evidence-first reviewer reading ladder / 证据优先的评审阅读梯**
