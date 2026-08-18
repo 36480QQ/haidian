@@ -96,6 +96,18 @@
       "status": "pending_official_designation",
       "statement": "京张铁路遗址公园的运营管理主体、养护责任单位与道路家具维护机制，本轮公开检索未见任何官方发布文件。道钉带、应答钟、应答门、要素服务驿站、城市进化档案馆的实施与长期维护主体因此均处于未知状态。",
       "impact": "全部运营类机制一律表述为“建议由政府主导确定运营主体”，不得指定、暗示或默认任何单位承担；道钉带的年度增补与档案归档责任须随运营主体确定后一并明确，在此之前不得写入任何含责任主体的承诺性表述。"
+    },
+    {
+      "id": "A-POP-002",
+      "status": "reported_figure_only",
+      "statement": "人均类指标的人口口径为“服务人口”而非常住人口统计：分母45万取自京张铁路遗址公园二期建成开放报道中“服务沿线70个社区、约45万居民”的表述（PARK2-OPEN-2026），这是二期建成走廊的服务覆盖口径，既不是统计部门的常住人口数，也不是提交边界范围内的人口数。分子（公共空间面积、绿地面积）取自本包提交几何在EPSG:4548下的复算值，其覆盖范围与该服务人口的覆盖范围并不重合。",
+      "impact": "metrics.json 中 public_space_sqm_per_served_resident 与 green_space_sqm_per_served_resident 只能作为量级参考，不得与法定人均绿地/公共空间指标直接比对或作为达标判据，置信度登记为 low。待逐街道常住人口数据公开（见 A-POP-001）后按官方口径重算。"
+    },
+    {
+      "id": "A-METRICS-001",
+      "status": "standing_discipline",
+      "statement": "指标表复算口径：metrics.json 全部数值由 build-staging/build_metrics.py 一次生成，不手写。几何类指标一律先由 EPSG:4326 投影到 EPSG:4548 再量算，面积用 shapely 的 unary_union 溶合后计（与审查脚本 spatial_review.py 同法同参），因此分项面积之和可能与溶合总面积存在亚平方米级差异。每项均登记 status/value/unit/source_files/formula/confidence/assumptions，formula 写到可照做复算的程度。指标按来源分三类：(1) 提交几何复算值；(2) 已登记来源的引述值——served_population_reported_count、served_community_reported_count、filed_model_reported_count，置信度 low 并注明时点口径；(3) 由前两类推出的设计模型值——daoding_design_density_per_km，置信度 low，随备案数变动，不是建成量。算不出的一律 status=unknown、value=null 并写明原因，不以估值或“约”字填充。",
+      "impact": "site_area_sqm、green_ratio、public_space_ratio、building_footprint_area_sqm、key_area_count 五项与 visual/index.html、visual/index.en.html 的 data-value 强绑定，脚本对其做冻结断言：复算值与已发布值不一致即中止写入、不产出 metrics.json。官方红线、控规条件或文保矢量边界发布后，按 A-RECALC-001 重跑该脚本整包重算。"
     }
   ]
 }
