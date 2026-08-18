@@ -30,8 +30,8 @@
     "pending_round19_final_bytes": "Round 19 provenance structure is recorded, but the stored digest is deliberately retained as a prior snapshot until concurrent review stabilizes the exact file bytes; it is not a final identity claim."
   },
   "file_coverage": {
-    "expected_manifest_entries": 141,
-    "expected_non_manifest_entries": 140,
+    "expected_manifest_entries": 149,
+    "expected_non_manifest_entries": 148,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -85,7 +85,11 @@
           "visual/assets/jury-motion-journey.json",
           "visual/assets/round17-reading.css",
           "visual/assets/public-signal-interface.css",
-          "visual/assets/public-signal-interface.js"
+          "visual/assets/public-signal-interface.js",
+          "visual/assets/spatial-atlas-contract.json",
+          "visual/assets/spatial-atlas-baseline.json",
+          "visual/assets/spatial-atlas-terminology.json",
+          "visual/assets/spatial-atlas.css"
         ],
         "limits": [
           "Repository source status is relied on but not independently re-licensed here.",
@@ -153,7 +157,7 @@
         "id": "RIGHTS-GROUP-05",
         "name": "Generated visual and publication outputs",
         "rights_status": "generated_derivative_pending_embedded_asset_audit",
-        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from bilingual narrative, structured evidence, and conceptual geometry. Sixteen package-authored bilingual SVG pairs—key areas, key-area sections, three-frame site reading, land-use duties, ordinary mobility, metrics/evidence, non-AI service, urban metabolism, failure governance, climate resilience, century timeline, industry/public value, year-round operations, professional handoff, field-evidence intake, and the public-signal interface—remain pending independent rights review; paired PNG files are deterministic display exports. The reversible-components pair remains separately grouped as a repository-provisional derivative.",
+        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from bilingual narrative, structured evidence, and conceptual geometry. Sixteen package-authored bilingual SVG pairs—key areas, key-area sections, three-frame site reading, land-use duties, ordinary mobility, metrics/evidence, non-AI service, urban metabolism, failure governance, climate resilience, century timeline, industry/public value, year-round operations, professional handoff, field-evidence intake, and the public-signal interface—remain pending independent rights review; paired PNG files are deterministic display exports. The reversible-components pair remains separately grouped as a repository-provisional derivative. The Round 43 spatial-atlas bilingual SVG/PNG pair is a further package-authored G0 relation diagram and deterministic display export.",
         "paths": [
           "drawings/a3-booklet.pdf",
           "drawings/a0-boards.pdf",
@@ -230,7 +234,11 @@
           "assets/figures/public-signal-interface.svg",
           "assets/figures/public-signal-interface.en.svg",
           "assets/figures/public-signal-interface.png",
-          "assets/figures/public-signal-interface.en.png"
+          "assets/figures/public-signal-interface.en.png",
+          "assets/figures/spatial-atlas.svg",
+          "assets/figures/spatial-atlas.en.svg",
+          "assets/figures/spatial-atlas.png",
+          "assets/figures/spatial-atlas.en.png"
         ],
         "limits": [
           "No standalone source font file is shipped. The four Round 19 PDFs contain visible NotoSansSC-Medium/Bold subsets and retain an unused, unembedded Helvetica resource. The accepted synthetic Round 19 cover contains rasterized DengXian glyph pixels. HTML requests system font stacks, and concrete fonts resolved while rasterizing the thirty-four checked-in SVG files were not recorded. Embedding, referencing, or rasterization does not establish license compliance.",
@@ -239,8 +247,8 @@
         ]
       }
     ],
-    "expected_manifest_file_count": 141,
-    "expected_non_manifest_content_file_count": 139
+    "expected_manifest_file_count": 149,
+    "expected_non_manifest_content_file_count": 147
   },
   "asset_records": [
     {
@@ -297,7 +305,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "8d995ca82583876cfd90cdcf79cc4844b24661979e472317ec5da0afa8b7274f",
+        "digest": "e1a4b0e4f139996d8e706e5823281df3f898325d9f6d5d21e2dfcfdb7c0afd8d",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from the final Round 39 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
@@ -374,7 +382,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "d02b7957f8f6d9a9b424a112a78a853aaab99ffe21fe8f2abf91dd31fbc8cb4a",
+        "digest": "d216e740c3c710f6710a57b55f3251c700d2a3b18401447083211046427be8ba",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -653,7 +661,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "32c48e7df3d4d89fc2bb5b64d8f4a07635883fec084392e0b980f5ea8bbbcfd5",
+        "digest": "174df27476a45fa1a5a5f7df470bb9cf14cf6c1bae9b26d138cf0319ad6a7412",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -1816,7 +1824,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "41ef801652178fedd97701dafe274582b66e08841ff2649584edf56fb4ccd277",
+        "digest": "4ecac5da5c02b1eed6561e1e75fd64941a7e5666ae0640e384ae39071e80ee85",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from the final Round 39 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
@@ -1908,7 +1916,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "08d76422964647cb4a443fb5cd94bdd8c7b9575eb592b75164af2b5563692230",
+        "digest": "695983ec94b57b3b70be5dd2cb47240caba1450d70c126b9d8e8a5f298fa44cd",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -2007,7 +2015,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c25f3c446121b02cdbf7361818fd39b35d4c848f9b8f27e621e34417055dec9c",
+        "digest": "625cae79ab271c7a6e6d6cad196432e134e4a9585032db86de85b7a6a6e0e25f",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -2026,7 +2034,9 @@
           "assets/figures/climate-resilience-corridor.png",
           "assets/figures/metrics-evidence.png",
           "assets/figures/public-signal-interface.png",
-          "assets/figures/review-professional-handoff.png"
+          "assets/figures/review-professional-handoff.png",
+          "assets/figures/spatial-atlas.png",
+          "assets/figures/spatial-atlas.en.png"
         ],
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
@@ -2051,7 +2061,7 @@
       "generation_recipe": {
         "status": "recorded_deterministic",
         "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
-        "limitation": "Round 19 used deterministic ReportLab/fontTools assembly plus offline Chrome 4x SVG print layers and PyMuPDF/Pillow QA. Two fresh-process builds were byte-identical at the recorded build checkpoint, but rights compliance, final post-review bytes, and identical upstream environments are not asserted."
+        "limitation": "Round 43 replaces only the existing page-4/board-4 spatial-atlas print region from local package PNGs; page counts remain fixed. This local publication refresh does not assert byte-identical rebuilds, rights compliance, final post-review bytes or identical upstream environments."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2081,7 +2091,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "493a00cfc186c6e4b3a597515623204a6bc0eba60769d4ff8960302976a0896e",
+        "digest": "f1b14faa77bb5d4d30b0ccf1e538bce65bb42931f424a7d67063f9455cbdd452",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -2114,7 +2124,9 @@
           "assets/figures/public-signal-interface.png",
           "assets/figures/public-signal-interface.svg",
           "assets/figures/review-professional-handoff.png",
-          "assets/figures/review-professional-handoff.svg"
+          "assets/figures/review-professional-handoff.svg",
+          "assets/figures/spatial-atlas.png",
+          "assets/figures/spatial-atlas.en.png"
         ],
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
@@ -2139,7 +2151,7 @@
       "generation_recipe": {
         "status": "recorded_deterministic",
         "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
-        "limitation": "Round 19 used deterministic ReportLab/fontTools assembly plus offline Chrome 4x SVG print layers and PyMuPDF/Pillow QA. Two fresh-process builds were byte-identical at the recorded build checkpoint, but rights compliance, final post-review bytes, and identical upstream environments are not asserted."
+        "limitation": "Round 43 replaces only the existing page-4/board-4 spatial-atlas print region from local package PNGs; page counts remain fixed. This local publication refresh does not assert byte-identical rebuilds, rights compliance, final post-review bytes or identical upstream environments."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2169,7 +2181,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "40d9167c19133180c529c10b32bbc3eb4dbb03edeceb9a70d1fe3bf1848e239e",
+        "digest": "fbb6fb790cabd387b4e4692d3cf3e5e9f7f84572cc02dc14b945b513b697af38",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -2241,7 +2253,7 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "413674c247dae18daae52456c55bf5cd6b91826df51451d519651c662aec9780",
+        "digest": "5a706fc5cbdfe3d601bcafc027d5bbb5a5ba3aba1462263a3aae14d3f1608715",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -2295,7 +2307,7 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "bb52547f84db7149ea32280757a45908ad2c7f019796de144979dca3abe3d780",
+        "digest": "c7224274d36813fe829fd317514dddf088429f858bff60f07eb680e8c948a3f5",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -2351,7 +2363,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1d84e2656965689b2d0c6c34920d3416d90a363bcbec6de8c51f87ce68e92863",
+        "digest": "1fd5da435bdc823bccdb78cee9f825827f16d844bb5fd823b37a63551e23f56c",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -2405,7 +2417,7 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "12b795a21081dd7e6e4319e382865fe9a61e3fdeb246dd888dcc90297b5034ad",
+        "digest": "da779940b973286dacc23239bd1de70a1754471894a0870d4afc598f8543692a",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -3230,7 +3242,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4353685e09218f1d9a79bf02f3769029337a374dcef71d3e666bf4a0347d47bf",
+        "digest": "2a761aa1bc7956f84a5974d43d9f94a19d42d952a3a67d6ef7f0df6a318d8cab",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from the final Round 39 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
@@ -3307,7 +3319,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b1f740a77ee3ec6deeff51239c261a38bc78c89e1554e5e82de71be71caf3164",
+        "digest": "ce202cbbec467ad82c588dedf78a2b8196ba380d8f7ac7d1adbe7cce1be558d6",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from the final Round 39 file bytes and is refreshed into manifest.json after this ledger is finalized."
       },
@@ -3399,7 +3411,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "349c541c7f8e06f3b5ccc2d52f72e957bbd2dedbdcb9af88f7998318e719538c",
+        "digest": "3bf0aa765590dc44c8c7a59584f280f28e9ef436a0244e57f8f66d17ddafbd8d",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -3471,7 +3483,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5ca0d4f4be828cbab445b1a2bd12c3ba861bfd6ce85d6cddc503c0be692e5a7d",
+        "digest": "93f8a0099f199d20760b72173efdc850ce7b346b24146860190323aebfeae5a9",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -3490,7 +3502,9 @@
           "assets/figures/climate-resilience-corridor.en.png",
           "assets/figures/metrics-evidence.en.png",
           "assets/figures/public-signal-interface.en.png",
-          "assets/figures/review-professional-handoff.en.png"
+          "assets/figures/review-professional-handoff.en.png",
+          "assets/figures/spatial-atlas.png",
+          "assets/figures/spatial-atlas.en.png"
         ],
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
@@ -3515,7 +3529,7 @@
       "generation_recipe": {
         "status": "recorded_deterministic",
         "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
-        "limitation": "Round 19 used deterministic ReportLab/fontTools assembly plus offline Chrome 4x SVG print layers and PyMuPDF/Pillow QA. Two fresh-process builds were byte-identical at the recorded build checkpoint, but rights compliance, final post-review bytes, and identical upstream environments are not asserted."
+        "limitation": "Round 43 replaces only the existing page-4/board-4 spatial-atlas print region from local package PNGs; page counts remain fixed. This local publication refresh does not assert byte-identical rebuilds, rights compliance, final post-review bytes or identical upstream environments."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3545,7 +3559,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "bb4461098acd8d50d70fe34343de28d6ae0c6f206f4b93a36f3e7230fcf615c5",
+        "digest": "e25df2b1a6b25bc08ca36009ed3b2d2392114c463c71121feccf3c9218a85461",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -3578,7 +3592,9 @@
           "assets/figures/public-signal-interface.en.png",
           "assets/figures/public-signal-interface.en.svg",
           "assets/figures/review-professional-handoff.en.png",
-          "assets/figures/review-professional-handoff.en.svg"
+          "assets/figures/review-professional-handoff.en.svg",
+          "assets/figures/spatial-atlas.png",
+          "assets/figures/spatial-atlas.en.png"
         ],
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
@@ -3603,7 +3619,7 @@
       "generation_recipe": {
         "status": "recorded_deterministic",
         "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
-        "limitation": "Round 19 used deterministic ReportLab/fontTools assembly plus offline Chrome 4x SVG print layers and PyMuPDF/Pillow QA. Two fresh-process builds were byte-identical at the recorded build checkpoint, but rights compliance, final post-review bytes, and identical upstream environments are not asserted."
+        "limitation": "Round 43 replaces only the existing page-4/board-4 spatial-atlas print region from local package PNGs; page counts remain fixed. This local publication refresh does not assert byte-identical rebuilds, rights compliance, final post-review bytes or identical upstream environments."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3741,7 +3757,7 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4e9b9992f1d58f539284b7646401528c5953abd40e8a9de5638cfd6b68431a67",
+        "digest": "5fa711377c21f03c791cb5ee55bb6d7edcc0f8915a8da0c276e97b921675af53",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -3795,7 +3811,7 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "9f82dd2543dfab073140821344938176c0524e70d9328a51c5b6bc085244a1e4",
+        "digest": "8821719c13135cec18204978b7b9dc2b36ef97de1322b834675261ad1289f827",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -3852,7 +3868,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7ea8d94b06aa7304d680c2c52a38aa3452fd804bcd7a59e506fdbc68e3f53916",
+        "digest": "de19683e453235b593620e96f6529fba306d93af7a87fced3cbb3d86bcd10d68",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -3907,7 +3923,7 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "dff60d1f3ce458bdc49ecd0a8f8c6be45723b1b410c287edfcb9481fd5b50c83",
+        "digest": "fa2fc183f82d06b631c490abf323d956db22573bbcedcb9da2c556f323f767a6",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -7805,7 +7821,7 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "23d989c8b0a1d466186c7c8a2ab192478f420c34e9de43a1f86ced1fc74f2301",
+        "digest": "c43c5f8ae2b1d67382e1f753310dc72c63102ae633f2aa414918dd6d88bbfacc",
         "digest_status": "matches_final_manifest_after_refresh",
         "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
       },
@@ -7845,6 +7861,414 @@
       ],
       "release_effect": "inherits_blocked_public_or_professional_reuse_gate",
       "legacy_role_detail": "review_handoff_index"
+    },
+    {
+      "asset_id": "ASSET-142",
+      "path": "visual/assets/spatial-atlas-contract.json",
+      "role": "evidence_data",
+      "language": "neutral",
+      "asset_class": "package_authored_structured_record",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "6a8458aa58538a3555ecec6b0648d8059d86958039121303810c0fcb11c54319",
+        "digest_status": "matches_final_manifest_after_refresh",
+        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "visual/assets/spatial-atlas-contract.json",
+          "visual/assets/review-handoff-index.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_structured_or_stylesheet",
+        "evidence_ref": "spatial-atlas-contract.json",
+        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-143",
+      "path": "visual/assets/spatial-atlas-baseline.json",
+      "role": "evidence_data",
+      "language": "neutral",
+      "asset_class": "package_authored_structured_record",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "a9bf2c4efdee5cd815880c4c0120a39a023af8a1b24fe13df45428f4ae1f3622",
+        "digest_status": "matches_final_manifest_after_refresh",
+        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "visual/assets/spatial-atlas-contract.json",
+          "visual/assets/review-handoff-index.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_structured_or_stylesheet",
+        "evidence_ref": "spatial-atlas-contract.json",
+        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-144",
+      "path": "visual/assets/spatial-atlas-terminology.json",
+      "role": "evidence_data",
+      "language": "neutral",
+      "asset_class": "package_authored_structured_record",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "dcfd54bca34ad1b9e7c2bc429779ef1c252b8ca2c4bdf296416502462359939f",
+        "digest_status": "matches_final_manifest_after_refresh",
+        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "visual/assets/spatial-atlas-contract.json",
+          "visual/assets/review-handoff-index.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_structured_or_stylesheet",
+        "evidence_ref": "spatial-atlas-contract.json",
+        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-145",
+      "path": "visual/assets/spatial-atlas.css",
+      "role": "stylesheet",
+      "language": "neutral",
+      "asset_class": "package_authored_structured_record",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "bffc95feacd395517cbfdfcd3992876a0376822b8810bf8184ee7c4c33ff6b9a",
+        "digest_status": "matches_final_manifest_after_refresh",
+        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "visual/assets/spatial-atlas-contract.json",
+          "visual/assets/review-handoff-index.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_structured_or_stylesheet",
+        "evidence_ref": "spatial-atlas-contract.json",
+        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-146",
+      "path": "assets/figures/spatial-atlas.svg",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "editable_concept_figure",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "1cb3e78d269109e828b804848a1ea3e26ed231a7565dfdadaa14263222427e3c",
+        "digest_status": "matches_final_manifest_after_refresh",
+        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "proposal.en.md",
+          "visual/assets/key-area-evidence-matrix.json",
+          "geometry/key_areas.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_deterministic_svg",
+        "evidence_ref": "spatial-atlas-contract.json",
+        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-147",
+      "path": "assets/figures/spatial-atlas.en.svg",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "editable_concept_figure",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "40b4c5ee40db8e6314e3e7dbdf3f030da753e8a27649db17a42e9a39a3901955",
+        "digest_status": "matches_final_manifest_after_refresh",
+        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "proposal.en.md",
+          "visual/assets/key-area-evidence-matrix.json",
+          "geometry/key_areas.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_deterministic_svg",
+        "evidence_ref": "spatial-atlas-contract.json",
+        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-148",
+      "path": "assets/figures/spatial-atlas.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "derived_display_raster",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "6648f28a147e2ebad79d7b2effc9cdd04d72e2649962f6c3b46b087b233ed7be",
+        "digest_status": "matches_final_manifest_after_refresh",
+        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "proposal.en.md",
+          "visual/assets/key-area-evidence-matrix.json",
+          "geometry/key_areas.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_structured_or_stylesheet",
+        "evidence_ref": "spatial-atlas-contract.json",
+        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-149",
+      "path": "assets/figures/spatial-atlas.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "derived_display_raster",
+      "origin_status": "package_authored_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "80c94240205eee5012d2c0fe5a6a1d449187ef09730ff713c25ac559f86302e9",
+        "digest_status": "matches_final_manifest_after_refresh",
+        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "proposal.en.md",
+          "visual/assets/key-area-evidence-matrix.json",
+          "geometry/key_areas.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "package_authored_structured_or_stylesheet",
+        "evidence_ref": "spatial-atlas-contract.json",
+        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
     }
   ],
   "third_party_and_tool_boundaries": [
