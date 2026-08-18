@@ -31,7 +31,7 @@
       "zh": "场景护照：12 个场景的门级与护照字段覆盖"
     }
   },
-  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R42",
+  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R43",
   "evidence_integrity": {
     "cold_read_answer_map": {
       "answers_checked": 8,
@@ -78,6 +78,31 @@
       },
       "scope_zh": "这是编辑和类型集合审计：不测量公众理解、无障碍结果、现实服务、恢复时长、批准、授权、G1 或现场结果。",
       "scope_en": "This is an editorial and declared-value-set audit: it measures no public comprehension, accessibility result, real service, recovery duration, approval, authorization, G1 or field outcome."
+    },
+    "spatial_atlas_r43": {
+      "audit_type": "editorial spatial-reading check",
+      "red_before": {
+        "single_visible_spatial_reading_sequence": false,
+        "site_specific_stop_handoff_recovery_triplets": 0,
+        "reproduction": "Before Round 43, the three-place reading appeared in separate plan, section and prose surfaces. No single bilingual static figure placed ordinary continuity, side proof, stop object, staffed handoff and named recovery return in all three non-interchangeable spatial relations."
+      },
+      "post_repair": {
+        "bilingual_static_figure_paths": [
+          "assets/figures/spatial-atlas.png",
+          "assets/figures/spatial-atlas.en.png"
+        ],
+        "bilingual_visible_entries": [
+          "visual/index.html#spatial-atlas",
+          "visual/index.en.html#spatial-atlas"
+        ],
+        "site_specific_stop_handoff_recovery_triplets": 3,
+        "ordinary_non_ai_route_explicit_per_language": true,
+        "recovery_non_authorization_explicit_per_language": true,
+        "static_without_javascript": true,
+        "primary_navigation_items_unchanged": 6
+      },
+      "scope_zh": "这是编辑性空间阅读检查，不认证公众理解、真实地点、已建成状态、无障碍结果、恢复时长、批准、授权、G1、权利清除或现场结果。",
+      "scope_en": "This is an editorial spatial-reading check. It certifies no public comprehension, real location, built condition, accessibility result, recovery duration, approval, authorization, G1, rights clearance or field outcome."
     },
     "generator_enforced": true,
     "heading_parity": {
