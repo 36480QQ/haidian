@@ -14,10 +14,8 @@
         "public_space_type": "plaza",
         "name_zh": "众智园AI创新广场",
         "area_sqm_declared": 42818.137,
-        "serving_radius_m": 800,
-        "capacity_persons": 500,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "node_type": "innovation_plaza",
+        "access_rule": "registration_free_equal_no_app_route"
       },
       "geometry": {
         "type": "Polygon",
@@ -297,12 +295,10 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "public_space_type": "plaza",
-        "name_zh": "AI原点社区广场",
+        "name_zh": "原点社区广场",
         "area_sqm_declared": 29746.938,
-        "serving_radius_m": 800,
-        "capacity_persons": 500,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "node_type": "community_plaza",
+        "access_rule": "registration_free_equal_no_app_route"
       },
       "geometry": {
         "type": "Polygon",
@@ -584,10 +580,8 @@
         "public_space_type": "plaza",
         "name_zh": "大钟寺AI城市客厅",
         "area_sqm_declared": 29764.747,
-        "serving_radius_m": 800,
-        "capacity_persons": 500,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "node_type": "civic_living_room",
+        "access_rule": "registration_free_equal_no_app_route"
       },
       "geometry": {
         "type": "Polygon",
@@ -867,12 +861,10 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
-        "name_zh": "京张绿廊活动节点1",
+        "name_zh": "京张绿廊先问台",
         "area_sqm_declared": 19050.802,
-        "serving_radius_m": 400,
-        "capacity_persons": 200,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "node_type": "ask_first_desk",
+        "access_rule": "registration_free_equal_no_app_route"
       },
       "geometry": {
         "type": "Polygon",
@@ -1152,12 +1144,10 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
-        "name_zh": "京张绿廊活动节点2",
+        "name_zh": "京张绿廊人工接手亭",
         "area_sqm_declared": 19047.239,
-        "serving_radius_m": 400,
-        "capacity_persons": 200,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "node_type": "human_takeover_pavilion",
+        "access_rule": "registration_free_equal_no_app_route"
       },
       "geometry": {
         "type": "Polygon",
@@ -1437,12 +1427,10 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
-        "name_zh": "京张绿廊活动节点3",
+        "name_zh": "京张绿廊公开改进墙",
         "area_sqm_declared": 19043.126,
-        "serving_radius_m": 400,
-        "capacity_persons": 200,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "node_type": "public_change_log",
+        "access_rule": "registration_free_equal_no_app_route"
       },
       "geometry": {
         "type": "Polygon",
@@ -1724,10 +1712,8 @@
         "public_space_type": "activity_node",
         "name_zh": "京张绿廊活动节点4",
         "area_sqm_declared": 19034.347,
-        "serving_radius_m": 400,
-        "capacity_persons": 200,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "node_type": "activity_node",
+        "access_rule": "registration_free_equal_no_app_route"
       },
       "geometry": {
         "type": "Polygon",
@@ -2009,10 +1995,8 @@
         "public_space_type": "activity_node",
         "name_zh": "京张绿廊活动节点5",
         "area_sqm_declared": 19029.955,
-        "serving_radius_m": 400,
-        "capacity_persons": 200,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "node_type": "activity_node",
+        "access_rule": "registration_free_equal_no_app_route"
       },
       "geometry": {
         "type": "Polygon",
@@ -2293,11 +2277,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园1",
-        "area_sqm_declared": 7441.189,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7441.189
       },
       "geometry": {
         "type": "Polygon",
@@ -2578,11 +2558,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园1",
-        "area_sqm_declared": 7441.18,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7441.18
       },
       "geometry": {
         "type": "Polygon",
@@ -2863,11 +2839,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园2",
-        "area_sqm_declared": 7439.261,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7439.261
       },
       "geometry": {
         "type": "Polygon",
@@ -3148,11 +3120,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园2",
-        "area_sqm_declared": 7439.252,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7439.252
       },
       "geometry": {
         "type": "Polygon",
@@ -3433,11 +3401,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园3",
-        "area_sqm_declared": 7437.868,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7437.868
       },
       "geometry": {
         "type": "Polygon",
@@ -3718,11 +3682,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园3",
-        "area_sqm_declared": 7437.86,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7437.86
       },
       "geometry": {
         "type": "Polygon",
@@ -4003,11 +3963,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园4",
-        "area_sqm_declared": 7436.047,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7436.047
       },
       "geometry": {
         "type": "Polygon",
@@ -4288,11 +4244,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园4",
-        "area_sqm_declared": 7436.038,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7436.038
       },
       "geometry": {
         "type": "Polygon",
@@ -4573,11 +4525,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园5",
-        "area_sqm_declared": 7434.653,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7434.653
       },
       "geometry": {
         "type": "Polygon",
@@ -4858,11 +4806,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园5",
-        "area_sqm_declared": 7434.644,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7434.644
       },
       "geometry": {
         "type": "Polygon",
@@ -5143,11 +5087,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园6",
-        "area_sqm_declared": 3901.099,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 3901.099
       },
       "geometry": {
         "type": "Polygon",
@@ -5308,11 +5248,7 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园6",
-        "area_sqm_declared": 7433.143,
-        "serving_radius_m": 200,
-        "capacity_persons": 50,
-        "accessibility": "barrier_free",
-        "shade_coverage": 0.5
+        "area_sqm_declared": 7433.143
       },
       "geometry": {
         "type": "Polygon",
