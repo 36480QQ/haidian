@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-17T03:00:00Z",
+  "generated_at": "2026-08-14T00:00:00Z",
   "package_license": "COMMUNITY-DISPLAY-ONLY",
   "planned_channels_review": {
     "reviewed_at": "2026-08-13",
@@ -89,7 +89,7 @@
       "evidence_location": "This ledger, sources.json, report/copyright_statement.md, manifest hashes, and the named asset path."
     },
     {
-      "scope": "assets/media/v1.1/*.png",
+      "scope": "assets/media/cover.webp, assets/media/v1.1/*.png",
       "asset_type": "participant-authored local raster scene boards",
       "creator": "OpenAI Codex under user direction",
       "source_or_tool": "tools/build_railcode_v11.py + Python/Pillow + participant-authored spatial contracts",
@@ -102,21 +102,6 @@
       "attribution": "296277 / OpenAI Codex; locally drawn with Python/Pillow",
       "transformation": "Original geometric scene construction from the proposal's spatial contracts; no external or generated image input",
       "evidence_location": "asset hashes in manifest.json, method in report/copyright_statement.md, and source method retained locally in tools/build_railcode_v11.py"
-    },
-    {
-      "scope": "assets/media/cover.webp, assets/media/v1.5/*.webp, assets/media/v1.6/review-hero.webp",
-      "asset_type": "participant-directed synthetic urban-design concept renderings and local contact sheet",
-      "creator": "OpenAI Codex under user direction",
-      "source_or_tool": "gpt-image-2 through the user's configured OpenAI-compatible image-group connection; Python/Pillow for contact-sheet composition and WebP export",
-      "third_party_content": false,
-      "redistribution": "within this submission under package licence",
-      "limits": "AI concept renderings only; not site photographs, resident views, existing conditions, official renderings, boundaries, approvals, institutional participation, engineering evidence, cost evidence, or built status",
-      "created_or_accessed_at": "2026-08-17",
-      "licence_status": "participant-directed synthetic media under COMMUNITY-DISPLAY-ONLY; no broader commercial, model-training, official-brand, or third-party relicensing grant asserted",
-      "allowed_use": "open-city-ai/haidian repository intake and non-commercial community display as part of this submission",
-      "attribution": "296277 / OpenAI Codex; generated with gpt-image-2; contact sheet composed locally with Python/Pillow",
-      "transformation": "Four scene-specific text-to-image drafts and one scene-specific high-quality edit in v1.5; labelled v1.5 cover and text-free v1.6 reviewer hero composed locally from the disclosed synthetic scenes. No site photo, map screenshot, peer image, logo, private interior, or identifiable-person reference supplied",
-      "evidence_location": "visual/assets/ai_render_disclosure.json, report/copyright_statement.md, proposal.md, proposal.en.md, and manifest hashes"
     },
     {
       "scope": "rendered text in figures and PDFs",
@@ -247,15 +232,15 @@
       "scope": "assets/figures/site-overview.png, assets/figures/site-overview.en.png, assets/figures/key-areas.png, assets/figures/key-areas.en.png",
       "asset_type": "participant-authored bilingual spatial and professional handoff raster diagrams",
       "creator": "OpenAI Codex under user direction",
-      "source_or_tool": "local Python/Pillow rendering from disclosed v1.5 synthetic scenes, provisional topology, contracts, gates, and handoff records",
+      "source_or_tool": "local Python/Pillow rendering from provisional geometry, contracts, and handoff records",
       "third_party_content": false,
       "redistribution": "within this submission under package licence",
-      "limits": "AI experience views plus topological concept and handoff template; scenes are not site photographs or engineering evidence, provisional geometry is not an official redline, and role types are not real institutions",
-      "created_or_accessed_at": "2026-08-17",
+      "limits": "topological concept and handoff template; provisional geometry is not an official redline and role types are not real institutions",
+      "created_or_accessed_at": "2026-08-14",
       "licence_status": "participant-authored under COMMUNITY-DISPLAY-ONLY",
       "allowed_use": "open-city-ai/haidian repository intake and non-commercial community display only",
       "attribution": "296277 / OpenAI Codex",
-      "transformation": "Deterministic bilingual composition: disclosed v1.5 scene crops are paired with participant-authored task topology, RC/G0-G4 routing, reality state, and evidence boundary; no peer text, code, image, data, or brand copied",
+      "transformation": "Original raster diagrams; no peer text, code, image, data, or brand copied",
       "evidence_location": "visual/assets/key_area_handoff.json, geometry/*.geojson, manifest hashes, and report/copyright_statement.md"
     },
     {
