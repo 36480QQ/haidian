@@ -1525,16 +1525,16 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-308 entries. By finder:
+310 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 27 | Run against the shipped package, not a draft |
 | The author | 206 | Found while working |
-| This package's own gate | 20 | Caught at build time, which is what a gate is for |
+| This package's own gate | 21 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 19 | Seen elsewhere, absent here |
+| Reading a rival's package | 20 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1547,12 +1547,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Shipped unseen | 30 |
 | Uncheckable | 24 |
 | Outlived the package | 21 |
-| Nothing fails it | 16 |
+| Nothing fails it | 17 |
 | Recorded where found | 14 |
 | A reference did not resolve | 12 |
 | Not itself | 12 |
+| Outlived its line | 10 |
 | A source unnameable | 9 |
-| Outlived its line | 9 |
 | A total excluding | 8 |
 | Answered under another name | 7 |
 | Geometry not meaning it | 7 |
@@ -1837,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 1166 KB, 1,815 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.7 s**; 9 files, 1165 KB, 1,810 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

@@ -133,8 +133,8 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 <figcaption>Rotated horizontal per alignment-sheet convention: south (Xizhimen) left, north (Qinghe) right. Linework drawn directly from <code>geometry/</code> , recomputed in EPSG:4548.</figcaption></figure>
 
 <h2>A reviewer's route<span class="en">A REVIEWER'S ROUTE</span></h2>
-<p class="note">Running all 5 verifiers takes 0.72 s; the 9 files to read come to 1166 KB and 1815 countable units. Timed by running them, shipped in <code>visual/assets/review_route.json</code>.</p>
-<ol class="route"><li><code>node visual/assets/verify.js</code> — Recompute every metric_class 1 figure in metrics.json<span class="en">0.4 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> — Recompute the 412.5 m closure and every site cross-check figure<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> — Resolve every scenario card's benchmark, spatial anchor and exit condition<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> — Execute the closure mechanism as a data contract<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> — The S08 tabletop run, refusal branches included<span class="en">0.25 s · exit 0</span></li></ol>
+<p class="note">Running all 5 verifiers takes 0.7 s; the 9 files to read come to 1165 KB and 1810 countable units. Timed by running them, shipped in <code>visual/assets/review_route.json</code>.</p>
+<ol class="route"><li><code>node visual/assets/verify.js</code> — Recompute every metric_class 1 figure in metrics.json<span class="en">0.39 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> — Recompute the 412.5 m closure and every site cross-check figure<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> — Resolve every scenario card's benchmark, spatial anchor and exit condition<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> — Execute the closure mechanism as a data contract<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> — The S08 tabletop run, refusal branches included<span class="en">0.23 s · exit 0</span></li></ol>
 
 <h2>Drawings<span class="en">SHEETS</span></h2>
 <p class="note">All 34 sheets are drawn directly from parameters and the submitted structured data. Click to enlarge.</p>
@@ -190,12 +190,12 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 
 <h2>Key metrics<span class="en">CORE METRICS</span></h2>
 <div class="tiles">
-<div class="tile" data-metric="site_area_sqm" data-value="11412825.385554"><div class="tile-v">11,412,825<span class="u"> m²</span></div><div class="tile-l">Overall design area</div><div class="tile-k"><code>site_area_sqm</code></div></div>
-<div class="tile" data-metric="leveling_spine_length_m" data-value="9443.264658"><div class="tile-v">9,443<span class="u"> m</span></div><div class="tile-l">Spine length</div><div class="tile-k"><code>leveling_spine_length_m</code></div></div>
+<div class="tile" data-metric="site_area_sqm" data-value="11412825"><div class="tile-v">11,412,825<span class="u"> m²</span></div><div class="tile-l">Overall design area</div><div class="tile-k"><code>site_area_sqm</code></div></div>
+<div class="tile" data-metric="leveling_spine_length_m" data-value="9443.3"><div class="tile-v">9,443<span class="u"> m</span></div><div class="tile-l">Spine length</div><div class="tile-k"><code>leveling_spine_length_m</code></div></div>
 <div class="tile" data-metric="benchmark_count" data-value="8"><div class="tile-v">8<span class="u"> </span></div><div class="tile-l">Benchmark count</div><div class="tile-k"><code>benchmark_count</code></div></div>
 <div class="tile" data-metric="green_ratio" data-value="0.196628"><div class="tile-v">0.1966<span class="u"></span></div><div class="tile-l">Green corridor ratio</div><div class="tile-k"><code>green_ratio</code></div></div>
 <div class="tile" data-metric="public_space_ratio" data-value="0.064227"><div class="tile-v">0.0642<span class="u"></span></div><div class="tile-l">Public measurement-point ratio</div><div class="tile-k"><code>public_space_ratio</code></div></div>
-<div class="tile" data-metric="building_footprint_area_sqm" data-value="82276.0"><div class="tile-v">82,276<span class="u"> m²</span></div><div class="tile-l">Indicative footprint area</div><div class="tile-k"><code>building_footprint_area_sqm</code></div></div>
+<div class="tile" data-metric="building_footprint_area_sqm" data-value="82276"><div class="tile-v">82,276<span class="u"> m²</span></div><div class="tile-l">Indicative footprint area</div><div class="tile-k"><code>building_footprint_area_sqm</code></div></div>
 <div class="tile" data-metric="key_area_count" data-value="3"><div class="tile-v">3<span class="u"> </span></div><div class="tile-l">Key areas</div><div class="tile-k"><code>key_area_count</code></div></div>
 <div class="tile unknown" data-metric-unknown="floor_area_ratio">
  <div class="tile-v">unknown</div>
