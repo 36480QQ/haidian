@@ -180,12 +180,13 @@
       "statement_en": "Land-use codes must match not only the organiser's enumeration but the ministerial classification table itself.",
       "checks": "geometry/land_use.geojson 的 land_use_code 与《国土空间调查、规划、用途管制用地用海分类指南》代码表",
       "decision_rule_zh": "逐条比对代码与类名；两条独立路径互证——(a) 枚举内部自证：某组二级类只可能出自一套一级类序列；(b) 指南原文代码表。",
-      "current_result": "本包 7 个代码中 6 个与指南一致；第 7 个（05）沿用组织方枚举，与指南冲突，已在正文标注并走 Issue",
+      "current_result": "本包 7 个代码与组织方枚举（2026-08-16 修正版）及部颁指南三者一致，无遗留冲突",
       "caught_real_defects": [
         {
           "when": "2026-08-16",
           "what": "**这道闸门抓到的是组织方的错误，不是本包的**：`brief/site-package/enums/land_use_codes.json` 把 `05` 标为「商业服务业用地」，而指南中 `05` 是湿地、商业服务业用地是 `09`。该枚举 16 条中其余 15 条与指南严丝合缝。已提 Issue open-city-ai/haidian#2977。",
-          "note": "本包保留 05：改成 09 会被确定性校验判 unknown land_use_code 使四道门全红，且会破坏全场用地统计的可比性。"
+          "note": "当时保留 05 的理由是：改成 09 会被确定性校验判 unknown land_use_code 使四道门全红（彼时枚举中没有 09）。**该理由已于 2026-08-16 失效**——维护者以 PR #3017 修正枚举，恢复 05=湿地、新增 09 与 0901–0904，两个一级代码均为合法值，并说明存量包应自行迁移。",
+          "fix": "2026-08-18 按事先登记的复算触发器完成迁移：LU-003 与 LU-007 的 land_use_code 由 05 改为 09，指标键 land_use_05_sqm 更名为 land_use_09_sqm 且筛选条件同步改为 code=09，F/02 与 F/03 图例、A0 前两页与 A3 第 2 页的色标一并换码并重建（新页经 gs 嵌 OFL 字体后再跑 ToUnicode 恒等修复），sources.json、standard_matrix.json 与 design_depth_matrix.json 的旧叙述同步更正。**几何、面积与占比一位数字未变。** 本闸门此次抓到的是「迁移做了一半」：正文与图件已改 09，而 metrics 公式仍筛 05、来源与矩阵仍写着「保留 05」——由本地评审三次独立点名后补齐。"
         }
       ]
     },
