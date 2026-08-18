@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180" role="img" aria-labelledby="title desc">
   <title id="title">双轨京张：同一普通任务，三种不可互换的空间关系</title>
-  <desc id="desc">G0 概念空间图谱。众智园以平行普通绕行、原点社区以居民街连接两院、大钟寺以四向通勤十字组织日常任务。图中普通路径全部为非 AI 连续路径；验证、停止、人工交接和恢复标注将在后续图层加入。</desc>
+  <desc id="desc">G0 概念空间图谱。众智园以平行普通绕行、原点社区以居民街连接两院、大钟寺以四向通勤十字组织日常任务。蓝色虚线是旁侧验证，红色是停止对象，H 是人工交接，灰线说明恢复回到具体普通空间而不产生授权。</desc>
   <defs>
-    <style>.s{font-family:&quot;Microsoft YaHei&quot;,&quot;Noto Sans CJK SC&quot;,&quot;Segoe UI&quot;,sans-serif}.ink{fill:#102A43}.muted{fill:#536779}.head{font-size:40px;font-weight:900}.sub{font-size:22px;font-weight:760}.body{font-size:25px;font-weight:800}.small{font-size:19px;font-weight:740}.micro{font-size:16px;font-weight:700}.k{font-size:18px;font-weight:900;letter-spacing:1.7px}.ordinary{fill:none;stroke:#087E68;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.halo{fill:none;stroke:#DDF2EA;stroke-width:46;stroke-linecap:round;stroke-linejoin:round}.dash{stroke-dasharray:12 10}</style>
-    <marker id="arrow" viewBox="0 0 16 16" refX="13" refY="8" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#087E68"/></marker>
+    <style>.s{font-family:&quot;Microsoft YaHei&quot;,&quot;Noto Sans CJK SC&quot;,&quot;Segoe UI&quot;,sans-serif}.ink{fill:#102A43}.muted{fill:#536779}.head{font-size:40px;font-weight:900}.sub{font-size:22px;font-weight:760}.body{font-size:25px;font-weight:800}.small{font-size:19px;font-weight:740}.micro{font-size:16px;font-weight:700}.k{font-size:18px;font-weight:900;letter-spacing:1.7px}.ordinary{fill:none;stroke:#087E68;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.halo{fill:none;stroke:#DDF2EA;stroke-width:46;stroke-linecap:round;stroke-linejoin:round}.proof{fill:none;stroke:#167FA5;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:14 10}.stop{fill:none;stroke:#D75D45;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8 8}.recover{fill:none;stroke:#667085;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:10 9}.dash{stroke-dasharray:12 10}</style>
+    <marker id="arrow" viewBox="0 0 16 16" refX="13" refY="8" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#087E68"/></marker><marker id="blueArrow" viewBox="0 0 16 16" refX="13" refY="8" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#167FA5"/></marker><marker id="greyArrow" viewBox="0 0 16 16" refX="13" refY="8" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#667085"/></marker>
   </defs>
   <rect width="1800" height="1180" fill="#F6F2E9"/>
   <rect width="1800" height="152" fill="#102A43"/>
@@ -17,9 +17,11 @@
     <text x="70" y="292" class="s sub muted">普通任务是沿绿色路径连续经过、询问、绕行或离开。</text>
     <rect x="92" y="382" width="410" height="198" rx="80" fill="#E5EFF1" stroke="#ABC4C9" stroke-width="4" class="dash"/>
     <text x="297" y="476" class="s body ink" text-anchor="middle">庭边以外</text><text x="297" y="510" class="s sub muted" text-anchor="middle">普通绕行不进入旁侧庭</text>
+    <rect x="113" y="400" width="366" height="156" rx="70" class="proof"/><text x="296" y="422" class="s small" fill="#167FA5" text-anchor="middle">02 验证庭：旁置、可物理停止</text><path d="M470 420l28 28-28 28-28-28z" fill="#F9E3DC" stroke="#D75D45" stroke-width="4"/><text x="470" y="456" class="s micro" fill="#D75D45" text-anchor="middle">停</text><path d="M495 465C529 514 505 594 441 630" class="recover" marker-end="url(#greyArrow)"/>
     <path d="M110 696C205 650 313 732 496 682" class="halo"/><path d="M110 696C205 650 313 732 496 682" class="ordinary" marker-end="url(#arrow)"/>
     <text x="104" y="770" class="s body" fill="#087E68">普通绕行 / 非 AI 连续路径</text>
     <text x="104" y="810" class="s small ink">可经过 · 可询问 · 可绕行 · 可离开</text>
+    <circle cx="138" cy="844" r="23" fill="#FFF7E6" stroke="#B77A13" stroke-width="3"/><text x="138" y="852" class="s body" fill="#A46E11" text-anchor="middle">H</text><text x="174" y="850" class="s small ink">庭边人工维护交接</text>
     <rect x="82" y="852" width="438" height="118" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
     <text x="105" y="892" class="s small ink">不可从图中推断：</text><text x="105" y="924" class="s micro muted">现状庭院、设备、尺寸、材料、连接或无障碍结果。</text>
   </g>
@@ -29,9 +31,11 @@
     <text x="640" y="292" class="s sub muted">普通任务是沿居民街无屏通行、停留、交流、求助或离开。</text>
     <path d="M692 435L790 360L888 435V570H692Z" fill="#FFF9E9" stroke="#B77A13" stroke-width="6"/><text x="790" y="490" class="s body" fill="#A46E11" text-anchor="middle">问题共创院</text>
     <path d="M956 475L1054 402L1152 475V622H956Z" fill="#EDF7FB" stroke="#167FA5" stroke-width="6"/><text x="1054" y="538" class="s body" fill="#167FA5" text-anchor="middle">公共评议院</text>
+    <path d="M680 386C810 312 1032 324 1170 438" class="proof" marker-end="url(#blueArrow)"/><text x="925" y="340" class="s small" fill="#167FA5" text-anchor="middle">02 可选验证旁置两院，不占居民街</text>
     <path d="M646 704C737 634 833 758 931 692S1108 647 1161 720" class="halo"/><path d="M646 704C737 634 833 758 931 692S1108 647 1161 720" class="ordinary" marker-end="url(#arrow)"/>
     <text x="652" y="784" class="s body" fill="#087E68">居民街 / 无屏日常通行不断</text>
     <text x="652" y="822" class="s small ink">可步行 · 可停留 · 可交流 · 可求助 · 可退出</text>
+    <g fill="#FFF" stroke="#D75D45" stroke-width="4"><circle cx="736" cy="676" r="18"/><circle cx="844" cy="711" r="18"/><circle cx="961" cy="676" r="18"/><circle cx="1068" cy="657" r="18"/></g><g class="s small" fill="#D75D45" text-anchor="middle"><text x="736" y="683">1</text><text x="844" y="718">2</text><text x="961" y="683">3</text><text x="1068" y="664">4</text></g><path d="M1068 680C1127 698 1152 730 1144 774" class="stop"/><path d="M1135 776C1098 799 1064 802 1028 780" class="recover" marker-end="url(#greyArrow)"/><rect x="662" y="826" width="290" height="48" rx="14" fill="#DDEEF4" stroke="#167FA5" stroke-width="3"/><text x="807" y="858" class="s micro" fill="#167FA5" text-anchor="middle">H：街外纸质 / 口述交接</text>
     <rect x="634" y="852" width="538" height="118" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
     <text x="657" y="892" class="s small ink">不可从图中推断：</text><text x="657" y="924" class="s micro muted">现状院落、居民同意、可达性、服务时间或运营承诺。</text>
   </g>
@@ -40,13 +44,15 @@
     <text x="1240" y="260" class="s body ink">四向通勤十字：通勤不成为服务队列</text>
     <text x="1240" y="292" class="s sub muted">普通任务是沿四向路径通过、辨认、询问、休息或离开。</text>
     <circle cx="1490" cy="584" r="74" fill="#DFF1EA"/><path d="M1288 584H1700M1490 372V800" class="ordinary" stroke-width="28"/><circle cx="1490" cy="584" r="43" fill="#FFF" stroke="#087E68" stroke-width="6"/>
+    <rect x="1246" y="366" width="202" height="122" rx="42" fill="#FFF4D9" stroke="#B77A13" stroke-width="5" class="dash"/><text x="1347" y="414" class="s body" fill="#A46E11" text-anchor="middle">02 路外发布厅</text><text x="1347" y="446" class="s small" fill="#A46E11" text-anchor="middle">来源 / 版本 / 纠错</text><path d="M1264 520H1456" class="stop"/><path d="M1410 492C1456 480 1480 507 1485 545" class="stop"/><path d="M1432 660C1402 681 1385 703 1373 730" class="recover" marker-end="url(#greyArrow)"/>
     <text x="1490" y="860" class="s body" fill="#087E68" text-anchor="middle">四向通勤 / 物理导引 / 非 AI 继续</text>
     <text x="1490" y="898" class="s small ink" text-anchor="middle">可通过 · 可辨认 · 可询问 · 可安静休息 · 可离开</text>
+    <rect x="1536" y="715" width="194" height="68" rx="16" fill="#DDEEF4" stroke="#167FA5" stroke-width="3"/><text x="1633" y="758" class="s small" fill="#167FA5" text-anchor="middle">H：双入口人工台</text>
     <rect x="1226" y="926" width="528" height="94" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
     <text x="1250" y="966" class="s small ink">不可从图中推断：</text><text x="1250" y="995" class="s micro muted">现状车站、道路、客流、服务台、队列或场地批准。</text>
   </g>
   <rect x="52" y="1054" width="1696" height="74" rx="16" fill="#E9EEEE" stroke="#BAC6C8" stroke-width="2"/>
-  <text x="78" y="1086" class="s micro ink">普通优先：三处都先提供同任务非 AI 路径、人工说明与安全退出；它们的空间骨架分别是平行绕行、一街两院与四向通勤十字。</text>
+  <text x="78" y="1086" class="s micro ink">读图：绿 = 普通 / 非 AI 连续；蓝虚线 = 旁侧验证；红 = 仅停止验证对象；H = 人工交接；灰 = 恢复回到具体普通空间，绝不等于授权、批准、G1 或重启。</text>
   <text x="78" y="1115" class="s micro" fill="#9A3F2F">G0 概念关系，不证明精确位置、现状建筑、现实可达性、人员、排班、服务、批准、恢复时长或结果；RIGHTS = not_fully_cleared。</text>
   <text x="1745" y="1162" class="s micro" fill="#D75D45" text-anchor="end">空间图谱不是现实总平、工程图或授权状态。</text>
 </svg>
