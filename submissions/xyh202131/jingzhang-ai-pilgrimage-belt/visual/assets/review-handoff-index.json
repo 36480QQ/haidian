@@ -31,7 +31,7 @@
       "zh": "场景护照：12 个场景的门级与护照字段覆盖"
     }
   },
-  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R43",
+  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R44",
   "evidence_integrity": {
     "cold_read_answer_map": {
       "answers_checked": 8,
@@ -110,6 +110,44 @@
       "scope_zh": "这是编辑性空间阅读检查，不认证公众理解、真实地点、已建成状态、无障碍结果、恢复时长、批准、授权、G1、权利清除或现场结果。",
       "scope_en": "This is an editorial spatial-reading check. It certifies no public comprehension, real location, built condition, accessibility result, recovery duration, approval, authorization, G1, rights clearance or field outcome."
     },
+    "professional_handoff_r44": {
+      "audit_type": "professional_handoff_graph_and_editorial_navigation_check",
+      "red_before": {
+        "unresolved_short_replacement_ids_in_discipline_matrix": 22,
+        "d_to_h_forward_edges": 16,
+        "h_to_d_reverse_edges": 0,
+        "h_to_closure_edges": 9,
+        "closure_to_h_reverse_edges": 0,
+        "handoff_packs_with_suggested_discipline_ids": 0,
+        "professional_disciplines_with_explicit_decision_rights": 0,
+        "competing_15_minute_professional_handoff_starts": 2,
+        "clickable_governing_contract_links_in_canonical_visual_handoff": 0,
+        "a0_page_8_current_count_labels": "141/141 while manifest and rights records were 149"
+      },
+      "post_repair": {
+        "full_replacement_ids_resolved": 22,
+        "d_to_p_bidirectional_edges": 22,
+        "d_to_h_bidirectional_edges": 16,
+        "h_to_closure_bidirectional_edges": 9,
+        "item_to_closure_record_json_pointers": 11,
+        "handoff_packs_with_suggested_discipline_ids": 7,
+        "professional_disciplines_with_explicit_decision_rights": 7,
+        "accepted_professional_responsibilities": 0,
+        "real_replacement_artifacts": 0,
+        "approvals": 0,
+        "field_tests": 0,
+        "go_decisions": 0,
+        "canonical_15_minute_professional_handoff_starts": 1,
+        "governing_contract_links_per_language": 5,
+        "current_manifest_paths": 149,
+        "current_non_manifest_paths": 148,
+        "current_rights_ledger_records": 149,
+        "pdf_pages": "14/14/8/8",
+        "new_media": false
+      },
+      "scope_zh": "这是机器关系图与编辑导航审查；不生成真实资料、责任接受、专业意见、批准、授权、G1、权利清除或现场结果。",
+      "scope_en": "This is a machine-graph and editorial-navigation check. It creates no real input, accepted duty, professional opinion, approval, authorization, G1, rights clearance or field outcome."
+    },
     "generator_enforced": true,
     "heading_parity": {
       "en": 87,
@@ -117,7 +155,7 @@
       "zh": 87
     },
     "ledger_digest_coherence": {
-      "checked": 138,
+      "checked": 146,
       "excluded": {
         "manifest.json": "manifest cannot hash itself",
         "self_check.json": "the self-check writer replaces this file and refreshes its final manifest digest in one step; verify it against manifest.json rather than duplicating a stale ledger digest",
@@ -2040,8 +2078,8 @@
       "kind": "evidence_data",
       "latest_rebuild_round": 40,
       "notes": {
-        "en": "Self-registered: the index itself is the 141st registered path and locates the other 140 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
-        "zh": "本索引自登记：索引自身是第 141 个登记路径，负责定位其余 140 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
+        "en": "Self-registered: the index is one of 149 registered paths and locates the other 148 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
+        "zh": "本索引自登记：索引自身是 149 个登记路径之一，负责定位其余 148 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
       },
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2540,7 +2578,7 @@
     "key_areas": 3,
     "land_use_units": 36,
     "manifest_paths": 149,
-    "non_manifest_content_paths": 140,
+    "non_manifest_content_paths": 148,
     "note_en": "The above are package structure and file counts only, not field, operating, approval or maturity evidence.",
     "note_zh": "以上为包内结构与文件计数，不是现场、运营、审批或成熟度证据。",
     "pdf_pages": {
@@ -2551,7 +2589,7 @@
       "total": 44
     },
     "projects": 8,
-    "rights_ledger_paths": 141,
+    "rights_ledger_paths": 149,
     "scenes": 12,
     "source_records": 50
   },
@@ -2581,8 +2619,8 @@
       "geometry/site_boundary.geojson"
     ]
   },
-  "purpose_en": "Review navigation for all 141 package paths: reading routes, a per-file registry with status, frozen/provisional/historical labels, three-carrier mapping and rights backlinks. The index only locates; it creates no evidence, changes no maturity and grants no rights.",
-  "purpose_zh": "为全部 141 个投稿包路径提供评审定位：阅读路线、逐文件登记、状态、冻结/临时/历史标记、三载体与权利回链。索引只负责定位，不生成新证据、不改变成熟度、不构成权利许可。",
+  "purpose_en": "Review navigation for all 149 package paths: reading routes, a per-file registry with status, frozen/provisional/historical labels, three-carrier mapping and rights backlinks. The index only locates; it creates no evidence, changes no maturity and grants no rights.",
+  "purpose_zh": "为全部 149 个投稿包路径提供评审定位：阅读路线、逐文件登记、状态、冻结/临时/历史标记、三载体与权利回链。索引只负责定位，不生成新证据、不改变成熟度、不构成权利许可。",
   "reading_routes": [
     {
       "entry_points": [
@@ -2652,14 +2690,8 @@
       "entry_points": [
         {
           "anchor": "#review-handoff",
-          "note_en": "15-minute evidence library entry",
-          "note_zh": "15 分钟完整证据库入口",
-          "path": "visual/index.html"
-        },
-        {
-          "anchor": "#accessible-review-walk",
-          "note_en": "Back-stage five-step accessible evidence walk",
-          "note_zh": "后台五步可访问证据漫游",
+          "note_en": "Sole 15-minute professional-handoff and full evidence-library entry",
+          "note_zh": "唯一 15 分钟专业交接与完整证据库入口",
           "path": "visual/index.html"
         },
         {
@@ -2687,8 +2719,8 @@
       "entry_points": [
         {
           "anchor": "#accessible-review-walk",
-          "note_en": "Steps 1-5 inline walk",
-          "note_zh": "步骤 1—5 页面内联漫游",
+          "note_en": "Continue from #review-handoff through steps 1-5",
+          "note_zh": "由 #review-handoff 继续至步骤 1—5",
           "path": "visual/index.html"
         },
         {
@@ -2704,8 +2736,8 @@
           "path": "assets/figures/review-professional-handoff.png"
         }
       ],
-      "label_en": "Five-step accessible review walk (Round 14 contract, backlinked this round)",
-      "label_zh": "五步可访问评审漫游（R14 合同，本轮加回链）",
+      "label_en": "Five-step accessible review continuation from the sole handoff entry (Round 14 contract)",
+      "label_zh": "从唯一专业交接入口继续的五步可访问评审漫游（R14 合同）",
       "limit_en": "Interaction only locates; presentation is not evidence; accessibility is a design intention, not certification.",
       "limit_zh": "交互只负责定位；呈现不是证据；可访问性是设计意图，不是认证。",
       "question_en": "How are the five evidence steps located along space, three prototypes, ordinary task, failure/recovery and professional NO-GO?",
@@ -3164,6 +3196,12 @@
     {
       "entry_points": [
         {
+          "anchor": "#review-handoff",
+          "note_en": "Sole front-stage professional-handoff start",
+          "note_zh": "唯一前台专业交接起点",
+          "path": "visual/index.html"
+        },
+        {
           "anchor": null,
           "note_en": "Implementation handoff matrix (seven disciplines)",
           "note_zh": "实施交接矩阵（七专业）",
@@ -3190,10 +3228,10 @@
       ],
       "label_en": "D01-D08 / H01-H07 professional handoff",
       "label_zh": "D01—D08 / H01—H07 专业交接",
-      "limit_en": "D01-D08 remain not_collected with 0 real artifacts; H01-H07 may revise, reject or delete the concept; major gaps keep NO-GO.",
-      "limit_zh": "D01—D08 仍为 not_collected，现实材料 0；H01—H07 可修改、拒绝或删除概念；重大缺口保持 NO-GO。",
-      "question_en": "What must be replaced, and who may reject the concept?",
-      "question_zh": "哪些资料必须被替换，谁有权拒绝？",
+      "limit_en": "D01-D08 remain not_collected with 0 real artifacts. H01-H07 are unsubmitted handoff packs, not people or accepted duties. P01-P07 are suggested discipline types only; a future competent professional may revise, condition, reject or delete the affected concept only within an expressly accepted scope, and major gaps keep NO-GO.",
+      "limit_zh": "D01—D08 仍为 not_collected，现实材料 0；H01—H07 是未提交交接包，不是人员或已接受责任。P01—P07 仅为建议专业类型；胜任专业方以后只可在接受的明确范围内修改、附条件、拒绝或删除受影响概念，重大缺口保持 NO-GO。",
+      "question_en": "What must be replaced, and which suggested discipline types may veto the affected concept after accepting an exact future scope?",
+      "question_zh": "哪些资料必须替换，哪些建议专业类型在未来接受明确范围后可以否决受影响概念？",
       "route_id": "handoff-d01-d08"
     },
     {
@@ -3349,9 +3387,9 @@
           "question_zh": "哪些空间信息仍是临时或未知？"
         },
         {
-          "answer_en": "D01-D08 replace provisional inputs; H01-H07 may recalculate, revise, reject or delete the concept; a major gap keeps NO-GO.",
+          "answer_en": "D01-D08 replace provisional inputs; H01-H07 are still-unsubmitted evidence handoff packs; P01-P07 are suggested discipline types only. A future competent professional who accepts an exact scope may recalculate, revise, condition, reject or delete the affected concept within that scope; a major gap keeps NO-GO.",
           "answer_id": "Q8",
-          "answer_zh": "D01—D08 替换临时输入；H01—H07 可复算、修改、拒绝或删除概念；重大缺口保持 NO-GO。",
+          "answer_zh": "D01—D08 替换临时输入；H01—H07 是仍未提交的证据交接包；P01—P07 只是建议专业类型。未来胜任且接受明确范围的专业方可在该范围内复算、修改、附条件、拒绝或删除受影响概念；重大缺口保持 NO-GO。",
           "primary_entry": {
             "anchor": "#review-handoff",
             "path_en": "visual/index.en.html",
@@ -3367,8 +3405,8 @@
               14
             ]
           },
-          "question_en": "Which inputs and professional roles may revise, reject or delete the proposal?",
-          "question_zh": "哪些资料和专业角色可以修改、拒绝或删除方案？"
+          "question_en": "Which inputs, handoff packs and suggested discipline types control revision, rejection or deletion?",
+          "question_zh": "哪些资料、交接包和建议专业类型控制修改、拒绝或删除方案？"
         }
       ],
       "entry_points": [
@@ -3433,8 +3471,8 @@
           "zh": "哪些空间信息仍是临时或未知？"
         },
         {
-          "en": "Which inputs and professional roles may revise, reject or delete the proposal?",
-          "zh": "哪些资料和专业角色可以修改、拒绝或删除方案？"
+          "en": "Which inputs, handoff packs and suggested discipline types control revision, rejection or deletion?",
+          "zh": "哪些资料、交接包和建议专业类型控制修改、拒绝或删除方案？"
         }
       ],
       "route_id": "cold-read-8"
