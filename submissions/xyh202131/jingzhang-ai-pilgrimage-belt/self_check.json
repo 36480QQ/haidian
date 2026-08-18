@@ -84,6 +84,10 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/spatial-atlas.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/spatial-atlas.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/spatial-atlas.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/spatial-atlas.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.png",
@@ -154,6 +158,10 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/site-grounding-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/source-rights-evidence.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/source-rights-evidence.schema.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/spatial-atlas-baseline.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/spatial-atlas-contract.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/spatial-atlas-terminology.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/spatial-atlas.css",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/submission-use-rights-matrix.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/t02-g0-g1-replay-fixtures.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/t02-g0-g1-replay-result.json",
@@ -164,7 +172,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 34686443,
+      "total_bytes": 36118531,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -256,7 +264,7 @@
           "source": 50,
           "standard": 6,
           "depth": 15,
-          "data": 79,
+          "data": 80,
           "metric": 80
         }
       }

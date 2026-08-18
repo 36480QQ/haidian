@@ -51,13 +51,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8d995ca82583876cfd90cdcf79cc4844b24661979e472317ec5da0afa8b7274f"
+      "sha256": "e1a4b0e4f139996d8e706e5823281df3f898325d9f6d5d21e2dfcfdb7c0afd8d"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "d02b7957f8f6d9a9b424a112a78a853aaab99ffe21fe8f2abf91dd31fbc8cb4a"
+      "sha256": "d216e740c3c710f6710a57b55f3251c700d2a3b18401447083211046427be8ba"
     },
     {
       "path": "metrics.json",
@@ -81,13 +81,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b113e05355867d127b35a1aa3f6c2eb216e31a9a0f6ef9b81377f55d575bf6bc"
+      "sha256": "678efa2989636fe48dd36f52e56064c5d920a30fad49d0a9949cb615622143a6"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "32c48e7df3d4d89fc2bb5b64d8f4a07635883fec084392e0b980f5ea8bbbcfd5"
+      "sha256": "174df27476a45fa1a5a5f7df470bb9cf14cf6c1bae9b26d138cf0319ad6a7412"
     },
     {
       "path": "compliance_matrix.json",
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "c7a3fb6a55e4823cf6838520d03b5aea91d8d04b56787445f0dd33276f5db4a1"
+      "sha256": "54bdb95c0e47ec12bdedeaad8709d138f3508801e44b11697f7cade3a0af1130"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -230,13 +230,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "41ef801652178fedd97701dafe274582b66e08841ff2649584edf56fb4ccd277"
+      "sha256": "4ecac5da5c02b1eed6561e1e75fd64941a7e5666ae0640e384ae39071e80ee85"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "08d76422964647cb4a443fb5cd94bdd8c7b9575eb592b75164af2b5563692230"
+      "sha256": "695983ec94b57b3b70be5dd2cb47240caba1450d70c126b9d8e8a5f298fa44cd"
     },
     {
       "path": "report/copyright_statement.md",
@@ -249,49 +249,49 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c25f3c446121b02cdbf7361818fd39b35d4c848f9b8f27e621e34417055dec9c"
+      "sha256": "625cae79ab271c7a6e6d6cad196432e134e4a9585032db86de85b7a6a6e0e25f"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "493a00cfc186c6e4b3a597515623204a6bc0eba60769d4ff8960302976a0896e"
+      "sha256": "f1b14faa77bb5d4d30b0ccf1e538bce65bb42931f424a7d67063f9455cbdd452"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "40d9167c19133180c529c10b32bbc3eb4dbb03edeceb9a70d1fe3bf1848e239e"
+      "sha256": "fbb6fb790cabd387b4e4692d3cf3e5e9f7f84572cc02dc14b945b513b697af38"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "413674c247dae18daae52456c55bf5cd6b91826df51451d519651c662aec9780"
+      "sha256": "5a706fc5cbdfe3d601bcafc027d5bbb5a5ba3aba1462263a3aae14d3f1608715"
     },
     {
       "path": "assets/figures/key-areas.svg",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "bb52547f84db7149ea32280757a45908ad2c7f019796de144979dca3abe3d780"
+      "sha256": "c7224274d36813fe829fd317514dddf088429f858bff60f07eb680e8c948a3f5"
     },
     {
       "path": "assets/figures/key-area-sections.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "1d84e2656965689b2d0c6c34920d3416d90a363bcbec6de8c51f87ce68e92863"
+      "sha256": "1fd5da435bdc823bccdb78cee9f825827f16d844bb5fd823b37a63551e23f56c"
     },
     {
       "path": "assets/figures/key-area-sections.svg",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "12b795a21081dd7e6e4319e382865fe9a61e3fdeb246dd888dcc90297b5034ad"
+      "sha256": "da779940b973286dacc23239bd1de70a1754471894a0870d4afc598f8543692a"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -403,7 +403,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4353685e09218f1d9a79bf02f3769029337a374dcef71d3e666bf4a0347d47bf"
+      "sha256": "2a761aa1bc7956f84a5974d43d9f94a19d42d952a3a67d6ef7f0df6a318d8cab"
     },
     {
       "path": "report/proposal.en.html",
@@ -411,7 +411,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b1f740a77ee3ec6deeff51239c261a38bc78c89e1554e5e82de71be71caf3164"
+      "sha256": "ce202cbbec467ad82c588dedf78a2b8196ba380d8f7ac7d1adbe7cce1be558d6"
     },
     {
       "path": "visual/index.en.html",
@@ -419,7 +419,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "349c541c7f8e06f3b5ccc2d52f72e957bbd2dedbdcb9af88f7998318e719538c"
+      "sha256": "3bf0aa765590dc44c8c7a59584f280f28e9ef436a0244e57f8f66d17ddafbd8d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -427,7 +427,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "5ca0d4f4be828cbab445b1a2bd12c3ba861bfd6ce85d6cddc503c0be692e5a7d"
+      "sha256": "93f8a0099f199d20760b72173efdc850ce7b346b24146860190323aebfeae5a9"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -435,7 +435,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "bb4461098acd8d50d70fe34343de28d6ae0c6f206f4b93a36f3e7230fcf615c5"
+      "sha256": "e25df2b1a6b25bc08ca36009ed3b2d2392114c463c71121feccf3c9218a85461"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -459,7 +459,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "4e9b9992f1d58f539284b7646401528c5953abd40e8a9de5638cfd6b68431a67"
+      "sha256": "5fa711377c21f03c791cb5ee55bb6d7edcc0f8915a8da0c276e97b921675af53"
     },
     {
       "path": "assets/figures/key-areas.en.svg",
@@ -467,7 +467,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.svg",
-      "sha256": "9f82dd2543dfab073140821344938176c0524e70d9328a51c5b6bc085244a1e4"
+      "sha256": "8821719c13135cec18204978b7b9dc2b36ef97de1322b834675261ad1289f827"
     },
     {
       "path": "assets/figures/key-area-sections.en.png",
@@ -475,7 +475,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-area-sections.png",
-      "sha256": "7ea8d94b06aa7304d680c2c52a38aa3452fd804bcd7a59e506fdbc68e3f53916"
+      "sha256": "de19683e453235b593620e96f6529fba306d93af7a87fced3cbb3d86bcd10d68"
     },
     {
       "path": "assets/figures/key-area-sections.en.svg",
@@ -483,7 +483,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-area-sections.svg",
-      "sha256": "dff60d1f3ce458bdc49ecd0a8f8c6be45723b1b410c287edfcb9481fd5b50c83"
+      "sha256": "fa2fc183f82d06b631c490abf323d956db22573bbcedcb9da2c556f323f767a6"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -990,7 +990,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "全部 141 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review navigation for all 141 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "23d989c8b0a1d466186c7c8a2ab192478f420c34e9de43a1f86ced1fc74f2301"
+      "sha256": "c43c5f8ae2b1d67382e1f753310dc72c63102ae633f2aa414918dd6d88bbfacc"
     },
     {
       "path": "visual/assets/round17-reading.css",
@@ -1097,6 +1097,100 @@
       "translation_of": "assets/figures/public-signal-interface.png",
       "role_detail": "render",
       "sha256": "25fb73744bbdc3efe955ded8288debba164a04d198197e9bd31d916bac0b5371"
+    },
+    {
+      "path": "visual/assets/spatial-atlas-contract.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "空间图谱关系合同",
+      "title_en": "Spatial atlas relation contract",
+      "description_zh": "三处既有原型的普通路径、旁侧验证、停止对象、人工交接与恢复回归的 G0 关系合同。",
+      "description_en": "G0 relation contract for ordinary routes, side proof, stop objects, staffed handoff and recovery return across the three existing prototypes.",
+      "sha256": "6a8458aa58538a3555ecec6b0648d8059d86958039121303810c0fcb11c54319"
+    },
+    {
+      "path": "visual/assets/spatial-atlas-baseline.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "空间图谱修复前基线",
+      "title_en": "Spatial atlas pre-repair baseline",
+      "description_zh": "第 43 轮编辑性空间阅读 RED 基线；不是公众反馈或现场观察。",
+      "description_en": "Round 43 editorial spatial-reading RED baseline; not public feedback or field observation.",
+      "sha256": "a9bf2c4efdee5cd815880c4c0120a39a023af8a1b24fe13df45428f4ae1f3622"
+    },
+    {
+      "path": "visual/assets/spatial-atlas-terminology.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "空间图谱双语术语",
+      "title_en": "Spatial atlas bilingual terminology",
+      "description_zh": "普通任务、旁侧验证、停止对象、人工交接和恢复对象的双语映射。",
+      "description_en": "Bilingual mapping for ordinary task, side proof, stop object, staffed handoff and recovery object.",
+      "sha256": "dcfd54bca34ad1b9e7c2bc429779ef1c252b8ca2c4bdf296416502462359939f"
+    },
+    {
+      "path": "visual/assets/spatial-atlas.css",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "空间图谱离线样式",
+      "title_en": "Spatial atlas offline stylesheet",
+      "description_zh": "双语静态空间图谱入口的离线、打印和减少动态样式。",
+      "description_en": "Offline, print and reduced-motion styling for bilingual static spatial-atlas entries.",
+      "sha256": "bffc95feacd395517cbfdfcd3992876a0376822b8810bf8184ee7c4c33ff6b9a"
+    },
+    {
+      "path": "assets/figures/spatial-atlas.svg",
+      "role": "other",
+      "required": true,
+      "language": "zh",
+      "role_detail": "proposal_figure_editable_source",
+      "title_zh": "三座换轨场空间图谱 SVG",
+      "title_en": "Three-switchyard spatial atlas SVG",
+      "description_zh": "中文可编辑 G0 概念关系图。",
+      "description_en": "Chinese editable G0 concept relation diagram.",
+      "sha256": "1cb3e78d269109e828b804848a1ea3e26ed231a7565dfdadaa14263222427e3c"
+    },
+    {
+      "path": "assets/figures/spatial-atlas.en.svg",
+      "role": "other",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/spatial-atlas.svg",
+      "role_detail": "proposal_figure_editable_source",
+      "title_zh": "三座换轨场空间图谱英文 SVG",
+      "title_en": "Three-switchyard spatial atlas English SVG",
+      "description_zh": "英文可编辑 G0 概念关系图。",
+      "description_en": "English editable G0 concept relation diagram.",
+      "sha256": "40b4c5ee40db8e6314e3e7dbdf3f030da753e8a27649db17a42e9a39a3901955"
+    },
+    {
+      "path": "assets/figures/spatial-atlas.png",
+      "role": "other",
+      "required": false,
+      "language": "zh",
+      "role_detail": "render",
+      "title_zh": "三座换轨场空间图谱 PNG",
+      "title_en": "Three-switchyard spatial atlas PNG",
+      "description_zh": "中文空间图谱的离线显示导出。",
+      "description_en": "Chinese offline display export of the spatial atlas.",
+      "sha256": "6648f28a147e2ebad79d7b2effc9cdd04d72e2649962f6c3b46b087b233ed7be"
+    },
+    {
+      "path": "assets/figures/spatial-atlas.en.png",
+      "role": "other",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/spatial-atlas.png",
+      "role_detail": "render",
+      "title_zh": "三座换轨场空间图谱英文 PNG",
+      "title_en": "Three-switchyard spatial atlas English PNG",
+      "description_zh": "英文空间图谱的离线显示导出。",
+      "description_en": "English offline display export of the spatial atlas.",
+      "sha256": "80c94240205eee5012d2c0fe5a6a1d449187ef09730ff713c25ac559f86302e9"
     }
   ],
   "validation_claim": {
