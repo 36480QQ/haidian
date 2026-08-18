@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M133",
+      "gate": "edition_render_qa.py",
+      "target": "visual/index.en.html",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文离线页里 FIG.04 的图片换成中文渲染。**评审收到的是这一页的首屏截图**，不是它的源码——他看到的是一张中文标注的图，而无从知道路径写错了。",
+      "what_en": "Swap FIG.04 on the English offline page for the Chinese render. **What the reviewer receives is a screenshot of this page**, not its source: he sees a sheet labelled in the other language with no way to know the path was wrong.",
+      "why_zh": "E344 修的是两版 Markdown 正文，而**评审收到的页面有四个**——两份 HTML 交付物也各有中英两版，各被截首屏。那一轮写的闸门只守了其中一半。把射程补齐后共 176 处图片引用；HTML 那 122 处**经核全部正确**，**这条修的是闸门的射程，不是又一处错**。",
+      "why_en": "E344 fixed the two Markdown editions, and the reviewer receives **four** pages: both HTML deliverables exist in both languages and each is screenshotted. The gate written that round guarded only half of them. Extended, it now covers 176 figure references; the 122 on the HTML pages were checked and are **all correct** - what this fixes is the gate's reach, not another defect."
+    },
+    {
       "id": "M132",
       "gate": "edition_render_qa.py",
       "target": "proposal.en.md",
@@ -1591,7 +1603,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 130,
+  "caught": 131,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
