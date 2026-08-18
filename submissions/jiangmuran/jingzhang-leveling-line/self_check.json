@@ -159,7 +159,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 155/145 bare numbers reported but not blocked, and one designed check (83 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 154/144 bare numbers reported but not blocked, and one designed check (83 candidates) not shipped"
     },
     {
       "check_id": "PKG_CLAIM_STATE_QA",
@@ -287,7 +287,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 124 mutations, 86 of 89 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 125 mutations, 86 of 89 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -295,7 +295,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 124 deliberate defects across 86 of 89 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 125 deliberate defects across 86 of 89 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_GEOMETRY_CITATION_QA",
@@ -327,7 +327,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 15 bytes to spare. The package totals 29.0 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 14 bytes to spare. The package totals 29.1 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_INTERNED_RENDER_QA",
@@ -415,7 +415,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 648 distinct names harvested from the package — 624 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 650 distinct names harvested from the package — 626 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -511,7 +511,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "register_split_qa.py — register split: 271 + 64 = 335 entries, both halves stating the same total of 335, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
+      "message": "register_split_qa.py — register split: 272 + 64 = 336 entries, both halves stating the same total of 336, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
     },
     {
       "check_id": "PKG_REGISTRY_ALIGNMENT_QA",
@@ -559,7 +559,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "rubric_focus_qa.py — rubric focus: all 7 published scoring dimensions carry their focus sentence verbatim from scripts/review_submission.py @ upstream/main, and 30 terms those sentences name are answered in the reviewer's own words in compliance_matrix.json, which arrives whole. Scope: this checks that every term is answered and that no answer is addressed to wording the organisers no longer publish; whether an answer is a good answer is the reviewer's to judge, and this package does not score itself"
+      "message": "rubric_focus_qa.py — rubric focus: all 7 scoring dimensions and all 13 taskbook dimensions carry their focus sentence verbatim from upstream/main — two published sets, one rule — and 77 terms those sentences name are answered in the reviewer's own words in compliance_matrix.json, which arrives whole. Scope: this checks that every term is answered and that no answer is addressed to wording the organisers no longer publish; whether an answer is a good answer is the reviewer's to judge, and this package does not score itself"
     },
     {
       "check_id": "PKG_SCARCE_SURFACE_QA",
@@ -783,7 +783,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 335 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 24、rival-read 22、self 213；最常见形状：check-measured-the-convenient-thing 60、two-copies-of-one-thing-drifted 51、deliverable-not-inspected-before-shipping 30、claim-that-cannot-be-checked-by-construction 27。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 335 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 336 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 24、rival-read 22、self 214；最常见形状：check-measured-the-convenient-thing 60、two-copies-of-one-thing-drifted 51、deliverable-not-inspected-before-shipping 30、claim-that-cannot-be-checked-by-construction 27。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 336 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -791,7 +791,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：124 处人为缺陷，覆盖 86 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 124 deliberate defects across 86 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：125 处人为缺陷，覆盖 86 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 125 deliberate defects across 86 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -998,7 +998,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30374581,
+      "total_bytes": 30386309,
       "maintainer_bypass": false
     },
     "stderr": ""

@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M127",
+      "gate": "rubric_focus_qa.py",
+      "target": "compliance_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把任务书那一套里的「品牌资产」改成一个任务书没用过的词。**任务书自己也公布 focus_zh**，评审同样拿着它逐维度看；答一个它不会去搜的词，等于没答。",
+      "what_en": "Rename 品牌资产 in the taskbook set to a term the taskbook never uses. **The taskbook publishes focus_zh too** and the reviewer reads each dimension against it; answering a word it will not search for is not answering.",
+      "why_zh": "E335 把 focus 句带过来了——**只带了组织方那七个**，任务书那十三个还是只有标题，而两份清单在同一个构建函数的相邻两块里。十三个 focus 句点名的词里，有五个在正文里出现零次：国土空间规划、要素保障、可推广、品牌资产、合作通道——**五样本包全都做了，只是叫别的名字**。",
+      "why_en": "E335 carried the focus sentences across for **the organisers' seven only**, leaving the taskbook's thirteen title-only, with both lists in adjacent blocks of the same builder. Five of the terms those thirteen sentences name occur zero times in the proposal - territorial spatial planning, factor guarantee, replicability, brand assets and cooperation channels - **and this package does all five, under its own names**."
+    },
+    {
       "id": "M126",
       "gate": "rubric_focus_qa.py",
       "target": "compliance_matrix.json",
@@ -1518,7 +1530,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 124,
+  "caught": 125,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
