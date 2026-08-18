@@ -42,6 +42,13 @@
       "status": "concept_only",
       "statement": "The six stitches, nine component types and three station plans are agent-generated spatial design objects under provisional boundaries, not surveyed or approved engineering geometry.",
       "impact": "Their counts and internal references are reproducible, but their position, dimensions and delivery feasibility must be recalculated after official base maps, utilities, ownership and field audits are available."
+    },
+    {
+      "id": "A-V6-S7-DIMENSIONS",
+      "statement": "S7 local-metre dimensions, entrance directions, curb lines, transit interface and operating zones are prototype design assumptions, not surveyed existing conditions.",
+      "impact": "All four scales and any engineering dimension require survey, official station-exit information, road-line, utility, fire and traffic verification before E2.",
+      "verification_method": "Licensed survey plus asset-owner, transit, accessibility, fire and traffic-management review.",
+      "status": "open"
     }
   ]
 }

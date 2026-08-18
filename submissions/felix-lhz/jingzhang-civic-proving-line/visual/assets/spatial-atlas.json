@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "dataset_id": "jingzhang-two-answers-spatial-atlas",
   "status": "concept_proposal_under_provisional_boundaries",
   "view_box": [
@@ -613,7 +613,8 @@
         "retire": [
           "V5-Z-REMOVAL"
         ]
-      }
+      },
+      "flagship_weight": 0.2
     },
     {
       "id": "ai_origin",
@@ -921,7 +922,8 @@
         "retire": [
           "V5-A-REMOVAL"
         ]
-      }
+      },
+      "flagship_weight": 0.2
     },
     {
       "id": "dazhongsi",
@@ -1182,21 +1184,47 @@
       "projection_method": "local_equirectangular_from_wgs84",
       "scale_basis": "concept_design_dimensions_pending_survey",
       "geometry_refs": [
-        "V5-D-NS",
-        "V5-D-EW",
-        "V5-D-EMERGENCY",
-        "V5-D-REMOVAL",
-        "V5-D-FORECOURT",
-        "V5-D-TRIAL",
-        "V5-D-EVIDENCE",
-        "V5-D-SERVICE",
-        "V5-D-CONTROL",
-        "V5-D-ENT-N",
-        "V5-D-ENT-E",
-        "V5-D-ENT-S",
-        "V5-D-ENT-W",
-        "V5-D-STAFF-01",
-        "V5-D-UTILITY"
+        "V6-D-BASE-NS",
+        "V6-D-BASE-EW",
+        "V6-D-CROSS-N",
+        "V6-D-CROSS-S",
+        "V6-D-TRANSIT",
+        "V6-D-EMERGENCY",
+        "V6-D-REMOVAL",
+        "V6-D-FIRE",
+        "V6-D-CURB-N",
+        "V6-D-CURB-S",
+        "V6-D-FORECOURT",
+        "V6-D-PLATFORM",
+        "V6-D-TRIAL",
+        "V6-D-BUFFER",
+        "V6-D-EVIDENCE",
+        "V6-D-EGRESS",
+        "V6-D-RAIN-W",
+        "V6-D-RAIN-E",
+        "V6-D-SHADE-NW",
+        "V6-D-RESTORE",
+        "V6-D-SERVICE",
+        "V6-D-CONTROL",
+        "V6-D-EVIDENCE-WALL",
+        "V6-D-ENT-N",
+        "V6-D-ENT-E",
+        "V6-D-ENT-S",
+        "V6-D-ENT-W",
+        "V6-D-STAFF-BASE",
+        "V6-D-STAFF-TRIAL",
+        "V6-D-ESTOP-01",
+        "V6-D-ESTOP-02",
+        "V6-D-UTILITY",
+        "V6-D-FIRE-GATE",
+        "V6-D-APPEAL",
+        "V6-D-WATER",
+        "V6-D-LIGHT-01",
+        "V6-D-LIGHT-02",
+        "V6-D-LIGHT-03",
+        "V6-D-LIGHT-04",
+        "V6-D-LIGHT-05",
+        "V6-D-LIGHT-06"
       ],
       "entrance_refs": [
         "V5-D-ENT-N",
@@ -1224,6 +1252,743 @@
         ],
         "retire": [
           "V5-D-REMOVAL"
+        ]
+      },
+      "flagship_weight": 0.6,
+      "local_design": {
+        "extent_m": [
+          -96,
+          -86,
+          96,
+          94
+        ],
+        "scale_note": {
+          "zh": "原型设计假设，待测绘、站口、道路红线和交通组织复核",
+          "en": "Prototype design assumption pending survey, station-exit, road-line and traffic verification"
+        },
+        "routes": [
+          {
+            "id": "V6-D-BASE-NS",
+            "role": "baseline",
+            "width_m": 4,
+            "points": [
+              [
+                0,
+                -86
+              ],
+              [
+                0,
+                -14
+              ],
+              [
+                -4,
+                -4
+              ],
+              [
+                0,
+                14
+              ],
+              [
+                0,
+                94
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-BASE-EW",
+            "role": "baseline",
+            "width_m": 4,
+            "points": [
+              [
+                -96,
+                0
+              ],
+              [
+                -16,
+                0
+              ],
+              [
+                -4,
+                4
+              ],
+              [
+                16,
+                0
+              ],
+              [
+                96,
+                0
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-CROSS-N",
+            "role": "crossing",
+            "width_m": 4,
+            "points": [
+              [
+                -12,
+                14
+              ],
+              [
+                12,
+                14
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-CROSS-S",
+            "role": "crossing",
+            "width_m": 4,
+            "points": [
+              [
+                -12,
+                -14
+              ],
+              [
+                12,
+                -14
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-TRANSIT",
+            "role": "conventional_transit",
+            "width_m": 6,
+            "points": [
+              [
+                -82,
+                56
+              ],
+              [
+                -18,
+                56
+              ],
+              [
+                18,
+                56
+              ],
+              [
+                82,
+                56
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-EMERGENCY",
+            "role": "emergency",
+            "width_m": 4,
+            "points": [
+              [
+                24,
+                -30
+              ],
+              [
+                73,
+                -30
+              ],
+              [
+                91,
+                -8
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-REMOVAL",
+            "role": "removal",
+            "width_m": 4,
+            "points": [
+              [
+                48,
+                -68
+              ],
+              [
+                96,
+                -68
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-FIRE",
+            "role": "fire_access",
+            "width_m": 4,
+            "points": [
+              [
+                -92,
+                76
+              ],
+              [
+                -42,
+                76
+              ],
+              [
+                -20,
+                56
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-CURB-N",
+            "role": "curb_edge",
+            "width_m": 0.15,
+            "points": [
+              [
+                -82,
+                48
+              ],
+              [
+                82,
+                48
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-CURB-S",
+            "role": "curb_edge",
+            "width_m": 0.15,
+            "points": [
+              [
+                -82,
+                64
+              ],
+              [
+                82,
+                64
+              ]
+            ]
+          }
+        ],
+        "spaces": [
+          {
+            "id": "V6-D-FORECOURT",
+            "role": "conventional_forecourt",
+            "points": [
+              [
+                -82,
+                14
+              ],
+              [
+                82,
+                14
+              ],
+              [
+                82,
+                76
+              ],
+              [
+                -82,
+                76
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-PLATFORM",
+            "role": "conventional_platform",
+            "points": [
+              [
+                -76,
+                46
+              ],
+              [
+                76,
+                46
+              ],
+              [
+                76,
+                66
+              ],
+              [
+                -76,
+                66
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-TRIAL",
+            "role": "ai_trial",
+            "points": [
+              [
+                26,
+                -70
+              ],
+              [
+                78,
+                -70
+              ],
+              [
+                78,
+                -24
+              ],
+              [
+                26,
+                -24
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-BUFFER",
+            "role": "safety_buffer",
+            "points": [
+              [
+                20,
+                -76
+              ],
+              [
+                84,
+                -76
+              ],
+              [
+                84,
+                -18
+              ],
+              [
+                20,
+                -18
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-EVIDENCE",
+            "role": "evidence_square",
+            "points": [
+              [
+                -78,
+                -70
+              ],
+              [
+                -22,
+                -70
+              ],
+              [
+                -22,
+                -20
+              ],
+              [
+                -78,
+                -20
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-EGRESS",
+            "role": "evacuation_apron",
+            "points": [
+              [
+                -18,
+                -18
+              ],
+              [
+                18,
+                -18
+              ],
+              [
+                18,
+                18
+              ],
+              [
+                -18,
+                18
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-RAIN-W",
+            "role": "rain_garden",
+            "points": [
+              [
+                -88,
+                20
+              ],
+              [
+                -80,
+                20
+              ],
+              [
+                -80,
+                72
+              ],
+              [
+                -88,
+                72
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-RAIN-E",
+            "role": "rain_garden",
+            "points": [
+              [
+                80,
+                20
+              ],
+              [
+                88,
+                20
+              ],
+              [
+                88,
+                72
+              ],
+              [
+                80,
+                72
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-SHADE-NW",
+            "role": "shade_rest",
+            "points": [
+              [
+                -72,
+                22
+              ],
+              [
+                -28,
+                22
+              ],
+              [
+                -28,
+                42
+              ],
+              [
+                -72,
+                42
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-RESTORE",
+            "role": "retired_public_use",
+            "points": [
+              [
+                26,
+                -70
+              ],
+              [
+                78,
+                -70
+              ],
+              [
+                78,
+                -24
+              ],
+              [
+                26,
+                -24
+              ]
+            ]
+          }
+        ],
+        "buildings": [
+          {
+            "id": "V6-D-SERVICE",
+            "role": "staffed_public_service",
+            "points": [
+              [
+                -70,
+                24
+              ],
+              [
+                -42,
+                24
+              ],
+              [
+                -42,
+                40
+              ],
+              [
+                -70,
+                40
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-CONTROL",
+            "role": "trial_control",
+            "points": [
+              [
+                58,
+                -16
+              ],
+              [
+                76,
+                -16
+              ],
+              [
+                76,
+                -2
+              ],
+              [
+                58,
+                -2
+              ]
+            ]
+          },
+          {
+            "id": "V6-D-EVIDENCE-WALL",
+            "role": "public_evidence_interface",
+            "points": [
+              [
+                -74,
+                -64
+              ],
+              [
+                -26,
+                -64
+              ],
+              [
+                -26,
+                -59
+              ],
+              [
+                -74,
+                -59
+              ]
+            ]
+          }
+        ],
+        "points": [
+          {
+            "id": "V6-D-ENT-N",
+            "xy": [
+              0,
+              94
+            ],
+            "role": "directional_entrance"
+          },
+          {
+            "id": "V6-D-ENT-E",
+            "xy": [
+              96,
+              0
+            ],
+            "role": "directional_entrance"
+          },
+          {
+            "id": "V6-D-ENT-S",
+            "xy": [
+              0,
+              -86
+            ],
+            "role": "directional_entrance"
+          },
+          {
+            "id": "V6-D-ENT-W",
+            "xy": [
+              -96,
+              0
+            ],
+            "role": "directional_entrance"
+          },
+          {
+            "id": "V6-D-STAFF-BASE",
+            "xy": [
+              -48,
+              32
+            ],
+            "role": "baseline_staff_position"
+          },
+          {
+            "id": "V6-D-STAFF-TRIAL",
+            "xy": [
+              25,
+              -30
+            ],
+            "role": "trial_staff_position"
+          },
+          {
+            "id": "V6-D-ESTOP-01",
+            "xy": [
+              29,
+              -28
+            ],
+            "role": "emergency_stop"
+          },
+          {
+            "id": "V6-D-ESTOP-02",
+            "xy": [
+              75,
+              -28
+            ],
+            "role": "emergency_stop"
+          },
+          {
+            "id": "V6-D-UTILITY",
+            "xy": [
+              76,
+              -68
+            ],
+            "role": "isolated_utility_interface"
+          },
+          {
+            "id": "V6-D-FIRE-GATE",
+            "xy": [
+              -92,
+              76
+            ],
+            "role": "fire_access_gate"
+          },
+          {
+            "id": "V6-D-APPEAL",
+            "xy": [
+              -72,
+              -62
+            ],
+            "role": "appeal_and_exit_notice"
+          },
+          {
+            "id": "V6-D-WATER",
+            "xy": [
+              -32,
+              32
+            ],
+            "role": "drinking_water"
+          },
+          {
+            "id": "V6-D-LIGHT-01",
+            "xy": [
+              -74,
+              18
+            ],
+            "role": "lighting"
+          },
+          {
+            "id": "V6-D-LIGHT-02",
+            "xy": [
+              -24,
+              18
+            ],
+            "role": "lighting"
+          },
+          {
+            "id": "V6-D-LIGHT-03",
+            "xy": [
+              24,
+              18
+            ],
+            "role": "lighting"
+          },
+          {
+            "id": "V6-D-LIGHT-04",
+            "xy": [
+              74,
+              18
+            ],
+            "role": "lighting"
+          },
+          {
+            "id": "V6-D-LIGHT-05",
+            "xy": [
+              -18,
+              -70
+            ],
+            "role": "lighting"
+          },
+          {
+            "id": "V6-D-LIGHT-06",
+            "xy": [
+              84,
+              -70
+            ],
+            "role": "lighting"
+          }
+        ],
+        "states": {
+          "OPEN": [
+            "V6-D-BASE-NS",
+            "V6-D-BASE-EW",
+            "V6-D-CROSS-N",
+            "V6-D-CROSS-S",
+            "V6-D-TRANSIT",
+            "V6-D-FORECOURT",
+            "V6-D-PLATFORM",
+            "V6-D-SERVICE"
+          ],
+          "TRIAL": [
+            "V6-D-TRIAL",
+            "V6-D-BUFFER",
+            "V6-D-CONTROL",
+            "V6-D-STAFF-TRIAL",
+            "V6-D-ESTOP-01",
+            "V6-D-ESTOP-02"
+          ],
+          "PAUSE": [
+            "V6-D-EMERGENCY",
+            "V6-D-EGRESS",
+            "V6-D-STAFF-BASE",
+            "V6-D-APPEAL"
+          ],
+          "RETIRE": [
+            "V6-D-REMOVAL",
+            "V6-D-RESTORE",
+            "V6-D-EVIDENCE",
+            "V6-D-EVIDENCE-WALL"
+          ]
+        }
+      },
+      "dimension_basis": {
+        "zh": "原型设计假设，待测绘、站口、道路红线和交通组织复核",
+        "en": "Prototype design assumption pending survey, station-exit, road-line and traffic verification"
+      },
+      "interface_geometry_refs": [
+        "V6-D-CROSS-N",
+        "V6-D-CROSS-S",
+        "V6-D-TRANSIT",
+        "V6-D-CURB-N",
+        "V6-D-CURB-S"
+      ],
+      "baseline_route_geometry": [
+        "V6-D-BASE-NS",
+        "V6-D-BASE-EW",
+        "V6-D-CROSS-N",
+        "V6-D-CROSS-S"
+      ],
+      "trial_boundary_geometry": [
+        "V6-D-TRIAL",
+        "V6-D-BUFFER"
+      ],
+      "human_post_geometry": [
+        "V6-D-STAFF-BASE",
+        "V6-D-STAFF-TRIAL",
+        "V6-D-ESTOP-01",
+        "V6-D-ESTOP-02"
+      ],
+      "emergency_route_geometry": [
+        "V6-D-EMERGENCY",
+        "V6-D-FIRE",
+        "V6-D-EGRESS"
+      ],
+      "state_views": {
+        "OPEN": [
+          "V6-D-BASE-NS",
+          "V6-D-BASE-EW",
+          "V6-D-CROSS-N",
+          "V6-D-CROSS-S",
+          "V6-D-TRANSIT",
+          "V6-D-FORECOURT",
+          "V6-D-PLATFORM",
+          "V6-D-SERVICE"
+        ],
+        "TRIAL": [
+          "V6-D-TRIAL",
+          "V6-D-BUFFER",
+          "V6-D-CONTROL",
+          "V6-D-STAFF-TRIAL",
+          "V6-D-ESTOP-01",
+          "V6-D-ESTOP-02"
+        ],
+        "PAUSE": [
+          "V6-D-EMERGENCY",
+          "V6-D-EGRESS",
+          "V6-D-STAFF-BASE",
+          "V6-D-APPEAL"
+        ],
+        "RETIRE": [
+          "V6-D-REMOVAL",
+          "V6-D-RESTORE",
+          "V6-D-EVIDENCE",
+          "V6-D-EVIDENCE-WALL"
         ]
       }
     }
@@ -1280,7 +2045,7 @@
     "zh": "仅为临时边界下的概念性空间布局；不得作为现状测绘、法定总平面、道路红线或审批依据。",
     "en": "Conceptual spatial layout under provisional boundaries; not a survey, statutory plan, road redline or approval basis."
   },
-  "publication_version": "V5",
+  "publication_version": "V6",
   "context_dataset": "context-open-map.json",
   "spine": {
     "id": "public_baseline_spine",
@@ -1320,8 +2085,8 @@
     "status": "concept_proposal"
   },
   "subtitle": {
-    "zh": "城市采纳回执",
-    "en": "Civic Adoption Receipt"
+    "zh": "大钟寺城市采纳样板：公共路线不可牺牲",
+    "en": "Dazhongsi Civic Adoption Sample: the public route is non-negotiable"
   },
   "hero_scenes": [
     "SCN-002",
@@ -1375,5 +2140,6 @@
         "en": "Civic adoption pending"
       }
     }
-  ]
+  ],
+  "dimension_basis": "prototype_design_assumption_pending_survey"
 }

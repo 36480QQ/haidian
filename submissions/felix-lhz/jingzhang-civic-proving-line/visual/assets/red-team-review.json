@@ -1,37 +1,50 @@
 {
-  "schema_version": "1.2.0",
-  "review_date": "2026-08-15",
-  "version": "V5",
-  "calibration_baseline": "PR #2347 Review Agent 81/100",
-  "status": "local_review_complete_with_external_dependencies",
-  "summary": { "blocking_open": 0, "major_open": 0, "major_closed": 4, "minor_open": 2 },
+  "schema_version": "1.4.0",
+  "review_date": "2026-08-17",
+  "version": "V6",
+  "calibration_baseline": "PR #3071 Review Agent 81/100",
+  "status": "major_open_pending_blind_visual_review",
+  "summary": {
+    "blocking_open": 0,
+    "major_open": 1,
+    "major_closed": 3,
+    "minor_open": 2
+  },
   "findings": [
     {
       "id": "V5-EX-01",
       "round": "review_agent_evidence_entry",
       "severity": "major",
       "finding": "The five canonical figures repeated the same abstract spine; metrics-evidence also clipped its priority line and omitted stop text after SVG conversion.",
-      "evidence": ["1024 px review of the five canonical figures", "V4 Review Agent evidence bundle"],
+      "evidence": [
+        "1024 px review of the five canonical figures",
+        "V4 Review Agent evidence bundle"
+      ],
       "remediation": "Assigned distinct decisions to overall, land-use, key-area, mobility and evidence figures; replaced foreignObject text with native SVG text and rechecked 1024 px output.",
       "verification": "Closed by bilingual canonical PNG review; all five are distinct and no title or stop condition is clipped.",
       "status": "closed"
     },
     {
-      "id": "V5-UD-01",
+      "id": "V6-UD-01",
       "round": "urban_design_site_specificity",
       "severity": "major",
-      "finding": "Hero plans remained diagrammatic and did not show enough street-edge, entrance, paving, landscape and utility-interface evidence.",
-      "evidence": ["V4 A0 board 2", "V4 A3 pages 8–14"],
-      "remediation": "Added WGS84 trace objects plus curbs, paving, tree pits, seats, entrances, lighting/interface notes, staffed posts, emergency and removal routes for three distinct spatial types.",
-      "verification": "Closed by 42 V5 geometry objects, three bilingual 1:2000 plan comparisons and hero detail PNGs.",
-      "status": "closed"
+      "finding": "V5 used geometry count and legends as a proxy for visible urban-design specificity; a blind reviewer could not locate curbs, crossings, staffed posts, fire access and restoration without reading the legend.",
+      "evidence": [
+        "PR #3071 Review Agent remained 81/100",
+        "V5 canonical key-areas and PDF first-page review"
+      ],
+      "remediation": "Rebuild S7 as the flagship four-scale sample from shared local-metre objects and surface it in every Review Agent entry point.",
+      "verification": "Technical evidence complete: five canonical figures, four PDF first pages, bilingual proposal pages and bilingual visual first screens form an 18-image review pack; 68 traceable geometry objects and all four S7 states pass offline QA. Pending: user-led label-off blind review before any Ready PR.",
+      "status": "open"
     },
     {
       "id": "V5-PUB-01",
       "round": "publication_density_and_increment",
       "severity": "major",
       "finding": "A0-03 left a large low-information lower field and A3 repeated the full overall plan more than twice.",
-      "evidence": ["150 DPI contact sheets generated during V5 QA"],
+      "evidence": [
+        "150 DPI contact sheets generated during V5 QA"
+      ],
       "remediation": "Expanded A0-03 receipt, section, catalogue and phasing zones; replaced A3 repeated maps with mobility, key-area, land-use and evidence-specific figures.",
       "verification": "Closed after 3-board and 20-page bilingual contact-sheet review; overall plan now appears in full on only pages 3 and 5.",
       "status": "closed"
@@ -41,9 +54,11 @@
       "round": "offline_interaction_and_accessibility",
       "severity": "major",
       "finding": "A generic .hero selector expanded the hero-scenario status chip into a blank viewport-high amber block after the V5 first-screen redesign.",
-      "evidence": ["390×844 and 1440×1600 Playwright interaction screenshots"],
+      "evidence": [
+        "390×844 and 1440×1600 Playwright interaction screenshots"
+      ],
       "remediation": "Scoped the layout to header.hero and explicitly reset the nested tier.hero chip; added automated scenario-card screenshot QA.",
-      "verification": "Closed with desktop, mobile and English tests: 42 geometry objects, schema 1.3.0, hash restoration, reduced motion, no external requests and zero console errors.",
+      "verification": "Rechecked for V6 with desktop 1440×1600, mobile 390×844 and English: 68 geometry objects, schema 1.4.0, scenario and operating-state hash restoration, reduced motion, no external requests and zero console/page errors.",
       "status": "closed"
     },
     {
@@ -63,5 +78,5 @@
       "status": "open_external_dependency"
     }
   ],
-  "note": "Internal adversarial review only; not an official score, statutory review or field validation. No machine score is fabricated."
+  "note": "V6 does not close spatial depth by counting objects. Closure requires blind visual identification plus four-scale traceability."
 }

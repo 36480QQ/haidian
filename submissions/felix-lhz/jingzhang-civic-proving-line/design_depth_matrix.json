@@ -440,23 +440,14 @@
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson",
-        "geometry/constraints.geojson"
+        "geometry/roads.geojson#V6-D-BASE-NS",
+        "geometry/roads.geojson#V6-D-BASE-EW",
+        "geometry/roads.geojson#V6-D-TRANSIT",
+        "geometry/roads.geojson#V6-D-EMERGENCY"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "key_area_count",
-        "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "s7_review_scale_count",
+        "s7_baseline_sample_status"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -479,7 +470,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "冲奖版以一脊三站两翼、三处平面/剖面/运营流程、十二组双答、四阶段与退出还场建立可审阅深度；精度敏感项等待官方与现场资料。"
+      "evidence_summary_zh": "S7 旗舰样板把两条连续公共路线、两处过街、常规接驳、独立低速湾、疏散和撤场画在同一四级尺度证据链中；方向和尺寸均为待测绘复核的概念建议。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -560,15 +551,10 @@
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson",
-        "geometry/constraints.geojson"
+        "geometry/public_space.geojson#V6-D-RAIN-W",
+        "geometry/public_space.geojson#V6-D-RAIN-E",
+        "geometry/public_space.geojson#V6-D-SHADE-NW",
+        "geometry/public_space.geojson#V6-D-EVIDENCE"
       ],
       "metric_refs": [
         "site_area_sqm",
@@ -599,7 +585,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "冲奖版以一脊三站两翼、三处平面/剖面/运营流程、十二组双答、四阶段与退出还场建立可审阅深度；精度敏感项等待官方与现场资料。"
+      "evidence_summary_zh": "大钟寺前场将雨水花园、遮阴休息、证据广场和四象限公共路线作为永久基线；AI 试验停机或撤场后仍完整。"
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -616,27 +602,22 @@
         "实施治理指标与风险"
       ],
       "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "assets/figures/key-areas.png",
+        "assets/figures/hero-s7-detail.png",
+        "assets/figures/hero-s7-section.png",
+        "drawings/a0-boards.pdf#page=2",
+        "drawings/a3-booklet.pdf#page=13"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson",
-        "geometry/constraints.geojson"
+        "geometry/roads.geojson#V6-D-BASE-NS",
+        "geometry/public_space.geojson#V6-D-TRIAL",
+        "geometry/buildings.geojson#V6-D-SERVICE",
+        "geometry/constraints.geojson#V6-D-STAFF-TRIAL"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "key_area_count",
-        "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "s7_traceable_spatial_object_count",
+        "s7_review_scale_count",
+        "s7_baseline_sample_status"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -648,10 +629,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-OPERATIONS-001",
-        "A-METRICS-001"
+        "A-SPATIAL-ATLAS-001",
+        "A-V6-S7-DIMENSIONS"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -659,7 +638,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "冲奖版以一脊三站两翼、三处平面/剖面/运营流程、十二组双答、四阶段与退出还场建立可审阅深度；精度敏感项等待官方与现场资料。"
+      "evidence_summary_zh": "S7 作为 60% 深化资源的旗舰样板完成 1:5000/1:2000/1:500/1:200、四态运行、RACI、双急停、消防与还场；T2/S2 保留差异化安全和公共服务对照。"
     },
     {
       "item_id": "renewal_project_list",
@@ -751,12 +730,8 @@
         "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "key_area_count",
-        "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "field_performance_status",
+        "s7_baseline_sample_status"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -779,7 +754,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "冲奖版以一脊三站两翼、三处平面/剖面/运营流程、十二组双答、四阶段与退出还场建立可审阅深度；精度敏感项等待官方与现场资料。"
+      "evidence_summary_zh": "四阶段以进入条件、输出物和失败条件控制；S7 必须在 E2 建立普通基线并完成许可矩阵，才可进入 E3 受控试验。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -811,12 +786,10 @@
         "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "key_area_count",
-        "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "s7_traceable_spatial_object_count",
+        "s7_review_scale_count",
+        "s7_baseline_sample_status",
+        "field_performance_status"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -839,7 +812,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "冲奖版以一脊三站两翼、三处平面/剖面/运营流程、十二组双答、四阶段与退出还场建立可审阅深度；精度敏感项等待官方与现场资料。"
+      "evidence_summary_zh": "仅复算设计对象与审查尺度；100 次通行分母、7 日窗口和分层方法已登记，但现场样本、成效与采用结论保持 unknown。"
     },
     {
       "item_id": "risk_missing_data",
@@ -910,5 +883,12 @@
     "open_context": "visual/assets/context-open-map.json; display_context_only; ODbL",
     "traceability": "12/12 plan_anchor + section_ref + operator_flow_ref + exit_asset_ref",
     "unknowns": "footfall, energy, efficiency, investment, satisfaction, intensity and field performance remain unknown"
+  },
+  "v6_evidence_index": {
+    "version": "V6",
+    "flagship": "S7 Dazhongsi / A0-02 / A3 pp.13-14 / assets/figures/key-areas.png",
+    "four_scales": "1:5000 city / 1:2000 plan / 1:500 detail / 1:200 section",
+    "state_trace": "OPEN / TRIAL / PAUSE / RETIRE",
+    "field_status": "not_field_run; no outcome or adoption claim"
   }
 }

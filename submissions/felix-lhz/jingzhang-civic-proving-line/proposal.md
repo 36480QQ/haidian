@@ -15,7 +15,9 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterpris
 
 > **城市采纳回执 / Civic Adoption Receipt：每个城市问题，先让普通答案独立成立，再让 AI 在同题、同人、同空间中公开证明增量。** 本方案不是提交两套规划；最终只允许 `adopt`、`revise`、`stop`，并由人类场景委员会决定。
 
-V4 不再平均展示 12 个场景，而以 T2、S2、S7 三个“英雄场景”分别证明人机安全、公共服务和交通采用；其余九项保留为可复制、可追踪的协议索引。每个英雄场景均建立 1:5000 城市联系、1:2000 重点区总平面、1:500 场景详图、1:200 典型剖面，以及运营时窗、人工岗位、应急/撤场路线和一张尚待现场证据填写的城市采纳回执。[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json]
+V6 不再平均展示 12 个场景，而把约 60% 的空间深化集中到 S7 大钟寺轨道接驳样板；T2、S2 分别保留为 AI 安全和公共服务对照，其余九项作为可复制、可追踪的协议索引。S7 在同一组设计对象上建立 1:5000 城市联系、1:2000 重点区总平面、1:500 场景详图和 1:200 典型剖面，并把运营时窗、人工岗位、应急/撤场路线与城市采纳回执画在同一证据链中。[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json]
+
+**本轮可定位结论不是“增加了更多对象”，而是普通路线在 `OPEN / TRIAL / PAUSE / RETIRE` 四态中始终保持连续。** 评审者不读图例也应能找到两条基线路线、独立试验湾、人工岗位、急停、消防到达和设备撤场方向；若做不到，空间深度仍视为未完成。[data:geometry/roads.geojson#V6-D-BASE-NS] [metric:s7_review_scale_count]
 
 ![总体双答结构](assets/figures/site-overview.png)
 
@@ -49,7 +51,7 @@ Quayside 的协议机制另作开发责任对照，不引用其空间形态。[s
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-V4 将抽象协议落到公开城市肌理和四级图纸证据链上：`visual/assets/context-open-map.json` 冻结了 2026-08-13 的 OpenStreetMap 道路、铁路、水系、公园及可取得的局部建筑要素，只以低对比方式帮助判断城市接口；全部要素均为 `open_data_context / reference_only`，不进入面积、强度、容量或绩效计算。图面署名为“Map data © OpenStreetMap contributors，ODbL”。
+V6 将抽象协议落到公开城市肌理和四级图纸证据链上：`visual/assets/context-open-map.json` 冻结了 2026-08-13 的 OpenStreetMap 道路、铁路、水系、公园及可取得的局部建筑要素，只以低对比方式帮助判断城市接口；全部要素均为 `open_data_context / reference_only`，不进入面积、强度、容量或绩效计算。图面署名为“Map data © OpenStreetMap contributors，ODbL”。
 
 三站从 1:5000 城市联系进入 1:2000 重点区总平面，英雄场景再进入 1:500 详图和 1:200 剖面；全部标为“概念比例，待测绘与官方底图复核”。众智园通过 Z01–Z07 建立完整公共旁路、围合测试环、复现室、机柜院、安全缓冲、急停视线与撤场通道；AI 原点通过 A11–A16 建立三条无门槛路径、人工服务台、双语抵达、共创桌、可关闭插件墙与复核后台；大钟寺通过 D21–D26 建立四象限步行、常规接驳前场、独立限时湾、疏散面、证据广场与恢复路径。设计尺寸是原型建议，不是现状测量；体验图只负责空间感知，专业判断以矢量构件和结构化接口为准。
 
@@ -71,7 +73,7 @@ AI 准入同时满足五道门：普通答案独立成立；服务同一任务�
 
 这套“双答协议”既是空间概念，也是可复制的运营机制、治理体系和场景网络：同一协议从测试庭延伸到公共服务、文化、交通与气候空间，但每一处都必须重新通过本地准入门。
 
-V5 将副命题固定为“**把回执画进城市：每一次 AI 试验，都必须保留一条不被牺牲的公共路径**”。回执不再是图纸旁边的表格：`B01` 公共路径、AI 试验边界、`E02` 人工接管岗位、应急线和撤场线均以稳定 `V5-*` ID 写入 WGS84 概念几何，出版时才投影到局部米制画布。这样，任一采纳决定都能反向追踪到实际空间对象，而不是只追踪到文字承诺。[data:geometry/roads.geojson#V5-Z-BYPASS] [metric:traceable_design_geometry_count]
+V6 将副命题固定为“**把回执画进城市：每一次 AI 试验，都必须保留一条不被牺牲的公共路径**”。回执不再是图纸旁边的表格：T2、S2 延续稳定 `V5-*` 概念对象；旗舰 S7 使用 `V6-D-*` 把两条公共路线、过街、路缘、常规接驳、AI 试验边界、人工接管岗位、急停、消防和撤场线写入同一 WGS84 证据链，出版时才投影到局部米制画布。[data:geometry/roads.geojson#V6-D-BASE-EW] [metric:s7_traceable_spatial_object_count]
 
 证据按 `E0 public source → E1 concept design → E2 baseline prototype pending → E3 controlled trial pending → E4 civic adoption pending` 五级推进。当前方案只完成 E0/E1；E2 以前不设成效百分比，E3 以前不得声称 AI 增量成立，E4 必须由人类场景委员会签署 `adopt / revise / stop`。所有页面和交互首屏统一显示 `NOT FIELD-RUN`。[metric:evidence_ladder_level_count] [metric:field_performance_status]
 
@@ -101,9 +103,15 @@ V5 将副命题固定为“**把回执画进城市：每一次 AI 试验，都�
 
 ![AI 原点公共转译厅：可穿行大厅与三类人工服务](assets/figures/station-ai-origin.png)
 
-**大钟寺城市采用场**以“常规接驳 + 开放活动面 + 有界低速湾 + 公共证据带”组织 S7—S9。AI 只进入明确时窗与边界，活动总控和交通运营主管都有停运权；撤场后恢复为无障碍上下客和常规活动空间。[data:geometry/public_space.geojson#PUBLIC-003]
+**大钟寺城市采用场**是 V6 的旗舰样板，以“常规接驳 + 四象限公共路线 + 有界低速湾 + 公共证据带”组织 S7—S9。OSM 只能支持方向性城市联系，不能确认精确站口；因此四个入口被明确标为待核验接口，空间判断不依赖虚构站口位置。AI 只进入东南侧独立试验湾和明确时窗，活动总控与交通运营主管均有停运权；撤场后试验湾恢复为普通候车、短停或公共活动面。[data:geometry/public_space.geojson#V6-D-FORECOURT] [data:geometry/constraints.geojson#V6-D-ENT-N]
 
-英雄场景 S7 将四象限步行联系、常规接驳前场、独立低速试验湾、疏散面、人工接管位和恢复普通上下客的撤场线并置；试验不得挤占唯一无障碍路线或常规交通容量。[data:visual/assets/two-answers.json#SCN-010]
+英雄场景 S7 将南北、东西两条 4.0m 原型公共路线、两处过街、常规接驳前场、独立低速试验湾、安全缓冲、疏散面、人工接管位和设备撤场线并置。4.0m 等尺寸是待复核的设计假设，不是现状测量；它们用于明确“普通路线不穿过试验边界”的空间关系，不能据此作工程或容量结论。[data:geometry/roads.geojson#V6-D-BASE-NS] [data:geometry/public_space.geojson#V6-D-TRIAL]
+
+四态运行直接改变空间而非只改变文字：`OPEN` 仅开放常规接驳、服务亭和两条公共路线；`TRIAL` 才激活东南试验湾、缓冲、试验岗位和双急停；`PAUSE` 关闭 AI 边界、由人工完成当前任务并开放疏散面；`RETIRE` 沿东侧撤场线移出设备，把试验湾还原为普通用途。西南证据广场持续提供非识别状态、申诉与退出公告。[data:visual/assets/spatial-atlas.json] [data:geometry/public_space.geojson#V6-D-EVIDENCE]
+
+S7 的测量分母预先写清但结果保持未知：E2 普通原型建成后，每种模式连续记录 100 次符合准入条件的通行，并按高峰/平峰、昼/夜、天气和辅助需求分层；严重碰撞、人员进入缓冲、急停失效、公共路线中断或人工接管超时均不需要等待样本量即可停止。AI 增量阈值只在 7 个连续运行日的普通基线完成后，由人类场景委员会登记。[metric:s7_baseline_sample_status] [data:visual/assets/two-answers.json#SCN-010]
+
+运营 RACI 落到具体位置：场地资产代表负责前场与恢复，普通服务人员驻西北服务亭，AI 运营者只管理东南试验湾，安全负责人驻缓冲西缘并控制双急停，数据负责人维护非识别事件台账，公众代表在证据广场审阅申诉。场地、消防、无障碍、临电、网络、活动、交通组织和设备安全任一许可未通过，S7 都不得从 `OPEN` 进入 `TRIAL`。[data:geometry/buildings.geojson#V6-D-SERVICE] [data:geometry/constraints.geojson#V6-D-STAFF-TRIAL]
 
 ![大钟寺城市采用场：四象限联系、常规接驳与限时试验湾](assets/figures/station-dazhongsi.png)
 
