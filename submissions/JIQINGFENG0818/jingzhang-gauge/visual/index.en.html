@@ -106,6 +106,21 @@ ul.plain{margin:10px 0;padding-left:19px} ul.plain li{margin:5px 0}
 footer{margin-top:58px;padding-top:20px;border-top:2px solid var(--ink);
   font:500 12px var(--mono);color:var(--rail);display:flex;flex-wrap:wrap;gap:8px 26px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ── Deliverable modalities (page head) ── */
+.modes{margin:0 0 34px}
+.modes .mhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:11px}
+.modes .mhead b{font:600 10px/1 var(--mono);letter-spacing:.3em;color:var(--rail)}
+.modes .mhead span{font-size:12.5px;color:var(--rail)}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line)}
+.mcard{background:var(--paper);padding:10px 12px 12px;display:flex;flex-direction:column;gap:8px}
+.mcard img{display:block;width:100%;height:150px;object-fit:contain;background:var(--ground);
+  border:1px solid var(--line)}
+.mcard .mt{font:600 9px/1.4 var(--mono);letter-spacing:.16em;color:var(--rail);text-transform:uppercase}
+.mcard .md{font-size:12.5px;line-height:1.5}
+.mcard .md b{font-weight:600}
+.mcard a{color:var(--version);text-decoration:none;border-bottom:1px solid var(--version)}
 </style>
 </head>
 <body>
@@ -129,6 +144,30 @@ footer{margin-top:58px;padding-top:20px;border-top:2px solid var(--ink);
     <div><dt>Building footprints</dt><dd>677</dd></div>
   </div>
 </header>
+
+<section class="modes" id="s-modes" aria-label="Deliverable modalities at a glance">
+  <div class="mhead">
+    <b>DELIVERABLE MODALITIES</b>
+    <span>Text · tables · figures · drawings · scenario cards · video · an interactive 3D web page — all shipped with the package and openable offline.</span>
+  </div>
+  <div class="mgrid">
+    <div class="mcard">
+      <img src="../assets/media/cover.webp" alt="Proposal cover: Jing-Zhang Gauge visual identity over the overall design scope">
+      <div class="mt">Cover</div>
+      <div class="md"><b>Proposal cover</b>　1600×900, drawn from the package's own geometry and visual identity.</div>
+    </div>
+    <div class="mcard">
+      <img src="../assets/media/gauge-mechanism.webp" alt="Poster for the 55-second mechanism explainer: a still from the three-stations sequence">
+      <div class="mt">Video</div>
+      <div class="md"><b>55-second mechanism explainer</b>　1280×720, 24 fps, <b>silent</b>; WebVTT captions and a full transcript ship alongside, so nothing is lost without sound. See <code>assets/media/gauge-mechanism.mp4</code>.</div>
+    </div>
+    <div class="mcard">
+      <img src="../assets/media/gauge-tour-still.webp" alt="Still from the 3D tour: axonometric view of the full three-strip corridor">
+      <div class="mt">3D / Interactive</div>
+      <div class="md"><b>3D tour</b>　A hand-written WebGL renderer loading 1,070 geometry features across 9 layers, operable by keyboard. The interactive version is in the <a href="#s-tour">3D tour</a> section at the end of this page.</div>
+    </div>
+  </div>
+</section>
 
 <section id="s-concept">
   <h2><span>00</span>The Concept</h2>
