@@ -81,13 +81,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "bf258804cc2283ef3a8dbb07cd0e627bfa01ee6a144c79cb213d5d0bdb094c90"
+      "sha256": "b113e05355867d127b35a1aa3f6c2eb216e31a9a0f6ef9b81377f55d575bf6bc"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "b0389b9488eadc7348f4eeffc30aac89449c564a19732d0db2f9a49c8957094b"
+      "sha256": "32c48e7df3d4d89fc2bb5b64d8f4a07635883fec084392e0b980f5ea8bbbcfd5"
     },
     {
       "path": "compliance_matrix.json",
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "28c2a3e52c0b756eed00f391ff4c950a8dfb60f80b00ae70c87eef7ed99fc9bf"
+      "sha256": "c7a3fb6a55e4823cf6838520d03b5aea91d8d04b56787445f0dd33276f5db4a1"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -236,7 +236,7 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "3bec39cb7b897e3b8309f036ef21ab87a5d5e811ee06f34e533cf7d1b567751d"
+      "sha256": "08d76422964647cb4a443fb5cd94bdd8c7b9575eb592b75164af2b5563692230"
     },
     {
       "path": "report/copyright_statement.md",
@@ -263,7 +263,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "2a131a62605e5f20a6f3c8219f2350a4d908534902f32421da2d9d4a66c1fde1"
+      "sha256": "40d9167c19133180c529c10b32bbc3eb4dbb03edeceb9a70d1fe3bf1848e239e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -419,7 +419,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "57bbf61c05dc28f31278ff74acb8ff76b99738dcbbe9c5a30b898609ed3ba51b"
+      "sha256": "349c541c7f8e06f3b5ccc2d52f72e957bbd2dedbdcb9af88f7998318e719538c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -601,7 +601,7 @@
       "path": "visual/assets/failure-governance-register.json",
       "role": "other",
       "required": true,
-      "sha256": "a30e97e82bc7831efcffbd318ef8821c92cbb0d8faec7af0b28313b9be905d1f",
+      "sha256": "28164a208d26a0704270f96c828b66564c50080bde408b82b4787923c97d22f6",
       "role_detail": "public_interest_evidence"
     },
     {
@@ -894,7 +894,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "8528af15beddc18bf87f4bcc70e00d5b26b5c6a47ee3e238fa91155789bc04eb"
+      "sha256": "e4a97d2fef721a9633a04dc055a0d5ada1bf15ab1babeb15030a64c2c5c42af1"
     },
     {
       "path": "visual/assets/review-walkthrough.css",
@@ -908,7 +908,7 @@
       "role": "verification_script",
       "required": false,
       "language": "neutral",
-      "sha256": "058faa8bb7f750a1286073708190f8920f83c11ac2fbff3bee9fb2bc1c054942"
+      "sha256": "722776d52220b92d1924cb4b60f6704474c19627825e1f26d733250c3c0a0e3f"
     },
     {
       "path": "visual/assets/field-evidence-intake-contract.json",
@@ -990,7 +990,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "全部 141 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review navigation for all 141 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "3a6927cc81f36e6f76f1293cde27b815688ba43394fe86f6b5ec6217dd7670af"
+      "sha256": "23d989c8b0a1d466186c7c8a2ab192478f420c34e9de43a1f86ced1fc74f2301"
     },
     {
       "path": "visual/assets/round17-reading.css",

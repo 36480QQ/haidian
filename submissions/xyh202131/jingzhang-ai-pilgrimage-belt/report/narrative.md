@@ -4,6 +4,20 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 42 Four-state truth and recovery boundary / 第 42 轮四态语义与恢复真实性
+
+第 42 轮在第 41 轮 PR #3215 合并（head `e5b35a1aec70a20d6cd33542f0b1828fa31da756`，merge `7d5d1c7914de610c7e68a89f055063afc077e79f` 已进入 canonical `main@fb7e7c3b7d2c88bd4acbeceaafc13d8933b3082f`）、同包无开放 PR、工作树洁净后开始。审计不是增加新的运行机制，而是把同一既有四态的四条语义轴重新分开：运行态回答界面正在展示普通、验证、故障或恢复；成熟度仍是 G0；授权仍是 `not_authorized`；服务轴只记录概念合同要求的同任务非 AI 路径，不假装它是已观察到的服务。RED 可重放：两个按钮和读屏播报把 48 秒界面节奏称为“旅程”，两处可见恢复卡与第 4 步漫游没有说清材料闭合仍不产生重启授权、批准、G1 或现实结果，且旧服务值不在自己的允许集合中。
+
+修复没有改变四态数量、12 秒每态／48 秒总时长、动画装饰、静态卡、无 JavaScript、键盘或减少动态后备。按钮和读屏播报现在称为“界面示意”，恢复卡和漫游只把验证层描述为下一道证据门的候选；即使材料闭合，仍不自动产生重启、批准、G1、现场结果或权利清除。`failure-governance-register.json` 现在以 `ordinary_non_ai_concept_requirement` 表示服务轴当前值，并明确它不是现场服务可用性、授权、成熟度变化或现实结果。`review-handoff-index.json` 保存修复前后的编辑与类型审计；这不是公众反馈、专家意见、可用性认证或评审结论。
+
+本轮无新媒体、来源、模型、方案方向、场景、项目、重点区、治理合同、页面或 PDF。既有图像继续是 G0 概念展示；48 秒互动继续是离线审阅说明；T-02 继续是无模型/API/现实服务调用的合成回放。geometry、`metrics.json`、12/8/3/36、G0、NO-GO、provisional、现实结果 0、`not_fully_cleared`、独立逐文件清权 0、普通非 AI 路径和专业否决均保持不变。
+
+Round 42 began only after Round 41 PR #3215 merged (head `e5b35a1aec70a20d6cd33542f0b1828fa31da756`; merge `7d5d1c7914de610c7e68a89f055063afc077e79f` is contained in canonical `main@fb7e7c3b7d2c88bd4acbeceaafc13d8933b3082f`), no PR remained open for this package, and the worktree was clean. The audit adds no operating mechanism; it separates the four meanings carried by the existing four states: runtime says that the interface displays ordinary, proof, failure or recovery; maturity remains G0; authorization remains `not_authorized`; and the service axis records only the concept-contract requirement for a same-task non-AI path, without presenting it as observed service.
+
+The reproducible RED was that the two buttons and live-region announcements called the 48-second interface pacing a “journey”, two visible recovery cards and walkthrough Step 4 did not say that material closure still creates neither restart authorization, approval, G1 nor a real-world result, and the previous service value was absent from its own allowed-value set. The repair preserves four-state count, 12 seconds per state / 48 seconds total, motion decoration, static cards, no-JavaScript, keyboard and reduced-motion fallbacks. It names controls and announcements as interface pacing; recovery makes proof only a candidate for a separate evidence gate; and `ordinary_non_ai_concept_requirement` is explicitly not observed service availability, authorization, a maturity change or a real-world result. The review index retains the before/after editorial and type audit; it is not public feedback, expert opinion, usability certification or a jury conclusion.
+
+This round adds no media, source, model, design direction, scene, project, key area, governance contract, page or PDF. Existing images remain G0 conceptual display; the 48-second interaction remains offline review explanation; and T-02 remains a synthetic replay with no model, API or real-service call. Geometry, `metrics.json`, 12/8/3/36, G0, NO-GO, provisional status, zero real-world outcomes, `not_fully_cleared`, zero independent file-level audits, ordinary non-AI paths and professional vetoes remain unchanged.
+
 ## Round 41 Evidence-first reviewer reading ladder / 第 41 轮证据优先的评审阅读梯
 
 第 41 轮只在第 40 轮 PR #3204 合并（head `d4d9f5dd86ed61a121ed716c964968ae7aaecd16`，merge `596ddd89ffd75edd59cc4f1afa70e6f0ec5e3d9a` 已包含于 canonical `main@5fb96256c5b756f2f7d1880b7594352aa0eb25e1`）、同包无开放 PR、工作树洁净后开始。审计没有寻找新的方案方向，而是检查前台承诺的三档阅读是否能真正启动。RED 是可重复的 DOM 计数：中英文 `.reading-lanes` 各有三张卡，但各有 0 个 `<a>`，因此 3 分钟“从哪里开始”和 15 分钟“从哪里进入证据”只能靠说明文字推断。修复把三张既有卡变成三个原生、可键盘访问、无 JavaScript 的起步链接：30 秒回到一个概念与一个边界，3 分钟从普通生活开始，15 分钟从专业交接进入。链接只定位既有内容，既不展开或隐藏证据，也不制造一个新的阅读层。
