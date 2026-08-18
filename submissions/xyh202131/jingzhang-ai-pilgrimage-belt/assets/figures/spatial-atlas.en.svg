@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180" role="img" aria-labelledby="title desc">
+  <title id="title">Twin-Track Jing-Zhang: one ordinary task, three non-interchangeable spatial relations</title>
+  <desc id="desc">G0 conceptual spatial atlas. Zhongzhiyuan organizes an ordinary parallel bypass, Origin Community joins two courts with one resident street, and Dazhongsi organizes the ordinary task around a four-way commuter cross. All ordinary paths are continuous without AI; proof, stop, staffed handoff and recovery layers follow separately.</desc>
+  <defs>
+    <style>.s{font-family:&quot;Segoe UI&quot;,&quot;Noto Sans&quot;,sans-serif}.ink{fill:#102A43}.muted{fill:#536779}.head{font-size:40px;font-weight:900}.sub{font-size:22px;font-weight:760}.body{font-size:25px;font-weight:800}.small{font-size:19px;font-weight:740}.micro{font-size:16px;font-weight:700}.k{font-size:18px;font-weight:900;letter-spacing:1.7px}.ordinary{fill:none;stroke:#087E68;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.halo{fill:none;stroke:#DDF2EA;stroke-width:46;stroke-linecap:round;stroke-linejoin:round}.dash{stroke-dasharray:12 10}</style>
+    <marker id="arrow" viewBox="0 0 16 16" refX="13" refY="8" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#087E68"/></marker>
+  </defs>
+  <rect width="1800" height="1180" fill="#F6F2E9"/>
+  <rect width="1800" height="152" fill="#102A43"/>
+  <text x="56" y="49" class="s k" fill="#F3BB27">TWIN-TRACK JING-ZHANG · THREE CIVIC SWITCHYARDS · G0 · PROVISIONAL · NOT TO SCALE</text>
+  <text x="56" y="106" class="s head" fill="#FFF">One ordinary task works first; three places protect it through different spatial relations</text>
+  <text x="56" y="136" class="s small" fill="#D8E2E7">This layer shows the ordinary/non-AI baseline only. Proof, stop, staffed handoff and recovery are added separately and never become authorization, approval or G1.</text>
+  <path d="M600 206V1018M1200 206V1018" stroke="#C7D1CE" stroke-width="2" stroke-dasharray="9 12"/>
+  <g id="zhongzhiyuan-ordinary">
+    <text x="70" y="218" class="s k" fill="#087E68">01 VERIFY · ZHONGZHIYUAN</text>
+    <text x="70" y="260" class="s body ink">Parallel bypass: ordinary life is separate from side work</text>
+    <text x="70" y="292" class="s sub muted">The ordinary task is to pass, ask, bypass or exit along the continuous green route.</text>
+    <rect x="92" y="382" width="410" height="198" rx="80" fill="#E5EFF1" stroke="#ABC4C9" stroke-width="4" class="dash"/>
+    <text x="297" y="476" class="s body ink" text-anchor="middle">Outside the court edge</text><text x="297" y="510" class="s sub muted" text-anchor="middle">The ordinary bypass does not enter the side court</text>
+    <path d="M110 696C205 650 313 732 496 682" class="halo"/><path d="M110 696C205 650 313 732 496 682" class="ordinary" marker-end="url(#arrow)"/>
+    <text x="104" y="770" class="s body" fill="#087E68">Ordinary bypass / continuous non-AI path</text>
+    <text x="104" y="810" class="s small ink">Pass · ask · bypass · exit</text>
+    <rect x="82" y="852" width="438" height="118" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
+    <text x="105" y="892" class="s small ink">The diagram does not establish:</text><text x="105" y="924" class="s micro muted">an existing court, equipment, dimensions, materials, connections or accessibility result.</text>
+  </g>
+  <g id="origin-community-ordinary">
+    <text x="640" y="218" class="s k" fill="#B77A13">02 CO-CREATE · ORIGIN COMMUNITY</text>
+    <text x="640" y="260" class="s body ink">One street, two courts: resident life makes the main route</text>
+    <text x="640" y="292" class="s sub muted">The ordinary task is to pass, pause, exchange, ask for help or leave on the screen-free resident street.</text>
+    <path d="M692 435L790 360L888 435V570H692Z" fill="#FFF9E9" stroke="#B77A13" stroke-width="6"/><text x="790" y="490" class="s body" fill="#A46E11" text-anchor="middle">Question court</text>
+    <path d="M956 475L1054 402L1152 475V622H956Z" fill="#EDF7FB" stroke="#167FA5" stroke-width="6"/><text x="1054" y="538" class="s body" fill="#167FA5" text-anchor="middle">Civic review court</text>
+    <path d="M646 704C737 634 833 758 931 692S1108 647 1161 720" class="halo"/><path d="M646 704C737 634 833 758 931 692S1108 647 1161 720" class="ordinary" marker-end="url(#arrow)"/>
+    <text x="652" y="784" class="s body" fill="#087E68">Resident street / screen-free ordinary passage continues</text>
+    <text x="652" y="822" class="s small ink">Walk · pause · exchange · ask for help · exit</text>
+    <rect x="634" y="852" width="538" height="118" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
+    <text x="657" y="892" class="s small ink">The diagram does not establish:</text><text x="657" y="924" class="s micro muted">existing courts, resident consent, accessibility, service hours or an operating commitment.</text>
+  </g>
+  <g id="dazhongsi-ordinary">
+    <text x="1240" y="218" class="s k" fill="#D75D45">03 PUBLISH · DAZHONGSI</text>
+    <text x="1240" y="260" class="s body ink">Four-way commuter cross: commuting does not become a service queue</text>
+    <text x="1240" y="292" class="s sub muted">The ordinary task is to pass, orient, ask, rest quietly or exit through four directions.</text>
+    <circle cx="1490" cy="584" r="74" fill="#DFF1EA"/><path d="M1288 584H1700M1490 372V800" class="ordinary" stroke-width="28"/><circle cx="1490" cy="584" r="43" fill="#FFF" stroke="#087E68" stroke-width="6"/>
+    <text x="1490" y="860" class="s body" fill="#087E68" text-anchor="middle">Four-way commuting / physical orientation / non-AI continues</text>
+    <text x="1490" y="898" class="s small ink" text-anchor="middle">Pass · orient · ask · rest quietly · exit</text>
+    <rect x="1226" y="926" width="528" height="94" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
+    <text x="1250" y="966" class="s small ink">The diagram does not establish:</text><text x="1250" y="995" class="s micro muted">an existing station, road, footfall, staffed desk, queue or site approval.</text>
+  </g>
+  <rect x="52" y="1054" width="1696" height="74" rx="16" fill="#E9EEEE" stroke="#BAC6C8" stroke-width="2"/>
+  <text x="78" y="1086" class="s micro ink">Ordinary-first: each place provides a same-task non-AI route, staffed explanation and safe exit before any side proof; their spatial grammars are parallel bypass, one street/two courts and a four-way commuter cross.</text>
+  <text x="78" y="1115" class="s micro" fill="#9A3F2F">G0 conceptual relations only: no precise location, existing building, real accessibility, staff, roster, service, approval, recovery duration or result is shown; RIGHTS = not_fully_cleared.</text>
+  <text x="1745" y="1162" class="s micro" fill="#D75D45" text-anchor="end">The spatial atlas is not a site plan, engineering drawing or authorization state.</text>
+</svg>
