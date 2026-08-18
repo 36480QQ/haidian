@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 summary: "Leveling is not about measuring accurately once; it is about measuring back. Depart from a datum, run the circuit, return — and the closure error decides whether the whole line is trusted. This proposal applies that hundred-year-old rule where a wrong reading injures someone: low-speed robots, autonomous shuttles, and AI health, education, legal and daily services. In space: a 9,443 m walkable public axis, three areas and two wings with benchmarks by role, a seven-class land-use partition, and eight update projects with roles, costs and exits. An approved statutory plan already covers this belt (HD00-1601 and adjacent blocks, approved 2026-08-11), and this proposal is conceptual deepening above it, not beside it. Concept advice on provisional boundaries; not a substitute for statutory planning."
-tracks: ["robotics-autonomous-mobility", "ai-public-services", "civic-agent-governance"]
+tracks: ["robotics-autonomous-mobility", "ai-public-services"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
 
@@ -52,7 +52,7 @@ Each key area carries one clause of that rule:
 
 | What a reviewer asks | The answer | What can be checked |
 |---|---|---|
-| Why these two tracks | Because a wrong reading hurts somebody. **Measured**: robotics 41 of 793 (5.2%, thinnest of the eight), AI public services 92  | the track table above is its result; per-proposal readings sit in `field_map.json`, **outside the review input** |
+| Why these two tracks | Because a wrong reading hurts somebody. **Measured**: robotics 41 of 793 (5.2%, thinnest of the eight), AI public services 92  | the track table below is its result; per-proposal readings sit in `field_map.json`, **outside the review input** |
 | What is done in space | A 9,443 m spine, 8 graded benchmarks, 3 key areas, a complete seven-class land-use partition with no overlap and no gap | class-1 values arrive whole in `metrics.json`; the nine layers and `verify.js` are **outside the review input**, for independent recomputation |
 | Why the three red lines bind | Not on the designer's goodwill but on law in force: Accessibility Act art. 39, Generative AI Measures arts. 14 and 15, State Council 2020/45 [source:ELDERLY-SMART-TECH-PLAN-2020-45] | `sources.json`, each with article number and how it was obtained |
 | Where the method stops | The closure error measures agreement, **not whether a thing helped** — that needs a control, and the control is written on every scenario card | the twelve cards are tabulated in this document, each with its effect question, control and three stages; the card JSON is **outside the review input** |
@@ -252,7 +252,7 @@ The mark, its construction, four variants and three applications (benchmark plaq
 
 ### Three positionings, five functions, and a circuit that closes (agent.1)
 
-The taskbook gives three positionings and five functions [source:AGENT-TASKBOOK]. Rather than restate them, this proposal connects them into a **circuit that can close** — which is precisely the blind spot the field converges into. The measurement is in the motif table above; three-core, two-wing and one-spine all clear thirty per cent. **The specific shares are not repeated here, because repeating them is how they expire** — the table is generated and only its conclusion is used here [source:FIELD-CENSUS-2026-08]. That convergence is not consensus; it is what the taskbook's "three areas, two wings" induces. Drawing the same structure again adds nothing. What adds something is stating **by what mechanism these units hand responsibility to one another.**
+The taskbook gives three positionings and five functions [source:AGENT-TASKBOOK]. Rather than restate them, this proposal connects them into a **circuit that can close** — which is precisely the blind spot the field converges into. That measurement is **not in this file**: the motif table was withdrawn with E258, because none of the three motifs measures Haidian, and the readings stay in `field_map.json`, **outside the review input** [source:FIELD-CENSUS-2026-08]. That convergence is not consensus; it is what the taskbook's "three areas, two wings" induces. Drawing the same structure again adds nothing. What adds something is stating **by what mechanism these units hand responsibility to one another.**
 
 The leveling network's answer is elevation transfer: each station's reading depends on the one before it, and the run returns to the origin to be computed.
 
@@ -813,7 +813,7 @@ The core claim for public services is therefore: **do not measure the average; m
 
 **Residents' right to initiate re-survey.** Any resident may require one re-survey of a judgement that affects them, and the result is published alongside the original reading, anonymised. That right sits at the third-order point nearest home: **putting the right of review in a specialist institution fifteen minutes' walk away is the same as not granting it.** Persona P4 is therefore not a line in a list of beneficiaries but the mechanism's trigger.
 
-**Why these two tracks need this instrument most.** Measurement shows these two are the thinnest and third-thinnest of the eight; the counts are in the track table above [source:FIELD-CENSUS-2026-08] — **they are not restated here, because every restatement of them has gone stale.** That is not because they are unimportant but because they are **hard to write** — treated seriously, they force safety, licensing, privacy, accessibility and appeal into the open, and cannot stop at the concept layer. This proposal takes them head on and writes the result in a form a professional team can refute item by item.
+**Why these two tracks need this instrument most.** Measurement shows these two are the thinnest and third-thinnest of the eight; the counts are in the track table below [source:FIELD-CENSUS-2026-08] — **they are not restated here, because every restatement of them has gone stale.** That is not because they are unimportant but because they are **hard to write** — treated seriously, they force safety, licensing, privacy, accessibility and appeal into the open, and cannot stop at the concept layer. This proposal takes them head on and writes the result in a form a professional team can refute item by item.
 
 ### Three controlled industry validation scenarios (agent.3)
 
@@ -1122,7 +1122,7 @@ The table above prices the network **as laid out**. FIG.21 measures the worst wa
 
 At CNY 120–260 per hour, paid labour runs CNY 16,644–57,122 a year, or **CNY 19,444–63,922 a year** including consumables — all bands, none of them point estimates.
 
-**The only number here that is not counted is the rate**: CNY 120–260 per hour is a band with no verifiable source in this package, and it is graded provisional. Every other cell is a count of sessions, people, hours or items. Substitute your own rate and the table recomputes — the formula ships beside it for exactly that reason.
+**Three numbers here are not counted**: the rate (CNY 120–260 per hour), consumables (CNY 200–1,500 a year per benchmark) and the per-session hour bands (1.5–8.0 h by class) — all bands with no verifiable source here, graded provisional. Every other cell is a count of sessions, people, hours or items. Substitute your own and the table recomputes.
 
 **The removal bond, docked to instruments that already exist.**
 
@@ -1526,11 +1526,11 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-326 entries. By finder:
+328 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 32 | Run against the shipped package, not a draft |
+| Independent audit | 34 | Run against the shipped package, not a draft |
 | The author | 212 | Found while working |
 | This package's own gate | 24 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
@@ -1543,7 +1543,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 | Shape | Count |
 |---|---|
-| An easy measure | 59 |
+| An easy measure | 60 |
 | Two copies drifted | 49 |
 | Shipped unseen | 30 |
 | Uncheckable | 25 |
@@ -1551,7 +1551,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Nothing fails it | 17 |
 | Outlived its line | 14 |
 | Recorded where found | 14 |
-| A reference did not resolve | 12 |
+| A reference did not resolve | 13 |
 | Not itself | 12 |
 | A source unnameable | 10 |
 | A total excluding | 8 |
@@ -1838,7 +1838,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1169 KB, 1,808 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files, 1172 KB, 1,810 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
@@ -1882,7 +1882,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 81 of 84 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
+**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 82 of 85 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
 
 <!-- PDFPAGE1:BEGIN -->
 

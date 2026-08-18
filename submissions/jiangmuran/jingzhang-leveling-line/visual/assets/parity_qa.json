@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.788,
+ "overall_ratio": 0.787,
  "floor": 0.75,
  "sections": [
   {
@@ -33,9 +33,9 @@
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
-   "zh_chars": 6466,
-   "en_words": 4053,
-   "ratio": 0.8,
+   "zh_chars": 6458,
+   "en_words": 4045,
+   "ratio": 0.799,
    "pass": true
   },
   {
@@ -54,7 +54,7 @@
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 11276,
+   "zh_chars": 11274,
    "en_words": 7029,
    "ratio": 0.795,
    "pass": true
@@ -75,9 +75,9 @@
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 5350,
-   "en_words": 3263,
-   "ratio": 0.778,
+   "zh_chars": 5382,
+   "en_words": 3258,
+   "ratio": 0.772,
    "pass": true
   },
   {
