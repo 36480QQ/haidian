@@ -26,8 +26,8 @@
    "checks_en": "Three counts across `proposal.md` and `proposal.en.md`: total lines (wc -l), the line-by-line structural-type sequence of non-empty lines, and table row count with per-row column counts.",
    "criterion_zh": "三项两侧全等，且逐行结构类型不一致数为 0；任一项不等即失败，正文任何加行必须双语同位。",
    "criterion_en": "All three counts equal on both sides and zero structural-type mismatches line by line; any inequality fails the gate, and any added line must be added at the same position in both languages.",
-   "current_reading_zh": "行 868/868（wc -l）；非空行 612/612；表格行 280/280；逐行结构类型不一致 0。",
-   "current_reading_en": "Lines 868/868 (wc -l); non-empty lines 612/612; table rows 280/280; zero structural-type mismatches.",
+   "current_reading_zh": "行 907/907（wc -l）；非空行 638/638；表格行 292/292；逐行结构类型不一致 0。",
+   "current_reading_en": "Lines 907/907 (wc -l); non-empty lines 638/638; table rows 292/292; zero structural-type mismatches.",
    "evidence_files": [
     "proposal.md",
     "proposal.en.md",

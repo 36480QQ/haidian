@@ -39,11 +39,13 @@
  *
  * 范围声明 / Scope statement
  * 本工具是本提交包专用的复演器，不是通用 SEB 运行器：几何文件路径、节点与道路 id
- * 绑定本包档案；LineString 仅支持两点线段，更长的折线拒绝运行而不是静默截断。
+ * 绑定本包档案；几何支持任意顶点数的 LineString，其他几何类型与不足两点的线拒绝
+ * 运行而不是静默降级（自 v8.0 线位加密起扩至折线，见 CR-2026-08-18-008）。
  * This tool is a replayer specific to this package, not a general SEB runner: geometry
- * paths and node/road ids are bound to this package's archive; LineStrings support
- * two-point segments only, and longer polylines refuse the run instead of being
- * silently truncated.
+ * paths and node/road ids are bound to this package's archive; it supports LineStrings
+ * of any vertex count, and other geometry types or lines of fewer than two points refuse
+ * the run instead of being silently degraded (widened to polylines at the v8.0
+ * densification, registered as CR-2026-08-18-008).
  *
  * 用法 / Usage: node seb-op04-chain-run.js
  * 零依赖，仅使用 Node 内置模块（Node >= 18），无网络访问，只读取本包内文件；本工具版本 0.4.0。
@@ -119,19 +121,32 @@ function project(lonDeg, latDeg) {
 const dist2 = (p, q) => Math.hypot(q[0] - p[0], q[1] - p[1]);
 const vkey = (p) => Math.round(p[0] * 1000) + "|" + Math.round(p[1] * 1000);
 
+/* 折线支持：每条线位先拆成直段，跨线位的直段两两求交；同一条线位内部的相邻
+   直段本就共享顶点，不参与互交，避免自打断。
+   Polyline support: each centreline is split into straight pieces and pieces of
+   DIFFERENT centrelines are intersected pairwise. Pieces of the same centreline
+   already share vertices and are not intersected against each other. */
 function buildGraph(edgeDefs) {
-  const cuts = edgeDefs.map(() => []);
-  for (let i = 0; i < edgeDefs.length; i++) {
-    for (let j = i + 1; j < edgeDefs.length; j++) {
-      const p1 = edgeDefs[i].a, p2 = edgeDefs[i].b;
-      const p3 = edgeDefs[j].a, p4 = edgeDefs[j].b;
-      const d = (p2[0] - p1[0]) * (p4[1] - p3[1]) - (p2[1] - p1[1]) * (p4[0] - p3[0]);
-      if (Math.abs(d) < 1e-9) continue;
-      const t = ((p3[0] - p1[0]) * (p4[1] - p3[1]) - (p3[1] - p1[1]) * (p4[0] - p3[0])) / d;
-      const u = ((p3[0] - p1[0]) * (p2[1] - p1[1]) - (p3[1] - p1[1]) * (p2[0] - p1[0])) / d;
-      if (t < -1e-9 || t > 1 + 1e-9 || u < -1e-9 || u > 1 + 1e-9) continue;
-      cuts[i].push(t);
-      cuts[j].push(u);
+  const parts = edgeDefs.map((e) => {
+    const pts = e.pts || [e.a, e.b];
+    const out = [];
+    for (let n = 0; n < pts.length - 1; n++) out.push({ a: pts[n], b: pts[n + 1], cuts: [] });
+    return out;
+  });
+  for (let i = 0; i < parts.length; i++) {
+    for (let j = i + 1; j < parts.length; j++) {
+      for (const s1 of parts[i]) {
+        for (const s2 of parts[j]) {
+          const p1 = s1.a, p2 = s1.b, p3 = s2.a, p4 = s2.b;
+          const d = (p2[0] - p1[0]) * (p4[1] - p3[1]) - (p2[1] - p1[1]) * (p4[0] - p3[0]);
+          if (Math.abs(d) < 1e-9) continue;
+          const t = ((p3[0] - p1[0]) * (p4[1] - p3[1]) - (p3[1] - p1[1]) * (p4[0] - p3[0])) / d;
+          const u = ((p3[0] - p1[0]) * (p2[1] - p1[1]) - (p3[1] - p1[1]) * (p2[0] - p1[0])) / d;
+          if (t < -1e-9 || t > 1 + 1e-9 || u < -1e-9 || u > 1 + 1e-9) continue;
+          s1.cuts.push(t);
+          s2.cuts.push(u);
+        }
+      }
     }
   }
   const adj = new Map();
@@ -139,15 +154,17 @@ function buildGraph(edgeDefs) {
   const addV = (p) => { const k = vkey(p); if (!adj.has(k)) adj.set(k, []); return k; };
   const addE = (ka, kb, w, id) => { adj.get(ka).push([kb, w, id]); adj.get(kb).push([ka, w, id]); };
   edgeDefs.forEach((e, i) => {
-    const ts = [0, 1].concat(cuts[i]).sort((x, y) => x - y);
-    const at = (t) => [e.a[0] + t * (e.b[0] - e.a[0]), e.a[1] + t * (e.b[1] - e.a[1])];
-    for (let n = 0; n < ts.length - 1; n++) {
-      if (ts[n + 1] - ts[n] < 1e-12) continue;
-      const p = at(ts[n]), q = at(ts[n + 1]);
-      const ka = addV(p), kb = addV(q);
-      addE(ka, kb, dist2(p, q), e.id);
-      segs.push({ id: e.id, p, q, ka, kb });
-    }
+    parts[i].forEach((s) => {
+      const ts = [0, 1].concat(s.cuts).sort((x, y) => x - y);
+      const at = (t) => [s.a[0] + t * (s.b[0] - s.a[0]), s.a[1] + t * (s.b[1] - s.a[1])];
+      for (let n = 0; n < ts.length - 1; n++) {
+        if (ts[n + 1] - ts[n] < 1e-12) continue;
+        const p = at(ts[n]), q = at(ts[n + 1]);
+        const ka = addV(p), kb = addV(q);
+        addE(ka, kb, dist2(p, q), e.id);
+        segs.push({ id: e.id, p, q, ka, kb });
+      }
+    });
   });
   return { adj, segs, addV, addE };
 }
@@ -245,16 +262,85 @@ function componentCount(G) {
   return n;
 }
 
-/* ----------------------------------------------------- 备选几何的构造 ---- */
-const paramOfFoot = (seg, xy) => {
-  const vx = seg.b[0] - seg.a[0], vy = seg.b[1] - seg.a[1];
-  return ((xy[0] - seg.a[0]) * vx + (xy[1] - seg.a[1]) * vy) / (vx * vx + vy * vy);
+/* --------------------------------------- 折线量算与备选几何的构造 ---- */
+/* 参数一律用归一化弧长（0 = 线位起点，1 = 线位终点），两点线段时与旧的
+   线性参数完全等价，因此备选几何的构造意图未变。
+   Parameters are normalised arc length (0 = start, 1 = end); on a two-point
+   line this is identical to the previous linear parameter, so the intent of
+   the alternative geometry is unchanged. */
+const polyLen = (pts) => {
+  let s = 0;
+  for (let i = 1; i < pts.length; i++) s += dist2(pts[i - 1], pts[i]);
+  return s;
 };
-const pointAt = (seg, t) => [seg.a[0] + t * (seg.b[0] - seg.a[0]), seg.a[1] + t * (seg.b[1] - seg.a[1])];
-const paramOfCross = (s1, s2) => {
-  const p1 = s1.a, p2 = s1.b, p3 = s2.a, p4 = s2.b;
-  const d = (p2[0] - p1[0]) * (p4[1] - p3[1]) - (p2[1] - p1[1]) * (p4[0] - p3[0]);
-  return ((p3[0] - p1[0]) * (p4[1] - p3[1]) - (p3[1] - p1[1]) * (p4[0] - p3[0])) / d;
+const polyPointAt = (pts, t) => {
+  let d = t * polyLen(pts);
+  for (let i = 1; i < pts.length; i++) {
+    const l = dist2(pts[i - 1], pts[i]);
+    if (d <= l || i === pts.length - 1) {
+      const r = l === 0 ? 0 : d / l;
+      return [pts[i - 1][0] + r * (pts[i][0] - pts[i - 1][0]),
+        pts[i - 1][1] + r * (pts[i][1] - pts[i - 1][1])];
+    }
+    d -= l;
+  }
+  return pts[pts.length - 1];
+};
+const polyProject = (pts, xy) => {
+  const L = polyLen(pts);
+  let acc = 0, best = null;
+  for (let i = 1; i < pts.length; i++) {
+    const p = pts[i - 1], q = pts[i];
+    const vx = q[0] - p[0], vy = q[1] - p[1], L2 = vx * vx + vy * vy;
+    let t = L2 === 0 ? 0 : ((xy[0] - p[0]) * vx + (xy[1] - p[1]) * vy) / L2;
+    t = Math.max(0, Math.min(1, t));
+    const foot = [p[0] + t * vx, p[1] + t * vy];
+    const d = dist2(xy, foot), l = Math.sqrt(L2);
+    if (!best || d < best.d - 1e-9) best = { d, s: (acc + t * l) / L };
+    acc += l;
+  }
+  return best.s;
+};
+const polyCross = (pts1, pts2) => {
+  const L = polyLen(pts1);
+  let acc = 0;
+  for (let i = 1; i < pts1.length; i++) {
+    const p1 = pts1[i - 1], p2 = pts1[i], l = dist2(p1, p2);
+    for (let j = 1; j < pts2.length; j++) {
+      const p3 = pts2[j - 1], p4 = pts2[j];
+      const d = (p2[0] - p1[0]) * (p4[1] - p3[1]) - (p2[1] - p1[1]) * (p4[0] - p3[0]);
+      if (Math.abs(d) < 1e-9) continue;
+      const t = ((p3[0] - p1[0]) * (p4[1] - p3[1]) - (p3[1] - p1[1]) * (p4[0] - p3[0])) / d;
+      const u = ((p3[0] - p1[0]) * (p2[1] - p1[1]) - (p3[1] - p1[1]) * (p2[0] - p1[0])) / d;
+      if (t < -1e-9 || t > 1 + 1e-9 || u < -1e-9 || u > 1 + 1e-9) continue;
+      return (acc + t * l) / L;
+    }
+    acc += l;
+  }
+  return null;
+};
+const polySub = (pts, t0, t1) => {
+  const lo = Math.min(t0, t1), hi = Math.max(t0, t1);
+  const L = polyLen(pts);
+  const out = [polyPointAt(pts, lo)];
+  let acc = 0;
+  for (let i = 1; i < pts.length; i++) {
+    acc += dist2(pts[i - 1], pts[i]);
+    const s = acc / L;
+    if (s > lo + 1e-12 && s < hi - 1e-12) out.push(pts[i]);
+  }
+  out.push(polyPointAt(pts, hi));
+  return out;
+};
+const polyAtY = (pts, y) => {
+  const L = polyLen(pts);
+  let acc = 0;
+  for (let i = 1; i < pts.length; i++) {
+    const p = pts[i - 1], q = pts[i], l = dist2(p, q);
+    if (p[1] !== q[1] && (p[1] - y) * (q[1] - y) <= 0) return (acc + (y - p[1]) / (q[1] - p[1]) * l) / L;
+    acc += l;
+  }
+  return null;
 };
 
 /* ============================== 运行 ============================== */
@@ -611,28 +697,33 @@ console.log("");
 /* --- [1] 环节一：开放数据基线 --- */
 console.log("[1] 环节一 开放数据基线 / Stage 1 open-data baseline");
 const roadFeatures = geo("roads").features;
-// 几何范围守卫：本复演器只支持两点线段；更长的折线在此拒绝运行，而不是静默取前两点
-// 截断（截断会让全部长度与比值读数失真却照常退出 0）。
-// Geometry guard: this replayer supports two-point segments only; longer polylines
-// refuse the run here instead of being silently truncated to their first two points
-// (truncation would distort every length and ratio while still exiting 0).
-const tooLong = roadFeatures.filter((f) => f.geometry.type !== "LineString" || f.geometry.coordinates.length !== 2);
-if (tooLong.length) {
+// 几何范围守卫：本复演器支持任意顶点数的 LineString；其他几何类型与不足两点
+// 的线在此拒绝运行，而不是静默降级（降级会让全部长度与比值读数失真却照常退出 0）。
+// Geometry guard: this replayer supports LineStrings of any vertex count; other
+// geometry types and lines with fewer than two points refuse the run here instead
+// of being silently degraded (which would distort every length and ratio while
+// still exiting 0).
+const badGeom = roadFeatures.filter((f) => f.geometry.type !== "LineString" || f.geometry.coordinates.length < 2);
+if (badGeom.length) {
   console.log("[!] 几何超出本复演器支持范围，不作任何判定 / geometry outside this replayer's support; no verdict is issued");
-  tooLong.forEach((f) => console.log(`    ${f.properties.id}: ${f.geometry.type} · ${f.geometry.coordinates.length} 点 / points（仅支持两点 LineString / two-point LineString only）`));
+  badGeom.forEach((f) => console.log(`    ${f.properties.id}: ${f.geometry.type} · ${f.geometry.coordinates.length} 点 / points（需为不少于两点的 LineString / LineString with at least two points required）`));
   process.exit(2);
 }
-const roads = roadFeatures.map((f) => ({
-  id: f.properties.id,
-  role: f.properties.design_role || "",
-  a: project(f.geometry.coordinates[0][0], f.geometry.coordinates[0][1]),
-  b: project(f.geometry.coordinates[1][0], f.geometry.coordinates[1][1])
-}));
+const roads = roadFeatures.map((f) => {
+  const pts = f.geometry.coordinates.map((c) => project(c[0], c[1]));
+  return {
+    id: f.properties.id,
+    role: f.properties.design_role || "",
+    pts,
+    a: pts[0],
+    b: pts[pts.length - 1]
+  };
+});
 roads.forEach((r) => {
   const low = r.role.toLowerCase();
   r.token = rule.declared_tokens.find((t) => low.includes(t)) || null;
   r.aiOff = r.token !== null;
-  r.len = dist2(r.a, r.b);
+  r.len = polyLen(r.pts);
 });
 const nodesById = {};
 geo("constraints").features.forEach((f) => {
@@ -648,7 +739,7 @@ const offNetLen = r3(roads.filter((r) => r.aiOff).reduce((s, r) => s + r.len, 0)
 if (offNetLen !== base.ai_off_declared_network_length_m) {
   fail("AI 关闭态声明网络长度 " + offNetLen + " ≠ 入档 " + base.ai_off_declared_network_length_m);
 } else ok("AI 关闭态声明网络长度 " + offNetLen + " m");
-const gOff = buildGraph(roads.filter((r) => r.aiOff).map((r) => ({ id: r.id, a: r.a, b: r.b })));
+const gOff = buildGraph(roads.filter((r) => r.aiOff).map((r) => ({ id: r.id, pts: r.pts })));
 const comps = componentCount(gOff);
 if (comps !== base.ai_off_network_component_count) {
   fail("AI 关闭态连通分量数 " + comps + " ≠ 入档 " + base.ai_off_network_component_count);
@@ -678,12 +769,13 @@ const R5 = roads.find((r) => r.id === "ROAD-005");
 const altA = (() => {
   /* upgrade stretch: from the ROAD-001 crossing to whichever of the two
      access feet lies FARTHER from it along ROAD-004 — direction-free, so the
-     stretch covers both access points on either side of the crossing */
-  const t0 = paramOfCross(R4, R1);
-  const t8 = paramOfFoot(R4, nodesById["OP-08"].xy);
-  const t9 = paramOfFoot(R4, nodesById["OP-09"].xy);
+     stretch covers both access points on either side of the crossing.
+     折线口径下升级段沿 ROAD-004 的实际走向截取，而不是两端点的直线。 */
+  const t0 = polyCross(R4.pts, R1.pts);
+  const t8 = polyProject(R4.pts, nodesById["OP-08"].xy);
+  const t9 = polyProject(R4.pts, nodesById["OP-09"].xy);
   const t1 = Math.abs(t8 - t0) >= Math.abs(t9 - t0) ? t8 : t9;
-  return { id: "ALT-A-UPGRADE", a: pointAt(R4, t0), b: pointAt(R4, t1) };
+  return { id: "ALT-A-UPGRADE", pts: polySub(R4.pts, t0, t1) };
 })();
 const altB = (() => {
   /* added ground link west from ROAD-001 at the latitude of OP-09 (the
@@ -693,11 +785,11 @@ const altB = (() => {
      corridor; with the cluster relocated west, the same intent — a second
      ground interface that avoids the station crossing — points west. */
   const y9 = nodesById["OP-09"].xy[1];
-  const tw = (y9 - R1.a[1]) / (R1.b[1] - R1.a[1]);
-  return { id: "ALT-B-LINK", a: pointAt(R1, tw), b: [nodesById["OP-09"].xy[0], y9] };
+  const tw = polyAtY(R1.pts, y9);
+  return { id: "ALT-B-LINK", pts: [polyPointAt(R1.pts, tw), [nodesById["OP-09"].xy[0], y9]] };
 })();
-altA.len = dist2(altA.a, altA.b);
-altB.len = dist2(altB.a, altB.b);
+altA.len = polyLen(altA.pts);
+altB.len = polyLen(altB.pts);
 for (const alt of arc.stage_3_alternatives.alternatives) {
   const got = alt.alt_id === "ALT-A" ? r3(altA.len) : r3(altB.len);
   if (got !== alt.works_length_m) fail(alt.alt_id + " 工程量 " + got + " m ≠ 入档 " + alt.works_length_m + " m");
@@ -711,11 +803,12 @@ console.log("");
 console.log("[4] 环节四 AI 关闭反事实 / Stage 4 AI-off counterfactual");
 const tasks = {};
 arc.stage_2_ai_analysis.tasks.forEach((t) => { tasks[t.task_id] = t; });
+const edgeOf = (r) => ({ id: r.id, pts: r.pts });
 const STATE_EDGES = {
-  BASE_ON: () => roads.map((r) => ({ id: r.id, a: r.a, b: r.b })),
-  BASE_OFF: () => roads.filter((r) => r.aiOff).map((r) => ({ id: r.id, a: r.a, b: r.b })),
-  ALT_A_OFF: () => roads.filter((r) => r.aiOff).map((r) => ({ id: r.id, a: r.a, b: r.b })).concat([altA]),
-  ALT_B_OFF: () => roads.filter((r) => r.aiOff).map((r) => ({ id: r.id, a: r.a, b: r.b })).concat([altB])
+  BASE_ON: () => roads.map(edgeOf),
+  BASE_OFF: () => roads.filter((r) => r.aiOff).map(edgeOf),
+  ALT_A_OFF: () => roads.filter((r) => r.aiOff).map(edgeOf).concat([edgeOf(altA)]),
+  ALT_B_OFF: () => roads.filter((r) => r.aiOff).map(edgeOf).concat([edgeOf(altB)])
 };
 const tol = arc.stage_4_ai_off_counterfactual.expected_results.tolerance_m;
 const near = (a, b) => a === null || b === null ? a === b : Math.abs(a - b) <= tol;
