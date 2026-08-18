@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "An outcome-based urban AI service framework that replaces platform deployment and technology display as the definition of success. Each of the three zones can discover a problem, name responsibility, run a controlled test, operate a real service, accept independent evaluation, and repair or exit."
+summary: "A city-service line that comes back to confirm: the system remembers, a named operator returns, and the public can reject a false “resolved” status. Three zones test genuine product adoption, two-level street closure, and exception arrival at a shared curb."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -15,7 +15,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 A city should not pay merely for deploying an AI system. It should pay when a real urban task is completed safely, independently evaluated, and shown to produce a durable result.
 
+**V2 constitution: processing is not the finish; returning to confirm is.** The system remembers, a named lead operator returns, and an affected person may reject a “resolved” result without rebuilding the entire complaint. Being alive means it remembers; warmth means it comes back.
+
 “Renzi Line” translates the engineering spirit of the Centennial Jing-Zhang Railway: adapt the route to real terrain and remain accountable for solving the problem. The character 人 also keeps people at the beginning and end of every AI-enabled service. The famous switchback near Qinglongqiao is outside the Haidian design area. This proposal uses it only as a cultural and methodological metaphor; it neither relocates the heritage asset nor forces the masterplan into the shape of 人.
+
+Nor does it use 人 as a map shape. A scheme may draw a switchback on a plan; this proposal writes it into every service: **discover - accept - act - return to confirm - continue if unresolved.**
 
 ## Design Basis and Source List
 
@@ -45,7 +49,7 @@ All geometry-derived values are low-confidence design-model outputs. Once offici
 
 ### One Results Line, three complete loops, and two supporting wings
 
-JINGZHANG WORKS is not a new railway or road alignment. It is a line of urban service results that people can read. Distributed receipts along walking routes, transit arrivals, communities, and innovation campuses answer five plain questions: What problem is being addressed? Who is responsible? How far has it progressed? Was it actually resolved? Who can I contact if I disagree?
+JINGZHANG WORKS is not a new railway or road alignment. It is a line of urban service results that people can read. Distributed receipts along walking routes, transit arrivals, communities, and innovation campuses answer five plain questions: What problem is being addressed? Who is responsible? How far has it progressed? Was it actually resolved? Who can I contact if I disagree? Receipts publish responsibility and results, never personal identities: the public sees type, responsible organization, state, review date, and recurrence; affected people see their full record; operators access only task-necessary detail under audit.
 
 Each key zone can move independently through real problem, named responsibility, controlled exploration, live operation, independent evaluation, and adoption, repair, or exit. The zones share interfaces, evidence formats, privacy boundaries, and result recognition, but no central platform is required for continued service. The Zhongguancun Technology Services Wing supports contracts, standards, independent evaluation, intellectual property, and migration. The Xiaoyue River Scenario Enablement Wing supports low-impact observation, public dialogue, and reversible prototypes.[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
@@ -74,6 +78,8 @@ The shared lesson is that high-quality problems, accountable operators, controll
 
 The overall structure uses four small, repeatable interfaces. A Problem Entry accepts explanation and correction. An Operating Interface displays the current rule, alternative route, and human takeover. An Evaluation Interface shows the baseline, metrics, and review date. An Urban Service Receipt returns responsibility and outcome to the place where the issue occurs. A central page indexes these facts but does not replace field evidence.
 
+The spatial interface lets people **understand it and find it before AI works in the background.** Each return node has three low-tech elements: a ground “return tick” that traces the service path; a low-glare receipt sign stating “this issue / responsible party / return date / contact if unresolved”; and paper plus staff through an existing property, community, or station service point. It is not a giant screen and does not require an app.
+
 The Results Line first reuses public ground floors, station forecourts, street corners, campus service desks, and walking interfaces. New elements remain reversible, low-glare, and maintainable. Without ownership, building assessment, regulatory planning, and fire-safety data, the proposal does not claim parcel demolition, new construction, FAR, or building-height controls.[standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:development_intensity_controls]
 
 Renewal follows “operate first, rebuild only with evidence.” Existing human workflows and problem baselines are frozen first. Temporary rules, reversible signs, and staffed service points test whether the issue is real. Only recurring issues crossing a pre-agreed threshold become spatial, rule, resource, or cross-agency renewal projects. Design evidence comes from recurrence and repeated frontline work—not from the volume of AI detections.
@@ -84,21 +90,23 @@ Submitted land use, building, green-space, and public-space layers are a recalcu
 
 ![Three zones with complete loops and distinct flagship scenarios](assets/figures/key-areas.en.png)
 
-### Zhongzhiyuan: true AI product adoption
+### Zhongzhiyuan: genuine adoption that can say “it did not work”
 
 The flagship is not a roadshow. It produces a reviewable decision about whether an AI product helps a real organization complete a real task. A Problem Desk defines the owner, capacity, baseline, and stop conditions. A Shadow Test Belt allows suggestions without changing field decisions. An independent room compares safety, task result, workload, and cost. A Results Showcase publishes adoption, non-adoption, repair, and shutdown.[data:geometry/key_areas.geojson#PROV-KEY-001]
 
-If a product or platform fails, the field service returns to human or fixed-rule operation. On termination, the service exports, retains, or deletes data according to the agreement. Proprietary interfaces cannot obstruct exit. A garden-like innovation district is expressed through calm, observable, and discussable ground-floor and walking interfaces, not unsupported construction quantities.
+If a product or platform fails, the field service returns to human or fixed-rule operation. On termination, the service exports, retains, or deletes data according to the agreement. Proprietary interfaces cannot obstruct exit. A garden-like innovation district is expressed through calm, observable, and discussable ground-floor and walking interfaces, not unsupported construction quantities. The “Renzi Test Bench” is not a product display: it is a public receipt for a real buyer showing whether the task was solved, who reviewed it, and when it will exit or return for review. Visible non-adoption is what makes adoption credible.
 
-### Beijing AI Origin Community: two-level street-issue closure
+### Beijing AI Origin Community: street closure that does not forget
 
 Potential illegal parking, loading conflict, bicycle accumulation, noise, or school-gate congestion enters a candidate pool; an AI detection does not become a work order automatically. A named team must confirm people, authority, and an executable path before a formal task exists. Most capacity is pulled by capable teams, while a protected public-interest allocation and a separate safety-emergency channel prevent difficult issues from being ignored.[data:geometry/key_areas.geojson#PROV-KEY-002]
 
-A lawful intervention creates Response Closure. Only an observation period without sustained recurrence creates Result Closure. Recurrence does not reopen the same frontline order indefinitely; it escalates into a spatial, rule, resource, or cross-agency structural task. This recognizes frontline work without misrepresenting repeated interventions as new urban outcomes.
+A lawful intervention creates Response Closure. Only an observation period without sustained recurrence creates Result Closure. Recurrence does not reopen the same frontline order indefinitely; it escalates into a spatial, rule, resource, or cross-agency structural task. This recognizes frontline work without misrepresenting repeated interventions as new urban outcomes. The “Problem Has Landed Point” is low-key within an existing service point: a resident can see the review date and answer simply, “not yet,” returning the original issue to the responsible party without submitting it again.
 
-### Dazhongsi: shared curb
+### Dazhongsi: exception arrival at a shared curb that does not leave people helpless
 
 A shared curb is not an AI parking bay. It coordinates passenger pickup, taxi and ride-hailing, loading, short stays, and accessible arrival through transparent time and use rules. Normal operation uses fixed schedules, legible signage, and human dispatch. AI supplies forecasts and diversion suggestions only when rail delays, events, weather, or demand depart materially from the rule base.[data:geometry/key_areas.geojson#PROV-KEY-003]
+
+The hero scene is the last segment after a rail delay: fixed rules still operate; AI only estimates the exception and available fallback places; a named dispatcher confirms the switch; visible curb state, staff, and paper guidance support non-app and accessible users; when the exception ends, the service returns to baseline and the next-day receipt confirms whether recovery truly happened. This is the most visible node because a person should immediately feel that a sudden change will not leave them behind.
 
 Five states are defined: normal, minor variance, exception service, safety/accessibility priority, and degrade/stop. A user without an app must still understand the current purpose, time limit, fallback place, and human contact. Phase one is confined to an internal curb with clear authority. Only after independent evaluation may a limited public-node trial be submitted for formal road and traffic authorization.[source:BEIJING-PARKING-REGULATION]
 
@@ -154,7 +162,7 @@ Infrastructure is layered by service need. Field rules, signs, and human entry r
 
 The Results Line conceptually follows the Jing-Zhang Railway Heritage Park and adjacent public interfaces. Until park implementation, heritage, green-space, and blue-line boundaries are verified, it defines node types and a walking-reading experience rather than occupying specific land. Provisional boundaries remain faint and dashed; tasks, responsibilities, node networks, and implementation logic carry visual priority.[standard:MOHURD-URBAN-DESIGN-MEASURES]
 
-Three AI pilgrimage landmarks are public promises rather than monuments to technology. The Renzi Test Bench at Zhongzhiyuan explains why a product was adopted or rejected. The Problem Has Landed Point at AI Origin publishes responsibility, response, observation, and escalation. The Arrival Has a Route Point at Dazhongsi uses the independent and safe arrival of a mobility-constrained person as the test of value.
+Three AI pilgrimage landmarks are public promises rather than monuments to technology. The Renzi Test Bench at Zhongzhiyuan explains why a product was adopted or rejected. The Problem Has Landed Point at AI Origin publishes responsibility, response, observation, and escalation. The Arrival Has a Route Point at Dazhongsi uses the independent and safe arrival of a mobility-constrained person as the test of value. Their visibility is deliberately different: Dazhongsi is most explicit, Zhongzhiyuan is professionally visible, and AI Origin is quiet within daily life.
 
 Visual identity draws on railway calibration marks, the double stroke of a switchback, and the relationship of 人. It uses legible, low-glare, maintainable information design:
 
@@ -174,7 +182,7 @@ Field language stays plain: “How far has this task progressed?” “This task
 | P-05 Three public landmarks | reuse existing space and reversible display | site, heritage, green, fire, and operating review | do not construct a fixed object |
 | P-06 Annual validation week | show qualified successes and failures | everyday service remains undisturbed and evidence is reproducible | reduce or cancel the event |
 
-The public buyer conceptually funds the base service and result payment. The scenario owner contributes place, people, process, baseline data, and acceptance collaboration. Commercial users pay only for premium reservation or incremental services. Because the cost of disorder cannot be reliably priced, the scenario owner is not assumed to have automatic cash purchasing intent; its first obligation is to provide real operating conditions.
+The public buyer conceptually funds the base service and result payment. The scenario owner contributes place, people, process, baseline data, and acceptance collaboration. Commercial users pay only for premium reservation or incremental services. Because the cost of disorder cannot be reliably priced, the scenario owner is not assumed to have automatic cash purchasing intent; its first obligation is to provide real operating conditions. Before activation, every scenario names one lead operator; collaboration cannot dissolve responsibility for returning to confirm.
 
 Phasing follows evidence gates: baseline and fixed rules, shadow mode, human-approved limited operation, independent acceptance, result observation, and conditional scale. “Approximately 100 days” is a conceptual first validation cycle, not an official construction schedule. The annual public event is “What did Jing-Zhang actually accomplish this year?” and reports success, recurrence, non-adoption, and shutdown.[data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]
 

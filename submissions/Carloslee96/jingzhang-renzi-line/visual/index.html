@@ -21,6 +21,7 @@
     .reveal{opacity:0;transform:translateY(38px);transition:opacity .9s var(--curve),transform .9s var(--curve)}.reveal.on{opacity:1;transform:none}
     @media(max-width:900px){.nav{display:none}main{padding:0 18px 72px}.hero{grid-template-columns:1fr;gap:32px;padding:70px 0}.hero-rail{min-height:520px}.section-head,.zones,.evidence{grid-template-columns:1fr;gap:12px}.metrics,.gates{grid-template-columns:1fr}.scenario-grid{grid-template-columns:1fr}.scenario.primary{grid-column:auto}.caption{display:block}.project-table{font-size:13px}.project-table th:nth-child(3),.project-table td:nth-child(3){display:none}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.zone,.nav a{transition:none}}
+    .hero-rail{overflow:hidden;border-radius:42px;background:linear-gradient(90deg,#10221ccc 0%,#10221c55 55%,#10221c10 100%),url('../assets/media/cover.webp') center/cover}.hero-rail:before{box-shadow:0 0 0 7px #f8d8ca22}.stop{background:#f4f0e8cc;backdrop-filter:blur(12px)}.stop>div{background:#fbf9f4ed}.concept-tag{position:absolute;right:18px;bottom:16px;margin:0;color:#fff;background:#15231fbb;padding:7px 10px;border-radius:8px;font-size:11px;letter-spacing:.08em}
   </style>
 </head>
 <body>
@@ -28,8 +29,10 @@
   <main>
     <header class="hero" id="overview">
       <div class="reveal"><span class="eyebrow">CENTENNIAL JING-ZHANG · CONCEPTUAL SUBMISSION</span><h1>京张<br>人字线</h1><p class="lead">城市不为“上线一套 AI 系统”买单，而为真实任务被安全完成、经过独立验收并形成持续结果买单。</p><div class="slogan">路有折返，事有着落。</div></div>
-      <div class="hero-rail reveal" aria-label="三区自北向南的主场景"><div class="stop s1"><div><b>众智园</b><small>AI 产品真实采用 · 影子模式 · 独立评测</small></div></div><div class="stop s2"><div><b>北京 AI 原点社区</b><small>候选池 · 容量认领 · 响应/结果两级闭环</small></div></div><div class="stop s3"><div><b>大钟寺</b><small>共享路缘 · 规则常态 · 异常 AI 辅助</small></div></div></div>
+      <div class="hero-rail reveal" aria-label="三区自北向南的主场景；背景为概念体验图"><div class="stop s1"><div><b>众智园</b><small>敢说没用 · AI 产品真实采用</small></div></div><div class="stop s2"><div><b>北京 AI 原点社区</b><small>不会忘事 · 两级闭环与回访</small></div></div><div class="stop s3"><div><b>大钟寺</b><small>不让人无助 · 异常到达共享路缘</small></div></div><p class="concept-tag">CONCEPTUAL EXPERIENCE IMAGE · NOT EXISTING SITE</p></div>
     </header>
+
+    <section><div class="section-head reveal"><div><span class="eyebrow">V2 / DESIGN CONSTITUTION</span><h2>不以处理结束，<br>以回来确认为结束</h2></div><p>系统负责记住，主责方负责回来，公众有权否决“已解决”。公开责任与结果，不公开当事人；先让人看得懂、找得到，再让 AI 在背后工作。</p></div><div class="gates"><article class="shell gate reveal"><div class="core"><div class="gate-index">01 / REMEMBER</div><h3>系统会记得</h3><p>每件事保留同一条可追溯记录，不把复发问题变成新的数字。</p><div class="gate-result">问题类型 · 复核日 · 是否复发</div></div></article><article class="shell gate reveal"><div class="core"><div class="gate-index">02 / RETURN</div><h3>主责会回来</h3><p>启用前写明唯一主责运营方。协作不能冲淡谁要回应和复核。</p><div class="gate-result">具名组织 · 回访窗口 · 人工入口</div></div></article><article class="shell gate reveal"><div class="core"><div class="gate-index">03 / CONFIRM</div><h3>公众能否决</h3><p>受影响者只需回答“还没好”，不必重新投诉或反复提交证据。</p><div class="gate-result">不公开个人 · 可纸本 · 可人工</div></div></article></div></section>
 
     <section><div class="section-head reveal"><div><span class="eyebrow">01 / SPATIAL LOGIC</span><h2>一线、三环、两翼</h2></div><p>“线”是沿现场分布的城市服务回执，不是新道路；“三环”是三区独立闭环；“两翼”提供合同、标准、评测、迁移、观察和可逆原型能力。</p></div><div class="shell figure reveal"><div class="core"><img src="../assets/figures/site-overview.png" alt="一条结果线连接三个重点区，右侧展示六步完整服务闭环与两翼支持"><div class="caption"><span>来源：提交包 GeoJSON 与方案程序</span><span class="warn">临时空间模型，不是官方红线</span></div></div></div></section>
 
