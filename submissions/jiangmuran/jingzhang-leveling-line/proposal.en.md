@@ -1526,11 +1526,11 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-333 entries. By finder:
+334 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 39 | Run against the shipped package, not a draft |
+| Independent audit | 40 | Run against the shipped package, not a draft |
 | The author | 212 | Found while working |
 | This package's own gate | 24 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
@@ -1546,7 +1546,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | An easy measure | 60 |
 | Two copies drifted | 51 |
 | Shipped unseen | 30 |
-| Uncheckable | 26 |
+| Uncheckable | 27 |
 | Outlived the package | 24 |
 | Nothing fails it | 17 |
 | Outlived its line | 14 |
