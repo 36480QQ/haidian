@@ -2738,7 +2738,7 @@
 "shape": 9,
 "what_zh": "`upstream_validator_qa` 跑的是 **CI 用来决定提交能否被接收**的那个校验器：现取脚本、组装、实跑，在输出里找 `Result:` 那一行，找不到就取默认 `Result: unknown`。而判定写的是 `if \"PASS\" not in verdict and not deferred:` ——`deferred` 本是用来豁免「工作区未提交、摘要对不上」这类噪声的，**它顺带把整个判定也豁免了**。于是：校验器在 import 处崩掉、一行判定都没打印 → `unknown` → `deferred` 非零 → **闸门退出 0**。",
 "why_zh": "本轮真的发生了：组织方给 `validate_submission.py` 加了 `svg_asset_safety`，而本闸门有**它自己那一份**手写模块清单（本次构建里第三份抄别人依赖图的清单）。校验器组装不起来，闸门说「Result: unknown」并**通过**，`finalise_claim` 据此把 `validation_claim.self_checked` 写成 false，整包状态从 `ready_for_review` 掉下来——**而没有任何一处报错**。**一道在自己跑不起来时会说「不知道」然后放行的检查，就是一道不会失败的检查。**",
-"fix_zh": "模块清单改为**跟着他们自己的 import 走**（与 E346 同一个函数，参数化取用哪个缓存）；**判定不再被 `deferred` 豁免**——verdict 里出现 `unknown` 直接失败，并打出校验器 stderr 的最后几行。**一个跑不完的校验器不是一个被推迟的摘要：没有答案，就不能算通过。**同时实测组织方新增的那条检查：`visual_svg_asset_issues` 对本包返回 **0 条**，并把读过、实测无影响照登进 `upstream_drift_qa` 的记录。该次修复后为 **校验器补齐依赖后 Result: PASS，`self_checked` 恢复为 true**。"
+"fix_zh": "模块清单改为**跟着他们自己的 import 走**（与 E346 同一个函数，参数化取用哪个缓存）；**判定不再被 `deferred` 豁免**——verdict 里出现 `unknown` 直接失败，并打出校验器 stderr 的最后几行。**一个跑不完的校验器不是一个被推迟的摘要：没有答案，就不能算通过。**同时实测组织方新增的那条检查：`visual_svg_asset_issues` 对本包返回 **0 条**。**该次修复后为：这个 0 大半是空的**——本包不随包任何 `.svg` 文件，而该函数只在 `visual/assets/` 下逐个 SVG 检查大小、UTF-8 与文本内容，没有 SVG 就没有可查的；真正非空的只有它顺带查的那一条：`visual/assets/` 下不得出现符号链接（本包确实没有）。把它写成「实测通过一条新增检查」是**高估**，照 E131 的做法就地更正。并把读过、实测无影响照登进 `upstream_drift_qa` 的记录。该次修复后为 **校验器补齐依赖后 Result: PASS，`self_checked` 恢复为 true**。"
 }
 ],
 "shapes": [
