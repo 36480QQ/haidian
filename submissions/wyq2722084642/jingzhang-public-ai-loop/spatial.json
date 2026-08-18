@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "disclaimer": "concept-only",
+  "items": [
+    {
+      "id": "dazhongsi-ordinary-route",
+      "type": "corridor",
+      "title": "大钟寺普通公共路线 / Ordinary civic route",
+      "summary": "站点到公共首层的连续、无账户、非 AI 路径；任何试点状态下均不得被展陈或排队占用。",
+      "source": "原创概念，待官方站点接口、道路和无障碍资料核验",
+      "public_level": "cleared",
+      "linked_scenarios": ["ai-traffic-walkability"],
+      "geometry": {"mode": "concept", "label": "1:2000 连续通行关系，不是道路红线或工程线位"}
+    },
+    {
+      "id": "dazhongsi-rights-desk",
+      "type": "node",
+      "title": "人工权利核对台 / Staffed rights desk",
+      "summary": "用纸质和人工方式说明来源、用途、保留期限、申诉与撤回，不要求扫码或账户。",
+      "source": "原创公共服务组件",
+      "public_level": "cleared",
+      "linked_scenarios": ["enterprise-service-copilot"],
+      "geometry": {"mode": "concept", "label": "1:500 可移动服务点，现场位置待权属和消防核验"}
+    },
+    {
+      "id": "dazhongsi-pilot-bay",
+      "type": "area",
+      "title": "可逆试点舱 / Reversible pilot bay",
+      "summary": "与普通路线物理分离的合成数据演示区，可断电、可撤展、可恢复为空场地。",
+      "source": "原创概念，待结构、消防、供电和运营许可",
+      "public_level": "cleared",
+      "linked_scenarios": ["enterprise-service-copilot", "public-safety-operations-review"],
+      "geometry": {"mode": "concept", "label": "1:500 组件关系，不构成固定设施选址"}
+    },
+    {
+      "id": "dazhongsi-appeal-strip",
+      "type": "corridor",
+      "title": "证据与申诉带 / Evidence and appeal strip",
+      "summary": "公开展示状态、数据清单、失败记录和联系人，使访客可在不进入试点的情况下提出异议。",
+      "source": "原创治理与空间接口",
+      "public_level": "cleared",
+      "linked_scenarios": ["enterprise-service-copilot"],
+      "geometry": {"mode": "concept", "label": "1:500 首层界面序列，实际尺寸待专业团队深化"}
+    },
+    {
+      "id": "dazhongsi-stop-point",
+      "type": "node",
+      "title": "人工停止与恢复点 / Human stop and recovery point",
+      "summary": "由现场安全负责人控制的可见停止点，触发后切断试点并将访客导回普通路径。",
+      "source": "原创安全组件，待消防和设备专业核验",
+      "public_level": "cleared",
+      "linked_scenarios": ["public-safety-operations-review"],
+      "geometry": {"mode": "concept", "label": "1:200 典型断面接口，不是消防设施设计"}
+    },
+    {
+      "id": "dazhongsi-service-route",
+      "type": "corridor",
+      "title": "维护与撤展路线 / Service and removal route",
+      "summary": "设备维护、应急接管与整套撤展使用的独立后勤路径，避免穿越普通公共流线。",
+      "source": "原创概念，待现场通道、消防和产权核验",
+      "public_level": "cleared",
+      "linked_scenarios": ["public-safety-operations-review"],
+      "geometry": {"mode": "concept", "label": "1:500 后勤关系，不代表车辆或消防通道线位"}
+    }
+  ]
+}
