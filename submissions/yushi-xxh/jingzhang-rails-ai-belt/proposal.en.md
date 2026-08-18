@@ -380,6 +380,8 @@ The component library is only a prototype list; it does not designate specific c
 
 ## Renewal Project List, Implementation Policy and Phasing Plan
 
+The reversal corridor has one implementation rule: before going forward, first leave a road back. Every renewal project registers the site, actors, permits and sustained resources it depends on — missing one, no pilot; an unwritten exit-asset arrangement, no normalisation.
+
 The implementation plan provides a reviewable renewal project list that explains project location, type, function, responsible body, dependency conditions, implementation phase, risk and evaluation indicators; the full field structure appears in the Project Governance and Implementation Matrix below. Policy suggestions cover urban-renewal coordination, space supply, operation mechanism, industry service, public participation, data governance and property-rights coordination. `geometry/phasing.geojson` expresses the phasing scope; `compliance_matrix.json` hooks every task to phasing and drawing.
 
 The project list and phasing depth is governed by `[depth:renewal_project_list]` and `[depth:phasing_implementation]`. Phasing spatial evidence is `[data:geometry/phasing.geojson#PHASE-001]`. When ownership, funding, implementing body or approval path are missing, the proposal treats them as implementation risks with trigger thresholds and exit conditions rather than implementation commitments; constraint A-PROJ-001.
@@ -459,6 +461,8 @@ Instead of a new mapping table, each of the four items lands in a file that can 
 
 ## Cultural Narrative, Wayfinding System and International Communication
 
+The reversal corridor's cultural narrative is one line: a railway that knew how to turn back leaves the city now welcoming AI a single lesson — before going forward, first leave a road back. The historical, present and future layers are stacked on one wayfinding column, rather than treating AI as decoration or replacement of history.
+
 To respond to agent.5's cultural narrative and wayfinding system requirements, this proposal translates the three layers of "百年京张文化—中关村创新文化—AI新文化" into an identifiable spatial narrative, wayfinding system and international communication leads. The narrative principle is the three-layer parallel — "history — present — future" — rather than treating AI as decoration or replacement of history.
 
 ### Three-layer cultural parallel narrative
@@ -479,6 +483,8 @@ The three layers are visually expressed through "vertical stacking": on each way
 - **Must avoid**: presenting a concept proposal as approved construction, confirmed government commitment, or confirmed financial arrangement; never use unauthorised portraits, trademarks or enterprise identifiers.
 
 ## Long-Term Operation, Annual Events and Developer Community
+
+The reversal corridor's long-term operation is not to keep every smart service running forever, but to publish one ledger a year: which pilots stayed, which exited, and why. A pilot stopped in time is not a failure; it is the corridor proving it can reverse.
 
 To respond to agent.6's global AI innovation event system and long-term operation requirements, this proposal proposes a four-layer mechanism: "annual events — developer community — scenario opening — conversion pathway". All operational content is written under the "concept suggestion / concept mechanism" framing; it does not replace government investment promotion, policy, funding or operation commitments.
 
