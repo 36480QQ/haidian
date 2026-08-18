@@ -882,6 +882,92 @@
       "precision_note": "小数位来自面积／比值算法本身，不代表边界精度；输入为临时粗略范围。",
       "overlap_treatment": "逐要素求和（子集内须无重叠才等于并集）实测：geometry/land_use.geojson：11 个面要素，union=11412825.386 ㎡，逐要素求和=11412825.386 ㎡，实测重叠=0.000 ㎡。",
       "verification": "已用 shapely + pyproj 按 formula 复算（EPSG:4326 → EPSG:4548）；本包 20 项面积与比值指标不一致 0 条，面积容差 0.001 ㎡、比值容差 1e-6。"
+    },
+    "simulation_task_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(simulation.tasks)",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "simulation.json 的 task_count 与 tasks.length 均为 12；每条任务对应 SCN-01 至 SCN-12 之一。"
+    },
+    "simulation_success_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks where outcome ends_with '_success') / count(tasks)",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "12 条任务的 outcome 均为 offline_tabletop_success；该值仅代表离线合成桌面演练。"
+    },
+    "tool_schema_pass_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks where dispatch_schema_valid=true) / count(tasks)",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "12 条任务均保留场景、交出角色、接入角色、人工服务与审计字段。"
+    },
+    "audit_completeness": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks where audit_complete=true) / count(tasks)",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "每条任务均记录四项断言、角色类型、人工兜底、结果与现场未执行状态。"
+    },
+    "offline_takeover_assertion_count": {
+      "status": "known",
+      "value": 48,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks) * 4",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "十二个场景分别执行智能层关闭、人工接管、合成记录清零与回滚四项断言。"
+    },
+    "offline_takeover_assertion_pass_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "summary.offline_assertions_passed / summary.offline_assertions_run",
+      "confidence": "high",
+      "assumptions": [],
+      "verification": "simulation.json 记录 48/48 项离线断言通过；不外推为现场绩效。"
+    },
+    "field_rehearsal_task_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "summary.field_rehearsal_tasks_completed",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "verification": "没有场地授权、角色指派或真实使用者参与，本轮未进行任何现场演练。"
     }
   }
 }

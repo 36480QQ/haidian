@@ -21,9 +21,11 @@
 
 `COMMUNITY-DISPLAY-ONLY` 是 `schema/proposal.schema.json` 的 `license` 枚举值之一，仓库未发布其规范条款文本。本包对它的自述含义为：允许为本次开源征集的评审、公开展示、教学与知识沉淀而复制与引用，须保留出处；不授予商业使用，不授予将本包内容表述为法定规划或政府决定的权利；第三方进一步使用时仍须自行核验其中每条外部来源的原始权利状态。
 
-构建溯源：自 v1.9 起全部载体使用同一版本印记，v1.14 已整体重刷为 `JING-ZHANG HANDOVER LINE / PACKAGE v1.14`（图纸另附页码）。此前正文、图纸 v1.6 与图件 v1.0 三套页脚并存的状态已不存在。成果时效以 manifest 的 sha256 与 changelog 为准，不以页脚数字为准。
+构建溯源：自 v1.9 起全部载体使用同一版本印记，当前全部图件与图纸使用 `JING-ZHANG HANDOVER LINE / PACKAGE v1.15`（图纸另附页码）。此前正文、图纸与图件多套页脚并存的状态已不存在。成果时效以 manifest 的 sha256 与 changelog 为准，不以页脚数字为准。
 
 v1.6 新增的 `visual/assets/governance/shift-ledger.schema.json` 为本方案原创的 JSON Schema Draft 2020-12 机器契约；`example-scn05-shift-ledger.json` 是合成、未执行且角色未授权的沙盒结构样例，不含个人数据，也不连接真实导航、政务、维护或告警服务。`validation-report.json` 仅记录 Schema 元模式与样例结构校验，不能据此声称路线、性能、安全、无障碍质量、法律合规、公众接受度或现场运行已经验证。
+
+本轮新增的 `simulation.json` 与上述未执行样例分开记录：它是提交者可控制环境中的合成离线桌面推演，共 12 项任务、48 项断言，未连接真实服务、真实场地或个人数据。结果只证明关闭、人工接管、临时合成记录清除和回到人工服务的状态路径可执行、可审计；现场任务仍为 0/12，不证明安全、无障碍实测、公众接受、法律合规或主管部门批准。新版 F/05 及四份 PDF 第一页均由本地脚本以同一数据确定性绘制，不含生成式图像。
 
 v1.6 引用的三部法律法规与政策文件（《生成式人工智能服务管理暂行办法》《中华人民共和国无障碍环境建设法》、国办发〔2020〕45号）均为国家机关依法公开发布的文本。本包只引用条款要义并标注条号与施行日期，不复制全文、不再分发附件，也不构成法律意见；条款适用与个案认定由主管部门和具备资质的法律专业人员负责。海淀区2025年国民经济和社会发展统计公报为区级政府网站公开发布的 HTML 页面，未见明确开放数据许可，因此本包只摘录事实数值并保留发布者、标题与原始链接，不复制页面全文；每项数值的原文表述、采集方法、单位换算与可用/不可用边界逐条记录在 `sources.json`。
 
@@ -40,6 +42,8 @@ v1.6 引用的三部法律法规与政策文件（《生成式人工智能服务
 All text, naming, identity direction, diagrams, map language, layouts, design GeoJSON, offline HTML and PDFs are original to this submission or programmatically derived from public/cleared repository inputs registered in `sources.json`. Sonike submits the work; Codex (GPT-5) carried out the current audit, structured-data authoring, deterministic graphics and validation, while user-operated Claude Opus 5 contributed to earlier editing rounds. All bilingual figures use no remote map, photography, portrait, company mark, third-party illustration, remote font, CDN, tile service or generative-image asset. Human and professional review retains final judgment.
 
 The v1.6 `visual/assets/governance/shift-ledger.schema.json` is an original Draft 2020-12 JSON Schema data contract. `example-scn05-shift-ledger.json` is a synthetic, unexecuted and unauthorised-role sandbox fixture containing no personal data and touching no live navigation, government, maintenance or alert service. `validation-report.json` records schema and instance conformance only; it is not evidence of route quality, performance, safety, accessibility, legal compliance, public acceptance or field operation.
+
+The new `simulation.json` is separate from that unexecuted fixture. It records a participant-controlled synthetic offline tabletop of 12 tasks and 48 assertions, touching no live service, real site or personal data. It proves only that shutdown, human takeover, temporary synthetic-record disposal and return-to-human-service states can be executed and audited. Field work remains 0/12; safety, measured accessibility, public acceptance, legal compliance and authority approval remain unverified. The revised F/05 and all four PDF first pages were deterministically drawn from local project data and contain no generative-image asset.
 
 The three statutory and policy instruments cited in v1.6 (the Interim Measures for the Management of Generative AI Services, the Law on the Construction of a Barrier-Free Environment, and State Council General Office Document No. 45 of 2020) are texts published by state organs under law. This package cites the substance of specific articles with article numbers and commencement dates; it reproduces no full text, redistributes no attachment, and offers no legal opinion — application of any provision rests with the competent authorities and qualified legal professionals. The Haidian District 2025 Statistical Communiqué is a public HTML page on a district government site with no explicit open-data licence found, so this package extracts factual values only while preserving publisher, title and original link, and reproduces no page text; the original wording, collection method, unit conversion and usable / not-usable boundary of every value are recorded item by item in `sources.json`.
 

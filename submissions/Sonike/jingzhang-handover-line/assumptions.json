@@ -126,20 +126,35 @@
     },
     {
       "id": "A-OPERATIONS-001",
-      "status": "pending_professional_confirmation",
-      "statement": "十二个AI场景是治理与空间原型，未获采购、经营或正式部署批准。",
-      "impact": "每个场景必须小规模测试、人工复核、保留无AI等价服务，并设置退出阈值。",
-      "recalculation_trigger": "完成算法、隐私、安全、无障碍与公共利益影响评估。",
+      "status": "offline_tabletop_complete_field_authorisation_pending",
+      "statement": "十二个AI场景已完成不连接真实服务的离线接管桌面演练；尚未获得场地、采购、经营或正式部署授权，也未进行现场或公众测试。",
+      "impact": "数字状态机、角色接口和回滚顺序已有 12/12 场景、48/48 断言的可复算记录；它只证明协议可被逐条执行，不证明现场安全、无障碍、服务绩效或获批状态。",
+      "recalculation_trigger": "场地授权、交出与接入角色分别指派，并完成隐私、安全、无障碍和公共利益复核后，先在公开交接桌做 1 个现场演练，再决定是否扩展。",
       "affected_files": [
         "geometry/public_space.geojson",
+        "simulation.json",
+        "metrics.json",
+        "assets/figures/metrics-evidence.png",
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf",
         "visual/assets/governance/shift-ledger-suite.json",
         "visual/assets/governance/role-spec.json",
         "visual/assets/governance/measurement-protocol.json",
         "proposal.md"
       ],
       "responsible_role": "R-SERVICE-OPS",
-      "resolution_evidence": "场地权利与责任主体授权、许可、持续预算、维护与数据删除责任的书面确认。",
-      "recalculation_scope": "十二条双联交接账的 receiver_disposition 与 smart_layer_state 逐条复核；八个角色由 unassigned 转为已指派；KPI/SLO 基线与目标值方可讨论。",
+      "participant_controlled_evidence": "simulation.json：十二个场景的智能层关闭、人工接管、合成记录清零与回滚四项断言；12/12 任务成功，48/48 断言通过，现场演练 0/12。",
+      "first_pilot_cost_class": "S / 小型可移动公共界面；不含土建与市政工程。估算公式为构件数量×经复核询价＋人员工时×合规费率＋10%概念预备项，正式金额待授权后至少三方询价。",
+      "responsible_organisation_types": [
+        "场地资产管理或区属平台类型",
+        "场景服务运营类型",
+        "独立专业复核类型",
+        "社区与无障碍公共利益代表类型",
+        "数据与档案责任类型",
+        "设施维护与现场安全类型"
+      ],
+      "resolution_evidence": "场地权利、角色指派、专业复核、至少三方询价、持续预算、维护与数据删除责任的书面确认，以及一次现场断电/停用/人工接管演练记录。",
+      "recalculation_scope": "先把首个现场场景的 receiver_disposition 与 smart_layer_state 由合成状态替换为经授权记录；现场演练由 0/12 变为 1/12 后复核，再决定是否扩展。",
       "risk_statement_zh": "场景试点长期化、无法退出。"
     },
     {
