@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M132",
+      "gate": "edition_render_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版里 FIG.01 的图片路径改回中文渲染。**文件确实存在、也确实随包**，只是语言不对——英文读者在论证 412.5 m 的那一节看到一张中文标注的图。而 FIG.01 正是评审直接收到的五张之一。",
+      "what_en": "Point FIG.01 in the English edition back at the Chinese render. **The file exists and does ship** - it is simply the wrong language for the page: an English reader meets a Chinese-labelled sheet in the section that argues the 412.5 m reading, and FIG.01 is one of the five images the reviewer is sent.",
+      "why_zh": "图片路径是一个普通的 markdown 链接，**不带任何引用标签**；`figure_citation_qa` 守的是「引到的图确实随包」——`site-overview.png` 确实随包，所以它一路通过。**「文件在不在」和「这一页该用哪一版」是两个问题**，而此前只有前一个被问过。",
+      "why_en": "A figure path is a plain markdown link carrying no citation tag, and figure_citation_qa holds that every figure cited is one that ships - site-overview.png does ship, so it passed. **Whether the file exists and which edition's render this page should carry are two different questions**, and only the first had ever been asked."
+    },
+    {
       "id": "M131",
       "gate": "scoring_vocabulary_qa.py",
       "target": "proposal.md",
@@ -1579,7 +1591,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 129,
+  "caught": 130,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1599,6 +1611,7 @@
     "computed_value_qa.py",
     "declared_geometry_qa.py",
     "depth_dimension_evidence_qa.py",
+    "edition_render_qa.py",
     "entrance_rule_qa.py",
     "evidence_ceiling.py",
     "evidence_ref_qa.py",
@@ -1713,6 +1726,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 92 道闸门，其中 89 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 92 gates, 89 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 93 道闸门，其中 90 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 93 gates, 90 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
