@@ -86,6 +86,21 @@ class VisualReviewTests(unittest.TestCase):
             self.assertFalse(report.ok)
             self.assertIn("VISUAL_REMOTE_OR_ACTIVE_CONTENT", {issue.check_id for issue in report.issues})
 
+    def test_undeclared_active_svg_asset_fails(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            submission = write_valid_visual_package(Path(tmp))
+            asset = submission / "visual" / "assets" / "nested" / "active.svg"
+            asset.parent.mkdir(parents=True)
+            asset.write_text(
+                '<svg xmlns="http://www.w3.org/2000/svg"><script>run()</script></svg>',
+                encoding="utf-8",
+            )
+            report = review_visual(submission)
+            self.assertFalse(report.ok)
+            issue = next(item for item in report.issues if item.path.endswith("active.svg"))
+            self.assertEqual(issue.check_id, "VISUAL_REMOTE_OR_ACTIVE_CONTENT")
+            self.assertIn("<script>", issue.message)
+
     def test_metric_mismatch_fails(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             submission = write_valid_visual_package(Path(tmp))
