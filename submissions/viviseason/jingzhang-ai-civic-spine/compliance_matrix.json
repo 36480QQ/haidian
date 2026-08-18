@@ -1016,7 +1016,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "交通、轨道、市政与公共服务设施"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1031,7 +1033,17 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "land_use_mix_entropy",
+        "pedestrian_intersection_density_per_sqkm",
+        "median_walkable_block_length_m",
+        "active_frontage_ratio",
+        "public_life_observation_count",
+        "accessible_route_continuity_ratio",
+        "station_800m_walk_coverage_ratio",
+        "walk_route_directness_ratio",
+        "frequent_transit_access_ratio",
+        "shade_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1039,8 +1051,11 @@
       ],
       "visual_sections": [
         "总览地图",
+        "三重人本检验",
+        "AI 场景",
         "任务覆盖",
-        "核心指标"
+        "核心指标",
+        "人本指标与待补证据"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1049,10 +1064,22 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "JACOBS-1961-DEATH-LIFE",
+        "NEWMAN-KENWORTHY-1999-SUSTAINABILITY-CITIES",
+        "GEHL-2010-CITIES-FOR-PEOPLE",
+        "OSM-OVERPASS-ODBL",
+        "BEIJING-OPEN-DATA-TRANSIT"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-MOBILITY-BASELINE-001",
+        "A-PUBLIC-LIFE-001",
+        "A-URBAN-DIVERSITY-001",
+        "A-REMOTE-RESEARCH-001"
+      ],
+      "evidence_files": [
+        "visual/assets/people-first-research.json"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1069,7 +1096,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1084,7 +1113,17 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "land_use_mix_entropy",
+        "pedestrian_intersection_density_per_sqkm",
+        "median_walkable_block_length_m",
+        "active_frontage_ratio",
+        "public_life_observation_count",
+        "accessible_route_continuity_ratio",
+        "station_800m_walk_coverage_ratio",
+        "walk_route_directness_ratio",
+        "frequent_transit_access_ratio",
+        "shade_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1092,8 +1131,11 @@
       ],
       "visual_sections": [
         "总览地图",
+        "三重人本检验",
+        "AI 场景",
         "任务覆盖",
-        "核心指标"
+        "核心指标",
+        "人本指标与待补证据"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1102,10 +1144,22 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "JACOBS-1961-DEATH-LIFE",
+        "NEWMAN-KENWORTHY-1999-SUSTAINABILITY-CITIES",
+        "GEHL-2010-CITIES-FOR-PEOPLE",
+        "OSM-OVERPASS-ODBL",
+        "BEIJING-OPEN-DATA-TRANSIT"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-MOBILITY-BASELINE-001",
+        "A-PUBLIC-LIFE-001",
+        "A-URBAN-DIVERSITY-001",
+        "A-REMOTE-RESEARCH-001"
+      ],
+      "evidence_files": [
+        "visual/assets/people-first-research.json"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1175,7 +1229,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "更新项目清单、实施政策与分期计划"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1190,7 +1246,17 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "land_use_mix_entropy",
+        "pedestrian_intersection_density_per_sqkm",
+        "median_walkable_block_length_m",
+        "active_frontage_ratio",
+        "public_life_observation_count",
+        "accessible_route_continuity_ratio",
+        "station_800m_walk_coverage_ratio",
+        "walk_route_directness_ratio",
+        "frequent_transit_access_ratio",
+        "shade_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1198,8 +1264,11 @@
       ],
       "visual_sections": [
         "总览地图",
+        "三重人本检验",
+        "AI 场景",
         "任务覆盖",
-        "核心指标"
+        "核心指标",
+        "人本指标与待补证据"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1208,10 +1277,22 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "JACOBS-1961-DEATH-LIFE",
+        "NEWMAN-KENWORTHY-1999-SUSTAINABILITY-CITIES",
+        "GEHL-2010-CITIES-FOR-PEOPLE",
+        "OSM-OVERPASS-ODBL",
+        "BEIJING-OPEN-DATA-TRANSIT"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-MOBILITY-BASELINE-001",
+        "A-PUBLIC-LIFE-001",
+        "A-URBAN-DIVERSITY-001",
+        "A-REMOTE-RESEARCH-001"
+      ],
+      "evidence_files": [
+        "visual/assets/people-first-research.json"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",

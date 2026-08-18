@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v0.7 - 2026-08-18
+
+### 人本证据链与正式审核入口
+
+- PR #2573 标题已更新为“京张AI新篇章：人—城—伟业”；线上 `submission-validation` 仍因 Draft 状态显示 `SKIPPED`，不把它记作 trusted CI 成功，待本轮深化推送后再转为 Ready for review。
+- 本地运行维护者审核与正式评分资格生成器，结论为 `formal-review-ready`，七维正式评分表可进入 `draft`；当前仅保留 provisional boundary / key area 精度提示。
+- 将 Jacobs 多样性、Gehl 公共生活和 Newman 低汽车依赖正式映射到 `compliance_matrix.json` 的 `agent.3`、`agent.4`、`agent.6`，关联 10 项人本指标、三项方法来源、开放数据候选源、假设边界与 `people-first-research.json`。
+- 在中英文离线展示页增加“人本指标与待补证据”仪表盘，明确每项指标仍为 `unknown`、需要哪些开放数据或本地独立观察，并避免用代理值冒充现场事实。
+
 ## v0.6 - 2026-08-18
 
 ### 名称更新与双语正式化
