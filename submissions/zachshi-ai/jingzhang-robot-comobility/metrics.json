@@ -526,6 +526,42 @@
       "confidence": "high",
       "assumptions": [],
       "rationale": "5"
+    },
+    "self_explaining_section_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/self-explaining-grammar.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "4"
+    },
+    "self_explaining_case_count": {
+      "status": "known",
+      "value": 24,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/self-explaining-grammar.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "24"
+    },
+    "self_explaining_accuracy_threshold": {
+      "status": "known",
+      "value": 0.8,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/self-explaining-grammar.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "0.8"
     }
   },
   "recalculation_notes": {
