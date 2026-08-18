@@ -383,7 +383,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 641 distinct names harvested from the package — 618 matching exactly one of 24 published families and 23 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 642 distinct names harvested from the package — 619 matching exactly one of 24 published families and 23 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -711,7 +711,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 274 条，按发现者：0 10、1 31、2 1、3 19、4 22、5 191；最常见形状：4 46、31 43、7 25、10 22。**该文件随包提交，但不在评审工具读取的九个文件之内**（正文只点名其中 20 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 274 entries. It ships at visual/assets/errata.json and is not one of the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 315 条，按发现者：audit 27、external 31、external-reviewer 5、own-gate 22、rival-read 22、self 208；最常见形状：check-measured-the-convenient-thing 57、two-copies-of-one-thing-drifted 46、deliverable-not-inspected-before-shipping 30、claim-that-cannot-be-checked-by-construction 25。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 20 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 315 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -926,7 +926,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30278504,
+      "total_bytes": 30281238,
       "maintainer_bypass": false
     },
     "stderr": ""
