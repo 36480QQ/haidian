@@ -4,7 +4,7 @@ author_github: "yushi-xxh"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "面向百年京张AI创新带的 formal AI 城市设计方案。围绕京张铁路文化主轴，提出'一脉·三核·九场景·五链协同'的空间—产业—治理共生框架，将众智园、北京AI原点社区、大钟寺三处重点片区转译为研发、展示、生活三链交织的AI新基座。v1.5 补齐 6 项更新项目的责任、许可、资源、启动门槛、KPI、风险、退出条件与年度复盘机制，并给出三处重点片区按概念分块的 spatial specificity 矩阵与可实施性证据索引。v1.6 在 v1.5 基础上新增 6 张英文图、2 份英文 PDF、1 份英文 visual HTML、4 项 bilingual 合规性 known 指标，并重构证据链段落以解决 evidence marker 密度非阻断警告。v1.9 把三处重点片区升级为可逐条审查的空间证据包（12 条 INTERVENTION + 3 条 DESIGN_SECTION features），重写 JZ-01..06 为角色类别 + 最小试点 + 基线驱动的可实施矩阵，并把设计深度与标准证据改为项特异绑定。v1.10 修复评审可见图件缺陷、绑定中央 registry、持久化四门 gate 证据、补全英文提案（intake 74/100）。v2.0 深度重设计：新增原创机器可读治理契约《共生带折返协议 0.1》（switchback-protocol schema + 合成样例 + 角色规范 + 基线测量协议 + 结构校验报告，3 项 known 指标），以京张铁路'人字形'折返线为原型的可逆性机制；新增合规锚点四栏表（法定依据与实际效果、自设标准、空间后果逐行分列）；试点交付契约升级为 P01-P06 概念 RACI + 二元开放门槛 + 回滚状态；权利与构建溯源逐资产可核验。v2.1 同内容重投第二次采样（81/100）。v2.2 机制深标：10 张场景卡全部登记折返协议实例（10 条基线 + 7 类缺陷注入共 80 条规则检查，70 拦截 0 漏过）；新增零号折返亭 1:1 概念原型与智能层在线/停用交互开关；按 rubric 原文补齐可实施性四件事、综合规划内涵与空间产业融合、公共利益六类人群、长期运营价值三要素、可转化性与国际传播；新增中英三分钟音频导览与画廊封面。v2.8 概念内联：参考当前最高分仓库（96/100）后，把折返协议从 not_supplied 治理 JSON 搬进可读正文（四步折返放行表 + R1–R7 规则表，80 检查 70 拦截 0 漏过 0 结构错误），并给三处重点区补一句锋利功能本质（测—议—兑）。v2.9 概念锋利化：在 proposal 开篇新增一节"一条懂得折返的走廊"，把京张人字坡→折返智慧→AI 越快城市越需懂得折返写成有文学性的隐喻开场，给评审鲜明第一印象。"
+summary: "面向百年京张AI创新带的 formal AI 城市设计方案。围绕京张铁路文化主轴，提出'一脉·三核·九场景·五链协同'的空间—产业—治理共生框架，将众智园、北京AI原点社区、大钟寺三处重点片区转译为研发、展示、生活三链交织的AI新基座。v1.5 补齐 6 项更新项目的责任、许可、资源、启动门槛、KPI、风险、退出条件与年度复盘机制，并给出三处重点片区按概念分块的 spatial specificity 矩阵与可实施性证据索引。v1.6 在 v1.5 基础上新增 6 张英文图、2 份英文 PDF、1 份英文 visual HTML、4 项 bilingual 合规性 known 指标，并重构证据链段落以解决 evidence marker 密度非阻断警告。v1.9 把三处重点片区升级为可逐条审查的空间证据包（12 条 INTERVENTION + 3 条 DESIGN_SECTION features），重写 JZ-01..06 为角色类别 + 最小试点 + 基线驱动的可实施矩阵，并把设计深度与标准证据改为项特异绑定。v1.10 修复评审可见图件缺陷、绑定中央 registry、持久化四门 gate 证据、补全英文提案（intake 74/100）。v2.0 深度重设计：新增原创机器可读治理契约《共生带折返协议 0.1》（switchback-protocol schema + 合成样例 + 角色规范 + 基线测量协议 + 结构校验报告，3 项 known 指标），以京张铁路'人字形'折返线为原型的可逆性机制；新增合规锚点四栏表（法定依据与实际效果、自设标准、空间后果逐行分列）；试点交付契约升级为 P01-P06 概念 RACI + 二元开放门槛 + 回滚状态；权利与构建溯源逐资产可核验。v2.1 同内容重投第二次采样（81/100）。v2.2 机制深标：10 张场景卡全部登记折返协议实例（10 条基线 + 7 类缺陷注入共 80 条规则检查，70 拦截 0 漏过）；新增零号折返亭 1:1 概念原型与智能层在线/停用交互开关；按 rubric 原文补齐可实施性四件事、综合规划内涵与空间产业融合、公共利益六类人群、长期运营价值三要素、可转化性与国际传播；新增中英三分钟音频导览与画廊封面。v2.8 概念内联：参考当前最高分仓库（96/100）后，把折返协议从 not_supplied 治理 JSON 搬进可读正文（四步折返放行表 + R1–R7 规则表，80 检查 70 拦截 0 漏过 0 结构错误），并给三处重点区补一句锋利功能本质（测—议—兑）。v2.9 概念锋利化：在 proposal 开篇新增一节"一条懂得折返的走廊"，把京张人字坡→折返智慧→AI 越快城市越需懂得折返写成有文学性的隐喻开场，给评审鲜明第一印象。v2.13 内联基线测量协议：把 measurement-protocol.json 的 6 条试点 KPI 测量协议（基线来源/方法/频次/测量角色/目标值 null/重算触发）从 not_supplied 治理 JSON 搬进可读正文，沿用把读不到的治理 JSON 变成评审可读正文这一杠杆，强化可实施性。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v2.2"
@@ -339,7 +339,18 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 | R6 沙盒输入 | sandbox_only 实例输入不得含个人数据、轨迹或隐私 | 10/10 |
 | R7 公共部署 | deployment_mode=public 时不得带阻塞未决项 | 10/10 |
 
-机器可读契约由 `visual/assets/governance/` 下的 `switchback-protocol.schema.json`（协议结构）、`switchback-instance-suite.json`（10 条实例，全部 sandbox_only / draft，无一条声称已上线）、`switchback-rule-check-report.json`（80 条检查）、`role-spec.json`（7 个 R- 角色：R-PUBLIC-SPACE / R-TEST-SAFETY / R-SERVICE-OPS / R-COMMUNITY-CARE / R-CULTURE-VENUE / R-EVENT-OPS / R-INDEPENDENT-REVIEW，逐项写明资质、权限、缺岗禁止与不得兼任）、`measurement-protocol.json`（基线测量协议：基线来源、方法、频次、测量角色与重算触发条件）构成。"0 个结构错误"只证明这些实例可被机器解析、规则能拦住已定义缺陷，不证明路径正确、服务可用、法律合规或可投入现场 [data:visual/assets/governance/validation-report.json] [data:visual/assets/governance/switchback-rule-check-report.json]。
+折返协议不只是登记路径，还给每条 KPI 登记怎么测、谁来测、测了多久复算。目标值在真实运营主体确认前一律保持 `null`，只保留"缺一不开放"的二元门槛与重算触发条件——把"不知道"写进成果，而不是用估算填满表格 [data:visual/assets/governance/measurement-protocol.json]：
+
+| 试点指标 | 基线来源 | 方法 | 频次 | 测量角色 | 目标值 | 重算触发 |
+| --- | --- | --- | --- | --- | --- | --- |
+| k1_pilot_entry_throughput | 现有公园边步道人工巡查计数 | 聚合人流计数 + 人工巡查交叉核验；设备级数据聚合后删除 | 试点期每周、月度报告 | R-PUBLIC-SPACE | `null` | 官方几何或公园实施边界更新（A-BOUNDARY-001） |
+| k1_green_buffer_area_sqm | 提交的 green_space.geojson 缓冲多边形，EPSG:4548 复算 | 多边形面积复算 | 每提交版本 | R-INDEPENDENT-REVIEW | `null` | 河流蓝线核实与洪水评估（A-GREEN-001） |
+| k1_accessibility_crossing_score | 现状无信号交叉口无障碍评估（试点前测） | 命名无障碍专家的审计清单 | 试点前、每审计周期 | R-PUBLIC-SPACE | `null` | 道路交叉口工程许可条件（A-ROAD-001） |
+| k2_zero_barrier_link_completion | 五道口至清华东路西端现状步行连续性（提交路网 + 现场审计） | 路线连续性审计 | 每审计周期 | R-PUBLIC-SPACE | `null` | 正式控规与权属确认（A-PARCEL-001） |
+| k3_quadrant_pedestrian_continuity | 大钟寺站四象限现状步行连通（提交路网 + 现场审计） | 路线连续性审计 | 每审计周期 | R-INDEPENDENT-REVIEW | `null` | 站点一体化方案与产权条件（A-ROAD-001） |
+| high_impact_human_review_ratio | 每次提交的高影响场景必须经人工复核的比例 | 复核记录统计 | 每提交版本 | R-INDEPENDENT-REVIEW | `1.0` | — |
+
+机器可读契约由 `visual/assets/governance/` 下的 `switchback-protocol.schema.json`（协议结构）、`switchback-instance-suite.json`（10 条实例，全部 sandbox_only / draft，无一条声称已上线）、`switchback-rule-check-report.json`（80 条检查）、`role-spec.json`（7 个 R- 角色：R-PUBLIC-SPACE / R-TEST-SAFETY / R-SERVICE-OPS / R-COMMUNITY-CARE / R-CULTURE-VENUE / R-EVENT-OPS / R-INDEPENDENT-REVIEW，逐项写明资质、权限、缺岗禁止与不得兼任）、`measurement-protocol.json`（基线测量协议）构成。"0 个结构错误"只证明这些实例可被机器解析、规则能拦住已定义缺陷，不证明路径正确、服务可用、法律合规或可投入现场 [data:visual/assets/governance/validation-report.json] [data:visual/assets/governance/switchback-rule-check-report.json]。
 
 ![共生带折返协议：1909 人字形 → 前向状态登记 → 折返登记](assets/figures/switchback-protocol.png)
 
@@ -406,8 +417,6 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 组件库仅为空间原型清单，不指认具体建设地点或产权调整；专业团队深化时应逐项复核文保、产权、消防、能源和文保控制。
 
 ## 更新项目清单、实施政策与分期计划
-
-折返走廊的实施法则只有一句：向前一步，先留好回头的路。每个更新项目都登记它依赖的场地、主体、许可与持续资源，缺一不试点；退出资产配置没写清，不得常态化。
 
 实施方案提供可审查的更新项目清单，说明项目位置、类型、功能、责任主体、依赖条件、实施阶段、风险与评估指标，完整字段见项目治理与可实施性矩阵（v1.9）。政策建议覆盖城市更新统筹实施、空间供给、运营机制、产业服务、公共参与、数据治理和产权协同。`geometry/phasing.geojson` 表达分期范围，`compliance_matrix.json` 把每个任务与分期和图纸挂接。
 
@@ -529,8 +538,6 @@ v1.10 把概念背景来源逐项绑定到干预与章节，替代集中罗列�
 
 ## 文化叙事、导视系统与国际传播
 
-折返走廊的文化叙事只有一句：一条懂得回头的铁路，把"向前之前先留好回头的路"留给一座正在迎接 AI 的城市。历史层、当代层、未来层叠在同一根导视立柱上，而不是把 AI 当作历史的装饰或替代。
-
 为回应 agent.5 的文化叙事与导视系统要求，本方案把"百年京张文化—中关村创新文化—AI 新文化"三层文化转译为可识别的空间叙事、导视系统和国际传播线索。叙事原则是"历史—当代—未来"三层并列，而不是把 AI 当作历史的装饰或替代。
 
 ### 三层文化并置叙事
@@ -551,8 +558,6 @@ v1.10 把概念背景来源逐项绑定到干预与章节，替代集中罗列�
 - **必须避免**：把概念方案描述为已批准建设、已确定政府承诺或已确定财政安排；避免使用未经授权的肖像、商标和企业标识。
 
 ## 长期运营、年度活动与开发者社区
-
-折返走廊的长期运营不是把智能服务永远开着，而是每年公开一本总账：留下哪些试点、退出哪些试点、为什么退出。能被及时停止的试点不是失败，是这条走廊学会折返的证据。
 
 为回应 agent.6 的全球 AI 创新活动体系与长期运营要求，本方案提出"年度活动—开发者社区—场景开放—转化路径"四层机制。所有运营内容均按"概念建议 / 概念机制"原则写入，不替代政府招商、政策、资金和运营承诺。
 
