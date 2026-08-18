@@ -926,7 +926,7 @@ The three existing prototypes are expressed as typed relations that can be block
 | Ordinary use | Optional overlay is off by default; resident, commute, observation and quiet use do not yield to events | Real ordinary-day baseline | unknown; not operation |
 | Stop and isolate | Stop the applicable automation/capture/amplification/display layer and retain the same manual task or safe refusal | H05 stop chain and failure writeback | 0 events; no automatic restart |
 | Remove and exit | Record components, fixings, cables, signs, queues and data/log/account destinations | D06-D08 + destination receipt | 0 removals; no silent transfer |
-| Restore and accept | Restore ordinary route, surface/planting, quiet, screen-free information and same-task service before independent retest | H06-H07 + restoration receipt | 0 completions; professionals may reject/delete |
+| Restore and accept | Restore ordinary route, surface/planting, quiet, screen-free information and same-task service before independent retest | H06-H07 + restoration receipt | 0 completions; only a future competent party accepting an exact scope may reject/delete within scope |
 
 ### Three journeys and non-copyable components
 
