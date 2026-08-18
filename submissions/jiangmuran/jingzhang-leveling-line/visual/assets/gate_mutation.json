@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M148",
+      "gate": "benchmark_chain_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把正文里那句改回「走完**八个**水准点是 11,472 m」。**这是 E365 之前的真实状态**：链子只走六个，BM-21 在这份可步行图上与任何其他水准点之间都没有路径，BM-22 走支线，两者都在 `metrics.json` 里具名排除——评审整份收到那个文件。",
+      "what_en": "Put the body sentence back to walking the **eight** benchmarks for 11,472 m. **This is the real state before E365**: the chain walks six. BM-21 has no walkable path to any other benchmark on this graph and BM-22 is reached by a spur; both are excluded by name in metrics.json, which the reviewer receives whole.",
+      "why_zh": "E262 早就修过这个缺陷，并留下了这道闸门。但两条判据是照**图纸上碰巧用的说法**写的——「走完 N 点」与 \"Walking the N benchmarks\"——而正文两版用的是另一种说法（「走完八个水准点」、\"the eight benchmarks in survey order\"），两条都够不着。**于是同一个缺陷在图纸上被修好、在正文里原样留着。**改为把计数绑到**这条链自己公布的那个数**上：凡与 11,472 m 同处一句的水准点计数，就是这句话，不论用什么词；不引这个读数而提到八个水准点的句子说的是别的事，不在此列。",
+      "why_en": "E262 fixed this defect and left this gate behind. But its two patterns were written from **the wording the sheets happened to use** - 「走完 N 点」 and \"Walking the N benchmarks\" - while the body of both editions says it another way, and neither pattern reaches that. **So the same defect was repaired on the drawings and left standing in the prose.** The count is now bound to **the chain's own published value**: any benchmark count in the same sentence as 11,472 m is this claim, whatever words carry it, while a sentence mentioning the eight benchmarks without quoting the reading is about something else and is left alone."
+    },
+    {
       "id": "M147",
       "gate": "organiser_metric_join_qa.py",
       "target": "metrics.json",
@@ -1777,7 +1789,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 145,
+  "caught": 146,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
