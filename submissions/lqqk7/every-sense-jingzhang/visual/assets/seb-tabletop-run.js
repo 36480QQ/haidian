@@ -2,13 +2,13 @@
 /*
  * SEB 桌面配对推演校验器 / SEB tabletop pairing-run checker
  *
- * 方法学演示工具，不构成实测。本脚本只把服务等价基准（seb-spec.json）的四个组件
+ * 方法学演示工具，不构成实测。本脚本只把服务等价基准（seb-spec.json）的各个组件
  * 施加在文本样例（seb-tabletop-fixtures.json）上，不接触任何真实参与者、现场设备
  * 或运行中的系统，不写入 metrics.json，也不产生任何绩效指标数值。它能证明的只有
  * 一件事：判据是否可以被机器逐条执行。
  *
  * Methodology demonstration tool, not a field measurement. The script applies the
- * four components of the Service Equivalence Baseline (seb-spec.json) to text
+ * components of the Service Equivalence Baseline (seb-spec.json) to text
  * fixtures (seb-tabletop-fixtures.json). It touches no real participant, no site
  * equipment and no running system, writes nothing to metrics.json, and produces no
  * performance metric value. It demonstrates one thing only: whether the criteria
@@ -29,6 +29,12 @@
  * 动作清单读自第五组件 ai_authority_boundary，按 action_id 精确相等判定，不做子串；
  * 等价三维条件、阈值预注册、分列报告与最差组护栏、不可靠声明与样本充分性读自
  * scoring_definitions 的 equivalence_conditions、stratified_reporting 与两条规则条文。
+ * v0.5.0 起增第六组件双联交接台账的七类判据，同样一律读自基准：字段存在性读自各字段的
+ * required 与 required_when，取值判据读自 constraint_machine_rule（handover_distinct_roles /
+ * handover_dual_signature / handover_open_items_carry / handover_enum /
+ * handover_refusal_duty / handover_station_sequence / handover_flag_true），服务桌四位序
+ * 读自基准的 canonical_station_sequence，本工具不持有位序副本。该组件全部判定码以样例的
+ * handover_ledger 块为触发输入，未声明该块的样例结构性不触发。
  * 本工具另在启动时自检：凡本工具可能给出的判定码，必须全部登记在基准的
  * violation_code_registry 中，否则整次拒绝——「实现不得发明本表之外的判定码」由此
  * 成为可执行约束而不只是承诺。
@@ -43,8 +49,8 @@
  * The promotions are recorded in change receipts CR-2026-08-12-002 and CR-2026-08-15-005.
  *
  * 用法 / Usage: node seb-tabletop-run.js
- * 零依赖，仅使用 Node 内置模块（Node >= 18）；本工具版本 0.4.0。
- * Zero dependencies, Node built-ins only (Node >= 18); runner version 0.4.0.
+ * 零依赖，仅使用 Node 内置模块（Node >= 18）；本工具版本 0.5.0。
+ * Zero dependencies, Node built-ins only (Node >= 18); runner version 0.5.0.
  * 退出码 / Exit codes:
  *   0 — 全部样例的判定与 expected_verdict 一致 / every verdict matched its expectation
  *   1 — 至少一条样例的判定与期望不一致 / at least one verdict missed its expectation
@@ -109,6 +115,16 @@ const REASON_TEXT = {
   GROUP_MEMBERSHIP_INFERRED: ["组归属由推断得来而非参与者自愿自报", "group membership was inferred rather than voluntarily self-reported"],
   SILENT_UNRELIABLE_OUTPUT: ["系统自知不可靠的输出未当场声明不可靠并指向人工通道", "an output the system knows to be unreliable was not declared unreliable on the spot with a pointer to the staffed channel"],
   SAMPLE_INSUFFICIENT_CLAIMED_FAIR: ["分组样本低于预注册最低值，结论只能记证据不足", "the group sample falls below the pre-registered minimum, so the conclusion may only read insufficient evidence"],
+  // v0.5.0 双联交接台账判据 / v0.5.0 two-part handover ledger criteria
+  HANDOVER_FIELD_MISSING: ["双联交接台账缺少必填字段，该次交接不得计入已完成交接", "the two-part handover ledger is missing a required field, and the handover may not count as completed"],
+  HANDOVER_ROLES_NOT_SEPARATED: ["交出方与接收方是同一角色，双联单的第二联没有第二个人核对", "the handing-over and receiving parties are one role, so nobody checks the second half of the slip"],
+  HANDOVER_SIGNATURE_MISSING: ["两方署名缺其一或全缺，口头移交不是交接", "one or both signatures are absent, and a spoken hand-off is not a handover"],
+  HANDOVER_OPEN_ITEMS_CLEARED: ["未决项在交接时被清空，与分母删除失败样本是同一条纪律", "open items were cleared at handover, which is the same discipline as dropping failed samples from a denominator"],
+  HANDOVER_RECEIPT_ACTION_INVALID: ["接收方处置不在接收、拒收、暂缓三项之内，交接停在没有责任人的状态", "the receiver's action is none of accept, refuse or hold, leaving the handover with nobody accountable"],
+  HANDOVER_REFUSAL_UNSTAFFED: ["拒收或暂缓未写明理由，或上一责任方未继续在岗", "a refusal or hold states no reason, or the previous responsible party was not kept on duty"],
+  HANDOVER_STATION_SEQUENCE_INVALID: ["服务桌四位序与规范位序不逐位相等，顺序是判据不是布置建议", "the four service-desk stations do not equal the canonical sequence position by position; the order is a criterion, not a layout suggestion"],
+  STAFFED_WINDOW_NOT_FIRST: ["人工窗口未先于一切 AI 构件设立，先上 AI 层等于有一段时间只剩 AI 一条路", "the staffed window was not established before every AI component, so for a period AI was the only route"],
+  EXIT_RECEIPT_STATION_ABSENT: ["退出回执位在最后一步之后不在场，使用者在最需要留痕的时刻无处留痕", "the exit-receipt station is not present after the last step, leaving the user nowhere to leave a trace when it matters most"],
 };
 
 // 本工具在任何基准下都可能给出的基础判定码（去掉冒号后缀的规范名）。v0.4.0 起的
@@ -168,6 +184,16 @@ function machineRuleFields(schema) {
   return fields.filter((field) => field.constraint_machine_rule);
 }
 
+// 第六组件的带规则字段。组件在 v0.5.0 之前的快照中不存在，缺席时返回空数组，
+// 本工具与低版本快照配对时行为与 v0.4.0 完全一致。
+// The rule-carrying fields of the sixth component. It does not exist in snapshots before
+// v0.5.0; where absent this returns an empty list and the tool behaves exactly as v0.4.0
+// did when paired with an older snapshot.
+function handoverRuleFields(ledger) {
+  if (!ledger) return [];
+  return (ledger.required_fields || []).filter((field) => field.constraint_machine_rule);
+}
+
 // 本次运行下本工具可能给出的判定码：基础码加上由基准自身规则对象声明的码。
 // 判定码一律取自基准，本工具不发明任何一个。
 // The codes this tool can emit in this run: the base set plus whatever the baseline's own
@@ -177,6 +203,7 @@ function emittableCodes(spec) {
   const schema = component(spec, "node_schema");
   const scoring = component(spec, "scoring_definitions");
   const boundary = component(spec, "ai_authority_boundary");
+  const ledger = component(spec, "handover_ledger");
   if (schema && (schema.lifecycle_fields || schema.vendor_independence_field)) {
     codes.add("LIFECYCLE_FIELD_MISSING");
   }
@@ -185,6 +212,11 @@ function emittableCodes(spec) {
     if (code) codes.add(code.split(":")[0]);
   }
   if (boundary && boundary.violation_code) codes.add(boundary.violation_code);
+  if (ledger && ledger.missing_field_violation_code) codes.add(ledger.missing_field_violation_code);
+  for (const field of handoverRuleFields(ledger)) {
+    const code = field.constraint_machine_rule.violation_code;
+    if (code) codes.add(code.split(":")[0]);
+  }
   const equivalence = scoring && scoring.equivalence_conditions;
   if (equivalence) {
     if (equivalence.violation_code) codes.add(equivalence.violation_code);
@@ -271,13 +303,19 @@ function checkCompatibility(spec, fixtureFile) {
     // v0.4.0 生命周期字段组的五种规则类型 / the five lifecycle rule types of v0.4.0
     "lifecycle_status_gate", "lifecycle_date_gate", "lifecycle_enum_plus_flag",
     "lifecycle_floor_check", "lifecycle_enum_gate",
+    // v0.5.0 双联交接台账的七种规则类型 / the seven handover-ledger rule types of v0.5.0
+    "handover_distinct_roles", "handover_dual_signature", "handover_open_items_carry",
+    "handover_enum", "handover_refusal_duty", "handover_station_sequence",
+    "handover_flag_true",
   ];
-  // 规则类型的巡检范围与判定范围一致：必填字段、生命周期字段组、供应商独立性字段。
-  // 若只巡检必填字段，基准在生命周期字段里声明的未知规则类型会被静默漏过。
+  // 规则类型的巡检范围与判定范围一致：必填字段、生命周期字段组、供应商独立性字段，
+  // 自 v0.5.0 起再加第六组件的交接台账字段。若只巡检必填字段，基准在其余字段里声明的
+  // 未知规则类型会被静默漏过。
   // The sweep covers exactly what the tool rules on: required fields, the lifecycle
-  // field group and the vendor-independence field. Sweeping only the required fields
-  // would let an unknown rule type declared inside a lifecycle field pass in silence.
-  for (const field of machineRuleFields(schema)) {
+  // field group, the vendor-independence field and, from v0.5.0, the handover-ledger
+  // fields of the sixth component. Sweeping only the required fields would let an unknown
+  // rule type declared elsewhere pass in silence.
+  for (const field of [...machineRuleFields(schema), ...handoverRuleFields(component(spec, "handover_ledger"))]) {
     const rule = field.constraint_machine_rule;
     if (rule && !SUPPORTED_RULE_TYPES.includes(rule.type)) {
       problems.push(`RULE_TYPE_UNSUPPORTED:${rule.type} — 基准声明了本工具尚未实现的规则类型，不作判定 / the baseline declares a rule type this tool does not implement, so no verdict is issued`);
@@ -658,6 +696,114 @@ function checkAuthority(declaration, boundary) {
   return [...new Set(reasons)];
 }
 
+// 组件六：双联交接台账（v0.5.0）。触发输入域按登记表 applies_when：判据只在样例声明
+// handover_ledger 块时执行，未声明该块的样例结构性不触发，不属违例。存在性由字段自身的
+// required 与 required_when 决定，取值合规一律且只由该字段的 constraint_machine_rule
+// 判定（machine_rule_contract），本工具不新增任何字段、不持有位序副本——四位序读自基准的
+// canonical_station_sequence。
+// Component 6: the two-part handover ledger (v0.5.0). The triggering input domain follows
+// the registry's applies_when: the criteria run only where a fixture declares a
+// handover_ledger, and a fixture declaring none does not engage them and violates nothing.
+// Presence follows each field's own required and required_when, value compliance is ruled
+// by that field's constraint_machine_rule and by nothing else (machine_rule_contract), and
+// this tool adds no field and keeps no copy of the station order — the four stations are
+// read from the baseline's canonical_station_sequence.
+function checkHandover(ledger, component6) {
+  if (!ledger || !component6) return [];
+  const reasons = [];
+  const missingCode = component6.missing_field_violation_code || "HANDOVER_FIELD_MISSING";
+  for (const field of component6.required_fields || []) {
+    // required_when 由基准声明触发条件，本工具不推断哪些字段何时必填。
+    // required_when states the condition in the baseline; the tool infers nothing.
+    let required = field.required === true;
+    const when = field.required_when;
+    if (!required && when && when.field_path !== undefined) {
+      required = resolvePath(ledger, when.field_path) === when.equals;
+    }
+    const value = ledger[field.field];
+    const present = isPresent(value);
+    if (required && !present) {
+      reasons.push(`${missingCode}:${field.field}`);
+      continue;
+    }
+    const rule = field.constraint_machine_rule;
+    if (!rule) continue;
+    // 适用前提：rule.precondition_path 由基准声明（位序三判据以 service_desk_present 为
+    // 前提），未满足即不判定——不向没有服务桌的节点摊派位序判据。它与规则自身的
+    // trigger_path（handover_refusal_duty 的处置触发）是两件事，键名不共用。
+    // Precondition: rule.precondition_path is stated by the baseline (the three sequence
+    // criteria are conditioned on service_desk_present); unmet means no ruling, so the
+    // sequence criteria are never levied on a node with no desk. It is distinct from a
+    // rule's own trigger_path (the action trigger of handover_refusal_duty) and the two
+    // never share a key.
+    if (rule.precondition_path !== undefined
+        && resolvePath(ledger, rule.precondition_path) !== rule.precondition_value) continue;
+    const code = applyHandoverRule(rule, ledger, field, component6);
+    if (code) reasons.push(code);
+  }
+  return [...new Set(reasons)];
+}
+
+function applyHandoverRule(rule, ledger, field, component6) {
+  if (rule.type === "handover_distinct_roles") {
+    // 交出方与接收方必须是不同角色；两者取值字面相同即违例。缺一方时不在此判定——
+    // 缺失由 HANDOVER_FIELD_MISSING 处置，此处不重复报。
+    // The two parties must be different roles; literally equal values violate. Where one
+    // is absent the ruling is left to HANDOVER_FIELD_MISSING and not restated here.
+    const a = resolvePath(ledger, rule.field_path_a);
+    const b = resolvePath(ledger, rule.field_path_b);
+    if (typeof a !== "string" || typeof b !== "string") return null;
+    return a === b ? rule.violation_code : null;
+  }
+  if (rule.type === "handover_dual_signature") {
+    // 两方署名逐项须等于 required_value；任一项未署名或未作声明即违例。
+    // Each signature must equal required_value; either unsigned or undeclared violates.
+    const bad = (rule.entries || []).some((entry) => resolvePath(ledger, entry) !== rule.required_value);
+    return bad ? rule.violation_code : null;
+  }
+  if (rule.type === "handover_open_items_carry") {
+    // 未决项不得在交接时清空：存在未决项与已清空同时成立即违例。
+    // Open items may not be cleared at handover: both present and cleared violates.
+    const combo = rule.forbidden_combination || {};
+    const hit = Object.keys(combo).every((path) => resolvePath(ledger, path) === combo[path]);
+    return hit ? rule.violation_code : null;
+  }
+  if (rule.type === "handover_enum") {
+    // 枚举取自字段自身的 allowed_values，本工具不持有副本。
+    // The enumeration comes from the field's own allowed_values; the tool keeps no copy.
+    const value = resolvePath(ledger, rule.field_path);
+    if (!Array.isArray(field.allowed_values)) return null;
+    return field.allowed_values.includes(value) ? null : rule.violation_code;
+  }
+  if (rule.type === "handover_refusal_duty") {
+    // 拒收与暂缓必须写明理由并触发上一责任方继续在岗，两者缺一即违例。
+    // A refusal or hold must state a reason and keep the previous party on duty; either
+    // omission violates.
+    const trigger = resolvePath(ledger, rule.trigger_path);
+    if (!(rule.trigger_values || []).includes(trigger)) return null;
+    const noReason = (rule.required_non_empty_paths || [])
+      .some((path) => !isPresent(resolvePath(ledger, path)));
+    const notOnDuty = (rule.required_true_paths || [])
+      .some((path) => resolvePath(ledger, path) !== true);
+    return noReason || notOnDuty ? rule.violation_code : null;
+  }
+  if (rule.type === "handover_station_sequence") {
+    // 四位序读自基准的 canonical_station_sequence，逐位比对次序与成员。
+    // The four stations are read from the baseline's canonical_station_sequence and
+    // compared position by position for both order and membership.
+    const canonical = (component6[rule.canonical_ref] || []).map((item) => item.station_id);
+    const declared = resolvePath(ledger, rule.field_path);
+    if (!Array.isArray(declared)) return rule.violation_code;
+    if (declared.length !== canonical.length) return rule.violation_code;
+    return declared.every((id, i) => id === canonical[i]) ? null : rule.violation_code;
+  }
+  if (rule.type === "handover_flag_true") {
+    const value = resolvePath(ledger, rule.field_path);
+    return value === rule.required_value ? null : rule.violation_code;
+  }
+  return `RULE_TYPE_UNSUPPORTED:${rule.type}`;
+}
+
 // 组件三：等级定义。四项绑定字段缺一不可；闸门比对直接取结构化的 gate_binding.gate_id，
 // 不再从自由文本抽取，gate_id 为 none 时不比对。
 // Component 3: level definitions. All four binding fields are required, and the gate
@@ -755,6 +901,7 @@ function evaluate(fixture, parts, nodeSource, runContext) {
     ...checkDenominator(fixture.measurement_declaration, parts.scoring),
     ...checkMeasurementClaims(fixture.measurement_declaration, parts.scoring),
     ...checkAuthority(fixture.authority_declaration, parts.boundary),
+    ...checkHandover(fixture.handover_ledger, parts.ledger),
     ...checkLevel(fixture.level_claim, parts.levels, fixture.node),
     ...checkDecision(fixture.decision, parts.rules),
   ];
@@ -762,6 +909,7 @@ function evaluate(fixture, parts, nodeSource, runContext) {
   const skipped = [];
   if (!fixture.level_claim) skipped.push("level_definitions");
   if (!fixture.decision) skipped.push("decision_rules");
+  if (parts.ledger && !fixture.handover_ledger) skipped.push("handover_ledger");
   return {
     verdict: unique.length === 0 ? "accept" : "reject",
     reasons: unique,
@@ -816,6 +964,14 @@ function provenanceLines(parts) {
         + `按 action_id 精确相等判定，不做子串 / human-exclusive actions matched on exact action_id, never as substrings`
     );
   }
+  if (parts.ledger) {
+    const seq = (parts.ledger.canonical_station_sequence || []).map((item) => item.station_id);
+    lines.push(
+      `    双联交接 / Handover ledger : ${(parts.ledger.required_fields || []).length} 个字段，`
+        + `四位序 ${seq.join(" → ")} 读自基准，位序不可调换 / `
+        + `${(parts.ledger.required_fields || []).length} fields; the four stations are read from the baseline and may not be rearranged`
+    );
+  }
   const equivalence = parts.scoring.equivalence_conditions;
   if (equivalence) {
     lines.push(
@@ -864,6 +1020,10 @@ function main() {
     // The fifth component does not exist in snapshots before v0.4.0; where it is absent
     // the authority-boundary criterion simply does not apply.
     boundary: component(spec, "ai_authority_boundary"),
+    // 第六组件在 v0.5.0 之前的快照中不存在；缺席时双联交接判据整体不适用。
+    // The sixth component does not exist in snapshots before v0.5.0; where it is absent
+    // the handover-ledger criteria simply do not apply.
+    ledger: component(spec, "handover_ledger"),
   };
 
   // 运行声明：REVIEW_OVERDUE 的比较基准 run.as_of_date 由样例的顶层 run 块给出，

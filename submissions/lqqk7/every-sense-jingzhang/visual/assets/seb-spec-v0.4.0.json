@@ -3,7 +3,7 @@
  "spec_name_en": "Service Equivalence Baseline",
  "spec_name_zh": "服务等价基准",
  "abbreviation": "SEB",
- "version": "0.5.0",
+ "version": "0.4.0",
  "status": "draft_concept_recommendation",
  "license": {
   "spdx_id": "CC-BY-SA-4.0",
@@ -22,11 +22,9 @@
   "authored_on": "2026-08-12",
   "derived_from": [
    "geometry/constraints.geojson",
-   "geometry/public_space.geojson#PUBLIC-007",
    "metrics.json",
    "risk.json",
-   "visual/assets/service-desk-gonogo.json",
-   "proposal.md 第「服务等价基准 SEB v0.5.0」章"
+   "proposal.md 第「服务等价基准 SEB v0.4.0」章"
   ],
   "evidence_class": "concept_only",
   "hosting_body": "to_be_confirmed",
@@ -776,309 +774,6 @@
    "boundary_rule_zh": "判定规则：采用方样例在 authority_declaration.ai_actions 中登记 AI 实际执行的动作标识；任一标识与 human_exclusive 的 action_id 精确相等（不做子串匹配），记 AI_AUTHORITY_OVERREACH。",
    "boundary_rule_en": "Ruling: an adopter fixture registers the action ids AI actually performs in authority_declaration.ai_actions; any id exactly equal to a human_exclusive action_id (no substring matching) records AI_AUTHORITY_OVERREACH.",
    "violation_code": "AI_AUTHORITY_OVERREACH"
-  },
-  {
-   "component_id": "handover_ledger",
-   "name_zh": "双联交接台账",
-   "name_en": "Two-part handover ledger",
-   "since_version": "0.5.0",
-   "machine_readable_location": "采用方样例的 handover_ledger 块；本包位于 visual/assets/seb-tabletop-fixtures.json",
-   "purpose_zh": "前五组件回答的是「AI 关闭后谁接手」——node_schema 的 human_handoff 要求写下一个可被找到的角色。本组件回答接手本身在运行层留下什么痕迹：一次人工接管是一份双联单，交出方与接收方是不同角色并各自署名，未决项随单移交而不在交接时清空，接收方在接收、拒收、暂缓三项中选一并署名，拒收与暂缓须写明理由且上一责任方继续在岗。服务桌的四位序一并在此落为位序判据：人工窗口先于一切 AI 构件设立，退出回执位在最后一步之后仍然在场。",
-   "purpose_en": "The first five components answer who takes over once AI is off — node_schema's human_handoff requires a findable role to be written down. This component answers what the takeover itself leaves behind at the operating layer: a human handover is a two-part slip; the handing-over and receiving parties are different roles and each signs; open items travel on the slip and are never cleared at handover; the receiver signs exactly one of accept, refuse or hold; and a refusal or hold states a reason while the previous responsible party stays on duty. The service desk's four stations land here as a sequence criterion: the staffed window is established before any AI component, and the exit-receipt station is still present after the last step.",
-   "derived_from": [
-    "proposal.md「交接是一份双联单，不是一句口头移交」段与 proposal.en.md 对应段 / the two-part-slip paragraph of proposal.md and its counterpart in proposal.en.md",
-    "geometry/constraints.geojson 各 OP 节点的 human_handoff、responsible_role、gate_id 属性 / the human_handoff, responsible_role and gate_id properties of the OP nodes",
-    "risk.json 十二条风险的 pause_threshold 与 resume_condition / the pause_threshold and resume_condition of the twelve risk entries",
-    "geometry/public_space.geojson#PUBLIC-007 的 service_desk 属性组与 visual/assets/service-desk-gonogo.json / the service_desk attribute group of PUBLIC-007 and the service-desk readiness file"
-   ],
-   "derivation_rule_zh": "本组件不新增任何设计主张：全部字段与判据由上列包内既有素材推出，四位序的编号、名称与不可调换规则与 PUBLIC-007 的 service_desk 属性组及服务桌开办条件档案逐字一致。本组件把该结构由「本节点先行试运行的运行层做法」升格为基准条文，兑现正文登记的 v0.4 之后待议项。",
-   "derivation_rule_en": "The component asserts no new design: every field and criterion is derived from the in-package material listed above, and the numbering, names and non-rearrangeable rule of the four stations are verbatim those of the service_desk attribute group on PUBLIC-007 and of the service-desk readiness file. It promotes the structure from an operating-layer practice trial-run at one node into baseline text, discharging the open item the prose registered as pending beyond v0.4.",
-   "machine_rule_contract_zh": "与 node_schema 同一合同：凡带 constraint_machine_rule 的字段，校验实现必须且只能按该字段判定取值是否合规；不带该字段的字段只校验存在性，实现不得自行补充取值约束。",
-   "machine_rule_contract_en": "The same contract as node_schema: where a field carries a constraint_machine_rule, a checker rules on the value by that field and by nothing else; a field without one is checked for presence only, and no implementation may add a value constraint of its own.",
-   "applies_when": "handover_ledger present",
-   "applies_when_note_zh": "本组件全部违例码的触发输入是样例的 handover_ledger 块。未声明该块的样例结构性不触发本组件，不属违例；OP-04 链复演包的输入类型中不含交接台账，本组件的码在该实现内不可能触发，属输入域事实而非实现缺口。",
-   "applies_when_note_en": "The triggering input of every code in this component is the fixture's handover_ledger block. A fixture that declares none does not engage the component and violates nothing; the OP-04 chain replay package holds no handover ledger in its input type, so these codes cannot fire there — a fact of the input domain, not an implementation gap.",
-   "missing_field_violation_code": "HANDOVER_FIELD_MISSING",
-   "required_fields": [
-    {
-     "field": "handing_over_role",
-     "name_zh": "交出方角色",
-     "name_en": "Handing-over role",
-     "type": "string",
-     "required": true,
-     "constraint_zh": "写明交出这一班的角色。本字段不施加角色词表判据——角色词表判据由 node_schema 的 human_handoff 承担，此处不重复设关。",
-     "constraint_en": "Names the role handing the shift over. No role-token criterion applies here: that criterion sits on node_schema's human_handoff and is not duplicated."
-    },
-    {
-     "field": "receiving_role",
-     "name_zh": "接收方角色",
-     "name_en": "Receiving role",
-     "type": "string",
-     "required": true,
-     "constraint_zh": "交出方与接收方必须是不同角色。两者取值相同即记 HANDOVER_ROLES_NOT_SEPARATED——同一角色对自己交接，等于没有第二人核对，双联单的第二联在制度上不存在。",
-     "constraint_en": "The handing-over and receiving parties must be different roles. Equal values record HANDOVER_ROLES_NOT_SEPARATED — one role handing over to itself means no second person checks, and the second half of the two-part slip does not exist institutionally.",
-     "constraint_machine_rule": {
-      "type": "handover_distinct_roles",
-      "match": "exact_string_equality",
-      "field_path_a": "handing_over_role",
-      "field_path_b": "receiving_role",
-      "violation_code": "HANDOVER_ROLES_NOT_SEPARATED",
-      "rationale_zh": "判据只裁「两个取值是否字面相同」这一机器可判下限；两个不同写法指向同一个人属人工复核层，机器判据不裁此层。",
-      "rationale_en": "The criterion rules only on the machine-decidable floor of whether the two values are literally equal; two different wordings naming the same person is a matter for human review, on which this criterion does not rule.",
-      "since_version": "0.5.0"
-     }
-    },
-    {
-     "field": "handing_over_signature",
-     "name_zh": "交出方署名",
-     "name_en": "Handing-over signature",
-     "type": "boolean",
-     "required": true,
-     "constraint_zh": "交出方是否已署名。只声明署名是否发生，不登记任何个人身份信息。",
-     "constraint_en": "Whether the handing-over party has signed. It declares only that a signature occurred and records no personal identifying data."
-    },
-    {
-     "field": "receiving_signature",
-     "name_zh": "接收方署名",
-     "name_en": "Receiving signature",
-     "type": "boolean",
-     "required": true,
-     "constraint_zh": "两方署名缺一即记 HANDOVER_SIGNATURE_MISSING。口头移交不是交接：没有第二个署名，接管在事后无法被复核到具体的人。",
-     "constraint_en": "Either signature missing records HANDOVER_SIGNATURE_MISSING. A spoken hand-off is not a handover: without the second signature, no one can be traced afterwards.",
-     "constraint_machine_rule": {
-      "type": "handover_dual_signature",
-      "entries": [
-       "handing_over_signature",
-       "receiving_signature"
-      ],
-      "required_value": true,
-      "violation_code": "HANDOVER_SIGNATURE_MISSING",
-      "since_version": "0.5.0"
-     }
-    },
-    {
-     "field": "open_items_present",
-     "name_zh": "存在未决项",
-     "name_en": "Open items present",
-     "type": "boolean",
-     "required": true,
-     "constraint_zh": "本班是否留有未决项。只声明有无，不声明条数——与本基准分母只声明类别是否被声明、不声明样本数量的表达纪律一致。",
-     "constraint_en": "Whether the shift leaves open items. It declares presence, never a count — the same expression discipline the denominators already keep, where a category is declared but never a sample size."
-    },
-    {
-     "field": "open_items_cleared_at_handover",
-     "name_zh": "未决项在交接时被清空",
-     "name_en": "Open items cleared at handover",
-     "type": "boolean",
-     "required": true,
-     "constraint_zh": "未决项不得在交接时清空，只能随单移交。存在未决项而声明已在交接时清空，记 HANDOVER_OPEN_ITEMS_CLEARED——这与分母不得删除失败样本是同一条纪律：把没办完的事在换班时抹掉，下一班接到的是一张干净但失真的单子。",
-     "constraint_en": "Open items may not be cleared at handover; they travel on the slip. Declaring items present and cleared at handover records HANDOVER_OPEN_ITEMS_CLEARED — the same discipline as not dropping failed samples from a denominator: wiping unfinished business at shift change hands the next shift a clean but false slip.",
-     "constraint_machine_rule": {
-      "type": "handover_open_items_carry",
-      "presence_path": "open_items_present",
-      "cleared_path": "open_items_cleared_at_handover",
-      "forbidden_combination": {
-       "open_items_present": true,
-       "open_items_cleared_at_handover": true
-      },
-      "violation_code": "HANDOVER_OPEN_ITEMS_CLEARED",
-      "since_version": "0.5.0"
-     }
-    },
-    {
-     "field": "receipt_action",
-     "name_zh": "接收方处置",
-     "name_en": "Receiver's action",
-     "type": "enum",
-     "required": true,
-     "allowed_values": [
-      "accept",
-      "refuse",
-      "hold"
-     ],
-     "constraint_zh": "接收方对每一单在接收、拒收、暂缓三项中选一并署名。三项之外的取值记 HANDOVER_RECEIPT_ACTION_INVALID：留白、待定或自造第四种处置，等于把交接停在一个没有责任人的状态。",
-     "constraint_en": "The receiver signs exactly one of accept, refuse or hold for every slip. Any other value records HANDOVER_RECEIPT_ACTION_INVALID: a blank, a pending, or an invented fourth action leaves the handover in a state with no one accountable.",
-     "constraint_machine_rule": {
-      "type": "handover_enum",
-      "field_path": "receipt_action",
-      "violation_code": "HANDOVER_RECEIPT_ACTION_INVALID",
-      "allowed_values_source": "本字段的 allowed_values / the field's own allowed_values",
-      "since_version": "0.5.0"
-     }
-    },
-    {
-     "field": "refusal_reason",
-     "name_zh": "拒收或暂缓的理由",
-     "name_en": "Reason for refusal or hold",
-     "type": "string",
-     "required": false,
-     "conditional_required_zh": "receipt_action 为 refuse 或 hold 时必填",
-     "conditional_required_en": "required when receipt_action is refuse or hold",
-     "constraint_zh": "理由由 handover_refusal_duty 判据与在岗声明一并判定，见下一字段。",
-     "constraint_en": "The reason is ruled on together with the on-duty declaration by handover_refusal_duty; see the next field."
-    },
-    {
-     "field": "previous_party_remains_on_duty",
-     "name_zh": "上一责任方继续在岗",
-     "name_en": "Previous party remains on duty",
-     "type": "boolean",
-     "required": false,
-     "conditional_required_zh": "receipt_action 为 refuse 或 hold 时必填且须为 true",
-     "conditional_required_en": "required and true when receipt_action is refuse or hold",
-     "constraint_zh": "拒收与暂缓必须写明理由并触发上一责任方继续在岗。理由为空或在岗声明不为 true，记 HANDOVER_REFUSAL_UNSTAFFED——一单被拒而无人在岗，现场就在无人负责的状态下继续运行，这是最危险的一种「已交接」。",
-     "constraint_en": "A refusal or hold must state a reason and keep the previous responsible party on duty. An empty reason or an on-duty declaration other than true records HANDOVER_REFUSAL_UNSTAFFED — a refused slip with nobody on duty leaves the site running with no one accountable, the most dangerous form of a completed handover.",
-     "constraint_machine_rule": {
-      "type": "handover_refusal_duty",
-      "trigger_path": "receipt_action",
-      "trigger_values": [
-       "refuse",
-       "hold"
-      ],
-      "required_non_empty_paths": [
-       "refusal_reason"
-      ],
-      "required_true_paths": [
-       "previous_party_remains_on_duty"
-      ],
-      "violation_code": "HANDOVER_REFUSAL_UNSTAFFED",
-      "since_version": "0.5.0"
-     }
-    },
-    {
-     "field": "service_desk_present",
-     "name_zh": "本节点设有服务桌",
-     "name_en": "A service desk stands at this node",
-     "type": "boolean",
-     "required": true,
-     "constraint_zh": "声明本节点是否设有万感服务桌。取值为 true 时，下列三项位序字段成为必填并施加位序判据；取值为 false 时三项可缺席且不违例——位序判据只约束真正设了桌子的节点，不向没有桌子的节点摊派一条它无从满足的要求。",
-     "constraint_en": "Declares whether an Every-Sense service desk stands at this node. Where true, the three station fields below become required and the sequence criteria apply; where false they may be absent without violating — the sequence criteria bind only nodes that actually have a desk and are never levied on nodes that could not satisfy them."
-    },
-    {
-     "field": "station_sequence",
-     "name_zh": "服务桌位序",
-     "name_en": "Service-desk station sequence",
-     "type": "array of station_id",
-     "required": false,
-     "constraint_zh": "四个位序不可调换，取值须与 canonical_station_sequence 的 station_id 逐位相等。次序不符或成员不符即记 HANDOVER_STATION_SEQUENCE_INVALID：顺序是判据而不是布置建议。",
-     "constraint_en": "The four stations may not be rearranged, and the value must equal the station_id order of canonical_station_sequence position by position. A mismatch in order or membership records HANDOVER_STATION_SEQUENCE_INVALID: the order is a criterion, not a layout suggestion.",
-     "constraint_machine_rule": {
-      "type": "handover_station_sequence",
-      "field_path": "station_sequence",
-      "canonical_ref": "canonical_station_sequence",
-      "match": "exact_order_and_membership",
-      "violation_code": "HANDOVER_STATION_SEQUENCE_INVALID",
-      "since_version": "0.5.0",
-      "precondition_path": "service_desk_present",
-      "precondition_value": true
-     },
-     "required_when": {
-      "field_path": "service_desk_present",
-      "equals": true
-     },
-     "conditional_required_zh": "service_desk_present 为 true 时必填",
-     "conditional_required_en": "required when service_desk_present is true"
-    },
-    {
-     "field": "staffed_window_precedes_ai_components",
-     "name_zh": "人工窗口先于一切 AI 构件设立",
-     "name_en": "Staffed window established before any AI component",
-     "type": "boolean",
-     "required": false,
-     "constraint_zh": "取值须为 true，否则记 STAFFED_WINDOW_NOT_FIRST。本条判的是设立时序而不是空间位序：位序数组正确、但 AI 构件先上线人工窗口后补，同样违例——先上 AI 层再补人工位，等于在一段时间内只有 AI 一条路可走。",
-     "constraint_en": "The value must be true, otherwise STAFFED_WINDOW_NOT_FIRST is recorded. This rules on the order of establishment, not the spatial order: a correct sequence array with the AI component switched on first and the staffed window added later violates just the same — putting the AI layer up first leaves a period in which AI is the only route.",
-     "constraint_machine_rule": {
-      "type": "handover_flag_true",
-      "field_path": "staffed_window_precedes_ai_components",
-      "required_value": true,
-      "violation_code": "STAFFED_WINDOW_NOT_FIRST",
-      "since_version": "0.5.0",
-      "precondition_path": "service_desk_present",
-      "precondition_value": true
-     },
-     "required_when": {
-      "field_path": "service_desk_present",
-      "equals": true
-     },
-     "conditional_required_zh": "service_desk_present 为 true 时必填",
-     "conditional_required_en": "required when service_desk_present is true"
-    },
-    {
-     "field": "exit_receipt_station_present_after_last_step",
-     "name_zh": "退出回执位在最后一步之后仍然在场",
-     "name_en": "Exit-receipt station present after the last step",
-     "type": "boolean",
-     "required": false,
-     "constraint_zh": "取值须为 true，否则记 EXIT_RECEIPT_STATION_ABSENT。退出回执位若在流程走完后即撤，使用者恰好在最需要留下痕迹的时刻找不到留痕的地方。",
-     "constraint_en": "The value must be true, otherwise EXIT_RECEIPT_STATION_ABSENT is recorded. A station that is folded away once the process ends leaves the user with nowhere to leave a trace at exactly the moment a trace matters most.",
-     "constraint_machine_rule": {
-      "type": "handover_flag_true",
-      "field_path": "exit_receipt_station_present_after_last_step",
-      "required_value": true,
-      "violation_code": "EXIT_RECEIPT_STATION_ABSENT",
-      "since_version": "0.5.0",
-      "precondition_path": "service_desk_present",
-      "precondition_value": true
-     },
-     "required_when": {
-      "field_path": "service_desk_present",
-      "equals": true
-     },
-     "conditional_required_zh": "service_desk_present 为 true 时必填",
-     "conditional_required_en": "required when service_desk_present is true"
-    }
-   ],
-   "supporting_fields": [
-    "node_id",
-    "open_item_ids",
-    "blocking_reference",
-    "provenance",
-    "handover_note_zh",
-    "handover_note_en"
-   ],
-   "supporting_fields_note_zh": "supporting_fields 为信息性字段：实现不对其施加存在性或取值校验。node_id 用于把一条交接实例锚到采用方节点图层中的一个真实点位；blocking_reference 用于登记暂缓所依据的既有状态字段（本包 OP-04 引用其 ai_off_continuity_status）；provenance 用于逐条登记各字段取值的推出来源。",
-   "supporting_fields_en_note": "supporting_fields are informative: implementations apply no presence or value check. node_id anchors an instance to a real feature in the adopter's node layer; blocking_reference registers the existing status field a hold rests on (in this package OP-04 cites its ai_off_continuity_status); provenance registers, item by item, where each field value was derived from.",
-   "validity_rule_zh": "声明了 handover_ledger 的样例，其必填字段缺一即记 HANDOVER_FIELD_MISSING（冒号后接字段名），该次交接不得计入已完成交接；带 required_when 的字段在触发条件成立时同样必填。未声明本块的样例不适用本组件。",
-   "validity_rule_en": "Where a fixture declares a handover_ledger, any missing required field records HANDOVER_FIELD_MISSING with the field name after a colon and the handover may not count as completed; a field carrying required_when is equally required once its condition holds. A fixture declaring no such block does not engage this component.",
-   "station_sequence_rule_zh": "四个位序不可调换：人工窗口先于一切 AI 构件设立，退出回执位永远在最后一步之后仍然在场。顺序是判据而不是布置建议。",
-   "station_sequence_rule_en": "The four stations may not be rearranged: the staffed window stands before any AI component, and the exit-receipt station remains present after the last step. The order is a criterion, not a layout suggestion.",
-   "station_sequence_source_zh": "位序条文与四个位序的编号、名称逐字取自 geometry/public_space.geojson#PUBLIC-007 的 service_desk 属性组，并与 visual/assets/service-desk-gonogo.json 的载体描述一致；本组件不改写该处任何一个字。",
-   "station_sequence_source_en": "The sequence text and the numbering and names of the four stations are verbatim from the service_desk attribute group of geometry/public_space.geojson#PUBLIC-007 and agree with the carrier description in visual/assets/service-desk-gonogo.json; this component rewrites not one word of either.",
-   "canonical_station_sequence": [
-    {
-     "position": 1,
-     "station_id": "SD-1",
-     "name_zh": "人工窗口",
-     "name_en": "Staffed window",
-     "ai_layer": false
-    },
-    {
-     "position": 2,
-     "station_id": "SD-2",
-     "name_zh": "多通道信息位",
-     "name_en": "Multi-channel information point",
-     "ai_layer": false
-    },
-    {
-     "position": 3,
-     "station_id": "SD-3",
-     "name_zh": "AI 开关",
-     "name_en": "AI switch",
-     "ai_layer": true
-    },
-    {
-     "position": 4,
-     "station_id": "SD-4",
-     "name_zh": "退出回执位",
-     "name_en": "Exit-receipt station",
-     "ai_layer": false
-    }
-   ],
-   "canonical_station_sequence_note_zh": "四位序中只有 AI 开关位属 AI 层；G3 结论若为「关闭 AI 层保留服务」，其余三位继续运行。ai_layer 为信息性标注，不施加机器校验。",
-   "canonical_station_sequence_note_en": "Of the four stations only the AI switch belongs to the AI layer; where G3 concludes close the AI layer and retain the service, the other three keep running. ai_layer is an informative marker and carries no machine check.",
-   "hold_is_not_a_violation_rule_zh": "暂缓与拒收本身不是违例，而是判据要求的诚实状态：一个前提未证成立的节点，其正确的交接状态就是暂缓并留人在岗，而不是签一份看上去正常的接收单。违例的是把未决项抹掉、把在岗人撤走、或把三项处置写成第四种。",
-   "hold_is_not_a_violation_rule_en": "A hold or a refusal is not itself a violation but the honest state the criteria require: where a node's premise is unproven, the correct handover state is a hold with someone left on duty, not a slip that looks normal. What violates is wiping the open items, withdrawing the person on duty, or writing a fourth action in place of the three.",
-   "service_desk_scope_rule_zh": "位序判据的触发输入是 service_desk_present：本包十条交接实例中仅 OP-04 声明为 true（该节点由 geometry/public_space.geojson#PUBLIC-007 承接，服务桌即安装于其上），其余九条声明为 false，三项位序字段可缺席且不违例。",
-   "service_desk_scope_rule_en": "The triggering input of the sequence criteria is service_desk_present: of the ten handover instances in this package only OP-04 declares it true (that node is carried by geometry/public_space.geojson#PUBLIC-007, on which the desk is installed); the other nine declare false and may leave the three station fields absent without violating."
   }
  ],
  "version_governance": {
@@ -1129,26 +824,6 @@
   }
  ],
  "revision_history": [
-  {
-   "version": "0.5.0",
-   "date": "2026-08-18",
-   "change_receipt_id": "CR-2026-08-18-009",
-   "driver": "维护方兑现正文登记的待议项：双联交接结构自 v0.4 起以「本节点先行试运行、升格提议按版本治理登记为 v0.4 之后待议项」的形式挂账，本版按登记兑现并同时闭合服务桌四位序无机器判据这一缺口 / the maintainer discharges an open item the prose registered: from v0.4 the two-part handover structure was carried as trial-run-at-one-node with its promotion registered under version governance as pending beyond v0.4; this version honours that registration and closes the gap of the service desk's four stations having no machine criterion",
-   "changes_zh": [
-    "新增第六组件「双联交接台账」：交出方与接收方须为不同角色并各自署名、未决项随单移交不得在交接时清空、接收方在接收／拒收／暂缓三项中选一、拒收与暂缓须写明理由且上一责任方继续在岗",
-    "服务桌四位序（人工窗口→多通道信息位→AI 开关→退出回执位）由布置说明升格为位序判据：位序不可调换，人工窗口先于一切 AI 构件设立，退出回执位在最后一步之后仍然在场",
-    "违例码登记表新增九码，触发输入域一律为 handover_ledger 块",
-    "十个 OP 节点各实例化一条交接台账并逐条登记推出来源；OP-04 按其既有 ai_off_continuity_status 如实登记为暂缓在岗态，不写成正常可交接",
-    "桌面样例由四十条扩至六十条：十条节点基线与十条按 risk.json 风险注入的缺陷变体"
-   ],
-   "changes_en": [
-    "a sixth component, the two-part handover ledger: the handing-over and receiving parties must be different roles and each signs, open items travel on the slip and are never cleared at handover, the receiver signs exactly one of accept / refuse / hold, and a refusal or hold states a reason while the previous party stays on duty",
-    "the service desk's four stations (staffed window, multi-channel information point, AI switch, exit-receipt station) rise from a layout description to a sequence criterion: the order may not be rearranged, the staffed window is established before any AI component, and the exit-receipt station is present after the last step",
-    "nine new violation codes in the registry, every one triggered by the handover_ledger block",
-    "one handover ledger instantiated for each of the ten OP nodes with its derivation registered item by item; OP-04 is registered truthfully as a hold with someone on duty, per its existing ai_off_continuity_status, and never as a normal completed handover",
-    "the tabletop fixtures grow from forty to sixty: ten node baselines and ten defect variants injected from the risk register"
-   ]
-  },
   {
    "version": "0.4.0",
    "date": "2026-08-16",
@@ -1272,8 +947,8 @@
  "date_convention_zh": "本包全部 SEB 文件（规范、样例、回执、快照登记、采用登记）中的日期均为北京时间（UTC+8）日历日；采用登记另附 UTC 时刻字段",
  "date_convention_en": "Every date in every SEB file of this package (spec, fixtures, receipts, snapshot register, adoption register) is a Beijing-time (UTC+8) calendar day; adoption entries additionally carry a UTC timestamp field",
  "violation_code_registry": {
-  "note_zh": "本表为全部判定码的规范名与语义，两个参考实现共用；实现不得发明本表之外的判定码（v0.3.1 前两实现各自编码缺字段/枚举违例，该缺口登记于 CR-2026-08-15-005） v0.4.0 起每码增设 applies_when 触发输入域：实现须在其输入含该触发输入时执行对应校验；触发输入在某实现的输入类型中结构性缺席（如链复演包不含测量声明），该码在该实现内不可能触发，属输入域事实而非实现缺口，两实现共用同一码集与同一行为的承诺仍然成立。 applies_when 的字段路径语义：level_claim 指输入中的 level_claim 键；历史档案在 v0.3.1 之前使用的 claimed_level 属旧词汇，不作触发键。 v0.5.0 新增第六组件双联交接台账的九个判定码，触发输入域一律为样例的 handover_ledger 块；该块在链复演包的输入类型中结构性缺席，九码在该实现内不可能触发。",
-  "note_en": "Canonical names and semantics of every verdict code, shared by both reference implementations; an implementation may not invent codes outside this table (before v0.3.1 the two implementations each improvised codes for missing fields and enum violations — registered in CR-2026-08-15-005) From v0.4.0 every code carries applies_when, its triggering input domain: an implementation must run the check whenever its input holds that trigger; where the trigger is structurally absent from an implementation's input type (the chain replay package holds no measurement declaration), the code cannot fire there — a fact of the input domain, not an implementation gap, so the promise of one code set and one behaviour across both implementations still holds. Field-path semantics of applies_when: level_claim means the level_claim key of the input; the claimed_level wording used by pre-v0.3.1 archives is legacy vocabulary and never a trigger. v0.5.0 adds the nine codes of the sixth component, the two-part handover ledger, whose triggering input is always the fixture's handover_ledger block; that block is structurally absent from the chain replay package's input type, so none of the nine can fire there.",
+  "note_zh": "本表为全部判定码的规范名与语义，两个参考实现共用；实现不得发明本表之外的判定码（v0.3.1 前两实现各自编码缺字段/枚举违例，该缺口登记于 CR-2026-08-15-005） v0.4.0 起每码增设 applies_when 触发输入域：实现须在其输入含该触发输入时执行对应校验；触发输入在某实现的输入类型中结构性缺席（如链复演包不含测量声明），该码在该实现内不可能触发，属输入域事实而非实现缺口，两实现共用同一码集与同一行为的承诺仍然成立。 applies_when 的字段路径语义：level_claim 指输入中的 level_claim 键；历史档案在 v0.3.1 之前使用的 claimed_level 属旧词汇，不作触发键。",
+  "note_en": "Canonical names and semantics of every verdict code, shared by both reference implementations; an implementation may not invent codes outside this table (before v0.3.1 the two implementations each improvised codes for missing fields and enum violations — registered in CR-2026-08-15-005) From v0.4.0 every code carries applies_when, its triggering input domain: an implementation must run the check whenever its input holds that trigger; where the trigger is structurally absent from an implementation's input type (the chain replay package holds no measurement declaration), the code cannot fire there — a fact of the input domain, not an implementation gap, so the promise of one code set and one behaviour across both implementations still holds. Field-path semantics of applies_when: level_claim means the level_claim key of the input; the claimed_level wording used by pre-v0.3.1 archives is legacy vocabulary and never a trigger.",
   "codes": {
    "NODE_FIELD_MISSING": "必填字段缺失或非字符串 / required field absent or not a string（严格 string 类型，实现不得以字符串强转弱化 / strict string type; no implementation may weaken it by coercion）",
    "NODE_ENUM_INVALID": "字段取值不在允许集合内 / value outside the allowed set",
@@ -1347,42 +1022,6 @@
    "SAMPLE_INSUFFICIENT_CLAIMED_FAIR": {
     "meaning_zh": "样本不足仍写成公平或等价 / insufficient samples written up as fair or equivalent",
     "applies_when": "measurement_declaration present"
-   },
-   "HANDOVER_FIELD_MISSING": {
-    "meaning_zh": "双联交接台账的必填字段缺失，冒号后接字段名 / a required field of the two-part handover ledger is absent, field name after the colon",
-    "applies_when": "handover_ledger present"
-   },
-   "HANDOVER_ROLES_NOT_SEPARATED": {
-    "meaning_zh": "交出方与接收方为同一角色 / the handing-over and receiving parties are the same role",
-    "applies_when": "handover_ledger present"
-   },
-   "HANDOVER_SIGNATURE_MISSING": {
-    "meaning_zh": "两方署名缺其一或全缺 / one or both of the two signatures is absent",
-    "applies_when": "handover_ledger present"
-   },
-   "HANDOVER_OPEN_ITEMS_CLEARED": {
-    "meaning_zh": "存在未决项却在交接时被清空 / open items existed and were cleared at handover",
-    "applies_when": "handover_ledger present"
-   },
-   "HANDOVER_RECEIPT_ACTION_INVALID": {
-    "meaning_zh": "接收方处置不在接收、拒收、暂缓三项之内 / the receiver's action is none of accept, refuse or hold",
-    "applies_when": "handover_ledger present"
-   },
-   "HANDOVER_REFUSAL_UNSTAFFED": {
-    "meaning_zh": "拒收或暂缓未写明理由，或上一责任方未继续在岗 / a refusal or hold states no reason, or the previous party is not kept on duty",
-    "applies_when": "handover_ledger present with receipt_action refuse or hold"
-   },
-   "HANDOVER_STATION_SEQUENCE_INVALID": {
-    "meaning_zh": "服务桌四位序与规范位序不逐位相等 / the four service-desk stations do not equal the canonical sequence position by position",
-    "applies_when": "handover_ledger present"
-   },
-   "STAFFED_WINDOW_NOT_FIRST": {
-    "meaning_zh": "人工窗口未先于一切 AI 构件设立 / the staffed window was not established before every AI component",
-    "applies_when": "handover_ledger present"
-   },
-   "EXIT_RECEIPT_STATION_ABSENT": {
-    "meaning_zh": "退出回执位在最后一步之后不在场 / the exit-receipt station is not present after the last step",
-    "applies_when": "handover_ledger present"
    }
   }
  },
@@ -1407,36 +1046,26 @@
     "file": "visual/assets/seb-spec-v0.3.1.json",
     "upstream_commit": "93e1efcd1",
     "sha256": "461bc72a82781f39e140abf033040f738b81647ce15fb4df3234ced10eadc018"
-   },
-   {
-    "version": "0.4.0",
-    "file": "visual/assets/seb-spec-v0.4.0.json",
-    "upstream_commit": "f405686ee",
-    "sha256": "efc58de8c327100be67e12b4bdf5b710c3b4cd061ed16d00cb1d980f78f5ddfb"
    }
   ]
  },
  "reference_implementations": {
-  "note_zh": "两个参考实现共用本文件的判据与违例码登记表；判定行为差异一律视为缺陷并登记失败样本；组件覆盖差异按登记表 applies_when 的输入域语义如实登记，不视为行为不一致",
-  "note_en": "Both reference implementations share this file's criteria and violation-code registry; any behavioural divergence is a defect and registers a failure sample; a difference in component coverage is registered honestly under the applies_when input-domain semantics and is not a behavioural divergence",
+  "note_zh": "两个参考实现共用本文件的判据与违例码登记表；判定行为差异一律视为缺陷并登记失败样本",
+  "note_en": "Both reference implementations share this file's criteria and violation-code registry; any behavioural divergence is a defect and registers a failure sample",
   "implementations": [
    {
     "file": "visual/assets/seb-tabletop-run.js",
-    "runner_version": "0.5.0",
+    "runner_version": "0.4.0",
     "role_zh": "通用桌面校验器：判读规范+样例,可随快照被第三方整体取走",
     "role_en": "general tabletop checker: reads spec plus fixtures, portable with a snapshot",
-    "node_support": ">=18",
-    "component_coverage_zh": "六个组件全部执行",
-    "component_coverage_en": "executes all six components"
+    "node_support": ">=18"
    },
    {
     "file": "visual/assets/seb-op04-chain-run.js",
     "runner_version": "0.4.0",
     "role_zh": "本包专用证据链复演器：绑定本包 geometry 数据与 OP-04 档案,不是通用 SEB 运行器;LineString 仅支持两点线段并在超限时报错拒跑",
     "role_en": "package-specific evidence-chain replayer bound to this package's geometry and the OP-04 archive; not a general SEB runner; LineStrings support two-point segments only and any longer geometry refuses the run",
-    "node_support": ">=18",
-    "component_coverage_zh": "五个组件；输入类型不含 handover_ledger，第六组件的九码结构性不触发，v0.5.0 无须改动",
-    "component_coverage_en": "five components; its input type holds no handover_ledger, so the sixth component's nine codes cannot fire and it needed no change at v0.5.0"
+    "node_support": ">=18"
    }
   ]
  }

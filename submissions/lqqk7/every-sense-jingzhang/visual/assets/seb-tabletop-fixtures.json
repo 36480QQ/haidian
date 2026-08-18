@@ -1,9 +1,9 @@
 {
  "fixtures_id": "seb-tabletop-fixtures",
- "version": "0.4.0",
+ "version": "0.5.0",
  "consumes": {
   "spec": "visual/assets/seb-spec.json",
-  "spec_version": "0.4.0",
+  "spec_version": "0.5.0",
   "node_source_of_record": "../../geometry/constraints.geojson",
   "runner": "visual/assets/seb-tabletop-run.js",
   "node_source_of_record_note": "相对本文件所在目录解析；展示名 geometry/constraints.geojson / resolved relative to this file's directory; display name geometry/constraints.geojson"
@@ -2054,6 +2054,2802 @@
    "expected_reasons": [
     "SAMPLE_INSUFFICIENT_CLAIMED_FAIR"
    ]
+  },
+  {
+   "fixture_id": "HL-P1",
+   "polarity": "positive",
+   "title_zh": "OP-01 多模态到达校正点 的双联交接实例（L2）",
+   "title_en": "The two-part handover instance at OP-01, the multimodal arrival correction point (L2)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-01，申报等级 L2 与该节点既有闸门 G2 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点未登记服务桌，三项位序字段按 service_desk_present 为 false 不触发。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-01, the claimed level L2 agrees with the gate_binding of the node's existing gate G2, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. This node registers no service desk, so the three station fields do not engage, service_desk_present being false.",
+   "node": {
+    "id": "OP-01",
+    "scenario_id": "S01",
+    "scenario_card_id": "S01",
+    "key_area_id": "zhongzhiyuan_ai_acceleration_area",
+    "ai_off_path": "固定多通道导视与有人求助",
+    "human_handoff": "现场无障碍服务人员接管并记录绕行",
+    "gate_id": "G2",
+    "operating_mode": "AI开关成对任务测试",
+    "responsible_role": "未来经授权的场地运营与无障碍专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-01",
+    "handing_over_role": "未来经授权的场地运营与无障碍专业团队",
+    "receiving_role": "现场无障碍服务人员接管并记录绕行",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-01",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-01.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-01.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场无障碍服务人员接管并记录绕行」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L2",
+    "entry_condition": "受控环境内完成同一参与者、同一任务的 AI 开启与关闭成对协议，合理便利与退出方式事先约定",
+    "stop_condition": "替代路径、人工接管或参与条件任一未闭合，或以内部演示替代参与者证据",
+    "recovery_evidence": "问题日志、匿名化测试证据、故障绕行与维护卡",
+    "accountable_operator": "测试主持人、技术安全人员与参与者代表"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-P2",
+   "polarity": "positive",
+   "title_zh": "OP-02 低刺激替代线恢复点 的双联交接实例（L1）",
+   "title_en": "The two-part handover instance at OP-02, the lower-stimulation alternative-route recovery point (L1)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-02，申报等级 L1 与该节点既有闸门 G1 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点未登记服务桌，三项位序字段按 service_desk_present 为 false 不触发。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-02, the claimed level L1 agrees with the gate_binding of the node's existing gate G1, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. This node registers no service desk, so the three station fields do not engage, service_desk_present being false.",
+   "node": {
+    "id": "OP-02",
+    "scenario_id": "S02",
+    "scenario_card_id": "S02",
+    "key_area_id": "beijing_ai_origin_community",
+    "ai_off_path": "静态低刺激路线、纸质提示与安静停靠",
+    "human_handoff": "现场服务人员提供非数字引导与退出协助",
+    "gate_id": "G1",
+    "operating_mode": "可逆原型与封闭体验测试",
+    "responsible_role": "未来经授权的场地运营与共同设计协调团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-02",
+    "handing_over_role": "未来经授权的场地运营与共同设计协调团队",
+    "receiving_role": "现场服务人员提供非数字引导与退出协助",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-02",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-02.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营与共同设计协调团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-02.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场服务人员提供非数字引导与退出协助」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L1",
+    "entry_condition": "构件可安装可撤除、不阻断连续路径，并附维护卡与故障绕行方案",
+    "stop_condition": "构件不可撤回、不可维修，或阻断轮椅与婴儿车通行",
+    "recovery_evidence": "安装撤除测试记录、场地复核结论、维护责任确认",
+    "accountable_operator": "产品设计、安全与维护人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-P3",
+   "polarity": "positive",
+   "title_zh": "OP-03 多通道服务转人工点 的双联交接实例（L2）",
+   "title_en": "The two-part handover instance at OP-03, the multi-channel service-to-staff point (L2)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-03，申报等级 L2 与该节点既有闸门 G2 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点未登记服务桌，三项位序字段按 service_desk_present 为 false 不触发。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-03, the claimed level L2 agrees with the gate_binding of the node's existing gate G2, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. This node registers no service desk, so the three station fields do not engage, service_desk_present being false.",
+   "node": {
+    "id": "OP-03",
+    "scenario_id": "S03",
+    "scenario_card_id": "S03",
+    "key_area_id": "beijing_ai_origin_community",
+    "ai_off_path": "易读文本、书面流程与人工解释",
+    "human_handoff": "具备相应服务能力的人工人员核对、解释与纠错",
+    "gate_id": "G2",
+    "operating_mode": "AI开关成对任务测试",
+    "responsible_role": "未来经授权的公共服务运营与无障碍沟通专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-03",
+    "handing_over_role": "未来经授权的公共服务运营与无障碍沟通专业团队",
+    "receiving_role": "具备相应服务能力的人工人员核对、解释与纠错",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-03",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-03.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的公共服务运营与无障碍沟通专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-03.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「具备相应服务能力的人工人员核对、解释与纠错」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L2",
+    "entry_condition": "受控环境内完成同一参与者、同一任务的 AI 开启与关闭成对协议，合理便利与退出方式事先约定",
+    "stop_condition": "替代路径、人工接管或参与条件任一未闭合，或以内部演示替代参与者证据",
+    "recovery_evidence": "问题日志、匿名化测试证据、故障绕行与维护卡",
+    "accountable_operator": "测试主持人、技术安全人员与参与者代表"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-P4",
+   "polarity": "positive",
+   "title_zh": "OP-04 连续通行断点共测点 的双联交接实例（L0）",
+   "title_en": "The two-part handover instance at OP-04, the continuity-breakpoint joint test point (L0)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-04，申报等级 L0 与该节点既有闸门 G0 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点的处置为暂缓而非接收：其 ai_off_continuity_status 登记为前提未证，暂缓并留人在岗才是如实的交接状态。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-04, the claimed level L0 agrees with the gate_binding of the node's existing gate G0, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. The action here is a hold rather than an acceptance: the node's ai_off_continuity_status registers an unproven premise, and a hold with someone on duty is the truthful handover state.",
+   "node": {
+    "id": "OP-04",
+    "scenario_id": "S04",
+    "scenario_card_id": "S04",
+    "key_area_id": "dazhongsi_ai_industry_cluster",
+    "ai_off_path": "现场人工指引与无障碍替代通行方案",
+    "human_handoff": "无障碍专业人员与参与者代表共同复核断点",
+    "gate_id": "G0",
+    "operating_mode": "资料与许可闸门下的现场审计准备",
+    "responsible_role": "未来经授权的场地运营与无障碍专业团队"
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-04",
+    "handing_over_role": "未来经授权的场地运营与无障碍专业团队",
+    "receiving_role": "无障碍专业人员与参与者代表共同复核断点",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05",
+     "R-06"
+    ],
+    "receipt_action": "hold",
+    "refusal_reason": "本节点的 AI 关闭等价路径缺少空间前提，须在 JZ-01 审计中优先核验东西向连续通道；前提未证成立之前不接收本单 / the AI-off equivalent path at this node lacks its spatial premise and the east-west continuous route must be verified first in the JZ-01 audit; the slip is not accepted until the premise is established",
+    "previous_party_remains_on_duty": true,
+    "blocking_reference": "geometry/constraints.geojson#OP-04.ai_off_continuity_status = premise_unproven_pending_site_audit",
+    "service_desk_present": true,
+    "station_sequence": [
+     "SD-1",
+     "SD-2",
+     "SD-3",
+     "SD-4"
+    ],
+    "staffed_window_precedes_ai_components": true,
+    "exit_receipt_station_present_after_last_step": true,
+    "handover_note_zh": "本单为暂缓在岗态，不是已完成交接：前提未证成立时暂缓是判据要求的诚实状态，违例的是把未决项抹掉、把在岗人撤走或自造第四种处置。",
+    "handover_note_en": "This slip records a hold with someone on duty, not a completed handover: where the premise is unproven a hold is the honest state the criteria require, and what would violate is wiping the open items, withdrawing the person on duty, or inventing a fourth action.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-04",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-04.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-04.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「无障碍专业人员与参与者代表共同复核断点」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05、risk.json#R-06",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记；OP-04 另带 R-06 空间争议，其 ai_off_continuity_status 登记为前提未证",
+      "derivation_en": "the open items travelling on the slip are registered by risk id; OP-04 additionally carries R-06 spatial dispute, its ai_off_continuity_status being registered as an unproven premise"
+     },
+     {
+      "field": "receipt_action",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "取 hold 而不是 accept：该节点的 ai_off_continuity_status 为 premise_unproven_pending_site_audit，AI 关闭等价路径的空间前提尚未证成立，正确的交接状态是暂缓并留人在岗，不是签一份看上去正常的接收单",
+      "derivation_en": "hold rather than accept: the node's ai_off_continuity_status reads premise_unproven_pending_site_audit, the spatial premise of its AI-off equivalent path is not established, and the correct handover state is a hold with someone left on duty rather than a slip that looks normal"
+     },
+     {
+      "field": "refusal_reason",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_note_zh 与 visual/assets/seb-op04-chain-data.json",
+      "derivation_zh": "理由逐字取自该节点既有的 ai_off_continuity_note_zh 的结论句与链复演档案的本轮结论，不新写理由",
+      "derivation_en": "the reason is taken verbatim from the conclusion sentence of the node's existing ai_off_continuity_note_zh and from the ruling of the chain replay archive; no new reason is written"
+     },
+     {
+      "field": "previous_party_remains_on_duty",
+      "source": "proposal.md「交接是一份双联单」段与 risk.json#R-06 resume_condition",
+      "derivation_zh": "条文原文「拒收与暂缓必须写明理由并触发上一责任方继续在岗」；R-06 的恢复条件要求完成现场测绘与专业冲突审查，在此之前该点位不得处于无人负责状态",
+      "derivation_en": "the prose states that a refusal or hold must state a reason and keep the previous responsible party on duty; R-06's resume condition requires a field survey and professional conflict review, and until then the node may not be left with nobody accountable"
+     },
+     {
+      "field": "blocking_reference",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "暂缓所依据的既有状态字段，供复核者直接回到几何文件核对，而不必相信本样例的转述",
+      "derivation_en": "the existing status field the hold rests on, so a reviewer can go straight back to the geometry file rather than trust this fixture's paraphrase"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 true：PUBLIC-007 承接 OP-04 且其 service_desk 属性组登记万感服务桌安装于其上，位序判据因此在本节点触发",
+      "derivation_en": "true: PUBLIC-007 carries OP-04 and its service_desk attribute group registers the Every-Sense desk as installed on it, so the sequence criteria engage at this node"
+     },
+     {
+      "field": "station_sequence",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_four_position_sequence",
+      "derivation_zh": "四个位序标识与顺序逐字取自 PUBLIC-007 的四位序属性组（SD-1 人工窗口、SD-2 多通道信息位、SD-3 AI 开关、SD-4 退出回执位），本实例不改写其中任何一位",
+      "derivation_en": "the four station ids and their order are verbatim from the four-station attribute group of PUBLIC-007 (SD-1 staffed window, SD-2 multi-channel information point, SD-3 AI switch, SD-4 exit-receipt station), and this instance rewrites none of them"
+     },
+     {
+      "field": "staffed_window_precedes_ai_components",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh 与 visual/assets/service-desk-gonogo.json#GD-6",
+      "derivation_zh": "条文原文「人工窗口先于一切 AI 构件设立」；开办条件档案 GD-6 把该句登记为已确定的设计判据，待定的只是资源",
+      "derivation_en": "the stated rule that the staffed window stands before any AI component; readiness item GD-6 registers that sentence as a settled design criterion, with only the resources outstanding"
+     },
+     {
+      "field": "exit_receipt_station_present_after_last_step",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh",
+      "derivation_zh": "条文原文「退出回执位永远在最后一步之后仍然在场」；PUBLIC-007 另登记四位序中只有 AI 开关位属 AI 层，退出回执位属非 AI 通道，退役不得连带撤除",
+      "derivation_en": "the stated rule that the exit-receipt station remains present after the last step; PUBLIC-007 further registers that of the four stations only the AI switch belongs to the AI layer, so the exit-receipt station is a non-AI channel that decommissioning may not take with it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L0",
+    "entry_condition": "官方范围、路线与服务清单核对完成，伦理、同意与数据处置协议齐备，十六个场景已改写为可复测任务脚本",
+    "stop_condition": "责任主体或资料边界不清，或来源无法确认发布者、时间、许可与用途",
+    "recovery_evidence": "来源登记补齐、书面授权、协议签署与数据处置记录",
+    "accountable_operator": "资料所有者与数据治理人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-P5",
+   "polarity": "positive",
+   "title_zh": "OP-05 具身交互人工急停点 的双联交接实例（L2）",
+   "title_en": "The two-part handover instance at OP-05, the embodied-interaction emergency-stop point (L2)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-05，申报等级 L2 与该节点既有闸门 G2 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点未登记服务桌，三项位序字段按 service_desk_present 为 false 不触发。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-05, the claimed level L2 agrees with the gate_binding of the node's existing gate G2, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. This node registers no service desk, so the three station fields do not engage, service_desk_present being false.",
+   "node": {
+    "id": "OP-05",
+    "scenario_id": "S05",
+    "scenario_card_id": "S05",
+    "key_area_id": "zhongzhiyuan_ai_acceleration_area",
+    "ai_off_path": "不启用设备时保持可通行的人工服务与固定导视",
+    "human_handoff": "现场安全人员执行急停、人工接管与事件记录",
+    "gate_id": "G2",
+    "operating_mode": "受控封闭测试；未通过独立复核不得进入开放空间",
+    "responsible_role": "未来经授权的测试运营、安全与无障碍专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-05",
+    "handing_over_role": "未来经授权的测试运营、安全与无障碍专业团队",
+    "receiving_role": "现场安全人员执行急停、人工接管与事件记录",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-05",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-05.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的测试运营、安全与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-05.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场安全人员执行急停、人工接管与事件记录」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L2",
+    "entry_condition": "受控环境内完成同一参与者、同一任务的 AI 开启与关闭成对协议，合理便利与退出方式事先约定",
+    "stop_condition": "替代路径、人工接管或参与条件任一未闭合，或以内部演示替代参与者证据",
+    "recovery_evidence": "问题日志、匿名化测试证据、故障绕行与维护卡",
+    "accountable_operator": "测试主持人、技术安全人员与参与者代表"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-P6",
+   "polarity": "positive",
+   "title_zh": "OP-06 认知友好流程恢复点 的双联交接实例（L1）",
+   "title_en": "The two-part handover instance at OP-06, the cognitively accessible process recovery point (L1)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-06，申报等级 L1 与该节点既有闸门 G1 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点未登记服务桌，三项位序字段按 service_desk_present 为 false 不触发。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-06, the claimed level L1 agrees with the gate_binding of the node's existing gate G1, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. This node registers no service desk, so the three station fields do not engage, service_desk_present being false.",
+   "node": {
+    "id": "OP-06",
+    "scenario_id": "S06",
+    "scenario_card_id": "S06",
+    "key_area_id": "beijing_ai_origin_community",
+    "ai_off_path": "纸质分步流程、人工窗口与可返回步骤",
+    "human_handoff": "现场服务人员协助错误恢复且不以画像替代判断",
+    "gate_id": "G1",
+    "operating_mode": "可逆原型与封闭体验测试",
+    "responsible_role": "未来经授权的公共服务运营与共同设计协调团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-06",
+    "handing_over_role": "未来经授权的公共服务运营与共同设计协调团队",
+    "receiving_role": "现场服务人员协助错误恢复且不以画像替代判断",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-06",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-06.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的公共服务运营与共同设计协调团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-06.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场服务人员协助错误恢复且不以画像替代判断」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L1",
+    "entry_condition": "构件可安装可撤除、不阻断连续路径，并附维护卡与故障绕行方案",
+    "stop_condition": "构件不可撤回、不可维修，或阻断轮椅与婴儿车通行",
+    "recovery_evidence": "安装撤除测试记录、场地复核结论、维护责任确认",
+    "accountable_operator": "产品设计、安全与维护人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-P7",
+   "polarity": "positive",
+   "title_zh": "OP-07 多感官遗产解释选择点 的双联交接实例（L1）",
+   "title_en": "The two-part handover instance at OP-07, the multisensory heritage interpretation choice point (L1)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-07，申报等级 L1 与该节点既有闸门 G1 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点未登记服务桌，三项位序字段按 service_desk_present 为 false 不触发。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-07, the claimed level L1 agrees with the gate_binding of the node's existing gate G1, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. This node registers no service desk, so the three station fields do not engage, service_desk_present being false.",
+   "node": {
+    "id": "OP-07",
+    "scenario_id": "S07",
+    "scenario_card_id": "S07",
+    "key_area_id": "zhongzhiyuan_ai_acceleration_area",
+    "ai_off_path": "静态可读、可触与人工讲解替代路径",
+    "human_handoff": "人工讲解与内容维护人员处理纠错、暂停与反馈",
+    "gate_id": "G1",
+    "operating_mode": "可逆内容原型与授权核验",
+    "responsible_role": "未来经授权的文化内容运营与无障碍沟通专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-07",
+    "handing_over_role": "未来经授权的文化内容运营与无障碍沟通专业团队",
+    "receiving_role": "人工讲解与内容维护人员处理纠错、暂停与反馈",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-07",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-07.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的文化内容运营与无障碍沟通专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-07.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「人工讲解与内容维护人员处理纠错、暂停与反馈」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L1",
+    "entry_condition": "构件可安装可撤除、不阻断连续路径，并附维护卡与故障绕行方案",
+    "stop_condition": "构件不可撤回、不可维修，或阻断轮椅与婴儿车通行",
+    "recovery_evidence": "安装撤除测试记录、场地复核结论、维护责任确认",
+    "accountable_operator": "产品设计、安全与维护人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-P8",
+   "polarity": "positive",
+   "title_zh": "OP-08 无账户消费与维护退出点 的双联交接实例（L3）",
+   "title_en": "The two-part handover instance at OP-08, the account-free purchase and maintenance exit point (L3)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-08，申报等级 L3 与该节点既有闸门 G3 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点未登记服务桌，三项位序字段按 service_desk_present 为 false 不触发。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-08, the claimed level L3 agrees with the gate_binding of the node's existing gate G3, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. This node registers no service desk, so the three station fields do not engage, service_desk_present being false.",
+   "node": {
+    "id": "OP-08",
+    "scenario_id": "S08",
+    "scenario_card_id": "S08",
+    "key_area_id": "dazhongsi_ai_industry_cluster",
+    "ai_off_path": "现金、人工、无账户服务与可恢复的纸质凭据",
+    "human_handoff": "现场服务人员处理支付替代、纠错与退出",
+    "gate_id": "G3",
+    "operating_mode": "独立复核后方可限定试点或停止",
+    "responsible_role": "未来经授权的商业服务运营、维护与消费者权益专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "confirmed"
+    },
+    "non_ai_channel_floor": {
+     "visibility": "non_reducible",
+     "staffing": "non_reducible",
+     "budget": "non_reducible"
+    },
+    "ai_off_vendor_independence": "independent"
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-08",
+    "handing_over_role": "未来经授权的商业服务运营、维护与消费者权益专业团队",
+    "receiving_role": "现场服务人员处理支付替代、纠错与退出",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-08",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-08.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的商业服务运营、维护与消费者权益专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-08.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场服务人员处理支付替代、纠错与退出」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L3",
+    "entry_condition": "限定时段、限定范围对外开放；非 AI 通道的可见性、值守与预算三项底线书面确认，付款方确认到位，AI 关闭后的路径不需供应商在线配合",
+    "stop_condition": "非 AI 通道任一项底线被削减，或 AI 关闭后的路径退回到需供应商配合的状态",
+    "recovery_evidence": "底线承诺复核记录、供应商独立性演练记录、付款方书面确认",
+    "accountable_operator": "场地运营负责人、预算主体代表与独立复核人"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-P9",
+   "polarity": "positive",
+   "title_zh": "OP-09 活动感官负荷退出点 的双联交接实例（L4b）",
+   "title_en": "The two-part handover instance at OP-09, the event sensory-load exit point (L4b)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-09，申报等级 L4b 与该节点既有闸门 G3 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点未登记服务桌，三项位序字段按 service_desk_present 为 false 不触发。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-09, the claimed level L4b agrees with the gate_binding of the node's existing gate G3, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. This node registers no service desk, so the three station fields do not engage, service_desk_present being false.",
+   "node": {
+    "id": "OP-09",
+    "scenario_id": "S09",
+    "scenario_card_id": "S09",
+    "key_area_id": "dazhongsi_ai_industry_cluster",
+    "ai_off_path": "非数字告知、安静区与人工疏导路线",
+    "human_handoff": "现场活动安全人员执行限流、暂停与退出协助",
+    "gate_id": "G3",
+    "operating_mode": "独立复核后方可限定试点或停止",
+    "responsible_role": "未来经授权的活动运营、安全与无障碍专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "confirmed"
+    },
+    "non_ai_channel_floor": {
+     "visibility": "non_reducible",
+     "staffing": "non_reducible",
+     "budget": "non_reducible"
+    },
+    "ai_off_vendor_independence": "independent",
+    "decommission_path": "remove_ai_layer_retain_channels",
+    "decommission_removes_non_ai": false,
+    "residual_asset": "铸刻导视、触觉引导带、人工求助位与现金人工通道",
+    "review_due": "2027-06-30"
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-09",
+    "handing_over_role": "未来经授权的活动运营、安全与无障碍专业团队",
+    "receiving_role": "现场活动安全人员执行限流、暂停与退出协助",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-09",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-09.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的活动运营、安全与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-09.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场活动安全人员执行限流、暂停与退出协助」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L4b",
+    "entry_condition": "在 L4a 三项就绪证据基础上进入有期限常态运行，携带复审到期日，期满回 L3 由三方复核决定是否续期",
+    "stop_condition": "复审到期未复审，或非 AI 通道底线在运行期内被削减",
+    "recovery_evidence": "三方复核结论、底线承诺复核记录、运行期问题日志",
+    "accountable_operator": "运维主体负责人、使用者代表与独立复核人"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-P10",
+   "polarity": "positive",
+   "title_zh": "OP-10 AI关闭等价求助与疏散点 的双联交接实例（L4a）",
+   "title_en": "The two-part handover instance at OP-10, the AI-off equivalent help and evacuation point (L4a)",
+   "note_zh": "v0.5.0 新增第六组件的节点基线，十条之一。节点五个必填字段逐字取自 geometry/constraints.geojson#OP-10，申报等级 L4a 与该节点既有闸门 G3 的 gate_binding 一致；交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。本节点未登记服务桌，三项位序字段按 service_desk_present 为 false 不触发。",
+   "note_en": "One of the ten node baselines introduced with the sixth component in v0.5.0. The five required fields are verbatim from geometry/constraints.geojson#OP-10, the claimed level L4a agrees with the gate_binding of the node's existing gate G3, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. This node registers no service desk, so the three station fields do not engage, service_desk_present being false.",
+   "node": {
+    "id": "OP-10",
+    "scenario_id": "S10",
+    "scenario_card_id": "S10",
+    "key_area_id": "zhongzhiyuan_ai_acceleration_area",
+    "ai_off_path": "固定导视、人工求助、纸质疏散信息与可见状态标识",
+    "human_handoff": "现场应急与服务人员接管、降级并记录恢复条件",
+    "gate_id": "G3",
+    "operating_mode": "独立复核后方可限定试点或停止",
+    "responsible_role": "未来经授权的场地运营、应急与无障碍专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "confirmed"
+    },
+    "non_ai_channel_floor": {
+     "visibility": "non_reducible",
+     "staffing": "non_reducible",
+     "budget": "non_reducible"
+    },
+    "ai_off_vendor_independence": "independent",
+    "decommission_path": "remove_ai_layer_retain_channels",
+    "decommission_removes_non_ai": false,
+    "residual_asset": "铸刻导视、触觉引导带、人工求助位与现金人工通道"
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-10",
+    "handing_over_role": "未来经授权的场地运营、应急与无障碍专业团队",
+    "receiving_role": "现场应急与服务人员接管、降级并记录恢复条件",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-10",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-10.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营、应急与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-10.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场应急与服务人员接管、降级并记录恢复条件」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L4a",
+    "entry_condition": "预算主体书面确认、运维主体署名接收、独立接管演练通过三项就绪证据齐备，退役去向已声明且只撤 AI 层",
+    "stop_condition": "三项就绪证据任一项缺失，或退役处置会连带撤除非 AI 通道",
+    "recovery_evidence": "预算确认函、运维接收签署页、独立接管演练记录",
+    "accountable_operator": "运维主体负责人、预算主体代表与两名非原团队接管人"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "accept",
+   "expected_reasons": []
+  },
+  {
+   "fixture_id": "HL-N1",
+   "polarity": "negative",
+   "title_zh": "OP-01 注入 R-02：交接单没有交出方角色",
+   "title_en": "OP-01 with R-02 injected: The slip names no handing-over role",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-01 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-02 的停止条件是「工作包没有可确认的 A 角色、专业 R 角色、依赖清单或下一步授权」。本条把交出方角色整项删去：单子仍在流转，但交出这一班的是谁在制度上不存在，事后无从追到任何一个可被确认的角色。判定为拒绝。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-01 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-02 stops work where a package has no confirmable Accountable role, professional Responsible role, dependency list or next-step authorisation. Here the handing-over role is removed outright: the slip still circulates, but who handed the shift over does not exist institutionally and no confirmable role can be traced afterwards. The verdict is reject.",
+   "node": {
+    "id": "OP-01",
+    "scenario_id": "S01",
+    "scenario_card_id": "S01",
+    "key_area_id": "zhongzhiyuan_ai_acceleration_area",
+    "ai_off_path": "固定多通道导视与有人求助",
+    "human_handoff": "现场无障碍服务人员接管并记录绕行",
+    "gate_id": "G2",
+    "operating_mode": "AI开关成对任务测试",
+    "responsible_role": "未来经授权的场地运营与无障碍专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-01",
+    "receiving_role": "现场无障碍服务人员接管并记录绕行",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-01",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-01.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-01.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场无障碍服务人员接管并记录绕行」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L2",
+    "entry_condition": "受控环境内完成同一参与者、同一任务的 AI 开启与关闭成对协议，合理便利与退出方式事先约定",
+    "stop_condition": "替代路径、人工接管或参与条件任一未闭合，或以内部演示替代参与者证据",
+    "recovery_evidence": "问题日志、匿名化测试证据、故障绕行与维护卡",
+    "accountable_operator": "测试主持人、技术安全人员与参与者代表"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "HANDOVER_FIELD_MISSING:handing_over_role"
+   ],
+   "injected_risk_id": "R-02",
+   "injected_risk_title_zh": "实施复杂度",
+   "injected_risk_title_en": "Implementation complexity",
+   "injected_risk_pause_threshold_zh": "工作包没有可确认的 A 角色、专业 R 角色、依赖清单或下一步授权。",
+   "injected_risk_pause_threshold_en": "A work package has no confirmable Accountable role, professional Responsible role, dependency list, or next-step authorisation.",
+   "injected_risk_resume_condition_zh": "形成书面 RACI、工作边界、依赖责任和闸门记录，且授权范围与可撤回条件一致。",
+   "injected_risk_resume_condition_en": "A written RACI, work boundary, dependency responsibility, and gate record are established, and the authorised scope is consistent with the reversible conditions.",
+   "baseline_fixture_id": "HL-P1"
+  },
+  {
+   "fixture_id": "HL-N2",
+   "polarity": "negative",
+   "title_zh": "OP-02 注入 R-05：交出方与接收方写成同一角色",
+   "title_en": "OP-02 with R-05 injected: The handing-over and receiving parties are written as one role",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-02 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-05 的停止条件含「专业责任……缺失」。本条把接收方改写为与交出方完全相同的取值：一个角色对自己交接，第二联没有第二个人核对，专业责任的分离在单据层面被取消。判定为拒绝。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-02 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-05 stops work where professional responsibility is missing. Here the receiving role is rewritten to exactly the handing-over value: one role hands over to itself, no second person checks the second half, and the separation of professional responsibility is cancelled at the level of the slip. The verdict is reject.",
+   "node": {
+    "id": "OP-02",
+    "scenario_id": "S02",
+    "scenario_card_id": "S02",
+    "key_area_id": "beijing_ai_origin_community",
+    "ai_off_path": "静态低刺激路线、纸质提示与安静停靠",
+    "human_handoff": "现场服务人员提供非数字引导与退出协助",
+    "gate_id": "G1",
+    "operating_mode": "可逆原型与封闭体验测试",
+    "responsible_role": "未来经授权的场地运营与共同设计协调团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-02",
+    "handing_over_role": "未来经授权的场地运营与共同设计协调团队",
+    "receiving_role": "未来经授权的场地运营与共同设计协调团队",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-02",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-02.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营与共同设计协调团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-02.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场服务人员提供非数字引导与退出协助」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L1",
+    "entry_condition": "构件可安装可撤除、不阻断连续路径，并附维护卡与故障绕行方案",
+    "stop_condition": "构件不可撤回、不可维修，或阻断轮椅与婴儿车通行",
+    "recovery_evidence": "安装撤除测试记录、场地复核结论、维护责任确认",
+    "accountable_operator": "产品设计、安全与维护人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "HANDOVER_ROLES_NOT_SEPARATED"
+   ],
+   "injected_risk_id": "R-05",
+   "injected_risk_title_zh": "政策不确定性",
+   "injected_risk_title_en": "Policy uncertainty",
+   "injected_risk_pause_threshold_zh": "适用许可、官方资料、专业责任或开放边界缺失，且现有证据不足以支持下一闸门。",
+   "injected_risk_pause_threshold_en": "The applicable permit, official material, professional responsibility, or opening boundary is missing, and the existing evidence does not support the next gate.",
+   "injected_risk_resume_condition_zh": "取得与具体工作包相匹配的来源登记、专业复核或书面授权；不以无关材料替代。",
+   "injected_risk_resume_condition_en": "Source registration, professional review, or written authorisation matching the specific work package is obtained; unrelated material is never substituted.",
+   "baseline_fixture_id": "HL-P2"
+  },
+  {
+   "fixture_id": "HL-N3",
+   "polarity": "negative",
+   "title_zh": "OP-03 注入 R-01：接收方未署名，接手无从被记录",
+   "title_en": "OP-03 with R-01 injected: The receiver never signed, so the takeover cannot be recorded",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-03 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-01 的停止条件是「数据用途、最少字段、访问范围、撤回或到期处置任一项无法解释和记录」。本条把接收方署名改为未署名：谁在何时接手这一项无法被解释也无法被记录，事后复核只能停在一句口头移交上。判定为拒绝。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-03 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-01 stops work where any of purpose, minimum fields, access scope, withdrawal or time-bounded disposal cannot be explained and recorded. Here the receiving signature is set to unsigned: who took over and when can neither be explained nor recorded, and a later review has nothing but a spoken hand-off. The verdict is reject.",
+   "node": {
+    "id": "OP-03",
+    "scenario_id": "S03",
+    "scenario_card_id": "S03",
+    "key_area_id": "beijing_ai_origin_community",
+    "ai_off_path": "易读文本、书面流程与人工解释",
+    "human_handoff": "具备相应服务能力的人工人员核对、解释与纠错",
+    "gate_id": "G2",
+    "operating_mode": "AI开关成对任务测试",
+    "responsible_role": "未来经授权的公共服务运营与无障碍沟通专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-03",
+    "handing_over_role": "未来经授权的公共服务运营与无障碍沟通专业团队",
+    "receiving_role": "具备相应服务能力的人工人员核对、解释与纠错",
+    "handing_over_signature": true,
+    "receiving_signature": false,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-03",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-03.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的公共服务运营与无障碍沟通专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-03.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「具备相应服务能力的人工人员核对、解释与纠错」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L2",
+    "entry_condition": "受控环境内完成同一参与者、同一任务的 AI 开启与关闭成对协议，合理便利与退出方式事先约定",
+    "stop_condition": "替代路径、人工接管或参与条件任一未闭合，或以内部演示替代参与者证据",
+    "recovery_evidence": "问题日志、匿名化测试证据、故障绕行与维护卡",
+    "accountable_operator": "测试主持人、技术安全人员与参与者代表"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "HANDOVER_SIGNATURE_MISSING"
+   ],
+   "injected_risk_id": "R-01",
+   "injected_risk_title_zh": "数据隐私",
+   "injected_risk_title_en": "Data privacy",
+   "injected_risk_pause_threshold_zh": "数据用途、最少字段、访问范围、撤回或到期处置任一项无法解释和记录。",
+   "injected_risk_pause_threshold_en": "Any one of data purpose, minimum fields, access scope, withdrawal, or time-bounded disposal cannot be explained and recorded.",
+   "injected_risk_resume_condition_zh": "G0 批准协议，完成可撤回同意与处置演练，并由 G3 核验匿名化结果和实际处置记录。",
+   "injected_risk_resume_condition_en": "G0 approves the protocol, revocable consent and disposal are rehearsed, and G3 verifies the anonymisation outcome and the actual disposal record.",
+   "baseline_fixture_id": "HL-P3"
+  },
+  {
+   "fixture_id": "HL-N4",
+   "polarity": "negative",
+   "title_zh": "OP-04 注入 R-03：处置写成待定，异议既未接收也未拒收也未暂缓",
+   "title_en": "OP-04 with R-03 injected: The action is written as pending, so the objection is neither accepted, refused nor held",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-04 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-03 的停止条件含「持续异议未回应」。本条把接收方处置由暂缓改写为 pending：三项处置之外的第四种写法，看上去在走流程，实际把这一单停在一个没有责任人的状态，提出的异议既没有得到接收，也没有被拒绝或暂缓。判定为拒绝。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-04 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-03 stops work where sustained objections go unanswered. Here the receiver's action is rewritten from hold to pending: a fourth action outside the three, which looks like process while leaving the slip in a state with nobody accountable, the objection neither accepted nor refused nor held. The verdict is reject.",
+   "node": {
+    "id": "OP-04",
+    "scenario_id": "S04",
+    "scenario_card_id": "S04",
+    "key_area_id": "dazhongsi_ai_industry_cluster",
+    "ai_off_path": "现场人工指引与无障碍替代通行方案",
+    "human_handoff": "无障碍专业人员与参与者代表共同复核断点",
+    "gate_id": "G0",
+    "operating_mode": "资料与许可闸门下的现场审计准备",
+    "responsible_role": "未来经授权的场地运营与无障碍专业团队"
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-04",
+    "handing_over_role": "未来经授权的场地运营与无障碍专业团队",
+    "receiving_role": "无障碍专业人员与参与者代表共同复核断点",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05",
+     "R-06"
+    ],
+    "receipt_action": "pending",
+    "refusal_reason": "本节点的 AI 关闭等价路径缺少空间前提，须在 JZ-01 审计中优先核验东西向连续通道；前提未证成立之前不接收本单 / the AI-off equivalent path at this node lacks its spatial premise and the east-west continuous route must be verified first in the JZ-01 audit; the slip is not accepted until the premise is established",
+    "previous_party_remains_on_duty": true,
+    "blocking_reference": "geometry/constraints.geojson#OP-04.ai_off_continuity_status = premise_unproven_pending_site_audit",
+    "service_desk_present": true,
+    "station_sequence": [
+     "SD-1",
+     "SD-2",
+     "SD-3",
+     "SD-4"
+    ],
+    "staffed_window_precedes_ai_components": true,
+    "exit_receipt_station_present_after_last_step": true,
+    "handover_note_zh": "本单为暂缓在岗态，不是已完成交接：前提未证成立时暂缓是判据要求的诚实状态，违例的是把未决项抹掉、把在岗人撤走或自造第四种处置。",
+    "handover_note_en": "This slip records a hold with someone on duty, not a completed handover: where the premise is unproven a hold is the honest state the criteria require, and what would violate is wiping the open items, withdrawing the person on duty, or inventing a fourth action.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-04",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-04.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-04.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「无障碍专业人员与参与者代表共同复核断点」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05、risk.json#R-06",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记；OP-04 另带 R-06 空间争议，其 ai_off_continuity_status 登记为前提未证",
+      "derivation_en": "the open items travelling on the slip are registered by risk id; OP-04 additionally carries R-06 spatial dispute, its ai_off_continuity_status being registered as an unproven premise"
+     },
+     {
+      "field": "receipt_action",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "取 hold 而不是 accept：该节点的 ai_off_continuity_status 为 premise_unproven_pending_site_audit，AI 关闭等价路径的空间前提尚未证成立，正确的交接状态是暂缓并留人在岗，不是签一份看上去正常的接收单",
+      "derivation_en": "hold rather than accept: the node's ai_off_continuity_status reads premise_unproven_pending_site_audit, the spatial premise of its AI-off equivalent path is not established, and the correct handover state is a hold with someone left on duty rather than a slip that looks normal"
+     },
+     {
+      "field": "refusal_reason",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_note_zh 与 visual/assets/seb-op04-chain-data.json",
+      "derivation_zh": "理由逐字取自该节点既有的 ai_off_continuity_note_zh 的结论句与链复演档案的本轮结论，不新写理由",
+      "derivation_en": "the reason is taken verbatim from the conclusion sentence of the node's existing ai_off_continuity_note_zh and from the ruling of the chain replay archive; no new reason is written"
+     },
+     {
+      "field": "previous_party_remains_on_duty",
+      "source": "proposal.md「交接是一份双联单」段与 risk.json#R-06 resume_condition",
+      "derivation_zh": "条文原文「拒收与暂缓必须写明理由并触发上一责任方继续在岗」；R-06 的恢复条件要求完成现场测绘与专业冲突审查，在此之前该点位不得处于无人负责状态",
+      "derivation_en": "the prose states that a refusal or hold must state a reason and keep the previous responsible party on duty; R-06's resume condition requires a field survey and professional conflict review, and until then the node may not be left with nobody accountable"
+     },
+     {
+      "field": "blocking_reference",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "暂缓所依据的既有状态字段，供复核者直接回到几何文件核对，而不必相信本样例的转述",
+      "derivation_en": "the existing status field the hold rests on, so a reviewer can go straight back to the geometry file rather than trust this fixture's paraphrase"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 true：PUBLIC-007 承接 OP-04 且其 service_desk 属性组登记万感服务桌安装于其上，位序判据因此在本节点触发",
+      "derivation_en": "true: PUBLIC-007 carries OP-04 and its service_desk attribute group registers the Every-Sense desk as installed on it, so the sequence criteria engage at this node"
+     },
+     {
+      "field": "station_sequence",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_four_position_sequence",
+      "derivation_zh": "四个位序标识与顺序逐字取自 PUBLIC-007 的四位序属性组（SD-1 人工窗口、SD-2 多通道信息位、SD-3 AI 开关、SD-4 退出回执位），本实例不改写其中任何一位",
+      "derivation_en": "the four station ids and their order are verbatim from the four-station attribute group of PUBLIC-007 (SD-1 staffed window, SD-2 multi-channel information point, SD-3 AI switch, SD-4 exit-receipt station), and this instance rewrites none of them"
+     },
+     {
+      "field": "staffed_window_precedes_ai_components",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh 与 visual/assets/service-desk-gonogo.json#GD-6",
+      "derivation_zh": "条文原文「人工窗口先于一切 AI 构件设立」；开办条件档案 GD-6 把该句登记为已确定的设计判据，待定的只是资源",
+      "derivation_en": "the stated rule that the staffed window stands before any AI component; readiness item GD-6 registers that sentence as a settled design criterion, with only the resources outstanding"
+     },
+     {
+      "field": "exit_receipt_station_present_after_last_step",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh",
+      "derivation_zh": "条文原文「退出回执位永远在最后一步之后仍然在场」；PUBLIC-007 另登记四位序中只有 AI 开关位属 AI 层，退出回执位属非 AI 通道，退役不得连带撤除",
+      "derivation_en": "the stated rule that the exit-receipt station remains present after the last step; PUBLIC-007 further registers that of the four stations only the AI switch belongs to the AI layer, so the exit-receipt station is a non-AI channel that decommissioning may not take with it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L0",
+    "entry_condition": "官方范围、路线与服务清单核对完成，伦理、同意与数据处置协议齐备，十六个场景已改写为可复测任务脚本",
+    "stop_condition": "责任主体或资料边界不清，或来源无法确认发布者、时间、许可与用途",
+    "recovery_evidence": "来源登记补齐、书面授权、协议签署与数据处置记录",
+    "accountable_operator": "资料所有者与数据治理人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "HANDOVER_RECEIPT_ACTION_INVALID"
+   ],
+   "injected_risk_id": "R-03",
+   "injected_risk_title_zh": "公众接受度",
+   "injected_risk_title_en": "Public acceptance",
+   "injected_risk_pause_threshold_zh": "持续异议未回应、退出困难、替代路径不可用，或现场提示让人误解为强制服务。",
+   "injected_risk_pause_threshold_en": "Sustained objections go unanswered, withdrawal is difficult, the alternative route is unavailable, or on-site prompts are misread as a mandatory service.",
+   "injected_risk_resume_condition_zh": "共同设计修订完成，现场说明、退出和等价替代路径经参与者复核并保留公开变更回执。",
+   "injected_risk_resume_condition_en": "Co-design revision is complete, the on-site explanation, exit, and equivalent alternative route have been rechecked by participants, and a public change receipt is retained.",
+   "baseline_fixture_id": "HL-P4"
+  },
+  {
+   "fixture_id": "HL-N5",
+   "polarity": "negative",
+   "title_zh": "OP-05 注入 R-07：暂缓却无理由、无人在岗",
+   "title_en": "OP-05 with R-07 injected: A hold with no reason and nobody on duty",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-05 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-07 的停止条件含「人工接管……失效」。本条把处置改为暂缓，同时不写理由、把上一责任方在岗声明改为 false：现场处在没有人负责的状态下继续运行，这是最危险的一种「已交接」。判定为拒绝——暂缓本身不是违例，无理由且无人在岗的暂缓才是。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-05 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-07 stops work where human takeover fails. Here the action becomes a hold while no reason is stated and the previous party's on-duty declaration is set to false: the site keeps running with nobody accountable, the most dangerous form of a completed handover. The verdict is reject — a hold is no violation in itself; a hold with no reason and nobody on duty is.",
+   "node": {
+    "id": "OP-05",
+    "scenario_id": "S05",
+    "scenario_card_id": "S05",
+    "key_area_id": "zhongzhiyuan_ai_acceleration_area",
+    "ai_off_path": "不启用设备时保持可通行的人工服务与固定导视",
+    "human_handoff": "现场安全人员执行急停、人工接管与事件记录",
+    "gate_id": "G2",
+    "operating_mode": "受控封闭测试；未通过独立复核不得进入开放空间",
+    "responsible_role": "未来经授权的测试运营、安全与无障碍专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-05",
+    "handing_over_role": "未来经授权的测试运营、安全与无障碍专业团队",
+    "receiving_role": "现场安全人员执行急停、人工接管与事件记录",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "hold",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-05",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-05.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的测试运营、安全与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-05.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场安全人员执行急停、人工接管与事件记录」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ],
+    "previous_party_remains_on_duty": false
+   },
+   "level_claim": {
+    "level_id": "L2",
+    "entry_condition": "受控环境内完成同一参与者、同一任务的 AI 开启与关闭成对协议，合理便利与退出方式事先约定",
+    "stop_condition": "替代路径、人工接管或参与条件任一未闭合，或以内部演示替代参与者证据",
+    "recovery_evidence": "问题日志、匿名化测试证据、故障绕行与维护卡",
+    "accountable_operator": "测试主持人、技术安全人员与参与者代表"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "HANDOVER_REFUSAL_UNSTAFFED"
+   ],
+   "injected_risk_id": "R-07",
+   "injected_risk_title_zh": "技术成熟度",
+   "injected_risk_title_en": "Technology maturity",
+   "injected_risk_pause_threshold_zh": "失败模式未记录，系统状态不可见，急停、固定信息、人工接管或 AI 关闭路径失效。",
+   "injected_risk_pause_threshold_en": "A failure mode is unrecorded, system state is not visible, or the emergency stop, fixed-information channel, human handover, or AI-off path fails.",
+   "injected_risk_resume_condition_zh": "封闭成对测试覆盖失败模式，故障绕行和人工接管通过演练，G3 明确限定开放条件。",
+   "injected_risk_resume_condition_en": "Closed paired testing covers the failure modes, the failure bypass and human handover pass rehearsal, and G3 sets explicit bounded-opening conditions.",
+   "baseline_fixture_id": "HL-P5"
+  },
+  {
+   "fixture_id": "HL-N6",
+   "polarity": "negative",
+   "title_zh": "OP-06 注入 R-08：未决项在交接时被清空",
+   "title_en": "OP-06 with R-08 injected: Open items are cleared at handover",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-06 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-08 的停止条件含「分母删除非完成与技术故障」。本条保留「存在未决项」的声明，同时把「在交接时清空」改为 true：下一班接到的是一张干净的单子，而干净只是因为没办完的事被抹掉了。这与分母删除失败样本是同一条纪律的两种表现。判定为拒绝。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-06 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-08 stops work where a denominator strips out non-completions and technical faults. Here the declaration that open items exist is kept while cleared-at-handover is set to true: the next shift receives a clean slip, clean only because the unfinished business was wiped. This and dropping failed samples from a denominator are two forms of one discipline. The verdict is reject.",
+   "node": {
+    "id": "OP-06",
+    "scenario_id": "S06",
+    "scenario_card_id": "S06",
+    "key_area_id": "beijing_ai_origin_community",
+    "ai_off_path": "纸质分步流程、人工窗口与可返回步骤",
+    "human_handoff": "现场服务人员协助错误恢复且不以画像替代判断",
+    "gate_id": "G1",
+    "operating_mode": "可逆原型与封闭体验测试",
+    "responsible_role": "未来经授权的公共服务运营与共同设计协调团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "to_be_confirmed"
+    }
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-06",
+    "handing_over_role": "未来经授权的公共服务运营与共同设计协调团队",
+    "receiving_role": "现场服务人员协助错误恢复且不以画像替代判断",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": true,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-06",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-06.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的公共服务运营与共同设计协调团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-06.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场服务人员协助错误恢复且不以画像替代判断」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L1",
+    "entry_condition": "构件可安装可撤除、不阻断连续路径，并附维护卡与故障绕行方案",
+    "stop_condition": "构件不可撤回、不可维修，或阻断轮椅与婴儿车通行",
+    "recovery_evidence": "安装撤除测试记录、场地复核结论、维护责任确认",
+    "accountable_operator": "产品设计、安全与维护人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "HANDOVER_OPEN_ITEMS_CLEARED"
+   ],
+   "injected_risk_id": "R-08",
+   "injected_risk_title_zh": "公平与包容性",
+   "injected_risk_title_en": "Equity and inclusion",
+   "injected_risk_pause_threshold_zh": "参与结构不足、合理便利缺失、撤回受阻，或分母删除非完成与技术故障。",
+   "injected_risk_pause_threshold_en": "The participation structure is insufficient, reasonable accommodation is missing, withdrawal is obstructed, or the denominator strips out non-completions and technical failures.",
+   "injected_risk_resume_condition_zh": "补齐参与结构与合理便利，修正协议和分母，参与者代表与独立专业人员共同签署 G3 复核记录。",
+   "injected_risk_resume_condition_en": "The participation structure and reasonable accommodation are completed, the protocol and denominator are corrected, and participant representatives and the independent professional co-sign the G3 review record.",
+   "baseline_fixture_id": "HL-P6"
+  },
+  {
+   "fixture_id": "HL-N7",
+   "polarity": "negative",
+   "title_zh": "OP-04 注入 R-06：四位序被调换，AI 开关排到人工窗口之前",
+   "title_en": "OP-04 with R-06 injected: The four stations are rearranged, putting the AI switch ahead of the staffed window",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-04 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-06 的停止条件是「OP 节点、路线或构件与真实通行、消防、防洪、文保、权属或维护需求发生未解冲突」。本条把位序改为 SD-3、SD-1、SD-2、SD-4：桌子还是那张桌子，四个位也都还在，但先遇到的是 AI 开关。位序是判据不是布置建议，逐位比对不通过即拒绝。判定为拒绝。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-04 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-06 stops work where an OP node, route or component has an unresolved conflict with real passage, fire safety, flood control, heritage protection, ownership or maintenance. Here the sequence becomes SD-3, SD-1, SD-2, SD-4: the same desk with all four stations still present, but the AI switch is what a user meets first. The order is a criterion rather than a layout suggestion, and a position-by-position mismatch refuses. The verdict is reject.",
+   "node": {
+    "id": "OP-04",
+    "scenario_id": "S04",
+    "scenario_card_id": "S04",
+    "key_area_id": "dazhongsi_ai_industry_cluster",
+    "ai_off_path": "现场人工指引与无障碍替代通行方案",
+    "human_handoff": "无障碍专业人员与参与者代表共同复核断点",
+    "gate_id": "G0",
+    "operating_mode": "资料与许可闸门下的现场审计准备",
+    "responsible_role": "未来经授权的场地运营与无障碍专业团队"
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-04",
+    "handing_over_role": "未来经授权的场地运营与无障碍专业团队",
+    "receiving_role": "无障碍专业人员与参与者代表共同复核断点",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05",
+     "R-06"
+    ],
+    "receipt_action": "hold",
+    "refusal_reason": "本节点的 AI 关闭等价路径缺少空间前提，须在 JZ-01 审计中优先核验东西向连续通道；前提未证成立之前不接收本单 / the AI-off equivalent path at this node lacks its spatial premise and the east-west continuous route must be verified first in the JZ-01 audit; the slip is not accepted until the premise is established",
+    "previous_party_remains_on_duty": true,
+    "blocking_reference": "geometry/constraints.geojson#OP-04.ai_off_continuity_status = premise_unproven_pending_site_audit",
+    "service_desk_present": true,
+    "station_sequence": [
+     "SD-3",
+     "SD-1",
+     "SD-2",
+     "SD-4"
+    ],
+    "staffed_window_precedes_ai_components": true,
+    "exit_receipt_station_present_after_last_step": true,
+    "handover_note_zh": "本单为暂缓在岗态，不是已完成交接：前提未证成立时暂缓是判据要求的诚实状态，违例的是把未决项抹掉、把在岗人撤走或自造第四种处置。",
+    "handover_note_en": "This slip records a hold with someone on duty, not a completed handover: where the premise is unproven a hold is the honest state the criteria require, and what would violate is wiping the open items, withdrawing the person on duty, or inventing a fourth action.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-04",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-04.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-04.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「无障碍专业人员与参与者代表共同复核断点」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05、risk.json#R-06",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记；OP-04 另带 R-06 空间争议，其 ai_off_continuity_status 登记为前提未证",
+      "derivation_en": "the open items travelling on the slip are registered by risk id; OP-04 additionally carries R-06 spatial dispute, its ai_off_continuity_status being registered as an unproven premise"
+     },
+     {
+      "field": "receipt_action",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "取 hold 而不是 accept：该节点的 ai_off_continuity_status 为 premise_unproven_pending_site_audit，AI 关闭等价路径的空间前提尚未证成立，正确的交接状态是暂缓并留人在岗，不是签一份看上去正常的接收单",
+      "derivation_en": "hold rather than accept: the node's ai_off_continuity_status reads premise_unproven_pending_site_audit, the spatial premise of its AI-off equivalent path is not established, and the correct handover state is a hold with someone left on duty rather than a slip that looks normal"
+     },
+     {
+      "field": "refusal_reason",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_note_zh 与 visual/assets/seb-op04-chain-data.json",
+      "derivation_zh": "理由逐字取自该节点既有的 ai_off_continuity_note_zh 的结论句与链复演档案的本轮结论，不新写理由",
+      "derivation_en": "the reason is taken verbatim from the conclusion sentence of the node's existing ai_off_continuity_note_zh and from the ruling of the chain replay archive; no new reason is written"
+     },
+     {
+      "field": "previous_party_remains_on_duty",
+      "source": "proposal.md「交接是一份双联单」段与 risk.json#R-06 resume_condition",
+      "derivation_zh": "条文原文「拒收与暂缓必须写明理由并触发上一责任方继续在岗」；R-06 的恢复条件要求完成现场测绘与专业冲突审查，在此之前该点位不得处于无人负责状态",
+      "derivation_en": "the prose states that a refusal or hold must state a reason and keep the previous responsible party on duty; R-06's resume condition requires a field survey and professional conflict review, and until then the node may not be left with nobody accountable"
+     },
+     {
+      "field": "blocking_reference",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "暂缓所依据的既有状态字段，供复核者直接回到几何文件核对，而不必相信本样例的转述",
+      "derivation_en": "the existing status field the hold rests on, so a reviewer can go straight back to the geometry file rather than trust this fixture's paraphrase"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 true：PUBLIC-007 承接 OP-04 且其 service_desk 属性组登记万感服务桌安装于其上，位序判据因此在本节点触发",
+      "derivation_en": "true: PUBLIC-007 carries OP-04 and its service_desk attribute group registers the Every-Sense desk as installed on it, so the sequence criteria engage at this node"
+     },
+     {
+      "field": "station_sequence",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_four_position_sequence",
+      "derivation_zh": "四个位序标识与顺序逐字取自 PUBLIC-007 的四位序属性组（SD-1 人工窗口、SD-2 多通道信息位、SD-3 AI 开关、SD-4 退出回执位），本实例不改写其中任何一位",
+      "derivation_en": "the four station ids and their order are verbatim from the four-station attribute group of PUBLIC-007 (SD-1 staffed window, SD-2 multi-channel information point, SD-3 AI switch, SD-4 exit-receipt station), and this instance rewrites none of them"
+     },
+     {
+      "field": "staffed_window_precedes_ai_components",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh 与 visual/assets/service-desk-gonogo.json#GD-6",
+      "derivation_zh": "条文原文「人工窗口先于一切 AI 构件设立」；开办条件档案 GD-6 把该句登记为已确定的设计判据，待定的只是资源",
+      "derivation_en": "the stated rule that the staffed window stands before any AI component; readiness item GD-6 registers that sentence as a settled design criterion, with only the resources outstanding"
+     },
+     {
+      "field": "exit_receipt_station_present_after_last_step",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh",
+      "derivation_zh": "条文原文「退出回执位永远在最后一步之后仍然在场」；PUBLIC-007 另登记四位序中只有 AI 开关位属 AI 层，退出回执位属非 AI 通道，退役不得连带撤除",
+      "derivation_en": "the stated rule that the exit-receipt station remains present after the last step; PUBLIC-007 further registers that of the four stations only the AI switch belongs to the AI layer, so the exit-receipt station is a non-AI channel that decommissioning may not take with it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L0",
+    "entry_condition": "官方范围、路线与服务清单核对完成，伦理、同意与数据处置协议齐备，十六个场景已改写为可复测任务脚本",
+    "stop_condition": "责任主体或资料边界不清，或来源无法确认发布者、时间、许可与用途",
+    "recovery_evidence": "来源登记补齐、书面授权、协议签署与数据处置记录",
+    "accountable_operator": "资料所有者与数据治理人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "HANDOVER_STATION_SEQUENCE_INVALID"
+   ],
+   "injected_risk_id": "R-06",
+   "injected_risk_title_zh": "空间争议",
+   "injected_risk_title_en": "Spatial dispute",
+   "injected_risk_pause_threshold_zh": "OP 节点、路线或构件与真实通行、消防、防洪、文保、权属或维护需求发生未解冲突。",
+   "injected_risk_pause_threshold_en": "An OP node, route, or component has an unresolved conflict with real passage, fire safety, flood control, heritage protection, ownership, or maintenance needs.",
+   "injected_risk_resume_condition_zh": "完成现场测绘、相关专业冲突审查和参与者复核，并把试验边界缩至可逆且已授权范围。",
+   "injected_risk_resume_condition_en": "Field survey, the relevant professional conflict review, and participant recheck are complete, and the trial boundary is narrowed to a reversible, authorised scope.",
+   "baseline_fixture_id": "HL-P4"
+  },
+  {
+   "fixture_id": "HL-N8",
+   "polarity": "negative",
+   "title_zh": "OP-04 注入 R-04：AI 构件先上线，人工窗口后补",
+   "title_en": "OP-04 with R-04 injected: The AI component goes live first and the staffed window is added later",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-04 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-04 的停止条件含「以 AI 提效为名削减值守班次，把接管压力与 AI 层运维成本转嫁为一线值守者的无偿加班」。本条的位序数组完全正确，只把「人工窗口先于一切 AI 构件设立」改为 false：空间上四个位都在，时间上却有一段只有 AI 一条路可走。判据判的是设立时序而不是空间位序，两者是两件事。判定为拒绝。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-04 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-04 stops work where shifts are cut in the name of AI efficiency and the takeover load is passed down as unpaid overtime. Here the sequence array is entirely correct and only the declaration that the staffed window precedes every AI component is set to false: all four stations exist in space, yet for a period AI is the only route in time. The criterion rules on the order of establishment, not the spatial order — two different things. The verdict is reject.",
+   "node": {
+    "id": "OP-04",
+    "scenario_id": "S04",
+    "scenario_card_id": "S04",
+    "key_area_id": "dazhongsi_ai_industry_cluster",
+    "ai_off_path": "现场人工指引与无障碍替代通行方案",
+    "human_handoff": "无障碍专业人员与参与者代表共同复核断点",
+    "gate_id": "G0",
+    "operating_mode": "资料与许可闸门下的现场审计准备",
+    "responsible_role": "未来经授权的场地运营与无障碍专业团队"
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-04",
+    "handing_over_role": "未来经授权的场地运营与无障碍专业团队",
+    "receiving_role": "无障碍专业人员与参与者代表共同复核断点",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05",
+     "R-06"
+    ],
+    "receipt_action": "hold",
+    "refusal_reason": "本节点的 AI 关闭等价路径缺少空间前提，须在 JZ-01 审计中优先核验东西向连续通道；前提未证成立之前不接收本单 / the AI-off equivalent path at this node lacks its spatial premise and the east-west continuous route must be verified first in the JZ-01 audit; the slip is not accepted until the premise is established",
+    "previous_party_remains_on_duty": true,
+    "blocking_reference": "geometry/constraints.geojson#OP-04.ai_off_continuity_status = premise_unproven_pending_site_audit",
+    "service_desk_present": true,
+    "station_sequence": [
+     "SD-1",
+     "SD-2",
+     "SD-3",
+     "SD-4"
+    ],
+    "staffed_window_precedes_ai_components": false,
+    "exit_receipt_station_present_after_last_step": true,
+    "handover_note_zh": "本单为暂缓在岗态，不是已完成交接：前提未证成立时暂缓是判据要求的诚实状态，违例的是把未决项抹掉、把在岗人撤走或自造第四种处置。",
+    "handover_note_en": "This slip records a hold with someone on duty, not a completed handover: where the premise is unproven a hold is the honest state the criteria require, and what would violate is wiping the open items, withdrawing the person on duty, or inventing a fourth action.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-04",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-04.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-04.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「无障碍专业人员与参与者代表共同复核断点」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05、risk.json#R-06",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记；OP-04 另带 R-06 空间争议，其 ai_off_continuity_status 登记为前提未证",
+      "derivation_en": "the open items travelling on the slip are registered by risk id; OP-04 additionally carries R-06 spatial dispute, its ai_off_continuity_status being registered as an unproven premise"
+     },
+     {
+      "field": "receipt_action",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "取 hold 而不是 accept：该节点的 ai_off_continuity_status 为 premise_unproven_pending_site_audit，AI 关闭等价路径的空间前提尚未证成立，正确的交接状态是暂缓并留人在岗，不是签一份看上去正常的接收单",
+      "derivation_en": "hold rather than accept: the node's ai_off_continuity_status reads premise_unproven_pending_site_audit, the spatial premise of its AI-off equivalent path is not established, and the correct handover state is a hold with someone left on duty rather than a slip that looks normal"
+     },
+     {
+      "field": "refusal_reason",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_note_zh 与 visual/assets/seb-op04-chain-data.json",
+      "derivation_zh": "理由逐字取自该节点既有的 ai_off_continuity_note_zh 的结论句与链复演档案的本轮结论，不新写理由",
+      "derivation_en": "the reason is taken verbatim from the conclusion sentence of the node's existing ai_off_continuity_note_zh and from the ruling of the chain replay archive; no new reason is written"
+     },
+     {
+      "field": "previous_party_remains_on_duty",
+      "source": "proposal.md「交接是一份双联单」段与 risk.json#R-06 resume_condition",
+      "derivation_zh": "条文原文「拒收与暂缓必须写明理由并触发上一责任方继续在岗」；R-06 的恢复条件要求完成现场测绘与专业冲突审查，在此之前该点位不得处于无人负责状态",
+      "derivation_en": "the prose states that a refusal or hold must state a reason and keep the previous responsible party on duty; R-06's resume condition requires a field survey and professional conflict review, and until then the node may not be left with nobody accountable"
+     },
+     {
+      "field": "blocking_reference",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "暂缓所依据的既有状态字段，供复核者直接回到几何文件核对，而不必相信本样例的转述",
+      "derivation_en": "the existing status field the hold rests on, so a reviewer can go straight back to the geometry file rather than trust this fixture's paraphrase"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 true：PUBLIC-007 承接 OP-04 且其 service_desk 属性组登记万感服务桌安装于其上，位序判据因此在本节点触发",
+      "derivation_en": "true: PUBLIC-007 carries OP-04 and its service_desk attribute group registers the Every-Sense desk as installed on it, so the sequence criteria engage at this node"
+     },
+     {
+      "field": "station_sequence",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_four_position_sequence",
+      "derivation_zh": "四个位序标识与顺序逐字取自 PUBLIC-007 的四位序属性组（SD-1 人工窗口、SD-2 多通道信息位、SD-3 AI 开关、SD-4 退出回执位），本实例不改写其中任何一位",
+      "derivation_en": "the four station ids and their order are verbatim from the four-station attribute group of PUBLIC-007 (SD-1 staffed window, SD-2 multi-channel information point, SD-3 AI switch, SD-4 exit-receipt station), and this instance rewrites none of them"
+     },
+     {
+      "field": "staffed_window_precedes_ai_components",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh 与 visual/assets/service-desk-gonogo.json#GD-6",
+      "derivation_zh": "条文原文「人工窗口先于一切 AI 构件设立」；开办条件档案 GD-6 把该句登记为已确定的设计判据，待定的只是资源",
+      "derivation_en": "the stated rule that the staffed window stands before any AI component; readiness item GD-6 registers that sentence as a settled design criterion, with only the resources outstanding"
+     },
+     {
+      "field": "exit_receipt_station_present_after_last_step",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh",
+      "derivation_zh": "条文原文「退出回执位永远在最后一步之后仍然在场」；PUBLIC-007 另登记四位序中只有 AI 开关位属 AI 层，退出回执位属非 AI 通道，退役不得连带撤除",
+      "derivation_en": "the stated rule that the exit-receipt station remains present after the last step; PUBLIC-007 further registers that of the four stations only the AI switch belongs to the AI layer, so the exit-receipt station is a non-AI channel that decommissioning may not take with it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L0",
+    "entry_condition": "官方范围、路线与服务清单核对完成，伦理、同意与数据处置协议齐备，十六个场景已改写为可复测任务脚本",
+    "stop_condition": "责任主体或资料边界不清，或来源无法确认发布者、时间、许可与用途",
+    "recovery_evidence": "来源登记补齐、书面授权、协议签署与数据处置记录",
+    "accountable_operator": "资料所有者与数据治理人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "STAFFED_WINDOW_NOT_FIRST"
+   ],
+   "injected_risk_id": "R-04",
+   "injected_risk_title_zh": "运维成本",
+   "injected_risk_title_en": "Operations cost",
+   "injected_risk_pause_threshold_zh": "没有明确值守班次、备件、维护卡、故障绕行或人工接管资源；或以 AI 提效为名削减值守班次、把接管压力与 AI 层运维成本转嫁为一线值守者的无偿加班。",
+   "injected_risk_pause_threshold_en": "There is no defined staffing shift, spare parts, maintenance card, failure bypass, or human-handover resource; or shifts cut in the name of AI efficiency, passing the takeover load and the AI layer's operating cost down as unpaid overtime for front-line stewards.",
+   "injected_risk_resume_condition_zh": "责任人、班次、备件、维护与演练记录闭合，并由 G3 确认资源与开放范围匹配。",
+   "injected_risk_resume_condition_en": "The responsible person, shift, spare parts, and maintenance and drill records are closed out, and G3 confirms that resources match the opening scope.",
+   "baseline_fixture_id": "HL-P4"
+  },
+  {
+   "fixture_id": "HL-N9",
+   "polarity": "negative",
+   "title_zh": "OP-04 注入 R-12：退役时退出回执位被一并撤除",
+   "title_en": "OP-04 with R-12 injected: Decommissioning takes the exit-receipt station with it",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-04 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-12 的停止条件是「任何退役方案含撤除非 AI 通道的条目」。PUBLIC-007 已登记四位序中只有 AI 开关位属 AI 层，退出回执位属非 AI 通道。本条把「退出回执位在最后一步之后仍然在场」改为 false：使用者恰好在最需要留下痕迹的时刻找不到留痕的地方。判定为拒绝。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-04 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-12 stops work where any decommission plan lists removal of a non-AI channel. PUBLIC-007 already registers that of the four stations only the AI switch belongs to the AI layer, the exit-receipt station being a non-AI channel. Here the declaration that it remains present after the last step is set to false: the user finds nowhere to leave a trace at exactly the moment a trace matters most. The verdict is reject.",
+   "node": {
+    "id": "OP-04",
+    "scenario_id": "S04",
+    "scenario_card_id": "S04",
+    "key_area_id": "dazhongsi_ai_industry_cluster",
+    "ai_off_path": "现场人工指引与无障碍替代通行方案",
+    "human_handoff": "无障碍专业人员与参与者代表共同复核断点",
+    "gate_id": "G0",
+    "operating_mode": "资料与许可闸门下的现场审计准备",
+    "responsible_role": "未来经授权的场地运营与无障碍专业团队"
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-04",
+    "handing_over_role": "未来经授权的场地运营与无障碍专业团队",
+    "receiving_role": "无障碍专业人员与参与者代表共同复核断点",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05",
+     "R-06"
+    ],
+    "receipt_action": "hold",
+    "refusal_reason": "本节点的 AI 关闭等价路径缺少空间前提，须在 JZ-01 审计中优先核验东西向连续通道；前提未证成立之前不接收本单 / the AI-off equivalent path at this node lacks its spatial premise and the east-west continuous route must be verified first in the JZ-01 audit; the slip is not accepted until the premise is established",
+    "previous_party_remains_on_duty": true,
+    "blocking_reference": "geometry/constraints.geojson#OP-04.ai_off_continuity_status = premise_unproven_pending_site_audit",
+    "service_desk_present": true,
+    "station_sequence": [
+     "SD-1",
+     "SD-2",
+     "SD-3",
+     "SD-4"
+    ],
+    "staffed_window_precedes_ai_components": true,
+    "exit_receipt_station_present_after_last_step": false,
+    "handover_note_zh": "本单为暂缓在岗态，不是已完成交接：前提未证成立时暂缓是判据要求的诚实状态，违例的是把未决项抹掉、把在岗人撤走或自造第四种处置。",
+    "handover_note_en": "This slip records a hold with someone on duty, not a completed handover: where the premise is unproven a hold is the honest state the criteria require, and what would violate is wiping the open items, withdrawing the person on duty, or inventing a fourth action.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-04",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-04.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的场地运营与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-04.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「无障碍专业人员与参与者代表共同复核断点」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05、risk.json#R-06",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记；OP-04 另带 R-06 空间争议，其 ai_off_continuity_status 登记为前提未证",
+      "derivation_en": "the open items travelling on the slip are registered by risk id; OP-04 additionally carries R-06 spatial dispute, its ai_off_continuity_status being registered as an unproven premise"
+     },
+     {
+      "field": "receipt_action",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "取 hold 而不是 accept：该节点的 ai_off_continuity_status 为 premise_unproven_pending_site_audit，AI 关闭等价路径的空间前提尚未证成立，正确的交接状态是暂缓并留人在岗，不是签一份看上去正常的接收单",
+      "derivation_en": "hold rather than accept: the node's ai_off_continuity_status reads premise_unproven_pending_site_audit, the spatial premise of its AI-off equivalent path is not established, and the correct handover state is a hold with someone left on duty rather than a slip that looks normal"
+     },
+     {
+      "field": "refusal_reason",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_note_zh 与 visual/assets/seb-op04-chain-data.json",
+      "derivation_zh": "理由逐字取自该节点既有的 ai_off_continuity_note_zh 的结论句与链复演档案的本轮结论，不新写理由",
+      "derivation_en": "the reason is taken verbatim from the conclusion sentence of the node's existing ai_off_continuity_note_zh and from the ruling of the chain replay archive; no new reason is written"
+     },
+     {
+      "field": "previous_party_remains_on_duty",
+      "source": "proposal.md「交接是一份双联单」段与 risk.json#R-06 resume_condition",
+      "derivation_zh": "条文原文「拒收与暂缓必须写明理由并触发上一责任方继续在岗」；R-06 的恢复条件要求完成现场测绘与专业冲突审查，在此之前该点位不得处于无人负责状态",
+      "derivation_en": "the prose states that a refusal or hold must state a reason and keep the previous responsible party on duty; R-06's resume condition requires a field survey and professional conflict review, and until then the node may not be left with nobody accountable"
+     },
+     {
+      "field": "blocking_reference",
+      "source": "geometry/constraints.geojson#OP-04.ai_off_continuity_status",
+      "derivation_zh": "暂缓所依据的既有状态字段，供复核者直接回到几何文件核对，而不必相信本样例的转述",
+      "derivation_en": "the existing status field the hold rests on, so a reviewer can go straight back to the geometry file rather than trust this fixture's paraphrase"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 true：PUBLIC-007 承接 OP-04 且其 service_desk 属性组登记万感服务桌安装于其上，位序判据因此在本节点触发",
+      "derivation_en": "true: PUBLIC-007 carries OP-04 and its service_desk attribute group registers the Every-Sense desk as installed on it, so the sequence criteria engage at this node"
+     },
+     {
+      "field": "station_sequence",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_four_position_sequence",
+      "derivation_zh": "四个位序标识与顺序逐字取自 PUBLIC-007 的四位序属性组（SD-1 人工窗口、SD-2 多通道信息位、SD-3 AI 开关、SD-4 退出回执位），本实例不改写其中任何一位",
+      "derivation_en": "the four station ids and their order are verbatim from the four-station attribute group of PUBLIC-007 (SD-1 staffed window, SD-2 multi-channel information point, SD-3 AI switch, SD-4 exit-receipt station), and this instance rewrites none of them"
+     },
+     {
+      "field": "staffed_window_precedes_ai_components",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh 与 visual/assets/service-desk-gonogo.json#GD-6",
+      "derivation_zh": "条文原文「人工窗口先于一切 AI 构件设立」；开办条件档案 GD-6 把该句登记为已确定的设计判据，待定的只是资源",
+      "derivation_en": "the stated rule that the staffed window stands before any AI component; readiness item GD-6 registers that sentence as a settled design criterion, with only the resources outstanding"
+     },
+     {
+      "field": "exit_receipt_station_present_after_last_step",
+      "source": "geometry/public_space.geojson#PUBLIC-007.service_desk_sequence_rule_zh",
+      "derivation_zh": "条文原文「退出回执位永远在最后一步之后仍然在场」；PUBLIC-007 另登记四位序中只有 AI 开关位属 AI 层，退出回执位属非 AI 通道，退役不得连带撤除",
+      "derivation_en": "the stated rule that the exit-receipt station remains present after the last step; PUBLIC-007 further registers that of the four stations only the AI switch belongs to the AI layer, so the exit-receipt station is a non-AI channel that decommissioning may not take with it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L0",
+    "entry_condition": "官方范围、路线与服务清单核对完成，伦理、同意与数据处置协议齐备，十六个场景已改写为可复测任务脚本",
+    "stop_condition": "责任主体或资料边界不清，或来源无法确认发布者、时间、许可与用途",
+    "recovery_evidence": "来源登记补齐、书面授权、协议签署与数据处置记录",
+    "accountable_operator": "资料所有者与数据治理人员"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "EXIT_RECEIPT_STATION_ABSENT"
+   ],
+   "injected_risk_id": "R-12",
+   "injected_risk_title_zh": "退役连带撤除",
+   "injected_risk_title_en": "Decommissioning takes the channel",
+   "injected_risk_pause_threshold_zh": "任何退役方案含撤除非 AI 通道的条目，或 non_ai_channel_floor 任一项被改为可削减。",
+   "injected_risk_pause_threshold_en": "Any decommission plan lists removal of a non-AI channel, or any non_ai_channel_floor entry turns reducible.",
+   "injected_risk_resume_condition_zh": "修订后的退役方案经三方复核确认非 AI 通道完整存续。",
+   "injected_risk_resume_condition_en": "The revised plan confirmed by three-party review with the non-AI channels intact.",
+   "baseline_fixture_id": "HL-P4"
+  },
+  {
+   "fixture_id": "HL-N10",
+   "polarity": "negative",
+   "title_zh": "OP-09 注入 R-11：复审到期日已过，常态运行失去有效期背书",
+   "title_en": "OP-09 with R-11 injected: The review expiry has passed and continuous operation has lost its warrant",
+   "note_zh": "v0.5.0 新增的风险注入变体，十条之一。本条以 OP-09 的基线实例为底，只改一处判据输入，其余字段与基线逐字相同。R-11 的停止条件是「运行声明的 as_of_date 晚于任一 L4b 节点的 review_due」。本条只把复审到期日提前到运行日之前，交接台账一字未改：交接做得再规范，也不能替一个过期未复审的常态运行背书。判定为拒绝，有效等级按基准回落至 L0——到期未复审的系统回到资料与许可的起点重新证明自己。",
+   "note_en": "One of the ten risk-injection variants introduced in v0.5.0. It takes the OP-09 baseline instance and alters exactly one criterion input, every other field being verbatim the baseline's. R-11 stops work where the run-declared as_of_date is later than any L4b node's review_due. Here only the review expiry is moved ahead of the run date and the handover ledger is untouched: however well the handover is done, it cannot warrant a continuous operation whose review has lapsed. The verdict is reject and the effective level falls back to L0 — a system that missed its review returns to the evidence-and-permission start line to prove itself again.",
+   "node": {
+    "id": "OP-09",
+    "scenario_id": "S09",
+    "scenario_card_id": "S09",
+    "key_area_id": "dazhongsi_ai_industry_cluster",
+    "ai_off_path": "非数字告知、安静区与人工疏导路线",
+    "human_handoff": "现场活动安全人员执行限流、暂停与退出协助",
+    "gate_id": "G3",
+    "operating_mode": "独立复核后方可限定试点或停止",
+    "responsible_role": "未来经授权的活动运营、安全与无障碍专业团队",
+    "funding_owner": {
+     "name": "推演用占位预算主体（不指认任何真实机构）",
+     "status": "confirmed"
+    },
+    "non_ai_channel_floor": {
+     "visibility": "non_reducible",
+     "staffing": "non_reducible",
+     "budget": "non_reducible"
+    },
+    "ai_off_vendor_independence": "independent",
+    "decommission_path": "remove_ai_layer_retain_channels",
+    "decommission_removes_non_ai": false,
+    "residual_asset": "铸刻导视、触觉引导带、人工求助位与现金人工通道",
+    "review_due": "2026-08-15"
+   },
+   "measurement_declaration": null,
+   "handover_ledger": {
+    "node_id": "OP-09",
+    "handing_over_role": "未来经授权的活动运营、安全与无障碍专业团队",
+    "receiving_role": "现场活动安全人员执行限流、暂停与退出协助",
+    "handing_over_signature": true,
+    "receiving_signature": true,
+    "open_items_present": true,
+    "open_items_cleared_at_handover": false,
+    "open_item_ids": [
+     "R-05"
+    ],
+    "receipt_action": "accept",
+    "service_desk_present": false,
+    "handover_note_zh": "本单为接收态：未决项随单移交而非在交接时清空，两方署名齐备且分属不同角色。",
+    "handover_note_en": "This slip records an acceptance: the open items travel on the slip rather than being cleared, and both signatures are present and belong to different roles.",
+    "provenance": [
+     {
+      "field": "node_id",
+      "source": "geometry/constraints.geojson#OP-09",
+      "derivation_zh": "实例锚定的真实几何点位标识，与样例 node.id 相同，来源对齐判据据此逐字比对五个必填字段",
+      "derivation_en": "the identifier of the real geometry feature this instance is anchored to, equal to the fixture's node.id, on which the source-alignment criterion compares the five required fields verbatim"
+     },
+     {
+      "field": "handing_over_role",
+      "source": "geometry/constraints.geojson#OP-09.responsible_role",
+      "derivation_zh": "交出方取该节点既有的责任专业「未来经授权的活动运营、安全与无障碍专业团队」：交出这一班的是对该点位负责的专业方",
+      "derivation_en": "the handing-over party is the node's existing accountable discipline: the party responsible for the node is the party that hands the shift over"
+     },
+     {
+      "field": "receiving_role",
+      "source": "geometry/constraints.geojson#OP-09.human_handoff",
+      "derivation_zh": "接收方取该节点既有的人工接管角色「现场活动安全人员执行限流、暂停与退出协助」：接管角色即接收这一单的一方，两者取值不同，双联单的两联因此各有其人",
+      "derivation_en": "the receiving party is the node's existing human-takeover role: the role that takes over is the party that receives the slip, and as the two values differ each half of the two-part slip has its own person"
+     },
+     {
+      "field": "handing_over_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "条文原文「交出方与接收方必须是不同角色并各自署名」；本字段只声明署名是否发生，不登记任何个人身份信息",
+      "derivation_en": "the prose states that the two parties must be different roles and each must sign; this field declares only that a signature occurred and records no personal identifying data"
+     },
+     {
+      "field": "receiving_signature",
+      "source": "proposal.md「交接是一份双联单，不是一句口头移交」段",
+      "derivation_zh": "同上，第二联的署名；两联缺一即无人可被事后复核到",
+      "derivation_en": "as above, the signature on the second half; with either missing, no one can be traced afterwards"
+     },
+     {
+      "field": "open_items_present",
+      "source": "risk.json#R-05 pause_threshold",
+      "derivation_zh": "取值 true 的依据是包内既有登记：六项许可与协议在授权主体确认前一律为待办，因此任何一次交接都必有未决项随单移交；本字段只声明有无，不声明条数",
+      "derivation_en": "the value true rests on what the package already registers: all six permissions stand outstanding until an authorising body confirms them, so every handover necessarily carries open items; the field declares presence, never a count"
+     },
+     {
+      "field": "open_items_cleared_at_handover",
+      "source": "risk.json#R-08 pause_threshold",
+      "derivation_zh": "取值 false 的依据是 R-08 的停止条件「分母删除非完成与技术故障」所立的同一条纪律：未办完的事不得在换班时被抹掉",
+      "derivation_en": "the value false rests on the same discipline as R-08's stop condition on stripping non-completions and technical faults from a denominator: unfinished business may not be wiped at shift change"
+     },
+     {
+      "field": "open_item_ids",
+      "source": "risk.json#R-05",
+      "derivation_zh": "随单移交的未决项以风险条目标识登记",
+      "derivation_en": "the open items travelling on the slip are registered by risk id"
+     },
+     {
+      "field": "receipt_action",
+      "source": "proposal.md「交接是一份双联单」段",
+      "derivation_zh": "取 accept：该节点未登记任何阻断交接的既有状态字段，接收方在三项处置中选定接收，未决项随单移交而非在交接时清空",
+      "derivation_en": "accept: the node registers no existing status field blocking handover, so the receiver signs accept of the three actions while the open items travel on the slip rather than being cleared"
+     },
+     {
+      "field": "service_desk_present",
+      "source": "geometry/public_space.geojson#PUBLIC-007",
+      "derivation_zh": "取 false：包内服务桌只登记在 PUBLIC-007 一处（承接 OP-04），本节点未登记服务桌，三项位序字段因此可缺席且不违例——不向没有桌子的节点摊派一条它无从满足的要求",
+      "derivation_en": "false: the package registers the service desk at PUBLIC-007 only (which carries OP-04); this node registers none, so the three station fields may be absent without violating — no requirement is levied on a node that could not satisfy it"
+     }
+    ]
+   },
+   "level_claim": {
+    "level_id": "L4b",
+    "entry_condition": "在 L4a 三项就绪证据基础上进入有期限常态运行，携带复审到期日，期满回 L3 由三方复核决定是否续期",
+    "stop_condition": "复审到期未复审，或非 AI 通道底线在运行期内被削减",
+    "recovery_evidence": "三方复核结论、底线承诺复核记录、运行期问题日志",
+    "accountable_operator": "运维主体负责人、使用者代表与独立复核人"
+   },
+   "decision": {
+    "risk_ids": [
+     "R-02",
+     "R-04",
+     "R-08"
+    ],
+    "stop_condition_triggered": false,
+    "action_taken": "proceed"
+   },
+   "decision_note_zh": "三条风险由双联交接结构直接对应：R-02 角色不可确认、R-04 人工接管资源缺失、R-08 未决项被删除；本步骤未触发停止条件。",
+   "decision_note_en": "Three risks map directly onto the two-part handover structure — R-02 roles that cannot be confirmed, R-04 missing human-takeover resources, R-08 open items dropped — and no stop condition triggered at this step.",
+   "expected_verdict": "reject",
+   "expected_reasons": [
+    "REVIEW_OVERDUE"
+   ],
+   "injected_risk_id": "R-11",
+   "injected_risk_title_zh": "到期未复审",
+   "injected_risk_title_en": "Overdue review",
+   "injected_risk_pause_threshold_zh": "运行声明的 as_of_date 晚于任一 L4b 节点的 review_due。",
+   "injected_risk_pause_threshold_en": "The run-declared as_of_date is later than any L4b node's review_due.",
+   "injected_risk_resume_condition_zh": "三方复核签署续期并写入新的 review_due。",
+   "injected_risk_resume_condition_en": "A signed renewal with a new review_due.",
+   "baseline_fixture_id": "HL-P9",
+   "expected_effective_level": "L0"
   }
  ],
  "adopter_lexicon": [
@@ -2063,5 +4859,7 @@
   "网格员": "大钟寺片区网格治理岗；街道公示栏与网格服务点铭牌可查 / grid governance post in the Dazhongsi area, findable on street notice boards and grid service-point plates"
  },
  "adopter_lexicon_note_zh": "本包以采用方身份声明一项附加角色词做并集演示；每个附加词按 v0.3.1 合格性判据携带证据条目（岗位名与可被找到的位置），后缀违例或缺证据即整次拒绝运行",
- "adopter_lexicon_note_en": "This package declares one additional role token in its adopter capacity to demonstrate the union; per the v0.3.1 eligibility criteria every token carries an evidence entry (post name and where the role can be found), and a suffix violation or missing evidence refuses the whole run"
+ "adopter_lexicon_note_en": "This package declares one additional role token in its adopter capacity to demonstrate the union; per the v0.3.1 eligibility criteria every token carries an evidence entry (post name and where the role can be found), and a suffix violation or missing evidence refuses the whole run",
+ "v0_5_note_zh": "随基准 v0.5.0 扩充二十条，样例总数由四十条增至六十条；原四十条样例的字段与期望判定一字未改，用以确认第六组件的加入没有改变任何既有结论——第六组件的全部判定码以 handover_ledger 块为触发输入，未声明该块的四十条既有样例结构性不触发。新增前十条（HL-P1 至 HL-P10）是十个 OP 节点各一条的双联交接实例：节点五个必填字段逐字取自 geometry/constraints.geojson 的同名点位并经来源对齐判据比对，申报等级与该节点既有闸门的 gate_binding 一致，交接台账各字段的推出来源逐条登记在 handover_ledger.provenance 中。OP-04 一条按其既有 ai_off_continuity_status（premise_unproven_pending_site_audit）如实登记为暂缓在岗态，不写成正常可交接：暂缓不是违例，而是前提未证时判据要求的诚实状态。后十条（HL-N1 至 HL-N10）是风险注入变体，每条以对应基线为底只改一处判据输入，检验 risk.json 中一条风险的违例情形，并在 injected_risk_pause_threshold 字段逐字引用该风险的停止条件。十条覆盖 R-01 至 R-08 与 R-11、R-12；未注入的两条如实登记原因：R-09 反向等价失效的判定需要成对读数，本样例集不含任何读数，无法在桌面阶段构造；R-10 条件差别的违例码 EQUIVALENCE_CONDITION_UNMET 已由既有的 TT-N21 与 TT-N22 两条覆盖，不重复构造。第六组件的九个判定码在本轮全部取得正反两侧覆盖：反例一侧由 HL-N1 至 HL-N9 逐码承担，正例一侧由十条基线承担；HL-N10 检验的 REVIEW_OVERDUE 属既有码。新增二十条与既有样例采用同一表达纪律：未决项只声明有无、不声明条数，署名只声明是否发生、不登记任何个人身份信息，因此 contains_no_measurement_values 在扩充后仍然成立。",
+ "v0_5_note_en": "Twenty fixtures arrive with baseline v0.5.0, taking the set from forty to sixty; not a word of the original forty changed, confirming that the sixth component altered no existing ruling — every code of that component triggers on the handover_ledger block, which the forty existing fixtures do not declare and therefore do not engage. The first ten new fixtures (HL-P1 to HL-P10) are one two-part handover instance per OP node: the five required fields are verbatim from the same-named feature in geometry/constraints.geojson and are compared by the source-alignment criterion, the claimed level agrees with the gate_binding of the node's existing gate, and the derivation of every ledger field is registered item by item in handover_ledger.provenance. The OP-04 instance is registered truthfully as a hold with someone on duty, per its existing ai_off_continuity_status (premise_unproven_pending_site_audit), and never as a normal completed handover: a hold is no violation but the honest state the criteria require where a premise is unproven. The last ten (HL-N1 to HL-N10) are risk-injection variants, each taking its baseline and altering exactly one criterion input to test one violating situation from risk.json, quoting that risk's stop condition verbatim in the injected_risk_pause_threshold field. The ten cover R-01 to R-08 plus R-11 and R-12; the two not injected are registered with their reasons: R-09, reverse equivalence failure, needs paired readings and this set holds none, so it cannot be constructed at the tabletop stage; and R-10, differential terms, already has both its sides covered by TT-N21 and TT-N22 through EQUIVALENCE_CONDITION_UNMET, so it is not duplicated. All nine codes of the sixth component gain coverage on both sides in this round: the negative side is carried code by code by HL-N1 to HL-N9 and the positive side by the ten baselines, while the REVIEW_OVERDUE tested by HL-N10 is an existing code. The twenty new fixtures keep the same expression discipline as the existing set: open items declare presence and never a count, signatures declare that signing occurred and record no personal identifying data, so contains_no_measurement_values still holds after the extension."
 }
