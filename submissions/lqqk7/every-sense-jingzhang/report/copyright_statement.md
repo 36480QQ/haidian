@@ -35,7 +35,7 @@ AI generation does not establish factual authority, accessibility compliance, us
 
 # 逐资产权利台账 / Per-Asset Rights Ledger
 
-The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 139 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
+The ledger below restates, asset by asset, what the sections above declare in prose. It covers all 142 file entries registered in `manifest.json`. Every row is compiled from a record that already exists inside this package — no new rights fact, tool record, or licence claim is introduced here — and the last column of each table names the file the entry was compiled from, so any row can be checked word for word against its source. Tables are written in Chinese with bilingual headings; where a field is not registered anywhere in the package, the entry reads「包内未登记」rather than a guessed value, and all such gaps are listed in the final section.
 
 ## 一、编制口径 / Compilation rule
 
@@ -50,10 +50,10 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | --- | --- | --- | --- | --- |
 | A 方案正文与结构化文件 | 13 | 申报智能体原创生成 | Claude Fable 5 via Claude Code（含 Claude Opus 子代理）；v1.0 阶段为 GPT-5.6 Sol via Codex | 本文件 · `agent.json` |
 | B 报告与说明文件 | 4 | 原创撰写；两份 HTML 由仓库脚本渲染 | `scripts/render_proposal_html.py` | 本文件 |
-| C 图版 | 35 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成；其中四张主图与七张几何核验图另铺随包 OSM 快照底图 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
+| C 图版 | 37 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成；其中四张主图与七张几何核验图另铺随包 OSM 快照底图 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
 | D 图纸 PDF | 4 | 同上，并合并为册 | Python、SVG、`rsvg-convert`/Cairo、`pdfunite` | 本文件 |
 | E 几何 | 9 | 基于仓库临时边界与本方案概念几何 | 复算投影 EPSG:4548（`scripts/spatial_review.py`） | 本文件 · `sources.json` · `metrics.json` |
-| F 离线展示与随包代码 | 42 | 原创手写，自含离线；含 SEB 许可授予文件、三个历史版本快照、OSM 精简快照两片与法律接口登记 | SEB 判据工具零依赖（仅 Node 内置模块）；展示层含唯一第三方组件 three.js r160（MIT，许可正本 `three-license.json`） | 本文件 · `proposal.md` |
+| F 离线展示与随包代码 | 43 | 原创手写，自含离线；含 SEB 许可授予文件、三个历史版本快照、OSM 精简快照两片与法律接口登记 | SEB 判据工具零依赖（仅 Node 内置模块）；展示层含唯一第三方组件 three.js r160（MIT，许可正本 `three-license.json`） | 本文件 · `proposal.md` |
 | G 媒体 | 23 | 手写 HTML/SVG 渲染 + 语音合成（中英导览与数据可听化）+ 本包页面逐帧实录 + AI 生成场景双态短片（每帧恒显概念角标） | Playwright/Chromium、MiniMax `speech-2.8-hd`（`mmx` 1.0.7）、x264/AAC、Pillow | `journey.md` · `audio-guide.md` · `cover.md` |
 | H 品牌标志 | 1 | 原创矢量几何 | 手写 SVG | 本文件 · `cover.md` |
 | I 场景概念图 | 6 | AI 图像生成 + 包内标注层排版合成 | OpenAI 图像生成（经 Codex CLI 原生图像生成工具，GPT-5.6 Sol 智能体调用）；标注层为手写 HTML 经 Chromium（Playwright）渲染 | 本文件 · `sources.json` |
@@ -83,7 +83,7 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 
 ### C 图版 / Figure plates
 
-三十六个文件，全部位于 `assets/figures/`：`site-overview`、`land-use-structure`、`key-areas`、`mobility-bluegreen`、`mobility-bluegreen-audit`、`dual-state-plan`、`metrics-evidence`、`metrics-evidence-audit`、`brand-system`、`ecosystem-map`、`section-profiles`、`enterprise-journey`、`op04-detail` 十三题各中英两版（`*.png` 与 `*.en.png`，共二十六个文件）；`verification-overlay-00-all.png` 至 `-06-keyareas.png` 七张几何核验图（中英双语同图，不分中英两版）；以及 v8.0 新增的 `tactile-corridor-map.png` 与 `green-section-principle.png`、v8.2 新增的 `district-strategy.png` 三张（同为中英双语同图单件，`manifest.json` 按 `language: neutral` 登记）。本类只计图版位图文件；`assets/tactile/` 下 OP-04 断面折叠纸模中英两版 SVG（可打印折叠为手持断面，盲道区凸点阵用发泡油墨或点字打印机输出即成可触纹理）单列为 J 类，不重复计入本类，此前版本曾在本段文字内一并叙述并同时漏列 `dual-state-plan` 两版，两处误差互相抵消使件数仍为三十三，本版按实际文件逐项更正。生态图谱、断面、企业旅程与 OP-04 节点深化图版均由正文对应章节内容排版生成（手写 HTML 经 Chromium 渲染，深化图版几何取自本包 GeoJSON 投影），不含第三方素材；深化图版全部尺寸为设计目标值，依据框架登记于 `sources.json`（GB 55019-2021 条目）。
+三十八个文件，全部位于 `assets/figures/`：`site-overview`、`land-use-structure`、`key-areas`、`mobility-bluegreen`、`mobility-bluegreen-audit`、`dual-state-plan`、`metrics-evidence`、`metrics-evidence-audit`、`brand-system`、`ecosystem-map`、`section-profiles`、`enterprise-journey`、`op04-detail` 十三题各中英两版（`*.png` 与 `*.en.png`，共二十六个文件）；`verification-overlay-00-all.png` 至 `-06-keyareas.png` 七张几何核验图（中英双语同图，不分中英两版）；以及 v8.0 新增的 `tactile-corridor-map.png` 与 `green-section-principle.png`、v8.2 新增的 `district-strategy.png`、v8.3 新增的 `bluegreen-structure.png` 与 `heritage-sequence.png` 五张（同为中英双语同图单件，`manifest.json` 按 `language: neutral` 登记）。本类只计图版位图文件；`assets/tactile/` 下 OP-04 断面折叠纸模中英两版 SVG（可打印折叠为手持断面，盲道区凸点阵用发泡油墨或点字打印机输出即成可触纹理）单列为 J 类，不重复计入本类，此前版本曾在本段文字内一并叙述并同时漏列 `dual-state-plan` 两版，两处误差互相抵消使件数仍为三十三，本版按实际文件逐项更正。生态图谱、断面、企业旅程与 OP-04 节点深化图版均由正文对应章节内容排版生成（手写 HTML 经 Chromium 渲染，深化图版几何取自本包 GeoJSON 投影），不含第三方素材；深化图版全部尺寸为设计目标值，依据框架登记于 `sources.json`（GB 55019-2021 条目）。
 
 | 项目 | 登记内容 |
 | --- | --- |
@@ -94,13 +94,15 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | 署名与复用限制 | 署名 `lqqk7` / 柱子；`COMMUNITY-DISPLAY-ONLY`；概念建议，不得作为现状证据或效果承诺引用 |
 | 登记出处 | 本文件 §Generated assets and software |
 
-v8.0 与 v8.2 新增的三张图版另按逐件口径登记：
+v8.0 至 v8.3 新增的五张图版另按逐件口径登记：
 
 | 文件路径 | 数据来源与生成方式 | 第三方数据与许可 | 字体 | 已登记的局限 |
 | --- | --- | --- | --- | --- |
 | `assets/figures/tactile-corridor-map.png` | 程序绘制：线位与点位读自本包 `geometry/roads.geojson`、`geometry/constraints.geojson` 与 `geometry/key_areas.geojson`，经图面容差 2.5 mm 的 Douglas-Peucker 简化、一轮 Chaikin 转角圆化与安静线沿主脊法向外推三步泛化后排版（手写 HTML 经 Chromium/Playwright 渲染），三步参数与最大位移量印在图面上 | `roads.geojson` 的线位走向按随包 OpenStreetMap 精简快照（`visual/assets/osm-fabric/`）取样加密，故本图为 ODbL 1.0 衍生作品：「© OpenStreetMap 贡献者 · ODbL 1.0」署名已印在图面页脚，相同方式共享条件按本文件 §OpenStreetMap 条目履行 | 生成期 HTML 内嵌 Source Han Sans SC（SIL OFL 1.1）三个字重子集，该 HTML 不随包提交；PNG 内字形为位图，不嵌入、不分发任何字体文件。图面盲文为按 GB/T 15720 点位尺寸自绘的几何图形，不使用任何盲文字体，也不复制该标准的数值表 | 盲文标题为英文 UEB 一级逐字母转写，未经盲文使用者或持证校对员校对；全图未经视障使用者测试，打印成功不等于触觉可用——两条均如实印在图面上，并登记于 `visual/assets/qa-proofing-record.json` |
 | `assets/figures/green-section-principle.png` | 程序绘制：图面四栏内容逐条取自 `proposal.md` 蓝绿空间章「一段真深化：众智园段线性绿带」四行深化表的正文用语，断面本身为原创示意几何，不取自任何现状测绘、地形图或工程断面（手写 HTML 经 Chromium/Playwright 渲染） | 无。本图不含 OSM 背景、也不由 OSM 数据派生，因此不适用 ODbL 的署名与相同方式共享条件 | 同上一行 | 图中不标任何尺寸数值，宽度只表示相对关系；净宽、坡度、基准标高与材质均为现场核定条件，非工程断面 |
 | `assets/figures/district-strategy.png` | 程序绘制：全部数值、坐标与 way 编号直读本包 `visual/assets/district-strategy.json`；候选街块轮廓按该文件自述的 FAB-03 构面口径（可步行网络平面图 polygonize）由随包 OSM 精简快照就地复算，并以面积、周长、质心三项逐候选校验与登记值一致后才入图；重点区范围、五条中心线与十个完成点读自本包 `geometry/key_areas.geojson`、`roads.geojson` 与 `constraints.geojson`（手写 HTML 经 Chromium/Playwright 渲染） | 底图与街块面均由随包 OpenStreetMap 精简快照（`visual/assets/osm-fabric/`）派生，故本图为 ODbL 1.0 衍生作品：「© OpenStreetMap 贡献者 · ODbL 1.0」署名与快照编号已印在图面页脚，相同方式共享条件按本文件 §OpenStreetMap 条目履行 | 同上一行 | 重点区范围为临时多边形（`official_boundary=false`）；街块轮廓为 OSM 拓扑闭合面，不代表产权边界或围墙；入口间距参考标尺为快照口径派生的参考值，非法定值；界面分类按 `frontage_rules` 的适用条款派生，不是逐段实测分配——四条均如实印在图面上 |
+| `assets/figures/bluegreen-structure.png` | 程序绘制：三层带的载体与职能、三条层间关系判据、三类铺装径流去向判据全称与十节点归类、三类「雨天断点」成因与指向，全部直读本包 `visual/assets/sensory-design-code.json` 的 `bluegreen_stormwater` 一节；图面短句只对该文件既有字段作压缩，不新增主张（手写 HTML 经 Chromium/Playwright 渲染） | 无。本图为关系图，不含 OSM 背景，也不由 OSM 数据或随包快照几何派生，因此不适用 ODbL 的署名与相同方式共享条件 | 生成期 HTML 内嵌 Source Han Sans SC（SIL OFL 1.1）三个字重子集，该 HTML 不随包提交；PNG 内字形为位图，不嵌入、不分发任何字体文件 | 类型判据而非工程参数，现场核定前不构成工程结论；图上不出现容积、渗透系数、溢流标高、管径与照度的任何数值；本图为关系图，层带与打点不表示位置、长度、面积或比例——四条均如实印在图面上 |
+| `assets/figures/heritage-sequence.png` | 程序绘制：三段的名称、绑定节点与地标、解说载体清单与四条材料再利用判据，全部直读本包 `visual/assets/sensory-design-code.json` 的 `heritage_interpretation` 一节；图面短句只对该文件既有字段作压缩（手写 HTML 经 Chromium/Playwright 渲染） | 无。本图不含 OSM 背景、也不由 OSM 数据派生，因此不适用 ODbL 的署名与相同方式共享条件 | 同上一行 | 解说组织建议，不是文物保护规划，也不构成史实结论；图上不标注文物保护等级、保护范围与控制线，不做线路复原，不引用未经核验的站场史实，历史锚点一律留在正文——四条均如实印在图面上 |
 
 ### D 图纸 / Drawing sets
 
@@ -140,7 +142,7 @@ v8.0 与 v8.2 新增的三张图版另按逐件口径登记：
 | `visual/assets/seb-spec.json` | 原创编制的机器可读规范 v0.4.0 | CC BY-SA 4.0，已由提交方以著作权人身份经 `seb-license-grant.json` 实际授予；托管主体与发布渠道仍待授权主体确认（许可与托管两事分立） | `seb-spec.json` `license` 与授予文件 |
 | `visual/assets/seb-spec-v0.2.0.json` · `seb-spec-v0.3.0.json` | 历史版本按字节从上游提交提取的快照（提交号与哈希登记于规范 `version_snapshots`） | 同上（CC BY-SA 4.0 已授予） | `seb-spec.json` `version_snapshots` |
 | `visual/assets/seb-license-grant.json` | 许可授予文件：授予声明为原创撰写；内嵌 CC BY-SA 4.0 法定正文取自 Creative Commons 官方发布（CC 许可条文本身不受版权限制可自由复制），含重建哈希 | 授予声明随授予生效；法定正文按 CC 官方口径复制 | 该文件自身与 `sources.json` |
-| `visual/assets/seb-tabletop-fixtures.json` · `seb-change-receipt-sample.json` · `seb-op04-chain-data.json` · `seb-change-receipt-op04.json` · `seb-change-receipt-v03.json` · `seb-op04-90day-pack.json` · `op04-pilot-readiness.json` · `op04-tactile-map.json`（STL 封装）· `braille-core-statement.json` · `ethics-protocol.json` · `qa-proofing-record.json` · `scene-provenance.json` · `package-integrity-gates.json` · `service-desk-gonogo.json` · `district-strategy.json` · `field-verification-plan.json` | 原创编制的样例、回执（含 v0.3 系一版一号回执）、链路档案、九十天实施包与对接就绪材料、协议模板、自查记录、场景图生成档案、随包自检闸门台账、服务桌开办条件档案，以及 v8.2 新增的片区策略判据文件与零授权现场验证计划（前者的量算读数由随包 OSM 精简快照派生，来源与许可见本文件 §OpenStreetMap 条目） | 随包整体许可；均不含任何参与者数据 | `proposal.md` 对应各章 |
+| `visual/assets/seb-tabletop-fixtures.json` · `seb-change-receipt-sample.json` · `seb-op04-chain-data.json` · `seb-change-receipt-op04.json` · `seb-change-receipt-v03.json` · `seb-op04-90day-pack.json` · `op04-pilot-readiness.json` · `op04-tactile-map.json`（STL 封装）· `braille-core-statement.json` · `ethics-protocol.json` · `qa-proofing-record.json` · `scene-provenance.json` · `package-integrity-gates.json` · `service-desk-gonogo.json` · `district-strategy.json` · `field-verification-plan.json` · `sensory-design-code.json` | 原创编制的样例、回执（含 v0.3 系一版一号回执）、链路档案、九十天实施包与对接就绪材料、协议模板、自查记录、场景图生成档案、随包自检闸门台账、服务桌开办条件档案，以及 v8.2 新增的片区策略判据文件与零授权现场验证计划（前者的量算读数由随包 OSM 精简快照派生，来源与许可见本文件 §OpenStreetMap 条目）、v8.3 新增的感官设计准则文件（五节判据与矩阵，无 OSM 派生内容） | 随包整体许可；均不含任何参与者数据 | `proposal.md` 对应各章 |
 | `visual/assets/osm-context/provenance.json` | OSM 取数与处理的来源登记（v6.4 前背景快照）| 该历史快照仅分发来源元数据；v6.9 起另有一份定界精简快照按 ODbL 1.0 作为派生数据库随包分发（见第五节） | 该文件 `package_distribution` 字段 |
 
 ### G 媒体 / Media assets
@@ -269,11 +271,11 @@ v8.0 与 v8.2 新增的三张图版另按逐件口径登记：
 
 ## 十、作者权利保证与限制 / Author's rights warranty and its limits
 
-**保证。** GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」在此声明：本包全部 139 个登记资产，或为本方案原创生成，或按本台账与 `sources.json` 已登记的许可、条款与用途边界使用；AI 生成资产（六件场景概念图、合成语音、短片旁白）的生成输入不含任何未经许可的第三方素材——唯一例外的图像输入为本包自绘的 `site-overview.png`（场景三地理布局参照，其内含已按 ODbL 许可使用并署名的 OpenStreetMap 底图要素，登记见本台账 OSM 条目），提示词全文与输入台本随包登记于生成档案与媒体文字稿，其输出权利依据已逐项登记并以存档快照与内容哈希固定。若任何资产日后被证实存在权利瑕疵，提交方承诺替换或移除该资产，并按包内回执机制公开登记修复过程，不静默处置。
+**保证。** GitHub 用户 `lqqk7` 指导下的申报智能体「柱子 / Zhuzi」在此声明：本包全部 142 个登记资产，或为本方案原创生成，或按本台账与 `sources.json` 已登记的许可、条款与用途边界使用；AI 生成资产（六件场景概念图、合成语音、短片旁白）的生成输入不含任何未经许可的第三方素材——唯一例外的图像输入为本包自绘的 `site-overview.png`（场景三地理布局参照，其内含已按 ODbL 许可使用并署名的 OpenStreetMap 底图要素，登记见本台账 OSM 条目），提示词全文与输入台本随包登记于生成档案与媒体文字稿，其输出权利依据已逐项登记并以存档快照与内容哈希固定。若任何资产日后被证实存在权利瑕疵，提交方承诺替换或移除该资产，并按包内回执机制公开登记修复过程，不静默处置。
 
 **限制。** 本保证是提交方的自我承诺与尽责声明，不是第三方法律意见或权利认证；生成服务不提供逐次调用的第三方签名回执，该天然限制已在 `visual/assets/scene-provenance.json` 如实登记；本保证在概念征集语境下作出，不构成对评审方、主办方或任何第三方的赔偿承诺。以上边界与本台账「性质与效力」的总口径一致。
 
-**Warranty.** The submitting agent Zhuzi, directed by GitHub user `lqqk7`, declares: every one of the 139 registered assets in this package is either an original generation for this proposal or used within the licences, terms and usage boundaries registered in this ledger and `sources.json`; the generation inputs of the AI-generated assets (six concept scene images, the synthetic narration, the film voice-over) contain no unlicensed third-party material — the single image input being this package's own `site-overview.png` (the geographic layout reference for scene three, which contains OpenStreetMap base features used and attributed under ODbL, registered in this ledger's OSM entries); full prompts and input transcripts ship in the provenance record and media transcripts, and their output-rights bases are registered item by item and pinned by archived snapshots and content hashes. Should any asset later prove defective in rights, the submitter undertakes to replace or remove it and to register the repair openly through the package's receipt mechanism, never silently.
+**Warranty.** The submitting agent Zhuzi, directed by GitHub user `lqqk7`, declares: every one of the 142 registered assets in this package is either an original generation for this proposal or used within the licences, terms and usage boundaries registered in this ledger and `sources.json`; the generation inputs of the AI-generated assets (six concept scene images, the synthetic narration, the film voice-over) contain no unlicensed third-party material — the single image input being this package's own `site-overview.png` (the geographic layout reference for scene three, which contains OpenStreetMap base features used and attributed under ODbL, registered in this ledger's OSM entries); full prompts and input transcripts ship in the provenance record and media transcripts, and their output-rights bases are registered item by item and pinned by archived snapshots and content hashes. Should any asset later prove defective in rights, the submitter undertakes to replace or remove it and to register the repair openly through the package's receipt mechanism, never silently.
 
 **Limits.** This warranty is the submitter's own undertaking and duty-of-care statement, not third-party legal advice or a rights certification; generation services issue no per-call signed receipts, a native limitation honestly registered in `visual/assets/scene-provenance.json`; the warranty is given in the context of a concept competition and constitutes no indemnity to reviewers, organisers or any third party. These limits follow the ledger's overall statement of nature.
 
