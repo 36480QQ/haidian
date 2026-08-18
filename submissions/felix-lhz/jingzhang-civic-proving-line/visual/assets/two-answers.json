@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "dataset_id": "jingzhang-two-answers",
   "title": {
-    "zh": "京张双答：大钟寺城市采纳样板",
-    "en": "Jing-Zhang Two Answers: Dazhongsi Civic Adoption Sample"
+    "zh": "京张双答：大钟寺城市采纳站",
+    "en": "Jing-Zhang Two Answers: Dazhongsi Civic Adoption Station"
   },
   "status_note": {
-    "zh": "当前为 E1 概念设计，S7 未现场运行，回执结论保持待定。",
-    "en": "Current status is E1 concept design; S7 is not field-run and the receipt decision remains pending."
+    "zh": "当前为 E1 概念设计；正式报价、E2 基线、E3 试验和 E4 采用均待后续建立。",
+    "en": "Current status is E1 concept design; formal quotes, E2 baseline, E3 trial and E4 adoption remain pending."
   },
   "admission_rule": [
     "baseline_independently_complete",
@@ -357,6 +357,20 @@
       "recovery_protocol": {
         "zh": "删除临时副本，保留经人工确认的清单、日志哈希和普通登记台。",
         "en": "Remove and isolate the optional T1 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -665,6 +679,20 @@
       "recovery_protocol": {
         "zh": "机器人撤库、临时围栏拆除；保留步行路径、座椅与事件公告位。",
         "en": "Remove and isolate the optional T2 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -971,6 +999,20 @@
       "recovery_protocol": {
         "zh": "机柜整机移除，恢复预留空腔与普通电气检修口。",
         "en": "Remove and isolate the optional T3 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -1280,6 +1322,20 @@
       "recovery_protocol": {
         "zh": "撤除终端，继续使用人工窗口、纸质目录和预约电话。",
         "en": "Remove and isolate the optional S1 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -1591,6 +1647,20 @@
       "recovery_protocol": {
         "zh": "关闭终端，保留人工接待、纸质地图和静态双语导视。",
         "en": "Remove and isolate the optional S2 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -1900,6 +1970,20 @@
       "recovery_protocol": {
         "zh": "删除临时候选库，保留纸质问题卡、工作坊桌和公开来源清单。",
         "en": "Remove and isolate the optional S3 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -2196,6 +2280,20 @@
       "recovery_protocol": {
         "zh": "撤除终端，保留触摸模型、标牌、纸质路线与人工讲解点。",
         "en": "Remove and isolate the optional S4 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -2493,6 +2591,20 @@
       "recovery_protocol": {
         "zh": "关闭动态服务；静态导视、触觉节点和人工问路保持不变。",
         "en": "Remove and isolate the optional S5 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -2790,6 +2902,20 @@
       "recovery_protocol": {
         "zh": "拆除传感插件，保留树荫、雨棚、座椅、饮水和公告牌。",
         "en": "Remove and isolate the optional S6 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -2997,21 +3123,104 @@
       },
       "evidence_level": "E1_concept_design_complete",
       "geometry_refs": [
-        "V5-D-NS",
-        "V5-D-EW",
-        "V5-D-EMERGENCY",
-        "V5-D-REMOVAL",
-        "V5-D-FORECOURT",
-        "V5-D-TRIAL",
-        "V5-D-EVIDENCE",
-        "V5-D-SERVICE",
-        "V5-D-CONTROL",
-        "V5-D-ENT-N",
-        "V5-D-ENT-E",
-        "V5-D-ENT-S",
-        "V5-D-ENT-W",
-        "V5-D-STAFF-01",
-        "V5-D-UTILITY"
+        "V7-D-BASE-NS",
+        "V7-D-BASE-EW",
+        "V7-D-TACTILE-NS",
+        "V7-D-TACTILE-EW",
+        "V7-D-CROSS-N",
+        "V7-D-CROSS-S",
+        "V7-D-RAMP-N",
+        "V7-D-RAMP-S",
+        "V7-D-TRANSIT",
+        "V7-D-EMERGENCY",
+        "V7-D-REMOVAL",
+        "V7-D-FIRE",
+        "V7-D-CURB-N",
+        "V7-D-CURB-S",
+        "V7-D-SERVICE-ROUTE",
+        "V7-D-FORECOURT",
+        "V7-D-PLATFORM",
+        "V7-D-WAIT-W",
+        "V7-D-WAIT-E",
+        "V7-D-TRIAL",
+        "V7-D-BUFFER",
+        "V7-D-EVIDENCE",
+        "V7-D-EGRESS",
+        "V7-D-RAIN-W",
+        "V7-D-RAIN-E",
+        "V7-D-SHADE-W",
+        "V7-D-SHADE-E",
+        "V7-D-RESTORE",
+        "V7-D-NODATA",
+        "V7-D-PORCH",
+        "V7-D-SERVICE",
+        "V7-D-CONTROL",
+        "V7-D-STORAGE",
+        "V7-D-EVIDENCE-WALL",
+        "V7-D-ENT-N",
+        "V7-D-ENT-E",
+        "V7-D-ENT-S",
+        "V7-D-ENT-W",
+        "V7-D-STAFF-BASE",
+        "V7-D-STAFF-TRIAL",
+        "V7-D-ESTOP-01",
+        "V7-D-ESTOP-02",
+        "V7-D-UTILITY",
+        "V7-D-FIRE-GATE",
+        "V7-D-APPEAL",
+        "V7-D-WATER",
+        "V7-D-STATE-OPEN",
+        "V7-D-STATE-TRIAL",
+        "V7-D-COUNTER",
+        "V7-D-STORAGE-GATE",
+        "V7-D-RAMP-PT-N",
+        "V7-D-RAMP-PT-S",
+        "V7-D-LIGHT-01",
+        "V7-D-LIGHT-02",
+        "V7-D-LIGHT-03",
+        "V7-D-LIGHT-04",
+        "V7-D-LIGHT-05",
+        "V7-D-LIGHT-06",
+        "V7-D-LIGHT-07",
+        "V7-D-LIGHT-08",
+        "V7-D-SEAT-01",
+        "V7-D-SEAT-02",
+        "V7-D-SEAT-03",
+        "V7-D-SEAT-04",
+        "V7-D-SEAT-05",
+        "V7-D-SEAT-06",
+        "V7-D-SEAT-07",
+        "V7-D-SEAT-08",
+        "V7-D-TREE-01",
+        "V7-D-TREE-02",
+        "V7-D-TREE-03",
+        "V7-D-TREE-04",
+        "V7-D-TREE-05",
+        "V7-D-TREE-06",
+        "V7-D-TREE-07",
+        "V7-D-TREE-08",
+        "V7-D-TREE-09",
+        "V7-D-TREE-10",
+        "V7-D-TREE-11",
+        "V7-D-TREE-12",
+        "V7-D-BARRIER-01",
+        "V7-D-BARRIER-02",
+        "V7-D-BARRIER-03",
+        "V7-D-BARRIER-04",
+        "V7-D-BARRIER-05",
+        "V7-D-BARRIER-06",
+        "V7-D-BARRIER-07",
+        "V7-D-BARRIER-08",
+        "V7-D-BARRIER-09",
+        "V7-D-BARRIER-10",
+        "V7-D-BARRIER-11",
+        "V7-D-BARRIER-12",
+        "V7-D-BARRIER-13",
+        "V7-D-BARRIER-14",
+        "V7-D-BARRIER-15",
+        "V7-D-BARRIER-16",
+        "V7-D-BARRIER-17",
+        "V7-D-BARRIER-18"
       ],
       "baseline_measurement_protocol": {
         "denominator": {
@@ -3075,75 +3284,83 @@
         "zh": "每日开场检查、每次试验前联锁检查、每周资产盘点、每月公开复盘",
         "en": "Daily opening check, interlock check before every trial, weekly asset inventory, monthly public review"
       },
-      "receipt_state": "E1_FLAGSHIP_READY_E2_PENDING",
+      "receipt_state": "E1_V7_READY_E2_PENDING",
       "dimension_basis": "prototype_design_assumption_pending_survey",
       "interface_geometry_refs": [
-        "V6-D-CURB-N",
-        "V6-D-CURB-S",
-        "V6-D-CROSS-N",
-        "V6-D-CROSS-S",
-        "V6-D-TRANSIT"
+        "V7-D-CURB-N",
+        "V7-D-CURB-S",
+        "V7-D-CROSS-N",
+        "V7-D-CROSS-S",
+        "V7-D-TRANSIT"
       ],
       "baseline_route_geometry": [
-        "V6-D-BASE-NS",
-        "V6-D-BASE-EW",
-        "V6-D-CROSS-N",
-        "V6-D-CROSS-S"
+        "V7-D-BASE-NS",
+        "V7-D-BASE-EW",
+        "V7-D-TACTILE-NS",
+        "V7-D-TACTILE-EW",
+        "V7-D-CROSS-N",
+        "V7-D-CROSS-S"
       ],
       "trial_boundary_geometry": [
-        "V6-D-TRIAL",
-        "V6-D-BUFFER"
+        "V7-D-TRIAL",
+        "V7-D-BUFFER"
       ],
       "human_post_geometry": [
-        "V6-D-STAFF-BASE",
-        "V6-D-STAFF-TRIAL",
-        "V6-D-ESTOP-01",
-        "V6-D-ESTOP-02"
+        "V7-D-STAFF-BASE",
+        "V7-D-STAFF-TRIAL",
+        "V7-D-ESTOP-01",
+        "V7-D-ESTOP-02"
       ],
       "emergency_route_geometry": [
-        "V6-D-EMERGENCY",
-        "V6-D-FIRE",
-        "V6-D-EGRESS"
+        "V7-D-EMERGENCY",
+        "V7-D-FIRE",
+        "V7-D-EGRESS"
       ],
       "state_views": {
         "OPEN": [
-          "V6-D-BASE-NS",
-          "V6-D-BASE-EW",
-          "V6-D-CROSS-N",
-          "V6-D-CROSS-S",
-          "V6-D-TRANSIT",
-          "V6-D-FORECOURT",
-          "V6-D-PLATFORM",
-          "V6-D-SERVICE"
+          "V7-D-BASE-NS",
+          "V7-D-BASE-EW",
+          "V7-D-TACTILE-NS",
+          "V7-D-TACTILE-EW",
+          "V7-D-TRANSIT",
+          "V7-D-FORECOURT",
+          "V7-D-PLATFORM",
+          "V7-D-SERVICE",
+          "V7-D-PORCH"
         ],
         "TRIAL": [
-          "V6-D-TRIAL",
-          "V6-D-BUFFER",
-          "V6-D-CONTROL",
-          "V6-D-STAFF-TRIAL",
-          "V6-D-ESTOP-01",
-          "V6-D-ESTOP-02"
+          "V7-D-TRIAL",
+          "V7-D-BUFFER",
+          "V7-D-CONTROL",
+          "V7-D-STAFF-TRIAL",
+          "V7-D-ESTOP-01",
+          "V7-D-ESTOP-02",
+          "V7-D-STATE-TRIAL"
         ],
         "PAUSE": [
-          "V6-D-EMERGENCY",
-          "V6-D-EGRESS",
-          "V6-D-STAFF-BASE",
-          "V6-D-APPEAL"
+          "V7-D-EMERGENCY",
+          "V7-D-EGRESS",
+          "V7-D-STAFF-BASE",
+          "V7-D-APPEAL",
+          "V7-D-STATE-OPEN"
         ],
         "RETIRE": [
-          "V6-D-REMOVAL",
-          "V6-D-RESTORE",
-          "V6-D-EVIDENCE",
-          "V6-D-EVIDENCE-WALL"
+          "V7-D-REMOVAL",
+          "V7-D-SERVICE-ROUTE",
+          "V7-D-RESTORE",
+          "V7-D-EVIDENCE",
+          "V7-D-PORCH",
+          "V7-D-EVIDENCE-WALL",
+          "V7-D-STORAGE"
         ]
       },
       "measurement_denominator": {
-        "zh": "每种模式下连续记录 100 次符合准入条件的接驳通行；同时保留全部严重事件记录",
-        "en": "Record 100 eligible interchange passages in each mode; retain every severe-event record"
+        "zh": "每种模式连续记录 100 次符合准入条件的接驳通行，并保留全部严重事件。",
+        "en": "Record 100 eligible interchange passages in each mode and retain every severe event."
       },
       "baseline_window": {
-        "zh": "E2 原型后连续 7 个运行日，分层记录高峰/平峰、昼/夜、天气和辅助需求",
-        "en": "Seven consecutive operating days after the E2 prototype, stratified by peak/off-peak, day/night, weather and assistance needs"
+        "zh": "E2 后连续 7 个运行日，按高峰/平峰、昼/夜、天气和辅助需求分层。",
+        "en": "Seven operating days after E2, stratified by peak/off-peak, day/night, weather and assistance need."
       },
       "zero_tolerance_events": [
         "collision_or_person_in_safety_buffer",
@@ -3152,9 +3369,107 @@
         "human_takeover_timeout"
       ],
       "recovery_protocol": {
-        "zh": "立即停机并关闭试验边界；人工完成当前任务；开放两条普通路线；记录事件；设备经撤场线移出；委员会复核后方可重新申请 TRIAL。",
-        "en": "Stop and close the trial boundary; staff complete the current task; reopen both baseline routes; log the event; remove equipment via the removal route; only the committee may authorise a new TRIAL application."
-      }
+        "zh": "停机并关闭试验边界；人工完成任务；两条公共路线持续开放；记录事件；设备经撤场线进入存储或供应商回收；委员会复核后方可重新申请 TRIAL。",
+        "en": "Stop and close the trial boundary; staff complete the task; keep both routes open; log the event; move equipment to storage or supplier return; committee review is required before another TRIAL."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
+      },
+      "prototype_kit_refs": [
+        "KIT-PAV-01",
+        "KIT-ACC-01",
+        "KIT-ACC-02",
+        "KIT-BGR-01",
+        "KIT-SHA-01",
+        "KIT-FUR-01",
+        "KIT-WAT-01",
+        "KIT-LGT-01",
+        "KIT-SAF-01",
+        "KIT-SAF-02",
+        "KIT-EVD-01",
+        "KIT-EVD-02",
+        "KIT-OPS-01",
+        "KIT-AI-01",
+        "KIT-AI-02",
+        "KIT-DAT-01",
+        "KIT-RET-01"
+      ],
+      "daily_operation_steps": [
+        {
+          "id": "DAY-01",
+          "state": "OPEN",
+          "zh": "开场检查公共十字、盲道、坡道、照明和人工岗位。",
+          "en": "Opening check of public cross, tactile guidance, ramps, lighting and staffed posts."
+        },
+        {
+          "id": "DAY-02",
+          "state": "OPEN",
+          "zh": "普通接驳独立运行并建立非识别基线记录。",
+          "en": "Conventional interchange runs independently and establishes a non-identifying baseline log."
+        },
+        {
+          "id": "DAY-03",
+          "state": "TRIAL",
+          "zh": "许可与检查表齐全后，在东南湾开启单次受控试验。",
+          "en": "After permits and checks are complete, open one controlled trial in the southeast bay."
+        },
+        {
+          "id": "DAY-04",
+          "state": "PAUSE",
+          "zh": "触发停止时设备停机、人工完成任务、公共十字保持开放。",
+          "en": "On a stop trigger, equipment halts, staff complete the task and the public cross stays open."
+        },
+        {
+          "id": "DAY-05",
+          "state": "OPEN",
+          "zh": "闭场前对照普通与试验记录，回执保持采用、修改或停止三选一。",
+          "en": "Before close, compare baseline and trial logs; the receipt remains adopt, revise or stop only."
+        },
+        {
+          "id": "DAY-06",
+          "state": "RETIRE",
+          "zh": "设备经撤场线进入存储或供应商回收，试验湾恢复普通用途。",
+          "en": "Equipment follows the removal route to storage or supplier return; the bay returns to ordinary use."
+        }
+      ],
+      "curb_refs": [
+        "V7-D-CURB-N",
+        "V7-D-CURB-S"
+      ],
+      "tactile_route_refs": [
+        "V7-D-TACTILE-NS",
+        "V7-D-TACTILE-EW"
+      ],
+      "drainage_refs": [
+        "V7-D-RAIN-W",
+        "V7-D-RAIN-E"
+      ],
+      "lighting_refs": [
+        "V7-D-LIGHT-01",
+        "V7-D-LIGHT-02",
+        "V7-D-LIGHT-03",
+        "V7-D-LIGHT-04",
+        "V7-D-LIGHT-05",
+        "V7-D-LIGHT-06",
+        "V7-D-LIGHT-07",
+        "V7-D-LIGHT-08"
+      ],
+      "storage_refs": [
+        "V7-D-STORAGE",
+        "V7-D-STORAGE-GATE",
+        "V7-D-SERVICE-ROUTE"
+      ]
     },
     {
       "id": "SCN-011",
@@ -3358,21 +3673,21 @@
       },
       "evidence_level": "E1_catalogue_trace_complete",
       "geometry_refs": [
-        "V5-D-NS",
-        "V5-D-EW",
-        "V5-D-EMERGENCY",
-        "V5-D-REMOVAL",
-        "V5-D-FORECOURT",
-        "V5-D-TRIAL",
-        "V5-D-EVIDENCE",
-        "V5-D-SERVICE",
-        "V5-D-CONTROL",
-        "V5-D-ENT-N",
-        "V5-D-ENT-E",
-        "V5-D-ENT-S",
-        "V5-D-ENT-W",
-        "V5-D-STAFF-01",
-        "V5-D-UTILITY"
+        "V7-D-BASE-NS",
+        "V7-D-BASE-EW",
+        "V7-D-EMERGENCY",
+        "V7-D-REMOVAL",
+        "V7-D-FORECOURT",
+        "V7-D-TRIAL",
+        "V7-D-EVIDENCE",
+        "V7-D-SERVICE",
+        "V7-D-CONTROL",
+        "V7-D-ENT-N",
+        "V7-D-ENT-E",
+        "V7-D-ENT-S",
+        "V7-D-ENT-W",
+        "V7-D-STAFF-BASE",
+        "V7-D-UTILITY"
       ],
       "baseline_measurement_protocol": {
         "denominator": {
@@ -3465,6 +3780,20 @@
       "recovery_protocol": {
         "zh": "终端断电封存，普通服务台、纸质目录和电话继续运行。",
         "en": "Remove and isolate the optional S8 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     },
     {
@@ -3670,21 +3999,21 @@
       },
       "evidence_level": "E1_catalogue_trace_complete",
       "geometry_refs": [
-        "V5-D-NS",
-        "V5-D-EW",
-        "V5-D-EMERGENCY",
-        "V5-D-REMOVAL",
-        "V5-D-FORECOURT",
-        "V5-D-TRIAL",
-        "V5-D-EVIDENCE",
-        "V5-D-SERVICE",
-        "V5-D-CONTROL",
-        "V5-D-ENT-N",
-        "V5-D-ENT-E",
-        "V5-D-ENT-S",
-        "V5-D-ENT-W",
-        "V5-D-STAFF-01",
-        "V5-D-UTILITY"
+        "V7-D-BASE-NS",
+        "V7-D-BASE-EW",
+        "V7-D-EMERGENCY",
+        "V7-D-REMOVAL",
+        "V7-D-FORECOURT",
+        "V7-D-TRIAL",
+        "V7-D-EVIDENCE",
+        "V7-D-SERVICE",
+        "V7-D-CONTROL",
+        "V7-D-ENT-N",
+        "V7-D-ENT-E",
+        "V7-D-ENT-S",
+        "V7-D-ENT-W",
+        "V7-D-STAFF-BASE",
+        "V7-D-UTILITY"
       ],
       "baseline_measurement_protocol": {
         "denominator": {
@@ -3777,6 +4106,20 @@
       "recovery_protocol": {
         "zh": "拆除计数插件，保留普通活动电源、容量牌和疏散设施。",
         "en": "Remove and isolate the optional S9 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "quote_status": "pending_market_quote",
+      "permit_gate": "site_fire_accessibility_power_network_traffic_equipment_permissions_complete_before_TRIAL",
+      "measurement_clock": {
+        "zh": "停止指令发出时开始，普通任务由人工完成且两条公共路线恢复开放时结束；E2 演练前不设虚构阈值。",
+        "en": "Starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no invented threshold before E2."
+      },
+      "baseline_sample_rule": {
+        "zh": "同题、同人、同空间、同时间分层；普通服务先记录，AI 只比较增量。",
+        "en": "Same task, user, space and stratified time; baseline first, then compare only the AI increment."
+      },
+      "recovery_verification": {
+        "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
+        "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       }
     }
   ],
@@ -3785,7 +4128,7 @@
     "en": "The baseline stands first; AI earns civic adoption only through a public same-task, same-user, same-space test."
   },
   "field_status": "not_field_run",
-  "publication_version": "V6",
+  "publication_version": "V7",
   "evidence_ladder": [
     {
       "id": "E0",

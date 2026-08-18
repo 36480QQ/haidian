@@ -7,35 +7,36 @@ const write = (name, value) => fs.writeFileSync(path.join(root, name), `${JSON.s
 const depth = read('design_depth_matrix.json');
 const depthUpdates = {
   traffic_rail_slow_parking: {
-    geometry_refs: ['geometry/roads.geojson#V6-D-BASE-NS','geometry/roads.geojson#V6-D-BASE-EW','geometry/roads.geojson#V6-D-TRANSIT','geometry/roads.geojson#V6-D-EMERGENCY'],
-    metric_refs: ['s7_review_scale_count','s7_baseline_sample_status'],
-    evidence_summary_zh: 'S7 旗舰样板把两条连续公共路线、两处过街、常规接驳、独立低速湾、疏散和撤场画在同一四级尺度证据链中；方向和尺寸均为待测绘复核的概念建议。',
+    geometry_refs: ['geometry/roads.geojson#V7-D-BASE-NS','geometry/roads.geojson#V7-D-BASE-EW','geometry/roads.geojson#V7-D-TACTILE-NS','geometry/roads.geojson#V7-D-TRANSIT','geometry/roads.geojson#V7-D-EMERGENCY'],
+    metric_refs: ['s7_review_scale_count','s7_prototype_kit_item_count','s7_baseline_sample_status'],
+    evidence_summary_zh: 'S7 城市采纳站把公共十字、触觉引导、常规接驳、独立试验湾、证据门廊、疏散和撤场画在同一五级尺度证据链中；方向和尺寸均为待测绘复核的原型建议。',
   },
   blue_green_public_space: {
-    geometry_refs: ['geometry/public_space.geojson#V6-D-RAIN-W','geometry/public_space.geojson#V6-D-RAIN-E','geometry/public_space.geojson#V6-D-SHADE-NW','geometry/public_space.geojson#V6-D-EVIDENCE'],
-    evidence_summary_zh: '大钟寺前场将雨水花园、遮阴休息、证据广场和四象限公共路线作为永久基线；AI 试验停机或撤场后仍完整。',
+    geometry_refs: ['geometry/public_space.geojson#V7-D-RAIN-W','geometry/public_space.geojson#V7-D-RAIN-E','geometry/public_space.geojson#V7-D-SHADE-W','geometry/public_space.geojson#V7-D-SHADE-E','geometry/public_space.geojson#V7-D-EVIDENCE'],
+    evidence_summary_zh: '大钟寺前场将雨水花园、双侧遮阴休息、证据门廊和公共十字作为永久基线；AI 试验停机或撤场后仍完整。',
   },
   three_key_area_detailed_design: {
-    drawing_refs: ['assets/figures/key-areas.png','assets/figures/hero-s7-detail.png','assets/figures/hero-s7-section.png','drawings/a0-boards.pdf#page=2','drawings/a3-booklet.pdf#page=13'],
-    geometry_refs: ['geometry/roads.geojson#V6-D-BASE-NS','geometry/public_space.geojson#V6-D-TRIAL','geometry/buildings.geojson#V6-D-SERVICE','geometry/constraints.geojson#V6-D-STAFF-TRIAL'],
-    metric_refs: ['s7_traceable_spatial_object_count','s7_review_scale_count','s7_baseline_sample_status'],
-    assumption_ids: ['A-SPATIAL-ATLAS-001','A-V6-S7-DIMENSIONS'],
-    evidence_summary_zh: 'S7 作为 60% 深化资源的旗舰样板完成 1:5000/1:2000/1:500/1:200、四态运行、RACI、双急停、消防与还场；T2/S2 保留差异化安全和公共服务对照。',
+    drawing_refs: ['assets/figures/key-areas.png','assets/figures/hero-s7-detail.png','assets/figures/hero-s7-section.png','assets/figures/hero-s7-assembly.png','drawings/a0-boards.pdf#page=2','drawings/a3-booklet.pdf#page=10'],
+    geometry_refs: ['geometry/roads.geojson#V7-D-BASE-NS','geometry/roads.geojson#V7-D-TACTILE-NS','geometry/public_space.geojson#V7-D-TRIAL','geometry/buildings.geojson#V7-D-PORCH','geometry/constraints.geojson#V7-D-STAFF-TRIAL'],
+    metric_refs: ['s7_traceable_spatial_object_count','s7_review_scale_count','s7_prototype_kit_item_count','s7_baseline_sample_status','s7_formal_cost_status'],
+    assumption_ids: ['A-SPATIAL-ATLAS-001','A-V7-S7-DIMENSIONS'],
+    evidence_summary_zh: 'S7 作为旗舰样板完成城市联系、1:2000、1:500、1:200和装配轴测；公共十字、可逆试验湾、证据门廊、双急停、消防、存储与还场全部可追踪，T2/S2 保留差异化对照。',
   },
   phasing_implementation: {
     metric_refs: ['field_performance_status','s7_baseline_sample_status'],
-    evidence_summary_zh: '四阶段以进入条件、输出物和失败条件控制；S7 必须在 E2 建立普通基线并完成许可矩阵，才可进入 E3 受控试验。',
+    evidence_summary_zh: '四阶段以进入条件、输出物和失败条件控制；17 项原型包先完成数量复算与正式询价，S7 必须在 E2 建立普通基线并完成许可矩阵，才可进入 E3。',
   },
   metrics_recalculation: {
-    metric_refs: ['s7_traceable_spatial_object_count','s7_review_scale_count','s7_baseline_sample_status','field_performance_status'],
-    evidence_summary_zh: '仅复算设计对象与审查尺度；100 次通行分母、7 日窗口和分层方法已登记，但现场样本、成效与采用结论保持 unknown。',
+    metric_refs: ['s7_traceable_spatial_object_count','s7_review_scale_count','s7_prototype_kit_item_count','s7_baseline_sample_status','s7_formal_cost_status','field_performance_status'],
+    evidence_summary_zh: '复算设计对象、审查尺度与原型包数量；100 次通行分母、7 日窗口和计时起止点已登记，正式报价、现场样本、成效与采用结论保持 unknown。',
   },
 };
 depth.items = depth.items.map((item) => ({ ...item, ...(depthUpdates[item.item_id] || {}) }));
-depth.v6_evidence_index = {
-  version: 'V6',
-  flagship: 'S7 Dazhongsi / A0-02 / A3 pp.13-14 / assets/figures/key-areas.png',
-  four_scales: '1:5000 city / 1:2000 plan / 1:500 detail / 1:200 section',
+delete depth.v6_evidence_index;
+depth.v7_evidence_index = {
+  version: 'V7',
+  flagship: 'S7 Dazhongsi / A0-02 / A3 pp.9-11 / assets/figures/key-areas.png',
+  five_views: '1:5000 city / 1:2000 plan / 1:500 detail / 1:200 section / assembly axonometric',
   state_trace: 'OPEN / TRIAL / PAUSE / RETIRE',
   field_status: 'not_field_run; no outcome or adoption claim',
 };
@@ -57,7 +58,8 @@ compliance.requirements = compliance.requirements.map((item) => {
   next.metrics = Array.from(new Set([...(item.metrics || []),'s7_review_scale_count','s7_baseline_sample_status']));
   return next;
 });
-compliance.v6_evidence_index = depth.v6_evidence_index;
+delete compliance.v6_evidence_index;
+compliance.v7_evidence_index = depth.v7_evidence_index;
 write('compliance_matrix.json', compliance);
 
 const standards = read('standard_matrix.json');
@@ -65,18 +67,19 @@ standards.standards = standards.standards.map((item) => {
   if (!['MOHURD-URBAN-DESIGN-MEASURES','MOHURD-ARCH-DESIGN-DEPTH-2016','PROJECT-AGENT-OPEN-CALL-TASKBOOK'].includes(item.standard_id)) return item;
   return {
     ...item,
-    drawing_refs: Array.from(new Set([...(item.drawing_refs || []),'assets/figures/key-areas.png','drawings/a3-booklet.pdf#page=13'])),
-    geometry_refs: Array.from(new Set([...(item.geometry_refs || []),'geometry/roads.geojson#V6-D-BASE-NS','geometry/public_space.geojson#V6-D-TRIAL'])),
-    metric_refs: Array.from(new Set([...(item.metric_refs || []),'s7_review_scale_count','s7_baseline_sample_status'])),
-    evidence_summary_zh: `${item.evidence_summary_zh || ''} V6 以 S7 四级尺度、公共路线不可退化、四态运营和回执测量补强可实施空间证据。`.trim(),
+    drawing_refs: Array.from(new Set([...(item.drawing_refs || []),'assets/figures/key-areas.png','assets/figures/hero-s7-assembly.png','drawings/a3-booklet.pdf#page=10'])),
+    geometry_refs: Array.from(new Set([...(item.geometry_refs || []).filter((ref) => !/V[56]-D-/.test(ref)),'geometry/roads.geojson#V7-D-BASE-NS','geometry/roads.geojson#V7-D-TACTILE-NS','geometry/public_space.geojson#V7-D-TRIAL','geometry/buildings.geojson#V7-D-PORCH'])),
+    metric_refs: Array.from(new Set([...(item.metric_refs || []),'s7_review_scale_count','s7_prototype_kit_item_count','s7_baseline_sample_status','s7_formal_cost_status'])),
+    evidence_summary_zh: `${(item.evidence_summary_zh || '').replace(/\s+V[67] 以 S7[^。]*。/g,'').trim()} V7 以 S7 五级视图、公共十字不可退化、17 项原型包、四态运营和回执测量补强可实施证据。`.trim(),
   };
 });
-standards.v6_evidence_index = depth.v6_evidence_index;
+delete standards.v6_evidence_index;
+standards.v7_evidence_index = depth.v7_evidence_index;
 write('standard_matrix.json', standards);
 
 const risk = read('risk.json');
-risk.summary = 'V6 把 S7 的公共路线、路缘、常规接驳、AI 试验边界、雨水花园、人工岗位、双急停、消防和撤场写入同一组可追踪概念对象；空间深度 major 在盲审前保持开放，现场成效与采用决定保持 unknown。';
-risk.v6_flagship_rule = 'baseline_route_continuous_in_OPEN_TRIAL_PAUSE_RETIRE + zero_tolerance_safety + human_authority';
+risk.summary = 'V7 把 S7 的公共十字、触觉引导、路缘、常规接驳、可逆试验湾、证据门廊、蓝绿边界、岗位、双急停、消防、存储和撤场写入同一组可追踪对象；正式报价、现场成效与采用决定保持 unknown。';
+risk.v7_flagship_rule = 'public_cross_continuous_in_OPEN_TRIAL_PAUSE_RETIRE + reversible_trial_bay + staffed_evidence_porch + human_authority';
 write('risk.json', risk);
 
-console.log('V6 matrices and risk evidence refreshed');
+console.log('V7 matrices and risk evidence refreshed');
