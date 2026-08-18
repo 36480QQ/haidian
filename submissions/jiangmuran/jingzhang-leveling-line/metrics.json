@@ -7,7 +7,7 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.385554,
+      "value": 11412825,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
@@ -32,7 +32,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 82276.0,
+      "value": 82276,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -73,9 +73,9 @@
         "A-BOUNDARY-001"
       ],
       "inputs": {
-        "green_area_sqm_after_deducting_building_footprints": 2244081.797495,
-        "site_area_sqm": 11412825.385554,
-        "building_footprint_deducted_sqm": 82276.0,
+        "green_area_sqm_after_deducting_building_footprints": 2244082,
+        "site_area_sqm": 11412825,
+        "building_footprint_deducted_sqm": 82276,
         "check": "green_area_sqm_after_deducting_building_footprints / site_area_sqm"
       },
       "metric_class": 1,
@@ -107,8 +107,8 @@
         "A-BOUNDARY-001"
       ],
       "inputs": {
-        "public_space_area_sqm": 733011.382241,
-        "site_area_sqm": 11412825.385554,
+        "public_space_area_sqm": 733011,
+        "site_area_sqm": 11412825,
         "check": "public_space_area_sqm / site_area_sqm"
       },
       "metric_class": 1,
@@ -197,7 +197,7 @@
     },
     "leveling_spine_length_m": {
       "status": "known",
-      "value": 9443.264658,
+      "value": 9443.3,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"
@@ -262,8 +262,8 @@
         "A-BOUNDARY-001"
       ],
       "inputs": {
-        "land_use_code_1401_area_sqm": 1392297.141477,
-        "site_area_sqm": 11412825.385554,
+        "land_use_code_1401_area_sqm": 1392297,
+        "site_area_sqm": 11412825,
         "check": "land_use_code_1401_area_sqm / site_area_sqm"
       },
       "metric_class": 1,
@@ -277,7 +277,7 @@
     },
     "phasing_union_area_sqm": {
       "status": "known",
-      "value": 2920311.442425,
+      "value": 2920311,
       "unit": "sqm",
       "source_files": [
         "geometry/phasing.geojson"
