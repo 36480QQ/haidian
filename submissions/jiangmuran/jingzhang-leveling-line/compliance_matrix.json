@@ -2011,8 +2011,8 @@
     "statement_en": "This package declares license COMMUNITY-DISPLAY-ONLY, one of three values allowed by the organisers' schema/proposal.schema.json. The other two, CC-BY-4.0 and CC-BY-SA-4.0, both permit commercial use, so there is no standard option that is at once non-commercial and able to say this is not a government decision. No file in the repository states the terms of this identifier: outside submissions/ it occurs in 5 files (agent.html, schema/proposal.schema.json, scripts/scaffold_ai_submission.py, scripts/validate_submission.py, templates/proposal.md), always as an enum value, a template placeholder or a validation whitelist entry. Rather than invent terms, only an upper bound is given: every use this package grants is also granted by CC BY-NC 4.0, so a third party acting within CC BY-NC 4.0 cannot exceed this package's licence. This claims no lower bound - it does not say the grant is as wide as CC BY-NC 4.0, only that it is no wider."
   },
   "reviewer_checklist": {
-    "scope_zh": "供拿到仓库的人逐项核对，每项都可在不联系作者的情况下独立完成。**评审模型能按字面执行的是 0 项**：各项指名的文件不在它收到的九份之内，所以这份清单从正文移到这里——它仍随包、仍被评审整份读到，只是不再占用正文这块最稀缺的表面（E355）。",
-    "scope_en": "For anyone with the repository, each item completable without contacting the author. **The reviewing model can execute 0 of 12 literally**: every item names a file outside the nine it receives. The list therefore moved out of the proposal body into this file, which the reviewer also receives whole, so nothing leaves the packet and the body stops spending its scarcest surface on it (E355).",
+    "scope_zh": "供拿到仓库的人逐项核对：每一项都可在不联系作者的情况下独立完成，所需文件都在随包目录内。",
+    "scope_en": "For anyone holding the repository: each item is completable without contacting the author, and every file it needs ships inside the package.",
     "items_zh": [
       "`node visual/assets/verify.js` —— 独立重算 `metrics.json` 里全部 27 条 `metric_class: 1` 指标，并**双向断言这一覆盖**（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析。退出码即结论；",
       "`node visual/assets/check_osm.js` —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测；",
