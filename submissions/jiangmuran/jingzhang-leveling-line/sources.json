@@ -364,7 +364,9 @@
       "manual_review_status": "作者已逐条复核",
       "traceability_note_zh": "本条只为赫尔辛基登记册提供可追溯 URL。阿姆斯特丹 Algoritmeregister 在正文中作为**对照**出现，本包**未取得其公开 URL，因此不为它编造一条**——组织方规则要求申请者可见资料必须能追溯到公开 URL，而给一个没读过的对象配上链接，正是这份登记表存在的理由所要防的事。",
       "does_not_support_zh": "该案例只提供算法登记制度的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from algorithm registers and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from algorithm registers and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移「登记即合规」这一定位：登记册记录的是系统声明了什么，本方案要求的是可被第三方重算的读数；也不迁移其自愿登记的范围界定。",
+      "not_transferred_en": "The registry-as-compliance stance is not transferred: a register records what a system declares, while this proposal asks for a reading a third party can recompute. Nor is its voluntary scope."
     },
     {
       "id": "CASE-C2-EU-AI-ACT-RISK-TIERS",
@@ -392,7 +394,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "该案例只提供按风险分级的立法的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from risk-tiered legislation and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from risk-tiered legislation and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其法定义务分级与处罚机制：本方案没有立法权，限差 F 的约束力来自公开读数与整段退回，不来自罚则。",
+      "not_transferred_en": "Its statutory duty tiers and penalties are not transferred: this proposal has no legislative power, and tolerance F binds through a published reading and a whole-segment rollback, not fines."
     },
     {
       "id": "CASE-C3-AI-VERIFY",
@@ -419,7 +423,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "该案例只提供标准化测试框架的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from a standardised testing framework and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from a standardised testing framework and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其测试项清单与认证品牌：本方案不发证书，不认可任何机构背书，退出码本身就是结论。",
+      "not_transferred_en": "Its test catalogue and certification brand are not transferred: this proposal issues no certificate and accepts no institutional endorsement; the exit code is the conclusion."
     },
     {
       "id": "CASE-C4-NHS-ALGORITHMIC-IMPACT",
@@ -446,7 +452,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "该案例只提供算法影响评估实践的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from algorithmic impact assessment and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from algorithmic impact assessment and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其伦理委员会审批流程与病历数据口径：本方案不接触个人数据，复测对象是场地读数而非病人结局。",
+      "not_transferred_en": "Its ethics-committee approval flow and clinical-record basis are not transferred: this proposal touches no personal data, and what is re-measured is a site reading, not a patient outcome."
     },
     {
       "id": "CASE-C5-CIVIC-DATA-AGENDA",
@@ -474,7 +482,9 @@
       "manual_review_status": "作者已逐条复核",
       "traceability_note_zh": "本条只为 Decidim（巴塞罗那）提供可追溯 URL。台北公民参与机制在正文中作为**对照**出现，本包未取得其公开 URL，同样不为它编造一条。",
       "does_not_support_zh": "该案例只提供公民数据受托实践的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from civic data stewardship and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from civic data stewardship and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其市民议程的选举与代表机制：本方案不设代表制，读数由任何到场的人取得，不需要先成为代表。",
+      "not_transferred_en": "Its elected civic-agenda representation is not transferred: this proposal sets up no representative body; a reading is taken by whoever walks up, with no standing required."
     },
     {
       "id": "CASE-C6-ARTIFACT-EVALUATION",
@@ -501,7 +511,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "该案例只提供开源可复现规范的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from open-source reproducibility norms and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from open-source reproducibility norms and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其匿名评审与徽章制度：本方案的复算不设评审人，任何人重跑得到同一个退出码即为结论。",
+      "not_transferred_en": "Its anonymous review and badge scheme are not transferred: recomputation here has no reviewer; anyone re-running it reaches the same exit code, and that is the conclusion."
     },
     {
       "id": "MOHURD-URBAN-DESIGN-MEASURES",
