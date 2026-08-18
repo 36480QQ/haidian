@@ -3,18 +3,19 @@
 ## Generation tools
 
 - All proposal text (`proposal.md`, `proposal.en.md`), structured data (`sources.json`, `metrics.json`, GeoJSON layers, compliance/standard/depth matrices), and narrative content were authored by the declared AI agent (Claude, agent family declared in `agent.json`) under human direction, based on the officially registered sources listed in `sources.json`.
-- Derived figures under `assets/figures/` are generated locally and programmatically from the package's own GeoJSON, metrics, and matrix data using the Python imaging/plotting toolchain (Pillow; matplotlib where used in figure regeneration). No remote assets, remote fonts, or external map tiles are loaded by `visual/index.html`, `report/proposal.html`, or any figure.
+- Derived figures under `assets/figures/` are generated locally and programmatically from the package's own GeoJSON, metrics, and matrix data using the Python imaging/plotting toolchain (Pillow; matplotlib where used in figure regeneration), plus — for the five core map figures — an OpenStreetMap-derived urban-fabric reference layer described in the section below. No remote assets, remote fonts, or external map tiles are loaded at view time by `visual/index.html`, `report/proposal.html`, or any figure; all figures are pre-rendered raster files.
 
 ## Third-party data and OSM/ODbL
 
-- No OpenStreetMap (OSM) or other ODbL-licensed geometry, basemap, or attribute data is used in any layer of this package. All geometry derives from the maintainer-registered provisional boundaries in `brief/site-package/geometry/` plus agent-generated conceptual features, tagged `provisional_constraint` / `official_boundary=false`.
-- Should any future revision introduce OSM-derived geometry, it will carry the attribution "© OpenStreetMap contributors, ODbL 1.0" in this statement, in the affected layer properties, and in `sources.json` before submission.
+- **OpenStreetMap attribution — © OpenStreetMap contributors, ODbL 1.0.** The five core map figures in `assets/figures/` (`site-overview`, `land-use-structure`, `key-areas`, `mobility-bluegreen`, `metrics-evidence`, each in `.png` and `.en.png`) are drawn over an urban-fabric reference layer derived from OpenStreetMap data — streets, railways, metro lines and stations, rivers and water bodies, parks and green space — retrieved from the Overpass API on 2026-08-18 for the bounding box 39.950–40.040 N, 116.320–116.395 E. This layer is licensed under the Open Database License (ODbL) 1.0; the licence and attribution requirement travel with any reuse of these figures. Source registered in `sources.json` as `OSM-ODBL-2026`; attribution is additionally printed inside every affected figure.
+- The OSM layer serves **orientation only** — it shows where the real city is, so a reader can locate the proposal. It is not an official boundary, not a statutory drawing, and not an approval basis. No OSM geometry is used in the package's own GeoJSON: all geometry in `geometry/` derives from the maintainer-registered provisional boundaries in `brief/site-package/geometry/` plus agent-generated conceptual features, tagged `provisional_constraint` / `official_boundary=false`.
+- The conceptual design layers overlaid on the OSM basemap (corridor spine, chainage, key-area extents, nodes, seams) are this proposal's own provisional content, drawn dashed/semi-transparent and labelled as such; they are not part of, and are not contributed back to, the OSM database.
 - Factual claims (registration counts, park dimensions, historical dates) cite publicly available official sources registered in `sources.json`; short factual references are used under lawful quotation for review purposes with sources named.
 
 ## AI-generated imagery statement
 
 - Every figure and diagram in `assets/figures/` and every drawing sheet in `drawings/` is AI-assisted, programmatically generated content. These images are explanatory illustrations of conceptual recommendations only; they are not official planning drawings, not government-approved documents, and not evidence of boundaries, areas, or regulatory conditions. Authoritative data remains the GeoJSON/JSON packages and the registered sources.
-- No photographic material, third-party artwork, scanned official drawings, or commercial map screenshots are included.
+- No photographic material, third-party artwork, scanned official drawings, or commercial map screenshots are included. The basemap in the five core map figures is vector geometry rendered locally from OSM data (see attribution above), not a screenshot of any commercial map service.
 
 ## License
 
