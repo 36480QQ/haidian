@@ -4,6 +4,22 @@
 
 > 本文件记录方案包的版本演进、每次迭代响应了什么反馈、以及仍然开放的问题。全部空间内容始终为概念建议,不构成审定结论。
 
+## v1.6 - 2026-08-19
+
+**图面增强版:响应图面可读性审计,补齐显示面必填项**
+
+**动机**:响应 issue #2955 对图面可读性的批评方向("场景卡是没意义的东西"“文字替代空间”),并对照内部图面审计(`review/FIGURE-AUDIT-20260819.md`)与展示面情报(`review/SEPT-INTEL-20260819.md`)补齐两项此前缺失的显示面必填项(`risk.json`、`manifest.cover_image`)。本版不改概念、不改既有5张正式图纸的构图与配色,只做增量标注与全新补充图。
+
+- **道路真实路名标注**:在 `site-overview`/`key-areas`/`mobility-bluegreen` 三图(中英共6张PNG)上,取 `roads.geojson` 中10条"现状参照"道路,按可见范围与文字实际字宽做避让式标注(中文用简称、英文用拼音),自建避障算法与已放置标注互相让位,避免与站名、重点区编号徽标重叠;拥挤处按净空不足自动跳过而非强行压字。三图五道口—学院路一带最终中文标注8/10条、英文标注视文字宽度略少,均如实以算法结果为准,不手工凑数。
+- **分期实施地图(新增 JZ-2026-11)**:按 `phasing.geojson` 的三期几何,套用本包既有蓝图绿色系(`#2F6B50`/`#3E8663`/`#5FA083`)三级色阶绘制 `phasing-plan.png`(中英),标注 PH-1/2/3 期号,图例含年份(近期2026-2028/中期2028-2031/远期2031-2035,与 proposal.md 分期段落逐字一致)与阶段门摘要;`gen_drawings.py` 在 A3 图册"实施与运营"页(原 P14)后插入该图新页(中英 PDF 均为 16 页,原风险合规页顺延为 P16)。
+- **12场景卡定位小图(新增)**:`public_space.geojson` 中已有 `layer=SCENARIO_NODE` 的12个场景锚点真实坐标(非质心近似),据此绘制 `scenario-index.png`(中英),嵌入 A3 图册场景卡页(原 P13)右侧新增小图列(卡片本身仅按比例收窄、文字内容未改动);同图追加到 `proposal.md`/`proposal.en.md` 场景表之后。
+- **P2 概念页缩略图**:复用已有 `site-overview.png`(未新生成图像),以缩略图形式插入 P2"一句话方案"框内既有留白处,中英 A3 同步。
+- **`risk.json` 新增**:据 proposal.md 风险登记册 R-01~R-09,按 `schema/risk.schema.json` 归并为8个维度(`policy_uncertainty` 合并承载 R-01+R-04,其余 R-02/03/05/06/07/08/09 各占一维,原文各条款均以"(R-0X)"标注在 note 字段中保留可追溯性),写入包根并在 `manifest.json` 注册(`role: risk_matrix`,参照同 schema_version 0.1.0 的 `budoyh/jingzhang-168` 包用法)。
+- **`manifest.cover_image` 新增**:复制 `site-overview.png` 为 `assets/media/cover.png`,`manifest.json` 顶层新增 `cover_image` 字段并在 `files[]` 注册(`role: media_poster`,参照 `budoyh/jingzhang-168` 包格式)。
+- **正文小改**:`proposal.md`/`proposal.en.md` 场景表后与分期段落后各插入一行新图引用(合计4行,含中英各2处),格式与既有图引用一致;证据标签序列未增未减。
+- **报告与manifest重渲**:用当前 main 的 `scripts/render_proposal_html.py` 重新生成 `report/proposal.html`/`report/proposal.en.html`;`visual/index.html`/`visual/index.en.html` 引用路径未变,内容未改动,但其对应的 `visual/assets/{site-overview,key-areas,mobility-bluegreen}{,.en}.png` 6个副本随改动图同步刷新(此前发现这6个副本是独立文件而非同一路径,不同步会导致 visual 画廊仍显示图面增强前的旧图);`drawings/*.pdf` 中英各2份因新增图册页与图面变化全部重渲;所有改动/新增文件 sha256 按 `scripts/refresh_submission_manifest.py` 统一刷新;`schema_version` 保持 `0.1.0` 不变,未设置 `readiness_contract`。
+- 自检:当前 main 校验脚本下 `validate_local_submission` 与 `self_check_submission` 四门全部 PASS;双语契约检查通过(证据标签序列 zh/en 完全一致);详见 `contrib/V16/VERIFICATION.md`。
+
 ## v1.5 - 2026-08-16
 
 **风险、资金与规则化治理的正文深化**
