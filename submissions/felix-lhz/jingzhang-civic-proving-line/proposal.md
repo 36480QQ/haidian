@@ -15,7 +15,9 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterpris
 
 > **三站一历 / THREE STATIONS, ONE CIVIC YEAR：一条不断线的公共基线，三座会留下回执的城市地标，一年四季的公开采纳程序。** 每个城市问题先让普通答案独立成立，再让 AI 在同题、同人、同空间中公开证明增量；最终只允许 `adopt`、`revise`、`stop`，并由人类场景委员会决定。
 
-V8 把三处既有站点升级为三座不可混淆的回执地标：众智园·验真环、AI 原点·共译门、大钟寺·回执廊；再用春、夏、秋、冬四季日历把公共基线审计、能力开放测试、公众采纳周和年度退出复盘连成长期运营。S7 仍以 1:5000、1:2000、1:500、1:200 和装配轴测承担实施样板，并新增 90 天最小试点，不增加场景数量。[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json] [metric:receipt_landmark_count] [metric:annual_program_cycle_count]
+V8 把三处既有站点升级为三座不可混淆的回执地标：众智园·验真环、AI 原点·共译门、大钟寺·回执廊；再用春、夏、秋、冬四季日历把公共基线审计、能力开放测试、公众采纳周和年度退出复盘连成长期运营。[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json]
+
+S7 仍以 1:5000、1:2000、1:500、1:200 和装配轴测承担实施样板，并新增 90 天最小试点，不增加场景数量。[metric:receipt_landmark_count] [metric:annual_program_cycle_count]
 
 **本轮有两个可定位结论：城市尺度上三座地标各有独立轮廓；旗舰尺度上公共十字在 `OPEN / TRIAL / PAUSE / RETIRE` 四态中始终连续。** 不读标题也应能区分环、门、廊；不读图例也应能找到触觉引导、独立试验湾、人工岗位、双急停、消防到达和撤场方向。[data:geometry/roads.geojson#V7-D-BASE-NS] [data:geometry/buildings.geojson#V7-D-PORCH]
 
@@ -27,7 +29,9 @@ V8 把三处既有站点升级为三座不可混淆的回执地标：众智园·
 
 本轮边界、三处重点区、用地界面、建筑包络和节点位置均为临时边界下的概念建议，不是 official boundary、道路红线、权属或控规结论。正式范围、市政、消防、遗产、现状建筑、现场客流与绩效尚未提供；相应指标保持 unknown，图像均标注概念生成，不用视觉精度冒充证据。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
-文化与场地背景只采用官方公开资料：京张铁路遗址公园规划解读和一期、二期建设信息用于理解铁路遗产、连续公园和公共空间目标；北京市政府公开的中关村创新史用于说明“试验—转化—共享”的文化线索；大钟寺轨道背景仅作方向性接口。它们均不证明精确站口、建筑、红线或权属。[source:JINGZHANG-PLAN-OFFICIAL] [source:JINGZHANG-PHASE1-OFFICIAL] [source:JINGZHANG-PHASE2-OFFICIAL] [source:ZHONGGUANCUN-HISTORY-OFFICIAL] [source:DAZHONGSI-LINE13-CONTEXT]
+文化与场地背景只采用官方公开资料：京张铁路遗址公园规划解读和一期、二期建设信息用于理解铁路遗产、连续公园和公共空间目标。[source:JINGZHANG-PLAN-OFFICIAL] [source:JINGZHANG-PHASE1-OFFICIAL] [source:JINGZHANG-PHASE2-OFFICIAL]
+
+北京市政府公开的中关村创新史用于说明“试验—转化—共享”的文化线索；大钟寺轨道背景仅作方向性接口。它们均不证明精确站口、建筑、红线或权属。[source:ZHONGGUANCUN-HISTORY-OFFICIAL] [source:DAZHONGSI-LINE13-CONTEXT]
 
 设计证据分五层：`proposal.md` 解释判断；`geometry/*.geojson` 保存空间对象；`visual/assets/two-answers.json` 保存 12 组对照契约；`metrics.json` 区分 known/unknown；三套矩阵、图纸、交互展和 `self_check.json` 形成交叉索引。公开资料研究用于机制转译，不产生机构合作、投资或实施承诺。[depth:existing_conditions_diagnosis]
 
@@ -212,7 +216,9 @@ S7 另设 90 天最小试点：0—15 天核验测绘、权属、站口、消防
 
 ## 指标体系、面积复算与合规矩阵
 
-known 只包括可复算的文档与设计覆盖：12 个双答场景、3 座回执地标、4 个季节程序、5 个 S7 试点阶段、98 个 S7 设计对象、5 个审查视图和 17 项原型包。服务完成率、满意度、能耗、单价、总价、无障碍失败率和事件率均为 unknown；交互展显示“待现场基线 / 待正式询价”。[metric:paired_scenario_count] [metric:receipt_landmark_count] [metric:annual_program_cycle_count] [metric:s7_pilot_phase_count]
+known 只包括可复算的文档与设计覆盖：12 个双答场景、3 座回执地标和4 个季节程序。[metric:paired_scenario_count] [metric:receipt_landmark_count] [metric:annual_program_cycle_count]
+
+另有 5 个 S7 试点阶段、98 个 S7 设计对象、5 个审查视图和 17 项原型包。服务完成率、满意度、能耗、单价、总价、无障碍失败率和事件率均为 unknown；交互展显示“待现场基线 / 待正式询价”。[metric:s7_pilot_phase_count]
 
 证据链为“任务问题 → 空间节点 → 重点区总平面 → 场景详图 → 典型剖面 → 普通/AI 两条路径 → 90 天试点 → 四季复核 → 最小数据 → 人工责任 → 共同指标 → 准入/停止 → 城市采纳回执 → adopt/revise/stop → 退出还场 → 公共知识归档”。回执和台账当前统一标记 `not_field_run / pending_field_evidence`，不把设计完成度误写成运行效果。公开界面不展示个人轨迹或未经核验的排名；模型输出不是采纳决定；`score_submission.py` 只作内部建议检查，不冒充正式评分。
 
