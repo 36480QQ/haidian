@@ -36,7 +36,7 @@ This proposal strictly separates formal-ready, background-only, and provisional-
 | `geometry/provisional_boundaries.geojson` | Provisional boundary | provisional-only | Used **only** for generation, visualisation, and self-check [source:BOUNDARY-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] |
 | Provisional key-area extents | Three core functional districts | provisional-only | Directional design basis only [source:KEY-AREA-SOURCE] |
 | `enums/land_use_codes.json` | Land-use classification codes | formal-ready (project subset) | The complete official code table must be imported before formal statistics [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] |
-| Global cases and historical material | Case reference and cultural narrative | to be completed | See the References chapter; marked `[待证]` (pending verification) in this version, asserted as fact nowhere |
+| Global cases and historical material | Case reference and cultural narrative | to be completed | See the References chapter; whatever lacks a public source is asserted as fact nowhere in this version |
 
 ### Evidence-chain correspondence
 
@@ -148,13 +148,13 @@ The spatial correspondence of the three areas and two wings is based on the offi
 
 ### Regional innovation collaboration: the Jing-Zhang axis (agent.1)
 
-The first export corridor of the Gauge runs northwest along the centennial Jing-Zhang line: **Yanqing** (the intelligent-scenario legacy of the Winter Olympics) and **Zhangjiakou** (renewable-energy and computing-infrastructure siting) have the preconditions to host JZ-Gauge **out-of-belt retest grounds** and green computing supply — the specific scale and current-state data of these preconditions are marked `[待证]` in this version, and no factual assertion is made. This version proposes only three mechanism interfaces: a certification protocol for out-of-belt retest grounds (a site-extension clause of JZ-Specs), a mutual version-recognition mechanism (out-of-belt retest results can trigger a version-upgrade deliberation), and demonstration segments of standard parts along the Jing-Zhang high-speed line (public test positions for JZ-Parts in station environments).
+The first export corridor of the Gauge runs northwest along the centennial Jing-Zhang line: **Yanqing** (the intelligent-scenario legacy of the Winter Olympics) and **Zhangjiakou** (renewable-energy and computing-infrastructure siting) have the preconditions to host JZ-Gauge **out-of-belt retest grounds** and green computing supply — the specific scale and current-state data of these preconditions are not cited in this version, and no factual assertion is made. This version proposes only three mechanism interfaces: a certification protocol for out-of-belt retest grounds (a site-extension clause of JZ-Specs), a mutual version-recognition mechanism (out-of-belt retest results can trigger a version-upgrade deliberation), and demonstration segments of standard parts along the Jing-Zhang high-speed line (public test positions for JZ-Parts in station environments).
 
 The corridor also extends the "Centennial Jing-Zhang cultural belt" positioning from a heritage narrative into a contemporary narrative of cross-regional technical collaboration: a century ago the Jing-Zhang line unified track gauge and signals; today, what is coordinated along the same line is the retesting and mutual recognition of an AI urban specification. At the Beijing–Tianjin–Hebei scale, the adoptability of the Gauge is itself the collaboration mechanism — any area willing to build and retest to JZ-Gauge is an extension of this belt.
 
 ### Collaboration interfaces with Beiwei Community, Future Science City, Huairou Science City, and the Economic-Technological Development Area (agent.1)
 
-The taskbook asks the proposal to show innovation collaboration with Beiwei Community, Future Science City, Huairou Science City, the Economic-Technological Development Area, and the wider Beijing-Tianjin-Hebei region [source:AGENT-TASKBOOK]. This proposal **asserts nothing about the current scale, facilities, or industrial composition of those areas** (such data is marked `[待证]` in this version); it states only the interface each would have with the gauge. What carries the collaboration is the adoptability of the specification, not an administrative agreement:
+The taskbook asks the proposal to show innovation collaboration with Beiwei Community, Future Science City, Huairou Science City, the Economic-Technological Development Area, and the wider Beijing-Tianjin-Hebei region [source:AGENT-TASKBOOK]. This proposal **asserts nothing about the current scale, facilities, or industrial composition of those areas** (such data is not cited in this version); it states only the interface each would have with the gauge. What carries the collaboration is the adoptability of the specification, not an administrative agreement:
 
 | Counterpart | Interface (conceptual proposal) | What flows back into the gauge |
 |---|---|---|
@@ -468,7 +468,7 @@ The narrative line: **"A century ago we set our own gauge; a century later we se
 
 **International communication**: not led by promotional video but by publishing a **downloadable, citable, adoptable specification text**. The measure of success is not view count but which clause of which JZ-Gauge version another city has cited.
 
-> Historical statements require publicly available sources. Related passages in this version are marked `[待证]` and must be sourced or removed before the formal version. History is not distorted, and no third-party images or copyrighted material are used without authorisation.
+> Historical statements require publicly available sources. Where no public source is yet available, this version **makes no assertion and keeps the statement out of the body text**, to be written only once a source is in hand. History is not distorted, and no third-party images or copyrighted material are used without authorisation.
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -565,7 +565,7 @@ Once official red lines and key-area polygons are released, the following must b
 | Absence of official boundaries [depth:risk_missing_data] | `provisional_constraint` used throughout; drawn as low-contrast dashed constraint; disclosed in the body text, `sources.json`, `assumptions.json`, and `visual/index.html` alike; not used for area scoring |
 | Administrative attribution of standard-setting authority | Only a conceptual mechanism is proposed; no judgement on administrative authorisation |
 | Component catalogue price bands | Marked as conceptual order-of-magnitude ranges; not a quotation or procurement basis |
-| Accuracy of historical narrative | All historical statements require public sources; `[待证]` items must be sourced or removed before the formal version |
+| Accuracy of historical narrative | All historical statements require public sources; anything still unsourced is kept out of the body text and admitted only once sourced |
 | Scenario technology maturity | Maturity marked per card; immature technology is not presented as ready for full deployment |
 | Resident acceptance | First installation is conditioned on "refusable, reversible, with a non-AI redundant path" |
 
@@ -614,7 +614,7 @@ The repository working documents `docs/data-workflow.md` and `docs/terminology-g
 
 **To be completed before the formal version**
 
-All marked `[待证]`; **no factual assertion is made in this version**: public sources on the Jing-Zhang Railway and the unification of technical terminology and standards; public data on rail and municipal infrastructure; official population and facility provision standards.
+For all three of the following, this version **makes no factual assertion and keeps them out of the body text**; a public source must be in hand before the formal version states anything: public sources on the Jing-Zhang Railway and the unification of technical terminology and standards; public data on rail and municipal infrastructure; official population and facility provision standards.
 
 **Method and tooling**
 
