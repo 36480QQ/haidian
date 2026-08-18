@@ -976,6 +976,95 @@
       ],
       "interpretation_rule": "zero processing pad closes the prior edge-buffer ambiguity; boundary-crossing segments without in-window source vertices remain conservatively absent"
     },
+    "ai_spatial_option_case_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatiotemporal-permits.json",
+        "visual/assets/permit-compiler-runner.js"
+      ],
+      "formula": "count(cases with one ordinary baseline, three spatial options, one field-pending desktop preference, one permit and one restore state)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "AI-assisted desktop planning cases, not professional selection, public consent, statutory approval or field performance"
+    },
+    "ai_rank_one_hard_constraint_override_count": {
+      "status": "known",
+      "value": 2.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatiotemporal-permits.json",
+        "visual/assets/permit-compiler-runner.js"
+      ],
+      "formula": "count(cases where the AI rank-one option differs from the design-team field-pending preference after an explicit city hard gate)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "transparent human override evidence; it does not imply that AI or the design team approved deployment"
+    },
+    "preregistered_validation_protocol_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/preregistered-validation-protocols.json",
+        "visual/assets/permit-compiler-runner.js"
+      ],
+      "formula": "count(protocols binding baseline, location, sample, frequency, method, pass, hold, missing-data, roles, evidence outputs and restore to one selected spatial option)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "pre-activation protocol completeness, not implementation completion or measured performance"
+    },
+    "preregistered_validation_chain_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/preregistered-validation-protocols.json",
+        "visual/assets/permit-compiler-runner.js"
+      ],
+      "formula": "protocols with complete baseline/sample/method/threshold/role/evidence/restore chain divided by all three protocols",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "schema coverage only; field_performance remains null and professional/public sign-off remains false"
+    },
+    "dazhongsi_inquiry_ready_validation_unit_length_target_m": {
+      "status": "known",
+      "value": 12.0,
+      "unit": "m",
+      "source_files": [
+        "visual/assets/preregistered-validation-protocols.json"
+      ],
+      "formula": "CT-03.inquiry_ready_validation_unit.length_target_m",
+      "confidence": "medium",
+      "assumptions": [
+        "A-EXISTING-001",
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "conditional inquiry-performance-brief target within the 98.6 m desktop candidate; not a surveyed length, purchase order, approved footprint or construction commitment"
+    },
+    "dazhongsi_inquiry_ready_component_type_count": {
+      "status": "known",
+      "value": 6.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/preregistered-validation-protocols.json"
+      ],
+      "formula": "count(CT-03.inquiry_ready_validation_unit.components)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "interpretation_rule": "countable performance-brief component types; final quantities, dimensions, specifications and quotations require professional and supplier confirmation"
+    },
     "building_public_interface_typology_count": {
       "status": "known",
       "value": 3.0,

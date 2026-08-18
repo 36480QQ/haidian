@@ -93,6 +93,7 @@
         "submissions/amberplay/intelligence-in-common/visual/assets/design-actions-public-context.json",
         "submissions/amberplay/intelligence-in-common/visual/assets/fact-diagnosis-action-crosswalk.json",
         "submissions/amberplay/intelligence-in-common/visual/assets/permit-compiler-runner.js",
+        "submissions/amberplay/intelligence-in-common/visual/assets/preregistered-validation-protocols.json",
         "submissions/amberplay/intelligence-in-common/visual/assets/public-context.json",
         "submissions/amberplay/intelligence-in-common/visual/assets/renewal-projects.json",
         "submissions/amberplay/intelligence-in-common/visual/assets/spatiotemporal-permits.json",
@@ -102,7 +103,7 @@
       "ai_package_stages": {
         "submissions/amberplay/intelligence-in-common": "formal"
       },
-      "total_bytes": 30175982,
+      "total_bytes": 30348762,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -177,7 +178,7 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 63,
+        "known_metric_refs_required": 69,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -185,7 +186,7 @@
           "standard": 9,
           "depth": 14,
           "data": 16,
-          "metric": 41
+          "metric": 47
         }
       }
     },
