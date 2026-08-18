@@ -84,7 +84,11 @@
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/robustness-simulation-evidence.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/robustness-simulation.js",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/run_license_tabletop.js",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/run_self_explaining_tabletop.js",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/scenario-cards.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-explaining-grammar.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-explaining-tabletop-evidence.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-explaining-test-protocol.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/signaling-grammar.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/signaling-state-table.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/test-scenario-protocols.json",
@@ -94,7 +98,7 @@
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-robot-comobility": "formal"
       },
-      "total_bytes": 4995089,
+      "total_bytes": 5024914,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -175,14 +179,14 @@
       "summary": {
         "standard_matrix_items": 11,
         "design_depth_items": 15,
-        "known_metric_refs_required": 38,
+        "known_metric_refs_required": 41,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 11,
           "standard": 4,
           "depth": 15,
-          "data": 23,
+          "data": 26,
           "metric": 9
         }
       }
