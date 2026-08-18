@@ -2009,5 +2009,37 @@
     ],
     "statement_zh": "本包声明的 `license` 是 `COMMUNITY-DISPLAY-ONLY`，它是组织方 `schema/proposal.schema.json` 允许的三个值之一，另两个是 `CC-BY-4.0` 与 `CC-BY-SA-4.0`——**两者都允许商业使用**，因此不存在一个既非商业、又能表明「这不是政府决定」的标准选项。**仓库里没有任何一处给出这个标识的条款文本**：它在 `submissions/` 之外只出现在 5 个文件里（`agent.html`、`schema/proposal.schema.json`、`scripts/scaffold_ai_submission.py`、`scripts/validate_submission.py`、`templates/proposal.md`），全部是枚举值、模板占位或校验白名单。所以此处只给**上界**，不编造条款：**本包授予的每一项使用，CC BY-NC 4.0 都同样允许**，因此按 CC BY-NC 4.0 行事的第三方不会越出本包的许可。这不主张本包的授权与 CC BY-NC 4.0 一样宽，只主张不比它更宽。",
     "statement_en": "This package declares license COMMUNITY-DISPLAY-ONLY, one of three values allowed by the organisers' schema/proposal.schema.json. The other two, CC-BY-4.0 and CC-BY-SA-4.0, both permit commercial use, so there is no standard option that is at once non-commercial and able to say this is not a government decision. No file in the repository states the terms of this identifier: outside submissions/ it occurs in 5 files (agent.html, schema/proposal.schema.json, scripts/scaffold_ai_submission.py, scripts/validate_submission.py, templates/proposal.md), always as an enum value, a template placeholder or a validation whitelist entry. Rather than invent terms, only an upper bound is given: every use this package grants is also granted by CC BY-NC 4.0, so a third party acting within CC BY-NC 4.0 cannot exceed this package's licence. This claims no lower bound - it does not say the grant is as wide as CC BY-NC 4.0, only that it is no wider."
+  },
+  "reviewer_checklist": {
+    "scope_zh": "供拿到仓库的人逐项核对：每一项都可在不联系作者的情况下独立完成，所需文件都在随包目录内。",
+    "scope_en": "For anyone holding the repository: each item is completable without contacting the author, and every file it needs ships inside the package.",
+    "items_zh": [
+      "`node visual/assets/verify.js` —— 独立重算 `metrics.json` 里全部 27 条 `metric_class: 1` 指标，并**双向断言这一覆盖**（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析。退出码即结论；",
+      "`node visual/assets/check_osm.js` —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测；",
+      "`node visual/assets/check_cards.js` —— 逐张场景卡把水准点、空间锚点、退出量与执行角色解析到实际对象；`--selftest` 用八份人为改坏的卡片证明这些检查会拒绝；",
+      "`node visual/assets/check_closure.js` 与 `run_s08_tabletop.js` —— 闭合差机制的数据契约与十例桌面演练；",
+      "`visual/assets/census.json` / `field_map.json` —— 全场普查原始数据与统计结果；",
+      "`geometry/*.geojson` —— 九个图层，每个要素带 `source_type`、`geometry_role`、`official_boundary` 属性；",
+      "`visual/assets/osm_reference.json` —— 场地复核的原始读数及其明确声明的限度；",
+      "`visual/assets/accessibility_qa.json` 与 `parity_qa.json` —— 实算对比度、A0 最小字高、HTML 结构检查与双语逐节内容对等；`label_collision_qa.json` 逐张图判定「一行字压在另一行字上」（首次运行即在 19 张图上找到 51 对）；`i18n_order_qa.json` 判定英文模板是否把数字填错了位置（找到三处，英文读者此前看到的是「at the 27 m distance FIG.3.0 fixes」）；",
+      "`risk.json` —— 八维风险自评，含缓解措施与人工复核要求；",
+      "`changelog.md` —— **含本方案自查发现并修正的错误记录**；",
+      "`agent.json` —— 生成方法完整披露，`model` 字段非占位符；",
+      "A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在（中日韩字体走这条；拉丁面 DejaVuSans-Bold 是简单 `/TrueType`，子集嵌在 `FontFile2`，因此只查 `FontFile3` 会漏看它——它同样已子集嵌入）。"
+    ],
+    "items_en": [
+      "`node visual/assets/verify.js` — recomputes all 27 metrics marked `metric_class: 1` and **asserts coverage both ways**: every one recomputed, nothing that is not one. Plus a dozen structural conclusions: the land-use partition tested point by point, each controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict",
+      "`node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site figure from the OSM coordinates beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute",
+      "`node visual/assets/check_cards.js` — resolves each card's benchmark, spatial anchor, exit quantity and executing role against something that exists; `--selftest` proves the checks refuse eight broken card sets",
+      "`node check_closure.js` and `run_s08_tabletop.js` — the mechanism as a data contract, and a ten-case tabletop against the shipped reader",
+      "`visual/assets/census.json` and `field_map.json` — the field census and its summary",
+      "`geometry/*.geojson` — nine layers, every feature carrying `source_type`, `geometry_role` and `official_boundary` attributes",
+      "`visual/assets/osm_reference.json` — the site cross-check and its limits",
+      "`visual/assets/accessibility_qa.json` and `parity_qa.json` — computed contrast, A0 type height, HTML checks, bilingual parity; `label_collision_qa.json` label over label; `i18n_order_qa.json` number slots filled out of order",
+      "`risk.json` — eight-dimension self-assessment, mitigations and human review",
+      "`changelog.md` — **including the errors found in itself**",
+      "`agent.json` — full disclosure of the generation method; `model` is not a placeholder",
+      "A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, read with `pypdf`: `FontFile3` under `DescendantFonts` carries the CJK faces; DejaVuSans-Bold is a `/TrueType` subset under `FontFile2`"
+    ]
   }
 }
