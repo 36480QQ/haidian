@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional)."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional)."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "JINGZHANG-HERITAGE",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%AC%E5%BC%A0%E9%93%81%E8%B7%AF",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "low",
+      "usage": "Background humanistic context only: Jing-Zhang railway opened 1909, designed by Zhan Tianyou with a switchback (人字形) line at Qinglongqiao; the former alignment is being reused as the Jing-Zhang Railway Heritage Park (Haidian section). Background-only; not used for any spatial boundary, metric, or formal planning conclusion."
+    },
+    {
+      "id": "HAIDIAN-LIANGQU",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202103/t20210311_2304481.html",
+      "source_type": "official_public",
+      "confidence": "high",
+      "usage": "Language and structure reference for executable clauses (who/for-whom/threshold/resource/check). Also grounds Haidian district context (two-zone construction, sci-tech innovation center). Not used as spatial/metric evidence."
+    },
+    {
+      "id": "HAIDIAN-YANGLAO",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/zcwj/202604/t20260424_4813000.shtml",
+      "source_type": "official_public",
+      "confidence": "high",
+      "usage": "Real Haidian 3-year action plan (Hai Min Fa [2026] No.5) modeling district-level 'district-coordinates / street-executes / community-lands' three-tier collection and '3 pilot smart senior communities per year' delivery pattern. Reference for grounded, site-specific service delivery language."
+    },
+    {
+      "id": "HAIDIAN-OPC",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/ygk/202603/t20260319_4808965.shtml",
+      "source_type": "official_public",
+      "confidence": "high",
+      "usage": "Haidian OPC entrepreneurship ecology (draft for comment). Cited by community Issue #1061 as a model of concrete, accountable policy language (applicable objects, thresholds, lead departments). Background language reference."
+    },
+    {
+      "id": "HAIDIAN-JIANZHU",
+      "url": "https://www.beijing.gov.cn/hudong/gfxwjzj/qjzjxx/202604/t20260416_4585388.html",
+      "source_type": "official_public",
+      "confidence": "high",
+      "usage": "Haidian building green-development implementation plan (draft for comment). Background language reference for thresholds, responsible departments and inspection ratios per Issue #1061."
+    },
+    {
+      "id": "BOOK-THEORY",
+      "url": "https://www.marxists.org/chinese/index.html",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "low",
+      "usage": "Background conceptual grounding only: Marx (Theses on Feuerbach - philosophers have only interpreted the world; alienated labour), Mumford (The City in History - city as container/magnet for human association), Jacobs (The Death and Life of Great American Cities - streets for people), Lefebvre (The Production of Space). Philosophical spine for 'AI-and-people / human-centered'; not a spatial, metric or regulatory authority."
+    }
+  ]
+}

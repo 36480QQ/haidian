@@ -50,14 +50,16 @@ The ledger below restates, asset by asset, what the sections above declare in pr
 | --- | --- | --- | --- | --- |
 | A 方案正文与结构化文件 | 13 | 申报智能体原创生成 | Claude Fable 5 via Claude Code（含 Claude Opus 子代理）；v1.0 阶段为 GPT-5.6 Sol via Codex | 本文件 · `agent.json` |
 | B 报告与说明文件 | 4 | 原创撰写；两份 HTML 由仓库脚本渲染 | `scripts/render_proposal_html.py` | 本文件 |
-| C 图版 | 37 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成；其中四张主图与七张几何核验图另铺随包 OSM 快照底图 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
+| C 图版 | 38 | 由本包 GeoJSON、指标、矩阵、风险、假设与自撰标签本地生成；其中四张主图、七张几何核验图与片区策略图版另铺随包 OSM 快照底图 | Python、SVG、`rsvg-convert`/Cairo | 本文件 |
 | D 图纸 PDF | 4 | 同上，并合并为册 | Python、SVG、`rsvg-convert`/Cairo、`pdfunite` | 本文件 |
 | E 几何 | 9 | 基于仓库临时边界与本方案概念几何 | 复算投影 EPSG:4548（`scripts/spatial_review.py`） | 本文件 · `sources.json` · `metrics.json` |
-| F 离线展示与随包代码 | 43 | 原创手写，自含离线；含 SEB 许可授予文件、三个历史版本快照、OSM 精简快照两片与法律接口登记 | SEB 判据工具零依赖（仅 Node 内置模块）；展示层含唯一第三方组件 three.js r160（MIT，许可正本 `three-license.json`） | 本文件 · `proposal.md` |
-| G 媒体 | 23 | 手写 HTML/SVG 渲染 + 语音合成（中英导览与数据可听化）+ 本包页面逐帧实录 + AI 生成场景双态短片（每帧恒显概念角标） | Playwright/Chromium、MiniMax `speech-2.8-hd`（`mmx` 1.0.7）、x264/AAC、Pillow | `journey.md` · `audio-guide.md` · `cover.md` |
+| F 离线展示与随包代码 | 47 | 原创手写，自含离线；含 SEB 许可授予文件、四个历史版本快照、OSM 精简快照两片与肌理读数、三维主脊视图与第三方组件 three.js r160 及其许可正本、法律接口登记与审查过程归档 | SEB 判据工具零依赖（仅 Node 内置模块）；展示层含唯一第三方组件 three.js r160（MIT，许可正本 `three-license.json`） | 本文件 · `proposal.md` |
+| G 媒体 | 18 | 手写 HTML/SVG 渲染 + 语音合成（中英导览与数据可听化）+ 本包页面逐帧实录 | Playwright/Chromium、MiniMax `speech-2.8-hd`（`mmx` 1.0.7）、x264/AAC、Pillow | `journey.md` · `audio-guide.md` · `cover.md` · `audible-break.md` |
 | H 品牌标志 | 1 | 原创矢量几何 | 手写 SVG | 本文件 · `cover.md` |
 | I 场景概念图 | 6 | AI 图像生成 + 包内标注层排版合成 | OpenAI 图像生成（经 Codex CLI 原生图像生成工具，GPT-5.6 Sol 智能体调用）；标注层为手写 HTML 经 Chromium（Playwright）渲染 | 本文件 · `sources.json` |
 | J 触觉交付（折叠纸模） | 2 | 原创参数化 SVG（A4 双语纸模，凸点阵与折线） | 手写 SVG | 本文件 · 展示页第 07 章 |
+
+**件数口径与本版更正：** 十类件数按 `manifest.json` 的 142 条声明逐路径归类得出，十类之和恒等于 142。本版按此口径重新逐路径对账，更正三处存量偏差：C 类由 37 更正为 38（v8.2 新增的 `assets/figures/district-strategy.png` 未计入，v8.3 新增两张关系图版时又只加计一件）；F 类由 43 更正为 47（v8.0 新增的 `visual/assets/seb-spec-v0.4.0.json` 与 `seb-change-receipt-v05.json`、v8.2 新增的 `visual/assets/district-strategy.json` 与 `field-verification-plan.json` 共四件未计入）；G 类由 23 更正为 18（v8.1 精简包体时删除的 `assets/media/dual-state-walk.mp4`、`dual-state-walk-poster.webp`、`dual-state-walk.vtt`、`dual-state-walk-en.vtt`、`dual-state-walk.md` 五件未从计数中扣除，同批删除使 G 类叙述中的「AI 生成场景双态短片」一语失去对应文件，本版一并删去）。三处偏差方向相反、数量恰好互相抵消，总和始终为 142，因此历次自检未能发现。同轮补齐 F 类逐资产登记的十六个漏列文件，F、G 两类的逐资产登记行现与 `manifest.json` 逐路径一一对应。
 
 ## 三、逐资产登记 / Per-asset register
 
@@ -139,10 +141,15 @@ v8.0 至 v8.3 新增的五张图版另按逐件口径登记：
 | `visual/assets/scene-fallback.png` · `scene-fallback.en.png` | 交互场景的静态后备图 | 同 C 类生成路径 | `manifest.json` `role: visualization` |
 | `visual/assets/seb-tabletop-run.js` | 原创撰写的校验器 | 零依赖离线文件，仅使用 Node 内置 `fs`、`path` | `proposal.md`「OP-01 桌面配对试点档案」章 |
 | `visual/assets/seb-op04-chain-run.js` | 原创撰写的复演器 | 零依赖离线文件，仅使用 Node 内置 `fs`、`path`、`child_process`；投影以纯 Node 内置数学实现 | `proposal.md`「OP-04 配对试点全过程证据链」章 |
-| `visual/assets/seb-spec.json` | 原创编制的机器可读规范 v0.4.0 | CC BY-SA 4.0，已由提交方以著作权人身份经 `seb-license-grant.json` 实际授予；托管主体与发布渠道仍待授权主体确认（许可与托管两事分立） | `seb-spec.json` `license` 与授予文件 |
-| `visual/assets/seb-spec-v0.2.0.json` · `seb-spec-v0.3.0.json` | 历史版本按字节从上游提交提取的快照（提交号与哈希登记于规范 `version_snapshots`） | 同上（CC BY-SA 4.0 已授予） | `seb-spec.json` `version_snapshots` |
+| `visual/assets/seb-spec.json` | 原创编制的机器可读规范 v0.5.0 | CC BY-SA 4.0，已由提交方以著作权人身份经 `seb-license-grant.json` 实际授予；托管主体与发布渠道仍待授权主体确认（许可与托管两事分立） | `seb-spec.json` `license` 与授予文件 |
+| `visual/assets/seb-spec-v0.2.0.json` · `seb-spec-v0.3.0.json` · `seb-spec-v0.3.1.json` · `seb-spec-v0.4.0.json` | 历史版本按字节从上游提交提取的快照四件（提交号与哈希登记于规范 `version_snapshots`） | 同上（CC BY-SA 4.0 已授予） | `seb-spec.json` `version_snapshots` |
 | `visual/assets/seb-license-grant.json` | 许可授予文件：授予声明为原创撰写；内嵌 CC BY-SA 4.0 法定正文取自 Creative Commons 官方发布（CC 许可条文本身不受版权限制可自由复制），含重建哈希 | 授予声明随授予生效；法定正文按 CC 官方口径复制 | 该文件自身与 `sources.json` |
-| `visual/assets/seb-tabletop-fixtures.json` · `seb-change-receipt-sample.json` · `seb-op04-chain-data.json` · `seb-change-receipt-op04.json` · `seb-change-receipt-v03.json` · `seb-op04-90day-pack.json` · `op04-pilot-readiness.json` · `op04-tactile-map.json`（STL 封装）· `braille-core-statement.json` · `ethics-protocol.json` · `qa-proofing-record.json` · `scene-provenance.json` · `package-integrity-gates.json` · `service-desk-gonogo.json` · `district-strategy.json` · `field-verification-plan.json` · `sensory-design-code.json` | 原创编制的样例、回执（含 v0.3 系一版一号回执）、链路档案、九十天实施包与对接就绪材料、协议模板、自查记录、场景图生成档案、随包自检闸门台账、服务桌开办条件档案，以及 v8.2 新增的片区策略判据文件与零授权现场验证计划（前者的量算读数由随包 OSM 精简快照派生，来源与许可见本文件 §OpenStreetMap 条目）、v8.3 新增的感官设计准则文件（五节判据与矩阵，无 OSM 派生内容） | 随包整体许可；均不含任何参与者数据 | `proposal.md` 对应各章 |
+| `visual/assets/seb-tabletop-fixtures.json` · `seb-change-receipt-sample.json` · `seb-op04-chain-data.json` · `seb-change-receipt-op04.json` · `seb-change-receipt-v03.json` · `seb-change-receipt-v04.json` · `seb-change-receipt-v05.json` · `seb-op04-90day-pack.json` · `op04-pilot-readiness.json` · `op04-tactile-map.json`（STL 封装）· `braille-core-statement.json` · `ethics-protocol.json` · `qa-proofing-record.json` · `scene-provenance.json` · `package-integrity-gates.json` · `service-desk-gonogo.json` · `district-strategy.json` · `field-verification-plan.json` · `sensory-design-code.json` | 原创编制的样例、回执（v0.3、v0.4、v0.5 三系各一份一版一号回执，另含样例与 OP-04 回执）、链路档案、九十天实施包与对接就绪材料、协议模板、自查记录、场景图生成档案、随包自检闸门台账、服务桌开办条件档案，以及 v8.2 新增的片区策略判据文件与零授权现场验证计划（前者的量算读数由随包 OSM 精简快照派生，来源与许可见本文件 §OpenStreetMap 条目）、v8.3 新增的感官设计准则文件（五节判据与矩阵，无 OSM 派生内容） | 随包整体许可；均不含任何参与者数据 | `proposal.md` 对应各章 |
+| `visual/assets/scene-time.css` · `spine3d.js` · `spine3d.css` | 原创撰写：交互场景四时段控件样式，以及三维主脊场景与其章节样式（几何全部同源于 `scene-data.js`，无 WebGL 时静态降级） | 浏览器原生实现；三维渲染调用同目录的唯一第三方组件 three.js r160（MIT） | `proposal.md` 三维主脊章；本文件 §四 three.js 行 |
+| `visual/assets/three.min.js` · `three-license.json` | 第三方组件与其许可登记：`three.min.js` 由官方 module 构建机械可复现重封装为离线单文件（唯一改动为末尾 export 语句换全局赋值），`three-license.json` 载上游 URL、哈希、重封装步骤与 MIT 许可正本 | three.js r160，MIT，© 2010-2023 three.js authors；MIT 许可随包履行，不构成对上游项目的背书 | `visual/assets/three-license.json`；本文件 §四 |
+| `visual/assets/font-license-ofl.json` | 随包收录的 SIL Open Font License 1.1 许可正本与重建哈希（对应四册 PDF 内嵌的思源黑体子集） | OFL 1.1 允许再分发许可文本本身；本包不以独立资产形式分发任何字体文件 | 本文件 §四字体台账 |
+| `visual/assets/review-archive.json` · `spatial-audit-readings.json` · `legal-interface-register.json` | 原创编制的审查过程归档（基线提交、方法、发现分级与处置去向，含两份盲审报告全文与哈希）、六项空间审计型读数的定义与责任方（当前全部为零值）、三条法律谱系的触点与触发条件（全部未触发） | 随包整体许可；均不含任何参与者数据，且不作合规结论 | `proposal.md` 对应各章 |
+| `visual/assets/osm-fabric/osm-fabric-snapshot-part1.json` · `osm-fabric-snapshot-part2.json` · `osm-fabric-readings.json` | 定界精简快照两片（两片拼接逐字节还原原快照，含 Overpass 查询原文）与由其复算的肌理读数包（复算脚本全文嵌入） | OpenStreetMap contributors，ODbL 1.0 派生数据库；署名与相同方式共享条件按本文件 §OpenStreetMap 条目履行，读数为 PROVISIONAL 情境描述而非几何验证 | 本文件第五节；`sources.json` OSM 条目 |
 | `visual/assets/osm-context/provenance.json` | OSM 取数与处理的来源登记（v6.4 前背景快照）| 该历史快照仅分发来源元数据；v6.9 起另有一份定界精简快照按 ODbL 1.0 作为派生数据库随包分发（见第五节） | 该文件 `package_distribution` 字段 |
 
 ### G 媒体 / Media assets
@@ -174,13 +181,22 @@ v8.0 至 v8.3 新增的五张图版另按逐件口径登记：
 | `assets/figures/scene-interface-yard.webp` · `.en.webp` | 同上（众智园通用接口实验院） | 同上 | 同上 | 同上 |
 | `assets/figures/scene-corridor-aerial.webp` · `.en.webp` | 同上（走廊鸟瞰，地标按真实坐标推算方位与距离） | 同上 | 同上 | 同上 |
 
+### J 触觉交付 / Tactile deliverables
+
+两件为同一张 A4 折叠纸模的中英双版，均为程序绘制的参数化 SVG：画面内全部图形由毫米坐标直接写出（viewBox 210 × 297，与 A4 幅面等值），四条通行带的带宽按 1:50 缩放自本包 `visual/assets/sensory-design-code.json` 的 OP-04 母版卡 `band_widths` 逐项换算——多模态导路带 2.50 m、触觉引导带 0.30 m、设施带 1.20 m、安静缓冲绿带 1.50 m，均为该文件登记的设计目标值而非法定值；折叠构造（裁剪实线、谷折虚线、山折点划线共 6 条折线、7 段展开序列）与盲道带凸点阵（2 列 × 18 行、缺口区跳过）为纸模自身的制作构造，不引用任何第三方几何、图像或数据集。两版几何元素逐条同源，仅文字层分中英。
+
+| 文件路径 | 内容来源与生成方式 | 字体 | 署名与复用限制 | 已登记的局限 |
+| --- | --- | --- | --- | --- |
+| `assets/tactile/op04-papercraft.svg` | 程序绘制的参数化 SVG（毫米坐标直写，A4 幅面）；带宽按 1:50 缩放自 `visual/assets/sensory-design-code.json` 的 OP-04 母版卡，折线与凸点阵为纸模自身构造 | 仅声明字体栈 `Source Han Sans SC, Arial`，由打印或查看环境本地解析；不嵌入、不分发任何字体文件。图面不含盲文字符 | 署名 `lqqk7` / 柱子；`COMMUNITY-DISPLAY-ONLY` | 概念纸模：尺寸为设计目标值按 1:50 缩放、非工程构件，盲道区凸点阵以普通打印机输出仅为视觉示意、须发泡油墨或点字打印机方成可触纹理——两条直印于图面页脚与说明行；未做实物打印折叠试验一条登记于 `visual/assets/qa-proofing-record.json` R4-03 |
+| `assets/tactile/op04-papercraft.en.svg` | 同上（英文版，几何元素与坐标逐条同源，仅文字层为英文） | 同上 | 同上 | 同上 |
+
 ## 四、字体台账 / Font ledger
 
 | 使用场景 | 字体名称 | 来源 | 许可 | 嵌入与分发方式 | 登记出处 |
 | --- | --- | --- | --- | --- | --- |
 | 图纸 PDF（`drawings/*.pdf`） | Source Han Sans SC（Regular/Medium/Bold 三个子集） | 本地安装副本；许可正本随包收录于 `visual/assets/font-license-ofl.json`（OFL 1.1 允许再分发许可文本） | SIL Open Font License 1.1 | 子集嵌入 PDF；不作为独立资产随包分发。每册每字重只嵌入一份子集，全册各页共用（逐页渲染原本让每页各带一份分页子集，v8.1 按字形标识空间取并集合并为一份，合并前后逐字形核对轮廓与度量全等）。经全册字体审计（pypdf 遍历页面与 XObject 资源，2026-08-13）：非 OFL 字体条目为 0。此前版本的四册曾因浏览器打印管线的字体栈回退混入系统字体子集，本版已全部清除并加入构建期兜底与审计脚本防止回归 | 本文件 §Generated assets and software |
-| `visual/assets/three.min.js` | 第三方组件 three.js r160（MIT，© 2010-2023 three.js authors）；由官方 module 构建机械可复现重封装为离线单文件（唯一改动为末尾 export 语句换全局赋值，步骤全文披露），许可正本与上游哈希见 `three-license.json` | MIT 许可随包履行；不构成对上游项目的背书 | `visual/assets/three-license.json` |
 | 离线展示页（`visual/*.html`、`scene.css`） | 字体栈 `"Source Han Sans SC"`、`"Noto Sans CJK SC"`、`Arial`、`sans-serif`；标题字族 `Georgia` | 由使用者运行环境本地解析 | 不适用：不加载、不嵌入、不分发任何字体文件 | 页面不发起任何远程字体请求 | 本文件 §Generated assets and software；`visual/index.html` 内联样式 |
+| 触觉纸模（`assets/tactile/op04-papercraft{,.en}.svg`） | 字体栈 `Source Han Sans SC`、`Arial` | 由打印或查看环境本地解析 | 不适用：不加载、不嵌入、不分发任何字体文件 | 字形以打印环境解析结果呈现；SVG 内无字体数据 | 本文件 §三 J 触觉交付 |
 | 多模态短片（`journey.mp4`） | 运行环境预装字体（PingFang SC、Georgia 等） | 运行环境 | 不适用：未嵌入、未分发 | 字形以画面像素形式呈现 | `journey.md` §五「字体」行、§六「图件与字体权利」 |
 | 方案封面（`cover.webp`） | 系统随附字体（中西文衬线、无衬线、等宽） | 运行环境 | 不适用：未嵌入、未分发 | 字形以位图形式呈现于图像中 | `cover.md` §二「字体」行 |
 | 品牌落地字体策略 | 衬线标题、无衬线正文、等宽数据三分工，现阶段三种分工均由 Source Han Sans SC 一族承担（Medium/Bold/Regular） | Source Han Sans SC（SIL OFL 1.1）；商业字体候选待逐项清权 | 逐项核验授权，未清权字体不进入公开成果 | 品牌图版（`brand-system.png`）的字体策略区块已与清权后事实对齐：三种分工同出思源黑体一族（Medium/Bold/Regular，SIL OFL 1.1），与四册 PDF 实际嵌入的三个子集一一对应；Georgia、Helvetica Neue、SF Mono 等商业字体在图版上明示为未来深化候选，须逐项取得商用授权后方可引入。本包唯一嵌入字体程序的载体是四册 PDF（见首行），图版与页面均不分发字体文件 | `proposal.md` 品牌章与「版权与授权」段 |
@@ -224,6 +240,7 @@ v8.0 至 v8.3 新增的五张图版另按逐件口径登记：
 | 代码资产 | 运行环境 | 第三方依赖 | 网络访问 | 许可 |
 | --- | --- | --- | --- | --- |
 | `visual/index.html` · `index.en.html` · `scene.js` · `scene.css` · `scene-data.js` | 浏览器 | 无 | 无：不加载远程脚本、字体、瓦片、图片、API、表单、iframe 或统计代码 | 随包整体 `COMMUNITY-DISPLAY-ONLY` |
+| `visual/assets/three.min.js`（第三方组件 three.js r160，© 2010-2023 three.js authors） | 浏览器 | 上游 three.js r160：由官方 module 构建机械可复现重封装为离线单文件，唯一改动为末尾 export 语句换全局赋值，步骤与上游哈希全文披露于 `three-license.json` | 无：随包本地加载，不请求任何上游或 CDN 地址 | MIT，许可正本随包收录于 `visual/assets/three-license.json`；不构成对上游项目的背书 |
 | `visual/assets/seb-tabletop-run.js` | Node.js | 无。仅 `fs`、`path` 两个内置模块 | 无：只读取本包内文件 | 同上 |
 | `visual/assets/seb-op04-chain-run.js` | Node.js | 无。仅 `fs`、`path`、`child_process` 三个内置模块 | 无：只读取本包内文件 | 同上 |
 | `visual/assets/seb-spec.json`（判据规范，非可执行代码） | 不适用 | 不适用 | 不适用 | CC BY-SA 4.0 已由著作权人经 `seb-license-grant.json` 实际授予；托管主体与官方发布渠道待授权主体确认（许可与托管两事分立） |

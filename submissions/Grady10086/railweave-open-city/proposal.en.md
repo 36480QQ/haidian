@@ -8,16 +8,20 @@ translation_of: "proposal.md"
 license: "CC-BY-4.0"
 summary: "If AI is switched off tonight, the city must still work tomorrow. Centennial Jing-Zhang public space and ordinary services form the warp; three regional collaboration corridors form the weft; and AI enters only as an admissible, pausable, removable technical thread. AI Origin frames problems, Zhongzhiyuan validates independently, Dazhongsi converts first use, and one S06 at one site is tested for 100 bounded days before any next decision."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-iteration: "v2.6"
+iteration: "v2.7"
 ---
 
 # RailWeave: Urban Renewal and Coordinated Transformation Plan for the Centennial Jing-Zhang AI Innovation Belt
 
 ## RailWeave: Weave the City First, Then Weave in Intelligence
 
-RailWeave Open City uses Centennial Jing-Zhang's continuous public space as the **urban warp**, the Qinghe, Xiaoyue River and university, and Zhuanhe corridors as the **collaborative weft**, and admissible, pausable, removable AI applications as **technical threads**. Together they form one axis, three corridors, three hubs, and three coordinated chains. Public space, ordinary service, and regional collaboration are woven first; intelligent applications are then inserted in a controlled manner. Basic urban service continues even when AI is paused.
+A century ago, Jing-Zhang engineering made speed answer to the terrain. Today, the Centennial Jing-Zhang AI Innovation Belt should make technological speed answer to urban scale and public value. **RailWeave Open City** uses continuous public space as the urban warp, the Qinghe, Xiaoyue River and university, and Zhuanhe corridors as the collaborative weft, and admissible, pausable, removable AI applications as technical threads. Together they form one axis, three corridors, three hubs, and three coordinated chains. Public space, ordinary service, and regional collaboration are woven first; intelligent applications are then inserted in a controlled manner. Basic urban service continues even when AI is paused.
 
 During planning, AI supports evidence classification, spatial-option generation, cross-scale constraint conflict detection, service-scenario replay, and metric anomaly prompts. Planners and specialist teams define space, compare options, and conduct specialist checks; authorised entities make transition decisions; affected publics participate in public-value judgement. **AI provides options and evidence; it does not replace planning approval, professional findings, or administrative decisions.**[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]
+
+![RailWeave overview: continuous urban warp and removable AI threads](assets/figures/site-overview.en.png)
+
+> **How to read this figure.** Read the north-south Jing-Zhang civic warp first, then the three collaborative wefts. AI Origin, Zhongzhiyuan, and Dazhongsi are not parallel campuses; they are successive places where one project frames a problem, passes independent validation, and reaches bounded first use. All boundaries and components are study-stage recommendations, not statutory lines or construction commitments.
 
 | First-read dimension | Delivered in this submission | Next lawful verification |
 |---|---|---|
@@ -30,29 +34,7 @@ During planning, AI supports evidence classification, spatial-option generation,
 
 The plan does not start three construction projects at once. It first identifies one shared-ground-floor candidate interface at AI Origin, subject to rights verification, and tests S06 - ordinary service plus reversible AI assistance - along an approximately 100-150 m decision route, with three to five decisions and one 1:1 accessible service bay. The test is not whether AI can produce a demonstration. It is whether the same person can complete the same task without an account, during network loss, or after refusing AI, without extra charge, unreasonable waiting, or an off-site journey.
 
-| 100-day window | Site action | Required evidence | No-go condition |
-|---|---|---|---|
-| **Days 0-10 | Bound** | Verify rights, route, opening hours, service owner, and ordinary-service baseline protocol | E0 site and authority; expenditure limited to baseline and exit preparation | Site, duty, ordinary service, or exit conditions are unclear |
-| **Days 11-30 | Walk together** | Complete the field baseline, a 1:1 passive mock-up, and affected-user walkthrough | E1 baseline and accessibility walkthrough | A critical barrier lacks closure or equivalent service |
-| **Days 31-45 | Price fully** | Prepare six BoQ packages, quantities, three comparable prices, duty roster, and single-point RACI | E4 comparable pricing, including staff, law, insurance, and full-price exit | Critical quotations cover less than 80%, or exit is unpriced |
-| **Days 46-60 | Unweave** | Test network loss, stale information, wrong advice, access revocation, and human takeover in a closed setting | E2 version, data, and fail-closed record | Any high-risk takeover branch fails |
-| **Days 61-90 | Authorised co-test** | Only after authorisation, compare completion, wait, distance, cost, help, misdirection, complaint, and staff burden on the same task | E3 same-task comparison; D90 issues the mandatory close-out handover only | Ordinary service worsens, or a severe safety, privacy, or fairness event occurs |
-| **Days 91-100 | Mandatory close-out** | Revoke access, delete data, remove equipment, restore finishes, correct fixed signs, and continue staffed service | E5 six exit receipts; D100 uses E6 for the only retain/modify/remove/do-not-advance decision | Any unsigned exit item prevents extension or scaling |
-
-This submission has completed the S06 100-day implementation-readiness package. Field activation still requires G0 verification by authorised entities. The project is in a pre-operation preparation state; its next action is E0 site-and-authority verification. Synthetic testing does not replace field authority, and the absence of field activation does not diminish the completeness of the submitted design and delivery preparation.[data:visual/assets/readiness_decision_receipt.json]
-
-| User group | Entry | Ordinary-service foundation | AI gain and what remains after exit |
-|---|---|---|---|
-| Residents | Community, site, telephone | Staffed intake, paper guidance | Problem prefill; issue closure remains |
-| Young talent | Talent service and shared ground floor | Human advice and offline activities | Opportunity matching; open tools remain |
-| Enterprises | Scenario request and validation application | Human checklist and specialist advice | Option comparison; cost and validation evidence remain |
-| Universities | Open problems and reproduction tasks | In-person workshop and document interface | Reproduction support; citable methods remain |
-| Visitors | Bilingual wayfinding and heritage route | Fixed signs and staffed interpretation | Personalised explanation; bilingual content remains |
-| Older and disabled people and others needing support | No-account same-task channel | Tactile, easy-read, phone, and staffed service | Voluntary support; refusal adds no charge or detour |
-
-![RailWeave overview: continuous urban warp and removable AI threads](assets/figures/site-overview.en.png)
-
-> **How to read this figure.** Read the north-south Jing-Zhang civic warp first, then the three collaborative wefts. AI Origin, Zhongzhiyuan, and Dazhongsi are not parallel campuses; they are successive places where one project frames a problem, passes independent validation, and reaches bounded first use. All boundaries and components are study-stage recommendations, not statutory lines or construction commitments.
+The four stages, six decision windows, six BoQ packages, and E0–E6 appear in full only once in the later “First 100-Day Bounded Weave” section. This submission has formed the delivery-readiness package. Field activation still requires G0 verification by authorised entities; the next action is E0 site-and-authority verification, and synthetic tests do not replace field authority.[data:visual/assets/readiness_decision_receipt.json]
 
 ### One Civic Warp, Three Nodes, One Time-Limited Test
 
@@ -210,7 +192,7 @@ Available official material confirms the existence of relevant Regulatory Detail
 
 ## Detailed Design of Key Areas
 
-![Index and design tasks for the three Key-Area Detailed Design Areas](assets/figures/key-areas.en.png)
+![Three-key-area framework and the place-based AI Origin plan–section–operation prototype](assets/figures/key-areas.en.png)
 
 The three Key-Area Detailed Design Areas use a common Public Interest and Inclusivity evaluation framework, with differentiated design depth determined by the documented basis and implementation conditions. Each project shall define public interest, data minimization, Human Review, reversibility, maintenance responsibility, incident response, and exit and restoration requirements. Spatial massing, Development Intensity, and the Demolish–Renovate–Retain Strategy shall be developed strictly from credible information for each area.[depth:three_key_area_detailed_design]
 
@@ -326,14 +308,7 @@ This is a qualitative service-architecture decision, not a field-test result, an
 
 #### S06 Minimum Delivery Package and Stage Acceptance
 
-| Work period | Responsibility and minimum inputs | Acceptance artifacts | Stop and exit |
-|---|---|---|---|
-| Days 0–30: ordinary-service and accessibility baseline | A lawfully appointed application/site role accepts the route, opening hours, paper/telephone/staffed channels, and representative-user plan | Segment accessibility audit, ordinary-service map, and non-AI completion, wait, distance, and cost baseline | No progression where site rights are unclear, a critical barrier lacks equivalent service, or staffed shifts are absent |
-| Days 31–60: closed synthetic and shadow validation | The independent-validation role accepts a fixed version, lawful or synthetic data, prohibited fields, and network-loss/misdirection/profiling/unweaving tests | Human-versus-shadow comparison, version and failure logs, human-takeover drill, and independent finding | Stop and clear data/access for prohibited data, high-risk misdirection, failed takeover, or an unresolved major issue |
-| Days 61–90: limited co-testing after authorisation | Only after site, data, participation, and stop authority exist, the application role organises a bounded space, period, and user group | Ordinary/digital route comparison and help/misdirection/appeal register; D90 issues the mandatory close-out handover only | Exit immediately if an authority is absent or withdrawn, ordinary service stops, a severe safety/privacy/fairness event occurs, or exit responsibility/resources are unavailable |
-| Days 91–100: mandatory close-out and sole decision | Revoke access, delete or lawfully transfer data, remove devices, restore finishes, correct fixed signs, and continue staffed service | E5 six exit receipts; D100 uses E6 for the only retain/modify/remove/do-not-advance decision | No extension while any exit item is unsigned or exit funding or a maintainer is absent |
-
-The four-phase preregistration, six decision windows, RACI, control metrics, and six exit receipts are in `visual/assets/s06_minimum_delivery_package.json`. It is a template for later professional development by lawfully appointed teams and approves no site, data processing, participant recruitment, budget, procurement, or launch.
+The complete four-stage, six-window chain, RACI, control metrics, and six exit receipts are presented once in the later “First 100-Day Bounded Weave” section and in `visual/assets/s06_minimum_delivery_package.json`; they are not repeated here. The file is a template for later professional development by lawfully appointed teams and approves no site, data processing, participant recruitment, budget, procurement, or launch.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -564,7 +539,7 @@ All public services shall retain human decisions and non-intelligent service cha
 
 ### Copyright and Open Licensing
 
-The main text, participant-generated GeoJSON, information design, HTML, booklets, verification script and synthetic cases are licensed under CC BY 4.0. The v2.6 spatial figures embed selected L4 OSM vector snapshots and retain the data date, `© OpenStreetMap contributors`, and ODbL 1.0 attribution on every relevant figure; no commercial map tiles are used. Building footprints are orientation leads only, and named Jing-Zhang park polygons are used only to expose the provisional-extent discrepancy; neither enters participant-generated formal GeoJSON or indicators. Three key-area experiential images were created with OpenAI image generation from original prompts for this proposal and are used as language-neutral concept images. Their prompts, generated status, limits of use and file list are recorded in `report/copyright_statement.md`. The project does not reproduce restricted news images, corporate marks, or peer-proposal text, figures, schemas or code. Institutional names identify sources or possible types of entity only and do not indicate participation, authorization, endorsement, or commitment.[source:SOURCE-REGISTRY] [source:OSM-WORKING-DATA]
+The main text, participant-generated GeoJSON, information design, HTML, booklets, verification script and synthetic cases are licensed under CC BY 4.0. The v2.7 spatial figures embed selected L4 OSM vector snapshots and retain the data date, `© OpenStreetMap contributors`, and ODbL 1.0 attribution on every relevant figure; no commercial map tiles are used. Building footprints are orientation leads only, and named Jing-Zhang park polygons are used only to expose the provisional-extent discrepancy; neither enters participant-generated formal GeoJSON or indicators. Three key-area experiential images were created with OpenAI image generation from original prompts for this proposal and are used as language-neutral concept images. Their prompts, generated status, limits of use and file list are recorded in `report/copyright_statement.md`. The project does not reproduce restricted news images, corporate marks, or peer-proposal text, figures, schemas or code. Institutional names identify sources or possible types of entity only and do not indicate participation, authorization, endorsement, or commitment.[source:SOURCE-REGISTRY] [source:OSM-WORKING-DATA]
 
 ## References
 
