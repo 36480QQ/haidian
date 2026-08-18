@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "Codex desktop agent; exact deployment variant not asserted"
   },
-  "generated_at": "2026-08-17T08:00:00Z",
+  "generated_at": "2026-08-14T00:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "da710560887651548fdd2609f3739f426f54b70958804a34bd11715509c2d230"
+      "sha256": "4b68c1348d7218f0d45f057cf46a65a0f91d8769443a026251f1ec68ff10f39e"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b2c7e83b8498091fd291b299457f1e72e6e6eeeacbfec4d09be0dd3b2f2b684b"
+      "sha256": "7e8ec51629aec8ab71f8ba397dfc71b2597fbc322722d8d0d5d2f95320df0547"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,40 +81,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8a36847bb7879b0196af43f1e62d149176f338f3ebc139b95a4dbb2d2dbfdfd4"
+      "sha256": "1243962b506195606679ef34f3012b32812c796ef3e03d00990802098185d56c"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2f5d89ebd087ec4bd11ccc91e442cacac4bbe5fded6e90f71d72b1d4397abd3d"
+      "sha256": "98ceabe1fbad833d4a45a1a67287fe7e07f0348198bd711f01fc093e84ae55f6"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ed4347bb791f3fc3b9fff13dece93affd42332b6ce7a2b422c04c1080f4f4655"
+      "sha256": "f9f0e8b168392361430fe8c2ec5c92743444d0fe3de01d3b82337af1244ea019"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "e09e55b029bb3119912b9fceb10e3b92c40ea7682409928d5caaba94dad65ed4"
+      "sha256": "63dd06656c201056e1a148ca6bd7f52651e32fb0fa5ca374a57ceef8cbeb4a37"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6a15fc3dc0e5af62231ca05f18bd2939cda2fd8a2db4b23fda6ed09f8ae50e26"
+      "sha256": "902a507545728bf95e0a55d7b5c8d36d4437f1b4c3eebbc5bf64d6cca41c7322"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ddd5b36b039fd60908262a493a87729117a594f1817d2fe8946c7c252cc0bfea"
+      "sha256": "61910d1c60943efff5408a4fa6ae9776edd0e4c393c58722ae67e3a9e7c65483"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "5595946e46edb27ebedb185e147ce72f7620c891d0bbe737901869ad8d665694"
+      "sha256": "ae9db40dce778176662e22196bbbe11c4724a8186663173b78f902fbecbe9061"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -209,11 +209,11 @@
       "path": "assets/media/cover.webp",
       "role": "media_poster",
       "required": false,
-      "title_zh": "轨道源场：四个公共验证空间",
-      "title_en": "RailCode Commons: Four Public Validation Spaces",
-      "description_zh": "由四张 gpt-image-2 合成场景图在本地编排的 AI 概念封面；非现场照片、非官方效果图、非工程依据。",
-      "description_en": "AI concept cover locally composed from four gpt-image-2 synthetic scenes; not a site photograph, official rendering, or engineering evidence.",
-      "sha256": "9f0f87300bf9446195a21817a3c9b2f6c95c9d14b728084af6dcae9b4bf3936b"
+      "title_zh": "轨道源场原创概念封面",
+      "title_en": "RailCode Commons original concept cover",
+      "description_zh": "由本地 Python/Pillow 代码原创绘制的轨道、开放括号与版本节点概念封面；非现场照片或获批效果图。",
+      "description_en": "Original locally code-drawn rail, open-bracket, and version-node cover; not a site photograph or approved rendering.",
+      "sha256": "9e4eeb3b234f873893dc1186d82f42ff349ee6ec8fb82c6f5483d4f5e8d0df38"
     },
     {
       "path": "proposal.en.md",
@@ -221,7 +221,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0a172798af6aaaeaaea7492b027e085f0c8ec85b7ca0bcff27fde8bddf6be7e0"
+      "sha256": "4f17a67c6e91ec14f7ec37502fd24bd4efe23fa7efb162066c4256f95551ef26"
     },
     {
       "path": "report/proposal.en.html",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7369dbba06f06e620fc9ce46ab3d668492f231a2897a51d4a2ba011ff8451e81"
+      "sha256": "b60cb959dcb9f1a4a622439dcc30550e4c545b2e6258c3003e84043fb56b39ee"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "8f5a81717e78d9e591b15dcf008610bad05be88e6418bdb7af821ba32aed8b53"
+      "sha256": "c01b58c2b78053d237850c429cb8acc1637ccf7d9ed482da86cf0528850babf8"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "23fcb340b37538e0072d8ad41b0d99c170889d8d79d94c7740ce3a610e33c8af"
+      "sha256": "c9cbf26f8a1087dbc5fe35d05ff966891768e209922971c618ecd50d28118ed1"
     },
     {
       "path": "visual/index.en.html",
@@ -253,7 +253,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "8f42830039803f0bd56fba420b1998d3db7c3873e4d596dc436ea2903d329963"
+      "sha256": "6a71ce126d84db7ac271d65160392bb3e4aa9105eec0f1b91a1b8dd63cf3f2a6"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -293,14 +293,14 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "d727506eeb46d95decd9f348dbb6b440c8ecfe9ac0f694ce93ef7240bc7acae8"
+      "sha256": "a82a0111901d8d8193f256969750d4b37d49ae66016dff43b6f0ae7a9c6f7398"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
       "language": "neutral",
-      "sha256": "246a51bbaa42a8ff60dc93e6f41be5cb9557f67b5ff0e69ee8b738745dbf2496"
+      "sha256": "0eb298b43e861217f67e6af997abd3db08f4920d9c4db2d039330d16a048fe3a"
     },
     {
       "path": "assets/figures/ai-governance-loop.png",
@@ -352,57 +352,6 @@
       "required": false,
       "language": "neutral",
       "sha256": "9a8545a1060fca828d46dd9b104ef0f61687ac4b53956d2824c103e721910ff4"
-    },
-    {
-      "path": "assets/media/v1.5/zhongzhiyuan-trust-court-ai-concept.webp",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "众智园可信测试庭院",
-      "title_en": "Zhongzhiyuan Trust Court",
-      "description_zh": "公众观察线、可控测试区与研发后场分离的 AI 概念效果图；非现场照片、非工程依据。",
-      "description_en": "AI concept rendering separating public observation, controlled testing, and research back-of-house; not a site photograph or engineering evidence.",
-      "sha256": "abae8713f3ce0b89c150d08eb4749de548aa03a464957c74f39dc95a373ce6a1"
-    },
-    {
-      "path": "assets/media/v1.5/ai-origin-open-ground-ai-concept.webp",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "AI 原点社区开放首层织补",
-      "title_en": "AI Origin Open-Ground-Floor Weave",
-      "description_zh": "成果街、贡献者客厅与连续无障碍通道的 AI 概念效果图；非现场照片、非工程依据。",
-      "description_en": "AI concept rendering of a results street, contributor living room, and continuous accessible route; not a site photograph or engineering evidence.",
-      "sha256": "99897934fd7a4f913e041f4401fa010d0077b4d3b61c01be743cfc3d07685866"
-    },
-    {
-      "path": "assets/media/v1.5/dazhongsi-public-acceptance-street-ai-concept.webp",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "大钟寺公共验收街",
-      "title_en": "Dazhongsi Public Acceptance Street",
-      "description_zh": "知情、人工与 AI 双轨、公共共验及申诉回滚四段空间的 AI 概念效果图；非现场照片、非工程依据。",
-      "description_en": "AI concept rendering of notice, parallel human and AI service, public co-testing, and appeal or rollback; not a site photograph or engineering evidence.",
-      "sha256": "b3ed2a821b11ef8013a8d7ee7074b29bd4ed51c8d063cc177e8383bac6bc801f"
-    },
-    {
-      "path": "assets/media/v1.5/jingzhang-public-version-spine-ai-concept.webp",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "京张公共版本脊",
-      "title_en": "Jing-Zhang Public Version Spine",
-      "description_zh": "铁路遗产轨迹、无障碍横向针脚与三处轻量公共学习节点的 AI 概念效果图；非现场照片、非工程依据。",
-      "description_en": "AI concept rendering of railway heritage traces, accessible cross-links, and three lightweight civic learning nodes; not a site photograph or engineering evidence.",
-      "sha256": "2f716826bf675eb36a6708dd5bec16d94ffed94d3e2aac92c5612620b3ae59b6"
-    },
-    {
-      "path": "visual/assets/ai_render_disclosure.json",
-      "role": "evidence_data",
-      "required": false,
-      "language": "neutral",
-      "sha256": "14ecb0c6247469369387aa1d006e19201dd8ff889c51dabb9bc7b179c2ac6bf0"
     },
     {
       "path": "assets/figures/brand-system.png",
@@ -479,7 +428,7 @@
       "required": false,
       "language": "neutral",
       "role_detail": "asset_rights_ledger",
-      "sha256": "e2605633fa6e9f6e53e00aff876122b8db5a356d7d7ecedb760249d99e89239f"
+      "sha256": "936a5d747b95fd88145de805d4fa8f25f97fc9bc9213a8f2ed937a24f47414a6"
     },
     {
       "path": "visual/assets/delivery_contracts.json",
@@ -495,7 +444,7 @@
       "required": false,
       "language": "neutral",
       "role_detail": "bilingual_qa",
-      "sha256": "9feb2a9f4d144a0413c73ee5aad80c3dcb0228f7ab8e5016c18db5dc9d37e50d"
+      "sha256": "00cde50853c2d60c3d7c17fcc23b4db0e472f417042d2862540549d872e9f6e9"
     },
     {
       "path": "assets/figures/implementation-readiness.png",
@@ -654,7 +603,7 @@
       "required": false,
       "language": "neutral",
       "role_detail": "render_audit",
-      "sha256": "d8132fd6bc2d44ac7a112f34641a90db0e636c9e5d854d636328822a4898dc65"
+      "sha256": "e362cfc7bc2937dbb3471ef503b330e27dc47c42ab4ba6840b587c31548d6da5"
     },
     {
       "path": "visual/assets/scenario_professional_review_matrix.json",
@@ -703,17 +652,6 @@
       "language": "neutral",
       "role_detail": "pre_g3_commissioning_figure_translation",
       "sha256": "8dbac164e293ee6c02ee7436cfc16669dbe273f9af131a7f9092105f8763da13"
-    },
-    {
-      "path": "assets/media/v1.6/review-hero.webp",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "评审首屏四景无文字底图",
-      "title_en": "Text-free four-scene reviewer hero",
-      "description_zh": "由四张已披露 AI 概念效果图确定性拼版；非现场照片、非官方效果图、非工程依据。",
-      "description_en": "Deterministic contact sheet composed from four disclosed AI concept renderings; not a site photograph, official rendering, or engineering evidence.",
-      "sha256": "13633cb4661641a6ce483b540ca5754893216402ffa5d7ab81e80624c1725243"
     }
   ],
   "validation_claim": {
