@@ -72,7 +72,21 @@ Three factor types — compute, funding, and data — are written as conceptual 
 
 The corridor's talent base is older than the taskbook. The 1952 nationwide restructuring left the "Eight Colleges" along Xueyuan Road — aviation, geology, mining, forestry, medicine, steel, petroleum, and agricultural machinery — which have grown into today's Beihang, China University of Geosciences, CUMT Beijing, Beijing Forestry University, and their peers [source:SRC-BAXUEYUAN-2025]. In the same years, Wudakou was merely the fifth level crossing of the old line out of Beijing North Station; the name survived the crossing's removal [source:SRC-WUDAKOU-NAME-2023]. The AI innovation belt does not land on empty ground: it overlies seventy years of a college district on a hundred years of railway.
 
-Seven global references contribute methods. Barcelona Superblocks demonstrates street reallocation; Paris's 15-minute city foregrounds proximity; Helsinki Kalasatama uses residents' time; Amsterdam AMS Institute organises living labs; Toronto Quayside exposes data-governance costs; Singapore Punggol Digital District coordinates a district; and Seoul Digital Mayor's Office makes public indicators visible. The proposal borrows questions rather than scales, investment promises, or urban forms [source:SOURCE-REGISTRY] [depth:overall_spatial_structure].
+Seven global references contribute methods. Barcelona Superblocks demonstrates street reallocation; Paris's 15-minute city foregrounds proximity; Helsinki Kalasatama uses residents' time; Amsterdam AMS Institute organises living labs; Toronto Quayside exposes data-governance costs; Singapore Punggol Digital District coordinates a district; and Seoul Digital Mayor's Office makes public indicators visible.
+
+Each reference must survive itemised scrutiny. The table states, case by case, what is taken, where it lands, and what is explicitly left behind, so that borrowing never turns quietly into copying.
+
+| Case | Transferable mechanism | Where it lands here | Explicitly not transferred |
+|---|---|---|---|
+| Barcelona Superblocks | Street space returned to walking and staying | Walking repair at three east-west interfaces (P3) | Large-area street closures to cars |
+| Paris 15-minute city | Daily life organised by proximity | Quarter-hour-circle sampling frame and SV-04 | Top-down functional zoning mandates |
+| Helsinki Kalasatama | Residents' time as a stated target | Time-based indicators on scenario cards (e.g. 06) | Time as the sole ranking criterion |
+| Amsterdam AMS Institute | The living lab as urban test format | Zhongzhiyuan baseline lab and failure garden | Permanent institutes with fixed budgets |
+| Toronto Quayside | A public lesson in data-governance cost | Gate G1 and the retirement-record regime | Data-trust entities and dense sensor grids |
+| Singapore Punggol Digital District | Campus-firm coordination interfaces | Service-wing compute and compliant testing | Building an entire digital district anew |
+| Seoul Digital Mayor's Office | Public indicators kept visible to citizens | Annual Ledger Day and the L4 ledger wall | A real-time city-dashboard control room |
+
+The proposal borrows questions rather than scales, investment promises, or urban forms [source:SOURCE-REGISTRY] [depth:overall_spatial_structure].
 
 The identity combines two rings moving at different speeds with five calibration marks. The outer ring moves annually; the inner ring turns quarterly. The marks appear on baseline markers, soil windows, route signs, and the annual ledger as a screen-independent public language.
 
@@ -220,6 +234,25 @@ The taskbook requires at least three AI pilgrimage landmarks. The proposal estab
 | L5 | Release-Gate Signal Group | Four gate positions along the spine | Each gate passed lights one railway signal. Walking the spine, a pilgrim reads every condition under which a project was allowed to accelerate |
 
 Honours reward reproducibility, public contribution, and timely withdrawal rather than investment or traffic. All five landmarks are concept proposals; siting awaits ownership and heritage-review procedures.
+
+### The Slow-Variable Component Library
+
+Beyond the landmarks, the corridor's everyday face rests on a set of replicable components. All are distilled from facilities already introduced above, written here as reference specifications so that any block can assemble them by the same ruler — and dismantle them completely on exit, leaving no abandoned frontage.
+
+| Component | Reference specification | Where it applies | Linked slow variable / gate |
+|---|---|---|---|
+| Baseline Marker Zero (L2) | Upright marker engraved with methods and failure records | North end of Zhongzhiyuan, spine entries | All SV, published before G1 |
+| Soil observation window | Openable section with sensor well, metre-square scale | Zhongzhiyuan, rain-garden points | SV-02, G1 |
+| Canopy re-measurement plot marker | Ground-inset plot boundary, resettable for re-surveys | Greenway and forest-park candidate points | SV-01, feeds the G4 check |
+| Slow-variable route marker | Double-ring studs and signs, no power required | Along the spine, three east-west interfaces | SV-03/05, G2 |
+| Child-route escort sign | Icon-based segment numbering at a child's eye level | Escorted routes between schools and blocks | SV-05, G2/G3 |
+| Dissent Platform (L3) | Rewritable panels plus archived-opinion slots, keeping revisions | AI Origin deliberation yard | G3 objection closure |
+| Non-digital feedback box | Paper drop, opened and registered by staff on schedule | AI Origin ground floor, Dazhongsi service point | G2/G3 |
+| Annual ledger board (L4) | Panels replaced yearly; kept and retired projects shown together | Dazhongsi delivery yard | All SV, G4 |
+| Human-counter service point | Staffed counter permanent; assistant gives anonymous hints only | Dazhongsi public-service point | SV-04, G2 |
+| Reversible paving and facility module | Dry-laid removable units; the frontage is restored on removal | Twelve scenario nodes, interface repair segments | All, paired with the exit path |
+
+Everything above is a reference specification with conceptual size ranges, not a construction drawing. Before any component lands, ownership, heritage, and professional procedures must still be completed [source:AGENT-TASKBOOK] [depth:blue_green_public_space].
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
