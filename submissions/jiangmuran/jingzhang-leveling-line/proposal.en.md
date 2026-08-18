@@ -1645,7 +1645,7 @@ A design reviewer read that figure and concluded the spine was not drawn on the 
 | This proposal's spine to the surveyed park | 1,116.7 m | this proposal |
 | Spine moved to the design area's **western edge** | 414.7 m | floor is 412.5 m |
 
-**The surveyed park lies wholly outside the provisional overall design area** — not a choice this proposal made but a property of the organisers' geometry, in the second row above. So “draw the spine on the real alignment” means moving the primary axis outside the design area.
+**The OSM-mapped segment lies wholly outside the provisional design area** — not a choice this proposal made but a property of the organisers' geometry, in the second row above. So “draw the spine on the real alignment” means moving the primary axis outside the design area.
 
 Nor is the western edge the optimum inside it. The organisers' three key areas have centroids at lon 116.3475–116.3485 and the spine runs along that line; the western edge is at 116.3397. **Hugging it would cut the distance to the park from 1,117 m to 415 m at the cost of leaving all three key areas** — and threading those three is what the spine is for.
 
@@ -1655,7 +1655,7 @@ So the choice is: the spine threads the three key areas, sits 1,116.7 m from the
 
 **That is a closure error, and it is in the site data rather than on paper.** The 43.6 km² research area agrees completely with OSM, so the announcement's textual bounds and the actual geography do not conflict; but the 11.4 km² provisional overall design area does not intersect the surveyed park at all.
 
-The limits must be stated exactly. OSM is crowd-sourced and its polygon may cover only the built, mapped section rather than the planned whole. The provisional boundary is itself explicitly an inference from text, with its basis and error documented in the repository. **This proposal does not adjudicate which is right.** It reports one recomputable fact: the two routes differ by 412.5 m.
+The limits must be stated exactly. OSM is crowd-sourced and its polygon covers only the built, mapped section — not the 9 km planned corridor [source:HAIDIAN-PARK-PHASE2-PLAN]. The provisional boundary is itself explicitly an inference from text, with its basis and error documented in the repository. **This proposal does not adjudicate which is right.** It reports one recomputable fact: the two routes differ by 412.5 m.
 
 The OSM coordinates and every convention are shipped in `visual/assets/osm_reference.json`, and `node visual/assets/check_osm.js` recomputes each published figure from them (the fetch script cannot ship — intake accepts no .py) [source:OSM-REFERENCE-2026-08] and can be re-run. That matters more than the finding itself: a discrepancy reported without the means to reproduce it is an assertion, and this proposal is in no position to make assertions about other people's boundaries.
 
@@ -1838,7 +1838,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files, 1172 KB, 1,810 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files, 1174 KB, 1,811 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
