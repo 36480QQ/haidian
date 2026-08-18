@@ -563,6 +563,12 @@
       "linked_replacement_ids": [
         "D07_RESPONSIBILITY_OPERATIONS"
       ],
+      "suggested_discipline_ids": [
+        "P05_SPECIALIST_SAFETY",
+        "P06_DATA_AI_RIGHTS",
+        "P07_OPERATIONS_COMMUNITY"
+      ],
+      "suggested_discipline_status": "suggested_role_type_only",
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C01_ROLE_ACCEPTANCE",
       "required_contents": [
         "real accountable-party acceptance",
@@ -577,6 +583,14 @@
         "D03_REGULATORY_OWNERSHIP",
         "D06_SPECIALIST_CONSTRAINTS"
       ],
+      "suggested_discipline_ids": [
+        "P01_PLANNING_URBAN_DESIGN",
+        "P02_LANDSCAPE_ACCESSIBILITY",
+        "P03_TRANSPORT",
+        "P04_ARCHITECTURE_PUBLIC_INTERFACE",
+        "P05_SPECIALIST_SAFETY"
+      ],
+      "suggested_discipline_status": "suggested_role_type_only",
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C02_APPROVAL_SCOPE",
       "required_contents": [
         "approval register",
@@ -592,6 +606,15 @@
         "D04_ACCESSIBILITY_PUBLIC_PARITY",
         "D05_TRANSPORT_AND_PEAK_CONTINUITY"
       ],
+      "suggested_discipline_ids": [
+        "P01_PLANNING_URBAN_DESIGN",
+        "P02_LANDSCAPE_ACCESSIBILITY",
+        "P03_TRANSPORT",
+        "P04_ARCHITECTURE_PUBLIC_INTERFACE",
+        "P06_DATA_AI_RIGHTS",
+        "P07_OPERATIONS_COMMUNITY"
+      ],
+      "suggested_discipline_status": "suggested_role_type_only",
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C03_SITE_TIME_BASELINE",
       "required_contents": [
         "dated site survey",
@@ -604,6 +627,11 @@
       "linked_replacement_ids": [
         "D08_RIGHTS_AND_REUSE"
       ],
+      "suggested_discipline_ids": [
+        "P06_DATA_AI_RIGHTS",
+        "P07_OPERATIONS_COMMUNITY"
+      ],
+      "suggested_discipline_status": "suggested_role_type_only",
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C04_PROHIBITED_DATA_CONTROL",
       "required_contents": [
         "prohibited-data control",
@@ -618,6 +646,15 @@
         "D06_SPECIALIST_CONSTRAINTS",
         "D07_RESPONSIBILITY_OPERATIONS"
       ],
+      "suggested_discipline_ids": [
+        "P02_LANDSCAPE_ACCESSIBILITY",
+        "P03_TRANSPORT",
+        "P04_ARCHITECTURE_PUBLIC_INTERFACE",
+        "P05_SPECIALIST_SAFETY",
+        "P06_DATA_AI_RIGHTS",
+        "P07_OPERATIONS_COMMUNITY"
+      ],
+      "suggested_discipline_status": "suggested_role_type_only",
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C05_STOP_AUTHORITY",
       "additional_closure_category_ref": "visual/assets/readiness-closure-contract.json#C06_RECOVERY_REHEARSAL",
       "required_contents": [
@@ -632,6 +669,15 @@
         "D02_EXISTING_CONDITION_SURVEY",
         "D04_ACCESSIBILITY_PUBLIC_PARITY"
       ],
+      "suggested_discipline_ids": [
+        "P01_PLANNING_URBAN_DESIGN",
+        "P02_LANDSCAPE_ACCESSIBILITY",
+        "P03_TRANSPORT",
+        "P04_ARCHITECTURE_PUBLIC_INTERFACE",
+        "P06_DATA_AI_RIGHTS",
+        "P07_OPERATIONS_COMMUNITY"
+      ],
+      "suggested_discipline_status": "suggested_role_type_only",
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C07_COMMUNITY_CO_TEST",
       "required_contents": [
         "community co-test record",
@@ -645,6 +691,12 @@
         "D07_RESPONSIBILITY_OPERATIONS",
         "D08_RIGHTS_AND_REUSE"
       ],
+      "suggested_discipline_ids": [
+        "P05_SPECIALIST_SAFETY",
+        "P06_DATA_AI_RIGHTS",
+        "P07_OPERATIONS_COMMUNITY"
+      ],
+      "suggested_discipline_status": "suggested_role_type_only",
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C08_INDEPENDENT_RETEST",
       "additional_closure_category_ref": "visual/assets/readiness-closure-contract.json#C09_GO_NO_GO_MINUTE",
       "required_contents": [
