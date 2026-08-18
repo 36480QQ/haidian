@@ -1,5 +1,23 @@
 # 方案迭代记录 / Changelog
 
+## v40.0 - 2026-08-18
+
+**Spatial-distinction cold-read repair / 空间差异冷读修复**
+
+- 串行门：第 39 轮 PR #3109 已合并（head `1172b6ac6904b67bd7f9d41c0cfad4742d91ed8a`）且 merge 已进入 canonical `main@44ffc5bbad89245f76ea1eed4f36a38465cf9211`；同一投稿包无开放 PR，源工作树洁净。本轮只修复可复现的“同构卡片掩盖空间差异”阅读断点。
+- Serial gate: Round 39 PR #3109 is merged (head `1172b6ac6904b67bd7f9d41c0cfad4742d91ed8a`) and the merge is contained in canonical `main@44ffc5bbad89245f76ea1eed4f36a38465cf9211`; no competing package PR is open and the source worktree was clean. This round only repairs the reproducible reading break in which isomorphic cards hid spatial difference.
+
+| 已具备 / Already present | 仍薄弱 / RED | 必须冻结 / Locked | 本轮实施 / Implemented |
+|---|---|---|---|
+| 三处已有不同文字说明、普通—验证—故障—恢复、双语图和固定页数出版物 | 旧重点区平面由并列卡片组织，旧关系剖面由三条相似横排组织；读者会先看到共同版式，而不是平行旁路／一街两院四节点／四向通勤十字 | 双轨总纲、三原型、JZ-AIOS、G0—G3、四轴、三载体、九份 geometry、metrics、12/8/3/36、G0/NO-GO/provisional/rights、页数和全部媒体 | 原路径重绘双语平面与关系剖面：众智园显示上下分离旁路与验证庭；原点显示一街、两院、四个独立撤回点；大钟寺显示四向通勤十字与路外服务。A3 两张关键页改为全幅图面，A0 仅替换对应印刷图层。 |
+
+- 修复前 RED：旧图的共同卡片边框和三条同形四态横排先于空间关系被识别；该问题来自图面构图，不是缺少文字。修复后，三处的普通线、可停对象、人工交接与恢复对象分别可由图形关系识别；故障只退出旁侧验证庭、独立节点或路外服务支线，普通生活和非 AI 路径继续。
+- Reproducible RED: shared card frames and three homologous state rows in the old figures were recognized before spatial relation; the defect was compositional, not a shortage of prose. The repair makes each ordinary line, stoppable object, staffed handoff and restoration object legible from the drawing: failure removes only the side proof court, independent nodes, or off-route service siding, while ordinary and non-AI paths continue.
+- 双语 visual 的三段空间提示、alt 与移动端阅读提示同步为“先认关系，再核对图件”；保留原生横向滚动、无 JavaScript、键盘、减少动态和静态回退。四份 PDF 保持 A3 14+14、A0 8+8，两次独立进程逐文件字节一致；全页与关键页 QA 不见裁切、重叠、空白页、加密或控件。
+- The bilingual visual's three spatial prompts, alt text and mobile reading hint now say “identify the relation first, then check the figure”; native horizontal scrolling, no-JavaScript, keyboard, reduced-motion and static fallbacks remain. The four PDFs retain A3 14+14 and A0 8+8, are byte-identical across two independent processes, and full-page plus key-page QA finds no clipping, overlap, blank page, encryption or widget.
+- 本轮无新媒体；生成方法、来源、模型、权利与不可证明事项均未变化。图件是 G0 概念关系，不是现状、站点锚点、法定边界、获批设计、已建成状态、无障碍结果、人员承诺或现实恢复时长。geometry、`metrics.json`、12/8/3/36、G0、NO-GO、provisional、现实结果 0、`not_fully_cleared` 和独立逐文件清权 0 保持不变。
+- This round adds no media; generation method, sources, model, rights and non-provable matters are unchanged. The figures are G0 concept relations, not existing conditions, station anchors, statutory boundaries, approved designs, built states, accessibility results, staffing commitments or real recovery durations. Geometry, `metrics.json`, 12/8/3/36, G0, NO-GO, provisional status, zero real-world outcomes, `not_fully_cleared` and zero independent file-level clearance audits remain unchanged.
+
 ## v39.0 - 2026-08-17
 
 **Eight-question cold-read baseline and unique answer routing / 八问冷读基线与唯一答案路由**
