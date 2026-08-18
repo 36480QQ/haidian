@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M119",
+      "gate": "register_split_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把「最旧的 24 条」写回正文——**这正是 E307 到 E319 之间两版正文的样子**，而那时归档里已经是 48 条。",
+      "what_en": "Write 'the oldest 24' back into the prose - **exactly how both editions shipped from E307 until E319**, by which point the archive held 48.",
+      "why_zh": "登记册的切点由构建现算：旧条目往外挪，直到本文件降到上限以下并留 8 KiB 余量。**一个描述派生量的手写数，下一次构建就不成立了**——而它写在评审整份读到的文件里，旁边还跟着一个同样过期的总数。本包的规矩是能现算的数不手写；这条变异钉住的是这条规矩在这一处真的落地了。",
+      "why_en": "The register's split point is computed on every build: the oldest entries move out until the file fits under the cap with 8 KiB to spare. **A hand-written number describing a derived quantity stops being true at the next build** - and this one sat in a file the reviewer reads whole, beside an equally stale total. This package's rule is that a number it can derive is never typed; this mutation pins that the rule actually landed here."
+    },
+    {
       "id": "M118",
       "gate": "interned_render_qa.py",
       "target": "changelog.md",
@@ -1422,7 +1434,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 116,
+  "caught": 117,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1476,6 +1488,7 @@
     "project_dependency_qa.py",
     "proposal_legibility_qa.py",
     "reading_calendar_qa.py",
+    "register_split_qa.py",
     "registry_alignment_qa.py",
     "resource_frame_qa.py",
     "review_rules_qa.py",
@@ -1545,6 +1558,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 81 道闸门，其中 78 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 81 gates, 78 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 82 道闸门，其中 79 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 82 gates, 79 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
