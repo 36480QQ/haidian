@@ -41,7 +41,7 @@ scenarios:
 |---|---|---|---|
 | 30 秒 | 一个概念：日常轨连续、验证轨间歇；三个原型：众智园验证、原点共创、大钟寺发布与人工服务；一个边界：全案仍为 G0。 | 图 01 总图与上方一句话判断。 | 铁路语法不是 Logo；验证轨不是连续占地；图面清楚不等于场地准确。 |
 | 3 分钟 | 三个真实性框、同一普通任务的非 AI 完整旅程、普通—验证—故障—恢复四态，以及 D01—D08 / H01—H07 为什么仍挡住现实升级。 | 图 02—05、三处换轨场和证据门。 | 关系图不是现状平面；机器 PASS 不是内容质量、专业责任或批准。 |
-| 15 分钟 | 逐对象核查场景、项目、重点区、权利、维护、资源、失败、气候、长期运营、来源与重算触发。 | 后续证据与专业交接层。 | 后台合同不能反向制造现场数据；任何缺口都不得靠更漂亮的图绕过。 |
+| 15 分钟 | 逐对象核查场景、项目、重点区、权利、维护、资源、失败、气候、长期运营、来源与重算触发。 | 唯一专业交接起点：[评审交接](visual/index.html#review-handoff)。 | 后台合同不能反向制造现场数据；任何缺口都不得靠更漂亮的图绕过。 |
 
 ### 八问冷读答案地图（仅作编辑复核）
 
@@ -56,9 +56,9 @@ scenarios:
 | Q5 · 故障时停止什么、保留什么？ | 停止并隔离自动化、采集、扩声、显示或服务叠层；连续日常轨、完整非 AI 路径、无屏信息、人工接管、撤回、申诉与安全离开继续。 | `visual/index.html#four-state-motion` | A3 P9；A0 P6 |
 | Q6 · 恢复为什么不等于 G1、批准或重启？ | 恢复只先还普通路径、无屏信息、静音和同一基本任务；现实验收与 GO 均为 0，缺口未闭合就保持 G0、关闭或退役。 | `visual/index.html#cold-read-recovery-boundary` | A3 P9、P13；A0 P6、P8 |
 | Q7 · 哪些空间信息仍是临时或未知？ | `PROV-SITE-001` 与三处 `PROV-KEY` 均为临时容器；官方红线、坐标套准、站点／道路／地块／建筑锚点及构件尺寸、材料、连接、专项结论仍未知。 | `visual/index.html#cold-read-spatial-unknowns` | A3 P2、P14；A0 P1、P3—P4 |
-| Q8 · 哪些资料和专业角色可以修改、拒绝或删除方案？ | D01—D08 真实资料可替换临时几何、类型占位和未核验来源；H01—H07 专业角色可复算、修改、拒绝或删除概念，重大缺口保持 NO-GO。 | `visual/index.html#review-handoff` | A3 P13—P14；A0 P7—P8 |
+| Q8 · 哪些资料与未来专业方可以修改、附条件、拒绝或删除方案？ | D01—D08 真实资料可替换临时几何、类型占位和未核验来源。H01—H07 是尚未提交的交接／证据包，不是人员、专业或已接受责任；P01—P07 只是建议专业类型。未来胜任且接受明确范围的专业方，才可在该范围内复算、修改、附条件、拒绝或删除受影响概念；重大缺口保持 NO-GO。 | `visual/index.html#review-handoff` | A3 P13—P14；A0 P7—P8 |
 
-**包内导航与评审交接索引。** 本包全部 141 个路径的评审定位统一见 `visual/assets/review-handoff-index.json`：七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、全部 21 个章节阅读单元、D01—D08/H01—H07 交接、[八问冷读答案地图](visual/index.html#cold-read-answer-map)）与逐文件登记（现行／历史快照／机器输入／冻结／临时五类状态、语言对、轮次来源与权利回链）。`round15-baseline.json` 是历史快照而非现行状态，`t02-g0-g1-replay-fixtures.json` 是合成回放机器输入，两者均不得被误读为当前证据。索引只负责定位，不生成新证据、不改变成熟度或权利状态 [data:visual/assets/review-handoff-index.json]。
+**包内导航与评审交接索引。** 本包全部 149 个路径的评审定位统一见 `visual/assets/review-handoff-index.json`：七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、全部 21 个章节阅读单元、D01—D08/H01—H07 交接、[八问冷读答案地图](visual/index.html#cold-read-answer-map)）与逐文件登记（现行／历史快照／机器输入／冻结／临时五类状态、语言对、轮次来源与权利回链）。`round15-baseline.json` 是历史快照而非现行状态，`t02-g0-g1-replay-fixtures.json` 是合成回放机器输入，两者均不得被误读为当前证据。索引只负责定位，不生成新证据、不改变成熟度或权利状态 [data:visual/assets/review-handoff-index.json]。
 
 图 01 刻意把三层分开：**A 背景定位**只把公开报道转成现场问题，不是测绘或竣工图；**B 临时设计容器**只用于概念组织和 intake 自检，不是官方红线；**C 设计关系**只表达任务接力、旁侧验证、人工交接、停止与还场，不表示坐标、距离或批准顺序。三层不得叠合成一张“看似真实”的场地图。既有 OSM 背景核查所记录的 0% 相交和约 412.5 米间距仍是未裁决的背景差异；`PROV-KEY-003` 仍未与大钟寺站、道路、地块或建筑锚定。geometry 因此保持原位，只把重算触发写清 [data:visual/assets/site-grounding-register.json#JZ-SITE-READING-R17] [assumption:A-SITE-READING-020]。
 
@@ -614,7 +614,7 @@ AI 与公共价值指标同样按核验问题拆开：
 - AI 与数据风险：偏差、幻觉、隐私泄露、越权自动化和供应商锁定通过最小数据、源端保留、日志、人工责任、复测、到期和退役控制；不得自动执法、诊断或替代正式审批。
 - 安全与韧性风险：机器人、车辆和设备测试只在授权范围；实体急停、现场安全员、离线人工和 L0/L1/L2 降级必须可用。能源和恢复指标未实测时保持未知。
 - 文化与历史风险：史实、人物、文物和工程资料需由官方/馆藏/清权来源复核；AI 生成内容显式与元数据标识，争议内容可纠错、下架和追溯 [assumption:A-CULTURE-CONTENT-006]。
-- 版权与品牌风险：本次提交的最终文件集合为 manifest 中 141 个路径（其中 140 个为非 manifest 内容文件）；141 条逐文件资产记录与 50 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
+- 版权与品牌风险：本次提交的最终文件集合为 manifest/package 中 149 个路径（其中 148 个为非 manifest 内容文件）；权利台账含 149 条逐文件资产记录，即 149 条逐文件权利记录；它们与 50 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
 - 外部协同风险：未来科学城、怀柔科学城、经开区、其他创新街区和京津冀只作为可选复测角色，未经书面确认不得写成合作方、投资方或落地承诺 [assumption:A-EXTERNAL-COLLAB-005]。
 - 运营与公平风险：活动热度不能替代居民满意、可达、公平与投诉闭环；贡献荣誉不得用于流量排名、就业筛选或行政评价。
 - 工具与证据风险：机器检查只验证结构、拓扑、引用和一致性，不替代规划、建筑、交通、市政、景观、生态、消防、铁路、数据安全、无障碍、社区与法律专业判断 [depth:risk_missing_data]。
@@ -876,18 +876,22 @@ geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和
 
 六项任务继续由 `compliance_matrix.json` 作为完整覆盖台账；上表只提供评审入口，不替代原矩阵，也不构成第七项任务 [data:visual/assets/implementation-handoff-matrix.json#agent_task_review_crosswalk]。
 
+**五项本地合同入口。** [D01—D08 官方资料替换登记](visual/assets/implementation-handoff-matrix.json)（键 `official_data_replacement_register`） · [P01—P07 建议专业类型矩阵](visual/assets/implementation-handoff-matrix.json)（键 `professional_discipline_matrix`） · [H01—H07 未提交交接包定义](visual/assets/implementation-handoff-matrix.json)（键 `handoff_pack_definitions`） · [D01—D08 替换资料模板](visual/assets/field-evidence-intake-contract.json)（键 `replacement_packet_templates`） · [关闭类别与计数](visual/assets/readiness-closure-contract.json)（键 `closure_categories`）。离线浏览器会打开对应 JSON 文件，括号内键名用于文件内搜索；这些入口不证明资料已提交、专业方已接受责任或关闭已完成。
+
 ### 八类官方数据替换：收到资料后不是“贴图”，而是触发重算
 
-| 替换包 | 当前状态 | 必须补入的现实材料 | 触发动作 | 受影响输出 |
-|---|---|---|---|---|
-| D01 官方边界与重点区 | provisional_only | 有日期、坐标系、版本、授权和来源主体的官方 polygon | 差异比对 → 替换 → EPSG:4548 复算 | containment、面积指标、全部空间图、HTML、A3/A0 |
-| D02 现状与竣工测绘 | not_measured | 地形、标高、出入口、铺装、植被、设施和开放条件 | 核实、修正或删除概念关系 | 日常路径、首层界面、剖面、恢复基线 |
-| D03 控规与权属 | unknown / not_authorized | 有效控规、权属/使用权、四线和审批台账 | 专业冲突审查先于任何精确落位 | 用地、建筑/更新语言、构件位置和阶段声明 |
-| D04 无障碍与同任务共测 | design_intent_only | 实测路线 + 分群、同意后的同任务共测 | 逐群复核并改图，不用总体平均 | 连续路径、人工交接、无屏完成和同权结果 |
-| D05 交通与高峰连续性 | conceptual | 行人/骑行/公交、愿望线、站点接口、高峰冲突 | 复算并压力测试普通通行 | 六接口、大钟寺四向通行、活动避让和时段 |
-| D06 专项约束 | not_specialist_verified | 铁路、文保、水务、生态、市政、消防、应急、结构、声光等意见 | 专项结论可以覆盖或删除概念 | 可拆构件、服务边、夜间静音和恢复验收 |
-| D07 责任与运营 | role_types_only | 书面责任接受、停机/重启链、替补、预算、维护和退役 | 确认前不得排期或试用 | 公共时刻表、人工在线、事故值班和年度决定 |
-| D08 权利与复用 | not_fully_cleared | 完整条款、书面同意、ODbL、字体/工具/媒体和逐文件审计 | 清权前不对外展示或专业复用 | 展示、翻译、专业深化、跨项目和第三方发布 |
+| 替换包 | 当前状态 | 必须补入的现实材料 | 触发动作 | 建议专业类型（未接受责任） | 受影响输出 |
+|---|---|---|---|---|---|
+| D01 官方边界与重点区 | provisional_only | 有日期、坐标系、版本、授权和来源主体的官方 polygon | 差异比对 → 替换 → EPSG:4548 复算 | P01 | containment、面积指标、全部空间图、HTML、A3/A0 |
+| D02 现状与竣工测绘 | not_measured | 地形、标高、出入口、铺装、植被、设施和开放条件 | 核实、修正或删除概念关系 | P01、P02、P03、P04 | 日常路径、首层界面、剖面、恢复基线 |
+| D03 控规与权属 | unknown / not_authorized | 有效控规、权属/使用权、四线和审批台账 | 专业冲突审查先于任何精确落位 | P01、P04、P05 | 用地、建筑/更新语言、构件位置和阶段声明 |
+| D04 无障碍与同任务共测 | design_intent_only | 实测路线 + 分群、同意后的同任务共测 | 逐群复核并改图，不用总体平均 | P02、P06、P07 | 连续路径、人工交接、无屏完成和同权结果 |
+| D05 交通与高峰连续性 | conceptual | 行人/骑行/公交、愿望线、站点接口、高峰冲突 | 复算并压力测试普通通行 | P03、P07 | 六接口、大钟寺四向通行、活动避让和时段 |
+| D06 专项约束 | not_specialist_verified | 铁路、文保、水务、生态、市政、消防、应急、结构、声光等意见 | 专项结论可以覆盖或删除概念 | P02、P03、P04、P05 | 可拆构件、服务边、夜间静音和恢复验收 |
+| D07 责任与运营 | role_types_only | 书面责任接受、停机/重启链、替补、预算、维护和退役 | 确认前不得排期或试用 | P05、P06、P07 | 公共时刻表、人工在线、事故值班和年度决定 |
+| D08 权利与复用 | not_fully_cleared | 完整条款、书面同意、ODbL、字体/工具/媒体和逐文件审计 | 清权前不对外展示或专业复用 | P06、P07 | 展示、翻译、专业深化、跨项目和第三方发布 |
+
+P01—P07 是结构化合同中的建议专业类型编号，不是当前人员名单、已确认专业方或已接受责任；未来胜任且接受明确范围的专业方，只能在其接受范围内作出复算、修改、附条件、拒绝或删除决定 [data:visual/assets/implementation-handoff-matrix.json#professional_discipline_matrix]。
 
 任一新材料到位时，必须记录来源、版本、日期、空间/时间范围和使用权限；随后逐项判断“冻结、替换、复算、复核或退役”，同步更新正文、GeoJSON/JSON、图件、PDF、三载体、manifest 和权利台账。新资料若与概念冲突，优先保护普通公共权利并停止受影响的验证叠层，不能修改官方或锁定图层来迁就方案 [data:visual/assets/implementation-handoff-matrix.json#official_data_replacement_register]。
 
@@ -922,7 +926,7 @@ geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和
 | 普通使用 | 可选叠层默认关闭；居民、通勤、观察和安静停留不为活动让位 | 真实普通日基线 | unknown，不冒充运营 |
 | 停止与隔离 | 停自动化/采集/扩声/展示等适用叠层，保留同任务人工或安全拒绝 | H05 停止链与故障回写 | 0 事件，禁止自动重启 |
 | 拆除退场 | 对构件、固定、线缆、标识、队列、数据/日志/账号去向逐项留证 | D06—D08 + 去向回执 | 0 拆除，不得静默转场 |
-| 恢复与验收 | 先还普通路径、表面/绿化、静音、无屏信息和同任务服务，再独立复测 | H06—H07 + 场所恢复回执 | 0 完成，专业可拒绝/删除概念 |
+| 恢复与验收 | 先还普通路径、表面/绿化、静音、无屏信息和同任务服务，再独立复测 | H06—H07 + 场所恢复回执 | 0 完成；仅未来胜任且接受明确范围的专业方可在范围内拒绝/删除 |
 
 ### 三处使用旅程与不可复制构件
 
@@ -934,13 +938,13 @@ geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和
 
 ### 类型化未知与专业否决权
 
-每个构件的 `TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE / EXACT LOCATION / INSTALLATION METHOD / RESTORATION DURATION` 当前均为 `null / unknown`。D01—D08 决定真实边界、测绘、权属、无障碍共测、交通高峰、专项约束、职责和权利；H01—H07决定责任、批准范围、基线、数据安全、停止恢复、公共同任务和独立复测。专业结论与概念冲突时，先保护普通公共权利并停止验证叠层；专业团队可以修改、拒绝或删除构件概念，不得篡改官方资料迁就图面。安装、获批详图、责任接受、现场检查、真实拆除和恢复验收均为 0；全部对象仍为 G0、临时范围和 `not_fully_cleared`。
+每个构件的 `TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE / EXACT LOCATION / INSTALLATION METHOD / RESTORATION DURATION` 当前均为 `null / unknown`。D01—D08 定义待替换的真实边界、测绘、权属、无障碍共测、交通高峰、专项约束、职责和权利资料；尚未提交的 H01—H07 交接包组织责任、批准范围、基线、数据安全、停止恢复、公共同任务和独立复测证据。未来胜任且明确接受范围的专业方，只能在该范围内复算、修改、附条件、拒绝或删除受影响的构件概念。专业证据与概念冲突时，先保护普通公共权利并停止验证叠层，不得篡改官方资料迁就图面。安装、获批详图、责任接受、现场检查、真实拆除和恢复验收均为 0；全部对象仍为 G0、临时范围和 `not_fully_cleared`。
 
 ## 后台五步可访问证据漫游
 
-这是 15 分钟追证入口，不是前台 3 分钟路径。从 `visual/index.html#accessible-review-walk` 按五步读取：双轨京张空间语法 → 三处不可互换原型 → 非 AI 普通任务 → 故障与恢复 → 真实资料替换和专业 NO-GO。页面完全离线，无账号、扫码、远程资源或 AI 依赖；禁用 JavaScript 时五步正文、限制与证据回链仍按文档顺序完整可读。五步合同来源见 `review-walkthrough.json` [source:SOURCE-JZ-REVIEW-WALK-R14]。键盘增强只提供直接定位、前后步和 Home/End 导航，打印模式展开全部内容；这些是可访问性意图与评审呈现，不是 WCAG 认证或新增证据。
+15 分钟专业交接的唯一起点是 `visual/index.html#review-handoff`；`visual/index.html#accessible-review-walk` 是从该起点继续的五步工具，不是第二入口。五步依次读取：双轨京张空间语法 → 三处不可互换原型 → 非 AI 普通任务 → 故障与恢复 → 真实资料替换和专业 NO-GO。页面完全离线，无账号、扫码、远程资源或 AI 依赖；禁用 JavaScript 时五步正文、限制与证据回链仍按文档顺序完整可读。五步合同来源见 `review-walkthrough.json` [source:SOURCE-JZ-REVIEW-WALK-R14]。键盘增强只提供直接定位、前后步和 Home/End 导航，打印模式展开全部内容；这些是可访问性意图与评审呈现，不是 WCAG 认证或新增证据。
 
-方案只包含既有 12 场景、8 项目、3 重点区、99 个关闭槽以及既有 geometry；批准、现场测试、运营、专业责任接受和权利清除均为 **0**。G0、临时边界、D01—D08、H01—H07 与 `not_fully_cleared` 保持有效。专业团队可修改、拒绝或删除概念；重大资料、普通权利或权利缺口继续 NO-GO。
+方案只包含既有 12 场景、8 项目、3 重点区、99 个关闭槽以及既有 geometry；批准、现场测试、运营、专业责任接受和权利清除均为 **0**。G0、临时边界、D01—D08、H01—H07 与 `not_fully_cleared` 保持有效。只有未来胜任且明确接受范围的专业方，才可在该范围内复算、修改、附条件、拒绝或删除受影响概念；重大资料、普通权利或权利缺口继续 NO-GO。
 
 ## 现场证据采集与替换包
 
@@ -963,7 +967,7 @@ geometry、既有 SCENE/JZ/T 编号、八个项目、全部 G0、临时边界和
 | D07 责任运营 | 0 材料 / `null` | 书面责任接受、可达联络、覆盖时窗、替补、停/启权、预算及维护退役责任 | 未来在线、志愿劳动充分、服务质量或采购 |
 | D08 权利复用 | 0 材料 / `null` | 对象/版本、权利人依据、条款、同意、地域、期限、翻译/衍生权、撤回和独立审计 | 全包清权、内容真实或权利人背书 |
 
-专业处置只允许七种状态：未提交、已收未核、退回补全、冲突挂起、专业拒绝、接收用于复算、过期。`accepted_for_recalculation` 只允许替换类型化占位并触发下游重算，不等于场地、规划、建设、运营、部署或 G1 批准。冲突时先保护普通公共权利并暂停受影响验证叠层；专业团队可以修改、拒绝或删除概念，不得修改官方证据迁就图面 [data:visual/assets/field-evidence-intake-contract.json#professional_disposition_contract]。
+专业处置只允许七种状态：未提交、已收未核、退回补全、冲突挂起、专业拒绝、接收用于复算、过期。`accepted_for_recalculation` 只允许未来胜任且明确接受范围的专业方在该范围内替换类型化占位并触发下游重算；该专业方也只能在范围内修改、附条件、拒绝或删除受影响概念。这些处置均不等于场地、规划、建设、运营、部署或 G1 批准。冲突时先保护普通公共权利并暂停受影响验证叠层，不得修改官方证据迁就图面 [data:visual/assets/field-evidence-intake-contract.json#professional_disposition_contract]。
 
 ### 三条不可互换的未来现场路
 

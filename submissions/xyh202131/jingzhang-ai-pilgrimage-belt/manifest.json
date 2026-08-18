@@ -51,13 +51,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e1a4b0e4f139996d8e706e5823281df3f898325d9f6d5d21e2dfcfdb7c0afd8d"
+      "sha256": "89c3af31b2d55f1323ad1a94d62795cdb63e966f23b28de8301f3ee10960d07a"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "d216e740c3c710f6710a57b55f3251c700d2a3b18401447083211046427be8ba"
+      "sha256": "c792017926c1b86924465be40d95f436fce309ddeb7f2748b475284e5235c18b"
     },
     {
       "path": "metrics.json",
@@ -81,13 +81,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "678efa2989636fe48dd36f52e56064c5d920a30fad49d0a9949cb615622143a6"
+      "sha256": "92c1ac8202fc240745018da26cbe8463495e5f71ad22708af00e42d8788c03bd"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "174df27476a45fa1a5a5f7df470bb9cf14cf6c1bae9b26d138cf0319ad6a7412"
+      "sha256": "1d7277659340edcdd2b1a1f5ac62cca4c672c8df7c4fcd75a1c50b6ad37c8e5a"
     },
     {
       "path": "compliance_matrix.json",
@@ -146,14 +146,14 @@
       "path": "visual/assets/readiness-closure-contract.json",
       "role": "other",
       "required": true,
-      "sha256": "7afc5629285eda2e96e2ea8056f460f124cde2da16ca7e6890f50f1408dbe222",
+      "sha256": "395bf6ede962c1831ab2eee4a15803a87d52248b0168c3e7b0e6eabc6877c3df",
       "role_detail": "implementation_evidence"
     },
     {
       "path": "visual/assets/implementation-handoff-matrix.json",
       "role": "other",
       "required": true,
-      "sha256": "5381f6ae5c57ba623ccc2a6389dc58887e74e37c02ad5989068fdbc778fce492",
+      "sha256": "792b5f53004e465ac38590a89e7d4c06bf2d43aa3977ba12aa147b5a572f861e",
       "role_detail": "implementation_handoff_evidence"
     },
     {
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "54bdb95c0e47ec12bdedeaad8709d138f3508801e44b11697f7cade3a0af1130"
+      "sha256": "280e07a51a7313725798f286b6a6393de86be26872d7e69a57d44ecdaf9f8737"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -230,13 +230,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4ecac5da5c02b1eed6561e1e75fd64941a7e5666ae0640e384ae39071e80ee85"
+      "sha256": "f9f0edef5824568d0c7ed5bcdd68402d4605b4e3644819ddc7f6b312b2c02b67"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "695983ec94b57b3b70be5dd2cb47240caba1450d70c126b9d8e8a5f298fa44cd"
+      "sha256": "e39b859a4bb3524b35019a1c450dfff790ddbd419a1f0bcafa34b47d47efb728"
     },
     {
       "path": "report/copyright_statement.md",
@@ -256,14 +256,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f1b14faa77bb5d4d30b0ccf1e538bce65bb42931f424a7d67063f9455cbdd452"
+      "sha256": "d1f2da1af58f0ed41da89977dddfb728e26acfa5257e3c54199b0172b47c8013"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "fbb6fb790cabd387b4e4692d3cf3e5e9f7f84572cc02dc14b945b513b697af38"
+      "sha256": "89e820b270804e9b3f921143441c4dbe291f7f9f2e62f02a02c03a65d83529b4"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -403,7 +403,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2a761aa1bc7956f84a5974d43d9f94a19d42d952a3a67d6ef7f0df6a318d8cab"
+      "sha256": "f26e16896301bff9b74d21f2b0b56d2f499866c7b6e7b2542f696f820aedde20"
     },
     {
       "path": "report/proposal.en.html",
@@ -411,7 +411,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ce202cbbec467ad82c588dedf78a2b8196ba380d8f7ac7d1adbe7cce1be558d6"
+      "sha256": "8d197455cb4b50d7e6d4506d9145cd1e0898adcc8750fd2c529e8d8f59f6aaa2"
     },
     {
       "path": "visual/index.en.html",
@@ -419,7 +419,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "3bf0aa765590dc44c8c7a59584f280f28e9ef436a0244e57f8f66d17ddafbd8d"
+      "sha256": "cb760d07aa52f84f1bf5b78698e4568191984f2223f205e9aa19dfaed3afd30c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -435,7 +435,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e25df2b1a6b25bc08ca36009ed3b2d2392114c463c71121feccf3c9218a85461"
+      "sha256": "345f7c7f74e4b27eca8a6a020488b7b95fa2b25f3cecdadc3527b3d101799dd7"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -915,7 +915,7 @@
       "role": "other",
       "required": true,
       "language": "neutral",
-      "sha256": "76164f013430569f8b6c438b6e259fe4b111e883816da08ea0049d50021b8a0d",
+      "sha256": "e8d27e6ce90a91e063aee55b9fafbad8a6dcf22c4ce2bf0fdf1ffaeec2f134b7",
       "role_detail": "public_interest_evidence"
     },
     {
@@ -988,9 +988,9 @@
       "language": "neutral",
       "title_zh": "评审交接索引与包内导航",
       "title_en": "Review handoff index and package navigation",
-      "description_zh": "全部 141 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
-      "description_en": "Review navigation for all 141 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "c43c5f8ae2b1d67382e1f753310dc72c63102ae633f2aa414918dd6d88bbfacc"
+      "description_zh": "全部 149 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
+      "description_en": "Review navigation for all 149 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
+      "sha256": "49713798397f5af75bf8628a4acb29deb11b56f59af7d4ab05c18730f8730502"
     },
     {
       "path": "visual/assets/round17-reading.css",
