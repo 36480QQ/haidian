@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "566617833e11205098c1e2b8860d3997dda6d07fa4bbafdac2569e33ab454bbc"
+      "sha256": "1e2842c60c634871b822cc194d97250da514581b62bce131c0c52dec516e3c2c"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "8ff80a12f07161f20eac6cb08507e848fe355570008a3a2e2684e3ec527d68a5"
+      "sha256": "471ca91ea2a46159d18f13bffbb385287a7c49ac1d373b2b0b563f64c5e0e13c"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fc4892b8688b6388c77d2e63afd45017b9f44660acf26085e050d3d8b3a5ced3"
+      "sha256": "979f8ebcdb638ef467cda2f2e3ba2a9e4c67a422e64b7438341132a2050f5bb0"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f8c992d779093540b1c14599330c33c192c023e9e5d1d7039eb604b2f9a754d0"
+      "sha256": "a6c9d477785ec99809378c0ad38329dfb828322a0b6843904d3c934cfac78974"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "6ae80bafaf9260c79319661b8ee59d33c0a8ece8ad4e2212e9aae6ce62b40a72"
+      "sha256": "c2db6015bd0800b04daeb00b12086fbb8d6690fa4bfa466d3ef3a1ce87ace497"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9bb087bcb5e315c64e9088c303c6f62bbf95b0bc0753987ee44444588cc333d5"
+      "sha256": "5d5a8c5223495ffeab08e9fe20638bd3f3408a1336c2726b302f414300a8d69b"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d98c113fd4f07d3b563e2e7a5d0b054de59eab292b48f625d383d2ed9001ca45"
+      "sha256": "0f8e9465f0add95915a97f0d431a33ec47b850e0211f4e60c8fbd99f5c5fbabd"
     },
     {
       "path": "visual/index.html",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "e47a61ddc207166b9b2f9cd9909feca5b1c7b16b74a412ef5371fed1953ef04a"
+      "sha256": "c89f4ad86ffd8346acfc4c8c2f9d3cc0a6ddcb29991f6159bf40d528fad71d2f"
     },
     {
       "path": "assets/figures/dual-state-plan.png",
@@ -173,13 +173,13 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "66637036752b25135a53c4a03338a0ccbcc0e649ba5996cb3556a997774d31ad"
+      "sha256": "b10eb6d081e4db6645e5cafc26b2528fdb16ebbee85d6e58218444f8b197b2d7"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8b779f02ffcb7395ff5d1c94a187681d620dbbf816a98186d0a34d58731238fc"
+      "sha256": "f1cca4c4e88b2d33ee7d9a40edb33aae6528907a71e75b86b0f118860d0c3b46"
     },
     {
       "path": "geometry/constraints.geojson",
@@ -203,7 +203,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "91248eb0e5b9bf03016dbb9f4f88c7fff16239576d5ed0b125b3ea5c08dcd997"
+      "sha256": "90d799d8ddb1f45443758ff437114eac0164ac57c7a876e050204bc245ccbdb6"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -215,7 +215,7 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "63a3bfd543bb9f85a7ab8ab01f3397651c888cfbcfe768a415a955b8d87c2d93"
+      "sha256": "9dd00c96e3b00e4200deab10e9aae632f01bd6b4ac450df890167caee5c704b4"
     },
     {
       "path": "geometry/roads.geojson",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b7fa415a0983b6768f9d1c051a771d1e7ce7df05f70ca512303f34c179bc87fe"
+      "sha256": "4c85f721d261b5de59a8ca9de89dbd53433c21f9d117537cf9e9abf36799d889"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d388449b29c208610f275fc103c3007a99c05af77f845fc7dde1efc43ea53174"
+      "sha256": "ee1eab1a559efd5ddddf79e111b73cbe47bde37390edad466f923cfe2aa83a3b"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -260,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "37be57f7b3a4ffd3630c17936a791869131c17079a5a9db2765b59cfbf43f053"
+      "sha256": "5cf40c143c6a511016521439d454c04beaac99b0ba5ac1118de16b5425dc98e8"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -268,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "6461113eea39da7ecab26ba5aaeb7d7f9b6edbc6b12bd09f571e811569cfbf9c"
+      "sha256": "e529c9786d7fa8d997bc2045ce57295c4d99ae8ecf821b1dfc75d4317c1ebe70"
     },
     {
       "path": "visual/index.en.html",
@@ -406,14 +406,14 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "83dc13ec49a4e7fbc396dcba76db78de479c775aab730d2326de67b1db0d035c"
+      "sha256": "def9f4c507d20c5d77961a015397e90ce1b020d76b2180eb3e4aa0463a33fada"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "ca476a2a0f246f009ec7f95204923ab9ab553034749653bd704dadab1f832cb6"
+      "sha256": "48898b7aae4c8f46ed7ebe37ffd3c8f9ff5bfe605004652654f0a20012e30a73"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.en.png",
@@ -421,7 +421,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen-audit.png",
-      "sha256": "24d04c3ac771502da6d0ab2e2dcab552d7919c43a7f3d96ff824b499b2b019b0"
+      "sha256": "a615ff2091acfa9f200af9c84a3fb75e1acb8d0fb35fdfa0bd0ae90ae3148c9d"
     },
     {
       "path": "assets/figures/scene-dual-state.webp",
@@ -572,7 +572,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "02f8b7799e4baf5dfd101f2ee93ea834df3e2e00ca59e866e05d0ac651392729"
+      "sha256": "78acfd61b7c1f6ca5d3b61d55a97ac4f0119b1c03ff4f0e8b5e3f5ce5cbba38d"
     },
     {
       "path": "assets/media/cover.webp",
@@ -758,7 +758,25 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "66009969b43a193ec46e06d2d4f4609413060d663f1e86ad89a7fd9331c06ad8"
+      "sha256": "17ba264e7b13d8528fcfae14316efd42fde4d771782f16fb24e5fdfb4c056c70"
+    },
+    {
+      "path": "visual/assets/package-integrity-gates.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "随包自检闸门台账（十道闸门，逐道登记口径、当前读数与历史查获缺陷共 27 条）",
+      "title_en": "Package self-check gate register (ten gates, each with its criterion, current reading and the 27 defects the gates actually caught)",
+      "sha256": "203815c8c02f4636eac43336f497bea9a9aeacb10bb148ef8747b1cf9611c8aa"
+    },
+    {
+      "path": "visual/assets/service-desk-gonogo.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "万感服务桌开办条件档案（七项 go／no-go，当前七项全部如实登记为 no-go）",
+      "title_en": "Every-Sense service desk readiness file (seven go/no-go items, all seven currently registered as no-go)",
+      "sha256": "9f29b5c9af5c6130ab7622a519c88c480210d14f873c72e5b08767edaada321f"
     },
     {
       "path": "visual/assets/review-archive.json",
@@ -884,7 +902,7 @@
       "language": "neutral",
       "title_zh": "OP-04 场地与运营主体对接就绪材料（就绪待发；如实登记无既有接触、无既有意向）",
       "title_en": "OP-04 site and operator outreach-readiness material (ready to send; no prior contact and no existing intent, registered as fact)",
-      "sha256": "a5fce6b1a24db0877b829b46530ca8e48b57c075a7dcb6e8d8dd446d8335ee0e"
+      "sha256": "0147ff02b485a9ba5ed12e4f517e23f4e1d8ac061b244b1b14320fd1239c8628"
     },
     {
       "path": "visual/assets/op04-tactile-map.json",

@@ -124,6 +124,7 @@
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/osm-fabric/osm-fabric-readings.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/osm-fabric/osm-fabric-snapshot-part2.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/package-integrity-gates.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/qa-proofing-record.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/review-archive.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/scene-data.js",
@@ -147,6 +148,7 @@
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-spec.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-tabletop-fixtures.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/seb-tabletop-run.js",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/service-desk-gonogo.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/spatial-audit-readings.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/spine3d.css",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/spine3d.js",
@@ -158,7 +160,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 40696410,
+      "total_bytes": 41128613,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -240,14 +242,14 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 22,
+        "known_metric_refs_required": 32,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 39,
           "standard": 9,
           "depth": 15,
-          "data": 42,
+          "data": 44,
           "metric": 31
         }
       }
