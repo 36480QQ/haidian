@@ -1202,7 +1202,7 @@ The announcement names three deliverables in one sentence - a renewal implementa
 | The announcement's word | What this package has | Where |
 |---|---|---|
 | **Renewal implementation path** | R1-R8 ordered by dependency, not calendar: without R4, R7 does not start | the renewal list here |
-| **Implementable space** | the four needing no unpublished official data - R1, R2, R3, R8 - each of the others naming the condition it waits on | that table's preconditions |
+| **Implementable space** | the 5 needing no unpublished official data - R1, R2, R3, R5, R8 - each of the others naming the condition it waits on | that table's preconditions |
 | **Coordinated delivery model** | four review parties with none missing, eight posts with their duty boundaries and unstaffed prohibitions, and a per-benchmark reading calendar | `role_spec.json`, `compliance_matrix.json#reading_calendar` |
 | **Campus-park-block integration** | the three key areas are those three interfaces: community to campus (a 1:12 ramp), research park to the river (the levee path), block over a station (the queue held behind the building line) | FIG.13, three sections at one scale |
 
@@ -1271,8 +1271,9 @@ Three readings computed from that table rather than asserted over it:
 3. **What actually gates the programme is an administrative decision, not construction.** Only
    R4 and R6 wait on official data — R4 is the head of the one dependency chain, R6 is the only
    C-band project. **An implementation plan whose critical path runs through an approval rather
-   than through a site is planned differently**: what you do while waiting is finish the four
-   projects that need no official data and leave readings behind, not push the dates back.
+   than through a site is planned differently**: what you do while waiting is finish the
+   5 projects that need no official data and leave
+   readings behind, not push the dates back.
 
 Every dependency and blocker ships in `visual/assets/renewal_projects.json`, read from this table
 on every build, and `project_dependency_qa` re-checks it each time: a dependency must name a
@@ -1525,11 +1526,11 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-325 entries. By finder:
+326 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 31 | Run against the shipped package, not a draft |
+| Independent audit | 32 | Run against the shipped package, not a draft |
 | The author | 212 | Found while working |
 | This package's own gate | 24 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
@@ -1548,8 +1549,8 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Uncheckable | 25 |
 | Outlived the package | 22 |
 | Nothing fails it | 17 |
+| Outlived its line | 14 |
 | Recorded where found | 14 |
-| Outlived its line | 13 |
 | A reference did not resolve | 12 |
 | Not itself | 12 |
 | A source unnameable | 10 |
@@ -1837,7 +1838,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1167 KB, 1,807 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1169 KB, 1,808 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
