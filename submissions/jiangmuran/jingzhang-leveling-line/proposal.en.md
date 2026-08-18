@@ -1677,7 +1677,7 @@ section is drawn to scale in FIG.01 — the inferred boundary, the surveyed park
 position and the 412.5 m between them, on one sheet. A difference stated in prose is an assertion;
 drawn at scale it is evidence. FIG.02 carries the same comparison as a closure diagram.
 
-![FIG.01 Site overview and cross-check](assets/figures/site-overview.png)
+![FIG.01 Overall concept and site overview](assets/figures/site-overview.png)
 
 <!-- TASKBOOKDIMS:BEGIN -->
 
@@ -1743,13 +1743,12 @@ assembled at all.
 **The errata register and self-check outputs ship, and are not recited here.** `visual/assets/errata.json` (the oldest in `visual/assets/errata-archive.json`; both state the same total, and the split point is computed each build) records entry by entry what was wrong, its shape, who found it and which commit fixed it, and the build verifies that commit exists and touched the file it blames — **a register that cannot be joined to the repository is itself the defect it records.** This names where it is and nothing more: it is the correction history of this document, not of Haidian.
 
 **The self-check outputs ship too.** `self_check.json`, which the organisers read
-whole, carries the raw verdicts of the four machine gates. Six further self-check outputs ship
-without entering the proposal: `visual/assets/parity_qa.json` (bilingual content ratio),
+whole, carries the raw verdicts of the four machine gates. Six further self-check outputs ship; three of
+their readings appear in the checklist below: `visual/assets/parity_qa.json` (bilingual content ratio),
 `label_collision_qa.json` (overlapping labels), `i18n_order_qa.json` (number placement in English
 templates), `visual_packet_qa.json` (artifact readability), `review_route.json` (the review path and
-what it costs to walk) and `census.json` (the raw corpus census readings). **This names where they
-are and nothing more: they measure this document rather than Haidian, so they do not take the
-proposal's space.**
+what it costs to walk) and `census.json` (the raw corpus census readings). **They measure this document rather than Haidian, so the proposal names them
+without reciting them.**
 
 **Four measurements about this open call itself ship with the package and are not recited in the
 proposal.** `visual/assets/review_gate_survey.json`, `visual/assets/review_repeatability.json`,
@@ -1838,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.86 s**; 9 files, 1162 KB, 1,804 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files none of which the reviewer receives, 1162 KB, 1,804 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
