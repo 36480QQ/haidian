@@ -22,6 +22,7 @@
         "submissions/lqqk7/every-sense-jingzhang/agent.json",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/brand-system.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/brand-system.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/district-strategy.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/dual-state-plan.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/dual-state-plan.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/ecosystem-map.en.png",
@@ -112,7 +113,9 @@
         "submissions/lqqk7/every-sense-jingzhang/sources.json",
         "submissions/lqqk7/every-sense-jingzhang/standard_matrix.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/braille-core-statement.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/district-strategy.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/ethics-protocol.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/field-verification-plan.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/font-license-ofl.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/legal-interface-register.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/op04-pilot-readiness.json",
@@ -159,7 +162,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 38922085,
+      "total_bytes": 39570980,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -248,7 +251,7 @@
           "source": 41,
           "standard": 9,
           "depth": 15,
-          "data": 47,
+          "data": 49,
           "metric": 31
         }
       }

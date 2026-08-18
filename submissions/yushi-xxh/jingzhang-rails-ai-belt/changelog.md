@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v2.13 - 2026-08-18
+
+### 内联基线测量协议：把 measurement-protocol.json 从 not_supplied 搬进可读正文（对标最高分仓库第四步）
+
+- v2.12 概念主线贯穿（章节首加折返走廊 recap 句）单次采样 78/100，落在 v2.9 均值 84.3 的 σ≈4 之下，判为 flat/negative——recap 形式的概念锐化已无效。本版本回退 v2.12 的 recap 句，回到 v2.9 评分内容（均值 84.3）。
+- 参考最高分仓库（96/100）的 SV-01..05 基线测量表，本版本把 `visual/assets/governance/measurement-protocol.json`（not_supplied_paths）的 6 条试点 KPI 测量协议搬进 proposal.md / proposal.en.md 折返章节：基线来源 / 方法 / 频次 / 测量角色 / 目标值（一律 `null` 直到运营主体确认）/ 重算触发条件。沿用 v2.8 把折返协议规则表内联的同一杠杆（把读不到的治理 JSON 变成评审可读正文），强化可实施性维度（权重 20）。
+- 不修改几何、图件、指标、合规矩阵与治理 JSON 本身；仅 proposal.md / proposal.en.md / changelog.md / manifest / self_check 更新。不新增任何实施主张。
+
 ## v2.12 - 2026-08-18
 
 ### 概念主线贯穿：把"懂得折返的走廊"隐喻延伸到正文各章（对标最高分仓库第三步）

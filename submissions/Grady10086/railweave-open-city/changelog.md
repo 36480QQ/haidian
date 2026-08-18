@@ -1,5 +1,21 @@
 # 方案迭代记录
 
+## v2.5 - 2026-08-18
+
+- 恢复并强化 RailWeave 独有命题：以百年京张公共空间和普通服务为不断线的城市经线，以区域协同廊道为纬线，以单项 AI 服务为可准入、可暂停、可解编的技术线程；“区域定链、走廊织网、重点区落项目”作为空间转译，不再替代总命题。
+- 将“如果今晚关闭 AI，明天城市还能不能照常运行”前置为中英文首问，并在正文前部直接呈现任务书映射、无账号访客旅程和“一处场地、一个 S06、100 日”的实施闭环。
+- 统一 S06 为 0—100 日、P1—P4、E0—E6：第 91—100 日强制撤权、删数、拆机、复原并形成保留、修改、撤除或不推进决定；清理 0—90 日、P1—P3 和旧版本号冲突。
+- 恢复 v2.2 正式 94 分版本中空间信息最完整的 `site-overview` 与“四个可核验闭环”证据板，移除固定评审图中的 90 日样布冲突。
+- A3 首页恢复“城市织体 × AI 线程”四段用户旅程，A0 首页恢复大比例空间总图；两者均新增“一处场地、一个 S06、100 日”的高可读实施提示，并保留现版后续实施页。
+- 重构中英文 `visual/index` 首屏：同时呈现空间骨架、双独立门、拒绝 AI 仍可办理和 100 日限定样布；G0 作为依法启动条件，不再占据公共价值之前的核心卡位。
+- 重新生成中英文正文 HTML，并修复报告首屏重复显示相同 H1 的表达问题。
+
+- Restored RailWeave's distinctive urban-fabric / removable-AI-thread proposition and made regional chain-setting, corridor weaving, and place-based delivery its spatial translation rather than its substitute.
+- Moved the question “If AI is switched off tonight, will the city still work tomorrow?” to the first screen, followed immediately by brief alignment, the no-account visitor journey, and one-site / one-S06 / 100-day delivery.
+- Unified S06 as Days 0-100, P1-P4, and E0-E6, including mandatory Days 91-100 restoration and re-decision; removed legacy 0-90, P1-P3, and version conflicts.
+- Restored the strongest spatial overview and four-loop evidence board from the exact formal 94-point v2.2 package while retaining v2.4 implementation detail in subsequent pages.
+- Rebuilt bilingual fixed first screens so spatial clarity, two independent gates, service without AI, and the 100-day sample are visible together.
+
 ## v2.4 - 2026-08-13
 
 - 以政府面向的公共命题重构首读：以百年京张为公共创新主轴，通过“区域定链—走廊织网—重点区落项目”形成开放问题、自主验证、首用转化和知识回流的城市创新链。
