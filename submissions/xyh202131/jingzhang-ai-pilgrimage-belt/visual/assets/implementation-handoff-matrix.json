@@ -560,6 +560,9 @@
   "handoff_pack_definitions": [
     {
       "pack_id": "H01_AUTHORITY",
+      "linked_replacement_ids": [
+        "D07_RESPONSIBILITY_OPERATIONS"
+      ],
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C01_ROLE_ACCEPTANCE",
       "required_contents": [
         "real accountable-party acceptance",
@@ -569,6 +572,11 @@
     },
     {
       "pack_id": "H02_APPROVAL_SCOPE",
+      "linked_replacement_ids": [
+        "D01_OFFICIAL_GEOMETRY",
+        "D03_REGULATORY_OWNERSHIP",
+        "D06_SPECIALIST_CONSTRAINTS"
+      ],
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C02_APPROVAL_SCOPE",
       "required_contents": [
         "approval register",
@@ -578,6 +586,12 @@
     },
     {
       "pack_id": "H03_BASELINE",
+      "linked_replacement_ids": [
+        "D01_OFFICIAL_GEOMETRY",
+        "D02_EXISTING_CONDITION_SURVEY",
+        "D04_ACCESSIBILITY_PUBLIC_PARITY",
+        "D05_TRANSPORT_AND_PEAK_CONTINUITY"
+      ],
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C03_SITE_TIME_BASELINE",
       "required_contents": [
         "dated site survey",
@@ -587,6 +601,9 @@
     },
     {
       "pack_id": "H04_DATA_SAFETY",
+      "linked_replacement_ids": [
+        "D08_RIGHTS_AND_REUSE"
+      ],
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C04_PROHIBITED_DATA_CONTROL",
       "required_contents": [
         "prohibited-data control",
@@ -596,6 +613,11 @@
     },
     {
       "pack_id": "H05_STOP_RECOVERY",
+      "linked_replacement_ids": [
+        "D05_TRANSPORT_AND_PEAK_CONTINUITY",
+        "D06_SPECIALIST_CONSTRAINTS",
+        "D07_RESPONSIBILITY_OPERATIONS"
+      ],
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C05_STOP_AUTHORITY",
       "additional_closure_category_ref": "visual/assets/readiness-closure-contract.json#C06_RECOVERY_REHEARSAL",
       "required_contents": [
@@ -606,6 +628,10 @@
     },
     {
       "pack_id": "H06_PUBLIC_PARITY",
+      "linked_replacement_ids": [
+        "D02_EXISTING_CONDITION_SURVEY",
+        "D04_ACCESSIBILITY_PUBLIC_PARITY"
+      ],
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C07_COMMUNITY_CO_TEST",
       "required_contents": [
         "community co-test record",
@@ -615,6 +641,10 @@
     },
     {
       "pack_id": "H07_RETEST_DECISION",
+      "linked_replacement_ids": [
+        "D07_RESPONSIBILITY_OPERATIONS",
+        "D08_RIGHTS_AND_REUSE"
+      ],
       "closure_category_ref": "visual/assets/readiness-closure-contract.json#C08_INDEPENDENT_RETEST",
       "additional_closure_category_ref": "visual/assets/readiness-closure-contract.json#C09_GO_NO_GO_MINUTE",
       "required_contents": [
