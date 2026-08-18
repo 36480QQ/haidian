@@ -50,6 +50,115 @@ The overall concept proposed here is the "Jing-Zhang AI Spine Symbiosis Belt": w
 | Overall-design scope | How to put industry space, urban renewal, mobility, and municipal services on the map | Land use, buildings, roads, green space, public space, and phasing layers jointly express the structure | [data:geometry/land_use.geojson#LU-001], [data:geometry/roads.geojson#ROAD-001] |
 | Key-area scope | How to reach detailed-design depth in the three districts | Propose positioning, spatial moves, AI scenarios, and implementation dependencies respectively | [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003] |
 
+## Regional Real Baseline and Innovation Ecosystem (Authoritative Data Support)
+
+> This section provides **regional context evidence**, citing officially published data from Beijing Municipality and Haidian District (2024–2025) to characterize the real innovation ecosystem and historical context into which this design belt is embedded. All figures are regional statistics, **not project outputs**, and do not constitute commitments of project investment, output value, or enterprise names; full citations are registered in `sources.json` (incl. HD-GOV-AI-2025, HD-GOV-OVERVIEW, HD-GOV-INDUSTRY, JR-RAIL-PARK, JR-RAIL-HISTORY, among other authoritative sources).
+
+### 1. Real AI-Industry Baseline (Haidian, 2024)
+
+| Indicator | Value | Source / Note |
+|---|---|---|
+| AI core-industry scale | ¥282.2B (2822 亿元), +30% YoY, 80% of Beijing total | Beijing Gov Press (2025-07-17) [source:HD-GOV-AI-2025] |
+| AI enterprises | >1900, full chain "chip–framework–LLM–application" | ibid. |
+| Registered/launched LLMs | 104 (municipal) / 95 (district); ~70% of Beijing, ~1/5 of China | Haidian release / CPPCC survey (2025-07) [source:HD-GOV-AI-2025] [source:HD-ZX-AI-ORIGIN] |
+| AI-related unicorns | 27 | Haidian CPPCC survey [source:HD-ZX-AI-ORIGIN] |
+| Public compute | >80,000 P green compute across Jing-Jin-Ji & beyond; first 10,000-P cluster in operation | Beijing Gov [source:HD-GOV-AI-2025] |
+| Tech-service revenue | ¥244.8B (2024), 31.2% of Beijing | Haidian "1+X+1" release [source:HD-GOV-INDUSTRY] |
+| Software & IT revenue | >¥2T (2024), ~62% of Beijing, ~16% of China | ibid. |
+| Patent intensity | 539 high-value invention patents per 10k people (2024), 38.5× national avg | Haidian IP Office [source:HD-IP-2024] |
+| National platforms | 14 national key labs; "Beijing Haidian AI Cluster" = first AI cluster in China's advanced-manufacturing cluster list | China.org / Haidian release [source:HD-GOV-AI-2025] |
+| Policy & capital | Five directions in the AI Measures; Zhongguancun FTZ ¥1B/yr special fund + ¥20B science-growth fund | Beijing AI policy / Haidian [source:BJ-AI-POLICY] [source:HD-FUND-2025] |
+
+*Sampling verification: the ¥282.2B scale, >1900 enterprises, and 104 LLMs are consistent across three independent sources (Beijing Gov, Haidian Gov, China.org); the 95/104 LLM discrepancy is disclosed rather than smoothed. This round further cross-verified Zhongguancun Demonstration Zone 2024 total revenue ¥9.85T and 136 registered LLMs across three sources (Beijing S&T Comm/ZGC Mgmt, China News, CE.cn); the Beijing Urban-Renewal Regulation effective 2023-03-01 is consistent across Beijing Gov, People.cn and the Municipal Housing-Construction Commission. All figures are regional statistics, not project-output commitments.*
+
+### 2. Jing-Zhang Railway Heritage Park: The Belt's Real Site Context
+
+- **Jing-Zhang Railway**: led by Zhan Tianyou, started 1905, completed 1909, ~201.2 km, China's first railway designed and built by Chinese engineers; the "switchback" (Qinglongqiao) is an autonomous-engineering landmark; listed in China's first industrial-heritage register (2018).
+- **Jing-Zhang HSR**: opened 2019-12-30, 350 km/h smart HSR (BeiDou + autonomous driving); Beijing–Zhangjiakou in 54 min; the Qinghuayuan Tunnel runs ~6 km underground through Haidian (6020 m bored).
+- **Heritage Park**: ~9 km total (≈3× NYC High Line), +30 ha green space planned, directly serving **65 communities, 10 universities, ~500k residents & students**; Phase 1 (~2.5 km) opened 2023-06-29, Wudaokou pilot opened 2019.
+
+> These ~500k residents/students, 10 universities and 65 communities are the real beneficiaries of this proposal's "public interest & inclusion" design (see Accessibility Matrix and 5 personas).
+
+### 3. Real Density of Science, Education and Talent (Haidian)
+
+- 37 universities (incl. Tsinghua, Peking), >440k university students (~1/2 of Beijing); "Xueyuanlu Consortium" of 21 universities with shared course selection [source:HD-GOV-OVERVIEW].
+- 692 CAS/CAE academicians work/reside here (36.23% of national total); 96 national research institutes, 92 national key labs [source:HD-GOV-OVERVIEW].
+- Total talent stock 2.0058M; talent-innovation index ranks first nationally [source:HD-GOV-OVERVIEW].
+- 2025 Haidian GDP ≈ ¥1.37T, +7.2% YoY; ~26% of Beijing's economy on 2.6% of its land [source:HD-GOV-OVERVIEW].
+
+### 4. Policy Compliance Anchor (Beijing AI Policy)
+
+The *Beijing Measures for Promoting General AI Innovation* (Jingzhengbanfa [2023] No.15) set five directions — compute supply, data elements, LLM tech system, scenario application, and tolerant-prudent regulation — and mandate the "Beijing AI Public Compute Platform" in Haidian [source:BJ-AI-POLICY]. This proposal's data-minimization, human-in-the-loop and ethics-registry mechanisms (see TV-01~TV-03) align with that "tolerant-prudent regulation" direction, serving as an institutional anchor for risk & compliance — not a claim that policy dividends equal project commitments.
+
+### 5. Original Mechanism: Dual-Track Symbiosis & AI Time-Station Narrative Axis
+
+1. **Dual-Track Symbiosis (physical × digital)**: the old Jing-Zhang railway heritage is the "physical track" (cultural spine); an AI urban-agent layer forms the "digital track" (data, wayfinding, governance, operation). The two couple within one linear space rather than drawing a new red line.
+2. **AI Time-Station Narrative Axis**: along the 9 km park, L1–L4 pilgrimage landmarks (Time Station — Origin Monument — Smart-Native Cluster — Honor System) translate the "centennial self-reliant engineering spirit" into an AI-era innovation narrative for research study, international communication and public experience.
+3. **Digital-Twin Sandbox**: a "belt-scale digital twin" as a scheme-simulation and public-experience carrier (conceptual; echoes global benchmark Virtual Singapore).
+
+### 6. Phasing Roadmap (anchored to real nodes, conceptual)
+
+| Phase | Time | Anchor | Lightweight first moves |
+|---|---|---|---|
+| Near-term (pilot) | 1 yr | extend from Wudaokou pilot (2019) & Phase 1 (2023) | ≥3 test scenarios live, open-source contribution wall, community feedback station |
+| Mid-term (renewal) | 2–3 yr | Qinghe station hub integration, Dazhongsi four-quadrant | key-area renewal, recruitment-conversion path operational |
+| Long-term (governance) | 3–5 yr | 9 km full corridor, international node links | brand-asset maturity, stable annual program |
+
+*Phasing is distinct from the 100-day submission cycle: the latter is the deliverable deadline; the former is the build-out path. Anything lacking formal regulatory, tenure or municipal conditions is marked as to-be-confirmed.*
+
+### 7. Zhongguancun Demonstration Zone Innovation Capacity (2024, larger-scale reference)
+
+This belt sits at the core of the Zhongguancun Demonstration Zone. Its 2024 publicly released data (scope larger than Haidian, spanning multiple districts) [source:HD-ZGC-2024]:
+
+- Total revenue **¥9.85T** (+~¥1T YoY), ~1/3 of Beijing's GDP and ~1/6 of national Hi-Tech Zone revenue; technology revenue ¥2.67T (27.1%).
+- Digital-economy core-industry revenue **¥4.55T** (+21.3% YoY); **136 registered LLMs** (25.2% of China), globally leading.
+- 20,800 national high-tech enterprises (~12% of national Hi-Tech Zones); 93 unicorns, 882 little-giants, 532 listed firms.
+- 174.7 invention patents granted per 10k employees (1.8× 2020); technology-contract turnover ¥646.53B.
+- 24 pilot reform measures with 50+ supporting policies; Zhongguancun self-innovation fund, first tranche ¥5B.
+
+> Scope note: the table above is the *Zhongguancun Demonstration Zone* (whole-zone) scope, distinct from Haidian District's ¥282.2B AI core-industry in §1–2; the two are different statistical scopes, neither mutually exclusive nor additive. Used only as an innovation-capacity reference, not an investment/output commitment.
+
+### 8. Urban-Renewal Regulation: Implementation Framework & Compliance Boundary
+
+This proposal adopts "urban renewal" as its implementation framework — not land primary development or commodity-housing development — directly aligning with the *Beijing Urban-Renewal Regulation* (effective 2023-03-01) [source:HD-RENEWAL-REG]:
+
+- The regulation defines 5 renewal types (residential / industrial / facilities / public-space / area-comprehensive), practicing "retain-renovate-demolish" with **retention and upgrade as the priority and strict control of large-scale demolition**.
+- It encourages **urban-renewal funds** to support stock-space quality upgrading.
+- Old-factory renewal "encourages supplementary public services and high-end industry", and low-efficiency industrial parks "drive traditional-industry transformation" — exactly matching the industrial-renewal positioning of the three key areas.
+
+> The regulation frames this proposal's compliance boundary: stock renewal, retention/upgrade, and industry implantation, without touching land-primary-development or commodity-housing red lines; specific projects still require official regulatory, tenure and municipal conditions and are marked to-be-confirmed.
+
+### 9. Real Phasing Anchors and the Dazhongsi Implementability Precedent
+
+The phasing roadmap (§6) is anchored to real in-progress nodes and supported by a real precedent [source:HD-RAIL-PHASE]:
+
+- **Jing-Zhang Heritage Park phasing**: Phase-1 Area C opened as trial in 2023-01, Phase 1 formally operated by end-2023-06, Phase 2 planned to start in 2024 (~11.8 ha for Phase-1 Area C) — validating the near-term lightweight "extend from Phase 1/2" path.
+- **Dazhongsi real precedent**: the Douyin office campus was converted from a former traditional mall (low-efficiency industry cluster) into a high-efficiency space (opened 2022, adjacent to Metro Lines 12/13, 10k+ employees) — directly evidencing that the "Dazhongsi Smart-Native Cluster" (stock-commercial → AI-industry carrier) is implementable rather than built from scratch.
+
+> The cases are public regional facts, not project participants; used to illustrate precedent for comparable renewal, not as a substitute for this project's own regulatory/tenure justification.
+
+### 10. Beijing-Citywide and National AI Energy-Level Coordinates (2024, scale reference)
+
+To calibrate the proposal's position at larger scales, we add Beijing-citywide and national 2024 AI energy-level coordinates (all officially published, as scale references, not project outputs):
+
+- **Beijing-citywide 2024 AI core-industry scale ≈ ¥345.9B** (+28.8% YoY, highest growth in three years), confirmed consistent across two independent sources: the 2025 Zhongguancun Forum (China News, 2025-03-29) and the Beijing S&T Commission / Zhongguancun Mgmt official site (2025-06-24, "≈ ¥350B") [source:HD-BJ-AI-2025];
+- **Beijing registered LLMs: 132** (#1 in China, ≈ 1/3 of the country), with 21 national key labs, 23 Beijing municipal key labs, 4 new-type R&D institutes, and a 1.6T high-quality Chinese corpus released [source:HD-BJ-AI-2025];
+- **National 2024 AI core-industry scale ≈ ¥600B, with 4,500+ enterprises (4,700+ by year-end)**, confirmed consistent across MIIT (China News, 2024-09-13) and the Digital China Development Report (2024); the 2020→2024 scale rose from ¥303.1B to ¥600B, nearly doubling in four years [source:HD-NAT-AI-2024].
+
+> Scope note: Haidian ¥282.2B (80% of Beijing, HD-GOV-AI-2025), Beijing-citywide ≈ ¥345.9B (HD-BJ-AI-2025), Zhongguancun Zone ¥9.85T revenue (HD-ZGC-2024), and national ≈ ¥600B core-industry (HD-NAT-AI-2024) are four different-scale scopes and must not be substituted for or summed with one another; this proposal designs the Haidian segment, and the others serve as regional context and scale references.
+
+### 11. AI-Enabled Planning Methodology (human-AI collaborative workflow, conceptual)
+
+This proposal recommends a "human-in-the-loop" AI-assisted planning workflow that applies AI to the planning *process* itself—not merely as a design object—as methodological innovation and a verifiability safeguard (all conceptual; final authority rests with official processes and human review):
+
+1. **Multi-source data aggregation & structuring**: ingest enterprise, policy, spatial and population data, unified under `sources.json` and `compliance_matrix.json` to eliminate unsourced claims;
+2. **AI spatial-analysis agents**: run batch simulations on land-use fitness, vitality, transit accessibility and blue-green connectivity, producing reviewable intermediate layers (not final decisions);
+3. **Generative scenario simulation**: generate multi-option spatial layouts under constraints, compared quantitatively via the three metric classes in `metrics.json` to assist—not replace—decisions;
+4. **Human gate & compliance check**: every automated conclusion passes a human-review gate, aligned with MOHURD regulatory/urban-design depth requirements and the `professional_review` evidence contract;
+5. **Public participation & feedback loop**: collect feedback via a digital platform plus offline workshops, feeding it back into iteration to protect public interest and digital inclusion.
+
+> Methodology red line: AI only assists analysis and scenario simulation; it never replaces statutory approval or human review. Conclusions involving investment, output value, enterprise names, or ratified indicators must never be generated by a model and must follow official scopes (echoing the human-gate design of test-validation scenarios TV-01/02/03 in §3).
+
 ## Coordinating-Study Scope: Industry and Future-City Research
 
 
