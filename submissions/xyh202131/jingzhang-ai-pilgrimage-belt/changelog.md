@@ -1,5 +1,21 @@
 # 方案迭代记录 / Changelog
 
+## v43.0 - 2026-08-18
+
+**Three-switchyard spatial atlas / 三座换轨场空间图谱**
+
+- 串行门：第 42 轮 PR #3222 已合并（head `479af0cb76d66553982c7b25cb6a64a8244caca3`，merge `3547b7dabd53c0d3d11ea7162a70d904ef2425de` 已进入 canonical `main`）；同一投稿包开放 PR 为 0，源工作树洁净。本轮只修复“空间关系要跨多个表面拼接”的阅读断点。
+- Serial gate: Round 42 PR #3222 is merged (head `479af0cb76d66553982c7b25cb6a64a8244caca3`; merge `3547b7dabd53c0d3d11ea7162a70d904ef2425de` entered canonical `main`); the package has zero open PRs and the source worktree was clean. This round repairs only the reading break in which spatial relations had to be assembled across surfaces.
+
+| 已具备 / Already present | 仍薄弱 / RED | 必须冻结 / Locked | 本轮实施 / Implemented |
+|---|---|---|---|
+| 双语平面、剖面、四态、非 AI 路径和固定页数 A3/A0 已存在 | 三处的普通路径、停止、人工交接和恢复分别落在多张图和文字中；没有一张双语静态图同时标出三处五类关系 | 双轨总纲、三原型、JZ-AIOS、G0—G3、四轴、三载体、九份 geometry、`metrics.json`、12/8/3/36、G0/NO-GO/provisional/rights 与 A3 14+14、A0 8+8 页 | 原路径新增双语空间图谱，并把同一图谱读法接入离线 visual、proposal、report、A3 P4 与 A0 B4；主导航仍为六项 |
+
+- 修复前 RED 可重放：Round 43 前没有一张双语静态图在众智园、原点社区与大钟寺同时提供普通／非 AI连续路径、旁侧验证、停止对象、H 人工交接和恢复回归，`site_specific_stop_handoff_recovery_triplets=0`。修复后为 3；结构化前后记录见 `visual/assets/review-handoff-index.json#evidence_integrity.spatial_atlas_r43`。
+- Reproducible RED: before Round 43 no bilingual static figure supplied ordinary/non-AI continuity, side proof, stop object, H staffed handoff and recovery return for Zhongzhiyuan, Origin Community and Dazhongsi together, so `site_specific_stop_handoff_recovery_triplets=0`. After repair it is 3; the structured before/after record is `visual/assets/review-handoff-index.json#evidence_integrity.spatial_atlas_r43`.
+- 本轮无新增外部来源、模型或生成式媒体。`spatial-atlas` SVG/PNG 是以既有 G0 三处概念关系确定性排版的解释图，明确不是现状、已建成状态、批准方案、无障碍结果、公众意见或现实恢复时间。故障只停止验证／服务叠层；普通生活和完整非 AI 路径继续；恢复不等于授权、批准、G1 或重启。geometry、metrics、12/8/3/36、G0、NO-GO、provisional、现实结果 0、`not_fully_cleared` 与独立逐文件清权 0 不变。
+- This round adds no external source, model or generative media. The `spatial-atlas` SVG/PNG is a deterministic explanatory layout of existing G0 three-place relations, explicitly not an existing/built state, approved plan, accessibility result, public opinion or real recovery time. Failure stops only a proof/service overlay; ordinary life and the complete non-AI route continue; recovery is not authorization, approval, G1 or restart. Geometry, metrics, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, `not_fully_cleared` and zero independent file-level clearance audits remain unchanged.
+
 ## v42.0 - 2026-08-18
 
 **Four-state truth and recovery boundary / 四态语义与恢复真实性**

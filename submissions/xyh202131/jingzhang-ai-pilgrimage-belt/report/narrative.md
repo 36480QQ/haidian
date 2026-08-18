@@ -4,6 +4,24 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 43 Three-switchyard spatial atlas / 第 43 轮三座换轨场空间图谱
+
+第 43 轮只在第 42 轮 PR #3222 合并（head `479af0cb76d66553982c7b25cb6a64a8244caca3`，merge `3547b7dabd53c0d3d11ea7162a70d904ef2425de` 已进入 canonical `main`）、同包无开放 PR、工作树洁净后开始。基线不是寻找新方向：前台已有平面、剖面和四态说明，却没有一张双语静态图能让读者在同一视野内先识别普通／非 AI 连续路径，再逐处读到旁侧验证、停止对象、人工交接和恢复回归。因此三处关系仍要跨表面拼接，尤其容易把“恢复”误读为普遍重启。
+
+修复只把既有关系压缩为一张可追溯的空间图谱：众智园是平行旁路与验证庭，原点社区是一街两院与四个可逐点撤回的节点，大钟寺是四向通勤与路外服务。绿色始终是普通／非 AI 连续路径；蓝色只表示旁侧验证；红色只表示停止对象；H 表示人工交接；灰色只回到各自命名的普通空间。图谱、双语 visual 入口、proposal、离线报告、A3 P4 与 A0 B4 使用同一读法；六项主导航保持不变，图谱不依赖 JavaScript，打印和减少动态样式均保留。
+
+修复前 RED 可重放：在 Round 43 前，三处普通路径、停止对象、人工交接和恢复对象分别散落于不同的平面、剖面和文字表面；不存在一张双语静态图在三处均同时标出五类关系，`site_specific_stop_handoff_recovery_triplets=0`。修复后 `spatial-atlas-contract.json` 和 `review-handoff-index.json#evidence_integrity.spatial_atlas_r43` 记录 3 个逐处三元组、双语静态入口、普通／非 AI路径和恢复不授权边界。这是编辑性空间阅读检查，不是公众反馈、专家意见、评审结论、现场观察或专业验收。
+
+本轮没有新增外部来源、模型或生成式媒体；新增 SVG/PNG 是由已冻结的三处概念关系和确定性图形排版派生的 G0 概念图，而非现场照片、已建成状态、批准方案或无障碍结果。图仍不提供准确位置、尺寸、材料、人员、排班、服务承诺、恢复时长或现实结果。geometry、`metrics.json`、12/8/3/36、JZ-AIOS、G0—G3、四轴、三载体、NO-GO、provisional、现实结果 0、`not_fully_cleared`、独立逐文件清权 0、非 AI 路径和专业否决均保持不变；故障只停止验证／服务叠层，恢复不授权、不批准、不进入 G1 或重启。
+
+Round 43 began only after Round 42 PR #3222 merged (head `479af0cb76d66553982c7b25cb6a64a8244caca3`; merge `3547b7dabd53c0d3d11ea7162a70d904ef2425de` entered canonical `main`), no package PR remained open, and the worktree was clean. The baseline did not seek a new direction: plans, sections and four-state explanation existed, but no bilingual static figure let a reader see ordinary/non-AI continuity first and then, for every place, side proof, stop object, staffed handoff and recovery return. The relations had to be assembled across surfaces, making recovery especially easy to misread as general restart.
+
+The repair compresses existing relations into one traceable spatial atlas: Zhongzhiyuan is the parallel bypass and proof court; Origin Community is one street, two courts and four independently withdrawable nodes; Dazhongsi is four-way commuting and off-route service. Green remains ordinary/non-AI continuity; blue is side proof only; red is a stop object only; H is staffed handoff; and grey returns only to the named ordinary place. The atlas, bilingual visual entries, proposal, offline reports, A3 P4 and A0 B4 use the same reading method. The six-item main navigation is unchanged; the atlas needs no JavaScript and retains print and reduced-motion styling.
+
+The reproducible RED was that before Round 43 ordinary routes, stop objects, staffed handoff and recovery objects were distributed across separate plan, section and prose surfaces; no bilingual static figure marked all five relations for all three places, so `site_specific_stop_handoff_recovery_triplets=0`. After repair, `spatial-atlas-contract.json` and `review-handoff-index.json#evidence_integrity.spatial_atlas_r43` record three place-specific triplets, bilingual static entries, the ordinary/non-AI route and the non-authorisation recovery boundary. This is an editorial spatial-reading check, not public feedback, expert opinion, jury conclusion, field observation or professional acceptance.
+
+This round adds no external source, model or generative media. The new SVG/PNG is a G0 concept diagram derived from the frozen three-place relations and deterministic graphic layout, not a site photograph, built condition, approved plan or accessibility result. It supplies no exact location, dimension, material, staff, roster, service commitment, recovery duration or real result. Geometry, `metrics.json`, 12/8/3/36, JZ-AIOS, G0–G3, four axes, three carriers, NO-GO, provisional status, zero real outcomes, `not_fully_cleared`, zero independent file-level clearance audits, the non-AI path and professional vetoes remain unchanged; failure stops only proof/service overlays and recovery neither authorizes nor approves, enters G1, or restarts.
+
 ## Round 42 Four-state truth and recovery boundary / 第 42 轮四态语义与恢复真实性
 
 第 42 轮在第 41 轮 PR #3215 合并（head `e5b35a1aec70a20d6cd33542f0b1828fa31da756`，merge `7d5d1c7914de610c7e68a89f055063afc077e79f` 已进入 canonical `main@fb7e7c3b7d2c88bd4acbeceaafc13d8933b3082f`）、同包无开放 PR、工作树洁净后开始。审计不是增加新的运行机制，而是把同一既有四态的四条语义轴重新分开：运行态回答界面正在展示普通、验证、故障或恢复；成熟度仍是 G0；授权仍是 `not_authorized`；服务轴只记录概念合同要求的同任务非 AI 路径，不假装它是已观察到的服务。RED 可重放：两个按钮和读屏播报把 48 秒界面节奏称为“旅程”，两处可见恢复卡与第 4 步漫游没有说清材料闭合仍不产生重启授权、批准、G1 或现实结果，且旧服务值不在自己的允许集合中。

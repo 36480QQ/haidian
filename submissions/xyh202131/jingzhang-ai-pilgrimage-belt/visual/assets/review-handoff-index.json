@@ -31,7 +31,7 @@
       "zh": "场景护照：12 个场景的门级与护照字段覆盖"
     }
   },
-  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R42",
+  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R43",
   "evidence_integrity": {
     "cold_read_answer_map": {
       "answers_checked": 8,
@@ -63,8 +63,14 @@
     "four_state_truth_r42": {
       "audit_type": "editorial_and_declared_enum_check",
       "red_before": {
-        "motion_controls": ["开始 48 秒旅程", "Start 48-second journey"],
-        "live_region_phrases": ["Journey started at", "Journey complete at"],
+        "motion_controls": [
+          "开始 48 秒旅程",
+          "Start 48-second journey"
+        ],
+        "live_region_phrases": [
+          "Journey started at",
+          "Journey complete at"
+        ],
         "recovery_non_authorization_on_visible_cards": 0,
         "walkthrough_step_4_candidate_non_authorization": false,
         "service_state_current_value_declared": false
@@ -78,6 +84,31 @@
       },
       "scope_zh": "这是编辑和类型集合审计：不测量公众理解、无障碍结果、现实服务、恢复时长、批准、授权、G1 或现场结果。",
       "scope_en": "This is an editorial and declared-value-set audit: it measures no public comprehension, accessibility result, real service, recovery duration, approval, authorization, G1 or field outcome."
+    },
+    "spatial_atlas_r43": {
+      "audit_type": "editorial spatial-reading check",
+      "red_before": {
+        "single_visible_spatial_reading_sequence": false,
+        "site_specific_stop_handoff_recovery_triplets": 0,
+        "reproduction": "Before Round 43, the three-place reading appeared in separate plan, section and prose surfaces. No single bilingual static figure placed ordinary continuity, side proof, stop object, staffed handoff and named recovery return in all three non-interchangeable spatial relations."
+      },
+      "post_repair": {
+        "bilingual_static_figure_paths": [
+          "assets/figures/spatial-atlas.png",
+          "assets/figures/spatial-atlas.en.png"
+        ],
+        "bilingual_visible_entries": [
+          "visual/index.html#spatial-atlas",
+          "visual/index.en.html#spatial-atlas"
+        ],
+        "site_specific_stop_handoff_recovery_triplets": 3,
+        "ordinary_non_ai_route_explicit_per_language": true,
+        "recovery_non_authorization_explicit_per_language": true,
+        "static_without_javascript": true,
+        "primary_navigation_items_unchanged": 6
+      },
+      "scope_zh": "这是编辑性空间阅读检查，不认证公众理解、真实地点、已建成状态、无障碍结果、恢复时长、批准、授权、G1、权利清除或现场结果。",
+      "scope_en": "This is an editorial spatial-reading check. It certifies no public comprehension, real location, built condition, accessibility result, recovery duration, approval, authorization, G1, rights clearance or field outcome."
     },
     "generator_enforced": true,
     "heading_parity": {
@@ -2347,6 +2378,121 @@
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
+    },
+    {
+      "group_id": "figure-spatial-atlas",
+      "kind": "proposal_figure",
+      "status": "current",
+      "latest_rebuild_round": 43,
+      "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
+      "human_surface_refs": [
+        "proposal.md",
+        "proposal.en.md",
+        "report/proposal.html",
+        "report/proposal.en.html",
+        "visual/index.html",
+        "visual/index.en.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
+      ],
+      "notes": {
+        "zh": "G0、临时关系、非比例的编辑性概念图；不证明真实地点、已建成状态、批准、无障碍结果、人员、时长或公众意见。",
+        "en": "G0, provisional-relation, not-to-scale editorial concept diagram; it proves no real place, built condition, approval, accessibility result, staffing, duration or public opinion."
+      },
+      "files": [
+        {
+          "path": "assets/figures/spatial-atlas.png",
+          "language": "zh",
+          "role": "proposal_figure",
+          "role_detail": "render",
+          "translation_of": null
+        },
+        {
+          "path": "assets/figures/spatial-atlas.svg",
+          "language": "zh",
+          "role": "proposal_figure",
+          "role_detail": "editable_source",
+          "translation_of": null
+        },
+        {
+          "path": "assets/figures/spatial-atlas.en.png",
+          "language": "en",
+          "role": "proposal_figure",
+          "role_detail": "render",
+          "translation_of": "assets/figures/spatial-atlas.png"
+        },
+        {
+          "path": "assets/figures/spatial-atlas.en.svg",
+          "language": "en",
+          "role": "proposal_figure",
+          "role_detail": "editable_source",
+          "translation_of": "assets/figures/spatial-atlas.svg"
+        }
+      ]
+    },
+    {
+      "group_id": "va-spatial-atlas.css",
+      "kind": "stylesheet",
+      "status": "current",
+      "latest_rebuild_round": 43,
+      "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
+      "human_surface_refs": [
+        "visual/index.html",
+        "visual/index.en.html"
+      ],
+      "notes": {
+        "zh": "离线、打印和减少动态展示样式；不加载远程资源。",
+        "en": "Offline, print and reduced-motion presentation styling; no remote resource is loaded."
+      },
+      "files": [
+        {
+          "path": "visual/assets/spatial-atlas.css",
+          "language": "neutral",
+          "role": "asset",
+          "role_detail": null,
+          "translation_of": null
+        }
+      ]
+    },
+    {
+      "group_id": "va-spatial-atlas-contracts",
+      "kind": "evidence_data",
+      "status": "current",
+      "latest_rebuild_round": 43,
+      "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
+      "human_surface_refs": [
+        "visual/index.html#spatial-atlas",
+        "visual/index.en.html#spatial-atlas"
+      ],
+      "notes": {
+        "zh": "合同、术语和 RED 基线是编辑核验记录，不是现场或公众证据。",
+        "en": "Contract, terminology and RED baseline are editorial verification records, not field or public evidence."
+      },
+      "files": [
+        {
+          "path": "visual/assets/spatial-atlas-contract.json",
+          "language": "neutral",
+          "role": "evidence_data",
+          "role_detail": null,
+          "translation_of": null
+        },
+        {
+          "path": "visual/assets/spatial-atlas-baseline.json",
+          "language": "neutral",
+          "role": "evidence_data",
+          "role_detail": null,
+          "translation_of": null
+        },
+        {
+          "path": "visual/assets/spatial-atlas-terminology.json",
+          "language": "neutral",
+          "role": "evidence_data",
+          "role_detail": null,
+          "translation_of": null
+        }
+      ]
     }
   ],
   "frozen": {
@@ -2393,7 +2539,7 @@
   "package_counts": {
     "key_areas": 3,
     "land_use_units": 36,
-    "manifest_paths": 141,
+    "manifest_paths": 149,
     "non_manifest_content_paths": 140,
     "note_en": "The above are package structure and file counts only, not field, operating, approval or maturity evidence.",
     "note_zh": "以上为包内结构与文件计数，不是现场、运营、审批或成熟度证据。",
