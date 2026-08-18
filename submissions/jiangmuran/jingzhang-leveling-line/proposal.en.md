@@ -1433,7 +1433,7 @@ Both numbers are true; what was missing was saying so. **Both now ship, and both
 
 So each metric's **evidence ceiling** is computed from the weakest file it reads rather than judged, and ships as `visual/assets/evidence_ceiling.json`. The result is unflattering, which is why it is stated: of 53 metrics, 52 can be graded — the remaining one is marked unknown with no value, so it has no number to overstate. **17 are capped at `provisional`** (drawn on an inferred boundary), **13 at `background_only`** (crowd-sourced geometry or keyword counts over other people's proposals), 18 at `self_measured` (they measure this package), exactly **4** reaches `official_context`, and **none** reaches `regulatory_baseline`. Of the 30 weak-ceiling metrics, 24 read `confidence_is_about: computation` — the “high” is about the arithmetic — and 6 read `reading`: the OSM fabric, where the reading is the uncertainty (E197).
 
-**The practice is borrowed openly.** `Abreto/REN AXIS` ran four adversarial rounds, retracting four conclusions carried by background sources alone; `147228` ships an errata register with a `found_by` field. This package's increment is not the idea but **no longer doing it by hand**: the ceiling comes from the source files, so a source weaker than the claim fails the build, not the reader.
+**The practice is borrowed openly.** This package's increment is not the idea but **no longer doing it by hand**: the ceiling comes from the source files, so a source weaker than the claim fails the build, not the reader.
 
 <!-- CEILING:END -->
 
@@ -1837,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1170 KB, 1,834 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1172 KB, 1,835 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

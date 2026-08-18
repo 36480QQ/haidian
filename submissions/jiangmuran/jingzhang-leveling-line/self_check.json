@@ -311,7 +311,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 59 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 15 bytes to spare. The package totals 28.8 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 59 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 186 bytes to spare. The package totals 28.8 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_LABEL_COLLISION_QA",
@@ -917,7 +917,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30170573,
+      "total_bytes": 30170339,
       "maintainer_bypass": false
     },
     "stderr": ""
