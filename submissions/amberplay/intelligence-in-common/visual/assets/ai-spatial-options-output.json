@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0.0",
+  "status": "captured_design_team_ai_output_not_planning_approval",
+  "generated_at": "2026-08-18T15:30:00+08:00",
+  "agent": "OpenAI Codex urban-design agent",
+  "model_disclosure": "GPT-5 family; exact service build and seed are not exposed to the participant",
+  "cases": [
+    {
+      "case_id": "CT-01",
+      "planning_question": "How can a river-park AI test remain stoppable without enclosing the ordinary garden route?",
+      "objective_vector": ["containment", "ordinary_access", "river_edge_care", "public_learning", "reversibility"],
+      "options": [
+        {
+          "option_id": "CT-01-A",
+          "geometry_ref": "visual/assets/design-actions-public-context.json#DA-ZZY-A",
+          "comparative_rank": 1,
+          "spatial_move": "all-day enclosure across the candidate garden line",
+          "strengths": ["maximum containment", "simple logistics control"],
+          "weaknesses": ["removes ordinary access", "crosses the desktop river-edge exclusion"],
+          "uncertainty": ["field width", "river engineering", "rights"]
+        },
+        {
+          "option_id": "CT-01-B",
+          "geometry_ref": "visual/assets/design-actions-public-context.json#DA-ZZY-B",
+          "comparative_rank": 2,
+          "spatial_move": "time-shared test bay beside a continuous ordinary route",
+          "strengths": ["ordinary route retained", "public learning remains visible", "removable logistics edge"],
+          "weaknesses": ["needs staffed booking", "field width pending"],
+          "uncertainty": ["operator clearance", "accessible set-out", "seasonal river-edge conditions"]
+        },
+        {
+          "option_id": "CT-01-C",
+          "geometry_ref": "visual/assets/design-actions-public-context.json#DA-ZZY-C",
+          "comparative_rank": 3,
+          "spatial_move": "move the test fully indoors and keep the garden untouched",
+          "strengths": ["high separation", "simple stop condition"],
+          "weaknesses": ["weak public learning", "indoor rights unresolved"],
+          "uncertainty": ["building access", "operator", "public programme"]
+        }
+      ]
+    },
+    {
+      "case_id": "CT-02",
+      "planning_question": "How can AI-origin knowledge become a daily, correctable and withdrawable ground-floor public service?",
+      "objective_vector": ["rights_visibility", "ordinary_access", "ground_floor_continuity", "public_learning", "reversibility"],
+      "options": [
+        {
+          "option_id": "CT-02-B",
+          "geometry_ref": "visual/assets/design-actions-public-context.json#DA-ORIGIN-B",
+          "comparative_rank": 1,
+          "spatial_move": "distribute source, rights and withdrawal services along shared ground floors",
+          "strengths": ["rights visible on daily movement", "ordinary lane retained", "persistent staffed service"],
+          "weaknesses": ["many ground-floor interfaces", "operating hours required"],
+          "uncertainty": ["ground-floor rights", "tenant participation", "threshold widths"]
+        },
+        {
+          "option_id": "CT-02-A",
+          "geometry_ref": "visual/assets/design-actions-public-context.json#DA-ORIGIN-A",
+          "comparative_rank": 2,
+          "spatial_move": "concentrate interpretation inside one exhibition hall",
+          "strengths": ["compact management", "controlled content"],
+          "weaknesses": ["public stays outside the translation process", "desktop ordinary-route conflict"],
+          "uncertainty": ["building access", "rights", "opening hours"]
+        },
+        {
+          "option_id": "CT-02-C",
+          "geometry_ref": "visual/assets/design-actions-public-context.json#DA-ORIGIN-C",
+          "comparative_rank": 3,
+          "spatial_move": "use a periodic festival market as the main public interface",
+          "strengths": ["high event visibility", "low permanent fit-out"],
+          "weaknesses": ["no persistent rights service", "spectacle replaces daily repair"],
+          "uncertainty": ["event rights", "crowd management", "year-round continuity"]
+        }
+      ]
+    },
+    {
+      "case_id": "CT-03",
+      "planning_question": "What can improve station-city service before any unverified bridge, tunnel or station-exit alignment is available?",
+      "objective_vector": ["network_continuity", "ordinary_access", "conflict_avoidance", "staffed_service", "reversibility"],
+      "options": [
+        {
+          "option_id": "CT-03-A",
+          "geometry_ref": "visual/assets/design-actions-public-context.json#DA-DZS-A",
+          "comparative_rank": 1,
+          "spatial_move": "construct a bridge-first cross-rail connection",
+          "strengths": ["direct network ambition", "strong landmark value"],
+          "weaknesses": ["intersects public-map station relation", "requires missing engineering, rail, rights and approval evidence"],
+          "uncertainty": ["rail engineering", "ownership", "official alignment", "approval"]
+        },
+        {
+          "option_id": "CT-03-B",
+          "geometry_ref": "visual/assets/design-actions-public-context.json#DA-DZS-C",
+          "comparative_rank": 2,
+          "spatial_move": "lead with an indoor station-city experience",
+          "strengths": ["weather protection", "compact programme"],
+          "weaknesses": ["enters sampled building envelope", "does not repair ordinary ground service"],
+          "uncertainty": ["building rights", "station access", "fire egress"]
+        },
+        {
+          "option_id": "CT-03-C",
+          "geometry_ref": "visual/assets/design-actions-public-context.json#DA-DZS-B",
+          "comparative_rank": 3,
+          "spatial_move": "start with a north-side ground ordinary-service line and reversible 12 m validation module",
+          "strengths": ["avoids registered road, rail and building geometry", "keeps phone-free staffed service", "can move or cancel"],
+          "weaknesses": ["does not solve the future grade-separated connection", "requires field set-out"],
+          "uncertainty": ["doorways", "tactile paving", "drainage", "fire", "loading", "rights"]
+        }
+      ]
+    }
+  ]
+}

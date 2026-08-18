@@ -14,10 +14,15 @@
       "visual/assets/design-actions-public-context.json",
       "visual/assets/fact-diagnosis-action-crosswalk.json"
     ],
+    "content_addressed_prompt": "visual/assets/ai-spatial-generation-prompt.json",
+    "content_addressed_output": "visual/assets/ai-spatial-options-output.json",
+    "decision_log": "visual/assets/ai-spatial-decision-log.json",
     "output_scope": "candidate descriptions, comparative ranks, and draft permit fields",
     "hard_constraint_rule": "ordinary access, registered spatial conflict, missing statutory or engineering evidence, human staffing, and restoration override any AI rank",
     "human_override_rule": "the design team may conditionally prefer a lower-ranked option only with an explicit reason; professional and affected-public selection remain pending",
-    "not_reproducible_model_inference": true,
+    "content_hash_replayable": true,
+    "deterministic_city_gate_replayable": true,
+    "bitwise_model_inference_replayable": false,
     "not_planning_approval": true
   },
   "cases": [
