@@ -1,5 +1,5 @@
 ---
-title: "京张智脉 · 百年京张AI创新带城市设计"
+title: "星轨轻铺连翠岸，银丝漫织绕青栏·光络漫游生长志"
 author_github: "0237"
 language: "zh"
 proposal_format_version: "2"
@@ -11,7 +11,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# 京张智脉 · 百年京张AI创新带城市设计
+# 星轨轻铺连翠岸，银丝漫织绕青栏·光络漫游生长志
 
 ## 设计依据与资料清单
 
