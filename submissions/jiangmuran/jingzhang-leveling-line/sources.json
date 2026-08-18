@@ -173,7 +173,7 @@
       "license_or_reuse_terms": "仓库公开发布的征集资料。本包按其原文引述口径与数值，不复制全文，不再分发原始文件。",
       "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/agent_taskbook.json",
       "title": "agent_taskbook.json：六项 agent 任务与 63 条要求",
-      "source_locator": "agent.1–agent.6，31 条 must-address 与 32 项 required output",
+      "source_locator": "agent.1–agent.6，32 条 must-address 与 31 项 required output",
       "collection_method": "从仓库树 commit 0e856ea035 直接读取，逐条抽取要求文本并与本包正文小节联接；联接结果随包提交于 taskbook 覆盖检查，未答之处点名列出而非概括。",
       "published_date": "2026-08-08",
       "evidence_class": "official_context",
