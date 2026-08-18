@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M131",
+      "gate": "scoring_vocabulary_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把那一块里的「品牌识别度」改成「品牌辨识度」——**一个字之差**，读起来完全通顺，而组织方公布的那个词就此在正文中消失。该块只有 2.6 KB，却独家承载 20 个已公布维度名中的 18 个；正文其余每一个大块都不单独承载任何一个评分词。",
+      "what_en": "Change one published name inside that block by a single character, so it reads just as well and the word the organisers actually publish disappears from the proposal. The block is 2.6 KB and is the sole carrier of 18 of the 20 published names; every larger block in the proposal carries none of them on its own.",
+      "why_zh": "评审拿着两份已公布的维度清单，**逐个维度按它自己的名字打分**。E215 发现这些名字在正文里出现零次并写了进来，但**从来没有任何东西守着这一条**。本轮差一步就把这一块当成「机器说明」删掉——理由是 `compliance_matrix.json` 里已有更全的一份。那一份确实更全，但**在正文里找 国际传播力 的人什么也找不到**。",
+      "why_en": "The reviewer holds two published lists of dimension names and scores each dimension against its own name. E215 found those names occurred zero times in the proposal and put them there, and **nothing has ever enforced it**. This session came within one edit of cutting the block as apparatus, on the reasoning that a richer copy ships in compliance_matrix.json. It does, and it is not the same thing: **someone looking through the proposal for that word finds nothing**."
+    },
+    {
       "id": "M130",
       "gate": "license_bound_qa.py",
       "target": "compliance_matrix.json",
@@ -1567,7 +1579,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 128,
+  "caught": 129,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1636,6 +1648,7 @@
     "scenario_verification_qa.py",
     "schema_conformance_qa.py",
     "scope_anchor_qa.py",
+    "scoring_vocabulary_qa.py",
     "sent_figure_title_qa.py",
     "sheet_claim_qa.py",
     "sheet_layer_key_qa.py",
@@ -1700,6 +1713,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 91 道闸门，其中 88 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 91 gates, 88 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 92 道闸门，其中 89 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 92 gates, 89 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
