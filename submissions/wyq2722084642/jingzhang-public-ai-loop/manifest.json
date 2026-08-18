@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "514696e1ec445d69bd5be87d7cfe9a852ae3d495d514b197bd0bb9a9f6b3d536"
+      "sha256": "df74bc6eba0d8232406c713f25e2a9fbab9d9538e08d182b83409919d1512a02"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "030511f9dc0c4af58fc76a672fabafd61996b77fd73200df3330f9bad9ef01ef"
+      "sha256": "32bb3a1dfe6acd8b2fb9940a8c9c3915bebee88c1bd83c7e9c25d01c6907b7c2"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fd12c8e8e3edd9b93728e9681bf16097f94619cc13ddf5f22e875e7097bdf871"
+      "sha256": "494e998998296a5732d7878d473a3fabd0d2d216d71db983ce3c586bfdbe4a45"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,13 +81,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6182089f801fbdd1105ec9d0f4271141cc79f1a9b7ae78a7ed98b844cb2cf4f5"
+      "sha256": "933713692ba237442763e6b432e7156e74b590ce63db3b246c4a756aea9f97e7"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "b945f79e18e334facb9b5e042f7502ea9bb040e6c372ae8f5859096df37314bf"
+      "sha256": "45c0c91635e8a1ce404700dfed7651d36c1def0ff7419507448911d9b9ee2cc9"
     },
     {
       "path": "report/copyright_statement.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c2a1e4be70b45482a3492ec53f09bc16d2ee7e8f3c37d84a5f366492016a795b"
+      "sha256": "2b559624e6e3e658497d2b61b32c04c86f65ae99055736cf2dcef0bcbd946117"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4f79646a9f67c0903c1dab282d09d15943a17d719810d5c661c16632b7b2aa8b"
+      "sha256": "763dd803fb4a17dc1c2320ecf3f09a6595d3335cf70f6b8ce0e2b5ff9d870f2d"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "75887c39a4b2e6fb9be74540643238d4a2de17ef811d6a2c454e0e84d58d1d8a"
+      "sha256": "22380c47336e9da072ce309dba5b2520d38ff968bb14a65d8605f3eb5a1c5519"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "2a7114e3ebd16032731648aa107acc352462284c88e6a1b5d67764a20e01d6bf"
+      "sha256": "c300f2b7296704c617582897e3c0629470e96b26bd959d95deb6ac1c423018c9"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "fa133fa4e90872f62c5d4ec2b67429bacc767c7357323af718eb52f009f8bb14"
+      "sha256": "a685f508dfe1368b050f457bc09d1e0d2226f288ca8657a071d8a8c9406923c3"
     },
     {
       "path": "report/proposal.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2e5ca175da66018d8ab83619c57cb8014d0a817057f98d566c1d43386ccd3296"
+      "sha256": "240c3571773d1d416293cd15f92d7fbf397656203cd255cec6fe21724ff33626"
     },
     {
       "path": "visual/index.en.html",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "ba1d1180b2f82efaac871914dd1549f68fd50445dd0600712bca8c8ff04c130d"
+      "sha256": "4484df971548176bcd23987725544f6b1270fab4e4b2097411a8a613b633714c"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -283,14 +283,80 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "07be199ca3105112fdb7c85f8555421f480ebde5f1f16181aab427fb63692a26"
+      "sha256": "811ed6e4a0271d3396ceca8c5dc64f6119940b38124ef87dde948f05db4e7eb2"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "1b79724e1e93b4b6b026eba00aa61f6437a1a4dce19b704727e02cd1151cca03"
+      "sha256": "6d9117df51967a9c7c344b6fa1b6dd751c155692b8c1970270c79e442f66e26d"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "ea9e00b6dc4041fdddfb7bbd578b30d5f8e43892f3673be44e73758328ad278b"
+    },
+    {
+      "path": "spatial.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "b7407773c5359f7b283dbcc444c0d7838e57979e893d933351d728bc8927f4ea"
+    },
+    {
+      "path": "visual/assets/dazhongsi-operations.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "7d5f62f6eef1d6cdd3a3e60869262c17b3f6e007625b2d4386e1effa8ddb9db4"
+    },
+    {
+      "path": "assets/figures/dazhongsi-four-scales.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "acd8233f0a2b965ac94dd5857a484a4bb8ef54ce565718863d6dbf9da1a5082a"
+    },
+    {
+      "path": "assets/figures/dazhongsi-four-scales.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/dazhongsi-four-scales.png",
+      "sha256": "7fae558d771cbe54960e6a4d3cde1177b8c8024aa190c26ba477a1805768b4b7"
+    },
+    {
+      "path": "assets/figures/dazhongsi-section-states.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "d708feb14f81ed5f6bb33c077aa6aa6a3e69e240362d3488a2448cdb712ce700"
+    },
+    {
+      "path": "assets/figures/dazhongsi-section-states.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/dazhongsi-section-states.png",
+      "sha256": "732f4164c1ff3dcec214ae2ec4a1bb61c31f321ab72fa8e83b1b31ff3f6cb3da"
+    },
+    {
+      "path": "assets/figures/implementation-roadmap.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "a8f8d004bd92f232d971774a8e0953c7d410e5c21d1ddb6cd33434482d08b8b8"
+    },
+    {
+      "path": "assets/figures/implementation-roadmap.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/implementation-roadmap.png",
+      "sha256": "a5747398e6b3ae90145d0dda70e1ed2967dddcadba78ddabaa0e778e70c829b5"
     },
     {
       "path": "assets/media/cover.webp",
