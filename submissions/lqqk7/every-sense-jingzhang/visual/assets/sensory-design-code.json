@@ -48,8 +48,8 @@
     "layer_id": "BG-L2",
     "name_zh": "节点绿量",
     "name_en": "Node green volume",
-    "carriers_zh": "GREEN-004、GREEN-005、GREEN-006 三段低刺激替代线绿化缓冲（low_stimulation_buffer，挂 ROAD-005），以及十个独立完成点所落的十处公共空间面。",
-    "carriers_en": "GREEN-004, GREEN-005 and GREEN-006, the three planting buffers along the low-stimulation alternative route (low_stimulation_buffer, referencing ROAD-005), together with the ten public-space features on which the ten Independent Completion Points sit.",
+    "carriers_zh": "GREEN-004、GREEN-005、GREEN-006 三段低刺激替代线绿化缓冲（low_stimulation_buffer，挂 ROAD-005），以及十个独立完成点所落或紧邻的八处公共空间面（PUBLIC-004 与 PUBLIC-008 各承载两个完成点，故面数少于点数）。",
+    "carriers_en": "GREEN-004, GREEN-005 and GREEN-006, the three planting buffers along the low-stimulation alternative route (low_stimulation_buffer, referencing ROAD-005), together with the eight public-space features on or beside which the ten Independent Completion Points sit (PUBLIC-004 and PUBLIC-008 each carry two points, so there are fewer features than points).",
     "function_zh": "节点绿量的职能是降低声光暴露、提供安静停留与恢复的可能，不以绿地率或覆盖率衡量；它与主脊绿带各自独立成立。",
     "function_en": "Node green volume exists to lower light and noise exposure and to make quiet stopping and recovery possible. It is not measured by a green ratio or a coverage rate, and it stands independently of the spine green belt.",
     "derived_from": [
@@ -107,8 +107,8 @@
    }
   ],
   "node_drainage_types": {
-   "nature_zh": "以下是类型判据，不是工程参数。每个节点只登记「铺装径流去向属于哪一类」，不登记容积、坡长、管径与接口位置——四者一律为现场核定条件。三类的划分依据是该节点所落公共空间面的既有 space_type 与它是否相邻绿带，两项都是包内既有属性。",
-   "nature_en": "What follows are type criteria, not engineering parameters. Each node registers only which class its paving runoff belongs to; volume, run length, pipe size and connection point are all site-verification conditions. The three classes are divided by the existing space_type of the public-space feature the node sits on and by whether it adjoins a green belt, both of which are attributes already in the package.",
+   "nature_zh": "以下是类型判据，不是工程参数。每个节点只登记「铺装径流去向属于哪一类」，不登记容积、坡长、管径与接口位置——四者一律为现场核定条件。三类的划分依据是该节点所落或紧邻的公共空间面的既有 space_type 与它是否相邻绿带，两项都是包内既有属性。十点中九点落在所属面内，OP-08 位于 PUBLIC-008 面外约 55 m（按 EPSG:4548 复算），按紧邻登记。",
+   "nature_en": "What follows are type criteria, not engineering parameters. Each node registers only which class its paving runoff belongs to; volume, run length, pipe size and connection point are all site-verification conditions. The three classes are divided by the existing space_type of the public-space feature the node sits on or next to and by whether it adjoins a green belt, both of which are attributes already in the package. Nine of the ten nodes fall inside their feature; OP-08 lies about 55 m outside PUBLIC-008 (recomputed in EPSG:4548) and is registered as adjacent.",
    "types": [
     {
      "type_id": "DR-A",
@@ -621,8 +621,8 @@
     "profile_id": "TP-3",
     "name_zh": "地标记录型",
     "name_en": "Landmark record type",
-    "membership_criterion_zh": "该节点所落公共空间面的 space_type 为 landmark，其主要界面是公开记录面而非通行面。",
-    "membership_criterion_en": "The public-space feature has space_type landmark, and its principal surface is a public-record face rather than a passage.",
+    "membership_criterion_zh": "该节点所落或紧邻的公共空间面的 space_type 为 landmark，其主要界面是公开记录面而非通行面（本型四点中 OP-08 位于 PUBLIC-008 面外约 55 m，按紧邻计入）。",
+    "membership_criterion_en": "The public-space feature the node sits on or next to has space_type landmark, and its principal surface is a public-record face rather than a passage (of the four nodes in this type, OP-08 lies about 55 m outside PUBLIC-008 and is counted as adjacent).",
     "nodes": [
      "OP-06",
      "OP-07",
