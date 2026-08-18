@@ -1,0 +1,322 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(site_boundary) @EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 3351884.51,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "sum(polygon_area(green_space))",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.293695,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 2331745.82,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "polygon_area(union(public_space))",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.204309,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 731100.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(polygon_area(building_footprints))",
+      "confidence": "low",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。",
+        "建筑为概念体量示意，非设计方案深度"
+      ]
+    },
+    "building_density": {
+      "status": "known",
+      "value": 0.06406,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "building_footprint_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "官方容积率等控规条件未公开，待正式数据补齐。"
+    },
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official_height_control",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "官方建筑高度控制条件未公开，待正式数据补齐。"
+    },
+    "road_length_m_secondary": {
+      "status": "known",
+      "value": 19443.7,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(line_length(roads where road_class=secondary))",
+      "confidence": "low",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "road_length_m_branch": {
+      "status": "known",
+      "value": 5782.5,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(line_length(roads where road_class=branch))",
+      "confidence": "low",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "greenway_length_m": {
+      "status": "known",
+      "value": 9721.9,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(line_length(roads where road_class=greenway))",
+      "confidence": "low",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_detailed_design_areas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "key_area_zhongzhiyuan_sqm": {
+      "status": "known",
+      "value": 1929201.877,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(PROV-KEY-001)",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "key_area_origin_community_sqm": {
+      "status": "known",
+      "value": 1043236.909,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(PROV-KEY-002)",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "key_area_dazhongsi_sqm": {
+      "status": "known",
+      "value": 720454.219,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(PROV-KEY-003)",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。",
+        "注意 Issue #1029：PROV-KEY-003 质心相对大钟寺站存在约 2.26km 偏移争议，方案仅将其作为临时粗略重点区。"
+      ]
+    },
+    "phasing_phase_1_area_sqm": {
+      "status": "known",
+      "value": 4697245.548,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(PHASE-001)",
+      "confidence": "low",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "phasing_phase_2_area_sqm": {
+      "status": "known",
+      "value": 3449335.858,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(PHASE-002)",
+      "confidence": "low",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "phasing_phase_3_area_sqm": {
+      "status": "known",
+      "value": 3266243.98,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(PHASE-003)",
+      "confidence": "low",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "land_use_area_0802_research_sqm": {
+      "status": "known",
+      "value": 1505919.239,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code=0802))",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "land_use_area_0701_residential_sqm": {
+      "status": "known",
+      "value": 1505919.111,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code=0701))",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "land_use_area_09_commercial_sqm": {
+      "status": "known",
+      "value": 3181229.591,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code in (0901,0902)))",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "land_use_area_14_green_sqm": {
+      "status": "known",
+      "value": 3351884.51,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code in (1401,1402)))",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    },
+    "land_use_area_16_reserve_sqm": {
+      "status": "known",
+      "value": 1867872.934,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code=16))",
+      "confidence": "medium",
+      "assumptions": [
+        "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
+      ]
+    }
+  }
+}

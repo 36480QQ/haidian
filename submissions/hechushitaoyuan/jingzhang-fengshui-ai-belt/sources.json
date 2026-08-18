@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional)."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional)."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "path": "data/source_registry.json",
+      "source_type": "provisional_only",
+      "usage": "中央登记中的临时粗略边界条目；本方案 site/key-area 几何的来源登记 ID（provisional，仅用于生成、可视化与临时自检）。"
+    },
+    {
+      "id": "SRC-JINGZHANG-RAILWAY-HISTORY",
+      "url": "https://zh.wikipedia.org/wiki/京张铁路",
+      "source_type": "background_only",
+      "usage": "京张铁路（1909 年通车、詹天佑主持设计、人字形展线）公开史料背景；仅支撑文化叙事，不支撑空间控制结论。",
+      "limitations": "百科级公开资料；正式使用前需专业团队以权威史料复核。"
+    },
+    {
+      "id": "SRC-QINGHUAYUAN-STATION",
+      "url": "https://zh.wikipedia.org/wiki/清华园站",
+      "source_type": "background_only",
+      "usage": "清华园车站旧址（北京市文物保护单位）公开资料背景；用于文化叙事与 AR 导览场景的非接触式叙事依据。",
+      "limitations": "文保范围与建设控制地带几何未公开取得；方案不划定任何文保控制线。"
+    },
+    {
+      "id": "SRC-FENGSHUI-CONCEPT",
+      "url": "https://zh.wikipedia.org/wiki/风水",
+      "source_type": "background_only",
+      "usage": "风水作为中国传统人居环境智慧的概念来源；本方案仅作科学化转译与文化叙事，不含占卜或迷信内容。",
+      "limitations": "概念性背景资料；所有空间结论均以环境性能与公开规划资料为准。"
+    },
+    {
+      "id": "SRC-GLOBAL-CASE-REFERENCES",
+      "source_type": "background_only",
+      "usage": "High Line、King's Cross、清溪川、Kendall Square、Stanford Research Park、深圳南山、碧山-宏茂桥公园、京都历史街区等公开案例的常识级整理。",
+      "limitations": "基于公开报道与普遍知识整理；关键事实需专业团队复核后方可作为正式论证依据。"
+    }
+  ]
+}
