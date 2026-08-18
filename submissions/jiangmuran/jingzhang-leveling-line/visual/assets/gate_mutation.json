@@ -4,6 +4,30 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M137",
+      "gate": "heading_parity_qa.py",
+      "target": "proposal.en.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把英文版又一个 `###` 标题降级为粗体行。**正文一个字不少**，只是它不再是一节——英文读者扫标题时找不到它。中英小节数之差因此从**已声明的 2** 变成 3。",
+      "what_en": "Demote one more English `###` heading to a bold line. **Not a word of text is lost**; it simply stops being a section, so an English reader scanning headings never finds it. The subsection deficit moves from the **declared 2** to 3.",
+      "why_zh": "本包与英文版之间确实差两个小节标题——`合规矩阵` 与 `任务书自己的十三项评审维度`——**内容都在，缺的只是标题**，而英文版卡在 256 KiB 上限、只剩个位数字节，补标题要拿评审读得到的英文正文去换指路牌，不划算。**所以这个差额被写下来、按名声明**；一旦它悄悄变成 3，就说明有人删了标题而没写下删的是哪一个。",
+      "why_en": "There really are two subsection headings the English edition lacks - the compliance matrix and the taskbook's thirteen review dimensions - **with the content present and only the signpost missing**, and proposal.en.md sits at the 256 KiB cap with single digits free, so adding them would trade English a reviewer reads for signposts to text he can already read. **The deficit is therefore written down and declared by name**; the moment it quietly becomes three, a heading has gone without anyone recording which."
+    },
+    {
+      "id": "M135",
+      "gate": "shipped_bilingual_qa.py",
+      "target": "standard_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "拿掉一条标准的英文要求文本。**`standard_matrix.json` 由评审整份读到**——英文读者看得到 id、专业维度、状态，**看不到这条标准要求什么，也看不到本包据此声称了什么**。E349 之前，九条全都是这个样子。",
+      "what_en": "Remove one standard's English requirement text. **standard_matrix.json is read whole by the reviewer**: an English reader sees the id, the professional dimension and the status, and **cannot read what the standard requires or what this package claims against it**. Until E349 all nine records were like that.",
+      "why_zh": "本包用 `parity_qa` 在正文上逐节把关双语实质等价，**而送评的九份文件里有六份是 JSON，那条规矩从没管到它们**。这一条尤其要紧：被拿掉的正是本包最有分量的那类话——逐条注明引的是第几条、哪些是「整份引用未引条号」、以及**哪道检查不能算作本条的证据**。",
+      "why_en": "This package holds substantive bilingual equivalence section by section in the proposal through parity_qa, and six of the nine files the reviewer receives whole are JSON, where that rule never reached. This record matters especially: what goes missing is the package's most load-bearing kind of sentence - which article is cited, which citations are whole-document with no article number, and **which check does not count as evidence for this clause**."
+    },
+    {
       "id": "M134",
       "gate": "source_provenance_qa.py",
       "target": "assumptions.json",
@@ -1264,6 +1288,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M136",
+      "gate": "attribution_kind_qa.py",
+      "target": "build_matrix_evidence.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把归属说明改回那句一刀切的话：「这是一份公开可得的文件，本包没有取得它」。**它对 `key_area_count` 是假的**——那是一项 class 1 指标，**有值（3）**，既不是文件，本包也没有「没取到」它。",
+      "what_en": "Restore the one-size sentence: this is a publicly available document that this package did not obtain. **It is false for key_area_count** - a class-1 metric with a value of 3, which is neither a document nor something this package failed to obtain.",
+      "why_zh": "这句话是为 MOHURD-ARCH-DESIGN-DEPTH-2016 写的——一份本包确实没打开的文件——然后被原样用在 `limited_by` 点到的任何东西上。**模板被复用到它装不下的槽位里，就会生成一句读起来通顺的假话**，而 `design_depth_matrix.json` 由评审整份读到。真正的受限原因也不是「没有值」，是**那个值算自临时替代几何**。",
+      "why_en": "The sentence was written for MOHURD-ARCH-DESIGN-DEPTH-2016, a document this package genuinely never opened, and then reused verbatim for whatever limited_by named. **A template reused in a slot it does not fit produces a fluent falsehood**, and design_depth_matrix.json is read whole by the reviewer. The real limitation is not that the value is missing but that it is computed from provisional stand-in geometry."
+    },
+    {
       "id": "M128",
       "gate": "sheet_literal_qa.py",
       "target": "fig_routes.py",
@@ -1615,12 +1652,13 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 132,
+  "caught": 135,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
     "announcement_terms_qa.py",
     "assumption_refs_qa.py",
+    "attribution_kind_qa.py",
     "benchmark_chain_qa.py",
     "block_type_qa.py",
     "boundary_state_qa.py",
@@ -1649,6 +1687,7 @@
     "gate_count_qa.py",
     "geometry_citation_qa.py",
     "harness_reference_qa.py",
+    "heading_parity_qa.py",
     "i18n_order_qa.py",
     "intake_limits_qa.py",
     "interned_render_qa.py",
@@ -1692,6 +1731,7 @@
     "sheet_legend_qa.py",
     "sheet_literal_qa.py",
     "sheet_scale_qa.py",
+    "shipped_bilingual_qa.py",
     "shipped_validation_qa.py",
     "source_citation_qa.py",
     "source_provenance_qa.py",
@@ -1750,6 +1790,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 93 道闸门，其中 90 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 93 gates, 90 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 96 道闸门，其中 93 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 96 gates, 93 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
