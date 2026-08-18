@@ -1275,16 +1275,20 @@
       "title_en": "Overall concept and functional coordination scheme for the belt",
       "mandatory": true,
       "report_sections": [
-        "总体设计范围城市更新与控规深度城市设计",
         "让好 AI 更快进城，让每次交接都有回路",
         "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究"
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "导视、标识与符号系统",
+        "本方案许可的边界：给它一条公认许可的上界"
       ],
       "report_sections_en": [
-        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
         "Move Good AI into the City Faster, Give Every Handover a Return Path",
         "Three-Level Scope Framework",
-        "Coordinated Research Area: Industry and Future City Research"
+        "Coordinated Research Area: Industry and Future City Research",
+        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+        "Wayfinding, signage, and the symbol set",
+        "The limits of this licence: giving it a recognised upper bound"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1355,15 +1359,17 @@
       "title_en": "Full-stack AI autonomous innovation system and world-class AI innovation ecosystem design",
       "mandatory": true,
       "report_sections": [
-        "招引与转化路径",
+        "六个全球案例，只借机制，不复制形态",
         "AI 创新生态、人才画像与 AI+ 场景",
         "众智园：研制交接场 / BUILD→VERIFY",
+        "北京 AI 原点社区：开源交接场 / VERIFY→SHARE",
         "统筹研究范围产业与未来城市研究"
       ],
       "report_sections_en": [
-        "Attraction and conversion pathway",
+        "Six international cases: transfer mechanisms, not forms",
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
         "Zhongzhiyuan: Build Handover Yard / BUILD→VERIFY",
+        "Beijing AI Origin Community: Share Handover Yard / VERIFY→SHARE",
         "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
@@ -1445,17 +1451,17 @@
       "title_en": "AI+ scenario empowerment paradigm and intelligent, vital AI city design",
       "mandatory": true,
       "report_sections": [
-        "首个现场原型：公开交接桌",
         "AI 创新生态、人才画像与 AI+ 场景",
-        "总体设计范围城市更新与控规深度城市设计",
-        "一条铁路留下的三件遗产：线形、道口与交接班",
+        "首个现场原型：公开交接桌",
+        "已完成：十二场景离线接管桌面演练",
+        "开发者社区与场景开放运营",
         "风险、版权与合规说明"
       ],
       "report_sections_en": [
-        "First field prototype: Public Handover Table",
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-        "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
-        "Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover",
+        "First field prototype: Public Handover Table",
+        "Completed: twelve-scenario offline takeover tabletop",
+        "Developer community and scenario-opening operation",
         "Risk, Copyright, and Compliance"
       ],
       "geojson_layers": [
@@ -1535,16 +1541,18 @@
       "title_en": "AI public space, AI-native new business formats and pilgrimage landmark design",
       "mandatory": true,
       "report_sections": [
-        "首个现场原型：公开交接桌",
-        "风险、版权与合规说明",
+        "蓝绿空间、公共空间与城市风貌",
+        "荣誉展示体系：可纠错的记录，不是排行榜",
+        "公共空间组件库：先能撤，再谈建",
         "大钟寺：城市交接场 / SHARE→SERVE",
-        "蓝绿空间、公共空间与城市风貌"
+        "一条铁路留下的三件遗产：线形、道口与交接班"
       ],
       "report_sections_en": [
-        "First field prototype: Public Handover Table",
-        "Risk, Copyright, and Compliance",
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Honour display system: a correctable record, not a leaderboard",
+        "Public-space component library: removable first, built second",
         "Dazhongsi: Serve Handover Yard / SHARE→SERVE",
-        "Blue-Green Network, Public Space, and Urban Character"
+        "Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover"
       ],
       "geojson_layers": [
         "geometry/green_space.geojson",
@@ -1608,7 +1616,7 @@
         "G09_GEOMETRY_NON_REGRESSION",
         "G10_EVIDENCE_MARKER_DENSITY"
       ],
-      "evidence_summary_zh": "交接钟、公开交接桌、百年值班簿与零号接管亭均在public_space.geojson定位并携带启用闸、荣誉角色和回滚状态。百年值班簿以提名—证据—社区/专业双复核—异议—纠错—撤回—申诉闭环记录贡献，允许实名、化名或匿名且不按流量排名。"
+      "evidence_summary_zh": "京张遗址公园既有南北贯通与东西连通被升级为公共交接机制（不另起绿廊）；四处朝圣地标（交接钟 LANDMARK-01、公开交接桌 -02、百年值班簿 -03、零号接管亭 -04）在 public_space.geojson 定位并各带启用闸与回滚状态；荣誉记录按提名—证据—双复核—公示异议—纠错—撤回—申诉七步闭环运行，允许匿名且不按流量排名；公共空间组件库以 8 类可撤构件 × 参考做法／维护责任／撤除恢复标准成表，并声明为参考规格而非施工图。"
     },
     {
       "requirement_id": "agent.5",
@@ -1616,18 +1624,18 @@
       "title_en": "Narrative design fusing centennial Jing-Zhang culture, Zhongguancun culture and new AI culture",
       "mandatory": true,
       "report_sections": [
-        "不看屏幕也能读完这份方案：音频、视频、触觉与三维",
-        "参考资料",
+        "一条铁路留下的三件遗产：线形、道口与交接班",
+        "导视、标识与符号系统",
         "国际传播：把“全球关注”建立在可复核的记录上",
-        "荣誉展示体系：可纠错的记录，不是排行榜",
-        "蓝绿空间、公共空间与城市风貌"
+        "可直接取用的对外短文",
+        "不看屏幕也能读完这份方案：音频、视频、触觉与三维"
       ],
       "report_sections_en": [
-        "Reading this proposal without a screen: audio, video, tactile, and 3D",
-        "References",
+        "Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover",
+        "Wayfinding, signage, and the symbol set",
         "International communication: build \"global attention\" on a checkable record",
-        "Honour display system: a correctable record, not a leaderboard",
-        "Blue-Green Network, Public Space, and Urban Character"
+        "Ready-to-use copy for international communication",
+        "Reading this proposal without a screen: audio, video, tactile, and 3D"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson"
@@ -1678,7 +1686,7 @@
         "G09_GEOMETRY_NON_REGRESSION",
         "G10_EVIDENCE_MARKER_DENSITY"
       ],
-      "evidence_summary_zh": "铁路维护伦理、中关村试验分享文化与AI责任治理由‘版本—责任—复核—退出’连接；正文交付可直接使用的中英文国际传播短文，并明确受众、双语网页/摘要/路线卡/问题票渠道与不得暗示政府背书的边界。"
+      "evidence_summary_zh": "文化叙事以 5 条可核验史实成表（1905—1909 京张通车与青龙桥「人」字形、1910／1960 清华园车站、1952—1954 八大学院、2019 京张高铁、2023 遗址公园一期），每条注明可继承的做法与不成立的推论；符号系统给出交接标／值班牌／停止括号／道口条四类实体符号并与整体 Logo 分层；正文直接给出可取用的中英文对外短文与三条必须随行的边界；音频、视频、触觉地图、三维与离线交互页构成不依赖屏幕的表达后备。"
     },
     {
       "requirement_id": "agent.6",
@@ -1686,20 +1694,20 @@
       "title_en": "Global AI innovation event system and long-term operations design for the belt",
       "mandatory": true,
       "report_sections": [
-        "一条铁路留下的三件遗产：线形、道口与交接班",
-        "更新项目清单、实施政策与分期计划",
-        "风险、版权与合规说明",
+        "长期运营、年度活动与国际传播",
+        "年度活动体系与活动品牌",
+        "开发者社区与场景开放运营",
+        "招引与转化路径",
         "国际传播：把“全球关注”建立在可复核的记录上",
-        "授权后第一步：公开交接桌 P0",
-        "长期运营、年度活动与国际传播"
+        "条件分期，而非政府时间表"
       ],
       "report_sections_en": [
-        "Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover",
-        "Renewal Projects, Implementation Policy, and Phasing",
-        "Risk, Copyright, and Compliance",
+        "Long-Term Operation, Annual Events, and International Communication",
+        "Annual event system and event brand",
+        "Developer community and scenario-opening operation",
+        "Attraction and conversion pathway",
         "International communication: build \"global attention\" on a checkable record",
-        "First authorised step: Public Handover Table P0",
-        "Long-Term Operation, Annual Events, and International Communication"
+        "Conditional phasing, not a government timetable"
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
@@ -1768,7 +1776,7 @@
         "G09_GEOMETRY_NON_REGRESSION",
         "G10_EVIDENCE_MARKER_DENSITY"
       ],
-      "evidence_summary_zh": "P01—P06试点包把场地权利、RACI、待校准KPI/SLO口径、人工接管、停止/回滚和六张资源开工单置于同一契约；未授权前数值目标保持null，只保留缺一不开放的门槛。双联交接账要求交出与接入两方分开判断，不允许未决项在换班中消失；四季班表、开发者问题票与全球交接周形成可开始、可拒收、可停止的长期运营闭环。"
+      "evidence_summary_zh": "年度活动体系按交接链四季各处理一环并各留可下载公共产物，无产物次年停办；活动品牌复用交接线标识与四类符号，不另起视觉；开发者社区按可复现而非会员制排序，场景开放分旁听／受控测试／公开试运行三级授权且不得跳级；招引转化写成四步准入与退出条件；国际传播输出四样可取用的东西（双语协议模板、十二场景最小数据与人工接管清单、年度交接账、可复现制图方法），并禁止把概念建议表述为政府决定。"
     }
   ],
   "package_level_gates": [
