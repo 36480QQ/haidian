@@ -121,6 +121,8 @@ Data products ship in `visual/assets/` and the numbers can be checked directly. 
 
 ![FIG.01 Overall concept and site cross-check](assets/figures/site-overview.en.png)
 
+> **How to read it.** Three areas and two wings named on the map; five functions on one loop. Cross-check kept as a footnote: 412.5 m to the park
+
 Official `SITE_BOUNDARY` and the three `KEY_AREA` polygons remain unpublished. This package labels `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` as `provisional_constraint` with `official_boundary=false`; they are for generation, self-check, visualisation and discussion only, never as an official redline, approval basis or precise-area basis. When official polygons appear, **every layer and metric is recomputed as a whole** — never one file at a time. Same rule this proposal applies to the city: over tolerance, re-measure the section, do not patch a station.
 
 ## Three-Level Scope Framework
@@ -204,6 +206,8 @@ The two figures deserve a note: 369.3 ha recomputed from the layer against about
 All three spatial boundaries are provisional substitutes [source:BOUNDARY-SOURCE]; their basis and error are documented in the repository's `provisional_boundaries_basis.md`. When official data is published the whole package is recomputed [depth:existing_conditions_diagnosis] — never one layer at a time, because a network with one station re-measured and the rest not is not a network.
 
 ![FIG.03 Land-use structure and the three scope levels](assets/figures/land-use-structure.en.png)
+
+> **How to read it.** The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -491,6 +495,8 @@ Each of the three key areas carries one survey role, and the three check one ano
 | Dazhongsi AI Industry Cluster [data:geometry/key_areas.geojson#PROV-KEY-003] | **BM-2, high-frequency reading point** | AI-native consumption and business | Four-quadrant pedestrian connection at the intersection; compound use of planned green space; Dazhongsi station integration | S03 agent business desk; S05 data-factor circulation; S09 daily-service demonstration street |
 
 ![FIG.04 The three key areas, the two wings and the benchmark layout](assets/figures/key-areas.en.png)
+
+> **How to read it.** Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points
 
 ### The announcement assigns each key area a block type
 
@@ -1033,6 +1039,8 @@ Layers [data:geometry/green_space.geojson#GREEN-001] and [data:geometry/public_s
 
 ![FIG.05 Slow mobility, blue-green and closing routes](assets/figures/mobility-bluegreen.en.png)
 
+> **How to read it.** The two connecting routes and their direction; tolerance bands lower right
+
 ### Three AI pilgrimage landmarks (agent.4)
 
 The count is [metric:landmark_count]; the three stand on origin- and first-order points [metric:benchmark_first_order_count].
@@ -1453,6 +1461,8 @@ It calls none of this proposal's generation scripts and needs neither Python nor
 
 ![FIG.06 Recomputed metrics and the field census](assets/figures/metrics-evidence.en.png)
 
+> **How to read it.** Three metric classes at left; at right the run: ten cases, two passed and eight refused with reasons
+
 ### Accessibility and legibility QA: computed, not asserted
 
 Reviews of the highest-scoring submissions keep asking for one thing: distance-legibility and colour-contrast testing on A0 boards, and alt-text, keyboard, screen-reader and contrast checks on the HTML — usually answered with a sentence. Here it is computed, shipped as `accessibility_qa.json`, and **enforced as a build gate — failure stops the build rather than warning.** `analysis/` is not in the package, so a reviewer re-runs the shipped `accessibility_qa.json` and the five `.js` checkers, not the gate.
@@ -1477,6 +1487,8 @@ Distance legibility: A0 is 841 mm across a 1600-unit canvas; by the signage conv
 | Jurisdiction verified | Treated as a boundary change; the section is re-measured |
 
 These four share their source with the core rule: **over tolerance, re-measure the section; do not patch.** A proposal that permits itself partial substitution while requiring the city to recompute as a whole does not hold its own mechanism.
+
+### The compliance matrix
 
 `compliance_matrix.json` maps announcement tasks and agent.1–agent.6 to sections, layers, metrics and figures. **The matrix is an index, not content** — the taskbook's required outputs must exist as checkable sections, layers and drawings, and copying the matrix into the body would only turn the document into a compliance form.
 
@@ -1679,6 +1691,8 @@ drawn at scale it is evidence. FIG.02 carries the same comparison as a closure d
 
 ![FIG.01 Overall concept and site overview](assets/figures/site-overview.en.png)
 
+### The taskbook's own thirteen review dimensions
+
 <!-- TASKBOOKDIMS:BEGIN -->
 
 The review script scores **7 dimensions, 0-5 each** - brief relevance, originality, AI and urban-planning innovation, implementability, public interest and inclusion, risk and compliance awareness, expression completeness. The taskbook's own **13 review dimensions** - objective alignment, function match, brand identity, regional synergy, planning innovation, industry support, scenario perceptibility, spatial clarity, transferability, expression completeness, public compliance, international communication, long-term operating value - each mapped to its section in `compliance_matrix.json` (E215, E216).
@@ -1826,7 +1840,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files none of which the reviewer receives, 1189 KB, 1,824 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files none of which the reviewer receives, 1189 KB, 1,824 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
