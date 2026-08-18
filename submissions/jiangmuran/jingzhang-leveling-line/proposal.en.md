@@ -1424,7 +1424,7 @@ Because boundaries are provisional, all of the above are **recomputed as a whole
 
 Both numbers are true; what was missing was saying so. **Both now ship, and both are recomputed independently by `verify.js`**: 0.1966 from the green layer, 0.1220 from the land-use layer. Publishing only the first meant a reviewer recomputing from land use would land on a different figure with no way to tell which one counted — **and a recomputation that can reach two answers is not a recomputation.**
 
-**Class 2, requiring official regulatory support, held at `unknown`:** [metric:floor_area_ratio] and building height, density, setbacks, road redlines. Filling estimates into a gap is fabricated certainty.
+**Class 2, requiring official regulatory support, held at `unknown`:** the five metrics whose `metric_class` is 2, [metric:floor_area_ratio] among them. Filling estimates into a gap is fabricated certainty.
 
 **Class 3, requiring continuous re-survey calibration, currently without baselines** (all four now in `metrics.json`, each with a collector, a cadence, a missed-reading rule and a dispute route; baseline and target null, E218)**:** per-scenario closure error f, tolerance compliance rate, non-AI path coverage, and the count of re-surveys initiated by P4/P5/P7. Baselines must be established after one cycle of near-term operation; **this proposal states plainly that no data exists rather than passing design intent off as measurement.**
 
