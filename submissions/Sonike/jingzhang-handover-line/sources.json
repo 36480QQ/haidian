@@ -1492,6 +1492,263 @@
       "usable_for_formal": "background_only",
       "usable_for_formal_basis": "participant_self_assessed",
       "independent_verification": "打开 url，检索“清华东路至知春路”“总长度2.5公里”“总面积16.8公顷”三处原句；本包未把 2.5 或 16.8 写入 metrics.json，可用 `grep -c 16.8 metrics.json` → 0 确认。"
+    },
+    {
+      "id": "SRC-QINGHE-STATION",
+      "url": "https://beijing.qianlong.com/2026/0509/8665408.shtml",
+      "source_type": "official_public",
+      "evidence_class": "historical_public_record",
+      "authority_level": "B0",
+      "title": "120岁北京清河车站老站房已向公众开放",
+      "publisher": "千龙网·中国首都网",
+      "published_date": "2026-05-09",
+      "retrieved_at": "2026-08-18",
+      "accessed_date": "2026-08-18",
+      "collection_method": "2026-08-18 打开公开 HTML，逐句转录建成年份、詹天佑参与、两次平移的方向与距离、重量与建筑面积，数值与原文表述逐字核对；两次平移距离之和与原文给出的累计值交叉核对一致。",
+      "source_locator": "正文关于 1905 年动工／1906 年建成、2017 与 2019 两次平移、老站房重量与面积的段落",
+      "spatial_coverage": "清河车站及新清河站，位于本方案总体设计范围以北",
+      "temporal_coverage": "1905/2019",
+      "public_access_status": "public_html",
+      "license_or_reuse_terms": "页面公开可访问，未见明确开放许可；本包仅摘录事实数值并保留发布者、标题与原始链接。",
+      "usage": "说明北段「先测准再交出」这一规矩的在地先例；不作为任何工程、文保或线位结论。",
+      "transformations": [
+        {
+          "field": "qinghe_shift_total_m",
+          "source_value": "平移总长达359.36米",
+          "method": "保留原文米制，并与 84.55＋274.81 交叉核对",
+          "stored_value": 359.36,
+          "stored_unit": "metre"
+        }
+      ],
+      "observations": [
+        {
+          "id": "qinghe_station_built",
+          "value": "1905/1906",
+          "unit": "year_range",
+          "scope": "清河车站",
+          "source_text": "1905年动工、1906年建成，因清河镇而得名。詹天佑曾在此勘测、施工、验收",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "qinghe_shift_1",
+          "value": 84.55,
+          "unit": "metre",
+          "scope": "清河老站房",
+          "source_text": "2017年9月，老站房首先向东平移84.55米",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "qinghe_shift_2",
+          "value": 274.81,
+          "unit": "metre",
+          "scope": "清河老站房",
+          "source_text": "2019年2月，老站房启动第二次平移，向西南方向移动274.81米",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "qinghe_station_mass_t",
+          "value": 700,
+          "unit": "tonne",
+          "scope": "清河老站房",
+          "source_text": "700吨重的清河老站房",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "qinghe_station_area_sqm",
+          "value": 336,
+          "unit": "square_metre",
+          "scope": "清河老站房",
+          "source_text": "老站房建筑面积约336平方米，为砖混木结构",
+          "not_spatially_allocable": true
+        }
+      ],
+      "usable_for": [
+        "说明本带北段「宁可慢一轮也不交出未测完成果」的在地先例",
+        "支撑文化叙事中「记录与保存」这一线索"
+      ],
+      "not_usable_for": [
+        "推断清河站或新站的工程、结构、线位与权属结论",
+        "作为本方案任何几何、指标或分期依据",
+        "作为文保控制线或保护措施依据"
+      ],
+      "limitations": "媒体报道，非工程或文保档案；平移数值为报道表述，本包不据此绘制或校正任何几何。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "打开 url，检索「1905年动工」「84.55米」「274.81米」「359.36米」四处原句逐条对读；84.55＋274.81＝359.36，与原文累计值自洽。本包未把任何一个数写入 metrics.json，可用 `grep -c 359.36 metrics.json` → 0 确认。"
+    },
+    {
+      "id": "SRC-AI-ORIGIN-BLOCK-2026",
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202601/t20260121_4452025.html",
+      "source_type": "official_public",
+      "evidence_class": "historical_public_record",
+      "authority_level": "A0",
+      "title": "北京发布首批4个人工智能创新街区",
+      "publisher": "北京市科学技术委员会、中关村科技园区管理委员会",
+      "published_date": "2026-01-21",
+      "retrieved_at": "2026-08-18",
+      "accessed_date": "2026-08-18",
+      "collection_method": "2026-08-18 打开市科委中关村管委会官网公开 HTML 转录首批名单与海淀 AI 原点社区的文字四至；企业数与占比另据海淀区政府同题发布（2026-01-05）对读，两处表述一致。",
+      "source_locator": "正文关于首批四个创新街区名单与海淀 AI 原点社区范围的段落",
+      "spatial_coverage": "海淀 AI 原点社区，东至王庄路及展春园西路、西至中关村大街、北临清华大学、南抵北四环西路，约 3 平方公里",
+      "temporal_coverage": "2026-01",
+      "public_access_status": "official_public_html",
+      "license_or_reuse_terms": "政府部门公开页面，未见明确开放数据许可；本包仅摘录事实并保留发布者、标题与原始链接。",
+      "usage": "说明「AI 原点社区」是已发布的官方称谓与范围，本方案沿用而非自造；不作为边界、指标或招商依据。",
+      "observations": [
+        {
+          "id": "ai_origin_first_batch_2026",
+          "value": 4,
+          "unit": "count",
+          "scope": "北京市",
+          "source_text": "首批4个人工智能创新街区正式发布，涵盖海淀、朝阳、石景山、经开区",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "ai_origin_extent_text",
+          "value": "东至王庄路及展春园西路，西至中关村大街，北临清华大学，南抵北四环西路",
+          "unit": "text",
+          "scope": "AI原点社区",
+          "source_text": "东至王庄路及展春园西路，西至中关村大街，北临清华大学，南抵北四环西路，辐射周边3平方公里",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "ai_origin_firms",
+          "value": 400,
+          "unit": "count",
+          "scope": "AI原点社区",
+          "source_text": "共入驻企业400余家，其中人工智能企业占比接近74%",
+          "not_spatially_allocable": true
+        }
+      ],
+      "usable_for": [
+        "说明本方案沿用的是官方已发布的社区称谓与文字四至",
+        "论证开源交接场选址与既有产业密度的关系"
+      ],
+      "not_usable_for": [
+        "把文字四至当作法定边界或用于面积复算",
+        "推断具体企业名单、投资或落位",
+        "作为招商、政策或资金安排的依据"
+      ],
+      "limitations": "文字四至不是坐标边界；企业数与占比为发布时点数据，随时间变化，本包不作为绩效基线。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "打开 url 检索「首批4个人工智能创新街区」与四至原句；企业数可在海淀区政府 2026-01-05 同题发布对读。本包未把 400 或 74 写入 metrics.json，可用 `grep -c '\"value\": 400' metrics.json` → 0 确认。"
+    },
+    {
+      "id": "SRC-DAZHONGSI-BELL",
+      "url": "https://www.visitbeijing.com.cn/article/47QqajM0NxP",
+      "source_type": "official_public",
+      "evidence_class": "historical_public_record",
+      "authority_level": "B0",
+      "title": "大钟寺古钟博物馆",
+      "publisher": "北京市文化和旅游局 北京旅游网",
+      "published_date": null,
+      "retrieved_at": "2026-08-18",
+      "accessed_date": "2026-08-18",
+      "collection_method": "2026-08-18 打开公开 HTML，转录寺庙原名、始建年份、得名由来、永乐大钟铭文字数、博物馆设立年份与文保级别；字数与文保级别另与公开百科条目对读一致。",
+      "source_locator": "正文关于觉生寺始建、永乐大钟铭文与 1985 年设馆、1996 年列为全国重点文物保护单位的段落",
+      "spatial_coverage": "海淀区北三环西路甲31号大钟寺（觉生寺），位于本方案南段重点区内",
+      "temporal_coverage": "1733/1996",
+      "public_access_status": "public_html",
+      "license_or_reuse_terms": "页面公开可访问，未见明确开放许可；本包仅摘录事实并保留发布者、标题与原始链接。",
+      "usage": "说明「交接钟」这一地标的文化出处；不主张对文物本体作任何改动，不作为文保措施依据。",
+      "observations": [
+        {
+          "id": "juesheng_temple_founded",
+          "value": 1733,
+          "unit": "year",
+          "scope": "觉生寺",
+          "source_text": "始建于清雍正十一年（1733年），本为皇家汉传佛教寺庙",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "yongle_bell_inscription_chars",
+          "value": 230000,
+          "unit": "character",
+          "scope": "永乐大钟",
+          "source_text": "钟身遍铸佛教经咒铭文，有汉梵两种文字，总计达23万多字",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "bell_museum_1985",
+          "value": 1985,
+          "unit": "year",
+          "scope": "大钟寺古钟博物馆",
+          "source_text": "1985年辟为大钟寺古钟博物馆",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "juesheng_national_protection_1996",
+          "value": 1996,
+          "unit": "year",
+          "scope": "觉生寺",
+          "source_text": "1996年，觉生寺被中华人民共和国国务院列为全国重点文物保护单位",
+          "not_spatially_allocable": true
+        }
+      ],
+      "usable_for": [
+        "说明南段地标命名的文化出处",
+        "支撑「记录只能被追加与更正，不能被抹去」这一叙事的在地根据"
+      ],
+      "not_usable_for": [
+        "对文物本体提出任何改动、加建或利用方案",
+        "作为文保控制线、缓冲区或开放安排的依据",
+        "推断周边地块的权属或指标"
+      ],
+      "limitations": "旅游与科普性介绍，非文保档案；本方案的地标为概念建议，落位须服从文保与公共空间程序。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "打开 url 检索「觉生寺」「23万多字」「1985年」「全国重点文物保护单位」四处原句逐条对读。"
+    },
+    {
+      "id": "SRC-HD-CORRIDOR-CTRL-PLAN",
+      "url": "https://ghzrzyw.beijing.gov.cn/chengxiangguihua/ghlgg/hd_ghlgg/202502/t20250207_4005553.html",
+      "source_type": "official_public",
+      "evidence_class": "historical_public_record",
+      "authority_level": "A0",
+      "title": "关于《京张铁路遗址公园沿线（人工智能创新街区重点地区）街区控制性详细规划》（草案）公示采信情况的通告",
+      "publisher": "北京市规划和自然资源委员会",
+      "published_date": "2025-02-07",
+      "retrieved_at": "2026-08-18",
+      "accessed_date": "2026-08-18",
+      "collection_method": "2026-08-18 打开市规自委海淀规划类公告页，转录规划名称、层面、年限与公示起止日期；不转录草案内的任何指标或控制内容。",
+      "source_locator": "通告标题与公示起止日期",
+      "spatial_coverage": "京张铁路遗址公园沿线（人工智能创新街区重点地区），与本方案范围**不等同**",
+      "temporal_coverage": "2024-12-19/2025-01-19（公示期）；规划年限 2022—2035",
+      "public_access_status": "official_public_html",
+      "license_or_reuse_terms": "政府部门公开页面，未见明确开放数据许可；本包仅引用该文件的存在与名称，不复制其内容。",
+      "usage": "仅作背景依据，说明沿线正在编制街区更新控规且官方将该走廊表述为「人工智能创新街区重点地区」；不从中反推任何法定控制。",
+      "observations": [
+        {
+          "id": "corridor_ctrl_plan_title",
+          "value": "京张铁路遗址公园沿线（人工智能创新街区重点地区）街区控制性详细规划（街区层面）（2022年—2035年）",
+          "unit": "text",
+          "scope": "京张铁路遗址公园沿线",
+          "source_text": "《京张铁路遗址公园沿线（人工智能创新街区重点地区）街区控制性详细规划》（草案）公示采信情况的通告",
+          "not_spatially_allocable": true
+        }
+      ],
+      "usable_for": [
+        "说明官方对该走廊的定位表述与本方案方向一致",
+        "说明沿线更新已进入法定编制程序，本方案只作概念建议"
+      ],
+      "not_usable_for": [
+        "套用其范围、指标或控制内容",
+        "据此推断任何法定红线、强度或用地结论",
+        "表述为本方案已获采纳或衔接"
+      ],
+      "limitations": "本包只引用该文件的名称与存在，未取得也未使用其草案内容；其范围与本次征集范围不等同，不可互相套用。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "打开 url 核对通告标题与公示起止日期；本包正文对它的引用仅一处且只述其存在，可用 `grep -c SRC-HD-CORRIDOR-CTRL-PLAN proposal.md` 核对引用次数。"
     }
   ],
   "registry_alignment_note": "本表的 usable_for_formal 采用中央登记表 data/source_registry.json 的同一套取值词汇，以便机器逐项对照。凡 usable_for_formal_basis = central_registry_verbatim 的条目，其 registry_source_id / registry_authority_level / registry_review_status / usable_for_formal 四项均由脚本从中央表逐字复制，未经改写；本包对该来源的用法另受中央表 allowed_uses / prohibited_uses 约束，逐条已在 usable_for / not_usable_for 中收窄。凡 basis = participant_self_assessed 的条目**不在中央表内**，registry_review_status 一律标 not_in_central_registry —— 维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录；但自评状态不等于中央批准，本包不据此主张任何中央审定结论。not_a_factual_source 用于字体与构建工具链条目：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。",
