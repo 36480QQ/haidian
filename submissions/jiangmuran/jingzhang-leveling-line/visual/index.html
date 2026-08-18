@@ -136,8 +136,8 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 <figcaption>按展线惯例旋转为水平，南（西直门）在左、北（清河）在右。线稿直接从 <code>geometry/</code> 绘制，EPSG:4548 复算。</figcaption></figure>
 
 <h2>评审路线<span class="en">A REVIEWER'S ROUTE</span></h2>
-<p class="note">跑完全部 5 个校验器需 0.73 秒；要读的 9 份文件共 1162 KB、1808 个可数单位。实跑计时，随包提交于 <code>visual/assets/review_route.json</code>。</p>
-<ol class="route"><li><code>node visual/assets/verify.js</code> —— 重算 metrics.json 中全部 metric_class 1 的指标<span class="en">0.4 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> —— 重算 412.5 m 与全部场地交叉核验读数<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> —— 解析十二张场景卡的水准点、空间锚点与退出条件<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> —— 把闭合机制当作数据契约执行<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> —— S08 桌面推演，含拒绝分支<span class="en">0.26 s · exit 0</span></li></ol>
+<p class="note">跑完全部 5 个校验器需 0.73 秒；要读的 9 份文件共 1164 KB、1809 个可数单位。实跑计时，随包提交于 <code>visual/assets/review_route.json</code>。</p>
+<ol class="route"><li><code>node visual/assets/verify.js</code> —— 重算 metrics.json 中全部 metric_class 1 的指标<span class="en">0.39 s · exit 0</span></li><li><code>node visual/assets/check_osm.js</code> —— 重算 412.5 m 与全部场地交叉核验读数<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_cards.js</code> —— 解析十二张场景卡的水准点、空间锚点与退出条件<span class="en">0.03 s · exit 0</span></li><li><code>node visual/assets/check_closure.js</code> —— 把闭合机制当作数据契约执行<span class="en">0.02 s · exit 0</span></li><li><code>node visual/assets/run_s08_tabletop.js</code> —— S08 桌面推演，含拒绝分支<span class="en">0.26 s · exit 0</span></li></ol>
 
 <h2>图纸<span class="en">SHEETS</span></h2>
 <p class="note">34 张图纸均由参数与提交的结构化数据直接绘制。点击可放大查看。</p>
@@ -196,12 +196,12 @@ footer { margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 16px;
 
 <h2>核心指标<span class="en">CORE METRICS</span></h2>
 <div class="tiles">
-<div class="tile" data-metric="site_area_sqm" data-value="11412825.385554"><div class="tile-v">11,412,825<span class="u"> m²</span></div><div class="tile-l">总体设计范围面积</div><div class="tile-k"><code>site_area_sqm</code></div></div>
-<div class="tile" data-metric="leveling_spine_length_m" data-value="9443.264658"><div class="tile-v">9,443<span class="u"> m</span></div><div class="tile-l">主脊长度</div><div class="tile-k"><code>leveling_spine_length_m</code></div></div>
+<div class="tile" data-metric="site_area_sqm" data-value="11412825"><div class="tile-v">11,412,825<span class="u"> m²</span></div><div class="tile-l">总体设计范围面积</div><div class="tile-k"><code>site_area_sqm</code></div></div>
+<div class="tile" data-metric="leveling_spine_length_m" data-value="9443.3"><div class="tile-v">9,443<span class="u"> m</span></div><div class="tile-l">主脊长度</div><div class="tile-k"><code>leveling_spine_length_m</code></div></div>
 <div class="tile" data-metric="benchmark_count" data-value="8"><div class="tile-v">8<span class="u"> 处</span></div><div class="tile-l">水准点数量</div><div class="tile-k"><code>benchmark_count</code></div></div>
 <div class="tile" data-metric="green_ratio" data-value="0.196628"><div class="tile-v">0.1966<span class="u"></span></div><div class="tile-l">绿廊占比</div><div class="tile-k"><code>green_ratio</code></div></div>
 <div class="tile" data-metric="public_space_ratio" data-value="0.064227"><div class="tile-v">0.0642<span class="u"></span></div><div class="tile-l">公共测点占比</div><div class="tile-k"><code>public_space_ratio</code></div></div>
-<div class="tile" data-metric="building_footprint_area_sqm" data-value="82276.0"><div class="tile-v">82,276<span class="u"> m²</span></div><div class="tile-l">示意基底面积</div><div class="tile-k"><code>building_footprint_area_sqm</code></div></div>
+<div class="tile" data-metric="building_footprint_area_sqm" data-value="82276"><div class="tile-v">82,276<span class="u"> m²</span></div><div class="tile-l">示意基底面积</div><div class="tile-k"><code>building_footprint_area_sqm</code></div></div>
 <div class="tile" data-metric="key_area_count" data-value="3"><div class="tile-v">3<span class="u"> 处</span></div><div class="tile-l">重点区数量</div><div class="tile-k"><code>key_area_count</code></div></div>
 <div class="tile unknown" data-metric-unknown="floor_area_ratio">
   <div class="tile-v">unknown</div>
