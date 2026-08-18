@@ -1525,7 +1525,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-312 entries. By finder:
+313 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
@@ -1534,7 +1534,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | This package's own gate | 21 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 21 | Seen elsewhere, absent here |
+| Reading a rival's package | 22 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1543,7 +1543,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Shape | Count |
 |---|---|
 | An easy measure | 57 |
-| Two copies drifted | 44 |
+| Two copies drifted | 45 |
 | Shipped unseen | 30 |
 | Uncheckable | 25 |
 | Outlived the package | 22 |
