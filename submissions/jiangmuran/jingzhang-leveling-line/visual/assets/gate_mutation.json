@@ -1192,6 +1192,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M128",
+      "gate": "sheet_literal_qa.py",
+      "target": "fig_routes.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把缝合点数手打回 FIG.05 的图面文字里。**这张图评审直接收到**，而 `stitching_point_count` 是一项指标——图上写死一个派生量，和正文里写死它一样会过期。",
+      "what_en": "Type the stitching-point count back into FIG.05's sheet text. **The reviewer receives this image**, and stitching_point_count is a metric: a derived quantity written onto a drawing goes stale exactly the way one written into the prose does.",
+      "why_zh": "本包关于「不要复述构建算出来的数」的全部规矩，此前**只作用在正文上**，从没作用在图面上——因为图面文字既没有 `[metric:]` 标签，也没有闸门读过它。E337 已经在 FIG.01 上抓到一次，那一轮**derive 了三个数、漏了第四个**；本闸门就是为了不再靠人记得而设。",
+      "why_en": "Every rule this package states about not restating what the build computes was enforced on the prose and never on the drawings, because sheet text carries no [metric:] tag and no gate read it. E337 caught the first case on FIG.01 and that round **derived three numbers and missed the fourth**; this gate exists so the next one does not depend on anybody remembering."
+    },
+    {
       "id": "M110",
       "gate": "pdf_page1_qa.py",
       "target": "build_drawings.py",
@@ -1530,7 +1543,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 125,
+  "caught": 126,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1602,6 +1615,7 @@
     "sheet_claim_qa.py",
     "sheet_layer_key_qa.py",
     "sheet_legend_qa.py",
+    "sheet_literal_qa.py",
     "sheet_scale_qa.py",
     "shipped_validation_qa.py",
     "source_citation_qa.py",
@@ -1661,6 +1675,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 89 道闸门，其中 86 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 89 gates, 86 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 90 道闸门，其中 87 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 90 gates, 87 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
