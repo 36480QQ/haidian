@@ -56,7 +56,7 @@ scenarios:
 | Q5 · 故障时停止什么、保留什么？ | 停止并隔离自动化、采集、扩声、显示或服务叠层；连续日常轨、完整非 AI 路径、无屏信息、人工接管、撤回、申诉与安全离开继续。 | `visual/index.html#four-state-motion` | A3 P9；A0 P6 |
 | Q6 · 恢复为什么不等于 G1、批准或重启？ | 恢复只先还普通路径、无屏信息、静音和同一基本任务；现实验收与 GO 均为 0，缺口未闭合就保持 G0、关闭或退役。 | `visual/index.html#cold-read-recovery-boundary` | A3 P9、P13；A0 P6、P8 |
 | Q7 · 哪些空间信息仍是临时或未知？ | `PROV-SITE-001` 与三处 `PROV-KEY` 均为临时容器；官方红线、坐标套准、站点／道路／地块／建筑锚点及构件尺寸、材料、连接、专项结论仍未知。 | `visual/index.html#cold-read-spatial-unknowns` | A3 P2、P14；A0 P1、P3—P4 |
-| Q8 · 哪些资料和专业角色可以修改、拒绝或删除方案？ | D01—D08 真实资料可替换临时几何、类型占位和未核验来源；H01—H07 专业角色可复算、修改、拒绝或删除概念，重大缺口保持 NO-GO。 | `visual/index.html#review-handoff` | A3 P13—P14；A0 P7—P8 |
+| Q8 · 哪些资料与未来专业方可以修改、附条件、拒绝或删除方案？ | D01—D08 真实资料可替换临时几何、类型占位和未核验来源。H01—H07 是尚未提交的交接／证据包，不是人员、专业或已接受责任；P01—P07 只是建议专业类型。未来胜任且接受明确范围的专业方，才可在该范围内复算、修改、附条件、拒绝或删除受影响概念；重大缺口保持 NO-GO。 | `visual/index.html#review-handoff` | A3 P13—P14；A0 P7—P8 |
 
 **包内导航与评审交接索引。** 本包全部 141 个路径的评审定位统一见 `visual/assets/review-handoff-index.json`：七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、全部 21 个章节阅读单元、D01—D08/H01—H07 交接、[八问冷读答案地图](visual/index.html#cold-read-answer-map)）与逐文件登记（现行／历史快照／机器输入／冻结／临时五类状态、语言对、轮次来源与权利回链）。`round15-baseline.json` 是历史快照而非现行状态，`t02-g0-g1-replay-fixtures.json` 是合成回放机器输入，两者均不得被误读为当前证据。索引只负责定位，不生成新证据、不改变成熟度或权利状态 [data:visual/assets/review-handoff-index.json]。
 
