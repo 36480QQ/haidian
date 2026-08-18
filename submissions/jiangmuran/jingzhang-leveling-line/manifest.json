@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-18T09:18:37-07:00",
+  "generated_at": "2026-08-18T09:58:46-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b770f89604e2aa4d8242fcd7e2244d27444d42848857d22f287d7c97af216ea3",
+      "sha256": "5cfc21a801b32cf7d79a67f7ec5c40af08d813bb245bb7e9c16394bf2cead6c2",
       "language": "neutral"
     },
     {
@@ -1190,7 +1190,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "medium",
     "extensions": {
