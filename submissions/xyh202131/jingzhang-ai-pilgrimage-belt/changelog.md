@@ -1,5 +1,23 @@
 # 方案迭代记录 / Changelog
 
+## v44.0 - 2026-08-18
+
+**Professional handoff, veto and NO-GO trace / 专业交接、否决与 NO-GO 追踪**
+
+- 串行门：第 43 轮 PR #3230 已合并（head `b6f700ed5f8eb76b48bbc602cec467e242f18609`，merge `ef6ddc9d5df0c1aaa16192427d1e2ded00b6a931` 已进入 canonical `main`）；同包开放 PR 为 0，源工作树洁净。本轮只修复 D01—D08、H01—H07、建议专业与关闭记录之间无法双向追踪的专业交接断点。
+- Serial gate: Round 43 PR #3230 is merged (head `b6f700ed5f8eb76b48bbc602cec467e242f18609`; merge `ef6ddc9d5df0c1aaa16192427d1e2ded00b6a931` entered canonical `main`); the package had zero open PRs and the source worktree was clean. This round repairs only the professional-handoff break between D01–D08, H01–H07, suggested disciplines and closure records.
+
+| 已具备 / Already present | 仍薄弱 / RED | 必须冻结 / Locked | 本轮实施 / Implemented |
+|---|---|---|---|
+| 八类未来替换资料、七类交接包、九类关闭条件、专业修改／拒绝／删除权与缺项 NO-GO 已存在；真实材料、责任接受、批准和 GO 均为 0 | D→H 只有单向列表；H 无建议专业类型和替换资料回链；关闭类别无 H 回链；跨文件 `#ID` 不是可解引用 JSON Pointer；前台有两个 15 分钟入口并把 H 包简称为“专业角色”；A0 B8 仍显示旧的 141 条登记 | 双轨总纲、三原型、JZ-AIOS、G0—G3、四轴、三载体、九份 geometry、`metrics.json`、12/8/3/36、G0/NO-GO/provisional/rights、媒体与 A3 14+14/A0 8+8 页 | 建立 22 条 D↔建议专业、16 条 D↔H、9 条 H↔关闭类别、11 条交接项→关闭记录双向／标准指针；统一 `#review-handoff` 为唯一 15 分钟入口并接入五项本地合同；修正当前 149/148/149 文件登记；只更新 A0 B8 的旧计数 |
+
+- 修复前 RED 可重放：八个 D 模板共给出 16 条 D→H 边，但七个 H 包没有任何替换资料回链；九个关闭类别没有 H 回链；H 包没有建议专业类型；11 个交接项的关闭引用不能按 RFC 6901 解引用；双语前台同时把 `#review-handoff` 与 `#accessible-review-walk` 当作 15 分钟起点，且把文档包写成行动角色。修复后，三份权威合同的边集合精确对称、11 个标准指针全部命中，H01—H07 仍全部 `not_submitted`，建议专业接受数仍为 0，任一重大缺口仍为 NO-GO。
+- Reproducible RED: eight D templates exposed 16 D→H edges, but seven H packs had no replacement back-links; nine closure categories had no H back-links; H packs named no suggested discipline types; and 11 item-to-closure references were not RFC 6901-resolvable. The bilingual front stage also exposed both `#review-handoff` and `#accessible-review-walk` as 15-minute starts and described document packs as acting roles. After repair the three authoritative contracts have exact symmetric edge sets and all 11 standard pointers resolve, while every H01–H07 pack remains `not_submitted`, accepted suggested disciplines remain 0, and any material gap remains NO-GO.
+- 逐文件登记的当前口径统一为 manifest 149、非 manifest 148、权利台账 149；其中 146 个普通文件执行最终 SHA-256 字节核对，manifest、`self_check.json` 与台账自身保留三项循环／最终化例外。A0 中英文第 8 页仅把旧的 `141` 原位改为 `149`，页数、坐标、字体、图面和其他内容不变；两次独立新进程得到逐文件相同字节。
+- Current counts are aligned to 149 manifest paths, 148 non-manifest paths and 149 rights-ledger records. Final SHA-256 byte checks cover 146 ordinary files, with three circular/finalisation exceptions for the manifest, `self_check.json` and the ledger itself. Bilingual A0 board 8 changes only the stale in-place `141` to `149`; page count, coordinates, font, drawing and all other content remain unchanged, and two fresh processes produce byte-identical files.
+- 本轮无新增媒体、外部来源、事实、场景、项目、重点区、治理合同、成熟度或页面；既有专业交接图与 A3 已通过缩略图和全尺寸审查，因没有可复现缺口而锁定原字节。D/H/P/C 只定义未来替换、建议审查和保守关闭路线，不是实际材料、已接受责任、已确认伙伴、批准、现场测试、现实恢复、G1 或清权。geometry、`metrics.json`、12/8/3/36、现实结果 0、`not_fully_cleared` 和独立逐文件清权 0 不变。
+- This round adds no media, external source, fact, scene, project, key area, governance contract, maturity or page. The existing professional-handoff figure and A3 passed thumbnail/full-size review and therefore keep their bytes. D/H/P/C defines future replacement, suggested review and fail-closed routing only—not real material, accepted duty, a confirmed partner, approval, field testing, real recovery, G1 or rights clearance. Geometry, `metrics.json`, 12/8/3/36, zero real-world outcomes, `not_fully_cleared` and zero independent file-level clearance audits remain unchanged.
+
 ## v43.0 - 2026-08-18
 
 **Three-switchyard spatial atlas / 三座换轨场空间图谱**
