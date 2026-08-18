@@ -192,6 +192,126 @@
       "authority_level": "official_government",
       "source_type": "official_public",
       "usage": "道钉刻字四字段（大模型名称、备案单位、备案编号、备案时间）的权威公开数据源；同一公告页按批次挂载多份附件、序号全国累计连续、备案编号唯一可反查，构成道钉带“任何人可独立核对”的证据基础。实测该公开信息的属地字段仅到直辖市一级、无区级颗粒度且不含备案单位地址，故本方案不以其判定区级归属，归属认定与公示另由区级主管部门承担。"
+    },
+    {
+      "id": "CAC-2025-SUMMARY",
+      "title": "国家互联网信息办公室关于发布2025年生成式人工智能服务已备案信息的公告",
+      "publisher": "中央网络安全和信息化委员会办公室",
+      "url": "https://www.cac.gov.cn/2026-01/09/c_1769688009588554.htm",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_government",
+      "source_type": "official_public",
+      "usage": "全国累计口径：截至2025年12月31日累计748款生成式人工智能服务完成备案、435款应用或功能完成登记；2025年全年新增446款备案。用于道钉带全国分母的时点校核，不用于海淀分子。"
+    },
+    {
+      "id": "PARK2-OPEN-CNS-2026",
+      "title": "北京京张铁路遗址公园二期开放 打造9公里带状文化绿廊",
+      "publisher": "中国新闻网（中国侨网转载）",
+      "url": "http://www.chinaqw.com/qx/2026/08-07/409867.shtml",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_media",
+      "source_type": "official_media_public",
+      "usage": "二期建成开放的第二来源交叉验证；给出全线三道一绿完整慢行系统、独立步行道/慢跑道/自行车道全线无断点贯通的官方表述——本方案断点相关表述须据此限定为东西向穿越断点，不得笼统称公园存在纵向断点。"
+    },
+    {
+      "id": "JZ-BELT-OFFICIAL-2026",
+      "title": "“三区两翼”打造世界级AI集聚地——百年京张AI创新带系列报道之“全球征集”",
+      "publisher": "首都之窗（北京市人民政府门户网站·公告提示，来源北京日报）",
+      "url": "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202604/t20260403_4574351.html",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_government",
+      "source_type": "official_public",
+      "usage": "“三区两翼”官方定义的唯一直接来源：三区为北部AI自主创新加速区（学北园所在）、中部AI原点社区、南部大钟寺AI产业集聚区；两翼为西侧中关村科技服务翼（链接全球创新主体与要素的顶级服务平台）与东侧小月河场景赋能翼（具身智能、AI+医疗、AI+影视等特色集聚区）。同时为“备案大模型130款、AI企业超2000家、独角兽26家、AI核心产业规模超3500亿元”的出处——据此可销 assumptions.json 中 A-DATA-001 关于130款“未定位到可靠来源”的挂账。创新带二环至五环约37平方公里、产业空间近千万平方米、可用更新面积100万平方米。"
+    },
+    {
+      "id": "XUEBEI-PARK-2026",
+      "title": "地铁直达！百年京张AI创新带上，这个科技园即将亮相——（中关村东升科技园学北园）",
+      "publisher": "中关村科学城（北京市科学技术委员会、中关村科技园区管理委员会网站转载）",
+      "url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202604/t20260414_243810.html",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_government",
+      "source_type": "official_public",
+      "usage": "北跃段（众智园AI自主创新加速区）内已建成产业载体的落位依据：学北园位于创新带最北端，东侧紧邻学清路、南侧为月泉路、北侧为清河、东侧为支流小月河；5栋建筑、总建筑面积23.83万平方米；预计2026年7月具备开园条件；地铁昌平线学知园站A出入口与园区所有楼宇无缝连通；定位人工智能+国际合作和出海平台，3500平方米AI出海服务平台；国家自然科学基金委员会等已签约。用于人字之跃段的现实锚点与清河—小月河蓝绿交叠的空间依据。"
+    },
+    {
+      "id": "AI-ORIGIN-2026",
+      "title": "AI原点社区入选北京首批AI创新街区",
+      "publisher": "北京市海淀区信息公开大厅（中关村科学城党工委、管委会）",
+      "url": "https://zyk.bjhd.gov.cn/jbdt/auto4510_51816/auto4510_54705/auto4510/auto4510/202601/t20260105_4799909.shtml",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_government",
+      "source_type": "official_public",
+      "usage": "AI原点社区官方四至：东至王庄路及展春园西路，西至中关村大街，北临清华大学，南抵北四环西路，辐射周边3平方公里；以东升大厦为中心1公里圈；AI原点社区东升产业空间总建筑面积13.89万平方米；集聚400余家企业。用于中答段空间关系描述与要素服务驿站选点依据；注意与甲方公告重点区口径104.3公顷为不同范围口径（核心区与辐射范围），须并列说明不得混用。"
+    },
+    {
+      "id": "AI-DISTRICTS-2026",
+      "title": "北京发布首批4个人工智能创新街区",
+      "publisher": "新华网",
+      "url": "http://www.news.cn/tech/20260121/4532dfd5edc34bd5864b5c2be541702d/c.html",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_media",
+      "source_type": "official_media_public",
+      "usage": "首批四个人工智能创新街区名单与规模：海淀“原点社区”（以五道口为核心、约3平方公里，定位全球AI人才创新创业第一站）、朝阳“光智空间”（2.67平方公里）、石景山“文化智境”（0.4平方公里）、经开区“模数世界”（2平方公里）。用于国际对标章之外的市域横向对标与本方案差异化定位说明。"
+    },
+    {
+      "id": "DONGSHENG-2026",
+      "title": "海淀AI原点社区，北京国际科技创新中心建设的“东升样本”",
+      "publisher": "新京报",
+      "url": "https://www.bjnews.com.cn/detail/1781096497129337.html",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_media",
+      "source_type": "official_media_public",
+      "usage": "AI原点社区与东升镇产业空间载体名单：原点大厦、清华科技园、智源研究院、成府路35号院、华清嘉园；东升镇集体产业空间约273万平方米，含中关村东升科技园一期/二期/三期及众智园；全镇企业3976家、其中科技企业1974家；区域日均通行驻留人数由改造前约1200人次提升至7000余人次。用于产业空间映射与要素服务驿站选点的现实依据。"
+    },
+    {
+      "id": "THU-STATION-HERITAGE-2025",
+      "title": "北京市人民政府关于公布第十一批文物保护单位保护范围及建设控制地带的通知（京政发〔2025〕3号）",
+      "publisher": "北京市人民政府（首都之窗·规范性文件）",
+      "url": "https://www.beijing.gov.cn/zhengce/gfxwj/202501/t20250114_3989104.html",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_government",
+      "source_type": "official_public",
+      "usage": "清华园车站旧址为北京市文物保护单位的法定依据（名单第26项，同批第16项为平绥西直门车站旧址），发文日期2025年1月11日。通知明文规定保护范围及建设控制地带说明及图纸由市文物局、市规划自然资源委另行印发，故具体范围与坐标不在公开渠道——本方案一切站前落位仍为待文物部门协商的概念选点，A-HERITAGE-001 继续成立。"
+    },
+    {
+      "id": "HD-RENEWAL-GUIDE-2025",
+      "title": "海淀区城市更新导则（2025年版）",
+      "publisher": "北京市海淀区人民政府（首都之窗·区级重要行政规范性文件）",
+      "url": "https://www.beijing.gov.cn/hudong/gfxwjzj/qjzjxx/202506/P020250612409127434588.pdf",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_government",
+      "source_type": "official_public",
+      "usage": "拆改留方法、慢行断点与无障碍的区级方法依据。可直接引用原文：优化慢行交通出行品质、强化无障碍设计要求、重点打通断点、串联轨道站点与公共空间；完善无障碍设计和适老化改造、探索建设AI友好人机友好的城市空间；打造全龄友好的无障碍空间；重点围绕京张铁路遗址公园沿线更新塑造创新交往带；涉及不可移动文物、历史建筑的按一屋一策提出改造方案。支撑机器人坡道=无障碍坡道的双用机制与断点客厅的政策同向性。"
+    },
+    {
+      "id": "HD-LIVELIHOOD-2025",
+      "title": "北京市海淀区人民政府办公室关于印发《海淀区2025年重要民生实事项目》的通知",
+      "publisher": "北京市海淀区人民政府办公室",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/szgb/wqgb/202501/202505/t20250508_4768569.shtml",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_government",
+      "source_type": "official_public",
+      "usage": "无障碍与适老化本地实施数据：为新增90周岁及以上高龄老年人家庭开展适老化改造、为2000户80至89周岁老年人配备助浴设备；建成开放5处公园绿地和10处小微绿地、实施2处全龄友好公园改造；新建滨水慢行步道5公里；建成不少于5个一刻钟便民生活圈。用于老年友好场景与全龄友好公共空间主张的本地实证。"
+    },
+    {
+      "id": "HD-CENSUS7-2021",
+      "title": "海淀区全国第七次人口普查主要成果",
+      "publisher": "北京市海淀区统计局（海淀统计，海淀区人民政府门户网站发布）",
+      "url": "https://zyk.bjhd.gov.cn/ywdt/hdywx/202108/t20210812_4479798_hd.shtml",
+      "accessed_date": "2026-08-18",
+      "authority_level": "official_statistics",
+      "source_type": "official_public",
+      "usage": "全区人口结构权威口径：常住人口313.3万；0-14岁37.1万占11.8%、15-59岁218.4万占69.7%、60岁及以上57.8万占18.5%。用于老年友好与青年场景的年龄结构依据。注意该成果仅按人口规模分档列出街镇（学院路、北太平庄等15万人以上5个；清河、北下关、花园路、中关村等10-15万12个），不提供逐街道具体数值，故本方案不得推算分街道人口。"
+    },
+    {
+      "id": "HD-BRIDGE-SPACE-2025",
+      "title": "海淀区桥下空间功能提升相关公开报道",
+      "publisher": "北京日报客户端",
+      "url": "https://www.bjnews.com.cn/detail/1781096497129337.html",
+      "accessed_date": "2026-08-18",
+      "authority_level": "authoritative_media",
+      "source_type": "official_public",
+      "usage": "桥下闲置空间功能提升已是本区在推的既有工作方向，用于支撑大钟寺段桥下通廊由无序停车转为公共使用的断面建议——本方案据此把该建议表述为接续既有工作口径的概念深化，不指定具体桥位、不处置权属。注：本条为媒体报道口径，具体处数与新增车位数未逐字核到，正文不引用其数字。"
     }
   ]
 }
