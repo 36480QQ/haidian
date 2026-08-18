@@ -21,9 +21,9 @@
     <path d="M110 696C205 650 313 732 496 682" class="halo"/><path d="M110 696C205 650 313 732 496 682" class="ordinary" marker-end="url(#arrow)"/>
     <text x="104" y="770" class="s body" fill="#087E68">普通绕行 / 非 AI 连续路径</text>
     <text x="104" y="810" class="s small ink">可经过 · 可询问 · 可绕行 · 可离开</text>
-    <circle cx="138" cy="844" r="23" fill="#FFF7E6" stroke="#B77A13" stroke-width="3"/><text x="138" y="852" class="s body" fill="#A46E11" text-anchor="middle">H</text><text x="174" y="850" class="s small ink">庭边人工维护交接</text>
-    <rect x="82" y="852" width="438" height="118" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
-    <text x="105" y="892" class="s small ink">不可从图中推断：</text><text x="105" y="924" class="s micro muted">现状庭院、设备、尺寸、材料、连接或无障碍结果。</text>
+    <circle cx="138" cy="842" r="23" fill="#FFF7E6" stroke="#B77A13" stroke-width="3"/><text x="138" y="850" class="s body" fill="#A46E11" text-anchor="middle">H</text><text x="174" y="848" class="s small ink">庭边人工维护交接</text>
+    <rect x="82" y="880" width="438" height="118" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
+    <text x="105" y="920" class="s small ink">不可从图中推断：</text><text x="105" y="952" class="s micro muted">现状庭院、设备、尺寸、材料、连接或无障碍结果。</text>
   </g>
   <g id="origin-community-ordinary">
     <text x="640" y="218" class="s k" fill="#B77A13">02 CO-CREATE · 北京 AI 原点社区 / ORIGIN COMMUNITY</text>
@@ -35,9 +35,9 @@
     <path d="M646 704C737 634 833 758 931 692S1108 647 1161 720" class="halo"/><path d="M646 704C737 634 833 758 931 692S1108 647 1161 720" class="ordinary" marker-end="url(#arrow)"/>
     <text x="652" y="784" class="s body" fill="#087E68">居民街 / 无屏日常通行不断</text>
     <text x="652" y="822" class="s small ink">可步行 · 可停留 · 可交流 · 可求助 · 可退出</text>
-    <g fill="#FFF" stroke="#D75D45" stroke-width="4"><circle cx="736" cy="676" r="18"/><circle cx="844" cy="711" r="18"/><circle cx="961" cy="676" r="18"/><circle cx="1068" cy="657" r="18"/></g><g class="s small" fill="#D75D45" text-anchor="middle"><text x="736" y="683">1</text><text x="844" y="718">2</text><text x="961" y="683">3</text><text x="1068" y="664">4</text></g><path d="M1068 680C1127 698 1152 730 1144 774" class="stop"/><path d="M1135 776C1098 799 1064 802 1028 780" class="recover" marker-end="url(#greyArrow)"/><rect x="662" y="826" width="290" height="48" rx="14" fill="#DDEEF4" stroke="#167FA5" stroke-width="3"/><text x="807" y="858" class="s micro" fill="#167FA5" text-anchor="middle">H：街外纸质 / 口述交接</text>
-    <rect x="634" y="852" width="538" height="118" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
-    <text x="657" y="892" class="s small ink">不可从图中推断：</text><text x="657" y="924" class="s micro muted">现状院落、居民同意、可达性、服务时间或运营承诺。</text>
+    <g fill="#FFF" stroke="#D75D45" stroke-width="4"><circle cx="736" cy="676" r="18"/><circle cx="844" cy="711" r="18"/><circle cx="961" cy="676" r="18"/><circle cx="1068" cy="657" r="18"/></g><g class="s small" fill="#D75D45" text-anchor="middle"><text x="736" y="683">1</text><text x="844" y="718">2</text><text x="961" y="683">3</text><text x="1068" y="664">4</text></g><path d="M1068 680C1127 698 1152 730 1144 774" class="stop"/><path d="M1135 776C1098 799 1064 802 1028 780" class="recover" marker-end="url(#greyArrow)"/><rect x="662" y="834" width="290" height="44" rx="14" fill="#DDEEF4" stroke="#167FA5" stroke-width="3"/><text x="807" y="863" class="s micro" fill="#167FA5" text-anchor="middle">H：街外纸质 / 口述交接</text>
+    <rect x="634" y="884" width="538" height="114" rx="18" fill="#ECF6F5" stroke="#8ABBB3" stroke-width="2"/>
+    <text x="657" y="924" class="s small ink">不可从图中推断：</text><text x="657" y="956" class="s micro muted">现状院落、居民同意、可达性、服务时间或运营承诺。</text>
   </g>
   <g id="dazhongsi-ordinary">
     <text x="1240" y="218" class="s k" fill="#D75D45">03 PUBLISH · 大钟寺 / DAZHONGSI</text>
