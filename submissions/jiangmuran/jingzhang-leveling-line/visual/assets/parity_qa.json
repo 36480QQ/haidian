@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.789,
+ "overall_ratio": 0.79,
  "floor": 0.75,
  "sections": [
   {
@@ -27,8 +27,8 @@
   {
    "section": "Three-Level Scope Framework",
    "zh_chars": 3884,
-   "en_words": 2284,
-   "ratio": 0.75,
+   "en_words": 2288,
+   "ratio": 0.751,
    "pass": true
   },
   {
@@ -48,15 +48,15 @@
   {
    "section": "Detailed Design of Key Areas",
    "zh_chars": 4589,
-   "en_words": 2727,
-   "ratio": 0.758,
+   "en_words": 2732,
+   "ratio": 0.759,
    "pass": true
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
    "zh_chars": 11276,
-   "en_words": 7039,
-   "ratio": 0.796,
+   "en_words": 7047,
+   "ratio": 0.797,
    "pass": true
   },
   {

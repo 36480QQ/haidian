@@ -154,9 +154,10 @@ const computed = {
   // total, the eleven stitching points and the three controlled extents.
   // They were cited only to geometry/, which the review never receives, so
   // every one of them was correct and none was checkable (E311).
+  // stitching_point_count is deliberately absent: its positions come from
+  // the OSM fabric, so it is background_only rather than class 1, and this
+  // table covers exactly class 1 in both directions.
   key_area_area_sqm: layerArea('key_areas.geojson'),
-  stitching_point_count: read('geometry/roads.geojson').features
-    .filter((f) => String(f.properties.id).startsWith('ROAD-1')).length,
   test_field_area_sqm: constraintArea('CONSTRAINT-001'),
   robot_pilot_area_sqm: constraintArea('CONSTRAINT-002'),
   safety_review_area_sqm: constraintArea('CONSTRAINT-003'),

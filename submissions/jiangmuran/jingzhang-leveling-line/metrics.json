@@ -747,7 +747,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 310,
+      "value": 311,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -1453,19 +1453,19 @@
       "value": 11,
       "unit": "count",
       "source_files": [
-        "geometry/roads.geojson"
+        "geometry/roads.geojson",
+        "visual/assets/osm_fabric.json"
       ],
       "formula": "count(features(roads) where id startswith ROAD-1)",
       "confidence": "high",
       "assumptions": [
-        "东西缝合点由主脊与实测干道求交得出，逐一登记为 ROAD-101 至 ROAD-111。"
+        "东西缝合点由主脊与 OSM 实测干道求交得出，逐一登记为 ROAD-101 至 ROAD-111；位置来自众包几何，等级为 background_only。"
       ],
       "assumption_ids": [
-        "A-OSM-001",
-        "A-BOUNDARY-001"
+        "A-OSM-001"
       ],
-      "metric_class": 1,
-      "evidence_class": "provisional",
+      "metric_class": "measured_not_reverified",
+      "evidence_class": "background_only",
       "confidence_is_about": "computation",
       "measures": "proposed_design",
       "recalculation_trigger_zh": "官方 polygon 发布，或本包任一几何图层变更时**整体重算**——不得只替换单个文件，这与本方案「超限整段重测」是同一条原则。",

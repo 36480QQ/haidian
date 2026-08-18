@@ -158,7 +158,7 @@ These are not three unrelated drawing sets. The research area decides **what to 
 |---|---|
 | **两区一带** | The regional-interface section extends the three-areas-two-wings into a regional levelling network, with the terms of connection to the Economic-Technological Development Area, Future Science City and Huairou Science City, and why their closure records cannot substitute for one another. |
 | **1+X+1** | The announcement's term for Haidian's industrial system. This proposal does not re-sort industrial categories; it supplies failable conditions for where AI+ verticals may land. Category proportions belong to statutory planning and are not drafted here. |
-| **骑行道** | The spine is a continuous walkable and cycling public axis; breaks and east-west connection are in the eleven stitching points, each with its measured nearest crossing. Cycleway widths and surfacing are engineering specialisms, not given here. |
+| **骑行道** | The spine is a continuous walkable and cycling public axis; breaks and east-west links are the eleven stitching points [metric:stitching_point_count], each with its nearest measured crossing. Cycleway widths and surfacing are engineering specialisms, not given. |
 | **端侧算力** | The compute-siting section gives four conditions, two waiting on official conditions and two judgeable today. Edge compute is named here as the near-field condition among them: it decides whether a reading can be completed at the benchmark rather than in a data centre. |
 | **分布式能源** | **This proposal cannot supply it.** No electricity, photovoltaic or energy-capacity source in this package can be cited, so it is registered as a data gap rather than inferred. That is consistent with the reading plate needing no power and the benchmarks carrying no lighting: a device that does not depend on supply does not need supply solved first. |
 | **北影** | An art resource the announcement names. It is registered here as a cultural and artistic resource within scope awaiting verification, alongside the Tsinghua Garden station; its spatial relation and use require official material and are neither inferred nor put into any layer. |
@@ -1431,7 +1431,7 @@ Both numbers are true; what was missing was saying so. **Both now ship, and both
 
 **“computed exactly” and “measured reliably” are two axes; this package had one.** 27 metrics carry `confidence: high` and none said how strong the thing measured was. The 412.5 m closure is the case in point: the arithmetic is exact and `check_osm.js` reproduces it to the metre, but one input is a boundary this proposal **inferred** because no official polygon exists, and the other is crowd-sourced. “high” is true of the computation and misleading about the reading, and no field separated them. **That is how 412.5 m comes to read as a survey result.**
 
-So each metric's **evidence ceiling** is computed from the weakest file it reads rather than judged, and ships as `visual/assets/evidence_ceiling.json`. The result is unflattering, which is why it is stated: of 58 metrics, 57 can be graded — the remaining one is marked unknown with no value, so it has no number to overstate. **22 are capped at `provisional`** (drawn on an inferred boundary), **13 at `background_only`** (crowd-sourced geometry or keyword counts over other people's proposals), 18 at `self_measured` (they measure this package), exactly **4** reaches `official_context`, and **none** reaches `regulatory_baseline`. Of the 35 weak-ceiling metrics, 29 read `confidence_is_about: computation` — the “high” is about the arithmetic — and 6 read `reading`: the OSM fabric, where the reading is the uncertainty (E197).
+So each metric's **evidence ceiling** is computed from the weakest file it reads rather than judged, and ships as `visual/assets/evidence_ceiling.json`. The result is unflattering, which is why it is stated: of 58 metrics, 57 can be graded — the remaining one is marked unknown with no value, so it has no number to overstate. **21 are capped at `provisional`** (drawn on an inferred boundary), **14 at `background_only`** (crowd-sourced geometry or keyword counts over other people's proposals), 18 at `self_measured` (they measure this package), exactly **4** reaches `official_context`, and **none** reaches `regulatory_baseline`. Of the 35 weak-ceiling metrics, 29 read `confidence_is_about: computation` — the “high” is about the arithmetic — and 6 read `reading`: the OSM fabric, where the reading is the uncertainty (E197).
 
 **The practice is borrowed openly.** This package's increment is not the idea but **no longer doing it by hand**: the ceiling comes from the source files, so a source weaker than the claim fails the build, not the reader.
 
@@ -1525,7 +1525,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-310 entries. By finder:
+311 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
@@ -1534,7 +1534,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | This package's own gate | 21 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 20 | Seen elsewhere, absent here |
+| Reading a rival's package | 21 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1545,7 +1545,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | An easy measure | 57 |
 | Two copies drifted | 44 |
 | Shipped unseen | 30 |
-| Uncheckable | 24 |
+| Uncheckable | 25 |
 | Outlived the package | 21 |
 | Nothing fails it | 17 |
 | Recorded where found | 14 |
@@ -1820,7 +1820,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 <!-- CHECKLIST:BEGIN -->
 
-1. `node visual/assets/verify.js` — recomputes all 28 metrics marked `metric_class: 1` and **asserts coverage both ways**: every one recomputed, nothing that is not one. Plus a dozen structural conclusions: the land-use partition tested point by point, each controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict
+1. `node visual/assets/verify.js` — recomputes all 27 metrics marked `metric_class: 1` and **asserts coverage both ways**: every one recomputed, nothing that is not one. Plus a dozen structural conclusions: the land-use partition tested point by point, each controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict
 2. `node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site figure from the OSM coordinates beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute
 3. `node visual/assets/check_cards.js` — resolves each card's benchmark, spatial anchor, exit quantity and executing role against something that exists; `--selftest` proves the checks refuse eight broken card sets
 4. `node check_closure.js` and `run_s08_tabletop.js` — the mechanism as a data contract, and a ten-case tabletop against the shipped reader
@@ -1837,7 +1837,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files, 1165 KB, 1,810 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files, 1157 KB, 1,803 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
