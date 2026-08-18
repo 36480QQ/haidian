@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-17T17:37:02-07:00",
+  "generated_at": "2026-08-17T17:46:32-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,7 +28,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c5e35231d7b3a83ec4f1367b4f391cada98fe7e80df84d6a0ddc4e4d9df2656b"
+      "sha256": "3e554d182acea895691c5d9e3c6cc5aa2bf48ef7e0a67aedc24333df09fb2537"
     },
     {
       "path": "agent.json",
@@ -48,7 +48,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "a584949df9718a9f816e8533bc4ace9b2a2dd96461ca2e812ed58551a8c7c2ec",
+      "sha256": "5e0749432f5c880599c3f955f126c5c89256a85b1f5c23cc95763a17699222f2",
       "language": "neutral"
     },
     {
@@ -76,7 +76,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "8ef3aea1dabc6f7db0a47d2d141c62c6b3e6381d2d1d8901721d638c644c05d5",
+      "sha256": "c0b4621f7acb78181a6aa850ca1c8a1ace0f84f5acbfa63612cca2d6e2c4511b",
       "language": "neutral"
     },
     {
@@ -133,7 +133,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3c3783755229ea62ab1c860b727a96e15d96646613915e3d27e2eb88a4b25ccc"
+      "sha256": "bfa8411c0fd374242bc75f9b2d0830032b6df975c16e9551bd0a8a8edce5bf2b"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -266,7 +266,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "c7607354fd62567a4952110b35f22002f48523947d2012581e1c8b977a700e2b"
+      "sha256": "9041314eba3c419ee998fe92b64ebcb2f6d92ee48b9667e4c0b079dda5763e4b"
     },
     {
       "path": "visual/assets/verify.js",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a221121afa204519a0a93084bc209f41087a9b4245acdf85710b9eba241883e9"
+      "sha256": "fc3ace5ec3f0c603ea643e5170d9cd3f441d17fe77468922b9b26808e2fa25ee"
     },
     {
       "path": "report/proposal.en.html",
@@ -427,7 +427,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "6212c6609e9cb7752965707b8321cd0877dcfbd6c1c1584501dd7495458e7b8e"
+      "sha256": "88c265355397486753b9c1973a89b0d0afbd830ad02f261b7f07e863e84ff171"
     },
     {
       "path": "visual/assets/parity_qa.json",
@@ -584,7 +584,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "454cd3e5461826e9c46a37e354fa3a3ae08eaf491a4dedb5da51900b50f72254"
+      "sha256": "9e7f026ff238b30765e23976251f83e6df63c6e6511e7f94ddce6259cb3ea2f0"
     },
     {
       "path": "visual/assets/taskbook_coverage.json",
@@ -1101,7 +1101,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "93676925b90c12141f1bbfd8206e96aceff2b0c477daadd7c7b8aa193ec3df7d"
+      "sha256": "4fb5e8ac366e9fd0dccd2dbeb5faca523eaa65e49d1577ca2cda4c84ec239711"
     },
     {
       "path": "assets/media/closure-advance.mp4",
@@ -1165,7 +1165,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/assets/errata.json",
-      "sha256": "2b9f0da7c752ddc4e74e0b0de4fb9a9c4003a6f440bb5e530f668ffb853ef489"
+      "sha256": "3d18b1831b047d5eb000d3f13ba8cac3f128ab7eb877e6e8c6963055910671b2"
     },
     {
       "path": "visual/assets/role_spec.json",
@@ -1180,10 +1180,17 @@
       "required": false,
       "language": "neutral",
       "sha256": "94bd276091d695f3a90ff9ccef61e556d652bd42c96b516947ed3b023691f6f4"
+    },
+    {
+      "path": "visual/assets/errata-archive.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "a500d968dc1f8a6c30c86c6a8ea1a46cb5bd08129aae1ba82d24c1496ceb4b61"
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "medium",
     "extensions": {
