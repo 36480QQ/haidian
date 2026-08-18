@@ -1,0 +1,73 @@
+{
+  "schema_version": "shared-floor-immutable-artifact-v1",
+  "rights": "COMMUNITY-DISPLAY-ONLY",
+  "source_path": "candidates/C02-FOUR-SEASON-COURTYARDS/evaluation.json",
+  "source_sha256": "fcbb8b6b6fda29fccc9cc7fade8e310752859859bb5643072b0c3ed9be050b2c",
+  "source_size_bytes": 2584,
+  "content": {
+    "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+    "spec_hash": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
+    "hard_gates": {
+      "geometry_valid": true,
+      "inside_reference_envelope": true,
+      "unintended_mass_overlaps_zero": true,
+      "support_infill_overlap_zero": true,
+      "continuous_accessible_public_route": true,
+      "public_route_network_connected": true,
+      "every_public_room_reached": true,
+      "feature_ids_unique": true,
+      "public_route_mass_collisions_zero": true,
+      "programme_in_reference_range": true,
+      "public_rooms_present": true,
+      "root_ten_social_climate_nodes": true,
+      "root_winter_sun_minimum": true,
+      "root_summer_shade_band": true,
+      "root_open_ground_minimum": true
+    },
+    "hard_gate_pass": true,
+    "metrics": {
+      "approx_gfa_sqm": 77760,
+      "building_footprint_sqm": 14240.0,
+      "open_ground_ratio": 0.915238,
+      "winter_public_sun_fraction": 0.813065,
+      "summer_public_shade_fraction": 0.466169,
+      "adaptable_footprint_ratio": 0.0,
+      "continuous_public_route_count": 2,
+      "public_route_component_count": 1,
+      "public_room_route_gap_count": 0,
+      "unreachable_public_room_ids": [],
+      "duplicate_feature_id_count": 0,
+      "duplicate_feature_ids": [],
+      "mass_count": 40,
+      "public_room_count": 10,
+      "outdoor_solar_public_room_count": 10,
+      "sheltered_public_room_count": 0,
+      "pair_overlap_count": 0,
+      "support_infill_overlap_sqm": 0.0,
+      "public_route_collision_count": 0
+    },
+    "model_swap_test": {
+      "test": "remove all replaceable infill/equipment and compare permanent civic state",
+      "support_hash_before": "2417816341278e830e8664609b32681cb1ad6cc02fcab232bf5522682fa81e72",
+      "support_hash_after": "2417816341278e830e8664609b32681cb1ad6cc02fcab232bf5522682fa81e72",
+      "public_route_hash_before": "0419524d049c5daa7ce4fb15b1cb51cf978c2514d63b47fde820dffe3ff1edd0",
+      "public_route_hash_after": "0419524d049c5daa7ce4fb15b1cb51cf978c2514d63b47fde820dffe3ff1edd0",
+      "removed_infill_count": 0,
+      "permanent_state_unchanged": false
+    },
+    "limits": [
+      "normalized comparison envelope; not an official parcel or statutory programme",
+      "solar-noon geometric shadow proxy; not daylight, comfort, energy or legal insolation",
+      "axis-aligned comparison geometry; production drawings remain the spatial authority"
+    ],
+    "preference_components": {
+      "programme_fit": 0.106302,
+      "open_ground": 1.0,
+      "winter_sun": 0.415527,
+      "summer_shade": 1.0,
+      "adaptability": 0.0,
+      "route_redundancy": 1.0,
+      "weighted_preference_aid": 0.533589
+    }
+  }
+}

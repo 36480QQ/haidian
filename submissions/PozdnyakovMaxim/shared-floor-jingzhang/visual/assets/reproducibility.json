@@ -1,0 +1,299 @@
+{
+  "schema_version": "shared-floor-public-replay-v1",
+  "evidence_scope": "participant-authored design-search evidence; not an organizer or statutory simulation",
+  "rights": "COMMUNITY-DISPLAY-ONLY",
+  "rights_scope": "The wrapper, participant compiler and harness use COMMUNITY-DISPLAY-ONLY. The separately identified corridor, seven-room and Dazhongsi context parts retain their ODbL-1.0 source rights. Four separately identified 1909 album images retain their LOC/WDL item-level rights status and credit. This wrapper overrides none of those source rights.",
+  "run_id": "jingzhang-d775d3c540f6",
+  "receipt_sha256": "305f0aaa13999ee428d5bc3a27a380302732c7ceeeab01e46b2c65f7898542e3",
+  "direct_sun": {
+    "run_id": "direct-sun-d04d872df516",
+    "build_receipt_sha256": "0108b64407ccda97c80f2c5cc2cb0e5c9efaf0571fe8dd8b8c08289f8d800356",
+    "method": "NREL SPA through pinned pvlib; typed building/roof/tree layers; orientation-height-tree sensitivity",
+    "claim_boundary": {
+      "clouds_and_reflections": false,
+      "daylight": false,
+      "energy": false,
+      "existing_context_or_topography": false,
+      "geometry_only": true,
+      "glare": false,
+      "official_boundary": false,
+      "statutory_insolation": false,
+      "thermal_comfort_utci_or_mrt": false,
+      "tree_species_or_leaf_area": false
+    }
+  },
+  "canonical_submitted_harness_payload_sha256": "2160a99837482003a38cc6a95dd91f31663b4ffd75fba4a04ab62da0056e5b19",
+  "claim_boundary": {
+    "publicly_inspectable": true,
+    "source_and_structured_receipts_included": true,
+    "binary_render_outputs_included": false,
+    "one_command_environment_reproduction_claimed": false,
+    "reason": "dependency installation and trusted extraction are intentionally left to the reviewer; submission HTML never executes participant code"
+  },
+  "runtime": {
+    "python": "3.14.3",
+    "pillow": "12.3.0",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "reportlab": "5.0.0",
+    "required_packages": [
+      "Pillow>=10",
+      "shapely>=2",
+      "pyproj>=3",
+      "reportlab>=4"
+    ],
+    "font": {
+      "family": "SharedFloorSans",
+      "version": "Noto Sans SC 2.004, static Regular instance at wght=400",
+      "license": "SIL Open Font License 1.1",
+      "license_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/LICENSE",
+      "local_build_path": "tools/fonts/NotoSansSC-Regular.ttf",
+      "sha256": "c7763f454946833081cc90e73186615f8e1189de9c5e5a5a8752871fd79fddbc",
+      "size_bytes": 10596308,
+      "upstream_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/Variable/TTF/Subset/NotoSansSC-VF.ttf",
+      "build_recipe": "notofonts/noto-cjk@f8d157532fbfaeda587e826d4cd5b21a49186f7c; static instance generated with fontTools varLib.instancer wght=400 --update-name-table --no-recalc-timestamp",
+      "note": "The public JSON bundle does not embed the font binary; use the pinned upstream, build recipe and hash for byte-identical PDF replay."
+    },
+    "technical_figure_render": {
+      "logical_pixels": [
+        2400,
+        1400
+      ],
+      "native_render_scale": 3,
+      "native_pixels": [
+        7200,
+        4200
+      ],
+      "method": "PIL primitives, glyphs and linework are re-rasterised at native 3x coordinates before PDF placement; no metadata-only enlargement",
+      "a0_effective_source_ppi_approx": 159,
+      "a3_embedding": "technical masters are low-pass reduced with PIL BOX to the 2400x1400 logical canvas before A3 crop/embedding; high-resolution masters remain unchanged for A0"
+    }
+  },
+  "replay": {
+    "extract": "write each source_snapshots[].content_utf8 from the two source parts to source_snapshots[].path; copy corridor-context.json, corridor-room-figure-ground.json and dazhongsi-osm-context.json to their replay_source_path under the repository parent; retain the four hash-pinned loc-jingzhang-1909-*.jpg files in visual/assets or copy them to research/jingzhang-evidence-line",
+    "test": "python -m unittest tools.tests.test_jingzhang_competition_harness -v",
+    "run": "python tools/run_jingzhang_competition_harness.py --created-at 2026-08-13T09:00:00Z",
+    "timestamp_policy": "explicit pinned UTC evidence epoch; wall-clock execution time is excluded from the hashed run identity",
+    "build": "python tools/build_shared_floor.py",
+    "verify": "compare the new build_receipt artifact hashes and candidate evaluation hashes with harness-run.json"
+  },
+  "parts": [
+    {
+      "path": "visual/assets/compiler-source.json",
+      "purpose": "participant compiler source snapshot",
+      "sha256": "343454d4442ee1082cc25610b708c656162c0e2eaa5602132d98d0a6e18af31f",
+      "size_bytes": 510999,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-source.json",
+      "purpose": "design-search, context-fetch and climate source snapshots",
+      "sha256": "11d5cf3963e6f2d079b2a06bac3f6fd4a261f4cc21bf28aed0368750558d3089",
+      "size_bytes": 189645,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-run.json",
+      "purpose": "immutable run index, hashes and build receipt",
+      "sha256": "edcafb01e3be18c0d892e99ef48766507d9391665c7c846e8fc5d112f2a4529d",
+      "size_bytes": 9714,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/corridor-context.json",
+      "purpose": "rights-labelled real-corridor orientation context",
+      "sha256": "4907e5cea12a7ed42a5445f34bce9ec9250f09e3e023d378a833fc3dda7cc46a",
+      "size_bytes": 42163,
+      "rights": "ODbL-1.0; attribution and database notice preserved"
+    },
+    {
+      "path": "visual/assets/corridor-room-figure-ground.json",
+      "purpose": "rights-labelled seven-room figure-ground context",
+      "sha256": "87a16f6e0b8d3956cca1de8ecdb33ec6a18500f11f0edf815332807b698d4263",
+      "size_bytes": 155171,
+      "rights": "ODbL-1.0; attribution and database notice preserved"
+    },
+    {
+      "path": "visual/assets/dazhongsi-osm-context.json",
+      "purpose": "rights-labelled Dazhongsi figure-ground orientation context",
+      "sha256": "c90087f35bfa8371bfaebb48c7780f9e1ff5f7311d95aa3b9649a632c3ebf456",
+      "size_bytes": 413600,
+      "rights": "ODbL-1.0; attribution and database notice preserved"
+    },
+    {
+      "path": "visual/assets/loc-jingzhang-1909-011.jpg",
+      "purpose": "pinned 1909 Jing-Zhang construction-album image 011 used in the evidence-line method tile",
+      "sha256": "0505b9918134d37ba31a0664c3430465a85a90d08a82c8df9a4863cd01a44004",
+      "size_bytes": 40217,
+      "rights": "LOC/WDL: no known restrictions recorded; free use/reuse only where no restrictions apply; source credit preserved"
+    },
+    {
+      "path": "visual/assets/loc-jingzhang-1909-012.jpg",
+      "purpose": "pinned 1909 Jing-Zhang construction-album image 012 used in the evidence-line method tile",
+      "sha256": "94e7c11a1625ac6fb9ecbf0c728bb591727e4212a5c3f8c0c72a5df62ddc743a",
+      "size_bytes": 38216,
+      "rights": "LOC/WDL: no known restrictions recorded; free use/reuse only where no restrictions apply; source credit preserved"
+    },
+    {
+      "path": "visual/assets/loc-jingzhang-1909-026.jpg",
+      "purpose": "pinned 1909 Jing-Zhang construction-album image 026 used in the evidence-line method tile",
+      "sha256": "73aca3fec50959334e0fa66b32f496b600c0cd8ec444251a824d320f260fcde6",
+      "size_bytes": 31969,
+      "rights": "LOC/WDL: no known restrictions recorded; free use/reuse only where no restrictions apply; source credit preserved"
+    },
+    {
+      "path": "visual/assets/loc-jingzhang-1909-036.jpg",
+      "purpose": "pinned 1909 Jing-Zhang construction-album image 036 used in the evidence-line method tile",
+      "sha256": "c49d28cf3eb55013779a1b7b923e50b360eddde302dacec6244d333bfc8586a4",
+      "size_bytes": 45109,
+      "rights": "LOC/WDL: no known restrictions recorded; free use/reuse only where no restrictions apply; source credit preserved"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c01-civic-proving-line-design-state-json.json",
+      "purpose": "immutable structured run artifact: candidates-c01-civic-proving-line-design-state-json",
+      "sha256": "c7001a7d9bdb904b20d475ac5b164dcb92578bad22241f8f31be02477a7bc7dc",
+      "size_bytes": 6783,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c01-civic-proving-line-evaluation-json.json",
+      "purpose": "immutable structured run artifact: candidates-c01-civic-proving-line-evaluation-json",
+      "sha256": "63bba96ff752a20f4c092545b94425f2fd28a8362c6a26280cfdf3dfb4f9929b",
+      "size_bytes": 2937,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c01-civic-proving-line-geometry-geojson.json",
+      "purpose": "immutable structured run artifact: candidates-c01-civic-proving-line-geometry-geojson",
+      "sha256": "5701d8b6701b2c8fece20da993951861f87be81133f8ce01fc3090d3009c5af3",
+      "size_bytes": 20694,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c02-four-season-courtyards-design-state-json.json",
+      "purpose": "immutable structured run artifact: candidates-c02-four-season-courtyards-design-state-json",
+      "sha256": "3638330de6c3128384aff0e276c1a2d803b4a4a4e8d6688e05acb45f018f31fa",
+      "size_bytes": 16927,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c02-four-season-courtyards-evaluation-json.json",
+      "purpose": "immutable structured run artifact: candidates-c02-four-season-courtyards-evaluation-json",
+      "sha256": "2e9cff500d0ceebc472ad04efff010d0cb5739ada1cb90f3cddc9f48c7da110e",
+      "size_bytes": 3017,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c02-four-season-courtyards-geometry-geojson.json",
+      "purpose": "immutable structured run artifact: candidates-c02-four-season-courtyards-geometry-geojson",
+      "sha256": "b789f4472f61936484b82833467f59cef8fb88a9b77b6141461fefeec94beb90",
+      "size_bytes": 54530,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c03-shared-floor-design-state-json.json",
+      "purpose": "immutable structured run artifact: candidates-c03-shared-floor-design-state-json",
+      "sha256": "024a30e83939777a974507bc733a340d00533db469d56de3fa44ab5100aa5e97",
+      "size_bytes": 18209,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c03-shared-floor-evaluation-json.json",
+      "purpose": "immutable structured run artifact: candidates-c03-shared-floor-evaluation-json",
+      "sha256": "2f7371f80094e80047f38e80cc484318955c291a0f3b578a4e56af1f55e5a1f3",
+      "size_bytes": 3067,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c03-shared-floor-geometry-geojson.json",
+      "purpose": "immutable structured run artifact: candidates-c03-shared-floor-geometry-geojson",
+      "sha256": "218f9630ff00ff6f6edd5bf61d3712122ed0201a7599043d768e3061ec198c06",
+      "size_bytes": 56997,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-counterfactual-rebind-gate-challenge-json.json",
+      "purpose": "immutable structured run artifact: counterfactual-rebind-gate-challenge-json",
+      "sha256": "ca1ac5745e43d90fdc9fe3c6c68bdef4aa6d19944b6f3ebc529225f7c5fb5461",
+      "size_bytes": 26563,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-human-handoff-recovery-json.json",
+      "purpose": "immutable structured run artifact: human-handoff-recovery-json",
+      "sha256": "421072aacca95582e29847089d58eb727a81fdd0d35b6ac63da73aea085c3659",
+      "size_bytes": 309673,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-run-contract-json.json",
+      "purpose": "immutable structured run artifact: run-contract-json",
+      "sha256": "73c43ec106be67662afd6391089213b348c914adb6be6b9dc1d21f88d82ce15a",
+      "size_bytes": 1511,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-selection-json.json",
+      "purpose": "immutable structured run artifact: selection-json",
+      "sha256": "f43eda94b1b29d4abd8cb937b2500ba6fc3b25c7a64c002e14d4472b68845958",
+      "size_bytes": 1822,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-simulation-json.json",
+      "purpose": "immutable structured run artifact: simulation-json",
+      "sha256": "9ea2e445885255d9266c43e5c589a96e06c18914748f7176101200df36af3c34",
+      "size_bytes": 364541,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/direct-sun-run-contract.json",
+      "purpose": "verified geometric direct-sun evidence: run-contract",
+      "sha256": "fd58d254ffd2d0a8bfa51ba95e26a7ee631e657f8d717f8b225c9dcbf10a46d1",
+      "size_bytes": 3265,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/direct-sun-input-receipt.json",
+      "purpose": "verified geometric direct-sun evidence: input-receipt",
+      "sha256": "136ec3f231bf03f7447e1b63fe6a7543f1c8837e7b6e2615cd7c2b90b5311f8d",
+      "size_bytes": 2652,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/direct-sun-metrics.json",
+      "purpose": "verified geometric direct-sun evidence: metrics",
+      "sha256": "3f94e6b9ffb388620cb40194cd2a4c6b6bd73fb4a91e6271fb5ab101d19e3c4b",
+      "size_bytes": 19021,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/direct-sun-checks.json",
+      "purpose": "verified geometric direct-sun evidence: checks",
+      "sha256": "9c3d6daeaa4419088614b4666e2b64fe70ba39330e31b06aa0a40824311490b4",
+      "size_bytes": 2171,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/direct-sun-build-receipt.json",
+      "purpose": "verified geometric direct-sun evidence: build-receipt",
+      "sha256": "0108b64407ccda97c80f2c5cc2cb0e5c9efaf0571fe8dd8b8c08289f8d800356",
+      "size_bytes": 1993,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/direct-sun-latest.json",
+      "purpose": "verified geometric direct-sun evidence: latest",
+      "sha256": "dda95eb956b99774475cdbd60f39d0d89a76b8adf4ef7d94692039153b5c4d63",
+      "size_bytes": 409,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/direct-sun-zone-baselines.json",
+      "purpose": "verified geometric direct-sun evidence: zone-baselines",
+      "sha256": "7a1ea6e36da5df8deca83c0381f00c26fbc3f35ad502c5e237a38fccf45687b0",
+      "size_bytes": 16895,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    }
+  ]
+}

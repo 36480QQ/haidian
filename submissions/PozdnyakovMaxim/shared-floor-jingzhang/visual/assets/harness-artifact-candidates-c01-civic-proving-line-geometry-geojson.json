@@ -1,0 +1,991 @@
+{
+  "schema_version": "shared-floor-immutable-artifact-v1",
+  "rights": "COMMUNITY-DISPLAY-ONLY",
+  "source_path": "candidates/C01-CIVIC-PROVING-LINE/geometry.geojson",
+  "source_sha256": "b5decf56b6afcd64b9a7c3d97417f64e4bfcd151712002eb9839952f9c7ad104",
+  "source_size_bytes": 18427,
+  "content": {
+    "type": "FeatureCollection",
+    "name": "C01-CIVIC-PROVING-LINE",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "PL-TRIAL-01",
+        "properties": {
+          "id": "PL-TRIAL-01",
+          "x": -300,
+          "y": 0,
+          "width": 40,
+          "depth": 20,
+          "height": 8,
+          "storeys": 2,
+          "layer": "infill",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -280.0,
+                -10.0
+              ],
+              [
+                -280.0,
+                10.0
+              ],
+              [
+                -320.0,
+                10.0
+              ],
+              [
+                -320.0,
+                -10.0
+              ],
+              [
+                -280.0,
+                -10.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-TRIAL-02",
+        "properties": {
+          "id": "PL-TRIAL-02",
+          "x": -200,
+          "y": 0,
+          "width": 40,
+          "depth": 20,
+          "height": 8,
+          "storeys": 2,
+          "layer": "infill",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180.0,
+                -10.0
+              ],
+              [
+                -180.0,
+                10.0
+              ],
+              [
+                -220.0,
+                10.0
+              ],
+              [
+                -220.0,
+                -10.0
+              ],
+              [
+                -180.0,
+                -10.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-TRIAL-03",
+        "properties": {
+          "id": "PL-TRIAL-03",
+          "x": -100,
+          "y": 0,
+          "width": 40,
+          "depth": 20,
+          "height": 8,
+          "storeys": 2,
+          "layer": "infill",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -80.0,
+                -10.0
+              ],
+              [
+                -80.0,
+                10.0
+              ],
+              [
+                -120.0,
+                10.0
+              ],
+              [
+                -120.0,
+                -10.0
+              ],
+              [
+                -80.0,
+                -10.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-TRIAL-04",
+        "properties": {
+          "id": "PL-TRIAL-04",
+          "x": 0,
+          "y": 0,
+          "width": 40,
+          "depth": 20,
+          "height": 8,
+          "storeys": 2,
+          "layer": "infill",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                20.0,
+                -10.0
+              ],
+              [
+                20.0,
+                10.0
+              ],
+              [
+                -20.0,
+                10.0
+              ],
+              [
+                -20.0,
+                -10.0
+              ],
+              [
+                20.0,
+                -10.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-TRIAL-05",
+        "properties": {
+          "id": "PL-TRIAL-05",
+          "x": 100,
+          "y": 0,
+          "width": 40,
+          "depth": 20,
+          "height": 8,
+          "storeys": 2,
+          "layer": "infill",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                120.0,
+                -10.0
+              ],
+              [
+                120.0,
+                10.0
+              ],
+              [
+                80.0,
+                10.0
+              ],
+              [
+                80.0,
+                -10.0
+              ],
+              [
+                120.0,
+                -10.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-TRIAL-06",
+        "properties": {
+          "id": "PL-TRIAL-06",
+          "x": 200,
+          "y": 0,
+          "width": 40,
+          "depth": 20,
+          "height": 8,
+          "storeys": 2,
+          "layer": "infill",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                220.0,
+                -10.0
+              ],
+              [
+                220.0,
+                10.0
+              ],
+              [
+                180.0,
+                10.0
+              ],
+              [
+                180.0,
+                -10.0
+              ],
+              [
+                220.0,
+                -10.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-TRIAL-07",
+        "properties": {
+          "id": "PL-TRIAL-07",
+          "x": 300,
+          "y": 0,
+          "width": 40,
+          "depth": 20,
+          "height": 8,
+          "storeys": 2,
+          "layer": "infill",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                320.0,
+                -10.0
+              ],
+              [
+                320.0,
+                10.0
+              ],
+              [
+                280.0,
+                10.0
+              ],
+              [
+                280.0,
+                -10.0
+              ],
+              [
+                320.0,
+                -10.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ANCHOR-01",
+        "properties": {
+          "id": "PL-ANCHOR-01",
+          "x": -240,
+          "y": 64,
+          "width": 110,
+          "depth": 40,
+          "height": 24,
+          "storeys": 5,
+          "layer": "support",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -185.0,
+                44.0
+              ],
+              [
+                -185.0,
+                84.0
+              ],
+              [
+                -295.0,
+                84.0
+              ],
+              [
+                -295.0,
+                44.0
+              ],
+              [
+                -185.0,
+                44.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ANCHOR-02",
+        "properties": {
+          "id": "PL-ANCHOR-02",
+          "x": 0,
+          "y": 64,
+          "width": 110,
+          "depth": 40,
+          "height": 24,
+          "storeys": 5,
+          "layer": "support",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                55.0,
+                44.0
+              ],
+              [
+                55.0,
+                84.0
+              ],
+              [
+                -55.0,
+                84.0
+              ],
+              [
+                -55.0,
+                44.0
+              ],
+              [
+                55.0,
+                44.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ANCHOR-03",
+        "properties": {
+          "id": "PL-ANCHOR-03",
+          "x": 240,
+          "y": 64,
+          "width": 110,
+          "depth": 40,
+          "height": 24,
+          "storeys": 5,
+          "layer": "support",
+          "angle": 0.0,
+          "public_through_route": false,
+          "summer_only_shade": false,
+          "feature_type": "mass"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                295.0,
+                44.0
+              ],
+              [
+                295.0,
+                84.0
+              ],
+              [
+                185.0,
+                84.0
+              ],
+              [
+                185.0,
+                44.0
+              ],
+              [
+                295.0,
+                44.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-PUBLIC",
+        "properties": {
+          "id": "PL-PUBLIC",
+          "start": [
+            -345,
+            -100
+          ],
+          "end": [
+            345,
+            -100
+          ],
+          "kind": "public",
+          "operating_rule": "always",
+          "feature_type": "route"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -345.0,
+              -100.0
+            ],
+            [
+              345.0,
+              -100.0
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ROOM-LINK-01",
+        "properties": {
+          "id": "PL-ROOM-LINK-01",
+          "start": [
+            -300,
+            -100
+          ],
+          "end": [
+            -300,
+            -59
+          ],
+          "kind": "public",
+          "operating_rule": "always",
+          "feature_type": "route"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -300.0,
+              -100.0
+            ],
+            [
+              -300.0,
+              -59.0
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ROOM-LINK-02",
+        "properties": {
+          "id": "PL-ROOM-LINK-02",
+          "start": [
+            -200,
+            -100
+          ],
+          "end": [
+            -200,
+            -59
+          ],
+          "kind": "public",
+          "operating_rule": "always",
+          "feature_type": "route"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -200.0,
+              -100.0
+            ],
+            [
+              -200.0,
+              -59.0
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ROOM-LINK-03",
+        "properties": {
+          "id": "PL-ROOM-LINK-03",
+          "start": [
+            -100,
+            -100
+          ],
+          "end": [
+            -100,
+            -59
+          ],
+          "kind": "public",
+          "operating_rule": "always",
+          "feature_type": "route"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -100.0,
+              -100.0
+            ],
+            [
+              -100.0,
+              -59.0
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ROOM-LINK-04",
+        "properties": {
+          "id": "PL-ROOM-LINK-04",
+          "start": [
+            0,
+            -100
+          ],
+          "end": [
+            0,
+            -59
+          ],
+          "kind": "public",
+          "operating_rule": "always",
+          "feature_type": "route"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              0.0,
+              -100.0
+            ],
+            [
+              0.0,
+              -59.0
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ROOM-LINK-05",
+        "properties": {
+          "id": "PL-ROOM-LINK-05",
+          "start": [
+            100,
+            -100
+          ],
+          "end": [
+            100,
+            -59
+          ],
+          "kind": "public",
+          "operating_rule": "always",
+          "feature_type": "route"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              100.0,
+              -100.0
+            ],
+            [
+              100.0,
+              -59.0
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ROOM-LINK-06",
+        "properties": {
+          "id": "PL-ROOM-LINK-06",
+          "start": [
+            200,
+            -100
+          ],
+          "end": [
+            200,
+            -59
+          ],
+          "kind": "public",
+          "operating_rule": "always",
+          "feature_type": "route"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              200.0,
+              -100.0
+            ],
+            [
+              200.0,
+              -59.0
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-ROOM-LINK-07",
+        "properties": {
+          "id": "PL-ROOM-LINK-07",
+          "start": [
+            300,
+            -100
+          ],
+          "end": [
+            300,
+            -59
+          ],
+          "kind": "public",
+          "operating_rule": "always",
+          "feature_type": "route"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              300.0,
+              -100.0
+            ],
+            [
+              300.0,
+              -59.0
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-OBS-01",
+        "properties": {
+          "id": "PL-OBS-01",
+          "x": -300,
+          "y": -42,
+          "width": 64,
+          "depth": 34,
+          "kind": "observation-sandbox",
+          "feature_type": "public_room"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -268.0,
+                -59.0
+              ],
+              [
+                -268.0,
+                -25.0
+              ],
+              [
+                -332.0,
+                -25.0
+              ],
+              [
+                -332.0,
+                -59.0
+              ],
+              [
+                -268.0,
+                -59.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-OBS-02",
+        "properties": {
+          "id": "PL-OBS-02",
+          "x": -200,
+          "y": -42,
+          "width": 64,
+          "depth": 34,
+          "kind": "observation-closed-proof",
+          "feature_type": "public_room"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -168.0,
+                -59.0
+              ],
+              [
+                -168.0,
+                -25.0
+              ],
+              [
+                -232.0,
+                -25.0
+              ],
+              [
+                -232.0,
+                -59.0
+              ],
+              [
+                -168.0,
+                -59.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-OBS-03",
+        "properties": {
+          "id": "PL-OBS-03",
+          "x": -100,
+          "y": -42,
+          "width": 64,
+          "depth": 34,
+          "kind": "observation-public-observation",
+          "feature_type": "public_room"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -68.0,
+                -59.0
+              ],
+              [
+                -68.0,
+                -25.0
+              ],
+              [
+                -132.0,
+                -25.0
+              ],
+              [
+                -132.0,
+                -59.0
+              ],
+              [
+                -68.0,
+                -59.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-OBS-04",
+        "properties": {
+          "id": "PL-OBS-04",
+          "x": 0,
+          "y": -42,
+          "width": 64,
+          "depth": 34,
+          "kind": "observation-escorted-use",
+          "feature_type": "public_room"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                32.0,
+                -59.0
+              ],
+              [
+                32.0,
+                -25.0
+              ],
+              [
+                -32.0,
+                -25.0
+              ],
+              [
+                -32.0,
+                -59.0
+              ],
+              [
+                32.0,
+                -59.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-OBS-05",
+        "properties": {
+          "id": "PL-OBS-05",
+          "x": 100,
+          "y": -42,
+          "width": 64,
+          "depth": 34,
+          "kind": "observation-timed-public-use",
+          "feature_type": "public_room"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                132.0,
+                -59.0
+              ],
+              [
+                132.0,
+                -25.0
+              ],
+              [
+                68.0,
+                -25.0
+              ],
+              [
+                68.0,
+                -59.0
+              ],
+              [
+                132.0,
+                -59.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-OBS-06",
+        "properties": {
+          "id": "PL-OBS-06",
+          "x": 200,
+          "y": -42,
+          "width": 64,
+          "depth": 34,
+          "kind": "observation-ordinary-adoption",
+          "feature_type": "public_room"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                232.0,
+                -59.0
+              ],
+              [
+                232.0,
+                -25.0
+              ],
+              [
+                168.0,
+                -25.0
+              ],
+              [
+                168.0,
+                -59.0
+              ],
+              [
+                232.0,
+                -59.0
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "PL-OBS-07",
+        "properties": {
+          "id": "PL-OBS-07",
+          "x": 300,
+          "y": -42,
+          "width": 64,
+          "depth": 34,
+          "kind": "observation-review-and-retirement",
+          "feature_type": "public_room"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                332.0,
+                -59.0
+              ],
+              [
+                332.0,
+                -25.0
+              ],
+              [
+                268.0,
+                -25.0
+              ],
+              [
+                268.0,
+                -59.0
+              ],
+              [
+                332.0,
+                -59.0
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "ok": true,
+  "submission_dir": "submissions/PozdnyakovMaxim/shared-floor-jingzhang",
+  "pr_author": "PozdnyakovMaxim",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/proposal.md"
+      ],
+      "changelog_files": [],
+      "changed_files": [
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/agent.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/corridor-atlas.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/corridor-atlas.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/dazhongsi-connectivity.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/dazhongsi-connectivity.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/dazhongsi-demonstrator.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/dazhongsi-demonstrator.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/design-roots.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/design-roots.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/exchange-hall.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/exchange-hall.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/key-areas.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/key-areas.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/land-use-structure.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/land-use-structure.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/masterplan-spatial-authority.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/masterplan-spatial-authority.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/metrics-evidence.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/metrics-evidence.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/mobility-bluegreen.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/mobility-bluegreen.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/origin-cloister.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/origin-cloister.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/proof-yard.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/proof-yard.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/site-overview.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/site-overview.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/three-areas-delivery.en.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/three-areas-delivery.png",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/media/exchange-hall-evening.jpg",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/media/origin-cloister-summer.jpg",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/media/proof-yard-winter.jpg",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assumptions.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/compliance_matrix.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/design_depth_matrix.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/drawings/a0-boards.en.pdf",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/drawings/a0-boards.pdf",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/drawings/a3-booklet.en.pdf",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/drawings/a3-booklet.pdf",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/buildings.geojson",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/constraints.geojson",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/green_space.geojson",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/key_areas.geojson",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/land_use.geojson",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/phasing.geojson",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/public_space.geojson",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/roads.geojson",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/geometry/site_boundary.geojson",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/manifest.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/metrics.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/proposal.en.md",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/proposal.md",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/report/copyright_statement.md",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/report/narrative.md",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/report/proposal.en.html",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/report/proposal.html",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/self_check.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/simulation.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/sources.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/standard_matrix.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/compiler-source.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/corridor-context.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/corridor-room-figure-ground.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/dazhongsi-osm-context.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/direct-sun-build-receipt.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/direct-sun-checks.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/direct-sun-input-receipt.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/direct-sun-latest.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/direct-sun-metrics.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/direct-sun-run-contract.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/direct-sun-zone-baselines.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c01-civic-proving-line-design-state-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c01-civic-proving-line-evaluation-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c01-civic-proving-line-geometry-geojson.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c02-four-season-courtyards-design-state-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c02-four-season-courtyards-evaluation-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c02-four-season-courtyards-geometry-geojson.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c03-shared-floor-design-state-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c03-shared-floor-evaluation-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c03-shared-floor-geometry-geojson.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-counterfactual-rebind-gate-challenge-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-human-handoff-recovery-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-run-contract-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-selection-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-simulation-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-run.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-source.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/loc-jingzhang-1909-011.jpg",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/loc-jingzhang-1909-012.jpg",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/loc-jingzhang-1909-026.jpg",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/loc-jingzhang-1909-036.jpg",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/reproducibility.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/index.en.html",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang": "formal"
+      },
+      "total_bytes": 41089111,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 685971.893,
+        "public_space_area_sqm": 24641.39,
+        "building_footprint_area_sqm": 23160.0,
+        "green_ratio": 0.060105,
+        "public_space_ratio": 0.002159
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.060105,
+        "public_space_ratio": 0.002159
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 69,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 41,
+          "standard": 6,
+          "depth": 14,
+          "data": 21,
+          "metric": 38
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
+    }
+  ]
+}
