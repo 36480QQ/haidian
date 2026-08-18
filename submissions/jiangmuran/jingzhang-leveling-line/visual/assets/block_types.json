@@ -38,8 +38,8 @@
       "criterion_en": "**City-type means the ground floor runs continuous with the station concourse and no queue stands on the footway.** All four quadrants of the junction walkable (FIG.12); the machine queue reserve **behind the building line**, 18 m² for eight units at 1,800 mm turning (FIG.24); the third-order benchmark reachable from the concourse.",
       "fails_zh": "排队一旦占用人行道净宽，本区按城市型不合格——即使排队本身有序。",
       "fails_en": "The moment a queue takes footway width the area fails the type, however orderly the queue is.",
-      "evidence_zh": "FIG.12、FIG.24、`metrics.json#queue_reserve_area_sqm`",
-      "evidence_en": "FIG.12, FIG.24, `metrics.json#queue_reserve_area_sqm`"
+      "evidence_zh": "FIG.12、FIG.24；**18 ㎡ 这一格没有对应指标**，是本方案自定的设计值",
+      "evidence_en": "FIG.12, FIG.24; **no metric stands behind the 18 m²**"
     }
   ]
 }
