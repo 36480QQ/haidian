@@ -159,6 +159,33 @@
         background: #e4eceb;
         margin: 3px;
       }
+      .reading-lanes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 14px;
+        margin: 22px 0;
+      }
+      .reading-lane {
+        background: #fff;
+        border: 1px solid #d8dbd4;
+        border-radius: 14px;
+        padding: 16px;
+      }
+      .reading-lane strong {
+        color: var(--green);
+        font-size: 20px;
+      }
+      .reading-lane p {
+        margin: 6px 0 0;
+      }
+      .reading-lane-action {
+        display: inline-block;
+        margin-top: 10px;
+        color: var(--ink);
+        font-weight: 700;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
     </style>
     <link rel="stylesheet" href="assets/review-walkthrough.css">
     <link rel="stylesheet" href="assets/round17-reading.css">
@@ -186,9 +213,9 @@
         </figure>
         <p id="cold-read-proof-boundary" class="entry-lead"><strong>一个概念：</strong>连续日常轨让普通任务始终可完成，间歇验证轨只作自愿、限域、可停止的旁侧叠层；众智园 VERIFY、原点社区 CO-CREATE、大钟寺 PUBLISH。<strong>一个边界：</strong>全案仍为 G0、provisional geometry，图面清楚不等于场地准确。</p>
         <div class="reading-lanes" aria-label="三档阅读路径">
-          <article class="reading-lane"><strong>30 秒</strong><p>看图 01：双轨、三处原型、失败侧线、六类信号，以及临时边界。</p></article>
-          <article class="reading-lane"><strong>3 分钟</strong><p>沿前台六段依次阅读：封面—普通生活—四态旅程—三处空间—公共信号—专业交接。</p></article>
-          <article class="reading-lane"><strong>15 分钟</strong><p>展开证据库，逐项核查 D01—D08、H01—H07、权利、来源与重算触发。</p></article>
+          <article class="reading-lane"><strong>30 秒</strong><p>先认一个概念与一个边界：双轨、三处原型、失败侧线与临时几何。</p><a class="reading-lane-action" href="#cold-read-proof-boundary">在此核对概念与边界 →</a></article>
+          <article class="reading-lane"><strong>3 分钟</strong><p>从普通生活开始，依次读四态旅程、三处空间、公共信号与专业交接。</p><a class="reading-lane-action" href="#ordinary-life">从普通生活开始 →</a></article>
+          <article class="reading-lane"><strong>15 分钟</strong><p>从专业交接进入，逐对象追到 D01—D08、H01—H07、权利、来源与复算触发。</p><a class="reading-lane-action" href="#review-handoff">从证据与交接开始 →</a></article>
         </div>
         <details class="entry-evidence">
           <summary>展开三框场地依据与临时边界说明</summary>

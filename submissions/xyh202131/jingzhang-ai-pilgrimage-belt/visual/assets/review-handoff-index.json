@@ -31,7 +31,7 @@
       "zh": "场景护照：12 个场景的门级与护照字段覆盖"
     }
   },
-  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R40",
+  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R41",
   "evidence_integrity": {
     "cold_read_answer_map": {
       "answers_checked": 8,
@@ -41,6 +41,25 @@
       "unique_answer_ids": true,
       "unique_primary_anchors": true
     },
+    "reading_ladder_r41": {
+      "audit_type": "editorial_navigation_check",
+      "post_repair": {
+        "bilingual_targets_resolved": 3,
+        "direct_start_actions_per_language": 3,
+        "targets": [
+          "#cold-read-proof-boundary",
+          "#ordinary-life",
+          "#review-handoff"
+        ]
+      },
+      "red_before": {
+        "reading_depth_cards_per_language": 3,
+        "direct_start_actions_per_language": 0,
+        "reproduction": "Count <a> elements inside visual/index(.en).html .reading-lanes; both pages returned 0 before repair, so the stated 3-minute and 15-minute paths required inferred scrolling rather than a declared start."
+      },
+      "scope_en": "This records only front-stage navigation repair. It does not create evidence, alter the 30-second/3-minute/15-minute claims, certify comprehension, or change maturity, rights or real-world status.",
+      "scope_zh": "本记录只说明前台导航修复；不生成证据、不改变 30 秒／3 分钟／15 分钟主张、不认证理解效果，也不改变成熟度、权利或现实状态。"
+    },
     "generator_enforced": true,
     "heading_parity": {
       "en": 87,
@@ -48,7 +67,12 @@
       "zh": 87
     },
     "ledger_digest_coherence": {
-      "checked": 139,
+      "checked": 138,
+      "excluded": {
+        "manifest.json": "manifest cannot hash itself",
+        "self_check.json": "the self-check writer replaces this file and refreshes its final manifest digest in one step; verify it against manifest.json rather than duplicating a stale ledger digest",
+        "visual/assets/rights-clearance-ledger.json": "ledger cannot hash itself"
+      },
       "mismatched": 0
     },
     "marker_target_resolution": {

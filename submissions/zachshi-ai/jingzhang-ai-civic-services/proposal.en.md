@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the Jingzhang Railway heritage corridor as the main axis, this proposal links the subdistrict offices, community health centers, and legal aid points along the corridor into a single AI civic-service network. The proposal puts forward the overall concept of an 'AI Civic Service Spine': a one-stop government, health, and legal civic service hub is built in the AI Origin Community; citizen service stations are deployed along the main axis of the heritage park; and the belt is formed of 13 service passage segments, 6 civic-service buildings, 3 service hub plazas, and 5 street-side stations, supported by 12 AI scenario cards, 5 categories of user personas, and 3 civic-service landmark destinations. AI is used only for service navigation and public information Q&A; it does not diagnose and does not approve, and all content is manually reviewed by medical, legal, and data-security professionals."
 tracks: ["ai-public-services"]
 scenarios: ["ai-health-service-navigation"]
-iteration: "v4.0"
+iteration: "v5.0"
 ---
 
 # Jingzhang AI Civic Services Belt: A One-Stop Government, Health and Legal Services Network
@@ -97,29 +97,35 @@ The chronic problem with AI in government services is "it answers very well, but
 
 **Relationship to "someone is responsible when things cannot be done."** The core of the Three Guarantees, One Verification is not to make AI smarter, but to give "cannot be done" a clear responsible person, a clear time limit, auditable records, and an independent verifier. This is what distinguishes it from mature platforms such as City Brain, Suishenban, and Jingtong — those platforms provide navigation functions, while this proposal provides the **responsibility infrastructure** of navigation: behind every navigation there is a traceable guarantee receipt, and behind every receipt there is a named human responsibility position [source:shanghai-suishenban].
 
-### Completion Checklist: Internalizing the WHO Surgical Safety Checklist Methodology (Original to This Proposal, v4)
+### Core Mechanism: Accountability Spaces (Original to This Proposal, v5)
 
-The Three Guarantees, One Verification answers "who is responsible, how fast the response, how the trail is kept, and who verifies," but it does not yet answer "what is confirmed at each step." This proposal transplants the methodology of the WHO Surgical Safety Checklist: **three-phase checks of before/during/after, with item-by-item oral confirmation required before proceeding** [E:CIVIC-COMPLETION-CHECKLIST].
+The Three Guarantees, One Verification solves "someone is responsible when things cannot be done," but a more fundamental question still remains. This proposal puts forward a counter-intuitive fact: **the smarter government-service AI becomes, the less citizens know who to hold accountable** — AI stands between citizens and the clerks, and a matter may be "done" while no one acknowledges accountability for it. The core question of the Three Guarantees, One Verification is not "how standardly things are handled," but **"who signs, who is responsible, and who can see"** — using "accountability" as the lens (just as human-hours uses time as its lens, this proposal uses accountability as its lens) [E:CIVIC-ACCOUNTABILITY-SPACES].
 
-**The lens: Completed.** Service success is judged by whether "the matter is done (办成)," not by whether "the AI answered well." The checklist breaks "getting it done" into actions that can be confirmed item by item — the before-check (materials/permissions/fallback person), the during-check (steps), and the after-check (completion/receipt); any item not confirmed means the next phase is not entered [data:visual/assets/completion-checklist.json#lens].
+**Design principle: every service point grows an "accountability face."** Citizens can see with their own eyes who is handling their matter, how far it has progressed, and who signed it — just as a railway ticket window displays handling information. The Three Guarantees, One Verification is the institution; the accountability space is its **physical carrier** [data:visual/assets/accountability-stands.json#design-principle].
 
-**Three-phase checklist rules:**
-- **Before-check**: the matter name, the material list, handling permissions, and the human fallback window — if materials are incomplete, the applicant is told on the spot to make corrections, and handling does not begin.
-- **During-check**: handling steps, completeness of materials, and whether supplements are needed — the AI only confirms the steps and does not perform substantive review.
-- **After-check**: the acceptance receipt, notification of the handling time limit, and the complaint channel — confirming "completed" or "accepted"; if not completed, the escalation chain is triggered.
+**5 accountability stands (deployed along the corridor; full specifications at `visual/assets/accountability-stands.json`):**
 
-**No-AI baseline (negative space).** Without any AI, citizens can still get matters done through human windows, hotlines, and community networks. AI is a layer that can be switched off; with AI switched off, the checklist **degrades into a purely human three-phase check** — completion does not depend on AI [data:visual/assets/completion-checklist.json#negative-baseline].
-
-**The checklists for the 12 categories of services** (full version at `visual/assets/completion-checklist.json`):
-
-| Service type | Before-check | During-check | After-check |
+| Stand | Location | Displayed content | No-AI equivalent |
 | --- | --- | --- | --- |
-| Government handling | Matter/materials/permissions/window fallback | Steps/material completeness | Acceptance receipt/time limit/12345 |
-| Health services | Department/procedure/service-desk fallback | Referral pathway (AI does not diagnose) | Follow-up/return-visit reminders/health hotline |
-| Legal aid | Aid category/materials/legal-aid-point fallback | Eligibility preliminary-review boundary | Acceptance confirmation/time limit/legal-aid hotline |
-| Emergency rescue | Emergency points/duty dispatch | Emergency boundary (direct transfer to hotline) | Dispatch response/emergency command center |
+| AS-01 Origin Community accountability stand | Government service station | Matter / handler (name + position) / stage / time limit / signature / complaint | Paper accountability card (issued at the counter) |
+| AS-02 Zhongzhiyuan accountability stand | Talent health services segment | Matter / handler / stage / referral progress / signature | Paper accountability card |
+| AS-03 Dazhongsi accountability stand | Legal aid center | Aid matter / handling lawyer (desensitized) / stage / signature | Paper accountability card |
+| AS-04 Park central-section accountability stand | Central-section station | Matter / handler / stage / signature | Paper accountability card |
+| AS-05 Southern-end accountability stand | Southern-end node | Matter / handler / stage / signature | Paper accountability card |
 
-**Relationship to the Three Guarantees, One Verification.** The receipt is the record of the check result, and verification is the spot-check of the checks — the Three Guarantees, One Verification answers the "responsibility chain," while the checklist answers "what is confirmed at each step." Together the two guarantee: for every matter a citizen handles, every step has someone confirming it, a record of it, and verifiability [standard:GENERATIVE-AI-INTERIM-MEASURES].
+**Completion display (citizens see "who signed").** Completed or accepted matters are displayed at the accountability stand (desensitized): matter / handler (surname + employee number) / stage / signature / time limit / complaint entry. Full examples at `visual/assets/completion-display.json` [data:visual/assets/completion-display.json#displays]:
+
+| Matter | Handling | Stage | Signature |
+| --- | --- | --- | --- |
+| Social security card handling | Integrated counter Wang X (0231) | Accepted | Wang X 2026-10-02 |
+| Referral navigation | Health service desk Li X (0117) | Referred | Li X 2026-10-02 |
+| Aid application | Legal aid center Zhang X (4521) | Initial review | Zhang X 2026-10-02 |
+
+**Negative-space baseline.** Without any AI, the counter handler tells the citizen in person "who handles it, how far it has progressed, and whom to ask" — the accountability function does not depend on AI, and the paper accountability card and the electronic display carry the same content [data:visual/assets/accountability-stands.json#negative-baseline].
+
+**Rule-closure validation.** `run_accountability_tabletop.js` correctly classifies all 72 synthetic cases of 12 services × 6 rule branches (complete / no named handler / no signature / stage not visible / missing complaint channel / time limit unknown) — 36 blocked / 12 accountable / 24 flagged — demonstrating that the accountability rule logic is closed. However, this only proves correct classification and does not constitute evidence of on-site service, compliance, or authorization; on-site performance remains null with status `not_authorized_not_run` [data:visual/assets/accountability-tabletop-evidence.json#blocked].
+
+**Relationship to the Three Guarantees, One Verification.** The Three Guarantees, One Verification answers "who is responsible, how fast the response, how the trail is kept, and who verifies" (the institution), while the accountability space answers "where citizens can see responsibility" (the space) — the receipt is the content of accountability, and the accountability stand is the display surface of the receipt. Together the two guarantee: **the matters citizens handle not only get done, but citizens can also see who is handling them** [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
 ### Spatial Structure
 
