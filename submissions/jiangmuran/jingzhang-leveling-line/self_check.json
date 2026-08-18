@@ -95,7 +95,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "attribution_kind_qa.py — attribution kind: 4 completeness attribution(s) across 4 limited items each describe what they actually name — 2 of them metrics, the rest registered source documents, and none of the metrics is called a document or said to be unobtained while holding a value. Scope: this checks the sentence against the kind, not whether the declared limit is the right one, which stays a design judgement"
+      "message": "attribution_kind_qa.py — attribution kind: 2 completeness attribution(s) across 2 limited items each describe what they actually name — 2 of them metrics, the rest registered source documents, and none of the metrics is called a document or said to be unobtained while holding a value. Scope: this checks the sentence against the kind, not whether the declared limit is the right one, which stays a design judgement"
     },
     {
       "check_id": "PKG_BENCHMARK_CHAIN_QA",
@@ -303,7 +303,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 135 mutations, 93 of 96 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 137 mutations, 93 of 96 gates proven able to fail, 3 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -311,7 +311,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "gate_mutation_qa.py — gate mutation: 135 deliberate defects across 93 of 96 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 137 deliberate defects across 93 of 96 gates, all caught and all named by the gate that caught them; 3 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_GEOMETRY_CITATION_QA",
@@ -351,7 +351,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 11 bytes to spare. The package totals 29.1 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 11 bytes to spare. The package totals 29.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_INTERNED_RENDER_QA",
@@ -407,7 +407,7 @@
       "severity": "info",
       "target": "compliance/standard/design_depth matrices",
       "source": "package-provided",
-      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 736 declared across three matrices, 736 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 27 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
+      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 734 declared across three matrices, 734 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 27 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
     },
     {
       "check_id": "PKG_MEASUREMENT_PROTOCOL_QA",
@@ -447,7 +447,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "naming_qa.py — naming: 659 distinct names harvested from the package — 635 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 663 distinct names harvested from the package — 639 matching exactly one of 24 published families and 24 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_OFFICIAL_AREA_QA",
@@ -543,7 +543,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "register_split_qa.py — register split: 271 + 80 = 351 entries, both halves stating the same total of 351, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
+      "message": "register_split_qa.py — register split: 273 + 80 = 353 entries, both halves stating the same total of 353, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
     },
     {
       "check_id": "PKG_REGISTRY_ALIGNMENT_QA",
@@ -687,7 +687,7 @@
       "severity": "info",
       "target": "package",
       "source": "package-provided",
-      "message": "shipped_bilingual_qa.py — shipped bilingual: 37 field pair(s) across the shipped JSON the reviewer receives whole carry both languages (assumptions.json 19, standard_matrix.json 18) — the rule parity_qa applies to the two Markdown editions, applied to the JSON as well. Scope: it holds the fields listed above and not every Chinese string in the package; still outside it, and named so the gap is visible rather than implied — design_depth_matrix.json: title_zh, evidence_summary_zh, completeness_qualifier_zh; standard_matrix.json: evidence_summary_zh; self_check.json: the gate message lines, which the build writes in Chinese"
+      "message": "shipped_bilingual_qa.py — shipped bilingual: 84 field pair(s) across the shipped JSON the reviewer receives whole carry both languages (assumptions.json 19, compliance_matrix.json 23, design_depth_matrix.json 15, standard_matrix.json 27) — the rule parity_qa applies to the two Markdown editions, applied to the JSON as well. Scope: it holds the fields listed above and not every Chinese string in the package; still outside it, and named so the gap is visible rather than implied — design_depth_matrix.json: title_zh and completeness_qualifier_zh; self_check.json: the gate message lines, which the build writes in Chinese"
     },
     {
       "check_id": "PKG_SHIPPED_VALIDATION_QA",
@@ -839,7 +839,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 351 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 26、rival-read 24、self 225；最常见形状：check-measured-the-convenient-thing 61、two-copies-of-one-thing-drifted 57、deliverable-not-inspected-before-shipping 31、claim-that-cannot-be-checked-by-construction 29。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 351 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 353 条，按发现者：audit 40、external 31、external-reviewer 5、own-gate 26、rival-read 24、self 227；最常见形状：check-measured-the-convenient-thing 61、two-copies-of-one-thing-drifted 57、deliverable-not-inspected-before-shipping 31、claim-that-cannot-be-checked-by-construction 29。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 353 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -847,7 +847,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：135 处人为缺陷，覆盖 93 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 135 deliberate defects across 93 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：137 处人为缺陷，覆盖 93 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 137 deliberate defects across 93 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -1054,7 +1054,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30476925,
+      "total_bytes": 30519462,
       "maintainer_bypass": false
     },
     "stderr": ""

@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M139",
+      "gate": "attribution_kind_qa.py",
+      "target": "design_depth_matrix.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "让一条深度项宣称受限于 `MOHURD-ARCH-DESIGN-DEPTH-2016`，而该项的 `source_ids` 里**根本没有这份文件**——限定语却写着「它引用的 …」。",
+      "what_en": "Make a depth item declare MOHURD-ARCH-DESIGN-DEPTH-2016 as its limit while that document is **not in the item's source_ids at all** - with a qualifier that still reads it cites.",
+      "why_zh": "这正是 E353 之前两条深度项的真实状态：受限声明写进来时有条件，出去时没有，**引用消失了，声明留着**。于是文件里出现一句关于「本项引用的某文件」的话，而本项不引用它，而 `design_depth_matrix.json` 由评审整份读到。",
+      "why_en": "This is exactly the state two depth items were in before E353: the limit had a condition on the way in and none on the way out, so **the reference went and the declaration stayed**. The file then carried a sentence about a document the item cites, for an item that does not cite it, and design_depth_matrix.json is read whole by the reviewer."
+    },
+    {
       "id": "M137",
       "gate": "heading_parity_qa.py",
       "target": "proposal.en.md",
@@ -1288,6 +1300,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M138",
+      "gate": "shipped_bilingual_qa.py",
+      "target": "build_matrix_evidence.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "让英文证据摘要直接引用**中文小节名**。**每一行照样通顺**，只是它点名的那一节在英文版里根本不存在——英文读者拿着这行去找，找不到。",
+      "what_en": "Make the English evidence summaries name the **Chinese** section titles. **Every row still reads fluently**; it simply names a section the English edition does not contain, so an English reader following the row finds nothing.",
+      "why_zh": "47 行摘要由构建composed，章节名来自**两版标题按序配对**推出的映射——而那份映射之所以成立，是因为 E351 把英文版缺的两个小节标题按名声明了。**一旦不查映射直接用原名，缺陷不会报错，只会让英文行指向中文目录。**",
+      "why_en": "The 47 summaries are composed by the build, and their section names come from a map derived by pairing the two editions' headings in order - a map that only holds because E351 declared, by name, the two subsections the English edition lacks. **Bypassing the map raises no error; it just makes the English rows point into the Chinese table of contents.**"
+    },
+    {
       "id": "M136",
       "gate": "attribution_kind_qa.py",
       "target": "build_matrix_evidence.py",
@@ -1652,7 +1677,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 135,
+  "caught": 137,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
