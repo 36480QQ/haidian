@@ -859,9 +859,13 @@
     "why_here_zh": "**版权与许可的逐文件台账在 `visual/assets/rights_ledger.json`，而那份文件不在评审收到的清单里，因此这里给出摘要**：每一类素材的来源、许可与核验方式，都可以在这份文件内独立读到。",
     "why_here_en": "The per-file copyright ledger is visual/assets/rights_ledger.json, which is not among the files handed over, so this summary carries the same ground: for each class of asset, its source, its licence and how to check it, readable without leaving this file.",
     "author": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
-    "files_declared": 154,
+    "files_declared": 159,
     "file_classes": {
-      "unclassified": 154
+      "author-originated": 136,
+      "provisional-only-with-stated-limit": 9,
+      "author-originated-measurement": 8,
+      "author-originated-with-embedded-fonts": 4,
+      "third-party-open-data-redistributed": 2
     },
     "embedded_fonts": [
       {
