@@ -56,8 +56,8 @@
      "date": "2026-08-18",
      "scope_zh": "drawings/a3-booklet.pdf 与 drawings/a3-booklet.en.pdf",
      "scope_en": "drawings/a3-booklet.pdf and drawings/a3-booklet.en.pdf",
-     "result_zh": "中文册 16 页 2,658,093 字节，英文册 16 页 2,131,939 字节，合计 32 页，与「16 × 2」的登记一致（v8.0 因页 11 审计明细附图的引题改为图版现行短式而全册重排，页数不变，前一版为 2,644,449 与 2,117,070 字节；v7.9 在页 11 之后插入四页几何核验图版，页数由 12 × 2 增至 16 × 2，为本条目登记以来页数首次变化，更早为 12 页 2,432,452 与 12 页 2,029,307 字节；v7.8 因首页重做与页 11 可达域台账整表复算重出而重排，更早为 1,849,857 与 1,436,373 字节；v7.7 换底图版后曾重排两次，再早为 1,846,694 与 1,435,991 字节，换底前为 1,692,039 与 1,280,468 字节）",
-     "result_en": "16 pages / 2,658,093 bytes (zh) and 16 pages / 2,131,939 bytes (en); 32 pages in total, matching the registered 16 x 2 (v8.0 re-imposes the booklet after the page-11 companion ledger switched to the plate's current short title, with the page count unchanged and the previous sizes 2,644,449 and 2,117,070 bytes; v7.9 inserted four geometry-verification plates behind page 11, taking the count from 12 x 2 to 16 x 2 — the first page-count change since this entry began registering it; the sizes before that were 12 pages / 2,432,452 bytes and 12 pages / 2,029,307 bytes; before that v7.8 re-imposed the booklet for the cover rebuild and the fully recomputed page-11 reachability ledger, at 1,849,857 and 1,436,373 bytes, and 1,846,694 and 1,435,991 bytes after the two v7.7 re-impositions, and 1,692,039 and 1,280,468 bytes before the re-basing)",
+     "result_zh": "中文册 16 页 2,084,915 字节，英文册 16 页 1,978,912 字节，合计 32 页，与「16 × 2」的登记一致（v8.1 把逐页渲染各自产生的分页字体子集按字重合并为整册共用一份，页数、页面尺寸与逐页栅格三项均不变，前一版为 2,658,093 与 2,131,939 字节；v8.0 因页 11 审计明细附图的引题改为图版现行短式而全册重排，页数不变，前一版为 2,644,449 与 2,117,070 字节；v7.9 在页 11 之后插入四页几何核验图版，页数由 12 × 2 增至 16 × 2，为本条目登记以来页数首次变化，更早为 12 页 2,432,452 与 12 页 2,029,307 字节；v7.8 因首页重做与页 11 可达域台账整表复算重出而重排，更早为 1,849,857 与 1,436,373 字节；v7.7 换底图版后曾重排两次，再早为 1,846,694 与 1,435,991 字节，换底前为 1,692,039 与 1,280,468 字节）",
+     "result_en": "16 pages / 2,084,915 bytes (zh) and 16 pages / 1,978,912 bytes (en); 32 pages in total, matching the registered 16 x 2 (v8.1 folds the per-page font subsets that separate rendering had produced into one shared program per weight, leaving page count, page size and the per-page raster unchanged, from 2,658,093 and 2,131,939 bytes; v8.0 re-imposes the booklet after the page-11 companion ledger switched to the plate's current short title, with the page count unchanged and the previous sizes 2,644,449 and 2,117,070 bytes; v7.9 inserted four geometry-verification plates behind page 11, taking the count from 12 x 2 to 16 x 2 — the first page-count change since this entry began registering it; the sizes before that were 12 pages / 2,432,452 bytes and 12 pages / 2,029,307 bytes; before that v7.8 re-imposed the booklet for the cover rebuild and the fully recomputed page-11 reachability ledger, at 1,849,857 and 1,436,373 bytes, and 1,846,694 and 1,435,991 bytes after the two v7.7 re-impositions, and 1,692,039 and 1,280,468 bytes before the re-basing)",
      "provenance_zh": "本轮实测",
      "provenance_en": "Measured this round",
      "limitations_zh": "仅核对页数与体量，不核对页面内容",
@@ -170,8 +170,8 @@
      "date": "2026-08-18",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "非空行 638 行对 638 行，结构类型逐行不一致数为 0（2026-08-18 按 v8.0.1 定稿复测；本轮为使英文版符合仓库 256 KiB 单文件上限所做的收束先撤下年度公开报告表、再把国土空间创新方向表降格为单段枚举，两处均双语同做，双侧各减 14 行非空，此前 v8.0 为 652/652，v7.9 为 612/612，v7.8 执行摘要重排前为 596/596）",
-     "result_en": "638 non-blank lines on each side, with zero line-by-line type mismatches (re-measured 2026-08-18 against the final v8.0.1 text; the slimming that brings the English version under the repository's 256 KiB single-file limit withdrew the annual-public-report table and demoted the territorial-planning innovation table to a single enumerated paragraph, both in either language, removing 14 non-blank lines on each side, from 652/652 in v8.0, 612/612 in v7.9 and 596/596 before the v7.8 executive-summary rework)",
+     "result_zh": "非空行 639 行对 639 行，结构类型逐行不一致数为 0（2026-08-18 按 v8.1 定稿复测；本轮双语同删双态漫游段、把服务等价基准的四段版本治理改写为主张句加五行表、两处控制台块按包内既有惯例单语化，双侧非空各净增 1 行，此前 v8.0.1 为 638/638；v8.0.1 的收束为本轮为使英文版符合仓库 256 KiB 单文件上限所做的收束先撤下年度公开报告表、再把国土空间创新方向表降格为单段枚举，两处均双语同做，双侧各减 14 行非空，此前 v8.0 为 652/652，v7.9 为 612/612，v7.8 执行摘要重排前为 596/596）",
+     "result_en": "639 non-blank lines on each side, with zero line-by-line type mismatches (re-measured 2026-08-18 against the final v8.1 text; this round removed the dual-state paragraph, rewrote the four version-governance paragraphs of the Service Equivalence Baseline as a claim plus a five-row table, and brought both console blocks into the package's existing single-language convention, all in either language, for a net gain of one non-blank line on each side, from 638/638 in v8.0.1; the v8.0.1 slimming the slimming that brings the English version under the repository's 256 KiB single-file limit withdrew the annual-public-report table and demoted the territorial-planning innovation table to a single enumerated paragraph, both in either language, removing 14 non-blank lines on each side, from 652/652 in v8.0, 612/612 in v7.9 and 596/596 before the v7.8 executive-summary rework)",
      "provenance_zh": "本轮实测",
      "provenance_en": "Measured this round",
      "limitations_zh": "结构级比对，不判断译文是否准确、是否遗漏语义",
@@ -206,8 +206,8 @@
      "date": "2026-08-18",
      "scope_zh": "proposal.md 与 proposal.en.md 全文",
      "scope_en": "The full text of proposal.md and proposal.en.md",
-     "result_zh": "表格行 292 对 292（含分隔行），数据行 214 对 214，逐行列数全等，列数不一致索引为空集（2026-08-18 按 v8.0.1 定稿复测；本轮双语同撤年度公开报告表，并把国土空间创新方向表降格为单段枚举，表数由 41 降至 39，此前 v8.0 为 306/306 与 224/224，v7.9 为 280/280 与 204/204，v7.8 执行摘要新增命名对照卡一张表、六个数据行，更早为 272/272 与 198/198，首测时为 221/221 与 189/189）",
-     "result_en": "Table rows 292 vs 292 (separators included), data rows 214 vs 214, per-row column counts equal, mismatch index set empty (re-measured 2026-08-18 against the final v8.0.1 text; this round withdrew the annual-public-report table and demoted the territorial-planning innovation table to a single enumerated paragraph, both in either language, and the table count falls from 41 to 39, down from 306/306 and 224/224 in v8.0 and 280/280 and 204/204 in v7.9; the v7.8 executive-summary rework had added one naming-key table of six data rows, taking the counts up from 272/272 and 198/198, and from 221/221 and 189/189 when first measured)",
+     "result_zh": "表格行 299 对 299（含分隔行），数据行 219 对 219，逐行列数全等，列数不一致索引为空集（2026-08-18 按 v8.1 定稿复测；本轮双语同增服务等价基准版本治理表一张、五个数据行，表数由 39 增至 40，此前 v8.0.1 为 292/292 与 214/214；v8.0.1 的收束为本轮双语同撤年度公开报告表，并把国土空间创新方向表降格为单段枚举，表数由 41 降至 39，此前 v8.0 为 306/306 与 224/224，v7.9 为 280/280 与 204/204，v7.8 执行摘要新增命名对照卡一张表、六个数据行，更早为 272/272 与 198/198，首测时为 221/221 与 189/189）",
+     "result_en": "Table rows 299 vs 299 (separators included), data rows 219 vs 219, per-row column counts equal, mismatch index set empty (re-measured 2026-08-18 against the final v8.1 text; this round added one version-governance table with five data rows in either language, taking the table count from 39 to 40, up from 292/292 and 214/214 in v8.0.1; the v8.0.1 round this round withdrew the annual-public-report table and demoted the territorial-planning innovation table to a single enumerated paragraph, both in either language, and the table count falls from 41 to 39, down from 306/306 and 224/224 in v8.0 and 280/280 and 204/204 in v7.9; the v7.8 executive-summary rework had added one naming-key table of six data rows, taking the counts up from 272/272 and 198/198, and from 221/221 and 189/189 when first measured)",
      "provenance_zh": "本轮实测",
      "provenance_en": "Measured this round",
      "limitations_zh": "比对的是表格骨架，不比对单元格内容的译文对应",
@@ -317,8 +317,8 @@
     "Structural equivalence does not guarantee semantic equivalence: two versions can align structurally while individual wordings differ in the strength of their claim, a layer not tested here."
    ],
    "remeasured_on": "2026-08-18",
-   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：907/907 行、638/638 非空、292/292 表格行、四类锚点 257/257（depth 深度锚点 40/40、assumption 12/12、self_check 4/4 另计），逐行结构不一致 0；v8.0.1 为使英文版符合仓库单文件上限所做的收束双语同撤年度公开报告表，并把国土空间创新方向表降格为单段枚举，行数减 16、非空减 14、表格行减 14、锚点未减，此前 v8.0 为 923 行、652 非空、306 表格行、四类锚点 257；v7.9 的四处正文追加均为行内追加、不新增行，行数、非空行与表格行三项因此不变，只有四类锚点由 230 增至 232；v7.8 执行摘要重排前为 843 行、596 非空、272 表格行、四类锚点 224",
-   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 907/907 lines, 638/638 non-blank, 292/292 table rows, four-type anchors 257/257 (depth anchors 40/40, assumption 12/12 and self_check 4/4 counted separately), zero line-by-line type mismatches; the v8.0.1 slimming that brings the English version under the repository single-file limit withdrew the annual-public-report table and demoted the territorial-planning innovation table to a single enumerated paragraph, both in either language, removing 16 lines, 14 non-blank lines and 14 table rows while dropping no anchor, from 923 lines, 652 non-blank, 306 table rows and four-type anchors 257 in v8.0; all four v7.9 body additions are appended inline and add no line, so lines, non-blank lines and table rows are unchanged and only the four-type anchor total moves from 230 to 232; before the v7.8 executive-summary rework the figures were 843 lines, 596 non-blank, 272 table rows and 224 four-type anchors"
+   "remeasured_note_zh": "正文行数随后续修订变化后按当前版本复测（行数为 wc -l 口径）：905/905 行、639/639 非空、299/299 表格行、四类锚点 257/257（depth 深度锚点 40/40、assumption 12/12、self_check 4/4 另计），逐行结构不一致 0；v8.1 双语同删双态漫游段、四段版本治理改为主张句加五行表、两处控制台块单语化，行数减 2、非空增 1、表格行增 7、四类锚点未变；v8.0.1 为使英文版符合仓库单文件上限所做的收束双语同撤年度公开报告表，并把国土空间创新方向表降格为单段枚举，行数减 16、非空减 14、表格行减 14、锚点未减，此前 v8.0 为 923 行、652 非空、306 表格行、四类锚点 257；v7.9 的四处正文追加均为行内追加、不新增行，行数、非空行与表格行三项因此不变，只有四类锚点由 230 增至 232；v7.8 执行摘要重排前为 843 行、596 非空、272 表格行、四类锚点 224",
+   "remeasured_note_en": "After later revisions changed the line counts, re-measured against the current version (line count per wc -l): 905/905 lines, 639/639 non-blank, 299/299 table rows, four-type anchors 257/257 (depth anchors 40/40, assumption 12/12 and self_check 4/4 counted separately), zero line-by-line type mismatches; v8.1 removed the dual-state paragraph, turned the four version-governance paragraphs into a claim plus a five-row table and made both console blocks single-language in either language, for minus two lines, plus one non-blank line, plus seven table rows and no change to the four-type anchors; the v8.0.1 slimming that brings the English version under the repository single-file limit withdrew the annual-public-report table and demoted the territorial-planning innovation table to a single enumerated paragraph, both in either language, removing 16 lines, 14 non-blank lines and 14 table rows while dropping no anchor, from 923 lines, 652 non-blank, 306 table rows and four-type anchors 257 in v8.0; all four v7.9 body additions are appended inline and add no line, so lines, non-blank lines and table rows are unchanged and only the four-type anchor total moves from 230 to 232; before the v7.8 executive-summary rework the figures were 843 lines, 596 non-blank, 272 table rows and 224 four-type anchors"
   },
   {
    "id": "R3",
@@ -633,8 +633,8 @@
   },
   {
    "id": "R4",
-   "title_zh": "多感官交付自查（v6.0—v6.1：触觉三件、数据可听化、双态漫游）",
-   "title_en": "Multisensory deliverables self-check (v6.0–v6.1: three tactile items, sonification, Dual-State Walk)",
+   "title_zh": "多感官交付自查（v6.0—v6.1：触觉三件、数据可听化）",
+   "title_en": "Multisensory deliverables self-check (v6.0–v6.1: three tactile items, sonification)",
    "purpose_zh": "对交付物自身的手与耳通道做与其余交付同一标准的可核验自查：结构、映射、时间轴与完整性逐项实测登记",
    "purpose_en": "The hand and ear channels of the deliverables checked to the same standard as everything else: structure, mapping, timeline and integrity measured and registered item by item",
    "checks": [
@@ -709,24 +709,6 @@
      "provenance_en": "mapping and reading provenance in audible-break.md",
      "limitations_zh": "响度体验未做多设备实测；行进音听感经提交方人工试听一轮修订（首版持续基音被否，改五声音阶短音，修订过程留档）",
      "limitations_en": "loudness not tested across devices; the walking tone passed one human listening revision (a droning first version was rejected for the pentatonic figure, recorded)"
-    },
-    {
-     "id": "R4-05",
-     "item_zh": "双态漫游成片完整性",
-     "item_en": "Dual-State Walk film integrity",
-     "method_zh": "成片时长与分段时序核对；字幕轴与时序表比对；角标逐段抽帧确认",
-     "method_en": "Check film duration and segment timing; compare caption timing with the timeline; spot-check the badge frame by segment",
-     "tool_zh": "ffprobe/ffmpeg + 时序表",
-     "tool_en": "ffprobe/ffmpeg + the timing table",
-     "date": "2026-08-16",
-     "scope_zh": "dual-state-walk.mp4 与双语字幕",
-     "scope_en": "the film and both caption tracks",
-     "result_zh": "总长 65.024 秒与时序表一致；八段起点（0/9/17/26/32.5/39.5/46/53.5）与字幕 cue 对齐；八段各抽一帧确认「概念意象 · AI 生成 · 非建成效果承诺」角标恒显；容器元数据（标题/作者/合成声明）在位",
-     "result_en": "65.024 s total matching the table; eight segment starts aligned with caption cues; one frame per segment confirms the permanent concept badge; container metadata (title, artist, synthesis statement) in place",
-     "provenance_zh": "生成档案与两轮人工审改记录见 dual-state-walk.md",
-     "provenance_en": "generation record and both revision rounds in dual-state-walk.md",
-     "limitations_zh": "场景为 AI 生成概念意象，不构成建成效果；画质经两级压缩（1080p→720p CRF27），文字角标经抽帧确认可读但未逐帧核验",
-     "limitations_en": "scenes are AI-generated concept vision, no built outcome; picture passed two compression steps with the badge confirmed readable by spot check, not frame-exhaustively"
     }
    ]
   }

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ac5d222da11bddd5ad42954eb3ba154e30b01b3dcaaefb4441015ddd5028de5e"
+      "sha256": "2eac1f4d9b9d57fcf5eceb71c9a5d4cc62c846ffba07e4b6c74db6d956dcab9a"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b4fc20007417795092e5f8465ae70b7276809275792e666f47ef87fa307a0bb3"
+      "sha256": "6f7d60414c6ebadda5c8ab762cc7c70d853c39b3762e06d3a4e6010d77cf9677"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "10cd061f1d4a824b859f677e2b2a8e15ca9f2c02604e1bb94fd0ca4264b6d7c3"
+      "sha256": "fbd7be65e2d7c3daeea1b7251275f20d753a77b91c230839d380bf3ae6d4f8de"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a4e910d5ec97652b4c6efd9cf18792f4da1875676813a4384b721c42cfa4a3c9"
+      "sha256": "addfa1b9b1aa343d0bb9426f5b57bd028454d8457bc1155a5d97a6c745912d7b"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "fb9b26071dd4c926d19f34fe0b8eb192f4b6f0f4db9966c98e222e860a9d5372"
+      "sha256": "63480e963ea6e062a6d253481bfbf37ae8ed4ca73bba9e0c6ce81f1e79df71c3"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9d8a5dddc35dab2e84f99700a44d35f9ac82b29a78a4ef5e88761d686c5fb769"
+      "sha256": "d7bfa3cf561e846c8854b6bd0dfb265d5645e38d55280c7df1c0c23471abc6fb"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "1af5f4bd72a7c89f68b467df2249d2b77ac1742cc2d2a134773016c108f14e21"
+      "sha256": "92fb2925096e9e2e34c7c0b2c4a43dc393a17dd252f9529c3e6bddb38b1babcf"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ea5054a34cd2726e997b31d1abb0e17e14c541170178163354e7d2a5b51a978c"
+      "sha256": "550bde1d937af4fd4eaeef2403b6f948f79d376f96b42b303441f5846fb014ac"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "90c480d4f357f57d1bcb94015125d687d96d2242bf6b66be8d14397f4b72b5d1"
+      "sha256": "1d686b43ab07a0f107e413711e11ec9800d2356877838a8224c7377debe8dae5"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -260,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "d4fce79b2cd21d7f7af02c8ae21fc609cefb2cb4e78458eea0846aaf4de5226f"
+      "sha256": "f2c8e506f46a7981e12d9194f425610466b9cde8c3b8519c9bc381c5980eac68"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -268,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "18828b31de433b150435327aaec8ac94718a108b928dcd1e873f32ad465b960a"
+      "sha256": "ce1525361505ae2edb21a44adcc2d1ce73e1218ea2a706d7a63d3214b536437c"
     },
     {
       "path": "visual/index.en.html",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "cee0ab6ffc9499e42402aea1b97508f63b2ef7d6ef6e225016d0bd3e142bbea9"
+      "sha256": "37d533cf616216b624cfbbc48aa7a849d9ed9b7e81a3c3942797bbbe7853778a"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "85d993c65a269efb8592f6058d47e610188500cd93a53927a54982ffeaa20cad"
+      "sha256": "f4b35a6d87947c410c5d1fbdeefd817515a900fc2df886602e5f74b0a9cea9af"
     },
     {
       "path": "assets/media/cover.webp",
@@ -776,7 +776,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "c1ed4bf4e554b3db16db9c8814ac628f04defd5822d21aa039b363f9984bd0e8"
+      "sha256": "f2daf6fa6df2b11848427f2e4f7849eac689bed285e99410faf4fa9cdb556d30"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -1133,53 +1133,6 @@
       "title_zh": "听得见的断点 数据映射档案与权利记录（断点时刻可由档案读数复算）",
       "title_en": "Audible Break mapping archive and rights note (the break moment recomputes from archive readings)",
       "sha256": "cb360c729f0316caba532be71cf8b85c97fbbd4eda6adc2bf89734c4be5c7108"
-    },
-    {
-      "path": "assets/media/dual-state-walk.mp4",
-      "role": "video",
-      "required": false,
-      "title_zh": "双态漫游（65 秒概念意象短片：三场景同机位 AI 开启/关闭对切）",
-      "title_en": "Dual-State Walk (65 s concept vision film: three scenes cut AI-on/AI-off from the same camera)",
-      "description_zh": "三组 AI 生成场景（主脊/缝合区/大钟寺市场）各呈两态：流光导引熄灭后盲道、铸刻导视、值守与现金柜台仍在。每帧恒显「概念意象·AI 生成·非建成效果承诺」角标；OFF 段垫本包五声音阶数据音；非效果图交付、非建成承诺",
-      "description_en": "Three AI-generated scenes each in two states: when the flowing-light guide goes out, the tactile strip, engraved signage, stewards and cash counters remain. Every frame carries a permanent concept/AI-generated/not-built badge; the AI-off bed reuses the package's pentatonic data sound; not a rendering deliverable, not a built outcome",
-      "transcript": "assets/media/dual-state-walk.md",
-      "poster": "assets/media/dual-state-walk-poster.webp",
-      "caption": "assets/media/dual-state-walk.vtt",
-      "sha256": "a7dbb764877bda3d7a1d45d64da1e9ff2c99d50b817920b11e0868060d61c047"
-    },
-    {
-      "path": "assets/media/dual-state-walk-poster.webp",
-      "role": "media_poster",
-      "required": false,
-      "title_zh": "双态漫游 视频封面（场景一 AI 开启态标注帧）",
-      "title_en": "Dual-State Walk poster (scene-one AI-on annotated frame)",
-      "sha256": "bd84e9047f31fbc18534895496b40f047c14a3c0180c12b716afa113e4de1205"
-    },
-    {
-      "path": "assets/media/dual-state-walk.vtt",
-      "role": "caption_track",
-      "required": false,
-      "language": "zh",
-      "title_zh": "双态漫游 中文字幕",
-      "title_en": "Dual-State Walk Chinese captions",
-      "sha256": "97d4a075ac6eb6b2eadf1a4226d80382115c3ff90b093f668e1bb2f6e549eaaf"
-    },
-    {
-      "path": "assets/media/dual-state-walk-en.vtt",
-      "role": "caption_track",
-      "required": false,
-      "language": "en",
-      "title_zh": "双态漫游 英文字幕",
-      "title_en": "Dual-State Walk English captions",
-      "sha256": "09e1e0879c20e580671de67d45bda28839a26473b189cb77fccfd7a057d3bafc"
-    },
-    {
-      "path": "assets/media/dual-state-walk.md",
-      "role": "transcript",
-      "required": false,
-      "title_zh": "双态漫游 文字稿、生成档案（含两轮人工审改记录）与权利记录",
-      "title_en": "Dual-State Walk transcript, generation record (with both human-directed revision rounds) and rights note",
-      "sha256": "8a115a6415c7152425d64a8f18e3ea7c6f8e475a26b0cba9e6222d05475f17bb"
     }
   ],
   "validation_claim": {

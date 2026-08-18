@@ -304,15 +304,17 @@ W3C 的可感知、可操作、可理解与稳健原则用于检视数字和交�
 | AI 权限边界 | AI 开启态被允许做什么：白名单为信息性清单，五项对人的处分性决定（停止与恢复、等价性判定、申诉裁决、退出回执签发、对个人的强制指令）为人工专属，另附四条越权反例 | `visual/assets/seb-spec.json` 第五组件与采用方样例的 `authority_declaration` 块 [data:visual/assets/seb-spec.json] | AI 执行任一人工专属动作（`action_id` 精确匹配，不做子串匹配）即记 `AI_AUTHORITY_OVERREACH`；不在白名单的动作不自动违例，但须逐项登记评估后方可执行 |
 | 双联交接台账 | 人工接管在运行层留下什么痕迹：交出方与接收方须为不同角色并各自署名，未决项随单移交、不得在交接时清空，接收方在接收／拒收／暂缓三项中选一，拒收与暂缓须写明理由且上一责任方继续在岗；服务桌四位序（人工窗口→多通道信息位→AI 开关→退出回执位）作为位序判据，位序不可调换，人工窗口先于一切 AI 构件设立，退出回执位在最后一步之后仍然在场 | `visual/assets/seb-spec.json` 第六组件与采用方样例的 `handover_ledger` 块；四位序连编号与名称逐字取自 `geometry/public_space.geojson` 中 PUBLIC-007 的 `service_desk` 属性组 [data:geometry/public_space.geojson] | 九个违例码一律以 `handover_ledger` 块为触发输入；位序三判据以 `service_desk_present` 为适用前提，不向没有服务桌的节点摊派一条它无从满足的要求；暂缓与拒收本身不是违例——前提未证时暂缓并留人在岗，才是判据要求的诚实状态 |
 
-**产品化声明。** 基准版本为 v0.5 系列（规范文件中 `version` 为 `0.5.0`；v0.2→v0.3.0 的修订由首个外部采用方反馈驱动，v0.3.1 由增量审计驱动，v0.4.0 由对四十二份公开竞品方案的横向短板侦察驱动，v0.5.0 由维护方按版本治理清点既有登记、兑现待议项驱动，各随附一版一号的变更回执 CR-2026-08-15-004、005、CR-2026-08-16-007 与 CR-2026-08-18-009，见下），机器可读规范位于 `visual/assets/seb-spec.json`，内容与本章表格逐项一致，并含 `version`、`license`、`provenance` 三个元字段，其中 `provenance` 记有 v0.1 与 v0.2 两次发布的来源与对应回执编号。开源许可为 CC BY-SA 4.0，已由提交方以著作权人身份经随包授予文件实际授予（`visual/assets/seb-license-grant.json`，含法定正文全文与重建哈希）——文本著作权许可与机构托管是两件事，前者即时生效，后者仍待授权主体确认；相同方式共享意味着任何城市改进了判据，也必须以同样条件把改进公开，这与本包空间数据所依托的 ODbL 生态在“改进回流”一点上取向一致。版本治理方式为：任何一次变更必须同时提交失败样本登记与受影响指标的复算说明，只改条文不交证据的修订不予合并；版本号仅在判据本身变化时递增，措辞与译文修订不递增。**基准文本的著作权许可已由著作权人授予并即时生效（见上）；待授权主体确认的仅是机构托管与官方发布渠道两事，不回溯影响已授予的许可。本方案不代表任何机构发布该基准，也不代表任何机构发布或采纳该基准；已登记的外部采用为参赛提交包之间的自愿同侪采用，不构成任何机构的采纳或背书** [source:SOURCE-REGISTRY]。
+**产品化声明。** 基准版本为 v0.5 系列（规范文件中 `version` 为 `0.5.0`；各版驱动方与对应回执见下表），机器可读规范位于 `visual/assets/seb-spec.json`，内容与本章表格逐项一致，并含 `version`、`license`、`provenance` 三个元字段，其中 `provenance` 记有 v0.1 与 v0.2 两次发布的来源与对应回执编号。开源许可为 CC BY-SA 4.0，已由提交方以著作权人身份经随包授予文件实际授予（`visual/assets/seb-license-grant.json`，含法定正文全文与重建哈希）——文本著作权许可与机构托管是两件事，前者即时生效，后者仍待授权主体确认；相同方式共享意味着任何城市改进了判据，也必须以同样条件把改进公开，这与本包空间数据所依托的 ODbL 生态在“改进回流”一点上取向一致。版本号仅在判据本身变化时递增，措辞与译文修订不递增。**基准文本的著作权许可已由著作权人授予并即时生效（见上）；待授权主体确认的仅是机构托管与官方发布渠道两事，不回溯影响已授予的许可。本方案不代表任何机构发布该基准，也不代表任何机构发布或采纳该基准；已登记的外部采用为参赛提交包之间的自愿同侪采用，不构成任何机构的采纳或背书** [source:SOURCE-REGISTRY]。
 
-**v0.2：治理回路的第一次转动。** 上面这套版本治理不是写给别人看的条款，它已经在本方案内部转过一圈。下一章的桌面配对推演在把判据写成可执行代码时撞到三处缺口，三处都被登记进变更回执而不是就地绕过，v0.2 随后按“变更须附失败样本登记与复算说明”的要求带着证据交付。三处闭合各一句：`ai_off_path` 的拒绝依据由校验工具的私有词表升格为基准的 `constraint_machine_rule`，并写明词表可随失败样本扩充、扩充即版本递增；等级定义的闸门字段由自由文本改为结构化的 `gate_binding`，L4 与 G3 的关系写进条文，正则抽取与工具推断一并取消；分母完整性规则增加 `applies_to`，适用的五项参与者任务型指标与排除的三项枚举型指标逐项列明，两项文件完整性型覆盖率连同排除理由一并写下。闭合第一条时还查出一条 v0.1 未曾登记的同类问题——人工接管的角色词表同样是工具私有词表——已一并升格并在回执中登记。本次为 schema 层变更，零指标数值受影响，完整回执编号为 CR-2026-08-12-002 [source:W3C-ACCESSIBILITY-PRINCIPLES]。这一段能证明的不是判据写得好，而是版本治理是一个已经转动过的机制而不是一句承诺；基准的性质不因此改变，它仍是概念建议，托管主体、发布渠道与许可仍待授权主体确认 [source:SOURCE-REGISTRY]。
+**治理回路已经转过五次。** 五次转动的驱动方各不相同——本方案自查、首个外部采用方反馈、独立审查、对四十二份公开竞品方案的横向短板侦察、维护方按版本治理清点既有登记——每一次都以一版一号的变更回执落地，且都附失败样本登记与受影响指标的复算说明，只改条文不交证据的修订不予合并。这一段能证明的不是判据写得好，而是版本治理是一个已经转动过的机制，不是一句承诺；基准的性质不因此改变，它仍是概念建议，托管主体与发布渠道仍待授权主体确认 [source:SOURCE-REGISTRY]。
 
-**v0.3：第一个外部采用，与由此而来的两条修订。** 开放贡献 Issue #2549 收到《京张运行图》（`submissions/Juwan-Hwang/jingzhang-diagram`）的采用登记：四组件全部采用，对其方案场景卡的代表性节点做桌面配对推演，七条样例全部与期望一致、退出码 0，并附诚实的性质声明（无真实参与者、不产生绩效数值）。采用方同时提出两处规范缺陷：`machine_readable_location` 误把本包图层路径写成规范默认值；角色词表无法覆盖本地常用角色（志愿者、社工、网格员）且逐词扩充会使版本膨胀。v0.3 据此修订：前者改为采用方声明制，后者新增 `adopter_lexicon` 机制（采用方在自己的 fixtures 中声明附加角色词，判据为并集匹配，附加词须指向可问责的具名角色）。随后《京张智脊》（`submissions/oppry12102/jingzhang-ai-spine`）登记第二例采用：部分采用 node_schema 五字段判据支撑其「可停」纪律，并将其空间化为「大钟寺·可停服务街」——部分采用与组件拆用正是基准设计的预期形态。修订沿革、两例采用登记与致谢均记录于规范文件 [data:visual/assets/seb-spec.json]。首个采用方随后按快照入包方式把 v0.3.0 规范、校验器与署名声明整体收入其提交包并复跑通过——本包已核验其快照与官方 v0.3.0 字节一致，跨包引用如何保持可核这一悬而未决的问题，由采用方以实践先行闭合了一半；其间独立命中的一处工具缺陷（词表格式错误被静默忽略）也随登记反馈，并已按回执登记修复。随后一轮由维护方实测与两路独立盲审构成的专项审查（审查对象基线、方法、发现分级、处置去向与两份盲审报告全文随包归档，含独立性边界的如实声明 [data:visual/assets/review-archive.json]），把 v0.3.0 连同 v0.3.1 初稿的缺陷一并揭开：词表机制缺实现侧校验、初稿的修复又把判据私藏回工具代码、两个实现行为不等价、许可只「建议」而从未实际授予、历史版本引用无处解引用。v0.3.1 据此整体加固——附加词合格性判据（禁用后缀表、词尾语义、逐词证据条目）升格进条文本体，两个实现同源读取、绕过实验均以退出码二拒绝；违例码登记表入文；许可由著作权人经随包授予文件实际授予；v0.2.0 与 v0.3.0 规范快照按字节随包发布，采用方引用的任何历史版本都可离线解引用并按哈希核对；样例扩至二十条补齐分支覆盖。全部缺陷（含审查抓到的「修复本身违规」）以一版一号的回执 CR-2026-08-15-004 与 CR-2026-08-15-005 逐条登记为失败样本，机器不可判的合格性终审按条文明文归人工登记环节。基准的治理回路由此完成第二次、第三次转动——一次由外部采用方驱动，一次由审查驱动，每次都留下可核对的回执。
-
-**v0.4：从准入基准到全生命周期基准。** 本版由第四类驱动力触发：对四十二份公开竞品方案的横向短板侦察（四条互不通气的审查线；全部结论由维护方自行核验，不引用任何对手方案的来源条目或读数）。跨审查线命中次数最多的缺口指向同一件事——基准此前只回答「能不能开始」，不回答「能运行多久、谁付钱、坏了谁修、退役时带走什么」。v0.4 据此升格为全生命周期基准：节点 schema 新增生命周期字段组（付款方自 L1 起必填、自 L3 起须确认；非 AI 通道底线与供应商独立性自 L3 起；退役去向自 L4a 起，三个取值均保全非 AI 通道；复审到期日自 L4b 起，逾期机器可判并按有效等级 L0 报告；留城资产为信息性登记）；原 L4 拆分为 L4a 采用准备与 L4b 有期限常态运行——通过 G3 不再默认永久运行，期满自动回 L3 由三方复核续期；停止语义明文化：本基准全部停止条件的停止对象是 AI 层，不是服务，G3 结论四选一，其中「关闭 AI 层保留服务」是合法结论而非失败。基准同时补上等价定义的另一半：服务等价是「以同等条件独立完成」，时间比、附加成本、选择前可发现性三维条件缺一即不得判等价，阈值由三方复核组在测试前书面预注册且不可回溯；五项参与者指标须按共同设计角色组分列报告，任一组不得在总体改善的同时恶化，组归属只来自自愿自报、不采集也不推断；系统自知不可靠的输出必须当场声明不可靠，样本不足只能记「证据不足」、不得写成「公平」。新增第五组件「AI 权限边界」：对人的处分性决定（停止与恢复、等价性判定、申诉裁决、退出回执签发、对个人的强制指令）为人工专属，AI 执行任一项即为越权违例——基准由此从「AI 关闭后人还能不能完成」扩展到「AI 开启时它被允许做什么」。全部变更以十四个新违例码入登记表，每码明文化触发输入域，两个参考实现同码集同行为；侦察所见亦有明确不采纳项（等价三维不升格为总体层指标、AI 白名单保持信息性），理由与四条规范设计失败样本（FS-059 至 FS-062）一并登记于一版一号回执 CR-2026-08-16-007 [data:visual/assets/seb-change-receipt-v04.json]。治理回路完成第四次转动：采用反馈、独立审查、维护方自查之外，外部对比自此成为第四类可登记的驱动力。
-
-**v0.5：把交接补成可判据。** 本版由第五类驱动力触发，也是最不起眼的一类：维护方按版本治理清点包内既有登记，查出两处「条文写了而判据没有」。其一，基准对人工接管只判到「写下一个可被找到的角色」为止，接手本身在运行层留下什么痕迹无人可判——一份由同一角色对自己签署、并在交接时把未决项清空的交接单，在 v0.4.0 文本下完全合规。其二，万感服务桌的四个位序被开办条件档案明文登记为「已确定的设计判据」，而该判据只存在于要素属性与散文描述里，没有任何实现读它。两处同属大钟寺一条线索，v0.5 以一个组件一并封闭：新增第六组件「双联交接台账」，十三个字段、七类机器规则、九个违例码，判据全部由包内既有素材推出而非新写——交接结构取自本文运行层的双联单条文，字段取值取自十个 OP 节点的既有属性与十二条风险的停止条件，四位序连编号与名称逐字取自 PUBLIC-007 的 `service_desk` 属性组。样例随之由四十条扩至六十条：十个节点各一条交接实例，各字段的推出来源逐条登记在 `provenance` 中，其中 OP-04 按其既有 `ai_off_continuity_status` 如实登记为暂缓在岗态而不是正常可交接——暂缓不是违例，前提未证时它才是诚实的交接状态；另十条按风险台账注入缺陷，每条只改一处判据输入并逐字引用该风险的停止条件。起草与实测中另抓到三条自身缺陷：位序数组正确并不蕴含「人工窗口先于一切 AI 构件设立」这一设立时序要求，故拆为两码；位序判据的初稿对全部十个节点必填，等于向九个没有服务桌的节点摊派一条无从满足的要求；一处键名冲突使暂缓判据被静默跳过，由注入样例 HL-N5 当场抓出，实测退出码一、五十九对六十。三条与不采纳项一并登记为失败样本 FS-063 至 FS-067，写入一版一号回执 CR-2026-08-18-009 [data:visual/assets/seb-change-receipt-v05.json]。治理回路完成第五次转动：驱动力不必来自外部，把自己登记过的待办真正兑现，也是一次可核对的转动。
+| 版本 | 驱动方 | 判据变更 | 失败样本登记 | 变更回执 |
+| --- | --- | --- | --- | --- |
+| v0.2 | 本方案自查：下一章的桌面配对推演在把判据写成可执行代码时撞到三处缺口，三处都被登记而不是就地绕过 | `ai_off_path` 的拒绝依据由校验工具私有词表升格为基准的 `constraint_machine_rule`，并写明词表可随失败样本扩充、扩充即版本递增；等级定义的闸门字段由自由文本改为结构化 `gate_binding`，L4 与 G3 的关系写进条文，正则抽取与工具推断一并取消；分母完整性规则增加 `applies_to`，适用的五项参与者任务型指标与排除的三项枚举型指标逐项列明 | 三处缺口逐条登记；闭合第一条时另查出 v0.1 未曾登记的同类问题——人工接管的角色词表同样是工具私有词表——已一并升格。本次为 schema 层变更，零指标数值受影响 [source:W3C-ACCESSIBILITY-PRINCIPLES] | CR-2026-08-12-002 |
+| v0.3.0 | 首个外部采用方：开放贡献 Issue #2549 收到《京张运行图》（`submissions/Juwan-Hwang/jingzhang-diagram`）的采用登记，四组件全部采用，七条样例全部与期望一致、退出码 0，附无真实参与者、不产生绩效数值的性质声明 | `machine_readable_location` 由误写为规范默认值改为采用方声明制；新增 `adopter_lexicon` 机制，采用方在自己的样例中声明附加角色词、判据按并集匹配，附加词仍须指向可问责的具名角色 | 采用方提出的两处规范缺陷逐条登记。第二例采用《京张智脊》（`submissions/oppry12102/jingzhang-ai-spine`）部分采用 node_schema 五字段判据支撑其「可停」纪律——部分采用与组件拆用正是基准设计的预期形态 [data:visual/assets/seb-spec.json] | CR-2026-08-15-004 |
+| v0.3.1 | 独立审查：维护方实测与两路独立盲审构成的专项审查，审查对象基线、方法、发现分级、处置去向与两份盲审报告全文随包归档，含独立性边界的如实声明 | 附加词合格性判据（禁用后缀表、词尾语义、逐词证据条目）升格进条文本体，两个参考实现同源读取、绕过实验均以退出码二拒绝；违例码登记表入文；许可由著作权人经随包授予文件实际授予；v0.2.0 与 v0.3.0 规范快照按字节随包发布，采用方引用的任何历史版本都可离线解引用并按哈希核对；样例扩至二十条补齐分支覆盖 | 全部缺陷含审查抓到的「修复本身违规」逐条登记为失败样本；机器不可判的合格性终审按条文明文归人工登记环节 [data:visual/assets/review-archive.json] | CR-2026-08-15-005 |
+| v0.4.0 | 外部横向侦察：对四十二份公开竞品方案的短板侦察，四条互不通气的审查线，全部结论由维护方自行核验，不引用任何对手方案的来源条目或读数 | 由准入基准升格为全生命周期基准：节点 schema 新增生命周期字段组，付款方、非 AI 通道底线与供应商独立性、退役去向、复审到期日按等级分级必填，逾期机器可判并按有效等级 L0 报告；原 L4 拆为 L4a 采用准备与 L4b 有期限常态运行，期满自动回 L3 由三方复核续期；停止对象明文限定为 AI 层而非服务，「关闭 AI 层保留服务」是合法结论而非失败；等价三维条件（时间比、附加成本、选择前可发现性）缺一即不得判等价，阈值由三方复核组测试前书面预注册且不可回溯；新增第五组件「AI 权限边界」，五项对人的处分性决定为人工专属。十四个新违例码入登记表，样例四十条 | FS-059 至 FS-062，连同明确不采纳项（等价三维不升格为总体层指标、AI 白名单保持信息性）及其理由一并登记 [data:visual/assets/seb-change-receipt-v04.json] | CR-2026-08-16-007 |
+| v0.5.0 | 维护方清点既有登记，查出两处「条文写了而判据没有」：交接单可由同一角色对自己签署并在交接时清空未决项而仍然合规；万感服务桌的四个位序被开办条件档案登记为已确定的设计判据，却只存在于要素属性与散文描述里，没有任何实现读它 | 新增第六组件「双联交接台账」：十三个字段、七类机器规则、九个违例码，判据全部由包内既有素材推出而非新写——交接结构取自运行层双联单条文，字段取值取自十个 OP 节点的既有属性与十二条风险的停止条件，四位序连编号与名称逐字取自 PUBLIC-007 的 `service_desk` 属性组。样例由四十条扩至六十条，其中 OP-04 按其既有 `ai_off_continuity_status` 如实登记为暂缓在岗态而非正常可交接 | FS-063 至 FS-067，含起草与实测中自抓的三条：设立时序要求须与位序数组拆为两码、位序判据初稿误向九个没有服务桌的节点摊派、一处键名冲突使暂缓判据被静默跳过并由注入样例 HL-N5 当场抓出（实测退出码一、五十九对六十） [data:visual/assets/seb-change-receipt-v05.json] | CR-2026-08-18-009 |
 
 **复用场景。** 基准的价值只有在离开本项目之后才能被检验。中关村 AI 北纬社区的初创团队可以直接取用节点 schema 与成对测试规程，为早期产品做一次“AI 关闭后仍可用”的自测，不需要等待任何平台或授权；未来科学城的能源与医药专业设备界面可以只取评分口径中的双通道冗余率与人工接管耗时两项，把“专业设备只给专业人员用”这一默认前提放到可测量的位置上；任何一座城市的政务大厅可以只取 L0 至 L2 三级，在不改造任何空间的前提下先完成一轮成对测试，得到本厅的服务等价差读数。这是区域协同章“输出可复用的测试方法学”一句的实物形态：不是一份意向，而是一个文件加一张表 [source:BJ-AI-INNOVATION-DISTRICTS-20260121]。
 
@@ -347,63 +349,61 @@ $ node seb-tabletop-run.js
 SEB 桌面配对推演 / SEB tabletop pairing run
 基准 / Baseline : service-equivalence-baseline v0.5.0 (draft_concept_recommendation)
 样例 / Fixtures : seb-tabletop-fixtures v0.5.0 · 60 条 / items
-运行 / Run      : as_of_date 2026-08-16（复审到期比较基准 / the basis REVIEW_OVERDUE compares against）
+运行 / Run      : as_of_date 2026-08-16（复审到期比较基准）
 性质 / Nature   : 方法学演示，无真实参与者，不产生任何绩效指标数值
-                  methodology demonstration, no real participant, no performance metric value
 
 [R] 判据来源 / Rule provenance
-    ai_off_path   : forbidden_dependency · 14 项词表来自基准条文 / 14 terms from baseline text
-    human_handoff : required_role_token · 13 项词表来自基准条文 / 13 terms from baseline text
-    等级闸门 / Level gates : 结构化 gate_binding，L4a = G3 after、L4b = G3 after 由基准明文规定 / stated by the baseline, not inferred
-    生命周期字段 / Lifecycle fields : funding_owner→L1、review_due→L4b、decommission_path→L4a、non_ai_channel_floor→L3、ai_off_vendor_independence→L3 触发等级与判据均来自基准 / triggering levels and criteria both from baseline text
-    AI 权限边界 / AI authority : 5 项人工专属动作，按 action_id 精确相等判定，不做子串 / human-exclusive actions matched on exact action_id, never as substrings
-    双联交接 / Handover ledger : 13 个字段，四位序 SD-1 → SD-2 → SD-3 → SD-4 读自基准，位序不可调换 / 13 fields; the four stations are read from the baseline and may not be rearranged
-    等价条件 / Equivalence conditions : 3 维（equivalent_path_time_ratio、equivalent_path_extra_cost、pre_selection_discoverability）与阈值预注册要求来自基准条文 / 3 dimensions and the pre-registration requirement from baseline text
-    分母完整性 / Denominator integrity : 适用 5 项、排除 3 项，另排除 2 项文件完整性型指标 / 5 in scope, 3 out, 2 file-completeness metrics excluded
-    附加词合格性 / Lexicon eligibility : forbidden_suffix_and_evidence · 26 项禁用后缀与证据要求来自基准条文 / 26 forbidden suffixes and the evidence requirement from baseline text
+    ai_off_path   : forbidden_dependency · 14 项词表来自基准条文
+    human_handoff : required_role_token · 13 项词表来自基准条文
+    等级闸门 / Level gates : 结构化 gate_binding，L4a = G3 after、L4b = G3 after 由基准明文规定
+    生命周期字段 / Lifecycle fields : funding_owner→L1、review_due→L4b、decommission_path→L4a、non_ai_channel_floor→L3、ai_off_vendor_independence→L3 触发等级与判据均来自基准
+    AI 权限边界 / AI authority : 5 项人工专属动作，按 action_id 精确相等判定，不做子串
+    双联交接 / Handover ledger : 13 个字段，四位序 SD-1 → SD-2 → SD-3 → SD-4 读自基准，位序不可调换
+    等价条件 / Equivalence conditions : 3 维（equivalent_path_time_ratio、equivalent_path_extra_cost、pre_selection_discoverability）与阈值预注册要求来自基准条文
+    分母完整性 / Denominator integrity : 适用 5 项、排除 3 项，另排除 2 项文件完整性型指标
+    附加词合格性 / Lexicon eligibility : forbidden_suffix_and_evidence · 26 项禁用后缀与证据要求来自基准条文
     本工具不持有任何私有词表、私有正则或私有适用范围推导
-    this tool holds no private word list, no private pattern and no private scope inference
 [S] 基准自洽 / Baseline self-consistency
-    适用与排除清单的并集 = 评分口径 8 项指标 / the two lists cover all 8 metric ids
-    文件完整性型指标不在评分口径内，按基准明文排除 / the file-completeness metrics lie outside the definitions and are excluded by baseline text
+    适用与排除清单的并集 = 评分口径 8 项指标
+    文件完整性型指标不在评分口径内，按基准明文排除
 [0] 节点数据对齐 / Node-data alignment
-    TT-P3 ← ../../geometry/constraints.geojson#OP-01 : 5 个必填字段逐字一致 / 5 required fields match verbatim
-    TT-P4 ← ../../geometry/constraints.geojson#OP-05 : 5 个必填字段逐字一致 / 5 required fields match verbatim
-    HL-P4 ← ../../geometry/constraints.geojson#OP-04 : 5 个必填字段逐字一致 / 5 required fields match verbatim
+    TT-P3 ← ../../geometry/constraints.geojson#OP-01 : 5 个必填字段逐字一致
+    TT-P4 ← ../../geometry/constraints.geojson#OP-05 : 5 个必填字段逐字一致
+    HL-P4 ← ../../geometry/constraints.geojson#OP-04 : 5 个必填字段逐字一致
 …
-[5] TT-P5  文件完整性型指标的声明，分母完整性规则按基准明文不适用 / A file-completeness metric is declared, and baseline text puts it outside the denominator-integrity rule
+[5] TT-P5  文件完整性型指标的声明，分母完整性规则按基准明文不适用
     判定 / verdict : ACCEPT   期望 / expected : ACCEPT   一致 / match
 …
-[7] TT-N2  ai_off_path 填写为引导至线上办理 / ai_off_path is filled in as directing the user to the online service
+[7] TT-N2  ai_off_path 填写为引导至线上办理
     判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
     理由 / reason  : NODE_CONSTRAINT_VIOLATION:ai_off_path
-                     AI 关闭后的路径仍依赖同一系统，等价性不成立 / the AI-off route still depends on the same system, so equivalence does not hold
+                     AI 关闭后的路径仍依赖同一系统，等价性不成立
 …
-[9] TT-N4  停止条件触发却以限期整改续跑 / A triggered stop condition is continued under a corrective-action deadline
+[9] TT-N4  停止条件触发却以限期整改续跑
     判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
     理由 / reason  : STOP_NOT_ENFORCED
-                     停止条件触发却以限期整改续跑 / a triggered stop condition was continued under a corrective-action deadline
-[10] TT-N5  人工接管只写机构名称，且 L2 缺恢复证据字段 / Human takeover names only an organisation, and the L2 recovery-evidence field is empty
+                     停止条件触发却以限期整改续跑
+[10] TT-N5  人工接管只写机构名称，且 L2 缺恢复证据字段
     判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
     理由 / reason  : NODE_CONSTRAINT_VIOLATION:human_handoff
-                     人工接管只写了机构，没有可被找到的角色 / human takeover names an organisation, not a findable role
+                     人工接管只写了机构，没有可被找到的角色
     理由 / reason  : LEVEL_BINDING_MISSING:recovery_evidence
-                     等级绑定字段不齐，四项缺一即不得升级 / a level binding field is missing; all four are required before any upgrade
+                     等级绑定字段不齐，四项缺一即不得升级
 …
-[12] TT-N7  人工接管响应耗时的记录删除技术故障样本 / Technical-fault samples are dropped from the human-handover response-time record
+[12] TT-N7  人工接管响应耗时的记录删除技术故障样本
     判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
     理由 / reason  : DENOMINATOR_SAMPLE_DROPPED:technical_fault
-                     分母删除了失败样本，该次测量作废 / a failed sample was dropped from the denominator, voiding that measurement
-[13] TT-P6  附加角色词「网格员」经声明后计入判据并集 / A declared additional token 'grid steward' joins the criteria union
+                     分母删除了失败样本，该次测量作废
+[13] TT-P6  附加角色词「网格员」经声明后计入判据并集
     判定 / verdict : ACCEPT   期望 / expected : ACCEPT   一致 / match
-[14] TT-N8  已声明附加词也救不了只写机构的接管声明 / A declared lexicon cannot rescue an organisation-only handoff
+[14] TT-N8  已声明附加词也救不了只写机构的接管声明
     判定 / verdict : REJECT   期望 / expected : REJECT   一致 / match
     理由 / reason  : NODE_CONSTRAINT_VIOLATION:human_handoff
-                     人工接管只写了机构，没有可被找到的角色 / human takeover names an organisation, not a findable role
+                     人工接管只写了机构，没有可被找到的角色
 …
-[16] TT-P7  组件级采用：只取 node_schema 五字段 / Component-level adoption: the five node_schema fields alone
+[16] TT-P7  组件级采用：只取 node_schema 五字段
     判定 / verdict : ACCEPT   期望 / expected : ACCEPT   一致 / match
-    组件 / components : level_definitions、decision_rules 未声明，按组件级采用跳过 / not declared, skipped as component-level adoption
+    组件 / components : level_definitions、decision_rules 未声明，按组件级采用跳过
 …
 汇总 / Summary
     通过 / accepted : 23
@@ -795,8 +795,6 @@ OP-04 配对试点全过程证据链复演 / OP-04 paired-pilot evidence-chain r
 
 **摸得到的断面。** 三件触觉交付：A4 折叠纸模把 1:50 断面变成可以握在手里的实物，盲道区凸点阵用发泡油墨或点字打印机输出即成可触纹理；触觉地图三维模型以四级凸起高差与一道缺口把「四条带与一个断点」交给指尖阅读（STL 以重建哈希自校验方式随包，打印参数俱备）[data:visual/assets/op04-tactile-map.json]；核心主张的英文 UEB 一级盲文转写附逐字符映射表随文可核 [data:visual/assets/braille-core-statement.json]。
 
-**动起来的双态。** 三组 AI 生成场景（主脊、缝合区、大钟寺市场）以同一机位先后呈现 AI 开启与关闭——流光导引熄灭后，盲道、铸刻导视、值守与现金人工柜台仍在，通行继续；65 秒短片每帧恒显「概念意象 · AI 生成 · 非建成效果承诺」角标，AI 关闭段垫入「听得见的断点」同源五声音阶数据音，生成档案（`assets/media/dual-state-walk.md`）含两轮人工审改记录。
-
 **诚实边界。** 触觉高差为设计目标值，未经视障使用者测试——该测试属真实共创条件，打印成功不替代触觉可用性结论；中文现行盲文转写错误风险高，本包不以机器转写充数，中文盲文版与易读版、手语版同一纪律：登记为待专业协作项，宁缺毋滥 [metric:multichannel_information_coverage] [depth:phasing_implementation]。
 
 ### 首批试点点位选取准则
@@ -880,23 +878,23 @@ L1 可逆试验阶段，构件安装前须在现场与线上同时公告可撤�
 
 **隐私保护与人工复核。** 共同设计和任务测试遵循自愿参加、知情同意、目的限定、最少必要、分级访问、可撤回和到期处置原则；不以人脸、持续定位、健康状况、障碍类别或行为轨迹作为获得基本服务的前提。任何跨模态翻译、机器人、身份核验、活动疏散或自动推荐结果，都须保留可见状态、人工接管、申诉、纠错和退出路径。高影响判断由具备相应责任的人员复核，AI 不替代规划审批、专业审查、公共决策或真实参与者表达 [source:ACCESSIBILITY-LAW-CN]。若后续出现向境内公众提供生成内容的服务，则其内容与投诉处理须按生成式人工智能服务管理暂行办法的适用范围另行判断；本方案不提供也不主张提供此类服务，不据该办法声称已完成任何备案或安全评估，也不从中推导法定响应期限 [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:GENERATIVE-AI-INTERIM-MEASURES-CN]。
 
-**版权与授权。** 文字、图示和离线展示为本方案生成；临时几何与项目材料按登记用途使用，外部案例只作释义和机制比较，不复制网页图像、版式、长段文字、企业标识或未授权字体。未来使用声音、图片、人物肖像、历史档案、论文图像、品牌或企业内容时，须逐项核验权利、取得必要许可，并记录署名、来源、生成方式、修改过程和复用限制。来源或授权不清的资产不进入公开成果 [source:SOURCE-REGISTRY]。全部交付资产的逐条权利登记——文件路径、作者与生成方式、工具、字体名称与来源及许可、地图数据许可与坐标系、代码来源与依赖许可、署名方式与复用限制——按上述口径逐条汇编于 `report/copyright_statement.md` 的「逐资产权利台账」，覆盖 `manifest.json` 登记的全部 141 个文件条目，每一行标明其信息取自本包哪一个既有登记文件，可逐字复核；包内未登记的字段照实写为未登记，不以常见值补齐。台账末章附提交方签署的作者权利保证与限制声明（对权利瑕疵承诺替换、移除与公开登记修复，同时如实声明保证的效力边界）；两份生成服务条款（OpenAI 图像生成与 MiniMax 语音合成）均登记条款原文的 Wayback 存档快照指针与原始快照内容指纹（见 `sources.json` 对应条目的 archive_url、archive_raw_url 与 archive_sha256，指纹按不含注入工具栏的原始字节口径可由任何第三方复算），字体许可正本另以 `visual/assets/font-license-ofl.json` 随包收录，权利依据可独立于线上页面的后续改动、离线核验；六件场景概念图的完整生成档案——提示词全文、工具调用链、候选与选定、后处理链与输出哈希——登记于 `visual/assets/scene-provenance.json`，合成语音的输入台本与参数指针一并汇总于该档案 [data:visual/assets/scene-provenance.json]。台账的类别级结论如下，可在本表直接核验：
+**版权与授权。** 文字、图示与离线展示为本方案生成；临时几何与项目材料按登记用途使用，外部案例只作释义与机制比较，不复制网页图像、版式、长段文字、企业标识或未授权字体；来源或授权不清的资产不进入公开成果 [source:SOURCE-REGISTRY]。全部交付资产的逐条权利登记——文件路径、作者与生成方式、工具、字体名称与来源及许可、地图数据许可与坐标系、代码来源与依赖许可、署名方式与复用限制——汇编于 `report/copyright_statement.md` 的「逐资产权利台账」，覆盖 `manifest.json` 登记的全部 136 个文件条目；每一行标明其信息取自本包哪一个既有登记文件，可逐字复核，包内未登记的字段照实写为未登记，不以常见值补齐。台账另收录提交方签署的作者权利保证与限制声明、两份生成服务条款（OpenAI 图像生成与 MiniMax 语音合成）的 Wayback 存档快照指针与原始快照内容指纹、字体许可正本（`visual/assets/font-license-ofl.json`），以及六件场景概念图的完整生成档案 [data:visual/assets/scene-provenance.json]。台账的类别级结论如下，可在本表直接核验：
 
 | 资产类别 | 作者/生成方式 | 关键工具 | 许可与署名 | 复用限制 |
 | --- | --- | --- | --- | --- |
 | 正文与结构化文件（17） | 本方案生成 | 文本与 JSON 手工/脚本生成 | 随包提交，无第三方文字 | 概念建议，非法定文本 |
 | 图版与标志（23） | 本方案自制矢量/脚本制图 | Python、SVG、rsvg-convert/Cairo | 无第三方图像；OSM 背景按 ODbL 署名 | 底图 background_only，不得作规划依据 |
-| 图纸 PDF（4） | 本方案排版渲染 | Chromium 渲染 + pypdf 装配 | 仅嵌入思源黑体三字重子集（SIL OFL 1.1），全册字体审计零非 OFL 条目 | 同图版 |
+| 图纸 PDF（4） | 本方案排版渲染 | Chromium 渲染 + pypdf 装配 + fontTools 子集合并 | 仅嵌入思源黑体三字重子集（SIL OFL 1.1），每字重整册共用一份，全册字体审计零非 OFL 条目 | 同图版 |
 | 几何数据（9） | 临时工作几何，本方案绘制 | EPSG:4548 复算（shapely/pyproj） | 非官方红线；来源见 SOURCE-REGISTRY | 不得作权属/工程/审批依据 |
 | 展示页与代码 | 本方案自研为主；自 v7.2 含唯一第三方组件 three.js r160（MIT，离线单文件，许可正本随包） | 手写 HTML/CSS/JS + 一个 MIT 库；SEB 判据工具保持零依赖 | SEB 规范已授予 CC BY-SA 4.0（随包授予文件） | 离线运行，无外部请求 |
-| 媒体（11） | 本方案制作；旁白为合成语音 | MiniMax speech-2.8-hd、Playwright/Chromium 录制、x264/AAC | 无真人录音、无音乐、无第三方素材；工具与音色已登记 | 概念陈述，非实景记录 |
+| 媒体（10） | 本方案制作；旁白为合成语音 | MiniMax speech-2.8-hd、Playwright/Chromium 录制、x264/AAC | 无真人录音、无音乐、无第三方素材；工具与音色已登记 | 概念陈述，非实景记录 |
 | 场景概念图（6） | AI 图像生成底图 + 包内标注层合成 | OpenAI 图像生成（Codex CLI 调用）、Chromium 标注层渲染、Pillow 转 WebP | 输出所有权归用户（条款登记并存档快照）；图上直印 AI 生成徽章；提示词与输出哈希入生成档案 | 概念意象，非工程依据 |
 
 包内仅登记工具名而未登记版本号的项（Python/SVG 工具链等），台账照实标注"包内未登记"。
 
-**许可标识 `COMMUNITY-DISPLAY-ONLY` 的读法。** 本包在前置元数据中选择 `COMMUNITY-DISPLAY-ONLY`，该取值是仓库方案 schema 三个许可枚举之一，另两个为 `CC-BY-4.0` 与 `CC-BY-SA-4.0`。本包对它的读法与包内权利台账逐字一致：全包整体仅用于本次征集的社区展示与评审场景，不放弃任何第三方权利。选它的理由不是保留权利，而是不具备放开的依据——仓库根目录未声明任何可据以推定更宽复用权的许可，在此条件下把全包标为开放复用，等于替第三方权利人作出本方案无权作出的承诺。据此本包只作一项界定：该标识界定的是复用授权范围，不是评审可见性，它不改变本包作为参赛材料被评审、被引用与被公开展示的状态；也不改变仓库既有的公开与归档流程。成熟许可的上界在包内另行单独锚定，且只在权利来源明确的局部生效：服务等价基准 SEB 的规范文本已单独授予 CC BY-SA 4.0，授予正本随包收录 [source:CC-BY-SA-4.0-LEGALCODE]；思源黑体按 SIL OFL 1.1 使用，许可正本随包收录 [source:SOURCE-HAN-SANS-OFL]；随包 OSM 精简快照按 ODbL 1.0 分发并在使用它的图面直印署名与许可；展示层唯一第三方组件 three.js r160 按 MIT 随包收录许可正本。两级许可互不覆盖：局部的开放许可不把全包变成开放复用，全包的展示限定也不收回已经单独授出的开放许可；判断某一件资产适用哪一级，一律以逐资产权利台账的对应行为准，不以本段的概括表述为准。
+**许可标识 `COMMUNITY-DISPLAY-ONLY` 的读法。** 本包在前置元数据中选择 `COMMUNITY-DISPLAY-ONLY`，该取值是仓库方案 schema 三个许可枚举之一：全包整体仅用于本次征集的社区展示与评审，不放弃任何第三方权利。选它的理由不是保留权利，而是不具备放开的依据——仓库根目录未声明任何可据以推定更宽复用权的许可，在此条件下把全包标为开放复用，等于替第三方权利人作出本方案无权作出的承诺。该标识界定的是复用授权范围，不是评审可见性，不改变本包作为参赛材料被评审、被引用与被公开展示的状态。局部另有单独授出的成熟许可，且只在权利来源明确处生效：服务等价基准 SEB 的规范文本按 CC BY-SA 4.0 授予 [source:CC-BY-SA-4.0-LEGALCODE]，思源黑体按 SIL OFL 1.1 使用 [source:SOURCE-HAN-SANS-OFL]，随包 OSM 精简快照按 ODbL 1.0 分发并在使用它的图面直印署名，展示层唯一第三方组件 three.js r160 按 MIT 随包收录许可正本。两级互不覆盖：局部的开放许可不把全包变成开放复用，全包的展示限定也不收回已经单独授出的开放许可；某一件资产适用哪一级，一律以逐资产权利台账的对应行为准，不以本段的概括表述为准。
 
-**输出质量与可及性自查。** 交付物在提交前做过三类自查：按实际输出尺寸量测字号与对比度的校样、双语结构与计数的等价抽检、离线展示页的 HTML 无障碍走查（键盘路径、替代文本、无脚本降级与颜色非唯一编码）。三类检查的实测结论：二十六张带文字图版（五张核心图、六张场景概念图与生态图谱、断面、企业旅程、OP-04 节点深化、双态平面等原生图版）在评审接收分辨率（短边 768 像素）下不可读文本占比均为 0%，五张核心图最小字号 12.1–12.3 像素、其余原生图版最小 12 像素；A3 双语三十二页页面文本层最小 9.07 pt；对比度按包内色板复算，正文 12.69、警示行 7.13（WCAG 2.1 AA）；双语等价抽检为非空行 638/638 逐行结构一致、表格 292/292 行逐行列数全等、四类证据锚点 257/257 持平，另有 depth 深度锚点 40/40、assumption 前提锚点 12/12 与 self_check 自检锚点 4/4 双语持平、均不计入四类抽检（2026-08-18 按当前版本复测）；无障碍走查为键盘路径 61 步无陷阱（四时段控件与三维主脊章加入后实测复核）且反向可逆、交互场景十节点卡全部可用键盘开合且焦点归还、图像替代文本 20/20 非空（三维主脊章静态后备加入后实测复核）、禁用脚本后静态后备图实测呈现、颜色非唯一编码十二项逐项通过。方法、工具、日期、逐项结果与局限，连同走查发现的八项问题及其处理去向，登记于 `visual/assets/qa-proofing-record.json` [data:visual/assets/qa-proofing-record.json] [self_check:DETERMINISTIC_VALIDATION] [self_check:VISUAL_PACKAGING]。**该记录是方案方自查，不是第三方认证，也不是辅助技术使用者的实测**；未经屏幕阅读器实测、未经具备资质的译者逐词审校、未做实物印品检查这三项局限已在记录内逐条写明。上述三类自查连同其余七项随包检查，作为十道自检闸门逐条固化：每道写明检查什么、怎么判、当前读数，以及该闸门历史上真正查获过的缺陷及其修复登记（合计 27 条，唯一未有登记案例的闸门如实写明「未有登记案例」）[data:visual/assets/package-integrity-gates.json]。
+**输出质量与可及性自查。** 三类自查在提交前完成：按实际输出尺寸量测字号与对比度的校样、双语结构与计数的等价抽检、离线展示页的 HTML 无障碍走查（键盘路径、替代文本、无脚本降级与颜色非唯一编码）。实测结论：二十六张带文字图版在评审接收分辨率（短边 768 像素）下不可读文本占比均为 0%，五张核心图最小字号 12.1–12.3 像素、其余原生图版最小 12 像素；A3 双语三十二页页面文本层最小 9.07 pt；对比度按包内色板复算，正文 12.69、警示行 7.13（WCAG 2.1 AA）；双语等价抽检为非空行 639/639 逐行结构一致、表格 299/299 行逐行列数全等、四类证据锚点 257/257 持平，另有 depth 40/40、assumption 12/12 与 self_check 4/4 双语持平、均不计入四类抽检（2026-08-18 按当前版本复测）；无障碍走查为键盘路径 61 步无陷阱且反向可逆、交互场景十节点卡全部可用键盘开合且焦点归还、图像替代文本 20/20 非空、禁用脚本后静态后备图实测呈现、颜色非唯一编码十二项逐项通过。方法、工具、日期、逐项结果与局限，连同走查发现的八项问题及其处理去向，登记于 `visual/assets/qa-proofing-record.json` [data:visual/assets/qa-proofing-record.json] [self_check:DETERMINISTIC_VALIDATION] [self_check:VISUAL_PACKAGING]。**该记录是方案方自查，不是第三方认证，也不是辅助技术使用者的实测**；未经屏幕阅读器实测、未经具备资质的译者逐词审校、未做实物印品检查这三项局限已在记录内逐条写明。上述三类自查连同其余七项随包检查固化为十道自检闸门，每道写明检查什么、怎么判、当前读数，以及该闸门历史上真正查获过的缺陷及其修复登记（合计 27 条，唯一未有登记案例的闸门如实写明「未有登记案例」）[data:visual/assets/package-integrity-gates.json]。
 
 **实施风险与合规责任。** 场地和重点区几何是临时粗略边界，不是官方红线、权属边界、法定控制或精确面积依据；容积率、高度、拆改留、道路线形、桥隧、地下空间、市政管线、能源负荷、投资、开发时序和审批均不作结论 [source:BOUNDARY-SOURCE]。所有空间、活动、品牌、政策与合作均为概念建议、参考方案或供专业团队深化研究，不构成政府审定、批准建设、资金支持、招商承诺或既定活动。方案作者负责主张与来源可追溯，后续专业团队负责规划、工程、安全和无障碍复核，场景运营者负责数据、人员、维护与事故处置，主管部门和人类评审保留最终判断；条件不足时应暂停、降级或退出。
 
