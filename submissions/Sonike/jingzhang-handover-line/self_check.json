@@ -10,7 +10,6 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/Sonike/jingzhang-handover-line/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
         "submissions/Sonike/jingzhang-handover-line/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
         "submissions/Sonike/jingzhang-handover-line/changelog.md: 可能涉及非公开或敏感资料; maintainer review required"
       ],
@@ -89,6 +88,7 @@
         "submissions/Sonike/jingzhang-handover-line/report/proposal.en.html",
         "submissions/Sonike/jingzhang-handover-line/report/proposal.html",
         "submissions/Sonike/jingzhang-handover-line/self_check.json",
+        "submissions/Sonike/jingzhang-handover-line/simulation.json",
         "submissions/Sonike/jingzhang-handover-line/sources.json",
         "submissions/Sonike/jingzhang-handover-line/standard_matrix.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/example-scn05-shift-ledger.json",
@@ -109,7 +109,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 18379024,
+      "total_bytes": 17662595,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -183,15 +183,15 @@
       "summary": {
         "standard_matrix_items": 10,
         "design_depth_items": 15,
-        "known_metric_refs_required": 37,
-        "proposal_format_version": "1",
-        "evidence_contract": "legacy-exhaustive-inline",
+        "known_metric_refs_required": 44,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 31,
-          "standard": 10,
-          "depth": 16,
-          "data": 45,
-          "metric": 49
+          "source": 14,
+          "standard": 4,
+          "depth": 14,
+          "data": 9,
+          "metric": 20
         }
       }
     },
