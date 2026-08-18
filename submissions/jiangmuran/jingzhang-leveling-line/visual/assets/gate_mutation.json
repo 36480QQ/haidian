@@ -1360,6 +1360,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M149",
+      "gate": "printed_difference_qa.py",
+      "target": "fig_routes.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.05 上那个差改回按全精度相减。**这是 E366 之前的真实状态**：图上印着 11,472 m 与 9,443 m，而它给出的差是 **2,028**——读者把纸面上这两个数相减得到的是 **2,029**。11,471.8 − 9,443.3 = 2,028.5，`:,.0f` 按银行家舍入压到 2,028。",
+      "what_en": "Put the difference on FIG.05 back to a full-precision subtraction. **This is the real state before E366**: the sheet prints 11,472 m and 9,443 m and gives their difference as **2,028**, while a reader subtracting the two numbers on the page gets **2,029**. 11,471.8 - 9,443.3 is 2,028.5, which :,.0f rounds half-to-even down.",
+      "why_zh": "**E297 已经找到并修过这个缺陷**，修在 `route_check` 写进 `metrics.json` 的那段说明里，两版正文从那时起一直写 2,029。但这张图没跟上——于是评审手里的正文说 2,029、图上说 2,028，**而那张图是他直接收到的五张之一**。规则当时只以注释的形式存在于一个调用点上。改为把它作为闸门守住：**凡同时印出这两个读数的面，若给出差值，就必须是纸面上两数之差**，不是它们背后那两个值之差。只印读数不作差的（FIG.06 的一等指标表就是）不在此列。",
+      "why_en": "**E297 had already found and fixed this**, in the note route_check writes into metrics.json, and both editions have said 2,029 ever since. The sheet did not follow, so the reviewer held prose saying 2,029 and an image saying 2,028, **and that image is one of the five sent to them**. The rule existed as a comment at one call site. It is a gate now: **any surface printing both readings must, if it states their difference, state the difference of the two numbers on the page** - not of the values behind them. A surface that prints the readings without subtracting, as FIG.06's class-1 table does, is not making the claim and is left alone."
+    },
+    {
       "id": "M146",
       "gate": "figure_gloss_qa.py",
       "target": "build_drawings.py",
@@ -1789,7 +1802,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 146,
+  "caught": 147,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1851,6 +1864,7 @@
     "pdf_page1_qa.py",
     "planning_controls_qa.py",
     "positioning_qa.py",
+    "printed_difference_qa.py",
     "project_dependency_qa.py",
     "proposal_legibility_qa.py",
     "reading_calendar_qa.py",
@@ -1932,6 +1946,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 101 道闸门，其中 98 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 101 gates, 98 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 102 道闸门，其中 99 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 102 gates, 99 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
