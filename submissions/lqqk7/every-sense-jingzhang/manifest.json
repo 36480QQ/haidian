@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2eac1f4d9b9d57fcf5eceb71c9a5d4cc62c846ffba07e4b6c74db6d956dcab9a"
+      "sha256": "4476b6cfe874aadf7235b3df70abcb8b65362db5c3dba60daf1df2649f398e8b"
     },
     {
       "path": "agent.json",
@@ -44,7 +44,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "7284d22678bb20cf03096209e0517aa74dd6e98401bff233ff0e6821f7a08d89"
+      "sha256": "53902d0e8431877d53a799579dc2e8265865a58143f0235128045ff61bfab719"
     },
     {
       "path": "sources.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6f7d60414c6ebadda5c8ab762cc7c70d853c39b3762e06d3a4e6010d77cf9677"
+      "sha256": "68eab95f2a5f4ca0baabb8fc73b6f77591c0cfcc38a277b67617cb21629a3c1f"
     },
     {
       "path": "compliance_matrix.json",
@@ -74,7 +74,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "2a2ae13e5f9d70e1ddf74061cc43f66aa8a80b831572c6479d893b431944a34a"
+      "sha256": "5a112f2f4c6595b1798a00a6dda08a2aea124354502e083670d1436abfac4aff"
     },
     {
       "path": "risk.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "fbd7be65e2d7c3daeea1b7251275f20d753a77b91c230839d380bf3ae6d4f8de"
+      "sha256": "8a982847a2ceb32db0607b6cc22064cb01401e7553d36c954ea70333e4ce75cf"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "addfa1b9b1aa343d0bb9426f5b57bd028454d8457bc1155a5d97a6c745912d7b"
+      "sha256": "b334123e0cd34626e668d3f8a897a18d8d8460ac18f63a2fe85841490c912d38"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "550bde1d937af4fd4eaeef2403b6f948f79d376f96b42b303441f5846fb014ac"
+      "sha256": "093fc832c31413127ba7778ec3d15cdb33a3f6631ed5ef550d9399dd4401b270"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1d686b43ab07a0f107e413711e11ec9800d2356877838a8224c7377debe8dae5"
+      "sha256": "728e280203d440bcf5bc0a3862911086551fdb4395df42a5ad9fa1a75853444f"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "f4b35a6d87947c410c5d1fbdeefd817515a900fc2df886602e5f74b0a9cea9af"
+      "sha256": "4c014e8bbd88ce6c8bd1fb8a575742c8d0b0c77478ed11320f4940de86acde8d"
     },
     {
       "path": "assets/media/cover.webp",
@@ -776,7 +776,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "f2daf6fa6df2b11848427f2e4f7849eac689bed285e99410faf4fa9cdb556d30"
+      "sha256": "320b4dcc4b99023e2df3936744e35c17618421151d74a2e6977f6f6781d3e313"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -1133,6 +1133,33 @@
       "title_zh": "听得见的断点 数据映射档案与权利记录（断点时刻可由档案读数复算）",
       "title_en": "Audible Break mapping archive and rights note (the break moment recomputes from archive readings)",
       "sha256": "cb360c729f0316caba532be71cf8b85c97fbbd4eda6adc2bf89734c4be5c7108"
+    },
+    {
+      "path": "visual/assets/district-strategy.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三区片区策略：街块诊断、开放化候选、界面规则、强度包络与走廊接驳判据（只登记关系与判据，不登记法定控制值）",
+      "title_en": "District strategy for the three key areas: block diagnosis, opening candidates, frontage rules, intensity envelope and corridor/interchange criteria (relations and criteria only, no statutory control value)",
+      "sha256": "ebbb7cf0be51a815d6fa86f50e3ec976aac8a26a78103a36e215af2ebf8511a3"
+    },
+    {
+      "path": "visual/assets/field-verification-plan.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "零授权现场验证计划：六项空间读数的执行办法、无障碍路径实测协议与最小访谈集（计划已备，执行待定，全部读数仍为零值或 unknown）",
+      "title_en": "Zero-authorisation field verification plan: execution method for the six spatial readings, the accessibility-route test protocol and the minimum interview set (plan ready, execution pending, every reading still zero or unknown)",
+      "sha256": "e375093a5faab4cdad3ca3a8dd85a9d56ba9e8d6d42391dbbe2c7198e29e68af"
+    },
+    {
+      "path": "assets/figures/district-strategy.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "片区策略合幅三联图 D-01：三区街块诊断与开放化候选，三分幅同比例尺（中英双语同图）",
+      "title_en": "District strategy plate D-01 — block diagnosis and opening candidates across the three key areas, three panels at one shared scale, one bilingual sheet",
+      "sha256": "d0006724ff896e6c994bd7d2db6027d082884d3bfa6b54917821f0062cc5790d"
     }
   ],
   "validation_claim": {
