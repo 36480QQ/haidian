@@ -549,9 +549,9 @@ front matter 读取器只认 `tracks: ["a","b"]`，读不到 YAML 块状列表�
 |---|---|---|
 | 语料规模 | **793 份**（2026-08-13） | `visual/assets/field_map.json` |
 | 本包对语料的读数次数 | 17 次，其中 17 次已提交并可用 `git show` 逐行复核 | `visual/assets/reading_log.json` |
-| 勘误册 | **362 条**；发现者：作者自查 234、外部对抗性复读 40、external 31、本包闸门 26、rival-read 26、外部评审 5 | `visual/assets/errata.json` + `errata-archive.json` |
-| 最常见的缺陷形状 | 检查测了方便测的东西 62 次、同一件事的两份拷贝各自漂移 58 次、交付物在提交前没被看过 33 次、这个说法在这种载体上原理上无法被核对 30 次、声明活得比包的内容久 25 次 | 同上 |
-| 指标证据上限 | 57 条可定上限：provisional 21、background 14、自测 18、official 4、法规 0 | `visual/assets/evidence_ceiling.json` |
+| 勘误册 | **363 条**；发现者：作者自查 235、外部对抗性复读 40、external 31、本包闸门 26、rival-read 26、外部评审 5 | `visual/assets/errata.json` + `errata-archive.json` |
+| 最常见的缺陷形状 | 检查测了方便测的东西 62 次、同一件事的两份拷贝各自漂移 59 次、交付物在提交前没被看过 33 次、这个说法在这种载体上原理上无法被核对 30 次、声明活得比包的内容久 25 次 | 同上 |
+| 指标证据上限 | 59 条可定上限：provisional 23、background 14、自测 18、official 4、法规 0 | `visual/assets/evidence_ceiling.json` |
 | 包体 | 29.2 MiB | 随包文件实测 |
 
 **这张表本身就是本方案的论点的一个实例。** 它上面那些版本条目里的数字，写下时全部为真，现在全部过期——而它们不该被修改，因为改了就把记录变成了主张。区别只在于：一个是历史，标着日期；一个是状态，由构建重算。把两者写在同一段里，是本包勘误册记了四次的那种缺陷。

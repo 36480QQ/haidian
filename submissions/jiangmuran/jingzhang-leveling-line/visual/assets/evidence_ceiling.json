@@ -12,7 +12,7 @@
  ],
  "counts": {
   "background_only": 14,
-  "provisional": 21,
+  "provisional": 23,
   "self_measured": 18,
   "official_context": 4,
   "regulatory_baseline": 0
@@ -602,6 +602,27 @@
    "evidence_ceiling": "provisional",
    "binding_inputs": [
     "geometry/constraints.geojson"
+   ],
+   "why": "画在推定边界上；官方 polygon 发布后须整体重算",
+   "how_to_raise": "官方 polygon 或官方重点区范围发布后重算，即可升为 official_context",
+   "confidence": "medium",
+   "confidence_is_about": "computation"
+  },
+  "green_space_area_sqm": {
+   "evidence_ceiling": "provisional",
+   "binding_inputs": [
+    "geometry/green_space.geojson",
+    "geometry/buildings.geojson"
+   ],
+   "why": "画在推定边界上；官方 polygon 发布后须整体重算",
+   "how_to_raise": "官方 polygon 或官方重点区范围发布后重算，即可升为 official_context",
+   "confidence": "medium",
+   "confidence_is_about": "computation"
+  },
+  "public_space_area_sqm": {
+   "evidence_ceiling": "provisional",
+   "binding_inputs": [
+    "geometry/public_space.geojson"
    ],
    "why": "画在推定边界上；官方 polygon 发布后须整体重算",
    "how_to_raise": "官方 polygon 或官方重点区范围发布后重算，即可升为 official_context",
