@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M124",
+      "gate": "landuse_count_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把「十一**块**功能用地」写回「十一**类**」——而**两行之外**同一段就写着「用地类别从六类变为**七类**」，`land_use.geojson` 里也确实只有七个 `land_use_code`。十一是**单元数**（五个片区 + 六个建筑地块），不是类别数。",
+      "what_en": "Put classes back where the eleven units are - while **two lines away** the same passage says the land-use classes went from six to **seven**, and land_use.geojson does carry exactly seven land_use_code values. Eleven is the **unit** count, five areas plus six building plots.",
+      "why_zh": "两个数都能从随包几何里算出来，此前两个都是手写的，而它们**互相矛盾且相距两行**。评审拿不到 `.geojson`，但拿得到同一段里的另一句——**证伪它不需要离开这一段**。",
+      "why_en": "Both numbers are computable from the shipped geometry and both were typed, and they **contradict each other two lines apart**. The reviewer does not receive the geojson, but he receives the other sentence in the same passage - **refuting it needs no more than that paragraph**."
+    },
+    {
       "id": "M123",
       "gate": "shipped_validation_qa.py",
       "target": "self_check.json",
@@ -1482,7 +1494,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 121,
+  "caught": 122,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1520,6 +1532,7 @@
     "interned_render_qa.py",
     "label_collision_qa.py",
     "land_use_enum_qa.py",
+    "landuse_count_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
     "measurement_protocol_qa.py",
@@ -1610,6 +1623,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 86 道闸门，其中 83 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 86 gates, 83 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 87 道闸门，其中 84 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 87 gates, 84 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
