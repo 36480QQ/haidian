@@ -1336,6 +1336,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M145",
+      "gate": "html_gloss_qa.py",
+      "target": "build_visual_en.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "让英文页不再丢弃与标题重复的那半行。**这是 E361 之前的真实状态**：`visual/index.en.html` 十八个标题里有十个把自己的字印两遍——`A reviewer's route` 压着 `A REVIEWER'S ROUTE`——而这一页正是评审收到截图的四页之一，且全都在首屏之内。",
+      "what_en": "Stop the English build dropping the half-line that repeats its heading. **This is the real state before E361**: ten of the eighteen headings on visual/index.en.html printed their own words twice - A reviewer's route over A REVIEWER'S ROUTE - on one of the four pages the reviewer is sent a screenshot of, all of them above the fold.",
+      "why_zh": "这一页每个标题都是一对：中文一行，旁边一行小号大写英文。英文页由中文页翻译而成，**翻掉的是上半行，留下的是下半行**，于是两行同字。E360 上一轮刚在图纸上修过同一个缺陷，**修完就停在图纸**——规则在这一面同样成立，只是从没被指过来。这正是本册反复记的那条：**一件事没有被枚举完每一个持有它的地方，就不算修完**。",
+      "why_en": "Every heading on this page is a pair: the Chinese line, and a small caps English line beside it. The English page is made by translating the Chinese one, which **translates the first half and leaves the second**, so both halves say the same thing. E360 fixed exactly this defect on the drawing sheets one round earlier and **stopped at the sheets** - the rule held here too and had simply never been pointed at this surface. That is the lesson this register keeps rewriting: a fact is not closed until every place holding it has been enumerated."
+    },
+    {
       "id": "M144",
       "gate": "figure_gloss_qa.py",
       "target": "fig_hero.py",
@@ -1739,7 +1752,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 142,
+  "caught": 143,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1776,6 +1789,7 @@
     "geometry_citation_qa.py",
     "harness_reference_qa.py",
     "heading_parity_qa.py",
+    "html_gloss_qa.py",
     "i18n_order_qa.py",
     "intake_limits_qa.py",
     "interned_render_qa.py",
@@ -1880,6 +1894,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 99 道闸门，其中 96 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 99 gates, 96 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 100 道闸门，其中 97 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 100 gates, 97 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
