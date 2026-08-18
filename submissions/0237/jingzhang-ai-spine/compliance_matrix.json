@@ -52,6 +52,16 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.2"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.2 的禁止性约束：编造企业名单、投资额、产值或财政承诺；把内部数据或未经核实政策写成事实；把产业招商、资金支持或政策安排写成已确定事项。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §全球标杆案例与AI创新生态（案例表 8 个，详见上文）",
+        "report/proposal.html 案例与生态图谱表",
+        "visual/index.html 生态图谱 SVG（8 节点/9 关系）",
+        "metrics: reference_case_count=8, ecosystem_actor_count=8, ecosystem_relation_count=9"
       ]
     },
     {
@@ -105,6 +115,17 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.1",
+        "agent.3"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.1/agent.3 的禁止性约束：只提交口号式命名；照搬城市、园区或企业名称；未经授权使用字体、图片、商标、人物或企业标识；给出容积率、建筑高度、具体拆改留、道路红线或工程实施结论。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §总体概念与命名体系（一带智脉·三区两翼）",
+        "drawings/a0-boards.pdf 总体概念页、visual/index.html 概念图",
+        "proposal.md §AI+场景赋能与测试验证（场景卡 12 / 画像 5 / 测试场景 3）",
+        "metrics: test_validation_scenario_count=3, ai_scenario_cards_count=12, user_persona_count=5"
       ]
     },
     {
@@ -158,6 +179,21 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.1",
+        "agent.4",
+        "agent.6"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.1/agent.4/agent.6 的禁止性约束：只提交口号式命名；照搬城市、园区或企业名称；未经授权使用字体、图片、商标、人物或企业标识；给出容积率、建筑高度、具体拆改留、道路红线或工程实施结论。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6",
+        "proposal.md §年度活动与开发者社区运营（5 年度活动 + 社区治理 + 招引转化 + 分期 KPI）",
+        "metrics: annual_event_count=5",
+        "proposal.md §无障碍与数字包容（老幼残障/低数字能力/夜间工作者）",
+        "metrics: accessibility_group_count=5"
       ]
     },
     {
@@ -211,6 +247,22 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.1",
+        "agent.2"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.1/agent.2 的禁止性约束：只提交口号式命名；照搬城市、园区或企业名称；未经授权使用字体、图片、商标、人物或企业标识；给出容积率、建筑高度、具体拆改留、道路红线或工程实施结论。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §全球标杆案例与AI创新生态（案例表 8 个，详见上文）",
+        "report/proposal.html 案例与生态图谱表",
+        "visual/index.html 生态图谱 SVG（8 节点/9 关系）",
+        "metrics: reference_case_count=8, ecosystem_actor_count=8, ecosystem_relation_count=9",
+        "proposal.md §区域创新协同（中关村科学城 + 5 协同节点）",
+        "visual/index.html 区域协同 SVG",
+        "metrics: regional_coordination_link_count=5",
+        "proposal.md §产业-空间映射（5 条，官方面积值）",
+        "metrics: industry_space_mapping_count=5"
       ]
     },
     {
@@ -264,6 +316,21 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.1",
+        "agent.3",
+        "agent.4"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.1/agent.3/agent.4 的禁止性约束：只提交口号式命名；照搬城市、园区或企业名称；未经授权使用字体、图片、商标、人物或企业标识；给出容积率、建筑高度、具体拆改留、道路红线或工程实施结论。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §AI+场景赋能与测试验证（场景卡 12 / 画像 5 / 测试场景 3）",
+        "metrics: test_validation_scenario_count=3, ai_scenario_cards_count=12, user_persona_count=5",
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6",
+        "proposal.md §总体概念与命名体系（一带智脉·三区两翼）",
+        "drawings/a0-boards.pdf 总体概念页、visual/index.html 概念图"
       ]
     },
     {
@@ -317,6 +384,19 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.1",
+        "agent.4",
+        "agent.5"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.1/agent.4/agent.5 的禁止性约束：只提交口号式命名；照搬城市、园区或企业名称；未经授权使用字体、图片、商标、人物或企业标识；给出容积率、建筑高度、具体拆改留、道路红线或工程实施结论。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §百年京张文化叙事（铁路遗产 + 中关村创新文化 + AI 新文化）",
+        "drawings/a0-boards.pdf 文化叙事页",
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6"
       ]
     },
     {
@@ -370,6 +450,16 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.2"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.2 的禁止性约束：编造企业名单、投资额、产值或财政承诺；把内部数据或未经核实政策写成事实；把产业招商、资金支持或政策安排写成已确定事项。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §全球标杆案例与AI创新生态（案例表 8 个，详见上文）",
+        "report/proposal.html 案例与生态图谱表",
+        "visual/index.html 生态图谱 SVG（8 节点/9 关系）",
+        "metrics: reference_case_count=8, ecosystem_actor_count=8, ecosystem_relation_count=9"
       ]
     },
     {
@@ -423,6 +513,14 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.3"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.3 的禁止性约束：隐私侵害、过度监控或无法人工复核的场景；把未成熟技术写成已可全面部署；使用非公开数据、个人隐私或指定供应商作为必要条件；把测试场景写成已批准运营。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §AI+场景赋能与测试验证（场景卡 12 / 画像 5 / 测试场景 3）",
+        "metrics: test_validation_scenario_count=3, ai_scenario_cards_count=12, user_persona_count=5"
       ]
     },
     {
@@ -476,6 +574,21 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.2",
+        "agent.3"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.2/agent.3 的禁止性约束：编造企业名单、投资额、产值或财政承诺；把内部数据或未经核实政策写成事实；把产业招商、资金支持或政策安排写成已确定事项；隐私侵害、过度监控或无法人工复核的场景。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §全球标杆案例与AI创新生态（案例表 8 个，详见上文）",
+        "report/proposal.html 案例与生态图谱表",
+        "visual/index.html 生态图谱 SVG（8 节点/9 关系）",
+        "metrics: reference_case_count=8, ecosystem_actor_count=8, ecosystem_relation_count=9",
+        "proposal.md §产业-空间映射（5 条，官方面积值）",
+        "metrics: industry_space_mapping_count=5",
+        "proposal.md §AI+场景赋能与测试验证（场景卡 12 / 画像 5 / 测试场景 3）",
+        "metrics: test_validation_scenario_count=3, ai_scenario_cards_count=12, user_persona_count=5"
       ]
     },
     {
@@ -529,6 +642,18 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.1",
+        "agent.4"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.1/agent.4 的禁止性约束：只提交口号式命名；照搬城市、园区或企业名称；未经授权使用字体、图片、商标、人物或企业标识；给出容积率、建筑高度、具体拆改留、道路红线或工程实施结论。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §总体概念与命名体系（一带智脉·三区两翼）",
+        "drawings/a0-boards.pdf 总体概念页、visual/index.html 概念图",
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6"
       ]
     },
     {
@@ -582,6 +707,15 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.1",
+        "agent.3"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.1/agent.3 的禁止性约束：只提交口号式命名；照搬城市、园区或企业名称；未经授权使用字体、图片、商标、人物或企业标识；给出容积率、建筑高度、具体拆改留、道路红线或工程实施结论。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §AI+场景赋能与测试验证（场景卡 12 / 画像 5 / 测试场景 3）",
+        "metrics: test_validation_scenario_count=3, ai_scenario_cards_count=12, user_persona_count=5"
       ]
     },
     {
@@ -635,6 +769,18 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.4",
+        "agent.5"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.4/agent.5 的禁止性约束：违反文保、绿地、蓝线或交通安全约束；给出桥隧、地下空间或工程可行性结论；擅自改造企业建筑或权属空间；过度娱乐化、网红化或低俗化地标。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6",
+        "proposal.md §百年京张文化叙事（铁路遗产 + 中关村创新文化 + AI 新文化）",
+        "drawings/a0-boards.pdf 文化叙事页"
       ]
     },
     {
@@ -688,6 +834,17 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.1",
+        "agent.5"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.1/agent.5 的禁止性约束：只提交口号式命名；照搬城市、园区或企业名称；未经授权使用字体、图片、商标、人物或企业标识；给出容积率、建筑高度、具体拆改留、道路红线或工程实施结论。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §总体概念与命名体系（一带智脉·三区两翼）",
+        "drawings/a0-boards.pdf 总体概念页、visual/index.html 概念图",
+        "proposal.md §百年京张文化叙事（铁路遗产 + 中关村创新文化 + AI 新文化）",
+        "drawings/a0-boards.pdf 文化叙事页"
       ]
     },
     {
@@ -741,6 +898,18 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.4",
+        "agent.6"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.4/agent.6 的禁止性约束：违反文保、绿地、蓝线或交通安全约束；给出桥隧、地下空间或工程可行性结论；擅自改造企业建筑或权属空间；过度娱乐化、网红化或低俗化地标。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6",
+        "proposal.md §年度活动与开发者社区运营（5 年度活动 + 社区治理 + 招引转化 + 分期 KPI）",
+        "metrics: annual_event_count=5"
       ]
     },
     {
@@ -794,6 +963,20 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.2",
+        "agent.4"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.2/agent.4 的禁止性约束：编造企业名单、投资额、产值或财政承诺；把内部数据或未经核实政策写成事实；把产业招商、资金支持或政策安排写成已确定事项；违反文保、绿地、蓝线或交通安全约束。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §全球标杆案例与AI创新生态（案例表 8 个，详见上文）",
+        "report/proposal.html 案例与生态图谱表",
+        "visual/index.html 生态图谱 SVG（8 节点/9 关系）",
+        "metrics: reference_case_count=8, ecosystem_actor_count=8, ecosystem_relation_count=9",
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6"
       ]
     },
     {
@@ -847,6 +1030,18 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.3",
+        "agent.4"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.3/agent.4 的禁止性约束：隐私侵害、过度监控或无法人工复核的场景；把未成熟技术写成已可全面部署；使用非公开数据、个人隐私或指定供应商作为必要条件；把测试场景写成已批准运营。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §AI+场景赋能与测试验证（场景卡 12 / 画像 5 / 测试场景 3）",
+        "metrics: test_validation_scenario_count=3, ai_scenario_cards_count=12, user_persona_count=5",
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6"
       ]
     },
     {
@@ -900,6 +1095,20 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.2",
+        "agent.4"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.2/agent.4 的禁止性约束：编造企业名单、投资额、产值或财政承诺；把内部数据或未经核实政策写成事实；把产业招商、资金支持或政策安排写成已确定事项；违反文保、绿地、蓝线或交通安全约束。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §全球标杆案例与AI创新生态（案例表 8 个，详见上文）",
+        "report/proposal.html 案例与生态图谱表",
+        "visual/index.html 生态图谱 SVG（8 节点/9 关系）",
+        "metrics: reference_case_count=8, ecosystem_actor_count=8, ecosystem_relation_count=9",
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6"
       ]
     },
     {
@@ -953,6 +1162,14 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.1"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.1 的禁止性约束：只提交口号式命名；照搬城市、园区或企业名称；未经授权使用字体、图片、商标、人物或企业标识；给出容积率、建筑高度、具体拆改留、道路红线或工程实施结论。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §总体概念与命名体系（一带智脉·三区两翼）",
+        "drawings/a0-boards.pdf 总体概念页、visual/index.html 概念图"
       ]
     },
     {
@@ -1006,6 +1223,16 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.2"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.2 的禁止性约束：编造企业名单、投资额、产值或财政承诺；把内部数据或未经核实政策写成事实；把产业招商、资金支持或政策安排写成已确定事项。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §全球标杆案例与AI创新生态（案例表 8 个，详见上文）",
+        "report/proposal.html 案例与生态图谱表",
+        "visual/index.html 生态图谱 SVG（8 节点/9 关系）",
+        "metrics: reference_case_count=8, ecosystem_actor_count=8, ecosystem_relation_count=9"
       ]
     },
     {
@@ -1059,6 +1286,14 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.3"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.3 的禁止性约束：隐私侵害、过度监控或无法人工复核的场景；把未成熟技术写成已可全面部署；使用非公开数据、个人隐私或指定供应商作为必要条件；把测试场景写成已批准运营。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §AI+场景赋能与测试验证（场景卡 12 / 画像 5 / 测试场景 3）",
+        "metrics: test_validation_scenario_count=3, ai_scenario_cards_count=12, user_persona_count=5"
       ]
     },
     {
@@ -1112,6 +1347,15 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.4"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.4 的禁止性约束：违反文保、绿地、蓝线或交通安全约束；给出桥隧、地下空间或工程可行性结论；擅自改造企业建筑或权属空间；过度娱乐化、网红化或低俗化地标。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §公共空间组件库与荣誉展示体系（C1-C6 + 荣誉展示）",
+        "visual/index.html 组件库 SVG（6 模块）",
+        "metrics: public_component_count=6"
       ]
     },
     {
@@ -1165,6 +1409,14 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.5"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.5 的禁止性约束：歪曲历史事实；把文化只当作科技装饰或口号；未经授权使用肖像、商标、论文图像或版权材料；混淆文化标识系统与一带整体Logo系统。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §百年京张文化叙事（铁路遗产 + 中关村创新文化 + AI 新文化）",
+        "drawings/a0-boards.pdf 文化叙事页"
       ]
     },
     {
@@ -1218,6 +1470,14 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
+      ],
+      "covered_by_agents": [
+        "agent.6"
+      ],
+      "forbidden_claims_compliance": "遵守任务书 boundary_clause 与 agent.6 的禁止性约束：夸大政府承诺或活动效果；把设想活动写成已确定安排；只写宣传口号而没有运营机制；缺少人才、企业、开发者后续转化路径。所有空间与运营建议均表述为“概念建议/参考方案/可供专业团队深化研究”，不构成控规调整、工程方案、投资测算、政府审定或已确定安排（所有空间落地建议应表述为“概念建议”“参考方案”“可供专业团队深化研究”。）。",
+      "evidence_refs": [
+        "proposal.md §年度活动与开发者社区运营（5 年度活动 + 社区治理 + 招引转化 + 分期 KPI）",
+        "metrics: annual_event_count=5"
       ]
     }
   ]
