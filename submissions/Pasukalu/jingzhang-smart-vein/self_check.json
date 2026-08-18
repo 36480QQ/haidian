@@ -44,27 +44,6 @@
       "message": "All required data-metric elements (site_area_sqm, green_ratio, public_space_ratio) have matching data-value attributes consistent with metrics.json."
     },
     {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
-    },
-    {
-      "check_id": "DETERMINISTIC_VALIDATION",
-      "result": "pass",
-      "severity": "major",
-      "target": "manifest.json",
-      "message": "All deterministic validation checks pass. Bilingual warnings are non-blocking (legacy v1 compatible)."
-    },
-    {
-      "check_id": "SPATIAL_REVIEW",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/",
-      "message": "Spatial review passes. Only minor KEY_AREA_PROVISIONAL findings (expected with provisional boundaries)."
-    },
-    {
       "check_id": "VISUAL_REVIEW",
       "result": "pass",
       "severity": "major",
@@ -77,14 +56,36 @@
       "severity": "major",
       "target": "proposal.md",
       "message": "Professional evidence review passes with zero issues."
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ],
   "ok": true,
-  "can_enter_formal_review": true,
-  "gates": {
-    "DETERMINISTIC_VALIDATION": "pass",
-    "PROFESSIONAL_EVIDENCE": "pass",
-    "SPATIAL_REVIEW": "pass",
-    "VISUAL_PACKAGING": "pass"
-  }
+  "can_enter_formal_review": true
 }
