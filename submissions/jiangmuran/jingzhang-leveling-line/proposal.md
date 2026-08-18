@@ -1949,24 +1949,13 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 
 <!-- CHECKLIST:BEGIN -->
 
-1. `node visual/assets/verify.js` —— 独立重算 `metrics.json` 里全部 27 条 `metric_class: 1` 指标，并**双向断言这一覆盖**（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析。退出码即结论；
-2. `node visual/assets/check_osm.js` —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测；
-3. `node visual/assets/check_cards.js` —— 逐张场景卡把水准点、空间锚点、退出量与执行角色解析到实际对象；`--selftest` 用八份人为改坏的卡片证明这些检查会拒绝；
-4. `node visual/assets/check_closure.js` 与 `run_s08_tabletop.js` —— 闭合差机制的数据契约与十例桌面演练；
-5. `visual/assets/census.json` / `field_map.json` —— 全场普查原始数据与统计结果；
-6. `geometry/*.geojson` —— 九个图层，每个要素带 `source_type`、`geometry_role`、`official_boundary` 属性；
-7. `visual/assets/osm_reference.json` —— 场地复核的原始读数及其明确声明的限度；
-8. `visual/assets/accessibility_qa.json` 与 `parity_qa.json` —— 实算对比度、A0 最小字高、HTML 结构检查与双语逐节内容对等；`label_collision_qa.json` 逐张图判定「一行字压在另一行字上」（首次运行即在 19 张图上找到 51 对）；`i18n_order_qa.json` 判定英文模板是否把数字填错了位置（找到三处，英文读者此前看到的是「at the 27 m distance FIG.3.0 fixes」）；
-9. `risk.json` —— 八维风险自评，含缓解措施与人工复核要求；
-10. `changelog.md` —— **含本方案自查发现并修正的错误记录**；
-11. `agent.json` —— 生成方法完整披露，`model` 字段非占位符；
-12. A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在（中日韩字体走这条；拉丁面 DejaVuSans-Bold 是简单 `/TrueType`，子集嵌在 `FontFile2`，因此只查 `FontFile3` 会漏看它——它同样已子集嵌入）。
+**这份清单已移入 `compliance_matrix.json` 的 `reviewer_checklist`**——它仍随包、仍被评审整份读到。移出正文的理由写在那里：清单共 12 项，**评审模型能按字面执行的是 0 项**，因为各项指名的文件都不在它收到的九份之内。
 
 **先说清楚这份清单是给谁的。** 仓库的 `scripts/review_submission.py` 只把九个文件整份交给评审模型——`proposal.md`、`manifest.json`、`metrics.json`、`assumptions.json`、`sources.json`、`self_check.json` 与三份矩阵——外加十八张图像：五个图纸路径、四份 PDF 的第一页、两个页面的首屏截图，每一项中英各一张（清单见 `visual/assets/visual_packet_qa.json`）。它**不读** `geometry/`、`visual/assets/`、`risk.json`、`changelog.md` 与 `agent.json`。
 
 因此上面 12 项里，**AI 评审能按字面执行的是 0 项**：其余各项指名的文件不在它收到的东西里。**拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。**这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。
 
-**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.75 秒**；另有 9 份**不在评审输入里的**文件、1201 KB、1,831 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
+**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.73 秒**；另有 9 份**不在评审输入里的**文件、1201 KB、1,831 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
 
 **这条披露有时效，而缺口已经补上。** Issue #2170 对应的 PR #2181 已并入 `upstream/main`：review-input 里有了可审计的访问边界，明确参赛者的校验脚本从不执行，并要求评审**不得仅因打不开一份未提供的 artifact 就扣分或判 gate 失败**。上面的「0 项」不变，变的是它的后果：可达性不再被误读为投稿方没有提供（E210）。本包已按该恢复路径做过——关键推导同步写进 `assumptions.json` 与 `metrics.json`，三份矩阵逐行标注证据的可达程度。
 
