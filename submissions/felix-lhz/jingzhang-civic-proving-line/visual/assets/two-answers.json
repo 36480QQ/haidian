@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.5.0",
+  "schema_version": "1.6.0",
   "dataset_id": "jingzhang-two-answers",
   "title": {
-    "zh": "京张双答：大钟寺城市采纳站",
-    "en": "Jing-Zhang Two Answers: Dazhongsi Civic Adoption Station"
+    "zh": "京张双答：三站一历",
+    "en": "Jing-Zhang Two Answers: Three Stations, One Civic Year"
   },
   "status_note": {
     "zh": "当前为 E1 概念设计；正式报价、E2 基线、E3 试验和 E4 采用均待后续建立。",
@@ -371,7 +371,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-002",
@@ -693,7 +694,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-003",
@@ -1013,7 +1015,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-004",
@@ -1336,7 +1339,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-005",
@@ -1661,7 +1665,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-006",
@@ -1984,7 +1989,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-007",
@@ -2294,7 +2300,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-008",
@@ -2605,7 +2612,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-009",
@@ -2916,7 +2924,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-010",
@@ -3284,7 +3293,7 @@
         "zh": "每日开场检查、每次试验前联锁检查、每周资产盘点、每月公开复盘",
         "en": "Daily opening check, interlock check before every trial, weekly asset inventory, monthly public review"
       },
-      "receipt_state": "E1_V7_READY_E2_PENDING",
+      "receipt_state": "pending_field_evidence",
       "dimension_basis": "prototype_design_assumption_pending_survey",
       "interface_geometry_refs": [
         "V7-D-CURB-N",
@@ -3469,7 +3478,8 @@
         "V7-D-STORAGE",
         "V7-D-STORAGE-GATE",
         "V7-D-SERVICE-ROUTE"
-      ]
+      ],
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-011",
@@ -3794,7 +3804,8 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     },
     {
       "id": "SCN-012",
@@ -4120,15 +4131,16 @@
       "recovery_verification": {
         "zh": "安全、普通服务和公众代表共同签字；结果只允许 adopt / revise / stop。",
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
-      }
+      },
+      "review_due": "after_E2_or_next_annual_review"
     }
   ],
   "subtitle": {
-    "zh": "普通服务先成立，AI 通过同题、同人、同空间的公开验收后，才获得城市采用资格。",
-    "en": "The baseline stands first; AI earns civic adoption only through a public same-task, same-user, same-space test."
+    "zh": "一条不断线的公共基线，三座会留下回执的城市地标，一年四季的公开采纳程序。",
+    "en": "One uninterrupted public baseline, three civic landmarks that leave receipts, and a year-round public adoption process."
   },
   "field_status": "not_field_run",
-  "publication_version": "V7",
+  "publication_version": "V8",
   "evidence_ladder": [
     {
       "id": "E0",
@@ -4211,5 +4223,214 @@
       "zh": "普通服务不得退化；安全类事件零容忍；AI 增量阈值只在 E2 普通服务基线建立后由人类场景委员会确认。",
       "en": "The baseline must not regress; safety events are zero-tolerance; AI-increment thresholds are set by the human scene committee only after the E2 baseline is established."
     }
+  },
+  "annual_program": [
+    {
+      "program_id": "YEAR-SPRING",
+      "season": "spring",
+      "station_ref": "belt_wide",
+      "title": {
+        "zh": "公共基线审计季",
+        "en": "Public Baseline Audit Season"
+      },
+      "users": [
+        "wheelchair_user",
+        "blind_pedestrian",
+        "older_adult_without_smartphone",
+        "night_operator"
+      ],
+      "ordinary_baseline": {
+        "zh": "人工无障碍审计、静态导视核验、遮阴饮水和常规接驳台账。",
+        "en": "Staff-led accessibility audit, static-sign check, shade/water and conventional interchange ledger."
+      },
+      "ai_optional": {
+        "zh": "可选工具只整理公开问题，不替代现场判断。",
+        "en": "Optional tools organise public issues only and do not replace field judgement."
+      },
+      "entry_gate": "named_baseline_operator_and_accessibility_review_method",
+      "evidence_output": "baseline_issue_register",
+      "stop_condition": "ordinary_service_or_accessibility_route_unavailable",
+      "knowledge_asset": "public_baseline_audit_pack"
+    },
+    {
+      "program_id": "YEAR-SUMMER",
+      "season": "summer",
+      "station_ref": "zhongzhiyuan",
+      "title": {
+        "zh": "能力验真与开发者开放测试",
+        "en": "Capability Verification and Developer Open Test"
+      },
+      "users": [
+        "developer_team",
+        "safety_reviewer",
+        "accessibility_observer"
+      ],
+      "ordinary_baseline": {
+        "zh": "隔离场地、人工安全员、手工复现清单和完整公共旁路。",
+        "en": "Isolated site, human safety staff, manual reproducibility checklist and complete public bypass."
+      },
+      "ai_optional": {
+        "zh": "模型、机器人和端侧设备在受控边界内接受复现与降级测试。",
+        "en": "Models, robots and edge devices undergo reproducibility and degradation tests in a controlled boundary."
+      },
+      "entry_gate": "licence_safety_data_and_shutdown_checks_complete",
+      "evidence_output": "verification_dossier",
+      "stop_condition": "safety_data_or_degradation_gate_failure",
+      "knowledge_asset": "open_verification_recipe"
+    },
+    {
+      "program_id": "YEAR-AUTUMN",
+      "season": "autumn",
+      "station_ref": "dazhongsi",
+      "title": {
+        "zh": "城市场景试用与公众采纳周",
+        "en": "Urban Trial and Civic Adoption Week"
+      },
+      "users": [
+        "resident_and_carer",
+        "visitor",
+        "international_team",
+        "transport_operator"
+      ],
+      "ordinary_baseline": {
+        "zh": "普通路线、人工服务、常规接驳和纸质回执先独立运行。",
+        "en": "Ordinary routes, staffed service, conventional interchange and paper receipt operate first."
+      },
+      "ai_optional": {
+        "zh": "AI 只在许可时窗和一侧试验湾比较同题增量。",
+        "en": "AI compares same-task increment only in a permitted window and one-side trial bay."
+      },
+      "entry_gate": "E2_baseline_complete_and_all_trial_permits_valid",
+      "evidence_output": "civic_adoption_receipt",
+      "stop_condition": "zero_tolerance_event_or_baseline_regression",
+      "knowledge_asset": "adopt_revise_stop_case_record"
+    },
+    {
+      "program_id": "YEAR-WINTER",
+      "season": "winter",
+      "station_ref": "ai_origin",
+      "title": {
+        "zh": "年度回执与退出复盘",
+        "en": "Annual Receipt and Exit Review"
+      },
+      "users": [
+        "public_representative",
+        "asset_owner",
+        "service_operator",
+        "data_reviewer"
+      ],
+      "ordinary_baseline": {
+        "zh": "公开会议、纸质摘要、人工申诉和资产盘点。",
+        "en": "Public meeting, paper summary, staffed appeal and asset inventory."
+      },
+      "ai_optional": {
+        "zh": "可选助手仅生成可追溯摘要，最终决定由人类委员会签署。",
+        "en": "Optional assistant produces traceable summaries only; the human committee signs the final decision."
+      },
+      "entry_gate": "conflict_disclosure_and_evidence_quality_review_complete",
+      "evidence_output": "annual_public_ledger",
+      "stop_condition": "evidence_not_reproducible_or_conflict_not_disclosed",
+      "knowledge_asset": "annual_civic_proof_archive"
+    }
+  ],
+  "pilot_protocol": {
+    "pilot_id": "S7-90D",
+    "scene_ref": "SCN-010",
+    "status": "concept_schedule_pending_site_and_operator_confirmation",
+    "minimum_role_coverage": [
+      "site_lead",
+      "ordinary_service_staff",
+      "safety_lead",
+      "data_recorder"
+    ],
+    "role_separation_rule": "safety_lead_and_ordinary_service_staff_must_not_be_the_same_person_during_TRIAL",
+    "phases": [
+      {
+        "phase_id": "P90-01",
+        "day_range": "0-15",
+        "entry_gate": "site_access_for_survey",
+        "owner_roles": [
+          "site_lead"
+        ],
+        "evidence_output": "survey_and_permission_gap_register",
+        "stop_condition": "boundary_ownership_exit_fire_utility_or_traffic_unknown_blocks_layout",
+        "receipt_state": "E1"
+      },
+      {
+        "phase_id": "P90-02",
+        "day_range": "16-30",
+        "entry_gate": "baseline_layout_reviewed",
+        "owner_roles": [
+          "site_lead",
+          "ordinary_service_staff"
+        ],
+        "evidence_output": "ordinary_baseline_prototype",
+        "stop_condition": "public_cross_or_accessibility_route_incomplete",
+        "receipt_state": "E2_pending"
+      },
+      {
+        "phase_id": "P90-03",
+        "day_range": "31-45",
+        "entry_gate": "ordinary_baseline_operational",
+        "owner_roles": [
+          "ordinary_service_staff",
+          "data_recorder"
+        ],
+        "evidence_output": "seven_operating_day_baseline",
+        "stop_condition": "sample_definition_or_manual_service_not_stable",
+        "receipt_state": "E2"
+      },
+      {
+        "phase_id": "P90-04",
+        "day_range": "46-75",
+        "entry_gate": "all_permits_RACI_and_zero_tolerance_controls_active",
+        "owner_roles": [
+          "site_lead",
+          "ordinary_service_staff",
+          "safety_lead",
+          "data_recorder"
+        ],
+        "evidence_output": "controlled_same_task_trial_log",
+        "stop_condition": "any_zero_tolerance_event_or_baseline_regression",
+        "receipt_state": "E3"
+      },
+      {
+        "phase_id": "P90-05",
+        "day_range": "76-90",
+        "entry_gate": "trial_closed_or_completed",
+        "owner_roles": [
+          "site_lead",
+          "ordinary_service_staff",
+          "safety_lead",
+          "data_recorder",
+          "public_representative"
+        ],
+        "evidence_output": "recovery_verification_and_public_receipt",
+        "stop_condition": "public_space_not_restored_or_evidence_not_reproducible",
+        "receipt_state": "E4_pending"
+      }
+    ]
+  },
+  "public_ledger_schema": {
+    "status": "schema_only_no_field_records",
+    "allowed_decisions": [
+      "adopt",
+      "revise",
+      "stop"
+    ],
+    "required_fields": [
+      "event_id",
+      "task",
+      "user_group",
+      "ordinary_baseline",
+      "ai_increment",
+      "evidence_level",
+      "measurement_definition",
+      "human_decision",
+      "review_due",
+      "appeal_route",
+      "exit_asset_destination"
+    ],
+    "records": []
   }
 }

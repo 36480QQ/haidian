@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.5.0",
+  "schema_version": "1.6.0",
   "review_date": "2026-08-18",
-  "version": "V7",
-  "calibration_baseline": "PR #3191 Review Agent 86/100",
-  "status": "v7_qa_verified",
+  "version": "V8",
+  "calibration_baseline": "PR #3225 Review Agent 86/100",
+  "status": "v8_implementation_in_progress",
   "summary": {
     "blocking_open": 0,
-    "major_open": 0,
+    "major_open": 3,
     "major_closed": 7,
-    "minor_open": 6
+    "minor_open": 7
   },
   "findings": [
     {
@@ -144,7 +144,58 @@
       "finding": "Dazhongsi OSM context contains only one building feature.",
       "remediation": "Show data-missing zones and distinguish design envelopes.",
       "status": "open_external_dependency"
+    },
+    {
+      "id": "V8-BRIEF-01",
+      "round": "brief_alignment",
+      "severity": "major",
+      "finding": "V7 agent.4-agent.6 reused generic evidence and did not independently establish landmarks, culture, developer activity or annual operation.",
+      "evidence": [
+        "proposal keyword audit",
+        "compliance_matrix agent.1-agent.6 comparison"
+      ],
+      "remediation": "Create three receipt landmarks, civic evidence mile, four-season program and unique task evidence.",
+      "verification": "Pending rendered and bilingual review.",
+      "status": "open"
+    },
+    {
+      "id": "V8-VIS-01",
+      "round": "entry_evidence",
+      "severity": "major",
+      "finding": "V7 core figures repeated the same cross plan and two optional figures had identical hashes.",
+      "evidence": [
+        "18-image V7 comparison",
+        "culture-brand/ecosystem-synergy SHA-256 equality"
+      ],
+      "remediation": "Assign one unique question to each core figure and prohibit semantic duplicates.",
+      "verification": "Pending V8 figure hash and visual review.",
+      "status": "open"
+    },
+    {
+      "id": "V8-IMP-01",
+      "round": "implementation_feasibility",
+      "severity": "major",
+      "finding": "V7 had quantities but no compact pilot sequence connecting site verification, baseline, trial, recovery and public receipt.",
+      "evidence": [
+        "V7 proposal and implementation figure"
+      ],
+      "remediation": "Publish five-gate 90-day S7 protocol with role separation.",
+      "verification": "Pending publication and reference-integrity QA.",
+      "status": "open"
+    },
+    {
+      "id": "V8-DATA-01",
+      "round": "external_context",
+      "severity": "minor",
+      "finding": "Official station exits, surveyed buildings, ownership, utilities and field performance remain unavailable.",
+      "evidence": [
+        "site package missing-data list",
+        "OSM context completeness note"
+      ],
+      "remediation": "Keep directional context and concept assumptions explicit; verify before E2.",
+      "verification": "External dependency remains open.",
+      "status": "open_external_dependency"
     }
   ],
-  "note": "Major findings close only after rendered evidence and automated reference checks; the OSM context gap remains an explicit external dependency."
+  "note": "V8 major findings remain open until bilingual figures, PDFs, HTML and reference checks are rendered and independently inspected."
 }

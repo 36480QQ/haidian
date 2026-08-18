@@ -433,6 +433,71 @@
         "A-V7-S7-DIMENSIONS"
       ],
       "reason": "Formal market quotes are pending."
+    },
+    "receipt_landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-atlas.json"
+      ],
+      "formula": "count(landmarks)",
+      "confidence": "high",
+      "assumptions": [
+        "A-V8-LANDMARKS"
+      ]
+    },
+    "annual_program_cycle_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/two-answers.json"
+      ],
+      "formula": "count(annual_program)",
+      "confidence": "high",
+      "assumptions": [
+        "A-V8-OPERATIONS"
+      ]
+    },
+    "s7_pilot_phase_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/two-answers.json"
+      ],
+      "formula": "count(pilot_protocol.phases)",
+      "confidence": "high",
+      "assumptions": [
+        "A-V8-OPERATIONS"
+      ]
+    },
+    "agent_task_unique_evidence_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "compliance_matrix.json"
+      ],
+      "formula": "count(agent.1..agent.6 with distinct evidence summary, report section and drawing set)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "public_ledger_record_status": {
+      "status": "unknown",
+      "value": null,
+      "unit": "field_records",
+      "source_files": [
+        "visual/assets/two-answers.json"
+      ],
+      "formula": "count(public_ledger_schema.records after E2/E3)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-METRICS-001",
+        "A-V8-OPERATIONS"
+      ],
+      "reason": "The ledger contract exists, but no field prototype, trial or civic decision has occurred."
     }
   }
 }

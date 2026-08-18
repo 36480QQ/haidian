@@ -49,6 +49,18 @@
       "impact": "Every dimension, interface, quantity and quote requires survey and professional review before E2.",
       "verification_method": "Licensed survey, utility detection, official station-exit and road-line information, accessibility/fire/traffic review, prototype measurement and formal supplier quotations.",
       "status": "open"
+    },
+    {
+      "id": "A-V8-LANDMARKS",
+      "status": "concept_only",
+      "statement": "Verification Ring, Translation Gate and Receipt Porch are conceptual civic landmark prototypes under provisional boundaries, not approved buildings or installed public art.",
+      "impact": "Location, structure, heritage review, fire access, utilities, ownership and accessibility require professional verification before E2."
+    },
+    {
+      "id": "A-V8-OPERATIONS",
+      "status": "requires_stakeholder_agreement",
+      "statement": "The four-season civic year and 90-day S7 pilot are proposed operating protocols, not confirmed calendars, staffing commitments or permits.",
+      "impact": "Phase dates, duty rosters, insurance, procurement, data governance and public representation must be agreed before field use."
     }
   ]
 }
