@@ -71,7 +71,7 @@ Rules are easy to write. You find out whether they work by writing somebody's mo
 
 **What she can do.** She may require one re-survey of the judgement that affected her, and the result is published alongside the original reading, anonymised. That right sits at the third-order point nearest her home: **putting the right of review in a specialist institution fifteen minutes away is the same as not granting it.**
 
-![FIG.21 How far the nearest benchmark actually is](assets/figures/reach.en.png)
+![FIG.21 How far the nearest benchmark actually is: this proposal's own rule, applied to itself](assets/figures/reach.en.png)
 
 **That sentence had never been turned on this proposal.** FIG.21 measures the walk along the spine: the worst place on the line is 1,111 m from the nearest benchmark, 30.9 minutes for P5, and six of nine segments fail — **on this rule, this proposal does not meet the standard it holds others to**.
 
@@ -119,7 +119,7 @@ The census deliberately does not read `submissions-data.js`. That file is a gene
 
 Data products ship in `visual/assets/` and the numbers can be checked directly. The generation scripts cannot ship: the submission format's allow-list accepts no `.py` anywhere (`assets/*` takes images only, `report/*` five fixed names, `geometry/*` nine named files). They are published in the accompanying issue instead. Both self-collected sources are graded `background_only` in `sources.json`: they are the empirical basis of the argument, **not** evidence for any spatial or statutory conclusion.
 
-![FIG.01 Overall concept and site cross-check](assets/figures/site-overview.en.png)
+![FIG.02 Evidence chain as an unclosed leveling circuit](assets/figures/evidence-circuit.en.png)
 
 Official `SITE_BOUNDARY` and the three `KEY_AREA` polygons remain unpublished. This package labels `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` as `provisional_constraint` with `official_boundary=false`; they are for generation, self-check, visualisation and discussion only, never as an official redline, approval basis or precise-area basis. When official polygons appear, **every layer and metric is recomputed as a whole** — never one file at a time. Same rule this proposal applies to the city: over tolerance, re-measure the section, do not patch a station.
 
@@ -204,6 +204,8 @@ The two figures deserve a note: 369.3 ha recomputed from the layer against about
 All three spatial boundaries are provisional substitutes [source:BOUNDARY-SOURCE]; their basis and error are documented in the repository's `provisional_boundaries_basis.md`. When official data is published the whole package is recomputed [depth:existing_conditions_diagnosis] — never one layer at a time, because a network with one station re-measured and the rest not is not a network.
 
 ![FIG.03 Land-use structure and the three scope levels](assets/figures/land-use-structure.en.png)
+
+> **How to read it.** The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -491,6 +493,8 @@ Each of the three key areas carries one survey role, and the three check one ano
 | Dazhongsi AI Industry Cluster [data:geometry/key_areas.geojson#PROV-KEY-003] | **BM-2, high-frequency reading point** | AI-native consumption and business | Four-quadrant pedestrian connection at the intersection; compound use of planned green space; Dazhongsi station integration | S03 agent business desk; S05 data-factor circulation; S09 daily-service demonstration street |
 
 ![FIG.04 The three key areas, the two wings and the benchmark layout](assets/figures/key-areas.en.png)
+
+> **How to read it.** Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points
 
 ### The announcement assigns each key area a block type
 
@@ -1031,7 +1035,9 @@ Public-service facility baselines are a current data gap. This proposal invents 
 
 Layers [data:geometry/green_space.geojson#GREEN-001] and [data:geometry/public_space.geojson#PUBLIC-001]; recomputed ratios [metric:green_ratio] and [metric:public_space_ratio]; depth [depth:blue_green_public_space].
 
-![FIG.05 Slow mobility, blue-green and closing routes](assets/figures/mobility-bluegreen.en.png)
+![FIG.05 Slow mobility, blue-green and connecting routes](assets/figures/mobility-bluegreen.en.png)
+
+> **How to read it.** The line and direction of both connecting routes, and the tolerance bands by order at lower right
 
 ### Three AI pilgrimage landmarks (agent.4)
 
@@ -1153,7 +1159,7 @@ A kit of parts is easy to write as a list, and a list is exactly what hides whet
 
 The lower panel is the kerb in section, in the priority order the transport chapter sets, and it **draws sequence without drawing widths**: capacity must be computed on site from measured clear width, and a figure not derived from measurement is fabricated certainty. Device charging sits behind pedestrians and accessibility, and that order is itself the position.
 
-![FIG.10 The benchmark on the street, and how the kerb is shared](assets/figures/street-eye-level.en.png)
+![FIG.10 The benchmark on the street and how the kerb is shared](assets/figures/street-eye-level.en.png)
 
 **Bilingual signage rules.** Most systems set Chinese above English and drop English when space is short. This numbering grammar **depends on no language at all**: `BM-0`, `RT-N`, `F1` read for either language and for neither. Order and cycle are bilingual, Chinese first; readings and tolerances are **numbers first**; the complaint entry is bilingual **plus a non-textual icon**. Three hard rules: **numbers are never translated**, or cross-language reference breaks; when space is short, compress explanation first, then English, **never the number**; and where the two disagree, **the recomputable number governs**.
 
@@ -1451,7 +1457,9 @@ It calls none of this proposal's generation scripts and needs neither Python nor
 
 **This is not decoration.** During development it overturned one of this proposal's own numbers: `building_footprint_area_sqm` diverged by 16% because two landmarks sat concentric with adjacent facilities — the generation side hid the overlap in a union, and independent summation exposed it. **The response was to fix the geometry, not the metric:** the two landmarks were offset, and footprint overlap became a hard build error. The episode is recorded in `changelog.md`. A number that has been overturned by its own verifier is more credible than one never tested.
 
-![FIG.06 Recomputed metrics and the field census](assets/figures/metrics-evidence.en.png)
+![FIG.06 Recomputed metrics and closure evidence](assets/figures/metrics-evidence.en.png)
+
+> **How to read it.** At left, what separates the three classes of metric; at right, the one time the mechanism was actually run - ten cases, two accepted and eight refused with reasons
 
 ### Accessibility and legibility QA: computed, not asserted
 
@@ -1467,6 +1475,8 @@ Distance legibility: A0 is 841 mm across a 1600-unit canvas; by the signage conv
 
 **The script checks what is computable and does not replace human testing.** Screen-reader listening, reading by people with colour vision deficiency, and on-site legibility from a printed A0 must be done by people; this proposal does not claim to have done them, only that the computable part has been computed and can be re-run.
 
+**One of those is now computed.** The seven land-use fills, measured through a Vienot 1999 dichromacy simulation and CIEDE2000, are at least 10.0 apart in all four vision types; culture and research land were **2.9** apart for a protanope. **A simulation is not a person**: the limit above is narrowed, not discharged. The closest pair in each vision type is recorded in `self_check.json`.
+
 ### Recomputation discipline
 
 | Trigger | Scope of recomputation |
@@ -1477,6 +1487,8 @@ Distance legibility: A0 is 841 mm across a 1600-unit canvas; by the signage conv
 | Jurisdiction verified | Treated as a boundary change; the section is re-measured |
 
 These four share their source with the core rule: **over tolerance, re-measure the section; do not patch.** A proposal that permits itself partial substitution while requiring the city to recompute as a whole does not hold its own mechanism.
+
+### The compliance matrix
 
 `compliance_matrix.json` maps announcement tasks and agent.1–agent.6 to sections, layers, metrics and figures. **The matrix is an index, not content** — the taskbook's required outputs must exist as checkable sections, layers and drawings, and copying the matrix into the body would only turn the document into a compliance form.
 
@@ -1526,16 +1538,16 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-355 entries. By finder:
+360 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 40 | Run against the shipped package, not a draft |
-| The author | 228 | Found while working |
+| The author | 232 | Found while working |
 | This package's own gate | 26 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
-| Reading a rival's package | 25 | Seen elsewhere, absent here |
+| Reading a rival's package | 26 | Seen elsewhere, absent here |
 
 <!-- ERRATA:COUNT:END -->
 
@@ -1544,12 +1556,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Shape | Count |
 |---|---|
 | An easy measure | 62 |
-| Two copies drifted | 57 |
-| Shipped unseen | 31 |
-| Uncheckable | 29 |
+| Two copies drifted | 58 |
+| Shipped unseen | 33 |
+| Uncheckable | 30 |
 | Outlived the package | 25 |
 | Nothing fails it | 19 |
-| Not itself | 15 |
+| Not itself | 16 |
 | Outlived its line | 14 |
 | Recorded where found | 14 |
 | A reference did not resolve | 13 |
@@ -1679,6 +1691,10 @@ drawn at scale it is evidence. FIG.02 carries the same comparison as a closure d
 
 ![FIG.01 Overall concept and site overview](assets/figures/site-overview.en.png)
 
+> **How to read it.** Three areas and two wings, each named on the map; the five functions drawn as five positions on one closing loop. The site cross-check is kept at footnote weight: the inferred boundary lies 412.5 m from the segment OSM has mapped
+
+### The taskbook's own thirteen review dimensions
+
 <!-- TASKBOOKDIMS:BEGIN -->
 
 The review script scores **7 dimensions, 0-5 each** - brief relevance, originality, AI and urban-planning innovation, implementability, public interest and inclusion, risk and compliance awareness, expression completeness. The taskbook's own **13 review dimensions** - objective alignment, function match, brand identity, regional synergy, planning innovation, industry support, scenario perceptibility, spatial clarity, transferability, expression completeness, public compliance, international communication, long-term operating value - each mapped to its section in `compliance_matrix.json` (E215, E216).
@@ -1692,12 +1708,12 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 | Sheet | Content | What to read on it |
 |---|---|---|
 | FIG.00 | The leveling line: a city that publishes its own error | — |
-| ● FIG.01 | Overall concept and site overview | Three areas and two wings named on the map; five functions on one loop. Cross-check kept as a footnote: 412.5 m to the park |
+| ● FIG.01 | Overall concept and site overview | Three areas and two wings, each named on the map; the five functions drawn as five positions on one closing loop. The site cross-check is kept at footnote weight: the inferred boundary lies 412.5 m from the segment OSM has mapped |
 | FIG.02 | Evidence chain as an unclosed leveling circuit | — |
-| ● FIG.03 | Three scope levels and network tiers | The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give |
-| ● FIG.04 | Three areas, two wings and benchmark layout | Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points |
-| ● FIG.05 | Slow mobility, blue-green and connecting routes | The two connecting routes and their direction; tolerance bands lower right |
-| ● FIG.06 | Recomputed metrics and closure evidence | Three metric classes at left; at right the run: ten cases, two passed and eight refused with reasons |
+| ● FIG.03 | Land-use structure and the three scope levels | The three levels nested; the plan carries the seven-class partition under the three phase increments, advancing on a trigger not a year; at right, the values this proposal does not give |
+| ● FIG.04 | The three key areas, the two wings and the benchmark layout | Laid out horizontally; read the K0–K9 chainage and the positions of the eight tiered points |
+| ● FIG.05 | Slow mobility, blue-green and connecting routes | The line and direction of both connecting routes, and the tolerance bands by order at lower right |
+| ● FIG.06 | Recomputed metrics and closure evidence | At left, what separates the three classes of metric; at right, the one time the mechanism was actually run - ten cases, two accepted and eight refused with reasons |
 | FIG.07 | Identity: mark, construction and applications | — |
 | FIG.08 | Innovation ecosystem and element mechanisms | — |
 | FIG.09 | Landmarks, kit of parts, signage syntax and operating cycle | — |
@@ -1826,7 +1842,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files none of which the reviewer receives, 1189 KB, 1,824 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files none of which the reviewer receives, 1206 KB, 1,833 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
@@ -1870,7 +1886,7 @@ The six cases cited in the text — algorithm registers, risk-tiered legislation
 
 ### Index to the drawings, and what to read in each
 
-**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 93 of 96 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
+**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 96 of 99 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error — **on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing** — FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year — 214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
 
 <!-- PDFPAGE1:BEGIN -->
 

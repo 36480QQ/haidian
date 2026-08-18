@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.785,
+ "overall_ratio": 0.787,
  "floor": 0.75,
  "sections": [
   {
@@ -13,22 +13,22 @@
   {
    "section": "One person's day: what the mechanism looks like on the street",
    "zh_chars": 938,
-   "en_words": 645,
-   "ratio": 0.877,
+   "en_words": 652,
+   "ratio": 0.887,
    "pass": true
   },
   {
    "section": "Design Basis and Source List",
    "zh_chars": 1080,
-   "en_words": 669,
-   "ratio": 0.79,
+   "en_words": 671,
+   "ratio": 0.792,
    "pass": true
   },
   {
    "section": "Three-Level Scope Framework",
-   "zh_chars": 3925,
-   "en_words": 2307,
-   "ratio": 0.75,
+   "zh_chars": 3979,
+   "en_words": 2342,
+   "ratio": 0.751,
    "pass": true
   },
   {
@@ -47,9 +47,9 @@
   },
   {
    "section": "Detailed Design of Key Areas",
-   "zh_chars": 4608,
-   "en_words": 2732,
-   "ratio": 0.756,
+   "zh_chars": 4635,
+   "en_words": 2752,
+   "ratio": 0.757,
    "pass": true
   },
   {
@@ -75,8 +75,8 @@
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 5382,
-   "en_words": 3258,
+   "zh_chars": 5418,
+   "en_words": 3279,
    "ratio": 0.772,
    "pass": true
   },
@@ -89,16 +89,16 @@
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
-   "zh_chars": 5179,
-   "en_words": 3051,
-   "ratio": 0.751,
+   "zh_chars": 5332,
+   "en_words": 3147,
+   "ratio": 0.753,
    "pass": true
   },
   {
    "section": "The instrument on the site's own data",
-   "zh_chars": 4886,
-   "en_words": 2979,
-   "ratio": 0.778,
+   "zh_chars": 4941,
+   "en_words": 3067,
+   "ratio": 0.792,
    "pass": true
   },
   {
@@ -110,9 +110,9 @@
   },
   {
    "section": "References",
-   "zh_chars": 1277,
+   "zh_chars": 1256,
    "en_words": 774,
-   "ratio": 0.773,
+   "ratio": 0.786,
    "pass": true
   }
  ],
