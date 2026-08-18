@@ -46,6 +46,22 @@ iteration: "v0.1"
 - `standard_matrix.json` 回应强制性专业标准 [standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 - `design_depth_matrix.json` 逐项标注设计深度完成状态 [depth:land_use_layout]
 
+### 成果模态与交付物清单
+
+任务书要求成果"以人类可直观理解的文本、图像、示意图、表格、场景卡、视频/声音、三维或交互网页形成完整成果" [source:AGENT-TASKBOOK]。本包各模态对应的交付物、规格与核验方式如下，全部文件随包提交、可离线打开：
+
+| 模态 | 交付物 | 规格与内容 | 核验方式 |
+|---|---|---|---|
+| 文本 | `proposal.md`／`proposal.en.md` | 中英双语全文，逐条应答 agent.1–agent.6 | 直接通读 |
+| 表格 | 正文 18 张表格 | 功能机制映射、场景卡、指标复算、风险处理、合规对应等 | 正文内可读 |
+| 图像与示意图 | `assets/figures/` 五组中英对照 PNG | 资料证据链、用地结构、重点区、交通蓝绿、指标复算 | 直接查看 |
+| 工程图纸 | `drawings/a0-boards.pdf`、`drawings/a3-booklet.pdf`（各另有英文版） | A0 图板与 A3 图册 | PDF 阅读器打开 |
+| 场景卡 | 「AI 场景卡（agent.3，16 张）」一节 | 每卡含空间载体、成熟度分级与人工复核边界 | 正文内可读 |
+| 视频 | `assets/media/gauge-mechanism.mp4` | 55 秒、1280×720、24 fps、H.264、**无声**；六段讲清核心机制，画面全部由本包已提交的几何与指标数据程序化绘制 | 另附 `gauge-mechanism.vtt` 字幕与 `gauge-mechanism.md` 全文字稿，无声条件下亦可完整获取全部信息 |
+| 三维与交互网页 | `visual/index.html` 末节「三维巡览」，由 `visual/assets/gauge-tour.js`（386 行）与 `gauge-tour-data.js` 驱动 | 自写 WebGL 1 渲染器，载入本包 9 个图层共 1070 个几何要素；方向键旋转与缩放、Shift+上下键调俯仰、数字键 0–3 切换视角、空格环绕、R 复位，画布带键盘可达标签 | 浏览器本地打开 `visual/index.html` 并滚动至末节；运行时不加载任何远程资源 |
+
+上述媒体文件与三维巡览脚本均以路径和角色登记在 `manifest.json` 中，可在仓库内直接打开核验。
+
 ### 数据缺口（本章明确披露）
 
 组织方尚未提供官方红线与重点区精确 polygon；`planning_limits.json` 中容积率、建筑高度、建筑密度、绿地率、退线五项官方控制指标状态均为 `missing` [source:SITE-PACKAGE]。本方案**不代填**这些指标，保持 `unknown`，并在第 11 章说明替换官方数据后需重算的范围。
@@ -533,6 +549,13 @@ JZ-Parts / <编号>
 ### 版权
 
 本方案文本、几何数据、图件与可视化均为原创生成，未使用未清权素材、未授权肖像、商标或版权图像。`visual/index.html` 完全离线，不加载任何远程脚本、样式、字体、媒体或地图瓦片。
+
+各模态资产的权利状态逐项说明如下：
+
+- **视频**：`assets/media/gauge-mechanism.mp4` 为本方案自制，画面全部由本包已提交的几何与指标数据程序化绘制，未使用任何第三方影像、素材库画面、航拍照片或卫星影像。该视频为无声视频，不含语音、音乐或音效，因此不涉及配乐、音效库或配音授权。`assets/media/gauge-mechanism.md` 记录其分段内容与权利说明，`assets/media/gauge-mechanism.vtt` 提供完整字幕。
+- **三维巡览代码**：`visual/assets/gauge-tour.js`（386 行）为自写 WebGL 1 渲染器，未引入 Three.js 等任何第三方运行库；`visual/assets/gauge-tour-data.js` 为本包几何数据的静态导出。两者运行时均不发起网络请求。
+- **字体**：`visual/index.html` 与 `report/proposal.html` 均不内嵌字体文件、不含 `@font-face` 声明，仅声明系统字体栈按序回退，不涉及字体文件的分发或授权。
+- **封面与海报**：`assets/media/cover.webp`（1600×900）、`assets/media/gauge-mechanism.webp`（1280×720）与 `assets/media/gauge-tour-still.webp`（1280×720，三维巡览默认总览视角的渲染静帧）均为上述自制内容的导出，权利状态同上。
 
 ## 参考资料
 

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c451a5194653f7313875ded963f596fb540874aaa8bab490e122f9121a0c008f"
+      "sha256": "a4bae48063e7cc21dd703d3ca248f274f1fdcd67f1fa3ddf84a5148fb125e229"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "65879a2deb590ae6cb09060a1ec25fe9bf4c609a59cded678a4774297459d686"
+      "sha256": "c2f3aa4c80effa24c586d3a949717459465b7856a0110f69b7624ba799b61d62"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "581eb55946368a826a464d599ddf432d70b0ff61ddeaeca810861a36788b5fd0"
+      "sha256": "133d443ccfab00d7f2df1a8ee806434e27177b160cf2256bd27ccc3e1fa97007"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "aa737fd80e1e365815414d47a0ab710bc1f3f006b45fa4d1f139df8f5f43ebc9"
+      "sha256": "c92a32fc1477686eef0b3d94a4706ad24f68189004f97a633f26f0fcb9d4d2fa"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +209,7 @@
       "path": "proposal.en.md",
       "role": "proposal_translation",
       "required": false,
-      "sha256": "3220c7b93f187244cfb10805b9223ebe3de3ea6c2086f26e4ba760db88a9bbde",
+      "sha256": "7c5191b3d3dbad23c00f081438732b6e2dde3c70b052bc6cfd41d9bf3cd9042b",
       "translation_of": "proposal.md",
       "language": "en"
     },
@@ -217,7 +217,7 @@
       "path": "report/proposal.en.html",
       "role": "report",
       "required": false,
-      "sha256": "65c3da17060b2703c73418e21f90c708dde08e7bf7c375128e453eb40c496057",
+      "sha256": "156d0e52a01b00941e41d6caff2491d146bbae479e7d993bca08234c2a78046d",
       "translation_of": "report/proposal.html",
       "language": "en"
     },
@@ -225,7 +225,7 @@
       "path": "visual/index.en.html",
       "role": "visual",
       "required": false,
-      "sha256": "b2a49860909398127d74422beacc68e5b8a0e9d739ea81667fb02f010c5e109c",
+      "sha256": "98ff0a5877f321f7b11a445299aecb4a1952db99157924021e5658ebf119c608",
       "translation_of": "visual/index.html",
       "language": "en"
     },
@@ -319,6 +319,16 @@
       "sha256": "03d01aa613aecb6443d3136bf20167848b6a778d2a8bf28240f5dae54982d090"
     },
     {
+      "path": "assets/media/gauge-tour-still.webp",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "三维巡览静帧",
+      "title_en": "3D tour still",
+      "description_zh": "页首成果模态一览所用静帧，由本包三维巡览渲染器在默认总览视角输出。",
+      "description_en": "Still used by the deliverable-modality strip at the head of the page, output by this package's own 3D tour renderer at its default overview view.",
+      "sha256": "04b5867ed932576a7418f415a1ca7faec5c92977a0333c024e171a9b8b0d8bec"
+    },
+    {
       "path": "assets/media/gauge-mechanism.vtt",
       "role": "caption_track",
       "required": false,
@@ -348,7 +358,7 @@
       "title_en": "3D tour hand-written WebGL renderer",
       "description_zh": "无第三方运行库、无网络 API 的手写 WebGL 1 渲染器；键盘可操作，遵循 prefers-reduced-motion，无 WebGL 时降级为文字说明。",
       "description_en": "Hand-written WebGL 1 renderer with no third-party runtime library and no network API; keyboard operable, honors prefers-reduced-motion, degrades to a text notice without WebGL.",
-      "sha256": "230ebff29e2d074ed5a41b78ba39e1e70ab94004233b3cbe0b8dd2c3084123c6"
+      "sha256": "4c85d51a28926c34a003b55c7a16c195a9d46cd4a54ca0cbc93a38a81a75fa23"
     }
   ],
   "validation_claim": {
