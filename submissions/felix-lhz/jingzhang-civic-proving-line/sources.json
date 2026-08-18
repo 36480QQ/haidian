@@ -335,6 +335,23 @@
       "license": "Government public information; factual citation and attribution only",
       "usage": "Background evidence that the surface segment of Metro Line 13 includes Dazhongsi; used only for directional rail context.",
       "limitations": "Does not locate entrances, platforms, public-space boundaries, traffic demand or engineering conditions."
+    },
+    {
+      "id": "V9-CONCEPT-EXPERIENCE",
+      "publisher": "Participant / OpenAI built-in ImageGen workflow",
+      "date": "2026-08-18",
+      "source_type": "agent_generated_media",
+      "url": null,
+      "retrieved_at": "2026-08-18",
+      "license": "Participant-created concept media for this submission; use governed by submission rights and platform terms.",
+      "usage": "Three geometry-matched experiential views for T2 Verification Ring, S2 Translation Gate and S7 Receipt Porch.",
+      "files": [
+        "assets/figures/concept-t2-v9.webp",
+        "assets/figures/concept-s2-v9.webp",
+        "assets/figures/concept-s7-v9.webp"
+      ],
+      "method": "Built-in ImageGen with the corresponding local concept plan used as spatial reference; local vector labels are added separately.",
+      "limitations": "Concept-generated image, not a photograph, site survey, verified existing condition, dimensional proof, performance record or institutional commitment."
     }
   ]
 }
