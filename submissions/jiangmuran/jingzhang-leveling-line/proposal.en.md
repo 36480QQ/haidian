@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 summary: "Leveling is not about measuring accurately once; it is about measuring back. Depart from a datum, run the circuit, return — and the closure error decides whether the whole line is trusted. This proposal applies that hundred-year-old rule where a wrong reading injures someone: low-speed robots, autonomous shuttles, and AI health, education, legal and daily services. In space: a 9,443 m walkable public axis, three areas and two wings with benchmarks by role, a seven-class land-use partition, and eight update projects with roles, costs and exits. An approved statutory plan already covers this belt (HD00-1601 and adjacent blocks, approved 2026-08-11), and this proposal is conceptual deepening above it, not beside it. Concept advice on provisional boundaries; not a substitute for statutory planning."
-tracks: ["robotics-autonomous-mobility", "ai-public-services", "civic-agent-governance"]
+tracks: ["robotics-autonomous-mobility", "ai-public-services"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
 
@@ -1122,7 +1122,7 @@ The table above prices the network **as laid out**. FIG.21 measures the worst wa
 
 At CNY 120–260 per hour, paid labour runs CNY 16,644–57,122 a year, or **CNY 19,444–63,922 a year** including consumables — all bands, none of them point estimates.
 
-**The only number here that is not counted is the rate**: CNY 120–260 per hour is a band with no verifiable source in this package, and it is graded provisional. Every other cell is a count of sessions, people, hours or items. Substitute your own rate and the table recomputes — the formula ships beside it for exactly that reason.
+**Three numbers here are not counted**: the rate (CNY 120–260 per hour), consumables (CNY 200–1,500 a year per benchmark) and the per-session hour bands (1.5–8.0 h by class) — all bands with no verifiable source here, graded provisional. Every other cell is a count of sessions, people, hours or items. Substitute your own and the table recomputes.
 
 **The removal bond, docked to instruments that already exist.**
 
@@ -1838,7 +1838,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files, 1172 KB, 1,810 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files, 1172 KB, 1,810 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
