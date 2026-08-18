@@ -1441,8 +1441,8 @@
     ]
   },
   "whitespace_rules": {
-    "scope_zh": "**留白不是缺省，但只写条件不写规则，与缺省无从分辨。** 本方案把总体设计范围里 11 个街区留白，每块此前只写「待权属、控规与拆改留评估后细分」——那是时间，不是判断。以下四条是判断，按顺序适用，每一条的触发量都是本包已经在测的量（E220）。",
-    "scope_en": "Left blank is not left out, but a blank that states a condition and no rule cannot be told from an omission. This proposal leaves 11 blocks blank, each carrying only 'to be subdivided once ownership, the regulatory plan and the retain-renovate-demolish assessment are known' - which is a time, not a judgement. The four rules below are the judgement, applied in order, each turning on a quantity this package already measures.",
+    "scope_zh": "**留白不是缺省，但只写条件不写规则，与缺省无从分辨。** 本方案把总体设计范围里 11 个街区留白，每块此前只写「待权属、控规与拆改留评估后细分」——那是时间，不是判断。以下四条是判断，按顺序适用（E220）。**触发量分三种，此处按现算的数说清，不含糊过去**：2 条挂在本包已经在测、且当前 `status: known` 的量上；1 条挂在已登记但**尚无读数**的量上（`non_ai_path_coverage` 现为 `unknown`／`null`——**一条挂在还没人测的量上的规则仍然是规则，但把它说成「已经在测」就不是了**）；1 条挂在组织方发布的外部条件上，不是本包的指标。",
+    "scope_en": "Left blank is not left out, but a blank that states a condition and no rule cannot be told from an omission. This proposal leaves 11 blocks blank, each carrying only 'to be subdivided once ownership, the regulatory plan and the retain-renovate-demolish assessment are known' - which is a time, not a judgement. The four rules below are the judgement, applied in order. **Their triggers are of three kinds, counted here rather than glossed**: 2 turn on a quantity this package measures and whose status is `known`; 1 turn on a registered quantity with no reading yet (`non_ai_path_coverage` is `unknown`/`null` - a rule that fires on something nobody measures yet is still a rule, but calling it already measured is not); and 1 turns on a condition the organisers publish, which is not one of this package's metrics at all.",
     "refuses_zh": "本方案在留白上刻意不给的：容积率、建筑高度、建筑密度、退线、道路红线、任何拆除结论、任何居民搬迁建议。",
     "walk_threshold_m": 800.0,
     "rules": [
