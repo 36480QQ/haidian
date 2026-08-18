@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M120",
+      "gate": "track_rank_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把撤掉的说法写回赛道表的题注：「也是全场最薄的两条」——**而同一段里的表第三行就是青年友好公共空间 72 份**，正夹在两条加粗行之间。",
+      "what_en": "Put the withdrawn wording back into the track table's caption - 'and the two thinnest in the field' - **while the third row of the very table above it is youth-friendly public space at 72**, sitting between the two bold rows.",
+      "why_zh": "题注与表相隔三行，由同一个评审整份读到。**排名是一个穿着词语外衣的数字**，所以任何只盯数量的闸门都看不见它——它靠的是有人记得回头核。本闸门改为从随包的表里现算名次，再核题注用的序数词对不对。",
+      "why_en": "Caption and table sit three lines apart and are read whole by the same reviewer. **A rank is a figure wearing a word**, so no gate watching quantities could see it; it depended on someone remembering to re-check. This gate recomputes the ranks from the shipped table and checks the caption's ordinals against them."
+    },
+    {
       "id": "M119",
       "gate": "register_split_qa.py",
       "target": "proposal.md",
@@ -1434,7 +1446,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 117,
+  "caught": 118,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1514,6 +1526,7 @@
     "taskbook_terms_qa.py",
     "taskbook_units_qa.py",
     "term_consistency_qa.py",
+    "track_rank_qa.py",
     "upstream_validator_qa.py",
     "whitespace_rules_qa.py"
   ],
@@ -1558,6 +1571,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 82 道闸门，其中 79 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 82 gates, 79 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 83 道闸门，其中 80 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 83 gates, 80 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
