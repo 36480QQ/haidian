@@ -84,6 +84,55 @@
       "source_type": "agent_inferred_from_public_data",
       "confidence": "low",
       "usage": "Background conceptual grounding only: Marx (Theses on Feuerbach - philosophers have only interpreted the world; alienated labour), Mumford (The City in History - city as container/magnet for human association), Jacobs (The Death and Life of Great American Cities - streets for people), Lefebvre (The Production of Space). Philosophical spine for 'AI-and-people / human-centered'; not a spatial, metric or regulatory authority."
+    },
+    {
+      "id": "ZHIHU-THUMIT",
+      "url": "https://zhuanlan.zhihu.com/p/1949443788012500565",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "high",
+      "usage": "Tsinghua-MIT viewpoint in Nature Computational Science: LLM-driven urban planning framework as 'intelligent planning assistant', human-AI closed loop (conceptualization-generation-evaluation). Backs the 'AI serves people, not replaces' thesis; academic, not a spatial authority."
+    },
+    {
+      "id": "ZHIHU-YINZHI",
+      "url": "https://zhuanlan.zhihu.com/p/1929137652461966604",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "high",
+      "usage": "Yin Zhi (THU professor, expert解读 Central Urban Work Conference): 'people-centered livable city', 'from rent-driven to people-city model'. Authoritative people-centered urbanism grounding for the AI-and-people spine."
+    },
+    {
+      "id": "ZHIHU-JIANG",
+      "url": "https://zhuanlan.zhihu.com/p/1993303672596230590",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "medium",
+      "usage": "Jiang Hongfeng (Marxist political-economy): digital labour alienation ('seeing objects not people'), 'labour-life-city' synergy, 'free all-round development of people'. Contemporary Marxist grounding for the alienation-labour thread in the theoretical spine."
+    },
+    {
+      "id": "ZHIHU-YANGPU",
+      "url": "https://zhuanlan.zhihu.com/p/2034550601774782135",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "medium",
+      "usage": "Shanghai Yangpu District 15th Five-Year planning: 'two axes, two zones, one center, one island' innovation spatial pattern; 'people build the people's city'; complete communities. Real Shanghai district-planning sample for comparative governance-language reference."
+    },
+    {
+      "id": "ZHIHU-ORIGIN",
+      "url": "https://zhuanlan.zhihu.com/p/2040017538235507413",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "medium",
+      "usage": "Beijing AI Origin Community (OPC) real operations: 1000+ AI scientists, 13k developers, 400+ firms (74% AI), Origin Tower opened 2026-03, OPC (one-person-company) concept. Empirical anchor for PROV-KEY-002; also reveals the submission's provisional rectangle is NOT yet anchored to the real OPC footprint - requires honest offset note."
+    },
+    {
+      "id": "ZHIHU-JINGZHANG",
+      "url": "https://zhuanlan.zhihu.com/p/347105580",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "medium",
+      "usage": "Jing-Zhang Railway Heritage Park: about 9 km along the old railway, being built as a heritage park. Real heritage-park fact underpinning the ground-stitching belt and cultural anchor."
+    },
+    {
+      "id": "ZHIHU-BJRENEW",
+      "url": "https://zhuanlan.zhihu.com/p/1977011994990227769",
+      "source_type": "agent_inferred_from_public_data",
+      "confidence": "medium",
+      "usage": "Beijing 14th Five-Year urban renewal action: stock-quality-improvement, micro-renewal leverages big livelihood. Context for renewal-vs-greenfield framing of the design scope."
     }
   ]
 }
