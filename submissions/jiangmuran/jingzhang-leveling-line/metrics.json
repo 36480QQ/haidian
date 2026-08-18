@@ -1547,6 +1547,57 @@
       "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole, not file by file.",
       "verification_role_zh": "本方案编制方",
       "verification_role_en": "This proposal's author"
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 2244082,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "formula": "area(union(green_space)) minus area(union(building_footprints)), EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
+        "与组织方 spatial_review 的 green_space_area_sqm 同名同值；本包此前只把它作为 green_ratio 的操作数发布，名字还不一样。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "metric_class": 1,
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation",
+      "measures": "proposed_design",
+      "recalculation_trigger_zh": "官方 polygon 发布或任一几何图层变更时**整体重算**，不得只替换单个文件。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole, not file by file.",
+      "verification_role_zh": "风景园林",
+      "verification_role_en": "Landscape architecture"
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 733011,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "area(union(public_space), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
+        "与组织方 spatial_review 的 public_space_area_sqm 同名同值；本包此前只把它作为 public_space_ratio 的操作数发布。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "metric_class": 1,
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation",
+      "measures": "proposed_design",
+      "recalculation_trigger_zh": "官方 polygon 发布或任一几何图层变更时**整体重算**，不得只替换单个文件。",
+      "recalculation_trigger_en": "Publication of the official polygon, or any change to a shipped geometry layer — recomputed as a whole, not file by file.",
+      "verification_role_zh": "城市设计",
+      "verification_role_en": "Urban design"
     }
   }
 }
