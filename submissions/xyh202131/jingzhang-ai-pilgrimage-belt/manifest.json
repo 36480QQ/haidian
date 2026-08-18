@@ -51,13 +51,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "89c3af31b2d55f1323ad1a94d62795cdb63e966f23b28de8301f3ee10960d07a"
+      "sha256": "ec47045abfb4a70435590a3bfa621ca631c46285434adc02ca5553ac0fc6ca5a"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "c792017926c1b86924465be40d95f436fce309ddeb7f2748b475284e5235c18b"
+      "sha256": "9973f0631a97003d32c29c62537b848a8b5d836b2190c61918c5b4974b21ee2b"
     },
     {
       "path": "metrics.json",
@@ -81,13 +81,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "92c1ac8202fc240745018da26cbe8463495e5f71ad22708af00e42d8788c03bd"
+      "sha256": "4410f4b2dedd7ddb165d37b32c9e39c06bd65882867abf2f56f6a21e28486b86"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "1d7277659340edcdd2b1a1f5ac62cca4c672c8df7c4fcd75a1c50b6ad37c8e5a"
+      "sha256": "347d7a2bd61cf2309913b14da4b269edc0d61029b9e790d0c5933998324d1665"
     },
     {
       "path": "compliance_matrix.json",
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "280e07a51a7313725798f286b6a6393de86be26872d7e69a57d44ecdaf9f8737"
+      "sha256": "3d6cfc1b2c5a919eb77526fb35c4732f90a619d09e69480c732064471e59ea25"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -236,7 +236,7 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e39b859a4bb3524b35019a1c450dfff790ddbd419a1f0bcafa34b47d47efb728"
+      "sha256": "7aa4360706e7535339d197a8b4932fe42d627d1203fbd676af98be10526aea47"
     },
     {
       "path": "report/copyright_statement.md",
@@ -263,7 +263,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "89e820b270804e9b3f921143441c4dbe291f7f9f2e62f02a02c03a65d83529b4"
+      "sha256": "a18842bf5729498658dcbb05c1f4f837ff738a24bfe21e6a02aaff72755dce57"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -1191,6 +1191,54 @@
       "description_zh": "英文空间图谱的离线显示导出。",
       "description_en": "English offline display export of the spatial atlas.",
       "sha256": "80c94240205eee5012d2c0fe5a6a1d449187ef09730ff713c25ac559f86302e9"
+    },
+    {
+      "path": "assets/media/4-state-motion.mp4",
+      "sha256": "3b8aca25df394fbad7bbbf396e9c9be3f4e4038ab9eeed77b8e7598a2dfa3892",
+      "role": "video",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "4 态运动概念视频",
+      "title_en": "Four-state motion concept video",
+      "description_zh": "普通—验证—故障—恢复四态的 30-48 秒概念示意循环；持续水印\"G0 概念·临时几何·非现场证据·非批准方案\"；不是现场证据或批准方案。",
+      "description_en": "30-48 second concept loop of the ordinary/verification/fault/recovery four-state narrative; persistent watermark 'G0 concept / temporary geometry / not field evidence / not an approved plan'; not site evidence or approval.",
+      "transcript": "assets/media/4-state-narration-script.md",
+      "poster": "assets/media/twin-track-cover.webp",
+      "caption": "assets/media/4-state-narration.vtt"
+    },
+    {
+      "path": "assets/media/4-state-narration.mp3",
+      "sha256": "8985c4add05ead4b4a6635640748bf7e42ad381b6ecde290bd0bbf445a8ddb81",
+      "role": "audio",
+      "required": false,
+      "language": "zh",
+      "title_zh": "4 态旁白音频",
+      "title_en": "Four-state narration audio",
+      "description_zh": "约 40 秒普通话旁白，对应 WebVTT 字幕与文字稿；不得自动播放。",
+      "description_en": "~40 second Mandarin narration matching the WebVTT captions and written script; must not autoplay.",
+      "transcript": "assets/media/4-state-narration-script.md"
+    },
+    {
+      "path": "assets/media/4-state-narration.vtt",
+      "sha256": "043281cc4496e9a6e2e5b3563a028dcd92600e38abeb661c5742fa2cb90159ae",
+      "role": "caption_track",
+      "required": false,
+      "language": "zh",
+      "title_zh": "4 态旁白 WebVTT 字幕",
+      "title_en": "Four-state narration WebVTT captions",
+      "description_zh": "4 态旁白 5 段 WebVTT 字幕，时间码与音频对齐；HTML5 <track kind=\"captions\"> 加载。",
+      "description_en": "WebVTT captions for the 4-state narration, timecodes aligned to the audio; loaded via HTML5 <track kind=\"captions\">."
+    },
+    {
+      "path": "assets/media/4-state-narration-script.md",
+      "sha256": "bb0c84266bf27dd1943d64e7057e674724e48595ed250a81558f57f887973725",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "title_zh": "4 态旁白文字稿",
+      "title_en": "Four-state narration written script",
+      "description_zh": "音频全文、生成方法、权利状态与不可证明事项披露；与音频、WebVTT 锁步变更。",
+      "description_en": "Full audio script, generation method, rights status and unprovable items; must lockstep-update the audio and WebVTT."
     }
   ],
   "validation_claim": {
