@@ -1066,5 +1066,17 @@
   "visual_issue_ids": [],
   "professional_issue_ids": [],
   "missing_review_dependencies": [],
-  "next_actions": []
+  "next_actions": [],
+  "deterministic_validation_as_shipped": {
+    "why_zh": "上面那一块是在 `validation_claim.self_checked` 被**故意清为 false** 的那一刻抓下来的：`refresh_manifest` 每次刷新都会清掉它——没人核过的摘要不能自称已核——而抓取紧接其后，`finalise_claim` 要到通过之后才把它置回。**因此那一块里有几条 warning 说的是本包从不发布的那个状态。**这里把同一个校验器再问一遍，问的是**随包发布时的样子**，两个答案都留着：删掉一条自己造出来的 warning，和回答它，不是一回事。",
+    "why_en": "The block above is captured at the moment validation_claim.self_checked is deliberately cleared: refresh_manifest clears it on every refresh, because digests nobody has checked yet cannot be claimed as checked, and the capture happens straight after, while finalise_claim only sets it back after a passing run. So some warnings in that block describe a state this package never ships. Here the same validator is asked about the package as shipped, and both answers are kept: deleting a warning you caused is not the same as answering it.",
+    "warnings_at_capture": 19,
+    "warnings_as_shipped": 15,
+    "absent_as_shipped": [
+      "submissions/jiangmuran/jingzhang-leveling-line/manifest.json: packages marked ready_for_review must set validation_claim.self_checked=true after running self_check; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
+      "submissions/jiangmuran/jingzhang-leveling-line/self_check.json: packages marked ready_for_review must persist ok=true; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
+      "submissions/jiangmuran/jingzhang-leveling-line/self_check.json: packages marked ready_for_review must persist can_enter_formal_review=true; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
+      "submissions/jiangmuran/jingzhang-leveling-line/self_check.json: packages marked ready_for_review must persist pass/blocking gates for DETERMINISTIC_VALIDATION, PROFESSIONAL_EVIDENCE, SPATIAL_REVIEW, VISUAL_PACKAGING; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate"
+    ]
+  }
 }
