@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M134",
+      "gate": "source_provenance_qa.py",
+      "target": "assumptions.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "拿掉一条假设的英文陈述。**`assumptions.json` 由评审整份读到**——英文读者仍能看到该条的推导、失效后果、下一步动作，**唯独看不到这条假设本身说的是什么**。E348 之前，19 条里有 18 条就是这个样子。",
+      "what_en": "Remove one assumption's English statement. **assumptions.json is read whole by the reviewer**: an English reader still sees that record's derivation, what follows if it is wrong, and the next action - **and cannot read what the assumption itself says**. Until E348, 18 of the 19 records were in exactly that state.",
+      "why_zh": "双语实质等价这条规矩，本包在正文上逐节把关（`parity_qa`），**在随包 JSON 上从没查过**——而送评的九份文件里有六份是 JSON。一份「每个字段都译了、只有主句没译」的文件，比整份没译更难被发现。",
+      "why_en": "This package holds substantive bilingual equivalence section by section in the proposal, and had never checked it in the shipped JSON - six of the nine files the reviewer receives whole are JSON. A file where every field is translated except the main sentence is harder to notice than one left untranslated."
+    },
+    {
       "id": "M133",
       "gate": "edition_render_qa.py",
       "target": "visual/index.en.html",
@@ -1603,7 +1615,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 131,
+  "caught": 132,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
