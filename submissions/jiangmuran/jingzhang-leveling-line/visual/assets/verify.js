@@ -135,6 +135,12 @@ function constraintArea(id) {
 
 const computed = {
   site_area_sqm: site,
+  // The two areas the organisers' own spatial review computes from these same
+  // layers and hands the reviewer as trusted evidence. Until E363 they lived
+  // here only as the numerators of the two ratios below, so the reviewer could
+  // not join their report to metrics.json row by row.
+  green_space_area_sqm: layerArea('green_space.geojson'),
+  public_space_area_sqm: publicFeatures.reduce((a, f) => a + geomArea(f.geometry), 0),
   green_ratio: layerArea('green_space.geojson') / site,
   // Two layers describe the same corridor and give different areas, because
   // the partition assigns the part inside the key areas to their dominant use.

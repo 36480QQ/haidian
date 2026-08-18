@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M147",
+      "gate": "organiser_metric_join_qa.py",
+      "target": "metrics.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 `public_space_area_sqm` 改小 1 m²。组织方的 `spatial_review` 从**本包自己的图层**复算出 733,011.382，并把它作为可信证据交给评审；评审同时拿着 `metrics.json`。**两份文件里同一个量对不上 1 m²**，而没有任何东西会说是哪一份错了。",
+      "what_en": "Move public_space_area_sqm down by one square metre. The organisers' spatial review recomputes 733,011.382 **from this package's own layers** and hands it to the reviewer as trusted evidence, while the reviewer also holds metrics.json. **The same quantity then differs by a square metre across two documents**, with nothing to say which is wrong.",
+      "why_zh": "评审收到的不是一套数，是**两套独立产生的数**：组织方跑 `scripts/self_check_submission.py` 得到的空间与视觉复审，以及本包的 `metrics.json`。此前**没有任何东西把它们对起来过**。手工对过一次：十一个共有值全部相同——这半边现在改为每次构建都验，而不是相信。另半边是缺口：`green_space_area_sqm` 与 `public_space_area_sqm` 在组织方报告里有，在 `metrics.json` 里没有，只作为两个比值的操作数存在，其中一个名字还不一样。",
+      "why_en": "The reviewer does not receive one set of figures but **two independently produced sets**: the spatial and visual reviews the organisers get by running scripts/self_check_submission.py over this package, and this package's metrics.json. **Nothing had ever joined them.** Done once by hand they agreed on all eleven shared values - that half is now verified on every build instead of believed. The other half was a gap: green_space_area_sqm and public_space_area_sqm were in the organisers' report and absent from metrics.json, existing only as operands inside the two ratios, one of them under a different name."
+    },
+    {
       "id": "M140",
       "gate": "shipped_bilingual_qa.py",
       "target": "self_check.json",
@@ -1765,7 +1777,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 144,
+  "caught": 145,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1818,6 +1830,7 @@
     "metric_subject_qa.py",
     "naming_qa.py",
     "official_area_qa.py",
+    "organiser_metric_join_qa.py",
     "organiser_review_qa.py",
     "organiser_verdict_qa.py",
     "overflow_qa.py",
@@ -1907,6 +1920,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 100 道闸门，其中 97 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 100 gates, 97 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 101 道闸门，其中 98 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 101 gates, 98 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

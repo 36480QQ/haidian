@@ -2014,7 +2014,7 @@
     "scope_zh": "供拿到仓库的人逐项核对：每一项都可在不联系作者的情况下独立完成，所需文件都在随包目录内。",
     "scope_en": "For anyone holding the repository: each item is completable without contacting the author, and every file it needs ships inside the package.",
     "items_zh": [
-      "`node visual/assets/verify.js` —— 独立重算 `metrics.json` 里全部 27 条 `metric_class: 1` 指标，并**双向断言这一覆盖**（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析。退出码即结论；",
+      "`node visual/assets/verify.js` —— 独立重算 `metrics.json` 里全部 29 条 `metric_class: 1` 指标，并**双向断言这一覆盖**（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析。退出码即结论；",
       "`node visual/assets/check_osm.js` —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测；",
       "`node visual/assets/check_cards.js` —— 逐张场景卡把水准点、空间锚点、退出量与执行角色解析到实际对象；`--selftest` 用八份人为改坏的卡片证明这些检查会拒绝；",
       "`node visual/assets/check_closure.js` 与 `run_s08_tabletop.js` —— 闭合差机制的数据契约与十例桌面演练；",
@@ -2028,7 +2028,7 @@
       "A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在（中日韩字体走这条；拉丁面 DejaVuSans-Bold 是简单 `/TrueType`，子集嵌在 `FontFile2`，因此只查 `FontFile3` 会漏看它——它同样已子集嵌入）。"
     ],
     "items_en": [
-      "`node visual/assets/verify.js` — recomputes all 27 metrics marked `metric_class: 1` and **asserts coverage both ways**: every one recomputed, nothing that is not one. Plus a dozen structural conclusions: the land-use partition tested point by point, each controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict",
+      "`node visual/assets/verify.js` — recomputes all 29 metrics marked `metric_class: 1` and **asserts coverage both ways**: every one recomputed, nothing that is not one. Plus a dozen structural conclusions: the land-use partition tested point by point, each controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict",
       "`node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site figure from the OSM coordinates beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute",
       "`node visual/assets/check_cards.js` — resolves each card's benchmark, spatial anchor, exit quantity and executing role against something that exists; `--selftest` proves the checks refuse eight broken card sets",
       "`node check_closure.js` and `run_s08_tabletop.js` — the mechanism as a data contract, and a ten-case tabletop against the shipped reader",
