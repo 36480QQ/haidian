@@ -39,7 +39,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 1
-      }
+      },
+      "evidence_summary_en": "This entry rests on the sections 'Closure error in the site's own data: two sources for one fact that disagree', 'Design Basis and Source List'; layers site_boundary.geojson; metrics site_area_sqm (class 1, recomputed independently by visual/assets/verify.js); metrics field_census_corpus_size (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings site-overview.png; sources BOUNDARY-SOURCE, OSM-REFERENCE-2026-08 (registered in sources.json), together. **Of 11 references the reviewer can open 10**; the other 1 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "three_level_scope_framework",
@@ -78,7 +79,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section 'Three-Level Scope Framework'; layers site_boundary.geojson, key_areas.geojson; metrics site_area_sqm, key_area_count (class 1, recomputed independently by visual/assets/verify.js); drawings land-use-structure.png; sources OFFICIAL-ANNOUNCEMENT, KEY-AREA-SOURCE (registered in sources.json), together. **Of 10 references the reviewer can open 8**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "overall_spatial_structure",
@@ -122,7 +124,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 5
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section '总体概念与命名体系'; layers buildings.geojson, land_use.geojson, public_space.geojson, roads.geojson; metrics leveling_spine_length_m, benchmark_count (class 1, recomputed independently by visual/assets/verify.js); drawings site-overview.png, hero-leveling-line.png; sources BOUNDARY-SOURCE (registered in sources.json), together. **Of 13 references the reviewer can open 8**; the other 5 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "land_use_layout",
@@ -162,7 +165,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 1
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section '用地是完整剖分'; layers land_use.geojson; metrics land_use_class_count, land_use_feature_count (class 1, recomputed independently by visual/assets/verify.js); drawings land-use-structure.png; sources SITE-PACKAGE (registered in sources.json), together. **Of 9 references the reviewer can open 8**; the other 1 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "development_intensity_controls",
@@ -211,7 +215,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section 'Metrics, Area Recalculation, and Compliance Matrix'; layers phasing.geojson; metrics phasing_union_area_sqm (class 1, recomputed independently by visual/assets/verify.js); metrics floor_area_ratio (class 2, awaiting official regulatory support and held at unknown; what verify.js asserts is that they stay unknown, not their values); drawings metrics-evidence.png; sources OFFICIAL-ANNOUNCEMENT, BOUNDARY-SOURCE (registered in sources.json), together. **Of 12 references the reviewer can open 10**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "height_massing_character",
@@ -259,7 +264,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 3
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section 'Building scale, retain-renovate-demolish'; layers buildings.geojson; metrics building_footprint_area_sqm (class 1, recomputed independently by visual/assets/verify.js); drawings street-eye-level.png; sources OFFICIAL-ANNOUNCEMENT, BOUNDARY-SOURCE (registered in sources.json), together. **Of 11 references the reviewer can open 8**; the other 3 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -308,7 +314,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 3
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section 'Retain, renovate, demolish: principles common to all three'; layers buildings.geojson, land_use.geojson; metrics building_footprint_area_sqm, land_use_feature_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 12 references the reviewer can open 9**; the other 3 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -349,7 +356,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 1
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section 'Transport, Rail, Municipal Infrastructure, and Public Services'; layers roads.geojson; metrics leveling_spine_length_m, road_feature_count (class 1, recomputed independently by visual/assets/verify.js); drawings mobility-bluegreen.png; sources OSM-REFERENCE-2026-08 (registered in sources.json), together. **Of 10 references the reviewer can open 9**; the other 1 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -390,7 +398,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section 'Station-point unification and the municipal order'; layers public_space.geojson; metrics benchmark_count, benchmark_third_order_count (class 1, recomputed independently by visual/assets/verify.js); drawings street-eye-level.png, key-areas.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 10 references the reviewer can open 8**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "blue_green_public_space",
@@ -431,7 +440,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section 'Blue-Green Network, Public Space, and Urban Character'; layers green_space.geojson, public_space.geojson; metrics green_ratio, public_space_ratio (class 1, recomputed independently by visual/assets/verify.js); drawings mobility-bluegreen.png; sources OSM-REFERENCE-2026-08, OFFICIAL-ANNOUNCEMENT (registered in sources.json), together. **Of 12 references the reviewer can open 10**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -493,7 +503,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 6
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section 'Detailed Design of Key Areas'; layers buildings.geojson, key_areas.geojson, land_use.geojson, public_space.geojson, roads.geojson; metrics key_area_count, benchmark_first_order_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 15 references the reviewer can open 9**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "renewal_project_list",
@@ -533,7 +544,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section '更新项目清单'; layers phasing.geojson; metrics renewal_project_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings evidence-circuit.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 9 references the reviewer can open 7**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "phasing_implementation",
@@ -573,7 +585,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section '首轮闭合试验'; layers phasing.geojson; metrics phase_count (class 1, recomputed independently by visual/assets/verify.js); metrics tabletop_case_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings metrics-evidence.png, evidence-circuit.png; sources AGENT-TASKBOOK, CASE-C6-ARTIFACT-EVALUATION (registered in sources.json), together. **Of 11 references the reviewer can open 9**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "metrics_recalculation",
@@ -613,7 +626,8 @@
         "reviewer_sees_as_image": 1,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section '评审可以自己重算'; layers site_boundary.geojson, land_use.geojson; metrics matrix_reference_count, shipped_verification_script_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings metrics-evidence.png; sources SITE-PACKAGE, FIELD-CENSUS-2026-08 (registered in sources.json), together. **Of 11 references the reviewer can open 9**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "item_id": "risk_missing_data",
@@ -657,7 +671,8 @@
         "reviewer_sees_as_image": 0,
         "reviewer_sees_first_page_only": 0,
         "reviewer_cannot_open": 2
-      }
+      },
+      "evidence_summary_en": "This entry rests on the section 'Risk, Copyright, and Compliance'; layers constraints.geojson; metrics errata_entry_count, rights_ledger_entry_count, errata_external_finder_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings evidence-circuit.png; sources SOURCE-REGISTRY, PROCESSED-FACT-PACK, OSM-REFERENCE-2026-08 (registered in sources.json), together. **Of 15 references the reviewer can open 13**; the other 2 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     }
   ]
 }
