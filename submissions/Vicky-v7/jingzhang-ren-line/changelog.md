@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.2 - 2026-08-17
+
+- **真实底图**：经 Overpass API 提取 OpenStreetMap 现状要素（快速路/主干/次干、铁路、地铁线与车站、水系、公园），以 EXISTING_PRIMARY_ROAD / EXISTING_RAIL / EXISTING_WATER 现状条件图层登记进 constraints.geojson（ODbL 署名），五张图纸与 A3/A0 全部改为真实场地底图上绘制——回应交叉评审"空间明确性"短板。
+- 删除 v1.0 中自绘的示意铁路中线（CONS-RAIL-001），以真实 OSM 数据取代。
+- sources.json 新增 OSM-BASEMAP 来源记录；正文版权章节与参考资料同步更新（中英）。
+
 ## v1.1 - 2026-08-13
 
 - 依据 Codex 独立交叉评审（13维 7.0/10）完成一轮修订：
