@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Century Answer · Concept Urban Design Exhibit</title>
+<title>The Century Answer · Concept Urban Design Presentation</title>
 <style>
 :root{
  --bg:#061626;--panel:#0a2036;--panel2:#0d2743;--line:#1c3f66;--line2:#274b73;
@@ -15,7 +15,7 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);
  font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
- font-size:15px;line-height:1.65;
+ font-size:15px;line-height:1.68;
  background-image:
   repeating-linear-gradient(0deg,rgba(103,232,249,.03) 0,rgba(103,232,249,.03) 1px,transparent 1px,transparent 34px),
   repeating-linear-gradient(90deg,rgba(103,232,249,.03) 0,rgba(103,232,249,.03) 1px,transparent 1px,transparent 34px);}
@@ -28,30 +28,44 @@ nav.toc{position:sticky;top:0;z-index:50;background:rgba(6,22,38,.94);border-bot
 header.tb{border-bottom:1px solid var(--line2);padding:36px 0 24px}
 .tbgrid{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:28px;align-items:end}
 .eyebrow{font-family:var(--mono);color:var(--gold);font-size:12px;letter-spacing:.22em}
-h1{font-size:44px;margin:8px 0 2px;letter-spacing:.03em;line-height:1.12}
+h1{font-size:48px;margin:8px 0 2px;letter-spacing:.08em;line-height:1.15}
 .h1en{font-family:var(--mono);color:var(--cyan);letter-spacing:.36em;font-size:13px}
 .lede{color:var(--mut);max-width:880px;margin-top:14px;font-size:14.5px}
-.stamp{display:inline-block;border:2px solid var(--gold);color:var(--gold);font-family:var(--mono);font-size:12px;letter-spacing:.2em;padding:7px 14px;transform:rotate(-2deg);margin-top:14px}
+.stamp{display:inline-block;border:2px solid var(--gold);color:var(--gold);font-family:var(--mono);font-size:12px;letter-spacing:.26em;padding:7px 14px;transform:rotate(-2deg);margin-top:14px}
 .tbtable{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:11.5px;color:var(--mut)}
 .tbtable td{border:1px solid var(--line);padding:5px 8px}
-.tbtable td.k{color:var(--dim);width:96px;letter-spacing:.06em;white-space:nowrap}
+.tbtable td.k{color:var(--dim);width:84px;letter-spacing:.08em;white-space:nowrap}
 .alert{border:1px solid rgba(224,180,88,.5);background:rgba(224,180,88,.07);color:#f4d9a0;padding:11px 14px;font-size:13px;margin:20px 0 0;border-left:4px solid var(--gold)}
+.alert.in{margin:0 0 16px}
 section.sheet{border:1px solid var(--line);background:linear-gradient(180deg,rgba(13,39,67,.85),rgba(10,32,54,.94));margin:26px 0}
 .sh{display:flex;gap:14px;align-items:baseline;border-bottom:1px solid var(--line);padding:14px 18px;flex-wrap:wrap}
 .sh .no{font-family:var(--mono);color:var(--cyan);font-size:12px;letter-spacing:.18em;border:1px solid var(--line2);padding:2px 7px;white-space:nowrap}
-.sh h2{font-size:20px;margin:0;letter-spacing:.03em}
-.sh .en{font-family:var(--mono);color:var(--dim);font-size:11px;letter-spacing:.1em}
+.sh h2{font-size:20px;margin:0;letter-spacing:.05em}
+.sh .en{font-family:var(--mono);color:var(--dim);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
 .sh .tag{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--mut);border:1px dashed var(--line2);padding:3px 8px}
 .sb{padding:18px}
 .note{color:var(--mut);font-size:13px}
 .small{font-size:12px;color:var(--dim)}
+.subh{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin:26px 0 12px;padding-bottom:7px;border-bottom:1px dashed var(--line2)}
+.subh.first{margin-top:0}
+.subh .idx{font-family:var(--mono);font-size:11px;color:var(--gold);border:1px solid rgba(224,180,88,.45);padding:1px 6px;letter-spacing:.12em}
+.subh h3{margin:0;font-size:17px;letter-spacing:.04em}
+.subh .en{font-family:var(--mono);color:var(--dim);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase}
+.subh .tag{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--mut);border:1px dashed var(--line2);padding:2px 7px}
+.narr{font-size:15.5px;line-height:1.95;max-width:960px;color:#dbe8f6}
+.narr b{color:var(--gold);font-weight:600}
+.lead{border-left:3px solid var(--gold);padding-left:16px;margin:0 0 16px}
+.tl{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
+.tl .ev{border:1px solid var(--line2);background:rgba(6,22,38,.6);padding:7px 10px;min-width:150px;flex:1 1 150px}
+.tl .yr{font-family:var(--mono);color:var(--cyan);font-size:12px;letter-spacing:.08em}
+.tl .tx{font-size:12px;color:var(--mut);margin-top:2px}
 table.dt{width:100%;border-collapse:collapse;font-size:13px}
-.dt th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--dim);text-transform:uppercase;text-align:left;border-bottom:1px solid var(--line2);padding:7px 8px}
+.dt th{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--dim);text-transform:uppercase;text-align:left;border-bottom:1px solid var(--line2);padding:7px 8px}
 .dt td{border-bottom:1px solid rgba(28,63,102,.55);padding:7px 8px;vertical-align:top}
 .dt td.num,.dt th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
 .dt tr.sum td{border-top:1px solid var(--line2);color:var(--gold);font-family:var(--mono)}
 .tblwrap{overflow-x:auto}
-.chip{display:inline-block;font-family:var(--mono);font-size:10.5px;border:1px solid var(--line2);color:var(--mut);padding:2px 7px;border-radius:2px;margin:2px 4px 2px 0;letter-spacing:.03em}
+.chip{display:inline-block;font-family:var(--mono);font-size:10.5px;border:1px solid var(--line2);color:var(--mut);padding:2px 7px;border-radius:2px;margin:2px 4px 2px 0;letter-spacing:.05em}
 .chip.ok{color:var(--green);border-color:rgba(74,222,128,.45)}
 .chip.wa{color:var(--gold);border-color:rgba(224,180,88,.5)}
 .chip.er{color:var(--red);border-color:rgba(251,113,133,.5)}
@@ -64,8 +78,15 @@ table.dt{width:100%;border-collapse:collapse;font-size:13px}
 .card h4{margin:0 0 6px;font-size:13.5px}
 .card p{margin:0 0 6px;font-size:12.5px;color:var(--mut)}
 .card ul{margin:6px 0 0 18px;padding:0;font-size:12.5px;color:var(--mut)}
+figure.fig{margin:0 0 18px;border:1px solid var(--line2);background:#08192c;padding:9px}
+figure.fig img{width:100%;height:auto;display:block;border:1px solid rgba(28,63,102,.6);background:#fff}
+figure.fig figcaption{margin-top:9px;font-size:12.5px;color:var(--mut);line-height:1.62}
+figure.fig figcaption .cn{font-family:var(--mono);color:var(--cyan);font-size:10.5px;letter-spacing:.12em;margin-right:8px}
+figure.fig figcaption b{color:var(--ink)}
+figure.fig figcaption .dis{display:block;margin-top:6px;font-size:11.5px;color:var(--gold)}
+.figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .mtile{border:1px solid var(--line2);background:rgba(6,22,38,.6);padding:16px}
-.mtile .lbl{font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+.mtile .lbl{font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.14em;text-transform:uppercase}
 .mtile .val{font-family:var(--mono);font-size:25px;color:var(--cyan);margin:6px 0 2px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
 .mtile .val.gold{color:var(--gold)}
 .mtile .val.gr{color:var(--green)}
@@ -74,7 +95,7 @@ table.dt{width:100%;border-collapse:collapse;font-size:13px}
 .maplay{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px}
 .mapbox{border:1px solid var(--line2);background:#08192c;padding:8px}
 #map-svg{width:100%;height:auto;display:block}
-.mapside h3{font-size:13px;margin:16px 0 8px;font-family:var(--mono);letter-spacing:.1em;color:var(--cyan)}
+.mapside h3{font-size:13px;margin:16px 0 8px;font-family:var(--mono);letter-spacing:.12em;color:var(--cyan)}
 .mapside h3:first-child{margin-top:0}
 .lg{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;font-size:12px;color:var(--mut)}
 .lg span{display:flex;align-items:center;gap:6px}
@@ -86,21 +107,21 @@ label.tg input{accent-color:#67e8f9}
 #metro-svg{min-width:1010px;width:100%;height:auto;display:block}
 .srcurl{font-family:var(--mono);font-size:10.5px;color:var(--dim);overflow-wrap:anywhere}
 footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;color:var(--dim);font-size:12px}
-@media(max-width:1020px){.maplay,.grid3,.tbgrid{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:32px}}
-@media(max-width:640px){.grid2,.grid4{grid-template-columns:1fr}.sh .tag{margin-left:0}}
+@media(max-width:1020px){.maplay,.grid3,.tbgrid,.figs{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:34px}}
+@media(max-width:640px){.grid2,.grid4{grid-template-columns:1fr}.sh .tag,.subh .tag{margin-left:0}}
 </style>
 </head>
 <body>
-<nav class="toc" aria-label="Sheet index"><div class="toc-in">
-<a href="#s01">01 Overview Map</a><a href="#s02">02 Three-Tier Scope</a><a href="#s03">03 Key Areas</a><a href="#s04">04 Land Use</a><a href="#s05">05 Mobility</a><a href="#s06">06 Blue-Green &amp; Public Space</a><a href="#s07">07 Structures &amp; Renewal</a><a href="#s08">08 AI Scenarios</a><a href="#s09">09 Core Metrics</a><a href="#s10">10 Task Coverage</a><a href="#s11">11 Self-Check</a><a href="#s12">12 Sources</a><a href="#s13">13 Assumptions</a>
+<nav class="toc" aria-label="Presentation index"><div class="toc-in">
+<a href="#s01">01 Origin of the Idea</a><a href="#s02">02 Scheme Design</a><a href="#s03">03 Design Statement</a><a href="#s04">04 Planning Drawings</a><a href="#s05">05 Concept Renders</a><a href="#s06">06 Core Metrics</a><a href="#s07">07 Task Coverage</a><a href="#s08">08 Sources &amp; Assumptions</a><a href="#s09">09 Self-Check</a>
 </div></nav>
 
 <header class="tb"><div class="wrap tbgrid">
 <div>
-<div class="eyebrow">JINGZHANG RAILWAY HERITAGE PARK AI INNOVATION BELT · CONCEPT URBAN DESIGN · DIGITAL EXHIBIT</div>
+<div class="eyebrow">JINGZHANG RAILWAY HERITAGE PARK AI INNOVATION BELT · CONCEPT URBAN DESIGN · PRESENTATION</div>
 <h1>The Century Answer</h1>
 <div class="h1en">百年应答 · BAINIAN YINGDA</div>
-<p class="lede">In 1909 the Jingzhang Railway answered a century question: could China build its own railway? Today, beside the 9-kilometre park the same railway left behind, more than two thousand AI companies are answering a new one: can China build its own AI? This page renders the full submission package — all nine GeoJSON layers, machine-checked metrics, the task-coverage matrix and self-check evidence — as one readable engineering blueprint in thirteen sheets: overview map, three-tier scope, key areas, land use, mobility, blue-green and public space, structures and renewal, AI scenarios, core metrics, task coverage, self-check status, sources and assumptions.</p>
+<p class="lede">In 1909 the Jingzhang Railway answered a century question: could China build its own railway? Today, beside the ~9-kilometre park the same railway left behind, more than two thousand AI companies in Haidian are answering a new one: can China build its own AI? This page follows the order of a design presentation — origin of the idea, scheme design, design statement, planning drawings, concept renders — followed by core metrics, task coverage, sources and assumptions, and self-check status. Everything is rendered directly from the submission's nine GeoJSON layers, metrics.json, the matrices and the self-check evidence.</p>
 <div class="stamp">CONCEPT PROPOSAL · REFERENCE ONLY · FOR PROFESSIONAL REFINEMENT</div>
 </div>
 <div>
@@ -108,66 +129,64 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 <tr><td class="k">PROJECT</td><td>Haidian Jingzhang AI Innovation Belt concept call (public announcement)</td></tr>
 <tr><td class="k">CODE</td><td>jingzhang-century-answer</td></tr>
 <tr><td class="k">AUTHOR</td><td>wanghao198822 (AI-agent submission)</td></tr>
-<tr><td class="k">TYPE</td><td>Digital exhibit · offline single file · zero external dependencies</td></tr>
+<tr><td class="k">TYPE</td><td>Digital presentation · offline single file · zero external dependencies</td></tr>
 <tr><td class="k">STAGE</td><td>Concept proposal (non-statutory, not an approval basis)</td></tr>
 <tr><td class="k">CRS</td><td>WGS84 display projection (areas cross-checked in EPSG:4548)</td></tr>
 <tr><td class="k">LANG</td><td>English edition · <span class="chip cy">index.html Chinese master</span></td></tr>
 </table>
 </div>
 </div>
-<div class="wrap"><div class="alert">Reader notice: every spatial idea on this page is a concept suggestion / reference scheme awaiting professional refinement. It contains no conclusive figures for FAR, building height, road redlines, or demolish-retain-renovate decisions. The submitted boundary is provisional (PASS intake only) — for intake display and discussion; once official redlines and regulatory plans are released, the whole package must be recomputed under trigger A-RECALC-001.</div></div>
+<div class="wrap"><div class="alert">Reader notice: every spatial idea on this page is a concept suggestion / reference scheme awaiting professional refinement. It contains no conclusive figures for FAR, building height, road redlines, or demolish-retain-renovate decisions. The submitted boundary is provisional (PASS intake only) — for intake display and discussion; once official redlines and regulatory plans are released, the whole package must be recomputed under trigger A-RECALC-001. The four images in chapter 05 are AI-generated concept impressions — not photographs, and not a promise of built outcome.</div></div>
 </header>
 
 <main class="wrap">
 
-<!-- ============ 01 Overview Map ============ -->
+<!-- ============ 01 Origin of the Idea ============ -->
 <section class="sheet" id="s01">
-<div class="sh"><span class="no">SHT-01</span><h2>Overview Map</h2><span class="en">总览地图</span><span class="tag">geometry/*.geojson embedded · live SVG rendering</span></div>
+<div class="sh"><span class="no">CH-01</span><h2>Origin of the Idea</h2><span class="en">灵感由来</span><span class="tag">1909 → 2026 · one question answered twice</span></div>
 <div class="sb">
-<p class="note">The nine-kilometre "answer scroll" is drawn vertically at true scale (north up): roughly 1.3 km east-west by 9.7 km north-south, with a chainage grid every 1 km. The map is rendered live from the nine GeoJSON layers embedded in this page — byte-identical to the geometry/ directory of the submission. All boundaries are provisional placeholders; rectangle edges must not be read as road redlines or parcel boundaries.</p>
-<div class="maplay">
-<div class="mapbox">
-<svg id="map-svg" viewBox="0 0 520 1180" role="img" aria-label="Overview map: land use, blue-green and public space, mobility, structures, key areas and phasing layers"></svg>
+
+<div class="narr lead">
+<p>In 1909 the Jingzhang Railway could not climb the Guangou grade. Zhan Tianyou drew the character 人: a train runs into a switchback, reverses direction, and two gentle gradients replace one impossible climb. Surveyed, designed and built by Chinese engineers, the line opened that year and answered the century question — <b>can Chinese people build their own railway?</b></p>
+<p>Tsinghuayuan Station was completed in 1910, its name board written by Zhan Tianyou. On 25 March 1949 the Party Central Committee arrived in Beiping "to sit the examination", and this small station was its first stop in the Beijing area; the restored station house reopened on 25 March 2023. The railway itself also handed in an answer: the Jingzhang high-speed line opened in 2019, the old tracks were vacated, and the rails gave way to a park — phase one, 2.4 km and 16.8 ha, opened in June 2023; the park runs about 9 km in total, with 46 entrances planned along phase two, which broke ground in December 2024.</p>
+<p>On both sides of the park the candidates have already filled the hall: Haidian hosts more than 2,000 AI companies with core AI industry scale approaching CNY 360 billion; 122 registered and released large models (district government figure as of February 2026); citywide 209 registered models cumulatively, close to a third of the national total, recorded in the statistical communiqué.</p>
+<p>Put those two sets of facts side by side and the core image appears by itself: 1909 and today are the same question answered twice. This 9-kilometre park should be built as an answer sheet unrolled across the ground — <b>rail spikes record each answer, the bell announces each milestone, the station preserves the original question</b>. Citizens do not come to read display boards: they crouch down and count the spikes — how far has China's own innovation got?</p>
 </div>
-<aside class="mapside">
-<h3>LAYERS</h3>
-<label class="tg"><input type="checkbox" data-layer="landuse" checked> Land-use structure (10 concept blocks)</label>
-<label class="tg"><input type="checkbox" data-layer="green" checked> Blue-green space (3 axis segments + Qinghe band)</label>
-<label class="tg"><input type="checkbox" data-layer="public" checked> Public space (5 plazas and interfaces)</label>
-<label class="tg"><input type="checkbox" data-layer="build" checked> Structures (3 concept footprints)</label>
-<label class="tg"><input type="checkbox" data-layer="roads" checked> Mobility &amp; slow traffic (5 concept lines)</label>
-<label class="tg"><input type="checkbox" data-layer="keyareas" checked> Key areas (3 provisional extents)</label>
-<label class="tg"><input type="checkbox" data-layer="phasing"> Renewal phasing (3-phase concept)</label>
-<h3>LEGEND</h3>
-<div class="lg">
-<span><i class="sw" style="background:rgba(22,101,52,.7)"></i>Park green axis 1401</span>
-<span><i class="sw" style="background:rgba(17,94,89,.7)"></i>Qinghe blue-green 1402</span>
-<span><i class="sw" style="background:rgba(91,74,31,.7)"></i>Residential (existing) 0701</span>
-<span><i class="sw" style="background:rgba(30,58,138,.7)"></i>R&amp;D innovation 0802</span>
-<span><i class="sw" style="background:rgba(76,29,149,.7)"></i>Cultural quarter 0803</span>
-<span><i class="sw" style="background:rgba(21,94,117,.7)"></i>Campus interface 0804</span>
-<span><i class="sw" style="background:rgba(124,45,18,.7)"></i>Commercial 0901</span>
-<span><i class="sw" style="background:rgba(120,53,15,.7)"></i>Business interface 0902</span>
-<span><i class="sw" style="background:rgba(51,65,85,.6)"></i>Flexible reserve 16</span>
-<span><i class="sw" style="background:rgba(226,232,240,.4)"></i>Public space</span>
-<span><i class="sw line" style="background:#e0b458"></i>Greenway spine (concept)</span>
-<span><i class="sw line" style="background:#67e8f9"></i>Robot test route (concept)</span>
-<span><i class="sw line" style="background:#f8fafc"></i>E-W stitching links (concept)</span>
-<span><i class="sw" style="border:1.6px dashed #fb7185;background:transparent"></i>Key areas (provisional)</span>
+
+<div class="tl">
+<div class="ev"><div class="yr">1909</div><div class="tx">Jingzhang Railway opens; the 人-shaped switchback becomes the first symbol of self-reliant innovation</div></div>
+<div class="ev"><div class="yr">1910</div><div class="tx">Tsinghuayuan Station completed, name board by Zhan Tianyou</div></div>
+<div class="ev"><div class="yr">1949 · 03 · 25</div><div class="tx">Arrival in Beiping "to sit the examination"; first stop in the Beijing area</div></div>
+<div class="ev"><div class="yr">2019</div><div class="tx">Jingzhang high-speed line opens; old tracks vacated for the park</div></div>
+<div class="ev"><div class="yr">2023 · 03 · 25</div><div class="tx">Restored Tsinghuayuan Station reopens</div></div>
+<div class="ev"><div class="yr">2023 · 06</div><div class="tx">Heritage park phase one opens: 2.4 km, 16.8 ha</div></div>
+<div class="ev"><div class="yr">2024 · 12</div><div class="tx">Phase two starts; 46 entrances planned (subject to completion)</div></div>
+<div class="ev"><div class="yr">2026</div><div class="tx">2,000+ AI companies and 122 registered models answering along the belt</div></div>
 </div>
-<h3>NOTES</h3>
-<p class="small">1. Base boundary from provisional_boundaries (official_boundary=false). 2. Concept lines express connection intent only — no redlines or cross-sections. 3. Building patches are concept footprints; circles are enlarged locator symbols. 4. Phasing is a concept suggestion, not a government commitment.</p>
-<h3>AUDIT</h3>
-<p class="small">Σ blue-green layers ÷ site = 25.04% (green_ratio 0.250356 ✓)<br>Σ public space ÷ site = 1.93% (public_space_ratio 0.039336 ✓)<br>Σ structure footprints = 3,124.999 sqm ✓<br>Ten land-use blocks sum to the site area within &lt; 1 sqm (rounding)</p>
-</aside>
+
+<figure class="fig" style="margin-top:18px">
+<img src="../assets/figures/site-overview.en.png" alt="Overall concept drawing: the 9-km answer scroll on a real Beijing basemap, three segments and the century timeline" loading="lazy">
+<figcaption><span class="cn">FIG-00</span><b>Overall concept · site overview and structure</b>: on a real Beijing basemap of streets, water bodies and rail, the 9-km answer-scroll spine runs from the south (K0, beside Beijing North Station) to the north (K9, Qinghe Station), showing the South Question / Middle Answer / North Leap segments and the announced-area extents of the three key areas; the base strip is the 1909–2026 timeline.
+<span class="dis">Basemap data © OpenStreetMap contributors (ODbL). All design elements are concept suggestions (provisional); dashed lines are indicative — none are statutory boundaries or engineering alignments.</span></figcaption>
+</figure>
+
+<div class="grid3">
+<article class="card"><h4>Question · the century-old Jingzhang heritage belt</h4><p>The 1909 question is the prompt. The 人-shaped switchback, Tsinghuayuan Station, the old station house and the surviving track form the narrative base — never a theme-park replica.</p></article>
+<article class="card"><h4>Answer · the AI innovation belt</h4><p>Companies and models answer. Every large model independently registered in Haidian earns one bronze rail spike at the path edge; each registration or IPO milestone rings the newly cast Answer Bell.</p></article>
+<article class="card"><h4>Reading · the urban AI life belt</h4><p>Citizens mark the paper. Counting spikes, hearing the bell, passing through Answer Gates and climbing the 人 bridge along 9 km — statistical figures translated into public-space evidence you can crouch down and touch.</p></article>
 </div>
+
 </div>
 </section>
 
-<!-- ============ 02 Three-Tier Scope ============ -->
+<!-- ============ 02 Scheme Design ============ -->
 <section class="sheet" id="s02">
-<div class="sh"><span class="no">SHT-02</span><h2>Three-Tier Scope</h2><span class="en">三层范围</span><span class="tag">announcement 1.4 · site_boundary.geojson</span></div>
+<div class="sh"><span class="no">CH-02</span><h2>Scheme Design</h2><span class="en">方案设计</span><span class="tag">one spine · three segments · two wings · three key areas</span></div>
 <div class="sb">
+
+<p class="narr" style="margin-bottom:20px">The scheme tells one story and tells it at three scales. Spatially it becomes a ~9 km <b>answer-scroll spine</b> in three segments: South Question at Dazhongsi ("Gate of the Bell"), Middle Answer beside Tsinghuayuan Station ("Answer Origin"), North Leap at Zhongzhiyuan ("Leap of 人"); east-west, 46 <b>Answer Gates</b> seep into nearly 70 neighbourhoods (subject to what is actually built). The whole structure sits inside the approved statutory regulatory plan's "one belt, one axis, two centres, multiple nodes" framework — the green spine is the belt, and the Gate of the Bell and the Answer Origin fall on the two centres. This proposal is a concept elaboration above the statutory plan: it does not stand beside it, does not replace it, and does not cite its unpublished control indicators.</p>
+
+<div class="subh first"><span class="idx">2.1</span><h3>Three-Tier Scope</h3><span class="en">三层范围</span><span class="tag">announcement 1.4 · site_boundary.geojson</span></div>
 <div class="grid3">
 <article class="card">
 <h3>Coordinated research scope <span class="chip cy">~43.6 sq km</span></h3>
@@ -176,23 +195,18 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </article>
 <article class="card">
 <h3>Overall design scope <span class="chip cy">~11.4 sq km</span></h3>
-<p>Recomputed from the provisional submitted boundary: 11,412,825.386 sqm (see SHT-09). Decides <i>where to write</i>: one 9-km answer-scroll spine (South Question — Middle Answer — North Leap), seeping east-west through Answer Gates toward nearly 70 neighbourhoods.</p>
+<p>Recomputed from the provisional submitted boundary: 11,412,825.386 sqm (see chapter 06). Decides <i>where to write</i>: one 9-km answer-scroll spine (South Question — Middle Answer — North Leap), seeping east-west through Answer Gates toward nearly 70 neighbourhoods.</p>
 <ul><li>Concept structure: one spine, two wings, ten blocks</li><li>Break-points: connect first, then stay + 46 gates (planning figure)</li><li>Factor-service stations create reasons to cross east-west</li></ul>
 </article>
 <article class="card">
 <h3>Key detailed-design areas <span class="chip cy">3 (key_area_count=3)</span></h3>
-<p>Decides <i>how to write</i>: detailed concept design for three key areas; official announced areas and provisional recomputation all agree within ±3% (see SHT-03).</p>
+<p>Decides <i>how to write</i>: detailed concept design for three key areas; official announced areas and provisional recomputation all agree within ±3%.</p>
 <ul><li>Dazhongsi 72.0 ha = Gate of the Bell</li><li>AI Origin Community 104.3 ha = Answer Origin</li><li>Zhongzhiyuan 192.1 ha = Leap of the 人 Character</li></ul>
 </article>
 </div>
 <p class="small" style="margin-top:12px">The three tiers are not three separate drawing sets but three handwritings of one answer sheet. Tier boundaries follow the maintainer-registered provisional geometry (official_boundary=false); no area or volume that cannot be recomputed from structured data enters any formal conclusion.</p>
-</div>
-</section>
 
-<!-- ============ 03 Key Areas ============ -->
-<section class="sheet" id="s03">
-<div class="sh"><span class="no">SHT-03</span><h2>Key Areas</h2><span class="en">重点区域</span><span class="tag">key_areas.geojson · ±3% area check</span></div>
-<div class="sb">
+<div class="subh"><span class="idx">2.2</span><h3>Key Detailed-Design Areas</h3><span class="en">重点区域</span><span class="tag">key_areas.geojson · ±3% area check</span></div>
 <div class="grid3">
 <article class="card">
 <h3>Dazhongsi AI Industry Cluster</h3>
@@ -211,37 +225,64 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </article>
 </div>
 <p class="small" style="margin-top:12px">The announcement gives no metes and bounds for the three areas; the rectangular provisional extents are located only by name, north-south order and announced area. Rectangle edges must not be read as parcel or road redlines. Recompute under A-RECALC-001 once official polygons are released.</p>
+
+<div class="subh"><span class="idx">2.3</span><h3>Five Mechanisms Running the Whole Belt</h3><span class="en">贯穿全带的五个机制</span><span class="tag">mechanism before form</span></div>
+<div class="grid3">
+<article class="card">
+<h4>Rail-Spike Band · one model, one bronze spike</h4>
+<p>A continuous line of bronze spikes along the path edge: one for every large model independently registered and released in Haidian, each engraved with its number and year. Whether or not a break-point is bridged yet, the paving language runs continuously — the answer sheet is visually written through first.</p>
+<p class="small">The count is a point-in-time figure (A-DATA-001), updated on the statistical release cycle, never presented as real time.</p>
+</article>
+<article class="card">
+<h4>Answer Bell · one strike per milestone</h4>
+<p>A newly cast bell beside Dazhongsi, standing in Bell Plaza (concept). A company in the belt that completes registration or an IPO comes to strike it once; the plaza also stitches the four pedestrian quadrants of the metro station.</p>
+<p class="small">The new bell is only a cultural echo of the 1733 Ancient Bell Museum collection; it never involves striking or using heritage objects (A-HERITAGE-001).</p>
+</article>
+<article class="card">
+<h4>Answer Gate · one page of the exam paper</h4>
+<p>Built on the 46 entrances planned for phase two, each gate becomes a page turned open: the century question carved on the outer face, today's answer on the inner face, with nearly 70 neighbourhoods adopting the gates along the belt.</p>
+<p class="small">46 is a planning figure, subject to what is actually built (A-GATE-001); a different count does not break the mechanism.</p>
+</article>
+</div>
+<div class="grid2" style="margin-top:14px">
+<article class="card">
+<h4>Break-point Living Room · connect first, then stay</h4>
+<p>For each break-point listed in the official "transport system optimisation" task, a concept-level connectivity response comes first, then a reason to linger: every break-point space is furnished with a combined set of seating, shelter, information screen and drinking point — turning "waiting to pass" into "willing to stay".</p>
+</article>
+<article class="card">
+<h4>Factor-service stations · manufacture a reason to cross</h4>
+<p>Policy advice, registration coaching and transfer-matching stations placed in low-efficiency space on both sides of the park (never on-the-spot disbursement); the closer to the park, the more shared the facility. Function creates the reason to cross east-west — stitching only counts when people actually walk across.</p>
+</article>
+</div>
+
 </div>
 </section>
 
-<!-- ============ 04 Land Use ============ -->
-<section class="sheet" id="s04">
-<div class="sh"><span class="no">SHT-04</span><h2>Land Use</h2><span class="en">用地分区</span><span class="tag">land_use.geojson · 10 blocks · EPSG:4548 topology-checked</span></div>
+<!-- ============ 03 Design Statement ============ -->
+<section class="sheet" id="s03">
+<div class="sh"><span class="no">CH-03</span><h2>Design Statement</h2><span class="en">设计说明</span><span class="tag">land use · mobility · blue-green · structures · renewal · scenarios</span></div>
 <div class="sb">
+
+<div class="subh first"><span class="idx">3.1</span><h3>Land Use</h3><span class="en">用地分区</span><span class="tag">land_use.geojson · 10 blocks · EPSG:4548 topology-checked</span></div>
 <div class="tblwrap"><table class="dt">
 <tr><th>ID</th><th>Concept block (reference scheme)</th><th>Ref. code</th><th class="num">Area (sqm)</th><th class="num">Share</th></tr>
-<tr><td>LU-001</td><td>Jingzhang Heritage Park green axis (9-km answer-scroll spine)</td><td><span class="chip">1401</span></td><td class="num">2,589,251.89</td><td class="num">22.69%</td></tr>
+<tr><td>LU-001</td><td>Heritage park green spine (the 9-km answer-scroll axis)</td><td><span class="chip">1401</span></td><td class="num">2,589,251.89</td><td class="num">22.69%</td></tr>
 <tr><td>LU-002</td><td>Dazhongsi cultural quarter (west wing of the Gate of the Bell)</td><td><span class="chip">0803</span></td><td class="num">400,735.683</td><td class="num">3.51%</td></tr>
-<tr><td>LU-003</td><td>Dazhongsi commercial vitality quarter (east renewal interface)</td><td><span class="chip">0901</span></td><td class="num">796,407.677</td><td class="num">6.98%</td></tr>
-<tr><td>LU-004</td><td>Xueyuan South Road R&amp;D belt (west wing, south segment)</td><td><span class="chip">0802</span></td><td class="num">1,345,239.039</td><td class="num">11.79%</td></tr>
-<tr><td>LU-005</td><td>Existing residential quarters, south segment (Answer-Gate interface)</td><td><span class="chip">0701</span></td><td class="num">2,404,339.099</td><td class="num">21.07%</td></tr>
-<tr><td>LU-006</td><td>Campus science-education interface (west of Tsinghuayuan Station)</td><td><span class="chip">0804</span></td><td class="num">328,759.955</td><td class="num">2.88%</td></tr>
-<tr><td>LU-007</td><td>Xueyuan Road knowledge-economy business belt (east wing, middle)</td><td><span class="chip">0902</span></td><td class="num">601,926.438</td><td class="num">5.27%</td></tr>
-<tr><td>LU-008</td><td>West-wing R&amp;D belt, north segment (toward Zhongzhiyuan)</td><td><span class="chip">0802</span></td><td class="num">617,522.586</td><td class="num">5.41%</td></tr>
-<tr><td>LU-009</td><td>Existing residential quarters, north segment</td><td><span class="chip">0701</span></td><td class="num">907,585.397</td><td class="num">7.95%</td></tr>
-<tr><td>LU-010</td><td>Zhongzhiyuan flexible reserve (north leap · facing future questions)</td><td><span class="chip">16</span></td><td class="num">1,421,057.362</td><td class="num">12.45%</td></tr>
-<tr class="sum"><td></td><td>Ten blocks total (≈ site area; difference &lt; 1 sqm from per-block rounding)</td><td></td><td class="num">11,412,825.126</td><td class="num">100.00%</td></tr>
+<tr><td>LU-003</td><td>Dazhongsi commercial vitality quarter (east-wing renewal frontage)</td><td><span class="chip">0901</span></td><td class="num">796,407.677</td><td class="num">6.98%</td></tr>
+<tr><td>LU-004</td><td>Xueyuan South Road research belt (west wing, South Question)</td><td><span class="chip">0802</span></td><td class="num">1,345,239.039</td><td class="num">11.79%</td></tr>
+<tr><td>LU-005</td><td>Existing eastern residential quarter, south section (gate frontage)</td><td><span class="chip">0701</span></td><td class="num">2,404,339.099</td><td class="num">21.07%</td></tr>
+<tr><td>LU-006</td><td>University-education frontage (west of Tsinghuayuan Station)</td><td><span class="chip">0804</span></td><td class="num">328,759.955</td><td class="num">2.88%</td></tr>
+<tr><td>LU-007</td><td>Xueyuan Road knowledge-economy business belt (east wing, Middle Answer)</td><td><span class="chip">0902</span></td><td class="num">601,926.438</td><td class="num">5.27%</td></tr>
+<tr><td>LU-008</td><td>West-wing research belt, north section (toward Zhongzhiyuan)</td><td><span class="chip">0802</span></td><td class="num">617,522.586</td><td class="num">5.41%</td></tr>
+<tr><td>LU-009</td><td>Existing eastern residential quarter, north section</td><td><span class="chip">0701</span></td><td class="num">907,585.397</td><td class="num">7.95%</td></tr>
+<tr><td>LU-010</td><td>Zhongzhiyuan flexible reserve land (North Leap · for future questions)</td><td><span class="chip">16</span></td><td class="num">1,421,057.362</td><td class="num">12.45%</td></tr>
+<tr class="sum"><td></td><td>Ten blocks total (≈ submitted extent; &lt; 1 sqm difference from per-block rounding)</td><td></td><td class="num">11,412,825.126</td><td class="num">100.00%</td></tr>
 </table></div>
-<p class="small" style="margin-top:10px">Concept land-use suggestions (reference scheme): structural intent only, to be verified by professional teams against regulatory plans, current ownership and heritage-protection requirements. Not a land-approval basis; edges are not road redlines or parcel boundaries. Existing campuses, residential communities and commercial facilities are assumed to continue as-is; this layer carries no demolish-retain-renovate conclusions and quotes no FAR or building-height figures.</p>
-</div>
-</section>
+<p class="small" style="margin-top:10px">Concept land-use suggestion (reference scheme): structural intent only, to be refined and confirmed by professional teams against the regulatory plan, existing tenure and heritage-protection requirements. It is not a basis for land approval; edges do not represent road redlines or parcel boundaries; existing campuses, neighbourhoods and commercial facilities are assumed to continue as they are; the layer contains no demolish-retain-renovate conclusion and no FAR or building-height figures.</p>
 
-<!-- ============ 05 Mobility ============ -->
-<section class="sheet" id="s05">
-<div class="sh"><span class="no">SHT-05</span><h2>Mobility &amp; Slow Traffic</h2><span class="en">交通慢行</span><span class="tag">roads.geojson · 5 concept lines · line diagram</span></div>
-<div class="sb">
+<div class="subh"><span class="idx">3.2</span><h3>Mobility &amp; Slow Traffic</h3><span class="en">交通慢行</span><span class="tag">roads.geojson · 5 concept lines · line diagram</span></div>
 <div class="metrobox">
-<svg id="metro-svg" viewBox="0 0 1080 268" role="img" aria-label="Line diagram of the 9-km answer scroll: three segments and principal nodes in order">
+<svg id="metro-svg" viewBox="0 0 1080 268" role="img" aria-label="Line diagram of the 9-km answer scroll: South Question, Middle Answer and North Leap segments with node order">
 <text x="60" y="24" font-size="12" fill="#5f83a8" font-family="ui-monospace,Consolas,monospace" letter-spacing="2">LINE DIAGRAM · NODE ORDER ONLY · NOT AN ENGINEERING ALIGNMENT · NOT AN EXISTING METRO LINE</text>
 <text x="226" y="52" text-anchor="middle" font-size="13" fill="#e0b458" letter-spacing="3">SOUTH QUESTION</text>
 <text x="568" y="52" text-anchor="middle" font-size="13" fill="#67e8f9" letter-spacing="3">MIDDLE ANSWER</text>
@@ -263,142 +304,245 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </g>
 <g font-size="12" fill="#e8f1fb">
 <text x="90" y="92" text-anchor="middle">Dazhongsi · Gate of the Bell</text>
-<text x="90" y="108" text-anchor="middle" font-size="10" fill="#8fb3d9">Answer Bell · Bell Plaza (concept)</text>
-<text x="230" y="176" text-anchor="middle">Break-point parlours (concept)</text>
-<text x="230" y="192" text-anchor="middle" font-size="10" fill="#8fb3d9">connect first, then stay</text>
-<text x="330" y="92" text-anchor="middle">Answer-Gate plaza + station demo</text>
-<text x="330" y="108" text-anchor="middle" font-size="10" fill="#8fb3d9">an opened exam sheet (concept)</text>
+<text x="90" y="108" text-anchor="middle" font-size="10.5" fill="#8fb3d9">Answer Bell · Bell Plaza (concept)</text>
+<text x="230" y="176" text-anchor="middle">Break-point Living Room</text>
+<text x="230" y="192" text-anchor="middle" font-size="10.5" fill="#8fb3d9">connect first, then stay</text>
+<text x="330" y="92" text-anchor="middle">Answer Gate plaza + station pilot</text>
+<text x="330" y="108" text-anchor="middle" font-size="10.5" fill="#8fb3d9">one page of the paper (concept)</text>
 <text x="450" y="176" text-anchor="middle">Tsinghuayuan Station · Answer Origin</text>
-<text x="450" y="192" text-anchor="middle" font-size="10" fill="#8fb3d9">Kilometre-Zero Post (siting pending heritage consultation)</text>
+<text x="450" y="192" text-anchor="middle" font-size="10.5" fill="#8fb3d9">Kilometre-Zero Post (pending heritage consultation)</text>
 <text x="575" y="92" text-anchor="middle">City Evolution Archive</text>
-<text x="575" y="108" text-anchor="middle" font-size="10" fill="#8fb3d9">concept device · public feedback filed</text>
-<text x="690" y="176" text-anchor="middle">Xueyuan Rd knowledge-economy interface</text>
-<text x="810" y="92" text-anchor="middle">Leap of 人 · Fifth-Ring crossing concept node</text>
-<text x="810" y="108" text-anchor="middle" font-size="10" fill="#8fb3d9">no engineering conclusions</text>
-<text x="940" y="176" text-anchor="middle">Qinghe blue-green band</text>
+<text x="575" y="108" text-anchor="middle" font-size="10.5" fill="#8fb3d9">concept device · public feedback archived</text>
+<text x="690" y="176" text-anchor="middle">Xueyuan Road knowledge frontage</text>
+<text x="810" y="92" text-anchor="middle">Leap of 人 · ring-crossing concept node</text>
+<text x="810" y="108" text-anchor="middle" font-size="10.5" fill="#8fb3d9">answers the landmark ring-crossing brief · no engineering conclusion</text>
+<text x="940" y="176" text-anchor="middle">Qinghe blue-green corridor</text>
 </g>
-<text x="60" y="252" font-size="11" fill="#5f83a8">Tick = Answer Gate (46 planned phase-II park entrances, subject to as-built count). Interchange rings = the three segment anchors. Order follows chainage; spacing is not to scale.</text>
+<text x="60" y="252" font-size="11" fill="#5f83a8">▍Ticks = Answer Gates (based on the 46 entrances planned for phase two, subject to completion); large circles = the three segment anchors; order by chainage, spacing not to scale.</text>
 </svg>
 </div>
 <div class="grid2">
 <div>
 <div class="tblwrap"><table class="dt">
-<tr><th>ID</th><th>Concept line (roads.geojson)</th><th>Class</th></tr>
-<tr><td>ROAD-001</td><td>9-km answer-scroll slow-mobility spine</td><td><span class="chip wa">greenway_main</span></td></tr>
-<tr><td>ROAD-002</td><td>Low-speed delivery-robot test route (validate first on the opened phase-I segment)</td><td><span class="chip cy">robot_delivery</span></td></tr>
-<tr><td>ROAD-003</td><td>E-W stitching link · Gate of the Bell segment</td><td><span class="chip">ew_stitching</span></td></tr>
-<tr><td>ROAD-004</td><td>E-W stitching link · Answer Origin segment</td><td><span class="chip">ew_stitching</span></td></tr>
-<tr><td>ROAD-005</td><td>E-W stitching link · Leap of 人 segment</td><td><span class="chip">ew_stitching</span></td></tr>
+<tr><th>ID</th><th>Concept line (roads.geojson)</th><th>road_class</th></tr>
+<tr><td>ROAD-001</td><td>9-km answer-scroll slow-mobility spine</td><td><span class="chip wa">greenway</span></td></tr>
+<tr><td>ROAD-002</td><td>Low-speed delivery-robot test channel (validate first on the opened phase-one section)</td><td><span class="chip cy">cycleway</span></td></tr>
+<tr><td>ROAD-003</td><td>East-west stitching line · Gate of the Bell segment</td><td><span class="chip">pedestrian</span></td></tr>
+<tr><td>ROAD-004</td><td>East-west stitching line · Answer Origin segment</td><td><span class="chip">pedestrian</span></td></tr>
+<tr><td>ROAD-005</td><td>East-west stitching line · Leap of 人 segment</td><td><span class="chip">pedestrian</span></td></tr>
 </table></div>
 </div>
 <div>
 <article class="card">
 <h4>Three mobility mechanisms (concept suggestions)</h4>
 <ul>
-<li><b>Break-point parlours · connect first, then stay</b>: answer each break point listed in the official traffic-optimisation scheme with a concept-level connection strategy, then layer staying scenes (benches, canopies, info screens, water points).</li>
-<li><b>Robot ramp = accessible ramp</b>: one retrofit, two uses at the 46 entrances (subject to as-built count); wheelchairs share the ramps with low-speed delivery robots. "Wheelchair priority, robots must yield and stop" is a hard pass condition; accessibility metrics carry veto power.</li>
-<li><b>Test before rollout</b>: robot testing proposed first on the opened phase-I segment (2.4 km, 16.8 ha) with physical separation, escorting safety stewards and instant e-stop, extending outward only step by step with the required approvals.</li>
+<li><b>Break-point Living Room · connect first, then stay</b>: a concept-level connectivity response for each break-point named in the official transport-optimisation task, then a stay-scenario overlay (seating, shelter, information screen, drinking point).</li>
+<li><b>Robot ramp = accessible ramp</b>: one retrofit serving two purposes at the 46 entrances (subject to completion); low-speed delivery robots share the ramp with wheelchairs. "Wheelchair priority, robot must yield and stop" is a hard pass condition — accessibility metrics carry a veto.</li>
+<li><b>Test first</b>: robot testing is proposed on the opened 2.4 km / 16.8 ha phase-one section with physical separation, a safety attendant and an always-available emergency stop; extension only after staged approval.</li>
 </ul>
-<p class="small">No concept line represents a road redline, cross-section or engineering conclusion; gradients, widths, loads, fire evacuation and operating hours await professional design under accessibility codes and Beijing's low-speed unmanned-delivery-vehicle regulations (A-ROBOT-001).</p>
+<p class="small">No concept line represents a road redline, cross-section or engineering conclusion; gradient, clear width, loading, fire safety and operating hours await professional refinement under accessibility design standards and Beijing's rules for low-speed unmanned delivery vehicles (A-ROBOT-001).</p>
 </article>
 </div>
 </div>
-</div>
-</section>
 
-<!-- ============ 06 Blue-Green & Public Space ============ -->
-<section class="sheet" id="s06">
-<div class="sh"><span class="no">SHT-06</span><h2>Blue-Green &amp; Public Space</h2><span class="en">蓝绿公共空间</span><span class="tag">green_space.geojson + public_space.geojson</span></div>
-<div class="sb">
+<div class="subh"><span class="idx">3.3</span><h3>Blue-Green &amp; Public Space</h3><span class="en">蓝绿公共空间</span><span class="tag">green_space.geojson + public_space.geojson</span></div>
 <div class="grid2">
 <div>
-<h3 style="font-size:15px;margin:0 0 8px">Blue-green skeleton · one axis, one band <span class="chip ok">green share ≈ 25.04%</span></h3>
+<h4 style="font-size:15px;margin:0 0 8px">Blue-green frame · one spine, one corridor <span class="chip ok">green share ≈ 25.04%</span></h4>
 <div class="tblwrap"><table class="dt">
 <tr><th>ID</th><th>Layer feature</th><th class="num">Area (sqm)</th></tr>
-<tr><td>GREEN-001</td><td>Green axis south (South Question · Gate of the Bell interface)</td><td class="num">1,316,500.098</td></tr>
-<tr><td>GREEN-002</td><td>Green axis middle (Answer Origin · Rail-Spike Band core)</td><td class="num">710,158.967</td></tr>
-<tr><td>GREEN-003</td><td>Green axis north (North Leap · link to Qinghe)</td><td class="num">562,593.053</td></tr>
-<tr><td>GREEN-004</td><td>Qinghe blue-green coordination band (cross-block ecological interface)</td><td class="num">268,014.191</td></tr>
-<tr class="sum"><td></td><td>Σ ÷ site = green_ratio 0.250356 ✓</td><td class="num">2,857,266.309</td></tr>
+<tr><td>GREEN-001</td><td>Green spine, south section (South Question · Gate of the Bell frontage)</td><td class="num">1,316,500.098</td></tr>
+<tr><td>GREEN-002</td><td>Green spine, middle section (Answer Origin · core Rail-Spike Band frontage)</td><td class="num">710,158.967</td></tr>
+<tr><td>GREEN-003</td><td>Green spine, north section (North Leap · link to Qinghe)</td><td class="num">562,593.053</td></tr>
+<tr><td>GREEN-004</td><td>Qinghe blue-green coordination corridor (cross-block ecological frontage)</td><td class="num">268,014.191</td></tr>
+<tr class="sum"><td></td><td>Σ ÷ submitted extent = green_ratio 0.250356 ✓</td><td class="num">2,857,266.309</td></tr>
 </table></div>
-<p class="small" style="margin-top:8px">The spine carries the narrative, Qinghe carries the ecology, and their crossing carries the scenes. Concept greening suggestions to be refined with the park's own design; no engineering conclusions.</p>
+<p class="small" style="margin-top:8px">The spine carries the narrative, Qinghe carries the ecology, and their crossing carries the scenes: the green spine is organised in three segments and forms a cross with Qinghe blue-green space at its northern end. Concept green-space suggestion, to be refined with the park's existing design; not an engineering conclusion.</p>
 </div>
 <div>
-<h3 style="font-size:15px;margin:0 0 8px">Public-space system <span class="chip ok">public share ≈ 1.93%</span></h3>
+<h4 style="font-size:15px;margin:0 0 8px">Public-space system <span class="chip ok">public share ≈ 1.93%</span></h4>
 <div class="tblwrap"><table class="dt">
 <tr><th>ID</th><th>Layer feature</th><th class="num">Area (sqm)</th></tr>
-<tr><td>PUBLIC-001</td><td>Bell Plaza (Answer Bell concept plaza · four-quadrant stitching)</td><td class="num">27,000.004</td></tr>
-<tr><td>PUBLIC-002</td><td>Tsinghuayuan Station forecourt &amp; Kilometre-Zero Post (siting pending consultation)</td><td class="num">15,399.993</td></tr>
-<tr><td>PUBLIC-003</td><td>North bridgehead of the 人 footbridge · Future Question plaza (concept node)</td><td class="num">18,200.005</td></tr>
-<tr><td>PUBLIC-004</td><td>Answer-Gate neighbourhood micro-plaza demo (east wing)</td><td class="num">4,200.000</td></tr>
-<tr><td>PUBLIC-005</td><td>East-wing slow-mobility activity band (station and roadshow siting band)</td><td class="num">384,138.271</td></tr>
-<tr class="sum"><td></td><td>Σ ÷ site = public_space_ratio 0.039336 ✓</td><td class="num">448,938.273</td></tr>
+<tr><td>PUBLIC-001</td><td>Bell Plaza (Answer Bell concept plaza · four-quadrant walking stitch)</td><td class="num">10,000.0</td></tr>
+<tr><td>PUBLIC-002</td><td>Tsinghuayuan Station forecourt and Kilometre-Zero Post (pending consultation)</td><td class="num">6,000.0</td></tr>
+<tr><td>PUBLIC-003</td><td>North bridgehead of the 人 bridge · Future Question Plaza (concept node)</td><td class="num">8,000.0</td></tr>
+<tr><td>PUBLIC-004</td><td>Answer Gate community micro-plaza pilot (east wing · one-page frontage)</td><td class="num">4,200.0</td></tr>
+<tr><td>PUBLIC-005</td><td>East-wing public activity frontage band (stations and roadshow points, ~30 m wide)</td><td class="num">192,069.1</td></tr>
+<tr class="sum"><td></td><td>Σ ÷ submitted extent = public_space_ratio 0.0193 ✓</td><td class="num">220,269.1</td></tr>
 </table></div>
-<p class="small" style="margin-top:8px">Concept public-space suggestions; siting and size await professional refinement. All sitings near Tsinghuayuan Station and Dazhongsi are constrained by heritage consultation (A-HERITAGE-001), which may relocate, resize or cancel the devices.</p>
+<p class="small" style="margin-top:8px">Sizes have been reduced to match a real site-capacity check: Bell Plaza ~1.0 ha (about 100 m square), the station forecourt ~0.6 ha (no larger than the protected building group itself), the bridgehead plaza ~0.8 ha, and the east-wing frontage band narrowed from 60 m to ~30 m (the order of an existing footway plus park-edge activity strip, not new land acquisition). Siting and scale remain concept suggestions pending professional refinement; sitings near Tsinghuayuan Station and Dazhongsi are bound by heritage consultation (A-HERITAGE-001), whose outcome may change, shrink or cancel a device.</p>
 </div>
 </div>
-</div>
-</section>
 
-<!-- ============ 07 Structures & Renewal ============ -->
-<section class="sheet" id="s07">
-<div class="sh"><span class="no">SHT-07</span><h2>Structures &amp; Renewal Program</h2><span class="en">建筑与更新项目</span><span class="tag">buildings.geojson + phasing.geojson</span></div>
-<div class="sb">
+<div class="subh"><span class="idx">3.4</span><h3>Structures &amp; Renewal Program</h3><span class="en">建筑与更新项目</span><span class="tag">buildings.geojson + phasing.geojson</span></div>
 <div class="grid2">
 <div>
-<h3 style="font-size:15px;margin:0 0 8px">Structures: concept footprints <span class="chip ok">Σ 3,124.999 sqm ✓</span></h3>
+<h4 style="font-size:15px;margin:0 0 8px">Structures: concept footprints <span class="chip ok">Σ 3,124.999 sqm ✓</span></h4>
 <div class="tblwrap"><table class="dt">
-<tr><th>ID</th><th>Concept structure (no height or engineering conclusions)</th><th class="num">Footprint (sqm)</th></tr>
-<tr><td>BLDG-001</td><td>Answer Bell pavilion concept base (inside Bell Plaza, newly cast bell)</td><td class="num">1,599.999</td></tr>
-<tr><td>BLDG-002</td><td>City Evolution Archive concept device base (beside the Rail-Spike Band)</td><td class="num">900.000</td></tr>
-<tr><td>BLDG-003</td><td>Factor-service station demo base (east-wing underused space)</td><td class="num">625.000</td></tr>
+<tr><th>ID</th><th>Concept structure (no height, no engineering conclusion)</th><th class="num">Footprint (sqm)</th></tr>
+<tr><td>BLDG-001</td><td>Answer Bell pavilion footprint (inside Bell Plaza, newly cast bell)</td><td class="num">1,599.999</td></tr>
+<tr><td>BLDG-002</td><td>City Evolution Archive device footprint (beside the Rail-Spike Band)</td><td class="num">900.000</td></tr>
+<tr><td>BLDG-003</td><td>Factor-service station pilot footprint (east-wing low-efficiency space)</td><td class="num">625.000</td></tr>
 </table></div>
-<p class="small" style="margin-top:8px">Concept small-structure footprints (reference scheme); massing and siting await professional refinement. This proposal makes no demolish-retain-renovate decisions on existing buildings; renewal proceeds by low-disturbance stitching.</p>
+<p class="small" style="margin-top:8px">Indicative small-structure footprints (reference scheme); massing and siting await professional refinement. The proposal reaches no demolish-retain-renovate conclusion for existing buildings; renewal proceeds on the premise of low-disturbance stitching.</p>
 </div>
 <div>
-<h3 style="font-size:15px;margin:0 0 8px">Renewal program: three-phase concept sequence (not a government commitment)</h3>
+<h4 style="font-size:15px;margin:0 0 8px">Renewal: three-phase concept sequence (not a government commitment)</h4>
 <div class="tblwrap"><table class="dt">
-<tr><th>Phase</th><th>Renewal content (concept suggestions)</th><th class="num">Extent (sqm)</th></tr>
-<tr><td><span class="chip wa">I · South Question</span></td><td>Start on the built interface: first Rail-Spike segment, Bell Plaza study, phase-I robot test loop</td><td class="num">6,263,221.578</td></tr>
-<tr><td><span class="chip cy">II · Middle Answer</span></td><td>Advance with park phase-II works: Answer-Gate adoption, origin memorial-space consultation, Archive device</td><td class="num">2,890,709.805</td></tr>
-<tr><td><span class="chip ok">III · North Leap</span></td><td>人-footbridge special study, Qinghe blue-green linkage, flexible reserve facing future questions</td><td class="num">2,258,894.016</td></tr>
+<tr><th>Phase</th><th>Renewal content (concept suggestion)</th><th class="num">Extent (sqm)</th></tr>
+<tr><td><span class="chip wa">P1 · South Question</span></td><td>Start on already-built frontage: first Rail-Spike Band section, Bell Plaza study, phase-one robot test loop</td><td class="num">6,263,221.578</td></tr>
+<tr><td><span class="chip cy">P2 · Middle Answer</span></td><td>With park phase-two construction: gate adoption by neighbourhoods, memorial-space consultation, Evolution Archive device</td><td class="num">2,890,709.805</td></tr>
+<tr><td><span class="chip ok">P3 · North Leap</span></td><td>人-bridge special study, Qinghe blue-green link, flexible reserve for future questions</td><td class="num">2,258,894.016</td></tr>
 </table></div>
-<p class="small" style="margin-top:8px">Concept sequencing suggestion (reference scheme), not a government commitment or implementation plan. Items that can start with lightweight facilities and operations are explicitly separated from items that must wait for regulatory, municipal and ownership confirmation. Actual sequence rests with the authorities and professional teams.</p>
+<p class="small" style="margin-top:8px">Concept phasing suggestion (reference scheme); it is not a government commitment or an implementation plan. The renewal list separates what light installations and programming can start early from what must wait for regulatory, municipal and tenure conditions. Actual sequencing rests with the competent authorities and professional teams.</p>
 </div>
 </div>
-</div>
-</section>
 
-<!-- ============ 08 AI Scenarios ============ -->
-<section class="sheet" id="s08">
-<div class="sh"><span class="no">SHT-08</span><h2>AI Scenarios</h2><span class="en">AI 场景 ×12</span><span class="tag">mapped to the 6 official scenario IDs</span></div>
-<div class="sb">
-<p class="note">All 12 scenario cards attach to the official standard scenario IDs, with three predefined data tiers: L1 public-only (zero collection) / L2 anonymous aggregates (statistics only) / L3 opt-in (single authorisation, delete after use, revocable). Universal red lines: no facial recognition, no individual trajectory tracking, no new surveillance-type collection; every AI output is human-reviewable, stoppable and reversible.</p>
+<div class="subh"><span class="idx">3.5</span><h3>AI Scenarios</h3><span class="en">AI 场景</span><span class="tag">mapped to the 6 official scenario IDs</span></div>
+<p class="note">All 12 scenario cards map to the client's standard scenario IDs with three predefined data tiers: L1 public-only (zero collection) / L2 anonymous aggregate (aggregate statistics only) / L3 opt-in (single-use consent, deleted after use, revocable). Universal red lines: no facial recognition, no individual trajectory tracking, no new surveillance-type collection; every AI output is human-reviewable, suspendable and reversible.</p>
 <div class="grid4">
-<article class="card"><h4>S1 Scan-a-Spike guide agent, Rail-Spike Band</h4><p><span class="chip cy">ai-cultural-guide</span><span class="chip wa">experience</span><span class="chip">L1 + count L2</span></p><p>Full band; origin at the Kilometre-Zero Post (siting pending consultation).</p></article>
-<article class="card"><h4>S2 Answer Gates · community guide &amp; co-creation</h4><p><span class="chip cy">ai-cultural-guide</span><span class="chip wa">experience</span><span class="chip">L1 + oral-history L3</span></p><p>46 entrances (as-built count) × ~70 neighbourhoods.</p></article>
-<article class="card"><h4>S3 25 March memorial open-day booking &amp; storytelling</h4><p><span class="chip cy">ai-cultural-guide</span><span class="chip wa">experience</span><span class="chip">booking L3 + onsite L1</span></p><p>Tsinghuayuan Station plain forecourt; non-commercial, no corporate naming.</p></article>
-<article class="card"><h4>S4 Bell Plaza four-quadrant walking assistant</h4><p><span class="chip cy">ai-traffic-walkability</span><span class="chip ok">service</span><span class="chip">L1</span></p><p>Sound-wave paths across the four Dazhongsi station quadrants.</p></article>
-<article class="card"><h4>S5 Break-point parlour feedback stations</h4><p><span class="chip cy">ai-traffic-walkability</span><span class="chip ok">service</span><span class="chip">L3 anonymous default</span></p><p>Every break-point connection space along the line.</p></article>
-<article class="card"><h4>S6 Health-service navigation corner (navigate, never diagnose)</h4><p><span class="chip cy">ai-health-service-navigation</span><span class="chip ok">service</span><span class="chip">L1, zero health data</span></p><p>Station navigation corners + neighbourhood interfaces.</p></article>
-<article class="card"><h4>S7 Factor-service station filing-assist copilot</h4><p><span class="chip cy">enterprise-service-copilot</span><span class="chip ok">service</span><span class="chip">L1 + firm docs L3, deleted</span></p><p>Stations on both wings (no on-the-spot approvals).</p></article>
-<article class="card"><h4>S8 Youth curation assistant</h4><p><span class="chip cy">ai-cultural-guide</span><span class="chip ok">service</span><span class="chip">application L3 + archive L1</span></p><p>Quarterly curated spots; student teams bid and sign their work.</p></article>
-<article class="card"><h4>S9 Phase-I low-speed delivery-robot test ground</h4><p><span class="chip cy">robot-delivery-low-speed</span><span class="chip er">test</span><span class="chip">edge-anonymised L2</span></p><p>The opened phase-I segment: 2.4 km, 16.8 ha.</p></article>
-<article class="card"><h4>S10 Dual-use ramp robot-wheelchair compatibility test</h4><p><span class="chip cy">robot-delivery-low-speed</span><span class="chip er">test</span><span class="chip">L2 + volunteers L3</span></p><p>Sample ramps at 2–3 Answer Gates; wheelchair priority is a hard condition.</p></article>
-<article class="card"><h4>S11 Scan-a-Spike demo onboarding test</h4><p><span class="chip cy">enterprise-service-copilot</span><span class="chip er">test</span><span class="chip">L1 test corpus</span></p><p>Zhongzhiyuan test benches → the full Rail-Spike Band.</p></article>
-<article class="card"><h4>S12 Event-day slow-mobility &amp; accessibility stress test</h4><p><span class="chip cy">ai-traffic-walkability</span><span class="chip er">test</span><span class="chip">L1 + manual L2 counts</span></p><p>Event corridor from the Dazhongsi segment to Zhongzhiyuan.</p></article>
+<article class="card"><h4>S1 Scan a spike, get an answer · guide agent</h4><p><span class="chip cy">ai-cultural-guide</span><span class="chip wa">experience</span><span class="chip">L1+count L2</span></p><p>The whole Rail-Spike Band, originating at the Kilometre-Zero Post (pending consultation).</p></article>
+<article class="card"><h4>S2 Answer Gate · neighbourhood guide and co-creation</h4><p><span class="chip cy">ai-cultural-guide</span><span class="chip wa">experience</span><span class="chip">L1+oral history L3</span></p><p>46 entrances (subject to completion) × ~70 neighbourhoods.</p></article>
+<article class="card"><h4>S3 25 March memorial open day: booking and storytelling</h4><p><span class="chip cy">ai-cultural-guide</span><span class="chip wa">experience</span><span class="chip">booking L3+on-site L1</span></p><p>Tsinghuayuan Station plain forecourt; non-commercial, no corporate naming.</p></article>
+<article class="card"><h4>S4 Bell Plaza · four-quadrant interchange assistant</h4><p><span class="chip cy">ai-traffic-walkability</span><span class="chip ok">service</span><span class="chip">L1</span></p><p>Four quadrants of Dazhongsi station.</p></article>
+<article class="card"><h4>S5 Break-point Living Room · feedback station</h4><p><span class="chip cy">ai-traffic-walkability</span><span class="chip ok">service</span><span class="chip">L3 anonymous by default</span></p><p>Every break-point connection space along the belt.</p></article>
+<article class="card"><h4>S6 Health-service navigation station (navigate, not diagnose)</h4><p><span class="chip cy">ai-health-service-navigation</span><span class="chip ok">service</span><span class="chip">L1 zero health data</span></p><p>Station navigation corner + neighbourhood frontage.</p></article>
+<article class="card"><h4>S7 Factor-service station · registration coaching copilot</h4><p><span class="chip cy">enterprise-service-copilot</span><span class="chip ok">service</span><span class="chip">L1+filings L3 deleted</span></p><p>Stations on both sides (never on-the-spot disbursement).</p></article>
+<article class="card"><h4>S8 Youth curation assistant</h4><p><span class="chip cy">ai-cultural-guide</span><span class="chip ok">service</span><span class="chip">application L3+archive L1</span></p><p>Quarterly curation slots along the belt, bid for and credited to student teams.</p></article>
+<article class="card"><h4>S9 Phase-one low-speed delivery-robot test ground</h4><p><span class="chip cy">robot-delivery-low-speed</span><span class="chip er">testing</span><span class="chip">edge-anonymised L2</span></p><p>The opened 2.4 km / 16.8 ha phase-one section.</p></article>
+<article class="card"><h4>S10 Dual-use ramp · robot and wheelchair compatibility test</h4><p><span class="chip cy">robot-delivery-low-speed</span><span class="chip er">testing</span><span class="chip">L2+volunteers L3</span></p><p>2–3 sample gate ramps; wheelchair priority is a hard condition.</p></article>
+<article class="card"><h4>S11 Spike-scan demo integration test</h4><p><span class="chip cy">enterprise-service-copilot</span><span class="chip er">testing</span><span class="chip">L1 test corpus</span></p><p>Zhongzhiyuan test bays → the whole Rail-Spike Band.</p></article>
+<article class="card"><h4>S12 Event-day circulation and accessibility stress test</h4><p><span class="chip cy">ai-traffic-walkability</span><span class="chip er">testing</span><span class="chip">L1+L2 manual counts</span></p><p>The Dazhongsi–Zhongzhiyuan event corridor.</p></article>
 </div>
-<p class="small" style="margin-top:12px">Three matrix rules: each segment has a home ground (Dazhongsi hosts service and ceremony, the Origin hosts narrative, Zhongzhiyuan hosts testing); testing precedes rollout (S9 whole-vehicle → S10 component → S11 content); every scenario closes its loop (feedback, acceptance, complaints and sign-offs are filed in the City Evolution Archive). The four test cards are test-validation concepts, not approved operations; all pilots require the applicable permits first.</p>
+<p class="small" style="margin-top:12px">Three matrix rules: each segment has a home ground (Dazhongsi takes services and ceremony, the Origin segment takes narrative, Zhongzhiyuan takes testing); testing precedes rollout (S9 whole machine → S10 component → S11 content); every scenario is a loop (feedback, acceptance, complaint and sign-off results are all archived in the City Evolution Archive). The four testing cards are test-and-verify concepts, not approved operations; every pilot presupposes the relevant regulatory permit.</p>
+
 </div>
 </section>
 
-<!-- ============ 09 Core Metrics ============ -->
-<section class="sheet" id="s09">
-<div class="sh"><span class="no">SHT-09</span><h2>Core Metrics</h2><span class="en">核心指标</span><span class="tag">value-identical to metrics.json · 1 ppm tolerance</span></div>
+<!-- ============ 04 Planning Drawings ============ -->
+<section class="sheet" id="s04">
+<div class="sh"><span class="no">CH-04</span><h2>Planning Drawings</h2><span class="en">规划图</span><span class="tag">five drawings on a real basemap + live overview map</span></div>
+<div class="sb">
+
+<div class="alert in">All five planning drawings are set on a real Beijing basemap — streets, water bodies, rail transit, parks and campuses from OpenStreetMap (© OpenStreetMap contributors, ODbL). Everything drawn on top of that basemap — the spine, the nodes, the area extents, the stitching lines — is a concept suggestion (provisional): dashed lines are indicative, solid lines are still not statutory boundaries, and none may be read as road redlines, land redlines or engineering alignments.</div>
+
+<figure class="fig">
+<img src="../assets/figures/site-overview.en.png" alt="Drawing 01 site overview and structure: the 9-km spine, three segments, three key areas and the century timeline" loading="lazy">
+<figcaption><span class="cn">DWG 01</span><b>Site overview and overall structure</b> · The 9-km answer scroll (South Question — Middle Answer — North Leap) as a concept structure on the real Jingzhang corridor: the spine runs from K0 (beside Beijing North Station) to K9 (Qinghe Station), annotated with existing stations such as Dazhongsi, Zhichunlu, Wudaokou and Qinghuadonglu Xikou, overlaid with the announced-area extents of the three key areas; the base strip is the 1909–2026 timeline.
+<span class="dis">Basemap © OpenStreetMap contributors (ODbL); design elements are concept suggestions (provisional, dashed = indicative), not official boundaries or engineering alignments.</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="../assets/figures/land-use-structure.en.png" alt="Drawing 02 land-use structure and three-tier working framework: one spine, two wings, ten blocks along the real corridor" loading="lazy">
+<figcaption><span class="cn">DWG 02</span><b>Land-use structure and three-tier working framework</b> · One spine, two wings, ten blocks: cultural facilities (0803), commercial vitality (0901), business (0902), research (0802), university education (0804), existing residential (0701) and flexible reserve (16) marked along the real corridor, with nested frames showing the three tiers — coordinated research ~43.6 sq km, overall design ~11.4 sq km, and three key areas totalling ~368.4 ha.
+<span class="dis">Basemap © OpenStreetMap contributors (ODbL); band widths are indicative and not parcel lines — coordinates are governed by geometry/land_use.geojson; not a statutory land-use boundary.</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="../assets/figures/key-areas.en.png" alt="Drawing 03 the three key areas enlarged: Leap of 人, Answer Origin, Gate of the Bell" loading="lazy">
+<figcaption><span class="cn">DWG 03</span><b>Three key areas, enlarged concept design</b> · One enlargement per segment: North Leap at Zhongzhiyuan ("Leap of 人": the ring-crossing concept node and the Qinghe blue-green cross), Middle Answer at the Beijing AI Origin Community ("Answer Origin": the 1910 Tsinghuayuan Station, the Kilometre-Zero concept siting, low-disturbance campus stitching), and South Question at Dazhongsi ("Gate of the Bell": Bell Plaza and Answer Bell concept, four-quadrant stitching; the 1733 temple is a cultural echo only and is never touched). A locator map sits top right.
+<span class="dis">Basemap © OpenStreetMap contributors (ODbL); area extents are provisional envelopes sized to the announced areas — rectangle edges must not be read as parcel or road redlines.</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="../assets/figures/mobility-bluegreen.en.png" alt="Drawing 04 mobility and blue-green public space concept: spine, three stitching lines, break-point rooms and the Qinghe cross" loading="lazy">
+<figcaption><span class="cn">DWG 04</span><b>Mobility and blue-green public space (concept)</b> · On top of the real rail and water network: the ~9.7 km slow-mobility spine (concept line), three east-west stitching lines (Gate of the Bell / Answer Origin / Leap of 人), indicative "connect first, then stay" break-point locations, an indicative distribution of the 46 Answer Gates (planning figure) and the Qinghe blue-green cross.
+<span class="dis">Basemap © OpenStreetMap contributors (ODbL); entrance counts are subject to completion; all transport content is a concept suggestion awaiting professional refinement — no cross-sections, no engineering conclusions.</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="../assets/figures/metrics-evidence.en.png" alt="Drawing 05 metrics and evidence: structure on the real basemap plus nine metric cards and the evidence discipline" loading="lazy">
+<figcaption><span class="cn">DWG 05</span><b>Metrics and evidence (recomputable basis)</b> · Left: the scheme structure on the real basemap. Right: nine metric cards, each carrying its source — areas, green ratio and public-space share are recomputable from geometry/*.geojson with formulas registered in metrics.json; announced figures (areas, entrance count, model count) state their basis and date and are never mixed with recomputed values; FAR is honestly marked unknown.
+<span class="dis">Basemap © OpenStreetMap contributors (ODbL); values are governed by metrics.json (see chapter 06) and are recomputed on the provisional boundary — not a survey conclusion.</span></figcaption>
+</figure>
+
+<div class="subh"><span class="idx">4.6</span><h3>Overview Map (live layers)</h3><span class="en">总览地图</span><span class="tag">geometry/*.geojson embedded · live SVG rendering</span></div>
+<p class="note">The 9-km answer scroll drawn to true proportion, north up: ~1.3 km wide east-west, ~9.7 km long north-south, with a 1-km chainage grid. The map is rendered live from the nine GeoJSON layers embedded in this page, byte-identical to the submission's geometry/ folder; use the switches to toggle each layer. Every boundary is provisional and indicative — rectangle edges are neither road redlines nor parcel boundaries.</p>
+<div class="maplay">
+<div class="mapbox">
+<svg id="map-svg" viewBox="0 0 520 1180" role="img" aria-label="Overview map: land use, blue-green and public space, mobility, structures, key areas and phasing layers overlaid"></svg>
+</div>
+<aside class="mapside">
+<h3>LAYERS</h3>
+<label class="tg"><input type="checkbox" data-layer="landuse" checked> Land use (10 concept blocks)</label>
+<label class="tg"><input type="checkbox" data-layer="green" checked> Blue-green (3 spine segments + Qinghe corridor)</label>
+<label class="tg"><input type="checkbox" data-layer="public" checked> Public space (5 plazas and frontages)</label>
+<label class="tg"><input type="checkbox" data-layer="build" checked> Structures (3 concept footprints)</label>
+<label class="tg"><input type="checkbox" data-layer="roads" checked> Mobility (5 concept lines)</label>
+<label class="tg"><input type="checkbox" data-layer="keyareas" checked> Key areas (3 provisional extents)</label>
+<label class="tg"><input type="checkbox" data-layer="phasing"> Phasing (3 concept phases)</label>
+<h3>LEGEND</h3>
+<div class="lg">
+<span><i class="sw" style="background:rgba(22,101,52,.7)"></i>Green spine 1401</span>
+<span><i class="sw" style="background:rgba(17,94,89,.7)"></i>Qinghe blue-green 1402</span>
+<span><i class="sw" style="background:rgba(91,74,31,.7)"></i>Residential 0701</span>
+<span><i class="sw" style="background:rgba(30,58,138,.7)"></i>Research 0802</span>
+<span><i class="sw" style="background:rgba(76,29,149,.7)"></i>Cultural 0803</span>
+<span><i class="sw" style="background:rgba(21,94,117,.7)"></i>University 0804</span>
+<span><i class="sw" style="background:rgba(124,45,18,.7)"></i>Commercial 0901</span>
+<span><i class="sw" style="background:rgba(120,53,15,.7)"></i>Business 0902</span>
+<span><i class="sw" style="background:rgba(51,65,85,.6)"></i>Flexible reserve 16</span>
+<span><i class="sw" style="background:rgba(226,232,240,.4)"></i>Public space</span>
+<span><i class="sw line" style="background:#e0b458"></i>Spine · greenway</span>
+<span><i class="sw line" style="background:#67e8f9"></i>Robot test line · cycleway</span>
+<span><i class="sw line" style="background:#f8fafc"></i>Stitching line · pedestrian</span>
+<span><i class="sw" style="border:1.6px dashed #fb7185;background:transparent"></i>Key areas (provisional)</span>
+</div>
+<h3>NOTES</h3>
+<p class="small">1) The base extent comes from provisional_boundaries (official_boundary=false); 2) concept lines express connection intent only — not redlines or cross-sections; 3) building patches are concept footprints, the circles are enlarged locator symbols; 4) phasing is a concept suggestion, not a government commitment.</p>
+<h3>AUDIT</h3>
+<p class="small">Σ blue-green layers ÷ site = 25.04% (green_ratio 0.250356 ✓)<br>Σ public space ÷ site = 1.93% (public_space_ratio 0.0193 ✓)<br>Σ structure footprints = 3,124.999 sqm ✓<br>Ten land-use blocks sum to the site area within &lt; 1 sqm (rounding)</p>
+</aside>
+</div>
+
+</div>
+</section>
+
+<!-- ============ 05 Concept Renders ============ -->
+<section class="sheet" id="s05">
+<div class="sh"><span class="no">CH-05</span><h2>Concept Renders</h2><span class="en">效果图</span><span class="tag">4 AI concept impressions · not photographs</span></div>
+<div class="sb">
+
+<div class="alert in">All four images in this chapter are <b>AI-generated concept impressions</b> conveying atmosphere and a sense of scale. They are <b>not photographs, not a promise of built outcome, and not an approval basis</b>. Massing, materials, planting, crowds and skyline are all indicative; the actual form must be determined by professional teams within the statutory framework.</div>
+
+<div class="figs">
+<figure class="fig">
+<img src="assets/renders/render-bell-plaza.jpg" alt="Render: Bell Plaza and Answer Bell concept — concentric paving, curved benches, temple silhouette beyond" loading="lazy">
+<figcaption><span class="cn">R 01</span><b>Gate of the Bell · Bell Plaza (South Question)</b> · The newly cast Answer Bell stands at the centre of concentric sound-wave paving, the rings echoing both the bell and the cross-section of a rail spike; curved benches enclose a civic living room, with the Dazhongsi cultural silhouette beyond. Companies in the belt come here to strike once for a registration or IPO milestone.
+<span class="dis">AI concept impression, not a photograph. The new bell is only a cultural echo of the 1733 Ancient Bell Museum collection and never involves striking or using heritage objects (A-HERITAGE-001).</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="assets/renders/render-spike-belt.jpg" alt="Render: the Rail-Spike Band — bronze spikes set into the path edge, a citizen crouching to read them, retained track at left, a train passing beyond" loading="lazy">
+<figcaption><span class="cn">R 02</span><b>Rail-Spike Band · Answer Origin segment (Middle Answer)</b> · Bronze spikes run continuously along the path edge, one for each large model independently registered in Haidian; retained rails and sleepers on the left carry the narrative base, and citizens crouch to read the numbers — "how many spikes now?" is the most ordinary question this park asks.
+<span class="dis">AI concept impression, not a photograph. The spike count is a point-in-time figure updated on the statistical release cycle, never presented as real time (A-DATA-001).</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="assets/renders/render-ren-bridge.jpg" alt="Render: the 人 bridge crossing a ring road — steel truss footbridge over a multi-lane expressway, Qinghe water and hills beyond" loading="lazy">
+<figcaption><span class="cn">R 03</span><b>Leap of 人 · ring-crossing concept node (North Leap)</b> · Answering the official brief for a landmark ring-crossing node: a weathering-steel truss footbridge whose switchback ramps echo the reversing logic of the Jingzhang 人-shaped alignment, its north bridgehead landing on Future Question Plaza, with Qinghe blue-green space and the Western Hills beyond.
+<span class="dis">AI concept impression, not a photograph. Bridge position, span, structural type and ramps are indicative only, contain no bridge-engineering conclusion, and require professional and regulatory review.</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="assets/renders/render-answer-gate.jpg" alt="Render: the Answer Gate — a giant page turned open, one face relief-carved with the century question, the other pierced with today's answer" loading="lazy">
+<figcaption><span class="cn">R 04</span><b>Answer Gate · one page turned open (46 locations, indicative)</b> · The gate takes the form of a page turned open: the outer face carries the century question in relief (railway, survey, the 人-shaped alignment), the inner face carries today's answer as pierced work (models, algorithms, new urban life), with nearly 70 neighbourhoods adopting the gates and co-creating their inner content.
+<span class="dis">AI concept impression, not a photograph. "46" is the park phase-two planning figure, subject to what is actually built; gate form, scale and siting are all concept suggestions (A-GATE-001).</span></figcaption>
+</figure>
+</div>
+
+<p class="small" style="margin-top:6px">Generation and use boundary: the four images were produced from text prompts, use no real person's likeness and copy no recognisable work of a living designer; they may not be used to claim any approved construction. Copyright and citation rules: report/copyright_statement.md.</p>
+
+</div>
+</section>
+
+<!-- ============ 06 Core Metrics ============ -->
+<section class="sheet" id="s06">
+<div class="sh"><span class="no">CH-06</span><h2>Core Metrics</h2><span class="en">核心指标</span><span class="tag">value-identical to metrics.json · 1 ppm tolerance</span></div>
 <div class="sb">
 <div class="grid3">
 <div class="mtile">
-<div class="lbl">site_area_sqm · submitted site area</div>
+<div class="lbl">site_area_sqm · submitted extent</div>
 <div class="val"><span data-metric="site_area_sqm" data-value="11412825.386">11,412,825.386</span> sqm</div>
 <div class="sub">≈ 11.41 sq km · polygon_area(provisional boundary) · confidence high</div>
 </div>
@@ -409,15 +553,15 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </div>
 <div class="mtile">
 <div class="lbl">public_space_ratio · public-space share</div>
-<div class="val gold"><span data-metric="public_space_ratio" data-value="0.0193">0.039336</span></div>
+<div class="val gold"><span data-metric="public_space_ratio" data-value="0.0193">0.0193</span></div>
 <div class="sub">≈ 1.93% · Σ public_space ÷ site_area · confidence medium</div>
 </div>
 </div>
 <div class="grid3" style="margin-top:12px">
 <div class="mtile">
-<div class="lbl">building_footprint_area_sqm · concept structures</div>
+<div class="lbl">building_footprint_area_sqm · concept footprints</div>
 <div class="val"><span data-metric="building_footprint_area_sqm" data-value="3124.999">3,124.999</span> sqm</div>
-<div class="sub">Sum of the three concept footprints · confidence medium</div>
+<div class="sub">Three concept structure footprints combined · confidence medium</div>
 </div>
 <div class="mtile">
 <div class="lbl">key_area_count · key areas</div>
@@ -426,100 +570,103 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </div>
 <div class="mtile unk">
 <div class="lbl">floor_area_ratio · FAR</div>
-<div class="val">unknown — no number shown</div>
-<div class="sub">Approved FAR controls and the statutory site boundary are not in the public site package. By rule, unknown metrics remain text-only with no numeric claim, to be recomputed once official conditions are published.</div>
+<div class="val">unknown — no number displayed</div>
+<div class="sub">Approved FAR controls and the statutory site boundary are not in the public site package. By discipline an unknown metric is described in words only, with no numeric claim, and is recomputed once official conditions are published.</div>
 </div>
 </div>
-<p class="small" style="margin-top:12px">All values are identical to metrics.json, recomputed from the geometry/ layers in EPSG:4548. Areas follow the provisional-boundary basis and are not survey conclusions.</p>
+<p class="small" style="margin-top:12px">Every value here is identical to metrics.json in the submission, recomputed from the geometry/ layers in EPSG:4548; areas are on the provisional boundary and are not a survey conclusion. The public-space basis was reduced this round following a real site-capacity check (see 3.3); metrics.json and this page were updated together.</p>
 </div>
 </section>
 
-<!-- ============ 10 Task Coverage ============ -->
-<section class="sheet" id="s10">
-<div class="sh"><span class="no">SHT-10</span><h2>Task Coverage</h2><span class="en">任务覆盖 · agent.1–6</span><span class="tag">compliance_matrix.json · all 23 items addressed</span></div>
+<!-- ============ 07 Task Coverage ============ -->
+<section class="sheet" id="s07">
+<div class="sh"><span class="no">CH-07</span><h2>Task Coverage</h2><span class="en">任务覆盖 · agent.1–6</span><span class="tag">compliance_matrix.json · all 23 items addressed</span></div>
 <div class="sb">
 <div class="tblwrap"><table class="dt">
-<tr><th>Task</th><th>Taskbook requirement</th><th>Response mechanism in this proposal</th><th>Sheets</th><th>Status</th></tr>
-<tr><td class="num">agent.1</td><td>Overall belt concept and functional coordination</td><td>The Century Answer master concept: the 9-km answer-scroll spine (South Question — Middle Answer — North Leap) + the Question/Answer/Reading belts + one spine, two wings, ten concept blocks</td><td><span class="chip">SHT-01/02/04</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.2</td><td>Full-stack AI self-reliance and world-class innovation ecosystem</td><td>The Rail-Spike Band (one registered LLM = one copper spike; an auditable living KPI) + eight-factor ecosystem map + factor-service stations + mechanism transfers from six international benchmarks</td><td><span class="chip">SHT-06/07/09</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.3</td><td>AI+ scenario paradigms and a smart, lively city</td><td>12 scenario cards on the 6 official scenario IDs, three data tiers + universal red lines + a test-before-rollout chain</td><td><span class="chip">SHT-08</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.4</td><td>AI public space, AI-native business and pilgrimage landmarks</td><td>Four landmark concepts: Answer Bell &amp; Bell Plaza / station Answer Book &amp; Kilometre-Zero Post (pending consultation) / 人-footbridge concept node over the Fifth Ring / the Kilometre-Zero origin device of the Rail-Spike Band</td><td><span class="chip">SHT-03/06/07</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.5</td><td>Fusing Jingzhang century heritage, Zhongguancun culture and new AI culture</td><td>The Question—Answer—Reading narrative; strict 25 March separation of memorial and commerce (different day, site and storyline); a dedicated section on red-heritage usage boundaries</td><td><span class="chip">SHT-02/03/08</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.6</td><td>Global AI event system and long-term operations</td><td>An academic-year calendar (spring 3·25 memorial / summer graduation &amp; youth spike rite / autumn opening ceremony / winter evolution day) + a multilingual annual report with three auditable lists + youth curation rights + the City Evolution Archive loop</td><td><span class="chip">SHT-07/08</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><th>Task</th><th>Client requirement</th><th>Mechanism in this proposal</th><th>Chapter</th><th>Status</th></tr>
+<tr><td class="num">agent.1</td><td>Overall concept and functional coordination for the belt</td><td>The Century Answer master concept: a 9-km spine (South Question — Middle Answer — North Leap) + question/answer/reading belts + one spine, two wings, ten blocks</td><td><span class="chip">CH-01 / CH-02 / 3.1</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.2</td><td>Full-stack self-reliant AI system and a world-class AI innovation ecosystem</td><td>Rail-Spike Band (one registered model = one bronze spike, a living KPI-bound mechanism) + eight-factor ecosystem map + factor-service stations + mechanism transfer from six international benchmarks</td><td><span class="chip">2.3 / 3.4</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.3</td><td>AI+ scenario empowerment and an intelligent, vibrant urban design</td><td>12 scenario cards mapped to the 6 standard scenario IDs, three data tiers + universal red lines + a test-before-rollout chain</td><td><span class="chip">3.5</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.4</td><td>AI public space, AI-native business formats and pilgrimage landmarks</td><td>Four landmark concepts: Answer Bell and Bell Plaza / Tsinghuayuan Station answer book and Kilometre-Zero Post (pending consultation) / ring-crossing 人 bridge node / Rail-Spike Band origin device</td><td><span class="chip">CH-05 / 3.3 / 3.4</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.5</td><td>Narrative fusing Jingzhang heritage, Zhongguancun culture and new AI culture</td><td>Question–answer–reading narrative structure; the 25 March separation of public memorial and commercial programming (different day, place and narrative); a dedicated section on the limits of using revolutionary narrative</td><td><span class="chip">CH-01 / CH-02</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.6</td><td>Global AI event system and long-term operation for the belt</td><td>An academic-year calendar (spring 25 March memorial / summer graduation / autumn departure ceremony / winter evolution day) + three auditable multilingual annual lists + youth curation rights + the City Evolution Archive loop</td><td><span class="chip">3.4 / 3.5</span></td><td><span class="chip ok">addressed</span></td></tr>
 </table></div>
-<p class="small" style="margin-top:10px">Announcement items 1.3 (3), 1.4 (3), 1.5 (11) and agent.1–6 (6) — 23 requirements in total — are all marked addressed in compliance_matrix.json, each mapped to report sections, GeoJSON layers, metrics, drawings, sources, standards, assumptions and self-check items.</p>
+<p class="small" style="margin-top:10px">Announcement items 1.3 (3), 1.4 (3), 1.5 (11) and agent.1–6 (6) — 23 requirements in total — are all marked addressed in compliance_matrix.json and mapped item by item to report sections, GeoJSON layers, metrics, drawings, sources, standards, assumptions and self-check entries.</p>
 </div>
 </section>
 
-<!-- ============ 11 Self-Check ============ -->
-<section class="sheet" id="s11">
-<div class="sh"><span class="no">SHT-11</span><h2>Self-Check Status</h2><span class="en">自检状态</span><span class="tag">self_check.json · four gates</span></div>
+<!-- ============ 08 Sources & Assumptions ============ -->
+<section class="sheet" id="s08">
+<div class="sh"><span class="no">CH-08</span><h2>Sources &amp; Assumptions</h2><span class="en">来源与假设</span><span class="tag">sources.json 19 entries · assumptions.json 9 entries</span></div>
+<div class="sb">
+
+<div class="subh first"><span class="idx">8.1</span><h3>Sources</h3><span class="en">来源</span><span class="tag">every fact sourced · official figures first</span></div>
+<div class="tblwrap"><table class="dt">
+<tr><th>ID</th><th>Source</th><th>Publisher / location</th><th>Type</th></tr>
+<tr><td>OFFICIAL-ANNOUNCEMENT</td><td>Official project announcement (tasks, scopes, key areas)<div class="srcurl">ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html</div></td><td>Beijing Municipal Commission of Planning and Natural Resources</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>HD-CTRL-PLAN-2026</td><td>Regulatory detailed plan for HD00-1601 and adjacent blocks along the Jingzhang heritage park (2024–2035): approved and published 2026-08-11; statutory structure "one belt, one axis, two centres, multiple nodes"<div class="srcurl">ghzrzyw.beijing.gov.cn/chengxiangguihua/ghlgg/hd_ghlgg/…</div></td><td>Beijing Municipal Commission of Planning and Natural Resources</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>HD-PLAN-2026</td><td>Haidian 2026 economic and social development plan report (official figure of 122 registered models; ~5,000 PCT filings a year)<div class="srcurl">zyk.bjhd.gov.cn/zwdt/zcwj/202602/t20260206_4805099.shtml</div></td><td>Haidian District People's Government</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>BJ-STAT-2025</td><td>Beijing 2025 statistical communiqué (209 models registered citywide, close to a third of the national total)<div class="srcurl">tjj.beijing.gov.cn/tjsj_31433/tjgb_31445/ndgb_31446/202603/t20260326_4566469.html</div></td><td>Beijing Municipal Bureau of Statistics</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>HD-STAT-2025</td><td>Haidian 2025 statistical communiqué (population, output and industrial structure cross-checks)<div class="srcurl">zyk.bjhd.gov.cn/jbdt/…</div></td><td>Haidian District Bureau of Statistics</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>BJD-AI-2026</td><td>"Why Haidian Leads" (core AI industry approaching CNY 360 bn; source of the 128-model point-in-time footnote)<div class="srcurl">news.bjd.com.cn/2026/03/13/11628632.shtml</div></td><td>Beijing Daily online</td><td><span class="chip">official_media_public</span></td></tr>
+<tr><td>PARK1-YLLHJ-2023</td><td>Jingzhang heritage park phase one fully open (2.4 km, 16.8 ha, June 2023)<div class="srcurl">yllhj.beijing.gov.cn/zwgk/zwxx/202306/t20230626_3145467.shtml</div></td><td>Beijing Municipal Forestry and Parks Bureau</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>PARK2-PLAN-2024</td><td>Phase-two planning basis (9 km total, no perimeter wall, 46 entrances for easy crossing)<div class="srcurl">beijing.gov.cn/ywdt/gzdt/202409/t20240907_3792248.html</div></td><td>Beijing municipal portal</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>PARK2-START-2024</td><td>Phase two officially started December 2024 (date basis)<div class="srcurl">news.bjd.com.cn/2024/12/11/10999402.shtml</div></td><td>Beijing Daily online (Haidian release)</td><td><span class="chip">official_media_public</span></td></tr>
+<tr><td>THU-STATION-2023</td><td>Account of the reopening of Tsinghuayuan Station (built 1910; first stop 25 March 1949; restored and reopened 25 March 2023)<div class="srcurl">tsinghua.org.cn/info/1952/38636.htm</div></td><td>Tsinghua Alumni Association (reprinting Guangming Daily)</td><td><span class="chip">institutional_public</span></td></tr>
+<tr><td>AGENT-POLICY-2026</td><td>Beijing measures to accelerate agent-led development (the municipal policy direction "scan a spike, get an answer" hooks into)<div class="srcurl">beijing.gov.cn/zhengce/zhengcefagui/202607/t20260723_4781085.html</div></td><td>Beijing municipal portal</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>DZS-MUSEUM-2021</td><td>Dazhongsi Ancient Bell Museum (founded 1733, national key protected site — the factual boundary for the Answer Bell as a "newly cast bell")<div class="srcurl">beijing.gov.cn/renwen/rwzyd/gdwh/dzsgzbwg/202107/t20210728_2450505.html</div></td><td>Beijing municipal portal</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>OSM-ODBL-2026</td><td>OpenStreetMap data (source of the real streets, water, rail and land basemap in the five drawings of chapter 04)<div class="srcurl">openstreetmap.org/copyright</div></td><td>OpenStreetMap contributors · ODbL</td><td><span class="chip cy">official_open_data</span></td></tr>
+<tr><td>AGENT-TASKBOOK</td><td>Agent taskbook (six agent tasks, scenario/brand/operation requirements and boundary clauses)</td><td>brief/site-package/agent_taskbook.json</td><td><span class="chip">user_provided_cleared</span></td></tr>
+<tr><td>SITE-PACKAGE</td><td>Public site package (brief, enumerations, permitted design space, scopes and schema)</td><td>brief/site-package/</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>BOUNDARY-SOURCE</td><td>Provisional overall-design-scope geometry source</td><td>brief/site-package/geometry/provisional_boundaries.geojson</td><td><span class="chip wa">agent_inferred_from_public_data</span></td></tr>
+<tr><td>KEY-AREA-SOURCE</td><td>Provisional geometry source for the three key areas</td><td>brief/site-package/geometry/provisional_boundaries.geojson</td><td><span class="chip wa">agent_inferred_from_public_data</span></td></tr>
+<tr><td>SOURCE-REGISTRY</td><td>Availability registry for public / cleared / provisional sources</td><td>data/source_registry.json</td><td><span class="chip">repository_public_registry</span></td></tr>
+<tr><td>PROCESSED-FACT-PACK</td><td>Agent fact navigation layer (not a new authoritative source)</td><td>data/processed/agent_fact_pack.md</td><td><span class="chip">repository_processed_reference</span></td></tr>
+</table></div>
+<p class="small" style="margin-top:10px">Figure discipline (A-DATA-001): the body text uses the district government's February 2026 figure of 122 registered models throughout; Beijing Daily's mid-February 2026 figure of 128 appears only as a point-in-time footnote; 209 is the citywide cumulative figure from the municipal statistical communiqué. A claimed "April figure of 130 from the municipal portal" could not be located and is not cited until a reliable source is found. Every numeric display is described as updating on the statistical release cycle, never in real time.</p>
+
+<div class="subh"><span class="idx">8.2</span><h3>Assumptions</h3><span class="en">假设</span><span class="tag">assumptions.json · 9 entries · incl. standing triggers</span></div>
+<div class="grid2">
+<article class="card"><h4>A-CONTROLS-001 <span class="chip wa">pending_professional_confirmation</span></h4><p>Detailed regulatory controls, road redlines, tenure, municipal and engineering constraints require official attachments before any statutory use; this package is offered for review on the provided boundary and submitted layers only.</p></article>
+<article class="card"><h4>A-BOUNDARY-001 <span class="chip wa">pending_official_redlines</span></h4><p>All spatial layers are drawn from the provisional boundary and public material; key-area areas are only checked for ±3% consistency and are not a survey or tenure conclusion. Any boundary change propagates to the spine alignment, node sitings and area metrics.</p></article>
+<article class="card"><h4>A-RECALC-001 <span class="chip er">standing_trigger</span></h4><p>Recompute trigger: once officials publish road redlines, land redlines, heritage protection zones, regulatory plan sheets, or rail and municipal control lines, every affected layer, metric and drawing is recomputed; no older value or drawing may be cited externally before that recomputation is reviewed.</p></article>
+<article class="card"><h4>A-CTRL-001 <span class="chip cy">declared</span></h4><p>The HD00-1601 block regulatory plan was approved and published on 11 August 2026, with the statutory structure "one belt, one axis, two centres, multiple nodes". This proposal is a concept elaboration above it: it does not stand beside the statutory plan, does not replace it, and does not cite its unpublished control indicators.</p></article>
+<article class="card"><h4>A-ROBOT-001 <span class="chip">concept_only</span></h4><p>The dual-use robot/accessible ramp and the phase-one test siting are indicative concepts containing no conclusion on gradient, clear width, loading, fire safety or operating hours; they require refinement under accessibility standards and Beijing's rules for low-speed unmanned delivery vehicles.</p></article>
+<article class="card"><h4>A-GATE-001 <span class="chip">pending_as_built</span></h4><p>"46 entrances" is a phase-two planning figure, subject to what is actually built; the number of gate-adoption points follows the as-built count, and a different count does not affect the mechanism.</p></article>
+<article class="card"><h4>A-HERITAGE-001 <span class="chip wa">pending_heritage_consultation</span></h4><p>GIS for the Tsinghuayuan Station protection zone is missing: the Kilometre-Zero Post, answer book and similar devices are all marked as concept sitings pending heritage consultation. The Answer Bell is a new bell beside the museum, a cultural echo only, never involving striking or using heritage objects.</p></article>
+<article class="card"><h4>A-DATA-001 <span class="chip cy">time_sensitive</span></h4><p>Registered-model counts are point-in-time figures, not live values (122 in the body text / 128 as a footnote / 209 citywide). A new batch or a new basis requires a full review of spike counts, footnotes and screen wording.</p></article>
+<article class="card"><h4>A-WRITING-001 <span class="chip">standing_discipline</span></h4><p>Writing and citation discipline: proposal.md follows the v2 readable-format contract, keeping only key citation anchors beside judgements in the narrative layer while the structured files carry the full machine index; this presentation page follows the same discipline.</p></article>
+<article class="card"><h4>Page scope statement <span class="chip">page_scope</span></h4><p>This page is a digital presentation: it renders only data already in the submission and makes no new factual claim; unknown metrics show words, never numbers; the chapter 05 images are AI concept impressions, not photographs; where it conflicts with proposal.md, the structured data (geometry / metrics / matrices) prevails.</p></article>
+</div>
+
+</div>
+</section>
+
+<!-- ============ 09 Self-Check ============ -->
+<section class="sheet" id="s09">
+<div class="sh"><span class="no">CH-09</span><h2>Self-Check Status</h2><span class="en">自检状态</span><span class="tag">self_check.json · four gates</span></div>
 <div class="sb">
 <div class="grid2">
 <div>
 <div class="tblwrap"><table class="dt">
 <tr><th>Check</th><th>Target</th><th>Result</th></tr>
-<tr><td>BOUNDARY_TRUST</td><td>site_boundary.geojson</td><td><span class="chip ok">pass</span> <span class="small">provisional boundary present; replace with official redline before professional scoring</span></td></tr>
-<tr><td>KEY_AREAS_TRUST</td><td>key_areas.geojson</td><td><span class="chip ok">pass</span> <span class="small">three provisional key areas; replace with official polygons</span></td></tr>
-<tr><td>LAND_USE_TOPOLOGY</td><td>land_use.geojson</td><td><span class="chip ok">pass</span> <span class="small">land use derived by partitioning the submitted boundary; topology checked</span></td></tr>
-<tr><td>VISUAL_STATIC</td><td>visual/index.html</td><td><span class="chip ok">pass</span> <span class="small">static rendering, zero external dependencies (per the latest visual_review run)</span></td></tr>
-<tr><td>PROFESSIONAL_EVIDENCE</td><td>proposal.md</td><td><span class="chip ok">pass</span> <span class="small">standards, depth items, layers, metrics, sources and assumptions all referenced</span></td></tr>
+<tr><td>BOUNDARY_TRUST</td><td>site_boundary.geojson</td><td><span class="chip ok">pass</span> <span class="small">provisional boundary in place; must be replaced by official redlines before formal professional scoring</span></td></tr>
+<tr><td>KEY_AREAS_TRUST</td><td>key_areas.geojson</td><td><span class="chip ok">pass</span> <span class="small">three key areas are provisional extents pending official polygons</span></td></tr>
+<tr><td>LAND_USE_TOPOLOGY</td><td>land_use.geojson</td><td><span class="chip ok">pass</span> <span class="small">land use derived by partitioning the submitted extent; topology check passed</span></td></tr>
+<tr><td>VISUAL_STATIC</td><td>visual/index.html</td><td><span class="chip ok">pass</span> <span class="small">static rendering, no external dependencies (per the latest visual_review run)</span></td></tr>
+<tr><td>PROFESSIONAL_EVIDENCE</td><td>proposal.md</td><td><span class="chip ok">pass</span> <span class="small">standards, depth, layers, metrics, sources and assumptions all referenced</span></td></tr>
 </table></div>
 </div>
 <div>
 <article class="card">
 <h4>Boundary status and honest gaps</h4>
 <p><span class="chip wa">provisional geometry: PASS intake only</span></p>
-<p>The provisional boundary supports intake display, discussion and rework only — it is not a formal scoring drawing. Recompute the whole package once official polygons are released (A-RECALC-001).</p>
+<p>The provisional boundary supports intake display, discussion and revision only — it is not a drawing for formal professional scoring. Once official polygons are released, the whole package is recomputed (A-RECALC-001).</p>
 <p><span class="chip er">constraints.geojson = deliberately empty</span></p>
-<p>Regulatory control lines, heritage-protection zones, road redlines, cadastral parcels, rail and blue lines are locked layers with no citable official geometry in the public site package. The gap is registered as A-CONTROLS-001 — an empty set is preferred over fabrication; inferred lines are never presented as official constraints.</p>
-<p class="small">Four gates: 1 structural and deterministic validation; 2 spatial review; 3 visual packaging check (this page); 4 professional evidence review. Claims defer to the latest script runs.</p>
+<p>Regulatory control lines, heritage zones, road redlines, cadastral parcels, rail and blue lines are locked layers with no citable official geometry in the public site package. The gap is registered under A-CONTROLS-001 — an empty set beats fabrication; inferred lines must never pose as official_constraint.</p>
+<p class="small">Four gates: 1) structure and determinism validation; 2) spatial review; 3) visual packaging check (this page); 4) professional evidence review. Claims follow the latest script output.</p>
 </article>
 </div>
-</div>
-</div>
-</section>
-
-<!-- ============ 12 Sources ============ -->
-<section class="sheet" id="s12">
-<div class="sh"><span class="no">SHT-12</span><h2>Sources</h2><span class="en">来源</span><span class="tag">sources.json · 17 entries · every fact sourced</span></div>
-<div class="sb">
-<div class="tblwrap"><table class="dt">
-<tr><th>ID</th><th>Source</th><th>Publisher / location</th><th>Type</th></tr>
-<tr><td>OFFICIAL-ANNOUNCEMENT</td><td>Official project announcement (tasks, scopes, key areas)<div class="srcurl">ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html</div></td><td>Beijing Municipal Commission of Planning and Natural Resources</td><td><span class="chip cy">official_public</span></td></tr>
-<tr><td>HD-PLAN-2026</td><td>Haidian 2026 economic and social development plan report (122 registered LLMs, official district figure; ~5,000 PCT filings/yr)<div class="srcurl">zyk.bjhd.gov.cn/zwdt/zcwj/202602/t20260206_4805099.shtml</div></td><td>Haidian District People's Government</td><td><span class="chip cy">official_government</span></td></tr>
-<tr><td>BJ-STAT-2025</td><td>Beijing 2025 statistical communique (209 registered LLMs citywide, ~1/3 of the national total)<div class="srcurl">tjj.beijing.gov.cn/tjsj_31433/tjgb_31445/ndgb_31446/202603/t20260326_4566469.html</div></td><td>Beijing Municipal Bureau of Statistics</td><td><span class="chip cy">official_statistics</span></td></tr>
-<tr><td>HD-STAT-2025</td><td>Haidian 2025 statistical communique (population, economy, industrial structure)<div class="srcurl">zyk.bjhd.gov.cn/.../202604/t20260410_4811526_hd.shtml</div></td><td>Haidian District Bureau of Statistics</td><td><span class="chip cy">official_statistics</span></td></tr>
-<tr><td>BJD-AI-2026</td><td>"Why Haidian leads" (AI core industry near 360 billion CNY; the 128-LLM time-point footnote)<div class="srcurl">news.bjd.com.cn/2026/03/13/11628632.shtml</div></td><td>Beijing Daily (bjd.com.cn)</td><td><span class="chip">official_media</span></td></tr>
-<tr><td>PARK1-YLLHJ-2023</td><td>Jingzhang Heritage Park phase I fully opened (2.4 km, 16.8 ha, June 2023)<div class="srcurl">yllhj.beijing.gov.cn/zwgk/zwxx/202306/t20230626_3145467.shtml</div></td><td>Beijing Municipal Forestry and Parks Bureau</td><td><span class="chip cy">official_government</span></td></tr>
-<tr><td>PARK2-PLAN-2024</td><td>Park phase-II planning figures (9 km total, no walls, 46 entrances for crossing)<div class="srcurl">beijing.gov.cn/ywdt/gzdt/202409/t20240907_3792248.html</div></td><td>beijing.gov.cn portal</td><td><span class="chip cy">official_government</span></td></tr>
-<tr><td>PARK2-START-2024</td><td>Park phase II construction started December 2024 (time-point basis)<div class="srcurl">news.bjd.com.cn/2024/12/11/10999402.shtml</div></td><td>Beijing Daily ("Beijing Haidian" official)</td><td><span class="chip">official_media</span></td></tr>
-<tr><td>THU-STATION-2023</td><td>Tsinghuayuan Station restoration record (built 1910; first stop of the CPC leadership entering Beijing on 25 Mar 1949; reopened 25 Mar 2023)<div class="srcurl">tsinghua.org.cn/info/1952/38636.htm</div></td><td>Tsinghua Alumni Association (reprinting Guangming Daily)</td><td><span class="chip">institutional</span></td></tr>
-<tr><td>AGENT-POLICY-2026</td><td>Beijing measures for accelerating intelligent-agent development (the policy hook of Scan-a-Spike)<div class="srcurl">beijing.gov.cn/zhengce/zhengcefagui/202607/t20260723_4781085.html</div></td><td>beijing.gov.cn portal</td><td><span class="chip cy">official_policy</span></td></tr>
-<tr><td>DZS-MUSEUM-2021</td><td>Dazhongsi Ancient Bell Museum (founded 1733, national heritage site — the factual boundary for "a newly cast bell beside the old")<div class="srcurl">beijing.gov.cn/renwen/rwzyd/gdwh/dzsgzbwg/202107/t20210728_2450505.html</div></td><td>beijing.gov.cn portal</td><td><span class="chip cy">official_government</span></td></tr>
-<tr><td>AGENT-TASKBOOK</td><td>Agent taskbook (six agent tasks; scenario, branding, operations and boundary clauses)</td><td>brief/site-package/agent_taskbook.json</td><td><span class="chip">user_provided_cleared</span></td></tr>
-<tr><td>SITE-PACKAGE</td><td>Public site package (brief, enums, allowed design space, ranges, schemas)</td><td>brief/site-package/</td><td><span class="chip cy">official_public</span></td></tr>
-<tr><td>BOUNDARY-SOURCE / KEY-AREA-SOURCE</td><td>Provisional boundary and key-area geometry source</td><td>brief/site-package/geometry/provisional_boundaries.geojson</td><td><span class="chip wa">agent_inferred</span></td></tr>
-<tr><td>SOURCE-REGISTRY</td><td>Usability registry of public / cleared / provisional sources</td><td>data/source_registry.json</td><td><span class="chip">repository_registry</span></td></tr>
-<tr><td>PROCESSED-FACT-PACK</td><td>Agent fact navigation layer (not a new authority source)</td><td>data/processed/agent_fact_pack.md</td><td><span class="chip">processed_reference</span></td></tr>
-</table></div>
-<p class="small" style="margin-top:10px">Figure discipline (A-DATA-001): the registered-LLM count uses the district government's February 2026 figure of 122 throughout; Beijing Daily's mid-February figure of 128 appears only as a time-point footnote; 209 is the citywide statistical-communique figure. A claimed "130 as of April" could not be located at its supposed source and is not cited. All public number displays are described as "updated per statistical release cycle" — never real-time.</p>
-</div>
-</section>
-
-<!-- ============ 13 Assumptions ============ -->
-<section class="sheet" id="s13">
-<div class="sh"><span class="no">SHT-13</span><h2>Assumptions</h2><span class="en">假设</span><span class="tag">assumptions.json · 7 entries</span></div>
-<div class="sb">
-<div class="grid2">
-<article class="card"><h4>A-CONTROLS-001 <span class="chip wa">pending_professional_confirmation</span></h4><p>Detailed regulatory controls, road redlines, ownership, municipal utilities and engineering constraints must be confirmed from official attachments before any statutory use; the package is reviewable only on the provided boundaries and submitted design layers.</p></article>
-<article class="card"><h4>A-BOUNDARY-001 <span class="chip wa">pending_official_redlines</span></h4><p>All spatial layers are drawn from the provisional boundary and public information; the three key-area figures are checked only for ±3% consistency and are not survey or ownership conclusions. Any boundary change propagates to the spine alignment, node sitings and area metrics.</p></article>
-<article class="card"><h4>A-RECALC-001 <span class="chip er">standing_trigger</span></h4><p>Recomputation trigger: once officials release road redlines, land redlines, heritage-protection zones, regulatory plans, or rail and utility control lines, the affected layers, metrics and drawings must be recomputed item by item; until reverified, no old values or drawings may be cited.</p></article>
-<article class="card"><h4>A-ROBOT-001 <span class="chip">concept_only</span></h4><p>The dual-use robot/accessible ramp and the phase-I test siting are concept illustrations with no gradient, width, load, fire or operating-hours conclusions; they must be developed under accessibility codes and Beijing's low-speed unmanned-delivery-vehicle regulations.</p></article>
-<article class="card"><h4>A-GATE-001 <span class="chip">pending_as_built</span></h4><p>"46 entrances" is the phase-II planning figure, subject to the as-built count; Answer-Gate adoption points adjust with the actual number, which changes point counts but not the mechanism itself.</p></article>
-<article class="card"><h4>A-HERITAGE-001 <span class="chip wa">pending_heritage_consultation</span></h4><p>GIS data for the Tsinghuayuan Station protection zone is missing: the Kilometre-Zero Post, Answer Book and similar devices are all labelled concept sitings pending heritage consultation. The Answer Bell is a newly cast bell beside the Ancient Bell Museum — a cultural echo only, never striking or using heritage objects.</p></article>
-<article class="card"><h4>A-DATA-001 <span class="chip cy">time_sensitive</span></h4><p>Registered-LLM counts are time-point figures, not live values (122 in the main text / 128 as footnote / 209 citywide). Each new registration batch or statistical release triggers a full recheck of spike counts, footnotes and display wording.</p></article>
-<article class="card"><h4>Exhibit boundary statement</h4><p>This page is a digital exhibit: it renders only the data already in the submission package and adds no new factual claims; unknown metrics show text, never numbers; where it conflicts with proposal.md, the structured data (geometry / metrics / matrices) prevails.</p></article>
 </div>
 </div>
 </section>
@@ -527,10 +674,10 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </main>
 
 <footer><div class="wrap">
-<p>The Century Answer · jingzhang-century-answer · offline single-file digital exhibit: no external requests, no CDN, no remote fonts, no embedded frames, no form-submission UI. Data sources: geometry/*.geojson (9 embedded layers), metrics.json, compliance_matrix.json, self_check.json, sources.json, assumptions.json. Every spatial and development idea is a concept suggestion / reference scheme for professional refinement; copyright and citation rules in report/copyright_statement.md. Chinese master edition: index.html.</p>
+<p>The Century Answer 百年应答 · jingzhang-century-answer · Offline single-file digital presentation: no external requests, no CDN, no remote fonts, no iframe, no form submission UI; all images are relative paths inside the submission. Data: geometry/*.geojson (9 layers embedded), metrics.json, compliance_matrix.json, self_check.json, sources.json, assumptions.json. Drawing basemaps © OpenStreetMap contributors (ODbL); the renders are AI concept impressions, not photographs. All spatial and development content is a concept suggestion / reference scheme awaiting professional refinement; copyright and citation rules in report/copyright_statement.md. Chinese master: index.html.</p>
 </div></footer>
 
-<script id="geo-data" type="application/json">{"site_boundary":{"type":"FeatureCollection","name":"site_boundary_scaffold","features":[{"type":"Feature","id":"SITE-001","properties":{"id":"SITE-001","layer":"SITE_BOUNDARY","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","scope_id":"overall_design_area","name_zh":"总体设计范围粗略替代边界","official_boundary":false,"boundary_precision":"provisional_rough","source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告文字四至、约11.4平方公里面积约束和道路名称形成的临时粗略范围","derivation_method":"以公告所述京张遗址公园周边1—2公里城市地区和产业区为走廊，以北五环路、学院路/西土城路、西直门外大街、大钟寺东路/荷清路等文字四至定位，并在EPSG:4548下校核至公告约11.4平方公里；道路名称仅用于粗略定位，不代表道路红线。","area_sqm_declared":11412825.386,"area_sqm_calculated":11412825.386,"usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.3407,39.939],[116.3553,39.939],[116.3553,39.965],[116.3533,39.99],[116.3553,40.0265],[116.3427,40.0265],[116.3417,40.006],[116.3397,39.975],[116.3407,39.939]]]}}]},"land_use":{"type":"FeatureCollection","name":"land_use_topology_partition","features":[{"type":"Feature","id":"LU-001","properties":{"id":"LU-001","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"京张遗址公园绿轴（九公里应答长卷主轴段，概念）","area_sqm_declared":2589251.89},"geometry":{"type":"Polygon","coordinates":[[[116.344507419,39.939000177],[116.343670695,40.026500049],[116.346792584,40.02650015],[116.347625328,39.939000229],[116.344507419,39.939000177]]]}},{"type":"Feature","id":"LU-002","properties":{"id":"LU-002","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0803","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"大钟寺文化片区（鸣钟之门西翼，概念）","area_sqm_declared":400735.683},"geometry":{"type":"Polygon","coordinates":[[[116.3407,39.939],[116.340400143,39.949799822],[116.344404128,39.949822534],[116.344507419,39.939000177],[116.3407,39.939]]]}},{"type":"Feature","id":"LU-003","properties":{"id":"LU-003","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0901","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"大钟寺商业活力片区（东翼更新界面，概念）","area_sqm_declared":796407.677},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.939],[116.347625328,39.939000229],[116.347522362,39.949840126],[116.355300016,39.949883639],[116.3553,39.939]]]}},{"type":"Feature","id":"LU-004","properties":{"id":"LU-004","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0802","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"学院南路科研创新带（南问段西翼，概念）","area_sqm_declared":1345239.039},"geometry":{"type":"Polygon","coordinates":[[[116.3397,39.975],[116.340245576,39.983458934],[116.344082529,39.983480711],[116.344404128,39.949822534],[116.340400143,39.949799822],[116.3397,39.975]]]}},{"type":"Feature","id":"LU-005","properties":{"id":"LU-005","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0701","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"东侧既有居住社区片区南段（应答门渗透界面，概念）","area_sqm_declared":2404339.099},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.965],[116.355300016,39.949883639],[116.347522362,39.949840126],[116.347202293,39.983498324],[116.353817321,39.983535391],[116.3553,39.965]]]}},{"type":"Feature","id":"LU-006","properties":{"id":"LU-006","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0804","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"高校科教界面片区（清华园车站西翼，概念）","area_sqm_declared":328759.955},"geometry":{"type":"Polygon","coordinates":[[[116.34089094,39.993462604],[116.343986882,39.993480168],[116.344082529,39.983480711],[116.340245576,39.983458934],[116.34089094,39.993462604]]]}},{"type":"Feature","id":"LU-007","properties":{"id":"LU-007","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0902","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"学院路知识经济商务带（中答段东翼，概念）","area_sqm_declared":601926.438},"geometry":{"type":"Polygon","coordinates":[[[116.3533,39.99],[116.353817321,39.983535391],[116.347202293,39.983498324],[116.3471071,39.993497787],[116.353493539,39.993533588],[116.3533,39.99]]]}},{"type":"Feature","id":"LU-008","properties":{"id":"LU-008","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0802","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"西翼科研创新带北段（面向众智园，概念）","area_sqm_declared":617522.586},"geometry":{"type":"Polygon","coordinates":[[[116.3417,40.006],[116.3427,40.0265],[116.343670695,40.026500049],[116.343986882,39.993480168],[116.34089094,39.993462604],[116.3417,40.006]]]}},{"type":"Feature","id":"LU-009","properties":{"id":"LU-009","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0701","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"东侧既有居住社区片区北段（概念）","area_sqm_declared":907585.397},"geometry":{"type":"Polygon","coordinates":[[[116.353493539,39.993533588],[116.3471071,39.993497787],[116.346973749,40.007497036],[116.354260744,40.007537868],[116.353493539,39.993533588]]]}},{"type":"Feature","id":"LU-010","properties":{"id":"LU-010","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"16","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"众智园弹性留白用地（北跃段·面向未来之问，概念）","area_sqm_declared":1421057.362},"geometry":{"type":"Polygon","coordinates":[[[116.3553,40.0265],[116.354260744,40.007537868],[116.346973749,40.007497036],[116.346792584,40.02650015],[116.3553,40.0265]]]}}]},"green_space":{"type":"FeatureCollection","name":"green_space_design","features":[{"type":"Feature","id":"GREEN-001","properties":{"id":"GREEN-001","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴南段（南问段·鸣钟之门绿地界面，概念）","area_sqm_declared":1316500.098},"geometry":{"type":"Polygon","coordinates":[[[116.344082529,39.983480711],[116.347202293,39.983498324],[116.347625328,39.939000229],[116.344507419,39.939000177],[116.344082529,39.983480711]]]}},{"type":"Feature","id":"GREEN-002","properties":{"id":"GREEN-002","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴中段（应答原点段·道钉带核心界面，概念）","area_sqm_declared":710158.967},"geometry":{"type":"Polygon","coordinates":[[[116.343852894,40.007479408],[116.346973749,40.007497036],[116.347202293,39.983498324],[116.344082529,39.983480711],[116.343852894,40.007479408]]]}},{"type":"Feature","id":"GREEN-003","properties":{"id":"GREEN-003","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴北段（北跃段·人字之跃与清河衔接，概念）","area_sqm_declared":562593.053},"geometry":{"type":"Polygon","coordinates":[[[116.343670695,40.026500049],[116.346792584,40.02650015],[116.346973749,40.007497036],[116.343852894,40.007479408],[116.343670695,40.026500049]]]}},{"type":"Feature","id":"GREEN-004","properties":{"id":"GREEN-004","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1402","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"清河蓝绿空间概念协调带（跨地块生态界面示意）","area_sqm_declared":268014.191},"geometry":{"type":"MultiPolygon","coordinates":[[[[116.343670695,40.026500049],[116.34369965,40.023478538],[116.342552262,40.023472034],[116.3427,40.0265],[116.343670695,40.026500049]]],[[[116.3553,40.0265],[116.355137889,40.023542756],[116.346821234,40.023496176],[116.346792584,40.02650015],[116.3553,40.0265]]]]}}]},"public_space":{"type":"FeatureCollection","name":"public_space_design","features":[{"type":"Feature","id":"PUBLIC-001","properties":{"id":"PUBLIC-001","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 应答钟为新铸概念构想，与大钟寺古钟博物馆为文化呼应关系，不涉及文物本体及其保护范围。","name_zh":"钟声广场（大钟寺·应答钟概念广场与四象限步行缝合界面）","area_sqm_declared":27000.004},"geometry":{"type":"Polygon","coordinates":[[[116.347580472,39.943723174],[116.347567641,39.945074029],[116.349673698,39.945085862],[116.349686488,39.943735006],[116.347580472,39.943723174]]]}},{"type":"Feature","id":"PUBLIC-002","properties":{"id":"PUBLIC-002","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 清华园车站文保范围GIS缺失，本选点仅为待文物部门协商的概念选点，不得视为已确定落位。","name_zh":"清华园车站站前纪念广场与零公里桩（概念选点，待文物部门协商）","area_sqm_declared":15399.993},"geometry":{"type":"Polygon","coordinates":[[[116.342400382,39.987975845],[116.342390883,39.988966463],[116.344029974,39.988975751],[116.344039449,39.987985133],[116.342400382,39.987975845]]]}},{"type":"Feature","id":"PUBLIC-003","properties":{"id":"PUBLIC-003","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 跨五环人字天桥为概念节点，不含桥梁工程结论。","name_zh":"人字天桥北桥头·未来之问广场（概念节点）","area_sqm_declared":18200.005},"geometry":{"type":"Polygon","coordinates":[[[116.346888659,40.016424733],[116.346877498,40.017595459],[116.348517275,40.01760469],[116.348528408,40.016433963],[116.346888659,40.016424733]]]}},{"type":"Feature","id":"PUBLIC-004","properties":{"id":"PUBLIC-004","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 应答门依托遗址公园二期规划出入口表述，以实际建成为准。","name_zh":"应答门社区微广场示范点（东翼·一页考卷界面，概念）","area_sqm_declared":4200.0},"geometry":{"type":"Polygon","coordinates":[[[116.349764274,39.966412563],[116.349759154,39.966952903],[116.350578438,39.966957496],[116.350583551,39.966417156],[116.349764274,39.966412563]]]}},{"type":"Feature","id":"PUBLIC-005","properties":{"id":"PUBLIC-005","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。","name_zh":"公园东翼慢行公共活动界面带（要素服务驿站与路演界面概念布点带）","area_sqm_declared":384138.271},"geometry":{"type":"Polygon","coordinates":[[[116.347522362,39.949840126],[116.346973749,40.007497036],[116.347676407,40.007500993],[116.348224429,39.949844075],[116.347522362,39.949840126]]]}}]},"buildings":{"type":"FeatureCollection","name":"building_footprints_design","features":[{"type":"Feature","id":"BLDG-001","properties":{"id":"BLDG-001","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"civic_pavilion_concept","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"应答钟阁概念基底（钟声广场内）","area_sqm_declared":1599.999},"geometry":{"type":"Polygon","coordinates":[[[116.348391362,39.944583322],[116.348387944,39.94494355],[116.348855956,39.944946179],[116.348859371,39.944585951],[116.348391362,39.944583322]]]}},{"type":"Feature","id":"BLDG-002","properties":{"id":"BLDG-002","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"archive_pavilion_concept","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"城市进化档案馆概念装置基底（道钉带旁）","area_sqm_declared":900.0},"geometry":{"type":"Polygon","coordinates":[[[116.347273065,39.988363633],[116.347270494,39.988633802],[116.347621726,39.988635779],[116.347624296,39.98836561],[116.347273065,39.988363633]]]}},{"type":"Feature","id":"BLDG-003","properties":{"id":"BLDG-003","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"service_station_concept","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"要素服务驿站示范点基底（东翼低效空间概念布点）","area_sqm_declared":625.0},"geometry":{"type":"Polygon","coordinates":[[[116.347568285,39.966557832],[116.347566144,39.966782973],[116.347858745,39.96678462],[116.347860884,39.966559478],[116.347568285,39.966557832]]]}}]},"roads":{"type":"FeatureCollection","name":"roads_concept_design","features":[{"type":"Feature","id":"ROAD-001","properties":{"id":"ROAD-001","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"greenway_main","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"九公里应答长卷慢行主线（概念线）"},"geometry":{"type":"LineString","coordinates":[[116.346066116,39.939027232],[116.345231898,40.026473093]]}},{"type":"Feature","id":"ROAD-002","properties":{"id":"ROAD-002","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"robot_delivery","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。 与无障碍坡道一套改造两用为概念机制，测试验证场景建议选址于已开放的一期建成段。","name_zh":"低速物流机器人测试通道（概念线·建议先行于已开放建成段验证）"},"geometry":{"type":"LineString","coordinates":[[116.34702669,39.983497335],[116.346798085,40.007496046]]}},{"type":"Feature","id":"ROAD-003","properties":{"id":"ROAD-003","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"ew_stitching","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"应答门东西缝合慢行连线·鸣钟之门段（概念示范线）"},"geometry":{"type":"LineString","coordinates":[[116.34058633,39.944359067],[116.355264909,39.944441627]]}},{"type":"Feature","id":"ROAD-004","properties":{"id":"ROAD-004","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"ew_stitching","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"应答门东西缝合慢行连线·应答原点段（概念示范线）"},"geometry":{"type":"LineString","coordinates":[[116.340603417,39.988460972],[116.353382216,39.988532968]]}},{"type":"Feature","id":"ROAD-005","properties":{"id":"ROAD-005","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"ew_stitching","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。 跨五环人字天桥为概念节点，不含工程结论。","name_zh":"应答门东西缝合慢行连线·人字之跃段（指向跨五环概念节点方向）"},"geometry":{"type":"LineString","coordinates":[[116.342270904,40.016984011],[116.354747069,40.017054151]]}}]},"key_areas":{"type":"FeatureCollection","name":"key_areas_official","features":[{"type":"Feature","id":"PROV-KEY-001","properties":{"id":"PROV-KEY-001","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"zhongzhiyuan_ai_acceleration_area","name_zh":"众智园AI自主创新加速区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":1921000,"area_sqm_calculated":1929201.877,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第一处、众智园AI自主创新加速区、约192.1公顷及五环路/清河相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.343,40.0075],[116.354,40.0075],[116.354,40.026],[116.343,40.026],[116.343,40.0075]]]}},{"type":"Feature","id":"PROV-KEY-002","properties":{"id":"PROV-KEY-002","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"beijing_ai_origin_community","name_zh":"北京AI原点社区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":1043000,"area_sqm_calculated":1043236.909,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第二处、北京AI原点社区、约104.3公顷及五道口/清华东路西口相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.342,39.9835],[116.353,39.9835],[116.353,39.9935],[116.342,39.9935],[116.342,39.9835]]]}},{"type":"Feature","id":"PROV-KEY-003","properties":{"id":"PROV-KEY-003","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"dazhongsi_ai_industry_cluster","name_zh":"大钟寺AI产业聚集区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":720000,"area_sqm_calculated":720454.221,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第三处、大钟寺AI产业聚集区、约72.0公顷及大钟寺站相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.342,39.944],[116.355,39.944],[116.355,39.94984],[116.342,39.94984],[116.342,39.944]]]}}]},"phasing":{"type":"FeatureCollection","name":"phasing_design","features":[{"type":"Feature","id":"PHASE-001","properties":{"id":"PHASE-001","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_1","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"一期·南问段（鸣钟之门与既有界面场景启动，概念时序建议）","area_sqm_declared":6263221.578},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.965],[116.3553,39.939],[116.3407,39.939],[116.3397,39.975],[116.340245576,39.983458934],[116.353817321,39.983535391],[116.3553,39.965]]]}},{"type":"Feature","id":"PHASE-002","properties":{"id":"PHASE-002","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_2","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"二期·中答段（应答原点与道钉带核心段，概念时序建议）","area_sqm_declared":2890709.805},"geometry":{"type":"Polygon","coordinates":[[[116.3533,39.99],[116.353817321,39.983535391],[116.340245576,39.983458934],[116.3417,40.006],[116.341771573,40.007467606],[116.354260744,40.007537868],[116.3533,39.99]]]}},{"type":"Feature","id":"PHASE-003","properties":{"id":"PHASE-003","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_3","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"三期·北跃段（人字之跃与清河蓝绿衔接，概念时序建议）","area_sqm_declared":2258894.016},"geometry":{"type":"Polygon","coordinates":[[[116.3427,40.0265],[116.3553,40.0265],[116.354260744,40.007537868],[116.341771573,40.007467606],[116.3427,40.0265]]]}}]},"constraints":{"type":"FeatureCollection","name":"constraints_scaffold","features":[],"data_gap":{"status":"official_constraint_geometry_unavailable","declared_by":"scripts/scaffold_ai_submission.py","assumption_ids":["A-CONTROLS-001"],"missing_layers":["REGULATORY_CONTROL","HERITAGE_PROTECTION","PARCEL","EXISTING_PRIMARY_ROAD","EXISTING_RAIL","EXISTING_WATER"],"note_zh":"本图层刻意保持空集合。控规控制线、文物保护范围与建设控制地带、道路红线、权属地块、轨道与蓝线均属锁定图层，公开场地包中目前没有可引用的官方几何来源。缺口按 assumption A-CONTROLS-001 登记；取得官方或已清权几何前，不得以推定线条冒充 official_constraint，空集合优于编造。","note_en":"This layer is intentionally an empty set. Regulatory control lines, heritage protection and construction-control zones, road redlines, cadastral parcels, rail and blue lines are locked layers with no citable official geometry in the public site package. The gap is registered as assumption A-CONTROLS-001; until official or cleared geometry is available, inferred lines must not be presented as an official_constraint - an empty set is preferred over fabrication."}}}</script>
+<script id="geo-data" type="application/json">{"site_boundary":{"type":"FeatureCollection","name":"site_boundary_scaffold","features":[{"type":"Feature","id":"SITE-001","properties":{"id":"SITE-001","layer":"SITE_BOUNDARY","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","scope_id":"overall_design_area","name_zh":"总体设计范围粗略替代边界","official_boundary":false,"boundary_precision":"provisional_rough","source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告文字四至、约11.4平方公里面积约束和道路名称形成的临时粗略范围","derivation_method":"以公告所述京张遗址公园周边1—2公里城市地区和产业区为走廊，以北五环路、学院路/西土城路、西直门外大街、大钟寺东路/荷清路等文字四至定位，并在EPSG:4548下校核至公告约11.4平方公里；道路名称仅用于粗略定位，不代表道路红线。","area_sqm_declared":11412825.386,"area_sqm_calculated":11412825.386,"usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.3407,39.939],[116.3553,39.939],[116.3553,39.965],[116.3533,39.99],[116.3553,40.0265],[116.3427,40.0265],[116.3417,40.006],[116.3397,39.975],[116.3407,39.939]]]}}]},"land_use":{"type":"FeatureCollection","name":"land_use_topology_partition","features":[{"type":"Feature","id":"LU-001","properties":{"id":"LU-001","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"京张遗址公园绿轴（九公里应答长卷主轴段，概念）","area_sqm_declared":2589251.89},"geometry":{"type":"Polygon","coordinates":[[[116.344507419,39.939000177],[116.343670695,40.026500049],[116.346792584,40.02650015],[116.347625328,39.939000229],[116.344507419,39.939000177]]]}},{"type":"Feature","id":"LU-002","properties":{"id":"LU-002","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0803","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"大钟寺文化片区（鸣钟之门西翼，概念）","area_sqm_declared":400735.683},"geometry":{"type":"Polygon","coordinates":[[[116.3407,39.939],[116.340400143,39.949799822],[116.344404128,39.949822534],[116.344507419,39.939000177],[116.3407,39.939]]]}},{"type":"Feature","id":"LU-003","properties":{"id":"LU-003","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0901","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"大钟寺商业活力片区（东翼更新界面，概念）","area_sqm_declared":796407.677},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.939],[116.347625328,39.939000229],[116.347522362,39.949840126],[116.355300016,39.949883639],[116.3553,39.939]]]}},{"type":"Feature","id":"LU-004","properties":{"id":"LU-004","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0802","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"学院南路科研创新带（南问段西翼，概念）","area_sqm_declared":1345239.039},"geometry":{"type":"Polygon","coordinates":[[[116.3397,39.975],[116.340245576,39.983458934],[116.344082529,39.983480711],[116.344404128,39.949822534],[116.340400143,39.949799822],[116.3397,39.975]]]}},{"type":"Feature","id":"LU-005","properties":{"id":"LU-005","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0701","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"东侧既有居住社区片区南段（应答门渗透界面，概念）","area_sqm_declared":2404339.099},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.965],[116.355300016,39.949883639],[116.347522362,39.949840126],[116.347202293,39.983498324],[116.353817321,39.983535391],[116.3553,39.965]]]}},{"type":"Feature","id":"LU-006","properties":{"id":"LU-006","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0804","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"高校科教界面片区（清华园车站西翼，概念）","area_sqm_declared":328759.955},"geometry":{"type":"Polygon","coordinates":[[[116.34089094,39.993462604],[116.343986882,39.993480168],[116.344082529,39.983480711],[116.340245576,39.983458934],[116.34089094,39.993462604]]]}},{"type":"Feature","id":"LU-007","properties":{"id":"LU-007","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0902","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"学院路知识经济商务带（中答段东翼，概念）","area_sqm_declared":601926.438},"geometry":{"type":"Polygon","coordinates":[[[116.3533,39.99],[116.353817321,39.983535391],[116.347202293,39.983498324],[116.3471071,39.993497787],[116.353493539,39.993533588],[116.3533,39.99]]]}},{"type":"Feature","id":"LU-008","properties":{"id":"LU-008","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0802","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"西翼科研创新带北段（面向众智园，概念）","area_sqm_declared":617522.586},"geometry":{"type":"Polygon","coordinates":[[[116.3417,40.006],[116.3427,40.0265],[116.343670695,40.026500049],[116.343986882,39.993480168],[116.34089094,39.993462604],[116.3417,40.006]]]}},{"type":"Feature","id":"LU-009","properties":{"id":"LU-009","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0701","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"东侧既有居住社区片区北段（概念）","area_sqm_declared":907585.397},"geometry":{"type":"Polygon","coordinates":[[[116.353493539,39.993533588],[116.3471071,39.993497787],[116.346973749,40.007497036],[116.354260744,40.007537868],[116.353493539,39.993533588]]]}},{"type":"Feature","id":"LU-010","properties":{"id":"LU-010","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"16","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"众智园弹性留白用地（北跃段·面向未来之问，概念）","area_sqm_declared":1421057.362},"geometry":{"type":"Polygon","coordinates":[[[116.3553,40.0265],[116.354260744,40.007537868],[116.346973749,40.007497036],[116.346792584,40.02650015],[116.3553,40.0265]]]}}]},"green_space":{"type":"FeatureCollection","name":"green_space_design","features":[{"type":"Feature","id":"GREEN-001","properties":{"id":"GREEN-001","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴南段（南问段·鸣钟之门绿地界面，概念）","area_sqm_declared":1316500.098},"geometry":{"type":"Polygon","coordinates":[[[116.344082529,39.983480711],[116.347202293,39.983498324],[116.347625328,39.939000229],[116.344507419,39.939000177],[116.344082529,39.983480711]]]}},{"type":"Feature","id":"GREEN-002","properties":{"id":"GREEN-002","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴中段（应答原点段·道钉带核心界面，概念）","area_sqm_declared":710158.967},"geometry":{"type":"Polygon","coordinates":[[[116.343852894,40.007479408],[116.346973749,40.007497036],[116.347202293,39.983498324],[116.344082529,39.983480711],[116.343852894,40.007479408]]]}},{"type":"Feature","id":"GREEN-003","properties":{"id":"GREEN-003","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴北段（北跃段·人字之跃与清河衔接，概念）","area_sqm_declared":562593.053},"geometry":{"type":"Polygon","coordinates":[[[116.343670695,40.026500049],[116.346792584,40.02650015],[116.346973749,40.007497036],[116.343852894,40.007479408],[116.343670695,40.026500049]]]}},{"type":"Feature","id":"GREEN-004","properties":{"id":"GREEN-004","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1402","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"清河蓝绿空间概念协调带（跨地块生态界面示意）","area_sqm_declared":268014.191},"geometry":{"type":"MultiPolygon","coordinates":[[[[116.343670695,40.026500049],[116.34369965,40.023478538],[116.342552262,40.023472034],[116.3427,40.0265],[116.343670695,40.026500049]]],[[[116.3553,40.0265],[116.355137889,40.023542756],[116.346821234,40.023496176],[116.346792584,40.02650015],[116.3553,40.0265]]]]}}]},"public_space":{"type":"FeatureCollection","name":"public_space_design","features":[{"type":"Feature","id":"PUBLIC-001","properties":{"id":"PUBLIC-001","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 应答钟为新铸概念构想，与大钟寺古钟博物馆为文化呼应关系，不涉及文物本体及其保护范围。","name_zh":"钟声广场（大钟寺·应答钟概念广场与四象限步行缝合界面）","area_sqm_declared":10000.0},"geometry":{"type":"Polygon","coordinates":[[[116.34799013016958,39.94398986817046],[116.34798232640468,39.944811972354515],[116.34926402685878,39.944819173621426],[116.3492718155369,39.94399706896292],[116.34799013016958,39.94398986817046]]]}},{"type":"Feature","id":"PUBLIC-002","properties":{"id":"PUBLIC-002","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 清华园车站文保范围GIS缺失，本选点仅为待文物部门协商的概念选点，不得视为已确定落位。","name_zh":"清华园车站站前纪念广场与零公里桩（概念选点，待文物部门协商）","area_sqm_declared":6000.0},"geometry":{"type":"Polygon","coordinates":[[[116.34270658848898,39.98816373514023],[116.34270066210436,39.98878206697725],[116.34372376014642,39.988787864396734],[116.34372967710361,39.988169532635744],[116.34270658848898,39.98816373514023]]]}},{"type":"Feature","id":"PUBLIC-003","properties":{"id":"PUBLIC-003","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 跨五环人字天桥为概念节点，不含桥梁工程结论。","name_zh":"人字天桥北桥头·未来之问广场（概念节点）","area_sqm_declared":8000.0},"geometry":{"type":"Polygon","coordinates":[[[116.34716308221473,40.01662356114947],[116.34715568567468,40.01739974487337],[116.34824284397139,40.017405864923504],[116.34825022820753,40.016629680621605],[116.34716308221473,40.01662356114947]]]}},{"type":"Feature","id":"PUBLIC-004","properties":{"id":"PUBLIC-004","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 应答门依托遗址公园二期规划出入口表述，以实际建成为准。","name_zh":"应答门社区微广场示范点（东翼·一页考卷界面，概念）","area_sqm_declared":4200.0},"geometry":{"type":"Polygon","coordinates":[[[116.349764274,39.966412563],[116.349759154,39.966952903000006],[116.350578438,39.96695749599999],[116.35058355100001,39.96641715599999],[116.349764274,39.966412563]]]}},{"type":"Feature","id":"PUBLIC-005","properties":{"id":"PUBLIC-005","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。","name_zh":"公园东翼慢行公共活动界面带（要素服务驿站与路演界面概念布点带）","area_sqm_declared":192069.1},"geometry":{"type":"Polygon","coordinates":[[[116.3476978787216,39.949841113700764],[116.34714941350128,40.007498025709744],[116.34750074250243,40.00750000408914],[116.34804891222261,39.949843088096145],[116.3476978787216,39.949841113700764]]]}}]},"buildings":{"type":"FeatureCollection","name":"building_footprints_design","features":[{"type":"Feature","id":"BLDG-001","properties":{"id":"BLDG-001","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"cultural","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"应答钟阁概念基底（钟声广场内）","area_sqm_declared":1599.999,"usage_note":"概念建筑体量示意，功能见 name_zh；原分类意向：civic_pavilion_concept"},"geometry":{"type":"Polygon","coordinates":[[[116.348391362,39.944583322],[116.348387944,39.94494355],[116.348855956,39.944946179],[116.348859371,39.944585951],[116.348391362,39.944583322]]]}},{"type":"Feature","id":"BLDG-002","properties":{"id":"BLDG-002","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"cultural","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"城市进化档案馆概念装置基底（道钉带旁）","area_sqm_declared":900.0,"usage_note":"概念建筑体量示意，功能见 name_zh；原分类意向：archive_pavilion_concept"},"geometry":{"type":"Polygon","coordinates":[[[116.347273065,39.988363633],[116.347270494,39.988633802],[116.347621726,39.988635779],[116.347624296,39.98836561],[116.347273065,39.988363633]]]}},{"type":"Feature","id":"BLDG-003","properties":{"id":"BLDG-003","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"community_service","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"要素服务驿站示范点基底（东翼低效空间概念布点）","area_sqm_declared":625.0,"usage_note":"概念建筑体量示意，功能见 name_zh；原分类意向：service_station_concept"},"geometry":{"type":"Polygon","coordinates":[[[116.347568285,39.966557832],[116.347566144,39.966782973],[116.347858745,39.96678462],[116.347860884,39.966559478],[116.347568285,39.966557832]]]}}]},"roads":{"type":"FeatureCollection","name":"roads_concept_design","features":[{"type":"Feature","id":"ROAD-001","properties":{"id":"ROAD-001","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"greenway","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"九公里应答长卷慢行主线（概念线）"},"geometry":{"type":"LineString","coordinates":[[116.346066116,39.939027232],[116.345231898,40.026473093]]}},{"type":"Feature","id":"ROAD-002","properties":{"id":"ROAD-002","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"cycleway","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。 与无障碍坡道一套改造两用为概念机制，测试验证场景建议选址于已开放的一期建成段。","name_zh":"低速物流机器人测试通道（概念线·建议先行于已开放建成段验证）"},"geometry":{"type":"LineString","coordinates":[[116.34702669,39.983497335],[116.346798085,40.007496046]]}},{"type":"Feature","id":"ROAD-003","properties":{"id":"ROAD-003","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"pedestrian","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"应答门东西缝合慢行连线·鸣钟之门段（概念示范线）"},"geometry":{"type":"LineString","coordinates":[[116.34058633,39.944359067],[116.355264909,39.944441627]]}},{"type":"Feature","id":"ROAD-004","properties":{"id":"ROAD-004","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"pedestrian","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"应答门东西缝合慢行连线·应答原点段（概念示范线）"},"geometry":{"type":"LineString","coordinates":[[116.340603417,39.988460972],[116.353382216,39.988532968]]}},{"type":"Feature","id":"ROAD-005","properties":{"id":"ROAD-005","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"pedestrian","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。 跨五环人字天桥为概念节点，不含工程结论。","name_zh":"应答门东西缝合慢行连线·人字之跃段（指向跨五环概念节点方向）"},"geometry":{"type":"LineString","coordinates":[[116.342270904,40.016984011],[116.354747069,40.017054151]]}}]},"key_areas":{"type":"FeatureCollection","name":"key_areas_official","features":[{"type":"Feature","id":"PROV-KEY-001","properties":{"id":"PROV-KEY-001","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"zhongzhiyuan_ai_acceleration_area","name_zh":"众智园AI自主创新加速区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":1921000,"area_sqm_calculated":1929201.877,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第一处、众智园AI自主创新加速区、约192.1公顷及五环路/清河相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.343,40.0075],[116.354,40.0075],[116.354,40.026],[116.343,40.026],[116.343,40.0075]]]}},{"type":"Feature","id":"PROV-KEY-002","properties":{"id":"PROV-KEY-002","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"beijing_ai_origin_community","name_zh":"北京AI原点社区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":1043000,"area_sqm_calculated":1043236.909,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第二处、北京AI原点社区、约104.3公顷及五道口/清华东路西口相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.342,39.9835],[116.353,39.9835],[116.353,39.9935],[116.342,39.9935],[116.342,39.9835]]]}},{"type":"Feature","id":"PROV-KEY-003","properties":{"id":"PROV-KEY-003","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"dazhongsi_ai_industry_cluster","name_zh":"大钟寺AI产业聚集区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":720000,"area_sqm_calculated":720454.221,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第三处、大钟寺AI产业聚集区、约72.0公顷及大钟寺站相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.342,39.944],[116.355,39.944],[116.355,39.94984],[116.342,39.94984],[116.342,39.944]]]}}]},"phasing":{"type":"FeatureCollection","name":"phasing_design","features":[{"type":"Feature","id":"PHASE-001","properties":{"id":"PHASE-001","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_1","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"一期·南问段（鸣钟之门与既有界面场景启动，概念时序建议）","area_sqm_declared":6263221.578},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.965],[116.3553,39.939],[116.3407,39.939],[116.3397,39.975],[116.340245576,39.983458934],[116.353817321,39.983535391],[116.3553,39.965]]]}},{"type":"Feature","id":"PHASE-002","properties":{"id":"PHASE-002","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_2","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"二期·中答段（应答原点与道钉带核心段，概念时序建议）","area_sqm_declared":2890709.805},"geometry":{"type":"Polygon","coordinates":[[[116.3533,39.99],[116.353817321,39.983535391],[116.340245576,39.983458934],[116.3417,40.006],[116.341771573,40.007467606],[116.354260744,40.007537868],[116.3533,39.99]]]}},{"type":"Feature","id":"PHASE-003","properties":{"id":"PHASE-003","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_3","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"三期·北跃段（人字之跃与清河蓝绿衔接，概念时序建议）","area_sqm_declared":2258894.016},"geometry":{"type":"Polygon","coordinates":[[[116.3427,40.0265],[116.3553,40.0265],[116.354260744,40.007537868],[116.341771573,40.007467606],[116.3427,40.0265]]]}}]},"constraints":{"type":"FeatureCollection","name":"constraints_scaffold","features":[],"data_gap":{"status":"official_constraint_geometry_unavailable","declared_by":"scripts/scaffold_ai_submission.py","assumption_ids":["A-CONTROLS-001"],"missing_layers":["REGULATORY_CONTROL","HERITAGE_PROTECTION","PARCEL","EXISTING_PRIMARY_ROAD","EXISTING_RAIL","EXISTING_WATER"],"note_zh":"本图层刻意保持空集合。控规控制线、文物保护范围与建设控制地带、道路红线、权属地块、轨道与蓝线均属锁定图层，公开场地包中目前没有可引用的官方几何来源。缺口按 assumption A-CONTROLS-001 登记；取得官方或已清权几何前，不得以推定线条冒充 official_constraint，空集合优于编造。","note_en":"This layer is intentionally an empty set. Regulatory control lines, heritage protection and construction-control zones, road redlines, cadastral parcels, rail and blue lines are locked layers with no citable official geometry in the public site package. The gap is registered as assumption A-CONTROLS-001; until official or cleared geometry is available, inferred lines must not be presented as an official_constraint - an empty set is preferred over fabrication."}}}</script>
 <script>
 (function(){
 "use strict";
@@ -571,6 +718,7 @@ function centroid(g){
  eachRing(g,function(r){r.forEach(function(c){sx+=X(c[0]);sy+=Y(c[1]);n++;});});
  return [sx/n,sy/n];
 }
+/* draw order */
 var gSiteF=el("g",{});
 var gGrid=el("g",{});
 var gLU=el("g",{id:"ly-landuse"});
@@ -581,10 +729,12 @@ var gBld=el("g",{id:"ly-build"});
 var gKey=el("g",{id:"ly-keyareas"});
 var gPh=el("g",{id:"ly-phasing"});
 var gAnno=el("g",{});
+/* site boundary */
 GEO.site_boundary.features.forEach(function(f){
  el("path",{d:dOf(f.geometry),fill:"#0d2c4c","fill-opacity":".55",stroke:"none"},gSiteF);
  el("path",{d:dOf(f.geometry),fill:"none",stroke:"#e8f1fb","stroke-width":"2","stroke-opacity":".9"},gAnno);
 });
+/* chainage grid every 1km */
 for(var k=0;k<=9;k++){
  var lat=mm.c+k*1000/MLAT;
  if(lat>mm.d){break;}
@@ -593,6 +743,7 @@ for(var k=0;k<=9;k++){
  var t=el("text",{x:ox-14,y:y+3,"text-anchor":"end","font-size":"9",fill:"#67e8f9","fill-opacity":".7","font-family":"ui-monospace,Consolas,monospace"},gGrid);
  t.textContent="K"+k+"+000";
 }
+/* land use */
 var LUC={"1401":["#166534","#4ade80"],"1402":["#115e59","#2dd4bf"],"0701":["#5b4a1f","#d9c37a"],"0802":["#1e3a8a","#93c5fd"],"0803":["#4c1d95","#c4b5fd"],"0804":["#155e75","#67e8f9"],"0901":["#7c2d12","#fdba74"],"0902":["#78350f","#fcd34d"],"16":["#334155","#94a3b8"]};
 GEO.land_use.features.forEach(function(f){
  var c=LUC[f.properties.land_use_code]||["#334155","#94a3b8"];
@@ -600,15 +751,18 @@ GEO.land_use.features.forEach(function(f){
  if(f.properties.land_use_code==="16"){at["stroke-dasharray"]="4 3";}
  el("path",at,gLU);
 });
+/* green space */
 GEO.green_space.features.forEach(function(f){
  el("path",{d:dOf(f.geometry),fill:"#15803d","fill-opacity":".5",stroke:"#4ade80","stroke-width":".8","stroke-opacity":".9"},gGreen);
 });
+/* public space */
 GEO.public_space.features.forEach(function(f){
  el("path",{d:dOf(f.geometry),fill:"#e2e8f0","fill-opacity":".4",stroke:"#f1f5f9","stroke-width":".8"},gPub);
 });
-var RS={greenway_main:{stroke:"#e0b458",w:4.2,dash:null,sleeper:true},robot_delivery:{stroke:"#67e8f9",w:2,dash:"7 5",sleeper:false},ew_stitching:{stroke:"#f8fafc",w:1.6,dash:"2 4",sleeper:false}};
+/* roads */
+var RS={greenway:{stroke:"#e0b458",w:4.2,dash:null,sleeper:true},cycleway:{stroke:"#67e8f9",w:2,dash:"7 5",sleeper:false},pedestrian:{stroke:"#f8fafc",w:1.6,dash:"2 4",sleeper:false}};
 GEO.roads.features.forEach(function(f){
- var s=RS[f.properties.road_class]||RS.ew_stitching;
+ var s=RS[f.properties.road_class]||RS.pedestrian;
  var at={d:dOf(f.geometry),fill:"none",stroke:s.stroke,"stroke-width":s.w,"stroke-linecap":"round"};
  if(s.dash){at["stroke-dasharray"]=s.dash;}
  el("path",at,gRoad);
@@ -616,6 +770,7 @@ GEO.roads.features.forEach(function(f){
   el("path",{d:dOf(f.geometry),fill:"none",stroke:"#071626","stroke-width":"1.1","stroke-dasharray":"3 5"},gRoad);
  }
 });
+/* buildings */
 GEO.buildings.features.forEach(function(f,i){
  el("path",{d:dOf(f.geometry),fill:"#e0b458",stroke:"none"},gBld);
  var c=centroid(f.geometry);
@@ -623,30 +778,33 @@ GEO.buildings.features.forEach(function(f,i){
  var t=el("text",{x:c[0].toFixed(1),y:(c[1]+3.2).toFixed(1),"text-anchor":"middle","font-size":"8.5",fill:"#071626","font-family":"ui-monospace,Consolas,monospace","font-weight":"700"},gBld);
  t.textContent="B"+(i+1);
 });
+/* key areas */
 GEO.key_areas.features.forEach(function(f,i){
  el("path",{d:dOf(f.geometry),fill:"#fb7185","fill-opacity":".05",stroke:"#fb7185","stroke-width":"1.8","stroke-dasharray":"6 4"},gKey);
  var r0=f.geometry.coordinates[0][0];
  var t=el("text",{x:(X(r0[0])+5).toFixed(1),y:(Y(r0[1])-5).toFixed(1),"font-size":"10",fill:"#fb7185","font-family":"ui-monospace,Consolas,monospace"},gKey);
  t.textContent="KA"+(i+1);
 });
-var PHN=["Phase I · South","Phase II · Middle","Phase III · North"];
+/* phasing */
+var PHN=["P1 · South","P2 · Middle","P3 · North"];
 GEO.phasing.features.forEach(function(f,i){
  el("path",{d:dOf(f.geometry),fill:"#fbbf24","fill-opacity":".05",stroke:"#fbbf24","stroke-width":"1.3","stroke-dasharray":"2 3"},gPh);
  var c=centroid(f.geometry);
- var t=el("text",{x:c[0].toFixed(1),y:c[1].toFixed(1),"text-anchor":"middle","font-size":"11",fill:"#fbbf24","fill-opacity":".9","font-family":"ui-monospace,Consolas,monospace"},gPh);
+ var t=el("text",{x:c[0].toFixed(1),y:c[1].toFixed(1),"text-anchor":"middle","font-size":"12",fill:"#fbbf24","fill-opacity":".9","font-family":"ui-monospace,Consolas,monospace"},gPh);
  t.textContent=PHN[i]||("P"+(i+1));
 });
+/* callouts */
 var CAL=[
  {lon:116.3486,lat:39.9444,side:"R",t:"P1 Bell Plaza · Answer Bell (concept)"},
- {lon:116.3433,lat:39.9885,side:"L",t:"P2 Tsinghuayuan Station · KM-Zero Post (pending)"},
- {lon:116.3474,lat:39.9886,side:"R",t:"B2 City Evolution Archive (concept device)"},
- {lon:116.3478,lat:39.9667,side:"R",t:"P4/B3 Answer-Gate plaza + station demo (concept)"},
- {lon:116.3477,lat:40.0170,side:"R",t:"P3 Leap of 人 · Future Question plaza (concept)"},
- {lon:116.3490,lat:40.0250,side:"L",t:"Qinghe blue-green band (concept)"},
+ {lon:116.3433,lat:39.9885,side:"L",t:"P2 Tsinghuayuan Stn · Km-Zero (pending)"},
+ {lon:116.3474,lat:39.9886,side:"R",t:"B2 City Evolution Archive (concept)"},
+ {lon:116.3478,lat:39.9667,side:"R",t:"P4/B3 Gate plaza + service station (concept)"},
+ {lon:116.3477,lat:40.0170,side:"R",t:"P3 Leap of 人 · Future Question Plaza"},
+ {lon:116.3490,lat:40.0250,side:"L",t:"Qinghe blue-green corridor (concept)"},
  {lon:116.3485,lat:40.0168,side:"L",t:"KA1 Zhongzhiyuan 192.1 ha (provisional)"},
- {lon:116.3475,lat:39.9850,side:"L",t:"KA2 AI Origin Community 104.3 ha (provisional)"},
+ {lon:116.3475,lat:39.9850,side:"L",t:"KA2 AI Origin Community 104.3 ha"},
  {lon:116.3485,lat:39.9469,side:"L",t:"KA3 Dazhongsi 72.0 ha (provisional)"},
- {lon:116.3460,lat:39.9410,side:"R",t:"ROAD-001 spine south end (concept)"}
+ {lon:116.3460,lat:39.9410,side:"R",t:"ROAD-001 spine, south end (concept)"}
 ];
 ["L","R"].forEach(function(side){
  var list=CAL.filter(function(c){return c.side===side;}).map(function(c){
@@ -662,9 +820,11 @@ var CAL=[
   t.textContent=c.t;
  });
 });
+/* north arrow */
 el("path",{d:"M488 52 L494 30 L500 52 L494 46 Z",fill:"#e8f1fb"},gAnno);
 var tn=el("text",{x:494,y:66,"text-anchor":"middle","font-size":"11",fill:"#e8f1fb","font-family":"ui-monospace,Consolas,monospace"},gAnno);
 tn.textContent="N";
+/* scale bar */
 var sb=1000*S;
 var sy=H-26,sx=CX-sb/2;
 el("line",{x1:sx,y1:sy,x2:sx+sb,y2:sy,stroke:"#e8f1fb","stroke-width":"1.4"},gAnno);
@@ -675,6 +835,7 @@ var ts=el("text",{x:sx-8,y:sy+3.5,"text-anchor":"end","font-size":"9.5",fill:"#8
 ts.textContent="0";
 var ts2=el("text",{x:sx+sb+8,y:sy+3.5,"text-anchor":"start","font-size":"9.5",fill:"#8fb3d9","font-family":"ui-monospace,Consolas,monospace"},gAnno);
 ts2.textContent="1000 m";
+/* layer toggles */
 var boxes=document.querySelectorAll("input[data-layer]");
 Array.prototype.forEach.call(boxes,function(cb){
  var g=document.getElementById("ly-"+cb.getAttribute("data-layer"));
@@ -682,6 +843,7 @@ Array.prototype.forEach.call(boxes,function(cb){
  cb.addEventListener("change",ap);
  ap();
 });
+/* metro gate ticks */
 var mg=document.getElementById("metro-gates");
 if(mg){
  for(var i=0;i<46;i++){

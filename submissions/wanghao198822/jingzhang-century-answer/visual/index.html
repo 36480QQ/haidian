@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>百年应答 · 概念城市设计电子展示蓝图</title>
+<title>百年应答 · 概念城市设计汇报</title>
 <style>
 :root{
  --bg:#061626;--panel:#0a2036;--panel2:#0d2743;--line:#1c3f66;--line2:#274b73;
@@ -36,6 +36,7 @@ h1{font-size:48px;margin:8px 0 2px;letter-spacing:.08em;line-height:1.15}
 .tbtable td{border:1px solid var(--line);padding:5px 8px}
 .tbtable td.k{color:var(--dim);width:84px;letter-spacing:.08em;white-space:nowrap}
 .alert{border:1px solid rgba(224,180,88,.5);background:rgba(224,180,88,.07);color:#f4d9a0;padding:11px 14px;font-size:13px;margin:20px 0 0;border-left:4px solid var(--gold)}
+.alert.in{margin:0 0 16px}
 section.sheet{border:1px solid var(--line);background:linear-gradient(180deg,rgba(13,39,67,.85),rgba(10,32,54,.94));margin:26px 0}
 .sh{display:flex;gap:14px;align-items:baseline;border-bottom:1px solid var(--line);padding:14px 18px;flex-wrap:wrap}
 .sh .no{font-family:var(--mono);color:var(--cyan);font-size:12px;letter-spacing:.18em;border:1px solid var(--line2);padding:2px 7px;white-space:nowrap}
@@ -45,6 +46,19 @@ section.sheet{border:1px solid var(--line);background:linear-gradient(180deg,rgb
 .sb{padding:18px}
 .note{color:var(--mut);font-size:13px}
 .small{font-size:12px;color:var(--dim)}
+.subh{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin:26px 0 12px;padding-bottom:7px;border-bottom:1px dashed var(--line2)}
+.subh.first{margin-top:0}
+.subh .idx{font-family:var(--mono);font-size:11px;color:var(--gold);border:1px solid rgba(224,180,88,.45);padding:1px 6px;letter-spacing:.12em}
+.subh h3{margin:0;font-size:17px;letter-spacing:.04em}
+.subh .en{font-family:var(--mono);color:var(--dim);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase}
+.subh .tag{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--mut);border:1px dashed var(--line2);padding:2px 7px}
+.narr{font-size:15.5px;line-height:1.95;max-width:960px;color:#dbe8f6}
+.narr b{color:var(--gold);font-weight:600}
+.lead{border-left:3px solid var(--gold);padding-left:16px;margin:0 0 16px}
+.tl{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
+.tl .ev{border:1px solid var(--line2);background:rgba(6,22,38,.6);padding:7px 10px;min-width:150px;flex:1 1 150px}
+.tl .yr{font-family:var(--mono);color:var(--cyan);font-size:12px;letter-spacing:.08em}
+.tl .tx{font-size:12px;color:var(--mut);margin-top:2px}
 table.dt{width:100%;border-collapse:collapse;font-size:13px}
 .dt th{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--dim);text-transform:uppercase;text-align:left;border-bottom:1px solid var(--line2);padding:7px 8px}
 .dt td{border-bottom:1px solid rgba(28,63,102,.55);padding:7px 8px;vertical-align:top}
@@ -64,6 +78,13 @@ table.dt{width:100%;border-collapse:collapse;font-size:13px}
 .card h4{margin:0 0 6px;font-size:13.5px}
 .card p{margin:0 0 6px;font-size:12.5px;color:var(--mut)}
 .card ul{margin:6px 0 0 18px;padding:0;font-size:12.5px;color:var(--mut)}
+figure.fig{margin:0 0 18px;border:1px solid var(--line2);background:#08192c;padding:9px}
+figure.fig img{width:100%;height:auto;display:block;border:1px solid rgba(28,63,102,.6);background:#fff}
+figure.fig figcaption{margin-top:9px;font-size:12.5px;color:var(--mut);line-height:1.62}
+figure.fig figcaption .cn{font-family:var(--mono);color:var(--cyan);font-size:10.5px;letter-spacing:.12em;margin-right:8px}
+figure.fig figcaption b{color:var(--ink)}
+figure.fig figcaption .dis{display:block;margin-top:6px;font-size:11.5px;color:var(--gold)}
+.figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .mtile{border:1px solid var(--line2);background:rgba(6,22,38,.6);padding:16px}
 .mtile .lbl{font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.14em;text-transform:uppercase}
 .mtile .val{font-family:var(--mono);font-size:25px;color:var(--cyan);margin:6px 0 2px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
@@ -86,21 +107,21 @@ label.tg input{accent-color:#67e8f9}
 #metro-svg{min-width:1010px;width:100%;height:auto;display:block}
 .srcurl{font-family:var(--mono);font-size:10.5px;color:var(--dim);overflow-wrap:anywhere}
 footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;color:var(--dim);font-size:12px}
-@media(max-width:1020px){.maplay,.grid3,.tbgrid{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:34px}}
-@media(max-width:640px){.grid2,.grid4{grid-template-columns:1fr}.sh .tag{margin-left:0}}
+@media(max-width:1020px){.maplay,.grid3,.tbgrid,.figs{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:34px}}
+@media(max-width:640px){.grid2,.grid4{grid-template-columns:1fr}.sh .tag,.subh .tag{margin-left:0}}
 </style>
 </head>
 <body>
-<nav class="toc" aria-label="图册目录"><div class="toc-in">
-<a href="#s01">01 总览地图</a><a href="#s02">02 三层范围</a><a href="#s03">03 重点区域</a><a href="#s04">04 用地分区</a><a href="#s05">05 交通慢行</a><a href="#s06">06 蓝绿公共空间</a><a href="#s07">07 建筑与更新项目</a><a href="#s08">08 AI 场景</a><a href="#s09">09 核心指标</a><a href="#s10">10 任务覆盖</a><a href="#s11">11 自检状态</a><a href="#s12">12 来源</a><a href="#s13">13 假设</a>
+<nav class="toc" aria-label="汇报目录"><div class="toc-in">
+<a href="#s01">01 灵感由来</a><a href="#s02">02 方案设计</a><a href="#s03">03 设计说明</a><a href="#s04">04 规划图</a><a href="#s05">05 效果图</a><a href="#s06">06 核心指标</a><a href="#s07">07 任务覆盖</a><a href="#s08">08 来源与假设</a><a href="#s09">09 自检状态</a>
 </div></nav>
 
 <header class="tb"><div class="wrap tbgrid">
 <div>
-<div class="eyebrow">京张铁路遗址公园 AI 融合创新带 · 概念城市设计 · 电子展示蓝图</div>
+<div class="eyebrow">京张铁路遗址公园 AI 融合创新带 · 概念城市设计 · 汇报稿</div>
 <h1>百年应答</h1>
 <div class="h1en">THE CENTURY ANSWER</div>
-<p class="lede">1909 年，京张铁路回答了一个百年之问：中国人能不能自己修铁路。今天，同一条铁路腾出的 9 公里公园旁，两千余家 AI 企业正在回答新问题：中国能不能自己做 AI。本页把提交包的全部空间图层（geometry/ 九个 GeoJSON）、核心指标（metrics.json）、任务覆盖矩阵与自检证据渲染为一张可阅读的工程蓝图——总览地图、三层范围、重点区域、用地分区、交通慢行、蓝绿公共空间、建筑与更新项目、AI 场景、核心指标、任务覆盖、自检状态、来源与假设，共十三张图纸。</p>
+<p class="lede">1909 年，京张铁路回答了一个百年之问：中国人能不能自己修铁路。今天，同一条铁路腾出的约 9 公里公园旁，海淀两千余家 AI 企业正在回答新问题：中国能不能自己做 AI。本页按汇报顺序展开——灵感由来、方案设计、设计说明、规划图、效果图，再附核心指标、任务覆盖、来源与假设、自检状态；全部内容由提交包的九个 GeoJSON 图层、metrics.json、矩阵与自检证据直接渲染。</p>
 <div class="stamp">概念建议 · 参考方案 · 待专业团队深化</div>
 </div>
 <div>
@@ -108,66 +129,64 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 <tr><td class="k">项目</td><td>海淀区京张 AI 融合创新带概念征集（公开公告）</td></tr>
 <tr><td class="k">方案代号</td><td>jingzhang-century-answer</td></tr>
 <tr><td class="k">提交人</td><td>wanghao198822（AI agent 提交）</td></tr>
-<tr><td class="k">图别</td><td>电子展示成果 · 离线单文件 · 无外部依赖</td></tr>
+<tr><td class="k">图别</td><td>电子汇报成果 · 离线单文件 · 无外部依赖</td></tr>
 <tr><td class="k">阶段</td><td>概念方案（非法定成果 · 非审批依据）</td></tr>
 <tr><td class="k">坐标</td><td>WGS84 展示投影（面积校核 EPSG:4548）</td></tr>
 <tr><td class="k">语言</td><td>中文主稿 · <span class="chip cy">index.en.html 英文版</span></td></tr>
 </table>
 </div>
 </div>
-<div class="wrap"><div class="alert">阅读须知：本页全部空间内容均为概念建议 / 参考方案，待专业团队深化；不含容积率、建筑高度、道路红线、拆改留的任何结论性数字。提交边界为临时边界（provisional geometry: PASS intake only），仅供 intake 展示与讨论；官方红线、控规图则发布后须按复算触发器 A-RECALC-001 整包重算。</div></div>
+<div class="wrap"><div class="alert">阅读须知：本页全部空间内容均为概念建议 / 参考方案，待专业团队深化；不含容积率、建筑高度、道路红线、拆改留的任何结论性数字。提交边界为临时边界（provisional geometry: PASS intake only），仅供 intake 展示与讨论；官方红线、控规图则发布后须按复算触发器 A-RECALC-001 整包重算。第 05 章效果图为 AI 生成的概念意象图，不是实景照片，也不是建成效果承诺。</div></div>
 </header>
 
 <main class="wrap">
 
-<!-- ============ 01 总览地图 ============ -->
+<!-- ============ 01 灵感由来 ============ -->
 <section class="sheet" id="s01">
-<div class="sh"><span class="no">SHT-01</span><h2>总览地图</h2><span class="en">Overview Map</span><span class="tag">geometry/*.geojson 内嵌数据 · SVG 实时渲染</span></div>
+<div class="sh"><span class="no">CH-01</span><h2>灵感由来</h2><span class="en">Where the Idea Comes From</span><span class="tag">1909 → 2026 · 同一道题的两次作答</span></div>
 <div class="sb">
-<p class="note">九公里应答长卷按真实比例纵向绘制（北上南下）：东西宽约 1.3 公里、南北长约 9.7 公里，里程网格每 1 公里一格。地图由本页内嵌的九个 GeoJSON 图层实时渲染，与提交包 geometry/ 目录逐字节一致；一切边界均为临时示意，矩形边不代表道路红线或地块权属边界。</p>
-<div class="maplay">
-<div class="mapbox">
-<svg id="map-svg" viewBox="0 0 520 1180" role="img" aria-label="总览地图：用地分区、蓝绿公共空间、交通慢行、建筑、重点区域与更新时序图层叠加"></svg>
+
+<div class="narr lead">
+<p>1909 年，京张铁路在关沟段爬不上天险的陡坡。詹天佑画了一个"人"字：列车驶入岔口、折返换向，用两段缓坡替代一段爬不动的陡坡。这条中国人自主勘测、自主设计、自主施工的铁路当年建成通车，回答了那个百年之问——<b>中国人能不能自己修铁路</b>。</p>
+<p>1910 年，清华园车站建成，站匾由詹天佑题写；1949 年 3 月 25 日，中共中央"进京赶考"抵达北平，北京地区第一站就是这座小站；2023 年 3 月 25 日，修缮后的老站房重新开放。铁路自己也交了卷：2019 年京张高铁通车、老线腾退，铁轨让位给公园——2023 年 6 月一期 2.4 公里、16.8 公顷建成开放；公园全长约 9 公里，二期沿线规划设置 46 个出入口，2024 年 12 月开工建设。</p>
+<p>公园两侧，答题的人已经坐满考场：海淀集聚 AI 企业 2000 余家、AI 核心产业规模近 3600 亿元；备案上线大模型 122 款（截至 2026 年 2 月区政府正式口径）；全市累计备案上线 209 款、约占全国近三分之一，已写进统计公报。</p>
+<p>把这两组事实叠在一起，方案的核心意象自然浮现：1909 年与今天，是同一道题的两次作答。这条 9 公里的公园，就该做成一份摊开在大地上的答卷——<b>道钉记录每一次作答，钟声宣告每一个里程碑，车站保存最初的题面</b>。市民不是来看展板的：他们蹲下来数道钉，中国自主创新，钉到第几颗了。</p>
 </div>
-<aside class="mapside">
-<h3>图层开关 LAYERS</h3>
-<label class="tg"><input type="checkbox" data-layer="landuse" checked> 用地分区（概念分区 10 块）</label>
-<label class="tg"><input type="checkbox" data-layer="green" checked> 蓝绿空间（绿轴三段 + 清河协调带）</label>
-<label class="tg"><input type="checkbox" data-layer="public" checked> 公共空间（广场与驿站界面 5 处）</label>
-<label class="tg"><input type="checkbox" data-layer="build" checked> 建筑（概念构筑物基底 3 处）</label>
-<label class="tg"><input type="checkbox" data-layer="roads" checked> 交通慢行（概念线 5 条）</label>
-<label class="tg"><input type="checkbox" data-layer="keyareas" checked> 重点区域（临时范围 3 处）</label>
-<label class="tg"><input type="checkbox" data-layer="phasing"> 更新时序（三期概念建议）</label>
-<h3>图例 LEGEND</h3>
-<div class="lg">
-<span><i class="sw" style="background:rgba(22,101,52,.7)"></i>公园绿轴 1401</span>
-<span><i class="sw" style="background:rgba(17,94,89,.7)"></i>清河蓝绿 1402</span>
-<span><i class="sw" style="background:rgba(91,74,31,.7)"></i>居住延续 0701</span>
-<span><i class="sw" style="background:rgba(30,58,138,.7)"></i>科研创新 0802</span>
-<span><i class="sw" style="background:rgba(76,29,149,.7)"></i>文化片区 0803</span>
-<span><i class="sw" style="background:rgba(21,94,117,.7)"></i>高校科教 0804</span>
-<span><i class="sw" style="background:rgba(124,45,18,.7)"></i>商业活力 0901</span>
-<span><i class="sw" style="background:rgba(120,53,15,.7)"></i>商务界面 0902</span>
-<span><i class="sw" style="background:rgba(51,65,85,.6)"></i>弹性留白 16</span>
-<span><i class="sw" style="background:rgba(226,232,240,.4)"></i>公共空间</span>
-<span><i class="sw line" style="background:#e0b458"></i>慢行主线（概念）</span>
-<span><i class="sw line" style="background:#67e8f9"></i>机器人测试线（概念）</span>
-<span><i class="sw line" style="background:#f8fafc"></i>东西缝合线（概念）</span>
-<span><i class="sw" style="border:1.6px dashed #fb7185;background:transparent"></i>重点区域（临时）</span>
+
+<div class="tl">
+<div class="ev"><div class="yr">1909</div><div class="tx">京张铁路建成通车，"人"字形展线成为自主创新的第一个符号</div></div>
+<div class="ev"><div class="yr">1910</div><div class="tx">清华园车站建成，站匾由詹天佑题写</div></div>
+<div class="ev"><div class="yr">1949 · 03 · 25</div><div class="tx">"进京赶考"抵达北平，北京地区第一站就是这座小站</div></div>
+<div class="ev"><div class="yr">2019</div><div class="tx">京张高铁通车，老线腾退，铁轨让位给公园</div></div>
+<div class="ev"><div class="yr">2023 · 03 · 25</div><div class="tx">清华园车站旧址修缮后重新开放</div></div>
+<div class="ev"><div class="yr">2023 · 06</div><div class="tx">遗址公园一期 2.4 公里、16.8 公顷建成开放</div></div>
+<div class="ev"><div class="yr">2024 · 12</div><div class="tx">公园二期开工，规划设置 46 个出入口（以实际建成为准）</div></div>
+<div class="ev"><div class="yr">2026</div><div class="tx">沿线两千余家 AI 企业、122 款备案大模型在此作答</div></div>
 </div>
-<h3>阅图说明 NOTES</h3>
-<p class="small">① 底图边界来自 provisional_boundaries（official_boundary=false）；② 概念线仅表达联通意向，非红线与断面；③ 建筑图斑为概念构筑物基底，圆标为放大定位符号；④ 更新时序为概念建议、非政府承诺。</p>
-<h3>复算小结 AUDIT</h3>
-<p class="small">Σ 蓝绿图层面积 ÷ 提交范围 = 25.04%（green_ratio 0.250356 ✓）<br>Σ 公共空间面积 ÷ 提交范围 = 1.93%（public_space_ratio 0.039336 ✓）<br>Σ 建筑基底 = 3,124.999 ㎡（building_footprint ✓）<br>十地块用地合计与提交范围差值 &lt; 1 ㎡（舍入所致）</p>
-</aside>
+
+<figure class="fig" style="margin-top:18px">
+<img src="../assets/figures/site-overview.png" alt="总体概念图：真实北京底图上的九公里应答长卷，南问—中答—北跃三段与百年时间轴" loading="lazy">
+<figcaption><span class="cn">FIG-00</span><b>总体概念图 · 场地总览与总体结构</b>：在真实北京街道、水系与轨道底图上，九公里应答长卷主轴自南（K0 北京北站侧）向北（K9 清河站）纵贯，标出南问、中答、北跃三段与三处重点片区的公告面积口径范围示意；图底为 1909—2026 百年时间轴。
+<span class="dis">底图数据 © OpenStreetMap 贡献者（ODbL）；图中全部设计要素为概念建议（provisional），虚线即示意，非法定边界、非工程线位。</span></figcaption>
+</figure>
+
+<div class="grid3">
+<article class="card"><h4>题 · 百年京张文化带</h4><p>1909 年之问是题面。人字展线、清华园车站、老站房与铁轨遗存构成叙事底本，不做主题公园式复刻。</p></article>
+<article class="card"><h4>答 · AI 融合创新带</h4><p>企业与模型作答。每一款海淀自主备案的大模型，在步道边缘钉下一颗铜道钉；备案或 IPO 里程碑，到新铸的应答钟敲一响。</p></article>
+<article class="card"><h4>阅 · 都市 AI 生活体验带</h4><p>市民阅卷。9 公里步道上数道钉、听钟声、穿应答门、登人字桥，把统计公报里的产业数字翻译成能蹲下来触摸的公共空间证据。</p></article>
 </div>
+
 </div>
 </section>
 
-<!-- ============ 02 三层范围 ============ -->
+<!-- ============ 02 方案设计 ============ -->
 <section class="sheet" id="s02">
-<div class="sh"><span class="no">SHT-02</span><h2>三层范围</h2><span class="en">Three-Tier Scope</span><span class="tag">公告 1.4 · site_boundary.geojson</span></div>
+<div class="sh"><span class="no">CH-02</span><h2>方案设计</h2><span class="en">Scheme Design</span><span class="tag">一轴 · 三段 · 两翼 · 三处重点区域</span></div>
 <div class="sb">
+
+<p class="narr" style="margin-bottom:20px">方案只讲一个故事，并把它讲进三个尺度。空间上落为一条约 9 公里的<b>应答长卷主轴</b>，分南问、中答、北跃三段：南段大钟寺"鸣钟之门"，中段清华园车站旁"应答原点"，北段众智园"人字之跃"；东西以 46 座<b>应答门</b>向沿线近 70 个社区渗透（以实际建成为准）。这套结构整体摆在已批控规"一带一轴两心多点"的法定框架之内——绿轴即"一带"，鸣钟之门与应答原点分别落在"两心"。本方案是法定规划之上的概念深化建议：不与之并列、不替代、不引用其未公开的控制指标。</p>
+
+<div class="subh first"><span class="idx">2.1</span><h3>三层范围</h3><span class="en">Three-Tier Scope</span><span class="tag">公告 1.4 · site_boundary.geojson</span></div>
 <div class="grid3">
 <article class="card">
 <h3>统筹研究范围 <span class="chip cy">约 43.6 平方公里</span></h3>
@@ -176,23 +195,18 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </article>
 <article class="card">
 <h3>总体设计范围 <span class="chip cy">约 11.4 平方公里</span></h3>
-<p>提交临时边界复算 11,412,825.386 ㎡（见 SHT-09 核心指标）。回答"写在哪"：一条 9 公里应答长卷主轴（南问—中答—北跃），东西以应答门向近 70 个社区渗透。</p>
+<p>提交临时边界复算 11,412,825.386 ㎡（见第 06 章核心指标）。回答"写在哪"：一条 9 公里应答长卷主轴（南问—中答—北跃），东西以应答门向近 70 个社区渗透。</p>
 <ul><li>概念用地结构：一轴两翼十地块</li><li>断点先通后留 + 46 出入口认领（规划口径）</li><li>要素服务驿站制造东西穿行理由</li></ul>
 </article>
 <article class="card">
 <h3>重点区域范围 <span class="chip cy">3 处（key_area_count=3）</span></h3>
-<p>回答"怎么落笔"：三处重点片区详细概念设计，官方公布面积口径与临时范围复算差值均在 ±3% 以内（见 SHT-03）。</p>
+<p>回答"怎么落笔"：三处重点片区详细概念设计，官方公布面积口径与临时范围复算差值均在 ±3% 以内。</p>
 <ul><li>大钟寺 72.0 公顷 = 鸣钟之门</li><li>AI 原点社区 104.3 公顷 = 应答原点</li><li>众智园 192.1 公顷 = 人字之跃</li></ul>
 </article>
 </div>
 <p class="small" style="margin-top:12px">三层不是三套图纸，而是同一份答卷的三种笔迹；层级边界沿用维护者登记的临时边界并声明 official_boundary=false，任何无法从结构化数据复算的面积与规模不写入正式结论。</p>
-</div>
-</section>
 
-<!-- ============ 03 重点区域 ============ -->
-<section class="sheet" id="s03">
-<div class="sh"><span class="no">SHT-03</span><h2>重点区域</h2><span class="en">Key Detailed-Design Areas</span><span class="tag">key_areas.geojson · ±3% 面积校验</span></div>
-<div class="sb">
+<div class="subh"><span class="idx">2.2</span><h3>重点区域</h3><span class="en">Key Detailed-Design Areas</span><span class="tag">key_areas.geojson · ±3% 面积校验</span></div>
 <div class="grid3">
 <article class="card">
 <h3>大钟寺 AI 产业聚集区</h3>
@@ -211,13 +225,45 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </article>
 </div>
 <p class="small" style="margin-top:12px">公告未给出三片区四至，矩形临时范围仅按名称、南北顺序与公告面积口径定位；矩形边不得解释为地块或道路红线。官方多边形发布后按 A-RECALC-001 重算。</p>
+
+<div class="subh"><span class="idx">2.3</span><h3>贯穿全带的五个机制</h3><span class="en">Five Operating Mechanisms</span><span class="tag">机制先于形态</span></div>
+<div class="grid3">
+<article class="card">
+<h4>道钉带 · 一款模型一颗铜道钉</h4>
+<p>全线统一的步道边缘铜道钉带：每一款海淀自主备案上线的大模型钉一颗，钉面刻编号与年份。无论断点是否已通，铺装语汇先行连续——"答卷"在视觉上先写通。</p>
+<p class="small">数量为时点口径（A-DATA-001），随统计发布周期更新，不写实时。</p>
+</article>
+<article class="card">
+<h4>应答钟 · 里程碑敲一响</h4>
+<p>大钟寺旁新铸之钟，落在钟声广场（概念）。带内企业完成备案或 IPO，来敲一响；钟声广场同时缝合地铁站四象限步行流线。</p>
+<p class="small">新铸之钟与 1733 年古钟博物馆馆藏文物仅为文化呼应，不涉及敲击或使用文物（A-HERITAGE-001）。</p>
+</article>
+<article class="card">
+<h4>应答门 · 一页翻开的考卷</h4>
+<p>依托二期规划的 46 个出入口，每座门做成一页翻开的考卷：门外一面刻百年之问，门内一面刻今日之答，由沿线近 70 个社区认领。</p>
+<p class="small">46 为规划口径，以实际建成数量为准（A-GATE-001）；数量增减不影响机制成立。</p>
+</article>
+</div>
+<div class="grid2" style="margin-top:14px">
+<article class="card">
+<h4>断点客厅 · 先通后留</h4>
+<p>对官方"交通系统优化解决方案"列明的各断点，逐一先给概念级连通优化策略作回应，再叠加停留场景：每处断点连通空间同步配置座椅、风雨棚、信息屏与饮水点的组合家具，把"等待通过"变成"愿意停留"。</p>
+</article>
+<article class="card">
+<h4>要素服务驿站 · 制造穿行的理由</h4>
+<p>沿公园东西两侧低效空间布点政策咨询、备案辅导、成果对接驿站（非当场兑付），离公园越近共享度越高。用功能制造东西穿行的理由——人愿意穿过去，才叫缝合。</p>
+</article>
+</div>
+
 </div>
 </section>
 
-<!-- ============ 04 用地分区 ============ -->
-<section class="sheet" id="s04">
-<div class="sh"><span class="no">SHT-04</span><h2>用地分区</h2><span class="en">Concept Land-Use Structure</span><span class="tag">land_use.geojson · 10 地块 · EPSG:4548 拓扑校验</span></div>
+<!-- ============ 03 设计说明 ============ -->
+<section class="sheet" id="s03">
+<div class="sh"><span class="no">CH-03</span><h2>设计说明</h2><span class="en">Design Statement</span><span class="tag">用地 · 交通 · 蓝绿 · 建筑 · 更新 · 场景</span></div>
 <div class="sb">
+
+<div class="subh first"><span class="idx">3.1</span><h3>用地分区</h3><span class="en">Concept Land-Use Structure</span><span class="tag">land_use.geojson · 10 地块 · EPSG:4548 拓扑校验</span></div>
 <div class="tblwrap"><table class="dt">
 <tr><th>编号</th><th>概念分区（参考方案）</th><th>参考代码</th><th class="num">面积（㎡）</th><th class="num">占比</th></tr>
 <tr><td>LU-001</td><td>京张遗址公园绿轴（九公里应答长卷主轴段）</td><td><span class="chip">1401</span></td><td class="num">2,589,251.89</td><td class="num">22.69%</td></tr>
@@ -233,13 +279,8 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 <tr class="sum"><td></td><td>十地块合计（≈ 提交范围，差值 &lt; 1 ㎡ 来自逐地块三位小数舍入）</td><td></td><td class="num">11,412,825.126</td><td class="num">100.00%</td></tr>
 </table></div>
 <p class="small" style="margin-top:10px">概念性用地布局建议（参考方案）：仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论，不给出容积率与建筑高度数字。</p>
-</div>
-</section>
 
-<!-- ============ 05 交通慢行 ============ -->
-<section class="sheet" id="s05">
-<div class="sh"><span class="no">SHT-05</span><h2>交通慢行</h2><span class="en">Mobility &amp; Slow Traffic</span><span class="tag">roads.geojson · 概念线 5 条 · 示意线路图</span></div>
-<div class="sb">
+<div class="subh"><span class="idx">3.2</span><h3>交通慢行</h3><span class="en">Mobility &amp; Slow Traffic</span><span class="tag">roads.geojson · 概念线 5 条 · 示意线路图</span></div>
 <div class="metrobox">
 <svg id="metro-svg" viewBox="0 0 1080 268" role="img" aria-label="九公里应答长卷示意线路图：南问、中答、北跃三段与主要节点顺序">
 <text x="60" y="24" font-size="12" fill="#5f83a8" font-family="ui-monospace,Consolas,monospace" letter-spacing="2">LINE DIAGRAM · 节点顺序示意 · 非工程线位 · 非既有地铁线路</text>
@@ -283,12 +324,12 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 <div class="grid2">
 <div>
 <div class="tblwrap"><table class="dt">
-<tr><th>编号</th><th>概念线（roads.geojson）</th><th>类型</th></tr>
-<tr><td>ROAD-001</td><td>九公里应答长卷慢行主线</td><td><span class="chip wa">greenway_main</span></td></tr>
-<tr><td>ROAD-002</td><td>低速物流机器人测试通道（建议先行于已开放一期段验证）</td><td><span class="chip cy">robot_delivery</span></td></tr>
-<tr><td>ROAD-003</td><td>应答门东西缝合慢行连线 · 鸣钟之门段</td><td><span class="chip">ew_stitching</span></td></tr>
-<tr><td>ROAD-004</td><td>应答门东西缝合慢行连线 · 应答原点段</td><td><span class="chip">ew_stitching</span></td></tr>
-<tr><td>ROAD-005</td><td>应答门东西缝合慢行连线 · 人字之跃段</td><td><span class="chip">ew_stitching</span></td></tr>
+<tr><th>编号</th><th>概念线（roads.geojson）</th><th>road_class</th></tr>
+<tr><td>ROAD-001</td><td>九公里应答长卷慢行主线</td><td><span class="chip wa">greenway</span></td></tr>
+<tr><td>ROAD-002</td><td>低速物流机器人测试通道（建议先行于已开放一期段验证）</td><td><span class="chip cy">cycleway</span></td></tr>
+<tr><td>ROAD-003</td><td>应答门东西缝合慢行连线 · 鸣钟之门段</td><td><span class="chip">pedestrian</span></td></tr>
+<tr><td>ROAD-004</td><td>应答门东西缝合慢行连线 · 应答原点段</td><td><span class="chip">pedestrian</span></td></tr>
+<tr><td>ROAD-005</td><td>应答门东西缝合慢行连线 · 人字之跃段</td><td><span class="chip">pedestrian</span></td></tr>
 </table></div>
 </div>
 <div>
@@ -303,16 +344,11 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </article>
 </div>
 </div>
-</div>
-</section>
 
-<!-- ============ 06 蓝绿公共空间 ============ -->
-<section class="sheet" id="s06">
-<div class="sh"><span class="no">SHT-06</span><h2>蓝绿公共空间</h2><span class="en">Blue-Green &amp; Public Space</span><span class="tag">green_space.geojson + public_space.geojson</span></div>
-<div class="sb">
+<div class="subh"><span class="idx">3.3</span><h3>蓝绿公共空间</h3><span class="en">Blue-Green &amp; Public Space</span><span class="tag">green_space.geojson + public_space.geojson</span></div>
 <div class="grid2">
 <div>
-<h3 style="font-size:15px;margin:0 0 8px">蓝绿骨架 · 一轴一带 <span class="chip ok">绿地占比 ≈ 25.04%</span></h3>
+<h4 style="font-size:15px;margin:0 0 8px">蓝绿骨架 · 一轴一带 <span class="chip ok">绿地占比 ≈ 25.04%</span></h4>
 <div class="tblwrap"><table class="dt">
 <tr><th>编号</th><th>图层要素</th><th class="num">面积（㎡）</th></tr>
 <tr><td>GREEN-001</td><td>公园绿轴南段（南问段 · 鸣钟之门绿地界面）</td><td class="num">1,316,500.098</td></tr>
@@ -324,29 +360,24 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 <p class="small" style="margin-top:8px">主轴给叙事，清河给生态，交点给场景：绿轴按南问、中答、北跃三段组织，北端与清河蓝绿空间形成十字交叠。概念性绿地深化建议，待专业团队结合公园既有设计深化，不构成工程结论。</p>
 </div>
 <div>
-<h3 style="font-size:15px;margin:0 0 8px">公共空间体系 <span class="chip ok">公共空间占比 ≈ 1.93%</span></h3>
+<h4 style="font-size:15px;margin:0 0 8px">公共空间体系 <span class="chip ok">公共空间占比 ≈ 1.93%</span></h4>
 <div class="tblwrap"><table class="dt">
 <tr><th>编号</th><th>图层要素</th><th class="num">面积（㎡）</th></tr>
-<tr><td>PUBLIC-001</td><td>钟声广场（应答钟概念广场 · 四象限步行缝合界面）</td><td class="num">27,000.004</td></tr>
-<tr><td>PUBLIC-002</td><td>清华园车站站前纪念广场与零公里桩（待协商概念选点）</td><td class="num">15,399.993</td></tr>
-<tr><td>PUBLIC-003</td><td>人字天桥北桥头 · 未来之问广场（概念节点）</td><td class="num">18,200.005</td></tr>
-<tr><td>PUBLIC-004</td><td>应答门社区微广场示范点（东翼 · 一页考卷界面）</td><td class="num">4,200.000</td></tr>
-<tr><td>PUBLIC-005</td><td>公园东翼慢行公共活动界面带（驿站与路演概念布点带）</td><td class="num">384,138.271</td></tr>
-<tr class="sum"><td></td><td>Σ ÷ 提交范围 = public_space_ratio 0.039336 ✓</td><td class="num">448,938.273</td></tr>
+<tr><td>PUBLIC-001</td><td>钟声广场（应答钟概念广场 · 四象限步行缝合界面）</td><td class="num">10,000.0</td></tr>
+<tr><td>PUBLIC-002</td><td>清华园车站站前纪念广场与零公里桩（待协商概念选点）</td><td class="num">6,000.0</td></tr>
+<tr><td>PUBLIC-003</td><td>人字天桥北桥头 · 未来之问广场（概念节点）</td><td class="num">8,000.0</td></tr>
+<tr><td>PUBLIC-004</td><td>应答门社区微广场示范点（东翼 · 一页考卷界面）</td><td class="num">4,200.0</td></tr>
+<tr><td>PUBLIC-005</td><td>公园东翼慢行公共活动界面带（驿站与路演概念布点带，宽约 30 米）</td><td class="num">192,069.1</td></tr>
+<tr class="sum"><td></td><td>Σ ÷ 提交范围 = public_space_ratio 0.0193 ✓</td><td class="num">220,269.1</td></tr>
 </table></div>
-<p class="small" style="margin-top:8px">概念性公共空间建议，选址与规模待专业团队深化；涉及清华园车站与大钟寺的选点均受文物协商约束（A-HERITAGE-001），协商结果可能改变选点、体量或取消装置。</p>
+<p class="small" style="margin-top:8px">尺度已按真实场地容量核查结论收敛：钟声广场约 1.0 公顷（约百米见方），清华园车站站前广场约 0.6 公顷（不超过文保建筑群自身尺度），天桥北桥头集散广场约 0.8 公顷，东翼界面带由 60 米收窄至约 30 米（既有人行道加公园边缘活动带的量级，非新增征地）。选址与规模仍为概念建议，待专业团队深化；涉及清华园车站与大钟寺的选点均受文物协商约束（A-HERITAGE-001），协商结果可能改变选点、体量或取消装置。</p>
 </div>
 </div>
-</div>
-</section>
 
-<!-- ============ 07 建筑与更新项目 ============ -->
-<section class="sheet" id="s07">
-<div class="sh"><span class="no">SHT-07</span><h2>建筑与更新项目</h2><span class="en">Structures &amp; Renewal Program</span><span class="tag">buildings.geojson + phasing.geojson</span></div>
-<div class="sb">
+<div class="subh"><span class="idx">3.4</span><h3>建筑与更新项目</h3><span class="en">Structures &amp; Renewal Program</span><span class="tag">buildings.geojson + phasing.geojson</span></div>
 <div class="grid2">
 <div>
-<h3 style="font-size:15px;margin:0 0 8px">建筑：概念构筑物基底 <span class="chip ok">Σ 3,124.999 ㎡ ✓</span></h3>
+<h4 style="font-size:15px;margin:0 0 8px">建筑：概念构筑物基底 <span class="chip ok">Σ 3,124.999 ㎡ ✓</span></h4>
 <div class="tblwrap"><table class="dt">
 <tr><th>编号</th><th>概念构筑物（不含建筑高度与工程结论）</th><th class="num">基底（㎡）</th></tr>
 <tr><td>BLDG-001</td><td>应答钟阁概念基底（钟声广场内，新铸之钟）</td><td class="num">1,599.999</td></tr>
@@ -356,7 +387,7 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 <p class="small" style="margin-top:8px">概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；本方案对既有建筑不做拆改留结论，更新以低扰动缝合为前提。</p>
 </div>
 <div>
-<h3 style="font-size:15px;margin:0 0 8px">更新项目：三期概念时序（非政府承诺）</h3>
+<h4 style="font-size:15px;margin:0 0 8px">更新项目：三期概念时序（非政府承诺）</h4>
 <div class="tblwrap"><table class="dt">
 <tr><th>分期</th><th>更新项目内容（概念建议）</th><th class="num">范围（㎡）</th></tr>
 <tr><td><span class="chip wa">一期 · 南问段</span></td><td>依托既有建成界面先启动：道钉带首段、钟声广场研究、一期段机器人测试环线</td><td class="num">6,263,221.578</td></tr>
@@ -366,13 +397,8 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 <p class="small" style="margin-top:8px">概念性时序建议（参考方案），不构成政府承诺或实施计划；轻量设施、运营活动可先行的内容，与必须等待控规、市政、权属条件确认的内容在更新项目清单中明确区分。实际时序以主管部门与专业团队确定为准。</p>
 </div>
 </div>
-</div>
-</section>
 
-<!-- ============ 08 AI 场景 ============ -->
-<section class="sheet" id="s08">
-<div class="sh"><span class="no">SHT-08</span><h2>AI 场景</h2><span class="en">AI Scenario Cards ×12</span><span class="tag">挂接甲方 6 类标准场景 ID</span></div>
-<div class="sb">
+<div class="subh"><span class="idx">3.5</span><h3>AI 场景</h3><span class="en">AI Scenario Cards ×12</span><span class="tag">挂接甲方 6 类标准场景 ID</span></div>
 <p class="note">12 张场景卡全部挂接甲方标准场景 ID，预定义三档数据边界：L1 纯公开层（零采集）/ L2 匿名汇总层（只留聚合统计）/ L3 主动授权层（单次授权、用后即删、可撤回）。通用红线：不做人脸识别、不做个体轨迹追踪、不新增监控性采集；所有 AI 输出可人工复核、可关停、可回滚。</p>
 <div class="grid4">
 <article class="card"><h4>S1 扫钉即应答 · 道钉带导览智能体</h4><p><span class="chip cy">ai-cultural-guide</span><span class="chip wa">体验</span><span class="chip">L1+计数L2</span></p><p>道钉带全线，原点为零公里桩（待协商概念选点）。</p></article>
@@ -389,12 +415,130 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 <article class="card"><h4>S12 活动日慢行组织与无障碍压力测试</h4><p><span class="chip cy">ai-traffic-walkability</span><span class="chip er">测试</span><span class="chip">L1+L2人工点算</span></p><p>大钟寺段—众智园段活动廊道。</p></article>
 </div>
 <p class="small" style="margin-top:12px">三条矩阵逻辑：三段各有主场（大钟寺承接服务与仪式、原点段承接叙事、众智园承接测试）；测试先于推广（S9 整机 → S10 部件 → S11 内容递进链）；每个场景都是回路（反馈、验收、举报、会签结果统一归档城市进化档案馆）。测试类四卡均为测试验证设想、非已批准运营，一切试点以取得相应管理许可为前提。</p>
+
 </div>
 </section>
 
-<!-- ============ 09 核心指标 ============ -->
-<section class="sheet" id="s09">
-<div class="sh"><span class="no">SHT-09</span><h2>核心指标</h2><span class="en">Core Metrics</span><span class="tag">与 metrics.json 逐值一致 · 1ppm 容差</span></div>
+<!-- ============ 04 规划图 ============ -->
+<section class="sheet" id="s04">
+<div class="sh"><span class="no">CH-04</span><h2>规划图</h2><span class="en">Planning Drawings</span><span class="tag">真实底图五图 + 交互总览图</span></div>
+<div class="sb">
+
+<div class="alert in">五张规划图均绘制在真实北京底图上（街道、水系、轨道交通、公园与高校校区来自 OpenStreetMap，© OpenStreetMap 贡献者，ODbL 许可）。底图之上的全部设计要素——主轴、节点、片区范围、缝合线——均为概念建议（provisional）：虚线即示意，实线亦非法定边界，不得读作道路红线、用地红线或工程线位。</div>
+
+<figure class="fig">
+<img src="../assets/figures/site-overview.png" alt="图 01 场地总览与总体结构：九公里应答长卷主轴、三段划分、三处重点片区与百年时间轴" loading="lazy">
+<figcaption><span class="cn">图 01</span><b>场地总览与总体结构</b> · 九公里应答长卷（南问—中答—北跃）在真实京张走廊上的概念结构：主轴自 K0（北京北站侧）至 K9（清河站）纵贯，沿线标注大钟寺、知春路、五道口、清华东路西口等既有站点位置，叠加三处重点片区的公告面积口径范围示意；图底为 1909—2026 时间轴。
+<span class="dis">底图 © OpenStreetMap 贡献者（ODbL）；设计要素为概念建议（provisional，虚线示意），非官方边界、非工程线位。</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="../assets/figures/land-use-structure.png" alt="图 02 用地结构与三层范围工作框架：一轴两翼十地块沿真实走廊的概念用地分区示意" loading="lazy">
+<figcaption><span class="cn">图 02</span><b>用地结构与三层范围工作框架</b> · 一轴两翼十地块：沿真实走廊标注文化设施（0803）、商业活力（0901）、商务（0902）、科研（0802）、高校科教（0804）、既有居住社区（0701）、弹性留白（16）等概念用地分区，并以嵌套框示意统筹研究范围约 43.6 平方公里、总体设计范围约 11.4 平方公里、重点区域 3 处约 368.4 公顷的三层关系。
+<span class="dis">底图 © OpenStreetMap 贡献者（ODbL）；地块带宽为示意，不代表用地边界，坐标数据以 geometry/land_use.geojson 为准；非法定用地边界。</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="../assets/figures/key-areas.png" alt="图 03 三重点片区概念设计放大图：人字之跃、应答原点、鸣钟之门三段" loading="lazy">
+<figcaption><span class="cn">图 03</span><b>三重点片区概念设计（放大）</b> · 三段各放大一幅：北跃段众智园"人字之跃"（跨五环概念节点、清河蓝绿十字）、中答段北京 AI 原点社区"应答原点"（清华园车站旧址 1910、零公里桩纪念装置概念选点、校园低扰动缝合）、南问段大钟寺"鸣钟之门"（钟声广场与应答钟概念、地铁站四象限缝合；1733 年古钟寺仅作文化呼应、不触碰）。右上为索引图。
+<span class="dis">底图 © OpenStreetMap 贡献者（ODbL）；片区范围为公告面积口径的临时示意范围（provisional），矩形边不得解释为地块或道路红线。</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="../assets/figures/mobility-bluegreen.png" alt="图 04 交通慢行与蓝绿公共空间系统概念图：慢行主线、三条东西缝合线、断点客厅与清河蓝绿十字" loading="lazy">
+<figcaption><span class="cn">图 04</span><b>交通慢行与蓝绿公共空间系统（概念）</b> · 在真实轨道与水系之上叠加慢行主线约 9.7 公里（概念线）、三条东西缝合线（鸣钟之门段 / 应答原点段 / 人字之跃段）、断点客厅"先通后留"位置示意、应答门 46 座分布示意（规划口径）与清河蓝绿十字协调关系。
+<span class="dis">底图 © OpenStreetMap 贡献者（ODbL）；出入口以实际建成为准；交通内容仅为概念建议，待专业深化，不含断面与工程结论。</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="../assets/figures/metrics-evidence.png" alt="图 05 指标与证据（可复算口径）：左侧方案结构图，右侧九项指标卡与证据纪律" loading="lazy">
+<figcaption><span class="cn">图 05</span><b>指标与证据（可复算口径）</b> · 左侧为真实底图上的方案结构，右侧九张指标卡逐项标注来源：面积、绿地率、公共空间占比可由 geometry/*.geojson 复算，公式登记于 metrics.json；公告口径数字（面积、出入口数、模型款数）注明口径与日期，不与复算值混用；容积率如实标注未知。
+<span class="dis">底图 © OpenStreetMap 贡献者（ODbL）；数值以 metrics.json 为准（见第 06 章核心指标），为临时边界复算口径、非勘界结论。</span></figcaption>
+</figure>
+
+<div class="subh"><span class="idx">4.6</span><h3>总览地图（交互图层版）</h3><span class="en">Overview Map · Live Layers</span><span class="tag">geometry/*.geojson 内嵌数据 · SVG 实时渲染</span></div>
+<p class="note">九公里应答长卷按真实比例纵向绘制（北上南下）：东西宽约 1.3 公里、南北长约 9.7 公里，里程网格每 1 公里一格。地图由本页内嵌的九个 GeoJSON 图层实时渲染，与提交包 geometry/ 目录逐字节一致；勾选右侧开关可逐层开合。一切边界均为临时示意，矩形边不代表道路红线或地块权属边界。</p>
+<div class="maplay">
+<div class="mapbox">
+<svg id="map-svg" viewBox="0 0 520 1180" role="img" aria-label="总览地图：用地分区、蓝绿公共空间、交通慢行、建筑、重点区域与更新时序图层叠加"></svg>
+</div>
+<aside class="mapside">
+<h3>图层开关 LAYERS</h3>
+<label class="tg"><input type="checkbox" data-layer="landuse" checked> 用地分区（概念分区 10 块）</label>
+<label class="tg"><input type="checkbox" data-layer="green" checked> 蓝绿空间（绿轴三段 + 清河协调带）</label>
+<label class="tg"><input type="checkbox" data-layer="public" checked> 公共空间（广场与驿站界面 5 处）</label>
+<label class="tg"><input type="checkbox" data-layer="build" checked> 建筑（概念构筑物基底 3 处）</label>
+<label class="tg"><input type="checkbox" data-layer="roads" checked> 交通慢行（概念线 5 条）</label>
+<label class="tg"><input type="checkbox" data-layer="keyareas" checked> 重点区域（临时范围 3 处）</label>
+<label class="tg"><input type="checkbox" data-layer="phasing"> 更新时序（三期概念建议）</label>
+<h3>图例 LEGEND</h3>
+<div class="lg">
+<span><i class="sw" style="background:rgba(22,101,52,.7)"></i>公园绿轴 1401</span>
+<span><i class="sw" style="background:rgba(17,94,89,.7)"></i>清河蓝绿 1402</span>
+<span><i class="sw" style="background:rgba(91,74,31,.7)"></i>居住延续 0701</span>
+<span><i class="sw" style="background:rgba(30,58,138,.7)"></i>科研创新 0802</span>
+<span><i class="sw" style="background:rgba(76,29,149,.7)"></i>文化片区 0803</span>
+<span><i class="sw" style="background:rgba(21,94,117,.7)"></i>高校科教 0804</span>
+<span><i class="sw" style="background:rgba(124,45,18,.7)"></i>商业活力 0901</span>
+<span><i class="sw" style="background:rgba(120,53,15,.7)"></i>商务界面 0902</span>
+<span><i class="sw" style="background:rgba(51,65,85,.6)"></i>弹性留白 16</span>
+<span><i class="sw" style="background:rgba(226,232,240,.4)"></i>公共空间</span>
+<span><i class="sw line" style="background:#e0b458"></i>慢行主线 greenway</span>
+<span><i class="sw line" style="background:#67e8f9"></i>机器人测试线 cycleway</span>
+<span><i class="sw line" style="background:#f8fafc"></i>东西缝合线 pedestrian</span>
+<span><i class="sw" style="border:1.6px dashed #fb7185;background:transparent"></i>重点区域（临时）</span>
+</div>
+<h3>阅图说明 NOTES</h3>
+<p class="small">① 底图边界来自 provisional_boundaries（official_boundary=false）；② 概念线仅表达联通意向，非红线与断面；③ 建筑图斑为概念构筑物基底，圆标为放大定位符号；④ 更新时序为概念建议、非政府承诺。</p>
+<h3>复算小结 AUDIT</h3>
+<p class="small">Σ 蓝绿图层面积 ÷ 提交范围 = 25.04%（green_ratio 0.250356 ✓）<br>Σ 公共空间面积 ÷ 提交范围 = 1.93%（public_space_ratio 0.0193 ✓）<br>Σ 建筑基底 = 3,124.999 ㎡（building_footprint ✓）<br>十地块用地合计与提交范围差值 &lt; 1 ㎡（舍入所致）</p>
+</aside>
+</div>
+
+</div>
+</section>
+
+<!-- ============ 05 效果图 ============ -->
+<section class="sheet" id="s05">
+<div class="sh"><span class="no">CH-05</span><h2>效果图</h2><span class="en">Concept Renders</span><span class="tag">AI 概念意象图 ×4 · 非实景照片</span></div>
+<div class="sb">
+
+<div class="alert in">本章四张图均为 <b>AI 生成的概念意象图</b>，用于传达氛围与尺度感受，<b>不是实景照片，不是建成效果承诺，也不是任何审批依据</b>。画面中的建筑体量、材料、树种、人流与天际线均为示意；实际形态须由专业团队在法定框架内深化设计确定。</div>
+
+<div class="figs">
+<figure class="fig">
+<img src="assets/renders/render-bell-plaza.jpg" alt="效果图：钟声广场与应答钟概念意象，同心圆铺装、弧形长凳与远处古钟寺意象" loading="lazy">
+<figcaption><span class="cn">效 01</span><b>鸣钟之门 · 钟声广场（南问段）</b> · 新铸应答钟立于同心圆声波铺装中心，圆环向外扩散，呼应钟声与道钉截面；弧形长凳围合成可停留的市民客厅，远处为大钟寺文化意象。带内企业完成备案或 IPO 里程碑，来此敲一响。
+<span class="dis">AI 概念意象图，非实景照片。新铸之钟与 1733 年古钟博物馆馆藏文物仅为文化呼应，不涉及敲击或使用文物（A-HERITAGE-001）。</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="assets/renders/render-spike-belt.jpg" alt="效果图：道钉带步道概念意象，铺装边缘嵌入铜道钉，市民蹲下辨认，左侧保留旧轨，远处轻轨列车经过" loading="lazy">
+<figcaption><span class="cn">效 02</span><b>道钉带 · 应答原点段（中答段）</b> · 步道边缘连续嵌入铜道钉，每颗对应一款海淀自主备案上线的大模型；左侧保留铁轨与枕木遗存作为叙事底本，市民蹲下来辨认编号——"钉到第几颗了"是这条公园最日常的一句问话。
+<span class="dis">AI 概念意象图，非实景照片。道钉数量为时点口径，随统计发布周期更新，不写实时（A-DATA-001）。</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="assets/renders/render-ren-bridge.jpg" alt="效果图：人字天桥跨环路概念意象，钢桁架人行天桥跨越多车道快速路，远处清河水系与山脊" loading="lazy">
+<figcaption><span class="cn">效 03</span><b>人字之跃 · 跨环路概念节点（北跃段）</b> · 回应官方"上跨环路标志性节点"的原文表述：耐候钢桁架人行天桥以折返坡道呼应京张"人"字展线的换向逻辑，北桥头落在未来之问广场，远景为清河蓝绿空间与西山轮廓。
+<span class="dis">AI 概念意象图，非实景照片。桥位、跨径、结构形式与坡道均为概念示意，不含任何桥梁工程结论，须经专业与主管部门论证。</span></figcaption>
+</figure>
+
+<figure class="fig">
+<img src="assets/renders/render-answer-gate.jpg" alt="效果图：应答门概念意象，一页翻开的巨型卷面形态门洞，两面分别为百年之问浮雕与今日之答镂刻" loading="lazy">
+<figcaption><span class="cn">效 04</span><b>应答门 · 一页翻开的考卷（全线 46 处示意）</b> · 门体做成一页翻开的卷面：外侧一面浮雕百年之问（铁路、勘测与人字展线），内侧一面镂刻今日之答（模型、算法与新的城市生活），由沿线近 70 个社区分别认领并共创门内内容。
+<span class="dis">AI 概念意象图，非实景照片。"46 座"为公园二期规划口径，以实际建成数量为准；门体形式、尺度与选点均为概念建议（A-GATE-001）。</span></figcaption>
+</figure>
+</div>
+
+<p class="small" style="margin-top:6px">生成与使用边界：四图由文本提示生成，未使用任何真实人物肖像、未复制可识别的在世设计师作品形态；画面不得用于宣称任何已获批的建设内容。版权与引用规则见 report/copyright_statement.md。</p>
+
+</div>
+</section>
+
+<!-- ============ 06 核心指标 ============ -->
+<section class="sheet" id="s06">
+<div class="sh"><span class="no">CH-06</span><h2>核心指标</h2><span class="en">Core Metrics</span><span class="tag">与 metrics.json 逐值一致 · 1ppm 容差</span></div>
 <div class="sb">
 <div class="grid3">
 <div class="mtile">
@@ -409,7 +553,7 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </div>
 <div class="mtile">
 <div class="lbl">public_space_ratio · 公共空间占比</div>
-<div class="val gold"><span data-metric="public_space_ratio" data-value="0.0193">0.039336</span></div>
+<div class="val gold"><span data-metric="public_space_ratio" data-value="0.0193">0.0193</span></div>
 <div class="sub">≈ 1.93% · Σ public_space ÷ site_area · 置信度 medium</div>
 </div>
 </div>
@@ -430,30 +574,77 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 <div class="sub">官方控规容积率控制与法定场地边界未进入公开场地包；按纪律，unknown 指标只作文字说明、不做任何数字宣称，待官方条件公布后复算。</div>
 </div>
 </div>
-<p class="small" style="margin-top:12px">全部数值与提交包 metrics.json 完全一致，由 geometry/ 图层在 EPSG:4548 下复算生成；面积为临时边界口径，非勘界结论。</p>
+<p class="small" style="margin-top:12px">全部数值与提交包 metrics.json 完全一致，由 geometry/ 图层在 EPSG:4548 下复算生成；面积为临时边界口径，非勘界结论。公共空间口径已按真实场地容量核查结论收敛（详见第 03 章 3.3 节），metrics.json 与本页同步更新。</p>
 </div>
 </section>
 
-<!-- ============ 10 任务覆盖 ============ -->
-<section class="sheet" id="s10">
-<div class="sh"><span class="no">SHT-10</span><h2>任务覆盖</h2><span class="en">Agent Task Coverage</span><span class="tag">compliance_matrix.json · 23 项全 addressed</span></div>
+<!-- ============ 07 任务覆盖 ============ -->
+<section class="sheet" id="s07">
+<div class="sh"><span class="no">CH-07</span><h2>任务覆盖</h2><span class="en">Agent Task Coverage</span><span class="tag">compliance_matrix.json · 23 项全 addressed</span></div>
 <div class="sb">
 <div class="tblwrap"><table class="dt">
-<tr><th>任务</th><th>甲方任务书要求</th><th>本方案回应机制</th><th>对应图纸</th><th>状态</th></tr>
-<tr><td class="num">agent.1</td><td>一带总体概念与功能统筹方案设计</td><td>百年应答总概念：9 公里应答长卷主轴（南问—中答—北跃）+ 题—答—阅三带 + 一轴两翼十地块概念分区</td><td><span class="chip">SHT-01/02/04</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.2</td><td>AI 全栈自主创新体系与世界级 AI 创新生态设计</td><td>道钉带（一款备案大模型 = 一颗铜道钉，KPI 绑定活体机制）+ 八要素生态图谱 + 要素服务驿站 + 国际对标六案例机制转化</td><td><span class="chip">SHT-06/07/09</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.3</td><td>AI+ 场景赋能新范式与智能化 AI 活力城市设计</td><td>12 张场景卡挂接 6 类标准场景 ID，三档数据边界 + 通用红线 + 测试先于推广递进链</td><td><span class="chip">SHT-08</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.4</td><td>AI 公共空间、智能原生新业态与朝圣地标设计</td><td>四大地标概念：应答钟与钟声广场 / 清华园车站应答簿与零公里桩（待协商） / 跨五环人字天桥概念节点 / 道钉带零公里桩原点装置</td><td><span class="chip">SHT-03/06/07</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.5</td><td>百年京张文化、中关村文化与 AI 新文化融合叙事设计</td><td>题—答—阅叙事结构；3·25 政企切割（公益纪念开放日与商业路演错日、错址、错叙事）；红色叙事使用边界专节</td><td><span class="chip">SHT-02/03/08</span></td><td><span class="chip ok">addressed</span></td></tr>
-<tr><td class="num">agent.6</td><td>一带全球 AI 创新活动体系与长期运营设计</td><td>学年制活动年历（春 3·25 纪念 / 夏毕业礼 / 秋出发仪式 / 冬进化日）+ 三张可审计清单多语种年报 + 青年策展权 + 城市进化档案馆回路</td><td><span class="chip">SHT-07/08</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><th>任务</th><th>甲方任务书要求</th><th>本方案回应机制</th><th>对应章节</th><th>状态</th></tr>
+<tr><td class="num">agent.1</td><td>一带总体概念与功能统筹方案设计</td><td>百年应答总概念：9 公里应答长卷主轴（南问—中答—北跃）+ 题—答—阅三带 + 一轴两翼十地块概念分区</td><td><span class="chip">CH-01 / CH-02 / 3.1</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.2</td><td>AI 全栈自主创新体系与世界级 AI 创新生态设计</td><td>道钉带（一款备案大模型 = 一颗铜道钉，KPI 绑定活体机制）+ 八要素生态图谱 + 要素服务驿站 + 国际对标六案例机制转化</td><td><span class="chip">2.3 / 3.4</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.3</td><td>AI+ 场景赋能新范式与智能化 AI 活力城市设计</td><td>12 张场景卡挂接 6 类标准场景 ID，三档数据边界 + 通用红线 + 测试先于推广递进链</td><td><span class="chip">3.5</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.4</td><td>AI 公共空间、智能原生新业态与朝圣地标设计</td><td>四大地标概念：应答钟与钟声广场 / 清华园车站应答簿与零公里桩（待协商） / 跨五环人字天桥概念节点 / 道钉带零公里桩原点装置</td><td><span class="chip">CH-05 / 3.3 / 3.4</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.5</td><td>百年京张文化、中关村文化与 AI 新文化融合叙事设计</td><td>题—答—阅叙事结构；3·25 政企切割（公益纪念开放日与商业路演错日、错址、错叙事）；红色叙事使用边界专节</td><td><span class="chip">CH-01 / CH-02</span></td><td><span class="chip ok">addressed</span></td></tr>
+<tr><td class="num">agent.6</td><td>一带全球 AI 创新活动体系与长期运营设计</td><td>学年制活动年历（春 3·25 纪念 / 夏毕业礼 / 秋出发仪式 / 冬进化日）+ 三张可审计清单多语种年报 + 青年策展权 + 城市进化档案馆回路</td><td><span class="chip">3.4 / 3.5</span></td><td><span class="chip ok">addressed</span></td></tr>
 </table></div>
 <p class="small" style="margin-top:10px">公告 1.3（3 项）、1.4（3 项）、1.5（11 项）与 agent.1–6（6 项）共 23 项要求在 compliance_matrix.json 中全部标记 addressed，并逐项映射到报告章节、GeoJSON 图层、指标、图纸、来源、标准、假设与自检条目。</p>
 </div>
 </section>
 
-<!-- ============ 11 自检状态 ============ -->
-<section class="sheet" id="s11">
-<div class="sh"><span class="no">SHT-11</span><h2>自检状态</h2><span class="en">Self-Check Status</span><span class="tag">self_check.json · 四道门禁</span></div>
+<!-- ============ 08 来源与假设 ============ -->
+<section class="sheet" id="s08">
+<div class="sh"><span class="no">CH-08</span><h2>来源与假设</h2><span class="en">Sources &amp; Assumptions</span><span class="tag">sources.json 19 条 · assumptions.json 9 条</span></div>
+<div class="sb">
+
+<div class="subh first"><span class="idx">8.1</span><h3>来源</h3><span class="en">Sources</span><span class="tag">全部带出处 · 官方口径优先</span></div>
+<div class="tblwrap"><table class="dt">
+<tr><th>ID</th><th>来源</th><th>发布方 / 位置</th><th>性质</th></tr>
+<tr><td>OFFICIAL-ANNOUNCEMENT</td><td>项目官方公告（任务、范围、重点区域）<div class="srcurl">ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html</div></td><td>北京市规划和自然资源委员会</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>HD-CTRL-PLAN-2026</td><td>京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00-1601 等街区控制性详细规划（2024—2035 年）：2026-08-11 获批公布，法定空间结构"一带一轴两心多点"<div class="srcurl">ghzrzyw.beijing.gov.cn/chengxiangguihua/ghlgg/hd_ghlgg/…</div></td><td>北京市规划和自然资源委员会</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>HD-PLAN-2026</td><td>海淀区 2026 年国民经济和社会发展计划报告（备案大模型 122 款正式口径、PCT 约 5000 件/年）<div class="srcurl">zyk.bjhd.gov.cn/zwdt/zcwj/202602/t20260206_4805099.shtml</div></td><td>海淀区人民政府</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>BJ-STAT-2025</td><td>北京市 2025 年统计公报（全市累计备案 209 款、约占全国近 1/3）<div class="srcurl">tjj.beijing.gov.cn/tjsj_31433/tjgb_31445/ndgb_31446/202603/t20260326_4566469.html</div></td><td>北京市统计局</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>HD-STAT-2025</td><td>海淀区 2025 年统计公报（人口、经济总量与产业结构校核）<div class="srcurl">zyk.bjhd.gov.cn/jbdt/…</div></td><td>海淀区统计局</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>BJD-AI-2026</td><td>《为什么领跑的是海淀》（AI 核心产业规模近 3600 亿元；128 款时点差异脚注来源）<div class="srcurl">news.bjd.com.cn/2026/03/13/11628632.shtml</div></td><td>京报网（北京日报）</td><td><span class="chip">official_media_public</span></td></tr>
+<tr><td>PARK1-YLLHJ-2023</td><td>京张铁路遗址公园（一期）全面建成开放（2.4 公里、16.8 公顷、2023 年 6 月）<div class="srcurl">yllhj.beijing.gov.cn/zwgk/zwxx/202306/t20230626_3145467.shtml</div></td><td>北京市园林绿化局</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>PARK2-PLAN-2024</td><td>公园二期规划口径（全长 9 公里、不设围墙、46 个出入口便利穿行）<div class="srcurl">beijing.gov.cn/ywdt/gzdt/202409/t20240907_3792248.html</div></td><td>首都之窗</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>PARK2-START-2024</td><td>公园二期 2024 年 12 月正式开工（时点依据）<div class="srcurl">news.bjd.com.cn/2024/12/11/10999402.shtml</div></td><td>京报网（北京海淀发布）</td><td><span class="chip">official_media_public</span></td></tr>
+<tr><td>THU-STATION-2023</td><td>清华园车站旧址开放纪实（1910 年建成；1949-03-25 进京第一站；2023-03-25 修缮开放）<div class="srcurl">tsinghua.org.cn/info/1952/38636.htm</div></td><td>清华校友总会（转光明日报）</td><td><span class="chip">institutional_public</span></td></tr>
+<tr><td>AGENT-POLICY-2026</td><td>北京市加快智能体引领发展若干措施（"扫钉即应答"挂接的市级政策方向）<div class="srcurl">beijing.gov.cn/zhengce/zhengcefagui/202607/t20260723_4781085.html</div></td><td>首都之窗</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>DZS-MUSEUM-2021</td><td>大钟寺古钟博物馆（1733 年始建、全国重点文保单位——应答钟"新铸之钟"事实边界依据）<div class="srcurl">beijing.gov.cn/renwen/rwzyd/gdwh/dzsgzbwg/202107/t20210728_2450505.html</div></td><td>首都之窗</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>OSM-ODBL-2026</td><td>OpenStreetMap 开放街道地图数据（第 04 章五张规划图的真实街道、水系、轨道与用地底图来源）<div class="srcurl">openstreetmap.org/copyright</div></td><td>OpenStreetMap 贡献者 · ODbL</td><td><span class="chip cy">official_open_data</span></td></tr>
+<tr><td>AGENT-TASKBOOK</td><td>agent 任务书（六项 agent 任务、场景/品牌/运营要求与边界条款）</td><td>brief/site-package/agent_taskbook.json</td><td><span class="chip">user_provided_cleared</span></td></tr>
+<tr><td>SITE-PACKAGE</td><td>公开场地包（brief、枚举、允许设计空间、范围与 schema）</td><td>brief/site-package/</td><td><span class="chip cy">official_public</span></td></tr>
+<tr><td>BOUNDARY-SOURCE</td><td>临时总体设计范围几何来源（provisional）</td><td>brief/site-package/geometry/provisional_boundaries.geojson</td><td><span class="chip wa">agent_inferred_from_public_data</span></td></tr>
+<tr><td>KEY-AREA-SOURCE</td><td>三处重点区临时范围几何来源（provisional）</td><td>brief/site-package/geometry/provisional_boundaries.geojson</td><td><span class="chip wa">agent_inferred_from_public_data</span></td></tr>
+<tr><td>SOURCE-REGISTRY</td><td>公开 / 已清权 / 临时来源可用性登记</td><td>data/source_registry.json</td><td><span class="chip">repository_public_registry</span></td></tr>
+<tr><td>PROCESSED-FACT-PACK</td><td>agent 事实导航层（非新增权威来源）</td><td>data/processed/agent_fact_pack.md</td><td><span class="chip">repository_processed_reference</span></td></tr>
+</table></div>
+<p class="small" style="margin-top:10px">口径纪律（A-DATA-001）：正文备案大模型数统一采用区政府 2026 年 2 月口径 122 款；北京日报 2026 年 2 月中旬口径 128 款作时点差异脚注；全市累计 209 款为市统计公报口径。所谓"首都之窗 4 月口径 130 款"经核查未定位到出处，未找到可靠来源前不引用。一切数字展示表述为"按统计发布周期更新"，绝不写实时。</p>
+
+<div class="subh"><span class="idx">8.2</span><h3>假设</h3><span class="en">Assumptions</span><span class="tag">assumptions.json · 9 条 · 含常设触发器</span></div>
+<div class="grid2">
+<article class="card"><h4>A-CONTROLS-001 <span class="chip wa">pending_professional_confirmation</span></h4><p>详细控规、道路红线、权属、市政与工程约束须以官方附件确认后方可法定使用；本包仅以已提供边界与提交图层接受评审。</p></article>
+<article class="card"><h4>A-BOUNDARY-001 <span class="chip wa">pending_official_redlines</span></h4><p>全部空间图层基于临时边界与公开资料推断绘制；三重点区面积仅做 ±3% 一致性校验，不构成勘界或权属结论。边界任何调整都会传导至主轴线位、节点选点与面积指标。</p></article>
+<article class="card"><h4>A-RECALC-001 <span class="chip er">standing_trigger</span></h4><p>复算触发器：官方发布道路红线、用地红线、文保范围、控规图则、轨道与市政控制线任一项后，逐项重算相关图层、指标与图纸；完成复算复核前不得对外引用旧版数值或旧版图面。</p></article>
+<article class="card"><h4>A-CTRL-001 <span class="chip cy">declared</span></h4><p>HD00-1601 等街区控规已于 2026 年 8 月 11 日获批公布，法定空间结构为"一带一轴两心多点"。本方案为其上的概念深化建议，不与法定规划并列、不替代法定规划、不引用其未公开的控制指标。</p></article>
+<article class="card"><h4>A-ROBOT-001 <span class="chip">concept_only</span></h4><p>机器人坡道 = 无障碍坡道两用通道与一期段测试选址均为概念示意，不含坡度、净宽、荷载、消防、运营时段等任何工程或运营结论；须按无障碍规范与北京市低速无人配送车辆管理规定深化。</p></article>
+<article class="card"><h4>A-GATE-001 <span class="chip">pending_as_built</span></h4><p>"46 个出入口"为二期规划口径，以实际建成数量为准；应答门×社区认领点位数随实际建成数同步调整，数量增减不影响机制成立。</p></article>
+<article class="card"><h4>A-HERITAGE-001 <span class="chip wa">pending_heritage_consultation</span></h4><p>清华园车站文保范围 GIS 缺失：零公里桩、应答簿等装置一律标注为待文物部门协商的概念选点；应答钟为古钟博物馆之侧新铸之钟，与馆藏文物仅为文化呼应，绝不涉及敲击或使用文物。</p></article>
+<article class="card"><h4>A-DATA-001 <span class="chip cy">time_sensitive</span></h4><p>备案大模型数量为时点口径而非实时值（122 款正文口径 / 128 款脚注 / 209 款全市公报）；新批次或新口径发布后须整体复核道钉数量、脚注与显示屏表述。</p></article>
+<article class="card"><h4>A-WRITING-001 <span class="chip">standing_discipline</span></h4><p>正文写作与引用纪律：proposal.md 采用 v2 可读格式契约，叙述层只保留判断旁的关键引用锚点，完整机器索引由结构化文件承担；本汇报页沿用同一纪律。</p></article>
+<article class="card"><h4>汇报页边界声明 <span class="chip">page_scope</span></h4><p>本页为电子汇报成果：只渲染提交包既有数据，不新增任何事实宣称；unknown 指标只显示文字不显示数字；第 05 章效果图为 AI 概念意象图、非实景；与 proposal.md 冲突时以结构化数据（geometry / metrics / matrices）为准。</p></article>
+</div>
+
+</div>
+</section>
+
+<!-- ============ 09 自检状态 ============ -->
+<section class="sheet" id="s09">
+<div class="sh"><span class="no">CH-09</span><h2>自检状态</h2><span class="en">Self-Check Status</span><span class="tag">self_check.json · 四道门禁</span></div>
 <div class="sb">
 <div class="grid2">
 <div>
@@ -480,57 +671,13 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 44px;colo
 </div>
 </section>
 
-<!-- ============ 12 来源 ============ -->
-<section class="sheet" id="s12">
-<div class="sh"><span class="no">SHT-12</span><h2>来源</h2><span class="en">Sources</span><span class="tag">sources.json · 17 条 · 全部带出处</span></div>
-<div class="sb">
-<div class="tblwrap"><table class="dt">
-<tr><th>ID</th><th>来源</th><th>发布方 / 位置</th><th>性质</th></tr>
-<tr><td>OFFICIAL-ANNOUNCEMENT</td><td>项目官方公告（任务、范围、重点区域）<div class="srcurl">ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html</div></td><td>北京市规划和自然资源委员会</td><td><span class="chip cy">official_public</span></td></tr>
-<tr><td>HD-PLAN-2026</td><td>海淀区 2026 年国民经济和社会发展计划报告（备案大模型 122 款正式口径、PCT 约 5000 件/年）<div class="srcurl">zyk.bjhd.gov.cn/zwdt/zcwj/202602/t20260206_4805099.shtml</div></td><td>海淀区人民政府</td><td><span class="chip cy">official_government</span></td></tr>
-<tr><td>BJ-STAT-2025</td><td>北京市 2025 年统计公报（全市累计备案 209 款、约占全国近 1/3）<div class="srcurl">tjj.beijing.gov.cn/tjsj_31433/tjgb_31445/ndgb_31446/202603/t20260326_4566469.html</div></td><td>北京市统计局</td><td><span class="chip cy">official_statistics</span></td></tr>
-<tr><td>HD-STAT-2025</td><td>海淀区 2025 年统计公报（人口、经济总量与产业结构校核）<div class="srcurl">zyk.bjhd.gov.cn/.../202604/t20260410_4811526_hd.shtml</div></td><td>海淀区统计局</td><td><span class="chip cy">official_statistics</span></td></tr>
-<tr><td>BJD-AI-2026</td><td>《为什么领跑的是海淀》（AI 核心产业规模近 3600 亿元；128 款时点差异脚注来源）<div class="srcurl">news.bjd.com.cn/2026/03/13/11628632.shtml</div></td><td>京报网（北京日报）</td><td><span class="chip">official_media</span></td></tr>
-<tr><td>PARK1-YLLHJ-2023</td><td>京张铁路遗址公园（一期）全面建成开放（2.4 公里、16.8 公顷、2023 年 6 月）<div class="srcurl">yllhj.beijing.gov.cn/zwgk/zwxx/202306/t20230626_3145467.shtml</div></td><td>北京市园林绿化局</td><td><span class="chip cy">official_government</span></td></tr>
-<tr><td>PARK2-PLAN-2024</td><td>公园二期规划口径（全长 9 公里、不设围墙、46 个出入口便利穿行）<div class="srcurl">beijing.gov.cn/ywdt/gzdt/202409/t20240907_3792248.html</div></td><td>首都之窗</td><td><span class="chip cy">official_government</span></td></tr>
-<tr><td>PARK2-START-2024</td><td>公园二期 2024 年 12 月正式开工（时点依据）<div class="srcurl">news.bjd.com.cn/2024/12/11/10999402.shtml</div></td><td>京报网（北京海淀发布）</td><td><span class="chip">official_media</span></td></tr>
-<tr><td>THU-STATION-2023</td><td>清华园车站旧址开放纪实（1910 年建成；1949-03-25 进京第一站；2023-03-25 修缮开放）<div class="srcurl">tsinghua.org.cn/info/1952/38636.htm</div></td><td>清华校友总会（转光明日报）</td><td><span class="chip">institutional</span></td></tr>
-<tr><td>AGENT-POLICY-2026</td><td>北京市加快智能体引领发展若干措施（"扫钉即应答"挂接的市级政策方向）<div class="srcurl">beijing.gov.cn/zhengce/zhengcefagui/202607/t20260723_4781085.html</div></td><td>首都之窗</td><td><span class="chip cy">official_policy</span></td></tr>
-<tr><td>DZS-MUSEUM-2021</td><td>大钟寺古钟博物馆（1733 年始建、全国重点文保单位——应答钟"新铸之钟"事实边界依据）<div class="srcurl">beijing.gov.cn/renwen/rwzyd/gdwh/dzsgzbwg/202107/t20210728_2450505.html</div></td><td>首都之窗</td><td><span class="chip cy">official_government</span></td></tr>
-<tr><td>AGENT-TASKBOOK</td><td>agent 任务书（六项 agent 任务、场景/品牌/运营要求与边界条款）</td><td>brief/site-package/agent_taskbook.json</td><td><span class="chip">user_provided_cleared</span></td></tr>
-<tr><td>SITE-PACKAGE</td><td>公开场地包（brief、枚举、允许设计空间、范围与 schema）</td><td>brief/site-package/</td><td><span class="chip cy">official_public</span></td></tr>
-<tr><td>BOUNDARY-SOURCE / KEY-AREA-SOURCE</td><td>临时边界与三重点区几何来源（provisional）</td><td>brief/site-package/geometry/provisional_boundaries.geojson</td><td><span class="chip wa">agent_inferred</span></td></tr>
-<tr><td>SOURCE-REGISTRY</td><td>公开/已清权/临时来源可用性登记</td><td>data/source_registry.json</td><td><span class="chip">repository_registry</span></td></tr>
-<tr><td>PROCESSED-FACT-PACK</td><td>agent 事实导航层（非新增权威来源）</td><td>data/processed/agent_fact_pack.md</td><td><span class="chip">processed_reference</span></td></tr>
-</table></div>
-<p class="small" style="margin-top:10px">口径纪律（A-DATA-001）：正文备案大模型数统一采用区政府 2026 年 2 月口径 122 款；北京日报 2026 年 2 月中旬口径 128 款作时点差异脚注；全市累计 209 款为市统计公报口径。所谓"首都之窗 4 月口径 130 款"经核查未定位到出处，未找到可靠来源前不引用。一切数字展示表述为"按统计发布周期更新"，绝不写实时。</p>
-</div>
-</section>
-
-<!-- ============ 13 假设 ============ -->
-<section class="sheet" id="s13">
-<div class="sh"><span class="no">SHT-13</span><h2>假设</h2><span class="en">Assumptions</span><span class="tag">assumptions.json · 7 条</span></div>
-<div class="sb">
-<div class="grid2">
-<article class="card"><h4>A-CONTROLS-001 <span class="chip wa">pending_professional_confirmation</span></h4><p>详细控规、道路红线、权属、市政与工程约束须以官方附件确认后方可法定使用；本包仅以已提供边界与提交图层接受评审。</p></article>
-<article class="card"><h4>A-BOUNDARY-001 <span class="chip wa">pending_official_redlines</span></h4><p>全部空间图层基于临时边界与公开资料推断绘制；三重点区面积仅做 ±3% 一致性校验，不构成勘界或权属结论。边界任何调整都会传导至主轴线位、节点选点与面积指标。</p></article>
-<article class="card"><h4>A-RECALC-001 <span class="chip er">standing_trigger</span></h4><p>复算触发器：官方发布道路红线、用地红线、文保范围、控规图则、轨道与市政控制线任一项后，逐项重算相关图层、指标与图纸；完成复算复核前不得对外引用旧版数值或旧版图面。</p></article>
-<article class="card"><h4>A-ROBOT-001 <span class="chip">concept_only</span></h4><p>机器人坡道 = 无障碍坡道两用通道与一期段测试选址均为概念示意，不含坡度、净宽、荷载、消防、运营时段等任何工程或运营结论；须按无障碍规范与北京市低速无人配送车辆管理规定深化。</p></article>
-<article class="card"><h4>A-GATE-001 <span class="chip">pending_as_built</span></h4><p>"46 个出入口"为二期规划口径，以实际建成数量为准；应答门×社区认领点位数随实际建成数同步调整，数量增减不影响机制成立。</p></article>
-<article class="card"><h4>A-HERITAGE-001 <span class="chip wa">pending_heritage_consultation</span></h4><p>清华园车站文保范围 GIS 缺失：零公里桩、应答簿等装置一律标注为待文物部门协商的概念选点；应答钟为古钟博物馆之侧新铸之钟，与馆藏文物仅为文化呼应，绝不涉及敲击或使用文物。</p></article>
-<article class="card"><h4>A-DATA-001 <span class="chip cy">time_sensitive</span></h4><p>备案大模型数量为时点口径而非实时值（122 款正文口径 / 128 款脚注 / 209 款全市公报）；新批次或新口径发布后须整体复核道钉数量、脚注与显示屏表述。</p></article>
-<article class="card"><h4>展示页边界声明</h4><p>本页为电子展示成果：只渲染提交包既有数据，不新增任何事实宣称；unknown 指标只显示文字不显示数字；与 proposal.md 冲突时以结构化数据（geometry / metrics / matrices）为准。</p></article>
-</div>
-</div>
-</section>
-
 </main>
 
 <footer><div class="wrap">
-<p>百年应答 The Century Answer · jingzhang-century-answer · 离线单文件电子展示成果：无外部请求、无 CDN、无远程字体、无 iframe、无表单提交界面。数据源：geometry/*.geojson（9 层内嵌）、metrics.json、compliance_matrix.json、self_check.json、sources.json、assumptions.json。全部空间与开发内容为概念建议 / 参考方案 / 待专业团队深化；版权与引用规则见 report/copyright_statement.md。英文版：index.en.html。</p>
+<p>百年应答 The Century Answer · jingzhang-century-answer · 离线单文件电子汇报成果：无外部请求、无 CDN、无远程字体、无 iframe、无表单提交界面；图片全部为提交包内相对路径引用。数据源：geometry/*.geojson（9 层内嵌）、metrics.json、compliance_matrix.json、self_check.json、sources.json、assumptions.json。规划图底图 © OpenStreetMap 贡献者（ODbL）；效果图为 AI 概念意象图、非实景照片。全部空间与开发内容为概念建议 / 参考方案 / 待专业团队深化；版权与引用规则见 report/copyright_statement.md。英文版：index.en.html。</p>
 </div></footer>
 
-<script id="geo-data" type="application/json">{"site_boundary":{"type":"FeatureCollection","name":"site_boundary_scaffold","features":[{"type":"Feature","id":"SITE-001","properties":{"id":"SITE-001","layer":"SITE_BOUNDARY","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","scope_id":"overall_design_area","name_zh":"总体设计范围粗略替代边界","official_boundary":false,"boundary_precision":"provisional_rough","source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告文字四至、约11.4平方公里面积约束和道路名称形成的临时粗略范围","derivation_method":"以公告所述京张遗址公园周边1—2公里城市地区和产业区为走廊，以北五环路、学院路/西土城路、西直门外大街、大钟寺东路/荷清路等文字四至定位，并在EPSG:4548下校核至公告约11.4平方公里；道路名称仅用于粗略定位，不代表道路红线。","area_sqm_declared":11412825.386,"area_sqm_calculated":11412825.386,"usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.3407,39.939],[116.3553,39.939],[116.3553,39.965],[116.3533,39.99],[116.3553,40.0265],[116.3427,40.0265],[116.3417,40.006],[116.3397,39.975],[116.3407,39.939]]]}}]},"land_use":{"type":"FeatureCollection","name":"land_use_topology_partition","features":[{"type":"Feature","id":"LU-001","properties":{"id":"LU-001","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"京张遗址公园绿轴（九公里应答长卷主轴段，概念）","area_sqm_declared":2589251.89},"geometry":{"type":"Polygon","coordinates":[[[116.344507419,39.939000177],[116.343670695,40.026500049],[116.346792584,40.02650015],[116.347625328,39.939000229],[116.344507419,39.939000177]]]}},{"type":"Feature","id":"LU-002","properties":{"id":"LU-002","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0803","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"大钟寺文化片区（鸣钟之门西翼，概念）","area_sqm_declared":400735.683},"geometry":{"type":"Polygon","coordinates":[[[116.3407,39.939],[116.340400143,39.949799822],[116.344404128,39.949822534],[116.344507419,39.939000177],[116.3407,39.939]]]}},{"type":"Feature","id":"LU-003","properties":{"id":"LU-003","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0901","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"大钟寺商业活力片区（东翼更新界面，概念）","area_sqm_declared":796407.677},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.939],[116.347625328,39.939000229],[116.347522362,39.949840126],[116.355300016,39.949883639],[116.3553,39.939]]]}},{"type":"Feature","id":"LU-004","properties":{"id":"LU-004","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0802","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"学院南路科研创新带（南问段西翼，概念）","area_sqm_declared":1345239.039},"geometry":{"type":"Polygon","coordinates":[[[116.3397,39.975],[116.340245576,39.983458934],[116.344082529,39.983480711],[116.344404128,39.949822534],[116.340400143,39.949799822],[116.3397,39.975]]]}},{"type":"Feature","id":"LU-005","properties":{"id":"LU-005","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0701","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"东侧既有居住社区片区南段（应答门渗透界面，概念）","area_sqm_declared":2404339.099},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.965],[116.355300016,39.949883639],[116.347522362,39.949840126],[116.347202293,39.983498324],[116.353817321,39.983535391],[116.3553,39.965]]]}},{"type":"Feature","id":"LU-006","properties":{"id":"LU-006","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0804","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"高校科教界面片区（清华园车站西翼，概念）","area_sqm_declared":328759.955},"geometry":{"type":"Polygon","coordinates":[[[116.34089094,39.993462604],[116.343986882,39.993480168],[116.344082529,39.983480711],[116.340245576,39.983458934],[116.34089094,39.993462604]]]}},{"type":"Feature","id":"LU-007","properties":{"id":"LU-007","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0902","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"学院路知识经济商务带（中答段东翼，概念）","area_sqm_declared":601926.438},"geometry":{"type":"Polygon","coordinates":[[[116.3533,39.99],[116.353817321,39.983535391],[116.347202293,39.983498324],[116.3471071,39.993497787],[116.353493539,39.993533588],[116.3533,39.99]]]}},{"type":"Feature","id":"LU-008","properties":{"id":"LU-008","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0802","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"西翼科研创新带北段（面向众智园，概念）","area_sqm_declared":617522.586},"geometry":{"type":"Polygon","coordinates":[[[116.3417,40.006],[116.3427,40.0265],[116.343670695,40.026500049],[116.343986882,39.993480168],[116.34089094,39.993462604],[116.3417,40.006]]]}},{"type":"Feature","id":"LU-009","properties":{"id":"LU-009","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0701","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"东侧既有居住社区片区北段（概念）","area_sqm_declared":907585.397},"geometry":{"type":"Polygon","coordinates":[[[116.353493539,39.993533588],[116.3471071,39.993497787],[116.346973749,40.007497036],[116.354260744,40.007537868],[116.353493539,39.993533588]]]}},{"type":"Feature","id":"LU-010","properties":{"id":"LU-010","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"16","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"众智园弹性留白用地（北跃段·面向未来之问，概念）","area_sqm_declared":1421057.362},"geometry":{"type":"Polygon","coordinates":[[[116.3553,40.0265],[116.354260744,40.007537868],[116.346973749,40.007497036],[116.346792584,40.02650015],[116.3553,40.0265]]]}}]},"green_space":{"type":"FeatureCollection","name":"green_space_design","features":[{"type":"Feature","id":"GREEN-001","properties":{"id":"GREEN-001","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴南段（南问段·鸣钟之门绿地界面，概念）","area_sqm_declared":1316500.098},"geometry":{"type":"Polygon","coordinates":[[[116.344082529,39.983480711],[116.347202293,39.983498324],[116.347625328,39.939000229],[116.344507419,39.939000177],[116.344082529,39.983480711]]]}},{"type":"Feature","id":"GREEN-002","properties":{"id":"GREEN-002","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴中段（应答原点段·道钉带核心界面，概念）","area_sqm_declared":710158.967},"geometry":{"type":"Polygon","coordinates":[[[116.343852894,40.007479408],[116.346973749,40.007497036],[116.347202293,39.983498324],[116.344082529,39.983480711],[116.343852894,40.007479408]]]}},{"type":"Feature","id":"GREEN-003","properties":{"id":"GREEN-003","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴北段（北跃段·人字之跃与清河衔接，概念）","area_sqm_declared":562593.053},"geometry":{"type":"Polygon","coordinates":[[[116.343670695,40.026500049],[116.346792584,40.02650015],[116.346973749,40.007497036],[116.343852894,40.007479408],[116.343670695,40.026500049]]]}},{"type":"Feature","id":"GREEN-004","properties":{"id":"GREEN-004","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1402","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"清河蓝绿空间概念协调带（跨地块生态界面示意）","area_sqm_declared":268014.191},"geometry":{"type":"MultiPolygon","coordinates":[[[[116.343670695,40.026500049],[116.34369965,40.023478538],[116.342552262,40.023472034],[116.3427,40.0265],[116.343670695,40.026500049]]],[[[116.3553,40.0265],[116.355137889,40.023542756],[116.346821234,40.023496176],[116.346792584,40.02650015],[116.3553,40.0265]]]]}}]},"public_space":{"type":"FeatureCollection","name":"public_space_design","features":[{"type":"Feature","id":"PUBLIC-001","properties":{"id":"PUBLIC-001","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 应答钟为新铸概念构想，与大钟寺古钟博物馆为文化呼应关系，不涉及文物本体及其保护范围。","name_zh":"钟声广场（大钟寺·应答钟概念广场与四象限步行缝合界面）","area_sqm_declared":27000.004},"geometry":{"type":"Polygon","coordinates":[[[116.347580472,39.943723174],[116.347567641,39.945074029],[116.349673698,39.945085862],[116.349686488,39.943735006],[116.347580472,39.943723174]]]}},{"type":"Feature","id":"PUBLIC-002","properties":{"id":"PUBLIC-002","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 清华园车站文保范围GIS缺失，本选点仅为待文物部门协商的概念选点，不得视为已确定落位。","name_zh":"清华园车站站前纪念广场与零公里桩（概念选点，待文物部门协商）","area_sqm_declared":15399.993},"geometry":{"type":"Polygon","coordinates":[[[116.342400382,39.987975845],[116.342390883,39.988966463],[116.344029974,39.988975751],[116.344039449,39.987985133],[116.342400382,39.987975845]]]}},{"type":"Feature","id":"PUBLIC-003","properties":{"id":"PUBLIC-003","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 跨五环人字天桥为概念节点，不含桥梁工程结论。","name_zh":"人字天桥北桥头·未来之问广场（概念节点）","area_sqm_declared":18200.005},"geometry":{"type":"Polygon","coordinates":[[[116.346888659,40.016424733],[116.346877498,40.017595459],[116.348517275,40.01760469],[116.348528408,40.016433963],[116.346888659,40.016424733]]]}},{"type":"Feature","id":"PUBLIC-004","properties":{"id":"PUBLIC-004","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 应答门依托遗址公园二期规划出入口表述，以实际建成为准。","name_zh":"应答门社区微广场示范点（东翼·一页考卷界面，概念）","area_sqm_declared":4200.0},"geometry":{"type":"Polygon","coordinates":[[[116.349764274,39.966412563],[116.349759154,39.966952903],[116.350578438,39.966957496],[116.350583551,39.966417156],[116.349764274,39.966412563]]]}},{"type":"Feature","id":"PUBLIC-005","properties":{"id":"PUBLIC-005","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。","name_zh":"公园东翼慢行公共活动界面带（要素服务驿站与路演界面概念布点带）","area_sqm_declared":384138.271},"geometry":{"type":"Polygon","coordinates":[[[116.347522362,39.949840126],[116.346973749,40.007497036],[116.347676407,40.007500993],[116.348224429,39.949844075],[116.347522362,39.949840126]]]}}]},"buildings":{"type":"FeatureCollection","name":"building_footprints_design","features":[{"type":"Feature","id":"BLDG-001","properties":{"id":"BLDG-001","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"civic_pavilion_concept","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"应答钟阁概念基底（钟声广场内）","area_sqm_declared":1599.999},"geometry":{"type":"Polygon","coordinates":[[[116.348391362,39.944583322],[116.348387944,39.94494355],[116.348855956,39.944946179],[116.348859371,39.944585951],[116.348391362,39.944583322]]]}},{"type":"Feature","id":"BLDG-002","properties":{"id":"BLDG-002","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"archive_pavilion_concept","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"城市进化档案馆概念装置基底（道钉带旁）","area_sqm_declared":900.0},"geometry":{"type":"Polygon","coordinates":[[[116.347273065,39.988363633],[116.347270494,39.988633802],[116.347621726,39.988635779],[116.347624296,39.98836561],[116.347273065,39.988363633]]]}},{"type":"Feature","id":"BLDG-003","properties":{"id":"BLDG-003","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"service_station_concept","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"要素服务驿站示范点基底（东翼低效空间概念布点）","area_sqm_declared":625.0},"geometry":{"type":"Polygon","coordinates":[[[116.347568285,39.966557832],[116.347566144,39.966782973],[116.347858745,39.96678462],[116.347860884,39.966559478],[116.347568285,39.966557832]]]}}]},"roads":{"type":"FeatureCollection","name":"roads_concept_design","features":[{"type":"Feature","id":"ROAD-001","properties":{"id":"ROAD-001","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"greenway_main","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"九公里应答长卷慢行主线（概念线）"},"geometry":{"type":"LineString","coordinates":[[116.346066116,39.939027232],[116.345231898,40.026473093]]}},{"type":"Feature","id":"ROAD-002","properties":{"id":"ROAD-002","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"robot_delivery","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。 与无障碍坡道一套改造两用为概念机制，测试验证场景建议选址于已开放的一期建成段。","name_zh":"低速物流机器人测试通道（概念线·建议先行于已开放建成段验证）"},"geometry":{"type":"LineString","coordinates":[[116.34702669,39.983497335],[116.346798085,40.007496046]]}},{"type":"Feature","id":"ROAD-003","properties":{"id":"ROAD-003","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"ew_stitching","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"应答门东西缝合慢行连线·鸣钟之门段（概念示范线）"},"geometry":{"type":"LineString","coordinates":[[116.34058633,39.944359067],[116.355264909,39.944441627]]}},{"type":"Feature","id":"ROAD-004","properties":{"id":"ROAD-004","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"ew_stitching","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"应答门东西缝合慢行连线·应答原点段（概念示范线）"},"geometry":{"type":"LineString","coordinates":[[116.340603417,39.988460972],[116.353382216,39.988532968]]}},{"type":"Feature","id":"ROAD-005","properties":{"id":"ROAD-005","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"ew_stitching","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。 跨五环人字天桥为概念节点，不含工程结论。","name_zh":"应答门东西缝合慢行连线·人字之跃段（指向跨五环概念节点方向）"},"geometry":{"type":"LineString","coordinates":[[116.342270904,40.016984011],[116.354747069,40.017054151]]}}]},"key_areas":{"type":"FeatureCollection","name":"key_areas_official","features":[{"type":"Feature","id":"PROV-KEY-001","properties":{"id":"PROV-KEY-001","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"zhongzhiyuan_ai_acceleration_area","name_zh":"众智园AI自主创新加速区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":1921000,"area_sqm_calculated":1929201.877,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第一处、众智园AI自主创新加速区、约192.1公顷及五环路/清河相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.343,40.0075],[116.354,40.0075],[116.354,40.026],[116.343,40.026],[116.343,40.0075]]]}},{"type":"Feature","id":"PROV-KEY-002","properties":{"id":"PROV-KEY-002","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"beijing_ai_origin_community","name_zh":"北京AI原点社区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":1043000,"area_sqm_calculated":1043236.909,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第二处、北京AI原点社区、约104.3公顷及五道口/清华东路西口相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.342,39.9835],[116.353,39.9835],[116.353,39.9935],[116.342,39.9935],[116.342,39.9835]]]}},{"type":"Feature","id":"PROV-KEY-003","properties":{"id":"PROV-KEY-003","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"dazhongsi_ai_industry_cluster","name_zh":"大钟寺AI产业聚集区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":720000,"area_sqm_calculated":720454.221,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第三处、大钟寺AI产业聚集区、约72.0公顷及大钟寺站相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.342,39.944],[116.355,39.944],[116.355,39.94984],[116.342,39.94984],[116.342,39.944]]]}}]},"phasing":{"type":"FeatureCollection","name":"phasing_design","features":[{"type":"Feature","id":"PHASE-001","properties":{"id":"PHASE-001","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_1","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"一期·南问段（鸣钟之门与既有界面场景启动，概念时序建议）","area_sqm_declared":6263221.578},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.965],[116.3553,39.939],[116.3407,39.939],[116.3397,39.975],[116.340245576,39.983458934],[116.353817321,39.983535391],[116.3553,39.965]]]}},{"type":"Feature","id":"PHASE-002","properties":{"id":"PHASE-002","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_2","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"二期·中答段（应答原点与道钉带核心段，概念时序建议）","area_sqm_declared":2890709.805},"geometry":{"type":"Polygon","coordinates":[[[116.3533,39.99],[116.353817321,39.983535391],[116.340245576,39.983458934],[116.3417,40.006],[116.341771573,40.007467606],[116.354260744,40.007537868],[116.3533,39.99]]]}},{"type":"Feature","id":"PHASE-003","properties":{"id":"PHASE-003","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_3","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"三期·北跃段（人字之跃与清河蓝绿衔接，概念时序建议）","area_sqm_declared":2258894.016},"geometry":{"type":"Polygon","coordinates":[[[116.3427,40.0265],[116.3553,40.0265],[116.354260744,40.007537868],[116.341771573,40.007467606],[116.3427,40.0265]]]}}]},"constraints":{"type":"FeatureCollection","name":"constraints_scaffold","features":[],"data_gap":{"status":"official_constraint_geometry_unavailable","declared_by":"scripts/scaffold_ai_submission.py","assumption_ids":["A-CONTROLS-001"],"missing_layers":["REGULATORY_CONTROL","HERITAGE_PROTECTION","PARCEL","EXISTING_PRIMARY_ROAD","EXISTING_RAIL","EXISTING_WATER"],"note_zh":"本图层刻意保持空集合。控规控制线、文物保护范围与建设控制地带、道路红线、权属地块、轨道与蓝线均属锁定图层，公开场地包中目前没有可引用的官方几何来源。缺口按 assumption A-CONTROLS-001 登记；取得官方或已清权几何前，不得以推定线条冒充 official_constraint，空集合优于编造。","note_en":"This layer is intentionally an empty set. Regulatory control lines, heritage protection and construction-control zones, road redlines, cadastral parcels, rail and blue lines are locked layers with no citable official geometry in the public site package. The gap is registered as assumption A-CONTROLS-001; until official or cleared geometry is available, inferred lines must not be presented as an official_constraint - an empty set is preferred over fabrication."}}}</script>
+<script id="geo-data" type="application/json">{"site_boundary":{"type":"FeatureCollection","name":"site_boundary_scaffold","features":[{"type":"Feature","id":"SITE-001","properties":{"id":"SITE-001","layer":"SITE_BOUNDARY","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","scope_id":"overall_design_area","name_zh":"总体设计范围粗略替代边界","official_boundary":false,"boundary_precision":"provisional_rough","source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告文字四至、约11.4平方公里面积约束和道路名称形成的临时粗略范围","derivation_method":"以公告所述京张遗址公园周边1—2公里城市地区和产业区为走廊，以北五环路、学院路/西土城路、西直门外大街、大钟寺东路/荷清路等文字四至定位，并在EPSG:4548下校核至公告约11.4平方公里；道路名称仅用于粗略定位，不代表道路红线。","area_sqm_declared":11412825.386,"area_sqm_calculated":11412825.386,"usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.3407,39.939],[116.3553,39.939],[116.3553,39.965],[116.3533,39.99],[116.3553,40.0265],[116.3427,40.0265],[116.3417,40.006],[116.3397,39.975],[116.3407,39.939]]]}}]},"land_use":{"type":"FeatureCollection","name":"land_use_topology_partition","features":[{"type":"Feature","id":"LU-001","properties":{"id":"LU-001","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"京张遗址公园绿轴（九公里应答长卷主轴段，概念）","area_sqm_declared":2589251.89},"geometry":{"type":"Polygon","coordinates":[[[116.344507419,39.939000177],[116.343670695,40.026500049],[116.346792584,40.02650015],[116.347625328,39.939000229],[116.344507419,39.939000177]]]}},{"type":"Feature","id":"LU-002","properties":{"id":"LU-002","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0803","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"大钟寺文化片区（鸣钟之门西翼，概念）","area_sqm_declared":400735.683},"geometry":{"type":"Polygon","coordinates":[[[116.3407,39.939],[116.340400143,39.949799822],[116.344404128,39.949822534],[116.344507419,39.939000177],[116.3407,39.939]]]}},{"type":"Feature","id":"LU-003","properties":{"id":"LU-003","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0901","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"大钟寺商业活力片区（东翼更新界面，概念）","area_sqm_declared":796407.677},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.939],[116.347625328,39.939000229],[116.347522362,39.949840126],[116.355300016,39.949883639],[116.3553,39.939]]]}},{"type":"Feature","id":"LU-004","properties":{"id":"LU-004","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0802","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"学院南路科研创新带（南问段西翼，概念）","area_sqm_declared":1345239.039},"geometry":{"type":"Polygon","coordinates":[[[116.3397,39.975],[116.340245576,39.983458934],[116.344082529,39.983480711],[116.344404128,39.949822534],[116.340400143,39.949799822],[116.3397,39.975]]]}},{"type":"Feature","id":"LU-005","properties":{"id":"LU-005","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0701","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"东侧既有居住社区片区南段（应答门渗透界面，概念）","area_sqm_declared":2404339.099},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.965],[116.355300016,39.949883639],[116.347522362,39.949840126],[116.347202293,39.983498324],[116.353817321,39.983535391],[116.3553,39.965]]]}},{"type":"Feature","id":"LU-006","properties":{"id":"LU-006","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0804","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"高校科教界面片区（清华园车站西翼，概念）","area_sqm_declared":328759.955},"geometry":{"type":"Polygon","coordinates":[[[116.34089094,39.993462604],[116.343986882,39.993480168],[116.344082529,39.983480711],[116.340245576,39.983458934],[116.34089094,39.993462604]]]}},{"type":"Feature","id":"LU-007","properties":{"id":"LU-007","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0902","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"学院路知识经济商务带（中答段东翼，概念）","area_sqm_declared":601926.438},"geometry":{"type":"Polygon","coordinates":[[[116.3533,39.99],[116.353817321,39.983535391],[116.347202293,39.983498324],[116.3471071,39.993497787],[116.353493539,39.993533588],[116.3533,39.99]]]}},{"type":"Feature","id":"LU-008","properties":{"id":"LU-008","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0802","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"西翼科研创新带北段（面向众智园，概念）","area_sqm_declared":617522.586},"geometry":{"type":"Polygon","coordinates":[[[116.3417,40.006],[116.3427,40.0265],[116.343670695,40.026500049],[116.343986882,39.993480168],[116.34089094,39.993462604],[116.3417,40.006]]]}},{"type":"Feature","id":"LU-009","properties":{"id":"LU-009","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"0701","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"东侧既有居住社区片区北段（概念）","area_sqm_declared":907585.397},"geometry":{"type":"Polygon","coordinates":[[[116.353493539,39.993533588],[116.3471071,39.993497787],[116.346973749,40.007497036],[116.354260744,40.007537868],[116.353493539,39.993533588]]]}},{"type":"Feature","id":"LU-010","properties":{"id":"LU-010","layer":"LAND_USE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"16","usage_note_zh":"概念性用地布局建议（参考方案），仅表达结构意向，待专业团队结合控规、现状权属与文物保护要求深化核定；不构成用地批准依据，边线不代表道路红线或地块权属边界；既有校园、居住社区与商业设施以现状延续为前提，本图层不含拆改留结论。","name_zh":"众智园弹性留白用地（北跃段·面向未来之问，概念）","area_sqm_declared":1421057.362},"geometry":{"type":"Polygon","coordinates":[[[116.3553,40.0265],[116.354260744,40.007537868],[116.346973749,40.007497036],[116.346792584,40.02650015],[116.3553,40.0265]]]}}]},"green_space":{"type":"FeatureCollection","name":"green_space_design","features":[{"type":"Feature","id":"GREEN-001","properties":{"id":"GREEN-001","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴南段（南问段·鸣钟之门绿地界面，概念）","area_sqm_declared":1316500.098},"geometry":{"type":"Polygon","coordinates":[[[116.344082529,39.983480711],[116.347202293,39.983498324],[116.347625328,39.939000229],[116.344507419,39.939000177],[116.344082529,39.983480711]]]}},{"type":"Feature","id":"GREEN-002","properties":{"id":"GREEN-002","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴中段（应答原点段·道钉带核心界面，概念）","area_sqm_declared":710158.967},"geometry":{"type":"Polygon","coordinates":[[[116.343852894,40.007479408],[116.346973749,40.007497036],[116.347202293,39.983498324],[116.344082529,39.983480711],[116.343852894,40.007479408]]]}},{"type":"Feature","id":"GREEN-003","properties":{"id":"GREEN-003","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1401","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"公园绿轴北段（北跃段·人字之跃与清河衔接，概念）","area_sqm_declared":562593.053},"geometry":{"type":"Polygon","coordinates":[[[116.343670695,40.026500049],[116.346792584,40.02650015],[116.346973749,40.007497036],[116.343852894,40.007479408],[116.343670695,40.026500049]]]}},{"type":"Feature","id":"GREEN-004","properties":{"id":"GREEN-004","layer":"GREEN_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","land_use_code":"1402","usage_note_zh":"概念性绿地深化建议（参考方案），待专业团队结合公园既有设计与蓝绿系统深化；不构成工程结论。","name_zh":"清河蓝绿空间概念协调带（跨地块生态界面示意）","area_sqm_declared":268014.191},"geometry":{"type":"MultiPolygon","coordinates":[[[[116.343670695,40.026500049],[116.34369965,40.023478538],[116.342552262,40.023472034],[116.3427,40.0265],[116.343670695,40.026500049]]],[[[116.3553,40.0265],[116.355137889,40.023542756],[116.346821234,40.023496176],[116.346792584,40.02650015],[116.3553,40.0265]]]]}}]},"public_space":{"type":"FeatureCollection","name":"public_space_design","features":[{"type":"Feature","id":"PUBLIC-001","properties":{"id":"PUBLIC-001","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 应答钟为新铸概念构想，与大钟寺古钟博物馆为文化呼应关系，不涉及文物本体及其保护范围。","name_zh":"钟声广场（大钟寺·应答钟概念广场与四象限步行缝合界面）","area_sqm_declared":10000.0},"geometry":{"type":"Polygon","coordinates":[[[116.34799013016958,39.94398986817046],[116.34798232640468,39.944811972354515],[116.34926402685878,39.944819173621426],[116.3492718155369,39.94399706896292],[116.34799013016958,39.94398986817046]]]}},{"type":"Feature","id":"PUBLIC-002","properties":{"id":"PUBLIC-002","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 清华园车站文保范围GIS缺失，本选点仅为待文物部门协商的概念选点，不得视为已确定落位。","name_zh":"清华园车站站前纪念广场与零公里桩（概念选点，待文物部门协商）","area_sqm_declared":6000.0},"geometry":{"type":"Polygon","coordinates":[[[116.34270658848898,39.98816373514023],[116.34270066210436,39.98878206697725],[116.34372376014642,39.988787864396734],[116.34372967710361,39.988169532635744],[116.34270658848898,39.98816373514023]]]}},{"type":"Feature","id":"PUBLIC-003","properties":{"id":"PUBLIC-003","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 跨五环人字天桥为概念节点，不含桥梁工程结论。","name_zh":"人字天桥北桥头·未来之问广场（概念节点）","area_sqm_declared":8000.0},"geometry":{"type":"Polygon","coordinates":[[[116.34716308221473,40.01662356114947],[116.34715568567468,40.01739974487337],[116.34824284397139,40.017405864923504],[116.34825022820753,40.016629680621605],[116.34716308221473,40.01662356114947]]]}},{"type":"Feature","id":"PUBLIC-004","properties":{"id":"PUBLIC-004","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。 应答门依托遗址公园二期规划出入口表述，以实际建成为准。","name_zh":"应答门社区微广场示范点（东翼·一页考卷界面，概念）","area_sqm_declared":4200.0},"geometry":{"type":"Polygon","coordinates":[[[116.349764274,39.966412563],[116.349759154,39.966952903000006],[116.350578438,39.96695749599999],[116.35058355100001,39.96641715599999],[116.349764274,39.966412563]]]}},{"type":"Feature","id":"PUBLIC-005","properties":{"id":"PUBLIC-005","layer":"PUBLIC_SPACE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","usage_note_zh":"概念性公共空间建议（参考方案），选址与规模待专业团队深化；不构成工程或审批结论。","name_zh":"公园东翼慢行公共活动界面带（要素服务驿站与路演界面概念布点带）","area_sqm_declared":192069.1},"geometry":{"type":"Polygon","coordinates":[[[116.3476978787216,39.949841113700764],[116.34714941350128,40.007498025709744],[116.34750074250243,40.00750000408914],[116.34804891222261,39.949843088096145],[116.3476978787216,39.949841113700764]]]}}]},"buildings":{"type":"FeatureCollection","name":"building_footprints_design","features":[{"type":"Feature","id":"BLDG-001","properties":{"id":"BLDG-001","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"cultural","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"应答钟阁概念基底（钟声广场内）","area_sqm_declared":1599.999,"usage_note":"概念建筑体量示意，功能见 name_zh；原分类意向：civic_pavilion_concept"},"geometry":{"type":"Polygon","coordinates":[[[116.348391362,39.944583322],[116.348387944,39.94494355],[116.348855956,39.944946179],[116.348859371,39.944585951],[116.348391362,39.944583322]]]}},{"type":"Feature","id":"BLDG-002","properties":{"id":"BLDG-002","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"cultural","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"城市进化档案馆概念装置基底（道钉带旁）","area_sqm_declared":900.0,"usage_note":"概念建筑体量示意，功能见 name_zh；原分类意向：archive_pavilion_concept"},"geometry":{"type":"Polygon","coordinates":[[[116.347273065,39.988363633],[116.347270494,39.988633802],[116.347621726,39.988635779],[116.347624296,39.98836561],[116.347273065,39.988363633]]]}},{"type":"Feature","id":"BLDG-003","properties":{"id":"BLDG-003","layer":"BUILDING_FOOTPRINT","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","building_type":"community_service","usage_note_zh":"概念性小型构筑物基底示意（参考方案），体量与选址待专业团队深化；不含建筑高度与工程结论。","name_zh":"要素服务驿站示范点基底（东翼低效空间概念布点）","area_sqm_declared":625.0,"usage_note":"概念建筑体量示意，功能见 name_zh；原分类意向：service_station_concept"},"geometry":{"type":"Polygon","coordinates":[[[116.347568285,39.966557832],[116.347566144,39.966782973],[116.347858745,39.96678462],[116.347860884,39.966559478],[116.347568285,39.966557832]]]}}]},"roads":{"type":"FeatureCollection","name":"roads_concept_design","features":[{"type":"Feature","id":"ROAD-001","properties":{"id":"ROAD-001","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"greenway","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"九公里应答长卷慢行主线（概念线）"},"geometry":{"type":"LineString","coordinates":[[116.346066116,39.939027232],[116.345231898,40.026473093]]}},{"type":"Feature","id":"ROAD-002","properties":{"id":"ROAD-002","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"cycleway","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。 与无障碍坡道一套改造两用为概念机制，测试验证场景建议选址于已开放的一期建成段。","name_zh":"低速物流机器人测试通道（概念线·建议先行于已开放建成段验证）"},"geometry":{"type":"LineString","coordinates":[[116.34702669,39.983497335],[116.346798085,40.007496046]]}},{"type":"Feature","id":"ROAD-003","properties":{"id":"ROAD-003","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"pedestrian","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"应答门东西缝合慢行连线·鸣钟之门段（概念示范线）"},"geometry":{"type":"LineString","coordinates":[[116.34058633,39.944359067],[116.355264909,39.944441627]]}},{"type":"Feature","id":"ROAD-004","properties":{"id":"ROAD-004","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"pedestrian","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。","name_zh":"应答门东西缝合慢行连线·应答原点段（概念示范线）"},"geometry":{"type":"LineString","coordinates":[[116.340603417,39.988460972],[116.353382216,39.988532968]]}},{"type":"Feature","id":"ROAD-005","properties":{"id":"ROAD-005","layer":"ROAD_CENTERLINE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","road_class":"pedestrian","concept":true,"usage_note_zh":"概念线（参考方案），仅表达联通意向，不代表道路红线、断面或工程结论，待专业团队深化。 跨五环人字天桥为概念节点，不含工程结论。","name_zh":"应答门东西缝合慢行连线·人字之跃段（指向跨五环概念节点方向）"},"geometry":{"type":"LineString","coordinates":[[116.342270904,40.016984011],[116.354747069,40.017054151]]}}]},"key_areas":{"type":"FeatureCollection","name":"key_areas_official","features":[{"type":"Feature","id":"PROV-KEY-001","properties":{"id":"PROV-KEY-001","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"zhongzhiyuan_ai_acceleration_area","name_zh":"众智园AI自主创新加速区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":1921000,"area_sqm_calculated":1929201.877,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第一处、众智园AI自主创新加速区、约192.1公顷及五环路/清河相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.343,40.0075],[116.354,40.0075],[116.354,40.026],[116.343,40.026],[116.343,40.0075]]]}},{"type":"Feature","id":"PROV-KEY-002","properties":{"id":"PROV-KEY-002","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"beijing_ai_origin_community","name_zh":"北京AI原点社区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":1043000,"area_sqm_calculated":1043236.909,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第二处、北京AI原点社区、约104.3公顷及五道口/清华东路西口相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.342,39.9835],[116.353,39.9835],[116.353,39.9935],[116.342,39.9935],[116.342,39.9835]]]}},{"type":"Feature","id":"PROV-KEY-003","properties":{"id":"PROV-KEY-003","layer":"KEY_AREA","parent_scope_id":"key_detailed_design_area","area_id":"dazhongsi_ai_industry_cluster","name_zh":"大钟寺AI产业聚集区粗略范围","source_type":"agent_inferred_from_public_data","confidence":"medium","geometry_role":"provisional_constraint","official_boundary":false,"boundary_precision":"provisional_rough","announced_area_sqm":720000,"area_sqm_calculated":720454.221,"source_id":"DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","derived_from_source_ids":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],"source_title":"依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围","derivation_method":"按公告自北向南第三处、大钟寺AI产业聚集区、约72.0公顷及大钟寺站相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。","usage_note":"仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"},"geometry":{"type":"Polygon","coordinates":[[[116.342,39.944],[116.355,39.944],[116.355,39.94984],[116.342,39.94984],[116.342,39.944]]]}}]},"phasing":{"type":"FeatureCollection","name":"phasing_design","features":[{"type":"Feature","id":"PHASE-001","properties":{"id":"PHASE-001","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_1","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"一期·南问段（鸣钟之门与既有界面场景启动，概念时序建议）","area_sqm_declared":6263221.578},"geometry":{"type":"Polygon","coordinates":[[[116.3553,39.965],[116.3553,39.939],[116.3407,39.939],[116.3397,39.975],[116.340245576,39.983458934],[116.353817321,39.983535391],[116.3553,39.965]]]}},{"type":"Feature","id":"PHASE-002","properties":{"id":"PHASE-002","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_2","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"二期·中答段（应答原点与道钉带核心段，概念时序建议）","area_sqm_declared":2890709.805},"geometry":{"type":"Polygon","coordinates":[[[116.3533,39.99],[116.353817321,39.983535391],[116.340245576,39.983458934],[116.3417,40.006],[116.341771573,40.007467606],[116.354260744,40.007537868],[116.3533,39.99]]]}},{"type":"Feature","id":"PHASE-003","properties":{"id":"PHASE-003","layer":"PHASE","source_type":"agent_generated_design","confidence":"medium","geometry_role":"design_proposal","phase":"phase_3","usage_note_zh":"概念性时序建议（参考方案），不构成政府承诺或实施计划；实际时序以主管部门与专业团队确定为准。","name_zh":"三期·北跃段（人字之跃与清河蓝绿衔接，概念时序建议）","area_sqm_declared":2258894.016},"geometry":{"type":"Polygon","coordinates":[[[116.3427,40.0265],[116.3553,40.0265],[116.354260744,40.007537868],[116.341771573,40.007467606],[116.3427,40.0265]]]}}]},"constraints":{"type":"FeatureCollection","name":"constraints_scaffold","features":[],"data_gap":{"status":"official_constraint_geometry_unavailable","declared_by":"scripts/scaffold_ai_submission.py","assumption_ids":["A-CONTROLS-001"],"missing_layers":["REGULATORY_CONTROL","HERITAGE_PROTECTION","PARCEL","EXISTING_PRIMARY_ROAD","EXISTING_RAIL","EXISTING_WATER"],"note_zh":"本图层刻意保持空集合。控规控制线、文物保护范围与建设控制地带、道路红线、权属地块、轨道与蓝线均属锁定图层，公开场地包中目前没有可引用的官方几何来源。缺口按 assumption A-CONTROLS-001 登记；取得官方或已清权几何前，不得以推定线条冒充 official_constraint，空集合优于编造。","note_en":"This layer is intentionally an empty set. Regulatory control lines, heritage protection and construction-control zones, road redlines, cadastral parcels, rail and blue lines are locked layers with no citable official geometry in the public site package. The gap is registered as assumption A-CONTROLS-001; until official or cleared geometry is available, inferred lines must not be presented as an official_constraint - an empty set is preferred over fabrication."}}}</script>
 <script>
 (function(){
 "use strict";
@@ -613,9 +760,9 @@ GEO.public_space.features.forEach(function(f){
  el("path",{d:dOf(f.geometry),fill:"#e2e8f0","fill-opacity":".4",stroke:"#f1f5f9","stroke-width":".8"},gPub);
 });
 /* roads */
-var RS={greenway_main:{stroke:"#e0b458",w:4.2,dash:null,sleeper:true},robot_delivery:{stroke:"#67e8f9",w:2,dash:"7 5",sleeper:false},ew_stitching:{stroke:"#f8fafc",w:1.6,dash:"2 4",sleeper:false}};
+var RS={greenway:{stroke:"#e0b458",w:4.2,dash:null,sleeper:true},cycleway:{stroke:"#67e8f9",w:2,dash:"7 5",sleeper:false},pedestrian:{stroke:"#f8fafc",w:1.6,dash:"2 4",sleeper:false}};
 GEO.roads.features.forEach(function(f){
- var s=RS[f.properties.road_class]||RS.ew_stitching;
+ var s=RS[f.properties.road_class]||RS.pedestrian;
  var at={d:dOf(f.geometry),fill:"none",stroke:s.stroke,"stroke-width":s.w,"stroke-linecap":"round"};
  if(s.dash){at["stroke-dasharray"]=s.dash;}
  el("path",at,gRoad);
