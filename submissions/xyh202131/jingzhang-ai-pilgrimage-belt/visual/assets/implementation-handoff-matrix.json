@@ -385,9 +385,9 @@
     {
       "discipline_id": "P01_PLANNING_URBAN_DESIGN",
       "must_receive": [
-        "D01",
-        "D02",
-        "D03"
+        "D01_OFFICIAL_GEOMETRY",
+        "D02_EXISTING_CONDITION_SURVEY",
+        "D03_REGULATORY_OWNERSHIP"
       ],
       "decision_scope": "boundary comparison, control conflict, public-space hierarchy and spatial revision",
       "cannot_be_replaced_by": "concept figures or repository validation"
@@ -395,9 +395,9 @@
     {
       "discipline_id": "P02_LANDSCAPE_ACCESSIBILITY",
       "must_receive": [
-        "D02",
-        "D04",
-        "D06"
+        "D02_EXISTING_CONDITION_SURVEY",
+        "D04_ACCESSIBILITY_PUBLIC_PARITY",
+        "D06_SPECIALIST_CONSTRAINTS"
       ],
       "decision_scope": "ordinary route, levels, rest, surfaces, maintenance clear zones and group co-test",
       "cannot_be_replaced_by": "green line in a concept diagram"
@@ -405,9 +405,9 @@
     {
       "discipline_id": "P03_TRANSPORT",
       "must_receive": [
-        "D02",
-        "D05",
-        "D06"
+        "D02_EXISTING_CONDITION_SURVEY",
+        "D05_TRANSPORT_AND_PEAK_CONTINUITY",
+        "D06_SPECIALIST_CONSTRAINTS"
       ],
       "decision_scope": "six interfaces, four-quadrant continuity, peak conflict and safe detour",
       "cannot_be_replaced_by": "directional OSM background"
@@ -415,9 +415,9 @@
     {
       "discipline_id": "P04_ARCHITECTURE_PUBLIC_INTERFACE",
       "must_receive": [
-        "D02",
-        "D03",
-        "D06"
+        "D02_EXISTING_CONDITION_SURVEY",
+        "D03_REGULATORY_OWNERSHIP",
+        "D06_SPECIALIST_CONSTRAINTS"
       ],
       "decision_scope": "ground-floor interface, removable-component interface and existing-building limits",
       "cannot_be_replaced_by": "massing prototypes"
@@ -425,9 +425,9 @@
     {
       "discipline_id": "P05_SPECIALIST_SAFETY",
       "must_receive": [
-        "D03",
-        "D06",
-        "D07"
+        "D03_REGULATORY_OWNERSHIP",
+        "D06_SPECIALIST_CONSTRAINTS",
+        "D07_RESPONSIBILITY_OPERATIONS"
       ],
       "decision_scope": "railway, heritage, municipal, water, fire, emergency, structural, light and noise constraints",
       "cannot_be_replaced_by": "a complete closure template"
@@ -435,9 +435,9 @@
     {
       "discipline_id": "P06_DATA_AI_RIGHTS",
       "must_receive": [
-        "D04",
-        "D07",
-        "D08"
+        "D04_ACCESSIBILITY_PUBLIC_PARITY",
+        "D07_RESPONSIBILITY_OPERATIONS",
+        "D08_RIGHTS_AND_REUSE"
       ],
       "decision_scope": "minimum data, prohibited data, human review, evidence version, appeal and rights clearance",
       "cannot_be_replaced_by": "synthetic replay PASS"
@@ -445,10 +445,10 @@
     {
       "discipline_id": "P07_OPERATIONS_COMMUNITY",
       "must_receive": [
-        "D04",
-        "D05",
-        "D07",
-        "D08"
+        "D04_ACCESSIBILITY_PUBLIC_PARITY",
+        "D05_TRANSPORT_AND_PEAK_CONTINUITY",
+        "D07_RESPONSIBILITY_OPERATIONS",
+        "D08_RIGHTS_AND_REUSE"
       ],
       "decision_scope": "ordinary/no-event baseline, staffed access, complaint, quiet time, maintenance, retirement and annual decision",
       "cannot_be_replaced_by": "event calendar or volunteer assumption"
