@@ -1360,6 +1360,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M150",
+      "gate": "sheet_markup_qa.py",
+      "target": "figures.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "让图纸出口不再把 `**x**` 变成加粗 `tspan`。**这是 E367 之前的真实状态**：图纸是 SVG，`**` 在那里没有含义，就是四个星号——FIG.04 的图例上写着 `224.41 ha — **not** class 1401`，而那是评审直接收到的五张图之一。",
+      "what_en": "Stop the drawing seam turning `**x**` into a bold tspan. **This is the real state before E367**: a drawing is SVG, where a pair of asterisks means nothing and simply prints, so FIG.04's legend read 224.41 ha - **not** class 1401 on one of the five sheets the reviewer is sent.",
+      "why_zh": "图上的文字与正文同一副笔调写成，而正文是 Markdown，`**` 顺手就进了 `<text>`。全包 166 处。**此前没有任何东西看过**：本包每一道与图纸有关的闸门读的都是图上的**词**——claim band 里的数、索引里的标题、图纸自己画的图题、两版之间的译名——**而星号不是词**。缺陷在图上一眼可见，对一百多道读同一批文字的检查却完全不可见。改在出口处而不是逐句删：**作者本来就想要那个强调，SVG 也能承载**。",
+      "why_en": "Sheet prose is written in the same voice as the proposal, the proposal is Markdown, and the markers went straight into a text element - 166 across the package. **Nothing had looked**: every gate here that touches a drawing reads the **words** on it - claim-band numbers, titles against the index, the caption against the drawn header, the gloss against its heading - **and asterisks are not words**. The defect was plain in the image and invisible to a hundred checks reading the same text. It is repaired at the seam rather than sentence by sentence, and as emphasis rather than deletion, because the author meant it and SVG can carry it."
+    },
+    {
       "id": "M149",
       "gate": "printed_difference_qa.py",
       "target": "fig_routes.py",
@@ -1802,7 +1815,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 147,
+  "caught": 148,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1885,6 +1898,7 @@
     "sheet_layer_key_qa.py",
     "sheet_legend_qa.py",
     "sheet_literal_qa.py",
+    "sheet_markup_qa.py",
     "sheet_placement_qa.py",
     "sheet_scale_qa.py",
     "shipped_bilingual_qa.py",
@@ -1946,6 +1960,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 102 道闸门，其中 99 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 102 gates, 99 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 103 道闸门，其中 100 道已被证明会失败；其余 3 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 103 gates, 100 have been shown capable of failing and 3 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
