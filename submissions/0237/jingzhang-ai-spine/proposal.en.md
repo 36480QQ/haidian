@@ -1,5 +1,5 @@
 ---
-title: "Jing-Zhang AI Spine · Centennial Jing-Zhang AI Innovation Belt Urban Design"
+title: "Star Tracks, Silver Weave · Light-Weave Roaming Growth Chronicle"
 author_github: "0237"
 language: "en"
 proposal_format_version: "2"
@@ -12,7 +12,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# Jing-Zhang AI Spine · Centennial Jing-Zhang AI Innovation Belt Urban Design
+# Star Tracks, Silver Weave · Light-Weave Roaming Growth Chronicle
 
 ## Design Basis and Source Index
 
