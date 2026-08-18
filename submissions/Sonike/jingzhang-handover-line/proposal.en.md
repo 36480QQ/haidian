@@ -107,7 +107,7 @@ The taskbook’s three positionings therefore sit on one timeline. The Centennia
 | Intelligent and vibrant AI city | SERVE: civic service keeps a staffed counter and a no-AI equivalent route | Dazhongsi AI Industry Cluster (Serve Yard) plus the continuous public handover ground | Device counts and automation rates are not used as vitality indicators |
 | Global voice in AI governance | RETURN: dual signatures, exit records and the annual ledger can be taken and recomputed by others | Century Logbook, annual handover ledger, bilingual protocol templates | No standard is issued on anyone's behalf; no governance conclusion is claimed as adopted |
 
-The division between three areas and two wings reads from the same table: the three yards complete the three signings on the handover chain. The Zhongguancun technology-service wing carries what the taskbook calls **global allocation of resources, Zhongguancun IP and capital empowerment**, which here becomes applicable interfaces for universities, standards, legal advice, compute, talent and capital. The Xiaoyue River scenario wing carries **AI scenario empowerment and the intelligent, vibrant AI city**, which here becomes a supply of authorised city problems and public space. The wings support only; they never make the receiving decision for a yard. The taskbook states the belt's goal as **a global AI industrial highland and place of pilgrimage**: this proposal reads "highland" as good technology reaching the street faster here, and "pilgrimage" as anyone being able to come and watch one real handover happen — not to view a set of uncheckable promotional figures.
+The division between three areas and two wings reads from the same table: the three yards complete the three signings on the handover chain, forming the **three-area two-wing collaboration loop** — problems enter through the wings, pass three signings among the three areas, and the wings carry the method back out. The Zhongguancun technology-service wing carries what the taskbook calls **global allocation of resources, Zhongguancun IP and capital empowerment**, which here becomes applicable interfaces for universities, standards, legal advice, compute, talent and capital. The Xiaoyue River scenario wing carries **AI scenario empowerment and the intelligent, vibrant AI city**, which here becomes a supply of authorised city problems and public space. The wings support only; they never make the receiving decision for a yard. The taskbook states the belt's goal as **a global AI industrial highland and place of pilgrimage**: this proposal reads "highland" as good technology reaching the street faster here, and "pilgrimage" as anyone being able to come and watch one real handover happen — not to view a set of uncheckable promotional figures.
 
 The duties of “three areas and two wings” are equally explicit. The Build, Share and Serve Handover Yards make three acceptance decisions along the chain. The Zhongguancun science-and-technology service wing offers interfaces to universities, standards, legal advice, compute, talent and capital. The Xiaoyue River scenario wing offers authorised urban questions and public spaces. The two wings provide support; they do not make acceptance decisions for the yards.
 
@@ -134,7 +134,7 @@ Regional synergy does not fabricate partnerships; it exchanges reusable methods.
 | Beijing E-Town | Engineering problem sheets from controlled scenarios | Manufacturing-condition retest needs | Enterprise, order or production-line relationship unclear |
 | Beijing-Tianjin-Hebei nodes | Bilingual protocols and annual failure summaries | Cross-city service comparison questions | Responsible party, permission or scope unclear |
 
-The brand is “JING-ZHANG HANDOVER LINE / 京张交接线”. Its mark combines two rails, a baton and signal brackets. Coal black means auditable duty, signal red means a stop threshold decided by a person, electric cyan means an open interface, and duty yellow means service reaching daily life. The system extends to wayfinding, protocol cards, logbooks, event publications and the Public Handover Table without requiring a screen.
+The main name is "Jing-Zhang Handover Line" and the English name is "JING-ZHANG HANDOVER LINE" — not a separate coinage but a direct translation, so both languages point at the same thing. **The naming system is unified by one verb, handover**: three handover yards, the Handover Bell, the Public Handover Table, the dual-signature handover ledger, Global Handover Week, the annual handover ledger. Any new element must be nameable with that verb; if it cannot be, it does not belong on this line. The visual identity and logo direction follow from it: the mark combines two rails, a baton and signal brackets. Coal black means auditable duty, signal red means a stop threshold decided by a person, electric cyan means an open interface, and duty yellow means service reaching daily life. The system extends to wayfinding, protocol cards, logbooks, event publications and the Public Handover Table without requiring a screen.
 
 ## Nine New Things This Proposal Puts Forward, Each Against Conventional Practice
 
@@ -249,45 +249,26 @@ Talent is not compressed into one “high-end talent” category. Developers nee
 | Children and young people | Safe movement without identification or profiling | SCN-05 and SCN-10 | Personal collection about minors remains zero |
 | International visitors and non-app users | Multilingual help, fixed wayfinding and volunteers | SCN-06 and SCN-12 | Route remains completable without installing an app |
 
-All twelve scenarios are written into the public-space layer, including four industry validation scenarios. Every record contains its users, minimum data, outgoing and incoming role types, human path, stop condition and post-exit spatial use. The same rules then enter the offline rehearsal [data:geometry/public_space.geojson#SCN-01] [metric:scenario_node_count] [metric:industry_validation_scenario_count].
+The taskbook sets four countable floors, and this proposal exceeds each of them and can be counted on the spot: **at least 10 AI scenario cards — 12 given** (SCN-01…12); **at least 3 AI industrial test-and-validation scenarios — 4 given** (SCN-01 to SCN-04); **at least 5 personas — 8 given**; **at least 3 AI pilgrimage landmarks — 4 given** (LANDMARK-01…04, see the blue-green and public space section). All twelve AI scenario cards are written into the public-space layer, four of them **AI industrial test-and-validation scenarios** (SCN-01 to SCN-04 satisfy the requirement of at least three); the twelve cards and the eight personas together form the **public experience route**, so anyone may walk the public segments only, without entering any test segment. Every record contains its users, minimum data, outgoing and incoming role types, human path, stop condition and post-exit spatial use. The same rules then enter the offline rehearsal [data:geometry/public_space.geojson#SCN-01] [metric:scenario_node_count] [metric:industry_validation_scenario_count].
 
-| ID | Scenario | Minimum data and smart value | Human takeover and exit |
-| --- | --- | --- | --- |
-| SCN-01 | Model red-team desk | Test sample, version and risk entries; organises red-team findings | Human review and paper risk register; stop when major risk remains open |
-| SCN-02 | Robot right-of-way sandbox | Closed-course trajectory; tests right-of-way, avoidance and loss of link | Safety steward physically stops and closes the course after boundary or near-miss event |
-| SCN-03 | Edge compute energy test | Independent meter and workload; compares energy and heat | Human stop and offline meter; safety threshold triggers shutdown |
-| SCN-04 | Data consent rehearsal | Voluntary consent record; rehearses minimisation, withdrawal and deletion | Paper authorisation and immediate deletion; exit if withdrawal fails |
-| SCN-05 | Accessible route copilot | User-submitted route obstacle; assists route explanation | Tactile map and human directions; unpublished until reviewed |
-| SCN-06 | Public service translation desk | Text entered on site; assists multilingual explanation | Staffed counter and multilingual paper; rights-affecting decision always goes to a person |
-| SCN-07 | Campus research relay | Authorised result metadata; assists retrieval and translation | Human curation and open directory; withdraw when licence is unclear |
-| SCN-08 | Visible maintenance stop | Anonymous report and work-order state; assists triage | Telephone, paper report and human dispatch; conflict triggers handover |
-| SCN-09 | Community care roster | Minimised roster information; assists reminders | Staff telephone roster; refusing allocation does not reduce service |
-| SCN-10 | Night-shift safety light | Device state, no face data; assists fault detection | Fixed light and human patrol; sensor anomaly returns to steady lighting |
-| SCN-11 | Jing-Zhang oral history booth | Cleared collection index; assists multilingual retrieval | Human guide and paper directory; uncertain source displays index only |
-| SCN-12 | Global Handover Week route | Booking and anonymous footfall; assists route and event explanation | Fixed wayfinding and volunteers; crowding or safety risk pauses interaction |
+| ID | Scenario | Spatial carrier | Minimum data and human takeover | Responsible organisation type｜hours | Use of the space after exit |
+| --- | --- | --- | --- | --- | --- |
+| SCN-01 | Model red-team desk | Validation street, Build Yard ground floor | Test samples and risk items; human review, stopped while a major risk is open | Test safety + independent review｜booked, enclosed | Ordinary equipment bay and meeting frontage |
+| SCN-02 | Robot right-of-way sandbox | Enclosed sandbox segment, Build Yard | Tracks in the closed segment; safety officer stops it physically, closed on any breach | Test safety + on-site safety officer｜time-limited, not a public route | Restored to ordinary courtyard surface |
+| SCN-03 | Edge-compute energy test station | Independently metered bay, Build Yard | Separate meter and load; manual shutdown, stopped at threshold | Energy/fire + equipment maintenance｜booked | Meter box removed, original paving restored |
+| SCN-04 | Data consent rehearsal ground | Consent desk, Share Yard | Voluntary consent records; paper consent slip and immediate deletion, exit if it cannot be revoked | Civic service + legal/licensing｜permanent, working hours | Ordinary enquiry desk and paper directory point |
+| SCN-05 | Step-free route co-pilot | Spine and the eight branch junctions | Obstacles users report themselves; tactile map and staffed enquiry, nothing published unreviewed | Public-space management + accessibility review｜permanent, all hours | Tactile guidance and fixed wayfinding retained |
+| SCN-06 | Civic service translation desk | Multilingual counter, Share Yard | Text entered on site; staffed counter and multilingual paper, entitlement decisions always human | Civic service + volunteer organisation｜permanent, working hours | Staffed counter and multilingual paper retained |
+| SCN-07 | Campus result relay | Result relay rack, Share Yard | Authorised result metadata; human curation, withdrawn if the licence is unclear | University translation + civic service｜permanent, working hours | Open catalogue and display rack |
+| SCN-08 | Visible repair post | Repair post, Serve Yard | Anonymous repair reports and ticket state; telephone and paper reporting, handover on conflict | Facility maintenance + community service｜permanent, all hours | Telephone and paper repair point retained |
+| SCN-09 | Community care rostering desk | Community care desk, Serve Yard | Minimised roster data; staff roster by telephone, refusing the algorithm changes nothing | Community care + subdistrict service｜permanent, working hours | Ordinary office and reception desk |
+| SCN-10 | Night-shift safety light | Lighting pole positions along the spine | Device state, no faces; fixed lighting and patrol, back to steady light on anomaly | Municipal lighting + patrol｜permanent, night | Base lighting retained, smart module detached |
+| SCN-11 | Jing-Zhang oral-history kiosk | Oral-history pavilion, Serve Yard | Cleared collection index; human guiding and paper catalogue, index only when provenance is unclear | Cultural venue + volunteer organisation｜weekends and festivals | Pavilion retained as a paper directory point |
+| SCN-12 | Global Handover Week route | Whole-line route and the three yards | Bookings and anonymous footfall; fixed wayfinding and volunteers, paused when crowded | Event safety + cultural operation｜annual event week | Fixed wayfinding retained, the rest removed |
 
-Five additional AI+ interfaces sit within the overall design area. The software-toolchain station handles code and build logs only. The health-information desk explains process and never diagnoses. The learning assistant explains methods and never grades. The legal-preparation desk structures a request and never decides rights. The daily-service desk assists forms and bookings without cross-service profiling. Any diagnosis, judgement, grade, eligibility decision or other rights-affecting conclusion returns to a qualified person.
+This table is also the **scenario–space–operation mapping** the taskbook requires: responsible parties are given as organisation types, never named bodies, and actual parties await public procedure. **A scenario may be enabled only once the "use after exit" cell for it already holds.** Four of the twelve are industrial test-and-validation scenarios (SCN-01 to SCN-04) and the other eight are city-service scenarios; the Xiaoyue River scenario wing supplies the authorised city problems and public space among them, and the Zhongguancun technology-service wing supplies legal, standards, compute and talent interfaces [metric:industry_validation_scenario_count].
 
-### Scenario–space–operation mapping: where each of the twelve lands, who opens it, when it closes
-
-The scenario cards say what is done; this table says where it lands, who is responsible, and when it is removed. Responsible parties are given as **organisation types**, never as named bodies — actual parties await public procedure. The use of the space after exit is stated for every row, so that a pilot cannot quietly become permanent [data:geometry/public_space.geojson#SCN-01] [metric:scenario_node_count].
-
-| ID | Spatial carrier | Responsible organisation type | Opening hours | Use of the space after exit |
-| --- | --- | --- | --- | --- |
-| SCN-01 | Validation street, Build Yard ground floor | Test safety plus independent review | Booked slots, enclosed | Ordinary equipment bay and meeting frontage |
-| SCN-02 | Enclosed sandbox segment, Build Yard | Test safety plus on-site safety officer | Time-limited, not a public route | Restored to ordinary courtyard surface |
-| SCN-03 | Independently metered bay, Build Yard | Energy/fire professionals plus equipment maintenance | Booked slots | Meter box removed, original paving restored |
-| SCN-04 | Consent desk, Share Yard | Civic service plus legal/licensing type | Permanent, working hours | Ordinary enquiry desk and paper directory point |
-| SCN-05 | Spine and the eight branch junctions | Public-space management plus accessibility review | Permanent, all hours | Tactile guidance and fixed wayfinding retained |
-| SCN-06 | Multilingual counter, Share Yard | Civic service plus volunteer organisation | Permanent, working hours | Staffed counter and multilingual paper retained |
-| SCN-07 | Result relay rack, Share Yard | University translation plus civic service | Permanent, working hours | Open catalogue and display rack |
-| SCN-08 | Repair post, Serve Yard | Facility maintenance plus community service | Permanent, all hours | Telephone and paper repair point retained |
-| SCN-09 | Community care desk, Serve Yard | Community care plus subdistrict service type | Permanent, working hours | Ordinary office and reception desk |
-| SCN-10 | Lighting pole positions along the spine | Municipal lighting plus patrol | Permanent, night | Base lighting retained, smart module detached |
-| SCN-11 | Oral-history pavilion, Serve Yard | Cultural venue plus volunteer organisation | Weekends and festivals | Pavilion retained as a paper directory point |
-| SCN-12 | Whole-line route and the three yards | Event safety plus cultural operation type | Annual event week | Fixed wayfinding retained, the rest removed |
-
-Four of the twelve are industry test-and-validation scenarios (SCN-01 to SCN-04); the other eight are city-service scenarios. The Xiaoyue River scenario wing supplies the authorised city problems and public space among them, and the Zhongguancun technology-service wing supplies legal, standards, compute and talent interfaces. **A scenario may be enabled only once the "use after exit" cell for it already holds** [metric:industry_validation_scenario_count].
+Five vertical "AI+" interfaces are added inside the overall design area: software toolchain collaboration handles code and build logs only; medical Q&A explains procedure and never diagnoses; educational support explains method and never grades; legal advice organises a request and never rules on rights; daily-life services help with forms and bookings and never build cross-matter profiles. Any conclusion touching diagnosis, judgement, grading, eligibility or personal entitlement must go to a qualified person.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -355,7 +336,7 @@ The intelligent layer is only a pluggable module mounted on these components: un
 
 ### Wayfinding, signage, and the symbol set
 
-The logo is only the starting point. What actually lands on the street is four physical symbols that need no screen: the handover mark ("a signature happened here"), the duty board ("who is responsible right now"), the stop bracket ("you can stop here and return to a human"), and the crossing bar (an east–west stitching point). All four take their form from the rails and switches already present in the heritage park; their size, contrast, and tactile edges follow accessibility and contrast requirements, and tactile paving, tactile maps, and staffed enquiry are never dropped because an intelligent layer exists [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:WCAG-CONTRAST].
+The logo is only the starting point. What actually lands on the street is four physical symbols that need no screen: the handover mark ("a signature happened here"), the duty board ("who is responsible right now"), the stop bracket ("you can stop here and return to a human"), and the crossing bar (an east–west stitching point). The four symbols constitute this proposal's **spatial cultural system and its carriers**: the Jing-Zhang railway heritage system supplies the form, Zhongguancun's innovation culture supplies the events, and the new AI culture narrative supplies today's view of responsibility — **so urban character is not a question of style but of how a city treats a handover**. All four take their form from the rails and switches already present in the heritage park; their size, contrast, and tactile edges follow accessibility and contrast requirements, and tactile paving, tactile maps, and staffed enquiry are never dropped because an intelligent layer exists [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:WCAG-CONTRAST].
 
 Cultural signage and handover symbols stay in separate layers: cultural signage tells history, handover symbols tell present responsibility. The two are not mixed with each other, nor confused with the belt-wide logo system. Every symbol uses a replaceable panel, so a revision changes the panel and not the base, and no iteration leaves a batch of discarded hardware in public space.
 
@@ -435,7 +416,7 @@ Long-term operation follows a four-season duty roster. Spring publishes urban pr
 
 ## Long-Term Operation, Annual Events, and International Communication
 
-### Annual event system and event brand
+### Annual event system, event brand and communication visual system
 
 The event system follows the handover chain: four times a year, each event handling one link of the chain, each obliged to leave a downloadable public artefact behind. An event that leaves none is not held the following year.
 
@@ -448,11 +429,11 @@ The event system follows the handover chain: four times a year, each event handl
 
 The event brand reuses the Handover Line signage and the four symbols rather than starting a second visual system; publications, protocol cards, and duty logbooks share one layout, so any year's record can be cited directly by the next. Host, budget, venue, and partners all await authorisation; this section is a conceptual mechanism and is not written as a settled arrangement [source:AGENT-TASKBOOK].
 
-### Developer community and scenario-opening operation
+### Developer community operation and AI scenario-opening operation
 
 The developer community is organised around reproducibility, not membership: a submission enters the Share Handover Yard catalogue only with its version, licence, failure record, and withdrawal method attached, and the catalogue is ordered by reproducibility rather than by institutional rank. Scenario opening runs at three authorisation levels — observation, controlled testing, public trial operation — each stating minimum data, the human takeover path, and the use of the space after exit; no level may be skipped before the previous one is passed [data:geometry/public_space.geojson#SCN-01] [metric:scenario_node_count].
 
-### Attraction and conversion pathway
+### Attraction-and-conversion mechanism and civic landmark operation
 
 A team has four steps from first contact to staying: observe one full handover during Global Handover Week, then apply for a controlled testing slot, then enter public trial operation at the verification workshop, and finally be judged by the city service provider on whether it enters daily service. Entry conditions, exit conditions, and the public artefact owed at each step are published in advance, so a team can decide for itself whether to come. Space maps onto the four renewal unit types, slots are revocable, and a failure does not convert into a permanent spatial burden. This proposal promises no subsidy, investment, tax, or settlement policy, and replaces no statutory investment-promotion procedure.
 
