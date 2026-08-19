@@ -112,7 +112,7 @@ function updateMatrices() {
   const depth = read('design_depth_matrix.json'); for(const k of Object.keys(depth))if(/^v\d+_evidence_index$/.test(k))delete depth[k];
   for(const item of depth.items){
     if(['three_key_area_detailed_design','traffic_rail_slow_parking','metrics_recalculation','phasing_implementation'].includes(item.item_id)){
-      item.proposal_sections=[...(item.proposal_sections||[]).filter(x=>x!=='决策摘要与设计依据'),'一次真正的空间裁决'];
+      item.proposal_sections=[...new Set([...(item.proposal_sections||[]).filter(x=>x!=='决策摘要与设计依据'&&x!=='一次真正的空间裁决'),'一次真正的空间裁决'])];
       item.geometry_refs=[...new Set([...(item.geometry_refs||[]),'geometry/roads.geojson','geometry/public_space.geojson','geometry/constraints.geojson'])];
       item.metric_refs=[...new Set([...(item.metric_refs||[]),'spatial_alternative_count','rejected_spatial_alternative_count','advanced_spatial_alternative_count'])];
       item.evidence_summary_zh='V11以三个同题空间备选、21道几何硬门和一项公开否决补强空间选择、交通连续、指标复算与实施退出证据。';
