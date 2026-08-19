@@ -1,8 +1,8 @@
 {
 "schema_version": "errata-v1",
 "note_en": "The English edition of the errata register. It is the same register: one summary per entry id, in the order the entries are published. The Chinese what/why/fix fields and every entry's commit join live in errata.json beside this file, which points here by path.",
-"of_entries": 378,
-"translated": 378,
+"of_entries": 379,
+"translated": 379,
 "summaries": {
 "E01": "Two machine-readable references pointed at feature ids that do not exist — `BUILDING-001` and `LANDUSE-001` against the real `BLDG-001` and `LU-001`.",
 "E02": "”less than half the second-thinnest track” did not hold arithmetically: 14 against 28 is exactly half.",
@@ -75,9 +75,17 @@
 "E69": "A gate searched the two editions concatenated, so a deliverable named only in Chinese passed as named in the prose.",
 "E70": "The errata register's own stated reason for existing was the last claim in the package nobody had re-measured, and the instrument that re-measured it matched on filename — counting who uses this package's word for a register, not who keeps one.",
 "E71": "A Chinese paragraph said the field shares are not repeated here because repeating them is how they expire; the English translation of that same paragraph repeated them, and by the time it was found they had expired.",
-"E72": "Three readings recomputed from the shipped layers every build are hand-copied into the prose — `412.5 m` six times. Nothing had gone wrong yet; the structure must eventually go wrong."
+"E72": "Three readings recomputed from the shipped layers every build are hand-copied into the prose — `412.5 m` six times. Nothing had gone wrong yet; the structure must eventually go wrong.",
+"E73": "The file built to prove the other gates can fail published a coverage number with no denominator: six of sixteen gates had been proven, and it read as all of them.",
+"E74": "Two sheets declared self-chosen dimensions in red on the drawing and nowhere in `assumptions.json`, the file a reviewer actually receives.",
+"E75": "Two gates were listed as unproven with a true reason, and the reason became nobody's action until the render cost was paid.",
+"E76": "The paragraph arguing that route lengths are not hand-written hand-wrote all six numbers derived from them, in both editions, in the same commit.",
+"E77": "Five entries in this register stated a live build quantity in the present tense, and three of them were already false — claims that had outlived their evidence, inside the register of claims that outlived their evidence.",
+"E78": "Every entry in this register is Chinese only, and the English edition cites five of them by number — sending a reader to text that does not exist in their language.",
+"E79": "E78 introduced the rule “publish the numerator and the denominator” and hand-wrote its own denominator, which E78's own existence had already made wrong.",
+"E80": "The harness that proves every gate can fail hard-coded its denominator as 16 against a real 15, and its arithmetic did not close: the gate it had never proven, never listed as unproven, and never counted was itself."
 },
-"archived_entries": 306,
+"archived_entries": 299,
 "archive_of": "visual/assets/errata.en.json",
-"split_note_en": "The organisers cap a single JSON at 512 KiB. This file carries the most recent 306 English summaries and the other 72 are in visual/assets/errata.en-archive.json, same schema, nothing removed and no wording changed. Both state the total, so neither can be read as the whole. The Chinese register has been split this way since E307; this one was written whole until it crossed the cap (E377)."
+"split_note_en": "The organisers cap a single JSON at 512 KiB. This file carries the most recent 299 English summaries and the other 80 are in visual/assets/errata.en-archive.json, same schema, nothing removed and no wording changed. Both state the total, so neither can be read as the whole. The Chinese register has been split this way since E307; this one was written whole until it crossed the cap (E377)."
 }
