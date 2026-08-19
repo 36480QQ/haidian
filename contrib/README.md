@@ -9,9 +9,10 @@
 
 - **不评价方案优劣**：不含任何排名、评分、推荐或批评。
 - **不点名**：summary 只给计数与匿名聚合，不含作者、路径、slug。
+- **自由文本不进 summary**：metric key 只公开受控官方词表（`CONTROLLED_METRIC_KEYS`，见脚本注释）；status/unit/confidence 的非枚举值只报告总数与不同值数，**不回显原文**（防邮箱/路径等未验证字符串泄露）。
 - **离群值只给计数**：如 `unit_missing=31`、`unit_not_in_enum=250`，不指出具体包。`unit_missing`（字段缺失或 JSON null）与 `unit_not_in_enum`（声明了非枚举值）分开计数，口径不混。
 - **全部标注分母**：每条统计附 `count` 与 `pct`（分母为全场条目总数）。
-- **长表不进仓库**：含作者标识的长表（csv.gz）是本地复现产物，不得提交。
+- **长表默认不生成**：含作者标识的长表（csv.gz）需显式 `--write-local-identifiers` 且输出目录必须在仓库外，防止误暂存提交。
 
 ## 复现命令
 
@@ -28,15 +29,20 @@ git sparse-checkout set --no-cone \
 git checkout
 
 # 2. 扫描
-# --sha 会与 repo HEAD 校验：不一致时拒绝执行（防快照身份错误）；
-# 确认要扫描非 HEAD 提交时显式加 --allow-sha-mismatch，summary 会记录 sha_verified_against_head=false。
-python3 contrib/tools-metrics-scan.py --repo $D --out-dir contrib \
+# 前置硬性检查（fail-closed，任何 flag 都不可绕过）：
+#   a) --sha 与 repo HEAD 一致；不一致时拒绝执行（防快照身份错误），
+#      确需扫描非 HEAD 提交时显式加 --allow-sha-mismatch，summary 会记录
+#      sha_verified_against_head=false；
+#   b) 工作树干净：submissions/ 下无 tracked 修改、无 untracked 文件——
+#      脏树意味着统计读的是「非声明 SHA 的字节」，直接拒绝运行。
+# --out-dir 建议放仓库外（summary 是匿名产物，写仓库内也可；含身份长表则必须在外）。
+python3 contrib/tools-metrics-scan.py --repo $D --out-dir $D/../scan-out \
     --date YYYYMMDD --sha <commit-sha>
 
 # 3. 产出
-#    contrib/metrics-fullfield-<date>.summary.json   <- 可发布（计数 + 匿名聚合）
-#    contrib/metrics-fullfield-<date>.csv.gz          <- 本地长表（含作者标识，勿提交）
-#    contrib/metrics-scan-<date>.parse-failures.txt   <- 仅解析失败时生成（本地）
+#    <out-dir>/metrics-fullfield-<date>.summary.json   <- 可发布（计数 + 匿名聚合）
+#    <out-dir>/metrics-fullfield-<date>.csv.gz          <- 仅加 --write-local-identifiers 生成（含作者标识，仓库外）
+#    <out-dir>/metrics-scan-<date>.parse-failures.txt   <- 仅解析失败时生成（本地）
 ```
 
 ## 长表字段字典（28 列）
@@ -73,13 +79,15 @@ python3 contrib/tools-metrics-scan.py --repo $D --out-dir contrib \
 - `root_structure`：根容器形状与 schema_version 分布。
 - `field_coverage`：各必填字段缺失计数与占比。**口径注**：`field_coverage.<field>.missing_count` 只统计「键不存在」（`REQUIRED_FIELDS` 中缺失的键，见 `scan()` 的 `missing_req`），与 `outlier_counts_only.unit_missing`（键不存在 + 显式 JSON null + 非字符串类型）是两种度量，两者不可直接互读。
 - `entry_validity`：有效条目占比 + 问题分类（不点名）。
-- `distributions`：status 全分布；unit / confidence 按「声明枚举 + 其他聚合」双段呈现（schema 枚举见 `brief/site-package/schemas/metrics.schema.json`）。
+- `distributions`：status / unit / confidence 均按「声明枚举 + 其他聚合」双段呈现（schema 枚举见 `brief/site-package/schemas/metrics.schema.json`）。**其他段只含 total_count 与 n_distinct_values，不回显非枚举值原文**（隐私边界）。
 - `packages`：每包指标数 min/median/max/mean。
-- `coverage`：Top 指标 key、规范化 key、概念桶分布，以及 Top 15 指标 key 的 **status 交叉表**（如 `floor_area_ratio` 全场 540 条中 526 条 `unknown`——组织方控规条件未公布的直接结果）。
+- `coverage`：Top 指标 key、规范化 key 只来自**受控官方词表**（`CONTROLLED_METRIC_KEYS`），其余 key 全部聚合进 `other_metric_keys`（只报不同值数与条目数）；另有概念桶分布与 Top 15 受控 key 的 **status 交叉表**（如 `floor_area_ratio` 全场 540 条中 526 条 `unknown`——组织方控规条件未公布的直接结果）。
 - `outlier_counts_only`：离群值**计数**（ratio/FAR/height sanity 阈值来自 `brief/site-package/ranges/planning_limits.json` 的 `schema_sanity_bounds_not_planning_approval`；面积类指标对照同一文件 `known_official_area_values`，偏差超过 50% 计一次，均不点名）。**口径说明**：0-1 ratio 检查只针对占比/覆盖率语义（green_ratio、coverage 等）；FAR（floor_area_ratio，合法区间 0-12）、绕路率、街墙高宽比等可合法大于 1 的比率不适用 0-1 检查；百分比单位（pct/percent）条目不适用 0-1 检查；FAR 检查排除面积单位条目（如 `phasing_far_area_sqm` 是分期面积而非容积率）；unit 检查分两档——`unit_missing`（unit 字段缺失或 JSON null）与 `unit_not_in_enum`（声明了 schema 枚举之外的字符串），两者口径互斥、不混计。
 
 ## 隐私与合规
 
-- 提交内容仅限：扫描脚本、summary JSON（无作者标识）、回归测试、本文档。
-- 长表与解析失败清单为本地复现产物，禁止提交。
+- 提交内容仅限：扫描脚本、summary JSON（无作者标识、无自由文本回显）、回归测试、本文档。
+- summary 的匿名保证：metric key 仅受控词表可见；status/unit/confidence 非枚举值只报计数；离群值只给计数，不指出具体包。
+- 长表（含作者标识）默认不生成，需 `--write-local-identifiers` 且输出目录在仓库外（写入工作树内会被拒绝）。
+- 快照证据链：--sha 与 HEAD 不一致拒绝执行；工作树不干净（tracked 修改 / untracked 文件）一律拒绝，任何 flag 不可绕过，失败时不产出可发布 summary。
 - summary 中的离群值与覆盖统计不得用作任何扣分或排名依据。

@@ -84,6 +84,20 @@ OFFICIAL_AREA_SQM = {
     "dazhongsi_ai_industry_cluster_sqm": 720000,
 }
 
+# Metric keys that are safe to publish VERBATIM in the anonymous summary:
+# the official known area values plus the well-known keys observed across
+# the full-field sweep (see the last refreshed summary's top_metric_keys).
+# metric_key is an open attribute in the schema - any other key is
+# unverified free text and must only ever appear aggregated (counts only).
+CONTROLLED_METRIC_KEYS = frozenset(OFFICIAL_AREA_SQM) | frozenset({
+    "site_area_sqm", "green_ratio", "public_space_ratio", "key_area_count",
+    "building_footprint_area_sqm", "floor_area_ratio", "public_space_area_sqm",
+    "green_space_area_sqm", "persona_count", "building_density",
+    "building_height_m", "total_floor_area_sqm", "scenario_node_count",
+    "renewal_project_count", "scenario_card_count", "landmark_count",
+    "phase_count", "phase_1_area_sqm", "road_area_sqm", "phase_2_area_sqm",
+})
+
 REQUIRED_FIELDS = ("status", "value", "unit", "source_files", "formula", "confidence")
 LONG_FIELDS = (
     "pkg", "author", "slug", "metric_key", "norm_key", "concept",
@@ -156,6 +170,36 @@ def verify_snapshot_sha(repo_root: Path, declared_sha: str) -> tuple[bool, str]:
     return False, f"declared --sha {declared_sha} does not match repo HEAD {actual}"
 
 
+def check_worktree_clean(repo_root: Path, scan_subdir: str = "submissions/") -> tuple[bool, str]:
+    """Fail-closed guard: nothing under the scanned paths may differ from HEAD.
+
+    scan() reads the working tree (not the declared commit's object content),
+    so a snapshot claiming ``sha_verified_against_head=true`` is only honest
+    when every path that participates in the statistics is byte-identical to
+    the commit - no tracked modifications, no untracked additions. Returns
+    (ok, detail). There is deliberately no opt-out: dirty-tree scans must not
+    produce a publishable summary.
+    """
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(repo_root), "status", "--porcelain", "--", scan_subdir],
+            capture_output=True, text=True, timeout=30,
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        return False, f"git unavailable for {repo_root}: {exc}"
+    if result.returncode != 0:
+        return False, f"cannot check worktree status in {repo_root}: {result.stderr.strip()}"
+    dirty = [line for line in result.stdout.splitlines() if line.strip()]
+    if dirty:
+        sample = " | ".join(dirty[:5])
+        return False, (
+            f"worktree is not clean under {scan_subdir} ({len(dirty)} "
+            f"changed/untracked path(s), e.g. {sample}); a snapshot claiming "
+            f"the declared --sha would read dirty bytes - refusing to run"
+        )
+    return True, "worktree clean"
+
+
 def parse_metrics_file(path: Path) -> tuple[dict | None, str | None]:
     """Return (parsed_json, error). parsed_json is None on failure."""
     try:
@@ -189,7 +233,8 @@ def read_model_family(pkg_dir: Path) -> str | None:
     return None
 
 
-def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str, sha_verified: bool = True) -> None:
+def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str,
+         sha_verified: bool = True, write_identifiers: bool = False) -> None:
     pkg_dirs = sorted((repo_root / "submissions").glob("*/*"))
     metrics_paths = [p / "metrics.json" for p in pkg_dirs if (p / "metrics.json").is_file()]
     manifest_paths = [p / "manifest.json" for p in pkg_dirs if (p / "manifest.json").is_file()]
@@ -273,7 +318,12 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str, sha_verified
                 "entry_problem": "",
             })
             if not row["entry_ok"]:
-                entry_problems[f"status={status!r}"] += 1
+                if status in VALID_STATUS:
+                    # enum values are a fixed vocabulary - safe to name
+                    entry_problems[f"status={status}"] += 1
+                else:
+                    # free text: aggregate only, never echo the value
+                    entry_problems["status_not_in_enum"] += 1
             for f in missing_req:
                 field_missing[f] += 1
             if row["status"] not in VALID_STATUS:
@@ -307,34 +357,41 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str, sha_verified
     # ---- summary (publishable: counts and anonymized stats only) ----
     n_entries = len(rows)
     per_pkg = sorted(per_pkg_metric_count)
-    top_metric_keys = Counter(r["metric_key"] for r in rows).most_common(20)
-    top_norm_keys = Counter(r["norm_key"] for r in rows).most_common(20)
+    # Only controlled official keys may appear verbatim; any other metric key
+    # is unverified free text (open attribute in the schema) and is collapsed
+    # into an aggregate "other" bucket - counts only, never the key itself.
+    top_metric_keys = Counter(
+        r["metric_key"] for r in rows if r["metric_key"] in CONTROLLED_METRIC_KEYS
+    ).most_common(20)
+    top_norm_keys = Counter(
+        r["norm_key"] for r in rows if r["metric_key"] in CONTROLLED_METRIC_KEYS
+    ).most_common(20)
+    n_other_metric_keys = len({r["metric_key"] for r in rows} - CONTROLLED_METRIC_KEYS)
+    n_other_metric_entries = sum(
+        1 for r in rows if r["metric_key"] not in CONTROLLED_METRIC_KEYS
+    )
     concept_cover = Counter(r["concept"] for r in rows)
     status_dist = Counter(r["status"] for r in rows)
     unit_dist = Counter(r["unit"] for r in rows)
     confidence_dist = Counter(r["confidence"] for r in rows)
-    # per-key status cross tabulation for the most common metric keys:
-    # e.g. floor_area_ratio is present in many packages, but how many of
-    # those entries are known vs unknown (planning controls are unpublished)?
+    # per-key status cross tabulation for the controlled metric keys only
     key_status = defaultdict(Counter)
     for r in rows:
-        key_status[r["metric_key"]][r["status"]] += 1
+        if r["metric_key"] in CONTROLLED_METRIC_KEYS:
+            key_status[r["metric_key"]][r["status"]] += 1
 
-    def enum_summary(dist: Counter, valid_values: set[str], top_n: int = 8) -> dict:
-        """Split a distribution into the declared enum (with counts) and a
-        compact 'other' bucket, so the summary stays readable even when
-        entries drift from the declared schema enum."""
+    def enum_summary(dist: Counter, valid_values: set[str]) -> dict:
+        """Split a distribution into the declared enum (with counts) and an
+        anonymous 'other' bucket. Non-enum values are free text: the summary
+        reports only their total count and the number of distinct values,
+        never the values themselves (privacy boundary)."""
         declared = {k: v for k, v in dist.most_common() if k in valid_values}
         others = {k: v for k, v in dist.most_common() if k not in valid_values}
-        n_other_values = len(others)
-        other_total = sum(others.values())
-        top_others = {k: v for k, v in list(others.items())[:top_n]}
         return {
             "declared_enum": declared,
             "other_values": {
-                "total_count": other_total,
-                "n_distinct_values": n_other_values,
-                "top": top_others,
+                "total_count": sum(others.values()),
+                "n_distinct_values": len(others),
             },
         }
 
@@ -369,14 +426,20 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str, sha_verified
                     "count": v,
                     "explanation": (
                         "metric entry is not a dict" if k == "non-dict metric entry"
-                        else "entry has a declared-valid status but is missing one or more required fields (status/value/unit/source_files/formula/confidence)"
+                        else (
+                            "entry status is outside the declared enum "
+                            "(known/unknown/not_applicable); the status value "
+                            "is free text and is not echoed (privacy)"
+                            if k == "status_not_in_enum"
+                            else "entry has a declared-valid status but is missing one or more required fields (status/value/unit/source_files/formula/confidence)"
+                        )
                     ),
                 }
                 for k, v in entry_problems.most_common()
             },
         },
         "distributions": {
-            "status": {k: {"count": v, "pct": pct(v)} for k, v in status_dist.most_common()},
+            "status": enum_summary(status_dist, VALID_STATUS),
             "unit": enum_summary(unit_dist, VALID_UNITS),
             "confidence": enum_summary(confidence_dist, {"high", "medium", "low", "unknown"}),
         },
@@ -391,6 +454,10 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str, sha_verified
         "coverage": {
             "top_metric_keys": [{k: v} for k, v in top_metric_keys],
             "top_normalized_keys": [{k: v} for k, v in top_norm_keys],
+            "other_metric_keys": {
+                "n_distinct_keys": n_other_metric_keys,
+                "n_entries": n_other_metric_entries,
+            },
             "concept_buckets": {k: {"count": v, "pct": pct(v)} for k, v in concept_cover.most_common()},
             "top_key_status_cross": {
                 k: {s: c for s, c in sorted(key_status[k].items())}
@@ -420,9 +487,15 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str, sha_verified
         },
         "privacy_boundary": (
             "This summary contains aggregate counts only. It does not contain "
-            "package paths, authors, slugs, or any ranking. The long-format "
-            "table with identifying columns is a local artifact and must not "
-            "be committed."
+            "package paths, authors, slugs, or any ranking. Metric keys are "
+            "published verbatim only when they belong to the controlled "
+            "official vocabulary (CONTROLLED_METRIC_KEYS); all other keys, "
+            "and all non-enum status/unit/confidence values, appear only as "
+            "counts (total and number of distinct values) - never verbatim. "
+            "The long-format table with identifying columns is a local "
+            "artifact, written only with --write-local-identifiers to a "
+            "directory outside the scanned worktree, and must never be "
+            "committed."
         ),
     }
 
@@ -433,11 +506,21 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str, sha_verified
     with open(summary_path, "w", encoding="utf-8", newline="") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
 
-    long_path = out_dir / f"metrics-fullfield-{date_stamp}.csv.gz"
-    with gzip.open(long_path, "wt", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=LONG_FIELDS)
-        writer.writeheader()
-        writer.writerows(rows)
+    if write_identifiers:
+        # Identity table (pkg/author/slug/model_family) is a local artifact:
+        # refuse to write it anywhere inside the scanned worktree, so a stray
+        # `--out-dir contrib` can never be staged/committed by accident.
+        if out_dir.is_relative_to(repo_root):
+            raise SystemExit(
+                f"refusing to write the identifiers table into the scanned "
+                f"worktree ({out_dir}); choose an out-dir outside the repo, "
+                f"e.g. a temp dir"
+            )
+        long_path = out_dir / f"metrics-fullfield-{date_stamp}.csv.gz"
+        with gzip.open(long_path, "wt", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=LONG_FIELDS)
+            writer.writeheader()
+            writer.writerows(rows)
 
     if parse_failures:
         with open(out_dir / f"metrics-scan-{date_stamp}.parse-failures.txt", "w", encoding="utf-8") as f:
@@ -458,15 +541,30 @@ def main(argv: list[str] | None = None) -> int:
         "--allow-sha-mismatch",
         action="store_true",
         help="proceed even when --sha does not match the repo HEAD; the summary "
-        "then records sha_verified_against_head=false",
+        "then records sha_verified_against_head=false. Never bypasses the "
+        "dirty-worktree guard.",
+    )
+    parser.add_argument(
+        "--write-local-identifiers",
+        action="store_true",
+        help="also write the long-format table (pkg/author/slug/model_family) "
+        "as csv.gz. Off by default; refused when out-dir is inside the scanned "
+        "worktree.",
     )
     args = parser.parse_args(argv)
-    verified, detail = verify_snapshot_sha(Path(args.repo), args.sha)
+    repo = Path(args.repo)
+    # Fail-closed: a dirty worktree would make the scan read bytes that do
+    # not belong to the declared commit - no flag can override this.
+    clean, clean_detail = check_worktree_clean(repo)
+    if not clean:
+        parser.error(clean_detail)
+    verified, detail = verify_snapshot_sha(repo, args.sha)
     if not verified and not args.allow_sha_mismatch:
         parser.error(detail)
     if not verified:
         print(f"WARNING: {detail}; summary marks the snapshot as unverified")
-    scan(Path(args.repo), Path(args.out_dir), args.date, args.sha, sha_verified=verified)
+    scan(repo, Path(args.out_dir), args.date, args.sha,
+         sha_verified=verified, write_identifiers=args.write_local_identifiers)
     return 0
 
 

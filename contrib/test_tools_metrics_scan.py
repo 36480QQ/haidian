@@ -9,6 +9,12 @@ Locks the boundaries discussed in the PR review:
 - `*_far_area_sqm` phase-area keys are not treated as floor-area-ratio
 - `--sha` mismatch is rejected unless `--allow-sha-mismatch` is passed,
   and an unverified snapshot is recorded in the summary
+- dirty worktree (tracked modification or untracked package/file under
+  submissions/) is ALWAYS refused - no flag can bypass the guard
+- the publishable summary never echoes unverified free text (metric keys
+  outside the controlled vocabulary, non-enum status/unit/confidence)
+- the identifiers csv.gz is off by default, requires
+  `--write-local-identifiers`, and is refused inside the scanned worktree
 
 Run: python3 contrib/test_tools_metrics_scan.py
 """
@@ -16,6 +22,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -59,7 +66,7 @@ def entry(value, unit=None, status="known"):
     return e
 
 
-def run_scan(tmp_dir: Path, metrics: dict) -> dict:
+def run_scan(tmp_dir: Path, metrics: dict, write_identifiers: bool = False) -> dict:
     """Write a fake repo under tmp_dir, run the scan, return the summary."""
     pkg = tmp_dir / "submissions" / "author" / "slug"
     pkg.mkdir(parents=True)
@@ -68,9 +75,40 @@ def run_scan(tmp_dir: Path, metrics: dict) -> dict:
     )
     out = tmp_dir / "out"
     tool = load_tool()
-    tool.scan(tmp_dir, out, "20260812", "deadbeef", sha_verified=True)
+    tool.scan(tmp_dir, out, "20260812", "deadbeef", sha_verified=True,
+              write_identifiers=write_identifiers)
     summary_path = out / "metrics-fullfield-20260812.summary.json"
     return json.loads(summary_path.read_text(encoding="utf-8"))
+
+
+# ---- helpers for real-git-repo tests ----
+
+def git(repo: Path, *args: str) -> None:
+    subprocess.run(["git", "-C", str(repo), *args], check=True,
+                   capture_output=True, text=True)
+
+
+def init_repo(repo: Path) -> None:
+    repo.mkdir(parents=True)
+    git(repo, "init", "-q")
+    git(repo, "config", "user.name", "test")
+    git(repo, "config", "user.email", "test@example.com")
+
+
+def commit_all(repo: Path, message: str = "test commit") -> str:
+    git(repo, "add", "-A")
+    git(repo, "commit", "-q", "-m", message)
+    out = subprocess.run(["git", "-C", str(repo), "rev-parse", "HEAD"],
+                         capture_output=True, text=True, check=True)
+    return out.stdout.strip()
+
+
+def write_pkg_metrics(repo: Path, author: str, slug: str, metrics: dict) -> Path:
+    pkg = repo / "submissions" / author / slug
+    pkg.mkdir(parents=True, exist_ok=True)
+    path = pkg / "metrics.json"
+    path.write_text(json.dumps(metrics, ensure_ascii=False), encoding="utf-8")
+    return path
 
 
 class UnitEnumSplitTest(unittest.TestCase):
@@ -94,6 +132,8 @@ class UnitEnumSplitTest(unittest.TestCase):
         others = summary["distributions"]["unit"]["other_values"]
         self.assertEqual(others["total_count"], 3, "None x2 + hectare x1")
         self.assertEqual(others["n_distinct_values"], 2)
+        # privacy boundary: the non-enum string itself must never be echoed
+        self.assertNotIn("hectare", json.dumps(summary, ensure_ascii=False))
 
     def test_valid_units_do_not_trigger_either_counter(self):
         metrics = make_metrics({
@@ -132,6 +172,50 @@ class SanityBoundaryTest(unittest.TestCase):
         self.assertEqual(summary["outlier_counts_only"]["far_above_12"], 1)
 
 
+class PrivacyBoundaryTest(unittest.TestCase):
+    def test_free_text_never_appears_in_publishable_summary(self):
+        """The maintainer's repro: email/path-style strings in metric key,
+        status, unit and confidence must not be echoed anywhere in the
+        serialized summary, while controlled keys stay visible."""
+        leak = "alice@example.invalid"
+        e = entry(1, leak, status=leak)
+        e["confidence"] = leak
+        metrics = make_metrics({
+            "contact_alice_example_invalid": e,
+            # controlled key must remain verbatim in coverage stats
+            "site_area_sqm": entry(100, "sqm"),
+        })
+        with tempfile.TemporaryDirectory() as td:
+            summary = run_scan(Path(td), metrics)
+        text = json.dumps(summary, ensure_ascii=False)
+        self.assertNotIn(leak, text, "email string leaked into summary")
+        self.assertNotIn("contact_alice_example_invalid", text,
+                         "uncontrolled metric key leaked into summary")
+        # status/unit/confidence other buckets count but never name the value
+        self.assertIn("n_distinct_values", summary["distributions"]["unit"]["other_values"])
+        self.assertNotIn("top", summary["distributions"]["unit"]["other_values"])
+        self.assertNotIn("top", summary["distributions"]["confidence"]["other_values"])
+        # controlled keys still reported verbatim
+        self.assertIn("site_area_sqm", text)
+        # uncontrolled keys collapsed into the aggregate bucket
+        self.assertEqual(
+            summary["coverage"]["other_metric_keys"]["n_distinct_keys"], 1)
+
+    def test_uncontrolled_keys_collapse_but_counts_stay_closed(self):
+        metrics = make_metrics({
+            "site_area_sqm": entry(100, "sqm"),
+            "mystery_key_xyz": entry(1, "sqm"),
+            "mystery_key_abc": entry(2, "sqm"),
+        })
+        with tempfile.TemporaryDirectory() as td:
+            summary = run_scan(Path(td), metrics)
+        other = summary["coverage"]["other_metric_keys"]
+        self.assertEqual(other["n_distinct_keys"], 2)
+        self.assertEqual(other["n_entries"], 2)
+        # total entries must still be closed against the snapshot
+        self.assertEqual(summary["snapshot"]["n_metric_entries"], 3)
+
+
 class SnapshotShaTest(unittest.TestCase):
     def test_sha_mismatch_rejected_unless_allow_flag(self):
         tool = load_tool()
@@ -140,17 +224,146 @@ class SnapshotShaTest(unittest.TestCase):
             ok, detail = tool.verify_snapshot_sha(repo, "deadbeef")
             self.assertFalse(ok)
             self.assertIn("cannot resolve HEAD", detail)
-            # no --allow-sha-mismatch: must exit with an error
+            # not a git repo -> worktree guard fails closed, even with the flag
             with self.assertRaises(SystemExit):
                 tool.main(["--repo", str(repo), "--out-dir", str(repo / "o"),
-                           "--date", "20260812", "--sha", "deadbeef"])
-            # with the flag: proceeds and records the snapshot as unverified
-            tool.main(["--repo", str(repo), "--out-dir", str(repo / "o"),
+                           "--date", "20260812", "--sha", "deadbeef",
+                           "--allow-sha-mismatch"])
+
+    def test_clean_repo_matching_sha_runs_and_records_verified(self):
+        tool = load_tool()
+        with tempfile.TemporaryDirectory() as td:
+            repo = Path(td) / "repo"
+            init_repo(repo)
+            write_pkg_metrics(repo, "author", "slug",
+                              make_metrics({"site_area_sqm": entry(100, "sqm")}))
+            sha = commit_all(repo)
+            out = repo / "out"
+            tool.main(["--repo", str(repo), "--out-dir", str(out),
+                       "--date", "20260812", "--sha", sha])
+            summary = json.loads(
+                (out / "metrics-fullfield-20260812.summary.json").read_text(encoding="utf-8"))
+            self.assertIs(summary["snapshot"]["sha_verified_against_head"], True)
+            self.assertEqual(summary["snapshot"]["sha"], sha)
+
+    def test_sha_mismatch_with_allow_flag_records_unverified(self):
+        tool = load_tool()
+        with tempfile.TemporaryDirectory() as td:
+            repo = Path(td) / "repo"
+            init_repo(repo)
+            write_pkg_metrics(repo, "author", "slug",
+                              make_metrics({"site_area_sqm": entry(100, "sqm")}))
+            commit_all(repo)
+            out = repo / "out"
+            tool.main(["--repo", str(repo), "--out-dir", str(out),
                        "--date", "20260812", "--sha", "deadbeef",
                        "--allow-sha-mismatch"])
-            summary_path = repo / "o" / "metrics-fullfield-20260812.summary.json"
-            summary = json.loads(summary_path.read_text(encoding="utf-8"))
+            summary = json.loads(
+                (out / "metrics-fullfield-20260812.summary.json").read_text(encoding="utf-8"))
             self.assertIs(summary["snapshot"]["sha_verified_against_head"], False)
+
+
+class DirtyWorktreeTest(unittest.TestCase):
+    def _ready_repo(self) -> tuple[Path, str]:
+        repo = Path(tempfile.mkdtemp()) / "repo"
+        init_repo(repo)
+        write_pkg_metrics(repo, "author", "slug",
+                          make_metrics({"site_area_sqm": entry(100, "sqm")}))
+        sha = commit_all(repo)
+        return repo, sha
+
+    def test_dirty_tracked_file_refused_even_with_allow_flag(self):
+        """The maintainer's repro: modify a tracked metrics.json without
+        committing, re-run with the ORIGINAL head sha - must refuse and
+        produce no publishable summary, even with --allow-sha-mismatch."""
+        tool = load_tool()
+        repo, sha = self._ready_repo()
+        try:
+            out = repo / "out"
+            # clean run first: produces a summary
+            tool.main(["--repo", str(repo), "--out-dir", str(out),
+                       "--date", "20260812", "--sha", sha])
+            # now dirty the tracked file without committing
+            write_pkg_metrics(repo, "author", "slug",
+                              make_metrics({"site_area_sqm": entry(1, "sqm")}))
+            out2 = repo / "out2"
+            with self.assertRaises(SystemExit):
+                tool.main(["--repo", str(repo), "--out-dir", str(out2),
+                           "--date", "20260812", "--sha", sha,
+                           "--allow-sha-mismatch"])
+            # fail-closed: no publishable summary was written
+            self.assertFalse((out2 / "metrics-fullfield-20260812.summary.json").exists())
+        finally:
+            import shutil
+            shutil.rmtree(repo.parent, ignore_errors=True)
+
+    def test_untracked_package_refused(self):
+        tool = load_tool()
+        repo, sha = self._ready_repo()
+        try:
+            write_pkg_metrics(repo, "author2", "slug2",
+                              make_metrics({"site_area_sqm": entry(50, "sqm")}))
+            out = repo / "out"
+            with self.assertRaises(SystemExit):
+                tool.main(["--repo", str(repo), "--out-dir", str(out),
+                           "--date", "20260812", "--sha", sha])
+            self.assertFalse((out / "metrics-fullfield-20260812.summary.json").exists())
+        finally:
+            import shutil
+            shutil.rmtree(repo.parent, ignore_errors=True)
+
+
+class IdentifiersOptInTest(unittest.TestCase):
+    def _ready_repo(self) -> tuple[Path, str]:
+        repo = Path(tempfile.mkdtemp()) / "repo"
+        init_repo(repo)
+        write_pkg_metrics(repo, "author", "slug",
+                          make_metrics({"site_area_sqm": entry(100, "sqm")}))
+        sha = commit_all(repo)
+        return repo, sha
+
+    def test_csv_gz_off_by_default(self):
+        tool = load_tool()
+        repo, sha = self._ready_repo()
+        try:
+            out = repo / "out"
+            tool.main(["--repo", str(repo), "--out-dir", str(out),
+                       "--date", "20260812", "--sha", sha])
+            self.assertTrue((out / "metrics-fullfield-20260812.summary.json").exists())
+            self.assertFalse(list(out.glob("*.csv.gz")),
+                             "identifiers table must not be written by default")
+        finally:
+            import shutil
+            shutil.rmtree(repo.parent, ignore_errors=True)
+
+    def test_csv_gz_opt_in_outside_worktree(self):
+        tool = load_tool()
+        repo, sha = self._ready_repo()
+        try:
+            outside = repo.parent / "outside-out"
+            tool.main(["--repo", str(repo), "--out-dir", str(outside),
+                       "--date", "20260812", "--sha", sha,
+                       "--write-local-identifiers"])
+            gz_files = list(outside.glob("*.csv.gz"))
+            self.assertEqual(len(gz_files), 1, "opt-in outside worktree writes csv.gz")
+        finally:
+            import shutil
+            shutil.rmtree(repo.parent, ignore_errors=True)
+
+    def test_csv_gz_refused_inside_worktree(self):
+        tool = load_tool()
+        repo, sha = self._ready_repo()
+        try:
+            out = repo / "out"
+            with self.assertRaises(SystemExit):
+                tool.main(["--repo", str(repo), "--out-dir", str(out),
+                           "--date", "20260812", "--sha", sha,
+                           "--write-local-identifiers"])
+            self.assertFalse(list(out.glob("*.csv.gz")),
+                             "no identifiers table inside the worktree")
+        finally:
+            import shutil
+            shutil.rmtree(repo.parent, ignore_errors=True)
 
 
 if __name__ == "__main__":
