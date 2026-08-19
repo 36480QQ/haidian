@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "自更新协议 (Self-Update Protocol)",
+  "core_claim_zh": "方案不是静态；定义当城市变化时回授机制哪部分必须重算的触发协议。",
+  "core_claim_en": "The scheme is not static; it defines a trigger protocol for which parts must be recalculated.",
+  "triggers": [
+    {
+      "trigger_zh": "文化遗产认知变化（如新历史研究修正京张叙事）",
+      "must_recalculate_zh": "回授物内容与导览叙事",
+      "recalculation_protocol_zh": "重新评估回授物内容，更新导览叙事与协作史"
+    },
+    {
+      "trigger_zh": "文物保护政策变化（如文保范围调整）",
+      "must_recalculate_zh": "回授物选址与干预等级",
+      "recalculation_protocol_zh": "重新评估回授物选址与干预登记，重跑文保三原则检查"
+    },
+    {
+      "trigger_zh": "游客行为变化（如体验方式变化）",
+      "must_recalculate_zh": "回授物使用验证阈值",
+      "recalculation_protocol_zh": "重新评估回授物使用阈值，重新校准'摆设化'判据"
+    },
+    {
+      "trigger_zh": "官方边界发布",
+      "must_recalculate_zh": "全部面积指标",
+      "recalculation_protocol_zh": "重算全部面积指标"
+    }
+  ],
+  "field_status": "not_authorized_not_run"
+}
