@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a476f3b23017e8fd168b8b10fbd3bc5ac7686dfefa21d97b1dd2e45dfb5da1ca"
+      "sha256": "59266b82219b848cbfeef6b223d09a9733b200ab777566097a7cd857ab6723f1"
     },
     {
       "path": "agent.json",
@@ -77,13 +77,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "2674164a62ebd8c093729760032fb868ee8a5ec767f00c707a346dbfb9c07342"
+      "sha256": "afb992324b06eebd41a8ef447ae997c169682fe665ac5f6be13eb2d95a0c6238"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d9953f5539ab9bcc1ebe568bd300de95bf79218aabb2bc62636d784b07bcf35c"
+      "sha256": "cf5df7af7fbb635a827147ffd31327c15982dfceccf157db3a4766d2db692df9"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3cd7982b3b7a12d89b329b046dfbbef6271c264c99ea6ba15852187a727aca0a"
+      "sha256": "3dc3ecb6a2a85d9b8872ddb47fff51e6cd11524b8a211a8739041f86e1cdcbf2"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "56be5360b9c13ee48ee672da9aac79168f24351cc1767b36282b31f8a80cde81"
+      "sha256": "77d3824de871bb82af0d83c64acbe4bc67fb3161c27dee3363866f42f777c0cf"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "de15bd8bbd3f7bc715db499eaa87d6eacb11da286d66d12e63b9c37d16ee7a0f"
+      "sha256": "faaa63a99ee49d1efae3980ba0440695a23fb79fc3f87e1413ee25079fd7c463"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "5938f6eedb7f7243065482211be7b3c9b1e4b29c3a2140ff9ba230f86dfa147f"
+      "sha256": "c4952020e8f620bd9c03182ca2bd7a2af9d8cc8fb479aa267cec497d517c7d2c"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -473,7 +473,7 @@
       "path": "assets/media/cover.png",
       "role": "media_poster",
       "required": false,
-      "sha256": "5e0a3af92209385e9b26f42f7a02a46a877f47351867f8cefa20fa362bd40399",
+      "sha256": "b90d94fb5cd0d8037246b28f3ab96178bdd6c1e9f3618f82eedb1d7f1b39ab3d",
       "title_zh": "京张交接线 · 画廊封面",
       "title_en": "Jing-Zhang Handover Line · gallery cover",
       "description_zh": "程序化绘制的画廊封面：标识、方案判据、以及取自 site_boundary/key_areas/roads 的真实走廊轮廓。本图只使用 OFL 字体（Noto Sans CJK SC / Noto Sans），不加载任何专有字体，也不含生成式图像素材。",
@@ -722,6 +722,16 @@
         "licence_text_location": "manifest.json#license.author_grant_zh",
         "third_party_content_zh": "无外部资源，grep -c 'https?://' 为 0",
         "verification_zh": "断网打开 + sha256"
+      },
+      {
+        "asset_class": "generated_illustration",
+        "label_zh": "模型生成插画",
+        "count": 1,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由参与者以文字提示词调用图像模型 gpt-image-2 生成，未提供任何参考图片、照片、地图或既有作品作为输入；仅用作 assets/media/cover.png 的背景层，封面文字另由本机 OFL 字体渲染。见 sources.json#IMAGEGEN-COVER-ILLUSTRATION。",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无：未向模型提供任何第三方图片、地图、商标或受保护版式；画面人物为无面部特征的剪影，不涉及肖像权。",
+        "verification_zh": "封面文字字形与图件、PDF 同源（Noto OFL），可 1:1 放大核对；提示词与不可复现性已登记在 sources.json#IMAGEGEN-COVER-ILLUSTRATION。"
       },
       {
         "asset_class": "media_tactile",
