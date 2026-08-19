@@ -1420,6 +1420,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M163",
+      "gate": "shipped_verifier_qa.py",
+      "target": "../submissions/jiangmuran/jingzhang-leveling-line/visual/assets/check_osm.js",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": false,
+      "what_zh": "把 `check_osm.js` 的失败计数改回只数标量表、不数结构断言——**本轮之前它就是这样**。装置随即把随包的 OSM 顶点数改错七个，而这个校验器照旧输出「Every scalar reproduced」并退出 0。",
+      "what_en": "Put check_osm.js's failure count back to the scalar table alone, ignoring the structural assertions — **which is what it did until this round**. The harness then makes the shipped OSM vertex count wrong by seven and the verifier still prints `Every scalar reproduced` and exits 0.",
+      "why_zh": "本包的教义是「一个不会失败的检查不是证据」，而这条教义从没有被用在**本包请评审亲自跑的那五个可执行文件**上。107 道闸门已被证明会失败，它们一个都不是。E126 证的是 `verify.js` **覆盖**到每一个一类指标——**覆盖不等于会发现错误**。",
+      "why_en": "This package's doctrine is that a check which cannot fail is not evidence, and it had never been applied to **the five executables the proposal tells the reviewer to run**. 107 gates are proven able to fail; not one of them is a shipped verifier. E126 proved that verify.js **covers** every class-1 metric, and coverage is not the same capability: a verifier can name every value and say nothing when one of them is wrong."
+    },
+    {
       "id": "M162",
       "gate": "term_consistency_qa.py",
       "target": "i18n_drawings.py",
@@ -1953,7 +1966,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 159,
+  "caught": 160,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2046,6 +2059,7 @@
     "sheet_scale_qa.py",
     "shipped_bilingual_qa.py",
     "shipped_validation_qa.py",
+    "shipped_verifier_qa.py",
     "source_citation_qa.py",
     "source_provenance_qa.py",
     "sources_qa.py",
@@ -2104,6 +2118,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 109 道闸门，其中 107 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 109 gates, 107 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 110 道闸门，其中 108 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 110 gates, 108 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
