@@ -4788,8 +4788,8 @@
         "../../drawings/a0-boards.pdf",
         "../../drawings/a0-boards.en.pdf"
       ],
-      "embedding_state": "referenced_not_embedded",
-      "source_or_resolution": "Read-only PyMuPDF inspection reports an unused Helvetica resource in all four Round 19 PDFs, zero visible Helvetica text spans, and no embedded Helvetica font program. Resource presence and non-use do not establish licence compliance.",
+      "embedding_state": "referenced_not_embedded_visible_route_labels",
+      "source_or_resolution": "Read-only PyMuPDF inspection of the final Round 47 PDFs reports 46 visible Helvetica spans: 44 Base-14 30 SEC / 3 MIN / 15 MIN route labels added in Round 47 plus one existing 155 label in each A0 file. No Helvetica font program is embedded. Reference and visible use do not establish licence compliance.",
       "evidence_state": "facts_recorded_compliance_unreviewed",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
