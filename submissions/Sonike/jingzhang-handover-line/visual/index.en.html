@@ -35,12 +35,44 @@
     [data-smart="off"] .scenario{border-color:#7d6a2c}
     [data-smart="off"] .manual{border-left-color:var(--yellow)}
     .no-js .switchbar .sw-btns{opacity:.45}
+  
+    /* 60 秒评审模式：纯本地状态，无网络、无存储。 */
+    .reviewbar{display:flex;gap:10px;align-items:center;margin:16px 0 4px;flex-wrap:wrap}
+    .reviewbar .rb-k{font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;opacity:.65}
+    .reviewbar button{font:600 12px/1.1 inherit;padding:8px 13px;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer;border-radius:3px}
+    .reviewbar button[aria-pressed="true"]{box-shadow:inset 0 0 0 2px currentColor}
+    .reviewbar button:focus-visible{outline:3px solid #d8402f;outline-offset:3px}
+    .r60panel{display:none}
+    html[data-mode="r60"] .section{display:none}
+    html[data-mode="r60"] .section.r60panel{display:block}
+    html[data-mode="r60"] .hero>div+div{display:none}
+    .r60panel h3{margin:22px 0 8px}
+    .r60panel .intro,.r60panel ul{max-width:74ch}
+    .r60panel h2{max-width:none}
+    .r60panel ul{margin:0;padding-left:1.15em}
+    .r60panel li{margin:0 0 8px}
   </style>
 </head>
 <body>
   <header class="top"><a class="brand" href="#top">JING-ZHANG HANDOVER LINE<small>OFFLINE REVIEW DESK / PACKAGE v1.15</small></a><nav><a href="#overview">Overview</a><a href="#scope">Scope</a><a href="#areas">Key Areas</a><a href="#scenarios">Scenarios</a><a href="#delivery">Delivery</a><a href="#shift-ledger">Shift Ledger</a><a href="#metrics">Metrics</a><a href="#evidence">Evidence</a></nav></header>
   <main id="top">
-    <section class="hero"><div><span class="eyebrow">GLOBAL AI INDUSTRY HIGHLAND &amp; PILGRIMAGE / REPRODUCIBLE PROTOCOL × CORRECTABLE LANDMARK</span><h1>HANDOVER<span>LINE</span></h1><p class="lead">Railway shift handover becomes a public protocol for moving good AI into the city faster. Begin with one movable Public Handover Table, then connect space, user, duty pair, cost, gates, offline rehearsal and human rollback in one reviewable chain.</p><div class="hero-facts"><div><b>12 / 12</b><small>offline tabletop tasks passed</small></div><div><b>48 / 48</b><small>takeover assertions passed</small></div><div><b>0 / 12</b><small>field tasks carried by the post-authorisation professional process</small></div></div><div class="switchbar"><div class="sw-top"><span class="sw-kicker">SMART LAYER</span><span class="sw-btns" role="group" aria-label="Smart layer switch"><button type="button" data-smart="on" aria-pressed="true">ON</button><button type="button" data-smart="off" aria-pressed="false">OFF</button></span></div><p class="sw-note" data-when="on">The twelve cards below show the belt with its smart layer on. <b>Switch it off and every card is replaced by how the same task is completed without AI, and by whom.</b></p><p class="sw-note" data-when="off" hidden>Smart layer off. The twelve cards now show the no-AI equivalent service. This is the test the proposal sets for itself, not a degraded mode: if the task cannot be completed without AI, the AI service does not open.</p><div class="sw-stats"><div><b>12 / 12</b><small>participant-controlled synthetic offline tasks completed; all 48 shutdown, takeover, disposal and rollback assertions passed</small></div><div class="warn"><b>0 / 12</b><small>the field rehearsal is led by safety and accessibility professionals once site authorisation is in place; field safety, measured accessibility and public acceptance are the outputs of that process, whose duty holders and trigger points are listed under Four Things That Make It Buildable</small></div></div></div></div><div><div class="hero-visual"><img src="../assets/figures/metrics-evidence.en.png" alt="Twelve-scenario offline rehearsal, first Public Handover Table pilot and the proof chain from space to rollback"></div><div class="protocol"><div class="step"><b>01</b><div><h3>BUILD → VERIFY</h3><p>Version, risk, duty person and shutdown method travel with every test.</p></div></div><div class="step"><b>02</b><div><h3>VERIFY → SHARE</h3><p>Results, licence, failure and limits travel together.</p></div></div><div class="step"><b>03</b><div><h3>SHARE → SERVE</h3><p>Human desk, no-AI equivalent, appeal and exit record remain.</p></div></div><div class="step"><b>04</b><div><h3>SERVE → BUILD</h3><p>Complaints, repairs and shutdown causes travel back to research as public learning — a four-step loop that returns a problem to where it was made.</p></div></div></div><div class="manual">Human takeover is not a fallback feature.<br>It is civic infrastructure.</div></div></section>
+    <section class="section r60panel" id="review60" aria-label="60-second review mode">
+      <span class="kicker">60 SECOND REVIEW</span>
+      <h2>60-Second Review Mode</h2>
+      <p class="intro"><b>The claim.</b> One continuous handover line connects building, validation, open sharing and public service; all twelve scenarios can be taken over by staff and returned to basic service. What this builds is not a cleverer service but a signature on every handover.</p>
+      <p class="intro"><b>Three boundaries.</b> (1) Every spatial proposal is derived from provisional boundaries and is a withdrawable concept, not an official redline. (2) The offline tabletop passed 12/12 with 48/48 takeover assertions; field tasks stand at 0/12 and are carried by the post-authorisation professional process. (3) This package represents no organisation and may not be presented as government endorsement, implementation approval or completed construction.</p>
+      <h3>Alternative text for the five core figures</h3>
+      <ul>
+        <li><b>F/01 Overall concept.</b> One north-south handover line strings together building, open sharing and city service; three Handover Yards, eight east-west stitch links, four civic landmarks. The dashed outline is a provisional extent and implies no redline or ownership.</li>
+        <li><b>F/02 Land-use structure.</b> Seven conceptual classes cover the provisional extent by topological partition, about 11.41 km² in total, 11 features and 0 intentional gaps; the three scope levels run 43.6 → 11.4 → 3. It states no current ownership or approved land use.</li>
+        <li><b>F/03 Three key areas.</b> At one scale, 1.93 / 1.04 / 0.72 km², carrying BUILD→VERIFY, VERIFY→SHARE and SHARE→SERVE. The three lines under each card are public-facing interfaces, not a construction list.</li>
+        <li><b>F/04 Movement and takeover.</b> One continuous spine, eight stitch links, twelve takeover points; the section fixes order and adjacency only — staffed counter, walkway and stop entrance must stay continuously reachable. It states no dimensions.</li>
+        <li><b>F/05 Proof chain.</b> Offline tasks 12/12, takeover assertions 48/48, field tasks 0/12; the P0 Public Handover Table has six removable components; cost class S is a formula, not a total. All of it is synthetic data and offline replay.</li>
+      </ul>
+      <h3>Evidence links</h3>
+      <p class="intro"><a href="../proposal.en.md">proposal.en.md</a> · <a href="../metrics.json">metrics.json</a> · <a href="../sources.json">sources.json</a> · <a href="../compliance_matrix.json">compliance_matrix.json</a> · <a href="../simulation.json">simulation.json</a> · <a href="../assumptions.json">assumptions.json</a> · <a href="assets/governance/rights-inventory.schema.json">rights-inventory.schema.json</a></p>
+    </section>
+    <section class="hero"><div><span class="eyebrow">GLOBAL AI INDUSTRY HIGHLAND &amp; PILGRIMAGE / REPRODUCIBLE PROTOCOL × CORRECTABLE LANDMARK</span><div class="reviewbar"><span class="rb-k">READING MODE</span><span role="group" aria-label="Reading mode switch"><button type="button" data-mode="full" aria-pressed="true">Full read</button> <button type="button" data-mode="r60" aria-pressed="false">60-second review</button></span></div><h1>HANDOVER<span>LINE</span></h1><p class="lead">Railway shift handover becomes a public protocol for moving good AI into the city faster. Begin with one movable Public Handover Table, then connect space, user, duty pair, cost, gates, offline rehearsal and human rollback in one reviewable chain.</p><div class="hero-facts"><div><b>12 / 12</b><small>offline tabletop tasks passed</small></div><div><b>48 / 48</b><small>takeover assertions passed</small></div><div><b>0 / 12</b><small>field tasks carried by the post-authorisation professional process</small></div></div><div class="switchbar"><div class="sw-top"><span class="sw-kicker">SMART LAYER</span><span class="sw-btns" role="group" aria-label="Smart layer switch"><button type="button" data-smart="on" aria-pressed="true">ON</button><button type="button" data-smart="off" aria-pressed="false">OFF</button></span></div><p class="sw-note" data-when="on">The twelve cards below show the belt with its smart layer on. <b>Switch it off and every card is replaced by how the same task is completed without AI, and by whom.</b></p><p class="sw-note" data-when="off" hidden>Smart layer off. The twelve cards now show the no-AI equivalent service. This is the test the proposal sets for itself, not a degraded mode: if the task cannot be completed without AI, the AI service does not open.</p><div class="sw-stats"><div><b>12 / 12</b><small>participant-controlled synthetic offline tasks completed; all 48 shutdown, takeover, disposal and rollback assertions passed</small></div><div class="warn"><b>0 / 12</b><small>the field rehearsal is led by safety and accessibility professionals once site authorisation is in place; field safety, measured accessibility and public acceptance are the outputs of that process, whose duty holders and trigger points are listed under Four Things That Make It Buildable</small></div></div></div></div><div><div class="hero-visual"><img src="../assets/figures/metrics-evidence.en.png" alt="Twelve-scenario offline rehearsal, first Public Handover Table pilot and the proof chain from space to rollback"></div><div class="protocol"><div class="step"><b>01</b><div><h3>BUILD → VERIFY</h3><p>Version, risk, duty person and shutdown method travel with every test.</p></div></div><div class="step"><b>02</b><div><h3>VERIFY → SHARE</h3><p>Results, licence, failure and limits travel together.</p></div></div><div class="step"><b>03</b><div><h3>SHARE → SERVE</h3><p>Human desk, no-AI equivalent, appeal and exit record remain.</p></div></div><div class="step"><b>04</b><div><h3>SERVE → BUILD</h3><p>Complaints, repairs and shutdown causes travel back to research as public learning — a four-step loop that returns a problem to where it was made.</p></div></div></div><div class="manual">Human takeover is not a fallback feature.<br>It is civic infrastructure.</div></div></section>
 
     <section class="section" id="overview"><span class="kicker">01 / OVERVIEW</span><h2>One line. Three yards.<br>Twelve reversible services.</h2><p class="intro">A 9.50-kilometre conceptual active-mobility line crosses the provisional site. Three yards carry Build→Verify, Verify→Share and Share→Serve. Eight east-west links express connectivity needs only; they are not road redlines or engineering conclusions.</p><figure class="figure"><img src="../assets/figures/site-overview.en.png" alt="Overall Handover Line concept and evidence map"><figcaption><span>site boundary + key areas + movement + public ground</span><span>PROVISIONAL / EPSG:4548</span></figcaption></figure></section>
 
@@ -84,6 +116,23 @@
     }
     root.classList.remove('no-js');
     apply('on');
+  })();
+
+  /* 阅读模式开关：纯本地状态切换，无网络、无存储、无表单。键盘可达。 */
+  (function () {
+    var root = document.documentElement;
+    var btns = document.querySelectorAll('.reviewbar button');
+    function apply(mode) {
+      if (mode === 'r60') { root.setAttribute('data-mode', 'r60'); }
+      else { root.removeAttribute('data-mode'); }
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].setAttribute('aria-pressed', String(btns[i].getAttribute('data-mode') === mode));
+      }
+    }
+    for (var k = 0; k < btns.length; k++) {
+      btns[k].addEventListener('click', function () { apply(this.getAttribute('data-mode')); });
+    }
+    apply('full');
   })();
   </script>
 </body>
