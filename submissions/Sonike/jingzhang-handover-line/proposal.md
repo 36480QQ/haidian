@@ -868,7 +868,7 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 
 | 资产类别（件数） | 权利人 | 生成方法 | 许可文本位置 | 第三方成分 | 核验方式 |
 | --- | --- | --- | --- | --- | --- |
-| 栅格图件 26 | 本包参与者 | 由 `geometry/*.geojson` 与 `metrics.json` 程序化渲染 | `manifest.json#license.author_grant_zh` | 无（字形按 OFL 栅格化为像素，不分发字体文件） | `manifest.json#files[].sha256` 逐文件比对 |
+| 栅格图件 26 | 本包参与者 | 由 `geometry/*.geojson` 与 `metrics.json` 程序化渲染 | `visual/assets/governance/rights-and-licence.json#license.author_grant_zh` | 无（字形按 OFL 栅格化为像素，不分发字体文件） | `manifest.json#files[].sha256` 逐文件比对 |
 | 图纸 PDF 4 套 | 本包参与者 | 同批渲染产物排版合成 | 同上 | 中文嵌入 OFL 字体子集；拉丁为 PDF 基础十四款 | `pdffonts` 看嵌入列 ＋ sha256 |
 | 正文与译稿 2 | 本包参与者 | 人工撰写，机器校验双语结构 | 同上 | 无 | 行号三项对齐检查 ＋ sha256 |
 | 几何图层 9 | 本包参与者 | 由公告文字与面积校核推演，EPSG:4548 | 同上 | 无（未使用商业地图、OSM 或新闻图） | `spatial_review` gate ＋ sha256 |
@@ -877,7 +877,7 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 | **模型生成插画 1** | 本包参与者 | 由参与者以提示词调用图像模型 gpt-image-2 生成，**未提供任何参考图片、照片、地图或既有作品**；仅作封面背景层，封面文字另由本机 OFL 字体渲染 | 同上 | 无（画面人物为无面部特征的剪影，不涉及肖像权） | 字形与图件、PDF 同源可 1:1 核对 ＋ `sources.json#IMAGEGEN-COVER-ILLUSTRATION` |
 | 音视频与触觉件 15 | 本包参与者 | 本机语音合成、程序化字幕与矢量制版 | `assets/media/*.md` 同文 | 无真人音色、无肖像、无第三方素材 | 字幕与正文同源比对 ＋ sha256 |
 
-**这张表可以被机器核对，而且已经核过。** `visual/assets/governance/rights-inventory.schema.json` 用 JSON Schema Draft 2020-12 约束 `rights_inventory` 的每一条：**权利人必须恒为 `package_participants`、许可文本位置必须以 `manifest.json#license.` 开头、生成方法／第三方成分／核验方式三项一个都不能空**，且不允许多余字段。用通用校验器（`jsonschema` 4.x）跑一遍，**错误数 0**。这意味着任何一类资产日后被悄悄加进来而没写清权利，校验会直接报错。 `manifest.json` 的 `files[]` 为 83 个条目、其中 82 个带 `sha256`（`manifest.json` 自身不自哈希）；`rights_inventory` 块登记上表六列，逐类指向对应的 `files[]` 条目。**第三方成分一栏全为「无」，本包据此才敢作出直接授权** [assumption:A-FONT-001] [depth:metrics_recalculation]。
+**这张表可以被机器核对，而且已经核过。** `visual/assets/governance/rights-inventory.schema.json` 用 JSON Schema Draft 2020-12 约束 `rights_inventory` 的每一条：**权利人必须恒为 `package_participants`、许可文本位置必须以 `visual/assets/governance/rights-and-licence.json#license.` 开头、生成方法／第三方成分／核验方式三项一个都不能空**，且不允许多余字段。用通用校验器（`jsonschema` 4.x）跑一遍，**错误数 0**。这意味着任何一类资产日后被悄悄加进来而没写清权利，校验会直接报错。 `manifest.json` 的 `files[]` 为 83 个条目、其中 82 个带 `sha256`（`manifest.json` 自身不自哈希）；`rights_inventory` 块登记上表六列，逐类指向对应的 `files[]` 条目。**第三方成分一栏全为「无」，本包据此才敢作出直接授权** [assumption:A-FONT-001] [depth:metrics_recalculation]。
 
 
 ### 三个许可信号冲突时，按哪个走

@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+- **把 `license` 与 `rights_inventory` 从 manifest 顶层迁到治理目录，确定性校验警告由 2 条降到 1 条（2026-08-19，不改版本号）。** 这两个字段是本包自造的，而已发布的 `brief/site-package/schemas/manifest.schema.json` 是 **`additionalProperties: false` 且不含任何扩展槽**（允许的顶层属性共 13 项，逐项对照后确认两者都不在其中）。因此每轮 CI 都会稳定输出一条 legacy advisory：`Additional properties are not allowed ('license', 'rights_inventory' were unexpected)`。
+  - **迁到 `visual/assets/governance/rights-and-licence.json`**，与该目录已有的 9 份治理产物（`governance_contract` / `governance_specification` / `governance_validation`）同列，新条目 role 记为 `governance_rights`。**内容逐字未改**，只换承载文件；文件内另附 `supersedes_zh`，写明 2026-08-19 之前的历史条目仍指向旧位置。选这个目录而不是包根，是因为 `scripts/validate_submission.py` 的 `PACKAGE_ROOT_JSON_FILES` 是一份九项固定白名单，新增根级 JSON 不在其内。
+  - **同步改掉 5 处引用**（`proposal.md` 2 处、`proposal.en.md` 2 处、`sources.json` 1 处），并用仓库公共渲染器 `scripts/render_proposal_html.py` 重出两份 HTML。重出后与旧文件逐段比对，**差异恰好 4 处、全部是那两条引用路径本身**，无渲染器版本漂移。`changelog.md` 里的历史条目按既有惯例保持原样，不追改。
+  - **实测结果**：确定性校验 warnings **2 → 1**，余下那条是组织方场地包的临时边界数据缺口（评审口径明确规定组织方数据缺口不降低 rubric 分数）；四道闸门 spatial / visual / professional 仍分别为 PASS(issues=3) / PASS(0) / PASS(0)，`review_status` 为 `formal-review-ready`。manifest 声明文件数 83 → 84，哈希已用 `refresh_submission_manifest.py` 全量刷新。
+  - **这条改动的性质要说清楚：它清掉的是一条 advisory，不是一处错误。**两次本地评审都把它记在「风险与合规意识」项下（原话是「manifest 的自定义 license、rights_inventory 对未来 schema 尚有兼容提醒」），同时都注明当前 0.1.x 校验通过、不构成入审阻断。**所以本轮不声称修复了缺陷，只声称把唯一一条本包自己造成的 CI 警告清零了**——剩下那条不属于本包可控范围。
+
 - **三个重点区终于长得不一样了，而依据全部来自已提交的几何（2026-08-19，不改版本号）。** 三份外部评审的唯一共识缺陷是「空间设计含量低、三个重点区更像三套运营策划而不是三套城市设计」。受两条硬约束限制——送审视觉输入 18 张已精确占满、不能加图；无审定控规、不能给高度强度退界——本轮不靠新图，改为**从已提交几何里把一个从没被写出来的空间论证挖出来**。
   - **三区形态对照表（七行，全部 EPSG:4548 可复算）**。用同一套方法复算主轴全长得 **9499.778 m，与 `metrics.json` 声明分毫不差**，因此表内「区内长度」可被同一把尺子复核。结果：众智园 954 × 2061 m、原点社区 948 × 1117 m、大钟寺 1116 × 657 m；**南北÷东西 = 2.16 → 1.18 → 0.59，单调翻转**；主轴在区内分别为 1999 m（21.0%）、1110 m（11.7%）、651 m（6.8%）。
   - **论证由此成立：一项能力越接近日常生活，走廊就越应该让位给横向的城市界面。** 北段是廊道主场（最狭长、占主轴 21%、三个需物理封闭的测试场景全在这里）；南段主轴只剩 6.8%，形状第一次翻成东西向大于南北向——**在服务真正与日常生活相接的那一段，这条线主动退出主角位置**。另补一个数说明「一线」不是修辞：主轴 9499.778 m 里**只有 3760 m（39.6%）落在三处重点区内，其余 5739 m 是三区之间的连接段**——本方案不是把三块地编号，而是把中间那 60% 也当成设计对象。
