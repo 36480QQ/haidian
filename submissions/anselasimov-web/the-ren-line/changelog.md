@@ -4,6 +4,20 @@
 
 > 本文件记录方案包的版本演进、每次迭代响应了什么反馈、以及仍然开放的问题。全部空间内容始终为概念建议,不构成审定结论。
 
+## v1.7 - 2026-08-19
+
+**评审通道图像完整性与展板可读性修复版**
+
+**动机**:响应内部红队预演(`review/RED-TEAM-20260819.md`)发现的具体缺口——官方"专家离线评审包"工具(`export_review_packet.py`)按 `proposal.md` 正文顺序原样内嵌 `![]()` 引用的图片渲染给人工评委,A3/A0 图纸本身不会被这条通道读取;而"总体概念与命名体系"(agent.1)整章此前零图像引用,是评委经这条通道阅读时唯一读不到图的正文主章。同时响应展板专项审计(`review/A0-AUDIT-20260819.md`)对 A0 展板的"3秒测试"不及格判定、A0内嵌位图仅~100dpi的实测瓶颈,以及 v1.6 新增的分期图/场景索引图未传导到 A0 的缺口。本版不改概念、不改任何既有图纸的构图与配色、不动 `tools/gen_drawings.py` 的 A3 生成代码。
+
+- **评审包通道图像修复**:`proposal.md`/`proposal.en.md` "总体概念与命名体系"(agent.1)章内,紧贴"总体空间结构为一撇一捺一顶点"段落后各插入一行既有图引用(复用 `site-overview(.en).png`,该图已在"设计依据与资料清单"章出现,此处按内容对应重复引用,不新增图像资产);中英各增 1 行,逐位同步,证据标签序列不变。核查确认"分期实施地图→phasing-plan.png"与"场景章→scenario-index.png"两处 v1.6 已插入到位,本版无需重复处理。
+- **A0-1 总览板重设计(3秒测试)**:人字形主意象由"页顶3%宽小logo"放大为版面视觉锚点——复用既有 `ren_mark()` 抽象标记逻辑(未新建PNG资产、未改动5张既有正式图纸),尺寸/线宽显著放大(横向占页面宽度约3%→约15%,线宽约×2.4~2.6倍),置于品牌区与内容区之间的独立醒目位置,并标注"一撇·记忆线/一捺·智能线"双语小注;`site-overview.png`/`key-areas.png` 两行相应收窄(高度约0.39→0.28页面分数)但保留完整,30秒读结构的信息链未被削弱。`scenario-index.png`(v1.6产物)以窄高比例插入嵌入 `key-areas.png` 行右侧新增小图列,首次上A0板。
+- **A0-2 系统板重设计(文字密度)**:面板标题字号提升(21/20pt→24/22pt);每行由"读图要点标题+4条项目符号+免责声明"精简为单条最具信息量的要点(原4条项目符号选其一,不改写原文措辞、逐字取自既有文案),免责声明由每行重复改为页尾单条共享;文字块由实测29个降至12个。同时新增第5行 `phasing-plan.png`(JZ-2026-11,v1.6产物,此前未上A0),行距/图框高度按比例收窄以容纳新增行。
+- **A0 内嵌位图 dpi 100→150**:定位到 `tools/gen_drawings.py` 的 `page()` 函数——A0/A3 共享该函数创建 matplotlib figure 时未显式传 `dpi`,统一沿用 rcParams 默认 100dpi 在嵌入 PDF 时重新采样图片,与源PNG本身150dpi无关(根因见 `review/A0-AUDIT-20260819.md` 第3节复现实验)。修复方式:给 `page()` 新增可选形参 `dpi=None`(不传即保留原行为,A3 全部调用点未改、行为不变),仅在 A0-1/A0-2 两处 `page()` 调用显式传 `dpi=150`。`pdfimages -list` 实测:A0 内嵌位图 x-ppi/y-ppi 由 100/100 提升到 150/150。目标值定为150而非审计建议的"200左右":150为 `gen_figures.py` 源PNG的原生dpi(`new_fig()` 用 `dpi=150`),150已是"不丢失源信息"的上限,200会对150dpi的源像素做无意义插值放大且体积更大;实测改为200会使提交包总体积(38.3MB→约41MB)超过 `validate_submission.py` 的40MiB硬限制(`MAX_TOTAL_BYTES`,已实测触发 `changed files total ... exceeds 41943040` 错误),150在体积与清晰度之间是当前约束下的可行折中,如实记录未采纳200的原因。
+- **A3 回归验证**:`tools/gen_drawings.py` 的 A3 生成代码段本身未改动一行;曾用改动后的脚本重渲 A3 验证页数与内容,确认中英均保持 16 页、`cmp -l` 逐字节比对显示仅 PDF 内部 `/CreationDate` 时间戳(4字节,位于文件尾部 trailer)与 v1.6 不同、其余字节相同;为避免这一与代码改动无关的时间戳差异被计入本次改动的文件体积与diff,最终提交物保留 v1.6 原始 `a3-booklet(.en).pdf` 字节(sha256 与 v1.6 完全一致),不采用重渲后的副本,确认 A3 零回归。
+- **manifest 刷新**:`drawings/a0-boards(.en).pdf`(中英各1份)因 A0 重设计与 dpi 提升重渲,体积从约3.06/3.14MB增至约4.04/4.20MB;`drawings/a3-booklet(.en).pdf` 保持 v1.6 原始字节不变;`proposal.md`/`proposal.en.md` 各新增1行图引用、frontmatter `iteration` 由 `v1.5` 更新为 `v1.7`(此前 v1.6 未同步更新此字段,一并修正);`report/proposal(.en).html` 随 `proposal.md`/`.en.md` 改动用当前 main 的 `scripts/render_proposal_html.py` 重渲;`manifest.json` 用当前 main 的 `scripts/refresh_submission_manifest.py` 统一刷新受影响文件 sha256;`schema_version` 保持 `0.1.0` 不变;未设置 `readiness_contract`(与 v1.5/v1.6 一致,避免把既有4条 legacy advisory WARNING 升级为阻断 ERROR);提交包总体积由34.5MB增至约36.5MB,在40MiB硬限制内(margin约3.5MB)。
+- 自检:当前 main 校验脚本下 `validate_local_submission` 与 `self_check_submission` 四门全部 PASS;双语契约检查通过(证据标签序列 zh/en 完全一致);详见 `contrib/V17/VERIFICATION.md`。
+
 ## v1.6 - 2026-08-19
 
 **图面增强版:响应图面可读性审计,补齐显示面必填项**
