@@ -312,6 +312,36 @@ class DirtyWorktreeTest(unittest.TestCase):
             import shutil
             shutil.rmtree(repo.parent, ignore_errors=True)
 
+    def test_deleted_non_scannable_file_does_not_block(self):
+        """Sparse-checkout checkouts report unmatched tracked paths as
+        deleted; those files do not feed the statistics and must not block
+        a legitimate scan. A deleted scannable file (metrics.json) MUST."""
+        tool = load_tool()
+        repo = Path(tempfile.mkdtemp()) / "repo"
+        init_repo(repo)
+        try:
+            write_pkg_metrics(repo, "author", "slug",
+                              make_metrics({"site_area_sqm": entry(100, "sqm")}))
+            (repo / "submissions" / "author" / "slug" / "assets").mkdir()
+            (repo / "submissions" / "author" / "slug" / "assets" / "fig.png").write_text("x")
+            sha = commit_all(repo)
+            # delete a NON-scannable tracked file -> scan may proceed
+            (repo / "submissions" / "author" / "slug" / "assets" / "fig.png").unlink()
+            out = repo / "out"
+            tool.main(["--repo", str(repo), "--out-dir", str(out),
+                       "--date", "20260812", "--sha", sha])
+            self.assertTrue((out / "metrics-fullfield-20260812.summary.json").exists())
+            # now delete a SCANNABLE tracked file -> must refuse
+            (repo / "submissions" / "author" / "slug" / "metrics.json").unlink()
+            out2 = repo / "out2"
+            with self.assertRaises(SystemExit):
+                tool.main(["--repo", str(repo), "--out-dir", str(out2),
+                           "--date", "20260812", "--sha", sha])
+            self.assertFalse((out2 / "metrics-fullfield-20260812.summary.json").exists())
+        finally:
+            import shutil
+            shutil.rmtree(repo.parent, ignore_errors=True)
+
 
 class IdentifiersOptInTest(unittest.TestCase):
     def _ready_repo(self) -> tuple[Path, str]:
