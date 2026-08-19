@@ -747,7 +747,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 378,
+      "value": 379,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -827,7 +827,7 @@
       "source_files": [
         "visual/assets/osm_reference.json"
       ],
-      "formula": "count(coordinates in osm_reference.geometry)",
+      "formula": "sum(len(coordinates)) over osm_reference.geometry.osm_park and .osm_rail_query_result — the redistributed OSM vertices only, which is what the ODbL claim is about; this package's own provisional rings in the same file are not OSM data and are not counted here",
       "confidence": "high",
       "assumptions": [
         "© OpenStreetMap contributors，ODbL 1.0；由 check_osm.js 复算全部十个已发布标量。"
