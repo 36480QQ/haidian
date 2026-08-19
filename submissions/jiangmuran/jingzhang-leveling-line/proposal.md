@@ -1660,7 +1660,7 @@ node visual/assets/verify.js
 
 仓库的 `validate_submission.py` 内建 `validate_simulation_consistency`，会把 `simulation.json` 的任务记录与 `metrics.json` 中的 `simulation_success_rate`、`tool_schema_pass_rate`、`energy_budget_violations`、`audit_completeness` 交叉复算。<!-- SIMJSON:BEGIN -->
 
-全场 793 份中有 **26 份**提交了它——名单在随包的 `visual/assets/field_extras.json` 的 `simulation_json.keys` 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。
+全场 793 份中有 **27 份**提交了它——名单在随包的 `visual/assets/field_extras.json` 的 `simulation_json.keys` 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。
 
 <!-- SIMJSON:END -->
 
@@ -1676,7 +1676,7 @@ node visual/assets/verify.js
 
 **这一段此前写的是「全场没有一份勘误」。重测后它是错的，所以改在这里。**
 
-当前 793 份中，**9 份**随包提交了独立的勘误文件——本方案，以及 `147228`, `LShengYi`, `dingle2001`, `felix-lhz`, `irisquirrel`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder`；另有 **13 份**在正文里出现「自查发现并修正」一类表述。这个数字在本方案首次写下那句话时是 1（只有本方案），现在不是了。
+当前 793 份中，**9 份**随包提交了独立的勘误文件——本方案，以及 `147228`, `LShengYi`, `dingle2001`, `felix-lhz`, `irisquirrel`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder`；另有 **14 份**在正文里出现「自查发现并修正」一类表述。这个数字在本方案首次写下那句话时是 1（只有本方案），现在不是了。
 
 改掉而不是留着，是因为**这句话本身就是本方案论点的实例**：一个在语料变化后不再成立的断言，作者不复测就会一直读起来像真的。**因此只声称一件更窄也更可查的事：勘误册应由构建生成，并被闸门约束到「每条都能 join 回仓库」。**`build_errata.py` 每次构建校验 commit 存在且确实改过它指认的文件；这是可被外部复核的差别，条目多少不是。
 
@@ -1981,7 +1981,7 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 
 因此上面 12 项里，**AI 评审能按字面执行的是 0 项**：其余各项指名的文件不在它收到的东西里。**拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。**这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。
 
-**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.74 秒**；另有 9 份**不在评审输入里的**文件、1245 KB、1,858 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
+**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.71 秒**；另有 9 份**不在评审输入里的**文件、1245 KB、1,858 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
 
 **这条披露有时效，而缺口已经补上。** Issue #2170 对应的 PR #2181 已并入 `upstream/main`：review-input 里有了可审计的访问边界，明确参赛者的校验脚本从不执行，并要求评审**不得仅因打不开一份未提供的 artifact 就扣分或判 gate 失败**。上面的「0 项」不变，变的是它的后果：可达性不再被误读为投稿方没有提供（E210）。本包已按该恢复路径做过——关键推导同步写进 `assumptions.json` 与 `metrics.json`，三份矩阵逐行标注证据的可达程度。
 

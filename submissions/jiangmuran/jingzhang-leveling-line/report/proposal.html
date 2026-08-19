@@ -744,7 +744,7 @@ code {
 <p>63 条全部有据。把下限改成重算的意义在于：<strong>如果哪天某类交付物被删掉一个，构建会失败，而不是矩阵继续声称它还在。</strong></p>
 <h3>一处<strong>故意不交</strong>的交付物：<code>simulation.json</code></h3>
 <p>仓库的 <code>validate_submission.py</code> 内建 <code>validate_simulation_consistency</code>，会把 <code>simulation.json</code> 的任务记录与 <code>metrics.json</code> 中的 <code>simulation_success_rate</code>、<code>tool_schema_pass_rate</code>、<code>energy_budget_violations</code>、<code>audit_completeness</code> 交叉复算。&lt;!-- SIMJSON:BEGIN --&gt;</p>
-<p>全场 793 份中有 <strong>26 份</strong>提交了它——名单在随包的 <code>visual/assets/field_extras.json</code> 的 <code>simulation_json.keys</code> 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。</p>
+<p>全场 793 份中有 <strong>27 份</strong>提交了它——名单在随包的 <code>visual/assets/field_extras.json</code> 的 <code>simulation_json.keys</code> 里，逐条可查。本方案不交，理由必须写出来，否则这只是一处空缺。</p>
 <p>&lt;!-- SIMJSON:END --&gt;</p>
 <p><strong>第一，那个 schema 要的数本方案没有依据。</strong> 它按智能体调度仿真设计：逐任务的 outcome、能耗与能耗预算、dispatch schema 校验结果。本方案没有做过任何设备调度仿真，也没有任何能耗测算基础——填进去的每一个数都会是编的。</p>
 <p><strong>第二，唯一能诚实塞进那个形状的东西，会产出一个被读错的数。</strong> 随包的十例桌面演练确实是任务记录：每例有确定的输入、确定的判定、确定的期望。但它的「成功率」是 <strong>10/10 判定与规格一致</strong>，而 <code>simulation_success_rate: 1.0</code> 在任何评审眼里读起来都是「这个场景百分之百成功」。两者相差极远：演练证明的是<strong>判定逻辑可复现、拒绝分支确实会触发</strong>，它不证明任何实地读数、任何真实复核主体、任何服务绩效。</p>
@@ -752,7 +752,7 @@ code {
 <p><strong>一旦本方案获得真实的调度或能耗数据，这个文件应当补上。</strong> 缺的不是意愿，是依据。</p>
 <p>&lt;!-- SELFCORRECTION:BEGIN --&gt;</p>
 <p><strong>这一段此前写的是「全场没有一份勘误」。重测后它是错的，所以改在这里。</strong></p>
-<p>当前 793 份中，<strong>9 份</strong>随包提交了独立的勘误文件——本方案，以及 <code>147228</code>, <code>LShengYi</code>, <code>dingle2001</code>, <code>felix-lhz</code>, <code>irisquirrel</code>, <code>lqqk7</code>, <code>wocaonimaworinixi-collab</code>, <code>youngkermit8-coder</code>；另有 <strong>13 份</strong>在正文里出现「自查发现并修正」一类表述。这个数字在本方案首次写下那句话时是 1（只有本方案），现在不是了。</p>
+<p>当前 793 份中，<strong>9 份</strong>随包提交了独立的勘误文件——本方案，以及 <code>147228</code>, <code>LShengYi</code>, <code>dingle2001</code>, <code>felix-lhz</code>, <code>irisquirrel</code>, <code>lqqk7</code>, <code>wocaonimaworinixi-collab</code>, <code>youngkermit8-coder</code>；另有 <strong>14 份</strong>在正文里出现「自查发现并修正」一类表述。这个数字在本方案首次写下那句话时是 1（只有本方案），现在不是了。</p>
 <p>改掉而不是留着，是因为<strong>这句话本身就是本方案论点的实例</strong>：一个在语料变化后不再成立的断言，作者不复测就会一直读起来像真的。<strong>因此只声称一件更窄也更可查的事：勘误册应由构建生成，并被闸门约束到「每条都能 join 回仓库」。</strong><code>build_errata.py</code> 每次构建校验 commit 存在且确实改过它指认的文件；这是可被外部复核的差别，条目多少不是。</p>
 <p>&lt;!-- SELFCORRECTION:END --&gt;</p>
 <p>&lt;!-- ERRATA:COUNT:BEGIN --&gt;</p>
@@ -842,7 +842,7 @@ code {
 <p><strong>这 12 项可复核清单已移入 <code>compliance_matrix.json</code> 的 <code>reviewer_checklist</code></strong>，随包提交，逐项可在不联系作者的情况下独立完成。</p>
 <p><strong>先说清楚这份清单是给谁的。</strong> 仓库的 <code>scripts/review_submission.py</code> 只把九个文件整份交给评审模型——<code>proposal.md</code>、<code>manifest.json</code>、<code>metrics.json</code>、<code>assumptions.json</code>、<code>sources.json</code>、<code>self_check.json</code> 与三份矩阵——外加十八张图像：五个图纸路径、四份 PDF 的第一页、两个页面的首屏截图，每一项中英各一张（清单见 <code>visual/assets/visual_packet_qa.json</code>）。它<strong>不读</strong> <code>geometry/</code>、<code>visual/assets/</code>、<code>risk.json</code>、<code>changelog.md</code> 与 <code>agent.json</code>。</p>
 <p>因此上面 12 项里，<strong>AI 评审能按字面执行的是 0 项</strong>：其余各项指名的文件不在它收到的东西里。<strong>拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。</strong>这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。</p>
-<p><strong>FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。</strong> 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 <strong>0.74 秒</strong>；另有 9 份<strong>不在评审输入里的</strong>文件、1245 KB、1,858 条要读，逐条读数随包提交于 <code>visual/assets/review_route.json</code>。计时界定的是<strong>工作量</strong>而不是难度。</p>
+<p><strong>FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。</strong> 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 <strong>0.71 秒</strong>；另有 9 份<strong>不在评审输入里的</strong>文件、1245 KB、1,858 条要读，逐条读数随包提交于 <code>visual/assets/review_route.json</code>。计时界定的是<strong>工作量</strong>而不是难度。</p>
 <p><strong>这条披露有时效，而缺口已经补上。</strong> Issue #2170 对应的 PR #2181 已并入 <code>upstream/main</code>：review-input 里有了可审计的访问边界，明确参赛者的校验脚本从不执行，并要求评审<strong>不得仅因打不开一份未提供的 artifact 就扣分或判 gate 失败</strong>。上面的「0 项」不变，变的是它的后果：可达性不再被误读为投稿方没有提供（E210）。本包已按该恢复路径做过——关键推导同步写进 <code>assumptions.json</code> 与 <code>metrics.json</code>，三份矩阵逐行标注证据的可达程度。</p>
 <p>&lt;!-- CHECKLIST:END --&gt;</p>
 <h2>参考资料</h2>
