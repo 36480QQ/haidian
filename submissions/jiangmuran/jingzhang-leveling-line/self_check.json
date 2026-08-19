@@ -495,7 +495,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A sheet that keys land use must key every class it draws.",
-      "message": "legend_covers_fills_qa.py — legend coverage: 4 built sheet(s) across 2 languages draw land use, 28 class instances in all, and every class any of them draws is named in that sheet's own key — matched on the declaration each element carries, never on its colour"
+      "message": "legend_covers_fills_qa.py — legend coverage: 6 built sheet(s) across 2 languages draw land use, 42 class instances in all, and every class any of them draws is named in that sheet's own key — matched on the declaration each element carries, never on its colour"
     },
     {
       "check_id": "PKG_LICENSE_BOUND_QA",
@@ -1313,7 +1313,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30957431,
+      "total_bytes": 30957428,
       "maintainer_bypass": false
     },
     "stderr": ""
