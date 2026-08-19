@@ -1420,6 +1420,18 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M166",
+      "gate": "raster_integrity_qa.py",
+      "target": "drawings/a3-booklet.pdf",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把 A3 文册中间的 64 个字节置零。文件头与结尾都在，**pypdf 照样打开它**，报出十三页并抽出第一页的文字——因为损坏落在第一页用不到的那条流里。闸门按字典声明的 `/Length` 逐条解压，报出那一条。",
+      "what_en": "Zero 64 bytes in the middle of the A3 booklet. Header and trailer are both there and **pypdf opens it regardless**, reporting thirteen pages and extracting page one's text, because the damage sits in a stream page one does not need. The gate inflates each stream for the length its own dictionary declares and names the one that fails.",
+      "why_zh": "PDF 没有任何校验和。PNG 每块自带 CRC32，所以 E394 那一次是算术；这里只能靠解压本身。**本检查的第一版误告了一个健康文件**：按 `stream`…`endstream` 盲扫并解压，在未损坏的 PDF 里报出 21 条中 10 条坏——因为 `endstream` 会出现在二进制数据里，且并非每条流都是 Flate 压缩的。",
+      "why_en": "A PDF carries no checksum anywhere. A PNG chunk carries a CRC32, which is why E394 was arithmetic; here the only evidence is whether the bytes inflate. **The first version of this check accused a healthy file**: scanning blindly between `stream` and `endstream` reported 10 of 21 streams broken in an undamaged PDF, because endstream occurs inside binary data and not every stream is Flate-compressed. The honest form reads the object dictionary and trusts only what it declares."
+    },
+    {
       "id": "M165",
       "gate": "raster_integrity_qa.py",
       "target": "assets/figures/key-areas.png",
@@ -1990,7 +2002,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 162,
+  "caught": 163,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
