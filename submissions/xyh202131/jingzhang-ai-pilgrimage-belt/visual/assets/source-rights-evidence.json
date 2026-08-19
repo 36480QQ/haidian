@@ -4788,8 +4788,22 @@
         "../../drawings/a0-boards.pdf",
         "../../drawings/a0-boards.en.pdf"
       ],
-      "embedding_state": "referenced_not_embedded_visible_route_labels",
-      "source_or_resolution": "Read-only PyMuPDF inspection of the final Round 47 PDFs reports 46 visible Helvetica spans: 44 Base-14 30 SEC / 3 MIN / 15 MIN route labels added in Round 47 plus one existing 155 label in each A0 file. No Helvetica font program is embedded. Reference and visible use do not establish licence compliance.",
+      "embedding_state": "referenced_not_embedded_visible_publication_text",
+      "source_or_resolution": "Read-only PyMuPDF inspection of the current Round 48 PDFs reports 86 visible Helvetica spans. No Helvetica font program is embedded. Reference and visible use do not establish licence compliance.",
+      "evidence_state": "facts_recorded_compliance_unreviewed",
+      "independent_review_status": "not_started",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-02"
+      ]
+    },
+    {
+      "font_id": "FONT-HEITI-R48-PDF-RESOURCE",
+      "scope": [
+        "../../drawings/a3-booklet.pdf",
+        "../../drawings/a0-boards.pdf"
+      ],
+      "embedding_state": "referenced_not_embedded_visible_publication_text",
+      "source_or_resolution": "Read-only PyMuPDF inspection of the current Round 48 Chinese PDFs reports 46 visible Heiti CID spans using china-s / UniGB-UTF16-H. No Heiti font program is embedded. Local Poppler QA substituted SimSun because a display font was unavailable; that substitution is not embedded in final PDF bytes. Reference or QA substitution does not establish licence compliance.",
       "evidence_state": "facts_recorded_compliance_unreviewed",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
@@ -4879,14 +4893,9 @@
     },
     {
       "font_id": "FONT-NOTO-R19-PDF-SUBSETS",
-      "scope": [
-        "../../drawings/a3-booklet.pdf",
-        "../../drawings/a3-booklet.en.pdf",
-        "../../drawings/a0-boards.pdf",
-        "../../drawings/a0-boards.en.pdf"
-      ],
-      "embedding_state": "embedded_subset",
-      "source_or_resolution": "Local NotoSansSC-VF.ttf name-table version 2.04;241114210130;non-release, SHA-256 763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a, declared SIL OFL 1.1. Deterministic static weight 500 has SHA-256 3ef498f03c2b1c00f74907090970646494dda4da5bb7d5e23ffe4b750cad4fe8 and weight 700 has SHA-256 6d633cfffc1537797454d7ad68511abc8e9956f8292e1f1d71eace723af1fa54; the four Round 19 PDFs expose visible NotoSansSC-Medium and NotoSansSC-Bold subset names. No source or temporary static font binary ships, and embedding does not establish licence compliance.",
+      "scope": [],
+      "embedding_state": "historical_not_present_in_round_48_current_pdfs",
+      "source_or_resolution": "Historical Round 19-derived PDFs exposed embedded NotoSansSC-Medium and NotoSansSC-Bold subsets. The current Round 48 PDFs were rebuilt in full and read-only inspection finds no Noto subset. This record preserves history only and does not scope the current files or establish licence compliance.",
       "evidence_state": "facts_recorded_compliance_unreviewed",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
