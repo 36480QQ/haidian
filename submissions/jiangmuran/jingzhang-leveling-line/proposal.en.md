@@ -720,7 +720,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (478); a non-AI equivalent path (365); an on-site safety officer (330); remote and physical e-stop (175); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 478. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 793-proposal corpus: scenario-level suspension and exit conditions (478); a non-AI equivalent path (364); an on-site safety officer (330); remote and physical e-stop (175); speed limits (98); event logs (67). The thinnest is at 67, the thickest at 478. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1399,10 +1399,10 @@ Operation is organised by **re-survey cycle rather than festival calendar**, whi
 
 | Confidence | Metrics | Why |
 |---|---|---|
-| `high` | `key_area_count`, `benchmark_count` | Pure counts. They count features in shipped files and do not depend on the boundary being accurate—move the whole boundary and the counts do not change |
+| `high` | [metric:key_area_count], [metric:benchmark_count] | Pure counts. They count features in shipped files and do not depend on the boundary being accurate—move the whole boundary and the counts do not change |
 | `medium` | Areas, lengths, every ratio | Exactly recomputable, but their *meaning* depends on the provisional boundary approximating the official one. Recomputed as a whole when official polygons appear |
-| `low` | `building_footprint_area_sqm` | Indicative positions, order of magnitude only; not a basis for any area claim |
-| `unknown` | `floor_area_ratio` | Depends on official FAR controls and the redline, neither published, so `value: null` rather than an estimate |
+| `low` | [metric:building_footprint_area_sqm] | Indicative positions, order of magnitude only; not a basis for any area claim |
+| `unknown` | [metric:floor_area_ratio] | Depends on official FAR controls and the redline, neither published, so `value: null` rather than an estimate |
 
 **Package-level `data_confidence` is `medium`.** The manifest previously said `medium` at the top level and `high` inside `validation_claim`—two package-level confidences disagreeing inside one file. They now agree, at `medium`, because nearly every published figure here belongs to the second row: computed exactly, on a boundary that is not the official one.
 
@@ -1842,7 +1842,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files none of which the reviewer receives, 1220 KB, 1,842 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files none of which the reviewer receives, 1222 KB, 1,843 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
