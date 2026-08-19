@@ -1963,5 +1963,246 @@
       "independent_verification_zh": "四个 HTML 的外部 http(s) 引用数为 0；图件与图纸均为静态位图或矢量。"
     }
   ],
-  "self_check_expectations_note_zh": "三个矩阵的 self_check_ids 引用的就是本表的 expectation_id。此前这些标签只在矩阵里出现、包内没有定义，而本包的 G01 闸门声称「三个矩阵里的每一条引用都必须能在包内解析到实体」——该自陈对其中 16 个标签（81 处引用）并不成立。本表把它们逐条定义在矩阵自身，因此引用与定义同文件可解析。covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。"
+  "self_check_expectations_note_zh": "三个矩阵的 self_check_ids 引用的就是本表的 expectation_id。此前这些标签只在矩阵里出现、包内没有定义，而本包的 G01 闸门声称「三个矩阵里的每一条引用都必须能在包内解析到实体」——该自陈对其中 16 个标签（81 处引用）并不成立。本表把它们逐条定义在矩阵自身，因此引用与定义同文件可解析。covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。",
+  "taskbook_entry_map": {
+    "notice_zh": "任务要求—正文入口—图号—结构化入口—空间对象—指标—失效条件的机器可读总图。每项要求只有一个入口；下方 uniqueness_check 是本文件生成时自动核对的结果。",
+    "notice_en": "A machine-readable map from taskbook requirement to text entry, figure, structured entry, spatial object, metric and failure condition. Each requirement has exactly one entry; uniqueness_check below is computed automatically when this file is generated.",
+    "entry_count": 19,
+    "uniqueness_check": {
+      "duplicate_requirement_names": 0,
+      "duplicate_entry_quadruples": 0,
+      "metric_ids_not_found_in_metrics_json": [],
+      "result": "pass"
+    },
+    "entries": [
+      {
+        "entry_id": "POS-1",
+        "requirement_zh": "定位·百年京张文化带",
+        "requirement_en": "Positioning: Centennial Jing-Zhang cultural belt",
+        "section_zh": "一条铁路留下的三件遗产",
+        "figure": "F/01",
+        "structured_entry": "sources.json#SRC-JINGZHANG-1909",
+        "spatial_object": "LANDMARK-01…04",
+        "metric_id": "civic_landmark_count",
+        "failure_condition_zh": "四处地标中任一处无法在公共空间被看见或无法被撤除",
+        "failure_condition_en": "Any of the four landmarks cannot be seen in public space or cannot be removed"
+      },
+      {
+        "entry_id": "POS-2",
+        "requirement_zh": "定位·都市 AI 生活体验带",
+        "requirement_en": "Positioning: Urban AI living-experience belt",
+        "section_zh": "AI 创新生态、人才画像与 AI+ 场景",
+        "figure": "F/04",
+        "structured_entry": "geometry/public_space.geojson#SCN-01…12",
+        "spatial_object": "SCN-01…12",
+        "metric_id": "scenario_node_count",
+        "failure_condition_zh": "任一场景不能由人工接管并回到基础服务",
+        "failure_condition_en": "Any scenario cannot be taken over by staff and returned to basic service"
+      },
+      {
+        "entry_id": "POS-3",
+        "requirement_zh": "定位·AI 融合创新带",
+        "requirement_en": "Positioning: AI convergence innovation belt",
+        "section_zh": "统筹研究范围产业与未来城市研究",
+        "figure": "JZ/03",
+        "structured_entry": "compliance_matrix.json#agent.2",
+        "spatial_object": "统筹研究范围 43.6 km²",
+        "metric_id": "site_area_sqm",
+        "failure_condition_zh": "协同接口无首个可交换成果，仅停留在意向",
+        "failure_condition_en": "An interface has no first exchangeable output and stops at intent"
+      },
+      {
+        "entry_id": "FUN-1",
+        "requirement_zh": "功能·AI 全栈自主创新体系",
+        "requirement_en": "Function: Full-stack self-reliant AI innovation system",
+        "section_zh": "五大功能表第 1 行",
+        "figure": "F/03",
+        "structured_entry": "geometry/key_areas.geojson#PROV-KEY-001",
+        "spatial_object": "研制交接场 1.93 km²",
+        "metric_id": "key_area_count",
+        "failure_condition_zh": "测试批次缺版本、范围或已知故障记录仍被接收",
+        "failure_condition_en": "A test batch missing version, scope or known-fault record is still accepted"
+      },
+      {
+        "entry_id": "FUN-2",
+        "requirement_zh": "功能·世界级 AI 创新生态",
+        "requirement_en": "Function: World-class AI innovation ecosystem",
+        "section_zh": "五大功能表第 2 行",
+        "figure": "JZ/06",
+        "structured_entry": "geometry/key_areas.geojson#PROV-KEY-002",
+        "spatial_object": "开源交接场 1.04 km²",
+        "metric_id": "key_area_count",
+        "failure_condition_zh": "成果许可不可解析仍被上架",
+        "failure_condition_en": "An output with unresolvable licence is still listed"
+      },
+      {
+        "entry_id": "FUN-3",
+        "requirement_zh": "功能·AI+ 场景赋能新范式",
+        "requirement_en": "Function: New paradigm of AI+ scenario enablement",
+        "section_zh": "五大功能表第 3 行",
+        "figure": "JZ/08",
+        "structured_entry": "simulation.json#tasks",
+        "spatial_object": "十二个场景节点",
+        "metric_id": "industry_validation_scenario_count",
+        "failure_condition_zh": "场景在无 AI 等价四项验收未通过时开放",
+        "failure_condition_en": "A scenario opens while the four non-AI-equivalent checks have not passed"
+      },
+      {
+        "entry_id": "FUN-4",
+        "requirement_zh": "功能·智能化 AI 活力城市",
+        "requirement_en": "Function: Intelligent and vibrant AI city",
+        "section_zh": "五大功能表第 4 行",
+        "figure": "JZ/09",
+        "structured_entry": "geometry/key_areas.geojson#PROV-KEY-003",
+        "spatial_object": "城市交接场 0.72 km²",
+        "metric_id": "public_space_ratio",
+        "failure_condition_zh": "城市服务只剩智能界面，人工窗口被撤",
+        "failure_condition_en": "A city service is left with only a smart interface after the counter is withdrawn"
+      },
+      {
+        "entry_id": "FUN-5",
+        "requirement_zh": "功能·AI 治理全球话语权",
+        "requirement_en": "Function: Global voice in AI governance",
+        "section_zh": "国际传播：把「全球关注」建立在可复核的记录上",
+        "figure": "JZ/05",
+        "structured_entry": "visual/assets/governance/shift-ledger.schema.json",
+        "spatial_object": "百年值班簿＋年度交接账",
+        "metric_id": "offline_takeover_assertion_count",
+        "failure_condition_zh": "对外发布无法被他人按同一 schema 复算",
+        "failure_condition_en": "A published record cannot be recomputed by others against the same schema"
+      },
+      {
+        "entry_id": "AREA-1",
+        "requirement_zh": "三区·众智园",
+        "requirement_en": "Area: Zhongzhiyuan",
+        "section_zh": "众智园：研制交接场",
+        "figure": "JZ/07",
+        "structured_entry": "geometry/key_areas.geojson#PROV-KEY-001",
+        "spatial_object": "PROV-KEY-001",
+        "metric_id": "key_area_zhongzhiyuan_sqm",
+        "failure_condition_zh": "该区未完成 BUILD→VERIFY 的责任转换即向外扩点",
+        "failure_condition_en": "The area extends outward before completing the BUILD→VERIFY transfer"
+      },
+      {
+        "entry_id": "AREA-2",
+        "requirement_zh": "三区·北京 AI 原点社区",
+        "requirement_en": "Area: Beijing AI Origin Community",
+        "section_zh": "北京 AI 原点社区：开源交接场",
+        "figure": "JZ/07",
+        "structured_entry": "geometry/key_areas.geojson#PROV-KEY-002",
+        "spatial_object": "PROV-KEY-002",
+        "metric_id": "key_area_origin_community_sqm",
+        "failure_condition_zh": "开源发布未同时公开失败与适用边界",
+        "failure_condition_en": "An open release omits failures and limits of applicability"
+      },
+      {
+        "entry_id": "AREA-3",
+        "requirement_zh": "三区·大钟寺",
+        "requirement_en": "Area: Dazhongsi",
+        "section_zh": "大钟寺：城市交接场",
+        "figure": "JZ/07",
+        "structured_entry": "geometry/key_areas.geojson#PROV-KEY-003",
+        "spatial_object": "PROV-KEY-003",
+        "metric_id": "key_area_dazhongsi_sqm",
+        "failure_condition_zh": "城市服务无申诉路径或无退出记录",
+        "failure_condition_en": "A city service has no appeal route or no exit record"
+      },
+      {
+        "entry_id": "WING-1",
+        "requirement_zh": "两翼·中关村科技服务翼",
+        "requirement_en": "Wing: Zhongguancun technology-service wing",
+        "section_zh": "三区两翼协同回路段",
+        "figure": "JZ/03",
+        "structured_entry": "compliance_matrix.json#agent.1",
+        "spatial_object": "中关村科技服务翼",
+        "metric_id": "site_area_sqm",
+        "failure_condition_zh": "接口对外承诺数据共享、采购或共同运营",
+        "failure_condition_en": "The interface promises data sharing, procurement or joint operation"
+      },
+      {
+        "entry_id": "WING-2",
+        "requirement_zh": "两翼·小月河场景赋能翼",
+        "requirement_en": "Wing: Xiaoyue River scenario-enablement wing",
+        "section_zh": "三区两翼协同回路段",
+        "figure": "JZ/03",
+        "structured_entry": "compliance_matrix.json#agent.3",
+        "spatial_object": "小月河场景赋能翼",
+        "metric_id": "scenario_node_count",
+        "failure_condition_zh": "进入的城市问题未经授权",
+        "failure_condition_en": "An incoming city problem is not authorised"
+      },
+      {
+        "entry_id": "AG-1",
+        "requirement_zh": "agent.1 一带总体概念与功能统筹",
+        "requirement_en": "agent.1 Overall concept and function coordination",
+        "section_zh": "三层范围工作框架",
+        "figure": "F/01",
+        "structured_entry": "compliance_matrix.json#agent.1",
+        "spatial_object": "三层范围",
+        "metric_id": "site_area_sqm",
+        "failure_condition_zh": "三层范围之间的口径不一致且无法一键复算",
+        "failure_condition_en": "The three scope levels disagree and cannot be recomputed in one step"
+      },
+      {
+        "entry_id": "AG-2",
+        "requirement_zh": "agent.2 全栈体系与创新生态",
+        "requirement_en": "agent.2 Full-stack system and innovation ecosystem",
+        "section_zh": "AI 创新生态、人才画像与 AI+ 场景",
+        "figure": "JZ/06",
+        "structured_entry": "compliance_matrix.json#agent.2",
+        "spatial_object": "八个共享接口",
+        "metric_id": "scenario_node_count",
+        "failure_condition_zh": "任一接口把某类主体设为接入前提",
+        "failure_condition_en": "Any interface makes one type of actor a precondition for access"
+      },
+      {
+        "entry_id": "AG-3",
+        "requirement_zh": "agent.3 场景赋能与活力城市",
+        "requirement_en": "agent.3 Scenario enablement and vibrant city",
+        "section_zh": "十二张场景卡表",
+        "figure": "JZ/08",
+        "structured_entry": "compliance_matrix.json#agent.3",
+        "spatial_object": "SCN-01…12",
+        "metric_id": "industry_validation_scenario_count",
+        "failure_condition_zh": "场景卡缺退出后空间用途仍被启用",
+        "failure_condition_en": "A scenario card without a post-exit use is still opened"
+      },
+      {
+        "entry_id": "AG-4",
+        "requirement_zh": "agent.4 公共空间、新业态与朝圣地标",
+        "requirement_en": "agent.4 Civic space, new formats and pilgrimage landmarks",
+        "section_zh": "蓝绿空间、公共空间与城市风貌",
+        "figure": "F/04",
+        "structured_entry": "geometry/public_space.geojson",
+        "spatial_object": "连续公共交接面＋LANDMARK-01…04",
+        "metric_id": "public_space_ratio",
+        "failure_condition_zh": "公共空间设消费门槛或以装 App 为通行条件",
+        "failure_condition_en": "Civic space imposes a spending threshold or app installation as a condition of passage"
+      },
+      {
+        "entry_id": "AG-5",
+        "requirement_zh": "agent.5 文化融合叙事",
+        "requirement_en": "agent.5 Cultural convergence narrative",
+        "section_zh": "一条铁路留下的三件遗产",
+        "figure": "F/01",
+        "structured_entry": "sources.json#SRC-DAZHONGSI-BELL",
+        "spatial_object": "三处历史锚点",
+        "metric_id": "civic_landmark_count",
+        "failure_condition_zh": "史实无公开出处或被改写以配合叙事",
+        "failure_condition_en": "A historical fact has no public source or is rewritten to fit the narrative"
+      },
+      {
+        "entry_id": "AG-6",
+        "requirement_zh": "agent.6 活动体系与长期运营",
+        "requirement_en": "agent.6 Event system and long-term operation",
+        "section_zh": "长期运营、年度活动与国际传播",
+        "figure": "JZ/13",
+        "structured_entry": "compliance_matrix.json#agent.6",
+        "spatial_object": "年度活动周线路",
+        "metric_id": "offline_takeover_assertion_count",
+        "failure_condition_zh": "年度总账未公布正负结果或撤场未完成即移交场地",
+        "failure_condition_en": "The annual ledger omits negative results, or the site is handed back before strike-down completes"
+      }
+    ]
+  }
 }
