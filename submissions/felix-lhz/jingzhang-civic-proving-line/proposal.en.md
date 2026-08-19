@@ -73,6 +73,14 @@ Evidence progresses through five levels: `E0 public source → E1 concept design
 
 ![Three-layer spatial section](assets/figures/section-prototype.en.png)
 
+### V9 Verifiable Civic Prototype: E2 readiness, not field completion
+
+V9 advances Dazhongsi S7 from an E1 concept drawing to an **E2 prototype-preparation dossier**. One geometry model now drives the 1:5000 link, 1:2000 key-area plan, 1:500 component detail, 1:200 section and layered cutaway axonometric. E2 has a strict meaning here: reproducible quantities, eight permit gates, procurement packages, a baseline log, controlled-trial log, incident form, recovery-drill form and civic-adoption receipt exist as reviewable templates. It **does not mean** survey, permits, procurement, assembly or field operation have occurred.
+
+The ordinary public cross and staffed service must be surveyed and logged for seven consecutive operating days first. The southeast trial bay may enter `TRIAL` only after site, title, fire, accessibility, temporary power, network, traffic-management and equipment-safety gates are closed and four independent posts are staffed. Collision, buffer intrusion, emergency-stop failure, interruption of a public route or failed human takeover triggers a zero-tolerance stop. The recovery clock runs from the stop command until staff complete the same task and both public routes reopen. Recovery time remains `unknown / not_field_run`.
+
+The three landmarks retain different spatial archetypes: the Verification Ring wraps a controlled inner ring with a complete public bypass; the Translation Gate carries three account-free paths past staffed service and professional review; the Receipt Porch combines a public cross, one-side trial bay and staffed evidence interface. All three experiential views are geometry-matched concept images, not evidence of existing conditions, dimensions or performance.
+
 ## Overall design: renewal, mobility, blue-green and baseline
 
 Renewal follows baseline → ground floor → envelope. First repair crossings, ramps, tactile cues, lighting, shade, seating, water and staffed service. Then open existing ground floors for evaluation, translation and operations. Only after survey, ownership and statutory controls may intensity or retain/renovate/rebuild decisions be made. Submitted building polygons are conceptual adaptive envelopes.[data:geometry/buildings.geojson#BLDG-001]

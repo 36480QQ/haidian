@@ -61,6 +61,18 @@
       "status": "requires_stakeholder_agreement",
       "statement": "The four-season civic year and 90-day S7 pilot are proposed operating protocols, not confirmed calendars, staffing commitments or permits.",
       "impact": "Phase dates, duty rosters, insurance, procurement, data governance and public representation must be agreed before field use."
+    },
+    {
+      "id": "ASM-V9-E2",
+      "statement": {
+        "zh": "E2 仅表示原型准备文件完整；测绘、许可、报价、搭建和现场运行仍待完成。",
+        "en": "E2 means prototype-preparation documents are complete; survey, permits, quotes, assembly and field operation remain pending."
+      },
+      "status": "active",
+      "consequence": {
+        "zh": "不得把空白表单、构件数量或数字样机解读为现场绩效。",
+        "en": "Blank forms, quantities and the digital prototype must not be read as field performance."
+      }
     }
   ]
 }
