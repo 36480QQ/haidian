@@ -1540,11 +1540,11 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-395 entries. By finder:
+396 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 43 | Run against the shipped package, not a draft |
+| Independent audit | 44 | Run against the shipped package, not a draft |
 | The author | 258 | Found while working |
 | This package's own gate | 29 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
@@ -1564,7 +1564,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Outlived the package | 26 |
 | Not itself | 22 |
 | Nothing fails it | 21 |
-| A reference did not resolve | 17 |
+| A reference did not resolve | 18 |
 | Recorded where found | 15 |
 | Outlived its line | 14 |
 | A source unnameable | 12 |
