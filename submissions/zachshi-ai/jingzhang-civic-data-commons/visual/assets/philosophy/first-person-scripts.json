@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "第一人称共情脚本 (First-Person Scripts)",
+  "core_claim_zh": "用第一人称脚本验证看见体验链路每步是否通顺——体验的工程验证，非营销。",
+  "core_claim_en": "First-person scripts verify the visibility experiential chain step by step.",
+  "scripts": [
+    {
+      "persona_zh": "市民",
+      "script_zh": "我在时刻表站看到我的数据今天被用了三次用于线路规划。我知道数据被谁用了、用在哪。我看见了我的数据。",
+      "verified_step_zh": "体验链：看时刻表→看到我的数据使用→理解被谁用→看见"
+    },
+    {
+      "persona_zh": "市民（质疑）",
+      "script_zh": "我在时刻表上看到一行数据使用记录，我不理解用途，我在回执亭提了异议。五个工作日后我收到回复。我质疑了，被受理了。",
+      "verified_step_zh": "体验链：看时刻表→质疑→提异议→受理→回复"
+    },
+    {
+      "persona_zh": "运营方",
+      "script_zh": "我诚实公示数据使用情况，获得了时段优先权。诚实公示对我有利。",
+      "verified_step_zh": "体验链：诚实公示→获得优先权→诚实有利"
+    }
+  ],
+  "field_status": "not_authorized_not_run"
+}
