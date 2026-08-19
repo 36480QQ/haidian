@@ -1,5 +1,5 @@
 ---
-title: "京张水准线：让机器人与AI公共服务在城市里可被复测"
+title: "百年京张AI创新带 · 京张水准线：让机器人与AI公共服务在城市里可被复测"
 author_github: "jiangmuran"
 language: "zh"
 translation_file: "proposal.en.md"
@@ -11,7 +11,7 @@ tracks: ["robotics-autonomous-mobility", "ai-public-services"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
 
-# 京张水准线：让机器人与AI公共服务在城市里可被复测
+# 百年京张AI创新带 · 京张水准线：让机器人与AI公共服务在城市里可被复测
 
 > **一句话判准：这条带上任何一项 AI 服务，都要能在现场被不同主体各测一次；f > F 就整段退回复测，在复测通过前降级为无AI等价服务。**
 
@@ -1617,7 +1617,7 @@ node visual/assets/verify.js
 
 `compliance_matrix.json` 逐条映射公告任务与 agent.1–agent.6，确保每项要求都能定位到本文章节、图层、指标与图纸。需要说明的是：**矩阵是索引，不是内容**。本方案不把矩阵内容复述进正文——任务书要求的成果必须以可核验的章节、图层与图纸形式存在，把矩阵抄进正文只会让文档变成一张合规表格。
 
-**三张矩阵的每条引用都经校验：734 条声明、734 条解析 [metric:matrix_reference_count]。** `compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json` 合计做出 734 次[metric:matrix_reference_count]「这条要求由那个小节回答、由这些图层承载、由这份证据支撑」的声明；此前**没有检查确认被点名的小节与文件真的存在**。构建时逐条解析：小节引用对标题双向匹配，文件引用精确匹配，解析不到即构建失败（已用一条指向不存在小节的条目验证过它会拒绝）。矩阵是全包最不容易在改名或加文件后被重读的东西，而本包已因同一原因交付过四处失效的机读引用、一张少一类的图例、一个落后三个文件的权利计数。
+**三张矩阵的每条引用都经校验：756 条声明、756 条解析 [metric:matrix_reference_count]。** `compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json` 合计做出 756 次[metric:matrix_reference_count]「这条要求由那个小节回答、由这些图层承载、由这份证据支撑」的声明；此前**没有检查确认被点名的小节与文件真的存在**。构建时逐条解析：小节引用对标题双向匹配，文件引用精确匹配，解析不到即构建失败（已用一条指向不存在小节的条目验证过它会拒绝）。矩阵是全包最不容易在改名或加文件后被重读的东西，而本包已因同一原因交付过四处失效的机读引用、一张少一类的图例、一个落后三个文件的权利计数。
 
 ### 任务书逐条覆盖：`visual/assets/taskbook_coverage.json`
 
@@ -1973,7 +1973,7 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 
 因此上面 12 项里，**AI 评审能按字面执行的是 0 项**：其余各项指名的文件不在它收到的东西里。**拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。**这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。
 
-**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.72 秒**；另有 9 份**不在评审输入里的**文件、1243 KB、1,856 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
+**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.71 秒**；另有 9 份**不在评审输入里的**文件、1245 KB、1,857 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
 
 **这条披露有时效，而缺口已经补上。** Issue #2170 对应的 PR #2181 已并入 `upstream/main`：review-input 里有了可审计的访问边界，明确参赛者的校验脚本从不执行，并要求评审**不得仅因打不开一份未提供的 artifact 就扣分或判 gate 失败**。上面的「0 项」不变，变的是它的后果：可达性不再被误读为投稿方没有提供（E210）。本包已按该恢复路径做过——关键推导同步写进 `assumptions.json` 与 `metrics.json`，三份矩阵逐行标注证据的可达程度。
 

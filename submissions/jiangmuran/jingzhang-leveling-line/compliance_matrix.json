@@ -1789,6 +1789,103 @@
     "taskbook_read_from": "brief/site-package/agent_taskbook.json @ upstream/main",
     "taskbook_scope_zh": "任务书另有自己的一套评审维度，与上面那套不是同一份。此处一并对照。",
     "taskbook_scope_en": "The taskbook carries its own set of review dimensions, which are not the set above. Mapped here as well.",
+    "charter_read_from": "brief/site-package/agent_taskbook.json @ upstream/main",
+    "charter_scope_zh": "任务书还发布了十条共创公约。评审整份收到那份任务书，而本包此前没有把这十条接到任何地方。此处逐条对照到真正回答它的小节；这是映射，不是自评得分。",
+    "charter_scope_en": "The taskbook also publishes ten co-creation principles. The reviewer receives that taskbook whole and this package had joined none of the ten to anything. Each is mapped here to the sections that answer it — a mapping, not a self-awarded score.",
+    "charter_principles": [
+      {
+        "principle_id": "charter.1",
+        "title_zh": "公共利益优先",
+        "requirement_zh": "智能体服务城市公共利益和项目目标，不以个人名利或商业推广为中心。",
+        "report_sections": [
+          "一页执行摘要",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.2",
+        "title_zh": "公开资料边界",
+        "requirement_zh": "资料必须来自公开或清权来源，不得使用秘密地图、非公开表格、伪造官方背书或伪造规划结论。",
+        "report_sections": [
+          "设计依据与资料清单",
+          "把仪器用在场地数据上",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.3",
+        "title_zh": "概念建议属性",
+        "requirement_zh": "智能体成果是开放共创建议，不替代专业规划，不越过政府审定和法定审批。",
+        "report_sections": [
+          "三层范围工作框架",
+          "指标体系、面积复算与合规矩阵",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.4",
+        "title_zh": "AI原生创新",
+        "requirement_zh": "鼓励AI原生场景和多智能体协作，不接受只给传统方案贴AI标签。",
+        "report_sections": [
+          "AI 创新生态、人才画像与 AI+ 场景",
+          "把仪器用在场地数据上"
+        ]
+      },
+      {
+        "principle_id": "charter.5",
+        "title_zh": "结构化与可读并重",
+        "requirement_zh": "成果必须结构化、来源可追溯、版权可追溯，并同时可被智能体和人类阅读。",
+        "report_sections": [
+          "指标体系、面积复算与合规矩阵",
+          "设计依据与资料清单"
+        ]
+      },
+      {
+        "principle_id": "charter.6",
+        "title_zh": "生成方法披露",
+        "requirement_zh": "引用和生成内容必须说明来源、生成方式、授权和限制。",
+        "report_sections": [
+          "风险、版权与合规说明",
+          "设计依据与资料清单"
+        ]
+      },
+      {
+        "principle_id": "charter.7",
+        "title_zh": "人类最终判断",
+        "requirement_zh": "智能体方案可以被筛选和排序，但最终判断由人类和专业团队完成。",
+        "report_sections": [
+          "闭合差机制的完整定义",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.8",
+        "title_zh": "公共知识沉淀",
+        "requirement_zh": "输出进入公共知识库，供后续智能体、专业团队和公众继续使用。",
+        "report_sections": [
+          "指标体系、面积复算与合规矩阵",
+          "把仪器用在场地数据上"
+        ]
+      },
+      {
+        "principle_id": "charter.9",
+        "title_zh": "贡献可记忆",
+        "requirement_zh": "贡献者名称、方案记录和知识资产应可持续保存。",
+        "report_sections": [
+          "设计依据与资料清单",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.10",
+        "title_zh": "人本治理",
+        "requirement_zh": "城市治理以人的尊严与公共福祉为基础，智能体用于增强人的能力。",
+        "report_sections": [
+          "一个人的一天：这套机制在街上是什么样子",
+          "AI 创新生态、人才画像与 AI+ 场景"
+        ]
+      }
+    ],
     "taskbook_dimensions": [
       {
         "dimension_id": "objective_alignment",

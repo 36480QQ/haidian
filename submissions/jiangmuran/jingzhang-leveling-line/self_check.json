@@ -135,7 +135,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Join each published review dimension to the section that answers it.",
-      "message": "build_rubric_coverage.py — rubric coverage: 7 review dimensions from scripts/review_submission.py and 13 from the taskbook — two published sets, not one — each joined to the sections that answer it (21 + 36 section references), both lists read from upstream/main"
+      "message": "build_rubric_coverage.py — rubric coverage: 7 review dimensions from scripts/review_submission.py, 13 from the taskbook and 10 co-creation principles — three published sets, not one — each joined to the sections that answer it (21 + 36 + 22 section references), all three read from upstream/main"
     },
     {
       "check_id": "PKG_CALENDAR_PARITY_QA",
@@ -495,7 +495,7 @@
       "target": "compliance/standard/design_depth matrices",
       "source": "package-provided",
       "what_it_holds_en": "Every reference in the three matrices must resolve.",
-      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 734 declared across three matrices, 734 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 29 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics, mapped to 57 sections, every one resolving"
+      "message": "三张矩阵的引用是否解析且指向对的小节 — matrix references: 756 declared across three matrices, 756 of them resolved against headings, shipped files or the file that defines the id; every requirement whose title names a heading cites that heading; 29 class-1 metrics, every one recomputed by the shipped verifier; 7 + 13 review dimensions from the two published rubrics and 10 co-creation principles from the taskbook, mapped to 79 sections, every one resolving"
     },
     {
       "check_id": "PKG_MEASUREMENT_PROTOCOL_QA",
@@ -1286,7 +1286,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30899787,
+      "total_bytes": 30904142,
       "maintainer_bypass": false
     },
     "stderr": ""
