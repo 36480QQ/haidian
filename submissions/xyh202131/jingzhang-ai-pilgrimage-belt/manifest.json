@@ -81,13 +81,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4c436709d925353672b1b7b09202eeef5640996a6fa40cb1eb8667abb52b0679"
+      "sha256": "ba25034d461cf739574fa460cda2b7d28fd6e990cb7a1cffb91ff2e42d4872e6"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "7f66f950021914133a7274e9847a48e713ea62f1c0f37dcc192411698b2e9e86"
+      "sha256": "5785ab70db8246840806148afdd407f4c4b4a40d76b37bd68f62eebbcbf402d5"
     },
     {
       "path": "compliance_matrix.json",
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "eca03bd239885850d699b372eafdc886061446949728174dbd33298a0074c7f8"
+      "sha256": "a2c0fef83710cf8e099a05392ac2d7b27a004951caf9e3017ccbff844c6f2915"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -236,7 +236,7 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2dd83a03b06708d03962ab9babf7bb27cf27d83689bf438e922171b9628a64e0"
+      "sha256": "8005dc95d2506c1dc4ad823525952b6242ddab4f50e8484bbfc7a3ba7b9716f8"
     },
     {
       "path": "report/copyright_statement.md",
