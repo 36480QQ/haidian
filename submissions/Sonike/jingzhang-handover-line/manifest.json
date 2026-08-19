@@ -45,7 +45,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6a456fcc30261ce612709a66bc14efed142cdebb33f03f69c68494ded26081c4"
+      "sha256": "d9867e423c6ce7bb37adc33d8448b4dd7ed3ff8b019e2d09fdbc867acc4b75ba"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6fe4b815ddfb4c65a326aa3910cadc3fd0ce6c3dd403dd2255edb64dfed6fd21"
+      "sha256": "771ff3a8235c9a6c200b858a211915733f846e449b7e1022af6a4ed50ce8ad7b"
     },
     {
       "path": "compliance_matrix.json",
@@ -106,7 +106,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5758d7db513850a764c98c255d5145e3627995801c3895bcf91c171cee1b1377"
+      "sha256": "cc0aabeadf8b3e297f4749d279413766bcaf77f8df4033bef9574a4cd45411ae"
     },
     {
       "path": "report/narrative.md",
@@ -236,7 +236,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b6594104d0974ebe9834baeaabee8401b26540905b45f6a600829c752be7fda1"
+      "sha256": "87afc72a0607b2cb88c0edcdfebe7b94bce124100cd9406eff5bf49625f41cef"
     },
     {
       "path": "report/proposal.en.html",
@@ -244,7 +244,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a85c71b7e53b69c4e5ce40285264de1f1119e5a2ff4feabcda86564ed42366ff"
+      "sha256": "b879bd111c03387cfee8c39d50ea3dcc60f4391be8b4083b1483fb55626bb60a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -375,7 +375,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "ac1bd7ddcb69e43d76a305c11352ae4d66ec5f7fac93ba4541019ac4afe5dadc"
+      "sha256": "a763b1c17c77894f4e17f0ae39baf9dd1baedbca6addf8bc8a8f60f73a099a28"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -549,7 +549,7 @@
       "path": "assets/media/guided-tour.md",
       "role": "transcript",
       "required": false,
-      "sha256": "3d637935ebd98b6e0eead3996f5f196ce5f9bb42dc4461927d0a1f34a18809c9",
+      "sha256": "db29773008512b2d1f44afc24401d128955d90e1f23fda111deeadd6b7aee01f",
       "title_zh": "三分钟导览视频文字稿与分镜（中文）",
       "title_en": "Guided-tour transcript and shot list (Chinese)",
       "description_zh": "逐句文字稿，外加九段分镜表：写明每一段配的是哪张图件、为什么配它。",
@@ -559,7 +559,7 @@
       "path": "assets/media/guided-tour-en.md",
       "role": "transcript",
       "required": false,
-      "sha256": "64286eedf25cb271df51d8d3080c6eb19adc37127cbbcba8aae8ab35c52a7ad2",
+      "sha256": "0404590b5ff757c5f9fd6f6755cc2a911be84137f18a703b7d430f9337e5e899",
       "title_zh": "三分钟导览视频文字稿与分镜（英文）",
       "title_en": "Guided-tour transcript and shot list (English)",
       "description_zh": "英文版文字稿与分镜表。",
