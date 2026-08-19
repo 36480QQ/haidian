@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -215,6 +216,33 @@ class PrivacyBoundaryTest(unittest.TestCase):
         # total entries must still be closed against the snapshot
         self.assertEqual(summary["snapshot"]["n_metric_entries"], 3)
 
+    def test_controlled_key_illegal_status_and_schema_version_never_echoed(self):
+        """The maintainer's second repro: with a CONTROLLED key, an illegal
+        status and an illegal root schema_version must still never be echoed -
+        root_structure.schema_versions and coverage.top_key_status_cross both
+        bucket them anonymously."""
+        leak = "alice@example.invalid"
+        metrics = make_metrics({
+            "site_area_sqm": entry(100, "sqm", status=leak),
+        })
+        metrics["schema_version"] = leak
+        with tempfile.TemporaryDirectory() as td:
+            summary = run_scan(Path(td), metrics)
+        text = json.dumps(summary, ensure_ascii=False)
+        self.assertNotIn(leak, text, "injected string leaked into summary")
+        # schema_versions: only the known enum appears verbatim
+        sv = summary["root_structure"]["schema_versions"]
+        self.assertEqual(sv["declared_enum"], {})
+        self.assertEqual(sv["other_values"]["total_count"], 1)
+        self.assertEqual(sv["other_values"]["n_distinct_values"], 1)
+        # status cross of a controlled key: enum + anonymous other only
+        cross = summary["coverage"]["top_key_status_cross"]["site_area_sqm"]
+        self.assertEqual(cross["other"]["total_count"], 1)
+        self.assertEqual(cross["other"]["n_distinct_values"], 1)
+        self.assertNotIn(leak, json.dumps(cross, ensure_ascii=False))
+        # the controlled key itself still reported verbatim
+        self.assertIn("site_area_sqm", text)
+
 
 class SnapshotShaTest(unittest.TestCase):
     def test_sha_mismatch_rejected_unless_allow_flag(self):
@@ -394,6 +422,87 @@ class IdentifiersOptInTest(unittest.TestCase):
         finally:
             import shutil
             shutil.rmtree(repo.parent, ignore_errors=True)
+
+    def test_relative_repo_absolute_outdir_inside_refused(self):
+        """Path-spelling bypass repro: --repo as a relative path with
+        --out-dir as an absolute path inside the repo must still be refused
+        (a lexical is_relative_to check misses this mix; resolve() catches it)."""
+        import shutil
+        tool = load_tool()
+        with tempfile.TemporaryDirectory() as td:
+            repo = Path(td) / "repo"
+            init_repo(repo)
+            write_pkg_metrics(repo, "author", "slug",
+                              make_metrics({"site_area_sqm": entry(100, "sqm")}))
+            sha = commit_all(repo)
+            cwd = Path.cwd()
+            try:
+                os.chdir(Path(td))
+                with self.assertRaises(SystemExit):
+                    tool.main(["--repo", "repo",
+                               "--out-dir", str(repo / "private-out"),
+                               "--date", "20260812", "--sha", sha,
+                               "--write-local-identifiers"])
+                self.assertFalse(
+                    list((repo / "private-out").glob("*.csv.gz")),
+                    "no identifiers table via relative/absolute path mix")
+            finally:
+                os.chdir(cwd)
+                shutil.rmtree(Path(td), ignore_errors=True)
+
+    def test_symlink_outdir_inside_refused(self):
+        """A symlink pointing into the worktree must not bypass the
+        outside-worktree boundary (resolve() follows the link)."""
+        tool = load_tool()
+        repo, sha = self._ready_repo()
+        try:
+            inside_link = repo.parent / "inside-link"
+            try:
+                inside_link.symlink_to(repo, target_is_directory=True)
+            except OSError:
+                self.skipTest("symlinks unavailable on this platform")
+            with self.assertRaises(SystemExit):
+                tool.main(["--repo", str(repo),
+                           "--out-dir", str(inside_link / "o"),
+                           "--date", "20260812", "--sha", sha,
+                           "--write-local-identifiers"])
+            self.assertFalse(list((inside_link / "o").glob("*.csv.gz")),
+                             "no identifiers table through a symlink")
+        finally:
+            import shutil
+            shutil.rmtree(repo.parent, ignore_errors=True)
+
+    def test_parse_failures_require_opt_in_outside_worktree(self):
+        """Parse-failure detail carries submission paths: off by default
+        (anonymous count only), written only with --write-local-identifiers
+        to an out-dir outside the worktree."""
+        tool = load_tool()
+        with tempfile.TemporaryDirectory() as td:
+            repo = Path(td) / "repo"
+            init_repo(repo)
+            write_pkg_metrics(repo, "author", "slug",
+                              make_metrics({"site_area_sqm": entry(100, "sqm")}))
+            (repo / "submissions" / "author" / "bad").mkdir(parents=True)
+            (repo / "submissions" / "author" / "bad" / "metrics.json").write_text(
+                "{broken", encoding="utf-8")
+            sha = commit_all(repo)
+            outside = repo.parent / "outside-out"
+            try:
+                out1 = repo / "out1"
+                tool.main(["--repo", str(repo), "--out-dir", str(out1),
+                           "--date", "20260812", "--sha", sha])
+                s1 = json.loads(
+                    (out1 / "metrics-fullfield-20260812.summary.json").read_text(encoding="utf-8"))
+                self.assertEqual(s1["snapshot"]["n_parse_failures"], 1)
+                self.assertFalse(list(out1.glob("*.parse-failures.txt")),
+                                 "no parse-failure detail without opt-in")
+                tool.main(["--repo", str(repo), "--out-dir", str(outside),
+                           "--date", "20260812", "--sha", sha,
+                           "--write-local-identifiers"])
+                self.assertEqual(len(list(outside.glob("*.parse-failures.txt"))), 1)
+            finally:
+                import shutil
+                shutil.rmtree(repo.parent, ignore_errors=True)
 
 
 if __name__ == "__main__":

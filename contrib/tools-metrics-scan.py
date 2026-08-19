@@ -25,6 +25,10 @@ from pathlib import Path
 
 VALID_STATUS = {"known", "unknown", "not_applicable"}
 VALID_UNITS = {"sqm", "m", "ratio", "count", "index", "none"}
+# schema_version is an open string attribute in the schema: only versions
+# observed across the field may appear verbatim, everything else collapses
+# into an anonymous other bucket (counts only, never the value itself).
+KNOWN_SCHEMA_VERSIONS = {"0.1.0", "0.2.0", "0.1.1", "1.0", "1.10.0"}
 RATIO_SANITY = (0.0, 1.0)
 FAR_SANITY_MAX = 12.0
 HEIGHT_SANITY_MAX_M = 300.0
@@ -219,6 +223,19 @@ def check_worktree_clean(repo_root: Path, scan_subdir: str = "submissions/") -> 
             f"the declared --sha would read dirty bytes - refusing to run"
         )
     return True, "worktree clean"
+
+
+def _out_dir_inside_worktree(out_dir: Path, repo_root: Path) -> bool:
+    """True when out-dir, under any path spelling, lands inside the scanned
+    worktree. Path.resolve() normalizes relative-vs-absolute mixes and
+    symlinks; strict=False resolves the existing parent prefix when the
+    out-dir itself does not exist yet. A resolve failure fails closed."""
+    try:
+        out_real = out_dir.resolve(strict=False)
+        repo_real = repo_root.resolve(strict=False)
+    except OSError:
+        return True
+    return out_real.is_relative_to(repo_real)
 
 
 def parse_metrics_file(path: Path) -> tuple[dict | None, str | None]:
@@ -419,6 +436,21 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str,
             },
         }
 
+    def status_cross_summary(dist: Counter) -> dict:
+        """Per-key status cross for controlled keys: only the declared status
+        enum appears verbatim; any other status (free text, or JSON null)
+        collapses into an anonymous other bucket - counts only, never the
+        value itself (privacy boundary)."""
+        declared = {s: c for s, c in sorted(dist.items()) if s in VALID_STATUS}
+        others = {s: c for s, c in dist.items() if s not in VALID_STATUS}
+        return {
+            **declared,
+            "other": {
+                "total_count": sum(others.values()),
+                "n_distinct_values": len(others),
+            },
+        }
+
     def pct(n: int) -> float:
         return round(100.0 * n / n_entries, 2) if n_entries else 0.0
 
@@ -437,7 +469,7 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str,
         },
         "root_structure": {
             "container_shapes": {",".join(k) if k else "(empty)": v for k, v in root_shape.most_common()},
-            "schema_versions": dict(schema_versions.most_common()),
+            "schema_versions": enum_summary(schema_versions, KNOWN_SCHEMA_VERSIONS),
         },
         "field_coverage": {
             f: {"missing_count": c, "missing_pct": pct(c)} for f, c in field_missing.most_common()
@@ -484,7 +516,7 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str,
             },
             "concept_buckets": {k: {"count": v, "pct": pct(v)} for k, v in concept_cover.most_common()},
             "top_key_status_cross": {
-                k: {s: c for s, c in sorted(key_status[k].items())}
+                k: status_cross_summary(key_status[k])
                 for k, _ in top_metric_keys
             },
         },
@@ -516,8 +548,13 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str,
             "official vocabulary (CONTROLLED_METRIC_KEYS); all other keys, "
             "and all non-enum status/unit/confidence values, appear only as "
             "counts (total and number of distinct values) - never verbatim. "
-            "The long-format table with identifying columns is a local "
-            "artifact, written only with --write-local-identifiers to a "
+            "schema_version appears verbatim only for the known versions "
+            "observed across the field (KNOWN_SCHEMA_VERSIONS); the per-key "
+            "status cross for controlled keys lists only the declared status "
+            "enum (known/unknown/not_applicable), any other status collapsing "
+            "into an anonymous other count. The long-format table and the "
+            "parse-failure detail carry identifying paths and are local "
+            "artifacts, written only with --write-local-identifiers to a "
             "directory outside the scanned worktree, and must never be "
             "committed."
         ),
@@ -531,25 +568,28 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str,
         json.dump(summary, f, ensure_ascii=False, indent=2)
 
     if write_identifiers:
-        # Identity table (pkg/author/slug/model_family) is a local artifact:
-        # refuse to write it anywhere inside the scanned worktree, so a stray
-        # `--out-dir contrib` can never be staged/committed by accident.
-        if out_dir.is_relative_to(repo_root):
+        # Local artifacts (identifiers long table, parse-failure detail) carry
+        # package paths/authors: refuse ANY spelling of an in-worktree out-dir
+        # (relative-vs-absolute mixes and symlinks are resolved first) so a
+        # stray `--out-dir contrib` can never be staged/committed by accident.
+        if _out_dir_inside_worktree(out_dir, repo_root):
             raise SystemExit(
-                f"refusing to write the identifiers table into the scanned "
-                f"worktree ({out_dir}); choose an out-dir outside the repo, "
-                f"e.g. a temp dir"
+                f"refusing to write local artifacts into the scanned worktree "
+                f"({out_dir}); choose an out-dir outside the repo, e.g. a "
+                f"temp dir"
             )
         long_path = out_dir / f"metrics-fullfield-{date_stamp}.csv.gz"
         with gzip.open(long_path, "wt", encoding="utf-8", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=LONG_FIELDS)
             writer.writeheader()
             writer.writerows(rows)
-
-    if parse_failures:
-        with open(out_dir / f"metrics-scan-{date_stamp}.parse-failures.txt", "w", encoding="utf-8") as f:
-            for path, err in parse_failures:
-                f.write(f"{path}\t{err}\n")
+        if parse_failures:
+            # Parse-failure detail contains submission paths: same opt-in and
+            # same outside-worktree boundary as the identifiers table; the
+            # summary keeps only the anonymous failure count.
+            with open(out_dir / f"metrics-scan-{date_stamp}.parse-failures.txt", "w", encoding="utf-8") as f:
+                for path, err in parse_failures:
+                    f.write(f"{path}\t{err}\n")
 
     print(json.dumps(summary["snapshot"], ensure_ascii=False, indent=2))
     print(f"wrote {summary_path}")
