@@ -5,6 +5,26 @@
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
+  "license": {
+    "identifier": "COMMUNITY-DISPLAY-ONLY",
+    "identifier_source": "schema/proposal.schema.json 的 license 枚举值之一；组织方未发布其条款文本",
+    "author_grant_zh": "作为本包内容的权利人，作者另行授予：对本包内容的任何使用，只要符合 CC BY-NC 4.0（署名、非商业、标明修改），即已获得作者许可。",
+    "author_grant_en": "As rights holders in the contents of this package, the authors additionally grant that any use complying with CC BY-NC 4.0 (attribution, non-commercial, changes indicated) is licensed.",
+    "required_attribution_line_zh": "本方案为开放共创建议，不代表任何政府决定或审批结论。",
+    "required_attribution_line_en": "This proposal is open co-creation advice and represents no government decision or approval.",
+    "third_party_exclusion_zh": "本授权不覆盖第三方素材。包内未使用任何第三方图片、地图、商标或受保护版式；字体权利链见 proposal.md 风险与合规一节的字体表与 sources.json 的 FONT-* 条目。",
+    "government_endorsement_zh": "任何使用不得暗示政府背书、实施批准、已建成或已完成公众参与。",
+    "same_text_locations": [
+      "proposal.md#风险、版权与合规说明",
+      "report/copyright_statement.md",
+      "assets/media/audio-guide.md",
+      "assets/media/audio-guide-en.md",
+      "assets/media/guided-tour.md",
+      "assets/media/guided-tour-en.md",
+      "visual/index.html",
+      "visual/index.en.html"
+    ]
+  },
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
@@ -25,7 +45,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3cf50c6f3b0126da0a920d96e545285944edee9b0ada07393988b4e283ed6b73"
+      "sha256": "70e053fc0fc28c9e8b0178974c85750d988118a2859fa6b1a22f9bce2dc6f798"
     },
     {
       "path": "agent.json",
@@ -61,7 +81,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "acd144acd97c917f3409e28a16570b335a1cdeb35e34b107375d98fa919a082a"
+      "sha256": "8679236029df173ed29f4077db143de022c6abc05e01bdc252ba7b2b98869ed0"
     },
     {
       "path": "compliance_matrix.json",
@@ -86,7 +106,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a68e062447846f30973ed21369dc935e600a44908861e9996761a792ef21d836"
+      "sha256": "179cf6f63e6fd7b5f788b67d042b1c277d0658862b5d9624baa31db29b62fe21"
     },
     {
       "path": "report/narrative.md",
@@ -216,7 +236,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f4d5c847c681e204864819b774bfb5f4f8d0ba9a16bb58c7b26ef93efe809bbe"
+      "sha256": "0b683d27e25c67de89fc491e841f107691cd9d5a3baefddc4150e9987bb96334"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +244,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "13b1ad789dc90668fb836370c7edeec1dea736896b9638fd12339506086bbc4f"
+      "sha256": "5651e4e1f1337ab74432698963a45c4726f526f75a1264f577fbf5216b0c4ecf"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -355,7 +375,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "eecc83d1a82d10895783d5fd6a37809058994b52ff2b9abb94ae3f6e2c9f8021"
+      "sha256": "9d74be5accc1fe77990bff0b3d9f54b389d391f34991db7d3dfe493540a062e0"
     },
     {
       "path": "assets/figures/spatial-prototype.png",

@@ -845,6 +845,108 @@
       "manual_review_status": "author_read_in_full",
       "usage_en": "This package had been citing the news item about the same event (HAIDIAN-PARK-PHASE2-PLAN, 2024-09-20). This record is the approval itself: with its issuing number, its recipient body and its construction unit. It is used for three things only: to show that phase 2 holds a municipal approval; to identify the construction unit as the Haidian District Bureau of Landscape and Forestry, which is corroboration for the kind of body this package's park-operator post corresponds to; and to record the approval's site area of 23.08 hectares.",
       "does_not_support_zh": "**不支持**任何红线、控规条件或精确面积结论：23.08 公顷是二期实施方案的批复口径，既不是本包三层范围的任何一层，也不能与本包由临时边界复算的面积互相替代或相加。本条也不使本包获得任何授权——它记录的是别人已获批的事，不是本方案获批。"
+    },
+    {
+      "id": "HAIDIAN-BULLETIN-2025",
+      "url": "https://zyk.bjhd.gov.cn/sjkf/tjgb/202604/t20260410_4811526.shtml",
+      "source_type": "official_public",
+      "title": "海淀区2025年国民经济和社会发展统计公报",
+      "title_en": "Haidian District statistical communique on national economic and social development, 2025",
+      "publisher": "海淀统计局队（发布于北京市海淀区人民政府门户网站）",
+      "published_date": "2026-04-10",
+      "retrieved_at": "2026-08-19",
+      "source_locator": "科技部分：「备案上线大模型123款，占北京全市60%。」；人口部分：「年末全区常住人口311.1万人」",
+      "usage": "给出本带所在行政区（及全市）备案上线大模型的累计口径规模，用于说明「有多少 AI 需要被复测」；不参与任何指标计算。",
+      "usage_en": "Gives the cumulative count of filed large models for the district this belt sits in, and for the city, to say how much AI there is to re-measure. It enters no metric.",
+      "collection_method": "由本方案作者在官方统计公报页面读取正文，抄录该句数值与口径；不复制全文。**两份公报各自独立发布，123/209 = 58.9%，与区级公报四舍五入的 60% 相符——本方案把用在自己数上的互核，同样用在外部数上。**",
+      "collection_method_en": "Read from the official statistical bulletin page, transcribing the figure and its basis; the full text is not copied. **The two bulletins are published separately and check each other: 123/209 = 58.9%, which the district bulletin rounds to 60%.**",
+      "license_or_reuse_terms": "政府门户网站公开发布，依法公开；本包仅引述公布数值并注明出处。",
+      "license_or_reuse_terms_en": "Published on a government portal and public by law; this package cites the published figures with attribution.",
+      "evidence_class": "background_only",
+      "authority_level": "A0",
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "collected",
+      "manual_review_status": "reviewed",
+      "does_not_support_zh": "累计口径的行政区/全市总量，**不可分配到本带的任何一段**，不支持任何空间结论、任何用地或路段判断，也不进入任何指标。",
+      "does_not_support_en": "A cumulative district or city total. **It cannot be allocated to any segment of this belt**, supports no spatial conclusion and no land-use or route judgement, and enters no metric.",
+      "observations": [
+        {
+          "id": "haidian_filed_large_models_2025",
+          "value": 123,
+          "unit": "count",
+          "scope": "北京市海淀区，截至 2025 年末累计",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_share_of_beijing_filed_models_2025",
+          "value": 0.6,
+          "unit": "ratio",
+          "scope": "海淀占北京全市，区级公报四舍五入值",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_resident_population_2025",
+          "value": 3111000,
+          "unit": "person",
+          "scope": "北京市海淀区，2025 年末常住人口",
+          "not_spatially_allocable": true
+        }
+      ],
+      "transformations": [
+        {
+          "field": "haidian_share_of_beijing_filed_models_2025",
+          "source_value": "60%",
+          "method": "60 / 100",
+          "stored_value": 0.6,
+          "stored_unit": "ratio"
+        }
+      ]
+    },
+    {
+      "id": "BEIJING-BULLETIN-2025",
+      "url": "https://tjj.beijing.gov.cn/zxfbu/202603/t20260324_4564401.html",
+      "source_type": "official_public",
+      "title": "北京市2025年国民经济和社会发展统计公报",
+      "title_en": "Beijing statistical communique on national economic and social development, 2025",
+      "publisher": "北京市统计局、国家统计局北京调查总队",
+      "published_date": "2026-03-24",
+      "retrieved_at": "2026-08-19",
+      "source_locator": "「截至年末，全市累计备案上线大模型209款，占全国总数近1/3」",
+      "usage": "给出本带所在行政区（及全市）备案上线大模型的累计口径规模，用于说明「有多少 AI 需要被复测」；不参与任何指标计算。",
+      "usage_en": "Gives the cumulative count of filed large models for the district this belt sits in, and for the city, to say how much AI there is to re-measure. It enters no metric.",
+      "collection_method": "由本方案作者在官方统计公报页面读取正文，抄录该句数值与口径；不复制全文。**两份公报各自独立发布，123/209 = 58.9%，与区级公报四舍五入的 60% 相符——本方案把用在自己数上的互核，同样用在外部数上。**",
+      "collection_method_en": "Read from the official statistical bulletin page, transcribing the figure and its basis; the full text is not copied. **The two bulletins are published separately and check each other: 123/209 = 58.9%, which the district bulletin rounds to 60%.**",
+      "license_or_reuse_terms": "政府门户网站公开发布，依法公开；本包仅引述公布数值并注明出处。",
+      "license_or_reuse_terms_en": "Published on a government portal and public by law; this package cites the published figures with attribution.",
+      "evidence_class": "background_only",
+      "authority_level": "A0",
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "collected",
+      "manual_review_status": "reviewed",
+      "does_not_support_zh": "全市累计数，**既不能下推到海淀，更不能下推到本带**；本包只用它作为 123 的分母，以核对区级公报自报的 60%。该公报同句还写着「占全国总数近 1/3」，**本包不引这一句**：全国分母不在本方案的任何论证里。",
+      "does_not_support_en": "A citywide cumulative total. **It cannot be pushed down to Haidian, still less to this belt**; it is used here only as the denominator of 123, to check the 60% the district bulletin states of itself. The same sentence also reports nearly a third of the national total, **which this package does not cite**: a national denominator appears nowhere in its argument.",
+      "observations": [
+        {
+          "id": "beijing_filed_large_models_2025",
+          "value": 209,
+          "unit": "count",
+          "scope": "北京市，截至 2025 年末累计",
+          "not_spatially_allocable": true
+        }
+      ],
+      "transformations": [
+        {
+          "field": "beijing_filed_large_models_2025",
+          "source_value": "209款",
+          "method": "read as an integer count",
+          "stored_value": 209,
+          "stored_unit": "count"
+        }
+      ]
     }
   ],
   "source_quality_note_zh": "组织方在 `brief/source-quality-rules.md` 里发布了权威等级 A0–A3 与 X（不入库）以及时效等级 T0–T4。本包此前只用自己的证据上限（evidence_class），从未按这份已发布的分级说明自己的来源。此处补上：逐条给出 authority_level 与 timeliness_level，**并逐条核对没有任何一条落在 X（商业地图瓦片、账号内资料、下载密码资料、版权不明图片、非公开图件、个人信息）**。两条不属于该表所描述的类别，写明理由而不是硬套一个档次。**两条自采来源的 `timeliness_level` 此前整字段缺省**——当时只对 `authority_level` 写了「不属该表分档」的理由，而这句话声称的是逐条给出两个分级。现已补上，并写明 OSM 那条的 T0 指取回时刻、不指众包编辑的年龄（E202）。",
