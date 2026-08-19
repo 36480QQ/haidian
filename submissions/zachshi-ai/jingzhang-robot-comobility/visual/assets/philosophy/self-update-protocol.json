@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "自更新协议 (Self-Update Protocol) — how the scheme evolves when the city changes",
+  "core_claim_zh": "方案不是静态设计；定义当城市变化时方案哪部分必须重算的触发协议。",
+  "core_claim_en": "The scheme is not static; it defines a trigger protocol for which parts must be recalculated when the city changes.",
+  "triggers": [
+    {
+      "trigger_zh": "人口结构变化（如老年人口占比显著变化）",
+      "must_recalculate_zh": "银龄服务节点布局、连接站密度",
+      "recalculation_protocol_zh": "重算连接站服务半径与密度，重新评估L3网络增长基线"
+    },
+    {
+      "trigger_zh": "机器人技术成熟度变化（如感知能力显著提升）",
+      "must_recalculate_zh": "断面限速、联锁规则",
+      "recalculation_protocol_zh": "重新评估断面限速与联锁条件，重跑自解释测试"
+    },
+    {
+      "trigger_zh": "政策法规变化（如低速无人配送新规）",
+      "must_recalculate_zh": "共行执照阶段定义、G门验收标准",
+      "recalculation_protocol_zh": "重新评估执照阶段定义与G门标准，更新合规矩阵"
+    },
+    {
+      "trigger_zh": "官方边界发布（临时边界被官方polygon替代）",
+      "must_recalculate_zh": "全部面积指标、用地分区",
+      "recalculation_protocol_zh": "重算全部面积指标，重新评估用地分区"
+    }
+  ],
+  "field_status": "not_authorized_not_run"
+}

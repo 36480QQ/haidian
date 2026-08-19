@@ -6,7 +6,7 @@ translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "In 1909 the Jing-Zhang Railway became the first trunk line China surveyed, designed and built on its own. In 2009 the State Council wrote the words 'independent innovation' into the formal name of the Zhongguancun demonstration zone. One corridor, two acts of self-reliance a century apart. This proposal makes that corridor the origin corridor of China's independent AI innovation: four origin points strung into 9.6 walkable kilometres of history, 11.41 sq km organised as one spine, three terraces, two wings and two stitching systems, with every figure recomputed from nine GeoJSON layers in EPSG:4548. Its governance core is human fallback plus a public answer sheet: no public-facing AI service may go live without both a staffed human channel and an auditable published record. Floor area ratio, height limit and gross floor area have no defensible basis here, so they are marked unknown rather than guessed."
+summary: "In 1909 the Jing-Zhang Railway became the first trunk line China surveyed, designed and built on its own. In 2009 the State Council wrote the words 'independent innovation' into the formal name of the Zhongguancun demonstration zone. One corridor, two acts of self-reliance a century apart. This proposal makes that corridor the origin corridor of China's independent AI innovation: four origin points strung into 9.6 walkable kilometres of history, 11.41 sq km organised as one spine, three terraces, two wings and two stitching systems, with every figure recomputed from nine GeoJSON layers in EPSG:4548. Its governance core is human fallback plus a public answer sheet: no public-facing AI service may go live without both a staffed human channel and an auditable published record. Floor area ratio, height limit and gross floor area have no defensible basis here as statutory controls, so they are marked unknown rather than guessed; at block scale only recomputable concept ranges are given."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -468,9 +468,11 @@ The method guarantees complete coverage without overlap: 31 parcels [metric:land
 
 ### 4. Development intensity: a deliberate refusal to answer
 
-The proposal does not state floor area ratio, height limit or total floor area. These belong to statutory regulatory planning, and before official boundaries, a building survey, tenure records and utility capacity data are published, any number would be an irresponsible guess. `metrics.json` therefore marks `floor_area_ratio`, `building_height_control_m` and `total_floor_area_sqm` as `unknown` with explicit recalculation triggers [depth:development_intensity_controls] [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+The proposal does not state a **statutory** floor area ratio, height limit or total floor area. These belong to statutory regulatory planning, and before official boundaries, a building survey, tenure records and utility capacity data are published, any number would be an irresponsible guess. `metrics.json` therefore marks `floor_area_ratio`, `building_height_control_m` and `total_floor_area_sqm` as `unknown` with explicit recalculation triggers [depth:development_intensity_controls] [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
-Instead the proposal offers principles for organising intensity, to be given values later through statutory process: a low-intensity public interface band within 100 m of the spine; high-intensity mixed cores at the three terraces; intensity at the wings harmonised with existing communities; and a dual gradient across the belt - lower closer to the spine, higher closer to rail stations.
+At the overall design level the proposal offers principles for organising intensity, to be given values later through statutory process: a low-intensity public interface band within 100 m of the spine; high-intensity mixed cores at the three terraces; intensity at the wings harmonised with existing communities; and a dual gradient across the belt - lower closer to the spine, higher closer to rail stations.
+
+At the block scale of the Key Areas, principles alone cannot show whether the design can be built, so sections 5.1-5.3 give **recomputable concept ranges** per block (coverage cap × storeys = proposed FAR cap; storeys × floor-to-floor height = proposed height). These ranges are not written into `metrics.json` and are not control instruments, so they do not conflict with keeping the three statutory metrics `unknown` — the boundary between the two, and the three tests it rests on, are set out in section 3 of the metrics chapter [assumption:A-CONTROLS-001].
 
 ### 5. Height, massing and character control principles
 
@@ -486,6 +488,8 @@ Actual height figures must follow official boundaries and regulatory conditions.
 ## Detailed Design of Key Areas
 
 The three key areas total about 369.3 ha [metric:key_area_total_area_sqm], all expressed as provisional rough extents and offered as conceptual recommendations [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design].
+
+Naming, so that two sets of names are never confused. The competition names the three areas 众智园 (Crowd-Intelligence Park), AI原点社区 (AI Origin Community) and 大钟寺 (Dazhongsi). This proposal additionally gives each a design name — Origin Terrace, Origin Works and Bell Hub respectively — and those are what the drawings and the visual tabs use. Where a sentence refers to the competition's area, the official name governs; the design names never replace it.
 
 ![Fig.03 Spatial prototypes, human routes and six evidence gates for the three key areas](assets/figures/key-areas.en.png)
 
@@ -530,6 +534,284 @@ AI scenarios: agent-assisted retail, city operation check-ups, energy optimisati
 ### 4. How the three terraces relate
 
 The terraces are not three parallel parks but a conveyor of innovation: Origin Terrace produces self-reliant technology from zero to one; Origin Works carries it from one to ten through open source and translation; Bell Hub takes it from ten to N through business forms and consumption. They are linked by the spine greenway and by rail, forming a flow of innovation that can be observed and measured.
+
+### 5. Detailed spatial design of the key areas: block form, street sections and public space
+
+The three key areas below are worked to regulatory-plan depth. All values are concept proposals for a professional team to develop further; floor area ratio and building height stay open until official regulatory conditions are published [assumption:A-CONTROLS-001].
+
+#### 5.1 Origin Terrace (Zhongzhiyuan) detailed spatial design
+
+##### Block typology
+
+| Block | Function | Proposed FAR | Proposed height range | Proposed plot coverage |
+| --- | --- | --- | --- | --- |
+| ZZ-A | Full-stack R&D block (chips / compute) | 2.7–3.6 | 25–34 m (6–8 storeys) | ≤45% |
+| ZZ-B | Framework and model research cluster | 3.2–4.8 | 34–50 m (8–12 storeys) | ≤40% |
+| ZZ-C | Standards governance institute and international exchange | 1.4–2.1 | 20–30 m (4–6 storeys) | ≤35% |
+| ZZ-D | Waterfront innovation corridor (mixed R&D + public) | 0.9–1.5 | 13–21 m (3–5 storeys) | ≤30% |
+| ZZ-E | Flexible reserve land | 0.4–0.8 | 8–17 m (2–4 storeys) | ≤20% |
+
+How FAR and height are derived (the same rule in all three Key Areas): **proposed FAR cap = proposed plot-coverage cap × proposed storeys**, and **proposed height = proposed storeys × floor-to-floor height**, taking 4.2 m for R&D and offices, 3.0 m for housing, 4.5 m for retail and 5.0 m for civic and cultural uses. The three columns constrain each other, so a reviewer can re-derive every row with the same arithmetic (e.g. ZZ-A: 45% × 8 storeys = 3.6; 8 × 4.2 m ≈ 34 m). All values are concept proposals and are not statutory figures; once official planning controls are published, the statutory FAR and height limits must replace them and everything recomputed [assumption:A-CONTROLS-001].
+
+Organising principles: ZZ-A to ZZ-B are arranged linearly along the 800 m full-stack walking axis, so that the four research layers — chip, framework, model, application — are within a three-minute walk of one another; ZZ-C sits at the north end next to the Herringbone Terrace and carries standard-setting and external exchange; ZZ-D opens to the Qing River with a fully public ground floor facing the water; ZZ-E reserves no less than 8% of the total area as flexible land for technology shifts nobody can foresee today [depth:land_use_layout] [data:geometry/land_use.geojson#LU-002].
+
+##### Principal street section
+
+**Full-stack walking axis (ZZ-A to ZZ-B):**
+
+| Element | Width (m) |
+| --- | --- |
+| Furniture zone (smart poles, Report Card Kiosk, seating) | 2.0 |
+| Sidewalk | 4.0 |
+| Cycle lane (two-way) | 3.0 |
+| Planting strip | 1.5 |
+| Slow lane (one-way) | 3.5 |
+| Planting strip | 1.5 |
+| Sidewalk | 3.5 |
+| Furniture zone | 2.0 |
+| **Total** | **21.0** |
+
+This is a pedestrian-first section with no through carriageway; the slow lane admits only service vehicles and autonomous delivery vehicles at ≤20 km/h. Continuous tree canopy runs the full length, with a design coverage of ≥70% [depth:traffic_rail_slow_parking].
+
+##### Public space network
+
+| Node | Area (m²) | Primary function |
+| --- | --- | --- |
+| Herringbone Terrace Plaza | approx. 3,200 | Commemoration of self-reliant innovation, belt-wide viewpoint, large launch events |
+| Full-Stack Garden | approx. 1,800 | Outdoor working and informal exchange for researchers |
+| Qing River waterfront walk | linear, approx. 12,000 | Running, strolling, waterside rest, demonstration of smart inspection |
+| Standards Institute courtyard | approx. 900 | International exchange and small academic events |
+
+The four nodes are strung by the full-stack walking axis and the waterfront walk into a continuous network with a walking catchment radius of ≤400 m, so that from any block a researcher reaches at least one public space node within a five-minute walk [depth:blue_green_public_space].
+
+##### Interface conditions
+
+Building interface along the full-stack walking axis:
+- Setback: ≥6 m (including furniture zone and sidewalk)
+- Ground-floor transparency: ≥60% (sight lines pass through; research activity is visible)
+- Continuous canopy coverage: ≥70%
+- Ground-floor use: public display, open laboratory windows, shared meeting space, cafés and food; enclosed storage or machine rooms may not face the walking axis
+
+##### Spatial metrics (concept proposal)
+
+| Metric | Target | Note |
+| --- | --- | --- |
+| Length of the full-stack axis | 800 m | Three-minute walking coverage |
+| Slow-mobility network density | 30.0 m/ha (recomputed) | = 5,791 m of slow-mobility route ÷ 192.92 ha of key area [metric:zhongzhiyuan_slow_mobility_density_m_per_ha] |
+| Walking access rate to public space | ≥95% | 400 m radius coverage |
+| Green ratio | 29.9% (recomputed) | Intersection of green_space.geojson with the key-area boundary [metric:zhongzhiyuan_green_ratio] |
+| Street canopy coverage | ≥70% (walking axis) / ≥35% (key-area average) | Canopy is a shading measure and is not on the same basis as the green ratio above; the two must not be added |
+
+These are concept design targets; final values must be verified by a professional team against statutory regulatory conditions [assumption:A-CONTROLS-001].
+
+##### AI embedded in space
+
+**Open autonomous-driving test section.** On the service road north of block ZZ-A, approximately 600 m long and 7.0 m wide (one lane each way), with V2X roadside units (RSU) at 120 m spacing. Each RSU group occupies 0.3 m² (pole-mounted) and works with inductive sensing loops embedded in the surface. The test section is physically separated from the ordinary slow-mobility network by retractable bollards and reflective markers; outside test hours the bollards drop and the road returns to being an ordinary service road [depth:ai_scenario_integration].
+
+**Edge-compute waypoints.** Distributed along the full-stack walking axis at roughly 200 m spacing, each occupying about 4 m² (a 1.6 × 2.5 m stainless-steel cabinet) and providing edge inference capacity. Cabinet height is ≤2.2 m; where it shares a pole with a smart lighting column the footprint drops to 1.2 m². A transparent window lets passers-by see the running-status indicators inside. Maintenance access faces the rear of the adjacent building and does not interrupt sight lines along the axis [metric:ai_public_space_node_count].
+
+#### 5.2 Origin Works (AI Origin Community) detailed spatial design
+
+##### Block typology
+
+| Block | Function | Proposed FAR | Proposed height range | Proposed plot coverage |
+| --- | --- | --- | --- | --- |
+| YD-A | Campus-adjacent incubation block (translation of results) | 2.5–3.5 | 21–29 m (5–7 storeys) | ≤50% |
+| YD-B | Open-source community housing block (youth rental) | 2.7–4.05 | 18–27 m (6–9 storeys) | ≤45% |
+| YD-C | Open-source release hall and demo-day cluster | 1.05–1.75 | 15–25 m (3–5 storeys) | ≤35% |
+| YD-D | Community living-service belt | 1.2–2.0 | 13–21 m (3–5 storeys) | ≤40% |
+| YD-E | Public open experiment ground | 0.15–0.3 | 5–10 m (1–2 storeys) | ≤15% |
+
+FAR and height follow the same arithmetic as 5.1 (coverage cap × storeys; storeys × floor-to-floor height, taking 3.0 m for housing, 5.0 m for the release hall and experiment ground, 4.2 m elsewhere); all are concept proposals subject to statutory planning controls [assumption:A-CONTROLS-001]. YD-B is held to 6–9 storeys to keep it at community scale, so youth rental housing does not become a set of high-rise towers.
+
+Organising principles: YD-A abuts the universities, closing a ten-minute walking loop of dormitory — laboratory — desk — demo day; YD-B provides affordable small units, with shared kitchens, childcare and fitness lowering the cost of living; YD-C faces the spine greenway and is the public-facing display interface; YD-D retains and upgrades the existing community retail network; YD-E is a fully open outdoor proof-of-concept ground [depth:land_use_layout] [data:geometry/key_areas.geojson#PROV-KEY-002].
+
+##### Principal street section
+
+**Origin Works main pedestrian spine (YD-A to YD-C):**
+
+| Element | Width (m) |
+| --- | --- |
+| Setback planting strip | 3.0 |
+| Sidewalk | 3.5 |
+| Cycle lane (two-way) | 3.0 |
+| Central linear garden | 4.0 |
+| Cycle lane (two-way) | 3.0 |
+| Sidewalk | 3.5 |
+| Setback planting strip | 3.0 |
+| **Total** | **23.0** |
+
+The section is symmetrical around the central linear garden and closed to motor traffic along its whole length; cycle lanes are distinguished from sidewalks by coloured permeable concrete; the central garden carries seating, drinking water, public Wi-Fi and a Report Card Kiosk [depth:traffic_rail_slow_parking].
+
+##### Public space network
+
+| Node | Area (m²) | Primary function |
+| --- | --- | --- |
+| Examination Gate Plaza | approx. 2,400 | Cultural commemoration, public assembly, the annual examination ceremony |
+| Release Hall forecourt | approx. 1,600 | Demo-day queuing, outdoor viewing of live streams, informal socialising |
+| Origin Stele Garden | approx. 1,200 | Contributor honours, quiet reflection, small commemorations |
+| Community pocket parks (×3) | approx. 600 each | Children's play, exercise for older residents, neighbourly exchange |
+
+The nodes are linked continuously by the central linear garden; the three pocket parks are set into the interface corners between YD-B and YD-D with a service radius of ≤200 m [depth:blue_green_public_space].
+
+##### Interface conditions
+
+Building interface along the Origin Works pedestrian spine:
+- Setback: ≥3 m (planted with trees to form a green colonnade)
+- Ground-floor transparency: ≥55% (sight lines pass through to the inner courtyard)
+- Continuous canopy coverage: ≥65%
+- Ground-floor use: community retail, childcare drop-off, shared-kitchen entrances, open-source studio windows; residential entrances may not open directly onto the pedestrian spine
+
+##### Spatial metrics (concept proposal)
+
+| Metric | Target | Note |
+| --- | --- | --- |
+| Ten-minute walking circle | 800 m radius | Covers the whole dormitory — laboratory — desk — demo-day sequence |
+| Slow-mobility network density | 29.6 m/ha (recomputed) | = 3,092 m of slow-mobility route ÷ 104.32 ha of key area [metric:ai_origin_community_slow_mobility_density_m_per_ha] |
+| Walking access rate to public space | ≥98% | 200 m radius coverage |
+| Public space share of the key area | 34.4% (recomputed) | Includes the open experiment ground and the central linear garden [metric:ai_origin_community_public_space_ratio] |
+| Community retail coverage | ≥90% | Everyday services within a five-minute walk |
+
+##### AI embedded in space
+
+**Edge inference node array.** Placed in the underground service duct beneath the central garden of the pedestrian spine at roughly 150 m spacing. Each node occupies 2.4 m², with only a 0.6 × 0.6 m ventilation and inspection cover flush with the garden paving at surface level. Power comes through the municipal utility corridor and heat is rejected through an underground duct into the planting belt. The nodes give community AI services — youth talent matching, shared-space scheduling, accessible navigation — local inference at ≤15 ms latency [depth:ai_scenario_integration].
+
+**Environmental sensors.** Mounted at the top of lighting columns (6 m height) at 80 m spacing, each with a footprint of 0 m² (pole-attached), collecting temperature, humidity, PM2.5, noise, illuminance and pedestrian density. The data drives adaptive lighting (dimming to 30% when flow falls to ≤5 people/min, saving roughly 40% of energy) and community safety awareness. Sensor housings are ≤12 cm in diameter and colour-matched to the column, so visual impact is minimal. No personal biometric data is collected and retention is ≤72 hours [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+#### 5.3 Bell Hub (Dazhongsi) detailed spatial design
+
+##### Block typology
+
+| Block | Function | Proposed FAR | Proposed height range | Proposed plot coverage |
+| --- | --- | --- | --- | --- |
+| DZ-A | Station-city composite retail (over-track development) | 3.3–5.5 | 27–45 m (6–10 storeys) | ≤55% |
+| DZ-B | Data-factor and industry-service cluster | 3.2–4.8 | 34–50 m (8–12 storeys) | ≤40% |
+| DZ-C | AI-native retail block | 1.8–2.7 | 18–27 m (4–6 storeys) | ≤45% |
+| DZ-D | Heritage buffer belt (around Dazhongsi) | 0.75–1.0 | ≤18 m (3–4 storeys, must stay below heritage control requirements) | ≤25% |
+| DZ-E | Station forecourt concourse and interchange | 0.6–0.9 | 10–15 m (2–3 storeys) | ≤30% |
+
+FAR and height follow the same arithmetic as 5.1 (4.5 m for retail, 4.2 m for industry service, 5.0 m for the concourse); all are concept proposals [assumption:A-CONTROLS-001]. DZ-D is derived in reverse: the ≤18 m limit comes first from the heritage view corridor, and storeys (≤4) and FAR (≤1.0) are read back from it — the heritage constraint governs development intensity here, never the other way round.
+
+Organising principles: DZ-A develops vertically over the rail station with underground interchange links; DZ-B and DZ-C sit either side of the spine forming a continuous industry — consumption — experience interface; DZ-D holds building height and mass down strictly and keeps view corridors open to protect the Dazhongsi skyline; DZ-E organises a four-quadrant walking concourse that dissolves the way the station currently cuts the city apart [depth:land_use_layout] [data:geometry/key_areas.geojson#PROV-KEY-003].
+
+##### Principal street section
+
+**AI-native retail street (DZ-C):**
+
+| Element | Width (m) |
+| --- | --- |
+| Retail spill-out zone | 2.5 |
+| Sidewalk | 4.5 |
+| Cycle lane (one-way) | 2.0 |
+| Planting strip (with rain garden) | 2.0 |
+| Bus / feeder lane | 3.5 |
+| Planting strip | 1.5 |
+| Cycle lane (one-way) | 2.0 |
+| Sidewalk | 3.5 |
+| Retail spill-out zone | 2.5 |
+| **Total** | **24.0** |
+
+The street runs on a transit-plus-slow-mobility model with private vehicles excluded; spill-out zones are demountable and are withdrawn at night to release walking space; the bus lane carries the station-city feeder function [depth:traffic_rail_slow_parking].
+
+##### Public space network
+
+| Node | Area (m²) | Primary function |
+| --- | --- | --- |
+| Bell of Compute Plaza | approx. 2,800 | Compute visualisation installation, public viewing and science outreach, festivals |
+| Four-quadrant station concourse | approx. 3,600 | Rail interchange, retail wayfinding, city information |
+| Dazhongsi Culture Garden | approx. 2,000 | Heritage display, quiet rest, protection of view corridors |
+| Data Market terrace | approx. 800 | Data-product display, industry matching, outdoor meetings |
+
+The four-quadrant concourse is the largest public space in this area; it connects to the station hall by an underground link and opens in four directions at grade, dissolving the severance the station imposes on the city [depth:blue_green_public_space].
+
+##### Interface conditions
+
+Interface conditions for the Dazhongsi heritage buffer belt (DZ-D):
+- Setback: ≥12 m (including planting strip and footpath, protecting heritage view corridors)
+- Maximum building height: ≤18 m (concept proposal, subject to confirmation by the heritage authority)
+- Material constraints: warm brick and stone, timber and matt metal on the façade; no large glass curtain walls
+- Ground-floor transparency: ≥40% (deliberately lower than elsewhere, to match the restrained character of the heritage setting)
+- Continuous canopy coverage: ≥55% (lower than the ≥70% of the full-stack walking axis: native trees planted in segments, clear height beneath the canopy ≥4.5 m and canopy top ≤12 m, so the Dazhongsi view corridor stays open)
+- No large LED screens or animated advertising facing the heritage asset
+
+##### Spatial metrics (concept proposal)
+
+| Metric | Target | Note |
+| --- | --- | --- |
+| Walking access rate within the 500 m station catchment | ≥85% | Covers the main functions of DZ-A/B/C/E |
+| Slow-mobility network density | 31.7 m/ha (recomputed) | = 2,283 m of slow-mobility route ÷ 72.05 ha of key area [metric:dazhongsi_slow_mobility_density_m_per_ha] |
+| Heritage buffer width | ≥12 m | Protection of view corridors |
+| Green ratio | 30.2% (recomputed) | Intersection of green_space.geojson with the key-area boundary [metric:dazhongsi_green_ratio] |
+| Walking access rate to public space | ≥92% | 300 m radius coverage |
+
+##### AI embedded in space
+
+**The Bell of Compute installation.** At the centre of the Bell of Compute Plaza, occupying about 25 m² (a circular base roughly 5.6 m in diameter) and about 8 m high. Modelled on the ancient bell of Dazhongsi, its shell is perforated weathering steel with a ring LED matrix inside that displays the belt's live compute load (green — amber — red), green-power share and carbon intensity. With no power the installation remains a sculpture, and an engraved plate at its base carries the summary of the latest published answer sheet. Maintenance access comes from below ground, with no inspection door visible at grade [data:geometry/public_space.geojson#PUBLIC-003] [depth:ai_scenario_integration].
+
+**AI retail sensing system.** The smart lighting columns of the DZ-C AI-native retail street (25 m spacing) integrate footfall-counting cameras (fisheye lens, anonymous counts only, no images stored) and environmental sensors. The data drives dynamic adjustment of shop spill-out zones (narrowing them by 0.5 m at peak to release walking space, restoring them off-peak). Sensing devices sit at the top of the column (5.5 m height) as an 8 cm hemispherical dome colour-matched to the pole. Every device carries a plate reading "AI sensing device · counting only · no images stored" [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+
+### 6. The Report Card Kiosk: making governance visible and touchable in public space
+
+The Report Card Kiosk (答卷亭) is a piece of street furniture derived from this proposal's governance rule of human fallback plus a public answer sheet. Its job is to keep the running state of AI public services, the answer-sheet record and the human-channel information continuously visible in physical space, instead of leaving them inside an online system [depth:report_card_kiosk_typology] [depth:ai_scenario_integration].
+
+##### Physical specification
+
+| Parameter | Value |
+| --- | --- |
+| Overall dimensions (W × D × H) | 1,800 × 2,200 × 2,800 mm |
+| Footprint | 3.96 m² |
+| Structure | Freestanding base, fixed with anchor bolts, demountable and relocatable |
+| Primary materials | Weathering-steel shell + stainless-steel structural frame |
+| Screen | 32-inch high-brightness outdoor LCD (1500 nit), anti-glare glass |
+| Power | Mains supply (≤200 W), 4-hour UPS backup |
+| Communications | Dual redundant 5G / wired |
+| Colour | Body in steel blue #16324F; status shown in the standard three colours (green #2E9E7A / amber #D9A441 / red #B5442E) |
+
+##### Two operating modes
+
+**Active mode (powered).** The screen cycles through the answer-sheet status of every AI public service in the surrounding area: service name, completion of the six answer-sheet items (F1–F6), three-colour admission status, the most recent human-takeover record, and the most recent failure with how it was resolved. Residents can touch the screen for the detail of a single service, or scan a code to reach the full answer-sheet page.
+
+**Passive mode (no power or fault).** Below the screen sits a permanently fixed A3 stainless-steel etched plate carrying, in engraved text: the list of AI services in this area, the 24-hour human help line, and a QR code to the latest answer-sheet summary (a permanent link to the GitHub repository). Even with the kiosk completely unpowered, a passer-by can still obtain the essentials.
+
+##### Deployment plan
+
+| Code | Key area | Location | Clear zone radius | Wheelchair turning | Sight lines |
+| --- | --- | --- | --- | --- | --- |
+| RCK-01 | Origin Terrace | Southeast corner of Herringbone Terrace Plaza | ≥2.5 m | ≥1.8 m | Faces the full-stack walking axis, does not block the main view of the terrace |
+| RCK-02 | Origin Works | West side of Examination Gate Plaza | ≥2.0 m | ≥1.5 m | Faces the central linear garden, backs onto a wall |
+| RCK-03 | Bell Hub | Quadrant B of the four-quadrant station concourse | ≥2.5 m | ≥1.8 m | Faces the interchange exit, the direction of heaviest flow |
+| RCK-04 | Spine greenway | Junction of stitching link #3 (Beihang section) | ≥2.0 m | ≥1.5 m | Faces the slow-mobility crossing, also serving east-west pedestrians |
+
+Every location meets the requirement of Article 39 of the Barrier-Free Environment Construction Law on accessible information at public service facilities: the bottom edge of the screen is ≤1.1 m above ground (readable from a wheelchair), the plate carries a Braille summary, and a tactile guide strip leads to the kiosk [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+
+##### Data flow path
+
+AI service backend → the belt's unified governance data bus (fibre) → area aggregation node → kiosk terminal (dual 5G / wired) → screen rendering engine (24 hours of data cached locally, cache displayed when the network is down). The data carries only service status and anonymous statistics, and contains no personal information or business data [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+### 7. An example of AI-driven adaptive spatial configuration
+
+One concrete case of AI-driven spatial adaptation, to show how an AI capability produces a real spatial effect through physical infrastructure [depth:ai_scenario_integration].
+
+**Case: adaptive lighting on the Origin Works pedestrian spine**
+
+Trigger: when the environmental sensors along the pedestrian spine detect pedestrian density of ≤5 people per minute for five consecutive minutes, the system enters energy-saving mode.
+
+Spatial effect:
+1. Street lighting dims from 100% to 30% (over a 60-second transition, to avoid an abrupt change)
+2. In-ground lights in the central linear garden switch from white to a warm, low-brightness guiding light
+3. Report Card Kiosk screen brightness drops to 40% in step
+
+Recovery: when any sensor detects pedestrian density of ≥10 people per minute, full brightness returns within 60 seconds.
+
+Physical infrastructure:
+- Sensing layer: sensors at the top of lighting columns (as above, 80 m spacing, pole-attached, 0 m² footprint)
+- Decision layer: the area's edge inference nodes (underground, as above, ≤15 ms latency)
+- Actuation layer: smart lighting-column controllers (inside the column base, no additional footprint)
+- Communications: sensor → edge node → column controller, wired PoE throughout
+
+Human override: facilities staff can force full brightness from any Report Card Kiosk or a handheld terminal, at a priority above the AI decision. The system logs every AI adjustment and every human override, and both enter the quarterly published answer sheet [depth:risk_missing_data].
+
+Annual energy saving (concept estimate): assuming an average of six low-density hours per day, lighting energy use along the pedestrian spine falls by roughly 35%–42%.
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -782,7 +1064,7 @@ A necessary statement: this proposal makes no demolition decision for any specif
 
 ### 3. Building scale
 
-Footprint scale is recomputed from geometry at 7.29% coverage. Total floor area and floor area ratio are marked `unknown` because storey counts and regulatory conditions are unavailable, and are not estimated. This is a concrete instance of choosing honesty over apparent completeness.
+Footprint scale is recomputed from geometry at 7.29% coverage. Total floor area and floor area ratio stay `unknown` in `metrics.json` because the statutory conditions and a building survey are unavailable, and no belt-wide figure is estimated from them. Block-scale storey counts do appear in sections 5.1-5.3, but only as recomputable concept ranges that stop at the block and are never aggregated into a belt-wide floor area. This is a concrete instance of choosing honesty over apparent completeness.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -818,7 +1100,173 @@ On rail. Existing stations along the belt form its skeleton. This proposal adds 
 
 Rail stations along the belt organise four-quadrant walking, cycle interchange and feeder services through station concourses. A station concourse is not a retail atrium but a civic living room: it should provide free seating, drinking water, baby-care and accessible facilities, along with an AI service point and a staffed fallback counter.
 
-### 5. Municipal and new infrastructure
+### 5. Parking and kerbside space governance
+
+The required design depth covers four transport items — roads, rail, slow mobility and parking — so parking cannot be absent [depth:traffic_rail_slow_parking]. The basic judgement here is that on a belt led by walking and rail, the goal of parking supply is not "enough" but "no encouragement to drive across the spine".
+
+| Issue | Position | Spatial method | Boundary |
+| --- | --- | --- | --- |
+| Car parking | Cap the total, intercept at the edge | Parking is concentrated at the outer edges of the three terraces and around rail stations; no on-street parking along the spine | Maximum provision by key area is proposed in 5d; the caps do not replace statutory provision standards and must be checked by transport impact assessment and the competent authority |
+| Cycle parking | Close by, orderly, never blocking movement | Consolidated parking areas at every station and every stitching-link landing point, marked out and sheltered | Capacity must follow measured demand |
+| Kerbside space | Time-shared rather than permanently assigned | Peak hours keep it clear, off-peak allows loading, evenings allow event use | Time-of-day rules require approval by the transport authority |
+| Shared mobility | Orderly feeder use without taking the footway | Fixed docking points around stations; returns outside the fence are refused | Operating rules to be agreed between the authority and operators |
+
+Three hard constraints. First, no parking or docking arrangement may encroach on the continuous accessible route or on fire access. Second, AI applications in kerbside management are for information and dispatch only, never for issuing automatic fines. Third, the continuity of the spine at grade takes priority over parking convenience — where they conflict, parking gives way. Parking provision standards, kerbside sections and engineering feasibility must all be determined by qualified parties against official transport data; this proposal states a governance position only [assumption:A-TRANSPORT-001] [assumption:A-CONTROLS-001].
+
+### 5b. Detailed slow-mobility network design (by key area)
+
+The three subsections above state positions; this one gives specifications at construction depth. **Lengths, densities and areas are all recomputed from the geometry/ layers of this package in EPSG:4548**, so a reviewer can re-derive them from the same data; section widths, surface materials and signal timings are concept proposals subject to a dedicated transport assessment [depth:traffic_rail_slow_parking] [assumption:A-TRANSPORT-001] [data:geometry/roads.geojson#ROAD-CYCLE-01].
+
+#### Cycling network by key area
+
+| Key area | Slow-mobility length inside the area (recomputed) | of which commuter cycle lane | Minimum clear cycle-lane width | Separation from motor traffic | Surface material |
+| --- | --- | --- | --- | --- | --- |
+| Origin Terrace (Zhongzhiyuan) | 5,791 m [metric:zhongzhiyuan_slow_mobility_length_m] | 2,000 m [metric:zhongzhiyuan_cycleway_length_m] | 3.0 m two-way (1.5 m per direction) | Physical separation by a 1.5 m planting strip | Coloured permeable asphalt (red-brown, void ratio ≥18%) |
+| Origin Works (AI Origin Community) | 3,092 m [metric:ai_origin_community_slow_mobility_length_m] | 1,112 m [metric:ai_origin_community_cycleway_length_m] | 3.0 m two-way | Central linear garden plus a 12 cm raised kerb | Coloured permeable concrete (grey-green) |
+| Bell Hub (Dazhongsi) | 2,283 m [metric:dazhongsi_slow_mobility_length_m] | 653 m [metric:dazhongsi_cycleway_length_m] | 2.0 m one-way × 2 | Bollards at 1.2 m spacing plus an 8 cm raised surface | Permeable asphalt (dark grey) with a high-friction wearing course |
+
+The three key areas together hold 11,166 m of slow-mobility route, contained within the belt's total slow-mobility network of 25,932 m [metric:slow_mobility_network_length_m]; the remainder lies along the north and south ends of the spine greenway and the seven stitching links [data:geometry/roads.geojson#ROAD-STITCH-03]. There is only one continuity test for the cycling network: **no point on any 1 km cycling route may require dismounting and pushing**; a section that fails this test is not counted in the table above.
+
+#### Pedestrian priority zones by key area
+
+| Key area | Boundary of the pedestrian priority zone | Surface treatment | Speed limit | Access control |
+| --- | --- | --- | --- | --- |
+| Origin Terrace | The full 800 m of the full-stack walking axis plus the 6 m setback strips on both sides | 300 × 600 mm stone in a broken-bond pattern, continuous tactile paving, no level changes | Service vehicles ≤20 km/h; autonomous delivery vehicles ≤15 km/h | Retractable bollards at both ends; only registered service vehicles and emergency vehicles admitted |
+| Origin Works | The full 1,100 m of the main pedestrian spine (including the 4.0 m central linear garden) | Permeable pavers plus wood-composite decking in the central garden | Private motor vehicles excluded; emergency vehicles ≤15 km/h | Stone bollards at the ends plus a 15 cm raised surface; a 4.0 m clear fire route maintained at all times |
+| Bell Hub | The full length of the DZ-C AI-native retail street plus the 3,600 m² four-quadrant station concourse | Slip-resistant stone; spill-out zones bounded by a contrasting stone band | Buses and feeders ≤20 km/h; private vehicles excluded | Time-based physical closure: loading admitted 07:00–09:00, bollards up at all other times |
+
+#### One intersection in detail: stitching link #3 × spine greenway (Tsinghua Garden Station section)
+
+Slow-mobility systems fail at intersections rather than along links, so one intersection is worked out in full here and the rest are derived from the same family [data:geometry/roads.geojson#ROAD-STITCH-03].
+
+| Design element | Specification |
+| --- | --- |
+| Plan form | Raised crossing table, 12 cm above the carriageway, 1:12 ramps on both sides, table dimensions 12.0 m × 9.0 m |
+| Cycle-pedestrian separation | On the table the cycle lane narrows to 2.5 m and shifts 0.5 m outward to force a lower speed; the walking route is 4.0 m; a 0.4 m tactile separation strip (6 mm raised) runs between them |
+| Signal timing | Pedestrian and cycle phases are separated: pedestrian green 22 s + 4 s clearance, cycle green 18 s, cycle time 80 s, maximum pedestrian wait ≤45 s |
+| Sight triangle | 25 m of unobstructed approach for cyclists; building corners set back ≥3 m; planting trimmed to ≤0.6 m; no advertising light boxes |
+| Night lighting | ≥30 lx on the table, ≥10 lx vertical illuminance, 3000 K, arranged to avoid glare for cyclists |
+| Accessibility | No level change across the table, continuous tactile paving, audible crossing signal and tactile warning strip; ≥1.8 m clear width for wheelchairs [standard:BARRIER-FREE-ENVIRONMENT-LAW] |
+| Failure fallback | On signal failure the intersection switches automatically to four-way red flash plus physical give-way signs; signs and markings are independent of any networked system and remain readable offline |
+
+#### Micro-mobility docking points (shared bikes and e-scooters)
+
+| Key area | Docking points | Spaces per point | Average spacing | Main locations |
+| --- | --- | --- | --- | --- |
+| Origin Terrace | 6 | 20–30 | approx. 250 m | Qinghe station exits, both ends of the full-stack walking axis, east side of Herringbone Terrace Plaza, entrance to the Qing River waterfront walk, edge of the ZZ-E reserve land |
+| Origin Works | 5 | 15–25 | approx. 200 m | Zhichun station exits, west side of Examination Gate Plaza, Release Hall forecourt, two of the three pocket parks |
+| Bell Hub | 4 | 25–40 | approx. 300 m | One at each of the four directional exits of the Dazhongsi four-quadrant concourse |
+
+Fifteen points in total, about 380 spaces. Three rules: docking points sit inside the furniture zone and never occupy the walking width; geofencing applies and returns outside the fence are refused; each point keeps a ≥1.5 m wheelchair bypass. Parking demand must be verified against measured data — what this proposal gives is the structure of locations, not a demand forecast [assumption:A-DATA-001].
+
+#### Slow-mobility spatial metrics by key area
+
+| Metric | Origin Terrace | Origin Works | Bell Hub | Basis |
+| --- | --- | --- | --- | --- |
+| Key-area size (ha) | 192.92 | 104.32 | 72.05 | Recomputed from key_areas.geojson [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| Slow-mobility network density (m/ha) | 30.0 [metric:zhongzhiyuan_slow_mobility_density_m_per_ha] | 29.6 [metric:ai_origin_community_slow_mobility_density_m_per_ha] | 31.7 [metric:dazhongsi_slow_mobility_density_m_per_ha] | Recomputed = slow-mobility length ÷ key-area size |
+| Green ratio | 29.9% [metric:zhongzhiyuan_green_ratio] | 22.9% [metric:ai_origin_community_green_ratio] | 30.2% [metric:dazhongsi_green_ratio] | Recomputed = green area ÷ key-area size |
+| Public space share | 5.5% [metric:zhongzhiyuan_public_space_ratio] | 34.4% [metric:ai_origin_community_public_space_ratio] | 6.3% [metric:dazhongsi_public_space_ratio] | Recomputed; the high value at Origin Works comes from the open experiment ground and the linear garden |
+| Pedestrian route directness ratio (target) | ≤1.25 | ≤1.20 | ≤1.30 | Actual walking route ÷ straight-line distance; to be verified by measurement |
+| Average crossing wait (target) | ≤40 s | ≤35 s | ≤45 s | Peak-period average; to be verified by measurement |
+
+The first four rows are recomputed existing and proposed values; the last two are targets awaiting measurement. They sit in the same table but are not of the same kind and must not be read as if they were. Directness ratio and waiting time have no usable operational baseline, so this proposal gives targets without claiming a current value [assumption:A-DATA-001].
+
+### 5c. Detailed station-area integration design
+
+The design-depth anchor for station areas is [depth:station_area_integration]; station identification, catchment gradient, interchange design and the first/last mile are each given below.
+
+#### Station identification
+
+| Station | Lines (per public network maps; to be confirmed against official rail data) | Relationship to the key areas | Recomputed feeder-link length |
+| --- | --- | --- | --- |
+| Qinghe Station | Metro Line 13, Changping Line; national rail Qinghe Station (Beijing–Zhangjiakou high-speed rail) | Northern gateway of Origin Terrace | 797 m [data:geometry/roads.geojson#ROAD-TRANSIT-01] |
+| Wudaokou Station | Metro Line 13 | Southern end of Origin Terrace, northern interface of Origin Works | 797 m [data:geometry/roads.geojson#ROAD-TRANSIT-02] |
+| Zhichunlu Station | Metro Line 13, Line 10 | Southern gateway of Origin Works | 798 m [data:geometry/roads.geojson#ROAD-TRANSIT-03] |
+| Dazhongsi Station | Metro Line 13 | Core of Bell Hub | 798 m [data:geometry/roads.geojson#ROAD-TRANSIT-04] |
+
+This proposal adds no rail line recommendation; network changes follow statutory procedure [assumption:A-CONTROLS-001]. Station and line pairs are listed from public network maps; engineering interface conditions, ridership and exit locations must be assessed separately against official rail data [assumption:A-TRANSPORT-001].
+
+#### Three-tier intensity gradient in the 500 m catchment
+
+A station area is not "a station plus retail" but a graded spatial structure. The three tiers are expressed through verifiable built-form measures rather than floor area ratio, which must wait for statutory regulatory conditions [assumption:A-CONTROLS-001]:
+
+| Ring | Radius | Maximum plot coverage (concept proposal) | Public use at ground floor | Land-use mix target (share of floor area) | Principal pedestrian routes |
+| --- | --- | --- | --- | --- | --- |
+| Station core | 0–150 m | ≤55% | ≥70% | Retail and services 40–50%, public services 15–20%, office and R&D 30–40%, housing ≤10% | Station hall directly into the four-quadrant concourse |
+| Transition | 150–300 m | ≤45% | ≥50% | Office and R&D 35–45%, retail and services 25–35%, housing 20–30% | Spine greenway branches and internal block streets |
+| Outer | 300–500 m | ≤35% | ≥30% | Housing 40–50%, public services 20–25%, retail and services 15–20% | Stitching-link landing points strung with community pocket parks |
+
+The three tiers have no hard edges; building height and street-wall continuity carry the transition. Within 150 m of the station core, no closed podium frontage without an entrance is permitted — the most common killer of walking experience in station areas.
+
+#### Interchange design, station by station
+
+| Station | Covered walkway length | Wayfinding strategy | Cycle parking within 50 m of the exits |
+| --- | --- | --- | --- |
+| Qinghe | 320 m (station hall → station concourse → spine greenway entrance) | Three-level physical wayfinding: platform level points to the area, concourse level to the greenway and the three terraces, street level to specific nodes; all with Braille and high-contrast type | 400 spaces (including a 60-space shared-bike zone) |
+| Wudaokou | 260 m (station hall → south end of the full-stack walking axis) | The same three levels, plus a pointer towards the heritage park spine | 350 spaces (including a 50-space shared-bike zone) |
+| Zhichun | 240 m (station hall → Origin Works pedestrian spine) | The same three levels, plus pointers to the universities and the Release Hall | 300 spaces (including a 40-space shared-bike zone) |
+| Dazhongsi | 380 m (continuous through the four-quadrant concourse) | The same three levels, with a principal wayfinding column in each quadrant plus Report Card Kiosk RCK-03 | 500 spaces (including an 80-space shared-bike zone) |
+
+That is 1,550 cycle parking spaces in total. The hard requirement for wayfinding is that it works offline: any route guidance that depends on scanning a code or an app must have an equivalent physical version [standard:BARRIER-FREE-ENVIRONMENT-LAW]. Parking capacity must be verified against measured demand [assumption:A-DATA-001].
+
+#### First and last mile
+
+| Mode | Target share of station access | Spatial provision |
+| --- | --- | --- |
+| Walking | 50% | Continuous step-free walking routes; within 500 m of a station the walking network density is not below the key-area average |
+| Cycling and shared bikes | 30% | 300–500 parking spaces per station plus 2–4 geofenced docking points |
+| Bus and shuttle | 15% | 2–3 bus bays of ≥12 m per station, in laybys, with sheltered waiting |
+| Car and ride-hail | ≤5% | One pick-up/drop-off area per station (25 m long, 2 bays), within 80 m of an exit, never occupying a cycle lane |
+
+The shares are **targets, not forecasts**: this proposal has no station OD data and makes no ridership forecast [assumption:A-DATA-001]. First and last services must keep fixed timetables and a staffed enquiry point, and algorithmic dispatch must not replace guaranteed basic service — this is how human fallback lands in the feeder network.
+
+### 5d. Parking and kerbside metrics by key area
+
+#### Maximum provision (concept proposal, spaces per 1,000 m² of floor area)
+
+This table sets **maximums, not minimums**. The purpose of a maximum is to stop parking supply from eating the walking realm; it does not replace statutory provision standards. Where the statutory minimum exceeds the maximum proposed here, the statutory standard prevails and an adjustment should be sought through the transit-proximity reduction procedure [assumption:A-TRANSPORT-001] [assumption:A-CONTROLS-001]:
+
+| Key area | Office / R&D | Housing | Retail | Civic and cultural |
+| --- | --- | --- | --- | --- |
+| Origin Terrace | ≤0.35 | ≤0.50 | ≤0.30 | ≤0.20 |
+| Origin Works | ≤0.30 | ≤0.45 (youth rental housing ≤0.20) | ≤0.25 | ≤0.15 |
+| Bell Hub | ≤0.25 | ≤0.40 | ≤0.20 | ≤0.15 |
+
+Reasoning for the gradient: Bell Hub is covered by rail stations on three sides and can push parking lowest; Origin Works is dominated by youth rental and shared living, where car ownership is structurally lower; Origin Terrace needs headroom for equipment delivery and external visitors.
+
+#### Location and type of parking facilities
+
+| Key area | Consolidated parking locations | Type | Surface parking |
+| --- | --- | --- | --- |
+| Origin Terrace | Three locations: east of ZZ-A, north of ZZ-C, edge of ZZ-E | Mainly underground (levels -1/-2); ZZ-E uses mechanical stacked parking for flexible demand | Loading bays and accessible bays only |
+| Origin Works | Two locations at the edge of the YD-D service belt plus one mechanical facility in YD-B | Underground plus mechanical; shared between uses by time of day (offices by day, housing at night) | No on-street parking; six accessible bays only |
+| Bell Hub | Beneath the DZ-A station-city composite (levels -2/-3) plus one mechanical facility in DZ-B | Underground structured plus mechanical | No new surface parking anywhere in the DZ-D heritage buffer belt |
+
+#### Kerbside time-of-day allocation
+
+| Period | Origin Terrace | Origin Works | Bell Hub |
+| --- | --- | --- | --- |
+| 07:00–09:30 | Movement priority, no stopping | Movement priority, no stopping | Movement priority; bus lane in operation |
+| 09:30–16:30 | Loading, 30 min limit | Loading, 20 min limit (community retail) | Loading, 30 min limit (spill-out zones withdrawn) |
+| 16:30–19:30 | Movement priority, no stopping | Movement priority, no stopping | Movement priority; bus lane in operation |
+| 19:30–23:00 | Event use (launches, markets) by prior notice | Evening community event use | Night market and spill-out zones released |
+| 23:00–07:00 | Waste collection and loading | Waste collection and loading | Waste collection and loading |
+| At all times | ≥2 accessible bays per block; no stopping on fire routes; the continuous accessible route may not be occupied | As left | As left |
+
+Time-of-day rules require approval by the transport authority before implementation; AI applications in kerbside management are for information and dispatch only, never for issuing automatic fines — stated in subsection 3 above and here bound to specific time periods.
+
+#### Electric-vehicle charging provision
+
+| Key area | Charging bays as a share of all parking spaces | of which fast charging | Reserve |
+| --- | --- | --- | --- |
+| Origin Terrace | ≥40% | ≥10% | Cable trays and switchgear capacity reserved so that 100% of bays can be converted |
+| Origin Works | ≥35% | ≥8% | As above |
+| Bell Hub | ≥30% | ≥12% (serving short-stay retail parking) | As above |
+
+Actual supply capacity for charging must be confirmed against municipal utility data; this proposal draws no load calculation conclusion [assumption:A-MUNICIPAL-001] [depth:municipal_new_infrastructure].
+
+### 6. Municipal and new infrastructure
 
 The principle is that new infrastructure follows public nodes [depth:municipal_new_infrastructure]: edge-compute waypoints, edge nodes, distributed energy, storage and charging are co-located compactly with public space nodes rather than forming isolated machine-room islands. In addition:
 
@@ -828,7 +1276,7 @@ The principle is that new infrastructure follows public nodes [depth:municipal_n
 
 Capacity, routing and load assessment for conventional utilities must follow official data; this proposal draws no engineering conclusions [assumption:A-CONTROLS-001].
 
-### 6. The energy cost of compute must be made visible
+### 7. The energy cost of compute must be made visible
 
 An AI innovation belt cannot dodge an awkward fact: compute is a heavy electricity user. A proposal that discusses compute capacity without discussing its energy cost is not honest, and under reduction-led development it would not survive scrutiny [depth:municipal_new_infrastructure].
 
@@ -842,7 +1290,7 @@ Third, turn energy use into public information. The Bell of Compute is not only 
 
 Load forecasting, substation capacity and heating-network capacity must be assessed by qualified parties against official utility data; this proposal draws no engineering conclusions [assumption:A-CONTROLS-001].
 
-### 7. Public services
+### 8. Public services
 
 Education, health, elderly care, childcare, culture and sport are provided on a fifteen-minute innovation living circle, with two gaps prioritised: low-cost housing and shared living facilities for young founders, and age-friendly and digital-assistance facilities for older residents. Continuous barrier-free design applies along the whole belt in line with accessibility legislation.
 
@@ -1011,6 +1459,21 @@ Why these three. Each tests one of the proposal's three central claims: whether 
 
 On the failure tests. The final column is not a disclaimer; it is the methodological position of this proposal: an implementation plan unwilling to write its failure test in advance cannot be held to account afterwards. If a pilot misses its target, the reason should be published and the scheme adjusted, rather than quietly scaled up. This is the same logic as the "failure record" and "exit condition" entries in the public answer sheet [depth:risk_missing_data].
 
+### 8. From one-off investment to lasting brand assets and collaboration channels
+
+What does an innovation corridor leave behind in the end? Not buildings, which age; not single events, which disperse. Only three things endure [depth:phasing_implementation]:
+
+First: brand equity. The name, the "Herringbone Rising" motif, the Four Origins and the Bell of Compute form an extensible visual and narrative system that can be deployed across events, publishing, cultural products, wayfinding and international communication without loss of consistency. The test is simple: if a different team runs this ten years from now, will this identity still be recognisable? The proposal therefore requires the visual identity to be open-sourced alongside the submission for non-commercial reuse, rather than locked within a single operating company — widely used symbols become assets; monopolised symbols become liabilities.
+
+Second: collaboration channels. The value of "one congress, one contest, one festival, one list" lies not in holding meetings, but in regularly generating continuing relationships: the Open-Source Congress creates an annual contact point for international teams; the Challenge creates continuous pairing between enterprises and venue owners; the Contribution List creates an enduring identity bond between developers and the corridor. The proposal recommends establishing institutional landing mechanisms — corridor desks, scenario-opening catalogues, open-source maintainer seats — so that when the congress ends, the channel remains open.
+
+Third: reproducible methodology, not just visitable showpieces. What is truly worth replicating along this corridor is not a particular greenway section, but the "human fallback + public report card" governance system, the loop-closure verification method, and the discipline of pre-specifying failure criteria. These do not depend on local site conditions and can be extended to any city. The proposal therefore recommends publishing regulatory texts, evaluation criteria and recalculation scripts openly, making them citeable, challengeable and improvable.
+
+These three elements together support a higher goal: anchoring a global AI industry height and pilgrimage site — the industrial height answered by supply-chain completeness, the pilgrimage site answered by whether there is a compelling reason to make the journey.
+
+Boundary statement: All brand, event and collaboration mechanisms above are conceptual recommendations for professional teams to develop further and do not constitute formal government decisions or legal commitments [assumption:A-CONTROLS-001].
+
+
 Milestones and responsibility interfaces. Phase 1 (2026-2028) takes the three pilots and the opening of the northern spine as its milestone; Phase 2 (2029-2031) takes a completed stitching network and the formed full-stack blocks; Phase 3 (2032-2035) takes station-city integration and a steady-state event system. Each phase may begin only after the previous phase has published its recomputation and pilot conclusions; if that is not done, the next phase does not start. All lead bodies above are suggestions; actual mandates must be settled through statutory process, and this proposal makes no commitment on any organisation's behalf [assumption:A-CONTROLS-001].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
@@ -1033,7 +1496,16 @@ Every spatial metric is recomputed from the `geometry/` layers in EPSG:4548 and 
 | East-west stitching links | 7 | Pedestrian links across the corridor |
 | Key areas | 3 | About 369.3 ha in total |
 
-### 3. Topology self-check
+Two levels must be kept apart. As **statutory control metrics**, `floor_area_ratio`, `building_height_control_m` and `total_floor_area_sqm` stay `unknown` in `metrics.json` until the competent authority sets them; this package does not fill them in [standard:MOHURD-CONTROL-DETAILED-PLANNING]. As **urban-design concept proposals**, sections 5.1-5.3 do give a FAR and height range for each of the fifteen blocks, and they differ from statutory figures on three tests, any one of which failing would send them back to `unknown`: they are recomputable (coverage cap × storeys, storeys × floor-to-floor height, checkable row by row); they are labelled as concept proposals and bound to [assumption:A-CONTROLS-001]; and they never enter `metrics.json`, the area recalculation or any control instrument. An urban design that will not even propose an intensity range cannot be assessed for feasibility, but proposing a recomputable range is not the same act as inventing a plausible statutory FAR — the difference is exactly those three tests.
+
+
+### 3. Three unknown metrics and why they remain blank
+
+`metrics.json` explicitly marks `floor_area_ratio`, `building_height_control_m` and `total_floor_area_sqm` as `unknown` rather than writing speculative values [depth:development_intensity_controls]. 
+
+This reflects a fundamental methodological stance: statutory development intensity belongs strictly to regulatory planning. Before official site boundaries, parcel property surveys and municipal capacity studies are released, supplying arbitrary statutory FAR or height numbers is irresponsible. Once official regulatory planning conditions are published, these three metrics will be calculated and populated in strict accordance with statutory procedures [assumption:A-CONTROLS-001].
+
+### 4. Topology self-check
 
 | Check | Result | Tolerance |
 | --- | --- | --- |
@@ -1042,7 +1514,7 @@ Every spatial metric is recomputed from the `geometry/` layers in EPSG:4548 and 
 | Key-area identity completeness | 3/3 pass | Required |
 | Boundary trust labelling | Provisional declared | Required |
 
-### 4. Compliance matrix
+### 5. Compliance matrix
 
 `compliance_matrix.json` maps the 17 announcement tasks from 1.3.1 to 1.5.3.3 and the six agent tasks to an eight-part tuple of section, layer, metric, drawing, HTML, source, assumption and self-check. `standard_matrix.json` covers six standards and `design_depth_matrix.json` covers fifteen depth items. The matrices and this text index each other, so a reviewer can move from any row directly to its evidence.
 
