@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for urban design proposal generation, geometry derivation, and bilingual narrative authoring"
   },
-  "generated_at": "2026-08-18T09:00:00Z",
+  "generated_at": "2026-08-19T06:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c466db9c8547617b509dfd423b98d4448962f4c582c29d31c6e4c33efaa5630a"
+      "sha256": "d7b64b507f1958b5e877b2cbf3915443d8191865c9d34a05f7375b7a4db08f25"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "1079666fe312951b0ecfa5e90fc39e36b1dfac6c93ba2305817d8e9df541d2db"
+      "sha256": "2f90ea7b118cad701a4328c58b6acb3ab1e25a7ab819bb05f94302ca93132980"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "61a0411f01c1fb5f431649ebca9428013bda2bae35b3df61f2237870b56b2a16"
+      "sha256": "239dc422ccf3c02b14f673da537a01ea7db2ce884ad3bdfa871a195535d64f02"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6f887d1fffe95e960d5c3ff66e574f10d08822e890418b73c85e7317b03e0779"
+      "sha256": "0c06103fb0fe3f211eb8363a3b4ec949ba2c6c92fcfcbdff8b9e8be4a39cd620"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b1d0b08318f32e3aa4fc8394df0cb2b3155be0fc8acb82317c9a1f27a4d9c7a7"
+      "sha256": "fad83cbeebd914b0bae90fe3d3d592d107f7efb815ae542f64b865ee3047470f"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "95c57f1f75fc1eb517e4c69d38f858893433c1fcee7e54448a132e16ed23d95a"
+      "sha256": "fdc233be9345b8567ba8b75066b7b11420ae36e3f52af3fac9126f70b60f770c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -386,6 +386,42 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "0b350ead279713110234ceb0d3859065616a23ac63808cf6f292fe183c1557fe"
+    },
+    {
+      "path": "visual/assets/philosophy/value-tradeoffs.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "fd1465c80b2126b58057593dab00d0959b5a9e18e7546029a11a62ad5fbd559b"
+    },
+    {
+      "path": "visual/assets/philosophy/site-necessity.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "b08f5f296f3c256e5a2d7bab14de326dc2ad6bf29c067bcd559e876b0882b331"
+    },
+    {
+      "path": "visual/assets/philosophy/first-person-scripts.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "14e663631ebd2c7dae33bc8a68222ee47153e1bd8899aa1dd200b87b8f7e3564"
+    },
+    {
+      "path": "visual/assets/philosophy/epistemic-grading.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "7081847c8b2ff9d6fad525215dd1bdfe52829b4f70fa8c4db769afc5f1fd2513"
+    },
+    {
+      "path": "visual/assets/philosophy/incentive-compatibility.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "61e97411f8c9788d4fe4c6559babd255179451476b981150322217321b92dea6"
+    },
+    {
+      "path": "visual/assets/philosophy/self-update-protocol.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "5e01f208388fc05aef7593cb76f337d154c8934575918b8365cd56dde1d65c76"
     }
   ],
   "validation_claim": {
