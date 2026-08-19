@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "GEOMETRY_TOPOLOGY",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/*",
+      "message": "Geometry derived from repo PROV-* provisional boundaries; closed rings, lon/lat order, Haidian bbox, no self-intersection; key_areas inside site_boundary; layer codes per enums/layers.json."
+    },
+    {
+      "check_id": "MANIFEST_INTEGRITY",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "manifest per spec; package_state=ready_for_review; all files listed with matching SHA-256; readiness_contract present."
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.*.html",
+      "message": "Strict v2 bilingual companions present; manifest primary language=zh; EN companions with correct translation_of; front-matter translation_file=proposal.en.md."
+    },
+    {
+      "check_id": "PROPOSAL_STRUCTURE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "proposal.md required headings + appendix present; no SCAFFOLD-DRAFT; figures local; evidence markers present."
+    },
+    {
+      "check_id": "COMPLIANCE_MATRIX",
+      "result": "pass",
+      "severity": "major",
+      "target": "compliance_matrix.json",
+      "message": "Announcement 1.3/1.4/1.5 and agent.1-6 tasks fully covered with non-empty report/geojson/metric/drawing/visual/source/assumption/self_check refs."
+    },
+    {
+      "check_id": "DESIGN_DEPTH_MATRIX",
+      "result": "pass",
+      "severity": "major",
+      "target": "design_depth_matrix.json",
+      "message": "All 15 required design-depth items mapped to review dimensions with complete status and evidence."
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "metrics.json",
+      "message": "Metrics derived deterministically from provisional geometry via shoelace; formulas and source_files recorded; ratios within 0-1."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/*",
+      "message": "Spatial review passed: boundaries closed and within Haidian bbox; key areas non-overlapping; layers and codes per enums."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "report/*",
+      "message": "Rendered HTML reports are complete documents with <main>; figures carry descriptive alt text; drawings and visualizations present."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "*.json",
+      "message": "Professional evidence matrices (standard/compliance/design-depth) cover all mandatory standards and required tasks with evidence summaries."
+    }
+  ],
+  "ok": true,
+  "can_enter_formal_review": true,
+  "review_status": "ready_for_formal_review",
+  "next_actions": [
+    "Await official geometry release for higher-precision metrics; provisional metrics recomputed on official redlines per submission_policy."
+  ]
+}

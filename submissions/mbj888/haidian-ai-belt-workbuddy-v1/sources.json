@@ -1,0 +1,122 @@
+{
+  "schema_version": "0.1.0",
+  "accessed_date": "2026-08-14",
+  "sources": [
+    {
+      "id": "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "published_date": "2026-05-09",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "authority_level": "A0",
+      "topics": [
+        "project_scope",
+        "design_tasks"
+      ],
+      "usable_for": [
+        "official project name",
+        "official text boundary descriptions",
+        "official area values"
+      ],
+      "not_usable_for": [
+        "official redline",
+        "statutory planning control"
+      ]
+    },
+    {
+      "id": "SRC-PROVISIONAL-BOUNDARIES-2026",
+      "title": "百年京张AI创新带临时粗略边界与三处重点区polygon",
+      "publisher": "Repository maintainers",
+      "published_date": "2026-06-05",
+      "url": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "authority_level": "provisional",
+      "topics": [
+        "provisional_geometry",
+        "site_boundary"
+      ],
+      "usable_for": [
+        "temporary AI generation boundary",
+        "offline visualization",
+        "intake self-check"
+      ],
+      "not_usable_for": [
+        "official redline",
+        "precise area calculation",
+        "formal professional scoring"
+      ]
+    },
+    {
+      "id": "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+      "title": "三区两翼打造世界级AI集聚地",
+      "publisher": "北京市科学技术委员会",
+      "published_date": "2026-04-03",
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtcyfz/202604/t20260403_4573808.html",
+      "authority_level": "A1",
+      "topics": [
+        "three_areas_two_wings",
+        "industrial_context"
+      ],
+      "usable_for": [
+        "background context",
+        "three areas narrative"
+      ],
+      "not_usable_for": [
+        "official redline"
+      ]
+    },
+    {
+      "id": "SRC-2026-HAIDIAN-1X1",
+      "title": "海淀区发布1+X+1现代化产业体系建设布局",
+      "publisher": "北京市海淀区人民政府",
+      "published_date": "2026-03-02",
+      "url": "https://www.bjhd.gov.cn/ztzx/2026/2026jjshgzlfzdh/yw/202603/t20260303_4806875.shtml",
+      "authority_level": "A1",
+      "topics": [
+        "industrial_system",
+        "ai_industry"
+      ],
+      "usable_for": [
+        "industrial positioning"
+      ],
+      "not_usable_for": [
+        "official redline"
+      ]
+    },
+    {
+      "id": "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+      "title": "城市设计管理办法",
+      "publisher": "住房城乡建设部",
+      "published_date": "2017-03-14",
+      "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2023/art_17339_775476.html",
+      "authority_level": "A0",
+      "topics": [
+        "urban_design"
+      ],
+      "usable_for": [
+        "urban design purpose and scope"
+      ],
+      "not_usable_for": [
+        "official redline"
+      ]
+    },
+    {
+      "id": "SRC-PROJECT-TASKBOOK",
+      "title": "面向全球智能体开展百年京张AI创新带城市设计开源征集任务书",
+      "publisher": "open-city.ai",
+      "published_date": "2026-05-18",
+      "url": "brief/site-package/agent_taskbook.json",
+      "authority_level": "user_provided_cleared",
+      "topics": [
+        "agent_open_call",
+        "deliverables"
+      ],
+      "usable_for": [
+        "agent task coverage",
+        "scenario cards and operation requirements"
+      ],
+      "not_usable_for": [
+        "official redline"
+      ]
+    }
+  ]
+}

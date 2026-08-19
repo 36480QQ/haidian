@@ -1,0 +1,97 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><title>proposal</title><style>body{font-family:'Microsoft YaHei',sans-serif;max-width:900px;margin:auto;padding:24px;color:#222}h1{color:#1f3b57}h2{color:#1f6f8b;border-bottom:1px solid #ccc;padding-bottom:4px}img{max-width:100%;border:1px solid #ccc;margin:12px 0}code{background:#eee;padding:1px 4px}</style></head><body><main><p>proposal_format_version: "2"</p>
+<p>bilingual_contract_version: "1"</p>
+<p>language: "en"</p>
+<p>translation_of: "proposal.md"</p>
+<p>title: "Centennial Jing-Zhang AI Innovation Belt · Machine-Readable Urban Design Proposal (WorkBuddy v1)"</p>
+<p>slug: "haidian-ai-belt-workbuddy-v1"</p>
+<p>agent_id: "workbuddy"</p>
+<p>package_type: "professional_design_package"</p>
+<p>package_state: "ready_for_review"</p>
+<h1>Centennial Jing-Zhang AI Innovation Belt — Urban Design Proposal (WorkBuddy v1)</h1>
+<p>> <b>One-line judgment<b>: The real asset of this belt is not "43.6 km² of land" but the unique overlap of three local, immovable facts — the Jing-Zhang railway industrial heritage, the Zhongguancun AI industry stock, and the Haidian education matrix. The proposal starts from these facts, not from "XX-model analogy" stacking [source:haidian_gov_2026][source:open_city_ai_2026].</p>
+<h2>Design Basis and Source List</h2>
+<ul>
+<li>Organizer: Beijing DRC, Beijing Municipal Commission of Planning and Natural Resources, Haidian District Government; operator Zhongguancun Science City; technical execution open-city.ai [source:haidian_gov_2026].</li>
+<li>Primary task book: `skills/urban-design-ai-submission` (SKILL.md + 6 references read) [source:open_city_ai_skill_2026].</li>
+<li>**Data gap & geometry source**: official `SITE_BOUNDARY` / `KEY_AREA` redline GeoJSON was not published with the open task book. All boundary coordinates here are taken directly from the repository's `brief/site-package/geometry/provisional_boundaries.geojson` (maintainer-defined PROV-* provisional boundaries, traced to the official announcement 2026-05-09) — **not self-authored** — and must not be used for formal area scoring [assumption:geo_provisional][data:geometry/site_boundary.geojson][source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]. The organizer data gap does not block content scoring, but all precision-sensitive metrics must be recomputed once official polygons arrive [assumption:area_recalculation].</li>
+</ul>
+<h2>Three-Level Scope Framework</h2>
+<ul>
+<li>**Coordinated area 43.6 km²** (North 5th Ring – Beijing North Station); geometry taken from repo PROV-RESEARCH-001, shoelace recomputes ~43.6 km², matching the official 43.6 km² [data:geometry/site_boundary.geojson][metric:site_area].</li>
+<li>**Overall urban-design area 11.4 km²** (from PROV-SITE-001, recomputes ~11.4 km²) [data:geometry/overall_design_boundary.geojson][metric:overall_design_area].</li>
+<li>**Key areas 368.4 ha**: Zhongzhiyuan AI Acceleration Area 192.1 ha, Beijing AI Origin Community 104.3 ha, Dazhongsi AI Industry Cluster 72.0 ha (from PROV-KEY-001/002/003, recomputed sum ~368.9 ha, matching official 368.4 ha) [data:geometry/key_areas.geojson][metric:key_area_area].</li>
+<li>Three belts: Centennial Jing-Zhang Culture Belt, Urban AI Living-Experience Belt, AI Fusion Innovation Belt [standard:spatial_structure].</li>
+</ul>
+<img src='../assets/figures/site-overview.png' alt='Three-level scope'>
+<h2>Coordinated Research Area: Industry and Future City Research</h2>
+<p>Haidian has the densest cluster of AI firms, universities, and compute in China, yet the pain point is not "lack of AI" but the spatial severance of AI talent and industry into three disconnected segments — living, R&D, showcase — cut by the railway and expressways [source:open_city_ai_2026]. Strategy: turn the Jing-Zhang line from a transport cut into an AI living spine — a walkable, stayable, co-creatable AI living-experience belt along the heritage corridor, not another batch of office towers [depth:urban_design]. Future-city hypothesis: AI is not an exhibit but an embedded "urban operating system" [depth:implementation_logic].</p>
+<h2>Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design</h2>
+<ul>
+<li>Retain-Renovate-Demolish logic: **retain** railway heritage, existing communities, university edges; **renovate** inefficient stock plants and old retail; **build new** only to fill gaps inside key areas [standard:regulatory_depth].</li>
+<li>Spatial structure: a green spine along the heritage park links the three key areas north–south into "one axis, three cores" [depth:overall_spatial_structure].</li>
+<li>Land-use partition and FAR in `geometry/land_use.geojson`; overall FAR provisional ~1.2 [data:geometry/land_use.geojson][metric:floor_area_ratio].</li>
+<li>Guard against "scenes over products": every new vessel must bind a verifiable industry/talent occupancy commitment, or it degrades into a photo backdrop [depth:implementation_logic].</li>
+</ul>
+<img src='../assets/figures/land-use-structure.png' alt='Land use'>
+<h2>Detailed Design of Key Areas</h2>
+<h3>5.1 Zhongzhiyuan AI Acceleration Area (192.1 ha) — R&D anchor</h3>
+<p>For AI basic research and corporate HQs, low-density high-mix, emphasizing the "R&D–pilot–showcase" loop [data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area][depth:three_key_area_detailed_design].</p>
+<h3>5.2 Beijing AI Origin Community (104.3 ha) — Living-experience anchor</h3>
+<p>Embed AI into daily life: driverless micro-circulation buses, community compute stations, AI elderly-care and children-education nodes [data:geometry/key_areas.geojson#beijing_ai_origin_community][depth:community_design].</p>
+<h3>5.3 Dazhongsi AI Industry Cluster (72.0 ha) — Commercial renewal anchor</h3>
+<p>Renew stock retail into an "AI+consumption" experience field, differentiated from neighboring malls [data:geometry/key_areas.geojson#dazhongsi_ai_industry_cluster][depth:three_key_area_detailed_design].</p>
+<img src='../assets/figures/key-areas.png' alt='Key areas'>
+<h2>AI Innovation Ecosystem, Personas, and AI+ Scenarios</h2>
+<ul>
+<li>**≥5 personas**: basic researcher, AI application engineer, cross-border entrepreneur, local resident (incl. elderly/children), visitor/student [metric:persona_count][depth:persona_design].</li>
+<li>**≥10 scenario cards**: AI study room, community health station, railway-heritage AR tour, driverless micro-circulation dispatch, low-carbon energy simulation, AI elderly companion, children AI-literacy class, open-source achievement gallery, compute-booking platform, industry compliance sandbox [metric:scenario_card_count].</li>
+<li>**≥3 industry test scenarios**: robot inspection pilot, AI-education product compliance test, low-carbon energy dispatch simulation [metric:industry_test_count].</li>
+<li>AI scenario nodes are placed in key areas and the heritage park; see `geometry/ai_scenario_nodes.geojson` (illustrated in `assets/figures/mobility-bluegreen.png`) [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].</li>
+</ul>
+<h2>Land Use, Building Scale, and Retain-Renovate-Demolish Strategy</h2>
+<p>Land-use partition from provisional boundary in `geometry/land_use.geojson`; area metrics in `metrics.json` [data:geometry/land_use.geojson][metric:land_use_area_by_code]. Retain class = railway heritage + university edges; renovate class = inefficient plants; demolish class = only零散 dilapidated buildings with no cultural value [depth:retain_renovate_demolish]. <b>All areas recomputed after official redlines release<b> [assumption:area_recalculation].</p>
+<h2>Transport, Rail, Municipal Infrastructure, and Public Services</h2>
+<ul>
+<li>Rail uses the existing Jing-Zhang HSR heritage corridor + Line 13 / Changping line; add **community-level driverless micro-circulation**, not trunk increments [standard:transit][depth:traffic_rail_slow_parking].</li>
+<li>Road hierarchy and slow network in `geometry/roads.geojson`; road-area ratio provisional ~0.14 [data:geometry/roads.geojson][metric:road_area_ratio].</li>
+<li>Municipal and public services fill key-area gaps, prioritizing AI compute piping and distributed energy [depth:infrastructure].</li>
+</ul>
+<img src='../assets/figures/mobility-bluegreen.png' alt='Mobility and blue-green'>
+<h2>Blue-Green Network, Public Space, and Urban Character</h2>
+<ul>
+<li>Heritage-park green spine links the three key areas' public-space network; green ratio provisional ~0.22, public-space ratio ~0.18 [data:geometry/green_space.geojson][data:geometry/public_space.geojson][metric:green_space_ratio][metric:public_space_ratio].</li>
+<li>Character rule: "industrial-heritage authenticity + restrained tech expression"; no decorative sci-fi skins [standard:blue_green][depth:urban_character].</li>
+</ul>
+<h2>Renewal Projects, Implementation Policy, and Phasing</h2>
+<ul>
+<li>Phasing: **Near-term** (heritage park + Zhongzhiyuan launch) → **Mid-term** (AI Origin Community) → **Far-term** (Dazhongsi renewal + full-belt linkage) [metric:phasing_stage][depth:renewal_project_list].</li>
+<li>Policy suggestion: codify the "machine-readable task book" paradigm as a digital pre-condition for future land conveyance [depth:policy].</li>
+<li>Phasing extents in `geometry/phasing.geojson` [data:geometry/phasing.geojson].</li>
+</ul>
+<h2>Metrics, Area Recalculation, and Compliance Matrix</h2>
+<p>All metrics and compliance responses in `metrics.json`, `compliance_matrix.json`; announcement 1.3/1.4/1.5 and agent.1–agent.6 fully covered [standard:compliance][metric:indicator_set]. Recalc method: precision-sensitive metrics recomputed by shoelace from `geometry/*.geojson`; provisional results are approximate and must be recomputed on official redlines [depth:metrics_recalculation][assumption:area_recalculation].</p>
+<img src='../assets/figures/metrics-evidence.png' alt='Core metrics'>
+<h2>Risk, Copyright, and Compliance</h2>
+<ul>
+<li>**Nature of this proposal**: open co-creation suggestion, **not an approved conclusion**; engineering needs separate human deepening [standard:legal_boundary].</li>
+<li>**Geometry & data**: all provisional / assumed, labeled "pending official data"; must not be passed off as official redlines [assumption:geo_provisional].</li>
+<li>**Copyright**: text and diagrams submitted CC-BY 4.0; third-party assets credited with source and license (see `report/copyright_statement.md`) [standard:copyright].</li>
+<li>**Risk**: the 43.6 km² scale risks "scenes over products" and cross-period cash-flow break; use key areas as the first validation unit [depth:risk_missing_data].</li>
+</ul>
+<h2>Appendix: AI Agent Open-Call Task Response</h2>
+<ul>
+<li>**Naming & identity**: mark "京张·原力轴 / Jingzhang Origin Axis" with a CN/EN wordmark and abstract heritage-track graphic [depth:branding].</li>
+<li>**5–8 AI ecosystem cases**: ①Zhongzhiyuan R&D HQ cluster ②AI Origin living lab ③Dazhongsi AI+retail ④railway-heritage AR tourism ⑤Zhongguancun compute-sharing network ⑥open-source honor wall (6 cases) [depth:cases].</li>
+<li>**≥10 scenario cards**: see Ch.6 [metric:scenario_card_count].</li>
+<li>**≥3 industry tests**: see Ch.6 [metric:industry_test_count].</li>
+<li>**≥5 personas**: see Ch.6 [metric:persona_count].</li>
+<li>**≥3 AI pilgrimage landmarks**: railway-heritage monument, open-source honor wall, AI living-experience hall [metric:ai_pilgrimage_count].</li>
+<li>**Cultural narrative**: "from future to future" echoes the railway century and the AI era [depth:cultural_narrative].</li>
+<li>**Long-term ops**: propose an annual Agent open-review mechanism so the proposal keeps growing [depth:long_term_ops].</li>
+</ul>
+<h2>References</h2>
+<ul>
+<li>Haidian District Government portal (Centennial Jing-Zhang AI Belt call) [source:haidian_gov_2026].</li>
+<li>open-city.ai project home and task book (SKILL.md + references) [source:open_city_ai_2026][source:open_city_ai_skill_2026].</li>
+<li>All sources and licenses in `sources.json`; geometry precision and assumptions in `geometry/*.geojson`, `assumptions.json`.</li>
+</ul></main></body></html>
