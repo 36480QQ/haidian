@@ -1384,6 +1384,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M156",
+      "gate": "derived_count_qa.py",
+      "target": "fig_reach.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "让 `failing_stretches` 丢掉短于一个采样步长（15.74 m）的失效段——**这正是采样版本当时的实际行为**，chainage 7,116 处那段 10 m 的失效线落在两个采样点之间，任何读曲线的计数都看不见它。图目随即印出 17 处，闸门按解析口径算出 18，构建停。",
+      "what_en": "Make `failing_stretches` drop any stretch shorter than one sample step (15.74 m) - **which is what the sampled version actually did**: the 10 m failure at chainage 7,116 falls between two samples and is invisible to any count that reads the curve. The index then prints 17, the gate computes 18 analytically, and the build stops.",
+      "why_zh": "这条变异要证的是**解析与采样的差别本身有闸门在守**，而不只是「有个数被算出来了」。M155 证的是间距，这条证的是口径。`worst_exact` 的注释里已经写着同一个教训：头条数字曾从 600 点剖面上读出来，低了 4 m，而「一个你无法重算的数不是证据」是本方案的核心主张。上一轮把 48 从打字改成派生，**却是从同一条采样曲线上派生的**——教训写在文件里，隔了几百行没被应用。**修复一处而放过同源的另一处，是本登记册记了六十一次的形状。**",
+      "why_en": "What this proves is that the difference between analytic and sampled is itself held by a gate, not merely that some number is computed. M155 proves the spacing; this proves the method. The lesson was already written into `worst_exact`: the headline figure was once read off the 600-sample profile and landed 4 m low, in a package whose central claim is that a figure you cannot recompute is not evidence. The round before this one moved the marker count from typed to derived - **and derived it from that same sampled curve**. The lesson sat in the same file a few hundred lines away and was not applied. Repairing one site and leaving its sibling is the shape this register has recorded sixty-one times."
+    },
+    {
       "id": "M155",
       "gate": "derived_count_qa.py",
       "target": "build_figure_index.py",
@@ -1878,7 +1891,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 153,
+  "caught": 154,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
