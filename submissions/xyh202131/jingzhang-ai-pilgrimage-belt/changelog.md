@@ -1,5 +1,28 @@
 # 方案迭代记录 / Changelog
 
+## v46.0 - 2026-08-19
+
+**4 态多媒体真视频重建 + 双语同步 + 真相自洽 + CRLF 修复 / Rebuild 4-state motion as a real video, sync bilingual media, reconcile truth-disclosure, fix CRLF**
+
+- 串行门：第 45 轮 PR #3269 已合并（head `4c941e7d9` 进入 canonical `main`），同包开放 PR 为 0，源工作树洁净。本轮**只针对第 45 轮遗留的 4 态视频质量问题**（视频 5.875s vs 音频 43.344s vs VTT 40s 链不闭合、4 态不可辨、帧内无 G0 水印、EN 侧无媒体入口、6 个文件 CRLF、git diff --check 22,628 行假阳性）做最小修复，不新增场景、项目、重点区、治理合同、成熟度或页面。
+- Serial gate: Round 45 PR #3269 is merged (head `4c941e7d9` entered canonical `main`); the package had zero open PRs and the source worktree was clean. This round **only** repairs the four-state video quality gaps that Round 45 left behind (video 5.875 s vs audio 43.344 s vs VTT 40 s chain broken, four states not distinguishable, no in-frame G0 watermark, EN side missing the media entry, six files written in CRLF, 22,628-line `git diff --check` false positive), without adding scene, project, key area, governance contract, maturity or page.
+
+| 已具备 / Already present | 仍薄弱 / RED | 必须冻结 / Locked | 本轮实施 / Implemented |
+|---|---|---|---|
+| 第 45 轮登记的 1 视频 + 1 音频 + 1 .vtt + 1 脚本与 ASSET-150..153；视觉与权利台账到位 | 视频短 7 倍、行人穿过色块，4 态不可辨；EN `proposal.en.md` 和 `visual/index.en.html` 仍说"无新媒体"；4 个 JSON 写 CRLF；视频声称"帧内持续水印"实则水印在 figcaption；视频帧内文字是 AI 生成乱码 | 双轨总纲、三原型、JZ-AIOS、G0—G3、四态数量与时序、三载体、九份 geometry、`metrics.json`、12/8/3/36、G0/NO-GO/provisional/rights、媒体与 A3 14+14/A0 8+8 页 | 重建 `assets/media/4-state-motion.mp4`：本地 ffmpeg + drawtext（msyh.ttc）合成 4 段纯色背景 + 中文状态标签 + 状态编号 + 帧内 G0 概念水印，1920×1080 h264 24 fps，**40.000 s 严格等于音频裁后长度与 .vtt 时码**；音频裁到 40.000 s；EN `proposal.en.md` 第 32 行与 `visual/index.en.html#four-state-media` 镜像 ZH；rights ledger ASSET-150 改 `asset_class=deterministic_composed_video`、`algorithm=Local ffmpeg drawtext composition`、明示 1920×1080 / 40.000 s / 帧内水印 / 字体 / 工具替换为 `TOOL-FFMPEG + TOOL-PYTHON`；`as_of` 改 2026-08-19 |
+
+- 修复前 RED 可重放：把 PR #3269 的 `4-state-motion.mp4` 拉下做 PyAV 时长校验，结果是 5.875 s（h264 24fps 141 帧），不是 30–48 s 也不是 40 s；抽 t=0/3/5.5s 三帧可见同样色块 + 同样行人过场，无 4 态可辨区别；左下右下角 AI 生成的中文是乱码字符；视频帧内没有任何"持续 G0 概念水印"；manifest/agent/rights ledger 同时写"持续水印"，与帧内容矛盾。修复后，PyAV 时长 40.000 s、4 段独立背景 + 状态编号 + 中文标签 + 左下角 msyh.ttf 渲染的 G0 概念水印全部存在于每一帧；视频、音频裁后、.vtt 三者时长一致。
+- Reproducible RED: PyAV on the PR #3269 `4-state-motion.mp4` returns 5.875 s (h264 24 fps 141 frames), not 30–48 s or 40 s; sampling t=0/3/5.5 s shows the same colour blocks and walking-figure animation with no distinguishable four states, the lower-left and lower-right AI-generated text is garbled glyphs, no in-frame G0 watermark appears in any frame, while manifest / agent / rights ledger all claim a "persistent watermark" — a direct contradiction with the frame content. After repair, PyAV reports 40.000 s, each segment has its own background, state number and Chinese state label, and the msyh.ttf G0 watermark sits in the lower-left of every frame; the trimmed audio and the .vtt captions share the same 40.000 s length.
+
+- 本轮把 rights ledger `expected_manifest_entries` 保持 153（不增不减，只改 ASSET-150 的元数据）；`as_of` 从 2026-08-18 → 2026-08-19；4 条媒体记录全部 `not_fully_cleared` / `generated_derivative_pending_embedded_asset_audit`（视频改为 `self_authored_derivative_pending_independent_review`），`audit_records` 仍为 0，`public_or_professional_reuse_blocked` 保持 true。
+- This round keeps rights-ledger `expected_manifest_entries` at 153 (no count change, only ASSET-150 metadata); `as_of` advances from 2026-08-18 to 2026-08-19; all four media records remain `not_fully_cleared` (video now `self_authored_derivative_pending_independent_review`); `audit_records` remains 0 and `public_or_professional_reuse_blocked` stays true.
+
+- 6 个 CRLF 文件（`agent.json` / `4-state-narration-script.md` / `4-state-narration.vtt` / `manifest.json` / `report/narrative.md` / `rights-clearance-ledger.json`）在本轮编辑后转为 LF；`git config --local core.autocrlf false` 已设；本轮 exact head 上 `git diff --check` 必须 exit 0、零假阳性。
+- The six CRLF files (`agent.json` / `4-state-narration-script.md` / `4-state-narration.vtt` / `manifest.json` / `report/narrative.md` / `rights-clearance-ledger.json`) are converted to LF after the in-round edits; `git config --local core.autocrlf false` is set; on the exact R46 head, `git diff --check` must exit 0 with zero false positives.
+
+- 视频、音频、字幕与文字稿 4 件套的锁步规则、权利与不可证明事项不变（"任一变更必须同步另外三份"）；视频 40.000 s、音频裁后 40.000 s、.vtt 至 00:00:40.000、文字稿 §时长描述保持"40 秒"。所有改动均不证明任何现场状态、批准、运行、公众反馈、无障碍结果或专业接受；D/H/P/C、G0、provisional、零独立清权、现实结果 0、`not_fully_cleared`、A3 14+14 / A0 8+8 页不变。
+- The four-piece lockstep rule (video / audio / .vtt / script) and the rights + non-provable disclosure stay intact ("any change to one must lockstep-update the other three"). Video 40.000 s, trimmed audio 40.000 s, .vtt to 00:00:40.000, script §duration remains "40 seconds". The changes prove no field state, approval, operation, public feedback, accessibility result or professional acceptance; D/H/P/C, G0, provisional status, zero independent clearance, zero real outcomes, `not_fully_cleared` and A3 14+14 / A0 8+8 page counts remain unchanged.
+
 ## v45.0 - 2026-08-18
 
 **Multimedia 4-state motion and narration (video + audio + srt + script) / 多模态 4 态运动与旁白**

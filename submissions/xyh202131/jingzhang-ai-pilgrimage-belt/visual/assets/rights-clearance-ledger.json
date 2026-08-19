@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
-  "as_of": "2026-08-18",
-  "as_of_semantics": "date of last real content edit; this round adds 4 generated media (ASSET-150..153) plus supporting rights ledger entries, with all new entries generated for the package and remaining pending independent review",
+  "as_of": "2026-08-19",
+  "as_of_semantics": "date of last real content edit; Round 46 replaces ASSET-150 (4-state motion video) with a deterministic ffmpeg drawtext composition (1920×1080 h264 24 fps, 40.000 s, in-frame G0 watermark, no AI image generation) and adds bilingual 4-state media entries to proposal.en.md / visual/index.en.html, with all changes remaining pending independent review",
   "scope": "Round 20 bilingual review handoff package index and Round 40 spatial-distinction redraw/republication",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
@@ -8279,12 +8279,20 @@
       "path": "assets/media/4-state-motion.mp4",
       "role": "multimedia_video",
       "language": "neutral",
-      "asset_class": "generated_video_visual",
-      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "asset_class": "deterministic_composed_video",
+      "origin_status": "self_authored_derivative_pending_independent_review",
       "content_identity": {
-        "algorithm": "platform video generation API (AIGC labelled, ContentProducer: MiniMax AI, exact model version not asserted by the package)",
+        "algorithm": "Local ffmpeg drawtext composition: 4 segments × 10.000 s at 1920×1080 24 fps h264 yuv420p, solid muted background colour per state (普通 beige, 验证 blue-gray, 故障 red-orange, 恢复 green) + ffmpeg drawtext rendering of the Chinese state label, sub-label, state number, and the persistent in-frame G0 watermark (font: msyh.ttc); no AI image generation, no rasterised prompt text, no garbled glyphs.",
+        "resolution": "1920x1080",
+        "frame_rate": "24",
+        "codec": "h264",
+        "pixel_format": "yuv420p",
+        "duration_seconds": 40.000,
+        "watermark_policy": "in_frame_persistent_drawtext_each_segment",
+        "watermark_text": "G0 概念 · 临时几何 · 非现场证据 · 非批准方案",
+        "audio_track": "assets/media/4-state-narration.mp3 (trimmed to 40.000 s by ffmpeg)",
         "digest_status": "self_reference_not_applicable",
-        "reason": "The video is a generated binary; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
+        "reason": "The video is a composed binary; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
       },
       "source_lineage": {
         "source_ids": [],
@@ -8295,14 +8303,21 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-VIDEOGEN-PLATFORM",
+        "TOOL-FFMPEG",
         "TOOL-PYTHON"
       ],
-      "embedded_components": [],
+      "embedded_components": [
+        {
+          "kind": "font",
+          "path": "C:/Windows/Fonts/msyh.ttc (Microsoft YaHei, system-provided; not redistributed by this submission)",
+          "license_or_terms_status": "system_font_not_redistributed",
+          "rights_effect": "in_scope_only_not_separately_distributable"
+        }
+      ],
       "generation_recipe": {
-        "status": "generated_visual_with_text_prompt",
+        "status": "deterministic_local_composition",
         "evidence_ref": "../../assets/media/4-state-narration-script.md",
-        "limitation": "Generated for this package; model, output terms, rasterized text, and exact file bytes remain pending independent review."
+        "limitation": "Composed locally with ffmpeg drawtext and the system Microsoft YaHei font; no model output, no prompt rasterisation, no embedded rasterised glyphs other than the deterministic drawtext render. Visual identity (muted earth tones, no real people / buildings / sites) is described in ../../assets/media/4-state-narration-script.md and matches the script's G0 concept boundary."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
