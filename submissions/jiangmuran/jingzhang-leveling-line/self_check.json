@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 113 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 116 条 = 113 道闸门 + 3 条披露。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 114 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 117 条 = 114 道闸门 + 3 条披露。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -162,7 +162,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The citation check ran in the direction that could not catch a dangling tag.",
-      "message": "citation_resolves_qa.py — citation resolution: 312 citation(s) across both editions each resolve to a registered id, checked prose-to-registry — the direction source_citation_qa cannot see, and the one a fabricated tag survives (assumption 19, depth 15, metric 60, self_check 124, source 32, standard 9). Scope: [data:] resolves against geometry that is not in the reviewer's packet and is claim_state_qa's to check, not this gate's"
+      "message": "citation_resolves_qa.py — citation resolution: 312 citation(s) across both editions each resolve to a registered id, checked prose-to-registry — the direction source_citation_qa cannot see, and the one a fabricated tag survives (assumption 19, depth 15, metric 60, self_check 125, source 32, standard 9). Scope: [data:] resolves against geometry that is not in the reviewer's packet and is claim_state_qa's to check, not this gate's"
     },
     {
       "check_id": "PKG_CJK_LEAK_QA",
@@ -180,7 +180,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A number in one edition and not the other is a claim only half the readers get.",
-      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 160/149 bare numbers reported but not blocked, and one designed check (79 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 159/149 bare numbers reported but not blocked, and one designed check (79 candidates) not shipped"
     },
     {
       "check_id": "PKG_CLAIM_STATE_QA",
@@ -360,7 +360,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Fail when the prose describing the mutation harness has gone stale.",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 165 mutations, 112 of 113 gates proven able to fail, 1 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 166 mutations, 113 of 114 gates proven able to fail, 1 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -369,7 +369,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Prove the gates can fail, by making them fail on purpose.",
-      "message": "gate_mutation_qa.py — gate mutation: 165 deliberate defects across 112 of 113 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 166 deliberate defects across 113 of 114 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
     },
     {
       "check_id": "PKG_GENERATION_CHAIN_QA",
@@ -378,7 +378,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The paragraph that says everything is deterministically generated, checked.",
-      "message": "generation_chain_qa.py — generation chain: 2 count(s) in copyright_statement.md recomputed from agent.json's 226 shipped script names, and the disclosure does not claim the scripts ship"
+      "message": "generation_chain_qa.py — generation chain: 2 count(s) in copyright_statement.md recomputed from agent.json's 227 shipped script names, and the disclosure does not claim the scripts ship"
     },
     {
       "check_id": "PKG_GEOMETRY_CITATION_QA",
@@ -432,7 +432,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The English templates put the numbers back in the order they took them out.",
-      "message": "i18n_order_qa.py — i18n order: 382 numeric templates checked; every slot that carries a unit or a figure number in both editions carries the same one, and no template carries the same units in a different order — the transposition signature that a both-sides rule misses when a slot is bare in Chinese and dimensioned in English. The check stays silent about slots whose English rephrases a unit away, because that changes the multiset and is not evidence of a crossing, and it says so rather than guessing"
+      "message": "i18n_order_qa.py — i18n order: 383 numeric templates checked; every slot that carries a unit or a figure number in both editions carries the same one, and no template carries the same units in a different order — the transposition signature that a both-sides rule misses when a slot is bare in Chinese and dimensioned in English. The check stays silent about slots whose English rephrases a unit away, because that changes the multiset and is not evidence of a crossing, and it says so rather than guessing"
     },
     {
       "check_id": "PKG_INTAKE_LIMITS_QA",
@@ -487,6 +487,15 @@
       "source": "package-provided",
       "what_it_holds_en": "Eleven units, seven codes — and the prose called the eleven units classes.",
       "message": "landuse_count_qa.py — land-use counts: both editions state 11 functional units (five areas plus six building plots) and 7 land-use classes, and land_use.geojson carries 22 features with exactly those 11 named units and 7 distinct land_use_code values. Scope: whether the partition covers the area without overlap belongs to declared_geometry_qa and the organisers' spatial review, not here"
+    },
+    {
+      "check_id": "PKG_LEGEND_COVERS_FILLS_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "what_it_holds_en": "A sheet that keys land use must key every class it draws.",
+      "message": "legend_covers_fills_qa.py — legend coverage: 2 built sheet(s) across 2 languages carry a land-use key, and on every one the classes keyed are exactly the classes filled — no colour on the paper the key cannot name, and no entry for a class the window never shows"
     },
     {
       "check_id": "PKG_LICENSE_BOUND_QA",
@@ -567,7 +576,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Every identifier in the package obeys the published naming system.",
-      "message": "naming_qa.py — naming: 700 distinct names harvested from the package — 674 matching exactly one of 24 published families and 26 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 694 distinct names harvested from the package — 668 matching exactly one of 24 published families and 26 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_NUMBER_BREAK_QA",
@@ -720,7 +729,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Two files, one register: the halves must agree, and no prose may state the split.",
-      "message": "register_split_qa.py — register split: 276 + 128 = 404 entries, both halves stating the same total of 404, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
+      "message": "register_split_qa.py — register split: 269 + 136 = 405 entries, both halves stating the same total of 405, and neither edition writes a literal archive count into prose — the split point is the build's to compute"
     },
     {
       "check_id": "PKG_REGISTRY_ALIGNMENT_QA",
@@ -873,7 +882,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No drawing may print Markdown at a reader.",
-      "message": "sheet_markup_qa.py — sheet markup: the conversion seam turns emphasis into bold and leaves no marker, and 12329 text element(s) across 4 built folder(s) — the drawings in both languages and the composed pages of both PDFs — and not one prints an emphasis marker or a code fence at the reader. Emphasis written in the prose becomes a bold tspan at the drawing seam rather than being dropped, because the author meant it. This does not judge whether the emphasis falls on the right word"
+      "message": "sheet_markup_qa.py — sheet markup: the conversion seam turns emphasis into bold and leaves no marker, and 12335 text element(s) across 4 built folder(s) — the drawings in both languages and the composed pages of both PDFs — and not one prints an emphasis marker or a code fence at the reader. Emphasis written in the prose becomes a bold tspan at the drawing seam rather than being dropped, because the author meant it. This does not judge whether the emphasis falls on the right word"
     },
     {
       "check_id": "PKG_SHEET_PLACEMENT_QA",
@@ -1026,7 +1035,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "One Chinese term, one English wording — across all three translation tables.",
-      "message": "term_consistency_qa.py — term consistency: 1789 distinct Chinese terms across i18n_en 661, i18n_drawings 797, i18n_html 357; 26 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 0 declared exception(s), each still in use; and 7 term(s) written inside sentences rather than as keys keep one English word across 53 uses"
+      "message": "term_consistency_qa.py — term consistency: 1790 distinct Chinese terms across i18n_en 662, i18n_drawings 797, i18n_html 357; 26 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 0 declared exception(s), each still in use; and 7 term(s) written inside sentences rather than as keys keep one English word across 53 uses"
     },
     {
       "check_id": "PKG_TRACK_RANK_QA",
@@ -1088,7 +1097,7 @@
       "severity": "info",
       "target": "visual/assets/errata.json",
       "source": "package-provided",
-      "message": "勘误册共 404 条，按发现者：audit 45、external 31、external-reviewer 5、own-gate 29、rival-read 29、self 265；最常见形状：two-copies-of-one-thing-drifted 69、check-measured-the-convenient-thing 67、deliverable-not-inspected-before-shipping 37、claim-that-cannot-be-checked-by-construction 33。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 404 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
+      "message": "勘误册共 405 条，按发现者：audit 45、external 31、external-reviewer 5、own-gate 29、rival-read 29、self 266；最常见形状：two-copies-of-one-thing-drifted 69、check-measured-the-convenient-thing 67、deliverable-not-inspected-before-shipping 37、claim-that-cannot-be-checked-by-construction 33。**该登记册随包提交（`errata.json` 与 `errata-archive.json` 两份），但不在评审工具读取的九个文件之内**（正文只点名其中 22 条），因此这一行是它在评审可读范围内的唯一入口。 / The errata register holds 405 entries. It ships as visual/assets/errata.json and errata-archive.json, and is not among the nine files the review harness reads, so this line is its only entry point from where a reviewer sits."
     },
     {
       "check_id": "PKG_MUTATION_COVERAGE",
@@ -1096,7 +1105,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：165 处人为缺陷，覆盖 112 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 165 deliberate defects across 112 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：166 处人为缺陷，覆盖 113 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 166 deliberate defects across 113 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -1304,7 +1313,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30940153,
+      "total_bytes": 30953675,
       "maintainer_bypass": false
     },
     "stderr": ""

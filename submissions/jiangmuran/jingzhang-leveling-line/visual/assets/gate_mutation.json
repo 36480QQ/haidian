@@ -1480,6 +1480,19 @@
       "why_en": "The published reason enumerates three branches - a file absent, one over the per-image cap, the packet over the image count. **The fourth is not in it**: the pixel-pair check was added later and the reason was never revisited. What it called a fact about the file system rather than about any file this harness can write was really a fact about this harness writing only text — **a limitation of the tool published as a property of the gate**."
     },
     {
+      "id": "M169",
+      "gate": "legend_covers_fills_qa.py",
+      "target": "fig_key_areas.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.04 的用地图例改回手写的六个代码——**本轮之前它就是这么送出去的**。三幅窗口照旧裁出同样的多边形，1207 照旧被画出来，只是纸面上那个颜色没有了名字。闸门比对图例色块与实际填色两套集合，点名报出，构建停。",
+      "what_en": "Put FIG.04's land-use key back to the hand-written list of six codes - **which is exactly how it shipped until this round**. The three windows still clip the same polygons and 1207 is still drawn; the colour on the paper simply loses its name. The gate compares the set of keyed colours with the set of filled ones, names the difference, and the build stops.",
+      "why_zh": "七类用地完整剖分是本方案摘要里的话，而这张图的图例只认六类。**E277 在同一张图上记过同一个形状**——一条色带画在只提供「公园绿地（1401）」的图例下，读起来像一个它并不是的用地类别。那一次的补救是在图上说明那是哪一层；而对一个图例整个漏掉的类别，补救不是再加一行说明，是**别再手写图例**。手写的清单在每次窗口变化时都要重新判断一次，这种判断做过 N 次就一定会漏一次——本册的规矩是：把它算出来。",
+      "why_en": "A seven-class partition is what this proposal's own summary claims, and this sheet's key admits six. **E277 recorded the same shape on the same sheet**: a band drawn under a key offering only 公园绿地（1401）, so it read as a land-use class it is not. The remedy then was to say which layer the band was; the remedy for a class the key omits altogether is not another line of prose but to stop typing the key. A hand-written list has to be re-judged every time a window moves, and a judgement made N times by hand is missed once - so this register's rule applies: derive it."
+    },
+    {
       "id": "M163",
       "gate": "shipped_verifier_qa.py",
       "target": "../submissions/jiangmuran/jingzhang-leveling-line/visual/assets/check_osm.js",
@@ -2026,7 +2039,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 165,
+  "caught": 166,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2075,6 +2088,7 @@
     "label_plate_qa.py",
     "land_use_enum_qa.py",
     "landuse_count_qa.py",
+    "legend_covers_fills_qa.py",
     "license_bound_qa.py",
     "markdown_structure_qa.py",
     "matrix_refs_qa.py",
@@ -2181,6 +2195,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 113 道闸门，其中 112 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 113 gates, 112 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 114 道闸门，其中 113 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 114 gates, 113 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
