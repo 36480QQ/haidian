@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-19T10:08:28-07:00",
+  "generated_at": "2026-08-19T10:18:38-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,13 +28,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f3fc191523676f1aaee33bf08af4a745ca6b91205c35a7b7ae2fe631c055b0b1"
+      "sha256": "283359612d95214d3b577ba62f893d2522e0db866ba5490c346a3f24610f1a80"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "c3d9219dd110b8bc7c7ce31b36a7b8dcccdf5ae11c0a2653418b286ee745e823",
+      "sha256": "3fa86f6e97651844bd4b7d49956ce63635eb2e737376ec7e6b65de2d2f26ac35",
       "language": "neutral"
     },
     {
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8cd869221541fd3c156b57ecad2cacc8a5c21728882ce224083d7e630825eea7",
+      "sha256": "024d12be9a60807aefad773b75dcefaf87fd9854dbbb1241b036f62f9baa72d7",
       "language": "neutral"
     },
     {
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e0e84ee98798bab5e0ac432bf6eb0d9b9ff2f93e4fa332626e3eaea9ea9b3606"
+      "sha256": "d9a01a5c4182ef5be0b71684bdaa5bbafce1aafcec6b94ee2d6a0888620d6b8f"
     },
     {
       "path": "report/narrative.md",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "2cb42f30771230400c6ca901b63027c6310068f5675b1c892a7ae1dd4f7c24fe",
+      "sha256": "372f7bee94b52749990183679b61a9bb063ddda75355ef933b8cd72425551519",
       "language": "zh"
     },
     {
@@ -133,7 +133,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7bcf18591b37682f0613d5239bcb18f91bee29beb812352dcc9a373ee059c7ca"
+      "sha256": "fc549f760d8f0fbc0f364d81c13a40e664996c09b6fbbb5119ecbbb18b0bfa2e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "76d114567d12c48a4e82352e9c1878a4c4e5c675adc0aeed182d6147089ea61d"
+      "sha256": "fd187a538b11d96afe119cefaae4da15a33526be7fdab55ebece0ef24bacb21e"
     },
     {
       "path": "report/proposal.en.html",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "dabbb5b6b8eb8bd54a6f371209947ae1349a9926429c74fb95a474ab1d7b3374"
+      "sha256": "a419ea5048b8c3274bd78f78471ce535609d9870a4c6ebd599fee377fd043899"
     },
     {
       "path": "visual/index.en.html",
@@ -427,7 +427,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "8b23688742730eb11815f45f3669b0426143e64555e3254ca55793516d53b548"
+      "sha256": "8f80934a35e6b1bd96da4e5a7586a624b8064625179e2de181dc63dc8dc868d2"
     },
     {
       "path": "visual/assets/parity_qa.json",
@@ -848,14 +848,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "b017e000a83f511cb5f5a0770bae15494bd2652000d92eb67e8aa958de987348"
+      "sha256": "a0d44799eece658a4f85fbedbb7433f25ceb158380a6b2e42709b092be66db81"
     },
     {
       "path": "visual/assets/claim_audit.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "e33a071850ae2c37c4a2b17d35ae2c49537140b8b24730e7656bfaefd7a298e5"
+      "sha256": "60bca2bd72bdbee0a72c245e45a5c895cd7c1cc96c7026201732f32448fa9cde"
     },
     {
       "path": "assets/figures/device.png",
@@ -1101,7 +1101,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "465d2c5f10d6fd468d533537e7151ae8d65869c3911050ace4092f202acffa81"
+      "sha256": "b54c4a49f57e618eb7148dfd5f0cdeff9397324fe4a46e304418963cf7fba8c3"
     },
     {
       "path": "assets/media/closure-advance.mp4",
@@ -1204,8 +1204,8 @@
       "x-self-checked-reason": {
         "schema_version": "0.1",
         "data": {
-          "why_not_mark_self_checked_zh": "组织方的 `--mark-self-checked` 会用它自己的 checks 数组重写 `self_check.json`，那会删掉本包写在其中的 114 条 `PKG_` 读数——正是让这份文件值得一读的那些闸门读数。因此本包不用那个开关：本函数在每次刷新时先把这个标志清为 false（新摘要尚未被核过），再由 `finalise_claim` 在**通过**的一次运行之后置回 true；manifest 不含自身的摘要，写这一个字段不会使任何摘要失效。四道组织方闸门的实跑结果在 `self_check.json` 里逐条可读。",
-          "why_not_mark_self_checked_en": "The organisers' --mark-self-checked rewrites self_check.json with its own checks array, which would delete the 114 PKG_ readings this package writes there - the gate readings that make the file worth reading. So that switch is not used: this function clears the flag on every refresh, because digests nobody has checked yet cannot be claimed as checked, and finalise_claim sets it back to true after a passing run. The manifest carries no digest of itself, so writing this one field invalidates nothing. The four organiser gates and their results are readable row by row in self_check.json.",
+          "why_not_mark_self_checked_zh": "组织方的 `--mark-self-checked` 会用它自己的 checks 数组重写 `self_check.json`，那会删掉本包写在其中的 115 条 `PKG_` 读数——正是让这份文件值得一读的那些闸门读数。因此本包不用那个开关：本函数在每次刷新时先把这个标志清为 false（新摘要尚未被核过），再由 `finalise_claim` 在**通过**的一次运行之后置回 true；manifest 不含自身的摘要，写这一个字段不会使任何摘要失效。四道组织方闸门的实跑结果在 `self_check.json` 里逐条可读。",
+          "why_not_mark_self_checked_en": "The organisers' --mark-self-checked rewrites self_check.json with its own checks array, which would delete the 115 PKG_ readings this package writes there - the gate readings that make the file worth reading. So that switch is not used: this function clears the flag on every refresh, because digests nobody has checked yet cannot be claimed as checked, and finalise_claim sets it back to true after a passing run. The manifest carries no digest of itself, so writing this one field invalidates nothing. The four organiser gates and their results are readable row by row in self_check.json.",
           "four_gate_result_lives_in": "self_check.json"
         }
       }
