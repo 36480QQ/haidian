@@ -3,7 +3,7 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-19",
-  "as_of_semantics": "date of last real content edit; Round 46B replaces ASSET-150 with a 48-second MiniMax H3 concept-master plus deterministic package-figure composition, adds paired bilingual captions and a dedicated poster as ASSET-154..155, and keeps every generated/media right pending independent review",
+  "as_of_semantics": "date of last real content edit; Round 49 converts Haidian social context into ordinary-life-first spatial reading, rebuilds two bilingual figure groups and four fixed-page publications, adds no media or source, and keeps every affected file pending independent review",
   "scope": "Round 20 bilingual review handoff package index, Round 40 spatial-distinction redraw/republication, and Round 46B spatial-motion truth repair",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
@@ -311,9 +311,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "aef6348d321d82c0a982b2537ddb508725af58941c31db142a64c6d18cf76e50",
+        "digest": "71746d7b487e01daa79b679118d7cdd8450e56b1a51024482e3f83af22d43930",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -388,9 +388,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "38d81e782e35d230d40946da56009e414da147e3d26bc0b95275bb9aecb5071c",
+        "digest": "24804997aa04c9ac8b3c5d33c2af8c7d4844613a9f3133450a1bbb8acf6a06c4",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -667,9 +667,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5785ab70db8246840806148afdd407f4c4b4a40d76b37bd68f62eebbcbf402d5",
+        "digest": "31994501b69dfe7d5641a2094e81fff16808db5cdb542f167e05a29aad156625",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1830,9 +1830,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "3a2511fac5736e8db287a698bac58a540b0ee50b8cb0add28e1439f5fc323c87",
+        "digest": "2169dcd8a98e9cb80bd08d6f621b8cd5bc6f3a6c255dc2e56f78b977436fada1",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -1890,9 +1890,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "recorded_bounded",
-        "evidence_ref": "../../report/narrative.md#reproduction-commands",
-        "limitation": "Round 19 offline output is reviewable and makes no remote font request; rendering can vary with unresolved local system-font selection, and this does not establish licence compliance."
+        "status": "rendered_from_bilingual_authority_round_49",
+        "evidence_ref": "../../agent.json#round_49_provenance",
+        "limitation": "Round 49 re-renders the checked-in bilingual authority text as offline HTML. Local system-font selection and independent rights review remain unresolved. Social relations are editorial design questions, not measured public feedback or field results."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -1922,9 +1922,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "8005dc95d2506c1dc4ad823525952b6242ddab4f50e8484bbfc7a3ba7b9716f8",
+        "digest": "8227963271b882fb694305fb0a1c5f543964f8f088e28246fbd44ba49c6048d9",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1970,9 +1970,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "9fc48b3364f9e0655439eded16107a8b0dc975b1acbaac687f3190760e7315e1",
+        "digest": "4142e9baaaae6891bb894c3638822b9f0e59f620de02e736e6d0ba60dd92fd03",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2021,9 +2021,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b9a3fa9848922b10a02d9f80e1618e3c369b8bcafcb49b176fbfc20c52e68c81",
+        "digest": "a9aff6f073a6dcc8b940807f7a4045f572acbc09925d84e14c12afa1964f5955",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2065,9 +2065,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "recorded_deterministic_round_48",
-        "evidence_ref": "../../agent.json#round_48_provenance/publication_rebuild",
-        "limitation": "Round 48 preserves the fixed page count and rebuilds the publication hierarchy from existing package-authored figures and media. Two fresh processes are byte-identical. Base-14 Helvetica and built-in Heiti references are non-embedded and unreviewed. This establishes publication-file reproducibility and legibility only, not field, professional, approval, accessibility, maturity or rights clearance."
+        "status": "recorded_deterministic_round_49",
+        "evidence_ref": "../../agent.json#round_49_provenance/publication_rebuild",
+        "limitation": "Round 49 preserves fixed page counts and rebuilds the publication reading path from existing package-authored figures and media. Two fresh processes are byte-identical. Non-embedded PDF font references and embedded assets remain pending independent review. This establishes reproducibility and legibility only, not field evidence, public feedback, professional acceptance, approval, accessibility certification, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2097,9 +2097,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "2912052f8693df138914ca40a360f8ae584a190c451c395028c5892f56100231",
+        "digest": "0373821c8d64f27e4b05f4e573fe1c39d128f21ee2233be65755e6e421b5d466",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2155,9 +2155,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "recorded_deterministic_round_48",
-        "evidence_ref": "../../agent.json#round_48_provenance/publication_rebuild",
-        "limitation": "Round 48 preserves the fixed page count and rebuilds the publication hierarchy from existing package-authored figures and media. Two fresh processes are byte-identical. Base-14 Helvetica and built-in Heiti references are non-embedded and unreviewed. This establishes publication-file reproducibility and legibility only, not field, professional, approval, accessibility, maturity or rights clearance."
+        "status": "recorded_deterministic_round_49",
+        "evidence_ref": "../../agent.json#round_49_provenance/publication_rebuild",
+        "limitation": "Round 49 preserves fixed page counts and rebuilds the publication reading path from existing package-authored figures and media. Two fresh processes are byte-identical. Non-embedded PDF font references and embedded assets remain pending independent review. This establishes reproducibility and legibility only, not field evidence, public feedback, professional acceptance, approval, accessibility certification, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2187,9 +2187,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1e15da9b3f66f2df611dc43f759070f8bc87c079ea31a3219bc86e19be69dafe",
+        "digest": "920e565a97a8c09d680d69f095f8940d4083c2c0044771bfefbd3e84d9ec6559",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2228,9 +2228,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "recorded_bounded",
-        "evidence_ref": "../../report/narrative.md#reproduction-commands",
-        "limitation": "Round 19 offline output is reviewable and makes no remote font request; rendering can vary with unresolved local system-font selection, and this does not establish licence compliance."
+        "status": "package_authored_offline_visual_round_49",
+        "evidence_ref": "../../agent.json#round_49_provenance",
+        "limitation": "Round 49 reorders existing offline content around Haidian public capability, exclusion thresholds and the ordinary path. Browser checks cover presentation fallbacks only. They establish no public feedback, field result, accessibility certification, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2578,9 +2578,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b0e1c9c10ab60358442c958d8d1f60606c58e99beead64e9630069412988f399",
+        "digest": "62d72429dd7b0578b993914d052878cf4170f4cd7ac7fd4c09cfbd37af20a8fa",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2594,9 +2594,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png",
+        "status": "offline_svg_to_png_round_49",
         "evidence_ref": "assets/figures/mobility-bluegreen.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The PNG is rasterized from the paired SVG in local Chrome; resolved renderer fonts and independent file-level rights review remain unavailable. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "limitation": "Round 49 rasterizes the paired package-authored SVG in local Chrome after a bounded social-grounding edit. Resolved renderer fonts and independent file-level rights review remain unavailable. The PNG establishes no official boundary, precise masterplan, public feedback, field fact, approval, accessibility result, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2626,9 +2626,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "0d517a19fb7f53a12bf51428855cd7956a7497adbfb3df438f0dda50dc7bfedb",
+        "digest": "0f71fa1b582bf0a37b038273015a7e1b9130f48c1b949c6a16cbb635f30b7ce6",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2642,9 +2642,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png",
+        "status": "offline_svg_to_png_round_49",
         "evidence_ref": "assets/figures/site-overview.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The PNG is rasterized from the paired SVG in local Chrome; resolved renderer fonts and independent file-level rights review remain unavailable. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "limitation": "Round 49 rasterizes the paired package-authored SVG in local Chrome after a bounded social-grounding edit. Resolved renderer fonts and independent file-level rights review remain unavailable. The PNG establishes no official boundary, precise masterplan, public feedback, field fact, approval, accessibility result, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2674,9 +2674,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "dda651e93a312a9cb4674ed5369f590c1665299d9168751ee73c06b40ed522cc",
+        "digest": "6bf7ada714c5747ba73adec4e8a513b12aea5b3b9122827c5329c48fc418d084",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -2696,9 +2696,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_score_visible_rebuild_r48",
+        "status": "package_authored_public_capability_rebuild_r49",
         "evidence_ref": "assets/figures/site-overview.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "limitation": "Round 49 rebuilds an existing editorial/concept relationship diagram to show ordinary-life priority and Haidian social consequences while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, public feedback, field fact, approval, accessibility result, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3249,9 +3249,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "015abcdfde6fdd16c9a0674569f0f8044db4343fec273c86bcad462c15c67735",
+        "digest": "58baad7af95d4f78eb08e0f68e239f9da7f83f0be32f7dac3f5ba7603e19f2f6",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -3326,9 +3326,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "6d008679342f6fd30522c07943e2026b80268f278f0e8beae12c60e7333490e1",
+        "digest": "cff31d91f317261b1aceb6ff4be763ffdae723633975a0647e6575c32f5a2689",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -3386,9 +3386,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "recorded_bounded",
-        "evidence_ref": "../../report/narrative.md#reproduction-commands",
-        "limitation": "Round 19 offline output is reviewable and makes no remote font request; rendering can vary with unresolved local system-font selection, and this does not establish licence compliance."
+        "status": "rendered_from_bilingual_authority_round_49",
+        "evidence_ref": "../../agent.json#round_49_provenance",
+        "limitation": "Round 49 re-renders the checked-in bilingual authority text as offline HTML. Local system-font selection and independent rights review remain unresolved. Social relations are editorial design questions, not measured public feedback or field results."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3418,9 +3418,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "439bc6dfa16e4540c545f98e771d49af1d5f4d3552444619b80a98077ecb792d",
+        "digest": "0aaeeef660aab688be3aa7ae87e36b834a4b4b4f995cb0a87c0b598bd0fd4295",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3459,9 +3459,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "recorded_bounded",
-        "evidence_ref": "../../report/narrative.md#reproduction-commands",
-        "limitation": "Round 19 offline output is reviewable and makes no remote font request; rendering can vary with unresolved local system-font selection, and this does not establish licence compliance."
+        "status": "package_authored_offline_visual_round_49",
+        "evidence_ref": "../../agent.json#round_49_provenance",
+        "limitation": "Round 49 reorders existing offline content around Haidian public capability, exclusion thresholds and the ordinary path. Browser checks cover presentation fallbacks only. They establish no public feedback, field result, accessibility certification, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3490,9 +3490,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "6477e47138d77f48c263b36ff148bce62d9e320379fe7617dde3d80dc9646bcf",
+        "digest": "97328cd3bd36c3335ee9ca16a21e147678be6e02cffa1ae121c10daea7cefff0",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3530,9 +3530,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "recorded_deterministic_round_48",
-        "evidence_ref": "../../agent.json#round_48_provenance/publication_rebuild",
-        "limitation": "Round 48 preserves the fixed page count and rebuilds the publication hierarchy from existing package-authored figures and media. Two fresh processes are byte-identical. Base-14 Helvetica and built-in Heiti references are non-embedded and unreviewed. This establishes publication-file reproducibility and legibility only, not field, professional, approval, accessibility, maturity or rights clearance."
+        "status": "recorded_deterministic_round_49",
+        "evidence_ref": "../../agent.json#round_49_provenance/publication_rebuild",
+        "limitation": "Round 49 preserves fixed page counts and rebuilds the publication reading path from existing package-authored figures and media. Two fresh processes are byte-identical. Non-embedded PDF font references and embedded assets remain pending independent review. This establishes reproducibility and legibility only, not field evidence, public feedback, professional acceptance, approval, accessibility certification, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3562,9 +3562,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "21053fe1d18d902fe2f0524450dfdb7b9021c245c56913eed092443cc7e05f45",
+        "digest": "911f9030cedf0a4017a25ddf2a99531fdff1e1db7d4fa8374dd63eeeacf6643e",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3616,9 +3616,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "recorded_deterministic_round_48",
-        "evidence_ref": "../../agent.json#round_48_provenance/publication_rebuild",
-        "limitation": "Round 48 preserves the fixed page count and rebuilds the publication hierarchy from existing package-authored figures and media. Two fresh processes are byte-identical. Base-14 Helvetica and built-in Heiti references are non-embedded and unreviewed. This establishes publication-file reproducibility and legibility only, not field, professional, approval, accessibility, maturity or rights clearance."
+        "status": "recorded_deterministic_round_49",
+        "evidence_ref": "../../agent.json#round_49_provenance/publication_rebuild",
+        "limitation": "Round 49 preserves fixed page counts and rebuilds the publication reading path from existing package-authored figures and media. Two fresh processes are byte-identical. Non-embedded PDF font references and embedded assets remain pending independent review. This establishes reproducibility and legibility only, not field evidence, public feedback, professional acceptance, approval, accessibility certification, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -4080,9 +4080,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "449f85bfddf6b079af336022c8d2a2316c40b413f9694fea11d4b21ad3a7c0a0",
+        "digest": "3a008c6399751ef3798b45f237ec11522c2a1161bd437ff194f94fa07c5e05d2",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -4096,9 +4096,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png",
+        "status": "offline_svg_to_png_round_49",
         "evidence_ref": "assets/figures/mobility-bluegreen.en.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The PNG is rasterized from the paired SVG in local Chrome; resolved renderer fonts and independent file-level rights review remain unavailable. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "limitation": "Round 49 rasterizes the paired package-authored SVG in local Chrome after a bounded social-grounding edit. Resolved renderer fonts and independent file-level rights review remain unavailable. The PNG establishes no official boundary, precise masterplan, public feedback, field fact, approval, accessibility result, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -4128,9 +4128,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "345a08fafb8285bf50075cc44c78656c1fd33031ff04bc3c264120961662c3a9",
+        "digest": "484b761ffb8bd95b4c6f60b1e12fbbbb6f694178bde20949bbb0c316f10863e9",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -4144,9 +4144,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png",
+        "status": "offline_svg_to_png_round_49",
         "evidence_ref": "assets/figures/site-overview.en.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The PNG is rasterized from the paired SVG in local Chrome; resolved renderer fonts and independent file-level rights review remain unavailable. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "limitation": "Round 49 rasterizes the paired package-authored SVG in local Chrome after a bounded social-grounding edit. Resolved renderer fonts and independent file-level rights review remain unavailable. The PNG establishes no official boundary, precise masterplan, public feedback, field fact, approval, accessibility result, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -4176,9 +4176,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "2fe27919bdca69b2afc400abd3bb0e5c5f18505aa4b141b2c5c848ebbb3f83a0",
+        "digest": "90f98f148403e2f1190dcabd47ba30469b40997bc4884e4e7b15d45a29f3f6af",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -4199,9 +4199,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_score_visible_rebuild_r48",
+        "status": "package_authored_public_capability_rebuild_r49",
         "evidence_ref": "assets/figures/site-overview.en.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "limitation": "Round 49 rebuilds an existing editorial/concept relationship diagram to show ordinary-life priority and Haidian social consequences while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, public feedback, field fact, approval, accessibility result, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7331,9 +7331,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "53bd2f6ef17d1d141429c63b66676ba3756e1b3cf4aee60a95458077daecd103",
+        "digest": "69f2a29ce60a8dbbd788320343a3e9051d686b1982e82612da5be39516eded74",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7351,9 +7351,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_score_visible_rebuild_r48",
+        "status": "package_authored_public_capability_rebuild_r49",
         "evidence_ref": "assets/figures/mobility-bluegreen.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "limitation": "Round 49 rebuilds an existing editorial/concept relationship diagram to show ordinary-life priority and Haidian social consequences while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, public feedback, field fact, approval, accessibility result, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7383,9 +7383,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "71dd05a96bc11da664fa872ceb5020f7ffd4094eca9a1730f469f57c6a56606f",
+        "digest": "0df1f0d34a6fdd6f81ff10811652e71e573d59b023ce0991ed0395224466dca3",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7404,9 +7404,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_score_visible_rebuild_r48",
+        "status": "package_authored_public_capability_rebuild_r49",
         "evidence_ref": "assets/figures/mobility-bluegreen.en.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "limitation": "Round 49 rebuilds an existing editorial/concept relationship diagram to show ordinary-life priority and Haidian social consequences while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, public feedback, field fact, approval, accessibility result, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7830,9 +7830,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7af9df5b751287d95e71a65b036137c20f4f35260e8367651784fc6cda0e1e59",
+        "digest": "7dd816bbd0d6263c11c6d53507d1a04ebc10c91b57a6ecd682c6b1aa56f41f20",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 49 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -8294,7 +8294,7 @@
         "frame_rate": "24",
         "codec": "h264",
         "pixel_format": "yuv420p",
-        "duration_seconds": 48.0,
+        "duration_seconds": 48,
         "watermark_policy": "persistent bilingual in-frame deterministic overlay",
         "watermark_text": "G0 concept / provisional geometry / not site evidence / not approved; 48 s is presentation pacing, not real recovery time",
         "audio_track": "assets/media/4-state-narration.mp3 (unchanged 43.344-second Chinese TTS; padded with silence and faded inside the 48-second composition; H3 source audio excluded)",
