@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the Jingzhang Railway heritage corridor as the main axis, this proposal links the subdistrict offices, community health centers, and legal aid points along the corridor into a single AI civic-service network. The proposal puts forward the overall concept of an 'AI Civic Service Spine': a one-stop government, health, and legal civic service hub is built in the AI Origin Community; citizen service stations are deployed along the main axis of the heritage park; and the belt is formed of 13 service passage segments, 6 civic-service buildings, 3 service hub plazas, and 5 street-side stations, supported by 12 AI scenario cards, 5 categories of user personas, and 3 civic-service landmark destinations. AI is used only for service navigation and public information Q&A; it does not diagnose and does not approve, and all content is manually reviewed by medical, legal, and data-security professionals."
 tracks: ["ai-public-services"]
 scenarios: ["ai-health-service-navigation"]
-iteration: "v5.0"
+iteration: "v6.0"
 ---
 
 # Jingzhang AI Civic Services Belt: A One-Stop Government, Health and Legal Services Network
@@ -126,6 +126,32 @@ The Three Guarantees, One Verification solves "someone is responsible when thing
 **Rule-closure validation.** `run_accountability_tabletop.js` correctly classifies all 72 synthetic cases of 12 services × 6 rule branches (complete / no named handler / no signature / stage not visible / missing complaint channel / time limit unknown) — 36 blocked / 12 accountable / 24 flagged — demonstrating that the accountability rule logic is closed. However, this only proves correct classification and does not constitute evidence of on-site service, compliance, or authorization; on-site performance remains null with status `not_authorized_not_run` [data:visual/assets/accountability-tabletop-evidence.json#blocked].
 
 **Relationship to the Three Guarantees, One Verification.** The Three Guarantees, One Verification answers "who is responsible, how fast the response, how the trail is kept, and who verifies" (the institution), while the accountability space answers "where citizens can see responsibility" (the space) — the receipt is the content of accountability, and the accountability stand is the display surface of the receipt. Together the two guarantee: **the matters citizens handle not only get done, but citizens can also see who is handling them** [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+### Meta-Design Layer: Philosophy Enhancement (Original to This Proposal, v6)
+
+The accountability spaces answer "where citizens can see responsibility," and the Three Guarantees, One Verification answers "who is responsible, how the trail is kept, and who verifies." The meta-design layer of this proposal goes further by pursuing six questions at the logical and philosophical level — none of them externally imposed judgments; each **illuminates logic already implicit in the accountability lens**. The six directions correspond to six artifacts under `visual/assets/philosophy/`, each an explicit statement of the lens's own logic [E:CIVIC-PHILOSOPHY-META].
+
+**Value Theory — Value Trade-offs.** The accountability lens already implies a ranking of values; the value trade-off table makes implicit value conflicts explicit as "priority direction + cost" [data:visual/assets/philosophy/value-tradeoffs.json#tradeoffs]:
+
+| Value conflict | Priority | Encoded in | Cost |
+| --- | --- | --- | --- |
+| Accountability vs. efficiency | Accountability | Every service point grows an accountability face; handler signatures are visible | Service processes slow down |
+| Accountability vs. privacy | Privacy | The accountability face displays handlers' desensitized names, not citizens' documents | Information on the citizen side is not fully public |
+| Accountability vs. anonymity | Accountability | Handlers sign by name; services are traceable to individuals | Handlers must bear responsibility |
+
+The costs are accepted because the priority direction is a precondition for "public trust."
+
+**Teleology — Site Necessity.** Argues why the accountability mechanism fits Jingzhang — site specificity moves from background to necessary condition [data:visual/assets/philosophy/site-necessity.json#necessity_arguments]: (1) the Jingzhang corridor has a high density of public service nodes (the demand for accountability is real); (2) the Jingzhang Railway ticket windows embody the tradition of "visible handling information" (the source of legitimacy for the accountability face); (3) Jingzhang's design positioning is the "Civic Service Spine."
+
+**Phenomenology — First-Person Empathy Scripts.** First-person scripts verify whether every step of the accountability experience chain runs smoothly — engineering verification of the experience, not marketing narrative [data:visual/assets/philosophy/first-person-scripts.json#scripts]. Three scripts (a citizen sees responsibility / a handler signs and takes responsibility / a questioning citizen's complaint is accepted) each verify one accountability experience chain.
+
+**Epistemology — Epistemic Grading.** Every claim is graded as description / prediction / prescription, with its knowledge base stated — honesty about the boundaries of knowledge [data:visual/assets/philosophy/epistemic-grading.json#claim_grades].
+
+**Game Theory — Incentive Compatibility.** The core of mechanism design: make "accountability" the dominant strategy — handlers will only truly acknowledge accountability when they have a motive to do so [data:visual/assets/philosophy/incentive-compatibility.json#incentive_mechanisms]. Acknowledging accountability earns performance recognition, earns the "certified service" mark, and once acknowledged, services become checkable by citizens, making buck-passing impossible.
+
+**Temporal — Self-Update Protocol.** The proposal is not static; it defines trigger protocols specifying which parts of the accountability mechanism must be recalculated when the city changes [data:visual/assets/philosophy/self-update-protocol.json#triggers]. Changes in public service items → recalculate the accountability stand's display fields; changes in government service processes → recalculate the accountability stage definitions; changes in citizen trust levels → recalculate the accountability stand's presentation mode and complaint-channel design.
+
+**Relationship of the six directions to the accountability lens.** All six directions are logical extensions of the lens itself: the value table makes explicit the value ranking implicit in the lens; site necessity is the lens's site-based legitimacy; the empathy scripts are proof that the lens can be experienced; epistemic grading is the lens's honesty about its own cognitive boundaries; incentive compatibility is the mechanism guarantee that the lens will be followed; self-update is the lens's honesty about time. Together, the six upgrade "citizens can see responsibility" from a design principle into an engineering commitment self-consistent across six dimensions: value, site, experience, cognition, incentive, and time [depth:metrics_recalculation].
 
 ### Spatial Structure
 

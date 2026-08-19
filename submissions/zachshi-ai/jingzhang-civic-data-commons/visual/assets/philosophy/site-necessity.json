@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "在地必然性论证 (Site Necessity)",
+  "core_claim_zh": "论证数据时刻表为什么只能在京张发生——时刻表公共记忆符号仅属于京张。",
+  "core_claim_en": "Argues why the data timetable can only happen at Jingzhang — the timetable public-memory symbol is unique to Jingzhang.",
+  "necessity_arguments": [
+    {
+      "argument_zh": "'时刻表'公共记忆符号仅属于京张",
+      "reason_zh": "京张铁路是中国自主设计建造的第一条铁路，其'时刻表'是京张独有的公共记忆符号；数据时刻表必须锚定这个符号才成立",
+      "would_fail_elsewhere_zh": "脱离京张的时刻表符号，数据时刻表失去公共记忆锚点"
+    },
+    {
+      "argument_zh": "京张是'数据公共带'的设计定位",
+      "reason_zh": "本方案定位京张为数据公共带，数据时刻表是数据公共带的核心空间载体",
+      "would_fail_elsewhere_zh": "脱离京张的数据公共带定位，时刻表失去设计语境"
+    },
+    {
+      "argument_zh": "京张铁路的公共性靠'看得见'建立",
+      "reason_zh": "铁轨、车站、时刻表每天被市民看见——京张的公共性传统是可见性，数据时刻表延续这个传统",
+      "would_fail_elsewhere_zh": "脱离京张的可见性公共性传统，数据时刻表失去正当性"
+    }
+  ],
+  "field_status": "not_authorized_not_run"
+}
