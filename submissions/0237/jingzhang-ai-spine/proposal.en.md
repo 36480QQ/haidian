@@ -10,6 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A formal AI urban-design submission generated from the provisional boundary and the structured self-check requirements. Precision caveats and recalculation requirements are preserved; the organizer data gap does not block content scoring."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+iteration: "v1.4"
 ---
 
 # Star Tracks, Silver Weave · Light-Weave Roaming Growth Chronicle
