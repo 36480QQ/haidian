@@ -31,7 +31,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "17f3e1143bbcb4f369547464d2352173c9cae0771261d3e7c1816062c07ccfbf"
+      "sha256": "9e410e1434dfb753440b0710aa458ac07c904548c20c0c05cedee9ec489f5ab6"
     },
     {
       "path": "metrics.json",
@@ -61,7 +61,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1ede2f2cf434b2e3dbc96c984f7bd1d8e8c20fca14d0de194e479a90f9eaed02"
+      "sha256": "12a6e61d0b35381b88be0ad91f412eacc11410a2b8840a2fff9ef93a33cd853f"
     },
     {
       "path": "compliance_matrix.json",
@@ -119,7 +119,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "2154b15c0ce73a0568b86fbdeb2f145e40d890f6dc6b80679fa04afa3b414206"
+      "sha256": "8d04bb93a3211c99ca727f248597f5f07b20b6c9bca98c08548cb99da76cda3a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -248,7 +248,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "27467d6620a02031b747e04f11ad1a2dabf6de6936a9b533c3608c6805ff370f"
+      "sha256": "0786e8aa8c001a90c5d85608617eee0e91560270f55d03c595efb9c20413808a"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -355,7 +355,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "ced2a8a98477fc636eff7798d19f278c386c65fb64c581324996c504c5763ac5"
+      "sha256": "59f78b526ff75dae2f1b60e2d9d7f4da7a7d8d29e07dc3725b42e94000ca705c"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
