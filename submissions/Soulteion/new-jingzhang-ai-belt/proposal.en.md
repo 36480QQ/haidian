@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the self-reliance spirit of the zigzag railway as its origin, the proposal reshapes the Jing-Zhang Heritage Park into a north-south 'human-centered AI public spine', with Zhongzhiyuan, the Beijing AI Origin Community and Dazhongsi as the three cores, and the Zhongguancun technology-service wing and Xiaoyuehe scenario wing as the two wings, forming an 'one-spine three-cores, four-belt two-wings, multi-node network' AI innovation belt."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.4"
+iteration: "v1.5"
 ---
 
 # New Jing-Zhang AI Innovation Belt: From the Centennial Zigzag Railway to a Human-Centered AI City
@@ -57,6 +57,8 @@ Composed of three polygons, this layer reaches urban-design depth equivalent to 
 The three levels cascade: the coordinated research layer determines the industry chain and synergy loop, the overall design layer translates them into land use, transport, blue-green space and character, and the key areas verify buildability of buildings, public space, and AI scenarios at parcel level [depth:three_level_scope_framework] [depth:overall_spatial_structure].
 
 ![Three-level scope and spatial working framework](assets/figures/land-use-structure.png)
+
+![One-spine three-cores four-belt two-wings structure prototype](assets/figures/spatial-prototype.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -343,6 +345,8 @@ Signage and symbol system: a unified "human figure" signage motif with three col
 
 **Boundary between the Logo system and the cultural signage system**. To avoid confusing the belt-wide brand with cultural spatial wayfinding [source:AGENT-TASKBOOK], this proposal separates them by layer and scope: the **belt-wide Logo system** (Section 3.2, the rust-red/blue "human-figure" Logo) is a brand-layer asset for the belt name, the three core names, and communications, carrying external identity and IP unity; the **cultural signage system** (this section's "human-figure" three-color icons, bench signage columns, etc.) is a spatial-layer asset for on-site orientation and scenario guidance in parks, streets, and plazas. Both share the "human" motif but belong to different layers: the brand layer fixes the belt's identity, the spatial layer serves on-site wayfinding; the signage graphics are self-drawn concepts, not copies of the Logo wordmark, and no corporate or third-party marks are reused in public space — keeping the cultural signage system and the overall Logo system distinct and non-substitutable [depth:brand_identity_system] [depth:signage_system_direction].
 
+![Retain/renovate/update/new-build renewal structure with phasing](assets/figures/renewal-structure.en.png)
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 ### 10.1 Renewal Project List (examples)
@@ -410,7 +414,7 @@ Core indicators are recomputed from geometry in EPSG:4548 [depth:metrics_recalcu
 
 `compliance_matrix.json` maps every mandatory task in announcement sections 1.3, 1.4, 1.5 and agent.1-agent.6; `standard_matrix.json` covers all mandatory professional standards [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]; `design_depth_matrix.json` covers all required design-depth items [depth:compliance_matrix] [depth:standard_matrix] [depth:design_depth_matrix].
 
-**Expression index**. The machine-auditable evidence (geometry/metrics/three matrices), drawings (`drawings/a3-booklet.pdf` reading version, `drawings/a0-boards.pdf` review boards), the interactive webpage (`visual/index.html`, with columns for overview map, task coverage, core metrics, AI scenarios, and implementation logic), and the offline reading version (`report/proposal.html`) together form the complete expression layer; all figures are derived from this package's GeoJSON and metrics with unified bilingual style and do not replace the authority of the structured data [depth:metrics_recalculation].
+**Expression index**. The machine-auditable evidence (geometry/metrics/three matrices), drawings (`drawings/a3-booklet.pdf` reading version, `drawings/a0-boards.pdf` review boards), the interactive webpage (`visual/index.html`, with columns for overview map, task coverage, core metrics, AI scenarios, and implementation logic), and the offline reading version (`report/proposal.html`) together form the complete expression layer; all figures are derived from this package's GeoJSON and metrics with unified bilingual style and do not replace the authority of the structured data [depth:metrics_recalculation] As of v1.5, a machine-readable governance data layer `visual/assets/governance/*.json` is added (action-package-ledger: package ledger line-by-line consistent with Table 10.1; role-spec: participating actors; measurement-protocol: measurement protocol for the three core visual metrics; validation-report: four-gate self-check summary), turning "feasibility" and "verifiability" from prose and tables into structured data consumable by tools; two bilingual mechanism figures are added: `spatial-prototype` (one-spine three-cores four-belt two-wings structure prototype) and `renewal-structure` (retain/renovate/update/new-build renewal structure with the three phase bands)..
 
 ![Core metrics recalculation and evidence chain](assets/figures/metrics-evidence.png)
 
