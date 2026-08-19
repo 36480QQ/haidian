@@ -1,61 +1,63 @@
 {
   "snapshot": {
     "repository": "open-city-ai/haidian",
-    "sha": "0f13375fe1a9c8789cf991b336dd5e14b104fcdb",
+    "sha": "ce5d8eb6aff44e5a2de367caf416e8849ecc1f31",
     "sha_verified_against_head": true,
     "date": "20260812",
-    "n_packages_total_dirs": 671,
-    "n_packages_with_metrics": 671,
-    "n_packages_with_manifest": 671,
-    "n_packages_with_proposal": 671,
-    "n_metric_entries": 15006,
+    "n_packages_total_dirs": 923,
+    "n_packages_with_metrics": 923,
+    "n_packages_with_manifest": 923,
+    "n_packages_with_proposal": 923,
+    "n_metric_entries": 20980,
     "n_parse_failures": 0
   },
   "root_structure": {
     "container_shapes": {
-      "metrics,schema_version,units": 671
+      "metrics,schema_version,units": 923
     },
     "schema_versions": {
-      "0.1.0": 665,
-      "0.2.0": 4,
-      "0.1.1": 2
+      "0.1.0": 912,
+      "0.2.0": 7,
+      "0.1.1": 2,
+      "1.0": 1,
+      "1.10.0": 1
     }
   },
   "field_coverage": {
     "confidence": {
-      "missing_count": 158,
-      "missing_pct": 1.05
+      "missing_count": 302,
+      "missing_pct": 1.44
     },
     "formula": {
-      "missing_count": 105,
-      "missing_pct": 0.7
+      "missing_count": 159,
+      "missing_pct": 0.76
     },
     "source_files": {
-      "missing_count": 98,
-      "missing_pct": 0.65
+      "missing_count": 150,
+      "missing_pct": 0.71
     },
     "unit": {
-      "missing_count": 20,
-      "missing_pct": 0.13
+      "missing_count": 24,
+      "missing_pct": 0.11
     },
     "value": {
       "missing_count": 5,
-      "missing_pct": 0.03
+      "missing_pct": 0.02
     }
   },
   "entry_validity": {
-    "valid_entries": 14820,
-    "valid_pct": 98.76,
+    "valid_entries": 20643,
+    "valid_pct": 98.39,
     "problem_breakdown": {
-      "status='known'": {
-        "count": 138,
+      "status=known": {
+        "count": 251,
         "explanation": "entry has a declared-valid status but is missing one or more required fields (status/value/unit/source_files/formula/confidence)"
       },
-      "status='unknown'": {
-        "count": 45,
+      "status=unknown": {
+        "count": 83,
         "explanation": "entry has a declared-valid status but is missing one or more required fields (status/value/unit/source_files/formula/confidence)"
       },
-      "status='not_applicable'": {
+      "status=not_applicable": {
         "count": 3,
         "explanation": "entry has a declared-valid status but is missing one or more required fields (status/value/unit/source_files/formula/confidence)"
       }
@@ -63,286 +65,344 @@
   },
   "distributions": {
     "status": {
-      "known": {
-        "count": 12701,
-        "pct": 84.64
+      "declared_enum": {
+        "known": 17720,
+        "unknown": 3220,
+        "not_applicable": 40
       },
-      "unknown": {
-        "count": 2286,
-        "pct": 15.23
-      },
-      "not_applicable": {
-        "count": 19,
-        "pct": 0.13
+      "other_values": {
+        "total_count": 0,
+        "n_distinct_values": 0
       }
     },
     "unit": {
       "declared_enum": {
-        "sqm": 6047,
-        "count": 4020,
-        "ratio": 3377,
-        "m": 989,
-        "none": 115,
-        "index": 115
+        "sqm": 8056,
+        "count": 5871,
+        "ratio": 4780,
+        "m": 1329,
+        "index": 209,
+        "none": 179
       },
       "other_values": {
-        "total_count": 343,
-        "n_distinct_values": 112,
-        "top": {
-          "null": 45,
-          "km": 21,
-          "m²": 21,
-          "persons": 16,
-          "ha": 14,
-          "far": 10,
-          "n/a": 10,
-          "个": 9
-        }
+        "total_count": 556,
+        "n_distinct_values": 171
       }
     },
     "confidence": {
       "declared_enum": {
-        "medium": 6867,
-        "high": 3747,
-        "unknown": 2172,
-        "low": 2032
+        "medium": 8898,
+        "high": 5571,
+        "low": 3148,
+        "unknown": 2981
       },
       "other_values": {
-        "total_count": 188,
-        "n_distinct_values": 8,
-        "top": {
-          "null": 158,
-          "screening": 11,
-          "n/a": 10,
-          "medium_internal_consistency": 4,
-          "concept": 2,
-          "medium_internal_consistency_low_precision": 1,
-          "none": 1,
-          "context_only": 1
-        }
+        "total_count": 382,
+        "n_distinct_values": 13
       }
     }
   },
   "packages": {
     "metrics_per_pkg": {
-      "min": 6,
+      "min": 3,
       "median": 20,
-      "max": 159,
-      "mean": 22.36
+      "max": 245,
+      "mean": 22.73
     }
   },
   "coverage": {
     "top_metric_keys": [
       {
-        "site_area_sqm": 671
+        "site_area_sqm": 923
       },
       {
-        "green_ratio": 671
+        "green_ratio": 923
       },
       {
-        "public_space_ratio": 671
+        "public_space_ratio": 923
       },
       {
-        "key_area_count": 657
+        "building_footprint_area_sqm": 891
       },
       {
-        "building_footprint_area_sqm": 655
+        "key_area_count": 890
       },
       {
-        "floor_area_ratio": 630
+        "floor_area_ratio": 861
       },
       {
-        "public_space_area_sqm": 434
+        "public_space_area_sqm": 580
       },
       {
-        "green_space_area_sqm": 428
+        "green_space_area_sqm": 571
       },
       {
-        "persona_count": 230
+        "building_density": 301
       },
       {
-        "building_density": 226
+        "persona_count": 294
       },
       {
-        "building_height_m": 222
+        "building_height_m": 292
       },
       {
-        "total_floor_area_sqm": 174
+        "scenario_node_count": 223
       },
       {
-        "scenario_node_count": 173
+        "scenario_card_count": 214
       },
       {
-        "renewal_project_count": 166
+        "total_floor_area_sqm": 214
       },
       {
-        "scenario_card_count": 154
+        "renewal_project_count": 199
       },
       {
-        "landmark_count": 127
+        "landmark_count": 162
       },
       {
-        "phase_count": 122
+        "phase_count": 151
       },
       {
-        "phase_1_area_sqm": 116
+        "road_area_sqm": 140
       },
       {
-        "road_area_sqm": 109
+        "phase_1_area_sqm": 138
       },
       {
-        "phase_2_area_sqm": 107
+        "phase_2_area_sqm": 127
+      },
+      {
+        "coordinated_research_area_sqm": 49
+      },
+      {
+        "key_detailed_design_area_sqm": 48
+      },
+      {
+        "overall_design_area_sqm": 16
+      },
+      {
+        "zhongzhiyuan_ai_acceleration_area_sqm": 10
+      },
+      {
+        "beijing_ai_origin_community_sqm": 8
+      },
+      {
+        "dazhongsi_ai_industry_cluster_sqm": 8
       }
     ],
     "top_normalized_keys": [
       {
-        "site_area": 679
+        "site_area": 923
       },
       {
-        "public_space": 679
+        "green": 923
       },
       {
-        "green": 671
+        "public_space": 923
       },
       {
-        "key_area": 658
+        "building_footprint_area": 891
       },
       {
-        "building_footprint_area": 656
+        "key_area": 890
       },
       {
-        "floor_area": 631
+        "floor_area": 861
       },
       {
-        "public_space_area": 436
+        "public_space_area": 580
       },
       {
-        "green_space_area": 429
+        "green_space_area": 571
       },
       {
-        "building_density": 238
+        "building_density": 301
       },
       {
-        "persona": 230
+        "persona": 294
       },
       {
-        "building_height": 223
+        "building_height": 292
       },
       {
-        "total_floor_area": 175
+        "scenario_node": 223
       },
       {
-        "scenario_node": 173
+        "scenario_card": 214
       },
       {
-        "renewal_project": 166
+        "total_floor_area": 214
       },
       {
-        "road_area": 161
+        "renewal_project": 199
       },
       {
-        "scenario_card": 154
+        "landmark": 162
       },
       {
-        "landmark": 127
+        "phase": 151
       },
       {
-        "phase": 122
+        "road_area": 140
       },
       {
-        "phase_1_area": 116
+        "phase_1_area": 138
       },
       {
-        "phase_2_area": 107
+        "phase_2_area": 127
+      },
+      {
+        "coordinated_research_area": 49
+      },
+      {
+        "key_detailed_design_area": 48
+      },
+      {
+        "overall_design_area": 16
+      },
+      {
+        "zhongzhiyuan_ai_acceleration_area": 10
+      },
+      {
+        "beijing_ai_origin_community": 8
+      },
+      {
+        "dazhongsi_ai_industry_cluster": 8
       }
     ],
+    "other_metric_keys": {
+      "n_distinct_keys": 5235,
+      "n_entries": 11824
+    },
     "concept_buckets": {
       "area": {
-        "count": 7224,
-        "pct": 48.14
+        "count": 9664,
+        "pct": 46.06
       },
       "counts": {
-        "count": 3106,
-        "pct": 20.7
+        "count": 4556,
+        "pct": 21.72
       },
       "intensity": {
-        "count": 2774,
-        "pct": 18.49
+        "count": 3807,
+        "pct": 18.15
       },
       "other": {
-        "count": 950,
-        "pct": 6.33
+        "count": 1597,
+        "pct": 7.61
       },
       "mobility": {
-        "count": 782,
-        "pct": 5.21
+        "count": 1066,
+        "pct": 5.08
       },
       "green_public": {
-        "count": 170,
-        "pct": 1.13
+        "count": 290,
+        "pct": 1.38
       }
     },
     "top_key_status_cross": {
       "site_area_sqm": {
-        "known": 671
+        "known": 923
       },
       "green_ratio": {
-        "known": 671
+        "known": 923
       },
       "public_space_ratio": {
-        "known": 671
-      },
-      "key_area_count": {
-        "known": 657
+        "known": 923
       },
       "building_footprint_area_sqm": {
-        "known": 652,
-        "unknown": 3
+        "known": 881,
+        "unknown": 10
+      },
+      "key_area_count": {
+        "known": 890
       },
       "floor_area_ratio": {
-        "known": 16,
-        "unknown": 614
+        "known": 20,
+        "not_applicable": 1,
+        "unknown": 840
       },
       "public_space_area_sqm": {
-        "known": 434
+        "known": 577,
+        "not_applicable": 1,
+        "unknown": 2
       },
       "green_space_area_sqm": {
-        "known": 428
-      },
-      "persona_count": {
-        "known": 230
+        "known": 568,
+        "not_applicable": 1,
+        "unknown": 2
       },
       "building_density": {
-        "known": 118,
-        "unknown": 108
+        "known": 156,
+        "unknown": 145
+      },
+      "persona_count": {
+        "known": 294
       },
       "building_height_m": {
-        "unknown": 222
-      },
-      "total_floor_area_sqm": {
-        "known": 21,
-        "unknown": 153
+        "not_applicable": 1,
+        "unknown": 291
       },
       "scenario_node_count": {
-        "known": 173
-      },
-      "renewal_project_count": {
-        "known": 166
+        "known": 223
       },
       "scenario_card_count": {
-        "known": 154
+        "known": 214
+      },
+      "total_floor_area_sqm": {
+        "known": 31,
+        "unknown": 183
+      },
+      "renewal_project_count": {
+        "known": 199
+      },
+      "landmark_count": {
+        "known": 162
+      },
+      "phase_count": {
+        "known": 150,
+        "not_applicable": 1
+      },
+      "road_area_sqm": {
+        "known": 63,
+        "unknown": 77
+      },
+      "phase_1_area_sqm": {
+        "known": 138
+      },
+      "phase_2_area_sqm": {
+        "known": 127
+      },
+      "coordinated_research_area_sqm": {
+        "known": 49
+      },
+      "key_detailed_design_area_sqm": {
+        "known": 48
+      },
+      "overall_design_area_sqm": {
+        "known": 16
+      },
+      "zhongzhiyuan_ai_acceleration_area_sqm": {
+        "known": 10
+      },
+      "beijing_ai_origin_community_sqm": {
+        "known": 8
+      },
+      "dazhongsi_ai_industry_cluster_sqm": {
+        "known": 8
       }
     }
   },
   "outlier_counts_only": {
     "status_not_in_enum": 0,
-    "unit_missing": 45,
-    "unit_not_in_enum": 298,
+    "unit_missing": 49,
+    "unit_not_in_enum": 507,
     "ratio_outside_0_1": 0,
     "far_above_12": 0,
     "height_above_300m": 0,
     "note": "counts only; no package is named or ranked",
     "sanity_sources": "bounds from brief/site-package/ranges/planning_limits.json schema_sanity_bounds_not_planning_approval; ratio check applies to share/coverage ratios only (FAR, detour and street-wall height/width ratios have their own legitimate ranges and are excluded; percentage-unit entries are excluded); FAR check excludes area-valued keys (e.g. phasing_far_area_sqm is a phase area, not a floor-area-ratio); area deviation threshold: >50% off the official known area value in the same file (known_official_area_values)"
   },
-  "privacy_boundary": "This summary contains aggregate counts only. It does not contain package paths, authors, slugs, or any ranking. The long-format table with identifying columns is a local artifact and must not be committed."
+  "privacy_boundary": "This summary contains aggregate counts only. It does not contain package paths, authors, slugs, or any ranking. Metric keys are published verbatim only when they belong to the controlled official vocabulary (CONTROLLED_METRIC_KEYS); all other keys, and all non-enum status/unit/confidence values, appear only as counts (total and number of distinct values) - never verbatim. The long-format table with identifying columns is a local artifact, written only with --write-local-identifiers to a directory outside the scanned worktree, and must never be committed."
 }

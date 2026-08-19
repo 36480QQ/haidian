@@ -170,15 +170,26 @@ def verify_snapshot_sha(repo_root: Path, declared_sha: str) -> tuple[bool, str]:
     return False, f"declared --sha {declared_sha} does not match repo HEAD {actual}"
 
 
+# File names that participate in the scan statistics. Everything else under
+# submissions/ is irrelevant to the snapshot and is ignored by the
+# dirty-worktree guard (a sparse-checkout checkout shows every unmatched
+# tracked path as deleted, which must not block a legitimate scan).
+SCANNABLE_SUFFIXES = ("metrics.json", "manifest.json", "agent.json", "proposal.md")
+
+
 def check_worktree_clean(repo_root: Path, scan_subdir: str = "submissions/") -> tuple[bool, str]:
-    """Fail-closed guard: nothing under the scanned paths may differ from HEAD.
+    """Fail-closed guard: nothing that participates in the scan may differ
+    from HEAD.
 
     scan() reads the working tree (not the declared commit's object content),
     so a snapshot claiming ``sha_verified_against_head=true`` is only honest
-    when every path that participates in the statistics is byte-identical to
-    the commit - no tracked modifications, no untracked additions. Returns
-    (ok, detail). There is deliberately no opt-out: dirty-tree scans must not
-    produce a publishable summary.
+    when every path that feeds the statistics is byte-identical to the
+    commit - no tracked modifications to scannable files, no untracked
+    additions. Returns (ok, detail). There is deliberately no opt-out:
+    dirty-tree scans must not produce a publishable summary.
+
+    Deleted (D) entries for non-scannable files are expected under
+    sparse-checkout checkouts and are not treated as dirty.
     """
     try:
         result = subprocess.run(
@@ -189,7 +200,17 @@ def check_worktree_clean(repo_root: Path, scan_subdir: str = "submissions/") -> 
         return False, f"git unavailable for {repo_root}: {exc}"
     if result.returncode != 0:
         return False, f"cannot check worktree status in {repo_root}: {result.stderr.strip()}"
-    dirty = [line for line in result.stdout.splitlines() if line.strip()]
+    dirty = []
+    for line in result.stdout.splitlines():
+        if not line.strip():
+            continue
+        path = line[3:].strip()
+        # Deletion can appear in either column ("D " = index/sparse-checkout
+        # removal, " D" = worktree removal); non-scannable deletions are
+        # expected under sparse-checkout and never block a scan.
+        if "D" in line[:2] and not path.endswith(SCANNABLE_SUFFIXES):
+            continue
+        dirty.append(line)
     if dirty:
         sample = " | ".join(dirty[:5])
         return False, (
@@ -360,12 +381,15 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str,
     # Only controlled official keys may appear verbatim; any other metric key
     # is unverified free text (open attribute in the schema) and is collapsed
     # into an aggregate "other" bucket - counts only, never the key itself.
+    # The controlled vocabulary is small (26 keys) and fixed: list ALL of
+    # them so that top_metric_keys + other_metric_keys exactly reconciles
+    # against n_metric_entries (no truncation gap for reviewers to chase).
     top_metric_keys = Counter(
         r["metric_key"] for r in rows if r["metric_key"] in CONTROLLED_METRIC_KEYS
-    ).most_common(20)
+    ).most_common()
     top_norm_keys = Counter(
         r["norm_key"] for r in rows if r["metric_key"] in CONTROLLED_METRIC_KEYS
-    ).most_common(20)
+    ).most_common()
     n_other_metric_keys = len({r["metric_key"] for r in rows} - CONTROLLED_METRIC_KEYS)
     n_other_metric_entries = sum(
         1 for r in rows if r["metric_key"] not in CONTROLLED_METRIC_KEYS
@@ -461,7 +485,7 @@ def scan(repo_root: Path, out_dir: Path, date_stamp: str, sha: str,
             "concept_buckets": {k: {"count": v, "pct": pct(v)} for k, v in concept_cover.most_common()},
             "top_key_status_cross": {
                 k: {s: c for s, c in sorted(key_status[k].items())}
-                for k, _ in top_metric_keys[:15]
+                for k, _ in top_metric_keys
             },
         },
         "outlier_counts_only": {
