@@ -1,13 +1,13 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.787,
+ "overall_ratio": 0.788,
  "floor": 0.75,
  "sections": [
   {
    "section": "Executive brief, one page",
    "zh_chars": 721,
-   "en_words": 515,
-   "ratio": 0.911,
+   "en_words": 520,
+   "ratio": 0.92,
    "pass": true
   },
   {
@@ -27,7 +27,7 @@
   {
    "section": "Three-Level Scope Framework",
    "zh_chars": 3979,
-   "en_words": 2342,
+   "en_words": 2343,
    "ratio": 0.751,
    "pass": true
   },
@@ -69,8 +69,8 @@
   {
    "section": "Transport, Rail, Municipal Infrastructure, and Public Services",
    "zh_chars": 1593,
-   "en_words": 1059,
-   "ratio": 0.848,
+   "en_words": 1065,
+   "ratio": 0.853,
    "pass": true
   },
   {
@@ -90,15 +90,15 @@
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
    "zh_chars": 5332,
-   "en_words": 3148,
-   "ratio": 0.753,
+   "en_words": 3154,
+   "ratio": 0.754,
    "pass": true
   },
   {
    "section": "The instrument on the site's own data",
    "zh_chars": 4941,
-   "en_words": 3067,
-   "ratio": 0.792,
+   "en_words": 3073,
+   "ratio": 0.793,
    "pass": true
   },
   {
