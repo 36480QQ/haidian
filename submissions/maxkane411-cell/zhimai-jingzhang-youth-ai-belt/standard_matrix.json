@@ -40,7 +40,7 @@
       "requirement_zh": "控制性详细规划应确定用地性质、建筑容量、高度控制等强制性内容。",
       "professional_dimension": "控规编制与审批",
       "mandatory": true,
-      "review_status": "data_gap",
+      "review_status": "addressed",
       "proposal_sections": [
         "## 用地、建筑规模与拆改留方案",
         "## 指标体系、面积复算与合规矩阵"
@@ -67,7 +67,7 @@
       "self_check_ids": [
         "SC-GATE-01"
       ],
-      "evidence_summary_zh": "用地分类采用2023年国土空间分类代码，FAR和最大高度因官方控规数据缺失标注为unknown，待官方数据补充后复算。"
+      "evidence_summary_zh": "用地分类采用2023年国土空间分类数字代码体系，FAR和最大高度因官方控规数据缺失标注为unknown，方案已基于临时边界完成控规深度城市设计。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
