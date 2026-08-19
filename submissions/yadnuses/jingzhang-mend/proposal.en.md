@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Jingzhang MEND Corridor takes 'mending three fractures' as its master concept: a 120-meter-wide, roughly 9.66 km Jing-Zhang Green Spine care promenade stitches the east-west spaces split by the railway; the three cores — Zhongzhiyuan, the Beijing AI Origin Community, and Dazhongsi — plus two wings carry the full-stack independent hard-core narrative and care-technology scenarios respectively; and more than ten care scenario cards make the elderly, children, people with disabilities, and low-digital-literacy residents the first beneficiaries of the AI Innovation Belt. All spatial, policy, and investment statements are conceptual proposals; core metrics can be recalculated from the GeoJSON; regulatory-plan indicators remain unknown pending official data."
 tracks: ["jingzhang-heritage-narrative", "ai-public-services", "ai-origin-community"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "robot-delivery-low-speed"]
-iteration: "v0.7"
+iteration: "v0.8"
 ---
 
 # Jingzhang MEND Corridor: A Care-and-Mending Urban Design for the Centennial Jing-Zhang AI Innovation Belt
@@ -411,6 +411,20 @@ Every spatial claim in this scheme can be re-verified by the same real toolchain
 | Official validator | deterministic / spatial / visual / professional four gates PASS | Pass |
 
 The area deviations under the provisional boundary are provisional approximations; once the official redline is released, a full recalculation is triggered per R-01.
+
+### Care-Contract Desktop Exercise
+
+This scheme conducted an offline desktop state-machine exercise on 5 core care-contract cards (rehabilitation robot field test, AI companion diagnosis, dementia anti-wandering, barrier-free navigation, and community meal assistance & low-speed delivery), verifying that the protocols can in fact be executed and audited rather than remaining at the conceptual level. Each card was exercised along three paths: (1) a normal service path (service start → data-collection compliance → human review in place → service running → service cycle complete); (2) a hard-stop path (care-contract hard-stop condition triggered → service paused → human review → recovery-evidence check → service resumed); (3) a variant-test path (human review deliberately skipped, verifying that the exercise system detects and blocks the violation). The exercise generated 15 task records in total (5 cards × 3 paths), summarised below:
+
+| Card | Normal path | Hard-stop path | Variant test (skip human review) |
+| --- | --- | --- | --- |
+| CC-04 Rehabilitation robot field test | ✓ Pass | ✓ Hard stop → human review → recovery | ✓ Violation detected and blocked |
+| CC-01 AI companion diagnosis | ✓ Pass | ✓ Hard stop → human review → recovery | ✓ Violation detected and blocked |
+| CC-02 Dementia anti-wandering | ✓ Pass | ✓ Hard stop → human review → recovery | ✓ Violation detected and blocked |
+| CC-03 Barrier-free navigation | ✓ Pass | ✓ Hard stop → human review → recovery | ✓ Violation detected and blocked |
+| CC-05 Community meal assistance | ✓ Pass | ✓ Hard stop → human review → recovery | ✓ Violation detected and blocked |
+
+Concept-proof conclusion: all 5 core cards' normal and hard-stop paths executed per contract, and all variant tests (skipping human review) were blocked by the system — the human-review mechanism in care-contract cards is not a soft constraint but a machine-verifiable hard gate. Detailed exercise records are in `simulation.json` (15 tasks, success rate 66.7%, violation-detection rate 33.3%, human-review block rate 100%) [metric:simulation_task_count]. This exercise is an offline concept proof and does not replace on-site field testing; T1–T3 test-verification scenarios still require test-zone registration, insurance, and safety officers in place before launch.
 
 ### External Existing-Condition Estimate (OSM Service-Coverage Snapshot)
 

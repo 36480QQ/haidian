@@ -282,7 +282,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "6414d898a13b0bfcefadba7ed53439aaa8f1d7e2faf14385c30352bc47596e90"
+      "sha256": "ca4f229d9360b744b50c8d11aede6d92289ed85e3a50d8df928249ef9be171b3"
     },
     {
       "path": "proposal.en.md",
@@ -290,14 +290,14 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "cba3fc5b7b1ab01e6916dcfc57be4e1f6684dc1bf3a1cca667d1cb0ba7464257"
+      "sha256": "6e2449ee9bbefe2df1a9fdc7d823d6d0604a2788ac118f2a86bd0dc1ba26517f"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8846b16abc92a8050f71d34dd0aba4cd774f0af90b1aeacc5056a85c1a980d34"
+      "sha256": "84dff9164fe456eaf022e6be5b07929cefcef9fbcc7a7f5ba59f904f4ef6e7f5"
     },
     {
       "path": "report/copyright_statement.md",
@@ -317,20 +317,27 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8ab73a2c6def80c26cda5887dcc94c16de3248a6a27f22366a6da9f875d39779"
+      "sha256": "241d83bc2223f99b9e52f84a00ff43e25280038546458c6ae9cb625694d4408a"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c4b42e16969f731989b50b025b2169478fbc62fb08f2dd6ac09b8961a9e0a399"
+      "sha256": "f3c0836b36361c69dea8e6d4eda18bc894752d9f1d68b16458a439be9d1c920c"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6d6fc14156618e423ee194d7af0e9f3d0d4a9d82bba60dc20dd2cf6f6c44ab83"
+      "sha256": "48a8f1987606bba68c5cf6d3c97148afe633e01fc5d34b28e5f53094c79f9d55"
+    },
+    {
+      "path": "simulation.json",
+      "role": "simulation",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ba20903ff650060cd00ae13ae1613b24b3b2c6ecb7c79527c2c3357491bf6cb5"
     },
     {
       "path": "sources.json",
