@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "自更新协议 (Self-Update Protocol)",
+  "principle_zh": "方案不是静态图纸；当城市变化时，方案定义'哪部分必须重算'的触发协议。",
+  "principle_en": "The proposal is not a static drawing; the protocol defines what must be recomputed when the city changes.",
+  "triggers": [
+    {
+      "trigger_zh": "断面人流密度变化超过 30%（基于季度慢行调查）",
+      "recompute_zh": "该段断面的选型（专用/共享/行人优先）与限速分级"
+    },
+    {
+      "trigger_zh": "机器人技术标准更新（国家/行业标准修订）",
+      "recompute_zh": "断面宽度、隔离方式与联锁规则"
+    },
+    {
+      "trigger_zh": "政策法规变化（路权/低速无人配送规则）",
+      "recompute_zh": "共行执照阶段要求与 G 门证据标准"
+    },
+    {
+      "trigger_zh": "官方边界多边形发布",
+      "recompute_zh": "全部几何图层、面积与指标（临时边界重算）"
+    }
+  ]
+}

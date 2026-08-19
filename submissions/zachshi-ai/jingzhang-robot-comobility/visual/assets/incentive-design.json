@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "激励相容 (Incentive Compatibility)",
+  "principle_zh": "机制只有参与者不欺骗时成立；以下各方'诚实是占优策略'的条件。",
+  "principle_en": "A mechanism holds only when participants do not deceive; below, each party's conditions under which honesty is the dominant strategy.",
+  "parties": [
+    {
+      "party": "运营方",
+      "incentive_zh": "诚实执行信号表（不隐瞒冲突/不超限速）——信号表公开+随机审计+隐瞒即丢运营资格",
+      "mechanism_link": "信号表公开+调度审计（v5）"
+    },
+    {
+      "party": "行走者",
+      "incentive_zh": "信任机器人——断面自解释（路面传达规则）使行为可预测，可预测建立信任",
+      "mechanism_link": "自解释断面（v6）"
+    },
+    {
+      "party": "服务方",
+      "incentive_zh": "遵守共行执照——BEQUEST 审计公开决定采购参考权，欺骗即失去进入资格",
+      "mechanism_link": "共行执照（BASE/BOOST/BLACKOUT/BEQUEST）"
+    }
+  ]
+}

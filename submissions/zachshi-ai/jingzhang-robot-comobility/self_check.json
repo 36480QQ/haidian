@@ -76,10 +76,20 @@
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/co-mobility-contracts.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/co-mobility-license.schema.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/conversion-pathways.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/epistemology.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/first-person-scripts.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/governance-raci.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/honor-display-system.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/incentive-design.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/license-tabletop-evidence.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/logo-specimen.svg",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/philosophy/epistemic-grading.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/philosophy/first-person-scripts.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/philosophy/incentive-compatibility.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/philosophy/self-update-protocol.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/philosophy/site-necessity.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/philosophy/value-tradeoffs.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/place-necessity.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/public-interest-audit.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/robustness-simulation-evidence.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/robustness-simulation.js",
@@ -89,16 +99,18 @@
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-explaining-grammar.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-explaining-tabletop-evidence.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-explaining-test-protocol.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-update-protocol.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/signaling-grammar.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/signaling-state-table.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/test-scenario-protocols.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/value-tradeoff-table.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/index.en.html",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-robot-comobility": "formal"
       },
-      "total_bytes": 5024914,
+      "total_bytes": 5068873,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -179,14 +191,14 @@
       "summary": {
         "standard_matrix_items": 11,
         "design_depth_items": 15,
-        "known_metric_refs_required": 41,
+        "known_metric_refs_required": 47,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 11,
-          "standard": 4,
+          "standard": 5,
           "depth": 15,
-          "data": 26,
+          "data": 32,
           "metric": 9
         }
       }
