@@ -12,8 +12,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "green_type": "park_green",
-        "name_zh": "遗址公园服务绿脊(南段)",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "name_zh": "京张遗址公园南段绿带",
+        "area_sqm_declared": 514357.946
       },
       "geometry": {
         "type": "Polygon",
@@ -21,6 +21,51 @@
           [
             [
               116.3425,
+              39.94984
+            ],
+            [
+              116.3475,
+              39.94984
+            ],
+            [
+              116.3475,
+              39.939
+            ],
+            [
+              116.3425,
+              39.939
+            ],
+            [
+              116.3425,
+              39.94984
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-CORR-2",
+      "properties": {
+        "id": "GREEN-CORR-2",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "green_type": "park_green",
+        "name_zh": "京张遗址公园中段绿带",
+        "area_sqm_declared": 719207.355
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3425,
+              39.94984
+            ],
+            [
+              116.3425,
               39.965
             ],
             [
@@ -29,15 +74,11 @@
             ],
             [
               116.3475,
-              39.9391
+              39.94984
             ],
             [
               116.3425,
-              39.9391
-            ],
-            [
-              116.3425,
-              39.965
+              39.94984
             ]
           ]
         ]
@@ -53,8 +94,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "green_type": "park_green",
-        "name_zh": "遗址公园服务绿脊(中段)",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "name_zh": "京张遗址公园中北段绿带",
+        "area_sqm_declared": 877448.027
       },
       "geometry": {
         "type": "Polygon",
@@ -66,11 +107,11 @@
             ],
             [
               116.3425,
-              39.99
+              39.9835
             ],
             [
               116.3475,
-              39.99
+              39.9835
             ],
             [
               116.3475,
@@ -79,6 +120,47 @@
             [
               116.3425,
               39.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-CORR-4",
+      "properties": {
+        "id": "GREEN-CORR-4",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "green_type": "park_green",
+        "name_zh": "京张遗址公园AI原点段绿带",
+        "area_sqm_declared": 474198.873
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3425,
+              39.9835
+            ],
+            [
+              116.3425,
+              39.9935
+            ],
+            [
+              116.3475,
+              39.9935
+            ],
+            [
+              116.3475,
+              39.9835
+            ],
+            [
+              116.3425,
+              39.9835
             ]
           ]
         ]
@@ -94,32 +176,77 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "green_type": "park_green",
-        "name_zh": "遗址公园服务绿脊(北段)",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "name_zh": "京张遗址公园过渡段绿带",
+        "area_sqm_declared": 663763.602
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.343,
-              39.99
+              116.3425,
+              39.9935
             ],
             [
-              116.343,
-              40.0264
-            ],
-            [
-              116.3475,
-              40.0264
+              116.3425,
+              40.0075
             ],
             [
               116.3475,
-              39.99
+              40.0075
             ],
             [
-              116.343,
-              39.99
+              116.3475,
+              39.9935
+            ],
+            [
+              116.3425,
+              39.9935
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-CORR-6",
+      "properties": {
+        "id": "GREEN-CORR-6",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "green_type": "park_green",
+        "name_zh": "京张遗址公园北段绿带",
+        "area_sqm_declared": 896721.852
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3475,
+              40.0075
+            ],
+            [
+              116.3425,
+              40.0075
+            ],
+            [
+              116.3425,
+              40.02240000000012
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3475,
+              40.0265
+            ],
+            [
+              116.3475,
+              40.0075
             ]
           ]
         ]
@@ -135,8 +262,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "green_type": "community_park",
-        "name_zh": "清河遮阴与休息带",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "name_zh": "西侧社区公园A",
+        "area_sqm_declared": 26571.596
       },
       "geometry": {
         "type": "Polygon",
@@ -168,47 +295,6 @@
     },
     {
       "type": "Feature",
-      "id": "GREEN-EAST-3",
-      "properties": {
-        "id": "GREEN-EAST-3",
-        "layer": "GREEN_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "green_type": "community_park",
-        "name_zh": "小月河场景赋能带",
-        "ecological_status": "concept_pending_flood_ecology_review"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.349,
-              39.995
-            ],
-            [
-              116.349,
-              40.005
-            ],
-            [
-              116.353,
-              40.005
-            ],
-            [
-              116.353,
-              39.995
-            ],
-            [
-              116.349,
-              39.995
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "GREEN-WEST-2",
       "properties": {
         "id": "GREEN-WEST-2",
@@ -217,8 +303,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "green_type": "community_park",
-        "name_zh": "大钟寺西侧社区花园",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "name_zh": "西侧社区公园B",
+        "area_sqm_declared": 113425.873
       },
       "geometry": {
         "type": "Polygon",
@@ -258,8 +344,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "green_type": "community_park",
-        "name_zh": "原点西侧社区花园",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "name_zh": "西侧社区公园C",
+        "area_sqm_declared": 61677.262
       },
       "geometry": {
         "type": "Polygon",
@@ -291,6 +377,47 @@
     },
     {
       "type": "Feature",
+      "id": "GREEN-EAST-1",
+      "properties": {
+        "id": "GREEN-EAST-1",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "green_type": "community_park",
+        "name_zh": "东侧社区公园A",
+        "area_sqm_declared": 265704.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349,
+              39.945
+            ],
+            [
+              116.349,
+              39.952
+            ],
+            [
+              116.353,
+              39.952
+            ],
+            [
+              116.353,
+              39.945
+            ],
+            [
+              116.349,
+              39.945
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "GREEN-EAST-2",
       "properties": {
         "id": "GREEN-EAST-2",
@@ -299,8 +426,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "green_type": "community_park",
-        "name_zh": "原点东侧社区花园",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "name_zh": "东侧社区公园B",
+        "area_sqm_declared": 303550.257
       },
       "geometry": {
         "type": "Polygon",
@@ -332,6 +459,47 @@
     },
     {
       "type": "Feature",
+      "id": "GREEN-EAST-3",
+      "properties": {
+        "id": "GREEN-EAST-3",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "green_type": "community_park",
+        "name_zh": "东侧社区公园C",
+        "area_sqm_declared": 379295.69
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349,
+              39.995
+            ],
+            [
+              116.349,
+              40.005
+            ],
+            [
+              116.353,
+              40.005
+            ],
+            [
+              116.353,
+              39.995
+            ],
+            [
+              116.349,
+              39.995
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "GREEN-EAST-4",
       "properties": {
         "id": "GREEN-EAST-4",
@@ -340,8 +508,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "green_type": "community_park",
-        "name_zh": "众智园东侧休息带",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "name_zh": "东侧社区公园D",
+        "area_sqm_declared": 265424.669
       },
       "geometry": {
         "type": "Polygon",
