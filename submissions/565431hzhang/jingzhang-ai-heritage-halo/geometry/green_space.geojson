@@ -13,7 +13,9 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "遗址公园服务绿脊(南段)",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "ecological_status": "concept_pending_flood_ecology_review",
+        "connectivity_role": "north_south_spine",
+        "eco_segment": "south_dazhongsi"
       },
       "geometry": {
         "type": "Polygon",
@@ -54,7 +56,9 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "遗址公园服务绿脊(中段)",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "ecological_status": "concept_pending_flood_ecology_review",
+        "connectivity_role": "north_south_spine",
+        "eco_segment": "central_origin"
       },
       "geometry": {
         "type": "Polygon",
@@ -95,7 +99,9 @@
         "geometry_role": "design_proposal",
         "green_type": "park_green",
         "name_zh": "遗址公园服务绿脊(北段)",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "ecological_status": "concept_pending_flood_ecology_review",
+        "connectivity_role": "north_south_spine",
+        "eco_segment": "north_zhongzhi"
       },
       "geometry": {
         "type": "Polygon",
@@ -136,7 +142,9 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "清河遮阴与休息带",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "ecological_status": "concept_pending_flood_ecology_review",
+        "connectivity_role": "east_west_link",
+        "eco_segment": "south_dazhongsi"
       },
       "geometry": {
         "type": "Polygon",
@@ -177,7 +185,9 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "小月河场景赋能带",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "ecological_status": "concept_pending_flood_ecology_review",
+        "connectivity_role": "east_west_link",
+        "eco_segment": "north_zhongzhi"
       },
       "geometry": {
         "type": "Polygon",
@@ -218,7 +228,9 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "西侧社区公园B",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "ecological_status": "concept_pending_flood_ecology_review",
+        "connectivity_role": "east_west_link",
+        "eco_segment": "south_dazhongsi"
       },
       "geometry": {
         "type": "Polygon",
@@ -259,7 +271,9 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "西侧社区公园C",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "ecological_status": "concept_pending_flood_ecology_review",
+        "connectivity_role": "east_west_link",
+        "eco_segment": "central_origin"
       },
       "geometry": {
         "type": "Polygon",
@@ -300,7 +314,9 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园B",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "ecological_status": "concept_pending_flood_ecology_review",
+        "connectivity_role": "east_west_link",
+        "eco_segment": "central_origin"
       },
       "geometry": {
         "type": "Polygon",
@@ -341,7 +357,9 @@
         "geometry_role": "design_proposal",
         "green_type": "community_park",
         "name_zh": "东侧社区公园C",
-        "ecological_status": "concept_pending_flood_ecology_review"
+        "ecological_status": "concept_pending_flood_ecology_review",
+        "connectivity_role": "east_west_link",
+        "eco_segment": "north_zhongzhi"
       },
       "geometry": {
         "type": "Polygon",
