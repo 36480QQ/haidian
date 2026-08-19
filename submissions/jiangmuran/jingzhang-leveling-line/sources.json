@@ -901,6 +901,13 @@
           "method": "60 / 100",
           "stored_value": 0.6,
           "stored_unit": "ratio"
+        },
+        {
+          "field": "haidian_resident_population_2025",
+          "source_value": "311.1万人",
+          "method": "311.1 × 10000",
+          "stored_value": 3111000,
+          "stored_unit": "person"
         }
       ]
     },
@@ -938,15 +945,8 @@
           "not_spatially_allocable": true
         }
       ],
-      "transformations": [
-        {
-          "field": "beijing_filed_large_models_2025",
-          "source_value": "209款",
-          "method": "read as an integer count",
-          "stored_value": 209,
-          "stored_unit": "count"
-        }
-      ]
+      "transformations_absent_reason_zh": "该记录只有一个观测，其印出值 209 与存储值相同——**没有发生任何换算**。写一条「读作整数」的记录，只是说明这个字段被填过，而本包在别处正是拒绝这种填充（`sources_qa` 对 `does_not_support` 就是这么拦的）。",
+      "transformations_absent_reason_en": "This record has one observation whose printed value 209 equals its stored value: **nothing was converted**. A record saying it was read as an integer would state only that the field is filled, which is the padding this package refuses elsewhere."
     }
   ],
   "source_quality_note_zh": "组织方在 `brief/source-quality-rules.md` 里发布了权威等级 A0–A3 与 X（不入库）以及时效等级 T0–T4。本包此前只用自己的证据上限（evidence_class），从未按这份已发布的分级说明自己的来源。此处补上：逐条给出 authority_level 与 timeliness_level，**并逐条核对没有任何一条落在 X（商业地图瓦片、账号内资料、下载密码资料、版权不明图片、非公开图件、个人信息）**。两条不属于该表所描述的类别，写明理由而不是硬套一个档次。**两条自采来源的 `timeliness_level` 此前整字段缺省**——当时只对 `authority_level` 写了「不属该表分档」的理由，而这句话声称的是逐条给出两个分级。现已补上，并写明 OSM 那条的 T0 指取回时刻、不指众包编辑的年龄（E202）。",
@@ -973,9 +973,9 @@
     "why_here_zh": "**版权与许可的逐文件台账在 `visual/assets/rights_ledger.json`，而那份文件不在评审收到的清单里，因此这里给出摘要**：每一类素材的来源、许可与核验方式，都可以在这份文件内独立读到。",
     "why_here_en": "The per-file copyright ledger is visual/assets/rights_ledger.json, which is not among the files handed over, so this summary carries the same ground: for each class of asset, its source, its licence and how to check it, readable without leaving this file.",
     "author": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
-    "files_declared": 159,
+    "files_declared": 160,
     "file_classes": {
-      "author-originated": 136,
+      "author-originated": 137,
       "provisional-only-with-stated-limit": 9,
       "author-originated-measurement": 8,
       "author-originated-with-embedded-fonts": 4,
