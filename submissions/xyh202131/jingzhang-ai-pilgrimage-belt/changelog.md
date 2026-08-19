@@ -1,5 +1,25 @@
 # 方案迭代记录 / Changelog
 
+## v48.0 - 2026-08-19
+
+**评分可见旗舰入口与出版重建 / Score-visible flagship entry and publication rebuild**
+
+- 串行门：PR #3401 已合并，merge `a8238fb6abc42e7fb86ecf66e97cc72a9f0bbfc2` 已进入 canonical `main`；同包开放 PR 为 0，工作树洁净。本轮从 `main@d3bdc975f5748460287ac1b9ea25745f6572a786` 开始，只重构既有答案的可见顺序、四组核心双语图件、visual 首屏与四份出版物，不新增品牌、场景、项目、重点区、治理合同、成熟度、事实、媒体或页面。
+- 修复前 RED：首屏没有把“已经证明什么、下一步验证什么、当前为什么不能推进”压成一条主线；`site-overview` 仍像三个并列卡片，`land-use-structure` 仍像 6×6 分类表，`mobility-bluegreen` 不能以普通人的完整非 AI 行程被读懂，`metrics-evidence` 没有把完成证明与下一候选直接相连；A3 固定侧栏稀疏，A0 重复大面积结论带挤占图面。
+- 主入口现在依次显示唯一总纲、已完成的 G0 合成复演证明、唯一下一候选 `JZ-05 × SCENE-011 × T-02`、三处不可互换原型和真实性边界。下一候选只是编辑审查顺序，不是新增项目、优先级承诺、批准、G1 或实施时序。T-02 仍为 10/10 exact、4/4 stop mapping、13/13 negative controls fail-closed；现实结果仍为 0。
+- 原路径重建 `site-overview`、`land-use-structure`、`mobility-bluegreen`、`metrics-evidence` 四组中英文 SVG/PNG；`key-areas` 经无标题辨识复核仍明显优于替代方向，因此 KEEP。新图只表达包内既有概念关系、36 个概念用地单元、9 类功能和证据状态，不制造官方红线、精确总平、现场、尺寸、批准或无障碍结果。
+- 双语 visual 保持 6 项主导航、离线零远程依赖、无 JavaScript 可读、键盘、减少动态和打印回退；首屏在封面前给出概念、完成证明、下一候选和阻断条件。本轮无新媒体、无新模型调用、无外部图像或事实来源。
+- 四份 PDF 在不增加页数的前提下重建为 A3 14+14、A0 8+8。两次独立新进程逐文件字节一致：中文 A3 `b9a3fa9848922b10a02d9f80e1618e3c369b8bcafcb49b176fbfc20c52e68c81`、英文 A3 `6477e47138d77f48c263b36ff148bce62d9e320379fe7617dde3d80dc9646bcf`、中文 A0 `2912052f8693df138914ca40a360f8ae584a190c451c395028c5892f56100231`、英文 A0 `21053fe1d18d902fe2f0524450dfdb7b9021c245c56913eed092443cc7e05f45`。44 页全页及关键细节复核未见空白、加密、裁切或重叠；这只证明出版文件质量。
+- 全部冻结项不变：双轨京张、三原型、JZ-AIOS、G0—G3、四轴、三载体、九份 geometry、`metrics.json`、12/8/3/36、G0、NO-GO、provisional、现实结果 0、同任务非 AI 路径、恢复非授权、`not_fully_cleared` 和独立逐文件清权 0。
+
+- Serial gate: PR #3401 was merged, merge `a8238fb6abc42e7fb86ecf66e97cc72a9f0bbfc2` entered canonical `main`, no package PR remained open and the worktree was clean. Round 48 starts from `main@d3bdc975f5748460287ac1b9ea25745f6572a786` and changes only the visible order of existing answers, four bilingual core-figure groups, the visual first fold and four publications. It adds no brand, scenario, project, key area, governance contract, maturity, fact, media or page.
+- RED before repair: the first fold did not compress completed proof, next verification and the current block into one line; `site-overview` still read as three parallel cards, `land-use-structure` as a 6×6 classification matrix, `mobility-bluegreen` not as one complete ordinary-person journey with a non-AI route, and `metrics-evidence` did not directly connect completed proof to the next candidate. Fixed A3 sidebars were sparse, while repeated large A0 verdict bands displaced drawing space.
+- The entry now presents the sole master idea, completed G0 synthetic-replay proof, the sole next candidate `JZ-05 × SCENE-011 × T-02`, three non-interchangeable prototypes and the truth boundary. The candidate is editorial review order only, not a new project, priority promise, approval, G1 or implementation schedule. T-02 remains 10/10 exact, 4/4 stop mapping and 13/13 negative controls fail-closed; real outcomes remain zero.
+- Four bilingual SVG/PNG groups are rebuilt in place: `site-overview`, `land-use-structure`, `mobility-bluegreen` and `metrics-evidence`. `key-areas` remains KEEP after title-hidden differentiation because it is still clearly stronger than the replacement direction. The new figures express only existing package concepts, 36 conceptual land-use units, nine function classes and evidence states; they create no official boundary, precise masterplan, field fact, dimension, approval or accessibility result.
+- Both visual pages retain six primary navigation items, zero offline remote dependencies, readable no-JavaScript content, keyboard operation, reduced motion and print fallback. Concept, completed proof, next candidate and block appear before the cover. This round adds no media, model call, external image or factual source.
+- The four PDFs are rebuilt without adding pages: A3 14+14 and A0 8+8. Two independent fresh processes are byte-identical per file: Chinese A3 `b9a3fa9848922b10a02d9f80e1618e3c369b8bcafcb49b176fbfc20c52e68c81`, English A3 `6477e47138d77f48c263b36ff148bce62d9e320379fe7617dde3d80dc9646bcf`, Chinese A0 `2912052f8693df138914ca40a360f8ae584a190c451c395028c5892f56100231`, and English A0 `21053fe1d18d902fe2f0524450dfdb7b9021c245c56913eed092443cc7e05f45`. Full-page review of all 44 pages plus selected details finds no blank page, encryption, clipping or overlap; this establishes publication-file quality only.
+- All frozen items remain unchanged: Twin-Track Jing-Zhang, three prototypes, JZ-AIOS, G0-G3, four axes, three carriers, nine geometry files, `metrics.json`, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, non-authorising recovery, `not_fully_cleared`, and zero independent file-level clearance audits.
+
 ## v47.0 - 2026-08-19
 
 **评审减负、可执行证据回链与英文出版修复 / Review compression, executable evidence backlink and English publication repair**
