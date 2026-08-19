@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-18",
+  "as_of": "2026-08-19",
   "carriers": {
     "evidence_matrix": {
       "en": "Evidence matrix: spatial-evidence crosswalk for the three key areas",
@@ -1947,6 +1947,71 @@
     {
       "files": [
         {
+          "language": "zh-en",
+          "path": "assets/media/4-state-motion.mp4",
+          "role": "multimedia",
+          "role_detail": "48-second four-state concept journey",
+          "translation_of": null
+        },
+        {
+          "language": "zh-en",
+          "path": "assets/media/4-state-motion-poster.webp",
+          "role": "poster",
+          "role_detail": "static first-frame fallback with persistent truth boundary",
+          "translation_of": null
+        },
+        {
+          "language": "zh",
+          "path": "assets/media/4-state-narration.mp3",
+          "role": "audio",
+          "role_detail": "43.344-second optional Chinese narration",
+          "translation_of": null
+        },
+        {
+          "language": "zh",
+          "path": "assets/media/4-state-narration.vtt",
+          "role": "captions",
+          "role_detail": "Chinese timed captions",
+          "translation_of": null
+        },
+        {
+          "language": "en",
+          "path": "assets/media/4-state-narration.en.vtt",
+          "role": "captions",
+          "role_detail": "English timed captions",
+          "translation_of": "assets/media/4-state-narration.vtt"
+        },
+        {
+          "language": "zh-en",
+          "path": "assets/media/4-state-narration-script.md",
+          "role": "transcript_and_provenance",
+          "role_detail": "bilingual transcript, generation method, rights and non-provable items",
+          "translation_of": null
+        }
+      ],
+      "group_id": "media-four-state-motion-r46b",
+      "human_surface_refs": [
+        "proposal.en.md",
+        "proposal.md",
+        "report/proposal.en.html",
+        "report/proposal.html",
+        "visual/index.en.html#four-state-media",
+        "visual/index.html#four-state-media"
+      ],
+      "kind": "multimedia",
+      "latest_rebuild_round": 46,
+      "notes": {
+        "method_en": "One MiniMax-H3 reference-to-video concept master is combined with package-local figures and deterministic bilingual overlays; source audio from the generated master is excluded.",
+        "method_zh": "一段 MiniMax-H3 图生视频概念母片与包内既有图件、确定性双语叠层组合；生成母片原声未进入成片。",
+        "truth_boundary_en": "The media is concept presentation only. It proves no site, built condition, resident view, accessibility result, approval, operating result, recovery duration, G1 state or rights clearance.",
+        "truth_boundary_zh": "该媒体仅作概念展示，不证明场地、建成状态、居民意见、无障碍结果、批准、运营结果、恢复时长、G1 或权利清除。"
+      },
+      "rights_ref": "visual/assets/rights-clearance-ledger.json#ASSET-150..155",
+      "status": "current"
+    },
+    {
+      "files": [
+        {
           "language": "neutral",
           "path": "visual/assets/pilot-readiness-register.json",
           "role": "other",
@@ -2083,8 +2148,8 @@
       "kind": "evidence_data",
       "latest_rebuild_round": 40,
       "notes": {
-        "en": "Self-registered: the index is one of 149 registered paths and locates the other 148 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
-        "zh": "本索引自登记：索引自身是 149 个登记路径之一，负责定位其余 148 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
+        "en": "Self-registered: the index is one of 155 registered paths and locates the other 154 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
+        "zh": "本索引自登记：索引自身是 155 个登记路径之一，负责定位其余 154 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
       },
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2582,8 +2647,8 @@
   "package_counts": {
     "key_areas": 3,
     "land_use_units": 36,
-    "manifest_paths": 149,
-    "non_manifest_content_paths": 148,
+    "manifest_paths": 155,
+    "non_manifest_content_paths": 154,
     "note_en": "The above are package structure and file counts only, not field, operating, approval or maturity evidence.",
     "note_zh": "以上为包内结构与文件计数，不是现场、运营、审批或成熟度证据。",
     "pdf_pages": {
@@ -2594,7 +2659,7 @@
       "total": 44
     },
     "projects": 8,
-    "rights_ledger_paths": 149,
+    "rights_ledger_paths": 155,
     "scenes": 12,
     "source_records": 50
   },
@@ -2624,8 +2689,8 @@
       "geometry/site_boundary.geojson"
     ]
   },
-  "purpose_en": "Review navigation for all 149 package paths: reading routes, a per-file registry with status, frozen/provisional/historical labels, three-carrier mapping and rights backlinks. The index only locates; it creates no evidence, changes no maturity and grants no rights.",
-  "purpose_zh": "为全部 149 个投稿包路径提供评审定位：阅读路线、逐文件登记、状态、冻结/临时/历史标记、三载体与权利回链。索引只负责定位，不生成新证据、不改变成熟度、不构成权利许可。",
+  "purpose_en": "Review navigation for all 155 package paths: reading routes, a per-file registry with status, frozen/provisional/historical labels, three-carrier mapping and rights backlinks. The index only locates; it creates no evidence, changes no maturity and grants no rights.",
+  "purpose_zh": "为全部 155 个投稿包路径提供评审定位：阅读路线、逐文件登记、状态、冻结/临时/历史标记、三载体与权利回链。索引只负责定位，不生成新证据、不改变成熟度、不构成权利许可。",
   "reading_routes": [
     {
       "entry_points": [

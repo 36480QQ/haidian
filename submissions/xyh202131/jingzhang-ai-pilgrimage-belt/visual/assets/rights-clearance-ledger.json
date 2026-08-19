@@ -3,8 +3,8 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-19",
-  "as_of_semantics": "date of last real content edit; Round 46 replaces ASSET-150 (4-state motion video) with a deterministic ffmpeg drawtext composition (1920×1080 h264 24 fps, 40.000 s, in-frame G0 watermark, no AI image generation) and adds bilingual 4-state media entries to proposal.en.md / visual/index.en.html, with all changes remaining pending independent review",
-  "scope": "Round 20 bilingual review handoff package index and Round 40 spatial-distinction redraw/republication",
+  "as_of_semantics": "date of last real content edit; Round 46B replaces ASSET-150 with a 48-second MiniMax H3 concept-master plus deterministic package-figure composition, adds paired bilingual captions and a dedicated poster as ASSET-154..155, and keeps every generated/media right pending independent review",
+  "scope": "Round 20 bilingual review handoff package index, Round 40 spatial-distinction redraw/republication, and Round 46B spatial-motion truth repair",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
     "source_rights_instance": "source-rights-evidence.json",
@@ -30,8 +30,8 @@
     "pending_round19_final_bytes": "Round 19 provenance structure is recorded, but the stored digest is deliberately retained as a prior snapshot until concurrent review stabilizes the exact file bytes; it is not a final identity claim."
   },
   "file_coverage": {
-    "expected_manifest_entries": 153,
-    "expected_non_manifest_entries": 148,
+    "expected_manifest_entries": 155,
+    "expected_non_manifest_entries": 154,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -240,8 +240,10 @@
           "assets/figures/spatial-atlas.png",
           "assets/figures/spatial-atlas.en.png",
           "assets/media/4-state-motion.mp4",
+          "assets/media/4-state-motion-poster.webp",
           "assets/media/4-state-narration.mp3",
           "assets/media/4-state-narration.vtt",
+          "assets/media/4-state-narration.en.vtt",
           "assets/media/4-state-narration-script.md"
         ],
         "limits": [
@@ -251,8 +253,8 @@
         ]
       }
     ],
-    "expected_manifest_file_count": 149,
-    "expected_non_manifest_content_file_count": 148
+    "expected_manifest_file_count": 155,
+    "expected_non_manifest_content_file_count": 154
   },
   "asset_records": [
     {
@@ -8278,19 +8280,19 @@
       "asset_id": "ASSET-150",
       "path": "assets/media/4-state-motion.mp4",
       "role": "multimedia_video",
-      "language": "neutral",
-      "asset_class": "deterministic_composed_video",
-      "origin_status": "self_authored_derivative_pending_independent_review",
+      "language": "zh-en",
+      "asset_class": "ai_generated_visual_with_deterministic_overlay",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
-        "algorithm": "Local ffmpeg drawtext composition: 4 segments × 10.000 s at 1920×1080 24 fps h264 yuv420p, solid muted background colour per state (普通 beige, 验证 blue-gray, 故障 red-orange, 恢复 green) + ffmpeg drawtext rendering of the Chinese state label, sub-label, state number, and the persistent in-frame G0 watermark (font: msyh.ttc); no AI image generation, no rasterised prompt text, no garbled glyphs.",
+        "algorithm": "One MiniMax-H3 V2 reference-to-video source master (task 432350371770812; 15.08 s, 2560×1440, 24 fps, H.264, source SHA-256 cdf8b301da75726e79da01606d0fe493aa5d250be81b33c1bf1aeffbe0a2aaa2) plus package-local key-area sections and ordinary-life scenes, deterministically composed with ffmpeg into a bilingual five-part 48-second spatial journey. The 15,520,801-byte composition master is padded by cloning its final frame for 0.125 seconds so picture and audio both cover exactly 48.000 seconds (1,152 frames at 24 fps), then publish-encoded to 3,180,716 bytes with libx264 slow preset solely to satisfy the repository 40 MiB package limit; full-video SSIM is 0.913354 and sampled key-state text remains legible. Generated numeric artefacts are covered by an optional-proof panel and the generic heritage-like frontage is labelled as an abstract cultural frame, not a real temple or site.",
         "resolution": "1920x1080",
         "frame_rate": "24",
         "codec": "h264",
         "pixel_format": "yuv420p",
-        "duration_seconds": 40.000,
-        "watermark_policy": "in_frame_persistent_drawtext_each_segment",
-        "watermark_text": "G0 概念 · 临时几何 · 非现场证据 · 非批准方案",
-        "audio_track": "assets/media/4-state-narration.mp3 (trimmed to 40.000 s by ffmpeg)",
+        "duration_seconds": 48.000,
+        "watermark_policy": "persistent bilingual in-frame deterministic overlay",
+        "watermark_text": "G0 concept / provisional geometry / not site evidence / not approved; 48 s is presentation pacing, not real recovery time",
+        "audio_track": "assets/media/4-state-narration.mp3 (unchanged 43.344-second Chinese TTS; padded with silence and faded inside the 48-second composition; H3 source audio excluded)",
         "digest_status": "self_reference_not_applicable",
         "reason": "The video is a composed binary; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
       },
@@ -8298,13 +8300,16 @@
         "source_ids": [],
         "parent_asset_refs": [
           "proposal.md#four-state-concept",
-          "visual/assets/ordinary-life-media-register.json"
+          "visual/assets/ordinary-life-media-register.json",
+          "assets/media/ordinary-life-scenes.webp",
+          "assets/figures/spatial-atlas.png",
+          "assets/figures/key-area-sections.png"
         ],
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-FFMPEG",
-        "TOOL-PYTHON"
+        "TOOL-MINIMAX-H3",
+        "TOOL-FFMPEG"
       ],
       "embedded_components": [
         {
@@ -8315,9 +8320,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "deterministic_local_composition",
+        "status": "generated_source_with_deterministic_local_composition",
         "evidence_ref": "../../assets/media/4-state-narration-script.md",
-        "limitation": "Composed locally with ffmpeg drawtext and the system Microsoft YaHei font; no model output, no prompt rasterisation, no embedded rasterised glyphs other than the deterministic drawtext render. Visual identity (muted earth tones, no real people / buildings / sites) is described in ../../assets/media/4-state-narration-script.md and matches the script's G0 concept boundary."
+        "limitation": "The H3 master is synthetic and can contain invented people, buildings, cultural forms and markers; it is not site evidence. The oversized source master is not shipped, exact regeneration is not asserted, model/output terms remain unaudited, and the final bytes remain blocked from public or professional reuse pending independent review."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -8432,11 +8437,11 @@
       "asset_id": "ASSET-153",
       "path": "assets/media/4-state-narration-script.md",
       "role": "multimedia_script",
-      "language": "zh",
+      "language": "zh-en",
       "asset_class": "narrative_or_change_record",
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
-        "algorithm": "Hand-authored markdown script + generation method + rights disclosure",
+        "algorithm": "Hand-authored bilingual transcript + MiniMax H3 and ffmpeg generation method + accessibility + rights and non-provable-item disclosure",
         "digest_status": "self_reference_not_applicable",
         "reason": "Plain-text documentation file; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
       },
@@ -8471,6 +8476,107 @@
         "RIGHTS-OPEN-02"
       ],
       "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-154",
+      "path": "assets/media/4-state-narration.en.vtt",
+      "role": "multimedia_subtitle_vtt",
+      "language": "en",
+      "asset_class": "generated_subtitle_track",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "Hand-authored English equivalent captions with timecodes aligned to the unchanged 43.344-second Chinese narration",
+        "digest_status": "self_reference_not_applicable",
+        "reason": "Plain-text subtitle file; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "assets/media/4-state-narration-script.md",
+          "assets/media/4-state-narration.mp3",
+          "assets/media/4-state-narration.vtt"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_translation",
+        "evidence_ref": "../../assets/media/4-state-narration-script.md",
+        "limitation": "Editable translation and timing aid; it is not a separate English voice recording and must stay equivalent to the Chinese narration and proposal."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "../../agent.json",
+        "../../assets/media/4-state-narration-script.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-155",
+      "path": "assets/media/4-state-motion-poster.webp",
+      "role": "media_poster",
+      "language": "zh-en",
+      "asset_class": "ai_generated_visual_with_deterministic_overlay",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "WebP frame extracted at 1.0 seconds from ASSET-150 after deterministic bilingual title and persistent truth-boundary overlays",
+        "resolution": "1920x1080",
+        "digest_status": "self_reference_not_applicable",
+        "reason": "Derived binary poster; final bytes are computed by the refresh_submission_manifest Git-blob SHA-256 step at PR time."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "assets/media/4-state-motion.mp4",
+          "assets/media/4-state-narration-script.md"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-MINIMAX-H3",
+        "TOOL-FFMPEG"
+      ],
+      "embedded_components": [
+        {
+          "kind": "font",
+          "path": "C:/Windows/Fonts/msyh.ttc (Microsoft YaHei, system-provided; not redistributed by this submission)",
+          "license_or_terms_status": "system_font_not_redistributed",
+          "rights_effect": "in_scope_only_not_separately_distributable"
+        }
+      ],
+      "generation_recipe": {
+        "status": "generated_source_with_deterministic_local_overlay",
+        "evidence_ref": "../../assets/media/4-state-narration-script.md",
+        "limitation": "Synthetic concept poster only; not a photograph, site view, built condition, approval, accessibility result or public feedback. Model/output and font-rasterization terms remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../assets/media/4-state-narration-script.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
     }
   ],
   "third_party_and_tool_boundaries": [
@@ -8493,7 +8599,7 @@
     {
       "id": "RIGHTS-THIRD-03",
       "material": "AI models, rendering tools, PDF generators, and other production software",
-      "current_use": "agent.json discloses the principal validation and desk-research toolchain, including OpenAI built-in image generation, Pillow, Chrome, ReportLab, fontTools, PyMuPDF, Firecrawl CLI 1.19.30 and Node.js 22.22.3 for the zero-dependency T-02 replay, but the package does not contain a complete output-license inventory for every model and production tool.",
+      "current_use": "agent.json discloses the principal validation, research and media toolchain, including OpenAI built-in image generation, MiniMax-H3 V2 reference-to-video, ffmpeg, Pillow, Chrome, ReportLab, fontTools, PyMuPDF, Firecrawl CLI 1.19.30 and Node.js 22.22.3 for the zero-dependency T-02 replay, but the package does not contain a complete output-license inventory for every model and production tool.",
       "status": "inventory_pending"
     },
     {

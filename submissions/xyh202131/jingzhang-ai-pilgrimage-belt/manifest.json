@@ -51,13 +51,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ec47045abfb4a70435590a3bfa621ca631c46285434adc02ca5553ac0fc6ca5a"
+      "sha256": "e1fe856cb3cbf47737e138cd11d0c576c7b34782aaef7f0ba72e834492538ce7"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "7c2ce3fd134dea3d6d2367ec9522d1ee541352224047440190eeaf2e67033e5a"
+      "sha256": "4103552b27773fcc0435ed0ec4aa822fe0a929338002c20050f71ea02a0846a9"
     },
     {
       "path": "metrics.json",
@@ -81,13 +81,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c147c46c8fb12e3ed03e9a00002ded872a02194da23e0c20153cc3ea70274fe4"
+      "sha256": "30f12d20234a3e2c6f4b7f8a2a09c8db81f2343f35978775418aa8c1ee9fe979"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "b6a696ad19114fbe62c1cf912be73091ace453c53a02a227d979373ad11365c9"
+      "sha256": "1afbe7e763874cecb2bced316189983ea67e8ed16717581f5dfe2bce5edf5bfc"
     },
     {
       "path": "compliance_matrix.json",
@@ -202,7 +202,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "19a63e8e0627001a24b70db0d6543304d5befce8ff3c4622ea5477c2dc1922ca"
+      "sha256": "93b266d4341178459c267cbfa7f754843aa4500d1f9a69615fa0ac477f587e08"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -230,19 +230,19 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f9f0edef5824568d0c7ed5bcdd68402d4605b4e3644819ddc7f6b312b2c02b67"
+      "sha256": "fc277050190100b6aa506af7a8e4aab934280dbdf243713d96ea38d69391b566"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "34d0bca53a5f7ff8a23b7a82483038c69f71fe53c1bab339b36b56b276d7c063"
+      "sha256": "434d76563f32c549bf0999f4a1b14450b36235d7218c985750c7106dcc4c9082"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "5ccb1384243937b6c65302c621420c226c82baa2c86e68ad2a3fcd610d1d9b75"
+      "sha256": "2b14bee0afecf31bdfe50171fbb7a820fdf5ff6bd29db02f2f21e3f301903b02"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -256,14 +256,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d1f2da1af58f0ed41da89977dddfb728e26acfa5257e3c54199b0172b47c8013"
+      "sha256": "dd4c6216c8c5a154d884f5fe45f5ca55307d5477ae602ebc66cf27dee7dc5776"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b22fafba15e6b7532aaaf77e1c6c8cf35fb44ba1a7dd2ef50870d71c377a4a49"
+      "sha256": "becb77a1425640e4607932df4fa284989e76758bbc705c3b5696f1a9567ae215"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -403,7 +403,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7db58fd6ed2240cefc37b26a645778161570872da1988c8b5c272d281aa5daf0"
+      "sha256": "4fed3dc27ec988e2aa0899824373a88c02a79895c71519531f320742f42bdb49"
     },
     {
       "path": "report/proposal.en.html",
@@ -411,7 +411,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8d197455cb4b50d7e6d4506d9145cd1e0898adcc8750fd2c529e8d8f59f6aaa2"
+      "sha256": "07e6a320097ba7682a8e2b676a9e30bbd76b4d06fc5ddfcf4595c965779ae64e"
     },
     {
       "path": "visual/index.en.html",
@@ -419,7 +419,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "8a06a4e42fc27de0a42c11ee800fd33a3481315927e8e1f7743dfb79bd8d66da"
+      "sha256": "aaa9fc495d8807b046cbc1138391e65c2ea13d453484399ce050c49cbbe54d2f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -435,7 +435,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "345f7c7f74e4b27eca8a6a020488b7b95fa2b25f3cecdadc3527b3d101799dd7"
+      "sha256": "8ac87b86c908c9fbf1e20df3320c20efcfa0c972490e92fd66e0b10cec4901de"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -988,9 +988,9 @@
       "language": "neutral",
       "title_zh": "评审交接索引与包内导航",
       "title_en": "Review handoff index and package navigation",
-      "description_zh": "全部 149 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
-      "description_en": "Review navigation for all 149 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "49713798397f5af75bf8628a4acb29deb11b56f59af7d4ab05c18730f8730502"
+      "description_zh": "全部 155 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
+      "description_en": "Review navigation for all 155 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
+      "sha256": "f62f4766b95ff0fa84dd37f38a7429a859ac382ecbb3b9356ae436c6b583f811"
     },
     {
       "path": "visual/assets/round17-reading.css",
@@ -1194,16 +1194,16 @@
     },
     {
       "path": "assets/media/4-state-motion.mp4",
-      "sha256": "55e0b83a2bc7e3700eab3ee574c621d14c238d79923a9937cf29517a8626a5f2",
+      "sha256": "4df7ec8136acf9e52ccb4d03a720f0fba04e08cf2d4213673dfac29ccc295531",
       "role": "video",
       "required": false,
       "language": "neutral",
-      "title_zh": "4 态运动概念视频",
-      "title_en": "Four-state motion concept video",
-      "description_zh": "普通—验证—故障—恢复四态的 30-48 秒概念示意循环；持续水印\"G0 概念·临时几何·非现场证据·非批准方案\"；不是现场证据或批准方案。",
-      "description_en": "30-48 second concept loop of the ordinary/verification/fault/recovery four-state narrative; persistent watermark 'G0 concept / temporary geometry / not field evidence / not an approved plan'; not site evidence or approval.",
+      "title_zh": "4 态空间运动概念视频",
+      "title_en": "Four-state spatial-motion concept video",
+      "description_zh": "48.000 秒双语空间旅程：双轨入口—普通生活—可选验证—故障/人工接管—恢复普通路径；MiniMax-H3 概念母片与包内图件经 ffmpeg 确定性组合，持续披露 G0、临时几何、非现场证据、非批准方案及展示节奏边界。",
+      "description_en": "A 48.000-second bilingual spatial journey: Twin-Track entry, ordinary life, optional proof, failure/staffed takeover and restoration of the ordinary route. One MiniMax-H3 concept master and package figures are deterministically composed with ffmpeg under persistent G0, provisional, not-field-evidence, not-approved and presentation-pacing disclosure.",
       "transcript": "assets/media/4-state-narration-script.md",
-      "poster": "assets/media/twin-track-cover.webp",
+      "poster": "assets/media/4-state-motion-poster.webp",
       "caption": "assets/media/4-state-narration.vtt"
     },
     {
@@ -1214,13 +1214,13 @@
       "language": "zh",
       "title_zh": "4 态旁白音频",
       "title_en": "Four-state narration audio",
-      "description_zh": "约 40 秒普通话旁白，对应 WebVTT 字幕与文字稿；不得自动播放。",
-      "description_en": "~40 second Mandarin narration matching the WebVTT captions and written script; must not autoplay.",
+      "description_zh": "43.344 秒普通话旁白，对应中英文 WebVTT 与双语文字稿；作为独立可选音轨，不得自动播放。",
+      "description_en": "43.344-second Mandarin narration matching paired Chinese/English WebVTT and the bilingual script; it remains a separate optional track and must not autoplay.",
       "transcript": "assets/media/4-state-narration-script.md"
     },
     {
       "path": "assets/media/4-state-narration.vtt",
-      "sha256": "88650fcd53421aef7e3d0c14fc1ab4a5a700d02321d8ff9966c4d106c42e0e2a",
+      "sha256": "bd1c38021d3400077095c496d77a7ec514df703304161ede274419bf1f47f44d",
       "role": "caption_track",
       "required": false,
       "language": "zh",
@@ -1231,14 +1231,37 @@
     },
     {
       "path": "assets/media/4-state-narration-script.md",
-      "sha256": "6ce8c2641eff0e702a929aa2963921fafd7714f55fc3be8910027001c516bc30",
+      "sha256": "99579d6b119fc49a67a77c6a446dbda5bdea01e7651f3754ef986808881ab9a5",
       "role": "transcript",
       "required": false,
-      "language": "zh",
+      "language": "neutral",
       "title_zh": "4 态旁白文字稿",
       "title_en": "Four-state narration written script",
-      "description_zh": "音频全文、生成方法、权利状态与不可证明事项披露；与音频、WebVTT 锁步变更。",
-      "description_en": "Full audio script, generation method, rights status and unprovable items; must lockstep-update the audio and WebVTT."
+      "description_zh": "双语音频全文、MiniMax-H3/ffmpeg 生成方法、权利状态与不可证明事项披露；与视频、海报、音频和双语 WebVTT 锁步变更。",
+      "description_en": "Bilingual narration, MiniMax-H3/ffmpeg generation method, rights status and unprovable items; must lockstep-update the video, poster, audio and paired WebVTT."
+    },
+    {
+      "path": "assets/media/4-state-narration.en.vtt",
+      "sha256": "fbd4f4066a23a70e21e82635df2bd867b87c01222623bd9716cbe374cb3824ba",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/4-state-narration.vtt",
+      "title_zh": "4 态旁白英文 WebVTT 字幕",
+      "title_en": "English WebVTT captions for the four-state narration",
+      "description_zh": "与 43.344 秒中文旁白同轴的 5 段英文 WebVTT 翻译字幕；HTML5 <track kind=\"captions\"> 加载。",
+      "description_en": "Five English WebVTT translation cues aligned to the 43.344-second Chinese narration; loaded through HTML5 <track kind=\"captions\">."
+    },
+    {
+      "path": "assets/media/4-state-motion-poster.webp",
+      "sha256": "c5330f05a84a05aecdcbf8c99822874216ee6f357759ab73afef70c988a4831e",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "4 态空间运动视频海报",
+      "title_en": "Four-state spatial-motion video poster",
+      "description_zh": "从最终成片确定性提取的静态首帧，保留双语标题与 G0/provisional/非现场证据/非批准方案披露；用于无播放与加载前回退。",
+      "description_en": "Static first frame deterministically extracted from the final video, retaining the bilingual title and G0/provisional/not-field-evidence/not-approved disclosure for pre-playback and static fallback."
     }
   ],
   "validation_claim": {
