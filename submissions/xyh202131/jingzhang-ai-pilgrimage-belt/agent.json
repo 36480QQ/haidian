@@ -635,8 +635,15 @@
     "scope": "Haidian social grounding and public-capability reading only",
     "predecessor_pr": 3407,
     "predecessor_merge_sha": "3fe9b9ddab0d72596d4fc0660d6e1554a22d1ed0",
-    "canonical_base_sha": "9e7d39010b74b95190f1ca3325361757db02ae90",
-    "exact_head_before_provenance": "8a18bfa743c615b3e79fbb0f56b201186284e073",
+    "initial_canonical_base_sha": "9e7d39010b74b95190f1ca3325361757db02ae90",
+    "canonical_base_sha": "cdf88fa7b21da9eeaf5f7f15cc452314636cd5c2",
+    "exact_head_before_provenance": "48431a5aaf9e63d4ba9c71baef4e5d596b5c007f",
+    "delivery_base_sync": {
+      "latest_canonical_main": "cdf88fa7b21da9eeaf5f7f15cc452314636cd5c2",
+      "high_signal_rule_blobs_unchanged": true,
+      "package_upstream_changes": 0,
+      "competing_author_open_prs": 0
+    },
     "new_media": false,
     "geometry_metrics_frozen": true,
     "two_fresh_processes_byte_identical": true,
