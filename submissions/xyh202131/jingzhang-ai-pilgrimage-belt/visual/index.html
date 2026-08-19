@@ -363,7 +363,7 @@
         </div>
         <section id="package-index" aria-labelledby="package-index-title">
           <h3 id="package-index-title">包内导航与评审交接索引</h3>
-          <p>本包 149 个路径的评审定位统一见 <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>：当前计数为 149 个 manifest/package 路径、148 个非 manifest 内容路径、149 条逐文件权利记录。索引提供七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、21 个章节单元、D01—D08/H01—H07 交接、八问冷读）与逐文件登记（现行／历史快照／机器输入／冻结／临时五种状态、语言对、轮次来源与权利回链）；它只负责定位，不生成新证据、不改变成熟度或权利状态。</p>
+          <p>本包 155 个路径的评审定位统一见 <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>：当前计数为 155 个 manifest/package 路径、154 个非 manifest 内容路径、155 条逐文件权利记录。索引提供七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、21 个章节单元、D01—D08/H01—H07 交接、八问冷读）与逐文件登记（现行／历史快照／机器输入／冻结／临时五种状态、语言对、轮次来源与权利回链）；它只负责定位，不生成新证据、不改变成熟度或权利状态。</p>
           <table tabindex="0">
             <thead><tr><th scope="col">阅读路线</th><th scope="col">入口</th></tr></thead>
             <tbody>
@@ -912,18 +912,19 @@
         </div>
         <div class="notice" id="four-state-media">
           <strong>4 态运动与旁白（多模态，不自动播放）：</strong>
-          下方视频和音频为 G0 概念示意，<em>不</em>显示真实地块、真实建筑、真实人群或已建状态。
-          视频持续水印：<code>G0 概念 · 临时几何 · 非现场证据 · 非批准方案</code>。
-          音频配字幕（<code>4-state-narration.vtt</code>）和文字稿（<code>4-state-narration-script.md</code>）；任一变更必须同步另外两份。
-          权利与机器审计：<code>visual/assets/rights-clearance-ledger.json#ASSET-150..153</code>。
+          下方视频为一次 MiniMax H3 生成母版、包内图件与确定性双语叠层组成的 G0 概念示意；画面中的建筑、人物、文化框景和标记均为合成元素，<em>不是</em>真实地块、真实建筑、真实人群或已建状态。
+          帧内持续显示 <code>G0 概念 · 临时几何 · 非现场证据 · 非批准方案</code>，48 秒仅为展示节奏。
+          视频配中英 WebVTT、独立海报、43.344 秒中文旁白和双语文字稿；任一变更必须锁步更新受影响文件。
+          权利与机器审计：<code>visual/assets/rights-clearance-ledger.json#ASSET-150..155</code>。
         </div>
         <figure>
-          <video controls preload="none" playsinline width="100%">
+          <video controls preload="none" playsinline width="100%" poster="../assets/media/4-state-motion-poster.webp">
             <source src="../assets/media/4-state-motion.mp4" type="video/mp4" />
             <track kind="captions" src="../assets/media/4-state-narration.vtt" srclang="zh" label="中文旁白字幕" default />
-            您的浏览器不支持 HTML5 video；请直接下载 <a href="../assets/media/4-state-motion.mp4">4-state-motion.mp4</a>（约 0.74 MB）。
+            <track kind="captions" src="../assets/media/4-state-narration.en.vtt" srclang="en" label="English narration captions" />
+            您的浏览器不支持 HTML5 video；请直接下载 <a href="../assets/media/4-state-motion.mp4">4-state-motion.mp4</a>（约 3.03 MiB）。
           </video>
-          <figcaption>4 态运动视频 · 40.000 秒（4 态 × 10.000 秒）· 概念示意，不显示现场、已建或批准 · 不得自动播放 · 必须手动按 play · 帧内持续 G0 概念水印</figcaption>
+          <figcaption>4 态空间运动视频 · 48.000 秒 · 1920×1080 · H3 概念母版 + 包内关系图 + 双语确定性叠层 · 非现场、非已建、非批准 · 不自动播放 · 帧内持续 G0 / provisional / 非证据水印</figcaption>
         </figure>
         <figure>
           <audio controls preload="none">
@@ -931,8 +932,8 @@
             您的浏览器不支持 HTML5 audio；请直接下载 <a href="../assets/media/4-state-narration.mp3">4-state-narration.mp3</a>（约 0.66 MB）。
           </audio>
           <figcaption>
-            4 态旁白音频 · 约 40 秒 · 配
-            <a href="../assets/media/4-state-narration.vtt">.vtt 字幕</a> ·
+            4 态中文旁白音频 · 43.344 秒 · 配
+            <a href="../assets/media/4-state-narration.vtt">中文 .vtt</a> / <a href="../assets/media/4-state-narration.en.vtt">English .vtt</a> ·
             <a href="../assets/media/4-state-narration-script.md">文字稿与生成方法 / 权利 / 不可证明事项</a>
             · 不得自动播放
           </figcaption>
