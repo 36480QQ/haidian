@@ -212,7 +212,9 @@
     "compliance"
    ],
    "source_ids": [
-    "AGENT-TASKBOOK",
+    "AGENT-TASKBOOK"
+   ],
+   "standard_ids": [
     "MOHURD-CONTROL-DETAILED-PLANNING"
    ],
    "assumption_ids": [
@@ -463,6 +465,9 @@
     "compliance"
    ],
    "source_ids": [
+    "SOURCE-REGISTRY"
+   ],
+   "standard_ids": [
     "BARRIER-FREE-ENVIRONMENT-LAW"
    ],
    "assumption_ids": [
@@ -621,14 +626,22 @@
    "requirement_id": "agent.1",
    "mandatory": true,
    "title_zh": "一带总体概念与功能统筹方案设计",
-   "coverage_zh": "命名/Logo/三大定位/空间结构/规划创新思路（场景规）。",
+   "coverage_zh": "命名/Logo/三大定位/空间结构/规划创新思路（场景规），并将总体概念、重点区落位和实施接口分层登记。",
+   "evidence_summary_zh": "正文第三章给出道岔·SWITCH命名、三大定位、空间骨架与场景规；第四、五章把总体结构下沉到道路、用地和重点区接口，场景节点指标可由提交包复算。",
    "report_sections": [
-    "三、统筹研究范围产业与未来城市研究"
+    "三、统筹研究范围产业与未来城市研究",
+    "四、总体设计范围城市更新与控规深度城市设计",
+    "五、重点区域详细设计"
    ],
    "geojson_layers": [
-    "geometry/land_use.geojson"
+    "geometry/site_boundary.geojson",
+    "geometry/land_use.geojson",
+    "geometry/roads.geojson",
+    "geometry/key_areas.geojson"
    ],
    "metrics": [
+    "site_area_sqm",
+    "land_use_total_area_sqm",
     "scenario_node_count"
    ],
    "drawings": [
@@ -645,7 +658,8 @@
     "AGENT-TASKBOOK"
    ],
    "assumption_ids": [
-    "A-BOUNDARY-001"
+    "A-BOUNDARY-001",
+    "A-CONTROLS-003"
    ],
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE",
@@ -657,15 +671,22 @@
    "requirement_id": "agent.2",
    "mandatory": true,
    "title_zh": "AI全栈自主创新体系与世界级AI创新生态",
-   "coverage_zh": "6个全球案例、要素机制、AI先导区产业锚点。",
+   "coverage_zh": "六个全球案例的机制—本地落位—不迁移边界、AI先导区产业锚点和区域协同接口。",
+   "evidence_summary_zh": "第三章全球案例表逐项区分可迁移机制、在本方案的空间落位和明确不迁移内容；产业背景使用全市口径，众智园面积仍以概念基底和临时边界表达，不把案例写成控规依据。",
    "report_sections": [
-    "三、统筹研究范围产业与未来城市研究"
+    "三、统筹研究范围产业与未来城市研究",
+    "五、重点区域详细设计",
+    "十一、指标体系、面积复算与合规矩阵"
    ],
    "geojson_layers": [
-    "geometry/key_areas.geojson"
+    "geometry/site_boundary.geojson",
+    "geometry/key_areas.geojson",
+    "geometry/land_use.geojson"
    ],
    "metrics": [
-    "key_area_zhongzhiyuan_sqm"
+    "key_area_zhongzhiyuan_sqm",
+    "key_area_count",
+    "scenario_node_count"
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
@@ -681,7 +702,8 @@
     "HD-AI-DISTRICT-PILOTS"
    ],
    "assumption_ids": [
-    "A-BOUNDARY-001"
+    "A-BOUNDARY-001",
+    "A-CONTROLS-003"
    ],
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE",
@@ -693,12 +715,17 @@
    "requirement_id": "agent.3",
    "mandatory": true,
    "title_zh": "AI+场景赋能新范式与智能化AI活力城市",
-   "coverage_zh": "12场景卡/3测试场景/6画像/场景-空间-运营映射。",
+   "coverage_zh": "12场景卡、3测试场景、6画像和场景—空间—运营映射，并登记公众界面与人工兜底。",
+   "evidence_summary_zh": "第六章将场景卡、画像和测试场景映射到公共空间与重点区；场景规和联锁协议只作概念运营工具，红牌暂停、人工复核、数据最小化和退出路径均在正文及配套文件中登记。",
    "report_sections": [
-    "六、AI 创新生态、人才画像与 AI+ 场景"
+    "五、重点区域详细设计",
+    "六、AI 创新生态、人才画像与 AI+ 场景",
+    "十一、指标体系、面积复算与合规矩阵"
    ],
    "geojson_layers": [
-    "geometry/public_space.geojson"
+    "geometry/key_areas.geojson",
+    "geometry/public_space.geojson",
+    "geometry/constraints.geojson"
    ],
    "metrics": [
     "scenario_node_count",
@@ -714,11 +741,14 @@
     "compliance"
    ],
    "source_ids": [
-    "AGENT-TASKBOOK",
+    "AGENT-TASKBOOK"
+   ],
+   "standard_ids": [
     "GENERATIVE-AI-INTERIM-MEASURES"
    ],
    "assumption_ids": [
-    "A-SCENARIO-005"
+    "A-SCENARIO-005",
+    "A-CONTROLS-003"
    ],
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE",
@@ -730,49 +760,22 @@
    "requirement_id": "agent.4",
    "mandatory": true,
    "title_zh": "AI公共空间、智能原生新业态与朝圣地标",
-   "coverage_zh": "4朝圣地标+朝圣路线+荣誉展示+公共空间组件库8件套。",
+   "coverage_zh": "4处朝圣地标、朝圣路线、荣誉展示和十项可拆卸公共空间组件库。",
+   "evidence_summary_zh": "第九章把四处地标、朝圣路线和十项组件逐项落到公共空间场景；组件库明确为概念原型，附责任、状态、人工服务和退出条件，不作施工图或工程安全结论。",
    "report_sections": [
+    "五、重点区域详细设计",
+    "八、交通、轨道、市政与公共服务设施",
     "九、蓝绿空间、公共空间与城市风貌"
    ],
    "geojson_layers": [
-    "geometry/public_space.geojson"
+    "geometry/public_space.geojson",
+    "geometry/green_space.geojson",
+    "geometry/roads.geojson",
+    "geometry/key_areas.geojson"
    ],
    "metrics": [
-    "ai_pilgrimage_landmark_count"
-   ],
-   "drawings": [
-    "drawings/a3-booklet.pdf",
-    "drawings/a0-boards.pdf"
-   ],
-   "visual_sections": [
-    "overview",
-    "key_areas",
-    "compliance"
-   ],
-   "source_ids": [
-    "AGENT-TASKBOOK"
-   ],
-   "assumption_ids": [
-    "A-BOUNDARY-001"
-   ],
-   "self_check_ids": [
-    "PROFESSIONAL_EVIDENCE",
-    "BOUNDARY_TRUST",
-    "KEY_AREAS_TRUST"
-   ]
-  },
-  {
-   "requirement_id": "agent.5",
-   "mandatory": true,
-   "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事",
-   "coverage_zh": "百年换轨文化叙事、导视符号体系、国际传播语汇。",
-   "report_sections": [
-    "九、蓝绿空间、公共空间与城市风貌"
-   ],
-   "geojson_layers": [
-    "geometry/constraints.geojson"
-   ],
-   "metrics": [
+    "ai_pilgrimage_landmark_count",
+    "public_space_ratio",
     "green_ratio"
    ],
    "drawings": [
@@ -785,10 +788,16 @@
     "compliance"
    ],
    "source_ids": [
-    "JZ-HERRINGBONE-PAPER"
+    "AGENT-TASKBOOK",
+    "DESIGN-CONCEPT-SWITCH"
+   ],
+   "standard_ids": [
+    "BARRIER-FREE-ENVIRONMENT-LAW",
+    "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
    ],
    "assumption_ids": [
-    "A-BOUNDARY-001"
+    "A-BOUNDARY-001",
+    "A-CONTROLS-003"
    ],
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE",
@@ -797,18 +806,24 @@
    ]
   },
   {
-   "requirement_id": "agent.6",
+   "requirement_id": "agent.5",
    "mandatory": true,
-   "title_zh": "一带全球AI创新活动体系与长期运营",
-   "coverage_zh": "SWITCH CON年度活动、四季体系、扳道员计划、联锁协议、朝圣路线转化。",
+   "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事",
+   "coverage_zh": "百年换轨文化叙事、导视符号体系、国际传播语汇，以及文保和可达性前置边界。",
+   "evidence_summary_zh": "文化叙事以京张历史和本地公园资料为背景，导视与地标采用可撤除、可复核的概念表达；文保落点和法定风貌控制均登记为待核验条件，不把历史材料转成规划控制结论。",
    "report_sections": [
-    "十、更新项目清单、实施政策与分期计划"
+    "三、统筹研究范围产业与未来城市研究",
+    "九、蓝绿空间、公共空间与城市风貌",
+    "十二、风险、版权与合规说明"
    ],
    "geojson_layers": [
-    "geometry/phasing.geojson"
+    "geometry/constraints.geojson",
+    "geometry/public_space.geojson",
+    "geometry/green_space.geojson"
    ],
    "metrics": [
-    "phasing_long_term_area_sqm"
+    "green_ratio",
+    "ai_pilgrimage_landmark_count"
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
@@ -820,10 +835,59 @@
     "compliance"
    ],
    "source_ids": [
-    "AGENT-TASKBOOK"
+    "JZ-HERRINGBONE-PAPER",
+    "JZ-PARK-PHASE1",
+    "DESIGN-CONCEPT-SWITCH"
+   ],
+   "standard_ids": [
+    "MOHURD-URBAN-DESIGN-MEASURES"
    ],
    "assumption_ids": [
-    "A-SCENARIO-005"
+    "A-BOUNDARY-001",
+    "A-CONTROLS-003"
+   ],
+   "self_check_ids": [
+    "PROFESSIONAL_EVIDENCE",
+    "BOUNDARY_TRUST",
+    "KEY_AREAS_TRUST"
+   ]
+  },
+  {
+   "requirement_id": "agent.6",
+   "mandatory": true,
+   "title_zh": "一带全球AI创新活动体系与长期运营",
+   "coverage_zh": "SWITCH CON年度活动、四季体系、扳道员计划、联锁协议、朝圣路线转化和分期退出接口。",
+   "evidence_summary_zh": "第十章将活动、场景开放、开发者社区、朝圣路线和分期台账串联；每项均标注概念建议、责任接口、验收口径或退出条件，长期运营不写成政府既定安排。",
+   "report_sections": [
+    "三、统筹研究范围产业与未来城市研究",
+    "十、更新项目清单、实施政策与分期计划",
+    "十一、指标体系、面积复算与合规矩阵"
+   ],
+   "geojson_layers": [
+    "geometry/phasing.geojson",
+    "geometry/public_space.geojson",
+    "geometry/key_areas.geojson"
+   ],
+   "metrics": [
+    "phasing_long_term_area_sqm",
+    "scenario_node_count"
+   ],
+   "drawings": [
+    "drawings/a3-booklet.pdf",
+    "drawings/a0-boards.pdf"
+   ],
+   "visual_sections": [
+    "overview",
+    "key_areas",
+    "compliance"
+   ],
+   "source_ids": [
+    "AGENT-TASKBOOK",
+    "DESIGN-CONCEPT-SWITCH"
+   ],
+   "assumption_ids": [
+    "A-SCENARIO-005",
+    "A-CONTROLS-003"
    ],
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE",
