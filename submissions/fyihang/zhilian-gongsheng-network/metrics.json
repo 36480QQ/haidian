@@ -7,7 +7,7 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11400000.0,
+      "value": 11412825.386,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
@@ -22,19 +22,21 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310800.0,
+      "value": 310807.184,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "low",
-      "assumptions": ["Derived from provisional geometry; not for statutory or scoring use."],
+      "assumptions": [
+        "Derived from provisional geometry; not for statutory or scoring use."
+      ],
       "reason": "Official boundary and building-survey basis are unavailable."
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123,
+      "value": 0.123423,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -42,12 +44,24 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "low",
-      "assumptions": ["Estimated ratio derived from the provisional boundary."],
+      "assumptions": [
+        "Estimated ratio derived from the provisional boundary."
+      ],
       "reason": "Official boundary required for a valid ratio denominator is unavailable."
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 1408600.768,
+      "unit": "sqm",
+      "source_files": ["geometry/green_space.geojson"],
+      "formula": "union_area(green_space_polygons)",
+      "confidence": "low",
+      "assumptions": ["The layer and boundary are provisional-only."],
+      "reason": "Recomputed from the submitted conceptual geometry; it is not a statutory area."
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073,
+      "value": 0.073281,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -55,8 +69,20 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "low",
-      "assumptions": ["Estimated ratio derived from the provisional boundary."],
+      "assumptions": [
+        "Estimated ratio derived from the provisional boundary."
+      ],
       "reason": "Official boundary required for a valid ratio denominator is unavailable."
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 836345.643,
+      "unit": "sqm",
+      "source_files": ["geometry/public_space.geojson"],
+      "formula": "union_area(public_space_polygons)",
+      "confidence": "low",
+      "assumptions": ["The layer and boundary are provisional-only."],
+      "reason": "Recomputed from the submitted conceptual geometry; it is not a statutory area."
     },
     "floor_area_ratio": {
       "status": "unknown",

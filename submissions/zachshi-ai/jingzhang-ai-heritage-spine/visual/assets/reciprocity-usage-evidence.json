@@ -1,0 +1,525 @@
+{
+  "schema_version": "0.1.0",
+  "runner": "visual/assets/run_reciprocity_usage_tabletop.js --check",
+  "concept": "回授物使用规则验证",
+  "synthetic_only": true,
+  "field_status": "not_authorized_not_run",
+  "field_performance": null,
+  "real_personal_data_used": 0,
+  "artifact_count": 12,
+  "branch_count": 6,
+  "total_case_count": 72,
+  "reciprocating_cases": 12,
+  "decoration_risk_cases": 12,
+  "unknown_cases": 12,
+  "blocked_cases": 36,
+  "all_expected_branches_match": true,
+  "limitations_zh": "72/72 只说明回授使用规则分类正确（逻辑闭合）；所有使用量当前为 unknown，不构成现场参观、取用或授权证据。",
+  "limitations_en": "72/72 only proves usage-rule classification (logic closure); all usage values are currently unknown - not field visit, usage, or authorization evidence.",
+  "cases": [
+    {
+      "artifact_id": "RA-01",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-01",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-01",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-01",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-01",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-01",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-02",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-02",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-02",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-02",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-02",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-02",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-03",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-03",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-03",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-03",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-03",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-03",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-04",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-04",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-04",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-04",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-04",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-04",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-05",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-05",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-05",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-05",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-05",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-05",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-06",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-06",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-06",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-06",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-06",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-06",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-07",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-07",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-07",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-07",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-07",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-07",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-08",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-08",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-08",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-08",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-08",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-08",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-09",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-09",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-09",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-09",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-09",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-09",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-10",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-10",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-10",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-10",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-10",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-10",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-11",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-11",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-11",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-11",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-11",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-11",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-12",
+      "branch": "usage_above_threshold",
+      "expected": "reciprocating",
+      "actual": "reciprocating",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-12",
+      "branch": "usage_below_floor",
+      "expected": "decoration_risk",
+      "actual": "decoration_risk",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-12",
+      "branch": "virtual_artifact_only",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-12",
+      "branch": "usage_not_measured",
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-12",
+      "branch": "threshold_missing",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    },
+    {
+      "artifact_id": "RA-12",
+      "branch": "node_missing_artifact",
+      "expected": "blocked",
+      "actual": "blocked",
+      "pass": true
+    }
+  ]
+}

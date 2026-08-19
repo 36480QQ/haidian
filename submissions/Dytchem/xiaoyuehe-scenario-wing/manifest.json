@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9f6f29407ea950f777cab893765064237656888c397d612ab568e5dcd3d67395"
+      "sha256": "e2e9330b56e24728d9bcf36afe9633ef15a0958bc4d4aba5e9d3ab9e177bd918"
     },
     {
       "path": "agent.json",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8a968d98fb37f3207a19b6e4fed73d5640760cc61a53936428861e146ad45052"
+      "sha256": "a18e84371c3442f8b48e2d43e88e198efc00067e620aeccad9c4008efe60b2d7"
     },
     {
       "path": "report/proposal.en.html",
@@ -284,6 +284,55 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "139dee585fc4d728794904d9dc532020ee614a7093cd0f665af1c5dc5f9cea12"
+    },
+    {
+      "path": "assets/media/xiaoyuehe-wing-teaser.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "小月河场景赋能带·概念动画",
+      "title_en": "Xiaoyuehe Scenario Wing · Concept Teaser",
+      "description_zh": "AI 生成的概念可视化：小月河沿线 AI 创新走廊鸟瞰飞行动画，融合百年京张绿廊与智慧场景组件。仅作概念展示，非官方红线依据。",
+      "description_en": "AI-generated concept visualization: aerial flythrough of the AI innovation corridor along Xiaoyue River, blending the heritage greenway with smart urban components. Concept only; not an official redline basis.",
+      "poster": "assets/media/xiaoyuehe-wing-poster.png",
+      "caption": "assets/media/xiaoyuehe-wing-teaser.vtt",
+      "transcript": "assets/media/xiaoyuehe-wing-teaser.md",
+      "sha256": "f74ba3ef560c8b4839232f604508484145727da47364235628087a75576a8eaf"
+    },
+    {
+      "path": "assets/media/xiaoyuehe-wing-poster.png",
+      "role": "media_poster",
+      "required": false,
+      "title_zh": "小月河场景赋能带·封面",
+      "title_en": "Xiaoyuehe Scenario Wing · Cover",
+      "description_zh": "方案总览图，用作画廊封面与视频海报。",
+      "description_en": "Site overview figure used as gallery cover and video poster.",
+      "sha256": "6f17645fb6dc652cfbd3f6d80a6105b84761eb9174474c636af02875415e940a"
+    },
+    {
+      "path": "assets/media/xiaoyuehe-wing-teaser.vtt",
+      "role": "caption_track",
+      "required": false,
+      "title_zh": "概念动画字幕",
+      "title_en": "Concept Teaser Captions",
+      "description_zh": "WebVTT 中英字幕。",
+      "description_en": "WebVTT bilingual captions.",
+      "sha256": "d3ec83d5a03ca742599ebdd85ebe2122f14da322698b91db35e05a74e5006e04"
+    },
+    {
+      "path": "assets/media/xiaoyuehe-wing-teaser.md",
+      "role": "transcript",
+      "required": false,
+      "title_zh": "概念动画文稿",
+      "title_en": "Concept Teaser Transcript",
+      "description_zh": "视频内容文字稿与 AI 生成声明。",
+      "description_en": "Transcript and AI-generation statement.",
+      "sha256": "127f9cea9506aa2d2ac169d3fa3d9923f4bda01983ffdc0ea79ff0c59eeb7133"
+    },
+    {
+      "path": "changelog.md",
+      "role": "narrative",
+      "required": true,
+      "sha256": "951b5c310ffb923989613b54e6bba1461a7308aaebb07b807b969c2e5c1cd5c2"
     }
   ],
   "validation_claim": {
@@ -291,5 +340,6 @@
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/xiaoyuehe-wing-poster.png"
 }

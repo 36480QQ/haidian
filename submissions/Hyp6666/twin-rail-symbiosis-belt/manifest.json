@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "572c743bb389db841118380d2ed662fa5b089ff304472cd35fa052908d9341cc"
+      "sha256": "8564fd6bb36e65c037924481ea4716571f2a186f320249cfcbf70354fdcdd749"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "2f1f3c7de76ffdef073a01f4c6547495fc89dfac911273366fcbd0fbefe5a900"
+      "sha256": "5c6c957e8b2ec6fd1081bc33fe2d8ab46f65b994edf04c38b14949442550a385"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a2a9419893cf9d6aaa3d240955d49dec9bc0bfebc922a4a41926e3d71d483825"
+      "sha256": "a183dfa1589cfc66da117e676d0357468a68caa4fa63516f200abe33a15d1046"
     },
     {
       "path": "visual/index.html",
@@ -161,7 +161,7 @@
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "94fbe0c9fcb05ab37902c861c0795a818efedceb395fae35526cb2ae1d857b6f"
+      "sha256": "4cc681e4a3f79288ab8e3787be1ea8076ab1260e40661eacfb28a84719089acd"
     },
     {
       "path": "geometry/green_space.geojson",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "e07512a3fd2f6b581d334da5bc23c09fef0684d2b992e26a56087af845577bfe"
+      "sha256": "39adc0d537601c9519b6f7209bbfe2744fd5e14e366e3622746f9c4487da90a0"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "0b8c546d045ead8a63d8e4aeb31bcfededfc0d4ee3aba3b6d361a9f7a359cfd5"
+      "sha256": "1441372df14a5d3c867651f8efbfe10f414a59ac9f2e03944616c0574e3b8b6d"
     },
     {
       "path": "visual/index.en.html",
@@ -289,7 +289,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high",
+    "data_confidence": "medium",
     "readiness_contract": "persisted-self-check-v1",
     "data_gaps": [
       "official site boundary and three key-area polygons pending organizer release; recalculation required"

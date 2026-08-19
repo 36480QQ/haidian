@@ -481,6 +481,127 @@
         "A-IMPLEMENTATION-001"
       ]
     },
+    "relay_contract_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/relay-contracts.json"
+      ],
+      "formula": "count(relay-contracts.json.contracts)",
+      "confidence": "high",
+      "assumptions": [
+        "A-AI-GOVERNANCE-001",
+        "A-PILOT-001"
+      ]
+    },
+    "relay_state_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/relay-contracts.json"
+      ],
+      "formula": "count(relay-contracts.json.states)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
+    "relay_gate_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/relay-contracts.json"
+      ],
+      "formula": "count(relay-contracts.json.gates)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
+    "relay_tabletop_check_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "visual/assets/relay-contract.validation.json"
+      ],
+      "formula": "simulation.json.task_count where scope=offline contract schema and state-reference checks",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001",
+        "A-VALIDATION-001"
+      ]
+    },
+    "validation_protocol_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/pilot-protocol.json"
+      ],
+      "formula": "count(pilot-protocol.json.validation_protocols)",
+      "confidence": "high",
+      "assumptions": [
+        "A-VALIDATION-001"
+      ]
+    },
+    "pilot_protocol_phase_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/pilot-protocol.json"
+      ],
+      "formula": "count(pilot-protocol.json.phases)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
+    "regional_interface_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/regional-interfaces.json"
+      ],
+      "formula": "count(regional-interfaces.json.interfaces)",
+      "confidence": "high",
+      "assumptions": [
+        "A-REGIONAL-001"
+      ]
+    },
+    "equity_acceptance_rule_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/equity-acceptance.json"
+      ],
+      "formula": "count(equity-acceptance.json.acceptance_rules)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
+    "station_service_blueprint_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/station-service-blueprints.json"
+      ],
+      "formula": "count(station-service-blueprints.json.stations)",
+      "confidence": "high",
+      "assumptions": [
+        "A-KEYAREA-LOCATION-001",
+        "A-PILOT-001"
+      ]
+    },
     "total_floor_area_sqm": {
       "status": "unknown",
       "value": null,
@@ -585,6 +706,79 @@
         "A-IMPLEMENTATION-001"
       ],
       "reason": "Operators, staffing, facilities and operating hours are not committed."
+    },
+    "pilot_total_lifecycle_cost_cny": {
+      "status": "unknown",
+      "value": null,
+      "unit": "CNY",
+      "source_files": [
+        "visual/assets/pilot-protocol.json"
+      ],
+      "formula": "approved_personnel_hours * approved_role_rates + authorized_space_cost + equipment_and_calibration_quotes + accessibility_accommodation_quotes + insurance_permit_and_safety_quotes + maintenance_spares + verified_retirement_and_restoration_cost + approved_contingency",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-PILOT-001",
+        "A-IMPLEMENTATION-001"
+      ],
+      "reason": "No authorized operator, approved rates, quotes, procurement route, lifecycle period or retirement budget exists."
+    },
+    "ordinary_route_outcome_parity": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/equity-acceptance.json"
+      ],
+      "formula": "matched_core_outcomes / eligible_matched_requests",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-PILOT-001",
+        "A-AI-GOVERNANCE-001"
+      ],
+      "reason": "No authorized matched AI/no-AI service trial or representative denominator exists."
+    },
+    "accountable_handover_closure_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/equity-acceptance.json",
+        "visual/assets/relay-contracts.json"
+      ],
+      "formula": "handovers_with_release_and_receipt / all_started_handovers",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-PILOT-001"
+      ],
+      "reason": "Only synthetic protocol fixtures exist; no operational handover ledger has been authorized."
+    },
+    "private_home_unauthorized_transmission_events": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/pilot-protocol.json"
+      ],
+      "formula": "count(observed transmissions while explicit consent state is off)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-VALIDATION-001"
+      ],
+      "reason": "The proposed default-deny device test has not been authorized or run; zero is an acceptance condition, not a result."
+    },
+    "reversible_fitout_restoration_acceptance_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/pilot-protocol.json"
+      ],
+      "formula": "witnessed_restorations_accepted_by_user_and_professionals / all_started_changeovers",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-VALIDATION-001"
+      ],
+      "reason": "No authorized room, baseline, sample, professional protocol or witnessed changeover exists."
     },
     "retention_rate": {
       "status": "unknown",

@@ -60,19 +60,19 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "6477e66f4a3bd152f9c3cb9f3a5434401659ca3f067526d8c37aeee251d54f2b"
+      "sha256": "e76da8bc0fda29dc70d2e7858128dba37553a1237fee38f949c62188e2fc3c9c"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "b8a7d8472207060812d4f7b27372e25ac03a696068a3baba42ab5cfd173d1bc8"
+      "sha256": "df3c5b2f5ef706397763869e5edf0b2906343d5f3f5c7233095b2df3a9163f19"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "7645cd16c3be21c53386d70155f8459170c7a78ad6e76815d540517f77d1ccdf"
+      "sha256": "23fa84190426483d194af394ce54f4e91ba4d3b9fc021f377510d3bb79c1542b"
     },
     {
       "path": "report/proposal.html",
@@ -302,7 +302,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "8dab96b24eee2e1773be405812fc9ba1b64a699842446cab778593135af85336"
+      "sha256": "ec1288feec5b01e4827d1a9eda22dde5d2abbfd0cbd72ad1468f5d274018e0b6"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -732,6 +732,24 @@
       "language": "en",
       "translation_of": "assets/figures/professional-review-map-v21.png",
       "sha256": "b30e12341520efdf20b2f86946265de039a786d7d9b1925da0fc8007334458b7"
+    },
+    {
+      "path": "spatial.json",
+      "role": "audit_artifact",
+      "required": true,
+      "sha256": "348c781b057e01accc9363ce6dd2c829090f123b58ed847903c5c5c350f9ba01"
+    },
+    {
+      "path": "visual/assets/run-ai-era-spatial-integrity.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "9d0cc4311efd20313574d85f606ab7b387fff884a9d026113e4571db8d230b34"
+    },
+    {
+      "path": "visual/assets/test-ai-era-spatial-integrity.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "f1f41af70e879bd9e72e541f721a3a90dfdcf746260db81803b5aab636d8a348"
     }
   ],
   "validation_claim": {

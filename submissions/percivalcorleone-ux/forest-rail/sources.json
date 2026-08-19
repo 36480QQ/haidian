@@ -131,7 +131,24 @@
       "id": "CASE-AI-TORONTO-VECTOR",
       "url": "https://vectorinstitute.ai",
       "source_type": "public_background",
-      "usage": "background_only AI ecosystem case: Vector Institute talent–industry non-profit hub."
+      "usage": "background_only AI ecosystem case: Vector Institute talent–industry non-profit hub. Not usable for Quayside digital-governance claims."
+    },
+    {
+      "id": "CASE-TORONTO-QUAYSIDE",
+      "title": "Toronto Quayside — public digital governance / accountability review materials",
+      "url": "https://www.waterfrontoronto.ca/our-projects/quayside",
+      "publisher": "Waterfront Toronto",
+      "accessed": "2026-08-11",
+      "source_type": "public_background",
+      "usable_for_formal": "background_only",
+      "usable_for": [
+        "数据治理、公众责任、退出与可逆试点前置的机制对照"
+      ],
+      "not_usable_for": [
+        "海淀本地边界、权属、控规或已批平台架构",
+        "把桌面演练写成现场授权运营"
+      ],
+      "usage": "background_only urban digital-governance lesson (Quayside). Do not conflate with CASE-AI-TORONTO-VECTOR."
     },
     {
       "id": "NARRATIVE-SUPPORT",
@@ -174,6 +191,20 @@
       "path": "visual/assets/av-safety-gates.json",
       "source_type": "agent_generated",
       "usage": "Concept AV safety state machine and hard rules; NOT_AUTHORIZED — not a deployed system or certification."
+    },
+    {
+      "id": "CASE-GARDENS-BY-THE-BAY",
+      "title": "Gardens by the Bay Smart Garden / operations dashboard (public materials)",
+      "url": "https://www.gardensbythebay.com.sg/",
+      "publisher": "Gardens by the Bay",
+      "accessed": "2026-08-11",
+      "license_or_clearance": "public web",
+      "use": "background_mechanism_only",
+      "cannot_support": [
+        "Haidian CAPEX",
+        "sensor counts as local design",
+        "statutory approval"
+      ]
     }
   ]
 }

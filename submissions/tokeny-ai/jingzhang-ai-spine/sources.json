@@ -127,6 +127,25 @@
       "not_usable_for": [
         "事实依据来源"
       ]
+    },
+    {
+      "id": "OSM-CROSSCHECK-20260811",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "osm",
+      "authority_level": "open_data_license",
+      "accessed_date": "2026-08-11",
+      "usage": "用 Overpass API 拉取的实况要素（京张铁路遗址公园 way/122348403、大钟寺/五道口/清华东路西口/西直门站点 node）对投稿临时边界做独立交叉核验，量化偏差。",
+      "usable_for": [
+        "临时边界偏差的背景核验",
+        "数据缺口与不确定性披露"
+      ],
+      "not_usable_for": [
+        "官方红线",
+        "法定边界",
+        "精确面积认定",
+        "把临时边界升级为正式"
+      ],
+      "note_zh": "ODbL 许可，需署名；OSM 众包数据可能不完整（遗址公园或仅测绘已建成段），核验结论只说明偏差、不证明哪一方正确。"
     }
   ]
 }

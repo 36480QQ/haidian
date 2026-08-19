@@ -19,3 +19,7 @@ All submitted text, concept diagrams, static HTML and PDFs are authored for this
 | drawings/a3-booklet(.en).pdf and drawings/a0-boards(.en).pdf | Layouts composed only from the registered original diagrams | COMMUNITY-DISPLAY-ONLY | No external photographs, logos, tiles or fonts are embedded. |
 
 No commercial imagery, tracking, API request, iframe, personal data or third-party trademark is included. Reuse must preserve attribution, source limitations and the provisional-boundary warning.
+
+## OpenStreetMap visual-context attribution
+
+The five bilingual diagrams and A3/A0 boards use a downsampled, low-contrast road/building/station reference derived from OpenStreetMap contributors through an Overpass query retrieved on 2026-08-11. It is attributed under the [Open Database License (ODbL) 1.0](https://www.openstreetmap.org/copyright). The derived file is `visual/assets/osm-context-derived.json`. It is display context only and must not be represented as an official boundary, planning control, road redline, parcel, survey, or engineering basis. Proposal layers, provisional boundary, scale, north arrow and legends are authored conceptual overlays and require verification against official materials.

@@ -48,7 +48,7 @@
       "land_use_code": "1401",
       "label_zh": "公园绿地与开敞空间 / Reviewable public memory ground"
     },
-    "land_use_area_05_sqm": {
+    "land_use_area_09_sqm": {
       "status": "known",
       "value": 3366138.181,
       "unit": "sqm",
@@ -60,7 +60,7 @@
       "assumptions": [
         "A-PROVISIONAL-BOUNDARY-001"
       ],
-      "land_use_code": "05",
+      "land_use_code": "09",
       "label_zh": "商业服务业用地 / Adoption exchange and AI-native service"
     },
     "land_use_area_0702_sqm": {
@@ -464,7 +464,16 @@
           "title_zh": "公共决策版本墙",
           "theme": "public_decision_versioning",
           "anchor": "SERVICE-WING-SCENARIO",
-          "primary_users": "运营方、研究团队"
+          "primary_users": "受影响公众、运营方、社区代表与研究团队",
+          "memory_link_lifecycle": [
+            "registered",
+            "assigned",
+            "in_action",
+            "awaiting_closure_review",
+            "reopened_or_escalated",
+            "archived"
+          ],
+          "closure_review_required": true
         }
       ]
     },
@@ -653,6 +662,32 @@
         "A-PRIVACY-001"
       ],
       "equivalent_metric": "scenario_card_count"
+    },
+    "memory_link_closure_confirmation_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(Memory Links archived after affected-person or designated public-interest confirmation, or after a completed public review window) / count(Memory Links proposed for closure)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-PRIVACY-001",
+        "A-CLOSURE-001"
+      ],
+      "reason": "No operator, consent and privacy process, review window, appeal route, service level, case registry, or baseline has been confirmed.",
+      "lifecycle_states": [
+        "registered",
+        "assigned",
+        "in_action",
+        "awaiting_closure_review",
+        "reopened_or_escalated",
+        "archived"
+      ]
     }
   }
 }

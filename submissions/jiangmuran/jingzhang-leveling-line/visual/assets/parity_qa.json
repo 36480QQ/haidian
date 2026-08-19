@@ -1,111 +1,118 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.867,
+ "overall_ratio": 0.788,
  "floor": 0.75,
  "sections": [
   {
    "section": "Executive brief, one page",
-   "zh_chars": 557,
-   "en_words": 420,
-   "ratio": 0.962,
+   "zh_chars": 721,
+   "en_words": 520,
+   "ratio": 0.92,
    "pass": true
   },
   {
    "section": "One person's day: what the mechanism looks like on the street",
-   "zh_chars": 846,
-   "en_words": 581,
-   "ratio": 0.876,
+   "zh_chars": 938,
+   "en_words": 652,
+   "ratio": 0.887,
    "pass": true
   },
   {
    "section": "Design Basis and Source List",
-   "zh_chars": 9012,
-   "en_words": 5931,
-   "ratio": 0.839,
+   "zh_chars": 1080,
+   "en_words": 671,
+   "ratio": 0.792,
    "pass": true
   },
   {
    "section": "Three-Level Scope Framework",
-   "zh_chars": 726,
-   "en_words": 752,
-   "ratio": 1.321,
+   "zh_chars": 3979,
+   "en_words": 2343,
+   "ratio": 0.751,
    "pass": true
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
-   "zh_chars": 3362,
-   "en_words": 2240,
-   "ratio": 0.85,
+   "zh_chars": 6458,
+   "en_words": 4049,
+   "ratio": 0.8,
    "pass": true
   },
   {
    "section": "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
-   "zh_chars": 1765,
-   "en_words": 1213,
-   "ratio": 0.877,
+   "zh_chars": 2328,
+   "en_words": 1521,
+   "ratio": 0.833,
    "pass": true
   },
   {
    "section": "Detailed Design of Key Areas",
-   "zh_chars": 2136,
-   "en_words": 1527,
-   "ratio": 0.912,
+   "zh_chars": 4635,
+   "en_words": 2752,
+   "ratio": 0.757,
    "pass": true
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 10940,
-   "en_words": 7156,
-   "ratio": 0.834,
+   "zh_chars": 11274,
+   "en_words": 7030,
+   "ratio": 0.795,
    "pass": true
   },
   {
    "section": "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
-   "zh_chars": 2236,
-   "en_words": 1572,
-   "ratio": 0.897,
+   "zh_chars": 2518,
+   "en_words": 1590,
+   "ratio": 0.805,
    "pass": true
   },
   {
    "section": "Transport, Rail, Municipal Infrastructure, and Public Services",
-   "zh_chars": 1434,
-   "en_words": 960,
-   "ratio": 0.854,
+   "zh_chars": 1593,
+   "en_words": 1065,
+   "ratio": 0.853,
    "pass": true
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 2826,
-   "en_words": 1704,
-   "ratio": 0.769,
+   "zh_chars": 5418,
+   "en_words": 3279,
+   "ratio": 0.772,
    "pass": true
   },
   {
    "section": "Renewal Projects, Implementation Policy, and Phasing",
-   "zh_chars": 2395,
-   "en_words": 1670,
-   "ratio": 0.889,
+   "zh_chars": 6092,
+   "en_words": 3613,
+   "ratio": 0.756,
    "pass": true
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
-   "zh_chars": 4767,
-   "en_words": 3301,
-   "ratio": 0.883,
+   "zh_chars": 5332,
+   "en_words": 3158,
+   "ratio": 0.755,
+   "pass": true
+  },
+  {
+   "section": "The instrument on the site's own data",
+   "zh_chars": 4941,
+   "en_words": 3073,
+   "ratio": 0.793,
    "pass": true
   },
   {
    "section": "Risk, Copyright, and Compliance",
-   "zh_chars": 1538,
-   "en_words": 1101,
-   "ratio": 0.913,
+   "zh_chars": 2724,
+   "en_words": 1762,
+   "ratio": 0.825,
    "pass": true
   },
   {
    "section": "References",
-   "zh_chars": 1381,
-   "en_words": 1077,
-   "ratio": 0.995,
+   "zh_chars": 1256,
+   "en_words": 774,
+   "ratio": 0.786,
    "pass": true
   }
  ],

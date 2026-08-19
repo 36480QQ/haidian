@@ -7,8 +7,8 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张遗址公园为可回退的公共创新主脉，以众智园、AI原点社区、大钟寺为三站，以中关村科技服务翼和小月河场景赋能翼承接研发、开源、生活与国际交往；所有空间和运营动作均为概念建议，临时边界待正式数据替换后整包重算。"
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "ai-origin-community"]
+scenarios: ["ai-cultural-guide", "public-safety-operations-review", "ai-traffic-walkability"]
 iteration: "v0.2"
 ---
 

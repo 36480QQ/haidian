@@ -1,5 +1,41 @@
 # 方案迭代记录
 
+## v1.9 - 2026-08-16
+
+空间表达深化（响应 #2955 规划从业者批评的方向：图纸要对着地图、空间要可读）：
+
+- 新增**底图总图**（中英双语）：本方案全部设计几何（用地、重点区、慢行主轴、缝合廊道、公共节点、文保约束）叠加真实城市底图（OSM 路网/建筑/水系/绿地/轨道，ODbL 署名）渲染，EPSG:4548 投影；清华园车站旧址文保约束按真实位置标出（总体设计范围西侧外约 1.3 km），如实呈现临时边界与真实地理的关系。
+- 新增**AI原点重点区剖面**（中英双语）：东西向断面表达"公园低、两翼高、首层活跃界面"，绿脊 120m 细分为保留铁轨展示带/人字形铺装与发布广场/记忆庭院/林下慢行四段，概念体量与尺寸均为设计意向。
+- 两图均已登记 manifest（proposal_figure）并接入正文双语与报告 HTML。
+
+
+## v1.8 - 2026-08-12
+
+评审可见性与政策锚点（Issue #2170 启示 + #2070 来源 + #2149 新字段）：
+
+- 文保落地结果摘要（5 个 polygon 的面积与管控要点）从 geometry 提升进正文双语与报告 HTML——评审模型只读九个文件，结果级信息前置（#2170）。
+- `development_intensity_controls` 条目按 #2149 新字段登记 `completeness_limited_by: ["floor_area_ratio"]`——"跨越数据缺位的完成"首次在机器可读层面可分（#2147 结案边界：status 仍须 complete）。
+- SC-08 养老陪伴试点挂政策锚点：海淀区《"人工智能+养老"三年行动计划（2026—2028年）》（海民发〔2026〕5号，现行有效），按 background_only 边界引用，登记为 DATA-SRC-BJHD-AI-ELDERLY-2026（索引外来源自证，#2070 未入中央 registry）。
+- front matter `iteration` 更新为实际版本。
+
+
+## v1.7.1 - 2026-08-11
+
+manifest 迁移 0.2.x（Issue #1058 / PR #1063 已合并）：
+
+- `schema_version` 0.1.0 → 0.2.0，进入 strict gate；`visual_asset` ×5 → canonical `asset`，`risk` ×1 → `other` + `role_detail: "risk"`，`changelog` 已为 canonical 不变。迁移后全包 role 均为 canonical 或显式 `other`，无遗留 advisory 违规。
+
+
+## v1.7 - 2026-08-11
+
+文保约束落地（响应 Issue #1774 数据源索引）：
+
+- CX-003 清华园车站旧址由点位占位升级为 provisional 面：按北京市文物局「第十一批划定」文字四至生成保护范围 + 建控地带Ⅰ类/Ⅴ类三个子区共 5 个 polygon，以 OSM 建筑轮廓定向偏移（J01 直接命名锚定，J02/J03 邻接推定，Y01 未落图以 J02 西墙代替并注明）；全部 `provisional_constraint` / `agent_inferred_from_public_data` / `confidence: medium`，properties 原样保留四至原文、条目 URL 与访问日期（A-HERITAGE-FOURTO-001）。
+- CX-004 觉生寺（大钟寺）登记「第一批划定」四至文字与来源页；其锚点（食品厂/照相机厂/规划红线）不可公开核实，保持点位、不推定面。
+- 坐标勘误：CX-003 原点位偏东约 1.7 km、CX-004 原偏东南约 3.0 km，均经 OSM 落图校正（A-HERITAGE-POINT-FIX-001）。
+- sources.json 新增 BJGOV-HERITAGE-BATCH11 / BJWW-QHY-STATION-T11 / BJWW-JUESHENG-T1 / BJGOV-CCZ-RULES / OPENSTREETMAP / ISSUE-1774 六条登记。
+
+
 ## v1.6 - 2026-08-10
 
 数据质量响应（Issue #1029）：

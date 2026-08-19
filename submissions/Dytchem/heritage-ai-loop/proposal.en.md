@@ -7,8 +7,8 @@ bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A reversible civic innovation spine connecting the Jing-Zhang heritage corridor, three differentiated AI stations, two service wings, and everyday life. All spatial and operational moves are concept suggestions based on provisional geometry and must be recomputed when official data arrives."
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "ai-origin-community"]
+scenarios: ["ai-cultural-guide", "public-safety-operations-review", "ai-traffic-walkability"]
 iteration: "v0.2"
 ---
 

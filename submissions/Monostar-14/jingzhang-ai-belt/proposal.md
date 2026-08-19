@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以“智脉京张”为总体概念，把京张铁路“百年自主创新”精神转化为AI时代城市基础设施隐喻：沿京张遗址公园形成“一脉串三区、两翼展四极”的空间结构，以慢行绿廊串联众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业集聚区，以中关村科技服务翼与小月河场景赋能翼支撑五大功能，提出12张AI场景卡、4处AI朝圣地标和三阶段实施计划。所有空间落地建议均为概念建议、参考方案，可供专业团队深化研究。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v0.1"
+iteration: "v0.2"
 ---
 
 # 智脉京张：百年京张AI创新带概念性城市设计方案
@@ -50,7 +50,7 @@ iteration: "v0.1"
 
 三大定位——百年京张文化带、都市AI生活体验带、AI融合创新带——分别对应文化、生活、产业三个面向 [source:AGENT-TASKBOOK]。方案将五大功能（AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权）组织为一条协同回路：众智园承担“全栈自主创新+治理话语权”，原点社区承担“世界级创新生态”，大钟寺承担“智能原生新业态”，中关村科技服务翼承担“要素全球化配置、IP与资本赋能”，小月河场景赋能翼承担“场景赋能与活力城市”；两端翼再反向滋养三个片区，形成“源头—加速—转化—场景—治理”闭环 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]。
 
-总体空间结构概括为 **“一脉串三区、两翼展四极”**：一脉即京张遗址公园慢行绿廊（概念廊道，北五环至西直门外大街，轴线长约9.3公里）[metric:heritage_spine_length_km]；三区即三处重点区域；两翼即中关村科技服务翼（西侧）与小月河场景赋能翼（东侧）；四极即“创新源头极”（原点社区-清华周边）、“加速转化极”（众智园）、“场景消费极”（大钟寺）与“治理示范极”（沿线AI治理实验节点）。空间结构落位到用地分区时，科研用地（0802）占比约28.4%、居住用地（0701）约22.0%、商业服务业用地（05）约20.5%、绿地与开敞空间（14）约18.6%，与“创新带+生活带+文化带”三带叠合的目标相匹配 [data:geometry/land_use.geojson] [metric:research_land_share]。
+总体空间结构概括为 **“一脉串三区、两翼展四极”**：一脉即京张遗址公园慢行绿廊（概念廊道，北五环至西直门外大街，轴线长约9.4公里）[metric:heritage_spine_length_km]；三区即三处重点区域；两翼即中关村科技服务翼（西侧）与小月河场景赋能翼（东侧）；四极即“创新源头极”（原点社区-清华周边）、“加速转化极”（众智园）、“场景消费极”（大钟寺）与“治理示范极”（沿线AI治理实验节点）。空间结构落位到用地分区时，科研用地（0802）占比约28.4%、居住用地（0701）约22.0%、商业服务业用地（05）约20.5%、绿地与开敞空间（14）约18.6%，与“创新带+生活带+文化带”三带叠合的目标相匹配 [data:geometry/land_use.geojson] [metric:research_land_share]。
 
 ### 全球AI创新生态案例与转化机制（agent.2）
 
@@ -97,7 +97,13 @@ iteration: "v0.1"
 
 ### 大钟寺AI产业集聚区（约72公顷，临时边界720,454平方米）
 
-**定位**：智能原生消费与商务场景区 [source:AGENT-TASKBOOK]。**空间结构**：以“智械回廊”（AI创新零售与展示长廊）为骨架，商业服务业用地（05）主导，东侧保留居住组团 [data:geometry/land_use.geojson]。**建筑更新**：智械消费体验中心、智能原生商务楼、AI创新零售街区与数字消费实验室为概念建筑 [data:geometry/buildings.geojson#BLDG-012]。**交通慢行**：北三环联络线与绿廊南段交汇处设置站前广场 [data:geometry/roads.geojson#ROAD-006]。**AI场景**：机器人零售、无人配送末端、AI艺术展演。**实施风险**：紧邻历史文保单位大钟寺，风貌与视廊控制需专业团队深化 [depth:three_key_area_detailed_design]。
+**定位**：智能原生消费与商务场景区，面向“更具世界影响力、城市发展活力的城市型人工智能创新街区”，以领军企业牵引，重点发展智能体、智能终端、内容消费等AI原生与AI+融合赋能新业态 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。**空间结构**：以“智械回廊”（AI创新零售与展示长廊）为骨架，组织“站—廊—寺”三节点空间序列——轨道大钟寺站站前广场、智械回廊智能体验主轴、觉生寺文保协调带；商业服务业用地（05）主导，东侧保留居住组团 [data:geometry/land_use.geojson] [depth:three_key_area_detailed_design]。
+
+**文保协调前提（本区区别于其他两区的核心约束）**：本区紧邻全国重点文物保护单位觉生寺（俗称大钟寺，因藏明永乐年间铸造的永乐大钟而名，现为大钟寺古钟博物馆）[source:DAZHONGSI-HERITAGE]。本方案不掌握法定文保范围（紫线）与建设控制地带数据，相关结论均表述为概念方向：自文保本体向外围形成“低—中—高”建筑高度梯度过渡，近文保一侧保持低矮开敞；保持自绿廊、站前广场望向文保本体的关键视廊通透；沿文保轴线不布置大体量、高反射玻璃幕墙建筑；正式实施前须由专业团队完成文物影响评估、视廊模拟与风貌协调专项 [source:BOUNDARY-SOURCE] [standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/constraints.geojson#CONS-004]。
+
+**站城一体与四象限步行连通（公告显式设计任务）**：以轨道大钟寺站为锚点开展路口“四象限”步行连通设计——①北西象限：站前广场与智械回廊体验入口，承担国际交往与消费体验；②北东象限：规划绿地复合利用区，叠加AI场景快闪、非机动车停放与共享终端，实现“绿地+场景+停车”复合利用；③南西象限：商务通勤步行轴，连接智能原生商务楼与产业载体；④南东象限：社区生活步行带，服务保留居住组团。四象限以慢行优先的“四象限步行环”与无障碍过街设施连接，同步完善非机动车停放等静态交通组织；以上均为概念方向，实际连通水平与静态交通须以专业交通模型、现状调查与轨道运营条件复核 [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/roads.geojson#ROAD-009]。
+
+**建筑更新**：智械消费体验中心、智能原生商务楼、AI创新零售街区与数字消费实验室为概念建筑，沿回廊贴线布局、小尺度街坊，屋顶预留无人配送与低空物流接口 [data:geometry/buildings.geojson#BLDG-012] [depth:overall_spatial_structure]。**AI场景**：机器人零售、无人配送末端、AI艺术展演；同时探索“数据要素与数字资产流通”服务机制（数据要素服务驿站、场景数据合规备案），与中关村科技服务翼的数据要素服务能力衔接，均为概念机制、不构成运营承诺 [source:OFFICIAL-ANNOUNCEMENT] [standard:GENERATIVE-AI-INTERIM-MEASURES]。**实施风险**：紧邻文保单位，紫线、控规与现状权属待正式数据补齐，风貌与视廊控制需专业团队深化；建议分期推进——先试点站前广场与四象限步行环，再滚动实施回廊沿线更新 [depth:three_key_area_detailed_design]。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -134,13 +140,13 @@ iteration: "v0.1"
 
 ## 交通、轨道、市政与公共服务设施
 
-**慢行系统**：以绿廊慢行主廊道为脊柱（概念长度约9.3公里）[metric:heritage_spine_length_km]，叠加东侧学院路联络线、西侧街区联络线及五道口横街、知春路、北三环、北四环、北五环南侧等横向连接线，形成“一纵多横”慢行网络，概念慢行道总长约28.9公里 [metric:slow_walkway_length_km] [data:geometry/roads.geojson]。**轨道接驳**：重点研究五道口、知春路等既有轨道站点与绿廊的一体化衔接，站城一体概念以专业交通模型复核为前提。**新型基础设施**：提出“端-边-云”分级算力布局、绿廊沿线低速无人配送通道、分布式能源与智慧灯杆复合杆体等概念；所有设施均为概念建议，不涉及市政容量测算 [depth:municipal_new_infrastructure]。**公共服务**：沿绿廊每500-800米布置社区服务、健康驿站、公共卫生间与无障碍设施，落实《无障碍环境建设法》要求 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
+**慢行系统**：以绿廊慢行主廊道为脊柱（概念长度约9.4公里）[metric:heritage_spine_length_km]，叠加东侧学院路联络线、西侧街区联络线及五道口横街、知春路、北三环、北四环、北五环南侧等横向连接线，形成“一纵多横”慢行网络，概念慢行道总长约32.3公里（含大钟寺站四象限步行环） [metric:slow_walkway_length_km] [data:geometry/roads.geojson]。**轨道接驳**：重点研究五道口、知春路等既有轨道站点与绿廊的一体化衔接，站城一体概念以专业交通模型复核为前提。**新型基础设施**：提出“端-边-云”分级算力布局、绿廊沿线低速无人配送通道、分布式能源与智慧灯杆复合杆体等概念；所有设施均为概念建议，不涉及市政容量测算 [depth:municipal_new_infrastructure]。**公共服务**：沿绿廊每500-800米布置社区服务、健康驿站、公共卫生间与无障碍设施，落实《无障碍环境建设法》要求 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
 
 ## 蓝绿空间、公共空间与城市风貌
 
 **蓝绿系统**：以京张遗址公园绿廊（概念绿地约18.6%）为南北主轴，向东连接小月河蓝线（概念参考线），向西渗透至社区绿网，形成“一廊一河多园”结构 [data:geometry/green_space.geojson] [metric:green_ratio]。**公共空间**：原点广场、众智园北广场、大钟寺站前广场三处主要广场（约27.3公顷公共空间，占2.4%）[metric:public_space_ratio] 与沿线口袋公园构成层级化公共空间网络 [data:geometry/public_space.geojson]。
 
-**AI朝圣地标（4处）** [metric:ai_pilgrimage_landmark_count]：1. **原点广场·零公里纪念点**——在原点社区绿廊节点设置“自主创新零公里”纪念装置，致敬詹天佑与京张铁路，作为AI时代创新原点的精神象征 [data:geometry/public_space.geojson#PUBLIC-002]；2. **众智园·算力灯塔**——以智算中心为载体设置算力与芯片科普展示层；3. **大钟寺·智械回廊**——机器人零售与AI艺术展演长廊；4. **小月河·场景试验场**——低速自动驾驶与无人配送的公共体验环。以上地标均为概念装置方向，不涉及文保红线与工程可行性结论，不得过度娱乐化 [depth:blue_green_public_space]。
+**AI朝圣地标（4处）** [metric:ai_pilgrimage_landmark_count]：1. **原点广场·零公里纪念点**——在原点社区绿廊节点设置“自主创新零公里”纪念装置，致敬詹天佑与京张铁路，作为AI时代创新原点的精神象征 [data:geometry/public_space.geojson#PUBLIC-002]；2. **众智园·算力灯塔**——以智算中心为载体设置算力与芯片科普展示层；3. **大钟寺·智械回廊**——机器人零售与AI艺术展演长廊，与觉生寺文保视廊协调；4. **小月河·场景试验场**——低速自动驾驶与无人配送的公共体验环。以上地标均为概念装置方向，不涉及文保红线与工程可行性结论，不得过度娱乐化 [depth:blue_green_public_space]。
 
 **文化叙事（agent.5）**：方案构建“百年京张—中关村—AI新文化”三层叙事：京张铁路是“自主创新的第一公里”，中关村是“科技创业的黄金时代”，AI创新带是“智能时代的城市答卷”；通过遗址展示、导视符号、公共艺术与数字内容四类载体表达，形成“可阅读的街道、可触摸的历史、可体验的未来” [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。国际传播叙事建议采用“Zhimai Jing-Zhang: The Intelligent Vein of China's First Century of Self-Made Innovation”，统一用于双语导视与活动视觉。
 
@@ -148,7 +154,7 @@ iteration: "v0.1"
 
 ## 更新项目清单、实施政策与分期计划
 
-**更新项目清单（8项）**：1. 遗址公园绿廊贯通与景观提升；2. 原点广场与原点社区更新；3. 众智园研发组团与共享中试平台；4. 大钟寺智械回廊更新；5. 小月河场景试验环；6. 五道口站城一体节点；7. 知春路缝合节点；8. 沿线无障碍与慢行系统完善 [data:geometry/phasing.geojson] [metric:renewal_project_count]。
+**更新项目清单（8项）**：1. 遗址公园绿廊贯通与景观提升；2. 原点广场与原点社区更新；3. 众智园研发组团与共享中试平台；4. 大钟寺智械回廊与四象限步行环更新；5. 小月河场景试验环；6. 五道口站城一体节点；7. 知春路缝合节点；8. 沿线无障碍与慢行系统完善 [data:geometry/phasing.geojson] [metric:renewal_project_count]。
 
 **分期计划** [data:geometry/phasing.geojson#PHASE-001]：近期（2026-2028）以“绿廊贯通+原点社区试点+大钟寺启动”为主，完成遗址公园一期活力化与2-3个AI场景试点；中期（2029-2031）推进众智园组团与小月河场景环 [data:geometry/phasing.geojson#PHASE-002]；远期（2032-2035）完成西侧社区提升与全域风貌完善 [data:geometry/phasing.geojson#PHASE-003]。实施政策建议包括：场景开放备案制、公共数据授权运营试点、开发者社区运营基金与“AI+更新”导则编制，均为概念建议，不构成政策承诺 [source:AGENT-TASKBOOK]。
 
@@ -156,7 +162,7 @@ iteration: "v0.1"
 
 ## 指标体系、面积复算与合规矩阵
 
-核心指标及其设计含义如下 [metric:site_area_sqm]：**绿地比例18.6%**支撑人才与居民日常休憩、创新交往与碳汇；**公共空间比例2.4%**支撑节点活力和场景展示；**科研用地比例28.4%**支撑产业空间供给与全栈创新；**慢行廊道约9.3公里、慢行道约28.9公里**支撑绿色出行与站城一体；**建筑基底约28.4万平方米**为概念产业空间供给参考，精确规模待控规条件与现状调查补齐 [metric:green_ratio] [metric:public_space_ratio] [metric:slow_walkway_length_km]。全部面积类指标在EPSG:4548下复算，公式、来源文件与置信度见`metrics.json` [metric:building_footprint_area_sqm]。
+核心指标及其设计含义如下 [metric:site_area_sqm]：**绿地比例18.6%**支撑人才与居民日常休憩、创新交往与碳汇；**公共空间比例2.4%**支撑节点活力和场景展示；**科研用地比例28.4%**支撑产业空间供给与全栈创新；**慢行廊道约9.4公里、慢行道约32.3公里**支撑绿色出行与站城一体；**建筑基底约28.4万平方米**为概念产业空间供给参考，精确规模待控规条件与现状调查补齐 [metric:green_ratio] [metric:public_space_ratio] [metric:slow_walkway_length_km]。全部面积类指标在EPSG:4548下复算，公式、来源文件与置信度见`metrics.json` [metric:building_footprint_area_sqm]。
 
 合规覆盖：公告1.3、1.4、1.5全部任务与面向智能体任务书agent.1-agent.6六项任务均在`compliance_matrix.json`中登记，并在正文相应章节展开；9项专业标准在`standard_matrix.json`中逐条响应；15项设计深度项全部标为complete并在`design_depth_matrix.json`中登记证据链 [source:AGENT-TASKBOOK] [depth:metrics_recalculation]。面积复算与provisional边界限制、待补控规条件一并记录于`assumptions.json`。
 

@@ -1,0 +1,124 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "回授物使用验证 (Reciprocity Artifact Usage Verification)",
+  "canonical_contract": {
+    "zh": "proposal.md",
+    "en": "proposal.en.md"
+  },
+  "core_claim_zh": "人字轨道语法承诺每个 AI 节点欠文化一件实体回授物。此承诺可验证：从不被触摸、阅读或到访的回授物是摆设，不是回授。使用必须逐件可测量--取用量/参观人次/互动次数/投稿数--现场数据到来之前诚实保持 unknown。",
+  "core_claim_en": "The Ren-Track grammar promises every AI node owes culture one physical reciprocity artifact. Verifiable: an artifact never touched, read, or visited is decoration, not reciprocity. Usage must be measurable per artifact - borrows/visits/interactions/submissions - honestly unknown until field data exists.",
+  "methodology_note_zh": "从文化回授透镜自然长出（非移植任何方案形式）：回授的定义包含'被使用'，因此回授物验证 = 使用验证。",
+  "methodology_note_en": "Grown from the reciprocity lens (not transplanted): reciprocity by definition includes being used; artifact verification = usage verification.",
+  "artifact_count": 12,
+  "artifacts": [
+    {
+      "artifact_id": "RA-01",
+      "node_id": "NT-01",
+      "artifact_zh": "自主建造精神展廊+人字轨道模型",
+      "usage_metric_zh": "月参观人次+模型互动次数（触摸计数）",
+      "threshold": "月参观 ≥200 人次",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "连续两月 <50 人次即判'摆设化'，须重新策展或迁址"
+    },
+    {
+      "artifact_id": "RA-02",
+      "node_id": "NT-02",
+      "artifact_zh": "车站历史时间轴（地面嵌入）+纸面导览册",
+      "usage_metric_zh": "导览册月取用量+时间轴停留人数（观察抽样）",
+      "threshold": "导览册月取用 ≥300 份",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "取用 <100 份即调整摆放位置与内容"
+    },
+    {
+      "artifact_id": "RA-03",
+      "node_id": "NT-03",
+      "artifact_zh": "开源贡献者墙+协作史导览板",
+      "usage_metric_zh": "导览板前停留人数（观察抽样）+贡献者墙年度新增铭牌数",
+      "threshold": "年新增铭牌 ≥10 块",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "年新增 <3 块即社区活力不足，须激活贡献机制"
+    },
+    {
+      "artifact_id": "RA-04",
+      "node_id": "NT-04",
+      "artifact_zh": "铁路物流史展廊+产业变迁时间轴",
+      "usage_metric_zh": "月参观人次",
+      "threshold": "月参观 ≥150 人次",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "连续两月 <40 即策展失效"
+    },
+    {
+      "artifact_id": "RA-05",
+      "node_id": "NT-05",
+      "artifact_zh": "清河生态导览牌+低碳知识手册",
+      "usage_metric_zh": "手册月取用量",
+      "threshold": "月取用 ≥200 份",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "取用 <60 即内容不吸引，须改版"
+    },
+    {
+      "artifact_id": "RA-06",
+      "node_id": "NT-06",
+      "artifact_zh": "中关村转型史展廊+创业者故事铭牌",
+      "usage_metric_zh": "月参观人次",
+      "threshold": "月参观 ≥100 人次",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "连续两月 <30 即重新策展"
+    },
+    {
+      "artifact_id": "RA-07",
+      "node_id": "NT-07",
+      "artifact_zh": "小月河生活史导览板+社区记忆征集箱",
+      "usage_metric_zh": "征集箱月投稿数",
+      "threshold": "月投稿 ≥20 件",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "投稿 <5 件即征集机制失效，须社区激活"
+    },
+    {
+      "artifact_id": "RA-08",
+      "node_id": "NT-08",
+      "artifact_zh": "人字轨道实景模型+全线历史纸面地图",
+      "usage_metric_zh": "模型互动次数+地图月取用量",
+      "threshold": "地图月取用 ≥400 份（地标级）",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "取用 <120 即地标吸引力不足"
+    },
+    {
+      "artifact_id": "RA-09",
+      "node_id": "NT-09",
+      "artifact_zh": "试验公开报告墙+测试数据开放说明牌",
+      "usage_metric_zh": "报告墙前停留人数（观察抽样）",
+      "threshold": "月停留 ≥80 人次",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "停留 <20 即透明度展示无效，须改进呈现"
+    },
+    {
+      "artifact_id": "RA-10",
+      "node_id": "NT-10",
+      "artifact_zh": "建设者名录墙+人才故事导览册",
+      "usage_metric_zh": "导览册月取用量",
+      "threshold": "月取用 ≥150 份",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "取用 <40 即内容失效"
+    },
+    {
+      "artifact_id": "RA-11",
+      "node_id": "NT-11",
+      "artifact_zh": "铁路货运史展板+驿站服务承诺牌",
+      "usage_metric_zh": "承诺牌注视率（观察抽样：进入驿站者中注视承诺牌的比例）",
+      "threshold": "注视率 ≥30%",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "注视率 <10% 即位置不当，须移至入口视线"
+    },
+    {
+      "artifact_id": "RA-12",
+      "node_id": "NT-12",
+      "artifact_zh": "贯通纪念刻度+百年大事记纸面手册",
+      "usage_metric_zh": "手册月取用量",
+      "threshold": "月取用 ≥250 份",
+      "unmeasured_state": "unknown",
+      "decoration_rule_zh": "取用 <70 即重新设计"
+    }
+  ],
+  "field_status": "not_authorized_not_run"
+}

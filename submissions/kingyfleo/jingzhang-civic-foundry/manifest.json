@@ -12,7 +12,7 @@
     "agent_name": "kingyfleo × Codex",
     "model": "OpenAI Codex（GPT-5系列）"
   },
-  "generated_at": "2026-08-09T19:09:42Z",
+  "generated_at": "2026-08-17T15:20:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,14 +24,14 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9c593400b5f4758764bf16e924adeae10eeee4b0ca32a75748360e03c25273bc"
+      "sha256": "75caa8f3d4fe6bfa3aa8eabad2488db8091b8f008e5d61bf4cc3bcc4f68003de"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
       "language": "zh",
-      "sha256": "d62b4f37c6e0d7ede8c0c67c9cbebc07140cffe1721e781fc23a39f69e7da526"
+      "sha256": "a83e85c79c710bc716a6b66ebf435ba33e34847201502d23133f5aa11a6345f8"
     },
     {
       "path": "agent.json",
@@ -43,7 +43,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "ffcdd8fd0074d350c800ed53619556db1c081ac08e5da46337bddd2256e05a25"
+      "sha256": "55e70d30661b10a07363762f5b1f1bd3ba119459ad87cc96083462ea8bd907f2"
     },
     {
       "path": "assumptions.json",
@@ -55,13 +55,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "1095372814cb732488658b228647f7753ad4eed73206fa75ac08c26d7737f752"
+      "sha256": "cd02b0f58aca86e65d54325c5b0c68b052cc1a41ce62ef28f0bb4c0c5e04d4e1"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9964419a2017968b4f6fc77c4f35a64f289b4eb89cda33281a97acebf45a3861"
+      "sha256": "74dbc2f6b4ebfa84a4af7d44b847aeae3b60e1ee8c7a15f72e0eb95cededfaf1"
     },
     {
       "path": "compliance_matrix.json",
@@ -154,7 +154,14 @@
       "role": "visualization",
       "required": true,
       "language": "neutral",
-      "sha256": "8ee7b9d3b37ec37c23408017cdcf95952d17dabaa00755f5328bf36fad99a921"
+      "sha256": "678a8c78e5cd98dbcf54287b7d3e1646e6ab58302ce8ccc080afc99f08f46a4a"
+    },
+    {
+      "path": "visual/assets/v75-phase2-evidence.json",
+      "role": "visualization",
+      "required": true,
+      "language": "neutral",
+      "sha256": "01644e87d1edf2b846a08e8fce31a42aa37f5a07a5a0344c1e010ba1659ef40a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -189,7 +196,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "27c392a4c404cce213027a1e74fbe2ac84cf582587f34e254ec1892204318e6e"
+      "sha256": "d2b5e807154bce6a3aef4d19dac3580c436366eed3e3182f79622f4fb0ceb50f"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -251,7 +258,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e4311dd247ba80c06de5b3eda4569ca681cc6d0bb028675f515c96ab03c7f55b"
+      "sha256": "04695ee892c6cbd6deec52e81a9f32c3bd3603ba73a8abecc28ce01557a9d301"
     },
     {
       "path": "report/proposal.en.html",
@@ -323,7 +330,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "1b54fd93d565bfafa2210a50da6ed32df9ae415664115019ad0c8411738ca682"
+      "sha256": "b5c0d287d45d38c6269a02525c0a4bbcedebdf366b4695e8ad1d99ac49173091"
     },
     {
       "path": "assets/figures/logo.svg",
@@ -384,8 +391,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

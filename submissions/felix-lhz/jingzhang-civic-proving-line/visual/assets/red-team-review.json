@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.6.0",
+  "review_date": "2026-08-18",
+  "version": "V8",
+  "calibration_baseline": "PR #3225 Review Agent 86/100",
+  "status": "v8_local_freeze_user_browser_verified",
+  "release_gate": "local_freeze_complete_pending_user_authorization_to_publish",
+  "summary": {"blocking_open": 0, "major_open": 0, "major_closed": 10, "minor_open": 4},
+  "manual_browser_verification": {
+    "date": "2026-08-18",
+    "evidence": "user-confirmed interaction checks plus supplied 1200x900 desktop first-screen screenshot",
+    "confirmed": [
+      "OPEN_TRIAL_PAUSE_RETIRE_state_switching",
+      "hash_state_restoration_after_refresh",
+      "keyboard_focus_visibility",
+      "desktop_and_narrow_layout_without_overlap"
+    ],
+    "desktop_visual_observation": "Three landmarks, S7 state twin, four-season programme and NOT FIELD-RUN disclosure are visible without clipping.",
+    "automation_boundary": "The in-app browser policy did not permit agent control of file://; this is user-observed evidence, not an automated browser claim."
+  },
+  "findings": [
+    {
+      "id": "V6-UD-01", "round": "urban_design_site_specificity", "severity": "major",
+      "finding": "Earlier editions depended on labels to identify spatial safety and restoration.",
+      "remediation": "Rebuild S7 as public cross, one-side trial bay, evidence porch and blue-green edge.",
+      "verification": "V7/V8 four-scale drawings locate routes, curb, posts, E-stops, fire and removal paths.", "status": "closed"
+    },
+    {
+      "id": "V7-PUB-01", "round": "publication_resolution", "severity": "major",
+      "finding": "V6 A0 principal images were approximately 34–38 ppi.",
+      "remediation": "Generate native A0 vector pages and retain vector text and linework.",
+      "verification": "Both V8 A0 PDFs are native 1189×841 mm, three pages and below 6 MiB; 150 dpi contact sheets show no crop or overlap.", "status": "closed"
+    },
+    {
+      "id": "V7-DATA-01", "round": "referential_integrity", "severity": "major",
+      "finding": "Active records retained old-version design references.",
+      "remediation": "Resolve all active design references against current GeoJSON.",
+      "verification": "V8 automated QA resolves 98/98 active V7-D references and finds zero active V5-D references.", "status": "closed"
+    },
+    {
+      "id": "V7-IMP-01", "round": "implementation_feasibility", "severity": "major",
+      "finding": "V6 lacked a reproducible kit and operating day.",
+      "remediation": "Add quantities, ownership, quote status, daily operation and recovery clock.",
+      "verification": "V8 retains 17 reproducible quantity rules, maintenance/retirement roles and a six-step operating day; prices remain pending.", "status": "closed"
+    },
+    {
+      "id": "V8-BRIEF-01", "round": "brief_alignment", "severity": "major",
+      "finding": "V7 Agent 4–6 evidence did not independently establish landmarks, culture, developer activity or annual operation.",
+      "remediation": "Create three receipt landmarks, a civic evidence mile, four-season programme and unique task evidence.",
+      "verification": "Chinese and English proposals, matrices, atlas and reports now give Agent 1–6 distinct chapters, figures, data and conclusions.", "status": "closed"
+    },
+    {
+      "id": "V8-VIS-01", "round": "entry_evidence", "severity": "major",
+      "finding": "V7 core figures repeated the same cross plan and culture-brand duplicated ecosystem-synergy byte-for-byte.",
+      "remediation": "Assign one decision to each canonical figure and rebuild the optional figures with distinct content.",
+      "verification": "V8 hash QA finds no duplicate across eight Chinese or eight English review figures; all five canonical figures were inspected at 1024 px.", "status": "closed"
+    },
+    {
+      "id": "V8-IMP-01", "round": "implementation_feasibility", "severity": "major",
+      "finding": "V7 quantities lacked a compact sequence connecting verification, baseline, trial, recovery and public receipt.",
+      "remediation": "Publish five-gate S7 90-day protocol with role separation.",
+      "verification": "Schema 1.6.0 and bilingual publications show five day ranges with gates, outputs and failure conditions.", "status": "closed"
+    },
+    {
+      "id": "V8-PUB-01", "round": "formal_publication", "severity": "major",
+      "finding": "A3 opening page underused the strongest spatial evidence and A0/A3 information roles overlapped.",
+      "remediation": "Place all three landmark silhouettes and the flagship section on A3 page 1; assign distinct page and board questions.",
+      "verification": "Four bilingual PDFs were rendered at 150 dpi and inspected; page counts are A0 3 and A3 16.", "status": "closed"
+    },
+    {
+      "id": "V8-DATA-02", "round": "schema_and_reference_integrity", "severity": "major",
+      "finding": "Landmark, annual programme and pilot objects could become display-only claims without stable links.",
+      "remediation": "Link landmarks to stations, components and scenarios; link seasons and pilot phases to evidence outputs.",
+      "verification": "qa-v8.js passes schema 1.6.0, 3/3 landmarks, 4/4 seasons, 5/5 phases, 12/12 scenarios and all references.", "status": "closed"
+    },
+    {
+      "id": "V8-BILINGUAL-01", "round": "bilingual_contract", "severity": "major",
+      "finding": "New V8 claims risked drifting between Chinese and English deliverables.",
+      "remediation": "Generate paired figures/PDFs and inject both HTML languages from the same V8 data.",
+      "verification": "Figure positions, IDs, counts, page counts, schema and evidence states correspond in both languages.", "status": "closed"
+    },
+    {
+      "id": "V5-MIN-01", "round": "external_site_evidence", "severity": "minor",
+      "finding": "Official survey, ownership, statutory controls, utilities and observed flows remain unavailable.",
+      "remediation": "Keep concept-scale disclosures and require these inputs before E2.", "status": "open_external_dependency"
+    },
+    {
+      "id": "V5-MIN-02", "round": "field_performance", "severity": "minor",
+      "finding": "No scene has been field-run, so thresholds and adoption decisions remain unavailable.",
+      "remediation": "Keep performance unknown and advance only through E0–E4 after field baseline establishment.", "status": "open_external_dependency"
+    },
+    {
+      "id": "V7-MIN-03", "round": "context_data", "severity": "minor",
+      "finding": "Dazhongsi OSM context contains only one confirmed building feature.",
+      "remediation": "Show public-data-missing zones and distinguish design envelopes from context.", "status": "open_external_dependency"
+    },
+    {
+      "id": "V8-DATA-01", "round": "external_context", "severity": "minor",
+      "finding": "Official station exits and precise transport interfaces remain unavailable.",
+      "remediation": "Use directional interfaces only and verify before E2.", "status": "open_external_dependency"
+    },
+    {
+      "id": "V8-WEB-01", "round": "browser_runtime", "severity": "minor",
+      "finding": "The in-app browser policy rejected direct file:// navigation, so four HTML first-viewport screenshots and runtime interaction checks are not yet captured for the 18-image blind-review pack.",
+      "remediation": "Use user-observed browser verification for interaction and layout, while static QA verifies local-only runtime dependencies and structured state controls.",
+      "verification": "User confirmed state switching, hash restoration, keyboard focus and responsive layout and supplied a 1200x900 desktop screenshot; automated file:// control remains correctly disclosed as unavailable.", "status": "closed_manual_verification"
+    }
+  ],
+  "note": "Content and publication major findings are closed. Browser interaction is explicitly recorded as user-observed evidence because automated file:// control was unavailable; no machine score or automated browser pass is fabricated. The V8 local freeze is ready for a separate publication decision."
+}

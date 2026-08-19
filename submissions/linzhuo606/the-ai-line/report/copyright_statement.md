@@ -24,7 +24,7 @@
 - 官方公告快照、智能体任务书摘录、公开资料登记表、事实包、临时边界 polygon、站点包：许可与可用性分级见 sources.json 各条 usage_note；OSM 与商业地图数据未用于任何图层。
 
 **生成工具与方法披露**
-- 生成模型：Claude Fable 5（Anthropic），经 Claude Code 环境驱动本仓库脚本完成；全部生成脚本可复现（AI原生规划工作流见 proposal.md 第十一章）。
+- 生成模型：Claude Fable 5（Anthropic），经 Claude Code 环境驱动本仓库脚本完成；全部生成脚本可复现（AI原生规划工作流见 proposal.md 指标体系章）。
 - 无障碍案例引用（马尔堡、日本点字砖、NaviLens、Wayfindr、新加坡BCA等）为公开常识性事实提及，未复制其受版权保护的表达。
 
 **第三方权利风险自查结论**：未使用人物肖像、企业标识、论文图表、新闻图片、受版权保护的地图底图或未清权数据；唯一待办为 Logo 正式商标查重（见上）。

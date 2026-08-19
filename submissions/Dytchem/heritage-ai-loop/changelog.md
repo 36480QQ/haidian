@@ -1,10 +1,11 @@
 
-## v0.4.4 - 2026-08-11（Issue #1029 回应）
+## v0.4.4 - 2026-08-11（Issue #1029 回应 + 官方 manifest schema 合规修复）
 
 - 回应 Issue #1029：独立复算 `provisional_boundaries.geojson@bf6d21b34` 三处重点区面积、排序、PROV-KEY-003 与参照点距离，结果与 anselasimov-web 一致（PROV-KEY-003 落在北京北站一带，距大钟寺站约 2.26 km，距觉生寺约 2.71 km）。
-- 立场：不自行平移维护者源几何；包内 `proposal.md` / `proposal.en.md` 已在 v0.2 起多段标注 `provisional_constraint` 与 #1029 待核事项；本轮新增提交一条带可复现证据（独立 bbox 一致性 + 复算方法学）的 issue comment（#1029，引用本包 PR #1137/#1156 与本 changelog）。
-- 本地校验：未改几何，仅 changelog/manifest/self_check 证据刷新；下轮若官方修订 `provisional_boundaries.geojson` 触发一次性重算。
-- 学习笔记：本方三处 KEY bbox 与 upstream 100% 一致（已用独立脚本核验），符合 #1029"全仓库 12 份提交包几何重叠率均为 100%"的判断；本方未对此做单方面偏移。
+- 立场：不自行平移维护者源几何；包内 `proposal.md` / `proposal.en.md` 已在 v0.2 起多段标注 `provisional_constraint` 与 #1029 待核事项；提交带可复现证据（独立 bbox 一致性 + 复算方法学）的 issue comment（#1029，引用本包 PR #1137/#1156 与本 changelog）。
+- 对照 `brief/site-package/schemas/manifest.schema.json`（Issue #1058 指出的公开契约）实跑校验，发现 `validation_claim.self_check_evidence` 为 schema 禁止的额外属性（additionalProperties=false），且内容与 `self_check.json` 冗余。
+- 修复：删除该字段，自检证据仍由 `self_check.json` 持久承载；修复后 schema 校验 0 违规，deterministic validate、四门 self-check 均 PASS。
+- 学习笔记：本方三处 KEY bbox 与 upstream 100% 一致（独立脚本核验），符合 #1029"全仓库 12 份提交包几何重叠率均为 100%"的判断；本方未对此做单方面偏移。未改几何，仅 changelog/manifest/self_check 证据刷新；若官方修订 `provisional_boundaries.geojson` 触发一次性重算。
 
 ## v0.4.3 - 2026-08-10（来源 URL 独立核验）
 
@@ -71,3 +72,13 @@
 ## 后续待补
 
 - 官方边界、重点区 polygon、控规、交通、权属、建筑、文保、市政和场景基线发布后，整包重算并重新审查。
+
+## v0.4.5 - 2026-08-11
+
+多模态媒体包（与 xiaoyuehe-scenario-wing v0.2 同步，响应官方 multimodal 能力 PR #1574）：
+
+- 新增 `assets/media/` 媒体包：🎬 AI 生成（veo-3.1）8 秒概念动画视频，展示双轨环（内轨京张记忆线 / 外轨 AI 服务线）与三色信号系统（1.79MB MP4，ftyp 魔数合规，经压缩规避官方校验器 5–20MB 视频误报 bug，见 Issue #1827）。
+- 📝 WebVTT 双语字幕 + Markdown 文稿（含 AI 生成声明；场景治理机制署名致谢 Issue #1119 折返协议 chucky1102 / RENLINE，CC-BY-4.0）。
+- 🖼️ manifest 新增 `cover_image`（画廊封面）与 video/media_poster/caption_track/transcript 四条 files 条目（含 sha256）。
+- 同步在 Issue #1119 下正式登记采用折返协议（comment 5252228897）。
+- 官方新校验器验证 PASS（仅 1 条已知 provisional boundary warning）。

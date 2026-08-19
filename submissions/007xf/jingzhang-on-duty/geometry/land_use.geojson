@@ -1,21 +1,25 @@
 {
   "type": "FeatureCollection",
-  "name": "jingzhang_on_duty_land_use",
+  "name": "jingzhang_on_duty_v3_responsibility_cells",
   "features": [
     {
       "type": "Feature",
-      "id": "LU-001",
+      "id": "LU-S01",
       "properties": {
-        "id": "LU-001",
+        "id": "LU-S01",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "land_use_code": "0702",
-        "name_zh": "社区值守与生活服务",
-        "name_en": "Community Duty and Daily Services",
-        "area_sqm_declared": 2027227.512,
-        "usage_note": "Conceptual functional intent only; not a statutory land-use parcel or control line."
+        "name_zh": "大钟寺昼夜运营片｜社区照护与人工服务界面",
+        "name_en": "Dazhongsi Day-Night Operations District | Community Care and Human-Service Edge",
+        "responsibility_district": "S",
+        "interface_role": "human_service_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 770832.606
       },
       "geometry": {
         "type": "Polygon",
@@ -26,23 +30,15 @@
               39.939
             ],
             [
-              116.3397,
-              39.975
+              116.33990277777777,
+              39.9677
             ],
             [
-              116.3417,
-              40.006
+              116.343132,
+              39.9677
             ],
             [
-              116.3427,
-              40.0265
-            ],
-            [
-              116.343288,
-              40.0265
-            ],
-            [
-              116.343288,
+              116.343132,
               39.939
             ],
             [
@@ -55,41 +51,45 @@
     },
     {
       "type": "Feature",
-      "id": "LU-002",
+      "id": "LU-S02",
       "properties": {
-        "id": "LU-002",
+        "id": "LU-S02",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "land_use_code": "0802",
-        "name_zh": "验证研发与开放试验",
-        "name_en": "Validation R&D and Open Testing",
-        "area_sqm_declared": 3366141.258,
-        "usage_note": "Conceptual functional intent only; not a statutory land-use parcel or control line."
+        "name_zh": "大钟寺昼夜运营片｜可关停研发与影子验证界面",
+        "name_en": "Dazhongsi Day-Night Operations District | Stop-Safe R&D and Shadow-Validation Edge",
+        "responsibility_district": "S",
+        "interface_role": "controlled_validation_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 1104562.19
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.343288,
+              116.343132,
               39.939
             ],
             [
-              116.343288,
-              40.0265
+              116.343132,
+              39.9677
             ],
             [
-              116.34734399999999,
-              40.0265
+              116.347188,
+              39.9677
             ],
             [
-              116.34734399999999,
+              116.347188,
               39.939
             ],
             [
-              116.343288,
+              116.343132,
               39.939
             ]
           ]
@@ -98,41 +98,45 @@
     },
     {
       "type": "Feature",
-      "id": "LU-003",
+      "id": "LU-S03",
       "properties": {
-        "id": "LU-003",
+        "id": "LU-S03",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "land_use_code": "05",
-        "name_zh": "产业服务与城市运营",
-        "name_en": "Industry Services and Urban Operations",
-        "area_sqm_declared": 3495604.843,
-        "usage_note": "Conceptual functional intent only; not a statutory land-use parcel or control line."
+        "name_zh": "大钟寺昼夜运营片｜产业协作与设施运维界面",
+        "name_en": "Dazhongsi Day-Night Operations District | Industry Collaboration and Facility-Operations Edge",
+        "responsibility_district": "S",
+        "interface_role": "operations_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 1189527.337
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34734399999999,
+              116.347188,
               39.939
             ],
             [
-              116.34734399999999,
-              40.0265
+              116.347188,
+              39.9677
             ],
             [
               116.351556,
-              40.0265
+              39.9677
             ],
             [
               116.351556,
               39.939
             ],
             [
-              116.34734399999999,
+              116.347188,
               39.939
             ]
           ]
@@ -141,18 +145,22 @@
     },
     {
       "type": "Feature",
-      "id": "LU-004",
+      "id": "LU-S04",
       "properties": {
-        "id": "LU-004",
+        "id": "LU-S04",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
-        "name_zh": "遗址叙事与蓝绿开放空间",
-        "name_en": "Heritage Narrative and Blue-Green Open Space",
-        "area_sqm_declared": 2523859.249,
-        "usage_note": "Conceptual functional intent only; not a statutory land-use parcel or control line."
+        "name_zh": "大钟寺昼夜运营片｜遗址叙事与蓝绿公共界面",
+        "name_en": "Dazhongsi Day-Night Operations District | Heritage Narrative and Blue-Green Public Edge",
+        "responsibility_district": "S",
+        "interface_role": "public_realm_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 1016826.554
       },
       "geometry": {
         "type": "Polygon",
@@ -164,15 +172,11 @@
             ],
             [
               116.351556,
-              40.0265
+              39.9677
             ],
             [
-              116.3553,
-              40.0265
-            ],
-            [
-              116.3533,
-              39.99
+              116.355084,
+              39.9677
             ],
             [
               116.3553,
@@ -185,6 +189,394 @@
             [
               116.351556,
               39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-M01",
+      "properties": {
+        "id": "LU-M01",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0702",
+        "name_zh": "AI原点社区服务片｜社区照护与人工服务界面",
+        "name_en": "AI Origin Community Service District | Community Care and Human-Service Edge",
+        "responsibility_district": "M",
+        "interface_role": "human_service_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 894427.362
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3414741935484,
+              40.0025
+            ],
+            [
+              116.343132,
+              40.0025
+            ],
+            [
+              116.343132,
+              39.9677
+            ],
+            [
+              116.33990277777777,
+              39.9677
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.3414741935484,
+              40.0025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-M02",
+      "properties": {
+        "id": "LU-M02",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "AI原点社区服务片｜可关停研发与影子验证界面",
+        "name_en": "AI Origin Community Service District | Stop-Safe R&D and Shadow-Validation Edge",
+        "responsibility_district": "M",
+        "interface_role": "controlled_validation_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 1338717.516
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343132,
+              39.9677
+            ],
+            [
+              116.343132,
+              40.0025
+            ],
+            [
+              116.347188,
+              40.0025
+            ],
+            [
+              116.347188,
+              39.9677
+            ],
+            [
+              116.343132,
+              39.9677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-M03",
+      "properties": {
+        "id": "LU-M03",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "05",
+        "name_zh": "AI原点社区服务片｜产业协作与设施运维界面",
+        "name_en": "AI Origin Community Service District | Industry Collaboration and Facility-Operations Edge",
+        "responsibility_district": "M",
+        "interface_role": "operations_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 1441694.363
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347188,
+              39.9677
+            ],
+            [
+              116.347188,
+              40.0025
+            ],
+            [
+              116.351556,
+              40.0025
+            ],
+            [
+              116.351556,
+              39.9677
+            ],
+            [
+              116.347188,
+              39.9677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-M04",
+      "properties": {
+        "id": "LU-M04",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "1401",
+        "name_zh": "AI原点社区服务片｜遗址叙事与蓝绿公共界面",
+        "name_en": "AI Origin Community Service District | Heritage Narrative and Blue-Green Public Edge",
+        "responsibility_district": "M",
+        "interface_role": "public_realm_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 804915.37
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.355084,
+              39.9677
+            ],
+            [
+              116.351556,
+              39.9677
+            ],
+            [
+              116.351556,
+              40.0025
+            ],
+            [
+              116.35398493150686,
+              40.0025
+            ],
+            [
+              116.3533,
+              39.99
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-N01",
+      "properties": {
+        "id": "LU-N01",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0702",
+        "name_zh": "众智园安全验证片｜社区照护与人工服务界面",
+        "name_en": "Zhongzhiyuan Safe Validation District | Community Care and Human-Service Edge",
+        "responsibility_district": "N",
+        "interface_role": "human_service_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 232413.699
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343132,
+              40.0265
+            ],
+            [
+              116.343132,
+              40.0025
+            ],
+            [
+              116.3414741935484,
+              40.0025
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.343132,
+              40.0265
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-N02",
+      "properties": {
+        "id": "LU-N02",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "众智园安全验证片｜可关停研发与影子验证界面",
+        "name_en": "Zhongzhiyuan Safe Validation District | Stop-Safe R&D and Shadow-Validation Edge",
+        "responsibility_district": "N",
+        "interface_role": "controlled_validation_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 922862.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347188,
+              40.0265
+            ],
+            [
+              116.347188,
+              40.0025
+            ],
+            [
+              116.343132,
+              40.0025
+            ],
+            [
+              116.343132,
+              40.0265
+            ],
+            [
+              116.347188,
+              40.0265
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-N03",
+      "properties": {
+        "id": "LU-N03",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "05",
+        "name_zh": "众智园安全验证片｜产业协作与设施运维界面",
+        "name_en": "Zhongzhiyuan Safe Validation District | Industry Collaboration and Facility-Operations Edge",
+        "responsibility_district": "N",
+        "interface_role": "operations_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 993850.673
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351556,
+              40.0265
+            ],
+            [
+              116.351556,
+              40.0025
+            ],
+            [
+              116.347188,
+              40.0025
+            ],
+            [
+              116.347188,
+              40.0265
+            ],
+            [
+              116.351556,
+              40.0265
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-N04",
+      "properties": {
+        "id": "LU-N04",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "land_use_code": "1401",
+        "name_zh": "众智园安全验证片｜遗址叙事与蓝绿公共界面",
+        "name_en": "Zhongzhiyuan Safe Validation District | Heritage Narrative and Blue-Green Public Edge",
+        "responsibility_district": "N",
+        "interface_role": "public_realm_edge",
+        "design_revision": "v3_duty_section_matrix",
+        "official_parcel": false,
+        "usage_note": "Exact-cover conceptual responsibility cell only; not a cadastral parcel, land-use approval or control line.",
+        "area_sqm_declared": 702236.725
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35398493150686,
+              40.0025
+            ],
+            [
+              116.351556,
+              40.0025
+            ],
+            [
+              116.351556,
+              40.0265
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.35398493150686,
+              40.0025
             ]
           ]
         ]

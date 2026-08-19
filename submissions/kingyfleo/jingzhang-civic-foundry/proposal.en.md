@@ -7,10 +7,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "CC-BY-SA-4.0"
-summary: "Jing-Zhang Civic Foundry uses real site anchors, three urban tissues, five street sections and five statutory delivery gates to bind cultural evidence, civic commissions, public prototypes and twelve-month adopt-or-exit decisions into a reviewable spatial and civic-product conversion chain."
+summary: "Jing-Zhang Civic Foundry uses real anchors, eight global cases, twelve AI scenarios, three deep tests, seven journey personas, and five statutory hold points to bind cultural evidence, civic commissions, prototypes, and adopt-or-exit decisions into an auditable spatial and civic-product conversion chain."
 tracks: ["ai-public-services", "jingzhang-heritage-narrative", "enterprise-services-ecosystem"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v7.0"
+iteration: "v7.5"
 ---
 
 # JING-ZHANG CIVIC FOUNDRY
@@ -30,6 +30,8 @@ Jing-Zhang Civic Foundry makes the city a co-author of AI. Residents and frontli
 Culture is not post-production packaging. It is the conversion infrastructure that connects technology with local knowledge, creators, distribution, public understanding, market validation and public reinvestment. The outcome is not an "AI landmark" but three maintainable civic products: **reusable cultural content packs, reversible public-experience modules and sustainable urban services**. The non-negotiable baseline remains a free, continuous, shaded and accessible park. [depth:overall_spatial_structure] [metric:public_safeguard_count]
 
 ![Jing-Zhang Civic Foundry: from AI output to civic value](assets/figures/site-overview.en.png)
+
+The v7.5 overview uses one EPSG:4326 working coordinate system to place public OSM roads, rail, water, buildings, and campuses behind three distinct scope tiers: the approximately 43.6-square-kilometre research scope, approximately 11.4-square-kilometre overall-design scope, and three key areas totalling approximately 368.4 hectares. Xuezhiyuan/Zhongzhiyuan, Dongsheng Building, Dazhongsi Station, and Juesheng Temple remain public background anchors. Every scope line is provisional working geometry or a text extent, **not an official redline, ownership boundary, RDP polygon, or approval**. The non-overlap between the public AI Origin core anchor and provisional key-area geometry is shown rather than hidden, pending official calibration. [source:OSM-CONTEXT-20260817] [source:SITE-ANCHOR-LEDGER-V7]
 
 ### From railway capacity to civic conversion capacity
 
@@ -115,7 +117,7 @@ The complete evidence index is `visual/assets/review-evidence-index.json`; it or
 
 ## Design Basis and Source Inventory
 
-The formal basis comprises announcements by relevant Beijing authorities, the Agent Taskbook, and the repository site package. Facts about Jing-Zhang history and the railway heritage park rely only on public information issued by Beijing cultural-heritage and landscape authorities. Seven international cases are used only to extract mechanisms; their density, governance, finance, market, and ownership conditions are not projected onto Beijing. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
+The formal basis comprises announcements by relevant Beijing authorities, the Agent Taskbook, and the repository site package. Facts about Jing-Zhang history and the railway heritage park rely only on public information issued by Beijing cultural-heritage and landscape authorities. Eight global cases are used only to extract mechanisms; their density, governance, finance, market, and ownership conditions are not projected onto Beijing. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
 
 Public information released by the Beijing Municipal Government in July 2026 describes an approximately nine-kilometre green-corridor programme connecting around seventy communities and serving about 450,000 residents; procurement records establish specific implementation sections between Zhichun Road and Xizhimen. The design therefore treats programme-level public value as established and verifies physical continuity section by section. [source:JZ-PARK-PHASE2-2026] [source:JZ-PARK-PHASE2-IMPLEMENTATION]
 
@@ -260,19 +262,34 @@ This proposal does not describe cultural advantage as running events or communic
 | Deployable public-experience module | Reversible components, interaction script, human-service script, accessibility and safety notes | Nine Urban Rooms, climate gardens, Civic Premiere Ground | Deployment across neighbourhoods and seasons without copying landmark buildings | Does not displace movement, removable, non-digital backup |
 | Sustainable urban service | AI capability, staff, data-minimisation rules, operations, and exit plan | Communities, parks, transit interfaces, public institutions | Procurement, operation, or open tool after adoption review | Human takeover, accountability, no harm to basic service upon shutdown |
 
-### 4. Seven international cases provide mechanisms only
+### 4. Eight global cases provide mechanisms, not copied conditions
 
 | Case | Mechanism extracted | Jing-Zhang translation | Explicitly not copied |
 | --- | --- | --- | --- |
-| Kendall Square | Innovation institutions and public life jointly shape a district | Research courtyards connect to daily life through Nine Urban Rooms | Development intensity and market conditions [source:CASE-KENDALL-SQUARE] |
-| one-north | Research, media, learning, and living are connected through continuous operation | Cultural production and AI research share public ground floors and service networks | Park governance system [source:CASE-ONE-NORTH] |
-| Seoul AI Hub | City-scale professional organisation supports talent and ventures | Multi-year Civic Commission and Conversion Office | Policy authority and funding scale [source:CASE-SEOUL-AI-HUB] |
-| Station F | Programmes, partners, and community matter more than a singular object | Courtyard hosts change with project portfolios; operation precedes permanent construction | Commercial scale and ownership model [source:CASE-STATION-F] |
-| Quartier des Spectacles | Public space supports both festivals and ordinary life | Daily, small-production, and premiere states can switch | Event frequency and tourist volume [source:CASE-QUARTIER-SPECTACLES] |
-| Ars Electronica Futurelab | Art, technology, and social questions are developed together | Cultural practitioners join problem definition, prototyping, and public explanation | Institutional brand and structure [source:CASE-ARS-ELECTRONICA] |
-| Maria 01 | Adaptive reuse supports an innovation community | Conceptual courtyard hosts follow retain, adapt, then add | Ownership, structural, and engineering conditions [source:CASE-MARIA-01] |
+| Punggol Digital District, Singapore | Campus, industry, public space, and district operation form a plug-in living lab; simulate before field testing | Link Zhongzhiyuan validation, AI Origin co-making, and city trial in a rollback-ready chain | Investment, sensor density, authority, suppliers [source:CASE-PUNGGOL-JTC] |
+| Smart Kalasatama, Helsinki | Agile pilots, co-design, and resident participation in a lived neighbourhood | Start with small, short, removable public questions while normal service stays online | Local performance numbers, community structure, climate targets [source:CASE-KALASATAMA-FVH] |
+| Mila / Mile-Ex, Montréal | University alliances, interdisciplinary teams, and responsible AI form a knowledge ecosystem | Give AI Origin cultural/factual calibration, ethics review, and co-author space | Talent counts and global rankings [source:CASE-MILA] |
+| Vector Institute / MaRS, Toronto | Research, training, enterprise adoption, and public-sector capability connect | Add a civic-product translation table, service wing, and post-adoption review | Funding scale, partner lists, industrial statistics [source:CASE-VECTOR] |
+| Hazelwood Green RIC, Pittsburgh | Industrial-site renewal combines indoor/outdoor robot testing, making, and community education | Make Zhongzhiyuan isolatable, observable, and pausable | Jing-Zhang ownership, heritage value, development scale [source:CASE-HAZELWOOD-CMU] |
+| Sangam Testbed, Seoul | Routes, time windows, and public interfaces bound municipal autonomous-mobility trials | Require geofencing, operating windows, a human safety officer, and exit route | Seoul routes and vehicle conditions [source:CASE-SEOUL-SMG] |
+| Zhangjiang AI Island / Innovation Town, Shanghai | R&D, application settings, public display, and daily amenities create proximity | Bind each enabling factor to a spatial host, service role, and validation setting | Company counts, subsidy, filing, or investment promises [source:CASE-ZHANGJIANG-SH] |
+| Hetao Shenzhen-Hong Kong Innovation Zone | Research collaboration, conversion, standards interfaces, and full-factor services work together | R09 translates international rules, standards, and conversion interfaces | Cross-border policy, tax, finance, or data conditions [source:CASE-HETAO-SZ] |
 
-### 5. Five Regional Interfaces: Jing-Zhang converts capability rather than competing for the same title
+Each case is recorded through six fields—mechanism, spatial host, governance, public interface, Jing-Zhang transfer, and a do-not-copy boundary. The count rises from seven to eight without replacing the project's own proposition. [metric:global_case_count]
+
+### 5. Twelve enabling factors must each have a spatial host, entry gate, and exit
+
+| Factor group | Spatial host | Entry condition | If evidence or performance fails |
+| --- | --- | --- | --- |
+| Land and space | Three key areas; yard, arcade, workshop, test ground, premiere room | Official boundary, ownership, use, survey, structure, fire, accessibility | Remain unknown; return to concept; no demolish/retain decision |
+| Technology, compute, data | R08, professional-service wing, R03/R09 | Maturity and owner; load/energy/procurement; lawful minimum data and expiry | Closed test, compliant external service or manual process; delete data and stop |
+| Talent, capital, professional service | R06, service wing, R09 | Real jobs and public need; open procedure and disclosure; law/IP/standard/ethics review | Public service first; no amount or exclusivity; role only until appointed |
+| Testing, culture, standards | Three Fields, Xiaoyue River wing, R03/R09, G0-G4 | Baseline, owner, stop and rollback; evidence/rights/pay; applicable standards and human judgement | Close test, remove content, halt escalation, enter professional review |
+| Operation and maintenance | R01/R07, staffed windows, logistics route | Staffing, lifecycle cost, complaint, restoration, exit reserve | AI exits; human service, ordinary access, and daily public space remain |
+
+These are not claims of existing policy, institutions, or funding. They test whether an enabling factor changes space and delivery. A factor without a host, gate, accountable human, and exit cannot enter the primary plan. [metric:factor_support_count]
+
+### 6. Five Regional Interfaces: Jing-Zhang converts capability rather than competing for the same title
 
 Regional coordination is stated as input–Jing-Zhang conversion–output–gate, not as a list of claimed partners. All five interfaces remain proposals for confirmation by relevant parties; no existing partnership, data exchange, finance, or policy authority is implied. [metric:regional_interface_count] [data:visual/assets/regional-interface-ledger.json]
 
@@ -412,6 +429,8 @@ The design sequence is retain–repair–reuse. Survey ordinary Chengfu Road fro
 
 Every block drawing must show whether plots are consolidated, courtyards stay permeable, current users and small merchants can remain, quiet life is protected by time, and loading stays off the footway. Megastructures, whole-street closure and brand halls that displace daily frontage fail G2. Cultural evidence, co-authorship, material/model licences, data minimisation and non-digital service are completed here; unresolved rights prevent a Dazhongsi premiere. [depth:three_key_area_detailed_design]
 
+v7.5 advances “Commission Arcade–Co-Author Court–Visible Workshop” as a **conceptual spatial prototype / NOT TO SCALE**, not a false 1:1000 drawing. On public OSM context it shows existing streets and buildings, a no-scan public route, quiet bypass, low staffed window, public/production boundary, and separate loading, logistics, and fire access. Its street–arcade–court–workshop section coordinates canopy, trees, thresholds, sightlines, and time-sharing. Every dimension is a design recommendation; survey, ownership, structure, fire, tree, and footfall baselines remain pending. Morning receives real problems, afternoon co-produces, and evening allows public trial or refusal. If AI exits, the arcade, court, workshop, bypass, and staffed window still work. [depth:three_key_area_detailed_design] [assumption:A-LEGAL-GATE-001]
+
 ### C. Dazhongsi Civic Premiere Ground
 
 This is a **station–city–heritage composite district** with high public exposure and low-risk premiere. Dazhongsi Station, the Bluejing project and Fangheng/Zhongkun frame real urban interfaces, but the 3.95 ha project is not the 72 ha key area. Juesheng Temple triggers a quiet relationship and an authoritative heritage-data gate; no protection line is invented. [source:ANCHOR-DAZHONGSI-BLUEJING-2026] [source:ANCHOR-JUESHENG-TEMPLE] [data:geometry/key_areas.geojson#PROV-KEY-003]
@@ -455,6 +474,30 @@ The twelve scenarios are not a feature list. They are prototypes of civic contra
 | SC-11 | Improve heat, rain, and sound conditions; daily users and landscape operators | Sensor analysis and scheduling suggestions | Nine climate gardens; adjustment log | Comfort and maintenance baseline / no facial tracking in exchange for environmental data |
 | SC-12 | Decide whether long-term adoption is warranted; public, auditors, procurers | Aggregate non-personal operating evidence | Civic Adoption Ledger; annual review | Reuse, task, trust, cost, transferability / scale down or exit if targets fail |
 
+### Three tests compare options and change spatial objects
+
+| Test | Baseline and alternatives | Recommended | Limited AI role and human review | Spatial change / failure rollback |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan last-mile robot | Manual trolley baseline; A all-day shared route; B time window, geofence, closable gate, safety officer, observation buffer | B, subject to equipment and site evidence | AI simulates conflicts, blind points, and timing only; safety, fire, operation, and user representatives sign off | Test loop, gate, emergency stop, gallery, loading window; breach or signal loss closes gate and restores manual logistics |
+| AI Origin heat comfort and shade | Existing baseline pending; A continuous fixed canopy; B segmented reversible canopy, tree-growth zone, quiet bypass, timed activity | B, subject to canopy, heat, and use survey | AI compares sun, heat exposure, and schedules; landscape, architecture, access, operation, and residents review | Canopy points, tree beds, seating, paths, hours; fire/access/tree conflict removes canopy and restores route |
+| Dazhongsi low-risk premiere | Daily movement and quiet baseline pending; A all-day large screen; B small removable stage, limited hours, human explanation, no-AI experience | B, subject to heritage, traffic, and site authority | AI assists reviewed multilingual/accessibility interpretation and non-identifying flow comparison; heritage, transport, curatorial, access, operations, and public review | Stage, entry, seating, wayfinding, hours; heritage/movement/quiet conflict removes equipment and restores civic living room |
+
+Each test declares a baseline gap, two options, adoption condition, failure threshold, and rollback object. Without field data, AI returns variables to measure rather than a performance claim. [metric:deep_test_count]
+
+### Seven journey personas test complete service, not people
+
+| User | Goal and primary friction | Required spatial/service consequence | Equivalent route after refusing AI |
+| --- | --- | --- | --- |
+| Nearby resident/frontline institution | Turn a daily problem into an accountable task; resist technical reframing | Commission Arcade, staffed window, quiet bypass, public status | Paper intake, phone follow-up, withdrawal |
+| Student/young developer | Find real problems, mentoring, tests, failure review; prototypes lack responsibility | Open desk, controlled test gate, failure wall | Workshop, paper checklist, human mentor |
+| Research/engineering/venture team | Convert research into a safe civic product; standards, data, sites are fragmented | Standards table, test yard, gallery, professional advice | Expert review and physical test |
+| Cultural practitioner/IP holder | Correct citation, credit, licence, fair return; resist culture-as-skin | Provenance desk, removable display, rights advice | Human curation and paper source book |
+| Older/disabled/digitally excluded user | Move, understand, and receive service without a device; scanning, noise, thresholds | Continuous bypass, seating, low window, tactile/high-contrast wayfinding | Complete human and paper service; no account or tracking |
+| Operator/maintainer/safety staff | Understand, supervise, stop, restore; maintenance responsibility comes late | Logistics line, control point, plant/repair space, paper manual | Human inspection and mechanical stop |
+| International visitor/collaborator | Understand the Jing-Zhang proposition, rules, and entry point; avoid a technology-only story | Bilingual evidence wall, international desk, public meeting place | Bilingual paper map and human guide |
+
+These seven journeys test goal, path, friction, spatial consequence, no-AI route, and verification. They differ from the eight ecosystem co-author roles below: journeys verify use, roles verify division of work. Neither creates personal scoring or automatic profiling. [metric:journey_persona_count]
+
 ## Cultural Production, Rights Boundaries, and Market Mechanism
 
 ### 1. Five linked ledgers: every project must answer five questions
@@ -484,6 +527,12 @@ Every cultural output carries four labels: verifiable historical fact; local kno
 | New AI culture | Publish model capability and human responsibility together, making technology understandable, refusable, and correctable | Status desk, staffed window, stop/exit sign, twelve-month adoption ledger | AI STATUS label shows purpose, data, risk, accountability, refusal, and exit |
 
 The layers mix at each real interface rather than form a linear exhibition from past to future. Railway memory sits beside neighbourhood life; open innovation sits beside small commerce; every AI prototype sits beside staffed service and a failure record. Culture is therefore a production rule for reading space, licensing content, and adopting results—not a theme applied to technology.
+
+v7.5 further separates site culture into verifiable fact, allowed inference, spatial translation, and forbidden overreach. Jing-Zhang engineering history may support an ethic of survey, trial, review, and maintenance, but never an invented heritage location. The railway heritage public-space programme may support continuous access and urban stitching, but not a claim that the whole line is complete or an exact redline. [source:CULTURE-JINGZHANG-HISTORY] [source:CULTURE-JINGZHANG-PARK]
+
+Juesheng Temple history and heritage status may support quiet, reversible, time-limited peripheral interpretation, but not a self-drawn protection zone or an AI-branded bell icon. Zhongguancun innovation history may support open worktables, standards exchange, and failure archives, but not invented company partnerships. [source:CULTURE-JUESHENG-HISTORY] [source:CULTURE-ZGC-HISTORY]
+
+Public AI Origin context may support near-campus co-making, while the existing core, influence range, and 104.3-hectare key area remain distinct. “One Line, Three Fields, Nine Rooms” is explicitly this proposal's contemporary language, never rewritten as railway history. [source:CULTURE-AI-ORIGIN] [metric:culture_evidence_item_count]
 
 ### 4. Brands may fund collaboration, but cannot buy public rights
 
@@ -609,7 +658,7 @@ Four site anchors, five sections and three serial-vision sequences remain indepe
 
 The statutory register contains seventeen fields. [metric:statutory_control_field_count]
 
-Background research checks seven public cases; the provisional fabric contains thirteen zones; `making_line_length_m` remains a compatibility alias for the Civic Production Floor centreline so older review tools retain the evidence. [metric:global_case_count] [metric:land_use_zone_count] [metric:making_line_length_m]
+Background research checks eight public cases; the provisional fabric contains thirteen zones; `making_line_length_m` remains a compatibility alias for the Civic Production Floor centreline so older review tools retain the evidence. [metric:global_case_count] [metric:land_use_zone_count] [metric:making_line_length_m]
 
 Version 5 retains one machine-readable Conversion Accountability Chain and six delivery packages as auditable structures; neither count implies deployment, budget or government authority. [metric:conversion_accountability_chain_schema_count] [metric:delivery_package_count]
 

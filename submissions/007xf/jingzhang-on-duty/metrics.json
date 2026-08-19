@@ -20,12 +20,12 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 69910.813,
+      "value": 30957.656,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(conceptual_program_envelope_area, EPSG:4548)",
+      "formula": "sum(12 conceptual courtyard prototype envelope areas, EPSG:4548)",
       "confidence": "low",
       "assumptions": [
         "Programme envelopes are not confirmed building footprints."
@@ -45,24 +45,24 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.003857,
+      "value": 0.002178,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "conceptual_public_space_area / provisional_site_area",
+      "formula": "three conceptual public duty courts / provisional site area",
       "confidence": "low",
       "assumptions": []
     },
     "road_network_length_m": {
       "status": "known",
-      "value": 13237.185,
+      "value": 18836.033,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"
       ],
-      "formula": "sum(conceptual_service_alignment_length, EPSG:4548)",
+      "formula": "sum(1 duty spine + 6 service seams + 3 accessible duty loops, EPSG:4548)",
       "confidence": "low",
       "assumptions": []
     },
@@ -240,6 +240,196 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "Ownership, condition survey and retain-renovate-demolish evidence are not present."
+    },
+    "land_use_responsibility_cell_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "proposal.md"
+      ],
+      "formula": "3 responsibility districts * 4 cross-corridor interfaces",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "building_prototype_part_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "proposal.md"
+      ],
+      "formula": "3 duty courts * 4 reversible programme wings",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "mobility_service_link_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "1 duty spine + 6 service seams + 3 accessible duty loops",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "duty_state_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.duty_contract_v3.states)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "shift_packet_field_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(implementation_readiness.shift_packet.fields)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "delivery_package_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.delivery_portfolio)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "stakeholder_role_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.stakeholder_governance.roles)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "regional_exchange_interface_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.regional_exchange_matrix)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "public_evidence_journey_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(sunny, rain_or_heat, night_or_outage journeys)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "planning_ai_workbench_task_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.planning_ai_workbench)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "annual_program_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(annual operating programme entries)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "ecosystem_factor_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.ecosystem_handover_map)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "public_component_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.public_component_library)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "culture_story_stop_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.culture_story_stops)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "innovation_conversion_gate_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.innovation_conversion_pipeline)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "event_brand_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "risk.json",
+        "proposal.md"
+      ],
+      "formula": "count(implementation_readiness.event_brand_system)",
+      "confidence": "high",
+      "assumptions": []
     }
   }
 }

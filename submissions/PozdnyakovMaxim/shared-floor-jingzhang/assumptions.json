@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-BND-001",
+      "status": "active_design_assumption",
+      "statement": "The supplied overall and key-area polygons are provisional clipping envelopes, not official redlines.",
+      "impact": "All design layers, positions and denominator-based metrics must be rebound and recalculated after official polygons arrive."
+    },
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "FAR, height, density, setbacks, roads, ownership, heritage controls, utilities and fire requirements are not available.",
+      "impact": "Statutory metrics remain unknown and no approval or development right is claimed."
+    },
+    {
+      "id": "A-PROTOTYPE-001",
+      "status": "active_design_assumption",
+      "statement": "Three normalised architectural reference cells are placed near provisional key-area centroids.",
+      "impact": "They test spatial relationships and are not parcel-specific designs."
+    },
+    {
+      "id": "A-CLIMATE-001",
+      "status": "active_design_assumption",
+      "statement": "NASA POWER monthly values remain a coarse climate seed; the separate direct-sun study uses the provisional geometry centroid, NREL SPA, typed 4.2 m roofs, seasonally deployed cassettes and hypothetical tree-crown states.",
+      "impact": "Results support geometric massing sensitivity only, not statutory insolation, daylight, energy, wind, drainage, UTCI/MRT, structural or operating compliance."
+    },
+    {
+      "id": "A-LIFE-SAFETY-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Reference grids, heights and sections have not undergone local structure, fire, egress, MEP or geotechnical design.",
+      "impact": "All life-safety and construction decisions require qualified local professionals."
+    },
+    {
+      "id": "A-OPERATIONS-001",
+      "status": "active_design_assumption",
+      "statement": "AI services begin as controlled trials with an accountable operator, human handoff, physical stop and retirement state.",
+      "impact": "No autonomous public release or government operating commitment is implied."
+    },
+    {
+      "id": "A-SECTION-001",
+      "status": "active_design_assumption",
+      "statement": "The shared-floor widths are target envelopes that compress according to surveyed conditions.",
+      "impact": "Step-free walking, emergency access and drainage outrank robot service where width is insufficient."
+    },
+    {
+      "id": "A-MOBILITY-001",
+      "status": "pending_field_survey",
+      "statement": "Seven transverse lines are interface test positions; station exits, traffic flows and road redlines are unverified.",
+      "impact": "Detailed alignment waits for station, street, accessibility and seven-day movement surveys."
+    },
+    {
+      "id": "A-DRAINAGE-001",
+      "status": "pending_engineering_model",
+      "statement": "Rain gardens and temporary storage are spatial reservations without hydraulic sizing.",
+      "impact": "Depth, volume, overflow and pipes require topography, soil, groundwater and municipal drainage data."
+    },
+    {
+      "id": "A-OPEN-BUILDING-001",
+      "status": "active_design_assumption",
+      "statement": "The 100+ / 100 / 25–40 / 5–20 / ≤5-year bands are participant-authored value-retention and replacement-cycle targets for public ground, support, service chassis, infill and AI equipment.",
+      "impact": "They organise phasing and detailing but are not certified service lives; survey, system selection and local engineering may revise them."
+    },
+    {
+      "id": "A-CHINESE-LINEAGE-001",
+      "status": "active_design_assumption",
+      "statement": "The terms jian, yuan, xiang, lang and threshold describe contemporary modular, civic and climatic spatial operations rather than a reconstruction of historical form.",
+      "impact": "No pseudo-historical silhouette, material claim or borrowed view is authorised without site and heritage evidence."
+    },
+    {
+      "id": "A-SOCIAL-BASELINE-001",
+      "status": "pending_field_survey",
+      "statement": "District statistics and Beijing studies frame user groups but do not establish flows, income, disability, gate access, safety perception or operating demand within the project boundary.",
+      "impact": "Fifteen social rehearsals remain hypotheses until seven-day observation, accompanied route walks, gate audit and operator/community interviews are completed."
+    },
+    {
+      "id": "A-CAMPUS-GATES-001",
+      "status": "pending_operator_agreement",
+      "statement": "Negotiated Gates open only selected public-side routes at agreed times; they do not imply unrestricted access to campuses or residential compounds.",
+      "impact": "Each gate requires owner, university, community, security, emergency and accessibility agreement before implementation."
+    },
+    {
+      "id": "A-DAZHONGSI-FIRST-BAY-001",
+      "status": "active_design_assumption",
+      "statement": "The Dazhongsi overlay uses the midpoint of two OSM station records as a non-authoritative anchor. A literal station-centred 148 m reference frame is rejected; one 36 m test-fit envelope at +114 m east / -12 m north contains only an 8 m covered bay and 16 m reversible ground patch.",
+      "impact": "This is geometry-only non-intersection, not site selection, vacancy, title, buildability or permission. Official redline, ownership, metro protection, surveyed accessibility, utilities, geotechnics, fire and operator evidence can discard or rebind the patch."
+    }
+  ]
+}

@@ -56,6 +56,38 @@
       "statement_zh": "三期图层仅表达实施先后，不代表已承诺日期、资金、权属协议或建设审批。",
       "impact": "Delivery scope and timing remain subject to statutory approval, land and operator agreements, funding and utility capacity.",
       "resolution_trigger": "Convert concept phases into a governed project list only after responsible entities and dependencies are confirmed."
+    },
+    {
+      "id": "A-PILOT-001",
+      "status": "protocol_only_not_authorized_not_run",
+      "statement": "The proposed 90-day sequence is a test protocol, not an authorized schedule; no operator, site permission, participant cohort, procurement, insurance, budget or field result is confirmed.",
+      "statement_zh": "拟议 90 天序列只是测试协议，不是获授权日程；运营主体、场地许可、参与者、采购、保险、预算和现场结果均未确认。",
+      "impact": "Only protocol completeness and synthetic desktop checks may be reported as known; capacity, cost, service quality, safety performance and public acceptance remain unknown.",
+      "resolution_trigger": "A future authorized sponsor must register approvals, RACI acceptance, baseline, participant safeguards, quotes and stop authority before any field window."
+    },
+    {
+      "id": "A-VALIDATION-001",
+      "status": "proposed_go_no_go_criteria_only",
+      "statement": "The three industry-validation protocols define proposed baselines, instruments, acceptance and stop logic but contain no observed field measurements or certified conclusions.",
+      "statement_zh": "三项产业验证只定义拟议基线、仪器、验收与停止逻辑，不包含现场观测值或认证结论。",
+      "impact": "Protocol thresholds cannot be described as achieved performance, and site-dependent acoustic, safety, accessibility and device results remain unknown.",
+      "resolution_trigger": "Qualified reviewers must set applicable thresholds, approve a site and sample, preserve raw records and sign the result before any performance claim."
+    },
+    {
+      "id": "A-REGIONAL-001",
+      "status": "conceptual_interfaces_only",
+      "statement": "Links to northern communities, Future Science City, Huairou Science City, Beijing E-Town and the Jing-Jin-Ji network describe exchange objects and decision boundaries only.",
+      "statement_zh": "北部社区、未来科学城、怀柔科学城、经开区和京津冀接口只描述交换对象与决定边界。",
+      "impact": "No partnership, route, service integration, commuting flow, housing supply, investment or institutional commitment is claimed.",
+      "resolution_trigger": "Replace each conceptual interface with authorized counterpart roles, applicable rules, data agreements and independently confirmed receiving paths."
+    },
+    {
+      "id": "A-BRAND-OPS-001",
+      "status": "proposed_stewardship_not_adopted",
+      "statement": "Brand stewardship, service levels, annual Relay Week and international communication checks are proposed governance assets without an appointed steward or recurring budget.",
+      "statement_zh": "品牌保管、服务等级、年度居业接力周和国际传播检查均为治理建议，尚无受任保管者或持续预算。",
+      "impact": "The package can define status labels, duties and stop conditions but cannot claim an operating programme, response time or annual event.",
+      "resolution_trigger": "An authorized entity must appoint accountable roles, approve resources, publish service clocks and obtain event permissions before operation."
     }
   ]
 }

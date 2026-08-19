@@ -1,0 +1,97 @@
+{
+ "receipt_file_id": "seb-change-receipt-v05",
+ "receipt_schema_id": "seb-change-receipt",
+ "receipt_schema_version": "0.3.0",
+ "schema_ref": "visual/assets/seb-change-receipt-sample.json",
+ "note_zh": "v0.5 系变更回执：一版本一回执（009=v0.5.0）。本版变更来源为维护方兑现包内既有登记的待议项——正文自 v0.4 起把双联交接结构的升格提议按版本治理挂账为「v0.4 之后的待议项」，同期服务桌开办条件档案把四位序登记为「已确定的设计判据」而包内无任何判据载体。属「维护方自查」类驱动，治理回路第五次转动（前四次：桌面推演自查 v0.2、采用反馈 v0.3.0、独立审查 v0.3.1、外部方案对比 v0.4.0）。本版不引入任何新的设计主张：第六组件的全部字段与判据由包内既有素材推出，推出来源逐条登记。",
+ "note_en": "v0.5-series change receipts: one receipt per version (009 = v0.5.0). This version discharges an open item the package already registered — from v0.4 the prose carried the promotion of the two-part handover structure under version governance as an item pending beyond v0.4, while the service-desk readiness file registered the four stations as a settled design criterion with no criterion carrier anywhere in the package. The driver is a maintainer self-audit, the fifth turn of the governance loop (after the tabletop self-audit of v0.2, adoption feedback for v0.3.0, independent review for v0.3.1, and external comparison for v0.4.0). The version introduces no new design claim: every field and criterion of the sixth component is derived from material already in the package, with each derivation registered.",
+ "receipts": [
+  {
+   "receipt_id": "CR-2026-08-18-009",
+   "issued_at": "2026-08-18",
+   "gate_round": "not_applicable",
+   "node_id": "all",
+   "raised_by": {
+    "role_group": "维护方版本治理自查（对包内两处既有登记的兑现核对：正文交接段挂账的待议项，与服务桌开办条件档案 GD-6 对判据／资源分离的登记）",
+    "role_group_en": "the maintainer's version-governance self-audit, checking two standing registrations for discharge: the item the prose's handover paragraph carried as pending, and readiness item GD-6's separation of settled criteria from outstanding resources",
+    "disclosure": "按包内署名，不记录个人身份信息 / per in-package attribution, no personal identifying data"
+   },
+   "opinion": {
+    "zh": "两处条文写了而判据没有。其一，人工接管在基准里只到「写下一个可被找到的角色」为止（node_schema.human_handoff），接手本身在运行层留下什么痕迹无人可判——一份把未决项在交接时清空、由同一角色对自己签署的交接单，在 v0.4.0 文本下完全合规。其二，服务桌四个位序被开办条件档案明文登记为「已确定的设计判据」，但该判据只存在于 PUBLIC-007 的要素属性与档案的散文描述里，没有任何实现读它，「顺序是判据而不是布置建议」这句话因此无处兑现。",
+    "en": "In two places the text exists and the criterion does not. First, the baseline takes human takeover only as far as writing down a findable role (node_schema.human_handoff), leaving nothing to rule on what the takeover itself records: a slip whose open items are cleared at handover and which one role signs to itself is fully compliant under the v0.4.0 text. Second, the four service-desk stations are registered in the readiness file as a settled design criterion, yet that criterion lives only in the feature attributes of PUBLIC-007 and the file's prose, with no implementation reading it — so the sentence that the order is a criterion and not a layout suggestion has nowhere to land."
+   },
+   "finding": {
+    "zh": "逐项对照 v0.4.0 文本坐实为规范设计缺口而非实现缺陷：v0.4.0 的六个可判层面（节点 schema、评分口径、等级定义、判定规则、AI 权限边界、生命周期字段组）中没有任何一处涉及交接单据；四位序在 seb-spec.json 中零出现；正文交接段自身写明「本版不改动基准条文」，即该缺口是被登记而非被遗漏。另查明：交接结构与四位序两件事在包内同属大钟寺 JZ-04 一条线索（PUBLIC-007 承接 OP-04，服务桌安装其上），可由同一组件一并封闭，不需要两次版本递增。",
+    "en": "Checked item by item against the v0.4.0 text and confirmed as a specification gap rather than an implementation defect: none of the six rulable surfaces of v0.4.0 (node schema, scoring definitions, level definitions, decision rules, AI authority boundary, lifecycle field group) touches a handover slip, and the four stations appear nowhere in seb-spec.json; the prose's own handover paragraph states that the edition changes no baseline text, so the gap was registered rather than overlooked. Further established: the handover structure and the four stations belong to one thread in the package — JZ-04 at Dazhongsi, where PUBLIC-007 carries OP-04 and the desk sits on it — and can be closed by one component without two version increments."
+   },
+   "verdict": "adopted",
+   "change_made": {
+    "summary_zh": "新增第六组件「双联交接台账」（handover_ledger），基准组件数由五增至六：十三个字段，七类 constraint_machine_rule，九个违例码。判据为——交出方与接收方须为不同角色（HANDOVER_ROLES_NOT_SEPARATED）；两方各自署名（HANDOVER_SIGNATURE_MISSING）；未决项随单移交、不得在交接时清空（HANDOVER_OPEN_ITEMS_CLEARED）；接收方在接收／拒收／暂缓三项中选一（HANDOVER_RECEIPT_ACTION_INVALID）；拒收与暂缓须写明理由且上一责任方继续在岗（HANDOVER_REFUSAL_UNSTAFFED）；必填字段缺失记 HANDOVER_FIELD_MISSING。服务桌四位序（SD-1 人工窗口→SD-2 多通道信息位→SD-3 AI 开关→SD-4 退出回执位）作为位序判据入条文：位序不可调换（HANDOVER_STATION_SEQUENCE_INVALID）、人工窗口先于一切 AI 构件设立（STAFFED_WINDOW_NOT_FIRST）、退出回执位在最后一步之后仍然在场（EXIT_RECEIPT_STATION_ABSENT）；三判据以 service_desk_present 为适用前提，不向没有服务桌的节点摊派。样例由四十条扩至六十条：十个 OP 节点各一条交接实例（五个必填字段逐字取自 geometry/constraints.geojson 并经来源对齐比对，各字段推出来源逐条登记在 handover_ledger.provenance），十条按 risk.json 风险注入的缺陷变体（每条只改一处判据输入，并逐字引用该风险的 pause_threshold）。桌面校验器升至 0.5.0 并执行六个组件；链复演器输入类型不含交接台账，九码结构性不触发，本版零改动并已复跑核实。v0.4.0 规范全文按字节入包为 visual/assets/seb-spec-v0.4.0.json 并登记哈希。",
+    "summary_en": "A sixth component, the two-part handover ledger, takes the baseline from five components to six: thirteen fields, seven constraint_machine_rule types and nine violation codes. The criteria are that the handing-over and receiving parties must be different roles (HANDOVER_ROLES_NOT_SEPARATED); each signs (HANDOVER_SIGNATURE_MISSING); open items travel on the slip and are never cleared at handover (HANDOVER_OPEN_ITEMS_CLEARED); the receiver signs exactly one of accept, refuse or hold (HANDOVER_RECEIPT_ACTION_INVALID); a refusal or hold states a reason and keeps the previous party on duty (HANDOVER_REFUSAL_UNSTAFFED); and a missing required field records HANDOVER_FIELD_MISSING. The four service-desk stations (SD-1 staffed window, SD-2 multi-channel information point, SD-3 AI switch, SD-4 exit-receipt station) enter the text as sequence criteria: the order may not be rearranged (HANDOVER_STATION_SEQUENCE_INVALID), the staffed window is established before any AI component (STAFFED_WINDOW_NOT_FIRST), and the exit-receipt station is present after the last step (EXIT_RECEIPT_STATION_ABSENT); all three are conditioned on service_desk_present and are never levied on a node without a desk. The fixtures grow from forty to sixty: one handover instance per OP node (five required fields verbatim from geometry/constraints.geojson and compared by source alignment, every field's derivation registered in handover_ledger.provenance) and ten defect variants injected from the risk register (each altering exactly one criterion input and quoting that risk's pause_threshold verbatim). The tabletop checker rises to 0.5.0 and executes all six components; the chain replayer's input type holds no handover ledger, so the nine codes cannot fire there, and it needed no change, which was verified by replay. The full v0.4.0 spec ships byte-exact as visual/assets/seb-spec-v0.4.0.json with its hash registered."
+   },
+   "not_adopted_reason": {
+    "zh": "verdict 为 adopted，本字段登记明确不追的三项，理由随之：①未决项不写条数——交接台账只声明有无，写成条数会在样例集内引入第一个计数，破坏 contains_no_measurement_values 的承诺与「分母只声明类别是否被声明」的表达纪律；②不对 handing_over_role 施加角色词表判据——角色词判据已由 node_schema.human_handoff 承担，在两处各设一关会使采用方的 adopter_lexicon 机制在两处行为分叉，同一份词表可能在一处通过、另一处不通过；③不把「两个不同写法指向同一个人」纳入机器判据——判据只裁取值是否字面相同这一机器可判下限，实质同一性属登记环节的人工复核，机器不代其结论。",
+    "en": "The verdict is adopted; this field registers three things expressly not taken up, with reasons. First, open items carry no count: the ledger declares only presence, and a count would introduce the first number into the fixture set, breaking the contains_no_measurement_values promise and the discipline by which denominators declare whether a category was declared and never a sample size. Second, no role-token criterion is placed on handing_over_role: that criterion already sits on node_schema.human_handoff, and a second gate would fork the adopter_lexicon mechanism between two places, letting one lexicon pass at one gate and fail at the other. Third, two different wordings naming the same person is not made machine-decidable: the criterion rules only on the floor of literal equality, and substantive identity stays with human review at registration, where the machine does not stand in for the conclusion."
+   },
+   "failed_sample_register": {
+    "samples": [
+     {
+      "sample_id": "FS-063",
+      "description_zh": "v0.4.0 及此前各版对人工接管只判「是否写下一个可被找到的角色」：一份由同一角色对自己签署、并在交接时把未决项清空的交接单，在基准文本下完全合规",
+      "description_en": "from v0.4.0 back, human takeover was ruled only on whether a findable role was written down: a slip signed by one role to itself, with the open items cleared at handover, was fully compliant under the baseline text",
+      "status": "fixed",
+      "disposition_zh": "第六组件 handover_ledger 的角色分离、双署名与未决项随单移交三判据",
+      "disposition_en": "the role-separation, dual-signature and open-items-carry criteria of the sixth component"
+     },
+     {
+      "sample_id": "FS-064",
+      "description_zh": "服务桌四位序被开办条件档案登记为「已确定的设计判据」，包内却无任何判据载体：把 AI 开关排到人工窗口之前，在 v0.4.0 下不构成任何违例",
+      "description_en": "the four service-desk stations were registered in the readiness file as a settled design criterion with no criterion carrier in the package: putting the AI switch ahead of the staffed window violated nothing under v0.4.0",
+      "status": "fixed",
+      "disposition_zh": "四位序入条文为 canonical_station_sequence，位序判据按逐位比对执行",
+      "disposition_en": "the four stations enter the text as canonical_station_sequence and the sequence criterion compares position by position"
+     },
+     {
+      "sample_id": "FS-065",
+      "description_zh": "本次起草时查出的判据设计缺陷：「人工窗口先于一切 AI 构件设立」是设立时序要求，位序数组正确并不蕴含它——初稿只做数组比对，会放过「AI 构件先上线、人工窗口后补」这一恰恰是 R-04 停止条件所指的情形",
+      "description_en": "a criterion-design defect found while drafting: the staffed window preceding every AI component is a requirement on the order of establishment, which a correct sequence array does not imply — a draft comparing only the array would have let through the AI component going live first and the staffed window arriving later, precisely the situation R-04's stop condition names",
+      "status": "fixed",
+      "disposition_zh": "拆为两码：位序不符记 HANDOVER_STATION_SEQUENCE_INVALID，设立时序不符记 STAFFED_WINDOW_NOT_FIRST；样例 HL-N7 与 HL-N8 分别覆盖两侧",
+      "disposition_en": "split into two codes — HANDOVER_STATION_SEQUENCE_INVALID for the order and STAFFED_WINDOW_NOT_FIRST for the establishment sequence — with fixtures HL-N7 and HL-N8 covering one side each"
+     },
+     {
+      "sample_id": "FS-066",
+      "description_zh": "本次起草时查出的适用范围缺陷：位序三判据的初稿对全部十个节点必填，等于向九个没有服务桌的节点摊派一条它们无从满足的要求，会把判据的严厉误当判据的正确",
+      "description_en": "a scope defect found while drafting: a draft made the three sequence criteria required at all ten nodes, levying on nine nodes with no desk a requirement they could not satisfy and mistaking the severity of a criterion for its correctness",
+      "status": "fixed",
+      "disposition_zh": "增设 service_desk_present 为适用前提（required_when 与 precondition_path 均由基准声明），本包十条实例中仅 OP-04 触发",
+      "disposition_en": "service_desk_present becomes the precondition (both required_when and precondition_path stated by the baseline), and of the ten instances in this package only OP-04 engages it"
+     },
+     {
+      "sample_id": "FS-067",
+      "description_zh": "本次实测抓到的实现缺陷：校验器用 rule.trigger_path 表示「规则的适用前提」，而 handover_refusal_duty 规则自身已用同名键表示「处置触发字段」，键名冲突使暂缓判据被静默跳过——注入样例 HL-N5（暂缓却无理由、无人在岗）由应拒绝误判为通过，实测退出码 1、59/60",
+      "description_en": "an implementation defect caught in a live run: the checker used rule.trigger_path for a rule's precondition while the handover_refusal_duty rule already used the same key for its action trigger, and the collision silently skipped the refusal criterion — injected fixture HL-N5 (a hold with no reason and nobody on duty) was ruled accept instead of reject, the run exiting 1 at 59/60",
+      "status": "fixed",
+      "disposition_zh": "适用前提改名为 precondition_path／precondition_value，与规则自身的 trigger_path 语义分离，基准与实现同步改名；修复后复跑 60/60 退出 0。本条登记的价值在于：它是被注入样例抓到的，说明反例集不只是覆盖率装饰",
+      "disposition_en": "the precondition is renamed precondition_path / precondition_value, separated from a rule's own trigger_path, with baseline and implementation renamed together; the rerun matched 60/60 at exit 0. The value of registering this is that an injected fixture caught it, which is what shows the negative set is not coverage decoration"
+     }
+    ]
+   },
+   "affected_metrics": {
+    "summary_zh": "判据变更不触及任何登记读数：metrics.json 七项口径、八字段与全部保持未知的指标键不变，第六组件不新增任何指标键；OP-04 链复演 41+2 项读数不变，复跑 0 不符、退出码 0；桌面样例由四十条扩至六十条，全部与期望一致、退出码 0。新增二十条样例不含任何计数、比例或耗时——未决项只声明有无，署名只声明是否发生，因此 contains_no_measurement_values 在扩充后仍然成立。",
+    "summary_en": "The criteria changes touch no registered reading: the seven definitions, eight fields and every kept-unknown key of metrics.json stand, and the sixth component adds no metric key; the 41+2 chain figures stand, replaying at zero disagreement and exit 0; the tabletop set grows from forty to sixty and matches expectation throughout at exit 0. The twenty new fixtures hold no count, ratio or duration — open items declare presence and signatures declare that signing occurred — so contains_no_measurement_values still holds after the extension.",
+    "readings_changed": 0
+   },
+   "verification": {
+    "zh": "对照 seb-spec-v0.4.0.json 快照 diff 现行规范，核对第六组件为纯增量、既有五组件一字未改；在 visual/assets 下运行 node seb-tabletop-run.js，预期退出码 0 且「与期望一致 : 60 / 60」；运行 node seb-op04-chain-run.js，预期退出码 0、读数不符项 0，且该实现文件在本版无任何改动（git diff 为空）；十条注入样例逐条复核其 expected_reasons 与 risk.json 对应风险的 pause_threshold 一致；快照哈希以 shasum -a 256 visual/assets/seb-spec-v0.4.0.json 核对，应为 efc58de8c327100be67e12b4bdf5b710c3b4cd061ed16d00cb1d980f78f5ddfb。",
+    "en": "Diff the current spec against the seb-spec-v0.4.0.json snapshot to confirm the sixth component is purely additive and no word of the existing five changed; run node seb-tabletop-run.js inside visual/assets, expecting exit 0 and matching expectation at 60 / 60; run node seb-op04-chain-run.js, expecting exit 0 with zero disagreeing figures and no change at all to that implementation file in this version (an empty git diff); check each of the ten injected fixtures for agreement between its expected_reasons and the pause_threshold of the corresponding risk in risk.json; and verify the snapshot hash with shasum -a 256 visual/assets/seb-spec-v0.4.0.json, which should read efc58de8c327100be67e12b4bdf5b710c3b4cd061ed16d00cb1d980f78f5ddfb."
+   },
+   "posting": [
+    "visual/assets/seb-change-receipt-v05.json",
+    "visual/assets/seb-spec.json 的 revision_history 与 version_snapshots",
+    "proposal.md 与 proposal.en.md 的服务等价基准章 / the SEB chapter of proposal.md and proposal.en.md"
+   ],
+   "status": "published"
+  }
+ ]
+}

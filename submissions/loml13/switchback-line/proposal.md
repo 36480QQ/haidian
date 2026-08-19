@@ -6,7 +6,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以詹天佑人字形折返线为原型，把京张遗址公园定义为一条'城市爬坡装置'：一脊三折、六廊缝合，让大钟寺、AI原点社区、众智园成为三次换向加速的折返站，支撑百年京张文化带、都市AI生活体验带与AI融合创新带三重定位。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
-iteration: "v1.0"
+iteration: "v1.8"
 ---
 
 # 人字线 THE SWITCHBACK LINE：百年京张的第二次爬坡
@@ -107,7 +107,19 @@ AI 全栈自主创新体系需要把"土地、空间、资金、人才、算力�
 - **六廊缝合**：六条东西向"人字缝合廊道"跨越绿脊，把被铁路割裂的东西城区重新织补 [data:geometry/roads.geojson#RD-004]，步行与骑行优先，配合轨道站点接驳动线 [data:geometry/roads.geojson#RD-010]。
 - **两翼**：中关村科技服务翼（西侧科研、教育与居住更新单元，[metric:land_use_area_0802_sqm]、[metric:land_use_area_0701_sqm]）与小月河场景赋能翼（东侧滨水绿廊与教育商业单元，[metric:land_use_area_0804_sqm]）为脊带提供要素与场景。
 
-城市更新总体框架按"留改拆"逻辑组织：保留京张铁路历史线位、清华园站旧址、大钟寺等文化锚点 [data:geometry/constraints.geojson#CX-004]；改造沿线低效产业用地为 AI 研发、混合功能与人才住区；新建量集中于三处重点区的概念体量（建筑基底合计 [metric:building_footprint_area_sqm]，概念总建筑规模 [metric:total_floor_area_sqm]，均为设计意向而非审定指标）[depth:retain_renovate_demolish]。所有开发强度、建筑高度、拆改留结论均为待确认控规条件——本方案只提供设计意向与复算方法，具体指标以批准的控规为准 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。用地分类采用国土空间用地用海分类代码 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，不使用自造分类。概念容积率水平（按概念建筑规模与临时边界面积之比约 0.7）仅为走廊平均值的设计讨论，正式容积率指标 [metric:floor_area_ratio] 状态为 unknown，等待控规条件。
+城市更新总体框架按"留改拆"逻辑组织：保留京张铁路历史线位、清华园站旧址、大钟寺等文化锚点 [data:geometry/constraints.geojson#CX-004]（v1.7：清华园车站旧址的保护范围与建设控制地带已按北京市文物局第十一批划定文字四至落为 provisional 面 [data:geometry/constraints.geojson#CX-003][source:BJWW-QHY-STATION-T11][source:BJGOV-HERITAGE-BATCH11][source:BJGOV-CCZ-RULES]，觉生寺（大钟寺）登记第一批划定四至文字 [source:BJWW-JUESHENG-T1]、锚点不可公开核实保持点位，两点位经 OSM 落图校正 [source:OPENSTREETMAP]，方法与误差见 A-HERITAGE-FOURTO-001 / A-HERITAGE-POINT-FIX-001 [source:ISSUE-1774]）；改造沿线低效产业用地为 AI 研发、混合功能与人才住区；新建量集中于三处重点区的概念体量（建筑基底合计 [metric:building_footprint_area_sqm]，概念总建筑规模 [metric:total_floor_area_sqm]，均为设计意向而非审定指标）[depth:retain_renovate_demolish]。所有开发强度、建筑高度、拆改留结论均为待确认控规条件——本方案只提供设计意向与复算方法，具体指标以批准的控规为准 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。用地分类采用国土空间用地用海分类代码 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，不使用自造分类。概念容积率水平（按概念建筑规模与临时边界面积之比约 0.7）仅为走廊平均值的设计讨论，正式容积率指标 [metric:floor_area_ratio] 状态为 unknown，等待控规条件。
+
+v1.7 落地的文保约束一览（provisional 推定；官方区划图纸另行印发、未公开；推定方法与误差见 A-HERITAGE-FOURTO-001）[data:geometry/constraints.geojson#CX-003]：
+
+| 要素 | 类别 | 面积（约，sqm） | 管控要点 |
+| --- | --- | ---: | --- |
+| CX-003 | 保护范围 | 2,342 | 清华园车站旧址本体四至偏移范围 |
+| CX-005 | 建设控制地带Ⅰ类 | 798 | 页面未附管控要求原文，分类含义见管理规定 [source:BJGOV-CCZ-RULES] |
+| CX-006 | 建设控制地带Ⅴ类(1) | 635 | 不得新建建（构）筑物 |
+| CX-007 | 建设控制地带Ⅴ类(2) | 747 | 不得新建建（构）筑物 |
+| CX-008 | 建设控制地带Ⅴ类(3) | 2,655 | 不得新建与文物保护和展示利用无关的建（构）筑物 |
+
+![底图总图：本方案设计几何叠加真实城市底图（OSM）](assets/figures/site-masterplan.png)
 
 ## 重点区域详细设计
 
@@ -123,7 +135,7 @@ AI 全栈自主创新体系需要把"土地、空间、资金、人才、算力�
 
 ### 大钟寺AI产业集聚区——始发客厅（约 72.0 ha，临时 polygon 复算 [metric:key_area_dazhongsi_sqm]）
 
-定位：智能原生新业态的展示与交易客厅，是公众进入"人字线"的始发站。空间结构：南门户广场 [data:geometry/public_space.geojson#PS-001] 与折返剧场 [data:geometry/public_space.geojson#PS-002] 组成到达序列；商业服务业用地（05，[metric:land_use_area_05_sqm]）承载智算消费实验室与 AI 原生零售；文化用地（0803，[metric:land_use_area_0803_sqm]）联动大钟寺古钟博物馆，形成"古钟—智算"的时间对话。交通慢行：大钟寺站接驳动线（概念）[data:geometry/roads.geojson#RD-010] 与缝合廊道 01、02 号。AI 场景：智算消费实验室（SC-07）、轨道接驳 MaaS（SC-10）。实施风险：大钟寺现状商业权属复杂，更新以协商式微更新为概念方向，不给出地块级拆改结论。**位置披露**：本节所依托的临时 polygon（PROV-KEY-003）经社区复核质心位于北京北站一带、距大钟寺地铁站约 2.26 km，尚未完成站点锚定（[source:ISSUE-1029]；维护者已在 PR #1036 澄清其占位语义），因此本节全部空间结论为方向性概念，官方边界或锚定关系发布后需统一重算。
+定位：智能原生新业态的展示与交易客厅，是公众进入"人字线"的始发站。空间结构：南门户广场 [data:geometry/public_space.geojson#PS-001] 与折返剧场 [data:geometry/public_space.geojson#PS-002] 组成到达序列；商业服务业用地（05，[metric:land_use_area_05_sqm]）承载智算消费实验室与 AI 原生零售；文化用地（0803，[metric:land_use_area_0803_sqm]）联动大钟寺古钟博物馆（点位经 OSM 校正，并登记第一批划定文保四至文字 [data:geometry/constraints.geojson#CX-004]），形成"古钟—智算"的时间对话。交通慢行：大钟寺站接驳动线（概念）[data:geometry/roads.geojson#RD-010] 与缝合廊道 01、02 号。AI 场景：智算消费实验室（SC-07）、轨道接驳 MaaS（SC-10）。实施风险：大钟寺现状商业权属复杂，更新以协商式微更新为概念方向，不给出地块级拆改结论。**位置披露**：本节所依托的临时 polygon（PROV-KEY-003）经社区复核质心位于北京北站一带、距大钟寺地铁站约 2.26 km，尚未完成站点锚定（[source:ISSUE-1029]；维护者已在 PR #1036 澄清其占位语义），因此本节全部空间结论为方向性概念，官方边界或锚定关系发布后需统一重算。
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
@@ -186,7 +198,7 @@ AI 创新生态按"要素—场景—运营"组织：要素侧（土地、空间
 - **SC-05 机器人测试港**：配送机器人在隔离测试区避让儿童模型，家长在围栏外的大屏上看到每一次决策的简版回放。
 - **SC-06 数据沙箱**：研究员带着自己的算法进入沙箱，使用脱敏城市数据训练，离开时只带走审计通过的模型权重。
 - **SC-07 智算消费**：顾客在大钟寺体验"一句话生成穿搭"，屏幕明确标注哪些是推荐算法结果，一键可关闭个性化。
-- **SC-08 养老陪伴**：独居老人的智能音箱提醒用药，异常情况先通知社区工作者上门，而不是直接报警。
+- **SC-08 养老陪伴**：独居老人的智能音箱提醒用药，异常情况先通知社区工作者上门，而不是直接报警。该试点方向与海淀区现行《"人工智能+养老"三年行动计划（2026—2028年）》同向（区级政策背景参考，不构成授权或资金、数据、场景使用依据）[source:DATA-SRC-BJHD-AI-ELDERLY-2026]。
 - **SC-09 生态感知**：晨跑者在滨水绿廊看到今日水质与鸟种播报，数据来自河岸传感器，异常由管护人员处置。
 - **SC-10 接驳 MaaS**：出大钟寺站的访客收到一条"步行 6 分钟经缝合廊道到发布会"的路线，含实时人流提示。
 - **SC-11 人字工单**：商户拍下占道的施工围挡上传，AI 派单到网格，处置结果附现场照片回传，全程可申诉。
@@ -213,6 +225,8 @@ AI 创新生态按"要素—场景—运营"组织：要素侧（土地、空间
 城市风貌：以"历史轨·数据轨"的双轨语汇统一铺装、导视与城市家具；人字形纹样作为母题贯穿栏板、铺装与标识，形成可识别的城市气质 [standard:MOHURD-URBAN-DESIGN-MEASURES]。空间尺度的设计意向用一张典型剖面表达：绿脊 120m 内保留铁轨展示、人字形铺装与慢行优先，两侧 24m 漫步带，外侧研发与商业界面的首层向公园开放，体量上"公园低、两翼高"（概念比例，非工程设计）。
 
 ![典型剖面：遗址公园绿脊与缝合廊道（AI原点段）](assets/figures/section-spine.png)
+
+![重点区剖面：AI原点社区东西向断面（绿脊 × 双翼界面，含记忆庭院）](assets/figures/keyarea-origin-section.png)
 
 ### AI 创新地标与荣誉展示体系（agent.4）
 

@@ -6,40 +6,52 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Forest Rail is the park-layer operating system along the Jingzhang heritage corridor: three stations share rusted guiding rails, canopy calm, dual-rail separation, and a Forest Rail terminal; shared desks, low-glare lights, unbranded daily essentials, and concept AV shuttles are auditable and stoppable—safety first."
+summary: "Forest Rail is a park-city claim: the Jingzhang heritage corridor as public chassis; AI as undercurrent dispatch for seats, lights, daily goods, and isolated-rail shuttles; replicable under-canopy desks (including enterprise pack-year public seats) to free creativity; near-term minimum path and long-term corridor reserve coexist—safe and exit-ready."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # Forest Rail
 
-The Jingzhang Railway Heritage Park already left the rails in the city. This proposal does not reinvent that park or turn it into a tech showcase.
+The Jingzhang Railway Heritage Park already left the rails in the city: people run, push strollers, and walk along the rails. This proposal does not reinvent that park or turn it into a tech showcase.
 
-**Core claim:** Forest Rail is the **park-layer operating system** along the Jingzhang heritage corridor—rusted rails for wayfinding, canopy for calm, Forest Rail terminal regulating seats / lights / daily goods. **Zhongzhiyuan, Origin Community, and Dazhongsi differ in role but share one safety partition, human fallback, and exit rules** [source:AGENT-TASKBOOK].
+This proposal makes only three public promises: **Walkable, Sit-able, Thinkable**.
 
-Forest Rail means:
+- **Walkable**: Wheelchairs, strollers, walkers, and transfer riders can read and complete lateral links among station–park–campus–yard via soft paving and guiding rails.
+- **Sit-able**: Shade, rain shelter, quiet stay, and under-canopy shared desks are not gated by consumption; minimum open seats cannot be extinguished.
+- **Thinkable**: People find quiet and creativity at the park layer; enterprises may claim **public-seat quotas** by rule (not private pods); AI dispatches only as undercurrent—on failure, revert to human and paper channels.
 
-- **Forest**: All three stations work as park layer—spaced trees, canopy, soft paving. Look out and see trees, not a glass showcase. The park quiets people; human–nature comes first.
-- **Rail (dual, separated)**: Heritage rails are the urban clue. Decorative guiding rails give direction; AI operating rails run safety-first shuttles for people + cargo, physically separated from walking.
-- **Forest Rail terminal**: regulates **public open seats / shared desks**, **low-glare ground edge lights**, **unbranded daily-essentials supply**, and node open/close. No face ID, no brand ads.
-- **Three nodes**: `FR-NODE-ZZY` / `FR-NODE-YY` / `FR-NODE-DZS` attach to the three key areas and can relocate when official polygons arrive [data:geometry/public_space.geojson#FR-NODE-DZS] [metric:forest_rail_node_count].
+The proposal does not add a “future layer” on top of the park; it places technology inside daily rights, operating responsibility, and stoppable mechanisms. Current outputs come from public materials and the repo site package only—**no** field survey, resident interviews, footfall/OD study, tree census, or equipment testing. Nodes, phasing, and acceptance gates are concept suggestions for professional teams; GitHub merge ≠ official call eligibility, planning approval, funding, award, or implementation [source:AGENT-TASKBOOK].
 
-> One line: rails are the city's clue; the park quiets people; three stations share one rule set—rust guides, AV puts safety first, seats / lights / daily goods are smart yet stoppable.
+## Urban Planning Master Judgment
 
-**Refusals:** district-wide building control, viral landmarks, light shows, planting strips posing as parks, private pods as “shared desks”, climbable decorative rails, smart-for-surveillance swaps, brand-store matrices.
+Forest Rail answers **how to organize space and operations on this AI innovation belt**—not a smart-device checklist for the corridor.
 
-Only one rail-guided corridor is added. **If AI fails, the park body (soft paving, canopy, minimum seats, human service) still stands alone.**
+1. **Park city as chassis**: The Jingzhang heritage corridor is the main space for public rights and everyday creativity; Zhongzhiyuan / Origin / Dazhongsi share one **replicable central park-layer unit**—different roles, not three unrelated showcase plots.
+2. **AI as undercurrent dispatch**: The Forest Rail terminal back-office dispatches seats, lights, unbranded daily goods, and isolated-rail shuttles; people only feel quiet, sit-ability, and ask-a-human. Dispatch scope is park layer only—**not** district-wide building control.
+3. **Spatial economy serves public floor**: Enterprise pack-year/quarter public seats form operating-revenue **assumptions** and well-being intent; they must not crowd out minimum open seats; revenue is not an investment promise [assumption:A-DESK-LEASE-001].
+4. **Dual time horizon on one corridor**: Near-term minimum path = guiding rails + soft paving + canopy + human service + exit-ready terminal; the same corridor reserves section/clearance/title interfaces for an isolated operating format (higher-capacity forms including maglev are **interface reserve only**—**not** approved works, no route mileage, no investment amount) [assumption:A-RAIL-RESERVE-001].
+
+Naming: *Forest Rail — the park layer of an AI city*.
+
+- **Forest**: Look out and see trees, not a glass showcase.
+- **Rail (dual partition)**: Guiding rails give direction; only **physically isolated** operating rails carry AI-dispatchable shuttles.
+- **Forest Rail terminal**: Undercurrent dispatch of public seats/shared desks, low-glare lights, unbranded daily goods, and node open/close. No face ID, no brand ads.
+- **Three nodes**: `FR-NODE-ZZY` / `FR-NODE-YY` / `FR-NODE-DZS` can relocate with official polygons [data:geometry/public_space.geojson#FR-NODE-DZS] [metric:forest_rail_node_count].
+
+**Refusals:** district-wide building control, viral landmarks, light shows, planting strips posing as parks, private-pod desks, climbable decorative rails, surveillance-for-“smart” swaps, brand-store matrices, writing maglev as an approved buildable project.
+
+**If AI fails, the park body (soft paving, canopy, minimum seats, human service) still stands alone.**
 
 ## Executive Brief
 
-| Review question | Forest Rail answer | Verifiable outputs |
+| Review question | Forest Rail urban-planning judgment | Verifiable outputs |
 | --- | --- | --- |
-| Core claim | Park-layer OS: calm daily life + stoppable environment/daily/shuttle intelligence | Four-system tables + Gates + tabletop evidence |
-| Spatial response | One spine, three stations; decorative vs operating rails; lateral seams park–metro/campus/yard/river | 9 GeoJSON classes, three nodes, five evidence boards |
-| Starting point | Near: soft paving/canopy/human service; Mid: terminal + daily trials; Long: isolated AV only after Gates | FR-01–09 + prerequisites |
-| Public value | Sit / shelter / water / ask directions without an app; minimum seats and low-demand supply cannot be extinguished | Accessibility table + [metric:min_open_seats_count] |
-| Evidence state | Geometry/metrics recomputable; admin stats only calibrate problems; concept pilots ≠ deployed | metrics / assumptions / self_check |
-| Decision boundary | All conceptual—not statutory plan, government schedule, or investment promise | Risk section + stop conditions |
+| Core claim | Park-city chassis + AI undercurrent; replicable under-canopy desks (incl. enterprise pack-year public seats); minimum path and corridor-format reserve on one spine | Master judgment + four systems + Gates |
+| Spatial response | One spine, three stations; guiding / isolated operating rails; station–campus–yard–river seams | 9 GeoJSON classes, three nodes, five evidence boards |
+| Starting point | Near: soft paving, canopy, human + desk protocol; Mid: terminal and daily trials; Long: isolated operation / higher format only after Gate + specialist review | FR-01–09 + prerequisites |
+| Public value | Walkable, Sit-able, Thinkable; minimum seats cannot be extinguished | [metric:min_open_seats_count] |
+| Evidence & bounds | Provisional geometry recomputable; cases are mechanism-only; revenue/maglev are assumption or form reserve | metrics / assumptions / self_check |
 
 ## Design Basis and Source List
 
@@ -63,13 +75,17 @@ Authority order: GeoJSON → metrics → matrices → sources/assumptions/self_c
 
 ## Three-Level Scope Framework
 
-The three-tier frame is constrained by [depth:three_level_scope_framework] and [depth:overall_spatial_structure].
+The three-tier frame follows the announcement [source:SITE-PACKAGE] [depth:three_level_scope_framework] [depth:overall_spatial_structure]:
 
-| Tier | Area | What Forest Rail does |
-|------|------|------------------------|
-| Coordinated research (43.6 km²) | AI ecology + urban form | Jingzhang spine; three stations + wings; AI ecosystem + eight factors |
-| Overall design (11.4 km²) | Heritage-park urban renewal | Rail spine; soft paving/canopy; four-system grammar |
-| Key areas (368.4 ha) | Detailed design | Zhongzhiyuan / Origin / Dazhongsi at **equal depth** [metric:key_area_count] |
+| Tier | Announcement scope | Depth at this tier | Forest Rail judgment |
+|------|-------------------|--------------------|----------------------|
+| Coordinated research | **43.6 km²** (North Fifth Ring–Jingzang–Xizhimen Outer–Wanquan River) | Industry ecology + future urban form | Jingzhang corridor = park-city spine; three areas + wings via verify–translate–adopt loop |
+| Overall design | **11.4 km²** (heritage park ±1–2 km) | Control-plan-depth urban design | One spine, dual-rail partition; under-canopy desk protocol; park-layer dispatch grammar; municipal interfaces as prerequisites |
+| Key areas | **368.4 ha** (Zhongzhiyuan 192.1 / Origin 104.3 / Dazhongsi 72.0) | Detailed design / component atlas | Three stations share replicable park unit, different roles [metric:key_area_count] |
+
+Announcement text areas are the formal scope; repo provisional polygons recalculate overall design at ~11,412,825 m², ~0.11% from 11.4 km²—**the two values do not substitute for each other**; recalculate the full chain when official polygons arrive [metric:site_area_sqm] [metric:announced_overall_design_area_sqm] [assumption:A-AREA-MISMATCH-001]. Full recalculation discipline: [depth:metrics_recalculation].
+
+The three tiers are not siloed: coordinated research sets direction; overall design lands layers and capacity bounds; key areas verify whether components can deploy.
 
 ![Three-level scope and rail-guide structure](assets/figures/land-use-structure.en.png)
 
@@ -81,23 +97,26 @@ Narrow judgment: **do not invent a parallel greenway; connect the heritage park 
 
 Naming: Forest Rail is both title and spatial description. International motif: *Forest Rail — the park layer of an AI city.* Minimal mark: rust twin rails + three canopy-green nodes in `assets/forest-rail-mark.svg` (see agent.5).
 
-### Urban / linear park cases (background only)
+### Urban cases: mechanism transfer (background)
 
-Park cases are **background mechanism inspiration** only; they do not replace the taskbook AI-ecosystem deliverable.
+The following are public built/operating projects—**mechanism transfer only**; no FAR, investment, footfall KPI, or governance authority is transplanted.
 
-| Case | Transferable mechanism | Learn / do not learn | Cannot prove |
-|------|------------------------|----------------------|--------------|
-| Central Park | Multi-entry layered walking | Learn park as public right; not closed mega-management | Haidian volumes |
-| High Line | Rail → linear walk | Learn reuse narrative; not elevated tourist consumption | Elevations/cost |
-| Rail Park | Phased opening | Learn light pilots; not unfinished-as-finished | Funding secured |
-| King's Cross | Station–plaza–walk | Learn exit-into-public; not mall-led plazas | Station OD |
-| Madrid Río | Free continuous green | Learn stitching cut districts; not tunnel megaprojects | Local excavation |
-| Cheonggyecheon | Linear civic corridor | Learn everyday linear use; not pumped ecology myths | Local hydrology |
-| Xuhui Runway Park | Relic → everyday linear | Learn localizable narrative; not hardscape selfie decks | Materials approved |
-| Olympic Forest Park | Spaced canopy lawns | Learn urban-forest temperament; not new mega park | National scale |
-| Jingzhang Heritage Park (built) | Rails left in city | Learn incremental three-station links; not parallel rebuild | Interface permits |
+| Case | Transferable urban-planning mechanism | Learn / do not learn | Cannot prove |
+|------|--------------------------------------|----------------------|--------------|
+| New York Central Park | Park as urban public-right chassis; multi-entry layered walking | **Learn** park over landscape show; **do not learn** closed mega-management | Haidian footfall/area targets |
+| New York High Line | Abandoned rail → continuous public corridor | **Learn** rail-narrative reuse; **do not learn** elevated tourist consumption, climbing heritage | This case rail elevation/cost |
+| Philadelphia Rail Park | Phased rolling opening | **Learn** light one-segment pilots; **do not learn** unfinished segments packaged as built | Phasing funds secured |
+| London King's Cross | Exit straight into public space | **Learn** station–city stitching; **do not learn** mall-led complexes | Station OD |
+| Singapore Gardens by the Bay | Central dashboard aggregates horticulture/visitor/security sensing; automation cuts patrol labor; smart without hijacking visitor experience | **Learn** “undercurrent ops”; **do not learn** greenhouse engineering copy-paste | Haidian sensing budget |
+| Paris Station F | Old rail facility → high-density shared desks | **Learn** heritage space to shared density; **do not learn** private mega-landlord | Desk-count KPI |
+| Singapore one-north / LaunchPad | District as testbed; low-barrier shared facilities | **Learn** scene openness; **do not learn** single SOE coordination copy | SOE structure |
+| Toronto Quayside review lesson | Data governance, public accountability, exit upfront | **Learn** failure and exit made public; **do not learn** unvetted data platform | Directly deployable platform architecture |
+| Shanghai Xuhui Runway Park | Relic → everyday linear space | **Learn** localized narrative; **do not learn** wide hardscape check-in decks | Materials approved |
+| Jingzhang Heritage Park (built) | Rails left in city; daily life already walking | **Learn** incremental three-station daily links; **do not learn** parallel greenway redo | Interface retrofits approved |
 
-Sources: [source:CASE-CENTRAL-PARK]–[source:CASE-JZ-HERITAGE-PARK].
+This proposal's stance: push heritage rails from “viewable” to “guidable, co-workable, concept short-haul”; breakthroughs sit in **replicable park-city units** and **exit-ready AI undercurrent**.
+
+Full case sources are registered in `sources.json` (`CASE-*`, background_only); the body does not dump every ID. Key citations in the table: [source:CASE-GARDENS-BY-THE-BAY], [source:CASE-AI-PARIS-STATIONF], [source:CASE-JZ-HERITAGE-PARK].
 
 ### Urban life organism · international motif & minimal mark (agent.5)
 
@@ -207,16 +226,51 @@ Zhongzhiyuan FR-NODE-ZZY (N) ——rail—— Origin FR-NODE-YY (mid) ——rail
 ### Four systems
 
 #### 1) Shared Desk Protocol
-Objects: under-canopy desks, bend seats, shelter hot desks [metric:desk_zone_count]. AI: noise/rain/density → open/close + power. Hard rule: [metric:min_open_seats_count]; no identity; no forced scan; wheelchair seats kept. Evidence: desk tabletop assets. G2 unassigned ⇒ NOT AUTHORIZED.
 
-#### 2) Safety-First AV Rail
-Decorative ≠ operating; physical isolation; E-stop / breach / fail-stop; yield to pedestrians. Missing safety case/operator/drill ⇒ **NOT AUTHORIZED**. No unregistered precise km claims.
+Under-canopy desks are a **replicable central park-layer unit**: Zhongzhiyuan / Origin / Dazhongsi share one protocol, different roles. Benchmarks Station F “heritage space → shared density” but no private pods and no consumption gate [source:CASE-AI-PARIS-STATIONF].
+
+| Item | Content |
+|------|---------|
+| Objects | Under-canopy shared desks, bend seats, shelter hot desks; desk zone per station [metric:desk_zone_count] |
+| Two seat types | **A public open seats**: first-come. **B enterprise pack-year/quarter public seats**: park or enterprise claims seat quota under same open/close/quiet/no-identity rules—**not private partitioned pods** |
+| Spatial economy | Type B intent forms park operating-revenue assumption and district well-being; numbers not guaranteed in metrics—see [assumption:A-DESK-LEASE-001] |
+| AI (undercurrent) | Noise/rain/anonymous density → open/close and power; quiet/discussion zones; no face ID |
+| Hard constraints | Minimum open seats [metric:min_open_seats_count] cannot be crowded out by lease quota; no forced scan; wheelchair seats not extinguished |
+| Gate | Environment over threshold may close zones; human window stays open; appeal path; G2 unassigned ⇒ NOT AUTHORIZED |
+| Evidence | `visual/assets/run_desk_tabletop.js` / `desk-tabletop-evidence.json` |
+
+#### 2) Safety-First AV Rail and Corridor-Format Reserve
+
+Isolated rails are the **most dispatchable** AI-city infrastructure in this proposal: fully physically separated from walking, adjustable path, controllable speed, lower disturbance than opening walls—**not** proven by Haidian local statistics.
+
+| Item | Content |
+|------|---------|
+| Partition | Guiding rails ≠ operating rails; operating rails **fully isolated** from walking |
+| Near-term minimum path | Guiding rails + soft paving + signage only; operating rails on isolated concept segment |
+| AI | Shifts, yield, daily restock; fail-stop; walking priority on recovery |
+| Long-term reserve | Same corridor reserves section/clearance/title interfaces for isolated operating format; higher capacity (incl. maglev concept) is **form reserve only**—**not** approved works, no route mileage, no investment amount [assumption:A-RAIL-RESERVE-001] |
+| Gate | No safety assessment/operator/E-stop drill ⇒ **NOT AUTHORIZED** [data:visual/assets/av-safety-gates.json] |
+| Metrics | Unregistered precise km claims forbidden; all concept |
 
 #### 3) Edge Light Protocol
 Soft-paving edges + seat zones only [metric:light_zone_count]. No lights on decorative rails, no chase/projection/show. Fault → off or ultra-dim.
 
 #### 4) Unbranded Daily Essentials
-Trials [metric:daily_trial_point_count] → fit → open-admission stalls / quick-turnover shops. Fair siting keeps low-demand minimums; weekly bias audit; no face/ads.
+Trials [metric:daily_trial_point_count] → fit → open-admission stalls / quick-turnover shops. AI: stockouts, turnover, anonymous footfall; **fair siting** (low-demand keeps minimum supply). No brand logos, no face ID, no ads; human review escalation; weekly bias audit.
+
+### Park-Layer Smart Dispatch (Undercurrent Ops)
+
+Benchmarking Gardens by the Bay central-dashboard logic: sensing and rules feed an ops console, triggering alerts and open/close—**visitor side remains a quiet park** [source:CASE-GARDENS-BY-THE-BAY]. Forest Rail dispatch scope is park-layer four systems only—**not** district-wide building control.
+
+| Dispatch domain | Inputs (minimum necessary) | Outputs | Fail-back |
+|-----------------|----------------------------|---------|-----------|
+| Desk open/close | Noise/rain/anonymous density | Zone open/close, power | Keep minimum seats + human window |
+| Edge lights | Sun/time/density | Segment brightness | Off or ultra-dim |
+| Unbranded daily | Stockouts/anonymous footfall | Restock suggestion, fair siting | Minimum supply list + human audit |
+| Isolated shuttle | Vehicle sensing/E-stop state | Shift or halt | Immediate halt; walking priority |
+| Node open/close | Weather/event permit | Trial-point open/close | Printed hours table |
+
+Governance boundary (Quayside lesson): minimum data, auditable, appealable, exit-ready; no face ID, no personal profiles [source:CASE-TORONTO-QUAYSIDE].
 
 ### Accessibility and inclusion
 Wheelchair: prefer flat; if slope ≤1:20 + handrail. Deaf/blind: tactile + low-glare lights; concept dedicated AV shuttle (tactile/voice/text/help). Low-digital / non-Chinese: no forced app; bilingual icons. Fair siting + appeal + human override.
@@ -226,15 +280,15 @@ AV collision/breach/E-stop fail → immediate stop, walk priority. Glare → dim
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-Renewal within the overall design scope falls into three categories:
+Renewal within overall design scope is handled in three categories. Any FAR, building height, or road redline control is split into **known materials / concept suggestion / pending professional confirmation**; missing official data is marked unknown—no fabricated numbers [assumption:A-CONTROLS-001].
 
-- **Retain**: Existing quality buildings along the heritage corridor — unchanged
-- **Renovate**: Buildings needing ground-floor program and facade adjustment — remove LED screens, increase under-canopy transparency
-- **Renew**: New construction on identified low-efficiency sites — building height controlled below tree canopy
+- **Retain (concept suggestion)**: Built quality along the Jingzhang heritage corridor—intent to keep, pending title and quality census
+- **Renovate (concept suggestion)**: Ground-floor program and facade needing adjustment—remove LED screens, increase under-canopy transparency—pending fire/title confirmation
+- **Renew (pending professional confirmation)**: New opportunity on identified low-efficiency space—new height **should** stay below canopy; **must not** be written as approved height or FAR
 
-Land use classification follows national standards [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout] [depth:development_intensity_controls], covering the design boundary without overlap [data:geometry/land_use.geojson#LU-001]. Building keep/alter/demolish and massing follow [depth:retain_renovate_demolish] and [depth:height_massing_character]. Building footprints and retain/renovate/renew classification are recorded in [data:geometry/buildings.geojson#BLDG-001].
+Land use follows national classification [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout] [depth:development_intensity_controls], covering the design boundary without overlap [data:geometry/land_use.geojson#LU-001]. Building footprints and retain/renovate/renew classification are in [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish] [depth:height_massing_character].
 
-Where FAR, building height, or road setbacks lack official data, they are marked as unknown. No numbers are fabricated.
+Building-footprint sketches are **not** an as-built census and **not** building-scale or density control metrics.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -321,7 +375,7 @@ All three stations use the same structural block (location / park-layer role / F
 
 **Location**: Southern end, adjacent to Metro Line 13 Dazhongsi Station [data:geometry/key_areas.geojson#PROV-KEY-003]; node [data:geometry/public_space.geojson#FR-NODE-DZS].
 
-**Park-layer role**: Station-into-park + urban-forest daily life—exit the station into a park; find a shared desk in that park.
+**Park-layer role** (announcement ~**72.0 ha**): Station-into-park + **southern prototype of a replicable central park-layer unit**—exit into park, share one desk in that park; surrounding industry buildings may claim under-canopy pack-year public seats, making “replicable central park” daily station-area life—not a one-off viral installation.
 
 **Forest Rail terminal**: Full seats/lights/daily trial operation; offline revert to printed rules.
 
@@ -332,14 +386,14 @@ All three stations use the same structural block (location / park-layer role / F
 | **Canopy layer** | Chinese scholar tree and ash, crown spread ≥8m, covering low-rise roofs | Geometric pruning, ornamental small trees | Rooftop coverage already met |
 | **Rail path** | Each station quadrant (A/B/C/D) gets guiding rails into the park | Elevated bridges, polish, running/climbing on rails | "Natural station-to-park" accepted |
 | **Soft paving** | Wheelchair prefer flat; continuous at same grade | Asphalt plazas, polished stone, step breaks | Accessibility already through |
-| **Under-canopy desks** | Glass-partitioned multi-desk bays; hot-desk for anyone | Private pods, LED facades, photo-booth cabins | "High synergy" proven |
+| **Under-canopy desks** | Public open seats + enterprise pack-year public seats; glass partitions, same first-come rules | Private pods, LED facades, photo-booth cabins, lease crowding out minimum seats | "High synergy" or revenue proven |
 | **Rust** | Natural oxidation time marker | Faux-rust panels, artificial aging paint | Must be original rail rust |
 
-**Must not**: brand-store matrix; face monitoring/ad push; light shows; extinguishing all seats; claiming AV already commercial.
+**Must not**: brand-store matrix; face monitoring/ad push; light shows; extinguishing all seats; claiming AV/maglev already commercial or approved.
 
 **Dazhongsi Station integration**: From exits A/B/C/D, a rail path enters each quadrant. First view is park and rusted rail—not ad screens.
 
-**Commercial services**: Unbranded daily trial points → fit scoring → open-admission stalls / community quick-turnover shops; low-demand nodes keep minimum supply.
+**Commercial & operations**: Unbranded daily trials → open-admission stalls; enterprise pack-year public seats as operating intent (assumption); low-demand keeps minimum supply.
 
 **Test-card binding**: TEST-01 / TEST-02 / TEST-03.
 
@@ -484,11 +538,11 @@ Key spatial metrics can be verified against [metric:site_area_sqm] and [data:geo
 
 ## Risk, Copyright, and Compliance
 
-Missing-data and provisional-boundary handling is checked under [depth:risk_missing_data].
+Missing-data and provisional-boundary handling: [source:SOURCE-REGISTRY] and [data:geometry/site_boundary.geojson#SITE-001] [depth:risk_missing_data].
 
-### Provisional Boundary
+All spatial conclusions are limited by provisional boundary. When official boundaries release, **recalculate the full chain**: nine GeoJSON groups, metrics, five evidence boards, A3/A0, HTML, and manifest—single-file swap is insufficient.
 
-All spatial conclusions are limited by provisional boundary status. When official boundaries are released: re-run scaffold, self-check, drawings, and HTML. Single-file replacement is not sufficient.
+**Forbidden claims suppressed line by line** (`allowed_design_space.json`): this proposal **does not claim** official approval, approved regulatory plan, final title, confirmed construction scale, implementation guarantee, unsourced precise heritage controls, or unsourced precise road redlines. Enterprise pack-year seat revenue and corridor-format reserve (incl. maglev concept) are assumption/form reserve only—**not** investment or engineering promises.
 
 ### AI Operating Rail & Forest Rail Terminal (Concept)
 

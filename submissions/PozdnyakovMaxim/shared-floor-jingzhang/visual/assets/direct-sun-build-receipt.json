@@ -1,0 +1,54 @@
+{
+  "artifact_hashes": {
+    "checks.json": {
+      "sha256": "9c3d6daeaa4419088614b4666e2b64fe70ba39330e31b06aa0a40824311490b4",
+      "size_bytes": 2171
+    },
+    "climate-sensitivity.png": {
+      "sha256": "de6dae4284a0729c550ad7a543178e3ce4afe4f66403a4db190081e019ca96b7",
+      "size_bytes": 170180
+    },
+    "climate-spatial.png": {
+      "sha256": "b8709379e86b0a662340cb4149d946d2cbbc3b6f81cc7f1fd4846bfdfed7011b",
+      "size_bytes": 225189
+    },
+    "input-receipt.json": {
+      "sha256": "136ec3f231bf03f7447e1b63fe6a7543f1c8837e7b6e2615cd7c2b90b5311f8d",
+      "size_bytes": 2652
+    },
+    "method.ru.md": {
+      "sha256": "aaea7af31c696cfa1265638b8307fd039949b02f28aa277d351e9be90dde0367",
+      "size_bytes": 2654
+    },
+    "metrics.json": {
+      "sha256": "3f94e6b9ffb388620cb40194cd2a4c6b6bd73fb4a91e6271fb5ab101d19e3c4b",
+      "size_bytes": 19021
+    },
+    "receptors.geojson": {
+      "sha256": "af3a49a32a1eda3e0d8cdc89b9b1959bba3562e233349de86e52030b61813523",
+      "size_bytes": 8277
+    },
+    "run-contract.json": {
+      "sha256": "fd58d254ffd2d0a8bfa51ba95e26a7ee631e657f8d717f8b225c9dcbf10a46d1",
+      "size_bytes": 3265
+    },
+    "time-samples.csv": {
+      "sha256": "e733e993fb2d7c23904889d9188be42bf4fa3c20c7864c122c6f036855a7fe9d",
+      "size_bytes": 3494
+    },
+    "variant-matrix.csv": {
+      "sha256": "736a6a128e2ef11826fbd26724e38fb8a92b243d951d6504552a1015fee63bb5",
+      "size_bytes": 58545
+    },
+    "zone-matrix.csv": {
+      "sha256": "d2cdc05e0d1b01899fc193d5e398d38d77ee37786806da41e0bfe61c033f8b2a",
+      "size_bytes": 142075
+    }
+  },
+  "contract_sha256": "faf9c07122d8ad5c5b24f92f7137b9e06fae7ecc33a286a3dfe54dbc360cc772",
+  "input_receipt_sha256": "3b869369edba8c38ec0e79677427f223c4c9a129326f593d55cdb17b4a19b375",
+  "run_id": "direct-sun-d04d872df516",
+  "schema_version": "jingzhang-direct-sun-build-receipt-v1",
+  "status": "pass",
+  "summary_sha256": "58f533c0ffbcb989bfa3f9efbd33056d246d43b29c4702bb90758babc4b39d79"
+}
