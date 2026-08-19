@@ -19,7 +19,7 @@
 
 仍须说明的限制：PyMuPDF 与 Ghostscript 均为 AGPL（PyMuPDF 另有 Artifex 商业许可可选），本包仅将其作为**工具**在本机运行——未分发其代码、未链接进任何交付物，PDF 是工具的输出而非其衍生作品，嵌入的字体子集来自 OFL 字体而非任何 AGPL 组件；若日后需随包分发生成脚本，须先确认这些依赖的分发条件。
 
-`COMMUNITY-DISPLAY-ONLY` 是 `schema/proposal.schema.json` 的 `license` 枚举值之一，仓库未发布其规范条款文本。本包对它的自述含义为：允许为本次开源征集的评审、公开展示、教学与知识沉淀而复制与引用，须保留出处；不授予商业使用，不授予将本包内容表述为法定规划或政府决定的权利；第三方进一步使用时仍须自行核验其中每条外部来源的原始权利状态。
+`COMMUNITY-DISPLAY-ONLY` 是 `schema/proposal.schema.json` 的 `license` 枚举值之一，仓库未发布其规范条款文本。**本包不再对这个留空标识作解释，而是由权利人另行给出一项自足、可直接执行的授权（与 `proposal.md` 风险与合规一节完全同文）：对本包内容的任何使用，只要符合 CC BY-NC 4.0（署名、非商业、标明修改），即已获得作者许可**；署名时须一并保留「本方案为开放共创建议，不代表任何政府决定或审批结论」。组织方标识若日后被定义，以其为准。第三方素材不在此授权范围内：包内未使用任何第三方图片、地图、商标或受保护版式，字体权利链见上表；第三方进一步使用时仍须自行核验其中每条外部来源的原始权利状态。
 
 构建溯源：自 v1.9 起全部载体使用同一版本印记，当前全部图件与图纸使用 `JING-ZHANG HANDOVER LINE / PACKAGE v1.15`（图纸另附页码）。此前正文、图纸与图件多套页脚并存的状态已不存在。成果时效以 manifest 的 sha256 与 changelog 为准，不以页脚数字为准。
 
@@ -35,7 +35,7 @@ v1.6 引用的三部法律法规与政策文件（《生成式人工智能服务
 
 场地与重点区域采用仓库 `provisional_boundaries.geojson`，明确保留 `official_boundary=false`、`provisional_constraint` 和低置信度；它们不构成官方红线、法定规划、权属或工程依据。官方几何和专业条件可用后，全部派生图层、指标、图件与图纸应重新生成。
 
-本包授权标识为 `COMMUNITY-DISPLAY-ONLY`，用于本次开源征集的公共展示、评审和知识沉淀。任何第三方进一步使用应遵守上游仓库规则、逐项核验来源权利，并不得把概念建议表述为政府批准、专业审定或实施承诺。
+本包授权标识为 `COMMUNITY-DISPLAY-ONLY`，并由权利人另行授予「符合 CC BY-NC 4.0 即已获许可」的等效使用（同文见 `proposal.md` 与本文件上节，`assets/media/` 内各媒体的说明文件沿用同一句）。任何第三方进一步使用应遵守上游仓库规则、逐项核验来源权利，并不得把概念建议表述为政府批准、专业审定或实施承诺。
 
 ---
 
@@ -49,6 +49,6 @@ The three statutory and policy instruments cited in v1.6 (the Interim Measures f
 
 **On one withdrawn generative image.** v1.6.2 and v1.6.3 placed a gpt-image-2 concept rendering at `assets/figures/handover-scene.jpg` with itemised disclosure. From v1.6.4 that asset is withdrawn: the content of that same path has been wholly replaced by an original programmatically drawn section figure (PIL, 1600×1000, sharing the palette and layout rules of the rest of the set), so the package again contains no generative-image asset and the statement above holds for the current package. The reason for retaining that path has changed as of v1.11, and this is corrected here: it was originally kept because a participant pull request could not delete a file (issue #647), but **#671 has since merged and `validation_paths_for()` now excludes `status == "removed"` unconditionally, so participants can delete files by pull request.** The only remaining reason to keep the path is that the section figure it now carries (numbered F/13) is itself part of the deliverable, and deleting it would remove content.
 
-The six global cases are paraphrased from institutional pages or official city material; no protected image, map, trademark, branded layout or long passage is reproduced. The provisional site and key-area geometry explicitly remain non-official. This package is marked `COMMUNITY-DISPLAY-ONLY` for open-call review, public display and knowledge capture; it must not be represented as statutory approval or a professional implementation decision.
+The six global cases are paraphrased from institutional pages or official city material; no protected image, map, trademark, branded layout or long passage is reproduced. The provisional site and key-area geometry explicitly remain non-official. This package is marked `COMMUNITY-DISPLAY-ONLY` for open-call review, public display and knowledge capture, and the rights holders additionally grant that **any use complying with CC BY-NC 4.0 is licensed** (the same sentence appears in `proposal.md` and in the notes beside each item in `assets/media/`); it must not be represented as statutory approval or a professional implementation decision.
 
-**2026-08-17 栅格字体权利链已完全闭合。** 包内全部 24 张 PNG 与 2 张 JPEG 的文字均由 OFL-1.1 的 Noto Sans CJK SC 与 Noto Sans 栅格化，OFL 明文允许使用与再分发，因此不再依赖对任何条款的解释。迁移分两步完成：先迁五张送审图件，再重建其余七张图件与断面图的生成器后一并迁移；中文取 Medium 档，以补回 Noto CJK 相对 STHeiti 偏细的字面差。`sources.json` 中的 FONT-STHEITI-RASTER 与 FONT-HELVETICA-RASTER 已降级为历史登记，仅说明 v1.15 之前版本的栅格产物由何种字体生成，不再作为当前任何产物的权利依据。`COMMUNITY-DISPLAY-ONLY` 的完整条款（版本 1.0）逐条写在 `proposal.md` 的风险与合规一节。
+**2026-08-17 栅格字体权利链已完全闭合。** 包内全部 24 张 PNG 与 2 张 JPEG 的文字均由 OFL-1.1 的 Noto Sans CJK SC 与 Noto Sans 栅格化，OFL 明文允许使用与再分发，因此不再依赖对任何条款的解释。迁移分两步完成：先迁五张送审图件，再重建其余七张图件与断面图的生成器后一并迁移；中文取 Medium 档，以补回 Noto CJK 相对 STHeiti 偏细的字面差。`sources.json` 中的 FONT-STHEITI-RASTER 与 FONT-HELVETICA-RASTER 已降级为历史登记，仅说明 v1.15 之前版本的栅格产物由何种字体生成，不再作为当前任何产物的权利依据。权利人给出的等效授权（符合 CC BY-NC 4.0 即已获许可）逐条写在 `proposal.md` 的风险与合规一节，本文件与之同文。

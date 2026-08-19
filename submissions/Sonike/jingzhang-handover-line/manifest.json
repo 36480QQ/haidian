@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "eecb8bc09eaa443b610cb9165b8c984e5cfe5aa9ee5184c57919b865e8eb3b6b"
+      "sha256": "3b8b10af2ea0087e2caf02c49eec5c50523bf8444f6a19809af34dae2b347ebf"
     },
     {
       "path": "agent.json",
@@ -43,7 +43,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "b99e9f96047e68a01b8df68b8c1d0e461360bba17a0c01d7f3bc715519ab31b8"
+      "sha256": "93ba4496b929e3435a10a3fd835f2070126faa72ee3eaeb92b46c0ef06e6fd9e"
     },
     {
       "path": "simulation.json",
@@ -61,7 +61,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "60dca3c92a1085b18735d2c80e65878831de40a5269b295fe46eed9e12ed4e31"
+      "sha256": "656a9945ac939056179cd31a4adbae6e80ced0ee3f8a611cfc964d1dcaacbee5"
     },
     {
       "path": "compliance_matrix.json",
@@ -86,7 +86,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5c1f54d7a22002831b6e8a2acf65eab2eb23853020e2fb1662263796ac093949"
+      "sha256": "7b3815f855a94bfb13244cb1b2ca74a91b191bd6f3b1aed506b2cef4928a2bd0"
     },
     {
       "path": "report/narrative.md",
@@ -98,7 +98,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "18bcebf0e845aa55a04f81063a510640e063f6392f168da21c80568b9c5f12e6"
+      "sha256": "4a537f680996193972afc89c33ba57887ff768938aa9c0739770fcab06d973cf"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -133,7 +133,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "918ff5f4b290c94d3da644804de8ebc0e0a5a993cbebcddb0f38485d8d22077d"
+      "sha256": "d04cff78fa9c338968fbb7d7e4177cd4ab5574993555511ae8dde01dd8cb520d"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -216,7 +216,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "98f4960666bfa5c89d0fabbad9a86e2d526dd4488223de32a614ebba00761317"
+      "sha256": "4d257451d76da930af31861fe5063be8db9676e307f9b643d4262e2de6593018"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +224,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "4ea0edde573cd14803d847f7dd21f3ed729deab2bfa3302ffa593bfe1acd756b"
+      "sha256": "c4ad06ec968b6ba1fcfc7bba5e8bd45e0dad1e65cdfb5dab98659633e28d716f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -264,7 +264,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "73b197544ce6dfdbcfadf33cd4381eb4b7a0cee6d70d8fb7e5c9222e779a9ced"
+      "sha256": "68100ed7d4bc1f6e870034764ecf31b2727d13ba3d988fb168af209c38995268"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -355,7 +355,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "e3b10edb907cbadc967e02bd5b6cac6309943cdb3d5306cf94f8df6fa036405b"
+      "sha256": "2535e6798d53bf585a631e673ccd005b18d26f1a3e46ed2482e99b529b93a424"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -461,7 +461,7 @@
       "path": "assets/media/audio-guide.md",
       "role": "transcript",
       "required": false,
-      "sha256": "ebadb9fa3670d19fc8d7dc97bba06a0117631556ae035e96ec0bcae3e65c0591"
+      "sha256": "a591eee8f9057c9aa8f49a5c895f3a06778c910b946cbc030c4156711e98ca03"
     },
     {
       "path": "assets/media/audio-guide.vtt",
@@ -485,7 +485,7 @@
       "path": "assets/media/audio-guide-en.md",
       "role": "transcript",
       "required": false,
-      "sha256": "5f6991291d5789a1703c7ccd716d285f49a0fc6ac0b3c43edee080cb8373f68f"
+      "sha256": "e88b48819317e5430c23d5c680aebb1bca2d41762fb3536ffed2317a264abca0"
     },
     {
       "path": "assets/media/audio-guide-en.vtt",
@@ -529,7 +529,7 @@
       "path": "assets/media/guided-tour.md",
       "role": "transcript",
       "required": false,
-      "sha256": "d1362e71ab128efe39dbd839b07f836a283e155d9bd4be1b76d1bf9bb7a40927",
+      "sha256": "3d637935ebd98b6e0eead3996f5f196ce5f9bb42dc4461927d0a1f34a18809c9",
       "title_zh": "三分钟导览视频文字稿与分镜（中文）",
       "title_en": "Guided-tour transcript and shot list (Chinese)",
       "description_zh": "逐句文字稿，外加九段分镜表：写明每一段配的是哪张图件、为什么配它。",
@@ -539,7 +539,7 @@
       "path": "assets/media/guided-tour-en.md",
       "role": "transcript",
       "required": false,
-      "sha256": "2251cb42e3087ff4fe228deefa18ba32c33355ae795500fb718c097981a720d4",
+      "sha256": "64286eedf25cb271df51d8d3080c6eb19adc37127cbbcba8aae8ab35c52a7ad2",
       "title_zh": "三分钟导览视频文字稿与分镜（英文）",
       "title_en": "Guided-tour transcript and shot list (English)",
       "description_zh": "英文版文字稿与分镜表。",
