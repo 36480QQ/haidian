@@ -98,16 +98,19 @@
   }
 
   /* 用地代码 -> 颜色与中文名（GB/T 21010 大类口径，仅用于图面区分） */
+  /* 用地代码与中文名以正文口径为准：文化(0803)、商业(0901)、科研(0802)、居住(0701)、
+     科教(0804)、商务(0902)、公园绿地(1401)、防护/滨水绿地(1402)、留白(16)。
+     参见 proposal.md「用地、建筑规模与拆改留方案」一节与 land_use.geojson 各要素 name_zh。 */
   var LAND_USE_CLASS = {
-    "0701": { color: "#5C7C9E", label: "教育科研用地", label_en: "Education & research" },
-    "0802": { color: "#8B6FA8", label: "文化设施用地", label_en: "Cultural facilities" },
-    "0803": { color: "#C2607A", label: "体育用地", label_en: "Sports" },
-    "0804": { color: "#B0543F", label: "医疗卫生用地", label_en: "Health care" },
-    "0901": { color: "#C89B3C", label: "商业服务业用地", label_en: "Commercial services" },
-    "0902": { color: "#A8763E", label: "商务金融用地", label_en: "Business & finance" },
+    "0701": { color: "#C9AE86", label: "居住用地", label_en: "Residential" },
+    "0802": { color: "#5C7C9E", label: "科研用地", label_en: "Research" },
+    "0803": { color: "#8B6FA8", label: "文化用地", label_en: "Cultural" },
+    "0804": { color: "#7FA0B8", label: "科教用地", label_en: "Education & science" },
+    "0901": { color: "#C2607A", label: "商业用地", label_en: "Commercial" },
+    "0902": { color: "#9E6350", label: "商务金融用地", label_en: "Business & finance" },
     "1401": { color: "#2F6B4F", label: "公园绿地", label_en: "Park green space" },
     "1402": { color: "#3E6E86", label: "防护/滨水绿地", label_en: "Buffer / waterfront green" },
-    "16": { color: "#6E7F76", label: "交通场站用地", label_en: "Transport facilities" }
+    "16": { color: "#B9BAB0", label: "留白用地", label_en: "Reserved blank land" }
   };
 
   var PHASE_CLASS = {

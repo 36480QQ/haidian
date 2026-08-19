@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c20a303a7501c36dd93b089f30c4be59a47f02b168524269ea79b5935d6213e3"
+      "sha256": "49d1ae1dc9f310b8d3a30fbec9174c07e730d293a842940dfcaf7c4160301a4c"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "2f33fbd0ffe9d77456d90722dcc335003d8a4ed0bc5e82f433e39a261f9201aa"
+      "sha256": "9fd3b365802d0b822ba8fa80464ad0d0003e5384b2f03d350b43cc08a59ee8bf"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "67dfe4f85690b24e3613d7914381ac1c1e8f0883ce630f6a6704194244ca6dba"
+      "sha256": "389f7119282a84737becdec88e330ea54c019072a2db19ee843be6b7d816b65e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "3cec0f872528b1f181d06634a29c9ea2b48e1c54c6f903ba1f84895c6cd72a9a"
+      "sha256": "80fb4fd4ee77e974a96afc3525cda12093cb241ff08277b067660c303ecbb59d"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -487,7 +487,7 @@
       "path": "visual/assets/draw_map.js",
       "role": "visualization",
       "required": false,
-      "sha256": "4a511cd2940c471f510bde9e94219c2d8a260b9f0e38c4823d33097c5b394f1a"
+      "sha256": "2aa8250f7dee162e632a26c1d6cd3483797dc5ef4f0912af365b4de88abc36b4"
     },
     {
       "path": "visual/assets/verify_geometry.js",
@@ -530,6 +530,70 @@
       "role": "visualization",
       "required": false,
       "sha256": "554a88e8d09e708b7efeab396e21105d15a0b2b45ded17a13fe555bbb2ef4391"
+    },
+    {
+      "path": "assets/media/cover.png",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "6ced0835a1c08202778c3d7e0bbd0d6c098f7f055990d902a22e49c2fb8c5663",
+      "title_zh": "方案封面 · 道钉截面与应答声环",
+      "title_en": "Cover — Rail-Spike Section and Answer Rings",
+      "description_zh": "程序化绘制的方案封面，母题为俯视铜道钉圆形与向外扩散的同心声波环。",
+      "description_en": "A programmatically drawn cover whose motif is a rail spike seen from above with concentric answer rings radiating outward."
+    },
+    {
+      "path": "assets/media/narrative.mp4",
+      "role": "video",
+      "required": false,
+      "sha256": "50f86d819a519a847e080a3b810a42da3366eba7f32db06bc72869d6d8718e04",
+      "title_zh": "《百年应答》概念方案短片",
+      "title_en": "The Century Answer — Concept Film",
+      "description_zh": "58秒静音短片，讲述1909年京张之问到今日AI作答的百年叙事，以及道钉带、应答钟、应答门三项机制与三处重点区。画面为程序化绘制的概念示意，非实景照片、非实测数据、非官方审定成果。",
+      "description_en": "A 58-second silent film tracing the century-long narrative from the 1909 Jing-Zhang question to today’s AI answer, and setting out the Rail-Spike Band, the Answer Bell, the Answer Gates and the three key areas. Frames are programmatically drawn conceptual illustrations, not photographs, measured data, or officially approved results.",
+      "poster": "assets/media/cover.png",
+      "caption": "assets/media/narrative.vtt",
+      "transcript": "assets/media/narrative-transcript.md"
+    },
+    {
+      "path": "assets/media/narrative.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "6598daa6fc1aa4aef86ccb5253b68132662c97390728b62ac5eba6276847b03d",
+      "title_zh": "短片字幕（WebVTT）",
+      "title_en": "Concept Film Captions (WebVTT)",
+      "description_zh": "与画面烧录字幕逐字一致的中文字幕轨。",
+      "description_en": "Chinese caption track, word-for-word identical to the burnt-in subtitles."
+    },
+    {
+      "path": "assets/media/narrative-transcript.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "8f057da2e792ec04a8d315f0b61591a3f96ead4ecf533d000e063c898ef8dbcd",
+      "title_zh": "短片完整文字稿",
+      "title_en": "Concept Film Full Transcript",
+      "description_zh": "短片全部叙述内容的文字稿，供无法播放视频时完整获取。",
+      "description_en": "A full transcript of everything narrated in the film, for readers who cannot play video."
+    },
+    {
+      "path": "assets/media/answer-bell.mp3",
+      "role": "audio",
+      "required": false,
+      "sha256": "beec5b6e984c1f9629929c473fa8129acfc1afff24027480d05c8495cdae5b70",
+      "title_zh": "「应答钟」示意音",
+      "title_en": "Answer Bell — Indicative Tone",
+      "description_zh": "程序化合成的钟体余响示意音，说明应答钟装置的听觉意象。不是任何实体钟的实录，与大钟寺古钟博物馆及其馆藏文物无关；方案绝不敲击、移动或商业化使用任何文物古钟。",
+      "description_en": "A programmatically synthesised bell resonance illustrating the auditory idea of the Answer Bell installation. It is not a recording of any physical bell and bears no relation to the Dazhongsi Ancient Bell Museum or its collection; the proposal never strikes, moves, or commercially uses any heritage bell.",
+      "transcript": "assets/media/answer-bell-transcript.md"
+    },
+    {
+      "path": "assets/media/answer-bell-transcript.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "2bdf45bc9ad42dd8f9a799ea626896c8ce81c33b903d640661bfd902967a9dfb",
+      "title_zh": "应答钟音频内容说明",
+      "title_en": "Answer Bell Audio Description",
+      "description_zh": "音频的生成方式、用途与合规边界说明。",
+      "description_en": "How the audio was generated, what it is for, and its compliance boundaries."
     }
   ],
   "validation_claim": {
@@ -537,5 +601,6 @@
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.png"
 }
