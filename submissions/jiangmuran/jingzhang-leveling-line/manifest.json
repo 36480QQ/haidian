@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-19T11:27:43-07:00",
+  "generated_at": "2026-08-19T12:07:53-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,13 +28,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "eca0b7c6e76c6f19390cfce271c8f4faa82e38b0d16284efe0902b63a57d388e"
+      "sha256": "07df1cd62d013e1edccc13fb754be7ead6d0694cf5ac8af230b6fc777e7f3da7"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "3fa86f6e97651844bd4b7d49956ce63635eb2e737376ec7e6b65de2d2f26ac35",
+      "sha256": "05025daa5e566d00320b7351f6c10dbc79f13a1db26c77da5f5977f0c012a0bf",
       "language": "neutral"
     },
     {
@@ -48,7 +48,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "b398ac94b9cc8d9546368d15648aec39abcdfbdb057e22ff0680ca4a54cec59d",
+      "sha256": "5f9f4ccd84412e559b1be2b79c02f4bde4715e6fcf4bf6a00be6203b13500c40",
       "language": "neutral"
     },
     {
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ce720c66127ca9775723c43eea83fd8723ff30bddf3ee056b7225d4aecc31125",
+      "sha256": "43fe456408af6c480d95feabbe3703d1ba7d9aeaed5b3ed89330fef72fe3a4b0",
       "language": "neutral"
     },
     {
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b0eb54acd7c25c36cdb2434a966260b68f90b07e23a41b1508bddfd73cd39805"
+      "sha256": "c53a6d5fb3e3aa98a5508682eee839b56b9cfbcac1a70f8c06fce0366751b580"
     },
     {
       "path": "report/narrative.md",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "372f7bee94b52749990183679b61a9bb063ddda75355ef933b8cd72425551519",
+      "sha256": "49c769b8152cb084fa3ae3ea4c14f0da6d54a06af2b40bc5d181ace93070d9e8",
       "language": "zh"
     },
     {
@@ -133,7 +133,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "fa033b8806d56739cfdbb7d6790a88f9e3cda7f40b98fc469c3be20a06031667"
+      "sha256": "b0f61024dafa09d15caf5f00f71f33b5d2d00c86f2a6b241d031574151027e2a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -266,7 +266,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "4952b8eb09b6f7b76e8b4250bc6648d9f496033d12b88c8c523334d6e6f4969d"
+      "sha256": "ec641d3b6c651aff65aea9f647e882b32364564ac7e01341ec3cd986c6226742"
     },
     {
       "path": "visual/assets/verify.js",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4d23250b0334524631b0e16925c7e79f2d1833dada8e9786e6bdd70df0909bd9"
+      "sha256": "9d2be9b37f20835847578b060d56ddf13fd45004cd75b02e93b3b42d444045dd"
     },
     {
       "path": "report/proposal.en.html",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d02141b0c2114d489b3da9168b785438a677b859d8ca61f95bc828df38a879e8"
+      "sha256": "e6820226ed5248714b66dcdff151e19197f700b7d4b1dc93fca0132cc94f14d4"
     },
     {
       "path": "visual/index.en.html",
@@ -427,7 +427,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "5a7b5463fe904e0b2ef5b02a316e3abb3a765047bcfeacaf59dfcf850da9edc6"
+      "sha256": "48ff174e413f7f8f08eaf9ef4dffded1f7430edc66baaeb3c0b06926ab66c1d1"
     },
     {
       "path": "visual/assets/parity_qa.json",
@@ -584,7 +584,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "51b40924500c9acc71ec6a90be1b79f032d8dcaa7e717a10ada55dc81e598596"
+      "sha256": "c7ba42c46a785698a5afe39b88b41b021a5cf507fa99e767e178c4f86e1363f7"
     },
     {
       "path": "visual/assets/taskbook_coverage.json",
@@ -848,14 +848,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "a0d44799eece658a4f85fbedbb7433f25ceb158380a6b2e42709b092be66db81"
+      "sha256": "7eff915ac4de4363d0347b69b3cd8f29b63a83c5e49a4cf2d0f1065f4b4c08cc"
     },
     {
       "path": "visual/assets/claim_audit.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "60bca2bd72bdbee0a72c245e45a5c895cd7c1cc96c7026201732f32448fa9cde"
+      "sha256": "15a0c6f32cbb7b70b0a2a451a3c778a567bd915b77ebe7bc499d2ccec28c34e9"
     },
     {
       "path": "assets/figures/device.png",
@@ -1101,7 +1101,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "5b8afc6276fd468eacb3d0c07d6f2e6eb4d9cf5844d3b8b3326e8fbe4af03bb7"
+      "sha256": "d04d6f54d1538cac19162af787c9de933a968a185442facb885ea59e473f6e14"
     },
     {
       "path": "assets/media/closure-advance.mp4",
@@ -1165,7 +1165,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/assets/errata.json",
-      "sha256": "46794bdda89c0adfef932a5091bccd03d3be40b421b038c2b656c021d35cb16d"
+      "sha256": "d0162f6f493023660ebad0ee15cfcc96048c112f1bdb829c46a2026d6c34b6d6"
     },
     {
       "path": "visual/assets/role_spec.json",
@@ -1186,14 +1186,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "fd1944fe9717a13905f6406264e5d7aba6873626b740cb7566043f7f1ebcac36"
+      "sha256": "bc39ba3cfcb3684a327ab7014fcf9cf9413d5d403890c3b4687dd77d73fec06a"
     },
     {
       "path": "visual/assets/errata.en-archive.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "cd0f6debe67da48c0d7190428e48ed9ba83112ad14a4d0a969dd996fad90f773"
+      "sha256": "3394a1c805b29439734802056f8194415fc5f6f91b73c96bf6f3b15675cd7356"
     }
   ],
   "validation_claim": {
@@ -1204,8 +1204,8 @@
       "x-self-checked-reason": {
         "schema_version": "0.1",
         "data": {
-          "why_not_mark_self_checked_zh": "组织方的 `--mark-self-checked` 会用它自己的 checks 数组重写 `self_check.json`，那会删掉本包写在其中的 115 条 `PKG_` 读数——正是让这份文件值得一读的那些闸门读数。因此本包不用那个开关：本函数在每次刷新时先把这个标志清为 false（新摘要尚未被核过），再由 `finalise_claim` 在**通过**的一次运行之后置回 true；manifest 不含自身的摘要，写这一个字段不会使任何摘要失效。四道组织方闸门的实跑结果在 `self_check.json` 里逐条可读。",
-          "why_not_mark_self_checked_en": "The organisers' --mark-self-checked rewrites self_check.json with its own checks array, which would delete the 115 PKG_ readings this package writes there - the gate readings that make the file worth reading. So that switch is not used: this function clears the flag on every refresh, because digests nobody has checked yet cannot be claimed as checked, and finalise_claim sets it back to true after a passing run. The manifest carries no digest of itself, so writing this one field invalidates nothing. The four organiser gates and their results are readable row by row in self_check.json.",
+          "why_not_mark_self_checked_zh": "组织方的 `--mark-self-checked` 会用它自己的 checks 数组重写 `self_check.json`，那会删掉本包写在其中的 116 条 `PKG_` 读数——正是让这份文件值得一读的那些闸门读数。因此本包不用那个开关：本函数在每次刷新时先把这个标志清为 false（新摘要尚未被核过），再由 `finalise_claim` 在**通过**的一次运行之后置回 true；manifest 不含自身的摘要，写这一个字段不会使任何摘要失效。四道组织方闸门的实跑结果在 `self_check.json` 里逐条可读。",
+          "why_not_mark_self_checked_en": "The organisers' --mark-self-checked rewrites self_check.json with its own checks array, which would delete the 116 PKG_ readings this package writes there - the gate readings that make the file worth reading. So that switch is not used: this function clears the flag on every refresh, because digests nobody has checked yet cannot be claimed as checked, and finalise_claim sets it back to true after a passing run. The manifest carries no digest of itself, so writing this one field invalidates nothing. The four organiser gates and their results are readable row by row in self_check.json.",
           "four_gate_result_lives_in": "self_check.json"
         }
       }
