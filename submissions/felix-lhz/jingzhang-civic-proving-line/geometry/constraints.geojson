@@ -2994,6 +2994,318 @@
           39.9568191
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-HUMAN-1",
+      "properties": {
+        "id": "V11-ALT-A-HUMAN-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "human_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3485078,
+          39.9573773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-ESTOP-1",
+      "properties": {
+        "id": "V11-ALT-A-ESTOP-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3487656,
+          39.9571797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-ESTOP-2",
+      "properties": {
+        "id": "V11-ALT-A-ESTOP-2",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3492344,
+          39.9568203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-HUMAN-1",
+      "properties": {
+        "id": "V11-ALT-B-HUMAN-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "human_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3484726,
+          39.9568563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-HUMAN-2",
+      "properties": {
+        "id": "V11-ALT-B-HUMAN-2",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "human_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3495274,
+          39.9571258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-ESTOP-1",
+      "properties": {
+        "id": "V11-ALT-B-ESTOP-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3487187,
+          39.9568024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-ESTOP-2",
+      "properties": {
+        "id": "V11-ALT-B-ESTOP-2",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3482265,
+          39.9568024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-ESTOP-3",
+      "properties": {
+        "id": "V11-ALT-B-ESTOP-3",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3492813,
+          39.9571797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-ESTOP-4",
+      "properties": {
+        "id": "V11-ALT-B-ESTOP-4",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3497735,
+          39.9571797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-HUMAN-1",
+      "properties": {
+        "id": "V11-ALT-C-HUMAN-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "human_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3495625,
+          39.9568742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-ESTOP-1",
+      "properties": {
+        "id": "V11-ALT-C-ESTOP-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3493047,
+          39.9568383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-ESTOP-2",
+      "properties": {
+        "id": "V11-ALT-C-ESTOP-2",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498438,
+          39.9568383
+        ]
+      }
     }
   ],
   "data_gap": {
