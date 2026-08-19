@@ -1,8 +1,8 @@
 {
 "schema_version": "errata-v1",
 "note_en": "The English edition of the errata register. It is the same register: one summary per entry id, in the order the entries are published. The Chinese what/why/fix fields and every entry's commit join live in errata.json beside this file, which points here by path.",
-"of_entries": 379,
-"translated": 379,
+"of_entries": 380,
+"translated": 380,
 "summaries": {
 "E01": "Two machine-readable references pointed at feature ids that do not exist — `BUILDING-001` and `LANDUSE-001` against the real `BLDG-001` and `LU-001`.",
 "E02": "”less than half the second-thinnest track” did not hold arithmetically: 14 against 28 is exactly half.",
@@ -83,9 +83,17 @@
 "E77": "Five entries in this register stated a live build quantity in the present tense, and three of them were already false — claims that had outlived their evidence, inside the register of claims that outlived their evidence.",
 "E78": "Every entry in this register is Chinese only, and the English edition cites five of them by number — sending a reader to text that does not exist in their language.",
 "E79": "E78 introduced the rule “publish the numerator and the denominator” and hand-wrote its own denominator, which E78's own existence had already made wrong.",
-"E80": "The harness that proves every gate can fail hard-coded its denominator as 16 against a real 15, and its arithmetic did not close: the gate it had never proven, never listed as unproven, and never counted was itself."
+"E80": "The harness that proves every gate can fail hard-coded its denominator as 16 against a real 15, and its arithmetic did not close: the gate it had never proven, never listed as unproven, and never counted was itself.",
+"E81": "FIG.30 flattened the paid year and stated the quarterly points need not move. Volunteers attend only the second and third order — exactly that tier — so the volunteer year stayed at a 31.0 h peak while the sheet declared the available lever worthless: true of the quantity it was measuring, false of this one.",
+"E82": "The head counts and hour bands the whole cost model runs on were never registered as assumptions — and the reverse index, which sees only `metrics.json`, was telling readers that nothing published rested on seven records that each drive a sheet.",
+"E83": "FIG.32 chose a participation cap when the package already stated one: personas.json describes community readers at a quarterly rhythm, and the chosen cap asked them for six visits a year — more than this proposal says they give.",
+"E84": "The width one standing person occupies was chosen twice under two names — an operator ring on one sheet, a shoulder on another — landing on the same 600 mm by coincidence, with two separate assumption records and nothing joining them.",
+"E85": "Two sheets' rules were copied into a third as literals, each with a comment naming where it came from. A comment that names a source is not a citation: it tells a reader where to look and does nothing when the source moves.",
+"E86": "Adding a thirty-third sheet pushed the English proposal 298 bytes past the 256 KiB intake cap. Every sheet costs prose in both editions and the English one runs longer, so it reaches the ceiling first — with 415 bytes left, the package can no longer add a sheet without trimming.",
+"E87": "A sentence claimed “the current corpus of 727” while the corpus stood at 793, and the staleness gate could not see it: that gate knows the corpus sizes this package has recorded, and 727 was never one — it was a one-off denominator. The phrase is the tell, not the value.",
+"E88": "E87's lesson turned on this package's own gates found the same shape in computed_value_qa: it checks nine quantities because someone wrote nine patterns, while metrics.json carries dozens the prose cites. The fix enumerates nothing — the suspicious values are read from git, since a value a metric used to hold is wrong by construction."
 },
-"archived_entries": 299,
+"archived_entries": 292,
 "archive_of": "visual/assets/errata.en.json",
-"split_note_en": "The organisers cap a single JSON at 512 KiB. This file carries the most recent 299 English summaries and the other 80 are in visual/assets/errata.en-archive.json, same schema, nothing removed and no wording changed. Both state the total, so neither can be read as the whole. The Chinese register has been split this way since E307; this one was written whole until it crossed the cap (E377)."
+"split_note_en": "The organisers cap a single JSON at 512 KiB. This file carries the most recent 292 English summaries and the other 88 are in visual/assets/errata.en-archive.json, same schema, nothing removed and no wording changed. Both state the total, so neither can be read as the whole. The Chinese register has been split this way since E307; this one was written whole until it crossed the cap (E377)."
 }
