@@ -74,6 +74,12 @@
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/honor-display-system.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/independent-verification-protocol.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/logo-specimen.svg",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/philosophy/epistemic-grading.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/philosophy/first-person-scripts.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/philosophy/incentive-compatibility.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/philosophy/self-update-protocol.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/philosophy/site-necessity.json",
+        "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/philosophy/value-tradeoffs.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/public-interest-audit.json",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/run_accountability_tabletop.js",
         "submissions/zachshi-ai/jingzhang-ai-civic-services/visual/assets/run_guarantee_tabletop.js",
@@ -86,7 +92,7 @@
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-ai-civic-services": "formal"
       },
-      "total_bytes": 2818671,
+      "total_bytes": 2848979,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -165,14 +171,14 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 29,
+        "known_metric_refs_required": 35,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 12,
           "standard": 2,
           "depth": 4,
-          "data": 27,
+          "data": 33,
           "metric": 11
         }
       }
