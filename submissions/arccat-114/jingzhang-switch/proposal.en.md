@@ -4,10 +4,10 @@ author_github: "arccat-114"
 language: "en"
 translation_of: "proposal.md"
 license: "CC-BY-4.0"
-summary: "Reading the Jing-Zhang rail-heritage corridor as the city's SWITCH: Zhan Tianyou used a herringbone switchback to climb a steep slope in 1909; today the AI Innovation Belt performs another switch on the same ground — research switching to industry, laboratories switching to the city, culture switching to experience. The scheme organizes space as ONE SWITCH, THREE YARDS, TWO SIDINGS: the Switch Heart (interchange hub in the Jing-Zhang park), the Departure Yard (Beijing AI Origin Community), the Acceleration Track (Zhongzhiyuan), the Marshalling Yard (Dazhongsi), the Service Siding (Zhongguancun technology-services wing) and the Scenario Siding (Xiaoyuehe scenario wing). Twelve AI scenarios are governed by a rail-lexicon state machine (red-light pause, manual takeover, decommissionable); four AI pilgrimage landmarks connect to the commemoration mechanism. Conceptual proposal on provisional boundaries, for professional teams to develop."
+summary: "Reading the Jing-Zhang rail-heritage corridor as the city's SWITCH: Zhan Tianyou used a herringbone switchback to climb a steep slope in 1909; today the AI Innovation Belt performs another switch on the same ground — research switching to industry, laboratories switching to the city, culture switching to experience. The scheme organizes space as ONE SWITCH, THREE YARDS, TWO SIDINGS: the Switch Heart (interchange hub in the Jing-Zhang park), the Departure Yard (Beijing AI Origin Community), the Acceleration Track (Zhongzhiyuan), the Marshalling Yard (Dazhongsi), the Service Siding (Zhongguancun technology-services wing) and the Scenario Siding (Xiaoyuehe scenario wing). Twelve AI scenarios are governed by a rail-lexicon state machine (red-light pause, manual takeover, decommissionable); five slow variables and four review gates connect public benefit, space, and annual operation; four AI pilgrimage landmarks connect to the commemoration mechanism. Conceptual proposal on provisional boundaries, for professional teams to develop."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v1.17"
+iteration: "v2.8"
 proposal_format_version: "2"
 ---
 
@@ -70,6 +70,33 @@ This scheme makes the boundary between known and unknown explicit and auditable 
 | What is deliberately withheld | FAR, height, density, setbacks, road redlines, parcel-level retain-renovate-demolish conclusions, engineering alignments, investment estimates — uniformly registered pending official data | Corresponding metric status in metrics.json [metric:floor_area_ratio] |
 | Where are the method's boundaries | All spatial content is conceptual; wholesale recalculation with a public diff table when official boundary and controls arrive; provisional precision limits disclosed | Assumption register and recalculation commitment [assumption:A-BOUNDARY-001] |
 
+## Six-Agent Deliverable Chain (Reader Version)
+
+The six agent tasks are not only present in machine-readable files. They are placed on one traceable chain across the narrative, drawings, matrices, and future operation. Each row identifies the visible deliverable, its verification point, and the interface that still needs professional development; “suggested” never means a government commitment or an engineering conclusion.
+
+| Task | Deliverable readable in this package | Where to verify | Next responsibility interface |
+|---|---|---|---|
+| agent.1 overall concept | SWITCH name and logo direction, One Switch–Three Yards–Two Sidings, Scenario-Code | Sections 3–4; overall drawings and `compliance_matrix.json` | Planning/design team verifies official boundaries and hierarchy |
+| agent.2 ecosystem | Six case translations, an eight-factor ecosystem loop, five minimum regional interfaces | Ecosystem and synergy tables in Section 3 | Industry/operations team verifies resources, ownership, and availability |
+| agent.3 AI+scenarios | 12 scenario cards, 3 industry tests, 6 personas, manual fallback and exit | Section 6; `visual/assets/switch-protocol.json` | Scenario operators pilot, review, and close each card |
+| agent.4 public space | East–west stitching, north–south continuity, 4 landmarks, 10 detachable components and lifecycle | Sections 8–9; public-space layers | Transport, landscape, heritage, and accessibility teams deepen together |
+| agent.5 cultural fusion | Jing-Zhang switchback narrative, heritage siding, internationally legible wayfinding, heritage preconditions | Sections 1, 3, 9, and 12 | Heritage and cultural-content teams verify sources and placements |
+| agent.6 long-term operation | SWITCH CON, four seasons, annual switch ledger, phasing, and exit | Section 10; phasing layer | Public-space operator publishes quarterly evidence and stop decisions |
+
+## Five Slow Variables and Four Review Gates
+
+The signal-light system already governs the lifecycle of an individual scenario. Long-term quality also needs slower variables. This round therefore adds five slow variables without inventing unmeasured targets: each begins with a baseline, frequency, responsible actor, and public evidence; deterioration triggers review rather than being hidden by one successful event.
+
+| Slow variable | First baseline and frequency | Public evidence | Triggered action |
+|---|---|---|---|
+| SV-01 continuity of access | Map greenway, station, and accessibility gaps; review quarterly | Gap register and manual-throughput record | Pause new installations until gaps are addressed |
+| SV-02 shade and staying comfort | Observe south/middle/north segments by season; four checks per year | Shade, seating, and wet-weather usability log | Improve public service before expanding events |
+| SV-03 availability of human service | Post service windows and offline paths at all three yards; sample monthly | Duty hours, response log, accessibility feedback | A scenario cannot turn green without a human fallback |
+| SV-04 continuity of local life | Residents, merchants, cleaners, and operators record impacts; quarterly | Impact register, feedback, adjustment log | Affected groups may raise a red card and request redesign |
+| SV-05 public trust and heritage legibility | Public Q&A, heritage checks, and readable explanation; quarterly | Source feedback, heritage precondition list, retirement list | Freeze promotion and landmark deepening until disputes close |
+
+Four review gates reconnect these variables to the existing interlocking protocol: G1 data and safety boundary, G2 human service and access, G3 affected-group review, and G4 annual slow-variable health. T0–T5 still govern application, review, pilot, evaluation, and retirement for each scenario; G1–G4 ask whether the urban track remains fit to operate.
+
 ## 1. Design Basis and Source List
 
 The task boundaries of this scheme come from the official announcement and the agent-facing open-call taskbook: the announcement defines the three scope levels, the three key areas, and the depth of deliverables; the taskbook defines the six agent tasks, three positionings, and ten co-creation principles [source:OFFICIAL-ANNOUNCEMENT][source:AGENT-TASKBOOK]. Professional judgment follows five national-level regulations and policies: urban design follows the Measures for Urban Design Administration; the "known–pending" boundary follows the Measures for the Compilation and Approval of Regulatory Detailed Plans for Cities and Towns; land-use coding follows the Land and Sea Use Classification Guide for Territorial Spatial Survey, Planning and Use Control [standard:MOHURD-URBAN-DESIGN-MEASURES][standard:MOHURD-CONTROL-DETAILED-PLANNING][standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]; AI-scenario compliance follows the Interim Measures for the Management of Generative Artificial Intelligence Services, and accessibility follows the Law on the Construction of Barrier-Free Environments [standard:GENERATIVE-AI-INTERIM-MEASURES][standard:BARRIER-FREE-ENVIRONMENT-LAW]. The official text of the architectural design depth regulation is not yet in the repository; this package registers it honestly as a data gap and does not claim architectural design depth [standard:MOHURD-ARCH-DESIGN-DEPTH-2016].
@@ -109,6 +136,35 @@ The three-areas-two-wings loop runs as "departure–acceleration–marshalling":
 ### 3.4 Regional Synergy Network: The Master Switch of the National Innovation Rail Network
 
 The switch metaphor extends one step further: **the Jing-Zhang Innovation Belt is not an isolated corridor but the "master switch" of the national innovation rail network** — it joins the innovation rails of two directions [source:THREE-AREAS-WINGS][depth:three_level_scope_framework]. Northbound: the Jing-Zhang high-speed corridor directly links the Beiwei community, Future Science City and Huairou Science City, forming a "basic research – applied research – industrial conversion" gradient, with Zhongzhiyuan as the acceleration track of this gradient; southbound: it forms a closed loop with the E-Town (Yizhuang) economic development zone and Daxing airport economic zone — "R&D in Haidian, manufacturing in Yizhuang" — with the Dazhongsi Marshalling Yard as the interchange point of this loop; westbound: the Jing-Zhang heritage corridor leads to Zhangjiakou and the Winter Olympics legacy, an extension of the century-old railway narrative and a ready-made international story line [source:JZ-HERRINGBONE-PAPER]. The three areas and two wings are therefore not merely an internal loop but an interface device plugged into the national and Beijing–Tianjin–Hebei innovation network: the Origin Community plugs into university sourcing, the Service Siding into Zhongguancun capital and factors, the Scenario Siding into urban scenarios along Xiaoyuehe, and Zhongzhiyuan into science-city compute and facilities [depth:overall_spatial_structure]. This section is a conceptual synergy framework; specific linkage mechanisms await deepening by professional teams and relevant stakeholders.
+
+### 3.4.1 AI Innovation-Ecosystem Factor Loop (agent.2)
+
+The point of studying global cases is not to list more parks, but to connect eight factor types to local spatial interfaces and define the first public evidence for each. These are conceptual interfaces, not existing supply, agreements, financing, or compute commitments.
+
+| Factor | Local SWITCH interface | Responsibility / partner type | First public evidence | Explicitly not claimed |
+|---|---|---|---|---|
+| Land and frontage | Key areas, greenway, and station-front public interfaces; ownership and redlines first | Planning, ownership, and operations bodies | Ownership/boundary register and frontage-open record | No available land or development capacity |
+| Space | Three-yard service windows, active ground floors, detachable components | Landscape, district, and site operators | Open hours and accessibility-gap register | No statutory building quantity |
+| Industry | Three test scenes SW-04/05/11 under sandbox and independent review | Enterprise, research, and scenario operators | Test protocol, failure taxonomy, exit report | No tenants, procurement, or investment-attraction promise |
+| Capital and policy | Renewal project bank and policy toolkit as search paths, not funds | Project-application and policy-advice interfaces | Applicability checklist and application result | No financing, subsidy, or policy approval |
+| Talent | Origin open-source incubation, education lab, SWITCHMAN community | Universities, developers, and education operators | Contribution log and course/participation log | No talent scale or stable supply claim |
+| Compute | Conceptual edge-test and governance-lab sockets at Zhongzhiyuan | Compute and research-facility professionals | Capacity, energy, and safety assessment | No existing compute capacity or access permission |
+| Data | De-identified, synthetic, and sandbox data; aggregated state only | Data operator, audit, and privacy duty holder | Data dictionary, deletion proof, audit record | No raw personal data and no compliance conclusion |
+| Scenarios | 12 cards, T0–T5 lifecycle, red-light pause and retirement | Scenario operator, public, and independent reviewer | Scenario card, red-light drill, annual review | No one-off demo presented as permanent deployment |
+
+This table translates “case inspiration” into a factor–space–responsibility–evidence–boundary loop: a factor stays at the conceptual-interface level until its first public evidence exists and it passes the next review gate [source:AGENT-TASKBOOK][source:SOURCE-REGISTRY][depth:risk_missing_data].
+
+### 3.4.2 Minimum Regional Interfaces (agent.1/agent.2)
+
+Regional synergy is expressed as exchangeable objects rather than a partnership roster, so every interface can be verified, refused, or retired. Each starts with a small proof before any continuation; transport links, industrial gradients, and collaboration hypotheses are not presented as completed facts.
+
+| Regional object | Exchangeable object | SWITCH socket | First proof | Exit / non-claim |
+|---|---|---|---|---|
+| AI Beiwei Community | De-identified resident problem cards and human-service feedback | Origin Community / Scenario Siding service desk | Consent record and manual follow-up | No presumed resident consent to deployment |
+| Future Science City | Edge-model benchmark and failure taxonomy | Zhongzhiyuan acceleration-track test protocol | Benchmark report and responsibility sign-off | Results are not automatically mutually recognised |
+| Huairou Science City | Instrument time-synchronisation method and data vocabulary | Governance/data socket at Signal Plaza | Vocabulary checklist and professional responsibility confirmation | No imagined instrument or data resource |
+| E-Town | Engineering feedback and interoperability requirements | Dazhongsi industry test | Interoperability record and maintenance list | No procurement, manufacturing, or landing promise |
+| Beijing–Tianjin–Hebei | De-located scenario-card and protocol format | SWITCH interlocking-protocol version interface | Legally reviewed format sample | No copied coordinates, approvals, or policy conclusions |
 
 ### 3.5 Situation Comparison: Why the Switch
 
@@ -198,6 +254,22 @@ This chapter's governance claim fits in one sentence: **the city opens interface
 | International visitor / AI pilgrim | Global developers and tourists | Culture, landmarks, international events | Kilometer Zero, Switch monument, SWITCH CON |
 | City manager | Government and public agencies | Governance visualization, public participation, global voice | Signal tower, interlocking-protocol mechanisms |
 
+### 6.1.1 Public Benefit and Participation Rights
+
+“Who benefits” must become a service path, visible evidence, and a stop right rather than remain a persona label. The table turns the taskbook’s public-value requirement into an interface that each group can use, challenge, and leave.
+
+| Group | Direct public benefit | Equivalent service / participation path | Visible evidence and stop right |
+|---|---|---|---|
+| Local residents and older people | Continuous walking, shade, seating, and offline advice | Human window and paper guide remain available without AI | Access/response log; resident representatives may raise a red card |
+| Children and caregivers | Safe education and cultural experience | Teacher/caregiver present; no default entry into controlled tests | Course and incident log; caregivers may request exit |
+| Low-digital-literacy and disabled people | Accessible, understandable, repeatable service | On-site guidance, manual processing, text/tactile alternatives | Accessibility-gap register; no green light until addressed |
+| Merchants and small operators | Predictable footfall and protected active frontage | Appointment, time limits, and human negotiation; no forced platform entry | Impact register; merchants may request a time change or removal |
+| Cleaners, security, maintenance, and shuttle staff | Clear responsibility and safe working conditions | Paper fault card, manual takeover, and exit sign | Duty and maintenance log; frontline staff may trigger yellow/red |
+| Developers and researchers | Auditable sandbox, community, and contribution loop | Version lock, IP boundary, and reversible experiments | Test report and version lineage; no bypassing review gates |
+| Visitors and external publics | Readable history, rules, and international experience | Bilingual/non-digital guide; experience does not require personal data | Sources and complaint handling public; freeze promotion while disputes remain |
+
+This table is the public interface of the scenario cards, not a new promise: a scenario enters the existing T0–T5 lifecycle only when service equivalence, vulnerable-group protection, and affected-group review are all present [source:AGENT-TASKBOOK][standard:BARRIER-FREE-ENVIRONMENT-LAW].
+
 ### 6.2 AI Scenario Cards (12)
 
 All scenarios are governed by a rail-lexicon state machine — **green light to run, yellow light to slow (manual sampling), red light to pause (decommissionable)** — each card stating location, users, data boundaries, manual review, and operator [standard:GENERATIVE-AI-INTERIM-MEASURES]. The state machine is formalized as a machine-readable protocol (`visual/assets/switch-protocol.json`): transitions require human sign-off, red never goes directly to green, retirement is terminal, and a red-light withdrawal drill runs quarterly — the city opens interfaces to agents, while humans keep the interrupt right [depth:three_key_area_detailed_design]. **Legal interfaces are registered per card**: every scenario card records its direction of legal obligations (personal-data minimisation, data classification, generative-AI content labelling, intelligent-connectivity test rules, public-imagery management, minors protection, etc., in the `legal_interfaces` field of `switch-protocol.json`) — registration is an operational transparency layer, not a substitute for statutory procedures, and this package makes no compliance determinations [source:CN-LEGAL-INTERFACE-REFS][standard:GENERATIVE-AI-INTERIM-MEASURES]. **Legal interfaces are registered per card**: every scenario card records its direction of legal obligations (personal-data minimisation, data classification, generative-AI content labelling, intelligent-connectivity test rules, public-imagery management, minors protection, etc., in the `legal_interfaces` field of `switch-protocol.json`) — registration is an operational transparency layer, not a substitute for statutory procedures, and this package makes no compliance determinations [source:CN-LEGAL-INTERFACE-REFS][standard:GENERATIVE-AI-INTERIM-MEASURES].
@@ -225,6 +297,14 @@ Scenarios 4, 5, and 11 are industry test/validation scenarios (three), meeting t
 
 **Scenario–space–operation mapping** (agent.3 complete matrix): all 12 scenario cards map to spatial layers, operators, data boundaries, manual review and exit paths; the machine-readable version lives in `visual/assets/switch-protocol.json`; the three scenario zones map onto the one-switch-three-yards-two-sidings layout — S1 high-openness (Switch Heart/greenway: SW-01/02/03/07/12), S2 medium-openness (Origin/Dazhongsi: SW-05/06/08/09/10), S3 controlled (Zhongzhiyuan laboratories: SW-04/11) [source:AGENT-TASKBOOK][depth:three_key_area_detailed_design].
 
+| Pilot | Pre-pilot baseline | Minimum success | Stop condition | First public artifact |
+|---|---|---|---|---|
+| SW-04 Switchman's Hut manual takeover | Safety-barrier baseline on synthetic/de-identified data | Red-light drill complete with zero manual-takeover incidents | Any takeover incident or unclear boundary | Drill record, independent review, responsibility sign-off |
+| SW-05 Marshalling data sandbox | Data dictionary, permissions, and deletion-flow baseline | De-identified training passes independent audit | Raw-data boundary breach or unverifiable deletion | Data dictionary, audit report, exit form |
+| SW-11 Tunnel Privacy Shield | Privacy-compute performance and leakage baseline | Independent audit passes with no data leakage | Leakage found or audit cannot be reproduced | Test summary, deletion proof, appeal record |
+
+For all three cards, numerical thresholds are frozen from measured baselines before the pilot. The table publishes the decision structure in advance without presenting a conceptual proposal as an achieved result [source:DESIGN-CONCEPT-SWITCH][depth:risk_missing_data].
+
 **Scenario narrative: a founder's "switch day"** — at 9 a.m. she joins a "departure ceremony" at Kilometer Zero Plaza: the AI-assisted business-plan review passes expert verification first, then green light [data:geometry/public_space.geojson#PUBLIC-003]; at noon she walks along the greenway spine to the Marshalling Yard and submits de-identified data to the enterprise sandbox for compliance training — the sandbox shows a yellow "under audit" state, with data boundaries and exit conditions visible [data:geometry/public_space.geojson#PUBLIC-003]; at dusk she returns to the Switch Monument at the Switch Heart and sees two new developer inscriptions added today — her open-source contribution points are already counted [data:geometry/public_space.geojson#PUBLIC-002]. Throughout the day, no pilot is ever permanent: every scenario shows its signal-light state and next time-check, red cards pause, humans take over, expiry decommissions [standard:GENERATIVE-AI-INTERIM-MEASURES][source:DESIGN-CONCEPT-SWITCH]. Each industry test scenario carries an **eleven-field pilot card** (baseline, pilot window and sample, minimum success threshold, stop threshold, on-site responsible person, human equivalent service, data deletion proof, review period, beneficiary or risk-bearing group, resources and permits, appeal and accountability path); thresholds are frozen from measured baselines before pilots, and this package fabricates no values [source:DESIGN-CONCEPT-SWITCH][depth:phasing_implementation]: the Switchman's Hut manual-takeover test field takes "drill completed with zero manual-takeover incidents" as its minimum success criterion; the Marshalling data sandbox takes "de-identified compliance training passed independent audit"; the Tunnel Privacy-Shield test field takes "privacy-computing validation passed independent audit with no data leakage".
 
 ## 7. Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
@@ -237,7 +317,20 @@ Land use unfolds around the greenway axis with two wings: 26 conceptual land-use
 
 The official target this chapter serves is explicit: the draft regulatory plan sets a **2035 green-travel share of 80%** for its concentrated built-up area [source:HD00-1601-DRAFT-GUIDE] — the slow-traffic work of the south and middle belt serves this target directly, working on travel-mode structure rather than vehicle capacity. Two nodes already have official dispositions in the draft plan’s adoption notice: North Third Ring Road and Sidaokou Road are marked as **separated interchanges**; **Zhichun Road is an under-rail segment without at-grade crossing conditions, planned as a separated interchange with reserved connecting-road conditions** [source:HD00-1601-CONTROL-NOTICE] — the two stitching corridors therefore pose two different problems: North Third Ring needs continuous pedestrian fabric within a motorway system, while Zhichun Road needs to catch ground-level walking above an underpass; one generic section cannot serve both.
 
-The transport skeleton is "one spine, six branches": the greenway spine runs north–south along the site axis (conceptual skeleton of c. 9.7 km) [data:geometry/roads.geojson#ROAD-001][metric:greenway_length_m]; six cross branches link the two wings and rail stations [data:geometry/roads.geojson#ROAD-002]; station connections follow "rail + slow traffic + low-speed shuttle", dispatched by the Timetable scenario on event days.
+### 8.4 East–West Stitching and North–South Continuity Interfaces (agent.4)
+
+“Stitching” is not a pretty line in this package. Each break has a human alternative, acceptance evidence, and an engineering boundary. The table states what professional teams must deepen without presenting a conceptual line as an approved road scheme.
+
+| Interface | Current pending question | Concept interface action | Human fallback and acceptance evidence | Engineering boundary |
+|---|---|---|---|---|
+| North Third Ring–Sidaokou | Continuous walking and station-front guidance within a motorway system | Connect both sides of the separated interchange to the greenway, with readable wayfinding | Human guidance, accessibility log, gap register | No bridge section, redline, or capacity conclusion |
+| Zhichun Road under-rail segment | No at-grade crossing; how ground-level walking reconnects | Connect both ends to slow-traffic branches and service windows, retaining a ground-level alternative | Wet-weather/night walking drill, lighting and response log | No tunnel, underground-space, or municipal-engineering conclusion |
+| Xueyuan Road–Zhongguancun service wing | East-side frontage and active-ground-floor continuity | Responsibility signs, detachable wayfinding, appointment and offline service desk | Opening hours, frontage accessibility, complaint log | No capital, company, or shuttle-resource promise |
+| Xiaoyuehe scenario wing | Impact of pop-ups on everyday life | Time-limited permits, manual takeover, removable components, exit plaque | Impact register, merchant/resident review, removal record | No Xiaoyuehe blue-line or engineering alignment |
+
+Together these four interfaces form the public-space acceptance checklist for “north–south continuity and east–west switching”. If an interface has no human path or evidence record, it remains at the conceptual-research level [source:HD00-1601-CONTROL-NOTICE][standard:BARRIER-FREE-ENVIRONMENT-LAW][depth:risk_missing_data].
+
+The transport skeleton is “one spine, six branches”: the greenway spine runs north–south along the site axis (conceptual skeleton of c. 9.7 km) [data:geometry/roads.geojson#ROAD-001][metric:greenway_length_m]; six cross branches link the two wings and rail stations [data:geometry/roads.geojson#ROAD-002]; station connections follow “rail + slow traffic + low-speed shuttle”, dispatched by the Timetable scenario on event days.
 
 ![Greenway spine typical section (conceptual)](assets/figures/greenway-section.en.png)
 
@@ -278,6 +371,17 @@ The blue-green network takes the Jing-Zhang conceptual greenway as its skeleton:
 | Honour-wall module | Replaceable panels with readable contribution criteria, version, and removal process | Pilgrimage line and greenway nodes | Public honour; procedural transparency |
 | Manual-service window sign | Visible human advice, offline service, and response duty; never substitutes service with a screen | Three-yard service nodes and event entries | G2 manual fallback; age-friendly access |
 | Exit/recovery plaque | Component state, responsible party, review date, and removal condition | All belt nodes | Red-light pause; recovery loop |
+
+**Component lifecycle ledger (four representative items)**: a component is not complete when it is placed. It passes through installation, operation, review, and removal. The other six items use the same fields.
+
+| Representative component | Before installation | During operation | Review and public evidence | Removal / recovery |
+|---|---|---|---|---|
+| Switching wayfinding post | Accessibility, heritage, and ownership check | Bilingual/non-digital information and human questions | Quarterly legibility and access record | Replaceable face; exit plaque names owner and date |
+| Data-sandbox information screen | Data minimisation and offline/power-loss plan | Aggregated state, audit stage, and exit only | Audit summary, fault card, deletion proof | Disconnect and recover if disputed or yellow window expires |
+| Manual-service window sign | Duty hours and human workflow first | Offline service remains if screen fails | Response time, complaints, service-equivalence record | Announce withdrawal first and keep a paper path |
+| Exit/recovery plaque | Operator, review date, and exit condition named | Updated with each state transition | Red-light drill, maintenance log, public review | Remove at expiry, restore site, retain a diff record |
+
+This lifecycle ledger connects G1/G2 data-and-human gates, G3 public review, and G4 slow-variable health to physical components. A component without an owner, review date, and recovery path cannot enter professional deepening [source:DESIGN-CONCEPT-SWITCH][standard:BARRIER-FREE-ENVIRONMENT-LAW].
 
 All ten items are conceptual design suggestions: no construction dimensions, material specifications, or engineering-safety conclusions are asserted. Installation, maintenance, removal, heritage review, and accessibility verification belong to professional deepening [source:AGENT-TASKBOOK][depth:three_key_area_detailed_design][source:DESIGN-CONCEPT-SWITCH].
 
@@ -331,6 +435,19 @@ This ledger is a conceptual implementation framework: operators, policies and ac
 The second phase of the Jing-Zhang railway heritage public-space renewal opened on 2026-08-06, linking Xizhimen to the North Fifth Ring Road as a 9 km cultural green corridor [source:JZ-PARK-PHASE2-OPEN-2026]. This scheme builds **incrementally on the completed base**: greenway slow-traffic and accessibility retrofits, node activation at the Switch Heart and station plazas, and lightweight scenario installations follow the principle of "no damage to the completed public space; light-touch intervention first"; any change involving existing works requires professional assessment and due procedures with the competent authorities [source:JZ-PARK-PHASE2-OPEN-2026][assumption:A-CONTROLS-003].
 
 **Global AI event system and long-term operation** (agent.6): the flagship annual event **SWITCH CON** (global developer annual meeting + scenario open day + AI governance forum); a four-season event system — Spring Departure Festival (start-up roadshows), Summer Signal-Light Festival (governance and safety week), Autumn Marshalling Festival (industry matching and sandbox opening), Winter Kilometer-Zero Festival (year-end honours and commemoration) [depth:phasing_implementation]. Developer-community operation: the "SWITCHMAN PROGRAM" — tiered developer certification, open-source contribution points, linked to landmark honour display [source:AGENT-TASKBOOK]. Scenario-open operation: the "Interlocking Protocol" — scenarios must pass signal-light review before launch and can be red-light withdrawn, protecting public trust [standard:GENERATIVE-AI-INTERIM-MEASURES]. International communication and conversion: an annual "Switch Manifesto", a developer pilgrimage route, and international media partnerships; the conversion path is "scenario experience → community join → enterprise landing → honour display" in four stages. All events and mechanisms are conceptual suggestions [assumption:A-SCENARIO-005][depth:phasing_implementation].
+
+### 10.4 Annual Switch Ledger and Four-Season Acceptance
+
+The four-season system does not treat “held once” as proof of long-term operation. Each season must leave evidence that can be retained, reviewed, or retired. Events, scenarios, and public space share the G1–G4 review gates; if a season reveals public-interest or slow-variable harm, the next season repairs first and does not renew automatically.
+
+| Season / action | Main participants | Evidence that must remain | Focus metric | Action if not passed |
+|---|---|---|---|---|
+| Spring Departure: open source and education | Universities, developers, students, caregivers | Course/contribution log and human-service feedback | Participation mix and service equivalence | Reduce event and add human path |
+| Summer Signal-Light: red-light drill | Operators, independent reviewers, resident representatives | Drill record, responsibility sign-off, issue closure | Takeover safety and complaint response | Freeze new scenarios and publish review |
+| Autumn Marshalling: sandbox and industry tests | Enterprises, researchers, data duty holders | Test summary, audit opinion, deletion proof | Data boundary and audit reproducibility | Return to sandbox or retire; do not substitute promotion for acceptance |
+| Winter Kilometer Zero: annual public review | Residents, merchants, maintenance staff, visitors, operators | Annual slow-variable sheet and retain/adjust/retire list | G4 slow-variable health and public trust | Retain only projects that pass review next year |
+
+The annual ledger cross-references the implementation ledger, the `switch-protocol.json` version lineage, and public complaint records. It is a suggested operating and audit format, not an approved event calendar or government commitment [source:AGENT-TASKBOOK][source:DESIGN-CONCEPT-SWITCH][depth:phasing_implementation].
 
 ## 11. Metrics, Area Recalculation, and Compliance Matrix
 
