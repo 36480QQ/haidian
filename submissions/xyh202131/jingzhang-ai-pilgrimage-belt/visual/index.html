@@ -186,6 +186,21 @@
         text-decoration-thickness: 2px;
         text-underline-offset: 3px;
       }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header {
+          break-after: page;
+        }
+        section {
+          break-inside: avoid;
+        }
+        table,
+        figure {
+          break-inside: avoid;
+        }
+      }
     </style>
     <link rel="stylesheet" href="assets/spatial-atlas.css" />
     <link rel="stylesheet" href="assets/review-walkthrough.css">
@@ -360,6 +375,22 @@
         <div class="notice">
           <strong>评审收束：</strong>
           先读“一概念、三原型、一内核”，再用六项任务核对证据，最后把 D01—D08 现实缺口交给 P01—P07 建议专业类型。本区 <code>#review-handoff</code> 是唯一 15 分钟专业交接起点；五步可访问漫游只从这里继续，不构成第二入口。H01—H07 只是未提交的交接／证据包，不是人、专业或已接受责任；只有未来胜任且接受明确范围的专业方才可在该范围内作出专业处置。评审收束不新增品牌、场景、项目、geometry 或成熟度；任何重大缺口继续 NO-GO。
+        </div>
+        <div id="t02-evidence-backlink" aria-labelledby="t02-evidence-backlink-title">
+          <h3 id="t02-evidence-backlink-title">可执行 T-02 证据回链示例</h3>
+          <p><strong>先分对象：</strong>项目条目 <code>T-02</code> 当前是 <code>NO-GO</code>；<code>t02-g0-g1</code> 是 10 个固定合成案例的确定性治理复演，结果 <code>PASS</code>。后者只证明合同字段、来源闭包、规则优先级与停止／恢复映射可重放，不证明现场、G1、批准、项目通过、专业接责或真实非 AI 等价。</p>
+          <table tabindex="0">
+            <thead><tr><th scope="col">回链步骤</th><th scope="col">现有对象／状态</th><th scope="col">已有文件与 JSON pointer</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">1 · 项目对象</th><td><code>T-02</code> · <code>SCENE-011/012</code> · <code>NO-GO</code></td><td><a href="assets/implementation-handoff-matrix.json"><code>implementation-handoff-matrix.json#/item_handoffs/9</code></a>；空间回链 <code>geometry/constraints.geojson#SCENE-011</code>、<code>#SCENE-012</code></td></tr>
+              <tr><th scope="row">2 · 大钟寺证据</th><td><code>KAE-003</code> · <code>PROV-KEY-003</code> · 场景节点含 <code>SCENE-011/012</code></td><td><a href="assets/key-area-evidence-matrix.json"><code>key-area-evidence-matrix.json#/records/2</code></a></td></tr>
+              <tr><th scope="row">3 · 同任务双路径</th><td><code>PARITY-002</code> ↔ <code>SCENE-011</code>；<code>PARITY-005</code> ↔ <code>SCENE-012</code>；均为 <code>unknown_not_measured</code></td><td><a href="assets/non-ai-parity-contract.json"><code>non-ai-parity-contract.json#/test_journeys/1</code></a>、<a href="assets/non-ai-parity-contract.json"><code>#/test_journeys/4</code></a></td></tr>
+              <tr><th scope="row">4 · 合成复演限定</th><td><code>T02-G0-G1-SYNTHETIC-REPLAY-RESULT-V1</code> · 10/10 精确匹配 · <code>PASS</code>，仅限合成治理复演</td><td><a href="assets/t02-g0-g1-replay-result.json"><code>t02-g0-g1-replay-result.json#/summary</code></a>、<code>#/proves_zh</code>、<code>#/does_not_prove</code>、<code>#/real_world_status</code></td></tr>
+              <tr><th scope="row">5 · 交接包</th><td><code>H01—H07</code> 全部 <code>not_submitted</code>，不是人员或已接受责任</td><td><a href="assets/implementation-handoff-matrix.json"><code>implementation-handoff-matrix.json#/handoff_pack_definitions</code></a></td></tr>
+              <tr><th scope="row">6 · 建议专业类型</th><td><code>P01—P07</code> 全部 <code>suggested_role_type_only</code></td><td><a href="assets/implementation-handoff-matrix.json"><code>implementation-handoff-matrix.json#/professional_discipline_matrix</code></a></td></tr>
+              <tr><th scope="row">7 · 状态并列，不得升级</th><td><code>G0</code> + <code>NO-GO</code> + <code>unknown_not_measured</code> + <code>not_fully_cleared</code></td><td><a href="assets/review-handoff-index.json"><code>review-handoff-index.json#/t02_evidence_backlink/parallel_status</code></a>；权利源 <a href="assets/source-rights-evidence.json"><code>source-rights-evidence.json#/clearance_claim/status</code></a></td></tr>
+            </tbody>
+          </table>
         </div>
         <section id="package-index" aria-labelledby="package-index-title">
           <h3 id="package-index-title">包内导航与评审交接索引</h3>

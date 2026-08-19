@@ -1143,6 +1143,658 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-BASE-NS",
+      "properties": {
+        "id": "V11-ALT-A-BASE-NS",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "public_baseline_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.349,
+            39.9562634
+          ],
+          [
+            116.349,
+            39.9577366
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-BASE-EW",
+      "properties": {
+        "id": "V11-ALT-A-BASE-EW",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "public_baseline_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3477812,
+            39.957
+          ],
+          [
+            116.3502188,
+            39.957
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-TRIAL-ROUTE-NS",
+      "properties": {
+        "id": "V11-ALT-A-TRIAL-ROUTE-NS",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "trial_state_public_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.349,
+            39.9562634
+          ],
+          [
+            116.3494453,
+            39.9566227
+          ],
+          [
+            116.3494453,
+            39.9573773
+          ],
+          [
+            116.349,
+            39.9577366
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-TRIAL-ROUTE-EW",
+      "properties": {
+        "id": "V11-ALT-A-TRIAL-ROUTE-EW",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "trial_state_public_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3477812,
+            39.957
+          ],
+          [
+            116.3485078,
+            39.9566586
+          ],
+          [
+            116.3494922,
+            39.9566586
+          ],
+          [
+            116.3502188,
+            39.957
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-FIRE",
+      "properties": {
+        "id": "V11-ALT-A-FIRE",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "fire_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3479218,
+            39.9576468
+          ],
+          [
+            116.3485078,
+            39.9576468
+          ],
+          [
+            116.349,
+            39.9572515
+          ],
+          [
+            116.3497032,
+            39.9572515
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-RETIRE-1",
+      "properties": {
+        "id": "V11-ALT-A-RETIRE-1",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "retirement_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3493281,
+            39.9567485
+          ],
+          [
+            116.3498438,
+            39.9563891
+          ],
+          [
+            116.3502188,
+            39.9563891
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-BASE-NS",
+      "properties": {
+        "id": "V11-ALT-B-BASE-NS",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "public_baseline_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.349,
+            39.9562634
+          ],
+          [
+            116.349,
+            39.9577366
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-BASE-EW",
+      "properties": {
+        "id": "V11-ALT-B-BASE-EW",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "public_baseline_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3477812,
+            39.957
+          ],
+          [
+            116.3502188,
+            39.957
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-TRIAL-ROUTE-NS",
+      "properties": {
+        "id": "V11-ALT-B-TRIAL-ROUTE-NS",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "trial_state_public_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.349,
+            39.9562634
+          ],
+          [
+            116.349,
+            39.9577366
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-TRIAL-ROUTE-EW",
+      "properties": {
+        "id": "V11-ALT-B-TRIAL-ROUTE-EW",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "trial_state_public_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3477812,
+            39.957
+          ],
+          [
+            116.3502188,
+            39.957
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-FIRE",
+      "properties": {
+        "id": "V11-ALT-B-FIRE",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "fire_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3479218,
+            39.9576468
+          ],
+          [
+            116.3487656,
+            39.9576468
+          ],
+          [
+            116.3491172,
+            39.9575749
+          ],
+          [
+            116.3498438,
+            39.9575749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-RETIRE-1",
+      "properties": {
+        "id": "V11-ALT-B-RETIRE-1",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "retirement_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3481562,
+            39.9563891
+          ],
+          [
+            116.3477812,
+            39.9563891
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-RETIRE-2",
+      "properties": {
+        "id": "V11-ALT-B-RETIRE-2",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "retirement_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3498438,
+            39.9575929
+          ],
+          [
+            116.3502188,
+            39.9575929
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-BASE-NS",
+      "properties": {
+        "id": "V11-ALT-C-BASE-NS",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "public_baseline_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.349,
+            39.9562634
+          ],
+          [
+            116.349,
+            39.9577366
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-BASE-EW",
+      "properties": {
+        "id": "V11-ALT-C-BASE-EW",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "public_baseline_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3477812,
+            39.957
+          ],
+          [
+            116.3502188,
+            39.957
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-TRIAL-ROUTE-NS",
+      "properties": {
+        "id": "V11-ALT-C-TRIAL-ROUTE-NS",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "trial_state_public_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.349,
+            39.9562634
+          ],
+          [
+            116.349,
+            39.9577366
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-TRIAL-ROUTE-EW",
+      "properties": {
+        "id": "V11-ALT-C-TRIAL-ROUTE-EW",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "trial_state_public_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3477812,
+            39.957
+          ],
+          [
+            116.3502188,
+            39.957
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-FIRE",
+      "properties": {
+        "id": "V11-ALT-C-FIRE",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "fire_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3479218,
+            39.9576468
+          ],
+          [
+            116.3486484,
+            39.9576468
+          ],
+          [
+            116.3488828,
+            39.9575749
+          ],
+          [
+            116.349961,
+            39.9575749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-RETIRE-1",
+      "properties": {
+        "id": "V11-ALT-C-RETIRE-1",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "retirement_route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3499844,
+            39.9564071
+          ],
+          [
+            116.3502188,
+            39.9564071
+          ]
+        ]
+      }
     }
   ]
 }

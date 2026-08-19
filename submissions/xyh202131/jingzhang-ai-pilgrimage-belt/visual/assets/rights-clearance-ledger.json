@@ -247,7 +247,7 @@
           "assets/media/4-state-narration-script.md"
         ],
         "limits": [
-          "No standalone source font file is shipped. The four Round 19 PDFs contain visible NotoSansSC-Medium/Bold subsets and retain an unused, unembedded Helvetica resource. The accepted synthetic Round 19 cover contains rasterized DengXian glyph pixels. HTML requests system font stacks, and concrete fonts resolved while rasterizing the thirty-four checked-in SVG files were not recorded. Embedding, referencing, or rasterization does not establish license compliance.",
+          "No standalone source font file is shipped. The four PDFs contain visible NotoSansSC-Medium/Bold subsets; final Round 47 files also contain 46 visible Base-14 Helvetica spans (44 route labels plus two existing A0 path-count labels) with no embedded Helvetica program. The accepted synthetic Round 19 cover contains rasterized DengXian glyph pixels. HTML requests system font stacks, and concrete fonts resolved while rasterizing the thirty-four checked-in SVG files were not recorded. Embedding, referencing, or rasterization does not establish license compliance.",
           "Editable package-authored SVG sources are declared for sixteen bilingual figure pairs. The reversible-components pair is separately recorded as a repository-provisional derivative. Editable sources exist for Markdown, HTML, CSS, JavaScript, JSON and GeoJSON, but no separate editable vector or publication-layout source is declared for every remaining PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
@@ -311,9 +311,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "89c3af31b2d55f1323ad1a94d62795cdb63e966f23b28de8301f3ee10960d07a",
+        "digest": "1371c1086dfe52f308b8962771e1e87b6087ea8cc0b05a9804b166eca3615356",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -388,9 +388,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c792017926c1b86924465be40d95f436fce309ddeb7f2748b475284e5235c18b",
+        "digest": "8eb827078528c08c8c4886e60d92c149c9d260fbf274bece7e1d987ed483874c",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -667,9 +667,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1d7277659340edcdd2b1a1f5ac62cca4c672c8df7c4fcd75a1c50b6ad37c8e5a",
+        "digest": "197fb9cf44c63071ddb55b72e989f8c2fa5f688efb692842f1ead2de6a535558",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1685,9 +1685,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f4c1e5962b5ee683b7e5ec0083eebaf319d1ec9dd762b6953c52ea4da1f7e3e4",
+        "digest": "80c646197df4d3e43a6ede88fb6f5cfbdb60522acb00a2f78cd5edee16b27b1f",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 was recomputed from the accepted Round 19 file bytes after independent parallel review and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -1830,9 +1830,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f9f0edef5824568d0c7ed5bcdd68402d4605b4e3644819ddc7f6b312b2c02b67",
+        "digest": "c1ee97b3743bdfe8c5633de39f37dd537ccadd251c76f55ace129a09228d13c2",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -1922,9 +1922,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e39b859a4bb3524b35019a1c450dfff790ddbd419a1f0bcafa34b47d47efb728",
+        "digest": "69a46ee2ddf41041aef5355f491d9cd142f418790d460940c59cc3140b9d3469",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1970,9 +1970,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5ccb1384243937b6c65302c621420c226c82baa2c86e68ad2a3fcd610d1d9b75",
+        "digest": "ad2a05edb6c42c6b062fea6d1dcbd3b79cfb12729991af8a49e47371dc42c811",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 38 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2021,9 +2021,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "625cae79ab271c7a6e6d6cad196432e134e4a9585032db86de85b7a6a6e0e25f",
+        "digest": "9aa7a2de84d85082218a533e5ac632f31a254f8a7f7e15ecf2f414cb0db22942",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2047,12 +2047,12 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-PYTHON",
-        "TOOL-REPORTLAB",
-        "TOOL-FONTTOOLS",
         "TOOL-CHROME",
+        "TOOL-FONTTOOLS",
+        "TOOL-PILLOW",
         "TOOL-PYMUPDF",
-        "TOOL-PILLOW"
+        "TOOL-PYTHON",
+        "TOOL-REPORTLAB"
       ],
       "embedded_components": [
         {
@@ -2061,13 +2061,13 @@
         },
         {
           "component_ref": "source-rights-evidence.json#FONT-HELVETICA-R19-RESOURCE",
-          "state": "referenced_not_embedded_zero_text_spans"
+          "state": "referenced_not_embedded_visible_route_labels"
         }
       ],
       "generation_recipe": {
-        "status": "recorded_deterministic",
-        "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
-        "limitation": "Round 43 replaces only the existing page-4/board-4 spatial-atlas print region from local package PNGs; page counts remain fixed. This local publication refresh does not assert byte-identical rebuilds, rights compliance, final post-review bytes or identical upstream environments."
+        "status": "recorded_deterministic_round_47",
+        "evidence_ref": "../../agent.json#round_47_provenance/publication_rebuild",
+        "limitation": "Round 47 preserves the existing page count, adds an explicit 30 SEC / 3 MIN / 15 MIN page marker, and retains the existing Chinese sheet content. Two fresh processes are byte-identical. This establishes publication-file reproducibility and legibility only, not field, professional, approval, accessibility, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2097,9 +2097,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "d1f2da1af58f0ed41da89977dddfb728e26acfa5257e3c54199b0172b47c8013",
+        "digest": "1d40721d38a9010dc7e3062a761571b5067523acd2738b2370c89698f9984436",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2137,12 +2137,12 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-PYTHON",
-        "TOOL-REPORTLAB",
-        "TOOL-FONTTOOLS",
         "TOOL-CHROME",
+        "TOOL-FONTTOOLS",
+        "TOOL-PILLOW",
         "TOOL-PYMUPDF",
-        "TOOL-PILLOW"
+        "TOOL-PYTHON",
+        "TOOL-REPORTLAB"
       ],
       "embedded_components": [
         {
@@ -2151,13 +2151,13 @@
         },
         {
           "component_ref": "source-rights-evidence.json#FONT-HELVETICA-R19-RESOURCE",
-          "state": "referenced_not_embedded_zero_text_spans"
+          "state": "referenced_not_embedded_visible_route_labels"
         }
       ],
       "generation_recipe": {
-        "status": "recorded_deterministic",
-        "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
-        "limitation": "Round 43 replaces only the existing page-4/board-4 spatial-atlas print region from local package PNGs; page counts remain fixed. This local publication refresh does not assert byte-identical rebuilds, rights compliance, final post-review bytes or identical upstream environments."
+        "status": "recorded_deterministic_round_47",
+        "evidence_ref": "../../agent.json#round_47_provenance/publication_rebuild",
+        "limitation": "Round 47 preserves the existing page count, adds an explicit 30 SEC / 3 MIN / 15 MIN page marker, and retains the existing Chinese sheet content. Two fresh processes are byte-identical. This establishes publication-file reproducibility and legibility only, not field, professional, approval, accessibility, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2187,9 +2187,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "89e820b270804e9b3f921143441c4dbe291f7f9f2e62f02a02c03a65d83529b4",
+        "digest": "0f4f6ddfaa83672b3367d08021b8edc4b50a49656a18fe759908797c2d320ed7",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3248,9 +3248,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f26e16896301bff9b74d21f2b0b56d2f499866c7b6e7b2542f696f820aedde20",
+        "digest": "dacee131151f89ece51bc540fa65da1db4fa774ba6c665b2a5cb656bac02e6a9",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -3325,9 +3325,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "8d197455cb4b50d7e6d4506d9145cd1e0898adcc8750fd2c529e8d8f59f6aaa2",
+        "digest": "a62b4266bdb07dd41660b73706f749e1b750d7e6341c2f1afc06bd3867150291",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -3417,9 +3417,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "cb760d07aa52f84f1bf5b78698e4568191984f2223f205e9aa19dfaed3afd30c",
+        "digest": "4c5c638780516ea5d225ad8a205e488f0f42224d1f9fdaee34e551ce14f4debb",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3489,9 +3489,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "93f8a0099f199d20760b72173efdc850ce7b346b24146860190323aebfeae5a9",
+        "digest": "4d456458def51fc5752f3482a32267cf7828655d0cd1d85d69b4ec34350e8acc",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3515,12 +3515,12 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-PYTHON",
-        "TOOL-REPORTLAB",
-        "TOOL-FONTTOOLS",
         "TOOL-CHROME",
+        "TOOL-FONTTOOLS",
+        "TOOL-PILLOW",
         "TOOL-PYMUPDF",
-        "TOOL-PILLOW"
+        "TOOL-PYTHON",
+        "TOOL-REPORTLAB"
       ],
       "embedded_components": [
         {
@@ -3529,13 +3529,13 @@
         },
         {
           "component_ref": "source-rights-evidence.json#FONT-HELVETICA-R19-RESOURCE",
-          "state": "referenced_not_embedded_zero_text_spans"
+          "state": "referenced_not_embedded_visible_route_labels"
         }
       ],
       "generation_recipe": {
-        "status": "recorded_deterministic",
-        "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
-        "limitation": "Round 43 replaces only the existing page-4/board-4 spatial-atlas print region from local package PNGs; page counts remain fixed. This local publication refresh does not assert byte-identical rebuilds, rights compliance, final post-review bytes or identical upstream environments."
+        "status": "recorded_deterministic_round_47",
+        "evidence_ref": "../../agent.json#round_47_provenance/publication_rebuild",
+        "limitation": "Round 47 preserves the existing page count, adds an explicit 30 SEC / 3 MIN / 15 MIN page marker, and replaces only confirmed-overflow English spatial pages with repaired package-authored figures. Two fresh processes are byte-identical. This establishes publication-file reproducibility and legibility only, not field, professional, approval, accessibility, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3565,9 +3565,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "345f7c7f74e4b27eca8a6a020488b7b95fa2b25f3cecdadc3527b3d101799dd7",
+        "digest": "b428a35a2cee20e8cc477ff3d1fa13dc8fa6bd6a291cd8504517151299ab35fe",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3605,12 +3605,12 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-PYTHON",
-        "TOOL-REPORTLAB",
-        "TOOL-FONTTOOLS",
         "TOOL-CHROME",
+        "TOOL-FONTTOOLS",
+        "TOOL-PILLOW",
         "TOOL-PYMUPDF",
-        "TOOL-PILLOW"
+        "TOOL-PYTHON",
+        "TOOL-REPORTLAB"
       ],
       "embedded_components": [
         {
@@ -3619,13 +3619,13 @@
         },
         {
           "component_ref": "source-rights-evidence.json#FONT-HELVETICA-R19-RESOURCE",
-          "state": "referenced_not_embedded_zero_text_spans"
+          "state": "referenced_not_embedded_visible_route_labels"
         }
       ],
       "generation_recipe": {
-        "status": "recorded_deterministic",
-        "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
-        "limitation": "Round 43 replaces only the existing page-4/board-4 spatial-atlas print region from local package PNGs; page counts remain fixed. This local publication refresh does not assert byte-identical rebuilds, rights compliance, final post-review bytes or identical upstream environments."
+        "status": "recorded_deterministic_round_47",
+        "evidence_ref": "../../agent.json#round_47_provenance/publication_rebuild",
+        "limitation": "Round 47 preserves the existing page count, adds an explicit 30 SEC / 3 MIN / 15 MIN page marker, and replaces only confirmed-overflow English spatial pages with repaired package-authored figures. Two fresh processes are byte-identical. This establishes publication-file reproducibility and legibility only, not field, professional, approval, accessibility, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3763,9 +3763,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5fa711377c21f03c791cb5ee55bb6d7edcc0f8915a8da0c276e97b921675af53",
+        "digest": "1adabbef2965d3fc3ed21705e27fa39ddc51b017c07c8818fd754e835018bc91",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3787,7 +3787,7 @@
       "generation_recipe": {
         "status": "offline_svg_to_png",
         "evidence_ref": "assets/figures/key-areas.en.svg",
-        "limitation": "Round 19 deterministically renders the 1800 x 1100 editable SVG in local Chrome and normalizes the PNG through Pillow. The resolved local font file remains unrecorded; the export adds no field fact, site precision, professional acceptance, approval or rights clearance."
+        "limitation": "Round 47 repairs only reproducible English heading, disclosure and three-column overflow. Spatial relations, numbers, states and non-provable matters remain unchanged. The PNG is rasterized from the paired SVG in local Chrome; resolved renderer fonts and independent file-level rights review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3817,9 +3817,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "8821719c13135cec18204978b7b9dc2b36ef97de1322b834675261ad1289f827",
+        "digest": "0ce3c840ec31d4d6d04a50af2e2fff02d912e0f24c7d27f680ba71e0d5e79322",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3832,6 +3832,7 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
+        "TOOL-CHROME",
         "TOOL-CODEX",
         "TOOL-PYTHON"
       ],
@@ -3842,9 +3843,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "package_authored_bilingual_svg",
-        "evidence_ref": "../../visual/assets/site-grounding-register.json#jury_reading_contract",
-        "limitation": "Conceptual relationship diagram only; not to scale, not field evidence, and not an official redline or approval."
+        "status": "package_authored_editorial_overflow_repair",
+        "evidence_ref": "assets/figures/key-areas.en.svg",
+        "limitation": "Round 47 repairs only reproducible English heading, disclosure and three-column overflow. Spatial relations, numbers, states and non-provable matters remain unchanged. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3874,9 +3875,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "de19683e453235b593620e96f6529fba306d93af7a87fced3cbb3d86bcd10d68",
+        "digest": "e8594e8aac5a732376743228c7d255530ea3c19b0eebf9f5c17a5e79fd96c051",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3886,9 +3887,10 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-PYTHON",
+        "TOOL-CHROME",
+        "TOOL-PILLOW",
         "TOOL-PYMUPDF",
-        "TOOL-PILLOW"
+        "TOOL-PYTHON"
       ],
       "embedded_components": [
         {
@@ -3897,9 +3899,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "partial",
-        "evidence_ref": "../../agent.json#output_provenance",
-        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+        "status": "offline_svg_to_png",
+        "evidence_ref": "assets/figures/key-area-sections.en.svg",
+        "limitation": "Round 47 repairs only reproducible English heading, disclosure and three-column overflow. Spatial relations, numbers, states and non-provable matters remain unchanged. The PNG is rasterized from the paired SVG in local Chrome; resolved renderer fonts and independent file-level rights review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3929,9 +3931,9 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "fa2fc183f82d06b631c490abf323d956db22573bbcedcb9da2c556f323f767a6",
+        "digest": "d71e219b824c8dfd3fa99ed6692adfab20f426fa5f65e77fe036c783094769ab",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 40 bytes and will be refreshed into manifest.json after the ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3946,6 +3948,7 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
+        "TOOL-CHROME",
         "TOOL-CODEX",
         "TOOL-PYTHON"
       ],
@@ -3956,9 +3959,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "package_authored_deterministic_bilingual_svg",
-        "evidence_ref": "../../visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening",
-        "limitation": "Round 19 editable bilingual source was generated deterministically from package contracts, but the resolved renderer-font inventory and independent rights review remain unavailable. Concept relationship only; not to scale, not field evidence, and not an official redline or approval."
+        "status": "package_authored_editorial_overflow_repair",
+        "evidence_ref": "assets/figures/key-area-sections.en.svg",
+        "limitation": "Round 47 repairs only reproducible English heading, disclosure and three-column overflow. Spatial relations, numbers, states and non-provable matters remain unchanged. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7827,9 +7830,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "49713798397f5af75bf8628a4acb29deb11b56f59af7d4ab05c18730f8730502",
+        "digest": "ba671ca9d22a5a9609d6f21b1662c7c8b6f66da9a5dcda2d4e0ca5b96e953a27",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from the final Round 44 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -8129,9 +8132,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "40b4c5ee40db8e6314e3e7dbdf3f030da753e8a27649db17a42e9a39a3901955",
+        "digest": "aa3dc6b527c96308e3778d38b15cb5e6ace6f0319fe32f691a6f2b048271f112",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -8144,14 +8147,15 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
+        "TOOL-CHROME",
         "TOOL-CODEX",
         "TOOL-PYTHON"
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_deterministic_svg",
-        "evidence_ref": "spatial-atlas-contract.json",
-        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+        "status": "package_authored_editorial_overflow_repair",
+        "evidence_ref": "assets/figures/spatial-atlas.en.svg",
+        "limitation": "Round 47 repairs only reproducible English heading, disclosure and three-column overflow. Spatial relations, numbers, states and non-provable matters remain unchanged. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -8233,9 +8237,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "80c94240205eee5012d2c0fe5a6a1d449187ef09730ff713c25ac559f86302e9",
+        "digest": "1e662689799068bb56106606051fd8bf031c515fe0bf772518533204fba159ad",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 43 file bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 47 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -8248,14 +8252,15 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
+        "TOOL-CHROME",
         "TOOL-CODEX",
         "TOOL-PYTHON"
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_structured_or_stylesheet",
-        "evidence_ref": "spatial-atlas-contract.json",
-        "limitation": "G0 concept relation only; not to scale, not field evidence, not an official redline or approval. Resolved fonts and independent rights review remain unavailable."
+        "status": "offline_svg_to_png",
+        "evidence_ref": "assets/figures/spatial-atlas.en.svg",
+        "limitation": "Round 47 repairs only reproducible English heading, disclosure and three-column overflow. Spatial relations, numbers, states and non-provable matters remain unchanged. The PNG is rasterized from the paired SVG in local Chrome; resolved renderer fonts and independent file-level rights review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -8289,7 +8294,7 @@
         "frame_rate": "24",
         "codec": "h264",
         "pixel_format": "yuv420p",
-        "duration_seconds": 48.000,
+        "duration_seconds": 48.0,
         "watermark_policy": "persistent bilingual in-frame deterministic overlay",
         "watermark_text": "G0 concept / provisional geometry / not site evidence / not approved; 48 s is presentation pacing, not real recovery time",
         "audio_track": "assets/media/4-state-narration.mp3 (unchanged 43.344-second Chinese TTS; padded with silence and faded inside the 48-second composition; H3 source audio excluded)",
@@ -8631,16 +8636,16 @@
     },
     {
       "id": "RIGHTS-THIRD-06",
-      "material": "Unused Helvetica resource references in the four Round 19 PDFs",
+      "material": "Visible Base-14 Helvetica references in the four Round 47 PDFs",
       "scope": [
         "drawings/a3-booklet.pdf",
         "drawings/a3-booklet.en.pdf",
         "drawings/a0-boards.pdf",
         "drawings/a0-boards.en.pdf"
       ],
-      "embedding_state": "referenced_not_embedded_zero_text_spans",
+      "embedding_state": "referenced_not_embedded_visible_route_labels",
       "status": "font_resolution_and_terms_not_independently_audited",
-      "limit": "Read-only inspection finds the resource in all four PDFs but zero Helvetica text spans and no embedded Helvetica program. The producing environment and applicable terms remain independently unaudited."
+      "limit": "Read-only inspection finds 46 visible Helvetica spans across the four PDFs: 44 Round 47 route labels and two existing A0 path-count labels. No Helvetica font program is embedded. The producing environment and applicable terms remain independently unaudited."
     },
     {
       "id": "RIGHTS-THIRD-07",

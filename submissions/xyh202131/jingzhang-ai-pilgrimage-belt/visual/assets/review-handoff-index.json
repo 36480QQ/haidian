@@ -155,9 +155,9 @@
     },
     "generator_enforced": true,
     "heading_parity": {
-      "en": 87,
+      "en": 85,
       "equal": true,
-      "zh": 87
+      "zh": 85
     },
     "ledger_digest_coherence": {
       "checked": 146,
@@ -176,9 +176,9 @@
           "zh_total": 35
         },
         "data": {
-          "en_total": 106,
+          "en_total": 104,
           "value_multisets_equal": true,
-          "zh_total": 106
+          "zh_total": 104
         },
         "depth": {
           "en_total": 15,
@@ -216,6 +216,32 @@
     "route_anchor_resolution": {
       "checked": 14,
       "missing": 0
+    },
+    "review_compression_r47": {
+      "audit_type": "editorial hierarchy, browser fallback and publication-file check",
+      "red_before": {
+        "bilingual_h2": 21,
+        "bilingual_h3": 59,
+        "q8_single_object_closure": false,
+        "t02_project_and_synthetic_replay_explicitly_distinguished": false,
+        "english_spatial_figures_with_reproducible_overflow": 3,
+        "pdf_pages_with_explicit_reading_route": 0
+      },
+      "post_repair": {
+        "bilingual_h2": 14,
+        "bilingual_h3": 31,
+        "formal_chapters": 13,
+        "q8_single_object_closure": true,
+        "t02_project_and_synthetic_replay_explicitly_distinguished": true,
+        "english_spatial_figures_with_reproducible_overflow": 0,
+        "pdf_pages_with_explicit_reading_route": 44,
+        "offline_external_requests": 0,
+        "no_javascript_bilingual_visuals_readable": true,
+        "reduced_motion_active_animations": 0,
+        "print_horizontal_overflow_px": 0
+      },
+      "scope_zh": "这是编辑、浏览器回退和出版文件审查；不认证真实评审者理解、无障碍结果、现场、批准、专业接责、G1、权利清除或现实恢复。",
+      "scope_en": "This is an editorial, browser-fallback and publication-file audit. It certifies no real reviewer comprehension, accessibility outcome, field condition, approval, accepted professional duty, G1, rights clearance or real recovery."
     }
   },
   "evidence_registry": [
@@ -244,7 +270,7 @@
         "visual/index.html"
       ],
       "kind": "narrative",
-      "latest_rebuild_round": 38,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -262,7 +288,7 @@
       "group_id": "root-changelog",
       "human_surface_refs": [],
       "kind": "changelog",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -304,7 +330,7 @@
         "visual/index.html"
       ],
       "kind": "agent_card",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -460,7 +486,7 @@
       "group_id": "report-html",
       "human_surface_refs": [],
       "kind": "rendered_proposal_html",
-      "latest_rebuild_round": 38,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -483,7 +509,7 @@
         "report/proposal.html"
       ],
       "kind": "copyright_statement",
-      "latest_rebuild_round": 38,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -501,7 +527,7 @@
       "group_id": "report-narrative",
       "human_surface_refs": [],
       "kind": "report_records",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -526,7 +552,7 @@
       "group_id": "visual-pages",
       "human_surface_refs": [],
       "kind": "visualization",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -635,7 +661,7 @@
       "group_id": "drawings-a3",
       "human_surface_refs": [],
       "kind": "drawing",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -660,7 +686,7 @@
       "group_id": "drawings-a0",
       "human_surface_refs": [],
       "kind": "drawing",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1000,7 +1026,7 @@
         "visual/index.html"
       ],
       "kind": "proposal_figure",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1046,7 +1072,7 @@
         "visual/index.html"
       ],
       "kind": "proposal_figure",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2146,7 +2172,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {
         "en": "Self-registered: the index is one of 155 registered paths and locates the other 154 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
         "zh": "本索引自登记：索引自身是 155 个登记路径之一，负责定位其余 154 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
@@ -2242,7 +2268,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 40,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2355,7 +2381,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": null,
+      "latest_rebuild_round": 47,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2491,7 +2517,7 @@
       "group_id": "figure-spatial-atlas",
       "kind": "proposal_figure",
       "status": "current",
-      "latest_rebuild_round": 43,
+      "latest_rebuild_round": 47,
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "human_surface_refs": [
         "proposal.md",
@@ -3548,6 +3574,105 @@
       "route_id": "cold-read-8"
     }
   ],
+  "t02_evidence_backlink": {
+    "chain": [
+      {
+        "step": "project_item",
+        "id": "T-02",
+        "ref": "visual/assets/implementation-handoff-matrix.json#/item_handoffs/9",
+        "linked_scene_ids": [
+          "SCENE-011",
+          "SCENE-012"
+        ],
+        "spatial_refs": [
+          "geometry/constraints.geojson#SCENE-011",
+          "geometry/constraints.geojson#SCENE-012"
+        ],
+        "state": "NO-GO"
+      },
+      {
+        "step": "dazhongsi_evidence",
+        "id": "KAE-003",
+        "ref": "visual/assets/key-area-evidence-matrix.json#/records/2"
+      },
+      {
+        "step": "non_ai_parity",
+        "ids": [
+          "PARITY-002",
+          "PARITY-005"
+        ],
+        "refs": [
+          "visual/assets/non-ai-parity-contract.json#/test_journeys/1",
+          "visual/assets/non-ai-parity-contract.json#/test_journeys/4"
+        ],
+        "state": "unknown_not_measured"
+      },
+      {
+        "step": "synthetic_replay",
+        "id": "T02-G0-G1-SYNTHETIC-REPLAY-RESULT-V1",
+        "ref": "visual/assets/t02-g0-g1-replay-result.json",
+        "fixture_count_ref": "visual/assets/t02-g0-g1-replay-result.json#/summary/fixture_count",
+        "scope_refs": [
+          "visual/assets/t02-g0-g1-replay-result.json#/proves_zh",
+          "visual/assets/t02-g0-g1-replay-result.json#/proves_en",
+          "visual/assets/t02-g0-g1-replay-result.json#/does_not_prove",
+          "visual/assets/t02-g0-g1-replay-result.json#/real_world_status"
+        ],
+        "result": "PASS"
+      },
+      {
+        "step": "handoff_packs",
+        "ids": [
+          "H01_AUTHORITY",
+          "H02_APPROVAL_SCOPE",
+          "H03_BASELINE",
+          "H04_DATA_SAFETY",
+          "H05_STOP_RECOVERY",
+          "H06_PUBLIC_PARITY",
+          "H07_RETEST_DECISION"
+        ],
+        "ref": "visual/assets/implementation-handoff-matrix.json#/handoff_pack_definitions",
+        "state": "not_submitted"
+      },
+      {
+        "step": "suggested_roles",
+        "ids": [
+          "P01_PLANNING_URBAN_DESIGN",
+          "P02_LANDSCAPE_ACCESSIBILITY",
+          "P03_TRANSPORT",
+          "P04_ARCHITECTURE_PUBLIC_INTERFACE",
+          "P05_SPECIALIST_SAFETY",
+          "P06_DATA_AI_RIGHTS",
+          "P07_OPERATIONS_COMMUNITY"
+        ],
+        "ref": "visual/assets/implementation-handoff-matrix.json#/professional_discipline_matrix",
+        "state": "suggested_role_type_only"
+      }
+    ],
+    "parallel_status": {
+      "maturity": {
+        "value": "G0",
+        "ref": "visual/assets/t02-g0-g1-replay-result.json#/real_world_status/current_gate"
+      },
+      "project_decision": {
+        "value": "NO-GO",
+        "ref": "visual/assets/implementation-handoff-matrix.json#/item_handoffs/9/decision"
+      },
+      "non_ai_parity": {
+        "value": "unknown_not_measured",
+        "refs": [
+          "visual/assets/non-ai-parity-contract.json#/test_journeys/1/result_status",
+          "visual/assets/non-ai-parity-contract.json#/test_journeys/4/result_status"
+        ]
+      },
+      "rights": {
+        "value": "not_fully_cleared",
+        "ref": "visual/assets/source-rights-evidence.json#/clearance_claim/status"
+      }
+    },
+    "limit_en": "Project item T-02 and the t02-g0-g1 synthetic replay are different objects. Replay PASS covers only deterministic replay of contract fields, source closure, rule precedence and stop/recovery mapping for 10 fixed synthetic cases; it does not prove site conditions, G1, approval, project passage, accepted professional duty or real non-AI parity.",
+    "limit_zh": "项目条目 T-02 与 t02-g0-g1 合成回放是不同对象。回放 PASS 只覆盖 10 个固定合成案例中合同字段、来源闭包、规则优先级与停止／恢复映射的确定性复演；不证明现场、G1、批准、项目通过、专业接责或真实非 AI 等价。"
+  },
   "reality_guard": {
     "approvals": 0,
     "completed_field_audits": 0,

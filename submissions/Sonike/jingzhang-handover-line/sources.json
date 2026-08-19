@@ -1749,6 +1749,35 @@
       "usable_for_formal": "background_only",
       "usable_for_formal_basis": "participant_self_assessed",
       "independent_verification": "打开 url 核对通告标题与公示起止日期；本包正文对它的引用仅一处且只述其存在，可用 `grep -c SRC-HD-CORRIDOR-CTRL-PLAN proposal.md` 核对引用次数。"
+    },
+    {
+      "id": "IMAGEGEN-COVER-ILLUSTRATION",
+      "source_type": "standard_resource",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "画廊封面插画的图像生成方式（gpt-image-2）",
+      "publisher": "OpenAI 图像生成模型 gpt-image-2，由本包参与者在本机之外调用",
+      "retrieved_at": "2026-08-19",
+      "accessed_date": "2026-08-19",
+      "collection_method": "由参与者以文字提示词调用 gpt-image-2 生成一张走廊轴测插画，**未向模型提供任何参考图片、照片、地图或既有作品**；提示词写死了纸面 #f1ecdf、煤黑 #161918、信号红 #e24a3b、绿廊 #a9c6a6、支线蓝 #3b6486 的调色板，并明令「画面内不得出现任何文字、字母、数字、标识或水印」「人物一律为无面部特征的中性剪影」。生成结果仅作为 `assets/media/cover.png` 的背景层；封面上的全部文字由本机 OFL 字体在 PIL 中渲染，不是模型写的。",
+      "spatial_coverage": "不适用：插画为概念母题，不对应任何实测范围",
+      "temporal_coverage": "不适用",
+      "license_or_reuse_terms": "产物为按本方参与者提示词生成的图像，随本包按 `manifest.json#license` 的作者授权分发；未使用任何第三方图片、地图、商标或受保护版式作为输入，因此不引入第三方权利。",
+      "usage": "`assets/media/cover.png`（画廊封面）的背景插画层。",
+      "usable_for": [
+        "说明封面插画为模型生成的解释层图像，而非现场照片或测绘成果",
+        "支持核验封面文字由包内 OFL 字体渲染、非模型生成"
+      ],
+      "not_usable_for": [
+        "作为现场照片、实测数据、官方边界或审批结论",
+        "推断任何真实建筑、树木、水系或人物的位置、形态与数量",
+        "作为任何事实性论断的证据"
+      ],
+      "limitations": "图像模型不可确定性复现：同一提示词重跑不会得到同一张图。插画中的亭、树、水系与人物均为概念母题，**不对应任何具体建筑或真实个人**；画面中出现的人物为无面部特征的剪影，不涉及肖像权。封面不进入评审的多模态视觉输入，其内容以正文与图件为准。",
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "**「图内无模型生成文字」可当场核验**：封面上的中英文字全部由 `fonts/NotoSansCJKsc-*.otf` 与 `NotoSans-*.ttf` 在渲染阶段绘制，字形与图件、PDF 完全一致；把封面放大到 1:1 检查，不存在图像模型常见的畸变字。**「无第三方素材」一侧**：本条已声明未向模型提供任何参考图片，`rights_inventory` 中该资产类的 `third_party_content_zh` 为「无」。"
     }
   ],
   "registry_alignment_note": "本表的 usable_for_formal 采用中央登记表 data/source_registry.json 的同一套取值词汇，以便机器逐项对照。凡 usable_for_formal_basis = central_registry_verbatim 的条目，其 registry_source_id / registry_authority_level / registry_review_status / usable_for_formal 四项均由脚本从中央表逐字复制，未经改写；本包对该来源的用法另受中央表 allowed_uses / prohibited_uses 约束，逐条已在 usable_for / not_usable_for 中收窄。凡 basis = participant_self_assessed 的条目**不在中央表内**，registry_review_status 一律标 not_in_central_registry —— 维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录；但自评状态不等于中央批准，本包不据此主张任何中央审定结论。not_a_factual_source 用于字体与构建工具链条目：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。",

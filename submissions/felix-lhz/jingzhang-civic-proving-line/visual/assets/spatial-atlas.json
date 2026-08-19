@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.8.0",
+  "schema_version": "1.9.0",
   "dataset_id": "jingzhang-two-answers-spatial-atlas",
   "status": "concept_proposal_under_provisional_boundaries",
   "view_box": [
@@ -3307,7 +3307,7 @@
     "zh": "仅为临时边界下的概念性空间布局；不得作为现状测绘、法定总平面、道路红线或审批依据。",
     "en": "Conceptual spatial layout under provisional boundaries; not a survey, statutory plan, road redline or approval basis."
   },
-  "publication_version": "V10",
+  "publication_version": "V11",
   "context_dataset": "context-open-map.json",
   "spine": {
     "id": "public_baseline_spine",
@@ -3630,7 +3630,7 @@
   ],
   "verification_scope": {
     "status": "T0_synthetic_contract_verified",
-    "result_ref": "visual/assets/v10-tabletop-results.json",
+    "result_ref": "visual/assets/tabletop-results.json",
     "rule_ref": "visual/assets/run-v10-tabletop.js",
     "case_count": 84,
     "field_status": "not_field_run"
@@ -3668,5 +3668,16 @@
       "scale": "1:50",
       "purpose": "ramp_tactile_barrier_evidence_power_rainwater_node"
     }
-  ]
+  ],
+  "spatial_decision": {
+    "dataset_ref": "visual/assets/spatial-decision.json",
+    "advanced_alternative_id": "ALT-C",
+    "decisions": {
+      "reject_design": 1,
+      "revise_design": 1,
+      "advance_design": 1
+    },
+    "verification_scope": "geometry_based_design_audit",
+    "field_status": "not_field_run"
+  }
 }

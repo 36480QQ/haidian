@@ -85,6 +85,18 @@
         "zh": "客流、效率、安全表现、满意度、能耗、成本和恢复时长继续保持现场未知。",
         "en": "Flow, efficiency, safety performance, satisfaction, energy, cost and recovery duration remain field unknowns."
       }
+    },
+    {
+      "id": "ASM-V11-PROTOTYPE-DIMENSIONS",
+      "status": "concept_only",
+      "statement": "V11 alternative dimensions and distances are design-model assumptions in a local metre projection, not surveyed site dimensions.",
+      "impact": "Rerun the spatial audit after official base mapping, station entrance, fire, accessibility and utility data are confirmed."
+    },
+    {
+      "id": "ASM-V11-PROVISIONAL-CONTEXT",
+      "status": "pending_official_data",
+      "statement": "All three alternatives use the same provisional Dazhongsi context and do not assert official ownership, redlines or station entrances.",
+      "impact": "A change in the verified context may change the reject, revise or advance result."
     }
   ]
 }
