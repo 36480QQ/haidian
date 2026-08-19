@@ -5,6 +5,26 @@
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
+  "license": {
+    "identifier": "COMMUNITY-DISPLAY-ONLY",
+    "identifier_source": "schema/proposal.schema.json 的 license 枚举值之一；组织方未发布其条款文本",
+    "author_grant_zh": "作为本包内容的权利人，作者另行授予：对本包内容的任何使用，只要符合 CC BY-NC 4.0（署名、非商业、标明修改），即已获得作者许可。",
+    "author_grant_en": "As rights holders in the contents of this package, the authors additionally grant that any use complying with CC BY-NC 4.0 (attribution, non-commercial, changes indicated) is licensed.",
+    "required_attribution_line_zh": "本方案为开放共创建议，不代表任何政府决定或审批结论。",
+    "required_attribution_line_en": "This proposal is open co-creation advice and represents no government decision or approval.",
+    "third_party_exclusion_zh": "本授权不覆盖第三方素材。包内未使用任何第三方图片、地图、商标或受保护版式；字体权利链见 proposal.md 风险与合规一节的字体表与 sources.json 的 FONT-* 条目。",
+    "government_endorsement_zh": "任何使用不得暗示政府背书、实施批准、已建成或已完成公众参与。",
+    "same_text_locations": [
+      "proposal.md#风险、版权与合规说明",
+      "report/copyright_statement.md",
+      "assets/media/audio-guide.md",
+      "assets/media/audio-guide-en.md",
+      "assets/media/guided-tour.md",
+      "assets/media/guided-tour-en.md",
+      "visual/index.html",
+      "visual/index.en.html"
+    ]
+  },
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
@@ -61,7 +81,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "22cf2ffd27e6cfab6ee1d9a27adbf231fd92f2dffae0674767db8fe5ef767ef6"
+      "sha256": "8679236029df173ed29f4077db143de022c6abc05e01bdc252ba7b2b98869ed0"
     },
     {
       "path": "compliance_matrix.json",
@@ -355,7 +375,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "a6e00a53b30b08c2d41e8dbe110e3db12f27c524024cc99cf97b18aaa7a25a48"
+      "sha256": "9d74be5accc1fe77990bff0b3d9f54b389d391f34991db7d3dfe493540a062e0"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
