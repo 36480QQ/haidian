@@ -84,6 +84,18 @@
       "status": "active_design_assumption",
       "statement": "The Dazhongsi overlay uses the midpoint of two OSM station records as a non-authoritative anchor. A literal station-centred 148 m reference frame is rejected; one 36 m test-fit envelope at +114 m east / -12 m north contains only an 8 m covered bay and 16 m reversible ground patch.",
       "impact": "This is geometry-only non-intersection, not site selection, vacancy, title, buildability or permission. Official redline, ownership, metro protection, surveyed accessibility, utilities, geotechnics, fire and operator evidence can discard or rebind the patch."
+    },
+    {
+      "id": "A-REGIONAL-001",
+      "statement": "The five regional coordination interfaces (Beiwei AI Community, Future Science City, Huairou Science City, Beijing E-Town, Beijing-Tianjin-Hebei) are pending-negotiation concepts; until confirmed by counterparts they are spatial and operational reservations, not agreed arrangements.",
+      "impact": "Regional flows, scheduling inputs and exchange programmes stay indicative; no interface may be presented as an agreed collaboration before counterpart confirmation.",
+      "status": "pending_operator_agreement"
+    },
+    {
+      "id": "A-BASELINE-001",
+      "statement": "Baselines in the first-year measurement plan are first-year measurements, currently unmeasured; deterioration thresholds and exit conditions are lines agreed with operators before measurement begins, not performance promises; control designs start only after pilots are approved.",
+      "impact": "Scenario verification and slow-variable acceptance cannot be treated as achieved performance; any triggered exit closes the corresponding switch and returns the task to the staffed path.",
+      "status": "pending_field_survey"
     }
   ]
 }
