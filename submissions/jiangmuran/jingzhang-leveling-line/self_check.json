@@ -360,7 +360,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Fail when the prose describing the mutation harness has gone stale.",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 158 mutations, 107 of 109 gates proven able to fail, 2 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 159 mutations, 107 of 109 gates proven able to fail, 2 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -369,7 +369,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Prove the gates can fail, by making them fail on purpose.",
-      "message": "gate_mutation_qa.py — gate mutation: 158 deliberate defects across 107 of 109 gates, all caught and all named by the gate that caught them; 2 gates not yet proven able to fail, each with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 159 deliberate defects across 107 of 109 gates, all caught and all named by the gate that caught them; 2 gates not yet proven able to fail, each with its reason published"
     },
     {
       "check_id": "PKG_GENERATION_CHAIN_QA",
@@ -513,7 +513,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A sentence stating a number a shipped record holds must point at that record.",
-      "message": "metric_citation_qa.py — metric citations: 27 sentence(s) joined to metrics.json by value and pointing at it, 13 numeric collision(s) published with the reason each is not a citation, 6 deferred against 1 bytes of English headroom (they cost 123, and this check fails when there is room)"
+      "message": "metric_citation_qa.py — metric citations: 27 sentence(s) joined to metrics.json by value and pointing at it, 12 numeric collision(s) published with the reason each is not a citation, 6 deferred against 1 bytes of English headroom (they cost 123, and this check fails when there is room)"
     },
     {
       "check_id": "PKG_METRIC_CLASS_PROSE_QA",
@@ -549,7 +549,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Every identifier in the package obeys the published naming system.",
-      "message": "naming_qa.py — naming: 684 distinct names harvested from the package — 658 matching exactly one of 24 published families and 26 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 685 distinct names harvested from the package — 659 matching exactly one of 24 published families and 26 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_NUMBER_BREAK_QA",
@@ -990,7 +990,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "One Chinese term, one English wording — across all three translation tables.",
-      "message": "term_consistency_qa.py — term consistency: 1789 distinct Chinese terms across i18n_en 661, i18n_drawings 797, i18n_html 357; 26 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 0 declared exception(s), each still in use"
+      "message": "term_consistency_qa.py — term consistency: 1789 distinct Chinese terms across i18n_en 661, i18n_drawings 797, i18n_html 357; 26 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 0 declared exception(s), each still in use; and 7 term(s) written inside sentences rather than as keys keep one English word across 53 uses"
     },
     {
       "check_id": "PKG_TRACK_RANK_QA",
@@ -1060,7 +1060,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：158 处人为缺陷，覆盖 107 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 158 deliberate defects across 107 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：159 处人为缺陷，覆盖 107 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 159 deliberate defects across 107 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -1268,7 +1268,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30861393,
+      "total_bytes": 30863747,
       "maintainer_bypass": false
     },
     "stderr": ""

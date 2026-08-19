@@ -1420,6 +1420,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M162",
+      "gate": "term_consistency_qa.py",
+      "target": "i18n_drawings.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": false,
+      "what_zh": "把 FIG.24 那句里的 sidewalk 改回 footway。人行道在本包里本轮之前正是 **footway 六次、sidewalk 六次**，而两个词就靠在同一张图的正文与表格里。闸门随即报出一词两译，构建停。",
+      "what_en": "Put sidewalk back to footway in FIG.24's note. Until this round the package used **footway six times and sidewalk six**, with the two sitting in the body and the table of the same sheet. The gate reports one term with two English words and the build stops.",
+      "why_zh": "要证的是这道闸门现在读**句子里面**，不只读词条本身。E192 记下的就是这个缺陷——同一个地方在评审打开的第一张图上叫 Acceleration Area，在剖面上叫 Acceleration Zone——而为它写的检查一直只看键。**规则存在，只是从没指到这里**，这是本登记册记了二十次的形状。",
+      "why_en": "What this proves is that the gate now reads **inside sentences**, not only the dictionary keys. E192 recorded this very defect - one place was the Acceleration Area on the first figure a reviewer opens and the Acceleration Zone on the sections - and the check written for it only ever looked at keys. **The rule existed and was never pointed here**, which is the shape this register has recorded twenty times."
+    },
+    {
       "id": "M161",
       "gate": "number_break_qa.py",
       "target": "figures.py",
@@ -1940,7 +1953,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 158,
+  "caught": 159,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
