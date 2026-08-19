@@ -7,22 +7,18 @@
       "properties": {
         "id": "LU-001",
         "layer": "LAND_USE",
+        "land_use_code": "0701",
+        "land_use_name_zh": "城镇住宅用地",
+        "name_zh": "用地分区1",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "0802",
-        "land_use_type_zh": "商业服务业设施用地",
-        "land_use_type_en": "Commercial Service Land",
-        "label_zh": "大钟寺AI产业服务区",
-        "label_en": "Dazhongsi AI Service Zone",
-        "area_sqm_declared": 1799146.1
+        "confidence": "medium"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407,
+              116.3397,
               39.939
             ],
             [
@@ -31,14 +27,14 @@
             ],
             [
               116.3553,
-              39.952
+              39.953583333333334
             ],
             [
-              116.3407,
-              39.952
+              116.3397,
+              39.953583333333334
             ],
             [
-              116.3407,
+              116.3397,
               39.939
             ]
           ]
@@ -51,39 +47,35 @@
       "properties": {
         "id": "LU-002",
         "layer": "LAND_USE",
+        "land_use_code": "0802",
+        "land_use_name_zh": "科研用地",
+        "name_zh": "用地分区2",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "0701",
-        "land_use_type_zh": "二类居住用地",
-        "land_use_type_en": "Residential Land (Class II)",
-        "label_zh": "南部青年居住配套区",
-        "label_en": "Southern Youth Residential Zone",
-        "area_sqm_declared": 1675598.4
+        "confidence": "medium"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407,
-              39.952
+              116.3397,
+              39.953583333333334
             ],
             [
               116.3553,
-              39.952
+              39.953583333333334
             ],
             [
               116.3553,
-              39.965
+              39.96816666666667
             ],
             [
-              116.3427,
-              39.965
+              116.3397,
+              39.96816666666667
             ],
             [
-              116.3407,
-              39.952
+              116.3397,
+              39.953583333333334
             ]
           ]
         ]
@@ -95,43 +87,35 @@
       "properties": {
         "id": "LU-003",
         "layer": "LAND_USE",
-        "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
         "land_use_code": "0901",
-        "land_use_type_zh": "商业用地",
-        "land_use_type_en": "Business Land",
-        "label_zh": "中部AI创新服务区",
-        "label_en": "Central AI Innovation Service Zone",
-        "area_sqm_declared": 1994591.7
+        "land_use_name_zh": "商业用地",
+        "name_zh": "用地分区3",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407,
-              39.965
-            ],
-            [
-              116.3427,
-              39.965
-            ],
-            [
-              116.3427,
-              39.975
-            ],
-            [
-              116.3533,
-              39.99
+              116.3397,
+              39.96816666666667
             ],
             [
               116.3553,
-              39.965
+              39.96816666666667
             ],
             [
-              116.3407,
-              39.965
+              116.3553,
+              39.982749999999996
+            ],
+            [
+              116.3397,
+              39.982749999999996
+            ],
+            [
+              116.3397,
+              39.96816666666667
             ]
           ]
         ]
@@ -143,47 +127,35 @@
       "properties": {
         "id": "LU-004",
         "layer": "LAND_USE",
+        "land_use_code": "1401",
+        "land_use_name_zh": "公园绿地",
+        "name_zh": "用地分区4",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "0901",
-        "land_use_type_zh": "商业用地（AI研发混合）",
-        "land_use_type_en": "Business Land (AI R&D Mixed)",
-        "label_zh": "AI原点社区核心区",
-        "label_en": "AI Origin Community Core",
-        "area_sqm_declared": 1229265.6
+        "confidence": "medium"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3427,
-              39.965
+              116.3397,
+              39.982749999999996
             ],
             [
-              116.342,
-              39.975
+              116.3553,
+              39.982749999999996
             ],
             [
-              116.342,
-              39.9935
+              116.3553,
+              39.99733333333333
             ],
             [
-              116.353,
-              39.9935
+              116.3397,
+              39.99733333333333
             ],
             [
-              116.353,
-              39.99
-            ],
-            [
-              116.3427,
-              39.975
-            ],
-            [
-              116.3427,
-              39.965
+              116.3397,
+              39.982749999999996
             ]
           ]
         ]
@@ -195,39 +167,35 @@
       "properties": {
         "id": "LU-005",
         "layer": "LAND_USE",
+        "land_use_code": "0902",
+        "land_use_name_zh": "商务金融用地",
+        "name_zh": "用地分区5",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "0701",
-        "land_use_type_zh": "二类居住用地",
-        "land_use_type_en": "Residential Land (Class II)",
-        "label_zh": "北部过渡居住区",
-        "label_en": "Northern Transition Residential",
-        "area_sqm_declared": 1172554.8
+        "confidence": "medium"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.342,
-              39.9935
+              116.3397,
+              39.99733333333333
             ],
             [
-              116.353,
-              39.9935
+              116.3553,
+              39.99733333333333
             ],
             [
-              116.3533,
-              39.99
+              116.3553,
+              40.011916666666664
             ],
             [
-              116.342,
-              39.975
+              116.3397,
+              40.011916666666664
             ],
             [
-              116.342,
-              39.9935
+              116.3397,
+              39.99733333333333
             ]
           ]
         ]
@@ -239,43 +207,35 @@
       "properties": {
         "id": "LU-006",
         "layer": "LAND_USE",
-        "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
         "land_use_code": "16",
-        "land_use_type_zh": "工业用地（研发型）",
-        "land_use_type_en": "Industrial Land (R&D)",
-        "label_zh": "众智园AI研发加速区",
-        "label_en": "Zhongzhiyuan AI R&D Zone",
-        "area_sqm_declared": 4043401.4
+        "land_use_name_zh": "留白用地",
+        "name_zh": "用地分区6",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.342,
-              39.9935
+              116.3397,
+              40.011916666666664
             ],
             [
-              116.3533,
-              39.99
+              116.3553,
+              40.011916666666664
             ],
             [
               116.3553,
               40.0265
             ],
             [
-              116.3427,
+              116.3397,
               40.0265
             ],
             [
-              116.3417,
-              40.006
-            ],
-            [
-              116.342,
-              39.9935
+              116.3397,
+              40.011916666666664
             ]
           ]
         ]

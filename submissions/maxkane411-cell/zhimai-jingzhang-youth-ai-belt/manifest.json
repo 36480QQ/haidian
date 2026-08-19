@@ -44,7 +44,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "03eccfc3f74d228700189ec414290ec4255aee988e7f604881e4164e641cffb5",
+      "sha256": "6d8d5c9e024f18faf1b4095597caf09e0e02e3826215c6755a3c049c6b22cacd",
       "language": "zh"
     },
     {
@@ -107,14 +107,14 @@
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "212e779e86da27913db62bd80c62763765758b3daa110fb4b7012a1763031524",
+      "sha256": "3c4480f841bf2ba9401308678c064d1561dbcde2548c50edde79a2a8d140c65f",
       "language": "neutral"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "50b1aef85784a8b932469460a61e259d374740be84ca33e8082ae09bd0594141",
+      "sha256": "ae14f2cb3cfeb57d3a75fa03c45153d28a37e1925ac5c7e8da50fc518a181aab",
       "language": "neutral"
     },
     {
@@ -212,7 +212,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "14352ab5c11fe74316abd42b73bc84a9ca4d3c8f02deea8b2b54704c1cc19b3e",
+      "sha256": "40a87b7a816d221894c419123bc96181caa50d418633282651de5c7a6c0de295",
       "language": "zh"
     },
     {
@@ -220,14 +220,14 @@
       "role": "drawing",
       "required": true,
       "sha256": "18928179778a04cb66a7ec0fa4289842998a7fa1109f5e39e72147400df6cff8",
-      "language": "neutral"
+      "language": "zh"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "sha256": "3d5c59b0caa51b66934b6026ff58a3b99d4192d1abd8b8d863fcf0d3bdb9284f",
-      "language": "neutral"
+      "language": "zh"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -247,7 +247,7 @@
     },
     {
       "path": "report/proposal.en.html",
-      "role": "rendered_report",
+      "role": "rendered_proposal_html",
       "language": "en",
       "required": true,
       "translation_of": "report/proposal.html",
@@ -259,7 +259,7 @@
       "language": "en",
       "required": true,
       "translation_of": "visual/index.html",
-      "sha256": "14352ab5c11fe74316abd42b73bc84a9ca4d3c8f02deea8b2b54704c1cc19b3e"
+      "sha256": "40a87b7a816d221894c419123bc96181caa50d418633282651de5c7a6c0de295"
     }
   ],
   "validation_claim": {
