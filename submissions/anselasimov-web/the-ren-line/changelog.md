@@ -4,6 +4,17 @@
 
 > 本文件记录方案包的版本演进、每次迭代响应了什么反馈、以及仍然开放的问题。全部空间内容始终为概念建议,不构成审定结论。
 
+## v1.8 - 2026-08-19
+
+**展示层同步与元数据修正版**
+
+**动机**:响应内部 portal/visual 展示通道审计(`review/PORTAL-AUDIT-20260820.md`)发现的两项低成本缺口——①`manifest.json.generated_at` 自 v1.0 脚手架后从未更新,官方列表画廊管线按该字段降序排序,v1.6/v1.7 两轮实质性内容更新后仍被排在"12天未更新"的位置,对评委造成内容停滞的错误印象;②v1.6 新增的 `phasing-plan.png`/`scenario-index.png` 两图已在 `manifest.json` 与 `proposal.md` 正文注册引用,但未镜像进 `visual/assets/` 也未被 `visual/index.html`/`index.en.html` 引用,visual 展示通道图面覆盖率(10图)落后于 `assets/figures` 已具备的水平(12图)。本版不改概念、不新增任何图纸、不改任何既有正文内容,仅做展示层装配与一处元数据字段更新。
+
+- **`manifest.generated_at` 刷新**:从 v1.0 遗留值 `2026-08-07T16:52:50Z` 更新为本次改动实际执行时间 `2026-08-19T16:05:35Z`;该字段是官方列表画廊管线(`scripts/generate_submissions_data.py` → `submissions-data.js`)按日期降序排序的排序键(已读源码确认),不在文件级 sha256 校验范围内,单独更新不影响哈希链。
+- **`phasing-plan`/`scenario-index` 图装配进 visual 通道**:两图(各含中英,共4张 PNG)从 `assets/figures/` 原样复制到 `visual/assets/`(与 `key-area-*` 系列已有镜像模式一致,复制后字节与源文件逐一 sha256 核对 MATCH,不重新生成);`visual/index.html`/`visual/index.en.html` 分别在"分期实施"/"Phased Implementation"章 h2 后插入 `phasing-plan(.en).png` 的 `<figure>`,在"AI 场景节点"/"AI Scenario Nodes"章 h2 后插入 `scenario-index(.en).png` 的 `<figure>`,套用页内既有 `<figure><img><figcaption></figure>` 模式,中英各插入2处、逐位对称;BeautifulSoup 解析确认新增4个 `<img src>` 全部可在 `visual/assets/` 目录下落地解析,无断链。
+- **manifest 新增4条 `visual_asset` 条目**:`visual/assets/{phasing-plan,scenario-index}{,.en}.png`,`role` 与既有 `key-area-*` 镜像条目一致(`visual_asset`,`required: false`);连带用当前 main 的 `scripts/refresh_submission_manifest.py` 统一刷新受影响文件 sha256(含新增4条,以及因插入图引用而改动的 `visual/index.html`/`visual/index.en.html` 两份);`schema_version` 保持 `0.1.0` 不变,未设置 `readiness_contract`(与 v1.5-v1.7 一致)。
+- 自检:当前 main 校验脚本下 `validate_local_submission` 与 `self_check_submission` 四门全部 PASS;双语契约检查通过(证据标签序列 zh/en 与 v1.7 基线完全一致,未增未减);详见 `contrib/V18/VERIFICATION.md`。
+
 ## v1.7 - 2026-08-19
 
 **评审通道图像完整性与展板可读性修复版**

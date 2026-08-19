@@ -13,7 +13,7 @@
     "agent_name": "Claude (Anthropic) x anselasimov-web",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-07T16:52:50Z",
+  "generated_at": "2026-08-19T16:05:35Z",
   "files": [
     {
       "path": "manifest.json",
@@ -112,7 +112,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "49a54ff95b26bbb339acdd5f41acb636f285453ba84f0bb15f961bea60dccc1e",
+      "sha256": "5709982fdffe4d31bef17f08a9cae2a62417f841b5a30ac60cfd1ce33a027671",
       "language": "zh"
     },
     {
@@ -224,7 +224,7 @@
       "path": "visual/index.en.html",
       "role": "visual_translation",
       "required": true,
-      "sha256": "e1e806122faff1cbd50784894f6e5fcbd23b9086af528798c42f270b61d7c558",
+      "sha256": "65a673e870cf09fc9e06786995c3e2b150842861585362aa28f51455a7a56687",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -453,7 +453,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "3a722e825d1a547c321a37b8b0261bcf46586fe75494875f831b2849c2986132"
+      "sha256": "c255c0d14d6fdcf280e80d186b9b7d372d8f47332cf4541847a389e07f282e8e"
     },
     {
       "path": "risk.json",
@@ -499,6 +499,30 @@
       "sha256": "e71ef87afea4764178bc0006eca82f832cccb369d47102ccbf10b7b3e9abe81b",
       "language": "en",
       "translation_of": "assets/figures/scenario-index.png"
+    },
+    {
+      "path": "visual/assets/phasing-plan.png",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "b5a05a147d9cdf373cb02e81f27cc97c75d343d259a257475d939e81d6c0f819"
+    },
+    {
+      "path": "visual/assets/phasing-plan.en.png",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "7a29034aefb143a51c1c2269e433258ef3387d5eead25b6f4fdc56169f23a9cb"
+    },
+    {
+      "path": "visual/assets/scenario-index.png",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "a63e82786d94ce885e76334acd247b7733e224a2e3f1963e8fc2714818e9f1d3"
+    },
+    {
+      "path": "visual/assets/scenario-index.en.png",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "e71ef87afea4764178bc0006eca82f832cccb369d47102ccbf10b7b3e9abe81b"
     }
   ],
   "validation_claim": {
