@@ -24,20 +24,12 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/culture-brand.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/ecosystem-synergy.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/ecosystem-synergy.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s2-detail.en.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s2-detail.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s2-section.en.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s2-section.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-assembly.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-assembly.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-detail.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-detail.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-section.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-s7-section.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-t2-detail.en.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-t2-detail.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-t2-section.en.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/hero-t2-section.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/implementation-roadmap.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/implementation-roadmap.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/key-areas.en.png",
@@ -50,18 +42,12 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/mobility-bluegreen.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/persona-journeys.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/persona-journeys.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/s7-detail-v11.en.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/s7-detail-v11.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/s7-section-node-v11.en.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/s7-section-node-v11.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/scenario-matrix.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/scenario-matrix.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/section-prototype.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/section-prototype.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/site-overview.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/site-overview.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/spatial-alternatives.en.png",
-        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/spatial-alternatives.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/station-ai-origin.en.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/station-ai-origin.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/station-dazhongsi.en.png",
@@ -104,6 +90,7 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-v11-html.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-v11.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/content-v11.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/content-v12.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/context-open-map.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/e2-readiness.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/prepare-open-map.js",
@@ -124,7 +111,7 @@
       "ai_package_stages": {
         "submissions/felix-lhz/jingzhang-civic-proving-line": "formal"
       },
-      "total_bytes": 18567325,
+      "total_bytes": 19156465,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -198,7 +185,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 42,
+        "known_metric_refs_required": 10,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -206,7 +193,7 @@
           "standard": 1,
           "depth": 8,
           "data": 27,
-          "metric": 26
+          "metric": 10
         }
       }
     },

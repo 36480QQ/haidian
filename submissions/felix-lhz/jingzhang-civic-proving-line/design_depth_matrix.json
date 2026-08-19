@@ -34,9 +34,9 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -94,9 +94,9 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -154,12 +154,12 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count",
-        "receipt_landmark_count",
-        "annual_program_cycle_count",
-        "s7_pilot_phase_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count",
+        "key_area_count",
+        "paired_scenario_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -219,9 +219,9 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -279,9 +279,9 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -339,9 +339,9 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -399,9 +399,9 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -455,12 +455,12 @@
         "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "s7_review_scale_count",
-        "s7_prototype_kit_item_count",
-        "s7_baseline_sample_status",
+        "key_area_count",
+        "measurement_contract_count",
+        "field_verification_result_count",
         "spatial_alternative_count",
-        "rejected_spatial_alternative_count",
-        "advanced_spatial_alternative_count"
+        "advanced_spatial_alternative_count",
+        "spatial_alternative_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -518,9 +518,9 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -574,12 +574,12 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count",
-        "receipt_landmark_count",
-        "annual_program_cycle_count",
-        "s7_pilot_phase_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count",
+        "key_area_count",
+        "paired_scenario_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -639,17 +639,13 @@
         "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "s7_traceable_spatial_object_count",
-        "s7_review_scale_count",
-        "s7_prototype_kit_item_count",
-        "s7_baseline_sample_status",
-        "s7_formal_cost_status",
-        "receipt_landmark_count",
-        "annual_program_cycle_count",
-        "s7_pilot_phase_count",
+        "key_area_count",
+        "measurement_contract_count",
+        "field_verification_result_count",
+        "paired_scenario_count",
         "spatial_alternative_count",
-        "rejected_spatial_alternative_count",
-        "advanced_spatial_alternative_count"
+        "advanced_spatial_alternative_count",
+        "spatial_alternative_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -707,9 +703,9 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -764,14 +760,13 @@
         "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "field_performance_status",
-        "s7_baseline_sample_status",
-        "receipt_landmark_count",
-        "annual_program_cycle_count",
-        "s7_pilot_phase_count",
+        "field_verification_result_count",
+        "key_area_count",
+        "paired_scenario_count",
+        "measurement_contract_count",
         "spatial_alternative_count",
-        "rejected_spatial_alternative_count",
-        "advanced_spatial_alternative_count"
+        "advanced_spatial_alternative_count",
+        "spatial_alternative_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -828,18 +823,13 @@
         "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "s7_traceable_spatial_object_count",
-        "s7_review_scale_count",
-        "s7_prototype_kit_item_count",
-        "s7_baseline_sample_status",
-        "s7_formal_cost_status",
-        "field_performance_status",
-        "receipt_landmark_count",
-        "annual_program_cycle_count",
-        "s7_pilot_phase_count",
+        "key_area_count",
+        "measurement_contract_count",
+        "field_verification_result_count",
+        "paired_scenario_count",
         "spatial_alternative_count",
-        "rejected_spatial_alternative_count",
-        "advanced_spatial_alternative_count"
+        "advanced_spatial_alternative_count",
+        "spatial_alternative_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -899,9 +889,9 @@
         "site_area_sqm",
         "key_area_count",
         "paired_scenario_count",
-        "ordinary_baseline_coverage_count",
-        "human_review_coverage_count",
-        "stop_condition_coverage_count"
+        "paired_scenario_count",
+        "measurement_contract_count",
+        "measurement_contract_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
