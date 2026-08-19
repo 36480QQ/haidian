@@ -1,8 +1,8 @@
 {
 "schema_version": "errata-v1",
 "note_en": "The English edition of the errata register. It is the same register: one summary per entry id, in the order the entries are published. The Chinese what/why/fix fields and every entry's commit join live in errata.json beside this file, which points here by path.",
-"of_entries": 377,
-"translated": 377,
+"of_entries": 378,
+"translated": 378,
 "summaries": {
 "E01": "Two machine-readable references pointed at feature ids that do not exist — `BUILDING-001` and `LANDUSE-001` against the real `BLDG-001` and `LU-001`.",
 "E02": "”less than half the second-thinnest track” did not hold arithmetically: 14 against 28 is exactly half.",
@@ -67,9 +67,17 @@
 "E61": "The reading plate printed a tolerance in millimetres while the contract defines the quantity as a dimensionless rate.",
 "E62": "Asking E61's question of every drawing script found the same shape again: a number in a drawing and the same number in shipped data, drifting because only one was checked.",
 "E63": "KIT-01 requires the stone flush with no trip hazard, and a mark set flush into level paving sits in whatever the paving collects. Frozen, the thing specified so nobody would trip becomes the one patch of ice on the footway.",
-"E64": "Gaps discovered while drawing were declared on the sheets and never entered in `assumptions.json`, the file a reviewer receives."
+"E64": "Gaps discovered while drawing were declared on the sheets and never entered in `assumptions.json`, the file a reviewer receives.",
+"E65": "The headline number this proposal's self-criticism rests on was read off a sampled curve instead of computed, and sampling only ever understates a peak.",
+"E66": "A sheet claimed maintenance was already inside the annual operating band; the band counted re-survey sessions only.",
+"E67": "The commit that folded maintenance into the annual operating table left the same omission in the row directly beneath it, so one file priced two totals on two versions of the same model and set them side by side to be compared.",
+"E68": "A gate guarding the construction sheet against drift asserted seven dimensions and not the stone's own, while the mass those dimensions produce carried the whole maintenance argument.",
+"E69": "A gate searched the two editions concatenated, so a deliverable named only in Chinese passed as named in the prose.",
+"E70": "The errata register's own stated reason for existing was the last claim in the package nobody had re-measured, and the instrument that re-measured it matched on filename — counting who uses this package's word for a register, not who keeps one.",
+"E71": "A Chinese paragraph said the field shares are not repeated here because repeating them is how they expire; the English translation of that same paragraph repeated them, and by the time it was found they had expired.",
+"E72": "Three readings recomputed from the shipped layers every build are hand-copied into the prose — `412.5 m` six times. Nothing had gone wrong yet; the structure must eventually go wrong."
 },
-"archived_entries": 313,
+"archived_entries": 306,
 "archive_of": "visual/assets/errata.en.json",
-"split_note_en": "The organisers cap a single JSON at 512 KiB. This file carries the most recent 313 English summaries and the other 64 are in visual/assets/errata.en-archive.json, same schema, nothing removed and no wording changed. Both state the total, so neither can be read as the whole. The Chinese register has been split this way since E307; this one was written whole until it crossed the cap (E377)."
+"split_note_en": "The organisers cap a single JSON at 512 KiB. This file carries the most recent 306 English summaries and the other 72 are in visual/assets/errata.en-archive.json, same schema, nothing removed and no wording changed. Both state the total, so neither can be read as the whole. The Chinese register has been split this way since E307; this one was written whole until it crossed the cap (E377)."
 }
