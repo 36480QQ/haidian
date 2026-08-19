@@ -10,6 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
+        "submissions/Sonike/jingzhang-handover-line/manifest.json: published schema legacy advisory: <root>: Additional properties are not allowed ('license', 'rights_inventory' were unexpected); update this manifest before adopting schema 0.2.x",
         "submissions/Sonike/jingzhang-handover-line/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -95,7 +96,6 @@
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/package-integrity-gates.json",
-        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/rights-and-licence.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/rights-inventory.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.schema.json",
@@ -110,7 +110,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 19298099,
+      "total_bytes": 19304592,
       "maintainer_bypass": false
     },
     "stderr": ""

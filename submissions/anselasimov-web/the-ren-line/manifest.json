@@ -24,7 +24,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "30a46dacc35387d2106a8ef1cb1843b948946823ee0f68f0231749036948c088",
+      "sha256": "5b6d0ff75f8443e4bf72d2eaef9504489e0fcee0784be021486cfec6f97211ae",
       "language": "zh"
     },
     {
@@ -79,7 +79,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "ff608768376337b91206075ebb593d3dfbb245d03ca61cfc5ae6412efafad091",
+      "sha256": "e588fd5c7a88ad401de91c1a5d98da634c51902ec3d0e04fb2040b5025b486d5",
       "language": "zh"
     },
     {
@@ -105,7 +105,7 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "09f26de3eb09a331c5fe6fd6c311451ed25e21067abefbed47feafd40e37d480",
+      "sha256": "49c28389be0d176348191af4c85d2938b5f7f27d40b083fc1f4c3e3089738343",
       "language": "zh"
     },
     {
@@ -208,7 +208,7 @@
       "path": "proposal.en.md",
       "role": "proposal_translation",
       "required": true,
-      "sha256": "bd52c66138663c39070cfb2d2996592922c1fd380d05d09716776d9362c6a5b0",
+      "sha256": "bc06af0a9fd6186391a87c4d931f8da38d56251c99772df760e7a886f2b99287",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -216,7 +216,7 @@
       "path": "report/proposal.en.html",
       "role": "report_translation",
       "required": true,
-      "sha256": "9ef7626eda9a9c645bff12e9cab44a794496f5cf364d435d2d119a44246337e1",
+      "sha256": "f9b23591cafa4fa706105b15eb4f67698b3801e630c377251888b497b353aa7f",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -240,7 +240,7 @@
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing_translation",
       "required": true,
-      "sha256": "04e33c63cd5decd149b6904dc55e0c4d9173dbb9c3a22a8533e4cc5964ec8632",
+      "sha256": "f455b6cfd31b3bd8b6ca62f7e1bf620eb532d59b69dfe68dfd22dd79d6c0b907",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -453,7 +453,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "733d9c477c6547bf5dd331cf44a4d3d3528e920294df3699c2cc366dcc056b05"
+      "sha256": "3a722e825d1a547c321a37b8b0261bcf46586fe75494875f831b2849c2986132"
     },
     {
       "path": "risk.json",

@@ -852,6 +852,18 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 
 ### 本方案的许可：不解释组织方留空的标识，直接授权
 
+**先给结论，读者不必比较三层信号。** 包内确实同时存在机器可读标识、权利人授权文本、第三方排除与不背书声明三样东西，但**判断「我能不能用」只需要读下面这张表的一行**；本节与后两节是它的依据，不是它的前置条件。
+
+| 你要做的事 | 是否已获许可 | 唯一依据 | 必须同时做到 |
+| --- | --- | --- | --- |
+| 转载、翻译、改编、教学与研究使用（非商业） | **是，且不必联系作者** | 权利人授权，等同 CC BY-NC 4.0 | 署名、标明修改、保留「本方案为开放共创建议，不代表任何政府决定或审批结论」一句 |
+| 任何商业使用 | **否** | 权利人授权限定为非商业 | — |
+| 表述或暗示政府背书、实施批准、已建成、已完成公众参与 | **否，任何授权都不能突破这一条** | 政府不背书声明 | — |
+| 复用包内的第三方素材 | **不适用：包内没有** | 第三方图片、地图、商标与受保护版式数量为 0；中文字形按 OFL 栅格化为像素，不分发字体文件 | — |
+| 先去查 `COMMUNITY-DISPLAY-ONLY` 的条款再决定 | **不需要，可以直接按第一行行事** | 该标识条款组织方尚未发布；日后若被定义得更严以更严者为准，若更宽本包仍只按第一行的范围授权 | — |
+
+这张表与后文的优先顺序是同一套判定的两种写法：表是结论，后文是推导。**两者若出现出入，以本表为准。**
+
 `COMMUNITY-DISPLAY-ONLY` 不是本方案自造的标识，而是组织方 `schema/proposal.schema.json` 中 `license` 字段的三个枚举值之一（另两个是 `CC-BY-4.0` 与 `CC-BY-SA-4.0`）。该标识在主线中共出现五次——`agent.html`、`schema/proposal.schema.json`、`scripts/scaffold_ai_submission.py`、`scripts/validate_submission.py`、`templates/proposal.md`——全部是枚举值、模板占位或校验白名单，**没有任何一处给出条款内容**。所以本节写的不是一份自造许可，而是对组织方留空标识的读法。
 
 不改用标准许可的原因很具体：枚举里另两个取值都允许商业使用，而本方案需要同时排除商业使用、并禁止把内容表述为政府决定；标准选项中没有能同时满足这两条的。
@@ -868,7 +880,7 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 
 | 资产类别（件数） | 权利人 | 生成方法 | 许可文本位置 | 第三方成分 | 核验方式 |
 | --- | --- | --- | --- | --- | --- |
-| 栅格图件 26 | 本包参与者 | 由 `geometry/*.geojson` 与 `metrics.json` 程序化渲染 | `visual/assets/governance/rights-and-licence.json#license.author_grant_zh` | 无（字形按 OFL 栅格化为像素，不分发字体文件） | `manifest.json#files[].sha256` 逐文件比对 |
+| 栅格图件 26 | 本包参与者 | 由 `geometry/*.geojson` 与 `metrics.json` 程序化渲染 | `manifest.json#license.author_grant_zh` | 无（字形按 OFL 栅格化为像素，不分发字体文件） | `manifest.json#files[].sha256` 逐文件比对 |
 | 图纸 PDF 4 套 | 本包参与者 | 同批渲染产物排版合成 | 同上 | 中文嵌入 OFL 字体子集；拉丁为 PDF 基础十四款 | `pdffonts` 看嵌入列 ＋ sha256 |
 | 正文与译稿 2 | 本包参与者 | 人工撰写，机器校验双语结构 | 同上 | 无 | 行号三项对齐检查 ＋ sha256 |
 | 几何图层 9 | 本包参与者 | 由公告文字与面积校核推演，EPSG:4548 | 同上 | 无（未使用商业地图、OSM 或新闻图） | `spatial_review` gate ＋ sha256 |
@@ -877,7 +889,7 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 | **模型生成插画 1** | 本包参与者 | 由参与者以提示词调用图像模型 gpt-image-2 生成，**未提供任何参考图片、照片、地图或既有作品**；仅作封面背景层，封面文字另由本机 OFL 字体渲染 | 同上 | 无（画面人物为无面部特征的剪影，不涉及肖像权） | 字形与图件、PDF 同源可 1:1 核对 ＋ `sources.json#IMAGEGEN-COVER-ILLUSTRATION` |
 | 音视频与触觉件 15 | 本包参与者 | 本机语音合成、程序化字幕与矢量制版 | `assets/media/*.md` 同文 | 无真人音色、无肖像、无第三方素材 | 字幕与正文同源比对 ＋ sha256 |
 
-**这张表可以被机器核对，而且已经核过。** `visual/assets/governance/rights-inventory.schema.json` 用 JSON Schema Draft 2020-12 约束 `rights_inventory` 的每一条：**权利人必须恒为 `package_participants`、许可文本位置必须以 `visual/assets/governance/rights-and-licence.json#license.` 开头、生成方法／第三方成分／核验方式三项一个都不能空**，且不允许多余字段。用通用校验器（`jsonschema` 4.x）跑一遍，**错误数 0**。这意味着任何一类资产日后被悄悄加进来而没写清权利，校验会直接报错。 `manifest.json` 的 `files[]` 为 83 个条目、其中 82 个带 `sha256`（`manifest.json` 自身不自哈希）；`rights_inventory` 块登记上表六列，逐类指向对应的 `files[]` 条目。**第三方成分一栏全为「无」，本包据此才敢作出直接授权** [assumption:A-FONT-001] [depth:metrics_recalculation]。
+**这张表可以被机器核对，而且已经核过。** `visual/assets/governance/rights-inventory.schema.json` 用 JSON Schema Draft 2020-12 约束 `rights_inventory` 的每一条：**权利人必须恒为 `package_participants`、许可文本位置必须以 `manifest.json#license.` 开头、生成方法／第三方成分／核验方式三项一个都不能空**，且不允许多余字段。用通用校验器（`jsonschema` 4.x）跑一遍，**错误数 0**。这意味着任何一类资产日后被悄悄加进来而没写清权利，校验会直接报错。 `manifest.json` 的 `files[]` 为 83 个条目、其中 82 个带 `sha256`（`manifest.json` 自身不自哈希）；`rights_inventory` 块登记上表六列，逐类指向对应的 `files[]` 条目。**第三方成分一栏全为「无」，本包据此才敢作出直接授权** [assumption:A-FONT-001] [depth:metrics_recalculation]。
 
 
 ### 三个许可信号冲突时，按哪个走

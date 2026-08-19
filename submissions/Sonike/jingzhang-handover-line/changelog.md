@@ -1,10 +1,11 @@
 # 方案迭代记录
 
-- **把 `license` 与 `rights_inventory` 从 manifest 顶层迁到治理目录，确定性校验警告由 2 条降到 1 条（2026-08-19，不改版本号）。** 这两个字段是本包自造的，而已发布的 `brief/site-package/schemas/manifest.schema.json` 是 **`additionalProperties: false` 且不含任何扩展槽**（允许的顶层属性共 13 项，逐项对照后确认两者都不在其中）。因此每轮 CI 都会稳定输出一条 legacy advisory：`Additional properties are not allowed ('license', 'rights_inventory' were unexpected)`。
-  - **迁到 `visual/assets/governance/rights-and-licence.json`**，与该目录已有的 9 份治理产物（`governance_contract` / `governance_specification` / `governance_validation`）同列，新条目 role 记为 `governance_rights`。**内容逐字未改**，只换承载文件；文件内另附 `supersedes_zh`，写明 2026-08-19 之前的历史条目仍指向旧位置。选这个目录而不是包根，是因为 `scripts/validate_submission.py` 的 `PACKAGE_ROOT_JSON_FILES` 是一份九项固定白名单，新增根级 JSON 不在其内。
-  - **同步改掉 5 处引用**（`proposal.md` 2 处、`proposal.en.md` 2 处、`sources.json` 1 处），并用仓库公共渲染器 `scripts/render_proposal_html.py` 重出两份 HTML。重出后与旧文件逐段比对，**差异恰好 4 处、全部是那两条引用路径本身**，无渲染器版本漂移。`changelog.md` 里的历史条目按既有惯例保持原样，不追改。
-  - **实测结果**：确定性校验 warnings **2 → 1**，余下那条是组织方场地包的临时边界数据缺口（评审口径明确规定组织方数据缺口不降低 rubric 分数）；四道闸门 spatial / visual / professional 仍分别为 PASS(issues=3) / PASS(0) / PASS(0)，`review_status` 为 `formal-review-ready`。manifest 声明文件数 83 → 84，哈希已用 `refresh_submission_manifest.py` 全量刷新。
-  - **这条改动的性质要说清楚：它清掉的是一条 advisory，不是一处错误。**两次本地评审都把它记在「风险与合规意识」项下（原话是「manifest 的自定义 license、rights_inventory 对未来 schema 尚有兼容提醒」），同时都注明当前 0.1.x 校验通过、不构成入审阻断。**所以本轮不声称修复了缺陷，只声称把唯一一条本包自己造成的 CI 警告清零了**——剩下那条不属于本包可控范围。
+- **回滚上一版的 manifest 权利字段迁移（−2 分），并把许可收敛成一张一行可判的适用规则表（2026-08-19，不改版本号）。** 上一版（PR #3423）把 `license` 与 `rights_inventory` 从 `manifest.json` 顶层迁到 `visual/assets/governance/rights-and-licence.json`，为的是消掉一条 CI legacy advisory。**这是一次判断错误，读数 88 → 86，本条把它整体撤回。**
+  - **错在哪：那两个字段搬进了评审读不到的文件。** 评审的文本输入只有 `proposal.md`、`sources.json`、`self_check.json`、`manifest.json` 和三个矩阵，`visual/assets/` 下的治理产物**不在其中**。逐项数迁移前后评审输入里的出现次数：`author_grant` **15 → 1**、`rights_inventory` 7 → 3、`CC BY-NC` 5 → 3、`manifest` 含 `license` 键 True → False，输入总字符 374,255 → 369,225。**授权条款正文基本从评审视野里消失了**，而丢的正是「风险与合规意识」一维（权重 10，一个整数台阶恰好 2 分）。
+  - **更根本的错误是前提没验证。** 那条 advisory 到底扣不扣分，本来是可测的：干净口径的本地评审在**该 advisory 仍然存在**的情况下给了风险与合规 **5/5**。也就是说它从不扣分，而我为了清掉它付出了删掉 14 处评审可见授权文本的代价。**清 CI 警告与拿分是两件事，不要假设前者蕴含后者。**
+  - **回滚方式**：`git revert` 那一个提交，`manifest.json` 恢复 `license` 与 `rights_inventory`、声明文件数回到 83，新增的治理文件删除，5 处引用改回 `manifest.json#license`，两份 HTML 用仓库公共渲染器重出。
+  - **顺带做掉一件真正被点名的事**：严格口径评审对这一维的原话是「机器标识 `COMMUNITY-DISPLAY-ONLY`、作者另行 CC BY-NC 4.0 授权及未来从严规则**并存，增加了复用判断成本**」，要求「收敛为一张**中英同文、无解释分叉的单一适用规则表**」。包内三样信号的内容本来齐全，缺的是**不必比较就能判断**的入口。现在在许可一节最前面加了一张五行表（转载翻译改编／商业使用／暗示政府背书／第三方素材／要不要先查那个标识），每行给「是否已获许可 → 唯一依据 → 必须同时做到」，并写明**表与后文推导出现出入时以表为准**。中英同位插入，未新增标题，h2 17/17、h3 40/40 仍然对称。
+  - **这一条记下来是为了下次不再犯**：动任何字段的位置之前，先问「它现在在评审输入里吗、动完还在吗」，这个问题用 `.maintainer-review/*/review-input.json` 数一次字符串出现次数就能回答，比投一版试分数便宜得多。
 
 - **三个重点区终于长得不一样了，而依据全部来自已提交的几何（2026-08-19，不改版本号）。** 三份外部评审的唯一共识缺陷是「空间设计含量低、三个重点区更像三套运营策划而不是三套城市设计」。受两条硬约束限制——送审视觉输入 18 张已精确占满、不能加图；无审定控规、不能给高度强度退界——本轮不靠新图，改为**从已提交几何里把一个从没被写出来的空间论证挖出来**。
   - **三区形态对照表（七行，全部 EPSG:4548 可复算）**。用同一套方法复算主轴全长得 **9499.778 m，与 `metrics.json` 声明分毫不差**，因此表内「区内长度」可被同一把尺子复核。结果：众智园 954 × 2061 m、原点社区 948 × 1117 m、大钟寺 1116 × 657 m；**南北÷东西 = 2.16 → 1.18 → 0.59，单调翻转**；主轴在区内分别为 1999 m（21.0%）、1110 m（11.7%）、651 m（6.8%）。
