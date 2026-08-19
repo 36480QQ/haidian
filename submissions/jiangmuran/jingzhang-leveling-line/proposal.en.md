@@ -1538,12 +1538,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-371 entries. By finder:
+372 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 40 | Run against the shipped package, not a draft |
-| The author | 241 | Found while working |
+| The author | 242 | Found while working |
 | This package's own gate | 26 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1562,8 +1562,8 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Outlived the package | 25 |
 | Nothing fails it | 19 |
 | Not itself | 19 |
+| A reference did not resolve | 16 |
 | Recorded where found | 15 |
-| A reference did not resolve | 15 |
 | Outlived its line | 14 |
 | A source unnameable | 11 |
 | A total excluding | 8 |
