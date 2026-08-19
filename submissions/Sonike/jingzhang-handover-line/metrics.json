@@ -968,6 +968,54 @@
         "A-OPERATIONS-001"
       ],
       "verification": "没有场地授权、角色指派或真实使用者参与，本轮未进行任何现场演练。"
+    },
+    "handover_to_service_days": {
+      "status": "unknown",
+      "value": null,
+      "unit": "days",
+      "source_files": [],
+      "formula": "median(date(SERVE_accepted) - date(first_BUILD_handout)) over capabilities that completed BUILD→VERIFY→SHARE→SERVE",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-BASELINE-001",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "标题主张「让好 AI 更快进城」，该主张只能由时间量检验，不能由完备率替代。基线须来自授权后的真实交接账；包内赋值会形成不可复核的伪精度，且没有基线的「缩短若干」比不赋值更具误导性。",
+      "measurement_protocol": {
+        "path": "visual/assets/governance/measurement-protocol.json",
+        "metric_id": "handover_to_service_days",
+        "collecting_role": "R-INDEPENDENT-REVIEW",
+        "role_spec": "visual/assets/governance/role-spec.json",
+        "frequency_or_trigger": "每完成一次 SERVE 侧接收即记一条；每季度汇总一次中位数",
+        "denominator": "当期完成 SERVE 侧接收的能力数",
+        "assignment_precondition": "至少一条能力走完 BUILD→VERIFY→SHARE→SERVE 四次交接，且四次交接账均可复核。",
+        "baseline": null,
+        "target": null
+      }
+    },
+    "handover_rework_rounds": {
+      "status": "unknown",
+      "value": null,
+      "unit": "rounds",
+      "source_files": [],
+      "formula": "median(count(rejections_with_resubmission)) per capability across BUILD→VERIFY→SHARE→SERVE",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-BASELINE-001",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "「可信→少反复→更快」这条因果链的断裂点在于接入方是否仍要重做已做过的验证。该指标是这条链唯一的观测口；基线须由授权后的真实拒收记录产生，本方案不代为设定。",
+      "measurement_protocol": {
+        "path": "visual/assets/governance/measurement-protocol.json",
+        "metric_id": "handover_rework_rounds",
+        "collecting_role": "R-INDEPENDENT-REVIEW",
+        "role_spec": "visual/assets/governance/role-spec.json",
+        "frequency_or_trigger": "每次拒收并重新提交即记一条；每季度汇总一次中位数",
+        "denominator": "当期至少完成一次交接的能力数",
+        "assignment_precondition": "拒收理由已按 R1—R7 归类且可复核，能重新提交与首次提交之间建立对应关系。",
+        "baseline": null,
+        "target": null
+      }
     }
   }
 }
