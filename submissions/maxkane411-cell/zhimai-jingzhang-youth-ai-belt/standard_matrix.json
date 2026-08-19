@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "standards": [
+    {
+      "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "title_zh": "城市设计管理办法",
+      "publisher": "住房和城乡建设部",
+      "source_id": "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+      "local_path": "brief/site-package/standards/references/mohurd-urban-design-measures.md",
+      "coverage_status": "covered",
+      "proposal_sections": ["总体设计范围城市更新与控规深度城市设计", "蓝绿空间、公共空间与城市风貌"],
+      "evidence": {
+        "geometry_refs": ["geometry/public_space.geojson", "geometry/green_space.geojson"],
+        "metric_refs": ["green_ratio", "public_space_ratio"]
+      },
+      "coverage_notes_zh": "方案回应了城市设计管理办法中关于公共空间、城市风貌、建筑体量和公共空间体系的要求。"
+    },
+    {
+      "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
+      "title_zh": "城市、镇控制性详细规划编制审批办法",
+      "publisher": "住房和城乡建设部",
+      "source_id": "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+      "local_path": "brief/site-package/standards/references/mohurd-control-detailed-planning.md",
+      "coverage_status": "covered",
+      "proposal_sections": ["总体设计范围城市更新与控规深度城市设计", "用地、建筑规模与拆改留方案"],
+      "evidence": {
+        "geometry_refs": ["geometry/land_use.geojson"],
+        "metric_refs": ["floor_area_ratio"]
+      },
+      "coverage_notes_zh": "方案区分了已知控制与待补控制，容积率记为unknown。用地分区参照控规编制办法的深度要求。"
+    },
+    {
+      "standard_id": "MNR-LAND-USE-CLASSIFICATION-202311",
+      "title_zh": "国土空间调查、规划、用途管制用地用海分类指南",
+      "publisher": "自然资源部",
+      "source_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+      "local_path": "brief/site-package/standards/references/mnr-land-use-classification-guide.md",
+      "coverage_status": "covered",
+      "proposal_sections": ["用地、建筑规模与拆改留方案"],
+      "evidence": {
+        "geometry_refs": ["geometry/land_use.geojson"]
+      },
+      "coverage_notes_zh": "用地land_use_code参照自然资源部分类指南统一语义，包括R2(居住)、B2(商业)、A2(商业服务)、M1(工业)等代码。"
+    },
+    {
+      "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+      "title_zh": "面向智能体任务书",
+      "publisher": "项目组织方",
+      "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "local_path": "brief/site-package/agent_taskbook.json",
+      "coverage_status": "covered",
+      "proposal_sections": ["全文"],
+      "evidence": {
+        "compliance_refs": ["agent.1", "agent.2", "agent.3", "agent.4", "agent.5", "agent.6"]
+      },
+      "coverage_notes_zh": "六大智能体任务(agent.1-agent.6)在compliance_matrix.json中逐项覆盖，并在proposal.md正文中实际展开。"
+    }
+  ]
+}

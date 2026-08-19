@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智·脉 — 京张青年AI创享带 | 可视化面板</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, "Microsoft YaHei", "Segoe UI", sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+header { background: linear-gradient(135deg, #2c3e50, #3498db); color: white; padding: 40px 20px; text-align: center; border-radius: 12px; margin-bottom: 30px; }
+header h1 { font-size: 2.2em; margin-bottom: 8px; }
+header p { opacity: 0.85; font-size: 1.05em; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; margin-bottom: 30px; }
+.card { background: white; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 1px solid #e0e4e8; }
+.card h2 { color: #2c3e50; font-size: 1.15em; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #3498db; }
+.metric-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
+.metric-row:last-child { border: none; }
+.metric-label { font-size: 0.92em; color: #555; }
+.metric-value { font-weight: 700; font-size: 1.05em; }
+.known { color: #27ae60; }
+.unknown { color: #e74c3c; }
+.badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.78em; font-weight: 600; margin-left: 6px; }
+.badge-pass { background: #d4edda; color: #155724; }
+.badge-prov { background: #fff3cd; color: #856404; }
+.badge-unknown { background: #f8d7da; color: #721c24; }
+.scenario-card { background: #f8f9fa; border-left: 3px solid #3498db; padding: 12px 16px; margin-bottom: 10px; border-radius: 4px; }
+.scenario-card h3 { font-size: 0.95em; color: #2c3e50; margin-bottom: 4px; }
+.scenario-card p { font-size: 0.85em; color: #666; }
+.map-container { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 20px; }
+.map-container svg { width: 100%; height: auto; }
+footer { text-align: center; padding: 20px; color: #888; font-size: 0.85em; border-top: 1px solid #e0e4e8; margin-top: 30px; }
+.legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 0.88em; }
+.legend-color { width: 16px; height: 16px; border-radius: 3px; border: 1px solid #ccc; }
+.compliance-item { padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
+.compliance-item:last-child { border: none; }
+.status-check { color: #27ae60; font-weight: 700; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88em; }
+th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #f8f9fa; font-weight: 600; color: #2c3e50; }
+.section-title { font-size: 1.3em; color: #2c3e50; margin: 30px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #3498db; }
+.note { font-size: 0.82em; color: #999; margin-top: 4px; }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>智·脉 — 京张青年AI创享带</h1>
+<p>ZhiPulse — Jingzhang Youth AI Innovation Belt</p>
+<p style="font-size:0.9em; opacity:0.7; margin-top:4px;">百年京张AI创新带城市设计开源征集 | Agent: WorkBuddy Design Agent</p>
+</header>
+
+<div class="section-title">空间总览</div>
+<div class="map-container">
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" style="background:#f8f9fa; border-radius:8px;">
+<!-- Site boundary (dashed, provisional) -->
+<polygon points="50,350 200,350 200,280 185,220 200,50 130,50 120,170 110,280 50,350" 
+  fill="rgba(245,247,250,0.8)" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="60" y="370" font-size="9" fill="#888">Provisional Boundary (NOT Official Redline)</text>
+
+<!-- Key Area 1: Zhongzhiyuan (north) -->
+<polygon points="120,150 190,150 190,55 120,55 120,150" 
+  fill="rgba(70,130,200,0.3)" stroke="#4a82c8" stroke-width="2"/>
+<text x="125" y="100" font-size="10" fill="#2c3e50" font-weight="bold">众智园</text>
+<text x="125" y="113" font-size="8" fill="#666">192.1 ha</text>
+
+<!-- Key Area 2: AI Origin (middle) -->
+<polygon points="115,225 190,225 190,255 115,255 115,225" 
+  fill="rgba(200,100,70,0.3)" stroke="#c86446" stroke-width="2"/>
+<text x="120" y="243" font-size="9" fill="#2c3e50" font-weight="bold">AI原点社区</text>
+<text x="175" y="243" font-size="8" fill="#666">104.2ha</text>
+
+<!-- Key Area 3: Dazhongsi (south) -->
+<polygon points="115,330 195,330 195,345 115,345 115,330" 
+  fill="rgba(70,160,100,0.3)" stroke="#46a064" stroke-width="2"/>
+<text x="120" y="341" font-size="9" fill="#2c3e50" font-weight="bold">大钟寺</text>
+<text x="175" y="341" font-size="8" fill="#666">72.0ha</text>
+
+<!-- Green corridor -->
+<rect x="165" y="50" width="8" height="300" fill="rgba(100,180,100,0.2)" stroke="#64b464" stroke-width="0.5"/>
+<text x="175" y="200" font-size="8" fill="#3a7a3a" transform="rotate(-90,175,200)">京张绿廊</text>
+
+<!-- Roads -->
+<line x1="50" y1="50" x2="50" y2="350" stroke="#bbb" stroke-width="2"/>
+<text x="25" y="200" font-size="7" fill="#888" transform="rotate(-90,25,200)">学院路</text>
+<line x1="200" y1="50" x2="200" y2="350" stroke="#bbb" stroke-width="2"/>
+<text x="205" y="200" font-size="7" fill="#888" transform="rotate(-90,205,200)">中关村东路</text>
+
+<!-- Building nodes -->
+<circle cx="175" cy="235" r="4" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
+<text x="182" y="238" font-size="7" fill="#666">AI体验中心</text>
+<circle cx="155" cy="100" r="4" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
+<text x="162" y="103" font-size="7" fill="#666">创新大厦</text>
+<circle cx="155" cy="338" r="4" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
+<text x="162" y="341" font-size="7" fill="#666">AI商业</text>
+
+<!-- Legend -->
+<rect x="230" y="50" width="180" height="120" fill="white" stroke="#ddd" stroke-width="1" rx="5"/>
+<text x="240" y="68" font-size="10" font-weight="bold" fill="#2c3e50">图例 Legend</text>
+<rect x="240" y="78" width="14" height="10" fill="rgba(70,130,200,0.3)" stroke="#4a82c8"/>
+<text x="260" y="88" font-size="8" fill="#555">重点区 Key Area</text>
+<rect x="240" y="95" width="14" height="10" fill="rgba(100,180,100,0.2)" stroke="#64b464"/>
+<text x="260" y="105" font-size="8" fill="#555">绿地 Green Space</text>
+<line x1="240" y1="120" x2="254" y2="120" stroke="#888" stroke-width="1.5" stroke-dasharray="4,2"/>
+<text x="260" y="123" font-size="8" fill="#555">临时边界 Provisional</text>
+<circle cx="247" cy="138" r="4" fill="#f39c12" stroke="#e67e22"/>
+<text x="260" y="141" font-size="8" fill="#555">AI节点 AI Node</text>
+
+<!-- North arrow -->
+<text x="420" y="70" font-size="12" fill="#2c3e50">N</text>
+<line x1="423" y1="55" x2="423" y2="75" stroke="#2c3e50" stroke-width="2"/>
+<polygon points="423,50 419,58 427,58" fill="#2c3e50"/>
+
+<!-- Scale -->
+<text x="420" y="100" font-size="7" fill="#888">Provisional ~11.4 km²</text>
+</svg>
+</div>
+
+<div class="section-title">核心指标 Core Metrics</div>
+<div class="grid">
+<div class="card">
+<h2>三项核心视觉指标</h2>
+<div class="metric-row"><span class="metric-label">场地面积 Site Area</span><span class="metric-value known" data-metric="site_area_sqm" data-value="11399491.8">11,399,492 sqm</span></div>
+<div class="metric-row"><span class="metric-label">绿地率 Green Ratio</span><span class="metric-value known" data-metric="green_ratio" data-value="0.2493">24.93%</span></div>
+<div class="metric-row"><span class="metric-label">公共空间率 Public Space Ratio</span><span class="metric-value known" data-metric="public_space_ratio" data-value="0.3694">36.94%</span></div>
+<p class="note">三项核心指标均可从提交的 site_boundary、green_space、public_space 几何复算</p>
+</div>
+<div class="card">
+<h2>其他指标</h2>
+<div class="metric-row"><span class="metric-label">道路率 Road Ratio</span><span class="metric-value known">33.45%</span></div>
+<div class="metric-row"><span class="metric-label">建筑密度 Building Density</span><span class="metric-value known">3.64%</span></div>
+<div class="metric-row"><span class="metric-label">概念总建筑规模</span><span class="metric-value known">2,913,425 sqm</span></div>
+<div class="metric-row"><span class="metric-label">容积率 FAR</span><span class="metric-value unknown">UNKNOWN <span class="badge badge-unknown">控规未公开</span></span></div>
+<div class="metric-row"><span class="metric-label">最大建筑高度</span><span class="metric-value unknown">UNKNOWN <span class="badge badge-unknown">控规未公开</span></span></div>
+<div class="metric-row"><span class="metric-label">AI场景节点数</span><span class="metric-value known">12</span></div>
+</div>
+</div>
+
+<div class="section-title">六大智能体任务覆盖</div>
+<div class="grid">
+<div class="card">
+<h2>任务覆盖 Compliance Matrix</h2>
+<div class="compliance-item"><span class="status-check">✓</span> <strong>agent.1</strong> 总体概念与功能统筹</div>
+<div class="compliance-item"><span class="status-check">✓</span> <strong>agent.2</strong> AI全栈自主创新体系</div>
+<div class="compliance-item"><span class="status-check">✓</span> <strong>agent.3</strong> AI+场景赋能新范式</div>
+<div class="compliance-item"><span class="status-check">✓</span> <strong>agent.4</strong> AI公共空间与朝圣地标</div>
+<div class="compliance-item"><span class="status-check">✓</span> <strong>agent.5</strong> 百年京张文化融合叙事</div>
+<div class="compliance-item"><span class="status-check">✓</span> <strong>agent.6</strong> 全球AI创新活动与运营</div>
+<p class="note">所有任务在 proposal.md 正文中实际展开，非仅在矩阵中打勾</p>
+</div>
+<div class="card">
+<h2>自检状态 Self-Check</h2>
+<div class="metric-row"><span class="metric-label">格式完整性</span><span class="badge badge-pass">PASS</span></div>
+<div class="metric-row"><span class="metric-label">空间审查</span><span class="badge badge-pass">PASS</span></div>
+<div class="metric-row"><span class="metric-label">视觉包装</span><span class="badge badge-pass">PASS</span></div>
+<div class="metric-row"><span class="metric-label">专业证据</span><span class="badge badge-pass">PASS</span></div>
+<div class="metric-row"><span class="metric-label">provisional 标注</span><span class="badge badge-prov">已披露</span></div>
+</div>
+</div>
+
+<div class="section-title">AI场景卡 Scenario Cards</div>
+<div class="grid">
+<div class="card">
+<h2>10张场景卡 + 3个测试验证场景</h2>
+<div class="scenario-card"><h3>SC-01 AI原点体验广场</h3><p>AI原点社区中心 | 全年龄段 | 匿名客流数据</p></div>
+<div class="scenario-card"><h3>SC-02 开发者散步道</h3><p>京张绿廊沿线 | 开发者、居民 | 步数可选分享</p></div>
+<div class="scenario-card"><h3>SC-03 智能体贡献荣誉墙</h3><p>AI原点社区入口 | 全球AI社区 | 公开展示</p></div>
+<div class="scenario-card"><h3>SC-04 AI测试验证实验室 ★</h3><p>众智园加速区 | 研究机构 | 测试数据隔离</p></div>
+<div class="scenario-card"><h3>SC-05 开源成果展示廊</h3><p>众智园公共空间 | 全年龄段 | 无隐私采集</p></div>
+<div class="scenario-card"><h3>SC-06 智慧零售中心 ★</h3><p>大钟寺产业区 | 消费者 | 消费数据脱敏</p></div>
+<div class="scenario-card"><h3>SC-07 AI法律咨询服务站</h3><p>大钟寺产业区 | 创业者、居民 | 法律咨询保密</p></div>
+<div class="scenario-card"><h3>SC-08 机器人配送试点走廊 ★</h3><p>大钟寺-AI原点之间 | 居民、办公人员 | 路径不关联个人</p></div>
+<div class="scenario-card"><h3>SC-09 AI+教育共享学习站</h3><p>AI原点-高校周边 | 学生 | 学习数据脱敏</p></div>
+<div class="scenario-card"><h3>SC-10 夜间AI活力街区</h3><p>大钟寺活力广场周边 | 青年 | 环境数据无面部识别</p></div>
+<p class="note">★ = 产业测试验证场景 (不少于3个)</p>
+</div>
+</div>
+
+<div class="section-title">资料来源与假设</div>
+<div class="grid">
+<div class="card">
+<h2>来源 Sources</h2>
+<table>
+<tr><th>来源ID</th><th>类型</th><th>formal?</th></tr>
+<tr><td>官方公告</td><td>official_announcement</td><td><span class="badge badge-pass">yes</span></td></tr>
+<tr><td>智能体任务书</td><td>cleared_user_document</td><td><span class="badge badge-pass">yes</span></td></tr>
+<tr><td>临时粗略边界</td><td>provisional_repository</td><td><span class="badge badge-prov">provisional</span></td></tr>
+<tr><td>城市设计管理办法</td><td>official_standard</td><td><span class="badge badge-pass">yes</span></td></tr>
+<tr><td>控规编制审批办法</td><td>official_standard</td><td><span class="badge badge-pass">yes</span></td></tr>
+<tr><td>用地用海分类指南</td><td>official_standard</td><td><span class="badge badge-pass">yes</span></td></tr>
+</table>
+</div>
+<div class="card">
+<h2>关键假设 Assumptions</h2>
+<div class="metric-row"><span class="metric-label">临时边界不可用于官方红线</span><span class="badge badge-prov">ASM-001</span></div>
+<div class="metric-row"><span class="metric-label">容积率与高度控制未公开</span><span class="badge badge-unknown">ASM-002</span></div>
+<div class="metric-row"><span class="metric-label">建筑footprint为概念模型</span><span class="badge badge-prov">ASM-003</span></div>
+<div class="metric-row"><span class="metric-label">用地分区为概念建议</span><span class="badge badge-prov">ASM-004</span></div>
+<div class="metric-row"><span class="metric-label">重点区面积依据provisional</span><span class="badge badge-prov">ASM-005</span></div>
+<div class="metric-row"><span class="metric-label">AI场景为概念建议非已部署</span><span class="badge badge-pass">ASM-006</span></div>
+</div>
+</div>
+
+<div class="section-title">图件 Figures</div>
+<div class="grid">
+<div class="card"><h2>五张必交图件</h2>
+<table>
+<tr><th>图件</th><th>文件</th><th>状态</th></tr>
+<tr><td>场地总览</td><td>site-overview.png</td><td><span class="badge badge-pass">OK</span></td></tr>
+<tr><td>用地结构</td><td>land-use-structure.png</td><td><span class="badge badge-pass">OK</span></td></tr>
+<tr><td>重点区域</td><td>key-areas.png</td><td><span class="badge badge-pass">OK</span></td></tr>
+<tr><td>交通蓝绿</td><td>mobility-bluegreen.png</td><td><span class="badge badge-pass">OK</span></td></tr>
+<tr><td>指标证据</td><td>metrics-evidence.png</td><td><span class="badge badge-pass">OK</span></td></tr>
+</table>
+</div>
+<div class="card">
+<h2>赛道 Tracks</h2>
+<div class="legend-item"><div class="legend-color" style="background:rgba(70,160,100,0.3)"></div> 青年友好公共空间 (主赛道)</div>
+<div class="legend-item"><div class="legend-color" style="background:rgba(200,100,70,0.3)"></div> 京张文化遗产与城市叙事</div>
+<div class="legend-item"><div class="legend-color" style="background:rgba(70,130,200,0.3)"></div> AI原点社区与创新服务</div>
+</div>
+</div>
+
+<footer>
+<p>智·脉 — 京张青年AI创享带 | ZhiPulse — Jingzhang Youth AI Innovation Belt</p>
+<p>Agent: WorkBuddy Design Agent | GitHub: maxkane411-cell | 2026-08-19</p>
+<p style="margin-top:8px; color:#e74c3c;">所有空间落地建议均为概念建议，不替代正式规划和政府审定。All spatial proposals are conceptual, not statutory.</p>
+<p style="margin-top:4px;">本页面为离线静态HTML，不依赖任何CDN、远程脚本或外部资源。</p>
+</footer>
+</div>
+</body>
+</html>

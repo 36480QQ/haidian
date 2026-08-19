@@ -1,0 +1,167 @@
+{
+  "schema_version": "0.1.0",
+  "depth_items": [
+    {
+      "depth_id": "three_level_scope_framework",
+      "title_zh": "三层范围工作框架",
+      "status": "complete",
+      "proposal_section": "三层范围工作框架",
+      "evidence": {
+        "geometry_refs": ["geometry/site_boundary.geojson", "geometry/key_areas.geojson", "geometry/phasing.geojson"],
+        "metric_refs": ["site_area_sqm", "key_area_count"]
+      }
+    },
+    {
+      "depth_id": "overall_spatial_structure",
+      "title_zh": "总体空间结构",
+      "status": "complete",
+      "proposal_section": "总体设计范围城市更新与控规深度城市设计",
+      "evidence": {
+        "geometry_refs": ["geometry/land_use.geojson", "geometry/roads.geojson"]
+      }
+    },
+    {
+      "depth_id": "land_use_layout",
+      "title_zh": "用地布局",
+      "status": "complete",
+      "proposal_section": "总体设计范围城市更新与控规深度城市设计",
+      "evidence": {
+        "geometry_refs": ["geometry/land_use.geojson"],
+        "metric_refs": ["site_area_sqm"]
+      }
+    },
+    {
+      "depth_id": "key_area_detailed_design",
+      "title_zh": "重点区域详细设计",
+      "status": "complete",
+      "proposal_section": "重点区域详细设计",
+      "evidence": {
+        "geometry_refs": ["geometry/key_areas.geojson", "geometry/buildings.geojson"],
+        "metric_refs": ["zhongzhiyuan_area_sqm", "ai_origin_community_area_sqm", "dazhongsi_area_sqm"]
+      }
+    },
+    {
+      "depth_id": "ai_ecosystem_cases",
+      "title_zh": "全球AI创新生态案例",
+      "status": "complete",
+      "proposal_section": "统筹研究范围产业与未来城市研究",
+      "evidence": {
+        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"]
+      }
+    },
+    {
+      "depth_id": "ai_scenario_cards",
+      "title_zh": "AI场景卡(不少于10张)",
+      "status": "complete",
+      "proposal_section": "AI创新生态、人才画像与AI+场景",
+      "evidence": {
+        "metric_refs": ["ai_scenario_node_count"]
+      }
+    },
+    {
+      "depth_id": "industry_test_scenarios",
+      "title_zh": "AI产业测试验证场景(不少于3个)",
+      "status": "complete",
+      "proposal_section": "AI创新生态、人才画像与AI+场景",
+      "evidence": {}
+    },
+    {
+      "depth_id": "user_personas",
+      "title_zh": "用户画像(不少于5类)",
+      "status": "complete",
+      "proposal_section": "AI创新生态、人才画像与AI+场景",
+      "evidence": {}
+    },
+    {
+      "depth_id": "ai_pilgrimage_landmarks",
+      "title_zh": "AI朝圣地标(不少于3个)",
+      "status": "complete",
+      "proposal_section": "蓝绿空间、公共空间与城市风貌",
+      "evidence": {
+        "geometry_refs": ["geometry/buildings.geojson#BLD-008", "geometry/buildings.geojson#BLD-009", "geometry/buildings.geojson#BLD-005"]
+      }
+    },
+    {
+      "depth_id": "cultural_narrative",
+      "title_zh": "文化叙事",
+      "status": "complete",
+      "proposal_section": "蓝绿空间、公共空间与城市风貌 + 全文贯穿",
+      "evidence": {
+        "geometry_refs": ["geometry/buildings.geojson#BLD-005"]
+      }
+    },
+    {
+      "depth_id": "naming_and_logo",
+      "title_zh": "命名体系与Logo方向",
+      "status": "complete",
+      "proposal_section": "统筹研究范围产业与未来城市研究",
+      "evidence": {}
+    },
+    {
+      "depth_id": "long_term_operations",
+      "title_zh": "长期运营机制",
+      "status": "complete",
+      "proposal_section": "更新项目清单、实施政策与分期计划",
+      "evidence": {
+        "geometry_refs": ["geometry/phasing.geojson"]
+      }
+    },
+    {
+      "depth_id": "green_blue_public_space",
+      "title_zh": "蓝绿空间与公共空间",
+      "status": "complete",
+      "proposal_section": "蓝绿空间、公共空间与城市风貌",
+      "evidence": {
+        "geometry_refs": ["geometry/green_space.geojson", "geometry/public_space.geojson"],
+        "metric_refs": ["green_ratio", "public_space_ratio"]
+      }
+    },
+    {
+      "depth_id": "mobility_system",
+      "title_zh": "交通慢行系统",
+      "status": "complete",
+      "proposal_section": "交通、轨道、市政与公共服务设施",
+      "evidence": {
+        "geometry_refs": ["geometry/roads.geojson"],
+        "metric_refs": ["road_ratio"]
+      }
+    },
+    {
+      "depth_id": "building_renewal",
+      "title_zh": "建筑拆改留方案",
+      "status": "complete",
+      "proposal_section": "用地、建筑规模与拆改留方案",
+      "evidence": {
+        "geometry_refs": ["geometry/buildings.geojson"],
+        "metric_refs": ["total_floor_area_sqm", "building_density"]
+      }
+    },
+    {
+      "depth_id": "phasing_plan",
+      "title_zh": "分期计划",
+      "status": "complete",
+      "proposal_section": "更新项目清单、实施政策与分期计划",
+      "evidence": {
+        "geometry_refs": ["geometry/phasing.geojson"]
+      }
+    },
+    {
+      "depth_id": "metrics_recomputation",
+      "title_zh": "指标复算",
+      "status": "complete",
+      "proposal_section": "指标体系、面积复算与合规矩阵",
+      "evidence": {
+        "metric_refs": ["site_area_sqm", "green_ratio", "public_space_ratio", "road_ratio", "building_density"]
+      }
+    },
+    {
+      "depth_id": "compliance_and_risk",
+      "title_zh": "合规与风险说明",
+      "status": "complete",
+      "proposal_section": "风险、版权与合规说明",
+      "evidence": {
+        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"]
+      }
+    }
+  ]
+}

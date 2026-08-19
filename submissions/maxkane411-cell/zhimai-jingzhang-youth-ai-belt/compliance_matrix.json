@@ -1,0 +1,92 @@
+{
+  "schema_version": "0.1.0",
+  "compliance_entries": [
+    {
+      "requirement_id": "agent.1",
+      "title_zh": "一带总体概念与功能统筹方案设计",
+      "status": "covered",
+      "proposal_section": "统筹研究范围产业与未来城市研究",
+      "evidence": {
+        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518", "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],
+        "standard_ids": ["MOHURD-URBAN-DESIGN-MEASURES"],
+        "data_refs": ["geometry/site_boundary.geojson#SB-001", "geometry/key_areas.geojson"],
+        "metric_refs": ["site_area_sqm"]
+      },
+      "coverage_notes_zh": "已展开：总体概念'智·脉'、命名体系、Logo方向、三大定位（百年京张文化带/都市AI生活体验带/AI融合创新带）、五大功能、三区两翼协同回路、总体空间结构图。"
+    },
+    {
+      "requirement_id": "agent.2",
+      "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
+      "status": "covered",
+      "proposal_section": "统筹研究范围产业与未来城市研究",
+      "evidence": {
+        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"],
+        "data_refs": ["geometry/key_areas.geojson#KA-ZHON"],
+        "metric_refs": ["zhongzhiyuan_area_sqm"]
+      },
+      "coverage_notes_zh": "已展开7个全球AI创新生态案例（硅谷Sand Hill Road、伦敦King's Cross、东京涩谷Stream、深圳湾创业广场、波士顿Kendall Square、阿姆斯特丹Marineterrein、首尔DMC），众智园全栈体系设计和要素机制。"
+    },
+    {
+      "requirement_id": "agent.3",
+      "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
+      "status": "covered",
+      "proposal_section": "AI创新生态、人才画像与AI+场景",
+      "evidence": {
+        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"],
+        "data_refs": ["geometry/public_space.geojson"],
+        "metric_refs": ["ai_scenario_node_count"]
+      },
+      "coverage_notes_zh": "已展开10张AI场景卡(SC-01至SC-10)、3个产业测试验证场景(SC-04/SC-08/SC-06)、5类用户画像、场景-空间-运营映射表、隐私与人工复核边界。"
+    },
+    {
+      "requirement_id": "agent.4",
+      "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
+      "status": "covered",
+      "proposal_section": "蓝绿空间、公共空间与城市风貌",
+      "evidence": {
+        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"],
+        "standard_ids": ["MOHURD-URBAN-DESIGN-MEASURES"],
+        "data_refs": ["geometry/green_space.geojson", "geometry/public_space.geojson", "geometry/buildings.geojson#BLD-008", "geometry/buildings.geojson#BLD-009", "geometry/buildings.geojson#BLD-005"],
+        "metric_refs": ["green_ratio", "public_space_ratio"]
+      },
+      "coverage_notes_zh": "已展开京张遗址公园AI公共空间、东西缝合与南北贯通策略、3个AI朝圣地标（智能体贡献荣誉墙/开源成果展示廊/京张铁路记忆馆）、荣誉展示体系和公共空间组件库。"
+    },
+    {
+      "requirement_id": "agent.5",
+      "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
+      "status": "covered",
+      "proposal_section": "蓝绿空间、公共空间与城市风貌 + 全文贯穿",
+      "evidence": {
+        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518", "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],
+        "data_refs": ["geometry/buildings.geojson#BLD-005"]
+      },
+      "coverage_notes_zh": "京张铁路记忆馆、开发者散步道、智能体贡献荣誉墙构成文化叙事载体。百年京张铁路文化、中关村创新文化和AI新文化在空间叙事中融合。"
+    },
+    {
+      "requirement_id": "agent.6",
+      "title_zh": "一带全球AI创新活动体系与长期运营设计",
+      "status": "covered",
+      "proposal_section": "更新项目清单、实施政策与分期计划",
+      "evidence": {
+        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"],
+        "data_refs": ["geometry/phasing.geojson"]
+      },
+      "coverage_notes_zh": "已展开年度活动体系（京张AI创新周/智·脉节）、活动品牌、开发者社区运营机制、场景开放运营机制、国际传播和招引转化机制。"
+    }
+  ],
+  "announcement_tasks_covered": {
+    "section_1_3": "covered",
+    "section_1_4": "covered",
+    "section_1_5": "covered"
+  },
+  "boundary_clause_acknowledged": true,
+  "all_results_are_conceptual_proposals": true,
+  "forbidden_final_conclusions_avoided": [
+    "控规调整、容积率、建筑高度等法定规划判断",
+    "具体地块拆改留方案",
+    "道路线形、轨道线位、桥隧工程方案",
+    "地下空间工程可行性结论",
+    "土地权属、投资测算、审批判断",
+    "非公开政府数据、企业内部数据、个人隐私数据"
+  ]
+}
