@@ -38,6 +38,12 @@
       "impact": "Each scenario must preserve opt-in participation, minimization, explainability, and human appeal/review routes."
     },
     {
+      "id": "A-CLOSURE-001",
+      "status": "pending_professional_and_public_participation_design",
+      "statement": "The Memory Link closure-confirmation and reopen lifecycle is a conceptual governance contract; no operator, consent model, review window, appeal channel, service level, or baseline has been approved.",
+      "impact": "Before operation, professional and public-participation design must define eligible reviewers, privacy safeguards, response time, escalation thresholds, and auditable version retention."
+    },
+    {
       "id": "A-BENCHMARK-001",
       "status": "background_only",
       "statement": "External benchmark sources are used only for mechanism inspiration and comparison vocabulary.",

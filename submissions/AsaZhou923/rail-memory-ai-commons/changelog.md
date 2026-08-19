@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.6 - 2026-08-19
+
+- Added an explicit Memory Link lifecycle: registered, assigned, in action, awaiting closure review, reopened or escalated, and archived. A disputed closure now reopens the existing record and preserves its version and responsibility history instead of silently replacing prior evidence.
+- Added a concept-only closure-confirmation metric, MEM-12 structured fields, and a matching data-gap assumption. The metric stays `unknown` until operators, consent/privacy rules, review windows, appeal routes, service levels, case registry, and baseline are professionally and publicly defined.
+- This refinement was prompted by progressive reading of the public [`Carloslee96/jingzhang-renzi-line`](https://github.com/open-city-ai/haidian/tree/main/submissions/Carloslee96/jingzhang-renzi-line) proposal (`COMMUNITY-DISPLAY-ONLY`) and was independently adapted to the existing Rail Memory framework. No peer text, geometry, metrics, figures, media, or code was copied, and the peer proposal is not used as formal evidence.
+- Regenerated bilingual figures, visual indexes, report HTML, A3 booklets, and A0 boards. Geometry coordinates and all area/ratio metrics remain unchanged; provisional boundaries remain non-official and must still be replaced or professionally reconciled for precise-area, statutory, approval, or implementation use.
+
 ## v0.5 - 2026-08-17
 
 - Corrected the Dazhongsi commercial-service concept parcel from land-use code `05` to `09` after the official numeric table was repaired in [PR #3017](https://github.com/open-city-ai/haidian/pull/3017): under 自然资发〔2023〕234号, `05` means wetland and `09` means commercial service land.
