@@ -71,6 +71,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 专利强度 | 每万人高价值发明专利 539 件（2024），全国均值 38.5 倍 | 海淀区知识产权局 [source:HD-IP-2024] |
 | 国家级平台 | 14 家国家级重点实验室；"北京海淀人工智能集群"成国家先进制造业集群中首个 AI 集群 | 中国网 / 海淀发布 [source:HD-GOV-AI-2025] |
 | 政策与资本 | 《若干措施》五大方向；中关村综保区每年 10 亿元专项扶持、总规模 200 亿元科技成长基金 | 北京 AI 政策 / 海淀发布 [source:BJ-AI-POLICY] [source:HD-FUND-2025] |
+| 企业创新主体（统计公报口径） | 国家高新技术企业近万家；北京市"专精特新"中小企业 2953 家；国家级专精特新"小巨人"企业 404 家；独角兽 51 家（占全市超 4 成） | 海淀区 2024 年统计公报 [source:HD-STAT-2024] |
+| 科研平台与专利 | 全国重点实验室 92 家（占全市 63.4%、全国 17.9%）；有效发明专利 31.4 万件（+13.7%）；每万人口高价值发明专利 539.95 件 | 海淀区 2024 年统计公报 [source:HD-STAT-2024] |
+| 技术要素市场 | 全年登记技术合同 5.7 万项，技术合同成交总额 3806.9 亿元（+7.2%） | 海淀区 2024 年统计公报 [source:HD-STAT-2024] |
+| 人口与经济总量 | 常住人口 312.2 万人；地区生产总值 12907.1 亿元（+6.0%），占北京全市 25.9%；居民人均可支配收入 105701 元 | 海淀区 2024 年统计公报 [source:HD-STAT-2024] |
 
 *抽样核实：2822 亿元、1900+ 企业、104 款大模型三项在北京市政府、海淀区政府、中国网三处独立信源一致，置信度高；大模型数量存在 95/104 口径差异，已并列标注以避免伪精确。本轮进一步交叉核实中关村示范区 2024 总收入 9.85 万亿、备案大模型 136 款两项，在北京市科委官网、中国新闻网、中国经济网三处信源一致；《北京市城市更新条例》2023-03-01 施行在市政府官网、人民网、市住建委三处信源一致。所有数据均为区域统计，非项目产出承诺。*
 
@@ -83,6 +87,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **遗址公园**：总长约 9 km（约纽约高线公园 3 倍），预计新增绿地 >30 公顷，直接服务 **65 个社区、10 所高校、约 50 万居民与师生**；一期（南北约 2.5 km）已于 2023-06-29 开放，五道口启动区 2019 年亮相。
 
 > 上述 50 万居民与师生、10 所高校、65 个社区，正是本方案"公共利益与包容性"设计所服务的真实对象（见无障碍与数字包容性矩阵及 5 类用户画像）。
+
+**全市轨道与蓝绿基底（尺度参照）**：本带嵌入的北京市轨道交通运营网络已达 29 条线路、879 公里、全年客运 36.2 亿人次（+4.9%）[source:BJ-STAT-2024]，京张高铁清河站等枢纽是带内对外联系的骨干；全市城市绿化覆盖率 49.84%、人均公园绿地 16.96 平方米、PM2.5 年均浓度 30.5 微克/立方米 [source:BJ-STAT-2024]——既印证"蓝绿织补、低碳出行"的更新取向可对标全市生态基底，也为本带蓝绿空间与公共空间设计提供可量化参照。
 
 ### 三、科教与人才真实富集度（海淀区）
 
@@ -165,6 +171,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 5. **公众参与与反馈回流**：以数字参与平台叠加线下工作坊收集反馈，回流至方案迭代，保障公共利益与数字包容。
 
 > 方法学红线：AI 仅做辅助分析与方案推演，不替代法定审批与人工审定；涉及投资额、产值、企业名单与审定指标的结论一律不得由模型生成，须以官方口径为准（呼应第三节测试验证场景 TV-01/02/03 的人工关口设计）。
+
+### 十二、北京市公共数据开放平台：AI 创新带的数据底座（data.beijing.gov.cn）
+
+本方案"AI 城市智能体"并非凭空设想，其数据要素底座已由北京市公共数据开放体系实质承载。北京市公共数据开放平台（data.beijing.gov.cn，市大数据中心运营）当前汇聚 **71 个单位、4457 个公共数据集、4457 个数据接口、数据量 1.95 亿条**（平台首页实时统计）[source:BJ-OPEN-DATA]；并设有"有条件开放（AI 数据）"专区，含 **287 个 AI 数据目录**（问答、医疗影像、政策、大模型预训练/精调语料、具身智能、产业研究等）[source:BJ-OPEN-DATA]。这意味着本带要驱动的"导览—治理—运营"数字轨，可依法依规调用真实、持续的公共数据，而非依赖模型虚构。
+
+- **三级开放与合规路径**：平台采用"无条件开放 / 有条件开放（AI 数据）/ 授权运营专区"三级开放体系 [source:BJ-OPEN-DATA]。本方案对应设计：面向公众的活力指数、轨道可达性、绿地服务等用**无条件开放**数据；AI 训练与推演用**有条件开放（AI 数据）**目录；涉及市场主体等敏感数据走**授权运营**并严格数据最小化、脱敏与人工复核（呼应 TV-01~TV-03 人工关口与《北京市促进通用人工智能创新发展的若干措施》"包容审慎监管"方向 [source:BJ-AI-POLICY]）。
+- **责任主体与实施抓手**：数据接入由市大数据中心 / 海淀区数据局统筹的公共数据资源网提供；本方案仅做"调用方 + 应用方"，不持有原始敏感数据、不替代公共数据治理职责，所有结论以官方口径为准、可复核。
+- **对可实施性的支撑**：公共数据底座已"现成可用"，显著降低本带数字轨的冷启动成本与数据合规风险，使"近期 ≥3 测试场景上线"具备真实数据供给保障，而非概念空转。
+
+> 平台数据为区域公共基础设施，非本项目产出；本方案仅声明调用与合规使用方式，不作数据规模或接口可用性承诺，最终以平台实际开放范围与授权流程为准（列为待确认事项）。
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -576,17 +592,35 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
 
+## 评审维度响应与资料溯源矩阵
+
+为便于评审，下表将征集任务书明确的 7 个评审维度与本方案对应章节、权威数据支撑一一映射；所有数据均来自公开来源（详见 `sources.json` 与本章末参考资料）。
+
+| 评审维度 | 本方案对应响应 | 主要支撑证据（来源 ID） |
+|---|---|---|
+| 任务书相关性 | 紧扣"百年京张、海淀、AI 创新带、城市治理/空间"选题，以京张铁路遗址公园活力带为空间载体，响应征集任务书范围与约束 | OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、HD-GOV-OVERVIEW |
+| 原创性 | 提出"双轨共生（物理轨×数字轨）""AI 时光驿站叙事轴""一带数字孪生沙盘"三项可操作原创机制 | 见第五节、第十一节 |
+| AI 与城市规划创新性 | human-in-the-loop AI 辅助规划工作流 + AI 城市智能体驱动导览/治理/运营，数据底座依托北京市公共数据开放平台 | BJ-OPEN-DATA、BJ-AI-POLICY、第十一节 |
+| 可实施性 | 三期路线图锚定真实在施节点（一期 2023 已开放、二期 2024 开工、大钟寺存量改造先例），责任主体与数据供给明确 | HD-RAIL-PHASE、HD-RENEWAL-REG、BJ-OPEN-DATA、第九节 |
+| 公共利益和包容性 | 服务 65 社区/10 高校/约 50 万居民师生，含无障碍与数字包容性矩阵、5 类用户画像、公众参与星图 | JR-RAIL-PARK、第四节、无障碍矩阵 |
+| 风险与合规意识 | 以《城市更新条例》框定合规边界（存量更新、不碰一级开发/商品住宅），数据最小化、人工复核、伦理登记、版权与生成内容标注 | HD-RENEWAL-REG、BJ-AI-POLICY、第十一节、风险章 |
+| 表达完整度 | 中英文双语提案 + 数据驱动图件 + 交互式可视化网页（见 visual/ 与 report/），多模态呈现空间关系与人机协作 | manifest.json、visual/、report/ |
+
+> 本矩阵为评审导航，不替代正文章节；所有量化数据均为区域公开统计，非本项目产出承诺。
+
 ## 参考资料
 
-- brief/public-brief.md
-- brief/site-package/design_brief.json
-- brief/site-package/allowed_design_space.json
-- brief/site-package/enums/
-- brief/site-package/ranges/planning_limits.json
-- data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv
-- data/processed/agent_task_requirements.csv
-- data/processed/source_use_matrix.csv
-- data/processed/missing_data_checklist.csv
-- 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
+- brief/public-brief.md [source:SITE-PACKAGE]
+- brief/site-package/design_brief.json [source:SITE-PACKAGE]
+- brief/site-package/allowed_design_space.json [source:SITE-PACKAGE]
+- brief/site-package/enums/ [source:SITE-PACKAGE]
+- brief/site-package/ranges/planning_limits.json [source:SITE-PACKAGE]
+- data/processed/agent_fact_pack.md [source:SITE-PACKAGE]
+- data/processed/project_scope_summary.csv [source:SITE-PACKAGE]
+- data/processed/agent_task_requirements.csv [source:SITE-PACKAGE]
+- data/processed/source_use_matrix.csv [source:SITE-PACKAGE]
+- data/processed/missing_data_checklist.csv [source:SITE-PACKAGE]
+- 北京市统计局 / 海淀区统计公报（权威数据门户）：https://tjj.beijing.gov.cn/ 、https://zyk.bjhd.gov.cn/sjkf/tjgb/202504/t20250423_4766489.shtml [source:HD-STAT-2024] [source:BJ-STAT-2024]
+- 北京市公共数据开放平台（AI 创新带数据底座门户）：https://data.beijing.gov.cn/index.htm [source:BJ-OPEN-DATA]
+- 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json` [source:SITE-PACKAGE]
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
