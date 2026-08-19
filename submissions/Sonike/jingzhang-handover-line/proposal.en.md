@@ -134,6 +134,17 @@ Regional synergy does not fabricate partnerships; it exchanges reusable methods.
 | Beijing E-Town | Engineering problem sheets from controlled scenarios | Manufacturing-condition retest needs | Enterprise, order or production-line relationship unclear |
 | Beijing-Tianjin-Hebei nodes | Bilingual protocols and annual failure summaries | Cross-city service comparison questions | Responsible party, permission or scope unclear |
 
+Regional collaboration most often stops at "contact established". The table below compresses it to the smallest deliverable unit: the first exchangeable output for each counterpart, which type of organisation carries it, what format the evidence takes, what causes refusal, and how often it is reviewed. **Until the first output has happened, the interface is recorded as not started; a meeting, a letter of intent or a name list does not substitute for it.**
+
+| Counterpart | First exchangeable output (minimum unit) | Responsible organisation type | Evidence format | Refusal condition | Review cycle |
+| --- | --- | --- | --- | --- | --- |
+| Beiwei Community | One authorised community-service problem sheet | Community service + public service operations | Problem-sheet JSON (submitting role, scope of authorisation, data boundary) | Resident participation or data boundary unconfirmed | Quarterly |
+| Future Science City | One urban validation problem sheet and its receipt | University transfer + independent review | Problem sheet and receipt JSON, with separate positive and negative result fields | Research result presented as deployable product | Half-yearly |
+| Huairou Science City | One public-translation method note | Science communication + culture venue | Method note in Markdown plus one public talk record | Any non-public research or facility data involved | Half-yearly |
+| Beijing E-Town | One controlled-scenario engineering problem sheet | Test safety + facility maintenance | Problem-sheet JSON plus independent meter readings | Enterprise, order or production-line relationship unclear | Quarterly |
+| Beijing-Tianjin-Hebei nodes | One bilingual protocol summary and annual failure summary | Public service operations + independent review | Bilingual Markdown plus a public logbook entry | Responsible party, permission or scope unclear | Annually |
+
+
 The main name is "Jing-Zhang Handover Line" and the English name is "JING-ZHANG HANDOVER LINE" — not a separate coinage but a direct translation, so both languages point at the same thing. **The naming system is unified by one verb, handover**: three handover yards, the Handover Bell, the Public Handover Table, the dual-signature handover ledger, Global Handover Week, the annual handover ledger. Any new element must be nameable with that verb; if it cannot be, it does not belong on this line. The visual identity and logo direction follow from it: the mark combines two rails, a baton and signal brackets. Coal black means auditable duty, signal red means a stop threshold decided by a person, electric cyan means an open interface, and duty yellow means service reaching daily life. The system extends to wayfinding, protocol cards, logbooks, event publications and the Public Handover Table without requiring a screen.
 
 ## Nine New Things This Proposal Puts Forward, Each Against Conventional Practice
@@ -351,6 +362,24 @@ Cultural signage and handover symbols stay in separate layers: cultural signage 
 
 **Once measured, it was fixed rather than merely listed as a limitation.** The corridor plan in the land-use figure (F/02) previously separated its parcels by colour alone; each parcel now carries its land-use code printed on it (0802, 0804, 09, 0701, 0702, 0803, 1401), placed largest parcel first and skipped on collision so that labels never overlap. The composition bar and legend already print code, area and share line by line. **The figure therefore no longer requires hue discrimination to be read**, satisfying WCAG 2.1 SC 1.4.1 (colour is not the only visual means). The boundaries are recorded in the same place: the two colour pairs remain close in value and must be re-picked to ΔE00 ≥ 10 when the figures are rebuilt; real-user testing belongs to the on-site stage led by an accessibility reviewer once site authorisation exists, and its trigger and owner are registered in `assumptions.json#A-CONTRAST-001`. All values above can be recomputed independently from `jzstyle.LAND_USE_COLORS` using Viénot 1999 simulation plus CIEDE2000 [standard:WCAG-CONTRAST] [assumption:A-CONTRAST-001].
 
+### Three Reading Distances, Three Type Layers: Measured Values and the Test
+
+A drawing is not one scale: a board, a booklet and a phone are three reading distances. **The test follows common exhibition practice: cap height must be no less than one 250th of the reading distance.** The sizes below are the actual minimum and title sizes used in each medium, with cap height taken as 0.70 of the type size. They are reviewable measurements, not design intentions.
+
+| Medium and reading layer | Design reading distance | Actual type size | Cap height | Maximum legible distance |
+| --- | --- | --- | --- | --- |
+| A0 board · far layer (main title) | 3 m | 95.4 pt | 23.5 mm | 5.9 m |
+| A0 board · middle layer (section titles, footer) | 1.5 m | 25.0–34.6 pt | 6.2–8.5 mm | 1.5–2.1 m |
+| A0 board · near layer (body and captions) | 0.8 m | 13.0 pt | 3.2 mm | 0.80 m |
+| A3 booklet · desk (main title) | 0.4 m | 47.6 pt | 11.8 mm | 2.9 m |
+| A3 booklet · desk (smallest body) | 0.4 m | 7.6 pt | 1.9 mm | 0.47 m |
+| Offline page · phone | 0.35 m | 10–14 px | 1.9–2.6 mm | 0.46–0.65 m |
+
+**The three layers each stand on their own and do not substitute for one another.** The far layer of an A0 board is what tells a passer-by at three metres what this is; the middle layer lets someone at a metre and a half find the section they want; the near layer is the evidence and the qualifiers, read at the board itself. **Detailed evidence on an A0 board is therefore not solved by enlarging type but by layering: not being able to read the body text from three metres is the design, not a defect.** The same test governs wayfinding and the identity: street wayfinding takes a far-layer size, service-desk cards a 0.4 m size, and international-communication thumbnails a 0.35 m size, with the thumbnail layer carrying no figures or qualifiers, only the name and a status label.
+
+**Each of the five core figures carries a short alternative text**, held in the guide text under `assets/media/` for screen readers and plain-text environments. Each one states four fixed things: the conclusion of the figure, the key numbers on it, the provisional nature of the boundary, and **the conclusions that cannot be drawn from it**. Alternative text differs from a caption: a caption explains how to read the figure, while alternative text gives someone who cannot see it the same judgement [depth:metrics_recalculation] [assumption:A-CONTRAST-001].
+
+
 ### Reading this proposal without a screen: audio, video, tactile, and 3D
 
 The same content exists in five forms a person can receive directly, each a fallback for the others rather than a replacement: a three-minute audio guide in Chinese and English with a line-by-line caption script, a short video guide in both languages, a tactile map of the main corridor segment (printable vector linework for blind readers and the staffed enquiry desk), 3D model data for the Public Handover Table, and an interactive page that opens offline. If any one form fails, the other four still explain the same thing on their own; the paper directory and staffed enquiry remain the final layer and depend on no device at all.
@@ -409,6 +438,22 @@ P0 carries cost class **S: a small, movable civic interface with no permanent wo
 Six gates must all pass before the field rehearsal: written site authority; separate appointment of outgoing and incoming roles; public-liability and event cover matching the actual format; completed accessibility and safety review; three quotations and continuing maintenance responsibility; and an executable method for strike, paper archive and temporary-record deletion. Until then the digital smart layer stays off, while fixed wayfinding and staffed service may be prepared independently.
 
 The first field round uses authorised staff and professional reviewers only. It does not recruit the public or process live business. Proposed acceptance targets are: 100% separation of the two role types; 100% completion of the task with the smart layer off; 100% deletion of temporary electronic records; zero severe accessibility or safety breaks; removal of all components within the agreed strike window; and 100% completeness of positive, negative and revision records. These are pilot targets, not observed results.
+
+### How the P0 Field Session Is Recorded: One Sheet That Collects No Personal Data
+
+The field session is led by the post-authorisation professional process, but the record format can be fixed now so that nobody improvises one later. The whole session uses a single sheet, with the four observation classes written on the same row, so spatial rule, role behaviour and service outcome cannot be reported separately.
+
+| Observation | What is recorded | How | What is not recorded |
+| --- | --- | --- | --- |
+| Spatial adjacency rule | Whether staffed counter, walkway and stop entrance stay continuously reachable; whether the machine lane cuts between them | A patrol every half hour, ticked item by item with the location of any break | No image, track or dwell time of any person |
+| Role refusal | Number of refusals by the intake role, the stated reason class each time, and whether the more conservative state was held afterwards | One record per refusal, reasons classified against R1–R7 | No name or affiliation of either party |
+| Human completion rate | Items completed and time percentiles for the same task while the smart layer is off | Paired observation, matched to the on state on the same day and hours | No identity, contact detail or case content |
+| Shutdown and restoration | Trigger class, time to shutdown, whether basic service continued, who reviewed the restoration | One record per shutdown, with the second reviewer named by role | No field traceable to an individual |
+
+**"Non-AI equivalent" is not a promise but an acceptance test in four parts, and failing any one keeps the smart layer closed.** (1) Completion rate: with the layer off, the completion rate for the same task is not below the agreed line. (2) Time: the difference in median time does not exceed the agreed line. (3) Reachable path: a complete route needing no download, registration or smartphone exists and can be walked on the spot. (4) Duty holder present: the staffed counter is attended during that period. All four are measured by the paired method of HV-03 and enter the same public table.
+
+**The AI innovation index only has a definition once it is split into sub-items.** The index is unmeasured in `metrics.json`; the four sub-items are collected as follows. **Open interfaces**: the sampling unit is one published interface, the base period is the first published quarter, an interface withdrawn is deducted in that period, and one whose owner is unclear is not counted. **Reproducible outputs**: the sampling unit is one output carrying a licence and a reproduction record; an unresolvable licence is not counted. **Human takeover availability**: the sampling unit is one scenario in one period, and an understaffed period counts in the denominator but not the numerator. **Exit-record completeness**: it follows the definition of HV-04. All four carry a stop-publication condition: **when the original records of any sub-item cannot be reviewed, the index is not published for that period and the previous period's value is not carried forward** [assumption:A-BASELINE-001] [depth:metrics_recalculation].
+
 
 ### Six action packages and responsible organisation types
 
