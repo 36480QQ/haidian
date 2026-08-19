@@ -1719,9 +1719,9 @@
       "named_the_damage": true,
       "rendered": false,
       "what_zh": "把 A0 展板第一页的第二张换成 site-overview——那是评审本来就单独收到的五张之一。**这一页是评审收到的唯一一块光栅版面**，用它重复一张已经寄出的图，买不到任何东西。",
-      "what_en": "Swap the second sheet on A0 board page 1 for site-overview, which the reviewer already receives as its own PNG. **That page is the only rasterised surface the reviewer gets**, and spending it on a repeat buys nothing.",
+      "what_en": "Swap the second sheet on A0 board page 1 for site-overview, which the reviewer already receives as its own PNG. **That page is the only rasterised surface the reviewer gets**, and sE373 it on a repeat buys nothing.",
       "why_zh": "**这道闸门此前列在「尚未被证明会失败」里，理由是「条件在 analysis/ 里，而变异只改随包文件」——而本台变异早已能改 analysis/ 的源文件**（E234）。这条变异要证明的是：稀缺版面一旦被重复占用，构建就停。",
-      "why_en": "**This gate sat in the not-yet-proven list under a reason that had stopped being true**: that its condition lives in analysis/ and mutations only touch shipped files, when this harness had long since gained source mutations (E234). This one proves that spending the scarce surface on a repeat stops the build."
+      "why_en": "**This gate sat in the not-yet-proven list under a reason that had stopped being true**: that its condition lives in analysis/ and mutations only touch shipped files, when this harness had long since gained source mutations (E234). This one proves that sE373 the scarce surface on a repeat stops the build."
     },
     {
       "id": "M81",
