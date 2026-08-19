@@ -505,6 +505,14 @@ For reviewer convenience, this table maps the seven review dimensions defined in
 
 > This matrix is a reviewer navigation aid, not a substitute for the body; all quantified data are regional public statistics, not project-output commitments.
 
+### Machine-readable taskbook map (`taskbook_entry_map`)
+
+Beyond the table above, `compliance_matrix.json#taskbook_entry_map` provides **19 machine-readable entries** (6 agent tasks agent.1–agent.6 + the 13 supplementary taskbook review dimensions), each a **bilingual 7-tuple**:
+
+> Requirement → text entry (section) → figure number (FIG 1–5) → structured entry (JSON/file path) → spatial object (geometry layer) → metric (metrics.json key) → **failure condition** (which observable phenomenon proves the item is not truly delivered).
+
+The map is auto-checked at generation time and records `uniqueness_check`: duplicate requirement names 0, duplicate entry quadruples 0, metric IDs pointing to non-existent metrics 0 → result **pass**. Failure conditions make every requirement falsifiable, letting reviewers, professional teams and operators quickly locate gaps and avoiding "listed in a table but absent in the text" fake coverage.
+
 ## References
 
 - brief/public-brief.md [source:SITE-PACKAGE]
