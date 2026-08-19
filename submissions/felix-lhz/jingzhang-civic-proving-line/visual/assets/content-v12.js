@@ -195,6 +195,11 @@ function updateNarrative() {
     if(re.test(s)) s=s.replace(re,block); else s=s.replace(/<!-- V11_DECISION_END -->/,`<!-- V11_DECISION_END -->\n\n${block}`);
     s=s.replace(/### V11 城市采纳编译器：84 项合成验证与 E2 文件就绪/,'### 城市采纳编译器：测量契约、空间裁决与 E2 文件就绪');
     s=s.replace(/### V11 Civic Adoption Compiler: 84 synthetic checks and E2 documentation/,'### Civic Adoption Compiler: measurement contracts, spatial decision and E2 documentation');
+    if(lang==='zh'){
+      s=s.replace('V11 对 S7 的同一任务','当前方案对 S7 的同一任务').replace('V11 将副命题固定为','空间副命题为').replace('是 V11 的旗舰样板','是旗舰样板');
+    }else{
+      s=s.replace('V11 generates three spatial alternatives','The current proposal generates three spatial alternatives').replace('V11 fixes the supporting proposition as','The supporting proposition is').replace('is the V11 flagship','is the flagship');
+    }
     s=s.replace(/^summary:.*$/m,lang==='zh'?'summary: "普通服务先成立，AI再以十二份同题测量契约接受公开比较；空间裁决、停止机制和现场未知项均可复核。"':'summary: "Ordinary service stands first; AI then faces twelve same-task measurement contracts with reviewable spatial decisions, stop rules and field unknowns."');
     fs.writeFileSync(path.join(ROOT,rel),s);
   }
