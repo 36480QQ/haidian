@@ -235,7 +235,7 @@
       "url": "https://www.openstreetmap.org/",
       "published_date": "2026-08-08",
       "source_locator": "Overpass API，bbox 39.925,116.315,40.035,116.375；2 条公园边界 way 与 16 条铁路 way，保留原始 way id；此前本条同时带 url 与 source_url 两个字段且取值已不一致（https://www.openstreetmap.org/ · Overpass API），已合并为单一 url",
-      "license_or_reuse_terms": "ODbL 1.0（开放数据库许可）。署名『© OpenStreetMap contributors』，并以相同许可提供。**本包确实再分发了原始数据的一个提取子集**：`visual/assets/osm_reference.json` 内含 2 条公园边界环、16 条铁路 way 的原始坐标与标签，以及本方案自身的两条临时边界环，共 275 个顶点，未做简化。该子集构成 ODbL 意义上的派生数据库（Derivative Database），因此本包整体以 ODbL 1.0 提供该部分数据，并保留原始 way id 以便追溯。此前此处写「不再分发原始数据库」，在坐标随包提交后即不成立，已改正。",
+      "license_or_reuse_terms": "ODbL 1.0（开放数据库许可）。署名『© OpenStreetMap contributors』，并以相同许可提供。**本包确实再分发了原始数据的一个提取子集**：`visual/assets/osm_reference.json` 内含 2 条公园边界环与 16 条铁路 way 的原始坐标与标签，**共 275 个顶点**，未做简化——**这 275 个才是被再分发的 OSM 数据**。同一文件另存本方案自身的两条临时边界环（17 个顶点），**不是 OSM 数据，因此不计入这个数**；此前这句把它们一并列出却又不计入总数。该子集构成 ODbL 意义上的派生数据库（Derivative Database），因此本包整体以 ODbL 1.0 提供该部分数据，并保留原始 way id 以便追溯。此前此处写「不再分发原始数据库」，在坐标随包提交后即不成立，已改正。",
       "evidence_class": "background_only",
       "title": "OpenStreetMap 京张铁路遗址公园与废弃铁路线形提取（本方案自采）",
       "title_en": "OpenStreetMap extract of the Jing-Zhang railway heritage park and the disused alignment (measured by this proposal)",
