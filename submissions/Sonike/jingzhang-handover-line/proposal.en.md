@@ -311,31 +311,40 @@ One more figure shows that "one line" is not a rhetorical flourish: of the spine
 
 **This package previously gave only the order and adjacency of the section and explicitly left dimensions "to the site professionals" — that position is withdrawn here.** An urban design entry owes **proposed** dimensions, which are a different thing from **approved statutory indicators**: the former is the content of the proposal, the latter must be set by a competent authority under law. Declining to give any dimension because no approved statutory plan exists amounts to not doing the design. The table gives a proposed value, where each number comes from, and who must confirm it.
 
+**The table has two levels, because "building setback" is a container, not a peer band.** A1–A3 sit inside the setback and do not overlap; their sum is the setback width. B–E are peer bands outside it. **The total adds only A, B, C, D and E — never A1–A3 again** — which is stated explicitly so the container is not summed together with its own sub-bands.
+
 | Band of the section (from the public edge outward) | Proposed dimension | Where the number comes from | Who confirms |
 | --- | --- | --- | --- |
-| Building setback (forming the continuous walking surface) | **6–8 m** | Sum of the lower bounds: walking surface 2.5–3.0 m + services and trace band 1.2–1.5 m + waiting area in front of counters 2.0–3.5 m | Road red line and land boundary are set by the planning and natural-resources authority |
-| Waiting area in front of a staffed counter | **8–12 m² per counter** | 6–8 people queuing per counter at 1.0–1.5 m² standing occupancy each | Operating entity rechecks against actual case load |
-| Step-free walking surface (clear width, continuous throughout) | **2.5–3.0 m** | Clear width for two wheelchairs to pass, plus tactile guide strip and service strip; excludes any furniture footprint | Accessibility professionals verify against current codes [source:BARRIER-FREE-ENVIRONMENT-LAW] |
-| Service strip carrying the stop entrance | **1.2–1.5 m**, no more than 0.6 m from the walking-surface edge | Arm's reach of a standing person; "within arm's reach" is an opening precondition in this proposal, not a convenience | As above |
-| Rail trace band (flush-set into paving) | Module in **multiples of 600 mm**; marked run clear width **1.435 m** | Standard gauge 1,435 mm and sleeper spacing about 600 mm — both the paving module and the trace width come from the track's own dimensions | Heritage authority and landowner confirm whether the trace may be exposed |
-| Physical human–machine separation | **≥ 1.5 m** | Separation relies on dimension, not on a painted line; 1.5 m is the lower bound that can hold a hedge or railing and still leave a maintenance route | On-site safety review |
-| Machine test lane | **2.0–2.5 m** | Single-machine passage plus clearance on both sides; the upper bound is taken only where closed testing is required | Testing entity together with the safety post |
-| Planted rest strip (no spending threshold) | **4.0–6.0 m** | One row of street trees (1.5 m pit) + seating faces on two sides (0.6 m each) + circulation clearance | Landscape authority |
-| **Total per side** | **about 18–27 m** | Sum of lower bounds to sum of upper bounds above | — |
+| **A Building setback** (= A1＋A2＋A3 ＋ slack) | **6.0–8.5 m** | A1–A3 sum to 5.7–8.0 m, plus 0.3–1.0 m of slack (the 1.0 m at Origin Community is what puts the public handover table inside the setback) | Road red line and land boundary are set by the planning and natural-resources authority |
+| └ A1 Waiting area in front of a staffed counter (**depth**) | **2.0–3.5 m** | 6–8 people queuing per counter at 1.0–1.5 m² standing occupancy each needs 6–12 m²; at a 3.5–4.0 m frontage, **depth = area ÷ frontage** | Operating entity rechecks against actual case load |
+| └ A2 Step-free walking surface (clear width, continuous throughout) | **2.5–3.0 m** | Clear width for two wheelchairs to pass ＋ tactile guide strip; **excludes the A3 service strip and any furniture footprint** | Accessibility professionals verify against current codes [source:BARRIER-FREE-ENVIRONMENT-LAW] |
+| └ A3 Service strip carrying the stop entrance | **1.2–1.5 m**, no more than 0.6 m from the A2 edge | Arm's reach of a standing person; "within arm's reach" is an opening precondition in this proposal, not a convenience | As above |
+| **B Rail trace band** (flush-set into paving) | **0.6 m** (one module) or **1.435 m** (full gauge exposed) — one or the other | Sleeper spacing about 600 mm, standard gauge 1,435 mm; both the paving module and the trace width come from the track's own dimensions | Heritage authority and landowner confirm whether the trace may be exposed |
+| **C Physical human–machine separation** | **≥ 1.5 m** (counted as 1.5 m in the total) | Separation relies on dimension, not on a painted line; 1.5 m is the lower bound that can hold a hedge or railing and still leave a maintenance route | On-site safety review |
+| **D Machine test lane** | **0** or **2.0–2.5 m** | Single-machine passage plus clearance on both sides; runs with no intelligent layer take 0, and C is then 0 as well | Testing entity together with the safety post |
+| **E Planted rest strip** (no spending threshold) | **4.0–6.0 m** | One row of street trees (1.5 m pit) ＋ seating faces on two sides (0.6 m each) ＋ circulation clearance | Landscape authority |
+| **Total per side ＝ A＋B＋C＋D＋E** | **about 14–20 m** | Lower bound 6.0＋0.6＋1.5＋2.0＋4.0 ＝ **14.1**; upper bound 8.5＋1.435＋1.5＋2.5＋6.0 ＝ **19.9** | — |
 
-**Each of the three key areas takes different values within these ranges, on the same logic as the aspect ratios given earlier:**
+**Values taken in each of the three key areas — the five bands add up to that segment's total, and anyone can recompute from this one table:**
 
 | Band | Zhongzhiyuan (2.16, long) | Origin Community (1.18, near-square) | Dazhongsi (0.59, wide) |
 | --- | --- | --- | --- |
-| Building setback | 6 m (corridor first) | **8 m (largest, so the handover table sits within the setback)** | 7 m |
-| Waiting area | 8 m²/counter (smallest) | 10 m²/counter | **12 m²/counter (largest)** |
-| Machine test lane | **2.5 m (widest on the line, entirely on the east side of the spine)** | 2.0 m | **none (the intelligent layer takes no width)** |
-| Planted rest strip | 4.0 m (smallest) | 5.0 m | **6.0 m (largest)** |
+| A1 Waiting depth (resulting area) | 2.0 m (4.0 m frontage → **8 m²/counter**, smallest) | 2.5 m (4.0 m frontage → 10 m²/counter) | **3.5 m (3.5 m frontage → about 12 m²/counter, largest)** |
+| A2 Step-free walking surface | 2.5 m | 3.0 m | 3.0 m |
+| A3 Service strip with stop entrance | 1.2 m | 1.5 m | 1.5 m |
+| **A Building setback** (A1+A2+A3 ＋ slack) | **6.0 m** (sub-total 5.7 ＋ 0.3 slack; corridor first) | **8.0 m** (sub-total 7.0 ＋ **1.0 slack, for the handover table**) | **8.5 m** (sub-total 8.0 ＋ 0.5 slack) |
+| B Rail trace band | **1.435 m (full gauge exposed)** | 0.6 m | 0.6 m |
+| C Physical separation | 1.5 m | 1.5 m | **0 (no test lane, so none needed)** |
+| D Machine test lane | **2.5 m (widest on the line, entirely east of the spine)** | 2.0 m | **0 (the intelligent layer takes no width)** |
+| E Planted rest strip | 4.0 m (smallest) | 5.0 m | **6.0 m (largest)** |
+| **Total per side** | **15.4 m** | **17.1 m** | **15.1 m** |
 | Podium storeys along the spine | 2–3 | **3–4 (most continuous street edge)** | 2–3 |
 | Enterable ground-floor height | **4.5–5.5 m** (the east-side observation window must stay visible above the 1.2–2.4 m eye-level band) | 4.5–5.0 m | 4.5–5.0 m |
 | Set-back upper storeys | 6–8 | 6–8 | 4–6 (close to the existing residential grain) |
 
-**These values are the spatial redemption of those three aspect ratios**: the north segment gives width to machines and closed testing (widest test lane, narrowest rest strip); the south segment gives width to people (largest waiting area and rest strip, no test lane); the middle gives width to the street edge (largest setback and tallest podium). **The closer a capability comes to daily life, the less width the section leaves to machines, until it reaches zero.**
+**The row worth reading is the total: 15.4 / 17.1 / 15.1 m — the three segments are almost the same width, and allocate it in opposite ways.** The north segment hands 4.0 m (26%) to machines and separation and keeps only a 4.0 m rest strip; the south segment **transfers that entire 4.0 m to people**, taking waiting depth and rest strip to their maximum while machines go to zero. **It is not "the south has more room so it treats people better" — it is who gives way to whom within the same width.** The middle is widest at 17.1 m, and every extra millimetre of it lands in the setback, so the handover table can stand on the footway.
+
+**These values are the spatial redemption of those three aspect ratios**: the north segment gives width to machines and closed testing, the south to people, the middle to the street edge. **The closer a capability comes to daily life, the less width the section leaves to machines, until it reaches zero.**
 
 **Materials, roofscape and tree species follow two constraints — the railway heritage, and removability:**
 
@@ -469,7 +478,7 @@ As the backbone of the vitality belt, the heritage park has three walking-contin
 Municipal strategy begins with reversible metering. Edge devices meter energy and heat independently. Temporary installations do not connect to unverified municipal systems. Drinking water, toilets, shaded seating, staffed counters, steady lighting, telephone and paper service precede new screens. Sensors may report status; they cannot establish drainage, power, fire, structure or communications capacity [depth:municipal_new_infrastructure] [assumption:A-MUNICIPAL-001].
 
 ![Continuous transport, walking, blue-green civic space and the twelve AI scenario nodes](assets/figures/mobility-bluegreen.en.png)
-> **How to read this figure.** The twelve teal dots on the left-hand plan are the twelve takeover points, numbered to match the scenario numbers in the text; the blue cross lines are the eight east-west stitch links. A / B / C at the upper right are the takeover rules themselves. The section below shows order and adjacency only; dimensions are not drawn on it but written in *Proposed Dimensions for the Handover Section* (about 18–27 m per side in total, with each of the three key areas taking different values within that range according to its duty). What the drawing itself carries is the adjacency rule: staffed counter, walkway and stop entrance must stay continuously reachable.
+> **How to read this figure.** The twelve teal dots on the left-hand plan are the twelve takeover points, numbered to match the scenario numbers in the text; the blue cross lines are the eight east-west stitch links. A / B / C at the upper right are the takeover rules themselves. The section below shows order and adjacency only; dimensions are not drawn on it but written in *Proposed Dimensions for the Handover Section* (about 14–20 m per side in total; the three key areas take 15.4 / 17.1 / 15.1 m — almost the same width, allocated in opposite ways). What the drawing itself carries is the adjacency rule: staffed counter, walkway and stop entrance must stay continuously reachable.
 
 
 Public service uses two layers, not a primary service and a fallback. The basic layer consists of staff, telephone, paper, fixed wayfinding and directly usable space. Only after that layer exists does the smart layer add translation, retrieval, reminders, route explanation and state organisation. Turning the smart layer off never downgrades the basic layer. This protects older people, disabled people, children, international visitors, people without smartphones and anyone who chooses not to use an algorithm.
