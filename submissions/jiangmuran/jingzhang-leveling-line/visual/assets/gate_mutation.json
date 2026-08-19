@@ -1420,6 +1420,18 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M164",
+      "gate": "visual_packet_qa.py",
+      "target": "assets/figures/site-overview.en.png",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一张英文图的 PNG 头 IHDR 宽度改小 8 像素——**只动四个字节**。图仍在、仍远小于每图上限、包内图数不变，而闸门报出中英两半尺寸不等——正是 E281 那一次真实发生过的事。",
+      "what_en": "Shrink one English figure's PNG IHDR width by eight pixels — **four bytes and nothing else**. The file is still there, still far under the per-image cap, and the packet still holds the same number of images; the gate reports that the two halves of the pair are sent at different sizes, which is exactly what happened in E281.",
+      "why_zh": "已发布的理由枚举了三条分支：文件缺失、超单图上限、超图数。**第四条不在里面**——像素尺寸配对检查是后来才加的，而那句理由从未回头修过。“本装置写不到的东西”其实是“本装置只会写文本”——**把装置的局限写成了闸门的性质**。",
+      "why_en": "The published reason enumerates three branches - a file absent, one over the per-image cap, the packet over the image count. **The fourth is not in it**: the pixel-pair check was added later and the reason was never revisited. What it called a fact about the file system rather than about any file this harness can write was really a fact about this harness writing only text — **a limitation of the tool published as a property of the gate**."
+    },
+    {
       "id": "M163",
       "gate": "shipped_verifier_qa.py",
       "target": "../submissions/jiangmuran/jingzhang-leveling-line/visual/assets/check_osm.js",
@@ -1966,7 +1978,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 160,
+  "caught": 161,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2076,10 +2088,10 @@
     "transformation_qa.py",
     "upstream_drift_qa.py",
     "upstream_validator_qa.py",
+    "visual_packet_qa.py",
     "whitespace_rules_qa.py"
   ],
   "gates_not_covered": {
-    "visual_packet_qa.py": "every branch it holds turns on a file being absent, being larger than the organisers' per-image cap, or the packet exceeding their image count — and this harness damages bytes inside shipped text files, which cannot unlink a PNG, cannot make one 4 MiB, and cannot add a nineteenth image to a list the organisers hard-code. Damaging a source in `analysis/` does not reach it either: the sheet list it reads is the organisers', not this build's. Its failing states are facts about the file system rather than about any file this harness can write.",
     "gate_mutation_qa.py": "this file is the harness; mutating it would be the harness grading its own damage, which proves nothing either way. Both halves of its detection — that a caught defect is caught, and that it was named — are instead established by two control mutations, `assert_harness_can_report_survival` and `assert_harness_checks_naming`"
   },
   "restore_puts_back": [
@@ -2118,6 +2130,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 110 道闸门，其中 108 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 110 gates, 108 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 110 道闸门，其中 109 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 110 gates, 109 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
