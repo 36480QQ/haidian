@@ -4,6 +4,30 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M159",
+      "gate": "generation_chain_qa.py",
+      "target": "report/copyright_statement.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把版权声明里的 35 改回「十二个 `fig_*.py`」——**本轮之前它就是这么写的**。闸门从 `agent.json` 随包的脚本名单重数，写成汉字的数连模式都匹配不上，构建停。",
+      "what_en": "Put the copyright statement's 35 back to the twelve it said until this round. The gate recounts from the shipped script list in `agent.json`, the number written in Chinese characters no longer even matches the pattern, and the build stops.",
+      "why_zh": "这句话的主语就是「全部产出确定性生成」。而它自己报的两个数是写死的，写下时对，之后一直随包。**机读那份一直是对的**：`agent.json` 每次构建重生，人读的那份在旁边手写、接在虚空里——而读者读的是后者。",
+      "why_en": "The subject of that sentence is that every output is deterministically generated, and two of its own figures were typed - right when written, shipped ever since. **The machine-readable copy was right the whole time**: agent.json is regenerated on every build while the prose copy beside it is hand-typed and joined to nothing. The copy a person reads is the one that drifted."
+    },
+    {
+      "id": "M158",
+      "gate": "computed_value_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把正文里「九个区段中六个不满足」改成五个。这个数现在由 `fig_reach.failing_segments` 每次构建现算，写词和算出来的对不上，构建停。**五不是随便挑的**：它正是 E381 之前采样曲线给出的那个错数。",
+      "what_en": "Change the body's `six of the nine segments` to five. The count is now derived by `fig_reach.failing_segments` on every build, the written word no longer equals it, and the build stops. **Five is not an arbitrary choice**: it is exactly the wrong figure the sampled curve produced before E381.",
+      "why_zh": "这句话里四个数，图面上只有一个是算的，另三个——八个点、九个区段、六个不满足——是写死的词。同一个事实在每个版本里站四次（两处手写、两处生成），**没有任何东西把它们接在一起**。挪一个水准点，算的那半跟着变，写死的三个不变。这正是本登记册记了六十一次的 two-copies-of-one-thing-drifted，而它就长在一句话里。",
+      "why_en": "Four numbers in one sentence and only one of them was computed on the sheet; the other three - eight points, nine segments, six failing - were typed words. The same claim then stands four times in each edition, twice hand-written and twice generated, and **nothing joined any of them**. Move a benchmark and the computed half follows while the three words do not. That is the two-copies-of-one-thing-drifted shape this register has recorded sixty-one times, here inside a single sentence."
+    },
+    {
       "id": "M157",
       "gate": "metric_citation_qa.py",
       "target": "proposal.md",
@@ -1396,6 +1420,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M160",
+      "gate": "i18n_order_qa.py",
+      "target": "i18n_drawings.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": false,
+      "what_zh": "把英文模板里的 `For P{5}, walking at {4} m/s` 改回无序号的 `{}`。中文那句的次序是「速度、人群」，英文是「人群、速度」，`tr()` 按位置填回，于是图上印出 **`For P0.6, walking at 5 m/s`**。闸门随即报交叉，构建停。",
+      "what_en": "Put the English template's `For P{5}, walking at {4} m/s` back to un-indexed `{}`. The Chinese sentence orders these as speed then persona and the English as persona then speed, `tr()` fills positionally, and the drawing prints **`For P0.6, walking at 5 m/s`**. The gate reports the crossing and the build stops.",
+      "why_zh": "这条变异守的不是一个编号，是一类错误的可见性。本方案全部无障碍论证都建立在 P5 以 0.6 m/s 步行上；一个以 5 m/s 步行的行人接近 18 km/h，**这句英文把本包最核心的一个参数印成了能自己推翻自己的数**。",
+      "why_en": "What this holds is not one index but a class of error's visibility. Every accessibility argument in this package rests on P5 walking at 0.6 m/s; a pedestrian at 5 m/s is nearly 18 km/h, so **the English sentence printed the package's most load-bearing parameter as a figure that refutes itself**."
+    },
+    {
       "id": "M156",
       "gate": "derived_count_qa.py",
       "target": "fig_reach.py",
@@ -1903,7 +1940,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 155,
+  "caught": 158,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1939,6 +1976,7 @@
     "frame_collision_qa.py",
     "garden_crossing_qa.py",
     "gate_count_qa.py",
+    "generation_chain_qa.py",
     "geometry_citation_qa.py",
     "harness_reference_qa.py",
     "heading_parity_qa.py",
@@ -2052,6 +2090,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 107 道闸门，其中 105 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 107 gates, 105 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 108 道闸门，其中 106 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 108 gates, 106 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
