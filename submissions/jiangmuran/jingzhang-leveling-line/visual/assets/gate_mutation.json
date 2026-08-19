@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M153",
+      "gate": "transformation_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把常住人口那条换算记录的**印出值**改成与存储值相同的写法。该条于是自称把 3111000 换算成 3111000——**什么也没换算**，只说明这个字段被填过。",
+      "what_en": "Change the printed value on the population conversion so that it equals the stored value. The record then claims to convert 3111000 into 3111000 - **nothing is converted**, and it states only that the field is filled.",
+      "why_zh": "`sources.json` 由评审整份读到，这些记录正是让读者能核对「印出的 60% 变成了 0.60，而不是别的什么」的东西。E374 写下这个字段时**两个方向同时错了**：海淀公报印的是「311.1万人」而本包存 3111000——**真换算，没记**；北京公报印的是「209款」而本包存 209——**没换算，记了**。本包在 `does_not_support` 上早就拒绝这种填充（`sources_qa` 当场拦下过我写的样板句），**而同一种填充换个字段就没人管**——这是本册记过的那个形状：规则在，只是从没被指到这里。",
+      "why_en": "sources.json is read whole by the reviewer, and these records are what let a reader check that a printed 60% became 0.60 and not something else. E374 got the field **wrong in both directions at once**: the Haidian bulletin prints 311.1万人 against a stored 3111000, a real conversion that was not recorded, while the Beijing bulletin prints 209款 against a stored 209, no conversion at all, which was. This package already refuses that padding in does_not_support - sources_qa caught my own boilerplate there the same round - **and the same padding in a different field had nobody watching it**."
+    },
+    {
       "id": "M148",
       "gate": "benchmark_chain_qa.py",
       "target": "proposal.md",
@@ -1841,7 +1853,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 150,
+  "caught": 151,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1943,6 +1955,7 @@
     "taskbook_units_qa.py",
     "term_consistency_qa.py",
     "track_rank_qa.py",
+    "transformation_qa.py",
     "upstream_drift_qa.py",
     "upstream_validator_qa.py",
     "whitespace_rules_qa.py"
@@ -1987,6 +2000,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 104 道闸门，其中 102 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 104 gates, 102 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 105 道闸门，其中 103 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 105 gates, 103 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

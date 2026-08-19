@@ -1,8 +1,8 @@
 {
 "schema_version": "errata-v1",
 "note_en": "The English edition of the errata register. It is the same register: one summary per entry id, in the order the entries are published. The Chinese what/why/fix fields and every entry's commit join live in errata.json beside this file, which points here by path.",
-"of_entries": 376,
-"translated": 376,
+"of_entries": 377,
+"translated": 377,
 "summaries": {
 "E01": "Two machine-readable references pointed at feature ids that do not exist — `BUILDING-001` and `LANDUSE-001` against the real `BLDG-001` and `LU-001`.",
 "E02": "”less than half the second-thinnest track” did not hold arithmetically: 14 against 28 is exactly half.",
@@ -59,9 +59,17 @@
 "E53": "The type-width table used to lay out every drawing carried estimates of 0.52 em lowercase; measured against the actual font with fontTools it is 0.572, so every line had been laid out against a width the font does not have.",
 "E54": "`overflow_qa` kept its own copy of that width table. The previous erratum corrected the one in `figures.py` and not the one in the gate, so the gate judged overruns by the numbers the fix had just replaced.",
 "E55": "The cover truncated over-long titles to the column width — truncating the *Chinese* title, while English is substituted afterwards and runs about 80% longer, so “truncated” titles ran into the next column.",
-"E56": "The kit of parts had a column headed “the hard constraint a fabricator could fail” and not one entry carried a number: flush with no tolerance, seating with no height, guidance with no width. **The package contained no millimetre at all.**"
+"E56": "The kit of parts had a column headed “the hard constraint a fabricator could fail” and not one entry carried a number: flush with no tolerance, seating with no height, guidance with no width. **The package contained no millimetre at all.**",
+"E57": "A hard constraint was written in a form nothing could be judged against: it could not be failed, so it measured nothing.",
+"E58": "Work that was finished and shipped was left unreachable from the argument it exists to support.",
+"E59": "Asking E58's question of every shipped file: of 106 files, 21 were never named in either edition, and seven of those are products a reviewer could open — both PDFs, both rendered reports, the offline page and two datasets.",
+"E60": "This proposal argues repeatedly that review you must walk fifteen minutes to reach has not been given, and had never measured its own walk: 1,111 m at the worst point, 30.9 minutes for a wheelchair user — twice the limit it holds others to.",
+"E61": "The reading plate printed a tolerance in millimetres while the contract defines the quantity as a dimensionless rate.",
+"E62": "Asking E61's question of every drawing script found the same shape again: a number in a drawing and the same number in shipped data, drifting because only one was checked.",
+"E63": "KIT-01 requires the stone flush with no trip hazard, and a mark set flush into level paving sits in whatever the paving collects. Frozen, the thing specified so nobody would trip becomes the one patch of ice on the footway.",
+"E64": "Gaps discovered while drawing were declared on the sheets and never entered in `assumptions.json`, the file a reviewer receives."
 },
-"archived_entries": 320,
+"archived_entries": 313,
 "archive_of": "visual/assets/errata.en.json",
-"split_note_en": "The organisers cap a single JSON at 512 KiB. This file carries the most recent 320 English summaries and the other 56 are in visual/assets/errata.en-archive.json, same schema, nothing removed and no wording changed. Both state the total, so neither can be read as the whole. The Chinese register has been split this way since E307; this one was written whole until it crossed the cap (E377)."
+"split_note_en": "The organisers cap a single JSON at 512 KiB. This file carries the most recent 313 English summaries and the other 64 are in visual/assets/errata.en-archive.json, same schema, nothing removed and no wording changed. Both state the total, so neither can be read as the whole. The Chinese register has been split this way since E307; this one was written whole until it crossed the cap (E377)."
 }
