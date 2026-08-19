@@ -372,7 +372,26 @@ The rehearsal reads twelve synthetic shift ledgers and executes four assertions 
 | SCN-08–10 maintenance and care | 3/3 success | Paper repair, telephone roster, fixed lighting and patrol | 0/3; awaiting operating responsibility and field conditions |
 | SCN-11–12 culture and events | 2/2 success | Paper directory, human guide, fixed wayfinding and volunteers | 0/2; awaiting rights, event and safety authority |
 
-**What it proves.** Protocol fields, role separation, state transition, human recovery and synthetic-record handling can be executed and recomputed in one structure. **What it does not prove.** Field accessibility, real-person response, system performance, public satisfaction, safety, compliance or approval. The digital result and field count of 0/12 appear together in `simulation.json` and the metrics so a fixture cannot be mistaken for operational performance.
+**What it proves.** Protocol fields, role separation, state transition, human recovery and synthetic-record handling can be executed and recomputed in one structure. **Where it applies.** These results apply to the executability of protocol fields, role separation, state transitions and the rollback structure; reachability, real staff response, system performance, public acceptance, safety, accessibility and compliance are produced by the field process, whose duty holders and trigger points are written in “Four Things That Make It Buildable” and “Specifications for the Eight Posts”. The digital result and field count of 0/12 appear together in `simulation.json` and the metrics so a fixture cannot be mistaken for operational performance.
+
+### Protocol Rules and Fault-Injection Self-Test: 96 Checks, 0 False Blocks, 0 Misses
+
+The handover protocol is not one principle but seven machine-decidable rules. To confirm that the seven **both catch what they should and do not block compliant cases**, two kinds of check were run over the twelve synthetic shift ledgers: twelve baseline cases (compliant instances, expected to pass) and eighty-four fault-injection cases (one defect injected each, expected to be caught), 96 in total, with per-case results kept in `visual/assets/governance/rule-check-report.json`.
+
+| Rule | Statement | Injected cases caught |
+| --- | --- | --- |
+| R1 Dual-control separation | Release and intake must be judged by different roles; no one signs both sides | 12 / 12 |
+| R2 Human floor first | A staffed equivalent must exist before the smart layer, and at least one channel stays usable when the smart layer is off | 12 / 12 |
+| R3 Blocking item holds it off | While a blocking open item stands unresolved, the smart layer must stay off | 12 / 12 |
+| R4 No trial without observed rollback | No limited trial before a rollback drill has been observed to pass | 12 / 12 |
+| R5 Synthetic never touches live | Synthetic records must not touch live services and must carry no personal data | 12 / 12 |
+| R6 Refusal needs reasons | A refusal must state reviewable reasons | 12 / 12 |
+| R7 No attestation without appointment | While a role is unappointed, the dual-control state may not be marked as jointly attested | 12 / 12 |
+
+**Testing both sides is what makes this self-test worth anything.** Injection cases alone can be aced by blocking everything; baseline cases alone can be aced by passing everything. Only when twelve baselines produce no false block and eighty-four injections produce no miss are the rules both effective and not over-broad.
+
+**R7 deserves a separate note.** It turns "the post is not yet appointed" from a remark into a machine-enforced interlock: without an appointment the dual-control state cannot be marked as jointly attested, so nothing that depends on that state can move forward. The post specifications appear in the previous section, and the start/stop authority and vacancy prohibitions of the eight posts are built to match this rule [assumption:A-OPERATIONS-001] [depth:phasing_implementation].
+
 
 ### First authorised step: Public Handover Table P0
 
