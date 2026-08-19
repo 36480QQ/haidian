@@ -6,20 +6,31 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Civic Adoption Compiler: compile every AI spatial proposal into a complete public route, triggerable stop mechanism and reviewable receipt; 84 synthetic cases verify rule consistency only, while field performance remains unknown."
+summary: "Three spatial alternatives, one public rejection and one reviewable selection: geometry audit eliminates designs that sacrifice the public route; field performance remains unknown."
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed"]
 ---
 
 # JING-ZHANG TWO ANSWERS / 京张双答
 
-> **CIVIC ADOPTION COMPILER / 城市采纳编译器: every AI spatial proposal must compile into a complete public route, a triggerable stop mechanism and a reviewable receipt.** For every civic problem, make the baseline work independently, then require AI to prove its increment in the same task, with the same people and in the same space. Outcomes are limited to `adopt`, `revise` or `stop`.
+> **Civic Adoption Compiler: three spatial alternatives, one public rejection and one reviewable selection.** Ordinary service stands first; AI enters only the same-task test. Any spatial option that severs the public route must be rejected by the compiler. Field decisions remain `adopt / revise / stop` and belong to a human scenario committee.
 
 Three unmistakable receipt landmarks—Zhongzhiyuan Verification Ring, AI Origin Translation Gate and Dazhongsi Receipt Porch—remain the spatial prototypes. S7 adds a 1:50 construction node to its 1:5000, 1:2000, 1:500, 1:200 and assembly views. Twelve scenarios each run seven deterministic tabletop cases, producing 84 rerunnable synthetic design-contract checks without adding scenes.[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json] [metric:synthetic_design_verification_case_count]
 
-**V10 has three locatable conclusions: ring, gate and porch have independent silhouettes; the public cross stays continuous through `OPEN / TRIAL / PAUSE / RETIRE`; and any failed permit, role, baseline or transition blocks advancement.** Without titles, reviewers should distinguish the landmarks; without a legend, they should locate tactile guidance, the separate trial bay, staffed posts, E-stops, fire access and removal direction.[data:geometry/roads.geojson#V7-D-BASE-NS] [data:visual/assets/v10-tabletop-results.json]
+**V11 has three locatable conclusions: ring, gate and porch have independent silhouettes; the public cross stays continuous through `OPEN / TRIAL / PAUSE / RETIRE`; and any failed permit, role, baseline or transition blocks advancement.** Without titles, reviewers should distinguish the landmarks; without a legend, they should locate tactile guidance, the separate trial bay, staffed posts, E-stops, fire access and removal direction.[data:geometry/roads.geojson#V7-D-BASE-NS] [data:visual/assets/v10-tabletop-results.json]
 
 ![Overall Two Answers structure](assets/figures/site-overview.en.png)
+
+
+<!-- V11_DECISION_START -->
+## One Real Spatial Decision
+
+The Civic Adoption Compiler no longer treats an all-green matrix as excellence. V11 generates three spatial alternatives for the same S7 task, users and site, then audits each with identical geometry gates: **ALT-A Central Mixed Bay is rejected, ALT-B Split Bays returns for revision, and ALT-C One-sided Reversible Bay advances.** These reject_design / revise_design / advance_design labels describe design alternatives, not field adoption; only a human committee may later issue adopt / revise / stop.[data:visual/assets/spatial-decision.json] [metric:spatial_alternative_count]
+
+ALT-A severs the public cross and conflicts with fire access, retirement and staffed E-stop reach, failing six hard gates. ALT-B preserves the public routes but splits two trial bays, two retirement paths and supervision posts across about 94.9 metres, producing three revision flags. ALT-C keeps the 372-metre concept public-route total unchanged in trial state, concentrates a 2,496-square-metre trial and 3,840-square-metre reversible buffer on one side, and limits the furthest E-stop-to-staff distance to a 24.3-metre prototype assumption.[metric:rejected_spatial_alternative_count] [metric:advanced_spatial_alternative_count] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]
+
+The figures use a local equidistant approximation centred on the Dazhongsi prototype. They audit design geometry only; they do not establish surveyed conditions, transport performance, fire approval or safety performance. Any change in the official base, station entrance, ownership or professional constraints must rerun the audit, and drawings and prose must follow the calculation.[data:geometry/roads.geojson#V11-ALT-C-BASE-NS] [depth:three_key_area_detailed_design]
+<!-- V11_DECISION_END -->
 
 ## Design Basis and Source List
 
@@ -67,13 +78,13 @@ The three classes resolve into nine stable component IDs: `B01` continuous step-
 
 The protocol is simultaneously a spatial concept, repeatable operating mechanism, governance system and scenario network. It can travel from test courts to public service, heritage, mobility and climate settings, but every location must pass its own local gate.
 
-V10 fixes the supporting proposition as “**Verification forms a ring, translation forms a gate, adoption forms a porch; rules compile first, the field proves later.**” To preserve traceability to merged versions, S7 keeps stable `V7-D-*` geometry IDs; the prefix is an object lineage, not the publication version. Baseline paths, tactile guidance, ramps, crossings, curbs, interchange, trial boundary, porch, staff, E-stops, fire, storage and removal still resolve through one WGS84 chain.[data:geometry/roads.geojson#V7-D-BASE-EW] [metric:s7_traceable_spatial_object_count]
+V11 fixes the supporting proposition as “**Verification forms a ring, translation forms a gate, adoption forms a porch; rules compile first, the field proves later.**” To preserve traceability to merged versions, S7 keeps stable `V7-D-*` geometry IDs; the prefix is an object lineage, not the publication version. Baseline paths, tactile guidance, ramps, crossings, curbs, interchange, trial boundary, porch, staff, E-stops, fire, storage and removal still resolve through one WGS84 chain.[data:geometry/roads.geojson#V7-D-BASE-EW] [metric:s7_traceable_spatial_object_count]
 
 Evidence progresses through `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending`. S7 is `E2_documented_prototype_ready`; T2/S2 are `E1_concept_design`; `T0_synthetic_contract_verified` is a separate rule-consistency status, not a field level. E2 does not mean survey, permits, assembly or field baseline. Every publication shows `NOT FIELD-RUN`.[metric:evidence_ladder_level_count] [metric:field_verification_result_count]
 
 ![Three-layer spatial section](assets/figures/section-prototype.en.png)
 
-### V10 Civic Adoption Compiler: 84 synthetic checks and E2 documentation
+### V11 Civic Adoption Compiler: 84 synthetic checks and E2 documentation
 
 One S7 model now drives the 1:5000 link, 1:2000 plan, 1:500 component detail, 1:200 section, 1:50 ramp/tactile–barrier–evidence–power–rainwater node and layered assembly axonometric. E2 means that quantities, eight permit gates, procurement packages and five blank forms are reviewable; it **does not mean** survey, permits, procurement, assembly or field operation have occurred.[data:visual/assets/spatial-atlas.json] [metric:s7_prototype_kit_item_count]
 
@@ -107,7 +118,7 @@ Hero scenario S2 overlays three barrier-free passages, a staffed bilingual arriv
 
 ![AI Origin porous hall and three staffed services](assets/figures/station-ai-origin.en.png)
 
-**Dazhongsi Receipt Porch** is the V10 flagship: public cross, conventional interchange, southeast reversible trial bay, southwest evidence porch and blue-green edges. OSM cannot confirm exact exits or complete building edges; the four entrances remain directional interfaces and the southern data gap is visible. AI enters only the southeast bay; the porch gathers staffed service, status, appeals and the adoption decision, while removal restores waiting, short stay or civic activity.[data:geometry/public_space.geojson#V7-D-FORECOURT] [data:geometry/public_space.geojson#V7-D-NODATA]
+**Dazhongsi Receipt Porch** is the V11 flagship: public cross, conventional interchange, southeast reversible trial bay, southwest evidence porch and blue-green edges. OSM cannot confirm exact exits or complete building edges; the four entrances remain directional interfaces and the southern data gap is visible. AI enters only the southeast bay; the porch gathers staffed service, status, appeals and the adoption decision, while removal restores waiting, short stay or civic activity.[data:geometry/public_space.geojson#V7-D-FORECOURT] [data:geometry/public_space.geojson#V7-D-NODATA]
 
 S7 combines two 4.0 m prototype public axes, 0.4 m tactile guidance, two curb ramps, interchange, waiting and shade, rain gardens, separate low-speed bay, evidence porch, safety buffer, evacuation, staff and storage/removal. Dimensions are reviewable assumptions used only to prove that baseline routes never cross the trial boundary.[data:geometry/roads.geojson#V7-D-TACTILE-NS] [data:geometry/buildings.geojson#V7-D-PORCH]
 

@@ -1895,6 +1895,382 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-TRIAL-1",
+      "properties": {
+        "id": "V11-ALT-A-TRIAL-1",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "trial_boundary",
+        "area_sqm_declared": 3136
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3486719,
+              39.9567485
+            ],
+            [
+              116.3493281,
+              39.9567485
+            ],
+            [
+              116.3493281,
+              39.9572515
+            ],
+            [
+              116.3486719,
+              39.9572515
+            ],
+            [
+              116.3486719,
+              39.9567485
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-BUFFER-1",
+      "properties": {
+        "id": "V11-ALT-A-BUFFER-1",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "safety_buffer",
+        "area_sqm_declared": 4624
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3486015,
+              39.9566946
+            ],
+            [
+              116.3493985,
+              39.9566946
+            ],
+            [
+              116.3493985,
+              39.9573054
+            ],
+            [
+              116.3486015,
+              39.9573054
+            ],
+            [
+              116.3486015,
+              39.9566946
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-TRIAL-1",
+      "properties": {
+        "id": "V11-ALT-B-TRIAL-1",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "trial_boundary",
+        "area_sqm_declared": 1512
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3492813,
+              39.9571797
+            ],
+            [
+              116.3497735,
+              39.9571797
+            ],
+            [
+              116.3497735,
+              39.9575031
+            ],
+            [
+              116.3492813,
+              39.9575031
+            ],
+            [
+              116.3492813,
+              39.9571797
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-TRIAL-2",
+      "properties": {
+        "id": "V11-ALT-B-TRIAL-2",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "trial_boundary",
+        "area_sqm_declared": 1512
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3482265,
+              39.956479
+            ],
+            [
+              116.3487187,
+              39.956479
+            ],
+            [
+              116.3487187,
+              39.9568024
+            ],
+            [
+              116.3482265,
+              39.9568024
+            ],
+            [
+              116.3482265,
+              39.956479
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-BUFFER-1",
+      "properties": {
+        "id": "V11-ALT-B-BUFFER-1",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "safety_buffer",
+        "area_sqm_declared": 2592
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3492109,
+              39.9571258
+            ],
+            [
+              116.3498438,
+              39.9571258
+            ],
+            [
+              116.3498438,
+              39.957557
+            ],
+            [
+              116.3492109,
+              39.957557
+            ],
+            [
+              116.3492109,
+              39.9571258
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-BUFFER-2",
+      "properties": {
+        "id": "V11-ALT-B-BUFFER-2",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "safety_buffer",
+        "area_sqm_declared": 2592
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3481562,
+              39.9564251
+            ],
+            [
+              116.3487891,
+              39.9564251
+            ],
+            [
+              116.3487891,
+              39.9568563
+            ],
+            [
+              116.3481562,
+              39.9568563
+            ],
+            [
+              116.3481562,
+              39.9564251
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-TRIAL-1",
+      "properties": {
+        "id": "V11-ALT-C-TRIAL-1",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "trial_boundary",
+        "area_sqm_declared": 2496
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3492813,
+              39.9564071
+            ],
+            [
+              116.3498907,
+              39.9564071
+            ],
+            [
+              116.3498907,
+              39.9568383
+            ],
+            [
+              116.3492813,
+              39.9568383
+            ],
+            [
+              116.3492813,
+              39.9564071
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-BUFFER-1",
+      "properties": {
+        "id": "V11-ALT-C-BUFFER-1",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "safety_buffer",
+        "area_sqm_declared": 3840
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3492109,
+              39.9563532
+            ],
+            [
+              116.349961,
+              39.9563532
+            ],
+            [
+              116.349961,
+              39.9568922
+            ],
+            [
+              116.3492109,
+              39.9568922
+            ],
+            [
+              116.3492109,
+              39.9563532
+            ]
+          ]
+        ]
+      }
     }
   ]
 }

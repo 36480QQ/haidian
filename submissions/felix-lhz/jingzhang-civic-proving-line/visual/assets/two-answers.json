@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.8.0",
+  "schema_version": "1.9.0",
   "dataset_id": "jingzhang-two-answers",
   "title": {
     "zh": "京张双答：三站一历",
@@ -4055,7 +4055,50 @@
         "zh": "车辆撤场，接驳湾恢复普通无障碍上下客与临时活动使用。",
         "en": "Remove and isolate the optional S7 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "spatial_decision_ref": "visual/assets/spatial-decision.json#ALT-C",
+      "alternative_geometry_refs": [
+        "geometry/roads.geojson#V11-ALT-A-BASE-NS",
+        "geometry/roads.geojson#V11-ALT-A-BASE-EW",
+        "geometry/roads.geojson#V11-ALT-A-TRIAL-ROUTE-NS",
+        "geometry/roads.geojson#V11-ALT-A-TRIAL-ROUTE-EW",
+        "geometry/roads.geojson#V11-ALT-A-FIRE",
+        "geometry/roads.geojson#V11-ALT-A-RETIRE-1",
+        "geometry/public_space.geojson#V11-ALT-A-TRIAL-1",
+        "geometry/public_space.geojson#V11-ALT-A-BUFFER-1",
+        "geometry/constraints.geojson#V11-ALT-A-HUMAN-1",
+        "geometry/constraints.geojson#V11-ALT-A-ESTOP-1",
+        "geometry/constraints.geojson#V11-ALT-A-ESTOP-2",
+        "geometry/roads.geojson#V11-ALT-B-BASE-NS",
+        "geometry/roads.geojson#V11-ALT-B-BASE-EW",
+        "geometry/roads.geojson#V11-ALT-B-TRIAL-ROUTE-NS",
+        "geometry/roads.geojson#V11-ALT-B-TRIAL-ROUTE-EW",
+        "geometry/roads.geojson#V11-ALT-B-FIRE",
+        "geometry/roads.geojson#V11-ALT-B-RETIRE-1",
+        "geometry/roads.geojson#V11-ALT-B-RETIRE-2",
+        "geometry/public_space.geojson#V11-ALT-B-TRIAL-1",
+        "geometry/public_space.geojson#V11-ALT-B-TRIAL-2",
+        "geometry/public_space.geojson#V11-ALT-B-BUFFER-1",
+        "geometry/public_space.geojson#V11-ALT-B-BUFFER-2",
+        "geometry/constraints.geojson#V11-ALT-B-HUMAN-1",
+        "geometry/constraints.geojson#V11-ALT-B-HUMAN-2",
+        "geometry/constraints.geojson#V11-ALT-B-ESTOP-1",
+        "geometry/constraints.geojson#V11-ALT-B-ESTOP-2",
+        "geometry/constraints.geojson#V11-ALT-B-ESTOP-3",
+        "geometry/constraints.geojson#V11-ALT-B-ESTOP-4",
+        "geometry/roads.geojson#V11-ALT-C-BASE-NS",
+        "geometry/roads.geojson#V11-ALT-C-BASE-EW",
+        "geometry/roads.geojson#V11-ALT-C-TRIAL-ROUTE-NS",
+        "geometry/roads.geojson#V11-ALT-C-TRIAL-ROUTE-EW",
+        "geometry/roads.geojson#V11-ALT-C-FIRE",
+        "geometry/roads.geojson#V11-ALT-C-RETIRE-1",
+        "geometry/public_space.geojson#V11-ALT-C-TRIAL-1",
+        "geometry/public_space.geojson#V11-ALT-C-BUFFER-1",
+        "geometry/constraints.geojson#V11-ALT-C-HUMAN-1",
+        "geometry/constraints.geojson#V11-ALT-C-ESTOP-1",
+        "geometry/constraints.geojson#V11-ALT-C-ESTOP-2"
+      ],
+      "design_alternative_state": "advance_design"
     },
     {
       "id": "SCN-011",
@@ -4826,7 +4869,7 @@
     "en": "Civic Adoption Compiler: compile every AI spatial proposal into a complete public route, triggerable stop mechanism and reviewable receipt."
   },
   "field_status": "not_field_run",
-  "publication_version": "V10",
+  "publication_version": "V11",
   "evidence_ladder": [
     {
       "id": "E0",
@@ -5580,6 +5623,17 @@
     "result_ref": "visual/assets/v10-tabletop-results.json",
     "rule_ref": "visual/assets/run-v10-tabletop.js",
     "case_count": 84,
+    "field_status": "not_field_run"
+  },
+  "spatial_decision": {
+    "dataset_ref": "visual/assets/spatial-decision.json",
+    "advanced_alternative_id": "ALT-C",
+    "decisions": {
+      "reject_design": 1,
+      "revise_design": 1,
+      "advance_design": 1
+    },
+    "verification_scope": "geometry_based_design_audit",
     "field_status": "not_field_run"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "1.9.0",
   "units": {
     "length": "m",
     "area": "sqm"
@@ -602,6 +602,123 @@
       "confidence": "high",
       "assumptions": [
         "ASM-V10-SYNTHETIC"
+      ]
+    },
+    "spatial_alternative_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-decision.json"
+      ],
+      "formula": "count(spatial-decision.alternatives)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V11-PROTOTYPE-DIMENSIONS"
+      ]
+    },
+    "rejected_spatial_alternative_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-decision.json"
+      ],
+      "formula": "count(alternative where decision=reject_design)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V11-PROTOTYPE-DIMENSIONS"
+      ]
+    },
+    "revised_spatial_alternative_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-decision.json"
+      ],
+      "formula": "count(alternative where decision=revise_design)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V11-PROTOTYPE-DIMENSIONS"
+      ]
+    },
+    "advanced_spatial_alternative_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-decision.json"
+      ],
+      "formula": "count(alternative where decision=advance_design)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V11-PROTOTYPE-DIMENSIONS"
+      ]
+    },
+    "spatial_hard_gate_evaluation_count": {
+      "status": "known",
+      "value": 21,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-decision.json"
+      ],
+      "formula": "3 alternatives × 7 geometry hard gates",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V11-PROTOTYPE-DIMENSIONS"
+      ]
+    },
+    "alt_c_public_route_length_m": {
+      "status": "known",
+      "value": 372,
+      "unit": "m",
+      "source_files": [
+        "visual/assets/spatial-decision.json"
+      ],
+      "formula": "sum(length(ALT-C OPEN public routes) in local metre projection)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V11-PROTOTYPE-DIMENSIONS"
+      ]
+    },
+    "alt_c_trial_area_sqm": {
+      "status": "known",
+      "value": 2496,
+      "unit": "sqm",
+      "source_files": [
+        "visual/assets/spatial-decision.json"
+      ],
+      "formula": "polygon_area(ALT-C trial boundary in local metre projection)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V11-PROTOTYPE-DIMENSIONS"
+      ]
+    },
+    "alt_c_reversible_buffer_area_sqm": {
+      "status": "known",
+      "value": 3840,
+      "unit": "sqm",
+      "source_files": [
+        "visual/assets/spatial-decision.json"
+      ],
+      "formula": "polygon_area(ALT-C reversible buffer in local metre projection)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V11-PROTOTYPE-DIMENSIONS"
+      ]
+    },
+    "alt_c_max_estop_staff_distance_m": {
+      "status": "known",
+      "value": 24.331,
+      "unit": "m",
+      "source_files": [
+        "visual/assets/spatial-decision.json"
+      ],
+      "formula": "max(min(distance(E-stop, human post)))",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V11-PROTOTYPE-DIMENSIONS"
       ]
     }
   }
