@@ -243,7 +243,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The English edition showed one figure in Chinese.",
-      "message": "edition_render_qa.py — edition renders: 176 figure reference(s) across the 6 pages the reviewer is sent — two Markdown editions and both HTML deliverables in both languages — each point at their own edition's render, and every path resolves; 34 sheets, each drawn twice. Scope: this checks which render a page embeds, not what is drawn on it; a sheet whose English text is wrong belongs to cjk_leak_qa and the translation table"
+      "message": "edition_render_qa.py — edition renders: 176 figure reference(s) across 6 pages — the two Markdown editions and both HTML deliverables in both languages — each pointing at their own edition's render, every path resolving; 34 sheets, each drawn twice. **They do not reach the reviewer alike**, and the difference is read from upstream/main rather than assumed: proposal.md is sent whole as text and proposal.en.md is not sent at all, while the four HTML pages arrive as 1440x1600 screenshots, which is their first screen. The English edition is held to this rule anyway, because it feeds the English drawings and PDFs and because a person opens it. Scope: this checks which render a page embeds, not what is drawn on it; a sheet whose English text is wrong belongs to cjk_leak_qa and the translation table"
     },
     {
       "check_id": "PKG_ENTRANCE_RULE_QA",
@@ -414,7 +414,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The intake caps, enforced where a mutation can reach them.",
-      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 37 bytes to spare. The package totals 29.4 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 60 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 38 bytes to spare. The package totals 29.4 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_INTERNED_RENDER_QA",
@@ -1222,7 +1222,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30729672,
+      "total_bytes": 30729674,
       "maintainer_bypass": false
     },
     "stderr": ""
