@@ -1480,6 +1480,19 @@
       "why_en": "The published reason enumerates three branches - a file absent, one over the per-image cap, the packet over the image count. **The fourth is not in it**: the pixel-pair check was added later and the reason was never revisited. What it called a fact about the file system rather than about any file this harness can write was really a fact about this harness writing only text — **a limitation of the tool published as a property of the gate**."
     },
     {
+      "id": "M170",
+      "gate": "pdf_text_layer_qa.py",
+      "target": "build_drawings.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把删除引子的那段改回按个数删——**本轮之前就是这么送出去的**。引子在 SVG 里是 `len(weights) * len(lines)` 个文本元素，而 cairo 把它们合并成**一个** BT..ET，于是多删掉的全是页面最上方的真内容。闸门逐页比对图纸上画了什么与页面里能读到什么，点名报出，构建停。",
+      "what_en": "Put the primer removal back to deleting by count - **exactly what shipped until this round**. The primer is written as `len(weights) * len(lines)` SVG text elements and cairo merges them into **one** BT..ET block, so everything deleted beyond the first is real content from the top of the page. The gate compares what each sheet draws with what its page can be read to say, names it, and the build stops.",
+      "why_zh": "这不是排版问题，是**送出去的东西少了字**：修复前实测两份文件共少 64 条文本——A3 文册 57 条、A0 展板 7 条，少掉的永远是页面最上方那几条。六张展板每一张都丢了自己的标题；A3 文册第 1 页丢的是「京张水准线」五个 54 pt 的字、它的罗马字、册别标记、地点行与副标题——**而每份 PDF 评审只收到第 1 页**。没有任何闸门看得见：`overflow_qa` 与 `label_collision_qa` 读的是 SVG，那一侧一直是对的，丢失发生在转换之后。图纸本来就为此逐页转储，却从没有闸门把两侧对起来。",
+      "why_en": "This is not a layout fault, it is **words missing from what was sent**: measured before the fix, 64 runs gone across the two documents - 57 from the A3 booklet and 7 from the A0 boards - and what went was always the top of the page. Every one of the six boards had lost its own title, and page 1 of the booklet had lost 京张水准线 at 54 pt, its romanisation, the booklet mark, the place line and the subtitle. **Page 1 is the only page of each PDF the reviewer is sent.** Nothing could see it: overflow_qa and label_collision_qa read the SVG, which was right the whole time, and the loss happened after conversion. The sheets are dumped page by page precisely so a gate can compare the two sides, and none did."
+    },
+    {
       "id": "M169",
       "gate": "legend_covers_fills_qa.py",
       "target": "fig_key_areas.py",
@@ -2039,7 +2052,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 166,
+  "caught": 167,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2107,6 +2120,7 @@
     "palette_cvd_qa.py",
     "parity_qa.py",
     "pdf_page1_qa.py",
+    "pdf_text_layer_qa.py",
     "planning_controls_qa.py",
     "positioning_qa.py",
     "printed_difference_qa.py",
@@ -2195,6 +2209,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 114 道闸门，其中 113 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 114 gates, 113 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 115 道闸门，其中 114 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 115 gates, 114 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
