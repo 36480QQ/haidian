@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以'人'字形铁路的自主创新精神为原点，将京张遗址公园塑造为贯穿南北的'人本AI公共脊'，以众智园、北京AI原点社区、大钟寺三处重点片区为三芯，以中关村科技服务翼与小月河场景赋能翼为两翼，形成'一脊三芯·四带两翼·多点成网'的AI创新带整体方案。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.4"
+iteration: "v1.5"
 ---
 
 # 新京张·AI创新带：从百年人字形铁路到人本AI城市
@@ -57,6 +57,8 @@ iteration: "v1.4"
 三层范围的工作逻辑是逐级落实：统筹研究确定产业链与协同回路，总体设计将其落到用地、交通、蓝绿与风貌，重点区域在具体地段验证建筑、公共空间与 AI 场景的可实施性 [depth:three_level_scope_framework] [depth:overall_spatial_structure]。
 
 ![三层范围与空间工作框架](assets/figures/land-use-structure.png)
+
+![一脊三芯·四带两翼结构原型](assets/figures/spatial-prototype.png)
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -343,6 +345,8 @@ Logo 方向：以京张铁路"人"字形铁轨为母题，将两条铁轨变形�
 
 **Logo 系统与文化导视系统的边界**。为避免混淆一带整体品牌与文化空间导视 [source:AGENT-TASKBOOK]，本方案明确二者层级与适用范围：**一带整体 Logo 系统**（第 3.2 节，锈红—蓝双色"人"形 Logo）属品牌层，用于一带主名、三芯分名与传播物，承担对外识别与 IP 统一；**文化导视系统**（本节"人形"三级色彩图标、座凳导视柱等）属空间层，用于公园、街道、广场的现场方位与场景引导。二者共用"人"形母题但分属不同层级：品牌层固化一带身份，空间层服务现场寻路；导视图形为自绘概念，不照搬 Logo 字标，也不在公共空间挪用企业或第三方标识，确保文化标识系统与整体 Logo 系统各司其职、不互相替代 [depth:brand_identity_system] [depth:signage_system_direction]。
 
+![保留/改造/更新/新建四类更新结构与分期](assets/figures/renewal-structure.png)
+
 ## 更新项目清单、实施政策与分期计划
 
 ### 10.1 更新项目清单（示例）
@@ -410,7 +414,7 @@ Logo 方向：以京张铁路"人"字形铁轨为母题，将两条铁轨变形�
 
 `compliance_matrix.json` 逐条覆盖公告 1.3、1.4、1.5 与 agent.1—agent.6 全部必选任务；`standard_matrix.json` 覆盖全部强制专业标准 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]；`design_depth_matrix.json` 覆盖全部必选设计深度项 [depth:compliance_matrix] [depth:standard_matrix] [depth:design_depth_matrix]。
 
-**成果表达索引**。本方案的机器可复核证据（geometry/metrics/三个矩阵）、图纸（`drawings/a3-booklet.pdf` 阅读版、`drawings/a0-boards.pdf` 评审展板）、交互式网页（`visual/index.html`，含总览地图、任务覆盖、核心指标、AI 场景与实施逻辑栏目）与阅读版（`report/proposal.html`）共同构成完整表达层；图件均基于本包 GeoJSON 与 metric 派生，风格统一、双语标注，不替代结构化数据的权威性 [depth:metrics_recalculation]。
+**成果表达索引**。本方案的机器可复核证据（geometry/metrics/三个矩阵）、图纸（`drawings/a3-booklet.pdf` 阅读版、`drawings/a0-boards.pdf` 评审展板）、交互式网页（`visual/index.html`，含总览地图、任务覆盖、核心指标、AI 场景与实施逻辑栏目）与阅读版（`report/proposal.html`）共同构成完整表达层；图件均基于本包 GeoJSON 与 metric 派生，风格统一、双语标注，不替代结构化数据的权威性 [depth:metrics_recalculation]。v1.5 起新增机器可读治理数据层 `visual/assets/governance/*.json`（action-package-ledger：行动包台账，与 10.1 表逐行一致；role-spec：参与主体角色；measurement-protocol：三项核心视觉指标测量协议；validation-report：四闸自检汇总），把"可实施性"与"可复核性"从正文表落到可被工具消费的结构化数据；新增 `spatial-prototype`（一脊三芯·四带两翼结构原型）与 `renewal-structure`（保留/改造/更新/新建四类更新结构，叠加三期范围）两张机制图（中英双语）。
 
 ![核心指标复算与证据链](assets/figures/metrics-evidence.png)
 
