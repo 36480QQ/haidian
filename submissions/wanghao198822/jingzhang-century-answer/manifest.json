@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "008786d7f7dec00fa7856cd891ac2a7f391150b0b35a8dc0318a110b62d17569"
+      "sha256": "c20a303a7501c36dd93b089f30c4be59a47f02b168524269ea79b5935d6213e3"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "df614f1908ccf7f167df7e860a51e64fc999cf9c25b00d9c23395c8540965b07"
+      "sha256": "8bac4635c4acbe702384f8a438506a76ff26e61dd96d73519dcf116d0aaddf8d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b2a52ac8b4d1695b96f3f064ed0817d25c6d97b03ec49d9bae6a064f50f63ca2"
+      "sha256": "6f42a25fe20fca11fb063812bef28fd044f9939c8a7d102a1c7bde59e9032c38"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d90e03c724f4a963bbfd5372f00228faa086ee63b02c3b3fa7b9875ccd925645"
+      "sha256": "67dfe4f85690b24e3613d7914381ac1c1e8f0883ce630f6a6704194244ca6dba"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "6656eb67d7a4018177824179e15d94bf424bed17c9bc574f54aa818c0bc3f51e"
+      "sha256": "d3896c9a025b611f1dd16a4b119562b6ed93f4977ce86c25c3d2b48700c92fed"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "ffb40507536fb125e0bc9288e78f89923c0a810510f48d60d9c2a16fa849d150"
+      "sha256": "1818044f70377b143de8dd47427746548b765dff2f1a7e25c1fa1e0a14b39523"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "ab4fea43e60d8b27c9c091e8bbf4ed1fed2efc86592b10e6d4a183b90e527121"
+      "sha256": "3cec0f872528b1f181d06634a29c9ea2b48e1c54c6f903ba1f84895c6cd72a9a"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -464,6 +464,72 @@
       "language": "en",
       "translation_of": "assets/figures/streetview-zzy.png",
       "sha256": "3d8ffa129aa67d459df3424840128acc5b0eb77c3e9f03f6c4e76db1afb6b19e"
+    },
+    {
+      "path": "visual/assets/data/geo_layers.js",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "724ea206357d81c73f701d8442c89fbfbfac822b98249e6124b36ffd1623e804"
+    },
+    {
+      "path": "visual/assets/data/metrics_snapshot.js",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "fb15eddc8702880140ce6f493eee8d49a769cf06163e4d16e9af913b7342b3b1"
+    },
+    {
+      "path": "visual/assets/geo_core.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "2ff0f252f760c4505de164f12440be5706cf305ee99464021acb4dc78de7c52b"
+    },
+    {
+      "path": "visual/assets/draw_map.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "4a511cd2940c471f510bde9e94219c2d8a260b9f0e38c4823d33097c5b394f1a"
+    },
+    {
+      "path": "visual/assets/verify_geometry.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "9bd790cb6adf3ad34df8f70abc40d9b3e11fadcf9ab36bbd5bc7f95b4cd3c5e9"
+    },
+    {
+      "path": "visual/assets/verify_metrics.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "b7368159cc2ae5575fe922a244ea79115ba39acc40520b1d7c9d520078b2839a"
+    },
+    {
+      "path": "visual/assets/verify_topology.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "5c4a425ff94809a39b3c7abcb8d73a34a319a8d331db7df981572a3f385fdde4"
+    },
+    {
+      "path": "visual/assets/renders/render-answer-gate.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "7b43f0f10e4de5ce89ffe839c3518d5114798c8aa2314f43972614d2a936ddf9"
+    },
+    {
+      "path": "visual/assets/renders/render-bell-plaza.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "3a4dc32f56ba0839cd4515c77c9b35962a769ee4fcb63f6fe3bb5133c460f5b5"
+    },
+    {
+      "path": "visual/assets/renders/render-ren-bridge.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "53fcb7d4f66dc1c6e9addd305d525c153b274d6df8789f761c466a445daba53f"
+    },
+    {
+      "path": "visual/assets/renders/render-spike-belt.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "554a88e8d09e708b7efeab396e21105d15a0b2b45ded17a13fe555bbb2ef4391"
     }
   ],
   "validation_claim": {
