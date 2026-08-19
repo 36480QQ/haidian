@@ -56,13 +56,16 @@
         "submissions/XJungit/jingzhang-ai-innovation-belt/self_check.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/sources.json",
         "submissions/XJungit/jingzhang-ai-innovation-belt/standard_matrix.json",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/seb-localized-fixtures.json",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/seb-localized-spec.json",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/visual/assets/seb-localized-tabletop-run.js",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/index.en.html",
         "submissions/XJungit/jingzhang-ai-innovation-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/XJungit/jingzhang-ai-innovation-belt": "formal"
       },
-      "total_bytes": 3533097,
+      "total_bytes": 3585035,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -140,7 +143,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 24,
+          "source": 25,
           "standard": 4,
           "depth": 16,
           "data": 11,

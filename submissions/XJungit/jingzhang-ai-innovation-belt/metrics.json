@@ -145,6 +145,35 @@
       "assumptions": [
         "Land use partition is design proposal only."
       ]
+    },
+    "ai_off_service_coverage_ratio": {
+      "status": "unknown",
+      "unit": "ratio",
+      "value": null,
+      "source_files": [
+        "visual/assets/seb-localized-spec.json",
+        "visual/assets/seb-localized-fixtures.json"
+      ],
+      "formula": "count(slots with valid 5-field node schema AND registered ai_off_path) / count(all AI scenario slots)",
+      "confidence": "low",
+      "assumptions": [
+        "Unknown until every scenario slot is deepened and registered per SEB node schema; missing fields disqualify a slot from coverage. Coverage is proven by node visual/assets/seb-localized-tabletop-run.js; passing proves criteria self-consistency only, not operation."
+      ],
+      "reason": "Every scenario slot must be deepened and registered per the SEB five-field node schema (ai_off_path/human_handoff/gate_id/operating_mode/responsible_role) before coverage can be measured; slots missing any field are disqualified (LOC-01). No slot is registered yet, so the ratio is unknown by design."
+    },
+    "ai_off_failed_sample_reporting_ratio": {
+      "status": "unknown",
+      "unit": "ratio",
+      "value": null,
+      "source_files": [
+        "visual/assets/seb-localized-spec.json"
+      ],
+      "formula": "reported completed + withdrawn + technical-fault + other-non-completion categories / all measurement outcomes (dropping any category voids the measurement)",
+      "confidence": "low",
+      "assumptions": [
+        "Unknown until real inclusive measurement runs; denominators must never drop failed samples per SEB scoring definitions."
+      ],
+      "reason": "Measurements require real inclusive operation with all four outcome categories (completed/withdrawn/technical-fault/other-non-completion) reported; no real inclusive measurement has run yet, and denominators must never drop failed samples. Unknown until then."
     }
   }
 }
