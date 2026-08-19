@@ -10,7 +10,7 @@
       "statement_en": "Every reference in the three matrices must resolve to a real entity inside the package.",
       "checks": "standard_matrix / compliance_matrix / design_depth_matrix 的 proposal_sections、drawing_refs、geometry_refs、metric_refs、source_ids、assumption_ids",
       "decision_rule_zh": "章节名须逐字等于 proposal.md 的某个 ## / ### 标题；drawing_refs 的 `文件#pN` 中 N 不得超过该 PDF 页数；其余四类须分别命中 geometry/*.geojson 文件名、metrics.json 的键、sources.json 的 id、assumptions.json 的 id。",
-      "current_result": "1025/1025 引用可解析，断链 0（含 gate_ids 152、source_ids 128、metric_refs 109、self_check_ids 98、assumption_ids 92、scenario_ids 88、standard_ids 86、drawing_refs 83、geometry_feature_ids 74、proposal_sections 64、geometry_refs 51）",
+      "current_result": "2026-08-19 全量复算：**1,278 条可校验引用，断链 0**。分类计数为 gate_ids 152、source_ids 128、metric_refs 109、self_check_ids 98、assumption_ids 92、scenario_ids 88、metrics 87、standard_ids 86、report_sections 83、report_sections_en 83、drawings 78、geometry_feature_ids 74、geojson_layers 56、visual_sections 32、visual_sections_en 32。（此前记录的 1025 条是更早版本的计数，包体增长后已过期。）",
       "caught_real_defects": [
         {
           "when": "2026-08-16",
@@ -31,7 +31,8 @@
           "what": "本轮为新增的 WCAG-CONTRAST 标准条目写 proposal_sections 时，凭印象写成「品牌、IP 与视觉系统」——正文里没有这个标题，那段文字实际归在「更新项目清单、实施政策与分期计划」之下。闸门重跑时 1025 条引用里恰好只断这 1 条，指名道姓指到了本轮作者刚写下的那一行。",
           "fix": "改为实际标题后 1025/1025、断链 0。同轮发现自陈数字又一次落后：矩阵新增交叉引用后引用总数已由 907 增到 1025，本文件仍写着 907/907。",
           "note": "这是本闸门第三次抓到「为新增内容写引用时凭印象编造」，与 2026-08-16 那次的 9 处同一类错误；也是第二次抓到自陈总数过期。自陈型数字必须每轮重测，凭印象写引用必被拦。"
-        }
+        },
+        "2026-08-19，本闸门抓到本包历史上最大的一次断链，而且**它自己那句「断链 0」在被发现之前一直是错的**：上一版「提分版」把正文由 190K 压到 43K 时删掉了大量章节，却没有同步 compliance_matrix.json——**74 处 report_sections 里有 42 处指向已不存在的章节（中英各 42）**。四道确定性闸门都查不到这个（它们不校验矩阵与正文的章节对应），但评审同时读得到矩阵和正文。修法是逐条重指到现存章节、英文侧按中文标题按位重建；此后每次改动章节标题都同步重指并复核，本轮多次改名（三个运营小节、许可小节、场景映射合表）均未再产生断链。"
       ]
     },
     {
