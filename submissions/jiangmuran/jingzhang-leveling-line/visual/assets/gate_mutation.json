@@ -1420,6 +1420,18 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M165",
+      "gate": "raster_integrity_qa.py",
+      "target": "assets/figures/key-areas.png",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一张随包 PNG 压缩数据深处的 64 个字节置零。签名、IHDR 与文件长度全部不变，因此存在性、尺寸与上限检查都看不出来——而该块自带的 CRC 算不对，构建停。",
+      "what_en": "Zero 64 bytes deep inside one shipped PNG's compressed data. The signature, the IHDR and the file's length are all untouched, so existence, pixel size and cap checks see nothing — and the chunk's own CRC no longer agrees, so the build stops.",
+      "why_zh": "这正是本轮查出该缺陷时用的那一手，而当时**七道图像闸门、清单摘要、以及主办方自己的校验器全部报 PASS**。被损坏的那张是 `key-areas.png`——**评审模型收到的五张之一**。",
+      "why_en": "This is the exact damage that found the defect, and at the time **seven image gates, the manifest digest and the organisers' own validator all reported PASS**. The file damaged to find it is key-areas.png — **one of the five the reviewing model is sent** — so the shape being tested here is a broken image reaching the scorer while every check in the package calls the submission sound."
+    },
+    {
       "id": "M164",
       "gate": "visual_packet_qa.py",
       "target": "assets/figures/site-overview.en.png",
@@ -1978,7 +1990,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 161,
+  "caught": 162,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2048,6 +2060,7 @@
     "printed_difference_qa.py",
     "project_dependency_qa.py",
     "proposal_legibility_qa.py",
+    "raster_integrity_qa.py",
     "reading_calendar_qa.py",
     "register_split_qa.py",
     "registry_alignment_qa.py",
@@ -2130,6 +2143,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 110 道闸门，其中 109 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 110 gates, 109 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 111 道闸门，其中 110 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 111 gates, 110 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
