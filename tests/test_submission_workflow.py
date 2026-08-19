@@ -7,7 +7,9 @@ import subprocess
 import hashlib
 import io
 import re
+import struct
 import urllib.error
+import zlib
 from pathlib import Path
 from unittest.mock import MagicMock, call, patch
 
@@ -29,6 +31,8 @@ from validate_submission import (  # noqa: E402
     ValidationReport,
     is_empty_pdf,
     media_signature_is_valid,
+    png_integrity_issue,
+    png_integrity_result,
     validate_agent_disclosure,
     validate_compliance_matrix_file,
     validate_media_manifest_entries,
@@ -1212,6 +1216,45 @@ REFERENCE_BLOCK = (
 REFERENCE_BLOCK += " " + " ".join(f"[depth:{item_id}]" for item_id in sorted(REQUIRED_DESIGN_DEPTH_IDS))
 
 
+def png_chunk(chunk_type: bytes, payload: bytes) -> bytes:
+    checksum = zlib.crc32(chunk_type)
+    checksum = zlib.crc32(payload, checksum) & 0xFFFFFFFF
+    return struct.pack(">I", len(payload)) + chunk_type + payload + struct.pack(">I", checksum)
+
+
+def valid_png_bytes() -> bytes:
+    ihdr = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+    return (
+        b"\x89PNG\r\n\x1a\n"
+        + png_chunk(b"IHDR", ihdr)
+        + png_chunk(b"IDAT", zlib.compress(b"\x00\x00\x00\x00\x00"))
+        + png_chunk(b"IEND", b"")
+    )
+
+
+def custom_png_bytes(
+    ihdr: bytes,
+    scanlines: bytes,
+    *,
+    before_idat: tuple[tuple[bytes, bytes], ...] = (),
+    split_idat: bool = False,
+) -> bytes:
+    compressed = zlib.compress(scanlines)
+    split = max(1, len(compressed) // 2)
+    idat_chunks = (
+        png_chunk(b"IDAT", compressed[:split]) + png_chunk(b"IDAT", compressed[split:])
+        if split_idat
+        else png_chunk(b"IDAT", compressed)
+    )
+    return (
+        b"\x89PNG\r\n\x1a\n"
+        + png_chunk(b"IHDR", ihdr)
+        + b"".join(png_chunk(kind, payload) for kind, payload in before_idat)
+        + idat_chunks
+        + png_chunk(b"IEND", b"")
+    )
+
+
 def english_primary(text: str) -> str:
     text = text.replace(
         'language: "zh"',
@@ -1418,6 +1461,119 @@ class SubmissionWorkflowTests(unittest.TestCase):
         path = root / rel
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(content)
+
+    def test_png_integrity_rejects_payload_damage_after_digest_refresh(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/design"
+            changed = self.write_minimal_ai_package(root, base)
+            image = root / base / "assets/figures/key-areas.png"
+            damaged = bytearray(image.read_bytes())
+            idat = damaged.index(b"IDAT")
+            damaged[idat + 5] ^= 0x01
+            image.write_bytes(damaged)
+
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                if item.get("path") == "assets/figures/key-areas.png":
+                    item["sha256"] = hashlib.sha256(damaged).hexdigest()
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            report = validate_submission(root, "alice", changed)
+            self.assertIn(
+                "invalid PNG `assets/figures/key-areas.png`: IDAT chunk checksum is invalid",
+                "\n".join(report.errors),
+            )
+            self.assertIsNone(png_integrity_issue(root / base / "assets/figures/site-overview.png"))
+
+    def test_png_integrity_checks_decoder_structure_and_resource_bounds(self) -> None:
+        rgba = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+        indexed = struct.pack(">IIBBBBB", 1, 1, 1, 3, 0, 0, 0)
+        grayscale = struct.pack(">IIBBBBB", 1, 1, 16, 0, 0, 0, 0)
+        interlaced = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 1)
+        cases = {
+            "invalid-filter.png": (
+                custom_png_bytes(rgba, b"\x05\x00\x00\x00\x00"),
+                "invalid filter type 5",
+            ),
+            "missing-palette.png": (
+                custom_png_bytes(indexed, b"\x00\x00"),
+                "missing PLTE",
+            ),
+            "empty-palette.png": (
+                custom_png_bytes(indexed, b"\x00\x00", before_idat=((b"PLTE", b""),)),
+                "PLTE chunk has an invalid length",
+            ),
+            "grayscale-palette.png": (
+                custom_png_bytes(
+                    grayscale,
+                    b"\x00\x00\x00",
+                    before_idat=((b"PLTE", b"\x00\x00\x00"),),
+                ),
+                "PLTE is not allowed",
+            ),
+            "unknown-critical.png": (
+                custom_png_bytes(rgba, b"\x00\x00\x00\x00\x00", before_idat=((b"ABCD", b""),)),
+                "unknown critical chunk ABCD",
+            ),
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for name, (payload, expected) in cases.items():
+                path = root / name
+                path.write_bytes(payload)
+                with self.subTest(name=name):
+                    self.assertIn(expected, png_integrity_issue(path) or "")
+
+            for name, payload in {
+                "multi-idat.png": custom_png_bytes(
+                    rgba, b"\x00\x00\x00\x00\x00", split_idat=True
+                ),
+                "adam7.png": custom_png_bytes(interlaced, b"\x00\x00\x00\x00\x00"),
+                "grayscale16.png": custom_png_bytes(grayscale, b"\x00\x00\x00"),
+                "indexed.png": custom_png_bytes(
+                    indexed,
+                    b"\x00\x00",
+                    before_idat=((b"PLTE", b"\x00\x00\x00\xff\xff\xff"),),
+                ),
+            }.items():
+                path = root / name
+                path.write_bytes(payload)
+                with self.subTest(name=name):
+                    self.assertIsNone(png_integrity_issue(path))
+
+            bounded = root / "bounded.png"
+            bounded.write_bytes(valid_png_bytes())
+            issue, decoded = png_integrity_result(bounded, max_inflated_bytes=4)
+            self.assertIn("safe decoding limit", issue or "")
+            self.assertEqual(0, decoded)
+
+    def test_png_integrity_enforces_validation_wide_decode_budget(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/design"
+            changed = self.write_minimal_ai_package(root, base)
+            first = root / base / "assets/figures/site-overview.png"
+            rgba = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+            first.write_bytes(custom_png_bytes(rgba, b"\x05\x00\x00\x00\x00"))
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                if item.get("path") == "assets/figures/site-overview.png":
+                    item["sha256"] = hashlib.sha256(first.read_bytes()).hexdigest()
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+            with patch("validate_submission.MAX_TOTAL_PNG_INFLATED_BYTES", 9):
+                report = validate_submission(root, "alice", changed)
+            errors = "\n".join(report.errors)
+            self.assertIn("invalid filter type 5", errors)
+            self.assertIn("safe decoding limit", errors)
+            self.assertEqual(5, report.png_inflated_bytes)
 
     def write_minimal_ai_package(self, root: Path, base: str) -> list[str]:
         proposal = f"{base}/proposal.md"
@@ -1747,11 +1903,7 @@ class SubmissionWorkflowTests(unittest.TestCase):
 </main></body></html>""",
         )
         for figure in figure_assets:
-            self.write(
-                root,
-                f"{base}/{figure}",
-                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><title>Figure</title><rect width="10" height="10"/></svg>',
-            )
+            self.write_bytes(root, f"{base}/{figure}", valid_png_bytes())
         return [proposal] + [f"{base}/{item}" for item in required]
 
     def add_bilingual_v2_display(self, root: Path, base: str, changed: list[str]) -> None:
