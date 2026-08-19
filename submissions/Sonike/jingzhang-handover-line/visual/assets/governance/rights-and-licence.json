@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "report_type": "rights_and_licence",
+  "scope_note_zh": "本包的许可声明与逐资产权利清单。2026-08-19 从 manifest.json 顶层迁出：已发布的 manifest.schema.json 是 additionalProperties=false 且不含扩展槽，license 与 rights_inventory 在其中没有合法位置，会触发 legacy advisory 警告。内容逐字未改，仅更换承载文件，以便在迁移 manifest schema 0.2.x 前先消除该警告。",
+  "scope_note_en": "This package's licence statement and per-asset rights inventory. Moved out of manifest.json on 2026-08-19: the published manifest.schema.json sets additionalProperties=false with no extension slot, so license and rights_inventory had no legal home there and raised a legacy advisory. Contents are verbatim unchanged; only the carrying file changed.",
+  "supersedes_zh": "manifest.json#license 与 manifest.json#rights_inventory（2026-08-19 之前的历史条目仍指向旧位置）",
+  "license": {
+    "identifier": "COMMUNITY-DISPLAY-ONLY",
+    "identifier_source": "schema/proposal.schema.json 的 license 枚举值之一；组织方未发布其条款文本",
+    "author_grant_zh": "作为本包内容的权利人，作者另行授予：对本包内容的任何使用，只要符合 CC BY-NC 4.0（署名、非商业、标明修改），即已获得作者许可。",
+    "author_grant_en": "As rights holders in the contents of this package, the authors additionally grant that any use complying with CC BY-NC 4.0 (attribution, non-commercial, changes indicated) is licensed.",
+    "required_attribution_line_zh": "本方案为开放共创建议，不代表任何政府决定或审批结论。",
+    "required_attribution_line_en": "This proposal is open co-creation advice and represents no government decision or approval.",
+    "third_party_exclusion_zh": "本授权不覆盖第三方素材。包内未使用任何第三方图片、地图、商标或受保护版式；字体权利链见 proposal.md 风险与合规一节的字体表与 sources.json 的 FONT-* 条目。",
+    "government_endorsement_zh": "任何使用不得暗示政府背书、实施批准、已建成或已完成公众参与。",
+    "precedence_zh": "三个许可信号冲突时的优先顺序，自高到低：(1) 第三方排除范围与政府不背书声明——禁止项，任何授权都不能突破；(2) 权利人的完整授权文本 author_grant_zh/en——权利人对自有权利的直接授予，不需外部文本支持即可执行；(3) 机器可读标识 identifier——条款未发布；若日后被定义得比 (2) 更严则以更严者为准，若被定义得更宽，本包仍只按 (2) 的范围授权。",
+    "precedence_en": "Order of precedence when the three licence signals conflict, highest first: (1) the third-party exclusion and the no-government-endorsement statement, which are prohibitions no grant can override; (2) the rights holders' full grant text in author_grant_zh/en, a direct grant over rights they hold that is enforceable without external support; (3) the machine-readable identifier, whose terms are unpublished — if it is later defined more strictly than (2) the stricter governs, and if more loosely, this package still grants only within the scope of (2).",
+    "same_text_locations": [
+      "proposal.md#风险、版权与合规说明",
+      "report/copyright_statement.md",
+      "assets/media/audio-guide.md",
+      "assets/media/audio-guide-en.md",
+      "assets/media/guided-tour.md",
+      "assets/media/guided-tour-en.md",
+      "visual/index.html",
+      "visual/index.en.html"
+    ]
+  },
+  "rights_inventory": {
+    "notice_zh": "逐资产权利清单。全部资产的权利人均为本包参与者；许可文本以 license.author_grant_zh/en 为准，冲突时按 license.precedence_zh 判定。第三方成分一栏全为「无」，本包据此作出直接授权。",
+    "notice_en": "Per-asset rights inventory. The rights holder for every asset is the package participants; the licence text is license.author_grant_zh/en, and conflicts are decided by license.precedence_en. Every third-party cell reads none, which is what allows the direct grant.",
+    "assets": [
+      {
+        "asset_class": "raster_figures",
+        "label_zh": "栅格图件",
+        "count": 26,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由 geometry/*.geojson 与 metrics.json 程序化渲染",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无：字形按 OFL 栅格化为像素，包内不分发字体文件",
+        "verification_zh": "manifest.json#files[].sha256 逐文件比对"
+      },
+      {
+        "asset_class": "drawing_pdfs",
+        "label_zh": "图纸 PDF",
+        "count": 4,
+        "rights_holder": "package_participants",
+        "production_method_zh": "同批渲染产物排版合成",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "中文嵌入 OFL 字体子集；拉丁为 PDF 基础十四款；无第三方图像或版式",
+        "verification_zh": "pdffonts 看嵌入列 + sha256"
+      },
+      {
+        "asset_class": "narrative",
+        "label_zh": "正文与译稿",
+        "count": 2,
+        "rights_holder": "package_participants",
+        "production_method_zh": "人工撰写，机器校验双语结构",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无",
+        "verification_zh": "行号三项对齐检查 + sha256"
+      },
+      {
+        "asset_class": "geometry",
+        "label_zh": "几何图层",
+        "count": 9,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由公告文字与面积校核推演，EPSG:4548",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无：未使用商业地图、OSM 或新闻图",
+        "verification_zh": "spatial_review gate + sha256"
+      },
+      {
+        "asset_class": "structured",
+        "label_zh": "结构化文件",
+        "count": 11,
+        "rights_holder": "package_participants",
+        "production_method_zh": "人工编写，脚本校验",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无",
+        "verification_zh": "四道 gate + sha256"
+      },
+      {
+        "asset_class": "offline_pages",
+        "label_zh": "离线网页",
+        "count": 2,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由 proposal.md 渲染加手写版式",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无外部资源，grep -c 'https?://' 为 0",
+        "verification_zh": "断网打开 + sha256"
+      },
+      {
+        "asset_class": "generated_illustration",
+        "label_zh": "模型生成插画",
+        "count": 1,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由参与者以文字提示词调用图像模型 gpt-image-2 生成，未提供任何参考图片、照片、地图或既有作品作为输入；仅用作 assets/media/cover.png 的背景层，封面文字另由本机 OFL 字体渲染。见 sources.json#IMAGEGEN-COVER-ILLUSTRATION。",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无：未向模型提供任何第三方图片、地图、商标或受保护版式；画面人物为无面部特征的剪影，不涉及肖像权。",
+        "verification_zh": "封面文字字形与图件、PDF 同源（Noto OFL），可 1:1 放大核对；提示词与不可复现性已登记在 sources.json#IMAGEGEN-COVER-ILLUSTRATION。"
+      },
+      {
+        "asset_class": "media_tactile",
+        "label_zh": "音视频与触觉件",
+        "count": 15,
+        "rights_holder": "package_participants",
+        "production_method_zh": "本机语音合成、程序化字幕与矢量制版",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无真人音色、无肖像、无第三方素材",
+        "verification_zh": "字幕与正文同源比对 + sha256"
+      }
+    ],
+    "hash_coverage": {
+      "files_declared": 83,
+      "files_with_sha256": 82,
+      "note_zh": "manifest.json 自身不自哈希，因此带 sha256 的条目数比声明条目数少 1。"
+    }
+  }
+}

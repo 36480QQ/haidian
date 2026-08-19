@@ -60,6 +60,19 @@ Official Haidian material describes the roughly three-square-kilometre AI Origin
 
 Chinese specificity here begins with an institutional and everyday overlap: campuses/work units, gated residential compounds, stations, the heritage park and service labour jointly shape the city. Peking University research on six Xueyuanlu campuses finds that the largest spatial-integration gain already occurs when a closed campus selectively opens its main passages; blanket opening adds much less. The proposal therefore uses operated, timed `Negotiated Gates` with emergency rules rather than removing every wall. The approved seven-node public-space project south of Qinghua East Road is treated as adjacent work to coordinate with—not a project this submission may claim or duplicate. [source:PKU-XUEYUANLU-CAMPUS-2025] [source:QINGHUA-EAST-PUBLIC-SPACE-2026]
 
+
+### Regional Coordination Interfaces
+
+The corridor is not an island. Following the taskbook's regional-coordination requirement, five named interfaces each state their outbound flow, inbound flow and negotiation status; all are pending-negotiation concept proposals: [source:AGENT-TASKBOOK] [assumption:A-REGIONAL-001]
+
+- **Beiwei AI Community**: outbound — operating manuals for the staffed fallback and no-phone paths; inbound — community-governance and elder-participation experience feeding the four-season public calendar.
+- **Future Science City**: outbound — Proof Yard templates for spatially controlled trials; inbound — energy and materials pilot demand as an external source for Proof Yard scheduling.
+- **Huairou Science City**: outbound — verification methods for recomputable state tasks; inbound — large-facility metrology and calibration supporting the first-year baseline instrumentation.
+- **Beijing E-Town (BDA)**: outbound — scenario packages that have passed the adoption gates (low-speed delivery, accessible navigation); inbound — scaled operating data used to revise exit thresholds.
+- **Beijing–Tianjin–Hebei corridor**: talent and event exchange along the Jing-Zhang heritage line, with the Exchange Hall as the corridor-side display and conversion window.
+
+Every interface requires confirmation by its counterpart; until confirmed it remains a spatial and operational reservation, not an agreed arrangement.
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall structure is called `One Floor / Seven Switches / Three Rooms`. `One Floor` is the completed park and the civic ground that can connect to it. `Seven Switches` are interface types that adapt to seven urban conditions. `Three Rooms` test a different building-to-public-space relationship at Zhongzhiyuan, AI Origin and Dazhongsi. The structure does not mistake a rectangular provisional boundary for a street, a reference building for an existing building, or seven test locations for approved engineering sites. [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/public_space.geojson#ROOM-PROOF] [depth:overall_spatial_structure]
@@ -144,6 +157,36 @@ Low-speed robots use a conceptual 1.5-metre service strip and named crossings, w
 
 Every scenario follows one state machine: `closed → controlled trial → conditional release → observation → renew / modify / retire`. Displays, sensors and robots can be removed, while the toilet, ramp, tree shade, seat, drainage and staffed service remain useful. That is the distinction between an AI-native district and a technology fair: the city first guarantees non-digital public value, then permits technology to prove additional value in a reversible setting. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:municipal_new_infrastructure]
 
+
+### Compute, Funding and Data: Entry and Exit
+
+The six global mechanism cases land in this proposal through three resource classes, each stating who provides it, how it is priced and how it exits (concept proposals): [assumption:A-OPERATIONS-001]
+
+- **Compute**: during the Proof Yard stage, occupants bring their own or purchase public compute quotas priced by trial duration; on exit the quota returns to the public pool with no dedicated lock-in.
+- **Funding**: the first bay and public interfaces are carried by renewal-project funding; scenario operating costs are carried by their operators and entered in the annual public ledger; when a scenario exits, its spatial components are recovered and reused on the infill replacement cycle.
+- **Data**: each scenario card registers its data fields, retention periods and human-review points; on exit, data is archived or deleted per its registration and may not be repurposed.
+
+### Scenario Verification and Exit
+
+Beyond their operating fields, the twelve scenario cards share one verification frame. Baselines are first-year measurements (currently unmeasured); exit conditions are lines agreed with operators before measurement begins, not performance promises: [assumption:A-BASELINE-001]
+
+| Card | Effect metric and observation | Human-takeover trigger | Control design | Exit condition |
+|---|---|---|---|---|
+| 1 Accessible navigation | Same-task completion rate, quarterly manual sampling | Two consecutive unanswered help requests | Before/after against the no-phone path | Completion below the staffed baseline |
+| 2 Low-speed robot delivery | Conflict events per thousand runs, logs plus human review | Any collision or substantiated complaint | Pilot vs control block | Event rate above the agreed line |
+| 3 Public-service navigation | Counter-fallback usage rate | Queue timeout | Before/after | Fallback rate keeps rising |
+| 4 Railway culture guide | Provenance spot-check pass rate | Missing provenance | Sampled control | Spot check fails |
+| 5 Climate shelter prompts | Prompt accuracy against measured weather | False alarm in extreme weather | Before/after | False alarms above the agreed line |
+| 6 Shared-lab matching | Post-match utilisation | Dispute or safety event | Before/after | Utilisation below the agreed line |
+| 7 Enterprise compliance desk | Human-referral rate and citation errors | Regulation updates lag | Before/after | Any incorrect citation |
+| 8 Night quiet zones | Noise complaints and measurements | Complaint clustering | Pilot vs control periods | Measured exceedance |
+| 9 Maintenance triage | Work-order response time | Backlog over limit | Before/after | Sustained degradation |
+| 10 Event safety review | Human-review coverage (no facial recognition) | Coverage gap | Sampled control | Coverage declines |
+| 11 Open benchmark lab | Recomputation success rate | Non-reproducible result | Repeated-run control | Recomputation fails |
+| 12 Multilingual help desk | Human-handoff satisfaction sampling | Language gap | Before/after | Satisfaction below the agreed line |
+
+When any exit condition triggers, the corresponding switch stays closed and the scenario returns to the staffed or low-tech path; it restarts only after restoration acceptance passes.
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 `land_use.geojson` is a complete, gap-free conceptual partition built for spatial verification rather than statutory rezoning. Its northern band emphasises research code `0802`, the middle emphasises education `0804` and public services, and the southern bands emphasise commercial service `05` and community life `07`. Boundaries are generated from the provisional overall polygon in projected coordinates. Official polygons or regulatory plans trigger a full rebuild; the coloured areas confer no development right, acquisition claim or land value. [data:geometry/land_use.geojson#LU-RESEARCH] [metric:site_area_sqm] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
@@ -182,6 +225,13 @@ Urban character avoids cyberpunk neon. The heritage layer uses oxide red, tactil
 
 Interpretation follows three visibly distinct timelines: the 1905–1909 story of independently engineered railway construction, Zhongguancun innovation culture since reform and opening, and contemporary open-model and public-AI culture. The inherited cultural code is not a railway silhouette but an engineering method: document — survey — test — evaluate — maintain. Every C1–C7 candidate room first establishes a field baseline, then runs a reversible P0 pilot, after which professionals and residents assess the same indicator set in parallel; disagreement triggers revision or retirement instead of being averaged into a flattering score. This voluntary project protocol adapts a publicly documented Beijing responsibility-planner case; it is not a citywide mandatory standard. No scoring has yet occurred and no responsibility planner is appointed. Historical fact, curatorial interpretation and generated material use different colours and identifiers. Augmented reality is optional; physical text, tactile models and a human guide remain available. [source:JINGZHANG-HERITAGE] [source:LOC-JINGZHANG-ALBUM-1909] [source:BEIJING-RESPONSIBILITY-PLANNER-DUAL-ASSESSMENT-2025]
 
+
+### Pilgrimage Landmark Sequence
+
+Beyond the three core landmarks, the public component library names two extensions, forming a five-point pilgrimage sequence (the three core landmarks match the metric; the two extensions are not counted in landmark_count): [metric:landmark_count]
+
+L1 Dazhongsi First Bay — the 8 x 8 m demountable support and reversible ground, whose adoption and exit both leave visible traces; L2 Jing-Zhang Evidence Line — the corridor-side band publishing sources and assumptions; L3 Proof Yard Transparent Threshold — the publicly visible boundary of controlled trials; L4 Origin Cloister Quiet Ring (extension) — the undisturbed public inner loop; L5 Exchange Hall Shared Eave and Staffed Window (extension) — the all-weather staffed urban interface. Honour display is organised along the L2 evidence line, keeping contributor names and proposal records durably visible.
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 **Phase 0 / 0–6 months — turn unknowns into evidence.** Obtain official overall and key-area polygons; survey existing buildings, title, heritage, utilities, fire access, movement, trees and accessibility; record seven days of walking, cycling, wheelchair use, loading, night conditions, temperature, humidity and illuminance; and rebind the three reference rooms to real candidate plots. This phase publishes no demolition conclusion. [data:geometry/phasing.geojson#PHASE-0] [assumption:A-BND-001]
@@ -207,6 +257,19 @@ The jury evaluates one Shared Floor project. Its performance passport checks pub
 ![Core metrics, climate calculation, unknowns and evidence chain](assets/figures/metrics-evidence.en.png)
 
 `compliance_matrix.json` covers the twenty-three official and agent tasks across announcement sections 1.3, 1.4 and 1.5 and agent.1–agent.6. `standard_matrix.json` covers six mandatory reference rows, including the Barrier-Free Environment Law. The fifteen rows in `design_depth_matrix.json` interpret completion through `known — unknown — proposal — recalculation trigger`. Feature IDs and metric keys are shared by the narrative, HTML, A3 booklet and A0 boards so that a second, contradictory project cannot hide in presentation files. [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:metrics_recalculation]
+
+
+### First-Year Baseline Measurement Plan
+
+Five slow variables form the acceptance baseline. Baseline values are first-year measurements (currently unmeasured); deterioration thresholds are lines agreed before measurement begins. Any trigger closes the corresponding switch and hands the case to human review: [assumption:A-BASELINE-001]
+
+- **BL-01 Winter-noon public sunlight share**: fixed-grid measurement across the C03 outdoor public spaces (the simplified proxy of 68.0% is a design reference, not a baseline); measured around each winter solstice with fixed-point photography plus manual checks; a year-on-year drop beyond the agreed margin triggers an obstruction review. [metric:shared_floor_winter_public_sun_proxy]
+- **BL-02 Public-route completion**: full walking audits reaching all five public rooms, quarterly, at least three routes per audit; any unreachable room triggers immediate correction.
+- **BL-03 Human-takeover drills**: the twelve coded recovery paths are rehearsed on site each quarter; any path failing to reach its safe end state freezes its scenario. [metric:handoff_recovery_pass_count]
+- **BL-04 No-phone same-task completion**: shares its sample with card 1's control design; two consecutive quarters below the staffed baseline expands the staffed windows.
+- **BL-05 First-bay reversibility drill**: the 8 x 8 m support is demounted and reinstated annually, recording labour hours and ground restoration; incomplete restoration halts replication of further bays.
+
+Measurement records enter the annual public ledger with observation points, sample sizes, methods, values and anomaly handling; the ledger's field format is fixed at its first annual publication.
 
 ## Risk, Copyright, and Compliance
 

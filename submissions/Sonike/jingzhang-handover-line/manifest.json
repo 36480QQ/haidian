@@ -5,28 +5,6 @@
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
-  "license": {
-    "identifier": "COMMUNITY-DISPLAY-ONLY",
-    "identifier_source": "schema/proposal.schema.json 的 license 枚举值之一；组织方未发布其条款文本",
-    "author_grant_zh": "作为本包内容的权利人，作者另行授予：对本包内容的任何使用，只要符合 CC BY-NC 4.0（署名、非商业、标明修改），即已获得作者许可。",
-    "author_grant_en": "As rights holders in the contents of this package, the authors additionally grant that any use complying with CC BY-NC 4.0 (attribution, non-commercial, changes indicated) is licensed.",
-    "required_attribution_line_zh": "本方案为开放共创建议，不代表任何政府决定或审批结论。",
-    "required_attribution_line_en": "This proposal is open co-creation advice and represents no government decision or approval.",
-    "third_party_exclusion_zh": "本授权不覆盖第三方素材。包内未使用任何第三方图片、地图、商标或受保护版式；字体权利链见 proposal.md 风险与合规一节的字体表与 sources.json 的 FONT-* 条目。",
-    "government_endorsement_zh": "任何使用不得暗示政府背书、实施批准、已建成或已完成公众参与。",
-    "precedence_zh": "三个许可信号冲突时的优先顺序，自高到低：(1) 第三方排除范围与政府不背书声明——禁止项，任何授权都不能突破；(2) 权利人的完整授权文本 author_grant_zh/en——权利人对自有权利的直接授予，不需外部文本支持即可执行；(3) 机器可读标识 identifier——条款未发布；若日后被定义得比 (2) 更严则以更严者为准，若被定义得更宽，本包仍只按 (2) 的范围授权。",
-    "precedence_en": "Order of precedence when the three licence signals conflict, highest first: (1) the third-party exclusion and the no-government-endorsement statement, which are prohibitions no grant can override; (2) the rights holders' full grant text in author_grant_zh/en, a direct grant over rights they hold that is enforceable without external support; (3) the machine-readable identifier, whose terms are unpublished — if it is later defined more strictly than (2) the stricter governs, and if more loosely, this package still grants only within the scope of (2).",
-    "same_text_locations": [
-      "proposal.md#风险、版权与合规说明",
-      "report/copyright_statement.md",
-      "assets/media/audio-guide.md",
-      "assets/media/audio-guide-en.md",
-      "assets/media/guided-tour.md",
-      "assets/media/guided-tour-en.md",
-      "visual/index.html",
-      "visual/index.en.html"
-    ]
-  },
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
@@ -47,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fbfd82014ec1e376aa61225c730441356b21421ef18dcc88a8ce5c520b1e9f09"
+      "sha256": "75f5215ef78a0f20f5800b4182fb24bbb82c08b368176579575b53fd16ea1460"
     },
     {
       "path": "agent.json",
@@ -77,13 +55,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "afb992324b06eebd41a8ef447ae997c169682fe665ac5f6be13eb2d95a0c6238"
+      "sha256": "e20fdd79bd1d0f2e208c8ee092df2b551642fe5353bcc96925c24bffee7c6401"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a6d89b5086b54ef96841fea3e179153b96a2b7fdfa52007dbab8890d34294a10"
+      "sha256": "3f3d6a94e5b5d663d7c72c6fa28af1be91506d6f68e53f5a92c0f393076f423b"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +86,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3b31bb09c1a30e63ef69b10c24ad2a3f62f71d6f134184d56937217506aa226e"
+      "sha256": "817cb6003f183921639f1e7774a66755aeb72cdb6e5958deb22d0f97f15df6af"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +216,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ad7459431e069bb3ab8df8549637dbe6dd7cdd1f093cea4a9e874fcb90162207"
+      "sha256": "229268c55680e48a8b4ea514246292ccb19bb93e83ed2702b1a0f241f52efbcf"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +224,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "03404a26cc4e44baf4d2264fbedc1c1e13bc53f6ea31a4fe0f22a329623ae221"
+      "sha256": "fa88951ed960f00cabda362606380449d02f6e9f4748963443e33ca95e4a8382"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +355,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "4db72a50e5113cbe512af652c7445bba68172c927ae9278e007c1462679bfb6d"
+      "sha256": "ad7af1a7b000b62138021fb34e5219d92d02068aa9a954572ae3b3bdbe0407bc"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -408,6 +386,12 @@
       "language": "en",
       "translation_of": "assets/figures/delivery-contract.png",
       "sha256": "a8c0f11353e1f9d2b8dba355e5c85bfa05e9f53ecb756936b70e3d6885ce4690"
+    },
+    {
+      "path": "visual/assets/governance/rights-and-licence.json",
+      "role": "governance_rights",
+      "required": false,
+      "sha256": "0c261e721737dc1221b4a107f11aa360af1574b2ded65a4a9fca4e931d9c2138"
     },
     {
       "path": "visual/assets/governance/shift-ledger.schema.json",
@@ -658,96 +642,5 @@
     "data_confidence": "mixed_provisional_and_conceptual",
     "readiness_contract": "persisted-self-check-v1"
   },
-  "cover_image": "assets/media/cover.png",
-  "rights_inventory": {
-    "notice_zh": "逐资产权利清单。全部资产的权利人均为本包参与者；许可文本以 license.author_grant_zh/en 为准，冲突时按 license.precedence_zh 判定。第三方成分一栏全为「无」，本包据此作出直接授权。",
-    "notice_en": "Per-asset rights inventory. The rights holder for every asset is the package participants; the licence text is license.author_grant_zh/en, and conflicts are decided by license.precedence_en. Every third-party cell reads none, which is what allows the direct grant.",
-    "assets": [
-      {
-        "asset_class": "raster_figures",
-        "label_zh": "栅格图件",
-        "count": 26,
-        "rights_holder": "package_participants",
-        "production_method_zh": "由 geometry/*.geojson 与 metrics.json 程序化渲染",
-        "licence_text_location": "manifest.json#license.author_grant_zh",
-        "third_party_content_zh": "无：字形按 OFL 栅格化为像素，包内不分发字体文件",
-        "verification_zh": "manifest.json#files[].sha256 逐文件比对"
-      },
-      {
-        "asset_class": "drawing_pdfs",
-        "label_zh": "图纸 PDF",
-        "count": 4,
-        "rights_holder": "package_participants",
-        "production_method_zh": "同批渲染产物排版合成",
-        "licence_text_location": "manifest.json#license.author_grant_zh",
-        "third_party_content_zh": "中文嵌入 OFL 字体子集；拉丁为 PDF 基础十四款；无第三方图像或版式",
-        "verification_zh": "pdffonts 看嵌入列 + sha256"
-      },
-      {
-        "asset_class": "narrative",
-        "label_zh": "正文与译稿",
-        "count": 2,
-        "rights_holder": "package_participants",
-        "production_method_zh": "人工撰写，机器校验双语结构",
-        "licence_text_location": "manifest.json#license.author_grant_zh",
-        "third_party_content_zh": "无",
-        "verification_zh": "行号三项对齐检查 + sha256"
-      },
-      {
-        "asset_class": "geometry",
-        "label_zh": "几何图层",
-        "count": 9,
-        "rights_holder": "package_participants",
-        "production_method_zh": "由公告文字与面积校核推演，EPSG:4548",
-        "licence_text_location": "manifest.json#license.author_grant_zh",
-        "third_party_content_zh": "无：未使用商业地图、OSM 或新闻图",
-        "verification_zh": "spatial_review gate + sha256"
-      },
-      {
-        "asset_class": "structured",
-        "label_zh": "结构化文件",
-        "count": 11,
-        "rights_holder": "package_participants",
-        "production_method_zh": "人工编写，脚本校验",
-        "licence_text_location": "manifest.json#license.author_grant_zh",
-        "third_party_content_zh": "无",
-        "verification_zh": "四道 gate + sha256"
-      },
-      {
-        "asset_class": "offline_pages",
-        "label_zh": "离线网页",
-        "count": 2,
-        "rights_holder": "package_participants",
-        "production_method_zh": "由 proposal.md 渲染加手写版式",
-        "licence_text_location": "manifest.json#license.author_grant_zh",
-        "third_party_content_zh": "无外部资源，grep -c 'https?://' 为 0",
-        "verification_zh": "断网打开 + sha256"
-      },
-      {
-        "asset_class": "generated_illustration",
-        "label_zh": "模型生成插画",
-        "count": 1,
-        "rights_holder": "package_participants",
-        "production_method_zh": "由参与者以文字提示词调用图像模型 gpt-image-2 生成，未提供任何参考图片、照片、地图或既有作品作为输入；仅用作 assets/media/cover.png 的背景层，封面文字另由本机 OFL 字体渲染。见 sources.json#IMAGEGEN-COVER-ILLUSTRATION。",
-        "licence_text_location": "manifest.json#license.author_grant_zh",
-        "third_party_content_zh": "无：未向模型提供任何第三方图片、地图、商标或受保护版式；画面人物为无面部特征的剪影，不涉及肖像权。",
-        "verification_zh": "封面文字字形与图件、PDF 同源（Noto OFL），可 1:1 放大核对；提示词与不可复现性已登记在 sources.json#IMAGEGEN-COVER-ILLUSTRATION。"
-      },
-      {
-        "asset_class": "media_tactile",
-        "label_zh": "音视频与触觉件",
-        "count": 15,
-        "rights_holder": "package_participants",
-        "production_method_zh": "本机语音合成、程序化字幕与矢量制版",
-        "licence_text_location": "manifest.json#license.author_grant_zh",
-        "third_party_content_zh": "无真人音色、无肖像、无第三方素材",
-        "verification_zh": "字幕与正文同源比对 + sha256"
-      }
-    ],
-    "hash_coverage": {
-      "files_declared": 83,
-      "files_with_sha256": 82,
-      "note_zh": "manifest.json 自身不自哈希，因此带 sha256 的条目数比声明条目数少 1。"
-    }
-  }
+  "cover_image": "assets/media/cover.png"
 }
