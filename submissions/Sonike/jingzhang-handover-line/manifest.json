@@ -14,6 +14,8 @@
     "required_attribution_line_en": "This proposal is open co-creation advice and represents no government decision or approval.",
     "third_party_exclusion_zh": "本授权不覆盖第三方素材。包内未使用任何第三方图片、地图、商标或受保护版式；字体权利链见 proposal.md 风险与合规一节的字体表与 sources.json 的 FONT-* 条目。",
     "government_endorsement_zh": "任何使用不得暗示政府背书、实施批准、已建成或已完成公众参与。",
+    "precedence_zh": "三个许可信号冲突时的优先顺序，自高到低：(1) 第三方排除范围与政府不背书声明——禁止项，任何授权都不能突破；(2) 权利人的完整授权文本 author_grant_zh/en——权利人对自有权利的直接授予，不需外部文本支持即可执行；(3) 机器可读标识 identifier——条款未发布；若日后被定义得比 (2) 更严则以更严者为准，若被定义得更宽，本包仍只按 (2) 的范围授权。",
+    "precedence_en": "Order of precedence when the three licence signals conflict, highest first: (1) the third-party exclusion and the no-government-endorsement statement, which are prohibitions no grant can override; (2) the rights holders' full grant text in author_grant_zh/en, a direct grant over rights they hold that is enforceable without external support; (3) the machine-readable identifier, whose terms are unpublished — if it is later defined more strictly than (2) the stricter governs, and if more loosely, this package still grants only within the scope of (2).",
     "same_text_locations": [
       "proposal.md#风险、版权与合规说明",
       "report/copyright_statement.md",
@@ -45,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6a456fcc30261ce612709a66bc14efed142cdebb33f03f69c68494ded26081c4"
+      "sha256": "524cf1426a4ee68afc7b31a01c1abb000f1b0ca95de46f47c5d5ba1e13a9e309"
     },
     {
       "path": "agent.json",
@@ -81,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6fe4b815ddfb4c65a326aa3910cadc3fd0ce6c3dd403dd2255edb64dfed6fd21"
+      "sha256": "87954c2341430d37be6c1f022294369680b16308273579e8d25eee998d2c2541"
     },
     {
       "path": "compliance_matrix.json",
@@ -106,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5758d7db513850a764c98c255d5145e3627995801c3895bcf91c171cee1b1377"
+      "sha256": "da374097c8133f5646a5e7a9806a3bdb9ddce43c5d76daa7fec1449f68aa0259"
     },
     {
       "path": "report/narrative.md",
@@ -236,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b6594104d0974ebe9834baeaabee8401b26540905b45f6a600829c752be7fda1"
+      "sha256": "183751b97f5cbd7f5941af9def7bc223418dcbf1292b59228e2138fb5c5c1d6d"
     },
     {
       "path": "report/proposal.en.html",
@@ -244,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a85c71b7e53b69c4e5ce40285264de1f1119e5a2ff4feabcda86564ed42366ff"
+      "sha256": "93b49b285bc7de5808fa3678548e12c25ce6490e86f7b0ff7960f8675531c2dd"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -375,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "ac1bd7ddcb69e43d76a305c11352ae4d66ec5f7fac93ba4541019ac4afe5dadc"
+      "sha256": "7d0c47f5bc5a172ce7fa86bbf13b3ddf283ddb1880e354b3c7033a7a95ee8a28"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -549,7 +551,7 @@
       "path": "assets/media/guided-tour.md",
       "role": "transcript",
       "required": false,
-      "sha256": "3d637935ebd98b6e0eead3996f5f196ce5f9bb42dc4461927d0a1f34a18809c9",
+      "sha256": "db29773008512b2d1f44afc24401d128955d90e1f23fda111deeadd6b7aee01f",
       "title_zh": "三分钟导览视频文字稿与分镜（中文）",
       "title_en": "Guided-tour transcript and shot list (Chinese)",
       "description_zh": "逐句文字稿，外加九段分镜表：写明每一段配的是哪张图件、为什么配它。",
@@ -559,7 +561,7 @@
       "path": "assets/media/guided-tour-en.md",
       "role": "transcript",
       "required": false,
-      "sha256": "64286eedf25cb271df51d8d3080c6eb19adc37127cbbcba8aae8ab35c52a7ad2",
+      "sha256": "0404590b5ff757c5f9fd6f6755cc2a911be84137f18a703b7d430f9337e5e899",
       "title_zh": "三分钟导览视频文字稿与分镜（英文）",
       "title_en": "Guided-tour transcript and shot list (English)",
       "description_zh": "英文版文字稿与分镜表。",
