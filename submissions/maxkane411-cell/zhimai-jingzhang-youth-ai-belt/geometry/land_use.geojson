@@ -11,7 +11,9 @@
         "land_use_name_zh": "城镇住宅用地",
         "name_zh": "用地分区1",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium"
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false
       },
       "geometry": {
         "type": "Polygon",
@@ -51,7 +53,9 @@
         "land_use_name_zh": "科研用地",
         "name_zh": "用地分区2",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium"
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false
       },
       "geometry": {
         "type": "Polygon",
@@ -91,7 +95,9 @@
         "land_use_name_zh": "商业用地",
         "name_zh": "用地分区3",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium"
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false
       },
       "geometry": {
         "type": "Polygon",
@@ -131,7 +137,9 @@
         "land_use_name_zh": "公园绿地",
         "name_zh": "用地分区4",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium"
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false
       },
       "geometry": {
         "type": "Polygon",
@@ -171,7 +179,9 @@
         "land_use_name_zh": "商务金融用地",
         "name_zh": "用地分区5",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium"
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false
       },
       "geometry": {
         "type": "Polygon",
@@ -211,7 +221,9 @@
         "land_use_name_zh": "留白用地",
         "name_zh": "用地分区6",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium"
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false
       },
       "geometry": {
         "type": "Polygon",
