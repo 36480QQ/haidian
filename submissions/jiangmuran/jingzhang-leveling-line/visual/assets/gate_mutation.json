@@ -1487,8 +1487,8 @@
       "exit_code": 1,
       "named_the_damage": true,
       "rendered": true,
-      "what_zh": "把 FIG.04 的用地图例改回手写的六个代码——**本轮之前它就是这么送出去的**。三幅窗口照旧裁出同样的多边形，1207 照旧被画出来，只是纸面上那个颜色没有了名字。闸门比对图例色块与实际填色两套集合，点名报出，构建停。",
-      "what_en": "Put FIG.04's land-use key back to the hand-written list of six codes - **which is exactly how it shipped until this round**. The three windows still clip the same polygons and 1207 is still drawn; the colour on the paper simply loses its name. The gate compares the set of keyed colours with the set of filled ones, names the difference, and the build stops.",
+      "what_zh": "把 FIG.04 的用地图例改回手写的六个代码——**本轮之前它就是这么送出去的**。三幅窗口照旧裁出同样的多边形，1207 照旧被画出来，只是纸面上那个颜色没有了名字。闸门比对几何与色块各自声明的 `data-class`，点名报出，构建停——判的是声明，不是颜色。",
+      "what_en": "Put FIG.04's land-use key back to the hand-written list of six codes - **which is exactly how it shipped until this round**. The three windows still clip the same polygons and 1207 is still drawn; the colour on the paper simply loses its name. The gate compares the `data-class` the geometry declares with the one the key swatches declare - never the colour - names the difference, and the build stops.",
       "why_zh": "七类用地完整剖分是本方案摘要里的话，而这张图的图例只认六类。**E277 在同一张图上记过同一个形状**——一条色带画在只提供「公园绿地（1401）」的图例下，读起来像一个它并不是的用地类别。那一次的补救是在图上说明那是哪一层；而对一个图例整个漏掉的类别，补救不是再加一行说明，是**别再手写图例**。手写的清单在每次窗口变化时都要重新判断一次，这种判断做过 N 次就一定会漏一次——本册的规矩是：把它算出来。",
       "why_en": "A seven-class partition is what this proposal's own summary claims, and this sheet's key admits six. **E277 recorded the same shape on the same sheet**: a band drawn under a key offering only 公园绿地（1401）, so it read as a land-use class it is not. The remedy then was to say which layer the band was; the remedy for a class the key omits altogether is not another line of prose but to stop typing the key. A hand-written list has to be re-judged every time a window moves, and a judgement made N times by hand is missed once - so this register's rule applies: derive it."
     },
