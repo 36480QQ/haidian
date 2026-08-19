@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.7.0",
-  "dataset_id": "jingzhang-v9-e2-readiness",
+  "schema_version": "1.8.0",
+  "dataset_id": "jingzhang-v10-e2-readiness",
   "title": {
-    "zh": "V9 E2 原型就绪包",
-    "en": "V9 E2 Prototype Readiness Pack"
+    "zh": "V10 S7 E2 文件就绪包",
+    "en": "V10 S7 E2 Documented Prototype Pack"
   },
   "definition": {
     "zh": "E2 表示测绘、询价、审批和搭建准备材料已形成，不表示已取得许可、完成搭建或现场运行。",
     "en": "E2 means survey, quotation, permit and assembly preparation documents exist; it does not mean permits, construction or field operation are complete."
   },
-  "prototype_readiness": "ready_documented",
+  "prototype_readiness": "E2_documented_prototype_ready",
   "field_status": "not_field_run",
   "permitted_states": [
     "ready_documented",
@@ -519,5 +519,11 @@
       ],
       "status": "pending_quote"
     }
-  ]
+  ],
+  "synthetic_verification": {
+    "status": "T0_synthetic_contract_verified",
+    "case_count": 84,
+    "result_ref": "visual/assets/v10-tabletop-results.json",
+    "field_status": "not_field_run"
+  }
 }

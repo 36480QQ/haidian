@@ -1096,13 +1096,8 @@
       "geojson_layers": [
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson",
-        "geometry/constraints.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
         "receipt_landmark_count",
@@ -1142,7 +1137,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "V8 以“京张双答 / 三站一历”统一名称、四色情报、三座不同轮廓的回执地标和一脊三站两翼总图响应总体概念、视觉识别与功能统筹。"
+      "evidence_summary_zh": "V10 以“京张双答 / 城市采纳编译器”统一名称、四色情报、三座不同轮廓的回执地标和一脊三站两翼总图响应总体概念、视觉识别与功能统筹。"
     },
     {
       "requirement_id": "agent.2",
@@ -1153,14 +1148,8 @@
         "AI创新生态、人才画像与AI+场景"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson",
         "geometry/constraints.geojson"
       ],
       "metrics": [
@@ -1210,20 +1199,16 @@
         "AI创新生态、人才画像与AI+场景"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
+        "geometry/constraints.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson",
-        "geometry/constraints.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
         "paired_scenario_count",
         "industry_test_count",
-        "stress_profile_count"
+        "stress_profile_count",
+        "synthetic_design_verification_case_count",
+        "synthetic_design_verification_pass_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1257,7 +1242,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "12 张双答场景、3 项产业测试和6类压力画像保持稳定ID；三项英雄场景落到平面、剖面、运营、人工责任、停止与恢复。"
+      "evidence_summary_zh": "12 个双答场景、3 项产业测试和 6 类压力画像保持稳定 ID；84 项确定性桌面演练逐场景验证普通基线、准入、停止、人工恢复和设备退役，结果明确为合成设计验证而非现场绩效。"
     },
     {
       "requirement_id": "agent.4",
@@ -1268,15 +1253,10 @@
         "三座回执地标、文化里程与国际传播"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson",
-        "geometry/constraints.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
         "receipt_landmark_count",
@@ -1327,15 +1307,9 @@
         "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson",
-        "geometry/constraints.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
         "receipt_landmark_count"
@@ -1387,20 +1361,15 @@
         "更新项目清单、实施政策与分期计划"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
         "geometry/phasing.geojson",
+        "geometry/public_space.geojson",
         "geometry/constraints.geojson"
       ],
       "metrics": [
         "annual_program_cycle_count",
         "s7_pilot_phase_count",
-        "public_ledger_record_status"
+        "public_ledger_record_status",
+        "field_verification_result_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1448,7 +1417,7 @@
     "unknowns": "footfall, energy, efficiency, investment, satisfaction, intensity and field performance remain unknown"
   },
   "v8_evidence_index": {
-    "version": "V8",
+    "version": "V10",
     "concept": "Three Stations, One Civic Year",
     "landmarks": "LMK-01..03",
     "annual_program": "YEAR-SPRING..WINTER",

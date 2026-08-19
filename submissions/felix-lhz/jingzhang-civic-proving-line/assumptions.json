@@ -73,6 +73,18 @@
         "zh": "不得把空白表单、构件数量或数字样机解读为现场绩效。",
         "en": "Blank forms, quantities and the digital prototype must not be read as field performance."
       }
+    },
+    {
+      "id": "ASM-V10-SYNTHETIC",
+      "status": "synthetic_design_verification_only",
+      "statement": {
+        "zh": "84 项确定性桌面演练只验证规则、状态跃迁、准入、停止、恢复和退役契约自洽，不是现场仿真、公众测试或安全认证。",
+        "en": "The 84 deterministic tabletop cases verify only rule, transition, admission, stop, recovery and retirement consistency; they are not field simulation, public testing or safety certification."
+      },
+      "impact": {
+        "zh": "客流、效率、安全表现、满意度、能耗、成本和恢复时长继续保持现场未知。",
+        "en": "Flow, efficiency, safety performance, satisfaction, energy, cost and recovery duration remain field unknowns."
+      }
     }
   ]
 }
