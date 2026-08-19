@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M167",
+      "gate": "hero_summary_qa.py",
+      "target": "report/proposal.html",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把首屏那句里的证据标记从 `.evidence` 徽章改回裸方括号——**本轮之前它就是这么送出去的**。闸门拿前置事项里的 summary 现渲染一遍，与页面上的段落逐字比对，对不上，构建停。",
+      "what_en": "Turn the hero paragraph's citation back from an `.evidence` chip into bare square brackets - **which is exactly how it shipped until this round**. The gate re-renders the front-matter summary through the body renderer and compares the two paragraphs character for character; they differ, and the build stops.",
+      "why_zh": "正文里每一处引用都戴徽章，因为正文走 `render_inline`；首屏那一段走的是 `html.escape`，于是它的标记以文字的形式落在页面上。**这一段是评审截图里能看到的全部正文**——在那个位置，裸标记读起来不像记法，像渲染坏了。扫描找不出这一类：整份页面有 23 处裸标记，其中 22 处是刻意的，写在 `<code>` 里指称那个编号本身，没有任何模式能把两者分开。",
+      "why_en": "Every citation in the body wears the chip because the body goes through `render_inline`; the hero paragraph went through `html.escape`, so its markup landed on the page as text. **That paragraph is the whole of the proposal a reviewer's screenshot captures above the fold**, and there a raw marker reads as a rendering fault rather than as notation. No scan finds this class: the page carries 23 bare markers and 22 are deliberate - the id named inside a `<code>` span - and no pattern separates them. The seam can: whatever the front matter says, the fold must be what the body renderer makes of it."
+    },
+    {
       "id": "M159",
       "gate": "generation_chain_qa.py",
       "target": "report/copyright_statement.md",
@@ -2002,7 +2014,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 163,
+  "caught": 164,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2042,6 +2054,7 @@
     "geometry_citation_qa.py",
     "harness_reference_qa.py",
     "heading_parity_qa.py",
+    "hero_summary_qa.py",
     "html_gloss_qa.py",
     "i18n_order_qa.py",
     "intake_limits_qa.py",
@@ -2155,6 +2168,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 111 道闸门，其中 110 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 111 gates, 110 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 112 道闸门，其中 111 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 112 gates, 111 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

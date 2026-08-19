@@ -5,7 +5,7 @@
  "method_note_zh": "全部读数从 upstream/main 的提案正文直接统计，可用本脚本重跑。只保存计数与目录键，不保存正文。关键词匹配是**下界**：一份用了别的说法的方案不会被计入，因此每个数字应读作「至少」。这一点写在这里而不是留给读者推断。",
  "method_note_en": "Every reading is counted from proposal bodies in upstream/main and is reproducible by re-running this script. Only counts and directory keys are stored, never bodies. Keyword matching is a LOWER BOUND: a proposal that words a provision differently is not counted, so read every figure as 'at least'.",
  "simulation_json": {
-  "count": 26,
+  "count": 27,
   "keys": [
    "submissions/ChrysFu/jingzhang-ai-talent-living-lab",
    "submissions/Hyp6666/jingzhang-service-life-covenant",
@@ -24,6 +24,7 @@
    "submissions/surenny/jingzhang-full-cost",
    "submissions/wocaonimaworinixi-collab/jingzhang-ai-native-belt",
    "submissions/xiaowuzicode/token-block-jingzhang-ai-belt",
+   "submissions/yadnuses/jingzhang-mend",
    "submissions/zachshi-ai/jingzhang-ai-civic-services",
    "submissions/zachshi-ai/jingzhang-ai-heritage-spine",
    "submissions/zachshi-ai/jingzhang-civic-data-commons",
@@ -51,9 +52,10 @@
    ]
   },
   "by_body_phrase": {
-   "count": 13,
+   "count": 14,
    "keys": [
     "submissions/Currrrrrry/jingzhang-response",
+    "submissions/JIQINGFENG0818/jingzhang-gauge",
     "submissions/Komeiji-Shiki/visible-city-civic-ai-commons",
     "submissions/LShengYi/ai-pulse-belt",
     "submissions/Sakimu99/jingzhang-civic-ai-commons",
