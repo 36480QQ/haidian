@@ -1,5 +1,28 @@
 # 方案迭代记录 / Changelog
 
+## v46.1 - 2026-08-19
+
+**空间动态重建、双语无障碍与 H3 生成链闭合 / Spatial-motion rebuild, bilingual access and H3 provenance closure**
+
+- 串行门：PR #3366 已合并，其 merge SHA 已进入最新 canonical `main`；同包开放 PR 为 0，开工前工作树洁净。修复前 RED：第 46 轮 40 秒纯色卡片视频缺少可读空间关系；普通—验证—故障—恢复无法在一条连续旅程中定位停止范围、人工交接与恢复对象；英文无配套字幕、视频无静态海报；版权声明与评审索引仍停在 141/149 路径。
+- Serial gate: PR #3366 was merged, its merge SHA entered the latest canonical `main`, no package PR remained open, and the worktree was clean before editing. RED before repair: the Round 46 40-second flat-card video lacked readable spatial relations; ordinary–proof–failure–recovery did not locate stop scope, staffed handoff and restoration objects in one journey; English had no paired captions and the video had no poster; copyright and review-index counts remained at 141/149 paths.
+
+| 已具备 / Already present | 仍薄弱 / RED | 必须冻结 / Locked | 本轮实施 / Implemented |
+|---|---|---|---|
+| 四态合同、43.344 秒中文旁白、包内普通生活与三处空间图件、无自动播放入口 | 纯色卡片替代空间、英文字幕缺失、无静态首帧、当前路径计数与媒体生成链不完整 | 双轨总纲、三原型、JZ-AIOS、G0—G3、四轴、三载体、geometry/metrics、12/8/3/36、G0/NO-GO/provisional/rights、A3 14+14/A0 8+8 | 一次 MiniMax-H3 图生视频概念母片 + 包内图件 + ffmpeg 确定性叠层，原路径输出 48.000 秒空间动态；新增海报与英文 VTT；同步中英 proposal/visual/report、agent、rights、review index、narrative 与 manifest |
+
+- 成片为 1920×1080、24 fps、1,152 帧、H.264/AAC、画面与音频均严格覆盖 48.000 秒、3,180,716 bytes（约 3.03 MiB）；五段为双轨入口、三处普通生活、可选验证、故障/人工接管、恢复普通路径。持续帧内披露 G0、provisional、非现场证据、非批准方案以及“48 秒仅为展示节奏”。为满足 40 MiB 整包硬限制，15,520,801-byte 合成母版先以末帧克隆补齐 0.125 秒，再经 ffmpeg slow preset 发布压缩；四态关键帧全尺寸抽检仍可读，全片 SSIM 0.913354。MiniMax-H3 母片 15.08 秒、2560×1440、24 fps，原声不进入成片；重复数字瑕疵被信息层遮蔽，疑似传统建筑界面被明确标作抽象文化框架。原始母片超过媒体上限且含未遮蔽瑕疵，因此不进入投稿包；任务标识、源摘要、提示意图、参考图角色、最终算法与不可证明项保存在文字稿、agent 和 rights ledger。
+- The final is 1920×1080, 24 fps, 1,152 frames, H.264/AAC, with picture and audio both covering exactly 48.000 seconds; it is 3,180,716 bytes (about 3.03 MiB). Its five parts are Twin-Track entry, ordinary life across three places, optional proof, failure/staffed takeover, and restoration of the ordinary route. Persistent in-frame disclosure states G0, provisional, not field evidence, not approved, and that 48 seconds is presentation pacing only. To meet the 40 MiB package ceiling, the 15,520,801-byte composition master is first padded by cloning its final frame for 0.125 seconds, then publish-encoded with the ffmpeg slow preset; full-size samples from all key states remain legible and full-video SSIM is 0.913354. The MiniMax-H3 master is 15.08 seconds, 2560×1440 at 24 fps; its audio is excluded. Repeated-number artefacts are covered by an information panel and heritage-like frontage is labelled as an abstract cultural frame. The raw master is above the package media limit and retains unmasked artefacts, so it is not shipped; task identity, source digest, prompt intent, reference roles, final algorithm and non-provable items are recorded in the transcript, agent and rights ledger.
+
+- 新增 `4-state-motion-poster.webp` 与 `4-state-narration.en.vtt`；中文 VTT 与英文 VTT 按同一 43.344 秒旁白时轴成对，视频不足旁白部分以静音补足至 48 秒。中英文 visual 均提供双字幕、静态 poster、无 JavaScript 四态全文、减少动态与不自动播放；独立 MP3 保持原字节和 43.344 秒。逐文件登记现为 manifest 155、非 manifest 154、rights 155，独立清权仍为 0。
+- Added `4-state-motion-poster.webp` and `4-state-narration.en.vtt`. Paired Chinese/English VTT files follow the same 43.344-second narration timeline, while the video's remaining duration is padded with silence to 48 seconds. Both visual pages expose both caption languages, a static poster, full no-JavaScript four-state text, reduced-motion support and no autoplay. The standalone MP3 keeps its original bytes and 43.344-second duration. File-level registration is now 155 manifest paths, 154 non-manifest paths and 155 rights records; completed independent clearance remains zero.
+
+- 四份 PDF 全 44 页审计发现 A0 第 8 板仍写旧的 149 路径。双语 A0 只在原位把该数字改为 155：两次新进程输出分别字节一致，中文 SHA-256 `dd4c6216c8c5a154d884f5fe45f5ca55307d5477ae602ebc66cf27dee7dc5776`、英文 `8ac87b86c908c9fbf1e20df3320c20efcfa0c972490e92fd66e0b10cec4901de`；栅格差异只覆盖该数字（中文 172 pixels、英文 169 pixels）。A0 仍为 8+8 页，A3 两册字节不变。
+- Full QA of all 44 PDF pages found the stale 149-path label on bilingual A0 board 8. Both A0 files change only that in-place number to 155: two fresh-process outputs are byte-identical, with SHA-256 `dd4c6216c8c5a154d884f5fe45f5ca55307d5477ae602ebc66cf27dee7dc5776` for Chinese and `8ac87b86c908c9fbf1e20df3320c20efcfa0c972490e92fd66e0b10cec4901de` for English; raster deltas are limited to the number (172 pixels zh, 169 pixels en). A0 stays 8+8 pages and both A3 booklets keep their bytes.
+
+- `sources.json`、全部 geometry、`metrics.json`、场景/项目/重点区/用地计数和四份 PDF 页数均不变。本轮不证明真实场地、建筑、人员、运营、公众反馈、无障碍结果、批准、恢复时长、G1、专业接受或复用许可；总体仍为 `not_fully_cleared`。
+- `sources.json`, all geometry, `metrics.json`, the scene/project/key-area/land-use counts and all four PDF page counts are unchanged. This round proves no real site, building, person, operation, public feedback, accessibility result, approval, recovery duration, G1, professional acceptance or reuse licence; the package remains `not_fully_cleared`.
+
 ## v46.0 - 2026-08-19
 
 **4 态多媒体真视频重建 + 双语同步 + 真相自洽 + CRLF 修复 / Rebuild 4-state motion as a real video, sync bilingual media, reconcile truth-disclosure, fix CRLF**

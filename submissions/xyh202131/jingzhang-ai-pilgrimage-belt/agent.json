@@ -41,6 +41,8 @@
     "scripts/self_check_submission.py",
     "scripts/participant_preflight.py",
     "OpenAI built-in image generation (exact serving snapshot not asserted)",
+    "MiniMax H3 V2 reference-to-video API (MiniMax-H3; one successful 15-second 2K concept master; exact generated output disclosed but not shipped)",
+    "imageio-ffmpeg bundled ffmpeg-win-x86_64-v7.1 (48-second H.264/AAC composition, bilingual overlays, poster extraction and media QA)",
     "Pillow 12.2.0 WebP conversion and metadata inspection",
     "Python 3 package-authored SVG and structured-register generation",
     "Python 3.11.7 with ReportLab 5.0.0, fontTools 4.62.1, PyMuPDF 1.28.0 and Pillow 12.2.0 (Round 20 deterministic A3 rebuild and package-index generation)",
@@ -184,13 +186,22 @@
       "reproduction_path": "The checked-in WebPs, media note, media register and rights records are the review objects; identical regeneration and an exact serving snapshot are not asserted."
     },
     {
+      "tool_id": "TOOL-MINIMAX-H3",
+      "name": "MiniMax H3 V2 video generation API",
+      "version": "MiniMax-H3; API V2 observed 2026-08-19",
+      "usage": "Created one 15.08-second 2K reference-to-video concept master from one text instruction plus three existing package-local reference images. The master supplies only fictional human-scale motion for the rebuilt four-state media; it is not site, building, person, approval, operation or recovery evidence.",
+      "license_or_terms_status": "MiniMax service and generated-output terms are not embedded in this package and have not been independently audited.",
+      "redistribution_status": "The 35,574,825-byte H3 source master is not shipped. Only the compressed, labelled local composition and poster are included under not_fully_cleared and blocked-reuse gates.",
+      "reproduction_path": "Task 432350371770812 used MiniMax-H3 through the China-region V2 endpoint with the prompt intent, reference roles, source properties, limitations and post-processing recorded in assets/media/4-state-narration-script.md. Identical regeneration is not asserted."
+    },
+    {
       "tool_id": "TOOL-FFMPEG",
       "name": "ffmpeg (imageio-ffmpeg bundled binary)",
       "version": "ffmpeg-win-x86_64-v7.1 (from imageio-ffmpeg Python package)",
-      "usage": "Round 46 rebuild of assets/media/4-state-motion.mp4: composes 4 segments × 10.000 s at 1920x1080 24 fps h264 yuv420p, draws the Chinese state label, sub-label, state number and the persistent in-frame G0 watermark via drawtext (font msyh.ttc), mixes the narration audio and trims it to 40.000 s. No AI image generation, no rasterised prompt glyphs. Output bytes are deterministic given the same input segments and font.",
+      "usage": "Round 46B rebuild of assets/media/4-state-motion.mp4: composes one MiniMax H3 master with package-local key-area sections and ordinary-life scenes into exactly 48.000 s at 1920x1080, 24 fps, H.264/yuv420p; adds deterministic bilingual state, place and truth-boundary overlays; masks generated numeric artefacts; excludes H3 source audio; mixes the unchanged 43.344-second Chinese TTS narration and pads silence to the video boundary; extracts a dedicated WebP poster.",
       "license_or_terms_status": "ffmpeg is LGPL/GPL dual-licensed; the imageio-ffmpeg binary is distributed under its own terms. License and font-resolution terms are not independently audited here.",
-      "redistribution_status": "ffmpeg binary and Microsoft YaHei font are not redistributed by this submission; only the composed 4-state video is included.",
-      "reproduction_path": "Re-run scripts/h/__tmp_build_4state_video.py (R46) on the same 4 input segments and font; the produced 4-state-motion.mp4 should be byte-identical given the same ffmpeg version and font."
+      "redistribution_status": "ffmpeg binary and Microsoft YaHei font are not redistributed; only the composed video and extracted poster are included.",
+      "reproduction_path": "Use the source roles, exact timeline, codecs, overlay text, audio rule and artefact-handling description in assets/media/4-state-narration-script.md. The H3 source master is not shipped, so identical end-to-end regeneration is not asserted; final Git blobs are the review objects."
     }
   ],
   "output_provenance": [
@@ -264,11 +275,11 @@
     {
       "output_scope": "Generated concept video (4-state motion)",
       "tool_ids": [
-        "TOOL-VIDEOGEN-PLATFORM",
-        "TOOL-PYTHON"
+        "TOOL-MINIMAX-H3",
+        "TOOL-FFMPEG"
       ],
-      "asset_mapping": "visual/assets/rights-clearance-ledger.json#ASSET-150",
-      "recipe_state": "generated_visual_with_text_prompt; final bytes pinned by Git blob SHA-256 at PR time",
+      "asset_mapping": "visual/assets/rights-clearance-ledger.json#ASSET-150..155",
+      "recipe_state": "one H3 reference-to-video master plus deterministic local composition; final bytes pinned by Git blob SHA-256 at PR time",
       "rights_effect": "not_fully_cleared"
     },
     {
@@ -408,5 +419,57 @@
       "lockstep": "Video 40.000 s = audio trimmed 40.000 s = .vtt 00:00:00.000 -> 00:00:40.000 = script §40 秒. Any change to one must lockstep-update the other three."
     },
     "reality_boundary": "40.000 s remains presentation pacing (10 s per state), not real recovery duration. The rebuilt video proves no field state, approval, operation, public feedback, accessibility result, professional acceptance, authorization, G1 or rights clearance. The ffmpeg drawtext watermark is a composition technique, not a copyright assertion. audit_records remains 0; not_fully_cleared and public_or_professional_reuse_blocked remain true. D/H/P/C, G0, provisional status, zero independent clearance, zero real-world outcomes and A3 14+14 / A0 8+8 page counts remain unchanged."
+  },
+  "round_46b_provenance": {
+    "scope": "Correct the Round 46 multimedia truth and spatial-quality defects only: replace the four flat-colour cards with one human-scale H3 concept master plus existing package relations, reconcile every 40/48-second media claim, add bilingual captions and a dedicated poster, and preserve all frozen design, geometry, metric, maturity, page-count and rights boundaries.",
+    "source_generation": {
+      "tool_id": "TOOL-MINIMAX-H3",
+      "task_id": "432350371770812",
+      "model": "MiniMax-H3",
+      "mode": "reference-to-video",
+      "source_output": "15.08 s; 2560x1440; 24 fps; H.264; stereo AAC; 35,574,825 bytes; SHA-256 cdf8b301da75726e79da01606d0fe493aa5d250be81b33c1bf1aeffbe0a2aaa2",
+      "reference_assets": [
+        "assets/media/ordinary-life-scenes.webp",
+        "assets/figures/spatial-atlas.png",
+        "assets/figures/key-area-sections.png"
+      ],
+      "shipped": false,
+      "reason_not_shipped": "The source master exceeds the 20 MiB submission-media limit and contains unmasked generated markers; it remains a local generation source, not a review asset."
+    },
+    "final_composition": {
+      "tool_id": "TOOL-FFMPEG",
+      "output_file": "assets/media/4-state-motion.mp4",
+      "poster_file": "assets/media/4-state-motion-poster.webp",
+      "duration_seconds": 48.000,
+      "timeline": "0-4 Twin-Track entry; 4-15 ordinary across three distinct prototypes; 15-26 optional proof; 26-38 failure; 38-48 recovery",
+      "resolution": "1920x1080",
+      "frame_rate": 24,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "publish_encoding": "The 15,520,801-byte composition master was padded by cloning its final frame for 0.125 seconds so picture and audio both cover exactly 48.000 seconds (1,152 frames at 24 fps), then re-encoded with local ffmpeg/libx264 slow preset (610 kb/s target, 680 kb/s ceiling; AAC mono 48 kb/s) to a 3,180,716-byte review asset so the complete package remains within the repository 40 MiB limit. Full-video SSIM is 0.913354 and sampled key-state overlays remain legible.",
+      "audio": "Existing 43.344-second Chinese TTS narration only; H3 source audio excluded; silence padded to 48.000 seconds",
+      "truth_overlay": "Persistent bilingual G0 / provisional / not-site-evidence / not-approved boundary plus presentation-pacing warning",
+      "artefact_handling": "Generated numeric markers are covered by a deterministic optional-proof panel; the generic heritage-like frontage is explicitly labelled an abstract cultural frame, not a real temple or site."
+    },
+    "accessibility": {
+      "caption_files": [
+        "assets/media/4-state-narration.vtt",
+        "assets/media/4-state-narration.en.vtt"
+      ],
+      "transcript": "assets/media/4-state-narration-script.md",
+      "autoplay": false,
+      "preload": "none",
+      "no_javascript_fallback": "Existing four-state cards, transcript, captions, poster and direct media links remain available."
+    },
+    "publication_correction": {
+      "scope": "The full 44-page PDF QA found one stale current-package label on bilingual A0 board 8: 149 paths after the package had reached 155. Only that in-place number was corrected to 155; A0 remains 8+8 pages and both A3 booklets remain byte-unchanged.",
+      "two_fresh_processes_byte_identical": true,
+      "localized_pixel_delta": "At the comparison raster, only the number glyph changed: zh bbox 417,2201-439,2212 (172 pixels); en bbox 463,2201-484,2212 (169 pixels).",
+      "pdf_sha256": {
+        "a0_boards_zh": "dd4c6216c8c5a154d884f5fe45f5ca55307d5477ae602ebc66cf27dee7dc5776",
+        "a0_boards_en": "8ac87b86c908c9fbf1e20df3320c20efcfa0c972490e92fd66e0b10cec4901de"
+      }
+    },
+    "reality_boundary": "The media are synthetic G0 concept explanation only. They prove no site, building, person, public feedback, accessibility result, staffing, schedule, approval, operation, incident, recovery duration, authorization, restart, G1 or rights clearance. geometry and metrics are unchanged; 12/8/3/36 counts, A3 14+14, A0 8+8, zero real outcomes, zero independent file-level rights audits, not_fully_cleared and professional veto remain unchanged."
   }
 }
