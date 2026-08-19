@@ -3,10 +3,12 @@ import importlib.util
 import json
 import os
 import shlex
+import struct
 import subprocess
 import sys
 import tempfile
 import unittest
+import zlib
 from pathlib import Path
 from unittest import mock
 
@@ -157,6 +159,24 @@ def run_scaffold(output_dir: Path, stage: str = "formal", cwd: Path = REPO_ROOT)
     )
 
 
+def mark_png_participant_revision(path: Path) -> None:
+    raw = path.read_bytes()
+    iend_offset = raw.rfind(b"\x00\x00\x00\x00IEND")
+    if iend_offset < 0:
+        raise ValueError(f"PNG has no IEND chunk: {path}")
+    chunk_type = b"tEXt"
+    payload = b"Revision\x00participant-revision"
+    checksum = zlib.crc32(chunk_type)
+    checksum = zlib.crc32(payload, checksum) & 0xFFFFFFFF
+    chunk = (
+        struct.pack(">I", len(payload))
+        + chunk_type
+        + payload
+        + struct.pack(">I", checksum)
+    )
+    path.write_bytes(raw[:iend_offset] + chunk + raw[iend_offset:])
+
+
 def complete_scaffold(
     output_dir: Path,
     synchronized_paths: tuple[str, ...] = (),
@@ -178,7 +198,7 @@ def complete_scaffold(
         "assets/figures/metrics-evidence.png",
     ]:
         path = output_dir / rel
-        path.write_bytes(path.read_bytes() + b"participant-revision")
+        mark_png_participant_revision(path)
     geometry = output_dir / "geometry" / "land_use.geojson"
     geometry.write_text(geometry.read_text(encoding="utf-8") + "\n", encoding="utf-8")
     drawing = b"%PDF-1.4\n3 0 obj<</Type/Page/Parent 2 0 R>>endobj\n" + b"0" * 4096
@@ -543,7 +563,7 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
                 "assets/figures/metrics-evidence.png",
             ]:
                 path = output_dir / rel
-                path.write_bytes(path.read_bytes() + b"participant-revision")
+                mark_png_participant_revision(path)
             geometry = output_dir / "geometry" / "land_use.geojson"
             geometry.write_text(geometry.read_text(encoding="utf-8") + "\n", encoding="utf-8")
             drawing = b"%PDF-1.4\n3 0 obj<</Type/Page/Parent 2 0 R>>endobj\n" + b"0" * 4096
