@@ -76,7 +76,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 南山科技园 | 深圳 | 产业链完整、政府引导、企业主体 | 全栈产业链空间组织，三核产业节点参考 |
 | 中关村现有生态 | 北京 | 高校密集、创业活跃、政策先行 | 在地经验直接延续，一带三核参考 |
 
-这些案例的共同启示是：成功的AI创新生态需要研究机构、公共空间、产业空间和生活空间的高密度混合，需要连续的步行和骑行网络，需要文化叙事来凝聚身份认同，需要长期的社区运营而非一次性建设。King's Cross 的铁路遗产更新经验对京张遗址公园尤其直接相关——其12年分阶段更新、历史建筑激活与新建混合、公共空间作为社区粘合剂的做法，为京张智脉共生带的分期实施提供了可借鉴的路径 [source:AGENT-TASKBOOK]。
+这些案例的共同启示是：成功的AI创新生态需要研究机构、公共空间、产业空间和生活空间的高密度混合，需要连续的步行和骑行网络，需要文化叙事来凝聚身份认同，需要长期的社区运营而非一次性建设。King's Cross 的铁路遗产更新经验对京张遗址公园尤其直接相关——其12年分阶段更新、历史建筑激活与新建混合、公共空间作为社区粘合剂的做法，为京张智脉共生带的分期实施提供了可借鉴的路径 [source:CASE-KINGS-CROSS] [source:AGENT-TASKBOOK]。案例数据来源于公开资料，具体指标和成效描述为研究性参考，不构成精确引用 [source:CASE-SILICON-VALLEY] [source:CASE-KENDALL-SQUARE] [source:CASE-SHIBUYA-QWA] [source:CASE-DMC-SEOUL] [source:CASE-ONE-NORTH] [source:CASE-NANSHAN-TECH] [source:CASE-ZGC-ECOLOGY]。
 
 ### AI创新生态图谱
 
