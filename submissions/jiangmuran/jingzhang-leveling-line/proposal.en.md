@@ -1540,12 +1540,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-379 entries. By finder:
+380 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 40 | Run against the shipped package, not a draft |
-| The author | 248 | Found while working |
+| The author | 249 | Found while working |
 | This package's own gate | 26 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1569,7 +1569,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Outlived its line | 14 |
 | A source unnameable | 12 |
 | A total excluding | 9 |
-| No file behind it | 8 |
+| No file behind it | 9 |
 | Answered under another name | 7 |
 | Geometry not meaning it | 7 |
 | Answers what it cannot | 7 |
@@ -1732,7 +1732,7 @@ There are 34 sheets, numbered FIG.00 to FIG.33. All are drawn directly from para
 | FIG.20 | Reading after dark, without lighting the benchmark | — |
 | FIG.21 | How far the nearest benchmark actually is: this proposal's own rule, applied to itself | This proposal argues review fifteen minutes away has not been given — and **nobody measured the walk**. The worst place on the line is 1,111 m from the nearest benchmark, **30.9 min for P5, twice the limit this proposal holds others to**, six of nine segments fail. The rule ships as spacing; the positions await the official alignment |
 | FIG.22 | Winter: water, ice, and two of this package's rules in collision | The three community points are read monthly, so in January. KIT-01 wants it stone flush with no trip hazard, FIG.16 gave ±5 mm — **a mark flush into level paving sits in whatever the paving collects: the tolerance that makes it safe in September makes it dangerous in January**. The answer is a local high point, not a ring |
-| FIG.23 | Finding the nearest benchmark: which way, and how far | Markers appear only where FIG.21 fails: 48 at 150 m, on the existing KIT-04, nothing new built. The face answers four things: direction, distance, P5 time, id. **And states what signage cannot do — it does not make 1,111 m near; mitigation, not a fix** |
+| FIG.23 | Finding the nearest benchmark: which way, and how far | Markers appear only where FIG.21 fails: 17 at 150 m, on the existing KIT-04, nothing new built. The face answers four things: direction, distance, P5 time, id. **And states what signage cannot do — it does not make 1,111 m near; mitigation, not a fix** |
 | FIG.24 | The device envelope: what exactly goes in those 18 m² | FIG.12 fixed the device reservoir at ≥ 18 m² and no sheet drew one or said how big. An envelope, not a product: 1,200 × 700 × 1,300 mm, 1,800 mm turn circle, ≤ 120 kg. Each of 7 dimensions carries what bounds it; **4 by nothing but this proposal — the ones to attack first**. The envelope puts 8 devices in the 18 m² |
 | FIG.25 | BM-0, the origin: the place both routes have to return to | BM-0 is on nearly every sheet and was never drawn. A 2,400 mm setup circle, an approach cone per closing route, the closure record outside the door at FIG.16's plate geometry. **A reading is published as it is taken, and evidence is only as public as the door** — hang it in a hall with opening hours and the origin is shut when the reading lands. It shows network closure, not local failure (E50) |
 | FIG.26 | BM-2x, the second order: a scenario has to be stoppable, and that takes ground | The two wings carry the second order — in the naming, cost and resource tables never drawn. The difference is not the stone (KIT-01, as everywhere) but that what runs here is a scenario against real users and must be stoppable. From FIG.24's ≤ 6 km/h the halt distance is **2.59 m**, and no fixed object or waiting area stands within it. **Reaction time and deceleration are chosen here, registered as [assumption:A-DEVICE-002]** |
@@ -1844,7 +1844,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files none of which the reviewer receives, 1223 KB, 1,845 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.76 s**; 9 files none of which the reviewer receives, 1229 KB, 1,848 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
@@ -1888,7 +1888,7 @@ The six cases cited in the text—algorithm registers, risk-tiered legislation, 
 
 ### Index to the drawings, and what to read in each
 
-**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 103 of 105 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json` and `visual/assets/errata.en-archive.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error—**on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing**—FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year—214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
+**Forms these sheets ship in.** The thirty-four sheets compose into `drawings/a3-booklet.en.pdf` and `drawings/a0-boards.en.pdf`: `report/proposal.en.html` is this document as a page, `visual/index.en.html` a visual index, `report/narrative.md` the argument. Behind them in `visual/assets/`: `personas.json`, `naming.json`, `score_correlates.json`, `gate_mutation.json` (damage proving 104 of 106 gates can fail), `claim_audit.json`, `agent_declarations.json`, `errata.en.json` and `visual/assets/errata.en-archive.json`. **One paper could not carry.** `assets/media/leveling-line.mp4` is a 54-second silent diagram: the line departs a known point, carries height forward setup by setup, returns to origin, and what does not cancel is the closure error—**on paper departure and return are one picture; in time you learn only at the end whether it came back**. Station order, routes and 107 setups come from the shipped geometry; the profile is illustrative, not surveyed. `assets/media/closure-advance.mp4` is a second: 40 silent seconds in which a closure within tolerance opens the mid term and one over it **opens nothing**—FIG.15 draws the three extents, not the mechanism. `assets/media/leveling-year.mp3` sonifies that year—214 hours, one pulse per 2.5, peak 83.5 h against 31.5 h for the same work; a bar chart asks you to compare heights, **sound asks nothing: month one arrives and you cannot count it**. `year_explorer.js` is a **second implementation** of `fig_year.py`'s arrangement function; the model ships as `year_model.json` and a gate compares them over 10 arrangements.
 
 <!-- PDFPAGE1:BEGIN -->
 
