@@ -31,7 +31,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "17f3e1143bbcb4f369547464d2352173c9cae0771261d3e7c1816062c07ccfbf"
+      "sha256": "9e410e1434dfb753440b0710aa458ac07c904548c20c0c05cedee9ec489f5ab6"
     },
     {
       "path": "metrics.json",
@@ -61,7 +61,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "eca6b831b139d3e26dea41b933886008171bb65fdbd541d8924041ece56827ae"
+      "sha256": "12a6e61d0b35381b88be0ad91f412eacc11410a2b8840a2fff9ef93a33cd853f"
     },
     {
       "path": "compliance_matrix.json",
@@ -355,7 +355,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "2eb0b48a284dcfa30c0b772c90922d85e6e96c8f4a9de245e552d9d452038db4"
+      "sha256": "59f78b526ff75dae2f1b60e2d9d7f4da7a7d8d29e07dc3725b42e94000ca705c"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
