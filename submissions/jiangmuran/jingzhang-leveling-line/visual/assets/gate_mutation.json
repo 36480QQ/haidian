@@ -1480,6 +1480,19 @@
       "why_en": "The published reason enumerates three branches - a file absent, one over the per-image cap, the packet over the image count. **The fourth is not in it**: the pixel-pair check was added later and the reason was never revisited. What it called a fact about the file system rather than about any file this harness can write was really a fact about this harness writing only text — **a limitation of the tool published as a property of the gate**."
     },
     {
+      "id": "M171",
+      "gate": "closure_value_declared_qa.py",
+      "target": "fig_street.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 FIG.10 脚注里那句声明删掉——**本轮之前它就是这么送出去的**。读数牌照旧印着 f 0.13 与「≤ F 0.20」，只是整张图纸再没有一句话提到这个数。闸门把图上印出的每个闭合差与同一张图纸上的句子做值连接，点名报出，构建停。",
+      "what_en": "Delete the declaring sentence from FIG.10's footnote - **which is exactly how the board shipped until this round**. The plate still prints f 0.13 and its 「≤ F 0.20」; nothing on the sheet mentions the number any more. The gate joins each closure error printed on a sheet to the sentences on that same sheet, names the one that is never spoken about, and the build stops.",
+      "why_zh": "这张图纸的脚注本来就写着「未经实测的数字属伪造确定性」，然后自己印了一个。`scenario_cards.json` 给 S08 的是 `tolerance_F` 0.2，**没有 f**——第一个真实的闭合差要等一个周期跑完才可能存在。隔两张的 FIG.09 把自己两个读数都声明为示意数值，FIG.06 更直接写「这里没有任何一次实测读数」；唯独这一张没有，而它在 A0 展板第一张上，是评审收到的四页 PDF 之一。**判据是值连接不是找词**：印出来的数必须在同一张图纸的句子里再出现一次，那句话说什么由作者决定，说没说得到却可以检查。",
+      "why_en": "This sheet's own footnote already said that a figure not derived from measurement is fabricated certainty, and then it printed one. `scenario_cards.json` gives S08 a tolerance_F of 0.2 and **no f at all** - the first real closure error cannot exist until a cycle has run. Two sheets over, FIG.09 declares both of its plate readings and FIG.06 states outright that nothing on it is a field measurement; only this one did not, and it is on A0 board 1, one of the four PDF pages the reviewer receives. **The test is a value join rather than a phrase search**: a number printed on a sheet must appear again inside a sentence on that same sheet. What the sentence says is the author's business; whether the number is spoken about at all is checkable, and was false exactly once."
+    },
+    {
       "id": "M170",
       "gate": "pdf_text_layer_qa.py",
       "target": "build_drawings.py",
@@ -2052,7 +2065,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 167,
+  "caught": 168,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2069,6 +2082,7 @@
     "cjk_leak_qa.py",
     "claim_audit_qa.py",
     "claim_state_qa.py",
+    "closure_value_declared_qa.py",
     "compute_siting_qa.py",
     "computed_value_qa.py",
     "containment_wording_qa.py",
@@ -2209,6 +2223,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 115 道闸门，其中 114 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 115 gates, 114 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 116 道闸门，其中 115 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 116 gates, 115 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
