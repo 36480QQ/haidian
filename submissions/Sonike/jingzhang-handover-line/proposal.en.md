@@ -272,7 +272,7 @@ Five vertical "AI+" interfaces are added inside the overall design area: softwar
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-Land use follows the published classification: 0701 residential, 0702 community service, 0802 research, 0803 culture, 0804 education, 09 commercial service and 1401 park green. Within the submitted model they cover the provisional overall area and explain functional relationships. They do not claim surveyed land use, ownership or planning permission [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001].
+On the same stretch of street, someone runs a test inside the validation workshop during the day while someone from the block above comes down for groceries in the evening — land use has to hold both, not show one of them out. Land use follows the published classification: 0701 residential, 0702 community service, 0802 research, 0803 culture, 0804 education, 09 commercial service and 1401 park green. Within the submitted model they cover the provisional overall area and explain functional relationships. They do not claim surveyed land use, ownership or planning permission [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001].
 
 Four renewal-cell types appear five times each. Open research courts place building and independent review next to each other. Validation workshops provide closable, meterable tests with removable enclosures. Shared service stacks offer licence, legal, compute, funding and result-referral interfaces. Community collaboration rooms keep staffed service, care, maintenance and resident feedback inside everyday life. The twenty cells are a typology and a spatial supply model, not a title-verified project list.
 
@@ -456,7 +456,7 @@ Three boundaries must always travel with the copy: first, every spatial proposal
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Metrics fall into three groups. The first is recomputed directly from submitted geometry and answers internal area, length, count and ratio questions. The second depends on official regulatory and engineering material and remains pending. The third concerns operations and industry: it defines a measurement method first, while an authorised body later determines baseline and target. The v2 human layer presents only figures that change a design judgement; complete formulae, source files, confidence and recalculation triggers remain in `metrics.json` [depth:metrics_recalculation].
+This section has a single aim: any number here can be recomputed by the reader, and the result should match what the package states. Metrics fall into three groups for that reason. The first is recomputed directly from submitted geometry and answers internal area, length, count and ratio questions. The second depends on official regulatory and engineering material and remains pending. The third concerns operations and industry: it defines a measurement method first, while an authorised body later determines baseline and target. The v2 human layer presents only figures that change a design judgement; complete formulae, source files, confidence and recalculation triggers remain in `metrics.json` [depth:metrics_recalculation].
 
 | Key metric | Current value | Design meaning and boundary |
 | --- | --- | --- |
