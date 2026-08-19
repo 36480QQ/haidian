@@ -1433,27 +1433,14 @@
       "why_en": "What this holds is not one index but a class of error's visibility. Every accessibility argument in this package rests on P5 walking at 0.6 m/s; a pedestrian at 5 m/s is nearly 18 km/h, so **the English sentence printed the package's most load-bearing parameter as a figure that refutes itself**."
     },
     {
-      "id": "M156",
-      "gate": "derived_count_qa.py",
-      "target": "fig_reach.py",
-      "caught": true,
-      "exit_code": 1,
-      "named_the_damage": true,
-      "rendered": true,
-      "what_zh": "让 `failing_stretches` 丢掉短于一个采样步长（15.74 m）的失效段——**这正是采样版本当时的实际行为**，chainage 7,116 处那段 10 m 的失效线落在两个采样点之间，任何读曲线的计数都看不见它。图目随即印出 17 处，闸门按解析口径算出 18，构建停。",
-      "what_en": "Make `failing_stretches` drop any stretch shorter than one sample step (15.74 m) - **which is what the sampled version actually did**: the 10 m failure at chainage 7,116 falls between two samples and is invisible to any count that reads the curve. The index then prints 17, the gate computes 18 analytically, and the build stops.",
-      "why_zh": "这条变异要证的是**解析与采样的差别本身有闸门在守**，而不只是「有个数被算出来了」。M155 证的是间距，这条证的是口径。`worst_exact` 的注释里已经写着同一个教训：头条数字曾从 600 点剖面上读出来，低了 4 m，而「一个你无法重算的数不是证据」是本方案的核心主张。上一轮把 48 从打字改成派生，**却是从同一条采样曲线上派生的**——教训写在文件里，隔了几百行没被应用。**修复一处而放过同源的另一处，是本登记册记了六十一次的形状。**",
-      "why_en": "What this proves is that the difference between analytic and sampled is itself held by a gate, not merely that some number is computed. M155 proves the spacing; this proves the method. The lesson was already written into `worst_exact`: the headline figure was once read off the 600-sample profile and landed 4 m low, in a package whose central claim is that a figure you cannot recompute is not evidence. The round before this one moved the marker count from typed to derived - **and derived it from that same sampled curve**. The lesson sat in the same file a few hundred lines away and was not applied. Repairing one site and leaving its sibling is the shape this register has recorded sixty-one times."
-    },
-    {
       "id": "M155",
       "gate": "derived_count_qa.py",
-      "target": "build_figure_index.py",
+      "target": "fig_wayfind.py",
       "caught": true,
       "exit_code": 1,
       "named_the_damage": true,
       "rendered": true,
-      "what_zh": "把 FIG.23 导视间距从 150 m 改成 300 m，但牌面那句话仍写着「每 150 m 一处」。闸门独立按 150 m 重算 FIG.21 的失效区段，读出图目里印的数，两者不合，构建失败。",
+      "what_zh": "把 FIG.23 导视间距从 150 m 改成 300 m，但牌面那句话仍写着「每 150 m 一处」。闸门按 150 m 独立重算 FIG.21 的失效区段，读出图目里印的数，两者不合，构建失败。",
       "what_en": "Widen the FIG.23 marker spacing from 150 m to 300 m while the sentence still says one every 150 m. The gate recomputes FIG.21's failing stretches at 150 m on its own, reads the number the index actually prints, and the build fails.",
       "why_zh": "这条变异要证的不是算术，是**这个数确实是算出来的**。此前它是打字写死的 48——既无出处，也不等于任何指标：主脊全长除以 150 是 63，成人限差下是 1，逐段布置是 17。它躲过了四百轮登记，**因为它长在生成块里**，而 `computed_value_qa` 按设计跳过生成块只看手写散文。凡是「看起来像输出的东西」，就没有闸门在读——这条变异是那句话的反证。",
       "why_en": "What this proves is not the arithmetic but that **the number is derived at all**. Until this round it was a typed 48, with no source and equal to no metric in the package: the whole spine over 150 is 63, the adult limit gives 1, per-stretch placement gives 17. It survived four hundred rounds of register **because it sat inside a generated block**, and computed_value_qa skips generated blocks by design to watch hand-written prose. Anything that looks like output was being read by no gate at all; this mutation is the counter-example to that."
@@ -1940,7 +1927,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 158,
+  "caught": 157,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
