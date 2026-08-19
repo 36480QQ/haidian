@@ -486,7 +486,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Does the Markdown actually render as the thing it claims to be?",
-      "message": "markdown_structure_qa.py — markdown structure: 120 tables across both editions, every separator and row matching its header, every ordered list strictly increasing"
+      "message": "markdown_structure_qa.py — markdown structure: 121 tables across both editions, every separator and row matching its header, every ordered list strictly increasing"
     },
     {
       "check_id": "PKG_MATRIX_REFS_QA",
@@ -1286,7 +1286,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 30918736,
+      "total_bytes": 30919444,
       "maintainer_bypass": false
     },
     "stderr": ""
