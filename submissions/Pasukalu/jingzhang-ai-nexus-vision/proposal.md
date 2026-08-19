@@ -39,7 +39,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 方案按照公告确定的三个层次组织工作:统筹研究范围关注 43.6 平方公里的AI产业生态、战略定位、创新链和未来城市形态;总体设计范围关注 11.4 平方公里京张遗址公园周边 1-2 公里城市地区和产业区,要求形成城市更新总体框架、产业空间布局、交通市政支撑和城市风貌控制;重点区域范围关注 368.4 公顷三处详细设计地区,要求明确功能业态、建筑规模、拆改留分类、公共空间连通和交通组织。三层范围在 `compliance_matrix.json` 中逐条映射,保证公告 1.3、1.4、1.5 与 agent.1-agent.6 的必选任务都有章节、图层、指标、图纸和 HTML 证据。
 
-三层工作框架的深度项由 [depth:three_level_scope_framework] 和 [depth:overall_spatial_structure] 约束,空间证据以 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#PROV-KEY-001] 为准,任务依据以 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 为准,范围索引以 [source:PROCESSED-FACT-PACK] 中 `project_scope_summary.csv` 的三层范围表为导航。
+三层工作框架的深度项由 [depth:three_level_scope_framework] 和 [depth:overall_spatial_structure] 约束,空间证据以 site_boundary 与 key_areas 图层为准,任务依据以 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 为准,范围索引以 [source:PROCESSED-FACT-PACK] 中 `project_scope_summary.csv` 的三层范围表为导航。
 
 ![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
 
@@ -67,16 +67,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 | 案例 | 城市 | 核心经验 | 空间转化启示 |
 |------|------|----------|-------------|
-| King's Cross | 伦敦 | 铁路遗产更新、Google Campus、中央圣马丁、12年持续运营 | 铁路遗产与科技共生,京张智脉主轴直接参考 [source:CASE-KINGS-CROSS] |
-| Silicon Valley | 圣何塞 | 校企旋转门、风险资本密集、开源文化 | 校园-社区-产业无界融合,众智园参考 [source:CASE-SILICON-VALLEY] |
-| Kendall Square | 波士顿 | MIT创新区、生物医药密集、步行尺度 | 研究机构与公共空间高密度交织,AI原点社区参考 [source:CASE-KENDALL-SQUARE] |
-| Shibuya Q-WA | 东京 | AI城市实验室、数据驱动公共空间 | 公共空间作为AI测试场,多点场景节点参考 [source:CASE-SHIBUYA-QWA] |
-| Digital Media City | 首尔 | 数字媒体产业集群、公共文化设施联动 | 产业与文化设施并重,大钟寺参考 [source:CASE-DMC-SEOUL] |
-| One-North | 新加坡 | 生物医药+科技混合、One-North公园绿地一体化 | 产业与绿地公园一体化,蓝绿慢行复合环参考 [source:CASE-ONE-NORTH] |
-| 南山科技园 | 深圳 | 产业链完整、政府引导、企业主体 | 全栈产业链空间组织,三核产业节点参考 [source:CASE-NANSHAN-TECH] |
-| 中关村现有生态 | 北京 | 高校密集、创业活跃、政策先行 | 在地经验直接延续,一带三核参考 [source:CASE-ZGC-ECOLOGY] |
+| King's Cross | 伦敦 | 铁路遗产更新、Google Campus、中央圣马丁、12年持续运营 | 铁路遗产与科技共生,京张智脉主轴直接参考 |
+| Silicon Valley | 圣何塞 | 校企旋转门、风险资本密集、开源文化 | 校园-社区-产业无界融合,众智园参考 |
+| Kendall Square | 波士顿 | MIT创新区、生物医药密集、步行尺度 | 研究机构与公共空间高密度交织,AI原点社区参考 |
+| Shibuya Q-WA | 东京 | AI城市实验室、数据驱动公共空间 | 公共空间作为AI测试场,多点场景节点参考 |
+| Digital Media City | 首尔 | 数字媒体产业集群、公共文化设施联动 | 产业与文化设施并重,大钟寺参考 |
+| One-North | 新加坡 | 生物医药+科技混合、One-North公园绿地一体化 | 产业与绿地公园一体化,蓝绿慢行复合环参考 |
+| 南山科技园 | 深圳 | 产业链完整、政府引导、企业主体 | 全栈产业链空间组织,三核产业节点参考 |
+| 中关村现有生态 | 北京 | 高校密集、创业活跃、政策先行 | 在地经验直接延续,一带三核参考 |
 
-这些案例的共同启示是:成功的AI创新生态需要研究机构、公共空间、产业空间和生活空间的高密度混合,需要连续的步行和骑行网络,需要文化叙事来凝聚身份认同,需要长期的社区运营而非一次性建设。King's Cross 的铁路遗产更新经验对京张遗址公园尤其直接相关--其12年分阶段更新、历史建筑激活与新建混合、公共空间作为社区粘合剂的做法,为京张智脉共生带的分期实施提供了可借鉴的路径 [source:CASE-KINGS-CROSS] [source:AGENT-TASKBOOK]。上述案例数据均来源于公开资料,具体指标和成效描述为研究性参考,不构成精确引用。
+> 上述8个案例的逐项来源、URL和引用限制详见 `sources.json` 中 CASE-KINGS-CROSS 至 CASE-ZGC-ECOLOGY 条目。
+
+这些案例的共同启示是:成功的AI创新生态需要研究机构、公共空间、产业空间和生活空间的高密度混合,需要连续的步行和骑行网络,需要文化叙事来凝聚身份认同,需要长期的社区运营而非一次性建设。King's Cross 的铁路遗产更新经验对京张遗址公园尤其直接相关——其12年分阶段更新、历史建筑激活与新建混合、公共空间作为社区粘合剂的做法,为京张智脉共生带的分期实施提供了可借鉴的路径。上述案例数据均来源于公开资料,具体指标和成效描述为研究性参考,不构成精确引用;逐项来源链见 `sources.json`。
 
 ### AI创新生态图谱
 
@@ -100,7 +102,7 @@ AI创新生态图谱将上述经验转化为四个维度:基础研究层(高校�
 
 总体设计范围要求达到控制性详细规划的城市设计深度。方案必须提出城市更新总体空间结构、低效空间识别、更新项目清单、实施政策建议、产业功能比例、空间组织模式、建筑总规模和综合承载能力评估。`geometry/land_use.geojson` 应完整覆盖设计边界且无重叠,`geometry/buildings.geojson` 应表达更新建筑基底或保留建筑基底,`geometry/roads.geojson` 应表达微循环、慢行和轨道接驳关系,`metrics.json` 应复算核心面积、比例和图层数量。
 
-本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象:[data:geometry/land_use.geojson#LU-001] 表达用地结构,[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底,[data:geometry/roads.geojson#ROAD-001] 表达交通组织,[metric:building_footprint_area_sqm] 用于复核建筑基底面积,[depth:land_use_layout] 与 [depth:development_intensity_controls] 约束成果深度。
+本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象:用地结构由 `land_use.geojson` 表达,建筑基底由 `buildings.geojson` 表达,交通组织由 `roads.geojson` 表达 [metric:building_footprint_area_sqm],[depth:land_use_layout] 与 [depth:development_intensity_controls] 约束成果深度。
 
 总体设计还支撑交通、轨道、市政和配套设施。本方案围绕轨道站点一体化、道路微循环、非机动车停放、停车供给、创新服务平台、人才生活服务、新型基础设施、分布式能源和端侧算力提出空间布局和实施路径。涉及建筑高度、开发强度、道路红线、退线和设施标准的内容，若尚无官方控制条件，已写为"待正式控规条件确认"，不以 agent 推测值冒充审定指标。
 
