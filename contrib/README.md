@@ -10,23 +10,24 @@
 - **不评价方案优劣**：不含任何排名、评分、推荐或批评。
 - **不点名**：summary 只给计数与匿名聚合，不含作者、路径、slug。
 - **自由文本不进 summary**：metric key 只公开受控官方词表（`CONTROLLED_METRIC_KEYS`，见脚本注释）；status/unit/confidence 的非枚举值只报告总数与不同值数，**不回显原文**（防邮箱/路径等未验证字符串泄露）。
-- **离群值只给计数**：如 `unit_missing=31`、`unit_not_in_enum=250`，不指出具体包。`unit_missing`（字段缺失或 JSON null）与 `unit_not_in_enum`（声明了非枚举值）分开计数，口径不混。
+- **离群值只给计数**：如 `unit_missing=49`、`unit_not_in_enum=507`（20260812 快照），不指出具体包。`unit_missing`（字段缺失或 JSON null）与 `unit_not_in_enum`（声明了非枚举值）分开计数，口径不混。
 - **全部标注分母**：每条统计附 `count` 与 `pct`（分母为全场条目总数）。
 - **长表默认不生成**：含作者标识的长表（csv.gz）需显式 `--write-local-identifiers` 且输出目录必须在仓库外，防止误暂存提交。
 
 ## 复现命令
 
 ```bash
-# 1. 取数：blobless sparse，仅拉文本文件（metrics.json / manifest.json / proposal.md，约 25-40 MB）
+# 1. 取数：blobless + --sparse，仅拉文本文件（metrics.json / manifest.json / proposal.md / agent.json）
+#    （--sparse 是 clone 阶段进入 sparse 模式的官方方式；--no-checkout 组合在部分平台
+#      上 sparse-checkout set 后不重建工作树，会让工具误判工作树为脏，勿用）
 D=$HOME/mx_$RANDOM
-git clone --depth 1 --filter=blob:none --no-checkout \
+git clone --depth 1 --filter=blob:none --sparse \
     https://github.com/open-city-ai/haidian.git $D
 cd $D
 git rev-parse HEAD          # 记录快照 SHA，引用时必须保留
 git sparse-checkout set --no-cone \
     '/submissions/*/*/metrics.json' '/submissions/*/*/manifest.json' \
     '/submissions/*/*/proposal.md' '/submissions/*/*/agent.json'
-git checkout
 
 # 2. 扫描
 # 前置硬性检查（fail-closed，任何 flag 都不可绕过）：
@@ -81,7 +82,7 @@ python3 contrib/tools-metrics-scan.py --repo $D --out-dir $D/../scan-out \
 - `entry_validity`：有效条目占比 + 问题分类（不点名）。
 - `distributions`：status / unit / confidence 均按「声明枚举 + 其他聚合」双段呈现（schema 枚举见 `brief/site-package/schemas/metrics.schema.json`）。**其他段只含 total_count 与 n_distinct_values，不回显非枚举值原文**（隐私边界）。
 - `packages`：每包指标数 min/median/max/mean。
-- `coverage`：指标 key、规范化 key 只来自**受控官方词表**（`CONTROLLED_METRIC_KEYS`，全部列出，无截断），其余 key 全部聚合进 `other_metric_keys`（只报不同值数与条目数）——两者条目之和与 `n_metric_entries` 严格闭合；另有概念桶分布与全部受控 key 的 **status 交叉表**（如 `floor_area_ratio` 全场 630 条中多呈 `unknown`——组织方控规条件未公布的直接结果）。
+- `coverage`：指标 key、规范化 key 只来自**受控官方词表**（`CONTROLLED_METRIC_KEYS`，全部列出，无截断），其余 key 全部聚合进 `other_metric_keys`（只报不同值数与条目数）——两者条目之和与 `n_metric_entries` 严格闭合；另有概念桶分布与全部受控 key 的 **status 交叉表**（如 `floor_area_ratio` 全场 861 条中 840 条 `unknown`——组织方控规条件未公布的直接结果）。
 - `outlier_counts_only`：离群值**计数**（ratio/FAR/height sanity 阈值来自 `brief/site-package/ranges/planning_limits.json` 的 `schema_sanity_bounds_not_planning_approval`；面积类指标对照同一文件 `known_official_area_values`，偏差超过 50% 计一次，均不点名）。**口径说明**：0-1 ratio 检查只针对占比/覆盖率语义（green_ratio、coverage 等）；FAR（floor_area_ratio，合法区间 0-12）、绕路率、街墙高宽比等可合法大于 1 的比率不适用 0-1 检查；百分比单位（pct/percent）条目不适用 0-1 检查；FAR 检查排除面积单位条目（如 `phasing_far_area_sqm` 是分期面积而非容积率）；unit 检查分两档——`unit_missing`（unit 字段缺失或 JSON null）与 `unit_not_in_enum`（声明了 schema 枚举之外的字符串），两者口径互斥、不混计。
 
 ## 隐私与合规
