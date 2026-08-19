@@ -6,11 +6,11 @@
   "gates": [
     {
       "gate_id": "G01_MATRIX_REFERENCE_INTEGRITY",
-      "statement_zh": "三个矩阵里的每一条引用都必须能在包内解析到实体。",
-      "statement_en": "Every reference in the three matrices must resolve to a real entity inside the package.",
-      "checks": "standard_matrix / compliance_matrix / design_depth_matrix 的 proposal_sections、drawing_refs、geometry_refs、metric_refs、source_ids、assumption_ids",
-      "decision_rule_zh": "章节名须逐字等于 proposal.md 的某个 ## / ### 标题；drawing_refs 的 `文件#pN` 中 N 不得超过该 PDF 页数；其余四类须分别命中 geometry/*.geojson 文件名、metrics.json 的键、sources.json 的 id、assumptions.json 的 id。",
-      "current_result": "2026-08-19 全量复算：**1,278 条可校验引用，断链 0**。分类计数为 gate_ids 152、source_ids 128、metric_refs 109、self_check_ids 98、assumption_ids 92、scenario_ids 88、metrics 87、standard_ids 86、report_sections 83、report_sections_en 83、drawings 78、geometry_feature_ids 74、geojson_layers 56、visual_sections 32、visual_sections_en 32。（此前记录的 1025 条是更早版本的计数，包体增长后已过期。）",
+      "statement_zh": "三个矩阵**以及正文行内证据标记**里的每一条引用，都必须能在包内解析到实体。",
+      "statement_en": "Every reference in the three matrices **and in the inline evidence markers of the main text** must resolve to a real entity inside the package.",
+      "checks": "standard_matrix / compliance_matrix / design_depth_matrix 的 proposal_sections、drawing_refs、geometry_refs、metric_refs、source_ids、assumption_ids；**以及 proposal.md 与 proposal.en.md 的行内标记 [metric:] [source:] [depth:] [assumption:] [standard:] [data:…#id]**",
+      "decision_rule_zh": "章节名须逐字等于 proposal.md 的某个 ## / ### 标题；drawing_refs 的 `文件#pN` 中 N 不得超过该 PDF 页数；其余各类须分别命中 geometry/*.geojson 的要素 id **或该文件的顶层 id**、metrics.json 的键、sources.json 的 id、assumptions.json 的 id、standard_matrix.json 的 id、design_depth_matrix.json 的 id。",
+      "current_result": "2026-08-19 复算（**本轮把判定范围从「三个矩阵」扩到「矩阵＋正文行内标记」**）：正文行内标记 **398 条**（source 122、metric 82、depth 72、assumption 50、standard 44、data 28），**扩范围后断链 0**；图纸页引用 161 条、越界 0。矩阵侧沿用上一轮全量复算的 1,278 条、断链 0。",
       "caught_real_defects": [
         {
           "when": "2026-08-16",
@@ -32,7 +32,13 @@
           "fix": "改为实际标题后 1025/1025、断链 0。同轮发现自陈数字又一次落后：矩阵新增交叉引用后引用总数已由 907 增到 1025，本文件仍写着 907/907。",
           "note": "这是本闸门第三次抓到「为新增内容写引用时凭印象编造」，与 2026-08-16 那次的 9 处同一类错误；也是第二次抓到自陈总数过期。自陈型数字必须每轮重测，凭印象写引用必被拦。"
         },
-        "2026-08-19，本闸门抓到本包历史上最大的一次断链，而且**它自己那句「断链 0」在被发现之前一直是错的**：上一版「提分版」把正文由 190K 压到 43K 时删掉了大量章节，却没有同步 compliance_matrix.json——**74 处 report_sections 里有 42 处指向已不存在的章节（中英各 42）**。四道确定性闸门都查不到这个（它们不校验矩阵与正文的章节对应），但评审同时读得到矩阵和正文。修法是逐条重指到现存章节、英文侧按中文标题按位重建；此后每次改动章节标题都同步重指并复核，本轮多次改名（三个运营小节、许可小节、场景映射合表）均未再产生断链。"
+        "2026-08-19，本闸门抓到本包历史上最大的一次断链，而且**它自己那句「断链 0」在被发现之前一直是错的**：上一版「提分版」把正文由 190K 压到 43K 时删掉了大量章节，却没有同步 compliance_matrix.json——**74 处 report_sections 里有 42 处指向已不存在的章节（中英各 42）**。四道确定性闸门都查不到这个（它们不校验矩阵与正文的章节对应），但评审同时读得到矩阵和正文。修法是逐条重指到现存章节、英文侧按中文标题按位重建；此后每次改动章节标题都同步重指并复核，本轮多次改名（三个运营小节、许可小节、场景映射合表）均未再产生断链。",
+        {
+          "when": "2026-08-19",
+          "what": "把判定范围从「三个矩阵」扩到「矩阵＋正文行内标记」之后，**当场抓到一处此前无人覆盖的断链**：正文写 `[data:geometry/constraints.geojson#CONSTRAINTS]`，而该文件的顶层 id 是 `CONSTRAINTS-DATA-GAP`，且文件本身是**故意留空**的（0 要素，用于声明「不以推断线替代官方控制」）。中英两版各一处。",
+          "fix": "改为 `#CONSTRAINTS-DATA-GAP`。指对之后，那句「官方约束几何尚不可用、本文件故意为空」的声明才真正可被读者顺着引用打开。",
+          "note": "**这一处说明的是覆盖漏洞而不是数字过时**：G01 此前的『断链 0』在其自陈范围（三个矩阵）内是真的，但正文行内标记从来不在任何闸门的覆盖内。闸门的价值取决于它的判定范围写得有多宽。"
+        }
       ]
     },
     {

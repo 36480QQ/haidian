@@ -186,6 +186,26 @@
         text-decoration-thickness: 2px;
         text-underline-offset: 3px;
       }
+      .proof-candidate-strip {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin: 22px 0;
+      }
+      .proof-candidate-strip article {
+        background: #fff;
+        border: 1px solid #d8dbd4;
+        border-top: 6px solid var(--green);
+        border-radius: 16px;
+        padding: 18px;
+      }
+      .proof-candidate-strip article:nth-child(2) { border-top-color: var(--gold); }
+      .proof-candidate-strip article:nth-child(3) { border-top-color: var(--red); }
+      .proof-candidate-strip strong { display: block; font-size: 20px; }
+      .proof-candidate-strip p { margin: 7px 0 0; }
+      @media (max-width: 760px) {
+        .proof-candidate-strip { grid-template-columns: 1fr; }
+      }
       @media print {
         body {
           background: #fff;
@@ -217,28 +237,33 @@
       <p>
         连续日常轨承载普通生活，间歇验证轨只在自愿、公告、有责任人的时段旁侧出现：VERIFY / CO-CREATE / PUBLISH，失败即停止，恢复先还给日常。
       </p>
-      <p><strong>当前现实：</strong> 12 个既有场景均为 G0；现场测试、批准、GO 决定、真实故障与恢复验收均为 0；临时边界和 <code>not_fully_cleared</code> 权利状态不变。</p>
+      <p><strong>当前现实：</strong> T-02 合成治理回放已完成 1 次并通过 10/10、4/4、13/13；现实服务、批准、GO、故障与恢复验收仍为 0。下一步只把既有 <code>JZ-05 × SCENE-011 × T-02</code> 作为编辑审查候选；全案仍为 G0，临时边界和 <code>not_fully_cleared</code> 不变。</p>
     </header>
     <main>
       <section id="jury-entry" class="jury-entry" aria-labelledby="jury-entry-title">
-        <p class="tag">30 秒入口 · G0 · 三框分读 · 不按比例</p>
+        <p class="tag">30 秒入口 · 一个概念 · 一项完成证明 · 一个下一步候选</p>
         <h2 id="jury-entry-title">双轨京张：普通生活连续，验证只在旁侧出现</h2>
+        <p id="cold-read-proof-boundary" class="entry-lead"><strong>一个概念：</strong>连续日常轨让普通任务始终可完成，间歇验证轨只作自愿、限域、可停止的旁侧叠层；众智园 VERIFY、原点社区 CO-CREATE、大钟寺 PUBLISH。<strong>一个边界：</strong>全案仍为 G0、provisional geometry，图面清楚不等于场地准确。</p>
+        <div class="proof-candidate-strip" aria-label="已完成证明、下一步候选与现实阻断">
+          <article><strong>已完成 · G0 合成证明</strong><p>T-02：10/10 精确匹配，4/4 停止事件映射，13/13 负控 fail-closed。</p></article>
+          <article><strong>下一步 · 既有对象候选</strong><p><code>JZ-05 × SCENE-011 × T-02</code>：人工基线 → 旁侧影子验证 → 停止与接管 → 独立复测。</p></article>
+          <article><strong>仍阻断 · 现实进入</strong><p>责任、准确场地、阈值、来源、人工、批准、现实服务和独立复测均为 0 或 unknown；保持 G0 / NO-GO。</p></article>
+        </div>
         <figure class="hero-visual">
           <img src="../assets/media/twin-track-cover.webp" alt="双轨京张概念封面：连续日常轨贯穿三处公共空间，间歇验证轨在旁侧出现，并标明验证、共创、发布和故障停止。" loading="eager" />
           <figcaption>概念展示资产 · G0 · 临时几何 · 不按比例 · 不是现状、批准或建成效果</figcaption>
         </figure>
-        <p id="cold-read-proof-boundary" class="entry-lead"><strong>一个概念：</strong>连续日常轨让普通任务始终可完成，间歇验证轨只作自愿、限域、可停止的旁侧叠层；众智园 VERIFY、原点社区 CO-CREATE、大钟寺 PUBLISH。<strong>一个边界：</strong>全案仍为 G0、provisional geometry，图面清楚不等于场地准确。</p>
         <div class="reading-lanes" aria-label="三档阅读路径">
           <article class="reading-lane"><strong>30 秒</strong><p>先认一个概念与一个边界：双轨、三处原型、失败侧线与临时几何。</p><a class="reading-lane-action" href="#cold-read-proof-boundary">在此核对概念与边界 →</a></article>
-          <article class="reading-lane"><strong>3 分钟</strong><p>从普通生活开始，依次读四态旅程、三处空间、公共信号与专业交接。</p><a class="reading-lane-action" href="#ordinary-life">从普通生活开始 →</a></article>
+          <article class="reading-lane"><strong>3 分钟</strong><p>先核对完成证明与下一候选，再从普通生活读四态、三处空间、公共信号与专业交接。</p><a class="reading-lane-action" href="#ordinary-life">从普通生活开始 →</a></article>
           <article class="reading-lane"><strong>15 分钟</strong><p>从专业交接进入，逐对象追到 D01—D08、H01—H07、权利、来源与复算触发。</p><a class="reading-lane-action" href="#review-handoff">从证据与交接开始 →</a></article>
         </div>
         <details class="entry-evidence">
-          <summary>展开三框场地依据与临时边界说明</summary>
-          <p class="figure-scroll-hint">移动端可在图内横向浏览；下方三框卡片提供等价文字读法。</p>
-        <figure class="core-figure-scroll" tabindex="0" aria-label="图 01：三框场地读取，可横向浏览">
-          <img src="../assets/figures/site-overview.png" alt="双轨京张三层场地读取：公开背景定位、临时设计容器与可深化设计关系分框表达，附公共时刻表和永久公共权利。" loading="eager" />
-          <figcaption>图 01 · 三层不得叠合为现实场地图。背景定位不是测绘，临时容器不是官方红线，设计关系不是坐标或批准顺序。</figcaption>
+          <summary>展开概念空间接力与临时边界说明</summary>
+          <p class="figure-scroll-hint">移动端可在图内横向浏览；下方三类真实性卡片提供等价边界读法。</p>
+        <figure class="core-figure-scroll" tabindex="0" aria-label="图 01：双轨京张概念空间接力，可横向浏览">
+          <img src="../assets/figures/site-overview.png" alt="连续日常轨贯穿众智园、原点社区和大钟寺三座不可互换换轨场；间歇验证轨、两条供给翼与失败侧线位于临时设计容器内。" loading="eager" />
+          <figcaption>图 01 · 南北只表示阅读接力。虚线容器不是官方红线；节点、轨线与两翼不是坐标、距离、站点锚点、批准顺序或建设线位。</figcaption>
         </figure>
         <div class="truth-frames" aria-label="三层真实性合同">
           <article class="truth-frame"><strong>A · 背景定位</strong><p>公开报道只用于提出现场问题；不能证明竣工、可达、容量、权属或准确线位。</p></article>

@@ -155,9 +155,9 @@
     },
     "generator_enforced": true,
     "heading_parity": {
-      "en": 85,
+      "en": 86,
       "equal": true,
-      "zh": 85
+      "zh": 86
     },
     "ledger_digest_coherence": {
       "checked": 146,
@@ -242,6 +242,34 @@
       },
       "scope_zh": "这是编辑、浏览器回退和出版文件审查；不认证真实评审者理解、无障碍结果、现场、批准、专业接责、G1、权利清除或现实恢复。",
       "scope_en": "This is an editorial, browser-fallback and publication-file audit. It certifies no real reviewer comprehension, accessibility outcome, field condition, approval, accepted professional duty, G1, rights clearance or real recovery."
+    },
+    "score_visible_flagship_r48": {
+      "audit_type": "editorial entry, title-hidden figure differentiation, offline visual and publication-file check",
+      "red_before": {
+        "first_fold_completed_proof_explicit": false,
+        "first_fold_next_candidate_explicit": false,
+        "site_overview_read_as_three_parallel_cards": true,
+        "land_use_read_as_6_by_6_matrix": true,
+        "mobility_read_as_complete_ordinary_non_ai_journey": false,
+        "evidence_figure_connected_completed_proof_to_next_candidate": false,
+        "a3_sparse_fixed_sidebars": true,
+        "a0_repeated_large_verdict_bands": true
+      },
+      "post_repair": {
+        "completed_proof_visible_before_cover": true,
+        "next_candidate_visible_before_cover": true,
+        "candidate_is_editorial_order_only": true,
+        "bilingual_figure_groups_rebuilt": 4,
+        "key_areas_keep_after_title_hidden_differentiation": true,
+        "primary_navigation_items": 6,
+        "pdf_pages_route_labelled_and_visually_checked": 44,
+        "offline_external_requests": 0,
+        "no_javascript_bilingual_visuals_readable": true,
+        "reduced_motion_active_animations": 0,
+        "print_horizontal_overflow_px": 0
+      },
+      "scope_zh": "这是编辑、图件区分、浏览器回退和出版文件审查；不认证真实评审者理解、现场、无障碍结果、批准、专业接责、G1、权利清除或现实恢复。",
+      "scope_en": "This is an editorial, figure-differentiation, browser-fallback and publication-file audit. It certifies no real reviewer comprehension, field condition, accessibility outcome, approval, accepted professional duty, G1, rights clearance or real recovery."
     }
   },
   "evidence_registry": [
@@ -270,7 +298,7 @@
         "visual/index.html"
       ],
       "kind": "narrative",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -288,7 +316,7 @@
       "group_id": "root-changelog",
       "human_surface_refs": [],
       "kind": "changelog",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -330,7 +358,7 @@
         "visual/index.html"
       ],
       "kind": "agent_card",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -486,7 +514,7 @@
       "group_id": "report-html",
       "human_surface_refs": [],
       "kind": "rendered_proposal_html",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -509,7 +537,7 @@
         "report/proposal.html"
       ],
       "kind": "copyright_statement",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -527,7 +555,7 @@
       "group_id": "report-narrative",
       "human_surface_refs": [],
       "kind": "report_records",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -552,7 +580,7 @@
       "group_id": "visual-pages",
       "human_surface_refs": [],
       "kind": "visualization",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -661,7 +689,7 @@
       "group_id": "drawings-a3",
       "human_surface_refs": [],
       "kind": "drawing",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -686,7 +714,7 @@
       "group_id": "drawings-a0",
       "human_surface_refs": [],
       "kind": "drawing",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1118,7 +1146,7 @@
         "visual/index.html"
       ],
       "kind": "proposal_figure",
-      "latest_rebuild_round": 17,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1164,7 +1192,7 @@
         "visual/index.html"
       ],
       "kind": "proposal_figure",
-      "latest_rebuild_round": 17,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1210,7 +1238,7 @@
         "visual/index.html"
       ],
       "kind": "proposal_figure",
-      "latest_rebuild_round": 17,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -1440,7 +1468,7 @@
         "visual/index.html"
       ],
       "kind": "proposal_figure",
-      "latest_rebuild_round": 17,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2172,7 +2200,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {
         "en": "Self-registered: the index is one of 155 registered paths and locates the other 154 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
         "zh": "本索引自登记：索引自身是 155 个登记路径之一，负责定位其余 154 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
@@ -2268,7 +2296,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2381,7 +2409,7 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 47,
+      "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
