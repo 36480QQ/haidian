@@ -1,7 +1,7 @@
 # 4 态旁白文字稿
 
 > 配套音频：`4-state-narration.mp3`
-> 配套字幕：`4-state-narration.srt`
+> 配套字幕：`4-state-narration.vtt`
 > 配套视频：`4-state-motion.mp4`
 
 ## 全文（约 100 字 / 40 秒）
@@ -18,14 +18,15 @@
 
 ## 生成方法
 
-- 模型：**包内未声明**。平台 TTS API（具体模型版本由 AIGC 标签推断，ContentProducer = `MiniMax AI`，ProduceID = `6a84398d000000001d5787963be57bc8`；声音 male-qn-qingse 与 speed 0.9 是调用方参数）
+- 视频（`4-state-motion.mp4`，约 0.79 MB，1920×1080，h264，24 fps，40.000 s）：本地 ffmpeg + drawtext 合成，4 段纯色背景 + 中文状态标签 + 状态编号 + 持续 G0 概念水印，**所有文字为字体渲染（msyh.ttc），无 AI 生成、无光栅化乱码**；音频经 ffmpeg 混流并裁到 40 s。
+- 音频（`4-state-narration.mp3`，约 0.66 MB，43.344 s → 裁到 40 s）：平台 TTS API（具体模型版本由 AIGC 标签推断，ContentProducer = `MiniMax AI`，ProduceID = `6a84398d000000001d5787963be57bc8`；声音 male-qn-qingse 与 speed 0.9 是调用方参数）
 - 速度：0.9×
 - 纯文字转语音，未叠加音乐或环境音
-- 文字稿为本文件，与 srt 时码对应
+- 文字稿为本文件，与 .vtt 时码对应
 
 ## 权利 / 限制
 
-- 权利状态：`provisional`（生成内容、来源清晰、模型已知）
+- 权利状态：`provisional`（生成内容、来源清晰、模型版本包内未声明）
 - 不可证明事项：
   - 不证明任何现场状态、批准、运行或公众反馈
   - 不构成专业意见、法律意见或政府承诺
@@ -36,5 +37,6 @@
 
 - 视频中所有图像均为**概念示意**（G0 概念）
 - 不显示真实地块、真实建筑、真实人群、真实设备、真实数据
-- 持续水印：`G0 概念 · 临时几何 · 非现场证据 · 非批准方案`
-- 与音频、字幕三件套的内容必须完全等价；任何一项变化必须同时改其它两项
+- 帧内持续水印：`G0 概念 · 临时几何 · 非现场证据 · 非批准方案`（ffmpeg drawtext 直接渲染在每一帧左下角，黑底白字半透明）
+- 视频时长与 .vtt 字幕、与音频裁后长度严格一致：均为 40.000 s；任一变更必须同改其它两份
+- 视频和音频均**不自动播放**（`<video controls preload="none" playsinline>` + `<audio controls preload="none">`）

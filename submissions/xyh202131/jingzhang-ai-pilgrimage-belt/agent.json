@@ -182,6 +182,15 @@
       "license_or_terms_status": "Service and generated-output terms are not embedded in this package and have not been independently audited.",
       "redistribution_status": "Only the selected generated WebP is included under the package-wide not_fully_cleared and blocked-reuse gate; no model weights or service assets are redistributed.",
       "reproduction_path": "The checked-in WebPs, media note, media register and rights records are the review objects; identical regeneration and an exact serving snapshot are not asserted."
+    },
+    {
+      "tool_id": "TOOL-FFMPEG",
+      "name": "ffmpeg (imageio-ffmpeg bundled binary)",
+      "version": "ffmpeg-win-x86_64-v7.1 (from imageio-ffmpeg Python package)",
+      "usage": "Round 46 rebuild of assets/media/4-state-motion.mp4: composes 4 segments × 10.000 s at 1920x1080 24 fps h264 yuv420p, draws the Chinese state label, sub-label, state number and the persistent in-frame G0 watermark via drawtext (font msyh.ttc), mixes the narration audio and trims it to 40.000 s. No AI image generation, no rasterised prompt glyphs. Output bytes are deterministic given the same input segments and font.",
+      "license_or_terms_status": "ffmpeg is LGPL/GPL dual-licensed; the imageio-ffmpeg binary is distributed under its own terms. License and font-resolution terms are not independently audited here.",
+      "redistribution_status": "ffmpeg binary and Microsoft YaHei font are not redistributed by this submission; only the composed 4-state video is included.",
+      "reproduction_path": "Re-run scripts/h/__tmp_build_4state_video.py (R46) on the same 4 input segments and font; the produced 4-state-motion.mp4 should be byte-identical given the same ffmpeg version and font."
     }
   ],
   "output_provenance": [
@@ -352,5 +361,52 @@
       "lockstep_rule": "Any change to ASSET-150..153 must update the bilingual visual page."
     },
     "reality_boundary": "48 seconds remains presentation pacing, not real recovery duration. Video and audio do not prove any field state, approval, operation, public feedback, accessibility result, professional acceptance, authorization, G1 or rights clearance. Generated media are concept illustrations, not site or construction evidence. audit_records remains 0; not_fully_cleared and public_or_professional_reuse_blocked remain true."
+  },
+  "round_46_provenance": {
+    "scope": "Repair only the four-state video quality gaps left by Round 45: rebuild assets/media/4-state-motion.mp4 as a real, state-distinguishable, in-frame-watermarked, exactly 40.000 s video; trim the audio narration to 40.000 s; mirror the R45 ZH media entry into proposal.en.md and visual/index.en.html; reconcile the watermark-truth and the model / watermark disclosures; convert the six CRLF text files to LF so exact-head git diff --check returns exit 0. No new scene, project, key area, governance contract, maturity, page or PDF.",
+    "video_rebuild": {
+      "tool_id": "TOOL-FFMPEG",
+      "input": "Four sequential conceptual segments of 10.000 s each (普通 / 验证 / 故障 / 恢复), 1920x1080, 24 fps, h264 yuv420p; per-segment solid muted background (0xe8d5b7 / 0x9bb4c2 / 0xc9806b / 0x95b888); ffmpeg drawtext (font msyh.ttc) renders the Chinese state label, sub-label, state number, and a persistent in-frame watermark 'G0 概念 · 临时几何 · 非现场证据 · 非批准方案' in the lower-left of every frame; audio narration mixed in and trimmed to 40.000 s by ffmpeg.",
+      "output_file": "assets/media/4-state-motion.mp4",
+      "duration_seconds": 40.000,
+      "resolution": "1920x1080",
+      "frame_rate": 24,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "watermark_policy": "in_frame_persistent_drawtext_each_segment",
+      "no_ai_image_generation": true,
+      "asset_record": "visual/assets/rights-clearance-ledger.json#ASSET-150"
+    },
+    "audio_trim": {
+      "tool_id": "TOOL-FFMPEG",
+      "input": "Round 45 audio assets/media/4-state-narration.mp3 (43.344 s, platform TTS, voice male-qn-qingse, speed 0.9; AIGC labelled ContentProducer MiniMax AI, exact model version not asserted).",
+      "output": "Mixed into the rebuilt video and trimmed to 40.000 s to match the .vtt and script length exactly.",
+      "asset_record": "visual/assets/rights-clearance-ledger.json#ASSET-151"
+    },
+    "bilingual_sync": {
+      "files": [
+        "proposal.en.md#four-state-conclusion",
+        "visual/index.en.html#four-state-media"
+      ],
+      "rule": "Mirror the ZH R45 media entry (4-state <video> + <audio> + <track srclang=\"zh\"> + script link) into the EN side; no autoplay; lockstep with ASSET-150..153."
+    },
+    "crlf_fix": {
+      "files_converted_to_lf": [
+        "agent.json",
+        "assets/media/4-state-narration-script.md",
+        "assets/media/4-state-narration.vtt",
+        "manifest.json",
+        "report/narrative.md",
+        "visual/assets/rights-clearance-ledger.json"
+      ],
+      "git_config_required": "core.autocrlf=false",
+      "verification": "git diff --check on the exact R46 head must exit 0 with zero false positives."
+    },
+    "truth_disclosure_reconciliation": {
+      "watermark": "ASSET-150 records the watermark as in-frame drawtext; figcaption and script both state the in-frame watermark; manifest, agent and rights ledger no longer say 'in figcaption only'.",
+      "model_status": "Video metadata is ffmpeg drawtext composition (no AI model); audio keeps platform-TTS provenance with model-version-not-asserted; the contradiction 'model known' / 'model unknown' inside the previous round is removed.",
+      "lockstep": "Video 40.000 s = audio trimmed 40.000 s = .vtt 00:00:00.000 -> 00:00:40.000 = script §40 秒. Any change to one must lockstep-update the other three."
+    },
+    "reality_boundary": "40.000 s remains presentation pacing (10 s per state), not real recovery duration. The rebuilt video proves no field state, approval, operation, public feedback, accessibility result, professional acceptance, authorization, G1 or rights clearance. The ffmpeg drawtext watermark is a composition technique, not a copyright assertion. audit_records remains 0; not_fully_cleared and public_or_professional_reuse_blocked remain true. D/H/P/C, G0, provisional status, zero independent clearance, zero real-world outcomes and A3 14+14 / A0 8+8 page counts remain unchanged."
   }
 }
