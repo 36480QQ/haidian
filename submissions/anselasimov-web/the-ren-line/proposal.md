@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以詹天佑人字形线路为总概念、以人民城市理念为根:一撇是已建成的9公里记忆线绿廊,一捺是算力与场景叠加的智能线,在AI原点社区顶点换向;众智园与大钟寺双机牵引,以概念用地分区、248栋概念建筑、12个AI场景节点与三大朝圣地标,提出'百年在此换向'的存量AI创新带方案。"
 tracks: ["ai-origin-community", "jingzhang-heritage-narrative", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "robot-delivery-low-speed", "ai-health-service-navigation"]
-iteration: "v1.5"
+iteration: "v1.7"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
@@ -80,6 +80,8 @@ translation_file: "proposal.en.md"
 Logo与视觉识别方向:两笔"人"字——一笔实线(枕木纹理,记忆线),一笔点划线(数据流,智能线),交点置换向节点圆。标志的硬要求只有一条:谁都能徒手复写。两笔一圆,没有渐变和细部,市民、开发者与海外社区都能随手画出、自发传播。标志分三种用法——主标(中英双语横向锁定,用于图纸、展陈与官方物料)、印记版(单色阴刻,用于K.P.里程碑、新站匾与铺装,缩至最小尺寸仍可辨识)、动态版(交点圆沿两笔往复折返,一次折返即一次换向,用于换向峰会与换向台的实时数据幕);全案视觉采用"新京张制图学"蓝图体系(蓝图蓝#1B3A6B、图纸米白#F5F1E8、锈轨红#A8442A、信号绿#2E6E5E),图纸带图号(JZ-2026-XX)、比例尺与K.P.里程标注,风格映射为blueprint+technical-schematic+subway-map+dashboard,均在仓库推荐清单内。命名与Logo均为原创概念方向,未使用任何现有商标或他人作品。
 
 总体空间结构为**一撇一捺一顶点**:一撇即9公里记忆线绿廊(2026年8月6日随二期建成实现全线贯通开放,二期用地约53公顷、一期16.8公顷,全线打通9条城市支路 [source:SRC-PARK-PHASE2] [data:geometry/roads.geojson#RD-001]),方案不重复设计公园,做东西缝合、内容植入与运营叠加;一捺即智能线,不新修物理廊道,沿学院路—中关村东路服务界面叠加算力、数据、机器人路权与空间计算试点(智能线服务叠加区见 [data:geometry/constraints.geojson#CN-AISZ]),政策接口为"率先建设AI原生城市"与"空间计算先行先试" [source:SRC-AIPLUS-1081]及自动驾驶示范区4.0阶段规划扩区范围(四环路至六环路之间)已涵盖本区域 [source:SRC-AVZONE-40];顶点即AI原点社区——新华社所记"以北四环与中关村东路十字路口为圆心、2公里为半径",便是外媒笔下的"全球第一个人工智能街区",其圆心正落在本区 [source:SRC-XINHUA-AI-BLOCK]。
+
+![总体空间结构"一撇一捺一顶点"示意图(复用图JZ-2026-01,详见"设计依据与资料清单"章)](assets/figures/site-overview.png)
 
 三大定位(百年京张文化带、都市AI生活体验带、AI融合创新带)分别由记忆线、双线会合界面、智能线承载;五大功能(AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权)在三区两翼协同回路中闭环:北机车出原创成果→顶点转化定价→南机车商业验证→试车线场景反馈→补给线要素再配置→回到北机车 [depth:overall_spatial_structure]。上位衔接:海淀分区规划第38条已明确中关村大街高端创新集聚发展走廊"与京张铁路遗址公园共同形成发展复合轴带,沿成府路、知春路、学院路纵深联动" [source:SRC-HD-PLAN-2035],本方案是该复合轴带的AI时代深化——中关村大街承担"街的界面"(商务、消费、门户),记忆线承担"线的界面"(绿廊、慢行、记忆),两者在原点顶点交汇;创新带不与中关村大街争同一批功能,而是把大街上装不下的算力、测试场与开发者生活装到线上。国土空间规划创新思路为"线性存量廊道的叠加式更新"——廊道本体不新增建设量、增量只在重点区内部消化,叠加数字层与运营层,呼应中央城市工作会议"存量提质增效"阶段判断 [source:SRC-CENTRAL-URBAN-2025]。
 
