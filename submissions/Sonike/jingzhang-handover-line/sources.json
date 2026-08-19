@@ -1762,7 +1762,7 @@
       "collection_method": "由参与者以文字提示词调用 gpt-image-2 生成一张走廊轴测插画，**未向模型提供任何参考图片、照片、地图或既有作品**；提示词写死了纸面 #f1ecdf、煤黑 #161918、信号红 #e24a3b、绿廊 #a9c6a6、支线蓝 #3b6486 的调色板，并明令「画面内不得出现任何文字、字母、数字、标识或水印」「人物一律为无面部特征的中性剪影」。生成结果仅作为 `assets/media/cover.png` 的背景层；封面上的全部文字由本机 OFL 字体在 PIL 中渲染，不是模型写的。",
       "spatial_coverage": "不适用：插画为概念母题，不对应任何实测范围",
       "temporal_coverage": "不适用",
-      "license_or_reuse_terms": "产物为按本方参与者提示词生成的图像，随本包按 `visual/assets/governance/rights-and-licence.json#license` 的作者授权分发；未使用任何第三方图片、地图、商标或受保护版式作为输入，因此不引入第三方权利。",
+      "license_or_reuse_terms": "产物为按本方参与者提示词生成的图像，随本包按 `manifest.json#license` 的作者授权分发；未使用任何第三方图片、地图、商标或受保护版式作为输入，因此不引入第三方权利。",
       "usage": "`assets/media/cover.png`（画廊封面）的背景插画层。",
       "usable_for": [
         "说明封面插画为模型生成的解释层图像，而非现场照片或测绘成果",
