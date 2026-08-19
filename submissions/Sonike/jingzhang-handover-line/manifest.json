@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "524cf1426a4ee68afc7b31a01c1abb000f1b0ca95de46f47c5d5ba1e13a9e309"
+      "sha256": "a476f3b23017e8fd168b8b10fbd3bc5ac7686dfefa21d97b1dd2e45dfb5da1ca"
     },
     {
       "path": "agent.json",
@@ -83,13 +83,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "87954c2341430d37be6c1f022294369680b16308273579e8d25eee998d2c2541"
+      "sha256": "d9953f5539ab9bcc1ebe568bd300de95bf79218aabb2bc62636d784b07bcf35c"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "91bbc2c3ccb5260e2e2a7d0d3279bb177bc6de301871b829aa032fd22abfe8f1"
+      "sha256": "aaa4413a378b448273823aa8f9fbaae65ff6c718602f596118e2078b835fdc9b"
     },
     {
       "path": "standard_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "da374097c8133f5646a5e7a9806a3bdb9ddce43c5d76daa7fec1449f68aa0259"
+      "sha256": "3cd7982b3b7a12d89b329b046dfbbef6271c264c99ea6ba15852187a727aca0a"
     },
     {
       "path": "report/narrative.md",
@@ -141,7 +141,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "aee164c3a07c0389bddce04bdc1df0c9d3a0c9e354501f23f86579418b1262d6"
+      "sha256": "914b03c0ec3d34adfb24c52f4e4fe68144e155d84cd9edfb789b34567ee131c2"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "183751b97f5cbd7f5941af9def7bc223418dcbf1292b59228e2138fb5c5c1d6d"
+      "sha256": "56be5360b9c13ee48ee672da9aac79168f24351cc1767b36282b31f8a80cde81"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "93b49b285bc7de5808fa3678548e12c25ce6490e86f7b0ff7960f8675531c2dd"
+      "sha256": "de15bd8bbd3f7bc715db499eaa87d6eacb11da286d66d12e63b9c37d16ee7a0f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -270,7 +270,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "6714fd5ca6f1cff05674b89faadc674096d930f1b14570a6fa3d593ab3061852"
+      "sha256": "e38993547a51e5789c862b8f9345b68a439f77ce95adc47bc1f6ef56b4efe6d7"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "7d0c47f5bc5a172ce7fa86bbf13b3ddf283ddb1880e354b3c7033a7a95ee8a28"
+      "sha256": "5938f6eedb7f7243065482211be7b3c9b1e4b29c3a2140ff9ba230f86dfa147f"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -658,5 +658,86 @@
     "data_confidence": "mixed_provisional_and_conceptual",
     "readiness_contract": "persisted-self-check-v1"
   },
-  "cover_image": "assets/media/cover.png"
+  "cover_image": "assets/media/cover.png",
+  "rights_inventory": {
+    "notice_zh": "逐资产权利清单。全部资产的权利人均为本包参与者；许可文本以 license.author_grant_zh/en 为准，冲突时按 license.precedence_zh 判定。第三方成分一栏全为「无」，本包据此作出直接授权。",
+    "notice_en": "Per-asset rights inventory. The rights holder for every asset is the package participants; the licence text is license.author_grant_zh/en, and conflicts are decided by license.precedence_en. Every third-party cell reads none, which is what allows the direct grant.",
+    "assets": [
+      {
+        "asset_class": "raster_figures",
+        "label_zh": "栅格图件",
+        "count": 26,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由 geometry/*.geojson 与 metrics.json 程序化渲染",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无：字形按 OFL 栅格化为像素，包内不分发字体文件",
+        "verification_zh": "manifest.json#files[].sha256 逐文件比对"
+      },
+      {
+        "asset_class": "drawing_pdfs",
+        "label_zh": "图纸 PDF",
+        "count": 4,
+        "rights_holder": "package_participants",
+        "production_method_zh": "同批渲染产物排版合成",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "中文嵌入 OFL 字体子集；拉丁为 PDF 基础十四款；无第三方图像或版式",
+        "verification_zh": "pdffonts 看嵌入列 + sha256"
+      },
+      {
+        "asset_class": "narrative",
+        "label_zh": "正文与译稿",
+        "count": 2,
+        "rights_holder": "package_participants",
+        "production_method_zh": "人工撰写，机器校验双语结构",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无",
+        "verification_zh": "行号三项对齐检查 + sha256"
+      },
+      {
+        "asset_class": "geometry",
+        "label_zh": "几何图层",
+        "count": 9,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由公告文字与面积校核推演，EPSG:4548",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无：未使用商业地图、OSM 或新闻图",
+        "verification_zh": "spatial_review gate + sha256"
+      },
+      {
+        "asset_class": "structured",
+        "label_zh": "结构化文件",
+        "count": 11,
+        "rights_holder": "package_participants",
+        "production_method_zh": "人工编写，脚本校验",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无",
+        "verification_zh": "四道 gate + sha256"
+      },
+      {
+        "asset_class": "offline_pages",
+        "label_zh": "离线网页",
+        "count": 2,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由 proposal.md 渲染加手写版式",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无外部资源，grep -c 'https?://' 为 0",
+        "verification_zh": "断网打开 + sha256"
+      },
+      {
+        "asset_class": "media_tactile",
+        "label_zh": "音视频与触觉件",
+        "count": 15,
+        "rights_holder": "package_participants",
+        "production_method_zh": "本机语音合成、程序化字幕与矢量制版",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无真人音色、无肖像、无第三方素材",
+        "verification_zh": "字幕与正文同源比对 + sha256"
+      }
+    ],
+    "hash_coverage": {
+      "files_declared": 83,
+      "files_with_sha256": 82,
+      "note_zh": "manifest.json 自身不自哈希，因此带 sha256 的条目数比声明条目数少 1。"
+    }
+  }
 }

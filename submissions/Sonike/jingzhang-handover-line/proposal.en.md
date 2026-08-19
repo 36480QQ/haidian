@@ -38,6 +38,19 @@ This iteration completes one implementation proof that remains under participant
 | How does public interest enter? | Staffed counters, a continuous step-free walk, fixed wayfinding, paper and telephone channels precede the smart layer | Every scenario states its human service and post-exit spatial use |
 | Are claim boundaries honest? | All spatial moves are concepts; provisional geometry is not an official redline; fieldwork, prices and appointments remain subject to due process | Itemised in `assumptions.json` and the risk chapter |
 
+### Three Reading Paths: 60 Seconds, 5 Minutes, Deep Read
+
+This proposal is long. So that readers with different time budgets can still reach a complete judgement, three non-overlapping paths follow — **each is self-contained, and finishing any one of them answers "what does this propose, and how far does the evidence go".**
+
+| Path | What to read | What it lets you answer |
+| --- | --- | --- |
+| **60 seconds** | The one-sentence claim above this section, figure F/05, and the three lines of figures below | What this proposal builds, how far it has got, and that it has not entered the field |
+| **5 minutes** | Three-level scope framework → the five-functions table → the three Handover Yards → the twelve scenario cards → the first-year verification plan | Spatial structure, division of responsibility, the scenario list, and how it is measured |
+| **Deep read** | Read in order of contents while checking against `compliance_matrix.json`, `metrics.json` and `sources.json` item by item | Where the evidence for each claim sits, how it is recomputed, and what would invalidate it |
+
+**The three lines of figures for the 60-second path:** offline tabletop tasks **12/12** passed; takeover assertions **48/48** passed; field tasks **0/12**, carried by the post-authorisation professional process. **These three lines appear together in the figures, in both offline pages and in `simulation.json` — the same numbers in all four places.**
+
+
 ## Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover
 
 The previous section treats "handover" as the core mechanism of this proposal; this section states where it comes from, so that a metaphor is not mistaken for evidence. The facts below are public and verifiable. The proposal extracts transferable practice from them and infers no statutory conclusion.
@@ -147,6 +160,20 @@ Regional collaboration most often stops at "contact established". The table belo
 
 The main name is "Jing-Zhang Handover Line" and the English name is "JING-ZHANG HANDOVER LINE" — not a separate coinage but a direct translation, so both languages point at the same thing. **The naming system is unified by one verb, handover**: three handover yards, the Handover Bell, the Public Handover Table, the dual-signature handover ledger, Global Handover Week, the annual handover ledger. Any new element must be nameable with that verb; if it cannot be, it does not belong on this line. The visual identity and logo direction follow from it: the mark combines two rails, a baton and signal brackets. Coal black means auditable duty, signal red means a stop threshold decided by a person, electric cyan means an open interface, and duty yellow means service reaching daily life. The system extends to wayfinding, protocol cards, logbooks, event publications and the Public Handover Table without requiring a screen.
 
+### When the Three Positionings Collide in One Place, Which Gives Way
+
+The taskbook's three positionings are compatible in most places, but on a given site they push against each other. **The table below fixes the collision cases and gives the priority rule — the rule comes before the case, and nothing is left to "depending on circumstances".**
+
+| Collision | Which gives way | Priority rule | Basis |
+| --- | --- | --- | --- |
+| Heritage elements of the cultural belt × test facilities of the innovation belt | **The innovation belt gives way** | Anything added inside heritage scope must be reversible and removable; no irreversible method may enter, even if it is cheaper or faster | Exit exists before opening; `assumptions.json#A-HERITAGE-001` |
+| Public passage of the living-experience belt × controlled enclosure of the innovation belt | **The innovation belt gives way** | Enclosure may only happen at the end of a stitch link or on a separate parcel, and **may not cut the continuous passage of the north-south spine**; the machine lane may not come between staffed counter, walkway and stop entrance | The adjacency rule on F/04; rule R2, human floor first |
+| Character requirements of the cultural belt × accessibility works of the living-experience belt | **Character gives way to reach** | No mandatory accessibility item may be dropped for the sake of character; the method follows heritage procedure but the result must be reachable, and a stretch that cannot be altered stays closed rather than opening in a degraded form | The HV-05 test; the vacancy prohibition of the public space management post |
+| All three positionings × operational efficiency | **Efficiency gives way to the basic layer** | No efficiency arrangement may let the basic layer degrade; an unstaffed period closes the smart layer rather than letting it stand in | Rules R2 and R3; `prohibition_when_unstaffed` in `role-spec.json` |
+
+**All four rules point the same way: the side that gives way is always the thing that can be done later, and the side that does not is always the thing that cannot be recovered once lost** — the irreversibility of heritage, the continuity of passage, the floor of reachability, the existence of basic service. All four are observable: the basis column of each row points at a reviewable decision inside the package [assumption:A-HERITAGE-001] [depth:three_level_scope_framework]。
+
+
 ### Taskbook Cross-Reference: One Entry Point per Requirement
 
 The taskbook's requirements are spread across three positionings, five functions, three areas with two wings, and six agent tasks, so a reader ends up hunting back and forth. The table below gives **one entry point per requirement**: one section, one figure number, one place in a structured file. **No requirement is given two entry points**, so the table is both an index and a check against duplicated expression.
@@ -172,6 +199,8 @@ The taskbook's requirements are spread across three positionings, five functions
 | agent.4 Civic space, new formats and pilgrimage landmarks | Blue-green space, civic space and urban character | F/04 | `geometry/public_space.geojson` |
 | agent.5 Cultural convergence narrative | Three Legacies a Railway Left Behind | F/01 | `sources.json#SRC-DAZHONGSI-BELL` |
 | agent.6 Event system and long-term operation | Long-term operation, annual events and international communication | JZ/13 | `compliance_matrix.json#agent.6` |
+
+**The same table also exists in machine-readable form, and it checks itself.** `taskbook_entry_map` in `compliance_matrix.json` expands the nineteen rows above into bilingual seven-tuples — requirement, text entry, figure, structured entry, **spatial object**, **metric** and **failure condition** — and verifies three things when it is generated, with the outcome written into `uniqueness_check`: **0 duplicate requirement names, 0 duplicate entry quadruples, 0 entries pointing at a metric that does not exist, verdict pass**. The failure-condition column is what separates this map from an ordinary index: for each requirement it states **the observation that would show the requirement has not actually been met**, for instance "a scenario card without a post-exit use is still opened" or "an interface has no first exchangeable output and stops at intent".
 
 **This table can be refuted on the spot.** All three entry points on any row open directly: the section is in the contents, the figure number is printed at the top left of the figure, and the structured-file location can be searched with a text tool. If any row's entry point does not open, or what it opens is unrelated to that requirement, that row is wrong [depth:three_level_scope_framework] [assumption:A-CASES-001].
 
@@ -374,6 +403,24 @@ Height and intensity await the official regulatory plan, so character control us
 
 Four AI pilgrimage landmarks move honour away from capital scale and towards civic contribution. The Handover Bell records when a capability was accepted independently. The Public Handover Table shows positive and negative results with refusal reasons. The Century Logbook credits maintainers, repairers and people who stopped a service in time. Takeover Booth Zero makes basic service, human help and the stop entrance visible. All are concepts subject to ownership, heritage and public-space procedure [metric:civic_landmark_count] [data:geometry/public_space.geojson#LANDMARK-01].
 
+### Synthetic Counter-Cases for the Eight Personas: Who This System Would Fail First
+
+The table above states what each group needs. This one runs the other way: **assuming the system goes wrong, who gets left out first, which staffed route they fall back to, what condition triggers a shutdown, and who is responsible for the repair.** Every row is a synthetic counter-case, not a real one, and carries no personal information.
+
+| Persona | Most likely form of exclusion | Staffed route | Shutdown trigger | Repair responsibility |
+| --- | --- | --- | --- | --- |
+| Developers and students | Output licence unresolvable, withdrawal entry broken | Human curation and paper catalogue | An unresolvable licence takes the item down | Public service operations + independent review |
+| Startups and growing teams | Opaque metering; installations cannot be removed after failure | Independent meter readings and paper tickets | A threshold fires but shutdown does not follow | Controlled test safety + facility maintenance |
+| Universities and institutes | A research result written up as a deployment result | Independent review files a written opinion | A result is described as "verified" | Independent review |
+| Operators and maintainers | The smart layer keeps running through an unstaffed period | Telephone and paper reporting | The staffed counter is unattended | Public service operations |
+| Residents and older people | Only the smart interface remains after a counter is withdrawn | Telephone rostering and paper handling | Any of the four non-AI-equivalent checks fails | Community service and care |
+| Disabled and temporarily impaired people | Temporary obstruction cuts the continuous route; the stop entrance is unreachable | Tactile map and staffed directions | Any mandatory accessibility item fails | Public space management + independent review |
+| Children and young people | Passage is captured as an identifiable profile | On-duty staff respond on site | Any collection of a minor's personal data occurs | Dissent and overlooked-group representation |
+| International visitors and non-app users | Passage made conditional on installing an app or spending | Multilingual paper and volunteers | An arrangement conditional on installing an app appears | Culture and venue + annual event operations |
+
+**This table is meant to be read backwards.** The forward table answers "what did we build for whom"; the counter-case table answers "**who does this system fail first**". Six of the eight rows have trigger conditions that map directly onto R1–R7 or HV-01–HV-06, so it is not a checklist but a set of observable decisions [assumption:A-OPERATIONS-001] [depth:blue_green_public_space]。
+
+
 ### Honour display system: a correctable record, not a leaderboard
 
 Honour records run a seven-step loop — nomination, evidence, dual review, published objection, correction, withdrawal, appeal — and accept real names, pseudonyms, or anonymity. They are never ranked by traffic or votes. Every record must be open to being challenged and corrected; a withdrawn record keeps its stated reason for withdrawal rather than being erased from public memory. The Century Logbook is its physical carrier, and the Handover Bell and Public Handover Table are its once-a-year public moment [data:geometry/public_space.geojson#LANDMARK-03].
@@ -514,6 +561,21 @@ The field session is led by the post-authorisation professional process, but the
 **The AI innovation index only has a definition once it is split into sub-items.** The index is unmeasured in `metrics.json`; the four sub-items are collected as follows. **Open interfaces**: the sampling unit is one published interface, the base period is the first published quarter, an interface withdrawn is deducted in that period, and one whose owner is unclear is not counted. **Reproducible outputs**: the sampling unit is one output carrying a licence and a reproduction record; an unresolvable licence is not counted. **Human takeover availability**: the sampling unit is one scenario in one period, and an understaffed period counts in the denominator but not the numerator. **Exit-record completeness**: it follows the definition of HV-04. All four carry a stop-publication condition: **when the original records of any sub-item cannot be reviewed, the index is not published for that period and the previous period's value is not carried forward** [assumption:A-BASELINE-001] [depth:metrics_recalculation].
 
 
+### The Five Closest Existing Mechanisms, Compared Item by Item
+
+The table above already names the closest existing practice for each of the three core claims. This one widens the field to **the five mechanisms most easily taken as equivalent**, states the irreplaceable difference in each case, and — most importantly — **what evidence would refute the claim that this is new**.
+
+| Existing mechanism | What it already achieves | The irreplaceable difference here | What evidence would refute the originality claim |
+| --- | --- | --- | --- |
+| MLOps release approval and rollback | Version, approval, canary and rollback closed inside the system | Its rollback lands on the previous version; here rollback lands on **staffed service and physical space**, and the post-exit use of that space must exist before opening | An MLOps framework that makes "return to a staffed counter" and "post-exit use of the space" preconditions of release |
+| City-brain / smart-city operations centre | Data aggregation, situation monitoring, cross-department coordination | It measures itself by adoption and automation rates; here "the basic layer does not degrade when the smart layer closes" is a precondition of opening, and no automation rate appears among the metrics | An operations centre that makes "a non-AI equivalent exists" a hard precondition for opening a scenario |
+| Regulatory sandbox | Controlled trials bounded in scope and time | A sandbox ends on time; here it ends on **condition gates**, and the safety role can only stop, never start — in a sandbox the authority usually decides both | A sandbox that grants the stop power unilaterally to the safety post while withholding the start power from it |
+| Alternative channels required by accessibility law | An alternative must be provided | It treats the alternative as a fallback; here it is a **precondition for opening**, with "equivalent" split into completion rate, time, reachable route and duty holder present | A code that splits "equivalent" into measurable parts and makes them a condition of opening |
+| Construction handover sheet | Release and receipt are recorded and traceable | It usually takes one approving signature; here two different roles each sign once, the intake role must independently reproduce the minimum evidence, and open items do not disappear with a signature | An acceptance regime that compels two independent role sign-offs and forbids closing open items by signature |
+
+**The last column matters most.** Any proposal can fill the first three; the fourth asks the author to say in advance **under what circumstances they would be shown wrong**. Filling it is what lets a reviewer verify the claim of novelty rather than accept it [assumption:A-CASES-001] [depth:phasing_implementation]。
+
+
 ### One End-to-End Worked Example: SCN-04 Data Consent Ground, from Site to Exit
 
 Earlier sections write site, role, data, components, shutdown and metrics separately. This section connects them **on a single scenario**, so a reader does not have to assemble them across sections.
@@ -529,6 +591,23 @@ Earlier sections write site, role, data, components, shutdown and metrics separa
 | Space after exit | The consent desk returns to an ordinary enquiry counter and paper catalogue point with no trace on the ground; consent records already created are filed under HV-04, and missing any of the three fields makes the record incomplete |
 
 **The same chain has already been replayed once on the offline tabletop.** `TABLETOP-SCN-04` in `simulation.json` records the release role, intake role, human fallback and the results of the four checks; in the field only the measured object changes, not the decision rule [metric:offline_takeover_assertion_count] [depth:phasing_implementation].
+
+
+### One Synthetic Change Case: Withdrawing a Single Consent in SCN-04 and What It Moves
+
+The previous section takes SCN-04 from site to exit. This one changes **one thing only** — a user withdraws their consent — and then lists layer by layer what that sets off. This is the smallest testable form of what "rollback" means here: **change one place and everything else must follow automatically, with the change reviewable.**
+
+| Layer | What happens after the withdrawal | Basis |
+| --- | --- | --- |
+| Roles | Public service operations receives it and executes deletion on the spot; legal/licensing reviews the deletion scope; independent review files an opinion; no one person may hold two of the four | `two_person_review` in `role-spec.json` |
+| Record | That consent record enters the shutdown and exit record, which must carry all three of cause, executed deletion and continued basic service | HV-04 completeness definition |
+| Metrics | "Time from withdrawal to completed deletion" and "withdrawal success rate" each gain one sample; if deletion cannot complete on the spot, that sample counts in the denominator but not the numerator | HV-03 / HV-04 |
+| Gate | If deletion cannot complete on the spot, the first shutdown condition of SCN-04 fires, the smart layer of that scenario closes at once, and the basic layer — paper consent slip and staffed counter — keeps running | Shutdown trigger 1 of the scenario |
+| Phasing | That scenario is out of the "may extend" pool for the period; unresolved positive and negative results of phase 1 may not be inherited by phase 2 | The entry gate of conditional phasing |
+| Rollback destination | Service does not fall to "no service" but to a state declared in advance — for SCN-04 that destination is written into the geometry: **paper consent slip and immediate deletion**. Each of the twelve scenarios has one, fixed beforehand rather than decided on the day | `rollback_state` in `geometry/public_space.geojson#SCN-04` |
+| Rollback result | Service is not interrupted: the user switches to the paper consent slip on the spot, and synthetic records already created are cleared under R5 with nothing left behind | `synthetic_record_disposal` in the offline rehearsal `TABLETOP-SCN-04` |
+
+**This chain has already been replayed once on the offline tabletop** with all four assertions passing; in the field only the measured object changes, not the decision rule. **The number of layers a single withdrawal can move is the only place where the word "rollback" can be tested** — if a withdrawal changed one record while metrics, gates and figure states stayed put, the mechanism would be a claim and nothing more [metric:offline_takeover_assertion_count] [depth:phasing_implementation]。
 
 
 ### Six action packages and responsible organisation types
@@ -728,6 +807,23 @@ The reason for not simply adopting a standard licence is concrete: both other en
 That sentence is not an interpretation of the organiser's identifier and not a legal opinion. **It is a grant made by the rights holder over rights it actually holds** — it needs no external text to be executable. Should the organiser define the identifier later, that definition governs; until then a reader may act on CC BY-NC 4.0 without waiting. Third-party material falls outside this grant: the package uses no third-party image, map, trademark or protected layout, and the font rights chain is set out in the table above.
 
 All space, brand, event, organisation-type, cost-class and indicative-sequence statements are concept advice for professional, operating and communication teams to deepen. Official boundaries, controls, ownership, construction, procurement, budget, personnel, permission and operation must be lawfully confirmed by the competent parties.
+
+### Per-Asset Rights Inventory: Deliverable, Holder, Production Method, Licence Location and Check in One Table
+
+The table above registers font rights by use. This one registers by **asset class**, with six columns together, so whether a given output may be reused can be judged without assembling facts across files.
+
+| Asset class (count) | Rights holder | How it was produced | Where the licence text sits | Third-party content | How to verify |
+| --- | --- | --- | --- | --- | --- |
+| Raster figures, 26 | The package participants | Rendered programmatically from `geometry/*.geojson` and `metrics.json` | `manifest.json#license.author_grant_en` | None (glyphs rasterised to pixels under OFL; no font file ships) | Compare `manifest.json#files[].sha256` file by file |
+| PDF drawing sets, 4 | The package participants | Composed from the same rendered outputs | As above | Chinese uses an embedded OFL subset; Latin uses the PDF base fourteen | Embedded column of `pdffonts` plus sha256 |
+| Main text and translation, 2 | The package participants | Written by hand, bilingual structure checked by machine | As above | None | The three line-number parity checks plus sha256 |
+| Geometry layers, 9 | The package participants | Derived from announcement text and area cross-checks, EPSG:4548 | As above | None (no commercial map, OSM or news graphic used) | The `spatial_review` gate plus sha256 |
+| Structured files, 11 | The package participants | Written by hand, checked by script | As above | None | The four gates plus sha256 |
+| Offline pages, 2 | The package participants | Rendered from `proposal.md` with hand-written layout | Same text in the footer | No external resource (`grep -c 'https\?://'` returns 0) | Open with the network off, plus sha256 |
+| Audio, video and tactile items, 15 | The package participants | Local speech synthesis, programmatic captions and vector plates | Same text in `assets/media/*.md` | No real voice, no likeness, no third-party material | Compare captions against their source text, plus sha256 |
+
+**This table can be machine-checked, and it has been.** `visual/assets/governance/rights-inventory.schema.json` constrains every entry of `rights_inventory` under JSON Schema Draft 2020-12: **the rights holder must always be `package_participants`, the licence location must begin with `manifest.json#license.`, and production method, third-party content and verification may none of them be empty**, with no extra fields allowed. Run through a generic validator (`jsonschema` 4.x) it returns **0 errors**. That means any asset class quietly added later without its rights written out will fail the check outright. `files[]` in `manifest.json` holds 83 entries, 82 of them carrying a `sha256` (`manifest.json` does not hash itself); the `rights_inventory` block records the six columns above and points each class at its `files[]` entries. **Every cell in the third-party column reads "none", which is what allows this package to make a direct grant at all** [assumption:A-FONT-001] [depth:metrics_recalculation]。
+
 
 ### Which Signal Governs When the Three Licence Signals Conflict
 
