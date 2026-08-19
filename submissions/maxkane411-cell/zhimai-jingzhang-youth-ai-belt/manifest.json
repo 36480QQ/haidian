@@ -20,7 +20,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "b728a78de2e73877ae2f031504ce3a8eedfab2866497abcd52a2b0e88327cf86",
+      "sha256": "8954b0fe33cf7bf54d87043208636e96119a86c6b9bbacea8b18506a2e2aad8c",
       "language": "zh",
       "title_zh": "智·脉 — 京张青年AI创享带"
     },
@@ -28,7 +28,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "67f268f58e0c5023900296b918fa5b3ae0714850731f47dd0112d828dd44b577",
+      "sha256": "7cfed586a697a88842e971dd08247f8c31614c054f5570edd822bb4fcc2e92c8",
       "language": "en",
       "translation_of": "proposal.md",
       "title_en": "ZhiPulse — Jingzhang Youth AI Innovation Belt"
@@ -43,7 +43,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "265968d0989fecde5ec55e2eba6d0bbc06181cc9178f4888bbac6a76b4fa4d02"
+      "sha256": "03eccfc3f74d228700189ec414290ec4255aee988e7f604881e4164e641cffb5"
     },
     {
       "path": "assumptions.json",
@@ -67,19 +67,19 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "5cd1ce7b110fbcd5dc8d6bc0f5be24d7969570ee207e0e1b69b579e4e38e93c2"
+      "sha256": "ab72f99c94eb244bcf6f458551a81bfd0b645ddc903b29dcc778b0a69241ca4f"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "b917c5abc241dcb8b9f879381105e9b5731c49e0139f758a95b96e590b995d79"
+      "sha256": "47c28feb0d710e6417528bc3ef86f66906018424ffb9c4b8593ff854eae7eac8"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "6d34d89d390aaddacb7abb7c53c21119cb19b0b60497677ea1dfcd35b101d9a6"
+      "sha256": "343c0c4b75673c5c082093cd0e0000930a74860589177170cb3e8e9903bfa8a2"
     },
     {
       "path": "manifest.json",
@@ -91,7 +91,7 @@
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "a48504efdb910b23a3001f7edb8c6a11722ec007f125450a736bb34e0bb384b8",
+      "sha256": "b1c1b4f3c264682c060c86fbd6d8c97a7dabbf9878201f2379465d710b5a746c",
       "language": "neutral"
     },
     {
@@ -105,7 +105,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "767af2519c2d895b843b108216b9cb65223d88e59738ffde9c4d1bcd7864b605",
+      "sha256": "50b1aef85784a8b932469460a61e259d374740be84ca33e8082ae09bd0594141",
       "language": "neutral"
     },
     {
@@ -133,21 +133,21 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "922a479b01fa92094e7e5e607287b7e62e29259a079f94f4faf15aaab461e79a",
+      "sha256": "4a0a1f98bb27c05ec3c9116dc15937fc43bb9efd70cdbb19c81f37fcf859c4ed",
       "language": "neutral"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "5291cd52a23e6e31cd0fd70e91da02bb16c2dbaf28fc07be57554456a66d9ea9",
+      "sha256": "4ee1fdf3304bf2a9c711d06b6b7350242ea0d8178b4ac3352f0c83f8f17a8983",
       "language": "neutral"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "ade5d1b7d70e80545721e3693d373dbac6b2d9581d8f4810510796842b883519",
+      "sha256": "794769abad9d453355306593c7b493ee8a31059ee0306e97441670f64c3b1249",
       "language": "neutral"
     },
     {
@@ -219,6 +219,34 @@
       "required": true,
       "sha256": "3d5c59b0caa51b66934b6026ff58a3b99d4192d1abd8b8d863fcf0d3bdb9284f",
       "language": "neutral"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "language": "en",
+      "sha256": "3d5c59b0caa51b66934b6026ff58a3b99d4192d1abd8b8d863fcf0d3bdb9284f",
+      "bytes": 4595
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "language": "en",
+      "sha256": "18928179778a04cb66a7ec0fa4289842998a7fa1109f5e39e72147400df6cff8",
+      "bytes": 2994
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "rendered_report",
+      "language": "en",
+      "sha256": "423a3024d242ecb5c372187d21b21d8ee76d4c3f26f38bd0cf92a426a9b839f0",
+      "bytes": 13138
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "language": "en",
+      "sha256": "14352ab5c11fe74316abd42b73bc84a9ca4d3c8f02deea8b2b54704c1cc19b3e",
+      "bytes": 15747
     }
   ],
   "validation_claim": {

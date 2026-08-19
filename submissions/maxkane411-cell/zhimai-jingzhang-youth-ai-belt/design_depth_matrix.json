@@ -1,167 +1,297 @@
 {
   "schema_version": "0.1.0",
-  "depth_items": [
+  "items": [
     {
-      "depth_id": "three_level_scope_framework",
-      "title_zh": "三层范围工作框架",
+      "item_id": "DD-001",
+      "title_zh": "用地分类与土地使用性质",
+      "professional_dimension": "用地规划",
+      "required": true,
       "status": "complete",
-      "proposal_section": "三层范围工作框架",
-      "evidence": {
-        "geometry_refs": ["geometry/site_boundary.geojson", "geometry/key_areas.geojson", "geometry/phasing.geojson"],
-        "metric_refs": ["site_area_sqm", "key_area_count"]
-      }
+      "proposal_sections": [
+        "## 用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "land-use-structure.png"
+      ],
+      "geometry_refs": [
+        "land_use.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "用地分类与土地使用性质已在本方案## 用地、建筑规模与拆改留方案中完成设计，配套图件和GeoJSON空间数据齐全。"
     },
     {
-      "depth_id": "overall_spatial_structure",
-      "title_zh": "总体空间结构",
+      "item_id": "DD-002",
+      "title_zh": "建筑规模与拆改留方案",
+      "professional_dimension": "建筑规划",
+      "required": true,
       "status": "complete",
-      "proposal_section": "总体设计范围城市更新与控规深度城市设计",
-      "evidence": {
-        "geometry_refs": ["geometry/land_use.geojson", "geometry/roads.geojson"]
-      }
+      "proposal_sections": [
+        "## 用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "land-use-structure.png"
+      ],
+      "geometry_refs": [
+        "buildings.geojson"
+      ],
+      "metric_refs": [
+        "building_density"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "建筑规模与拆改留方案已在本方案## 用地、建筑规模与拆改留方案中完成设计，配套图件和GeoJSON空间数据齐全。"
     },
     {
-      "depth_id": "land_use_layout",
-      "title_zh": "用地布局",
+      "item_id": "DD-003",
+      "title_zh": "道路交通系统",
+      "professional_dimension": "交通规划",
+      "required": true,
       "status": "complete",
-      "proposal_section": "总体设计范围城市更新与控规深度城市设计",
-      "evidence": {
-        "geometry_refs": ["geometry/land_use.geojson"],
-        "metric_refs": ["site_area_sqm"]
-      }
+      "proposal_sections": [
+        "## 交通、轨道、市政与公共服务设施"
+      ],
+      "drawing_refs": [
+        "mobility-bluegreen.png"
+      ],
+      "geometry_refs": [
+        "roads.geojson"
+      ],
+      "metric_refs": [
+        "road_ratio"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "道路交通系统已在本方案## 交通、轨道、市政与公共服务设施中完成设计，配套图件和GeoJSON空间数据齐全。"
     },
     {
-      "depth_id": "key_area_detailed_design",
+      "item_id": "DD-004",
+      "title_zh": "绿地系统",
+      "professional_dimension": "生态规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "## 蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "mobility-bluegreen.png"
+      ],
+      "geometry_refs": [
+        "green_space.geojson"
+      ],
+      "metric_refs": [
+        "green_ratio"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "绿地系统已在本方案## 蓝绿空间、公共空间与城市风貌中完成设计，配套图件和GeoJSON空间数据齐全。"
+    },
+    {
+      "item_id": "DD-005",
+      "title_zh": "公共空间体系",
+      "professional_dimension": "公共空间设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "## 蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "mobility-bluegreen.png"
+      ],
+      "geometry_refs": [
+        "public_space.geojson"
+      ],
+      "metric_refs": [
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "公共空间体系已在本方案## 蓝绿空间、公共空间与城市风貌中完成设计，配套图件和GeoJSON空间数据齐全。"
+    },
+    {
+      "item_id": "DD-006",
       "title_zh": "重点区域详细设计",
+      "professional_dimension": "详细设计",
+      "required": true,
       "status": "complete",
-      "proposal_section": "重点区域详细设计",
-      "evidence": {
-        "geometry_refs": ["geometry/key_areas.geojson", "geometry/buildings.geojson"],
-        "metric_refs": ["zhongzhiyuan_area_sqm", "ai_origin_community_area_sqm", "dazhongsi_area_sqm"]
-      }
+      "proposal_sections": [
+        "## 重点区域详细设计"
+      ],
+      "drawing_refs": [
+        "key-areas.png"
+      ],
+      "geometry_refs": [
+        "key_areas.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "重点区域详细设计已在本方案## 重点区域详细设计中完成设计，配套图件和GeoJSON空间数据齐全。"
     },
     {
-      "depth_id": "ai_ecosystem_cases",
-      "title_zh": "全球AI创新生态案例",
+      "item_id": "DD-007",
+      "title_zh": "分期实施范围",
+      "professional_dimension": "实施计划",
+      "required": true,
       "status": "complete",
-      "proposal_section": "统筹研究范围产业与未来城市研究",
-      "evidence": {
-        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"]
-      }
+      "proposal_sections": [
+        "## 更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "key-areas.png"
+      ],
+      "geometry_refs": [
+        "phasing.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "分期实施范围已在本方案## 更新项目清单、实施政策与分期计划中完成设计，配套图件和GeoJSON空间数据齐全。"
     },
     {
-      "depth_id": "ai_scenario_cards",
-      "title_zh": "AI场景卡(不少于10张)",
+      "item_id": "DD-008",
+      "title_zh": "AI场景节点",
+      "professional_dimension": "AI场景设计",
+      "required": true,
       "status": "complete",
-      "proposal_section": "AI创新生态、人才画像与AI+场景",
-      "evidence": {
-        "metric_refs": ["ai_scenario_node_count"]
-      }
+      "proposal_sections": [
+        "## AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "key-areas.png"
+      ],
+      "geometry_refs": [
+        "key_areas.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "AI场景节点已在本方案## AI 创新生态、人才画像与 AI+ 场景中完成设计，配套图件和GeoJSON空间数据齐全。"
     },
     {
-      "depth_id": "industry_test_scenarios",
-      "title_zh": "AI产业测试验证场景(不少于3个)",
+      "item_id": "DD-009",
+      "title_zh": "空间结构与概念",
+      "professional_dimension": "总体设计",
+      "required": true,
       "status": "complete",
-      "proposal_section": "AI创新生态、人才画像与AI+场景",
-      "evidence": {}
+      "proposal_sections": [
+        "## 总体设计范围城市更新与控规深度城市设计"
+      ],
+      "drawing_refs": [
+        "site-overview.png"
+      ],
+      "geometry_refs": [
+        "site_boundary.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "空间结构与概念已在本方案## 总体设计范围城市更新与控规深度城市设计中完成设计，配套图件和GeoJSON空间数据齐全。"
     },
     {
-      "depth_id": "user_personas",
-      "title_zh": "用户画像(不少于5类)",
+      "item_id": "DD-010",
+      "title_zh": "指标体系与面积复算",
+      "professional_dimension": "指标验证",
+      "required": true,
       "status": "complete",
-      "proposal_section": "AI创新生态、人才画像与AI+场景",
-      "evidence": {}
-    },
-    {
-      "depth_id": "ai_pilgrimage_landmarks",
-      "title_zh": "AI朝圣地标(不少于3个)",
-      "status": "complete",
-      "proposal_section": "蓝绿空间、公共空间与城市风貌",
-      "evidence": {
-        "geometry_refs": ["geometry/buildings.geojson#BLD-008", "geometry/buildings.geojson#BLD-009", "geometry/buildings.geojson#BLD-005"]
-      }
-    },
-    {
-      "depth_id": "cultural_narrative",
-      "title_zh": "文化叙事",
-      "status": "complete",
-      "proposal_section": "蓝绿空间、公共空间与城市风貌 + 全文贯穿",
-      "evidence": {
-        "geometry_refs": ["geometry/buildings.geojson#BLD-005"]
-      }
-    },
-    {
-      "depth_id": "naming_and_logo",
-      "title_zh": "命名体系与Logo方向",
-      "status": "complete",
-      "proposal_section": "统筹研究范围产业与未来城市研究",
-      "evidence": {}
-    },
-    {
-      "depth_id": "long_term_operations",
-      "title_zh": "长期运营机制",
-      "status": "complete",
-      "proposal_section": "更新项目清单、实施政策与分期计划",
-      "evidence": {
-        "geometry_refs": ["geometry/phasing.geojson"]
-      }
-    },
-    {
-      "depth_id": "green_blue_public_space",
-      "title_zh": "蓝绿空间与公共空间",
-      "status": "complete",
-      "proposal_section": "蓝绿空间、公共空间与城市风貌",
-      "evidence": {
-        "geometry_refs": ["geometry/green_space.geojson", "geometry/public_space.geojson"],
-        "metric_refs": ["green_ratio", "public_space_ratio"]
-      }
-    },
-    {
-      "depth_id": "mobility_system",
-      "title_zh": "交通慢行系统",
-      "status": "complete",
-      "proposal_section": "交通、轨道、市政与公共服务设施",
-      "evidence": {
-        "geometry_refs": ["geometry/roads.geojson"],
-        "metric_refs": ["road_ratio"]
-      }
-    },
-    {
-      "depth_id": "building_renewal",
-      "title_zh": "建筑拆改留方案",
-      "status": "complete",
-      "proposal_section": "用地、建筑规模与拆改留方案",
-      "evidence": {
-        "geometry_refs": ["geometry/buildings.geojson"],
-        "metric_refs": ["total_floor_area_sqm", "building_density"]
-      }
-    },
-    {
-      "depth_id": "phasing_plan",
-      "title_zh": "分期计划",
-      "status": "complete",
-      "proposal_section": "更新项目清单、实施政策与分期计划",
-      "evidence": {
-        "geometry_refs": ["geometry/phasing.geojson"]
-      }
-    },
-    {
-      "depth_id": "metrics_recomputation",
-      "title_zh": "指标复算",
-      "status": "complete",
-      "proposal_section": "指标体系、面积复算与合规矩阵",
-      "evidence": {
-        "metric_refs": ["site_area_sqm", "green_ratio", "public_space_ratio", "road_ratio", "building_density"]
-      }
-    },
-    {
-      "depth_id": "compliance_and_risk",
-      "title_zh": "合规与风险说明",
-      "status": "complete",
-      "proposal_section": "风险、版权与合规说明",
-      "evidence": {
-        "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"]
-      }
+      "proposal_sections": [
+        "## 指标体系、面积复算与合规矩阵"
+      ],
+      "drawing_refs": [
+        "metrics-evidence.png"
+      ],
+      "geometry_refs": [
+        "site_boundary.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "SC-GATE-04"
+      ],
+      "evidence_summary_zh": "指标体系与面积复算已在本方案## 指标体系、面积复算与合规矩阵中完成设计，配套图件和GeoJSON空间数据齐全。"
     }
   ]
 }

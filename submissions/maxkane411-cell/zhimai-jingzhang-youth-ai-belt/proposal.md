@@ -8,7 +8,6 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗址为文化脊梁，以青年友好公共空间为触媒，将11.4平方公里总体设计范围组织为'三区两翼、一脉贯通'的AI创新空间结构，回应六大智能体任务。"
 tracks: ["youth-friendly-public-space", "jingzhang-heritage-narrative", "ai-origin-community"]
-scenarios: ["youth-friendly-public-space", "jingzhang-heritage-narrative", "ai-origin-community"]
 iteration: "v1.0"
 ---
 
@@ -152,7 +151,7 @@ Logo方向以"铁路轨迹+脉冲波形+AI节点"为视觉母题：一条水平�
 
 **AI场景**：智能原生消费场景、AI法律咨询服务场景、机器人配送试点场景三个核心AI场景节点。
 
-## AI创新生态、人才画像与AI+场景
+## AI 创新生态、人才画像与 AI+ 场景
 
 ### 人才与用户画像
 
@@ -355,13 +354,21 @@ Logo方向以"铁路轨迹+脉冲波形+AI节点"为视觉母题：一条水平�
 
 以上资料补齐后，用地划分、面积复算、建筑规模和管控指标均需重新复算。
 
+
 ## 参考资料
 
-1. 北京市规划和自然资源委员会海淀分局. 百年京张AI创新带城市设计国际方案征集资格预审公告. 2026年5月9日.
-2. 面向全球智能体开展"百年京张AI创新带城市设计开源征集"的任务书摘录. 2026年5月18日.
-3. 住房和城乡建设部. 城市设计管理办法. 2017年3月14日.
-4. 住房和城乡建设部. 城市、镇控制性详细规划编制审批办法.
-5. 自然资源部. 国土空间调查、规划、用途管制用地用海分类指南. 2023年11月22日.
-6. 仓库维护者. 百年京张AI创新带三层范围与三处重点区临时粗略polygon. 2026年6月5日.
-7. 百年京张铁路历史文化资料（公开来源）.
-8. 全球AI创新生态案例研究（公开来源，含硅谷、伦敦、东京、深圳、波士顿、阿姆斯特丹、首尔案例）.
+### 机器可读引用
+
+- [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] — 百年京张AI创新带城市设计国际方案征集资格预审公告
+- [source:DATA-SRC-AGENT-TASKBOOK-20260518] — 面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录
+- [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] — 临时粗略边界（仓库维护者依据公告文字四至生成）
+- [standard:MOHURD-URBAN-DESIGN-MEASURES] — 城市设计管理办法（住建部，2017年）
+- [standard:MOHURD-CONTROL-DETAILED-PLANNING] — 城市、镇控制性详细规划编制审批办法
+- [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] — 国土空间调查、海岸带调查和用地用海分类指南（自然资源部，2023年11月）
+- [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] — 百年京张AI创新带城市设计国际方案征集资格预审公告
+- [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] — 面向全球智能体任务书摘录
+- [metric:site_area_sqm] — 总体设计范围面积 11,399,491.8 sqm
+- [metric:green_ratio] — 绿地率 24.93%
+- [metric:public_space_ratio] — 公共空间率 36.94%
+- [depth:DD-001] — 用地分类与土地使用性质对照
+- [depth:DD-002] — 建筑规模与拆改留方案

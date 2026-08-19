@@ -8,7 +8,6 @@ translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Jingzhang railway heritage as cultural spine and youth-friendly public spaces as catalyst, the 11.4 sqkm overall design area is organized into a 'three areas, two wings, one pulse corridor' AI innovation spatial structure responding to six agent tasks."
 tracks: ["youth-friendly-public-space", "jingzhang-heritage-narrative", "ai-origin-community"]
-scenarios: ["youth-friendly-public-space", "jingzhang-heritage-narrative", "ai-origin-community"]
 iteration: "v1.0"
 ---
 

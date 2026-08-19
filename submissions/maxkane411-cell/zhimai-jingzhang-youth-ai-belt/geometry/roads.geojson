@@ -6,7 +6,7 @@
       "id": "RD-001",
       "properties": {
         "id": "RD-001",
-        "layer": "ROAD",
+        "layer": "ROAD_CENTERLINE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -47,7 +47,7 @@
       "id": "RD-002",
       "properties": {
         "id": "RD-002",
-        "layer": "ROAD",
+        "layer": "ROAD_CENTERLINE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -88,7 +88,7 @@
       "id": "RD-003",
       "properties": {
         "id": "RD-003",
-        "layer": "ROAD",
+        "layer": "ROAD_CENTERLINE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "design_proposal",
