@@ -312,6 +312,58 @@
       "assumptions": [
         "参照 GB 50763 与公共空间指标设定"
       ]
+    },
+    "mechanism_verification_scenario_total": {
+      "status": "known",
+      "value": 12,
+      "unit": "scenarios",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "mechanism_state_machine_scenarios",
+      "confidence": "high",
+      "assumptions": [
+        "12 张 AI 场景卡对应 12 个状态机演练场景"
+      ]
+    },
+    "mechanism_verification_scenario_passed": {
+      "status": "known",
+      "value": 12,
+      "unit": "scenarios",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "mechanism_state_machine_passed",
+      "confidence": "high",
+      "assumptions": [
+        "12/12 场景离线演练通过"
+      ]
+    },
+    "mechanism_verification_assertion_total": {
+      "status": "known",
+      "value": 48,
+      "unit": "assertions",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "12_scenarios_x_4_assertions",
+      "confidence": "high",
+      "assumptions": [
+        "每条场景 4 条断言: 离线可演练/人字闸必在/回程票必在/交接记录必在"
+      ]
+    },
+    "mechanism_verification_assertion_passed": {
+      "status": "known",
+      "value": 48,
+      "unit": "assertions",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "mechanism_state_machine_assertions_passed",
+      "confidence": "high",
+      "assumptions": [
+        "48/48 断言通过"
+      ]
     }
   }
 }

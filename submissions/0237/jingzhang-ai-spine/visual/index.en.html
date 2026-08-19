@@ -157,6 +157,76 @@ a{color:var(--k1);}
   <a href="#dataviz">Data Evidence</a>
 </nav>
 
+<!-- OFFLINE REVIEW DESK :: v7.0 -->
+<section id="reviewdesk" style="background:linear-gradient(135deg,#0A1726 0%,#102A45 100%);color:#EAF4FF;padding:26px 34px 30px;margin:0;">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:16px;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span style="font:700 12px/1 monospace;letter-spacing:.18em;color:#8FD0FF;border:1px solid #8FD0FF;padding:5px 12px;border-radius:999px;">OFFLINE REVIEW DESK</span>
+      <span style="font:700 12px/1 monospace;letter-spacing:.14em;color:#E8B65A;border:1px solid #E8B65A;padding:5px 12px;border-radius:999px;">v7.0 · iteration</span>
+      <span style="font:700 12px/1 monospace;letter-spacing:.1em;color:#1FB98A;border:1px solid #1FB98A;padding:5px 12px;border-radius:999px;">Herringbone Rail · Dual-Gate Switch</span>
+    </div>
+    <span style="font-size:12px;color:#9FB6CC;">verifiable numbers for review</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:22px;">
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#8FD0FF;letter-spacing:.08em;margin-bottom:10px;">CORE MECHANISM</div>
+      <svg viewBox="0 0 640 208" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Herringbone dual-gate switch state machine">
+        <defs><linearGradient id="rdSilver" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8FD0FF"/><stop offset="1" stop-color="#2E9BD6"/></linearGradient></defs>
+        <rect x="10" y="10" width="118" height="52" rx="8" fill="#102A45" stroke="#8FD0FF" stroke-width="1.4"/>
+        <text x="69" y="34" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">AI Auto</text>
+        <text x="69" y="50" text-anchor="middle" font-size="9" fill="#9FB6CC">AI-AUTO</text>
+        <line x1="128" y1="36" x2="168" y2="36" stroke="#C9D6E8" stroke-width="1.4"/>
+        <rect x="168" y="10" width="112" height="52" rx="8" fill="#102A45" stroke="#E8B65A" stroke-width="1.4"/>
+        <text x="224" y="34" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">Anomaly</text>
+        <text x="224" y="50" text-anchor="middle" font-size="9" fill="#9FB6CC">ANOMALY</text>
+        <line x1="280" y1="36" x2="320" y2="36" stroke="#C9D6E8" stroke-width="1.4"/>
+        <rect x="320" y="10" width="126" height="52" rx="8" fill="#102A45" stroke="#E8B65A" stroke-width="2"/>
+        <text x="383" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#E8B65A">Dual-Gate Switch</text>
+        <text x="383" y="46" text-anchor="middle" font-size="9" fill="#9FB6CC">GATE SWITCH</text>
+        <path d="M383 10 L399 36 L383 62 L367 36 Z" fill="none" stroke="#E8B65A" stroke-width="1.6"/>
+        <text x="383" y="78" text-anchor="middle" font-size="8" fill="#9FB6CC">upper AI branch ▼ / lower human branch ▲</text>
+        <line x1="446" y1="36" x2="486" y2="36" stroke="#C9D6E8" stroke-width="1.4"/>
+        <rect x="486" y="10" width="144" height="52" rx="8" fill="#102A45" stroke="#1FB98A" stroke-width="1.4"/>
+        <text x="558" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">Signaler Takeover</text>
+        <text x="558" y="46" text-anchor="middle" font-size="9" fill="#9FB6CC">HUMAN TAKEOVER</text>
+        <text x="558" y="64" text-anchor="middle" font-size="8" fill="#1FB98A">return ticket</text>
+        <rect x="10" y="132" width="150" height="52" rx="8" fill="#102A45" stroke="#1FB98A" stroke-width="1.4"/>
+        <text x="85" y="156" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">Baseline Return</text>
+        <text x="85" y="172" text-anchor="middle" font-size="9" fill="#9FB6CC">BASELINE RETURN</text>
+        <line x1="160" y1="158" x2="212" y2="158" stroke="#C9D6E8" stroke-width="1.4"/>
+        <rect x="212" y="132" width="170" height="52" rx="8" fill="#102A45" stroke="#8FD0FF" stroke-width="1.4"/>
+        <text x="297" y="152" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">Handover Record</text>
+        <text x="297" y="168" text-anchor="middle" font-size="9" fill="#9FB6CC">HANDOVER RECORD</text>
+        <text x="297" y="204" text-anchor="middle" font-size="8" fill="#9FB6CC">what was handed over + next shift accepts</text>
+        <path d="M558 62 L558 96 L440 96 L440 130" fill="none" stroke="#1FB98A" stroke-width="1.6" stroke-dasharray="5 4"/>
+        <text x="499" y="90" text-anchor="middle" font-size="8" fill="#1FB98A">harmless exit</text>
+        <circle cx="40" cy="90" r="3" fill="#8FD0FF"/><text x="50" y="94" font-size="8" fill="#9FB6CC">12/12 scenarios · 48/48 assertions · fully offline reproducible</text>
+      </svg>
+      <div style="font-size:12px;color:#C9D6E8;line-height:1.7;margin-top:8px;">"The Jing-Zhang train turns around on a herringbone slope; the city's AI hands control back at a herringbone gate." — the Qinglongqiao herringbone track translated into an AI-governance mechanism: a dual gate at every decision node, a mandatory signaler at key nodes, and any AI service can exit harmlessly back to baseline service.</div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#8FD0FF;letter-spacing:.08em;margin-bottom:10px;">REVIEWER QUICK-CHECK</div>
+      <table style="width:100%;border-collapse:collapse;font-size:11.5px;">
+        <tr style="border-bottom:1px solid #2A4666;"><th style="text-align:left;padding:5px 6px;color:#8FD0FF;font-weight:700;">Question</th><th style="text-align:left;padding:5px 6px;color:#8FD0FF;font-weight:700;">Answer</th><th style="text-align:left;padding:5px 6px;color:#8FD0FF;font-weight:700;">Evidence</th></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Original concept?</td><td style="padding:5px 6px;color:#C9D6E8;">Herringbone Rail · Dual-Gate Switch</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">12/12 · 48/48</td></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Space explicit?</td><td style="padding:5px 6px;color:#C9D6E8;">3 scope layers + 3 areas/2 wings + 5 figures</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">9 layers recalc.</td></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Implementable?</td><td style="padding:5px 6px;color:#C9D6E8;">3-phase roadmap + signaler posts + metrics</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">phase/actors aligned</td></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Public interest?</td><td style="padding:5px 6px;color:#C9D6E8;">65 communities / 10 universities / 500k residents</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">matrices in package</td></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Data trustworthy?</td><td style="padding:5px 6px;color:#C9D6E8;">Statistics Bureau + Public Data Platform</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">3 official sources</td></tr>
+        <tr><td style="padding:5px 6px;color:#EAF4FF;">Boundary honest?</td><td style="padding:5px 6px;color:#C9D6E8;">provisional ≠ redline; field 0 awaiting auth.</td><td style="padding:5px 6px;color:#E8B65A;font-weight:700;">truthfully marked</td></tr>
+      </table>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+        <span style="background:#122C47;border:1px solid #2E9BD6;color:#8FD0FF;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Gates 4/4 PASS</span>
+        <span style="background:#122C47;border:1px solid #2E9BD6;color:#8FD0FF;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Self-check 8/8</span>
+        <span style="background:#122C47;border:1px solid #1FB98A;color:#5FE0B4;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Mechanism 12/12</span>
+        <span style="background:#122C47;border:1px solid #1FB98A;color:#5FE0B4;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Assertions 48/48</span>
+        <span style="background:#122C47;border:1px solid #E8B65A;color:#E8B65A;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Task map 19/19</span>
+        <span style="background:#122C47;border:1px solid #7B68EE;color:#B3A6F5;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Field 0 awaiting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="overview">
   <h2>Overview <span class="sub">Three scopes · Three areas + Two wings · One AI spine</span></h2>
   <div class="scope-row">
