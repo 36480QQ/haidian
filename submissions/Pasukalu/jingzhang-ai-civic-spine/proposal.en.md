@@ -46,6 +46,31 @@ The coordinated research scope's core task is building a world-class AI innovati
 
 The proposal must respond to the "Five Functions" (AI full-stack autonomous innovation, world-class AI innovation ecology, AI+ scenario empowerment, intelligent AI vitality city, AI governance global discourse) and "Three Districts Two Wings" coordination (Three Districts: Zhongzhiyuan, Origin Community, Dazhongsi; Two Wings: Zhongguancun technology service wing, Xiaoyuehe scenario empowerment wing).
 
+### Global AI Innovation Ecosystem Case Studies (agent.2)
+
+This proposal examines 8 global AI innovation ecosystem cases to extract transferable spatial, operational, and scenario mechanisms:
+
+| Case | City | Core Experience | Spatial Translation |
+|------|------|-----------------|-------------------|
+| King's Cross | London | Railway heritage renewal, Google Campus, Central Saint Martins, 12-year phased operation | Railway heritage + tech symbiosis, direct reference for Civic Spine main axis |
+| Silicon Valley | San Jose | University-industry revolving door, dense VC, open-source culture | Campus-community-industry seamless fusion, reference for Zhongzhiyuan |
+| Kendall Square | Boston | MIT innovation district, biotech density, walkable scale | Research institution + public space high-density interweaving, reference for Origin Community |
+| Shibuya Q-WA | Tokyo | AI city lab, data-driven public space | Public space as AI testing ground, reference for Xiaoyuehe wing |
+| Digital Media City | Seoul | Digital media industry cluster, public cultural facilities | Industry + cultural facilities parity, reference for Dazhongsi |
+| One-North | Singapore | Biotech + tech mixed-use, One-North park integration | Industry + green park integration, reference for blue-green system |
+| Nanshan Tech Park | Shenzhen | Complete industry chain, government guidance, enterprise-led | Full-stack industry chain spatial organization, reference for Zhongguancun wing |
+| Zhongguancun Existing Ecology | Beijing | Dense universities, active startups, policy leadership | Local experience continuation, reference for belt + three cores |
+
+The shared lesson: successful AI innovation ecosystems require high-density mixing of research, public, industrial, and living spaces; continuous pedestrian and cycling networks; cultural narratives for identity; and long-term community operations rather than one-time construction. King's Cross railway heritage renewal is particularly relevant to the Jing-Zhang Railway Heritage Park [source:AGENT-TASKBOOK].
+
+### AI Innovation Ecosystem Map
+
+The ecosystem map translates these experiences into four dimensions: basic research (universities, labs, open-source communities), industry incubation (accelerators, co-working, pilot spaces), capital services (VC, policy funds, tech services), and scenario application (testing grounds, exhibition spaces, public experience). These four layers correspond spatially to Zhongzhiyuan's R&D land, Origin Community's incubation space, Zhongguancun wing's capital services, and Xiaoyuehe wing's scenario testing [depth:industry_space_mapping].
+
+### Three-Districts Two-Wings Coordination Framework
+
+Based on case studies and the ecosystem map, the proposal establishes: Zhongzhiyuan (innovation acceleration) benchmarked against Kendall Square; Origin Community (talent and transformation) against King's Cross; Dazhongsi (industry and international exchange) against Digital Media City; Xiaoyuehe wing (scenario testing) against Shibuya Q-WA; Zhongguancun wing (capital services) against Nanshan Tech Park. Regional coordination conceptually links Beicheng community, Future Science City, Huairou Science City, Jing-Jin-Ji — specific cooperation models subject to formal negotiation, not confirmed arrangements [source:AGENT-TASKBOOK].
+
 ## Overall Design: Urban Renewal and Regulatory-Depth Urban Design
 
 The overall design scope must achieve control detailed planning urban design depth. The proposal provides urban renewal spatial structure, inefficient space identification, renewal project list, implementation policy recommendations, industrial function proportions, spatial organization models, total building scale, and comprehensive carrying capacity assessment.
