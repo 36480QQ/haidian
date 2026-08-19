@@ -295,6 +295,7 @@ def official_feature(feature_id: str, layer: str, geometry: dict, **props) -> di
 
 
 def write_official_site_package(root: Path) -> None:
+    write_land_use_registry(root)
     geometry_dir = root / "brief" / "site-package" / "geometry"
     geometry_dir.mkdir(parents=True, exist_ok=True)
     features = [
@@ -324,7 +325,15 @@ def write_official_site_package(root: Path) -> None:
     )
 
 
+def write_land_use_registry(root: Path) -> None:
+    enum_dir = root / "brief" / "site-package" / "enums"
+    enum_dir.mkdir(parents=True, exist_ok=True)
+    source = REPO_ROOT / "brief" / "site-package" / "enums" / "land_use_codes.json"
+    (enum_dir / "land_use_codes.json").write_bytes(source.read_bytes())
+
+
 def write_provisional_site_package(root: Path) -> None:
+    write_land_use_registry(root)
     geometry_dir = root / "brief" / "site-package" / "geometry"
     geometry_dir.mkdir(parents=True, exist_ok=True)
     source = REPO_ROOT / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson"
@@ -485,7 +494,7 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             self.assertEqual(expected, {key: agent[key] for key in expected})
             self.assertEqual(expected, {key: manifest["agent"][key] for key in expected})
 
-    def test_scaffold_uses_commercial_service_code_for_commercial_partition(self) -> None:
+    def test_scaffold_land_use_code_labels_match_registry(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             output_dir = Path(tmp) / "submissions" / "alice" / "land-use-codes"
             scaffold = run_scaffold(output_dir)
@@ -494,20 +503,23 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             land_use = json.loads(
                 (output_dir / "geometry" / "land_use.geojson").read_text(encoding="utf-8")
             )
-            commercial = [
-                feature
-                for feature in land_use["features"]
-                if "商业服务" in feature["properties"].get("name_zh", "")
-            ]
-            self.assertEqual(1, len(commercial))
-            self.assertEqual("09", commercial[0]["properties"]["land_use_code"])
-            self.assertNotIn(
-                "05",
-                {
-                    feature["properties"].get("land_use_code")
-                    for feature in commercial
-                },
+            registry = json.loads(
+                (REPO_ROOT / "brief/site-package/enums/land_use_codes.json").read_text(
+                    encoding="utf-8"
+                )
             )
+            labels = {item["code"]: item["label_zh"] for item in registry["codes"]}
+            generated = {
+                feature["properties"]["land_use_code"]: feature["properties"]["name_zh"]
+                for feature in land_use["features"]
+            }
+
+            self.assertEqual(
+                {code: labels[code] for code in generated},
+                generated,
+            )
+            self.assertIn("09", generated)
+            self.assertNotIn("05", generated)
 
     def test_finalize_blocks_v2_package_without_required_bilingual_files(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
