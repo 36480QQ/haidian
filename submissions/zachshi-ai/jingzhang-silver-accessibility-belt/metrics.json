@@ -418,6 +418,30 @@
       "confidence": "high",
       "assumptions": [],
       "rationale": "60"
+    },
+    "connection_strength_level_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/connection-measurability.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "3"
+    },
+    "connection_strength_case_count": {
+      "status": "known",
+      "value": 60,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/connection-measurability.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "60"
     }
   }
 }
