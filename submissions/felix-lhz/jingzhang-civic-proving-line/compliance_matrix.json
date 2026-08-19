@@ -1454,5 +1454,43 @@
     "annual_program": "YEAR-SPRING..WINTER",
     "pilot": "S7-90D / P90-01..05",
     "field_status": "not_field_run"
+  },
+  "v9_evidence_index": {
+    "agent.1": {
+      "section": "总体设计范围城市更新与控规深度城市设计",
+      "figure": "assets/figures/site-overview.png",
+      "data": "visual/assets/spatial-atlas.json",
+      "conclusion": "一脊三站两翼通过连续公共空间、三种地标和六条缝合形成总体城市设计。"
+    },
+    "agent.2": {
+      "section": "产业生态、人才与未来城市研究",
+      "figure": "assets/figures/ecosystem-synergy.png",
+      "data": "visual/assets/two-answers.json",
+      "conclusion": "能力必须经过复现、受控验证、人工决定和知识归档后进入城市。"
+    },
+    "agent.3": {
+      "section": "AI 创新生态、人才画像与 AI+ 场景",
+      "figure": "assets/figures/key-areas.png",
+      "data": "visual/assets/two-answers.json",
+      "conclusion": "十二场景均具有同题普通答案、AI增量、负责人、测量、停止和恢复。"
+    },
+    "agent.4": {
+      "section": "三座回执地标、文化里程与国际传播",
+      "figure": "assets/figures/key-areas.png",
+      "data": "visual/assets/spatial-atlas.json",
+      "conclusion": "验真环、共译门、回执廊关闭标题后仍由环、门、十字加单侧湾辨认。"
+    },
+    "agent.5": {
+      "section": "蓝绿空间、公共空间与城市风貌",
+      "figure": "assets/figures/mobility-bluegreen.png",
+      "data": "visual/assets/spatial-atlas.json",
+      "conclusion": "触觉、高对比、双语、无智能手机入口和城市证据里程共同形成国际公共识别。"
+    },
+    "agent.6": {
+      "section": "一带全球 AI 创新活动体系与长期运营设计",
+      "figure": "assets/figures/metrics-evidence.png",
+      "data": "visual/assets/e2-readiness.json",
+      "conclusion": "90天试点、8道许可、16项构件、5类表单和城市采纳年构成长效运营证据。"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6.0",
+  "schema_version": "1.7.0",
   "dataset_id": "jingzhang-two-answers-spatial-atlas",
   "status": "concept_proposal_under_provisional_boundaries",
   "view_box": [
@@ -3307,7 +3307,7 @@
     "zh": "仅为临时边界下的概念性空间布局；不得作为现状测绘、法定总平面、道路红线或审批依据。",
     "en": "Conceptual spatial layout under provisional boundaries; not a survey, statutory plan, road redline or approval basis."
   },
-  "publication_version": "V8",
+  "publication_version": "V9",
   "context_dataset": "context-open-map.json",
   "spine": {
     "id": "public_baseline_spine",
@@ -3347,8 +3347,8 @@
     "status": "concept_proposal"
   },
   "subtitle": {
-    "zh": "三站一历：三座回执地标与一个城市年度",
-    "en": "Three Stations, One Civic Year: three receipt landmarks and one operating calendar"
+    "zh": "可验证的城市样机",
+    "en": "Verifiable Civic Prototype"
   },
   "hero_scenes": [
     "SCN-002",
@@ -3443,7 +3443,10 @@
         "SCN-002",
         "SCN-003"
       ],
-      "status": "concept_proposal"
+      "status": "concept_proposal",
+      "prototype_readiness": "pending_survey",
+      "experience_view": "assets/figures/concept-t2-v9.webp",
+      "experience_view_status": "concept_generated_not_site_evidence"
     },
     {
       "id": "LMK-02",
@@ -3481,7 +3484,10 @@
         "SCN-005",
         "SCN-006"
       ],
-      "status": "concept_proposal"
+      "status": "concept_proposal",
+      "prototype_readiness": "pending_survey",
+      "experience_view": "assets/figures/concept-s2-v9.webp",
+      "experience_view_status": "concept_generated_not_site_evidence"
     },
     {
       "id": "LMK-03",
@@ -3521,7 +3527,10 @@
         "SCN-011",
         "SCN-012"
       ],
-      "status": "concept_proposal"
+      "status": "concept_proposal",
+      "prototype_readiness": "ready_documented",
+      "experience_view": "assets/figures/concept-s7-v9.webp",
+      "experience_view_status": "concept_generated_not_site_evidence"
     }
   ],
   "annual_program_refs": [
@@ -3567,5 +3576,56 @@
         "evidence_source": "agent_generated_design"
       }
     ]
-  }
+  },
+  "prototype_readiness": {
+    "status": "ready_documented",
+    "scope": "S7_DAZHONGSI_FLAGSHIP",
+    "field_status": "not_field_run",
+    "readiness_pack_ref": "visual/assets/e2-readiness.json"
+  },
+  "readiness_gate": "ordinary_baseline_survey_permits_independent_posts_forms_complete_before_TRIAL",
+  "survey_dependency": [
+    "official_boundary",
+    "topographic_survey",
+    "ownership",
+    "station_exits",
+    "utilities",
+    "fire_access",
+    "traffic_counts"
+  ],
+  "permit_checklist": [
+    "PERMIT-SITE",
+    "PERMIT-TITLE",
+    "PERMIT-FIRE",
+    "PERMIT-ACCESS",
+    "PERMIT-POWER",
+    "PERMIT-NET",
+    "PERMIT-TRAFFIC",
+    "PERMIT-EQUIP"
+  ],
+  "bill_of_components": [
+    "KIT-PAV-01",
+    "KIT-ACC-01",
+    "KIT-ACC-02",
+    "KIT-BGR-01",
+    "KIT-SHA-01",
+    "KIT-FUR-01",
+    "KIT-WAT-01",
+    "KIT-LGT-01",
+    "KIT-SAF-01",
+    "KIT-SAF-02",
+    "KIT-EVD-01",
+    "KIT-EVD-02",
+    "KIT-OPS-01",
+    "KIT-AI-01",
+    "KIT-DAT-01",
+    "KIT-RET-01"
+  ],
+  "form_refs": [
+    "FORM-BASELINE",
+    "FORM-TRIAL",
+    "FORM-INCIDENT",
+    "FORM-RECOVERY",
+    "FORM-RECEIPT"
+  ]
 }

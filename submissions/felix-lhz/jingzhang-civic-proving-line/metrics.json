@@ -361,7 +361,7 @@
       "assumptions": [
         "A-METRICS-001"
       ],
-      "reason": "V5 is an E1 concept design; no field prototype or controlled trial has occurred."
+      "reason": "V9 documents E2 prototype readiness only; no survey, permit, assembly, baseline, controlled trial or adoption has occurred."
     },
     "s7_traceable_spatial_object_count": {
       "status": "known",
@@ -409,15 +409,15 @@
     },
     "s7_prototype_kit_item_count": {
       "status": "known",
-      "value": 17,
+      "value": 16,
       "unit": "count",
       "source_files": [
-        "visual/assets/spatial-atlas.json"
+        "visual/assets/e2-readiness.json"
       ],
-      "formula": "count(local_design.prototype_kit)",
+      "formula": "count(e2-readiness.bill_of_components)",
       "confidence": "high",
       "assumptions": [
-        "A-V7-S7-DIMENSIONS"
+        "ASM-V9-E2"
       ]
     },
     "s7_formal_cost_status": {
@@ -498,6 +498,59 @@
         "A-V8-OPERATIONS"
       ],
       "reason": "The ledger contract exists, but no field prototype, trial or civic decision has occurred."
+    },
+    "e2_permit_gate_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/e2-readiness.json"
+      ],
+      "formula": "count(e2-readiness.permit_checklist)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V9-E2"
+      ]
+    },
+    "e2_printable_form_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/e2-readiness.json"
+      ],
+      "formula": "count(e2-readiness.forms where printable=true)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V9-E2"
+      ]
+    },
+    "e2_procurement_package_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/e2-readiness.json"
+      ],
+      "formula": "count(e2-readiness.procurement_packages)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V9-E2"
+      ]
+    },
+    "e2_readiness_status": {
+      "status": "unknown",
+      "value": null,
+      "unit": "status",
+      "source_files": [
+        "visual/assets/e2-readiness.json"
+      ],
+      "formula": "field readiness becomes known only after survey and all permit gates close",
+      "confidence": "unknown",
+      "assumptions": [
+        "ASM-V9-E2"
+      ],
+      "reason": "E2 documents are prepared, but survey, permits, quotes, assembly and field operation have not occurred."
     }
   }
 }
