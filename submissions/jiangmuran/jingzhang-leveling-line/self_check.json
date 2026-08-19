@@ -891,7 +891,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The five executables the reviewer is told to run, proven able to fail.",
-      "message": "shipped_verifier_qa.py — shipped verifiers: 3 of the shipped executables are proven able to fail — each was run against a package with one published value made false and each refused it by name (verify.js, check_osm.js, check_closure.js); the tree is byte-identical after"
+      "message": "shipped_verifier_qa.py — shipped verifiers: 5 of the shipped executables are proven able to fail — each was run against a package with one published value made false and each refused it by name (verify.js, check_osm.js, check_closure.js, check_cards.js, run_s08_tabletop.js); the tree is byte-identical after"
     },
     {
       "check_id": "PKG_SOURCE_CITATION_QA",
