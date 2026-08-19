@@ -39,7 +39,7 @@ scenarios:
 | **Next candidate** | At the Dazhongsi staffed service portal, use the existing `JZ-05 × SCENE-011 × T-02` set to form one candidate chain: staffed-counter/static-guide baseline → side-positioned shadow proof → stop and human takeover → independent retest, all using the same frozen question set. | This is an **editorial review order** for this round, not a new project, site selection, priority, roster, partner, approved pilot, or implementation commitment. |
 | **Current block** | Accountable parties, exact site, real threshold, source coverage, staffed capacity, approval, real service, and independent retest all remain 0 or `unknown`; any open item keeps G0 / NO-GO. | Document completeness, machine PASS, restoration of ordinary use, or graphic clarity cannot create authorization, approval, restart, or maturity advancement. |
 
-![Three-frame site reading: published background orientation, the provisional design container, and Twin-Track Jing-Zhang design relationships remain separate and never co-register; G0 concept, provisional geometry, not to scale, with no official redline or station anchor claimed](assets/figures/site-overview.en.png)
+![Twin-Track Jing-Zhang conceptual spatial relay: a continuous civic track links the three non-interchangeable switchyards at Zhongzhiyuan, Origin Community, and Dazhongsi, while intermittent proof, two supply wings, and a failure siding stay inside a provisional container; G0, provisional, not to scale](assets/figures/site-overview.en.png)
 
 > **Editorial hierarchy: 13 required chapters + 8 extended evidence units.** The required proposal consists of Chapters 1–12, from “Design Basis and Source List” through “Risk, Copyright, and Compliance,” plus Chapter 13, “References,” at the end. This reading entry is Extended Evidence E0; the seven H3 deep-read units between Chapters 12 and 13 are E1–E7. Extended evidence expands verification, professional handoff, and field-replacement rules. It does not replace a required chapter or change any G0 status, provisional boundary, unknown, non-AI path, rights block, or professional veto.
 
@@ -68,7 +68,7 @@ Each question below has one front-stage primary answer. The proposal, A3 and A0 
 
 **Package navigation and review handoff index.** Review locating for all 155 package paths lives in `visual/assets/review-handoff-index.json`: seven reading routes (the 30-second / 3-minute / 15-minute entries, the five-step accessible walk, all 21 chapter reading units, the D01–D08/H01–H07 handoff and the [eight-question cold-read answer map](visual/index.en.html#cold-read-answer-map)) plus a per-file registry with five statuses (current / historical snapshot / machine input / frozen / provisional), language pairs, round provenance and rights backlinks. `round15-baseline.json` is a historical snapshot rather than current state, and `t02-g0-g1-replay-fixtures.json` is synthetic-replay machine input; neither may be misread as current evidence. The index only locates; it creates no evidence and changes no maturity or rights state [data:visual/assets/review-handoff-index.json].
 
-Figure 01 deliberately separates three frames. **A, background orientation**, converts published reports into field questions; it is not survey or as-built evidence. **B, the provisional design container**, supports concept organization and intake checks only; it is not an official redline. **C, design relationships**, shows task relay, adjacent proof, staffed handover, stop, and restoration only; it establishes no coordinate, distance, or approval order. The three frames must not be merged into one apparently real site map. The recorded 0% overlap and about 412.5-metre separation in the existing OSM background check remain an unresolved background divergence. `PROV-KEY-003` remains unanchored to Dazhongsi station, a road, parcel, or building. The geometry therefore stays in place, with explicit recalculation triggers [data:visual/assets/site-grounding-register.json#JZ-SITE-READING-R17] [assumption:A-SITE-READING-020].
+Figure 01 draws the **conceptual spatial relay only**: the continuous civic track links the three switchyards first; intermittent proof appears beside it; two supply wings bring problems and professional advice; and the failure siding stops only the proof overlay. The outer dashed line is a provisional design container. North–south is reading order, not a coordinate, distance, station anchor, approval order, or construction alignment. Published background orientation remains a set of field questions and is not co-registered with design relationships to make an apparently real site plan. The recorded 0% overlap and about 412.5-metre separation in the existing OSM background check remain an unresolved background divergence. `PROV-KEY-003` remains unanchored to Dazhongsi station, a road, parcel, or building. The geometry therefore stays in place, with explicit recalculation triggers [data:visual/assets/site-grounding-register.json#JZ-SITE-READING-R17] [assumption:A-SITE-READING-020].
 
 The proposal retains twelve existing machine-readable scenes, eight projects, and three key areas. The front-matter `scenarios` list uses the repository’s six current scenario-registry families only as discovery metadata; it deletes, renumbers, and advances no `SCENE-*` object. Chinese and English prose, structured evidence, figures, and the offline entry share one conclusion: **document completeness proves neither field maturity nor approval.** [assumption:A-JURY-CONVERGENCE-019] [assumption:A-SITE-READING-020]
 
@@ -218,7 +218,7 @@ The six lateral interface lines and the north–south main line form a fishbone 
 
 The building layer uses massing prototypes to express priority intervention capacity; it does not simulate the complete existing city. Each prototype is marked as retain for assessment, adaptive-reuse candidate, or new-build candidate. Without evidence from surveys, ownership, structural conditions, heritage controls, and regulatory planning, none may be converted into a demolition or construction conclusion. Floor area ratio, total floor area, building height, road red lines, parking, and municipal capacity remain `unknown` [assumption:A-SPATIAL-REPRESENTATION-002] [depth:development_intensity_controls] [depth:height_massing_character].
 
-![Land-use structure and spatial transmission](assets/figures/land-use-structure.en.png)
+![Thirty-six conceptual functional envelopes organized along a continuous ordinary ground level and constrained by three spatial duties: ordinary continuity, proof beside, and exit plus restoration; not statutory parcels or approved uses](assets/figures/land-use-structure.en.png)
 
 ## Detailed Design of Key Areas
 
@@ -425,7 +425,7 @@ Municipal and new infrastructure follows four principles: edge-based, minimal, r
 
 Public services use a nested logic of an “outer fifteen-minute planning framework + inner five-minute support cells.” The fifteen-minute layer proposes connections among talent advice, childcare, health, legal support, meetings, accessibility, and community activities. During co-creation or testing, the five-minute layer requires walkable access to staffed help, rest, toilets, basic supplies, and screen-free information. The five-minute objective comes from Haidian’s public priorities, but without real population, facility capacity, walking-network, and service-radius data, the plan does not claim that coverage already exists [source:HAIDIAN-JZ-MIDTERM-2026]. Every intelligent service must coexist with staffed counters, telephone, print, or physical wayfinding. Non-AI access coverage is recalculated from public-space attributes [metric:non_ai_access_coverage_ratio].
 
-![Six spatial interfaces, slow mobility, blue-green systems, and scenario nodes](assets/figures/mobility-bluegreen.en.png)
+![Human-scale ordinary journey: enter, understand, complete, ask, and leave are supported by a continuous non-AI route, blue-green base, and maintenance clearance; optional shadow proof stays off-route and failure stops only the proof overlay](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -612,7 +612,7 @@ All area ratios using the provisional boundary as their denominator have `low` c
 
 `compliance_matrix.json` maps all 23 tasks to task-specific prose, Features, metrics, sources, assumptions, and checks. `standard_matrix.json` and `design_depth_matrix.json` apply the same item-level evidence allocation to professional requirements; none uses a duplicated generic evidence bundle.
 
-![From field coverage to evidence maturity](assets/figures/metrics-evidence.en.png)
+![Evidence decision ladder: package reviewability and the T-02 synthetic proof are complete; JZ-05 × SCENE-011 × T-02 is the next editorial candidate, while eight real-evidence blocks and unaccepted professional duty still block G1](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
 
