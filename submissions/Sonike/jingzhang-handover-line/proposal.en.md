@@ -545,6 +545,20 @@ Graphics, drawings, writing, geometric deductions, offline pages and tabletop re
 
 Audio is produced by local speech synthesis and contains no real voice samples [source:TTS-MACOS-SYNTH]; toolchain dependencies and their licences are registered item by item [source:TOOLCHAIN-BUILD]. External use must never imply government endorsement, implementation approval, built status or completed public participation [assumption:A-FONT-001].
 
+Each output maps to how it was produced, and every check uses only files inside the package plus common tools:
+
+| Output | How it was produced | How to check it yourself |
+| --- | --- | --- |
+| The 26 raster figures | Rendered programmatically from `geometry/*.geojson` and `metrics.json`; no external image, map or layout is traced | Every area, length and count on a figure recomputes from the package geometry and metrics; projection and scale bar are printed on the figure |
+| The four PDF drawing sets | Composed from the same rendered outputs; Chinese uses an embedded OFL face, Latin uses the PDF base fourteen | Read the embedded column of `pdffonts`; `pdftotext <pdf> - \| grep -c "PACKAGE v"` should equal the page count |
+| The two offline pages | Rendered from `proposal.md` with hand-written layout; no external resource is referenced | `grep -c 'https\?://' visual/index.html` returns 0, and the page opens with the network off |
+| The twelve synthetic shift ledgers and the rehearsal record | Synthetic data constrained by `shift-ledger.schema.json`, replayed one by one through the offline state machine | The `tasks` array in `simulation.json` recomputes task count, success rate, assertion count and pass rate |
+| Audio and video guides | Local speech synthesis with programmatic captions; no real voice sample is used | Caption text shares its source with the matching chapters and can be compared paragraph by paragraph |
+| All structured files | Written by hand and checked by script | The four gates of `scripts/self_check_submission.py` can each be rerun |
+
+The rendering scripts stay outside the repository under the submission rules: deterministic validation of a submission directory accepts data and asset extensions only. Reproducibility therefore rests on outputs recomputing from package data. Every check in the table above uses package files and common command-line tools, so a reader can verify it without holding the scripts [depth:metrics_recalculation] [assumption:A-FONT-001].
+
+
 ### This proposal's licence: not interpreting a blank identifier, but granting rights
 
 `COMMUNITY-DISPLAY-ONLY` is not a licence this proposal invented. It is one of the three enum values of the `license` field in the organiser's own `schema/proposal.schema.json` (the other two being `CC-BY-4.0` and `CC-BY-SA-4.0`). The identifier appears five times across the mainline — in `agent.html`, `schema/proposal.schema.json`, `scripts/scaffold_ai_submission.py`, `scripts/validate_submission.py`, and `templates/proposal.md` — always as an enum value, a template placeholder, or a validation whitelist, and **nowhere are its terms defined**. What follows is therefore a reading of an identifier the organiser left blank, not a self-made licence.

@@ -545,6 +545,20 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 
 音频由本机语音合成生成、不含真人音色样本 [source:TTS-MACOS-SYNTH]；工具链依赖及其许可逐项登记 [source:TOOLCHAIN-BUILD]。任何外部使用不得暗示政府背书、实施批准、已建成或已完成公众参与 [assumption:A-FONT-001]。
 
+产出与生成方式逐项对应，复核方式只用包内文件和通用工具：
+
+| 产出 | 生成方式 | 复核方式（读者可当场执行） |
+| --- | --- | --- |
+| 26 张栅格图件 | 由 `geometry/*.geojson` 与 `metrics.json` 程序化渲染，未描摹任何外部图片、地图或版式 | 图上每一处面积、长度与计数都能用包内几何与指标复算；投影与比例尺标在图内 |
+| 四套 PDF 图纸 | 由同一批渲染产物排版合成；中文嵌入 OFL 字体，拉丁使用 PDF 基础十四款 | `pdffonts` 看嵌入列；`pdftotext <pdf> - \| grep -c "PACKAGE v"` 的命中数应等于页数 |
+| 两份离线网页 | 由 `proposal.md` 渲染并加手写版式，不引用任何外部资源 | `grep -c 'https\?://' visual/index.html` 结果为 0；断网打开可用 |
+| 十二份合成交接账与离线演练记录 | 合成数据由 `shift-ledger.schema.json` 约束，离线状态机逐条重放 | `simulation.json` 的 `tasks` 数组可复算任务数、成功率、断言数与通过率 |
+| 音频与视频导览 | 本机语音合成加程序化字幕，不含真人音色样本 | 字幕文本与正文对应章节同源，可逐段比对 |
+| 全部结构化文件 | 手工编写并由脚本校验 | `scripts/self_check_submission.py` 的四道 gate 可逐条复跑 |
+
+渲染脚本按投稿规则保留在仓库之外——投稿目录的确定性校验只接受数据与素材类扩展名。因此本包的可复核性由「产出能被包内数据复算」承担：上表每一行的复核方式都只用包内文件与通用命令行工具，读者不需要拿到脚本也能自己验一遍 [depth:metrics_recalculation] [assumption:A-FONT-001]。
+
+
 ### 本方案的许可：不解释组织方留空的标识，直接授权
 
 `COMMUNITY-DISPLAY-ONLY` 不是本方案自造的标识，而是组织方 `schema/proposal.schema.json` 中 `license` 字段的三个枚举值之一（另两个是 `CC-BY-4.0` 与 `CC-BY-SA-4.0`）。该标识在主线中共出现五次——`agent.html`、`schema/proposal.schema.json`、`scripts/scaffold_ai_submission.py`、`scripts/validate_submission.py`、`templates/proposal.md`——全部是枚举值、模板占位或校验白名单，**没有任何一处给出条款内容**。所以本节写的不是一份自造许可，而是对组织方留空标识的读法。
