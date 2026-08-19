@@ -61,6 +61,31 @@ The Coordinated Research does not introduce falsely precise redlines; through th
 
 Future urban form research should answer how artificial intelligence changes work, life, socializing, learning, transportation, and public services. The proposal should translate AI transportation systems, continuous green space, innovation service facilities, and an internationalized live-work atmosphere into locatable functional zones, nodes, corridors, and scenarios, rather than broadly describing technology visions. The agent should write industrial strategy metrics, AI innovation indices, talent density, spatial supply types, and AI+ vertical application focus areas into the metric system, and indicate which are official, which are design recommendations, and which await calibration with formal data. Any proposals for global AI innovation activities, developer communities, open scenarios, or pilgrimage routes should be written as "conceptual recommendations / reference schemes / subjects for further specialized study," and must not be written as already-confirmed government activities or implementation arrangements.
 
+### Global AI Innovation Ecosystem Case Studies (agent.2)
+
+This proposal examines 8 global AI innovation ecosystem cases to extract transferable spatial, operational, and scenario mechanisms:
+
+| Case | City | Core Experience | Spatial Translation |
+|------|------|-----------------|-------------------|
+| King's Cross | London | Railway heritage renewal, Google Campus, Central Saint Martins, 12-year phased operation | Railway heritage + tech symbiosis, direct reference for Jing-Zhang main axis |
+| Silicon Valley | San Jose | University-industry revolving door, dense VC, open-source culture | Campus-community-industry seamless fusion, reference for Zhongzhiyuan |
+| Kendall Square | Boston | MIT innovation district, biotech density, walkable scale | Research institution + public space high-density interweaving, reference for Origin Community |
+| Shibuya Q-WA | Tokyo | AI city lab, data-driven public space | Public space as AI testing ground, reference for multi-point scenario nodes |
+| Digital Media City | Seoul | Digital media industry cluster, public cultural facilities | Industry + cultural facilities parity, reference for Dazhongsi |
+| One-North | Singapore | Biotech + tech mixed-use, One-North park integration | Industry + green park integration, reference for blue-green slow-mobility ring |
+| Nanshan Tech Park | Shenzhen | Complete industry chain, government guidance, enterprise-led | Full-stack industry chain spatial organization, reference for three-core industry nodes |
+| Zhongguancun Existing Ecology | Beijing | Dense universities, active startups, policy leadership | Local experience continuation, reference for belt + three cores |
+
+The shared lesson: successful AI innovation ecosystems require high-density mixing of research, public, industrial, and living spaces; continuous pedestrian and cycling networks; cultural narratives for identity; and long-term community operations. King's Cross railway heritage renewal is particularly relevant to the Jing-Zhang Railway Heritage Park [source:AGENT-TASKBOOK].
+
+### AI Innovation Ecosystem Map
+
+The ecosystem map translates these experiences into four dimensions: basic research, industry incubation, capital services, and scenario application. These correspond spatially to Zhongzhiyuan's R&D land, Origin Community's incubation space, Dazhongsi's capital services, and multi-point scenario testing [depth:industry_space_mapping].
+
+### Three-Districts Two-Wings Coordination Framework
+
+Based on case studies, the proposal establishes: Zhongzhiyuan benchmarked against Kendall Square; Origin Community against King's Cross; Dazhongsi against Digital Media City; Xiaoyuehe wing against Shibuya Q-WA; Zhongguancun wing against Nanshan Tech Park. Regional coordination conceptually links Beicheng community, Future Science City, Huairou Science City, Jing-Jin-Ji — specific cooperation models subject to formal negotiation [source:AGENT-TASKBOOK].
+
 ## Overall Design Area: Urban Renewal and Regulatory-Planning-Depth Urban Design
 
 The Overall Design Area requires reaching the urban design depth of Regulatory Detailed Planning. The proposal must present an overall urban renewal spatial structure, identification of inefficient space, a renewal project list, implementation policy recommendations, industrial functional proportions, spatial organization models, total building scale, and comprehensive carrying-capacity assessment. `geometry/land_use.geojson` should fully cover the design boundary without overlap; `geometry/buildings.geojson` should express renewal-building footprints or retained-building footprints; `geometry/roads.geojson` should express micro-circulation, slow mobility, and rail-station connections; and `metrics.json` should recalculate core areas, ratios, and layer counts.
