@@ -535,7 +535,99 @@
       "sampling_scope_en": "the full length of ROAD-001, with denser sampling at the eight stitch-link junctions",
       "frequency_or_trigger_en": "assigned once the existing profile survey is complete; the interval is re-surveyed after any vertical alteration to the spine or a junction",
       "denominator_en": "the horizontal run of that interval"
+    },
+    {
+      "metric_id": "handover_to_service_days",
+      "definition_zh": "上线历时：一项能力从首次在 BUILD 侧交出，到在 SERVE 侧被城市服务方接收为止的日历天数，取中位数。计时从第一次交出起算，中途被拒收并重新提交的等待时间一并计入，不重新起算。",
+      "definition_en": "Time to service: calendar days from a capability's first handout on the BUILD side to its acceptance by the city service side on the SERVE side, reported as a median. The clock starts at the first handout and continues through any rejection and resubmission; it is not reset.",
+      "data_source_type": [
+        "operational_record"
+      ],
+      "collecting_role": "R-INDEPENDENT-REVIEW",
+      "sampling_unit": "一项走完四次交接的能力",
+      "sampling_scope": "三座交接场与公开交接桌 P0 上发生的全部交接",
+      "frequency_or_trigger": "每完成一次 SERVE 侧接收即记一条；每季度汇总一次中位数",
+      "denominator": "当期完成 SERVE 侧接收的能力数",
+      "aggregation_method_zh": "**取中位数并同时公布四分位距，不取算术平均**——少数长期挂起的能力会把均值拉成一个谁都没经历过的数。**未走完四次交接的能力不计入分子也不计入分母，但必须单列「在途件数与最长在途天数」**：否则只要把慢的一直挂着不接收，中位数就会越来越好看，这正是本指标最容易被做漂亮的方式。",
+      "aggregation_method_en": "**A median is taken and the interquartile range published alongside it; no arithmetic mean** — a few indefinitely suspended capabilities would pull the mean to a value nobody experienced. **Capabilities that have not completed all four handovers enter neither numerator nor denominator, but the count in flight and the longest days in flight must be listed separately**: otherwise simply never accepting the slow ones makes the median look ever better, which is exactly how this metric is most easily flattered.",
+      "missing_value_handling": "输入缺失时保持 unassigned，不插值、不以其他场景数值替代、不以历史值顺延。",
+      "quality_checks": [
+        "起算时点取第一次交出，不取最近一次重新提交",
+        "在途件数与最长在途天数与本期中位数同屏公布",
+        "拒收等待期计入历时，不从分子中扣除"
+      ],
+      "quality_checks_en": [
+        "The clock starts at the first handout, not at the most recent resubmission",
+        "The count in flight and the longest days in flight are published on the same screen as the median",
+        "Waiting time during rejection counts toward the elapsed days and is not deducted"
+      ],
+      "dispute_review": "任何居民、维护者、开发者或独立复核角色可在公开值班簿提出质疑；由独立复核角色复算并公开复算过程，原值与更正值并列保留。",
+      "privacy_and_retention": "只登记能力标识、交接时点与角色类型，不记录任何个人姓名、联系方式或所属单位；记录随年度交接账公开留存。",
+      "privacy_and_retention_en": "Records only the capability identifier, handover timestamps and role types; no personal name, contact detail or employer is recorded. Records are retained publicly with the annual handover ledger.",
+      "publication_gate": [
+        "至少一项能力走完 BUILD→VERIFY→SHARE→SERVE 四次交接",
+        "四次交接账均可被独立复核角色复算",
+        "在途件数与最长在途天数可同期公布"
+      ],
+      "publication_gate_en": [
+        "At least one capability has completed all four handovers from BUILD through SERVE",
+        "All four handover ledgers can be recomputed by the independent review role",
+        "The count in flight and the longest days in flight can be published for the same period"
+      ],
+      "baseline": null,
+      "target": null,
+      "assignment_precondition": "至少一条能力走完四次交接，且四次交接账均可复核。",
+      "sampling_unit_en": "one capability that has completed all four handovers",
+      "sampling_scope_en": "every handover occurring at the three Handover Yards and the Public Handover Table P0",
+      "frequency_or_trigger_en": "one record per acceptance on the SERVE side; medians aggregated quarterly",
+      "denominator_en": "the number of capabilities accepted on the SERVE side in the period"
+    },
+    {
+      "metric_id": "handover_rework_rounds",
+      "definition_zh": "返工轮次：同一能力在四次交接中被拒收并重新提交的次数，取中位数。只计「拒收后重新提交」，附条件接受不计入；同一次交接被同一理由连续拒收两次计两次。",
+      "definition_en": "Rework rounds: how many times the same capability is rejected and resubmitted across the four handovers, reported as a median. Only rejection followed by resubmission counts; conditional acceptance does not. Two consecutive rejections on the same ground at the same handover count as two.",
+      "data_source_type": [
+        "operational_record"
+      ],
+      "collecting_role": "R-INDEPENDENT-REVIEW",
+      "sampling_unit": "一项至少完成一次交接的能力",
+      "sampling_scope": "三座交接场与公开交接桌 P0 上发生的全部拒收记录",
+      "frequency_or_trigger": "每次拒收并重新提交即记一条；每季度汇总一次中位数",
+      "denominator": "当期至少完成一次交接的能力数",
+      "aggregation_method_zh": "**按 R1—R7 的拒收理由分类并列公布，不合并成一个总数**——「因未闭合项被拒」与「因角色未指派被拒」是两种完全不同的问题，合并后无法据以改进。**本指标下降不自动等于变好**：拒收变少也可能是复核变松，因此必须与 HV-01 交接完整率同屏读；两者一升一降时以 HV-01 为准。",
+      "aggregation_method_en": "**Published side by side under the R1–R7 rejection grounds, never merged into a single total** — \"rejected for an unclosed item\" and \"rejected because a role was unassigned\" are entirely different problems and cannot guide improvement once merged. **A fall in this metric does not automatically mean improvement**: fewer rejections may mean laxer review, so it must be read on the same screen as HV-01 handover completeness; where the two move in opposite directions, HV-01 governs.",
+      "missing_value_handling": "输入缺失时保持 unassigned，不插值、不以其他场景数值替代、不以历史值顺延。",
+      "quality_checks": [
+        "每条拒收记录均有按 R1—R7 归类的书面理由",
+        "重新提交与首次提交之间的对应关系可追溯",
+        "与同期 HV-01 交接完整率并列公布"
+      ],
+      "quality_checks_en": [
+        "Every rejection record carries a written ground classified under R1–R7",
+        "Each resubmission is traceable to its original submission",
+        "Published alongside HV-01 handover completeness for the same period"
+      ],
+      "dispute_review": "任何居民、维护者、开发者或独立复核角色可在公开值班簿提出质疑；由独立复核角色复算并公开复算过程，原值与更正值并列保留。",
+      "privacy_and_retention": "只登记能力标识、拒收理由类别与角色类型，不记录拒收者与被拒方的姓名或所属单位；记录随年度交接账公开留存。",
+      "privacy_and_retention_en": "Records only the capability identifier, the rejection-ground category and role types; neither the rejecting nor the rejected party is named by person or employer. Records are retained publicly with the annual handover ledger.",
+      "publication_gate": [
+        "拒收理由已按 R1—R7 归类且可复核",
+        "重新提交与首次提交之间已建立对应关系",
+        "同期 HV-01 交接完整率可一并公布"
+      ],
+      "publication_gate_en": [
+        "Rejection grounds are classified under R1–R7 and can be recomputed",
+        "Each resubmission is linked to its original submission",
+        "HV-01 handover completeness for the same period can be published with it"
+      ],
+      "baseline": null,
+      "target": null,
+      "assignment_precondition": "拒收理由已按 R1—R7 归类且可复核，重新提交与首次提交之间可建立对应关系。",
+      "sampling_unit_en": "one capability that has completed at least one handover",
+      "sampling_scope_en": "every rejection record at the three Handover Yards and the Public Handover Table P0",
+      "frequency_or_trigger_en": "one record per rejection-and-resubmission; medians aggregated quarterly",
+      "denominator_en": "the number of capabilities completing at least one handover in the period"
     }
   ],
-  "aggregation_method_notice": "本字段回答的是「数值将来怎么算出来」，与 definition_zh（是什么）和 publication_gate（什么条件下才发布）分开。十一项中有三项标注「不适用统计估计」——它们是主管部门审定值或由主管部门设定的目标，不是估计量，为它们编造一套统计方法会把法定决定伪装成本方案的测算。其余各项写明的多数是**禁止性规则**（不外推、不取算术平均、不跨批次相除、不分摊、停用不改善指数）：这些是实践中最容易出错、也最容易被用来把数字做好看的地方，因此写成方法的一部分而不是注意事项。"
+  "aggregation_method_notice": "本字段回答的是「数值将来怎么算出来」，与 definition_zh（是什么）和 publication_gate（什么条件下才发布）分开。十四项中有三项标注「不适用」——它们是主管部门审定值或由主管部门设定的目标，不是估计量，为它们编造一套统计方法会把法定决定伪装成本方案的测算。其余各项写明的多数是**禁止性规则**（不外推、不取算术平均、不跨批次相除、不分摊、停用不改善指数）：这些是实践中最容易出错、也最容易被用来把数字做好看的地方，因此写成方法的一部分而不是注意事项。"
 }

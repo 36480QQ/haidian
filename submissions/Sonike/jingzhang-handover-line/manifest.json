@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dbfe33187a4fb43fc5854ecf6c78b57015dcd5593545d7a4920c15c664552bda"
+      "sha256": "fbfd82014ec1e376aa61225c730441356b21421ef18dcc88a8ce5c520b1e9f09"
     },
     {
       "path": "agent.json",
@@ -59,7 +59,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "094d9727ec8d49e81708ae8ac2fb080de5be5ac74afc12fb01893d7631ceadcb"
+      "sha256": "b94d3f3e04f7d174c24872d932ab549ed440df2b93b4e418b165a393efaade4f"
     },
     {
       "path": "assumptions.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "36bf7c09901f25a5b17bffd3edb11b605832b9126d01b98eb87e331110b776b5"
+      "sha256": "a6d89b5086b54ef96841fea3e179153b96a2b7fdfa52007dbab8890d34294a10"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7bb8a7e91c7e2d7690873e413e4f12a4788f4416838f725eb16ccd15ca73857a"
+      "sha256": "3b31bb09c1a30e63ef69b10c24ad2a3f62f71d6f134184d56937217506aa226e"
     },
     {
       "path": "report/narrative.md",
@@ -188,7 +188,7 @@
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "d64d591b7141288e04ff7450dfa1aa7b028fdeee62cd13ceeea9726b435b8923"
+      "sha256": "3d153f20010f562930c78f40a08da94234f210600623251ca433e49d377daa57"
     },
     {
       "path": "geometry/green_space.geojson",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b869722306b70b50954cb8980c49066dbf865e8fac120131b2eb6ec652279f8a"
+      "sha256": "ad7459431e069bb3ab8df8549637dbe6dd7cdd1f093cea4a9e874fcb90162207"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "879fe848a09469e30a2bc34445fcb8ba6b1fa8c44816279f64a7739951e712ec"
+      "sha256": "03404a26cc4e44baf4d2264fbedc1c1e13bc53f6ea31a4fe0f22a329623ae221"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "a38cc37eaec8d852b7957831c0120b28ccb1d96eab050ef966b1eb4dd9327aa2"
+      "sha256": "4db72a50e5113cbe512af652c7445bba68172c927ae9278e007c1462679bfb6d"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -638,7 +638,7 @@
       "path": "visual/assets/governance/measurement-protocol.json",
       "role": "governance_specification",
       "required": false,
-      "sha256": "79fd9a20d08d302ea53768c769b688c382d7f16aef0a3b67d456fb67b6f37f3b"
+      "sha256": "1bc7fedf71cb9a0eaff3ca84224ce4a5e18d155de08ec33e7f87756e37493b21"
     },
     {
       "path": "visual/assets/public-handover-table-3d.json",
