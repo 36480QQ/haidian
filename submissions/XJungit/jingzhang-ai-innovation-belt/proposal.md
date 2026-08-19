@@ -176,6 +176,8 @@ iteration: "v1.0"
 
 采用边界必须诚实:SEB 本身是概念建议(evidence_class=concept_only,adoption_claim=none),本方案采用其判据骨架,不代表任何场景点位已获评级、已运行或已获政府承诺;所有相关绩效指标在真实运行前保持 status=unknown,并在 metrics.json 与 assumptions.json 中登记复算路径 [source:SEB-2549] [depth:risk_missing_data]。
 
+**随包机器可读实现(可复现)**:为避免「文本采用、无从检验」,本方案随包附三份零依赖离线文件(CC BY-SA 4.0,派生自上游 SEB v0.5.0):visual/assets/seb-localized-spec.json(本地化判据:五字段完整性 LOC-01、等价路径不得依赖同一系统 LOC-02、闸门绑定 LOC-03)、visual/assets/seb-localized-fixtures.json(16 条样例:12 正例 + 4 注入反例,覆盖缺字段/同系统路径/闸门错配/AI 独占四类拒因)、visual/assets/seb-localized-tabletop-run.js(零依赖校验器)。复现命令:`node visual/assets/seb-localized-tabletop-run.js`,退出码 0 表示 12 通过 / 4 拒绝 / 0 不匹配。校验通过只证明判据自洽可执行,不证明任何点位已运行或获批 [source:SEB-2549]。
+
 ## 用地、建筑规模与拆改留方案
 
 用地方案依据国土空间调查、规划、用途管制分类等公开标准表达，形成完整、闭合、无缝的用地分区 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。用地分类以科研用地、居住用地、商业服务业用地、绿地与开敞空间为主，完整覆盖并见 [data:geometry/land_use.geojson]。建筑方案区分保留、改造、更新、新建或待确认对象；若缺少现状建筑、权属、控规与工程条件，方案只提出方法与待校准清单，不编造拆改留结论 [depth:retain_renovate_demolish]。
