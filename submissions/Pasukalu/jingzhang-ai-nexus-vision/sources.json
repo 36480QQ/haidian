@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "sources": [
     {
       "id": "SITE-PACKAGE",
@@ -42,6 +42,54 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "CASE-KINGS-CROSS",
+      "path": "https://www.kingscross.co.uk/",
+      "source_type": "public_reference",
+      "usage": "King's Cross railway heritage renewal reference: 12-year phased redevelopment, Google Campus, Central Saint Martins integration. Used for spatial translation to Jing-Zhang main axis."
+    },
+    {
+      "id": "CASE-SILICON-VALLEY",
+      "path": "https://svlg.org/",
+      "source_type": "public_reference",
+      "usage": "Silicon Valley ecosystem reference: university-industry revolving door, VC density, open-source culture. Used for Zhongzhiyuan innovation acceleration model."
+    },
+    {
+      "id": "CASE-KENDALL-SQUARE",
+      "path": "https://kendallsquare.org/",
+      "source_type": "public_reference",
+      "usage": "Kendall Square MIT innovation district reference: research-public space density, walkable scale. Used for AI Origin Community spatial model."
+    },
+    {
+      "id": "CASE-SHIBUYA-QWA",
+      "path": "https://www.shibuya-qwa.jp/",
+      "source_type": "public_reference",
+      "usage": "Shibuya Q-WA AI city lab reference: data-driven public space as AI testing ground. Used for Xiaoyuehe scenario empowerment wing."
+    },
+    {
+      "id": "CASE-DMC-SEOUL",
+      "path": "https://en.wikipedia.org/wiki/Digital_Media_City",
+      "source_type": "public_reference",
+      "usage": "Digital Media City Seoul reference: digital media industry cluster with public cultural facilities. Used for Dazhongsi industry and international exchange node."
+    },
+    {
+      "id": "CASE-ONE-NORTH",
+      "path": "https://www.onesingapore.gov.sg/one-north/",
+      "source_type": "public_reference",
+      "usage": "One-North Singapore reference: biotech+tech mixed-use with park integration. Used for blue-green slow-mobility composite ring."
+    },
+    {
+      "id": "CASE-NANSHAN-TECH",
+      "path": "https://www.szns.gov.cn/",
+      "source_type": "public_reference",
+      "usage": "Nanshan Science and Technology Park Shenzhen reference: complete industry chain, government guidance, enterprise-led model. Used for Zhongguancun technology service wing."
+    },
+    {
+      "id": "CASE-ZGC-ECOLOGY",
+      "path": "https://zgcgw.beijing.gov.cn/",
+      "source_type": "public_reference",
+      "usage": "Zhongguancun existing ecosystem reference: dense universities, active startups, policy leadership. Used for local experience continuation and belt+three-cores framework."
     }
   ]
 }
