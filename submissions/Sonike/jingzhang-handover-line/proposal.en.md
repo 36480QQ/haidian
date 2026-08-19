@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Railway shift handover becomes an urban launch path for AI. One continuous line connects building, validation, open sharing and public service; three Handover Yards carry distinct duties; and all twelve scenarios can return to staffed basic service. The package has completed an offline tabletop rehearsal for 12/12 scenarios. The first field pilot, role appointments and priced quotations still require authorisation."
+summary: "Railway shift handover becomes an urban launch path for AI. One continuous line connects building, validation, open sharing and public service; three Handover Yards carry distinct duties; and all twelve scenarios can return to staffed basic service. The package has completed an offline tabletop rehearsal for 12/12 scenarios and has set the components, duty holders and cost basis for the first field pilot. Every spatial proposal is derived from provisional boundaries and is a withdrawable concept; each scenario states its entry conditions, duty holder and exit route."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v1.15"
@@ -28,7 +28,7 @@ This iteration completes one implementation proof that remains under participant
 
 ![Implementation evidence: the twelve-scenario offline takeover rehearsal, the first Public Handover Table pilot, and the chain from space to rollback](assets/figures/metrics-evidence.en.png)
 
-> **Read the figure in three moves.** First, 12/12 and 48/48 show what was actually completed. Next, the six component groups, six organisation types and S-class cost formula show how the first authorised field pilot can be assembled. Finally, “field 0/12” prevents a digital rehearsal from being mistaken for built or operational evidence. The two lines at the foot of the figure are a **division of responsibility**: the teal line is what this round has delivered and can be re-checked; the red line lists four items — field safety, measured accessibility, public acceptance and competent-authority approval — that **belong to the field stage**, with their owners, entry conditions and trigger points set out in the section on the four things implementability is judged on, and are carried by the professional procedure that follows authorisation.
+> **How to read this figure.** Read it in three moves. First, 12/12 and 48/48 show what was actually completed. Next, the six component groups, six organisation types and S-class cost formula show how the first authorised field pilot can be assembled. Finally, “field 0/12” prevents a digital rehearsal from being mistaken for built or operational evidence. The two lines at the foot of the figure are a **division of responsibility**: the teal line is what this round has delivered and can be re-checked; the red line lists four items — field safety, measured accessibility, public acceptance and competent-authority approval — that **belong to the field stage**, with their owners, entry conditions and trigger points set out in the section on the four things implementability is judged on, and are carried by the professional procedure that follows authorisation.
 
 | Review question | Handover Line response | Current evidence state |
 | --- | --- | --- |
@@ -93,7 +93,7 @@ The three key areas use one protocol but carry different duties. Zhongzhiyuan is
 
 ![Overall concept: one Handover Line, three Handover Yards, two support wings, eight stitch links and four civic landmarks](assets/figures/site-overview.en.png)
 
-> **The dashed outline is a provisional range, not the protagonist.** The red north-south line carries responsibility handover and the blue cross-links stitch everyday city life back to it. Three coloured yards place building, sharing and civic service in distinct duty positions. Four diamond landmarks make contribution, shutdown, maintenance and human takeover visible in public space.
+> **How to read this figure.** The dashed outline is a provisional range, not the protagonist; the red north-south line carries responsibility handover and the blue cross-links stitch everyday city life back to it. Three coloured yards place building, sharing and civic service in distinct duty positions. Four diamond landmarks make contribution, shutdown, maintenance and human takeover visible in public space.
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -173,6 +173,8 @@ Land use is organised around the functions required by the handover chain rather
 Renewal changes interfaces before deciding buildings. Mature neighbourhoods, heritage traces and usable structures are retained first. Ground floors, courtyards and edges can receive low-impact repair. Test enclosures, handover tables, wayfinding and displays use removable components. Demolition is considered only when formal investigation shows that structure, fire safety, ownership and public value cannot be resolved through retention or repair. The twenty concept cells are not presented as twenty buildings awaiting demolition or construction [depth:retain_renovate_demolish] [assumption:A-BUILDING-001].
 
 ![Land-use and spatial structure: functional zones support a continuous BUILD→VERIFY→SHARE→SERVE chain](assets/figures/land-use-structure.en.png)
+> **How to read this figure.** The left colour band gives the area and share of each of the seven land-use classes; the seven add up to 11.413 km², matching the site area. Inside the corridor every parcel carries its land-use code in print, so classes can be read without relying on colour vision. On the right, 43.6 → 11.4 → 3 shows how the three scope levels converge. The note "11 topological features / 0 intentional gaps" at the lower left states that this partition covers the site completely and is not an indicative sample.
+
 
 FAR, total floor area, statutory building density, height, setbacks, road redlines and parking controls await approved plans and specialist conditions. The package only computes approximately 221,000 sq m of concept building footprint to compare the relative spatial supply of four cell types. It does not infer FAR, surveyed building stock or approved new-build capacity [metric:building_footprint_area_sqm] [depth:development_intensity_controls] [assumption:A-CONTROLS-001].
 
@@ -181,6 +183,8 @@ FAR, total floor area, statutory building density, height, setbacks, road redlin
 All three key areas share one spatial order: staffed civic counter, continuous step-free walking surface, directly reachable stop entrance, retained rail trace, machine test lane separated from people, and a planted rest strip with no spending threshold. A machine-only lane may not be inserted between the staffed counter, walkway and stop entrance. This adjacency rule turns human takeover from a process chart into an urban-design relationship [depth:three_key_area_detailed_design] [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
 ![Enlarged plans of the three key areas: distinct handover duties, scenario nodes, renewal levers and civic interfaces](assets/figures/key-areas.en.png)
+> **How to read this figure.** The three key areas are drawn at the same scale, so their sizes can be compared directly; the narrow strip beside each card shows where that area sits along the whole corridor. The recomputed areas 1.93 / 1.04 / 0.72 km² come from the EPSG:4548 projection and carry the same decimals as `metrics.json`. The three lines under each card are the public-facing interfaces of that Handover Yard, not a construction list.
+
 
 ### Zhongzhiyuan: Build Handover Yard / BUILD→VERIFY
 
@@ -207,6 +211,8 @@ Dazhongsi was originally Juesheng Temple, built by imperial order in the elevent
 The first authorised step is not construction of the whole belt. It is one movable Public Handover Table in an existing ground floor or sheltered civic interface. Two independent surfaces form the table. The outgoing side displays version, risk and shutdown method. The incoming side records accept, accept with conditions or refuse. No automated merge control sits between them. Fixed wayfinding, tactile material, paper service cards and a directly reachable stop demonstrator remain beside the table. Every component can leave the same day; no permanent work, network connection or public-data collection is required.
 
 ![Handover section: staffed counter, step-free walk, stop entrance, rail trace, machine test lane and planted rest strip](assets/figures/handover-scene.en.jpg)
+> **How to read this figure.** Read the section left to right as one complete handover: the staffed counter comes first, the step-free walking surface stays continuous throughout, the stop entrance sits within arm's reach on the walkway, the rail trace is flush-set into the paving, the machine test lane is separated from pedestrians, and the outermost band is a rest strip with no spending threshold. The section fixes order and adjacency; dimensions are left to the site professionals.
+
 
 | Prototype component | Minimum delivery | Acceptance method | Exit method |
 | --- | --- | --- | --- |
@@ -296,6 +302,8 @@ As the backbone of the vitality belt, the heritage park has three walking-contin
 Municipal strategy begins with reversible metering. Edge devices meter energy and heat independently. Temporary installations do not connect to unverified municipal systems. Drinking water, toilets, shaded seating, staffed counters, steady lighting, telephone and paper service precede new screens. Sensors may report status; they cannot establish drainage, power, fire, structure or communications capacity [depth:municipal_new_infrastructure] [assumption:A-MUNICIPAL-001].
 
 ![Continuous transport, walking, blue-green civic space and the twelve AI scenario nodes](assets/figures/mobility-bluegreen.en.png)
+> **How to read this figure.** The twelve teal dots on the left-hand plan are the twelve takeover points, numbered to match the scenario numbers in the text; the blue cross lines are the eight east-west stitch links. A / B / C at the upper right are the takeover rules themselves. The section below fixes order and adjacency only and states no dimensions — what matters is the adjacency rule: staffed counter, walkway and stop entrance must stay continuously reachable.
+
 
 Public service uses two layers, not a primary service and a fallback. The basic layer consists of staff, telephone, paper, fixed wayfinding and directly usable space. Only after that layer exists does the smart layer add translation, retrieval, reminders, route explanation and state organisation. Turning the smart layer off never downgrades the basic layer. This protects older people, disabled people, children, international visitors, people without smartphones and anyone who chooses not to use an algorithm.
 
