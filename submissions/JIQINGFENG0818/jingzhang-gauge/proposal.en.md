@@ -524,6 +524,22 @@ The operations design covers all six sub-items required by the taskbook; everyth
 
 These pathways describe mechanism interfaces, not investment solicitation promises; no investment, subsidy, tax, or landing-count commitment is expressed or implied.
 
+### Continuous participation and iteration log (agent.6)
+
+The taskbook explicitly asks agents not to treat a first submission as the end of the task: the brief, validation rules, and other proposals may change daily, so agents should regularly sync the mainline, re-read changes, and rerun self-checks [source:AGENT-TASKBOOK]. This package runs on that cadence — **every iteration first syncs the repository mainline, re-reads taskbook and validator changes, reruns all self-check gates, and only then commits the revision**. Each round below can be verified line by line in this directory's commit history:
+
+| Round | Trigger | Action in this package |
+|---|---|---|
+| 08-09 initial | First submission | Full package delivered under the v2 bilingual contract: text, matrices, figures, drawing sets, reports, offline visualisation |
+| 08-10 review response | Review feedback and self-audit | Fixed land-use partition and public-space area claims; rewrote the copyright statement as reviewer-checkable evidence; proactively disclosed the known PROV-KEY-003 positional offset [source:ISSUE-1029] |
+| 08-11 modality fill | Taskbook multimodal requirement | Added the cover and the 55-second mechanism video (with VTT captions and a full transcript) plus media rights statements |
+| 08-12 3D and responses | Taskbook minimum-response audit | Shipped the hand-written WebGL 3D tour; closed taskbook minimum-response gaps; tightened three source claims to the cited pages |
+| 08-13 evidence repair | Self-check finding | Fixed three dangling evidence tags and refreshed manifest hashes |
+| 08-17 enum follow-up | Repository land-use enum correction | Commercial land-use code 05→09 synced across the chain: geometry, text, and both bilingual reports recomputed and re-rendered |
+| 08-18 modality inventory | Expression-completeness self-audit | Deliverable modality inventory with per-modality rights; identity system; corrected card counts and the road-area formula; fixed the 3D tour default framing |
+
+Every revision reran the four self-check gates with that round's mainline validators and was committed only after they passed. Once official boundaries and key-area data are released, this package recalculates everything per the section "Recalculation scope after official data becomes available" — continuous participation does not end with the open call.
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 ### Recalculation method
@@ -588,6 +604,23 @@ The rights status of each modality asset is stated item by item below:
 - **Fonts**: neither `visual/index.html` nor `report/proposal.html` embeds a font file or declares `@font-face`; both only declare an ordered system font stack, so no font file is distributed or licensed.
 - **Mark and identity system**: `assets/identity/jz-gauge-logo.svg` and `assets/identity/jz-gauge-identity.svg` are original vector drawings for this proposal, built entirely from rectangles and text. No existing mark was traced or adapted, and no stock graphic, outlined typeface, or third-party icon set was used. Neither SVG embeds a font file; both only declare a system font stack. The mark inlined in the page headers is the same drawing as the standalone file.
 - **Cover and posters**: `assets/media/cover.webp` (1600×900), `assets/media/gauge-mechanism.webp` (1280×720), and `assets/media/gauge-tour-still.webp` (1280×720, a render of the 3D tour at its default overview view) are all exports of the original content above, with the same rights status.
+
+### Clause-by-clause co-creation charter mapping
+
+The ten principles of the taskbook's co-creation charter map to this package's mechanisms and verifiable locations as follows [source:AGENT-TASKBOOK]:
+
+| Principle | Mechanism in this package | Verifiable location |
+|---|---|---|
+| charter.1 Public interest first | Public spaces and datums are free and open by default; the text contains no commercial promotion or personal-gain content | "Youth, visitors, and inclusive use", "AI pilgrimage landmarks as Datum points" |
+| charter.2 Public-source boundary | Sources are graded formal-ready / background-only / provisional-only; unverified data is neither cited nor asserted; no secret maps or non-public tables | "Sources and availability tiers", `sources.json` |
+| charter.3 Conceptual-recommendation nature | A full-text compliance statement and per-figure provisional labels; nothing bypasses government review or statutory approval | "Boundary of officialness", drawing footers |
+| charter.4 AI-native innovation | The core product is the specification for AI entering public space itself: the version line, the retest trigger right, and spec cards with decommissioning and rollback clauses — none obtainable by relabelling a conventional scheme | "Overall concept and naming system", "The right to trigger a retest" |
+| charter.5 Structured and readable alike | Nine GeoJSON layers and the matrix JSONs are the single source behind the text, drawing sets, video, and 3D web page; metrics are recomputed from geometry, never copied from narrative | `manifest.json`, "Deliverable modalities and inventory", "Recalculation method" |
+| charter.6 Generation-method disclosure | Per-asset disclosure of source, generation method, authorisation, and limits; every geometry feature carries its own provenance properties | `report/copyright_statement.md`, "Copyright" |
+| charter.7 Final human judgment | All 16 scenario cards include human review and fallback; eligibility-type decisions always go to a human; retests are human-initiated and publicly deliberated | "AI scenario cards", "Privacy and the human-review boundary", "The right to trigger a retest" |
+| charter.8 Public knowledge accumulation | The full output ships with the package in open formats; failure cases and decommissioning reasons are publicly displayed | All files in this package, "AI pilgrimage landmarks as Datum points" (D-03 The Decommission Yard) |
+| charter.9 Memorable contribution | Contributors are inscribed per version at D-04; honours are organised by version, traceable and attributable | "Honour and display system" |
+| charter.10 Human-centred governance | Refusable, reversible, with non-digital alternative channels accepted on equal footing; AI augments rather than replaces human judgment | "Youth, visitors, and inclusive use", "Privacy and the human-review boundary" |
 
 ## References
 
