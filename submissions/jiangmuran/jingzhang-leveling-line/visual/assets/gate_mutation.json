@@ -1420,6 +1420,19 @@
       "why_en": "**This is not a study-design question but a decision that should not be taken.** The gate requires that a card claiming a parallel control have as its control text the very non-AI path that card declares; when a safety card switches its claim, the two texts no longer match and the build stops. **A comparison that quietly puts people under less protection is the practice this proposal spends its length objecting to.**"
     },
     {
+      "id": "M161",
+      "gate": "number_break_qa.py",
+      "target": "figures.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": false,
+      "what_zh": "把 `wrap` 改回逐字断行——**本轮之前它就是这样**。闸门把包内每一条带数字的译文在五种字号、十三种宽度下各排一遍，一旦某一行结在数字中间，构建停。",
+      "what_en": "Put `wrap` back to breaking character by character — **which is what it did until this round**. The gate lays out every translated string carrying a digit at five sizes and thirteen widths, and the build stops the moment a line ends inside a numeral.",
+      "why_zh": "这条变异要证的是**闸门测的是 `wrap` 的性质，不是某张图的现状**。按渲染后的 SVG 去扫这个形状，会得到 251 个候选、一个真的——因为一列纵向堆叠的表格数字，看上去和被截断的数字一模一样。**性质属于函数，就在函数上测**，这正是 E367、E368 记下的那条教训。",
+      "why_en": "What this proves is that the gate tests a property of `wrap` rather than the current state of one drawing. Scanning the rendered SVGs for this shape yields 251 candidates and one real finding, because a table column stacking numbers vertically looks exactly like a number cut in half. **The property belongs to the function, so it is tested on the function** — the lesson E367 and E368 record."
+    },
+    {
       "id": "M160",
       "gate": "i18n_order_qa.py",
       "target": "i18n_drawings.py",
@@ -1927,7 +1940,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 157,
+  "caught": 158,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -1983,6 +1996,7 @@
     "metric_label_qa.py",
     "metric_subject_qa.py",
     "naming_qa.py",
+    "number_break_qa.py",
     "official_area_qa.py",
     "organiser_metric_join_qa.py",
     "organiser_review_qa.py",
@@ -2077,6 +2091,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 108 道闸门，其中 106 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 108 gates, 106 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 109 道闸门，其中 107 道已被证明会失败；其余 2 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 109 gates, 107 have been shown capable of failing and 2 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
