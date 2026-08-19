@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7.0",
+  "schema_version": "1.8.0",
   "dataset_id": "jingzhang-two-answers",
   "title": {
     "zh": "京张双答：三站一历",
@@ -373,7 +373,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "not_built",
+      "prototype_readiness": "E1_catalogue_trace_complete",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -398,7 +398,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-001-T01",
+        "SCN-001-T02",
+        "SCN-001-T03",
+        "SCN-001-T04",
+        "SCN-001-T05",
+        "SCN-001-T06",
+        "SCN-001-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "删除临时副本，保留经人工确认的清单、日志哈希和普通登记台。",
+        "en": "Remove and isolate the optional T1 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-002",
@@ -722,7 +751,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "pending_survey",
+      "prototype_readiness": "E1_concept_design",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -747,7 +776,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-002-T01",
+        "SCN-002-T02",
+        "SCN-002-T03",
+        "SCN-002-T04",
+        "SCN-002-T05",
+        "SCN-002-T06",
+        "SCN-002-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "机器人撤库、临时围栏拆除；保留步行路径、座椅与事件公告位。",
+        "en": "Remove and isolate the optional T2 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-003",
@@ -1069,7 +1127,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "not_built",
+      "prototype_readiness": "E1_catalogue_trace_complete",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -1094,7 +1152,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-003-T01",
+        "SCN-003-T02",
+        "SCN-003-T03",
+        "SCN-003-T04",
+        "SCN-003-T05",
+        "SCN-003-T06",
+        "SCN-003-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "机柜整机移除，恢复预留空腔与普通电气检修口。",
+        "en": "Remove and isolate the optional T3 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-004",
@@ -1419,7 +1506,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "not_built",
+      "prototype_readiness": "E1_catalogue_trace_complete",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -1444,7 +1531,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-004-T01",
+        "SCN-004-T02",
+        "SCN-004-T03",
+        "SCN-004-T04",
+        "SCN-004-T05",
+        "SCN-004-T06",
+        "SCN-004-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "撤除终端，继续使用人工窗口、纸质目录和预约电话。",
+        "en": "Remove and isolate the optional S1 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-005",
@@ -1771,7 +1887,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "pending_survey",
+      "prototype_readiness": "E1_concept_design",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -1796,7 +1912,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-005-T01",
+        "SCN-005-T02",
+        "SCN-005-T03",
+        "SCN-005-T04",
+        "SCN-005-T05",
+        "SCN-005-T06",
+        "SCN-005-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "关闭终端，保留人工接待、纸质地图和静态双语导视。",
+        "en": "Remove and isolate the optional S2 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-006",
@@ -2121,7 +2266,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "not_built",
+      "prototype_readiness": "E1_catalogue_trace_complete",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -2146,7 +2291,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-006-T01",
+        "SCN-006-T02",
+        "SCN-006-T03",
+        "SCN-006-T04",
+        "SCN-006-T05",
+        "SCN-006-T06",
+        "SCN-006-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "删除临时候选库，保留纸质问题卡、工作坊桌和公开来源清单。",
+        "en": "Remove and isolate the optional S3 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-007",
@@ -2458,7 +2632,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "not_built",
+      "prototype_readiness": "E1_catalogue_trace_complete",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -2483,7 +2657,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-007-T01",
+        "SCN-007-T02",
+        "SCN-007-T03",
+        "SCN-007-T04",
+        "SCN-007-T05",
+        "SCN-007-T06",
+        "SCN-007-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "撤除终端，保留触摸模型、标牌、纸质路线与人工讲解点。",
+        "en": "Remove and isolate the optional S4 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-008",
@@ -2796,7 +2999,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "not_built",
+      "prototype_readiness": "E1_catalogue_trace_complete",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -2821,7 +3024,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-008-T01",
+        "SCN-008-T02",
+        "SCN-008-T03",
+        "SCN-008-T04",
+        "SCN-008-T05",
+        "SCN-008-T06",
+        "SCN-008-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "关闭动态服务；静态导视、触觉节点和人工问路保持不变。",
+        "en": "Remove and isolate the optional S5 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-009",
@@ -3134,7 +3366,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "not_built",
+      "prototype_readiness": "E1_catalogue_trace_complete",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -3159,7 +3391,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-009-T01",
+        "SCN-009-T02",
+        "SCN-009-T03",
+        "SCN-009-T04",
+        "SCN-009-T05",
+        "SCN-009-T06",
+        "SCN-009-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "拆除传感插件，保留树荫、雨棚、座椅、饮水和公告牌。",
+        "en": "Remove and isolate the optional S6 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-010",
@@ -3714,7 +3975,7 @@
         "V7-D-SERVICE-ROUTE"
       ],
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "ready_documented",
+      "prototype_readiness": "E2_documented_prototype_ready",
       "readiness_gate": "all_eight_permits_and_four_independent_posts_before_TRIAL",
       "survey_dependency": [
         "official_boundary",
@@ -3765,7 +4026,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "ready_documented"
+      "e2_status": "E2_documented_prototype_ready",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-010-T01",
+        "SCN-010-T02",
+        "SCN-010-T03",
+        "SCN-010-T04",
+        "SCN-010-T05",
+        "SCN-010-T06",
+        "SCN-010-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "车辆撤场，接驳湾恢复普通无障碍上下客与临时活动使用。",
+        "en": "Remove and isolate the optional S7 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-011",
@@ -4092,7 +4382,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "not_built",
+      "prototype_readiness": "E1_catalogue_trace_complete",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -4117,7 +4407,36 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-011-T01",
+        "SCN-011-T02",
+        "SCN-011-T03",
+        "SCN-011-T04",
+        "SCN-011-T05",
+        "SCN-011-T06",
+        "SCN-011-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "终端断电封存，普通服务台、纸质目录和电话继续运行。",
+        "en": "Remove and isolate the optional S8 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     },
     {
       "id": "SCN-012",
@@ -4445,7 +4764,7 @@
         "en": "Safety, baseline-service and public representatives co-sign; adopt / revise / stop only."
       },
       "review_due": "after_E2_or_next_annual_review",
-      "prototype_readiness": "not_built",
+      "prototype_readiness": "E1_catalogue_trace_complete",
       "readiness_gate": "replicate_after_S7_review",
       "survey_dependency": [
         "official_boundary",
@@ -4470,15 +4789,44 @@
       "incident_form_ref": "FORM-INCIDENT",
       "recovery_drill_ref": "FORM-RECOVERY",
       "receipt_template_ref": "FORM-RECEIPT",
-      "e2_status": "not_built"
+      "e2_status": "not_built",
+      "verification_scope": "synthetic_design_contract_only",
+      "test_case_ids": [
+        "SCN-012-T01",
+        "SCN-012-T02",
+        "SCN-012-T03",
+        "SCN-012-T04",
+        "SCN-012-T05",
+        "SCN-012-T06",
+        "SCN-012-T07"
+      ],
+      "initial_state": "OPEN",
+      "injected_event": "see_v10_tabletop_results",
+      "expected_state": "see_v10_tabletop_results",
+      "observed_state": "see_v10_tabletop_results",
+      "invariants_checked": [
+        "baseline_route_continuous",
+        "permit_gate_before_trial",
+        "accountable_human_before_trial",
+        "zero_tolerance_stops_trial",
+        "recovery_before_reopen",
+        "retirement_restores_public_use"
+      ],
+      "synthetic_result": "pass",
+      "input_hash": "resolved_per_test_case",
+      "recovery_exit": {
+        "zh": "拆除计数插件，保留普通活动电源、容量牌和疏散设施。",
+        "en": "Remove and isolate the optional S9 equipment; retain the complete staffed, static and accessible baseline."
+      },
+      "field_status": "not_field_run"
     }
   ],
   "subtitle": {
-    "zh": "可验证的城市样机",
-    "en": "Verifiable Civic Prototype"
+    "zh": "城市采纳编译器：把每项 AI 空间方案编译为完整公共路线、可触发停止机制和可复核回执。",
+    "en": "Civic Adoption Compiler: compile every AI spatial proposal into a complete public route, triggerable stop mechanism and reviewable receipt."
   },
   "field_status": "not_field_run",
-  "publication_version": "V9",
+  "publication_version": "V10",
   "evidence_ladder": [
     {
       "id": "E0",
@@ -5226,5 +5574,12 @@
       "record_status": "not_field_run",
       "printable": true
     }
-  ]
+  ],
+  "verification_scope": {
+    "status": "T0_synthetic_contract_verified",
+    "result_ref": "visual/assets/v10-tabletop-results.json",
+    "rule_ref": "visual/assets/run-v10-tabletop.js",
+    "case_count": 84,
+    "field_status": "not_field_run"
+  }
 }

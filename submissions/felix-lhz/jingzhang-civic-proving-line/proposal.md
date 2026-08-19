@@ -6,20 +6,20 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "三站一历：一条不断线的公共基线、三座会留下回执的城市地标，以及一年四季公开验证、人工决定和知识归档的城市采纳程序。"
+summary: "城市采纳编译器：把每项 AI 空间方案编译为一条完整公共路线、一套可触发停止机制和一张可复核回执；84 项合成验证只证明规则自洽，现场绩效仍未知。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed"]
 ---
 
 # 京张双答 / JING-ZHANG TWO ANSWERS
 
-> **三站一历 / THREE STATIONS, ONE CIVIC YEAR：一条不断线的公共基线，三座会留下回执的城市地标，一年四季的公开采纳程序。** 每个城市问题先让普通答案独立成立，再让 AI 在同题、同人、同空间中公开证明增量；最终只允许 `adopt`、`revise`、`stop`，并由人类场景委员会决定。
+> **城市采纳编译器 / CIVIC ADOPTION COMPILER：每项 AI 空间方案必须被“编译”为一条完整公共路线、一套可触发停止机制和一张可复核回执。** 每个城市问题先让普通答案独立成立，再让 AI 在同题、同人、同空间中公开证明增量；最终只允许 `adopt`、`revise`、`stop`，并由人类场景委员会决定。
 
-V8 把三处既有站点升级为三座不可混淆的回执地标：众智园·验真环、AI 原点·共译门、大钟寺·回执廊；再用春、夏、秋、冬四季日历把公共基线审计、能力开放测试、公众采纳周和年度退出复盘连成长期运营。[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json]
+三座不可混淆的回执地标——众智园·验真环、AI 原点·共译门、大钟寺·回执廊——继续承担空间原型；春、夏、秋、冬四季日历把公共基线审计、能力开放测试、公众采纳周和年度退出复盘连成长期运营。[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json]
 
-S7 仍以 1:5000、1:2000、1:500、1:200 和装配轴测承担实施样板，并新增 90 天最小试点，不增加场景数量。[metric:receipt_landmark_count] [metric:annual_program_cycle_count]
+S7 以 1:5000、1:2000、1:500、1:200、1:50 节点和装配轴测承担实施样板；12 个场景各运行 7 类确定性桌面用例，形成 84 项可复跑的合成设计契约验证，不增加场景数量。[metric:synthetic_design_verification_case_count] [metric:receipt_landmark_count]
 
-**本轮有两个可定位结论：城市尺度上三座地标各有独立轮廓；旗舰尺度上公共十字在 `OPEN / TRIAL / PAUSE / RETIRE` 四态中始终连续。** 不读标题也应能区分环、门、廊；不读图例也应能找到触觉引导、独立试验湾、人工岗位、双急停、消防到达和撤场方向。[data:geometry/roads.geojson#V7-D-BASE-NS] [data:geometry/buildings.geojson#V7-D-PORCH]
+**本轮有三个可定位结论：城市尺度上三座地标各有独立轮廓；旗舰尺度上公共十字在 `OPEN / TRIAL / PAUSE / RETIRE` 四态中始终连续；验证尺度上许可、岗位、公共服务或状态跃迁任一失败都会阻止进入下一态。** 不读标题也应能区分环、门、廊；不读图例也应能找到触觉引导、独立试验湾、人工岗位、双急停、消防到达和撤场方向。[data:geometry/roads.geojson#V7-D-BASE-NS] [data:visual/assets/v10-tabletop-results.json]
 
 ![总体双答结构](assets/figures/site-overview.png)
 
@@ -33,7 +33,7 @@ S7 仍以 1:5000、1:2000、1:500、1:200 和装配轴测承担实施样板，�
 
 北京市政府公开的中关村创新史用于说明“试验—转化—共享”的文化线索；大钟寺轨道背景仅作方向性接口。它们均不证明精确站口、建筑、红线或权属。[source:ZHONGGUANCUN-HISTORY-OFFICIAL] [source:DAZHONGSI-LINE13-CONTEXT]
 
-设计证据分五层：`proposal.md` 解释判断；`geometry/*.geojson` 保存空间对象；`visual/assets/two-answers.json` 保存 12 组对照契约；`metrics.json` 区分 known/unknown；三套矩阵、图纸、交互展和 `self_check.json` 形成交叉索引。公开资料研究用于机制转译，不产生机构合作、投资或实施承诺。[depth:existing_conditions_diagnosis]
+设计证据明确分为三类：**已知设计**是可复算的几何、数量与文档覆盖；**合成验证**是规则驱动的 84 项桌面用例；**现场未知**包括客流、安全表现、效率、满意度、能耗、成本和恢复时长。合成验证记录输入哈希、规则版本、预期/实际状态、责任触发和恢复出口，但不产生机构合作、投资、许可或现场绩效结论。[data:visual/assets/v10-tabletop-results.json] [metric:field_verification_result_count] [depth:existing_conditions_diagnosis]
 
 ## 三层范围工作框架
 
@@ -57,9 +57,9 @@ Quayside 的协议机制另作开发责任对照，不引用其空间形态。[s
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-V8 将抽象协议落到三座城市地标、四季运营和五级空间证据链上。`context-open-map.json` 冻结的 OSM 参照在大钟寺范围只有 1 个建筑要素，因此图面把道路、铁路、水系和公园作为方向性参照，并把建筑缺测区明确画成“公开数据待补”；任何新界面均标记为设计假设，不能被误读为现状建筑或法定总平面。全部开放数据均为 `open_data_context / reference_only`，不进入面积、强度、容量或绩效计算。
+城市采纳编译器把抽象协议落到三座城市地标、四季运营、五级空间证据链和确定性状态机上。`context-open-map.json` 冻结的 OSM 参照在大钟寺范围只有 1 个建筑要素，因此图面把道路、铁路、水系和公园作为方向性参照，并把建筑缺测区明确画成“公开数据待补”；任何新界面均标记为设计假设，不能被误读为现状建筑或法定总平面。全部开放数据均为 `open_data_context / reference_only`，不进入面积、强度、容量或绩效计算。
 
-三站从 1:5000 城市联系进入 1:2000 重点区总平面，英雄场景再进入 1:500 详图、1:200 剖面和装配轴测；全部标为“概念比例，待测绘与官方底图复核”。众智园保留环形测试庭和完整旁路；AI 原点保留无账户穿行大厅；大钟寺被重构为“公共十字 + 东南可逆试验湾 + 西南证据门廊 + 双侧蓝绿边界”。设计尺寸是原型建议，不是现状测量；专业判断以矢量构件、结构化接口和数量公式为准。
+三站从 1:5000 城市联系进入 1:2000 重点区总平面，英雄场景再进入 1:500 详图、1:200 剖面；S7 继续进入 1:50 装配节点和分层轴测。全部标为“概念比例，待测绘与官方底图复核”。众智园保留环形测试庭和完整旁路；AI 原点保留无账户穿行大厅；大钟寺被重构为“公共十字 + 东南可逆试验湾 + 西南证据门廊 + 双侧蓝绿边界”。设计尺寸是原型建议，不是现状测量；专业判断以矢量构件、结构化接口和数量公式为准。
 
 43.6 平方公里统筹研究范围用于组织跨区域能力；约 11.4 平方公里临时总体设计范围用于建立连续公共基线；约 368.4 公顷三处临时重点区用于一比一原型。核心结构为“一脊、三站、两翼、十二组双答场景”：公共基线脊串联众智园能力验证站、AI 原点公共转译站和大钟寺城市采用站；中关村科技服务翼提供法务、知识产权、评测、融资与国际服务；小月河场景赋能翼提供居民问题、气候韧性与真实反馈。[data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]
 
@@ -79,15 +79,17 @@ AI 准入同时满足五道门：普通答案独立成立；服务同一任务�
 
 这套“双答协议”既是空间概念，也是可复制的运营机制、治理体系和场景网络：同一协议从测试庭延伸到公共服务、文化、交通与气候空间，但每一处都必须重新通过本地准入门。
 
-V8 将副命题固定为“**验真成环、共译成门、回执成廊，全年每一次试验都留下可复核记录**”。为保持已经合并版本的对象可追踪性，S7 继续使用稳定的 `V7-D-*` 几何 ID；版本名称不等于对象版本。公共路线、盲道、坡道、过街、路缘、接驳、试验边界、门廊、人工岗位、急停、消防、存储和撤场仍解析到同一 WGS84 证据链。[data:geometry/roads.geojson#V7-D-BASE-EW] [metric:s7_traceable_spatial_object_count]
+V10 将副命题固定为“**验真成环、共译成门、回执成廊；规则先编译，现场再证明**”。为保持已经合并版本的对象可追踪性，S7 继续使用稳定的 `V7-D-*` 几何 ID；版本名称不等于对象版本。公共路线、盲道、坡道、过街、路缘、接驳、试验边界、门廊、人工岗位、急停、消防、存储和撤场仍解析到同一 WGS84 证据链。[data:geometry/roads.geojson#V7-D-BASE-EW] [metric:s7_traceable_spatial_object_count]
 
-证据按 `E0 public source → E1 concept design → E2 baseline prototype pending → E3 controlled trial pending → E4 civic adoption pending` 五级推进。当前方案只完成 E0/E1；E2 以前不设成效百分比，E3 以前不得声称 AI 增量成立，E4 必须由人类场景委员会签署 `adopt / revise / stop`。所有页面和交互首屏统一显示 `NOT FIELD-RUN`。[metric:evidence_ladder_level_count] [metric:field_performance_status]
+证据按 `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending` 五级推进。S7 为 `E2_documented_prototype_ready`，T2/S2 为 `E1_concept_design`；另设不占用现场等级的 `T0_synthetic_contract_verified`。E2 不表示测绘、许可、搭建或现场基线完成，E4 必须由人类场景委员会签署 `adopt / revise / stop`。所有页面和交互首屏统一显示 `NOT FIELD-RUN`。[metric:evidence_ladder_level_count] [metric:field_verification_result_count]
 
 ![三层空间构件剖面](assets/figures/section-prototype.png)
 
-### V9 可验证城市样机：E2 原型就绪而非现场完成
+### V10 城市采纳编译器：84 项合成验证与 E2 文件就绪
 
-V9 将大钟寺 S7 从单纯 E1 概念图推进为 **E2 原型准备文件完整**：同一套几何同时生成 1:5000 城市联系、1:2000 重点区、1:500 构件详图、1:200 剖面和分层剖切轴测。E2 在本方案中的严格含义是：构件数量、八类许可、采购分包、普通基线表、受控试验表、异常停止表、恢复演练表和城市采纳回执均已形成可复核模板；它**不表示**测绘、许可、采购、搭建或现场运行已经发生。
+S7 的 **E2 原型准备文件**由同一套几何生成 1:5000 城市联系、1:2000 重点区、1:500 构件详图、1:200 剖面、1:50 坡道/盲道—可拆隔离—证据牌—临电—雨水节点和分层装配轴测。E2 的严格含义是构件数量、八类许可、采购分包和五类空白表单可复核；它**不表示**测绘、许可、采购、搭建或现场运行已经发生。[data:visual/assets/spatial-atlas.json] [metric:s7_prototype_kit_item_count]
+
+“编译器”对 `SCN-001—012` 各执行七类用例：普通基线、许可缺失、岗位缺失、公共服务退化、零容忍事件、人工恢复和设备退役。状态机只接受 `OPEN→TRIAL`、`TRIAL→PAUSE`、`PAUSE→OPEN`、`PAUSE→RETIRE`、`RETIRE→OPEN`；非法跃迁、许可/岗位不全、公共路线中断，或把现场未知冒充已知，都会使构建失败。本次脚本实际生成并通过 84/84 项，结果为 `synthetic_design_verification`，不是现场仿真或安全认证。[data:visual/assets/v10-tabletop-results.json] [metric:synthetic_design_verification_pass_count]
 
 S7 的普通公共十字和人工服务必须先完成测绘与 7 个连续运行日的基线记录。只有场地、权属、消防、无障碍、临电、网络、交通组织和设备安全八道许可门全部关闭，且场地负责人、普通服务人员、安全负责人和数据记录人员独立在岗，东南侧试验湾才可进入 `TRIAL`。碰撞、缓冲侵入、急停失效、公共路线中断或人工接管失败均触发零容忍停止；计时从停止指令开始，到人工完成同题任务且两条公共路线恢复开放为止。当前恢复时间仍为 `unknown / not_field_run`。
 
@@ -117,7 +119,7 @@ S7 的普通公共十字和人工服务必须先完成测绘与 7 个连续运�
 
 ![AI 原点公共转译厅：可穿行大厅与三类人工服务](assets/figures/station-ai-origin.png)
 
-**大钟寺·回执廊 / Receipt Porch**是 V8 的旗舰样板，以“公共十字 + 常规接驳 + 东南可逆试验湾 + 西南证据门廊 + 蓝绿边界”组织 S7—S9。OSM 只能支持方向性城市联系，不能确认精确站口或完整建筑界面；四个入口是待核验的方向性接口，南侧缺测带也被直接披露。AI 只进入东南试验湾，门廊集中人工服务、运行状态、申诉与采纳决定，撤场后场地恢复为候车、短停或公共活动面。[data:geometry/public_space.geojson#V7-D-FORECOURT] [data:geometry/public_space.geojson#V7-D-NODATA]
+**大钟寺·回执廊 / Receipt Porch**是 V10 的旗舰样板，以“公共十字 + 常规接驳 + 东南可逆试验湾 + 西南证据门廊 + 蓝绿边界”组织 S7—S9。OSM 只能支持方向性城市联系，不能确认精确站口或完整建筑界面；四个入口是待核验的方向性接口，南侧缺测带也被直接披露。AI 只进入东南试验湾，门廊集中人工服务、运行状态、申诉与采纳决定，撤场后场地恢复为候车、短停或公共活动面。[data:geometry/public_space.geojson#V7-D-FORECOURT] [data:geometry/public_space.geojson#V7-D-NODATA]
 
 英雄场景 S7 将两条 4.0m 原型公共路线、0.4m 触觉引导、两处路缘坡道、常规接驳、双侧候车与遮阴、雨水花园、独立低速湾、证据门廊、安全缓冲、疏散面、人工岗位和存储撤场线并置。所有尺寸是待复核的设计假设，只用于明确“普通路线不穿过试验边界”的空间关系。[data:geometry/roads.geojson#V7-D-TACTILE-NS] [data:geometry/buildings.geojson#V7-D-PORCH]
 
@@ -127,7 +129,7 @@ S7 的测量分母预先写清但结果保持未知：E2 普通原型建成后�
 
 运营 RACI 落到具体位置：资产代表负责前场、存储与恢复；普通服务人员驻证据门廊；AI 运营者只管理东南试验湾；安全负责人驻缓冲西缘并控制双急停；数据负责人维护人工、非识别事件台账；公众代表在门廊审阅申诉。`TRIAL` 时安全负责人不得与普通服务岗位由同一人兼任；任一适用许可或最低岗位缺失只能保持 `OPEN`。[data:geometry/buildings.geojson#V7-D-PORCH] [data:geometry/constraints.geojson#V7-D-STAFF-TRIAL]
 
-17 项原型包把可实施性拆成可复算数量：公共铺装、盲道、坡道、雨水花园、遮阴、座椅、饮水、照明、可拆围挡、双急停、状态牌、服务亭、控制亭、端侧机柜、人工计数和存储单元。每项登记数量公式、装配状态、维护责任和退役去向；单价与总价统一为 `pending_market_quote`，总价只保留“数量 × 正式询价”的公式。[metric:s7_prototype_kit_item_count] [metric:s7_formal_cost_status]
+16 项原型包把可实施性拆成可复算数量：公共铺装、盲道、坡道、雨水花园、遮阴、座椅、饮水、照明、可拆围挡、双急停、状态牌、服务亭、控制亭、端侧机柜、人工计数和存储单元。每项登记数量公式、装配状态、维护责任和退役去向；单价与总价统一为 `pending_market_quote`，总价只保留“数量 × 正式询价”的公式。[metric:s7_prototype_kit_item_count] [metric:s7_formal_cost_status]
 
 一天运行被固定为六步：开场检查；普通基线独立运行；许可齐全后开启受控试验；触发停止后人工接管；闭场对照记录；设备进入存储或供应商回收。恢复计时从停止指令发出开始，到人工完成普通任务且两条公共路线恢复开放为止；E2 演练前不预填达标值。[data:visual/assets/spatial-atlas.json]
 
@@ -135,7 +137,7 @@ S7 的测量分母预先写清但结果保持未知：E2 普通原型建成后�
 
 三处原型故意不共享同一平面母题：众智园以环形隔离和旁路解决人机安全；AI 原点以三条无门槛穿行线把服务嵌入公共大厅；大钟寺以四象限步行联系和独立时限湾保障常规交通优先。每处均把普通基线、AI 插件和证据界面落实为相互可见但不相互挟持的位置关系。[metric:station_spatial_prototype_count]
 
-S7 采用五级审查视图：1:5000 城市联系、1:2000 总平面、1:500 组件详图、1:200 剖面和装配轴测；T2/S2 保留四级类型对照。比例均为原型建议，待测绘与官方底图复核。[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count]
+S7 采用六项审查视图：1:5000 城市联系、1:2000 总平面、1:500 组件详图、1:200 剖面、1:50 装配节点和分层轴测；T2/S2 补齐各自关键局部，使“环、门、廊”不依赖标题辨认。比例均为原型建议，待测绘与官方底图复核。[data:visual/assets/spatial-atlas.json]
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -204,7 +206,7 @@ S7 采用五级审查视图：1:5000 城市联系、1:2000 总平面、1:500 组
 | 城市采用场 | 场地与交通运营方 | 活动、安全、维护和社区代表 | 常规接驳、疏散、无障碍、时窗和投诉机制 | M：公共空间与可拆插件 | 近失误/容量/接管异常即 stop；湾区恢复普通用途 |
 | 公开证据与委员会 | 独立场景委员会秘书处 | 居民、无障碍代表、专业人员、运营方 | 指标定义、利益冲突披露、会议记录与申诉 | S：数据与公共沟通 | 证据不可复核则不 adopt；保留可审计档案 |
 
-主体名称均为职责建议，不表示已获机构授权。S7 的 17 项原型包提供设计数量和计算公式，单价、总价与采购方式等待正式询价；其余项目仍只分 S/M/L 复杂度。[depth:renewal_project_list] [metric:s7_formal_cost_status]
+主体名称均为职责建议，不表示已获机构授权。S7 的 16 项原型包提供设计数量和计算公式，单价、总价与采购方式等待正式询价；其余项目仍只分 S/M/L 复杂度。[depth:renewal_project_list] [metric:s7_formal_cost_status]
 
 T2、S2、S7 共用七角色 RACI；S7 进一步把角色落到证据门廊、试验湾、安全缓冲、双急停、事件台账和存储撤场线。许可前置覆盖场地、消防、无障碍、临电、网络、交通组织与设备安全；责任不全或许可未完成只能保持 `OPEN`。原型包实行每日开场检查、试验前联锁、月度照明检查、资产盘点和撤场验收。[data:visual/assets/two-answers.json]
 
@@ -224,9 +226,9 @@ S7 另设 90 天最小试点：0—15 天核验测绘、权属、站口、消防
 
 ## 指标体系、面积复算与合规矩阵
 
-known 只包括可复算的文档与设计覆盖：12 个双答场景、3 座回执地标和4 个季节程序。[metric:paired_scenario_count] [metric:receipt_landmark_count] [metric:annual_program_cycle_count]
+`known design` 只包括可复算的文档与设计覆盖：12 个双答场景、3 座回执地标、4 个季节程序、16 项 S7 构件和空间对象；它不代表现场成效。[metric:paired_scenario_count] [metric:receipt_landmark_count] [metric:annual_program_cycle_count]
 
-另有 5 个 S7 试点阶段、98 个 S7 设计对象、5 个审查视图和 17 项原型包。服务完成率、满意度、能耗、单价、总价、无障碍失败率和事件率均为 unknown；交互展显示“待现场基线 / 待正式询价”。[metric:s7_pilot_phase_count]
+`synthetic verification` 是 12×7=84 项规则演练，84/84 通过只说明准入、状态跃迁、停止、恢复和退役契约在给定输入下自洽；`field unknown` 包括服务完成率、安全表现、满意度、能耗、单价、总价、无障碍失败率和恢复时长，交互展显示“待现场基线 / 待正式询价”。[metric:synthetic_design_verification_case_count] [metric:synthetic_design_verification_pass_count] [metric:field_verification_result_count]
 
 证据链为“任务问题 → 空间节点 → 重点区总平面 → 场景详图 → 典型剖面 → 普通/AI 两条路径 → 90 天试点 → 四季复核 → 最小数据 → 人工责任 → 共同指标 → 准入/停止 → 城市采纳回执 → adopt/revise/stop → 退出还场 → 公共知识归档”。回执和台账当前统一标记 `not_field_run / pending_field_evidence`，不把设计完成度误写成运行效果。公开界面不展示个人轨迹或未经核验的排名；模型输出不是采纳决定；`score_submission.py` 只作内部建议检查，不冒充正式评分。
 

@@ -361,7 +361,7 @@
       "assumptions": [
         "A-METRICS-001"
       ],
-      "reason": "V9 documents E2 prototype readiness only; no survey, permit, assembly, baseline, controlled trial or adoption has occurred."
+      "reason": "V10 documents E2 prototype readiness and T0 synthetic contract verification only; no survey, permit, assembly, field baseline, controlled field trial or adoption has occurred."
     },
     "s7_traceable_spatial_object_count": {
       "status": "known",
@@ -551,6 +551,58 @@
         "ASM-V9-E2"
       ],
       "reason": "E2 documents are prepared, but survey, permits, quotes, assembly and field operation have not occurred."
+    },
+    "synthetic_design_verification_case_count": {
+      "status": "known",
+      "value": 84,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/v10-tabletop-results.json"
+      ],
+      "formula": "count(12 scenarios × 7 deterministic design-contract cases)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V10-SYNTHETIC"
+      ]
+    },
+    "synthetic_design_verification_pass_count": {
+      "status": "known",
+      "value": 84,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/v10-tabletop-results.json"
+      ],
+      "formula": "count(test where synthetic_result=pass)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V10-SYNTHETIC"
+      ]
+    },
+    "synthetic_design_verification_scenario_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/v10-tabletop-results.json"
+      ],
+      "formula": "count(distinct scene_id)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V10-SYNTHETIC"
+      ]
+    },
+    "field_verification_result_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/v10-tabletop-results.json"
+      ],
+      "formula": "count(records where field_status is a completed field result)",
+      "confidence": "high",
+      "assumptions": [
+        "ASM-V10-SYNTHETIC"
+      ]
     }
   }
 }

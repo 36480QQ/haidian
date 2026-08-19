@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7.0",
+  "schema_version": "1.8.0",
   "dataset_id": "jingzhang-two-answers-spatial-atlas",
   "status": "concept_proposal_under_provisional_boundaries",
   "view_box": [
@@ -3307,7 +3307,7 @@
     "zh": "仅为临时边界下的概念性空间布局；不得作为现状测绘、法定总平面、道路红线或审批依据。",
     "en": "Conceptual spatial layout under provisional boundaries; not a survey, statutory plan, road redline or approval basis."
   },
-  "publication_version": "V9",
+  "publication_version": "V10",
   "context_dataset": "context-open-map.json",
   "spine": {
     "id": "public_baseline_spine",
@@ -3347,8 +3347,8 @@
     "status": "concept_proposal"
   },
   "subtitle": {
-    "zh": "可验证的城市样机",
-    "en": "Verifiable Civic Prototype"
+    "zh": "城市采纳编译器：把每项 AI 空间方案编译为完整公共路线、可触发停止机制和可复核回执。",
+    "en": "Civic Adoption Compiler: compile every AI spatial proposal into a complete public route, triggerable stop mechanism and reviewable receipt."
   },
   "hero_scenes": [
     "SCN-002",
@@ -3627,5 +3627,46 @@
     "FORM-INCIDENT",
     "FORM-RECOVERY",
     "FORM-RECEIPT"
+  ],
+  "verification_scope": {
+    "status": "T0_synthetic_contract_verified",
+    "result_ref": "visual/assets/v10-tabletop-results.json",
+    "rule_ref": "visual/assets/run-v10-tabletop.js",
+    "case_count": 84,
+    "field_status": "not_field_run"
+  },
+  "prototype_status": {
+    "S7": "E2_documented_prototype_ready",
+    "T2": "E1_concept_design",
+    "S2": "E1_concept_design",
+    "tabletop": "T0_synthetic_contract_verified",
+    "field": "not_field_run"
+  },
+  "s7_detail_scales": [
+    {
+      "id": "S7-CITY-5000",
+      "scale": "1:5000",
+      "purpose": "city_interface"
+    },
+    {
+      "id": "S7-PLAN-2000",
+      "scale": "1:2000",
+      "purpose": "public_route_and_trial_occupancy"
+    },
+    {
+      "id": "S7-DETAIL-500",
+      "scale": "1:500",
+      "purpose": "curb_tactile_tree_rainwater_stop_fire_removal"
+    },
+    {
+      "id": "S7-SECTION-200",
+      "scale": "1:200",
+      "purpose": "route_buffer_trial_edge_section"
+    },
+    {
+      "id": "S7-NODE-050",
+      "scale": "1:50",
+      "purpose": "ramp_tactile_barrier_evidence_power_rainwater_node"
+    }
   ]
 }
