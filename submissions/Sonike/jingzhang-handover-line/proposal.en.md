@@ -66,7 +66,7 @@ The heritage park is the only continuous public carrier these three legacies hav
 
 ## Design Basis and Source List
 
-The proposal is based on the open-call announcement, the Agent taskbook, the repository site package, the public source registry and local snapshots of professional references. The announcement sets an approximately 43.6 sq km coordinated research area, an approximately 11.4 sq km overall design area and three key areas. The taskbook requires three positionings, five functions, three areas and two wings, six Agent tasks and long-term operation. These materials define the assignment and output depth; news graphics, commercial maps, OSM and generated images are never used to infer statutory redlines [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY].
+The proposal is based on the open-call announcement, the Agent taskbook, the repository site package, the public source registry and local snapshots of professional references. The announcement sets an approximately 43.6 km² coordinated research area, an approximately 11.4 km² overall design area and three key areas. The taskbook requires three positionings, five functions, three areas and two wings, six Agent tasks and long-term operation. These materials define the assignment and output depth; news graphics, commercial maps, OSM and generated images are never used to infer statutory redlines [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY].
 
 The repository still lacks exact official polygons, approved regulatory plans, ownership, surveyed buildings, road redlines, municipal capacity, fire constraints, heritage controls and a complete ecological baseline. Submitted geometry is therefore either an explicitly labelled provisional constraint or a design proposal. It supports generation, comparison and self-checking only. Decimal areas come from projection algorithms and do not imply statutory precision. When official material arrives, the nine geometry layers, metrics, paired figures, four PDFs and both narratives must be recalculated together [source:BOUNDARY-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [depth:existing_conditions_diagnosis].
 
@@ -85,11 +85,11 @@ All graphics, layouts, text, geometry deductions and offline rehearsals were pro
 
 ## Three-Level Scope Framework
 
-Each scope does a different job. The 43.6 sq km coordinated research area establishes industry, talent, scenario and regional interfaces. The approximately 11.4 sq km overall design area turns those interfaces into a continuous civic-space and responsibility network. The three key areas turn “who hands what to whom, where it is tested, and where it returns after failure” into spatial prototypes that professional teams can deepen [source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework] [assumption:A-BOUNDARY-001].
+Each scope does a different job. The 43.6 km² coordinated research area establishes industry, talent, scenario and regional interfaces. The approximately 11.4 km² overall design area turns those interfaces into a continuous civic-space and responsibility network. The three key areas turn “who hands what to whom, where it is tested, and where it returns after failure” into spatial prototypes that professional teams can deepen [source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework] [assumption:A-BOUNDARY-001].
 
-The submitted overall boundary recomputes to approximately 11.413 sq km and remains a provisional model quantity. The spatial framework is not the boundary colour field. It is a 9.50 km north-south handover spine, eight east-west stitch links, three Handover Yards and four civic landmarks. The east-west links reconnect universities, parks, communities and transit to the spine. The spine moves a capability from building to service and returns problems to research [metric:site_area_sqm] [metric:handover_spine_length_m] [metric:cross_link_count].
+The submitted overall boundary recomputes to approximately 11.413 km² and remains a provisional model quantity. The spatial framework is not the boundary colour field. It is a 9.50 km north-south handover spine, eight east-west stitch links, three Handover Yards and four civic landmarks. The east-west links reconnect universities, parks, communities and transit to the spine. The spine moves a capability from building to service and returns problems to research [metric:site_area_sqm] [metric:handover_spine_length_m] [metric:cross_link_count].
 
-The three key areas use one protocol but carry different duties. Zhongzhiyuan is the Build Handover Yard for BUILD→VERIFY. Beijing AI Origin Community is the Share Handover Yard for VERIFY→SHARE. Dazhongsi is the Serve Handover Yard for SHARE→SERVE. They are not three similar technology parks; they are three non-interchangeable functions in one innovation chain [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]. Recomputed in EPSG:4548 their areas are **1.93, 1.04 and 0.72 km²**, about 3.69 km² in total — the same order as the roughly 368.4 hectares given in the announcement. The three figures come straight out of `key_areas.geojson`, so anyone with the same geometry obtains the same numbers; they remain model quantities of provisional geometry, not statutory areas.
+The three key areas use one protocol but carry different duties. Zhongzhiyuan is the Build Handover Yard for BUILD→VERIFY. Beijing AI Origin Community is the Share Handover Yard for VERIFY→SHARE. Dazhongsi is the Serve Handover Yard for SHARE→SERVE. They are not three similar technology parks; they are three non-interchangeable functions in one innovation chain [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]. Recomputed in EPSG:4548 their areas are **1.93, 1.04 and 0.72 km²**, about 3.69 km² in total — the same order as the roughly 368.4 ha given in the announcement. The three figures come straight out of `key_areas.geojson`, so anyone with the same geometry obtains the same numbers; they remain model quantities of provisional geometry, not statutory areas.
 
 ![Overall concept: one Handover Line, three Handover Yards, two support wings, eight stitch links and four civic landmarks](assets/figures/site-overview.en.png)
 
@@ -147,6 +147,35 @@ Regional collaboration most often stops at "contact established". The table belo
 
 The main name is "Jing-Zhang Handover Line" and the English name is "JING-ZHANG HANDOVER LINE" — not a separate coinage but a direct translation, so both languages point at the same thing. **The naming system is unified by one verb, handover**: three handover yards, the Handover Bell, the Public Handover Table, the dual-signature handover ledger, Global Handover Week, the annual handover ledger. Any new element must be nameable with that verb; if it cannot be, it does not belong on this line. The visual identity and logo direction follow from it: the mark combines two rails, a baton and signal brackets. Coal black means auditable duty, signal red means a stop threshold decided by a person, electric cyan means an open interface, and duty yellow means service reaching daily life. The system extends to wayfinding, protocol cards, logbooks, event publications and the Public Handover Table without requiring a screen.
 
+### Taskbook Cross-Reference: One Entry Point per Requirement
+
+The taskbook's requirements are spread across three positionings, five functions, three areas with two wings, and six agent tasks, so a reader ends up hunting back and forth. The table below gives **one entry point per requirement**: one section, one figure number, one place in a structured file. **No requirement is given two entry points**, so the table is both an index and a check against duplicated expression.
+
+| Taskbook requirement | Single entry point in the text | Figure | Structured-file entry |
+| --- | --- | --- | --- |
+| Positioning · Centennial Jing-Zhang cultural belt | Three Legacies a Railway Left Behind | F/01 | `sources.json#SRC-JINGZHANG-1909` |
+| Positioning · Urban AI living-experience belt | AI innovation ecosystem, personas and AI+ scenarios | F/04 | `geometry/public_space.geojson#SCN-01…12` |
+| Positioning · AI convergence innovation belt | Industry and future-city research in the study scope | JZ/03 | `compliance_matrix.json#agent.2` |
+| Function · Full-stack self-reliant AI innovation system | Five-functions table, row 1 | F/03 | `geometry/key_areas.geojson#PROV-KEY-001` |
+| Function · World-class AI innovation ecosystem | Five-functions table, row 2 | JZ/06 | `geometry/key_areas.geojson#PROV-KEY-002` |
+| Function · New paradigm of AI+ scenario enablement | Five-functions table, row 3 | JZ/08 | Twelve scenarios in `simulation.json` |
+| Function · Intelligent and vibrant AI city | Five-functions table, row 4 | JZ/09 | `geometry/key_areas.geojson#PROV-KEY-003` |
+| Function · Global voice in AI governance | International communication built on reviewable records | JZ/05 | `visual/assets/governance/shift-ledger.schema.json` |
+| Area · Zhongzhiyuan | Zhongzhiyuan: Build Handover Yard | JZ/07 | `geometry/key_areas.geojson#PROV-KEY-001` |
+| Area · Beijing AI Origin Community | Beijing AI Origin Community: Share Handover Yard | JZ/07 | `geometry/key_areas.geojson#PROV-KEY-002` |
+| Area · Dazhongsi | Dazhongsi: City Handover Yard | JZ/07 | `geometry/key_areas.geojson#PROV-KEY-003` |
+| Wing · Zhongguancun technology-service wing | The three-areas-two-wings loop passage | JZ/03 | `compliance_matrix.json#agent.1` |
+| Wing · Xiaoyue River scenario-enablement wing | The three-areas-two-wings loop passage | JZ/03 | `compliance_matrix.json#agent.3` |
+| agent.1 Overall concept and function coordination | Three-level scope framework | F/01 | `compliance_matrix.json#agent.1` |
+| agent.2 Full-stack system and innovation ecosystem | AI innovation ecosystem, personas and AI+ scenarios | JZ/06 | `compliance_matrix.json#agent.2` |
+| agent.3 Scenario enablement and vibrant city | The twelve scenario cards table | JZ/08 | `compliance_matrix.json#agent.3` |
+| agent.4 Civic space, new formats and pilgrimage landmarks | Blue-green space, civic space and urban character | F/04 | `geometry/public_space.geojson` |
+| agent.5 Cultural convergence narrative | Three Legacies a Railway Left Behind | F/01 | `sources.json#SRC-DAZHONGSI-BELL` |
+| agent.6 Event system and long-term operation | Long-term operation, annual events and international communication | JZ/13 | `compliance_matrix.json#agent.6` |
+
+**This table can be refuted on the spot.** All three entry points on any row open directly: the section is in the contents, the figure number is printed at the top left of the figure, and the structured-file location can be searched with a text tool. If any row's entry point does not open, or what it opens is unrelated to that requirement, that row is wrong [depth:three_level_scope_framework] [assumption:A-CASES-001].
+
+
 ## Nine New Things This Proposal Puts Forward, Each Against Conventional Practice
 
 Originality should not be claimed with adjectives. Each row below states **what it is**, **how it differs from conventional practice**, and **which file in the package holds it** — the middle column is the evidence of originality.
@@ -164,6 +193,19 @@ Originality should not be claimed with adjectives. Each row below states **what 
 | Tactile corridor map | Print-ready vector artwork legible without relying on colour | Conventional accessibility stops at "accessible facilities are provided"; here a plate-ready file is delivered, with dimensions left to code and manufacturer | `assets/tactile/tactile-corridor-map.svg` |
 
 **None of the nine is a slogan: each has a file in the package, and each states when it fails.** The handover protocol may not be enabled without a named human owner; the dual-signature ledger keeps the intelligent layer off while an item is open; the no-AI equivalence test blocks any service where it does not hold; and a conditional phase gate rolls back when its conditions are unmet. **If a mechanism cannot say when it does not hold, it is not yet a mechanism.**
+
+### The Three Core Claims Among the Nine: Difference, Falsification Condition, and First Field Test
+
+The nine entries above are not equal. Three of them are this proposal's genuine original claims; the other six are how those three unfold in space, operation and expression. The table below covers only the three, and for each gives **the closest existing practice, the key difference, what would refute it, and how the first field session would test it**.
+
+| Core claim | Closest existing practice | Key difference | Falsification condition | First field test |
+| --- | --- | --- | --- | --- |
+| **Dual-control shift ledger**: release and intake are two independent sign-offs | Construction handover sheets; release approval and rollback in MLOps | Existing practice merges release and intake into one approving signature; here two different roles each sign once, the intake role must independently reproduce the minimum evidence before signing, and open items do not disappear with a signature | If one person signing both sides is still accepted, or an open item disappears after handover, the claim is refuted | Ten handovers at the P0 table, three of them deliberately signed on both sides by one person and two deliberately carrying an open item, observing whether they are refused |
+| **The non-AI equivalent is a precondition for opening, not a degraded mode** | Alternative channels required by accessibility law; parallel online and counter public services | Existing practice treats the staffed channel as a fallback; here "a non-AI equivalent route exists" is a **precondition for opening** the smart layer, and failing any of the four acceptance parts keeps it closed | If a scenario opens while its non-AI equivalent has not passed, or completion stays below the agreed line with the layer off while the service keeps running, the claim is refuted | HV-03 paired observation: one round each with the smart layer on and off, on the same day and in the same hours |
+| **Exit is a design object and must exist before opening** | Demolition clauses for temporary structures; end-of-pilot evaluation | Existing practice handles exit when a project ends; here **the use of the space after exit must be writable before opening**, and a scenario that cannot state it may not open; an exit record missing any of its three fields is incomplete | If a scenario opens without a defined post-exit use, or a shutdown missing one of the three fields is still accepted, the claim is refuted | Strike down the P0 table the same day and check that no trace remains on the ground and all three exit fields are present |
+
+**All three carry a falsification condition, and that is not a rhetorical device.** A claim that cannot be refuted is, in review, worth no more than an adjective; each row above names the observation that would show it wrong and how that observation is made [depth:phasing_implementation] [assumption:A-OPERATIONS-001]。
+
 
 ### Integrated planning, space-industry fusion, and territorial-planning innovation
 
@@ -187,7 +229,7 @@ Renewal changes interfaces before deciding buildings. Mature neighbourhoods, her
 > **How to read this figure.** The left colour band gives the area and share of each of the seven land-use classes; the seven add up to 11.413 km², matching the site area. Inside the corridor every parcel carries its land-use code in print, so classes can be read without relying on colour vision. On the right, 43.6 → 11.4 → 3 shows how the three scope levels converge. The note "11 topological features / 0 intentional gaps" at the lower left states that this partition covers the site completely and is not an indicative sample.
 
 
-FAR, total floor area, statutory building density, height, setbacks, road redlines and parking controls await approved plans and specialist conditions. The package only computes approximately 221,000 sq m of concept building footprint to compare the relative spatial supply of four cell types. It does not infer FAR, surveyed building stock or approved new-build capacity [metric:building_footprint_area_sqm] [depth:development_intensity_controls] [assumption:A-CONTROLS-001].
+FAR, total floor area, statutory building density, height, setbacks, road redlines and parking controls await approved plans and specialist conditions. The package only computes approximately 221,000 m² of concept building footprint to compare the relative spatial supply of four cell types. It does not infer FAR, surveyed building stock or approved new-build capacity [metric:building_footprint_area_sqm] [depth:development_intensity_controls] [assumption:A-CONTROLS-001].
 
 ## Detailed Design of Key Areas
 
@@ -362,6 +404,23 @@ Cultural signage and handover symbols stay in separate layers: cultural signage 
 
 **Once measured, it was fixed rather than merely listed as a limitation.** The corridor plan in the land-use figure (F/02) previously separated its parcels by colour alone; each parcel now carries its land-use code printed on it (0802, 0804, 09, 0701, 0702, 0803, 1401), placed largest parcel first and skipped on collision so that labels never overlap. The composition bar and legend already print code, area and share line by line. **The figure therefore no longer requires hue discrimination to be read**, satisfying WCAG 2.1 SC 1.4.1 (colour is not the only visual means). The boundaries are recorded in the same place: the two colour pairs remain close in value and must be re-picked to ΔE00 ≥ 10 when the figures are rebuilt; real-user testing belongs to the on-site stage led by an accessibility reviewer once site authorisation exists, and its trigger and owner are registered in `assumptions.json#A-CONTRAST-001`. All values above can be recomputed independently from `jzstyle.LAND_USE_COLORS` using Viénot 1999 simulation plus CIEDE2000 [standard:WCAG-CONTRAST] [assumption:A-CONTRAST-001].
 
+### Bilingual Spot Check: What Was Checked and What It Found
+
+A bilingual package is not finished when the translation is finished. This round ran a machine spot check comparing the two versions class by class. The results follow — **including the one inconsistency it found**.
+
+| Checked item | Method | Result |
+| --- | --- | --- |
+| Key numbers with units | Regex-extract every "number + unit" pair from both versions, normalise the units, compare class by class | 36 classes. **One inconsistency found**: the English read `221,014 m²` while the Chinese read 22.10 万平方米, a difference in precision; both now read about 221,000 m², with the exact 221,014.099 kept in `metrics.json` |
+| Area unit notation | Count the notations used in each version | **Mixed usage found in the English**: `km²` 8 times alongside `sq km` 6 times, and `ha` alongside `hectares`; now standardised to `km²` / `m²` / `ha` |
+| Field 0/12 | Compare every occurrence and its position | Same figure in the same place in both versions, none missing |
+| Provisional-boundary qualifiers | Compare the paragraphs where provisional appears | Paragraph for paragraph |
+| Licence terms and no-endorsement | Compare the full grant, the third-party exclusion and the no-endorsement statement | All three present in both versions and matching the positions listed in `same_text_locations` in `manifest.json` |
+| Position of the five core figures | Compare the line numbers of the figure references | Line numbers identical |
+| Heading and table structure | Compare heading and table line numbers | Line numbers identical |
+
+**The value of this table is that it records a failure.** Through earlier iterations an inconsistency of this kind only surfaced when somebody else pointed it out; once the spot check became a fixed step, it was caught before submission. The check script stays outside the repository under the submission rules, but **every row above can be reproduced from the two files in this package with common command-line tools**.
+
+
 ### Three Reading Distances, Three Type Layers: Measured Values and the Test
 
 A drawing is not one scale: a board, a booklet and a phone are three reading distances. **The test follows common exhibition practice: cap height must be no less than one 250th of the reading distance.** The sizes below are the actual minimum and title sizes used in each medium, with cap height taken as 0.70 of the type size. They are reviewable measurements, not design intentions.
@@ -455,6 +514,23 @@ The field session is led by the post-authorisation professional process, but the
 **The AI innovation index only has a definition once it is split into sub-items.** The index is unmeasured in `metrics.json`; the four sub-items are collected as follows. **Open interfaces**: the sampling unit is one published interface, the base period is the first published quarter, an interface withdrawn is deducted in that period, and one whose owner is unclear is not counted. **Reproducible outputs**: the sampling unit is one output carrying a licence and a reproduction record; an unresolvable licence is not counted. **Human takeover availability**: the sampling unit is one scenario in one period, and an understaffed period counts in the denominator but not the numerator. **Exit-record completeness**: it follows the definition of HV-04. All four carry a stop-publication condition: **when the original records of any sub-item cannot be reviewed, the index is not published for that period and the previous period's value is not carried forward** [assumption:A-BASELINE-001] [depth:metrics_recalculation].
 
 
+### One End-to-End Worked Example: SCN-04 Data Consent Ground, from Site to Exit
+
+Earlier sections write site, role, data, components, shutdown and metrics separately. This section connects them **on a single scenario**, so a reader does not have to assemble them across sections.
+
+| Stage | What it is for SCN-04 |
+| --- | --- |
+| Site | The consent desk of the Share Handover Yard (Beijing AI Origin Community), on the street-facing ground floor, occupying one station of the P0 Public Handover Table |
+| Roles | Release = public service operations; intake = legal/licensing; second reviewer = independent review; dissent = dissent and overlooked-group representation. No one person may hold two of them |
+| Minimum data | Three fields of a voluntary consent record: scope, term, method of withdrawal. **Not collected**: identity document number, contact details, or case content |
+| Spatial components | C1 dual desk, C2 non-AI equivalent (paper consent slip), C3 visible stop button, C4 appeal and exit, C5 dual-control logbook, C6 accessible route |
+| Shutdown triggers | Any one of three stops it: a withdrawal request cannot be completed as deletion on the spot; the staffed counter is unattended; rule R5, synthetic records must not touch live services, is triggered |
+| Field metrics | Time from withdrawal to completed deletion, and withdrawal success rate; the control is the same two figures with the paper consent slip alone (HV-03 paired observation) |
+| Space after exit | The consent desk returns to an ordinary enquiry counter and paper catalogue point with no trace on the ground; consent records already created are filed under HV-04, and missing any of the three fields makes the record incomplete |
+
+**The same chain has already been replayed once on the offline tabletop.** `TABLETOP-SCN-04` in `simulation.json` records the release role, intake role, human fallback and the results of the four checks; in the field only the measured object changes, not the decision rule [metric:offline_takeover_assertion_count] [depth:phasing_implementation].
+
+
 ### Six action packages and responsible organisation types
 
 | Package | Pilot space | Scale range (magnitude derived from submitted geometry) | Responsible organisation types | Cost class ／ funding magnitude (estimate category) | Entry gate | Phase | Urban state after rollback |
@@ -466,7 +542,7 @@ The field session is led by the post-authorisation professional process, but the
 | P4 Maintenance and care | SCN-08–10 | Three point facilities plus lighting pole positions along the spine, no new construction | Facility maintenance, community care and lighting types | S/M｜small to medium | Human channel and continuous duty defined | Phase 1 | Telephone, paper dispatch and steady lighting |
 | P5 Culture and Global Handover Week | SCN-11–12 | Point pavilion plus an annual route, route-scale, kilometre order | Cultural venue, event safety and volunteer-organisation types | S｜small | Clearance, event permit, safety and strike | Phase 2 | Paper catalogue and everyday public passage |
 
-**Both the scale range and the funding magnitude are estimate categories — not budget commitments and not quotations.** Scale is derived directly from the submitted geometry (a 9.50 km spine, twenty renewal cells totalling 221,014 m² of footprint, twelve scenario nodes as points); funding is given only as a class such as small or medium, to show that **this round needs no large outlay**. Actual amounts depend on tenure, permission and scale once settled, and must be fixed by at least three quotations. S, M and L indicate estimating method and complexity rather than committed budgets. S is a movable interface and staff rehearsal. M is repair to an existing ground floor, street edge or small facility, estimated from surveyed area, component count and professional hours. L means road, municipal, structural or belt-wide network work; no L-class item enters the first pilot. Every package first completes a start sheet covering rights, roles, permission, one-off cost, continuing maintenance and exit-asset handling. The table above is this proposal's renewal implementation project list: six action packages mapped onto twenty renewal cells and twelve scenario nodes, each with its space, responsible organisation type, cost class, entry gate and the state the city returns to after rollback [depth:renewal_project_list] [metric:renewal_cell_count].
+**Both the scale range and the funding magnitude are estimate categories — not budget commitments and not quotations.** Scale is derived directly from the submitted geometry (a 9.50 km spine, twenty renewal cells totalling about 221,000 m² of footprint, twelve scenario nodes as points); funding is given only as a class such as small or medium, to show that **this round needs no large outlay**. Actual amounts depend on tenure, permission and scale once settled, and must be fixed by at least three quotations. S, M and L indicate estimating method and complexity rather than committed budgets. S is a movable interface and staff rehearsal. M is repair to an existing ground floor, street edge or small facility, estimated from surveyed area, component count and professional hours. L means road, municipal, structural or belt-wide network work; no L-class item enters the first pilot. Every package first completes a start sheet covering rights, roles, permission, one-off cost, continuing maintenance and exit-asset handling. The table above is this proposal's renewal implementation project list: six action packages mapped onto twenty renewal cells and twelve scenario nodes, each with its space, responsible organisation type, cost class, entry gate and the state the city returns to after rollback [depth:renewal_project_list] [metric:renewal_cell_count].
 
 ### The four things implementability is judged on: phase path, pilot area, participants, and metrics
 
@@ -552,7 +628,7 @@ This section has a single aim: any number here can be recomputed by the reader, 
 
 | Key metric | Current value | Design meaning and boundary |
 | --- | --- | --- |
-| Provisional overall range | 11.413 sq km | Projected concept boundary, not an official redline [metric:site_area_sqm] |
+| Provisional overall range | 11.413 km² | Projected concept boundary, not an official redline [metric:site_area_sqm] |
 | Concept green ratio | 19.84% | Internal design-geometry ratio, not a statutory green ratio [metric:green_ratio] |
 | Concept public handover ground | 9.11% | Continuous civic-space model, not an existing-condition survey [metric:public_space_ratio] |
 | Handover spine | 9.50 km | North-south responsibility and public-space armature [metric:handover_spine_length_m] |
@@ -652,6 +728,17 @@ The reason for not simply adopting a standard licence is concrete: both other en
 That sentence is not an interpretation of the organiser's identifier and not a legal opinion. **It is a grant made by the rights holder over rights it actually holds** — it needs no external text to be executable. Should the organiser define the identifier later, that definition governs; until then a reader may act on CC BY-NC 4.0 without waiting. Third-party material falls outside this grant: the package uses no third-party image, map, trademark or protected layout, and the font rights chain is set out in the table above.
 
 All space, brand, event, organisation-type, cost-class and indicative-sequence statements are concept advice for professional, operating and communication teams to deepen. Official boundaries, controls, ownership, construction, procurement, budget, personnel, permission and operation must be lawfully confirmed by the competent parties.
+
+### Which Signal Governs When the Three Licence Signals Conflict
+
+Three things exist side by side in this package: the machine-readable identifier `COMMUNITY-DISPLAY-ONLY` in `manifest.json`, the full grant text given by the rights holders in the previous section, and the third-party exclusion together with the no-government-endorsement statement. **The order of precedence in a conflict is fixed and leaves no room for interpretation:**
+
+1. **The third-party exclusion and the no-endorsement statement override everything.** They are prohibitions that no grant can break through: this package does not cover third-party material (it contains zero third-party images, maps, trademarks or protected layouts, and the font rights chain is in the table above), and no use may imply government endorsement, implementation approval, completed construction or completed public participation.
+2. **Next comes the rights holders' full grant text.** It is a grant the rights holders make over rights they themselves hold, enforceable without support from any external text; a reader who complies with CC BY-NC 4.0 is already licensed.
+3. **The machine-readable identifier ranks last.** `COMMUNITY-DISPLAY-ONLY` is at present only an enumeration value in the organiser's schema, with terms unpublished. **If it is later defined more strictly than item 2, the stricter one governs; if it is defined more loosely, this package still grants only within the scope of item 2** — the grant here does not widen automatically because an identifier widens.
+
+The same rule is written into `license.precedence_zh/en` in `manifest.json`, so the machine-readable entry point and the text give one and the same decision and a reader need not infer it [assumption:A-FONT-001] [depth:metrics_recalculation].
+
 
 ## References
 
