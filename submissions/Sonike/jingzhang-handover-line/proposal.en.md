@@ -742,7 +742,7 @@ The numbers inside those thresholds are lines agreed by the professional team, t
 
 ## Risk, Copyright, and Compliance
 
-The central risk is not merely that “AI can fail”, but whether the city still serves, who can stop the service, and whether the failure returns to research. The proposal manages six groups: spatial, service, data, rights, operations and representation. Each has a trigger, human action, rollback state and next evidence [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS].
+The central risk is not merely that “AI can fail”, but whether the city still serves, who can stop the service, and whether the failure returns to research. The proposal manages six groups: spatial, service, data, rights, operations and representation. Each has a trigger, human action, rollback state and next evidence [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS-DATA-GAP].
 
 | Risk | Current control | Rollback after trigger | Evidence still required |
 | --- | --- | --- | --- |
