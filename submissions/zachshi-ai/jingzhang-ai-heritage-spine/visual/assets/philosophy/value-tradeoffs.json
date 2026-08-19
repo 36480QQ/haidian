@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "价值交易表 (Value Tradeoffs) — illuminating value orderings encoded in the Ren-Track grammar",
+  "core_claim_zh": "人字轨道语法已隐含价值排序；此表把隐含的价值冲突显式化为'优先方向+代价'。这是照亮方案自身价值逻辑，非外加判断。",
+  "core_claim_en": "The Ren-Track grammar already encodes value orderings; this table makes implicit value conflicts explicit as priority + cost.",
+  "tradeoffs": [
+    {
+      "conflict_zh": "遗产保护 vs AI 介入",
+      "priority_zh": "遗产保护",
+      "encoded_in_zh": "文保三原则 P1 最小干预、回授物不改遗产本体",
+      "cost_zh": "AI 设施只能表面叠加，不能深入遗产本体",
+      "cost_acceptance_zh": "接受——遗产本体不可逆"
+    },
+    {
+      "conflict_zh": "回授 vs 效率",
+      "priority_zh": "回授",
+      "encoded_in_zh": "每个 AI 节点必须回授实体回授物",
+      "cost_zh": "回授物建设与维护增加运营成本",
+      "cost_acceptance_zh": "接受——文化不被消费是前提"
+    },
+    {
+      "conflict_zh": "体验丰富 vs 遗产原真",
+      "priority_zh": "遗产原真",
+      "encoded_in_zh": "导览用实体回授物（非虚拟特效）",
+      "cost_zh": "体验不如纯数字炫目",
+      "cost_acceptance_zh": "接受——实体回授保护原真性"
+    }
+  ],
+  "field_status": "not_authorized_not_run"
+}
