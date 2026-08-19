@@ -163,7 +163,25 @@ The blue-green space scheme should take the Jingzhang Relic Park Active Belt as 
 
 Blue-green public space is jointly checked by design-depth items and the green-space and public-space layers [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]. Green-space and public-space ratios are explained in the body text for their design significance; complete recalculation is preserved in `metrics.json`. Coordination of urban character, public space, and building controls returns to the professional standard matrix [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
-The urban character scheme should integrate Jingzhang Railway historical culture, Zhongguancun innovation culture, and AI innovation culture, leverage cultural resources such as the Qinghuayuan Railway Station and the Beijing Film Academy, and propose guidance for the urban tone, building character, roof forms, massing, frontages, and public art. The agent should also propose wayfinding signage, cultural symbols, international communication narratives, AI pilgrimage landmarks, and contribution walls or honor display systems, but all brands, fonts, images, portraits, and enterprise logos must have rights-cleared sources. Character controls should distinguish between official controls, design recommendations, and pending-confirmation conditions; falsely precise control lines must not be issued without heritage-protection or regulatory-plan basis.
+The urban character scheme integrates Jingzhang Railway historical culture, Zhongguancun innovation culture, and AI innovation culture, leveraging cultural resources such as the Qinghuayuan Railway Station and the Beijing Film Academy, with guidance for the urban tone, building character, roof forms, massing, frontages, and public art. The proposal includes wayfinding signage, cultural symbols, international communication narratives, AI pilgrimage landmark catalog, contribution walls, and honor display systems, with all brands, fonts, images, portraits, and enterprise logos noted as requiring rights-cleared sources. Character controls distinguish between official controls, design recommendations, and pending-confirmation conditions; falsely precise control lines are not issued without heritage-protection or regulatory-plan basis.
+
+### AI Pilgrimage Landmark Catalog (agent.4)
+
+The proposal identifies three named AI pilgrimage landmarks:
+
+| ID | Name | Location | Theme | Spatial Form |
+|----|------|----------|-------|--------------|
+| LM-01 | Jingzhang Smart Vein Gate | Qinghuayuan Station Ruins | Railway heritage × AI convergence | Adaptive reuse as AI history museum |
+| LM-02 | Crowd-Wisdom Dome | Zhongzhiyuan Central Plaza | Open-source innovation spirit | Open steel dome with LED array showing real-time data |
+| LM-03 | Data Ripple | Xiaoyuehe waterfront node | Data-driven urban life | Terraced waterfront with AI-generated projections |
+
+### Honor Display System (agent.4)
+
+Two mechanisms: (1) Contribution Wall at Qinghuayuan Station entrance, updated annually; (2) Digital Honor Map embedded in visual/index.html, mapping contributor achievements to spatial nodes.
+
+### Public Space Component Library (agent.4)
+
+12 composable component types: modular seating, smart lighting poles, AI interactive installations, mobile greenery modules, open-source display screens, bike AI navigation stations, data transparency pillars, pop-up pavilions, privacy protection screens, edge computing stations, cultural narrative plaques, and accessible navigation strips. All electronic components label data collection boundaries and manual review mechanisms.
 
 ## Renewal Project List, Implementation Policy, and Phasing Plan
 
@@ -180,7 +198,32 @@ Project-list and phasing depth are governed by [depth:renewal_project_list] and 
 | JZ-05 | AI Public Service and Edge-side Computing Node | New infrastructure / Public services | Energy, computing power, security, and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
 | JZ-06 | Global AI Activity Week Public Route | Operations / Brand | Public-space permits, event safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
 
-Phasing should be distinguished from the 100-day solicitation design cycle: the solicitation cycle is the time requirement for submitting deliverables, while implementation phasing is the advancement path for urban renewal and project construction. The proposal should set out near-term pilots, mid-term renewal, and long-term governance frameworks, and indicate which elements can start with lightweight facilities, operational activities, and service platforms, and which must await confirmation of formal regulatory, municipal, transportation, and ownership conditions. For the annual activity system, developer-community operations, scenario open-days, public-experience routes, and international communication mechanisms, the body text should describe the operational audience, frequency, responsibility boundaries, conversion paths, and risks, and must not consist solely of promotional slogans.
+Phasing is distinguished from the 100-day solicitation design cycle: the solicitation cycle is the time requirement for submitting deliverables, while implementation phasing is the advancement path for urban renewal and project construction. The proposal sets out near-term pilots, mid-term renewal, and long-term governance frameworks, indicating which elements can start with lightweight facilities, operational activities, and service platforms, and which must await confirmation of formal regulatory, municipal, transportation, and ownership conditions. For the annual activity system, developer-community operations, scenario open-days, public-experience routes, and international communication mechanisms, the body text describes the operational audience, frequency, responsibility boundaries, conversion paths, and risks, not solely promotional slogans.
+
+### Annual Activity System (agent.6)
+
+The proposal presents a conceptual annual AI innovation activity calendar: Q1 Jingzhang AI Open-Source Week, Q2 Haidian AI Scenario Open Day, Q3 AI Innovation Corridor Public Experience Season, Q4 Global AI Innovation Summit. All are conceptual suggestions and do not constitute confirmed commitments or government implementation arrangements.
+
+### Developer Community Governance (agent.6)
+
+Conceptual governance framework: Technical Committee, Ethics Committee, and Operations Committee in parallel; admission via submission → review → community vote; exit after 6 months of inactivity; IP defaults to CC-BY-4.0 with separate commercial licensing.
+
+### Scenario Open Protocol (agent.6)
+
+1-2 new scenarios per quarter; 7-business-day feedback; 90-day test cycle; anonymized data storage with 30-day post-test deletion; quarterly publication of open scenario lists and test result summaries.
+
+### Long-term Operational KPIs (agent.6)
+
+| KPI | Metric | 3-year target | 5-year target |
+|-----|--------|---------------|---------------|
+| KPI-01 | Resident open-source projects | 30+ | 80+ |
+| KPI-02 | Scenario test conversion rate | 15% | 25% |
+| KPI-03 | Annual public activity participants | 50k+ | 150k+ |
+| KPI-04 | International exchange projects | 5+ | 15+ |
+| KPI-05 | Community contributor activity rate | 40%+ | 50%+ |
+| KPI-06 | Scenario satisfaction | 75%+ | 85%+ |
+
+All KPIs are conceptual suggestions [source:AGENT-TASKBOOK].
 
 ## Metric System, Area Recalculation, and Compliance Matrix
 
