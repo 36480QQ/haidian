@@ -199,6 +199,13 @@
       "source_type": "agent_inferred_from_public_data",
       "confidence": "high",
       "usage": "2024 Beijing Zhiyuan Conference report (Haidian planning world-first AI street): Haidian hosts >80% of the city's AI scholars, >70% of AI2000 top scholars, >70% of registered large-model firms, >60% of AI-licensed invention patents, 1,000+ AI firms (2/3 of city, 1/6 of country). Statistical evidence; not spatial authority."
+    },
+    {
+      "id": "SEB-2549",
+      "url": "https://github.com/open-city-ai/haidian/issues/2549",
+      "source_type": "community_open_contribution",
+      "confidence": "high",
+      "usage": "Service Equivalence Baseline SEB v0.5.0 (still usable when AI is switched off): five-field node schema (ai_off_path/human_handoff/gate_id/operating_mode/responsible_role), denominators never drop failed samples, L0-L4 ladder with gates G0-G3 (downgrade allowed), eight stop/resume rules, AI permission boundary, dual-entry handover ledger; CC BY-SA 4.0 granted, open for adoption. Adopted by this proposal as criteria skeleton for AI scenarios; no rating/approval claimed."
     }
   ]
 }
