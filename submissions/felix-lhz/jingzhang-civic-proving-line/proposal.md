@@ -19,7 +19,7 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterpris
 
 S7 以 1:5000、1:2000、1:500、1:200、1:50 节点和装配轴测承担实施样板；12 个场景各运行 7 类确定性桌面用例，形成 84 项可复跑的合成设计契约验证，不增加场景数量。[metric:synthetic_design_verification_case_count] [metric:receipt_landmark_count]
 
-**本轮有三个可定位结论：城市尺度上三座地标各有独立轮廓；旗舰尺度上公共十字在 `OPEN / TRIAL / PAUSE / RETIRE` 四态中始终连续；验证尺度上许可、岗位、公共服务或状态跃迁任一失败都会阻止进入下一态。** 不读标题也应能区分环、门、廊；不读图例也应能找到触觉引导、独立试验湾、人工岗位、双急停、消防到达和撤场方向。[data:geometry/roads.geojson#V7-D-BASE-NS] [data:visual/assets/v10-tabletop-results.json]
+**本轮有三个可定位结论：城市尺度上三座地标各有独立轮廓；旗舰尺度上公共十字在 `OPEN / TRIAL / PAUSE / RETIRE` 四态中始终连续；验证尺度上许可、岗位、公共服务或状态跃迁任一失败都会阻止进入下一态。** 不读标题也应能区分环、门、廊；不读图例也应能找到触觉引导、独立试验湾、人工岗位、双急停、消防到达和撤场方向。[data:geometry/roads.geojson#V11-ALT-C-BASE-NS] [data:visual/assets/tabletop-results.json]
 
 ![总体双答结构](assets/figures/site-overview.png)
 
@@ -44,7 +44,7 @@ ALT-A 的试验边界切断公共十字，并与消防、撤场和人工急停�
 
 北京市政府公开的中关村创新史用于说明“试验—转化—共享”的文化线索；大钟寺轨道背景仅作方向性接口。它们均不证明精确站口、建筑、红线或权属。[source:ZHONGGUANCUN-HISTORY-OFFICIAL] [source:DAZHONGSI-LINE13-CONTEXT]
 
-设计证据明确分为三类：**已知设计**是可复算的几何、数量与文档覆盖；**合成验证**是规则驱动的 84 项桌面用例；**现场未知**包括客流、安全表现、效率、满意度、能耗、成本和恢复时长。合成验证记录输入哈希、规则版本、预期/实际状态、责任触发和恢复出口，但不产生机构合作、投资、许可或现场绩效结论。[data:visual/assets/v10-tabletop-results.json] [metric:field_verification_result_count] [depth:existing_conditions_diagnosis]
+设计证据明确分为三类：**已知设计**是可复算的几何、数量与文档覆盖；**合成验证**是规则驱动的 84 项桌面用例；**现场未知**包括客流、安全表现、效率、满意度、能耗、成本和恢复时长。合成验证记录输入哈希、规则版本、预期/实际状态、责任触发和恢复出口，但不产生机构合作、投资、许可或现场绩效结论。[data:visual/assets/tabletop-results.json] [metric:field_verification_result_count] [depth:existing_conditions_diagnosis]
 
 ## 三层范围工作框架
 
@@ -100,7 +100,7 @@ V11 将副命题固定为“**验真成环、共译成门、回执成廊；规�
 
 S7 的 **E2 原型准备文件**由同一套几何生成 1:5000 城市联系、1:2000 重点区、1:500 构件详图、1:200 剖面、1:50 坡道/盲道—可拆隔离—证据牌—临电—雨水节点和分层装配轴测。E2 的严格含义是构件数量、八类许可、采购分包和五类空白表单可复核；它**不表示**测绘、许可、采购、搭建或现场运行已经发生。[data:visual/assets/spatial-atlas.json] [metric:s7_prototype_kit_item_count]
 
-“编译器”对 `SCN-001—012` 各执行七类用例：普通基线、许可缺失、岗位缺失、公共服务退化、零容忍事件、人工恢复和设备退役。状态机只接受 `OPEN→TRIAL`、`TRIAL→PAUSE`、`PAUSE→OPEN`、`PAUSE→RETIRE`、`RETIRE→OPEN`；非法跃迁、许可/岗位不全、公共路线中断，或把现场未知冒充已知，都会使构建失败。本次脚本实际生成并通过 84/84 项，结果为 `synthetic_design_verification`，不是现场仿真或安全认证。[data:visual/assets/v10-tabletop-results.json] [metric:synthetic_design_verification_pass_count]
+“编译器”对 `SCN-001—012` 各执行七类用例：普通基线、许可缺失、岗位缺失、公共服务退化、零容忍事件、人工恢复和设备退役。状态机只接受 `OPEN→TRIAL`、`TRIAL→PAUSE`、`PAUSE→OPEN`、`PAUSE→RETIRE`、`RETIRE→OPEN`；非法跃迁、许可/岗位不全、公共路线中断，或把现场未知冒充已知，都会使构建失败。本次脚本实际生成并通过 84/84 项，结果为 `synthetic_design_verification`，不是现场仿真或安全认证。[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_pass_count]
 
 S7 的普通公共十字和人工服务必须先完成测绘与 7 个连续运行日的基线记录。只有场地、权属、消防、无障碍、临电、网络、交通组织和设备安全八道许可门全部关闭，且场地负责人、普通服务人员、安全负责人和数据记录人员独立在岗，东南侧试验湾才可进入 `TRIAL`。碰撞、缓冲侵入、急停失效、公共路线中断或人工接管失败均触发零容忍停止；计时从停止指令开始，到人工完成同题任务且两条公共路线恢复开放为止。当前恢复时间仍为 `unknown / not_field_run`。
 

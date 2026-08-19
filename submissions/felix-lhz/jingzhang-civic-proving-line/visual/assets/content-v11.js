@@ -45,6 +45,8 @@ function updateNarratives() {
     s = s.replace(/> \*\*Civic Adoption Compiler[\s\S]*?\n\n/i, '> **Civic Adoption Compiler: three spatial alternatives, one public rejection and one reviewable selection.** Ordinary service stands first; AI enters only the same-task test. Any spatial option that severs the public route must be rejected by the compiler. Field decisions remain `adopt / revise / stop` and belong to a human scenario committee.\n\n');
     s = replaceBlock(s, block);
     s = s.replace(/V10/g, 'V11');
+    s = s.replaceAll('visual/assets/v10-tabletop-results.json', 'visual/assets/tabletop-results.json');
+    s = s.replaceAll('geometry/roads.geojson#V7-D-BASE-NS', 'geometry/roads.geojson#V11-ALT-C-BASE-NS');
     fs.writeFileSync(p, s);
   }
 }

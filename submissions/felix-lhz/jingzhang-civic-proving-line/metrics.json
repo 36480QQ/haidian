@@ -557,7 +557,7 @@
       "value": 84,
       "unit": "count",
       "source_files": [
-        "visual/assets/v10-tabletop-results.json"
+        "visual/assets/tabletop-results.json"
       ],
       "formula": "count(12 scenarios × 7 deterministic design-contract cases)",
       "confidence": "high",
@@ -570,7 +570,7 @@
       "value": 84,
       "unit": "count",
       "source_files": [
-        "visual/assets/v10-tabletop-results.json"
+        "visual/assets/tabletop-results.json"
       ],
       "formula": "count(test where synthetic_result=pass)",
       "confidence": "high",
@@ -583,7 +583,7 @@
       "value": 12,
       "unit": "count",
       "source_files": [
-        "visual/assets/v10-tabletop-results.json"
+        "visual/assets/tabletop-results.json"
       ],
       "formula": "count(distinct scene_id)",
       "confidence": "high",
@@ -596,7 +596,7 @@
       "value": 0,
       "unit": "count",
       "source_files": [
-        "visual/assets/v10-tabletop-results.json"
+        "visual/assets/tabletop-results.json"
       ],
       "formula": "count(records where field_status is a completed field result)",
       "confidence": "high",
