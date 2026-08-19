@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.9.0",
+  "schema_version": "1.10.0",
   "dataset_id": "jingzhang-two-answers",
   "title": {
     "zh": "京张双答：三站一历",
@@ -427,7 +427,137 @@
         "zh": "删除临时副本，保留经人工确认的清单、日志哈希和普通登记台。",
         "en": "Remove and isolate the optional T1 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "同一模型包由独立人员复现时，普通清单与 AI 助手哪一种能完成更多可核验步骤？",
+          "en": "When independent operators reproduce the same model package, which mode completes more verifiable steps?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "每个模型包的全部必需复现步骤",
+          "en": "All required reproduction steps per model package"
+        },
+        "baseline_window": {
+          "zh": "至少 3 个模型包；每包由 3 名独立人员各完成普通与 AI 两种模式",
+          "en": "At least 3 model packages; 3 independent operators per package complete both modes"
+        },
+        "comparison_design": "paired_crossover_same_package",
+        "sample_rule": {
+          "zh": "至少 3 个模型包；每包由 3 名独立人员各完成普通与 AI 两种模式",
+          "en": "At least 3 model packages; 3 independent operators per package complete both modes"
+        },
+        "collection_frequency": {
+          "zh": "每次运行记录；每个模型包结束后汇总",
+          "en": "Record every run; aggregate after each package"
+        },
+        "stratifiers": [
+          "model_package",
+          "operator",
+          "licence_class"
+        ],
+        "statistic": "paired_completion_difference_and_human_minutes",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "unlicensed_data_used",
+          "unlogged_external_connection",
+          "reproduction_environment_escape"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "同一模型包由独立人员复现时，普通清单与 AI 助手哪一种能完成更多可核验步骤？",
+        "en": "When independent operators reproduce the same model package, which mode completes more verifiable steps?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "每个模型包的全部必需复现步骤",
+        "en": "All required reproduction steps per model package"
+      },
+      "comparison_design": "paired_crossover_same_package",
+      "sample_rule": {
+        "zh": "至少 3 个模型包；每包由 3 名独立人员各完成普通与 AI 两种模式",
+        "en": "At least 3 model packages; 3 independent operators per package complete both modes"
+      },
+      "collection_frequency": {
+        "zh": "每次运行记录；每个模型包结束后汇总",
+        "en": "Record every run; aggregate after each package"
+      },
+      "stratifiers": [
+        "model_package",
+        "operator",
+        "licence_class"
+      ],
+      "statistic": "paired_completion_difference_and_human_minutes",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-002",
@@ -805,7 +935,138 @@
         "zh": "机器人撤库、临时围栏拆除；保留步行路径、座椅与事件公告位。",
         "en": "Remove and isolate the optional T2 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "同一路径与同一使用者下，机器人试验是否保持普通通行完整且不增加安全冲突？",
+          "en": "For the same route and users, does the robot trial preserve baseline passage without adding safety conflicts?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "每种模式 100 次符合准入条件的通行；所有严重事件另行全量保留",
+          "en": "100 eligible passages per mode; retain every severe event separately"
+        },
+        "baseline_window": {
+          "zh": "普通模式与试验模式各 100 次，按轮椅、视障、步行和昼夜分层",
+          "en": "100 passages in baseline and trial modes, stratified by wheelchair, visual impairment, walking and day/night"
+        },
+        "comparison_design": "parallel_same_route_stratified",
+        "sample_rule": {
+          "zh": "普通模式与试验模式各 100 次，按轮椅、视障、步行和昼夜分层",
+          "en": "100 passages in baseline and trial modes, stratified by wheelchair, visual impairment, walking and day/night"
+        },
+        "collection_frequency": {
+          "zh": "每次通行记录；每日闭场复核",
+          "en": "Record each passage; review at daily close"
+        },
+        "stratifiers": [
+          "mobility_need",
+          "day_night",
+          "route_direction"
+        ],
+        "statistic": "rate_per_100_passages_and_accessibility_parity_gap",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "collision",
+          "person_enters_safety_buffer",
+          "emergency_stop_failure",
+          "baseline_route_blocked"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "同一路径与同一使用者下，机器人试验是否保持普通通行完整且不增加安全冲突？",
+        "en": "For the same route and users, does the robot trial preserve baseline passage without adding safety conflicts?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "每种模式 100 次符合准入条件的通行；所有严重事件另行全量保留",
+        "en": "100 eligible passages per mode; retain every severe event separately"
+      },
+      "comparison_design": "parallel_same_route_stratified",
+      "sample_rule": {
+        "zh": "普通模式与试验模式各 100 次，按轮椅、视障、步行和昼夜分层",
+        "en": "100 passages in baseline and trial modes, stratified by wheelchair, visual impairment, walking and day/night"
+      },
+      "collection_frequency": {
+        "zh": "每次通行记录；每日闭场复核",
+        "en": "Record each passage; review at daily close"
+      },
+      "stratifiers": [
+        "mobility_need",
+        "day_night",
+        "route_direction"
+      ],
+      "statistic": "rate_per_100_passages_and_accessibility_parity_gap",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-003",
@@ -1181,7 +1442,137 @@
         "zh": "机柜整机移除，恢复预留空腔与普通电气检修口。",
         "en": "Remove and isolate the optional T3 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "正常、断网和降级状态下，端侧系统是否以可接受资源完成任务并可靠回退？",
+          "en": "Under normal, offline and degraded states, does edge compute complete tasks with auditable resources and reliable fallback?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "每种状态 30 个同题任务，并保留连续 7 日能耗与噪声日志",
+          "en": "30 same-task trials per state plus a continuous 7-day energy and noise log"
+        },
+        "baseline_window": {
+          "zh": "正常、断网、降级三种状态各 30 次；同设备、同任务集",
+          "en": "30 trials in each normal, offline and degraded state; same device and task set"
+        },
+        "comparison_design": "three_state_repeated_tasks",
+        "sample_rule": {
+          "zh": "正常、断网、降级三种状态各 30 次；同设备、同任务集",
+          "en": "30 trials in each normal, offline and degraded state; same device and task set"
+        },
+        "collection_frequency": {
+          "zh": "逐任务记录；能耗与噪声每分钟采样，按日汇总",
+          "en": "Record each task; sample energy and noise each minute and aggregate daily"
+        },
+        "stratifiers": [
+          "operating_state",
+          "task_class",
+          "day"
+        ],
+        "statistic": "completion_rate_resource_per_completed_task_and_fallback_rate",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "unsafe_overheat",
+          "unlogged_network_egress",
+          "fallback_unavailable"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "正常、断网和降级状态下，端侧系统是否以可接受资源完成任务并可靠回退？",
+        "en": "Under normal, offline and degraded states, does edge compute complete tasks with auditable resources and reliable fallback?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "每种状态 30 个同题任务，并保留连续 7 日能耗与噪声日志",
+        "en": "30 same-task trials per state plus a continuous 7-day energy and noise log"
+      },
+      "comparison_design": "three_state_repeated_tasks",
+      "sample_rule": {
+        "zh": "正常、断网、降级三种状态各 30 次；同设备、同任务集",
+        "en": "30 trials in each normal, offline and degraded state; same device and task set"
+      },
+      "collection_frequency": {
+        "zh": "逐任务记录；能耗与噪声每分钟采样，按日汇总",
+        "en": "Record each task; sample energy and noise each minute and aggregate daily"
+      },
+      "stratifiers": [
+        "operating_state",
+        "task_class",
+        "day"
+      ],
+      "statistic": "completion_rate_resource_per_completed_task_and_fallback_rate",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-004",
@@ -1560,7 +1951,137 @@
         "zh": "撤除终端，继续使用人工窗口、纸质目录和预约电话。",
         "en": "Remove and isolate the optional S1 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "企业服务请求在人工窗口先成立时，AI 分诊是否减少未完成任务而不增加误分？",
+          "en": "With the staffed desk operating first, does AI triage reduce incomplete enterprise-service requests without increasing misrouting?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "每种模式 100 个符合准入条件的服务请求",
+          "en": "100 eligible service requests per mode"
+        },
+        "baseline_window": {
+          "zh": "人工模式与 AI 辅助模式各 100 个同类请求，按事项复杂度分层",
+          "en": "100 comparable requests in staffed and AI-assisted modes, stratified by complexity"
+        },
+        "comparison_design": "matched_request_cohorts",
+        "sample_rule": {
+          "zh": "人工模式与 AI 辅助模式各 100 个同类请求，按事项复杂度分层",
+          "en": "100 comparable requests in staffed and AI-assisted modes, stratified by complexity"
+        },
+        "collection_frequency": {
+          "zh": "逐请求记录；每周人工抽查与公开汇总",
+          "en": "Record each request; weekly human audit and public summary"
+        },
+        "stratifiers": [
+          "request_class",
+          "complexity",
+          "language"
+        ],
+        "statistic": "completion_rate_misrouting_rate_and_human_minutes",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "legal_advice_without_review",
+          "eligible_user_denied_baseline_service",
+          "personal_data_overcollection"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "企业服务请求在人工窗口先成立时，AI 分诊是否减少未完成任务而不增加误分？",
+        "en": "With the staffed desk operating first, does AI triage reduce incomplete enterprise-service requests without increasing misrouting?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "每种模式 100 个符合准入条件的服务请求",
+        "en": "100 eligible service requests per mode"
+      },
+      "comparison_design": "matched_request_cohorts",
+      "sample_rule": {
+        "zh": "人工模式与 AI 辅助模式各 100 个同类请求，按事项复杂度分层",
+        "en": "100 comparable requests in staffed and AI-assisted modes, stratified by complexity"
+      },
+      "collection_frequency": {
+        "zh": "逐请求记录；每周人工抽查与公开汇总",
+        "en": "Record each request; weekly human audit and public summary"
+      },
+      "stratifiers": [
+        "request_class",
+        "complexity",
+        "language"
+      ],
+      "statistic": "completion_rate_misrouting_rate_and_human_minutes",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-005",
@@ -1941,7 +2462,137 @@
         "zh": "关闭终端，保留人工接待、纸质地图和静态双语导视。",
         "en": "Remove and isolate the optional S2 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "国际人才抵达任务中，无账户人工服务与可选 AI 导航哪种模式更完整、公平且可恢复？",
+          "en": "For international arrivals, which mode is more complete, equitable and recoverable: no-account staffed service or optional AI guidance?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "每种模式 100 个符合准入条件的抵达服务请求",
+          "en": "100 eligible arrival-service requests per mode"
+        },
+        "baseline_window": {
+          "zh": "人工与 AI 辅助各 100 个请求，按语言、辅助需求和事项复杂度分层",
+          "en": "100 requests per mode, stratified by language, assistance need and complexity"
+        },
+        "comparison_design": "paired_service_script_or_matched_cohort",
+        "sample_rule": {
+          "zh": "人工与 AI 辅助各 100 个请求，按语言、辅助需求和事项复杂度分层",
+          "en": "100 requests per mode, stratified by language, assistance need and complexity"
+        },
+        "collection_frequency": {
+          "zh": "逐请求记录；每日闭场复核争议样本",
+          "en": "Record each request; review disputed cases at daily close"
+        },
+        "stratifiers": [
+          "language",
+          "assistance_need",
+          "complexity"
+        ],
+        "statistic": "completion_rate_accessibility_parity_gap_intervention_rate",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "account_required_for_baseline",
+          "translation_changes_legal_meaning",
+          "human_review_unavailable"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "国际人才抵达任务中，无账户人工服务与可选 AI 导航哪种模式更完整、公平且可恢复？",
+        "en": "For international arrivals, which mode is more complete, equitable and recoverable: no-account staffed service or optional AI guidance?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "每种模式 100 个符合准入条件的抵达服务请求",
+        "en": "100 eligible arrival-service requests per mode"
+      },
+      "comparison_design": "paired_service_script_or_matched_cohort",
+      "sample_rule": {
+        "zh": "人工与 AI 辅助各 100 个请求，按语言、辅助需求和事项复杂度分层",
+        "en": "100 requests per mode, stratified by language, assistance need and complexity"
+      },
+      "collection_frequency": {
+        "zh": "逐请求记录；每日闭场复核争议样本",
+        "en": "Record each request; review disputed cases at daily close"
+      },
+      "stratifiers": [
+        "language",
+        "assistance_need",
+        "complexity"
+      ],
+      "statistic": "completion_rate_accessibility_parity_gap_intervention_rate",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-006",
@@ -2320,7 +2971,137 @@
         "zh": "删除临时候选库，保留纸质问题卡、工作坊桌和公开来源清单。",
         "en": "Remove and isolate the optional S3 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "社区问题工作坊中，AI 匹配是否增加可核验知识连接而不替代居民议题决定？",
+          "en": "In community workshops, does AI matching add verifiable knowledge links without replacing residents’ agenda decisions?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "20 场完整工作坊及其全部问题—证据—决定记录",
+          "en": "20 complete workshops and all problem–evidence–decision records"
+        },
+        "baseline_window": {
+          "zh": "至少 20 场，交替使用普通知识台账与 AI 辅助匹配",
+          "en": "At least 20 workshops alternating baseline ledger and AI-assisted matching"
+        },
+        "comparison_design": "alternating_workshop_series",
+        "sample_rule": {
+          "zh": "至少 20 场，交替使用普通知识台账与 AI 辅助匹配",
+          "en": "At least 20 workshops alternating baseline ledger and AI-assisted matching"
+        },
+        "collection_frequency": {
+          "zh": "逐场记录；每 5 场公开一次归档完整性",
+          "en": "Record each workshop; publish archive completeness every 5 workshops"
+        },
+        "stratifiers": [
+          "issue_type",
+          "participant_role",
+          "workshop_mode"
+        ],
+        "statistic": "verified_link_rate_unresolved_issue_rate_and_human_review_minutes",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "resident_agenda_overridden",
+          "unattributed_source_presented_as_fact",
+          "participant_identity_disclosed"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "社区问题工作坊中，AI 匹配是否增加可核验知识连接而不替代居民议题决定？",
+        "en": "In community workshops, does AI matching add verifiable knowledge links without replacing residents’ agenda decisions?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "20 场完整工作坊及其全部问题—证据—决定记录",
+        "en": "20 complete workshops and all problem–evidence–decision records"
+      },
+      "comparison_design": "alternating_workshop_series",
+      "sample_rule": {
+        "zh": "至少 20 场，交替使用普通知识台账与 AI 辅助匹配",
+        "en": "At least 20 workshops alternating baseline ledger and AI-assisted matching"
+      },
+      "collection_frequency": {
+        "zh": "逐场记录；每 5 场公开一次归档完整性",
+        "en": "Record each workshop; publish archive completeness every 5 workshops"
+      },
+      "stratifiers": [
+        "issue_type",
+        "participant_role",
+        "workshop_mode"
+      ],
+      "statistic": "verified_link_rate_unresolved_issue_rate_and_human_review_minutes",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-007",
@@ -2686,7 +3467,137 @@
         "zh": "撤除终端，保留触摸模型、标牌、纸质路线与人工讲解点。",
         "en": "Remove and isolate the optional S4 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "文化讲解中，可选 AI 是否提高可达性，同时保持史实出处与人工纠错？",
+          "en": "In heritage interpretation, does optional AI improve access while preserving provenance and human correction?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "100 个讲解内容项，并全量复核所有争议项",
+          "en": "100 interpretation items plus every disputed item"
+        },
+        "baseline_window": {
+          "zh": "同一 100 项分别由静态/人工讲解与 AI 可选讲解呈现",
+          "en": "Present the same 100 items through static/staffed and optional-AI modes"
+        },
+        "comparison_design": "item_level_paired_review",
+        "sample_rule": {
+          "zh": "同一 100 项分别由静态/人工讲解与 AI 可选讲解呈现",
+          "en": "Present the same 100 items through static/staffed and optional-AI modes"
+        },
+        "collection_frequency": {
+          "zh": "逐内容项记录；争议即时冻结并复核",
+          "en": "Record each item; freeze and review disputes immediately"
+        },
+        "stratifiers": [
+          "content_type",
+          "language",
+          "accessibility_format"
+        ],
+        "statistic": "source_accuracy_accessibility_coverage_and_correction_time",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "fabricated_historical_fact",
+          "missing_source_for_factual_claim",
+          "disputed_item_remains_public"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "文化讲解中，可选 AI 是否提高可达性，同时保持史实出处与人工纠错？",
+        "en": "In heritage interpretation, does optional AI improve access while preserving provenance and human correction?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "100 个讲解内容项，并全量复核所有争议项",
+        "en": "100 interpretation items plus every disputed item"
+      },
+      "comparison_design": "item_level_paired_review",
+      "sample_rule": {
+        "zh": "同一 100 项分别由静态/人工讲解与 AI 可选讲解呈现",
+        "en": "Present the same 100 items through static/staffed and optional-AI modes"
+      },
+      "collection_frequency": {
+        "zh": "逐内容项记录；争议即时冻结并复核",
+        "en": "Record each item; freeze and review disputes immediately"
+      },
+      "stratifiers": [
+        "content_type",
+        "language",
+        "accessibility_format"
+      ],
+      "statistic": "source_accuracy_accessibility_coverage_and_correction_time",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-008",
@@ -3053,7 +3964,137 @@
         "zh": "关闭动态服务；静态导视、触觉节点和人工问路保持不变。",
         "en": "Remove and isolate the optional S5 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "动态辅助导航是否在不削弱静态导视的前提下，改善不同辅助需求的路线完成？",
+          "en": "Does dynamic guidance improve route completion for different assistance needs without weakening static wayfinding?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "10 条路线 × 3 类辅助需求 × 昼/夜两时段",
+          "en": "10 routes × 3 assistance-need groups × day/night"
+        },
+        "baseline_window": {
+          "zh": "每个组合均完成普通静态导视与 AI 辅助两种模式",
+          "en": "Each combination completes both static-baseline and AI-assisted modes"
+        },
+        "comparison_design": "paired_route_crossover",
+        "sample_rule": {
+          "zh": "每个组合均完成普通静态导视与 AI 辅助两种模式",
+          "en": "Each combination completes both static-baseline and AI-assisted modes"
+        },
+        "collection_frequency": {
+          "zh": "逐路线记录；每个时段结束复核",
+          "en": "Record every route; review at the end of each time band"
+        },
+        "stratifiers": [
+          "route",
+          "assistance_need",
+          "day_night"
+        ],
+        "statistic": "route_completion_accessibility_parity_gap_and_intervention_rate",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "baseline_signage_obscured",
+          "unsafe_route_instruction",
+          "fallback_not_available"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "动态辅助导航是否在不削弱静态导视的前提下，改善不同辅助需求的路线完成？",
+        "en": "Does dynamic guidance improve route completion for different assistance needs without weakening static wayfinding?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "10 条路线 × 3 类辅助需求 × 昼/夜两时段",
+        "en": "10 routes × 3 assistance-need groups × day/night"
+      },
+      "comparison_design": "paired_route_crossover",
+      "sample_rule": {
+        "zh": "每个组合均完成普通静态导视与 AI 辅助两种模式",
+        "en": "Each combination completes both static-baseline and AI-assisted modes"
+      },
+      "collection_frequency": {
+        "zh": "逐路线记录；每个时段结束复核",
+        "en": "Record every route; review at the end of each time band"
+      },
+      "stratifiers": [
+        "route",
+        "assistance_need",
+        "day_night"
+      ],
+      "statistic": "route_completion_accessibility_parity_gap_and_intervention_rate",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-009",
@@ -3420,7 +4461,137 @@
         "zh": "拆除传感插件，保留树荫、雨棚、座椅、饮水和公告牌。",
         "en": "Remove and isolate the optional S6 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "极端天气提示是否在遮阴、饮水和人工服务先成立后，提高正确服务抵达率？",
+          "en": "After shade, water and staffed service operate, do weather prompts improve arrival at the correct service?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "3 类天气条件，每类至少 30 个节点小时",
+          "en": "Three weather classes with at least 30 node-hours each"
+        },
+        "baseline_window": {
+          "zh": "常态、高温/强日照、降雨三类；普通静态服务与 AI 提示并行记录",
+          "en": "Normal, heat/strong sun and rain; record baseline static service and AI prompts in parallel"
+        },
+        "comparison_design": "weather_stratified_node_hours",
+        "sample_rule": {
+          "zh": "常态、高温/强日照、降雨三类；普通静态服务与 AI 提示并行记录",
+          "en": "Normal, heat/strong sun and rain; record baseline static service and AI prompts in parallel"
+        },
+        "collection_frequency": {
+          "zh": "每节点小时记录；事件结束后复核",
+          "en": "Record each node-hour; review after each event"
+        },
+        "stratifiers": [
+          "weather_class",
+          "node",
+          "time_band"
+        ],
+        "statistic": "correct_service_arrival_rate_resource_per_completed_task",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "official_warning_contradicted",
+          "water_or_shade_baseline_unavailable",
+          "unsafe_route_prompt"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "极端天气提示是否在遮阴、饮水和人工服务先成立后，提高正确服务抵达率？",
+        "en": "After shade, water and staffed service operate, do weather prompts improve arrival at the correct service?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "3 类天气条件，每类至少 30 个节点小时",
+        "en": "Three weather classes with at least 30 node-hours each"
+      },
+      "comparison_design": "weather_stratified_node_hours",
+      "sample_rule": {
+        "zh": "常态、高温/强日照、降雨三类；普通静态服务与 AI 提示并行记录",
+        "en": "Normal, heat/strong sun and rain; record baseline static service and AI prompts in parallel"
+      },
+      "collection_frequency": {
+        "zh": "每节点小时记录；事件结束后复核",
+        "en": "Record each node-hour; review after each event"
+      },
+      "stratifiers": [
+        "weather_class",
+        "node",
+        "time_band"
+      ],
+      "statistic": "correct_service_arrival_rate_resource_per_completed_task",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-010",
@@ -4098,7 +5269,141 @@
         "geometry/constraints.geojson#V11-ALT-C-ESTOP-1",
         "geometry/constraints.geojson#V11-ALT-C-ESTOP-2"
       ],
-      "design_alternative_state": "advance_design"
+      "design_alternative_state": "advance_design",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "低速辅助接驳是否在公共十字不断线的前提下，改善同题接驳且可被人工及时停止？",
+          "en": "Does low-speed assistance improve the same interchange task while the public cross stays unbroken and staff can stop it promptly?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "每种模式 100 次符合准入条件的接驳通行；严重事件全量保留",
+          "en": "100 eligible interchange passages per mode; retain every severe event"
+        },
+        "baseline_window": {
+          "zh": "普通接驳连续 7 个运行日，再记录 AI 试验模式 100 次；按高峰/平峰、昼夜、天气和辅助需求分层",
+          "en": "Seven baseline operating days, then 100 AI-trial passages; stratify by peak, day/night, weather and assistance need"
+        },
+        "comparison_design": "sequential_baseline_then_controlled_trial",
+        "sample_rule": {
+          "zh": "普通接驳连续 7 个运行日，再记录 AI 试验模式 100 次；按高峰/平峰、昼夜、天气和辅助需求分层",
+          "en": "Seven baseline operating days, then 100 AI-trial passages; stratify by peak, day/night, weather and assistance need"
+        },
+        "collection_frequency": {
+          "zh": "逐通行记录；每日闭场、每周委员会复核",
+          "en": "Record each passage; daily close and weekly committee review"
+        },
+        "stratifiers": [
+          "peak_offpeak",
+          "day_night",
+          "weather",
+          "assistance_need"
+        ],
+        "statistic": "completion_rate_conflicts_per_100_intervention_rate_recovery_clock",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "collision",
+          "person_in_safety_buffer",
+          "emergency_stop_failure",
+          "baseline_route_blocked",
+          "human_takeover_timeout"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "低速辅助接驳是否在公共十字不断线的前提下，改善同题接驳且可被人工及时停止？",
+        "en": "Does low-speed assistance improve the same interchange task while the public cross stays unbroken and staff can stop it promptly?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "每种模式 100 次符合准入条件的接驳通行；严重事件全量保留",
+        "en": "100 eligible interchange passages per mode; retain every severe event"
+      },
+      "comparison_design": "sequential_baseline_then_controlled_trial",
+      "sample_rule": {
+        "zh": "普通接驳连续 7 个运行日，再记录 AI 试验模式 100 次；按高峰/平峰、昼夜、天气和辅助需求分层",
+        "en": "Seven baseline operating days, then 100 AI-trial passages; stratify by peak, day/night, weather and assistance need"
+      },
+      "collection_frequency": {
+        "zh": "逐通行记录；每日闭场、每周委员会复核",
+        "en": "Record each passage; daily close and weekly committee review"
+      },
+      "stratifiers": [
+        "peak_offpeak",
+        "day_night",
+        "weather",
+        "assistance_need"
+      ],
+      "statistic": "completion_rate_conflicts_per_100_intervention_rate_recovery_clock",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-011",
@@ -4479,7 +5784,139 @@
         "zh": "终端断电封存，普通服务台、纸质目录和电话继续运行。",
         "en": "Remove and isolate the optional S8 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "公共服务台在人工入口完整时，AI 导航是否提高完成率且不制造数字排斥？",
+          "en": "With the staffed public desk complete, does AI guidance improve completion without digital exclusion?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "每种模式 100 个符合准入条件的公共服务请求",
+          "en": "100 eligible public-service requests per mode"
+        },
+        "baseline_window": {
+          "zh": "人工与 AI 辅助各 100 个请求，按年龄、语言、智能手机可用性和辅助需求分层",
+          "en": "100 requests per mode, stratified by age, language, smartphone access and assistance need"
+        },
+        "comparison_design": "matched_request_cohorts",
+        "sample_rule": {
+          "zh": "人工与 AI 辅助各 100 个请求，按年龄、语言、智能手机可用性和辅助需求分层",
+          "en": "100 requests per mode, stratified by age, language, smartphone access and assistance need"
+        },
+        "collection_frequency": {
+          "zh": "逐请求记录；每日抽查拒绝与转人工记录",
+          "en": "Record each request; daily audit of denial and human handoff"
+        },
+        "stratifiers": [
+          "age_group",
+          "language",
+          "smartphone_access",
+          "assistance_need"
+        ],
+        "statistic": "completion_rate_accessibility_parity_gap_and_handoff_rate",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "account_or_phone_required_for_baseline",
+          "human_handoff_unavailable",
+          "personal_data_overcollection"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "公共服务台在人工入口完整时，AI 导航是否提高完成率且不制造数字排斥？",
+        "en": "With the staffed public desk complete, does AI guidance improve completion without digital exclusion?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "每种模式 100 个符合准入条件的公共服务请求",
+        "en": "100 eligible public-service requests per mode"
+      },
+      "comparison_design": "matched_request_cohorts",
+      "sample_rule": {
+        "zh": "人工与 AI 辅助各 100 个请求，按年龄、语言、智能手机可用性和辅助需求分层",
+        "en": "100 requests per mode, stratified by age, language, smartphone access and assistance need"
+      },
+      "collection_frequency": {
+        "zh": "逐请求记录；每日抽查拒绝与转人工记录",
+        "en": "Record each request; daily audit of denial and human handoff"
+      },
+      "stratifiers": [
+        "age_group",
+        "language",
+        "smartphone_access",
+        "assistance_need"
+      ],
+      "statistic": "completion_rate_accessibility_parity_gap_and_handoff_rate",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     },
     {
       "id": "SCN-012",
@@ -4861,7 +6298,138 @@
         "zh": "拆除计数插件，保留普通活动电源、容量牌和疏散设施。",
         "en": "Remove and isolate the optional S9 equipment; retain the complete staffed, static and accessible baseline."
       },
-      "field_status": "not_field_run"
+      "field_status": "not_field_run",
+      "measurement_contract": {
+        "measurement_question": {
+          "zh": "聚合客流辅助是否在常规活动组织完整时，改善疏散判断且不识别个人？",
+          "en": "With conventional event operations complete, does aggregate flow assistance improve egress decisions without identifying people?"
+        },
+        "numerator": {
+          "zh": "完成同题任务且未触发零容忍事件的记录数",
+          "en": "Records completing the same task without a zero-tolerance event"
+        },
+        "denominator": {
+          "zh": "全部受控活动试验，且至少覆盖 3 个到场规模等级",
+          "en": "All controlled event trials across at least 3 attendance levels"
+        },
+        "baseline_window": {
+          "zh": "小、中、大三类到场规模；每类先普通组织、后 AI 聚合辅助",
+          "en": "Small, medium and large attendance; baseline operations first, then aggregate AI assistance"
+        },
+        "comparison_design": "attendance_level_paired_trials",
+        "sample_rule": {
+          "zh": "小、中、大三类到场规模；每类先普通组织、后 AI 聚合辅助",
+          "en": "Small, medium and large attendance; baseline operations first, then aggregate AI assistance"
+        },
+        "collection_frequency": {
+          "zh": "逐场记录；每场结束后复盘",
+          "en": "Record each event; review after every event"
+        },
+        "stratifiers": [
+          "attendance_level",
+          "day_night",
+          "event_type"
+        ],
+        "statistic": "egress_task_completion_intervention_rate_and_grievance_recovery_time",
+        "threshold_rule": {
+          "zh": "普通服务不得退化；安全事件零容忍；AI 增量阈值仅在基线完成后由人类场景委员会登记。",
+          "en": "Baseline service may not regress; safety events have zero tolerance; the human scene committee registers any AI-increment threshold only after the baseline."
+        },
+        "threshold_status": "pending_baseline_committee",
+        "zero_tolerance_events": [
+          "individual_identification",
+          "egress_route_blocked",
+          "official_capacity_exceeded",
+          "manual_command_overridden"
+        ],
+        "missing_data_rule": {
+          "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+          "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+        },
+        "human_review": {
+          "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+          "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+        },
+        "public_output_schema": [
+          "scenario_id",
+          "mode",
+          "sample_window",
+          "denominator",
+          "completed",
+          "missing",
+          "strata",
+          "safety_events",
+          "human_interventions",
+          "resource_use",
+          "grievances",
+          "recovery_clock",
+          "decision"
+        ],
+        "owner_roles": [
+          "baseline_service_owner",
+          "data_steward",
+          "safety_owner",
+          "public_representative"
+        ],
+        "field_status": "not_field_run"
+      },
+      "measurement_question": {
+        "zh": "聚合客流辅助是否在常规活动组织完整时，改善疏散判断且不识别个人？",
+        "en": "With conventional event operations complete, does aggregate flow assistance improve egress decisions without identifying people?"
+      },
+      "numerator": {
+        "zh": "完成同题任务且未触发零容忍事件的记录数",
+        "en": "Records completing the same task without a zero-tolerance event"
+      },
+      "denominator": {
+        "zh": "全部受控活动试验，且至少覆盖 3 个到场规模等级",
+        "en": "All controlled event trials across at least 3 attendance levels"
+      },
+      "comparison_design": "attendance_level_paired_trials",
+      "sample_rule": {
+        "zh": "小、中、大三类到场规模；每类先普通组织、后 AI 聚合辅助",
+        "en": "Small, medium and large attendance; baseline operations first, then aggregate AI assistance"
+      },
+      "collection_frequency": {
+        "zh": "逐场记录；每场结束后复盘",
+        "en": "Record each event; review after every event"
+      },
+      "stratifiers": [
+        "attendance_level",
+        "day_night",
+        "event_type"
+      ],
+      "statistic": "egress_task_completion_intervention_rate_and_grievance_recovery_time",
+      "threshold_status": "pending_baseline_committee",
+      "missing_data_rule": {
+        "zh": "缺失样本不得删除或填补为成功；单列缺失原因，若影响分层比较则结果只能 revise 或 stop。",
+        "en": "Missing samples are never deleted or imputed as success; publish the reason, and if stratified comparison is compromised the result can only be revise or stop."
+      },
+      "human_review": {
+        "zh": "普通服务负责人、数据负责人、安全负责人和公众代表共同复核，AI 不拥有决定权。",
+        "en": "The baseline-service lead, data lead, safety lead and public representative review together; AI has no decision authority."
+      },
+      "public_output_schema": [
+        "scenario_id",
+        "mode",
+        "sample_window",
+        "denominator",
+        "completed",
+        "missing",
+        "strata",
+        "safety_events",
+        "human_interventions",
+        "resource_use",
+        "grievances",
+        "recovery_clock",
+        "decision"
+      ],
+      "owner_roles": [
+        "baseline_service_owner",
+        "data_steward",
+        "safety_owner",
+        "public_representative"
+      ]
     }
   ],
   "subtitle": {
@@ -4869,7 +6437,7 @@
     "en": "Civic Adoption Compiler: compile every AI spatial proposal into a complete public route, triggerable stop mechanism and reviewable receipt."
   },
   "field_status": "not_field_run",
-  "publication_version": "V11",
+  "publication_version": "measurement_contract_release",
   "evidence_ladder": [
     {
       "id": "E0",
@@ -5634,6 +7202,23 @@
       "advance_design": 1
     },
     "verification_scope": "geometry_based_design_audit",
+    "field_status": "not_field_run"
+  },
+  "measurement_framework": {
+    "status": "protocol_documented_results_not_field_run",
+    "public_value_families": [
+      "task_completion",
+      "accessibility_parity",
+      "safety",
+      "human_intervention",
+      "resource_per_completed_task",
+      "grievance_and_recovery"
+    ],
+    "threshold_status_values": [
+      "design_invariant",
+      "zero_tolerance",
+      "pending_baseline_committee"
+    ],
     "field_status": "not_field_run"
   }
 }
