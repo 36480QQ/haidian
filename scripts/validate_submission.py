@@ -13,7 +13,9 @@ import json
 import math
 import os
 import re
+import struct
 import sys
+import zlib
 from dataclasses import dataclass, field
 from pathlib import Path, PurePosixPath
 from typing import Iterable
@@ -301,6 +303,8 @@ MAX_AUDIO_BYTES = 8 * 1024 * 1024
 MAX_DRAWING_BYTES = 10 * 1024 * 1024
 MAX_HTML_BYTES = 2 * 1024 * 1024
 MAX_VISUAL_ASSET_BYTES = 5 * 1024 * 1024
+MAX_PNG_INFLATED_BYTES = 128 * 1024 * 1024
+MAX_TOTAL_PNG_INFLATED_BYTES = 1024 * 1024 * 1024
 MAX_SINGLE_FILE_BYTES = max(
     MAX_MARKDOWN_BYTES,
     MAX_JSON_BYTES,
@@ -380,6 +384,7 @@ class ValidationReport:
     changed_files: list[str] = field(default_factory=list)
     ai_package_stages: dict[str, str] = field(default_factory=dict)
     total_bytes: int = 0
+    png_inflated_bytes: int = 0
     maintainer_bypass: bool = False
     strict_manifest_paths: set[str] = field(default_factory=set)
 
@@ -719,6 +724,232 @@ def media_signature_is_valid(path: Path) -> bool:
     if extension == ".ogg":
         return data.startswith(b"OggS")
     return True
+
+
+PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
+PNG_VALID_BIT_DEPTHS = {
+    0: {1, 2, 4, 8, 16},
+    2: {8, 16},
+    3: {1, 2, 4, 8},
+    4: {8, 16},
+    6: {8, 16},
+}
+PNG_CHANNELS = {0: 1, 2: 3, 3: 1, 4: 2, 6: 4}
+PNG_ADAM7_PASSES = (
+    (0, 0, 8, 8),
+    (4, 0, 8, 8),
+    (0, 4, 4, 8),
+    (2, 0, 4, 4),
+    (0, 2, 2, 4),
+    (1, 0, 2, 2),
+    (0, 1, 1, 2),
+)
+
+
+def _png_row_payload_sizes(
+    width: int, height: int, bit_depth: int, color_type: int, interlace: int
+) -> Iterable[int]:
+    channels = PNG_CHANNELS[color_type]
+    if interlace == 0:
+        row_bytes = (width * channels * bit_depth + 7) // 8
+        for _ in range(height):
+            yield row_bytes
+        return
+    for x_start, y_start, x_step, y_step in PNG_ADAM7_PASSES:
+        if width <= x_start or height <= y_start:
+            continue
+        pass_width = (width - x_start + x_step - 1) // x_step
+        pass_height = (height - y_start + y_step - 1) // y_step
+        row_bytes = (pass_width * channels * bit_depth + 7) // 8
+        for _ in range(pass_height):
+            yield row_bytes
+
+
+def png_integrity_result(
+    path: Path, *, max_inflated_bytes: int = MAX_PNG_INFLATED_BYTES
+) -> tuple[str | None, int]:
+    """Return an integrity error and decoded byte count for a PNG."""
+    try:
+        if path.stat().st_size > MAX_ASSET_BYTES:
+            return f"file exceeds the {MAX_ASSET_BYTES}-byte PNG validation limit", 0
+        raw = path.read_bytes()
+    except OSError as exc:
+        return f"cannot read file: {exc}", 0
+    if not raw.startswith(PNG_SIGNATURE):
+        return "signature is invalid", 0
+
+    offset = len(PNG_SIGNATURE)
+    ihdr: tuple[int, int, int, int, int] | None = None
+    idat_parts: list[bytes] = []
+    seen_plte = False
+    seen_iend = False
+    idat_ended = False
+    while offset < len(raw):
+        if len(raw) - offset < 12:
+            return "chunk header or checksum is truncated", 0
+        length = struct.unpack(">I", raw[offset : offset + 4])[0]
+        chunk_type = raw[offset + 4 : offset + 8]
+        if not all(65 <= byte <= 90 or 97 <= byte <= 122 for byte in chunk_type) or not (
+            65 <= chunk_type[2] <= 90
+        ):
+            return "chunk type is invalid", 0
+        chunk_end = offset + 12 + length
+        if chunk_end > len(raw):
+            return f"{chunk_type.decode('ascii')} chunk is truncated", 0
+        payload = raw[offset + 8 : offset + 8 + length]
+        declared_crc = struct.unpack(">I", raw[offset + 8 + length : chunk_end])[0]
+        actual_crc = zlib.crc32(chunk_type)
+        actual_crc = zlib.crc32(payload, actual_crc) & 0xFFFFFFFF
+        if declared_crc != actual_crc:
+            return f"{chunk_type.decode('ascii')} chunk checksum is invalid", 0
+
+        if offset == len(PNG_SIGNATURE) and chunk_type != b"IHDR":
+            return "IHDR is not the first chunk", 0
+        if 65 <= chunk_type[0] <= 90 and chunk_type not in {b"IHDR", b"PLTE", b"IDAT", b"IEND"}:
+            return f"unknown critical chunk {chunk_type.decode('ascii')}", 0
+        if chunk_type == b"IHDR":
+            if ihdr is not None:
+                return "contains more than one IHDR chunk", 0
+            if length != 13:
+                return "IHDR chunk has an invalid length", 0
+            width, height, bit_depth, color_type, compression, filtering, interlace = struct.unpack(
+                ">IIBBBBB", payload
+            )
+            if width == 0 or height == 0:
+                return "IHDR declares a zero dimension", 0
+            if bit_depth not in PNG_VALID_BIT_DEPTHS.get(color_type, set()):
+                return "IHDR declares an invalid color type or bit depth", 0
+            if compression != 0 or filtering != 0 or interlace not in {0, 1}:
+                return "IHDR declares an unsupported compression, filter, or interlace method", 0
+            ihdr = (width, height, bit_depth, color_type, interlace)
+        elif chunk_type == b"PLTE":
+            if ihdr is None:
+                return "PLTE appears before IHDR", 0
+            if seen_plte:
+                return "contains more than one PLTE chunk", 0
+            if idat_parts:
+                return "PLTE appears after IDAT", 0
+            if ihdr[3] in {0, 4}:
+                return "PLTE is not allowed for grayscale color types", 0
+            if length == 0 or length % 3 != 0 or length > 768:
+                return "PLTE chunk has an invalid length", 0
+            if ihdr[3] == 3 and length // 3 > 2 ** ihdr[2]:
+                return "PLTE has more entries than the indexed bit depth permits", 0
+            seen_plte = True
+        elif chunk_type == b"IDAT":
+            if ihdr is None:
+                return "IDAT appears before IHDR", 0
+            if idat_ended:
+                return "IDAT chunks are not consecutive", 0
+            idat_parts.append(payload)
+        elif chunk_type == b"IEND":
+            if length != 0:
+                return "IEND chunk has an invalid length", 0
+            if not idat_parts:
+                return "IEND appears before IDAT", 0
+            seen_iend = True
+            offset = chunk_end
+            if offset != len(raw):
+                return "contains bytes after IEND", 0
+            break
+        elif idat_parts:
+            idat_ended = True
+        offset = chunk_end
+
+    if ihdr is None:
+        return "IHDR chunk is missing", 0
+    if not idat_parts:
+        return "IDAT chunk is missing", 0
+    if not seen_iend:
+        return "IEND chunk is missing", 0
+    if ihdr[3] == 3 and not seen_plte:
+        return "indexed-color PNG is missing PLTE", 0
+
+    width, height, bit_depth, color_type, interlace = ihdr
+    channels = PNG_CHANNELS[color_type]
+    if interlace == 0:
+        expected_bytes = height * (1 + ((width * channels * bit_depth + 7) // 8))
+    else:
+        expected_bytes = 0
+        for x_start, y_start, x_step, y_step in PNG_ADAM7_PASSES:
+            if width <= x_start or height <= y_start:
+                continue
+            pass_width = (width - x_start + x_step - 1) // x_step
+            pass_height = (height - y_start + y_step - 1) // y_step
+            row_bytes = (pass_width * channels * bit_depth + 7) // 8
+            expected_bytes += pass_height * (1 + row_bytes)
+    if expected_bytes > max_inflated_bytes:
+        return (
+            "IHDR dimensions exceed the safe decoding limit "
+            f"({expected_bytes} > {max_inflated_bytes} bytes)",
+            0,
+        )
+
+    decompressor = zlib.decompressobj()
+    inflated_bytes = 0
+    rows = iter(_png_row_payload_sizes(width, height, bit_depth, color_type, interlace))
+    row_remaining = -1
+
+    def consume_scanlines(output: bytes) -> str | None:
+        nonlocal row_remaining
+        cursor = 0
+        while cursor < len(output):
+            if row_remaining < 0:
+                try:
+                    row_remaining = next(rows)
+                except StopIteration:
+                    return "IDAT stream contains more scanlines than IHDR declares"
+                if output[cursor] > 4:
+                    return f"scanline uses invalid filter type {output[cursor]}"
+                cursor += 1
+            consumed = min(row_remaining, len(output) - cursor)
+            cursor += consumed
+            row_remaining -= consumed
+            if row_remaining == 0:
+                row_remaining = -1
+        return None
+
+    try:
+        for part in idat_parts:
+            pending = part
+            while pending:
+                output = decompressor.decompress(pending, 65536)
+                inflated_bytes += len(output)
+                if inflated_bytes > expected_bytes:
+                    return "IDAT stream expands beyond the IHDR dimensions", inflated_bytes
+                scanline_issue = consume_scanlines(output)
+                if scanline_issue:
+                    return scanline_issue, inflated_bytes
+                pending = decompressor.unconsumed_tail
+            while True:
+                output = decompressor.decompress(b"", 65536)
+                if not output:
+                    break
+                inflated_bytes += len(output)
+                if inflated_bytes > expected_bytes:
+                    return "IDAT stream expands beyond the IHDR dimensions", inflated_bytes
+                scanline_issue = consume_scanlines(output)
+                if scanline_issue:
+                    return scanline_issue, inflated_bytes
+    except zlib.error as exc:
+        return f"IDAT stream cannot be decoded: {exc}", inflated_bytes
+    if not decompressor.eof:
+        return "IDAT stream is incomplete", inflated_bytes
+    if decompressor.unused_data:
+        return "IDAT stream contains trailing compressed data", inflated_bytes
+    if inflated_bytes != expected_bytes:
+        return (
+            "IDAT stream size does not match IHDR dimensions "
+            f"(expected {expected_bytes}, got {inflated_bytes})",
+            inflated_bytes,
+        )
+    if row_remaining >= 0 or next(rows, None) is not None:
+        return "IDAT stream contains fewer scanlines than IHDR declares", inflated_bytes
+    return None, inflated_bytes
+
+
+def png_integrity_issue(path: Path) -> str | None:
+    return png_integrity_result(path)[0]
 
 
 def validate_media_manifest_entries(
@@ -1625,6 +1856,17 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
                 else:
                     report.add_error(message)
                 continue
+            if listed_file.suffix.lower() == ".png":
+                remaining_budget = MAX_TOTAL_PNG_INFLATED_BYTES - report.png_inflated_bytes
+                integrity_issue, inflated_bytes = png_integrity_result(
+                    listed_file,
+                    max_inflated_bytes=min(MAX_PNG_INFLATED_BYTES, remaining_budget),
+                )
+                report.png_inflated_bytes += inflated_bytes
+                if integrity_issue:
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: invalid PNG `{safe_path}`: {integrity_issue}"
+                    )
             declared_digest = item.get("sha256")
             if safe_path != "manifest.json" and not declared_digest:
                 message = f"{proposal_dir}/manifest.json: listed file `{safe_path}` needs sha256"
