@@ -67,16 +67,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 | 案例 | 城市 | 核心经验 | 空间转化启示 |
 |------|------|----------|-------------|
-| King's Cross | 伦敦 | 铁路遗产更新、Google Campus、中央圣马丁、12年持续运营 | 铁路遗产与科技共生，京张智脉主轴直接参考 |
-| Silicon Valley | 圣何塞 | 校企旋转门、风险资本密集、开源文化 | 校园-社区-产业无界融合，众智园参考 |
-| Kendall Square | 波士顿 | MIT创新区、生物医药密集、步行尺度 | 研究机构与公共空间高密度交织，AI原点社区参考 |
-| Shibuya Q-WA | 东京 | AI城市实验室、数据驱动公共空间 | 公共空间作为AI测试场，多点场景节点参考 |
-| Digital Media City | 首尔 | 数字媒体产业集群、公共文化设施联动 | 产业与文化设施并重，大钟寺参考 |
-| One-North | 新加坡 | 生物医药+科技混合、One-North公园绿地一体化 | 产业与绿地公园一体化，蓝绿慢行复合环参考 |
-| 南山科技园 | 深圳 | 产业链完整、政府引导、企业主体 | 全栈产业链空间组织，三核产业节点参考 |
-| 中关村现有生态 | 北京 | 高校密集、创业活跃、政策先行 | 在地经验直接延续，一带三核参考 |
+| King's Cross | 伦敦 | 铁路遗产更新、Google Campus、中央圣马丁、12年持续运营 | 铁路遗产与科技共生，京张智脉主轴直接参考 [source:CASE-KINGS-CROSS] |
+| Silicon Valley | 圣何塞 | 校企旋转门、风险资本密集、开源文化 | 校园-社区-产业无界融合，众智园参考 [source:CASE-SILICON-VALLEY] |
+| Kendall Square | 波士顿 | MIT创新区、生物医药密集、步行尺度 | 研究机构与公共空间高密度交织，AI原点社区参考 [source:CASE-KENDALL-SQUARE] |
+| Shibuya Q-WA | 东京 | AI城市实验室、数据驱动公共空间 | 公共空间作为AI测试场，多点场景节点参考 [source:CASE-SHIBUYA-QWA] |
+| Digital Media City | 首尔 | 数字媒体产业集群、公共文化设施联动 | 产业与文化设施并重，大钟寺参考 [source:CASE-DMC-SEOUL] |
+| One-North | 新加坡 | 生物医药+科技混合、One-North公园绿地一体化 | 产业与绿地公园一体化，蓝绿慢行复合环参考 [source:CASE-ONE-NORTH] |
+| 南山科技园 | 深圳 | 产业链完整、政府引导、企业主体 | 全栈产业链空间组织，三核产业节点参考 [source:CASE-NANSHAN-TECH] |
+| 中关村现有生态 | 北京 | 高校密集、创业活跃、政策先行 | 在地经验直接延续，一带三核参考 [source:CASE-ZGC-ECOLOGY] |
 
-这些案例的共同启示是：成功的AI创新生态需要研究机构、公共空间、产业空间和生活空间的高密度混合，需要连续的步行和骑行网络，需要文化叙事来凝聚身份认同，需要长期的社区运营而非一次性建设。King's Cross 的铁路遗产更新经验对京张遗址公园尤其直接相关——其12年分阶段更新、历史建筑激活与新建混合、公共空间作为社区粘合剂的做法，为京张智脉共生带的分期实施提供了可借鉴的路径 [source:CASE-KINGS-CROSS] [source:AGENT-TASKBOOK]。案例数据来源于公开资料，具体指标和成效描述为研究性参考，不构成精确引用 [source:CASE-SILICON-VALLEY] [source:CASE-KENDALL-SQUARE] [source:CASE-SHIBUYA-QWA] [source:CASE-DMC-SEOUL] [source:CASE-ONE-NORTH] [source:CASE-NANSHAN-TECH] [source:CASE-ZGC-ECOLOGY]。
+这些案例的共同启示是：成功的AI创新生态需要研究机构、公共空间、产业空间和生活空间的高密度混合，需要连续的步行和骑行网络，需要文化叙事来凝聚身份认同，需要长期的社区运营而非一次性建设。King's Cross 的铁路遗产更新经验对京张遗址公园尤其直接相关——其12年分阶段更新、历史建筑激活与新建混合、公共空间作为社区粘合剂的做法，为京张智脉共生带的分期实施提供了可借鉴的路径 [source:CASE-KINGS-CROSS] [source:AGENT-TASKBOOK]。上述案例数据均来源于公开资料，具体指标和成效描述为研究性参考，不构成精确引用。
 
 ### AI创新生态图谱
 
