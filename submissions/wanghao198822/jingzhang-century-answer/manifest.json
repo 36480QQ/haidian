@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d802bd5869a6e7430c8188886ca98c3ad7a47b07865ef615cb029ba24dd53c57"
+      "sha256": "641452b19cb943f618c21e5c0d28041b705ec0c6e6f52756a2f71adc810b3eb3"
     },
     {
       "path": "compliance_matrix.json",
@@ -105,7 +105,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "9fd3b365802d0b822ba8fa80464ad0d0003e5384b2f03d350b43cc08a59ee8bf"
+      "sha256": "ce89863db7af31383c2eb4eba188e7f1867b9d517421f54095c40c63ba806f6c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -126,7 +126,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "344a11d9b5a6eafcdbe1cddce26cb8376bc180e4328530b03006873924e367e3"
+      "sha256": "4f3b215bc8ca9853590b38548f7b5522a142085460188e8a94d038f76c096261"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -255,7 +255,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2a79626998c606a1044d5d7d5dfaa5121c1af7ab8203ba235a77c12543824cb6"
+      "sha256": "1fc95438b0a77ba97c02c9bbdb60cfac7b247a688048154daaa5b2e0d1599540"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -554,15 +554,25 @@
       "description_en": "A programmatically drawn cover whose motif is a rail spike seen from above with concentric answer rings radiating outward."
     },
     {
+      "path": "assets/media/narrative-poster.jpg",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "9642fc1a7f6b4e1bfc7398ea7a20f0484f2267124dbdf9f5788952c07de41c3f",
+      "title_zh": "短片海报帧 · 蹲下来数道钉",
+      "title_en": "Film Poster Frame — Crouching to Count the Spikes",
+      "description_zh": "概念短片的静帧海报，取自道钉带段：市民蹲在步道上端详一颗嵌入铺装的铜道钉。画面由 AI 生成，为概念意象示意，非实景照片。",
+      "description_en": "A still poster frame from the film's Rail-Spike Band segment: a citizen crouching over a bronze spike set flush into the walkway. The image is AI-generated and conceptual in intent, not a photograph."
+    },
+    {
       "path": "assets/media/narrative.mp4",
       "role": "video",
       "required": false,
-      "sha256": "50f86d819a519a847e080a3b810a42da3366eba7f32db06bc72869d6d8718e04",
+      "sha256": "9602e74bc99c2b80f1e5047a7736a9a58d55bc1546c90973fd5e4159ee057633",
       "title_zh": "《百年应答》概念方案短片",
       "title_en": "The Century Answer — Concept Film",
-      "description_zh": "58秒静音短片，讲述1909年京张之问到今日AI作答的百年叙事，以及道钉带、应答钟、应答门三项机制与三处重点区。画面为程序化绘制的概念示意，非实景照片、非实测数据、非官方审定成果。",
-      "description_en": "A 58-second silent film tracing the century-long narrative from the 1909 Jing-Zhang question to today’s AI answer, and setting out the Rail-Spike Band, the Answer Bell, the Answer Gates and the three key areas. Frames are programmatically drawn conceptual illustrations, not photographs, measured data, or officially approved results.",
-      "poster": "assets/media/cover.png",
+      "description_zh": "55 秒静音概念短片：片头提出 1909 年之问，随后依次走过道钉带、南问·鸣钟之门、中答·应答原点、北跃·人字之跃、东西向穿越·应答门五个片段，片尾落回“市民蹲下来数道钉”。画面由 AI 生成（图生视频），为概念意象示意——非实景照片、非工程效果图、非官方审定成果；两处已知形式差异（人字之跃桥型、铜道钉位置）在字幕轨与文字稿中据实声明，形式与尺寸一律以断面图与正文为准。",
+      "description_en": "A 55-second silent concept film. The opening card poses the 1909 question; five segments then walk the belt in turn — the Rail-Spike Band, Bell Chime Plaza in the southern Question segment, the Answer Origin in the central Answer segment, the Herringbone Leap in the northern Leap segment, and the east-west Answer Gates — before the closing card returns to citizens crouching to count the spikes. The imagery is AI-generated (image-to-video) and conceptual in intent: not photographs, not engineering renderings, not an officially approved result. Two known divergences from the body text (the bridge form of the Herringbone Leap and the position of the bronze spikes) are declared in the caption track and the transcript; the section drawings and body text govern form and dimensions.",
+      "poster": "assets/media/narrative-poster.jpg",
       "caption": "assets/media/narrative.vtt",
       "transcript": "assets/media/narrative-transcript.md"
     },
@@ -570,17 +580,17 @@
       "path": "assets/media/narrative.vtt",
       "role": "caption_track",
       "required": false,
-      "sha256": "6598daa6fc1aa4aef86ccb5253b68132662c97390728b62ac5eba6276847b03d",
+      "sha256": "a7507c7a72b3ba28c9b4e1384b958fea71e9e7a7cc522e31251f903c00a7b5a8",
       "title_zh": "短片字幕（WebVTT）",
       "title_en": "Concept Film Captions (WebVTT)",
-      "description_zh": "与画面烧录字幕逐字一致的中文字幕轨。",
-      "description_en": "Chinese caption track, word-for-word identical to the burnt-in subtitles."
+      "description_zh": "与画面烧录字幕逐字一致的中文字幕轨，含 AI 生成声明与两处已知形式差异声明。",
+      "description_en": "Chinese caption track, word-for-word identical to the burnt-in subtitles, carrying the AI-generation declaration and the two declared divergences from the body text."
     },
     {
       "path": "assets/media/narrative-transcript.md",
       "role": "transcript",
       "required": false,
-      "sha256": "8f057da2e792ec04a8d315f0b61591a3f96ead4ecf533d000e063c898ef8dbcd",
+      "sha256": "2dfe82cf4d1b45f7b981094ba4292c9c3b839583bd5924e83eedb3dbbb6a4e66",
       "title_zh": "短片完整文字稿",
       "title_en": "Concept Film Full Transcript",
       "description_zh": "短片全部叙述内容的文字稿，供无法播放视频时完整获取。",
