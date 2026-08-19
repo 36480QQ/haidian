@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "e12a1487fdb87edfce98017da3c03c17999de56c47ee896740fa5f7c508db19e"
+      "sha256": "73399e7029fba4d546471f87673736e4c63bfa018fbf0de26923708b034f11e2"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "60ec3a52851a37d9f634fce6bcc3a8ff7439e7fec98c29d8f51ca986ea878eac"
+      "sha256": "d802bd5869a6e7430c8188886ca98c3ad7a47b07865ef615cb029ba24dd53c57"
     },
     {
       "path": "compliance_matrix.json",
@@ -75,6 +75,18 @@
       "role": "design_depth_matrix",
       "required": true,
       "sha256": "1c9c7ac5cb3aca2eccd05c7da955ab2d7e5baf6047ccd7d51dffb5cb0ef3e7f2"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "2ddc5eeef7ef794a578a7223a7b224788f6967c8eecfa60b93bbc8a605a21306"
+    },
+    {
+      "path": "spatial.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "21229a72d97c3851734b7c24837180591ca7f9fb990d6dd12d985ce5f068b0aa"
     },
     {
       "path": "report/proposal.html",
@@ -114,7 +126,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "389f7119282a84737becdec88e330ea54c019072a2db19ee843be6b7d816b65e"
+      "sha256": "344a11d9b5a6eafcdbe1cddce26cb8376bc180e4328530b03006873924e367e3"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +255,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b7785294cc43c5ad9f1be7e15aa5488c0dbe40910885eaa7c437f46469f0b87b"
+      "sha256": "2a79626998c606a1044d5d7d5dfaa5121c1af7ab8203ba235a77c12543824cb6"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -475,7 +487,7 @@
       "path": "visual/assets/data/metrics_snapshot.js",
       "role": "evidence_data",
       "required": false,
-      "sha256": "fb15eddc8702880140ce6f493eee8d49a769cf06163e4d16e9af913b7342b3b1"
+      "sha256": "76487f33c69d0272520e81fe1e454256cf59339cf688b9ed3f8d15354f9127d1"
     },
     {
       "path": "visual/assets/geo_core.js",

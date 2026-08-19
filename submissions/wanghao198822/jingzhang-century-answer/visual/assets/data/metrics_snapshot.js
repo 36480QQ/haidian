@@ -3,11 +3,11 @@
  * 内容 = metrics.json 的逐字内嵌副本（未删项、未改值）。
  * 内嵌原因同 geo_layers.js：file:// 下无法读取同目录 .json，且禁止网络请求。
  *
- * 原件 SHA-256（裸文件字节）：metrics.json = e12a1487fdb87edfce98017da3c03c17999de56c47ee896740fa5f7c508db19e
+ * 原件 SHA-256（裸文件字节）：metrics.json = 73399e7029fba4d546471f87673736e4c63bfa018fbf0de26923708b034f11e2
  */
 window.CA_METRICS_SNAPSHOT = {
   "generated_from": "submissions/wanghao198822/jingzhang-century-answer/metrics.json",
-  "source_sha256": "e12a1487fdb87edfce98017da3c03c17999de56c47ee896740fa5f7c508db19e",
+  "source_sha256": "73399e7029fba4d546471f87673736e4c63bfa018fbf0de26923708b034f11e2",
   "metrics_json": {
     "schema_version": "0.1.0",
     "units": {
@@ -652,7 +652,7 @@ window.CA_METRICS_SNAPSHOT = {
         "formula": "round(area(project(public_space.feature[PUBLIC-002], EPSG:4326->EPSG:4548)), 3)",
         "confidence": "medium",
         "assumptions": [
-          "Concept public space: Tsinghua Yuan station forecourt with the zero-kilometre post; siting still needs professional and heritage consultation."
+          "Concept public space: Tsinghua Yuan station forecourt with the Kilometre-Zero Post; siting still needs professional and heritage consultation."
         ]
       },
       "public_space_north_bridgehead_area_sqm": {
