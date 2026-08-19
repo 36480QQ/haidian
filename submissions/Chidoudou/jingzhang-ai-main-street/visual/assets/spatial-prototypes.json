@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "status": "conceptual_not_authorized",
-  "title_zh": "京张上街 v2.5：六个横向入口、三处首发100米与一套可逆构件",
-  "title_en": "Jing-Zhang AI MAIN STREET v2.5: six cross-corridor gateways, three first-use 100-m studies and one reversible kit",
+  "title_zh": "京张上街 v2.6：一个人、一个真实问题、三道公共闸门",
+  "title_en": "Jing-Zhang AI MAIN STREET v2.6: one person, one real problem and three public gates",
   "boundary_note_zh": "每处均为代表性的100米概念研究窗口，不是官方片区边界、道路红线、实测总平面、工程尺寸、投资或实施承诺；须在正式数据、权属、遗产、交通、消防、市政、运营授权与专业审查后深化。",
   "boundary_note_en": "Each is a representative 100-m concept study window, not an official area boundary, road line, surveyed plan, engineering dimension, investment or delivery commitment. It requires official data, ownership, heritage, transport, fire, utility, operating-authority and professional review before development.",
   "palette": {
@@ -330,51 +330,51 @@
     }
   ],
   "journey": {
-    "id": "JOURNEY-SERVICE-EVIDENCE-PASS",
-    "persona_zh": "主角不是一位跨城赶场的人，而是一项待上街的AI服务和随它同行的证据",
-    "persona_en": "The protagonist is not a person racing across the city, but an AI service seeking street use and the evidence travelling with it",
-    "problem_zh": "例题：大钟寺多语换乘与无障碍到达信息；不上传乘客身份，普通路线必须先成立。",
-    "problem_en": "Example: multilingual transfer and accessible-arrival information at Dazhongsi; no passenger identity is uploaded, and the ordinary route must work first.",
+    "id": "JOURNEY-PERSON-SERVICE-EVIDENCE-PASS",
+    "persona_zh": "林岚（合成角色）代表需要陪长者出行的乘客；她在大钟寺提出真实到达难题",
+    "persona_en": "Lin Lan (a composite persona) represents a passenger accompanying an older person; she raises a real arrival problem at Dazhongsi",
+    "problem_zh": "人留在真实场地参与共测与否决；问题、服务和证据沿Street Pass传递。不上传乘客身份，普通路线必须先成立。",
+    "problem_en": "The person stays at the real site to co-test and veto; the problem, service and evidence travel through the Street Pass. No passenger identity is uploaded, and the ordinary route must work first.",
     "steps": [
       {
         "time": "00",
         "gate": "REAL PROBLEM",
-        "title_zh": "先从真实问题出发",
-        "title_en": "Start with a real problem",
-        "result_zh": "乘客、照护者和维护者共同定义问题；先画普通路线。",
-        "result_en": "Passengers, caregivers and maintainers define the problem together; draw the ordinary route first."
+        "title_zh": "林岚提出到达难题",
+        "title_en": "Lin Lan raises an arrival problem",
+        "result_zh": "A口—1733—D口先靠实体图、人工和连续通行走通",
+        "result_en": "A–1733–D must work first through a physical map, people and continuous movement."
       },
       {
         "time": "01",
         "gate": "PROVE",
-        "title_zh": "众智园回答：安全吗？",
-        "title_en": "Zhongzhiyuan asks: is it safe?",
-        "result_zh": "范围、急停、近失和撤场线清楚；失败也是有效结果。",
-        "result_en": "Boundary, emergency stop, near miss and exit route are clear; failure is a valid result."
+        "title_zh": "众智园证明：安全吗？",
+        "title_en": "Zhongzhiyuan proves: is it safe?",
+        "result_zh": "服务带着范围、急停、近失和撤场证据接受验证",
+        "result_en": "The service is tested with evidence of its boundary, stop, near misses and exit."
       },
       {
         "time": "02",
         "gate": "TRANSLATE",
-        "title_zh": "原点社区回答：说得清吗？",
-        "title_en": "AI Origin asks: is it understandable?",
-        "result_zh": "普通人能复述用途、局限、人工责任和撤回方法才盖章。",
-        "result_en": "A member of the public must be able to restate purpose, limits, human responsibility and withdrawal."
+        "title_zh": "原点社区翻译：说得清吗？",
+        "title_en": "AI Origin translates: is it clear?",
+        "result_zh": "林岚能复述用途、局限、人工责任和撤回方法才盖章",
+        "result_en": "Lin Lan must be able to restate purpose, limits, human responsibility and withdrawal."
       },
       {
         "time": "03",
         "gate": "FIRST USE",
-        "title_zh": "大钟寺回答：真能用吗？",
-        "title_en": "Dazhongsi asks: does it work in real use?",
-        "result_zh": "A—1733—D先靠实体图与人工走通；AI只作自愿、限时、可关闭的侧层。",
-        "result_en": "A–1733–D works first through physical maps and people; AI remains optional, time-limited and switchable."
+        "title_zh": "大钟寺共测：真能用吗？",
+        "title_en": "Dazhongsi co-tests: does it work?",
+        "result_zh": "林岚自愿限时试用；出错可当场改正、切回人工并停止",
+        "result_en": "Lin Lan opts into a timed test; errors are corrected on site or switched to people and stopped."
       },
       {
         "time": "04",
         "gate": "FEEDBACK",
-        "title_zh": "共同回答：扩展、暂停还是退场？",
-        "title_en": "Decide together: expand, pause or exit?",
-        "result_zh": "成功、暂停和失败同权记录；设备撤走后普通换乘和商业空间继续。",
-        "result_en": "Success, pause and failure are recorded equally; ordinary transfer and commercial space continue after equipment leaves."
+        "title_zh": "林岚也是最终评委",
+        "title_en": "Lin Lan is also a final reviewer",
+        "result_zh": "她与维护、专业、运营角色共同决定扩展、暂停或退场",
+        "result_en": "With maintenance, professional and operating roles, she decides expansion, pause or exit."
       }
     ]
   },
@@ -454,6 +454,8 @@
       "id": "SP-01",
       "title_zh": "上街票与状态板",
       "title_en": "Street Pass and status board",
+      "resource_zh": "S｜既有场地+移动工具包+单班运营",
+      "resource_en": "S | existing venue + mobile kit + one operating shift",
       "h1_zh": "纸质票、人工台、停机演练",
       "h1_en": "Paper pass, human desk, shutdown drill",
       "h2_zh": "统一状态字段与申诉回执",
@@ -467,6 +469,8 @@
       "id": "SP-02",
       "title_zh": "众智园验证庭",
       "title_en": "Zhongzhiyuan Validation Yard",
+      "resource_zh": "M｜100米受控口袋+安全/维护复核",
+      "resource_en": "M | bounded 100-m pocket + safety and maintenance review",
       "h1_zh": "封闭/物理隔离口袋",
       "h1_en": "Closed or physically bounded pocket",
       "h2_zh": "安全数据通过后的可控环",
@@ -480,6 +484,8 @@
       "id": "SP-03",
       "title_zh": "原点转译窗",
       "title_en": "AI Origin Translation Window",
+      "resource_zh": "S｜既有公共首层+人工解释班次",
+      "resource_en": "S | existing public ground floor + staffed explanation shift",
       "h1_zh": "模型卡与人工解释",
       "h1_en": "Model cards and human explanation",
       "h2_zh": "预约共测与需求回流",
@@ -493,6 +499,8 @@
       "id": "SP-04",
       "title_zh": "大钟寺可迁移站城接口",
       "title_en": "Dazhongsi Relocatable Station-City Interface",
+      "resource_zh": "M｜多点路线审计+移动台+跨方复核",
+      "resource_en": "M | multi-point route audit + mobile desk + joint review",
       "h1_zh": "T0实体图、人工台与路线版本",
       "h1_en": "T0 physical map, human desk and route version",
       "h2_zh": "T1迁移到经复核的临时入口",
@@ -506,6 +514,8 @@
       "id": "SP-05",
       "title_zh": "无障碍同行链",
       "title_en": "Accessible Journey Chain",
+      "resource_zh": "M｜连续路线审计+人工协助+修复清单",
+      "resource_en": "M | continuous-route audit + human help + repair list",
       "h1_zh": "物理路线审计与人工协助",
       "h1_en": "Physical-route audit and human help",
       "h2_zh": "断点闭合后的自愿AI建议",
@@ -519,6 +529,8 @@
       "id": "SP-06",
       "title_zh": "十二站服务构件",
       "title_en": "Twelve-node service kit",
+      "resource_zh": "L｜多节点复制+年度运维与备件",
+      "resource_en": "L | multi-node replication + annual maintenance and spares",
       "h1_zh": "双高台、低亮状态与维修门样段",
       "h1_en": "Dual-height, low-light and maintenance samples",
       "h2_zh": "按维护能力复制",
@@ -532,6 +544,8 @@
       "id": "SP-07",
       "title_zh": "可纠错贡献记录",
       "title_en": "Correctable Contribution Record",
+      "resource_zh": "S｜开放模板+策展/权利核验",
+      "resource_en": "S | open template + curatorial and rights review",
       "h1_zh": "贡献模板与首件核验",
       "h1_en": "Contribution template and first verification",
       "h2_zh": "四处地标串线",
@@ -545,6 +559,8 @@
       "id": "SP-08",
       "title_zh": "四季公共运营",
       "title_en": "Four-season public operation",
+      "resource_zh": "M｜年度运营团队+四季活动与公开复盘",
+      "resource_en": "M | annual operator + four seasonal releases and public review",
       "h1_zh": "一次问题征集与一次共测",
       "h1_en": "One problem call and one co-test",
       "h2_zh": "四季完整闭环",
