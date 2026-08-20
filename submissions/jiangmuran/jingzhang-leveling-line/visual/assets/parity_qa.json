@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.789,
+ "overall_ratio": 0.79,
  "floor": 0.75,
  "sections": [
   {
@@ -26,16 +26,16 @@
   },
   {
    "section": "Three-Level Scope Framework",
-   "zh_chars": 4011,
+   "zh_chars": 4002,
    "en_words": 2377,
-   "ratio": 0.756,
+   "ratio": 0.758,
    "pass": true
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
-   "zh_chars": 6428,
+   "zh_chars": 6411,
    "en_words": 4049,
-   "ratio": 0.803,
+   "ratio": 0.806,
    "pass": true
   },
   {
@@ -47,16 +47,16 @@
   },
   {
    "section": "Detailed Design of Key Areas",
-   "zh_chars": 4623,
+   "zh_chars": 4609,
    "en_words": 2752,
-   "ratio": 0.759,
+   "ratio": 0.762,
    "pass": true
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 11210,
+   "zh_chars": 11204,
    "en_words": 7026,
-   "ratio": 0.799,
+   "ratio": 0.8,
    "pass": true
   },
   {
@@ -89,16 +89,16 @@
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
-   "zh_chars": 5329,
+   "zh_chars": 5292,
    "en_words": 3158,
-   "ratio": 0.756,
+   "ratio": 0.761,
    "pass": true
   },
   {
    "section": "The instrument on the site's own data",
-   "zh_chars": 4952,
+   "zh_chars": 4946,
    "en_words": 3072,
-   "ratio": 0.791,
+   "ratio": 0.792,
    "pass": true
   },
   {

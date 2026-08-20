@@ -1,13 +1,13 @@
 {
  "retrieved": "2026-08-20",
- "corpus_size": 925,
+ "corpus_size": 926,
  "authoritative_source": "git tree",
  "gallery_index_count": 872,
- "missing_from_gallery_index": 53,
+ "missing_from_gallery_index": 54,
  "track_declarations": {
-  "civic-agent-governance": 630,
-  "ai-traffic-walkability": 625,
-  "enterprise-services-ecosystem": 585,
+  "civic-agent-governance": 631,
+  "ai-traffic-walkability": 626,
+  "enterprise-services-ecosystem": 586,
   "jingzhang-heritage-narrative": 299,
   "ai-origin-community": 244,
   "ai-public-services": 105,
@@ -18,66 +18,66 @@
  "proposals_declaring_no_known_track": 36,
  "structural_convergence": {
   "three_cores": {
-   "count": 437,
-   "share": 0.4724
+   "count": 438,
+   "share": 0.473
   },
   "two_wings": {
-   "count": 339,
-   "share": 0.3665
+   "count": 340,
+   "share": 0.3672
   },
   "one_spine": {
-   "count": 253,
-   "share": 0.2735
+   "count": 254,
+   "share": 0.2743
   },
   "evidence_chain": {
    "count": 200,
-   "share": 0.2162
+   "share": 0.216
   },
   "reversible": {
    "count": 142,
-   "share": 0.1535
+   "share": 0.1533
   },
   "landmark": {
-   "count": 130,
-   "share": 0.1405
+   "count": 131,
+   "share": 0.1415
   },
   "scenario_cards": {
    "count": 126,
-   "share": 0.1362
+   "share": 0.1361
   },
   "personas": {
    "count": 66,
-   "share": 0.0714
+   "share": 0.0713
   }
  },
  "meta_symbol_saturation": {
   "证明/验证": {
    "count": 207,
-   "share": 0.2238
+   "share": 0.2235
   },
   "脉/血脉": {
    "count": 192,
-   "share": 0.2076
+   "share": 0.2073
   },
   "铁轨/线路/轨道": {
    "count": 115,
-   "share": 0.1243
+   "share": 0.1242
   },
   "人字形/折返": {
-   "count": 100,
-   "share": 0.1081
+   "count": 99,
+   "share": 0.1069
   },
   "契约/协议": {
    "count": 79,
-   "share": 0.0854
+   "share": 0.0853
   },
   "缝合/织补": {
    "count": 53,
-   "share": 0.0573
+   "share": 0.0572
   },
   "公地/commons": {
    "count": 50,
-   "share": 0.0541
+   "share": 0.054
   },
   "交接/接力": {
    "count": 31,
@@ -184,6 +184,7 @@
   "anthropic-claude": 1,
   "jingzhang-ai-track-agent-v1": 1,
   "OpenAI Codex GPT-5 series": 1,
+  "gemini-3.7-flash": 1,
   "reasonix-urban-design-agent-v1": 1,
   "OpenAI Codex (GPT-5.6 Sol)": 1,
   "claude-opus-5[1m]": 1,
@@ -319,7 +320,7 @@
   "claude-sonnet-4-6": 1,
   "hermes-agent-desktop": 1,
   "Claude via WorkBuddy (multi-model agent session)": 1,
-  "OpenAI GPT-5 family via Codex; participant-supplied web-generated concept illustrations with provider/model metadata unavailable; local Shapely, PyProj, CairoSVG, PPT Master and LibreOffice tools for spatial derivation, rendering and packaging": 1,
+  "OpenAI GPT-5 family via Codex; participant-supplied web-generated concept illustrations with provider/model metadata unavailable; local Shapely, PyProj, CairoSVG, Pillow, PyMuPDF, PPT Master and LibreOffice tools for spatial derivation, rendering and packaging": 1,
   "qoder-agent": 1,
   "GLM-5.1": 1,
   "Anthropic Claude": 1,
@@ -356,7 +357,7 @@
   "GLM-5": 1,
   "gpt": 1
  },
- "model_declaration_writings": 257,
+ "model_declaration_writings": 258,
  "model_family_count": 9,
  "model_families": {
   "GPT / Codex": 404,
@@ -366,12 +367,12 @@
   "GLM / Zhipu": 25,
   "Kimi / Moonshot": 22,
   "Grok": 13,
-  "Qwen": 2,
-  "Gemini": 1
+  "Gemini": 2,
+  "Qwen": 2
  },
  "undisclosed_model_count": 163,
- "model_family_declared_count": 524,
- "undisclosed_model_share": 0.1762,
+ "model_family_declared_count": 525,
+ "undisclosed_model_share": 0.176,
  "proposal_bytes": {
   "min": 12102,
   "median": 35016,
