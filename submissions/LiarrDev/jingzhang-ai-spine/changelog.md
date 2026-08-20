@@ -1,5 +1,21 @@
 # 方案迭代记录
 
+## v1.7 - 2026-08-20
+
+### Visual presentation overhaul (5 figures + visual/index.html)
+- Redesigned all 5 SVG figures with richer data visualization, professional design system (brand colors #1B3A6B / #C07A3A / #2e7d32), gradients, filters, bilingual labels, and evidence chain annotations:
+  - site-overview: master concept map with legend, area statistics, design concept, and evidence chain
+  - land-use-structure: three-tier scope framework, key area breakdown chart, spatial control metrics, and renewal strategy ratios
+  - key-areas: three-column card layout for Zhongzhiyuan, AI Origin Community, and Dazhongsi with spatial structure, AI scenarios, and demolition-renovation-retention ratios
+  - mobility-bluegreen: composite mobility and blue-green public space map with four-tier road classification, slow-mobility loop, and rail station TOD details
+  - metrics-evidence: design scope hierarchy, key area decomposition, spatial metrics, data pipeline, task coverage matrix, and self-check status
+- Rewrote visual/index.html with enhanced visual presentation: brand mark SVG, stats bar, inline charts (area breakdown, demolition-renovation-retention ratio), progress bars, scroll-triggered fade-in animations, image lightbox, back-to-top button, and navigation highlight tracking
+- Created matching English versions (5 .en.svg files + visual/index.en.html) with all text translated to English, preserving all data values, colors, and layout
+
+### Manifest update
+- Added 10 SVG source files to manifest.json (5 zh + 5 en)
+- Updated SHA256 hashes for all 22 changed files (10 SVGs, 10 PNGs, 2 HTML)
+
 ## v1.6 - 2026-08-20
 
 ### Taskbook review-dimension alignment

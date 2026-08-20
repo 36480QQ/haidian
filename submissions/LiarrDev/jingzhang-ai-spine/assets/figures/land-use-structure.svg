@@ -1,0 +1,309 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" font-family="'PingFang SC','Microsoft YaHei','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f7fa"/>
+      <stop offset="100%" stop-color="#e8eef4"/>
+    </linearGradient>
+    <filter id="shadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1B3A6B"/>
+    </marker>
+    <marker id="arrowC" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#C07A3A"/>
+    </marker>
+    <marker id="arrowG" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2e7d32"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bgGrad2)"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1600" height="80" fill="#1B3A6B"/>
+  <text x="40" y="38" fill="#fff" font-size="24" font-weight="700">FIG. 02 三层范围工作框架与用地结构</text>
+  <text x="40" y="62" fill="#C07A3A" font-size="14" font-weight="600" letter-spacing="0.05em">THREE-TIER SCOPE FRAMEWORK &amp; LAND-USE STRUCTURE</text>
+  <rect x="0" y="80" width="1600" height="4" fill="#C07A3A"/>
+
+  <!-- ===== LEFT: Three-tier funnel ===== -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="720" height="530" fill="#fff" stroke="#d6e0ea" rx="8" filter="url(#shadow2)"/>
+    <rect x="0" y="0" width="720" height="36" fill="#1B3A6B" rx="8"/>
+    <rect x="0" y="28" width="720" height="8" fill="#1B3A6B"/>
+    <text x="20" y="24" fill="#fff" font-size="14" font-weight="700">三层范围工作框架 Three-Tier Scope Framework</text>
+
+    <!-- Tier 1 -->
+    <g transform="translate(60, 70)">
+      <polygon points="0,0 600,0 580,80 20,80" fill="#e3f2fd" stroke="#1B3A6B" stroke-width="1.5"/>
+      <text x="300" y="30" text-anchor="middle" fill="#1B3A6B" font-size="16" font-weight="700">统筹研究范围</text>
+      <text x="300" y="50" text-anchor="middle" fill="#1B3A6B" font-size="12">Coordination Research Scope</text>
+      <text x="300" y="68" text-anchor="middle" fill="#1B3A6B" font-size="20" font-weight="700">43.6 km²</text>
+    </g>
+    <path d="M 350,155 L 350,175" fill="none" stroke="#1B3A6B" stroke-width="2" marker-end="url(#arrow2)"/>
+
+    <!-- Tier 2 -->
+    <g transform="translate(100, 180)">
+      <polygon points="0,0 520,0 500,80 20,80" fill="#bbdefb" stroke="#1B3A6B" stroke-width="1.5"/>
+      <text x="260" y="30" text-anchor="middle" fill="#1B3A6B" font-size="16" font-weight="700">总体设计范围</text>
+      <text x="260" y="50" text-anchor="middle" fill="#1B3A6B" font-size="12">Overall Design Scope</text>
+      <text x="260" y="68" text-anchor="middle" fill="#1B3A6B" font-size="20" font-weight="700">11.4 km²</text>
+    </g>
+    <path d="M 350,265 L 350,285" fill="none" stroke="#1B3A6B" stroke-width="2" marker-end="url(#arrow2)"/>
+
+    <!-- Tier 3 -->
+    <g transform="translate(160, 290)">
+      <polygon points="0,0 380,0 360,80 20,80" fill="#ffe0b2" stroke="#C07A3A" stroke-width="1.5"/>
+      <text x="190" y="28" text-anchor="middle" fill="#C07A3A" font-size="16" font-weight="700">重点区域合计</text>
+      <text x="190" y="48" text-anchor="middle" fill="#C07A3A" font-size="12">Key Areas Total</text>
+      <text x="190" y="68" text-anchor="middle" fill="#C07A3A" font-size="20" font-weight="700">3.68 km² (368.4 ha)</text>
+    </g>
+
+    <!-- Area ratio -->
+    <g transform="translate(60, 400)">
+      <text x="0" y="0" fill="#5a6a7a" font-size="11" font-weight="600">面积递减比 Area Ratio</text>
+      <rect x="0" y="10" width="600" height="6" rx="3" fill="#e3f2fd"/>
+      <rect x="0" y="10" width="156" height="6" rx="3" fill="#bbdefb"/>
+      <rect x="0" y="10" width="51" height="6" rx="3" fill="#ffe0b2"/>
+      <text x="0" y="36" fill="#1B3A6B" font-size="10">43.6 km² (100%)</text>
+      <text x="156" y="36" fill="#1B3A6B" font-size="10">11.4 km² (26.1%)</text>
+      <text x="300" y="36" fill="#C07A3A" font-size="10">3.68 km² (8.4%)</text>
+    </g>
+
+    <!-- Key area breakdown bars -->
+    <g transform="translate(60, 460)">
+      <text x="0" y="0" fill="#5a6a7a" font-size="11" font-weight="600">重点区域分解 Key Area Breakdown</text>
+      <g transform="translate(0, 12)">
+        <rect x="0" y="0" width="313" height="20" fill="#C07A3A" opacity="0.8" rx="3"/>
+        <text x="8" y="14" fill="#fff" font-size="10" font-weight="600">众智园 Zhongzhiyuan 192.1 ha</text>
+        <text x="305" y="14" fill="#C07A3A" font-size="10" font-weight="600" text-anchor="end">52.1%</text>
+      </g>
+      <g transform="translate(0, 36)">
+        <rect x="0" y="0" width="170" height="20" fill="#1B3A6B" opacity="0.8" rx="3"/>
+        <text x="8" y="14" fill="#fff" font-size="10" font-weight="600">AI原点 AI Origin 104.3 ha</text>
+        <text x="162" y="14" fill="#1B3A6B" font-size="10" font-weight="600" text-anchor="end">28.3%</text>
+      </g>
+      <g transform="translate(0, 60)">
+        <rect x="0" y="0" width="118" height="20" fill="#2e7d32" opacity="0.8" rx="3"/>
+        <text x="8" y="14" fill="#fff" font-size="10" font-weight="600">大钟寺 Dazhongsi 72.0 ha</text>
+        <text x="110" y="14" fill="#2e7d32" font-size="10" font-weight="600" text-anchor="end">19.6%</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== RIGHT: Spatial Structure ===== -->
+  <g transform="translate(800, 110)">
+    <rect x="0" y="0" width="760" height="530" fill="#fff" stroke="#d6e0ea" rx="8" filter="url(#shadow2)"/>
+    <rect x="0" y="0" width="760" height="36" fill="#1B3A6B" rx="8"/>
+    <rect x="0" y="28" width="760" height="8" fill="#1B3A6B"/>
+    <text x="20" y="24" fill="#fff" font-size="14" font-weight="700">空间结构 Spatial Structure</text>
+
+    <!-- "一脊三椎、两翼展开" diagram -->
+    <g transform="translate(40, 60)">
+      <text x="340" y="0" text-anchor="middle" fill="#1B3A6B" font-size="14" font-weight="700">"一脊三椎、两翼展开"</text>
+      <text x="340" y="16" text-anchor="middle" fill="#8a9aaa" font-size="11">One Spine, Three Vertebrae, Two Wings</text>
+
+      <!-- Spine line -->
+      <line x1="340" y1="40" x2="340" y2="300" stroke="#1B3A6B" stroke-width="4" stroke-linecap="round"/>
+      <text x="355" y="50" fill="#1B3A6B" font-size="10" font-weight="600">京张主轴 Spine</text>
+
+      <!-- Vertebra 1 (north) -->
+      <ellipse cx="340" cy="80" rx="70" ry="35" fill="#fff3e0" stroke="#C07A3A" stroke-width="2"/>
+      <text x="340" y="76" text-anchor="middle" fill="#C07A3A" font-size="13" font-weight="700">智源椎</text>
+      <text x="340" y="92" text-anchor="middle" fill="#C07A3A" font-size="10">Source Vertebra</text>
+      <text x="340" y="106" text-anchor="middle" fill="#C07A3A" font-size="9">众智园 192.1 ha</text>
+
+      <!-- Vertebra 2 (center) -->
+      <ellipse cx="340" cy="180" rx="70" ry="35" fill="#e3f2fd" stroke="#1B3A6B" stroke-width="2"/>
+      <text x="340" y="176" text-anchor="middle" fill="#1B3A6B" font-size="13" font-weight="700">智脉椎</text>
+      <text x="340" y="192" text-anchor="middle" fill="#1B3A6B" font-size="10">Pulse Vertebra</text>
+      <text x="340" y="206" text-anchor="middle" fill="#1B3A6B" font-size="9">AI原点社区 104.3 ha</text>
+
+      <!-- Vertebra 3 (south) -->
+      <ellipse cx="340" cy="280" rx="70" ry="35" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+      <text x="340" y="276" text-anchor="middle" fill="#2e7d32" font-size="13" font-weight="700">智汇椎</text>
+      <text x="340" y="292" text-anchor="middle" fill="#2e7d32" font-size="10">Convergence Vertebra</text>
+      <text x="340" y="306" text-anchor="middle" fill="#2e7d32" font-size="9">大钟寺 72.0 ha</text>
+
+      <!-- West wing -->
+      <path d="M 270,180 L 120,120" fill="none" stroke="#2e7d32" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowG)"/>
+      <text x="80" y="105" fill="#2e7d32" font-size="11" font-weight="600">西翼 West Wing</text>
+      <text x="80" y="120" fill="#5a6a7a" font-size="10">生态生活支撑</text>
+      <text x="80" y="134" fill="#5a6a7a" font-size="9">Ecological Life Support</text>
+
+      <!-- East wing -->
+      <path d="M 410,180 L 560,120" fill="none" stroke="#C07A3A" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowC)"/>
+      <text x="500" y="105" fill="#C07A3A" font-size="11" font-weight="600">东翼 East Wing</text>
+      <text x="500" y="120" fill="#5a6a7a" font-size="10">科技产业拓展</text>
+      <text x="500" y="134" fill="#5a6a7a" font-size="9">Tech Industry Expansion</text>
+
+      <!-- Neural connections -->
+      <line x1="340" y1="115" x2="340" y2="145" stroke="#C07A3A" stroke-width="1.5" opacity="0.4" stroke-dasharray="2 2"/>
+      <line x1="340" y1="215" x2="340" y2="245" stroke="#1B3A6B" stroke-width="1.5" opacity="0.4" stroke-dasharray="2 2"/>
+    </g>
+
+    <!-- Collaborative loop -->
+    <g transform="translate(40, 360)">
+      <text x="340" y="0" text-anchor="middle" fill="#1B3A6B" font-size="14" font-weight="700">三区两翼协同回路</text>
+      <text x="340" y="16" text-anchor="middle" fill="#8a9aaa" font-size="11">Three-District Collaborative Loop</text>
+
+      <!-- Nodes -->
+      <g transform="translate(60, 40)">
+        <rect x="0" y="0" width="120" height="50" fill="#fff3e0" stroke="#C07A3A" stroke-width="1.5" rx="6"/>
+        <text x="60" y="20" text-anchor="middle" fill="#C07A3A" font-size="11" font-weight="700">智源椎</text>
+        <text x="60" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">创新 Innovation</text>
+      </g>
+      <g transform="translate(280, 40)">
+        <rect x="0" y="0" width="120" height="50" fill="#e3f2fd" stroke="#1B3A6B" stroke-width="1.5" rx="6"/>
+        <text x="60" y="20" text-anchor="middle" fill="#1B3A6B" font-size="11" font-weight="700">智脉椎</text>
+        <text x="60" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">转化 Transfer</text>
+      </g>
+      <g transform="translate(500, 40)">
+        <rect x="0" y="0" width="120" height="50" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" rx="6"/>
+        <text x="60" y="20" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="700">智汇椎</text>
+        <text x="60" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">交换 Exchange</text>
+      </g>
+
+      <!-- Arrows -->
+      <path d="M 180,65 L 280,65" fill="none" stroke="#1B3A6B" stroke-width="1.5" marker-end="url(#arrow2)"/>
+      <text x="230" y="60" text-anchor="middle" fill="#5a6a7a" font-size="9">人才 Talent</text>
+      <path d="M 400,65 L 500,65" fill="none" stroke="#1B3A6B" stroke-width="1.5" marker-end="url(#arrow2)"/>
+      <text x="450" y="60" text-anchor="middle" fill="#5a6a7a" font-size="9">转化 Transform</text>
+      <path d="M 560,90 Q 400,130 180,90" fill="none" stroke="#C07A3A" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#arrowC)"/>
+      <text x="370" y="120" text-anchor="middle" fill="#C07A3A" font-size="9">资本·市场 Capital · Market</text>
+    </g>
+  </g>
+
+  <!-- ===== BOTTOM: Land Use Table ===== -->
+  <g transform="translate(40, 670)">
+    <rect x="0" y="0" width="1520" height="430" fill="#fff" stroke="#d6e0ea" rx="8" filter="url(#shadow2)"/>
+    <rect x="0" y="0" width="1520" height="36" fill="#1B3A6B" rx="8"/>
+    <rect x="0" y="28" width="1520" height="8" fill="#1B3A6B"/>
+    <text x="20" y="24" fill="#fff" font-size="14" font-weight="700">用地分类与空间管制 Land-Use Classification &amp; Spatial Control</text>
+
+    <!-- Land use categories -->
+    <g transform="translate(20, 56)">
+      <!-- Header -->
+      <rect x="0" y="0" width="1480" height="30" fill="#f4f7fa" rx="4"/>
+      <text x="10" y="20" fill="#1B3A6B" font-size="11" font-weight="700">用地类型 Land-Use Type</text>
+      <text x="280" y="20" fill="#1B3A6B" font-size="11" font-weight="700">分布区域 Distribution</text>
+      <text x="580" y="20" fill="#1B3A6B" font-size="11" font-weight="700">功能 Function</text>
+      <text x="900" y="20" fill="#1B3A6B" font-size="11" font-weight="700">管控要求 Control Requirements</text>
+      <text x="1250" y="20" fill="#1B3A6B" font-size="11" font-weight="700">关联图层 GeoJSON Layer</text>
+
+      <!-- Row 1 -->
+      <rect x="0" y="36" width="1480" height="48" fill="#fff" stroke="#eef2f6" stroke-width="1"/>
+      <rect x="0" y="36" width="6" height="48" fill="#C07A3A"/>
+      <text x="16" y="56" fill="#333" font-size="11" font-weight="600">科研用地</text>
+      <text x="16" y="72" fill="#8a9aaa" font-size="9">R&amp;D Land</text>
+      <text x="280" y="56" fill="#333" font-size="11">众智园、AI原点社区核心区域</text>
+      <text x="280" y="72" fill="#8a9aaa" font-size="9">Zhongzhiyuan &amp; AI Origin core</text>
+      <text x="580" y="56" fill="#333" font-size="11">AI全栈自主创新与成果转化</text>
+      <text x="580" y="72" fill="#8a9aaa" font-size="9">Full-stack AI innovation</text>
+      <text x="900" y="56" fill="#333" font-size="11">容积率上限待控规确认</text>
+      <text x="900" y="72" fill="#8a9aaa" font-size="9">FAR pending statutory plan</text>
+      <text x="1250" y="56" fill="#C07A3A" font-size="10" font-family="ui-monospace,monospace">land_use.geojson#LU-001</text>
+      <text x="1250" y="72" fill="#8a9aaa" font-size="9">key_areas.geojson#PROV-KEY-001</text>
+
+      <!-- Row 2 -->
+      <rect x="0" y="84" width="1480" height="48" fill="#fafbfc" stroke="#eef2f6" stroke-width="1"/>
+      <rect x="0" y="84" width="6" height="48" fill="#1B3A6B"/>
+      <text x="16" y="104" fill="#333" font-size="11" font-weight="600">商业服务业用地</text>
+      <text x="16" y="120" fill="#8a9aaa" font-size="9">Commercial / Service</text>
+      <text x="280" y="104" fill="#333" font-size="11">大钟寺片区、轨道站点周边</text>
+      <text x="280" y="120" fill="#8a9aaa" font-size="9">Dazhongsi &amp; station areas</text>
+      <text x="580" y="104" fill="#333" font-size="11">产业汇聚与国际交往</text>
+      <text x="580" y="120" fill="#8a9aaa" font-size="9">Industry convergence &amp; intl. exchange</text>
+      <text x="900" y="104" fill="#333" font-size="11">建筑高度限高待确认</text>
+      <text x="900" y="120" fill="#8a9aaa" font-size="9">Height limit pending</text>
+      <text x="1250" y="104" fill="#C07A3A" font-size="10" font-family="ui-monospace,monospace">land_use.geojson#LU-002</text>
+      <text x="1250" y="120" fill="#8a9aaa" font-size="9">key_areas.geojson#PROV-KEY-003</text>
+
+      <!-- Row 3 -->
+      <rect x="0" y="132" width="1480" height="48" fill="#fff" stroke="#eef2f6" stroke-width="1"/>
+      <rect x="0" y="132" width="6" height="48" fill="#2e7d32"/>
+      <text x="16" y="152" fill="#333" font-size="11" font-weight="600">居住用地</text>
+      <text x="16" y="168" fill="#8a9aaa" font-size="9">Residential</text>
+      <text x="280" y="152" fill="#333" font-size="11">现有社区更新为主</text>
+      <text x="280" y="168" fill="#8a9aaa" font-size="9">Existing community renewal</text>
+      <text x="580" y="152" fill="#333" font-size="11">青年人才公寓、国际社区</text>
+      <text x="580" y="168" fill="#8a9aaa" font-size="9">Talent housing &amp; intl. community</text>
+      <text x="900" y="152" fill="#333" font-size="11">保留为主、增量微更新</text>
+      <text x="900" y="168" fill="#8a9aaa" font-size="9">Preservation + incremental</text>
+      <text x="1250" y="152" fill="#C07A3A" font-size="10" font-family="ui-monospace,monospace">land_use.geojson#LU-003</text>
+      <text x="1250" y="168" fill="#8a9aaa" font-size="9">buildings.geojson</text>
+
+      <!-- Row 4 -->
+      <rect x="0" y="180" width="1480" height="48" fill="#fafbfc" stroke="#eef2f6" stroke-width="1"/>
+      <rect x="0" y="180" width="6" height="48" fill="#a5d6a7"/>
+      <text x="16" y="200" fill="#333" font-size="11" font-weight="600">绿地与广场用地</text>
+      <text x="16" y="216" fill="#8a9aaa" font-size="9">Green &amp; Plaza</text>
+      <text x="280" y="200" fill="#333" font-size="11">遗址公园、蓝绿廊道</text>
+      <text x="280" y="216" fill="#8a9aaa" font-size="9">Heritage park &amp; corridors</text>
+      <text x="580" y="200" fill="#333" font-size="11">蓝绿慢行复合环骨架</text>
+      <text x="580" y="216" fill="#8a9aaa" font-size="9">Blue-green loop framework</text>
+      <text x="900" y="200" fill="#333" font-size="11">绿地率 ≥30%（目标值）</text>
+      <text x="900" y="216" fill="#8a9aaa" font-size="9">Green ratio ≥30% (target)</text>
+      <text x="1250" y="200" fill="#C07A3A" font-size="10" font-family="ui-monospace,monospace">green_space.geojson</text>
+      <text x="1250" y="216" fill="#8a9aaa" font-size="9">public_space.geojson</text>
+
+      <!-- Row 5 -->
+      <rect x="0" y="228" width="1480" height="48" fill="#fff" stroke="#eef2f6" stroke-width="1"/>
+      <rect x="0" y="228" width="6" height="48" fill="#ffe082"/>
+      <text x="16" y="248" fill="#333" font-size="11" font-weight="600">道路与交通设施用地</text>
+      <text x="16" y="264" fill="#8a9aaa" font-size="9">Road &amp; Transport</text>
+      <text x="280" y="248" fill="#333" font-size="11">沿线道路、轨道站点一体化</text>
+      <text x="280" y="264" fill="#8a9aaa" font-size="9">Roads &amp; station TOD integration</text>
+      <text x="580" y="248" fill="#333" font-size="11">四级道路分类体系</text>
+      <text x="580" y="264" fill="#8a9aaa" font-size="9">4-tier road classification</text>
+      <text x="900" y="248" fill="#333" font-size="11">慢行优先、TOD 导向</text>
+      <text x="900" y="264" fill="#8a9aaa" font-size="9">Pedestrian priority, TOD</text>
+      <text x="1250" y="248" fill="#C07A3A" font-size="10" font-family="ui-monospace,monospace">roads.geojson</text>
+      <text x="1250" y="264" fill="#8a9aaa" font-size="9">phasing.geojson</text>
+
+      <!-- Metrics summary -->
+      <g transform="translate(0, 300)">
+        <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">实测空间指标 Measured Spatial Metrics (OSM 2026-08-20)</text>
+        <g transform="translate(0, 14)">
+          <rect x="0" y="0" width="220" height="60" fill="#e8f0f6" rx="6"/>
+          <text x="110" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">基地面积 Site Area</text>
+          <text x="110" y="42" text-anchor="middle" fill="#1B3A6B" font-size="18" font-weight="700">11.41 km²</text>
+        </g>
+        <g transform="translate(240, 14)">
+          <rect x="0" y="0" width="220" height="60" fill="#fdf3eb" rx="6"/>
+          <text x="110" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">建筑数量 Building Count</text>
+          <text x="110" y="42" text-anchor="middle" fill="#C07A3A" font-size="18" font-weight="700">1,692</text>
+        </g>
+        <g transform="translate(480, 14)">
+          <rect x="0" y="0" width="220" height="60" fill="#eaf6ee" rx="6"/>
+          <text x="110" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">现状绿地率 Green Ratio</text>
+          <text x="110" y="42" text-anchor="middle" fill="#2e7d32" font-size="18" font-weight="700">8.0%</text>
+        </g>
+        <g transform="translate(720, 14)">
+          <rect x="0" y="0" width="220" height="60" fill="#f4f7fa" rx="6"/>
+          <text x="110" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">道路段数 Road Segments</text>
+          <text x="110" y="42" text-anchor="middle" fill="#1B3A6B" font-size="18" font-weight="700">1,605</text>
+        </g>
+        <g transform="translate(960, 14)">
+          <rect x="0" y="0" width="220" height="60" fill="#fff3e0" rx="6"/>
+          <text x="110" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">公共空间率 Public Space</text>
+          <text x="110" y="42" text-anchor="middle" fill="#C07A3A" font-size="18" font-weight="700">7.3%</text>
+        </g>
+        <g transform="translate(1200, 14)">
+          <rect x="0" y="0" width="280" height="60" fill="#f4f7fa" rx="6"/>
+          <text x="140" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">容积率 FAR</text>
+          <text x="140" y="42" text-anchor="middle" fill="#8a9aaa" font-size="14" font-weight="600">unknown *</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="1140" width="1600" height="60" fill="#1B3A6B"/>
+  <text x="40" y="1165" fill="#a0b0c0" font-size="11">智脊·京张AI创新带 | 来源：方案概念框架与OSM数据 | Source: Project concept framework &amp; OSM data</text>
+  <text x="40" y="1182" fill="#708090" font-size="10">用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] | * 容积率待官方控规确认 [assumption:A-CONTROLS-001]</text>
+  <text x="1560" y="1165" text-anchor="end" fill="#a0b0c0" font-size="11">FIG. 02 / 05</text>
+</svg>
