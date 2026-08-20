@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M174",
+      "gate": "source_vocabulary_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把一条来源的 `collection_status` 改回 `collected`——**本轮之前有两条就是这么写的**。同一个字段，同一件事，另外三十条写「已取得」。闸门点名报出，构建停。",
+      "what_en": "Put one source record's `collection_status` back to `collected` - **which is how two of them read until this round**. Same field, same fact, and thirty other records answering in Chinese. The gate names it and the build stops.",
+      "why_zh": "`sources_qa` 正是为「这份文件里有两套词」写的，它修的是**字段名**；同一个毛病在下一层原封不动地留着：值本身有两套词。而那道闸门的读数写着「一套词」，这份文件评审是整份收到的。**词表写死在闸门里而不是从数据里推**：出现表外的值不会被悄悄归一，构建会停到有人特意把它加进去为止——本包对每一处枚举都是这么做的。",
+      "why_en": "`sources_qa` exists because this file had two vocabularies in it, and what it fixed was the **field names**; the same fault sat one level down, in the values. That gate's own readout says one vocabulary, and the reviewer receives this file whole. **The vocabulary is declared in the gate rather than inferred from the data**: a value outside it is never normalised silently, and the build stops until someone extends the list on purpose, which is how this package treats every other enumeration."
+    },
+    {
       "id": "M173",
       "gate": "evidence_in_payload_qa.py",
       "target": "self_check.json",
@@ -2090,7 +2102,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 170,
+  "caught": 171,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2194,6 +2206,7 @@
     "shipped_verifier_qa.py",
     "source_citation_qa.py",
     "source_provenance_qa.py",
+    "source_vocabulary_qa.py",
     "sources_qa.py",
     "stale_corpus_qa.py",
     "standard_clause_qa.py",
@@ -2250,6 +2263,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 118 道闸门，其中 117 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 118 gates, 117 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 119 道闸门，其中 118 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 119 gates, 118 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

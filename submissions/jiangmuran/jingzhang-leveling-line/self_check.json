@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 118 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 121 条 = 118 道闸门 + 3 条披露。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 119 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 122 条 = 119 道闸门 + 3 条披露。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -387,7 +387,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Fail when the prose describing the mutation harness has gone stale.",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 170 mutations, 117 of 118 gates proven able to fail, 1 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 171 mutations, 118 of 119 gates proven able to fail, 1 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -396,7 +396,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Prove the gates can fail, by making them fail on purpose.",
-      "message": "gate_mutation_qa.py — gate mutation: 170 deliberate defects across 117 of 118 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 171 deliberate defects across 118 of 119 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
     },
     {
       "check_id": "PKG_GENERATION_CHAIN_QA",
@@ -405,7 +405,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The paragraph that says everything is deterministically generated, checked.",
-      "message": "generation_chain_qa.py — generation chain: 2 count(s) in copyright_statement.md recomputed from agent.json's 231 shipped script names, and the disclosure does not claim the scripts ship"
+      "message": "generation_chain_qa.py — generation chain: 2 count(s) in copyright_statement.md recomputed from agent.json's 232 shipped script names, and the disclosure does not claim the scripts ship"
     },
     {
       "check_id": "PKG_GEOMETRY_CITATION_QA",
@@ -603,7 +603,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Every identifier in the package obeys the published naming system.",
-      "message": "naming_qa.py — naming: 704 distinct names harvested from the package — 678 matching exactly one of 24 published families and 26 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 705 distinct names harvested from the package — 679 matching exactly one of 24 published families and 26 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_NUMBER_BREAK_QA",
@@ -984,6 +984,15 @@
       "message": "source_provenance_qa.py — source provenance: 32 registered sources, 10 of them published by a Beijing or Haidian body (OFFICIAL-ANNOUNCEMENT, HAIDIAN-PARK-PHASE2-PLAN, HAIDIAN-PARK-REGISTER, HAIDIAN-RENEWAL-GUIDE-2025, BEIJING-AI-BLOCKS-FIRST-BATCH, ZGC-AI-EMPOWERMENT-PLAN-2024-2026, HAIDIAN-CONTROL-PLAN-HD00-1601, HAIDIAN-PARK-PHASE2-APPROVAL, HAIDIAN-BULLETIN-2025, BEIJING-BULLETIN-2025) — the open call, the district government's park notice, the municipal park register, the Haidian renewal guideline of 2025, the release naming the first AI innovation blocks and the district AI empowerment plan — against a floor of 10 that may only rise. **Still missing: a control-plan approval with its document number and publication window, and a formal issuing number for that AI policy — the policy is registered and its published page carries no number.** A-SOURCE-001 states both numbers and this gate recomputes them from sources.json. Scope: this counts publishers, not relevance; whether a source suits what it is cited for is the reviewer's judgement"
     },
     {
+      "check_id": "PKG_SOURCE_VOCABULARY_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "what_it_holds_en": "The status fields of `sources.json` answer in one vocabulary.",
+      "message": "source_vocabulary_qa.py — source vocabulary: 64 status values across 32 source records, every one drawn from the 6 values these 2 fields are allowed to take — one vocabulary at the values, not only at the field names"
+    },
+    {
       "check_id": "PKG_SOURCES_QA",
       "result": "pass",
       "severity": "info",
@@ -1141,7 +1150,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：170 处人为缺陷，覆盖 117 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 170 deliberate defects across 117 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：171 处人为缺陷，覆盖 118 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 171 deliberate defects across 118 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -1349,7 +1358,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31003952,
+      "total_bytes": 31005689,
       "maintainer_bypass": false
     },
     "stderr": ""
