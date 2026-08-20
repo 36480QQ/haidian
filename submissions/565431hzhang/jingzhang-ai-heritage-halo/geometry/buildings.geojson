@@ -4,1974 +4,6 @@
   "features": [
     {
       "type": "Feature",
-      "id": "BLDG-0001",
-      "properties": {
-        "id": "BLDG-0001",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.504
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3434125,
-              40.008425
-            ],
-            [
-              116.3434125,
-              40.00945277777778
-            ],
-            [
-              116.3439625,
-              40.00945277777778
-            ],
-            [
-              116.3439625,
-              40.008425
-            ],
-            [
-              116.3434125,
-              40.008425
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0002",
-      "properties": {
-        "id": "BLDG-0002",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.266
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3434125,
-              40.01150833333333
-            ],
-            [
-              116.3434125,
-              40.01253611111111
-            ],
-            [
-              116.3439625,
-              40.01253611111111
-            ],
-            [
-              116.3439625,
-              40.01150833333333
-            ],
-            [
-              116.3434125,
-              40.01150833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0003",
-      "properties": {
-        "id": "BLDG-0003",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.027
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3434125,
-              40.01459166666667
-            ],
-            [
-              116.3434125,
-              40.01561944444445
-            ],
-            [
-              116.3439625,
-              40.01561944444445
-            ],
-            [
-              116.3439625,
-              40.01459166666667
-            ],
-            [
-              116.3434125,
-              40.01459166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0004",
-      "properties": {
-        "id": "BLDG-0004",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.789
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3434125,
-              40.017675000000004
-            ],
-            [
-              116.3434125,
-              40.01870277777778
-            ],
-            [
-              116.3439625,
-              40.01870277777778
-            ],
-            [
-              116.3439625,
-              40.017675000000004
-            ],
-            [
-              116.3434125,
-              40.017675000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0005",
-      "properties": {
-        "id": "BLDG-0005",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.551
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3434125,
-              40.02075833333333
-            ],
-            [
-              116.3434125,
-              40.02178611111111
-            ],
-            [
-              116.3439625,
-              40.02178611111111
-            ],
-            [
-              116.3439625,
-              40.02075833333333
-            ],
-            [
-              116.3434125,
-              40.02075833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0006",
-      "properties": {
-        "id": "BLDG-0006",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.312
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3434125,
-              40.02384166666667
-            ],
-            [
-              116.3434125,
-              40.02486944444445
-            ],
-            [
-              116.3439625,
-              40.02486944444445
-            ],
-            [
-              116.3439625,
-              40.02384166666667
-            ],
-            [
-              116.3434125,
-              40.02384166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0007",
-      "properties": {
-        "id": "BLDG-0007",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.502
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34478750000001,
-              40.008425
-            ],
-            [
-              116.34478750000001,
-              40.00945277777778
-            ],
-            [
-              116.34533750000001,
-              40.00945277777778
-            ],
-            [
-              116.34533750000001,
-              40.008425
-            ],
-            [
-              116.34478750000001,
-              40.008425
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0008",
-      "properties": {
-        "id": "BLDG-0008",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.264
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34478750000001,
-              40.01150833333333
-            ],
-            [
-              116.34478750000001,
-              40.01253611111111
-            ],
-            [
-              116.34533750000001,
-              40.01253611111111
-            ],
-            [
-              116.34533750000001,
-              40.01150833333333
-            ],
-            [
-              116.34478750000001,
-              40.01150833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0009",
-      "properties": {
-        "id": "BLDG-0009",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.026
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34478750000001,
-              40.01459166666667
-            ],
-            [
-              116.34478750000001,
-              40.01561944444445
-            ],
-            [
-              116.34533750000001,
-              40.01561944444445
-            ],
-            [
-              116.34533750000001,
-              40.01459166666667
-            ],
-            [
-              116.34478750000001,
-              40.01459166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0010",
-      "properties": {
-        "id": "BLDG-0010",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.787
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34478750000001,
-              40.017675000000004
-            ],
-            [
-              116.34478750000001,
-              40.01870277777778
-            ],
-            [
-              116.34533750000001,
-              40.01870277777778
-            ],
-            [
-              116.34533750000001,
-              40.017675000000004
-            ],
-            [
-              116.34478750000001,
-              40.017675000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0011",
-      "properties": {
-        "id": "BLDG-0011",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.549
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34478750000001,
-              40.02075833333333
-            ],
-            [
-              116.34478750000001,
-              40.02178611111111
-            ],
-            [
-              116.34533750000001,
-              40.02178611111111
-            ],
-            [
-              116.34533750000001,
-              40.02075833333333
-            ],
-            [
-              116.34478750000001,
-              40.02075833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0012",
-      "properties": {
-        "id": "BLDG-0012",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.311
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34478750000001,
-              40.02384166666667
-            ],
-            [
-              116.34478750000001,
-              40.02486944444445
-            ],
-            [
-              116.34533750000001,
-              40.02486944444445
-            ],
-            [
-              116.34533750000001,
-              40.02384166666667
-            ],
-            [
-              116.34478750000001,
-              40.02384166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0013",
-      "properties": {
-        "id": "BLDG-0013",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.501
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3461625,
-              40.008425
-            ],
-            [
-              116.3461625,
-              40.00945277777778
-            ],
-            [
-              116.34671250000001,
-              40.00945277777778
-            ],
-            [
-              116.34671250000001,
-              40.008425
-            ],
-            [
-              116.3461625,
-              40.008425
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0014",
-      "properties": {
-        "id": "BLDG-0014",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.262
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3461625,
-              40.01150833333333
-            ],
-            [
-              116.3461625,
-              40.01253611111111
-            ],
-            [
-              116.34671250000001,
-              40.01253611111111
-            ],
-            [
-              116.34671250000001,
-              40.01150833333333
-            ],
-            [
-              116.3461625,
-              40.01150833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0015",
-      "properties": {
-        "id": "BLDG-0015",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.024
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3461625,
-              40.01459166666667
-            ],
-            [
-              116.3461625,
-              40.01561944444445
-            ],
-            [
-              116.34671250000001,
-              40.01561944444445
-            ],
-            [
-              116.34671250000001,
-              40.01459166666667
-            ],
-            [
-              116.3461625,
-              40.01459166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0016",
-      "properties": {
-        "id": "BLDG-0016",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.786
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3461625,
-              40.017675000000004
-            ],
-            [
-              116.3461625,
-              40.01870277777778
-            ],
-            [
-              116.34671250000001,
-              40.01870277777778
-            ],
-            [
-              116.34671250000001,
-              40.017675000000004
-            ],
-            [
-              116.3461625,
-              40.017675000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0017",
-      "properties": {
-        "id": "BLDG-0017",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.547
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3461625,
-              40.02075833333333
-            ],
-            [
-              116.3461625,
-              40.02178611111111
-            ],
-            [
-              116.34671250000001,
-              40.02178611111111
-            ],
-            [
-              116.34671250000001,
-              40.02075833333333
-            ],
-            [
-              116.3461625,
-              40.02075833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0018",
-      "properties": {
-        "id": "BLDG-0018",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.309
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3461625,
-              40.02384166666667
-            ],
-            [
-              116.3461625,
-              40.02486944444445
-            ],
-            [
-              116.34671250000001,
-              40.02486944444445
-            ],
-            [
-              116.34671250000001,
-              40.02384166666667
-            ],
-            [
-              116.3461625,
-              40.02384166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0019",
-      "properties": {
-        "id": "BLDG-0019",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.499
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3475375,
-              40.008425
-            ],
-            [
-              116.3475375,
-              40.00945277777778
-            ],
-            [
-              116.3480875,
-              40.00945277777778
-            ],
-            [
-              116.3480875,
-              40.008425
-            ],
-            [
-              116.3475375,
-              40.008425
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0020",
-      "properties": {
-        "id": "BLDG-0020",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.26
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3475375,
-              40.01150833333333
-            ],
-            [
-              116.3475375,
-              40.01253611111111
-            ],
-            [
-              116.3480875,
-              40.01253611111111
-            ],
-            [
-              116.3480875,
-              40.01150833333333
-            ],
-            [
-              116.3475375,
-              40.01150833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0021",
-      "properties": {
-        "id": "BLDG-0021",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.022
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3475375,
-              40.01459166666667
-            ],
-            [
-              116.3475375,
-              40.01561944444445
-            ],
-            [
-              116.3480875,
-              40.01561944444445
-            ],
-            [
-              116.3480875,
-              40.01459166666667
-            ],
-            [
-              116.3475375,
-              40.01459166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0022",
-      "properties": {
-        "id": "BLDG-0022",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.784
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3475375,
-              40.017675000000004
-            ],
-            [
-              116.3475375,
-              40.01870277777778
-            ],
-            [
-              116.3480875,
-              40.01870277777778
-            ],
-            [
-              116.3480875,
-              40.017675000000004
-            ],
-            [
-              116.3475375,
-              40.017675000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0023",
-      "properties": {
-        "id": "BLDG-0023",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.545
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3475375,
-              40.02075833333333
-            ],
-            [
-              116.3475375,
-              40.02178611111111
-            ],
-            [
-              116.3480875,
-              40.02178611111111
-            ],
-            [
-              116.3480875,
-              40.02075833333333
-            ],
-            [
-              116.3475375,
-              40.02075833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0024",
-      "properties": {
-        "id": "BLDG-0024",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.307
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3475375,
-              40.02384166666667
-            ],
-            [
-              116.3475375,
-              40.02486944444445
-            ],
-            [
-              116.3480875,
-              40.02486944444445
-            ],
-            [
-              116.3480875,
-              40.02384166666667
-            ],
-            [
-              116.3475375,
-              40.02384166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0025",
-      "properties": {
-        "id": "BLDG-0025",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.497
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3489125,
-              40.008425
-            ],
-            [
-              116.3489125,
-              40.00945277777778
-            ],
-            [
-              116.3494625,
-              40.00945277777778
-            ],
-            [
-              116.3494625,
-              40.008425
-            ],
-            [
-              116.3489125,
-              40.008425
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0026",
-      "properties": {
-        "id": "BLDG-0026",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.259
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3489125,
-              40.01150833333333
-            ],
-            [
-              116.3489125,
-              40.01253611111111
-            ],
-            [
-              116.3494625,
-              40.01253611111111
-            ],
-            [
-              116.3494625,
-              40.01150833333333
-            ],
-            [
-              116.3489125,
-              40.01150833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0027",
-      "properties": {
-        "id": "BLDG-0027",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.02
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3489125,
-              40.01459166666667
-            ],
-            [
-              116.3489125,
-              40.01561944444445
-            ],
-            [
-              116.3494625,
-              40.01561944444445
-            ],
-            [
-              116.3494625,
-              40.01459166666667
-            ],
-            [
-              116.3489125,
-              40.01459166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0028",
-      "properties": {
-        "id": "BLDG-0028",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.782
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3489125,
-              40.017675000000004
-            ],
-            [
-              116.3489125,
-              40.01870277777778
-            ],
-            [
-              116.3494625,
-              40.01870277777778
-            ],
-            [
-              116.3494625,
-              40.017675000000004
-            ],
-            [
-              116.3489125,
-              40.017675000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0029",
-      "properties": {
-        "id": "BLDG-0029",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.544
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3489125,
-              40.02075833333333
-            ],
-            [
-              116.3489125,
-              40.02178611111111
-            ],
-            [
-              116.3494625,
-              40.02178611111111
-            ],
-            [
-              116.3494625,
-              40.02075833333333
-            ],
-            [
-              116.3489125,
-              40.02075833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0030",
-      "properties": {
-        "id": "BLDG-0030",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.305
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3489125,
-              40.02384166666667
-            ],
-            [
-              116.3489125,
-              40.02486944444445
-            ],
-            [
-              116.3494625,
-              40.02486944444445
-            ],
-            [
-              116.3494625,
-              40.02384166666667
-            ],
-            [
-              116.3489125,
-              40.02384166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0031",
-      "properties": {
-        "id": "BLDG-0031",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.495
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35028750000001,
-              40.008425
-            ],
-            [
-              116.35028750000001,
-              40.00945277777778
-            ],
-            [
-              116.35083750000001,
-              40.00945277777778
-            ],
-            [
-              116.35083750000001,
-              40.008425
-            ],
-            [
-              116.35028750000001,
-              40.008425
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0032",
-      "properties": {
-        "id": "BLDG-0032",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.257
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35028750000001,
-              40.01150833333333
-            ],
-            [
-              116.35028750000001,
-              40.01253611111111
-            ],
-            [
-              116.35083750000001,
-              40.01253611111111
-            ],
-            [
-              116.35083750000001,
-              40.01150833333333
-            ],
-            [
-              116.35028750000001,
-              40.01150833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0033",
-      "properties": {
-        "id": "BLDG-0033",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.019
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35028750000001,
-              40.01459166666667
-            ],
-            [
-              116.35028750000001,
-              40.01561944444445
-            ],
-            [
-              116.35083750000001,
-              40.01561944444445
-            ],
-            [
-              116.35083750000001,
-              40.01459166666667
-            ],
-            [
-              116.35028750000001,
-              40.01459166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0034",
-      "properties": {
-        "id": "BLDG-0034",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.78
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35028750000001,
-              40.017675000000004
-            ],
-            [
-              116.35028750000001,
-              40.01870277777778
-            ],
-            [
-              116.35083750000001,
-              40.01870277777778
-            ],
-            [
-              116.35083750000001,
-              40.017675000000004
-            ],
-            [
-              116.35028750000001,
-              40.017675000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0035",
-      "properties": {
-        "id": "BLDG-0035",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.542
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35028750000001,
-              40.02075833333333
-            ],
-            [
-              116.35028750000001,
-              40.02178611111111
-            ],
-            [
-              116.35083750000001,
-              40.02178611111111
-            ],
-            [
-              116.35083750000001,
-              40.02075833333333
-            ],
-            [
-              116.35028750000001,
-              40.02075833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0036",
-      "properties": {
-        "id": "BLDG-0036",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.304
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35028750000001,
-              40.02384166666667
-            ],
-            [
-              116.35028750000001,
-              40.02486944444445
-            ],
-            [
-              116.35083750000001,
-              40.02486944444445
-            ],
-            [
-              116.35083750000001,
-              40.02384166666667
-            ],
-            [
-              116.35028750000001,
-              40.02384166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0037",
-      "properties": {
-        "id": "BLDG-0037",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.494
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3516625,
-              40.008425
-            ],
-            [
-              116.3516625,
-              40.00945277777778
-            ],
-            [
-              116.35221250000001,
-              40.00945277777778
-            ],
-            [
-              116.35221250000001,
-              40.008425
-            ],
-            [
-              116.3516625,
-              40.008425
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0038",
-      "properties": {
-        "id": "BLDG-0038",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.255
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3516625,
-              40.01150833333333
-            ],
-            [
-              116.3516625,
-              40.01253611111111
-            ],
-            [
-              116.35221250000001,
-              40.01253611111111
-            ],
-            [
-              116.35221250000001,
-              40.01150833333333
-            ],
-            [
-              116.3516625,
-              40.01150833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0039",
-      "properties": {
-        "id": "BLDG-0039",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.017
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3516625,
-              40.01459166666667
-            ],
-            [
-              116.3516625,
-              40.01561944444445
-            ],
-            [
-              116.35221250000001,
-              40.01561944444445
-            ],
-            [
-              116.35221250000001,
-              40.01459166666667
-            ],
-            [
-              116.3516625,
-              40.01459166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0040",
-      "properties": {
-        "id": "BLDG-0040",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.779
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3516625,
-              40.017675000000004
-            ],
-            [
-              116.3516625,
-              40.01870277777778
-            ],
-            [
-              116.35221250000001,
-              40.01870277777778
-            ],
-            [
-              116.35221250000001,
-              40.017675000000004
-            ],
-            [
-              116.3516625,
-              40.017675000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0041",
-      "properties": {
-        "id": "BLDG-0041",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.54
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3516625,
-              40.02075833333333
-            ],
-            [
-              116.3516625,
-              40.02178611111111
-            ],
-            [
-              116.35221250000001,
-              40.02178611111111
-            ],
-            [
-              116.35221250000001,
-              40.02075833333333
-            ],
-            [
-              116.3516625,
-              40.02075833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0042",
-      "properties": {
-        "id": "BLDG-0042",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.302
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3516625,
-              40.02384166666667
-            ],
-            [
-              116.3516625,
-              40.02486944444445
-            ],
-            [
-              116.35221250000001,
-              40.02486944444445
-            ],
-            [
-              116.35221250000001,
-              40.02384166666667
-            ],
-            [
-              116.3516625,
-              40.02384166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0043",
-      "properties": {
-        "id": "BLDG-0043",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.492
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3530375,
-              40.008425
-            ],
-            [
-              116.3530375,
-              40.00945277777778
-            ],
-            [
-              116.3535875,
-              40.00945277777778
-            ],
-            [
-              116.3535875,
-              40.008425
-            ],
-            [
-              116.3530375,
-              40.008425
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0044",
-      "properties": {
-        "id": "BLDG-0044",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.254
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3530375,
-              40.01150833333333
-            ],
-            [
-              116.3530375,
-              40.01253611111111
-            ],
-            [
-              116.3535875,
-              40.01253611111111
-            ],
-            [
-              116.3535875,
-              40.01150833333333
-            ],
-            [
-              116.3530375,
-              40.01150833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0045",
-      "properties": {
-        "id": "BLDG-0045",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5359.015
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3530375,
-              40.01459166666667
-            ],
-            [
-              116.3530375,
-              40.01561944444445
-            ],
-            [
-              116.3535875,
-              40.01561944444445
-            ],
-            [
-              116.3535875,
-              40.01459166666667
-            ],
-            [
-              116.3530375,
-              40.01459166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0046",
-      "properties": {
-        "id": "BLDG-0046",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.777
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3530375,
-              40.017675000000004
-            ],
-            [
-              116.3530375,
-              40.01870277777778
-            ],
-            [
-              116.3535875,
-              40.01870277777778
-            ],
-            [
-              116.3535875,
-              40.017675000000004
-            ],
-            [
-              116.3530375,
-              40.017675000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0047",
-      "properties": {
-        "id": "BLDG-0047",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.539
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3530375,
-              40.02075833333333
-            ],
-            [
-              116.3530375,
-              40.02178611111111
-            ],
-            [
-              116.3535875,
-              40.02178611111111
-            ],
-            [
-              116.3535875,
-              40.02075833333333
-            ],
-            [
-              116.3530375,
-              40.02075833333333
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0048",
-      "properties": {
-        "id": "BLDG-0048",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "众智园AI研发建筑",
-        "area_sqm_declared": 5358.3
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3530375,
-              40.02384166666667
-            ],
-            [
-              116.3530375,
-              40.02486944444445
-            ],
-            [
-              116.3535875,
-              40.02486944444445
-            ],
-            [
-              116.3535875,
-              40.02384166666667
-            ],
-            [
-              116.3530375,
-              40.02384166666667
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "BLDG-0049",
       "properties": {
         "id": "BLDG-0049",
@@ -2088,47 +120,6 @@
             [
               116.34255,
               39.98925
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0052",
-      "properties": {
-        "id": "BLDG-0052",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI原点创新建筑",
-        "area_sqm_declared": 6209.422
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34255,
-              39.991749999999996
-            ],
-            [
-              116.34255,
-              39.99258333333333
-            ],
-            [
-              116.34333571428571,
-              39.99258333333333
-            ],
-            [
-              116.34333571428571,
-              39.991749999999996
-            ],
-            [
-              116.34255,
-              39.991749999999996
             ]
           ]
         ]
@@ -2259,47 +250,6 @@
     },
     {
       "type": "Feature",
-      "id": "BLDG-0056",
-      "properties": {
-        "id": "BLDG-0056",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI原点创新建筑",
-        "area_sqm_declared": 6209.419
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34438333333333,
-              39.991749999999996
-            ],
-            [
-              116.34438333333333,
-              39.99258333333333
-            ],
-            [
-              116.34516904761904,
-              39.99258333333333
-            ],
-            [
-              116.34516904761904,
-              39.991749999999996
-            ],
-            [
-              116.34438333333333,
-              39.991749999999996
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "BLDG-0057",
       "properties": {
         "id": "BLDG-0057",
@@ -2416,47 +366,6 @@
             [
               116.34621666666666,
               39.98925
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0060",
-      "properties": {
-        "id": "BLDG-0060",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI原点创新建筑",
-        "area_sqm_declared": 6209.417
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34621666666666,
-              39.991749999999996
-            ],
-            [
-              116.34621666666666,
-              39.99258333333333
-            ],
-            [
-              116.34700238095238,
-              39.99258333333333
-            ],
-            [
-              116.34700238095238,
-              39.991749999999996
-            ],
-            [
-              116.34621666666666,
-              39.991749999999996
             ]
           ]
         ]
@@ -2587,47 +496,6 @@
     },
     {
       "type": "Feature",
-      "id": "BLDG-0064",
-      "properties": {
-        "id": "BLDG-0064",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI原点创新建筑",
-        "area_sqm_declared": 6209.414
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34805,
-              39.991749999999996
-            ],
-            [
-              116.34805,
-              39.99258333333333
-            ],
-            [
-              116.34883571428571,
-              39.99258333333333
-            ],
-            [
-              116.34883571428571,
-              39.991749999999996
-            ],
-            [
-              116.34805,
-              39.991749999999996
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "BLDG-0065",
       "properties": {
         "id": "BLDG-0065",
@@ -2751,47 +619,6 @@
     },
     {
       "type": "Feature",
-      "id": "BLDG-0068",
-      "properties": {
-        "id": "BLDG-0068",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI原点创新建筑",
-        "area_sqm_declared": 6209.411
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34988333333332,
-              39.991749999999996
-            ],
-            [
-              116.34988333333332,
-              39.99258333333333
-            ],
-            [
-              116.35066904761904,
-              39.99258333333333
-            ],
-            [
-              116.35066904761904,
-              39.991749999999996
-            ],
-            [
-              116.34988333333332,
-              39.991749999999996
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "BLDG-0069",
       "properties": {
         "id": "BLDG-0069",
@@ -2908,47 +735,6 @@
             [
               116.35171666666666,
               39.98925
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0072",
-      "properties": {
-        "id": "BLDG-0072",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI原点创新建筑",
-        "area_sqm_declared": 6209.409
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35171666666666,
-              39.991749999999996
-            ],
-            [
-              116.35171666666666,
-              39.99258333333333
-            ],
-            [
-              116.35250238095237,
-              39.99258333333333
-            ],
-            [
-              116.35250238095237,
-              39.991749999999996
-            ],
-            [
-              116.35171666666666,
-              39.991749999999996
             ]
           ]
         ]
@@ -4391,170 +2177,6 @@
     },
     {
       "type": "Feature",
-      "id": "BLDG-0108",
-      "properties": {
-        "id": "BLDG-0108",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "retail",
-        "name_zh": "商业服务建筑",
-        "area_sqm_declared": 4551.529
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35,
-              40.0
-            ],
-            [
-              116.35,
-              40.0006
-            ],
-            [
-              116.35079999999999,
-              40.0006
-            ],
-            [
-              116.35079999999999,
-              40.0
-            ],
-            [
-              116.35,
-              40.0
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0109",
-      "properties": {
-        "id": "BLDG-0109",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "retail",
-        "name_zh": "商业服务建筑",
-        "area_sqm_declared": 4551.527
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.352,
-              40.0
-            ],
-            [
-              116.352,
-              40.0006
-            ],
-            [
-              116.3528,
-              40.0006
-            ],
-            [
-              116.3528,
-              40.0
-            ],
-            [
-              116.352,
-              40.0
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0110",
-      "properties": {
-        "id": "BLDG-0110",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "retail",
-        "name_zh": "商业服务建筑",
-        "area_sqm_declared": 2345.567
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.354,
-              40.01
-            ],
-            [
-              116.354,
-              40.0106
-            ],
-            [
-              116.3544287671233,
-              40.0106
-            ],
-            [
-              116.35439589041096,
-              40.01
-            ],
-            [
-              116.354,
-              40.01
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BLDG-0111",
-      "properties": {
-        "id": "BLDG-0111",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "retail",
-        "name_zh": "商业服务建筑",
-        "area_sqm_declared": 4550.212
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.354,
-              40.02
-            ],
-            [
-              116.354,
-              40.0206
-            ],
-            [
-              116.3548,
-              40.0206
-            ],
-            [
-              116.3548,
-              40.02
-            ],
-            [
-              116.354,
-              40.02
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "BLDG-0112",
       "properties": {
         "id": "BLDG-0112",
@@ -5170,6 +2792,2384 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-0001",
+      "properties": {
+        "id": "BLDG-0001",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342725,
+              40.00028611111111
+            ],
+            [
+              116.343275,
+              40.00028611111111
+            ],
+            [
+              116.343275,
+              40.00131388888889
+            ],
+            [
+              116.342725,
+              40.00131388888889
+            ],
+            [
+              116.342725,
+              40.00028611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0002",
+      "properties": {
+        "id": "BLDG-0002",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343525,
+              39.99948611111111
+            ],
+            [
+              116.344075,
+              39.99948611111111
+            ],
+            [
+              116.344075,
+              40.00051388888889
+            ],
+            [
+              116.343525,
+              40.00051388888889
+            ],
+            [
+              116.343525,
+              39.99948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0003",
+      "properties": {
+        "id": "BLDG-0003",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342725,
+              39.99868611111111
+            ],
+            [
+              116.343275,
+              39.99868611111111
+            ],
+            [
+              116.343275,
+              39.99971388888889
+            ],
+            [
+              116.342725,
+              39.99971388888889
+            ],
+            [
+              116.342725,
+              39.99868611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0004",
+      "properties": {
+        "id": "BLDG-0004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341925,
+              39.99948611111111
+            ],
+            [
+              116.34247500000001,
+              39.99948611111111
+            ],
+            [
+              116.34247500000001,
+              40.00051388888889
+            ],
+            [
+              116.341925,
+              40.00051388888889
+            ],
+            [
+              116.341925,
+              39.99948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0005",
+      "properties": {
+        "id": "BLDG-0005",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343125,
+              39.99988611111111
+            ],
+            [
+              116.343675,
+              39.99988611111111
+            ],
+            [
+              116.343675,
+              40.00091388888889
+            ],
+            [
+              116.343125,
+              40.00091388888889
+            ],
+            [
+              116.343125,
+              39.99988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0006",
+      "properties": {
+        "id": "BLDG-0006",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342325,
+              39.99988611111111
+            ],
+            [
+              116.342875,
+              39.99988611111111
+            ],
+            [
+              116.342875,
+              40.00091388888889
+            ],
+            [
+              116.342325,
+              40.00091388888889
+            ],
+            [
+              116.342325,
+              39.99988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0007",
+      "properties": {
+        "id": "BLDG-0007",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343125,
+              39.99908611111111
+            ],
+            [
+              116.343675,
+              39.99908611111111
+            ],
+            [
+              116.343675,
+              40.00011388888889
+            ],
+            [
+              116.343125,
+              40.00011388888889
+            ],
+            [
+              116.343125,
+              39.99908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0008",
+      "properties": {
+        "id": "BLDG-0008",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342325,
+              39.99908611111111
+            ],
+            [
+              116.342875,
+              39.99908611111111
+            ],
+            [
+              116.342875,
+              40.00011388888889
+            ],
+            [
+              116.342325,
+              40.00011388888889
+            ],
+            [
+              116.342325,
+              39.99908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0009",
+      "properties": {
+        "id": "BLDG-0009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34672499999999,
+              40.00028611111111
+            ],
+            [
+              116.347275,
+              40.00028611111111
+            ],
+            [
+              116.347275,
+              40.00131388888889
+            ],
+            [
+              116.34672499999999,
+              40.00131388888889
+            ],
+            [
+              116.34672499999999,
+              40.00028611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0010",
+      "properties": {
+        "id": "BLDG-0010",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34752499999999,
+              39.99948611111111
+            ],
+            [
+              116.348075,
+              39.99948611111111
+            ],
+            [
+              116.348075,
+              40.00051388888889
+            ],
+            [
+              116.34752499999999,
+              40.00051388888889
+            ],
+            [
+              116.34752499999999,
+              39.99948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0011",
+      "properties": {
+        "id": "BLDG-0011",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34672499999999,
+              39.99868611111111
+            ],
+            [
+              116.347275,
+              39.99868611111111
+            ],
+            [
+              116.347275,
+              39.99971388888889
+            ],
+            [
+              116.34672499999999,
+              39.99971388888889
+            ],
+            [
+              116.34672499999999,
+              39.99868611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0012",
+      "properties": {
+        "id": "BLDG-0012",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345925,
+              39.99948611111111
+            ],
+            [
+              116.346475,
+              39.99948611111111
+            ],
+            [
+              116.346475,
+              40.00051388888889
+            ],
+            [
+              116.345925,
+              40.00051388888889
+            ],
+            [
+              116.345925,
+              39.99948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0013",
+      "properties": {
+        "id": "BLDG-0013",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34712499999999,
+              39.99988611111111
+            ],
+            [
+              116.347675,
+              39.99988611111111
+            ],
+            [
+              116.347675,
+              40.00091388888889
+            ],
+            [
+              116.34712499999999,
+              40.00091388888889
+            ],
+            [
+              116.34712499999999,
+              39.99988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0014",
+      "properties": {
+        "id": "BLDG-0014",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346325,
+              39.99988611111111
+            ],
+            [
+              116.346875,
+              39.99988611111111
+            ],
+            [
+              116.346875,
+              40.00091388888889
+            ],
+            [
+              116.346325,
+              40.00091388888889
+            ],
+            [
+              116.346325,
+              39.99988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0015",
+      "properties": {
+        "id": "BLDG-0015",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34712499999999,
+              39.99908611111111
+            ],
+            [
+              116.347675,
+              39.99908611111111
+            ],
+            [
+              116.347675,
+              40.00011388888889
+            ],
+            [
+              116.34712499999999,
+              40.00011388888889
+            ],
+            [
+              116.34712499999999,
+              39.99908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0016",
+      "properties": {
+        "id": "BLDG-0016",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346325,
+              39.99908611111111
+            ],
+            [
+              116.346875,
+              39.99908611111111
+            ],
+            [
+              116.346875,
+              40.00011388888889
+            ],
+            [
+              116.346325,
+              40.00011388888889
+            ],
+            [
+              116.346325,
+              39.99908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0017",
+      "properties": {
+        "id": "BLDG-0017",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350725,
+              40.00028611111111
+            ],
+            [
+              116.351275,
+              40.00028611111111
+            ],
+            [
+              116.351275,
+              40.00131388888889
+            ],
+            [
+              116.350725,
+              40.00131388888889
+            ],
+            [
+              116.350725,
+              40.00028611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0018",
+      "properties": {
+        "id": "BLDG-0018",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351525,
+              39.99948611111111
+            ],
+            [
+              116.352075,
+              39.99948611111111
+            ],
+            [
+              116.352075,
+              40.00051388888889
+            ],
+            [
+              116.351525,
+              40.00051388888889
+            ],
+            [
+              116.351525,
+              39.99948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0019",
+      "properties": {
+        "id": "BLDG-0019",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350725,
+              39.99868611111111
+            ],
+            [
+              116.351275,
+              39.99868611111111
+            ],
+            [
+              116.351275,
+              39.99971388888889
+            ],
+            [
+              116.350725,
+              39.99971388888889
+            ],
+            [
+              116.350725,
+              39.99868611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0020",
+      "properties": {
+        "id": "BLDG-0020",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349925,
+              39.99948611111111
+            ],
+            [
+              116.350475,
+              39.99948611111111
+            ],
+            [
+              116.350475,
+              40.00051388888889
+            ],
+            [
+              116.349925,
+              40.00051388888889
+            ],
+            [
+              116.349925,
+              39.99948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0021",
+      "properties": {
+        "id": "BLDG-0021",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351125,
+              39.99988611111111
+            ],
+            [
+              116.351675,
+              39.99988611111111
+            ],
+            [
+              116.351675,
+              40.00091388888889
+            ],
+            [
+              116.351125,
+              40.00091388888889
+            ],
+            [
+              116.351125,
+              39.99988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0022",
+      "properties": {
+        "id": "BLDG-0022",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350325,
+              39.99988611111111
+            ],
+            [
+              116.350875,
+              39.99988611111111
+            ],
+            [
+              116.350875,
+              40.00091388888889
+            ],
+            [
+              116.350325,
+              40.00091388888889
+            ],
+            [
+              116.350325,
+              39.99988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0023",
+      "properties": {
+        "id": "BLDG-0023",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351125,
+              39.99908611111111
+            ],
+            [
+              116.351675,
+              39.99908611111111
+            ],
+            [
+              116.351675,
+              40.00011388888889
+            ],
+            [
+              116.351125,
+              40.00011388888889
+            ],
+            [
+              116.351125,
+              39.99908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0024",
+      "properties": {
+        "id": "BLDG-0024",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350325,
+              39.99908611111111
+            ],
+            [
+              116.350875,
+              39.99908611111111
+            ],
+            [
+              116.350875,
+              40.00011388888889
+            ],
+            [
+              116.350325,
+              40.00011388888889
+            ],
+            [
+              116.350325,
+              39.99908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0025",
+      "properties": {
+        "id": "BLDG-0025",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342725,
+              40.01028611111111
+            ],
+            [
+              116.343275,
+              40.01028611111111
+            ],
+            [
+              116.343275,
+              40.011313888888886
+            ],
+            [
+              116.342725,
+              40.011313888888886
+            ],
+            [
+              116.342725,
+              40.01028611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0026",
+      "properties": {
+        "id": "BLDG-0026",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343525,
+              40.00948611111111
+            ],
+            [
+              116.344075,
+              40.00948611111111
+            ],
+            [
+              116.344075,
+              40.01051388888889
+            ],
+            [
+              116.343525,
+              40.01051388888889
+            ],
+            [
+              116.343525,
+              40.00948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0027",
+      "properties": {
+        "id": "BLDG-0027",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342725,
+              40.00868611111111
+            ],
+            [
+              116.343275,
+              40.00868611111111
+            ],
+            [
+              116.343275,
+              40.00971388888889
+            ],
+            [
+              116.342725,
+              40.00971388888889
+            ],
+            [
+              116.342725,
+              40.00868611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0028",
+      "properties": {
+        "id": "BLDG-0028",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341925,
+              40.00948611111111
+            ],
+            [
+              116.34247500000001,
+              40.00948611111111
+            ],
+            [
+              116.34247500000001,
+              40.01051388888889
+            ],
+            [
+              116.341925,
+              40.01051388888889
+            ],
+            [
+              116.341925,
+              40.00948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0029",
+      "properties": {
+        "id": "BLDG-0029",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343125,
+              40.00988611111111
+            ],
+            [
+              116.343675,
+              40.00988611111111
+            ],
+            [
+              116.343675,
+              40.010913888888886
+            ],
+            [
+              116.343125,
+              40.010913888888886
+            ],
+            [
+              116.343125,
+              40.00988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0030",
+      "properties": {
+        "id": "BLDG-0030",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342325,
+              40.00988611111111
+            ],
+            [
+              116.342875,
+              40.00988611111111
+            ],
+            [
+              116.342875,
+              40.010913888888886
+            ],
+            [
+              116.342325,
+              40.010913888888886
+            ],
+            [
+              116.342325,
+              40.00988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0031",
+      "properties": {
+        "id": "BLDG-0031",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343125,
+              40.00908611111111
+            ],
+            [
+              116.343675,
+              40.00908611111111
+            ],
+            [
+              116.343675,
+              40.01011388888889
+            ],
+            [
+              116.343125,
+              40.01011388888889
+            ],
+            [
+              116.343125,
+              40.00908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0032",
+      "properties": {
+        "id": "BLDG-0032",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342325,
+              40.00908611111111
+            ],
+            [
+              116.342875,
+              40.00908611111111
+            ],
+            [
+              116.342875,
+              40.01011388888889
+            ],
+            [
+              116.342325,
+              40.01011388888889
+            ],
+            [
+              116.342325,
+              40.00908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0033",
+      "properties": {
+        "id": "BLDG-0033",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34672499999999,
+              40.01028611111111
+            ],
+            [
+              116.347275,
+              40.01028611111111
+            ],
+            [
+              116.347275,
+              40.011313888888886
+            ],
+            [
+              116.34672499999999,
+              40.011313888888886
+            ],
+            [
+              116.34672499999999,
+              40.01028611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0034",
+      "properties": {
+        "id": "BLDG-0034",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34752499999999,
+              40.00948611111111
+            ],
+            [
+              116.348075,
+              40.00948611111111
+            ],
+            [
+              116.348075,
+              40.01051388888889
+            ],
+            [
+              116.34752499999999,
+              40.01051388888889
+            ],
+            [
+              116.34752499999999,
+              40.00948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0035",
+      "properties": {
+        "id": "BLDG-0035",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34672499999999,
+              40.00868611111111
+            ],
+            [
+              116.347275,
+              40.00868611111111
+            ],
+            [
+              116.347275,
+              40.00971388888889
+            ],
+            [
+              116.34672499999999,
+              40.00971388888889
+            ],
+            [
+              116.34672499999999,
+              40.00868611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0036",
+      "properties": {
+        "id": "BLDG-0036",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345925,
+              40.00948611111111
+            ],
+            [
+              116.346475,
+              40.00948611111111
+            ],
+            [
+              116.346475,
+              40.01051388888889
+            ],
+            [
+              116.345925,
+              40.01051388888889
+            ],
+            [
+              116.345925,
+              40.00948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0037",
+      "properties": {
+        "id": "BLDG-0037",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34712499999999,
+              40.00988611111111
+            ],
+            [
+              116.347675,
+              40.00988611111111
+            ],
+            [
+              116.347675,
+              40.010913888888886
+            ],
+            [
+              116.34712499999999,
+              40.010913888888886
+            ],
+            [
+              116.34712499999999,
+              40.00988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0038",
+      "properties": {
+        "id": "BLDG-0038",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346325,
+              40.00988611111111
+            ],
+            [
+              116.346875,
+              40.00988611111111
+            ],
+            [
+              116.346875,
+              40.010913888888886
+            ],
+            [
+              116.346325,
+              40.010913888888886
+            ],
+            [
+              116.346325,
+              40.00988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0039",
+      "properties": {
+        "id": "BLDG-0039",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34712499999999,
+              40.00908611111111
+            ],
+            [
+              116.347675,
+              40.00908611111111
+            ],
+            [
+              116.347675,
+              40.01011388888889
+            ],
+            [
+              116.34712499999999,
+              40.01011388888889
+            ],
+            [
+              116.34712499999999,
+              40.00908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0040",
+      "properties": {
+        "id": "BLDG-0040",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346325,
+              40.00908611111111
+            ],
+            [
+              116.346875,
+              40.00908611111111
+            ],
+            [
+              116.346875,
+              40.01011388888889
+            ],
+            [
+              116.346325,
+              40.01011388888889
+            ],
+            [
+              116.346325,
+              40.00908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0041",
+      "properties": {
+        "id": "BLDG-0041",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350725,
+              40.01028611111111
+            ],
+            [
+              116.351275,
+              40.01028611111111
+            ],
+            [
+              116.351275,
+              40.011313888888886
+            ],
+            [
+              116.350725,
+              40.011313888888886
+            ],
+            [
+              116.350725,
+              40.01028611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0042",
+      "properties": {
+        "id": "BLDG-0042",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351525,
+              40.00948611111111
+            ],
+            [
+              116.352075,
+              40.00948611111111
+            ],
+            [
+              116.352075,
+              40.01051388888889
+            ],
+            [
+              116.351525,
+              40.01051388888889
+            ],
+            [
+              116.351525,
+              40.00948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0043",
+      "properties": {
+        "id": "BLDG-0043",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350725,
+              40.00868611111111
+            ],
+            [
+              116.351275,
+              40.00868611111111
+            ],
+            [
+              116.351275,
+              40.00971388888889
+            ],
+            [
+              116.350725,
+              40.00971388888889
+            ],
+            [
+              116.350725,
+              40.00868611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0044",
+      "properties": {
+        "id": "BLDG-0044",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349925,
+              40.00948611111111
+            ],
+            [
+              116.350475,
+              40.00948611111111
+            ],
+            [
+              116.350475,
+              40.01051388888889
+            ],
+            [
+              116.349925,
+              40.01051388888889
+            ],
+            [
+              116.349925,
+              40.00948611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0045",
+      "properties": {
+        "id": "BLDG-0045",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351125,
+              40.00988611111111
+            ],
+            [
+              116.351675,
+              40.00988611111111
+            ],
+            [
+              116.351675,
+              40.010913888888886
+            ],
+            [
+              116.351125,
+              40.010913888888886
+            ],
+            [
+              116.351125,
+              40.00988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0046",
+      "properties": {
+        "id": "BLDG-0046",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350325,
+              40.00988611111111
+            ],
+            [
+              116.350875,
+              40.00988611111111
+            ],
+            [
+              116.350875,
+              40.010913888888886
+            ],
+            [
+              116.350325,
+              40.010913888888886
+            ],
+            [
+              116.350325,
+              40.00988611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0047",
+      "properties": {
+        "id": "BLDG-0047",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351125,
+              40.00908611111111
+            ],
+            [
+              116.351675,
+              40.00908611111111
+            ],
+            [
+              116.351675,
+              40.01011388888889
+            ],
+            [
+              116.351125,
+              40.01011388888889
+            ],
+            [
+              116.351125,
+              40.00908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0048",
+      "properties": {
+        "id": "BLDG-0048",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园AI研发建筑",
+        "area_sqm_declared": 5333.396
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350325,
+              40.00908611111111
+            ],
+            [
+              116.350875,
+              40.00908611111111
+            ],
+            [
+              116.350875,
+              40.01011388888889
+            ],
+            [
+              116.350325,
+              40.01011388888889
+            ],
+            [
+              116.350325,
+              40.00908611111111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0052",
+      "properties": {
+        "id": "BLDG-0052",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "AI原点创新建筑",
+        "area_sqm_declared": 6177.679
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34260714285715,
+              40.00038333333333
+            ],
+            [
+              116.34339285714286,
+              40.00038333333333
+            ],
+            [
+              116.34339285714286,
+              40.001216666666664
+            ],
+            [
+              116.34260714285715,
+              40.001216666666664
+            ],
+            [
+              116.34260714285715,
+              40.00038333333333
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0056",
+      "properties": {
+        "id": "BLDG-0056",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "AI原点创新建筑",
+        "area_sqm_declared": 6177.679
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34340714285715,
+              39.999583333333334
+            ],
+            [
+              116.34419285714286,
+              39.999583333333334
+            ],
+            [
+              116.34419285714286,
+              40.000416666666666
+            ],
+            [
+              116.34340714285715,
+              40.000416666666666
+            ],
+            [
+              116.34340714285715,
+              39.999583333333334
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0060",
+      "properties": {
+        "id": "BLDG-0060",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "AI原点创新建筑",
+        "area_sqm_declared": 6177.679
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34260714285715,
+              39.998783333333336
+            ],
+            [
+              116.34339285714286,
+              39.998783333333336
+            ],
+            [
+              116.34339285714286,
+              39.99961666666667
+            ],
+            [
+              116.34260714285715,
+              39.99961666666667
+            ],
+            [
+              116.34260714285715,
+              39.998783333333336
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0064",
+      "properties": {
+        "id": "BLDG-0064",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "AI原点创新建筑",
+        "area_sqm_declared": 6177.679
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34180714285715,
+              39.999583333333334
+            ],
+            [
+              116.34259285714286,
+              39.999583333333334
+            ],
+            [
+              116.34259285714286,
+              40.000416666666666
+            ],
+            [
+              116.34180714285715,
+              40.000416666666666
+            ],
+            [
+              116.34180714285715,
+              39.999583333333334
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0068",
+      "properties": {
+        "id": "BLDG-0068",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "AI原点创新建筑",
+        "area_sqm_declared": 6177.679
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34300714285715,
+              39.99998333333333
+            ],
+            [
+              116.34379285714286,
+              39.99998333333333
+            ],
+            [
+              116.34379285714286,
+              40.000816666666665
+            ],
+            [
+              116.34300714285715,
+              40.000816666666665
+            ],
+            [
+              116.34300714285715,
+              39.99998333333333
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0072",
+      "properties": {
+        "id": "BLDG-0072",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "AI原点创新建筑",
+        "area_sqm_declared": 6177.679
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34220714285715,
+              39.99998333333333
+            ],
+            [
+              116.34299285714286,
+              39.99998333333333
+            ],
+            [
+              116.34299285714286,
+              40.000816666666665
+            ],
+            [
+              116.34220714285715,
+              40.000816666666665
+            ],
+            [
+              116.34220714285715,
+              39.99998333333333
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0108",
+      "properties": {
+        "id": "BLDG-0108",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "商业服务建筑",
+        "area_sqm_declared": 4528.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343,
+              39.999300000000005
+            ],
+            [
+              116.3438,
+              39.999300000000005
+            ],
+            [
+              116.3438,
+              39.9999
+            ],
+            [
+              116.343,
+              39.9999
+            ],
+            [
+              116.343,
+              39.999300000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0109",
+      "properties": {
+        "id": "BLDG-0109",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "商业服务建筑",
+        "area_sqm_declared": 4528.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3422,
+              39.999300000000005
+            ],
+            [
+              116.343,
+              39.999300000000005
+            ],
+            [
+              116.343,
+              39.9999
+            ],
+            [
+              116.3422,
+              39.9999
+            ],
+            [
+              116.3422,
+              39.999300000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0110",
+      "properties": {
+        "id": "BLDG-0110",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "商业服务建筑",
+        "area_sqm_declared": 2427.251
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34678561643835,
+              40.0005
+            ],
+            [
+              116.34721438356164,
+              40.0005
+            ],
+            [
+              116.34721438356164,
+              40.001099999999994
+            ],
+            [
+              116.34678561643835,
+              40.001099999999994
+            ],
+            [
+              116.34678561643835,
+              40.0005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-0111",
+      "properties": {
+        "id": "BLDG-0111",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "商业服务建筑",
+        "area_sqm_declared": 4528.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3474,
+              39.999700000000004
+            ],
+            [
+              116.34819999999999,
+              39.999700000000004
+            ],
+            [
+              116.34819999999999,
+              40.000299999999996
+            ],
+            [
+              116.3474,
+              40.000299999999996
+            ],
+            [
+              116.3474,
+              39.999700000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "BLDG-0127",
       "properties": {
         "id": "BLDG-0127",
@@ -5179,31 +5179,31 @@
         "geometry_role": "design_proposal",
         "building_type": "cultural",
         "name_zh": "走廊文化公共建筑",
-        "area_sqm_declared": 2844.63
+        "area_sqm_declared": 2830.5
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.344,
-              40.002
+              116.3467,
+              39.99895
             ],
             [
-              116.344,
-              40.002500000000005
+              116.34729999999999,
+              39.99895
             ],
             [
-              116.3446,
-              40.002500000000005
+              116.34729999999999,
+              39.99945
             ],
             [
-              116.3446,
-              40.002
+              116.3467,
+              39.99945
             ],
             [
-              116.344,
-              40.002
+              116.3467,
+              39.99895
             ]
           ]
         ]
@@ -5220,31 +5220,31 @@
         "geometry_role": "design_proposal",
         "building_type": "cultural",
         "name_zh": "走廊文化公共建筑",
-        "area_sqm_declared": 2844.629
+        "area_sqm_declared": 2830.5
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.345,
-              40.002
+              116.3459,
+              39.99975
             ],
             [
-              116.345,
-              40.002500000000005
+              116.34649999999999,
+              39.99975
             ],
             [
-              116.3456,
-              40.002500000000005
+              116.34649999999999,
+              40.00025
             ],
             [
-              116.3456,
-              40.002
+              116.3459,
+              40.00025
             ],
             [
-              116.345,
-              40.002
+              116.3459,
+              39.99975
             ]
           ]
         ]
@@ -5261,31 +5261,31 @@
         "geometry_role": "design_proposal",
         "building_type": "cultural",
         "name_zh": "走廊文化公共建筑",
-        "area_sqm_declared": 2844.629
+        "area_sqm_declared": 2830.5
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.346,
-              40.002
+              116.34709999999998,
+              40.00015
             ],
             [
-              116.346,
-              40.002500000000005
+              116.3477,
+              40.00015
             ],
             [
-              116.34660000000001,
-              40.002500000000005
+              116.3477,
+              40.00065
             ],
             [
-              116.34660000000001,
-              40.002
+              116.34709999999998,
+              40.00065
             ],
             [
-              116.346,
-              40.002
+              116.34709999999998,
+              40.00015
             ]
           ]
         ]
