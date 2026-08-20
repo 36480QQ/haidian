@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "68025440bd9f793dc292eae579c0f83748d600848c4710217a791388b45d9767"
+      "sha256": "ac6f918ea4e232d5ad9b48fbb5c80386c0df8ceb1379828697169897459132db"
     },
     {
       "path": "agent.json",
@@ -83,13 +83,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e104d17c0004e87a6cc78bfd5db0d54f9718d3fa01ad4e1de138149555f02cc1"
+      "sha256": "2517841c2a876056e040a47c6c46d9cd31e8dacfd4c99f21db6934c496e8132f"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "aaa4413a378b448273823aa8f9fbaae65ff6c718602f596118e2078b835fdc9b"
+      "sha256": "4a681072f532a42dae73fa63f38e3a28d98966124e698b588481082b73ab627e"
     },
     {
       "path": "standard_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f61a52178ab01b3524a37c21a12eac4c1644e374157f08a24dadc0c46ea1e1da"
+      "sha256": "5a524e225bad1fbaaf92309e4ea22bbf14803448995ec9cbd4082c9c95809130"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "30b19ef4a371800a95becfbfc41ae692b789c97d8a7a89d145a868df8ade0b63"
+      "sha256": "b62a4d3b88134b76d5cecccd19dc4a6bac0cf8c731a144adb0e7ecd4392fe213"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "51a81867939324cf2151dd2edc2aacda36a00046a7e262d06a2c1c87997652c1"
+      "sha256": "c24067db525d1b785b50033de24f4dc841462e9a54a4f0a80743c450a3f4fcc0"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "858fb0b14be058f4a226ea89c2d65458f581c286bde9bbe5330da87f2accb12d"
+      "sha256": "5df6a66250b1252a035733f959dc319cae939550f46c6e7a69730aa46bd2ea6c"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -453,11 +453,11 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "6c93c96138f03f26abb1eefb3625a688bee01be93c1cd9e47be3387ca460d5eb",
+      "sha256": "e21f52b55a5fef8f58b79923eccf4227cbf04ec915b2bff86050ef5935dd9f8e",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
-      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把正文里可复算的数值与结构声明逐条对结构化文件重算，共 32 条。一层查数据内部规则（三期面积相加等于总体范围、四类各五个、东西各十、西收东放无一例外、研制与服务基底逐位相等、六个先查证的周期分布、二十个单元的概念状态与回滚状态）；另一层直接读 proposal.md，核对落点表恰好 20 行、编号集合与 geojson 相同，并**逐行比对类型与东西侧**——这一条专防「数据对、正文写反」这类看不出来的错。`node claims-audit.js` 全部一致退出 0，任何一条不符退出 1 并打印实算值；`--json` 输出机器可读结果。与 protocol-check-runner.js 合起来覆盖本包全部可复算声明；设计判断、未测项与现场结论不在范围内。",
-      "description_en": "A read-only, offline Node script with no third-party dependencies that recomputes every recomputable numeric and structural claim in the text against the structured files — 32 checks. One level checks rules internal to the data (phase areas summing to the overall area, four types of five, ten cells per side, west-encloses-east-opens with no exception, build and serve footprints equal to the digit, the periodic distribution of the six investigate-first cells, the conceptual and rollback status of all twenty). The other reads proposal.md directly, verifying that the location table has exactly 20 rows and an ID set identical to the geojson, and **comparing the type and side of every row** — guarding specifically against the otherwise invisible error where the data is right and the prose is reversed. `node claims-audit.js` exits 0 when all match and 1 on any mismatch, printing the recomputed value; `--json` emits machine-readable output. Together with protocol-check-runner.js it covers every recomputable claim in this package; design judgements, unmeasured items and field conclusions are out of scope."
+      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把正文里可复算的数值与结构声明逐条对结构化文件重算，**共 49 项**。分五层：① 计数与内部一致性（58＝44＋14；三期面积相加逐位等于总体范围；分期／重点区／更新单元／地标／场景节点／道路要素与各 geojson 一致；48＝12×4；96＝12＋84；现场演练 0/12 两处同为 0）；② 二十个更新单元的结构规则（基底合计 221,014.099；四类各五个；东西各十；西收东放二十个无一例外；研制与服务逐位相等 51,744；验证与公开差 73.901＝0.126%；六个先查证落在第 2/3/5/6/8/9 对且每对最多一个；全部标 conceptual_typology_cell_not_existing_inventory 且回滚状态含「保持现状」）；③ **正文↔数据双向核对**——直接读 proposal.md，核落点表恰好 20 行、编号集合与 geojson 相同、**并逐行比对类型与东西侧**；④ **断面表算术**——每区 A1＋A2＋A3＝小计、小计＋余量＝退线 A、合计＝A＋B＋C＋D＋E 五项之和，**且把容器子段再加一遍必须得到与声明明显不同的数**（防那处 18–27 m 式的错回来）、等候面积＝进深×面宽、通用表两条求和式与两个区间声明自身成立；⑤ **交叉引用与字段深度**——三个矩阵的章节引用必须命中真实标题、正文 [standard:]／[depth:] 必须能解析到、sources.json 43 条八字段齐备、22 项深小数带 precision_note。**最后一项 Z1 是元检查**：ID 全集写死在脚本里，少一条、多一条、重一条都判失败——因为审计器最危险的失效方式不是判错，而是某一项悄悄没跑。`node claims-audit.js` 全部一致退出 0，任何一项不符退出 1 并打印实算值；`--json` 输出机器可读结果。**它不是自动化闸门**：`scripts/`、`tests/`、`.github/` 都不调用它（投稿 PR 不得改那些路径），运行方式是提交前手动执行，登记在 compliance_matrix.json#self_check_expectations。与 protocol-check-runner.js 合起来覆盖本包全部可复算声明；设计判断、未测项与现场结论不在范围内。",
+      "description_en": "A read-only, offline Node script with no third-party dependencies that recomputes every recomputable numeric and structural claim in the text against the structured files — **49 checks in five layers**: (1) counts and internal consistency; (2) structural rules across the twenty renewal cells; (3) **two-way prose↔data checking** — it reads proposal.md directly and compares the type and side of every row of the location table; (4) **section-table arithmetic** — per-area A1＋A2＋A3＝subtotal, subtotal＋slack＝setback A, total＝the five items A–E, **and adding the container's children a second time must yield a number clearly different from the stated one** (guarding the earlier 18–27 m class of error); (5) **cross-reference and field depth** — matrix section references must hit real headings, [standard:]/[depth:] markers must resolve, all 43 sources carry eight required fields, all 22 deep-decimal metrics carry a precision_note. **The last check, Z1, is a meta-check**: the full ID list is hardcoded, and a missing, extra or duplicated ID fails — because the most dangerous way an auditor fails is not a wrong verdict but a check that quietly did not run. `node claims-audit.js` exits 0 when all match and 1 on any mismatch, printing the recomputed value; `--json` emits machine-readable output. **It is not an automated gate**: nothing in `scripts/`, `tests/` or `.github/` invokes it (a submission PR may not modify those paths); it is run manually before submission and is registered in compliance_matrix.json#self_check_expectations. Together with protocol-check-runner.js it covers every recomputable claim in this package; design judgements, unmeasured items and field conclusions are out of scope."
     },
     {
       "path": "assets/figures/shift-ledger.png",

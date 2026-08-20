@@ -235,8 +235,12 @@ const parsedOk = ["A1", "A2", "A3", "A", "B", "C", "D", "E", "TOT"].every(
 add("F0", "断面三区取值表可被逐行解析（九段 × 三区 ＋ 小计 ＋ 余量）", parsedOk,
     parsedOk ? "解析成功" : "解析失败，后续 F 项不可信");
 
-if (parsedOk) {
+/* 解析失败时不能「跳过」这些检查——那会让检查总数变少而 all_match 仍为真，
+   正是审计器最不该有的静默漏检。因此下面一律 add，解析失败即判失败。 */
+const UNPARSED = "断面三区取值表未解析成功（见 F0），本项无法判定";
+{
   const bad1 = [], bad2 = [], bad3 = [], bad4 = [], bad5 = [];
+  if (parsedOk) {
   for (let i = 0; i < 3; i++) {
     const childSum = seg.A1[i] + seg.A2[i] + seg.A3[i];
     if (!eq(childSum, subtotal[i])) bad1.push(`${AREAS[i]} A1+A2+A3=${childSum} 小计=${subtotal[i]}`);
@@ -246,25 +250,28 @@ if (parsedOk) {
     // 容器重复加的那个数必须与声明明显不同——这是让 18–27 m 那类错回不来的那一条
     if (Math.abs(five + childSum - seg.TOT[i]) <= 0.5) bad4.push(`${AREAS[i]} 容器重复加=${five + childSum} 与声明 ${seg.TOT[i]} 过近`);
     if (!(five >= 14.1 - 1e-9 && five <= 19.935 + 1e-9)) bad5.push(`${AREAS[i]} 合计 ${five} 越出 14.1–19.9`);
+    }
   }
-  add("F1", "每区 A1＋A2＋A3 等于表内小计", bad1.length === 0, bad1.join("；") || "三区全对");
-  add("F2", "每区「小计＋余量」等于建筑退线 A", bad2.length === 0, bad2.join("；") || "三区全对");
-  add("F3", "每区单侧合计等于 A＋B＋C＋D＋E 五项之和（只加五项）", bad3.length === 0, bad3.join("；") || "15.4／17.1／15.1 全对");
+  const g = (bad) => (parsedOk ? bad.length === 0 : false);
+  const m = (bad, ok) => (parsedOk ? (bad.join("；") || ok) : UNPARSED);
+  add("F1", "每区 A1＋A2＋A3 等于表内小计", g(bad1), m(bad1, "三区全对"));
+  add("F2", "每区「小计＋余量」等于建筑退线 A", g(bad2), m(bad2, "三区全对"));
+  add("F3", "每区单侧合计等于 A＋B＋C＋D＋E 五项之和（只加五项）", g(bad3), m(bad3, "15.4／17.1／15.1 全对"));
   add("F4", "把容器 A 的子段再加一遍会得到与声明明显不同的数——原来那处「18–27 m」式的错无法悄悄回来",
-      bad4.length === 0, bad4.join("；") || "三区重复加分别得 21.135／24.100／23.100，均与声明相去甚远");
-  add("F5", "三区合计都落在通用表给出的 14.1–19.9 区间内", bad5.length === 0, bad5.join("；") || "三区全在区间内");
+      g(bad4), m(bad4, "三区重复加分别得 21.135／24.100／23.100，均与声明相去甚远"));
+  add("F5", "三区合计都落在通用表给出的 14.1–19.9 区间内", g(bad5), m(bad5, "三区全在区间内"));
 
   const wait = rowByPrefix("A1") || [];
   const badArea = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; parsedOk && i < 3; i++) {
     const w = grab(wait[i], /面宽\s*(\d+(?:\.\d+)?)/);
     const declared = grab(wait[i], /(\d+(?:\.\d+)?)\s*m²/);
     if (w === null || declared === null || Math.abs(seg.A1[i] * w - declared) > 0.3) {
       badArea.push(`${AREAS[i]} 进深${seg.A1[i]}×面宽${w}=${seg.A1[i] * w} 声明${declared}`);
     }
   }
-  add("F6", "每区等候面积等于进深 × 面宽（8／10／约 12 m² 每窗口）", badArea.length === 0,
-      badArea.join("；") || "三区全对");
+  add("F6", "每区等候面积等于进深 × 面宽（8／10／约 12 m² 每窗口）", g(badArea),
+      m(badArea, "三区全对"));
 }
 
 /* 通用断面表：两条求和式与两个区间声明 */
@@ -283,16 +290,21 @@ add("F8", "通用表上限求和式自身成立（8.5＋1.435＋1.5＋2.5＋6.0 
 
 const a13 = setLine.match(/之和为\s*(\d+(?:\.\d+)?)[–—-](\d+(?:\.\d+)?)\s*m/);
 const slk = setLine.match(/另留\s*(\d+(?:\.\d+)?)[–—-](\d+(?:\.\d+)?)\s*m\s*余量/);
-if (parsedOk && a13) {
-  add("F9", "通用表「A1—A3 之和 5.7–8.0 m」与三区逐项实算的极值一致",
-      eq(parseFloat(a13[1]), Math.min(...[0, 1, 2].map((i) => seg.A1[i] + seg.A2[i] + seg.A3[i]))) &&
-      eq(parseFloat(a13[2]), Math.max(...[0, 1, 2].map((i) => seg.A1[i] + seg.A2[i] + seg.A3[i]))),
-      `声明 ${a13[1]}–${a13[2]}，实算 ${Math.min(...[0,1,2].map((i)=>seg.A1[i]+seg.A2[i]+seg.A3[i]))}–${Math.max(...[0,1,2].map((i)=>seg.A1[i]+seg.A2[i]+seg.A3[i]))}`);
-}
-if (parsedOk && slk) {
-  add("F10", "通用表「另留 0.3–1.0 m 余量」与三区实取余量的极值一致",
-      eq(parseFloat(slk[1]), Math.min(...slack)) && eq(parseFloat(slk[2]), Math.max(...slack)),
-      `声明 ${slk[1]}–${slk[2]}，实取 ${slack.join("／")}`);
+/* F9／F10 同理：正则没匹配到不能让检查消失，否则改一个同义词就能把它「跳过」。 */
+{
+  const childSums = parsedOk ? [0, 1, 2].map((i) => seg.A1[i] + seg.A2[i] + seg.A3[i]) : [];
+  const ok9 = parsedOk && !!a13 &&
+    eq(parseFloat(a13[1]), Math.min(...childSums)) && eq(parseFloat(a13[2]), Math.max(...childSums));
+  add("F9", "通用表「A1—A3 之和 5.7–8.0 m」与三区逐项实算的极值一致", ok9,
+      !parsedOk ? UNPARSED
+        : !a13 ? "未在通用表 A 行解析到「之和为 X–Y m」表述——措辞变了或该声明被删"
+        : `声明 ${a13[1]}–${a13[2]}，实算 ${Math.min(...childSums)}–${Math.max(...childSums)}`);
+  const ok10 = parsedOk && !!slk &&
+    eq(parseFloat(slk[1]), Math.min(...slack)) && eq(parseFloat(slk[2]), Math.max(...slack));
+  add("F10", "通用表「另留 0.3–1.0 m 余量」与三区实取余量的极值一致", ok10,
+      !parsedOk ? UNPARSED
+        : !slk ? "未在通用表 A 行解析到「另留 X–Y m 余量」表述——措辞变了或该声明被删"
+        : `声明 ${slk[1]}–${slk[2]}，实取 ${slack.join("／")}`);
 }
 
 /* G. 三个矩阵的交叉引用完整性。
@@ -360,6 +372,33 @@ const deep = Object.entries(metrics).filter(([, m]) =>
 const noNote = deep.filter(([, m]) => !m.precision_note);
 add("I1", `三位以上小数的指标全部带 precision_note（共 ${deep.length} 项）`,
     noNote.length === 0, noNote.length ? noNote.map(([k]) => k).join("、") : `${deep.length} 项全部带说明`);
+
+/* Z. 元检查：断言检查清单本身没有缺项。
+   审计器最危险的失效方式不是「某一项判错」，而是「某一项悄悄没跑」——
+   条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
+   把通用表里「之和为」改成同义的「合计」，F9／F10 的正则匹配失败、两项直接消失，
+   脚本报 47/47、exit 0 通过。已把全部 add() 改成无条件；本项是结构性兜底——
+   ID 全集写死在这里，少一条、多一条、重一条都判失败。 */
+const EXPECTED_IDS = [
+  "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8",
+  "S1", "S2", "S3", "S4",
+  "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
+  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9",
+  "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
+  "G1", "G2", "G3", "H1", "I1",
+];
+{
+  const got = checks.map((c) => c.id);
+  const dup = got.filter((x, i) => got.indexOf(x) !== i);
+  const missing = EXPECTED_IDS.filter((x) => !got.includes(x));
+  const extra = got.filter((x) => !EXPECTED_IDS.includes(x));
+  const problems = [];
+  if (missing.length) problems.push(`缺 ${missing.join("、")}`);
+  if (extra.length) problems.push(`多出 ${extra.join("、")}`);
+  if (dup.length) problems.push(`重复 ${[...new Set(dup)].join("、")}`);
+  add("Z1", `检查清单完整：恰好 ${EXPECTED_IDS.length} 项，无缺项、无多余、无重复`,
+      problems.length === 0, problems.join("；") || `${got.length} 项与清单逐一对应`);
+}
 
 /* ---------------- 输出 ---------------- */
 const failed = checks.filter((c) => !c.pass);
