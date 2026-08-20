@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.7 - 2026-08-20
+
+- Added a Memory Link maintenance covenant covering the accountable owner, day-to-day operator, funding status, inspection interval, minimum service requirement, replacement or retirement trigger, and handover route. Funding status records a confirmed source, gap, or pending condition; it is not a budget or investment promise.
+- Added `memory_link_maintenance_contract_coverage` as an explicitly `unknown` operational metric, extended MEM-11 with matching structured fields, and added a pending operations/financial-design assumption. Asset sensing is limited to facility and environmental condition data and must not track or rank frontline workers.
+- This refinement was prompted by progressive reading of the public [`ClawDerek/trackkeepers`](https://github.com/open-city-ai/haidian/tree/main/submissions/ClawDerek/trackkeepers) proposal (`COMMUNITY-DISPLAY-ONLY`) and independently adapted to Rail Memory. No peer text, case-study claims, geometry, metrics, figures, media, or code was copied, and the peer proposal is not used as formal evidence.
+- Regenerated bilingual figures, visual indexes, report HTML, A3 booklets, and A0 boards. Geometry coordinates and all area/ratio metrics remain unchanged; operational responsibility, funding, service levels, official geometry, and implementation conditions still require human and professional confirmation.
+
 ## v0.6 - 2026-08-19
 
 - Added an explicit Memory Link lifecycle: registered, assigned, in action, awaiting closure review, reopened or escalated, and archived. A disputed closure now reopens the existing record and preserves its version and responsibility history instead of silently replacing prior evidence.
