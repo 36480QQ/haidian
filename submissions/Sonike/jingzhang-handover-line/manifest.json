@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5b1b1387b321045f04e43c18ccb049df3b4017293c0f585fc405f1f321e44f37"
+      "sha256": "b7bac54b01646acc392826a4432162d2ac0ad9eaa9b4d2f770af8ba1ef1ff4fb"
     },
     {
       "path": "agent.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2d575c02f3688e04106a7ae6fa4177a438b2b4afeb8e1c9bc95a4c469cd88fbb"
+      "sha256": "cffdb92ef887c722d402615763b12c1d9484b92477ae90e13f72f9cfb7f43153"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bbf8e16672898aa807fa201cb4b723cf9342bf429811953030ae8d28df15f349"
+      "sha256": "94e6553840ebc90522fc8a2fa48305adbe8aa68e8fd4f028e04f2330778a10f2"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b45933ddde57bc28a7e96e1219ba664f5fbfc9adf73b9bdfa8889964491e1176"
+      "sha256": "e4e165de40ab3e79f0ce7af6314f16528d7a0ccefa35dadf94a9ead02bfb85ef"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "af73a959d3887dd96bfd074d998f2af1aabd8c0b1301df03185d2348d2c8cd04"
+      "sha256": "0bcc60dc3df1d5ae9deac1e50b5c44ef61a148d8be5781c206b7172f2eea2c6c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "b3ea0245867061d8978514495c082fd055683720fb57704065449cbb63082122"
+      "sha256": "708f2e1b6f2b767d5f5ae2534acacb3618b6e72a9f65a71b5e20fe42944185e4"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -453,7 +453,7 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "206a73a03ab7c067f1e8240d95ff90a555843888e3ce4827c4c24463d23cfab2",
+      "sha256": "805a75198490b8ba6cc2e4a53a5a021022059d1433471acfcf3cd88a58d93a0f",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
       "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把正文里可复算的数值与结构声明逐条对结构化文件重算，共 32 条。一层查数据内部规则（三期面积相加等于总体范围、四类各五个、东西各十、西收东放无一例外、研制与服务基底逐位相等、六个先查证的周期分布、二十个单元的概念状态与回滚状态）；另一层直接读 proposal.md，核对落点表恰好 20 行、编号集合与 geojson 相同，并**逐行比对类型与东西侧**——这一条专防「数据对、正文写反」这类看不出来的错。`node claims-audit.js` 全部一致退出 0，任何一条不符退出 1 并打印实算值；`--json` 输出机器可读结果。与 protocol-check-runner.js 合起来覆盖本包全部可复算声明；设计判断、未测项与现场结论不在范围内。",
