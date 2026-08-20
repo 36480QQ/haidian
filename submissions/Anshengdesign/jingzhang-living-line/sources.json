@@ -212,6 +212,66 @@
       "license_summary": "每条数据标注原始URL与日期；未复核到的数据明确标注'未找到'",
       "usage": "生态图谱六维要素（北京AI企业2400+/备案模型123/五道口116独角兽/500亿基金/45EFLOPS/117分落户门槛/十年青年流失约200万等）",
       "limitation": "多数为'约数'或媒体口径；OPC'近180家'等精确数字未在公开渠道复核，标注待官方口径"
+    },
+    {
+      "id": "DATA-SRC-HD00-1601-20260811",
+      "title": "京张铁路遗址公园沿线（人工智能创新街区重点地区）街区控规 HD00-1601 等（获批）",
+      "publisher": "北京市规划和自然资源委员会",
+      "published_date": "2026-08-11",
+      "accessed_date": "2026-08-19",
+      "source_type": "official_public",
+      "usable_for_formal": "yes",
+      "license_summary": "政府公开获批信息；结构对位（一带一轴，两心多点），精确管控指标未公开获取，法定指标维持 unknown",
+      "usage": "获批控规结构性衔接、9 类主导功能分区对照、官方多点节点承接、2035 规模大盘对账",
+      "limitation": "图则精确管控指标与红线全文尚未公开取得；对位为结构性，数值不越界"
+    },
+    {
+      "id": "DATA-SRC-XHS-INTENTIONS-20260819",
+      "title": "创作意向基准 10 条（安蒂诺里酒庄/铝型材展亭/垂直森林/盖里楼梯/半悬浮小品/Delta Stack/单强母题/咖啡之家/CENTERPIECE/焦点建筑）",
+      "publisher": "小红书用户笔记（老板提供链接）",
+      "published_date": "2026-08-19",
+      "accessed_date": "2026-08-19",
+      "source_type": "web_public",
+      "usable_for_formal": "no",
+      "license_summary": "公开笔记仅作创作意向启发与表达层基准；不复制内容",
+      "usage": "节点设计概念句、效果图 prompt 的形式语言基准（§1-§10 意向映射）",
+      "limitation": "仅意向启发，非事实依据"
+    },
+    {
+      "id": "DATA-SRC-RENDER-REFERENCES-20260819",
+      "title": "京张效果图参考 15 张（色调 DNA 提炼）",
+      "publisher": "老板提供图片资料（/Users/mac/Downloads/京张效果图参考）",
+      "published_date": "2026-08-19",
+      "accessed_date": "2026-08-19",
+      "source_type": "web_public",
+      "usable_for_formal": "no",
+      "license_summary": "仅作视觉氛围参考（蓝调/金铜暖光/蓝橙对比）；不复制原图",
+      "usage": "效果图氛围 DNA：蓝调时刻+暖光内透/深色底+金铜暖光/高对比/材质真实",
+      "limitation": "参考图版权归原作者；本包不收录原图"
+    },
+    {
+      "id": "DATA-SRC-MASTER-SKETCH-LIBRARY-20260819",
+      "title": "大师手绘草图资料库（Piano/Foster 等，T1-T8 分类与风格词库）",
+      "publisher": "公开媒体草图扫描（ArchDaily/RICS/Pinterest 等，Wikimedia CC/PD）",
+      "published_date": "2026-08-19",
+      "accessed_date": "2026-08-19",
+      "source_type": "web_public",
+      "usable_for_formal": "no",
+      "license_summary": "仅作手绘语言学习（线条/色彩/构图词库）；CC/PD 素材可引用，当代草图仅风格参考",
+      "usage": "sketch.py 手绘组件库与推敲图的图面语言基准",
+      "limitation": "当代在世建筑师草图有版权，仅风格参考不复制"
+    },
+    {
+      "id": "DATA-SRC-URBAN-RENEWAL-CASES-20260819",
+      "title": "城市更新优秀案例库（23 案例：高线/国王十字/宫下公园/清溪川/606 等）",
+      "publisher": "公开案例资料整理",
+      "published_date": "2026-08-19",
+      "accessed_date": "2026-08-19",
+      "source_type": "web_public",
+      "usable_for_formal": "no",
+      "license_summary": "公开案例仅作设计手法学习（阶梯座椅/景框/野花带/保留铁轨/运营活化）",
+      "usage": "高线三手法、保留与赋能原则、公共空间运营参照",
+      "limitation": "案例事实以官方发布为准"
     }
   ]
 }
