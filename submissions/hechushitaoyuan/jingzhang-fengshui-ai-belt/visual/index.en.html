@@ -82,6 +82,9 @@ footer{text-align:center;color:#9aa3ad;font-size:.78rem;margin-top:34px}
 <section>
 <h2>Core metrics (recomputable from geometry)</h2>
 <div class="cards">
+<div class="card"><div class="v" data-metric="scenario_card_count" data-value="13">13</div><div class="l">Scenario cards</div><div class="f">count(cards)</div></div>
+<div class="card"><div class="v" data-metric="testbed_count" data-value="3">3 ★</div><div class="l">Industry testbeds</div><div class="f">count(★ cards)</div></div>
+<div class="card"><div class="v" data-metric="role_count" data-value="8">8</div><div class="l">Role specs (unassigned)</div><div class="f">count(role-spec)</div></div>
 <div class="card"><div class="v" data-metric="site_area_sqm" data-value="11412825.386">1,141 ha</div><div class="l">场地面积 / Site area</div><div class="f">polygon_area(site_boundary)</div></div>
 <div class="card"><div class="v" data-metric="green_ratio" data-value="0.293695">29.4%</div><div class="l">绿地率 / Green ratio</div><div class="f">green_space/site</div></div>
 <div class="card"><div class="v" data-metric="public_space_ratio" data-value="0.204309">20.4%</div><div class="l">公共空间率 / Public-space ratio</div><div class="f">public_space/site</div></div>
@@ -90,13 +93,38 @@ footer{text-align:center;color:#9aa3ad;font-size:.78rem;margin-top:34px}
 <div class="card"><div class="v">6.4%</div><div class="l">基底密度(示意) / Footprint density</div><div class="f">buildings/site</div></div>
 </div>
 <div class="note">Three scopes: research 43.6 km² · overall design 11.4 km² (provisional) · key areas 368.4 ha</div>
-<div class="note">AI scenarios: twelve cards · nine qi nodes (3 landmarks + 6 scenario nodes)</div>
-<div class="note">Renewal & phasing: three phases (Zhuque → Origin → Xuanwu) with a numbered project list</div>
+<div class="note">AI scenarios: thirteen cards (★ industry test scenarios ×3) · Qi Protocol v0.1 (7 rules · 156 offline checks all passing) · nine qi nodes (3 landmarks + 6 scenario nodes)</div>
+<div class="note">Renewal &amp; phasing: three condition-gated phases (each with entry gate / exit gate / rollback state) + six action packs + eight role specifications (role-spec.json, all unassigned)</div>
 </section>
 <section>
 <h2>Task coverage (23/23)</h2>
 <div class="tags"><span class="tag">✓ World-class AI innovation ecosystem</span><span class="tag">✓ AI-native urban form</span><span class="tag">✓ High-quality district for global AI talent</span><span class="tag">✓ Coordinated research area</span><span class="tag">✓ Overall design area</span><span class="tag">✓ Key detailed design area</span><span class="tag">✓ Research: AI ecosystem</span><span class="tag">✓ Research: future urban form</span><span class="tag">✓ Overall: industry & functions</span><span class="tag">✓ Overall: renewal framework</span><span class="tag">✓ Overall: transport & municipal</span><span class="tag">✓ Overall: heritage park vitality</span><span class="tag">✓ Overall: urban character</span><span class="tag">✓ Key areas (mandatory)</span><span class="tag">✓ Zhongzhiyuan acceleration area</span><span class="tag">✓ Beijing AI origin community</span><span class="tag">✓ Dazhongsi AI cluster</span><span class="tag">✓ agent.1 Concept & naming</span><span class="tag">✓ agent.2 Ecosystem & cases</span><span class="tag">✓ agent.3 Scenarios & personas</span><span class="tag">✓ agent.4 Public space & landmarks</span><span class="tag">✓ agent.5 Cultural narrative</span><span class="tag">✓ agent.6 Events & operation</span></div>
 </section>
+
+<section>
+<h2>Multimedia · Guides and Concept Expression</h2>
+<p class="note">All media below are deterministically generated locally (see sources.json entry SRC-MEDIA-RENDER-V11); they form the guide and ambience layer, never a basis for space, area, or metrics; no autoplay; captions and transcripts throughout.</p>
+<figure style="margin:10px 0 14px">
+  <figcaption style="font-size:13px;font-weight:600;margin-bottom:6px">Concept video · "Qi-pulse growth" (24 s, silent, bilingual captions)</figcaption>
+  <video controls preload="metadata" poster="../assets/media/experience-poster.png" style="max-width:100%;width:640px;border:1px solid #a0855b;border-radius:6px">
+    <source src="../assets/media/experience.mp4" type="video/mp4">
+    <track default kind="subtitles" srclang="en" label="English" src="../assets/media/experience.en.vtt">
+    <track kind="subtitles" srclang="zh" label="中文" src="../assets/media/experience.vtt">
+    Your browser does not support HTML video; the shot list and transcript are at assets/media/experience.md.
+  </video>
+</figure>
+<figure style="margin:10px 0">
+  <figcaption style="font-size:13px;font-weight:600;margin-bottom:6px">Audio guide · English (~2 min)</figcaption>
+  <audio controls preload="metadata" src="../assets/media/audio-guide-en.mp3" style="width:100%;max-width:520px"></audio>
+  <p class="note">Transcript & captions: assets/media/audio-guide-en.md / .vtt (sentence-matched, measured timeline)</p>
+</figure>
+<figure style="margin:10px 0">
+  <figcaption style="font-size:13px;font-weight:600;margin-bottom:6px">音频导览 · 中文（约 2 分钟）</figcaption>
+  <audio controls preload="metadata" src="../assets/media/audio-guide-zh.mp3" style="width:100%;max-width:520px"></audio>
+  <p class="note">文字稿与字幕：assets/media/audio-guide-zh.md / .vtt</p>
+</figure>
+</section>
+
 <section>
 <h2>Self-check status</h2>
 <p>Four-gate self-check (format / spatial / visual / professional evidence) is recorded live in self_check.json; values on this page match metrics.json.</p>
