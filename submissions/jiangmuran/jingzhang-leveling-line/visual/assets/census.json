@@ -1,7 +1,7 @@
 {
  "source": "git tree (authoritative) + per-proposal proposal.md and agent.json",
  "retrieved": "2026-08-20",
- "tree_count": 926,
+ "tree_count": 927,
  "gallery_index_count": 872,
  "missing_from_gallery_index": [
   "0237/jingzhang-ai-spine",
@@ -44,6 +44,7 @@
   "kaincao/jingzhang-ai-ecosystem-loop",
   "lizehualoveyou/jingzhang-for-people",
   "lukechen526/jingzhang-ai-spine",
+  "lyq525/jingzhang-ai-belt",
   "m62m61m80bpzm2/origin-rail",
   "popzrq0215-png/jingzhang-time-traces",
   "ringwraith/care-work-relay",
@@ -308,6 +309,7 @@
    "minimax/MiniMax-M3",
    "agent-declared-model (Codex)",
    "gemini-3.6-flash",
+   "claude-haidian-urban-design-agent",
    "OpenAI reasoning agent and GPT Image",
    "Kimi（月之暗面 Moonshot AI）",
    "pi-coding-agent (Claude-class assistant)",
@@ -3689,7 +3691,7 @@
     6,
     5
    ],
-   "b": 187412,
+   "b": 191834,
    "m": 111,
    "f": 2
   },
@@ -5553,13 +5555,13 @@
   },
   "dw-zhu-si/jingzhang-common-time": {
    "t": "共时京张 / COMMON TIME：一条由证据门驱动的 AI 创新采用带",
-   "s": "以时段基线、三尺度空间系统和 VERIFY—LEARN—LIVE—ADOPT/RETIRE 采用回路，检验存量空间能否在更长时间服务科研转译、城市采用与公共生活；所有空间落位均为 provisional 关系示意。",
+   "s": "以时段基线、三尺度空间系统和 VERIFY—LEARN—LIVE—ADOPT/RETIRE 回路检验存量空间；DR-01 用两条独立复算与一次故意失败验证硬门不可平均、结果可降级，所有真实项目与空间落位仍为 HOLD/provisional。",
    "k": [
     0,
     6,
     5
    ],
-   "b": 70449,
+   "b": 78573,
    "m": 0,
    "f": 2
   },
@@ -5697,13 +5699,13 @@
   },
   "felix-lhz/jingzhang-civic-proving-line": {
    "t": "京张双答 / JING-ZHANG TWO ANSWERS",
-   "s": "三个方案接受同一把尺子；牺牲公共路径的方案被公开否决，入选方案再接受十二份测量契约。",
+   "s": "公共十字永远不断线，AI只进入一侧可逆试验湾；越线方案公开淘汰，当前实施门为G0 NO-GO。",
    "k": [
     0,
     21,
     5
    ],
-   "b": 46842,
+   "b": 44058,
    "m": 12,
    "f": 0
   },
@@ -6548,7 +6550,7 @@
     23,
     18
    ],
-   "b": 255448,
+   "b": 254334,
    "m": 36,
    "f": 3
   },
@@ -7481,7 +7483,7 @@
     21,
     5
    ],
-   "b": 215038,
+   "b": 215440,
    "m": 194,
    "f": 3
   },
@@ -7641,6 +7643,18 @@
    "m": 17,
    "f": 2
   },
+  "lyq525/jingzhang-ai-belt": {
+   "t": "京张智脉·AI共生带——百年京张AI创新带城市设计方案",
+   "s": "以京张遗址公园为公共空间主轴，以众智园、北京AI原点社区、大钟寺为三处创新锚点，提出一带三核、蓝绿慢行复合环与AI场景运营体系的百年京张AI创新带城市设计方案。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 16509,
+   "m": 200,
+   "f": 3
+  },
   "lzcapp/jingzhang-ai-belt": {
    "t": "百年京张AI创新带 · 智轨走廊城市设计提案",
    "s": "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；组织方数据缺口处的空间指标标记为 unknown，待官方多边形发布后复算。",
@@ -7756,7 +7770,7 @@
     5
    ],
    "b": 35797,
-   "m": 200,
+   "m": 201,
    "f": 2
   },
   "miamiamiamark/jingzhang-ai-origin-belt": {
@@ -7803,7 +7817,7 @@
     22
    ],
    "b": 75298,
-   "m": 201,
+   "m": 202,
    "f": 2
   },
   "miniripples/jingzhang-new-chapter": {
@@ -7835,7 +7849,7 @@
     16
    ],
    "b": 22763,
-   "m": 202,
+   "m": 203,
    "f": 2
   },
   "miraclelgz666/jingzhang-passing-line": {
@@ -7847,7 +7861,7 @@
     5
    ],
    "b": 29025,
-   "m": 203,
+   "m": 204,
    "f": 3
   },
   "miyuuteshima984/jingzhang-ai-civic-infrastructure": {
@@ -7907,7 +7921,7 @@
     16
    ],
    "b": 46676,
-   "m": 204,
+   "m": 205,
    "f": 2
   },
   "momo-mnsjtxy/jingmai-zhidai": {
@@ -7987,7 +8001,7 @@
    "s": "以「智轨新生」为总概念，将百年京张铁路遗址转化为AI创新带的城市文化主线：一带贯南北、三区成链、两翼展东西、多点织网；给出用地布局、蓝绿公共空间、交通慢行、12项更新项目、23项任务全覆盖的机器可读方案包。",
    "k": [],
    "b": 26402,
-   "m": 205,
+   "m": 206,
    "f": 2
   },
   "nerhode086/playable-jingzhang": {
@@ -8019,7 +8033,7 @@
    "s": "以京张铁路遗址公园9公里带状空间为主轴，提出'一带三核、双环十二景'的城市设计方案。融合百年铁路文化遗产与AI神经网络意象，构建全球首个AI原生城市创新带。方案覆盖43.6km²统筹研究范围与11.4km²总体设计范围，包含18个用地分区、106栋概念建筑、12张AI场景卡、3个AI朝圣地标、5类用户画像和完整的分期实施策略。本方案基于provisional边界生成，保留精度警示，待官方数据发布后统一复算。",
    "k": [],
    "b": 72034,
-   "m": 206,
+   "m": 207,
    "f": 1
   },
   "nixiankaide1/pulse-jingzhang": {
@@ -8055,7 +8069,7 @@
     2
    ],
    "b": 22636,
-   "m": 207,
+   "m": 208,
    "f": 3
   },
   "onlinehack/jingzhang-common-intelligence-line": {
@@ -8079,7 +8093,7 @@
     5
    ],
    "b": 77112,
-   "m": 208,
+   "m": 209,
    "f": 2
   },
   "oppry12102/jingzhang-ai-spine": {
@@ -8091,7 +8105,7 @@
     5
    ],
    "b": 76540,
-   "m": 209,
+   "m": 210,
    "f": 1
   },
   "oukeming64-tech/jingzhang-ai-commons": {
@@ -8139,7 +8153,7 @@
     15
    ],
    "b": 30135,
-   "m": 210,
+   "m": 211,
    "f": 2
   },
   "pansexual2778/jingzhang-open-trunk": {
@@ -8187,7 +8201,7 @@
     5
    ],
    "b": 50008,
-   "m": 211,
+   "m": 212,
    "f": 1
   },
   "phdetector/jingzhang-kilometre-zero": {
@@ -8258,7 +8272,7 @@
     16
    ],
    "b": 35827,
-   "m": 212,
+   "m": 213,
    "f": 4
   },
   "ppsharon/jingzhang-intelligent-spine": {
@@ -8330,7 +8344,7 @@
     15
    ],
    "b": 27782,
-   "m": 213,
+   "m": 214,
    "f": 4
   },
   "qiyuanhuakai/rail-os": {
@@ -8410,7 +8424,7 @@
     5
    ],
    "b": 41196,
-   "m": 214,
+   "m": 215,
    "f": 2
   },
   "realMisakaMikoto/jingzhang-open-platforms": {
@@ -8433,7 +8447,7 @@
     16
    ],
    "b": 79260,
-   "m": 215,
+   "m": 216,
    "f": 2
   },
   "ringwraith/care-work-relay": {
@@ -8481,7 +8495,7 @@
     5
    ],
    "b": 31788,
-   "m": 216,
+   "m": 217,
    "f": 4
   },
   "sLingli/jingzhang-beacon": {
@@ -8587,7 +8601,7 @@
     19
    ],
    "b": 43603,
-   "m": 217,
+   "m": 218,
    "f": 2
   },
   "shanshui2024/jingzhang-proof-commons": {
@@ -8631,7 +8645,7 @@
     16
    ],
    "b": 66378,
-   "m": 218,
+   "m": 219,
    "f": 2
   },
   "shhxera/digital-rail": {
@@ -8751,7 +8765,7 @@
     5
    ],
    "b": 51002,
-   "m": 219,
+   "m": 220,
    "f": 1
   },
   "skkkk1028/jingzhang-coauthored-line": {
@@ -8771,7 +8785,7 @@
    "s": "",
    "k": [],
    "b": 207059,
-   "m": 220,
+   "m": 221,
    "f": 2
   },
   "sl820/jingzhang-ai-memory-line": {
@@ -8807,7 +8821,7 @@
     15
    ],
    "b": 48886,
-   "m": 221,
+   "m": 222,
    "f": 3
   },
   "somnus-J-307/jingzhang-co-legible-interfaces": {
@@ -8867,7 +8881,7 @@
     5
    ],
    "b": 44555,
-   "m": 222,
+   "m": 223,
    "f": 2
   },
   "sukikeeling/ai-jingzhang-corridor": {
@@ -8891,7 +8905,7 @@
     5
    ],
    "b": 31340,
-   "m": 223,
+   "m": 224,
    "f": 2
   },
   "sukikeeling/ai-jingzhang-corridor-v5": {
@@ -9143,7 +9157,7 @@
     5
    ],
    "b": 19848,
-   "m": 224,
+   "m": 225,
    "f": 0
   },
   "surenny/jingzhang-full-cost": {
@@ -9155,7 +9169,7 @@
     5
    ],
    "b": 26426,
-   "m": 224,
+   "m": 225,
    "f": 0
   },
   "surenny/jingzhang-hidden-help-room": {
@@ -9203,7 +9217,7 @@
     5
    ],
    "b": 23276,
-   "m": 224,
+   "m": 225,
    "f": 0
   },
   "surenny/jingzhang-rights-handover": {
@@ -9215,7 +9229,7 @@
     5
    ],
    "b": 20954,
-   "m": 225,
+   "m": 226,
    "f": 0
   },
   "surenny/jingzhang-same-error-remedy": {
@@ -9227,7 +9241,7 @@
     2
    ],
    "b": 22342,
-   "m": 225,
+   "m": 226,
    "f": 0
   },
   "surenny/jingzhang-same-instruction": {
@@ -9239,7 +9253,7 @@
     5
    ],
    "b": 23225,
-   "m": 224,
+   "m": 225,
    "f": 0
   },
   "surenny/jingzhang-same-route-pass": {
@@ -9251,7 +9265,7 @@
     5
    ],
    "b": 18552,
-   "m": 225,
+   "m": 226,
    "f": 0
   },
   "surenny/jingzhang-second-key": {
@@ -9271,7 +9285,7 @@
     5
    ],
    "b": 21448,
-   "m": 225,
+   "m": 226,
    "f": 0
   },
   "surenny/jingzhang-work-not-training": {
@@ -9367,7 +9381,7 @@
     5
    ],
    "b": 17426,
-   "m": 226,
+   "m": 227,
    "f": 0
   },
   "thirstywaterx/jingzhang-zhi-belt": {
@@ -9379,7 +9393,7 @@
     5
    ],
    "b": 28379,
-   "m": 227,
+   "m": 228,
    "f": 4
   },
   "throwing2008/ai-innovation-belt": {
@@ -9427,7 +9441,7 @@
     2
    ],
    "b": 35404,
-   "m": 228,
+   "m": 229,
    "f": 2
   },
   "to-real/jingzhang-on-time-city": {
@@ -9451,7 +9465,7 @@
     16
    ],
    "b": 41322,
-   "m": 229,
+   "m": 230,
    "f": 1
   },
   "tommy274787189/jingzhang-living-belt": {
@@ -9511,7 +9525,7 @@
     2
    ],
    "b": 52137,
-   "m": 230,
+   "m": 231,
    "f": 2
   },
   "twinkle-air/jingzhang-long-test-line": {
@@ -9547,7 +9561,7 @@
     5
    ],
    "b": 33558,
-   "m": 231,
+   "m": 232,
    "f": 1
   },
   "umr-xiaomai/jingzhang-ai-revival-belt": {
@@ -9607,7 +9621,7 @@
     5
    ],
    "b": 32371,
-   "m": 232,
+   "m": 233,
    "f": 1
   },
   "vespertinewater/jingzhang-zhimai": {
@@ -9663,7 +9677,7 @@
     5
    ],
    "b": 22665,
-   "m": 233,
+   "m": 234,
    "f": 2
   },
   "viviseason/jingzhang-ai-civic-spine": {
@@ -9686,7 +9700,7 @@
     2
    ],
    "b": 26066,
-   "m": 234,
+   "m": 235,
    "f": 1
   },
   "w-Steve/jingzhang-evidence-governed-city": {
@@ -9710,7 +9724,7 @@
     15
    ],
    "b": 19415,
-   "m": 235,
+   "m": 236,
    "f": 0
   },
   "wangml1e4/jingzhang-proof-gardens": {
@@ -10029,7 +10043,7 @@
     5
    ],
    "b": 42222,
-   "m": 208,
+   "m": 209,
    "f": 1
   },
   "wyq2722084642/jingzhang-public-ai-loop": {
@@ -10065,7 +10079,7 @@
     18
    ],
    "b": 59867,
-   "m": 236,
+   "m": 237,
    "f": 1
   },
   "xdlrt/jingzhang-ai-commons": {
@@ -10101,7 +10115,7 @@
     5
    ],
    "b": 31740,
-   "m": 237,
+   "m": 238,
    "f": 1
   },
   "xhily/jingzhang-intelligent-artery": {
@@ -10113,7 +10127,7 @@
     5
    ],
    "b": 50058,
-   "m": 238,
+   "m": 239,
    "f": 1
   },
   "xhily/jingzhi-belt-concept": {
@@ -10135,7 +10149,7 @@
     32
    ],
    "b": 24631,
-   "m": 239,
+   "m": 240,
    "f": 1
   },
   "xhily/the-second-site": {
@@ -10147,7 +10161,7 @@
     5
    ],
    "b": 23904,
-   "m": 240,
+   "m": 241,
    "f": 1
   },
   "xianghanchao6-design/jingzhang-ai-commons": {
@@ -10159,7 +10173,7 @@
     5
    ],
    "b": 37732,
-   "m": 241,
+   "m": 242,
    "f": 2
   },
   "xiao555/jingzhang-civic-warranty": {
@@ -10183,7 +10197,7 @@
     2
    ],
    "b": 57803,
-   "m": 242,
+   "m": 243,
    "f": 3
   },
   "xiaofenggan01/jingzhang-civic-agent-loop": {
@@ -10231,7 +10245,7 @@
     5
    ],
    "b": 36559,
-   "m": 243,
+   "m": 244,
    "f": 3
   },
   "xiaopi668/jingzhang-grade-line": {
@@ -10243,7 +10257,7 @@
     5
    ],
    "b": 37673,
-   "m": 244,
+   "m": 245,
    "f": 1
   },
   "xiaopi668/jingzhang-interlock": {
@@ -10279,7 +10293,7 @@
     5
    ],
    "b": 32240,
-   "m": 245,
+   "m": 246,
    "f": 1
   },
   "xiaopi668/jingzhang-microloop": {
@@ -10302,7 +10316,7 @@
     2
    ],
    "b": 48193,
-   "m": 246,
+   "m": 247,
    "f": 1
   },
   "xiaopi668/jingzhang-signal": {
@@ -10361,7 +10375,7 @@
     5
    ],
    "b": 44305,
-   "m": 247,
+   "m": 248,
    "f": 3
   },
   "xiaowuzicode/token-block-jingzhang-ai-belt": {
@@ -10397,7 +10411,7 @@
     2
    ],
    "b": 67673,
-   "m": 248,
+   "m": 249,
    "f": 2
   },
   "xie7ge/comind-loop": {
@@ -10457,7 +10471,7 @@
     5
    ],
    "b": 44002,
-   "m": 249,
+   "m": 250,
    "f": 1
   },
   "xitongsitian/jingzhang-right-to-repair": {
@@ -10589,7 +10603,7 @@
     5
    ],
    "b": 34431,
-   "m": 250,
+   "m": 251,
    "f": 1
   },
   "yangheming123/jingzhang-renzi-ai-belt": {
@@ -10625,7 +10639,7 @@
     5
    ],
    "b": 28427,
-   "m": 251,
+   "m": 252,
    "f": 2
   },
   "yayanet/jingzhang-marshalling-yard": {
@@ -10649,7 +10663,7 @@
     2
    ],
    "b": 35969,
-   "m": 252,
+   "m": 253,
    "f": 1
   },
   "yeqing-agent/jingzhang-ballast": {
@@ -10661,7 +10675,7 @@
     2
    ],
    "b": 23861,
-   "m": 253,
+   "m": 254,
    "f": 4
   },
   "yeqing-agent/jingzhang-switchback-line": {
@@ -10673,7 +10687,7 @@
     22
    ],
    "b": 23836,
-   "m": 253,
+   "m": 254,
    "f": 4
   },
   "yeqing-agent/jingzhang-turntable": {
@@ -10685,7 +10699,7 @@
     16
    ],
    "b": 23797,
-   "m": 253,
+   "m": 254,
    "f": 4
   },
   "yeqing-agent/jingzhang-water-crane": {
@@ -10697,7 +10711,7 @@
     2
    ],
    "b": 23467,
-   "m": 253,
+   "m": 254,
    "f": 4
   },
   "yg2224/jingzhang-headroom": {
@@ -10733,7 +10747,7 @@
     5
    ],
    "b": 26498,
-   "m": 254,
+   "m": 255,
    "f": 0
   },
   "youngkermit8-coder/jingzhang-intelligence-commons": {
@@ -10805,7 +10819,7 @@
     5
    ],
    "b": 113895,
-   "m": 255,
+   "m": 256,
    "f": 2
   },
   "yuy1guo/jingzhang-common-interface": {
@@ -10851,7 +10865,7 @@
     40
    ],
    "b": 39327,
-   "m": 256,
+   "m": 257,
    "f": 6
   },
   "zachshi-ai/jingzhang-ai-heritage-spine": {
@@ -10863,7 +10877,7 @@
     22
    ],
    "b": 44333,
-   "m": 256,
+   "m": 257,
    "f": 6
   },
   "zachshi-ai/jingzhang-civic-data-commons": {
@@ -10874,7 +10888,7 @@
     5
    ],
    "b": 34560,
-   "m": 256,
+   "m": 257,
    "f": 6
   },
   "zachshi-ai/jingzhang-robot-comobility": {
@@ -10885,7 +10899,7 @@
     16
    ],
    "b": 73079,
-   "m": 256,
+   "m": 257,
    "f": 6
   },
   "zachshi-ai/jingzhang-silver-accessibility-belt": {
@@ -10896,7 +10910,7 @@
     15
    ],
    "b": 51828,
-   "m": 256,
+   "m": 257,
    "f": 6
   },
   "zdhNarsil/jingzhang-co-growth": {
@@ -11076,7 +11090,7 @@
     31
    ],
    "b": 82213,
-   "m": 257,
+   "m": 258,
    "f": 2
   },
   "zhumoalpha/jingzhang-mindline": {
@@ -11088,7 +11102,7 @@
     18
    ],
    "b": 102561,
-   "m": 257,
+   "m": 258,
    "f": 2
   },
   "zhy3213/proofline-ai-belt": {
@@ -11112,7 +11126,7 @@
     5
    ],
    "b": 88009,
-   "m": 258,
+   "m": 259,
    "f": 2
   },
   "zihanCui1215/jingzhang-crossings": {
@@ -11136,7 +11150,7 @@
     19
    ],
    "b": 34829,
-   "m": 255,
+   "m": 256,
    "f": 1
   },
   "zruihua804/companion-line": {
@@ -11208,7 +11222,7 @@
     5
    ],
    "b": 33514,
-   "m": 259,
+   "m": 260,
    "f": 0
   },
   "zyaoii/jingzhang-porous-ground-contract": {
