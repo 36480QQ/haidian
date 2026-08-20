@@ -295,6 +295,72 @@ if (parsedOk && slk) {
       `声明 ${slk[1]}–${slk[2]}，实取 ${slack.join("／")}`);
 }
 
+/* G. 三个矩阵的交叉引用完整性。
+   矩阵是评审文本输入的一部分，读者会顺着 proposal_sections 去正文找对应章节；
+   章节改名或被合并后，那一栏就会指向一个不存在的标题——引用死掉却看不出来。
+   本包历史上出现过这类断链，本段把它变成可判定项。 */
+const headings = new Set(
+  prose.split("\n").filter((l) => l.startsWith("#")).map((l) => l.replace(/^#+/, "").trim())
+);
+const matrixSpecs = [
+  ["standard_matrix.json", "standards", "standard_id", "proposal_sections"],
+  ["design_depth_matrix.json", "items", "item_id", "proposal_sections"],
+  ["compliance_matrix.json", "requirements", "requirement_id", "report_sections"],
+];
+const dangling = [];
+let refTotal = 0;
+for (const [file, key, idField, secField] of matrixSpecs) {
+  let doc;
+  try { doc = readPkg(file); } catch (e) { dangling.push(`${file} 读不到`); continue; }
+  for (const item of doc[key] || []) {
+    let secs = item[secField];
+    if (typeof secs === "string") secs = [secs];
+    if (!Array.isArray(secs)) continue;
+    for (const s of secs) {
+      refTotal += 1;
+      if (!headings.has(s)) dangling.push(`${file}#${item[idField]} → 「${s}」`);
+    }
+  }
+}
+add("G1", "三个矩阵里每一条 proposal_sections／report_sections 都指向 proposal.md 中真实存在的标题",
+    dangling.length === 0,
+    dangling.length ? `${dangling.length} 处断链：${dangling.slice(0, 4).join("；")}` : `${refTotal} 处引用全部命中`);
+
+/* 反向：正文里的 [standard:] 与 [depth:] 标记必须能在矩阵里解析到 */
+const stdIds = new Set((readPkg("standard_matrix.json").standards || []).map((x) => x.standard_id));
+const depIds = new Set((readPkg("design_depth_matrix.json").items || []).map((x) => x.item_id));
+const usedStd = [...new Set((prose.match(/\[standard:([A-Za-z0-9_\-.]+)\]/g) || []).map((s) => s.slice(10, -1)))];
+const usedDep = [...new Set((prose.match(/\[depth:([A-Za-z0-9_\-.]+)\]/g) || []).map((s) => s.slice(7, -1)))];
+const badStd = usedStd.filter((x) => !stdIds.has(x));
+const badDep = usedDep.filter((x) => !depIds.has(x));
+add("G2", "正文的 [standard:] 标记全部能在 standard_matrix.json 里解析到",
+    badStd.length === 0, badStd.length ? badStd.join("、") : `${usedStd.length} 个全部命中`);
+add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解析到",
+    badDep.length === 0, badDep.length ? badDep.join("、") : `${usedDep.length} 个全部命中`);
+
+/* H. sources.json 的字段深度——CLAUDE.md 记为与分数相关性最高的特征，缺一栏就是缺证据 */
+const sources = readPkg("sources.json").sources || [];
+const REQF = ["authority_level", "evidence_class", "collection_method", "spatial_coverage",
+              "temporal_coverage", "license_or_reuse_terms", "usable_for", "not_usable_for"];
+const shallow = [];
+for (const s of sources) {
+  const missing = REQF.filter((f) => {
+    const v = s[f];
+    return v === undefined || v === null || v === "" || (Array.isArray(v) && v.length === 0);
+  });
+  if (missing.length) shallow.push(`${s.id} 缺 ${missing.join("／")}`);
+}
+add("H1", `sources.json 每一条都登记了八个必备字段（共 ${sources.length} 条）`,
+    shallow.length === 0, shallow.length ? shallow.slice(0, 3).join("；") : `${sources.length} 条全部齐备`);
+
+/* I. metrics.json 的精度口径：三位以上小数的指标必须带 precision_note */
+const deep = Object.entries(metrics).filter(([, m]) =>
+  typeof m.value === "number" && String(m.value).includes(".") &&
+  String(m.value).split(".")[1].length >= 3);
+const noNote = deep.filter(([, m]) => !m.precision_note);
+add("I1", `三位以上小数的指标全部带 precision_note（共 ${deep.length} 项）`,
+    noNote.length === 0, noNote.length ? noNote.map(([k]) => k).join("、") : `${deep.length} 项全部带说明`);
+
 /* ---------------- 输出 ---------------- */
 const failed = checks.filter((c) => !c.pass);
 const out = {
