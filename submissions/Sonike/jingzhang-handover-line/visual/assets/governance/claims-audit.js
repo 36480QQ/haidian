@@ -21,10 +21,23 @@
 const fs = require("fs");
 const path = require("path");
 
-const HERE = __dirname;
+/* 位置默认由脚本自身推出。两个环境变量只为同目录的 audit-selftest.js 存在：
+   JZ_AUDIT_HOME    本文件被复制到别处运行时，指回真正的 governance 目录（阴性测试要改脚本自身）
+   JZ_AUDIT_OVERLAY 覆盖层目录：其中存在同名包内相对路径的文件时优先读它（阴性测试要改输入）
+   两者都不设置时行为与此前完全一致：只读随包文件，不写任何东西。 */
+const HERE = process.env.JZ_AUDIT_HOME ? path.resolve(process.env.JZ_AUDIT_HOME) : __dirname;
 const PKG = path.resolve(HERE, "../../..");
-const readPkg = (p) => JSON.parse(fs.readFileSync(path.join(PKG, p), "utf8"));
-const readHere = (p) => JSON.parse(fs.readFileSync(path.join(HERE, p), "utf8"));
+const OVERLAY = process.env.JZ_AUDIT_OVERLAY ? path.resolve(process.env.JZ_AUDIT_OVERLAY) : null;
+const resolveIn = (base, rel, key) => {
+  if (OVERLAY) {
+    const cand = path.join(OVERLAY, key || rel);
+    if (fs.existsSync(cand)) return cand;
+  }
+  return path.join(base, rel);
+};
+const readPkg = (p) => JSON.parse(fs.readFileSync(resolveIn(PKG, p), "utf8"));
+const readHere = (p) => JSON.parse(fs.readFileSync(
+  resolveIn(HERE, p, path.join("visual/assets/governance", p)), "utf8"));
 
 const metrics = readPkg("metrics.json").metrics;
 const sim = readPkg("simulation.json");
@@ -143,7 +156,7 @@ add("B11", "每个单元的回滚状态都是保持现状使用与现状条件",
    前面各段只查数据内部规则；本段真正读 proposal.md，把从数据算出来的数拿去正文里找。
    这一步是为了堵住本包已经犯过的那类错：**数据是对的，正文写反了**。
    B4 那样的规则检查抓不到它，因为它不读正文。 */
-const prose = fs.readFileSync(path.join(PKG, "proposal.md"), "utf8");
+const prose = fs.readFileSync(resolveIn(PKG, "proposal.md"), "utf8");
 const proseHas = (s, n) => (prose.split(s).length - 1) >= (n || 1);
 
 const tableRows = prose.split("\n").filter((l) => l.startsWith("| BLDG-"));
@@ -378,7 +391,13 @@ add("I1", `三位以上小数的指标全部带 precision_note（共 ${deep.leng
    条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
    把通用表里「之和为」改成同义的「合计」，F9／F10 的正则匹配失败、两项直接消失，
    脚本报 47/47、exit 0 通过。已把全部 add() 改成无条件；本项是结构性兜底——
-   ID 全集写死在这里，少一条、多一条、重一条都判失败。 */
+   ID 全集写死在这里，少一条、多一条、重一条都判失败。
+
+   ⚠️ Z1 自己也在这份全集里，但「一条检查查不到自己被删掉」——删掉下面那句 add("Z1")，
+   这段比对就整段不执行。2026-08-20 外部复核实测到了这一层：当时全集只有 48 项、不含 Z1，
+   删掉 add("Z1") 后脚本报 48/48、exit 0 通过。所以退出码不再只由 checks 决定：
+   下面「输出」段有一道不走 add() 的结构性守卫，把实际 ID 序列与本全集逐位比对。
+   那道守卫才是删得掉 Z1 也躲不过的一层。 */
 const EXPECTED_IDS = [
   "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8",
   "S1", "S2", "S3", "S4",
@@ -386,9 +405,11 @@ const EXPECTED_IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "H1", "I1",
+  "Z1",
 ];
 {
-  const got = checks.map((c) => c.id);
+  // Z1 即将被 add，一并纳入比对，使这里的计数与最终 checks_run 一致
+  const got = [...checks.map((c) => c.id), "Z1"];
   const dup = got.filter((x, i) => got.indexOf(x) !== i);
   const missing = EXPECTED_IDS.filter((x) => !got.includes(x));
   const extra = got.filter((x) => !EXPECTED_IDS.includes(x));
@@ -402,12 +423,33 @@ const EXPECTED_IDS = [
 
 /* ---------------- 输出 ---------------- */
 const failed = checks.filter((c) => !c.pass);
+
+/* 结构性守卫：不走 add()，因此不可能被「某一条检查没跑」的方式绕开。
+   它把实际跑出来的 ID 序列与 EXPECTED_IDS 逐位比对——少一条（含 Z1 自己被删掉）、
+   多一条、顺序变了都会让 all_match 为假、退出码为 1。
+   这一层与 Z1 的分工：Z1 让人在表里看见缺了哪一条；这一层保证「看不见」也拦得住。 */
+const idsActual = checks.map((c) => c.id);
+const idManifestProblems = [];
+if (idsActual.length !== EXPECTED_IDS.length) {
+  idManifestProblems.push(`实跑 ${idsActual.length} 项，清单 ${EXPECTED_IDS.length} 项`);
+}
+for (const x of EXPECTED_IDS) if (!idsActual.includes(x)) idManifestProblems.push(`缺 ${x}`);
+for (const x of idsActual) if (!EXPECTED_IDS.includes(x)) idManifestProblems.push(`多出 ${x}`);
+const firstOutOfOrder = EXPECTED_IDS.findIndex((x, i) => idsActual[i] !== x);
+if (!idManifestProblems.length && firstOutOfOrder !== -1) {
+  idManifestProblems.push(`第 ${firstOutOfOrder + 1} 位应为 ${EXPECTED_IDS[firstOutOfOrder]}，实为 ${idsActual[firstOutOfOrder]}`);
+}
+const idManifestOk = idManifestProblems.length === 0;
+
 const out = {
   auditor: "claims-audit.js",
   scope_zh: "只审可由包内数据复算的数值与结构声明；设计判断、未测项与现场结论不在范围内。",
   checks_run: checks.length,
+  checks_expected: EXPECTED_IDS.length,
+  check_id_manifest_ok: idManifestOk,
+  check_id_manifest_problems: idManifestProblems,
   checks_passed: checks.length - failed.length,
-  all_match: failed.length === 0,
+  all_match: failed.length === 0 && idManifestOk,
   failures: failed,
   checks,
 };
@@ -420,6 +462,9 @@ if (process.argv.includes("--json")) {
     if (!c.pass) console.log(`            实算：${c.actual}`);
   }
   console.log(`\n${out.checks_passed}/${out.checks_run} 条声明与包内数据一致`);
+  if (!idManifestOk) {
+    console.log(`检查清单被改动：${idManifestProblems.join("；")}（应为 ${EXPECTED_IDS.length} 项）`);
+  }
   console.log(out.all_match ? "全部一致" : "存在不一致");
 }
 process.exit(out.all_match ? 0 : 1);

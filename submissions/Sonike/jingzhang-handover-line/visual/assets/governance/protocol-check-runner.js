@@ -24,8 +24,18 @@
 const fs = require("fs");
 const path = require("path");
 
-const HERE = __dirname;
-const read = (p) => JSON.parse(fs.readFileSync(path.join(HERE, p), "utf8"));
+/* 与同目录 claims-audit.js 同一套约定：JZ_AUDIT_OVERLAY 只为 audit-selftest.js 存在，
+   不设置时行为不变——只读随包文件，不写任何东西。覆盖层键用包内相对路径。 */
+const HERE = process.env.JZ_AUDIT_HOME ? path.resolve(process.env.JZ_AUDIT_HOME) : __dirname;
+const OVERLAY = process.env.JZ_AUDIT_OVERLAY ? path.resolve(process.env.JZ_AUDIT_OVERLAY) : null;
+const read = (p) => {
+  const key = path.normalize(path.join("visual/assets/governance", p));
+  if (OVERLAY) {
+    const cand = path.join(OVERLAY, key);
+    if (fs.existsSync(cand)) return JSON.parse(fs.readFileSync(cand, "utf8"));
+  }
+  return JSON.parse(fs.readFileSync(path.join(HERE, p), "utf8"));
+};
 
 const suite = read("shift-ledger-suite.json");
 const report = read("rule-check-report.json");
@@ -160,6 +170,22 @@ for (const t of sim.tasks) {
   }
 }
 
+/* 规模守卫。上面三个计数全部由被审数据自己推出——夹具少几条账、发布结果少几条检查，
+   比对的条数就跟着变少，而「逐条一致」仍然成立：那样脚本会以 40/40、exit 0 通过，
+   正文声明的 96 与 48 却已经不成立。所以把本包声明的规模写死在这里参与退出码。
+   同类的洞 2026-08-20 在 claims-audit.js 上被外部复核实测到过（见该文件 Z 段注释）。 */
+const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48 };
+const scaleProblems = [];
+if (suite.ledgers.length !== EXPECTED_SCALE.ledgers) {
+  scaleProblems.push(`交接账 ${suite.ledgers.length} 条，应为 ${EXPECTED_SCALE.ledgers} 条`);
+}
+if (report.checks.length !== EXPECTED_SCALE.rule_checks) {
+  scaleProblems.push(`规则检查 ${report.checks.length} 条，应为 ${EXPECTED_SCALE.rule_checks} 条`);
+}
+if (assertRun !== EXPECTED_SCALE.assertions) {
+  scaleProblems.push(`接管断言 ${assertRun} 项，应为 ${EXPECTED_SCALE.assertions} 项`);
+}
+
 const out = {
   runner: "protocol-check-runner.js",
   reads_only: ["shift-ledger-suite.json", "rule-check-report.json", "simulation.json"],
@@ -168,9 +194,13 @@ const out = {
   rule_checks_matching_published: report.checks.length - ruleMismatches.length,
   assertions_recomputed: assertRun,
   assertions_matching_published: assertRun - assertMismatches.length,
+  expected_scale: EXPECTED_SCALE,
+  scale_ok: scaleProblems.length === 0,
+  scale_problems: scaleProblems,
   rule_mismatches: ruleMismatches,
   assertion_mismatches: assertMismatches,
-  all_match: ruleMismatches.length === 0 && assertMismatches.length === 0,
+  all_match: ruleMismatches.length === 0 && assertMismatches.length === 0
+             && scaleProblems.length === 0,
   field_rehearsal_tasks_completed: sim.summary.field_rehearsal_tasks_completed,
   scope_note_zh: "只重算协议逻辑，不证明现场绩效、安全、合规或获批；现场演练仍为 0/12。",
 };
@@ -184,6 +214,7 @@ if (process.argv.includes("--json")) {
   console.log(`现场演练 ${out.field_rehearsal_tasks_completed}/12（未授权，未执行）`);
   for (const m of out.rule_mismatches) console.log("  规则不一致:", JSON.stringify(m));
   for (const m of out.assertion_mismatches) console.log("  断言不一致:", JSON.stringify(m));
+  for (const m of out.scale_problems) console.log("  规模不符:", m);
   console.log(out.all_match ? "全部一致" : "存在不一致");
 }
 process.exit(out.all_match ? 0 : 1);
