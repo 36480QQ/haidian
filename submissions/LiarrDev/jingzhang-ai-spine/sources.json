@@ -54,6 +54,12 @@
       "url": "http://www.cnr.cn/bj/sijh/20260806/t20260806_527751136.shtml",
       "source_type": "official_public",
       "usage": "遗址公园二期开放时间和AI场景信息"
+    },
+    {
+      "id": "OSM-DATA",
+      "url": "https://www.openstreetmap.org/",
+      "source_type": "osm",
+      "usage": "Existing-condition spatial data (building footprints, road network, green space, water) fetched via Overpass API on 2026-08-20 for the Jingzhang corridor; licensed under ODbL. Used only as directional existing-condition context; not an official survey or redline basis."
     }
   ]
 }

@@ -4,6 +4,14 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 52 civic ground detail atlas / 第 52 轮公共地面详细设计图集
+
+PR #3511 merge 已进入 `main@fcaf7a9f…`，串行门通过。RED、修复、PDF SHA、工具和权利记录见 `changelog.md#v520---2026-08-20`、`agent.json#round_52_provenance` 和 `review-handoff-index.json#civic_ground_detail_atlas_r52`；它们不是公众、专家、现场或评审反馈。
+
+本轮原位重建 4 组双语图件和 4 份定页 PDF，只把连续公共地面、三处非同构原型、季节普通基线与拆除—还场关系连成图纸链。无新路径、来源、媒体、事实、主张、geometry、metric 或页面；G0、provisional、NO-GO、12/8/3/36、现实结果 0、完整非 AI 路径、恢复非授权、`not_fully_cleared` 和独立清权 0 均冻结。
+
+Round 52 rebuilds four bilingual figure families and four fixed-page PDFs in place. Full RED, hashes and limits are stored in the three records above. No path, source, media, fact, claim, geometry, metric or page is added; all G0, provisional, non-AI, recovery, NO-GO and rights boundaries remain unchanged.
+
 ## Round 51 spatial-design proof / 第 51 轮空间设计证明
 
 前序 PR #3500 merge `2e2a1d9cfc6d3d7e8c18fd1be571784da8638a92` 已进入 `main@e490c681bfad93d8c54a81ee56f1d3061a88a813`，同包开放 PR 为 0，工作树洁净。编辑性双语／灰度／缩略图／标题抑制审查的 RED 是：总图不是空间结构、用地图仍是 36 格清单、三处平面偏符号卡片、剖面没有地面与阈值；不是公众、专家、现场或评审反馈。

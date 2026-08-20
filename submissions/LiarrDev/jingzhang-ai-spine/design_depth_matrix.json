@@ -42,7 +42,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "基于临时总体设计范围和用地分类的诊断分析，证明现状诊断逻辑可复现、官方数据缺口已识别；不证明精确现状（临时边界，官方红线未发布）。"
+      "evidence_summary_zh": "基于 OSM 现状建筑(1692栋)、道路(1605段)、绿地与水系(120处)和设计用地分区的诊断分析，证明现状空间数据可复算、官方数据缺口已识别；不证明精确现状（临时边界，官方红线未发布）。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -289,7 +289,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "建筑 footprint 按 building_strategy 属性区分保留、改造、更新、新建四类，具体拆改留分类需在官方控规条件确认后校准。"
+      "evidence_summary_zh": "现状建筑由 OSM 实测(1692栋)提供底图，保留/改造/更新/新建四类策略为方案层面分类，具体拆改留分类需在官方控规和权属条件确认后校准。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -329,7 +329,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "道路图层包含慢行环、站点接驳和东西连接路径；轨道一体化和停车组织需在正式控规和市政条件确认后深化。"
+      "evidence_summary_zh": "现状道路由 OSM 实测(1605段)提供底图，四级道路体系和慢行环为方案层面设计；轨道一体化和停车组织需在正式控规和市政条件确认后深化。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -412,7 +412,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "绿地率和公共空间率由 green_space、public_space 几何与 site_boundary 复算，蓝绿工字形骨架结构在图层中体现。"
+      "evidence_summary_zh": "现状绿地率约8.0%由 OSM green_space/water 与 site_boundary 复算，公共空间率由 public_space 几何复算；蓝绿工字形骨架为方案层面设计。"
     },
     {
       "item_id": "three_key_area_detailed_design",

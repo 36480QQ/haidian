@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A formal AI urban-design submission generated from the provisional boundary and the structured self-check requirements. Precision caveats and recalculation requirements are preserved; the organizer data gap does not block content scoring."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v8.0"
+iteration: "v9.0"
 ---
 
 # Star Tracks, Silver Weave · Light-Weave Roaming Growth Chronicle
@@ -37,6 +37,8 @@ This package is not a paper concept. The following verifications were actually c
 - **Bilingual equivalence**: proposal / proposal.en, visual/index / index.en, and 5 figure pairs (.png / .en.png) map one-to-one; the bilingual gate passes.
 - **Recalculable geometry**: 9 geometry layers + FIG 1–5 share one numbering system with the 23 metrics in metrics.json; a full recalculation is possible after official boundaries are supplied (organizer data gaps do not block content scoring).
 - **Field testing: 0 items (awaiting authorization)** — all spatial, cost, and approval conclusions are conceptual recommendations, never presented as built or operating facts.
+
+> **One-figure overview of the core mechanism (FIG 1)**: the Qinglongqiao herringbone track is translated into an urban-AI governance mechanism — every decision node has a dual gate (upper AI-auto / lower human takeover), key nodes have a mandatory signaler, and any AI service can exit harmlessly to baseline service via a return ticket. The spatial layout and an enlarged mechanism diagram are in FIG 1 below (site-overview.png).
 
 ## Herringbone Rail · Dual-Gate Switch: core mechanism and executable verification
 
@@ -71,7 +73,7 @@ The usage boundaries of the source registry are as follows [source:SOURCE-REGIST
 
 `data/processed/agent_fact_pack.md` is the reading-navigation layer of this proposal, not a new authoritative source [source:PROCESSED-FACT-PACK]. It helps the agent organize the three-tier scope, three key areas, announcement tasks, agent.1-agent.6, source usability, and missing-data items into a readable proposal; factual judgements must still return to the registered original materials [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK], and the full source relationships are preserved in `sources.json`.
 
-![Source evidence chain and submission package relationship](assets/figures/site-overview.png)
+![Herringbone Rail · Dual-Gate Switch — overall mechanism map (FIG 1)](assets/figures/site-overview.png)
 
 When the official `SITE_BOUNDARY` or the three `KEY_AREA` polygons are not yet available, this scaffold generates a provisional formal package from `brief/site-package/geometry/provisional_boundaries.geojson`. The `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` in the submission package must both be marked `provisional_constraint`, `official_boundary=false`, and may only be used for scheme generation, self-check, visualization, and design discussion; they cannot serve as official redline, approval basis, precise-area basis, or statutory control conclusion. This organizer data gap does not block content scoring; after the official polygons are replaced, site boundary, key areas, land use, roads, green space, public space, buildings, phasing, and metrics must all be recalculated.
 

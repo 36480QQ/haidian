@@ -255,7 +255,11 @@
     ctx.clearRect(0,0,fw,fh);
     ctx.drawImage(img,x,y,fw,fh,0,0,fw,fh);
   }
-  function tick(){ if(auto){fi=(fi+1)%frames;draw();} requestAnimationFrame(tick); }
+  var last=0,step=150;
+  function tick(ts){
+    if(auto&&ts-last>=step){last=ts;fi=(fi+1)%frames;draw();}
+    requestAnimationFrame(tick);
+  }
   var drag=null;
   canvas.addEventListener('mousedown',function(e){drag={x:e.clientX,fi:fi};auto=false;canvas.style.cursor='grabbing';});
   window.addEventListener('mousemove',function(e){ if(!drag)return; var dx=e.clientX-drag.x; fi=((drag.fi+Math.round(dx/12))%frames+frames)%frames; draw(); });
@@ -270,6 +274,93 @@
     });
   });
   img.onload=function(){draw(); tick();};
+})();
+</script>
+
+<style>
+  .gate{margin:0 0 .55rem}
+  .gate-lab{font-size:.82rem;color:#5c6b76;line-height:1.4;margin-bottom:.15rem}
+  .gate-track{position:relative;height:12px;border-radius:99px;background:#e8e4da;overflow:hidden}
+  .gate-fill{display:block;height:100%;width:0;border-radius:99px;background:#2e7d43;transition:width 1.6s cubic-bezier(.2,.7,.3,1)}
+  .gate-thr{position:absolute;top:0;bottom:0;width:2px;background:#c0392b}
+  .ring{display:inline-block;background:#eef4ee;border:1px solid #cfe0d0;border-radius:8px;padding:.45rem .8rem;margin:.3rem .3rem 0 0;cursor:pointer;font-size:.85rem;color:#1c2b36}
+  .ring.open{background:#1f4e2d;color:#fff}
+  .ringcard{display:none;background:#f8faf7;border:1px solid #d8dcd8;border-radius:8px;padding:.6rem .8rem;margin-top:.4rem;font-size:.85rem}
+  .ringcard.open{display:block}
+  nav a.act{color:#fff;border-bottom:2px solid #f5b942}
+</style>
+<section id="gates" style="display:none">
+  <h2 style="display:none">核心指标</h2>
+</section>
+<script>
+(function(){
+  // 1 三闸门动画（滚动触发一次）
+  var gWrap=document.createElement('div');
+  var gates=[
+    ['G1 渗流','0.904 / 阈值 0.90','0.904','0.90'],
+    ['G2 句法整合度','+36% / 阈值 +30%','0.90','0.75'],
+    ['G3 职住熵','+5.3% / 阈值 +4%','0.86','0.65']
+  ];
+  var html='<p style="font-weight:700;margin:.5rem 0 .3rem">三闸门（一票否决，全部实算）</p>';
+  gates.forEach(function(g){
+    html+='<div class="gate"><div class="gate-lab">'+g[0]+' · '+g[1]+'</div><div class="gate-track"><span class="gate-fill" data-g="'+g[0]+'"></span><span class="gate-thr" style="left:'+g[3]+'"></span></div></div>';
+  });
+  gWrap.innerHTML=html;
+  var sec=document.getElementById('metrics');
+  if(sec){sec.appendChild(gWrap);}
+  var fired=false;
+  function fire(){
+    if(fired)return;fired=true;
+    var vals={'G1 渗流':gates[0][2],'G2 句法整合度':gates[1][2],'G3 职住熵':gates[2][2]};
+    Object.keys(vals).forEach(function(k){
+      var bar=document.querySelector('[data-g="'+k+'"]');
+      if(bar)bar.style.width=(parseFloat(vals[k])*100)+'%';
+    });
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)fire();});},{threshold:.3});
+  if(sec)io.observe(sec);
+  // 2 EI 数字滚动（点击切换时）
+  var eiT=document.querySelector('[data-vid="ei"]');
+  if(eiT){
+    var obs=new MutationObserver(function(){
+      var v=parseFloat(eiT.textContent);
+      if(v>=0.9){eiT.style.color='#2e7d43';}else{eiT.style.color='#b9770e';}
+    });
+    obs.observe(eiT,{childList:true,subtree:true});
+  }
+  // 3 六环论证链
+  var rings=[['世界观环','约束不可改变 → 设计的是约束之间的关系'],
+             ['诊断环','骨架健康（D=1.746），三处被挡：连接/职住/生态'],
+             ['机制环','切断→缝合；空壳→成对补位；锁定→解锁'],
+             ['处方环','一线三折两翼七节点 + 重点区域详设'],
+             ['验证环','三闸门全过：0.904 / +36% / +5.3%；EI 0.9625'],
+             ['运行环','涌现之脑年度体检 + 七类投资分期']];
+  var rs=document.createElement('div');
+  var rh='<p style="font-weight:700;margin:.5rem 0 .3rem">六环论证链（点开看每环交给下一环什么）</p><div>';
+  rings.forEach(function(r,i){rh+='<span class="ring" data-ring="'+i+'">'+r[0]+'</span>';});
+  rh+='</div>';
+  rings.forEach(function(r,i){rh+='<div class="ringcard" id="ringc'+i+'">'+r[0]+' → '+r[1]+'</div>';});
+  rs.innerHTML=rh;
+  var srcSec=document.getElementById('metrics');
+  if(srcSec)srcSec.appendChild(rs);
+  document.querySelectorAll('.ring').forEach(function(b){
+    b.addEventListener('click',function(){
+      var i=b.dataset.ring,on=!b.classList.contains('open');
+      document.querySelectorAll('.ring').forEach(function(x){x.classList.remove('open');});
+      document.querySelectorAll('.ringcard').forEach(function(x){x.classList.remove('open');});
+      if(on){b.classList.add('open');var c=document.getElementById('ringc'+i);if(c)c.classList.add('open');}
+    });
+  });
+  // 4 滚动导航高亮
+  var secs=document.querySelectorAll('main section[id]'),navs={};
+  document.querySelectorAll('nav a').forEach(function(a){var id=a.getAttribute('href').slice(1);if(id)navs[id]=a;});
+  var sio=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting&&navs[e.target.id]){navs[e.target.id].classList.add('act');}
+      else if(navs[e.target.id]){navs[e.target.id].classList.remove('act');}
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  secs.forEach(function(s){sio.observe(s);});
 })();
 </script>
 
