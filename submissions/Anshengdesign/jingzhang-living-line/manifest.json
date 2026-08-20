@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "da07215a52d5226e1e90b08715bf4a4ad06a671e1d16976fbc4329a13665a2a6"
+      "sha256": "5b6e2d80ded7200e77dec50f7eb51fe6a12884505852940d1041115e1f649db7"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "cf5cad81514639dac3be1bd726648f2168e7151a2b066079499bd03195ebfbca"
+      "sha256": "f2a11f0ceca1ab99a47ea740d73ddd22eb9c1558c3b73e3afe1a1786b961faa1"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "87df6559fcb5f5832bfe485befcf03b1e11811e486b4d6000794445828191960"
+      "sha256": "8b68529eda52dcaae1ce1efc4714a28cf3259b2aaaaa94cab8b02025f495e12f"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -1647,6 +1647,30 @@
       "role": "media_poster",
       "required": false,
       "sha256": "1484cbc8d463040a1bb76671c3a011cc8b20dad41cf898b54c40c7f33c78aa3e"
+    },
+    {
+      "path": "assets/media/origin-plaza.jpg",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "560a7fbd6c758b06b4adf05a5ee3eefaaab275eb3de940bb3596d231514b292f"
+    },
+    {
+      "path": "assets/media/stack-testband.jpg",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "27dba50da688c1cbfab21836c92253860baf550e9e7629efcb433acd51b4e4b5"
+    },
+    {
+      "path": "assets/media/origin-community.jpg",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "a356ee26c939d627963c9af27fda89d8b682ff0b97724fefd728670abc377633"
+    },
+    {
+      "path": "assets/media/dazhongsi-front.jpg",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "68d03766b9a5579fb4fa85b0133cbfc97ae18637c6312886c8631e89d2f84398"
     }
   ],
   "validation_claim": {
