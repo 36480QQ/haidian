@@ -203,6 +203,25 @@
       .proof-candidate-strip article:nth-child(3) { border-top-color: var(--red); }
       .proof-candidate-strip strong { display: block; font-size: 20px; }
       .proof-candidate-strip p { margin: 7px 0 0; }
+      .expert-quick-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+        gap: 10px;
+        margin: 18px 0 10px;
+      }
+      .expert-quick-grid article {
+        background: #f3f5f0;
+        border-left: 4px solid var(--ink);
+        padding: 12px 14px;
+      }
+      .expert-quick-grid strong { display: block; margin-bottom: 5px; }
+      .expert-risk-line {
+        margin: 0 0 18px;
+        padding: 12px 14px;
+        border: 1px solid #d8dbd4;
+        border-left: 6px solid var(--red);
+        background: #fff;
+      }
       @media (max-width: 760px) {
         .proof-candidate-strip { grid-template-columns: 1fr; }
       }
@@ -259,6 +278,14 @@
           <article><strong>大钟寺 · 后交接</strong><p>解释、拒绝、转人工和来源纠错先成立，再由专业方发布或保留 NO-GO。</p></article>
         </div>
         <div id="cold-read-proof-boundary" class="notice"><strong>G0 证据边界：</strong>T-02 合成治理回放已完成 1 次并通过 10/10、4/4、13/13；现实服务、责任接受、批准、故障与恢复验收仍为 0。既有 <code>JZ-05 × SCENE-011 × T-02</code> 只是编辑审查候选；全案保持 G0 / NO-GO、临时几何和 <code>not_fully_cleared</code>。</div>
+        <div class="expert-quick-grid" aria-label="专家快速判断五项">
+          <article><strong>1 · 唯一概念</strong>双轨京张：普通生活连续，G0 验证间歇、旁置且可停止。</article>
+          <article><strong>2 · 为何海淀</strong>创新密度只有在普通人无需账户、设备或专业身份仍能使用、质疑和退出时，才成为公共能力。</article>
+          <article><strong>3 · 当前证明</strong>T-02 只证明固定合成合同复演：10/10、4/4、13/13。</article>
+          <article><strong>4 · 当前阻断</strong>官方边界、控规、权利、真实同任务等价、专业接责、批准与现场证据未闭合；重大缺口 NO-GO。</article>
+          <article><strong>5 · 专业接手</strong>唯一入口 <code>#review-handoff</code>；D01—D08 替换输入，H01—H07 仍未提交，P01—P07 只是建议专业类型。</article>
+        </div>
+        <p class="expert-risk-line"><strong>决策级风险：</strong>政策、空间、实施与运维均为最高阻断组；八维说明、缓解和人工复核见 <a href="../risk.json"><code>risk.json</code></a>。分数是 G0 编辑优先级，不是概率、评审评分或成熟度推进。</p>
         <div class="reading-lanes" aria-label="三档阅读路径">
           <article class="reading-lane"><strong>30 秒</strong><p>先认一个概念与一个边界：双轨、三处原型、失败侧线与临时几何。</p><a class="reading-lane-action" href="#cold-read-proof-boundary">在此核对概念与边界 →</a></article>
           <article class="reading-lane"><strong>3 分钟</strong><p>从普通生活读同一任务，再看四态、三处空间、公共信号与 G0 证据边界。</p><a class="reading-lane-action" href="#ordinary-life">从普通生活开始 →</a></article>
@@ -425,7 +452,7 @@
         </div>
         <section id="package-index" aria-labelledby="package-index-title">
           <h3 id="package-index-title">包内导航与评审交接索引</h3>
-          <p>本包 155 个路径的评审定位统一见 <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>：当前计数为 155 个 manifest/package 路径、154 个非 manifest 内容路径、155 条逐文件权利记录。索引提供七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、21 个章节单元、D01—D08/H01—H07 交接、八问冷读）与逐文件登记（现行／历史快照／机器输入／冻结／临时五种状态、语言对、轮次来源与权利回链）；它只负责定位，不生成新证据、不改变成熟度或权利状态。</p>
+          <p>本包 156 个路径的评审定位统一见 <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>：当前计数为 156 个 manifest/package 路径、155 个非 manifest 内容路径、156 条逐文件权利记录。索引提供七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、21 个章节单元、D01—D08/H01—H07 交接、八问冷读）与逐文件登记（现行／历史快照／机器输入／冻结／临时五种状态、语言对、轮次来源与权利回链）；它只负责定位，不生成新证据、不改变成熟度或权利状态。</p>
           <table tabindex="0">
             <thead><tr><th scope="col">阅读路线</th><th scope="col">入口</th></tr></thead>
             <tbody>

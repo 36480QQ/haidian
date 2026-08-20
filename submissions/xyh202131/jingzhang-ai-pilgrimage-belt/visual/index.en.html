@@ -209,6 +209,25 @@
       .proof-candidate-strip article:nth-child(3) { border-top-color: var(--red); }
       .proof-candidate-strip strong { display: block; font-size: 20px; }
       .proof-candidate-strip p { margin: 7px 0 0; }
+      .expert-quick-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+        gap: 10px;
+        margin: 18px 0 10px;
+      }
+      .expert-quick-grid article {
+        background: #f3f5f0;
+        border-left: 4px solid var(--ink);
+        padding: 12px 14px;
+      }
+      .expert-quick-grid strong { display: block; margin-bottom: 5px; }
+      .expert-risk-line {
+        margin: 0 0 18px;
+        padding: 12px 14px;
+        border: 1px solid #d8dbd4;
+        border-left: 6px solid var(--red);
+        background: #fff;
+      }
       @media (max-width: 760px) {
         .proof-candidate-strip { grid-template-columns: 1fr; }
       }
@@ -270,6 +289,14 @@
           <article><strong>Dazhongsi · hand over</strong><p>Explanation, refusal, staffed handoff, and source correction precede professional publication or retained NO-GO.</p></article>
         </div>
         <div id="cold-read-proof-boundary" class="notice"><strong>G0 evidence boundary:</strong> one T-02 synthetic governance replay is complete at 10/10, 4/4, and 13/13; real service, accepted duty, approval, failure, and restoration acceptance remain 0. The existing <code>JZ-05 × SCENE-011 × T-02</code> set is only an editorial-review candidate. Everything remains G0 / NO-GO, provisional, and <code>not_fully_cleared</code>.</div>
+        <div class="expert-quick-grid" aria-label="Five expert quick judgements">
+          <article><strong>1 · Single concept</strong>Twin-Track Jing-Zhang: ordinary life stays continuous; G0 proof is intermittent, adjacent and stoppable.</article>
+          <article><strong>2 · Why Haidian</strong>Innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity.</article>
+          <article><strong>3 · Current proof</strong>T-02 proves fixed synthetic contract replay only: 10/10, 4/4 and 13/13.</article>
+          <article><strong>4 · Current blockers</strong>Official boundaries, controls, rights, real same-task parity, accepted professional duty, approval and field evidence remain open; material gaps keep NO-GO.</article>
+          <article><strong>5 · Professional start</strong>The sole entry is <code>#review-handoff</code>; D01–D08 replace inputs, H01–H07 remain unsubmitted and P01–P07 are suggested discipline types only.</article>
+        </div>
+        <p class="expert-risk-line"><strong>Decision-grade risk:</strong> policy, spatial, implementation and operations are the highest blocker group. See <a href="../risk.json"><code>risk.json</code></a> for all eight notes, mitigations and human reviews. Scores are editorial G0 priorities, not probabilities, review grades or maturity advancement.</p>
         <div class="reading-lanes" aria-label="Three reading depths">
           <article class="reading-lane"><strong>30 seconds</strong><p>Recognize one concept and one boundary first: twin tracks, three prototypes, failure siding and provisional geometry.</p><a class="reading-lane-action" href="#cold-read-proof-boundary">Check concept and boundary here →</a></article>
           <article class="reading-lane"><strong>3 minutes</strong><p>Start with the same ordinary task, then read four states, three places, public signals, and the G0 evidence boundary.</p><a class="reading-lane-action" href="#ordinary-life">Start with ordinary life →</a></article>
@@ -464,7 +491,7 @@
         </div>
         <section id="package-index" aria-labelledby="package-index-title">
           <h3 id="package-index-title">Package navigation and review handoff index</h3>
-          <p>Review locating for all 155 package paths lives in <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>. Current counts are 155 manifest/package paths, 154 non-manifest content paths, and 155 file-level rights records. The index provides seven reading routes (30-second / 3-minute / 15-minute, the five-step accessible walk, 21 chapter units, the D01–D08/H01–H07 handoff and the eight-question cold read) plus a per-file registry with five statuses (current / historical snapshot / machine input / frozen / provisional), language pairs, round provenance and rights backlinks; it only locates, creates no evidence and changes no maturity or rights state.</p>
+          <p>Review locating for all 156 package paths lives in <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>. Current counts are 156 manifest/package paths, 155 non-manifest content paths, and 156 file-level rights records. The index provides seven reading routes (30-second / 3-minute / 15-minute, the five-step accessible walk, 21 chapter units, the D01–D08/H01–H07 handoff and the eight-question cold read) plus a per-file registry with five statuses (current / historical snapshot / machine input / frozen / provisional), language pairs, round provenance and rights backlinks; it only locates, creates no evidence and changes no maturity or rights state.</p>
           <table tabindex="0">
             <thead><tr><th scope="col">Reading route</th><th scope="col">Entry</th></tr></thead>
             <tbody>

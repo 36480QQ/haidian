@@ -9,7 +9,7 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "xyh202131",
-    "agent_name": "xyh202131 opencode AI agent",
+    "agent_name": "xyh202131 AI design agent",
     "model": "OpenAI Codex (GPT-5)",
     "model_family": "gpt",
     "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot not asserted by the package",
@@ -51,13 +51,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e8641014c2d2981e47e977ad98f640676492478a791028c398ca13cfe0545886"
+      "sha256": "8f7d9fb79155050d3694059a1b862663637f669a6279130e84759ab6d74568eb"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "07d657df823d4e06e0dd8f56a8ab7b391f229d3f94a2197b89e31077a82b6cf3"
+      "sha256": "095361ad9f91d71328121c36e1782024fe814a90dd0700cde457360a561cad23"
     },
     {
       "path": "metrics.json",
@@ -81,13 +81,24 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2f18707233e4f2f071495db90f6eaee67b2c9f18b07ff83d780f9b5b460327b0"
+      "sha256": "9eb96dd74561e4c4b0bf26bf9be32ca1a2105f52152f3f7de5c05faa62d18cce"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "决策级风险摘要与专业交接路由",
+      "title_en": "Decision-grade risk summary and professional handoff routes",
+      "description_zh": "八维 G0 编辑复核优先级，把既有风险回链到 assumptions、H01—H07 与 P01—P07；分数不是概率、评审评分、批准或成熟度。",
+      "description_en": "Eight G0 editorial-review priorities route existing risks back to assumptions, H01-H07 and P01-P07; scores are not probabilities, review grades, approvals or maturity.",
+      "sha256": "688d908db288d18dc558ddf4d4813e7d2279dcdebd3dde66b5f4d5b06964258e"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "ab72be36cfb300b1c5b816ba3446d751ef0631dd9e1aace7f1e4a9beb518fcde"
+      "sha256": "69a1086b4d0685494beddba5b74559d6d1d25abf4e1ca0382e1abc2e9cf9ceb1"
     },
     {
       "path": "compliance_matrix.json",
@@ -202,7 +213,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "524a84a55b4a9c21b0eff0132fddfaf559fd7a4a67714e80af30c97bb53738fd"
+      "sha256": "2b00a8bc63c9f2befa46180c0a3e5fabca5e2047969ca02a0458713140542b9d"
     },
     {
       "path": "visual/assets/source-rights-evidence.schema.json",
@@ -230,40 +241,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "24961fb026889723941c1fc769ca1e307ff56d5bb94fb8982d008dd08f2c21dd"
+      "sha256": "46377608beb8097a0274972a687817cdfb52cde68158a9cc6cd5487c47f28903"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "aa31c65fe59c0578710df33cbf69507732823a20296442f9d79563bf9c1816d8"
+      "sha256": "8b4488665c41aed8503fac1b6f2e2ea4c25c645d2d433d45d328829ddcf6ef0f"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "4142e9baaaae6891bb894c3638822b9f0e59f620de02e736e6d0ba60dd92fd03"
+      "sha256": "fa37a890a8b10758ba337e7f6e46edd5b8b135b1bf03ebd04870e33145374268"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a9aff6f073a6dcc8b940807f7a4045f572acbc09925d84e14c12afa1964f5955"
+      "sha256": "38e06a6dd4e4c5d934f05ea7eed54b38888b11a1c51baf521fa2be81bfd854e0"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "0373821c8d64f27e4b05f4e573fe1c39d128f21ee2233be65755e6e421b5d466"
+      "sha256": "2cd6644c11155faa0dc55f0e9716aa3b6338a603e6d5e532108f3cdd4d39e6f1"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "920e565a97a8c09d680d69f095f8940d4083c2c0044771bfefbd3e84d9ec6559"
+      "sha256": "61467f788561365e3c1cb86f7ad431e56070a35ad2feb06a22ea02eb540ad06c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -403,7 +414,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3d0935b5bd80a064f7d765f8c25db5d6c3fb2503281041a011d5bb5d364941ff"
+      "sha256": "469cc775728472d72e77f5146252995ad2dbe5bd47f8c14838deb1c6164118ba"
     },
     {
       "path": "report/proposal.en.html",
@@ -411,7 +422,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2fc5654855414b015d3032fbc1f8ccc02522078523a702c3f9d5513f4d336509"
+      "sha256": "87bb363502c368912f3c5ba3ea03a0e961b09b4e975a6db7269087573521b95e"
     },
     {
       "path": "visual/index.en.html",
@@ -419,7 +430,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0aaeeef660aab688be3aa7ae87e36b834a4b4b4f995cb0a87c0b598bd0fd4295"
+      "sha256": "c57e1dacda2d2a22fcecce309b4dc6b2fb007eb9f733786616bad5e943ce4189"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -427,7 +438,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "97328cd3bd36c3335ee9ca16a21e147678be6e02cffa1ae121c10daea7cefff0"
+      "sha256": "de1679fbe69d26b05007dcd78da457234894ecdd5dfb0b5597ef600563736cba"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -435,7 +446,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "911f9030cedf0a4017a25ddf2a99531fdff1e1db7d4fa8374dd63eeeacf6643e"
+      "sha256": "39c9f4dd5c0f6720682454d83b39620bdafbd6d2f005a6a7341dde78b48e5b54"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -988,9 +999,9 @@
       "language": "neutral",
       "title_zh": "评审交接索引与包内导航",
       "title_en": "Review handoff index and package navigation",
-      "description_zh": "全部 155 个投稿包路径的评审定位索引：七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
-      "description_en": "Review navigation for all 155 package paths: seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "7dd816bbd0d6263c11c6d53507d1a04ebc10c91b57a6ecd682c6b1aa56f41f20"
+      "description_zh": "全部 156 个投稿包路径的评审定位索引：专家工件定位、五项快速判断、八条风险路由、七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
+      "description_en": "Review navigation for all 156 package paths: expert artefact locator, five quick judgements, eight risk routes, seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
+      "sha256": "371b48da33624c2dd4076138ff3a906b0722114ddd52b3b92e51412c094a652d"
     },
     {
       "path": "visual/assets/round17-reading.css",

@@ -182,7 +182,7 @@ function mobilityFigure(lang) {
   const zh = lang === 'zh';
   const extent = [116.332, 39.937, 116.363, 40.029];
   const rect = { x: 58, y: 170, w: 780, h: 930 };
-  let body = header(4, '公众正线与三处AI侧线', 'PUBLIC MAINLINE + THREE AI SIDINGS', '真实路网背景；AI关闭时普通城市仍运行', 'REAL NETWORK CONTEXT; THE ORDINARY CITY REMAINS OPEN', lang);
+  let body = header(4, 'AI ON / RETURN / AI OFF', 'AI ON / RETURN / AI OFF', '技术状态可变，公众正线、无障碍与人工服务不断', 'TECH STATE CHANGES; CIVIC MOVEMENT, ACCESS AND STAFFED SERVICE CONTINUE', lang);
   body += `<rect x="58" y="160" width="780" height="950" rx="5" fill="white" stroke="${C.line}"/>`;
   body += mapLayer(extent, rect, `mobility-${lang}`, { lightBuildings: true });
   const spine = [[116.3482, 39.944], [116.3485, 39.985], [116.349, 40.018]];
@@ -192,33 +192,42 @@ function mobilityFigure(lang) {
     body += ringOverlay(ring, extent, rect, stationColors[index], stationNames[lang][index]);
   });
   body += `<rect x="872" y="160" width="1070" height="950" rx="5" fill="white" stroke="${C.line}"/>`;
-  body += text(914, 214, zh ? '一条连续公众主链，三个可独立关闭的技术口袋' : 'ONE CONTINUOUS PUBLIC CHAIN, THREE CLOSABLE TECH POCKETS', 26, C.ink, 700);
-  const rows = zh ? [
-    ['TEST', '公众路径沿外缘连续', '观察缓冲隔开机器口袋', '越界即急停，测试区独立关闭'],
-    ['RELEASE', '普通教学与协作贯通', '发布、权利、撤回同场可见', '许可HOLD不关闭普通使用'],
-    ['USE', '到达、休息与人工服务不断', '试用口袋不占无障碍主链', '投诉RETURN，非AI服务继续'],
+  body += text(914, 214, zh ? '城市连续性不是备用方案，而是空间骨架' : 'CIVIC CONTINUITY IS THE SPATIAL FRAME, NOT A BACKUP', 25, C.ink, 700);
+  const stateHeads = zh ? ['AI ON / 有限开放', 'RETURN / 撤出恢复', 'AI OFF / 普通城市'] : ['AI ON / LIMITED', 'RETURN / WITHDRAW', 'AI OFF / ORDINARY CITY'];
+  const stateNotes = zh ? [
+    ['AI只占侧袋', '有人值守和物理停止', '公众正线保持优先'],
+    ['设备沿撤出路径离场', '围界和发布界面撤下', '投诉进入新复测任务'],
+    ['步行与无障碍不断', '人工服务和商业继续', '遗产解释无需模型'],
   ] : [
-    ['TEST', 'public path stays continuous outside', 'observation buffer separates machines', 'boundary breach closes test pocket only'],
-    ['RELEASE', 'learning and collaboration stay through', 'release, rights and withdrawal co-visible', 'licence HOLD keeps ordinary use open'],
-    ['USE', 'arrival, rest and staffed service continue', 'trial pocket stays off accessible main chain', 'complaint RETURN keeps non-AI service'],
+    ['AI occupies a siding only', 'staffed and physically stoppable', 'civic main line keeps priority'],
+    ['equipment leaves by exit route', 'edge and release front withdraw', 'complaint becomes a retest task'],
+    ['walking and access continue', 'staffed service and commerce stay', 'heritage works without a model'],
   ];
-  rows.forEach((row, index) => {
-    const y = 270 + index * 220;
-    body += `<line x1="914" y1="${y - 22}" x2="1900" y2="${y - 22}" stroke="${C.line}"/>
-      <circle cx="950" cy="${y + 25}" r="28" fill="${stationColors[index]}"/>
-      ${text(950, y + 33, String(index + 1), 18, C.white, 700, 'middle')}
-      ${text(1000, y + 12, `${stationNames[lang][index]} · ${row[0]}`, 23, C.ink, 700)}
-      ${lines(1000, y + 52, row.slice(1), 17, C.muted, 400, 1.55)}`;
+  stateHeads.forEach((head, index) => {
+    const x = 914 + index * 328;
+    const color = [C.blue, C.coral, C.green][index];
+    body += `<rect x="${x}" y="270" width="302" height="360" rx="5" fill="${C.white}" stroke="${color}" stroke-width="3"/>
+      <rect x="${x}" y="270" width="302" height="10" fill="${color}"/>
+      ${text(x + 22, 326, head, 18, color, 700)}`;
+    // Main line remains continuous in every state; only the siding changes.
+    body += `<line x1="${x + 25}" y1="405" x2="${x + 277}" y2="405" stroke="${C.ink}" stroke-width="9"/>
+      <line x1="${x + 25}" y1="405" x2="${x + 277}" y2="405" stroke="${C.cyan}" stroke-width="3"/>`;
+    if (index === 0) body += `<path d="M${x+75},405 L${x+115},350 L${x+215},350 L${x+255},405" fill="none" stroke="${C.blue}" stroke-width="7"/>`;
+    if (index === 1) body += `<path d="M${x+75},405 L${x+115},350 L${x+180},350" fill="none" stroke="${C.coral}" stroke-width="7" stroke-dasharray="9 7"/><path d="M${x+180},350 L${x+145},330 L${x+145},370 Z" fill="${C.coral}"/>`;
+    if (index === 2) body += `<path d="M${x+75},405 L${x+105},375" fill="none" stroke="${C.line}" stroke-width="7" stroke-dasharray="8 8"/>`;
+    body += lines(x + 22, 480, stateNotes[index], 15, C.muted, 500, 1.65);
   });
-  body += `<rect x="914" y="915" width="986" height="138" rx="4" fill="${C.ink}"/>`;
-  body += text(946, 952, zh ? '自动 PASS / FAIL 的相对拓扑规则' : 'RELATIVE TOPOLOGY RULES THAT CAN PASS / FAIL', 17, C.cyan, 700);
-  body += lines(946, 990, zh ? [
-    '关闭全部AI空间后，公众链仍连续；无AI服务直接接主链。',
-    '任何技术区不得成为无障碍必经路；RETURN后恢复普通用途。',
+  const continuity = zh ? [
+    ['普通步行', '连续'], ['无障碍主链', '连续'], ['人工服务', '连续'], ['商业与休息', '连续'], ['铁路遗产解释', '连续'],
   ] : [
-    'With every AI zone closed, the public chain remains continuous and reaches non-AI service.',
-    'No tech zone is an accessible-route dependency; RETURN restores ordinary use.',
-  ], 17, C.white, 400, 1.5);
+    ['ordinary walking', 'continuous'], ['accessible main line', 'continuous'], ['staffed service', 'continuous'], ['commerce + rest', 'continuous'], ['railway interpretation', 'continuous'],
+  ];
+  body += text(914, 694, zh ? '五项不断线验收' : 'FIVE CONTINUITY ACCEPTANCE ITEMS', 20, C.ink, 700);
+  continuity.forEach((item, index) => {
+    const y = 740 + index * 58;
+    body += `<circle cx="932" cy="${y-6}" r="8" fill="${C.green}"/>${text(954, y, item[0], 16, C.ink, 600)}${text(1880, y, item[1], 15, C.green, 700, 'end')}`;
+  });
+  body += `<rect x="914" y="1040" width="986" height="42" rx="4" fill="${C.ink}"/>${text(938, 1068, zh ? '关闭技术功能，只改变侧线状态；任何AI空间都不得成为公众必经路。' : 'CLOSING TECH CHANGES THE SIDING ONLY; NO AI SPACE MAY BECOME A REQUIRED CIVIC ROUTE.', 14, C.white, 650)}`;
   return svgWrap(body + footer(lang));
 }
 
@@ -268,12 +277,12 @@ function metricsFigure(lang) {
   const colors = [C.cyan, C.blue, C.green, C.coral];
   const values = zh ? [
     ['6,266 条 OSM要素', '3处重点区现状切片', '450个建筑基底落入临时框', '时间戳随包保存'],
-    ['3站 / 3张票', '12场景 / 4产业验证', '14天最小试点', '14单元 / 10缝合'],
+    ['3站 / 3张票', '12场景 / 4产业验证', '90天最小试点', '14单元 / 10缝合'],
     ['生命周期 24 / 24', '站点拓扑 29 / 29', '旗舰合同 37 / 37', 'OSM复算 5 / 5'],
     ['official polygon', '权属 / 道路红线 / 管线', '现场尺寸 / 人流 / 无障碍', '预算 / 保险 / 许可 / 主体'],
   ] : [
     ['6,266 OSM features', 'three key-area context slices', '450 mapped footprints in rough boxes', 'source timestamp shipped'],
-    ['3 stations / 3 tickets', '12 scenarios / 4 industry tests', '14-day minimum pilot', '14 units / 10 stitches'],
+    ['3 stations / 3 tickets', '12 scenarios / 4 industry tests', '90-day minimum pilots', '14 units / 10 stitches'],
     ['lifecycle 24 / 24', 'station topology 29 / 29', 'flagship contracts 37 / 37', 'OSM recomputation 5 / 5'],
     ['official polygons', 'ownership / redlines / utilities', 'site dimensions / flows / access', 'budget / insurance / permits / actors'],
   ];
@@ -313,6 +322,39 @@ function metricsFigure(lang) {
   return svgWrap(body + footer(lang));
 }
 
+function pilotFigure(lang) {
+  const zh = lang === 'zh';
+  let body = header(5, '90天试点：失败也留下城市资产', '90-DAY PILOTS: FAILURE STILL LEAVES CITY ASSETS', '面积、构件、主体、停止、撤出与保留均按城市设计量级判断', 'PLANNING-SCALE AREA, KIT, ACTORS, STOP, EXIT AND RETAINED VALUE', lang);
+  const pilots = zh ? [
+    ['众智园 / TEST', '800–1,500 m²', '轻建造级 · 数百万元级', '可拆围界 / 观察台 / 急停 / 撤机路', '场地运营 / 产品 / 安全 / 独立观察', '越界、急停失效或公众线冲突', '公众院落 / 安全模块 / 失败档案'],
+    ['AI原点 / RELEASE', '300–800 m²', '家具+轻改造 · 百万元级', '发布双台 / 权利墙 / 撤回台 / 旁观阶梯', '场地运营 / 权利复核 / 发布 / 社区代表', '许可HOLD、撤回失灵或普通使用受阻', '公共长桌 / 教学空间 / 开放方法档案'],
+    ['大钟寺 / USE', '500–1,000 m²', '家具+轻建造 · 百万至数百万元级', '人工窗口 / 触觉导引 / 投诉台 / 储位', '公共服务 / 无障碍 / 维护 / 用户代表', '无AI服务中断、无障碍受阻或异议未闭环', '人工窗口 / 触觉地图 / 座椅与普通商业'],
+  ] : [
+    ['ZHONGZHI / TEST', '800–1,500 m²', 'LIGHT BUILD · MULTI-MILLION CNY BAND', 'REMOVABLE EDGE / VIEWING / E-STOP / EXIT ROUTE', 'SITE OPS / PRODUCT / SAFETY / INDEPENDENT OBSERVER', 'BOUNDARY BREACH, STOP FAILURE OR CIVIC CONFLICT', 'CIVIC COURT / SAFETY KIT / FAILURE ARCHIVE'],
+    ['AI ORIGIN / RELEASE', '300–800 m²', 'FURNITURE + LIGHT RETROFIT · MILLION CNY BAND', 'DUAL TABLE / RIGHTS WALL / WITHDRAWAL / STEPS', 'SITE OPS / RIGHTS / RELEASE / COMMUNITY', 'LICENCE HOLD, WITHDRAWAL FAILURE OR CIVIC USE BLOCKED', 'PUBLIC TABLE / LEARNING / OPEN METHOD ARCHIVE'],
+    ['DAZHONGSI / USE', '500–1,000 m²', 'FURNITURE + LIGHT BUILD · LOW–MULTI MILLION CNY', 'STAFFED WINDOW / TACTILE WAY / COMPLAINT / STORAGE', 'PUBLIC SERVICE / ACCESS / MAINTENANCE / USERS', 'NON-AI OUT, ACCESS BLOCKED OR OPEN COMPLAINT', 'STAFFED WINDOW / TACTILE MAP / SEATING + COMMERCE'],
+  ];
+  const phaseLabels = zh ? ['01–14 基线', '15–45 建造', '46–75 开放', '76–90 退出'] : ['01–14 BASE', '15–45 BUILD', '46–75 OPEN', '76–90 EXIT'];
+  pilots.forEach((pilot, index) => {
+    const x = 58 + index * 636;
+    const color = stationColors[index];
+    body += `<rect x="${x}" y="160" width="606" height="930" rx="5" fill="white" stroke="${C.line}"/><rect x="${x}" y="160" width="606" height="10" fill="${color}"/>
+      ${text(x+26, 218, pilot[0], 24, C.ink, 700)}${text(x+26, 270, pilot[1], 30, color, 700)}${text(x+26, 307, pilot[2], 13, C.muted, 700)}`;
+    phaseLabels.forEach((phase, phaseIndex) => {
+      const px = x + 26 + phaseIndex * 139;
+      body += `<rect x="${px}" y="350" width="128" height="58" rx="5" fill="${phaseIndex === 3 ? C.paleCoral : [C.paleBlue,C.paleGreen,C.paleAmber][index]}" stroke="${phaseIndex === 3 ? C.coral : color}"/>${text(px+64, 384, phase, zh ? 13 : 11, phaseIndex === 3 ? C.coral : C.ink, 700, 'middle')}`;
+    });
+    const rows = zh ? [['构件',pilot[3]],['所需主体类型',pilot[4]],['立即停止',pilot[5]]] : [['KIT',pilot[3]],['REQUIRED ACTORS',pilot[4]],['STOP NOW',pilot[5]]];
+    rows.forEach((row, rowIndex) => {
+      const y = 472 + rowIndex * 150;
+      body += text(x+26, y, row[0], 13, C.muted, 700) + lines(x+26, y+38, [row[1]], zh ? 16 : 13, C.ink, 600, 1.5) + `<line x1="${x+26}" y1="${y+104}" x2="${x+580}" y2="${y+104}" stroke="${C.line}"/>`;
+    });
+    body += `<rect x="${x+26}" y="920" width="554" height="126" rx="5" fill="${C.paleGreen}" stroke="${C.green}"/>${text(x+48, 957, zh ? '90天后留下' : 'LEFT AFTER DAY 90', 14, C.green, 700)}${lines(x+48, 992, [pilot[6]], zh ? 16 : 13, C.ink, 650, 1.5)}`;
+  });
+  body += text(58, 1128, zh ? '量级声明：面积、实施强度与投资不是测绘、概算、招标预算或实施承诺；正式条件到位后由专业团队重建。' : 'BAND NOTE: AREA, BUILD INTENSITY AND COST ARE NOT SURVEY, COST PLAN, TENDER OR DELIVERY COMMITMENT; PROFESSIONAL TEAMS REBUILD AFTER FORMAL EVIDENCE.', 14, C.muted, 500);
+  return svgWrap(body + footer(lang));
+}
+
 function render(svg, output) {
   const temp = path.join(os.tmpdir(), `xjz-${process.pid}-${path.basename(output)}.svg`);
   fs.writeFileSync(temp, svg);
@@ -324,12 +366,10 @@ function render(svg, output) {
 const jobs = [
   ['land-use-structure.png', landUseFigure('zh')],
   ['land-use-structure.en.png', landUseFigure('en')],
-  ['key-areas.png', keyAreasFigure('zh')],
-  ['key-areas.en.png', keyAreasFigure('en')],
   ['mobility-bluegreen.png', mobilityFigure('zh')],
   ['mobility-bluegreen.en.png', mobilityFigure('en')],
-  ['metrics-evidence.png', metricsFigure('zh')],
-  ['metrics-evidence.en.png', metricsFigure('en')],
+  ['metrics-evidence.png', pilotFigure('zh')],
+  ['metrics-evidence.en.png', pilotFigure('en')],
 ];
 
 for (const [name, svg] of jobs) {

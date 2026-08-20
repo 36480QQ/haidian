@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "agent_id": "xyh202131",
-  "agent_name": "xyh202131 opencode AI agent",
+  "agent_name": "xyh202131 AI design agent",
   "role": "ai_agent_submission_author",
   "model": "OpenAI Codex (GPT-5)",
   "model_family": "gpt",
@@ -695,5 +695,78 @@
       "qa_boundary": "Deterministic publication QA proves reproducibility and legibility only, not font licence, field evidence, accessibility certification, professional acceptance, approval, rights clearance or maturity."
     },
     "reality_boundary": "G0 concept and editorial audit only; no field result, public feedback, approval, staffing commitment, accessibility result, real recovery duration, independent clearance or maturity upgrade."
+  },
+  "round_50_provenance": {
+    "scope": "Expert review packet alignment and decision-grade risk summary only; no new design direction.",
+    "serial_gate": {
+      "predecessor_pr": 3491,
+      "predecessor_merge_sha": "362986d3040b98891d8f99b07f25b2dd165cb3fa",
+      "canonical_base_sha": "e289e4abc305b64f06add372cdec2fcb2a8a4db7",
+      "predecessor_merge_in_base": true,
+      "competing_package_open_pr_count": 0,
+      "clean_before_edit": true
+    },
+    "red_before": {
+      "review_packet_lines": 1316,
+      "review_packet_bytes": 209080,
+      "version_iteration_declared": false,
+      "risk_json_present": false,
+      "assumption_count_before_decision_route": 23,
+      "quick_summary_used_haidian_public_capability_test": false,
+      "finding_type": "editorial_review_only"
+    },
+    "alignment": {
+      "version": "50.0",
+      "iteration": "50.0",
+      "risk_dimensions": 8,
+      "risk_score_meaning": "G0 editorial review priority only",
+      "quick_judgements": 5,
+      "risk_routes": 8,
+      "primary_navigation_items": 6,
+      "review_index_paths": 156,
+      "rights_records": 156
+    },
+    "browser_qa": {
+      "cases": 12,
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "javascript_modes": [
+        "enabled",
+        "disabled"
+      ],
+      "keyboard_skip_pass": true,
+      "reduced_motion_pass": true,
+      "print_pass": true,
+      "external_requests": 0,
+      "autoplay": false
+    },
+    "publication_rebuild": {
+      "trigger": "The pre-rebuild A3 pages 13-14 and A0 boards 7-8 lacked the Round 50 decision-risk summary and sole machine locator already present in the report, visual and review index; fixed-page surfaces therefore failed cross-surface alignment.",
+      "action": "Rebuilt the four existing bilingual publications in place without adding pages. A3 pages 13-14 and A0 boards 7-8 now expose the same eight risk priorities, their G0-only meaning, and the sole risk.json to expert-review-packet locator.",
+      "page_counts": {
+        "a3_zh": 14,
+        "a3_en": 14,
+        "a0_zh": 8,
+        "a0_en": 8
+      },
+      "two_fresh_processes_byte_identical": true,
+      "sha256": {
+        "a3_zh": "38e06a6dd4e4c5d934f05ea7eed54b38888b11a1c51baf521fa2be81bfd854e0",
+        "a3_en": "de1679fbe69d26b05007dcd78da457234894ecdd5dfb0b5597ef600563736cba",
+        "a0_zh": "2cd6644c11155faa0dc55f0e9716aa3b6338a603e6d5e532108f3cdd4d39e6f1",
+        "a0_en": "39c9f4dd5c0f6720682454d83b39620bdafbd6d2f005a6a7341dde78b48e5b54"
+      },
+      "full_page_qa": 44,
+      "blank_encrypted_clipped_out_of_bounds_or_replacement_glyph_pages": 0,
+      "visual_qa": "All four colour contact sheets, all four grayscale contact sheets and all four decision-page detail sheets were inspected; no clipping, overlap, hierarchy regression or ambiguous risk-score claim was found.",
+      "qa_boundary": "Deterministic rebuild and visual QA establish publication consistency and legibility only; they do not establish font licence, field evidence, accessibility certification, expert acceptance, approval, rights clearance or maturity."
+    },
+    "new_media": false,
+    "new_model_call": false,
+    "new_external_source": false,
+    "geometry_metrics_frozen": true,
+    "reality_boundary": "Twin-Track remains the sole master idea; three prototypes, JZ-AIOS, G0-G3, four axes, three carriers, evidence and rights gates, nine geometry files, metrics.json, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, proof-only failure stop, non-authorising recovery, not_fully_cleared, zero independent file-level audits and fixed PDF page counts remain unchanged. Risk scores and review-packet alignment prove no probability, jury grade, expert acceptance, field result, approval, G1 or reuse licence."
   }
 }

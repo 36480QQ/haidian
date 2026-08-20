@@ -4,31 +4,25 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 50 expert review packet alignment / 第 50 轮专家评审包对齐
+
+串行门、权威文件复读与基线六闸均在 `main@e289e4abc305b64f06add372cdec2fcb2a8a4db7` 完成。修复前 RED 为：review packet 未声明版本／轮次、缺海淀公共能力判断和 `risk.json`，23 项假设先于决策路由，展示名带旧工具标签；这些只是编辑审查，不是评审、专家或公众反馈。
+
+本轮不增加设计内容。双语元数据以合法语义版本 `50.0` 标记本轮；`risk.json` 用八维 G0 编辑优先级回链 assumptions、H01—H07 与 P01—P07，政策／空间／实施／运维为最高阻断组。review index、六项导航 visual、报告与 PDF 复用同一五项快速判断、风险路由和唯一机器入口。12 个浏览器情形通过；A3 14+14、A0 8+8 原位重建，两次新进程逐文件字节一致，44 页彩色、灰度与细节 QA 通过。当前为 156 个包路径、155 个非 manifest 内容路径、156 条权利记录；独立清权仍为 0，状态仍为 `not_fully_cleared`。
+
+无新媒体、模型调用、来源、品牌、场景、项目、重点区、治理合同、成熟度或页面。九份 geometry、`metrics.json`、12/8/3/36、三原型、G0、NO-GO、provisional、现实结果 0、同任务非 AI 路径、故障只停验证叠层、恢复非授权与专业否决均冻结。风险分数、确定性构建与机器 PASS 不证明概率、评审评分、现场、无障碍认证、批准、G1、清权或复用许可。
+
+Round 50 passed the serial gate, authority-file reread and clean six-gate baseline at `main@e289e4abc305b64f06add372cdec2fcb2a8a4db7`. Before-fix RED was an undeclared review-packet version/iteration, no Haidian public-capability judgement or `risk.json`, 23 assumptions before any decision route, and a stale tool label. These are editorial findings, not jury, expert or public feedback.
+
+No design content is added. Legal semantic version `50.0` identifies the round. Eight G0 editorial priorities in `risk.json` route assumptions, H01–H07 and P01–P07; policy, spatial, implementation and operations are the highest blocker group. The review index, six-item visual, reports and PDFs share five quick judgements, risk routes and one machine entry. Twelve browser cases pass. Fixed A3 14+14 and A0 8+8 publications are byte-identical across two fresh processes and pass 44-page colour, grayscale and detail QA. Registration is 156 package paths, 155 non-manifest paths and 156 rights records; independent audits remain zero and status remains `not_fully_cleared`.
+
+No media, model call, source, brand, scenario, project, key area, governance contract, maturity or page is added. Nine geometry files, `metrics.json`, 12/8/3/36, three prototypes, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, proof-only failure stop, non-authorising recovery and professional veto remain frozen. Risk scores, deterministic builds and machine PASS prove no probability, review grade, field state, accessibility certification, approval, G1, clearance or reuse licence.
+
 ## Round 49 Haidian social grounding / 第 49 轮海淀社会落位
 
-第 49 轮在 PR #3407 合并、merge `3fe9b9ddab0d72596d4fc0660d6e1554a22d1ed0` 进入 canonical `main`、同包开放 PR 为 0 且工作树洁净后开始，工作基线为 `main@9e7d39010b74b95190f1ca3325361757db02ae90`。冷读基线确认三个真实缺口：入口在 G0 之前没有回答“为何是海淀”；账户、设备、专业语言、可支配时间和算法评价门槛没有以前台设计问题出现；高校—居民、企业—公共、平台—非用户、专业—日常四类关系没有被压成可见的空间后果。这些结论只来自编辑审查，不是公众反馈、专家意见、实测群体结果或地方绩效。
+第 49 轮把“为何海淀”收束为一个可否证判断：创新密度只有在普通人无需账户、设备或专业身份仍可使用、质疑和退出时，才成为公共能力。五类排除门槛与四类社会关系被转译为非注册入口、企业展示旁的普通任务、验证支路外的完整非 AI 路径、可到达的人工交接与专业否决。`site-overview` 与 `mobility-bluegreen` 原位重建；三处仍可由隔离庭院、居民街道／双庭院、四向通勤／离线服务无标题区分。完整哈希与验证保留在 `changelog.md#v490---2026-08-19` 和 `agent.json#round_49_provenance`。
 
-修复以一句可否证的判断控制所有前台表面：海淀的创新密度，只有在普通人无需账户、设备或专业身份，仍可使用、质疑和退出时，才会转化为公共能力。“AI 高地不能成为技术飞地”只解释社会风险，不形成新品牌、新方向或新成熟度。正文将五类排除门槛与四类社会关系放在 G0 之前；空间后果分别是共享街道的非注册入口、企业展示旁的普通任务、平台验证支路外的完整非 AI 路径，以及人工交接与专业否决可到达的前台。
-
-`site-overview` 和 `mobility-bluegreen` 两组双语 SVG/PNG 在原路径重建，普通路径始终先于可选验证，故障只停止证明叠层。三处既有图件通过无标题测试：众智园仍由绕行验证庭与隔离庭院识别，原点社区由居民街道、双庭院和四节点识别，大钟寺由四向通勤关系和离线服务识别，因此不为了轮次重画。`land-use-structure`、`metrics-evidence`、`twin-track-cover.webp` 与 `ordinary-life-scenes.webp` 保留原字节。
-
-双语 visual 将“为何海淀—排除门槛—三处空间责任”置于首屏，主导航仍为 6 项；桌面/移动、JavaScript/无 JavaScript、键盘、减少动态、打印与展开披露共 12 个浏览器情境均无外部请求、控制台错误或页面级横向溢出。48 秒动态必须由用户启动，仍只是界面节奏，不表示现实恢复时长。
-
-报告由双语权威正文重新渲染；A3 14+14、A0 8+8 页数不变。四份 PDF 在两个新进程中逐文件字节一致，SHA-256 为中文 A3 `a9aff6f073a6dcc8b940807f7a4045f572acbc09925d84e14c12afa1964f5955`、英文 A3 `97328cd3bd36c3335ee9ca16a21e147678be6e02cffa1ae121c10daea7cefff0`、中文 A0 `0373821c8d64f27e4b05f4e573fe1c39d128f21ee2233be65755e6e421b5d466`、英文 A0 `911f9030cedf0a4017a25ddf2a99531fdff1e1db7d4fa8374dd63eeeacf6643e`。44 页全页、灰度和细节检查未见空白、加密、裁切或重叠；系统字体替代只用于本地显示 QA，不构成字体许可。
-
-本轮无新媒体。没有新增品牌、场景、项目、重点区、治理合同、成熟度、geometry、metric、事实或页面。T-02 继续只证明固定合成复演的 10/10 exact、4/4 stop mapping 和 13/13 negative controls fail-closed；现实模型/API/服务/现场/批准/责任接受/独立复测/G1 结果仍为 0 或 unknown。九份 geometry、`metrics.json`、12/8/3/36、G0、NO-GO、provisional、普通生活与同任务非 AI 路径、恢复非授权、`not_fully_cleared` 和独立逐文件清权 0 全部冻结。
-
-Round 49 began only after PR #3407 merged, merge `3fe9b9ddab0d72596d4fc0660d6e1554a22d1ed0` entered canonical `main`, no package PR remained open, and the worktree was clean; the working base is `main@9e7d39010b74b95190f1ca3325361757db02ae90`. The cold-read baseline found three real gaps: the opening did not answer “why Haidian” before G0; account, device, professional-language, disposable-time and algorithmic-evaluation thresholds were not front-stage design questions; and university–resident, enterprise–public, platform–non-user and professional–everyday relations were not compressed into visible spatial consequences. These are editorial-review findings, not public feedback, expert opinion, measured group outcomes or local performance.
-
-One falsifiable judgement now controls every front-stage surface: Haidian's density of innovation becomes public capability only when ordinary people can still use, question, and exit without an account, device, or professional identity. “An AI highland must not become a technical enclave” explains a social risk; it creates no new brand, direction or maturity. The proposal places five exclusion thresholds and four social relations before G0. Their spatial consequences are a no-registration entrance on the shared street, ordinary tasks beside enterprise display, a complete non-AI path outside the platform-proof branch, and a reachable staffed handoff with professional veto.
-
-The bilingual `site-overview` and `mobility-bluegreen` SVG/PNG groups are rebuilt in place. The ordinary path always precedes optional proof, and failure stops only the proof overlay. Existing three-site figures pass title-hidden testing: Zhongzhiyuan remains identifiable by a bypass proof route and isolated court, Origin Community by its resident street, paired courts and four nodes, and Dazhongsi by a four-way commute relation plus off-route service. They are therefore not redrawn merely to create change. `land-use-structure`, `metrics-evidence`, `twin-track-cover.webp` and `ordinary-life-scenes.webp` retain their bytes.
-
-The bilingual visual places why Haidian, exclusion thresholds and the three spatial responsibilities in the first fold while retaining six primary navigation items. Twelve browser cases across desktop/mobile, JavaScript/no JavaScript, keyboard, reduced motion, print and expanded disclosure report no external request, console error or page-level horizontal overflow. The 48-second motion remains user-started interface pacing, never a real recovery duration.
-
-Reports are re-rendered from the bilingual authority text. Page counts remain A3 14+14 and A0 8+8. Two fresh processes are byte-identical per PDF: Chinese A3 `a9aff6f073a6dcc8b940807f7a4045f572acbc09925d84e14c12afa1964f5955`, English A3 `97328cd3bd36c3335ee9ca16a21e147678be6e02cffa1ae121c10daea7cefff0`, Chinese A0 `0373821c8d64f27e4b05f4e573fe1c39d128f21ee2233be65755e6e421b5d466`, and English A0 `911f9030cedf0a4017a25ddf2a99531fdff1e1db7d4fa8374dd63eeeacf6643e`. Full-page, grayscale and detail QA across all 44 pages finds no blank page, encryption, clipping or overlap. Local display font substitution is QA evidence only, not a font licence.
-
-This round has no new media. It adds no brand, scenario, project, key area, governance contract, maturity, geometry, metric, fact or page. T-02 still proves only 10/10 exact, 4/4 stop mapping and 13/13 negative controls fail-closed across fixed synthetic replay; real model/API/service/field/approval/duty-acceptance/independent-retest/G1 outcomes remain zero or unknown. Nine geometry files, `metrics.json`, 12/8/3/36, G0, NO-GO, provisional status, ordinary life and same-task non-AI paths, non-authorising recovery, `not_fully_cleared`, and zero independent file-level clearance audits remain frozen.
+Round 49 makes “why Haidian” falsifiable: innovation density becomes public capability only when ordinary people can use, question and exit without an account, device or professional identity. Five exclusion thresholds and four social relations become a no-registration entry, ordinary tasks beside enterprise display, a complete non-AI route outside proof, and reachable staffed handoff/professional veto. `site-overview` and `mobility-bluegreen` were rebuilt in place; the three sites remain title-hidden distinguishable by isolated court, resident street/paired courts, and four-way commute/offline service. Full hashes and checks remain in `changelog.md#v490---2026-08-19` and `agent.json#round_49_provenance`.
 
 ## Round 48 score-visible flagship / 第 48 轮评分可见旗舰入口
 
