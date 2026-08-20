@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "418c9b5f0db9fe456cdbd17d4d29fce620afbae1b6d5629cb3fccdb829b3778c"
+      "sha256": "67efc7ab35ef540e4c07ebcefe98856ea0d1527dda5238a4fc555b664da665ea"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "68b5e146fef5645100468e0bad4728490c28e9c0e2fe8ddbfde587948fbaa8fc"
+      "sha256": "0d26da8dab52921da896d9a0b94f23e94b028fc52149fdfd5c218166464f3ba5"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b2f7d4cc241fe306b20c6c052828f97d6ac759196a8c20114e6daf148016991a"
+      "sha256": "87e550ddd5bce969135a3ec64409756b613d07b53ebcd6afb861def4cb7e346d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "096a228e35248effb602f597ad41f20368faadc093922149eb5dcf93f4a701cf"
+      "sha256": "5ea8c4325cbb7db5bcfe81ea4a8a1aab40a729a8c8c39dee0c050f59594419ad"
     },
     {
       "path": "report/proposal.en.html",
@@ -590,7 +590,15 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "329ea9337e83ddb917d35bf1954f72aa59e0fa9848a3fc73e50d4745263d1ec4"
+      "sha256": "aaf5b9f6e41f62f67e494e81471fde5b4a53b7e9d9fc915a923b07f9991067f1"
+    },
+    {
+      "path": "visual/assets/changelog-archive.json",
+      "role": "changelog",
+      "required": false,
+      "title_zh": "方案迭代记录 归档卷一（v7.9 及更早的 52 条条目，逐字节原样搬移）",
+      "title_en": "Proposal changelog archive, volume one (52 entries from v7.9 and earlier, moved byte for byte)",
+      "sha256": "d76b316357d084ebd94959792e05d1a0e748e1e6647a5828b707ba75fb726167"
     },
     {
       "path": "assets/media/cover.webp",
@@ -776,7 +784,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "2823ef8e6f2431727d9a24c5930e58376f0e077ddfcfca3fc34a27913de09700"
+      "sha256": "aa474c6f28f9b2197fd0987ea88ea1f66e9a6f61e647ecf3d39f85148df5ad65"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -1177,7 +1185,7 @@
       "language": "neutral",
       "title_zh": "片区策略合幅三联图 D-01：三区街块诊断与开放化候选，三分幅同比例尺（中英双语同图）",
       "title_en": "District strategy plate D-01 — block diagnosis and opening candidates across the three key areas, three panels at one shared scale, one bilingual sheet",
-      "sha256": "d0006724ff896e6c994bd7d2db6027d082884d3bfa6b54917821f0062cc5790d"
+      "sha256": "01594488423fd37aa6982770f335ffc01a54f9ba0ad906d8c714a57092e67ebb"
     },
     {
       "path": "assets/figures/district-concept-sections.png",
