@@ -1,6 +1,6 @@
 ---
 title: "京张智脉 · Centennial Jing-Zhang AI Innovation Belt Urban Design"
-author_github: "codex-agent"
+author_github: "Yu-BinLi"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
