@@ -1552,6 +1552,19 @@
       "why_en": "The published reason enumerates three branches - a file absent, one over the per-image cap, the packet over the image count. **The fourth is not in it**: the pixel-pair check was added later and the reason was never revisited. What it called a fact about the file system rather than about any file this harness can write was really a fact about this harness writing only text — **a limitation of the tool published as a property of the gate**."
     },
     {
+      "id": "M180",
+      "gate": "walk_speed_qa.py",
+      "target": "reach_check.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把十分钟步行上限从「由声明速度算出」改回「写死 800 m」——**本轮之前就是这样**。800 m 是 1.33 m/s 走十分钟，而 FIG.22 公布的一般成人速度是 1.2 m/s、P5 是 0.6 m/s，1.33 这个速度全包再无第二处。闸门比对「上限是否等于所声明速度 × 分钟数」，构建停。",
+      "what_en": "Put the ten-minute walk limit back to a typed 800 m instead of computing it from the declared speed - **the state this package shipped in**. 800 m is ten minutes at 1.33 m/s, while FIG.22 publishes 1.2 m/s for an adult and 0.6 m/s for P5, and 1.33 appears nowhere else in the package. The gate checks the limit against the declared speed times the declared minutes and the build stops.",
+      "why_zh": "一个写在速度旁边的距离会和速度分家；一个由速度算出来的距离不会。这条距离还是 W1 规则的判据——读者拿它去判一个街区合不合格，**它变了而规则不变，等于换了尺子不换刻度**。",
+      "why_en": "A distance typed beside a speed drifts from it; a distance computed from it cannot. This one is also the threshold in rule W1, which a reader applies to decide whether a block passes, so moving it without moving the rule is changing the ruler while leaving the graduations alone."
+    },
+    {
       "id": "M175",
       "gate": "board_page_reach_qa.py",
       "target": "build_matrix_evidence.py",
@@ -2163,7 +2176,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 176,
+  "caught": 177,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2287,6 +2300,7 @@
     "upstream_drift_qa.py",
     "upstream_validator_qa.py",
     "visual_packet_qa.py",
+    "walk_speed_qa.py",
     "whitespace_rules_qa.py"
   ],
   "gates_not_covered": {
@@ -2328,6 +2342,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 123 道闸门，其中 122 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 123 gates, 122 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 124 道闸门，其中 123 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 124 gates, 123 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
