@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.787,
+ "overall_ratio": 0.786,
  "floor": 0.75,
  "sections": [
   {
@@ -75,9 +75,9 @@
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 5418,
-   "en_words": 3279,
-   "ratio": 0.772,
+   "zh_chars": 5456,
+   "en_words": 3277,
+   "ratio": 0.766,
    "pass": true
   },
   {
@@ -96,9 +96,9 @@
   },
   {
    "section": "The instrument on the site's own data",
-   "zh_chars": 4941,
-   "en_words": 3073,
-   "ratio": 0.793,
+   "zh_chars": 4967,
+   "en_words": 3072,
+   "ratio": 0.789,
    "pass": true
   },
   {
