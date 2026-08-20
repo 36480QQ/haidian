@@ -101,7 +101,7 @@ Quayside 的协议机制另作开发责任对照，不引用其空间形态。[s
 
 公共基线脊是不断线的步行、自行车、无障碍、蓝绿和人工服务系统；两翼是概念性横向缝合，不是新增道路红线。用地采取四类“界面”而非法定分类：研发学习、遗产公园、产业服务、社区生活；先修接口、首层和公共空间，再在权属与控规明确后讨论建筑强度。[data:geometry/roads.geojson#ROAD-001] [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure]
 
-六条东西缝合联系以 `STITCH-01—06` 固定空间地址：[metric:east_west_stitch_count] [metric:east_west_stitch_count] [metric:east_west_stitch_count] 每座证明场各两条，分别把周边街区入口与公共基线脊相接；它们只表达连续步行、无障碍和服务界面的优先方向，不推定道路红线。总体轴测用同一组 `SCN-001—012` 节点连接三站、两翼和公共基线，形成从总图到场景卡可追踪的空间索引。[data:geometry/roads.geojson#STITCH-01] [metric:east_west_stitch_count]
+六条东西缝合联系以 `STITCH-01—06` 固定空间地址：每座证明场各两条，分别把周边街区入口与公共基线脊相接；它们只表达连续步行、无障碍和服务界面的优先方向，不推定道路红线。总体轴测用同一组 `SCN-001—012` 节点连接三站、两翼和公共基线，形成从总图到场景卡可追踪的空间索引。[data:geometry/roads.geojson#STITCH-01] [metric:east_west_stitch_count]
 
 ![纵向公共基线与三站两翼总体轴测](assets/figures/site-overview.png)
 
@@ -109,7 +109,7 @@ Quayside 的协议机制另作开发责任对照，不引用其空间形态。[s
 
 每个点位只允许三类构件：①永久公共基线——坡道、盲道、静态标牌、树荫、座椅、饮水、人工窗口和常规接驳；②可拆 AI 插件——机器人、传感、端侧机柜、可选终端和低速接驳；③公开证据界面——以非识别、可理解的方式显示运行、暂停、人工接管、指标状态和投诉入口。AI 移除后，普通城市服务必须仍完整。[depth:municipal_new_infrastructure]
 
-三类构件进一步固定为九个可复用 ID：`B01` 连续无障碍路径、`B02` 遮阴座椅饮水、`B03` 静态导视与人工服务；`A01` 低速机器人测试湾、`A02` 端侧算力机柜、`A03` 可选服务终端；`E01` 状态与指标牌、`E02` 人工接管与急停台、`E03` 反馈申诉与退出公告。九个 ID 同时出现在空间图集、重点区平面、场景数据和交互展；[metric:spatial_component_type_count] [metric:spatial_component_type_count] [metric:spatial_component_type_count] 每项还登记空间/界面需求、与公共路径的最小隔离、电力/数据/人工/维护接口、开放—试验—暂停—退役四态，以及退役资产去向。[data:visual/assets/spatial-atlas.json] [metric:spatial_component_type_count]
+三类构件进一步固定为九个可复用 ID：`B01` 连续无障碍路径、`B02` 遮阴座椅饮水、`B03` 静态导视与人工服务；`A01` 低速机器人测试湾、`A02` 端侧算力机柜、`A03` 可选服务终端；`E01` 状态与指标牌、`E02` 人工接管与急停台、`E03` 反馈申诉与退出公告。九个 ID 同时出现在空间图集、重点区平面、场景数据和交互展；每项还登记空间/界面需求、与公共路径的最小隔离、电力/数据/人工/维护接口、开放—试验—暂停—退役四态，以及退役资产去向。[data:visual/assets/spatial-atlas.json] [metric:spatial_component_type_count]
 
 AI 准入同时满足五道门：普通答案独立成立；服务同一任务与用户；不降低无障碍、公平与基本可靠性；数据、能耗、人工时间与生命周期可记录；有明确责任人、停止条件与恢复路径。证据不足时不是“先试再说”，而是保持普通答案并把 AI 标记为未准入。[metric:paired_scenario_count] [metric:measurement_contract_count]
 
@@ -117,7 +117,7 @@ AI 准入同时满足五道门：普通答案独立成立；服务同一任务�
 
 空间副命题为“**验真成环、共译成门、回执成廊；规则先编译，现场再证明**”。为保持已经合并版本的对象可追踪性，S7 继续使用稳定的 `V7-D-*` 几何 ID；版本名称不等于对象版本。公共路线、盲道、坡道、过街、路缘、接驳、试验边界、门廊、人工岗位、急停、消防、存储和撤场仍解析到同一 WGS84 证据链。[data:geometry/roads.geojson#V7-D-BASE-EW] [metric:key_area_count]
 
-证据按 `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending` 五级推进。[metric:evidence_ladder_level_count][metric:evidence_ladder_level_count][metric:evidence_ladder_level_count]S7 为 `E2_documented_prototype_ready`，T2/S2 为 `E1_concept_design`；另设不占用现场等级的 `T0_synthetic_contract_verified`。E2 不表示测绘、许可、搭建或现场基线完成，E4 必须由人类场景委员会签署 `adopt / revise / stop`。所有页面和交互首屏统一显示 `NOT FIELD-RUN`。[metric:measurement_contract_count] [metric:field_verification_result_count]
+证据按 `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending` 五级推进。[metric:evidence_ladder_level_count] S7 为 `E2_documented_prototype_ready`，T2/S2 为 `E1_concept_design`；另设不占用现场等级的 `T0_synthetic_contract_verified`。E2 不表示测绘、许可、搭建或现场基线完成，E4 必须由人类场景委员会签署 `adopt / revise / stop`。所有页面和交互首屏统一显示 `NOT FIELD-RUN`。[metric:measurement_contract_count] [metric:field_verification_result_count]
 
 ![三层空间构件剖面](assets/figures/section-prototype.png)
 
@@ -262,9 +262,9 @@ S7 另设 90 天最小试点：0—15 天核验测绘、权属、站口、消防
 
 ## 指标体系、面积复算与合规矩阵
 
-`known design` 只包括可复算的文档与设计覆盖：12 个双答场景、3 座回执地标、4 个季节程序、16 项 S7 构件和空间对象；它不代表现场成效。[metric:paired_scenario_count] [metric:key_area_count] [metric:paired_scenario_count]
+`known design` 只包括可复算的文档与设计覆盖：12 个双答场景、3 座回执地标、4 个季节程序、16 项 S7 构件和空间对象；它不代表现场成效。[metric:paired_scenario_count] [metric:key_area_count] 
 
-`synthetic verification` 是 12×7=84 项规则演练，84/84 通过只说明准入、状态跃迁、停止、恢复和退役契约在给定输入下自洽；`field unknown` 包括服务完成率、安全表现、满意度、能耗、单价、总价、无障碍失败率和恢复时长，交互展显示“待现场基线 / 待正式询价”。[metric:measurement_contract_count] [metric:measurement_contract_count] [metric:field_verification_result_count]
+`synthetic verification` 是 12×7=84 项规则演练，84/84 通过只说明准入、状态跃迁、停止、恢复和退役契约在给定输入下自洽；`field unknown` 包括服务完成率、安全表现、满意度、能耗、单价、总价、无障碍失败率和恢复时长，交互展显示“待现场基线 / 待正式询价”。[metric:measurement_contract_count]  [metric:field_verification_result_count]
 
 证据链为“任务问题 → 空间节点 → 重点区总平面 → 场景详图 → 典型剖面 → 普通/AI 两条路径 → 90 天试点 → 四季复核 → 最小数据 → 人工责任 → 共同指标 → 准入/停止 → 城市采纳回执 → adopt/revise/stop → 退出还场 → 公共知识归档”。回执和台账当前统一标记 `not_field_run / pending_field_evidence`，不把设计完成度误写成运行效果。公开界面不展示个人轨迹或未经核验的排名；模型输出不是采纳决定；`score_submission.py` 只作内部建议检查，不冒充正式评分。
 

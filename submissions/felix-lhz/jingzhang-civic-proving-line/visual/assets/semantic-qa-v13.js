@@ -40,6 +40,8 @@ for(const rel of ['proposal.md','proposal.en.md']){
   }
   const paragraphs=text.split(/\n\n+/);
   for(const p of paragraphs){
+    const local=[...p.matchAll(/\[metric:([a-z0-9_]+)\]/g)].map(m=>m[1]);
+    if(new Set(local).size!==local.length)fail(`${rel} repeats a metric citation in one paragraph: ${local.filter((x,i)=>local.indexOf(x)!==i).join(',')}`);
     if(/六条东西缝合|Six east–west stitches/.test(p)&&p.includes('[metric:key_area_count]'))fail(`${rel} stitches cite key_area_count`);
     if(/九个 ID|nine stable component IDs/.test(p)&&p.includes('[metric:paired_scenario_count]'))fail(`${rel} component types cite paired_scenario_count`);
     if(/E2 原型准备文件|E2 prototype preparation/.test(p)&&p.includes('[metric:measurement_contract_count]'))fail(`${rel} E2 kit cites measurement_contract_count`);

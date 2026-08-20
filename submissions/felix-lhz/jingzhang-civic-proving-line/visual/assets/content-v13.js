@@ -62,8 +62,6 @@ function updateNarrative(){
       s=s.replace('[data:visual/assets/tabletop-results.json] [metric:measurement_contract_count]','[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_case_count]');
       s=s.replace('任一阶段的失败门触发暂停或返回前一阶段。[data:visual/assets/two-answers.json] [metric:measurement_contract_count]','任一阶段的失败门触发暂停或返回前一阶段。[data:visual/assets/two-answers.json] [metric:s7_pilot_phase_count]');
       s=s.replace('证据按 `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending` 五级推进。','证据按 `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending` 五级推进。[metric:evidence_ladder_level_count]');
-      s=s.replace('九个 ID 同时出现在空间图集、重点区平面、场景数据和交互展；','九个 ID 同时出现在空间图集、重点区平面、场景数据和交互展；[metric:spatial_component_type_count] ');
-      s=s.replace('六条东西缝合联系以 `STITCH-01—06` 固定空间地址：','六条东西缝合联系以 `STITCH-01—06` 固定空间地址：[metric:east_west_stitch_count] ');
     }else{
       s=s.replace(/^summary:.*$/m,'summary: "Three alternatives face one ruler: a design that sacrifices the public route is publicly rejected, and the selected design then faces twelve measurement contracts."');
       s=replaceOnce(s,'Three unmistakable receipt landmarks—Zhongzhiyuan Verification Ring, AI Origin Translation Gate and Dazhongsi Receipt Porch—remain the spatial prototypes. S7 adds a 1:50 construction node to its 1:5000, 1:2000, 1:500, 1:200 and assembly views. Twelve scenarios each run seven deterministic tabletop cases, producing 84 rerunnable synthetic design-contract checks without adding scenes.[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json] [metric:measurement_contract_count]','Three unmistakable receipt landmarks—Zhongzhiyuan Verification Ring, AI Origin Translation Gate and Dazhongsi Receipt Porch—remain the spatial prototypes. S7 carries five review scales; 12 scenes each run seven deterministic tabletop cases, producing 84 rerunnable checks. Scale and verification cite their own recomputable metrics rather than generic scene counts.[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:synthetic_design_verification_case_count]','opening metrics en');
@@ -74,11 +72,25 @@ function updateNarrative(){
       s=s.replace('[data:visual/assets/tabletop-results.json] [metric:measurement_contract_count]','[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_case_count]');
       s=s.replace('Any failed gate pauses or returns the pilot.[data:visual/assets/two-answers.json] [metric:measurement_contract_count]','Any failed gate pauses or returns the pilot.[data:visual/assets/two-answers.json] [metric:s7_pilot_phase_count]');
       s=s.replace('Evidence progresses through `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending`.','Evidence progresses through `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending`.[metric:evidence_ladder_level_count]');
-      s=s.replace('The IDs recur in the atlas, station plans, scenario data and exhibit.','The IDs recur in the atlas, station plans, scenario data and exhibit.[metric:spatial_component_type_count]');
-      s=s.replace('Six east–west stitches, `STITCH-01—06`, give each proof field two addressed links','Six east–west stitches, `STITCH-01—06`, give each proof field two addressed links[metric:east_west_stitch_count]');
     }
     s=s.replace(/## 可测量的双答：十二份现场契约，不是十二个口号/,'## 入选之后再测量：十二份现场契约');
     s=s.replace(/## Measurable Two Answers: Twelve Field Contracts, Not Twelve Slogans/,'## Measure after selection: twelve field contracts');
+    // Normalize generated citations so repeated builds are byte-stable and a
+    // paragraph never cites the same metric more than once.
+    s=s.replace(/(?:\s*\[metric:east_west_stitch_count\])+(?=\s*每座)/,' ');
+    s=s.replace(/links(?:\[metric:east_west_stitch_count\])+(?= between)/,'links');
+    s=s.replace(/(?:\s*\[metric:spatial_component_type_count\])+(?=\s*每项)/,' ');
+    s=s.replace(/exhibit\.(?:\[metric:spatial_component_type_count\])+(?= Each)/,'exhibit.');
+    s=s.replace(/(?:\[metric:evidence_ladder_level_count\])+\s*(?=S7)/,'[metric:evidence_ladder_level_count] ');
+    s=s.replace(/固定空间地址：\s*(?=每座)/,'固定空间地址：');
+    s=s.replace(/交互展；\s*(?=每项)/,'交互展；');
+    s=s.replace(/退役资产去向。\[data:visual\/assets\/spatial-atlas\.json\](?! \[metric:spatial_component_type_count\])/,'退役资产去向。[data:visual/assets/spatial-atlas.json] [metric:spatial_component_type_count]');
+    s=s.replace(/retirement destination\.\[data:visual\/assets\/spatial-atlas\.json\](?! \[metric:spatial_component_type_count\])/,'retirement destination.[data:visual/assets/spatial-atlas.json] [metric:spatial_component_type_count]');
+    s=s.split(/(\n\n+)/).map(part=>{
+      if(/^\n+$/.test(part))return part;
+      const seen=new Set();
+      return part.replace(/\[metric:([a-z0-9_]+)\]/g,(all,id)=>seen.has(id)?'':(seen.add(id),all));
+    }).join('');
     fs.writeFileSync(path.join(ROOT,rel),s);
   }
 }
