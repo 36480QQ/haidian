@@ -6,12 +6,12 @@
 <title>人间京张 / JING-ZHANG FOR PEOPLE - proposal report</title>
 <style>
 :root {
-  --ink: #172033;
-  --muted: #667085;
-  --line: #d7dee8;
+  --ink: #252321;
+  --muted: #6d6761;
+  --line: #d8d1c9;
   --paper: #ffffff;
-  --bg: #f4f7fa;
-  --accent: #245b8f;
+  --bg: #ece9e4;
+  --accent: #b84b34;
 }
 * { box-sizing: border-box; }
 body {
@@ -22,7 +22,7 @@ body {
   line-height: 1.75;
 }
 main {
-  max-width: 980px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 42px 24px 72px;
   background: var(--paper);
@@ -30,10 +30,21 @@ main {
   box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
 }
 .hero {
+  display: grid;
+  grid-template-columns: .78fr 1.22fr;
+  gap: 28px;
+  align-items: center;
   border-bottom: 3px solid var(--accent);
-  padding-bottom: 24px;
+  padding-bottom: 28px;
   margin-bottom: 30px;
 }
+.hero-copy h1 { font-size: 40px; }
+.hero-figure { width: 100%; display: block; border: 1px solid var(--line); }
+.declaration { color: var(--accent); font-weight: 800; font-size: 22px; margin: 4px 0 10px; }
+.brand-system { margin-top: 18px; display: grid; gap: 8px; }
+.brand-system div { padding: 9px 11px; border-left: 4px solid var(--accent); background: #fbfaf7; color: var(--muted); font-size: 13px; }
+.brand-system b { color: var(--ink); margin-right: 8px; }
+main > h1 { display: none; }
 h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
 h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
 h3 { font-size: 20px; margin: 26px 0 10px; }
@@ -96,6 +107,7 @@ code {
 }
 @media (max-width: 720px) {
   main { padding: 26px 16px 52px; }
+  .hero { grid-template-columns: 1fr; }
   h1 { font-size: 26px; }
   h2 { font-size: 21px; }
 }
@@ -103,11 +115,13 @@ code {
 </head>
 <body>
 <main>
-<section class="hero">
-<h1>人间京张 / JING-ZHANG FOR PEOPLE</h1>
+<section class="hero"><div class="hero-copy">
+<h1>人间京张</h1>
+<p class="declaration">城市为人，AI为用。</p>
 <p class="summary">以京张铁路为所有人共享的公共生活主轴，将高度集聚的创新资源转化为可到达、可使用、可监督的城市能力；AI只在解决真实问题时介入，并始终保留人工与非数字路径。</p>
+<div class="brand-system"><div><b>1 品牌</b>人间京张</div><div><b>3 定位</b>文化带／生活体验带／融合创新带</div><div><b>5 功能</b>全栈创新／创新生态／AI+场景／活力城市／AI治理</div></div>
 <p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
-</section>
+</div><img class="hero-figure" src="../assets/figures/site-overview.png" alt="人间京张三层范围与公共生活主轴"></section>
 <h1>人间京张 / JING-ZHANG FOR PEOPLE</h1>
 <p>城市为人，AI为用。</p>
 <p>本方案的核心判断是：创新资源高度集聚，但人的生活更应当被关注。“人”明确指所有人，包括原有居民、科研人员、创业者、学生、服务劳动者、小商户、儿童、老人、残障人士和来访者。方案不以技术地标证明先进，而以人能否顺畅到达、平等使用、安心停留和参与治理检验城市创新。</p>
@@ -185,7 +199,7 @@ code {
 <figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="空间指标、项目与证据链综合图"><figcaption>空间指标、项目与证据链综合图</figcaption></figure>
 <h2>风险、版权与合规说明</h2>
 <p>规划风险分为七类：边界与控规、建筑与权属、交通市政、河道与生态、文保与风貌、产业与运营、数据与AI。每类风险都设置前置资料、复核主体和停止条件 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup>。临时边界仅用于概念研究；未取得道路红线、管线、消防、行洪、权属和逐栋建筑调查前，不承诺具体工程线位、拆改留、投资和开工时序。</p>
-<p>AI治理坚持数据最少、目的限定、公开登记、人工复核、拒绝权、申诉权、故障降级和退出删除。不得采集与任务无关的身份信息，不得使用涉密、内部或非公开空间数据，不得伪造官方背书、审批结论或实施承诺。算法不得替代规划审批、公共资源最终决定和高风险安全判断；一旦出现隐私泄露、歧视、不可解释高风险输出、人工入口失效或公共空间权利受损，立即停止测试并恢复非数字服务。</p>
+<p>AI治理坚持数据最少、目的限定、公开登记、人工复核、拒绝权、申诉权、故障降级和退出删除。空间分析仅使用经许可公开发布或赛事明确提供的数据；任何来源与使用权限无法核验的数据均不得进入方案证据链，也不得采集与任务无关的身份信息或伪造官方背书、审批结论和实施承诺。算法不得替代规划审批、公共资源最终决定和高风险安全判断；一旦出现隐私泄露、歧视、不可解释高风险输出、人工入口失效或公共空间权利受损，立即停止测试并恢复非数字服务。</p>
 <p>所有图片、地图、字体、案例、代码与数据按来源登记和许可边界使用。效果图表达概念意图，不冒充现状摄影或已建成事实；企业标识、肖像和第三方品牌不作为方案背书。图纸、网页与结构化数据统一标注“概念建议/临时工作边界/待专业复核”，使视觉吸引力不以误导性精确为代价。</p>
 <h2>参考资料</h2>
 <p>主控依据由赛事资料包、官方公告和智能体任务书构成 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。</p>
