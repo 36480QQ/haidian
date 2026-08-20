@@ -186,6 +186,37 @@ The proposal advances 12 AI scenario cards, of which 4 are AI industry testing a
 
 Privacy and human-review boundaries for scenario-space-operation mapping: All AI scenarios follow the principles of data minimization, open sources, explainability, and human review. Urban agents may assist in identifying slow-mobility breakpoints, public space heat maps, and facility maintenance needs, but do not replace planning approval and do not output unauthorized personal profiles. AI governance recommendations must undergo human review before entering implementation [source:AGENT-TASKBOOK].
 
+### Public Interest and Inclusion Safeguards
+
+The proposal addresses the diverse needs of multiple user groups, ensuring the AI Innovation Belt is not an elite-only space [depth:public_interest_inclusion]:
+
+**Vulnerable group safeguards**: Elderly residents can access all public services through non-digital pathways (AI scenario cards are marked "assistive" level, with human service windows retained). Accessibility needs of persons with disabilities are prioritized in the AI slow-mobility navigation scenario (S04), with barrier-free facility improvements included in near-term projects. Low-income residents and small business owners receive transition period protection during renewal, with controlled pace of format changes to prevent sharp rent increases.
+
+**Public participation mechanism**: Community feedback points are established to collect resident opinions on AI scenarios, with regular public open days to showcase scenario operation records. The operations alliance includes resident representative seats, ensuring community voices have expression channels in decision-making. The robot delivery pilot zone (S12) solicits opinions from residents along the route before piloting, with operating hours and speed limits set.
+
+**Accessibility for non-AI professionals**: AI scenario cards are described in non-technical language, allowing the public to understand scenario purposes, data boundaries, and safety guarantees without AI knowledge. The community AI education experience point (S04) is free for all residents, lowering AI literacy barriers. The open-source release hall (S01) and AI public art corridor (S11) are designed as public spaces that can be participated in and experienced without technical background.
+
+### AI Scenario Data-Governance Audit Table
+
+To enhance scenario auditability, each AI scenario card specifies data source, privacy boundary, AI role, and human review checkpoint [depth:metrics_recalculation] [data:compliance_matrix.json]:
+
+| Scenario | Data Source | Privacy Boundary | AI Role | Human Review | Automation Level |
+| --- | --- | --- | --- | --- | --- |
+| S01 Open-Source Release Hall | Public code contribution records and public event data | Display only usernames and public commit records; no personal behavior trajectory collection | Assisted display and aggregate statistics | Operator reviews published content | Assistive |
+| S02 Safety Governance Sandbox | Public safety evaluation methods and model behavior data | No personal sensitive information involved; test data desensitized | Assisted red-team test process organization | Evaluation institution + park joint review | Assistive |
+| S03 Edge-Side Compute Station | Public compute demand and public service materials | Aggregate public service data only; no user compute behavior collection | Assisted compute resource display | Government + operator joint supervision | Assistive |
+| S04 AI Slow-Mobility Navigation | Public slow-mobility cross-sections, intersections, and public facility materials | No personal trajectory collection; environment sensors only | Assisted breakpoint identification and accessibility needs | Park management reviews route suggestions | Assistive |
+| S05 International Roadshow Parlor | Public business event and enterprise exhibition materials | No unauthorized commercial data collection | Assisted event organization and exhibition planning | Enterprise + property review content | Assistive |
+| S06 Qing River Low-Carbon Corridor | Public river, green space, and ecological monitoring data | No personal behavior data collection | Assisted ecological data display and stormwater analysis | Water authority reviews ecological indicators | Assistive |
+| S07 Near-Campus Conversion Street | Public university outcomes and incubator materials | Campus data and research outcomes require authorization | Assisted outcome display and matching | University + incubator review | Assistive |
+| S08 Data Element Reception Hall | Compliant and authorized data circulation records | Data desensitized, auditable, no personal profiling | Assisted data circulation process management | Data exchange + legal compliance review | Assistive |
+| S09 AI Life Service Street | Public medical, educational, legal, and life service materials | No personal health and education records collection | Assisted service information aggregation and guidance | Community + service provider review | Assistive |
+| S10 Global AI Activity Week Route | Public event schedules and public space materials | No participant personal profiling | Assisted route planning and traffic estimation | Event committee + safety review | Assistive |
+| S11 AI Public Art Corridor | Public railway industrial heritage and AI-generated art materials | AI-generated content labeled with source and copyright info | Assisted art content generation suggestions | Cultural institution reviews copyright and content | Assistive |
+| S12 Robot Delivery Pilot Zone | Public road and delivery demand aggregate data | No personal recipient information; aggregate logistics data only | Assisted route planning and delivery dispatch | Logistics enterprise + government joint supervision | Supervised pilot |
+
+All scenarios have AI roles at "assistive" or "supervised pilot" level; there are no fully automated decision-making scenarios. Each scenario's human review checkpoint has corresponding risk dimension scores and mitigation measures in `risk.json` [data:risk.json]. Scenario verification results are recorded in `simulation.json`, with all 12 scenarios passing assertion checks [data:simulation.json].
+
 ### AI Pilgrimage Landmarks
 
 The proposal advances three AI pilgrimage landmarks [source:AGENT-TASKBOOK], serving as the spiritual anchors and public experience destinations of the innovation belt.
@@ -297,6 +328,19 @@ Phasing is distinguished from the 100-day solicitation design cycle: the solicit
 
 **Long-term (5+ years)**: Construct the AI Spark Tower (JZ-08) and the Global AI Activity Week route (JZ-10), establishing long-term operational mechanisms and brand assets.
 
+### Verifiable Pilot Pathways and Stakeholders
+
+The proposal defines verifiable pilot pathways for near-term projects, specifying entry conditions, acceptance gates, rollback conditions, and stakeholders [depth:phasing_implementation] [data:risk.json]:
+
+| Pilot Project | Entry Condition | Acceptance Gate | Rollback Condition | Stakeholders |
+| --- | --- | --- | --- | --- |
+| JZ-01 Slow-Mobility Breakpoint Stitching | Road red line confirmed, under-bridge space use rights clear | Breakpoint elimination rate >=80%, walkability improvement measurable | Facilities can be removed without affecting vehicular traffic | Transport authority, park management, nearby residents |
+| JZ-02 Qing River Innovation Interface | River blue line confirmed, water authority permit | Ecological restoration indicators met, public space area measurable | Temporary facilities can be removed, original green space restored | Water authority, park operator, environmental agencies |
+| JZ-03 Near-Campus Conversion Street | Campus boundary confirmed, property owner consent | Ground-floor format change rate >=60%, occupancy rate measurable | Format changes follow voluntary principle, can be paused | Universities, property owners, incubators, startup teams |
+| JZ-09 Xiaoyue River Experiment Corridor | River blue line confirmed, scenario permits, data compliance review | Pilot scenario count >=3, public feedback satisfaction measurable | Pilot facilities can be removed without affecting river flood capacity | Water authority, operators, community representatives, pilot enterprises |
+
+Each pilot has defined rollback conditions, ensuring reversion to the original state if expected outcomes are not met. Stakeholders include government departments, operating entities, community residents, and professional institutions, ensuring multi-party participation and oversight [data:risk.json].
+
 ### Global AI Innovation Activity System and Long-Term Operations
 
 The proposal advances the "Jingzhang AI Spine · Global AI Innovation Week" annual activity system [source:AGENT-TASKBOOK], serving as the long-term brand asset and operational closed loop of the innovation belt.
@@ -359,6 +403,10 @@ All spatial metrics are recalculated based on provisional rough boundaries [assu
 The compliance matrix covers all mandatory tasks in announcement sections 1.3, 1.4, 1.5, and agent.1 through agent.6, with each task mapped to report sections, layers, metrics, drawings, and HTML evidence [data:compliance_matrix.json]. A proposal that fails to cover any mandatory task may not enter formal professional scoring.
 
 ## Risk, Copyright, and Compliance
+
+### Structured Risk Matrix
+
+The proposal establishes an 8-dimension structured risk matrix [data:risk.json], covering data privacy, implementation complexity, public acceptance, operations cost, policy uncertainty, spatial dispute, technology maturity, and equity and inclusion. Implementation complexity and policy uncertainty have the highest scores (4), with human review requirements annotated. The remaining dimensions score 3, all with mitigation measures. The risk matrix is linked to the risk validation task in `simulation.json`, ensuring risk scores are consistent with the proposal narrative [data:simulation.json#SIM-RISK-01].
 
 ### Source Legality
 
