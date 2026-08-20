@@ -1,0 +1,532 @@
+{
+  "schema_version": "0.1.0",
+  "items": [
+    {
+      "item_id": "existing_conditions_diagnosis",
+      "title_zh": "现状诊断图与资料缺口",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST"
+      ],
+      "evidence_summary_zh": "系统诊断京张廊道现状空间割裂、要素分散与资料缺口，明确临时粗略边界使用规则与精度预警。"
+    },
+    {
+      "item_id": "three_level_scope_framework",
+      "title_zh": "三层范围工作框架",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "key_area_count",
+        "zhongzhiyuan_area_sqm_provisional",
+        "ai_origin_area_sqm_provisional",
+        "dazhongsi_area_sqm_provisional"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST"
+      ],
+      "evidence_summary_zh": "统筹研究（43.6 km²）、总体设计（11.41 km²）与重点片区（368.4 ha）三层空间联动推演，层级分工清晰。"
+    },
+    {
+      "item_id": "overall_spatial_structure",
+      "title_zh": "总体空间结构",
+      "professional_dimension": "城市设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY"
+      ],
+      "evidence_summary_zh": "确立‘一带三核两翼’总体空间结构，以京张铁路遗址公园为绿色主脊，串联三处重点创新核与产业翼。"
+    },
+    {
+      "item_id": "land_use_layout",
+      "title_zh": "用地布局",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY"
+      ],
+      "evidence_summary_zh": "11.41 km² 范围内 18 个用地分区无缝拓扑闭合，科研、商业、居住社区服务与绿地合理配比，混合度达标。"
+    },
+    {
+      "item_id": "development_intensity_controls",
+      "title_zh": "开发强度或待确认控规条件",
+      "professional_dimension": "控规",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "metric_refs": [
+        "building_footprint_area_sqm"
+      ],
+      "source_ids": [
+        "MOHURD-CONTROL-DETAILED-PLANNING"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY"
+      ],
+      "evidence_summary_zh": "对容积率与建筑密度提出弹性区间控制，明确法定控规指标待政府正式条件发布后严格对齐落实。"
+    },
+    {
+      "item_id": "height_massing_character",
+      "title_zh": "建筑高度、体量与风貌控制",
+      "professional_dimension": "建筑",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案",
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/buildings.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "metric_refs": [
+        "building_footprint_area_sqm"
+      ],
+      "source_ids": [
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "控制铁路遗址公园视廊高度跌落与天际线节奏，结合清华园车站等历史遗存形成古今交融风貌导则。"
+    },
+    {
+      "item_id": "retain_renovate_demolish",
+      "title_zh": "建筑拆改留分类",
+      "professional_dimension": "建筑",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "用地、建筑规模与拆改留方案",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/buildings.geojson"
+      ],
+      "metric_refs": [
+        "building_footprint_area_sqm"
+      ],
+      "source_ids": [
+        "MOHURD-CONTROL-DETAILED-PLANNING",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "对现状建筑逐栋划定保留、改造、拆除分类，优先盘活低效工业厂房与近校科研楼宇，保留工业肌理。"
+    },
+    {
+      "item_id": "traffic_rail_slow_parking",
+      "title_zh": "道路、轨道、慢行与停车组织",
+      "professional_dimension": "交通",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "MOHURD-CONTROL-DETAILED-PLANNING"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "统筹五道口、大钟寺等轨交站点四象限接驳，缝合主要干道与环路慢行断点，建立小街区微循环网。"
+    },
+    {
+      "item_id": "municipal_new_infrastructure",
+      "title_zh": "市政与新型基础设施策略",
+      "professional_dimension": "市政",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/constraints.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "ai_scenario_count",
+        "test_scenario_count"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-AI-SCENARIOS-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "部署分布式端侧微算力驿站与绿色低碳能源微电网，支撑 AI 智慧感知、导航导视与安全测试运行。"
+    },
+    {
+      "item_id": "blue_green_public_space",
+      "title_zh": "蓝绿系统与公共空间",
+      "professional_dimension": "景观",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "green_ratio",
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "以京张遗产公园为生态主轴，联动清河水岸与小月河，营造 12.34% 绿地与 7.33% 全天候开放公共空间网络。"
+    },
+    {
+      "item_id": "three_key_area_detailed_design",
+      "title_zh": "三大重点片区详细设计",
+      "professional_dimension": "城市设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "重点区域详细设计"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/key_areas.geojson",
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "key_area_count",
+        "zhongzhiyuan_area_sqm_provisional",
+        "ai_origin_area_sqm_provisional",
+        "dazhongsi_area_sqm_provisional",
+        "ai_landmark_count"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "KEY_AREAS_TRUST"
+      ],
+      "evidence_summary_zh": "深入推演众智园（开放研发花园）、AI原点社区（校园—街区转化缝）、大钟寺（站城四象限交换厅）空间原型。"
+    },
+    {
+      "item_id": "renewal_project_list",
+      "title_zh": "更新项目清单",
+      "professional_dimension": "实施",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/phasing.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "metric_refs": [
+        "renewal_project_count"
+      ],
+      "source_ids": [
+        "MOHURD-CONTROL-DETAILED-PLANNING"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "制定 JZ-01 至 JZ-06 六项重点更新工程清单，明确工程类型、空间载体、前置依赖与协调部门。"
+    },
+    {
+      "item_id": "phasing_implementation",
+      "title_zh": "分期实施计划",
+      "professional_dimension": "实施",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [
+        "renewal_project_count"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "划分近期试点启动（Q1-Q2）、中期重点片区推进（Q3-Q4）与远期常态化运营治理阶段，节奏稳健。"
+    },
+    {
+      "item_id": "metrics_recalculation",
+      "title_zh": "指标复算",
+      "professional_dimension": "校核",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/buildings.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "building_footprint_area_sqm",
+        "key_area_count",
+        "zhongzhiyuan_area_sqm_provisional",
+        "ai_origin_area_sqm_provisional",
+        "dazhongsi_area_sqm_provisional"
+      ],
+      "source_ids": [
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY"
+      ],
+      "evidence_summary_zh": "基于 EPSG:4548 严格复算全部空间指标，对 provisional 数据透明标注置信度与重算触发条件。"
+    },
+    {
+      "item_id": "risk_missing_data",
+      "title_zh": "风险与缺资料清单",
+      "professional_dimension": "合规",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/constraints.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "SOURCE-REGISTRY",
+        "SITE-PACKAGE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "KEY_AREAS_TRUST"
+      ],
+      "evidence_summary_zh": "系统梳理数据缺口与工程风险，建立人机协同审核、安全沙盒隔离与非 AI 实体导视兜底保障机制。"
+    }
+  ]
+}
