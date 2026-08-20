@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b7bac54b01646acc392826a4432162d2ac0ad9eaa9b4d2f770af8ba1ef1ff4fb"
+      "sha256": "68025440bd9f793dc292eae579c0f83748d600848c4710217a791388b45d9767"
     },
     {
       "path": "agent.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "cffdb92ef887c722d402615763b12c1d9484b92477ae90e13f72f9cfb7f43153"
+      "sha256": "e104d17c0004e87a6cc78bfd5db0d54f9718d3fa01ad4e1de138149555f02cc1"
     },
     {
       "path": "compliance_matrix.json",
@@ -95,20 +95,20 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "a12f02d1496923f4e866a997dd6f425a4c0eef6bdd329be35a011aa9b69d305b"
+      "sha256": "bda3e1e822b66ea71a2dca85adf950d28379d074acb07a7a87af478afc3f1013"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "dec4dfe7a51a03ce01a01c11054d5695d50faf4f32a0b847a2bd8a38d7258e73"
+      "sha256": "c66dfb194279658ed4674c3fcdc6ac9a4b76fa7d45bff3da43ca9b47c9e9164c"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "94e6553840ebc90522fc8a2fa48305adbe8aa68e8fd4f028e04f2330778a10f2"
+      "sha256": "f61a52178ab01b3524a37c21a12eac4c1644e374157f08a24dadc0c46ea1e1da"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e4e165de40ab3e79f0ce7af6314f16528d7a0ccefa35dadf94a9ead02bfb85ef"
+      "sha256": "30b19ef4a371800a95becfbfc41ae692b789c97d8a7a89d145a868df8ade0b63"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0bcc60dc3df1d5ae9deac1e50b5c44ef61a148d8be5781c206b7172f2eea2c6c"
+      "sha256": "51a81867939324cf2151dd2edc2aacda36a00046a7e262d06a2c1c87997652c1"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "708f2e1b6f2b767d5f5ae2534acacb3618b6e72a9f65a71b5e20fe42944185e4"
+      "sha256": "858fb0b14be058f4a226ea89c2d65458f581c286bde9bbe5330da87f2accb12d"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -453,7 +453,7 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "805a75198490b8ba6cc2e4a53a5a021022059d1433471acfcf3cd88a58d93a0f",
+      "sha256": "6c93c96138f03f26abb1eefb3625a688bee01be93c1cd9e47be3387ca460d5eb",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
       "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把正文里可复算的数值与结构声明逐条对结构化文件重算，共 32 条。一层查数据内部规则（三期面积相加等于总体范围、四类各五个、东西各十、西收东放无一例外、研制与服务基底逐位相等、六个先查证的周期分布、二十个单元的概念状态与回滚状态）；另一层直接读 proposal.md，核对落点表恰好 20 行、编号集合与 geojson 相同，并**逐行比对类型与东西侧**——这一条专防「数据对、正文写反」这类看不出来的错。`node claims-audit.js` 全部一致退出 0，任何一条不符退出 1 并打印实算值；`--json` 输出机器可读结果。与 protocol-check-runner.js 合起来覆盖本包全部可复算声明；设计判断、未测项与现场结论不在范围内。",
