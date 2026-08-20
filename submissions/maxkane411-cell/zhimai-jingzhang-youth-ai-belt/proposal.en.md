@@ -113,16 +113,64 @@ Road system uses three longitudinal spines: Xueyuan Road (west), Zhongguancun Ea
 
 The Jingzhang railway heritage park is the physical carrier of the "one pulse" spatial structure. The blue-green framework consists of "one vertical, two horizontal" corridors: Jingzhang Greenway (north-south), Xiaoyue River Ecological Corridor (east), and Zhongzhiyuan Waterfront Green Belt (north).
 
+### East-West Stitching: Traffic and Functional Cross-Railway Integration
+
+The Jingzhang railway corridor, historically a north-south urban artery, also created a physical east-west barrier in the urban fabric. The east-west stitching strategy addresses this through two dimensions: traffic stitching and functional stitching.
+
+**Traffic Stitching**: Three-layer立体化 restoration of east-west connections — surface-level pedestrian underpasses or at-grade crossings restore slow-mobility links, focusing on Dazhongsi–AI Origin Community (3 east-west slow-mobility corridors) and AI Origin Community–Zhongzhiyuan (2 corridors); underground level预留 rail station transfer passages connecting Qinghuayuan and Dazhongsi stations into an east-west pedestrian network; surface bus routes extend east-west with cross-railway stops. Accessibility standards: max 5% gradient, rest intervals ≤200m [data:geometry/roads.geojson].
+
+**Functional Stitching**: West-side functions (university research, technology services — Tsinghua, BUAA, BUPT, Zhongguancun) and east-side functions (residential communities, commercial services — Xueyuan Road subdistrict, Beitaipingzhuang subdistrict) differ significantly. The strategy goes beyond simple connectivity to functional adaptation and coordination: "academic spillover interfaces" at university edges partially open labs, libraries, and conference facilities to the public; "innovation permeation nodes" in residential areas introduce AI experiences, shared learning, and digital culture services; "functional mixed-use belts" along the railway corridor accommodate vertical R&D–exhibition–consumption–residential mixing, enabling east-west populations to share the same public space system. Dazhongsi stitching belt connects west-side tech-commerce with east-side community retail via intelligent native consumption; AI Origin stitching belt connects west-side academic circles with east-side residential areas via innovation display and public exchange; Zhongzhiyuan stitching belt connects west-side university clusters with east-side Qinghe living area via open R&D and science popularization [depth:blue_green_public_space].
+
+### North-South Connection: Themed Green Belt and Cultural Public Corridor
+
+The north-south connection is not merely spatial linkage but construction of a public corridor — the "ZhiPulse Cultural Greenway" — with a distinctive theme, cultural depth, and coherent spatial order.
+
+**Theme Narrative**: "The Innovation Pulse of a Century of Youth" overlays the Jingzhang railway's century-long historical narrative onto contemporary AI youth innovation practices. The greenway is divided into three themed segments from north to south: "Quest Pulse" (Zhongzhiyuan–Qinghuayuan segment), taking the study-abroad journeys of Zhan Tianyou and other young engineers as narrative origin, linking AI basic research, academic exchange, and open-source culture spaces; "Origin Pulse" (AI Origin Community segment), anchored at the historic moment of the Jingzhang railway's completion, hosting the AI Origin Plaza, Agent Contribution Honor Wall, and Developer's Walk, forming a spatial dialogue "from railway origin to AI origin"; "Connection Pulse" (Dazhongsi segment), taking the railway's historical function as a north-south transport artery as narrative endpoint, connecting AI industry services, intelligent native consumption, and global innovation exchange.
+
+**Spatial Order**: Greenway width 30–80m baseline, expanding to 50–120m plaza spaces at nodes, creating a "rhythmic expansion-contraction" spatial sequence. Themed rest nodes every 300–500m with seating, shading, AI guided tours, and micro-display installations. A continuous "Youth Story Belt" embeds timeline markers of the Jingzhang railway's century-long journey and AI innovation milestones into ground paving — walking the greenway traces the narrative from 1909 (railway completion) to 2026 (AI innovation belt establishment). Continuous arcade facades and permeable ground floors ensure visual transparency and spatial continuity [data:geometry/green_space.geojson] [data:geometry/public_space.geojson].
+
+**Cultural Alignment**: Three themed segments correspond to three spatial characters: "Quest" (north) adopts academic garden style with formal planting and knowledge signage; "Origin" (center) adopts monumental plaza style with paving textures and public art; "Connection" (south) adopts vibrant commercial street style with flexible outdoor seating and interactive installations. Visual coherence is achieved through unified paving palette (rail-gray base + innovation-blue functional + youth-orange accent), continuous lighting system (pulse-wave lamp posts), and consistent signage [depth:blue_green_public_space].
+
+### Centennial Jingzhang Cultural Narrative and Youth Innovation Heritage
+
+The Jingzhang railway itself is a story of "youth innovation." In 1905, Zhan Tianyou led the railway's construction as chief engineer at age 44, with a team largely composed of young engineers and returned overseas students handling key technical work. By the railway's completion in 1909, the average age of participating technicians was under 30. This historical fact provides a deep cultural anchor for the "ZhiPulse" proposal — the Jingzhang railway heritage is not merely industrial heritage but the material carrier of "a century of youth innovation spirit."
+
+The proposal embeds this narrative into spatial design through three paths:
+
+- **"Quest Youth" narrative path** (north segment): Modeled on Zhan Tianyou and the Chinese Educational Mission students' study-abroad experiences, a "Seekers' Trail" in the Zhongzhiyuan–Qinghuayuan section embeds public art installations and knowledge markers on modern Chinese science-technology study-abroad history, creating a cross-temporal dialogue with contemporary AI scholars' international exchange experiences
+- **"Railway-Building Youth" narrative node** (center segment): A "Jingzhang Young Engineers Memorial Corner" at the AI Origin Community displays replicas of 1905–1909 young engineers' design manuscripts and stories alongside contemporary AI developers' open-source contributions, forming the narrative tension of "a century ago, building railways with hand-drawn blueprints — a century later, constructing AI agents with code"
+- **"Connection Youth" narrative plaza** (south segment): A "Connection Plaza" at Dazhongsi overlays the railway's historical function as a north-south transport artery with contemporary AI industry services' function of "connecting north-south innovation resources," forming a spatial layering of history and future
+
+The narrative is not didactic exhibition but embedded daily through paving textures, signage systems, and public art installations — users perceive it naturally through everyday use. All historical figure references come from public sources; no fabrication or excessive dramatization of historical figures is involved [source:DATA-SRC-AGENT-TASKBOOK-20260518].
+
+### Youth-Friendly Design Strategy
+
+Youth-friendliness is a core design principle of this proposal. The strategy systematically addresses real-life needs of young populations across five dimensions: work and communication, after-hours activities, themed hobbies, special scenarios, and basic needs — with the goal of making youth "enjoy being there" and strengthening belonging.
+
+**Work and Communication**: Gradient work spaces across the belt — Zhongzhiyuan provides quiet research rooms and academic seminar halls for deep work; AI Origin Community provides pitch plazas and co-working spaces for entrepreneurial exchange and display; Dazhongsi provides flexible meeting pods and business negotiation spaces for industry engagement. Along the greenway, no fewer than 20 "conversation pockets" — 3–5 person semi-enclosed rest spaces with power, WiFi, and writable walls — lower the spatial threshold for informal exchange. The Developer's Walk features code display screens and open-source contribution interactive installations, integrating technical exchange into daily walking experience.
+
+**After-Hours Activities and Sports**: The greenway system accommodates running tracks (3–5km loops) and cycling lanes with smart sports data stations and self-service supply points along the route. Nighttime sports facilities around Dazhongsi Youth Vitality Plaza — basketball half-courts, skateboarding practice zones, and small climbing walls — meet post-work sports and social needs. AI Origin Community provides community shared kitchens and craft workshops for youth hobby space. Full-belt public spaces support "nighttime economy" — extended lighting, safety monitoring (no facial recognition), and nighttime bus connections ensure public space vitality after 22:00.
+
+**Themed Hobbies and Community Spaces**: Dedicated themed space carriers for different youth communities — open-source contributors get exclusive display space at the Developer's Walk and Honor Wall; hardware makers get prototype fabrication workstations at Zhongzhiyuan innovation pilot spaces; indie game developers get shared development pods at AI Origin Community; music and art creators get rehearsal and display spaces in Dazhongsi cultural renovation spaces. Each themed space is equipped with a community self-governance committee where youth independently operate event scheduling and space use rules, strengthening the subjective awareness of "my space."
+
+**Special Scenarios**: Four special scenario types designed for youth — "AI Creation Marathon Camp" (48-hour creation + result display space), "Open-Source Weekend Market" (developer showcase and exchange weekend public event), "Jingzhang Historical Time-Travel Path" (VR/AR overlay of historical imagery on railway heritage experience), "Youth Innovators Hall of Fame" (using Zhan Tianyou and other historical young innovators as narrative archetypes, connecting contemporary youth with a century of innovation spirit in cross-temporal dialogue). Special scenario operations adopt a "youth co-creation" model where content and services are proposed and iterated by youth communities.
+
+**Basic Needs**: Full-belt 15-minute living-circle-level basic services — youth apartments (live-near-work), 24-hour convenience stores and pharmacies, shared laundry and parcel lockers, community medical stations and psychological counseling points, maternal and child support facilities. The slow-mobility system ensures walking time from youth apartments to workplaces, public spaces, and transit nodes does not exceed 15 minutes. Public restrooms are distributed according to youth usage frequency and time patterns, with 60% availability during nighttime hours.
+
+**Belonging Mechanism**: Three layers strengthen youth belonging — spatial layer: youth participate in public space design and naming (e.g., "I Name a Road" activity), making youth co-creators of space rather than passive users; institutional layer: youth representatives hold no less than 40% of seats in the community operations committee, ensuring youth voice in public affairs; cultural layer: the "Youth Story Belt" and "Innovators Hall of Fame" make youth contributions visible and memorable, forming the identification of "I left my mark here" [depth:blue_green_public_space].
+
 ### AI Pilgrimage Landmarks (minimum 3)
 1. **Agent Contribution Honor Wall** (BLD-008): The AI community's "Walk of Fame"
 2. **Open Source Achievement Gallery** (BLD-009): AI open source milestone visualization
-3. **Jingzhang Railway Memorial** (BLD-005): Century-old railway culture + AI guided tours
+3. **Jingzhang Railway Memorial** (BLD-005): Century-old railway culture + AI guided tours. Features a "Young Engineers Memorial Corner" displaying historical stories of young technicians in Zhan Tianyou's team alongside contemporary AI youth's open-source contributions, forming a cross-temporal dialogue of "a century of youth innovation."
 
 ## Renewal Project List, Policies, and Phasing
 
-- **Phase 1 (Near-term):** AI Origin Community and Dazhongsi launch area (~176.2 ha)
-- **Phase 2 (Mid-term):** Zhongzhiyuan acceleration area and corridor connection (~33.8 ha)
-- **Phase 3 (Long-term):** Quality upgrade and operational maturity (~59.1 ha)
+Renewal projects include 15 items across three phases: AI Origin Experience Center, Dazhongsi AI Commercial Complex renovation, Jingzhang heritage park greenway connection, Developer's Walk, Agent Contribution Honor Wall, Jingzhang Young Engineers Memorial Corner, Conversation Pockets cluster, and more (Phases 1–3). New additions include the Seekers' Trail (Zhongzhiyuan–Qinghuayuan segment), Youth Nighttime Sports Facilities, and Connection Plaza at Dazhongsi — all reflecting the expanded east-west stitching, north-south themed greenway, cultural narrative, and youth-friendly design strategies.
+
+- **Phase 1 (Near-term):** AI Origin Community and Dazhongsi launch area (~176.2 ha), focusing on public space connection, core node construction, Young Engineers Memorial Corner, and Conversation Pockets
+- **Phase 2 (Mid-term):** Zhongzhiyuan acceleration area and corridor connection (~33.8 ha), focusing on R&D spaces, talent housing, Seekers' Trail, and Youth Nighttime Sports Facilities
+- **Phase 3 (Long-term):** Quality upgrade and operational maturity (~59.1 ha), focusing on smart facility upgrades, Connection Plaza, and operational mechanism refinement
 
 ### Global AI Innovation Activity System
 Annual activity system includes "Jingzhang AI Innovation Week" (spring pitch + autumn exhibition), brand "ZhiPulse Festival." Developer community operations led by open source community alliance. All activities, investment, funding, and policy arrangements are conceptual proposals.
@@ -143,6 +191,17 @@ Annual activity system includes "Jingzhang AI Innovation Week" (spring pitch + a
 | AI scenario nodes | 12 | known |
 
 Three core visual metrics (site_area_sqm, green_ratio, public_space_ratio) are known finite values recomputable from submitted geometry. FAR and height are unknown due to unavailable official regulatory controls.
+
+### Compliance Matrix Coverage
+
+The six agent tasks (agent.1–agent.6) are covered item-by-item in `compliance_matrix.json` and substantively developed in this proposal text:
+
+- **agent.1** (Overall concept and functional coordination): Naming system, Logo direction, three positioning, five functions, and three-area-two-wing synergy loop developed in the Coordinated Research Area chapter
+- **agent.2** (AI full-stack innovation system): Seven global AI innovation ecosystem cases and Zhongzhiyuan full-stack system design developed in the same chapter
+- **agent.3** (AI+ scenario empowerment): Ten scenario cards, three test/validation scenarios, and five user personas developed in the AI Innovation Ecosystem chapter
+- **agent.4** (AI public space and pilgrimage landmarks): Jingzhang heritage park AI public spaces, east-west stitching (traffic + functional), north-south themed green belt and cultural public corridor, youth-friendly design strategy (work, after-hours activities, themed hobbies, special scenarios, basic needs, belonging mechanism), three AI pilgrimage landmarks, and honor display system developed in the Blue-Green Space chapter
+- **agent.5** (Centennial Jingzhang cultural narrative): The "Centennial Jingzhang Cultural Narrative and Youth Innovation Heritage" chapter forms the core, developing the historical narrative of Zhan Tianyou and young engineers, the three-segment narrative paths (Quest Youth–Railway-Building Youth–Connection Youth), the Young Engineers Memorial Corner at the Railway Memorial, and cultural guided routes — forming a cross-temporal dialogue between the Jingzhang railway's century-long history and contemporary AI youth innovation
+- **agent.6** (Global AI innovation activity system and long-term operations): Annual activity system, developer community operations, and scenario open-access operations developed in the Renewal Project List chapter
 
 ## Risk, Copyright, and Compliance
 
