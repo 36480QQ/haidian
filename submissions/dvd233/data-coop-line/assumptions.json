@@ -3,15 +3,29 @@
   "assumptions": [
     {
       "id": "A-BOUNDARY-001",
-      "status": "pending_official_data",
-      "statement": "The repository provisional Overall Design Area and three key-area polygons are used only as temporary constraints.",
-      "impact": "Every geometry-derived area, ratio, drawing and location must be regenerated when official polygons arrive."
+      "status": "provisional_geometry_verified_20260820",
+      "statement": "The repository provisional Overall Design Area and three key-area polygons are used only as temporary constraints. Their submitted coordinates exactly match PROV-SITE-001 and PROV-KEY-001/002/003 in the frozen repository source at ce2c6bcee.",
+      "impact": "Every geometry-derived area, ratio, drawing and location must be regenerated when official polygons arrive.",
+      "source_ids": [
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "evidence_register": "visual/assets/site-evidence-register.json",
+      "verification_script": "visual/assets/site-evidence-audit.js"
     },
     {
       "id": "A-CONTROLS-001",
-      "status": "pending_professional_confirmation",
-      "statement": "Regulatory controls, road redlines, ownership, utilities, fire access, heritage and engineering constraints remain unavailable.",
-      "impact": "Land-use partitions, rooms, crossings and phasing are conceptual recommendations rather than statutory or engineering conclusions."
+      "status": "official_control_geometry_unavailable_verified_20260820",
+      "statement": "Regulatory controls, road redlines, ownership/cadastral parcels, official rail and water/blue lines, utilities, fire access, heritage and engineering constraints remain unavailable as citable official or cleared geometry. geometry/constraints.geojson therefore stays an explicit empty set instead of duplicating provisional scope polygons or inventing controls.",
+      "impact": "Land-use partitions, rooms, crossings and phasing are conceptual recommendations rather than statutory or engineering conclusions. Add a constraint feature only after its publisher, version, date, coordinate system, license/reuse terms and transformation are recorded, then regenerate the whole package.",
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "evidence_register": "visual/assets/site-evidence-register.json",
+      "verification_script": "visual/assets/site-evidence-audit.js"
     },
     {
       "id": "A-BUILDING-001",

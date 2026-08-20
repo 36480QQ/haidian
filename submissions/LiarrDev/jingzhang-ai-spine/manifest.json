@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "63d94edb4a5e0e5c981f62f0e15539e7793a93275ad89fa7ca49aa61ecb66d33"
+      "sha256": "5389615b7207dc66dc1e9886febdaa2689edfa26252a4bf74a5441d5e9014727"
     },
     {
       "path": "agent.json",
@@ -86,13 +86,13 @@
       "path": "simulation.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "f66fea9cbeef5e2c64e6aa83f89b970a61e227170d03661f00683a0b641382bb"
+      "sha256": "6c0c33f5e331f39c19046840635a81d080b7b09d7cbcfbef3274958a88970212"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "ed0bd683a69245c5a9d1f4e904bb0bd3c66069ac32a14fd4b494926382ce1412"
+      "sha256": "1b522dd710a356075b60d1fe0cbb9bdae3bf5c9687894a4175952032d31804d6"
     },
     {
       "path": "report/proposal.html",
@@ -105,7 +105,7 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "676ac18fb1f7e0abb46bc1ce62b4c45c557644cae4b47f4dfbd397b257141129"
+      "sha256": "e3edb6690380ec00f7bbb71eeebadf83fc4ad046c254a74948934c60264aa37b"
     },
     {
       "path": "report/copyright_statement.md",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "202b7dfb70fac2b6968d8b07a011b2583a69489fdd237bb804db3ad38b126409"
+      "sha256": "e8ce52e7a40b5774cd3b3183c27eb513955970a01bd7bf29f96a0153c72b2615"
     },
     {
       "path": "report/proposal.en.html",
@@ -308,6 +308,18 @@
       "role": "media_poster",
       "required": false,
       "sha256": "992c237c7d29e873489f06bb0451d48dc7787adfefac7872e3dbc0c33de130cd"
+    },
+    {
+      "path": "visual/assets/verify_spine.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "580b9432893ed0f937dd8e8b2691bc82f900197f868299e1ffa53e3a2e6b2ca8"
+    },
+    {
+      "path": "visual/assets/review_evidence.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "f4452ac4ffd1988a39498bd7d08fab4530c57e603954b3d53cc8367bc7c0a247"
     }
   ],
   "validation_claim": {

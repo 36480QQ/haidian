@@ -14,6 +14,37 @@ iteration: "v1.0"
 
 # AI Spine · Jingzhang AI Innovation Belt — Intelligent Rebirth of a Century-Old Railway
 
+## Read Me in Three Minutes
+
+**Core concept in one sentence**: Treat the Jingzhang Railway Heritage Park as an "AI Spine," linking three differentiated "innovation vertebrae" from north to south — Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi — and answering how century-old Jingzhang culture, Zhongguancun innovation culture, and new AI culture converge in one real urban district through a "One Spine, Three Vertebrae, Two Wings Extended, Blue-Green Slow-Mobility Composite Loop" spatial structure.
+
+**Answers to the five questions reviewers care about most**:
+
+1. **What is the proposal?** Not another "AI park" concept, but an innovation spine with clear spatial placement — using the already-open Jingzhang Heritage Park Phase 2 as its real-world carrier, stitching three differentiated key districts (autonomous innovation origin, open-source outcome conversion, industry convergence and international exchange) into one continuous urban experience belt through slow-mobility systems and public space.
+
+2. **How does it get implemented?** Near-term (1-2 years), mid-term (2-5 years), and long-term (5+ years) phasing. The near term only runs lightweight, reversible pilots (slow-mobility breakpoint stitching, Qing River innovation interface, near-campus conversion street), each with entry conditions, acceptance gates, and rollback conditions. Rail integration and landmark construction are deferred to the mid-term, pending formal regulatory plan confirmation.
+
+3. **Who benefits?** Not only AI enterprises and developers. The proposal explicitly covers transition-period protection for elderly, disabled, low-income residents, and small merchants; all AI scenarios retain human service windows and non-digital alternatives; community AI education points are open free of charge.
+
+4. **How is AI integrated?** All 12 scenario cards specify data source, privacy boundary, AI role, human review checkpoint, and automation level. AI roles are limited to "assistive" or "supervised pilot"; no fully automated decision-making scenario exists.
+
+5. **What are the risks and boundaries?** The official red line has not been released; all spatial metrics are annotated provisional. In the 8-dimension risk matrix, implementation complexity and policy uncertainty score highest and mandatorily require human review. The proposal consistently uses "concept recommendation" wording and does not impersonate official approval or implementation commitment.
+
+## Six Agent Task Response Map
+
+This proposal responds item by item to the six agent tasks in the taskbook [source:AGENT-TASKBOOK]; each task maps to report sections, spatial layers, and verifiable evidence [data:compliance_matrix.json]:
+
+| Task | Taskbook Requirement | Proposal Response | Core Evidence |
+| --- | --- | --- | --- |
+| agent.1 | Belt-wide overall concept and functional coordination design | "AI Spine · Jingzhang" overall concept + "One Spine, Three Vertebrae, Two Wings Extended" spatial structure + Three-Areas-Two-Wings synergy loop | Three-Level Scope Framework, Coordinated Research chapter [data:geometry/site_boundary.geojson] |
+| agent.2 | Full-stack autonomous innovation system and world-class AI innovation ecosystem | Zhongzhiyuan Source Vertebra carries full-stack innovation (chip/framework/algorithm → evaluation/security → application conversion → standards/ecosystem) | Zhongzhiyuan detailed design [data:geometry/key_areas.geojson] |
+| agent.3 | AI+ scenario empowerment and intelligent AI vibrant city | 12 AI scenario cards + 4 testing scenarios (* marked) + scenario data-governance audit table | AI Scenario Cards chapter, audit table [data:geometry/roads.geojson] |
+| agent.4 | AI public space, AI-native new formats, and pilgrimage landmarks | 3 AI pilgrimage landmarks (Memorial Corridor / Open-Source Dome / AI Spark Tower) + blue-green slow-mobility loop | Pilgrimage Landmarks chapter [data:geometry/public_space.geojson] |
+| agent.5 | Century-old Jingzhang, Zhongguancun, and AI new culture fusion narrative | Three-layer cultural narrative (autonomous innovation → open collaboration → human-machine co-creation) + cultural guide sequence | Cultural Fusion Narrative chapter [data:geometry/green_space.geojson] |
+| agent.6 | Belt-wide global AI innovation activity system and long-term operations | "Jingzhang AI Spine · Global AI Innovation Week" four-season activities + operations alliance + tiered scenario opening | Long-Term Operations chapter [data:geometry/phasing.geojson] |
+
+The item-by-item evidence of this mapping is structurally recorded in `compliance_matrix.json` through the requirement_id, report_sections, geojson_layers, metrics, drawings, and visual_sections fields, allowing reviewers to trace each entry back to narrative text, drawings, layers, and metrics.
+
 ## Design Basis and Source List
 
 This proposal takes the prequalification announcement issued by the Haidian Branch of the Beijing Municipal Planning and Natural Resources Commission as its primary basis [source:OFFICIAL-ANNOUNCEMENT], the open-source solicitation taskbook oriented toward agents as the agent task basis [source:AGENT-TASKBOOK], and the provisional rough boundaries registered by the repository maintainers as the spatial working basis [source:BOUNDARY-SOURCE]. The proposal also references the Ministry of Housing and Urban-Rural Development's *Measures for the Administration of Urban Design* [standard:MOHURD-URBAN-DESIGN-MEASURES], the *Measures for the Compilation and Approval of Regulatory Detailed Planning* [standard:MOHURD-CONTROL-DETAILED-PLANNING], and the Ministry of Natural Resources' *Guide to the Classification of Land and Sea Use* [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] as professional standards.
@@ -23,6 +54,21 @@ The current repository has not yet obtained the official precise red line. This 
 This proposal uses a verifiable citation format after key judgments. Complete source coverage is maintained by `sources.json`, professional standard responses are managed by `standard_matrix.json`, deliverable depth is constrained by `design_depth_matrix.json`, and task coverage is tracked by `compliance_matrix.json`. Readers need not open the JSON files to understand the proposal's design logic.
 
 ![Source Evidence Chain and Submission Package Relationship Diagram](assets/figures/site-overview.png)
+
+### Policy Chain Alignment
+
+The proposal uses national, municipal, and district-level public policies as a reference framework, only in the sense of "echoing / relying on / aligning with," and does not state them as finalized government decisions or implementation arrangements [source:AGENT-TASKBOOK]:
+
+| Level | Policy / Document | Proposal Echo | Wording Boundary |
+| --- | --- | --- | --- |
+| National | State Council *New Generation AI Development Plan* | Echoes the national "self-controllable AI technology system" direction; Zhongzhiyuan Source Vertebra carries full-stack autonomous innovation | References strategic direction, does not claim national project status |
+| National | MOHURD *Measures for the Administration of Urban Design* | Three-level scope framework and regulatory-plan-depth design methodology rely on these measures [standard:MOHURD-URBAN-DESIGN-MEASURES] | Methodological reference, does not replace statutory planning approval |
+| Municipal | Beijing Municipal Science & Technology Commission *"Three Areas, Two Wings" world-class AI cluster* (2026-04) | The "Three Areas, Two Wings" synergy loop directly aligns with municipal industrial spatial layout | Aligns with industrial direction, does not claim municipal confirmation |
+| District | Haidian District *"1+X+1" modern industrial system* (2026-03) | Differentiated positioning of Zhongzhiyuan / Origin Community / Dazhongsi aligns with district industrial system | Aligns with district industrial orientation |
+| District | Haidian District *"AI Haidian"* (2025) | Cites Haidian's 1300+ AI enterprises, 76 registered large models, and other industrial base data [source:HAIDIAN-AI-ECOSYSTEM] | Public data citation |
+| District | Centennial Jingzhang AI Innovation Belt prequalification announcement (2026-05-09) | Directly responds to the announcement's three positionings, three scope levels, and three key districts [source:OFFICIAL-ANNOUNCEMENT] | Direct task basis |
+
+The complete source registration of the policy chain is in `sources.json`; specific policy citations are used only to justify the proposal's directional reasonableness and do not constitute any form of official endorsement or approval conclusion.
 
 ## Three-Level Scope Framework
 
@@ -406,7 +452,20 @@ The compliance matrix covers all mandatory tasks in announcement sections 1.3, 1
 
 ### Structured Risk Matrix
 
-The proposal establishes an 8-dimension structured risk matrix [data:risk.json], covering data privacy, implementation complexity, public acceptance, operations cost, policy uncertainty, spatial dispute, technology maturity, and equity and inclusion. Implementation complexity and policy uncertainty have the highest scores (4), with human review requirements annotated. The remaining dimensions score 3, all with mitigation measures. The risk matrix is linked to the risk validation task in `simulation.json`, ensuring risk scores are consistent with the proposal narrative [data:simulation.json#SIM-RISK-01].
+The proposal establishes an 8-dimension structured risk matrix [data:risk.json], using an R-01 through R-08 numbering system for cross-chapter back-referencing:
+
+| ID | Dimension | Score | Human Review |
+| --- | --- | --- | --- |
+| R-01 | Data privacy | 3 | Data Element Reception Hall (S08) and Open-Source Release Hall (S01) reviewed by data-security compliance counsel |
+| R-02 | Implementation complexity | 4 | Joint review by planning, transport, municipal, and operations teams (North 5th Ring under-bridge, Dazhongsi four-quadrant) |
+| R-03 | Public acceptance | 3 | Robot delivery pilot (S12) solicits resident opinions before piloting |
+| R-04 | Operations cost | 3 | Phased input-output evaluation |
+| R-05 | Policy uncertainty | 4 | All spatial metrics and policy wording reviewed by planning, transport, data-security, and legal compliance professionals |
+| R-06 | Spatial dispute | 3 | Time-segmented, zone-segmented, low-speed, reversible facilities to reduce conflict |
+| R-07 | Technology maturity | 3 | Technology limited to assisted recommendations or supervised pilots, with human fallback retained |
+| R-08 | Equity and inclusion | 3 | Barrier-free, low-threshold, non-digital alternative pathways |
+
+R-02 implementation complexity and R-05 policy uncertainty score highest (4) and mandatorily require human review. The remaining dimensions score 3, all with mitigation measures. The risk matrix is linked to the risk validation task and mutation tests in `simulation.json`, ensuring risk scores are consistent with the proposal narrative [data:simulation.json#SIM-RISK-01] [data:simulation.json#MUT-02].
 
 ### Source Legality
 
