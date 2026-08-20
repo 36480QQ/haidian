@@ -41,6 +41,8 @@
         "submissions/arccat-114/jingzhang-switch/assets/figures/risk-radar.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/site-overview.en.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/site-overview.png",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/switch-evidence-loop.en.svg",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/switch-evidence-loop.svg",
         "submissions/arccat-114/jingzhang-switch/assets/media/cover.webp",
         "submissions/arccat-114/jingzhang-switch/assumptions.json",
         "submissions/arccat-114/jingzhang-switch/changelog.md",
@@ -75,6 +77,7 @@
         "submissions/arccat-114/jingzhang-switch/visual/assets/official-records.json",
         "submissions/arccat-114/jingzhang-switch/visual/assets/osm-buildings.json",
         "submissions/arccat-114/jingzhang-switch/visual/assets/switch-protocol.json",
+        "submissions/arccat-114/jingzhang-switch/visual/assets/validation-ledger.json",
         "submissions/arccat-114/jingzhang-switch/visual/assets/verify_switch_protocol.js",
         "submissions/arccat-114/jingzhang-switch/visual/index.en.html",
         "submissions/arccat-114/jingzhang-switch/visual/index.html"
@@ -82,7 +85,7 @@
       "ai_package_stages": {
         "submissions/arccat-114/jingzhang-switch": "formal"
       },
-      "total_bytes": 6880064,
+      "total_bytes": 6960588,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -165,7 +168,7 @@
           "standard": 6,
           "depth": 13,
           "data": 21,
-          "metric": 15
+          "metric": 16
         }
       }
     },

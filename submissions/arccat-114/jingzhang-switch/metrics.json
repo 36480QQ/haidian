@@ -576,6 +576,19 @@
       "assumptions": [
         "OSM 概念级量测，非测绘成果；覆盖率仅作量级参照。"
       ]
+    },
+    "slow_variable_baseline": {
+      "status": "unknown",
+      "value": null,
+      "unit": "multi_metric_baseline",
+      "source_files": [
+        "visual/assets/validation-ledger.json",
+        "proposal.md"
+      ],
+      "formula": "one_year_public_baseline_measurement",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "No cleared corridor-wide baseline exists; the proposal requires one year of measurement before setting improvement thresholds."
     }
   }
 }
