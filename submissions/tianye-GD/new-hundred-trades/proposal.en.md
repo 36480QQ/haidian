@@ -201,6 +201,8 @@ Urban character is keyed to restraint: existing heritage structures keep the mar
 
 ### Cultural Narrative
 
+![The New Hundred Trades - nine-kilometre handscroll](assets/figures/scroll.en.png)
+
 The narrative model is the handscroll of *Along the River During the Qingming Festival*: many trades active at once along one line, depicting work rather than scenery. The A0 boards are organised accordingly - opening at the right with the North 5th Ring (the outskirts, the Qing River, the Testing segment), passing three bridge-markets and the Creating segment, closing at the left with the North 2nd Ring and the Market segment, one horizon line running through the whole scroll with level change only at five points. Along the chainage the scroll is filled with the people and machines of the line today: students, commuters, residents out walking, engineers debugging equipment, a delivery robot giving way.
 
 The value of this narrative is that it can keep growing: a handscroll can be extended with new paper, and each time a new trade joins, the scroll lengthens. This matches the intention of building a durable mechanism rather than a single terminal master plan.
