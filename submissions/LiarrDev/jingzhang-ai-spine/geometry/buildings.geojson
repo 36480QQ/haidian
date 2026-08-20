@@ -15,18 +15,17 @@
         "building_strategy": "new",
         "name_zh": "智源椎-AI研发示范建筑",
         "name_en": "Source Vertebra - AI R&D Demonstration Building",
-        "key_area_id": "zhongzhiyuan_ai_acceleration_area",
-        "area_sqm_declared": 86500
+        "key_area_id": "zhongzhiyuan_ai_acceleration_area"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [116.341572, 40.014],
-            [116.341572, 40.018],
-            [116.343044, 40.018],
-            [116.343044, 40.014],
-            [116.341572, 40.014]
+            [116.3425, 40.014],
+            [116.3425, 40.018],
+            [116.3440, 40.018],
+            [116.3440, 40.014],
+            [116.3425, 40.014]
           ]
         ]
       }
@@ -44,8 +43,7 @@
         "building_strategy": "retain",
         "name_zh": "AI原点社区-保留办公建筑",
         "name_en": "AI Origin Community - Retained Office Building",
-        "key_area_id": "ai_origin_community",
-        "area_sqm_declared": 52300
+        "key_area_id": "ai_origin_community"
       },
       "geometry": {
         "type": "Polygon",
@@ -73,8 +71,7 @@
         "building_strategy": "renovate",
         "name_zh": "AI原点社区-改造混合功能建筑",
         "name_en": "AI Origin Community - Renovated Mixed-Use Building",
-        "key_area_id": "ai_origin_community",
-        "area_sqm_declared": 41800
+        "key_area_id": "ai_origin_community"
       },
       "geometry": {
         "type": "Polygon",
@@ -102,8 +99,7 @@
         "building_strategy": "new",
         "name_zh": "智汇椎-大钟寺商业新建筑",
         "name_en": "Convergence Vertebra - Dazhongsi New Commercial Building",
-        "key_area_id": "dazhongsi_ai_industry_cluster",
-        "area_sqm_declared": 68200
+        "key_area_id": "dazhongsi_ai_industry_cluster"
       },
       "geometry": {
         "type": "Polygon",
@@ -131,8 +127,7 @@
         "building_strategy": "renew",
         "name_zh": "智汇椎-大钟寺更新孵化建筑",
         "name_en": "Convergence Vertebra - Dazhongsi Renewed Incubator Building",
-        "key_area_id": "dazhongsi_ai_industry_cluster",
-        "area_sqm_declared": 62000
+        "key_area_id": "dazhongsi_ai_industry_cluster"
       },
       "geometry": {
         "type": "Polygon",
