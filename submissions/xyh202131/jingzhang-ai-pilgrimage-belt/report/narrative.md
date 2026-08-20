@@ -4,6 +4,14 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 51 spatial-design proof / 第 51 轮空间设计证明
+
+前序 PR #3500 merge `2e2a1d9cfc6d3d7e8c18fd1be571784da8638a92` 已进入 `main@e490c681bfad93d8c54a81ee56f1d3061a88a813`，同包开放 PR 为 0，工作树洁净。编辑性双语／灰度／缩略图／标题抑制审查的 RED 是：总图不是空间结构、用地图仍是 36 格清单、三处平面偏符号卡片、剖面没有地面与阈值；不是公众、专家、现场或评审反馈。
+
+本轮原位重建 `site-overview`、`land-use-structure`、`key-areas`、`key-area-sections` 四组双语 SVG/PNG：公共地面骨架 + 六处横联；36 个冻结包络形成两侧不规则前沿；平行绕行／证明园、一街／两院／四撤回点、四向通勤／路外服务三种平面；地面／阈值／停止／人工／还场三种剖面。双语正文、报告、visual 与 A3 14+14、A0 8+8 同步；两次新进程逐文件一致，44 页 QA 通过。完整 RED、SHA、权利与验证见 `changelog.md#v510---2026-08-20`、`agent.json#round_51_provenance` 和 `visual/assets/review-handoff-index.json#spatial_design_proof_r51`。
+
+Round 51 rebuilds those four bilingual figure families in place and synchronizes proposals, reports, visual pages and fixed 14+14+8+8 PDFs. It adds no media, model call, source, path, fact or page. Plans and sections create no exact siting, dimension, material, engineering, accessibility, field or approval result. Geometry, metrics, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, proof-only failure stop, non-authorising recovery, professional veto, `not_fully_cleared` and zero independent audits remain frozen.
+
 ## Round 50 expert review packet alignment / 第 50 轮专家评审包对齐
 
 串行门、权威文件复读与基线六闸均在 `main@e289e4abc305b64f06add372cdec2fcb2a8a4db7` 完成。修复前 RED 为：review packet 未声明版本／轮次、缺海淀公共能力判断和 `risk.json`，23 项假设先于决策路由，展示名带旧工具标签；这些只是编辑审查，不是评审、专家或公众反馈。

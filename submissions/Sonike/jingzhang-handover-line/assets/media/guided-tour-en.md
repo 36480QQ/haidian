@@ -95,9 +95,9 @@ For screen readers and plain-text environments. Each entry states four fixed thi
 
 ### F/04 One Slow-Mobility Spine, Eight Stitch Links, Twelve Takeover Points (`assets/figures/mobility-bluegreen.en.png`)
 
-**Conclusion.** The smart layer is pluggable while basic movement and staffed service stay online; the section fixes order and adjacency only — staffed counter, walkway and stop entrance must stay continuously reachable, and the machine lane may not cut between them.
+**Conclusion.** The smart layer is pluggable while basic movement and staffed service stay online; the section gives order and adjacency — staffed counter, walkway and stop entrance must stay continuously reachable, and the machine lane may not cut between them — and its caption line also states a one-side recommended total of about 14–20 m.
 
-**Key numbers.** One continuous slow-mobility spine, eight east-west stitch links, twelve takeover points, six bands in the section.
+**Key numbers.** One continuous slow-mobility spine, eight east-west stitch links, twelve takeover points, six bands in the section; a one-side recommended total of about 14–20 m, with 15.4 / 17.1 / 15.1 m taken in the three key areas.
 
 **Provisional boundary.** Alignments are conceptual connections; lengths are recomputed in EPSG:4548.
 

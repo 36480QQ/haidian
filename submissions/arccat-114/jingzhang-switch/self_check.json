@@ -10,7 +10,9 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/arccat-114/jingzhang-switch/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/arccat-114/jingzhang-switch/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/logo-switch-dark.en.png: byte-identical to `assets/figures/logo-switch-dark.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/logo-switch-light.en.png: byte-identical to `assets/figures/logo-switch-light.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review"
       ],
       "proposal_files": [
         "submissions/arccat-114/jingzhang-switch/proposal.md"
@@ -28,7 +30,9 @@
         "submissions/arccat-114/jingzhang-switch/assets/figures/key-areas.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/land-use-structure.en.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/land-use-structure.png",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/logo-switch-dark.en.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/logo-switch-dark.png",
+        "submissions/arccat-114/jingzhang-switch/assets/figures/logo-switch-light.en.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/logo-switch-light.png",
         "submissions/arccat-114/jingzhang-switch/assets/figures/logo-switch.svg",
         "submissions/arccat-114/jingzhang-switch/assets/figures/metrics-evidence.en.png",
@@ -85,7 +89,7 @@
       "ai_package_stages": {
         "submissions/arccat-114/jingzhang-switch": "formal"
       },
-      "total_bytes": 6965988,
+      "total_bytes": 6670796,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -164,11 +168,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 34,
-          "standard": 6,
-          "depth": 13,
-          "data": 21,
-          "metric": 16
+          "source": 10,
+          "standard": 5,
+          "depth": 10,
+          "data": 8,
+          "metric": 7
         }
       }
     },

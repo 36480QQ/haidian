@@ -31,7 +31,7 @@
       "zh": "场景护照：12 个场景的门级与护照字段覆盖"
     }
   },
-  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R50",
+  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R51",
   "expert_review_packet_r50": {
     "artifact_locator": {
       "authority_text": [
@@ -3052,8 +3052,8 @@
       "entry_points": [
         {
           "anchor": null,
-        "note_en": "Why Haidian, one public-capability judgement, the sole Twin-Track concept and G0 boundary",
-        "note_zh": "为何海淀、一个公共能力判断、唯一双轨总纲与 G0 边界",
+          "note_en": "Why Haidian, one public-capability judgement, the sole Twin-Track concept and G0 boundary",
+          "note_zh": "为何海淀、一个公共能力判断、唯一双轨总纲与 G0 边界",
           "path": "proposal.md"
         },
         {
@@ -3064,25 +3064,25 @@
         },
         {
           "anchor": null,
-        "note_en": "Public-capability relay from ordinary route to optional proof and staffed handoff",
-        "note_zh": "从普通路径到可选验证与人工交接的公共能力接力",
+          "note_en": "Public-capability relay from ordinary route to optional proof and staffed handoff",
+          "note_zh": "从普通路径到可选验证与人工交接的公共能力接力",
           "path": "assets/figures/site-overview.png"
         }
       ],
-    "label_en": "30 seconds: why Haidian, one concept and one boundary",
-    "label_zh": "30 秒：为何海淀、一个概念与一个边界",
-    "limit_en": "The social thesis is not a second brand; the rail grammar is not a logo; the proof track is not continuous occupation; clear drawings are not site accuracy; everything remains G0.",
-    "limit_zh": "社会命题不是第二品牌；铁路语法不是 Logo；验证轨不是连续占地；图面清楚不等于场地准确；全案仍为 G0。",
-    "question_en": "Why Haidian, what is the single core concept, and what is its current state?",
-    "question_zh": "为何是海淀？方案唯一核心概念是什么？当前处于什么状态？",
+      "label_en": "30 seconds: why Haidian, one concept and one boundary",
+      "label_zh": "30 秒：为何海淀、一个概念与一个边界",
+      "limit_en": "The social thesis is not a second brand; the rail grammar is not a logo; the proof track is not continuous occupation; clear drawings are not site accuracy; everything remains G0.",
+      "limit_zh": "社会命题不是第二品牌；铁路语法不是 Logo；验证轨不是连续占地；图面清楚不等于场地准确；全案仍为 G0。",
+      "question_en": "Why Haidian, what is the single core concept, and what is its current state?",
+      "question_zh": "为何是海淀？方案唯一核心概念是什么？当前处于什么状态？",
       "route_id": "route-30s"
     },
     {
       "entry_points": [
         {
           "anchor": "#ordinary-life",
-        "note_en": "Exclusion thresholds, ordinary life and four-state motion",
-        "note_zh": "排除门槛、普通生活与四态动态",
+          "note_en": "Exclusion thresholds, ordinary life and four-state motion",
+          "note_zh": "排除门槛、普通生活与四态动态",
           "path": "visual/index.html"
         },
         {
@@ -3104,12 +3104,12 @@
           "path": "assets/figures/non-ai-service-blueprint.png"
         }
       ],
-    "label_en": "3 minutes: exclusion thresholds and one complete non-AI ordinary journey",
-    "label_zh": "3 分钟：排除门槛与一个普通任务的完整非 AI 旅程",
+      "label_en": "3 minutes: exclusion thresholds and one complete non-AI ordinary journey",
+      "label_zh": "3 分钟：排除门槛与一个普通任务的完整非 AI 旅程",
       "limit_en": "Relationship diagrams are not existing conditions; a machine PASS is not content quality, professional duty or approval; 48 seconds is interface pacing.",
       "limit_zh": "关系图不是现状平面；机器 PASS 不是内容质量、专业责任或批准；48 秒只是展示节奏。",
-    "question_en": "Can the ordinary task be completed without an account, device, professional identity or AI? What stops and what continues on failure?",
-    "question_zh": "无需账户、设备、专业身份或 AI 能否完成普通任务？故障停止什么、保留什么？",
+      "question_en": "Can the ordinary task be completed without an account, device, professional identity or AI? What stops and what continues on failure?",
+      "question_zh": "无需账户、设备、专业身份或 AI 能否完成普通任务？故障停止什么、保留什么？",
       "route_id": "route-3m"
     },
     {
@@ -4022,5 +4022,100 @@
     "en": "Navigation layer; current counts are authoritative in manifest.json and rights-clearance-ledger.json; historical fixed points remain historical records.",
     "zh": "导航层；现状计数以 manifest.json 与 rights-clearance-ledger.json 为准，历史固定点保持历史记录。"
   },
-  "status": "concept_only_provisional"
+  "status": "concept_only_provisional",
+  "spatial_design_proof_r51": {
+    "scope": "Editorial spatial-design proof only; no new direction, fact, geometry, metric, media, page, governance contract or maturity narrative.",
+    "pre_repair_red": [
+      {
+        "figure": "site-overview",
+        "finding": "Primary composition was a social-capability relay rather than an overall spatial structure plan.",
+        "finding_type": "editorial_spatial_audit_only"
+      },
+      {
+        "figure": "land-use-structure",
+        "finding": "Primary composition was a 36-cell checklist without corridor fronts or cross-links.",
+        "finding_type": "editorial_spatial_audit_only"
+      },
+      {
+        "figure": "key-areas",
+        "finding": "Distinct mechanisms remained symbolic cards with underdeveloped public-ground and edge relations.",
+        "finding_type": "editorial_spatial_audit_only"
+      },
+      {
+        "figure": "key-area-sections",
+        "finding": "The section family repeated plan symbols without ground, threshold or vertical responsibility.",
+        "finding_type": "editorial_spatial_audit_only"
+      }
+    ],
+    "repair_decisions": {
+      "site-overview": "REBUILD",
+      "land-use-structure": "REBUILD",
+      "key-areas": "REBUILD",
+      "key-area-sections": "REBUILD",
+      "spatial-atlas": "LOCK",
+      "mobility-bluegreen": "LOCK",
+      "existing_media": "LOCK"
+    },
+    "spatial_answers": {
+      "overall_structure": "One continuous civic-ground spine plus six cross-links and three non-isomorphic prototypes.",
+      "land_use": "Thirty-six frozen concept envelopes form two irregular fronts along civic ground; colours remain non-statutory function families.",
+      "zhongzhiyuan": "Parallel ordinary bypass, planted safety/maintenance band, side proof garden and staffed handoff.",
+      "origin_community": "One ordinary resident street, two courts, four withdrawal points and paper/spoken/staffed handoff.",
+      "dazhongsi": "Four-way commute datum, clear centre, quiet rest and off-route hall/staffed desk.",
+      "sections": "Ground, thresholds, stop objects, staff positions and restoration objects only; four-state authority remains in proposal contracts."
+    },
+    "changed_figure_paths": [
+      "assets/figures/key-area-sections.en.png",
+      "assets/figures/key-area-sections.en.svg",
+      "assets/figures/key-area-sections.png",
+      "assets/figures/key-area-sections.svg",
+      "assets/figures/key-areas.en.png",
+      "assets/figures/key-areas.en.svg",
+      "assets/figures/key-areas.png",
+      "assets/figures/key-areas.svg",
+      "assets/figures/land-use-structure.en.png",
+      "assets/figures/land-use-structure.en.svg",
+      "assets/figures/land-use-structure.png",
+      "assets/figures/land-use-structure.svg",
+      "assets/figures/site-overview.en.png",
+      "assets/figures/site-overview.en.svg",
+      "assets/figures/site-overview.png",
+      "assets/figures/site-overview.svg"
+    ],
+    "publication_sync": {
+      "trigger": "Old spatial figures remained on A3 P3-P5/P10 and A0 P2-P4 after the four figure families changed.",
+      "page_counts": {
+        "a3_zh": 14,
+        "a3_en": 14,
+        "a0_zh": 8,
+        "a0_en": 8
+      },
+      "two_fresh_processes_byte_identical": true,
+      "sha256": {
+        "a3_zh": "b098334e2e56c3de09560e9244af543e1f54909fe3ffcd6a046e869ecba7d246",
+        "a3_en": "ad338568bba4407587c9491eb6226785d42b51f66146a5fd648e06d33b65fa95",
+        "a0_zh": "4d6a4a4afa5f1317a7eebebcacd14bf92830d0425bbe6b38ad4e1b62925de239",
+        "a0_en": "a1e289c02951d7b5aa2f4d62d6f48232d35192fdcc89b992359f02c840779c0b"
+      },
+      "full_page_qa": 44,
+      "qa_modes": [
+        "colour",
+        "grayscale",
+        "detail"
+      ],
+      "failure_count": 0
+    },
+    "truth_boundary": {
+      "new_media": false,
+      "new_model_call": false,
+      "new_external_source": false,
+      "field_observation": false,
+      "public_feedback": false,
+      "expert_opinion": false,
+      "official_geometry": false,
+      "planning_approval": false,
+      "rights_status": "not_fully_cleared",
+      "independent_file_level_clearance_audits": 0
+    }
+  }
 }

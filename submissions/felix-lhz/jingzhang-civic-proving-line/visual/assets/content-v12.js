@@ -163,8 +163,11 @@ function updateTwoAnswers() {
 
 function updateMetrics() {
   const old = read('metrics.json').metrics;
-  const keep = ['site_area_sqm','building_footprint_area_sqm','green_ratio','public_space_ratio','floor_area_ratio','key_area_count','paired_scenario_count','industry_test_count','field_verification_result_count','spatial_alternative_count','advanced_spatial_alternative_count'];
-  const out = {}; for (const id of keep) out[id] = old[id];
+  // V12 originally collapsed the evidence model to 18 metrics. That made
+  // unrelated conclusions cite generic counts and removed spatial evidence
+  // that later publications still referenced. Preserve the accumulated,
+  // reproducible design metrics and add measurement contracts alongside them.
+  const out = {...old};
   out.measurement_contract_count = {status:'known',value:12,unit:'count',source_files:['visual/assets/two-answers.json'],formula:'count(scenarios with complete measurement_contract)',confidence:'high',assumptions:[]};
   const unknown = {
     task_completion_rate:'completed eligible same-task attempts / all eligible attempts',
@@ -257,6 +260,6 @@ function cleanMetricReferences() {
 
 function updateChangelog(){const p=path.join(ROOT,'changelog.md');let s=fs.readFileSync(p,'utf8');if(!s.includes('可测量的双答'))s=s.replace(/^(#.*\n)/,`$1\n## 2026-08-19 · 可测量的双答\n\n- 为12个场景建立同题分母、样本窗口、分层、统计量、缺失数据、停止与公开输出契约；现场结果仍为0。\n- 将指标从55项收敛为18项，其中六项公共价值现场指标全部保持 unknown。\n- 核验京张公园、AI原点、清华园与小月河官方公开背景，并重写版本无关的版权与证据边界。\n\n`);fs.writeFileSync(p,s);}
 
-function run(){const j=updateTwoAnswers();updateMetrics();updateNarrative();updateSourcesAndRights();updateMatrices();cleanMetricReferences();updateChangelog();console.log(`V12 measurement contracts updated: ${j.scenarios.length}/12`);return j;}
+function run(){const j=updateTwoAnswers();updateMetrics();updateNarrative();updateSourcesAndRights();updateMatrices();updateChangelog();console.log(`V12 measurement contracts updated without deleting spatial metrics: ${j.scenarios.length}/12`);return j;}
 module.exports={run,contracts};
 if(require.main===module)run();

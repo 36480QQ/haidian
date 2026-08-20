@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ea9cb66f8b5678e3e13dc481122669786093ee9da1f25295d7373ec778566204"
+      "sha256": "63d94edb4a5e0e5c981f62f0e15539e7793a93275ad89fa7ca49aa61ecb66d33"
     },
     {
       "path": "agent.json",
@@ -69,6 +69,24 @@
       "role": "standard_matrix",
       "required": true,
       "sha256": "929fdc66629440874892d17e8f0b16982027b113340d258c0a19ca4f63526a92"
+    },
+    {
+      "path": "risk.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "61fbc3a8630ef5a33cd3aecb69a55cebd1d70502aeaf38c8606d453907766d77"
+    },
+    {
+      "path": "spatial.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "6a65255491d1a159895deed4f830a7aba230dc5e0f259c28085b86cf699331dc"
+    },
+    {
+      "path": "simulation.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "f66fea9cbeef5e2c64e6aa83f89b970a61e227170d03661f00683a0b641382bb"
     },
     {
       "path": "design_depth_matrix.json",
@@ -114,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c203a9d940609a9f758890750e55bf88184ccab1b92f0893d337c7cf7c635626"
+      "sha256": "2e7d13ca80708373f05003be166b67b01549a69139c6e01f27634b6cac7e4d98"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "00e99ac33aaf473d078d1495aa64596a0a5e9dc1616651f15714cdacc97fdf4e"
+      "sha256": "202b7dfb70fac2b6968d8b07a011b2583a69489fdd237bb804db3ad38b126409"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "9aa9ddb38d592c9a91a52cf6a6435eb8c51de0f0578463c07fafe2263b53d431"
+      "sha256": "1e972ebaf1307758fb6e228831030a4fb3595370cf9111392b35cfbf75009ecc"
     },
     {
       "path": "assets/figures/key-areas.en.png",

@@ -259,6 +259,28 @@
       "formula": "count(audit_complete=true) / count(tasks)",
       "confidence": "high",
       "assumptions": []
+    },
+    "assertion_count": {
+      "status": "known",
+      "value": 60,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "sum(assertions per task) = task_count * 4",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "assertion_pass_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(assertion.passed=true) / count(assertions)",
+      "confidence": "high",
+      "assumptions": []
     }
   }
 }

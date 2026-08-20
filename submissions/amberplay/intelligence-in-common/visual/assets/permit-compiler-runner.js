@@ -149,6 +149,9 @@ let selectedBandWidthTotalM = 0;
 let aiRankOneOverriddenByHardConstraint = 0;
 let preregisteredValidationProtocols = 0;
 let protocolsWithCompleteMeasurementChain = 0;
+let candidateEvaluationCells = 0;
+let counterfactualChains = 0;
+const allowedCandidateStatuses = new Set(["PASS", "HOLD", "FAIL", "UNKNOWN"]);
 for (const item of data.cases) {
   if (item.options.length !== 3) throw new Error(`${item.case_id}: exactly 3 options required.`);
   options += item.options.length;
@@ -165,12 +168,22 @@ for (const item of data.cases) {
   const gateRecord = aiGateByCase.get(item.case_id);
   if (!captured || captured.options.length !== 3 || !Array.isArray(captured.objective_vector) || captured.objective_vector.length !== 5) throw new Error(`${item.case_id}: incomplete captured AI comparison.`);
   if (!gateRecord || gateRecord.ai_rank_one !== aiFirst.option_id || gateRecord.rank_one_gate !== aiFirst.hard_gate || gateRecord.design_team_conditional_preference !== selectedOption.option_id || gateRecord.professional_and_affected_public_selection !== false) throw new Error(`${item.case_id}: captured AI output, deterministic gate and conditional preference do not align.`);
+  const chain = captured.counterfactual_chain;
+  if (!chain || chain.ai_rank_one !== aiFirst.option_id || chain.city_gate !== aiFirst.hard_gate || chain.design_team_conditional_preference !== selectedOption.option_id || chain.professional_and_affected_public_selection !== false) throw new Error(`${item.case_id}: incomplete rank-one → city-gate → conditional-preference counterfactual chain.`);
+  counterfactualChains += 1;
   for (const capturedOption of captured.options) {
     const option = item.options.find((candidate) => candidate.option_id === capturedOption.option_id);
     const action = actionByOption.get(capturedOption.option_id);
     if (!option || !action || option.ai_rank !== capturedOption.comparative_rank) throw new Error(`${capturedOption.option_id}: captured rank does not resolve to the permit/action record.`);
     if (capturedOption.geometry_ref !== `visual/assets/design-actions-public-context.json#${action.properties.id}`) throw new Error(`${capturedOption.option_id}: captured geometry reference mismatch.`);
     if (!capturedOption.spatial_move || capturedOption.strengths.length < 2 || capturedOption.weaknesses.length < 2 || capturedOption.uncertainty.length < 3) throw new Error(`${capturedOption.option_id}: captured spatial comparison is incomplete.`);
+    if (!Array.isArray(capturedOption.candidate_evaluation) || capturedOption.candidate_evaluation.length !== captured.objective_vector.length) throw new Error(`${capturedOption.option_id}: expected five candidate-evaluation cells.`);
+    const evaluatedObjectives = capturedOption.candidate_evaluation.map((cell) => cell.objective);
+    if (new Set(evaluatedObjectives).size !== captured.objective_vector.length || captured.objective_vector.some((objective) => !evaluatedObjectives.includes(objective))) throw new Error(`${capturedOption.option_id}: candidate-evaluation objectives must match the site vector exactly.`);
+    for (const cell of capturedOption.candidate_evaluation) {
+      if (!allowedCandidateStatuses.has(cell.status) || !Array.isArray(cell.basis_refs) || cell.basis_refs.length < 1) throw new Error(`${capturedOption.option_id}/${cell.objective}: invalid or unsupported candidate-evaluation cell.`);
+      candidateEvaluationCells += 1;
+    }
   }
   for (const option of item.options) {
     const action = actionByOption.get(option.option_id);
@@ -260,6 +273,8 @@ process.stdout.write(JSON.stringify({
   permits_with_all_fields: data.cases.length,
   design_team_desktop_conditionally_preferred_options: data.cases.length,
   ai_rank_one_overridden_by_city_hard_constraint: aiRankOneOverriddenByHardConstraint,
+  ai_candidate_evaluation_cells: candidateEvaluationCells,
+  ai_counterfactual_chains: counterfactualChains,
   independently_derived_city_gate_results: derivedCityGateResults,
   content_addressed_ai_prompt_and_output: true,
   bitwise_model_replay_available: false,
