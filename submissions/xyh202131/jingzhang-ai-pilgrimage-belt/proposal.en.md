@@ -6,7 +6,7 @@ translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 version: "50.0"
-iteration: "第 50 轮 / Round 50"
+iteration: "50.0"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Haidian's innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity. Twin-Track Jing-Zhang keeps ordinary tasks continuous and G0 proof tests intermittent and stoppable; three distinct prototypes connect evidence, risk and professional handoff. Boundaries remain provisional; outcomes, approvals and independent clearance remain zero."
 tracks:
