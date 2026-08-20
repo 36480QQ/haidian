@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-20T16:25:21-07:00",
+  "generated_at": "2026-08-20T16:35:04-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,7 +28,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "16bb2afa0251e8d6d8871a445568af891e84467b421c5f20111acdb75dca08df"
+      "sha256": "e312712b9fba6b20254be168f8e0bbd112f049fd93dfb11080e6d350fa113de8"
     },
     {
       "path": "agent.json",
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3b26cb6c7bd4260d887d6e4a85034f54d3261120df8709e9eea53c76c0e8f6c9",
+      "sha256": "e30ff67fb80564b891fa34a3eec92cb9e03f21587ca417f14eb4656436276e8a",
       "language": "neutral"
     },
     {
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5c3db326b601f7a4e76749c8022925479cae039465b7c27d3b1a797a2c57c9f7"
+      "sha256": "057a396588513dd0621c42614151a9da87effd0acedeb3b0fcad09668c22764a"
     },
     {
       "path": "report/narrative.md",
@@ -119,7 +119,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "1be4e4982a33138f93f4c7b1ae31ccdfce2501b4bdeb04c2424ee15ea4f5d1b2"
+      "sha256": "21598cdc27511cd1c336d4138aef0ab0ba87eecc4e61b41d4cc94d6c7cef5db8"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -133,7 +133,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "181d2becadd40b8a9b72fe09b6804b8d1ffa49c002d18800c9250feee4efd252"
+      "sha256": "b7ffe89d33bfddb1d90418a6607f8f1bbd30b527beec6a72236e90041b0cfa8b"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -403,7 +403,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "dee9171f1c294fd3979bcca95404d2e3ff8c9bafc36da31c06aa464211232aed"
+      "sha256": "8c968d2f1e19e401b9dad358e8fa41cee6d0dfd8bab4d6fc19a5293cebed75e5"
     },
     {
       "path": "proposal.en.md",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f2c9e4f31a6990a1c5ca73494f9ad4d7bd63c97c9b7ae431b13e64bd66e7ec9d"
+      "sha256": "36679eac8f90e78e8a112ee33ef02b193ce7e8bb433dd17dbd80455dbf950928"
     },
     {
       "path": "report/proposal.en.html",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e3247d4302861a267d10ca45f92f525eca7c99798502fc2e9d1fa5721181e52d"
+      "sha256": "d5fe185f8ab2eb54b725b0b4a0d68925f7eda433cfcc41020170cc308f6c35c4"
     },
     {
       "path": "visual/index.en.html",
@@ -427,14 +427,14 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f7ee75e36f0737273c91977458122b8e944b5dd56196c4f69c7b288758b9949f"
+      "sha256": "1a2b839998f74898d5a0e40b016e63c9432fe6f0ac701867f811f4106aaf9cc8"
     },
     {
       "path": "visual/assets/parity_qa.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "03c5cb975385ea3cb8a1610cdb67d0ce396c3eb1576e4c2220d2339befa2739b"
+      "sha256": "fe3f48c19599810f83afb7346b1e8fc150da1b5109674fb7d61763d749b319f7"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -1101,7 +1101,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "8c9ca858eea0d064002dd08c9505b44e2e62646f94637537db0138b1b3e822f1"
+      "sha256": "4b8b8d92b0bbff0e4fc348e01837995e004f7e55ec60e9de2251f4890b48ce67"
     },
     {
       "path": "assets/media/closure-advance.mp4",
@@ -1157,7 +1157,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "1bc920c48db91e9ab6ba0e8327ad95dbcdb6a2c42d56fa72039d047eef996fa9"
+      "sha256": "c8fea2b0623efa8895bf7bd17e177d6415a82b789d1388c27ca59bbc294532d5"
     },
     {
       "path": "visual/assets/errata.en.json",

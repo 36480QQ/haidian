@@ -427,7 +427,7 @@ This section invents no control values, and measures what any control value must
 | Building coverage (lower bound) | 18% (1,693) |
 | Floor-count tag coverage | 10%, **no plot ratio published** |
 
-**This turns rule five into evidence.** A median block of 0.43 ha says the fabric is fine-grained — **the land is not held by the median**: the 17 oversized cells that are neither park nor campus hold 49% of block land. Subdivision is a job about 17 blocks, not 255. The first version used the boundary as denominator and counted parks as oversized (E153).
+**This turns rule five into evidence.** A median block of 0.43 ha says the fabric is fine-grained — **the land is not held by the median**: the 17 oversized cells that are majority built hold 49% of block land. Subdivision is a job about 17 blocks, not 255. The first version used the boundary as denominator and counted parks as oversized (E153).
 
 These are existing conditions, not control values, and may not be used as a redline or an alignment; what this chapter does not decide is listed at its end.
 
@@ -1844,7 +1844,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.75 s**; 9 files none of which the reviewer receives, 1344 KB, 2,033 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.73 s**; 9 files none of which the reviewer receives, 1344 KB, 2,033 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
