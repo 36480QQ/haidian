@@ -312,9 +312,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "2cf1c4e2810891ab6b6623d8cff7ff80e3c5bf02c20351ee73b05a8fd009e202",
+        "digest": "1e6b4f00ed23bec1551379e55c41d3ff738c01e9cf47133cb32dca6cffeb8713",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -357,9 +357,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "bilingual_civic_ground_reading_sync_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 synchronizes answer order, captions and backlinks around existing authority text and figures. Offline and accessibility checks establish presentation fallbacks only, not public feedback, field results, professional acceptance, approval, maturity or rights clearance."
+        "status": "bilingual_jury_atlas_reading_sync_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 synchronizes the sole S01-S08 / E01 reading note around existing authority text and figures. Offline and accessibility fallbacks establish presentation only, not public feedback, field results, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -389,9 +389,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "fd11e8d1bb5201b7ccb51baeb75de8158c5d595ef590eb693b950e4fe4a5e46e",
+        "digest": "1a2796c2de29a15a8d92c60af6aad30b75bb4bd451271a24ec9159652aa68e4f",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -404,9 +404,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_52_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "round_53_provenance_and_disclosure_closure",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -638,9 +638,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_52_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "round_53_provenance_and_disclosure_closure",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -668,9 +668,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "536910de25d777276bfb28abac37afcf048c064c3dad2c34a44d0e8001580926",
+        "digest": "dad740257922546da6bacbd2a03b31a35bf1e9c324b01f2a479ed9e1c055d3ad",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -683,9 +683,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_52_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "round_53_provenance_and_disclosure_closure",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -1686,9 +1686,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a7c9d548aca43759cbb55953880e081c4437c9b6e1204e6137fe6e07aded3aaa",
+        "digest": "92a93d865ef951cd2735b240c72da1cd118db4081c22630e1d99acd6a7396908",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -1747,9 +1747,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_52_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "round_53_provenance_and_disclosure_closure",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -1831,9 +1831,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "611fd0f69ea85dfcc79620b17ba969059e5880090a9268da516581b21d5c4911",
+        "digest": "bc989ddc79b8278d1fc9b092171ebcf1d1c202673675e82464b6106b19e64ad1",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -1891,9 +1891,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "bilingual_civic_ground_reading_sync_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 synchronizes answer order, captions and backlinks around existing authority text and figures. Offline and accessibility checks establish presentation fallbacks only, not public feedback, field results, professional acceptance, approval, maturity or rights clearance."
+        "status": "bilingual_jury_atlas_reading_sync_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 synchronizes the sole S01-S08 / E01 reading note around existing authority text and figures. Offline and accessibility fallbacks establish presentation only, not public feedback, field results, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -1923,9 +1923,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "263aa00dc75000a6f1034bcdd29af36879ca308fb65f170edde0ebda6a62680a",
+        "digest": "7874faef3387b68543dc4dd4983da46bbfd0e1131cfccbeeb5a2ab13384c4e6e",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1941,9 +1941,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_52_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "round_53_provenance_and_disclosure_closure",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -1971,9 +1971,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "543b0c6e1ab58f434e9a516ca70bbc6c58e5c005d02bc60f02d8f2bf4a0cef59",
+        "digest": "8b5ec6feb90f3a843481db7ca3a053dd886201110c19bb9beb880cd34f4e354b",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1992,9 +1992,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_52_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "round_53_provenance_and_disclosure_closure",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2022,9 +2022,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "524f0b82c0db30009a747c00166fb0967d5a26a60f70b77dad93d00102189696",
+        "digest": "07535826ad39de5ac8df9b3c8aff7e44fe698ad2548139209dc05dd806e0972e",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2066,9 +2066,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "deterministic_fixed_page_rebuild_round_52",
-        "evidence_ref": "../../agent.json#round_52_provenance/publication_rebuild",
-        "limitation": "Round 52 rebuilds the existing fixed-page publication in place without adding pages. Two fresh processes and 44-page colour, grayscale and detail QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, professional acceptance, approval, maturity or rights clearance."
+        "status": "deterministic_fixed_page_rebuild_round_53",
+        "evidence_ref": "../../agent.json#round_53_provenance/publication_rebuild",
+        "limitation": "Round 53 recomposes the existing fixed-page publication without adding pages or content. Two fresh processes, improved figure coverage and 44-page colour, grayscale and detail QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2098,9 +2098,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7928dde0ee64a50b655d269071ad223de0082f1db983930245e1234de214e319",
+        "digest": "870203f2b723c9f3cf17e94a0a88b540813ca7bf7f9007d8cbd4bbeaac4e29d1",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2156,9 +2156,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "deterministic_fixed_page_rebuild_round_52",
-        "evidence_ref": "../../agent.json#round_52_provenance/publication_rebuild",
-        "limitation": "Round 52 rebuilds the existing fixed-page publication in place without adding pages. Two fresh processes and 44-page colour, grayscale and detail QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, professional acceptance, approval, maturity or rights clearance."
+        "status": "deterministic_fixed_page_rebuild_round_53",
+        "evidence_ref": "../../agent.json#round_53_provenance/publication_rebuild",
+        "limitation": "Round 53 recomposes the existing fixed-page publication without adding pages or content. Two fresh processes, improved figure coverage and 44-page colour, grayscale and detail QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2260,9 +2260,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7f83dfa091a5bde6eb76af9d049d040ba3bbff8969ba616415890c9bae5e9993",
+        "digest": "73c669efc44c247549d93e36efdc3a66d1c9d068a747cd4dfc14a1e8c2e6e3cc",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2282,9 +2282,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "offline_svg_to_png_round_51",
-        "evidence_ref": "assets/figures/key-areas.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2314,9 +2314,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f7517796b229147b29d4c32b15da134fe4bb8277c99a15c5d03add14dd6090a8",
+        "digest": "d2e5fc9144bb81e9198ceafc8e851e43709c2089bf0eaf20413a09f7be344ad5",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2338,9 +2338,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "package_authored_spatial_design_proof_r51",
-        "evidence_ref": "../../visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2370,9 +2370,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "34431b95ced625753687c4f65512649bd96a2f6f653a3dd14aa9f899a4414744",
+        "digest": "763526fb861237bb8d2f97d116079a1ded50567f47d55b35445a235a3dbb9119",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2392,9 +2392,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "offline_svg_to_png_round_51",
-        "evidence_ref": "assets/figures/key-area-sections.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2424,9 +2424,9 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f95aa4a13ffde37ee994750506a1d56b4d2914fa74ef6f2665b91d2f28627941",
+        "digest": "07208c2f0a7f67837a3cfd70241a2f962967a7f39bc7eab5ee695c9273d48412",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2451,9 +2451,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "package_authored_spatial_design_proof_r51",
-        "evidence_ref": "../../visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2483,9 +2483,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "637a3743f2157e23e64e8c23895784da9ec36a36421e786f26c5539b32c884f9",
+        "digest": "0a5e5ba9b13464f62ce55c7c01137735063b26e430a96a719e20680294de21fc",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2499,9 +2499,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png_round_51",
-        "evidence_ref": "assets/figures/land-use-structure.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2531,9 +2531,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a2caa3bd0f0ed997c6b5a5624abe176223f0b1ac3bc6cdbcb0140287088422a8",
+        "digest": "5fbdf47cf0cd524da7305cf7cfd66af97aa830cc57df5566793953c016314cc7",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2547,9 +2547,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png",
-        "evidence_ref": "assets/figures/metrics-evidence.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The PNG is rasterized from the paired SVG in local Chrome; resolved renderer fonts and independent file-level rights review remain unavailable. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2579,9 +2579,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7574a0cd1141f9d8f30855d387a58a7c94948bb962ece239b723659101e645f3",
+        "digest": "fb0830d7e1fb40838b56b4b267f3473a09d0d1ebe34d61c39df92096398f9ae7",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2595,9 +2595,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2627,9 +2627,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1ca40e5f2149f50dc81f358c5c07bc0c388389cb817ecb1e671a5ae9fa61ae10",
+        "digest": "947df70aa1fd18a22097c6421d7398dd8aee7c3ec0ff3888195057eedff6c122",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2643,9 +2643,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png_round_51",
-        "evidence_ref": "assets/figures/site-overview.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2675,9 +2675,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4d4de558dde1e573321e48636d7f379ca792b8655047ddc8da4b15ecce07aa33",
+        "digest": "3438cee49b44970a0e022b5c911b2e3d3dd8061fde6b3fb0266415826566c2d8",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -2697,9 +2697,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_spatial_design_proof_r51",
-        "evidence_ref": "assets/figures/site-overview.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3250,9 +3250,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "226dacfe95ec2f0160de4308734db8ed55172a83f884b3bfcc584580d5dd0277",
+        "digest": "b5d889df626ef062efd1a901e8128a87b9aaa797aa25f996ea0d7d4a335bb786",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -3295,9 +3295,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "bilingual_civic_ground_reading_sync_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 synchronizes answer order, captions and backlinks around existing authority text and figures. Offline and accessibility checks establish presentation fallbacks only, not public feedback, field results, professional acceptance, approval, maturity or rights clearance."
+        "status": "bilingual_jury_atlas_reading_sync_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 synchronizes the sole S01-S08 / E01 reading note around existing authority text and figures. Offline and accessibility fallbacks establish presentation only, not public feedback, field results, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3327,9 +3327,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5fb55997ee347bf0c9e3f108684b0ac834babb84111a9fc5defc821ebdcd4b50",
+        "digest": "f8854125d1e0f5c6d17872a4847894ae4e748f92d04eddbe72faa3ca157a882b",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -3387,9 +3387,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "bilingual_civic_ground_reading_sync_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 synchronizes answer order, captions and backlinks around existing authority text and figures. Offline and accessibility checks establish presentation fallbacks only, not public feedback, field results, professional acceptance, approval, maturity or rights clearance."
+        "status": "bilingual_jury_atlas_reading_sync_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 synchronizes the sole S01-S08 / E01 reading note around existing authority text and figures. Offline and accessibility fallbacks establish presentation only, not public feedback, field results, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3491,9 +3491,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "631ea5b3cf480efea9dbce7d611e01f162441035f43e2e37a373456d4cf913cd",
+        "digest": "58c422c23ca885e554ed2a1f6674446b96a35b3fcfa7aa6d116c2f996cc9dc6d",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3531,9 +3531,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "deterministic_fixed_page_rebuild_round_52",
-        "evidence_ref": "../../agent.json#round_52_provenance/publication_rebuild",
-        "limitation": "Round 52 rebuilds the existing fixed-page publication in place without adding pages. Two fresh processes and 44-page colour, grayscale and detail QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, professional acceptance, approval, maturity or rights clearance."
+        "status": "deterministic_fixed_page_rebuild_round_53",
+        "evidence_ref": "../../agent.json#round_53_provenance/publication_rebuild",
+        "limitation": "Round 53 recomposes the existing fixed-page publication without adding pages or content. Two fresh processes, improved figure coverage and 44-page colour, grayscale and detail QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3563,9 +3563,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "0df2a53d5ceadf0c7d1eebe7192d0290e422bb7936ecfb3b2c385f752d6cf150",
+        "digest": "ea77dfb85f70184adf9a8f04c3a35adcd8d40865c98297d7860b146013e8821c",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3617,9 +3617,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "deterministic_fixed_page_rebuild_round_52",
-        "evidence_ref": "../../agent.json#round_52_provenance/publication_rebuild",
-        "limitation": "Round 52 rebuilds the existing fixed-page publication in place without adding pages. Two fresh processes and 44-page colour, grayscale and detail QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, professional acceptance, approval, maturity or rights clearance."
+        "status": "deterministic_fixed_page_rebuild_round_53",
+        "evidence_ref": "../../agent.json#round_53_provenance/publication_rebuild",
+        "limitation": "Round 53 recomposes the existing fixed-page publication without adding pages or content. Two fresh processes, improved figure coverage and 44-page colour, grayscale and detail QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3757,9 +3757,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "72954cde65b888fd395510de1ff0590d36f54d87af64498dad792ccb6cf609b7",
+        "digest": "cb5d36e8926b63b9ac28adb3f74c5cd8ea83a2834f2f70382bc4328d408c392d",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3779,9 +3779,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "offline_svg_to_png_round_51",
-        "evidence_ref": "assets/figures/key-areas.en.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3811,9 +3811,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "bf6dae269632e68e6403bad5f33b55f6cfb6e5e3f38b94790e7b9aaa3aea76cf",
+        "digest": "8d89c4c4d0dc117ac3b3f3017eacdcb2fb4f6ef57e8004e24ae4442bde22d224",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3837,9 +3837,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "package_authored_spatial_design_proof_r51",
-        "evidence_ref": "assets/figures/key-areas.en.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3869,9 +3869,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7fd8a2175a2dbd376f5c806c3f762afd7b4ff5733959b84dbd86e938dfed023b",
+        "digest": "5e52d8ebc8cb387c88a77218642a766058b1030638419e48215d53f3acbcf3a9",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3893,9 +3893,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "offline_svg_to_png_round_51",
-        "evidence_ref": "assets/figures/key-area-sections.en.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3925,9 +3925,9 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "ee07a58ed5483b845e550d0bd3e9c9c697a8087a65a97a114275f8ca3da8b13e",
+        "digest": "e3958d22b465e1e52f8906a8f8a5aede43b081d18cdd2fea728c8f7b5f7958c6",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3953,9 +3953,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "package_authored_spatial_design_proof_r51",
-        "evidence_ref": "assets/figures/key-area-sections.en.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3985,9 +3985,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "228383b4ef9e7be90627db94e8876d14b8f16b83c9889a7b59b4f67e20a2b894",
+        "digest": "d70701d86dab9b2882ad1c80690e74393fc7af85d16e3d3a6ba94f69cf530507",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -4001,9 +4001,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png_round_51",
-        "evidence_ref": "assets/figures/land-use-structure.en.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -4033,9 +4033,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1092ca2b8a06d44faff4c97549707654713652572f030b4f7f555ed3d02ef7d4",
+        "digest": "0477549d4de499affdf6411ebf3ff174497e45bf0394b27d1442dae2fed73ac7",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -4049,9 +4049,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png",
-        "evidence_ref": "assets/figures/metrics-evidence.en.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The PNG is rasterized from the paired SVG in local Chrome; resolved renderer fonts and independent file-level rights review remain unavailable. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -4081,9 +4081,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "36b51842feaa1e72f4acd932d91450195fc4d59c2f6fc01c4fa1baba6e89c40d",
+        "digest": "74917cf768e6ede749bb7c34d581eee99536b26cf8d70f0fdd75a442b517a05e",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -4097,9 +4097,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -4129,9 +4129,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "fd498845c1b295b4be4980ccf1ad047a5cc9bdc1c716623845e4efad0ef359aa",
+        "digest": "fdd3eb7bf99d1258d96b219ad838eed27fad4f6d8a19336f2adbd79cbc832bbf",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -4145,9 +4145,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "offline_svg_to_png_round_51",
-        "evidence_ref": "assets/figures/site-overview.en.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -4177,9 +4177,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "fb2315d2cf913f7a531e59e59939ebe215981c588d24a9b1b4268d504d504d23",
+        "digest": "0b3dcbb6141f02d43477f7c47b6741737456b736f2bdc358fbafe55fdfb92036",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -4200,9 +4200,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_spatial_design_proof_r51",
-        "evidence_ref": "assets/figures/site-overview.en.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -5032,9 +5032,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "25e96b1a776e4ddf77ed6381886906e5089ec0213799866f2a832270d17dfc90",
+        "digest": "e42fb393d73d8d341085e5ffeb02df5dcc6322fc7c5fca0f71d49da7c724b6e2",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -5054,9 +5054,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -5085,9 +5085,9 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5f22f4236d40499cc02f0267799af26d9d225eddd597684e93b97548c2727182",
+        "digest": "a4ed140e9a245f9b79e2ebc48fc1d757c48018c064f49c9c807868ad38bda1f1",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -5105,9 +5105,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -5137,9 +5137,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "9b8605d988edb0e69e86df11415ef4b17c1fc441b46551d48d153dd7b54afeed",
+        "digest": "8f0e86cc3bcd2517828f5fdf4abc2fe5639f3b7274f1328fd92af90d155d76b7",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -5159,9 +5159,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -5190,9 +5190,9 @@
       "origin_status": "package_authored_editable_source_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c2e133642d7307abb9d5113a707eecd3228f9b8b4e42ad2d51ccae4246e27150",
+        "digest": "7bc8027057ad11b35e55883e2e19cd1cb88d4e2119b9381a66c260bac02a0efa",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -5210,9 +5210,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -6425,9 +6425,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f253aa7482f11b2a394d54aaa5d59edbd3e52e10296a67478c69887269507202",
+        "digest": "a44304a5eac75d580d18c9ab4f8c1c7f96ea0d7176275ad2604f00997a211f31",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -6444,9 +6444,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -6476,9 +6476,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "0e825637569d8683b054553fdd073de9b2c7407052107852836162b2fa05d1e1",
+        "digest": "2e22c3510d8b116e5a51003bcd77d9187608d604abf04f6d2bebf096f816e441",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -6495,9 +6495,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -6527,9 +6527,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "988caa1565ddd1b7a7b0e9b1bbd8b2d29a0e761ff1aab975334b82b3e9020bf6",
+        "digest": "490fef84c45553e03f5e0eac3516307b93cb0bc7be90006fdbd80528d15ae79e",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -6546,9 +6546,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -6578,9 +6578,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "ba2c9fb2fac1d876b300464ae46f920c2db43f4eef3cc07888ba43cd779ec349",
+        "digest": "ac306fc8dfe157dc357eed2d1b19c656283afcdc2976c021b114e76fdab33d1e",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [
@@ -6597,9 +6597,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7229,9 +7229,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5368409b8293ce2b4bb7ec4cbac0dbe7a6682dbd8193728407f5bafbad94fbc7",
+        "digest": "667394d41add3d4d18912cd02a865a09cfea07942bb43e4b9f53673d59975737",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7248,9 +7248,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_spatial_design_proof_r51",
-        "evidence_ref": "assets/figures/land-use-structure.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7280,9 +7280,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c5498e3f48f7f3f8b781dc1ad1538822a3ee19756c93674d2268bc933cd8040b",
+        "digest": "a205d97d8b7c068839c897185892cd1bd5db01b1d80574257e9ee21bab9e1869",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 51 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7300,9 +7300,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_spatial_design_proof_r51",
-        "evidence_ref": "assets/figures/land-use-structure.en.svg",
-        "limitation": "Round 51 rebuilds an existing package-authored G0 spatial relationship figure in place. The editable SVG uses a local system font stack and the paired PNG is rasterized in local Chrome then normalized through Pillow. Resolved renderer fonts and independent file-level rights review remain unavailable. The figure establishes no official boundary, precise masterplan, dimension, material, field fact, accessibility result, professional acceptance, approval, maturity or rights clearance."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7332,9 +7332,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4c00ff175231bc49dd766ef03a9d4e942cf4963e76ae23b4d12940ac21e0c075",
+        "digest": "54a72be77d9e71fef6a659be49be0c031c15c20f22a42b5817722902f1b71c12",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7352,9 +7352,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7384,9 +7384,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e628c5c0413a14a800bd5e2a1dfefdc2f6afd5425b84c44561576ef108a62f1b",
+        "digest": "b5cfe3247caed9f55936d92363faeecbc312ae07617e7225219d4440ef0dbda8",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7405,9 +7405,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7437,9 +7437,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "7e60341b18f49136a24dff166a8efbd0224f1032b156f41d9dfbf10de7bcb131",
+        "digest": "f4a463362db12fd5291a1bef2e939d7932386d42e89d2c56706bb25e35d22487",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7456,9 +7456,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_score_visible_rebuild_r48",
-        "evidence_ref": "assets/figures/metrics-evidence.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7488,9 +7488,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5900dc4a7c25f90bc7190cfac0ee552961d1c8581a3385beaf3fb16319aa1440",
+        "digest": "705431200edf8a22573795a6f3576002c731d1b80bff28b9e50ae2de7b7fd7d7",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 48 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7508,9 +7508,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_score_visible_rebuild_r48",
-        "evidence_ref": "assets/figures/metrics-evidence.en.svg",
-        "limitation": "Round 48 rebuilds only an existing editorial/concept relationship diagram while preserving frozen facts, counts and states. The editable SVG uses a local font stack whose resolved font file still lacks independent rights review. It establishes no official boundary, precise masterplan, field, approval, accessibility or rights-clearance result."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7831,9 +7831,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1150bf455055445ea1ede52ff189ee495c3e074c273a170aa0edf642492c4680",
+        "digest": "f6659715a86e0eae5b29544bd11c35d2f61b24f9241b1fdd60088f335969776f",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7849,9 +7849,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_52_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "round_53_provenance_and_disclosure_closure",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 updates package-authored provenance, audit and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -8081,9 +8081,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e0f4a8a7c26478f1644e1cc7168ee80df61edc47668e195441b2c7673b5fb11e",
+        "digest": "7b86eceb519e28d9bbf82b9dc08134533e951beacafc01cf802e172b473ae8de",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -8101,9 +8101,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -8133,9 +8133,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "fb8b2e6614fb8157bb382e6610ceb545cf1df8fc08c18c377d6ad60d265e848a",
+        "digest": "31e09cc29adc72bd48b6d009b88635ea98885d43252c8d85ed94edf5651b7803",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -8154,9 +8154,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -8186,9 +8186,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "cbfa8e82a56be0a127b8ec50edd3cb19f30b5ad6050baf517af59d061e236a6a",
+        "digest": "d6d6ddc360b38db2375bead5b1245b1f995d6de33d0ec110e062ee7c8c14f37f",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -8206,9 +8206,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -8238,9 +8238,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c21ed903b8f6d33d5afd6e916124ce618c9761f3dccbec740391c02d5cc76f6b",
+        "digest": "c53c2fd37c833b551a49f952e5dc572ddc5bde872744c40a5371f1342b778dd4",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 52 bytes and is refreshed into manifest.json after this ledger is finalized."
+        "reason": "SHA-256 is computed from final Round 53 bytes and is refreshed into manifest.json after this ledger is finalized."
       },
       "source_lineage": {
         "source_ids": [],
@@ -8259,9 +8259,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "package_authored_civic_ground_detail_atlas_r52",
-        "evidence_ref": "../../agent.json#round_52_provenance",
-        "limitation": "Round 52 rebuilds an existing package-authored G0 relation drawing to make civic-ground, ordinary use, failure isolation and restoration legible without adding site facts. It establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
+        "status": "package_authored_jury_atlas_integrity_r53",
+        "evidence_ref": "../../agent.json#round_53_provenance",
+        "limitation": "Round 53 repairs publication identifiers, text collision and bounded line wrapping in an existing package-authored G0 concept figure. It adds no site fact and establishes no official geometry, dimension, material, engineering result, accessibility result, approval, maturity or rights clearance; resolved SVG fonts and independent review remain unavailable."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
