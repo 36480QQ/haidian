@@ -58,7 +58,13 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/civic-adoption-v2.webp",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/dazhongsi-alt-c-v13.webp",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/public-translation-v2.webp",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/receipt-porch-v14.jpg",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/receipt-porch-v14.webp",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/translation-gate-v14.jpg",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/translation-gate-v14.webp",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/two-answers-cover-v2.webp",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/verification-ring-v14.jpg",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/verification-ring-v14.webp",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assumptions.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/changelog.md",
         "submissions/felix-lhz/jingzhang-civic-proving-line/compliance_matrix.json",
@@ -90,15 +96,20 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/standard_matrix.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-v11-html.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-v11.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-v14-html.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-v14.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/content-v11.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/content-v12.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/content-v13.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/content-v14.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/context-open-map.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/e2-readiness.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/prepare-open-map.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/qa-v11.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/qa-v14.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/red-team-review.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/register-v11-manifest.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/register-v14-manifest.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/semantic-qa-v13.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/spatial-atlas.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/spatial-audit-v11.js",
@@ -108,13 +119,14 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/two-answers.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/v11.css",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/v11.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/v14-spatial-model.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/index.en.html",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/felix-lhz/jingzhang-civic-proving-line": "formal"
       },
-      "total_bytes": 22136482,
+      "total_bytes": 23816500,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -188,15 +200,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 32,
+        "known_metric_refs_required": 34,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 22,
+          "source": 23,
           "standard": 1,
-          "depth": 8,
-          "data": 27,
-          "metric": 26
+          "depth": 9,
+          "data": 30,
+          "metric": 28
         }
       }
     },
