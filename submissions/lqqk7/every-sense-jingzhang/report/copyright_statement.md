@@ -286,7 +286,7 @@ v8.0 至 v8.8 新增的八张图版另按逐件口径登记：
 
 ## 九、本台账的已知缺口 / Known gaps in this ledger
 
-1. **工具版本号的登记密度不一致。** 包内明确登记版本号的只有 MiniMax `speech-2.8-hd`、`mmx` 1.0.7 与 SEB v0.4.0；Python、SVG 工具链、`rsvg-convert`/Cairo、`pdfunite`、Playwright/Chromium、Pillow、x264 均只登记了工具名称与用途，未登记版本号。本台账据实照录，不补齐。
+1. **工具版本号的登记密度不一致。** 包内明确登记版本号的只有 MiniMax `speech-2.8-hd`、`mmx` 1.0.7 与 SEB v0.5.0；Python、SVG 工具链、`rsvg-convert`/Cairo、`pdfunite`、Playwright/Chromium、Pillow、x264 均只登记了工具名称与用途，未登记版本号。本台账据实照录，不补齐。
 2. **字体字重与具体字族未逐项登记。** PDF 侧登记到 Source Han Sans SC 与 OFL 1.1；展示页与媒体侧登记到字体栈与「运行环境预装字体」层级。
 3. **不随包分发的生成源无法由评审直接复核。** 其行为只能通过 `provenance.json` 中记录的脚本 SHA-256 与处理步骤间接核对。
 4. **本台账不产生新的权利结论。** 它只把既有登记合并呈现；任何一行与原文件不一致时，以原文件为准。
