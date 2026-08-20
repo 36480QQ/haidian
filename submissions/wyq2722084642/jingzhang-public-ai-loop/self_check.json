@@ -20,12 +20,6 @@
       ],
       "changed_files": [
         "submissions/wyq2722084642/jingzhang-public-ai-loop/agent.json",
-        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/dazhongsi-four-scales.en.png",
-        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/dazhongsi-four-scales.png",
-        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/dazhongsi-section-states.en.png",
-        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/dazhongsi-section-states.png",
-        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/implementation-roadmap.en.png",
-        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/implementation-roadmap.png",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/key-areas.en.png",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/key-areas.png",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/land-use-structure.en.png",
@@ -34,6 +28,12 @@
         "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/metrics-evidence.png",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/mobility-bluegreen.en.png",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/mobility-bluegreen.png",
+        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/qinghe-evidence-relationship.en.png",
+        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/qinghe-evidence-relationship.png",
+        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/qinghe-non-ai-service-flow.en.png",
+        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/qinghe-non-ai-service-flow.png",
+        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/qinghe-three-components.en.png",
+        "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/qinghe-three-components.png",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/site-overview.en.png",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/figures/site-overview.png",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/assets/media/cover.webp",
@@ -67,14 +67,14 @@
         "submissions/wyq2722084642/jingzhang-public-ai-loop/sources.json",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/spatial.json",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/standard_matrix.json",
-        "submissions/wyq2722084642/jingzhang-public-ai-loop/visual/assets/dazhongsi-operations.json",
+        "submissions/wyq2722084642/jingzhang-public-ai-loop/visual/assets/qinghe-service-interface.json",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/visual/index.en.html",
         "submissions/wyq2722084642/jingzhang-public-ai-loop/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/wyq2722084642/jingzhang-public-ai-loop": "formal"
       },
-      "total_bytes": 17900947,
+      "total_bytes": 7646175,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -148,15 +148,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 30,
+        "known_metric_refs_required": 24,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 17,
+          "source": 22,
           "standard": 5,
           "depth": 13,
-          "data": 12,
-          "metric": 31
+          "data": 16,
+          "metric": 27
         }
       }
     },
