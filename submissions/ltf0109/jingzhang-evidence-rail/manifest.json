@@ -1,5 +1,5 @@
 {
- "schema_version": "0.1.0",
+ "schema_version": "0.2.0",
  "package_id": "jingzhang-evidence-rail",
  "project_id": "centennial-jingzhang-ai-belt",
  "site_package_version": "0.1.0",
@@ -50,13 +50,13 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "ed53a7217d95af64fa142e882102174086c69d20423e1a4b5157b11f689301af"
+   "sha256": "1240d473a78b85750bd2872122b414f4f404f69a8064148a97cc4f4a2f61f93a"
   },
   {
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "63188a59067be7c3a18bffd350b7a12ea699964a5bcf67a8e08c7e5aacc1f9f3"
+   "sha256": "7dc39ec16ec4791be751234f01c231e2a1b57e690cb475b520a9d78f8c242d2b"
   },
   {
    "path": "compliance_matrix.json",
@@ -213,90 +213,80 @@
   },
   {
    "path": "proposal.en.md",
-   "role": "proposal",
+   "role": "narrative",
    "required": true,
-   "bilingual_partner": "proposal.md",
    "language": "en",
    "translation_of": "proposal.md",
    "sha256": "2c76d8dcf90a0d263b19988213867c011f2e2be1b5ee19ae6bb256c424849e1e"
   },
   {
    "path": "report/proposal.en.html",
-   "role": "narrative",
+   "role": "rendered_proposal_html",
    "required": true,
-   "bilingual_partner": "report/proposal.html",
    "language": "en",
    "translation_of": "report/proposal.html",
    "sha256": "030468dc17076dc730e42f47c13710493528e222bedafa11c816a41f9de97af2"
   },
   {
    "path": "visual/index.en.html",
-   "role": "narrative",
+   "role": "visualization",
    "required": true,
-   "bilingual_partner": "visual/index.html",
    "language": "en",
    "translation_of": "visual/index.html",
    "sha256": "522fa71ad8e44eed5d936b9cbb86e065dde719b0afd616f07e9ac41a7f77b101"
   },
   {
    "path": "assets/figures/site-overview.en.png",
-   "role": "figure",
+   "role": "proposal_figure",
    "required": true,
-   "bilingual_partner": "assets/figures/site-overview.png",
    "language": "en",
    "translation_of": "assets/figures/site-overview.png",
    "sha256": "0651a55098150eefad827f09cf2e53a4a445c0a61871d5d9eea942691d11407f"
   },
   {
    "path": "assets/figures/land-use-structure.en.png",
-   "role": "figure",
+   "role": "proposal_figure",
    "required": true,
-   "bilingual_partner": "assets/figures/land-use-structure.png",
    "language": "en",
    "translation_of": "assets/figures/land-use-structure.png",
    "sha256": "a8564d8b01a5f451e9ee4d074e8b643a729201a7f1516e884ae4edc1b8b9c5d2"
   },
   {
    "path": "assets/figures/key-areas.en.png",
-   "role": "figure",
+   "role": "proposal_figure",
    "required": true,
-   "bilingual_partner": "assets/figures/key-areas.png",
    "language": "en",
    "translation_of": "assets/figures/key-areas.png",
    "sha256": "10f105fed8fdb8b58b3cbe61a54e32f0100f36c960514bee59cdde8ca126a1df"
   },
   {
    "path": "assets/figures/mobility-bluegreen.en.png",
-   "role": "figure",
+   "role": "proposal_figure",
    "required": true,
-   "bilingual_partner": "assets/figures/mobility-bluegreen.png",
    "language": "en",
    "translation_of": "assets/figures/mobility-bluegreen.png",
    "sha256": "2602647ed7fcf0a2feb62a1be2a9f6af6071d9482ccf1ab183557bf3ad7cbe7a"
   },
   {
    "path": "assets/figures/metrics-evidence.en.png",
-   "role": "figure",
+   "role": "proposal_figure",
    "required": true,
-   "bilingual_partner": "assets/figures/metrics-evidence.png",
    "language": "en",
    "translation_of": "assets/figures/metrics-evidence.png",
    "sha256": "530ade88d6459ebc2146c048892f80a8898cbd1836d4396b05b9e404fd481955"
   },
   {
    "path": "drawings/a3-booklet.en.pdf",
-   "role": "drawings",
+   "role": "drawing",
    "required": true,
-   "bilingual_partner": "drawings/a3-booklet.pdf",
    "language": "en",
    "translation_of": "drawings/a3-booklet.pdf",
    "sha256": "fde4b2d2abc663c2877ebd95d22eb7fa8364a906aa643061184f965b5c86ae89"
   },
   {
    "path": "drawings/a0-boards.en.pdf",
-   "role": "drawings",
+   "role": "drawing",
    "required": true,
-   "bilingual_partner": "drawings/a0-boards.pdf",
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
    "sha256": "c0553b0983106e7943d966054c1840a8f1b9c8b2e006de1200e5dbed2f1bf017"
@@ -305,8 +295,7 @@
  "validation_claim": {
   "self_checked": true,
   "known_blockers": [],
-  "data_confidence": "high"
- },
- "known_blockers": [],
- "intake_status": "pass"
+  "data_confidence": "high",
+  "readiness_contract": "persisted-self-check-v1"
+ }
 }
