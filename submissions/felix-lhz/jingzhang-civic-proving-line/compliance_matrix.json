@@ -1098,8 +1098,8 @@
         "geometry/constraints.geojson"
       ],
       "metrics": [
-        "measurement_contract_count",
-        "field_verification_result_count"
+        "east_west_stitch_count",
+        "receipt_landmark_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1150,8 +1150,8 @@
         "geometry/constraints.geojson"
       ],
       "metrics": [
-        "measurement_contract_count",
-        "field_verification_result_count"
+        "receipt_landmark_count",
+        "measurement_contract_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1203,7 +1203,7 @@
       ],
       "metrics": [
         "measurement_contract_count",
-        "field_verification_result_count"
+        "synthetic_design_verification_case_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1254,8 +1254,8 @@
         "geometry/constraints.geojson"
       ],
       "metrics": [
-        "measurement_contract_count",
-        "field_verification_result_count"
+        "spatial_hard_gate_evaluation_count",
+        "advanced_spatial_alternative_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1307,8 +1307,8 @@
         "geometry/constraints.geojson"
       ],
       "metrics": [
-        "measurement_contract_count",
-        "field_verification_result_count"
+        "east_west_stitch_count",
+        "spatial_component_type_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1362,8 +1362,8 @@
         "geometry/constraints.geojson"
       ],
       "metrics": [
-        "measurement_contract_count",
-        "field_verification_result_count"
+        "s7_pilot_phase_count",
+        "e2_permit_gate_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1409,11 +1409,10 @@
     "interaction": "report and visual use different first-screen compositions",
     "field_boundary": "geometry audit only; not field-run"
   },
-  "v12_evidence_index": {
-    "version": "measurement_contract_release",
-    "contracts": "12/12 documented; 0 field results",
-    "public_value_families": 6,
-    "threshold_rule": "non-safety AI increments pending baseline committee",
-    "rights": "report/copyright_statement.md"
+  "v13_evidence_index": {
+    "version": "spatial_decision_table_release",
+    "primary_judgement": "ALT-A reject / ALT-B revise / ALT-C advance",
+    "secondary_evidence": "12/12 measurement contracts; 0 field results",
+    "semantic_metric_assertions": "visual/assets/semantic-qa-v13.js"
   }
 }

@@ -15,12 +15,15 @@ const entries=[
   ['visual/assets/spatial-audit-v11.js','verification_script',false,'neutral'],
   ['visual/assets/content-v11.js','verification_script',false,'neutral'],
   ['visual/assets/content-v12.js','verification_script',false,'neutral'],
+  ['visual/assets/content-v13.js','verification_script',false,'neutral'],
+  ['visual/assets/semantic-qa-v13.js','verification_script',false,'neutral'],
   ['visual/assets/build-v11.js','verification_script',false,'neutral'],
   ['visual/assets/build-v11-html.js','verification_script',false,'neutral'],
   ['visual/assets/qa-v11.js','verification_script',false,'neutral'],
   ['visual/assets/register-v11-manifest.js','verification_script',false,'neutral'],
   ['visual/assets/v11.css','asset',true,'neutral'],
   ['visual/assets/v11.js','asset',true,'neutral'],
+  ['assets/media/dazhongsi-alt-c-v13.webp','media_poster',false,'neutral'],
 ];
 for(const [rel,role,required,language,translation_of] of entries){
   if(!fs.existsSync(path.join(ROOT,rel)))throw new Error(`Cannot register missing V11 file: ${rel}`);
@@ -31,4 +34,4 @@ for(const [rel,role,required,language,translation_of] of entries){
 }
 manifest.files.sort((a,b)=>a.path.localeCompare(b.path));
 fs.writeFileSync(file,JSON.stringify(manifest,null,2)+'\n');
-console.log(`Measurable-protocol manifest registered: ${manifest.files.length} existing files`);
+console.log(`V13 spatial-decision manifest registered: ${manifest.files.length} existing files`);
