@@ -46,7 +46,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "57f7aa6653d4758b911040b80bbc588125f0569731288fc81605b29677e7f5de"
+      "sha256": "e5b5f0b3e4e5484a6e7d307b61b3e6a7c99305f7179df767aa6d12c72a1c4e24"
     },
     {
       "path": "assumptions.json",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "cee05224b01769bedd60f49a117020612ec6ac8e28c7e1e2fa2ee057fe78ba81"
+      "sha256": "f7bf9d44bd13525aa10acf48fb08e96fe37df31cd74b699a6e21ba7912c1eaec"
     },
     {
       "path": "compliance_matrix.json",
@@ -235,7 +235,7 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "b37b23826d11bccda22065e5884a45e4ca9c1d29ecc0943fdee4eba42d0a121f"
+      "sha256": "682ad0bec9d9e51ab14174dc33b0c427bf07ad620cc93833079fbfe42175e514"
     },
     {
       "path": "geometry/constraints.geojson",
