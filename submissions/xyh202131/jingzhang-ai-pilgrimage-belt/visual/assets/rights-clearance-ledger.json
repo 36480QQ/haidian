@@ -3,8 +3,8 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-20",
-  "as_of_semantics": "date of last real content edit; Round 51 rebuilds four existing bilingual spatial-figure families and four fixed-page PDFs in place, adds no package path, media or source, and keeps every affected file pending independent review",
-  "scope": "Round 20 bilingual review handoff package index, Round 40 spatial-distinction redraw/republication, Round 46B spatial-motion truth repair, Round 50 expert review packet alignment, and Round 51 spatial-design proof",
+  "as_of_semantics": "date of last real content edit; Round 52 rebuilds four existing bilingual civic-ground figure families and four fixed-page PDFs in place, adds no package path, media or source, and keeps every affected file pending independent review",
+  "scope": "Round 20 bilingual review handoff package index, Round 40 spatial-distinction redraw/republication, Round 46B spatial-motion truth repair, Round 50 expert review packet alignment, Round 51 spatial-design proof, and Round 52 civic-ground detail atlas",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
     "source_rights_instance": "source-rights-evidence.json",
@@ -248,7 +248,7 @@
           "assets/media/4-state-narration-script.md"
         ],
         "limits": [
-          "No standalone source font file is shipped. The four PDFs contain visible NotoSansSC-Medium/Bold subsets; final Round 47 files also contain 46 visible Base-14 Helvetica spans (44 route labels plus two existing A0 path-count labels) with no embedded Helvetica program. The accepted synthetic Round 19 cover contains rasterized DengXian glyph pixels. HTML requests system font stacks, and concrete fonts resolved while rasterizing the thirty-four checked-in SVG files were not recorded. Embedding, referencing, or rasterization does not establish license compliance.",
+          "No standalone source font file is shipped. Historical Round 19 PDFs contained visible NotoSansSC-Medium/Bold subsets, but the current Round 52 PDFs contain no Noto subset. Read-only inspection finds 280 visible Base-14 Helvetica spans across all four current PDFs and 118 visible Heiti CID spans in the two Chinese PDFs; neither font program is embedded. The accepted synthetic Round 19 cover contains rasterized DengXian glyph pixels. HTML requests system font stacks, and concrete fonts resolved while rasterizing checked-in SVG files were not recorded. Embedding, referencing, substitution, or rasterization does not establish license compliance.",
           "Editable package-authored SVG sources are declared for sixteen bilingual figure pairs. The reversible-components pair is separately recorded as a repository-provisional derivative. Editable sources exist for Markdown, HTML, CSS, JavaScript, JSON and GeoJSON, but no separate editable vector or publication-layout source is declared for every remaining PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
@@ -8693,7 +8693,7 @@
     },
     {
       "id": "RIGHTS-THIRD-06",
-      "material": "Visible Base-14 Helvetica references in the four Round 47 PDFs",
+      "material": "Visible Base-14 Helvetica references in the four Round 52 PDFs",
       "scope": [
         "drawings/a3-booklet.pdf",
         "drawings/a3-booklet.en.pdf",
@@ -8702,7 +8702,7 @@
       ],
       "embedding_state": "referenced_not_embedded_visible_route_labels",
       "status": "font_resolution_and_terms_not_independently_audited",
-      "limit": "Read-only inspection finds 46 visible Helvetica spans across the four PDFs: 44 Round 47 route labels and two existing A0 path-count labels. No Helvetica font program is embedded. The producing environment and applicable terms remain independently unaudited."
+      "limit": "Read-only inspection finds 280 visible Helvetica spans across the four Round 52 PDFs. No Helvetica font program is embedded. The producing environment and applicable terms remain independently unaudited."
     },
     {
       "id": "RIGHTS-THIRD-07",
@@ -8722,6 +8722,17 @@
       "current_use": "Package-authored text prompts and zero external image inputs produced three candidates: the ordinary-life triptych was accepted, the first cover was rejected for map-pin/site-truth risk, and the corrected cover base was accepted. Pillow deterministically encoded the 1774 x 887 RGB ordinary image without compositional editing and combined the accepted synthetic cover base with a deterministic local overlay for the 1600 x 900 RGB cover. No EXIF, GPS, XMP or ICC was observed in either final WebP.",
       "status": "tool_and_output_terms_not_independently_audited",
       "limit": "Exact serving snapshot, complete output terms, architectural validity, accessibility, model bias, site truth, approval, built state, resident feedback, and public/professional reuse rights are not asserted. Both images are synthetic and not field evidence; repository review only and package-wide not_fully_cleared status remain."
+    },
+    {
+      "id": "RIGHTS-THIRD-09",
+      "material": "Visible Heiti CID references in the two Round 52 Chinese PDFs",
+      "scope": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "embedding_state": "referenced_not_embedded_visible_publication_text",
+      "status": "font_resolution_and_terms_not_independently_audited",
+      "limit": "Read-only inspection finds 118 visible Heiti CID spans using china-s / UniGB-UTF16-H in the two Round 52 Chinese PDFs. No Heiti font program is embedded. Historical local QA substitution records do not represent embedded final-PDF fonts. The producing environment and applicable terms remain independently unaudited."
     }
   ],
   "unresolved_items": [
