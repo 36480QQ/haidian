@@ -8,8 +8,8 @@ translation_file: "proposal.md"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Guided by Evidence-based Incremental Participatory Planning (EBIP), this proposal translates the century-old history of the Beijing–Zhangjiakou Railway's independent innovation into a verifiable, incrementally renewed AI public innovation belt; spatially organized as one belt, three cores and multi-node scenarios, and governed through evidence grading, transparent assumptions and human review to keep AI participation accountable."
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+tracks: []
+scenarios: []
 ---
 
 # Jing-Zhang Evidence Rail: A Verifiable, Incremental AI Public Innovation Belt
@@ -75,6 +75,8 @@ The proposed overall concept is the **"Evidence Rail: one belt, three cores, mul
 | Design scope | How to map industry space, urban renewal, transport/municipal and urban form | Land use, buildings, roads, green space, public space and phasing layers jointly express | [data:geometry/land_use.geojson#LU-001], [data:geometry/roads.geojson#ROAD-001] |
 | Key-area scope | How the three areas reach detailed-design depth | Propose positioning, spatial actions, AI scenarios and implementation dependencies for each | [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003] |
 
+![Three-level scope framework: research, design and key-area levels (Figure 1)](assets/figures/site-overview.png)
+
 ---
 
 ## Research Scope: Industry and Future Urban Form
@@ -110,6 +112,8 @@ For new functional types such as "new-industry land": express with existing code
 ---
 
 ## Key-Area Detailed Design
+
+![Three key-area detailed design extents and functional programs (Figure 2)](assets/figures/key-areas.png)
 
 Key-area detailed design is mandatory, checked by [depth:three_key_area_detailed_design] for comprehensive-implementation-planning depth. Merely describing "build a demonstration zone" without functional, building, transport, public-space and implementation-project evidence is treated as incomplete.
 
@@ -167,6 +171,8 @@ Land-use codes follow the territorial spatial planning system (see "Design Scope
 - **Renovate**: interface buildings along the heritage park, functional repositioning of industrial buildings (R&D-ization, service-ization), and embedded community stock;
 - **Change (where genuinely required)**: only a small number of plots confirmed by precise spatial classification as having structural-safety or severe functional-conflict issues, and only with evidence of ownership, funding and approval pathway; otherwise listed as implementation risk rather than commitment [depth:retain_renovate_demolish] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/land_use.geojson#LU-001].
 
+![Land-use structure and retain/renovate/demolish classification (Figure 3)](assets/figures/land-use-structure.png)
+
 Industrial function ratios and total building scale await recomputation once regulatory conditions are confirmed; the current version expresses conceptual partitions with `planning_status` fields marked as pending official confirmation.
 
 ---
@@ -188,6 +194,8 @@ Green-space and public-space ratios are explained in the narrative; full recompu
 - **Blue-green intelligence loop**: Based on the heritage park, Qinghe and Xiaoyuehe, form a blue-green public-space system of park green space + waterfront corridors + cycling routes; park design avoids over-"parkification," preserving real street life and diverse functions (street eyes, small commerce, public characters), embedding AI scenarios into daily life rather than isolated tech showpieces.
 - **Three AI pilgrimage landmarks and honor system**: Along the heritage park, set up a contribution honor wall, milestones and open-source result display nodes; selected schemes and contributors are recorded in stone — **carved with the contributor's account name, not the model's name** — motivating the humans behind the screens. As conceptual suggestions, subject to deepening by professional teams [source:AGENT-TASKBOOK].
 - **Urban form**: Blend Jing-Zhang railway heritage culture, Zhongguancun innovation culture and AI innovation culture, using cultural resources such as Qinghuayuan Railway Station, and propose urban tone, architectural form, roof morphology, massing, interfaces and public-art guidance. All brands, fonts, images, portraits and enterprise marks must have cleared sources; urban-form control distinguishes official control, design suggestions and pending conditions, strictly forbidding pseudo-precise control lines without heritage-protection or regulatory-planning basis [data:geometry/green_space.geojson#GREEN-001].
+
+![Transport, rail and blue-green public-space compound network (Figure 4)](assets/figures/mobility-bluegreen.png)
 
 ---
 
@@ -220,6 +228,8 @@ The annual activity system (Q1 open-source contribution season, Q2 scenario open
 ## Indicator System, Area Recalculation and Compliance Matrix
 
 The indicator system covers design-scope area, key-area area, green/public-space ratios, building footprints, renewal project count, AI scenario nodes, slow-traffic connectivity, industrial-space indicators, talent-service indicators and self-check status [depth:metrics_recalculation] [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001]. All known indicators must be recomputable from GeoJSON or trusted sources; unknown indicators state reasons and preconditions for formal submission.
+
+![Indicator system and area recalculation evidence panel (Figure 5)](assets/figures/metrics-evidence.png)
 
 Indicators are managed in three categories:
 

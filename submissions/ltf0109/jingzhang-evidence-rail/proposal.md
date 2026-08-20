@@ -7,8 +7,6 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以循证渐进式参与规划（EBIP）为方法论，将百年京张铁路的自主创新历史转译为可验证、渐进更新的 AI 公共创新带；空间上形成一带三核多点场景，治理上以证据分级、假设透明与人工复核保障 AI 参与规划的可归责性。"
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # 京张循证轨：一条可验证、渐进更新的 AI 公共创新带
@@ -74,6 +72,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 总体设计范围 | 产业空间、城市更新、交通市政和风貌如何落图 | 用地、建筑、道路、绿地、公共空间和分期图层共同表达 | [data:geometry/land_use.geojson#LU-001]、[data:geometry/roads.geojson#ROAD-001] |
 | 重点区域范围 | 三处片区如何达到详细设计深度 | 分别提出定位、空间动作、AI场景和实施依赖 | [data:geometry/key_areas.geojson#PROV-KEY-001]、。[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003] |
 
+![三层范围工作框架示意：统筹研究、总体设计与重点区域（设计图一）](assets/figures/site-overview.png)
+
 ---
 
 ## 统筹研究范围产业与未来城市研究
@@ -110,6 +110,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 重点区域详细设计
 
+![三处重点区域详细设计范围与功能分区（设计图二）](assets/figures/key-areas.png)
+
 重点区域详细设计是必选项，由 [depth:three_key_area_detailed_design] 检查是否达到规划综合实施方案深度。若只描述"打造示范区"而没有功能、建筑、交通、公共空间和实施项目证据，应被视为未完成。
 
 ### 众智园AI自主创新加速区（可信测试花园）
@@ -124,7 +126,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 围绕领军企业、智能体、智能终端、内容消费、数据要素、数字资产、商业服务、规划绿地复合利用、大钟寺站一体化和路口四象限步行连通提出详细方案 [data:geometry/key_areas.geojson#PROV-KEY-003]。空间动作："大钟寺国际路演客厅"服务智能体、智能终端和内容消费企业的展示、洽谈、媒体发布和国际交流；"数据要素会客厅"以合规、授权、可审计为前提展示数据要素和数字资产流通的城市服务界面；大钟寺站四象限步行连通是轨道一体化的关键空间动作 [data:geometry/public_space.geojson#PUBLIC-001]。功能以 05 商业服务业用地为主，规划绿地复合利用。
 
-**文保约束（重要）**：设计范围西界紧邻**全国重点文物保护单位觉生寺（大钟寺）**（第四批国保，保护范围距设计区边界约 3m，官方四至见 `geometry/heritage_protection.geojson#HER-002` 与 `constraints.geojson#CON-005`）。本区更新必须遵守其保护范围与建控地带（Ⅰ类/Ⅳ类）管控：保护范围内不新增建构筑物，建控地带内建筑高度与功能受文物管控约束；具体边界以文物局另行印发图纸为准（当前为 provisional 推定）。相关大钟寺场景卡与 JZ-03/JZ-04 更新项目须与之协调避让 [data:geometry/heritage_protection.geojson#HER-002] [source:HERITAGE-OFFICIAL-SIZHI]。
+**文保约束（重要）**：设计范围西界紧邻**全国重点文物保护单位觉生寺（大钟寺）**（第四批国保，保护范围距设计区边界约 3m，官方四至见 `geometry/constraints.geojson#HER-002` 与 `constraints.geojson#CON-005`）。本区更新必须遵守其保护范围与建控地带（Ⅰ类/Ⅳ类）管控：保护范围内不新增建构筑物，建控地带内建筑高度与功能受文物管控约束；具体边界以文物局另行印发图纸为准（当前为 provisional 推定）。相关大钟寺场景卡与 JZ-03/JZ-04 更新项目须与之协调避让 [data:geometry/constraints.geojson#HER-002] [source:HERITAGE-OFFICIAL-SIZHI]。
 
 ---
 
@@ -168,6 +170,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **改（修缮更新）**：沿遗址公园的界面建筑、产业楼宇的功能置换（研发化、服务化）、社区存量嵌入；
 - **拆（确需改造）**：仅限经精确空间分类确认、存在结构安全或严重功能冲突的少量地块，且须具备权属、资金、审批路径证据，否则列为实施风险而非承诺 [depth:retain_renovate_demolish] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/land_use.geojson#LU-001]。
 
+![用地结构与拆改留分类方案（设计图三）](assets/figures/land-use-structure.png)
+
 产业功能比例与建筑总规模待控规条件确认后复算；当前以概念分区表述，`planning_status` 字段标注待官方确认。
 
 ---
@@ -189,6 +193,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **蓝绿智联环**：依托京张遗址公园、清河、小月河，形成公园绿地 + 滨水廊道 + 骑行道的蓝绿公共空间系统；公园设计避免过度"公园化"，保留真实街道生活与多样功能（街道眼、小商业、公共人物），让 AI 场景嵌入日常而非孤立的科技展台。
 - **三个 AI 朝圣地标与荣誉展示体系**：京张铁路遗址公园沿线设贡献荣誉墙、里程碑、开源成果展示节点；入选方案和贡献者以碑刻形式留下，**刻的是贡献者账号名而非模型名**——激励屏幕后的人。作为概念建议，供专业团队深化 [source:AGENT-TASKBOOK]。
 - **城市风貌**：融合京张铁路历史文化、中关村创新文化和 AI 创新文化，利用清华园火车站等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面和公共艺术引导。所有品牌、字体、图像、肖像和企业标识必须有清权来源；风貌控制分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线 [data:geometry/green_space.geojson#GREEN-001]。
+
+![交通轨道与蓝绿公共空间复合网络（设计图四）](assets/figures/mobility-bluegreen.png)
 
 ---
 
@@ -221,6 +227,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ## 指标体系、面积复算与合规矩阵
 
 指标体系包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI 场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态 [depth:metrics_recalculation] [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001]。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标给出原因和正式提交前置条件。
+
+![指标体系与面积复算证据面板（设计图五）](assets/figures/metrics-evidence.png)
 
 指标分三类管理：
 

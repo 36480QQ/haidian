@@ -19,15 +19,14 @@
   {
    "path": "manifest.json",
    "role": "manifest",
-   "required": true,
-   "sha256": "ffd443e0d7bc64f146ba4d7c60fbd1be5efb7287c3d2a178a95b78179e87f774"
+   "required": true
   },
   {
    "path": "proposal.md",
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "f0eba2a0da51f18332f1127cbf71c2998f817bc8f11c1d0e7a44ff27c01eb735"
+   "sha256": "58e8823c72d4d421a8fcb3d412cc324b5c6449626a4e3bce4b3170822f988bc5"
   },
   {
    "path": "agent.json",
@@ -39,7 +38,7 @@
    "path": "metrics.json",
    "role": "metrics",
    "required": true,
-   "sha256": "9c4a6dd5d85ca16b3239f4a0ff11f60587e09d0e3708dddc66ede406a3e2e456"
+   "sha256": "b8ed2e3ebae4dbfb3e21e4c25663caefc9852cb5985e1feb0a65c538eabcfbab"
   },
   {
    "path": "assumptions.json",
@@ -57,7 +56,7 @@
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+   "sha256": "63188a59067be7c3a18bffd350b7a12ea699964a5bcf67a8e08c7e5aacc1f9f3"
   },
   {
    "path": "compliance_matrix.json",
@@ -82,7 +81,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "c3d1240684c334b49f5d9e03979c9d99f8614d9df532cfade1eaaf81f5117953"
+   "sha256": "b0ded2cde4ebdca6c7671c82f343fb605fff9b416a15ba8c15df339cf31e2a07"
   },
   {
    "path": "report/narrative.md",
@@ -115,7 +114,7 @@
    "role": "visualization",
    "required": true,
    "language": "zh",
-   "sha256": "ec5a56318f1c36e8f1628643b118cdd86df8fb52ce9f83d1a0985e182128b014"
+   "sha256": "882b1d7b78964c14683635795ed243bc39d585e6028d00e7ffbb9693b88b340a"
   },
   {
    "path": "assets/figures/key-areas.png",
@@ -162,7 +161,7 @@
    "path": "geometry/constraints.geojson",
    "role": "geometry",
    "required": true,
-   "sha256": "33235e325332b5ee1065a2a38c37a3d73c1b0d56d8b761eecfa8ffe9fd35c668"
+   "sha256": "301958eb77ee35637b55331a1d79f17236de82a1e75e94b7c55be605d13f9cd7"
   },
   {
    "path": "geometry/green_space.geojson",
@@ -180,7 +179,7 @@
    "path": "geometry/land_use.geojson",
    "role": "geometry",
    "required": true,
-   "sha256": "c15d554f699a11639d4a3038e084b09de839dae7eb780e2713c35c840f2f4d0a"
+   "sha256": "3e1d58d15ea676252b808545581aecac8edc48857cf2124666e961cbda34f98a"
   },
   {
    "path": "geometry/phasing.geojson",
@@ -207,12 +206,6 @@
    "sha256": "18e2f5928a6b59bb33c7044ec8363b3de60ca698f7f4ca2e7fc55327c610dd8b"
   },
   {
-   "path": "geometry/heritage_protection.geojson",
-   "role": "geometry",
-   "required": true,
-   "sha256": "f47f1674ed305b9e87f633e4e587c144433f3457dcc6f474084acd2750cc77cc"
-  },
-  {
    "path": "visual/assets/switchback-protocol.json",
    "role": "narrative",
    "required": true,
@@ -225,7 +218,7 @@
    "bilingual_partner": "proposal.md",
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "219258de9d4535e6028075906b82bd3b2ca3657bb1a87e07f65bedcc3408806d"
+   "sha256": "2c76d8dcf90a0d263b19988213867c011f2e2be1b5ee19ae6bb256c424849e1e"
   },
   {
    "path": "report/proposal.en.html",
@@ -243,7 +236,7 @@
    "bilingual_partner": "visual/index.html",
    "language": "en",
    "translation_of": "visual/index.html",
-   "sha256": "b67ff01519f835d0098b3ff05e5a8107aaaa0162a8dea130a8567a06ffb93650"
+   "sha256": "522fa71ad8e44eed5d936b9cbb86e065dde719b0afd616f07e9ac41a7f77b101"
   },
   {
    "path": "assets/figures/site-overview.en.png",
@@ -310,10 +303,8 @@
   }
  ],
  "validation_claim": {
-  "self_checked": false,
-  "known_blockers": [
-   "Generated scaffold is not a submission. Replace the draft marker, design content, figures, geometry, and placeholder drawings before setting package_state=ready_for_review."
-  ],
+  "self_checked": true,
+  "known_blockers": [],
   "data_confidence": "high"
  },
  "known_blockers": [],

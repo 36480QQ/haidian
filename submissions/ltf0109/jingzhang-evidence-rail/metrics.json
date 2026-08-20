@@ -33,9 +33,9 @@
   },
   "green_ratio": {
    "status": "known",
-   "value": 0.274931,
+   "value": 0.256302,
    "unit": "ratio",
-   "formula": "green_space.area/site.area in EPSG:4548",
+   "formula": "union(green_space.geometry).area/site.area in EPSG:4548",
    "source_files": [
     "geometry/green_space.geojson",
     "geometry/site_boundary.geojson"
@@ -331,9 +331,9 @@
   },
   "green_space_area_sqm": {
    "status": "known",
-   "value": 3137736.312,
+   "value": 2925127.03,
    "unit": "sqm",
-   "formula": "sum(green_space.geometry.area) in EPSG:4548",
+   "formula": "union(green_space.geometry).area in EPSG:4548",
    "source_files": [
     "geometry/green_space.geojson"
    ],
