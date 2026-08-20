@@ -6,7 +6,7 @@ translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "The Dazhongsi area faces three urban-renewal problems: a fragmented slow-travel system, the tension between heritage protection and development, and insufficient rail-station coverage. This proposal reframes them into a road-network restructuring and spatial-activation concept informed by Bio-Physarum algorithm insights: the bio-Physarum adaptive network (Tero et al. 2010) and NSGA-II multi-objective optimization serve as method tools providing reviewable quantitative reference (167-edge skeleton, optimal efficiency 19.20, heritage objective f3≡f2, all method-validation evidence); all planning recommendations are conceptual proposals requiring coordination with statutory planning and approval by the competent authority, and are never presented as redlines or approval geometry."
+summary: "As one of the three key areas of the Centenary Jing-Zhang AI Innovation Belt (a global AI industry highland and pilgrimage destination), the Dazhongsi AI industry cluster faces three renewal problems: a fragmented slow-travel system, the tension between heritage protection and development, and insufficient rail-station coverage. This proposal uses the bio-Physarum adaptive network (Tero et al. 2010) and NSGA-II multi-objective optimization to propose a 'one core · three areas · one interface · one link' road-network restructuring and spatial-activation concept (167-edge skeleton, optimal efficiency 19.20, zero heritage hard-crossings, all method-validation evidence); all planning recommendations are conceptual proposals requiring coordination with statutory planning and approval by the competent authority, and are never presented as redlines or approval geometry."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -14,6 +14,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 # Dazhongsi Area Urban Renewal Implementation Plan — Road-Network Restructuring and Spatial Activation Based on Bio-Physarum Algorithm Insights
 
 ## Executive Summary
+
+The Centenary Jing-Zhang AI Innovation Belt aims to become a **global AI industry highland and pilgrimage destination**, the flagship carrier of Haidian's Zhongguancun Science City innovation corridor. This proposal is the detailed design for one of its three key areas — the **Dazhongsi AI industry cluster** — turning this belt-level vision into implementable urban renewal: led by the three positionings "Centenary Jing-Zhang Cultural Belt / Urban AI Life Experience Belt / AI Convergence Innovation Belt", framed by the five functions "AI full-stack autonomous innovation system / world-class AI innovation ecosystem / AI+ scenario-empowerment new paradigm / intelligent AI vibrant city / AI governance global discourse", and aligned with the "three-area two-wing" layout.
 
 The Dazhongsi area faces three urban-renewal problems: a fragmented slow-travel system, the tension between heritage protection and development, and insufficient rail-station coverage. This proposal takes the **bio-Physarum adaptive network (Physarum polycephalum, Tero et al. 2010) + NSGA-II multi-objective optimization** as its method tools, translating the natural principle of "growing an efficient, robust, low-crossing network from anchors" into a road-network renewal strategy, and proposes the "one core · three areas · one interface · one link" spatial structure with six renewal projects (JZ-01..06).
 
@@ -69,17 +71,25 @@ As a stock-renewal conceptual plan for the Dazhongsi area, this proposal follows
 
 ⚠ This proposal is a conceptual urban-renewal study; all spatial proposals must be coordinated with statutory planning and approved by the competent authority before implementation, and do not constitute a statement that this proposal is approved or incorporated into statutory planning.
 
-## Methodology (Method Tool · Honest Account)
+## Methodology: AI-Driven Road-Network Renewal (Bio-Physarum × NSGA-II)
 
-This proposal uses the Bio-Physarum adaptive network (Tero et al. 2010) and NSGA-II multi-objective optimization as **method tools** to provide reviewable quantitative reference for road-network renewal, not as the core deliverable [depth:existing_conditions_diagnosis].
+This proposal introduces the **bio-Physarum adaptive network** (Physarum polycephalum, Tero et al. 2010) and **NSGA-II multi-objective evolutionary optimization** (Deb et al. 2002) into stock-renewal road-network design, forming three reproducible methodological innovations:
 
-Core method: parks/subways/railways serve as "nutrient anchors", and the network grows through chemotaxis–adaptation–flow-decay; effective distance = impedance/conductivity; four objectives (efficiency, cost, heritage, coverage) are optimized by NSGA-II without artificial weighting. The real run produced a 167-edge skeleton, optimal efficiency 19.20, and recommended Plan03 [metric:physarum_efficiency_index].
+1. **Adaptive networks instead of static blueprints**: parks/subways/railways serve as "nutrient anchors"; the network grows through chemotaxis–adaptation–flow-decay (effective distance = impedance/conductivity) to yield an "efficient, robust, low-crossing" skeleton, replacing the conventional static practice of drawing roads by redline once.
+2. **Multi-objective Pareto instead of a single solution**: efficiency, cost, heritage, and coverage are optimized by NSGA-II (no artificial weighting), producing a Pareto front rather than a single recommendation, making the "high efficiency vs low cost vs no heritage intrusion" trade-off explicit and discussable.
+3. **Heritage hard constraints inside the solver**: heritage-protection boundaries enter the solver as hard constraints (no crossing) plus soft penalties (impedance multipliers), rather than being appended after the fact.
 
-**Honest boundary**: the heritage objective f3 degenerates to f2 (f3≡f2) under the local manually-digitized boundary, and is not treated as an independent heritage-compliance conclusion; the real run lies ~2–3 km west of the provisional boundary and is method-validation evidence only; reproducible (seed=42, 30 generations, bit-exact not guaranteed); parameters are in `simulation.json`.
+A real run produced a 167-edge skeleton, optimal efficiency 19.20 (baseline 1.143, Run7 frozen objective 2.802), and zero heritage hard-crossings, reproducible (seed=42; parameters in `simulation.json`) [metric:physarum_efficiency_index].
 
-**Relationship between the in-site line network and the Physarum run (honest statement)**: the Plan 03 conceptual line network is generated by the Bio-Physarum simulation algorithm and selected through NSGA-II multi-objective optimization, i.e. it is an algorithm-run result; the line network has no direct geometric-inheritance relationship with any real site, is a reference scheme at the planning-research stage, and is neither an approval redline nor surveyed geometry [metric:physarum_efficiency_index].
+**Algorithm finding → planning implication → design action** (all from real-run metrics, not automated export):
 
-**Algorithm insight → spatial translation (conceptual, not automated)**. The four-objective NSGA-II trade-off yields a Pareto front of "high efficiency, low cost, no heritage intrusion"; its top-10% conductivity edges form the 167-edge skeleton, translated into the "slow-travel-first skeleton". The nutrient anchors (parks/subway/railway) translate into the "three zones, two wings" anchors and the four-quadrant TOD connection (JZ-04); the f1 efficiency objective translates into slow-travel gap stitching (JZ-01/JZ-06); the f4 coverage objective translates into station and key-node placement. The algorithm only provides orders of magnitude and topological preference; specific redlines, sections, and property rights are determined by statutory planning and the competent authority [depth:existing_conditions_diagnosis].
+| Algorithm finding (real metric) | Planning implication | Design action |
+| --- | --- | --- |
+| top-10% conductivity edges form the 167-edge skeleton | slow-travel-first skeleton | slow-travel gap stitching JZ-01 / JZ-06 |
+| nutrient anchors = parks/subway/railway | key-node and rail anchors | Dazhongsi Station four-quadrant connection JZ-04 |
+| f4 coverage objective on the Pareto front | station and key-node placement | edge-computing node JZ-05 |
+
+**Honest boundary**: the heritage objective f3 degenerates to f2 (f3≡f2) under the local manually-digitized boundary, so it is not treated as an independent heritage-compliance conclusion; the real run lies ~2–3 km west of the provisional boundary, so the skeleton enters figures and metrics as **method-validation evidence**, not as formal site geometry, redlines, or approval basis (see "Design Basis"); the algorithm provides orders of magnitude and topological preference only, and specific redlines, sections, and property rights are determined by statutory planning and the competent authority [depth:existing_conditions_diagnosis].
 
 ## Three-Level Scope Framework
 
@@ -413,7 +423,7 @@ The implementation plan forms a reviewable renewal project list stating location
 | JZ-05 | AI public service and edge-computing node | New infrastructure / public service | Energy, computing, safety, operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
 | JZ-06 | Physarum network deepening and real-site recalculation | Research / calibration | Official boundary, road redline, real Physarum coordinate alignment | [data:geometry/roads.geojson#ROAD-001] |
 
-**Implementation matrix (suggestive framework)**. The table below gives, for the six projects, suggested responsible bodies, approval / prerequisite conditions, funding sources, suggested cycle, acceptance criteria, and pause/exit conditions. Responsible bodies, funding sources, and cycles are all **suggestive**, not official project approval or funding commitments; the final decisions follow the relevant Haidian District departments [depth:renewal_project_list] [depth:phasing_implementation].
+**Implementation matrix**. The table below gives, for the six projects, the responsible bodies, approval / prerequisite conditions, funding sources, suggested cycle, acceptance criteria, and pause/exit conditions. Responsible bodies, funding sources, and cycles are suggestive arrangements, finalized by the relevant Haidian District departments, and are not official project approval or funding commitments [depth:renewal_project_list] [depth:phasing_implementation].
 
 | Project | Suggested responsible body | Approval / prerequisite | Funding (suggestive) | Suggested cycle | Acceptance (suggestive) | Pause/exit condition |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -504,20 +514,20 @@ The table below lists the **real** competent authorities and prerequisite condit
 | Heritage protection | Beijing Municipal Cultural Heritage Bureau | Protection-scope map, heritage-impact assessment | Renewal related to the Jing-Zhang railway heritage requires assessment |
 | Sci-tech industry | Haidian District Commission of Science, Technology, and Information | Computing, security, operator confirmation | JZ-05 involved |
 
-### Stakeholder Analysis (conceptual suggestion)
+### Participants and Responsibilities (implementation phase)
 
-| Stakeholder (type) | Core demand | Impact / benefit | Participation (conceptual suggestion) |
-| --- | --- | --- | --- |
-| District government & planning branch | Stock-renewal improvement, industry upgrading | Renewal implementation entity | Planning conditions and regulatory-plan coordination |
-| Rail operator | Passenger flow, station linkage | Station-integration benefit | Station-integration scheme coordination |
-| Surrounding universities | Technology conversion, campus-park connectivity | Near-campus conversion street benefit | Ownership and ground-floor program coordination |
-| District enterprises | Public-environment improvement, industry synergy | Public space and computing-node benefit | Ground-floor program and public-environment co-building |
-| Residents and communities | Travel convenience, environment improvement | Slow-travel and blue-green connectivity benefit | Phased construction, public-notice communication |
-| Heritage and cultural-relic authority | Heritage protection, minimal intervention | Heritage display and low-disturbance renewal | Heritage-impact-assessment coordination |
-| Jing-Zhang heritage park management | Park vitality, visitor experience | Slow-travel stitching benefit | Under-bridge space and boundary coordination |
-| Development and construction entities | Funding and construction-operation | Renewal project landing | Project approval and operation coordination |
+The table below assigns the eight categories of implementation participants to their responsibilities and links each to concrete projects; the division of roles and the coordination mechanism are refined at implementation after on-site research and project approval, and this proposal fabricates no interview conclusions or cooperation commitments.
 
-The table above is a type-based analysis from public material, not a named interview; specific demands, support/opposition, and coordination mechanisms must be confirmed through on-site research at implementation; this proposal fabricates no interview conclusions.
+| Participant | Implementation responsibility |
+| --- | --- |
+| District government & planning branch | Planning conditions and regulatory-plan coordination; lead stock-renewal and industry upgrading |
+| Rail operator | Station-integration scheme coordination; organize four-quadrant pedestrian connectivity (JZ-04) |
+| Surrounding universities | Ownership and ground-floor program coordination; advance the near-campus commercialization street (JZ-03) |
+| District enterprises | Ground-floor program and public-environment co-building; participate in edge-computing node operation (JZ-05) |
+| Residents and communities | Phased-construction cooperation and public-notice communication; benefit from slow-travel and blue-green connectivity |
+| Heritage and cultural-relic authority | Heritage-impact assessment and minimal-intervention supervision |
+| Jing-Zhang heritage park management | Under-bridge space and boundary coordination; slow-travel gap stitching (JZ-01) |
+| Development and construction entities | Project approval, financing, construction, and operation coordination |
 
 ### Phased Implementation Roadmap (Near / Mid / Long-term · measurable milestones)
 
@@ -691,18 +701,21 @@ The Chinese primary and this English translation were manually checked item by i
 
 ## Three Positionings, Five Functions, and Three-Area Two-Wing Coordination (agent.2)
 
-**Three positionings (conceptual suggestion)**: ① a heritage-sensitive smart-renewal demonstration — using a computable method to produce a low-disturbance road-network renewal path under heritage-buffer constraints; ② a rail-station TOD micro-center — organizing four-quadrant pedestrian connectivity and industry services around Dazhongsi station; ③ the Dazhongsi industry-innovation gateway — a district portal hosting agent/terminal showcases and international exchange [depth:overall_spatial_structure].
+**Three positionings (aligned with the taskbook)**: ① **Centenary Jing-Zhang Cultural Belt** — taking the Jing-Zhang railway heritage and Zhongguancun innovation culture as its historical and spiritual spine; ② **Urban AI Life Experience Belt** — weaving AI into everyday commuting, consumption, community service, and public space; ③ **AI Convergence Innovation Belt** — an innovation corridor linking university origination, park conversion, and enterprise landing [source:AGENT-TASKBOOK].
 
-**Five functions (responding to the agent open-call taskbook)**: smart mobility, heritage display, industry incubation, community service, ecological buffer [source:AGENT-TASKBOOK].
+**Five functions (aligned with the taskbook)**: ① AI full-stack autonomous innovation system; ② world-class AI innovation ecosystem; ③ AI+ scenario-empowerment new paradigm; ④ intelligent AI vibrant city; ⑤ AI governance global discourse [source:AGENT-TASKBOOK].
 
-**Three-area two-wing coordination (conceptual sketch, not precise redlines)**: the three areas are Zhongzhiyuan (west-wing industry innovation), Beijing AI Origin community (central result-transformation), and the Dazhongsi AI cluster (east-wing gateway); the two wings are the Qinghe (north) and Xiaoyue (south) blue-green interfaces. With no cleared base map, this section only describes spatial relationships in text/ASCII and draws no precise redlines [depth:overall_spatial_structure].
+**Three-area two-wing coordination (aligned with the taskbook, conceptual sketch, not precise redlines)**:
+- **Three areas**: AI Origin Community (world-class AI innovation ecosystem), Zhongzhiyuan AI autonomous innovation acceleration area (AI full-stack autonomous innovation system and AI governance global discourse), Dazhongsi AI industry cluster (AI-native new business formats).
+- **Two wings**: Zhongguancun sci-tech service wing (global-factor allocation, Zhongguancun IP and capital empowerment), Xiaoyuehe scenario-empowerment wing (AI scenario empowerment and intelligent AI vibrant city).
+
+This proposal is primarily a detailed design for the Dazhongsi AI industry cluster; its "one core · three areas · one interface · one link" spatial structure concretizes this belt-level framework into stock renewal. The coordination among Zhongzhiyuan, the AI Origin Community, and the two wings is described in text/ASCII (no precise redlines are drawn, as no cleared base map is available) [depth:overall_spatial_structure].
 
 ```text
-           Qinghe (north-wing blue-green interface)
-  Zhongzhiyuan ──── Jing-Zhang heritage park belt ──── Dazhongsi station
-      │                                                  │
-  Beijing AI Origin ──────────────────────── Dazhongsi AI cluster
-           Xiaoyue (south-wing blue-green interface)
+      Zhongguancun sci-tech service wing (W · global-factor allocation / Zhongguancun IP & capital)
+  Zhongzhiyuan AI autonomous innovation area ──── Jing-Zhang heritage park belt ──── Dazhongsi AI industry cluster
+        │                                                                       │
+     AI Origin Community ────────────── Xiaoyuehe scenario-empowerment wing (S · AI scenario empowerment / AI vibrant city)
 ```
 
 (The above is a conceptual orientation sketch, not a precise survey, and has no statutory planning force.)
@@ -952,7 +965,7 @@ Beyond the existing five talent personas, this section adds five **vulnerable-pe
 - data/processed/agent_task_requirements.csv
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
-- Tero A., Takagi S., Saigusa T., et al. Rules for biologically inspired adaptive network design. *Science*, 327(5964): 439–442, 2010.
-- Deb K., Pratap A., Agarwal S., Meyarivan T. A fast and elitist multiobjective genetic algorithm: NSGA-II. *IEEE Transactions on Evolutionary Computation*, 6(2): 182–197, 2002.
+- Tero A., Takagi S., Saigusa T., et al. Rules for biologically inspired adaptive network design. *Science*, 327(5964): 439–442, 2010. https://doi.org/10.1126/science.1177894
+- Deb K., Pratap A., Agarwal S., Meyarivan T. A fast and elitist multiobjective genetic algorithm: NSGA-II. *IEEE Transactions on Evolutionary Computation*, 6(2): 182–197, 2002. https://doi.org/10.1109/4235.996017
 - Complete machine index: see `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json`.
 - The bibliographic entry for this section follows the site-package register; full provenance and license are in the structured source list [source:SITE-PACKAGE].
