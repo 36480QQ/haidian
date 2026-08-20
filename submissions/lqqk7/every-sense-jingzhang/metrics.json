@@ -945,7 +945,8 @@
    "assumptions": [
     "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
     "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
-    "This is the figure whose title on assets/figures/mobility-bluegreen.png reads 49.3%; the ledger on A3 page 11 previously carried an inconsistent 48.16% under a different convention, corrected in v7.8."
+    "This is the figure whose title on assets/figures/mobility-bluegreen.png reads 49.3%; the ledger on A3 page 11 previously carried an inconsistent 48.16% under a different convention, corrected in v7.8.",
+    "Timeline caliber, so that this reading is not read against the AI ON = AI OFF headline as a contradiction: 49.3% is the gap still to be closed under today's conditions, while AI ON = AI OFF states the target state to be accepted at G3. The figure measures the work between today and that target; it is neither a result of the proposal nor a claim that the target has been met."
    ],
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",

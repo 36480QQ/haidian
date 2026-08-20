@@ -1,8 +1,8 @@
 {
  "file_id": "field-verification-plan",
- "version": "0.1.0",
+ "version": "0.2.0",
  "issued": "2026-08-18",
- "status": "plan_ready_execution_pending_all_values_zero_or_unknown",
+ "status": "plan_ready_execution_deferred_all_values_zero_or_unknown",
  "declaration": {
   "package_zh": "万感京张 零授权现场验证计划 —— 六项空间读数、无障碍路径实测协议与最小访谈集的执行办法",
   "package_en": "Every-Sense Jingzhang zero-authorisation field verification plan -- execution method for the six spatial readings, the accessibility-route test protocol and the minimum interview set",
@@ -398,6 +398,22 @@
   "no_date_commitment_zh": "本计划不给出开始日期、不给出完成期限、不给出里程碑排期。给出排期会使一个尚无授权主体、尚无人员的计划看起来像已排定的工作，那是不实陈述。",
   "no_date_commitment_en": "The plan states no start date, no completion deadline and no milestone schedule. Stating one would make a plan with no authorising body and no personnel look like scheduled work, which would be a false statement."
  },
+ "legal_prudence": {
+  "name_zh": "合规审慎声明：执行前的辖区确认义务",
+  "name_en": "Legal prudence: the executor's duty to confirm jurisdiction before running",
+  "statement_zh": [
+   "本计划所列测量与访谈均为公共空间内的零授权活动设计：全部动作以公众身份在公共可进入空间内完成，不进入受限区域、不触碰设施、不采集个体身份信息。",
+   "但零授权是本计划的设计口径，不是对任何辖区法律状态的判断。执行者在任何辖区开展前须自行确认当地对公共空间测量、拍摄与访谈活动的法律与管理要求，其中包含铁路沿线区域的特殊管理规定；存在不确定时不执行。",
+   "本包不构成对任何辖区合规性的判断，也不代替具备资质的法务意见。本条不是免责措辞，而是执行前置条件：确认未完成即视为条件不成立，该项不得开始。"
+  ],
+  "statement_en": [
+   "Every measurement and interview in this plan is designed as a zero-authorisation activity in public space: all actions are performed as a member of the public in publicly enterable space, entering no restricted area, touching no equipment and collecting no individual identity data.",
+   "Zero-authorisation is this plan's design caliber, not a judgement about the legal position in any jurisdiction. Before running anything in any jurisdiction the executor must confirm for themselves what local law and administrative rules require of measurement, photography and interviewing in public space, including the special rules governing land along railways; where that is uncertain, the item is not executed.",
+   "This package makes no compliance judgement for any jurisdiction and substitutes for no qualified legal advice. This clause is not a disclaimer but a precondition of execution: until the confirmation is complete the condition does not hold and the item may not begin."
+  ],
+  "execution_decision_zh": "执行决定为暂缓：方法作为方案交付物保留，执行与否及其时点由未来经授权主体在完成合规确认后决定。本文件不因此改变任何读数，六项读数仍全部为零值或 unknown。",
+  "execution_decision_en": "The execution decision is deferred: the method is retained as a deliverable of the proposal, while whether and when it runs is for a future authorised body to settle once its own compliance confirmation is complete. Nothing here changes any reading; all six remain zero or unknown."
+ },
  "data_backfill": {
   "target_files_zh": "首轮现场值回填至 visual/assets/spatial-audit-readings.json 的对应 reading 条目（该文件当前为 definitions_only_no_values），本文件同步登记回填批次与执行记录；七项包容性指标不因本计划的任何读数而改变，两套口径不共用分母。",
   "target_files_en": "First-round field values are written back into the corresponding reading entries of visual/assets/spatial-audit-readings.json, which is currently definitions-only-no-values, while this file registers the batch and its execution record. None of the seven inclusion metrics changes because of any reading here; the two sets of definitions share no denominator.",
@@ -416,8 +432,8 @@
    "raw_record_ref",
    "limitations_note"
   ],
-  "current_state_zh": "batches 为空数组。这是本计划的当前真实状态，不是待填占位的疏漏。",
-  "current_state_en": "The batches array is empty. That is this plan's true current state, not an oversight left to be filled.",
+  "current_state_zh": "batches 为空数组。这是本计划的当前真实状态，不是待填占位的疏漏。执行决定为暂缓——方法作为方案交付物保留，执行与否及其时点由未来经授权主体在完成合规确认后决定（见 legal_prudence）。",
+  "current_state_en": "The batches array is empty. That is this plan's true current state, not an oversight left to be filled. The execution decision is deferred: the method is retained as a deliverable, while whether and when it runs is for a future authorised body to settle after its own compliance confirmation (see legal_prudence).",
   "batches": []
  }
 }
