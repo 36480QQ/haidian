@@ -10,8 +10,8 @@
     {
       "id": "A-CONTROLS-001",
       "status": "pending_professional_confirmation",
-      "statement": "FAR, height, density, setbacks, roads, ownership, heritage controls, utilities and fire requirements are not available.",
-      "impact": "Statutory metrics remain unknown and no approval or development right is claimed."
+      "statement": "FAR, height, density, setbacks, roads, ownership, utilities, fire requirements and georeferenced heritage-control boundaries/drawings are not available; general heritage status and text context are available.",
+      "impact": "Statutory metrics remain unknown and no approval or development right is claimed; official control drawings and authority overlay remain mandatory."
     },
     {
       "id": "A-PROTOTYPE-001",
@@ -34,8 +34,8 @@
     {
       "id": "A-OPERATIONS-001",
       "status": "active_design_assumption",
-      "statement": "AI services begin as controlled trials with an accountable operator, human handoff, physical stop and retirement state.",
-      "impact": "No autonomous public release or government operating commitment is implied."
+      "statement": "Every AI service uses an A/B/H City Task Contract: incumbent A and candidate B keep the same task and declared data/tool/authority scope; permanent H remains selectable; two independent stewards are required; critical regressions deny by default and roll back.",
+      "impact": "The deterministic verifier proves design-time wiring only. No live model, user, field trial, deployment, public release or government operating commitment is implied."
     },
     {
       "id": "A-SECTION-001",
@@ -76,8 +76,8 @@
     {
       "id": "A-CAMPUS-GATES-001",
       "status": "pending_operator_agreement",
-      "statement": "Negotiated Gates open only selected public-side routes at agreed times; they do not imply unrestricted access to campuses or residential compounds.",
-      "impact": "Each gate requires owner, university, community, security, emergency and accessibility agreement before implementation."
+      "statement": "Operated, timed campus access opens only selected public-side routes at agreed times and under emergency rules; it does not imply unrestricted access to campuses or residential compounds.",
+      "impact": "Each access point requires owner, university, community, security, emergency and accessibility agreement before implementation."
     },
     {
       "id": "A-DAZHONGSI-FIRST-BAY-001",
@@ -87,15 +87,21 @@
     },
     {
       "id": "A-REGIONAL-001",
-      "statement": "The five regional coordination interfaces (Beiwei AI Community, Future Science City, Huairou Science City, Beijing E-Town, Beijing-Tianjin-Hebei) are pending-negotiation concepts; until confirmed by counterparts they are spatial and operational reservations, not agreed arrangements.",
-      "impact": "Regional flows, scheduling inputs and exchange programmes stay indicative; no interface may be presented as an agreed collaboration before counterpart confirmation.",
-      "status": "pending_operator_agreement"
+      "status": "pending_operator_agreement",
+      "statement": "Five regional coordination interfaces remain concepts pending confirmation by counterpart institutions.",
+      "impact": "No regional flow, schedule, resource or programme is represented as an agreed collaboration."
     },
     {
       "id": "A-BASELINE-001",
-      "statement": "Baselines in the first-year measurement plan are first-year measurements, currently unmeasured; deterioration thresholds and exit conditions are lines agreed with operators before measurement begins, not performance promises; control designs start only after pilots are approved.",
-      "impact": "Scenario verification and slow-variable acceptance cannot be treated as achieved performance; any triggered exit closes the corresponding switch and returns the task to the staffed path.",
-      "status": "pending_field_survey"
+      "status": "pending_field_survey",
+      "statement": "Current changeover results verify contract, fixture, permanent-H, two-key and rollback wiring only; field completion, burden, incidents, non-inferiority and recovery time remain unmeasured.",
+      "impact": "No design-time receipt may be presented as field performance; authorised pilots require preregistered baselines and stop rules."
+    },
+    {
+      "id": "A-PROJECTS-001",
+      "status": "pending_operator_agreement",
+      "statement": "Renewal-package scales, actor types and funding classes are participant-authored planning envelopes informed by geometry and public context, not quantities derived from source data.",
+      "impact": "They organise dependencies and stop conditions but are not estimates, procurement packages, assignments or institutional commitments."
     }
   ]
 }

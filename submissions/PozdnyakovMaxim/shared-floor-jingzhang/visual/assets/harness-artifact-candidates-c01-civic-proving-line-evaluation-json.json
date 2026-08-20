@@ -1,71 +1,8 @@
 {
-  "schema_version": "shared-floor-immutable-artifact-v1",
+  "schema_version": "shared-floor-nondeletion-alias-v1",
   "rights": "COMMUNITY-DISPLAY-ONLY",
-  "source_path": "candidates/C01-CIVIC-PROVING-LINE/evaluation.json",
-  "source_sha256": "2121e8e72f8632e2a7f11549ee447d539d7890eb659d3e877a34539a28807500",
-  "source_size_bytes": 2512,
-  "content": {
-    "candidate_id": "C01-CIVIC-PROVING-LINE",
-    "spec_hash": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
-    "hard_gates": {
-      "geometry_valid": true,
-      "inside_reference_envelope": true,
-      "unintended_mass_overlaps_zero": true,
-      "support_infill_overlap_zero": true,
-      "continuous_accessible_public_route": true,
-      "public_route_network_connected": true,
-      "every_public_room_reached": true,
-      "feature_ids_unique": true,
-      "public_route_mass_collisions_zero": true,
-      "programme_in_reference_range": true,
-      "public_rooms_present": true,
-      "root_ordered_seven_stage_chain": true,
-      "root_trial_removal_preserves_public_route": true
-    },
-    "hard_gate_pass": true,
-    "metrics": {
-      "approx_gfa_sqm": 77200,
-      "building_footprint_sqm": 18800.0,
-      "open_ground_ratio": 0.888095,
-      "winter_public_sun_fraction": 1.0,
-      "summer_public_shade_fraction": 0.0,
-      "adaptable_footprint_ratio": 0.297872,
-      "continuous_public_route_count": 1,
-      "public_route_component_count": 1,
-      "public_room_route_gap_count": 0,
-      "unreachable_public_room_ids": [],
-      "duplicate_feature_id_count": 0,
-      "duplicate_feature_ids": [],
-      "mass_count": 10,
-      "public_room_count": 7,
-      "outdoor_solar_public_room_count": 7,
-      "sheltered_public_room_count": 0,
-      "pair_overlap_count": 0,
-      "support_infill_overlap_sqm": 0.0,
-      "public_route_collision_count": 0
-    },
-    "model_swap_test": {
-      "test": "remove all replaceable infill/equipment and compare permanent civic state",
-      "support_hash_before": "26de04b720dc987d6d54ba3ead4748d3198391031d2aea24345161b81ea4e110",
-      "support_hash_after": "26de04b720dc987d6d54ba3ead4748d3198391031d2aea24345161b81ea4e110",
-      "public_route_hash_before": "7d5c4e3c939a52903ea5dd03300d2c4bbc7a6ffea0659c3879e1d1b434aa255d",
-      "public_route_hash_after": "7d5c4e3c939a52903ea5dd03300d2c4bbc7a6ffea0659c3879e1d1b434aa255d",
-      "removed_infill_count": 7,
-      "permanent_state_unchanged": true
-    },
-    "limits": [
-      "normalized comparison envelope; not an official parcel or statutory programme",
-      "solar-noon geometric shadow proxy; not daylight, comfort, energy or legal insolation",
-      "axis-aligned comparison geometry; production drawings remain the spatial authority"
-    ],
-    "preference_components": {
-      "programme_fit": 0.0,
-      "open_ground": 0.488784,
-      "winter_sun": 1.0,
-      "summer_shade": 0.0,
-      "adaptability": 1.0,
-      "route_redundancy": 0.0,
-      "weighted_preference_aid": 0.423318
-    }
-  }
+  "status": "legacy_path_retained_for_pr_delta_compatibility",
+  "superseded_by": "visual/assets/harness-artifact-candidates-c01-route-sequence-control-evaluation-json.json",
+  "superseded_sha256": "9e7e64b06a6940aa3db5940c2fc35028e2018757d52a5239c6bc5750ce47d1f9",
+  "note": "The historical filename is not a current design title or independent evidence record."
 }

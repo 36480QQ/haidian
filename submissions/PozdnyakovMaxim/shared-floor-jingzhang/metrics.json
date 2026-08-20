@@ -246,17 +246,6 @@
         "A-SOCIAL-BASELINE-001"
       ]
     },
-    "landmark_count": {
-      "status": "known",
-      "value": 3,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(working civic landmark institutions)",
-      "confidence": "high",
-      "assumptions": []
-    },
     "winter_noon_sun_altitude_deg": {
       "status": "known",
       "value": 26.578,
@@ -513,7 +502,7 @@
       "source_files": [
         "simulation.json"
       ],
-      "formula": "count(candidate hard-gate passes) / design_root_count",
+      "formula": "count(candidate hard-condition passes) / design_root_count",
       "confidence": "high",
       "assumptions": []
     },
@@ -572,51 +561,14 @@
       "confidence": "high",
       "assumptions": []
     },
-    "global_mechanism_case_count": {
-      "status": "known",
-      "value": 6,
-      "unit": "count",
-      "source_files": [
-        "simulation.json#planning_scenario_library/competition_task_systems/global_mechanism_cases"
-      ],
-      "formula": "count(global mechanism-transfer records)",
-      "confidence": "high",
-      "assumptions": []
-    },
     "operating_actor_count": {
       "status": "known",
       "value": 6,
       "unit": "count",
       "source_files": [
-        "simulation.json#planning_scenario_library/competition_task_systems/operating_actors"
+        "simulation.json#planning_scenario_library/operating_context/operating_actors"
       ],
-      "formula": "count(named actor-role records)",
-      "confidence": "high",
-      "assumptions": [
-        "A-OPERATIONS-001"
-      ]
-    },
-    "annual_open_season_count": {
-      "status": "known",
-      "value": 4,
-      "unit": "count",
-      "source_files": [
-        "simulation.json#planning_scenario_library/competition_task_systems/open_seasons"
-      ],
-      "formula": "count(seasonal operating programmes)",
-      "confidence": "high",
-      "assumptions": [
-        "A-OPERATIONS-001"
-      ]
-    },
-    "conversion_gate_count": {
-      "status": "known",
-      "value": 6,
-      "unit": "count",
-      "source_files": [
-        "simulation.json#planning_scenario_library/competition_task_systems/conversion_pathway"
-      ],
-      "formula": "count(conversion pathway gates)",
+      "formula": "count(participant-authored accountable role types; not appointments)",
       "confidence": "high",
       "assumptions": [
         "A-OPERATIONS-001"
@@ -629,7 +581,7 @@
       "source_files": [
         "simulation.json#counterfactual_rebind_and_gate_challenge"
       ],
-      "formula": "count(valid one-bay rebind probes passing every hard gate)",
+      "formula": "count(valid one-bay rebind probes passing every hard exclusion condition)",
       "confidence": "high",
       "assumptions": []
     },
@@ -640,7 +592,7 @@
       "source_files": [
         "simulation.json#counterfactual_rebind_and_gate_challenge"
       ],
-      "formula": "count(injected faults rejected by their declared expected gate)",
+      "formula": "count(injected faults rejected by their declared expected failure condition)",
       "confidence": "high",
       "assumptions": []
     },
@@ -651,7 +603,7 @@
       "source_files": [
         "simulation.json#counterfactual_rebind_and_gate_challenge"
       ],
-      "formula": "count(injected fault cases accepted by all hard gates)",
+      "formula": "count(injected fault cases accepted by all hard exclusion conditions)",
       "confidence": "high",
       "assumptions": []
     },
@@ -752,6 +704,297 @@
       "formula": "count(duplicate ids across selected-root masses, routes and public rooms)",
       "confidence": "high",
       "assumptions": []
+    },
+    "changeover_topology_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "count(site-specific A/B/H topology records)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_witness_landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "count(LM-ABH witness-landmark records in verified topology set)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_interface_component_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "count(CH-01..CH-06 invariant interface records)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_honor_display_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "count(site topologies with a public redacted Delta Receipt wall)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_contract_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "count(AI01-AI12 City Task Contracts)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_fixture_count": {
+      "status": "known",
+      "value": 36,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "12 contracts × normal/ambiguous/hard-stop fixtures",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_delta_receipt_count": {
+      "status": "known",
+      "value": 36,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "count(hash-addressed design-time delta receipts)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_eligible_shadow_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "design-time eligible_for_live_shadow records; not deployments",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_held_regression_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "injected data/tool/authority/retention regressions held",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_unsafe_promotion_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "unsafe injected candidates incorrectly made eligible",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_promotion_executed_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "live promotions executed",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_contract_h_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "contracts with permanent H / contracts",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_two_key_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "contracts with two independent decision keys / contracts",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_rollback_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "contracts with deny-by-default rollback / contracts",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_live_model_run_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "live model calls executed by this verifier",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_field_trial_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "field trials executed by this verifier",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "changeover_field_noninferiority_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/model-swap-run-contract.json",
+        "visual/assets/model-swap-topologies.json",
+        "visual/assets/model-swap-contracts.json",
+        "visual/assets/model-swap-verification.json",
+        "visual/assets/model-swap-build-receipt.json"
+      ],
+      "formula": "requires authorised same-task A/B/H pilot with preregistered margin",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-BASELINE-001"
+      ],
+      "reason": "No live model, user session, site operation or field-performance observation was executed."
     },
     "direct_sun_sample_count": {
       "status": "known",

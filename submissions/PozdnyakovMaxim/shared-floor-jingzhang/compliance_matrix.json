@@ -115,7 +115,7 @@
       ],
       "visual_sections": [
         "北京日常",
-        "四季共地",
+        "连续 H 路",
         "AI 场景"
       ],
       "source_ids": [
@@ -339,8 +339,8 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "百年空间模型",
-        "四季共地",
+        "长期公共底盘",
+        "气候响应",
         "三座长期框架"
       ],
       "source_ids": [
@@ -427,7 +427,7 @@
       ],
       "visual_sections": [
         "留架换芯",
-        "拆改留五步门",
+        "拆改留调查决策序列",
         "实施阶段"
       ],
       "source_ids": [
@@ -478,9 +478,6 @@
         "BEIJING-METRO-CONTEXT",
         "BEIJING-ROBOT-DELIVERY-RULES-2024"
       ],
-      "standard_ids": [
-        "BARRIER-FREE-ENVIRONMENT-LAW"
-      ],
       "assumption_ids": [
         "A-MOBILITY-001",
         "A-SECTION-001",
@@ -491,6 +488,9 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
+      ],
+      "standard_ids": [
+        "BARRIER-FREE-ENVIRONMENT-LAW"
       ]
     },
     {
@@ -516,7 +516,7 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "四季共地",
+        "蓝绿公共底盘",
         "海绵链",
         "京张公园接口"
       ],
@@ -551,7 +551,7 @@
       ],
       "metrics": [
         "prototype_count",
-        "landmark_count",
+        "changeover_witness_landmark_count",
         "switch_count"
       ],
       "drawings": [
@@ -560,7 +560,7 @@
       ],
       "visual_sections": [
         "面向京张日常的当代空间语法",
-        "京张证据线",
+        "A/B/H 三处见证地标",
         "院廊厅",
         "文化叙事"
       ],
@@ -749,9 +749,6 @@
         "DAZHONGSI-RENEWAL-2026",
         "BEIJING-PKU-RIDER-STATION-2024"
       ],
-      "standard_ids": [
-        "BARRIER-FREE-ENVIRONMENT-LAW"
-      ],
       "assumption_ids": [
         "A-SOCIAL-BASELINE-001",
         "A-MOBILITY-001",
@@ -762,6 +759,9 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
+      ],
+      "standard_ids": [
+        "BARRIER-FREE-ENVIRONMENT-LAW"
       ]
     },
     {
@@ -780,7 +780,7 @@
       "metrics": [
         "prototype_count",
         "switch_count",
-        "landmark_count"
+        "changeover_topology_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -788,7 +788,7 @@
       ],
       "visual_sections": [
         "京张共地身份",
-        "总体宣言",
+        "换模型不换城市",
         "三区两翼"
       ],
       "source_ids": [
@@ -798,16 +798,14 @@
       ],
       "assumption_ids": [
         "A-BND-001",
-        "A-CHINESE-LINEAGE-001",
-        "A-REGIONAL-001"
+        "A-CHINESE-LINEAGE-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
-      ],
-      "evidence_summary_zh": "总体概念、命名与三区两翼协同回路见总体宣言与三区两翼章节；新增区域协同接口小节逐一写明北纬社区、未来科学城、怀柔科学城、经开区与京津冀的输出、回流与协商状态。"
+      ]
     },
     {
       "requirement_id": "agent.2",
@@ -824,11 +822,11 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "global_mechanism_case_count",
-        "operating_actor_count",
-        "conversion_gate_count",
+        "changeover_contract_count",
+        "changeover_fixture_count",
+        "changeover_held_regression_count",
+        "changeover_unsafe_promotion_count",
         "scenario_card_count",
-        "test_scenario_count",
         "prototype_count"
       ],
       "drawings": [
@@ -836,8 +834,8 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "共地运行系统",
-        "六个全球机制",
+        "A/B/H 换模面",
+        "同任务差分验证",
         "创新生态与资源流",
         "产业空间映射"
       ],
@@ -849,16 +847,14 @@
       "assumption_ids": [
         "A-CONTROLS-001",
         "A-OPERATIONS-001",
-        "A-OPEN-BUILDING-001",
-        "A-REGIONAL-001"
+        "A-OPEN-BUILDING-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
-      ],
-      "evidence_summary_zh": "六个全球机制案例在共地运行系统落位；新增算力、资金、数据进入退出机制段，逐类写明提供方、计价与退出；创新生态与资源流图对应产业空间映射。"
+      ]
     },
     {
       "requirement_id": "agent.3",
@@ -896,16 +892,14 @@
       "assumption_ids": [
         "A-OPERATIONS-001",
         "A-SOCIAL-BASELINE-001",
-        "A-MOBILITY-001",
-        "A-BASELINE-001"
+        "A-MOBILITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
-      ],
-      "evidence_summary_zh": "十二张场景卡与七类人物绑定空间与运营者；新增场景验证与退出统一框架，逐卡写明效果指标、人工接管触发、对照设计与退出条件。"
+      ]
     },
     {
       "requirement_id": "agent.4",
@@ -922,7 +916,9 @@
       ],
       "metrics": [
         "switch_count",
-        "landmark_count",
+        "changeover_witness_landmark_count",
+        "changeover_interface_component_count",
+        "changeover_honor_display_count",
         "public_space_ratio"
       ],
       "drawings": [
@@ -931,8 +927,9 @@
       ],
       "visual_sections": [
         "七座轨道城市房间",
-        "三座长期框架",
-        "公共组件库"
+        "三处 A/B/H 见证地标",
+        "CH-01–06 公共空间接口套件",
+        "差分票据荣誉展示"
       ],
       "source_ids": [
         "BEIJING-PARK-PHASE-II",
@@ -949,8 +946,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
-      ],
-      "evidence_summary_zh": "七座轨道城市房间与公共组件库支撑公共空间设计；朝圣地标序列五点命名（三核心两扩展），荣誉展示沿京张证据线组织。"
+      ]
     },
     {
       "requirement_id": "agent.5",
@@ -965,8 +961,9 @@
         "geometry/buildings.geojson"
       ],
       "metrics": [
-        "landmark_count",
-        "annual_open_season_count",
+        "changeover_honor_display_count",
+        "changeover_delta_receipt_count",
+        "changeover_contract_h_coverage_ratio",
         "social_rehearsal_count",
         "scenario_card_count"
       ],
@@ -976,7 +973,7 @@
       ],
       "visual_sections": [
         "1905–1909 京张—中关村—开放 AI",
-        "京张证据线",
+        "差分票据荣誉展示",
         "专业与居民同指标双向评估",
         "文化导视与来源状态规则",
         "国际传播"
@@ -999,8 +996,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
-      ],
-      "evidence_summary_zh": "1905-1909 京张叙事与文化导视规则见证据线与国际传播章节；来源状态规则约束文化内容的可溯源性。"
+      ]
     },
     {
       "requirement_id": "agent.6",
@@ -1015,9 +1011,10 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "annual_open_season_count",
-        "operating_actor_count",
-        "conversion_gate_count",
+        "changeover_contract_count",
+        "changeover_two_key_coverage_ratio",
+        "changeover_rollback_coverage_ratio",
+        "changeover_promotion_executed_count",
         "handoff_recovery_pass_count",
         "scenario_card_count",
         "social_rehearsal_count",
@@ -1029,9 +1026,9 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "共地运行系统",
-        "京张开放四季",
-        "三处重点区一条实施链",
+        "A/B/H 换模运行",
+        "两钥匙与默认回退",
+        "三处重点区三种拓扑",
         "第一跨到长期运营"
       ],
       "source_ids": [
@@ -1042,16 +1039,14 @@
       "assumption_ids": [
         "A-OPERATIONS-001",
         "A-SOCIAL-BASELINE-001",
-        "A-OPEN-BUILDING-001",
-        "A-BASELINE-001"
+        "A-OPEN-BUILDING-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
-      ],
-      "evidence_summary_zh": "京张开放四季与共地运行系统承载年度活动与长期运营；新增首年基线测量方案将五个慢变量接入开关与恢复验收，测量账本年度公开。"
+      ]
     }
   ]
 }
