@@ -4,10 +4,10 @@ author_github: "dw-zhu-si"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A three-scale urban design framework that links railway memory, public space, research translation and accountable AI adoption through VERIFY, LEARN and LIVE districts. All spatial locations remain provisional pending official data and professional verification."
+summary: "A three-scale urban design framework with VERIFY—LEARN—LIVE—ADOPT/RETIRE evidence gates; DR-01 uses two independent recalculations and one deliberate failure to prove that hard gates cannot be averaged and failures downgrade. Real projects remain HOLD and all locations provisional."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "11.0.0-implementation-evidence"
+version: "13.0.0-decision-replay"
 ---
 
 # COMMON TIME JING-ZHANG
@@ -43,6 +43,14 @@ The repository provides no official polygon with a verifiable statutory coordina
 Professional development must first produce six aligned surveys: railway alignment and the status of every original, restored, relocated or replicated object; Qinghe and Xiaoyue river systems, drainage and flood controls; public transport, walking, cycling and accessibility breaks; campus, park, community and access-control boundaries; building age, use, ground-floor condition and retain/retrofit/remove status; and public services, innovation spaces, opening times and capacity. Jingzhang Railway Heritage Park Phase 1 is publicly documented, but the nine-kilometre corridor must still be shown by construction and verification status rather than as one completed park. [source:OFFICIAL-JINGZHANG-PARK-PHASE1] [source:OFFICIAL-JINGZHANG-CO-DESIGN] The Qinghuayuan Station protection area and construction-control zones are preconditions, and Dazhongsi’s AI district must not be conflated with the protected Juesheng Temple complex. [source:OFFICIAL-QINGHUAYUAN-HERITAGE-CONTROL] [source:OFFICIAL-DAZHONGSI-HERITAGE]
 
 The professional response references the official call, agent taskbook, national urban-design and regulatory-planning measures, the national land-use classification guide and the design-depth matrix. [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] Documents not available in full remain marked for verification rather than treated as authority.
+
+## Brand Identity, Cultural Wayfinding and International Communication
+
+The working identity is **COMMON TIME JING-ZHANG / 共时京张**. Its concept mark consists of two parallel tracks, four time points and one open gap: the tracks connect railway memory with contemporary public life; the points denote `VERIFY—LEARN—LIVE—ADOPT/RETIRE`; the gap keeps human judgement, appeal and exit visible. It is a submission-stage identity direction, not an official mark or endorsement by the organisers, railway, schools, companies or heritage authorities.
+
+The system uses evidence blue, verification orange, public green and unknown grey; every drawing separates fact, interpretation, proposal and `HOLD`. VERIFY, LEARN and LIVE are evidence states rather than property brands. Cultural wayfinding carries the source, version, correction route and maintenance owner instead of imitating locomotives, bells, university marks or company logos. COMMON TIME CYCLE material must name the problem owner, current gate, next responsibility and evidence status rather than inventing an official event calendar. Typography uses locally available neutral sans-serif or openly licensed substitutes; the package distributes no font files and requires black-and-white, colour-blind and low-ink legibility.
+
+Minimum international copy: `COMMON TIME JING-ZHANG is a proposal for a civic AI adoption belt where every deployment must identify a real problem owner, pass an independent test, retain a human route, and remain reversible.` Every outward-facing version also states: `Concept proposal · not an approved plan · provisional spatial relationships · professional verification required.` [source:AGENT-TASKBOOK]
 
 ### P0–P1 Key-Area Spatial Deepening Supplement
 
@@ -85,6 +93,51 @@ Each project may have only one current record. Required fields are `problem_owne
 5. Any life-safety, heritage-authenticity, privacy-right or serious group-disparity failure causes `RETIRE` and cannot be averaged away by a composite score.
 
 Project-specific title holders, authorised operators, named accountable people, field baselines, jointly signed thresholds, budget approvals and independent-evaluation commissions remain `PENDING/HOLD` for all three priority projects. Public sources now verify Phase I’s construction unit, the call’s organisers, existing park access rules, and government-investment and procurement procedures. These are **responsibility interfaces**, not authorisation for this proposal. The submission therefore demonstrates an executable path to close responsibility and evidence; it does not claim that any project has passed G0–G8. [source:OFFICIAL-JINGZHANG-PHASE1-APPROVAL] [source:OFFICIAL-OPEN-CALL-ORGANISATION-2026]
+
+### COMMON TIME EVIDENCE OS | How AI Enters a Planning Decision
+
+`Evidence OS` is not an autonomous city platform. It is a six-role evidence pipeline that converts the taskbook’s `agent.1—agent.6` outputs into one traceable chain: `input → bounded AI task → human decision → spatial action → observation → retirement`. The roles neither share personal profiles nor read non-public material, and they cannot approve construction, procurement, lawful right of way, life-safety decisions or public rights.
+
+| Bounded role | Permitted input | Only permitted planning output | Required human sign-off | Prohibition and failure exit |
+| --- | --- | --- | --- | --- |
+| `SENSE` | cleared public material, anonymous counts, calibration and missingness | problem card, time-space baseline, evidence IDs and `UNKNOWN` register | problem owner, data steward, affected-group representative | no faces, plates or precise trajectories; unclear source/consent means deletion and return to manual records |
+| `COMPARE` | same-place/same-time non-AI baseline, trial record and group distribution | difference table, uncertainty, failed/null results and unit-cost denominator | independent evaluator and professional verifier | no average-only result or causal claim; no comparison without preregistered sample and threshold |
+| `MATCH` | signed problem card, spatial type, professional hard gates and maintenance capacity | alternatives across `share / light retrofit / reversible addition / necessary build` | asset owner/manager and planning/professional team | no statutory line, fixed demolition decision or invented quantity; an open hard gate routes to `HOLD` |
+| `SIMULATE` | fixed rules, candidate capacity/noise/access thresholds and baseline | time-window conflict, queue/arrival scenario and human-takeover drill | operator and transport/fire/accessibility professionals | no control of lawful right of way or life-safety systems; a serious event triggers physical shutdown |
+| `EXPLAIN` | rights-cleared source, model/data card, glossary and version | bilingual explanation, paper/digital-equivalent wayfinding, comprehension test and correction ticket | rights holder, heritage/professional editor and on-site human service | no diagnosis or adjudication; content is withdrawn if it cannot be traced, corrected or served offline |
+| `AUDIT` | read-only snapshots, signatures, cost, appeal and incident records | G0–G8 state, expiry, difference audit and retirement proof | independent lead reviewer, appeal owner and adoption decision maker | no silent threshold move or automatic renewal; expired evidence, undisclosed conflict or missing exit fund means `RETIRE` |
+
+Only evidence tickets carrying source, licence, version, time and state can move between roles. Person-level raw observations from `SENSE` do not move onward; `COMPARE` receives de-identified aggregates; `MATCH` and `SIMULATE` propose but do not decide; `EXPLAIN` never reads controlled-test raw data; `AUDIT` preserves immutable decision snapshots. Paper registration, fixed rules, human explanation and on-site management remain valid whenever a role is offline or fails.
+
+### DR-01 Reproducible Decision Replay | Tabletop Logic Test, Not Field Performance
+
+To replace a verbal claim of auditability with something a reviewer can recalculate, the package adds one synthetic fixture. It asks one question: **inside an already authorised existing ground floor/court, which option may enter D31–60—K0 paper-and-staff baseline, K1 movable hybrid learning island, or K2 fixed personalised kiosk?** Fixture `1/0` values test the rule only and are never written back as real authority or field passes; all three real projects remain `HOLD`.
+
+The eight hard gates are `authority, fire/access, quiet edge, offline parity, privacy, human takeover, reversibility, exit reserve`. First calculate `eligible(k)=product(gate_i)`. Only rows with `eligible=1` are compared lexicographically by `verifiable evidence channels → removable parts → fewer fixed parts`. No composite weight may average away a failed hard gate.
+
+| Option | Eight-gate simulated vector | Evidence channels | Removable parts | Fixed parts | Path A: formula | Path B: row enumeration |
+| --- | --- | ---: | ---: | ---: | --- | --- |
+| K0 paper material + staffed service | `1,1,1,1,1,1,1,1` | 2 | 4 | 0 | eligible, rank 2 | retained as the non-AI baseline |
+| K1 movable island + rights-cleared digital aid | `1,1,1,1,1,1,1,1` | 4 | 5 | 0 | **select K1** | **select K1** |
+| K2 fixed personalised kiosk | `1,1,1,0,0,1,0,1` | 5 | 1 | 3 | three gate failures; not ranked | exits before its channel count can compensate |
+
+Independent method A calculates gate products and ordering. Method B does not call that formula; it enumerates rows, removes failures, then compares the remaining fields. Both return K1. A mutation then changes K1 offline parity from `1` to `0`; the expected result must downgrade from K1 to K0. Returning K1 would fail the test. This counterexample proves that gates cannot be reweighted, averaged or moved silently.
+
+In this tabletop fixture K1 produces only reversible relationships: `public entry → clear route → movable tables`, with parallel `paper shelf, staffed desk, unplug-ready aid and visible stop`. It creates no statutory dimensions, demolition decision or automated approval. Real P-L01 may replay the same rule with real inputs only after title/operation authority, field baseline, co-signed thresholds, real CAPEX/OPEX, independent appointment and official geometry exist. Figure 06 and the A3 first page show the same fixture; `metrics.json` and `design_depth_matrix.json` retain the machine-readable copy. [metric:decision_replay_fixture_count] [metric:decision_replay_independent_method_count] [metric:decision_replay_mutation_count]
+
+### First 90-Day MVP | P-L01 Beijing AI Origin Public Learning Court
+
+The three project contracts remain distinct, but the first cycle narrows to **one no-new-build MVP with the lowest dependency on official geometry**: a reversible public learning service in an authorised existing city-side ground floor or court. No site has been authorised, so place and date remain `PENDING`; the following is a relative schedule after a valid start, not a claim of completed work.
+
+| Stage | Minimum spatial/service kit | AI and non-AI comparison | Required evidence | If the gate fails |
+| --- | --- | --- | --- | --- |
+| D0–15 authority and registration | existing city-side space only; fire, access and quiet-edge check; one problem wall and rights notice | `SENSE` records cleared problem cards; paper forms, human interviews and current service form the baseline | title/operation authority, RACI, plan/photos, rights-cleared register and exit owner | missing authority or life-safety gate: no installation or recruitment |
+| D16–30 dual baseline | movable furniture, paper shelf, staffed desk and clear routes | `COMPARE` compares the same task across human/paper baseline and candidate digital aid | weekday/weekend and day/night raw records, missingness, two-person review and co-signed thresholds | no non-AI baseline or affected-group participation: return to D0 |
+| D31–60 reversible trial | no fixed work; static signs, offline material, unplug-ready device, visible stop and human takeover | `MATCH/EXPLAIN` offers authorised content and candidate routes; a human host can run fully offline | task result/misunderstanding/correction, accessible and non-digital parity, noise/labour/OPEX | worse misinformation, exclusion, quiet or labour burden: pause that day and restore baseline |
+| D61–75 independent reproduction | space remains unaltered; independent evaluator gets read-only frozen snapshots | `AUDIT` produces differences; the independent party reproduces preregistered results without supplier self-scoring | hashes, conflicts declaration, group differences, incident/appeal closure and cost book | unreproducible result or moved threshold: invalidate and remove trial |
+| D76–90 public decision | human service and removal conditions remain; no automatic extension | `SIMULATE` compares renewal, revision and retirement consequences; a human meeting decides | 90-day review, `RENEW / REVISE / RETIRE`, deletion/return/restoration proof | no joint decision, OPEX or retirement reserve: `RETIRE` |
+
+The minimum kit is movable furniture, paper/static wayfinding, a staffed desk, unplug-ready equipment and restorable markings—no fixed building, campus-access change or personal identification. RMB values are not prefilled. The cost book uses `CAPEX = survey + accessible light retrofit + reversible kit + approvals/insurance + removal contingency` and `OPEX = staffing + rights clearance + maintenance/energy + independent evaluation + appeal + retirement reserve`, with quantity, source date, procurement route and payment responsibility. Only real authority, quantities/quotes, co-signed thresholds and an independent commission may move a field from `PENDING` to `VERIFIED`.
 
 ### Five Named Regional Coordination Interfaces
 
@@ -186,7 +239,7 @@ The terms of reference lock P0 preregistration, P1 four-day/day-night baseline, 
 
 #### 6. Full-package recalculation after official geometry
 
-As of 2026-08-17, the official repository at `main@fc1b6de15094fbe6200ae669342519b6e124bdb1` provides only provisional boundaries, their basis note and a study frame in its geometry directory. The data explicitly states `official_boundary=false`; no package area, ratio, location or section is statutory. [source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260817]
+As of 2026-08-20, the official repository at `main@362986d3040b98891d8f99b07f25b2dd165cb3fa` provides only provisional boundaries, their basis note and a study frame in its geometry directory. The data explicitly states `official_boundary=false`; no package area, ratio, location or section is statutory. [source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820]
 
 Publication of any official scope, key area, parcel, road/river/green or heritage control triggers ten steps: freeze source/licence/date/SHA-256; confirm CRS/vertical datum/accuracy; preserve the original and make projected copies; test topology/nulls/overlaps/extents; clip and recalculate every GeoJSON metric; re-mark unresolved statutory/professional gates; regenerate bilingual PNGs, four PDFs and two HTML views; update `metrics/sources/assumptions/manifest/self_check`; commission an independent reproduction; publish itemised differences and a `GO/HOLD/PIVOT/RETIRE` decision. Every drawing retains the provisional notice until this completes. Status: `RECALCULATION SOP READY / OFFICIAL GEOMETRY PENDING`. [metric:official_geometry_recalculation_step_count]
 
