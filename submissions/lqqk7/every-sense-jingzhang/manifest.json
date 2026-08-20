@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4f25c14a25274372e25b6524481c7110c5c6798e9161c6c1b7e6dc9c097e2082"
+      "sha256": "a949941f1ae3918f93a72a2cc922b96fd8aa497f63d3b4d89bf3e90244a13ae3"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6722e9498ff655e613612fc782f54f7817efc0407efdfface0c5fdc5f7cb3748"
+      "sha256": "78d7f5e47601c07aec5ac7bcb70e253027937194cb581b7cfa5fae2cd93fd557"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "66923f60025b53df74d660904fa30ac233f55e2cd83e19fe5c66fdb96b1300b2"
+      "sha256": "b319be032f9a07b8115c4529b63872845d716ed0b6f0ec2f58ad8bf9ac7c4eb9"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "fa819c720889556972055a17193be0f34a87387d4dbec1809b26c7e9746228f5"
+      "sha256": "4607d5a98c34b4132411e23b9b1a0de188d691c881a262e1946ffe3448c15736"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b20aac4f134c79ffeb5e1a021bcc1fcda290274f314fa56f838dbdafc0932363"
+      "sha256": "b897f0bb499acb44e5c826d73e03eb421ee2a44cc3814f62ac2e8f97eaf5207f"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e277bed57b9d344ca48936f7a2819ac5572c0c5a9f45a51966ce9a9677ba9135"
+      "sha256": "e10647224c91f72f6cc647b3671a754acaf8974ce801b6487ace4d56561e7fbb"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2c786e434b9d0bd84a18dee5ff7502bc9ed845afcf8f93b2b77a4e36a00be362"
+      "sha256": "93cbc77b6e3450c17529b88bc3c3ebd4e7199bbb949edc8df81051ab5e634564"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "47eee61db1f2d85bb5da0b63c48be6895d6821be0c91763ec700bf780109ef6d"
+      "sha256": "f0ef3136f65488bf17f9d1f38a22d8071d1a861aa6f01f754359316c4835674e"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "541f81657f1a3898906c7b874b77bfd3b268ee3ca6e64a00e24d574fdf9f5812"
+      "sha256": "98dfaaf9b705885118a469eade382fff31123a610ce13271b61437717cd3a779"
     },
     {
       "path": "assets/media/cover.webp",
@@ -776,7 +776,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "257526e0ae0580d9f6dc700d903d5808bbb571929cb56c2d8be41c37678f16a7"
+      "sha256": "8e1aed3c414c80e8917669f64fab16c6c98891a9a5fc56ced036f9647372fb46"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -785,7 +785,7 @@
       "language": "neutral",
       "title_zh": "随包自检闸门台账（十道闸门，逐道登记口径、当前读数与历史查获缺陷共 27 条）",
       "title_en": "Package self-check gate register (ten gates, each with its criterion, current reading and the 27 defects the gates actually caught)",
-      "sha256": "eb8b3437a18d50f139fe64822ae6553559aaf9bc65882507d164709e2bc3bc70"
+      "sha256": "478887a66886e63610a4e9146052cfb9475c88e51e2fc00f86e66cb5d5f6831a"
     },
     {
       "path": "visual/assets/service-desk-gonogo.json",
@@ -1153,6 +1153,15 @@
       "sha256": "0b5d9f4f65ee2785c9e4c7cc289de3c1314787692f40468b0de8891cf6cfe4a8"
     },
     {
+      "path": "visual/assets/concept-design-register.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "概念详图设想要素登记：三张概念推演图逐要素的既有判据来源、数据与设想的划分，以及一处已识别设计张力的处置判据（只登记判据来源与划分，不提出工程参数，也不构成法定结论）",
+      "title_en": "Concept-design register: for each speculative element on the three concept sheets, the existing criterion it rests on, the line between data and speculation, and the disposal criteria for one identified design tension (registration only; no engineering parameter and no statutory conclusion)",
+      "sha256": "6bb0dd4d1405eff13f33d096a03dd6f87aa12302b917652a07dc8ab1371b66b3"
+    },
+    {
       "path": "visual/assets/field-verification-plan.json",
       "role": "sources",
       "required": false,
@@ -1169,6 +1178,33 @@
       "title_zh": "片区策略合幅三联图 D-01：三区街块诊断与开放化候选，三分幅同比例尺（中英双语同图）",
       "title_en": "District strategy plate D-01 — block diagnosis and opening candidates across the three key areas, three panels at one shared scale, one bilingual sheet",
       "sha256": "d0006724ff896e6c994bd7d2db6027d082884d3bfa6b54917821f0062cc5790d"
+    },
+    {
+      "path": "assets/figures/district-concept-sections.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三片区概念详图 CD-01：贯通通道、接口连续与服务桌落位的一次空间组合，三分幅同取向同比例尺（中英双语同图；概念推演，不基于权属、红线或测绘资料）",
+      "title_en": "District concept detail CD-01 — one spatial composition of through-route, interface continuity and the service desk, three panels at one shared scale and orientation, one bilingual sheet (concept speculation, resting on no tenure, red-line or survey data)",
+      "sha256": "f5562bb81ba993a03cb11c36120097b030d9e779e3d2dd5315cb22fd3b7a40d6"
+    },
+    {
+      "path": "assets/figures/transport-system-concept.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "交通系统概念图 CT-02：轨道接入、走廊分段、骑行与保障车时段分离（中英双语同图；实线为数据派生，虚线为概念设想）",
+      "title_en": "Transport system concept CT-02 — rail access, corridor segmentation, cycling and the time separation of support vehicles, one bilingual sheet (solid marks data-derived, dashed marks speculation)",
+      "sha256": "e9035cc3f8b567241337c0892748623f1d27311597a8fbc68508986e64242d49"
+    },
+    {
+      "path": "assets/figures/bluegreen-system-concept.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "蓝绿系统概念图 CB-03：汇水概念分区、排水类型、遮荫与夜间照明分级，并写出一处已识别设计张力（中英双语同图；实线为数据派生，虚线为概念设想）",
+      "title_en": "Blue-green system concept CB-03 — conceptual catchments, drainage types, shading and the night-lighting grades, with one identified design tension stated on the sheet, one bilingual sheet (solid marks data-derived, dashed marks speculation)",
+      "sha256": "8adc85f9180533dd6e5ab8a348f3d62e6128acbebd5bbf4e501ca84827761c16"
     },
     {
       "path": "visual/assets/sensory-design-code.json",
