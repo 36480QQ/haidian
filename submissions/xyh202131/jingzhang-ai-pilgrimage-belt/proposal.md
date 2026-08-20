@@ -5,8 +5,10 @@ language: "zh"
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
+version: "50.0"
+iteration: "第 50 轮 / Round 50"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以连续日常轨和间歇验证轨组织百年京张的前台空间总纲，并以换轨场、失败侧线和公共时刻表把可共创、可验证、可暂停、可复现的 AI 公共创新生产线读给公众。"
+summary: "海淀的创新密度，只有在普通人无需账户、设备或专业身份也能使用、质疑和退出时，才会成为公共能力。双轨京张以连续日常轨保障普通任务，以间歇、可停止的 G0 验证轨承载概念测试；三种不可互换原型连接证据、风险与专业交接。边界仍为临时约束，现实结果、批准和独立清权仍为 0。"
 tracks:
   - ai-traffic-walkability
   - jingzhang-heritage-narrative

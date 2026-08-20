@@ -5,8 +5,10 @@ language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
+version: "50.0"
+iteration: "第 50 轮 / Round 50"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Use a continuous civic track and an intermittent proof track as the front-stage spatial master plan for the century-old Jing-Zhang corridor, with switchyards, a failure siding, and a civic timetable making a co-creatable, verifiable, pausable, reproducible public AI innovation line readable to everyone."
+summary: "Haidian's innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity. Twin-Track Jing-Zhang keeps ordinary tasks continuous and G0 proof tests intermittent and stoppable; three distinct prototypes connect evidence, risk and professional handoff. Boundaries remain provisional; outcomes, approvals and independent clearance remain zero."
 tracks:
   - ai-traffic-walkability
   - jingzhang-heritage-narrative
