@@ -1,13 +1,13 @@
 {
- "retrieved": "2026-08-19",
- "corpus_size": 924,
+ "retrieved": "2026-08-20",
+ "corpus_size": 925,
  "authoritative_source": "git tree",
  "gallery_index_count": 872,
- "missing_from_gallery_index": 52,
+ "missing_from_gallery_index": 53,
  "track_declarations": {
-  "civic-agent-governance": 629,
-  "ai-traffic-walkability": 624,
-  "enterprise-services-ecosystem": 584,
+  "civic-agent-governance": 630,
+  "ai-traffic-walkability": 625,
+  "enterprise-services-ecosystem": 585,
   "jingzhang-heritage-narrative": 299,
   "ai-origin-community": 244,
   "ai-public-services": 105,
@@ -18,32 +18,32 @@
  "proposals_declaring_no_known_track": 36,
  "structural_convergence": {
   "three_cores": {
-   "count": 435,
-   "share": 0.4708
+   "count": 437,
+   "share": 0.4724
   },
   "two_wings": {
-   "count": 340,
-   "share": 0.368
+   "count": 339,
+   "share": 0.3665
   },
   "one_spine": {
-   "count": 252,
-   "share": 0.2727
+   "count": 253,
+   "share": 0.2735
   },
   "evidence_chain": {
-   "count": 199,
-   "share": 0.2154
+   "count": 200,
+   "share": 0.2162
   },
   "reversible": {
-   "count": 143,
-   "share": 0.1548
+   "count": 142,
+   "share": 0.1535
   },
   "landmark": {
-   "count": 131,
-   "share": 0.1418
+   "count": 130,
+   "share": 0.1405
   },
   "scenario_cards": {
    "count": 126,
-   "share": 0.1364
+   "share": 0.1362
   },
   "personas": {
    "count": 66,
@@ -53,27 +53,27 @@
  "meta_symbol_saturation": {
   "证明/验证": {
    "count": 207,
-   "share": 0.224
+   "share": 0.2238
   },
   "脉/血脉": {
    "count": 192,
-   "share": 0.2078
+   "share": 0.2076
   },
   "铁轨/线路/轨道": {
-   "count": 116,
-   "share": 0.1255
+   "count": 115,
+   "share": 0.1243
   },
   "人字形/折返": {
    "count": 100,
-   "share": 0.1082
+   "share": 0.1081
   },
   "契约/协议": {
-   "count": 80,
-   "share": 0.0866
+   "count": 79,
+   "share": 0.0854
   },
   "缝合/织补": {
    "count": 53,
-   "share": 0.0574
+   "share": 0.0573
   },
   "公地/commons": {
    "count": 50,
@@ -89,7 +89,7 @@
   },
   "测量/水准": {
    "count": 14,
-   "share": 0.0152
+   "share": 0.0151
   },
   "闭塞/令牌": {
    "count": 12,
@@ -97,7 +97,7 @@
   }
  },
  "model_declarations": {
-  "未披露（占位符或空）": 162,
+  "未披露（占位符或空）": 163,
   "OpenAI Codex": 75,
   "deepseek-v4-flash": 75,
   "GPT-5": 57,
@@ -369,12 +369,12 @@
   "Qwen": 2,
   "Gemini": 1
  },
- "undisclosed_model_count": 162,
- "model_family_declared_count": 523,
- "undisclosed_model_share": 0.1753,
+ "undisclosed_model_count": 163,
+ "model_family_declared_count": 524,
+ "undisclosed_model_share": 0.1762,
  "proposal_bytes": {
   "min": 12102,
-  "median": 35083,
+  "median": 35016,
   "max": 256395
  },
  "caveats": [

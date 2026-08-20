@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M178",
+      "gate": "census_currency_qa.py",
+      "target": "visual/assets/track_scan.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把两条赛道扫描的份数与它自己的命中名单一起缩掉一份——计数仍等于名单，文件内部自洽，**只有拿它去和语料比才看得出来**。这正是本包此前的状态：扫描停在 40 份，两条赛道实际已到 129 份，而该文件里每一项探针计数与占比都是拿 40 做分母的，正文逐条引用了它们。",
+      "what_en": "Shrink the two-track scan's population together with its own roster of matches. The count still equals the list, so the file is internally consistent and **only a comparison against the corpus can see it** - the state this package shipped in, the scan resting at 40 while the two tracks it scans reached 129, with every probe count and share in that file divided by 40 and quoted item by item in the prose.",
+      "why_zh": "这一份文件支撑本方案「增量在全场沉默处」的整条论证。分母错了，十一项探针的占比就全错，而所有比对正文与该文件的检查仍然全部通过。",
+      "why_en": "This one file carries the whole argument that this proposal's increment lies where the field is silent. With the denominator wrong, all eleven probe shares are wrong, and every check comparing the prose against that file still passes."
+    },
+    {
       "id": "M177",
       "gate": "census_currency_qa.py",
       "target": "visual/assets/census.json",
@@ -898,7 +910,7 @@
       "caught": true,
       "exit_code": 1,
       "named_the_damage": true,
-      "what_zh": "把正文里被 context 模式守着的「两条赛道 40 份中」改成不带数字的说法，句子照样成立，而守着它的那条模式从此匹配不到任何东西。",
+      "what_zh": "把正文里被 context 模式守着的「两条赛道 129 份中」改成不带数字的说法，句子照样成立，而守着它的那条模式从此匹配不到任何东西。",
       "what_en": "Reword a phrase a context pattern guards so that pattern matches nothing. The sentence stays true and readable; the check simply stops running.",
       "why_zh": "本闸门的十四条 fact 要求「必须找得到」，而二十一条 context 模式约束的是「每一次出现都必须等于当前值」——**零次出现就是零次约束**，循环根本不进入，而汇总行照旧写着「21 条模式」。三条已经这样悄悄失效了。若人为再造一条而闸门不响，这道闸门报出的数就只是它自己声明的条数，不是它做过的功。",
       "why_en": "This gate's fourteen facts must each be *found*; its context patterns instead constrain every occurrence of a phrasing — and **zero occurrences is zero constraint**. The loop never runs and the summary keeps reporting the number of patterns as though each had done work. Three had already fallen silent this way. If a fourth can be created deliberately without objection, the gate's headline number is a count of its own declarations, not of anything it checked."
@@ -2139,7 +2151,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 174,
+  "caught": 175,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
