@@ -184,6 +184,183 @@ add("P8", "正文写出了「西收东放」这条横向语法", proseHas("西�
 add("P9", "正文写出了三处重点区的断面实取值 15.4／17.1／15.1", proseHas("15.4／17.1／15.1"),
     `×${prose.split("15.4／17.1／15.1").length - 1}`);
 
+/* F. 断面表的算术。
+   本包第一处硬错就出在这里：通用断面表把「建筑退线」定义为 A1＋A2＋A3＋余量（一个容器），
+   却又把它和它自己的子段一起相加，写出一个复算不出来的「单侧合计 18–27 m」。
+   改法是把表分两层、合计只加 A/B/C/D/E 五项。**那条规则现在由机器盯着**：
+   下面既核「合计＝五项之和」，也核「把容器的子段再加一遍会得到别的数」——
+   后者是让原来那类错无法悄悄回来的那一条。 */
+const tableAt = (head) => {
+  const i = prose.indexOf(head);
+  if (i < 0) return [];
+  return prose.slice(i, prose.indexOf("\n\n", i)).split("\n").filter((l) => l.startsWith("|"));
+};
+const clean = (s) => s.replace(/\*+/g, "").trim();
+const firstNum = (s) => {
+  const m = clean(s).replace(/,/g, "").match(/(\d+(?:\.\d+)?)/);
+  return m ? parseFloat(m[1]) : null;
+};
+const eq = (a, b) => Math.abs(a - b) < 1e-9;
+const AREAS = ["众智园", "原点社区", "大钟寺"];
+
+/* 三区取值表：按行首标签取三列 */
+const perAreaRows = {};
+for (const line of tableAt("| 分段 | 众智园").slice(2)) {
+  const c = line.split("|").map(clean).slice(1, -1);
+  perAreaRows[c[0]] = c.slice(1, 4);
+}
+const rowByPrefix = (pre) => {
+  const k = Object.keys(perAreaRows).find((x) => x.startsWith(pre));
+  return k ? perAreaRows[k] : null;
+};
+const setbackRow = rowByPrefix("A 建筑退线");
+const seg = {
+  A1: (rowByPrefix("A1") || []).map(firstNum),
+  A2: (rowByPrefix("A2") || []).map(firstNum),
+  A3: (rowByPrefix("A3") || []).map(firstNum),
+  A: (setbackRow || []).map(firstNum),
+  B: (rowByPrefix("B 铁路线索带") || []).map(firstNum),
+  C: (rowByPrefix("C 人机物理隔离") || []).map(firstNum),
+  D: (rowByPrefix("D 机器试验带") || []).map(firstNum),
+  E: (rowByPrefix("E 绿化休憩带") || []).map(firstNum),
+  TOT: (rowByPrefix("单侧合计") || []).map(firstNum),
+};
+const grab = (s, re) => { const m = String(s).match(re); return m ? parseFloat(m[1]) : null; };
+const subtotal = (setbackRow || []).map((s) => grab(s, /小计\s*(\d+(?:\.\d+)?)/));
+const slack = (setbackRow || []).map((s) => grab(s, /余量\s*\**(\d+(?:\.\d+)?)/));
+
+const parsedOk = ["A1", "A2", "A3", "A", "B", "C", "D", "E", "TOT"].every(
+  (k) => seg[k].length === 3 && seg[k].every((x) => x !== null)) &&
+  subtotal.every((x) => x !== null) && slack.every((x) => x !== null);
+add("F0", "断面三区取值表可被逐行解析（九段 × 三区 ＋ 小计 ＋ 余量）", parsedOk,
+    parsedOk ? "解析成功" : "解析失败，后续 F 项不可信");
+
+if (parsedOk) {
+  const bad1 = [], bad2 = [], bad3 = [], bad4 = [], bad5 = [];
+  for (let i = 0; i < 3; i++) {
+    const childSum = seg.A1[i] + seg.A2[i] + seg.A3[i];
+    if (!eq(childSum, subtotal[i])) bad1.push(`${AREAS[i]} A1+A2+A3=${childSum} 小计=${subtotal[i]}`);
+    if (!eq(subtotal[i] + slack[i], seg.A[i])) bad2.push(`${AREAS[i]} 小计+余量=${subtotal[i] + slack[i]} A=${seg.A[i]}`);
+    const five = seg.A[i] + seg.B[i] + seg.C[i] + seg.D[i] + seg.E[i];
+    if (!eq(Math.round(five * 10) / 10, seg.TOT[i])) bad3.push(`${AREAS[i]} 五项和=${five} 声明=${seg.TOT[i]}`);
+    // 容器重复加的那个数必须与声明明显不同——这是让 18–27 m 那类错回不来的那一条
+    if (Math.abs(five + childSum - seg.TOT[i]) <= 0.5) bad4.push(`${AREAS[i]} 容器重复加=${five + childSum} 与声明 ${seg.TOT[i]} 过近`);
+    if (!(five >= 14.1 - 1e-9 && five <= 19.935 + 1e-9)) bad5.push(`${AREAS[i]} 合计 ${five} 越出 14.1–19.9`);
+  }
+  add("F1", "每区 A1＋A2＋A3 等于表内小计", bad1.length === 0, bad1.join("；") || "三区全对");
+  add("F2", "每区「小计＋余量」等于建筑退线 A", bad2.length === 0, bad2.join("；") || "三区全对");
+  add("F3", "每区单侧合计等于 A＋B＋C＋D＋E 五项之和（只加五项）", bad3.length === 0, bad3.join("；") || "15.4／17.1／15.1 全对");
+  add("F4", "把容器 A 的子段再加一遍会得到与声明明显不同的数——原来那处「18–27 m」式的错无法悄悄回来",
+      bad4.length === 0, bad4.join("；") || "三区重复加分别得 21.135／24.100／23.100，均与声明相去甚远");
+  add("F5", "三区合计都落在通用表给出的 14.1–19.9 区间内", bad5.length === 0, bad5.join("；") || "三区全在区间内");
+
+  const wait = rowByPrefix("A1") || [];
+  const badArea = [];
+  for (let i = 0; i < 3; i++) {
+    const w = grab(wait[i], /面宽\s*(\d+(?:\.\d+)?)/);
+    const declared = grab(wait[i], /(\d+(?:\.\d+)?)\s*m²/);
+    if (w === null || declared === null || Math.abs(seg.A1[i] * w - declared) > 0.3) {
+      badArea.push(`${AREAS[i]} 进深${seg.A1[i]}×面宽${w}=${seg.A1[i] * w} 声明${declared}`);
+    }
+  }
+  add("F6", "每区等候面积等于进深 × 面宽（8／10／约 12 m² 每窗口）", badArea.length === 0,
+      badArea.join("；") || "三区全对");
+}
+
+/* 通用断面表：两条求和式与两个区间声明 */
+const genRows = tableAt("| 断面分段（自公共界面向外）");
+const totLine = genRows.find((l) => clean(l.split("|")[1] || "").startsWith("单侧断面合计")) || "";
+const setLine = genRows.find((l) => clean(l.split("|")[1] || "").startsWith("A 建筑退线")) || "";
+const loExpr = (totLine.match(/下限\s*([\d.＋+]+)\s*＝\s*\*{0,2}(\d+(?:\.\d+)?)/) || []);
+const hiExpr = (totLine.match(/上限\s*([\d.＋+]+)\s*＝\s*\*{0,2}(\d+(?:\.\d+)?)/) || []);
+const sumExpr = (s) => (s || "").split(/[＋+]/).map(parseFloat).filter((x) => !isNaN(x)).reduce((a, b) => a + b, 0);
+add("F7", "通用表下限求和式自身成立（6.0＋0.6＋1.5＋2.0＋4.0 ＝ 14.1）",
+    loExpr.length === 3 && eq(sumExpr(loExpr[1]), parseFloat(loExpr[2])),
+    loExpr.length === 3 ? `${loExpr[1]} = ${sumExpr(loExpr[1])}，声明 ${loExpr[2]}` : "未解析到下限式");
+add("F8", "通用表上限求和式自身成立（8.5＋1.435＋1.5＋2.5＋6.0 ＝ 19.9，一位小数）",
+    hiExpr.length === 3 && eq(Math.round(sumExpr(hiExpr[1]) * 10) / 10, parseFloat(hiExpr[2])),
+    hiExpr.length === 3 ? `${hiExpr[1]} = ${sumExpr(hiExpr[1])}，声明 ${hiExpr[2]}` : "未解析到上限式");
+
+const a13 = setLine.match(/之和为\s*(\d+(?:\.\d+)?)[–—-](\d+(?:\.\d+)?)\s*m/);
+const slk = setLine.match(/另留\s*(\d+(?:\.\d+)?)[–—-](\d+(?:\.\d+)?)\s*m\s*余量/);
+if (parsedOk && a13) {
+  add("F9", "通用表「A1—A3 之和 5.7–8.0 m」与三区逐项实算的极值一致",
+      eq(parseFloat(a13[1]), Math.min(...[0, 1, 2].map((i) => seg.A1[i] + seg.A2[i] + seg.A3[i]))) &&
+      eq(parseFloat(a13[2]), Math.max(...[0, 1, 2].map((i) => seg.A1[i] + seg.A2[i] + seg.A3[i]))),
+      `声明 ${a13[1]}–${a13[2]}，实算 ${Math.min(...[0,1,2].map((i)=>seg.A1[i]+seg.A2[i]+seg.A3[i]))}–${Math.max(...[0,1,2].map((i)=>seg.A1[i]+seg.A2[i]+seg.A3[i]))}`);
+}
+if (parsedOk && slk) {
+  add("F10", "通用表「另留 0.3–1.0 m 余量」与三区实取余量的极值一致",
+      eq(parseFloat(slk[1]), Math.min(...slack)) && eq(parseFloat(slk[2]), Math.max(...slack)),
+      `声明 ${slk[1]}–${slk[2]}，实取 ${slack.join("／")}`);
+}
+
+/* G. 三个矩阵的交叉引用完整性。
+   矩阵是评审文本输入的一部分，读者会顺着 proposal_sections 去正文找对应章节；
+   章节改名或被合并后，那一栏就会指向一个不存在的标题——引用死掉却看不出来。
+   本包历史上出现过这类断链，本段把它变成可判定项。 */
+const headings = new Set(
+  prose.split("\n").filter((l) => l.startsWith("#")).map((l) => l.replace(/^#+/, "").trim())
+);
+const matrixSpecs = [
+  ["standard_matrix.json", "standards", "standard_id", "proposal_sections"],
+  ["design_depth_matrix.json", "items", "item_id", "proposal_sections"],
+  ["compliance_matrix.json", "requirements", "requirement_id", "report_sections"],
+];
+const dangling = [];
+let refTotal = 0;
+for (const [file, key, idField, secField] of matrixSpecs) {
+  let doc;
+  try { doc = readPkg(file); } catch (e) { dangling.push(`${file} 读不到`); continue; }
+  for (const item of doc[key] || []) {
+    let secs = item[secField];
+    if (typeof secs === "string") secs = [secs];
+    if (!Array.isArray(secs)) continue;
+    for (const s of secs) {
+      refTotal += 1;
+      if (!headings.has(s)) dangling.push(`${file}#${item[idField]} → 「${s}」`);
+    }
+  }
+}
+add("G1", "三个矩阵里每一条 proposal_sections／report_sections 都指向 proposal.md 中真实存在的标题",
+    dangling.length === 0,
+    dangling.length ? `${dangling.length} 处断链：${dangling.slice(0, 4).join("；")}` : `${refTotal} 处引用全部命中`);
+
+/* 反向：正文里的 [standard:] 与 [depth:] 标记必须能在矩阵里解析到 */
+const stdIds = new Set((readPkg("standard_matrix.json").standards || []).map((x) => x.standard_id));
+const depIds = new Set((readPkg("design_depth_matrix.json").items || []).map((x) => x.item_id));
+const usedStd = [...new Set((prose.match(/\[standard:([A-Za-z0-9_\-.]+)\]/g) || []).map((s) => s.slice(10, -1)))];
+const usedDep = [...new Set((prose.match(/\[depth:([A-Za-z0-9_\-.]+)\]/g) || []).map((s) => s.slice(7, -1)))];
+const badStd = usedStd.filter((x) => !stdIds.has(x));
+const badDep = usedDep.filter((x) => !depIds.has(x));
+add("G2", "正文的 [standard:] 标记全部能在 standard_matrix.json 里解析到",
+    badStd.length === 0, badStd.length ? badStd.join("、") : `${usedStd.length} 个全部命中`);
+add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解析到",
+    badDep.length === 0, badDep.length ? badDep.join("、") : `${usedDep.length} 个全部命中`);
+
+/* H. sources.json 的字段深度——CLAUDE.md 记为与分数相关性最高的特征，缺一栏就是缺证据 */
+const sources = readPkg("sources.json").sources || [];
+const REQF = ["authority_level", "evidence_class", "collection_method", "spatial_coverage",
+              "temporal_coverage", "license_or_reuse_terms", "usable_for", "not_usable_for"];
+const shallow = [];
+for (const s of sources) {
+  const missing = REQF.filter((f) => {
+    const v = s[f];
+    return v === undefined || v === null || v === "" || (Array.isArray(v) && v.length === 0);
+  });
+  if (missing.length) shallow.push(`${s.id} 缺 ${missing.join("／")}`);
+}
+add("H1", `sources.json 每一条都登记了八个必备字段（共 ${sources.length} 条）`,
+    shallow.length === 0, shallow.length ? shallow.slice(0, 3).join("；") : `${sources.length} 条全部齐备`);
+
+/* I. metrics.json 的精度口径：三位以上小数的指标必须带 precision_note */
+const deep = Object.entries(metrics).filter(([, m]) =>
+  typeof m.value === "number" && String(m.value).includes(".") &&
+  String(m.value).split(".")[1].length >= 3);
+const noNote = deep.filter(([, m]) => !m.precision_note);
+add("I1", `三位以上小数的指标全部带 precision_note（共 ${deep.length} 项）`,
+    noNote.length === 0, noNote.length ? noNote.map(([k]) => k).join("、") : `${deep.length} 项全部带说明`);
+
 /* ---------------- 输出 ---------------- */
 const failed = checks.filter((c) => !c.pass);
 const out = {

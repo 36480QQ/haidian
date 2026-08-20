@@ -6,21 +6,25 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Three alternatives face one ruler: a design that sacrifices the public route is publicly rejected, and the selected design then faces twelve measurement contracts."
+summary: "The public cross never breaks; AI enters one reversible bay only, crossing options are rejected, and the current implementation gate is G0 NO-GO."
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed"]
 ---
 
 # JING-ZHANG TWO ANSWERS / 京张双答
 
-> **Civic Adoption Compiler: three spatial alternatives, one public rejection and one reviewable selection.** Ordinary service stands first; AI enters only the same-task test. Any spatial option that severs the public route must be rejected by the compiler. Field decisions remain `adopt / revise / stop` and belong to a human scenario committee.
 
-Three unmistakable receipt landmarks—Zhongzhiyuan Verification Ring, AI Origin Translation Gate and Dazhongsi Receipt Porch—remain the spatial prototypes. S7 carries five review scales; 12 scenes each run seven deterministic tabletop cases, producing 84 rerunnable checks. Scale and verification cite their own recomputable metrics rather than generic scene counts.[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:synthetic_design_verification_case_count]
+> **THE UNBROKEN PUBLIC CROSS.** Ordinary service stands first. AI may enter one reversible bay only; any option that cuts the public route or occupies fire and removal access must be rejected in public. The geometry audit remains the back-stage “Civic Adoption Compiler”, while the first screen shows one enterable, pausable and recoverable civic space.[data:visual/assets/v14-spatial-model.json] [data:visual/assets/spatial-decision.json]
 
-**V11 has three locatable conclusions: ring, gate and porch have independent silhouettes; the public cross stays continuous through `OPEN / TRIAL / PAUSE / RETIRE`; and any failed permit, role, baseline or transition blocks advancement.** Without titles, reviewers should distinguish the landmarks; without a legend, they should locate tactile guidance, the separate trial bay, staffed posts, E-stops, fire access and removal direction.[data:geometry/roads.geojson#V11-ALT-C-BASE-NS] [data:visual/assets/tabletop-results.json]
+Public sources establish only directional relations among the Jing-Zhang heritage park, rail, roads, water and parks. They do not establish the existing frontage at Dazhongsi: the 2026-08-13 OSM crop contains one building feature in this context. V14 therefore does not invent station exits or buildings; the data gap is a precondition, and all dimensions remain prototype assumptions pending survey.[data:visual/assets/context-open-map.json] [source:OPENSTREETMAP-CONTEXT-20260813]
+
+Under the same task, users, site and hard gates, ALT-A is **REJECTED** for cutting the public cross; ALT-B is **REVISED** because supervision and removal are fragmented; ALT-C advances. ALT-C draws the all-day public cross, south-east trial bay, south-west staffed receipt porch and two blue-green edges into the same 1:500 plan and 1:200 section.[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count] [metric:advanced_spatial_alternative_count]
+
+**The present implementation decision is G0 NO-GO.** Design documents exist, but precise survey, title, eight permits, four independent duty posts and seven consecutive baseline days do not. Closed permits are 0/8 and recorded baseline days are 0/7, so no AI trial may begin. This honest no-go is the starting point of feasibility, not a failure.[data:visual/assets/e2-readiness.json] [metric:current_trial_open_gate_count] [metric:pending_trial_permit_count]
+
+The six tasks have separate entrances: Agent 1 regional capability exchange; Agent 2 ground interfaces and public baseline; Agent 3 twelve scenes and three hero contracts; Agent 4 the Ring, Gate and Porch; Agent 5 the Jing-Zhang evidence mile and bilingual tactile identity; Agent 6 one-day operation, the 90-day pilot and civic year. Field decisions remain `adopt / revise / stop`, made by a human scene committee.[depth:three_level_scope_framework] [depth:three_key_area_detailed_design]
 
 ![Overall Two Answers structure](assets/figures/site-overview.en.png)
-
 
 <!-- V11_DECISION_START -->
 ## One Real Spatial Decision
@@ -37,28 +41,15 @@ The figures use a local equidistant approximation centred on the Dazhongsi proto
 <!-- V11_DECISION_END -->
 
 <!-- V12_MEASUREMENT_START -->
-## Measure after selection: twelve field contracts
+## Measure after selection: three hero contracts and a twelve-scene directory
 
-This release turns Two Answers from a value statement into an executable measurement protocol. Every scene fixes the same-task denominator, baseline window, comparison design, strata, statistic, missing-data rule, zero-tolerance events, human review and public output. **12/12 contracts are documented; 0 field results exist.** Every non-safety increment threshold remains `pending_baseline_committee` and cannot be prefilled by the author.[data:visual/assets/two-answers.json] [metric:measurement_contract_count] [metric:field_verification_result_count]
+The spatial decision answers why ALT-C is selected; measurement contracts answer how the city will know whether AI deserves to remain. All 12/12 contracts stay in structured data, while this review entrance shows only three transferable hero contracts.[data:visual/assets/two-answers.json] [metric:measurement_contract_count]
 
-Six public-value measures use one definition across scenes: task completion, accessibility parity gap, safety events per 100 tasks, human intervention, resource per completed task, and grievance-to-recovery clock. Missing samples are never deleted or imputed as success; if missingness breaks stratified comparison, the decision can only be `revise` or `stop`.
+- **T2 robot passage:** 100 same-route passages per ordinary and trial mode, stratified by wheelchair, visual impairment, walking and day/night; collision, bypass interruption or E-stop failure triggers an immediate stop.
+- **S2 international arrival:** 100 same-task requests per staffed and AI-assisted mode, stratified by language, assistance need and complexity; account-free entry, bilingual staff and review backstage remain open.
+- **S7 transit feeder:** record seven ordinary operating days first, then 100 timed trials only after eight permits and four independent posts close; a broken public route, absent takeover or degraded baseline is zero-tolerance.
 
-| Scene | Same-task service | Denominator | Baseline and sample window | Main statistic | AI-increment threshold |
-|---|---|---|---|---|---|
-| T1 | Open model and data provenance reproduction | All required reproduction steps per model package | At least 3 model packages; 3 independent operators per package complete both modes | paired completion difference and human minutes | pending baseline committee |
-| T2 | Controlled robot–pedestrian–accessibility test | 100 eligible passages per mode; retain every severe event separately | 100 passages in baseline and trial modes, stratified by wheelchair, visual impairment, walking and day/night | rate per 100 passages and accessibility parity gap | pending baseline committee |
-| T3 | Edge compute energy, noise and offline degradation test | 30 same-task trials per state plus a continuous 7-day energy and noise log | 30 trials in each normal, offline and degraded state; same device and task set | completion rate resource per completed task and fallback rate | pending baseline committee |
-| S1 | Staffed enterprise service with optional AI triage | 100 eligible service requests per mode | 100 comparable requests in staffed and AI-assisted modes, stratified by complexity | completion rate misrouting rate and human minutes | pending baseline committee |
-| S2 | International arrival and civic-service navigation | 100 eligible arrival-service requests per mode | 100 requests per mode, stratified by language, assistance need and complexity | completion rate accessibility parity gap intervention rate | pending baseline committee |
-| S3 | Open knowledge matching and community problem workshop | 20 complete workshops and all problem–evidence–decision records | At least 20 workshops alternating baseline ledger and AI-assisted matching | verified link rate unresolved issue rate and human review minutes | pending baseline committee |
-| S4 | Staffed Jing-Zhang heritage tour with optional AI narration | 100 interpretation items plus every disputed item | Present the same 100 items through static/staffed and optional-AI modes | source accuracy accessibility coverage and correction time | pending baseline committee |
-| S5 | Static accessible wayfinding with optional dynamic assistance | 10 routes × 3 assistance-need groups × day/night | Each combination completes both static-baseline and AI-assisted modes | route completion accessibility parity gap and intervention rate | pending baseline committee |
-| S6 | Shade, rest and extreme-weather service prompts | Three weather classes with at least 30 node-hours each | Normal, heat/strong sun and rain; record baseline static service and AI prompts in parallel | correct service arrival rate resource per completed task | pending baseline committee |
-| S7 | Conventional transit interchange with optional low-speed feeder | 100 eligible interchange passages per mode; retain every severe event | Seven baseline operating days, then 100 AI-trial passages; stratify by peak, day/night, weather and assistance need | completion rate conflicts per 100 intervention rate recovery clock | pending baseline committee |
-| S8 | Staffed public-service desk with optional AI information guide | 100 eligible public-service requests per mode | 100 requests per mode, stratified by age, language, smartphone access and assistance need | completion rate accessibility parity gap and handoff rate | pending baseline committee |
-| S9 | Conventional event operations with aggregate flow assistance | All controlled event trials across at least 3 attendance levels | Small, medium and large attendance; baseline operations first, then aggregate AI assistance | egress task completion intervention rate and grievance recovery time | pending baseline committee |
-
-T2, S2 and S7 are complete examples. T2 compares 100 same-route passages per mode; S2 compares 100 arrival requests per mode stratified by language and assistance need; S7 records seven baseline operating days before 100 timed trial passages. Collision, a blocked public route, unavailable human takeover or degraded baseline service are zero-tolerance stop events. Computation and synthetic verification establish protocol and design consistency only, never field performance.
+The status remains **12 contracts / 0 field results**. Missing samples cannot be imputed as success; non-safety thresholds are registered by the scene committee after a field baseline exists.[metric:field_verification_result_count]
 <!-- V12_MEASUREMENT_END -->
 
 ## Design Basis and Source List

@@ -6,23 +6,25 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "三个方案接受同一把尺子；牺牲公共路径的方案被公开否决，入选方案再接受十二份测量契约。"
+summary: "公共十字永远不断线，AI只进入一侧可逆试验湾；越线方案公开淘汰，当前实施门为G0 NO-GO。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed"]
 ---
 
 # 京张双答 / JING-ZHANG TWO ANSWERS
 
-> **城市采纳编译器 / CIVIC ADOPTION COMPILER：三个空间备选，一次公开否决，一个可复核选择。** 普通服务先成立，AI 再进入同题验证；任何会切断公共路线的空间方案必须被编译器淘汰。现场决定仍只允许 `adopt / revise / stop`，并属于人类场景委员会。
 
-三座不可混淆的回执地标——众智园·验真环、AI 原点·共译门、大钟寺·回执廊——继续承担空间原型；春、夏、秋、冬四季日历把公共基线审计、能力开放测试、公众采纳周和年度退出复盘连成长期运营。[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json]
+> **不断线的公共十字 / THE UNBROKEN PUBLIC CROSS。** 普通服务先成立，AI 只进入一侧可逆试验湾；任何会切断公共路线、侵占消防或撤场路径的备选都必须被公开淘汰。后台几何审计仍称“城市采纳编译器”，但首屏只展示一个可进入、可暂停、可恢复的城市空间。[data:visual/assets/v14-spatial-model.json] [data:visual/assets/spatial-decision.json]
 
-S7 以五级审查尺度承担实施样板；12 个场景各运行 7 类确定性桌面用例，形成 84 项可复跑验证。五级尺度与 84 项验证分别引用其可复算指标，不用场景数替代空间深度。[metric:s7_review_scale_count] [metric:synthetic_design_verification_case_count]
+公开资料能够确认京张铁路遗址公园、轨道、道路、水系与公园的方向性关系，却不能确认大钟寺现状建筑界面：2026-08-13 的 OSM 裁切在该范围仅含 1 个建筑要素。因此 V14 不虚构站口或沿街建筑，而以“公开数据缺测”作为设计前置条件；所有尺寸仍是待测绘复核的原型假设。[data:visual/assets/context-open-map.json] [source:OPENSTREETMAP-CONTEXT-20260813]
 
-**本轮有三个可定位结论：城市尺度上三座地标各有独立轮廓；旗舰尺度上公共十字在 `OPEN / TRIAL / PAUSE / RETIRE` 四态中始终连续；验证尺度上许可、岗位、公共服务或状态跃迁任一失败都会阻止进入下一态。** 不读标题也应能区分环、门、廊；不读图例也应能找到触觉引导、独立试验湾、人工岗位、双急停、消防到达和撤场方向。[data:geometry/roads.geojson#V11-ALT-C-BASE-NS] [data:visual/assets/tabletop-results.json]
+同一任务、同一用户、同一场地接受同一组硬门后，ALT-A 中央混合湾因切断公共十字被 **REJECT**，ALT-B 因监督与撤场碎片化被 **REVISE**，ALT-C 单侧可逆湾进入深化。ALT-C 将全天公共十字、东南试验湾、西南人工回执廊和双侧蓝绿边界画进同一张 1:500 平面与 1:200 剖面。[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count] [metric:advanced_spatial_alternative_count]
+
+**当前实施决定是 G0 NO-GO。** 设计文件已形成，但精确测绘、权属、八类许可、四个独立岗位和连续 7 日普通服务基线均未完成；当前关闭许可为 0/8、已记录基线为 0/7 日，因此 AI 试验不得开始。这个 no-go 是可实施性的诚实起点，不是失败。[data:visual/assets/e2-readiness.json] [metric:current_trial_open_gate_count] [metric:pending_trial_permit_count]
+
+六项任务各有独立入口：Agent 1 见区域能力交换；Agent 2 见首层界面和公共基线；Agent 3 见十二场景与三份英雄契约；Agent 4 见验真环、共译门、回执廊；Agent 5 见京张文化里程与双语触觉识别；Agent 6 见一天运行、90 天试点和城市采纳年。现场决定仍只允许人类委员会作出 `adopt / revise / stop`。[depth:three_level_scope_framework] [depth:three_key_area_detailed_design]
 
 ![总体双答结构](assets/figures/site-overview.png)
-
 
 <!-- V11_DECISION_START -->
 ## 一次真正的空间裁决
@@ -39,28 +41,15 @@ ALT-C 同时把最远急停—人工岗位距离控制为 24.3 米的原型假�
 <!-- V11_DECISION_END -->
 
 <!-- V12_MEASUREMENT_START -->
-## 入选之后再测量：十二份现场契约
+## 入选之后再测量：三份英雄契约与十二项目录
 
-当前版本把“双答”从价值宣言变成可执行测量协议。每个场景固定同题分母、基线窗口、比较设计、分层变量、统计量、缺失数据规则、零容忍事件、人工复核与公开输出。**12/12 契约已写入；0 项现场结果已建立。** 非安全增量阈值一律保持 `pending_baseline_committee`，不得由作者预填。[data:visual/assets/two-answers.json] [metric:measurement_contract_count] [metric:field_verification_result_count]
+空间裁决回答“为什么选 ALT-C”，测量契约回答“建成后如何知道 AI 是否值得保留”。完整 12/12 契约继续登记在结构化数据中，但不再用十二行小字表格占据评审首屏；本节只展示三类可复制的英雄契约。[data:visual/assets/two-answers.json] [metric:measurement_contract_count]
 
-六个跨场景公共价值指标只有一套定义：任务完成、无障碍公平差、每百任务安全事件、人工介入、每完成任务资源、申诉—恢复时钟。缺失样本不得删除或填补为成功；若缺失破坏分层比较，决定只能是 `revise` 或 `stop`。
+- **T2 机器人通行**：普通与试验模式各 100 次同路线通行，按轮椅、视障、步行和昼夜分层；碰撞、公共旁路中断或急停失效立即停止。
+- **S2 国际人才抵达**：人工与 AI 辅助各 100 个同题请求，按语言、辅助需求和复杂度分层；无账户入口、人工双语台和复核后台始终开放。
+- **S7 轨道接驳**：先记录连续 7 个普通运行日，再在 8 类许可和 4 个独立岗位齐全后进行 100 次限时试验；公共路线中断、无人工接管或基础服务退化均为零容忍事件。
 
-| 场景 | 同题服务 | 分母 | 基线与样本窗口 | 主要统计量 | AI 增量阈值 |
-|---|---|---|---|---|---|
-| T1 | 开放模型与数据来源复现 | 每个模型包的全部必需复现步骤 | 至少 3 个模型包；每包由 3 名独立人员各完成普通与 AI 两种模式 | paired completion difference and human minutes | 待基线委员会 |
-| T2 | 机器人—行人—无障碍受控测试 | 每种模式 100 次符合准入条件的通行；所有严重事件另行全量保留 | 普通模式与试验模式各 100 次，按轮椅、视障、步行和昼夜分层 | rate per 100 passages and accessibility parity gap | 待基线委员会 |
-| T3 | 端侧算力能耗、噪声与断网降级测试 | 每种状态 30 个同题任务，并保留连续 7 日能耗与噪声日志 | 正常、断网、降级三种状态各 30 次；同设备、同任务集 | completion rate resource per completed task and fallback rate | 待基线委员会 |
-| S1 | 企业服务人工窗口与 AI 辅助分诊 | 每种模式 100 个符合准入条件的服务请求 | 人工模式与 AI 辅助模式各 100 个同类请求，按事项复杂度分层 | completion rate misrouting rate and human minutes | 待基线委员会 |
-| S2 | 国际人才抵达与公共服务导航 | 每种模式 100 个符合准入条件的抵达服务请求 | 人工与 AI 辅助各 100 个请求，按语言、辅助需求和事项复杂度分层 | completion rate accessibility parity gap intervention rate | 待基线委员会 |
-| S3 | 开源知识匹配与社区问题工作坊 | 20 场完整工作坊及其全部问题—证据—决定记录 | 至少 20 场，交替使用普通知识台账与 AI 辅助匹配 | verified link rate unresolved issue rate and human review minutes | 待基线委员会 |
-| S4 | 京张文化人工导览与 AI 可选讲解 | 100 个讲解内容项，并全量复核所有争议项 | 同一 100 项分别由静态/人工讲解与 AI 可选讲解呈现 | source accuracy accessibility coverage and correction time | 待基线委员会 |
-| S5 | 静态无障碍导视与动态辅助导航 | 10 条路线 × 3 类辅助需求 × 昼/夜两时段 | 每个组合均完成普通静态导视与 AI 辅助两种模式 | route completion accessibility parity gap and intervention rate | 待基线委员会 |
-| S6 | 遮阴、休息和极端天气服务提示 | 3 类天气条件，每类至少 30 个节点小时 | 常态、高温/强日照、降雨三类；普通静态服务与 AI 提示并行记录 | correct service arrival rate resource per completed task | 待基线委员会 |
-| S7 | 常规轨道接驳与低速辅助接驳 | 每种模式 100 次符合准入条件的接驳通行；严重事件全量保留 | 普通接驳连续 7 个运行日，再记录 AI 试验模式 100 次；按高峰/平峰、昼夜、天气和辅助需求分层 | completion rate conflicts per 100 intervention rate recovery clock | 待基线委员会 |
-| S8 | 人工公共服务台与 AI 信息导航 | 每种模式 100 个符合准入条件的公共服务请求 | 人工与 AI 辅助各 100 个请求，按年龄、语言、智能手机可用性和辅助需求分层 | completion rate accessibility parity gap and handoff rate | 待基线委员会 |
-| S9 | 常规活动组织与聚合客流辅助 | 全部受控活动试验，且至少覆盖 3 个到场规模等级 | 小、中、大三类到场规模；每类先普通组织、后 AI 聚合辅助 | egress task completion intervention rate and grievance recovery time | 待基线委员会 |
-
-T2、S2、S7 是三类完整示例：T2 比较每模式 100 次同路线通行；S2 比较每模式 100 个抵达请求并按语言与辅助需求分层；S7 先记录连续 7 个普通运行日，再进入 100 次限时试验。三者均把碰撞、公共路线中断、无人工接管或基础服务退化列为零容忍停止事件。计算和合成验证只能证明协议与设计自洽，不能证明现场绩效。
+当前仍为 **12 份契约 / 0 项现场结果**。缺失样本不得填补为成功，非安全阈值由现场基线建立后的场景委员会登记。[metric:field_verification_result_count]
 <!-- V12_MEASUREMENT_END -->
 
 ## 设计依据与资料清单
@@ -121,15 +110,15 @@ AI 准入同时满足五道门：普通答案独立成立；服务同一任务�
 
 空间副命题为“**验真成环、共译成门、回执成廊；规则先编译，现场再证明**”。为保持已经合并版本的对象可追踪性，S7 继续使用稳定的 `V7-D-*` 几何 ID；版本名称不等于对象版本。公共路线、盲道、坡道、过街、路缘、接驳、试验边界、门廊、人工岗位、急停、消防、存储和撤场仍解析到同一 WGS84 证据链。[data:geometry/roads.geojson#V7-D-BASE-EW] [metric:key_area_count]
 
-证据按 `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending` 五级推进。[metric:evidence_ladder_level_count] S7 为 `E2_documented_prototype_ready`，T2/S2 为 `E1_concept_design`；另设不占用现场等级的 `T0_synthetic_contract_verified`。E2 不表示测绘、许可、搭建或现场基线完成，E4 必须由人类场景委员会签署 `adopt / revise / stop`。所有页面和交互首屏统一显示 `NOT FIELD-RUN`。[metric:measurement_contract_count] [metric:field_verification_result_count]
+证据按 `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending` 五级推进。[metric:evidence_ladder_level_count] S7 当前为 `G0_no_go_pending_survey_and_permits`，T2/S2 为 `E1_concept_design`；另设不占用现场等级的 `T0_synthetic_contract_verified`。E2 不表示测绘、许可、搭建或现场基线完成，E4 必须由人类场景委员会签署 `adopt / revise / stop`。所有页面和交互首屏统一显示 `NOT FIELD-RUN`。[metric:measurement_contract_count] [metric:field_verification_result_count]
 
 ![三层空间构件剖面](assets/figures/section-prototype.png)
 
 ### 城市采纳编译器：测量契约、空间裁决与 E2 文件就绪
 
-S7 的 **E2 原型准备文件**由同一套几何生成五级审查尺度，并登记 16 项可复算构件。[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:s7_prototype_kit_item_count]
+S7 的 **设计完整 / 试验未准入文件包**由同一套几何生成五级审查尺度，并登记 16 项可复算构件。[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:s7_prototype_kit_item_count]
 
-E2 同时登记 8 类许可、4 个采购包和 5 类空白表单；它**不表示**测绘、许可、采购、搭建或现场运行已经发生。[metric:e2_permit_gate_count] [metric:e2_procurement_package_count] [metric:e2_printable_form_count]
+文件包登记 8 类许可、4 个采购包和 5 类空白表单；当前 8 类许可全部待办，结论明确为 **G0 NO-GO**，不表示测绘、采购、搭建或现场运行已经发生。[metric:e2_permit_gate_count] [metric:e2_procurement_package_count] [metric:e2_printable_form_count]
 
 “编译器”对 `SCN-001—012` 各执行七类用例：普通基线、许可缺失、岗位缺失、公共服务退化、零容忍事件、人工恢复和设备退役。状态机只接受 `OPEN→TRIAL`、`TRIAL→PAUSE`、`PAUSE→OPEN`、`PAUSE→RETIRE`、`RETIRE→OPEN`；非法跃迁、许可/岗位不全、公共路线中断，或把现场未知冒充已知，都会使构建失败。本次脚本实际生成并通过 84/84 项，结果为 `synthetic_design_verification`，不是现场仿真或安全认证。[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_case_count]
 

@@ -1,15 +1,15 @@
 {
   "schema_version": "1.8.0",
-  "dataset_id": "jingzhang-v10-e2-readiness",
+  "dataset_id": "jingzhang-v14-pretrial-g0-gate",
   "title": {
-    "zh": "V10 S7 E2 文件就绪包",
-    "en": "V10 S7 E2 Documented Prototype Pack"
+    "zh": "V14 S7 G0 试验准入门",
+    "en": "V14 S7 G0 Pre-trial Gate"
   },
   "definition": {
-    "zh": "E2 表示测绘、询价、审批和搭建准备材料已形成，不表示已取得许可、完成搭建或现场运行。",
-    "en": "E2 means survey, quotation, permit and assembly preparation documents exist; it does not mean permits, construction or field operation are complete."
+    "zh": "设计原型和准备表单已经形成，但测绘、权属、八类许可、独立岗位和普通服务基线未完成；当前结论为NO-GO。",
+    "en": "The design prototype and preparation forms exist, but survey, title, eight permits, independent posts and the ordinary-service baseline are incomplete; the current decision is NO-GO."
   },
-  "prototype_readiness": "E2_documented_prototype_ready",
+  "prototype_readiness": "G0_no_go_pending_survey_and_permits",
   "field_status": "not_field_run",
   "permitted_states": [
     "ready_documented",
@@ -525,5 +525,16 @@
     "case_count": 84,
     "result_ref": "visual/assets/tabletop-results.json",
     "field_status": "not_field_run"
+  },
+  "readiness_gate": {
+    "gate_id": "G0-S7-PRETRIAL",
+    "decision": "no_go",
+    "closed_permit_count": 0,
+    "required_permit_count": 8,
+    "recorded_baseline_days": 0,
+    "required_baseline_days": 7,
+    "contracted_independent_role_count": 0,
+    "required_independent_role_count": 4,
+    "next_decision": "repeat_gate_after_survey_permits_roles_and_baseline"
   }
 }
