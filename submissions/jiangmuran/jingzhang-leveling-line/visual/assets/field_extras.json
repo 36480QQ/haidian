@@ -1,7 +1,7 @@
 {
  "generated_from": "upstream/main",
- "corpus_size": 924,
- "proposals_with_readable_body": 924,
+ "corpus_size": 925,
+ "proposals_with_readable_body": 925,
  "method_note_zh": "全部读数从 upstream/main 的提案正文直接统计，可用本脚本重跑。只保存计数与目录键，不保存正文。关键词匹配是**下界**：一份用了别的说法的方案不会被计入，因此每个数字应读作「至少」。这一点写在这里而不是留给读者推断。",
  "method_note_en": "Every reading is counted from proposal bodies in upstream/main and is reproducible by re-running this script. Only counts and directory keys are stored, never bodies. Keyword matching is a LOWER BOUND: a proposal that words a provision differently is not counted, so read every figure as 'at least'.",
  "simulation_json": {
@@ -274,7 +274,7 @@
    ]
   },
   "non_ai_equivalent_path": {
-   "count": 430,
+   "count": 431,
    "keys": [
     "submissions/007xf/everyday-jingzhang",
     "submissions/007xf/jingzhang-on-duty",
@@ -319,7 +319,7 @@
    ]
   },
   "scenario_level_suspension": {
-   "count": 550,
+   "count": 552,
    "keys": [
     "submissions/007xf/everyday-jingzhang",
     "submissions/007xf/jingzhang-on-duty",

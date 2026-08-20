@@ -1,7 +1,7 @@
 {
  "source": "git tree (authoritative) + per-proposal proposal.md and agent.json",
  "retrieved": "2026-08-20",
- "tree_count": 924,
+ "tree_count": 925,
  "gallery_index_count": 872,
  "missing_from_gallery_index": [
   "0237/jingzhang-ai-spine",
@@ -36,6 +36,7 @@
   "climashscape/the-nursery",
   "cnbitac/jingzhang-fallback-line",
   "dragan2023/jingzhang-epoch-track",
+  "glove11111-design/observable-jingzhang",
   "haoan/jingzhang-ai-belt",
   "hechushitaoyuan/jingzhang-fengshui-ai-belt",
   "huer512/jingzhang-living-test-track",
@@ -2541,7 +2542,7 @@
     7,
     2
    ],
-   "b": 45794,
+   "b": 51912,
    "m": 79,
    "f": 1
   },
@@ -3594,7 +3595,7 @@
     9,
     22
    ],
-   "b": 28916,
+   "b": 33596,
    "m": 74,
    "f": 0
   },
@@ -4646,7 +4647,7 @@
     7,
     15
    ],
-   "b": 34790,
+   "b": 32568,
    "m": 28,
    "f": 4
   },
@@ -5532,7 +5533,7 @@
     6,
     5
    ],
-   "b": 41251,
+   "b": 43070,
    "m": 17,
    "f": 0
   },
@@ -5840,6 +5841,18 @@
    "b": 39556,
    "m": 155,
    "f": 2
+  },
+  "glove11111-design/observable-jingzhang": {
+   "t": "京张可观测带：让城市AI的收益、代价与责任被看见",
+   "s": "把AI治理从后台制度变成可步入、可询问、可纠偏的公共空间：一条观测脊、三座观测站、十二扇场景窗。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 19786,
+   "m": 2,
+   "f": 1
   },
   "gr-87/jingzhang-ai-new-track": {
    "t": "京张·新轨：百年京张AI创新带概念城市设计",
@@ -6521,7 +6534,7 @@
     23,
     18
    ],
-   "b": 254266,
+   "b": 254494,
    "m": 36,
    "f": 3
   },
@@ -8596,14 +8609,14 @@
    "f": 2
   },
   "shgdym/jingzhang-proof-commons": {
-   "t": "X京张 X JINGZHANG：让每一个AI先经过公开交叉验证",
-   "s": "以百年京张的工程求证精神为线索，将AI创新从来源登记、受控测试、公众试用、人工裁决到退出复原组织为一套空间和运营系统；所有空间对象基于明确降级的临时边界。",
+   "t": "X京张 X JINGZHANG：公众走正线，AI走侧线",
+   "s": "把京张既有公共走廊视为公众正线，把AI测试、发布和试用放入可关闭侧线；每次相交由人负责，失败后设备折返而公共路径不改线。",
    "k": [
     20,
     14,
     16
    ],
-   "b": 69133,
+   "b": 63377,
    "m": 217,
    "f": 2
   },

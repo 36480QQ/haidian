@@ -171,7 +171,7 @@
       "target": "proposal.md, report/, assumptions.json",
       "source": "package-provided",
       "what_it_holds_en": "Every census-derived number in the prose must equal the shipped census.",
-      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 924)"
+      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 925)"
     },
     {
       "check_id": "PKG_CENSUS_CURRENCY_QA",
@@ -594,7 +594,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A sentence stating a number a shipped record holds must point at that record.",
-      "message": "metric_citation_qa.py — metric citations: 34 sentence(s) joined to metrics.json by value and pointing at it, 15 numeric collision(s) published with the reason each is not a citation, 5 deferred against 5 bytes of English headroom (they cost 123, and this check fails when there is room)"
+      "message": "metric_citation_qa.py — metric citations: 34 sentence(s) joined to metrics.json by value and pointing at it, 15 numeric collision(s) published with the reason each is not a citation, 6 deferred against 5 bytes of English headroom (they cost 123, and this check fails when there is room)"
     },
     {
       "check_id": "PKG_METRIC_CLASS_PROSE_QA",
@@ -774,7 +774,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A shipped image has to still be an image.",
-      "message": "raster_integrity_qa.py — raster integrity: 71 shipped PNG(s), 20.5 MB, every chunk passing its own CRC and every image stream inflating to exactly the size its header declares; and 4 PDF(s) whose 58 compressed streams all inflate, none skipped"
+      "message": "raster_integrity_qa.py — raster integrity: 71 shipped PNG(s), 20.6 MB, every chunk passing its own CRC and every image stream inflating to exactly the size its header declares; and 4 PDF(s) whose 58 compressed streams all inflate, none skipped"
     },
     {
       "check_id": "PKG_READING_CALENDAR_QA",
@@ -1035,7 +1035,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No past corpus size may sit in hand-written prose as if it were current.",
-      "message": "stale_corpus_qa.py — stale corpus sizes: none — 19 superseded readings (184–793) appear only inside generated blocks or sentences that declare them historical; the prose is at 924"
+      "message": "stale_corpus_qa.py — stale corpus sizes: none — 20 superseded readings (184–924) appear only inside generated blocks or sentences that declare them historical; the prose is at 925"
     },
     {
       "check_id": "PKG_STANDARD_CLAUSE_QA",
@@ -1385,7 +1385,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31099083,
+      "total_bytes": 31101403,
       "maintainer_bypass": false
     },
     "stderr": ""
