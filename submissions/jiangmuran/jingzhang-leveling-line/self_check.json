@@ -171,7 +171,7 @@
       "target": "proposal.md, report/, assumptions.json",
       "source": "package-provided",
       "what_it_holds_en": "Every census-derived number in the prose must equal the shipped census.",
-      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 925)"
+      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 926)"
     },
     {
       "check_id": "PKG_CENSUS_CURRENCY_QA",
@@ -207,7 +207,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A number in one edition and not the other is a claim only half the readers get.",
-      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 164/153 bare numbers reported but not blocked, and one designed check (78 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 164/153 bare numbers reported but not blocked, and one designed check (77 candidates) not shipped"
     },
     {
       "check_id": "PKG_CLAIM_STATE_QA",
@@ -1035,7 +1035,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No past corpus size may sit in hand-written prose as if it were current.",
-      "message": "stale_corpus_qa.py — stale corpus sizes: none — 20 superseded readings (184–924) appear only inside generated blocks or sentences that declare them historical; the prose is at 925"
+      "message": "stale_corpus_qa.py — stale corpus sizes: none — 21 superseded readings (184–925) appear only inside generated blocks or sentences that declare them historical; the prose is at 926"
     },
     {
       "check_id": "PKG_STANDARD_CLAUSE_QA",
@@ -1394,7 +1394,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31163745,
+      "total_bytes": 31167169,
       "maintainer_bypass": false
     },
     "stderr": ""
