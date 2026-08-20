@@ -12,7 +12,7 @@
     "agent_name": "GuoOpencode",
     "model": "kimi-k3",
     "model_family": "kimi",
-    "model_detail": "accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)"
+    "model_detail": "初稿 accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)；本轮迭代 zcode (model GLM-5.3) —— 多智能体协作"
   },
   "generated_at": "2026-08-18T07:20:56Z",
   "files": [
@@ -26,19 +26,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c3af6a864cc481d0e2c41e803895cbe5896c7304215fa87b4b9c49cd452d620f"
+      "sha256": "9219f23c124c737d1df2dae6f8b6bc1b9a289a7ee40920c2c34954ed5713cdb2"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "0dc1a4d0e0bad7c6e0a29291115e74a1ef0ac54a21e2ca349f3721d9313b04bc"
+      "sha256": "6d8ba57cdc6571dd859ef98efdc01e1000529e338e68e6f941b2a7a08294095d"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "a70ef370f4faa19ac99bf5a6b6c9b77f5d4f401ec7d230956dbdef6f4f41a237"
+      "sha256": "4e19e91a1f7bd059decb94676567a420ad38362405e32df040b73a096647bbff"
     },
     {
       "path": "assumptions.json",
@@ -50,19 +50,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "358235621f23c9cd104224e3ad49f110024c24e42e3db53716a15d9016d75273"
+      "sha256": "c3770e1d3a7d739aeaf925503c3552e8d862d730d4b09a8c79711dbe27f9ead0"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "774fb25c9a77a01631cbd6eea3b8584af4b4fdc5ce0d85626423dfcbf78fdacb"
+      "sha256": "584f0dae4727f6cc842a162b2f0aadf690487028d4a7418a877eb0cf23b6cbdf"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "e982fb4968e05893b91f851fe438b3da3f899fb6cfe65b987821620f1c98e84a"
+      "sha256": "7889faacf16b150c3e9430aeadd9d0c456fe9c46a3687a15eb33f797c5330e81"
     },
     {
       "path": "standard_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "dc2c62f1d1ab8d673bec8b5dc34fbc1e1cacf4ed04038193dc92b142f26df021"
+      "sha256": "ccf74e7b285508aa1cffdd19486d86d16f434c1877ecbfde69bdf19b74c56cde"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "df5f81730798cdd0c8b88e3cacce285f8cda12ecb73e28a3db9129d5558c8c07"
+      "sha256": "c52a6948bbd58275f80d99b00ed172c8cf828735c0e9f784105430c10a77244d"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "d0bbf65af13a16170cd8a0ee02e4b3c5a1f05c5a8f8573ed8c0dd6191e469547"
+      "sha256": "f292a405e80bd707e197fac7c61d43bc46868c61555d6c5cc4fe54a03640e8cb"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "4b2ba9c26a7cde251099a23ed00bfc8614d73712c1b7c96d6654c0dd6a80e9a6"
+      "sha256": "ee99233de1ff551b063a60dd79cff36be7a1dd3e32eba589a28a529604568fe8"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f81156758c837c82477a41ecbdcd88a45d751792ab4f2f7f3e5381cff6684311"
+      "sha256": "d74ff118e019d1f8b1365c1abb549bcb93aadee85098cea5e76b44ac6af84fac"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ac117a78523a216be76c7b5de614e205e2b0d3bd683776044e4a64cac21743cc"
+      "sha256": "eb93d4aa2df8573e4f6bc6970f1cd8dfd7073525eb4d91bb7a7152e417a61a44"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4f3ef589529b96f468972a80fcfa40b3a159c668183b3f436ea4bb20f478c152"
+      "sha256": "43cd9f5f94acaec0a8f62a028166f942e80bb1f74d49a1e85609f359f2aa420f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -284,6 +284,205 @@
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
       "sha256": "8e9532fca84bc082055d1eab7ff0e58a02fa08aeea7894cea80bc450fba155fd"
+    },
+    {
+      "path": "changelog.md",
+      "role": "narrative",
+      "required": false,
+      "sha256": "b25160d367aefd4c322080b3267c70b568e2b142c290eb4c6bb608636982c4e1",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/logo-identity.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "94e7312ed1632081182e31b8e174d12b3ae6a1ae23432e87cc23215dfc499505",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/logo-identity.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "8c287b081bf89bfd9171f23d7a02358374080c281ef41532b8f5ad51689aa241",
+      "language": "en",
+      "translation_of": "assets/figures/logo-identity.png"
+    },
+    {
+      "path": "assets/figures/scenario-cards.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "746e3bb62adcd5a49fcff2100761dc30a483f168f453d65168e3ef1132d05bb6",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/scenario-cards.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "ccaf1bfd8797a910fe6a69e1eaa70e74090dc96605dc5f9714977eee93fcd077",
+      "language": "en",
+      "translation_of": "assets/figures/scenario-cards.png"
+    },
+    {
+      "path": "assets/figures/phasing-renewal.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "e9c73e276cc7f3529872003b597a10794bd4af189a554aaa133dc72f2ab25902",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/phasing-renewal.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "d6c7410858a75ac5ac640792a1ec9303d4996b3e4d20b48c285aa33c96690738",
+      "language": "en",
+      "translation_of": "assets/figures/phasing-renewal.png"
+    },
+    {
+      "path": "assets/figures/cultural-narrative.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "bf00e7bbe0988f830dabc54fd9d8712422002e8c4dbfbf8512e1f93674051c55",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/cultural-narrative.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "d1637423b7dd8260630a010601d2b3ee55a7c55dbf787077965097468b294791",
+      "language": "en",
+      "translation_of": "assets/figures/cultural-narrative.png"
+    },
+    {
+      "path": "assets/media/cover.png",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "5b206f45f93886ebc3af556ce33be444bca0502e5d228ddcea09a3853bcd4945",
+      "title_zh": "京张气脉 · 风水AI · 画廊封面",
+      "title_en": "Jing-Zhang Qi-Pulse · Fengshui AI · gallery cover",
+      "description_zh": "宣纸+金脉体系的确定性导出：金脊曲线取自 roads.geojson 真实绿脊中心线，罗盘×人字形标志与品牌图件同源；由 matplotlib 渲染，仅用系统自带微软雅黑与 DejaVu 字体，无生成式图像素材。概念表达，非空间依据。",
+      "description_en": "A deterministic export of the rice-paper-and-gold system: the gold spine is the real greenway centreline from roads.geojson; the compass-and-herringbone mark shares construction with the brand figure. Rendered by matplotlib with system fonts only (Microsoft YaHei, DejaVu Sans); no generative image material. Conceptual expression, not spatial evidence."
+    },
+    {
+      "path": "assets/media/audio-guide-zh.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "45b1f1a43237702cadbbb49862378a89b3c1cdb3b10f72e28a14baad4f33f047",
+      "language": "zh"
+    },
+    {
+      "path": "assets/media/audio-guide-zh.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "9ceb344c52c6593fcde1dad100d98f199e06b851d11c33bca94f1ac91b5e2548",
+      "language": "zh"
+    },
+    {
+      "path": "assets/media/audio-guide-zh.mp3",
+      "role": "audio",
+      "required": false,
+      "sha256": "cdfd9a78fd832c2e00179628a4567e9a4da2456937347b0d6413d78dd5ba35b9",
+      "language": "zh",
+      "title_zh": "京张气脉 · 风水AI · 音频导览（中文）",
+      "title_en": "Jing-Zhang Qi-Pulse audio guide (Chinese)",
+      "description_zh": "十五句音频导览（约两分钟）：概念、结构、场景与边界。由 Windows 内置语音合成逐句生成，非真人录音；字幕与文稿逐句一致，时间轴为逐句实测。导览内容，非空间依据。",
+      "description_en": "A fifteen-sentence audio guide (~2 min) covering concept, structure, scenarios, and boundaries. Synthesised sentence-by-sentence by the built-in Windows speech engine; not a human recording. Captions and transcript match sentence for sentence. Guide narration, not spatial evidence.",
+      "transcript": "assets/media/audio-guide-zh.md",
+      "caption": "assets/media/audio-guide-zh.vtt"
+    },
+    {
+      "path": "assets/media/audio-guide-en.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "4fd48bf3a538a7bd426c85ce2e2a1baa0d3392eb51cea161968a858eb39a6d98",
+      "language": "en"
+    },
+    {
+      "path": "assets/media/audio-guide-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "57a6e809fc5bb2c8768714f24af6383876438051dc151df599f1b2c6d030e80a",
+      "language": "en"
+    },
+    {
+      "path": "assets/media/audio-guide-en.mp3",
+      "role": "audio",
+      "required": false,
+      "sha256": "39e2f597f09a23197e526c6c2e163c279e1586d9aafdba2a6a346146163a75b2",
+      "language": "en",
+      "title_zh": "京张气脉 · 风水AI · 音频导览（英文）",
+      "title_en": "Jing-Zhang Qi-Pulse audio guide (English)",
+      "description_zh": "十五句音频导览（约两分钟）：概念、结构、场景与边界。由 Windows 内置语音合成逐句生成，非真人录音；字幕与文稿逐句一致，时间轴为逐句实测。导览内容，非空间依据。",
+      "description_en": "A fifteen-sentence audio guide (~2 min) covering concept, structure, scenarios, and boundaries. Synthesised sentence-by-sentence by the built-in Windows speech engine; not a human recording. Captions and transcript match sentence for sentence. Guide narration, not spatial evidence.",
+      "transcript": "assets/media/audio-guide-en.md",
+      "caption": "assets/media/audio-guide-en.vtt"
+    },
+    {
+      "path": "assets/media/experience.md",
+      "role": "transcript",
+      "required": false,
+      "sha256": "3c3fc6c631f810aa5e325b985d678085f8fc28a16430e85fc06a96020b9b9316",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/media/experience.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "0c4a9de048082eb00519cbcc5fa9f38dc3b38be0d9e8bea8b3d849f2cf42aff0",
+      "language": "zh"
+    },
+    {
+      "path": "assets/media/experience.en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "sha256": "ff92aca3f689790b2cffca2d943786358502928f096fbe47434abcde5dd00fd1",
+      "language": "en"
+    },
+    {
+      "path": "assets/media/experience-poster.png",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "99d2320afb4aa7a617c15351706918439a49374a106180e95cae547ef937a0f1",
+      "language": "neutral",
+      "title_zh": "「气脉生长」概念视频海报帧",
+      "title_en": "Qi-pulse growth concept video poster frame",
+      "description_zh": "取自视频收官帧的确定性导出。",
+      "description_en": "Deterministic export of the video closing frame."
+    },
+    {
+      "path": "assets/media/experience.mp4",
+      "role": "video",
+      "required": false,
+      "sha256": "ef5ae2a02ea825aebabc34cc7171231c787bb941f84ea2c049592b5d6a59f743",
+      "language": "neutral",
+      "title_zh": "「气脉生长」概念视频（24 秒，无声）",
+      "title_en": "Qi-pulse growth concept video (24 s, silent)",
+      "description_zh": "金脊沿真实绿脊自南向北生长，三重点区次第点亮，十三场景节点沿脉落位，罗盘收尾；底图一次渲染自包内 GeoJSON。matplotlib 逐帧渲染 + 本地 ffmpeg H.264 编码，零网络、零第三方素材、零生成式模型。概念氛围表达，非空间依据。",
+      "description_en": "The gold spine grows along the real greenway south to north; three key areas light up in turn; thirteen scenario nodes land along the pulse; the compass closes. Base map rendered once from package GeoJSON. Frame-by-frame matplotlib rendering with local ffmpeg H.264; no network, no third-party assets, no generative models. Conceptual ambience, not spatial evidence.",
+      "transcript": "assets/media/experience.md",
+      "poster": "assets/media/experience-poster.png",
+      "caption": "assets/media/experience.vtt"
+    },
+    {
+      "path": "visual/assets/governance/role-spec.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "岗位规格（八类，全部待任命）",
+      "title_en": "Role specifications (eight, all unassigned)",
+      "description_zh": "agent.6 运营治理的概念性组织类型规格：职责、资质、权限边界、互斥与缺岗规则；岗位先于人选，缺岗则绑定场景不开放。",
+      "description_en": "Conceptual organisation-type specifications for agent.6 governance: duties, qualifications, authority limits, exclusivity, and vacancy rules; roles before names.",
+      "sha256": "406754d410de195a445fe7e5189ed0f814a0b6c7f7568db40a79b204b8585a70"
+    },
+    {
+      "path": "visual/assets/governance/qi-protocol.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "气数协议 v0.1（察气—演气—验气—养气）",
+      "title_en": "Qi-as-Data Protocol v0.1",
+      "description_zh": "四步治理协议 + 七条规则 + 156 项离线演练记录（解析双语场景卡表逐项检查，全通过，可复算）。",
+      "description_en": "Four-step governance protocol, seven rules, and a 156-check offline drill record parsed from the bilingual scenario tables (all passing, recomputable).",
+      "sha256": "312d45bdaad98e6fd83f0e38e2f3ae2c4f7aa33ccc0b5370d98b81446dfe8f92"
     }
   ],
   "validation_claim": {
@@ -291,5 +490,6 @@
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.png"
 }
