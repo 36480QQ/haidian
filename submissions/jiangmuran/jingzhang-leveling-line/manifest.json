@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-19T20:09:21-07:00",
+  "generated_at": "2026-08-19T20:16:24-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,7 +28,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c9f8658a0e369b335297698d513fb00cfbed0aef7c1ac9153d4e2edb7cb0d061"
+      "sha256": "3fc26815f1a4d90f95aa81b12072bf710138b465836e8e47fae2cba1a249c324"
     },
     {
       "path": "agent.json",
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ce03074d828af95cfe6180720b4c561ecbee20ced095afa6c173863cd49a9b8a"
+      "sha256": "dce3703cff1575c4beb9498b798bb6a600a8750aba04cb700d2c6b8c3ea45a56"
     },
     {
       "path": "report/narrative.md",
@@ -133,7 +133,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "45bb4126e5b7074d1781974b9d7d9a5dc820520eb2872d0dae135e6fdd833285"
+      "sha256": "1e047de760f94c0aac8f77653377b390486cc26a762f743742f8745e75a458f0"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5c0b2b2a9314488cae47fb072c4d3e26f47beaee25b93726e99b99a79ed96b8d"
+      "sha256": "a80451f8d60bdcc5df94a75c5cb332802bb355145e88ead91fb108ec00517cef"
     },
     {
       "path": "report/proposal.en.html",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "65dd139f68658d17846d7da2205a37e3422c9f4e925eeb0e2455fb2b08285646"
+      "sha256": "3abca7023931098b3f8ba4bdb9c3a02b2b25f7ac966fc9db27cb9525af2dd00f"
     },
     {
       "path": "visual/index.en.html",
@@ -427,7 +427,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "6a63e0db772d98a186933e2234b1f2d64220d2c54beeb785f5a94b4a6a78b384"
+      "sha256": "64db9e0689d52188aa4ec642c5b3d59350336d47fb587a0ae5d72077ce74cb02"
     },
     {
       "path": "visual/assets/parity_qa.json",
@@ -1101,7 +1101,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "708ac3de96ba19263227370aef7781372af30e706f3de2d32c98c64bf531825e"
+      "sha256": "0186cacb5fcb674caf94ecaff99a1b2c15ea69439c4a33c86739c53804d947f3"
     },
     {
       "path": "assets/media/closure-advance.mp4",
