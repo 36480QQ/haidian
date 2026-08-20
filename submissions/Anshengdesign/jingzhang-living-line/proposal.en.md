@@ -18,7 +18,9 @@ In 1909, facing the extreme gradient of Badaling, Zhan Tianyou did not "build a 
 
 One hundred and seventeen years later, the same question stands on the Jing-Zhang corridor. The constraints have changed — no longer mountains, but seven arterial roads, university walls, existing-stock property rights. But the question has not — **when the constraint cannot be changed, what can design still do?**
 
-Our answer is not a single answer; it is a paradigm. That paradigm is **THE EMERGENT BELT**: we do not fight the constraints, nor detour around them; we use urban science to turn "constraint" into "the condition for emergence." **Hyper Line** is the paradigm's name and its scientific definition — in scaling laws, innovation is one of the few naturally superlinear urban variables (β>1); infrastructure is naturally sublinear (β<1). A "Hyper" line is a line that **carries a superlinear soul on a sublinear skeleton**.
+**The memorable line: THE THIRD LINE.** The Jing-Zhang has drawn two lines — in 1909 Zhan Tianyou drew the **switchback line**, carrying trains over Badaling within engineering constraints; in 2019 the high-speed railway drew a **straight line**, carrying the city across the mountains; this proposal draws the **third line** — the Hyper Line, the superlinear line on which innovation grows by itself. The switchback was invention under engineering constraint, the straight line was breakthrough under speed constraint, the third line is **emergence under the constraints of computation and the city**: it is not drawn, it is grown by rules. Campaign line in one sentence: **turn constraints into creation** — three eras, one answer.
+
+Our answer is not a single answer; it is a paradigm: **THE EMERGENT BELT — the Jing-Zhang Hyper Line** — we do not fight the constraints, nor detour around them; we use urban science to turn "constraint" into "the condition for emergence." The Hyper definition comes from scaling laws: a superlinear soul (β>1) carried on a sublinear skeleton (β<1).
 
 The entire work of this proposal is to walk that "machine" from end to end: **measure the disease first, prescribe the cure, then prove the cure works**. It follows one six-ring argument — Worldview → Diagnosis → Mechanism → Prescription → Verification → Operation — each ring handing its conclusion to the next, leaving no assertion without an upstream.
 
@@ -50,7 +52,7 @@ The entire work of this proposal is to walk that "machine" from end to end: **me
 
 ## Vision & Goals (Worldview ring)
 
-**Vision (three heights, one goal)**: make Centennial Jing-Zhang the world's first **urban-science-designed, computable, evolvable, human-serving** AI innovation belt. Others submit "blueprints"; we submit a "city operating system". Asked "how do we know it succeeded in five years", our answer is not adjectives but four numbers: percolation giant fraction ≥0.90, syntax integration gain ≥30%, jobs-housing entropy ≥+4%, EI recomputed and published annually [metric:GATE.bluegreen_giant_frac].
+**Vision (three heights, one goal) — with THE EMERGENT BELT as the paradigm**: make Centennial Jing-Zhang the world's first AI innovation belt fully designed by urban science — computable, evolvable, human-serving — a belt that truly EMERGES: not drawn, but grown by rules (a superlinear soul on a sublinear skeleton).
 
 **The dual clock**: the high-frequency city ticks in seconds/days/months (25,476 Amap POIs are its heartbeat); the low-frequency city settles in years/decades (control plans, red lines, property rights are its skeleton). A design that sees only one clock mistakes transient phenomena for permanent structure, or permanent constraints for ignorable ones.
 
@@ -396,6 +398,93 @@ Spine through-connection (walk/bike spine, weight = geometric distance) + seven-
 Blue-green percolation: current giant fraction 0.840 → design 0.904 (stitching 383 green patches → 66 connected components) [metric:C2_PERC]. Seven nodes are seven "phase-change points"; three landmarks (Qinghuayuan Station origin / Wudaokou phase-change plaza / Dazhongsi frontage plaza). City character follows "protective overlay + generative growth": heritage view-corridor protection (protective) + AI block height gradient (generative). Public-space floor: the 40×40m phase-change plaza hosts developer public life, remaining a normal plaza when AI is removed. Public-space safety and accessibility are labeled honestly under the caliber of Article 39 of the national accessibility law, stating the scope of application. Data gap: heritage control range and blue lines unpublished — landmark design stays conservative.
 
 ---
+
+## Node implementation cards (A6: build card + material language + operation moves)
+
+> Each card answers three questions: **what to build** (scope / scale / phasing / owner / KPI / HOLD), **which language** (materials & motif), **how it lives** (operations & the AI-free equivalent path). All conceptual; statutory values and costs reviewed per card when official data arrives.
+
+### Card 1 · Stitch Bridge (N.3rd Ring Rd × Mingguang Rd)
+| Card | Content |
+|---|---|
+| Scope/scale | 6m deck (4 walk + 2 bike) over the 8-lane arterial, 3-span steel box girder (piers in the median, main span ≤35m), clearance ≥5.5m |
+| Phase/KPI | near-term (Y1–3); KPI = syntactic gain ≥30% and percolation ≥0.90; HOLD otherwise |
+| Owner | district platform company, municipal/transport review; structural & accessibility review first |
+| Materials | white fair-faced concrete + stainless railings + glass balustrade + warm-wood seats; motif = scale |
+| Operations | public deck stays (seats + view frames); park-integrated maintenance; AI-free path = ordinary walkway |
+
+### Card 2 · Origin time-axis name field (Tsinghuayuan Station)
+| Card | Content |
+|---|---|
+| Scope/scale | open ritual plaza; flush sleeper array along the alignment (zero raised), density gradient sparse→dense |
+| Phase/KPI | mid-term (Y4–5); KPI = ≥100 engravings/year and zero sightline obstruction; HOLD otherwise |
+| Owner | heritage authority + developer community (annual engraving jury) |
+| Materials | recycled sleepers (treated) + stainless inlay + warm light seams (circuit-trace image) |
+| Operations | annual developer-festival engraving ritual; public engraving rules; AI-free path = manual registration |
+
+### Card 3 · Phase Plaza Thousand-Scale Grove (Wudaokou)
+| Card | Content |
+|---|---|
+| Scope/scale | 40×40m plaza; poles 4.5m, tapered 60/30mm, scales 120mm, spacing 1.5m; wind-load review first |
+| Phase/KPI | mid-term; KPI = live phase-transition demo and public λ data; HOLD otherwise |
+| Owner | Wudaokou subdistrict + S&T platform co-build |
+| Materials | stainless poles + dual-face anodized aluminum scales + gravel; single motif = scale |
+| Operations | wind-driven, no power, no screens except the λ strip (iron rule 11); AI-free path = purely physical |
+
+### Card 4 · Interface Plaza acoustic slope + copper bell lines (Dazhongsi)
+| Card | Content |
+|---|---|
+| Scope/scale | station-front plaza; sound-pipe terraced slope + flush copper bell lines; zero temple-view obstruction |
+| Phase/KPI | mid-term; KPI = evening stay duration and pipe integrity; HOLD otherwise |
+| Owner | Dazhongsi station-area renewal body + culture authority |
+| Materials | native grass slope + steel sound cavities (drainage/guards) + inlaid copper |
+| Operations | periodic pipe cleaning; foldable market modules; AI-free path = purely mechanical acoustics |
+
+### Card 5 · Quantum Garden (768 retrofit core)
+| Card | Content |
+|---|---|
+| Scope/scale | 8,735 m² heritage factory retained; 120m modules; ground-level single-storey pavilion (eave 3.5m, no floating building) |
+| Phase/KPI | long-term (Y6–10); KPI = test-band occupancy and 42-cell unlock progress; HOLD otherwise |
+| Owner | 768 campus operator + Zhongzhiyuan platform |
+| Materials | brick/steel trusses kept (greenhouse image) + glass + warm wood + grass wave; fixed stamped scales for shading |
+| Operations | bounded test lawns (fenced); citizen coffee/reading pavilion; AI-free path = walk-in without booking |
+
+### Card 6 · Railside Market (aluminum module system)
+| Card | Content |
+|---|---|
+| Scope/scale | existing streets outside the park red line (N.4th Ring × park west); standard aluminum modules (zero cut, zero drill) |
+| Phase/KPI | near-term pilot; KPI = module reuse rate and teardown integrity; HOLD otherwise |
+| Owner | subdistrict + vendor self-governance (module lease system) |
+| Materials | matte aluminum + warm-wood seats; exposed joints; module = scale |
+| Operations | day-set/night-fold (modules to storage); open lottery for stalls; AI-free path = cash + manual registration |
+
+### Card 7 · 1733 Light Interface (keep shell, free inside)
+| Card | Content |
+|---|---|
+| Scope/scale | ground-floor idle units of 1733 (former Zhongkun Plaza); retained facade + free steel mezzanine inside |
+| Phase/KPI | mid-term; KPI = idle-unit lighting rate and night-class rate; HOLD otherwise |
+| Owner | 1733 operator + resident workshops/tenants |
+| Materials | retained facade + glass lamp windows + warm-wood canopies + exposed loft steel |
+| Operations | windows lit by use (no strips); two-clock scheduling; AI-free path = on-site enrollment, human teaching |
+
+### Card 8 · Live-Work Mixed Tower Blocks (120×120 module)
+| Card | Content |
+|---|---|
+| Scope/scale | 11 new-build units (446,000 m², FAR≈0.91); 24m podium + 60–80m towers set back; 20% housing in office-led / 15% office in housing-led |
+| Phase/KPI | long-term; KPI = entropy ≥+4% and vacancy ≤ market; HOLD otherwise |
+| Owner | developers + talent-housing body (affordability covenant) |
+| Materials | podium warm wood/metal + glass towers + vertical greenery (§3); scale shading |
+| Operations | two-clock operation (separate lift zones); affordable talent housing; AI-free path = regular lifts/manual property |
+
+### Card 9 · Spine flush-embedded walkway (the timeline)
+| Card | Content |
+|---|---|
+| Scope/scale | continuous spine walkway; rails embedded flush (rail top = paving, 0 step); 3.2m walkway + wildflower bands + terrace seats |
+| Phase/KPI | near-term; KPI = 100% continuous, 100% zero-step; HOLD otherwise |
+| Owner | park management body (integrated maintenance) |
+| Materials | recycled real rails/sleepers + pervious concrete + native wildflower bands |
+| Operations | walk/bike separated by paving texture; low-maintenance bands; AI-free path = ordinary footpath |
+
+**Ring conclusion →** every node has its build/material/operation triple; the implementability dimension is card-auditable; statutory values reviewed per card when official data arrives.
 
 ## Renewal Project List, Implementation Policy & Phasing (Prescription + Operation rings)
 
