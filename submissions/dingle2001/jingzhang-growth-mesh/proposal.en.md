@@ -15,17 +15,13 @@ scenarios: ["enterprise-service-copilot", "ai-traffic-walkability", "robot-deliv
 
 > **Core proposition: universities and leading firms are anchors, the district is an incubator, and community is infrastructure.** Haidian does not lack innovation sources; it needs urban interfaces that turn talent relations into projects, projects into firms, and growing firms into the next round of shared capacity.
 
-## Equivalent listening, viewing, reading and interaction routes
-
-This package proves its “community as infrastructure” principle through four equivalent offline routes: the bilingual report and drawings; a system-speech audio guide with transcript and captions; a silent five-sheet journey with captions and static originals; and a keyboard-operable project-gate rehearsal with a static fallback. None auto-plays or loads remote code, fonts, tiles or tracking. All frames are project-owned drawings; there is no human recording, music, field footage or third-party visual material. If media or JavaScript fails, the transcripts, five core figures and protocol fallback retain the same claims. These media communicate the concept and its truth boundary; they do not prove deployment or field impact.
-
 ## Original AI-planning mechanism: an auditable multi-agent control plane
 
 The proposal does not treat AI image production as planning innovation. Its original contribution is a six-agent evidence-compilation chain that turns incomplete site signals into reviewable investigation tasks, spatial options, bounded scenarios and operating contracts—without allowing an agent to approve its own output. A1 stewards provenance; A2 compiles the seven-part health check; A3 locates projects and exposes spatial conflicts; A4 designs bounded scenarios with a non-AI equivalent; A5 binds operations to RACI, accounts and acceptance; A6 may veto release when accessibility, affordability or resident safeguards fail. This chain integrates **industry, space, mobility, public service, culture and governance** on one decision record rather than using six disconnected dashboards.
 
 It differs from a conventional industrial park by refusing to substitute occupancy for locally generated projects, and from a conventional smart-city dashboard by refusing to substitute sensors and composite scores for signable project contracts. Its originality is falsifiable: the method fails and steps back if a missing baseline still creates works, an agent can self-sign, a pilot deprives people of an existing service, or comparable nodes show no net public value. The fixed kernel is portable, but every district must re-enter its industry chain, heritage, geometry, regulation and service floor as local adapters.
 
-![Multi-agent urban-renewal control plane](assets/figures/metrics-evidence.en.png)
+![Multi-agent urban-renewal control plane](assets/figures/agent-control-plane.en.png)
 
 Four named human gates retain evidence acceptance, pilot release, professional sign-off, and continue/adjust/exit decisions. The public-interest gate requires at least two resident signers, at least 20% affordable service hours and an always-open human/non-AI route. A stepped, non-deprivation evaluation compares similar nodes starting at different times while nobody loses an existing service route; outcomes include time-to-project, valid tests, first orders, anonymous access, affordable hours, accessibility, complaints/takeover and group gaps. The protocol is a concept ready for professional development—not proof of deployment—and produces no field score before a real baseline and human review.[depth:risk_missing_data]
 
@@ -881,6 +877,8 @@ The proposal's six-Agent/four-human-gate method is also delivered as an executab
 | Public interest 10% | Anonymous passage, accessibility, affordability, family support and tech opt-out | Public gates + resident scenarios |
 | Risk and compliance 10% | Provisional limits, sign-off, stop rules, rights clearance and no invented score | Assumption/compliance matrices + stop conditions |
 | Expression completeness 15% | Bilingual report, 54-page evidence-led A3, A0, HTML, GeoJSON and shared metrics | Manifest + bilingual contract + self-check |
+
+![Seven-dimension evidence index](assets/figures/review-evidence-index.en.png)
 
 Every claimed mechanism points to a document, figure, owner, limit and acceptance state; field results remain zero until actual operation.
 

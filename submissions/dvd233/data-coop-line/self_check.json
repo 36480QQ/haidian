@@ -69,7 +69,7 @@
       "ai_package_stages": {
         "submissions/dvd233/data-coop-line": "formal"
       },
-      "total_bytes": 5359995,
+      "total_bytes": 5249932,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -148,15 +148,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 12,
+        "known_metric_refs_required": 18,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 14,
           "standard": 1,
           "depth": 13,
-          "data": 10,
-          "metric": 8
+          "data": 11,
+          "metric": 14
         }
       }
     },

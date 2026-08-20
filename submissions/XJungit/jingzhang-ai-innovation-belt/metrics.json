@@ -174,6 +174,62 @@
         "Unknown until real inclusive measurement runs; denominators must never drop failed samples per SEB scoring definitions."
       ],
       "reason": "Measurements require real inclusive operation with all four outcome categories (completed/withdrawn/technical-fault/other-non-completion) reported; no real inclusive measurement has run yet, and denominators must never drop failed samples. Unknown until then."
+    },
+    "key_area_area_check_total_ha": {
+      "status": "known",
+      "value": 367.5,
+      "unit": "hectare",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "sum of three key area polygon areas (provisional, CGCS2000)",
+      "confidence": "medium",
+      "assumptions": [
+        "Official announcement: 192.1+104.3+72.0=368.4 ha; deviation <0.5%. Provisional until official polygon."
+      ],
+      "reason": "v1.11 honesty check vs official announcement"
+    },
+    "key_area_zhongzhiyuan_ha": {
+      "status": "known",
+      "value": 192.0,
+      "unit": "hectare",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(PROV-KEY-001, CGCS2000)",
+      "confidence": "medium",
+      "assumptions": [
+        "Official 192.1 ha; deviation 0.05%. Provisional."
+      ],
+      "reason": "v1.11 honesty check"
+    },
+    "key_area_origin_community_ha": {
+      "status": "known",
+      "value": 103.8,
+      "unit": "hectare",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(PROV-KEY-002, CGCS2000)",
+      "confidence": "medium",
+      "assumptions": [
+        "Official 104.3 ha; deviation 0.5%. Provisional."
+      ],
+      "reason": "v1.11 honesty check"
+    },
+    "key_area_dazhongsi_ha": {
+      "status": "known",
+      "value": 71.7,
+      "unit": "hectare",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(PROV-KEY-003, CGCS2000)",
+      "confidence": "medium",
+      "assumptions": [
+        "Official 72.0 ha; deviation 0.4%. Provisional."
+      ],
+      "reason": "v1.11 honesty check"
     }
   }
 }

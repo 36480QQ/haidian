@@ -11,6 +11,13 @@
       "errors": [],
       "warnings": [
         "submissions/565431hzhang/jingzhang-ai-heritage-halo/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/565431hzhang/jingzhang-ai-heritage-halo/assets/figures/key-areas.en.png: byte-identical to `assets/figures/key-areas.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
+        "submissions/565431hzhang/jingzhang-ai-heritage-halo/assets/figures/land-use-structure.en.png: byte-identical to `assets/figures/land-use-structure.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
+        "submissions/565431hzhang/jingzhang-ai-heritage-halo/assets/figures/metrics-evidence.en.png: byte-identical to `assets/figures/metrics-evidence.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
+        "submissions/565431hzhang/jingzhang-ai-heritage-halo/assets/figures/mobility-bluegreen.en.png: byte-identical to `assets/figures/mobility-bluegreen.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
+        "submissions/565431hzhang/jingzhang-ai-heritage-halo/assets/figures/site-overview.en.png: byte-identical to `assets/figures/site-overview.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
+        "submissions/565431hzhang/jingzhang-ai-heritage-halo/drawings/a0-boards.en.pdf: byte-identical to `drawings/a0-boards.pdf`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
+        "submissions/565431hzhang/jingzhang-ai-heritage-halo/drawings/a3-booklet.en.pdf: byte-identical to `drawings/a3-booklet.pdf`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
         "submissions/565431hzhang/jingzhang-ai-heritage-halo/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
         "submissions/565431hzhang/jingzhang-ai-heritage-halo/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
         "submissions/565431hzhang/jingzhang-ai-heritage-halo/spatial.json: items[2]: provisional spatial concept needs maintainer review before being treated as public-facing context",
@@ -78,7 +85,7 @@
       "ai_package_stages": {
         "submissions/565431hzhang/jingzhang-ai-heritage-halo": "formal"
       },
-      "total_bytes": 1999287,
+      "total_bytes": 5248108,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -120,10 +127,10 @@
       ],
       "metrics": {
         "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 3194268.601,
+        "green_space_area_sqm": 3471218.922,
         "public_space_area_sqm": 279960.853,
         "building_footprint_area_sqm": 648798.432,
-        "green_ratio": 0.279884,
+        "green_ratio": 0.304151,
         "public_space_ratio": 0.02453
       }
     },
@@ -137,7 +144,7 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.279884,
+        "green_ratio": 0.304151,
         "public_space_ratio": 0.02453
       }
     },

@@ -91,6 +91,91 @@
       ],
       "metric_kind": "conceptual_design_quantity"
     },
+    "dazhongsi_mvp_key_area_sqm": {
+      "status": "known",
+      "value": 720454.219,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "area(PROV-KEY-003, EPSG:4548)",
+      "confidence": "low",
+      "assumptions": [
+        "Recalculated from the provisional key-area polygon; not an official boundary or approved area."
+      ],
+      "metric_kind": "provisional_recalculation"
+    },
+    "dazhongsi_mvp_reversible_room_footprint_sqm": {
+      "status": "known",
+      "value": 13361.508,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "union_area(BLDG-005, BLDG-006, EPSG:4548)",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual reversible room test fits; not surveyed buildings or approved envelopes."
+      ],
+      "metric_kind": "conceptual_design_quantity"
+    },
+    "dazhongsi_mvp_public_receipt_space_sqm": {
+      "status": "known",
+      "value": 32739.258,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "area(PUBLIC-003, EPSG:4548)",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual public-space polygon; not an ownership or statutory public-space conclusion."
+      ],
+      "metric_kind": "conceptual_design_quantity"
+    },
+    "dazhongsi_mvp_route_length_m": {
+      "status": "known",
+      "value": 1614.218,
+      "unit": "m",
+      "source_files": [
+        "geometry/key_areas.geojson",
+        "geometry/roads.geojson"
+      ],
+      "formula": "union_length(intersection([ROAD-001, ROAD-003], PROV-KEY-003), EPSG:4548)",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual internal route only; barriers, station entrances, rights, accessibility and engineering remain unverified."
+      ],
+      "metric_kind": "conceptual_design_quantity"
+    },
+    "dazhongsi_mvp_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(SCENARIO_NODE where mvp_id == DAZHONGSI-MVP-01)",
+      "confidence": "high",
+      "assumptions": [
+        "All three locations are conceptual test points pending survey."
+      ]
+    },
+    "dazhongsi_mvp_no_data_route_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
+      ],
+      "formula": "MVP scenarios with no_data_equivalent and human_review / all MVP scenarios",
+      "confidence": "low",
+      "assumptions": [
+        "Design target only; equivalent completion time, price, failure rate and accessibility require rehearsal before operation."
+      ],
+      "metric_kind": "design_target"
+    },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,

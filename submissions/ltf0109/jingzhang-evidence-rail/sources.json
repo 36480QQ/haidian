@@ -1,0 +1,103 @@
+{
+ "schema_version": "0.1.0",
+ "sources": [
+  {
+   "id": "SITE-PACKAGE",
+   "path": "brief/site-package/",
+   "source_type": "official_public",
+   "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+  },
+  {
+   "id": "SOURCE-REGISTRY",
+   "path": "data/source_registry.json",
+   "source_type": "repository_public_registry",
+   "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+  },
+  {
+   "id": "PROCESSED-FACT-PACK",
+   "path": "data/processed/agent_fact_pack.md",
+   "source_type": "repository_processed_reference",
+   "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+  },
+  {
+   "id": "BOUNDARY-SOURCE",
+   "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+   "source_type": "agent_inferred_from_public_data",
+   "usage": "Submitted site boundary geometry source (provisional)."
+  },
+  {
+   "id": "KEY-AREA-SOURCE",
+   "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+   "source_type": "agent_inferred_from_public_data",
+   "usage": "Three required detailed-design key area boundaries (provisional)."
+  },
+  {
+   "id": "OFFICIAL-ANNOUNCEMENT",
+   "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+   "source_type": "official_public",
+   "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+  },
+  {
+   "id": "AGENT-TASKBOOK",
+   "path": "brief/site-package/agent_taskbook.json",
+   "source_type": "user_provided_cleared",
+   "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+  },
+  {
+   "id": "HERITAGE-OFFICIAL-SIZHI",
+   "title": "北京市文物局：清华园车站旧址保护范围及建设控制地带（第十一批）",
+   "publisher": "北京市文物局",
+   "url": "https://wwj.beijing.gov.cn/bjww/362771/362782/743928533/743928745/index.html",
+   "usable_for_formal": "no",
+   "note": "官方四至文字（米级偏移），几何为 provisional 推定"
+  },
+  {
+   "id": "HERITAGE-JUESHENGSI-SIZHI",
+   "title": "北京市文物局：觉生寺（大钟寺）保护范围及建设控制地带（第一批划定）",
+   "publisher": "北京市文物局",
+   "url": "https://wwj.beijing.gov.cn/bjww/362771/362782/dyphdwbdwdbhfwjjkdd/548105/index.html",
+   "usable_for_formal": "no",
+   "note": "觉生寺为1996年第四批全国重点文物保护单位（与本站页“第一批划定保护范围及建控地带”分属不同批次序列，勿混用批次号）；本站为保护范围/建控地带官方四至文字；几何为 provisional 推定（confidence low）"
+  },
+  {
+   "id": "TOP-HY-ANALYSIS",
+   "title": "Hudson Yards - High Line 案例分析（用户笔记，含 High Line 官方设计/历史文档）",
+   "publisher": "ima 知识库用户笔记 + thehighline.org",
+   "url": "",
+   "usable_for_formal": "no",
+   "note": "国外案例机制启发；Hudson Yards 批评点（居民/产业被挤出、可负担住房不足）以批判性借鉴方式使用"
+  },
+  {
+   "id": "TOP-NANSHAN",
+   "title": "深圳南山十公里内，跳槽的摩擦系数接近于零（TOP创新区研究院 2026-08-20）",
+   "publisher": "TOP创新区研究院（FTA Group）",
+   "url": "",
+   "usable_for_formal": "no",
+   "note": "集群本质=人才流动；Fallick et al. 2006 硅谷跳槽 2.41%/月为二手转引；中国语境以公共制度供给校准"
+  },
+  {
+   "id": "TOP-NEXTSV",
+   "title": "31座城市曾自称\"下一个硅谷\"，但为什么几乎全军覆没？（TOP创新区研究院 2026-07-22）",
+   "publisher": "TOP创新区研究院（FTA Group）",
+   "url": "",
+   "usable_for_formal": "no",
+   "note": "快变量vs慢变量；匹兹堡vs克利夫兰；链主风险（罗切斯特/柯达）；Tech Hubs 摊薄批评"
+  },
+  {
+   "id": "TOP-ONEPERSON",
+   "title": "36.3%的新公司只有一个人，园区不能再卖面积了（TOP创新区研究院 2026-07-15）",
+   "publisher": "TOP创新区研究院（FTA Group）",
+   "url": "",
+   "usable_for_formal": "no",
+   "note": "单人创始人36.3%（Carta 2025H1）；纳米公司/一人公司园区逻辑；新《公司法》2024；灵活就业2亿+；支撑 JZ-07 OPC 升级为纳米公司能力台"
+  },
+  {
+   "id": "DZDP-PARK",
+   "title": "大众点评：京张铁路遗址公园信息（免费开放、游玩路线、交通、用户反馈\"商业为0\"）",
+   "publisher": "大众点评（用户笔记，ima 知识库）",
+   "url": "",
+   "usable_for_formal": "no",
+   "note": "体验型数据：验证公园免费/全年龄友好；\"商业为0、无自动贩卖机、停车不便\"为渐进更新抓手证据"
+  }
+ ]
+}

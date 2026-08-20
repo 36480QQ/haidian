@@ -59,6 +59,7 @@ geometry_inputs = {
     "green_space": "geometry/green_space.geojson",
     "public_space": "geometry/public_space.geojson",
     "key_areas": "geometry/key_areas.geojson",
+    "roads": "geometry/roads.geojson",
 }
 required_figures = json.loads(sys.argv[3])
 pdf_outputs = json.loads(sys.argv[4])
@@ -84,13 +85,35 @@ building_area = projected_union_area(geometry_inputs["buildings"])
 green_area = projected_union_area(geometry_inputs["green_space"])
 public_area = projected_union_area(geometry_inputs["public_space"])
 
+project = Transformer.from_crs("EPSG:4326", target_crs, always_xy=True).transform
+all_features = {}
+for relative in geometry_inputs.values():
+    for feature in load_json(relative).get("features", []):
+        feature_id = feature.get("properties", {}).get("id")
+        if feature_id:
+            all_features[feature_id] = feature
+
+def projected_geometry(feature_id):
+    return transform(project, shape(all_features[feature_id]["geometry"]))
+
+dazhongsi = projected_geometry("PROV-KEY-003")
+mvp_scenario_ids = ["SCN-05", "SCN-09", "SCN-10"]
+mvp_room_ids = ["BLDG-005", "BLDG-006"]
+mvp_public_space_ids = ["PUBLIC-003"]
+mvp_route_ids = ["ROAD-001", "ROAD-003"]
+mvp_rooms = unary_union([projected_geometry(item) for item in mvp_room_ids])
+mvp_public_space = unary_union([projected_geometry(item) for item in mvp_public_space_ids])
+mvp_routes = unary_union([
+    projected_geometry(item).intersection(dazhongsi) for item in mvp_route_ids
+])
+
 public_space = load_json(geometry_inputs["public_space"])
 scenarios = []
 for feature in public_space.get("features", []):
     properties = feature.get("properties", {})
     if properties.get("layer") != "SCENARIO_NODE":
         continue
-    scenarios.append({
+    scenario = {
         "id": properties["id"],
         "name_zh": properties["name_zh"],
         "name_en": properties["name_en"],
@@ -98,7 +121,16 @@ for feature in public_space.get("features", []):
         "no_data_equivalent": properties["no_data_equivalent"],
         "human_review": properties["human_review"],
         "data_rule": properties["data_rule"],
-    })
+    }
+    if properties.get("mvp_id"):
+        scenario.update({
+            "key_area_ref": properties.get("key_area_ref"),
+            "mvp_id": properties.get("mvp_id"),
+            "mvp_stage": properties.get("mvp_stage"),
+            "mvp_role": properties.get("mvp_role"),
+            "stop_conditions": properties.get("stop_conditions", []),
+        })
+    scenarios.append(scenario)
 scenarios.sort(key=lambda item: item["id"])
 key_areas = load_json(geometry_inputs["key_areas"])
 
@@ -130,12 +162,35 @@ base = {
             1 for scenario in scenarios
             if scenario["scenario_type"] == "testing_validation"
         ),
+        "dazhongsi_mvp_key_area_sqm": round(dazhongsi.area, 3),
+        "dazhongsi_mvp_reversible_room_footprint_sqm": round(mvp_rooms.area, 3),
+        "dazhongsi_mvp_public_receipt_space_sqm": round(mvp_public_space.area, 3),
+        "dazhongsi_mvp_route_length_m": round(mvp_routes.length, 3),
+        "dazhongsi_mvp_scenario_count": len(mvp_scenario_ids),
+        "dazhongsi_mvp_no_data_route_coverage_ratio": round(sum(
+            1 for scenario in scenarios
+            if scenario["id"] in mvp_scenario_ids
+            and scenario["no_data_equivalent"]
+            and scenario["human_review"]
+        ) / len(mvp_scenario_ids), 6),
     },
     "industry_test_scenario_ids": [
         scenario["id"] for scenario in scenarios
         if scenario["scenario_type"] == "testing_validation"
     ],
     "scenarios": scenarios,
+    "dazhongsi_mvp": {
+        "id": "DAZHONGSI-MVP-01",
+        "key_area_id": "PROV-KEY-003",
+        "scenario_ids": mvp_scenario_ids,
+        "room_ids": mvp_room_ids,
+        "public_space_ids": mvp_public_space_ids,
+        "route_ids": mvp_route_ids,
+        "scenario_points_covered_by_key_area": {
+            item: dazhongsi.covers(projected_geometry(item))
+            for item in mvp_scenario_ids
+        },
+    },
     "carrier_contract": {
         "primary": ["proposal.md", "proposal.en.md"],
         "derived": [
@@ -237,9 +292,12 @@ function recalculate() {
   const repositoryPython = process.platform === "win32"
     ? path.join(repositoryRoot, ".venv", "Scripts", "python.exe")
     : path.join(repositoryRoot, ".venv", "bin", "python");
-  const candidates = process.platform === "win32"
+  const defaultCandidates = process.platform === "win32"
     ? [[repositoryPython, []], ["py", ["-3"]], ["python", []], ["python3", []]]
     : [[repositoryPython, []], ["python3", []], ["python", []]];
+  const candidates = process.env.DATA_COOP_PYTHON
+    ? [[process.env.DATA_COOP_PYTHON, []], ...defaultCandidates]
+    : defaultCandidates;
   const failures = [];
   for (const [command, prefix] of candidates) {
     const result = childProcess.spawnSync(
@@ -275,9 +333,12 @@ function auditPdfMetricsPixels() {
   const repositoryPython = process.platform === "win32"
     ? path.join(repositoryRoot, ".venv", "Scripts", "python.exe")
     : path.join(repositoryRoot, ".venv", "bin", "python");
-  const candidates = process.platform === "win32"
+  const defaultCandidates = process.platform === "win32"
     ? [[repositoryPython, []], ["py", ["-3"]], ["python", []], ["python3", []]]
     : [[repositoryPython, []], ["python3", []], ["python", []]];
+  const candidates = process.env.DATA_COOP_PYTHON
+    ? [[process.env.DATA_COOP_PYTHON, []], ...defaultCandidates]
+    : defaultCandidates;
   const pairs = {
     "drawings/a0-boards.en.pdf": "assets/figures/metrics-evidence.en.png",
     "drawings/a0-boards.pdf": "assets/figures/metrics-evidence.png",
@@ -341,6 +402,28 @@ function check(snapshot) {
     );
   }
 
+  const expectedMvpScenarioIds = ["SCN-05", "SCN-09", "SCN-10"];
+  if (!sameJson(snapshot.dazhongsi_mvp.scenario_ids, expectedMvpScenarioIds)) {
+    errors.push(`Dazhongsi MVP scenario order must be ${JSON.stringify(expectedMvpScenarioIds)}`);
+  }
+  for (const scenarioId of expectedMvpScenarioIds) {
+    if (snapshot.dazhongsi_mvp.scenario_points_covered_by_key_area[scenarioId] !== true) {
+      errors.push(`${scenarioId} must be covered by provisional key area PROV-KEY-003`);
+    }
+  }
+  const mvpScenarios = snapshot.scenarios.filter((scenario) => expectedMvpScenarioIds.includes(scenario.id));
+  if (!sameJson(mvpScenarios.map((scenario) => scenario.mvp_stage), [1, 2, 3])) {
+    errors.push("Dazhongsi MVP stages must be ordered 1, 2 and 3");
+  }
+  for (const scenario of mvpScenarios) {
+    if (scenario.key_area_ref !== "PROV-KEY-003" || scenario.mvp_id !== "DAZHONGSI-MVP-01") {
+      errors.push(`${scenario.id} is missing the Dazhongsi MVP key-area contract`);
+    }
+    if (!Array.isArray(scenario.stop_conditions) || scenario.stop_conditions.length < 3) {
+      errors.push(`${scenario.id} must declare at least three stop conditions`);
+    }
+  }
+
   const textPaths = [
     "proposal.md",
     "proposal.en.md",
@@ -361,12 +444,12 @@ function check(snapshot) {
 
   const allMarkers = ["40,063.344", "2,384,747.221", "98,164.982", "20.8953%", "0.8601%"];
   const exactMarkers = {
-    "proposal.md": allMarkers,
-    "proposal.en.md": allMarkers,
-    "report/proposal.html": allMarkers,
-    "report/proposal.en.html": allMarkers,
-    "visual/index.html": ["40,063.344", "20.8953%", "0.8601%"],
-    "visual/index.en.html": ["40,063.344", "20.8953%", "0.8601%"],
+    "proposal.md": [...allMarkers, "720,454.219", "13,361.508", "32,739.258", "1,614.218"],
+    "proposal.en.md": [...allMarkers, "720,454.219", "13,361.508", "32,739.258", "1,614.218"],
+    "report/proposal.html": [...allMarkers, "720,454.219", "13,361.508", "32,739.258", "1,614.218"],
+    "report/proposal.en.html": [...allMarkers, "720,454.219", "13,361.508", "32,739.258", "1,614.218"],
+    "visual/index.html": ["40,063.344", "20.8953%", "0.8601%", "720,454.219", "13,361.508", "32,739.258", "1,614.218"],
+    "visual/index.en.html": ["40,063.344", "20.8953%", "0.8601%", "720,454.219", "13,361.508", "32,739.258", "1,614.218"],
   };
   for (const [relative, markers] of Object.entries(exactMarkers)) {
     for (const marker of markers) {
