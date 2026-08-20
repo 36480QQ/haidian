@@ -457,7 +457,17 @@
           "title_zh": "蓝绿维护复算驿站",
           "theme": "blue_green_recalculation",
           "anchor": "SERVICE-WING-TECH",
-          "primary_users": "绿地运维、环境研究者与居民"
+          "primary_users": "绿地运维、环境研究者与居民",
+          "maintenance_covenant_fields": [
+            "accountable_owner",
+            "day_to_day_operator",
+            "funding_status",
+            "inspection_interval",
+            "minimum_service_requirement",
+            "replacement_or_retirement_trigger",
+            "handover_route"
+          ],
+          "sensing_boundary": "asset_and_environment_only_no_personnel_tracking"
         },
         {
           "id": "MEM-12",
@@ -688,6 +698,34 @@
         "reopened_or_escalated",
         "archived"
       ]
+    },
+    "memory_link_maintenance_contract_coverage": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(active Memory Links with accountable owner, day-to-day operator, funding status, inspection interval, minimum service requirement, replacement or retirement trigger, and handover route) / count(active Memory Links)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-PRIVACY-001",
+        "A-MAINTENANCE-001"
+      ],
+      "reason": "No operating organization, funding source, service level, asset registry, inspection baseline, replacement cycle, or retirement handover has been confirmed.",
+      "required_fields": [
+        "accountable_owner",
+        "day_to_day_operator",
+        "funding_status",
+        "inspection_interval",
+        "minimum_service_requirement",
+        "replacement_or_retirement_trigger",
+        "handover_route"
+      ],
+      "sensing_boundary": "Asset and environmental condition data only; no worker location, time-ranking, or productivity profiling."
     }
   }
 }

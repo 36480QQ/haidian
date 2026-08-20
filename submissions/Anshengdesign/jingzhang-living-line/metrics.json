@@ -744,6 +744,130 @@
    "assumptions": [
     "道路β取自C3 98个概念分区单元；建筑基底β取自C3；H 的 γ 取自 72 个 400m POI 单元拟合"
    ]
+  },
+  "c35_capex_yi": {
+   "status": "known",
+   "value": 23.9,
+   "unit": "亿元",
+   "source_files": [
+    "计算/c35_finance_balance.json",
+    "计算/c35_pro.json"
+   ],
+   "formula": "16.98–30.89 亿（七类：缝合0.21–0.56+公共空间1.20–2.40+界面更新0.90–1.80+人才公寓5.70–10.20+测试带4.30–7.60+涌现之脑3.20–6.00+运营基金1.47–2.33；中值单方约5360元/㎡）",
+   "confidence": "medium",
+   "assumptions": [
+    "概念量级",
+    "全口径单方中值约5360元/㎡"
+   ]
+  },
+  "c35_gri_yi": {
+   "status": "known",
+   "value": 3.6,
+   "unit": "亿元/年",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "满租毛收入 2.51–4.69 亿/年（办公10.7万㎡@3.0–5.5元/㎡/天+研发7.1@2.4–4.5+公寓17.8@55–95元/㎡/月+商业3.6@3.5–7.5+公共5.4@0.5–1.5）",
+   "confidence": "medium",
+   "assumptions": [
+    "市场基准：诸葛找房2024Q1/高力国际2024/CBRE2024/华夏北京保障房REIT2024中报",
+    "可出租系数0.50–0.78"
+   ]
+  },
+  "c35_noi_floor_yi": {
+   "status": "known",
+   "value": 0.96,
+   "unit": "亿元/年",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "保障口径稳定期 NOI 0.75–1.25 亿/年（锚 0.96=中值造价×4%）",
+   "confidence": "medium",
+   "assumptions": [
+    "保障定价+政策折扣",
+    "与旧口径0.96亿/4%收益率衔接"
+   ]
+  },
+  "c35_payback_years": {
+   "status": "known",
+   "value": 20.8,
+   "unit": "年",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "静态回收期 14.8–26.9 年（=总投资/年净现金流1.15亿）",
+   "confidence": "medium",
+   "assumptions": [
+    "投资前置、收入后置（十年分期爬坡）"
+   ]
+  },
+  "c35_irr_base": {
+   "status": "known",
+   "value": 4.5,
+   "unit": "%",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "保障口径全投资 IRR 3.5–5.5%（20年DCF，含Y10退出）",
+   "confidence": "medium",
+   "assumptions": [
+    "cap rate 4.5–5.5%",
+    "税盾+补贴后净现金流1.15亿/年"
+   ]
+  },
+  "c35_irr_market": {
+   "status": "known",
+   "value": 12.0,
+   "unit": "%",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "市场口径上限 IRR 10–14%（上限参考，非承诺）",
+   "confidence": "low",
+   "assumptions": [
+    "市场租金全额实现",
+    "上限参考，不作承诺"
+   ]
+  },
+  "c35_exit_base_yi": {
+   "status": "known",
+   "value": 17.5,
+   "unit": "亿元",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "退出估值 13.6–27.8 亿（cap 4.5–5.5%）；中值低于总投资→缺口=公共补贴/社会价值；市场上限 25–57 亿",
+   "confidence": "medium",
+   "assumptions": [
+    "内生回报不足→缺口=公共补贴/社会价值，应单列专项支持"
+   ]
+  },
+  "c35_npv4": {
+   "status": "known",
+   "value": 0.0,
+   "unit": "亿元",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "NPV@4% 区间 −2 ~ +2 亿（跨零）",
+   "confidence": "low",
+   "assumptions": [
+    "跨零→项目可行性依赖公共口径与补贴结构"
+   ]
+  },
+  "c35_dscr_base": {
+   "status": "known",
+   "value": 0.7,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "DSCR 保障口径 0.6–0.8（补贴后 ≥1.2）；资本金35%+债65%，利率4.0–5.0%",
+   "confidence": "medium",
+   "assumptions": [
+    "债务本息中值1.55亿/年",
+    "缺口=公共补贴"
+   ]
   }
  }
 }
