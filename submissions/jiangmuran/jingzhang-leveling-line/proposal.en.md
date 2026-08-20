@@ -1540,12 +1540,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-420 entries [metric:errata_entry_count]. By finder:
+421 entries [metric:errata_entry_count]. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 45 | Run against the shipped package, not a draft |
-| The author | 281 | Found while working |
+| The author | 282 | Found while working |
 | This package's own gate | 29 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1558,7 +1558,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Shape | Count |
 |---|---|
 | Two copies drifted | 73 |
-| An easy measure | 70 |
+| An easy measure | 71 |
 | Shipped unseen | 38 |
 | Uncheckable | 34 |
 | Outlived the package | 26 |

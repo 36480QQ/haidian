@@ -1682,12 +1682,12 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **420 条** [metric:errata_entry_count]。按发现者分：
+当前 **421 条** [metric:errata_entry_count]。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
 | 独立审计 | 45 | 委托的审计对象是随包产物，不是草稿 |
-| 作者自查 | 281 | 本轮工作中发现 |
+| 作者自查 | 282 | 本轮工作中发现 |
 | 本包自己的闸门 | 29 | 构建时被抓出——这是闸门本该做的事 |
 | 包外对抗性通读 | 31 | 由本包之外的读者按评审收到的那几份文件逐条挑错 |
 | **包外评审** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190、仓库 CI |
@@ -1700,7 +1700,7 @@ node visual/assets/verify.js
 | 形状 | 次数 |
 |---|---|
 | 同一件事的两份拷贝各自漂移 | 73 |
-| 检查测了方便测的东西 | 70 |
+| 检查测了方便测的东西 | 71 |
 | 交付物在提交前没被看过 | 38 |
 | 这个说法在这种载体上原理上无法被核对 | 34 |
 | 声明活得比包的内容久 | 26 |
