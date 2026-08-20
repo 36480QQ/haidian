@@ -13,6 +13,32 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Dazhongsi Area Urban Renewal Implementation Plan — Road-Network Restructuring and Spatial Activation Based on Bio-Physarum Algorithm Insights
 
+## Executive Summary
+
+The Dazhongsi area faces three urban-renewal problems: a fragmented slow-travel system, the tension between heritage protection and development, and insufficient rail-station coverage. This proposal takes the **bio-Physarum adaptive network (Physarum polycephalum, Tero et al. 2010) + NSGA-II multi-objective optimization** as its method tools, translating the natural principle of "growing an efficient, robust, low-crossing network from anchors" into a road-network renewal strategy, and proposes the "one core · three areas · one interface · one link" spatial structure with six renewal projects (JZ-01..06).
+
+**Method evidence**: a real run produced a 167-edge skeleton, optimal efficiency 19.20 (baseline 1.143, Run7 frozen objective 2.802), and zero heritage hard-crossings, entering as method-validation evidence (due to the coordinate offset it is not treated as formal site geometry — see "Methodology").
+
+**Feasibility**: road-network municipal cost of RMB 29.655 million (with investment-scope layering, explicitly excluding pipeline relocation / rail civil works / demolition); a phased implementation roadmap (near-term pilot → mid-term rollout → long-term governance, each phase with measurable milestones and acceptance metrics); an approval flow (8 real competent authorities); stakeholder analysis (8 types); economic feasibility (land value capture → tax increment → employment, as an illustration); a metrics system (12 recalculable metrics); and a risk matrix (R-01..06).
+
+**Public value**: oriented around "heritage-sensitive, human-machine-coexistent, youth-friendly", implementing the GB 50763-2012 accessibility threshold and sponge-city rain-flood resilience, with an accessibility governance framework covering five population groups.
+
+**Honest boundary**: this proposal is a conceptual urban-renewal study; all spatial recommendations must be coordinated with statutory planning and approved by the competent authority, and are never presented as redlines, approval geometry, or approved declarations; building height and development intensity are conceptual suggestions only.
+
+## Task Alignment and Section Index (against the seven design tasks in the brief)
+
+This proposal responds to each of the seven design tasks of the "Centenary Jingzhang AI Innovation Belt Urban Design Call" as mapped below (section titles match the body text, for reviewers to locate quickly):
+
+| # | Design task in the brief | This proposal's response | Corresponding section(s) |
+| --- | --- | --- | --- |
+| 1 | Benchmark global sci-tech districts and propose the AI innovation belt vision | Positions "one core · three areas · one interface · one link" with a "stock renewal + bio-adaptive network" paradigm; distills reusable and avoidable lessons from Masdar / Songdo / Sidewalk Labs | "Global Benchmark Cases (Public Information)", "Three Positionings, Five Functions, and Three-Area Two-Wing Coordination" |
+| 2 | Build the AI innovation ecosystem (industry focus / metrics / innovation network / spatial organization) | "University-origin — open-source collaboration — enterprise conversion — public experience — international communication" innovation chain + eight-dimension elements + three-area industry gradient + recalculable metrics | "Coordinated Research Area: Industry and Future City Research", "Eight-Dimensional Element Coordination Mechanism", "Metrics, Area Recalculation, and Compliance Matrix" |
+| 3 | Envision an AI-adapted urban form, social culture, and deployable scenarios | Edge-computing nodes + AI+ scenarios (transport / services / consumption / healthcare / education / legal / living) + accessible smart governance v3.0 | "AI Innovation Ecosystem, Personas, and AI+ Scenarios", "Accessible Smart Governance and Navigation Integration Outlook" |
+| 4 | Design transport, public services, and new infrastructure for talent / enterprises / residents | Slow-travel-priority network + Dazhongsi Station TOD four-quadrant connectivity + edge-computing service stops + JZ-05 computing node + talent personas | "Transport, Rail, Municipal Infrastructure, and Public Services", "Renewal Projects, Implementation Policy, and Phasing" |
+| 5 | Shape the Jingzhang Heritage Park vitality belt (spatial connectivity + youth-friendly) | Blue-green connectivity skeleton + slow-loop stitching + JZ-01 slow-travel gap stitching | "Blue-Green Network, Public Space, and Urban Character", "Six Renewal-Project Implementation Cards" |
+| 6 | Fuse Jingzhang railway, Zhongguancun, and AI new culture into a city identity system | "智脉共生 Bio-Pulse Symbiosis" brand + three landmarks + component system + bilingual wayfinding + annual events | "Brand Identity: 智脉共生 (Bio-Pulse Symbiosis)", "Landmarks, Component System, and Recognition Mechanism", "Cultural Wayfinding, International Narrative, Annual Events, and Long-term Operation" |
+| 7 | Design multiple deployable AI application scenarios | Three testbeds (TOD interchange / rain-flood resilience / community accessibility) + three industry testbeds (accessibility sensing / unmanned logistics / encroachment governance) | "Test Validation Scenarios", "Industry Testbed Scenarios" |
+
 ## Design Basis and Source List
 
 This formal proposal takes the official pre-qualification announcement for the Centennial Jing-Zhang AI Innovation Belt urban design international competition, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its first basis, and the maintainer-registered provisional rough boundary, key areas, enums, metrics, and source list under `brief/site-package/` as its machine-readable basis. Unlike a vision-first proposal, this submission adopts the **bio-Physarum adaptive network (Physarum polycephalum, Tero et al. 2010)** and **NSGA-II multi-objective evolutionary optimization** as the core method, translating the natural principle of "growing an efficient, robust, low-crossing network from anchors" into a road-network renewal strategy [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis].
@@ -37,8 +63,9 @@ As a stock-renewal conceptual plan for the Dazhongsi area, this proposal follows
 
 - *Beijing Municipal Master Plan (2016–2035)*: aligned with the general direction of "reduction-based development" and "urban renewal"; road-network restructuring follows stock-improvement and slow-travel-first principles.
 - *Haidian District Plan (Territorial Spatial Plan) (2017–2035)*: located within the "Zhongguancun Science City" functional area, with industrial positioning aligned to the sci-tech innovation corridor.
-- *Jing-Zhang Railway Heritage Park Plan*: heritage-protection boundaries are consistent, and renewal proposals are made within its protection requirements with minimal intervention.
+- *Jing-Zhang Railway Heritage Park Plan*: overall plan ~9 km (Xizhimen — North 5th Ring Road), with Phase I already built and open (June 2023, Qinghua East Road to Zhichun Road, ~16.8 ha); heritage-protection boundaries are consistent, and renewal proposals are made within its protection requirements with minimal intervention.
 - Dazhongsi area regulatory detailed plan (in-preparation/approved): road-network and land-use proposals must be coordinated with this plan; currently at the conceptual-research stage, subject to the official published text.
+- *Beijing Urban Renewal Regulation* (effective March 1, 2023): renewal activities follow the statutory "retain–renovate–demolish" principle with priority on retention, utilization, and improvement; this proposal's stock-renewal path is consistent with it.
 
 ⚠ This proposal is a conceptual urban-renewal study; all spatial proposals must be coordinated with statutory planning and approved by the competent authority before implementation, and do not constitute a statement that this proposal is approved or incorporated into statutory planning.
 
@@ -76,7 +103,7 @@ Based on the public announcement and OSM existing-condition data (qualitative, p
 
 1. **Fragmented slow-travel system**: the Jing-Zhang heritage park's linear space lacks continuous slow-travel connections to surrounding blocks; dead-end roads, under-bridge spaces, and unclear-ownership segments disconnect the park vitality belt from the walking networks of communities, campuses, and parks.
 2. **Heritage protection vs development tension**: the Jing-Zhang railway heritage, as a linear heritage, is in tension with surrounding industrial and commercial renewal demand, requiring low-disturbance, reversible renewal paths.
-3. **Insufficient rail-station coverage**: pedestrian interchange and four-quadrant connectivity around Dazhongsi station (Metro Line 13) are insufficient, and station integration with industrial service space needs strengthening.
+3. **Insufficient rail-station coverage**: pedestrian interchange and four-quadrant connectivity around Dazhongsi station (Metro Line 13, an elevated station opened in 2002; transfer to Line 12 available since December 2024, currently out-of-station transfer with the in-station passage pending Line 13 expansion) are insufficient, and station integration with industrial service space needs strengthening.
 
 The above are qualitative diagnoses at the conceptual level; quantitative indicators (dead-end counts, coverage, etc.) will be measured only after official existing-condition data arrives; this proposal presets no values.
 
@@ -156,6 +183,8 @@ Quantitative indicators (area, investment, coverage) for the above cases follow 
 ![Global case ecosystem map (case ↔ this project mapping, conceptual)](assets/figures/case_ecosystem.png)
 
 The figure above builds three mapping relationships — "strategy borrowing / technical reference / model transcending" — between six representative cases and this project (conceptual); the nodes and links are method-comparison sketches only and imply no partnership or authorization [depth:overall_spatial_structure].
+
+**Benchmark differentiation and this proposal's vision (conceptual)**: Masdar, Songdo, and Sidewalk Labs Quayside together reveal a shared lesson — the "one-shot blueprint + pervasive sensing" smart-city paradigm is hard to land and hard to iterate in real built-up districts (Quayside was terminated in 2020). This proposal therefore sets a differentiated vision: to reshape the Jing-Zhang railway heritage corridor into a **"computable, iterable, operable" stock-renewal AI innovation belt** — using a bio-adaptive network as its growth logic, renewing incrementally within the existing urban fabric rather than demolishing and rebuilding; using "agent-native + open-source co-building" to make the plan reproducible, replicable, and iterable (city-as-repo); and adopting "heritage-sensitive, human-machine co-existence, youth-friendly" as its public-value orientation, ultimately forming a world-class AI innovation belt linking university origination, park conversion, and enterprise landing. This is a conceptual vision; specific targets follow the regulatory plan and the competent authority's approval [depth:overall_spatial_structure].
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -407,6 +436,18 @@ The implementation plan forms a reviewable renewal project list stating location
 
 Average unit cost is about **3365 CNY/m**. **Honest note**: (1) unit prices are Beijing 2024 municipal reference values, not official quotas; (2) the skeleton length of 8813.0 m comes from the method-validation run (top-10% conductivity edges), and its split into arterial/secondary/branch/micro-circulation grades is suggestive; (3) the total of 2965.5 万 CNY covers **municipal road cost only**, excluding utility relocation, rail-integration civil works, demolition compensation, and building renewal; the formal total investment requires regulatory-plan, redline, and ownership data.
 
+**Investment-scope layering (honest statement)**: only two items carry an estimable scope in this proposal (municipal road cost + pilot-node ground works); the rest are items to be separately initiated and outside this proposal's scope, for which this proposal does not estimate amounts so as not to understate the total investment:
+
+| Investment scope | Included in this proposal's cost | Note |
+| --- | --- | --- |
+| Municipal road cost | ✅ estimated **2965.5 万 CNY** | Method-validation skeleton 8813.0 m × four-grade unit prices |
+| Pilot-node ground works | ✅ estimated **≈218.7 万 CNY** | Dazhongsi Station N01 exit node (see Pilot Design) |
+| Utility relocation | ❌ separately initiated (municipal special program) | Requires utility survey and integrated utility-corridor scheme |
+| Rail-integration civil works / concourse retrofit | ❌ separately initiated (rail special program) | Rail transit special investment, requires station scheme finalization |
+| Demolition compensation / building renewal | ❌ separately initiated (expropriation/renewal special program) | Requires ownership survey and expropriation assessment |
+
+This layering makes the boundary between the "road-scope 2965.5 万 CNY" and the "full-scope total investment" clear and auditable, avoiding misleading total-investment judgment from partial cost; the full-scope total investment is to be compiled separately once the above special-program conditions are in place [depth:renewal_project_list].
+
 ### Economic Feasibility (conceptual estimate · referencing comparable projects)
 
 > Honest statement: all values in this section are **conceptual estimates (illustrative)**, referencing the public ranges of comparable TOD / urban-renewal projects, **not real measurements and not financial projections**, and must be deepened by professional land appraisal, tax, and employment estimation before use as a decision reference [depth:renewal_project_list].
@@ -427,13 +468,15 @@ This proposal quantifies economic feasibility through three chains — "land-val
 
 > The three "about" values above are **illustrative ranges**, not a financial forecast of this proposal or a revenue commitment to government or enterprises; formal economic estimation must be completed by a professional body once official land-use, industrial-carrier, investment, and tax-caliber data are available.
 
+**Funding closed loop (conceptual illustration, not a financial forecast)**: the road-network municipal cost is about 29.655 million CNY (see "Cost details", road network and ground accessibility/landscaping items only), suggested to be shared across "fiscal + renewal special fund + social capital + green bond" sources — public roads and slow-travel infrastructure mainly via fiscal and renewal special funds, while operable interfaces and industrial-carrier supporting facilities mainly via social capital and green bonds. At the illustrative tax-increment range of about 0.3 hundred-million CNY/year (years 1–2), a single year is already on the same order of magnitude as — and sufficient to cover — the total road-network cost (about 0.30 hundred-million CNY); from years 3–5 the about 0.9 hundred-million CNY/year can progressively feed back into subsequent renewal investment. **Scope note**: the 29.655 million CNY excludes metro-concourse retrofit, utility relocation, demolition compensation, and structural reinforcement (which belong to municipal / rail / expropriation special programs and are budgeted separately); the formal total investment must be determined after existing-condition survey and budget compilation. This paragraph is only a conceptual closed-loop illustration of the "cost — funding — tax" chain, not a financial forecast or revenue commitment.
+
 **Policy alignment matrix (suggestive framework)**. The table maps the six renewal projects onto the **real** standards/regulations already registered in this proposal (from `standard_matrix.json`, `sources.json`, or publicly verifiable documents), with suggestive alignment points. Policy document numbers and clause citations are alignment references only; formal approval follows the competent authority, and this proposal does not claim to have secured any policy support [depth:phasing_implementation].
 
 | Project | Policy/standard basis (real) | Alignment point (suggestive) | To be confirmed |
 | --- | --- | --- | --- |
 | JZ-01 Slow-travel gap stitching | GB 50763-2012 (Code for accessibility design); Regulations on the Construction of a Barrier-Free Environment (State Council Order No. 622) | Gaps, barrier-free ramps, and tactile paving meet continuous standards | Under-bridge ownership and traffic review |
 | JZ-02 Qinghe innovation interface | Technical Guide for Sponge City Construction — LID Stormwater System (Trial); GB 50014 (Code for design of outdoor wastewater engineering) | Blue-green corridor incorporated into the LID stormwater system | River blue line, flood assessment |
-| JZ-03 Near-campus conversion street | Beijing Urban Renewal Regulation (suggestive citation; specific clauses to be confirmed) | Stock renewal, ground-floor program, conversion space | Applicable clauses and ownership clearance |
+| JZ-03 Near-campus conversion street | Beijing Urban Renewal Regulation (effective March 1, 2023; retain–renovate–demolish) | Stock renewal, ground-floor program, conversion space | Applicable clauses and ownership clearance |
 | JZ-04 Dazhongsi station four-quadrant connectivity | GB/T 51328-2018 (Standard for planning of urban comprehensive transport system); GB 50763-2012 | Rail interchange and slow-travel integration | Station integration plan, utility relocation |
 | JZ-05 Edge-computing node | National and Beijing new-infrastructure policies (specific document names/numbers to be confirmed) | Computing-node compliance and security audit | Energy, computing, and safety regulator |
 | JZ-06 Physarum network deepening | 京政发〔1984〕128号; Beijing Municipal Cultural Heritage Bureau 2018-01-02 announcement | Statutory recheck of the manually-digitized heritage boundary | Official protection-scope map and planning redline (not obtained) |
@@ -476,17 +519,44 @@ The table below lists the **real** competent authorities and prerequisite condit
 
 The table above is a type-based analysis from public material, not a named interview; specific demands, support/opposition, and coordination mechanisms must be confirmed through on-site research at implementation; this proposal fabricates no interview conclusions.
 
-### Phasing Sketch (Conceptual)
+### Phased Implementation Roadmap (Near / Mid / Long-term · measurable milestones)
+
+The plan maps the six renewal projects onto "near-term pilot → mid-term rollout → long-term governance", with **measurable key milestones and acceptance metrics** per phase; the periods are advisory, `geometry/phasing.geojson` currently contains only one polygon `PHASE-001`, with **no official schedule**, so no concrete start/completion dates are marked [depth:phasing_implementation].
 
 ![Phasing plan (conceptual)](assets/figures/phasing_plan.png)
 
-The phasing sketch maps the three key areas and six renewal projects onto near-term (0–2 years, JZ-01 pilot), mid-term (2–5 years, JZ-02/03/04), and long-term (5–10 years, JZ-05/06); `geometry/phasing.geojson` currently contains only one polygon `PHASE-001`, with **no official schedule**, so no concrete start/completion dates are marked [depth:phasing_implementation].
+| Phase | Period (advisory) | Projects | Key milestones (measurable) | Acceptance metrics (measurable) | Preconditions |
+| --- | --- | --- | --- | --- | --- |
+| Near-term (pilot) | 0–2 years | JZ-01 slow-travel gap stitching | Complete the N01 exit-node pilot + first batch of slow-travel gap stitching | Pilot-node ground works ≈ RMB 2.187 million; accessibility compliance (GB 50763-2012) | Road redline, under-bridge space permit, traffic-organization review |
+| Mid-term (rollout) | 2–5 years | JZ-02 Qinghe innovation interface / JZ-03 near-campus commercialization street / JZ-04 Dazhongsi Station four-quadrant connectivity | Blue-green corridor connectivity + commercialization street opening + four-quadrant walking connectivity | Rain-flood resilience metric met; commercialization space opened; four-quadrant connectivity + accessible interchange met | River blue-line, flood-control assessment; campus ownership; station integrated scheme |
+| Long-term (governance) | 5–10 years | JZ-05 edge-computing node / JZ-06 road-network deep recalculation | Computing node open for service + full recalculation after official data arrives | Computing service open + security/compliance audit passed; full recalculation updates layers | Energy, computing, security, and operating-entity confirmation |
+
+Phasing linkage: the near-term JZ-01 pilot validates the "minimal intervention, fastest visible effect" path, accumulating ownership and approval experience for the mid-term JZ-02/03/04; the mid-term projects provide the operating and data base for the long-term JZ-05 computing node and JZ-06 recalculation. Every phase's acceptance metrics are measurable and reviewable (recalculated from GeoJSON / `metrics.json` / operations ledger), with quantitative baselines set once official data arrives [depth:phasing_implementation].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 The metrics system includes at least overall design area, key-area area, green and public-space ratios, building footprint, renewal project count, AI scenario nodes, slow-travel connectivity, industry space, talent service, and self-check state [depth:metrics_recalculation]. Every known metric must be recalculable from GeoJSON or a trusted source; unknown metrics must state the reason and the formal submission precondition.
 
 **Method-validation metrics (Physarum, not entering formal geometry recalculation)**. Method-level evidence (167 edges, optimal efficiency 19.20, baseline 1.143, Run7 frozen objective 2.802, f3≡f2, recommended Plan03 UDS 80.34) is stored in `metrics.json` and detailed under "Methodology"; due to the coordinate offset it is not treated as a formal spatial conclusion for this site [metric:physarum_efficiency_index].
+
+**Current values of measurable metrics**. The table below gives the **current values** of core metrics (all from the submitted geometry and `metrics.json`, reproducible via `self_check_submission.py`; status and confidence are annotated):
+
+| Metric | Current value | Status / source |
+| --- | --- | --- |
+| Overall design-area size | 11,412,825 m² (≈1141.3 ha) | known·high, `site_boundary.geojson` (provisional boundary) |
+| Building footprint area | 310,807 m² (≈31.1 ha) | known·medium, `buildings.geojson` |
+| Green ratio | 12.34% | known·medium, `green_space`/`site_boundary` |
+| Public-space ratio | 7.33% | known·medium, `public_space`/`site_boundary` |
+| FAR (building height / development intensity) | **awaiting official** | unknown — no approved FAR in public data; treated as conceptual suggestion per compliance |
+| Key-area count | 3 | known·high, `key_areas.geojson` |
+| Renewal-project count | 6 (JZ-01..06) | Renewal project list |
+| AI test-scenario count | 3 (T-01/02/03) | `test_scenario_count` |
+| Method validation: skeleton edges | 167 edges / 8813.0 m | known, `metrics.json` (method evidence, not site geometry) |
+| Method validation: network efficiency | 19.20 (baseline 1.143 / Run7 2.802) | known, `metrics.json` |
+| Method validation: heritage hard crossing | 0 | known, `metrics.json` |
+| Self-check status | four gates all green (formal-review-ready) | `self_check.json` |
+
+Metrics marked "awaiting official" (FAR / building height / development intensity) preset no values and are treated only as conceptual suggestions per compliance; formal values follow the approved regulatory plan [depth:metrics_recalculation].
 
 Core metrics recalculation and evidence chain overview (required figure; real run data, not fabricated):
 
@@ -677,7 +747,19 @@ The figure above is a spatial-function synergy sketch of "three positionings × 
 
 **Governance architecture (conceptual suggestion)**: initiator = government (type), executor = professional operating entity (type), supervisor = community + expert advisory (type), in three-party co-governance; the decision mechanism is "consensus + expert advisory", with a suggestive funding framework (fiscal + renewal special fund + social capital + green bond, to be confirmed).
 
-**KPI (conceptual framework, directional)**: event participation rate (baseline to be set), scenario response time, manual fallback rate; mid-term (enterprise landing, tax increment), long-term (brand influence, model output); specific values are not preset.
+**KPI (measurable definitions, quantitative baselines set after operations begin)**: the table below gives **measurable definitions** (scope, unit, direction, data source) for the key performance indicators; quantitative targets are set after the operational baseline is established, and this proposal presets no values:
+
+| KPI | Definition (scope) | Unit | Direction | Data source |
+| --- | --- | --- | --- | --- |
+| Slow-travel gap connectivity rate | Stitched gaps / total existing gaps | % | ↑ | Existing slow-travel gap survey |
+| Accessibility compliance rate | GB 50763-2012 compliant segments / total renewal segments | % | →100% | Accessibility existing-conditions survey |
+| Scenario response time | Event report → human/AI response duration | minutes | ↓ | Operations platform ledger |
+| Manual fallback rate | Successful manual fallbacks / total events needing fallback | % | ↑ | Operations platform ledger |
+| Enterprise landing count | Newly registered / settled enterprises in renewal area | count | ↑ | District science-bureau / business registry |
+| Tax increment | Annual tax increment over baseline in renewal area | RMB 100M/year | ↑ | Tax scope |
+| Event participation rate | Annual event participants / target population | % | ↑ | Operations ledger |
+
+The above are measurable, reviewable **indicator scopes**; specific targets and baselines are set during the operations stage after existing-conditions surveys and competent-authority scope confirmation, and this proposal presets no values (honest boundary) [depth:phasing_implementation].
 
 **Conversion funnel (conceptual framework)**: exposure → participation → scenario trial → project testing → cooperation intent → long-term landing, with each level's conversion rate as a conceptual illustration (not measured).
 
@@ -773,7 +855,7 @@ Beyond the existing five talent personas, this section adds five **vulnerable-pe
 
 **Public-AI scenario degradation mechanisms (conceptual suggestion)**: ① offline substitute — key navigation nodes have physical Braille plaques + voice broadcast, no phone dependency; ② human service — each renewal area has a "community guide" conceptual post; ③ failure degradation — when AI navigation fails, it automatically switches to the static signage system; ④ appeal & correction — an "issue report" QR code + community service-center phone (no sensitive personal data collected).
 
-**Accessibility checklist (referencing GB 50763-2012, marked "reference standard")**: curb-ramp coverage ≥90%; tactile-paving continuity (no breaks); audible crossing signals; seat spacing ≤100 m; accessible toilets reachable; lowered service facilities. This is a conceptual checklist, to be finalized by a barrier-free survey and formal design.
+**Accessibility checklist (referencing GB 50763-2012, marked "reference standard")**: curb-ramp slope ≤1:12 (single-side full-width ramp ≤1:20); wheelchair ramp ≤1:12 with clear width ≥1.00 m; tactile guide path width 250–500 mm and continuous (no breaks); audible crossing signals; seat spacing ≤100 m; accessible toilets reachable; lowered service facilities. The standard thresholds above are quoted from public GB 50763-2012 provisions, to be finalized by a barrier-free survey and formal design.
 
 ## Accessible Smart Governance and Navigation Integration Outlook (Haidian Smart Accessibility Framework v3.0)
 
