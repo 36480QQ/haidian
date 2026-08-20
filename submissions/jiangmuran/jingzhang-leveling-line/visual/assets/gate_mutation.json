@@ -1564,6 +1564,19 @@
       "why_en": "The published reason enumerates three branches - a file absent, one over the per-image cap, the packet over the image count. **The fourth is not in it**: the pixel-pair check was added later and the reason was never revisited. What it called a fact about the file system rather than about any file this harness can write was really a fact about this harness writing only text — **a limitation of the tool published as a property of the gate**."
     },
     {
+      "id": "M183",
+      "gate": "walk_speed_qa.py",
+      "target": "build_drawings.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把 A3 封面上那句「800 m 网络距离，不是半径」写死回去——**E418 之后它就是这样留在那里的**：可达栋数已经跟着 720 m 重算成 183 / 206，而同一段话里的距离还是 800 m。闸门现在读两版全部页面，点名是哪一页，构建停。",
+      "what_en": "Type the superseded 800 m back onto the A3 cover - **the state it was left in after E418**: the reach counts beside it had already moved to 183 and 206 at the 720 m limit while the distance in the same paragraph still read 800 m. The gate reads every dumped page in both editions now, names the page, and the build stops.",
+      "why_zh": "**这道闸门原来的作用域只有 `proposal.md`**，所以它看不见图纸。而 A3 封面是评审收到的四张「页一」之一——一个数在评审看得见的地方过期，比它在正文里过期更贵。",
+      "why_en": "**The gate's scope was proposal.md alone**, so it could not see the drawings - and the A3 cover is one of the four page-1s the reviewer is sent. A number going stale where the reviewer looks costs more than one going stale in the body."
+    },
+    {
       "id": "M181",
       "gate": "walk_speed_qa.py",
       "target": "fig_reach.py",
@@ -2201,7 +2214,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 179,
+  "caught": 180,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",

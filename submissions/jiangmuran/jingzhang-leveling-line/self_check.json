@@ -414,7 +414,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Fail when the prose describing the mutation harness has gone stale.",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 179 mutations, 124 of 125 gates proven able to fail, 1 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 180 mutations, 124 of 125 gates proven able to fail, 1 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -423,7 +423,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Prove the gates can fail, by making them fail on purpose.",
-      "message": "gate_mutation_qa.py — gate mutation: 179 deliberate defects across 124 of 125 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 180 deliberate defects across 124 of 125 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
     },
     {
       "check_id": "PKG_GENERATION_CHAIN_QA",
@@ -630,7 +630,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Every identifier in the package obeys the published naming system.",
-      "message": "naming_qa.py — naming: 711 distinct names harvested from the package — 682 matching exactly one of 24 published families and 29 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
+      "message": "naming_qa.py — naming: 712 distinct names harvested from the package — 683 matching exactly one of 24 published families and 29 that are named documents in naming.json, and nothing else; every family governs at least one, and 8 benchmarks carry digits agreeing with the order they declare — the naming system is checked against the package rather than asserted about it"
     },
     {
       "check_id": "PKG_NUMBER_BREAK_QA",
@@ -1204,7 +1204,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：179 处人为缺陷，覆盖 124 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 179 deliberate defects across 124 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：180 处人为缺陷，覆盖 124 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 180 deliberate defects across 124 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -1412,7 +1412,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31401867,
+      "total_bytes": 31403219,
       "maintainer_bypass": false
     },
     "stderr": ""
