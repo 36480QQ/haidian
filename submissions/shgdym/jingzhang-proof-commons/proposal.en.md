@@ -1,35 +1,59 @@
 ---
-title: "X JINGZHANG: Every AI Cross-Checked in Public"
+title: "X JINGZHANG: One Product, Three Decisions, One RETURN"
 author_github: "shgdym"
 language: "en"
 translation_file: "proposal.md"
 translation_of: "proposal.md"
 license: "CC-BY-SA-4.0"
-summary: "The engineering culture of the Centennial Jing-Zhang Railway is translated into a spatial and operating system that moves AI from source registration and bounded testing to informed public use, human judgment, and restorative exit. Every spatial object uses explicitly provisional geometry."
+summary: "People keep the main line and AI uses a siding: one low-speed embodied AI product faces TEST at Zhongzhi, RELEASE at AI Origin and USE at Dazhongsi; any failure triggers RETURN while the civic city keeps running."
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v3.1"
+iteration: "v4.0"
 ---
 
 # X JINGZHANG
 
-> The same AI product must carry the same version and a continuous evidence chain through three stations. Any failure returns the product to TEST; the city does not adapt itself around product failure. TEST → RELEASE → USE → RETURN.
+> **One product. Three decisions. One RETURN.** People keep the main line; AI uses a siding. Every merge must pass a public city cross-check.
 
-## Understand it in three minutes: how one product is admitted, then returned by the city
+![One product, three stations and the RETURN operating loop](assets/figures/x-operating-proof.en.png)
+
+## Understand it in 30 seconds: how one product is admitted, then returned by the city
 
 A low-speed embodied-service prototype enters Zhongzhi as version 0.8. At 09:17 it crosses its envelope during an unexpected-pedestrian fixture; staff stop it within five seconds and the Test Receipt records FAIL. The machine leaves while the court remains open. Version 0.9 passes a new test, then exposes its exact version, licence, accountable people and withdrawal action at AI Origin before receiving a time-limited Release Ticket. During bounded use at Dazhongsi, 72-year-old Ms Zhou objects without a smartphone because equipment and a queue affect the accessible chain. The Public Verdict becomes RETURN. Trial closes, staffed service continues, and version 0.10 travels back to Zhongzhi with a new fixture. [data:visual/assets/x-lifecycle-valid-example.json] [data:visual/assets/lived-lifecycle.json]
 
-This is X: not a logo or a chain of invisible approvals, but a public cross-check whenever a product seeks entry to the next section of city space. Technical PASS cannot substitute for rights, a Release Ticket cannot substitute for public judgment, and a new PASS cannot erase version 0.8's failure history. [data:visual/assets/verify-x-lifecycle.js] [metric:x_lifecycle_test_case_count]
+This is X: not a logo or a chain of invisible approvals, but a physical city crossing where conflict becomes visible and people decide whether movement may proceed. Technical acceptance cannot substitute for rights, limited release cannot substitute for public judgment, and a new version cannot erase version 0.8's failure history. [data:visual/assets/lived-lifecycle.json]
 
-| City decision | The station answers only | What the public can see | Operating ticket | How the city continues after failure |
-| --- | --- | --- | --- | --- |
-| Zhongzhi TEST | Can this exact version work within its declared envelope? | Test pocket, named staff, physical stop and failure record | Test Receipt | Machine leaves; court, walking and open green continue |
-| AI Origin RELEASE | May this version be made public and used within limits? | Method, licence status, accountable people and withdrawal action | Release Ticket | Publication leaves; learning, collaboration and ordinary display continue |
-| Dazhongsi USE | Does the public accept its continued presence in city service? | Limited trial, staffed equivalent, anonymous complaint and RETURN status | Public Verdict | Device returns; commerce, rest, staffed service and accessible chain continue |
+| City decision | The station answers only | The physical X | How the city continues after failure |
+| --- | --- | --- | --- |
+| Zhongzhi TEST | Can it work inside its declared limit? | A civic route crosses a machine-test path; staff, a physical stop and a transparent edge control the crossing | Machine leaves; court, walking and open green continue |
+| AI Origin RELEASE | May it be released with limits? | Method and rights tables cross before a withdrawal interface; status and accountable people remain co-visible | Release withdraws; learning, collaboration and ordinary display continue |
+| Dazhongsi USE | Should the city keep using it? | AI service meets daily life at a complaint node; access and staffed service hold main-line priority | Device returns; commerce, rest, staffed service and accessible movement continue |
 
-![One product, three stations, three tickets and the RETURN operating loop](assets/figures/x-operating-proof.en.png)
+### Three physical Xs: one main line, three different city conflicts
+
+**Zhongzhi is the Machine X.** A continuous civic main line crosses an ordinary court. A closable machine-test siding reaches it through one staffed crossing only. An observation buffer, physical E-stop, transparent safety edge, failure display and equipment-exit route form TEST. Before operation the place is an ordinary court; during operation only the machine pocket opens; after RETURN the edge leaves and seating, walking and green space recover. [data:visual/assets/station-topology.json#ZHONGZHI_TEST]
+
+**AI Origin is the Rights X.** A through ground floor keeps learning, collaboration, café and community activity open. A method table and rights table meet at an open release theatre, with the staffed withdrawal desk in the same sightline. Technology may HOLD and a product may leave, but the public table, viewing steps and ordinary display do not close with release status. [data:visual/assets/station-topology.json#AI_ORIGIN_RELEASE]
+
+**Dazhongsi is the Use X.** Accessible movement, staffed equivalent service and a non-digital route form the daily interface first. AI occupies an offset trial pocket only. The complaint point is reached directly from the main line, and equipment leaves through an independent interface. Commerce, rest, transit arrival and staffed service continue through AI ON, RETURN and AI OFF. [data:visual/assets/station-topology.json#DAZHONGSI_USE]
+
+![Plans, sections and three states for three physical Xs](assets/figures/key-areas.en.png)
+
+### 90-day minimum pilots: build civic space before AI enters
+
+The three stations do not wait for one permanent project. Each uses 90 days to test a small but complete spatial prototype. D01-14 records ordinary use without AI; D15-45 installs reversible components and rehearses stop, withdrawal, staffed service and restoration; D46-75 allows limited opening; D76-90 decides retain, modify or remove from objections, maintenance and restoration evidence. Area, build intensity and cost are urban-design bands, not survey, cost plan, tender or delivery commitment. [assumption:A-RESOURCES-001]
+
+| Station | Pilot area band | Build and cost band | Required actor types | Stop immediately | City assets retained after AI failure |
+| --- | --- | --- | --- | --- | --- |
+| Zhongzhi TEST X | 800-1,500 m² | Light-build; multi-million CNY band | Site operator, product team, safety role, independent observer | Boundary breach, failed stop or civic-mainline conflict | Civic court, safety kit, failure archive and reusable exit interface |
+| AI Origin RELEASE X | 300-800 m² | Furniture and light retrofit; million CNY band | Site operator, rights reviewer, release role, community representative | Licence HOLD, failed withdrawal or blocked ordinary use | Public table, learning space, open method archive and staffed withdrawal desk |
+| Dazhongsi USE X | 500-1,000 m² | Furniture and light-build; low-to-multi-million CNY band | Public service, accessibility adviser, maintenance, user representative | Non-AI service outage, blocked access or unresolved objection | Staffed window, tactile map, seating, ordinary commerce and rest |
+
+![Three 90-day minimum pilots, exit actions and retained assets](assets/figures/implementation-roadmap.en.png)
+
+> **Evidence boundary.** Current geometry is provisional evidence for concept design, relative topology and package recomputation only. Official boundaries, controls, ownership, existing buildings, utilities, fire, heritage, budget, operators and approvals remain to be confirmed. Machine checks establish repository rerunnability only, not field certification, product approval or implementation authority. [assumption:A-BOUNDARY-001]
 
 ### Why Jing-Zhang: X grows from railway operating culture
 
@@ -38,12 +62,6 @@ X does not paste railway vocabulary onto a generic governance system. It makes a
 The Qinglongqiao switchback offers a more specific Jing-Zhang memory: changing direction does not erase the preceding section. X translates this into RETURN. An old FAIL cannot be overwritten by a new PASS, and a complaint or defect must create a new task that travels back to Zhongzhi. Qinglongqiao lies outside this proposal's provisional design scope; only its reliably sourced operating logic is translated, without inventing a site connection or heritage claim. [source:NRA-JINGZHANG-HISTORY] [source:BEIJING-HERITAGE-JZ]
 
 The opened first phase of the Jing-Zhang Railway Heritage Park retains the main line, old rails, switches and Qinghuayuan Station memories while turning an approximately nine-kilometre corridor into connected public space. X therefore does not borrow railway graphics; it reverses the priority between technology and public life: **ordinary civic life is the main line, while AI innovation is a siding that needs authority and can always be returned**. The three stations become a test siding, release siding and urban-use siding. Each restores an ordinary use after closure; the main line never depends on AI being open. [source:BEIJING-JZ-PARK-PHASE1] [source:BEIJING-JZ-PARK-9KM] [depth:jingzhang_heritage_route]
-
-### The mechanism can now reject
-
-The lifecycle verifier is an executable state machine rather than a descriptive checklist. It checks ten states, upstream-ticket hashes, configuration fingerprints, human sign-off, rights HOLD, expiry, retesting after RETURN and immutable failure history. All 24 deterministic cases pass; 22 are paths that must be rejected for skipping, broken chains or invalid status. The station verifier now adds three non-interchangeable opening gates to civic continuity, AI closure, non-AI service, accessible independence and RETURN restoration: no bypass around Zhongzhi's controlled crossing; co-visible method-rights-withdrawal at AI Origin; and non-AI route parity with complaint at the Dazhongsi conflict point. The result is `29/29 PASS`. [data:visual/assets/x-lifecycle-test-results.json] [data:visual/assets/station-topology-results.json] [metric:station_topology_pass_count]
-
-These PASS results prove only that repository rules, synthetic tickets and concept topology can be rerun. They do not establish field conditions, product safety, public acceptance, certification or implementation approval. SC-03 remains an explicitly labelled tabletop; a real trial remains BLOCKED without a site, operator, device, insurance and approvals. [data:visual/assets/sc03-tabletop-evidence.json]
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -252,15 +270,13 @@ Each station asks a different question, requires different signatories and rejec
 
 Handover occurs on visible civic interfaces. Zhongzhi's test handover table shows only version, envelope, fixtures and unresolved issues. AI Origin uses paired release tables: one for reproducible methods and one for licences, limits and withdrawal. Dazhongsi's public-verdict table keeps continue, revise and stop states in the same sightline as staffed appeal and paper service. When a ticket expires, its light and mark disappear and the place returns to ordinary learning, rest or movement, so an obsolete exhibit cannot acquire de facto endorsement. [metric:handover_ticket_type_count]
 
-The minimum chain is upstream hash, current version, human sign-off and expiry. If 0.9-retest becomes 0.9-rc1 at AI Origin, the release steward explains the change and decides whether retesting is necessary. If Dazhongsi changes route, speed or sensing range, the Release Ticket does not automatically cover the new condition. If a complaint reveals use absent from test fixtures, the Public Verdict creates a RETURN task rather than merely promising to “improve experience”. This gives the handover a custody chain and lets failure rewrite the upstream test brief. [data:visual/assets/lived-lifecycle.json] [metric:ticket_hash_chain_target_percent]
-
-These rules are implemented in `visual/assets/verify-x-lifecycle.js`, not left as prose. The state machine rejects skipped TEST, ticket-type substitution, configuration changes under an old ticket, broken hashes, missing human sign-off, incomplete rights, expiry, continued USE after RETURN, and RELEASE without retesting. A complaint-triggered RETURN must create a new test or review task. The fixed suite contains 24 cases: 22 expected rejections and two expected acceptances, currently `24/24 PASS`. PASS here means only that the validator accepted or rejected its declared fixture correctly. [data:visual/assets/verify-x-lifecycle.js] [data:visual/assets/x-lifecycle-test-results.json]
+The minimum chain retains upstream ticket, current version, human sign-off and expiry. Version, route, speed or sensing changes require a new judgment on upstream validity. If a public objection reveals an untested use, the Public Verdict creates a RETURN task rather than merely promising to “improve experience”. Rerunnable rules and fixtures are consolidated in the professional appendix. [data:visual/assets/lived-lifecycle.json] [metric:ticket_hash_chain_target_percent]
 
 ![Fields, signatories, refusal conditions and return paths for the three tickets](assets/figures/station-handover.en.png)
 
-### Minimum pilot: fourteen days answer one question
+### Detailed operating sequence for the 90-day pilot
 
-The minimum pilot does not seek event scale. It asks whether one declared version can pass three stations for one limited public use and restore ordinary space after failure. The proposed maximum is one specified device, one machine test pocket and one continuously open accessible public bypass. Exact dimensions, distance, speed and participation await official geometry, field measurement, hazard analysis and approval; the concept cannot pre-fill them. Without a candidate operator, insurance, safety duty, accessibility review and restoration resources, the fourteen-day clock does not begin.
+The 90-day pilot does not seek event scale. It asks whether one declared version can pass three stations for one limited public use and restore ordinary space after failure. The proposed maximum is one specified device, one machine test pocket and one continuously open accessible civic main line. Exact dimensions, distance, speed and participation await official geometry, field measurement, hazard analysis and approval; the concept cannot pre-fill them. Without a candidate operator, insurance, safety duty, accessibility review and restoration resources, the 90-day clock does not begin.
 
 The pilot first assembles a four-part main-line / siding / turnout / return-pocket kit rather than procuring permanent infrastructure. The civic main line uses static wayfinding, movable seating and staffed service and remains useful after power-down or demobilisation. The AI siding uses removable edges, a device bay and independent power isolation. The accountability turnout combines a staffed sign-off table, a visible physical stop action and a paper status board. The return pocket holds equipment, a component inventory and a restoration checklist, then recovers as an ordinary court, classroom, resting place or commercial frontage. Dimensions, materials, fire, structural, access and MEP conditions remain pending field and professional review. [metric:reversible_pilot_kit_type_count]
 
@@ -277,15 +293,17 @@ Each opening shift assigns four responsibilities: site lead; safety observation 
 | --- | --- | --- | --- |
 | D-30 | Name candidate operator, venue, insurance, safety and accessibility roles | Responsibility register with signable fields | Any duty has no owner |
 | D-7 | Complete field walk, notice-comprehension test and ordinary-state restoration drill | Breakpoint map, notice result and restoration list | Accessible main chain breaks or restoration fails |
-| D0 | Repeat four synthetic fixtures and freeze X Receipt version | Reproducible tabletop record | Fixture, version or script mismatch |
-| D1-D3 | Closed testing with no public user inside the machine pocket | Duty, stop, boundary and incident records | Boundary breach, lost link or takeover failure |
-| D4 | Independent retest and Test Receipt decision | Dual sign-off and unresolved-defect list | Irreproducibility or concealed defect |
-| D5-D7 | Review rights, version, limits and withdrawal route | Candidate Release Ticket | Unclear rights, version mismatch or absent withdrawal owner |
-| D8-D12 | Limited staffed public use with non-AI service open | Opening check, complaint tickets and service log | Absent staff, broken alternative or serious objection |
-| D13 | Publish de-identified issues, cohort gaps and restoration evidence | Public issue register | Missing incident, complaint or disparity |
-| D14 | Decide continue, revise or RETURN | Public Verdict | Event closure cannot substitute for a decision |
+| D0 | Lock candidate place, roles, version, ordinary-use baseline and exit resources | Start register | Fixture, version, staff or resource mismatch |
+| D1-D14 | Operate walking, accessibility, staffed service, learning, commerce and rest without AI | Breakpoints, rosters, complaints and maintenance baseline | Model estimates substitute for field records |
+| D15-D30 | Install removable edges, public table, staffed window, tactile wayfinding and equipment-exit interface | Kit, material and maintenance register | Kit occupies the civic main line or cannot be removed |
+| D31-D45 | Rehearse E-stop, release withdrawal, complaint response, equipment exit and ordinary-use restoration | Five drill records | No accountable person or any failed restoration |
+| D46-D60 | Closed testing inside the machine pocket, independent retest and rights review | Candidate Test Receipt and Release Ticket | Boundary breach, lost link, takeover failure or unclear rights |
+| D61-D75 | Limited staffed public use with non-AI and non-digital service open | Opening check, anonymous complaint and service log | Absent staff, broken alternative or serious objection |
+| D76-D83 | Switch AI off, remove equipment, inventory components and retest ordinary use | Spatial restoration and civic-continuity record | Equipment, edge, blank screen or maintenance debt remains |
+| D84-D89 | Independent observer, accessibility and user review of benefit, burden and open issues | De-identified issue register | Missing complaint, disparity or failure |
+| D90 | Decide retain, modify, remove or RETURN | Public Verdict and retained city-asset list | Event closure cannot substitute for a decision |
 
-Day fourteen never grants automatic renewal. PASS only lets the same version, envelope and purpose enter another time-limited review. HOLD keeps the accountability turnout aligned with the civic main line. RETURN closes the siding, sends the device back and creates a new task. RESTORE ends only after component inventory, ordinary-use recovery and accessible-main-line review. A field pilot must prove more than the tabletop's `4/4`: duty presence, public comprehension, real stop performance, whether complaints alter decisions, and whether the place remains useful after demobilisation. [metric:minimum_pilot_duration_days]
+Day 90 never grants automatic renewal. Acceptance only lets the same version, envelope and purpose enter another time-limited review. HOLD keeps the accountability turnout aligned with the civic main line. RETURN closes the siding, sends the device back and creates a new task. RESTORE ends only after component inventory, ordinary-use recovery and accessible-main-line review. A field pilot must prove duty presence, public comprehension, real stop performance, whether complaints alter decisions, and whether the place remains useful after demobilisation. [metric:minimum_pilot_duration_days]
 
 ### Three failures: technical, rights and public use
 
@@ -305,7 +323,7 @@ Without X, the three key areas could collapse into a laboratory, launch hall and
 
 AI Origin is a **release siding**: methods table, rights table and withdrawal interface join the ground-floor civic main line in sequence. Learning and collaboration belong to the main line, so a rights failure withdraws the product without closing either. Dazhongsi is an **urban-use siding**: its limited trial pocket runs parallel to staffed/non-AI service; people reach commerce, rest and transport without crossing it, and staff clear devices and queues without closing the main line. The three sidings absorb technical, rights and public-use failures respectively. Removable edges, replaceable status, parallel service and permanent movement are therefore the spatial conditions for RETURN, not visual motifs.
 
-The three station plans are encoded as nodes, links, AI dependency, accessibility, independent closure and ordinary RETURN uses, without invented dimensions. The verifier closes every AI node and checks civic continuity, pocket isolation, non-AI service, accessibility independence and distinct graphs, then checks Zhongzhi no-bypass access, co-visible withdrawal at AI Origin and non-AI route parity at Dazhongsi. The historical first run rejected AI Origin at `22/23` for missing recovery use; after repair and station-specific checks the current result is `29/29 PASS`. This remains professional appendix evidence, not a field claim or first-layer value proposition. [data:visual/assets/station-topology.json] [data:visual/assets/station-topology-results.json]
+The three station plans encode nodes, links, AI dependency, accessibility, independent closure and ordinary RETURN uses without invented dimensions. Spatial checks close every AI node and test civic continuity, pocket isolation, non-AI service, accessibility independence and distinct station graphs. Results and repair history sit in the professional appendix rather than acting as field evidence or a first-layer value proposition. [data:visual/assets/station-topology.json] [data:visual/assets/station-topology-results.json]
 
 ![Concept topology of the three X stations under AI closure and RETURN](assets/figures/station-topology-proof.en.png)
 
@@ -323,7 +341,7 @@ The twelve scenes no longer receive equal emphasis. One low-speed embodied-AI pr
 | **AI Origin RELEASE**: is this exact version eligible for publication? | Exact package hash, SBOM, model/data card, licence inventory, reproduction runner and withdrawal register; predecessor hash, version and rights metadata only, not undisclosed private code | Method, rights and withdrawal tables share one ground-floor field of view; HOLD at any table closes release while learning and collaboration continue | Day 90 requires roles, hash/dependency schema, licence gaps, reproduction and withdrawal drills; day 180 then tests dual reproduction, upstream hashes, dispute handling and two withdrawal records | Withdraw product status and release interface while methods learning, collaboration and ordinary exhibition remain |
 | **Dazhongsi USE**: can the public continue on equal terms? | Public status, bounded route, staffed takeover, anonymous complaint, non-AI service state and RETURN task generator; no default identity, face or commercial-behaviour profile | Trial pocket runs parallel to the civic chain; non-AI service and complaint are directly reachable; retail, rest and staffed service survive equipment removal | Day 90 requires route/service audit, notice comprehension, non-AI parity and complaint/restoration drills; day 180 then tests two cohort reviews, accessible parity, staffed service, dissent closure and return trace | Close the trial pocket while the civic chain remains open; create a new Zhongzhi fixture and restore the ordinary square |
 
-Both gates are **proposed acceptance thresholds, not achieved performance**. Candidate organisations, field dimensions, budgets, insurance, permissions and public acceptance remain unconfirmed. A rerunnable script checks each contract against the existing topology, scenes and JZ-06-JZ-08 projects; the current repository result is `37/37 PASS`. This proves contract consistency only, not field, safety, accessibility, certification or approval. [data:visual/assets/three-station-flagship-contract-results.json]
+Both gates are **proposed acceptance thresholds, not achieved performance**. Candidate organisations, field dimensions, budgets, insurance, permissions and public acceptance remain unconfirmed. Rerunnable contract-structure checks sit in the professional appendix and do not substitute for field, safety, accessibility, certification or approval judgment. [data:visual/assets/three-station-flagship-contract-results.json]
 
 ![Three flagship contracts align technical systems, spatial topology, delivery evidence and failed restoration](assets/figures/three-station-flagship-contracts.en.png)
 
@@ -421,6 +439,12 @@ Compliance begins with source registration and ends with restorative exit. Opera
 Public-data boundaries, personal privacy, asset copyright, and data authorisation are checked separately before opening. Unknown provenance, expired permission, or missing review responsibility stops the related scene; technical availability never substitutes for compliance.
 
 ## References
+
+### Professional appendix: rerunnable machine evidence
+
+Lifecycle and station topology remain as supporting evidence. Their fixed fixtures record accepted and rejected paths and civic continuity after AI-node closure. [data:visual/assets/x-lifecycle-test-results.json] [data:visual/assets/station-topology-results.json]
+
+Three-station contracts and the SC-03 synthetic tabletop record non-interchangeable station conditions and synthetic response. PASS proves only that repository rules and concept relations rerun; it does not prove a real product, field performance, public acceptance, certification, approval or implementation authority. [data:visual/assets/three-station-flagship-contract-results.json] [data:visual/assets/sc03-tabletop-evidence.json]
 
 ### Appendix: X Census as a narrative-saturation check
 
