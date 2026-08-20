@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v1.2 - 2026-08-20
+
+### Visual interactivity
+- visual/index.html: added smooth scroll navigation, scroll-triggered fade-in animations (IntersectionObserver), image lightbox viewer, back-to-top button, and nav active highlighting
+- visual/index.en.html: synced all interactivity features with Chinese version
+
+### Proposal depth
+- proposal.md: expanded Land Use section with retain-renovate-demolish ratio estimates and 5 building strategy details
+- proposal.md: expanded Transport section with road classification system and public service facility allocation per key area
+- proposal.en.md: synced all expanded content with English translation
+
 ## v1.1 - 2026-08-20
 
 ### Fixes

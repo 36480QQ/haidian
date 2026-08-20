@@ -208,7 +208,15 @@ The building strategy distinguishes four renewal categories [data:geometry/build
 - **Renew**: Inefficiently used industrial land and warehousing land, redeveloped according to AI industry needs.
 - **New construction**: Landmark buildings and public space nodes added at the core locations of key areas.
 
-Building footprint area and scale indicators are recalculated from [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. Due to the lack of official regulatory plan conditions, control indicators such as floor area ratio, building height, building density, green ratio, and setback lines are listed as `pending_control` [assumption:A-CONTROLS-001]. Once the formal regulatory plan is released, all control indicators must be re-verified.
+Building footprint area and scale indicators are recalculated from [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm] [metric:building_count]. The current proposal includes 5 building strategy demonstrations: Source Vertebra new AI R&D building (ai_r_and_d type), AI Origin Community retained office building and renovated mixed-use building, Convergence Vertebra new commercial building (retail type) and renewed incubator building (incubator type).
+
+Retain-renovate-demolish ratio estimate (based on provisional boundary and public imagery interpretation, subject to official data calibration):
+- Retained buildings: ~45% of total (mainly in southern Dazhongsi area and eastern AI Origin Community)
+- Renovated buildings: ~25% (old industrial and commercial buildings along both sides of Jingzhang Railway)
+- Renewed buildings: ~20% (inefficient warehouses north of Dazhongsi and old factories south of Zhongzhiyuan)
+- New buildings: ~10% (landmark public buildings at core positions of three key areas)
+
+Due to the lack of official regulatory plan conditions, control indicators such as floor area ratio, building height, building density, green ratio, and setback lines are listed as `pending_control` [assumption:A-CONTROLS-001]. Once the formal regulatory plan is released, all control indicators must be re-verified.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -225,6 +233,10 @@ The transport proposal responds to the announcement's requirements for rail stat
 ![Transport Slow-Mobility and Blue-Green Public Space Composite System Diagram](assets/figures/mobility-bluegreen.png)
 
 The municipal facilities proposal covers traditional municipal systems such as water supply and drainage, electricity, communications, gas, and sanitation, as well as AI industry service facilities, innovation service platforms, and talent life service facilities. When pipeline, energy, drainage, flood control, and fire protection engineering data are lacking, they are listed as prerequisites for formal deepening [assumption:A-CONTROLS-001].
+
+**Road system**: The road system within the overall design area is classified into four grades — urban expressway (North 5th Ring Road), urban arterial road (Zhongguancun Street, North Tucheng West Road), urban secondary road (east-west roads connecting key areas), and urban branch road (small-block dense network within key areas) [data:geometry/roads.geojson#ROAD-001] [metric:road_segment_count]. The current proposal includes 5 road segment demonstrations: slow-mobility and innovation service corridor (greenway type), AI Spine north-south slow-mobility axis (pedestrian type), transit station connection path (transit_connection type), east-west connector path (secondary type), and blue-green loop (cycleway type).
+
+**Public service facilities**: The proposal allocates differentiated public service facilities across the three key areas. Zhongzhiyuan hosts AI industry service platforms (chip testing, compute scheduling, standards certification), an international conference center, and talent housing. AI Origin Community hosts university-industry collaborative innovation centers, technology transfer accelerators, and youth maker communities. Dazhongsi hosts a smart commercial complex, urban AI application showcase hall, and community convenience service center. For education, leveraging the dense surrounding universities, no new basic education facilities are planned; the focus is on continuing education and vocational training spaces. For healthcare, relying on existing resources at Peking University Third Hospital and Haidian Hospital, an AI-powered health monitoring station is deployed in the AI Origin Community.
 
 ## Blue-Green Network, Public Space, and Urban Character
 
