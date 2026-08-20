@@ -1,17 +1,31 @@
 {
   "schema_version": "0.1.0",
+  "site_evidence_frozen_main_sha": "ce2c6bcee348accc3c354f585c9ad45e39ff2db7",
+  "site_evidence_verified_at": "2026-08-20",
+  "site_evidence_register": "visual/assets/site-evidence-register.json",
   "sources": [
     {
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",
-      "usage": "Project brief, allowed design space, registered standards, ranges, schemas and provisional data-gap notices."
+      "publisher": "open-city-ai/haidian repository maintainers",
+      "accessed_at": "2026-08-20",
+      "frozen_main_sha": "ce2c6bcee348accc3c354f585c9ad45e39ff2db7",
+      "review_status": "mixed_authority_follow_per_source_registry",
+      "usage": "Project brief, allowed design space, registered standards, ranges, schemas and provisional data-gap notices.",
+      "license_or_reuse_terms": "Repository participation material; every embedded source keeps its own authority, permission and reuse boundary.",
+      "limitations": "The site package does not contain official parcel, regulatory-control, heritage, road-redline, rail, water/blue-line or ownership geometry."
     },
     {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",
-      "usage": "Controls whether repository sources are formal-ready, background-only, provisional-only or pending review."
+      "publisher": "open-city-ai/haidian repository maintainers",
+      "accessed_at": "2026-08-20",
+      "frozen_main_sha": "ce2c6bcee348accc3c354f585c9ad45e39ff2db7",
+      "sha256": "98ec3d82aac273075bc07af27ac295ed63e05068e29018f488a6bc81db71d466",
+      "usage": "Controls whether repository sources are formal-ready, background-only, provisional-only or pending review.",
+      "limitations": "Registry approval applies only to the stated allowed uses; it does not upgrade provisional geometry or background material."
     },
     {
       "id": "PROCESSED-FACT-PACK",
@@ -23,19 +37,95 @@
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Provisional Overall Design Area constraint only; never an official redline or precise statutory basis."
+      "registry_source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "title": "Centennial Jing-Zhang three-level and key-area provisional polygons",
+      "publisher": "Repository maintainers",
+      "published_at": "2026-06-05",
+      "registry_accessed_at": "2026-08-07",
+      "submission_verified_at": "2026-08-20",
+      "frozen_main_sha": "ce2c6bcee348accc3c354f585c9ad45e39ff2db7",
+      "sha256": "2104ec70263e83d1e92a1aa165389da7a8e2ba9d5861a54552ef4074b30b7a73",
+      "coordinate_reference_system": "EPSG:4326",
+      "area_check_crs": "EPSG:4548",
+      "spatial_coverage": "Overall Design Area provisional polygon PROV-SITE-001",
+      "review_status": "provisional_only",
+      "license_or_reuse_terms": "Repository-maintained provisional geometry for intake testing and visualization only.",
+      "allowed_uses": [
+        "temporary AI generation boundary",
+        "offline visualization",
+        "intake self-check",
+        "design discussion with clear provisional labeling"
+      ],
+      "prohibited_uses": [
+        "official redline",
+        "statutory planning control",
+        "precise official area",
+        "formal professional scoring",
+        "approval or implementation basis"
+      ],
+      "usage": "Provisional Overall Design Area constraint only; never an official redline or precise statutory basis.",
+      "limitations": "Geometry is inferred from announcement text, location clues and approximate area; official polygons remain unavailable."
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Three provisional Key-Area constraints only; exact siting and all derived metrics require replacement and recalculation."
+      "registry_source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "title": "Centennial Jing-Zhang three-level and key-area provisional polygons",
+      "publisher": "Repository maintainers",
+      "published_at": "2026-06-05",
+      "registry_accessed_at": "2026-08-07",
+      "submission_verified_at": "2026-08-20",
+      "frozen_main_sha": "ce2c6bcee348accc3c354f585c9ad45e39ff2db7",
+      "sha256": "2104ec70263e83d1e92a1aa165389da7a8e2ba9d5861a54552ef4074b30b7a73",
+      "coordinate_reference_system": "EPSG:4326",
+      "area_check_crs": "EPSG:4548",
+      "spatial_coverage": "Three provisional key areas PROV-KEY-001, PROV-KEY-002 and PROV-KEY-003",
+      "review_status": "provisional_only",
+      "license_or_reuse_terms": "Repository-maintained provisional geometry for intake testing and visualization only.",
+      "allowed_uses": [
+        "temporary AI generation boundary",
+        "offline visualization",
+        "intake self-check",
+        "design discussion with clear provisional labeling"
+      ],
+      "prohibited_uses": [
+        "official key-area polygon",
+        "statutory planning control",
+        "precise official area",
+        "formal professional scoring",
+        "approval or implementation basis"
+      ],
+      "usage": "Three provisional Key-Area constraints only; exact siting and all derived metrics require replacement and recalculation.",
+      "limitations": "The announcement provides names, north-south order and approximate areas but no key-area boundary coordinates."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
-      "usage": "Official task, three work scales, key-area names and deliverable context; it does not provide the missing official polygons in this package."
+      "registry_source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "title": "Centennial Jing-Zhang AI Innovation Belt Urban Design International Call prequalification announcement",
+      "publisher": "Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch",
+      "published_at": "2026-05-09",
+      "registry_accessed_at": "2026-06-03",
+      "submission_verified_at": "2026-08-20",
+      "local_snapshot_path": "brief/site-package/standards/references/project-official-announcement.md",
+      "local_snapshot_sha256": "0f8398bfa3b44983a729e7ea3846d4f13feadf17d04fc807cdbbce69897fa87d",
+      "review_status": "approved_for_stated_formal_uses",
+      "license_or_reuse_terms": "Official public announcement snapshot retained for reference and citation.",
+      "allowed_uses": [
+        "official project name and organizers",
+        "scope descriptions and approximate area values",
+        "design tasks and submission depth"
+      ],
+      "prohibited_uses": [
+        "precise official polygon boundary",
+        "road redline",
+        "statutory planning control",
+        "implementation commitment beyond the announcement text"
+      ],
+      "usage": "Official task, three work scales, key-area names and deliverable context; it does not provide the missing official polygons in this package.",
+      "limitations": "Textual extents and approximate areas cannot substitute for official GIS/CAD geometry."
     },
     {
       "id": "AGENT-TASKBOOK",
