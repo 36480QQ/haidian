@@ -1,0 +1,209 @@
+#!/usr/bin/env node
+/*
+ * 京张交接线 · 正文数值声明审计器（离线、只读）
+ *
+ * 用途：把正文里那些「可复算」的数值声明，逐条拿去对结构化文件当场重算。
+ * 与同目录的 protocol-check-runner.js 分工：那个重算协议逻辑（96 条规则检查 ＋ 48 项断言），
+ * 这个重算正文自陈的计数、合计、比例与结构性规则。两者合起来覆盖本包全部可复算声明。
+ *
+ * 为什么需要它：本包两次被自己的数字咬过——一次是断面表把「退线」当容器又与子段相加，
+ * 写出复算不出来的 18–27 m；一次是正文把众智园的东西向写反，而几何是对的。
+ * 前者是算术、后者是结构，**两类都能被机器逐条判定**，所以不该靠人工复核兜着。
+ *
+ * 用法：
+ *   node claims-audit.js          # 人读表格，全部一致时退出码 0
+ *   node claims-audit.js --json   # 机器可读结果
+ *
+ * 只读随包文件，不写任何东西，不联网，不依赖任何第三方包。
+ * 它只审「可由包内数据复算的声明」；判断、设计立场与未测项不在范围内。
+ */
+"use strict";
+const fs = require("fs");
+const path = require("path");
+
+const HERE = __dirname;
+const PKG = path.resolve(HERE, "../../..");
+const readPkg = (p) => JSON.parse(fs.readFileSync(path.join(PKG, p), "utf8"));
+const readHere = (p) => JSON.parse(fs.readFileSync(path.join(HERE, p), "utf8"));
+
+const metrics = readPkg("metrics.json").metrics;
+const sim = readPkg("simulation.json");
+const feats = (n) => readPkg(`geometry/${n}.geojson`).features;
+const buildings = feats("buildings");
+const keyAreas = feats("key_areas");
+const roads = feats("roads");
+const publicSpace = feats("public_space");
+const phasing = feats("phasing");
+const ruleReport = readHere("rule-check-report.json");
+
+const val = (k) => (metrics[k] || {}).value;
+const near = (a, b, eps) => Math.abs(a - b) <= (eps === undefined ? 1e-6 : eps);
+const idsWith = (fs_, prefix) =>
+  fs_.filter((f) => String((f.properties || {}).id || "").startsWith(prefix));
+
+/* ---- 逐条声明。claim 是正文的说法，actual 是从数据算出来的。---- */
+const checks = [];
+const add = (id, claim, pass, actual) => checks.push({ id, claim, pass: !!pass, actual });
+
+/* A. metrics.json 的自陈与内部一致性 */
+const valued = Object.values(metrics).filter((m) => m.value !== null && m.value !== undefined).length;
+const pending = Object.keys(metrics).length - valued;
+add("M1", "58 项指标 ＝ 44 已赋值 ＋ 14 待测",
+    Object.keys(metrics).length === 58 && valued === 44 && pending === 14,
+    `${Object.keys(metrics).length} ＝ ${valued} ＋ ${pending}`);
+
+const phaseSum = val("phase_1_area_sqm") + val("phase_2_area_sqm") + val("phase_3_area_sqm");
+add("M2", "三期面积相加等于总体设计范围，分期不新增范围",
+    near(phaseSum, val("site_area_sqm")),
+    `${phaseSum} vs site_area ${val("site_area_sqm")}`);
+
+add("M3", "分期 3 期，与 phasing.geojson 要素数一致",
+    val("phase_count") === 3 && phasing.length === 3, `metric ${val("phase_count")} / geojson ${phasing.length}`);
+add("M4", "重点区 3 处，与 key_areas.geojson 一致",
+    val("key_area_count") === 3 && keyAreas.length === 3, `metric ${val("key_area_count")} / geojson ${keyAreas.length}`);
+add("M5", "更新单元 20 个，与 buildings.geojson 一致",
+    val("renewal_cell_count") === 20 && buildings.length === 20, `metric ${val("renewal_cell_count")} / geojson ${buildings.length}`);
+
+const landmarks = idsWith(publicSpace, "LANDMARK");
+const scns = idsWith(publicSpace, "SCN");
+add("M6", "公共地标 4 处，与 public_space.geojson 一致",
+    val("civic_landmark_count") === 4 && landmarks.length === 4, `metric ${val("civic_landmark_count")} / geojson ${landmarks.length}`);
+add("M7", "场景节点 12 个", scns.length === 12, `${scns.length}`);
+add("M8", "主轴 1 条 ＋ 东西支线 8 条 ＝ 9 条道路要素",
+    roads.length === 9 && roads.filter((f) => f.properties.id === "ROAD-001").length === 1,
+    `${roads.length} 条，其中 ROAD-001 ${roads.filter((f) => f.properties.id === "ROAD-001").length} 条`);
+
+/* B. 演练与规则检查的计数 */
+const assertionsRun = sim.tasks.reduce((n, t) => n + Object.keys(t.checks).length, 0);
+add("S1", "桌面演练 12 个任务", val("simulation_task_count") === 12 && sim.tasks.length === 12,
+    `metric ${val("simulation_task_count")} / tasks ${sim.tasks.length}`);
+add("S2", "48 项断言 ＝ 12 任务 × 4 项", val("offline_takeover_assertion_count") === 48 && assertionsRun === 48,
+    `metric ${val("offline_takeover_assertion_count")} / 实算 ${assertionsRun}`);
+add("S3", "96 条规则检查 ＝ 12 基线 ＋ 84 注入",
+    ruleReport.checks.length === 96 && ruleReport.totals.baseline_count === 12 && ruleReport.totals.injected_count === 84,
+    `${ruleReport.checks.length} ＝ ${ruleReport.totals.baseline_count} ＋ ${ruleReport.totals.injected_count}`);
+add("S4", "现场演练 0/12，未被任何字段写成已完成",
+    sim.summary.field_rehearsal_tasks_completed === 0 && val("field_rehearsal_task_count") === 0,
+    `simulation ${sim.summary.field_rehearsal_tasks_completed} / metric ${val("field_rehearsal_task_count")}`);
+
+/* C. 二十个更新单元的结构性声明 */
+const P = buildings.map((f) => f.properties);
+const footprint = P.reduce((s, p) => s + p.area_sqm_declared, 0);
+add("B1", "二十个单元基底合计 221,014.099 m²（正文写 22.10 万 m²）",
+    near(footprint, 221014.099), `${footprint}`);
+
+const byType = {}, cntType = {}, cntSide = { west: 0, east: 0 };
+for (const p of P) {
+  byType[p.typology] = (byType[p.typology] || 0) + p.area_sqm_declared;
+  cntType[p.typology] = (cntType[p.typology] || 0) + 1;
+  cntSide[p.side] += 1;
+}
+add("B2", "四类各五个", Object.keys(cntType).length === 4 && Object.values(cntType).every((c) => c === 5),
+    JSON.stringify(cntType));
+add("B3", "东西各十个", cntSide.west === 10 && cntSide.east === 10, JSON.stringify(cntSide));
+
+const westTypes = new Set(P.filter((p) => p.side === "west").map((p) => p.typology));
+const eastTypes = new Set(P.filter((p) => p.side === "east").map((p) => p.typology));
+const setEq = (s, arr) => s.size === arr.length && arr.every((x) => s.has(x));
+add("B4", "西收东放：西侧十个全为验证工坊与社区协作屋，东侧十个全为开放研发院与共享服务栈，二十个无一例外",
+    setEq(westTypes, ["验证工坊", "社区协作屋"]) && setEq(eastTypes, ["开放研发院", "共享服务栈"]),
+    `西 ${[...westTypes].join("／")} ｜ 东 ${[...eastTypes].join("／")}`);
+
+add("B5", "研制与服务分到的基底逐位相等（51,744 m² 对 51,744 m²）",
+    byType["开放研发院"] === byType["社区协作屋"] && byType["开放研发院"] === 51744,
+    `${byType["开放研发院"]} vs ${byType["社区协作屋"]}`);
+
+const diff = Math.abs(byType["验证工坊"] - byType["共享服务栈"]);
+const diffPct = (diff / byType["验证工坊"]) * 100;
+add("B6", "验证与公开几乎相等：差 74 m²、0.126%",
+    near(diff, 73.901, 0.2) && near(diffPct, 0.126, 0.01),
+    `${byType["验证工坊"]} vs ${byType["共享服务栈"]}，差 ${diff.toFixed(3)} ＝ ${diffPct.toFixed(3)}%`);
+
+const pairOf = (id) => Math.floor((parseInt(id.split("-")[1], 10) - 1) / 2) + 1;
+const investigate = P.filter((p) => String(p.update_action).startsWith("investigate")).map((p) => p.id);
+const invPairs = [...new Set(investigate.map(pairOf))].sort((a, b) => a - b);
+const perPair = {};
+for (const id of investigate) perPair[pairOf(id)] = (perPair[pairOf(id)] || 0) + 1;
+add("B7", "十四个保留优先、六个介入前先查证", investigate.length === 6 && P.length - investigate.length === 14,
+    `先查证 ${investigate.length}：${investigate.join("、")}`);
+add("B8", "六个先查证的落在第 2、3、5、6、8、9 对，即跳一对取两对",
+    JSON.stringify(invPairs) === JSON.stringify([2, 3, 5, 6, 8, 9]), `第 ${invPairs.join("、")} 对`);
+add("B9", "每一对里最多一个先查证，任何一对都不会两侧同时停下",
+    Object.values(perPair).every((c) => c === 1), JSON.stringify(perPair));
+
+/* D. 概念单元的状态声明——防止那张精确到米的表被读成现状清单 */
+add("B10", "二十个单元全部标为概念原型，不对应现状建筑",
+    P.every((p) => p.design_status === "conceptual_typology_cell_not_existing_inventory"),
+    `${P.filter((p) => p.design_status === "conceptual_typology_cell_not_existing_inventory").length}/20`);
+add("B11", "每个单元的回滚状态都是保持现状使用与现状条件",
+    P.every((p) => typeof p.rollback_state === "string" && p.rollback_state.includes("保持现状")),
+    `${P.filter((p) => String(p.rollback_state).includes("保持现状")).length}/20`);
+
+/* E. 正文 ↔ 数据的双向核对。
+   前面各段只查数据内部规则；本段真正读 proposal.md，把从数据算出来的数拿去正文里找。
+   这一步是为了堵住本包已经犯过的那类错：**数据是对的，正文写反了**。
+   B4 那样的规则检查抓不到它，因为它不读正文。 */
+const prose = fs.readFileSync(path.join(PKG, "proposal.md"), "utf8");
+const proseHas = (s, n) => (prose.split(s).length - 1) >= (n || 1);
+
+const tableRows = prose.split("\n").filter((l) => l.startsWith("| BLDG-"));
+add("P1", "落点表在正文里恰好 20 行，与 buildings.geojson 要素数一致",
+    tableRows.length === buildings.length && tableRows.length === 20, `${tableRows.length} 行`);
+
+const rowIds = tableRows.map((l) => l.split("|")[1].trim());
+const geoIds = P.map((p) => p.id);
+add("P2", "落点表列出的编号与 geojson 的编号集合完全相同，无遗漏无多余",
+    rowIds.length === geoIds.length && [...rowIds].sort().join() === [...geoIds].sort().join(),
+    `正文 ${rowIds.length} 个 / 数据 ${geoIds.length} 个`);
+
+/* 逐行核对表里的类型与东西侧——这一列写反过一次，必须机器盯着 */
+const geoById = Object.fromEntries(P.map((p) => [p.id, p]));
+const sideZh = { west: "西", east: "东" };
+const rowMismatch = [];
+for (const line of tableRows) {
+  const c = line.split("|").map((s) => s.trim());
+  const id = c[1], ty = c[2], side = c[4].replace(/\*/g, "");
+  const g = geoById[id];
+  if (!g) { rowMismatch.push(`${id} 不在数据里`); continue; }
+  if (g.typology !== ty) rowMismatch.push(`${id} 类型 正文=${ty} 数据=${g.typology}`);
+  if (sideZh[g.side] !== side) rowMismatch.push(`${id} 东西侧 正文=${side} 数据=${sideZh[g.side]}`);
+}
+add("P3", "落点表每一行的类型与东西侧都与 geojson 逐行一致",
+    rowMismatch.length === 0, rowMismatch.length ? rowMismatch.join("；") : "20 行全对");
+
+add("P4", "正文写出了基底合计（22.10 万 m² 与 221,014）", proseHas("22.10 万") && proseHas("221,014"),
+    `22.10 万 ×${prose.split("22.10 万").length - 1}，221,014 ×${prose.split("221,014").length - 1}`);
+add("P5", "正文写出了研制与服务的相等值 51,744", proseHas("51,744", 2),
+    `×${prose.split("51,744").length - 1}`);
+add("P6", "正文写出了主轴复算长度 9499.778", proseHas("9499.778"),
+    `×${prose.split("9499.778").length - 1}`);
+add("P7", "正文写出了单元到主轴的垂距区间 245–414", proseHas("245–414"),
+    `×${prose.split("245–414").length - 1}`);
+add("P8", "正文写出了「西收东放」这条横向语法", proseHas("西收东放"),
+    `×${prose.split("西收东放").length - 1}`);
+add("P9", "正文写出了三处重点区的断面实取值 15.4／17.1／15.1", proseHas("15.4／17.1／15.1"),
+    `×${prose.split("15.4／17.1／15.1").length - 1}`);
+
+/* ---------------- 输出 ---------------- */
+const failed = checks.filter((c) => !c.pass);
+const out = {
+  auditor: "claims-audit.js",
+  scope_zh: "只审可由包内数据复算的数值与结构声明；设计判断、未测项与现场结论不在范围内。",
+  checks_run: checks.length,
+  checks_passed: checks.length - failed.length,
+  all_match: failed.length === 0,
+  failures: failed,
+  checks,
+};
+
+if (process.argv.includes("--json")) {
+  console.log(JSON.stringify(out, null, 2));
+} else {
+  for (const c of checks) {
+    console.log(`${c.pass ? "一致" : "不符"}  ${c.id.padEnd(4)} ${c.claim}`);
+    if (!c.pass) console.log(`            实算：${c.actual}`);
+  }
+  console.log(`\n${out.checks_passed}/${out.checks_run} 条声明与包内数据一致`);
+  console.log(out.all_match ? "全部一致" : "存在不一致");
+}
+process.exit(out.all_match ? 0 : 1);

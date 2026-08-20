@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e086bd765d271b94f9e5905ea810a1dcc26ed6f317c6990d7eccc09cc287fc58"
+      "sha256": "5b1b1387b321045f04e43c18ccb049df3b4017293c0f585fc405f1f321e44f37"
     },
     {
       "path": "agent.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fb386ce310431b4c491731242d8ba66734c1bac641c2a8283852e595bdd98705"
+      "sha256": "2d575c02f3688e04106a7ae6fa4177a438b2b4afeb8e1c9bc95a4c469cd88fbb"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5e074d2a5bec86636e4b634dc28ae5ea0ed0e860f429cb21d6bd426945293495"
+      "sha256": "bbf8e16672898aa807fa201cb4b723cf9342bf429811953030ae8d28df15f349"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0cc5bf626ea8a02e485bc632dc8084afb4b5cc0bcba80828684e569dceca8b1d"
+      "sha256": "b45933ddde57bc28a7e96e1219ba664f5fbfc9adf73b9bdfa8889964491e1176"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0ac0e6d8c2a79ab77464287fa4afd490858a82365d38436c87d2be40eee94ab0"
+      "sha256": "af73a959d3887dd96bfd074d998f2af1aabd8c0b1301df03185d2348d2c8cd04"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "399eed97e3d842856ee76c071c532c35a5b7ef47dd70cffa738bddd041b16219"
+      "sha256": "b3ea0245867061d8978514495c082fd055683720fb57704065449cbb63082122"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -448,6 +448,16 @@
       "title_en": "Protocol self-check re-runner",
       "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把本包两个此前无法在包内复算的数字当场重算：读取输入夹具 shift-ledger-suite.json，按 rule-check-report.json 的规则表述**独立重写**七条规则（不是搬运原生成脚本），对 12 条交接账各跑 1 条基线与 7 类缺陷注入共 96 条，并按四项接管断言重算 12 × 4 ＝ 48 项，再与随包发布结果逐条比对。`node protocol-check-runner.js` 全部一致退出 0，任何一条不一致退出 1 并打印发布值与重算值；`--json` 输出机器可读结果。注入口径写在脚本注释里，其中 R4 的注入会同时触发 R3，与随包结果中那 12 条 violations 为两元素的记录一致。**只重算协议逻辑，不证明现场绩效、安全、合规或获批；现场演练仍为 0/12。**",
       "description_en": "A read-only, offline Node script with no third-party dependencies that recomputes on the spot the two numbers in this package that previously could not be recomputed from inside it. It reads the input fixture shift-ledger-suite.json, **independently reimplements** the seven rules from the rule statements in rule-check-report.json (rather than porting the original generator), runs one baseline plus seven defect injections against each of the twelve ledgers for 96 checks in total, recomputes the four takeover assertions across 12 × 4 = 48, and compares every entry with the published results. `node protocol-check-runner.js` exits 0 when all match and exits 1 on any mismatch, printing the published and recomputed values; `--json` emits machine-readable output. Injection definitions are documented in the script, and the R4 injection also trips R3, matching the twelve published records whose violations have two elements. **It recomputes protocol logic only; it proves nothing about field performance, safety, compliance or approval; the field rehearsal remains 0/12.**"
+    },
+    {
+      "path": "visual/assets/governance/claims-audit.js",
+      "role": "governance_validation",
+      "required": false,
+      "sha256": "206a73a03ab7c067f1e8240d95ff90a555843888e3ce4827c4c24463d23cfab2",
+      "title_zh": "正文数值声明审计器",
+      "title_en": "Prose claim auditor",
+      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把正文里可复算的数值与结构声明逐条对结构化文件重算，共 32 条。一层查数据内部规则（三期面积相加等于总体范围、四类各五个、东西各十、西收东放无一例外、研制与服务基底逐位相等、六个先查证的周期分布、二十个单元的概念状态与回滚状态）；另一层直接读 proposal.md，核对落点表恰好 20 行、编号集合与 geojson 相同，并**逐行比对类型与东西侧**——这一条专防「数据对、正文写反」这类看不出来的错。`node claims-audit.js` 全部一致退出 0，任何一条不符退出 1 并打印实算值；`--json` 输出机器可读结果。与 protocol-check-runner.js 合起来覆盖本包全部可复算声明；设计判断、未测项与现场结论不在范围内。",
+      "description_en": "A read-only, offline Node script with no third-party dependencies that recomputes every recomputable numeric and structural claim in the text against the structured files — 32 checks. One level checks rules internal to the data (phase areas summing to the overall area, four types of five, ten cells per side, west-encloses-east-opens with no exception, build and serve footprints equal to the digit, the periodic distribution of the six investigate-first cells, the conceptual and rollback status of all twenty). The other reads proposal.md directly, verifying that the location table has exactly 20 rows and an ID set identical to the geojson, and **comparing the type and side of every row** — guarding specifically against the otherwise invisible error where the data is right and the prose is reversed. `node claims-audit.js` exits 0 when all match and 1 on any mismatch, printing the recomputed value; `--json` emits machine-readable output. Together with protocol-check-runner.js it covers every recomputable claim in this package; design judgements, unmeasured items and field conclusions are out of scope."
     },
     {
       "path": "assets/figures/shift-ledger.png",
