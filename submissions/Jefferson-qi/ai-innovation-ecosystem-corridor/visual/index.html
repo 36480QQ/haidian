@@ -647,5 +647,94 @@
 <span data-metric="green_ratio" data-value="0.135242">13.52%</span>
 <span data-metric="public_space_ratio" data-value="0.030451">3.05%</span>
 </div>
+
+<!-- v8.1: 交互式图层 -->
+<section class="interactive-layer-section" style="max-width:1400px;margin:40px auto;padding:0 20px">
+<h2 style="font-size:24px;margin-bottom:16px;color:#1a1a2e">交互式图层：京张 AI 创新带空间结构</h2>
+<p style="color:#666;margin-bottom:20px">Click legend to toggle · Hover nodes for details</p>
+<div style="display:grid;grid-template-columns:280px 1fr;gap:20px">
+<div style="background:white;border-radius:8px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,0.06)">
+<h3 style="font-size:14px;margin-bottom:12px;border-bottom:1px solid #e0e0e0;padding-bottom:6px">图层控制 / Layers</h3>
+<div id="layers"></div>
+<h3 style="font-size:14px;margin:20px 0 12px;border-bottom:1px solid #e0e0e0;padding-bottom:6px">图例 / Legend</h3>
+<div style="font-size:12px;color:#666">
+<div style="margin:6px 0"><span style="display:inline-block;width:16px;height:16px;background:#5BAE6F;opacity:0.5;vertical-align:middle;margin-right:6px"></span>京张走廊</div>
+<div style="margin:6px 0"><span style="display:inline-block;width:16px;height:16px;background:#3B7DD8;vertical-align:middle;margin-right:6px"></span>三核（智谷/源/钟）</div>
+<div style="margin:6px 0"><span style="display:inline-block;width:16px;height:16px;background:#E8923C;vertical-align:middle;margin-right:6px"></span>导览路线 A/B</div>
+</div>
+<div style="font-size:11px;color:#999;margin-top:14px;padding-top:12px;border-top:1px solid #e0e0e0">概念示意：边界与坐标待官方校核。</div>
+</div>
+<div style="background:white;border-radius:8px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,0.06)">
+<svg viewBox="0 0 1200 800" style="width:100%;height:auto;display:block" id="interactivemap">
+<rect x="0" y="0" width="1200" height="800" fill="#FAFBFC"/>
+<rect x="60" y="80" width="430" height="700" fill="#E8F4FD" opacity="0.4"/>
+<rect x="710" y="80" width="430" height="700" fill="#FFF3E6" opacity="0.4"/>
+<g id="layer-corridor" data-name="京张走廊 (Jing-Zhang Corridor)">
+<rect x="540" y="80" width="120" height="700" fill="#5BAE6F" opacity="0.25"/>
+<line x1="600" y1="80" x2="600" y2="780" stroke="#E8923C" stroke-width="5"/>
+<line x1="588" y1="80" x2="588" y2="780" stroke="#969BA5" stroke-width="2" stroke-dasharray="6,6"/>
+<line x1="612" y1="80" x2="612" y2="780" stroke="#969BA5" stroke-width="2" stroke-dasharray="6,6"/>
+<text x="600" y="65" text-anchor="middle" font-size="13" fill="#5BAE6F" font-weight="bold">京张遗址公园</text>
+</g>
+<g id="layer-bands" data-name="三条带 (Three Belts)">
+<rect x="540" y="80" width="120" height="80" fill="#5BAE6F" opacity="0.15"/>
+<text x="660" y="125" font-size="11" fill="#5BAE6F">文脉带</text>
+<rect x="540" y="360" width="120" height="80" fill="#3B7DD8" opacity="0.15"/>
+<text x="660" y="405" font-size="11" fill="#3B7DD8">生活带</text>
+<rect x="540" y="640" width="120" height="80" fill="#E8923C" opacity="0.15"/>
+<text x="660" y="685" font-size="11" fill="#E8923C">创新带</text>
+</g>
+<g id="layer-circle" data-name="创新圈 (Innovation Circle)">
+<ellipse cx="600" cy="430" rx="280" ry="320" fill="none" stroke="#3B7DD8" stroke-width="3" stroke-dasharray="10,5" opacity="0.7"/>
+<text x="600" y="430" text-anchor="middle" font-size="16" fill="#3B7DD8" font-weight="bold">创新圈</text>
+<text x="600" y="450" text-anchor="middle" font-size="10" fill="#3B7DD8">Innovation Circle</text>
+</g>
+<g id="layer-cores" data-name="三核 (Three Cores)">
+<rect x="500" y="200" width="200" height="100" fill="#3B7DD8" rx="8" stroke="white" stroke-width="3" opacity="0.92"/>
+<text x="600" y="245" text-anchor="middle" font-size="14" fill="white" font-weight="bold">智谷·众智园</text>
+<text x="600" y="268" text-anchor="middle" font-size="10" fill="white">AI 自主创新加速区</text>
+<rect x="500" y="380" width="200" height="100" fill="#5BAE6F" rx="8" stroke="white" stroke-width="3" opacity="0.92"/>
+<text x="600" y="425" text-anchor="middle" font-size="14" fill="white" font-weight="bold">源社区</text>
+<text x="600" y="448" text-anchor="middle" font-size="10" fill="white">北京 AI 原点社区</text>
+<rect x="500" y="560" width="200" height="100" fill="#E8923C" rx="8" stroke="white" stroke-width="3" opacity="0.92"/>
+<text x="600" y="605" text-anchor="middle" font-size="14" fill="white" font-weight="bold">钟界·大钟寺</text>
+<text x="600" y="628" text-anchor="middle" font-size="10" fill="white">AI 产业聚集区</text>
+</g>
+<g id="layer-nodes" data-name="AI 场景节点 (AI Scenario Nodes)">
+<g class="node" data-name="开源广场"><circle class="node-dot" cx="500" cy="180" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="智能体贡献荣誉墙"><circle class="node-dot" cx="500" cy="250" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="京张 AI 里程碑"><circle class="node-dot" cx="700" cy="250" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="开源成果展示廊"><circle class="node-dot" cx="700" cy="180" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="AI 开发者广场"><circle class="node-dot" cx="500" cy="430" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="未来生活体验街"><circle class="node-dot" cx="700" cy="430" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="道岔广场"><circle class="node-dot" cx="540" cy="320" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="信号灯站"><circle class="node-dot" cx="660" cy="320" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="场景测试广场"><circle class="node-dot" cx="500" cy="540" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="枕木街坊"><circle class="node-dot" cx="700" cy="540" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="京张 AI 创新大会永久会址"><circle class="node-dot" cx="500" cy="680" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+<g class="node" data-name="大钟寺文化体验广场"><circle class="node-dot" cx="700" cy="680" r="6" fill="#E8923C" stroke="white" stroke-width="2"/></g>
+</g>
+<g id="layer-routeA" data-name="路线 A 詹天佑足迹线">
+<polyline points="600,100 600,180 540,320 660,320 600,400 600,680" fill="none" stroke="#3B7DD8" stroke-width="3" stroke-dasharray="8,4"/>
+<text x="730" y="105" font-size="11" fill="#3B7DD8" font-weight="bold">路线 A：詹天佑足迹线</text>
+</g>
+<g id="layer-routeB" data-name="路线 B 开源创新之路">
+<polyline points="600,200 600,430 600,540 600,700 600,780" fill="none" stroke="#E8923C" stroke-width="3" stroke-dasharray="8,4"/>
+<text x="730" y="755" font-size="11" fill="#E8923C" font-weight="bold">路线 B：开源创新之路</text>
+</g>
+</svg>
+</div>
+</div>
+<div id="tip" style="position:absolute;background:#1a1a2e;color:white;padding:6px 10px;border-radius:4px;font-size:12px;pointer-events:none;opacity:0;transition:opacity 0.2s"></div>
+</section>
+<script>
+const layers=[{id:"layer-corridor",name:"京张走廊",color:"#5BAE6F",defaultOn:true},{id:"layer-bands",name:"三条带",color:"#3B7DD8",defaultOn:true},{id:"layer-circle",name:"创新圈",color:"#3B7DD8",defaultOn:true},{id:"layer-cores",name:"三核",color:"#3B7DD8",defaultOn:true},{id:"layer-nodes",name:"AI 场景节点",color:"#E8923C",defaultOn:true},{id:"layer-routeA",name:"路线 A 詹天佑足迹线",color:"#3B7DD8",defaultOn:false},{id:"layer-routeB",name:"路线 B 开源创新之路",color:"#E8923C",defaultOn:false}];
+const c=document.getElementById("layers");
+layers.forEach((l,i)=>{const d=document.createElement("div");d.style.cssText="display:flex;align-items:center;padding:8px;border-radius:4px;cursor:pointer";d.onmouseover=()=>d.style.background="#F7F9FC";d.onmouseout=()=>d.style.background="";const cb=document.createElement("input");cb.type="checkbox";cb.checked=l.defaultOn;cb.id="cb-"+l.id;cb.style.marginRight="10px";cb.onchange=()=>toggle(l.id,cb.checked);const sw=document.createElement("span");sw.style.cssText=`width:18px;height:18px;border-radius:3px;background:${l.color};margin-right:10px;display:inline-block`;const lb=document.createElement("label");lb.htmlFor=cb.id;lb.style.cssText="cursor:pointer;font-size:13px";lb.textContent=l.name;d.appendChild(cb);d.appendChild(sw);d.appendChild(lb);c.appendChild(d);toggle(l.id,cb.checked);});
+function toggle(id,on){const el=document.getElementById(id);if(el)el.style.display=on?"block":"none";}
+const tip=document.getElementById("tip");
+document.querySelectorAll("#interactivemap .node").forEach(n=>{n.addEventListener("mousemove",(e)=>{tip.textContent=n.dataset.name;tip.style.opacity="1";tip.style.left=(e.pageX+12)+"px";tip.style.top=(e.pageY-20)+"px";});n.addEventListener("mouseleave",()=>{tip.style.opacity="0";});});
+</script>
+
 </body>
 </html>
