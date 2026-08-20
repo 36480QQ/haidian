@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "76a31960eb74faa1a27bdb481a54d5956f7559d64ee0b9d0e9968d7513a9c49a"
+      "sha256": "66ac0aee205fed493cff162de9c1c0c10dad6316a37af9693e28f54c53951e22"
     },
     {
       "path": "agent.json",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "78ac1a7b00cfbe41ce5aae414ac9d63cb5ad07cd462eacbf5f40ce12f7aed5b4"
+      "sha256": "ac0d152c1a9beeee47947c726c2f71501a05ed344b2f5420c14311caf07dfd60"
     },
     {
       "path": "report/proposal.en.html",
@@ -320,6 +320,12 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "f4452ac4ffd1988a39498bd7d08fab4530c57e603954b3d53cc8367bc7c0a247"
+    },
+    {
+      "path": "assets/identity/spine-mark.svg",
+      "role": "asset",
+      "required": false,
+      "sha256": "a26b8846e1bdd84abbae58f8308eefdd43775cf403bf5b8fcaf8f93c13b13b9b"
     }
   ],
   "validation_claim": {

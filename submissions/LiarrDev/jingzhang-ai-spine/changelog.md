@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v1.6 - 2026-08-20
+
+### Taskbook review-dimension alignment
+- Brand identity (brand_identity): expanded the logo direction into a full brand identity system — logo graphic (three variants), color system with per-district accents, typography, international-communication vocabulary, and application extension; added assets/identity/spine-mark.svg
+- Regional synergy (regional_synergy): added external regional coordination paragraph (Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town, Beijing-Tianjin-Hebei)
+- Long-term operations value (long_term_operation_value): added 90-day minimum operations validation, three evaluation gates, brand asset accumulation loop, and open-source reuse channel
+- Transferability (transferability): added layered transferable-deliverables list (branding / urban-design / event-operations / technical teams)
+
+### Bilingual sync
+- proposal.en.md synced with all four new sections
+
 ## v1.5 - 2026-08-20
 
 ### Real existing-condition geometry (OSM data)
