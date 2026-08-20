@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7d0762aabcfffd476da497477f4beb56846b03dd2a62a00421cc87846044a03f"
+      "sha256": "12dcf7015a8c498363110ab255031f6121728744761f153f141d71e2d0d1d21a"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "ce36670ff4e7377f443184ce71b0019d76f676043b7b30dffb05e19d7f7c146e"
+      "sha256": "968b6ca0cd3de612d36cd1ff237ede3ce06179a35844ac1185ad0d4f1eadbc28"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1b202ddff7e11f9aa00fbd48455635fcb84bda294da3f3d928e674e46401a627"
+      "sha256": "7fe2b733a2c52a77c8f9d7b1c4d799b9fba789a7f086278a82a507c7a5aaad34"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e3e2cf19d4b186ba3509037347f0ea3b5b4148694cc06fc2a88be96741fbe71b"
+      "sha256": "0d308e1a306c6eb6fc6d9bcdae6d25cba984337b372585d5f3a1bddcfa2b877f"
     },
     {
       "path": "report/narrative.md",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ba379704e1dd7d60cc5311c5cd8d14425d0b2dfdf62c5243f134e89a998899ea"
+      "sha256": "91cf12c5196554bf43a0669a827af5b2f0abbf9227c15ad9191decbc52c2c93c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7a3d12598a2f49f8479434d77baa049126b4c0ca1625c2f32e36d489675de0bc"
+      "sha256": "0294ac15621ef5d8384e4f3c9c46b5b29b392cf66e4641db4b47bda786712a7a"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5cd5d7bd76da2d7223119e7d10547cea6b6dbf356d551d3096b6aae0d47d79b7"
+      "sha256": "013c855f40311ab504cf91d3b669ed6cb2d74cb16c8aa196e9499f987410158b"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "5aa1431a3f6c1fd147a7757e8bf8d90db01e65a6b71fb5e63aadacae3339ce5f"
+      "sha256": "540fe1494176af3a94c9560effaefdf9c84c0e5d2486e4094e46878249343be5"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "45cdeafbf8775bfe22f2fbcafa9bb659b7bdf0fa4ac59563e7e5cdedd66f38c5"
+      "sha256": "ce275addea5f3386db2e9bbf1cc6acb733b19a2b6cc8eb6bf0e01ca945baf1ff"
     },
     {
       "path": "assets/media/cover.webp",
@@ -1141,16 +1141,16 @@
       "language": "neutral",
       "title_zh": "三区片区策略：街块诊断、开放化候选、界面规则、强度包络与走廊接驳判据（只登记关系与判据，不登记法定控制值）",
       "title_en": "District strategy for the three key areas: block diagnosis, opening candidates, frontage rules, intensity envelope and corridor/interchange criteria (relations and criteria only, no statutory control value)",
-      "sha256": "ebbb7cf0be51a815d6fa86f50e3ec976aac8a26a78103a36e215af2ebf8511a3"
+      "sha256": "0b5d9f4f65ee2785c9e4c7cc289de3c1314787692f40468b0de8891cf6cfe4a8"
     },
     {
       "path": "visual/assets/field-verification-plan.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "零授权现场验证计划：六项空间读数的执行办法、无障碍路径实测协议与最小访谈集（计划已备，执行待定，全部读数仍为零值或 unknown）",
-      "title_en": "Zero-authorisation field verification plan: execution method for the six spatial readings, the accessibility-route test protocol and the minimum interview set (plan ready, execution pending, every reading still zero or unknown)",
-      "sha256": "e375093a5faab4cdad3ca3a8dd85a9d56ba9e8d6d42391dbbe2c7198e29e68af"
+      "title_zh": "零授权现场验证计划：六项空间读数的执行办法、无障碍路径实测协议与最小访谈集（计划已备，执行暂缓待辖区合规确认，全部读数仍为零值或 unknown）",
+      "title_en": "Zero-authorisation field verification plan: execution method for the six spatial readings, the accessibility-route test protocol and the minimum interview set (plan ready, execution deferred pending jurisdictional compliance confirmation, every reading still zero or unknown)",
+      "sha256": "a9b7b8554c6e8d5e0f849362253e1e0f781866a7c3638f72e000908aa7cf9171"
     },
     {
       "path": "assets/figures/district-strategy.png",
