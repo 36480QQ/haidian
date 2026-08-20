@@ -89,7 +89,7 @@
       "self_check_ids": [
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」「AI 创新生态、人才画像与 AI+ 场景」；图层 public_space.geojson；指标 public_space_ratio、benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；指标 persona_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 street-eye-level.png、kit-of-parts.png；来源 OFFICIAL-ANNOUNCEMENT（登记于 sources.json） 共同支撑。**17 处引用里评审能打开 9 处**，其余 8 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」「AI 创新生态、人才画像与 AI+ 场景」；图层 public_space.geojson；指标 public_space_ratio、benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；指标 persona_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 street-eye-level.png、kit-of-parts.png；来源 OFFICIAL-ANNOUNCEMENT（登记于 sources.json） 共同支撑。**17 处引用里评审能打开 11 处**，其余 6 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "standard_ids": [
         "ELDERLY-SMART-TECH-PLAN-2020-45"
       ],
@@ -97,8 +97,8 @@
         "references": 17,
         "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 8
+        "reviewer_sees_first_page_only": 2,
+        "reviewer_cannot_open": 6
       },
       "risk_ids": [
         "RISK-POLICY-001",
@@ -107,7 +107,7 @@
       "geometry_feature_ids": [
         "PUBLIC-001"
       ],
-      "evidence_summary_en": "This entry rests on the sections 'Coordinated Research Area: Industry and Future City Research', 'AI Innovation Ecosystem, Personas, and AI+ Scenarios'; layers public_space.geojson; metrics public_space_ratio, benchmark_count (class 1, recomputed independently by visual/assets/verify.js); metrics persona_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings street-eye-level.png, kit-of-parts.png; sources OFFICIAL-ANNOUNCEMENT (registered in sources.json), together. **Of 17 references the reviewer can open 9**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the sections 'Coordinated Research Area: Industry and Future City Research', 'AI Innovation Ecosystem, Personas, and AI+ Scenarios'; layers public_space.geojson; metrics public_space_ratio, benchmark_count (class 1, recomputed independently by visual/assets/verify.js); metrics persona_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings street-eye-level.png, kit-of-parts.png; sources OFFICIAL-ANNOUNCEMENT (registered in sources.json), together. **Of 17 references the reviewer can open 11**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.3.3",
@@ -387,13 +387,13 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「用地、建筑规模与拆改留方案」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**15 处引用里评审能打开 8 处**，其余 7 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「用地、建筑规模与拆改留方案」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**15 处引用里评审能打开 9 处**，其余 6 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 15,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 7
+        "reviewer_sees_first_page_only": 1,
+        "reviewer_cannot_open": 6
       },
       "risk_ids": [
         "RISK-ACCEPTANCE-001",
@@ -403,7 +403,7 @@
         "BLDG-001",
         "BLDG-004"
       ],
-      "evidence_summary_en": "This entry rests on the sections 'Detailed Design of Key Areas', 'Land Use, Building Scale, and Retain-Renovate-Demolish Strategy'; layers buildings.geojson; metrics building_footprint_area_sqm (class 1, recomputed independently by visual/assets/verify.js); metrics floor_area_ratio (class 2, awaiting official regulatory support and held at unknown; what verify.js asserts is that they stay unknown, not their values); drawings street-eye-level.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 15 references the reviewer can open 8**; the other 7 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the sections 'Detailed Design of Key Areas', 'Land Use, Building Scale, and Retain-Renovate-Demolish Strategy'; layers buildings.geojson; metrics building_footprint_area_sqm (class 1, recomputed independently by visual/assets/verify.js); metrics floor_area_ratio (class 2, awaiting official regulatory support and held at unknown; what verify.js asserts is that they stay unknown, not their values); drawings street-eye-level.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 15 references the reviewer can open 9**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.2.1",
@@ -634,13 +634,13 @@
       "self_check_ids": [
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson、public_space.geojson；指标 public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、identity.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**15 处引用里评审能打开 7 处**，其余 8 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson、public_space.geojson；指标 public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、identity.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**15 处引用里评审能打开 8 处**，其余 7 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 15,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 8
+        "reviewer_sees_first_page_only": 1,
+        "reviewer_cannot_open": 7
       },
       "risk_ids": [
         "RISK-POLICY-001"
@@ -649,7 +649,7 @@
         "GREEN-001",
         "PUBLIC-001"
       ],
-      "evidence_summary_en": "This entry rests on the section 'Blue-Green Network, Public Space, and Urban Character'; layers green_space.geojson, public_space.geojson; metrics public_space_ratio (class 1, recomputed independently by visual/assets/verify.js); metrics landmark_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings kit-of-parts.png, identity.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 15 references the reviewer can open 7**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the section 'Blue-Green Network, Public Space, and Urban Character'; layers green_space.geojson, public_space.geojson; metrics public_space_ratio (class 1, recomputed independently by visual/assets/verify.js); metrics landmark_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings kit-of-parts.png, identity.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 15 references the reviewer can open 8**; the other 7 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.3.required",
@@ -1047,7 +1047,7 @@
       "self_check_ids": [
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 buildings.geojson、public_space.geojson；指标 public_space_ratio、building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**19 处引用里评审能打开 8 处**，其余 11 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 buildings.geojson、public_space.geojson；指标 public_space_ratio、building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**19 处引用里评审能打开 10 处**，其余 9 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "standard_ids": [
         "ELDERLY-SMART-TECH-PLAN-2020-45"
       ],
@@ -1055,8 +1055,8 @@
         "references": 19,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 11
+        "reviewer_sees_first_page_only": 2,
+        "reviewer_cannot_open": 9
       },
       "risk_ids": [
         "RISK-EQUITY-001",
@@ -1067,7 +1067,7 @@
         "BLDG-002",
         "PUBLIC-001"
       ],
-      "evidence_summary_en": "This entry rests on the section 'Blue-Green Network, Public Space, and Urban Character'; layers buildings.geojson, public_space.geojson; metrics public_space_ratio, building_footprint_area_sqm (class 1, recomputed independently by visual/assets/verify.js); metrics landmark_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings kit-of-parts.png, street-eye-level.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 19 references the reviewer can open 8**; the other 11 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
+      "evidence_summary_en": "This entry rests on the section 'Blue-Green Network, Public Space, and Urban Character'; layers buildings.geojson, public_space.geojson; metrics public_space_ratio, building_footprint_area_sqm (class 1, recomputed independently by visual/assets/verify.js); metrics landmark_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings kit-of-parts.png, street-eye-level.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 19 references the reviewer can open 10**; the other 9 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "agent.5",
