@@ -747,7 +747,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 422,
+      "value": 423,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -1199,7 +1199,7 @@
       "confidence": "medium",
       "assumptions": [
         "OpenStreetMap via the Overpass API, ODbL 1.0, in EPSG:4548. Crowd-sourced: absence from the map is not absence from the ground.",
-        "十分钟按 800 m 网络距离计，不是半径；建筑以形心计入；**可达不等于会用**——十分钟内到得了是必要条件，不是充分条件。"
+        "十分钟按 720 m 网络距离计，不是半径；建筑以形心计入；**可达不等于会用**——十分钟内到得了是必要条件，不是充分条件。"
       ],
       "assumption_ids": [
         "A-OSM-001"
@@ -1379,7 +1379,7 @@
       "confidence": "medium",
       "assumptions": [
         "OpenStreetMap via the Overpass API, ODbL 1.0, in EPSG:4548. Crowd-sourced: absence from the map is not absence from the ground.",
-        "十分钟按 800 m 网络距离计，不是半径；建筑以形心计入；**可达不等于会用**——十分钟内到得了是必要条件，不是充分条件。"
+        "十分钟按 720 m 网络距离计，不是半径；建筑以形心计入；**可达不等于会用**——十分钟内到得了是必要条件，不是充分条件。"
       ],
       "assumption_ids": [
         "A-OSM-001"
@@ -1407,7 +1407,7 @@
       "confidence": "medium",
       "assumptions": [
         "OpenStreetMap via the Overpass API, ODbL 1.0, in EPSG:4548. Crowd-sourced: absence from the map is not absence from the ground.",
-        "十分钟按 800 m 网络距离计，不是半径；建筑以形心计入；**可达不等于会用**——十分钟内到得了是必要条件，不是充分条件。"
+        "十分钟按 720 m 网络距离计，不是半径；建筑以形心计入；**可达不等于会用**——十分钟内到得了是必要条件，不是充分条件。"
       ],
       "assumption_ids": [
         "A-OSM-001"
