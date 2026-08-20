@@ -420,7 +420,7 @@ code {
 <blockquote><p><strong>没有水准点的路段，不允许机器人运行。</strong>（No benchmark, no robot.）</p></blockquote>
 <p>这条规则把治理变成了空间设计问题——因此它属于城市设计而非技术管理。机器人可运行的范围，等于水准点覆盖的范围；要扩大运营范围，必须先建测点。测点是实体的、公共可达的、编号唯一的 <span class="evidence evidence-data">[data:geometry/public_space.geojson#PUBLIC-001]</span>，其覆盖占比可从图层复算 <span class="evidence evidence-metric">[metric:public_space_ratio]</span>。</p>
 <p><strong>先说清楚哪些不是本方案的增量。</strong> 逐份核读本次征集这两条赛道的全部方案后可以确认，&lt;!-- BASELINE6:BEGIN --&gt;</p>
-<p>以下六项已成为事实标准，括号内为 793 份语料中的实测份数：场景级停用与退出条件（478）、无AI等价路径（364）、现场安全员（330）、远程与物理急停（175）、限速（99）、事件日志（68）。最薄的一项也有 68 份，最厚的 478 份。<strong>这是下界</strong>——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但<strong>不把它们当作创新陈述</strong>——它们是准入底线。把底线当卖点，说明没有读过这个场。</p>
+<p>以下六项已成为事实标准，括号内为 793 份语料中的实测份数：场景级停用与退出条件（478）、无AI等价路径（364）、现场安全员（331）、远程与物理急停（175）、限速（99）、事件日志（68）。最薄的一项也有 68 份，最厚的 478 份。<strong>这是下界</strong>——换了说法的方案不会被关键词计入。本方案全部采纳这六项并写入下方场景卡，但<strong>不把它们当作创新陈述</strong>——它们是准入底线。把底线当卖点，说明没有读过这个场。</p>
 <p>&lt;!-- BASELINE6:END --&gt;</p>
 <p>本方案的增量在别处：<strong>在两条赛道的全部方案里逐词检索为零或近零的那些测项上。</strong></p>
 <p>这一节的计数此前是本方案手读 18 份得出的，清单与口径都没有交出来——一个只有作者能复核的数字，按本方案自己的标准不构成证据。现已改为可重跑脚本：从 git tree 枚举两条赛道的<strong>全部已合入方案</strong>（含本方案；份数随语料增长，见下表表头），对每份全文运行公开的关键词正则，逐项列出命中方案名，结果随包提交于 <code>track_scan.json</code>。</p>
@@ -842,7 +842,7 @@ code {
 <p><strong>这 12 项可复核清单已移入 <code>compliance_matrix.json</code> 的 <code>reviewer_checklist</code></strong>，随包提交，逐项可在不联系作者的情况下独立完成。</p>
 <p><strong>先说清楚这份清单是给谁的。</strong> 仓库的 <code>scripts/review_submission.py</code> 只把九个文件整份交给评审模型——<code>proposal.md</code>、<code>manifest.json</code>、<code>metrics.json</code>、<code>assumptions.json</code>、<code>sources.json</code>、<code>self_check.json</code> 与三份矩阵——外加十八张图像：五个图纸路径、四份 PDF 的第一页、两个页面的首屏截图，每一项中英各一张（清单见 <code>visual/assets/visual_packet_qa.json</code>）。它<strong>不读</strong> <code>geometry/</code>、<code>visual/assets/</code>、<code>risk.json</code>、<code>changelog.md</code> 与 <code>agent.json</code>。</p>
 <p>因此上面 12 项里，<strong>AI 评审能按字面执行的是 0 项</strong>：其余各项指名的文件不在它收到的东西里。<strong>拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。</strong>这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。</p>
-<p><strong>FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。</strong> 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 <strong>0.75 秒</strong>；另有 9 份<strong>不在评审输入里的</strong>文件、1252 KB、1,862 条要读，逐条读数随包提交于 <code>visual/assets/review_route.json</code>。计时界定的是<strong>工作量</strong>而不是难度。</p>
+<p><strong>FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。</strong> 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 <strong>0.71 秒</strong>；另有 9 份<strong>不在评审输入里的</strong>文件、1255 KB、1,880 条要读，逐条读数随包提交于 <code>visual/assets/review_route.json</code>。计时界定的是<strong>工作量</strong>而不是难度。</p>
 <p><strong>这条披露有时效，而缺口已经补上。</strong> Issue #2170 对应的 PR #2181 已并入 <code>upstream/main</code>：review-input 里有了可审计的访问边界，明确参赛者的校验脚本从不执行，并要求评审<strong>不得仅因打不开一份未提供的 artifact 就扣分或判 gate 失败</strong>。上面的「0 项」不变，变的是它的后果：可达性不再被误读为投稿方没有提供（E210）。本包已按该恢复路径做过——关键推导同步写进 <code>assumptions.json</code> 与 <code>metrics.json</code>，三份矩阵逐行标注证据的可达程度。</p>
 <p>&lt;!-- CHECKLIST:END --&gt;</p>
 <h2>参考资料</h2>
