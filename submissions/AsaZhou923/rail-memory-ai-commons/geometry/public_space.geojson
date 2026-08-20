@@ -352,6 +352,17 @@
         "anchor_area_id": "SERVICE-WING-TECH",
         "primary_users": "绿地运维、环境研究者与居民",
         "human_review_required": true,
+        "maintenance_covenant_fields": [
+          "accountable_owner",
+          "day_to_day_operator",
+          "funding_status",
+          "inspection_interval",
+          "minimum_service_requirement",
+          "replacement_or_retirement_trigger",
+          "handover_route"
+        ],
+        "sensing_boundary": "Asset and environmental condition data only; no worker location, time-ranking, or productivity profiling.",
+        "maintenance_contract_status": "pending_professional_operations_and_financial_design",
         "privacy_boundary": "No personal data or non-public records are required for concept review.",
         "proposal_status": "scenario_card_concept_inside_provisional_site"
       },
