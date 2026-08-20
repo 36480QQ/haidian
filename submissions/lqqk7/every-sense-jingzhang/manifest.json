@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a949941f1ae3918f93a72a2cc922b96fd8aa497f63d3b4d89bf3e90244a13ae3"
+      "sha256": "418c9b5f0db9fe456cdbd17d4d29fce620afbae1b6d5629cb3fccdb829b3778c"
     },
     {
       "path": "agent.json",
@@ -50,31 +50,31 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "2609b2977a54cf8465a203fd7de253ae46eda161ce8972c7c7a3377e22628e1b"
+      "sha256": "4afc002c2844667c9a3c1454c3028c2535b944bc63a7057a98473760da58844c"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "78d7f5e47601c07aec5ac7bcb70e253027937194cb581b7cfa5fae2cd93fd557"
+      "sha256": "68b5e146fef5645100468e0bad4728490c28e9c0e2fe8ddbfde587948fbaa8fc"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "aab18e3c6e31adc218c92b8bbb65788fa0a5f5f73283dd571d72c833b7ef148f"
+      "sha256": "b8b14584a8622cee88cf674238365cd8a6085df22a6517bbee410991b712c8df"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "426fb122382b986f8ba6fa3de1f5d0681054e8670593508fef96f16066e68f60"
+      "sha256": "4cb793e994010847d0d625f9162e1dff9f006e89aadf8504bc24df93bf4b7695"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "5a112f2f4c6595b1798a00a6dda08a2aea124354502e083670d1436abfac4aff"
+      "sha256": "51c69ad4583bc5094de25dddc3f2809fa2c907e9686ecc83a71b4ef1a3c03ece"
     },
     {
       "path": "risk.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b319be032f9a07b8115c4529b63872845d716ed0b6f0ec2f58ad8bf9ac7c4eb9"
+      "sha256": "2431fae743c326ebb15fab8f3099328499c7f7d314cb80387f8a25ad74130f9d"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "4607d5a98c34b4132411e23b9b1a0de188d691c881a262e1946ffe3448c15736"
+      "sha256": "b2f7d4cc241fe306b20c6c052828f97d6ac759196a8c20114e6daf148016991a"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "e829657e05b7247096bad163a67bca86f9cac066ef1771fd7316c061c26366b8"
+      "sha256": "50497a359c0db429cc3a1672f0df7fce332d9f61b7474a9cf94b27db4ea1b675"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "2d9ef6c586c3c5d3a40e1ed44fb61650853f242cd8602dbacc46e861daae6ea5"
+      "sha256": "4f08a734a0fb20f5db8bbb58c6cbc6e303a6ae3e5c2820be20ad67b80f8e0dfc"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b897f0bb499acb44e5c826d73e03eb421ee2a44cc3814f62ac2e8f97eaf5207f"
+      "sha256": "4a8180bd83d7a7b7425acf5762c7390e24dc7e20d2100ae874ccc265ce4ecf3c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -142,14 +142,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "0092f488ad558e34ddde0ae0303ae34124c3d1faed202d7e31eb4502352026c6"
+      "sha256": "7a1ebd14d74678d6134e5cce405b8fdd9aaaa006a9f9be4d16e01aee9fab10ec"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "2cd580dd358d7be3d23f1e43f584ba94ec6c089e369f346c03907a4eb1d7118f"
+      "sha256": "b61a550ae3d7bacf46e4c5b82d46f30cc5fa43afd2062703e373f6e60e312818"
     },
     {
       "path": "assets/figures/dual-state-plan.png",
@@ -173,7 +173,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "be4a1c8e41c8e44d7063591e864dcad9eda0550f5250649edd5c977a732d3ddf"
+      "sha256": "dc5a2c372052022a625efc72086061aae14d060178a578226295ff561c483f78"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e10647224c91f72f6cc647b3671a754acaf8974ce801b6487ace4d56561e7fbb"
+      "sha256": "096a228e35248effb602f597ad41f20368faadc093922149eb5dcf93f4a701cf"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "93cbc77b6e3450c17529b88bc3c3ebd4e7199bbb949edc8df81051ab5e634564"
+      "sha256": "22ed5b097dead3ab64054254f70ee7701494fd604d9356532cdec3124b5383d0"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -260,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "3c2479acf979484dba3d31c52bacd3a1e463c5e7e03a8efc65ec0d4c940cd229"
+      "sha256": "aa7f3c086c81be4fe2177fedadb166ad1dcd7ae047a44a9609c6846ba0ba02fe"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -268,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "5b4715cb66ed70b09828dc1e15a487704dd8d5906a2f28c26af96df3f4ca92b6"
+      "sha256": "de2ee8883946b991fe4806f700b2b5927ab5f7e919f517c855fe076f09c60020"
     },
     {
       "path": "visual/index.en.html",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f0ef3136f65488bf17f9d1f38a22d8071d1a861aa6f01f754359316c4835674e"
+      "sha256": "47931ce7b3506cbce64ba097aa47e11a4606e087fc53d67e090f85e6f828234c"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -300,7 +300,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "6b2d07c391ad05bd05c9ad6e7db982e14ae753acdd0ff85bd44c0bb4b156f322"
+      "sha256": "bf33c2faee0e113aac891db7fd788f2b377afc57b74cc996e8a23c05467f1cef"
     },
     {
       "path": "assets/figures/metrics-evidence-audit.png",
@@ -406,7 +406,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "4defb0ee0530f58c3b082c78ad4edeecdf3f4c64f8957446376fd274c0835526"
+      "sha256": "11e4f51d47ceb7576167721086812d3086dd6de6ec9ed1fb311dc622090349f7"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.png",
@@ -474,7 +474,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "32c83397f04961738e6f8acfff41b30d054de25de425e94a5c94d8744757dcd5"
+      "sha256": "acc359f41cf187114b65b20dc76c126ffb7318dc9932f507b4abb7bf65e2a759"
     },
     {
       "path": "visual/assets/osm-context/provenance.json",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "98dfaaf9b705885118a469eade382fff31123a610ce13271b61437717cd3a779"
+      "sha256": "329ea9337e83ddb917d35bf1954f72aa59e0fa9848a3fc73e50d4745263d1ec4"
     },
     {
       "path": "assets/media/cover.webp",
@@ -767,7 +767,7 @@
       "language": "neutral",
       "title_zh": "伦理与同意协议包（模板 · 未执行）",
       "title_en": "Ethics and consent protocol pack (templates, not executed)",
-      "sha256": "f9b390afda33b2797df52bfa3461fe5fa1338c2a9cf6ee7c48e2c7f96d3303e3"
+      "sha256": "326ec9c05e3ba24d0daddfe099fc20a5dac82d918e8f38feb5dce9dfaa2f7866"
     },
     {
       "path": "visual/assets/qa-proofing-record.json",
@@ -776,16 +776,16 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "8e1aed3c414c80e8917669f64fab16c6c98891a9a5fc56ced036f9647372fb46"
+      "sha256": "2823ef8e6f2431727d9a24c5930e58376f0e077ddfcfca3fc34a27913de09700"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "随包自检闸门台账（十道闸门，逐道登记口径、当前读数与历史查获缺陷共 27 条）",
-      "title_en": "Package self-check gate register (ten gates, each with its criterion, current reading and the 27 defects the gates actually caught)",
-      "sha256": "478887a66886e63610a4e9146052cfb9475c88e51e2fc00f86e66cb5d5f6831a"
+      "title_zh": "随包自检闸门台账（十一道闸门，逐道登记口径、当前读数与历史查获缺陷共 30 条）",
+      "title_en": "Package self-check gate register (eleven gates, each with its criterion, current reading and the 30 defects the gates actually caught)",
+      "sha256": "ac8723bbf35f508b714a4f73bbffe9ba1b2a0ba1c9abf3182cb44b78bd11d2e0"
     },
     {
       "path": "visual/assets/service-desk-gonogo.json",
@@ -875,7 +875,7 @@
       "language": "neutral",
       "title_zh": "OSM 肌理读数：四项肌理+三项偏差+穿越证据清单+复算脚本全文嵌入（PROVISIONAL）",
       "title_en": "OSM fabric readings: four fabric, three deviation, crossing inventory, with recomputation scripts embedded verbatim (PROVISIONAL)",
-      "sha256": "c0acfbe0fcfee543acfe07d0a8bedef7b87be5f933f8d2670a0e684b5a6ef669"
+      "sha256": "3baeece9e635a602e78c54720f2825db15b6c164049e7e0f1fd74826d02ba052"
     },
     {
       "path": "visual/assets/alignment-reference.json",
@@ -920,7 +920,7 @@
       "language": "neutral",
       "title_zh": "OP-04 节点九十天实施包（概念级：条件序列分期、双分支预算、采购、RACI、班表、投保建议、维护与退出）",
       "title_en": "OP-04 ninety-day implementation pack (concept-level: conditional phasing, two-branch budget, procurement, RACI, rosters, insurance suggestions, maintenance and exit)",
-      "sha256": "161855dda1138163f3a61ca7861bad20e560d1215882dfd1c5da36d1c072771d"
+      "sha256": "1aead78864cae765967970f63cdd8c30d489cceba98f2ead8a4a6c694b1fd79f"
     },
     {
       "path": "visual/assets/op04-pilot-readiness.json",
@@ -929,7 +929,7 @@
       "language": "neutral",
       "title_zh": "OP-04 场地与运营主体对接就绪材料（就绪待发；如实登记无既有接触、无既有意向）",
       "title_en": "OP-04 site and operator outreach-readiness material (ready to send; no prior contact and no existing intent, registered as fact)",
-      "sha256": "0147ff02b485a9ba5ed12e4f517e23f4e1d8ac061b244b1b14320fd1239c8628"
+      "sha256": "55f8d72001a076119e1d0c86c426e1941cc55c72fce0dd4c0bf644e3e99c1b60"
     },
     {
       "path": "visual/assets/op04-tactile-map.json",
@@ -1150,7 +1150,7 @@
       "language": "neutral",
       "title_zh": "三区片区策略：街块诊断、开放化候选、界面规则、强度包络与走廊接驳判据（只登记关系与判据，不登记法定控制值）",
       "title_en": "District strategy for the three key areas: block diagnosis, opening candidates, frontage rules, intensity envelope and corridor/interchange criteria (relations and criteria only, no statutory control value)",
-      "sha256": "0b5d9f4f65ee2785c9e4c7cc289de3c1314787692f40468b0de8891cf6cfe4a8"
+      "sha256": "0d10d459c40f9275c1fc78c8201cef4c0557e5197d031d1b2162e1ca9c31e313"
     },
     {
       "path": "visual/assets/concept-design-register.json",
@@ -1159,7 +1159,7 @@
       "language": "neutral",
       "title_zh": "概念详图设想要素登记：三张概念推演图逐要素的既有判据来源、数据与设想的划分，以及一处已识别设计张力的处置判据（只登记判据来源与划分，不提出工程参数，也不构成法定结论）",
       "title_en": "Concept-design register: for each speculative element on the three concept sheets, the existing criterion it rests on, the line between data and speculation, and the disposal criteria for one identified design tension (registration only; no engineering parameter and no statutory conclusion)",
-      "sha256": "6bb0dd4d1405eff13f33d096a03dd6f87aa12302b917652a07dc8ab1371b66b3"
+      "sha256": "da5bce40460516df315462d5ca86b1396d166cb9bca4b635fa24607a0ea4ea3a"
     },
     {
       "path": "visual/assets/field-verification-plan.json",
