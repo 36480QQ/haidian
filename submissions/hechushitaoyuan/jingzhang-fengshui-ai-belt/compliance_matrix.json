@@ -505,7 +505,9 @@
         "public_space_ratio",
         "key_area_count",
         "building_density",
-        "land_use_area_14_green_sqm"
+        "land_use_area_14_green_sqm",
+        "renewal_project_count",
+        "phase_condition_gate_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -983,7 +985,10 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "global_case_count",
+        "qi_protocol_rule_count",
+        "qi_protocol_check_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1021,7 +1026,8 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1037,7 +1043,11 @@
         "green_ratio",
         "public_space_ratio",
         "key_area_count",
-        "greenway_length_m"
+        "greenway_length_m",
+        "scenario_card_count",
+        "testbed_count",
+        "no_ai_path_count",
+        "persona_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1196,7 +1206,9 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "role_count",
+        "solar_term_anchor_event_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
