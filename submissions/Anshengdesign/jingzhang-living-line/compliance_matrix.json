@@ -73,7 +73,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -155,7 +156,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -237,7 +239,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -314,7 +317,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -391,7 +395,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -468,7 +473,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -545,7 +551,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -622,7 +629,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -699,7 +707,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -776,7 +785,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -853,7 +863,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -930,7 +941,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1007,7 +1019,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1027,7 +1040,8 @@
         "统筹研究范围产业与未来城市研究",
         "重点区域详细设计",
         "更新项目清单、实施政策与分期计划",
-        "指标体系、面积复算与合规矩阵"
+        "指标体系、面积复算与合规矩阵",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1077,7 +1091,12 @@
         "DATA-SRC-PARK-PHASE1-202306",
         "DATA-SRC-OSM-20260815",
         "DATA-SRC-AMAP-POI-20260815",
-        "DATA-SRC-CASA-KB-KUN"
+        "DATA-SRC-CASA-KB-KUN",
+        "DATA-SRC-HD00-1601-20260811",
+        "DATA-SRC-XHS-INTENTIONS-20260819",
+        "DATA-SRC-RENDER-REFERENCES-20260819",
+        "DATA-SRC-MASTER-SKETCH-LIBRARY-20260819",
+        "DATA-SRC-URBAN-RENEWAL-CASES-20260819"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1089,7 +1108,10 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001",
+        "A-STRUCT-001",
+        "A-CONCEPT-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1104,7 +1126,8 @@
       "title_zh": "众智园AI自主创新加速区",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1154,7 +1177,12 @@
         "DATA-SRC-PARK-PHASE1-202306",
         "DATA-SRC-OSM-20260815",
         "DATA-SRC-AMAP-POI-20260815",
-        "DATA-SRC-CASA-KB-KUN"
+        "DATA-SRC-CASA-KB-KUN",
+        "DATA-SRC-HD00-1601-20260811",
+        "DATA-SRC-XHS-INTENTIONS-20260819",
+        "DATA-SRC-RENDER-REFERENCES-20260819",
+        "DATA-SRC-MASTER-SKETCH-LIBRARY-20260819",
+        "DATA-SRC-URBAN-RENEWAL-CASES-20260819"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1166,7 +1194,10 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001",
+        "A-STRUCT-001",
+        "A-CONCEPT-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1181,7 +1212,8 @@
       "title_zh": "北京AI原点社区",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1231,7 +1263,12 @@
         "DATA-SRC-PARK-PHASE1-202306",
         "DATA-SRC-OSM-20260815",
         "DATA-SRC-AMAP-POI-20260815",
-        "DATA-SRC-CASA-KB-KUN"
+        "DATA-SRC-CASA-KB-KUN",
+        "DATA-SRC-HD00-1601-20260811",
+        "DATA-SRC-XHS-INTENTIONS-20260819",
+        "DATA-SRC-RENDER-REFERENCES-20260819",
+        "DATA-SRC-MASTER-SKETCH-LIBRARY-20260819",
+        "DATA-SRC-URBAN-RENEWAL-CASES-20260819"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1243,7 +1280,10 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001",
+        "A-STRUCT-001",
+        "A-CONCEPT-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1258,7 +1298,8 @@
       "title_zh": "大钟寺AI产业聚集区",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1308,7 +1349,12 @@
         "DATA-SRC-PARK-PHASE1-202306",
         "DATA-SRC-OSM-20260815",
         "DATA-SRC-AMAP-POI-20260815",
-        "DATA-SRC-CASA-KB-KUN"
+        "DATA-SRC-CASA-KB-KUN",
+        "DATA-SRC-HD00-1601-20260811",
+        "DATA-SRC-XHS-INTENTIONS-20260819",
+        "DATA-SRC-RENDER-REFERENCES-20260819",
+        "DATA-SRC-MASTER-SKETCH-LIBRARY-20260819",
+        "DATA-SRC-URBAN-RENEWAL-CASES-20260819"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1320,7 +1366,10 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001",
+        "A-STRUCT-001",
+        "A-CONCEPT-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1386,7 +1435,12 @@
         "DATA-SRC-PARK-PHASE1-202306",
         "DATA-SRC-OSM-20260815",
         "DATA-SRC-AMAP-POI-20260815",
-        "DATA-SRC-CASA-KB-KUN"
+        "DATA-SRC-CASA-KB-KUN",
+        "DATA-SRC-HD00-1601-20260811",
+        "DATA-SRC-XHS-INTENTIONS-20260819",
+        "DATA-SRC-RENDER-REFERENCES-20260819",
+        "DATA-SRC-MASTER-SKETCH-LIBRARY-20260819",
+        "DATA-SRC-URBAN-RENEWAL-CASES-20260819"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1398,7 +1452,10 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001",
+        "A-STRUCT-001",
+        "A-CONCEPT-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1476,7 +1533,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1553,7 +1611,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1568,7 +1627,8 @@
       "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
       "mandatory": true,
       "report_sections": [
-        "蓝绿空间、公共空间与城市风貌"
+        "蓝绿空间、公共空间与城市风貌",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1618,7 +1678,12 @@
         "DATA-SRC-PARK-PHASE1-202306",
         "DATA-SRC-OSM-20260815",
         "DATA-SRC-AMAP-POI-20260815",
-        "DATA-SRC-CASA-KB-KUN"
+        "DATA-SRC-CASA-KB-KUN",
+        "DATA-SRC-HD00-1601-20260811",
+        "DATA-SRC-XHS-INTENTIONS-20260819",
+        "DATA-SRC-RENDER-REFERENCES-20260819",
+        "DATA-SRC-MASTER-SKETCH-LIBRARY-20260819",
+        "DATA-SRC-URBAN-RENEWAL-CASES-20260819"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1630,7 +1695,10 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001",
+        "A-STRUCT-001",
+        "A-CONCEPT-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1646,7 +1714,8 @@
       "mandatory": true,
       "report_sections": [
         "蓝绿空间、公共空间与城市风貌",
-        "统筹研究范围产业与未来城市研究"
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1696,7 +1765,12 @@
         "DATA-SRC-PARK-PHASE1-202306",
         "DATA-SRC-OSM-20260815",
         "DATA-SRC-AMAP-POI-20260815",
-        "DATA-SRC-CASA-KB-KUN"
+        "DATA-SRC-CASA-KB-KUN",
+        "DATA-SRC-HD00-1601-20260811",
+        "DATA-SRC-XHS-INTENTIONS-20260819",
+        "DATA-SRC-RENDER-REFERENCES-20260819",
+        "DATA-SRC-MASTER-SKETCH-LIBRARY-20260819",
+        "DATA-SRC-URBAN-RENEWAL-CASES-20260819"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1708,7 +1782,10 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001",
+        "A-STRUCT-001",
+        "A-CONCEPT-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1785,7 +1862,8 @@
         "A-COMPUTE-001",
         "A-SCENARIO-001",
         "A-PHASING-001",
-        "A-NAMING-001"
+        "A-NAMING-001",
+        "A-ANCHOR-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
