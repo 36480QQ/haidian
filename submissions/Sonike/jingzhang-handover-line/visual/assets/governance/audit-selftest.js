@@ -1,0 +1,234 @@
+#!/usr/bin/env node
+/*
+ * 京张交接线 · 两个自检脚本的回归测试（离线、只读包内文件）
+ *
+ * 为什么需要它：同目录的 claims-audit.js 与 protocol-check-runner.js 都会自报「全部一致」，
+ * 而一个只会通过的自检和没有自检是等价的。本包已经两次栽在这件事上：
+ *   2026-08-20 之一：条件式 add() 让 F9／F10 在措辞改动后**从清单里消失**，脚本报 47/47、exit 0。
+ *   2026-08-20 之二：为此加的 Z1 元检查把 ID 全集写死成 48 项却**不含 Z1 自己**，
+ *                    删掉 add("Z1") 后脚本报 48/48、exit 0——外部复核发现的，不是自己发现的。
+ * 两次都是「检查悄悄没跑」而不是「检查判错」。所以判据不能与被测对象同处一文件：
+ * 本文件在被测脚本之外，用注入已知缺陷再要求它报错的方式，检验它到底还拦不拦得住。
+ *
+ * 用法：
+ *   node audit-selftest.js          # 逐例结果，全部通过时退出码 0
+ *   node audit-selftest.js --json   # 机器可读结果
+ *
+ * 不改包内任何文件：缺陷注入一律写进 os.tmpdir() 下的临时覆盖层，
+ * 由被测脚本的 JZ_AUDIT_OVERLAY（改输入）与 JZ_AUDIT_HOME（改脚本自身）读入，跑完即删。
+ * 不联网，不依赖任何第三方包。
+ */
+"use strict";
+const fs = require("fs");
+const path = require("path");
+const os = require("os");
+const { spawnSync } = require("child_process");
+
+const HERE = __dirname;
+const PKG = path.resolve(HERE, "../../..");
+const AUDITOR = "claims-audit.js";
+const RUNNER = "protocol-check-runner.js";
+
+/* 这份 49 项 ID 全集是**刻意重复**的第二份来源。
+   claims-audit.js 里也有一份；两份不一致就说明有人动了其中一份，本文件会报错。
+   判据与被测对象放在同一处，等于没有判据。 */
+const IDS = [
+  "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8",
+  "S1", "S2", "S3", "S4",
+  "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
+  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9",
+  "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
+  "G1", "G2", "G3", "H1", "I1", "Z1",
+];
+const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48 };
+
+/* ---------------- 运行与临时覆盖层 ---------------- */
+const TMP = fs.mkdtempSync(path.join(os.tmpdir(), "jz-audit-selftest-"));
+process.on("exit", () => { try { fs.rmSync(TMP, { recursive: true, force: true }); } catch (e) {} });
+
+let seq = 0;
+const overlayWith = (files) => {
+  const dir = path.join(TMP, `ov${++seq}`);
+  for (const [rel, text] of Object.entries(files)) {
+    const dest = path.join(dir, rel);
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.writeFileSync(dest, text, "utf8");
+  }
+  return dir;
+};
+const textOf = (rel) => fs.readFileSync(path.join(PKG, rel), "utf8");
+const jsonMutated = (rel, fn) => {
+  const d = JSON.parse(textOf(rel));
+  fn(d);
+  return JSON.stringify(d, null, 2);
+};
+const scriptMutated = (name, fn) => {
+  const dir = path.join(TMP, `src${++seq}`);
+  fs.mkdirSync(dir, { recursive: true });
+  const dest = path.join(dir, name);
+  fs.writeFileSync(dest, fn(fs.readFileSync(path.join(HERE, name), "utf8")), "utf8");
+  return dest;
+};
+const run = (script, env) => {
+  const r = spawnSync(process.execPath, [script, "--json"], {
+    encoding: "utf8", env: Object.assign({}, process.env, env || {}), maxBuffer: 64 * 1024 * 1024,
+  });
+  let json = null;
+  try { json = JSON.parse(r.stdout); } catch (e) { /* 抛异常时 stdout 为空，看 stderr */ }
+  return { code: r.status, json, stdout: r.stdout || "", stderr: r.stderr || "" };
+};
+const runAuditor = (env) => run(path.join(HERE, AUDITOR), env);
+const runRunner = (env) => run(path.join(HERE, RUNNER), env);
+const failedIds = (res) => (res.json && res.json.failures ? res.json.failures.map((f) => f.id) : []);
+
+/* ---------------- 用例 ---------------- */
+const cases = [];
+const positive = (label, fn) => cases.push({ label, kind: "正向", fn });
+const negative = (label, fn) => cases.push({ label, kind: "阴性", fn });
+
+positive("claims-audit.js 全部通过，且恰好跑 49 项、ID 与本文件独立记录的全集逐位相同", () => {
+  const r = runAuditor();
+  if (r.code !== 0) return `退出码 ${r.code}，应为 0：${(failedIds(r).join("、") || r.stderr).slice(0, 300)}`;
+  if (!r.json || r.json.all_match !== true) return "all_match 不为真";
+  if (r.json.checks_run !== IDS.length) return `checks_run ${r.json.checks_run}，应为 ${IDS.length}`;
+  const got = r.json.checks.map((c) => c.id);
+  const bad = IDS.findIndex((x, i) => got[i] !== x);
+  if (bad !== -1) return `第 ${bad + 1} 位应为 ${IDS[bad]}，实为 ${got[bad]}（两份 ID 全集已分岔）`;
+  if (r.json.check_id_manifest_ok !== true) return "check_id_manifest_ok 不为真";
+  return null;
+});
+
+positive("protocol-check-runner.js 全部通过，且规模恰为 12 账 / 96 规则 / 48 断言", () => {
+  const r = runRunner();
+  if (r.code !== 0) return `退出码 ${r.code}，应为 0`;
+  if (!r.json || r.json.all_match !== true) return "all_match 不为真";
+  const got = { ledgers: r.json.ledgers, rule_checks: r.json.rule_checks_recomputed, assertions: r.json.assertions_recomputed };
+  for (const k of Object.keys(EXPECTED_SCALE)) {
+    if (got[k] !== EXPECTED_SCALE[k]) return `${k} ${got[k]}，应为 ${EXPECTED_SCALE[k]}`;
+  }
+  if (r.json.rule_checks_matching_published !== EXPECTED_SCALE.rule_checks) return "规则检查有不一致";
+  if (r.json.assertions_matching_published !== EXPECTED_SCALE.assertions) return "接管断言有不一致";
+  return null;
+});
+
+/* 三例改脚本自身：针对「检查悄悄没跑」这一类失效。 */
+negative("删掉 add(\"Z1\") —— 这正是 2026-08-20 外部复核发现的那个洞", () => {
+  const s = scriptMutated(AUDITOR, (t) => t.replace(/  add\("Z1",[\s\S]*?\n.*?\n/, ""));
+  const r = run(s, { JZ_AUDIT_HOME: HERE });
+  if (r.code === 0) return "仍以退出码 0 通过（结构性守卫没拦住）";
+  const probs = (r.json && r.json.check_id_manifest_problems) || [];
+  if (!probs.some((x) => x.includes("缺 Z1"))) return `未报「缺 Z1」，实为：${probs.join("；") || r.stderr.slice(0, 200)}`;
+  return null;
+});
+
+negative("EXPECTED_IDS 里去掉 \"Z1\"（复刻当时的确切旧状态）", () => {
+  const s = scriptMutated(AUDITOR, (t) => t.replace(/\n  "Z1",\n/, "\n"));
+  const r = run(s, { JZ_AUDIT_HOME: HERE });
+  if (r.code === 0) return "仍以退出码 0 通过";
+  return null;
+});
+
+negative("删掉 add(\"I1\") —— 任意一条检查消失都要判失败", () => {
+  const s = scriptMutated(AUDITOR, (t) => t.replace(/add\("I1",[\s\S]*?\n.*?\n/, ""));
+  const r = run(s, { JZ_AUDIT_HOME: HERE });
+  if (r.code === 0) return "仍以退出码 0 通过";
+  const probs = (r.json && r.json.check_id_manifest_problems) || [];
+  if (!probs.some((x) => x.includes("缺 I1"))) return `未报「缺 I1」，实为：${probs.join("；")}`;
+  return null;
+});
+
+/* 其余改输入：针对「检查判错」以及本包历史上真出现过的那几类错。 */
+const negInput = (label, files, wantIds) => negative(label, () => {
+  const dir = overlayWith(files);
+  const r = runAuditor({ JZ_AUDIT_OVERLAY: dir });
+  if (r.code === 0) return "仍以退出码 0 通过";
+  const got = failedIds(r);
+  const miss = wantIds.filter((x) => !got.includes(x));
+  if (miss.length) return `未报 ${miss.join("、")}，实报 ${got.join("、") || "（无）"}`;
+  return null;
+});
+
+negInput("正文「之和为」改成同义的「合计」—— 上一轮那个静默漏检",
+  { "proposal.md": textOf("proposal.md").replace("A1—A3 之和为 5.7–8.0 m", "A1—A3 合计 5.7–8.0 m") }, ["F9"]);
+
+negInput("落点表把 BLDG-020 的东侧写成西侧 —— 本包真出现过的「数据对、正文写反」",
+  { "proposal.md": textOf("proposal.md").replace("| BLDG-020 | 开放研发院 | 众智园 | **东** |", "| BLDG-020 | 开放研发院 | 众智园 | **西** |") }, ["P3"]);
+
+negInput("断面单侧合计改成 21.1（容器重复加得到的那个数）—— 本包第一处硬错的形状",
+  { "proposal.md": textOf("proposal.md").replace("| **单侧合计** | **15.4 m** |", "| **单侧合计** | **21.1 m** |") }, ["F3", "F4"]);
+
+negInput("几何里把 BLDG-020 的 side 由东改成西",
+  { "geometry/buildings.geojson": jsonMutated("geometry/buildings.geojson", (d) => {
+      const f = d.features.find((x) => (x.properties || {}).id === "BLDG-020");
+      f.properties.side = "west";
+    }) }, ["P3"]);
+
+negInput("metrics.json 删掉一条三位以上小数指标的 precision_note",
+  { "metrics.json": jsonMutated("metrics.json", (d) => { delete d.metrics.site_area_sqm.precision_note; }) }, ["I1"]);
+
+negInput("sources.json 删掉一条来源的 not_usable_for",
+  { "sources.json": jsonMutated("sources.json", (d) => { delete d.sources[0].not_usable_for; }) }, ["H1"]);
+
+negInput("standard_matrix.json 的章节引用指向不存在的标题 —— v2 重写留下过 42 处",
+  { "standard_matrix.json": jsonMutated("standard_matrix.json", (d) => {
+      d.standards[0].proposal_sections[0] = "一个并不存在的章节标题";
+    }) }, ["G1"]);
+
+/* 最后两例打 runner。 */
+const negRunner = (label, files, want) => negative(label, () => {
+  const dir = overlayWith(files);
+  const r = runRunner({ JZ_AUDIT_OVERLAY: dir });
+  if (r.code === 0) return "仍以退出码 0 通过";
+  const why = want(r);
+  return why;
+});
+
+negRunner("rule-check-report.json 少一条检查 —— 96 变 95 而「逐条一致」仍成立",
+  { "visual/assets/governance/rule-check-report.json": jsonMutated("visual/assets/governance/rule-check-report.json", (d) => { d.checks.pop(); }) },
+  (r) => {
+    const probs = (r.json && r.json.scale_problems) || [];
+    return probs.some((x) => x.includes("95")) ? null : `未报规模不符，实为：${probs.join("；")}`;
+  });
+
+negRunner("夹具里把一条合规交接账改成智能层已推到限定试用",
+  { "visual/assets/governance/shift-ledger-suite.json": jsonMutated("visual/assets/governance/shift-ledger-suite.json", (d) => {
+      d.ledgers[0].transfer_attempt.smart_layer_state_after_decision = "limited_trial";
+    }) },
+  (r) => ((r.json && r.json.rule_mismatches || []).length ? null : "未报规则不一致"));
+
+negRunner("simulation.json 里翻转一条已发布的接管断言",
+  { "simulation.json": jsonMutated("simulation.json", (d) => {
+      const t = d.tasks[0];
+      const k = Object.keys(t.checks)[0];
+      t.checks[k] = t.checks[k] === "pass" ? "fail" : "pass";
+    }) },
+  (r) => ((r.json && r.json.assertion_mismatches || []).length ? null : "未报断言不一致"));
+
+/* ---------------- 执行 ---------------- */
+const results = cases.map((c) => {
+  let why = null;
+  try { why = c.fn(); } catch (e) { why = `用例本身抛异常：${e.message}`; }
+  return { kind: c.kind, label: c.label, pass: why === null, why };
+});
+const bad = results.filter((r) => !r.pass);
+const out = {
+  selftest: "audit-selftest.js",
+  targets: [AUDITOR, RUNNER],
+  scope_zh: "只检验两个自检脚本会不会漏检：正向须通过，注入已知缺陷须退出 1 并报出指定检查项。不评价设计内容。",
+  cases_run: results.length,
+  cases_passed: results.length - bad.length,
+  all_pass: bad.length === 0,
+  results,
+};
+
+if (process.argv.includes("--json")) {
+  console.log(JSON.stringify(out, null, 2));
+} else {
+  for (const r of results) {
+    console.log(`${r.pass ? "通过" : "未通过"}  ${r.kind}  ${r.label}`);
+    if (!r.pass) console.log(`            ${r.why}`);
+  }
+  console.log(`\n${out.cases_passed}/${out.cases_run} 例通过（${cases.filter((c) => c.kind === "正向").length} 正向 ＋ ${cases.filter((c) => c.kind === "阴性").length} 阴性）`);
+  console.log(out.all_pass ? "两个自检脚本都仍拦得住已知缺陷" : "有用例未通过：自检脚本存在漏检");
+}
+process.exit(out.all_pass ? 0 : 1);
