@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ce4a75b3099a097821b3fb42b0d58c5af78289676ad0d5162ebe70c909c55e75"
+      "sha256": "e086bd765d271b94f9e5905ea810a1dcc26ed6f317c6990d7eccc09cc287fc58"
     },
     {
       "path": "agent.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7cbda51f4369b6922d71d99cf2fa0c27b4357dba4a33cca40d32a9c61b11d247"
+      "sha256": "fb386ce310431b4c491731242d8ba66734c1bac641c2a8283852e595bdd98705"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d77befb4613ea8de14b2f76b6dffe67f9aa1834d3a247a2dea795bc08ebd3094"
+      "sha256": "5e074d2a5bec86636e4b634dc28ae5ea0ed0e860f429cb21d6bd426945293495"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "42a549bc321ea65610f34a3343828ebd1ff65a644c02bb53498fdc9652b473bd"
+      "sha256": "0cc5bf626ea8a02e485bc632dc8084afb4b5cc0bcba80828684e569dceca8b1d"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "45f63e469075f3edd9598791287a04ae40eb34148cd9705b3ee822ac9197e7ee"
+      "sha256": "0ac0e6d8c2a79ab77464287fa4afd490858a82365d38436c87d2be40eee94ab0"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "e740cfb3062bf1d55cb69d3141c40f1c925bb960973df05dcfacf7ad9b8b3d0d"
+      "sha256": "399eed97e3d842856ee76c071c532c35a5b7ef47dd70cffa738bddd041b16219"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -438,6 +438,16 @@
       "role": "governance_validation",
       "required": false,
       "sha256": "5406b1f1d692a1ed326934549d0d471843ba121c2caa3f2234a0d692d0d11412"
+    },
+    {
+      "path": "visual/assets/governance/protocol-check-runner.js",
+      "role": "governance_validation",
+      "required": false,
+      "sha256": "93ba0e4e3fcd42239651c2bde0ed12ffc16acda49c55bd176d7abcf8d58ac1ae",
+      "title_zh": "协议自检重跑器",
+      "title_en": "Protocol self-check re-runner",
+      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把本包两个此前无法在包内复算的数字当场重算：读取输入夹具 shift-ledger-suite.json，按 rule-check-report.json 的规则表述**独立重写**七条规则（不是搬运原生成脚本），对 12 条交接账各跑 1 条基线与 7 类缺陷注入共 96 条，并按四项接管断言重算 12 × 4 ＝ 48 项，再与随包发布结果逐条比对。`node protocol-check-runner.js` 全部一致退出 0，任何一条不一致退出 1 并打印发布值与重算值；`--json` 输出机器可读结果。注入口径写在脚本注释里，其中 R4 的注入会同时触发 R3，与随包结果中那 12 条 violations 为两元素的记录一致。**只重算协议逻辑，不证明现场绩效、安全、合规或获批；现场演练仍为 0/12。**",
+      "description_en": "A read-only, offline Node script with no third-party dependencies that recomputes on the spot the two numbers in this package that previously could not be recomputed from inside it. It reads the input fixture shift-ledger-suite.json, **independently reimplements** the seven rules from the rule statements in rule-check-report.json (rather than porting the original generator), runs one baseline plus seven defect injections against each of the twelve ledgers for 96 checks in total, recomputes the four takeover assertions across 12 × 4 = 48, and compares every entry with the published results. `node protocol-check-runner.js` exits 0 when all match and exits 1 on any mismatch, printing the published and recomputed values; `--json` emits machine-readable output. Injection definitions are documented in the script, and the R4 injection also trips R3, matching the twelve published records whose violations have two elements. **It recomputes protocol logic only; it proves nothing about field performance, safety, compliance or approval; the field rehearsal remains 0/12.**"
     },
     {
       "path": "assets/figures/shift-ledger.png",

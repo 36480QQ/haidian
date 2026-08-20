@@ -96,6 +96,7 @@
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/package-integrity-gates.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/protocol-check-runner.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/rights-inventory.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.schema.json",
@@ -110,7 +111,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 19566506,
+      "total_bytes": 19589795,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -191,7 +192,7 @@
           "source": 35,
           "standard": 10,
           "depth": 15,
-          "data": 10,
+          "data": 11,
           "metric": 23
         }
       }
