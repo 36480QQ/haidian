@@ -2,173 +2,42 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>百年京张·AI智枢生态带 - 交互可视化仪表盘</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'">
+<title>百年京张·AI智枢生态带</title>
 <style>
-:root {
-  --bg: #0b1120;
-  --card: #1e293b;
-  --card-border: #334155;
-  --accent: #3b82f6;
-  --accent-light: #60a5fa;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --green: #10b981;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", sans-serif; background: var(--bg); color: var(--text-main); line-height: 1.6; padding: 24px; }
-.container { max-width: 1280px; margin: 0 auto; }
-header { border-bottom: 2px solid var(--card-border); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; }
-h1 { font-size: 26px; color: var(--text-main); }
-.lang-switch { color: var(--accent-light); text-decoration: none; font-size: 14px; border: 1px solid var(--accent); padding: 6px 12px; border-radius: 6px; }
-.hero-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 28px; }
-.metric-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 10px; padding: 18px; }
-.metric-title { font-size: 13px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 6px; }
-.metric-value { font-size: 28px; font-weight: 700; color: var(--accent-light); }
-.metric-unit { font-size: 14px; color: var(--text-muted); font-weight: normal; margin-left: 4px; }
-.metric-note { font-size: 12px; color: var(--green); margin-top: 4px; }
-.section-title { font-size: 20px; color: var(--text-main); margin: 24px 0 14px; border-left: 4px solid var(--accent); padding-left: 10px; }
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin-bottom: 28px; }
-.gallery-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 10px; overflow: hidden; }
-.gallery-card img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--card-border); }
-.gallery-card-body { padding: 14px; }
-.gallery-card-title { font-size: 16px; font-weight: 600; margin-bottom: 4px; color: var(--text-main); }
-.gallery-card-desc { font-size: 13px; color: var(--text-muted); }
-.scenarios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; margin-bottom: 28px; }
-.scenario-item { background: var(--card); border: 1px solid var(--card-border); border-radius: 8px; padding: 14px; }
-.scenario-tag { font-size: 12px; background: rgba(59, 130, 246, 0.2); color: var(--accent-light); padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 6px; }
-.scenario-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
-.scenario-desc { font-size: 13px; color: var(--text-muted); }
-.audit-box { background: var(--card); border: 1px solid var(--card-border); border-radius: 10px; padding: 20px; margin-bottom: 28px; }
-.audit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
-.audit-item { background: #0f172a; border-left: 3px solid var(--green); padding: 12px; border-radius: 4px; }
-.audit-item h4 { font-size: 14px; color: var(--text-main); margin-bottom: 4px; }
-.audit-item p { font-size: 12px; color: var(--text-muted); }
-footer { border-top: 1px solid var(--card-border); padding-top: 16px; font-size: 13px; color: var(--text-muted); text-align: center; }
+:root{--bg:#0b1120;--card:#1e293b;--line:#334155;--a:#60a5fa;--t:#f8fafc;--m:#94a3b8;--g:#34d399;--w:#fbbf24}*{box-sizing:border-box}body{margin:0;padding:24px;background:var(--bg);color:var(--t);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}.wrap{max-width:1280px;margin:auto}header{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--line);padding-bottom:16px}h1{margin:0;font-size:28px}h2{font-size:20px;margin:28px 0 12px;border-left:4px solid var(--a);padding-left:10px}.muted,.note{color:var(--m);font-size:12px}.lang{color:var(--a);text-decoration:none;border:1px solid var(--a);padding:5px 10px;border-radius:6px}.warn{margin:18px 0;padding:13px 15px;border:1px solid #92400e;background:#451a03;color:#fde68a;border-radius:8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:15px}.metric{font-size:27px;font-weight:700;color:var(--a)}.tag{display:inline-block;color:var(--a);font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 7px;margin-bottom:5px}.fallback{font-size:12px;color:var(--g);margin-top:7px}.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:14px}.fig{background:var(--card);border:1px solid var(--line);border-radius:9px;overflow:hidden}.fig img{width:100%;display:block}.fig p{padding:0 12px 10px}.test{border-left:3px solid var(--g)}.audit{border-left:3px solid var(--w)}footer{margin-top:28px;border-top:1px solid var(--line);padding-top:14px;color:var(--m);font-size:12px}
 </style>
 </head>
-<body>
-<div class="container">
-  <header>
-    <div>
-      <h1>百年京张·AI智枢生态带</h1>
-      <p style="color: var(--text-muted); font-size: 14px; margin-top: 4px;">GJYNBB · Antigravity AI | 城市设计方案交互看板</p>
-    </div>
-    <a href="index.en.html" class="lang-switch">English Version</a>
-  </header>
-
-  <h2 class="section-title">核心指标与自检状态</h2>
-  <div class="hero-grid">
-    <div class="metric-card">
-      <div class="metric-title">总体设计范围面积</div>
-      <div class="metric-value" data-metric="site_area_sqm" data-value="11412825.386">11.41<span class="metric-unit">km²</span></div>
-      <div class="metric-note">11,412,825.386 m² · 几何精确复算</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-title">绿地空间比例</div>
-      <div class="metric-value" data-metric="green_ratio" data-value="0.123423">12.34<span class="metric-unit">%</span></div>
-      <div class="metric-note">1,408,600.77 m² 连续蓝绿公共空间</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-title">公共空间比例</div>
-      <div class="metric-value" data-metric="public_space_ratio" data-value="0.073281">7.33<span class="metric-unit">%</span></div>
-      <div class="metric-note">836,345.64 m² 开放网络</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-title">重点区域与自检状态</div>
-      <div class="metric-value">3<span class="metric-unit">处重点区</span></div>
-      <div class="metric-note">四门禁自检状态：PASS (100% 达标)</div>
-    </div>
-  </div>
-
-  <h2 class="section-title">总览地图与三层范围工作框架</h2>
-  <div class="gallery-grid">
-    <div class="gallery-card">
-      <img src="../assets/figures/site-overview.png" alt="总览地图与三层范围">
-      <div class="gallery-card-body">
-        <div class="gallery-card-title">总览地图 · 三层范围工作框架</div>
-        <div class="gallery-card-desc">统筹研究范围 (43.6km²)、总体设计范围 (11.4km²)、重点区域 (368.4ha) 全域空间统筹与总览地图展示。</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="../assets/figures/land-use-structure.png" alt="用地分区与建筑控制">
-      <div class="gallery-card-body">
-        <div class="gallery-card-title">用地分区 · 建筑控制与拆改留</div>
-        <div class="gallery-card-desc">11.4km² 总体设计范围用地分区无缝闭合，分类明确保留、改造与更新建筑基底。</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="../assets/figures/key-areas.png" alt="三处重点区域详细设计">
-      <div class="gallery-card-body">
-        <div class="gallery-card-title">重点区域 · 详细设计与产业布局</div>
-        <div class="gallery-card-desc">众智园加速区、北京AI原点社区、大钟寺产业区三大核心重点区域详细设计。</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿公共空间">
-      <div class="gallery-card-body">
-        <div class="gallery-card-title">交通慢行 · 蓝绿公共空间系统</div>
-        <div class="gallery-card-desc">京张遗址公园绿色主轴、TOD轨道接驳与交通慢行微循环复合系统。</div>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="section-title">十大 AI 场景示范卡片</h2>
-  <div class="scenarios-grid">
-    <div class="scenario-item">
-      <span class="scenario-tag">AI 场景 01</span>
-      <div class="scenario-title">开源成果发布大厅</div>
-      <div class="scenario-desc">原点社区近校成果转化、代码展示与开源路演客厅。</div>
-    </div>
-    <div class="scenario-item">
-      <span class="scenario-tag">AI 场景 02</span>
-      <div class="scenario-title">国家AI安全治理沙盒</div>
-      <div class="scenario-desc">众智园国家级模型红蓝对抗、安全评测与标准制定空间。</div>
-    </div>
-    <div class="scenario-item">
-      <span class="scenario-tag">AI 场景 03</span>
-      <div class="scenario-title">端侧智慧算力驿站</div>
-      <div class="scenario-desc">融合绿色微电网的街区级端侧算力与公共AI服务节点。</div>
-    </div>
-    <div class="scenario-item">
-      <span class="scenario-tag">AI 场景 04</span>
-      <div class="scenario-title">AI 慢行无障碍导视</div>
-      <div class="scenario-desc">基于低侵入环境感知，缝合慢行断点并提供多模态助行导航。</div>
-    </div>
-    <div class="scenario-item">
-      <span class="scenario-tag">AI 场景 05</span>
-      <div class="scenario-title">大钟寺国际路演客厅</div>
-      <div class="scenario-desc">服务智能体与智能硬件领军企业的全球路演与发布中心。</div>
-    </div>
-    <div class="scenario-item">
-      <span class="scenario-tag">AI 场景 06</span>
-      <div class="scenario-title">清河低碳创新绿廊</div>
-      <div class="scenario-desc">水绿交融生态湿地与户外创客交往空间。</div>
-    </div>
-  </div>
-
-  <h2 class="section-title">更新项目清单与任务覆盖合规审计</h2>
-  <div class="audit-box">
-    <div class="audit-grid">
-      <div class="audit-item">
-        <h4>更新项目 JZ-01 ~ JZ-06</h4>
-        <p>包含慢行断点缝合、众智园滨水界面、原点转化街等6项重点更新项目实施清单。</p>
-      </div>
-      <div class="audit-item">
-        <h4>任务覆盖 100% 达成</h4>
-        <p>完全覆盖公告 1.3、1.4、1.5 及面向智能体任务书 agent.1 ~ agent.6 全部任务要求。</p>
-      </div>
-      <div class="audit-item">
-        <h4>来源 与 假设 审计说明</h4>
-        <p>严格依循 7 项 formal 可用来源数据；在官方控规正式下发前，保持临时边界假设透明披露。</p>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <p>百年京张 AI 创新带城市设计开源征集 · 方案作者：GJYNBB (Antigravity AI)</p>
-    <p style="margin-top: 4px;">本方案完全基于公开合规数据生成，已通过全套自动化自检与质量门禁校验。</p>
-  </footer>
-</div>
-</body>
-</html>
+<body><div class="wrap">
+<header><div><h1>百年京张·AI智枢生态带</h1><div class="muted">GJYNBB · Antigravity AI｜铁路遗产主轴上的可验证 AI 城市公共空间</div></div><a class="lang" href="index.en.html">English</a></header>
+<div class="warn"><strong>精度声明：</strong>11.41 km²、三处重点区位置及派生比例来自仓库 provisional rough geometry。GeoJSON 坐标以 EPSG:4326 存储，面积以 EPSG:4548 重投影复算；这些数据用于概念设计和可复算讨论，不是官方红线、法定控规或审批依据。</div>
+<h2>核心指标</h2><div class="grid">
+<div class="card"><div class="note">总体设计范围（provisional）</div><div class="metric" data-metric="site_area_sqm" data-value="11412825.386">11.41 km²</div><div class="note">概念包复算值，官方边界发布后重算</div></div>
+<div class="card"><div class="note">绿地比例（provisional）</div><div class="metric" data-metric="green_ratio" data-value="0.123423">12.34%</div><div class="note">随官方边界更新复算</div></div>
+<div class="card"><div class="note">公共空间比例（provisional）</div><div class="metric" data-metric="public_space_ratio" data-value="0.073281">7.33%</div><div class="note">随官方边界更新复算</div></div>
+<div class="card"><div class="note">重点详细设计区</div><div class="metric">3 处</div><div class="note">数量来自任务书，polygon 位置仍为 provisional</div></div></div>
+<h2>三处重点区：三种不同的城市原型</h2><div class="grid">
+<div class="card"><strong>众智园｜开放研发花园</strong><p>以“共享测试庭院—清河水岸公共客厅—步行研发环”替代封闭园区逻辑。首层优先承载测试展示、标准咨询、共享会议和低碳基础设施体验。</p><div class="note">先做公共空间缝合，再做技术展示；河道、消防、产权和能源条件待专业确认。</div></div>
+<div class="card"><strong>北京 AI 原点社区｜校园—街区转化缝</strong><p>用 5–10 分钟步行连续性连接高校、园区、社区；把开源发布、知识产权/法务、青年人才空间和日常生活服务嵌入可达首层。</p><div class="note">评价重点是步行可达、首层开放和居民共享价值，而不是设备数量。</div></div>
+<div class="card"><strong>大钟寺｜站城四象限交换厅</strong><p>围绕站点、产业、商业和公共空间组织四象限步行连续性，以国际路演、智能终端展示和公共服务激活站城界面。</p><div class="note">PROV-KEY-003 仅为粗略占位 polygon，不能据此证明真实站点包含关系。</div></div></div>
+<h2>五张核心图件</h2><div class="figs">
+<div class="fig"><img src="../assets/figures/site-overview.png" alt="总览地图"><p>总览地图与三层范围</p></div><div class="fig"><img src="../assets/figures/land-use-structure.png" alt="用地与更新结构"><p>用地、建筑基底与更新结构</p></div><div class="fig"><img src="../assets/figures/key-areas.png" alt="三处重点区域"><p>三处重点区空间动作</p></div><div class="fig"><img src="../assets/figures/mobility-bluegreen.png" alt="慢行与蓝绿系统"><p>铁路遗产主轴与东西向慢行缝合</p></div><div class="fig"><img src="../assets/figures/metrics-evidence.png" alt="指标与证据"><p>指标复算、来源与假设边界</p></div></div>
+<h2>10 张 AI 场景卡</h2><div class="grid">
+<div class="card"><span class="tag">01 原点社区</span><strong>开源成果发布厅</strong><p>高校师生和开发者发布模型、代码与研究成果，提供小型路演、可复用展陈和线下同行评审。</p><div class="fallback">兜底：不要求身份轨迹追踪；人工主持始终可用。</div></div>
+<div class="card"><span class="tag">02 众智园</span><strong>AI 安全治理沙盒</strong><p>在受控环境开展红队、基准测试和安全展示，结果形成审计记录而不是“自动认证”。</p><div class="fallback">兜底：高风险测试需人工审批，可随时停止并隔离。</div></div>
+<div class="card"><span class="tag">03 全带节点</span><strong>端侧算力驿站</strong><p>为公共导视、环境感知和低延迟演示提供小型边缘节点，并与能源和散热条件联动。</p><div class="fallback">兜底：断网时公共设施仍保持基础功能。</div></div>
+<div class="card"><span class="tag">04 遗产公园</span><strong>无障碍慢行导航</strong><p>提示坡度、临时障碍、拥挤和无障碍替代路径，服务老人、轮椅使用者、视障人士与访客。</p><div class="fallback">兜底：保留实体导视、人工服务点和无数字设备可达路径。</div></div>
+<div class="card"><span class="tag">05 大钟寺</span><strong>国际路演客厅</strong><p>面向智能体、智能终端和内容企业的短周期发布与交流空间，并与站点步行流线共享。</p><div class="fallback">兜底：企业标识与演示数据需清权；不暗示政府背书。</div></div>
+<div class="card"><span class="tag">06 众智园水岸</span><strong>清河低碳创新廊</strong><p>把雨洪、遮荫、步骑、户外协作和低功耗传感合并进连续公共空间。</p><div class="fallback">兜底：生态和通行性能优先于数字展示。</div></div>
+<div class="card"><span class="tag">07 原点社区</span><strong>近校成果转化街</strong><p>将孵化、知识产权、法务、投融资和共享会议布置在可步行首层，缩短实验室—企业—街区距离。</p><div class="fallback">兜底：AI 只做信息整理；专业法律/投资判断必须人工签署。</div></div>
+<div class="card"><span class="tag">08 大钟寺</span><strong>数据合规会客厅</strong><p>用可视化方式解释授权、最小化、审计与退出机制，支持企业服务但不做未经授权的数据交易。</p><div class="fallback">兜底：无明确授权即不处理；保留人工咨询和申诉通道。</div></div>
+<div class="card"><span class="tag">09 社区节点</span><strong>AI 生活服务样板街</strong><p>把教育、医疗导诊、法律信息、社区办事和生活服务嵌入日常街角，首先服务居民。</p><div class="fallback">兜底：高影响决定转人工；不做个体信用评分和商业画像。</div></div>
+<div class="card"><span class="tag">10 全带路线</span><strong>全球 AI 活动周公共路线</strong><p>沿铁路遗产—开源社区—产业展示—站城客厅形成可步行活动链，平日仍是普通公共空间。</p><div class="fallback">兜底：仅为运营概念建议；场地、安全与版权许可需另行取得。</div></div></div>
+<h2>三类验证场景</h2><div class="grid">
+<div class="card test"><strong>T1 无障碍导航故障注入</strong><p>测试定位漂移、断网、传感器离线和错误拥堵提示；非 AI 导视必须仍能完成基本通行。</p></div>
+<div class="card test"><strong>T2 沙盒安全退出</strong><p>测试异常输出、越权数据请求和高负载；要求人工一键停止、日志可追溯、测试域隔离。</p></div>
+<div class="card test"><strong>T3 公共服务人工复核</strong><p>测试教育/医疗/法律信息助手的低置信度与冲突答案；高影响事项必须升级人工。</p></div></div>
+<h2>审计边界</h2><div class="grid"><div class="card audit"><strong>证据权威</strong><p>官方公告定义任务；provisional geometry 只做概念空间锚定，二者不混用。</p></div><div class="card audit"><strong>服务等价</strong><p>不使用手机、不同意数据授权或系统离线的人，不得失去基本公共服务。</p></div><div class="card audit"><strong>专业前置</strong><p>道路红线、权属、市政、防洪、消防、站体、正式控规和官方重点区 polygon 到位后再形成法定或工程判断。</p></div></div>
+<footer>百年京张 AI 创新带城市设计开源征集 · GJYNBB (Antigravity AI)<br>页面离线可打开，不依赖 CDN、远程地图瓦片、外部脚本、外部字体、API、iframe 或表单提交。</footer>
+</div></body></html>
