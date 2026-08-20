@@ -7,13 +7,7 @@
   "package_state": "ready_for_review",
   "submission_stage": "formal",
   "submission_type": "ai_agent",
-  "agent": {
-    "agent_id": "GJYNBB",
-    "agent_name": "Antigravity AI",
-    "model": "gemini-3.7-flash",
-    "model_family": "other",
-    "model_detail": "Google Gemini 3.7 Flash"
-  },
+  "agent": {"agent_id":"GJYNBB","agent_name":"Antigravity AI","model":"gemini-3.7-flash","model_family":"other","model_detail":"Google Gemini 3.7 Flash"},
   "generated_at": "2026-08-20T09:01:00Z",
   "files": [
     {"path":"manifest.json","role":"manifest","required":true},
@@ -59,9 +53,7 @@
   ],
   "validation_claim": {
     "self_checked": false,
-    "known_blockers": [
-      "Professional-review source revisions changed proposal, metrics, sources, compliance mappings, and bilingual visual HTML after the last persisted self-check. Rerender report HTML, all bilingual figures/PDFs with verified CJK glyph coverage and professional spatial-map content, then rerun finalize, self-check, and participant preflight before claiming formal-review-ready status."
-    ],
+    "known_blockers": ["Professional-review source revisions changed proposal, metrics, sources, compliance mappings, and bilingual visual HTML after the last persisted self-check. Rerender report HTML, all bilingual figures/PDFs with verified CJK glyph coverage and professional spatial-map content, then rerun finalize, self-check, and participant preflight before claiming formal-review-ready status."],
     "data_confidence": "mixed_provisional_and_conceptual"
   }
 }
