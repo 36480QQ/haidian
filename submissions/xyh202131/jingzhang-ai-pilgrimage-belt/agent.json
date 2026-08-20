@@ -742,6 +742,27 @@
       "external_requests": 0,
       "autoplay": false
     },
+    "publication_rebuild": {
+      "trigger": "The pre-rebuild A3 pages 13-14 and A0 boards 7-8 lacked the Round 50 decision-risk summary and sole machine locator already present in the report, visual and review index; fixed-page surfaces therefore failed cross-surface alignment.",
+      "action": "Rebuilt the four existing bilingual publications in place without adding pages. A3 pages 13-14 and A0 boards 7-8 now expose the same eight risk priorities, their G0-only meaning, and the sole risk.json to expert-review-packet locator.",
+      "page_counts": {
+        "a3_zh": 14,
+        "a3_en": 14,
+        "a0_zh": 8,
+        "a0_en": 8
+      },
+      "two_fresh_processes_byte_identical": true,
+      "sha256": {
+        "a3_zh": "38e06a6dd4e4c5d934f05ea7eed54b38888b11a1c51baf521fa2be81bfd854e0",
+        "a3_en": "de1679fbe69d26b05007dcd78da457234894ecdd5dfb0b5597ef600563736cba",
+        "a0_zh": "2cd6644c11155faa0dc55f0e9716aa3b6338a603e6d5e532108f3cdd4d39e6f1",
+        "a0_en": "39c9f4dd5c0f6720682454d83b39620bdafbd6d2f005a6a7341dde78b48e5b54"
+      },
+      "full_page_qa": 44,
+      "blank_encrypted_clipped_out_of_bounds_or_replacement_glyph_pages": 0,
+      "visual_qa": "All four colour contact sheets, all four grayscale contact sheets and all four decision-page detail sheets were inspected; no clipping, overlap, hierarchy regression or ambiguous risk-score claim was found.",
+      "qa_boundary": "Deterministic rebuild and visual QA establish publication consistency and legibility only; they do not establish font licence, field evidence, accessibility certification, expert acceptance, approval, rights clearance or maturity."
+    },
     "new_media": false,
     "new_model_call": false,
     "new_external_source": false,
