@@ -15,7 +15,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-19T15:55:56-07:00",
+  "generated_at": "2026-08-19T17:17:05-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -28,13 +28,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9c2a24415cb7a11bbdaa79387f3369101a174b0d395ececa59cad0541a444396"
+      "sha256": "8bbb6a459446f80c728d7400607512ee640fae165dfe1482bee3d0ab08fbf973"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "f0c2f6b80b0fde165f67805346426e81576f81665bccf97970312c54e6c1411f",
+      "sha256": "9a3ef79d3a2c8d05cb13afee46247fb66497d3674037fc29075a622eeb0cf9c3",
       "language": "neutral"
     },
     {
@@ -48,7 +48,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "adeb2805daccf8c20b98f31a08a6b18f9c20be2e03fee926c9f7f66f992a6bc3",
+      "sha256": "fc7f29383f8380448ef99f7b123baaecdb2233e331874e4d39c4d7de0c6c0f6b",
       "language": "neutral"
     },
     {
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e2771bb9eb9b54940d89d82980a9c1206f89a3493dc4913396edfdb78b40a3be",
+      "sha256": "4124a61285aefd98efbd6c56ff214bd0c69cb2f36916b891f620b44635cab30a",
       "language": "neutral"
     },
     {
@@ -98,7 +98,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "218c39325ee3ea0234c52ef1080d7392de22a82cba27f893c1151d66d4461cfb"
+      "sha256": "d11bc04f64800c869efb942fe424e30ff1bfe8151848d643b9351bed5e526506"
     },
     {
       "path": "report/narrative.md",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a70dd444380964a4a7a9535d13b55dfd7f0eb20433bf82046967ba489876482b",
+      "sha256": "ad39b61a86fa4b0706837e1bf84672709af7a39197ce65d364e5b9108432ada8",
       "language": "zh"
     },
     {
@@ -119,21 +119,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3c2b0e789f3df12c5e0fab09458397c9128dee366b17b630dd68ea8eabcad56b"
+      "sha256": "4e3d7a9ae49a956bed659d76ff09cc57da0fa6bf4e7bda10cea01600c7284acf"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "97d4ed37b76ffcb1568f38538e1c89694793267573ba7c2801a8792875776a14"
+      "sha256": "6277f9411f99a789832049b640c56b81e5c0eb12febd5e3a169c0c2000e6f780"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "5e3ee7042640256de4a1020376ce88c9f22d8d6fceb388632a7a105d20a9dcc7"
+      "sha256": "3145ad213871c0dc7acad14c8556cdadce8b03b06d72e5f1aa0d2cbc1c08e6a1"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -266,7 +266,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "21d02a8f700b87efbde8a0eec4fa3c1157f411193207c393b53946fbbaaedfa1"
+      "sha256": "618218c776fa3d8423e64f1a84f1b8715e234c851c7b35221716eb762433d35c"
     },
     {
       "path": "visual/assets/verify.js",
@@ -403,7 +403,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "6bb951da3b45fd12e568357c1fc3eb747ae59d72c68e21de871bcd1f390d620a"
+      "sha256": "a73e1bff6a9dcbb2f9e165a59a1f9558ee1a9291cad535882a8721ea91e3e12c"
     },
     {
       "path": "proposal.en.md",
@@ -411,7 +411,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4b45af327b532bca17098dbf811b7e526af260e0ecf67c7cdc398e0c84338d8f"
+      "sha256": "604725d5231bb58c74cabce4939d916eedc2396ffc98a0e35ddd6d947c4ed914"
     },
     {
       "path": "report/proposal.en.html",
@@ -419,7 +419,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "92f0c76e15643eea338efa90fed891377ae2203e7b5fb0c2335c2c712a2058cb"
+      "sha256": "db27c0255f54d5c75505fb0283a57cf4316e9b91778e1c2f89b161431a901ece"
     },
     {
       "path": "visual/index.en.html",
@@ -427,7 +427,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "03ffeac86391914a2418e0e593a8b0d10c5cd3359af671e6c250cb812278a9fd"
+      "sha256": "cdcf18cdff890308ac4f4e41b25ef88a5f83ee0414e8d98afefc4cb9288d8d38"
     },
     {
       "path": "visual/assets/parity_qa.json",
@@ -584,7 +584,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "948f7a6fda20717b5436033d07fcb59c41fefdc53342a147cfa0d903d87dd5bc"
+      "sha256": "28891d4bc262e2af0cb8c1f9b1613ffc124065f9a87955a655bccd9450ec1ac8"
     },
     {
       "path": "visual/assets/taskbook_coverage.json",
@@ -848,14 +848,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "10cc1a547be14308a8d83c58c7e804d731b6966ed20f14384969af20d5b6c55a"
+      "sha256": "e945b382b521cf5b469e2d1723736016a36aac51bdf393620c80235c1264ef2d"
     },
     {
       "path": "visual/assets/claim_audit.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "6118f381cd5f19704ef51f3802873abebb831664e86c6edcc6d176dbe17b9e32"
+      "sha256": "c4d8349014503741a194b119c5d87ef2b270353eb9444067067487316898840a"
     },
     {
       "path": "assets/figures/device.png",
@@ -1101,7 +1101,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "3d0ff0bf0491d3604fc90e6102efb656d4ffea002824eae26c197a06ad2b3707"
+      "sha256": "be3dc2fe89fad0edc5aeac616c7ed8a62fa41c0ff0eadb1d8c1ca04e58ef6f9e"
     },
     {
       "path": "assets/media/closure-advance.mp4",
@@ -1157,7 +1157,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "5fc498c799d13f2c6e2997b839e4700e4e3ef118341fbbabacc7c91fdaa177f4"
+      "sha256": "876431d1f06f0ff1e3007300ebc3c03bfa62aae483e8f78d2197273bfc350eb8"
     },
     {
       "path": "visual/assets/errata.en.json",
@@ -1165,7 +1165,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/assets/errata.json",
-      "sha256": "70925d4aa1aab06c5b79acee62458a2052620e3389b23474f0d15d9a4eadcb4b"
+      "sha256": "40a5007b87f4de850d7b3a7801a47d04f17813b146937883d415511edd04f1db"
     },
     {
       "path": "visual/assets/role_spec.json",
@@ -1186,14 +1186,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "3cc69e1bf9efc06b570f03c19ae819076ec750e5095347616dc1b52cbf968d04"
+      "sha256": "3cb905f599826c9631f99da0576c82d4c2d3eb5cfd5616b7e89fda60722916c4"
     },
     {
       "path": "visual/assets/errata.en-archive.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "b2e9a9c177a39631234f06e3bb8b1d2fed724b2babb5d36abcafa12da4302228"
+      "sha256": "a084630752e332a2da14f6222056217264a4ff60c5bfc583d1cbe70722722f18"
     }
   ],
   "validation_claim": {
@@ -1204,8 +1204,8 @@
       "x-self-checked-reason": {
         "schema_version": "0.1",
         "data": {
-          "why_not_mark_self_checked_zh": "组织方的 `--mark-self-checked` 会用它自己的 checks 数组重写 `self_check.json`，那会删掉本包写在其中的 119 条 `PKG_` 读数——正是让这份文件值得一读的那些闸门读数。因此本包不用那个开关：本函数在每次刷新时先把这个标志清为 false（新摘要尚未被核过），再由 `finalise_claim` 在**通过**的一次运行之后置回 true；manifest 不含自身的摘要，写这一个字段不会使任何摘要失效。四道组织方闸门的实跑结果在 `self_check.json` 里逐条可读。",
-          "why_not_mark_self_checked_en": "The organisers' --mark-self-checked rewrites self_check.json with its own checks array, which would delete the 119 PKG_ readings this package writes there - the gate readings that make the file worth reading. So that switch is not used: this function clears the flag on every refresh, because digests nobody has checked yet cannot be claimed as checked, and finalise_claim sets it back to true after a passing run. The manifest carries no digest of itself, so writing this one field invalidates nothing. The four organiser gates and their results are readable row by row in self_check.json.",
+          "why_not_mark_self_checked_zh": "组织方的 `--mark-self-checked` 会用它自己的 checks 数组重写 `self_check.json`，那会删掉本包写在其中的 120 条 `PKG_` 读数——正是让这份文件值得一读的那些闸门读数。因此本包不用那个开关：本函数在每次刷新时先把这个标志清为 false（新摘要尚未被核过），再由 `finalise_claim` 在**通过**的一次运行之后置回 true；manifest 不含自身的摘要，写这一个字段不会使任何摘要失效。四道组织方闸门的实跑结果在 `self_check.json` 里逐条可读。",
+          "why_not_mark_self_checked_en": "The organisers' --mark-self-checked rewrites self_check.json with its own checks array, which would delete the 120 PKG_ readings this package writes there - the gate readings that make the file worth reading. So that switch is not used: this function clears the flag on every refresh, because digests nobody has checked yet cannot be claimed as checked, and finalise_claim sets it back to true after a passing run. The manifest carries no digest of itself, so writing this one field invalidates nothing. The four organiser gates and their results are readable row by row in self_check.json.",
           "four_gate_result_lives_in": "self_check.json"
         }
       }
