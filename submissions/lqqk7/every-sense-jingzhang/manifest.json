@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "67efc7ab35ef540e4c07ebcefe98856ea0d1527dda5238a4fc555b664da665ea"
+      "sha256": "9e4e07841f1f9309b4a80eb8717fd062da81378d7591927648e1a664a2724013"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0d26da8dab52921da896d9a0b94f23e94b028fc52149fdfd5c218166464f3ba5"
+      "sha256": "7d482c8912a33974a443934fd6049db57610991f404c0ea0ac9685707c9ba6bb"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "87e550ddd5bce969135a3ec64409756b613d07b53ebcd6afb861def4cb7e346d"
+      "sha256": "6561d78cd9c3603b0574ee9ed3a1d6c21ebdf10f2dac2b92f1e74431c0894fb6"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5ea8c4325cbb7db5bcfe81ea4a8a1aab40a729a8c8c39dee0c050f59594419ad"
+      "sha256": "cbf6c8829e8dac4070708c1718d81d1852cf62343b492b7a25fafff8b02eaa2e"
     },
     {
       "path": "report/proposal.en.html",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "aaf5b9f6e41f62f67e494e81471fde5b4a53b7e9d9fc915a923b07f9991067f1"
+      "sha256": "6b43826d6682ed6e0c9731055da8466de56f51b526a11948643032bdff488afd"
     },
     {
       "path": "visual/assets/changelog-archive.json",
@@ -784,7 +784,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "aa474c6f28f9b2197fd0987ea88ea1f66e9a6f61e647ecf3d39f85148df5ad65"
+      "sha256": "7575c5dc3dfc9ce5fe8b18866bc4a73a0f197c585600a936c8716e036c536807"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -1159,6 +1159,24 @@
       "title_zh": "三区片区策略：街块诊断、开放化候选、界面规则、强度包络与走廊接驳判据（只登记关系与判据，不登记法定控制值）",
       "title_en": "District strategy for the three key areas: block diagnosis, opening candidates, frontage rules, intensity envelope and corridor/interchange criteria (relations and criteria only, no statutory control value)",
       "sha256": "0d10d459c40f9275c1fc78c8201cef4c0557e5197d031d1b2162e1ca9c31e313"
+    },
+    {
+      "path": "visual/assets/plan-b-register.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三区方案 B 登记：每处重点区一个可辩的替代空间组合与一组三元决策条件（继续选 A／切换 B／两者均放弃），逐条标注即时可判与须预注册后可判两类，不预先给出任何阈值数值",
+      "title_en": "Plan B register for the three key areas: one arguable alternative spatial combination per area with a three-way decision rule (keep A / switch to B / abandon both), every condition marked immediate or pre-registered, and no threshold value given in advance",
+      "sha256": "fcc13dfefebfdd1e64ec423c5ce000aa5205ea850d05dc1ea61121ba73dcc664"
+    },
+    {
+      "path": "visual/assets/scenario-matrix.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "外部情景矩阵：三条世界分岔（AI 廉价普及、强监管收缩、人工服务劳动力短缺）各自的不变量、可变项与退出条件，退出条件全部即时可判，另登记三条不予收录的分岔与理由",
+      "title_en": "External scenario matrix: three ways the world could diverge (AI everywhere and nearly free, regulation tightening, a shortage of people to staff the service) with the invariants, adjustable components and exit condition of each, all exit conditions immediately decidable, plus three excluded branches with the reasons for exclusion",
+      "sha256": "bf041d0d451f54eba40e9d9f90b5f9341fd9fbea435b0b4b38f6eff3ad17f025"
     },
     {
       "path": "visual/assets/concept-design-register.json",
