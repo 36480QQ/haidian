@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v1.5 - 2026-08-21
+
+P1-03 Dazhongsi field-operations responsibility and evidence template / 大钟寺现场运营责任与证据模板
+
+- Baseline / 基线：发布前 `upstream/main` 前进 20 个提交；核对 `8e3dad580fe1979b167742ee5a5029c94dacb3f5..a756675fa04d18aadfe606c89233f6efc0f19535` 后，当前投稿、Skill、brief、source registry、核心 render / manifest / self-check / preflight / validator / schema 路径均无变化，仅通用 source registry review helper 与其他投稿更新。分支以 `--ff-only` 迁移到冻结 `upstream/main` `a756675fa04d18aadfe606c89233f6efc0f19535` 并完整复验；只修改 `submissions/dvd233/data-coop-line/`，不触碰管理 DOCX、archive、历史基线或其他投稿。
+- Single source / 唯一事实源：新增 `visual/assets/dazhongsi-field-validation-pack.json`，Pack ID `DAZHONGSI-FIELD-OPS-01`，对应 `DAZHONGSI-MVP-01`；发布载体以该 JSON 的完整 SHA-256 `4613343f7943bc81207db0fc3c8ad2a98bc97fb1e4f0442eb215f1e36a773a61` 锁定一致性。Node built-ins-only audit 对缺失载体逐项汇总失败，不因 ENOENT 提前崩溃，并核对空值纪律、状态、RACI 唯一 A、证据引用、签署位、Pack ID 与 hash。
+- Unobserved discipline / 未观测纪律：这是待授权、待现场填写的责任与证据模板，不是地图、现场记录、正式空间证据、主体确认、许可或运营承诺。五个采集点、三条路线及其时间、失败、价格、无障碍、人工接管均保持 `null / unknown / not_observed`；六个角色未分配主体，十一份回执未采集，六个签署位未签署。
+- Operating gates / 运营闸门：只有六项开始条件全部 `verified` 才能开始；任一六项停止触发器出现即暂停或停止；恢复需满足四项条件、按同一口径复测，并由场地运营责任主体、安全复核与现场负责人共同签署。模板不把 `not_observed` 解释为风险已排除。
+- Carriers / 载体：中英 proposal 及其脚本派生 HTML、双语离线 visual、2400×1500 双语技术信息图与四份 PDF 均显示 Pack ID/hash 及 NOT OBSERVED 边界；PNG tEXt 与 PDF metadata 保留 ASCII hash。Manifest 登记 pack、audit 和双语图件的 canonical role/language/translation relationship。
+- Verification boundary / 验证边界：专项审计只证明结构、跨载体一致性和既有 GeoJSON/metrics/P1-02 未漂移；HTML 静态审计与 PDF 逐页渲染只证明载体可访问、离线、可读且无明显裁切。它们不证明站口、路线、实测绩效、主体、签署、许可、无障碍或工程可行性。
+
 ## v1.4 - 2026-08-20
 
 P1-02 Dazhongsi rehearsable MVP / 大钟寺可演练 MVP

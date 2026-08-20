@@ -50,6 +50,8 @@ code {
   color: #1d4f7a;
   padding: 0.1em 0.35em;
   border-radius: 4px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .summary { color: var(--muted); font-size: 17px; }
 .translation-link a { color: var(--accent); font-weight: 700; }
@@ -151,6 +153,15 @@ code {
 <p>公共回执广场为 <strong>32,739.258 平方米</strong>；<code>ROAD-001</code> 与 <code>ROAD-003</code> 在临时重点区内的概念线网联合长度 <strong>1,614.218 米</strong>。这些数值只核对内部空间关系，不证明站口、路权、无障碍、建筑现状或工程可行性 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="dazhongsi_mvp_public_receipt_space_sqm" title="指标：dazhongsi_mvp_public_receipt_space_sqm">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="dazhongsi_mvp_route_length_m" title="指标：dazhongsi_mvp_route_length_m">指标</sup>。</p>
 <div class="proposal-table"><table><thead><tr><th>演练阶段</th><th>空间与操作</th><th>同一份事实回执</th><th>硬停止条件</th></tr></thead><tbody><tr><td>1 · 用途票 / <code>SCN-05</code></td><td>在 <code>BLDG-006</code> 以合成订单和纸面模板测试用途、期限、撤销、异常回退与人工接管</td><td>数据参与和无数据商户取得字段相同的兼容性报告</td><td>来源或许可不明、需要真实支付/个人轨迹、两线报告不等价即停</td></tr><tr><td>2 · 撤回回执 / <code>SCN-09</code></td><td>沿免 App 南北正线转至 <code>BLDG-005</code>，核对副本、特征、模型、报告和公开输出状态</td><td>人工与离线申请共用可机读、可读的派生状态</td><td>派生映射不全、残余影响未披露、人工/离线撤回不可用即停</td></tr><tr><td>3 · 公共回报 / <code>SCN-10</code></td><td>经东西“回执轨”到 <code>PUBLIC-003</code>，由人工核对受益对象、到期日、验收与未兑现项</td><td>结算记录同时保留异议、未兑现状态和采用/停止决定</td><td>受益对象不明、期限或验收缺失、把回报说成购买同意即停</td></tr></tbody></table></div>
 <p>三节点全部要求人工复核和无数据等价路径，结构化覆盖目标为 <strong>3 / 3（100%）</strong>；这是演练准入条件而非已观测绩效。正式启用前必须以实地通行时间、价格、失败率、无障碍和人工接管测试证明两线等价，并核对站口、权属、文保、市政、消防和运营责任；任一项不成立就迁移、缩减或停止该原型 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="dazhongsi_mvp_scenario_count" title="指标：dazhongsi_mvp_scenario_count">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="dazhongsi_mvp_no_data_route_coverage_ratio" title="指标：dazhongsi_mvp_no_data_route_coverage_ratio">指标</sup>。</p>
+<h3>P1-03 · 大钟寺待授权现场运营责任与证据模板</h3>
+<p><strong>边界与状态。</strong> <code>DAZHONGSI-FIELD-OPS-01</code>（对应 <code>DAZHONGSI-MVP-01</code>）是待授权、待现场填写的运营责任与证据模板，不是地图、现场记录、正式空间证据、主体确认、许可或运营承诺。唯一事实源为 <code>visual/assets/dazhongsi-field-validation-pack.json</code>，SHA-256 为 <code>4613343f7943bc81207db0fc3c8ad2a98bc97fb1e4f0442eb215f1e36a773a61</code>。当前现场授权为 <code>unknown</code>，工作流为 <code>not_observed</code>；站口、实际路线、通行时间、失败率、价格、无障碍、人工接管、责任主体、签署和许可全部未观测或未确认，模板不得被引用为这些事项已经成立。</p>
+<p><strong>5 个待采集点与 3 条待核验路线。</strong> 五点分别是轨道站口候选核验点、无障碍连续路径核验点、<code>SCN-05</code> 用途票、<code>SCN-09</code> 撤回回执和 <code>SCN-10</code> 公共回报采集点；其观察位置均为 <code>null</code>，核验状态均为 <code>unknown</code>。三条路线是“站口—无障碍—用途票到达线”“数据参与正线”和“无数据等价正线”；观察路径均为 <code>null</code>，路线状态均为 <code>not_observed</code>。每条路线的时间、失败、价格、无障碍和人工接管记录均保持 <code>not_observed</code>，具体数值与结论均为 <code>null</code>。</p>
+<p><strong>6 个 RACI 角色与唯一问责。</strong> 角色为现场验证负责人、场地运营责任主体、无障碍复核、数据与许可复核、安全与停机复核、证据保管；六者的主体分配仍为 <code>null / unknown</code>。每项活动只有一个 <code>A</code>：开始决定—场地运营责任主体；两线与无障碍采集—现场验证负责人；三阶段纸面或合成演练—场地运营责任主体；暂停或停机—场地运营责任主体；证据封存与签署—场地运营责任主体；恢复决定—场地运营责任主体。<code>R / C / I</code> 只分配任务，不替代唯一问责。</p>
+<p><strong>6—6—4 运行闸门。</strong> 只有下列六项开始条件全部成为 <code>verified</code> 才能开始：①站口、实际路线和路权；②连续无障碍路径与合理便利；③权属、文保、市政、消防与安全边界；④运营责任主体与现场负责人书面确认；⑤只使用合成、纸面或经许可的最小必要材料；⑥两条正线、人工接管与紧急停止可测试。当前六项均为 <code>unknown</code>。</p>
+<p>触发任一停止条件就立即暂停或停止：①来源或许可不能证明，或要求真实支付、个人轨迹、隐蔽标识；②站口、无障碍路径或任一正线不能安全通行；③人工接管不可用或未在记录时间内响应；④两线在时间、价格、失败、基本输出或安全保障上出现未处置差异；⑤派生映射不全、残余影响未披露或人工/离线撤回不可用；⑥公共回报缺少受益对象、到期日、验收或未兑现状态，或被说成购买同意。当前六项均为 <code>not_observed</code>，不表示已排除风险。</p>
+<p>恢复必须同时满足四项：①记录停止原因、影响范围和责任角色；②完成纠正并按同一口径复测；③六项开始条件重新全部 <code>verified</code> 且没有新停止触发器；④场地运营责任主体、安全复核与现场负责人共同签署。当前四项均为 <code>unknown</code>；不得用单方判断代替复测和共同签署。</p>
+<p><strong>11 份回执与 6 个签署位。</strong> 回执依次覆盖站口与路权、无障碍连续路径、用途票阶段、撤回回执阶段、公共回报阶段、权属/文保/市政/消防/安全、运营责任主体、材料来源与许可、人工接管与紧急停止、暂停或停机决定、纠正/复测/恢复决定。十一份回执均为 <code>not_observed</code>，采集时间、文件引用、哈希和签署者均为 <code>null</code>。六个 RACI 角色各保留一个签署位，全部为 <code>not_signed</code>，姓名、组织、时间与签名引用均为 <code>null</code>。</p>
+<figure class="proposal-figure"><img src="../assets/figures/dazhongsi-field-validation-pack.png" alt="大钟寺待授权现场运营责任与证据模板信息图；不是地图或现场记录，全部现场结果未观测"><figcaption>大钟寺待授权现场运营责任与证据模板信息图；不是地图或现场记录，全部现场结果未观测</figcaption></figure>
 <figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="三处重点区域、三地标与治理链图"><figcaption>三处重点区域、三地标与治理链图</figcaption></figure>
 <p>三处片区合起来完成“一次合作的全旅程”：原点社区形成议题和劳动规则，众智园执行受控计算与模型验证，大钟寺完成应用互操作、公共回报披露和公众体验；任一环节都可因证据不足、风险超限或参与者撤回而暂停。三地标不是纪念技术公司的广告装置，而是把计算状态、退出边界和共同作者关系变成城市记忆。其建筑形态、消防、容量、造价、运营主体与审批均需专业团队继续深化，不能从概念图直接推导实施结论 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="深度：three_key_area_detailed_design">深度</sup>。</p>
 <h2>AI 创新生态、人才画像与 AI+ 场景</h2>

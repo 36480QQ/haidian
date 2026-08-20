@@ -3,11 +3,11 @@
   "evidence_scope": "participant-authored design-search evidence; not an organizer or statutory simulation",
   "rights": "COMMUNITY-DISPLAY-ONLY",
   "rights_scope": "The wrapper, participant compiler and harness use COMMUNITY-DISPLAY-ONLY. The separately identified corridor, seven-room and Dazhongsi context parts retain their ODbL-1.0 source rights. Four separately identified 1909 album images retain their LOC/WDL item-level rights status and credit. This wrapper overrides none of those source rights.",
-  "run_id": "jingzhang-d775d3c540f6",
-  "receipt_sha256": "305f0aaa13999ee428d5bc3a27a380302732c7ceeeab01e46b2c65f7898542e3",
+  "run_id": "jingzhang-6937f0864b41",
+  "receipt_sha256": "168543d37ff21519c266869a4385242706d83d9700e30bc73992c7fc326ad8db",
   "direct_sun": {
-    "run_id": "direct-sun-d04d872df516",
-    "build_receipt_sha256": "0108b64407ccda97c80f2c5cc2cb0e5c9efaf0571fe8dd8b8c08289f8d800356",
+    "run_id": "direct-sun-42614f23b5af",
+    "build_receipt_sha256": "0880ed053e3eea28fe485058f6ab4934338d1723e675219b16af322986f16531",
     "method": "NREL SPA through pinned pvlib; typed building/roof/tree layers; orientation-height-tree sensitivity",
     "claim_boundary": {
       "clouds_and_reflections": false,
@@ -22,7 +22,37 @@
       "tree_species_or_leaf_area": false
     }
   },
-  "canonical_submitted_harness_payload_sha256": "2160a99837482003a38cc6a95dd91f31663b4ffd75fba4a04ab62da0056e5b19",
+  "changeover": {
+    "run_id": "shared-floor-changeover-ed41614d2fa3c85d",
+    "build_receipt_sha256": "a4c7b815f3635accccd8634b49a0797a737d740c2cc5a40ed465989b6e921db3",
+    "method": "twelve City Task Contracts × normal/ambiguous/hard-stop fixtures; two independent keys; permanent H; deny-by-default rollback",
+    "summary": {
+      "contract_count": 12,
+      "delta_receipt_count": 36,
+      "eligible_for_live_shadow_count": 8,
+      "fixture_count": 36,
+      "held_contract_regression_count": 4,
+      "honor_display_count": 3,
+      "interface_component_count": 6,
+      "promotion_executed_count": 0,
+      "safe_candidate_count": 8,
+      "topology_count": 3,
+      "unsafe_candidate_count": 4,
+      "unsafe_eligible_count": 0,
+      "unsafe_promotion_count": 0,
+      "witness_landmark_count": 3
+    },
+    "claim_boundary": {
+      "claim": "No live model, live user, site operation, or field-performance run was executed; results establish design-time wiring only.",
+      "deployment_or_promotion_executed": false,
+      "field_performance_observations": 0,
+      "field_trials": 0,
+      "live_model_runs": 0,
+      "live_user_sessions": 0,
+      "scope": "deterministic_design_time_contract_verification_only"
+    }
+  },
+  "canonical_submitted_harness_payload_sha256": "1fe889f2e95e77e4a5994a0d76c8800e33a66f0f2358b6907e114a219fd0f360",
   "claim_boundary": {
     "publicly_inspectable": true,
     "source_and_structured_receipts_included": true,
@@ -32,10 +62,10 @@
   },
   "runtime": {
     "python": "3.14.3",
-    "pillow": "12.3.0",
+    "pillow": "12.2.0",
     "shapely": "2.1.2",
     "pyproj": "3.7.2",
-    "reportlab": "5.0.0",
+    "reportlab": "4.5.1",
     "required_packages": [
       "Pillow>=10",
       "shapely>=2",
@@ -64,39 +94,51 @@
         7200,
         4200
       ],
-      "method": "PIL primitives, glyphs and linework are re-rasterised at native 3x coordinates before PDF placement; no metadata-only enlargement",
-      "a0_effective_source_ppi_approx": 159,
-      "a3_embedding": "technical masters are low-pass reduced with PIL BOX to the 2400x1400 logical canvas before A3 crop/embedding; high-resolution masters remain unchanged for A0"
+      "packaged_canonical_pixels": [
+        4800,
+        2800
+      ],
+      "packaged_supplemental_pixels": [
+        2400,
+        1400
+      ],
+      "decoded_byte_budget": 1073741824,
+      "method": "PIL primitives, glyphs and linework are re-rasterised at native 3x coordinates; validator-safe RGB package derivatives are then created with BOX, never by metadata-only enlargement",
+      "a0_effective_source_ppi_approx": 106,
+      "a3_embedding": "technical package derivatives remain above the official review resolution and are independently capped again at PDF placement"
     }
   },
   "replay": {
     "extract": "write each source_snapshots[].content_utf8 from the two source parts to source_snapshots[].path; copy corridor-context.json, corridor-room-figure-ground.json and dazhongsi-osm-context.json to their replay_source_path under the repository parent; retain the four hash-pinned loc-jingzhang-1909-*.jpg files in visual/assets or copy them to research/jingzhang-evidence-line",
-    "test": "python -m unittest tools.tests.test_jingzhang_competition_harness -v",
-    "run": "python tools/run_jingzhang_competition_harness.py --created-at 2026-08-13T09:00:00Z",
+    "test": "python -m unittest tools.tests.test_jingzhang_competition_harness tools.tests.test_shared_floor_changeover -v",
+    "run_harness": "python tools/run_jingzhang_competition_harness.py --created-at 2026-08-11T00:00:00Z",
+    "run_changeover": "python tools/run_shared_floor_changeover.py --output studio-projects/jingzhang-world/analysis/changeover-v1 --created-at 2026-08-20T00:00:00Z",
+    "run_direct_sun": "python tools/run_jingzhang_direct_sun.py --created-at 2026-08-12T00:00:00Z",
+    "sequence": "tests -> harness -> changeover -> first build -> direct-sun -> final build -> official finalizer -> four-gate self-check",
     "timestamp_policy": "explicit pinned UTC evidence epoch; wall-clock execution time is excluded from the hashed run identity",
     "build": "python tools/build_shared_floor.py",
-    "verify": "compare the new build_receipt artifact hashes and candidate evaluation hashes with harness-run.json"
+    "verify": "compare harness, direct-sun and model-swap run identities plus every receipt/artifact hash with their submitted latest indexes"
   },
   "parts": [
     {
       "path": "visual/assets/compiler-source.json",
       "purpose": "participant compiler source snapshot",
-      "sha256": "343454d4442ee1082cc25610b708c656162c0e2eaa5602132d98d0a6e18af31f",
-      "size_bytes": 510999,
+      "sha256": "5a0d4f98989d0f35d4f7eb175c7beda57d8cae78eae083451b95397d74dad2bc",
+      "size_bytes": 1140,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/harness-source.json",
-      "purpose": "design-search, context-fetch and climate source snapshots",
-      "sha256": "11d5cf3963e6f2d079b2a06bac3f6fd4a261f4cc21bf28aed0368750558d3089",
-      "size_bytes": 189645,
+      "purpose": "design-search, context-fetch, climate and A/B/H changeover source snapshots",
+      "sha256": "d11c43d0122c3119af442f40d06e08bc22257eea19cf3f07e5687fd89e10e01e",
+      "size_bytes": 252996,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/harness-run.json",
       "purpose": "immutable run index, hashes and build receipt",
-      "sha256": "edcafb01e3be18c0d892e99ef48766507d9391665c7c846e8fc5d112f2a4529d",
-      "size_bytes": 9714,
+      "sha256": "c6eee1154d575fbe42769b737a519557a37abba0f426c319e21ffaa8123cd61b",
+      "size_bytes": 9738,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
@@ -119,6 +161,34 @@
       "sha256": "c90087f35bfa8371bfaebb48c7780f9e1ff5f7311d95aa3b9649a632c3ebf456",
       "size_bytes": 413600,
       "rights": "ODbL-1.0; attribution and database notice preserved"
+    },
+    {
+      "path": "visual/assets/compiler-source-part-01.json",
+      "purpose": "ordered participant compiler UTF-8 source chunk",
+      "sha256": "ebe4df0c4e9fe1b6a7c1fdfc151df42837dc89a8948bb73144cbbeb9b16cda4c",
+      "size_bytes": 191216,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/compiler-source-part-02.json",
+      "purpose": "ordered participant compiler UTF-8 source chunk",
+      "sha256": "605aff6c335ab04953e8c4a5625f1138cd8c515f0364c3787b27e76540703ecd",
+      "size_bytes": 189646,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/compiler-source-part-03.json",
+      "purpose": "ordered participant compiler UTF-8 source chunk",
+      "sha256": "2f937f85a2fdb2764f96c86279e8914c2c2d08ab83c930df1bad09c47edc403c",
+      "size_bytes": 187221,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/compiler-source-part-04.json",
+      "purpose": "ordered participant compiler UTF-8 source chunk",
+      "sha256": "abc2db5d837080674cdcefed1b50fc3ad542ed95bb2f0c52fdaedcd4c070886c",
+      "size_bytes": 6338,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/loc-jingzhang-1909-011.jpg",
@@ -149,45 +219,45 @@
       "rights": "LOC/WDL: no known restrictions recorded; free use/reuse only where no restrictions apply; source credit preserved"
     },
     {
-      "path": "visual/assets/harness-artifact-candidates-c01-civic-proving-line-design-state-json.json",
-      "purpose": "immutable structured run artifact: candidates-c01-civic-proving-line-design-state-json",
-      "sha256": "c7001a7d9bdb904b20d475ac5b164dcb92578bad22241f8f31be02477a7bc7dc",
-      "size_bytes": 6783,
+      "path": "visual/assets/harness-artifact-candidates-c01-route-sequence-control-design-state-json.json",
+      "purpose": "immutable structured run artifact: candidates-c01-route-sequence-control-design-state-json",
+      "sha256": "e057d44b704d0a593c3c9c21f9fee1e2d96b94e08e0e82fa5f5528b25c2dba88",
+      "size_bytes": 6801,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
-      "path": "visual/assets/harness-artifact-candidates-c01-civic-proving-line-evaluation-json.json",
-      "purpose": "immutable structured run artifact: candidates-c01-civic-proving-line-evaluation-json",
-      "sha256": "63bba96ff752a20f4c092545b94425f2fd28a8362c6a26280cfdf3dfb4f9929b",
-      "size_bytes": 2937,
+      "path": "visual/assets/harness-artifact-candidates-c01-route-sequence-control-evaluation-json.json",
+      "purpose": "immutable structured run artifact: candidates-c01-route-sequence-control-evaluation-json",
+      "sha256": "9e7e64b06a6940aa3db5940c2fc35028e2018757d52a5239c6bc5750ce47d1f9",
+      "size_bytes": 2945,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
-      "path": "visual/assets/harness-artifact-candidates-c01-civic-proving-line-geometry-geojson.json",
-      "purpose": "immutable structured run artifact: candidates-c01-civic-proving-line-geometry-geojson",
-      "sha256": "5701d8b6701b2c8fece20da993951861f87be81133f8ce01fc3090d3009c5af3",
-      "size_bytes": 20694,
+      "path": "visual/assets/harness-artifact-candidates-c01-route-sequence-control-geometry-geojson.json",
+      "purpose": "immutable structured run artifact: candidates-c01-route-sequence-control-geometry-geojson",
+      "sha256": "a93fef105e676528addbb68ced6bb6451e74f80c1368ef7f95a10f5348aa4c1e",
+      "size_bytes": 20702,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
-      "path": "visual/assets/harness-artifact-candidates-c02-four-season-courtyards-design-state-json.json",
-      "purpose": "immutable structured run artifact: candidates-c02-four-season-courtyards-design-state-json",
-      "sha256": "3638330de6c3128384aff0e276c1a2d803b4a4a4e8d6688e05acb45f018f31fa",
-      "size_bytes": 16927,
+      "path": "visual/assets/harness-artifact-candidates-c02-climate-care-control-design-state-json.json",
+      "purpose": "immutable structured run artifact: candidates-c02-climate-care-control-design-state-json",
+      "sha256": "519ec998bf73eb1f7a6a1c5a9a0d333233cf2de4f32e0aa648eb406c216308da",
+      "size_bytes": 16886,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
-      "path": "visual/assets/harness-artifact-candidates-c02-four-season-courtyards-evaluation-json.json",
-      "purpose": "immutable structured run artifact: candidates-c02-four-season-courtyards-evaluation-json",
-      "sha256": "2e9cff500d0ceebc472ad04efff010d0cb5739ada1cb90f3cddc9f48c7da110e",
-      "size_bytes": 3017,
+      "path": "visual/assets/harness-artifact-candidates-c02-climate-care-control-evaluation-json.json",
+      "purpose": "immutable structured run artifact: candidates-c02-climate-care-control-evaluation-json",
+      "sha256": "47a8e7dcb65b5cf863389b4a52cb6982e99854e73ce20000f7820594a5626742",
+      "size_bytes": 3013,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
-      "path": "visual/assets/harness-artifact-candidates-c02-four-season-courtyards-geometry-geojson.json",
-      "purpose": "immutable structured run artifact: candidates-c02-four-season-courtyards-geometry-geojson",
-      "sha256": "b789f4472f61936484b82833467f59cef8fb88a9b77b6141461fefeec94beb90",
-      "size_bytes": 54530,
+      "path": "visual/assets/harness-artifact-candidates-c02-climate-care-control-geometry-geojson.json",
+      "purpose": "immutable structured run artifact: candidates-c02-climate-care-control-geometry-geojson",
+      "sha256": "a6291fddbaa095407c4a6af85245634a12f09cc3dfe649d8f206b8f07ef90141",
+      "size_bytes": 54486,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
@@ -214,8 +284,8 @@
     {
       "path": "visual/assets/harness-artifact-counterfactual-rebind-gate-challenge-json.json",
       "purpose": "immutable structured run artifact: counterfactual-rebind-gate-challenge-json",
-      "sha256": "ca1ac5745e43d90fdc9fe3c6c68bdef4aa6d19944b6f3ebc529225f7c5fb5461",
-      "size_bytes": 26563,
+      "sha256": "1096966c7efc2bbe4e35b4bfd4f11baa6ee7307a23bca3dc56a97c08c42e80f6",
+      "size_bytes": 26591,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
@@ -228,42 +298,84 @@
     {
       "path": "visual/assets/harness-artifact-run-contract-json.json",
       "purpose": "immutable structured run artifact: run-contract-json",
-      "sha256": "73c43ec106be67662afd6391089213b348c914adb6be6b9dc1d21f88d82ce15a",
+      "sha256": "774ea88b101037f12ab3215e50ac03290650ed00a58db626f6340d8a2c68fe44",
       "size_bytes": 1511,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/harness-artifact-selection-json.json",
       "purpose": "immutable structured run artifact: selection-json",
-      "sha256": "f43eda94b1b29d4abd8cb937b2500ba6fc3b25c7a64c002e14d4472b68845958",
-      "size_bytes": 1822,
+      "sha256": "79358a7efee475e0c31ed8350f3bfe88249346fd6bb1a7c06e29c768d218b271",
+      "size_bytes": 1830,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/harness-artifact-simulation-json.json",
       "purpose": "immutable structured run artifact: simulation-json",
-      "sha256": "9ea2e445885255d9266c43e5c589a96e06c18914748f7176101200df36af3c34",
-      "size_bytes": 364541,
+      "sha256": "c62c6650d50ce9fc1af85d8ea20d7f2e7fea139c5432780913261bb3f756ec5f",
+      "size_bytes": 364575,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c01-civic-proving-line-design-state-json.json",
+      "purpose": "legacy nondeletion compatibility locator; resolves to a canonical receipt by superseded_by path and SHA-256; not independent run evidence",
+      "sha256": "d7a9ed9d4136cc2eae6682344f8cde21d6a77bbc21022ede616ca5b68d0a4823",
+      "size_bytes": 465,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c01-civic-proving-line-evaluation-json.json",
+      "purpose": "legacy nondeletion compatibility locator; resolves to a canonical receipt by superseded_by path and SHA-256; not independent run evidence",
+      "sha256": "a33a885494ff22dd5d74f95be875f2282f2cc390459d95251751555079e26350",
+      "size_bytes": 463,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c01-civic-proving-line-geometry-geojson.json",
+      "purpose": "legacy nondeletion compatibility locator; resolves to a canonical receipt by superseded_by path and SHA-256; not independent run evidence",
+      "sha256": "3f0f3a7caa44aeeedaae41e9fb074d4a075babb279758c1dbb44207c3c5c826c",
+      "size_bytes": 464,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c02-four-season-courtyards-design-state-json.json",
+      "purpose": "legacy nondeletion compatibility locator; resolves to a canonical receipt by superseded_by path and SHA-256; not independent run evidence",
+      "sha256": "1647a33fc7c4ce4710c5b015530107fad1d5b58e5a342377fcecef14290c9fab",
+      "size_bytes": 463,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c02-four-season-courtyards-evaluation-json.json",
+      "purpose": "legacy nondeletion compatibility locator; resolves to a canonical receipt by superseded_by path and SHA-256; not independent run evidence",
+      "sha256": "84e2a36ed446e4c3f3a3e6665823bf73f065ceb9e8e51ff3d4a4c2b296a2bba1",
+      "size_bytes": 461,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/harness-artifact-candidates-c02-four-season-courtyards-geometry-geojson.json",
+      "purpose": "legacy nondeletion compatibility locator; resolves to a canonical receipt by superseded_by path and SHA-256; not independent run evidence",
+      "sha256": "ac802013f470d47d8d2e61d4ca98beba40652f4a71f10406faa450ee69621f3e",
+      "size_bytes": 462,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/direct-sun-run-contract.json",
       "purpose": "verified geometric direct-sun evidence: run-contract",
-      "sha256": "fd58d254ffd2d0a8bfa51ba95e26a7ee631e657f8d717f8b225c9dcbf10a46d1",
+      "sha256": "ccd01aaaba938d950808d7685657e080eccbf2d450e0feb3e65d3f02db88d12d",
       "size_bytes": 3265,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/direct-sun-input-receipt.json",
       "purpose": "verified geometric direct-sun evidence: input-receipt",
-      "sha256": "136ec3f231bf03f7447e1b63fe6a7543f1c8837e7b6e2615cd7c2b90b5311f8d",
+      "sha256": "5e1da861a0db4dd0e0c08058f9cfbff800d92ab866ef86ac3bbfd4d04db7fa1e",
       "size_bytes": 2652,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/direct-sun-metrics.json",
       "purpose": "verified geometric direct-sun evidence: metrics",
-      "sha256": "3f94e6b9ffb388620cb40194cd2a4c6b6bd73fb4a91e6271fb5ab101d19e3c4b",
+      "sha256": "102732beb88755c9bd62f01fbe0dcd678efd7cf3635265861ea1e243456f0669",
       "size_bytes": 19021,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
@@ -277,23 +389,143 @@
     {
       "path": "visual/assets/direct-sun-build-receipt.json",
       "purpose": "verified geometric direct-sun evidence: build-receipt",
-      "sha256": "0108b64407ccda97c80f2c5cc2cb0e5c9efaf0571fe8dd8b8c08289f8d800356",
+      "sha256": "0880ed053e3eea28fe485058f6ab4934338d1723e675219b16af322986f16531",
       "size_bytes": 1993,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/direct-sun-latest.json",
       "purpose": "verified geometric direct-sun evidence: latest",
-      "sha256": "dda95eb956b99774475cdbd60f39d0d89a76b8adf4ef7d94692039153b5c4d63",
+      "sha256": "20e3fdd012bc9faebc3317862ceb714ecd4b06973a09e7be414031c566b548a2",
       "size_bytes": 409,
       "rights": "COMMUNITY-DISPLAY-ONLY"
     },
     {
       "path": "visual/assets/direct-sun-zone-baselines.json",
       "purpose": "verified geometric direct-sun evidence: zone-baselines",
-      "sha256": "7a1ea6e36da5df8deca83c0381f00c26fbc3f35ad502c5e237a38fccf45687b0",
+      "sha256": "c9658114ad381bc7cf6f8e5b6c076fe508ed0afc0e9d2df6e5a4a3140cc8c5e3",
       "size_bytes": 16895,
       "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/model-swap-run-contract.json",
+      "purpose": "verified A/B/H changeover evidence: run-contract",
+      "sha256": "fe61476c62bfaf36203762cf199b3ae61c0d82f9416cf76d04a3e6dc9fb48bcb",
+      "size_bytes": 863,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/model-swap-topologies.json",
+      "purpose": "verified A/B/H changeover evidence: topologies",
+      "sha256": "7f48a5fde5f976ebec75c0378cf712efe3089c630e12e263139653a3ae9d642b",
+      "size_bytes": 1861,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/model-swap-contracts.json",
+      "purpose": "verified A/B/H changeover evidence: contracts",
+      "sha256": "383ecf822c7f23dc94c5eb4e2080922c62b2e73354248e29e4edb529b860d6bc",
+      "size_bytes": 20697,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/model-swap-verification.json",
+      "purpose": "verified A/B/H changeover evidence: verification",
+      "sha256": "b24ac7cd7fedc37402f4a3e813de0fc279662e92d224e170ea9cac422bde2c56",
+      "size_bytes": 54048,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/model-swap-build-receipt.json",
+      "purpose": "verified A/B/H changeover evidence: build-receipt",
+      "sha256": "a4c7b815f3635accccd8634b49a0797a737d740c2cc5a40ed465989b6e921db3",
+      "size_bytes": 7106,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
+    },
+    {
+      "path": "visual/assets/model-swap-latest.json",
+      "purpose": "verified A/B/H changeover evidence: latest",
+      "sha256": "cb717891f66765d1501b5573738ec60e16e023eea8cf3a0326cc61572b95baa0",
+      "size_bytes": 265,
+      "rights": "COMMUNITY-DISPLAY-ONLY"
     }
-  ]
+  ],
+  "html_font_subsets": {
+    "family": "SF Noto Sans SC",
+    "license": "SIL Open Font License 1.1",
+    "variable_font_path": "tools/fonts/NotoSansSC-VF.ttf",
+    "variable_font_sha256": "d68bafcb48a2707749396aa12bbbd833cb70401f3a9a689fd2902c7e0d295964",
+    "embedder_path": "tools/embed_font_subset.py",
+    "embedder_sha256": "bb5dbea924efd08a2492276923102df4079f995934256b152acb76de03aa3240",
+    "pages": [
+      {
+        "path": "visual/index.html",
+        "sha256": "1829e4f62c18493be5381b400ce6cad6386ce060d6702057fb9a4d9458761eaf",
+        "size_bytes": 465702,
+        "woff2_subsets": [
+          {
+            "weight": 400,
+            "size_bytes": 161216,
+            "sha256": "26937acbb39726d0348bd2bec8d8f80b1ab047263d276c47042614fa0c199516"
+          },
+          {
+            "weight": 700,
+            "size_bytes": 161116,
+            "sha256": "6bd8699bda6c231eaeb04cbf00218ed7d72c872831e1f11bb03858d603482dfd"
+          }
+        ]
+      },
+      {
+        "path": "visual/index.en.html",
+        "sha256": "87e4e759944b0bc337075d888781db1cc738b95627513772c8af6757d8f746ff",
+        "size_bytes": 149272,
+        "woff2_subsets": [
+          {
+            "weight": 400,
+            "size_bytes": 42124,
+            "sha256": "80128581b5ca3f914f21d11f1773d1ea4aaca9c38809fb9f7ff79f0094214a05"
+          },
+          {
+            "weight": 700,
+            "size_bytes": 42160,
+            "sha256": "fc8cc65c7eeaf24b58053383823d428d392b37f725c4fe046f11c852a29d959b"
+          }
+        ]
+      },
+      {
+        "path": "report/proposal.html",
+        "sha256": "ebd7fee62fad26cded9bf2b39151d3aa7a0a9a40a712011ae9ce5c92a3cc1ba7",
+        "size_bytes": 970198,
+        "woff2_subsets": [
+          {
+            "weight": 400,
+            "size_bytes": 321712,
+            "sha256": "29a4df7719fba2ebda0395054a33ebd13a5662107d4370fff294fd8cf45e5215"
+          },
+          {
+            "weight": 700,
+            "size_bytes": 321444,
+            "sha256": "31d82ea44eade4da279ed79c7226e85663c697d024498fae80aca90b4a8324f1"
+          }
+        ]
+      },
+      {
+        "path": "report/proposal.en.html",
+        "sha256": "576b7b2a00297ef33723cdb8da564150a43aa71b607a74f2352fe5622e24a6ce",
+        "size_bytes": 202835,
+        "woff2_subsets": [
+          {
+            "weight": 400,
+            "size_bytes": 28968,
+            "sha256": "353d4a77c2e2e95a8ae1749ccdb4d32ebe7583b82062f3874546a09c43b914f9"
+          },
+          {
+            "weight": 700,
+            "size_bytes": 29020,
+            "sha256": "691e659da442906081eb34083733f08781e600022756e7cecf0330b578ff6060"
+          }
+        ]
+      }
+    ]
+  }
 }
