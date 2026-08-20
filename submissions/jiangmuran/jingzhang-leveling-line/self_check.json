@@ -189,7 +189,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The citation check ran in the direction that could not catch a dangling tag.",
-      "message": "citation_resolves_qa.py — citation resolution: 319 citation(s) across both editions each resolve to a registered id, checked prose-to-registry — the direction source_citation_qa cannot see, and the one a fabricated tag survives (assumption 19, depth 15, metric 60, self_check 134, source 32, standard 9). Scope: [data:] resolves against geometry that is not in the reviewer's packet and is claim_state_qa's to check, not this gate's"
+      "message": "citation_resolves_qa.py — citation resolution: 340 citation(s) across both editions each resolve to a registered id, checked prose-to-registry — the direction source_citation_qa cannot see, and the one a fabricated tag survives (assumption 19, depth 15, metric 60, self_check 134, source 32, standard 9). Scope: [data:] resolves against geometry that is not in the reviewer's packet and is claim_state_qa's to check, not this gate's"
     },
     {
       "check_id": "PKG_CJK_LEAK_QA",
@@ -1394,7 +1394,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31162913,
+      "total_bytes": 31165240,
       "maintainer_bypass": false
     },
     "stderr": ""
