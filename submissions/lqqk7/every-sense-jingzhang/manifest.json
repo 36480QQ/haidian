@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "094b73d713602888dba5b7096955c8368788aa4da35f9ebf06ec51e66e4d283a"
+      "sha256": "7d0762aabcfffd476da497477f4beb56846b03dd2a62a00421cc87846044a03f"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "65ea731911b392858354a6836e5d3e3dc9a77903b36b0593327eed2c3e0f7eeb"
+      "sha256": "2609b2977a54cf8465a203fd7de253ae46eda161ce8972c7c7a3377e22628e1b"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7deb6be094c00eb0991b2e722e735e04f559b33e46493a1656193cc99c7b9ca8"
+      "sha256": "1b202ddff7e11f9aa00fbd48455635fcb84bda294da3f3d928e674e46401a627"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "351a1ea8c9a815b05120e8257e25c2b36c3bed74cf4d76bef011e0ecde351cc5"
+      "sha256": "e3e2cf19d4b186ba3509037347f0ea3b5b4148694cc06fc2a88be96741fbe71b"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "cc7ccf4817bfde8553e8642fdb3bf4273d7a3802f49398b7eae8700de5782c78"
+      "sha256": "f1e0d87bfd00391ee81c331a0eda1df67c40e67ba70c72358a04798fd7080b61"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "63480e963ea6e062a6d253481bfbf37ae8ed4ca73bba9e0c6ce81f1e79df71c3"
+      "sha256": "aa2c0fc972584cde74aa77b54709f746dd0285848dd0a8d92fbd75eb1b2dd9bf"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d7bfa3cf561e846c8854b6bd0dfb265d5645e38d55280c7df1c0c23471abc6fb"
+      "sha256": "2d9ef6c586c3c5d3a40e1ed44fb61650853f242cd8602dbacc46e861daae6ea5"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "45db1b9a8b1762be1b452549950836a48e28a348a8d554e9a9f4b9411352cce3"
+      "sha256": "ba379704e1dd7d60cc5311c5cd8d14425d0b2dfdf62c5243f134e89a998899ea"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -203,7 +203,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "90d799d8ddb1f45443758ff437114eac0164ac57c7a876e050204bc245ccbdb6"
+      "sha256": "377d50aaeba041ab3b826ce979d2e99ecd421f03bc52918862bb57625d6a42b0"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -221,7 +221,7 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "2114e638e230b3806231643acc412b9fd310dd60317032586855a6e2555431e5"
+      "sha256": "16286708e32b0cb19a46556ada03d417ff8ce36185b23325dce61ac33ceef343"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8591b57324463836490f04d25e37a015fb81a24753d50c894a948f97aa0e1947"
+      "sha256": "7a3d12598a2f49f8479434d77baa049126b4c0ca1625c2f32e36d489675de0bc"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8676703c52bc56aa5c8e93b5ab1208becc8fc7d641c4a3556a922885a88da59b"
+      "sha256": "5cd5d7bd76da2d7223119e7d10547cea6b6dbf356d551d3096b6aae0d47d79b7"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -260,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "f2c8e506f46a7981e12d9194f425610466b9cde8c3b8519c9bc381c5980eac68"
+      "sha256": "60c20f982000f020a6697a20b050d637ff6ac237cf9d581ee8867846ca1f7eda"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -268,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "ce1525361505ae2edb21a44adcc2d1ce73e1218ea2a706d7a63d3214b536437c"
+      "sha256": "5b4715cb66ed70b09828dc1e15a487704dd8d5906a2f28c26af96df3f4ca92b6"
     },
     {
       "path": "visual/index.en.html",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a66d7fbeda60ea6c08ba8c4623272cc330b77b9857c9f0e0091a451b77443689"
+      "sha256": "5aa1431a3f6c1fd147a7757e8bf8d90db01e65a6b71fb5e63aadacae3339ce5f"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "b21f34559f3372f07a67647ee0b68a7f615c8add4beaa4d2d200aecaf4b286ca"
+      "sha256": "45cdeafbf8775bfe22f2fbcafa9bb659b7bdf0fa4ac59563e7e5cdedd66f38c5"
     },
     {
       "path": "assets/media/cover.webp",
@@ -776,7 +776,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "b5ab247bcef27b7ef82b46352d7a2ac219e15e89e4598907f70a5884e59a98e8"
+      "sha256": "42b749f89461e5f96adb8aed31d93117572fcfc120c37d3afe1487e9cc5e9bd1"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -785,7 +785,7 @@
       "language": "neutral",
       "title_zh": "随包自检闸门台账（十道闸门，逐道登记口径、当前读数与历史查获缺陷共 27 条）",
       "title_en": "Package self-check gate register (ten gates, each with its criterion, current reading and the 27 defects the gates actually caught)",
-      "sha256": "30a26f360ec4e2d899761a5413049f097f1fbb63ff1f96dc08bc74d8baf1a982"
+      "sha256": "ce5a13ac7d15c87433d298eca21eb5744cdbe9b5ab3c0446b48f0e32a7a49e07"
     },
     {
       "path": "visual/assets/service-desk-gonogo.json",

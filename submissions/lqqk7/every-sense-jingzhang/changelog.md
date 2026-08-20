@@ -2,6 +2,27 @@
 
 本文件记录 `submissions/lqqk7/every-sense-jingzhang` 的版本演进。所有条目按仓库提交历史如实登记，不包含尚未完成的工作结论。
 
+## v8.5 - 2026-08-20
+
+**五线独立盲审终报清单驱动的终修批次：七项索引表可追溯性补链、用地要素字段口径补齐、三道闸门口径注记（含 PDF Type3 字体新登记例外）、英文报告图版复用逐张判读、展示页深证据入口**
+
+- **本轮驱动与清单口径**。本版为五线独立盲审终报清单驱动的终修批次。清单待闭合项为两条 S3、六条 S4 与一条 P1 级建议（P1-4），清单对其余各线的结论为无异议。下列条目按清单逐项登记处置，未列入清单的内容一律不动。
+- **S3-2 官方七项设计要求索引表的可追溯性补链（三处同做）**。其一，`sources.json` 新增第 44 条来源 `PUBLIC-BRIEF`，对象为 `brief/public-brief.md`，`source_type` 登记为 `user_provided_cleared`、`public_status` 登记为 `public-draft`，并在 `not_usable_for` 中如实写明该文件自述状态为「公开版草案，正式发布前需维护者确认」，因此不是官方公告正文、不是审定结论，也不构成边界、法定控制或实测数据的依据。其二，双语正文索引表段首补 `[source:PUBLIC-BRIEF]` 锚点（中英同位，各一处）。其三，同段补一句口径注：本表七项逐条对应公开任务书草案的七条重点方向、表内标题为节略；官方公告 1.5 按三层范围展开为十个子项、智能体任务书为六项任务，两套口径均已由 `compliance_matrix.json` 逐条覆盖（该文件当前 23 条要求，含 1.5.1.1—1.5.3.3 十个子项与一条重点区必选项总条、`agent.1`—`agent.6` 六项）。
+- **来源数 43 → 44 的连锁刷新**。逐资产权利台账编制口径段的「四十三条来源」改为「四十四条来源」；A0 双语展板第 06 板与 A3 双语册第 09 页的「43 条登记来源」读数同步改为 44，四册按既有渲染链原样重出并逐册以文本层比对确认差异仅此一处（`a0-boards.pdf` 4,198,324 → 4,198,326 字节、`a0-boards.en.pdf` 4,356,433 字节不变、`a3-booklet.pdf` 2,084,915 字节不变、`a3-booklet.en.pdf` 1,978,912 → 1,978,911 字节）；「27 条官方公开材料」未变，新增条目不属 `official_public`。QA 记录的 A3 英文册字节读数随之刷新。
+- **S3-1 `geometry/land_use.geojson` 字段口径补齐**。LU-001—LU-004 四个要素补 `official_boundary: false` 与 `evidence_status: "concept_only"` 两字段，取值与字段位序逐字跟随 `buildings`／`constraints`／`green_space`／`phasing`／`public_space` 五个几何文件的既有体例（五文件全部要素该两字段取值一致）。此前该口径只写在四个要素的 `rollback_state_zh`／`rollback_state_en` 文本里而未落为字段，属登记形式缺口而非口径冲突。本次为纯属性插入，几何坐标零改动：改前改后四个要素 `geometry` 对象的规范化 SHA-256 均为 `f6ac07737a254c1fe05f4a3e613b1d2ce78a24b0e5d7989a6c15395e4d75c7c6`。
+- **`geometry/roads.geojson` 同口径补齐**：五条线位要素同批补 `official_boundary: false` 与 `evidence_status: "concept_only"` 两字段（与 land_use 同一体例与位序），几何坐标经规范化哈希比对零改动；至此六个自绘几何文件的证据状态字段口径全部一致。
+- **双语正文 frontmatter `iteration` 由 v8.0 改为 v8.5**。v8.1—v8.4 四轮均未同步该字段，属登记漏改；本版一次改正，正文其余内容不受影响，该字段改动为零字节增量。
+- **逐资产权利台账补 manifest 自条目摘要豁免说明**。编制口径段的 `manifest.json` 登记项后补一句：`manifest.json` 自身条目按结构性排除不带 `sha256`，自引用不可能自含自身哈希，该排除已登记于随包自检闸门 PG-06 的判据。此前台账只声明覆盖全部文件条目，未说明这一条结构性例外。
+- **三道自检闸门补口径注记（`visual/assets/package-integrity-gates.json`）**。三条一律只登记既有事实，不新增检查、不产生任何指标数值。
+  - PG-06（manifest 摘要全覆盖）补 `deterministic_validation.changed_files` 口径：该字段是校验器相对基线分支列出的差异文件清单，本包相对基线为整体新增，故清单恒等于包内全部交付文件（当前 142 条，与 `manifest.json` 条目数相等），不是某一版的改动清单，逐版改动仍以本文件为准。
+  - PG-07（PDF 字体审计）补 Type3 判据口径，并把当前读数由「四册零非 OFL 条目」精确为「四册零非 OFL 嵌入字体程序」。本闸门判定的对象是嵌入的字体程序（`FontFile`／`FontFile2`／`FontFile3`），四册中此类条目仍只有 Source Han Sans SC 的 Regular／Medium／Bold 三个子集。除此之外打印管线还会写出 Type3 字体条目：Type3 不含任何字体程序，字形以 PDF 路径算子逐个写入页面，原判据未覆盖该类。逐册清点为 A0 中文册 2 个、A0 英文册 0 个、A3 中文册 11 个、A3 英文册 5 个。**本轮由此查获一处此前未登记的例外**：A3 中文册第 15 页的两个 Type3 条目（各只落一个字形），其 `FontDescriptor` 的 `FontName` 为 `PingFangSC-Regular`，即两个字符在渲染时回退到 macOS 系统字体后由打印管线转为轮廓路径。该两条不随包分发任何字体程序，因此不构成字体文件再分发，但描述符名称已越出本包已清权的 OFL 范围。本版如实登记为已知例外，处置待定：消除该例外需重出 A3 中文册并把这两个字形补进思源黑体子集，而生成链的字体子集步骤（`wp4b/mkfont.py` 与 `build/tokens.js`）在本次运行环境中已缺失，本版无法完成补字，故不作未经验证的改动。
+  - PG-08（QA 记录条目自洽）补量测脚本口径：`qa-proofing-record.json` 的读数由一次性量测脚本产出，这些脚本不属于交付件、不随包分发；条目登记方法、工具类型、日期与逐项结果，读数按方法可复算，但本闸门不提供可直接重跑的随包命令（与 PG-10 登记 `reproduction_command` 的口径不同），相应读数一律以「方案方自行执行的自查」计。
+- **英文报告页复用五张图版的逐张判读与登记**。`report/proposal.en.html` 内嵌的 `tactile-corridor-map`、`district-strategy`、`heritage-sequence`、`green-section-principle`、`bluegreen-structure` 五张图版无英文单独版本。逐张判读结论为：五张均属图内中英逐行并置的双语单版图，标题、图例、判据行、注记与底图署名各带英文对照行，英文侧因此直接共用同一文件，不构成语言缺口，也不需要另出英文版；五张此前已按 `manifest` 的 `language=neutral` 登记、不设成对件，本版把上述判读结论与一条已登记局限（少量二级注记如坐标系与快照批次以中文为主、英文对照为节略）补入 `qa-proofing-record.json` 的 R2-06 条目。此项按 QA 登记处理，不占用英文正文字节。
+- **P1-4 展示页深证据入口**。`visual/index.html` 与 `visual/index.en.html` 首屏标题区各加一个直达按钮，链接到第 16 章交互场景（`#chapter-16`）——该章是评审可亲手切换 AI 开关并复演 OP-04 证据链的入口。按钮体例跟随既有导航（同色板胶囊样式、纯 CSS、无脚本、键盘可聚焦），双语各一处；无头截图自检确认 1440 × 900 视口下首屏版式未变形、导航条与评审路线区块位置不变。
+- **英文正文字节自筹明细**。本版新增的英文口径注句净增 306 字节，而改前 `proposal.en.md` 距 262,144 字节上限仅余 56 字节，故按删除测试在全文自筹。自筹一律采用措辞收紧，不删事实、不删证据锚点、不删控制台样例条目、不改行数：其一，画像章与显示位数章共十七处长句收紧（如「it does not replace … and it does not automatically turn」改为「it neither replaces … nor automatically turns」、「labelled as full recalculated values」改为「labelled as such」、四处「so that」改为「so」），合计回收 142 字节；其二，全文十处「together with」改为「with」、两处「has to be」改为「must be」、一处「that gate has」改为「it has」，合计回收 101 字节；其三，索引表段自身的措辞收紧与两处「on the basis of」改为「by」，合计回收 53 字节。三批合计回收 296 字节。`proposal.en.md` 由 262,088 字节变为 262,098 字节，距 262,144 字节上限余 46 字节；`proposal.md` 由 214,769 字节变为 215,038 字节。
+- **计数终值**。双语总行数 963（`wc -l` 口径 962）、非空行 674、表格行 315 四项均未变，逐行结构不一致数仍为 0；四类证据锚点由 268 增至 269（`source` 类 87 → 88，`metric` 79、`data` 88、`standard` 14 未变），`depth` 40、`assumption` 14、`self_check` 4 三项未变。正文自查段与 `qa-proofing-record.json` 的锚点读数同步改为 269／269，复测日期改为 2026-08-20。`manifest.json` 文件条目仍为 142（本版无新增或删除文件），改签条目为本版实际改动的文件。`sources.json` 由 43 条增至 44 条，其中 `official_public` 仍为 27 条。包体 git 追踪 142 个文件合计 40,490,661 字节（38.615 MiB）。
+- **护栏与四门**。反向引用断言护栏 `refcheck` 通过 46 项、零失败；双语报告页按 `render_proposal_html.py` → `post_render_report.py` → `imgdim.py` 全链重渲，逐页文本层比对确认差异仅为本版两处正文改动。
+
 ## v8.4 - 2026-08-18
 
 **审查驱动的终修批次：展示页图版挂载补齐、权利台账十类件数对账与触觉交付补段、自检闸门六道读数刷新、短片英文权利声明残留读数修复**
