@@ -50,10 +50,10 @@
     <figure><img src="../assets/figures/masterplan.en.png" alt="Master plan"><figcaption>Master plan（Fig1）: light grey = existing buildings (OSM), white-cased dark line = real Jing-Zhang railway, dark green = Hyper Line spine, red dots = seven stitches, stars = three pilgrimage landmarks</figcaption></figure>
     <figure><img src="../assets/figures/site-overview.en.png" alt="Belt overview"><figcaption>Belt overview（Fig2）</figcaption></figure>
     <div class="metric-row">
-      <div class="metric"><div class="m">Emergence Index EI (0.823 yellow → all-green)</div><div class="n">0.9625</div></div>
-      <div class="metric"><div class="m">Gate 1: percolation p_c</div><div class="n">0.840→0.904</div></div>
-      <div class="metric"><div class="m">Gate 2: syntactic integration</div><div class="n">+36%</div></div>
-      <div class="metric"><div class="m">Gate 3: jobs-housing entropy</div><div class="n">+5.3%</div></div>
+      <div class="metric"><div class="m">Emergence Index EI (0.823 yellow → all-green)</div><div class="n" data-vid="ei">0.9625</div></div>
+      <div class="metric"><div class="m">Gate 1: percolation p_c</div><div class="n" data-vid="per">0.840→0.904</div></div>
+      <div class="metric"><div class="m">Gate 2: syntactic integration</div><div class="n" data-vid="syn">+36%</div></div>
+      <div class="metric"><div class="m">Gate 3: jobs-housing entropy</div><div class="n" data-vid="ent">+5.3%</div></div>
       <div class="metric"><div class="m">Wilson λ supercritical share</div><div class="n">29.17%</div></div>
       <div class="metric"><div class="m">Fractal D (large)</div><div class="n">1.746</div></div>
     </div>
@@ -126,7 +126,23 @@
     </div>
   </section>
 
-  <section id="gallery">
+    <section id="spin3d">
+    <h2>5b · 三维漫游（拖动旋转 · 离线伪 3D）</h2>
+    <p style="font-size:.85rem;color:#5c6b76">鼠标按住拖动旋转（松手自动旋转）；三个对象：120×120 街区模块 / 相变广场千鳞树阵 / 主脊平嵌步道。预渲染 24 视角序列，纯本地无外部库。</p>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:flex-start">
+      <canvas id="cv3d" width="400" height="300" style="border:1px solid #d8dcd8;border-radius:6px;background:#f6f7f4;cursor:grab"></canvas>
+      <div>
+        <p style="margin:0 0 .4rem">
+          <button class="tg on" data-obj="block">街区模块</button>
+          <button class="tg" data-obj="grove">千鳞树阵</button>
+          <button class="tg" data-obj="spine">主脊步道</button>
+        </p>
+        <p style="font-size:.8rem;color:#5c6b76" id="spin3d_note">120×120 街区：24m 裙房街道墙 + 60–80m 塔楼退后 + 40×40 内院</p>
+      </div>
+    </div>
+  </section>
+
+<section id="gallery">
     <h2>6 · Rendering gallery (AI concept intents, not implementation; each bound to an anchor card)</h2>
     <div class="grid">
       <figure><img src="../assets/media/cover.jpg" alt="Cover"><figcaption>Cover: the flush-rail time axis at dawn (rails are the subject)</figcaption></figure>
@@ -193,5 +209,68 @@
   </section>
 </main>
 <footer>KUN-SAL Spatial Quant Lab · GitHub: Anshengdesign · open co-creation proposal, not formal planning</footer>
+<style>
+  .lb{display:none;position:fixed;inset:0;background:rgba(10,14,12,.92);z-index:99;align-items:center;justify-content:center;cursor:zoom-out}
+  .lb.open{display:flex}
+  .lb img{max-width:94vw;max-height:92vh;border-radius:6px;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+  .tg{margin:.4rem .2rem;padding:.3rem .9rem;border:1px solid #1f4e2d;border-radius:99px;background:#fff;color:#1f4e2d;cursor:pointer;font-size:.85rem}
+  .tg.on{background:#1f4e2d;color:#fff}
+  main figure img{cursor:zoom-in}
+  html{scroll-behavior:smooth}
+</style>
+<div class="lb" id="lb"><img id="lbimg" alt=""></div>
+<script>
+(function(){
+  var lb=document.getElementById('lb'),li=document.getElementById('lbimg');
+  document.querySelectorAll('main figure img').forEach(function(im){
+    im.addEventListener('click',function(){li.src=im.src;lb.classList.add('open');});
+  });
+  lb.addEventListener('click',function(){lb.classList.remove('open');});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open');});
+  var B={ei:['0.823（黄档）','0.9625（全绿档）'],per:['0.840','0.904'],syn:['现状偏低','+36%'],ent:['7.454','7.850（+5.3%）']};
+  document.querySelectorAll('button[data-vid]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var on=!btn.classList.contains('on'),v=btn.dataset.vid;
+      document.querySelectorAll('[data-vid]').forEach(function(t){
+        if(t.tagName==='BUTTON'){t.classList.toggle('on',t===btn&&on);return;}
+        if(t.dataset.vid===v&&B[v][on?1:0]!==undefined)t.textContent=B[v][on?1:0];
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var sheets={block:'../assets/figures/3d-block.png',grove:'../assets/figures/3d-grove.png',spine:'../assets/figures/3d-spine.png'};
+  var notes={block:'120×120 街区：24m 裙房街道墙 + 60–80m 塔楼退后 + 40×40 内院（天际线双范式）',
+             grove:'相变广场千鳞树阵：4.5m 细杆 + 双面铝鳞 + 砾石铺装（渗流相变的可视化）',
+             spine:'主脊平嵌步道：轨顶=铺装面 0 高差 + 野花带 + 阶梯座椅 + 鳞阵'};
+  var canvas=document.getElementById('cv3d'),note=document.getElementById('spin3d_note');
+  if(!canvas)return;
+  var ctx=canvas.getContext('2d'),obj='block',img=new Image(),frames=24,cols=6,fh=300,fw=400,fi=0,auto=true;
+  img.src=sheets[obj];
+  function draw(){
+    var x=(fi%cols)*fw,y=Math.floor(fi/cols)*fh;
+    ctx.clearRect(0,0,fw,fh);
+    ctx.drawImage(img,x,y,fw,fh,0,0,fw,fh);
+  }
+  function tick(){ if(auto){fi=(fi+1)%frames;draw();} requestAnimationFrame(tick); }
+  var drag=null;
+  canvas.addEventListener('mousedown',function(e){drag={x:e.clientX,fi:fi};auto=false;canvas.style.cursor='grabbing';});
+  window.addEventListener('mousemove',function(e){ if(!drag)return; var dx=e.clientX-drag.x; fi=((drag.fi+Math.round(dx/12))%frames+frames)%frames; draw(); });
+  window.addEventListener('mouseup',function(){ drag=null; canvas.style.cursor='grab'; setTimeout(function(){auto=true;},1200); });
+  canvas.addEventListener('touchstart',function(e){ var t=e.touches[0]; drag={x:t.clientX,fi:fi}; auto=false; },{passive:true});
+  canvas.addEventListener('touchmove',function(e){ if(!drag)return; var t=e.touches[0]; var dx=t.clientX-drag.x; fi=((drag.fi+Math.round(dx/12))%frames+frames)%frames; draw(); },{passive:true});
+  canvas.addEventListener('touchend',function(){ drag=null; setTimeout(function(){auto=true;},1200); });
+  document.querySelectorAll('button[data-obj]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      obj=btn.dataset.obj; img.src=sheets[obj]; note.textContent=notes[obj]; fi=0; draw();
+      document.querySelectorAll('button[data-obj]').forEach(function(b){b.classList.toggle('on',b===btn);});
+    });
+  });
+  img.onload=function(){draw(); tick();};
+})();
+</script>
+
 </body>
 </html>
