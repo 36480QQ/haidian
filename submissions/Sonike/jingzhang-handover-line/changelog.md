@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+- **把 48/48 与 96 条规则检查做成随包可重跑的脚本，补上方法论上最后一个洞（2026-08-20，不改版本号）。** 本包每一个数——面积、长度、比率、断面九段合计、二十个更新单元落点——都能由 `geometry/` 与 `metrics.json` 直接复算；**唯独这两个数不行，因为算它们的脚本在仓库外**。一份以「任何人拿同一份数都会得到同一个数」为全部信誉的方案，把两个摆在首屏的数字留在不可复算状态，这是自己违反自己的方法论。本条补上。
+  - **新增 `visual/assets/governance/protocol-check-runner.js`**（189 行，8.9 KB）：只读、离线、零第三方依赖的 Node 脚本。读取输入夹具 `shift-ledger-suite.json`，对 12 条交接账各跑 1 条基线与 7 类缺陷注入共 96 条，并按四项接管断言重算 12 × 4 ＝ 48 项，再与 `rule-check-report.json` 和 `simulation.json` 逐条比对。全部一致退出 0，任何一条不一致退出 1 并打印该条的发布值与重算值；`--json` 输出机器可读结果。
+  - **关键在于它是独立重写，不是搬运。** 原生成脚本不在手上，七条规则的谓词按 `rule-check-report.json` 里的 `rules[].statement_zh` 逐条重新实现（R1 双控分离查 `same_person_permitted` 与两侧 `role_code`；R2 查 `must_exist_before_smart_layer` 与渠道的 `continuity_rule`；R3 查 `unresolved_register` 里 `blocking && open` 时 `smart_layer_state_after_decision` 是否为 `off`；R4 查 `rollback_rehearsal.pass` 与是否被推到 `limited_trial`；R5 查 `record_origin` 为 synthetic 时 `touches_live_service` 与 `contains_personal_data`；R6 查 `refused` 时 `refusal_reasons` 是否为空；R7 查 `unassigned_concept_role` 时 `attestation_state` 与 `pair_state`）。**一致因此构成一次独立复现，而不只是重放。**
+  - **结果：96/96 与 48/48 全部一致。** 其中有一处细节可以逐条核：随包结果里有 **12 条记录的 `violations` 是两元素** `["R3","R4"]`——因为 R4 的注入把智能层推到 `limited_trial` 时阻塞项仍开着，R3 必然同时被触发。脚本的注入口径写在注释里，重算出的两元素记录与发布结果**逐条对上**，这一处此前从未被写出来过。
+  - **做过阴性测试，确认它不是恒真**：把一条账本的 `refusal_reasons` 清空 → 脚本报出 SCN-04 的五条记录多出 `R6_REFUSAL_NEEDS_REASONS` 并退出 1；把 `simulation.json` 里一项断言结果改成 `fail` → 报出「接管断言 47/48」并指名 SCN-06 的 `human_takeover_route` 发布值与重算值不同，退出 1。
+  - **范围限定写在脚本、manifest 描述与正文三处同文**：只重算协议逻辑，不证明现场绩效、安全、合规或获批；**现场演练仍为 0/12**，`metrics.json` 未动一个字段。
+  - **技术约束记一笔**：投稿目录**全域禁 `.py`**，但 `ALLOWED_VISUAL_ASSET_EXTENSIONS` 在 `visual/assets/` 下**允许 `.js`**（主线上有 297 个先例）。所以这类 runner 唯一的合法形态就是离线 JS。
+  - **同时纠正一条外部判断，以免以后照着它做**：有说法称「两个 96 分包都把桌面演练做成可重跑脚本」。逐包核过：`budoyh/jingzhang-168` 确有 `unplugged-runner.js`（33 行），但**它的引入 commit 就是那次「整包重写为 City On v4」的 PR #1819 本身**，86→96 里有几十项改动，归因不到 runner；而**另一个两次拿 96 的包 `lcly2462525/jingzhang-slow-variables` 一个脚本都没有**（文件构成只有 png/json/geojson/md/pdf/html）。**所以 runner 不是 96 的必要条件。** 另外 08-11 那天全场 188 份、10 份 ≥93、最高 96，今天 37 份、最高 90、≥93 零份——那个 96 有很大成分是窗口。**本条因此不是提分动作，预期分数变化 0；做它的唯一理由是补方法论的洞。**
+  - ⚠️ **另记一条口径事实**：评审文本输入不含 `visual/assets/`，评审流水线也不执行任何脚本，**所以「评审可当场重跑」做不到**——脚本对评审可见的部分只有正文里那一段。它真正的读者是拿到仓库的人。
+
 - **更新单元表加一段防误读，并把配色修复的闸门追查清楚（2026-08-20，不改版本号）。** 上一版（#3508）之后收到第二轮外部批评四条，逐条核后**一条是真缺陷已修，一条的前提被追查推翻，两条判为不改并给出理由**。
   - **真缺陷：那张精确到米的 20 行落点表会被读成现状清单。** 表里「处置」列写着「保留优先适应性再利用」，而这二十个单元的 `design_status` 全是 `conceptual_typology_cell_not_existing_inventory`——**它们不对应任何现状建筑**，「保留优先」保留的到底是什么，读者只能去翻 geojson 才知道。已把列名改为**「建议处置方向」**，并在表前加一段把这层点破：它是「将来在这个位置上查到什么，都先按保留与适应性再利用去试」这样一个**面对现场的先后次序**，不是对已知对象的处分；`acceptance_gate` 三项与 `rollback_state`「保持现状使用与现状条件」一并写进正文。**一张精确到米的表天然像现状清单，这段话就是为了把这层误读挡住。**
   - **「唯一出路是重建 F/01、F/05 生成器」这个前提，追查后不成立。** 批评说新增的空间内容全在文字里、图上一张没加，出路是修好 F/01/F/05 以便「空间内容上图 ＋ 配色修复解锁」。逐张逐行查完，实际情况是三件事：
