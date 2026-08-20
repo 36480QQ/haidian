@@ -1540,12 +1540,12 @@ It is corrected rather than left standing because **the sentence is an instance 
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-415 entries. By finder:
+416 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 45 | Run against the shipped package, not a draft |
-| The author | 276 | Found while working |
+| The author | 277 | Found while working |
 | This package's own gate | 29 | Caught at build time, which is what a gate is for |
 | An outside adversarial read | 31 | A reader outside this package, on the files the reviewer gets |
 | **Reviewers outside this proposal** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190; the repository CI |
@@ -1574,7 +1574,7 @@ It is corrected rather than left standing because **the sentence is an instance 
 | Geometry not meaning it | 7 |
 | Answers what it cannot | 7 |
 | Answered in our own words, not theirs | 6 |
-| Outlived a corpus | 5 |
+| Outlived a corpus | 6 |
 | A rule with nobody to apply it | 4 |
 | Drawn without its ground | 2 |
 | Six classes for seven | 2 |
