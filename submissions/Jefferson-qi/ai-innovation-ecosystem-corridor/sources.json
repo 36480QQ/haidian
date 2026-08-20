@@ -27,6 +27,7 @@
       "SRC-2026-HAIDIAN-AI-POLICY",
       "SRC-EXTERNAL-REF-BOSTON-NY",
       "SRC-EXTERNAL-REF-OPC",
+      "SRC-EXTERNAL-REF-BJ-CENSUS-2020",
       "SRC-OSM-COPYRIGHT"
     ]
   },
@@ -386,6 +387,29 @@
         "confirmed government funding commitment for this project"
       ],
       "cross_reference": "与SRC-2026-HAIDIAN-1X1政策方向一致"
+    },
+    {
+      "id": "SRC-EXTERNAL-REF-BJ-CENSUS-2020",
+      "title": "北京市第七次全国人口普查公报及分区公开数据、北京市及海淀区历年统计年鉴与统计公报",
+      "publisher": "北京市统计局、国务院第七次全国人口普查领导小组办公室",
+      "published_date": "2021",
+      "url": "https://tjj.beijing.gov.cn/",
+      "authority_level": "external_reference",
+      "in_approved_formal_sources": false,
+      "in_external_reference": true,
+      "accessed_date": "2026-08-18",
+      "license": "政府公开统计数据",
+      "verification_status": "public_statistical_data_based_estimation",
+      "usable_for": [
+        "Haidian resident population density reference",
+        "employment structure context",
+        "population and employment estimation for the study area"
+      ],
+      "not_usable_for": [
+        "precise survey data for the study area",
+        "official census data for the provisional study boundary"
+      ],
+      "estimation_note": "统筹研究范围常住人口约45-55万人、人口密度约1.0-1.3万人/km²等数值，基于海淀区常住人口总量（七普）按面积密度与建成区特征推算，非本范围普查数据，待官方现状普查数据补齐后需重新校核。"
     }
   ]
 }

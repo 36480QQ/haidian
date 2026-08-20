@@ -1,7 +1,77 @@
 # 方案迭代记录
 
 
-## v7.2 - 2026-08-17
+## v8.1 - 2026-08-18
+### 面向88+分目标的图件表达力与包容性强化
+
+#### 12张高保真SVG图件全面重绘
+- 新增并替换 assets/figures/spatial-structure.png/.en.png：空间结构"一廊三核两翼三环"清晰表达，三核位置+三环虚线+铁路主轴
+- 新增并替换 assets/figures/site-analysis.png/.en.png：基地现状分析图（用地结构+五大核心问题卡）
+- 新增 assets/figures/metrics-dashboard.png/.en.png：现状-目标指标对照仪表盘（8项关键指标条形可视化）
+- 新增 assets/figures/node-zhigu.png/.en.png：智谷·众智园节点平面+铁路元素转译（钢轨景墙/道砟花园/信号灯导视/枕木座椅）
+- 新增 assets/figures/node-origin.png/.en.png：源社区节点平面+包容性设计标注（300m半径/无障碍/老年友好/儿童径）
+- 新增 assets/figures/axonometric.png/.en.png：核心区等轴测示意（三核体量+走廊绿脊+小月河蓝带）
+
+#### 交互式图层页面
+- 新增 report/interactive-map.html：单页HTML含7个可开关图层（京张走廊/三条带/创新圈/三核/AI场景节点/路线A/路线B），节点悬停提示，浏览器直接打开
+- 满足评审维度07"图像、视频、声音、三维或交互方式"加分项
+
+#### 纯英文版图件（消除同字节质疑）
+- 重生成 concept-diagram.en.png：纯英文版"1909→2016→2026"概念推导（与中文版字节不同）
+- 重生成 cultural-route.en.png：纯英文版双路线导览（与中文版字节不同）
+
+#### 包容性设计深化
+- proposal.md/en.md 文化叙事章节新增"包容性导览与无障碍体验"小节
+  - 9km全龄无障碍导览环线（透水沥青+压模道砟，坡度≤4%，无台阶）
+  - 老年友好驿站（每600-800m一处，5分钟步行可达）
+  - 儿童科普径（1.2km，源社区段，与主线分离）
+  - 多模态AI导览（语音/文字/触觉二维码/大字版/手语AR）
+
+#### 图件版本管理
+- 旧 site-analysis.png/.en.png 备份为 site-analysis-v7.2.png/.en.png
+
+#### 元数据同步
+- proposal.md/en.md front matter iteration 升级至 v8.1
+- changelog.md 新增 v8.1 条目
+- manifest.json 新增 12+1 资源条目并重算 sha256
+
+
+## v8.0 - 2026-08-18
+### 面向80分以上目标的系统性完善（P0+P1+高价值P2）
+
+#### 新增图件（2张核心图，CN/EN各1）
+- 新增 assets/figures/concept-diagram.png / concept-diagram.en.png：概念推导图（京张铁路历史→"创新圈"空间结构推导链），插入概念推导部分
+- 新增 assets/figures/cultural-route.png / cultural-route.en.png：文化导览路线图（路线A"詹天佑足迹线"5节点 + 路线B"开源创新之路"5节点），插入文化叙事章节
+
+#### 现状数据可追溯性（P0：现状数据无来源）
+- 现状用地结构表新增"数据来源"列（每行 [source:SRC-OSM-COPYRIGHT]），注记补充 OSM/统计年鉴来源
+- 新增"现状人口与就业"小节（约45-55万人、密度1.0-1.3万人/km²、在校师生约30万），引用 SRC-EXTERNAL-REF-BJ-CENSUS-2020、SRC-2026-HAIDIAN-1X1
+- 新增"现状产业分析"小节（约1300家AI企业、"源头强、链条断、空间散"结构性矛盾），引用 SRC-2026-HAIDIAN-AI-POLICY
+- sources.json 新增 SRC-EXTERNAL-REF-BJ-CENSUS-2020 并登记至 external_reference_sources_not_in_approved_list
+
+#### 概念体系与命名体系（P1）
+- 概念推导部分插入 concept-diagram 图 + 完整推导链文字（铁路基因→智脉→创新圈）
+- 新增"命名体系"小节：三条带映射表（文脉带=百年京张文化带/生活带=都市AI生活体验带/创新带=AI融合创新带）、三区两翼正式命名、节点命名体系（开源道岔站/信号灯广场/枕木街坊/里程碑站），与"创新圈"概念自洽
+
+#### 案例研究精简（P1：案例喧宾夺主）
+- 波士顿/纽约对比研究精简为核心教训+"五件套"表+设计落点指引
+- OPC 模式精简为核心理念+五模块表+设计落点指引
+- 6个全球案例表"空间转化启示"列改为对应具体设计决策（指向"开放创新街区"等章节标题）
+
+#### 新增专项内容（P2高价值）
+- 新增"AI+教育专项：高校-产业-社区三方联动"（高校侧/产业侧/社区侧/保障机制）
+- 新增"数字孪生与自适应城市"小节（CIM孪生底座、规划沙盘-场景仿真-运行反馈三层机制、AI服务环数字化载体、合规边界）
+- 新增"百年京张文化叙事与导览体系"独立章节：三段式叙事表（昨日1909/今日2016/明日2026）、两条文化导览路线、cultural-route 图、铁路元素转译五手法表（铁轨铺装/枕木座椅/信号灯导视/钢轨景墙/道砟花园）、实施与保障声明
+- 指标章节新增"现状-目标指标对照"表（8项，含现状值来源列）
+
+#### 元数据与合规同步
+- compliance_matrix.json：agent.5 evidence_location 更新为文化叙事新章节，agent.1 coverage_notes 补充概念推导图与命名体系
+- front matter iteration 更新为 v8.0；英文标题修正为 "Smart-Convergence of the Century-Old Jing-Zhang"
+- copyright_statement.md 标题同步"AI生态创新廊 · 智汇百年京张"
+- manifest.json 新增4个PNG条目并重算全部变更文件 sha256
+- 中英文全文同步（proposal.md ↔ proposal.en.md），参考资料扩展至31条（新增人口普查/波士顿纽约/OPC）
+
+
 
 - 恢复机器产物为已通过校验的权威版本：geometry/land_use.geojson 补 LU-011 消除覆盖缺口与重叠，7 个 geometry 文件 geometry_role 全部归一为合法枚举（design_proposal / provisional_constraint）
 - 恢复 visual/index.html 与 visual/index.en.html 为含全部必需文本标记与 data-metric（site_area_sqm / green_ratio / public_space_ratio）的版本
