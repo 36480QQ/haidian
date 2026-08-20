@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9e4e07841f1f9309b4a80eb8717fd062da81378d7591927648e1a664a2724013"
+      "sha256": "9d23fa885237f3080fc8c511216c78e44c4de5a4cf69f6ec01f2426a8ce5881d"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7d482c8912a33974a443934fd6049db57610991f404c0ea0ac9685707c9ba6bb"
+      "sha256": "d37c397054edf95c83ffd2654c826fe1eb332d10d7a83ff0274353e3410f2f93"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "6561d78cd9c3603b0574ee9ed3a1d6c21ebdf10f2dac2b92f1e74431c0894fb6"
+      "sha256": "3630fc3f24e10ccac59cfa5f5c6eb8525c7891675f59a0c95c4748c221cbe4e7"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -128,7 +128,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "2c113a5da081741dd310d716246c589d157a513a33819fd7c73c6d16cb969aa2"
+      "sha256": "b55c4283f82fa001cee9cb81bec8fd431f340ed826332d7876db9d364b1b7094"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "cbf6c8829e8dac4070708c1718d81d1852cf62343b492b7a25fafff8b02eaa2e"
+      "sha256": "dbb7d7f0a88bfeb5676644221cb2ee91b82aae540b902ea7ec2b6ec3ad6f1737"
     },
     {
       "path": "report/proposal.en.html",
@@ -284,7 +284,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "549d58777c55f006f3f99cf2183edd6d873ac0a8ae817173c4ef3724f6cb5256"
+      "sha256": "60326658d784e475a9c36ebae261909721b4e5af89559c4b6131696fa5434caa"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -307,7 +307,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "eb0cdbb6a68f39030ddc0c4ecc7a874f9197a4c94cd3725102c0d62c3915daee"
+      "sha256": "526bad61171810d5fd802bbd8ff4f14d561167c8314aa8584ffaa1db9bed50a1"
     },
     {
       "path": "assets/figures/metrics-evidence-audit.en.png",
@@ -315,14 +315,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence-audit.png",
-      "sha256": "788896f0b91a1e9a815693454c71f100dcd020397a09d267ba241e0c28c029ba"
+      "sha256": "e3be25a82c83c486796678a47cba68a9c988ff303b9c2c5d4b5539f78c01d1a1"
     },
     {
       "path": "assets/figures/ecosystem-map.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "09a68dd3ab76aaf9e90fb9da6ecc5cbb3620d1f614723d94036faed60e297729"
+      "sha256": "3d27c7ab41e5d190497e3c38371640bb66bf98e1c489f9966e6dbf0716aa5aa3"
     },
     {
       "path": "assets/figures/ecosystem-map.en.png",
@@ -330,7 +330,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/ecosystem-map.png",
-      "sha256": "ffc900ae31ee3ceab8cd8d8931ad42c58f2f0051f9de464a874af68bda64fbd2"
+      "sha256": "dfa047483a4b60ae3dda0dbfb96515d25ef0eb64b7dece08b4dfc32c017306a0"
     },
     {
       "path": "assets/figures/op04-detail.png",
@@ -339,7 +339,7 @@
       "language": "zh",
       "title_zh": "OP-04 节点深化图版（1:500 总平 / 1:200 缝合区 / 1:50 断面 / 八要素卡）",
       "title_en": "OP-04 node detailing plate (1:500 plan / 1:200 stitch zone / 1:50 section / eight element cards)",
-      "sha256": "47405ae8b136409ab417061fabcd6e9aba5dfe56de0c1793ceaf31b8b5aff90c"
+      "sha256": "81741a844880882fd2f18ae5f8b4711b431adfc9690bbdb78bd49a1f03429358"
     },
     {
       "path": "assets/figures/op04-detail.en.png",
@@ -349,7 +349,7 @@
       "translation_of": "assets/figures/op04-detail.png",
       "title_zh": "OP-04 节点深化图版（英文版）",
       "title_en": "OP-04 node detailing plate (English edition)",
-      "sha256": "73d70fe32c90511a5e7a9c2d29562daf1075098787e6e47fcbfb426ad88da32e"
+      "sha256": "a7286a195d35f7e7e1e96eb5d20f2d76f8d4f55851c2fd55db4a558697d1cd40"
     },
     {
       "path": "assets/tactile/op04-papercraft.svg",
@@ -375,7 +375,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "056b0f7292f921177bb2c214edda9b3aa660ff716daba16a29ff5831822a6d4a"
+      "sha256": "e3bc865708e710ac7ccce154aa2426a6b1476110e2edcc3154e291674f2f92d1"
     },
     {
       "path": "assets/figures/section-profiles.en.png",
@@ -383,14 +383,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/section-profiles.png",
-      "sha256": "c15a0d3ead48dd5a05b49b561d7cf83be4b2dacfdd06f6d66e1b311493ed7087"
+      "sha256": "a4cbe1989786cb8659e80e0bcfcbbcb5e14e6b1ff22de0f79e345e87b07e2dd0"
     },
     {
       "path": "assets/figures/enterprise-journey.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "9955d4e93b8f04e5dba23927bac9ca9db5fa0bedc7c3d2027ce728aca195f376"
+      "sha256": "f5e02319826cef469ed13939d5156aae7c2375d974886997aba23b35840e619a"
     },
     {
       "path": "assets/figures/enterprise-journey.en.png",
@@ -398,7 +398,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/enterprise-journey.png",
-      "sha256": "f544e31bb2cc82b7a335fec272a82f68f43b993d34e283fb6d9c6fdef7e9bc2b"
+      "sha256": "4d9a364cddafd98a7ce0347962b03984b463c4d22f9f4a9909cdf9918989469b"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -495,7 +495,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "b5b3ab1ef11e3995d49e41677fd38a0c15fb2d5f717fd52340938b565ba46179"
+      "sha256": "ab3d062ef6af2c7925a1319f7e76eb4870f1dc839c4493ba0bd07e61f085664f"
     },
     {
       "path": "assets/figures/brand-system.en.png",
@@ -503,7 +503,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/brand-system.png",
-      "sha256": "bebe0662f524ff96a21183ca0daa36c70a6c36dcb1b624e1758ec249301e5d95"
+      "sha256": "6c2d5cdc662139f11c6d8152f59b235f8d01e8eb43380bf2b638c2a2bc7c444b"
     },
     {
       "path": "assets/figures/verification-overlay-00-all.png",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "6b43826d6682ed6e0c9731055da8466de56f51b526a11948643032bdff488afd"
+      "sha256": "2d100850e30077be0256931f42b090fc547864a206f6e94604f181fef1e3e15d"
     },
     {
       "path": "visual/assets/changelog-archive.json",
@@ -723,7 +723,7 @@
       "role": "visualization",
       "required": false,
       "language": "zh",
-      "sha256": "beab9f0dcf335932a94a8a07e515b6e81b1fd78068dbe2c183527355a12b82b0"
+      "sha256": "42223af684aa6f56c986d394cf2ce477c957265b37de65c54e1a629c4c0ba8e1"
     },
     {
       "path": "assets/media/journey.mp4",
@@ -793,7 +793,7 @@
       "language": "neutral",
       "title_zh": "随包自检闸门台账（十一道闸门，逐道登记口径、当前读数与历史查获缺陷共 30 条）",
       "title_en": "Package self-check gate register (eleven gates, each with its criterion, current reading and the 30 defects the gates actually caught)",
-      "sha256": "ac8723bbf35f508b714a4f73bbffe9ba1b2a0ba1c9abf3182cb44b78bd11d2e0"
+      "sha256": "f481e75624625ee2958655e15f0ec75b838553161d8a4ee1670fd10260d8edcb"
     },
     {
       "path": "visual/assets/service-desk-gonogo.json",
@@ -1053,7 +1053,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/assets/scene-fallback.png",
-      "sha256": "d0657a27647d319074a993b7426bf7b1acf279d582299816ce0e4de1168e638a"
+      "sha256": "61b262dd3b1e7f776861252df3ebd0e3076ad347d157d49b68d85b93ac48cf2f"
     },
     {
       "path": "assets/media/journey-en.vtt",
@@ -1177,6 +1177,24 @@
       "title_zh": "外部情景矩阵：三条世界分岔（AI 廉价普及、强监管收缩、人工服务劳动力短缺）各自的不变量、可变项与退出条件，退出条件全部即时可判，另登记三条不予收录的分岔与理由",
       "title_en": "External scenario matrix: three ways the world could diverge (AI everywhere and nearly free, regulation tightening, a shortage of people to staff the service) with the invariants, adjustable components and exit condition of each, all exit conditions immediately decidable, plus three excluded branches with the reasons for exclusion",
       "sha256": "bf041d0d451f54eba40e9d9f90b5f9341fd9fbea435b0b4b38f6eff3ad17f025"
+    },
+    {
+      "path": "visual/assets/institutional-scaffold.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "条件化制度载体谱系：五类发起主体（属地政府平台、场地与园区运营方、高校联合体、社会组织联合、多方联合体）各给触发条件，沿 A 角色归属、G3 复核席任命路径、回避规则、经费来源与底线暴露面、审批路径五条轴逐类展开配置差异；全部条目状态为 unknown，闭合的是格式空白而非主体空白，不点名任何真实机构、企业、高校或社会组织",
+      "title_en": "Conditional institutional scaffold: five classes of sponsor (a local government platform body, a site or campus operator, a university consortium, a civil-society alliance, a multi-party consortium), each with its trigger and its configuration along five axes — where the accountable role sits, how the G3 review seat is appointed, recusal, the funding source with the exposure it creates on the floor, and the approval route; every entry unknown in status, closing the blank in the format and not the blank in the subject, and naming no real institution, company, university or civil-society body",
+      "sha256": "8126e8ec1e2516e554ee2b898ad7ad23fc672ac967b3c49a7bae25e9d5907b31"
+    },
+    {
+      "path": "visual/assets/finance-structure-model.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "五年财政结构模型：建设、年度运维、人力、采购模式四科目对公共财政全担、场地方承担、技术供应商承担、混合分担四种承担机制，各给激励、风险与对底线三项承诺（可见性、值守、预算）的威胁路径；推出「底线三项须逐项指定单一承担方、不得按比例分摊」一条配置要求；全文零金额、零单价、零比例、零分摊系数、零增长率，不可比较者登记 unknown",
+      "title_en": "Five-year finance structure model: four accounts (construction, annual operation, labour, procurement mode) set against four bearing mechanisms (full public funding, the site party, the technology supplier, a mixed arrangement), each with its incentives, risks and specific threat path to the three non-AI channel floor commitments of visibility, staffing and budget; it derives one configuration requirement, that each floor item has a single named bearer and none is split by proportion; it carries no amount, unit price, ratio, apportionment coefficient or growth rate, and registers as unknown what cannot be so expressed",
+      "sha256": "fbe0c3f7555bee4979d36670177a066d5cd9a24508a850e08aaad35fd0ca4dfb"
     },
     {
       "path": "visual/assets/concept-design-register.json",
