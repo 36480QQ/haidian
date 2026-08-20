@@ -4221,5 +4221,139 @@
       "rights_status": "not_fully_cleared",
       "independent_file_level_clearance_audits": 0
     }
+  },
+  "jury_atlas_integrity_r53": {
+    "scope": "Editorial jury-atlas and fixed-page publication repair only; no new direction, fact, geometry, metric, media, page, governance contract or maturity narrative.",
+    "pre_repair_red": [
+      {
+        "object": "publication_series",
+        "finding": "Nine bilingual core figure families reused 04/05/06/07 identifiers.",
+        "finding_type": "editorial_publication_audit_only"
+      },
+      {
+        "object": "spatial-atlas",
+        "finding": "The continuous-ground label intersected the VERIFY label in a real Chrome render.",
+        "finding_type": "editorial_publication_audit_only"
+      },
+      {
+        "object": "reversible-components.en",
+        "finding": "Restoration instructions and the footer overflowed or clipped in the final raster.",
+        "finding_type": "editorial_publication_audit_only"
+      },
+      {
+        "object": "a0_core_pairs",
+        "finding": "Dominant-figure coverage was 30.4 percent.",
+        "finding_type": "editorial_publication_audit_only"
+      }
+    ],
+    "repair_decisions": {
+      "figure_series": "REPAIR_S01_TO_S08_AND_E01",
+      "spatial_atlas_header": "REPAIR",
+      "reversible_text_fit": "REPAIR",
+      "a0_pair_composition": "REBUILD_WITHOUT_PAGE_GROWTH",
+      "existing_media": "LOCK",
+      "geometry_and_metrics": "LOCK"
+    },
+    "cold_read_answers": {
+      "thirty_seconds": "Twin-Track and three non-interchangeable prototypes remain visible through one unambiguous spatial series.",
+      "three_minutes": "Ordinary use stays complete; proof sits beside it, failure stops proof only, and recovery restores the named ordinary relation without authorization.",
+      "fifteen_minutes": "S01-S08 and E01 backlink to proposal, structured evidence, rights limits and professional handoff while G0, provisional and NO-GO remain visible."
+    },
+    "publication_series": {
+      "spatial": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "evidence": [
+        "E01"
+      ],
+      "duplicate_identifiers_after": 0
+    },
+    "changed_figure_paths": [
+      "assets/figures/climate-resilience-corridor.en.png",
+      "assets/figures/climate-resilience-corridor.en.svg",
+      "assets/figures/climate-resilience-corridor.png",
+      "assets/figures/climate-resilience-corridor.svg",
+      "assets/figures/key-area-sections.en.png",
+      "assets/figures/key-area-sections.en.svg",
+      "assets/figures/key-area-sections.png",
+      "assets/figures/key-area-sections.svg",
+      "assets/figures/key-areas.en.png",
+      "assets/figures/key-areas.en.svg",
+      "assets/figures/key-areas.png",
+      "assets/figures/key-areas.svg",
+      "assets/figures/land-use-structure.en.png",
+      "assets/figures/land-use-structure.en.svg",
+      "assets/figures/land-use-structure.png",
+      "assets/figures/land-use-structure.svg",
+      "assets/figures/metrics-evidence.en.png",
+      "assets/figures/metrics-evidence.en.svg",
+      "assets/figures/metrics-evidence.png",
+      "assets/figures/metrics-evidence.svg",
+      "assets/figures/mobility-bluegreen.en.png",
+      "assets/figures/mobility-bluegreen.en.svg",
+      "assets/figures/mobility-bluegreen.png",
+      "assets/figures/mobility-bluegreen.svg",
+      "assets/figures/reversible-components.en.png",
+      "assets/figures/reversible-components.en.svg",
+      "assets/figures/reversible-components.png",
+      "assets/figures/reversible-components.svg",
+      "assets/figures/site-overview.en.png",
+      "assets/figures/site-overview.en.svg",
+      "assets/figures/site-overview.png",
+      "assets/figures/site-overview.svg",
+      "assets/figures/spatial-atlas.en.png",
+      "assets/figures/spatial-atlas.en.svg",
+      "assets/figures/spatial-atlas.png",
+      "assets/figures/spatial-atlas.svg"
+    ],
+    "publication_sync": {
+      "page_counts": {
+        "a3_zh": 14,
+        "a3_en": 14,
+        "a0_zh": 8,
+        "a0_en": 8
+      },
+      "two_fresh_processes_byte_identical": true,
+      "sha256": {
+        "a3_zh": "07535826ad39de5ac8df9b3c8aff7e44fe698ad2548139209dc05dd806e0972e",
+        "a3_en": "58c422c23ca885e554ed2a1f6674446b96a35b3fcfa7aa6d116c2f996cc9dc6d",
+        "a0_zh": "870203f2b723c9f3cf17e94a0a88b540813ca7bf7f9007d8cbd4bbeaac4e29d1",
+        "a0_en": "ea77dfb85f70184adf9a8f04c3a35adcd8d40865c98297d7860b146013e8821c"
+      },
+      "full_page_qa": 44,
+      "qa_modes": [
+        "colour",
+        "grayscale",
+        "detail"
+      ],
+      "minimum_live_text_pt": {
+        "a3": 8.5,
+        "a0": 24.06
+      },
+      "core_a0_figure_coverage_before": 0.304,
+      "core_a0_figure_coverage_after": 0.381,
+      "failure_count": 0
+    },
+    "truth_boundary": {
+      "new_package_path": false,
+      "new_source": false,
+      "new_media": false,
+      "new_media_generation_model_call": false,
+      "new_fact_or_claim": false,
+      "field_observation": false,
+      "public_feedback": false,
+      "expert_opinion": false,
+      "official_geometry": false,
+      "planning_approval": false,
+      "rights_status": "not_fully_cleared",
+      "independent_file_level_clearance_audits": 0
+    }
   }
 }

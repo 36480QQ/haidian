@@ -1022,5 +1022,178 @@
       "approval, authorization, GO, G1, professional acceptance or rights clearance"
     ],
     "reality_boundary": "Twin-Track remains the sole master idea; three prototypes, JZ-AIOS, G0-G3, four axes, three carriers, evidence and rights gates, nine geometry files, metrics.json, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, proof-only failure stop, non-authorising recovery, professional veto, not_fully_cleared, zero independent file-level audits and fixed PDF page counts remain unchanged."
+  },
+  "round_53_provenance": {
+    "scope": "Jury-atlas integrity and fixed-page publication repair only; no new design direction.",
+    "serial_gate": {
+      "predecessor_pr": 3529,
+      "predecessor_merge_sha": "949e2fb65bcc358d4dc476bb2932e2ff7954dbc0",
+      "canonical_base_sha": "fae639c40a0b51de971ed4cd98526351d07cbb74",
+      "predecessor_merge_in_base": true,
+      "competing_package_open_pr_count": 0,
+      "clean_before_edit": true
+    },
+    "pre_repair_red": {
+      "audit_modes": [
+        "bilingual",
+        "full_size",
+        "thumbnail",
+        "grayscale",
+        "cold_read",
+        "four_pdf_contact",
+        "real_chrome_text_bounds"
+      ],
+      "duplicate_publication_identifiers": "Nine bilingual core figure families reused 04/05/06/07 identifiers.",
+      "spatial_atlas_header": "A / ONE CONTINUOUS GROUND overlapped 01 VERIFY in the real Chrome render.",
+      "reversible_english_fit": "Restoration instructions and the G0 footer remained single-line and visibly overflowed or clipped in the final raster.",
+      "a0_figure_coverage": 0.304,
+      "finding_type": "editorial_publication_audit_only"
+    },
+    "repairs": {
+      "figure_series": {
+        "site-overview": "S01",
+        "land-use-structure": "S02",
+        "key-areas": "S03",
+        "key-area-sections": "S04",
+        "spatial-atlas": "S05",
+        "mobility-bluegreen": "S06",
+        "climate-resilience-corridor": "S07",
+        "reversible-components": "S08",
+        "metrics-evidence": "E01"
+      },
+      "spatial_atlas_header_overlap": 0,
+      "reversible_restoration_and_footer_lines": "bounded_two_line_blocks",
+      "a0_core_pair_coverage_before": 0.304,
+      "a0_core_pair_coverage_after": 0.381,
+      "a0_wide_media_page_coverage": 0.351,
+      "new_content_or_crop": false
+    },
+    "reading_surfaces": {
+      "primary_navigation_items": 6,
+      "no_javascript_static_fallback": true,
+      "keyboard_reduced_motion_print_fallbacks": true,
+      "remote_dependencies": 0,
+      "autoplay": false,
+      "forty_eight_seconds_is_real_recovery_time": false
+    },
+    "figure_generation": {
+      "dimensions_px": [
+        1800,
+        1100
+      ],
+      "editable_sources": "bilingual package-authored SVG",
+      "display_exports": "local Chrome screenshots with Pillow RGB normalization",
+      "chrome_version": "151.0.7922.138",
+      "pillow_version": "12.2.0",
+      "external_image_inputs": 0,
+      "new_media_generation_model_calls": 0,
+      "resolved_svg_fonts": "unknown_pending_independent_review"
+    },
+    "publication_rebuild": {
+      "toolchain": {
+        "python": "3.14.7",
+        "pymupdf": "1.27.2.3",
+        "pillow": "12.2.0"
+      },
+      "page_counts": {
+        "a3_zh": 14,
+        "a3_en": 14,
+        "a0_zh": 8,
+        "a0_en": 8
+      },
+      "two_fresh_processes_byte_identical": true,
+      "sha256": {
+        "a3_zh": "07535826ad39de5ac8df9b3c8aff7e44fe698ad2548139209dc05dd806e0972e",
+        "a3_en": "58c422c23ca885e554ed2a1f6674446b96a35b3fcfa7aa6d116c2f996cc9dc6d",
+        "a0_zh": "870203f2b723c9f3cf17e94a0a88b540813ca7bf7f9007d8cbd4bbeaac4e29d1",
+        "a0_en": "ea77dfb85f70184adf9a8f04c3a35adcd8d40865c98297d7860b146013e8821c"
+      },
+      "full_page_qa": 44,
+      "qa_modes": [
+        "colour",
+        "grayscale",
+        "detail"
+      ],
+      "minimum_live_text_pt": {
+        "a3": 8.5,
+        "a0": 24.06
+      },
+      "blank_replacement_clipped_outside_encrypted_pages": 0,
+      "qa_boundary": "Deterministic construction and publication QA prove reproducibility and legibility only, not font licence, field state, accessibility result, professional acceptance, approval, rights clearance or maturity."
+    },
+    "changed_surfaces": [
+      "agent.json",
+      "assets/figures/climate-resilience-corridor.en.png",
+      "assets/figures/climate-resilience-corridor.en.svg",
+      "assets/figures/climate-resilience-corridor.png",
+      "assets/figures/climate-resilience-corridor.svg",
+      "assets/figures/key-area-sections.en.png",
+      "assets/figures/key-area-sections.en.svg",
+      "assets/figures/key-area-sections.png",
+      "assets/figures/key-area-sections.svg",
+      "assets/figures/key-areas.en.png",
+      "assets/figures/key-areas.en.svg",
+      "assets/figures/key-areas.png",
+      "assets/figures/key-areas.svg",
+      "assets/figures/land-use-structure.en.png",
+      "assets/figures/land-use-structure.en.svg",
+      "assets/figures/land-use-structure.png",
+      "assets/figures/land-use-structure.svg",
+      "assets/figures/metrics-evidence.en.png",
+      "assets/figures/metrics-evidence.en.svg",
+      "assets/figures/metrics-evidence.png",
+      "assets/figures/metrics-evidence.svg",
+      "assets/figures/mobility-bluegreen.en.png",
+      "assets/figures/mobility-bluegreen.en.svg",
+      "assets/figures/mobility-bluegreen.png",
+      "assets/figures/mobility-bluegreen.svg",
+      "assets/figures/reversible-components.en.png",
+      "assets/figures/reversible-components.en.svg",
+      "assets/figures/reversible-components.png",
+      "assets/figures/reversible-components.svg",
+      "assets/figures/site-overview.en.png",
+      "assets/figures/site-overview.en.svg",
+      "assets/figures/site-overview.png",
+      "assets/figures/site-overview.svg",
+      "assets/figures/spatial-atlas.en.png",
+      "assets/figures/spatial-atlas.en.svg",
+      "assets/figures/spatial-atlas.png",
+      "assets/figures/spatial-atlas.svg",
+      "changelog.md",
+      "drawings/a0-boards.en.pdf",
+      "drawings/a0-boards.pdf",
+      "drawings/a3-booklet.en.pdf",
+      "drawings/a3-booklet.pdf",
+      "manifest.json",
+      "proposal.en.md",
+      "proposal.md",
+      "report/copyright_statement.md",
+      "report/narrative.md",
+      "report/proposal.en.html",
+      "report/proposal.html",
+      "self_check.json",
+      "visual/assets/review-handoff-index.json",
+      "visual/assets/rights-clearance-ledger.json",
+      "visual/assets/source-rights-evidence.json"
+    ],
+    "package": {
+      "path_count": 156,
+      "under_40_mib": true
+    },
+    "new_package_path": false,
+    "new_external_source": false,
+    "new_media": false,
+    "new_media_generation_model_call": false,
+    "new_fact_or_claim": false,
+    "geometry_metrics_frozen": true,
+    "cannot_prove": [
+      "official boundary or exact site registration",
+      "existing or built condition",
+      "dimension, material, utility, fire or railway-protection conclusion",
+      "field or accessibility result",
+      "resident feedback, staffing, schedule, partner, budget or recovery duration",
+      "approval, authorization, GO, G1, professional acceptance or rights clearance"
+    ],
+    "reality_boundary": "Twin-Track remains the sole master idea; three prototypes, JZ-AIOS, G0-G3, four axes, three carriers, evidence and rights gates, nine geometry files, metrics.json, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, proof-only failure stop, non-authorising recovery, professional veto, not_fully_cleared, zero independent file-level audits and fixed PDF page counts remain unchanged."
   }
 }
