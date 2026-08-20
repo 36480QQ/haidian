@@ -50,6 +50,7 @@ import re
 import stat
 import tempfile
 from pathlib import Path, PurePosixPath
+from urllib.parse import unquote_to_bytes
 
 
 IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
@@ -93,6 +94,17 @@ def parse_front_matter(text: str) -> tuple[dict[str, str], str]:
     return metadata, text[end + 5 :]
 
 
+def _is_unsafe_url_path_segment(segment: str) -> bool:
+    """Return true when URL parsing could reinterpret a filesystem segment."""
+    decoded = unquote_to_bytes(segment)
+    return (
+        decoded in {b".", b".."}
+        or b"/" in decoded
+        or b"\\" in decoded
+        or re.match(rb"^[A-Za-z]:", decoded) is not None
+    )
+
+
 def resolve_local_image(submission_dir: Path, raw_src: str) -> tuple[Path, Path]:
     """Resolve *raw_src* and prove that its target stays in the submission."""
     if re.match(r"^(?:https?:)?//", raw_src, re.I) or re.match(r"^(?:data|file|javascript):", raw_src, re.I):
@@ -106,6 +118,7 @@ def resolve_local_image(submission_dir: Path, raw_src: str) -> tuple[Path, Path]
         or not pure.parts
         or ".." in pure.parts
         or any(re.match(r"^[A-Za-z]:", part) for part in pure.parts)
+        or any(_is_unsafe_url_path_segment(part) for part in pure.parts)
     ):
         raise ValueError(f"image source must be a relative local path: {raw_src}")
     submission_root = submission_dir.resolve()

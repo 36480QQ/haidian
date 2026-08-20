@@ -9,7 +9,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
-from render_proposal_html import render_html  # noqa: E402
+from render_proposal_html import render_html, render_inputs  # noqa: E402
 
 
 class RenderProposalHtmlTests(unittest.TestCase):
@@ -225,6 +225,32 @@ summary: "离线阅读版"
 
                 with self.assertRaisesRegex(ValueError, "relative local path"):
                     render_html(submission_dir)
+
+    def test_render_html_rejects_url_encoded_path_escape_segments(self) -> None:
+        unsafe_sources = [
+            "assets/%2e%2e/%2e%2e/out.png",
+            "assets/%2E%2E/%2E%2E/out.png",
+            "assets/.%2e/.%2e/out.png",
+            "assets/%2e./%2e./out.png",
+            "assets/%2fescape/out.png",
+            "assets/%5cescape/out.png",
+            "C%3a/escape/out.png",
+        ]
+        for source in unsafe_sources:
+            with self.subTest(source=source), tempfile.TemporaryDirectory() as tmp:
+                submission_dir = Path(tmp)
+                image = submission_dir / source
+                image.parent.mkdir(parents=True)
+                image.write_bytes(b"not a safe browser URL")
+                proposal = submission_dir / "proposal.md"
+                proposal.write_text(
+                    f"![encoded]({source})\n",
+                    encoding="utf-8",
+                )
+
+                with self.assertRaisesRegex(ValueError, "relative local path"):
+                    render_html(submission_dir)
+                self.assertEqual([proposal], render_inputs(submission_dir, [proposal]))
 
     @unittest.skipUnless(os.name == "nt", "Windows drive-path behavior")
     def test_render_html_rejects_existing_image_outside_submission_by_drive_path(self) -> None:
