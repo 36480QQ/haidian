@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "0a9b725b3055f9fdcdf4c6c1c33595bea95210e363c7edea530a0469a77abf08"
+      "sha256": "67efc7ab35ef540e4c07ebcefe98856ea0d1527dda5238a4fc555b664da665ea"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3d47574933486f0c759c824192142bdb2de46669076ce73ef60466e5ed9bfa20"
+      "sha256": "0d26da8dab52921da896d9a0b94f23e94b028fc52149fdfd5c218166464f3ba5"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b2f7d4cc241fe306b20c6c052828f97d6ac759196a8c20114e6daf148016991a"
+      "sha256": "87e550ddd5bce969135a3ec64409756b613d07b53ebcd6afb861def4cb7e346d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5030e8009fb71d49a56cd5f415c49049744562678bd4018563f44e68cb08bd9f"
+      "sha256": "5ea8c4325cbb7db5bcfe81ea4a8a1aab40a729a8c8c39dee0c050f59594419ad"
     },
     {
       "path": "report/proposal.en.html",
@@ -590,7 +590,15 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "dbdbe176c810f337ea058815164fe90a1dd69b26fcd24c574d5318e9cadc767b"
+      "sha256": "aaf5b9f6e41f62f67e494e81471fde5b4a53b7e9d9fc915a923b07f9991067f1"
+    },
+    {
+      "path": "visual/assets/changelog-archive.json",
+      "role": "changelog",
+      "required": false,
+      "title_zh": "方案迭代记录 归档卷一（v7.9 及更早的 52 条条目，逐字节原样搬移）",
+      "title_en": "Proposal changelog archive, volume one (52 entries from v7.9 and earlier, moved byte for byte)",
+      "sha256": "d76b316357d084ebd94959792e05d1a0e748e1e6647a5828b707ba75fb726167"
     },
     {
       "path": "assets/media/cover.webp",
@@ -1177,7 +1185,7 @@
       "language": "neutral",
       "title_zh": "片区策略合幅三联图 D-01：三区街块诊断与开放化候选，三分幅同比例尺（中英双语同图）",
       "title_en": "District strategy plate D-01 — block diagnosis and opening candidates across the three key areas, three panels at one shared scale, one bilingual sheet",
-      "sha256": "d0006724ff896e6c994bd7d2db6027d082884d3bfa6b54917821f0062cc5790d"
+      "sha256": "01594488423fd37aa6982770f335ffc01a54f9ba0ad906d8c714a57092e67ebb"
     },
     {
       "path": "assets/figures/district-concept-sections.png",
