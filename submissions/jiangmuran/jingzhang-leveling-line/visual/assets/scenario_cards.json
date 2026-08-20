@@ -193,7 +193,7 @@
    "human_review_zh": "活动安全预案",
    "human_review_en": "Event safety plan",
    "non_ai_equivalent_zh": "纸质签到与现场引导员；路线由标石编号与实体导视承担，读数牌现场可读、不需上网",
-   "non_ai_equivalent_en": "Paper sign-in and on-site stewards; the route is carried by benchmark numbers and physical signage, and the reading boards are legible on site without a network",
+   "non_ai_equivalent_en": "Paper sign-in and on-site stewards; the route is carried by benchmark numbers and physical signage, and the reading plates are legible on site without a network",
    "non_ai_equivalent_permanent": false,
    "exit_triggers": [
     {
@@ -216,7 +216,7 @@
    "effect_metric_en": "Attendance and the skew of participants' home locations",
    "control_kind": "parallel_non_ai",
    "control_zh": "对照组为本卡自己声明的非 AI 等价路径：纸质签到与现场引导员；路线由标石编号与实体导视承担，读数牌现场可读、不需上网",
-   "control_en": "The control is this card's own non-AI equivalent: Paper sign-in and on-site stewards; the route is carried by benchmark numbers and physical signage, and the reading boards are legible on site without a network",
+   "control_en": "The control is this card's own non-AI equivalent: Paper sign-in and on-site stewards; the route is carried by benchmark numbers and physical signage, and the reading plates are legible on site without a network",
    "verify_stages_zh": [
     "原型：在一个点位、一个时段跑通，只验证读数能取到、口径可复算",
     "试点：与非 AI 等价路径并行运行一个完整复测周期，比较效果量",
@@ -667,7 +667,7 @@
    "human_review_zh": "史实陈述人工审校",
    "human_review_en": "Historical statements are reviewed by a person",
    "non_ai_equivalent_zh": "沿线实体解说牌与定期人工讲解；读数牌不需上网即可读",
-   "non_ai_equivalent_en": "Physical interpretation plates along the route and scheduled human-led tours; the reading boards need no network",
+   "non_ai_equivalent_en": "Physical interpretation plates along the route and scheduled human-led tours; the reading plates need no network",
    "non_ai_equivalent_permanent": false,
    "exit_triggers": [
     {
@@ -701,7 +701,7 @@
    "effect_metric_en": "The change in correct answers on the same question set before and after",
    "control_kind": "parallel_non_ai",
    "control_zh": "对照组为本卡自己声明的非 AI 等价路径：沿线实体解说牌与定期人工讲解；读数牌不需上网即可读",
-   "control_en": "The control is this card's own non-AI equivalent: Physical interpretation plates along the route and scheduled human-led tours; the reading boards need no network",
+   "control_en": "The control is this card's own non-AI equivalent: Physical interpretation plates along the route and scheduled human-led tours; the reading plates need no network",
    "verify_stages_zh": [
     "原型：在一个点位、一个时段跑通，只验证读数能取到、口径可复算",
     "试点：与非 AI 等价路径并行运行一个完整复测周期，比较效果量",
