@@ -89,12 +89,6 @@
       "sha256": "f66fea9cbeef5e2c64e6aa83f89b970a61e227170d03661f00683a0b641382bb"
     },
     {
-      "path": "verify_submission.py",
-      "role": "verification_script",
-      "required": false,
-      "sha256": "7d911a762ccff3de0ff45dd548ad7f3d01927991cf85875788e412670ce6c35a"
-    },
-    {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
