@@ -20,7 +20,7 @@ One hundred and seventeen years later, the same question stands on the Jing-Zhan
 
 **The memorable line: THE THIRD LINE.** The Jing-Zhang has drawn two lines — in 1909 Zhan Tianyou drew the **switchback line**, carrying trains over Badaling within engineering constraints; in 2019 the high-speed railway drew a **straight line**, carrying the city across the mountains; this proposal draws the **third line** — the Hyper Line, the superlinear line on which innovation grows by itself. The switchback was invention under engineering constraint, the straight line was breakthrough under speed constraint, the third line is **emergence under the constraints of computation and the city**: it is not drawn, it is grown by rules. Campaign line in one sentence: **turn constraints into creation** — three eras, one answer.
 
-Our answer is not a single answer; it is a paradigm. That paradigm is **THE EMERGENT BELT**: we do not fight the constraints, nor detour around them; we use urban science to turn "constraint" into "the condition for emergence." **Hyper Line** is the paradigm's name and its scientific definition — in scaling laws, innovation is one of the few naturally superlinear urban variables (β>1); infrastructure is naturally sublinear (β<1). A "Hyper" line is a line that **carries a superlinear soul on a sublinear skeleton**.
+Our answer is not a single answer; it is a paradigm: **THE EMERGENT BELT — the Jing-Zhang Hyper Line** — we do not fight the constraints, nor detour around them; we use urban science to turn "constraint" into "the condition for emergence." The Hyper definition comes from scaling laws: a superlinear soul (β>1) carried on a sublinear skeleton (β<1).
 
 The entire work of this proposal is to walk that "machine" from end to end: **measure the disease first, prescribe the cure, then prove the cure works**. It follows one six-ring argument — Worldview → Diagnosis → Mechanism → Prescription → Verification → Operation — each ring handing its conclusion to the next, leaving no assertion without an upstream.
 
@@ -52,7 +52,7 @@ The entire work of this proposal is to walk that "machine" from end to end: **me
 
 ## Vision & Goals (Worldview ring)
 
-**Vision (three heights, one goal)**: make Centennial Jing-Zhang the world's first **urban-science-designed, computable, evolvable, human-serving** AI innovation belt. Others submit "blueprints"; we submit a "city operating system". Asked "how do we know it succeeded in five years", our answer is not adjectives but four numbers: percolation giant fraction ≥0.90, syntax integration gain ≥30%, jobs-housing entropy ≥+4%, EI recomputed and published annually [metric:GATE.bluegreen_giant_frac].
+**Vision (three heights, one goal) — with THE EMERGENT BELT as the paradigm**: make Centennial Jing-Zhang the world's first AI innovation belt fully designed by urban science — computable, evolvable, human-serving — a belt that truly EMERGES: not drawn, but grown by rules (a superlinear soul on a sublinear skeleton).
 
 **The dual clock**: the high-frequency city ticks in seconds/days/months (25,476 Amap POIs are its heartbeat); the low-frequency city settles in years/decades (control plans, red lines, property rights are its skeleton). A design that sees only one clock mistakes transient phenomena for permanent structure, or permanent constraints for ignorable ones.
 
