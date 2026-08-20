@@ -21,8 +21,10 @@
       "changed_files": [
         "submissions/lqqk7/every-sense-jingzhang/agent.json",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/bluegreen-structure.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/bluegreen-system-concept.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/brand-system.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/brand-system.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/district-concept-sections.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/district-strategy.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/dual-state-plan.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/dual-state-plan.png",
@@ -57,6 +59,7 @@
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.en.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/tactile-corridor-map.png",
+        "submissions/lqqk7/every-sense-jingzhang/assets/figures/transport-system-concept.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/verification-overlay-00-all.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/verification-overlay-01-landuse.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/verification-overlay-02-roads.png",
@@ -116,6 +119,7 @@
         "submissions/lqqk7/every-sense-jingzhang/standard_matrix.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/alignment-reference.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/braille-core-statement.json",
+        "submissions/lqqk7/every-sense-jingzhang/visual/assets/concept-design-register.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/district-strategy.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/ethics-protocol.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/field-verification-plan.json",
@@ -166,7 +170,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 40714020,
+      "total_bytes": 41896254,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -255,7 +259,7 @@
           "source": 42,
           "standard": 9,
           "depth": 15,
-          "data": 51,
+          "data": 52,
           "metric": 31
         }
       }
