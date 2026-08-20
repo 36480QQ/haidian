@@ -20,7 +20,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "504cb9576afc7cf41961dc96f16e632a663a088e9ff591bb54866714f751b57a",
+      "sha256": "995be81d3269f86948c3f8be9d11b274f73c527b7337c75f47dd07ca380beb21",
       "language": "zh",
       "title_zh": "智·脉 — 京张青年AI创享带"
     },
@@ -28,7 +28,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "68f8258ba108f885609bbb6e1f57ad26dc16dc50c4ef93ea64b503875c951b2a",
+      "sha256": "d883387a9ff19e696898b79cb9a6ec4d96f3c2f89a9651ea3b15f6590d4b64ac",
       "language": "en",
       "translation_of": "proposal.md",
       "title_en": "ZhiPulse — Jingzhang Youth AI Innovation Belt"
@@ -37,14 +37,14 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "728ac4df7fd7b14aad02bf5abf4afc8a819c6c17f8ae9f4a2884163c4199cb78",
+      "sha256": "13aacfb78b186aad52740838066e5fe218a93847d821c5a7b9f641eae47118dd",
       "language": "zh"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "265968d0989fecde5ec55e2eba6d0bbc06181cc9178f4888bbac6a76b4fa4d02",
+      "sha256": "6d8d5c9e024f18faf1b4095597caf09e0e02e3826215c6755a3c049c6b22cacd",
       "language": "zh"
     },
     {
@@ -65,28 +65,28 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "055f9f02e8d408790553224be9612ee7f0da722bee2ad2fdb36ac0eca6f22a95",
+      "sha256": "bf75edebcb568b3920f0435ca4d675f87090adae110d221606aee97c9b4834bc",
       "language": "zh"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "5cd1ce7b110fbcd5dc8d6bc0f5be24d7969570ee207e0e1b69b579e4e38e93c2",
+      "sha256": "b15d24aa596150ff3502461b1e5c20b165c4dee0b0907a935538f07e5240f1ba",
       "language": "zh"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "b917c5abc241dcb8b9f879381105e9b5731c49e0139f758a95b96e590b995d79",
+      "sha256": "1cbe4ce82649a1efe305fa9cb64ff5507e7afa34aa1866991bf3d9bfb4e0aebc",
       "language": "zh"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "6d34d89d390aaddacb7abb7c53c21119cb19b0b60497677ea1dfcd35b101d9a6",
+      "sha256": "a48afba0cef09e8e7cef5b0cba4fd7645bc04fb6379e5e99d825bacdf4ad24cf",
       "language": "zh"
     },
     {
@@ -100,21 +100,21 @@
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "a48504efdb910b23a3001f7edb8c6a11722ec007f125450a736bb34e0bb384b8",
+      "sha256": "b1c1b4f3c264682c060c86fbd6d8c97a7dabbf9878201f2379465d710b5a746c",
       "language": "neutral"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "212e779e86da27913db62bd80c62763765758b3daa110fb4b7012a1763031524",
+      "sha256": "3c4480f841bf2ba9401308678c064d1561dbcde2548c50edde79a2a8d140c65f",
       "language": "neutral"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "767af2519c2d895b843b108216b9cb65223d88e59738ffde9c4d1bcd7864b605",
+      "sha256": "aba066eba5e56ff91bd1648216e7aa81734e0c9f2a1ad902eb5ca2f26c2b2691",
       "language": "neutral"
     },
     {
@@ -142,21 +142,21 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "922a479b01fa92094e7e5e607287b7e62e29259a079f94f4faf15aaab461e79a",
+      "sha256": "4a0a1f98bb27c05ec3c9116dc15937fc43bb9efd70cdbb19c81f37fcf859c4ed",
       "language": "neutral"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "5291cd52a23e6e31cd0fd70e91da02bb16c2dbaf28fc07be57554456a66d9ea9",
+      "sha256": "4ee1fdf3304bf2a9c711d06b6b7350242ea0d8178b4ac3352f0c83f8f17a8983",
       "language": "neutral"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "ade5d1b7d70e80545721e3693d373dbac6b2d9581d8f4810510796842b883519",
+      "sha256": "794769abad9d453355306593c7b493ee8a31059ee0306e97441670f64c3b1249",
       "language": "neutral"
     },
     {
@@ -198,21 +198,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "6d27189995a46bc57136d4da63fe232f76a97cf0dffb64497861a92eeacf3e5d",
+      "sha256": "201331342dda7be0b6ea99f3fb4a489054f7c3aa868d6ef62f732734ea071b54",
       "language": "neutral"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "58cd9bb476ff5c7eb3bff77f7af09afcd545495844849ad74199c7bad44a8a2b",
+      "sha256": "7633b20642bf76611f2d674ddcd61766e99b0f065f2a5adeeba7e417047f2de7",
       "language": "zh"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "e40171c0fc33605610a32af993642b94dbfdbc36357c0fb3cfbf8768dbe6fad0",
+      "sha256": "31e75c4948e0606e32c6e93d4d616558ddc14a14dae8b3fdffb738a7311d5e51",
       "language": "zh"
     },
     {
@@ -235,7 +235,7 @@
       "language": "en",
       "required": true,
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": null
+      "sha256": "3d5c59b0caa51b66934b6026ff58a3b99d4192d1abd8b8d863fcf0d3bdb9284f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "language": "en",
       "required": true,
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": null
+      "sha256": "18928179778a04cb66a7ec0fa4289842998a7fa1109f5e39e72147400df6cff8"
     },
     {
       "path": "report/proposal.en.html",
@@ -251,7 +251,7 @@
       "language": "en",
       "required": true,
       "translation_of": "report/proposal.html",
-      "sha256": null
+      "sha256": "c84a9161fd7f06023429a56d48a3ee71b6a271b5d07ef6396ddaa1b973ffc31a"
     },
     {
       "path": "visual/index.en.html",
@@ -259,7 +259,7 @@
       "language": "en",
       "required": true,
       "translation_of": "visual/index.html",
-      "sha256": null
+      "sha256": "1f82960de40444a6f587ac26ad8c9a0308b69afe456e0b86730485057b17c101"
     }
   ],
   "validation_claim": {
