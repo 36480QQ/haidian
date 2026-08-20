@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "run_id": "jingzhang-d775d3c540f6",
+  "run_id": "jingzhang-6937f0864b41",
   "evaluation_type": "deterministic_typed_geometry_continuity_counterfactual_and_recovery_proxy",
   "candidate_id": "C03-SHARED-FLOOR",
   "candidate_spec_hash": "b4bfcfd1b3d017a4b707b0355504b9eaaebc46df107c2a3330b48f1df1ea5460",
@@ -10,12 +10,12 @@
   "selection_status": "eligible_for_blind_pairwise",
   "model_swap_task_count": 3,
   "candidate_evaluation_hashes": {
-    "C01-CIVIC-PROVING-LINE": "d993dbf1edaa94dff2e256b98914e9ec36deabc3dafc6f5b33209a7e4c6db16b",
-    "C02-FOUR-SEASON-COURTYARDS": "b298d755821618ce011986e770d2de89bc3bd1f96f20c9674b999e77419f891d",
+    "C01-ROUTE-SEQUENCE-CONTROL": "0dbe49060fa576eaa07c23f719707a47affa3a04a0e5553d8002160eb4331c97",
+    "C02-CLIMATE-CARE-CONTROL": "758b09493de219404da57de823cac32474eead7fb1bb27c8d34570662ac9eb13",
     "C03-SHARED-FLOOR": "3776af85c17bc93c3ce63d206d2762fda158efad18620d1f251a985ecedcb3f1"
   },
   "candidate_metrics": {
-    "C01-CIVIC-PROVING-LINE": {
+    "C01-ROUTE-SEQUENCE-CONTROL": {
       "approx_gfa_sqm": 77200,
       "building_footprint_sqm": 18800.0,
       "open_ground_ratio": 0.888095,
@@ -36,7 +36,7 @@
       "support_infill_overlap_sqm": 0.0,
       "public_route_collision_count": 0
     },
-    "C02-FOUR-SEASON-COURTYARDS": {
+    "C02-CLIMATE-CARE-CONTROL": {
       "approx_gfa_sqm": 77760,
       "building_footprint_sqm": 14240.0,
       "open_ground_ratio": 0.915238,
@@ -80,7 +80,7 @@
     }
   },
   "candidate_hard_gates": {
-    "C01-CIVIC-PROVING-LINE": {
+    "C01-ROUTE-SEQUENCE-CONTROL": {
       "geometry_valid": true,
       "inside_reference_envelope": true,
       "unintended_mass_overlaps_zero": true,
@@ -95,7 +95,7 @@
       "root_ordered_seven_stage_chain": true,
       "root_trial_removal_preserves_public_route": true
     },
-    "C02-FOUR-SEASON-COURTYARDS": {
+    "C02-CLIMATE-CARE-CONTROL": {
       "geometry_valid": true,
       "inside_reference_envelope": true,
       "unintended_mass_overlaps_zero": true,
@@ -392,20 +392,20 @@
       "false_accept_count": 0,
       "cases": [
         {
-          "case_id": "C01-CIVIC-PROVING-LINE:outside-envelope",
-          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "case_id": "C01-ROUTE-SEQUENCE-CONTROL:outside-envelope",
+          "candidate_id": "C01-ROUTE-SEQUENCE-CONTROL",
           "challenge_id": "outside-envelope",
           "mutation": {
             "challenge_id": "outside-envelope",
-            "feature_id": "PL-TRIAL-01",
+            "feature_id": "RS-TRIAL-01",
             "field": "x",
             "before": -300,
             "after": 490.0
           },
-          "mutation_sha256": "0ef896ff6b29a43956ceaa2f8a59286d1d129c5bef946aff10d56171d0df5715",
-          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
-          "mutated_candidate_spec_sha256": "1faa6920c6d882bc23d3ccc59405b91450cf9757c15f251fc07384d904d72ad4",
-          "evaluation_sha256": "03a548f3a19e07b05d66299c57df24c74a43d6fc93c098b57481f3e69494a323",
+          "mutation_sha256": "28a0bf8d74a93fc9ef61f7fdab0817749512cf6653a22671eae360e8c21bd808",
+          "source_candidate_spec_sha256": "c905d6166d73e33fcba0d31423e0e5cb133509c749657638398cb5e07df37181",
+          "mutated_candidate_spec_sha256": "9bda7bb8632829d4c386278dd0464880e7c5a223557399bdfdcffb07410dd18d",
+          "evaluation_sha256": "1281584c3044af50f77d31a0acc8f89256b0d0eadf3abd382f50fc84879eabbc",
           "expected_failed_gate": "inside_reference_envelope",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -416,20 +416,20 @@
           ]
         },
         {
-          "case_id": "C01-CIVIC-PROVING-LINE:duplicate-feature-id",
-          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "case_id": "C01-ROUTE-SEQUENCE-CONTROL:duplicate-feature-id",
+          "candidate_id": "C01-ROUTE-SEQUENCE-CONTROL",
           "challenge_id": "duplicate-feature-id",
           "mutation": {
             "challenge_id": "duplicate-feature-id",
-            "feature_id": "PL-TRIAL-02",
+            "feature_id": "RS-TRIAL-02",
             "field": "id",
-            "before": "PL-TRIAL-02",
-            "after": "PL-TRIAL-01"
+            "before": "RS-TRIAL-02",
+            "after": "RS-TRIAL-01"
           },
-          "mutation_sha256": "8f2fdecc717a849ef2b61ae8ff952e6cf03d34f6f11efdb3e95b279d666dd5f6",
-          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
-          "mutated_candidate_spec_sha256": "f2cd62883d7821ba8dd7f75746cfd2ddd5a3c89fe188866f3d7f1318ffb1c7be",
-          "evaluation_sha256": "2105d32078ef7ae921daaef618407fcb94c329929e7ee098c643fdeb17cbd87d",
+          "mutation_sha256": "75df87cf9cc4af8e256cc92e3d92b081a912ff79d86773536cbf7f8b90136220",
+          "source_candidate_spec_sha256": "c905d6166d73e33fcba0d31423e0e5cb133509c749657638398cb5e07df37181",
+          "mutated_candidate_spec_sha256": "59e5196e1fa1fc024ced95886ac6becc9cb99099598ea0fbe88e44435d760585",
+          "evaluation_sha256": "a1678be11d94253fac429cef321f7bde7fc18ab0e591d14c68b51e986c8b5063",
           "expected_failed_gate": "feature_ids_unique",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -440,18 +440,18 @@
           ]
         },
         {
-          "case_id": "C01-CIVIC-PROVING-LINE:same-layer-mass-overlap",
-          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "case_id": "C01-ROUTE-SEQUENCE-CONTROL:same-layer-mass-overlap",
+          "candidate_id": "C01-ROUTE-SEQUENCE-CONTROL",
           "challenge_id": "same-layer-mass-overlap",
           "mutation": {
             "challenge_id": "same-layer-mass-overlap",
-            "feature_id": "PL-TRIAL-02",
-            "overlaps_feature_id": "PL-TRIAL-01"
+            "feature_id": "RS-TRIAL-02",
+            "overlaps_feature_id": "RS-TRIAL-01"
           },
-          "mutation_sha256": "5d07eab8572660ff84aaea219430d5b746a20388df95200549984c795041a86e",
-          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
-          "mutated_candidate_spec_sha256": "50fda2453eacb49b7aceb3e4efaa2980ba9bbcfd9b1204e5864b86826a4ba83a",
-          "evaluation_sha256": "74de19c8efab9b633ea17819263b2c1e6a126bd7de115741435f6014f5bea08b",
+          "mutation_sha256": "ec6bb0403889bc141933cc5a205df837f7bf44670d8e87660941d9ab5b6107b7",
+          "source_candidate_spec_sha256": "c905d6166d73e33fcba0d31423e0e5cb133509c749657638398cb5e07df37181",
+          "mutated_candidate_spec_sha256": "0e0d43b72a1965c9f16947cb160ec9b4ea5432e0f47a1750bda005053e6f40f8",
+          "evaluation_sha256": "40defcab19fac6d3d4f85d16176dd6d624ee525a021920bdcde037dcf18ae8fa",
           "expected_failed_gate": "unintended_mass_overlaps_zero",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -462,19 +462,19 @@
           ]
         },
         {
-          "case_id": "C01-CIVIC-PROVING-LINE:support-infill-overlap",
-          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "case_id": "C01-ROUTE-SEQUENCE-CONTROL:support-infill-overlap",
+          "candidate_id": "C01-ROUTE-SEQUENCE-CONTROL",
           "challenge_id": "support-infill-overlap",
           "mutation": {
             "challenge_id": "support-infill-overlap",
-            "feature_id": "FAULT-INFILL-C01-CIVIC-PROVING-LINE",
-            "overlaps_feature_id": "PL-ANCHOR-01",
+            "feature_id": "FAULT-INFILL-C01-ROUTE-SEQUENCE-CONTROL",
+            "overlaps_feature_id": "RS-ANCHOR-01",
             "storeys": 0
           },
-          "mutation_sha256": "54d2ae960507d17c5343349e7135a0f8fbd3d6c54fc32c8f6e3ec326aca54d3c",
-          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
-          "mutated_candidate_spec_sha256": "0a266872376563b593897547a3a0c8df84b92d48cd87058995f510ae8aa9a04d",
-          "evaluation_sha256": "bab129d9d4fce5cd0535352d6119d344f06ef61159cec79a532f48d6d38066f6",
+          "mutation_sha256": "936ac30550bd59da4913dec5274b1c10edb2fea9e50a46f801fe7d9496bdd507",
+          "source_candidate_spec_sha256": "c905d6166d73e33fcba0d31423e0e5cb133509c749657638398cb5e07df37181",
+          "mutated_candidate_spec_sha256": "a4c9de2a54797c230bfef2ebc238390b0ac0e661716c4c6532152f5f7769656f",
+          "evaluation_sha256": "8205899d7d5d5f32277936beac9533f40fe27ebaefc36a8281ac1ce7a8c2ae0d",
           "expected_failed_gate": "support_infill_overlap_zero",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -486,12 +486,12 @@
           ]
         },
         {
-          "case_id": "C01-CIVIC-PROVING-LINE:isolated-public-route-component",
-          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "case_id": "C01-ROUTE-SEQUENCE-CONTROL:isolated-public-route-component",
+          "candidate_id": "C01-ROUTE-SEQUENCE-CONTROL",
           "challenge_id": "isolated-public-route-component",
           "mutation": {
             "challenge_id": "isolated-public-route-component",
-            "feature_id": "FAULT-ISOLATED-ROUTE-C01-CIVIC-PROVING-LINE",
+            "feature_id": "FAULT-ISOLATED-ROUTE-C01-ROUTE-SEQUENCE-CONTROL",
             "start": [
               -345.0,
               112.0
@@ -501,10 +501,10 @@
               112.0
             ]
           },
-          "mutation_sha256": "d6117a6d57a84e3557fca0436e6cd5ccffe93c95444a716bd43ae03463b938cc",
-          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
-          "mutated_candidate_spec_sha256": "c80bbd2c75d8da0a852a1e8a8da72fb240178ecfd6d55d321c17cdf334e950bb",
-          "evaluation_sha256": "2e4ea8a3429e53d23892f85a9a56ef787729edd5bf43ec4c1a5b33dac86a469d",
+          "mutation_sha256": "9bf9de49bc9d7ee70d01180a8b5f4a75e0a030423752c9a7431dba7f2cfa3799",
+          "source_candidate_spec_sha256": "c905d6166d73e33fcba0d31423e0e5cb133509c749657638398cb5e07df37181",
+          "mutated_candidate_spec_sha256": "de47aceec49d922db9f850145d8297972a0c954778ebbf3f4e8f0f81b21fd15f",
+          "evaluation_sha256": "8e3c44821a5ec3cc3b110d704cc1c4ab7910afea5e7bd62d77c3054ae7176dc3",
           "expected_failed_gate": "public_route_network_connected",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -515,20 +515,20 @@
           ]
         },
         {
-          "case_id": "C01-CIVIC-PROVING-LINE:unreachable-public-room",
-          "candidate_id": "C01-CIVIC-PROVING-LINE",
+          "case_id": "C01-ROUTE-SEQUENCE-CONTROL:unreachable-public-room",
+          "candidate_id": "C01-ROUTE-SEQUENCE-CONTROL",
           "challenge_id": "unreachable-public-room",
           "mutation": {
             "challenge_id": "unreachable-public-room",
-            "feature_id": "PL-OBS-01",
+            "feature_id": "RS-OBS-01",
             "field": "y",
             "before": -42,
             "after": 500.0
           },
-          "mutation_sha256": "ae12bb5f581e5eb662a23138dd2d9b1b7133a520a2bbd95238679f93cf72d084",
-          "source_candidate_spec_sha256": "4d6246c4e0dcb4684938a34b1dc88eca734d40cccfbf6509e9dfaace2269663f",
-          "mutated_candidate_spec_sha256": "f81b4a1e033384cf6e6cfdc72670fb406f3b4943741a3fc497a795b5e4446d91",
-          "evaluation_sha256": "15828a2d5794b8e3d3d03d6931f1733d5564590a7a04f2ccf628b5e718e32438",
+          "mutation_sha256": "e7ec077b07d4592e8ad24dc16da447fd93edf89acb43edc4e81e35bab48211c2",
+          "source_candidate_spec_sha256": "c905d6166d73e33fcba0d31423e0e5cb133509c749657638398cb5e07df37181",
+          "mutated_candidate_spec_sha256": "59367ab1ac84d56307b1ad2c9b3e96c0f12abb32feed9e477fcb3b301c33021e",
+          "evaluation_sha256": "a396b252a68fc75ac9369f8f734efdc5e6371fe45f03bcd81c7e0c9f56b70362",
           "expected_failed_gate": "every_public_room_reached",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -539,20 +539,20 @@
           ]
         },
         {
-          "case_id": "C02-FOUR-SEASON-COURTYARDS:outside-envelope",
-          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "case_id": "C02-CLIMATE-CARE-CONTROL:outside-envelope",
+          "candidate_id": "C02-CLIMATE-CARE-CONTROL",
           "challenge_id": "outside-envelope",
           "mutation": {
             "challenge_id": "outside-envelope",
-            "feature_id": "FS-01-N",
+            "feature_id": "CC-01-N",
             "field": "x",
             "before": -280,
             "after": 506.0
           },
-          "mutation_sha256": "7933fd857f2cb3243ab2383d53cdb809bb6ed78d372bc266821ac1aed4ead4f9",
-          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
-          "mutated_candidate_spec_sha256": "d9eb778bb5a79a886efe5131c132d3261299b5ffe27e69188e214f27f5eae089",
-          "evaluation_sha256": "467ab54c8022211f73da5c4e37a0c6cfc3026d9b912f2a2905e52a7bc0cdd2b9",
+          "mutation_sha256": "0934d629a820d9302c468ab8519fe23706c8587121094e7643de6785b7abcdfa",
+          "source_candidate_spec_sha256": "7f11812751780460dff594908b1262b8482bf15430b9eaa8378c391cb6213c6f",
+          "mutated_candidate_spec_sha256": "1f0f39eae7ff301b6b6493e7ee41e98cdd789aaf57966cfd0c32597d921a4116",
+          "evaluation_sha256": "8f83fd17c08f0642cee19e0a540c29c0e6e446a7e6e3e2b539fd211702b103d7",
           "expected_failed_gate": "inside_reference_envelope",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -563,20 +563,20 @@
           ]
         },
         {
-          "case_id": "C02-FOUR-SEASON-COURTYARDS:duplicate-feature-id",
-          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "case_id": "C02-CLIMATE-CARE-CONTROL:duplicate-feature-id",
+          "candidate_id": "C02-CLIMATE-CARE-CONTROL",
           "challenge_id": "duplicate-feature-id",
           "mutation": {
             "challenge_id": "duplicate-feature-id",
-            "feature_id": "FS-01-W",
+            "feature_id": "CC-01-W",
             "field": "id",
-            "before": "FS-01-W",
-            "after": "FS-01-N"
+            "before": "CC-01-W",
+            "after": "CC-01-N"
           },
-          "mutation_sha256": "3c63d52e38f7945217f21bb9f302d9b36187308774e4af4487ac435ce2bdc475",
-          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
-          "mutated_candidate_spec_sha256": "90fb5953ef7fd8088cbf67e59f79923db643ed79d2dcebdf5f7b014e41971c9a",
-          "evaluation_sha256": "0c67733fe33a85403b8fb1e067820c0198854a13632b2a8e26e0fee548097835",
+          "mutation_sha256": "53978187621ea5ce383dae0cb8100de7ee7fd63133211a8f50fcd045799ef863",
+          "source_candidate_spec_sha256": "7f11812751780460dff594908b1262b8482bf15430b9eaa8378c391cb6213c6f",
+          "mutated_candidate_spec_sha256": "473e5731f9af0cb7c2a6e8180b1e14b747332cc36a2d42ea0e749f579ec6b705",
+          "evaluation_sha256": "4fbfb8fb8073a71e14916591a0912712d7b1db3af94ece884c4320524a6b3928",
           "expected_failed_gate": "feature_ids_unique",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -587,18 +587,18 @@
           ]
         },
         {
-          "case_id": "C02-FOUR-SEASON-COURTYARDS:same-layer-mass-overlap",
-          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "case_id": "C02-CLIMATE-CARE-CONTROL:same-layer-mass-overlap",
+          "candidate_id": "C02-CLIMATE-CARE-CONTROL",
           "challenge_id": "same-layer-mass-overlap",
           "mutation": {
             "challenge_id": "same-layer-mass-overlap",
-            "feature_id": "FS-01-W",
-            "overlaps_feature_id": "FS-01-N"
+            "feature_id": "CC-01-W",
+            "overlaps_feature_id": "CC-01-N"
           },
-          "mutation_sha256": "bdb5612f4ecd278ca1725920cc78b24be2363e7ca2812b833df1973ab181ecfd",
-          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
-          "mutated_candidate_spec_sha256": "d82f4be8f11e9d22f308ed7728aeca62837ccb212dee9f7fa415402aca40954a",
-          "evaluation_sha256": "cf0b1a650036613a45be22b55e251c68e8807d0bc5ad3e0722bcb36331a50a33",
+          "mutation_sha256": "e1892f339925cf1b4bf9416dc8aef69e48ced4b9234f9f747678250c8623e100",
+          "source_candidate_spec_sha256": "7f11812751780460dff594908b1262b8482bf15430b9eaa8378c391cb6213c6f",
+          "mutated_candidate_spec_sha256": "12d53f1b0f3137ab8564e6bdc43c0175c220649074ae69341bcb21ac7728315e",
+          "evaluation_sha256": "e393c3b5730f536c5f07de9eb9c106452bad2949abc13a5ef2515fd45594469c",
           "expected_failed_gate": "unintended_mass_overlaps_zero",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -609,19 +609,19 @@
           ]
         },
         {
-          "case_id": "C02-FOUR-SEASON-COURTYARDS:support-infill-overlap",
-          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "case_id": "C02-CLIMATE-CARE-CONTROL:support-infill-overlap",
+          "candidate_id": "C02-CLIMATE-CARE-CONTROL",
           "challenge_id": "support-infill-overlap",
           "mutation": {
             "challenge_id": "support-infill-overlap",
-            "feature_id": "FAULT-INFILL-C02-FOUR-SEASON-COURTYARDS",
-            "overlaps_feature_id": "FS-01-N",
+            "feature_id": "FAULT-INFILL-C02-CLIMATE-CARE-CONTROL",
+            "overlaps_feature_id": "CC-01-N",
             "storeys": 0
           },
-          "mutation_sha256": "3e3a44e06c5e694d526c96598c88ab8ce4210c241575bfec10d9557c30709ad7",
-          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
-          "mutated_candidate_spec_sha256": "08f8f7ce8bd39c90d7d6c885c39ce9b073e381fa21f801cc5dac73aa346f47dc",
-          "evaluation_sha256": "af306047c1aebd5d3332f15c914a8a7b83c8ff6f88bf7ab7d57666d22069a329",
+          "mutation_sha256": "e774adc3d10093a7e3cd8ba863a7db5296add6ce2e0a39adf40a3a6ee863e30c",
+          "source_candidate_spec_sha256": "7f11812751780460dff594908b1262b8482bf15430b9eaa8378c391cb6213c6f",
+          "mutated_candidate_spec_sha256": "7bef143163a88244f5e585a5b68d697846723c7a8a9020c8a1d553fa2dbe5df8",
+          "evaluation_sha256": "33b6687357a81e09e1dd7487165571fb7ca8215886aff616305d97c0ea050d41",
           "expected_failed_gate": "support_infill_overlap_zero",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -633,12 +633,12 @@
           ]
         },
         {
-          "case_id": "C02-FOUR-SEASON-COURTYARDS:isolated-public-route-component",
-          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "case_id": "C02-CLIMATE-CARE-CONTROL:isolated-public-route-component",
+          "candidate_id": "C02-CLIMATE-CARE-CONTROL",
           "challenge_id": "isolated-public-route-component",
           "mutation": {
             "challenge_id": "isolated-public-route-component",
-            "feature_id": "FAULT-ISOLATED-ROUTE-C02-FOUR-SEASON-COURTYARDS",
+            "feature_id": "FAULT-ISOLATED-ROUTE-C02-CLIMATE-CARE-CONTROL",
             "start": [
               -345.0,
               112.0
@@ -648,10 +648,10 @@
               112.0
             ]
           },
-          "mutation_sha256": "a3dbf2b5e9cc260f31eda770a5fddfbda1aee91210544eec4e55dd82810d843e",
-          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
-          "mutated_candidate_spec_sha256": "301bad1751003954a7552ce87b8c3616918b9cb6b38be8ab9ac1587c1fd1e1a4",
-          "evaluation_sha256": "94149a32697e709cf090ee298d92f54ae1b3bc30ebbec7daa8992671fdff7bac",
+          "mutation_sha256": "1713d7faa86b5867b8308e786fd7485dbd1ddb9801bcbd62dbf981639187f1d1",
+          "source_candidate_spec_sha256": "7f11812751780460dff594908b1262b8482bf15430b9eaa8378c391cb6213c6f",
+          "mutated_candidate_spec_sha256": "4beaed525d2b8eb022c51ea2ad0708eaa4e9c90d225a2b0a68644c2433474cf9",
+          "evaluation_sha256": "0b87531f609037ae00df5fb9f71e597236f7ef3ae11acc72491fcd78a96d5a86",
           "expected_failed_gate": "public_route_network_connected",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -662,20 +662,20 @@
           ]
         },
         {
-          "case_id": "C02-FOUR-SEASON-COURTYARDS:unreachable-public-room",
-          "candidate_id": "C02-FOUR-SEASON-COURTYARDS",
+          "case_id": "C02-CLIMATE-CARE-CONTROL:unreachable-public-room",
+          "candidate_id": "C02-CLIMATE-CARE-CONTROL",
           "challenge_id": "unreachable-public-room",
           "mutation": {
             "challenge_id": "unreachable-public-room",
-            "feature_id": "FS-COURT-01",
+            "feature_id": "CC-COURT-01",
             "field": "y",
             "before": -48,
             "after": 500.0
           },
-          "mutation_sha256": "066691bcd410cdf9b27c25b2edae1def2372162484f96801ace4c94f0d3f95e9",
-          "source_candidate_spec_sha256": "7529493f5b59c4f7cf0e147f74473ea9abc7749c17404ec3343e8dca1a447567",
-          "mutated_candidate_spec_sha256": "6a3ec7c5597696324ae297d54c09ca677566b784679d5c65671e422b8810115d",
-          "evaluation_sha256": "aa54fe130b1dfd4de92e6ed9f48b0aa93767d5dff06d079a128db7d23069b72f",
+          "mutation_sha256": "6d36c5839b83160cccd9fee104550f47d174614d54c37d98eaf8aebfa1bb0f53",
+          "source_candidate_spec_sha256": "7f11812751780460dff594908b1262b8482bf15430b9eaa8378c391cb6213c6f",
+          "mutated_candidate_spec_sha256": "c7ff87b4bbd6434e8f644a63dd254c1b9944940ab4f922882bf911ed9dde7cce",
+          "evaluation_sha256": "bce9ba6b5fa35d79b40a8622f0bae79d8c2e16c1faabba12bbb608751bd48b8f",
           "expected_failed_gate": "every_public_room_reached",
           "expected_gate_value": false,
           "observed_gate_value": false,
@@ -844,7 +844,7 @@
       "permuted_semantic_evaluation_sha256": "6eb8c895d88de7aa9917ab9a3a59bb05357a61b3f835fca7e6d060e24f958d3f",
       "pass": true
     },
-    "receipt_sha256": "7a0c86b2289fcabb4d507b1a129a9d356c1d0d414053a1849eb90fc16558a0f2"
+    "receipt_sha256": "ea6de916b0f9ca25d131c29d8b8a46e9a3fa5327cfc62fddb213153703a997b1"
   },
   "stateful_human_handoff_recovery": {
     "schema_version": "jingzhang-human-handoff-recovery-v1",
@@ -8182,7 +8182,7 @@
     "Digital-outage token checks remain declaration checks; the separate recovery DAG verifies only the encoded fallback transition contract.",
     "No energy, crowd, drainage, fire or legal-insolation performance is claimed."
   ],
-  "harness_payload_sha256_before_planning_library": "2160a99837482003a38cc6a95dd91f31663b4ffd75fba4a04ab62da0056e5b19",
+  "harness_payload_sha256_before_planning_library": "1fe889f2e95e77e4a5994a0d76c8800e33a66f0f2358b6907e114a219fd0f360",
   "planning_scenario_library": {
     "schema_version": "1.0.0",
     "evidence_status": "participant_authored_hypotheses_not_harness_verified",
@@ -8457,7 +8457,7 @@
         "operator": "benchmark curator + independent safety checker",
         "data_boundary": "public or explicitly licensed test assets in an isolated sandbox",
         "human_fallback": "manual replay, signed result sheet and physical power/network isolation",
-        "failure_metric": "a result is published only when an independent rerun reproduces it and all hard gates pass",
+        "failure_metric": "a result is published only when an independent rerun reproduces it and all hard exclusion conditions pass",
         "status": "controlled_trial_pending_benchmark_protocol",
         "industrial_validation": false
       },
@@ -8526,14 +8526,14 @@
           "P04"
         ],
         "time_season": "weekday and evening booking",
-        "location": "Negotiated Gate + Origin Cloister",
+        "location": "Timed Campus Threshold + Origin Cloister",
         "conflict": "shared research access versus campus security and quiet",
         "spatial_response": "public-side room, separate secure entrance and agreed windows",
         "operator": "campus + community",
         "data_boundary": "booking identity only inside operator system",
         "human_fallback": "staff reception and paper guest list",
         "failure_metric": "field baseline: refused trips, security exceptions and accessible entry",
-        "status": "hypothesis_pending_gate_agreement"
+        "status": "hypothesis_pending_access_agreement"
       },
       {
         "id": "S04",
@@ -8697,7 +8697,7 @@
       {
         "id": "S13",
         "title_zh": "分时协同开放校门",
-        "title_en": "time-window negotiated gate",
+        "title_en": "timed, stewarded campus access",
         "persona_ids": [
           "P01",
           "P04"
@@ -8705,10 +8705,10 @@
         "time_season": "agreed weekday/weekend windows",
         "location": "campus/community thresholds",
         "conflict": "public permeability versus security, emergency and institutional operation",
-        "spatial_response": "public-side common room, separate secure entrance and reversible time gate",
+        "spatial_response": "public-side common room, separate secure entrance and reversible timed threshold",
         "operator": "campus + community + security",
         "data_boundary": "aggregate passage counts; no identity beyond operator policy",
-        "human_fallback": "staffed gate and manual emergency override",
+        "human_fallback": "staffed threshold and manual emergency override",
         "failure_metric": "field baseline: agreed access delivered without security or accessible-route failure",
         "status": "hypothesis_pending_multi_party_agreement"
       },
@@ -8751,58 +8751,8 @@
         "status": "hypothesis_pending_operator_and_night_baseline"
       }
     ],
-    "competition_task_systems": {
-      "evidence_status": "participant_authored_operating_and_transfer_framework_not_local_agreement",
-      "global_mechanism_cases": [
-        {
-          "id": "one-north",
-          "title": "one-north",
-          "mechanism_zh": "工作—生活—学习混合",
-          "mechanism_en": "work-live-learn mix",
-          "transfer_zh": "公共首层由运营者持续维护",
-          "transfer_en": "operate the public ground continuously"
-        },
-        {
-          "id": "punggol",
-          "title": "Punggol",
-          "mechanism_zh": "大学—产业—区域能源",
-          "mechanism_en": "university-industry-district energy",
-          "transfer_zh": "把共享基础设施写进实施",
-          "transfer_en": "bind shared infrastructure to delivery"
-        },
-        {
-          "id": "barcelona",
-          "title": "22@ Barcelona",
-          "mechanism_zh": "工业存量再利用",
-          "mechanism_en": "industrial-fabric reuse",
-          "transfer_zh": "先盘点，再拆改留",
-          "transfer_en": "inventory before retain/repair/insert"
-        },
-        {
-          "id": "saclay",
-          "title": "Paris-Saclay",
-          "mechanism_zh": "多机构网络",
-          "mechanism_en": "multi-institution network",
-          "transfer_zh": "公共交通和日常服务先行",
-          "transfer_en": "transit and everyday services first"
-        },
-        {
-          "id": "knowledge-quarter",
-          "title": "Knowledge Quarter",
-          "mechanism_zh": "既有城市中的机构连接",
-          "mechanism_en": "institutions connected through the city",
-          "transfer_zh": "连接而不圈园",
-          "transfer_en": "connect without enclosing a campus"
-        },
-        {
-          "id": "kendall",
-          "title": "Kendall Square",
-          "mechanism_zh": "创新就业与公共空间谈判",
-          "mechanism_en": "innovation jobs negotiated with public space",
-          "transfer_zh": "公共利益写进开发条件",
-          "transfer_en": "bind public benefit to development"
-        }
-      ],
+    "operating_context": {
+      "evidence_status": "participant_authored_role_and_resource_hypotheses_not_local_agreements",
       "operating_actors": [
         {
           "id": "district",
@@ -8889,113 +8839,54 @@
           "en": "public value"
         }
       ],
-      "conversion_pathway": [
-        {
-          "id": "observe",
-          "zh": "01 公开观察",
-          "en": "01 PUBLIC OBSERVATION",
-          "gate_zh": "不用注册",
-          "gate_en": "no account"
-        },
-        {
-          "id": "contribute",
-          "zh": "02 提交问题",
-          "en": "02 CONTRIBUTE A PROBLEM",
-          "gate_zh": "人工受理",
-          "gate_en": "human intake"
-        },
-        {
-          "id": "prototype",
-          "zh": "03 第一跨试作",
-          "en": "03 FIRST-BAY PROTOTYPE",
-          "gate_zh": "可撤+隔离",
-          "gate_en": "reversible + isolated"
-        },
-        {
-          "id": "audit",
-          "zh": "04 公众复演",
-          "en": "04 PUBLIC REPLAY",
-          "gate_zh": "独立校核",
-          "gate_en": "independent check"
-        },
-        {
-          "id": "adopt",
-          "zh": "05 有证采用",
-          "en": "05 LICENSED ADOPTION",
-          "gate_zh": "许可+运营者",
-          "gate_en": "permit + operator"
-        },
-        {
-          "id": "retire",
-          "zh": "06 更新或退出",
-          "en": "06 UPDATE OR RETIRE",
-          "gate_zh": "停止条件",
-          "gate_en": "stop condition"
-        }
-      ],
-      "open_seasons": [
-        {
-          "id": "winter",
-          "zh": "冬 · 晒太阳与人工服务周",
-          "en": "WINTER · SUN + STAFFED SERVICE WEEK"
-        },
-        {
-          "id": "spring",
-          "zh": "春 · 共地搭建与材料盘点",
-          "en": "SPRING · OPEN BUILD + MATERIAL INVENTORY"
-        },
-        {
-          "id": "summer",
-          "zh": "夏 · 夜间城市与热雨实验",
-          "en": "SUMMER · NIGHT CITY + HEAT/RAIN LAB"
-        },
-        {
-          "id": "autumn",
-          "zh": "秋 · 京张证据与模型替换节",
-          "en": "AUTUMN · JING-ZHANG EVIDENCE + MODEL-SWAP WEEK"
-        }
-      ],
-      "key_area_delivery": [
-        {
-          "id": "proof",
-          "name_zh": "众智园 · 验证院",
-          "name_en": "ZHONGZHIYUAN · PROOF YARD",
-          "action_zh": "保留可用框架 · 修复公共门槛 · 插入可撤第一跨",
-          "action_en": "retain usable frame · repair public threshold · insert reversible first bay",
-          "pilot_zh": "观察廊 + 隔离测试格",
-          "pilot_en": "observation cloister + isolated test cell",
-          "operator_zh": "试验安全主管 + 独立校核者",
-          "operator_en": "test safety lead + independent checker",
-          "stop_zh": "越界、不可复演或失联继续即停",
-          "stop_en": "stop on boundary breach, failed replay or unsafe continuation"
-        },
-        {
-          "id": "origin",
-          "name_zh": "AI 原点 · 原点廊院",
-          "name_en": "AI ORIGIN · ORIGIN CLOISTER",
-          "action_zh": "保留校园/社区存量 · 修复通行 · 插入多孔廊院",
-          "action_en": "retain campus/community stock · repair access · insert porous cloister",
-          "pilot_zh": "分时协同开放校门 + 照护院",
-          "pilot_en": "negotiated gate + care court",
-          "operator_zh": "校园—社区联合运营",
-          "operator_en": "campus-community joint operator",
-          "stop_zh": "无通行协议、无照护运营者即不建",
-          "stop_en": "no build without access agreement and care operator"
-        },
-        {
-          "id": "exchange",
-          "name_zh": "大钟寺 · 城市交汇厅",
-          "name_en": "DAZHONGSI · EXCHANGE HALL",
-          "action_zh": "先做拆改留调查 · 修复四象限步行 · 插入全天候共享檐",
-          "action_en": "survey retain/repair/insert · repair four-quadrant walking · add all-weather eave",
-          "pilot_zh": "站点门廊 + 骑手驿站 + 人工帮助台",
-          "pilot_en": "station porch + Rider Dock + staffed help desk",
-          "operator_zh": "属地 + 交通 + 共地运营者",
-          "operator_en": "local authority + transit + Shared Floor operator",
-          "stop_zh": "未测人流、权属、消防或造价即不扩张",
-          "stop_en": "no scale-up before movement, ownership, fire and cost evidence"
-        }
-      ]
+      "claim_boundary": "Role types and resource classes only; no named appointment, funding commitment, permit or operating agreement is claimed."
     }
+  },
+  "changeover_verification": {
+    "evidence_status": "deterministic_design_time_contract_verification_only",
+    "run_id": "shared-floor-changeover-ed41614d2fa3c85d",
+    "summary": {
+      "contract_count": 12,
+      "delta_receipt_count": 36,
+      "eligible_for_live_shadow_count": 8,
+      "fixture_count": 36,
+      "held_contract_regression_count": 4,
+      "honor_display_count": 3,
+      "interface_component_count": 6,
+      "promotion_executed_count": 0,
+      "safe_candidate_count": 8,
+      "topology_count": 3,
+      "unsafe_candidate_count": 4,
+      "unsafe_eligible_count": 0,
+      "unsafe_promotion_count": 0,
+      "witness_landmark_count": 3
+    },
+    "coverage": {
+      "contracts_per_site_topology": {
+        "exchange-hall": 4,
+        "origin-cloister": 4,
+        "proof-yard": 4
+      },
+      "contracts_with_all_three_fixture_kinds": 12,
+      "contracts_with_deny_by_default_rollback": 12,
+      "contracts_with_permanent_H_path": 12,
+      "contracts_with_two_key_policy": 12
+    },
+    "claim_boundary": {
+      "claim": "No live model, live user, site operation, or field-performance run was executed; results establish design-time wiring only.",
+      "deployment_or_promotion_executed": false,
+      "field_performance_observations": 0,
+      "field_trials": 0,
+      "live_model_runs": 0,
+      "live_user_sessions": 0,
+      "scope": "deterministic_design_time_contract_verification_only"
+    },
+    "public_artifacts": [
+      "visual/assets/model-swap-run-contract.json",
+      "visual/assets/model-swap-topologies.json",
+      "visual/assets/model-swap-contracts.json",
+      "visual/assets/model-swap-verification.json",
+      "visual/assets/model-swap-build-receipt.json"
+    ]
   }
 }

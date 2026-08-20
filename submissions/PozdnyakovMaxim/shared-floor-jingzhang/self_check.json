@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/changelog.md"
+      ],
       "changed_files": [
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/agent.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/figures/corridor-atlas.en.png",
@@ -50,6 +52,7 @@
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/media/origin-cloister-summer.jpg",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assets/media/proof-yard-winter.jpg",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/assumptions.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/changelog.md",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/compliance_matrix.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/design_depth_matrix.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/drawings/a0-boards.en.pdf",
@@ -73,10 +76,15 @@
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/report/narrative.md",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/report/proposal.en.html",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/report/proposal.html",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/risk.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/self_check.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/simulation.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/sources.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/standard_matrix.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/compiler-source-part-01.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/compiler-source-part-02.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/compiler-source-part-03.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/compiler-source-part-04.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/compiler-source.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/corridor-context.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/corridor-room-figure-ground.json",
@@ -91,6 +99,12 @@
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c01-civic-proving-line-design-state-json.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c01-civic-proving-line-evaluation-json.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c01-civic-proving-line-geometry-geojson.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c01-route-sequence-control-design-state-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c01-route-sequence-control-evaluation-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c01-route-sequence-control-geometry-geojson.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c02-climate-care-control-design-state-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c02-climate-care-control-evaluation-json.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c02-climate-care-control-geometry-geojson.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c02-four-season-courtyards-design-state-json.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c02-four-season-courtyards-evaluation-json.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/harness-artifact-candidates-c02-four-season-courtyards-geometry-geojson.json",
@@ -108,6 +122,12 @@
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/loc-jingzhang-1909-012.jpg",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/loc-jingzhang-1909-026.jpg",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/loc-jingzhang-1909-036.jpg",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/model-swap-build-receipt.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/model-swap-contracts.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/model-swap-latest.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/model-swap-run-contract.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/model-swap-topologies.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/model-swap-verification.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/reproducibility.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/index.en.html",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/index.html"
@@ -115,7 +135,7 @@
       "ai_package_stages": {
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang": "formal"
       },
-      "total_bytes": 41089111,
+      "total_bytes": 34785920,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -189,15 +209,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 69,
+        "known_metric_refs_required": 81,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 41,
+          "source": 42,
           "standard": 6,
           "depth": 14,
-          "data": 21,
-          "metric": 38
+          "data": 20,
+          "metric": 53
         }
       }
     },
