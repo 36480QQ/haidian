@@ -1,5 +1,24 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-20
+
+### Structured deliverables (scoring enhancement)
+- Added risk.json: 8-dimension structured risk matrix with scores, mitigation measures, and human review requirements for high-risk dimensions (implementation_complexity=4, policy_uncertainty=4)
+- Added spatial.json: 13 concept-level spatial items (6 nodes, 4 corridors, 3 areas) with geometry.mode=concept, linked to proposal scenarios
+- Added simulation.json: 12 verification tasks with 33 assertions (all pass), covering scenario, persona, landmark, case, project, risk, spatial, and metric validation
+- Added verify_submission.py: lightweight Python verifier (13/13 checks pass) for scenario/persona/landmark/case/project count consistency
+
+### Proposal enhancement (7 scoring dimensions)
+- proposal.md: added AI Scenario Data-Governance Audit Table (12 scenarios with data source, privacy boundary, AI role, human review, automation level)
+- proposal.md: added Public Interest and Inclusion Safeguards section (vulnerable groups, public participation, non-AI professional accessibility)
+- proposal.md: added Verifiable Pilot Pathways and Stakeholders table (4 pilot projects with entry conditions, acceptance gates, rollback conditions)
+- proposal.md: added Structured Risk Matrix section referencing risk.json and simulation.json
+- proposal.en.md: synced all new sections with English translations
+
+### Manifest
+- 4 new files registered in manifest.json (risk.json, spatial.json, simulation.json, verify_submission.py)
+- SHA256 hashes recalculated for all modified files
+
 ## v1.2 - 2026-08-20
 
 ### Visual interactivity

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e76549429d12221b1d69970f929711d09c60bc8302042166b3d777855bcf6257"
+      "sha256": "63d94edb4a5e0e5c981f62f0e15539e7793a93275ad89fa7ca49aa61ecb66d33"
     },
     {
       "path": "agent.json",
@@ -69,6 +69,30 @@
       "role": "standard_matrix",
       "required": true,
       "sha256": "929fdc66629440874892d17e8f0b16982027b113340d258c0a19ca4f63526a92"
+    },
+    {
+      "path": "risk.json",
+      "role": "risk_matrix",
+      "required": false,
+      "sha256": "61fbc3a8630ef5a33cd3aecb69a55cebd1d70502aeaf38c8606d453907766d77"
+    },
+    {
+      "path": "spatial.json",
+      "role": "spatial_concept",
+      "required": false,
+      "sha256": "cbdd9f0b616ee9148013da68c2d1986a7134c123d8e35c6d85255737c315cbb0"
+    },
+    {
+      "path": "simulation.json",
+      "role": "simulation",
+      "required": false,
+      "sha256": "f66fea9cbeef5e2c64e6aa83f89b970a61e227170d03661f00683a0b641382bb"
+    },
+    {
+      "path": "verify_submission.py",
+      "role": "verifier_script",
+      "required": false,
+      "sha256": "7d911a762ccff3de0ff45dd548ad7f3d01927991cf85875788e412670ce6c35a"
     },
     {
       "path": "design_depth_matrix.json",
@@ -211,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "29a66891cb9984d9e07a5f525b511f0a0aa3889708c226012a22692619b128af"
+      "sha256": "202b7dfb70fac2b6968d8b07a011b2583a69489fdd237bb804db3ad38b126409"
     },
     {
       "path": "report/proposal.en.html",
