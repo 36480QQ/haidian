@@ -15,6 +15,7 @@ const osm = JSON.parse(zlib.gunzipSync(Buffer.from(osmEnvelope.payload, 'base64'
 const results = read('visual/assets/site-context-results.json');
 const keyAreas = read('geometry/key_areas.geojson');
 const landUse = read('geometry/land_use.geojson');
+const roads = read('geometry/roads.geojson');
 
 const W = 2000;
 const H = 1200;
@@ -178,11 +179,161 @@ function keyAreasFigure(lang) {
   return svgWrap(body + footer(lang));
 }
 
+function drawDesignNetwork(extent, rect) {
+  let body = '';
+  for (const feature of roads.features) {
+    const role = feature.properties.design_role;
+    if (!['heritage_slow_mobility_spine', 'east_west_stitch'].includes(role)) continue;
+    const color = role === 'heritage_slow_mobility_spine' ? C.cyan : C.amber;
+    const width = role === 'heritage_slow_mobility_spine' ? 8 : 3;
+    const dash = role === 'east_west_stitch' ? ' stroke-dasharray="10 7"' : '';
+    body += `<path d="${pathData(feature.geometry.coordinates, extent, rect)}" fill="none" stroke="white" stroke-width="${width + 4}" opacity="0.86"/>`;
+    body += `<path d="${pathData(feature.geometry.coordinates, extent, rect)}" fill="none" stroke="${color}" stroke-width="${width}"${dash}/>`;
+  }
+  return body;
+}
+
+function cityProblemFigure(lang) {
+  const zh = lang === 'zh';
+  const extent = [116.337, 39.937, 116.359, 40.029];
+  const rect = { x: 58, y: 160, w: 1240, h: 940 };
+  let body = header(1,
+    '城市问题：一条纵向公共线，三类横向技术进入',
+    'ONE PUBLIC LINE, THREE LATERAL AI ENTRIES',
+    '先看已经存在的公共生活，再决定技术如何进入',
+    'START WITH EXISTING PUBLIC LIFE, THEN DECIDE HOW TECHNOLOGY MAY ENTER', lang);
+  body += `<rect x="58" y="160" width="1240" height="940" rx="5" fill="white" stroke="${C.line}"/>`;
+  body += mapLayer(extent, rect, `problem-${lang}`, { lightBuildings: true });
+  body += drawDesignNetwork(extent, rect);
+  keyAreas.features.forEach((area, index) => {
+    body += ringOverlay(area.geometry.coordinates[0], extent, rect, stationColors[index], stationNames[lang][index]);
+  });
+  body += `<rect x="1330" y="160" width="612" height="940" rx="5" fill="white" stroke="${C.line}"/>`;
+  body += text(1366, 218, zh ? '现状 → 问题 → 空间原则' : 'EXISTING → CONFLICT → SPATIAL RULE', 24, C.ink, 700);
+  const cards = zh ? [
+    ['01 已经拥有', ['约9公里开放遗址走廊', '铁路记忆与日常慢行共存', '两侧是园区、校园、社区与站点']],
+    ['02 真正缺少', ['AI活动需要横向进入', '试验、发布和服务可能争夺公共界面', '普通人不应为技术绕路']],
+    ['03 X京张动作', ['公众正线连续', 'AI只占可关闭侧袋', '唯一交叉有人值守；失败沿侧路撤出']],
+  ] : [
+    ['01 ALREADY HERE', ['roughly 9 km of open heritage corridor', 'rail memory and everyday movement coexist', 'campuses, homes and stations sit on both sides']],
+    ['02 MISSING RULE', ['AI activity needs lateral entry', 'tests, launches and service compete for one interface', 'ordinary users must not detour for technology']],
+    ['03 X JINGZHANG MOVE', ['keep the civic main line continuous', 'AI occupies a closable pocket only', 'staff the sole crossing; failure exits sideways']],
+  ];
+  cards.forEach((card, index) => {
+    const y = 270 + index * 248;
+    const color = [C.cyan, C.coral, C.green][index];
+    body += `<rect x="1366" y="${y}" width="540" height="210" rx="5" fill="${[C.paleBlue, C.paleCoral, C.paleGreen][index]}" stroke="${color}"/>`;
+    body += text(1394, y + 42, card[0], 17, color, 700);
+    body += lines(1394, y + 88, card[1], zh ? 17 : 15, C.ink, 600, 1.65);
+  });
+  body += `<rect x="1366" y="1014" width="540" height="58" rx="4" fill="${C.ink}"/>`;
+  body += text(1392, 1050, zh ? '青色：既有纵向公共线　金色：概念横向缝合' : 'CYAN: PUBLIC LINE   GOLD: CONCEPT LATERAL LINKS', zh ? 14 : 12, C.white, 650);
+  return svgWrap(body + footer(lang));
+}
+
+function operatingFigure(lang) {
+  const zh = lang === 'zh';
+  const extent = [116.337, 39.937, 116.359, 40.029];
+  const rect = { x: 58, y: 160, w: 940, h: 940 };
+  let body = header(2,
+    '一件产品沿城市线前进，也必须在空间里折返',
+    'ONE PRODUCT ADVANCES ALONG THE CITY LINE AND RETURNS IN SPACE',
+    '0.8 FAIL → 0.9 LIMITED → PUBLIC RETURN → 0.10 RETEST',
+    '0.8 FAIL → 0.9 LIMITED → PUBLIC RETURN → 0.10 RETEST', lang);
+  body += `<rect x="58" y="160" width="940" height="940" rx="5" fill="white" stroke="${C.line}"/>`;
+  body += mapLayer(extent, rect, `operating-${lang}`, { lightBuildings: true });
+  body += drawDesignNetwork(extent, rect);
+  const centers = keyAreas.features.map((area) => {
+    const ring = area.geometry.coordinates[0].slice(0, -1);
+    const center = ring.reduce((acc, point) => [acc[0] + point[0] / ring.length, acc[1] + point[1] / ring.length], [0, 0]);
+    return project(center, extent, rect);
+  });
+  const ordered = [centers[0], centers[1], centers[2]];
+  body += `<path d="M${ordered[0][0]},${ordered[0][1]} L${ordered[1][0]},${ordered[1][1]} L${ordered[2][0]},${ordered[2][1]}" fill="none" stroke="white" stroke-width="16" opacity="0.9"/>`;
+  body += `<path d="M${ordered[0][0]},${ordered[0][1]} L${ordered[1][0]},${ordered[1][1]} L${ordered[2][0]},${ordered[2][1]}" fill="none" stroke="${C.ink}" stroke-width="8" marker-end="url(#arrow-dark)"/>`;
+  body += `<defs><marker id="arrow-dark" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="${C.ink}"/></marker><marker id="arrow-return" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="${C.coral}"/></marker></defs>`;
+  body += `<path d="M${ordered[2][0] + 45},${ordered[2][1]} C${ordered[2][0] + 180},${ordered[2][1] - 40} ${ordered[0][0] + 180},${ordered[0][1] + 40} ${ordered[0][0] + 45},${ordered[0][1]}" fill="none" stroke="white" stroke-width="14" opacity="0.9"/>`;
+  body += `<path d="M${ordered[2][0] + 45},${ordered[2][1]} C${ordered[2][0] + 180},${ordered[2][1] - 40} ${ordered[0][0] + 180},${ordered[0][1] + 40} ${ordered[0][0] + 45},${ordered[0][1]}" fill="none" stroke="${C.coral}" stroke-width="7" marker-end="url(#arrow-return)"/>`;
+  centers.forEach((point, index) => {
+    body += `<circle cx="${point[0]}" cy="${point[1]}" r="19" fill="${stationColors[index]}" stroke="white" stroke-width="6"/>`;
+  });
+  body += `<rect x="1030" y="160" width="912" height="940" rx="5" fill="white" stroke="${C.line}"/>`;
+  const stages = zh ? [
+    ['01 众智园', '0.8 / FAIL', ['意外穿越触发急停', '机器从测试侧袋撤出', '公众路径不改线']],
+    ['02 AI原点', '0.9 / LIMITED', ['复测版本公开方法与许可', '责任人与撤回同场可见', '仅允许有限进入下一段']],
+    ['03 大钟寺', 'PUBLIC / RETURN', ['周阿姨线下提出异议', '试用侧袋关闭，人工服务继续', '新工况随0.10返回众智园']],
+  ] : [
+    ['01 ZHONGZHI', '0.8 / FAIL', ['unexpected crossing triggers human stop', 'device leaves through test pocket', 'public path does not move']],
+    ['02 AI ORIGIN', '0.9 / LIMITED', ['retested version exposes method and licence', 'owner and withdrawal share one interface', 'limited entry to the next section only']],
+    ['03 DAZHONGSI', 'PUBLIC / RETURN', ['Ms Zhou objects offline', 'trial pocket closes; staffed service stays', 'new fixture returns with version 0.10']],
+  ];
+  stages.forEach((stage, index) => {
+    const y = 208 + index * 260;
+    const color = stationColors[index];
+    body += `<rect x="1068" y="${y}" width="836" height="222" rx="5" fill="${[C.paleBlue, C.paleGreen, C.paleAmber][index]}" stroke="${color}"/>`;
+    body += text(1098, y + 42, stage[0], 18, color, 700);
+    body += text(1868, y + 42, stage[1], 16, index === 2 ? C.coral : C.ink, 700, 'end');
+    body += lines(1098, y + 92, stage[2], zh ? 17 : 15, C.ink, 600, 1.62);
+  });
+  body += `<rect x="1068" y="994" width="836" height="78" rx="4" fill="${C.ink}"/>`;
+  body += text(1094, 1025, zh ? '折返不是后台状态：断能 → 撤出 → 恢复普通用途 → 带新问题返回' : 'RETURN IS PHYSICAL: ISOLATE → REMOVE → RESTORE ORDINARY USE → RETEST', zh ? 15 : 13, C.white, 650);
+  return svgWrap(body + footer(lang));
+}
+
+function stationSpatialFigure(lang) {
+  const zh = lang === 'zh';
+  let body = header(5,
+    '三站相对平面：同一原则，三种不可互换的空间',
+    'THREE STATIONS, THREE SPATIAL RELATIONS',
+    '公开地图语境 + 相对关系；不虚构工程尺寸',
+    'PUBLIC MAP CONTEXT + RELATIVE RELATIONS; NO INVENTED FIELD DIMENSIONS', lang);
+  body += `<defs><marker id="arrow-return" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="${C.coral}"/></marker></defs>`;
+  const titles = zh ? ['众智园｜研发与河岸', 'AI原点｜校园与社区', '大钟寺｜轨道与商业'] : ['ZHONGZHI | RESEARCH + RIVER', 'AI ORIGIN | CAMPUS + COMMUNITY', 'DAZHONGSI | TRANSIT + COMMERCE'];
+  const labels = zh ? [
+    ['连续公众路径', '观察缓冲', '测试侧袋', '值守 + 急停', '后勤撤出'],
+    ['贯通公共首层', '开放实验室', '发布台 + 公众阶梯', '责任 + 撤回', '协作庭院'],
+    ['轨道到达主链', '人工等价服务', '投诉节点', '有限试用侧袋', '设备退出'],
+  ] : [
+    ['continuous civic path', 'observation buffer', 'test pocket', 'staff + physical stop', 'service exit'],
+    ['public ground floor', 'open lab', 'release table + steps', 'owner + withdrawal', 'collaboration court'],
+    ['transit arrival chain', 'staffed equivalent', 'complaint point', 'limited trial pocket', 'equipment exit'],
+  ];
+  const after = zh ? ['机器撤出，院落与绿地恢复', '产品撤下，学习协作继续', '试用关闭，交通、商业与人工服务继续'] : ['device leaves; court and green recover', 'product leaves; learning and collaboration stay', 'trial closes; transit, commerce and staff stay'];
+  keyAreas.features.forEach((area, index) => {
+    const x = 58 + index * 636;
+    const ring = area.geometry.coordinates[0];
+    const mapRect = { x: x + 20, y: 212, w: 566, h: 300 };
+    const extent = extentForRing(ring, 0.14);
+    const color = stationColors[index];
+    body += `<rect x="${x}" y="160" width="606" height="930" rx="5" fill="white" stroke="${C.line}"/><rect x="${x}" y="160" width="606" height="10" fill="${color}"/>`;
+    body += text(x + 24, 202, titles[index], 20, C.ink, 700);
+    body += mapLayer(extent, mapRect, `atlas-${lang}-${index}`, { lightBuildings: true });
+    body += ringOverlay(ring, extent, mapRect, color, stationNames[lang][index]);
+    const y = 620;
+    body += text(x + 24, 558, zh ? '相对平面关系' : 'RELATIVE PLAN', 14, color, 700);
+    body += `<line x1="${x + 42}" y1="${y}" x2="${x + 564}" y2="${y}" stroke="${C.cyan}" stroke-width="11"/>`;
+    if (index === 0) {
+      body += `<rect x="${x + 208}" y="${y - 170}" width="210" height="112" rx="5" fill="${C.paleBlue}" stroke="${color}" stroke-width="3"/><rect x="${x + 182}" y="${y - 44}" width="262" height="20" fill="${C.paleGreen}"/><line x1="${x + 313}" y1="${y - 58}" x2="${x + 313}" y2="${y}" stroke="${C.coral}" stroke-width="7"/><path d="M${x+418},${y-115} L${x+540},${y-180}" stroke="${C.coral}" stroke-width="4" marker-end="url(#arrow-return)"/>`;
+    } else if (index === 1) {
+      body += `<rect x="${x + 80}" y="${y - 174}" width="150" height="108" fill="${C.paleBlue}" stroke="${color}"/><rect x="${x + 238}" y="${y - 174}" width="150" height="108" fill="${C.paleAmber}" stroke="${color}"/><rect x="${x + 396}" y="${y - 174}" width="130" height="108" fill="${C.paleCoral}" stroke="${color}"/><rect x="${x + 128}" y="${y + 36}" width="350" height="74" rx="36" fill="${C.paleGreen}" stroke="${color}"/>`;
+    } else {
+      body += `<line x1="${x + 304}" y1="${y - 190}" x2="${x + 304}" y2="${y + 115}" stroke="${C.blue}" stroke-width="9"/><rect x="${x + 62}" y="${y - 168}" width="170" height="92" fill="${C.paleGreen}" stroke="${color}"/><circle cx="${x + 414}" cy="${y - 120}" r="72" fill="${C.paleAmber}" stroke="${color}" stroke-width="3"/><circle cx="${x + 304}" cy="${y}" r="15" fill="${C.coral}" stroke="white" stroke-width="4"/><path d="M${x+486},${y-120} L${x+560},${y-120}" stroke="${C.coral}" stroke-width="4" marker-end="url(#arrow-return)"/>`;
+    }
+    labels[index].forEach((label, itemIndex) => {
+      const ly = 780 + itemIndex * 38;
+      body += `<circle cx="${x + 34}" cy="${ly - 5}" r="5" fill="${itemIndex === 0 ? C.cyan : color}"/>${text(x + 50, ly, label, zh ? 14 : 12, C.ink, 600)}`;
+    });
+    body += `<rect x="${x + 24}" y="990" width="558" height="62" rx="4" fill="${[C.paleBlue, C.paleGreen, C.paleAmber][index]}"/>`;
+    body += text(x + 44, 1028, zh ? `设备退出后：${after[index]}` : `AFTER EXIT: ${after[index]}`, zh ? 14 : 12, C.ink, 650);
+  });
+  return svgWrap(body + footer(lang));
+}
+
 function mobilityFigure(lang) {
   const zh = lang === 'zh';
   const extent = [116.332, 39.937, 116.363, 40.029];
   const rect = { x: 58, y: 170, w: 780, h: 930 };
-  let body = header(4, 'AI ON / RETURN / AI OFF', 'AI ON / RETURN / AI OFF', '技术状态可变，公众正线、无障碍与人工服务不断', 'TECH STATE CHANGES; CIVIC MOVEMENT, ACCESS AND STAFFED SERVICE CONTINUE', lang);
+  let body = header(4, '有限试用 / 折返 / 普通使用', 'LIMITED TRIAL / RETURN / ORDINARY USE', '技术状态可变，公众正线、无障碍与人工服务不断', 'TECH STATE CHANGES; CIVIC MOVEMENT, ACCESS AND STAFFED SERVICE CONTINUE', lang);
   body += `<rect x="58" y="160" width="780" height="950" rx="5" fill="white" stroke="${C.line}"/>`;
   body += mapLayer(extent, rect, `mobility-${lang}`, { lightBuildings: true });
   const spine = [[116.3482, 39.944], [116.3485, 39.985], [116.349, 40.018]];
@@ -193,7 +344,7 @@ function mobilityFigure(lang) {
   });
   body += `<rect x="872" y="160" width="1070" height="950" rx="5" fill="white" stroke="${C.line}"/>`;
   body += text(914, 214, zh ? '城市连续性不是备用方案，而是空间骨架' : 'CIVIC CONTINUITY IS THE SPATIAL FRAME, NOT A BACKUP', 25, C.ink, 700);
-  const stateHeads = zh ? ['AI ON / 有限开放', 'RETURN / 撤出恢复', 'AI OFF / 普通城市'] : ['AI ON / LIMITED', 'RETURN / WITHDRAW', 'AI OFF / ORDINARY CITY'];
+  const stateHeads = zh ? ['有限试用', 'RETURN / 撤出恢复', '普通使用'] : ['LIMITED TRIAL', 'RETURN / WITHDRAW', 'ORDINARY USE'];
   const stateNotes = zh ? [
     ['AI只占侧袋', '有人值守和物理停止', '公众正线保持优先'],
     ['设备沿撤出路径离场', '围界和发布界面撤下', '投诉进入新复测任务'],
@@ -364,12 +515,16 @@ function render(svg, output) {
 }
 
 const jobs = [
+  ['mobility-bluegreen.png', cityProblemFigure('zh')],
+  ['mobility-bluegreen.en.png', cityProblemFigure('en')],
+  ['key-areas.png', keyAreasFigure('zh')],
+  ['key-areas.en.png', keyAreasFigure('en')],
+  ['x-operating-proof.png', operatingFigure('zh')],
+  ['x-operating-proof.en.png', operatingFigure('en')],
+  ['station-design-atlas.png', stationSpatialFigure('zh')],
+  ['station-design-atlas.en.png', stationSpatialFigure('en')],
   ['land-use-structure.png', landUseFigure('zh')],
   ['land-use-structure.en.png', landUseFigure('en')],
-  ['mobility-bluegreen.png', mobilityFigure('zh')],
-  ['mobility-bluegreen.en.png', mobilityFigure('en')],
-  ['metrics-evidence.png', pilotFigure('zh')],
-  ['metrics-evidence.en.png', pilotFigure('en')],
 ];
 
 for (const [name, svg] of jobs) {
