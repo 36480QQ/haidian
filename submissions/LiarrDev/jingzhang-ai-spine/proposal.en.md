@@ -147,7 +147,7 @@ The Overall Design Area covers approximately 11.4 square kilometers [data:geomet
 
 "Blue-Green Slow-Mobility Composite Loop" — with the heritage park as the north-south main axis and the Qing River (northern end) and Xiaoyue River (eastern side) as transverse blue-green corridors, a loop-shaped slow-mobility system is formed, linking universities, communities, industrial parks, and public space nodes.
 
-The land use layout follows the classification logic of [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], covering scientific research land, industrial land, residential land, commercial and service land, road and transport facility land, and green space and plaza land [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]. The building strategy distinguishes four categories: retention, renovation, renewal, and new construction [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]; the specific retain-renovate-demolish classification must be calibrated once official regulatory plan conditions are confirmed.
+The land use layout follows the classification logic of [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], covering scientific research land, industrial land, residential land, commercial and service land, road and transport facility land, and green space and plaza land [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]. The building strategy distinguishes four categories: retention, renovation, renewal, and new construction [data:geometry/buildings.geojson] [depth:retain_renovate_demolish]; the specific retain-renovate-demolish classification must be calibrated once official regulatory plan conditions are confirmed.
 
 Control indicators such as building height, floor area ratio, building density, green ratio, and setback lines currently lack official conditions [assumption:A-CONTROLS-001]. The proposal lists these as `pending_control` in the indicator system and does not use fixed values to create a false sense of precision. Once the formal regulatory plan is released, all control indicators must be re-verified.
 
@@ -163,7 +163,7 @@ Building renewal: Focused on industrial R&D building renewal, retaining the stru
 
 AI scenarios: Autonomous model testing ground (for large model red-team testing and safety evaluation), standard-setting workshop (visualizing the AI safety governance process), low-carbon compute experience station (demonstrating green computing and edge-side computing), and Qing River AI ecological observation station (combining ecological monitoring and AI data collection).
 
-Transport organization: Strengthen pedestrian connectivity beneath the North Fifth Ring Road overpass, set up a low-speed shuttle loop linking the acceleration core zone and the Qing River interface, and form pedestrian transfer nodes with rail stations. Transport conclusions are directional design recommendations [data:geometry/roads.geojson#ROAD-001].
+Transport organization: Strengthen pedestrian connectivity beneath the North Fifth Ring Road overpass, set up a low-speed shuttle loop linking the acceleration core zone and the Qing River interface, and form pedestrian transfer nodes with rail stations. Transport conclusions are directional design recommendations [data:geometry/roads.geojson].
 
 Implementation risks: The engineering feasibility of the North Fifth Ring Road cross-ring-road node requires traffic and municipal condition review; the Qing River blue line and ecological protection requirements require confirmation from the water authority [assumption:A-CONTROLS-001].
 
@@ -279,13 +279,13 @@ The above landmarks are all conceptual design recommendations and do not constit
 
 The land use layout is organized according to the classification logic of the Guide to the Classification of Land and Sea Use [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. The main land use types within the Overall Design Area include: scientific research land (Zhongzhiyuan AI Acceleration Area and Beijing AI Origin Community cores), commercial and service land (Dazhongsi area and around rail stations), residential land (existing community renewal), road and transport facility land (including rail station integration), and green space and plaza land (heritage park and blue-green corridors).
 
-The building strategy distinguishes four renewal categories [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]:
+The building strategy distinguishes four renewal categories [data:geometry/buildings.geojson] [depth:retain_renovate_demolish]:
 - **Retain**: Existing residential, school, and public service buildings of good quality, maintaining their current functions.
 - **Renovate**: Ground floors and facades of existing industrial and commercial buildings, converted into exhibition, collaboration, and service functions.
 - **Renew**: Inefficiently used industrial land and warehousing land, redeveloped according to AI industry needs.
 - **New construction**: Landmark buildings and public space nodes added at the core locations of key areas.
 
-Building footprint area and scale indicators are recalculated from [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm] [metric:building_count]. The current proposal includes 5 building strategy demonstrations: Source Vertebra new AI R&D building (ai_r_and_d type), AI Origin Community retained office building and renovated mixed-use building, Convergence Vertebra new commercial building (retail type) and renewed incubator building (incubator type).
+Existing building footprint area and scale indicators are recalculated from OpenStreetMap measured data [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm] [metric:building_count]. The OSM snapshot (2026-08-20) identifies 1,692 existing buildings within the Overall Design Area, with a total footprint of approximately 2,018,037 sq m [source:OSM-DATA]. On this basis, the proposal advances four building renewal strategies: retain existing buildings of good quality, renovate the ground floors of industrial and commercial buildings, renew inefficiently used land, and construct new landmark public buildings. Because OSM building footprints are incomplete in some sections, the existing building count and footprint are directional references to be calibrated after official ownership data is released [assumption:A-CONTROLS-001].
 
 Retain-renovate-demolish ratio estimate (based on provisional boundary and public imagery interpretation, subject to official data calibration):
 - Retained buildings: ~45% of total (mainly in southern Dazhongsi area and eastern AI Origin Community)
@@ -303,7 +303,7 @@ The transport proposal responds to the announcement's requirements for rail stat
 
 **Road micro-circulation**: Break through the east-west transport connections on both sides of the heritage park that are severed by the railway, using the surface space released by the railway's undergrounding to add east-west slow-mobility passages. The branch road system in key areas is organized according to the principle of small blocks and dense networks, promoting walkability and commercial vitality.
 
-**Slow-mobility system**: With the heritage park as the north-south main axis and the Qing River and Xiaoyue River as transverse corridors, an I-shaped slow-mobility loop is formed. Identify and repair slow-mobility breakpoints across ring roads, rivers, and railways, establishing a continuous walking and cycling network [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking].
+**Slow-mobility system**: With the heritage park as the north-south main axis and the Qing River and Xiaoyue River as transverse corridors, an I-shaped slow-mobility loop is formed. Identify and repair slow-mobility breakpoints across ring roads, rivers, and railways, establishing a continuous walking and cycling network [data:geometry/roads.geojson] [depth:traffic_rail_slow_parking].
 
 **New infrastructure**: Deploy edge-side compute nodes, distributed energy facilities, and AI sensing infrastructure in key areas, integrated with public service facilities and public space. Edge-side compute nodes serve as the "last mile" infrastructure for AI scenarios, providing local computing capability for low-latency applications [data:geometry/constraints.geojson#CONSTRAINTS].
 
@@ -311,7 +311,7 @@ The transport proposal responds to the announcement's requirements for rail stat
 
 The municipal facilities proposal covers traditional municipal systems such as water supply and drainage, electricity, communications, gas, and sanitation, as well as AI industry service facilities, innovation service platforms, and talent life service facilities. When pipeline, energy, drainage, flood control, and fire protection engineering data are lacking, they are listed as prerequisites for formal deepening [assumption:A-CONTROLS-001].
 
-**Road system**: The road system within the overall design area is classified into four grades — urban expressway (North 5th Ring Road), urban arterial road (Zhongguancun Street, North Tucheng West Road), urban secondary road (east-west roads connecting key areas), and urban branch road (small-block dense network within key areas) [data:geometry/roads.geojson#ROAD-001] [metric:road_segment_count]. The current proposal includes 5 road segment demonstrations: slow-mobility and innovation service corridor (greenway type), AI Spine north-south slow-mobility axis (pedestrian type), transit station connection path (transit_connection type), east-west connector path (secondary type), and blue-green loop (cycleway type).
+**Road system**: The road system within the overall design area is classified into four grades — urban expressway (North 5th Ring Road), urban arterial road (Zhongguancun Street, North Tucheng West Road), urban secondary road (east-west roads connecting key areas), and urban branch road (small-block dense network within key areas) [data:geometry/roads.geojson] [metric:road_segment_count]. The OSM snapshot (2026-08-20) identifies 1,605 existing road segments within the Overall Design Area [source:OSM-DATA]. On this basis, the proposal advances a four-grade road system and overlays design-level corridors such as the slow-mobility axis, transit connections, and blue-green loop.
 
 **Public service facilities**: The proposal allocates differentiated public service facilities across the three key areas. Zhongzhiyuan hosts AI industry service platforms (chip testing, compute scheduling, standards certification), an international conference center, and talent housing. AI Origin Community hosts university-industry collaborative innovation centers, technology transfer accelerators, and youth maker communities. Dazhongsi hosts a smart commercial complex, urban AI application showcase hall, and community convenience service center. For education, leveraging the dense surrounding universities, no new basic education facilities are planned; the focus is on continuing education and vocational training spaces. For healthcare, relying on existing resources at Peking University Third Hospital and Haidian Hospital, an AI-powered health monitoring station is deployed in the AI Origin Community.
 
@@ -327,7 +327,7 @@ The Jingzhang Heritage Park is the core carrier of this proposal's "One Spine" s
 
 ### Blue-Green Space System
 
-The blue-green space takes the heritage park as the north-south main axis and the Qing River (northern end) and Xiaoyue River (eastern side) as transverse corridors, forming an "I-shaped" blue-green skeleton [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]. The green space and public space ratios are recalculated from [data:geometry/green_space.geojson#GREEN-001] and [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio] [metric:public_space_ratio].
+The blue-green space takes the heritage park as the north-south main axis and the Qing River (northern end) and Xiaoyue River (eastern side) as transverse corridors, forming an "I-shaped" blue-green skeleton [data:geometry/green_space.geojson] [depth:blue_green_public_space]. The green space and public space ratios are recalculated from [data:geometry/green_space.geojson] and [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio] [metric:public_space_ratio].
 
 The public space system includes: the heritage park linear green corridor (north-south main axis), the Qing River waterfront promenade (northern transverse corridor), the Xiaoyue River waterfront promenade (eastern transverse corridor), the key area plaza cluster (core public spaces of the three key areas), and the community pocket park network (evenly distributed community-level green nodes).
 
@@ -417,9 +417,11 @@ The proposal establishes three categories of metrics [depth:metrics_recalculatio
 | Zhongzhiyuan AI Acceleration Area | Approx. 1,929,202 sqm | geometry/key_areas.geojson | known (provisional) |
 | Beijing AI Origin Community Area | Approx. 1,043,237 sqm | geometry/key_areas.geojson | known (provisional) |
 | Dazhongsi Area | Approx. 720,454 sqm | geometry/key_areas.geojson | known (provisional) |
-| Green space ratio | Approx. 12.3% | geometry/green_space.geojson | known (provisional) |
+| Green space ratio | Approx. 8.0% (existing) | geometry/green_space.geojson | known (provisional) |
 | Public space ratio | Approx. 7.3% | geometry/public_space.geojson | known (provisional) |
-| Building footprint area | Approx. 310,807 sqm | geometry/buildings.geojson | known (provisional) |
+| Existing building footprint area | Approx. 2,018,037 sqm | geometry/buildings.geojson | known (provisional) |
+| Existing building count | 1,692 | geometry/buildings.geojson | known |
+| Existing road segment count | 1,605 | geometry/roads.geojson | known |
 | Number of key areas | 3 | geometry/key_areas.geojson | known |
 
 **Category Two: Control Metrics (requiring official regulatory plan support)**
