@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c89f658c40f3d3b632f8ca6e850eba10e79bdf611d591398fba1a529b82bc6ae"
+      "sha256": "8578701b890a4034152bb82a86d3a05a84db2de88b7e19c9bb05f60e45e3536f"
     },
     {
       "path": "agent.json",
@@ -44,7 +44,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "ca3f520c5f6eceabe2fdfce8cc3569cb832120032c84160f7f1d4325a4a8bbc2"
+      "sha256": "40d4524102d953e27ce1dcf88efa85c14e9bb7342655d3edd8faf412e186a0da"
     },
     {
       "path": "sources.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "641452b19cb943f618c21e5c0d28041b705ec0c6e6f52756a2f71adc810b3eb3"
+      "sha256": "f2e3bd9430775c72c694169d8845fa2a778d9e64595360a52db4b954875fa55b"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "823da9c4b91f34c81e07b5bb7a5aa2bd7ba5ca2d9136d498eac8d65a9d1078b4"
+      "sha256": "463cbb3e1dcd784703ff34bdfc95f1413b23c00ad96dfa5c0f6eae28a82d2f62"
     },
     {
       "path": "standard_matrix.json",
@@ -74,7 +74,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "1c9c7ac5cb3aca2eccd05c7da955ab2d7e5baf6047ccd7d51dffb5cb0ef3e7f2"
+      "sha256": "6afa3a9e8cc1e9ae11ef06f8d3b4089f9fd71d5dbecc057fd8fc12820c91a6f6"
     },
     {
       "path": "risk.json",
@@ -105,7 +105,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ce89863db7af31383c2eb4eba188e7f1867b9d517421f54095c40c63ba806f6c"
+      "sha256": "4649ff219290175773f1854e4fee54eb3fac4575e30065bcb0ee42c12254970f"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -126,7 +126,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "4f3b215bc8ca9853590b38548f7b5522a142085460188e8a94d038f76c096261"
+      "sha256": "7de475c89e72e40e0b8549cf07b8d2325bb710c7606cc0afaa9c72a608abf146"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -223,7 +223,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "73484c3f7769b3e256ebf6c5591994f566b7742a784e0db9179f7821f94691b1"
+      "sha256": "d435f818194b0b62373d53455673ba0ae7a0cb3d82ac22e4df6b688905575cfe"
     },
     {
       "path": "report/proposal.en.html",
@@ -255,7 +255,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "1fc95438b0a77ba97c02c9bbdb60cfac7b247a688048154daaa5b2e0d1599540"
+      "sha256": "b708840c1f1f1427bb9418c000df0a3cd8f861f1db6f5a7a5d81df8645f3c47b"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -523,7 +523,21 @@
       "path": "visual/assets/renders/render-answer-gate.jpg",
       "role": "visualization",
       "required": false,
-      "sha256": "7b43f0f10e4de5ce89ffe839c3518d5114798c8aa2314f43972614d2a936ddf9"
+      "sha256": "7b43f0f10e4de5ce89ffe839c3518d5114798c8aa2314f43972614d2a936ddf9",
+      "title_zh": "生成过程留档 · 巨型「应答簿」纪念门（判为不采用）",
+      "title_en": "Generation archive — giant Answer-Book memorial gate (not adopted)",
+      "description_zh": "AI 生成过程留档，判为不采用：与正文主张冲突——本方案执行「以钉代碑」，不立高碑、不做名人墙；应答门是 46 处公园出入口上的社区界面，不是纪念性门架。保留此图供评审核对我方对生成结果的取舍标准。",
+      "description_en": "An archived generation not adopted: it conflicts with the proposal's position — honours are cast into spikes rather than raised as monuments, and an Answer Gate is a community interface at one of 46 park entrances, not a memorial portal. The image is kept so reviewers can check the standard by which generated results were accepted or rejected."
+    },
+    {
+      "path": "visual/assets/renders/render-robot-knocks.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "a8fc34d1832dd8e76177fbdbda4b028865ff46382f9fadf1f7e3d2e626797908",
+      "title_zh": "应答门 · 机器人也要敲门",
+      "title_en": "Answer Gate — the robot knocks too",
+      "description_zh": "低速配送机器人完全停在门槛线之外等待，门内居民刚在实体面板上按下同意，门框侧指示灯转为绿色。社区认领的不只是这道门，还有「谁的机器人可以进」这项决定权（场景卡 S17）。",
+      "description_en": "A low-speed delivery robot waits entirely outside the threshold line while a resident inside has just pressed approval on a physical panel and the indicator on the jamb has turned green. What the community adopts is not only the gate but the right to decide whose robot may enter (scenario card S17)."
     },
     {
       "path": "visual/assets/renders/render-bell-plaza.jpg",
@@ -532,16 +546,60 @@
       "sha256": "3a4dc32f56ba0839cd4515c77c9b35962a769ee4fcb63f6fe3bb5133c460f5b5"
     },
     {
+      "path": "visual/assets/renders/render-dazhongsi-aerial.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "4d4dc85756131c208244fdc8b52e78d49aa8da61ea1e073d3f60f6d303786827",
+      "title_zh": "南问 · 大钟寺片区鸟瞰",
+      "title_en": "Question (south) — Dazhongsi key-area aerial",
+      "description_zh": "空间关系取自 OSM 实测、可核：觉生寺与地铁13号线大钟寺站相距约 676 米（方位约 115°），13 号线走向约 175°，北三环西路距寺约 160 米；周边为「大盘子街区」——建筑逾 50 栋、基底合计约 15 公顷、单栋均值约 3000 平方米。与正文一致：古寺本体不动一砖一瓦；钟声广场退开院墙、无高差、同心声环铺装；钟架为独立结构、不与既有物相连、不高过成熟树冠。图为意象示意，未经坐标配准，用地与边界一律以规划图件为准。",
+      "description_en": "The spatial relations are taken from verified OSM measurements: the Jueshengsi temple lies about 676 m from Dazhongsi station on Metro Line 13 (bearing about 115°), Line 13 runs at about 175°, and the North Third Ring West Road is about 160 m from the temple; the surrounding fabric is the 'big-plate block' — over 50 buildings, some 15 ha of footprint in total, averaging about 3,000 m² each. Consistent with the text: the temple itself is untouched; the Bell Chime Plaza stands clear of its walls, is free of level changes and paved in concentric sound rings; the bell frame is independent, attached to nothing existing, and never rises above the mature tree canopy. An atmosphere illustration: it is not coordinate-registered, and land use and boundaries follow the planning figures."
+    },
+    {
       "path": "visual/assets/renders/render-ren-bridge.jpg",
       "role": "visualization",
       "required": false,
-      "sha256": "53fcb7d4f66dc1c6e9addd305d525c153b274d6df8789f761c466a445daba53f"
+      "sha256": "42159df3751e58d9d502b446d85869b2b4b51c890d53722ba639054a29f19960",
+      "title_zh": "北跃 · 人字之跃片区鸟瞰",
+      "title_en": "Ren-Shaped Leap — key-area aerial",
+      "description_zh": "跨环路慢行桥的片区鸟瞰：桥面之上除栏板与照明外无任何构筑物，结构全在桥面以下；两端各一组折返坡道，两段并排展开、端头折返，占地明显大于跨路段，两端均落在环路两侧绿地内。",
+      "description_en": "A key-area aerial of the slow-traffic bridge over the ring road: nothing stands above the deck except the parapet and its lighting, with all structure below; each end carries one switchback ramp assembly of two parallel runs joined by a turning platform, occupying visibly more ground than the span itself, and both ends land in the green strips either side."
     },
     {
       "path": "visual/assets/renders/render-spike-belt.jpg",
       "role": "visualization",
       "required": false,
       "sha256": "554a88e8d09e708b7efeab396e21105d15a0b2b45ded17a13fe555bbb2ef4391"
+    },
+    {
+      "path": "visual/assets/renders/render-spike-belt-night.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "f87e296155f00b092d2fa44e6071cb563f373d18f04e69fa691ecff6c025ac8b",
+      "title_zh": "道钉带夜景 · 备案疏密",
+      "title_en": "Rail-Spike Band at night — the rhythm of filings",
+      "description_zh": "夜间低空俯视道钉带：嵌在步道边缘的铜道钉透出暖铜色光，光点间距刻意不均——密集段对应模型备案井喷的年份，空白段对应安静的年份，因此这条光点线本身就是一条可以数出来的产业时间轴。",
+      "description_en": "A low-altitude night view of the Rail-Spike Band: bronze spikes set along the walkway edge glow warm copper, and their spacing is deliberately uneven — dense runs mark years when model filings surged, gaps mark quiet years, so the line of lights is itself a countable industrial timeline."
+    },
+    {
+      "path": "visual/assets/renders/render-disclosure-wall.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "7ad8fb48cf35ad7924ab0753fcdefd7b3cfb78067b343a08061e31b735dc9d29",
+      "title_zh": "算法公示墙",
+      "title_en": "Algorithm Disclosure Wall",
+      "description_zh": "齐人高的耐候钢公示墙，横向分为若干信息带，每带末端设可按下的实体关闭键；居民站着即可读完全部部署信息并当场关闭某一项。这是「数据治理先于技术部署」这条红线的空间化。",
+      "description_en": "A chest-height weathering-steel wall divided into horizontal information bands, each ending in a physical off-button that can be pressed; a resident can read every deployment disclosure standing up and switch one off on the spot. It is the spatial form of the red line that data governance precedes technology deployment."
+    },
+    {
+      "path": "visual/assets/renders/render-lesson-gate.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "4e9ea896127a1bab0c095945ec37ffa82e43ead9cad077351a426009c6f9cc5c",
+      "title_zh": "无墙学期 · 课门旁听席",
+      "title_en": "The Wall-less Term — auditing benches at a Lesson Gate",
+      "description_zh": "大学围墙不拆、只开一处课门，墙外沿墙设露天旁听席；相邻高校的公开课向带上开放，AI 助教按听者自选的档位解释同一句话，一位老人与一名中学生并排听同一堂课。",
+      "description_en": "The university wall is not demolished — a single Lesson Gate is opened in it, with open-air auditing benches along the city side; a neighbouring university's public lecture is opened to the belt, an AI teaching assistant explains the same sentence at a tier the listener chooses, and an elderly resident and a secondary-school student sit side by side in the same class."
     },
     {
       "path": "assets/media/cover.png",
@@ -571,7 +629,7 @@
       "title_zh": "《百年应答》概念方案短片",
       "title_en": "The Century Answer — Concept Film",
       "description_zh": "55 秒静音概念短片：片头提出 1909 年之问，随后依次走过道钉带、南问·鸣钟之门、中答·应答原点、北跃·人字之跃、东西向穿越·应答门五个片段，片尾落回“市民蹲下来数道钉”。画面由 AI 生成（图生视频），为概念意象示意——非实景照片、非工程效果图、非官方审定成果；两处已知形式差异（人字之跃桥型、铜道钉位置）在字幕轨与文字稿中据实声明，形式与尺寸一律以断面图与正文为准。",
-      "description_en": "A 55-second silent concept film. The opening card poses the 1909 question; five segments then walk the belt in turn — the Rail-Spike Band, Bell Chime Plaza in the southern Question segment, the Answer Origin in the central Answer segment, the Herringbone Leap in the northern Leap segment, and the east-west Answer Gates — before the closing card returns to citizens crouching to count the spikes. The imagery is AI-generated (image-to-video) and conceptual in intent: not photographs, not engineering renderings, not an officially approved result. Two known divergences from the body text (the bridge form of the Herringbone Leap and the position of the bronze spikes) are declared in the caption track and the transcript; the section drawings and body text govern form and dimensions.",
+      "description_en": "A 55-second silent concept film. The opening card poses the 1909 question; five segments then walk the belt in turn — the Rail-Spike Band, Bell Chime Plaza in the southern Question segment, the Answer Origin in the central Answer segment, the Ren-Shaped Leap in the northern Leap segment, and the east-west Answer Gates — before the closing card returns to citizens crouching to count the spikes. The imagery is AI-generated (image-to-video) and conceptual in intent: not photographs, not engineering renderings, not an officially approved result. Two known divergences from the body text (the bridge form of the Ren-Shaped Leap and the position of the bronze spikes) are declared in the caption track and the transcript; the section drawings and body text govern form and dimensions.",
       "poster": "assets/media/narrative-poster.jpg",
       "caption": "assets/media/narrative.vtt",
       "transcript": "assets/media/narrative-transcript.md"
