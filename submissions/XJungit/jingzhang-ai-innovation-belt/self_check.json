@@ -19,6 +19,8 @@
       "changelog_files": [],
       "changed_files": [
         "submissions/XJungit/jingzhang-ai-innovation-belt/agent.json",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/key-areas-zoom.en.png",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/key-areas-zoom.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/key-areas.en.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/key-areas.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/land-use-structure.en.png",
@@ -27,6 +29,8 @@
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/metrics-evidence.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/mobility-bluegreen.en.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/mobility-bluegreen.png",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/scenario-locations.en.png",
+        "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/scenario-locations.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/site-overview.en.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assets/figures/site-overview.png",
         "submissions/XJungit/jingzhang-ai-innovation-belt/assumptions.json",
@@ -65,7 +69,7 @@
       "ai_package_stages": {
         "submissions/XJungit/jingzhang-ai-innovation-belt": "formal"
       },
-      "total_bytes": 3585035,
+      "total_bytes": 4000073,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -139,13 +143,13 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 10,
+        "known_metric_refs_required": 14,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 25,
+          "source": 30,
           "standard": 4,
-          "depth": 16,
+          "depth": 17,
           "data": 11,
           "metric": 4
         }
