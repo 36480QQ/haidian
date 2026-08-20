@@ -1552,6 +1552,19 @@
       "why_en": "The published reason enumerates three branches - a file absent, one over the per-image cap, the packet over the image count. **The fourth is not in it**: the pixel-pair check was added later and the reason was never revisited. What it called a fact about the file system rather than about any file this harness can write was really a fact about this harness writing only text — **a limitation of the tool published as a property of the gate**."
     },
     {
+      "id": "M181",
+      "gate": "walk_speed_qa.py",
+      "target": "fig_reach.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把一张图里的 P5 步速改回自己写死的 0.6——**六个模块此前都是这样**。`personas.json` 自己写着「换掉它们，那四张图一起改」，而写死的副本换不掉。闸门只认两种只可能是速度的写法：拿距离除以它换算分钟、拿它乘以时长换算距离；画矩形的 `0.6 * S` 不在其列。",
+      "what_en": "Give one sheet back its own typed 0.6 for P5's walking speed - **the state all six modules were in**. personas.json says in its own note that changing these numbers changes four sheets together, which a typed copy defeats. The gate matches only the two shapes that can only be a speed - dividing a distance by it for minutes, multiplying it by a duration for a distance - so a rectangle drawn at 0.6 times the scale is not caught.",
+      "why_zh": "E418 是同一件事的第一次发作：一个写在声明值旁边的数会和声明分家。**那次修完之后，本轮才发现修法本身也typed了一份 1.2**——改在 `reach_check` 里的常量，而权威值在 `personas.json`。",
+      "why_en": "E418 was the first instance: a number typed beside a declared value drifts from it. **The fix for E418 then typed its own copy of 1.2** in reach_check while the declared value sat in personas.json, which is how this round started."
+    },
+    {
       "id": "M180",
       "gate": "walk_speed_qa.py",
       "target": "reach_check.py",
@@ -2176,7 +2189,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 177,
+  "caught": 178,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
