@@ -255,19 +255,29 @@
     {
       "id": "A-11",
       "status": "open",
-      "statement": "仓库议题 #846 登记临时「总体设计范围」多边形与 OSM 测绘的遗址公园已建段不相交（最近距离约 412.5 m）；本包「沿京张铁路遗址公园组织」的表述指向公告文本所述遗址公园沿线，与继承的临时范围几何之间存在该已登记偏差。",
-      "impact": "site_area_sqm 及一切以临时总体范围为分母的比值只在临时几何口径内成立；空间关系表述不得被读作与实测公园的精确对位。",
+      "statement": "仓库议题 #846 登记临时「总体设计范围」多边形与 OSM 测绘的遗址公园已建段不相交（最近距离约 412.5 m）；该读数量的是继承自任务包的官方框自身与公园多边形之间的关系，公园多边形不在本包数据内，本包不复核该数值，也不移动继承边界（SITE-001 与官方 PROV-SITE-001 逐字节相同）。本包自身的空间关系问题是另一件事，自 v8.7 起由读数登记而不再只有文字表述：以快照内「京包线」与「京包客专线」共 23 条 way、14,086.884 m 合成的铁路廊道参考线为位置代理，主脊 ROAD-001 相对其中位偏差 905.879 m（P90 1265.793 m，最大 1275.264 m，最小 1.810 m，数据带内样本 299/379），安静替代线 ROAD-005 中位偏差 1389.166 m（数据带内样本 317/380），廊道参考线全长中 8645.571 m 落在临时总体范围之外、落入范围内的 5441.313 m 全部集中在场地南段。廊道参考线是 OSM 登记的铁路廊道中心线，不是公园红线也不是公园边界，其中 11526.107 m 为新建高铁走廊，作为遗址公园的位置代理只支持偏差量级参考，不支持任何对位结论；四项读数与该代理风险登记于 visual/assets/alignment-reference.json（读数 ALN-01 至 ALN-04、风险 PROXY-01）。",
+      "impact": "site_area_sqm 及一切以临时总体范围为分母的比值只在临时几何口径内成立；空间关系表述不得被读作与实测公园的精确对位。正文对主脊与公园关系的表述自 v8.7 起按上述读数如实写为「主脊在继承的临时范围内沿现状街道组织」，并附登记偏差；三项新增指标（spine_to_heritage_corridor_median_offset_m、quiet_route_to_heritage_corridor_median_offset_m、site_boundary_to_heritage_corridor_outside_length_m）全部标注 confidence=low，随官方边界公开整体重算。",
       "affected_files": [
         "geometry/site_boundary.geojson",
+        "geometry/roads.geojson",
+        "geometry/constraints.geojson",
         "metrics.json",
-        "proposal.md"
+        "proposal.md",
+        "proposal.en.md",
+        "visual/assets/alignment-reference.json",
+        "visual/assets/osm-fabric/osm-fabric-readings.json",
+        "assets/figures/site-overview.png",
+        "assets/figures/site-overview.en.png",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf"
       ],
       "trigger": "官方总体设计范围红线公开",
       "responsible_role": "控规实施与测绘专业",
-      "resolution_evidence": "以官方红线为基准的整体重算记录",
-      "recalculation_scope": "全部图层、指标与图纸",
+      "resolution_evidence": "以官方红线与官方遗址公园边界为基准的整体重算记录，含 alignment-reference.json 四项读数的重算",
+      "recalculation_scope": "全部图层、指标、图纸与 alignment-reference.json 四项读数",
       "risk_ids": [
-        "R-05"
+        "R-05",
+        "R-06"
       ]
     },
     {

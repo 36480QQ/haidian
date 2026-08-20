@@ -1013,6 +1013,93 @@
     "rounding": "1 sqm (ledger display precision; no full-precision value is registered in structured form)"
    }
   },
+  "spine_to_heritage_corridor_median_offset_m": {
+   "status": "known",
+   "value": 905.879,
+   "unit": "m",
+   "source_files": [
+    "visual/assets/alignment-reference.json",
+    "geometry/roads.geojson",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part2.json"
+   ],
+   "formula": "median(distance(sample_point(ROAD-001, every 25 m), heritage_corridor_reference_line)) over samples inside the corridor data band",
+   "confidence": "low",
+   "assumptions": [
+    "Computed from the OpenStreetMap snapshot already inside the package (sha256 855296cd…), not from field measurement, official survey, or planning data; status PROVISIONAL.",
+    "The corridor is a positional proxy assembled from the snapshot's 京包线 and 京包客专线 ways; most of its length is a newly built high-speed corridor, so the figure is an order-of-magnitude reference and neither locates the heritage park nor judges the alignment. The full risk note is registered as PROXY-01 in visual/assets/alignment-reference.json.",
+    "The corridor data band stops at latitude 40.007178; samples north of it issue no reading and are not extrapolated, so the reading covers the southern part of the line only and its sample count is registered with it.",
+    "299 of the 379 samples on ROAD-001 lie inside the band; P90 is 1265.793 m, maximum 1275.264 m, minimum 1.810 m.",
+    "ROAD-001 is tagged agent_generated_design with geometry_role=design_proposal, so the figure describes the distance between a schematic alignment and a reference line, not an alignment error."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-20",
+    "rounding": "0.001 m",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of ROAD-001, of the site geometry it follows, or replacement of the OSM snapshot",
+    "reproduction_command": "compute_alignment.py (embedded verbatim in visual/assets/alignment-reference.json, reproduction.compute_alignment_py)"
+   }
+  },
+  "quiet_route_to_heritage_corridor_median_offset_m": {
+   "status": "known",
+   "value": 1389.166,
+   "unit": "m",
+   "source_files": [
+    "visual/assets/alignment-reference.json",
+    "geometry/roads.geojson",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part2.json"
+   ],
+   "formula": "median(distance(sample_point(ROAD-005, every 25 m), heritage_corridor_reference_line)) over samples inside the corridor data band",
+   "confidence": "low",
+   "assumptions": [
+    "Computed from the OpenStreetMap snapshot already inside the package (sha256 855296cd…), not from field measurement, official survey, or planning data; status PROVISIONAL.",
+    "The corridor is a positional proxy assembled from the snapshot's 京包线 and 京包客专线 ways; most of its length is a newly built high-speed corridor, so the figure is an order-of-magnitude reference and neither locates the heritage park nor judges the alignment. The full risk note is registered as PROXY-01 in visual/assets/alignment-reference.json.",
+    "The corridor data band stops at latitude 40.007178; samples north of it issue no reading and are not extrapolated, so the reading covers the southern part of the line only and its sample count is registered with it.",
+    "317 of the 380 samples on ROAD-005 lie inside the band; P90 is 1574.371 m, maximum 1693.829 m, minimum 232.089 m.",
+    "ROAD-005 runs parallel to and east of the spine, so its larger offset follows from that placement and indicates no greater departure from design intent."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-20",
+    "rounding": "0.001 m",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of ROAD-005, of the site geometry it follows, or replacement of the OSM snapshot",
+    "reproduction_command": "compute_alignment.py (embedded verbatim in visual/assets/alignment-reference.json, reproduction.compute_alignment_py)"
+   }
+  },
+  "site_boundary_to_heritage_corridor_outside_length_m": {
+   "status": "known",
+   "value": 8645.571,
+   "unit": "m",
+   "source_files": [
+    "visual/assets/alignment-reference.json",
+    "geometry/site_boundary.geojson",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part2.json"
+   ],
+   "formula": "length(heritage_corridor_reference_line difference polygon(SITE-001))",
+   "confidence": "low",
+   "assumptions": [
+    "Computed from the OpenStreetMap snapshot already inside the package (sha256 855296cd…), not from field measurement, official survey, or planning data; status PROVISIONAL.",
+    "The corridor is a positional proxy assembled from the snapshot's 京包线 and 京包客专线 ways; most of its length is a newly built high-speed corridor, so the figure is an order-of-magnitude reference and neither locates the heritage park nor judges the alignment. The full risk note is registered as PROXY-01 in visual/assets/alignment-reference.json.",
+    "The corridor reference line totals 14086.884 m, of which 5441.313 m falls inside SITE-001 and 8645.571 m outside; the inside part is confined to latitudes 39.941482 to 39.960482, the southern end of the site.",
+    "SITE-001 is declared provisional_rough with official_boundary=false, so this reading records the relation between two provisional geometries and passes no judgement on either.",
+    "The reading points the same way as rail_corridor_extent in the DQ section of visual/assets/osm-fabric/osm-fabric-readings.json."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-20",
+    "rounding": "0.001 m",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "publication of an official design extent, revision of SITE-001, or replacement of the OSM snapshot",
+    "reproduction_command": "compute_alignment.py (embedded verbatim in visual/assets/alignment-reference.json, reproduction.compute_alignment_py)"
+   }
+  },
   "osm_walkable_network_density_index": {
    "status": "known",
    "value": 24.94,
