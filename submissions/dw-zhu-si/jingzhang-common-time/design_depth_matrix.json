@@ -1,5 +1,50 @@
 {
   "schema_version": "0.1.0",
+  "interpretation_contract": {
+    "applies_to_all_items": true,
+    "status_complete_means": "the submission contains a complete response and traceable evidence route for the required design-depth item",
+    "status_complete_does_not_mean": "official geometry, title or operating authority, field verification, professional sign-off, real quantities or implementation have been completed",
+    "response_coverage": "complete",
+    "real_world_maturity": "external_pending_hold",
+    "common_external_limits": [
+      "official key-area geometry",
+      "asset-level ownership and operating authority",
+      "two-person field verification",
+      "professional sign-off",
+      "real quantities, costs and procurement authority"
+    ]
+  },
+  "decision_replay": {
+    "id": "DR-01",
+    "linked_item_ids": [
+      "three_key_area_detailed_design",
+      "phasing_implementation",
+      "metrics_recalculation",
+      "risk_missing_data"
+    ],
+    "evidence_class": "synthetic_tabletop_logic_qa",
+    "claim_boundary": "reproducible selection and failure routing only; no field performance, authority, budget or implementation claim",
+    "hard_gate_order": [
+      "authority",
+      "fire_access",
+      "quiet_edge",
+      "offline_parity",
+      "privacy",
+      "human_takeover",
+      "reversibility",
+      "exit_reserve"
+    ],
+    "base_fixture_result": {
+      "formula_method": "K1",
+      "row_enumeration_method": "K1"
+    },
+    "deliberate_mutation": {
+      "change": "K1.offline_parity from 1 to 0",
+      "expected_downgrade": "K0",
+      "silent_threshold_change_allowed": false
+    },
+    "real_project_state_after_replay": "HOLD"
+  },
   "items": [
     {
       "item_id": "existing_conditions_diagnosis",
@@ -120,6 +165,15 @@
       "professional_dimension": "城市设计",
       "required": true,
       "status": "complete",
+      "response_coverage": "complete",
+      "real_world_maturity": "external_pending_hold",
+      "completeness_limited_by": [
+        "official key-area geometry",
+        "asset-level ownership and operating authority",
+        "two-person field verification",
+        "professional sign-off",
+        "real quantities, costs and procurement authority"
+      ],
       "proposal_sections": [
         "为什么选择“共时”，而不是再造一个 AI 园区",
         "三层范围工作框架"
@@ -618,7 +672,7 @@
         "PROFESSIONAL_EVIDENCE",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "三重点区每处以1个矛盾、4个系统、6类图和2条真实界面剖面任务深化，并分别绑定 P-V01/P-L01/P-D01 优先项目合同；因临时边界、现场和业主未核，三项决策均 HOLD。"
+      "evidence_summary_zh": "status=complete 仅表示包内必答项响应完整，不表示真实世界详细设计成熟。三重点区每处以1个矛盾、4个系统、6类图和2条真实界面剖面任务深化，并分别绑定 P-V01/P-L01/P-D01 优先项目合同；因临时边界、现场、业主、专业签署与成本未核，real_world_maturity=external_pending_hold，三项决策均 HOLD。"
     },
     {
       "item_id": "renewal_project_list",
