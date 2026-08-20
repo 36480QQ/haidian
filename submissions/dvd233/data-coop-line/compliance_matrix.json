@@ -736,13 +736,20 @@
       "geojson_layers": [
         "geometry/key_areas.geojson",
         "geometry/buildings.geojson",
-        "geometry/public_space.geojson"
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "dazhongsi_mvp_key_area_sqm",
+        "dazhongsi_mvp_reversible_room_footprint_sqm",
+        "dazhongsi_mvp_public_receipt_space_sqm",
+        "dazhongsi_mvp_route_length_m",
+        "dazhongsi_mvp_scenario_count",
+        "dazhongsi_mvp_no_data_route_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -750,7 +757,7 @@
       ],
       "visual_sections": [
         "三层范围",
-        "用地分区",
+        "大钟寺可演练 MVP",
         "核心指标"
       ],
       "source_ids": [
@@ -762,7 +769,8 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-BUILDING-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-DAZHONGSI-MVP-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",

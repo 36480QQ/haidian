@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v1.4 - 2026-08-20
+
+P1-02 Dazhongsi rehearsable MVP / 大钟寺可演练 MVP
+
+- Baseline / 基线：从 `upstream/main` `0b9d540e8a2a56d525b56ab243d9d9e9764fba0e` 建立干净投稿分支 `codex/data-coop-line-key-area-mvp-20260820-v2`。此前冻结点 `d1ff9415abb4b0d916757f65658e7d77f5c91697` 之后的主线包含 `scripts/render_proposal_html.py` 及其测试，属于相关 helper，因此迁移到新基线并重跑生成与完整门禁；新旧 helper 生成的中英报告 SHA-256 完全一致，未为其他投稿变化重生成图件、PDF 或 manifest。
+- Reason / 原因：上一轮 PR #3543 的维护者 intake 为 79/100，主要完成证据一致性；Issue #2955 要求城市设计不能停留在品牌叙事，同行 PR #3549 以可量测空间路径和演练逻辑获得 89/100。故本轮只选择一个能闭环的空间—运营样板，不扩展许可、数据使用或实施承诺。
+- Before → After / 修正前后：正文把 `SCN-05` 归于大钟寺，但 GeoJSON 点位 `[116.3508, 40.013]` 实际落在北侧临时重点区且没有重点区和停机字段；现修正为 `[116.351, 39.946]`，位于 `PROV-KEY-003` 与 `BLDG-006` 概念测试基底内。`SCN-05 / 09 / 10` 统一挂接 `DAZHONGSI-MVP-01`，形成用途票、撤回回执、公共回报三阶段，并分别声明至少三项硬停止条件。
+- Spatial evidence / 空间证据：EPSG:4548 复算得到临时重点区 `720,454.219 m²`、两处可逆房间测试基底 `13,361.508 m²`、公共回执空间 `32,739.258 m²`、临时范围内两条概念线网联合长度 `1,614.218 m`；3/3 节点具备人工复核与无数据等价字段，但这仍是设计目标而非已观测绩效。
+- Carriers / 载体：同步 GeoJSON、metrics、设计深度/合规矩阵、假设、中英 Markdown 与派生报告 HTML；新增大钟寺“回执轨”双语离线段，以本地 Pillow/pypdf 构建步骤重绘双语重点区图，并只替换四份 PDF 中对应的重点区栅格。由于证据签名覆盖全部图层输入，十张 PNG 与四份 PDF 统一重签，其余八张图的像素内容不变；冻结 validator 不允许在 `visual/assets` 发布 Python，因此生成器不进入投稿包。
+- Verification / 验证：故意在旧载体上刷新快照后，一致性审计精确报出 10 张图、4 份 PDF、2 份派生 HTML 和 manifest 过期；修正后证据签名为 `c880c438924399d40267391551669d937dcfc5e144850eb511a45bbf024c4a52`。最终 manifest、自检、preflight、PDF/HTML 视觉 QA 结果在发布前门禁完成后记录。
+- Boundary / 边界：`geometry/key_areas.geojson` 与所有官方/共享文件不变；站口、路权、权属、现状建筑、文保、市政、消防、无障碍、运营主体与实际两线绩效仍待正式证据和实地演练，任一前置失败即迁移、缩减或停止原型。
+
 ## v1.3 - 2026-08-20
 
 P0 source-hash correction / 场地证据源哈希纠偏
@@ -35,6 +47,6 @@ P0 evidence and scenario consistency / 指标与场景证据一致性
   - public space / 公共空间：`7.3281%` → `98,164.982 m² / 0.8601%`;
   - industry tests / 产业测试：narrative cards `01–03` → GeoJSON registry `SCN-04` Synthetic-Data Benchmark Cell, `SCN-05` Temporary-Use Licence Cell, and `SCN-06` Controlled-Compute Test Room.
 - Carriers / 载体：同步中英 Markdown、派生 HTML、离线 visual 指标卡、双语指标图、A3/A0 PDF、manifest 和持久化 self-check；其余四组核心图视觉内容不变，只写入同一证据签名与发布核验基线以防漂移。双语报告另修复 390 px 下长路径代码造成的横向溢出。PDF 不只更新页脚：A0 第 5 页和 A3 第 6 页的内嵌指标栅格已逐像素替换为当前双语指标图。
-- Verification / 验证：`visual/assets/evidence-consistency.js` 在旧载体上先失败，修复后 PASS；发布准备时按最新 main 重签为 `8029358052d72fe32631e868657d5150b5d62348a5ccff3a5a8d92e7f731614b`。EPSG:4548 联合面积复算、12 个场景注册表和全载体检查 PASS；审计器新增无额外仓库依赖的 PDF 内嵌 RGB 栅格校验，能阻止只更新 PDF 元数据而保留旧指标图。四份 PDF 共 24 页以 120 dpi 重渲染并逐页检查，双语标题、数值、页脚、留白和图面无裁切、重叠、乱码或旧 SHA；四份 HTML 在 1440 px 与 390 px 下无坏图、远程资源或横向页面溢出。
+- Verification / 验证：`visual/assets/evidence-consistency.js` 在旧载体上先失败，修复后 PASS；发布准备时按最新 main 重签为 `c880c438924399d40267391551669d937dcfc5e144850eb511a45bbf024c4a52`。EPSG:4548 联合面积复算、12 个场景注册表和全载体检查 PASS；审计器新增无额外仓库依赖的 PDF 内嵌 RGB 栅格校验，能阻止只更新 PDF 元数据而保留旧指标图。四份 PDF 共 24 页以 120 dpi 重渲染并逐页检查，双语标题、数值、页脚、留白和图面无裁切、重叠、乱码或旧 SHA；四份 HTML 在 1440 px 与 390 px 下无坏图、远程资源或横向页面溢出。
 - Preflight / 预检：原工作区的管理 DOCX 和不可写远端问题通过新建 clean participant worktree、仅修改投稿目录、配置可写 fork 解决；不删除管理材料、不弱化 scope 检查。ready-package manifest refresh、持久化 self-check 四门、普通 preflight 与 `--check-push` 均 PASS；唯一警告是工作区并非 blobless partial clone，不影响投稿内容或上传权限。
 - Remaining boundary / 剩余边界：所有数值仍是临时几何下的概念设计量；官方边界、控规、现状建筑、权属、道路、市政、文保与生态资料到位后必须整体重建拓扑并复算，不能把本次一致性修复理解为官方精度提升。
