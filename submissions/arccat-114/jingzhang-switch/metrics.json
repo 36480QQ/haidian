@@ -356,7 +356,7 @@
     },
     "ai_pilgrimage_landmark_count": {
       "status": "known",
-      "value": 4,
+      "value": 5,
       "unit": "count",
       "source_files": [
         "proposal.md"
@@ -364,7 +364,7 @@
       "formula": "count(ai_pilgrimage_landmarks)",
       "confidence": "high",
       "assumptions": [
-        "4 处 AI 朝圣地标节点：岔心纪念碑、0公里桩、数字钟塔、信号塔。"
+        "5 处 AI 朝圣地标节点：岔心纪念碑、0公里桩、数字钟塔、信号塔、四道放行门信号群；均为概念建议，落位待专业深化。"
       ]
     },
     "user_persona_count": {
