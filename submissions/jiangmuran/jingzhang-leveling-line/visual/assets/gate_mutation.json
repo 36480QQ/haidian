@@ -1588,6 +1588,32 @@
       "why_en": "The published reason enumerates three branches - a file absent, one over the per-image cap, the packet over the image count. **The fourth is not in it**: the pixel-pair check was added later and the reason was never revisited. What it called a fact about the file system rather than about any file this harness can write was really a fact about this harness writing only text — **a limitation of the tool published as a property of the gate**."
     },
     {
+      "id": "M186",
+      "gate": "figure_metric_class_qa.py",
+      "target": "fig_evidence.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把那条一直没被点到的二类指标从名册里去掉——**这正是它一直以来的状态**。`existing_residential_floor_area_sqm` 带着完整的理由随 `metrics.json` 送到评审面前，而 FIG.06 上那行「第二类」从来没有念到它。闸门点名报出，构建停。",
+      "what_en": "Take the class-2 metric the roll-call never reached back off the list - **the state it was already in**. `existing_residential_floor_area_sqm` travels to the reviewer inside metrics.json with a full stated reason, and the class-2 line on FIG.06 never named it. The gate names the omission and the build stops.",
+      "why_zh": "**同一个文件里，这条完整性规则只覆盖了三个类中的一个。**`CLASS1_ORDER` 每次构建都与登记表对表，因此一类漏不掉；紧挨着印在它下面的二类与三类是手打的字符串，没有任何东西比对过。旁边的三类恰好是对的——**这正是让整块看起来一律派生的原因**。",
+      "why_en": "**Inside one file the completeness rule covered one of three classes.** CLASS1_ORDER is compared against the register on every build, so class 1 cannot lose a member; the class-2 and class-3 lines printed directly beneath it were typed strings that nothing compared. Class 3 next to it happened to be correct, **which is exactly what made the panel read as uniformly derived**."
+    },
+    {
+      "id": "M187",
+      "gate": "figure_metric_class_qa.py",
+      "target": "fig_evidence.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "把「道路红线」当作一条独立的二类指标放回名册——**这也正是它此前的写法**。它不是指标，而是 `setback_m` 自己的理由里已经写明由它覆盖的一个组成部分；名册上多一个登记表里没有的名字，评审按键去 join 就会落空。闸门点名报出，构建停。",
+      "what_en": "Put 道路红线 back on the roll-call as a class-2 metric in its own right - **which is also how it read before**. It is not a metric but a component that `setback_m` already states it covers, and a name on the list that the register does not hold is one a reviewer joining by key cannot resolve. The gate names it and the build stops.",
+      "why_zh": "第一个方向抓的是少念了一个，这个方向抓的是多念了一个。**两个方向都要守**：只查漏，名册就可以靠加名字变得好看；只查多，它又可以靠少念变得干净。登记表两边都说了算。",
+      "why_en": "The first direction catches a name left out; this one catches a name put in. **Both are held**: checking only for omissions lets the list flatter itself by adding names, and checking only for extras lets it stay clean by dropping them. The register settles it in both directions."
+    },
+    {
       "id": "M183",
       "gate": "walk_speed_qa.py",
       "target": "build_drawings.py",
@@ -2238,7 +2264,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 182,
+  "caught": 184,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2273,6 +2299,7 @@
     "evidence_ref_qa.py",
     "figure_citation_qa.py",
     "figure_gloss_qa.py",
+    "figure_metric_class_qa.py",
     "figure_title_qa.py",
     "first_screen_qa.py",
     "formal_visual_metrics_qa.py",
@@ -2406,6 +2433,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 126 道闸门，其中 125 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 126 gates, 125 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 127 道闸门，其中 126 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 127 gates, 126 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
