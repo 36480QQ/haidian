@@ -171,7 +171,7 @@
       "target": "proposal.md, report/, assumptions.json",
       "source": "package-provided",
       "what_it_holds_en": "Every census-derived number in the prose must equal the shipped census.",
-      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 927)"
+      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 929)"
     },
     {
       "check_id": "PKG_CENSUS_CURRENCY_QA",
@@ -1035,7 +1035,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No past corpus size may sit in hand-written prose as if it were current.",
-      "message": "stale_corpus_qa.py — stale corpus sizes: none — 22 superseded readings (184–926) appear only inside generated blocks or sentences that declare them historical; the prose is at 927"
+      "message": "stale_corpus_qa.py — stale corpus sizes: none — 23 superseded readings (184–927) appear only inside generated blocks or sentences that declare them historical; the prose is at 929"
     },
     {
       "check_id": "PKG_STANDARD_CLAUSE_QA",
@@ -1125,7 +1125,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A rank is a figure wearing a word, and it went stale like one.",
-      "message": "track_rank_qa.py — track rank: 2 edition(s) checked — 8 tracks, the two bold rows at rank 1 and 3 from the thin end (机器人与自动驾驶 46, 青年友好公共空间 88, AI公共服务 105), and both captions say so in words derived from those counts. Neither edition claims the two are the two thinnest while 青年友好公共空间 sits between them. Scope: whether the counts are current is census_claims_qa's, not this gate's"
+      "message": "track_rank_qa.py — track rank: 2 edition(s) checked — 8 tracks, the two bold rows at rank 1 and 3 from the thin end (机器人与自动驾驶 46, 青年友好公共空间 89, AI公共服务 105), and both captions say so in words derived from those counts. Neither edition claims the two are the two thinnest while 青年友好公共空间 sits between them. Scope: whether the counts are current is census_claims_qa's, not this gate's"
     },
     {
       "check_id": "PKG_TRANSFORMATION_QA",
@@ -1394,7 +1394,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31181812,
+      "total_bytes": 31181896,
       "maintainer_bypass": false
     },
     "stderr": ""

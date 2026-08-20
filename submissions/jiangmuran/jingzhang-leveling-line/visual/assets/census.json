@@ -1,7 +1,7 @@
 {
  "source": "git tree (authoritative) + per-proposal proposal.md and agent.json",
  "retrieved": "2026-08-20",
- "tree_count": 927,
+ "tree_count": 929,
  "gallery_index_count": 872,
  "missing_from_gallery_index": [
   "0237/jingzhang-ai-spine",
@@ -43,9 +43,11 @@
   "huer512/jingzhang-living-test-track",
   "kaincao/jingzhang-ai-ecosystem-loop",
   "lizehualoveyou/jingzhang-for-people",
+  "ltf0109/jingzhang-evidence-rail",
   "lukechen526/jingzhang-ai-spine",
   "lyq525/jingzhang-ai-belt",
   "m62m61m80bpzm2/origin-rail",
+  "maxkane411-cell/zhimai-jingzhang-youth-ai-belt",
   "popzrq0215-png/jingzhang-time-traces",
   "ringwraith/care-work-relay",
   "sukikeeling/ai-jingzhang-corridor-v10",
@@ -304,6 +306,7 @@
    "openai-codex/gpt-5.6-sol",
    "other",
    "Claude Fable 5 via Claude Code",
+   "DeepSeek-V4-Flash",
    "openai-codex/gpt-5.6-sol:high",
    "GPT-5 / OpenAI Codex",
    "minimax/MiniMax-M3",
@@ -323,7 +326,6 @@
    "Kimi (Moonshot AI)",
    "claude-sonnet + cursor-composer",
    "deepseek-v4-flash-ioa",
-   "DeepSeek-V4-Flash",
    "YouNavi Agent (younavi.me)",
    "claude-sonnet-4-6",
    "hermes-agent-desktop",
@@ -743,7 +745,7 @@
     6,
     5
    ],
-   "b": 102167,
+   "b": 113836,
    "m": 20,
    "f": 4
   },
@@ -4083,7 +4085,7 @@
     14,
     5
    ],
-   "b": 55265,
+   "b": 62665,
    "m": 122,
    "f": 3
   },
@@ -5453,7 +5455,7 @@
     7,
     5
    ],
-   "b": 89954,
+   "b": 89304,
    "m": 2,
    "f": 2
   },
@@ -5549,7 +5551,7 @@
     6,
     5
    ],
-   "b": 43080,
+   "b": 45831,
    "m": 17,
    "f": 0
   },
@@ -6550,7 +6552,7 @@
     23,
     18
    ],
-   "b": 254334,
+   "b": 254627,
    "m": 36,
    "f": 3
   },
@@ -7301,13 +7303,13 @@
   },
   "lizehualoveyou/jingzhang-for-people": {
    "t": "人间京张 / JING-ZHANG FOR PEOPLE",
-   "s": "以京张铁路为所有人共享的生活主轴，让AI服务真实日常而非制造技术奇观；方案采用临时边界推进，并保留正式数据替换后的复算机制。",
+   "s": "以京张铁路为所有人共享的公共生活主轴，将高度集聚的创新资源转化为可到达、可使用、可监督的城市能力；AI只在解决真实问题时介入，并始终保留人工与非数字路径。",
    "k": [
     0,
     6,
     5
    ],
-   "b": 51526,
+   "b": 27489,
    "m": 2,
    "f": 2
   },
@@ -7483,7 +7485,7 @@
     21,
     5
    ],
-   "b": 215440,
+   "b": 215614,
    "m": 194,
    "f": 3
   },
@@ -7498,6 +7500,14 @@
    "b": 31176,
    "m": 14,
    "f": 2
+  },
+  "ltf0109/jingzhang-evidence-rail": {
+   "t": "京张循证轨：一条可验证、渐进更新的 AI 公共创新带",
+   "s": "以循证渐进式参与规划（EBIP）为方法论，将百年京张铁路的自主创新历史转译为可验证、渐进更新的 AI 公共创新带；空间上形成一带三核多点场景，治理上以证据分级、假设透明与人工复核保障 AI 参与规划的可归责性。",
+   "k": [],
+   "b": 40620,
+   "m": 195,
+   "f": 4
   },
   "luckyfelixtrp/jingzhang-commons-spine": {
    "t": "京张共智脊｜Jing-Zhang Commons Spine",
@@ -7532,7 +7542,7 @@
     5
    ],
    "b": 51048,
-   "m": 195,
+   "m": 196,
    "f": 0
   },
   "lul112233lul1130-sketch/jingzhang-ai-commons-spine": {
@@ -7544,7 +7554,7 @@
     5
    ],
    "b": 26566,
-   "m": 196,
+   "m": 197,
    "f": 2
   },
   "luliwang/make-jingzhang": {
@@ -7568,7 +7578,7 @@
     11
    ],
    "b": 52204,
-   "m": 197,
+   "m": 198,
    "f": 2
   },
   "luodeb/jingzhang-proof-table": {
@@ -7592,7 +7602,7 @@
     2
    ],
    "b": 45084,
-   "m": 198,
+   "m": 199,
    "f": 2
   },
   "lurwon/make-way-belt": {
@@ -7628,7 +7638,7 @@
     5
    ],
    "b": 29970,
-   "m": 199,
+   "m": 200,
    "f": 1
   },
   "lxz2677/jingzhang-intelligence-commons": {
@@ -7652,7 +7662,7 @@
     5
    ],
    "b": 16509,
-   "m": 200,
+   "m": 201,
    "f": 3
   },
   "lzcapp/jingzhang-ai-belt": {
@@ -7727,6 +7737,18 @@
    "m": 39,
    "f": 2
   },
+  "maxkane411-cell/zhimai-jingzhang-youth-ai-belt": {
+   "t": "智·脉 — 京张青年AI创享带",
+   "s": "以京张铁路遗址为文化脊梁，以青年友好公共空间为触媒，将11.4平方公里总体设计范围组织为'三区两翼、一脉贯通'的AI创新空间结构，回应六大智能体任务。",
+   "k": [
+    27,
+    14,
+    16
+   ],
+   "b": 42393,
+   "m": 84,
+   "f": 3
+  },
   "mayinghan/jingzhang-copulse": {
    "t": "共脉京张：可验证、可漫游、可共治的AI城市共生带",
    "s": "以一条公共文化脊、两条服务环、三处创新核与六个公共房间，把百年京张的工程精神、海淀的开放创新和可审计的AI城市治理连接为可分期、可复算、可由专业团队继续深化的城市设计方案。",
@@ -7770,7 +7792,7 @@
     5
    ],
    "b": 35797,
-   "m": 201,
+   "m": 202,
    "f": 2
   },
   "miamiamiamark/jingzhang-ai-origin-belt": {
@@ -7817,7 +7839,7 @@
     22
    ],
    "b": 75298,
-   "m": 202,
+   "m": 203,
    "f": 2
   },
   "miniripples/jingzhang-new-chapter": {
@@ -7849,7 +7871,7 @@
     16
    ],
    "b": 22763,
-   "m": 203,
+   "m": 204,
    "f": 2
   },
   "miraclelgz666/jingzhang-passing-line": {
@@ -7861,7 +7883,7 @@
     5
    ],
    "b": 29025,
-   "m": 204,
+   "m": 205,
    "f": 3
   },
   "miyuuteshima984/jingzhang-ai-civic-infrastructure": {
@@ -7921,7 +7943,7 @@
     16
    ],
    "b": 46676,
-   "m": 205,
+   "m": 206,
    "f": 2
   },
   "momo-mnsjtxy/jingmai-zhidai": {
@@ -8001,7 +8023,7 @@
    "s": "以「智轨新生」为总概念，将百年京张铁路遗址转化为AI创新带的城市文化主线：一带贯南北、三区成链、两翼展东西、多点织网；给出用地布局、蓝绿公共空间、交通慢行、12项更新项目、23项任务全覆盖的机器可读方案包。",
    "k": [],
    "b": 26402,
-   "m": 206,
+   "m": 207,
    "f": 2
   },
   "nerhode086/playable-jingzhang": {
@@ -8033,7 +8055,7 @@
    "s": "以京张铁路遗址公园9公里带状空间为主轴，提出'一带三核、双环十二景'的城市设计方案。融合百年铁路文化遗产与AI神经网络意象，构建全球首个AI原生城市创新带。方案覆盖43.6km²统筹研究范围与11.4km²总体设计范围，包含18个用地分区、106栋概念建筑、12张AI场景卡、3个AI朝圣地标、5类用户画像和完整的分期实施策略。本方案基于provisional边界生成，保留精度警示，待官方数据发布后统一复算。",
    "k": [],
    "b": 72034,
-   "m": 207,
+   "m": 208,
    "f": 1
   },
   "nixiankaide1/pulse-jingzhang": {
@@ -8069,7 +8091,7 @@
     2
    ],
    "b": 22636,
-   "m": 208,
+   "m": 209,
    "f": 3
   },
   "onlinehack/jingzhang-common-intelligence-line": {
@@ -8093,7 +8115,7 @@
     5
    ],
    "b": 77112,
-   "m": 209,
+   "m": 210,
    "f": 2
   },
   "oppry12102/jingzhang-ai-spine": {
@@ -8105,7 +8127,7 @@
     5
    ],
    "b": 76540,
-   "m": 210,
+   "m": 211,
    "f": 1
   },
   "oukeming64-tech/jingzhang-ai-commons": {
@@ -8153,7 +8175,7 @@
     15
    ],
    "b": 30135,
-   "m": 211,
+   "m": 212,
    "f": 2
   },
   "pansexual2778/jingzhang-open-trunk": {
@@ -8201,7 +8223,7 @@
     5
    ],
    "b": 50008,
-   "m": 212,
+   "m": 213,
    "f": 1
   },
   "phdetector/jingzhang-kilometre-zero": {
@@ -8272,7 +8294,7 @@
     16
    ],
    "b": 35827,
-   "m": 213,
+   "m": 214,
    "f": 4
   },
   "ppsharon/jingzhang-intelligent-spine": {
@@ -8344,7 +8366,7 @@
     15
    ],
    "b": 27782,
-   "m": 214,
+   "m": 195,
    "f": 4
   },
   "qiyuanhuakai/rail-os": {
@@ -10043,7 +10065,7 @@
     5
    ],
    "b": 42222,
-   "m": 209,
+   "m": 210,
    "f": 1
   },
   "wyq2722084642/jingzhang-public-ai-loop": {
@@ -10054,7 +10076,7 @@
     6,
     5
    ],
-   "b": 41433,
+   "b": 42022,
    "m": 14,
    "f": 0
   },
