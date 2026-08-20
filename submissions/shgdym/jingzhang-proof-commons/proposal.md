@@ -1,44 +1,63 @@
 ---
-title: "X京张 X JINGZHANG：让每一个AI先经过公开交叉验证"
+title: "X京张 X JINGZHANG：公众走正线，AI走侧线"
 author_github: "shgdym"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "CC-BY-SA-4.0"
-summary: "以百年京张的工程求证精神为线索，将AI创新从来源登记、受控测试、公众试用、人工裁决到退出复原组织为一套空间和运营系统；所有空间对象基于明确降级的临时边界。"
+summary: "把京张既有公共走廊视为公众正线，把AI测试、发布和试用放入可关闭侧线；每次相交由人负责，失败后设备折返而公共路径不改线。"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v4.1"
+iteration: "v5.0"
 ---
 
 # X京张 X JINGZHANG
 
-> **公众走正线，AI走侧线。** 同一件AI产品必须带着同一版本和连续证据走完三站；每次并线必须经过人工责任道岔，任何一次失败都沿RETURN路径折返。TEST → RELEASE → USE → RETURN。
+> **让京张的公共生活一直走正线；AI只能从可关闭的侧线、经有人负责的道岔进入，出错就折返。**
 
-## 三分钟读懂：一件产品如何被城市允许，又被城市退回
+## 京张已经有一条公共线，缺的是技术怎样进入这条线
 
-一台低速具身服务原型以0.8版进入众智园。09:17，它在“行人意外穿越”工况中越界，现场人员5秒内急停，Test Receipt记为FAIL；机器撤出，公众院落继续开放。0.9版完成复测后取得新的Test Receipt，在AI原点公开对应版本、许可、责任人与撤回办法，才取得有期限的Release Ticket。它随后进入大钟寺限定试用；72岁的周阿姨不需要手机即可指出设备和排队影响无障碍主链，Public Verdict立即变为RETURN。试用关闭、人工服务继续，0.10版带着新工况返回众智园。[data:visual/assets/x-lifecycle-valid-example.json] [data:visual/assets/lived-lifecycle.json]
+京张铁路遗址公园一期已经把约9公里铁路走廊转为开放的公共空间，并保留正线、老铁轨、道岔和清华园站等铁路记忆。沿线两侧同时分布科研园区、校园、社区、轨道站点和商业界面；任务书进一步要求把AI研发、成果转化和城市体验落到这条走廊，并补足东西向慢行联系。设计面对的不是一张等待填满功能的空地，而是一条已经有人散步、通勤、休息和穿越的公共线。[source:BEIJING-JZ-PARK-PHASE1] [source:BEIJING-JZ-PARK-9KM] [source:AGENT-TASKBOOK]
 
-这就是X：不是一个Logo，也不是一串后台审批，而是产品每进入下一段城市空间时都要接受一次公开交叉核对。技术PASS不能替代权利判断，Release Ticket不能替代公众决定，新版本PASS也不能覆盖0.8版的失败历史。[data:visual/assets/verify-x-lifecycle.js] [metric:x_lifecycle_test_case_count]
+真正的矛盾发生在横向进入：测试设备、发布活动和AI服务都可能与日常步行、无障碍通行、社区安静和轨道到达争夺同一块公共界面。若没有明确的空间边界，AI要么被关在园区内部，与城市无关；要么把遗址公园变成连续的技术展场，让普通使用者为试验绕路。X京张因此不再增加一条技术主轴，而是规定技术怎样从侧面、在一个可见且有人负责的位置进入既有公共主线。
 
-| 城市决定 | 这一站只回答什么 | 公众能看见什么 | 运行凭证 | 失败后城市怎样继续 |
-| --- | --- | --- | --- | --- |
-| 众智园 TEST | 这个精确版本能否在声明边界内安全工作？ | 测试口袋、值守人、物理急停、失败记录 | Test Receipt | 机器撤出；院落、步行与开放绿地继续 |
-| AI原点 RELEASE | 这个版本是否有权被公开和有限使用？ | 方法、许可状态、责任人与撤回动作 | Release Ticket | 撤下发布；教学、协作与普通展览继续 |
-| 大钟寺 USE | 公众是否愿意让它继续留在城市服务中？ | 有限试用、人工等价服务、匿名投诉与RETURN状态 | Public Verdict | 设备折返；商业、休息、人工服务与无障碍主链继续 |
+| 四步判断 | X京张的回答 |
+| --- | --- |
+| 现状 | 一条已经开放、承载铁路记忆与日常生活的纵向公共走廊 |
+| 问题 | AI产业和城市服务需要横向进入，却不能取得公共路径的自动优先权 |
+| 原则 | 公众走正线，AI走侧线；每次相交由人决定，失败后沿独立路径折返 |
+| 空间 | 保留连续公众路径，插入可关闭侧袋、单一受控交叉点、值守位置和设备撤出路径 |
 
-![X京张一件产品、三站、三张票与RETURN运行总图](assets/figures/x-operating-proof.png)
+![已开放的纵向公共走廊与三类AI活动的横向相遇](assets/figures/mobility-bluegreen.png)
 
-### 为什么是京张：从铁路运行文化长出的X
+> **证据边界：** 当前总体边界和三处重点区为临时约束，只支撑概念关系、公开地图切片与包内复算。正式边界、控规、权属、现场尺寸、工程条件和运营主体到位后必须重建；本方案不把概念空间写成审批或实施承诺。
 
-这条机制特别适合沿京张遗产线展开，因为它不是可任意交换节点的园区组团，而是一条从北段研发环境、经中段开放协作界面、进入南段轨道与商业日常的连续城市区段。众智园先隔离技术风险，AI原点再公开版本、许可和责任，大钟寺最后把产品放到最高频、最复杂的公众生活中；从TEST到RELEASE再到USE，公众暴露逐段增加，因此三站不能倒序，也不能由一座综合展厅替代。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]
+## 三处重点区先是三种城市职责，才是三个阶段
 
-铁路运行语法在空间里一一对应：遗址走廊和连续慢行是公众正线；每站可独立关闭的测试、发布或试用区域是AI侧线；公众路径与AI侧线唯一相接的位置是有人值守的责任道岔；三站各自的开放边界是区段；Test Receipt、Release Ticket和Public Verdict只在前序条件满足后允许产品进入下一段。相互冲突的运行关系不能由算法自行取得优先权，异常解除后也必须由人确认恢复。三张票不是铁路行车凭证、政府审批或产品认证。[source:NRA-TECHNICAL-RULES] [data:visual/assets/railway-operating-translation.json]
+三站不能互换，也不能压缩进一座综合展厅。众智园处在研发与生态公共空间相遇的位置，需要把高风险测试留在可封闭边界内；AI原点连接高校成果、协作首层与人才生活，需要把技术说明、权利状态和撤回动作放在同一个公共界面；大钟寺叠加轨道到达、商业和日常服务，需要让使用、拒绝和人工替代在同一条到达路径上发生。删去TEST、RELEASE、USE三个英文词，三处仍然承担不同的城市职责。[source:HAIDIAN-2025-STATISTICAL-BULLETIN] [source:HAIDIAN-AI-ORIGIN-PLAN] [source:AGENT-TASKBOOK]
 
-京张铁路青龙桥“人”字形折返提供了RETURN的具体空间记忆：改变方向不抹去来路，而是保留前段状态后退回重走。大钟寺作出RETURN后，试用侧线先断能并清空，设备沿独立撤出路径离开公众界面，状态牌撤下，人工服务和无障碍主链恢复；产品及新工况再回到众智园，而不是只在后台把状态改成“待优化”。这不意味着设备在遗产铁路上运行，也不把青龙桥虚构为本次设计节点。[source:NRA-JINGZHANG-HISTORY] [source:BEIJING-HERITAGE-JZ]
+| 地点 | 每天真实面对的人 | 当前空间矛盾 | X京张的空间动作 |
+| --- | --- | --- | --- |
+| 众智园 | 研发人员、园区职工、河岸慢行者、附近居民 | 机器试验边界与开放院落、绿地和慢行交叉 | 公众路径贴边连续；测试侧袋内收；观察缓冲居中；急停和值守守住唯一交叉；设备从后勤边缘撤出 |
+| AI原点 | 高校师生、开发者、创业团队、社区居民 | 成果发布容易占据公共首层，但方法、许可和撤回藏在后台 | 开放实验室、发布台和公众阶梯共面；责任与撤回界面位于出口；协作庭院不因产品撤下而关闭 |
+| 大钟寺 | 通勤者、老人、儿童、商业使用者、服务人员 | AI试用、排队和围观可能阻断轨道到达与无障碍主链 | AI服务与人工服务同起点；投诉节点贴近主链；试用侧袋独立关闭；设备沿侧后方退出，不横穿到达空间 |
 
-已开放的京张铁路遗址公园一期保留正线、老铁轨、道岔和清华园站等记忆，并把约9公里走廊转为贯通城市的公共空间。X京张据此倒转技术与公众的优先级：**公众日常生活是正线，AI创新是必须取得人工放行且随时可以折返的侧线**。铁路遗产由此不只是视觉母题，而是决定三站次序、侧线边界、人工放行和空间复原的设计骨架。[source:BEIJING-JZ-PARK-PHASE1] [source:BEIJING-JZ-PARK-9KM] [depth:jingzhang_heritage_route]
+![三站公开地图语境、城市职责与失败后的空间动作](assets/figures/key-areas.png)
+
+## 一件产品把这条空间原则走一遍
+
+一台低速具身服务原型以0.8版进入众智园。09:17，它在“行人意外穿越”工况中越界，现场人员5秒内急停，机器从测试侧袋撤出，公众路径不改线。0.9版完成复测后，在AI原点公开对应版本、许可、责任人与撤回办法，才进入大钟寺限定试用。72岁的周阿姨不需要手机即可指出设备和排队影响无障碍主链；现场关闭试用侧袋，人工服务继续，0.10版带着“设备停靠、围观人群与轮椅优先同时发生”的新工况返回众智园。[data:visual/assets/x-lifecycle-valid-example.json] [data:visual/assets/lived-lifecycle.json]
+
+Test Receipt、Release Ticket和Public Verdict分别保存技术、权利和公众使用决定，但它们只是支撑这一空间过程的记录，不是项目主角，也不是铁路行车凭证、政府审批或产品认证。完整字段、状态与验证结果放在专业附录。[data:visual/assets/verify-x-lifecycle.js] [metric:x_lifecycle_test_case_count]
+
+![一件产品沿三站前进，并在公众异议后发生空间折返](assets/figures/x-operating-proof.png)
+
+### 为什么只能从京张长出来
+
+京张首先提供了一条真实存在的线性公共遗产空间，而不是供概念借用的铁路图形。正线对应连续公共生活，侧线对应测试、发布或试用所占的可关闭局部；道岔对应公众路径与技术空间唯一相交、必须有人值守的位置；区段对应每站可以独立开放或关闭的边界；折返则必须表现为断能、撤出、恢复普通用途并带着新问题回到前站，而不是后台修改一个状态。[source:NRA-TECHNICAL-RULES] [data:visual/assets/railway-operating-translation.json]
+
+三站次序也来自京张沿线的城市梯度：北段众智园邻近研发与受控试验条件，中段AI原点承担高校成果向城市公开转译，南段大钟寺进入轨道、商业和高频公共生活。产品从北向南，公众暴露逐段增加；任何异议则沿京张空间序列返回北段复测。因此这不是可以任意换址的三座AI馆，而是一件技术沿同一条城市线逐步取得使用资格、又可能被城市退回的空间过程。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -209,47 +228,17 @@ AI原点形成“成果披露前台—开源协作首层—人才生活庭院—
 
 SC-03不再停留在“具身智能”标签，而采用可执行的 X Receipt 协议。拟议技术栈限定为低速地理围栏机器人、激光雷达/深度感知、里程计与局部地图、独立围栏监测、最小风险停车、物理与值守远程急停；感知只识别人、轮椅等通行类别，不做人脸识别，不保留图像，不允许系统自行扩大运行边界。机器测试区、观察缓冲区和永久公众通道三层分离，任何失败只关闭前两层，公众通道保持开放。[data:visual/assets/x-receipt.schema.json] [data:visual/assets/x-lifecycle-valid-example.json]
 
-本次提交实际运行了一次**合成桌面演练**，不是现场试点：09:00进入众智园TEST；09:17模拟“儿童/老人意外穿越”工况；09:17:05触发人工急停并判定RETURN；系统冻结事件记录、撤出设备、复原普通院落，再返回TEST。普通行人、轮椅优先、意外穿越、网络/规划器不可用四类固定工况均按预期执行，协议检查结果为 `4/4 fixtures`、`8/8 checks`；真实试点仍因场地、运营主体、设备参数、保险和批准缺失而保持 `BLOCKED`。[data:visual/assets/sc03-tabletop-evidence.json] [metric:sc03_tabletop_rehearsal_count] [metric:sc03_synthetic_fixture_count]
+本次提交保存了一次明确标注的**合成桌面演练**，不是现场试点：原型进入受控测试后遇到意外穿越，现场人员执行急停、冻结事件记录、撤出设备并复原普通院落。演练用来检查规则是否自洽；场地、主体、设备参数、保险和批准未确认前，真实试点不得启动。具体工况和机器检查结果集中在专业附录。[data:visual/assets/sc03-tabletop-evidence.json] [metric:sc03_tabletop_rehearsal_count] [metric:sc03_synthetic_fixture_count]
 
 ![X运行闭环、SC-03合成演练与真实试点阻断项](assets/figures/x-lifecycle.png)
 
-### 一件AI产品如何穿过三站：从0.8失败到0.10返回
+### 产品与记录：前台看空间，后台保留完整历史
 
-为了让X不只停留在品牌层，本方案用同一台低速具身服务原型贯穿三站。以下过程是基于固定规则编排的合成运行叙事，不表示真实产品、企业、场地或审批已经存在。产品在任何时刻只有一个有效版本；每次跨站必须携带上一站票据的哈希，版本、场景或权利状态变化都会使下游票据失效。这样，城市面对的不是一个模糊的“机器人项目”，而是一条可以被暂停、追问和倒退的决定链。[data:visual/assets/lived-lifecycle.json] [metric:product_lifecycle_event_count]
+产品旅程已经在首层讲清，这里只补充它为何不会变成一次性表演：同一时刻只有一个有效版本；跨站必须引用上一站记录；版本、路线、模型或许可变化都会使下游决定失效；公众异议必须生成新的测试任务。技术失败回到众智园，权利失败停在AI原点，公众使用失败同时改变产品工况和大钟寺空间布置。[data:visual/assets/lived-lifecycle.json] [metric:product_lifecycle_event_count]
 
-| 事件 | 地点与版本 | 现场发生什么 | 人工决定 | 空间随之怎样变化 | 留下的证据 |
-| --- | --- | --- | --- | --- | --- |
-| L01 首次测试 | 众智园·0.8-test | 意外穿越工况触发，原型不能在声明时间内稳定完成让行 | 安全负责人判定FAIL | 机器口袋与观察缓冲关闭，公众通道保持开放 | 失败工况、急停来源、响应时间、未闭合缺陷 |
-| L02 退出复原 | 众智园·0.8-test | 设备断电撤出，事件遥测冻结，临时围界回收 | 场地负责人签RESTORE | 测试院恢复为普通院落、座椅与绿地 | 撤场照片位、组件清点、日常状态检查表 |
-| L03 独立复测 | 众智园·0.9-retest | 四类固定工况与失联、定位不确定性追加工况全部复跑 | 独立安全复核人签PASS | 仅在复测时重新启用机器口袋 | Test Receipt及版本、工况和人员签注 |
-| L04 发布暂缓 | AI原点·0.9-rc1 | 一个软件组件的许可与测试版本不能完全对应 | 权利复核人签HOLD | 发布台不亮灯，展示桌转为普通方法教学 | 权利缺口、待补责任人与处理期限 |
-| L05 限定发布 | AI原点·0.9-rc1 | 许可链、组件清单、限制条件和撤回责任补齐 | 发布负责人签LIMITED | 开放贡献环只显示“限定使用”，不显示认证或推荐 | Release Ticket及Test Receipt哈希 |
-| L06 公众试用 | 大钟寺·0.9-limited-use | 有人服务、三层告知和无AI通道同时到位 | 公共服务负责人签OPEN | 机器仅进入可撤试用口袋，公众主链不变 | 开场检查、值守表、告知理解抽查 |
-| L07 公众异议 | 大钟寺·0.9-limited-use | 轮椅优先路径附近出现设备或排队干扰 | 服务人员记录COMPLAINT | 机器立即HOLD，优先清空无障碍交叉口 | 匿名投诉票、处置时钟、受影响群体 |
-| L08 城市退回 | 大钟寺·0.9-limited-use | 路线问题不能在当场通过位置调整消除 | 用户与无障碍复核人签RETURN | 试用口袋关闭，纸质与人工服务继续 | Public Verdict、空间复原检查、修订要求 |
-| L09 返回起点 | 众智园·0.10-return | 新版本连同新的路径占用工况返回受控测试 | 状态改为PENDING | 未经复测不得回到AI原点或大钟寺 | 新测试任务书与前次三张票据链 |
+三张记录分别回答三个不同问题：Test Receipt保存版本、工况、测试边界与人工急停；Release Ticket保存软件、模型、数据权利、限制和撤回责任；Public Verdict保存告知理解、人工等价服务、投诉与继续/修改/退回决定。交接桌、发布双台和公众服务台让这些决定在现场可见；字段、哈希、到期和机器检查结果全部下沉到专业附录，不占据城市设计的第一阅读层。[metric:handover_ticket_type_count] [metric:ticket_hash_chain_target_percent]
 
-这条链最重要的不是“最终通过”，而是允许产品在L01、L04和L08三次失败，并让失败产生不同后果。技术失败返回测试，权利失败阻断发布，公众使用失败同时改变控制逻辑与空间布置。任何人都不能用后续版本的成绩覆盖旧版本失败，也不能拿众智园的技术PASS替代AI原点的权利判断或大钟寺的公众判断。三站之间因此不是展览巡游，而是三种不同公共权力的接力。
-
-![一件AI产品从首次失败、限定发布、公众异议到返回测试的完整生命周期](assets/figures/robot-lifecycle.png)
-
-### 三站交接：三张票据不是三枚印章
-
-三站采用“问题不同、签字不同、拒绝理由不同”的交接制度。Test Receipt只回答某个精确版本能否在精确边界内完成声明工况；Release Ticket只回答该版本的许可、数据权利、软件构成、限制和撤回责任是否允许有限发布；Public Verdict只回答在有人服务、非AI等价通道和真实异议存在时，城市是否愿意让这项有限使用继续。任何票据都不是政府审批、产品认证或永久通行证，三张票据都有期限、范围和主动撤回入口。
-
-| 票据 | 必填字段 | 建议签注角色 | 明确不证明 | 拒绝后去向 |
-| --- | --- | --- | --- | --- |
-| Test Receipt | 产品与模型版本、固定工况、测试边界、人工急停、未闭合缺陷、原始记录哈希 | 候选运营主体 + 独立安全复核人 | 不证明许可清权、公众接受、采购价值和全场景安全 | 回到众智园修订、复原测试空间 |
-| Release Ticket | Test Receipt哈希、软件/模型/数据清单、许可、用途期限、公开限制、撤回责任人 | 权利复核人 + 发布负责人 | 不证明政府背书、商业推荐、现场可用和长期运营 | 留在AI原点HOLD，不进入公众试用 |
-| Public Verdict | Release Ticket哈希、告知理解、无AI等价服务、投诉、分群差异、继续/修改/退回决定 | 公共服务负责人 + 用户/无障碍复核人 | 不证明所有人满意、永久部署和后续版本自动适用 | 关闭试用口袋，回到众智园或AI原点 |
-
-交接发生在可见的公共界面。众智园出口设置“测试交接桌”，只展示版本、边界、工况和仍未解决的问题；AI原点设置“发布双台”，一侧展示可复现方法，另一侧提供许可、限制与撤回；大钟寺设置“公众裁决桌”，把继续、修改、停止三个状态与人工申诉、纸质服务放在同一视线内。票据状态失效时，相应灯带和标志撤下，空间恢复普通学习、休息或通行用途，避免过期成果继续以展览形式获得事实上的背书。[metric:handover_ticket_type_count]
-
-票据链使用“上游哈希 + 当前版本 + 人工签注 + 到期时间”四项最小关联。若0.9-retest在AI原点被改为0.9-rc1，发布方必须解释变化并判断是否需要重测；若大钟寺现场改变路线、速度或感知范围，原Release Ticket不能自动覆盖新条件；若公众投诉揭示测试工况未覆盖的使用方式，Public Verdict必须生成RETURN任务，不能只写“优化体验”。这一机制让三站交接有明确的证据保管链，也让失败能够逆向改变测试任务书。[data:visual/assets/lived-lifecycle.json] [metric:ticket_hash_chain_target_percent]
-
-上述规则已写入 `visual/assets/verify-x-lifecycle.js`，不是仅靠文字约定。状态机拒绝跳过TEST、票据类型替代、配置变化沿用旧票、哈希断链、缺少人工签注、权利不完整、票据过期、RETURN后继续USE以及无复测再次RELEASE；投诉触发RETURN时必须创建新的测试或复核任务。固定测试集为24例，其中22例预期拒绝、2例预期接受，当前结果为 `24/24 PASS`。这里的PASS只表示验证器正确接受或拒绝预设输入。[data:visual/assets/verify-x-lifecycle.js] [data:visual/assets/x-lifecycle-test-results.json]
-
-![Test Receipt、Release Ticket与Public Verdict的字段、签注人、拒绝条件和返回路径](assets/figures/station-handover.png)
+![产品决定历史与三站交接记录](assets/figures/station-handover.png)
 
 ### 最小试点：十四天只回答一个问题
 
@@ -298,7 +287,7 @@ SC-03不再停留在“具身智能”标签，而采用可执行的 X Receipt �
 
 AI原点是**发布侧线**：“方法台—权利台—撤回界面”依次接入首层公众正线。方法教学和协作空间属于正线，权利失败只撤下产品状态，不关闭学习与合作；旧票据到期后不再亮灯。大钟寺是**城市试用侧线**：“有限试用口袋”与人工/非AI服务带平行，公众不穿过试用区也能到达商业、休息和交通目的地；异议发生后工作人员在不关闭主链的情况下清空设备与排队。三种侧线分别容纳技术失败、权利失败和公众使用失败；围界可拆、标志可换、服务并行和通道永久开放不是装饰语言，而是RETURN能否执行的空间条件。
 
-三站拓扑被表达为节点、连接、AI依赖、无障碍属性、可独立关闭和RETURN恢复用途，而不是虚构尺寸。验证器逐站关闭全部AI节点，检查公众主链、侧袋隔离、无AI服务、无障碍独立性和三站差异，再检查众智园无旁路、AI原点撤回共可见和大钟寺非AI路径等价。历史首次运行曾以 `22/23` 拒绝AI原点的恢复用途；修复并补齐站点专属检查后当前为 `29/29 PASS`。该结果只进入专业附录，不作为现场证据或首层价值主张。[data:visual/assets/station-topology.json] [data:visual/assets/station-topology-results.json]
+三站拓扑用节点和连接记录公众主链、侧袋隔离、无障碍独立性、关闭方式和恢复用途，不虚构现场尺寸。相关机器检查只作为专业附录，用来防止后续图纸在深化时悄悄丢失这些关系，不替代现场审计。[data:visual/assets/station-topology.json] [data:visual/assets/station-topology-results.json]
 
 ![三站的人流、机器流、关闭方式与RETURN后恢复关系](assets/figures/station-topology-proof.png)
 
@@ -416,17 +405,13 @@ VI执行规范固定了标志构造、最小净空、最小数字尺寸、五种
 
 这些PASS只证明仓库内规则、合成票据和概念拓扑可重跑，不证明真实现场、产品安全、公众接受、认证或实施批准。SC-03仍是明确标注的tabletop；真实试点在场地、主体、设备、保险和批准缺失时保持BLOCKED。[data:visual/assets/sc03-tabletop-evidence.json]
 
-### 附录：X Census赛道词汇检查
+### 附录：内部语汇审计
 
-X Census不再承担首层概念证明，只用于检查本方案是否落入已经饱和的叙事。脚本在记录的git SHA上读取800份 `ready_for_review + formal` 投稿，成功800份、失败0份：受控测试语言命中766份，人工复核或接管命中783份，治理/审计/证据等语言命中800份；公众非AI等价路径命中117份，同时命中TEST、人工决定、公众退出和rollback/return的组合为73份。结果说明“有测试、有治理”不能构成原创性主张，也不证明其余727份方案缺少等价机制。[data:visual/assets/x-census.json] [metric:x_census_rare_combination_count]
-
-统计是透明关键词规则下的可重复文本判定，不是人工质量评分。规则、逐项命中和运行日志随包保存；第三方可在本投稿目录运行 `node visual/assets/run-x-census.js --repo-root ../../..` 重算，不利结果也必须保留。[data:visual/assets/x-census-details-index.json] [data:visual/assets/x-census-reading-log.json] [source:X-CENSUS-CURRENT-TREE]
+X Census及其运行日志继续随包保存，但不参与设计价值论证。它只检查公开投稿中的关键词饱和度，不是语义比较、原创性证明或质量排名；正文因此不展示同类方案数量和稀缺性比例。[data:visual/assets/x-census-details-index.json] [data:visual/assets/x-census-reading-log.json] [source:X-CENSUS-CURRENT-TREE]
 
 正式任务依据、临时边界来源、专业标准及八个国际案例的一手链接、发布日期、适用边界和权利说明均登记于 `sources.json`。正文引用以 `[source:*]` 回指该登记表；未登记资料不作为结论依据。[source:SOURCE-REGISTRY] [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
 
 参考资料分为五组。第一组是官方公告与任务书；第二组是规划与设计深度标准；第三组是只支撑概念几何的临时来源；第四组是八个机构案例，只迁移机制；第五组是国家铁路局与北京市公开的京张历史、运行规则和遗址公园资料，只支撑有边界的设计转译。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [source:NRA-TECHNICAL-RULES]
-
-X Census直接读取当前git tree，不作为外部事实来源。链接失效或内容更新时，对应结论降级并进入更新日志；引用不等于合作、认证、绩效预测或商标许可。[source:X-CENSUS-CURRENT-TREE]
 
 - `brief/public-brief.md`：仓库公开任务书草案，仅作任务背景和方案边界引用。
 - `brief/README.md`：仓库公开资料边界说明，用于约束资料状态和复核责任。
