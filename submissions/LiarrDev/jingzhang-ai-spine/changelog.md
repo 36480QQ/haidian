@@ -1,5 +1,28 @@
 # 方案迭代记录
 
+## v1.4 - 2026-08-20
+
+### Verifiability (mutation testing + runnable verifier)
+- simulation.json: upgraded to version 2 with 4 named assertion types (hard_stop_triggered_correctly / human_review_enforced / recovery_evidence_required / data_disposal_or_exit_verified), 44 assertions across 12 tasks, and 5 mutation tests that inject violations (missing human review, downgraded high-risk, missing rollback, personal trajectory collection, coordinates in concept) and verify the proposal's mechanisms intercept them
+- simulation.json: added boundary_statement declaring what the offline simulation proves and does not prove
+- visual/assets/verify_spine.js: runnable Node.js verifier (17/17 checks pass) validating risk.json / spatial.json / simulation.json / metrics.json structural consistency offline
+- visual/assets/review_evidence.json: evidence summary with per-item "proves / does not prove" declarations across 7 evidence categories
+
+### Proposal narrative structure (taskbook alignment + readability)
+- proposal.md: added "Read Me in Three Minutes" section answering the five reviewer questions (what / how to implement / who benefits / how AI integrates / risks and boundaries)
+- proposal.md: added Six Agent Task Response Map (agent.1 through agent.6) with per-task proposal response and core evidence
+- proposal.md: added Policy Chain Alignment table (national → municipal → district, three levels) with wording boundaries
+- proposal.md: added R-01 through R-08 risk index numbering with cross-chapter back-referencing
+- proposal.en.md: synced all new sections with English translations
+
+### Evidence and narrative depth
+- report/narrative.md: expanded from placeholder to substantive formal narrative (core concept, three-layer cultural progression, implementation phasing, restraint boundaries)
+- design_depth_matrix.json: strengthened 5 evidence_summary_zh entries to declare what each proves and does not prove
+
+### Manifest
+- 2 new files registered (visual/assets/verify_spine.js, visual/assets/review_evidence.json)
+- SHA256 hashes recalculated for 7 modified files
+
 ## v1.3 - 2026-08-20
 
 ### Structured deliverables (scoring enhancement)
