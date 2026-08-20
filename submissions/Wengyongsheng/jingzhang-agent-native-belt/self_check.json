@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "info",
+      "detail_zh": "site_boundary 与 key_areas 均标记 provisional_constraint，正文已披露。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "info",
+      "detail_zh": "用地分区（三核+绿廊+两翼）通过shapely集合运算覆盖site且无重叠。"
+    },
+    {
+      "check_id": "METRIC_RECOMPUTE",
+      "result": "pass",
+      "severity": "info",
+      "detail_zh": "所有面积指标由GeoJSON在EPSG:4548投影复算，与公告面积一致。"
+    },
+    {
+      "check_id": "SOURCE_DISCLOSURE",
+      "result": "pass",
+      "severity": "info",
+      "detail_zh": "sources.json区分formal-ready与provisional_only，无未授权数据。"
+    },
+    {
+      "check_id": "FIGURE_PRESENT",
+      "result": "pass",
+      "severity": "info",
+      "detail_zh": "13张图（含三核典型街坊放大平面block-detail-01/02/03.png）已生成并嵌入proposal.md。"
+    },
+    {
+      "check_id": "FIGURE_METRIC_CONSISTENCY",
+      "result": "pass",
+      "severity": "info",
+      "detail_zh": "全部PNG图面指标（绿地率31.0%、公共空间率5.5%、建筑465栋/77.3ha含3栋保留遗产）与metrics.json及GeoJSON复算值一致；visual/index.html指标同步更新。"
+    },
+    {
+      "check_id": "PUBLIC_GREEN_SEPARATE",
+      "result": "pass",
+      "severity": "info",
+      "detail_zh": "公共空间与绿地独立计算，不再共享同一几何。"
+    }
+  ]
+}
