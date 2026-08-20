@@ -20,7 +20,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "995be81d3269f86948c3f8be9d11b274f73c527b7337c75f47dd07ca380beb21",
+      "sha256": "89afe6ce538d592cf80cb65c81d891660c12a020cca20e75afb56e7acac84b3f",
       "language": "zh",
       "title_zh": "智·脉 — 京张青年AI创享带"
     },
@@ -28,7 +28,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "d883387a9ff19e696898b79cb9a6ec4d96f3c2f89a9651ea3b15f6590d4b64ac",
+      "sha256": "6b2b3facf1e95018d6ca0dcc4ef061bfdcb4b78ffd387cf2dc8eb5a7c35e8e95",
       "language": "en",
       "translation_of": "proposal.md",
       "title_en": "ZhiPulse — Jingzhang Youth AI Innovation Belt"
@@ -44,7 +44,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "6d8d5c9e024f18faf1b4095597caf09e0e02e3826215c6755a3c049c6b22cacd",
+      "sha256": "e6e95e1e0cba28ee18c45de2bb8bdc8cdaee6ed7f92e00f0c6c2e293c8e90469",
       "language": "zh"
     },
     {
@@ -205,14 +205,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "7633b20642bf76611f2d674ddcd61766e99b0f065f2a5adeeba7e417047f2de7",
+      "sha256": "51a7e0e8eb685f4c357079f501b3d69d7d56c8cd7e7f583ece5f7cff7c4f8964",
       "language": "zh"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "31e75c4948e0606e32c6e93d4d616558ddc14a14dae8b3fdffb738a7311d5e51",
+      "sha256": "cb0d82310cecc2024f6bb6ea55bc233c2084268b255ee61708110f27608ca77a",
       "language": "zh"
     },
     {
@@ -251,7 +251,7 @@
       "language": "en",
       "required": true,
       "translation_of": "report/proposal.html",
-      "sha256": "c84a9161fd7f06023429a56d48a3ee71b6a271b5d07ef6396ddaa1b973ffc31a"
+      "sha256": "941720d1fae1e29f227da3bedc92eda8f8246c4e6aa06a90cb17a708a7786439"
     },
     {
       "path": "visual/index.en.html",
@@ -259,7 +259,7 @@
       "language": "en",
       "required": true,
       "translation_of": "visual/index.html",
-      "sha256": "1f82960de40444a6f587ac26ad8c9a0308b69afe456e0b86730485057b17c101"
+      "sha256": "9f89270bd352d857b2ba758cab8662a77ea35cc3fb111e02e9bb689bab021cc3"
     }
   ],
   "validation_claim": {
