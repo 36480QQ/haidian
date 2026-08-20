@@ -695,5 +695,57 @@
       "qa_boundary": "Deterministic publication QA proves reproducibility and legibility only, not font licence, field evidence, accessibility certification, professional acceptance, approval, rights clearance or maturity."
     },
     "reality_boundary": "G0 concept and editorial audit only; no field result, public feedback, approval, staffing commitment, accessibility result, real recovery duration, independent clearance or maturity upgrade."
+  },
+  "round_50_provenance": {
+    "scope": "Expert review packet alignment and decision-grade risk summary only; no new design direction.",
+    "serial_gate": {
+      "predecessor_pr": 3491,
+      "predecessor_merge_sha": "362986d3040b98891d8f99b07f25b2dd165cb3fa",
+      "canonical_base_sha": "e289e4abc305b64f06add372cdec2fcb2a8a4db7",
+      "predecessor_merge_in_base": true,
+      "competing_package_open_pr_count": 0,
+      "clean_before_edit": true
+    },
+    "red_before": {
+      "review_packet_lines": 1316,
+      "review_packet_bytes": 209080,
+      "version_iteration_declared": false,
+      "risk_json_present": false,
+      "assumption_count_before_decision_route": 23,
+      "quick_summary_used_haidian_public_capability_test": false,
+      "finding_type": "editorial_review_only"
+    },
+    "alignment": {
+      "version": "50.0",
+      "iteration": "Round 50",
+      "risk_dimensions": 8,
+      "risk_score_meaning": "G0 editorial review priority only",
+      "quick_judgements": 5,
+      "risk_routes": 8,
+      "primary_navigation_items": 6,
+      "review_index_paths": 156,
+      "rights_records": 156
+    },
+    "browser_qa": {
+      "cases": 12,
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "javascript_modes": [
+        "enabled",
+        "disabled"
+      ],
+      "keyboard_skip_pass": true,
+      "reduced_motion_pass": true,
+      "print_pass": true,
+      "external_requests": 0,
+      "autoplay": false
+    },
+    "new_media": false,
+    "new_model_call": false,
+    "new_external_source": false,
+    "geometry_metrics_frozen": true,
+    "reality_boundary": "Twin-Track remains the sole master idea; three prototypes, JZ-AIOS, G0-G3, four axes, three carriers, evidence and rights gates, nine geometry files, metrics.json, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, proof-only failure stop, non-authorising recovery, not_fully_cleared, zero independent file-level audits and fixed PDF page counts remain unchanged. Risk scores and review-packet alignment prove no probability, jury grade, expert acceptance, field result, approval, G1 or reuse licence."
   }
 }

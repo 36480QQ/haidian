@@ -74,7 +74,7 @@ scenarios:
 | Q7 · 哪些空间信息仍是临时或未知？ | `PROV-SITE-001` 与三处 `PROV-KEY` 均为临时容器；官方红线、坐标套准、站点／道路／地块／建筑锚点及构件尺寸、材料、连接、专项结论仍未知。 | `visual/index.html#cold-read-spatial-unknowns` | A3 P2、P14；A0 P1、P3—P4 |
 | Q8 · 哪些资料与未来专业方可以修改、附条件、拒绝或删除方案？ | D01—D08 真实资料可替换临时几何、类型占位和未核验来源。H01—H07 是尚未提交的交接／证据包，不是人员、专业或已接受责任；P01—P07 只是建议专业类型。未来胜任且接受明确范围的专业方，才可在该范围内复算、修改、附条件、拒绝或删除受影响概念；重大缺口保持 NO-GO。 | `visual/index.html#review-handoff` | A3 P13—P14；A0 P7—P8 |
 
-**包内导航与评审交接索引。** 本包全部 155 个路径的评审定位统一见 `visual/assets/review-handoff-index.json`：七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、全部 21 个章节阅读单元、D01—D08/H01—H07 交接、[八问冷读答案地图](visual/index.html#cold-read-answer-map)）与逐文件登记（现行／历史快照／机器输入／冻结／临时五类状态、语言对、轮次来源与权利回链）。`round15-baseline.json` 是历史快照而非现行状态，`t02-g0-g1-replay-fixtures.json` 是合成回放机器输入，两者均不得被误读为当前证据。索引只负责定位，不生成新证据、不改变成熟度或权利状态 [data:visual/assets/review-handoff-index.json]。
+**包内导航与评审交接索引。** 本包全部 156 个路径的评审定位统一见 `visual/assets/review-handoff-index.json`：七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、全部 21 个章节阅读单元、D01—D08/H01—H07 交接、[八问冷读答案地图](visual/index.html#cold-read-answer-map)）与逐文件登记（现行／历史快照／机器输入／冻结／临时五类状态、语言对、轮次来源与权利回链）。`round15-baseline.json` 是历史快照而非现行状态，`t02-g0-g1-replay-fixtures.json` 是合成回放机器输入，两者均不得被误读为当前证据。索引只负责定位，不生成新证据、不改变成熟度或权利状态 [data:visual/assets/review-handoff-index.json]。
 
 图 01 只画**概念空间接力**：连续日常轨先贯穿三座换轨场，间歇验证轨只在旁侧出现，两条供给翼输入问题与专业建议，失败侧线只停止验证叠层；外层虚线仅表示临时设计容器。图中南北是阅读顺序，不表示坐标、距离、站点锚点、批准顺序或建设线位；公开背景定位继续留作现场问题，不与设计关系套准成“看似真实”的场地图。既有 OSM 背景核查所记录的 0% 相交和约 412.5 米间距仍是未裁决的背景差异；`PROV-KEY-003` 仍未与大钟寺站、道路、地块或建筑锚定。geometry 因此保持原位，只把重算触发写清 [data:visual/assets/site-grounding-register.json#JZ-SITE-READING-R17] [assumption:A-SITE-READING-020]。
 
@@ -635,13 +635,15 @@ AI 与公共价值指标同样按核验问题拆开：
 
 ## 风险、版权与合规说明
 
+`risk.json` 将既有风险压缩为八个 G0 编辑复核维度，并把每项回链到假设、H01—H07 交接包与 P01—P07 建议专业类型。分数只表示当前复核优先级，不是发生概率、评审评分、批准或成熟度推进；政策、空间、实施与运维处于最高阻断组，重大缺口继续保持 NO-GO [data:risk.json]。
+
 - 边界与规划风险：官方 GIS/CAD、权属、控规、道路红线和工程条件缺失，任何空间结论都只是概念建议；正式资料到位后必须替换、差异比对和全量重算。
 - 空间表达风险：36 个单元和体量原型是设计表达，不是现状调查；不得把表示比例解释为建筑密度或建设规模 [assumption:A-SPATIAL-REPRESENTATION-002]。
 - 公共利益风险：测试可能造成噪声、拥堵、数字排斥或公共空间私有化；日常生活、非 AI 通道、静音无屏、共同测试和申诉暂停构成硬门。
 - AI 与数据风险：偏差、幻觉、隐私泄露、越权自动化和供应商锁定通过最小数据、源端保留、日志、人工责任、复测、到期和退役控制；不得自动执法、诊断或替代正式审批。
 - 安全与韧性风险：机器人、车辆和设备测试只在授权范围；实体急停、现场安全员、离线人工和 L0/L1/L2 降级必须可用。能源和恢复指标未实测时保持未知。
 - 文化与历史风险：史实、人物、文物和工程资料需由官方/馆藏/清权来源复核；AI 生成内容显式与元数据标识，争议内容可纠错、下架和追溯 [assumption:A-CULTURE-CONTENT-006]。
-- 版权与品牌风险：本次提交的最终文件集合为 manifest/package 中 155 个路径（其中 154 个为非 manifest 内容文件）；权利台账含 155 条逐文件资产记录，即 155 条逐文件权利记录；它们与 50 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
+- 版权与品牌风险：本次提交的最终文件集合为 manifest/package 中 156 个路径（其中 155 个为非 manifest 内容文件）；权利台账含 156 条逐文件资产记录，即 156 条逐文件权利记录；它们与 50 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
 - 外部协同风险：未来科学城、怀柔科学城、经开区、其他创新街区和京津冀只作为可选复测角色，未经书面确认不得写成合作方、投资方或落地承诺 [assumption:A-EXTERNAL-COLLAB-005]。
 - 运营与公平风险：活动热度不能替代居民满意、可达、公平与投诉闭环；贡献荣誉不得用于流量排名、就业筛选或行政评价。
 - 工具与证据风险：机器检查只验证结构、拓扑、引用和一致性，不替代规划、建筑、交通、市政、景观、生态、消防、铁路、数据安全、无障碍、社区与法律专业判断 [depth:risk_missing_data]。

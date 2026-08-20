@@ -4,6 +4,24 @@
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
 
+## Round 50 expert review packet alignment / 第 50 轮专家评审包对齐
+
+第 50 轮只在 PR #3491 合并、merge `362986d3040b98891d8f99b07f25b2dd165cb3fa` 进入 canonical `main@e289e4abc305b64f06add372cdec2fcb2a8a4db7`、同包无开放 PR、工作树洁净后开始。开工前重新完整读取最新 README、Skill、任务书、taskbook、source registry、formal guide、review-packets 与 risk-radar，并在新规则层重跑基线六闸。修复前可复现 RED 是：review packet 的快速判断显示版本／轮次“未声明”，没有使用已成立的海淀公共能力摘要，缺 `risk.json`，23 项假设先于决策路由展开，展示名保留旧工具标签。它们是编辑审查结果，不是评审意见、专家判断、公众反馈或理解度实测。
+
+本轮不增加设计内容，而把同一现有方案压成可判断、可追证、可交接的入口。双语 front matter 声明 `50.0 / Round 50`；摘要先回答“双轨京张”、为何海淀、三处不可互换原型、G0 证据与现实阻断。`risk.json` 以八维 G0 编辑优先级连接 assumptions、H01—H07 和 P01—P07；政策、空间、实施与运维为最高阻断组。分数不是概率、评审评分、批准或成熟度推进。`review-handoff-index.json` 增加专家工件定位、五项快速判断、风险路由和修复前证据，visual 在既有六项导航内复用同一路由。
+
+浏览器矩阵覆盖中英文、1440×900 与 390×844、JavaScript 开／关、键盘跳转、减少动态和打印，共 12 个情形；导航仍为 6 项，页面级横向溢出、外部请求、控制台错误、缺失 alt 和自动播放均为 0。新增结构化文件使当前包成为 156 个 manifest/package 路径、155 个非 manifest 内容路径和 156 条逐文件权利记录；`ASSET-156` 记录 `risk.json`，但独立逐文件清权仍为 0，总体仍为 `not_fully_cleared`。
+
+本轮无新媒体、无新模型调用、无新来源；来源、媒体生成方法与不可证明事项不变。九份 geometry、`metrics.json`、12/8/3/36、三处原型、G0、NO-GO、provisional、现实结果 0、同任务非 AI 路径、故障只停验证叠层、恢复非授权、专业否决与固定 PDF 页数全部冻结。评审包、机器 PASS、PR 或合并均不构成现场、公众反馈、专家接受、批准、G1 或复用许可。
+
+Round 50 began only after PR #3491 merged, merge `362986d3040b98891d8f99b07f25b2dd165cb3fa` entered canonical `main@e289e4abc305b64f06add372cdec2fcb2a8a4db7`, no package PR remained open and the worktree was clean. The latest README, Skill, brief, taskbook, source registry, formal guide, review-packets and risk-radar were reread in full, and the clean baseline was retested against the new rule layer. Reproducible RED was that the review packet quick judgement declared neither version nor iteration, omitted the established Haidian public-capability summary, had no `risk.json`, expanded 23 assumptions before a decision route, and retained a stale tool label in the display name. These are editorial-review findings, not jury comment, expert opinion, public feedback or measured comprehension.
+
+This round adds no design content; it compresses the same proposal into an entry that can be judged, traced and handed over. Bilingual front matter declares `50.0 / Round 50` and first answers Twin-Track Jing-Zhang, why Haidian, the three non-interchangeable prototypes, current G0 evidence and real blockers. `risk.json` links eight G0 editorial priorities to assumptions, H01–H07 and P01–P07; policy, spatial, implementation and operations are the highest blocker group. Scores are not probabilities, review grades, approvals or maturity advancement. `review-handoff-index.json` adds the expert artefact locator, five quick judgements, risk routes and before-fix evidence; visual reuses the same route inside the existing six-item navigation.
+
+The browser matrix covers Chinese and English, 1440×900 and 390×844, JavaScript on/off, keyboard skip, reduced motion and print across 12 cases. Navigation remains six items; page-level overflow, external requests, console errors, missing alt and autoplay are all zero. The added structured file brings the current package to 156 manifest/package paths, 155 non-manifest content paths and 156 file-level rights records. `ASSET-156` records `risk.json`, while completed independent file-level clearance audits remain zero and the overall status remains `not_fully_cleared`.
+
+This round has no new media, model call or source; media generation methods and non-provable limits are unchanged. Nine geometry files, `metrics.json`, 12/8/3/36, three prototypes, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, failure stopping only the proof overlay, non-authorising recovery, professional veto and fixed PDF page counts remain frozen. Review-packet export, machine PASS, PR or merge cannot create field evidence, public feedback, expert acceptance, approval, G1 or a reuse licence.
+
 ## Round 49 Haidian social grounding / 第 49 轮海淀社会落位
 
 第 49 轮在 PR #3407 合并、merge `3fe9b9ddab0d72596d4fc0660d6e1554a22d1ed0` 进入 canonical `main`、同包开放 PR 为 0 且工作树洁净后开始，工作基线为 `main@9e7d39010b74b95190f1ca3325361757db02ae90`。冷读基线确认三个真实缺口：入口在 G0 之前没有回答“为何是海淀”；账户、设备、专业语言、可支配时间和算法评价门槛没有以前台设计问题出现；高校—居民、企业—公共、平台—非用户、专业—日常四类关系没有被压成可见的空间后果。这些结论只来自编辑审查，不是公众反馈、专家意见、实测群体结果或地方绩效。
