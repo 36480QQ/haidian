@@ -72,25 +72,25 @@
     },
     {
       "path": "risk.json",
-      "role": "risk_matrix",
+      "role": "evidence_data",
       "required": false,
       "sha256": "61fbc3a8630ef5a33cd3aecb69a55cebd1d70502aeaf38c8606d453907766d77"
     },
     {
       "path": "spatial.json",
-      "role": "spatial_concept",
+      "role": "evidence_data",
       "required": false,
-      "sha256": "cbdd9f0b616ee9148013da68c2d1986a7134c123d8e35c6d85255737c315cbb0"
+      "sha256": "6a65255491d1a159895deed4f830a7aba230dc5e0f259c28085b86cf699331dc"
     },
     {
       "path": "simulation.json",
-      "role": "simulation",
+      "role": "evidence_data",
       "required": false,
       "sha256": "f66fea9cbeef5e2c64e6aa83f89b970a61e227170d03661f00683a0b641382bb"
     },
     {
       "path": "verify_submission.py",
-      "role": "verifier_script",
+      "role": "verification_script",
       "required": false,
       "sha256": "7d911a762ccff3de0ff45dd548ad7f3d01927991cf85875788e412670ce6c35a"
     },
