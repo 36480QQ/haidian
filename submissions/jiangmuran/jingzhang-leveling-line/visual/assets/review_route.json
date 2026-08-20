@@ -65,15 +65,15 @@
    "path": "visual/assets/errata.json",
    "what_zh": "勘误登记",
    "what_en": "The errata register",
-   "bytes": 515934,
+   "bytes": 501773,
    "unit": "entries",
-   "count": 276
+   "count": 269
   },
   {
    "path": "visual/assets/gate_mutation.json",
    "what_zh": "闸门变异测试台",
    "what_en": "The gate mutation harness",
-   "bytes": 253061,
+   "bytes": 253143,
    "unit": "mutations",
    "count": 179
   },
@@ -120,10 +120,10 @@
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.73,
+  "seconds_to_run_every_verifier": 0.74,
   "files_to_read": 9,
-  "bytes_to_read": 1369489,
-  "units_to_read": 2028
+  "bytes_to_read": 1355410,
+  "units_to_read": 2021
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",

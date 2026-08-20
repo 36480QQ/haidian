@@ -891,7 +891,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "One re-survey cadence per scope level, derived, and the same on every surface.",
-      "message": "scope_cadence_qa.py — scope cadence: 6 published cell(s) across proposal.md and the offline page agree with the cadence derived from each scope's own orders — 统筹研究范围 年 / 总体设计范围 年 / 重点区域范围 年. Scope: this does not judge the order cadences themselves, which the cost model rests on"
+      "message": "scope_cadence_qa.py — scope cadence: 6 published cell(s) across proposal.md and the offline page agree with the cadence derived from each scope's own orders — 统筹研究范围 年 / 总体设计范围 半年 / 重点区域范围 年. Scope: this does not judge the order cadences themselves, which the cost model rests on"
     },
     {
       "check_id": "PKG_SCORING_VOCABULARY_QA",
@@ -1412,7 +1412,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31396568,
+      "total_bytes": 31398890,
       "maintainer_bypass": false
     },
     "stderr": ""
