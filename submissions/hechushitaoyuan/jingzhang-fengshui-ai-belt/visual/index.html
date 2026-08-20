@@ -82,6 +82,9 @@ footer{text-align:center;color:#9aa3ad;font-size:.78rem;margin-top:34px}
 <section>
 <h2>核心指标（可由几何复算）</h2>
 <div class="cards">
+<div class="card"><div class="v" data-metric="scenario_card_count" data-value="13">13 张</div><div class="l">场景卡 / Scenario cards</div><div class="f">count(cards)</div></div>
+<div class="card"><div class="v" data-metric="testbed_count" data-value="3">3 个 ★</div><div class="l">产业测试验证 / Testbeds</div><div class="f">count(★ cards)</div></div>
+<div class="card"><div class="v" data-metric="role_count" data-value="8">8 类</div><div class="l">岗位规格（待任命）/ Roles</div><div class="f">count(role-spec)</div></div>
 <div class="card"><div class="v" data-metric="site_area_sqm" data-value="11412825.386">1,141 公顷</div><div class="l">场地面积 / Site area</div><div class="f">polygon_area(site_boundary)</div></div>
 <div class="card"><div class="v" data-metric="green_ratio" data-value="0.293695">29.4%</div><div class="l">绿地率 / Green ratio</div><div class="f">green_space/site</div></div>
 <div class="card"><div class="v" data-metric="public_space_ratio" data-value="0.204309">20.4%</div><div class="l">公共空间率 / Public-space ratio</div><div class="f">public_space/site</div></div>
@@ -90,13 +93,38 @@ footer{text-align:center;color:#9aa3ad;font-size:.78rem;margin-top:34px}
 <div class="card"><div class="v">6.4%</div><div class="l">基底密度(示意) / Footprint density</div><div class="f">buildings/site</div></div>
 </div>
 <div class="note">三层范围：统筹研究 43.6 km² · 总体设计 11.4 km²（临时约束） · 重点范围 368.4 ha</div>
-<div class="note">AI 场景：十二张场景卡 · 九点气眼（3 地标 + 6 场景节点）</div>
-<div class="note">更新项目与分期：三期（朱雀启明堂 → 气聚中原 → 玄武收官）+ 编号更新项目清单</div>
+<div class="note">AI 场景：十三张场景卡（★ 产业测试验证场景 ×3）· 气数协议 v0.1（7 规则 · 156 项离线检查全通过）· 九点气眼（3 地标 + 6 场景节点）</div>
+<div class="note">更新项目与分期：三期条件门制（朱雀启明堂 → 气聚中原 → 玄武收官，各设进入门/验收门/回滚状态）+ 六项行动包 + 八类岗位规格（role-spec.json，全部待任命）</div>
 </section>
 <section>
 <h2>任务覆盖（23/23）</h2>
 <div class="tags"><span class="tag">✓ 构建世界级AI创新生态体系</span><span class="tag">✓ 建设适配AI新质生产力的新型城市形态</span><span class="tag">✓ 打造全球AI创新人才向往的高品质城区</span><span class="tag">✓ 统筹研究范围</span><span class="tag">✓ 总体设计范围</span><span class="tag">✓ 重点区域范围</span><span class="tag">✓ 统筹：AI创新生态体系</span><span class="tag">✓ 统筹：未来城市形态</span><span class="tag">✓ 总体：产业目标与功能布局</span><span class="tag">✓ 总体：城市更新总体框架</span><span class="tag">✓ 总体：交通轨道市政配套</span><span class="tag">✓ 总体：京张遗址公园活力带</span><span class="tag">✓ 总体：城市风貌</span><span class="tag">✓ 重点区域必选项</span><span class="tag">✓ 众智园AI自主创新加速区</span><span class="tag">✓ 北京AI原点社区</span><span class="tag">✓ 大钟寺AI产业聚集区</span><span class="tag">✓ agent.1 总体概念与命名</span><span class="tag">✓ agent.2 创新生态与案例</span><span class="tag">✓ agent.3 场景与画像</span><span class="tag">✓ agent.4 公共空间与地标</span><span class="tag">✓ agent.5 文化融合叙事</span><span class="tag">✓ agent.6 活动体系与运营</span></div>
 </section>
+
+<section>
+<h2>多媒体 · 导览与概念表达</h2>
+<p class="note">以下媒体均为本地确定性生成（详见 sources.json 条目 SRC-MEDIA-RENDER-V11），属导览与概念氛围层，不构成空间、面积或指标依据；不自动播放，全部配字幕与文字稿。</p>
+<figure style="margin:10px 0 14px">
+  <figcaption style="font-size:13px;font-weight:600;margin-bottom:6px">概念视频 · 「气脉生长」（24 秒，无声，中英字幕）</figcaption>
+  <video controls preload="metadata" poster="../assets/media/experience-poster.png" style="max-width:100%;width:640px;border:1px solid #a0855b;border-radius:6px">
+    <source src="../assets/media/experience.mp4" type="video/mp4">
+    <track default kind="captions" srclang="zh" label="中文" src="../assets/media/experience.vtt">
+    <track kind="subtitles" srclang="en" label="English" src="../assets/media/experience.en.vtt">
+    当前浏览器不支持 HTML 视频；分镜与文字稿见 assets/media/experience.md。
+  </video>
+</figure>
+<figure style="margin:10px 0">
+  <figcaption style="font-size:13px;font-weight:600;margin-bottom:6px">音频导览 · 中文（约 2 分钟）</figcaption>
+  <audio controls preload="metadata" src="../assets/media/audio-guide-zh.mp3" style="width:100%;max-width:520px"></audio>
+  <p class="note">文字稿与字幕：assets/media/audio-guide-zh.md / .vtt（逐句一致，时间轴为逐句实测）</p>
+</figure>
+<figure style="margin:10px 0">
+  <figcaption style="font-size:13px;font-weight:600;margin-bottom:6px">Audio guide · English (~2 min)</figcaption>
+  <audio controls preload="metadata" src="../assets/media/audio-guide-en.mp3" style="width:100%;max-width:520px"></audio>
+  <p class="note">Transcript & captions: assets/media/audio-guide-en.md / .vtt</p>
+</figure>
+</section>
+
 <section>
 <h2>自检状态</h2>
 <p>四门自检（格式/空间/可视化/专业证据）结果以 self_check.json 实时记录为准；本页数值与 metrics.json 一致。</p>

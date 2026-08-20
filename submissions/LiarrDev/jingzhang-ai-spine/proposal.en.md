@@ -7,7 +7,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the Jingzhang Railway Heritage Park as an intelligent spine, linking three innovation vertebrae — Zhongzhiyuan AI Acceleration Area, Beijing AI Origin Community, and Dazhongsi AI Industry Cluster — to construct an AI-native urban form of 'One Spine, Three Vertebrae, Two Wings Extended, Blue-Green Slow-Mobility Composite Loop,' responding to the fusion narrative of the century-old Jingzhang culture, the Zhongguancun innovation culture, and the new AI culture."
-tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem", "civic-agent-governance"]
+tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v1.0"
 ---
@@ -218,7 +218,7 @@ The transport proposal responds to the announcement's requirements for rail stat
 
 **Road micro-circulation**: Break through the east-west transport connections on both sides of the heritage park that are severed by the railway, using the surface space released by the railway's undergrounding to add east-west slow-mobility passages. The branch road system in key areas is organized according to the principle of small blocks and dense networks, promoting walkability and commercial vitality.
 
-**Slow-mobility system**: With the heritage park as the north-south main axis and the Qing River and Xiaoyue River as transverse corridors, a slow-mobility loop resembling the Chinese character 日 (a rectangular loop with a central crossbar) is formed. Identify and repair slow-mobility breakpoints across ring roads, rivers, and railways, establishing a continuous walking and cycling network [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking].
+**Slow-mobility system**: With the heritage park as the north-south main axis and the Qing River and Xiaoyue River as transverse corridors, an I-shaped slow-mobility loop is formed. Identify and repair slow-mobility breakpoints across ring roads, rivers, and railways, establishing a continuous walking and cycling network [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking].
 
 **New infrastructure**: Deploy edge-side compute nodes, distributed energy facilities, and AI sensing infrastructure in key areas, integrated with public service facilities and public space. Edge-side compute nodes serve as the "last mile" infrastructure for AI scenarios, providing local computing capability for low-latency applications [data:geometry/constraints.geojson#CONSTRAINTS].
 

@@ -75,6 +75,12 @@
       "source_type": "background_only",
       "usage": "High Line、King's Cross、清溪川、Kendall Square、Stanford Research Park、深圳南山、碧山-宏茂桥公园、京都历史街区等公开案例的常识级整理。",
       "limitations": "基于公开报道与普遍知识整理；关键事实需专业团队复核后方可作为正式论证依据。"
+    },
+    {
+      "id": "SRC-MEDIA-RENDER-V11",
+      "source_type": "background_only",
+      "usage": "v1.1 多媒体资产的确定性生成方法登记：画廊封面与图件由 matplotlib 从投稿包 GeoJSON（绿脊中心线、分期、重点区）确定性渲染；中英音频导览由 Windows 内置语音合成（System.Speech，Huihui/Zira 音色）逐句生成并以 ffmpeg 转 mp3；概念视频由 matplotlib 逐帧渲染（底图一次渲染自包内几何）后 ffmpeg H.264 本地编码。",
+      "limitations": "全部媒体为概念氛围/导览内容，非空间依据，不构成面积、边界或指标证据；音频为合成语音、非真人录音；生成过程零网络请求、零第三方素材、零生成式图像模型；正式空间结论以 GeoJSON/metrics.json 为准。"
     }
   ]
 }
