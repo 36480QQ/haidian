@@ -4117,5 +4117,109 @@
       "rights_status": "not_fully_cleared",
       "independent_file_level_clearance_audits": 0
     }
+  },
+  "civic_ground_detail_atlas_r52": {
+    "scope": "Editorial civic-ground detail and publication audit only; no new direction, fact, geometry, metric, media, page, governance contract or maturity narrative.",
+    "pre_repair_red": [
+      {
+        "figure": "mobility-bluegreen",
+        "finding": "A single abstract wave did not jointly show six cross-links, comfort sections, staffed service and adjacent optional proof.",
+        "finding_type": "editorial_spatial_audit_only"
+      },
+      {
+        "figure": "spatial-atlas",
+        "finding": "The relation overview did not close the overall-to-prototype-to-human-use chain.",
+        "finding_type": "editorial_spatial_audit_only"
+      },
+      {
+        "figure": "climate-resilience-corridor",
+        "finding": "Contract cards dominated the seasonal spatial section.",
+        "finding_type": "editorial_spatial_audit_only"
+      },
+      {
+        "figure": "reversible-components",
+        "finding": "Three repeated cards did not spatially distinguish stop, removal and restoration objects.",
+        "finding_type": "editorial_spatial_audit_only"
+      }
+    ],
+    "repair_decisions": {
+      "mobility-bluegreen": "REBUILD",
+      "spatial-atlas": "REBUILD",
+      "climate-resilience-corridor": "REBUILD",
+      "reversible-components": "REBUILD",
+      "existing_media": "LOCK",
+      "geometry_and_metrics": "LOCK"
+    },
+    "cold_read_answers": {
+      "thirty_seconds": "One continuous ordinary civic ground, six conceptual cross-links and three non-interchangeable prototypes.",
+      "three_minutes": "Ordinary use remains complete; optional proof sits beside it, failure stops and isolates proof only, and recovery restores ordinary service before any separate restart gate.",
+      "fifteen_minutes": "Every spatial judgement backlinks to proposal contracts, structured evidence, rights limits and professional handoff while unknown, G0, provisional and NO-GO boundaries remain visible."
+    },
+    "drawing_chain": {
+      "overall": "mobility-bluegreen",
+      "index": "spatial-atlas",
+      "plans": "key-areas",
+      "sections": "key-area-sections",
+      "seasonal_ordinary_baseline": "climate-resilience-corridor",
+      "stop_removal_restoration": "reversible-components"
+    },
+    "changed_figure_paths": [
+      "assets/figures/climate-resilience-corridor.en.png",
+      "assets/figures/climate-resilience-corridor.en.svg",
+      "assets/figures/climate-resilience-corridor.png",
+      "assets/figures/climate-resilience-corridor.svg",
+      "assets/figures/mobility-bluegreen.en.png",
+      "assets/figures/mobility-bluegreen.en.svg",
+      "assets/figures/mobility-bluegreen.png",
+      "assets/figures/mobility-bluegreen.svg",
+      "assets/figures/reversible-components.en.png",
+      "assets/figures/reversible-components.en.svg",
+      "assets/figures/reversible-components.png",
+      "assets/figures/reversible-components.svg",
+      "assets/figures/spatial-atlas.en.png",
+      "assets/figures/spatial-atlas.en.svg",
+      "assets/figures/spatial-atlas.png",
+      "assets/figures/spatial-atlas.svg"
+    ],
+    "publication_sync": {
+      "page_counts": {
+        "a3_zh": 14,
+        "a3_en": 14,
+        "a0_zh": 8,
+        "a0_en": 8
+      },
+      "two_fresh_processes_byte_identical": true,
+      "sha256": {
+        "a3_zh": "524f0b82c0db30009a747c00166fb0967d5a26a60f70b77dad93d00102189696",
+        "a3_en": "631ea5b3cf480efea9dbce7d611e01f162441035f43e2e37a373456d4cf913cd",
+        "a0_zh": "7928dde0ee64a50b655d269071ad223de0082f1db983930245e1234de214e319",
+        "a0_en": "0df2a53d5ceadf0c7d1eebe7192d0290e422bb7936ecfb3b2c385f752d6cf150"
+      },
+      "full_page_qa": 44,
+      "qa_modes": [
+        "colour",
+        "grayscale",
+        "detail"
+      ],
+      "minimum_live_text_pt": {
+        "a3": 8.5,
+        "a0": 24.06
+      },
+      "failure_count": 0
+    },
+    "truth_boundary": {
+      "new_package_path": false,
+      "new_source": false,
+      "new_media": false,
+      "new_media_generation_model_call": false,
+      "new_fact_or_claim": false,
+      "field_observation": false,
+      "public_feedback": false,
+      "expert_opinion": false,
+      "official_geometry": false,
+      "planning_approval": false,
+      "rights_status": "not_fully_cleared",
+      "independent_file_level_clearance_audits": 0
+    }
   }
 }
