@@ -64,6 +64,30 @@
       "why_en": "Both editions are assembled by the same builders - 37 marker pairs write once into each file - and **nothing had ever compared what one edition has against what the other has**. parity_qa cannot see this class: it measures a words-per-Chinese-character floor per section and its own docstring calls it a floor detector, so a 0.46 KB table vanishing from a 262 KB file moves that ratio by nothing. The English edition sits exactly on the 262,144-byte intake cap, so the table cannot simply be added, and **three separate sweeps for reclaimable English bytes found only load-bearing content**. The asymmetry is therefore written down and bounded: the list holds one entry and a second fails the build."
     },
     {
+      "id": "M184",
+      "gate": "observation_reach_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把那条谁也没用的观测上的到达标记和理由去掉——**这正是它一直以来的状态**。海淀公报的常住人口被抄进来、换算记下、随 `sources.json` 整份送到评审面前，而两版正文的任何一句都没有用过它。闸门点名报出没有布尔标记的那一条，构建停。",
+      "what_en": "Strip the reach flag and its reason from the one observation nothing uses - **the state it was already in**. The Haidian bulletin's resident population was transcribed, its conversion recorded, and the file carried whole to the reviewer, while no sentence of either edition ever used it. The gate names the observation carrying no boolean and the build stops.",
+      "why_zh": "本包每一个登记表都对自己的使用闭合：来源 30/30 被正文引到，深度矩阵 15/15，指标有 `metric_citation_qa` 做值连接。**`observations` 是唯一没有到达检查的那一个**，而它恰恰是评审整份读到的文件里最像证据的部分——三个数支着论证，第四个挨着它们排在一起，看上去也支着。这是本册记过的那个形状：规则在，只是从没被指到这里。",
+      "why_en": "Every registry in this package is closed against its own use: 30 of 30 sources reached from the body, 15 of 15 depth items, a value join for the metrics. **`observations` was the only one with no reachability check**, and it is the most evidence-like part of a file the reviewer reads whole - three numbers carrying the argument and a fourth sitting in the same list, reading as though it does too. This is the shape recorded elsewhere in this register: the rule existed and had simply never been pointed here."
+    },
+    {
+      "id": "M185",
+      "gate": "observation_reach_qa.py",
+      "target": "sources.json",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把那条观测标成正文引用过——理由句原样留着，只有标记说了谎。闸门不认标记，它去两版正文里找**同一行同时带着这条记录的 `[source:]` 标签和这个数的印出写法**；找不到就点名，构建停。标记只要没有两边都被检查，它就会在数字后来被引用或被删掉时悄悄过期。",
+      "what_en": "Mark that observation as cited while leaving its stated reason untouched, so the flag alone lies. The gate does not take the flag's word: it looks in both editions for a line carrying **this record's own `[source:]` tag beside a printed form of the number**, names the observation when there is none, and the build stops. A flag checked in only one direction goes stale the moment the number is later cited or dropped.",
+      "why_zh": "第一个方向抓的是没人回答，这个方向抓的是答错。**「引用过」比「没引用」更贵**：一个没被引用的数至多是多余，而一个自称被引用的数是在替评审做他本可以自己核的那次检查。",
+      "why_en": "The first direction catches an unanswered question; this one catches a wrong answer. **Claiming reach costs more than lacking it**: an uncited number is at worst surplus, while one that says it is cited performs, on the reviewer's behalf, the check the reviewer could otherwise have made."
+    },
+    {
       "id": "M174",
       "gate": "source_vocabulary_qa.py",
       "target": "sources.json",
@@ -2214,7 +2238,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 180,
+  "caught": 182,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2280,6 +2304,7 @@
     "metric_subject_qa.py",
     "naming_qa.py",
     "number_break_qa.py",
+    "observation_reach_qa.py",
     "official_area_qa.py",
     "organiser_metric_join_qa.py",
     "organiser_review_qa.py",
@@ -2381,6 +2406,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 125 道闸门，其中 124 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 125 gates, 124 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 126 道闸门，其中 125 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 126 gates, 125 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }

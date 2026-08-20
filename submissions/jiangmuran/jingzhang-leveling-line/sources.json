@@ -877,21 +877,26 @@
           "value": 123,
           "unit": "count",
           "scope": "北京市海淀区，截至 2025 年末累计",
-          "not_spatially_allocable": true
+          "not_spatially_allocable": true,
+          "cited_in_argument": true
         },
         {
           "id": "haidian_share_of_beijing_filed_models_2025",
           "value": 0.6,
           "unit": "ratio",
           "scope": "海淀占北京全市，区级公报四舍五入值",
-          "not_spatially_allocable": true
+          "not_spatially_allocable": true,
+          "cited_in_argument": true
         },
         {
           "id": "haidian_resident_population_2025",
           "value": 3111000,
           "unit": "person",
           "scope": "北京市海淀区，2025 年末常住人口",
-          "not_spatially_allocable": true
+          "not_spatially_allocable": true,
+          "cited_in_argument": false,
+          "not_cited_reason_zh": "本条随记录发布，但**不进入本方案的任何论证**。正文引这份公报只用备案大模型的两个数；常住人口是同一段里读到的、**读了而没有用**的那一个。发布它而不是删掉，是为了让评审看见本包从这一页读走了什么、以及哪些数没有被用来支撑任何结论——只留下被用上的那部分，读者就无从判断这一页是被完整读过还是被挑着读的。",
+          "not_cited_reason_en": "Published with the record but entering no part of this proposal's argument. The body cites this bulletin only for the two filed-model figures; the resident population is the number read from the same passage and then not used. It is published rather than deleted so that a reviewer can see what was taken from the page and which figures support no conclusion here: keeping only the figures that were used would leave no way to tell a page read whole from a page read selectively."
         }
       ],
       "transformations": [
@@ -942,7 +947,8 @@
           "value": 209,
           "unit": "count",
           "scope": "北京市，截至 2025 年末累计",
-          "not_spatially_allocable": true
+          "not_spatially_allocable": true,
+          "cited_in_argument": true
         }
       ],
       "transformations_absent_reason_zh": "该记录只有一个观测，其印出值 209 与存储值相同——**没有发生任何换算**。写一条「读作整数」的记录，只是说明这个字段被填过，而本包在别处正是拒绝这种填充（`sources_qa` 对 `does_not_support` 就是这么拦的）。",
