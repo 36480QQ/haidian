@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "418c9b5f0db9fe456cdbd17d4d29fce620afbae1b6d5629cb3fccdb829b3778c"
+      "sha256": "0a9b725b3055f9fdcdf4c6c1c33595bea95210e363c7edea530a0469a77abf08"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "68b5e146fef5645100468e0bad4728490c28e9c0e2fe8ddbfde587948fbaa8fc"
+      "sha256": "3d47574933486f0c759c824192142bdb2de46669076ce73ef60466e5ed9bfa20"
     },
     {
       "path": "compliance_matrix.json",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "096a228e35248effb602f597ad41f20368faadc093922149eb5dcf93f4a701cf"
+      "sha256": "5030e8009fb71d49a56cd5f415c49049744562678bd4018563f44e68cb08bd9f"
     },
     {
       "path": "report/proposal.en.html",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "329ea9337e83ddb917d35bf1954f72aa59e0fa9848a3fc73e50d4745263d1ec4"
+      "sha256": "dbdbe176c810f337ea058815164fe90a1dd69b26fcd24c574d5318e9cadc767b"
     },
     {
       "path": "assets/media/cover.webp",
@@ -776,7 +776,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "2823ef8e6f2431727d9a24c5930e58376f0e077ddfcfca3fc34a27913de09700"
+      "sha256": "aa474c6f28f9b2197fd0987ea88ea1f66e9a6f61e647ecf3d39f85148df5ad65"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
