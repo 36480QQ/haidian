@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.79,
+ "overall_ratio": 0.792,
  "floor": 0.75,
  "sections": [
   {
@@ -19,9 +19,9 @@
   },
   {
    "section": "Design Basis and Source List",
-   "zh_chars": 1067,
+   "zh_chars": 1038,
    "en_words": 671,
-   "ratio": 0.802,
+   "ratio": 0.825,
    "pass": true
   },
   {
@@ -54,16 +54,16 @@
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 11204,
+   "zh_chars": 11197,
    "en_words": 7026,
    "ratio": 0.8,
    "pass": true
   },
   {
    "section": "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
-   "zh_chars": 2507,
+   "zh_chars": 2486,
    "en_words": 1587,
-   "ratio": 0.807,
+   "ratio": 0.814,
    "pass": true
   },
   {
@@ -75,23 +75,23 @@
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 5456,
+   "zh_chars": 5449,
    "en_words": 3277,
-   "ratio": 0.766,
+   "ratio": 0.767,
    "pass": true
   },
   {
    "section": "Renewal Projects, Implementation Policy, and Phasing",
-   "zh_chars": 6068,
+   "zh_chars": 6044,
    "en_words": 3613,
-   "ratio": 0.759,
+   "ratio": 0.762,
    "pass": true
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
-   "zh_chars": 5292,
+   "zh_chars": 5289,
    "en_words": 3158,
-   "ratio": 0.761,
+   "ratio": 0.762,
    "pass": true
   },
   {
@@ -103,9 +103,9 @@
   },
   {
    "section": "Risk, Copyright, and Compliance",
-   "zh_chars": 2734,
+   "zh_chars": 2722,
    "en_words": 1762,
-   "ratio": 0.822,
+   "ratio": 0.826,
    "pass": true
   },
   {

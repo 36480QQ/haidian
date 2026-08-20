@@ -1,7 +1,7 @@
 {
  "schema_version": "role-spec-1",
  "generated_by": "analysis/build_roles.py",
- "status_zh": "**本文件是岗位规格，不是任命。** 本方案不指名任何单位或个人，全部岗位的 assignment_status 均为 unassigned；缺岗时禁止什么，写在每一条的 when_unstaffed_zh 里。",
+ "status_zh": "**本文件是岗位规格，不是任命 [depth:phasing_implementation]。** 本方案不指名任何单位或个人，全部岗位的 assignment_status 均为 unassigned；缺岗时禁止什么，写在每一条的 when_unstaffed_zh 里。",
  "status_en": "This file is a specification of posts, not an appointment. This proposal names no organisation and no person, every post is unassigned, and what is prohibited while a post is empty is stated on each entry.",
  "borrowed_from_zh": "做法公开借鉴自 Sonike/jingzhang-handover-line 的 role-spec.json：岗位的职责边界与缺岗禁令。本包的角色一直写在正文表格里，从来没有写成可核对的岗位（E217）。",
  "roles": [
