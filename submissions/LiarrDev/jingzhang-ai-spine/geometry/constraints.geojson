@@ -37,7 +37,7 @@
       "id": "CONSTRAINT-002",
       "properties": {
         "id": "CONSTRAINT-002",
-        "layer": "RAIL_CORRIDOR_BUFFER",
+        "layer": "EXISTING_RAIL",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
@@ -67,7 +67,7 @@
       "id": "CONSTRAINT-003",
       "properties": {
         "id": "CONSTRAINT-003",
-        "layer": "TOD_INFLUENCE_AREA",
+        "layer": "REGULATORY_CONTROL",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",

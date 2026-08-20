@@ -35,7 +35,7 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "road_class": "slow_mobility_spine",
+        "road_class": "pedestrian",
         "name_zh": "智脊南北慢行主轴",
         "name_en": "AI Spine North-South Slow-Mobility Axis"
       },
@@ -60,7 +60,7 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "road_class": "station_connection",
+        "road_class": "transit_connection",
         "name_zh": "轨道站点接驳路径",
         "name_en": "Transit Station Connection Path"
       },
@@ -84,7 +84,7 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "road_class": "east_west_connector",
+        "road_class": "secondary",
         "name_zh": "东西向连接路径",
         "name_en": "East-West Connector Path"
       },
@@ -108,7 +108,7 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "road_class": "greenway_loop",
+        "road_class": "cycleway",
         "name_zh": "蓝绿环线",
         "name_en": "Blue-Green Loop Path"
       },

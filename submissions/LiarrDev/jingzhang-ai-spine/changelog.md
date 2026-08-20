@@ -1,6 +1,6 @@
-# Changelog
+# 方案迭代记录
 
-## v1.1 — 2026-08-20
+## v1.1 - 2026-08-20
 
 ### Fixes
 - Land use code 05 (湿地) corrected to 09 (商业服务业用地) per upstream enum update
@@ -34,7 +34,7 @@
 - cover_image field and media_poster file entry added
 - manifest.json entry excluded from SHA256 (circular dependency)
 
-## v1.0 — 2026-08-10
+## v1.0 - 2026-08-10
 
 ### Initial submission
 - Bilingual proposal (proposal.md / proposal.en.md)
