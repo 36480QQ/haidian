@@ -8,7 +8,7 @@
    "what_zh": "重算 metrics.json 中全部 metric_class 1 的指标",
    "what_en": "Recompute every metric_class 1 figure in metrics.json",
    "exit_code": 0,
-   "seconds": 0.39,
+   "seconds": 0.41,
    "first_line": "Independent recomputation of class-1 metrics"
   },
   {
@@ -24,7 +24,7 @@
    "what_zh": "解析十二张场景卡的水准点、空间锚点与退出条件",
    "what_en": "Resolve every scenario card's benchmark, spatial anchor and exit condition",
    "exit_code": 0,
-   "seconds": 0.02,
+   "seconds": 0.03,
    "first_line": "check_cards.js: 12 cards, every benchmark and anchor resolves, every exit quantity is defined."
   },
   {
@@ -40,7 +40,7 @@
    "what_zh": "S08 桌面推演，含拒绝分支",
    "what_en": "The S08 tabletop run, refusal branches included",
    "exit_code": 0,
-   "seconds": 0.23,
+   "seconds": 0.27,
    "first_line": "S08 closure-mechanism tabletop"
   }
  ],
@@ -49,7 +49,7 @@
    "path": "visual/assets/census.json",
    "what_zh": "自采语料普查原始数据",
    "what_en": "The raw corpus census",
-   "bytes": 491222,
+   "bytes": 490977,
    "unit": "records",
    "count": 924
   },
@@ -57,7 +57,7 @@
    "path": "visual/assets/field_map.json",
    "what_zh": "普查汇总",
    "what_en": "The census summary",
-   "bytes": 11643,
+   "bytes": 11644,
    "unit": "top-level keys",
    "count": 19
   },
@@ -73,9 +73,9 @@
    "path": "visual/assets/gate_mutation.json",
    "what_zh": "闸门变异测试台",
    "what_en": "The gate mutation harness",
-   "bytes": 244810,
+   "bytes": 246289,
    "unit": "mutations",
-   "count": 174
+   "count": 175
   },
   {
    "path": "visual/assets/naming.json",
@@ -120,10 +120,10 @@
  ],
  "totals": {
   "commands": 5,
-  "seconds_to_run_every_verifier": 0.7,
+  "seconds_to_run_every_verifier": 0.76,
   "files_to_read": 9,
-  "bytes_to_read": 1348410,
-  "units_to_read": 2013
+  "bytes_to_read": 1349645,
+  "units_to_read": 2014
  },
  "limits_zh": [
   "计时为单台机器单次运行的墙钟时间，界定的是**工作量**而不是难度；换一台机器数值会变，旁边的计数不会。",

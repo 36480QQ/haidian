@@ -83,7 +83,7 @@ At no point in that day does she need to understand the words "closure error". S
 
 <!-- POSITION:BEGIN -->
 
-**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 924 merged proposals at the most recent measurement, 629 declare the governance track, and evidence-chain language appears in 21.5% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest: `robotics-autonomous-mobility` is the **thinnest of the eight** by label (46 of 924, 5.0%), with `youth-friendly-public-space` next at 88. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
+**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 924 merged proposals at the most recent measurement, 629 declare the governance track, and evidence-chain language appears in 21.6% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest: `robotics-autonomous-mobility` is the **thinnest of the eight** by label (46 of 924, 5.0%), with `youth-friendly-public-space` next at 88. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
 
 <!-- POSITION:END -->
 
@@ -95,7 +95,7 @@ Mandatory professional standards are read from the local reference snapshots rat
 
 <!-- CENSUSRUNS:BEGIN -->
 
-**Two datasets were collected independently for this proposal, and both are delivered with it.** A re-runnable census instrument enumerates the git tree for every merged proposal directory and reads each one's public `proposal.md` front matter and `agent.json` [source:FIELD-CENSUS-2026-08]. Its most recent run (2026-08-19) covered **924** proposals, 924/924 fetched, zero failures. **The instrument has now run 18 times and every reading ships** (`visual/assets/reading_log.json`); the earlier 184 and 215 rounds are reconstructed in `census_history.json`.
+**Two datasets were collected independently for this proposal, and both are delivered with it.** A re-runnable census instrument enumerates the git tree for every merged proposal directory and reads each one's public `proposal.md` front matter and `agent.json` [source:FIELD-CENSUS-2026-08]. Its most recent run (2026-08-20) covered **924** proposals, 924/924 fetched, zero failures. **The instrument has now run 18 times and every reading ships** (`visual/assets/reading_log.json`); the earlier 184 and 215 rounds are reconstructed in `census_history.json`.
 
 <!-- CENSUSRUNS:END --> A second instrument cross-checks the provisional boundary against OpenStreetMap's surveyed geometry of the Jing-Zhang Railway Heritage Park [source:OSM-REFERENCE-2026-08].
 
@@ -700,7 +700,7 @@ This package had presented the equivalent non-AI path, the stop-on-detection rul
 | Appeal must carry a **numeric time limit** or it is unenforceable | Same Measures, **Article 15**: establish complaint and reporting mechanisms with a convenient entry, and **publish the handling process and the feedback time limit** | From this proposal's argument to **compliance with an existing requirement** |
 | Persona P4's **non-smartphone path** is non-waivable | Implementation Plan on Resolving Older People's Difficulties with Smart Technology (Guobanfa [2020] No. 45): keep traditional service methods running in parallel with smart innovation, retain the methods older people know across daily-life settings, and it names travel, medical care, consumption, culture and administrative affairs as the high-frequency cases [source:ELDERLY-SMART-TECH-PLAN-2020-45] | From a persona constraint to a **policy basis with a scenario list to check against** |
 
-**The third row has rewritten one of this proposal's findings twice.** The original hand-read eighteen proposals in the two tracks: nearly all say decisions can be appealed, exactly one gives a numeric time limit, and the deadline was presented here as this package's increment. Both halves are corrected. **First**, Article 15 has required publishing a feedback time limit since 2023, so it was never this proposal's invention. **Second**, a re-runnable scan over all 40 (`visual/assets/track_scan.json`) returns **six** hits, **five** excluding this proposal—so "exactly one" was wrong too. The real finding is not that this proposal thought of a deadline. It is that —
+**The third row has rewritten one of this proposal's findings twice.** The original hand-read eighteen proposals in the two tracks: nearly all say decisions can be appealed, exactly one gives a numeric time limit, and the deadline was presented here as this package's increment. Both halves are corrected. **First**, Article 15 has required publishing a feedback time limit since 2023, so it was never this proposal's invention. **Second**, a re-runnable scan over all 129 (`visual/assets/track_scan.json`) returns **16** hits, **15** excluding this proposal—so "exactly one" was wrong too. The real finding is not that this proposal thought of a deadline. It is that —
 
 > **a regulatory requirement three years in force is almost entirely unimplemented across this field.**
 
@@ -722,27 +722,27 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 924-proposal corpus: scenario-level suspension and exit conditions (550); a non-AI equivalent path (429); an on-site safety officer (367); remote and physical e-stop (192); speed limits (118); event logs (77). The thinnest is at 77, the thickest at 550. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 924-proposal corpus: scenario-level suspension and exit conditions (550); a non-AI equivalent path (430); an on-site safety officer (367); remote and physical e-stop (192); speed limits (117); event logs (77). The thinnest is at 77, the thickest at 550. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
 The increment lies elsewhere: **in the test items that return zero or near-zero hits across the proposals in these two tracks.**
 
-Those counts used to come from hand-reading eighteen proposals, with neither the list nor the method shipped—a number only the author could check, which by this package's own standard is not evidence. It is now a re-runnable script: the two tracks are enumerated from the git tree (**40** merged proposals, this one included), every proposal's full text is run against published keyword patterns, and each probe names the proposals it matched. Results ship as `track_scan.json`.
+Those counts used to come from hand-reading eighteen proposals, with neither the list nor the method shipped—a number only the author could check, which by this package's own standard is not evidence. It is now a re-runnable script: the two tracks are enumerated from the git tree (**129** merged, this one included), every proposal's full text is run against published keyword patterns, and each probe names what it matched. Results ship as `track_scan.json` [metric:track_scan_corpus_size].
 
 <!-- GAPTABLE:BEGIN -->
-| Item | Hits (of 40) | Excluding this proposal |
+| Item | Hits (of 129) | Excluding this proposal |
 |---|---|---|
-| Ice and low-temperature re-survey | 1 | **0 / 39** |
-| Noise as a number | 1 | **0 / 39** |
-| Fleet density ceiling | 1 | **0 / 39** |
-| Jurisdictional seams | 2 | 1 / 39 |
-| Charging and parking siting | 3 | 2 / 39 |
-| Emergency-access yielding | 3 | 2 / 39 |
-| Wheelchair passing as its own item | 3 | 2 / 39 |
-| Control segments | 5 | 4 / 39 |
-| Numeric appeal deadline | 6 | 5 / 39 |
-| Removal bond or insurance | 11 | 10 / 39 |
+| Ice and low-temperature re-survey | 6 | 6 / 128 |
+| Noise as a number | 5 | 5 / 128 |
+| Fleet density ceiling | 2 | 2 / 128 |
+| Jurisdictional seams | 4 | 4 / 128 |
+| Charging and parking siting | 16 | 16 / 128 |
+| Emergency-access yielding | 10 | 10 / 128 |
+| Wheelchair passing as its own item | 13 | 13 / 128 |
+| Control segments | 10 | 10 / 128 |
+| Numeric appeal deadline | 16 | 16 / 128 |
+| Removal bond or insurance | 40 | 40 / 128 |
 <!-- GAPTABLE:END -->
 
 **Three items survived the check, the rest did not.** Ice, noise convention and fleet ceiling are zero across the other 39. But "only one gives an appeal deadline", "only four mention insurance", "wheelchair passing appears nowhere" and "nobody addresses charging siting" understated the field, and all four are corrected above. **The table is generated from `track_scan.json`, not typed**—it used to be, and every time the corpus grew a row's denominator stayed behind. **Keyword patterns miss synonyms, so a count is the number of proposals using these words, not the number that thought about it** —
@@ -763,15 +763,15 @@ Those counts used to come from hand-reading eighteen proposals, with neither the
 1. **Any safety incident suspends the whole network**—not the machine involved, not the segment involved, but every machine of that type on the line, stopped and re-measured. The reason is the same as the general principle: local patching is not permitted.
 2. **Tolerance scales with kinetic energy.** F tightens with the product of mass and speed. To run faster or heavier, an operator must first obtain a stricter closure clearance—not apply for an exemption.
 
-**Incident handling and appeal, with a clock on it.** Across the 40 proposals in these two tracks almost everyone writes that decisions can be appealed; **six give a numeric time limit, four other than this.** A right of appeal with no deadline cannot be enforced: nobody can tell if it was kept. Appeal is therefore written as measurable commitments, and the limits enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.**
+**Incident handling and appeal, with a clock on it.** Across the 129 in these two tracks almost everyone writes that decisions can be appealed; **16 give a numeric time limit, 15 other than this.** A right of appeal with no deadline cannot be enforced: nobody can tell if it was kept. Appeal is therefore written as measurable commitments, and the limits enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.**
 
-**Insurance and a removal bond, so exit can be executed.** Eleven of the 40 mention a bond or insurance, ten excluding this one, always as one word in a list, none designing the risk transfer. Yet this proposal's core rule returns the whole route for re-survey and removes the devices, and without funding that defers into indefinite observation. Admission therefore requires a **removal bond** for removal and site restoration, scaled to device count and area, released on **a full re-survey cycle within tolerance** rather than on entering operation; the claims route for an injured pedestrian is published at admission; and F1 risk transfer must be in place before closure clearance.
+**Insurance and a removal bond, so exit can be executed.** Forty of the 129 mention a bond or insurance, 39 excluding this one, always one word in a list, none designing the risk transfer. Yet this proposal's core rule returns the whole route for re-survey and removes the devices, and without funding that defers into indefinite observation. Admission therefore requires a **removal bond** for removal and site restoration, scaled to device count and area, released on **a full re-survey cycle within tolerance** rather than on entering operation; the claims route for an injured pedestrian is published at admission; and F1 risk transfer must be in place before closure clearance.
 
 **Explicitly not done:** this proposal does not set bond amounts, premiums or settlement standards—those are financial and legal judgements and must follow official requirements. It argues only that **these arrangements must exist and must be bound to the exit trigger.**
 
 ### Jurisdictional seams: where pilots on this belt actually die
 
-Across the 40, jurisdiction, ownership boundaries and park management match in two—one other than this. Yet this is where low-speed device pilots most often fail: a machine leaves the park onto a municipal road, passes a campus frontage, enters a private forecourt—**changing responsible party at every crossing.** Technically it never stopped; in responsibility it changed hands four times.
+Across the 129, jurisdiction, ownership boundaries and park management match in four—three other than this. Yet this is where low-speed device pilots most often fail: a machine leaves the park onto a municipal road, passes a campus frontage, enters a private forecourt—**changing responsible party at every crossing.** Technically it never stopped; in responsibility it changed hands four times.
 
 This proposal writes jurisdiction into the geometry rather than into prose. Every point in `geometry/public_space.geojson` carries `jurisdictions` and `is_seam_point` attributes [data:geometry/public_space.geojson#PUBLIC-001], so the claim is machine-checkable. The measured result is worth stating on its own line:
 
@@ -959,7 +959,7 @@ The rule has real veto power. It means positions inside campuses, behind compoun
 
 ### Device charging, standby, and kerb allocation
 
-Few proposals in these two tracks address where low-speed devices are charged and parked: of the 40, **26** mention charging or parking and only **3**, this one, touch siting. Mentioning it is normal; saying where it goes is not. This gap stalls real pilots: a fleet needs charging, standby and maintenance bays, all taking kerb or ground space where the people are.
+Few proposals in these two tracks address where low-speed devices are charged and parked: of the 129, **88** mention charging or parking and **16** touch siting. Mentioning it is normal; saying where it goes is not. This gap stalls real pilots: a fleet needs charging, standby and maintenance bays, all taking kerb or ground space where the people are.
 
 What this proposal supplies is a **priority order for kerb allocation**, not a set of positions:
 
@@ -1008,7 +1008,7 @@ Device failure at intersections is not a failure to yield; it is **accumulation*
 
 ### Emergency access: a constraint that cannot be traded away
 
-Across the 40, fire lanes, ambulances and emergency access match in three, two other than this. This proposal writes it as a hard constraint rather than a note:
+Across the 129, fire lanes, ambulances and emergency access match in ten, nine other than this. This proposal writes it as a hard constraint rather than a note:
 
 - **No charging point, parking bay or queue storage** may be placed within a fire lane or emergency access route;
 - device behaviour on detecting an approaching emergency vehicle enters the fixed test battery, and its readings enter the closure error;
@@ -1516,7 +1516,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**33 of 924** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**34 of 924** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 
@@ -1844,7 +1844,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.7 s**; 9 files none of which the reviewer receives, 1316 KB, 2,013 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.76 s**; 9 files none of which the reviewer receives, 1318 KB, 2,014 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 
