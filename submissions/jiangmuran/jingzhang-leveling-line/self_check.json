@@ -468,7 +468,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The intake caps, enforced where a mutation can reach them.",
-      "message": "intake_limits_qa.py — intake limits: 61 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 1 bytes to spare. The package totals 29.7 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 61 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 0 bytes to spare. The package totals 29.7 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_INTERNED_RENDER_QA",
@@ -567,7 +567,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A sentence stating a number a shipped record holds must point at that record.",
-      "message": "metric_citation_qa.py — metric citations: 28 sentence(s) joined to metrics.json by value and pointing at it, 12 numeric collision(s) published with the reason each is not a citation, 5 deferred against 1 bytes of English headroom (they cost 123, and this check fails when there is room)"
+      "message": "metric_citation_qa.py — metric citations: 28 sentence(s) joined to metrics.json by value and pointing at it, 12 numeric collision(s) published with the reason each is not a citation, 5 deferred against 0 bytes of English headroom (they cost 123, and this check fails when there is room)"
     },
     {
       "check_id": "PKG_METRIC_CLASS_PROSE_QA",
@@ -1349,7 +1349,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31003948,
+      "total_bytes": 31003952,
       "maintainer_bypass": false
     },
     "stderr": ""
