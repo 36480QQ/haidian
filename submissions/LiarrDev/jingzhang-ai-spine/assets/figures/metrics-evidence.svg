@@ -1,0 +1,412 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" font-family="'PingFang SC','Microsoft YaHei','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f7fa"/>
+      <stop offset="100%" stop-color="#e8eef4"/>
+    </linearGradient>
+    <filter id="sh5">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arr5" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1B3A6B"/>
+    </marker>
+    <marker id="arr5c" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#C07A3A"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg5)"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1600" height="80" fill="#1B3A6B"/>
+  <text x="40" y="38" fill="#fff" font-size="24" font-weight="700">FIG. 05 核心指标复算与证据链</text>
+  <text x="40" y="62" fill="#C07A3A" font-size="14" font-weight="600" letter-spacing="0.05em">CORE METRICS CALCULATION &amp; EVIDENCE CHAIN</text>
+  <rect x="0" y="80" width="1600" height="4" fill="#C07A3A"/>
+
+  <!-- ===== LEFT: Core Metrics ===== -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="740" height="960" fill="#fff" stroke="#d6e0ea" rx="8" filter="url(#sh5)"/>
+    <rect x="0" y="0" width="740" height="36" fill="#1B3A6B" rx="8"/>
+    <rect x="0" y="28" width="740" height="8" fill="#1B3A6B"/>
+    <text x="20" y="24" fill="#fff" font-size="14" font-weight="700">核心指标 Core Metrics</text>
+
+    <!-- 1. Design Scope Hierarchy -->
+    <g transform="translate(20, 56)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">① 设计范围层次 Design Scope Hierarchy</text>
+      <g transform="translate(0, 14)">
+        <rect x="0" y="0" width="700" height="32" fill="#e3f2fd" rx="4"/>
+        <text x="10" y="20" fill="#1B3A6B" font-size="11" font-weight="600">统筹研究 Coordination Research</text>
+        <text x="690" y="20" fill="#1B3A6B" font-size="13" font-weight="700" text-anchor="end">43.6 km²</text>
+      </g>
+      <g transform="translate(40, 50)">
+        <rect x="0" y="0" width="620" height="28" fill="#bbdefb" rx="4"/>
+        <text x="10" y="18" fill="#1B3A6B" font-size="11" font-weight="600">总体设计 Overall Design</text>
+        <text x="610" y="18" fill="#1B3A6B" font-size="13" font-weight="700" text-anchor="end">11.4 km²</text>
+      </g>
+      <g transform="translate(80, 84)">
+        <rect x="0" y="0" width="540" height="28" fill="#ffe0b2" rx="4"/>
+        <text x="10" y="18" fill="#C07A3A" font-size="11" font-weight="600">重点区域 Key Areas</text>
+        <text x="530" y="18" fill="#C07A3A" font-size="13" font-weight="700" text-anchor="end">3.68 km²</text>
+      </g>
+      <text x="0" y="130" fill="#8a9aaa" font-size="10">面积递减比 43.6 → 11.4 → 3.68 km² (100% → 26.1% → 8.4%)</text>
+    </g>
+
+    <!-- 2. Key Area Breakdown -->
+    <g transform="translate(20, 210)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">② 重点区域分解 Key Area Breakdown</text>
+      <text x="0" y="16" fill="#5a6a7a" font-size="10">合计 Total: 368.4 ha</text>
+      <g transform="translate(0, 28)">
+        <!-- Bar chart -->
+        <rect x="0" y="0" width="700" height="24" fill="#f4f7fa" rx="4"/>
+        <rect x="0" y="0" width="365" height="24" fill="#C07A3A" opacity="0.8" rx="4"/>
+        <text x="10" y="16" fill="#fff" font-size="11" font-weight="600">众智园 Zhongzhiyuan — 192.1 ha (52.1%)</text>
+      </g>
+      <g transform="translate(0, 58)">
+        <rect x="0" y="0" width="700" height="24" fill="#f4f7fa" rx="4"/>
+        <rect x="0" y="0" width="198" height="24" fill="#1B3A6B" opacity="0.8" rx="4"/>
+        <text x="10" y="16" fill="#fff" font-size="11" font-weight="600">AI原点社区 AI Origin — 104.3 ha (28.3%)</text>
+      </g>
+      <g transform="translate(0, 88)">
+        <rect x="0" y="0" width="700" height="24" fill="#f4f7fa" rx="4"/>
+        <rect x="0" y="0" width="137" height="24" fill="#2e7d32" opacity="0.8" rx="4"/>
+        <text x="10" y="16" fill="#fff" font-size="11" font-weight="600">大钟寺 Dazhongsi — 72.0 ha (19.6%)</text>
+      </g>
+    </g>
+
+    <!-- 3. Spatial Control Metrics -->
+    <g transform="translate(20, 360)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">③ 空间管控指标 Spatial Control Metrics</text>
+      <g transform="translate(0, 16)">
+        <!-- Green ratio -->
+        <rect x="0" y="0" width="220" height="80" fill="#e8f5e9" rx="6" stroke="#2e7d32" stroke-width="1"/>
+        <text x="110" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">绿地率 Green Ratio</text>
+        <text x="110" y="46" text-anchor="middle" fill="#2e7d32" font-size="22" font-weight="700">8.0%</text>
+        <text x="110" y="64" text-anchor="middle" fill="#5a6a7a" font-size="9">现状 existing | target ≥30%</text>
+        <!-- Progress bar -->
+        <rect x="20" y="70" width="180" height="4" fill="#c8e6c9" rx="2"/>
+        <rect x="20" y="70" width="48" height="4" fill="#2e7d32" rx="2"/>
+      </g>
+      <g transform="translate(240, 16)">
+        <!-- Public space ratio -->
+        <rect x="0" y="0" width="220" height="80" fill="#fff3e0" rx="6" stroke="#C07A3A" stroke-width="1"/>
+        <text x="110" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">公共空间率 Public Space</text>
+        <text x="110" y="46" text-anchor="middle" fill="#C07A3A" font-size="22" font-weight="700">7.3%</text>
+        <text x="110" y="64" text-anchor="middle" fill="#5a6a7a" font-size="9">现状 existing | target ≥25%</text>
+        <rect x="20" y="70" width="180" height="4" fill="#ffe0b2" rx="2"/>
+        <rect x="20" y="70" width="44" height="4" fill="#C07A3A" rx="2"/>
+      </g>
+      <g transform="translate(480, 16)">
+        <!-- FAR -->
+        <rect x="0" y="0" width="220" height="80" fill="#f4f7fa" rx="6" stroke="#1B3A6B" stroke-width="1"/>
+        <text x="110" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">容积率 FAR</text>
+        <text x="110" y="46" text-anchor="middle" fill="#8a9aaa" font-size="22" font-weight="700">unknown *</text>
+        <text x="110" y="64" text-anchor="middle" fill="#5a6a7a" font-size="9">待官方控规确认 pending</text>
+        <rect x="20" y="70" width="180" height="4" fill="#e0e0e0" rx="2"/>
+      </g>
+    </g>
+
+    <!-- 4. System Metrics -->
+    <g transform="translate(20, 480)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">④ 系统指标 System Metrics</text>
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="165" height="70" fill="#e8f0f6" rx="6"/>
+        <text x="82" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">重点区域</text>
+        <text x="82" y="44" text-anchor="middle" fill="#1B3A6B" font-size="22" font-weight="700">3</text>
+        <text x="82" y="60" text-anchor="middle" fill="#8a9aaa" font-size="9">Key Areas</text>
+      </g>
+      <g transform="translate(175, 16)">
+        <rect x="0" y="0" width="165" height="70" fill="#fdf3eb" rx="6"/>
+        <text x="82" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">建筑数量</text>
+        <text x="82" y="44" text-anchor="middle" fill="#C07A3A" font-size="22" font-weight="700">1,692</text>
+        <text x="82" y="60" text-anchor="middle" fill="#8a9aaa" font-size="9">Buildings</text>
+      </g>
+      <g transform="translate(350, 16)">
+        <rect x="0" y="0" width="165" height="70" fill="#eaf6ee" rx="6"/>
+        <text x="82" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">道路段数</text>
+        <text x="82" y="44" text-anchor="middle" fill="#2e7d32" font-size="22" font-weight="700">1,605</text>
+        <text x="82" y="60" text-anchor="middle" fill="#8a9aaa" font-size="9">Road Segments</text>
+      </g>
+      <g transform="translate(525, 16)">
+        <rect x="0" y="0" width="175" height="70" fill="#f4f7fa" rx="6"/>
+        <text x="87" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">AI场景卡</text>
+        <text x="87" y="44" text-anchor="middle" fill="#1B3A6B" font-size="22" font-weight="700">12</text>
+        <text x="87" y="60" text-anchor="middle" fill="#8a9aaa" font-size="9">Scenario Cards</text>
+      </g>
+      <g transform="translate(0, 94)">
+        <rect x="0" y="0" width="165" height="70" fill="#e8f0f6" rx="6"/>
+        <text x="82" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">朝圣地标</text>
+        <text x="82" y="44" text-anchor="middle" fill="#1B3A6B" font-size="22" font-weight="700">3</text>
+        <text x="82" y="60" text-anchor="middle" fill="#8a9aaa" font-size="9">Landmarks</text>
+      </g>
+      <g transform="translate(175, 94)">
+        <rect x="0" y="0" width="165" height="70" fill="#fdf3eb" rx="6"/>
+        <text x="82" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">用户画像</text>
+        <text x="82" y="44" text-anchor="middle" fill="#C07A3A" font-size="22" font-weight="700">5</text>
+        <text x="82" y="60" text-anchor="middle" fill="#8a9aaa" font-size="9">Personas</text>
+      </g>
+      <g transform="translate(350, 94)">
+        <rect x="0" y="0" width="165" height="70" fill="#eaf6ee" rx="6"/>
+        <text x="82" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">全球案例</text>
+        <text x="82" y="44" text-anchor="middle" fill="#2e7d32" font-size="22" font-weight="700">8</text>
+        <text x="82" y="60" text-anchor="middle" fill="#8a9aaa" font-size="9">Global Cases</text>
+      </g>
+      <g transform="translate(525, 94)">
+        <rect x="0" y="0" width="175" height="70" fill="#f4f7fa" rx="6"/>
+        <text x="87" y="20" text-anchor="middle" fill="#5a6a7a" font-size="10">慢行环线</text>
+        <text x="87" y="44" text-anchor="middle" fill="#1B3A6B" font-size="16" font-weight="700">日字形</text>
+        <text x="87" y="60" text-anchor="middle" fill="#8a9aaa" font-size="9">日-shaped Loop</text>
+      </g>
+    </g>
+
+    <!-- 5. Update Strategy -->
+    <g transform="translate(20, 670)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">⑤ 拆建留比例估计 Demolition-Renovation-Retention</text>
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="700" height="36" rx="4" fill="#f4f7fa"/>
+        <rect x="0" y="0" width="315" height="36" rx="4" fill="#2e7d32" opacity="0.7"/>
+        <rect x="315" y="0" width="175" height="36" fill="#ffb74d" opacity="0.7"/>
+        <rect x="490" y="0" width="140" height="36" fill="#90caf9" opacity="0.7"/>
+        <rect x="630" y="0" width="70" height="36" rx="0" fill="#e57373" opacity="0.7"/>
+        <text x="10" y="22" fill="#fff" font-size="11" font-weight="600">保留 45%</text>
+        <text x="325" y="22" fill="#333" font-size="11" font-weight="600">改造 25%</text>
+        <text x="500" y="22" fill="#333" font-size="11" font-weight="600">更新 20%</text>
+        <text x="640" y="22" fill="#fff" font-size="11" font-weight="600">新建 10%</text>
+      </g>
+      <g transform="translate(0, 60)">
+        <rect x="0" y="0" width="8" height="8" fill="#2e7d32" opacity="0.7"/>
+        <text x="14" y="8" fill="#5a6a7a" font-size="10">保留 Retain</text>
+        <rect x="120" y="0" width="8" height="8" fill="#ffb74d" opacity="0.7"/>
+        <text x="134" y="8" fill="#5a6a7a" font-size="10">改造 Renovate</text>
+        <rect x="260" y="0" width="8" height="8" fill="#90caf9" opacity="0.7"/>
+        <text x="274" y="8" fill="#5a6a7a" font-size="10">更新 Update</text>
+        <rect x="380" y="0" width="8" height="8" fill="#e57373" opacity="0.7"/>
+        <text x="394" y="8" fill="#5a6a7a" font-size="10">新建 New Build</text>
+      </g>
+    </g>
+
+    <!-- Data source note -->
+    <g transform="translate(20, 820)">
+      <rect x="0" y="0" width="700" height="80" fill="#fff3e0" rx="6" stroke="#C07A3A" stroke-width="1"/>
+      <text x="10" y="20" fill="#C07A3A" font-size="11" font-weight="700">数据来源与置信度 Data Sources &amp; Confidence</text>
+      <text x="10" y="38" fill="#5a6a7a" font-size="10">• 空间数据来源：OSM Overpass API (2026-08-20) — 置信度 medium</text>
+      <text x="10" y="54" fill="#5a6a7a" font-size="10">• 指标计算：polygon_area / union_area / count — 自动计算</text>
+      <text x="10" y="70" fill="#5a6a7a" font-size="10">* 容积率(FAR)未知，待官方控规确认 [assumption:A-CONTROLS-001]</text>
+    </g>
+
+    <!-- File references -->
+    <g transform="translate(20, 920)">
+      <text x="0" y="0" fill="#8a9aaa" font-size="10" font-family="ui-monospace,monospace">metrics.json | geometry/site_boundary.geojson | geometry/buildings.geojson</text>
+      <text x="0" y="16" fill="#8a9aaa" font-size="10" font-family="ui-monospace,monospace">geometry/roads.geojson | geometry/green_space.geojson | geometry/key_areas.geojson</text>
+    </g>
+  </g>
+
+  <!-- ===== RIGHT: Evidence Chain ===== -->
+  <g transform="translate(820, 110)">
+    <rect x="0" y="0" width="740" height="960" fill="#fff" stroke="#d6e0ea" rx="8" filter="url(#sh5)"/>
+    <rect x="0" y="0" width="740" height="36" fill="#C07A3A" rx="8"/>
+    <rect x="0" y="28" width="740" height="8" fill="#C07A3A"/>
+    <text x="20" y="24" fill="#fff" font-size="14" font-weight="700">证据链 Evidence Chain</text>
+
+    <!-- Data pipeline flow -->
+    <g transform="translate(20, 56)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">数据流转流程 Data Pipeline</text>
+
+      <!-- Flow diagram -->
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="150" height="56" fill="#e8f0f6" rx="6" stroke="#1B3A6B" stroke-width="1"/>
+        <text x="75" y="20" text-anchor="middle" fill="#1B3A6B" font-size="11" font-weight="600">site_boundary</text>
+        <text x="75" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">.geojson</text>
+        <text x="75" y="48" text-anchor="middle" fill="#8a9aaa" font-size="8">EPSG:4326</text>
+      </g>
+      <path d="M 150,44 L 190,44" fill="none" stroke="#1B3A6B" stroke-width="2" marker-end="url(#arr5)"/>
+
+      <g transform="translate(190, 16)">
+        <rect x="0" y="0" width="150" height="56" fill="#fdf3eb" rx="6" stroke="#C07A3A" stroke-width="1"/>
+        <text x="75" y="20" text-anchor="middle" fill="#C07A3A" font-size="11" font-weight="600">metrics.json</text>
+        <text x="75" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">auto-calc</text>
+        <text x="75" y="48" text-anchor="middle" fill="#8a9aaa" font-size="8">area, count, ratio</text>
+      </g>
+      <path d="M 340,44 L 380,44" fill="none" stroke="#1B3A6B" stroke-width="2" marker-end="url(#arr5)"/>
+
+      <g transform="translate(380, 16)">
+        <rect x="0" y="0" width="150" height="56" fill="#eaf6ee" rx="6" stroke="#2e7d32" stroke-width="1"/>
+        <text x="75" y="20" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="600">proposal.md</text>
+        <text x="75" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">design</text>
+        <text x="75" y="48" text-anchor="middle" fill="#8a9aaa" font-size="8">rationale</text>
+      </g>
+      <path d="M 530,44 L 570,44" fill="none" stroke="#1B3A6B" stroke-width="2" marker-end="url(#arr5)"/>
+
+      <g transform="translate(570, 16)">
+        <rect x="0" y="0" width="130" height="56" fill="#f4f7fa" rx="6" stroke="#1B3A6B" stroke-width="1"/>
+        <text x="65" y="20" text-anchor="middle" fill="#1B3A6B" font-size="10" font-weight="600">compliance</text>
+        <text x="65" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">_matrix</text>
+        <text x="65" y="48" text-anchor="middle" fill="#8a9aaa" font-size="8">verify</text>
+      </g>
+    </g>
+
+    <!-- Pipeline steps -->
+    <g transform="translate(20, 160)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">数据管线步骤 Pipeline Steps</text>
+      <g transform="translate(0, 16)">
+        <circle cx="14" cy="14" r="12" fill="#1B3A6B"/>
+        <text x="14" y="18" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">1</text>
+        <text x="36" y="12" fill="#333" font-size="11" font-weight="600">导入临时边界 Import provisional boundary</text>
+        <text x="36" y="26" fill="#8a9aaa" font-size="9">EPSG:4326 → polygon geometry [source:BOUNDARY-SOURCE]</text>
+      </g>
+      <g transform="translate(0, 46)">
+        <circle cx="14" cy="14" r="12" fill="#C07A3A"/>
+        <text x="14" y="18" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">2</text>
+        <text x="36" y="12" fill="#333" font-size="11" font-weight="600">自动计算指标 Auto-calculate metrics</text>
+        <text x="36" y="26" fill="#8a9aaa" font-size="9">polygon_area, union_area, count → metrics.json</text>
+      </g>
+      <g transform="translate(0, 76)">
+        <circle cx="14" cy="14" r="12" fill="#2e7d32"/>
+        <text x="14" y="18" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">3</text>
+        <text x="36" y="12" fill="#333" font-size="11" font-weight="600">生成方案设计 Generate proposal</text>
+        <text x="36" y="26" fill="#8a9aaa" font-size="9">基于指标和任务书生成设计 → proposal.md</text>
+      </g>
+      <g transform="translate(0, 106)">
+        <circle cx="14" cy="14" r="12" fill="#1B3A6B"/>
+        <text x="14" y="18" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">4</text>
+        <text x="36" y="12" fill="#333" font-size="11" font-weight="600">验证合规性 Verify compliance</text>
+        <text x="36" y="26" fill="#8a9aaa" font-size="9">compliance_matrix.json → self_check.json → CI gate</text>
+      </g>
+    </g>
+
+    <!-- Metric Classification -->
+    <g transform="translate(20, 310)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">指标分类 Metric Classification</text>
+
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="220" height="90" fill="#e8f0f6" rx="6" stroke="#1B3A6B" stroke-width="1"/>
+        <text x="110" y="20" text-anchor="middle" fill="#1B3A6B" font-size="11" font-weight="700">空间指标</text>
+        <text x="110" y="36" text-anchor="middle" fill="#5a6a7a" font-size="10">Spatial Metrics</text>
+        <line x1="20" y1="44" x2="200" y2="44" stroke="#d6e0ea" stroke-width="1"/>
+        <text x="110" y="58" text-anchor="middle" fill="#5a6a7a" font-size="9">area, perimeter</text>
+        <text x="110" y="72" text-anchor="middle" fill="#5a6a7a" font-size="9">coords, centroid</text>
+        <text x="110" y="84" text-anchor="middle" fill="#8a9aaa" font-size="8">已知 known</text>
+      </g>
+      <g transform="translate(240, 16)">
+        <rect x="0" y="0" width="220" height="90" fill="#fdf3eb" rx="6" stroke="#C07A3A" stroke-width="1"/>
+        <text x="110" y="20" text-anchor="middle" fill="#C07A3A" font-size="11" font-weight="700">管控指标</text>
+        <text x="110" y="36" text-anchor="middle" fill="#5a6a7a" font-size="10">Control Metrics</text>
+        <line x1="20" y1="44" x2="200" y2="44" stroke="#d6e0ea" stroke-width="1"/>
+        <text x="110" y="58" text-anchor="middle" fill="#5a6a7a" font-size="9">FAR, height, density</text>
+        <text x="110" y="72" text-anchor="middle" fill="#5a6a7a" font-size="9">green ratio, public space</text>
+        <text x="110" y="84" text-anchor="middle" fill="#C07A3A" font-size="8">部分未知 partial</text>
+      </g>
+      <g transform="translate(480, 16)">
+        <rect x="0" y="0" width="220" height="90" fill="#eaf6ee" rx="6" stroke="#2e7d32" stroke-width="1"/>
+        <text x="110" y="20" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="700">绩效指标</text>
+        <text x="110" y="36" text-anchor="middle" fill="#5a6a7a" font-size="10">Performance Metrics</text>
+        <line x1="20" y1="44" x2="200" y2="44" stroke="#d6e0ea" stroke-width="1"/>
+        <text x="110" y="58" text-anchor="middle" fill="#5a6a7a" font-size="9">circulation, access</text>
+        <text x="110" y="72" text-anchor="middle" fill="#5a6a7a" font-size="9">activation, scenarios</text>
+        <text x="110" y="84" text-anchor="middle" fill="#2e7d32" font-size="8">设计目标 design target</text>
+      </g>
+    </g>
+
+    <!-- Compliance Matrix Summary -->
+    <g transform="translate(20, 440)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">任务覆盖矩阵 Compliance Matrix Summary</text>
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="700" height="30" fill="#1B3A6B" rx="4"/>
+        <text x="10" y="20" fill="#fff" font-size="10" font-weight="600">任务 Task</text>
+        <text x="300" y="20" fill="#fff" font-size="10" font-weight="600">方案应答 Response</text>
+        <text x="560" y="20" fill="#fff" font-size="10" font-weight="600">状态 Status</text>
+      </g>
+      <g transform="translate(0, 48)">
+        <rect x="0" y="0" width="700" height="28" fill="#f4f7fa" stroke="#eef2f6"/>
+        <text x="10" y="18" fill="#333" font-size="10">agent.1 总体概念设计</text>
+        <text x="300" y="18" fill="#5a6a7a" font-size="10">智脊·京张总体概念</text>
+        <rect x="555" y="7" width="50" height="14" fill="#e8f5e9" rx="3"/>
+        <text x="580" y="18" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">✓ covered</text>
+      </g>
+      <g transform="translate(0, 78)">
+        <rect x="0" y="0" width="700" height="28" fill="#fff" stroke="#eef2f6"/>
+        <text x="10" y="18" fill="#333" font-size="10">agent.2 AI创新生态</text>
+        <text x="300" y="18" fill="#5a6a7a" font-size="10">全栈自主创新体系</text>
+        <rect x="555" y="7" width="50" height="14" fill="#e8f5e9" rx="3"/>
+        <text x="580" y="18" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">✓ covered</text>
+      </g>
+      <g transform="translate(0, 108)">
+        <rect x="0" y="0" width="700" height="28" fill="#f4f7fa" stroke="#eef2f6"/>
+        <text x="10" y="18" fill="#333" font-size="10">agent.3 AI场景赋能</text>
+        <text x="300" y="18" fill="#5a6a7a" font-size="10">12张AI场景卡+审计表</text>
+        <rect x="555" y="7" width="50" height="14" fill="#e8f5e9" rx="3"/>
+        <text x="580" y="18" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">✓ covered</text>
+      </g>
+      <g transform="translate(0, 138)">
+        <rect x="0" y="0" width="700" height="28" fill="#fff" stroke="#eef2f6"/>
+        <text x="10" y="18" fill="#333" font-size="10">agent.4 AI公共空间</text>
+        <text x="300" y="18" fill="#5a6a7a" font-size="10">3个朝圣地标+蓝绿环</text>
+        <rect x="555" y="7" width="50" height="14" fill="#e8f5e9" rx="3"/>
+        <text x="580" y="18" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">✓ covered</text>
+      </g>
+      <g transform="translate(0, 168)">
+        <rect x="0" y="0" width="700" height="28" fill="#f4f7fa" stroke="#eef2f6"/>
+        <text x="10" y="18" fill="#333" font-size="10">agent.5 文化融合叙事</text>
+        <text x="300" y="18" fill="#5a6a7a" font-size="10">三重文化叙事序列</text>
+        <rect x="555" y="7" width="50" height="14" fill="#e8f5e9" rx="3"/>
+        <text x="580" y="18" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">✓ covered</text>
+      </g>
+      <g transform="translate(0, 198)">
+        <rect x="0" y="0" width="700" height="28" fill="#fff" stroke="#eef2f6"/>
+        <text x="10" y="18" fill="#333" font-size="10">agent.6 全球活动运营</text>
+        <text x="300" y="18" fill="#5a6a7a" font-size="10">四季活动+运营联盟</text>
+        <rect x="555" y="7" width="50" height="14" fill="#e8f5e9" rx="3"/>
+        <text x="580" y="18" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">✓ covered</text>
+      </g>
+    </g>
+
+    <!-- Self-check status -->
+    <g transform="translate(20, 670)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">自检状态 Self-Check Status</text>
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="165" height="50" fill="#e8f5e9" rx="6"/>
+        <text x="82" y="20" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="700">✓ 确定性验证</text>
+        <text x="82" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">Deterministic</text>
+      </g>
+      <g transform="translate(175, 16)">
+        <rect x="0" y="0" width="165" height="50" fill="#e8f5e9" rx="6"/>
+        <text x="82" y="20" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="700">✓ 空间审查</text>
+        <text x="82" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">Spatial Review</text>
+      </g>
+      <g transform="translate(350, 16)">
+        <rect x="0" y="0" width="165" height="50" fill="#e8f5e9" rx="6"/>
+        <text x="82" y="20" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="700">✓ 视觉审查</text>
+        <text x="82" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">Visual Review</text>
+      </g>
+      <g transform="translate(525, 16)">
+        <rect x="0" y="0" width="175" height="50" fill="#e8f5e9" rx="6"/>
+        <text x="87" y="20" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="700">✓ 专业审查</text>
+        <text x="87" y="36" text-anchor="middle" fill="#5a6a7a" font-size="9">Professional</text>
+      </g>
+    </g>
+
+    <!-- File reference -->
+    <g transform="translate(20, 760)">
+      <rect x="0" y="0" width="700" height="80" fill="#f4f7fa" rx="6"/>
+      <text x="10" y="20" fill="#1B3A6B" font-size="11" font-weight="700">可核验文件 Verified Files</text>
+      <text x="10" y="38" fill="#5a6a7a" font-size="10" font-family="ui-monospace,monospace">manifest.json (SHA256) | self_check.json | compliance_matrix.json</text>
+      <text x="10" y="54" fill="#5a6a7a" font-size="10" font-family="ui-monospace,monospace">design_depth_matrix.json | standard_matrix.json | sources.json</text>
+      <text x="10" y="70" fill="#5a6a7a" font-size="10" font-family="ui-monospace,monospace">assumptions.json | changelog.md | simulation.json</text>
+    </g>
+
+    <!-- Footer note -->
+    <g transform="translate(20, 870)">
+      <text x="0" y="0" fill="#8a9aaa" font-size="10">所有指标均可通过 metrics.json 和 geometry/ 文件自动复算</text>
+      <text x="0" y="16" fill="#8a9aaa" font-size="10">All metrics are reproducible from metrics.json and geometry/ files</text>
+      <text x="0" y="32" fill="#8a9aaa" font-size="10">数据获取时间 2026-08-20 | OSM Overpass API</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="1140" width="1600" height="60" fill="#1B3A6B"/>
+  <text x="40" y="1165" fill="#a0b0c0" font-size="11">智脊·京张AI创新带 | 来源：核心指标复算与证据链 | Source: Core metrics &amp; evidence chain</text>
+  <text x="40" y="1182" fill="#708090" font-size="10">data: metrics.json | self_check.json | compliance_matrix.json | [assumption:A-CONTROLS-001] for FAR</text>
+  <text x="1560" y="1165" text-anchor="end" fill="#a0b0c0" font-size="11">FIG. 05 / 05</text>
+</svg>
