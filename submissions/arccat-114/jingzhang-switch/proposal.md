@@ -9,7 +9,7 @@ license: "CC-BY-4.0"
 summary: "把京张铁路遗址走廊读作城市的'道岔'：詹天佑一百年前用'人'字形展线换轨上坡，今天AI创新带在同一片场地上换轨转向——科研换轨产业、实验室换轨城市、文化换轨体验。方案以'一岔三场两翼'组织空间：岔心（京张公园换轨枢纽）、始发场（AI原点社区）、加速轨道（众智园）、编组场（大钟寺）、东侧线（中关村科技服务翼）、西侧线（小月河场景赋能翼）；以铁路语汇治理12个AI场景（信号灯红牌暂停、扳道房人工接管、联锁协议可退役）；用五项慢变量和四道复核门把公共利益、空间与年度运营串起来；5处AI朝圣地标对接纪念机制。概念方案，基于临时边界，供专业团队深化。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v2.9"
+iteration: "v3.2"
 ---
 
 # 道岔·SWITCH——百年京张AI创新带城市设计方案
@@ -22,7 +22,7 @@ iteration: "v2.9"
 
 空间结构由此展开为**一岔、三场、两翼**：**岔心**（京张遗址公园中段的换轨枢纽，全带公共体验核心）；**始发场**（北京AI原点社区，0公里桩，策源与开源转化）；**加速轨道**（众智园AI自主创新加速区，全栈创新与AI治理）；**编组场**（大钟寺AI产业集聚区，智能原生业态与交会编组）；**东侧线**（中关村科技服务翼，要素全球化配置与资本赋能）；**西侧线**（小月河场景赋能翼，AI场景与活力城市）。9公里主脊同时是一部"换轨叙事"：南起编组场是交会，中段岔心是换轨，北抵加速轨道是加速——场景密度、公共界面与地标序列都沿这条"钢轨"组织[depth:overall_spatial_structure][data:geometry/land_use.geojson#LU-001]。
 
-方案速览：一，这是已建成城区，本方案不重新规划城市，只为它接通断裂的公共界面、在触媒点上示范更新[depth:retain_renovate_demolish]；二，道岔符号双关历史与未来，命名、Logo、导视共用"钢轨—道岔"语汇[depth:overall_spatial_structure]；三，12个AI场景由状态机统一治理（红牌暂停、人工接管、可退役）[depth:three_key_area_detailed_design]；四，26个用地单元、9.7公里绿廊主轴与41项指标由确定性管道生成，官方数据到位整包重算[metric:site_area_sqm]；五，首开行动含完整"红牌撤回"演练，5处朝圣地标对接纪念机制[source:AGENT-TASKBOOK]。**统一声明：本方案为AI生成的开放共创建议，基于临时粗略边界，全部空间内容均为概念建议、参考方案，供专业团队深化研究，不构成政府审定结论；官方红线与控规条件到位后，全部面积、比例与位置关系须整体重算。本声明覆盖全文。**[source:PROVISIONAL-BOUNDARIES][depth:risk_missing_data]
+方案速览：一，这是已建成城区，本方案不重新规划城市，只为它接通断裂的公共界面、在触媒点上示范更新[depth:retain_renovate_demolish]；二，道岔符号双关历史与未来，命名、Logo、导视共用"钢轨—道岔"语汇[depth:overall_spatial_structure]；三，12个AI场景由状态机统一治理（红牌暂停、人工接管、可退役）[depth:three_key_area_detailed_design]；四，26个用地单元、9.7公里绿廊主轴与45项指标由确定性管道生成，官方数据到位整包重算[metric:site_area_sqm]；五，首开行动含完整"红牌撤回"演练，5处朝圣地标对接纪念机制[source:AGENT-TASKBOOK]。**统一声明：本方案为AI生成的开放共创建议，基于临时粗略边界，全部空间内容均为概念建议、参考方案，供专业团队深化研究，不构成政府审定结论；官方红线与控规条件到位后，全部面积、比例与位置关系须整体重算。本声明覆盖全文。**[source:PROVISIONAL-BOUNDARIES][depth:risk_missing_data]
 
 ### 证据边界台账（四态）
 
