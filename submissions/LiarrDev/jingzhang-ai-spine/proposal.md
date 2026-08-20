@@ -147,7 +147,7 @@ Logo方向：以竖向线条（铁路/脊梁）为骨架，三个圆形节点（
 
 "蓝绿慢行复合环"——以遗址公园为南北主轴，以清河（北端）和小月河（东侧）为横向蓝绿廊道，形成环状慢行系统，串联高校、社区、产业园区和公共空间节点。
 
-用地布局依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 的分类逻辑，覆盖科研用地、工业用地、居住用地、商业服务业用地、道路与交通设施用地、绿地与广场用地等类型 [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]。建筑方案区分保留、改造、更新和新建四类 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]，具体拆改留分类需在官方控规条件确认后校准。
+用地布局依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 的分类逻辑，覆盖科研用地、工业用地、居住用地、商业服务业用地、道路与交通设施用地、绿地与广场用地等类型 [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]。建筑方案区分保留、改造、更新和新建四类 [data:geometry/buildings.geojson] [depth:retain_renovate_demolish]，具体拆改留分类需在官方控规条件确认后校准。
 
 建筑高度、容积率、建筑密度、绿地率和退线等控制指标目前缺少官方条件 [assumption:A-CONTROLS-001]。方案在指标体系中列为 `pending_control`，不使用固定数值制造精确感。待正式控规发布后，所有管控指标需重新校核。
 
@@ -163,7 +163,7 @@ Logo方向：以竖向线条（铁路/脊梁）为骨架，三个圆形节点（
 
 AI场景：自主模型测试场（面向大模型红队测试和安全评测）、标准制定工作坊（可视化AI安全治理流程）、低碳算力体验站（展示绿色计算和端侧算力）、清河AI生态观测站（结合生态监测和AI数据采集）。
 
-交通组织：强化北五环跨线桥下空间的人行连通，设置低速接驳环线串联加速核心区和清河界面，与轨道站点形成步行换乘节点。交通结论为方向性设计建议 [data:geometry/roads.geojson#ROAD-001]。
+交通组织：强化北五环跨线桥下空间的人行连通，设置低速接驳环线串联加速核心区和清河界面，与轨道站点形成步行换乘节点。交通结论为方向性设计建议 [data:geometry/roads.geojson]。
 
 实施风险：北五环跨环路节点的工程可行性需交通和市政条件复核；清河蓝线和生态保护要求需水务部门确认 [assumption:A-CONTROLS-001]。
 
@@ -279,13 +279,13 @@ AI场景：大钟寺国际路演客厅（服务智能体和智能终端企业的
 
 用地布局依据国土空间用地用海分类指南 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 的分类逻辑组织 [data:geometry/land_use.geojson#LU-001]。总体设计范围内主要用地类型包括：科研用地（众智园和AI原点社区核心）、商业服务业用地（大钟寺片区和轨道站点周边）、居住用地（现有社区更新）、道路与交通设施用地（含轨道站点一体化）、绿地与广场用地（遗址公园和蓝绿廊道）。
 
-建筑方案区分四类更新策略 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]：
+建筑方案区分四类更新策略 [data:geometry/buildings.geojson] [depth:retain_renovate_demolish]：
 - **保留**：现状品质较好的住宅、学校和公共服务建筑，维持现有功能。
 - **改造**：现有产业和商业建筑的首层和立面，转化为展示、协作和服务功能。
 - **更新**：低效利用的产业用地和仓储用地，按AI产业需求重新开发。
 - **新建**：在重点区域核心位置新增的标志性建筑和公共空间节点。
 
-建筑基底面积和规模指标由 [data:geometry/buildings.geojson#BLDG-001] 复算 [metric:building_footprint_area_sqm] [metric:building_count]。当前方案包含5处建筑策略示范：智源椎新建AI研发示范建筑（ai_r_and_d类型）、AI原点社区保留办公建筑和改造混合功能建筑、智汇椎新建商业建筑（retail类型）和更新孵化建筑（incubator类型）。
+现状建筑基底面积和规模指标由 OpenStreetMap 实测数据复算 [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm] [metric:building_count]。OSM 快照（2026-08-20）在总体设计范围内共识别 1,692 栋现状建筑，基底面积约 2,018,037 平方米 [source:OSM-DATA]。方案在此基础上提出四类建筑更新策略：保留现有品质较好的建筑，改造产业和商业建筑首层，更新低效用地，新建标志性公共建筑。由于 OSM 建筑轮廓在部分地段覆盖不完整，现状建筑数量与基底面积为方向性参考，需在官方权属数据发布后校准 [assumption:A-CONTROLS-001]。
 
 拆改留比例估算（基于临时边界和公开影像判读，待官方数据校准）：
 - 保留建筑约占建筑总量的45%（主要分布在大钟寺片区南侧和AI原点社区东侧）
@@ -303,7 +303,7 @@ AI场景：大钟寺国际路演客厅（服务智能体和智能终端企业的
 
 **道路微循环**：打通遗址公园两侧被铁路割裂的东西向交通联系，利用铁路入地释放的地面空间新增东西向慢行通道。重点区域的支路系统按小街区密路网原则组织，促进步行可达性和商业活力。
 
-**慢行系统**：以遗址公园为南北主轴，以清河和小月河为横向廊道，形成"工字形"慢行环线。识别并修复跨环路、跨河道和跨铁路的慢行断点，建立连续的步行和骑行网络 [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]。
+**慢行系统**：以遗址公园为南北主轴，以清河和小月河为横向廊道，形成"工字形"慢行环线。识别并修复跨环路、跨河道和跨铁路的慢行断点，建立连续的步行和骑行网络 [data:geometry/roads.geojson] [depth:traffic_rail_slow_parking]。
 
 **新型基础设施**：在重点区域布局端侧算力节点、分布式能源设施和AI感知基础设施，与公共服务设施和公共空间结合布置。端侧算力节点作为AI场景的"最后一公里"基础设施，为低延迟应用提供本地计算能力 [data:geometry/constraints.geojson#CONSTRAINTS]。
 
@@ -311,7 +311,7 @@ AI场景：大钟寺国际路演客厅（服务智能体和智能终端企业的
 
 市政设施方案覆盖给排水、电力、通信、燃气和环卫等传统市政系统，以及AI产业服务设施、创新服务平台和人才生活服务设施。缺少管线、能源、排水、防洪、消防等工程资料时，列为正式深化前置条件 [assumption:A-CONTROLS-001]。
 
-**道路系统**：总体设计范围内道路系统分为四个等级——城市快速路（北五环）、城市主干路（中关村大街、北土城西路）、城市次干路（连接重点区域的东西向道路）和城市支路（重点区域内部小街区密路网）[data:geometry/roads.geojson#ROAD-001] [metric:road_segment_count]。当前方案包含5条道路段示范：慢行与创新服务廊道（greenway类型）、智脊南北慢行主轴（pedestrian类型）、轨道站点接驳路径（transit_connection类型）、东西向连接路径（secondary类型）和蓝绿环线（cycleway类型）。
+**道路系统**：总体设计范围内道路系统分为四个等级——城市快速路（北五环）、城市主干路（中关村大街、北土城西路）、城市次干路（连接重点区域的东西向道路）和城市支路（重点区域内部小街区密路网）[data:geometry/roads.geojson] [metric:road_segment_count]。OSM 快照（2026-08-20）在总体设计范围内共识别 1,605 段现状道路 [source:OSM-DATA]。方案在此基础上提出四级道路体系，并叠加慢行主轴、站点接驳和蓝绿环线等设计性通道。
 
 **公共服务设施**：方案规划在三处重点区域分别配置差异化公共服务设施。众智园布局AI产业服务平台（芯片测试、算力调度、标准认证）、国际会议中心和人才公寓；AI原点社区布局校企协同创新中心、成果转化加速器和青年创客社区；大钟寺布局智能商业综合体、城市AI应用展示厅和社区便民服务中心。教育设施方面，利用周边高校密集优势，不新增基础教育设施，重点布局继续教育和职业培训空间。医疗卫生方面，依托北医三院和海淀医院现有资源，在AI原点社区布局健康监测AI服务站。
 
@@ -327,7 +327,7 @@ AI场景：大钟寺国际路演客厅（服务智能体和智能终端企业的
 
 ### 蓝绿空间体系
 
-蓝绿空间以遗址公园为南北主轴，以清河（北端）和小月河（东侧）为横向廊道，形成"工字形"蓝绿骨架 [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]。绿地和公共空间比例由 [data:geometry/green_space.geojson#GREEN-001] 和 [data:geometry/public_space.geojson#PUBLIC-001] 复算 [metric:green_ratio] [metric:public_space_ratio]。
+蓝绿空间以遗址公园为南北主轴，以清河（北端）和小月河（东侧）为横向廊道，形成"工字形"蓝绿骨架 [data:geometry/green_space.geojson] [depth:blue_green_public_space]。绿地和公共空间比例由 [data:geometry/green_space.geojson] 和 [data:geometry/public_space.geojson#PUBLIC-001] 复算 [metric:green_ratio] [metric:public_space_ratio]。
 
 公共空间系统包括：遗址公园线性绿廊（南北主轴）、清河滨水步道（北部横向廊道）、小月河滨水步道（东部横向廊道）、重点区域广场群（三处重点区域核心公共空间）和社区口袋公园网络（均匀分布的社区级绿色节点）。
 
@@ -417,9 +417,11 @@ AI场景：大钟寺国际路演客厅（服务智能体和智能终端企业的
 | 众智园面积 | 约1,929,202 sqm | geometry/key_areas.geojson | known (provisional) |
 | AI原点社区面积 | 约1,043,237 sqm | geometry/key_areas.geojson | known (provisional) |
 | 大钟寺面积 | 约720,454 sqm | geometry/key_areas.geojson | known (provisional) |
-| 绿地比例 | 约12.3% | geometry/green_space.geojson | known (provisional) |
+| 绿地比例 | 约8.0%（现状） | geometry/green_space.geojson | known (provisional) |
 | 公共空间比例 | 约7.3% | geometry/public_space.geojson | known (provisional) |
-| 建筑基底面积 | 约310,807 sqm | geometry/buildings.geojson | known (provisional) |
+| 现状建筑基底面积 | 约2,018,037 sqm | geometry/buildings.geojson | known (provisional) |
+| 现状建筑数量 | 1,692 栋 | geometry/buildings.geojson | known |
+| 现状道路段数 | 1,605 段 | geometry/roads.geojson | known |
 | 重点区域数量 | 3 | geometry/key_areas.geojson | known |
 
 **第二类：管控指标（需官方控规支撑）**

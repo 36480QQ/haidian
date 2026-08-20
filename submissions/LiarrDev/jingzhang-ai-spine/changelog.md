@@ -1,5 +1,24 @@
 # 方案迭代记录
 
+## v1.5 - 2026-08-20
+
+### Real existing-condition geometry (OSM data)
+- geometry/buildings.geojson: replaced 5 placeholder design-proposal footprints with 1,692 real OSM building footprints (existing_condition, source_type=osm), clipped to site boundary
+- geometry/roads.geojson: replaced 5 placeholder road segments with 1,605 real OSM highway segments
+- geometry/green_space.geojson: replaced 1 placeholder polygon with 120 real OSM green/water polygons
+- geometry/land_use.geojson: retained the design-proposal land-use partition (must fully cover site boundary per spatial review)
+- Data fetched via Overpass API on 2026-08-20, licensed ODbL, registered as source OSM-DATA in sources.json
+
+### Metric recalculation (EPSG:4548)
+- building_footprint_area_sqm: 303,555.838 → 2,018,037.155 (existing building footprint)
+- building_count: 5 → 1,692
+- road_segment_count: 5 → 1,605
+- green_ratio: 0.123423 → 0.079978 (existing green space ratio)
+- Added green_space_area_sqm: 912,777.815
+
+### Proposal narrative sync
+- proposal.md / proposal.en.md: updated building/road/green figures to reflect OSM existing-condition data, with explicit "directional reference, OSM coverage incomplete" boundary declarations
+
 ## v1.4 - 2026-08-20
 
 ### Verifiability (mutation testing + runnable verifier)
