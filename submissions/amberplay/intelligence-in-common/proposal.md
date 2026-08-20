@@ -9,14 +9,14 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以“公民轨枕 Civic Cross-Ties”组织一条永久普通城市线与三道横向公共缝合；PASS时空许可编译器把场地矛盾转为可比方案、限时空间许可与到期恢复，并以大钟寺站城验收轨枕作为可测量的首期试点。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v3.7"
+iteration: "v3.8"
 ---
 
 # 智脉共生：京张公民轨枕
 
 **一条永久的普通城市线，三道把东西城区重新系在一起的公民轨枕。** 京张遗址公园的南北轨迹是记忆、步行、骑行、蓝绿与人工服务不被 AI 占用的普通城市基线；众智园、AI 原点与大钟寺分别形成安全花园轨枕、权利共享轨枕与站城验收轨枕。横向轨枕不是进入运行铁路的工程线，而是把东西街区、园区、校园或站城接回日常公共生活的空间隐喻与概念设计。
 
-**AI 上街，先拿 PASS / NO PASS, NO AI。** PASS 是 Public Acceptance & Safe-Street Standard 的项目内部简称，不是法定标准或政府认证。v3.7 把它落实为 **PASS 时空许可编译器**：输入公开现状、无 AI 普通基线、空间约束与公共服务缺口；由 AI 生成不少于三个明示不确定性的时空方案；再由确定性城市硬门与人审排除不可接受选项；最终只输出有地点、时段、占地、构件、人员、有效期和恢复方法的限时空间许可。到期、红线触发或任一 PASS 条件失败，AI 插件撤除，恢复普通花园、普通展廊或纯人工服务。
+**AI 上街，先拿 PASS / NO PASS, NO AI。** PASS 是 Public Acceptance & Safe-Street Standard 的项目内部简称，不是法定标准或政府认证。v3.8 把它落实为 **PASS 时空许可编译器**：输入公开现状、无 AI 普通基线、空间约束与公共服务缺口；由 AI 生成不少于三个明示不确定性的时空方案；再由确定性城市硬门与人审排除不可接受选项；最终只输出有地点、时段、占地、构件、人员、有效期和恢复方法的限时空间许可。到期、红线触发或任一 PASS 条件失败，AI 插件撤除，恢复普通花园、普通展廊或纯人工服务。
 
 ## 评委一页结论：从已建公园到可验收的 AI 城市
 
@@ -53,7 +53,7 @@ PASS 编译器不让 AI 直接决定道路、地块或人的权利，而是把�
 
 #### 内容寻址的 AI 空间决策记录
 
-v3.7 不再只写“AI 生成三个方案”。同一条固定提示词、三份冻结输入和模型捕获输出分别保存于 `ai-spatial-generation-prompt.json`、`public-context.json` / `design-actions-public-context.json` / `fact-diagnosis-action-crosswalk.json` 与 `ai-spatial-options-output.json`；提示词、输入与输出均登记 SHA-256。生成端由 OpenAI Codex 城市设计智能体完成，但参与者无法获得精确服务 build 与 seed，所以**模型逐字复现明确为 false**；下游城市硬门由零联网只读 runner 确定性复跑。该边界比虚构“可复现大模型”更重要 [metric:ai_prompt_output_content_addressed_ratio] [metric:deterministic_city_gate_replayable]。
+v3.8 不再只写“AI 生成三个方案”。同一条固定提示词、三份冻结输入和模型捕获输出分别保存于 `ai-spatial-generation-prompt.json`、`public-context.json` / `design-actions-public-context.json` / `fact-diagnosis-action-crosswalk.json` 与 `ai-spatial-options-output.json`；提示词、输入与输出均登记 SHA-256。生成端由 OpenAI Codex 城市设计智能体完成，但参与者无法获得精确服务 build 与 seed，所以**模型逐字复现明确为 false**；下游城市硬门由零联网只读 runner 确定性复跑。该边界比虚构“可复现大模型”更重要 [metric:ai_prompt_output_content_addressed_ratio] [metric:deterministic_city_gate_replayable]。
 
 | 场地 | 场地特异目标向量 | AI 第一顺位 | 确定性硬门 | 设计团队桌面条件优选 | 尚未完成 |
 |---|---|---|---|---|---|
@@ -62,6 +62,8 @@ v3.7 不再只写“AI 生成三个方案”。同一条固定提示词、三份
 | 大钟寺 CT-03 | 网络连续、普通通行、避冲突、人工服务、可逆 | A 连廊先行 | **FAIL：缺铁路/工程/权属/审批证据** | C 地面普通服务＋12米可撤模块 | 站口、消防、盲道、排水、权属与公众复核 |
 
 三行记录绑定九条同坐标候选几何、三条 A—A 剖面、三个时空许可和三份预注册协议。两次改选不是“人一定更正确”的表演，而是证明城市硬约束可以推翻模型排名；三项公众与专业最终选择继续为 `false`，现场绩效、报价和许可继续为 `null` [metric:ai_site_specific_objective_vector_count] [metric:ai_rank_one_hard_constraint_override_count]。
+
+为避免“排名＋理由”仍停留在叙述层，v3.8 把九个候选逐一投影到各场地五项目标，形成 45 个 `PASS / HOLD / FAIL / UNKNOWN` 桌面单元；每格至少回链一条候选几何或城市门证据，并由 runner 核对目标全集、状态词表和证据引用 [metric:ai_candidate_evaluation_cell_count]。三条反事实链进一步固定“AI 第一顺位 → 独立派生硬门 → 设计团队条件优选 → 专业/受影响公众终选仍为 false” [metric:ai_counterfactual_chain_count]。这些状态是设计团队对已捕获方案的桌面评估，不是新的模型推理，也不是现场优劣结论。
 
 ### 品牌、区域接口与国际传播
 
@@ -102,7 +104,7 @@ v3.7 不再只写“AI 生成三个方案”。同一条固定提示词、三份
 
 方案不是从“一脊三地两翼”的形式倒推理由，而是从五组待验证的城市矛盾建立因果链：南北铁路记忆连续、日常横向联系可能割裂，因此提出主脊与三类东西缝合；创新资源高度集聚、公众进入门槛仍需核验，因此把首层开放和人工服务点作为公地界面；AI 场景可见、责任链往往不可见，因此把告知、数据、决定、申诉做成四道空间门；园区更新容易先谈增量，因此坚持保留适配、可逆嵌入和正式资料后置判断；三个重点区都承担 AI 功能，因此必须用安全梯度、孔隙共享和站城客厅三种不同空间语法避免同质化。前两组属于工作假设，必须由公开现状、现场踏勘和官方图纸校准，不能被图面写成既成事实。
 
-v3.7 延续 2026 年现状基线并把事实状态直接写在图上。北京市园林绿化局已公开二期配套项目完工：北段清华东路至北五环为约 30.01 公顷整体建设，南段为配套工程，并形成京张之环、铁轨花园、铁轨/油罐车/汽笛互动装置和鱼骨状慢行网络 [source:OFFICIAL-JZ-PARK-PHASE2-COMPLETE-2026]。2024 年的二期任务报道只用于解释演进过程，不再写成当前“计划建设” [source:OFFICIAL-JZ-PARK-PHASE2-2024]；区园林绿化局关于 13 号线阻隔、北三环北侧就近入口和跨线联系仍需协调的公开答复继续作为大钟寺关系诊断 [source:OFFICIAL-JZ-PARK-ACCESS-RESPONSE-2024]。这些事实支持“在哪里查、为什么缝合”，不授权本案自行确定桥、隧道、道路或入口线位。
+v3.8 延续 2026 年现状基线并把事实状态直接写在图上。北京市园林绿化局已公开二期配套项目完工：北段清华东路至北五环为约 30.01 公顷整体建设，南段为配套工程，并形成京张之环、铁轨花园、铁轨/油罐车/汽笛互动装置和鱼骨状慢行网络 [source:OFFICIAL-JZ-PARK-PHASE2-COMPLETE-2026]。2024 年的二期任务报道只用于解释演进过程，不再写成当前“计划建设” [source:OFFICIAL-JZ-PARK-PHASE2-2024]；区园林绿化局关于 13 号线阻隔、北三环北侧就近入口和跨线联系仍需协调的公开答复继续作为大钟寺关系诊断 [source:OFFICIAL-JZ-PARK-ACCESS-RESPONSE-2024]。这些事实支持“在哪里查、为什么缝合”，不授权本案自行确定桥、隧道、道路或入口线位。
 
 组织方公告将众智园约 192.1 公顷范围定位为“花园型 AI 街区”，强调建筑—绿地—水系一体化、五环交通联系与清河文化 [source:OFFICIAL-ANNOUNCEMENT]；AI 原点社区的官方公开定位是以五道口为核心、约 3 平方公里的近校创新生态，强调高校院所、创新载体与人才创业第一站 [source:OFFICIAL-AI-ORIGIN-2026]。二者只作空间诊断的地名、关系和任务依据，不将任何企业、建筑、用地或绩效自动写入实施承诺；已失效网页中的具体四至、企业和载体信息不再作为证据。
 
@@ -124,7 +126,7 @@ v3.7 延续 2026 年现状基线并把事实状态直接写在图上。北京市
 
 每一层都设置“空间输出、运营输出、复核门槛”：统筹层输出生态图谱和协作协议；总体层输出用地、公共空间、慢行和概念承载单元；重点区输出场景卡、项目清单和风险前置条件。任何指标若不能从 GeoJSON 或可信来源复算，就进入 unknown；任何项目若依赖权属、道路、文保、市政或审批，就不得在分期中表述为确定建设 [depth:risk_missing_data]。
 
-![三地九候选 AI 空间决策：目标向量、排序、城市硬门与条件式优选](assets/figures/land-use-structure.png)
+![三地九候选 AI 空间决策：45格目标证据、城市硬门与三条反事实条件改选链](assets/figures/land-use-structure.png)
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -266,11 +268,13 @@ S02-S04 是三类产业测试验证场景 [metric:testbed_scenario_count]，其�
 
 城市风貌以深蓝轨迹、青绿公地、橙色验证节点为统一识别，建筑界面强调首层可见、室内外协作和夜间克制。历史文化不是科技装饰：京张铁路回答“城市如何连接”，中关村回答“知识如何转化”，AI 新文化回答“技术如何被公共治理”。导视同时显示地点、场景目的、数据边界、责任主体和申诉入口，让视觉识别直接服务可信运行。
 
-![百年京张六段条件式空间叙事：连接、求知、开源、审计与共生](assets/figures/heritage-spatial-narrative.png)
+![京张实体遗产图谱：历史实体、当代诠释和法定锚点如何触发空间动作并恢复普通基线](assets/figures/heritage-spatial-narrative.png)
 
 百年京张不再只用抽象六段叙事。官方一期资料确认恢复老京张正线、修复保留清华园站房，并利用旧铁轨、道岔、机车和火车转盘展示铁路文化 [source:OFFICIAL-JZ-PARK-PHASE1-2023]；2026 完工资料进一步确认京张之环、铁轨花园、油罐车、汽笛互动装置和鱼骨慢行网络 [source:OFFICIAL-JZ-PARK-PHASE2-COMPLETE-2026]。这些是“实体类型已由官方公开、逐件坐标未声称”的资产登记。
 
 清华园车站旧址与平绥西直门车站旧址构成走廊上的两处法定遗产锚点。北京市文物局已公布两处保护范围和建设控制地带文字规则 [source:OFFICIAL-QINGHUAYUAN-PROTECTION-2026] [source:OFFICIAL-XIZHIMEN-PROTECTION-2026]；但相对墙线、房屋编号和距离文字不能替代官方附图与控制点。本案因此只画非定位规则框，设置“官方附图未入库即零侵入”的 G0 门，不数字化虚构法定 polygon。PASS 所借用的“联锁”只表示遗产清单、坐标精度、冲突检查与人工批准未闭合便不能放行，绝不暗示真实铁路信号工程。
+
+实体遗产不是附加图标，而是空间动作的触发器：站房、老正线、旧轨、道岔、机车与转盘只触发零侵入观察、来源标识和人工解释廊；京张之环、铁轨花园、油罐车与汽笛只作为当代诠释设施进入公众学习线路，绝不冒充原真遗存。两类关系共同决定 0.6 米记忆接缝、可撤解释界面和大钟寺 12 米服务模块的朝向；许可到期或任一遗产门失败后，撤除插件，只保留无障碍步行、人工服务与普通花园。逐件坐标仍为 `null`，因此这是一条“类型—动作—普通基线”关系链，不是资产定位图。
 
 ![三类建筑—公共空间界面：安全服务湾、共享首层与双轨服务前厅](assets/figures/building-public-realm-interfaces.png)
 
@@ -278,9 +282,9 @@ S02-S04 是三类产业测试验证场景 [metric:testbed_scenario_count]，其�
 
 八项概念项目形成从空间到运营的最小可行组合 [metric:renewal_project_count]：JZ-01 公地主脊连续性诊断；JZ-02 众智园安全验收庭；JZ-03 原点权利与贡献廊；JZ-04 大钟寺站城验收轨枕；JZ-05 十二场景治理协议；JZ-06 京张贡献与记忆节点；JZ-07 公共数据授权和申诉会客厅；JZ-08 全球开放智能公地年度计划。每项都必须先补充权属、道路、文保、市政、安全或运营条件，不能把清单当作立项或投资承诺。八项均在交付合约中绑定几何证据 [metric:renewal_project_geometry_ref_coverage_ratio]，并用“事实—可证伪诊断—空间动作—图纸—项目—停止条件”交叉表闭合 [metric:fact_diagnosis_action_crosswalk_ratio]；这只证明桌面证据结构完整，不证明落位已经现场成立。
 
-v3.7 保留八份逐项目交付合约，并给 JZ-01—08 增加 `geometry_refs`：每个项目必须指向带日期的公开地图 feature、同坐标条件式设计动作，或明确的 provisional feature；图面针脚不得再由像素假落位。JZ-02—04 的优选动作与 A—A 剖面线直接进入项目引用，JZ-04 继续作为现场可核、人员可排、构件可数、报价可留槽的单一深试点；遗产相关 JZ-01/JZ-06 还必须通过资产登记覆盖、坐标精度、法定控制资料、冲突检查和人工签字五项门。成本带只描述工作量级和询价前提，不虚构货币投资额；任何一项不因其他项目或总体平均表现而放行。
+v3.8 保留八份逐项目交付合约，并给 JZ-01—08 增加 `geometry_refs`：每个项目必须指向带日期的公开地图 feature、同坐标条件式设计动作，或明确的 provisional feature；图面针脚不得再由像素假落位。JZ-02—04 的优选动作与 A—A 剖面线直接进入项目引用，JZ-04 继续作为现场可核、人员可排、构件可数、报价可留槽的单一深试点；遗产相关 JZ-01/JZ-06 还必须通过资产登记覆盖、坐标精度、法定控制资料、冲突检查和人工签字五项门。成本带只描述工作量级和询价前提，不虚构货币投资额；任何一项不因其他项目或总体平均表现而放行。
 
-AI 的规划作用在 v3.7 中被压缩成一条可审计决策链，而不是“生成即采纳”：Codex 城市设计智能体在每个公开研究窗提出三条坐标候选并给出比较次序，城市硬约束随后检查普通通行、已登记空间冲突、工程/权属资料、人工值守和恢复能力；设计团队只能留下一个“桌面条件优选”，专业人员与受影响公众仍保留最终否决。三地共九个候选、三个条件优选中，有两次 AI 第一顺位因普通通行或缺工程/权属证据被改选 [metric:ai_spatial_option_case_count] [metric:ai_rank_one_hard_constraint_override_count]。每次改选都绑定 geometry、A—A 剖面、时空许可、验证协议与恢复状态；这证明人可追溯地推翻 AI，而不证明现场或审批通过。
+AI 的规划作用在 v3.8 中被压缩成一条可审计决策链，而不是“生成即采纳”：Codex 城市设计智能体在每个公开研究窗提出三条坐标候选并给出比较次序，城市硬约束随后检查普通通行、已登记空间冲突、工程/权属资料、人工值守和恢复能力；设计团队只能留下一个“桌面条件优选”，专业人员与受影响公众仍保留最终否决。三地共九个候选、三个条件优选中，有两次 AI 第一顺位因普通通行或缺工程/权属证据被改选 [metric:ai_spatial_option_case_count] [metric:ai_rank_one_hard_constraint_override_count]。每次改选都绑定 geometry、A—A 剖面、时空许可、验证协议与恢复状态；这证明人可追溯地推翻 AI，而不证明现场或审批通过。
 
 三个条件优选各自预注册一份 90 天验证协议 [metric:preregistered_validation_protocol_count] [metric:preregistered_validation_chain_coverage_ratio]：在激活前写死观测位置、无 AI 基线、样本单位与最低样本、频率、测量方法、PASS/HOLD 阈值、缺测处理、采集/复核/签署角色、证据文件和恢复动作。大钟寺把 98.6 米桌面候选中的 CH43.3—55.3 米标作 12 米询价准备验证任务书 [metric:dazhongsi_inquiry_ready_validation_unit_length_target_m]，以六类可数构件和五份验收文件先做 1:1 离线安装—撤除演练 [metric:dazhongsi_inquiry_ready_component_type_count]。该桩号只是同坐标桌面参考，0—30 天核验后遇门口、盲道、排水、消防、装卸、道路、轨道、权属或普通通行冲突必须平移或取消。所有基线和绩效继续为 `null`，专业与公众签字为 `false`，采购单未授权，三家报价金额也为 `null`；协议完整度不能冒充实施完成度。
 

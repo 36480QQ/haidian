@@ -11,7 +11,7 @@
     "prompt_path": "visual/assets/ai-spatial-generation-prompt.json",
     "prompt_sha256": "94586feaa96e860a2b232da27f2f4bfc95c07261b4dcbd2eb95ef0593915c87f",
     "captured_output_path": "visual/assets/ai-spatial-options-output.json",
-    "captured_output_sha256": "78783bfe08d32b9a8a3d6ca3c1f5398e45181feea1af73767f4ce1793f21d37c",
+    "captured_output_sha256": "b8a925d9cfac31aadb0acde18ed767ffb2cc77c92b18d162fd1b46e081077472",
     "bitwise_model_replay_available": false,
     "replay_boundary": "The prompt, frozen inputs and captured output are content-addressed. A future model call may vary because the service build and seed are unavailable; only the downstream city-gate replay is deterministic."
   },
@@ -69,6 +69,15 @@
         "professional_and_affected_public_selection": false
       }
     ]
+  },
+  "desktop_candidate_evaluation": {
+    "source_path": "visual/assets/ai-spatial-options-output.json",
+    "status": "design_team_desktop_evaluation_not_model_inference_not_field_performance",
+    "allowed_cell_states": ["PASS", "HOLD", "FAIL", "UNKNOWN"],
+    "site_objective_vectors": 3,
+    "candidate_evaluation_cells": 45,
+    "counterfactual_chains": 3,
+    "replay_rule": "permit-compiler-runner.js verifies that every option has exactly the five objectives declared for its site and that each chain matches the independently derived city gate and the field-pending conditional preference"
   },
   "field_performance": null,
   "planning_approval": false,
