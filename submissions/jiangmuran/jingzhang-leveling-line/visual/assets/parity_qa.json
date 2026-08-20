@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.791,
+ "overall_ratio": 0.789,
  "floor": 0.75,
  "sections": [
   {
@@ -13,15 +13,15 @@
   {
    "section": "One person's day: what the mechanism looks like on the street",
    "zh_chars": 938,
-   "en_words": 652,
-   "ratio": 0.887,
+   "en_words": 657,
+   "ratio": 0.893,
    "pass": true
   },
   {
    "section": "Design Basis and Source List",
    "zh_chars": 1038,
-   "en_words": 671,
-   "ratio": 0.825,
+   "en_words": 663,
+   "ratio": 0.815,
    "pass": true
   },
   {
@@ -41,29 +41,29 @@
   {
    "section": "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
    "zh_chars": 2322,
-   "en_words": 1521,
-   "ratio": 0.836,
+   "en_words": 1514,
+   "ratio": 0.832,
    "pass": true
   },
   {
    "section": "Detailed Design of Key Areas",
    "zh_chars": 4609,
-   "en_words": 2752,
-   "ratio": 0.762,
+   "en_words": 2751,
+   "ratio": 0.761,
    "pass": true
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
    "zh_chars": 11248,
-   "en_words": 7031,
-   "ratio": 0.797,
+   "en_words": 7018,
+   "ratio": 0.796,
    "pass": true
   },
   {
    "section": "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
    "zh_chars": 2486,
-   "en_words": 1580,
-   "ratio": 0.811,
+   "en_words": 1571,
+   "ratio": 0.806,
    "pass": true
   },
   {
@@ -75,37 +75,37 @@
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 5449,
-   "en_words": 3277,
-   "ratio": 0.767,
+   "zh_chars": 5556,
+   "en_words": 3308,
+   "ratio": 0.759,
    "pass": true
   },
   {
    "section": "Renewal Projects, Implementation Policy, and Phasing",
    "zh_chars": 6044,
-   "en_words": 3613,
+   "en_words": 3609,
    "ratio": 0.762,
    "pass": true
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
    "zh_chars": 5289,
-   "en_words": 3142,
+   "en_words": 3144,
    "ratio": 0.758,
    "pass": true
   },
   {
    "section": "The instrument on the site's own data",
    "zh_chars": 4946,
-   "en_words": 3072,
+   "en_words": 3070,
    "ratio": 0.792,
    "pass": true
   },
   {
    "section": "Risk, Copyright, and Compliance",
    "zh_chars": 2722,
-   "en_words": 1762,
-   "ratio": 0.826,
+   "en_words": 1766,
+   "ratio": 0.828,
    "pass": true
   },
   {
