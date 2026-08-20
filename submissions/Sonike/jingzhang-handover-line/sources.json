@@ -1778,6 +1778,174 @@
       "usable_for_formal": "not_a_factual_source",
       "usable_for_formal_basis": "participant_self_assessed",
       "independent_verification": "**「图内无模型生成文字」可当场核验**：封面上的中英文字全部由 `fonts/NotoSansCJKsc-*.otf` 与 `NotoSans-*.ttf` 在渲染阶段绘制，字形与图件、PDF 完全一致；把封面放大到 1:1 检查，不存在图像模型常见的畸变字。**「无第三方素材」一侧**：本条已声明未向模型提供任何参考图片，`rights_inventory` 中该资产类的 `third_party_content_zh` 为「无」。"
+    },
+    {
+      "id": "SRC-CORRIDOR-PLANNING-READING-2021",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/wsghs/2021dej/d5j/202112/t20211216_2562970.html",
+      "source_type": "official_public",
+      "evidence_class": "historical_public_record",
+      "authority_level": "A0",
+      "title": "规划解读：京张铁路遗址公园，一场各方响应的众创之旅（第五集）",
+      "publisher": "北京市规划和自然资源委员会",
+      "published_date": "2021-12-16",
+      "retrieved_at": "2026-08-20",
+      "accessed_date": "2026-08-20",
+      "collection_method": "2026-08-20 打开市规划和自然资源委员会「规划解读」专题 HTML，逐句转录五处事实：并行轨道线与遗址公园的竖向关系、桥下空间处理、公园起讫与全长、辐射区院所与企业密度、五道口区段长度面积。每一句均以本页措辞为准，不采用媒体报道中的不同数值；含站名的推断一律不做。",
+      "source_locator": "正文关于「正在运行的轨道13线路与遗址公园自北京北站至清河间全线并行」「将13号线桥下空间纳入公园设计」「遗址公园南起北京北站，北至北五环路，全长约9公里」「14平方公里辐射区」「五道口成府路至北四环铁路桥区间」的五个段落",
+      "spatial_coverage": "京张铁路遗址公园（北京北站—北五环路）及其 14 平方公里辐射区，与本方案 11.41 平方公里总体设计范围**不等同**，亦与 43.6 平方公里统筹研究范围不等同",
+      "temporal_coverage": "2021-12（规划解读发布时点；此后轨道工程与公园实施均有进展）",
+      "public_access_status": "official_public_html",
+      "license_or_reuse_terms": "政务信息公开页面，未见明确开放数据许可；本包仅摘录事实语句并保留发布者、标题与原始链接，不复制页面全文，不转载页面图件。",
+      "usage": "为本方案「交通、轨道、市政」一节提供既有轨道条件的官方依据：主轴沿线存在一条与之全线并行、且与城市地面竖向关系反复变化的运营轨道线，其桥下空间已被官方纳入公园设计。同时为产业规模的量级推理提供一个官方口径密度值。不进入 metrics.json。",
+      "transformations": [
+        {
+          "field": "corridor_catchment_firm_density_per_sqkm",
+          "source_value": "科创企业分布密度超过800家/km²",
+          "method": "保留原文「超过800家/km²」的下界性质，不取整、不折算为绝对家数、不按本方案范围面积相乘得出企业总数；仅作量级参照",
+          "stored_value": 800,
+          "stored_unit": "firms_per_sq_km",
+          "bound": "lower_bound"
+        },
+        {
+          "field": "heritage_park_official_length_km",
+          "source_value": "全长约9公里",
+          "method": "保留原文「约9公里」，不与本包 provisional 主轴 9499.778 m 互相校核或替代；两者口径不同（前者为公园全长表述，后者为本方案概念主轴几何长度）",
+          "stored_value": 9,
+          "stored_unit": "km",
+          "bound": "approximate"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rail_line_parallel_full_length",
+          "value": "north_station_to_qinghe_fully_parallel",
+          "unit": "text",
+          "scope": "京张铁路遗址公园沿线",
+          "source_text": "正在运行的轨道13线路与遗址公园自北京北站至清河间全线并行",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "rail_line_vertical_relation_varies",
+          "value": "changes_several_times",
+          "unit": "text",
+          "scope": "京张铁路遗址公园沿线",
+          "source_text": "并且轨道线数次变换着与城市地面的竖向关系",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "under_bridge_space_in_park_design",
+          "value": true,
+          "unit": "boolean",
+          "scope": "京张铁路遗址公园",
+          "source_text": "将13号线桥下空间纳入公园设计，利用北四环北侧桥下腾退空间打造文化交流互动场所",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "heritage_park_extent_official",
+          "value": "北京北站—北五环路",
+          "unit": "text",
+          "scope": "京张铁路遗址公园",
+          "source_text": "遗址公园南起北京北站，北至北五环路，全长约9公里",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "corridor_catchment_institutions",
+          "value": 20,
+          "unit": "count_approx",
+          "scope": "14 平方公里辐射区（非本方案范围）",
+          "source_text": "14平方公里辐射区范围内有清华、北航、北交大、中科院等近20所著名高校和科研院所",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "corridor_catchment_firm_density",
+          "value": 800,
+          "unit": "firms_per_sq_km_lower_bound",
+          "scope": "14 平方公里辐射区（非本方案范围）",
+          "source_text": "科创企业分布密度超过800家/km²",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "wudaokou_segment_planning_stage",
+          "value": "约800米／约1.7公顷",
+          "unit": "text",
+          "scope": "五道口成府路至北四环铁路桥区间",
+          "source_text": "五道口成府路至北四环铁路桥区间长约800米、面积约1.7公顷",
+          "not_spatially_allocable": true
+        }
+      ],
+      "usable_for": [
+        "说明主轴沿线存在一条与之全线并行的运营轨道线，且其与城市地面的竖向关系反复变化——这是本方案断面与接口设计必须面对的既有条件",
+        "说明官方已把该轨道线的桥下空间纳入公园设计，因此桥下空间是可设计对象而非本方案自行主张的新增用地",
+        "为产业规模提供一个官方口径的密度量级参照（下界，跨范围）",
+        "说明官方「约9公里」表述与本包概念主轴几何长度之间的口径差异"
+      ],
+      "not_usable_for": [
+        "作为轨道线的线位、编号、站位、站名、运营组织或工程条件依据——轨道 13 号线扩能提升工程正在实施，编号与运营组织会变，见 SRC-RAIL13-SPLIT-NAMING-2025",
+        "把 800 家/km² 乘以本方案任何范围面积得出企业家数，或写入 metrics.json",
+        "把「约9公里」与本包 provisional 主轴 9499.778 m 互相校核、替代或据此修正几何",
+        "作为公园一期或后续实施范围、时序、投资、权属与文保结论",
+        "把 2021 年规划解读中的区段描述当作已建成状态"
+      ],
+      "limitations": "本页为 2021-12 的规划解读，晚于其发布的轨道工程与公园实施进展不在本页范围内；页面未列举站名，本包因此不写任何站名。「超过800家/km²」是下界表述且口径为 14 平方公里辐射区，与本方案 11.41 平方公里总体设计范围不等同，不可分配到任何空间单元。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "打开 url，检索「自北京北站至清河间全线并行」「数次变换着与城市地面的竖向关系」「13号线桥下空间纳入公园设计」「全长约9公里」「超过800家/km²」五处原句；本包未把 9、800、20、1.7 任一数值写入 metrics.json，可用 `python3 -c \"import json;print([k for k,v in json.load(open('metrics.json'))['metrics'].items() if v.get('value') in (800,20,1.7)])\"` → [] 确认。"
+    },
+    {
+      "id": "SRC-RAIL13-SPLIT-NAMING-2025",
+      "url": "https://www.beijing.gov.cn/ywdt/gzdt/202508/t20250821_4179115.html",
+      "source_type": "media_on_official_portal",
+      "evidence_class": "historical_public_record",
+      "authority_level": "B0",
+      "title": "尊重历史 照顾习惯 好找好记 13号线扩能提升11座车站定名",
+      "publisher": "北京日报（经首都之窗北京市人民政府门户网站转载）",
+      "published_date": "2025-08-21",
+      "retrieved_at": "2026-08-20",
+      "accessed_date": "2026-08-20",
+      "collection_method": "2026-08-20 打开首都之窗转载页 HTML，逐句转录拆分方案表述与 11 座定名车站名单。本包只取「既有线路正在被拆分、车站正在定名」这一事实，不推断任何一站归属哪条线，也不推断本方案沿线三处重点区对应哪一站。",
+      "source_locator": "正文关于「工程将既有地铁13号线『倒U形』线路进行拆分扩能，在16号线和17号线之间形成两条『L形』线路」与 11 座车站定名名单的段落",
+      "spatial_coverage": "北京地铁 13 号线扩能提升工程全线，跨西城、海淀、昌平、朝阳、东城，远大于本方案范围",
+      "temporal_coverage": "2025-08",
+      "public_access_status": "official_public_html",
+      "license_or_reuse_terms": "政府门户网站转载的媒体稿件，未见明确开放数据许可；本包仅摘录事实语句并保留发布者、标题与原始链接。",
+      "usage": "支撑本方案「不依赖线路编号」这一设计立场：既有轨道线正在拆分扩能、车站正在定名，编号与运营组织会变，因此本方案的轨道接口只依赖竖向关系这一空间事实。不进入 metrics.json。",
+      "transformations": [],
+      "observations": [
+        {
+          "id": "rail13_being_split",
+          "value": true,
+          "unit": "boolean",
+          "scope": "北京地铁 13 号线",
+          "source_text": "根据建设方案，工程将既有地铁13号线「倒U形」线路进行拆分扩能，在16号线和17号线之间形成两条「L形」线路。",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "rail13_stations_being_renamed",
+          "value": 11,
+          "unit": "count",
+          "scope": "北京地铁 13 号线扩能提升工程",
+          "source_text": "四道口站、文华路站、霍营东站、上地软件园站、回龙观西大街站、东北旺站、龙泽站、东小口站、北郊农场桥站、保福寺站和太平庄站",
+          "not_spatially_allocable": true
+        }
+      ],
+      "usable_for": [
+        "论证本方案不把任何线路编号或站名写入设计依据的理由：编号与运营组织正在变化",
+        "说明轨道接口的复算触发器为何以「竖向关系」而非「线路编号」定义"
+      ],
+      "not_usable_for": [
+        "推断拆分后各站归属哪条线、开通时序或运力数值",
+        "推断本方案三处重点区对应哪一座车站",
+        "作为线位、站位、工程可行性或投资结论依据",
+        "作为轨道与本方案主轴竖向关系的依据（该依据见 SRC-CORRIDOR-PLANNING-READING-2021）"
+      ],
+      "limitations": "媒体稿件，非工程批复文件；页面未说明 11 座车站分属哪条线，也未涉及本方案沿线区段。本包只用它证明「编号会变」，不用它推断任何空间结论。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed",
+      "independent_verification": "打开 url，检索「倒U形」「拆分扩能」「11座车站定名」三处原句；本包未把 11 或任何站名写入 metrics.json 或 geometry，可用 `grep -c 四道口 metrics.json geometry/*.geojson` → 全 0 确认。"
     }
   ],
   "registry_alignment_note": "本表的 usable_for_formal 采用中央登记表 data/source_registry.json 的同一套取值词汇，以便机器逐项对照。凡 usable_for_formal_basis = central_registry_verbatim 的条目，其 registry_source_id / registry_authority_level / registry_review_status / usable_for_formal 四项均由脚本从中央表逐字复制，未经改写；本包对该来源的用法另受中央表 allowed_uses / prohibited_uses 约束，逐条已在 usable_for / not_usable_for 中收窄。凡 basis = participant_self_assessed 的条目**不在中央表内**，registry_review_status 一律标 not_in_central_registry —— 维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录；但自评状态不等于中央批准，本包不据此主张任何中央审定结论。not_a_factual_source 用于字体与构建工具链条目：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。",
