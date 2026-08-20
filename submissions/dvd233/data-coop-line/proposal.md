@@ -19,12 +19,12 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案首先回应《百年京张 AI 创新带城市设计国际方案征集资格预审公告》及面向智能体的任务书：统筹研究、总体设计、三处重点区域、AI 创新生态和长期运营必须互相校核，而不能用一个技术展馆代替整条创新带。公告给出的 43.6 平方公里、11.4 平方公里和 368.4 公顷是工作尺度依据；提交包中的可计算边界则来自仓库临时几何，两类数字不可混称。公告、任务书、标准快照与资料用途登记共同构成本方案的事实入口 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]。
 
-资料被分成四层使用。第一层是公告、任务书和本地标准快照，用来界定任务与专业深度；第二层是 `data/source_registry.json` 中许可用于正式表达的公开或已清权资料；第三层是七个国际案例的一手来源，只用于比较制度机制，不直接证明北京的合法性或可实施性；第四层是 `brief/site-package/geometry/provisional_boundaries.geojson` 及由其派生的设计图层，只用于临时生成、讨论和复算。事实导航包帮助组织阅读，但不提升任何来源的权威级别 [source:PROCESSED-FACT-PACK]。
+资料被分成四层使用。第一层是公告、任务书和本地标准快照，用来界定任务与专业深度；第二层是 `data/source_registry.json` 中许可用于正式表达的公开或已清权资料；第三层是七个国际案例的一手来源，只用于比较制度机制，不直接证明北京的合法性或可实施性；第四层是 `brief/site-package/geometry/` 下的 `provisional_boundaries.geojson` 及由其派生的设计图层，只用于临时生成、讨论和复算。事实导航包帮助组织阅读，但不提升任何来源的权威级别 [source:PROCESSED-FACT-PACK]。
 
 | 场地证据 | 发布 / 核验日期 | 允许用途与边界 | 冻结结果 |
 | --- | --- | --- | --- |
-| 官方征集公告 | 发布 2026-05-09；登记访问 2026-06-03 | 可确认项目、文字范围、约面积与任务；不能替代 polygon、道路红线或法定控制 | 本地快照 SHA-256 `0f8398bfa3b4…a87d` |
-| 仓库临时三层 / 重点区 polygon | 发布 2026-06-05；依据说明核验 2026-08-07；本包复核 2026-08-20 | 只用于临时生成、离线展示、intake 自检和明确标注的非结论性讨论 | 总体范围与三处重点区 4/4 geometry 精确匹配冻结源；源 SHA-256 `2104ec70263e…7a73` |
+| 官方征集公告 | 发布 2026-05-09；登记访问 2026-06-03 | 可确认项目、文字范围、约面积与任务；不能替代 polygon、道路红线或法定控制 | 本地快照 SHA-256 `158203872171…9cc3` |
+| 仓库临时三层 / 重点区 polygon | 发布 2026-06-05；依据说明核验 2026-08-07；本包复核 2026-08-20 | 只用于临时生成、离线展示、intake 自检和明确标注的非结论性讨论 | 总体范围与三处重点区 4/4 geometry 精确匹配冻结源；源 SHA-256 `0b9ae36bae6e…2306` |
 | 官方控规、文保、道路红线、权属、轨道与蓝线 geometry | 本包复核 2026-08-20 | 未取得可引用的官方或已清权几何；不能用公告文字、OSM 背景或推定线条代填 | `constraints.geojson` 保持 0 feature，并登记 6 类缺口与替换触发器 |
 
 机器台账 `visual/assets/site-evidence-register.json` 冻结 `upstream/main@ce2c6bcee` 的四个来源哈希、4 组 geometry 映射和许可 / 禁用边界；零依赖 `site-evidence-audit.js` 当前 18/18 检查通过。脚本会在来源、geometry、空约束状态或 allowed / prohibited uses 漂移时显式失败；0 个官方控制 feature 表示“缺口已核验”，不表示现实中不存在控制 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/constraints.geojson]。

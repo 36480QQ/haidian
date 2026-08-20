@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-20
+
+P0 source-hash correction / 场地证据源哈希纠偏
+
+- Baseline / 基线：本轮从 `upstream/main` `fae639c40a0b51de971ed4cd98526351d07cbb74` 建立干净分支 `codex/data-coop-line-evidence-consistency-20260820`。后续 main 先后移动到 `b8ddfc8e10b27a3be9629d24e0317f4deaf5cfe1` 和 `58af9968147491c1b0f264890074f1235ceccdaa`；逐次相关路径核对均为 0，只涉及其他投稿或维护提交，未触及本稿、Skill、brief、schema、validator、helper 或门禁，因此不重建冻结点，也不生成无关图件或 PDF。
+- Finding / 发现：P1-01 合并包的 `site-evidence-register.json`、`sources.json` 和 `constraints.geojson` 中四个 SHA-256 不对应其声称冻结的 `ce2c6bcee348accc3c354f585c9ad45e39ff2db7` Git blob。干净 sparse 工作树首先因未检出 `data/source_registry.json` 得到 13/17；补齐只读来源后证明四个哈希均错，而非上游内容后续漂移。
+- Correction / 纠偏：直接对 `git show ce2c6b:<path>` 返回的原始 blob 字节计算 SHA-256，并同时确认这四个文件在 `ce2c6b` 与当前 main 字节相同。纠正后的公告快照、临时边界、边界依据与 source registry 哈希分别为 `158203872171…9cc3`、`0b9ae36bae6e…2306`、`295869f7aafe…4910` 和 `4784e80d2d36…1c66`。
+- Scope / 范围：只同步机器台账、来源与约束缺口记录、中英正文哈希摘要、派生报告 HTML、changelog、manifest 和 self-check。冻结来源提交 `ce2c6b`、四组 geometry 映射、0 个 official-control feature、6 类缺口、许可边界、方案几何、指标、图件与 PDF 均不变。
+- Boundary / 边界：这是证据完整性修复，不是官方精度提升，不新增来源、许可、数据用途、空间结论或实施承诺。
+
 ## v1.2 - 2026-08-20
 
 P1-01 site provenance and verified control-data gap / 场地来源、许可与约束缺口可核验证据
