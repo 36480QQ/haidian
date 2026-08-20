@@ -4,6 +4,18 @@
   "note_en": "**Every gate in this package had only ever been observed passing, and a gate that never fails cannot be told apart from a gate that cannot fail.** Each entry damages the package in a way one gate was built to catch, and requires that gate both to exit non-zero and to name the damage in its output — exiting without naming it sends a reviewer through the whole package (E50: bad news belongs where it happened). Original bytes are restored in a `finally`, so an interrupted run leaves nothing damaged. **One surviving mutation fails the build**, because it would mean a check this package cites as evidence does not do what it is cited for.",
   "mutations": [
     {
+      "id": "M176",
+      "gate": "edition_block_parity_qa.py",
+      "target": "proposal.md",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "what_zh": "把中文版一个随构建生成的块的标记改名，于是它在英文版里没有对应——**这正是 `TBSTRENGTH` 一直以来的状态**，只是从没有任何检查看得见。闸门比对两版的标记集合，点名报出，构建停。",
+      "what_en": "Rename one generated block's marker in the Chinese edition so it no longer corresponds to anything in the English one - **which is the state TBSTRENGTH was already in**, with nothing able to see it. The gate compares the two editions' marker sets, names the difference, and the build stops.",
+      "why_zh": "两版由同一批构建脚本拼装，37 对标记往两个文件里各写一次，**而从没有人比对过「一版有的另一版是否也有」**。`parity_qa` 看不见这一类：它量的是每一节的英文词数对中文字数的下限比，自己的说明里写着它是「地板探测器」——一个 0.46 KB 的表从 262 KB 的文件里消失，那个比值一动不动。英文版正卡在 262,144 字节的入库上限上，所以这张表不是「加上去」就行的，**三轮找可回收字节都只找到承重的内容**，因此把这处不对称写下来并封住：名单就这一条，出现第二条构建就停。",
+      "why_en": "Both editions are assembled by the same builders - 37 marker pairs write once into each file - and **nothing had ever compared what one edition has against what the other has**. parity_qa cannot see this class: it measures a words-per-Chinese-character floor per section and its own docstring calls it a floor detector, so a 0.46 KB table vanishing from a 262 KB file moves that ratio by nothing. The English edition sits exactly on the 262,144-byte intake cap, so the table cannot simply be added, and **three separate sweeps for reclaimable English bytes found only load-bearing content**. The asymmetry is therefore written down and bounded: the list holds one entry and a second fails the build."
+    },
+    {
       "id": "M174",
       "gate": "source_vocabulary_qa.py",
       "target": "sources.json",
@@ -2115,7 +2127,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 172,
+  "caught": 173,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2141,6 +2153,7 @@
     "declared_geometry_qa.py",
     "depth_dimension_evidence_qa.py",
     "derived_count_qa.py",
+    "edition_block_parity_qa.py",
     "edition_render_qa.py",
     "entrance_rule_qa.py",
     "evidence_ceiling.py",
@@ -2277,6 +2290,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 120 道闸门，其中 119 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 120 gates, 119 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 121 道闸门，其中 120 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 121 gates, 120 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
