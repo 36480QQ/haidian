@@ -1961,6 +1961,20 @@
       "evidence_in_package": "assets/figures/*.png、drawings/*.pdf、visual/index[.en].html 首屏",
       "covered_by_self_check_id": "VISUAL_PACKAGING",
       "independent_verification_zh": "四个 HTML 的外部 http(s) 引用数为 0；图件与图纸均为静态位图或矢量。"
+    },
+    {
+      "expectation_id": "PROTOCOL_RECOMPUTATION",
+      "assertion_zh": "96 条规则检查与 48 项接管断言可由随包脚本当场重算，且与随包发布结果逐条一致。规则谓词按 rule-check-report.json 的规则表述独立重写，不是原生成脚本的搬运，因此一致构成独立复现。",
+      "evidence_in_package": "visual/assets/governance/protocol-check-runner.js",
+      "covered_by_self_check_id": null,
+      "independent_verification_zh": "`node visual/assets/governance/protocol-check-runner.js` 输出「规则检查 96/96」「接管断言 48/48」且退出码 0；任何一条不一致即退出 1 并打印发布值与重算值。**该脚本不在 CI 或 preflight 中被调用**（投稿 PR 不得改 scripts/ 与 .github/），须手动执行。"
+    },
+    {
+      "expectation_id": "CLAIM_AUDIT",
+      "assertion_zh": "正文里可复算的数值与结构声明共 49 项，逐条与结构化文件一致。含正文↔数据的逐行核对（落点表每一行的类型与东西侧）、断面表算术（含「容器子段不得重复相加」）、三个矩阵的交叉引用完整性，以及一项断言 ID 全集无缺项的元检查。",
+      "evidence_in_package": "visual/assets/governance/claims-audit.js",
+      "covered_by_self_check_id": null,
+      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「49/49 条声明与包内数据一致」且退出码 0。已做阴性测试：改一行方位报 P3、删一行报 P1／P2、改数据 side 报 B3／B4、把断面合计改成容器重复加的数报 F3／F4、改一个同义词报 F9、删掉任一条 add 报 Z1。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
     }
   ],
   "self_check_expectations_note_zh": "三个矩阵的 self_check_ids 引用的就是本表的 expectation_id。此前这些标签只在矩阵里出现、包内没有定义，而本包的 G01 闸门声称「三个矩阵里的每一条引用都必须能在包内解析到实体」——该自陈对其中 16 个标签（81 处引用）并不成立。本表把它们逐条定义在矩阵自身，因此引用与定义同文件可解析。covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。",
