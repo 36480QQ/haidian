@@ -254,7 +254,11 @@
     ctx.clearRect(0,0,fw,fh);
     ctx.drawImage(img,x,y,fw,fh,0,0,fw,fh);
   }
-  function tick(){ if(auto){fi=(fi+1)%frames;draw();} requestAnimationFrame(tick); }
+  var last=0,step=150;
+  function tick(ts){
+    if(auto&&ts-last>=step){last=ts;fi=(fi+1)%frames;draw();}
+    requestAnimationFrame(tick);
+  }
   var drag=null;
   canvas.addEventListener('mousedown',function(e){drag={x:e.clientX,fi:fi};auto=false;canvas.style.cursor='grabbing';});
   window.addEventListener('mousemove',function(e){ if(!drag)return; var dx=e.clientX-drag.x; fi=((drag.fi+Math.round(dx/12))%frames+frames)%frames; draw(); });
