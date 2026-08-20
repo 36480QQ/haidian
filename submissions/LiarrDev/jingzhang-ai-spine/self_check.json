@@ -10,25 +10,45 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/LiarrDev/jingzhang-ai-spine/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/LiarrDev/jingzhang-ai-spine/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/LiarrDev/jingzhang-ai-spine/spatial.json: items[3]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LiarrDev/jingzhang-ai-spine/spatial.json: items[9]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LiarrDev/jingzhang-ai-spine/spatial.json: items[10]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LiarrDev/jingzhang-ai-spine/spatial.json: items[11]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/LiarrDev/jingzhang-ai-spine/spatial.json: items[12]: provisional spatial concept needs maintainer review before being treated as public-facing context"
       ],
       "proposal_files": [
         "submissions/LiarrDev/jingzhang-ai-spine/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/LiarrDev/jingzhang-ai-spine/changelog.md"
+      ],
       "changed_files": [
         "submissions/LiarrDev/jingzhang-ai-spine/agent.json",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/key-areas.en.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/key-areas.en.svg",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/key-areas.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/key-areas.svg",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/land-use-structure.en.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/land-use-structure.en.svg",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/land-use-structure.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/land-use-structure.svg",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/metrics-evidence.en.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/metrics-evidence.en.svg",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/metrics-evidence.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/metrics-evidence.svg",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/mobility-bluegreen.en.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/mobility-bluegreen.en.svg",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/mobility-bluegreen.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/mobility-bluegreen.svg",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/site-overview.en.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/site-overview.en.svg",
         "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/site-overview.png",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/figures/site-overview.svg",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/identity/spine-mark.svg",
+        "submissions/LiarrDev/jingzhang-ai-spine/assets/media/cover.jpg",
         "submissions/LiarrDev/jingzhang-ai-spine/assumptions.json",
+        "submissions/LiarrDev/jingzhang-ai-spine/changelog.md",
         "submissions/LiarrDev/jingzhang-ai-spine/compliance_matrix.json",
         "submissions/LiarrDev/jingzhang-ai-spine/design_depth_matrix.json",
         "submissions/LiarrDev/jingzhang-ai-spine/drawings/a0-boards.en.pdf",
@@ -52,16 +72,21 @@
         "submissions/LiarrDev/jingzhang-ai-spine/report/narrative.md",
         "submissions/LiarrDev/jingzhang-ai-spine/report/proposal.en.html",
         "submissions/LiarrDev/jingzhang-ai-spine/report/proposal.html",
+        "submissions/LiarrDev/jingzhang-ai-spine/risk.json",
         "submissions/LiarrDev/jingzhang-ai-spine/self_check.json",
+        "submissions/LiarrDev/jingzhang-ai-spine/simulation.json",
         "submissions/LiarrDev/jingzhang-ai-spine/sources.json",
+        "submissions/LiarrDev/jingzhang-ai-spine/spatial.json",
         "submissions/LiarrDev/jingzhang-ai-spine/standard_matrix.json",
+        "submissions/LiarrDev/jingzhang-ai-spine/visual/assets/review_evidence.json",
+        "submissions/LiarrDev/jingzhang-ai-spine/visual/assets/verify_spine.js",
         "submissions/LiarrDev/jingzhang-ai-spine/visual/index.en.html",
         "submissions/LiarrDev/jingzhang-ai-spine/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/LiarrDev/jingzhang-ai-spine": "formal"
       },
-      "total_bytes": 2457962,
+      "total_bytes": 9558254,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -103,10 +128,10 @@
       ],
       "metrics": {
         "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 1408600.768,
+        "green_space_area_sqm": 912777.815,
         "public_space_area_sqm": 836345.643,
-        "building_footprint_area_sqm": 310807.184,
-        "green_ratio": 0.123423,
+        "building_footprint_area_sqm": 2018037.155,
+        "green_ratio": 0.079978,
         "public_space_ratio": 0.073281
       }
     },
@@ -120,7 +145,7 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.123423,
+        "green_ratio": 0.079978,
         "public_space_ratio": 0.073281
       }
     },
@@ -135,15 +160,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 5,
+        "known_metric_refs_required": 15,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 7,
+          "source": 8,
           "standard": 3,
-          "depth": 8,
-          "data": 10,
-          "metric": 4
+          "depth": 9,
+          "data": 18,
+          "metric": 6
         }
       }
     },
@@ -161,7 +186,7 @@
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
   "next_actions": [],
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",

@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "Codex urban-design agent using the GPT-5 model family"
   },
-  "generated_at": "2026-08-13T06:36:00Z",
+  "generated_at": "2026-08-18T06:30:00Z",
   "cover_image": "assets/media/cover-v3.webp",
   "files": [
     {
@@ -26,7 +26,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "2fa11480e95c2a87173ed2ef9c8c7edd67a2e480f13a3c8c12a75bbdfe9c4439",
+      "sha256": "6fbed770bf9989de60fe2c5417723225678e59de78787214494d1e5e11ccd11c",
       "language": "zh"
     },
     {
@@ -35,7 +35,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c67b8feed8b210ff3609efecc7409f0a714fbfac20b16c178d1134ebd3973fba"
+      "sha256": "41fc16bda19186bd8162937f2be73f27af59f395ec1b78d4c716aeb618c92f33"
     },
     {
       "path": "agent.json",
@@ -47,13 +47,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "04052ff1096ecedc7a9ad6139dd7fa1eb585672c085dd579bd8043de7fcd1a14"
+      "sha256": "a01c69398f1a131d79c3056a7d1926c0ed652bf4fc6276483d75a11ac39c74af"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "9dab97cd90d507b0213572989f8e75792a33e73ed4e67f0b76be954d1f75cf79"
+      "sha256": "f264eadf686ffcb393faf51aef75dce0221bac3012fc92a6aa78618b0419da33"
     },
     {
       "path": "sources.json",
@@ -65,13 +65,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2c60f70f4291f976e826cc1ca25747f6ed790da880102e183b61fcd99f2796a6"
+      "sha256": "f2a63c1d912a6a12ebeddaac6ad6b2404494d6f8de962c8267636975f855bea4"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "83a6c45cca144ee09ca70856447e51434006f3ebc33e0187350c32d23d4ebcf1"
+      "sha256": "7a2e3a943a6dc7a7f42b7285903ab83e905cc6dace4c43ac847c65e3f89f9618"
     },
     {
       "path": "standard_matrix.json",
@@ -83,7 +83,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "b369fbece8a4fd568e1117ecd9b441d8ab9fefdd0cbf3679a0dd3bdfc0cab74e"
+      "sha256": "809d9037420e93e5739d54d3436012711c6888ba9c9ffab33c1aa3a5c54c9f61"
     },
     {
       "path": "risk.json",
@@ -97,7 +97,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "cc8d13c27ea1b6ab746c0461e7fd7d55cafb940019d5ef50fdb1585b02172c86",
+      "sha256": "8fc835c002e79c131654bec9de617ee3bf4ac075c9f989bf3c90052fb37fbf57",
       "language": "zh"
     },
     {
@@ -106,7 +106,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b531e9bf941736512cc69bd2886bad72cb4a24d0c71c17f74fc957bfb60d54e3"
+      "sha256": "3cf0a4edefcb6a10c63ccf8694c683d4276cf1bd78f8af64b7c456c5988b20a1"
     },
     {
       "path": "report/narrative.md",
@@ -118,13 +118,13 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "bb3ffcc017a63c7a02d4fee09d873355f613fee67fdf7637031c6d7bf99e829c"
+      "sha256": "7ca475760cc3d81e2cd09cb6f137b2f4b7fa2c087edd7fbd219e42281c54bff4"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "17a19c588b0ca73a093b9d5f10a1cfcdd662e1f899c1fe9f5a5f5ea76c39d185",
+      "sha256": "93bb0041e3f200e42f75a855689b82613b86238cce79adfd115ef977cbf6b2db",
       "language": "zh"
     },
     {
@@ -133,13 +133,13 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "a447d1ab908b8bf2896d36271527c75f293063e689887df726cd77bc62221b18"
+      "sha256": "0b9af69ab24692749cf5fca742febdc7028a1a6b24757b713005062ebb211a5d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "95937eb9da8f07e43c17ab7d6ac2c0631829e16d1a67d459e4a5c5bd994a5c6a",
+      "sha256": "c410c25859719001d53393d9befc188921f54fe5174c2c4b9263e9f2077511e2",
       "language": "zh"
     },
     {
@@ -148,13 +148,13 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "6d0a57985ff12717db205a25d5b9d16e690c05830cbac97d4b55da77d5290a50"
+      "sha256": "b598f9ad6e54b19fcbc9081813c8bb84d071b3d0d725c1a76c5b6ea0907a7890"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "32bd21abb683e5ef865dcfa56992f2d41b901e5502d8dce1faf12a6abc0bc80a",
+      "sha256": "d86883fa2d4993b2e27713d82d9e2a9cfb288794ad76de2c6be4f521caba4a1d",
       "language": "zh"
     },
     {
@@ -163,22 +163,22 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "cce84bae61889e95e2accbcc20132e624f059d66d51acbd245131e25e58f95e3"
+      "sha256": "548bcdb79e6a78a369d93b882768e6ae699eaef1a22dd314fa7c182e64174d26"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "4a4688ac29119d6f77e2d54b23a1344e2414055588748e02fb8c7d89db7bcf00",
+      "sha256": "fe543fa82abf1b4b3c49c6bee110d2847c39feb6ee42fd140d49cebcd79fa749",
       "language": "zh",
-      "description_zh": "v3.5 固定评审视窗核心图：三条近百米公民轨枕的空间、实施、普通城市基线与失败恢复同图可审。",
-      "description_en": "v3.5 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery for three near-hundred-metre Civic Cross-Ties."
+      "description_zh": "v3.8 固定评审视窗核心图：河园非对称、街坊多孔与站城线性三种不可互换的永久边缘、条件式平面和目标剖面。",
+      "description_en": "v3.8 canonical review-window figure: three non-interchangeable permanent edges—asymmetric river–park, porous block, and linear station–city—with conditional plans and target sections."
     },
     {
       "path": "assets/figures/key-areas.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "5763f77249120b7aa755e5b026b29e80714ffbb770f30dcc8dbed924598b5edd",
+      "sha256": "3619d98def2886f8ddb963a099737be1ac3aaaa53f2752d7c6769ff74a128504",
       "language": "en",
       "translation_of": "assets/figures/key-areas.png"
     },
@@ -186,16 +186,16 @@
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "0f62ad2004379ce09dfb5c60541e584b1c4fcf99447899035185abcf84d99803",
+      "sha256": "46c9e9a31b0a160876c347171b3170a9dfa2fcb44834352fc385010d35cc96c9",
       "language": "zh",
-      "description_zh": "v3.5 固定评审视窗核心图：三条近百米公民轨枕的空间、实施、普通城市基线与失败恢复同图可审。",
-      "description_en": "v3.5 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery for three near-hundred-metre Civic Cross-Ties."
+      "description_zh": "v3.8 固定评审视窗核心图：三地九条同坐标候选、45格目标证据、独立派生城市硬门与三条反事实条件改选链。",
+      "description_en": "v3.8 canonical review-window figure: nine same-coordinate options, 45 objective-evidence cells, independently derived city gates, and three counterfactual conditional-selection chains."
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "7f21a56dbe7c3afa35048561f20ab396575e24dd0b7ef97d0594ee69c8030394",
+      "sha256": "7d301356e79c773246ab3803381b6f5e3d1731476ce702d22c3728949f898c33",
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png"
     },
@@ -203,16 +203,16 @@
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "b694d705e10f4c80e26d6df0e84ac6f39971d16546e4a1ec1a071ecf75b8f232",
+      "sha256": "22bc8da0b01626606b28ce62006c7bddaa34ce926bf261f14e0816c4957716f6",
       "language": "zh",
-      "description_zh": "v3.5 固定评审视窗核心图：三条近百米公民轨枕的空间、实施、普通城市基线与失败恢复同图可审。",
-      "description_en": "v3.5 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery for three near-hundred-metre Civic Cross-Ties."
+      "description_zh": "v3.8 固定评审视窗核心图：G0—G4 逐门责任人、必需文件、PASS/HOLD 阈值、失败动作与 CH0—98.6 桌面参考链。",
+      "description_en": "v3.8 canonical review-window figure: G0–G4 accountable roles, required files, PASS/HOLD thresholds, failure actions, and the CH0–98.6 desktop reference chain."
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f409f9e41fb511bbc24f89ecde4279764cdd583bd36d7286bfd4756670658e0b",
+      "sha256": "a19462797cb738ec616a17f08651840e9d7db9b3dc31bd292be71f096c5d2768",
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png"
     },
@@ -220,16 +220,16 @@
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "5c895c2922fd398f383568e13d139c8c858a483841ae642f4b2424ac2dad10f3",
+      "sha256": "23c33e591d81f4583f43a42ddde75937610f55283a0ba41376ac94867ee16492",
       "language": "zh",
-      "description_zh": "v3.5 固定评审视窗核心图：三条近百米公民轨枕的空间、实施、普通城市基线与失败恢复同图可审。",
-      "description_en": "v3.5 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery for three near-hundred-metre Civic Cross-Ties."
+      "description_zh": "v3.8 固定评审视窗核心图：9公里主脊、三条横向缝合、断点与典型慢行蓝绿剖面。",
+      "description_en": "v3.8 canonical review-window figure: the 9 km spine, three east-west stitches, discontinuities, and typical slow-mobility blue-green sections."
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "8d1216283703cbec4df44af028ecb3c4a430d8abc7bc2faaa97dd6d8829e238c",
+      "sha256": "c9589df0d939f3bac807cd0ba84372c966067ae47ba5e6edd25598a91fd63cd2",
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png"
     },
@@ -237,10 +237,10 @@
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f46cde04ae2a798ab94175118dcc7fabd31f540648dd02351a67554b2c2ff84a",
+      "sha256": "aa805f2e69a6d0db5685670a1a818138510a2519241bbc33d5fd2d12733d3228",
       "language": "zh",
-      "description_zh": "v3.5 固定评审视窗核心图：三条近百米公民轨枕的空间、实施、普通城市基线与失败恢复同图可审。",
-      "description_en": "v3.5 canonical review-window figure: spatial design, delivery, ordinary baseline and failure recovery for three near-hundred-metre Civic Cross-Ties."
+      "description_zh": "v3.8 固定评审视窗核心图：一条永久普通城市主脊、三条公民轨枕、三个公开研究窗和现状/条件式设计分层。",
+      "description_en": "v3.8 canonical review-window figure: one permanent ordinary-city spine, three Civic Cross-Ties, three public study windows, and explicit existing/conditional-design layers."
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -248,7 +248,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "ed4f48e3a1505cf01ff234587f3eaf28c2384866b3388582e04849cafc05c03f"
+      "sha256": "a90bc93659a03c3b0b22e37bd1de7d84bbaf9c01c7bb60a29de35789ef5258b7"
     },
     {
       "path": "assets/figures/public-acceptance-street.png",
@@ -257,9 +257,9 @@
       "language": "zh",
       "title_zh": "大钟寺98.6米站城公民轨枕",
       "title_en": "Dazhongsi 98.6 m Station–City Civic Cross-Tie",
-      "description_zh": "四道空间门与一张明确标注的AI生成概念效果图。",
-      "description_en": "Four spatial thresholds plus one clearly labeled AI-generated concept scene.",
-      "sha256": "ceadd1a55e398d560627ce1fd51d25e81b225d9aac85f149f2f3f2054f123409"
+      "description_zh": "大钟寺12×8.4米非施工性能包络：四个3米空间拍、六类构件、15个参考落位、两个1:20装配原理节点和平移/取消边界。",
+      "description_en": "Dazhongsi 12×8.4 m non-construction performance envelope: four 3 m beats, six component types, 15 reference placements, two 1:20 assembly-principle nodes, and relocate/cancel boundaries.",
+      "sha256": "0d8f46ae8d9ffe06c2f9427e06f3970b95ab9124afc3ed042f5953747c1f471f"
     },
     {
       "path": "assets/figures/public-acceptance-street.en.png",
@@ -271,18 +271,18 @@
       "title_en": "Dazhongsi 98.6 m Station–City Civic Cross-Tie (English)",
       "description_zh": "中文图件的等义英文版本。",
       "description_en": "English counterpart of the Chinese figure.",
-      "sha256": "a2ff7eeb22ecddb9316ab9f8a130ac9444fc05592745d5ac914c3a39aa9acb7f"
+      "sha256": "0479ee6c1efc195b1e4e274fb1a4e1fab7682eda71a9dcb21c61c5ed72d324a3"
     },
     {
       "path": "assets/figures/implementation-readiness.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "title_zh": "90天可退出试点",
-      "title_en": "90-Day Exit-Ready Pilot",
-      "description_zh": "试点阶段、六条红线KPI、责任分工、成本带与采购底线。",
-      "description_en": "Pilot stages, six red-line KPIs, accountability, cost bands, and procurement guardrails.",
-      "sha256": "cc1e90e8b32bc92174ff006a9c25f4f6df731dccb6eac2a48d06b87da5693cfc"
+      "title_zh": "评委首页：普通城市主脊、三条轨枕与 AI 改选",
+      "title_en": "Jury Board: Ordinary-City Spine, Three Cross-Ties, and AI Overrides",
+      "description_zh": "遗产主脊、三地公民轨枕、两次 AI 首选改写、15个构件落位与现场/报价/签字为空的总结。",
+      "description_en": "Heritage spine, three Civic Cross-Ties, two AI first-rank overrides, 15 component placements, and explicit field/quote/sign-off nulls.",
+      "sha256": "9de333de413db6c6c954f6ee0c666daa3f0e5eb4426206393a009390c5e484ea"
     },
     {
       "path": "assets/figures/implementation-readiness.en.png",
@@ -294,22 +294,22 @@
       "title_en": "90-Day Exit-Ready Pilot (English)",
       "description_zh": "中文图件的等义英文版本。",
       "description_en": "English counterpart of the Chinese figure.",
-      "sha256": "0010eb7e43ccab3b569ee43eff39db2f52a71a775287f5f2f1b5d290191fc684"
+      "sha256": "341192faca71a55b1f7f85887ce47b061a3b29e3ae496a632047cf7a5684394f"
     },
     {
       "path": "assets/figures/key-area-prototypes.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "57f1837db1dd8e2c79d3d05d78daf771aa3d9146ca30e50e484789debce89771",
+      "sha256": "bf3388384ead6703977d24311be96be20633ef74fb03309986bbfff19e55ae81",
       "language": "zh",
-      "title_zh": "三区平面—剖面—首证据原型",
-      "title_en": "Three Key-Area Plan–Section–Proof Prototypes"
+      "title_zh": "AI 九候选后的三个待核空间假设",
+      "title_en": "Three Field-Pending Spatial Hypotheses after Nine AI Options"
     },
     {
       "path": "assets/figures/key-area-prototypes.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "2ff5a04116653e9bcf30bb7a5a93357bc6c8b062eeb4482bab3013b8fa195414",
+      "sha256": "2b330472fedeaa2ebe51ee1915a1af5215d6b79a2bdb1ec679fb4c96596e96ba",
       "language": "en",
       "translation_of": "assets/figures/key-area-prototypes.png"
     },
@@ -439,9 +439,9 @@
       "language": "zh",
       "title_zh": "迭代记录",
       "title_en": "Revision Log",
-      "description_zh": "v3.5 三条近百米公民轨枕、三区桌面方案比较、目标剖面与98.6米大钟寺站城原型更新。",
-      "description_en": "v3.5 updates three near-hundred-metre Civic Cross-Ties, desktop option comparison, target sections, and the 98.6 m Dazhongsi station-city prototype.",
-      "sha256": "b7ab8dfc13f5ecf84f2eb293d5403e8c3af739df1a26f7759dfd0cacc5e1d7ca"
+      "description_zh": "v3.8 增加45格AI候选目标证据、三条反事实改选链、大钟寺12×8.4米条件式平面与装配节点、京张实体类型—空间动作—普通基线路由。",
+      "description_en": "v3.8 adds 45 AI candidate-objective evidence cells, three counterfactual selection chains, a conditional 12 × 8.4 m Dazhongsi plan with assembly nodes, and physical-heritage type–action–ordinary-baseline routes.",
+      "sha256": "731df7d27df72435296a274e0584f6c2c92445978c5b50c59aa13b8d168b22cc"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -504,7 +504,7 @@
       "language": "zh",
       "title_zh": "众智园条件式详细城市设计",
       "title_en": "Zhongzhiyuan conditional detailed urban design",
-      "sha256": "477d459a3a9714551d5917242b3e716e1df6f62f43747fba8cde0aff4b5c345b"
+      "sha256": "9874ccb58ca98f3be13720af435c3a134da9a79a90a76affefc1954b3f126daa"
     },
     {
       "path": "assets/figures/key-area-origin.png",
@@ -513,25 +513,25 @@
       "language": "zh",
       "title_zh": "AI原点条件式详细城市设计",
       "title_en": "AI Origin conditional detailed urban design",
-      "sha256": "95cd397dfd0bb1d992aea48cb1be27941af5212eca2f2cd9b460e5982597727e"
+      "sha256": "9d88f0db1d61e796026160a490c014499ae4eb51c887a9092b3205f53dcc784c"
     },
     {
       "path": "assets/figures/key-area-dazhongsi.png",
       "role": "design_figure",
       "required": false,
       "language": "zh",
-      "title_zh": "大钟寺98.6米站城公民轨枕条件式详细城市设计",
-      "title_en": "Dazhongsi 98.6 m station-city Civic Cross-Tie conditional detailed urban design",
-      "sha256": "149f97e56fa92b32ed2b81686539b01d3187b99b0616bdb349fbdfe0952add15"
+      "title_zh": "大钟寺98.6米候选与12×8.4米实体模块条件式详设",
+      "title_en": "Dazhongsi 98.6 m candidate and conditional 12 × 8.4 m physical-module dossier",
+      "sha256": "d4f69ab3804675b92cc32fca45b539097088cbb720e53b82e81b6c6200ecc531"
     },
     {
       "path": "assets/figures/heritage-spatial-narrative.png",
       "role": "design_figure",
       "required": false,
       "language": "zh",
-      "title_zh": "百年京张六段空间叙事",
-      "title_en": "Six-part Centennial Jing-Zhang spatial narrative",
-      "sha256": "c94ba68e484a45702dc19b5dc7e76e84a6a536d6ce68bc5f70b24755d4414d07"
+      "title_zh": "京张实体遗产类型—空间动作—普通基线路由图谱",
+      "title_en": "Jing-Zhang physical-heritage type–action–ordinary-baseline atlas",
+      "sha256": "b85478230639e4e8cbde95f3fe79a34cbae0868cf6758c9021c3cb162a96b3ae"
     },
     {
       "path": "assets/figures/building-public-realm-interfaces.png",
@@ -540,7 +540,7 @@
       "language": "zh",
       "title_zh": "建筑—公共空间界面原型",
       "title_en": "Building–public-realm interface prototypes",
-      "sha256": "eeafaecd80d44c1231fc6edd7445f4401c50935177daa591b5a4c937a090adc3"
+      "sha256": "bfed9d22ac2ff7a75a168e40859e335930723bb9903a82bc2d3ad155a7f1e5d4"
     },
     {
       "path": "assets/figures/key-area-zhongzhiyuan.en.png",
@@ -550,7 +550,7 @@
       "title_zh": "众智园条件式详细城市设计",
       "title_en": "Zhongzhiyuan conditional detailed urban design",
       "translation_of": "assets/figures/key-area-zhongzhiyuan.png",
-      "sha256": "f44bf79040d8d250099e91b759083d3ebbe829ecad87e5fe219a538f138e0a32"
+      "sha256": "39042c01017c10801c3468748716c7abd4e00eef07dada4d980d8bff1bf93be3"
     },
     {
       "path": "assets/figures/key-area-origin.en.png",
@@ -560,27 +560,27 @@
       "title_zh": "AI原点条件式详细城市设计",
       "title_en": "AI Origin conditional detailed urban design",
       "translation_of": "assets/figures/key-area-origin.png",
-      "sha256": "518189625aee94c3472d139557db366145d4dc48890a7c8f9f6df34d1a831c3d"
+      "sha256": "6a475b27c9c58d2104a339573444908c186191d48d77678757112eb276ca62a8"
     },
     {
       "path": "assets/figures/key-area-dazhongsi.en.png",
       "role": "design_figure",
       "required": false,
       "language": "en",
-      "title_zh": "大钟寺98.6米站城公民轨枕条件式详细城市设计",
-      "title_en": "Dazhongsi 98.6 m station-city Civic Cross-Tie conditional detailed urban design",
+      "title_zh": "大钟寺98.6米候选与12×8.4米实体模块条件式详设",
+      "title_en": "Dazhongsi 98.6 m candidate and conditional 12 × 8.4 m physical-module dossier",
       "translation_of": "assets/figures/key-area-dazhongsi.png",
-      "sha256": "40c75b85bb444c8765a7a2c64c669c41b770f7f24b6193fbf8cf4332cf6bb29a"
+      "sha256": "60e7ef06582bca392c23675837508f9629ef1dca62fb44240c69466bf45a9769"
     },
     {
       "path": "assets/figures/heritage-spatial-narrative.en.png",
       "role": "design_figure",
       "required": false,
       "language": "en",
-      "title_zh": "百年京张六段空间叙事",
-      "title_en": "Six-part Centennial Jing-Zhang spatial narrative",
+      "title_zh": "京张实体遗产类型—空间动作—普通基线路由图谱",
+      "title_en": "Jing-Zhang physical-heritage type–action–ordinary-baseline atlas",
       "translation_of": "assets/figures/heritage-spatial-narrative.png",
-      "sha256": "784ce84701ab8c3b4376810e481fd6a2edf12b6be0b1f9bd44e657b4b3682ad0"
+      "sha256": "fe03493b77486a872e5062416fdada790ee456e7a32d36a9589d7214c25f7f1e"
     },
     {
       "path": "assets/figures/building-public-realm-interfaces.en.png",
@@ -590,7 +590,7 @@
       "title_zh": "建筑—公共空间界面原型",
       "title_en": "Building–public-realm interface prototypes",
       "translation_of": "assets/figures/building-public-realm-interfaces.png",
-      "sha256": "0830e3efbb18670150a2f8200b8723578e4b167fbf53ed599f075915f78e8859"
+      "sha256": "5be9db7f501be29dddf8c7fdac9ea3ef25bbb21d561aa6ef2cecb0efe57eb751"
     },
     {
       "path": "assets/figures/report-jury-hero.png",
@@ -599,7 +599,7 @@
       "language": "zh",
       "title_zh": "评委首屏：站城公民轨枕与三项核验数字",
       "title_en": "Jury hero: station-city Civic Cross-Tie and three verification figures",
-      "sha256": "0542046117a6e550ba0adc131674c4f4a040c2862e86b031de2c8a26c37f32da"
+      "sha256": "505d71d70abdad674d1c4f75b2f686c349e33002baf80efc401e0ddefb50a912"
     },
     {
       "path": "assets/figures/report-jury-hero.en.png",
@@ -609,7 +609,7 @@
       "title_zh": "评委首屏：站城公民轨枕与三项核验数字",
       "title_en": "Jury hero: station-city Civic Cross-Tie and three verification figures",
       "translation_of": "assets/figures/report-jury-hero.png",
-      "sha256": "d4c6336e8bbac0755f94890e761fe665f1c52ff74603f81e5e5850d28c51f3e5"
+      "sha256": "234abfaa3b1a6bfc3dec80708a46e7e97708f66b9f131f46d49294920bad6021"
     },
     {
       "path": "visual/assets/renewal-projects.json",
@@ -618,7 +618,7 @@
       "language": "neutral",
       "title_zh": "八项更新项目逐项目交付合约",
       "title_en": "Eight project-specific delivery contracts",
-      "sha256": "da55c9af80bd81a04245a719e5ae7e1b0beb0abe905745de4b8034df4660a5b6"
+      "sha256": "816e2015e88ac50f1ff0b898eb744a8fb09ee9325a78fc855dc7231effba4159"
     },
     {
       "path": "visual/assets/spatiotemporal-permits.json",
@@ -627,7 +627,16 @@
       "language": "neutral",
       "title_zh": "三区九备选与三份限时时空许可",
       "title_en": "Nine options and three expiring spatiotemporal permits",
-      "sha256": "af6a56efbdd0d0d88ca66c72254096a4d752c039728a6997b7781e1da653005d"
+      "sha256": "b2c9aa9fec7540bce7de7e11ed12f1a56679469d8a662687b812c2d6ca18d1d7"
+    },
+    {
+      "path": "visual/assets/preregistered-validation-protocols.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三区90天预注册基线与验证协议",
+      "title_en": "Three preregistered 90-day baseline and validation protocols",
+      "sha256": "66cfca46f2a5c60fa63c7506dc480d80428603e00892d0c979571e9c05775abc"
     },
     {
       "path": "visual/assets/permit-compiler-runner.js",
@@ -636,7 +645,62 @@
       "language": "neutral",
       "title_zh": "时空许可编译器零联网校验脚本",
       "title_en": "Zero-network spatiotemporal-permit compiler verifier",
-      "sha256": "bda8c3181ae76f3ae6ace6d084c3c743dc8d402020eb46befc62daa9b4812371"
+      "sha256": "c8492c536d982f935ce0330648f6dd074b69cd47b6becd33aada274bac45ec8f"
+    },
+    {
+      "path": "visual/assets/ai-spatial-generation-prompt.json",
+      "role": "ai_generation_record",
+      "required": false,
+      "language": "en",
+      "title_zh": "三地空间候选生成提示词",
+      "title_en": "Three-site spatial-option generation prompt",
+      "description_zh": "冻结的设计团队 AI 生成任务；内容哈希纳入决策日志，不证明模型位级重放。",
+      "description_en": "Frozen design-team AI generation task; its content hash is recorded in the decision log and does not claim bitwise model replay.",
+      "sha256": "94586feaa96e860a2b232da27f2f4bfc95c07261b4dcbd2eb95ef0593915c87f"
+    },
+    {
+      "path": "visual/assets/ai-spatial-options-output.json",
+      "role": "ai_generation_record",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "三地九候选 AI 输出记录",
+      "title_en": "AI output record for nine options across three sites",
+      "description_zh": "三组场地目标向量、九个候选、45格PASS/HOLD/FAIL/UNKNOWN目标证据、三条反事实改选链及AI排序的内容寻址记录；桌面评估不冒充模型新推理或现场绩效。",
+      "description_en": "Content-addressed record of three site objective vectors, nine options, 45 PASS/HOLD/FAIL/UNKNOWN objective-evidence cells, and three counterfactual selection chains; desktop evaluation is not new model inference or field performance.",
+      "sha256": "b8a925d9cfac31aadb0acde18ed767ffb2cc77c92b18d162fd1b46e081077472"
+    },
+    {
+      "path": "visual/assets/ai-spatial-decision-log.json",
+      "role": "verification_evidence",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "AI 排序—城市硬门—人工改选日志",
+      "title_en": "AI-rank–city-gate–human-override decision log",
+      "description_zh": "锁定 prompt/output/input 哈希、45格桌面目标证据、三条反事实改选链、两次 AI 首选改写、条件式人工理由与重放边界。",
+      "description_en": "Locks prompt/output/input hashes, 45 desktop objective-evidence cells, three counterfactual chains, two AI first-rank overrides, conditional human reasons, and replay boundaries.",
+      "sha256": "324f18b72637c47dab768b17772157dffbce7941e2f64264714c80cf01b25ff6"
+    },
+    {
+      "path": "visual/assets/dazhongsi-component-library.json",
+      "role": "implementation_evidence",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "大钟寺12米性能包络构件库",
+      "title_en": "Dazhongsi 12 m performance-envelope component library",
+      "description_zh": "四个空间拍、六类构件、15个桌面参考落位、两个装配原理节点和现场冲突时平移/取消规则。",
+      "description_en": "Four spatial beats, six component types, 15 desktop reference placements, two assembly-principle nodes, and field-conflict relocate/cancel rules.",
+      "sha256": "bdb4212850e6d769742606eb27d2e3663784cd750abe52bb35c3abe7822e5020"
+    },
+    {
+      "path": "visual/assets/mechanism-lineage.json",
+      "role": "comparative_evidence",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "六案例有界机制转译表",
+      "title_en": "Bounded mechanism-translation register for six cases",
+      "description_zh": "每例分别记录可转移机制、不可复制条件、PASS 本地化动作和可见空间输出；不声称全球唯一。",
+      "description_en": "Separates transferable mechanism, non-transferable condition, PASS translation, and visible spatial output for each case; makes no global-uniqueness claim.",
+      "sha256": "f519737c2168ecbb0933b1ee228ae9794fd4316ebaf0f3b69be0ebf2213f8c0d"
     },
     {
       "path": "visual/assets/public-context.json",
@@ -654,7 +718,7 @@
       "language": "neutral",
       "title_zh": "三区同坐标候选动作、排除区与剖面线",
       "title_en": "Same-coordinate options, exclusions, and section lines for three sites",
-      "sha256": "7bfeb664ca40fe86fd1e540dad3ea4cc346158f3cca57bcc33075e48fa21dea7"
+      "sha256": "2b1f53fdc2dfbf909e0a148266112c60b816b426d096ee693e9c3a56e649c126"
     },
     {
       "path": "visual/assets/fact-diagnosis-action-crosswalk.json",

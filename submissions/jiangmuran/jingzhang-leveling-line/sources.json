@@ -173,7 +173,7 @@
       "license_or_reuse_terms": "仓库公开发布的征集资料。本包按其原文引述口径与数值，不复制全文，不再分发原始文件。",
       "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/agent_taskbook.json",
       "title": "agent_taskbook.json：六项 agent 任务与 63 条要求",
-      "source_locator": "agent.1–agent.6，31 条 must-address 与 32 项 required output",
+      "source_locator": "agent.1–agent.6，32 条 must-address 与 31 项 required output",
       "collection_method": "从仓库树 commit 0e856ea035 直接读取，逐条抽取要求文本并与本包正文小节联接；联接结果随包提交于 taskbook 覆盖检查，未答之处点名列出而非概括。",
       "published_date": "2026-08-08",
       "evidence_class": "official_context",
@@ -196,13 +196,13 @@
       "source_type": "agent_collected_public",
       "usage": "本方案自采数据：对 open-city-ai/haidian 全部已合入方案做权威源普查（枚举 git tree 而非会滞后的 submissions-data.js），统计赛道申报分布、结构收敛度、元符号饱和度与 agent.json 生成方法披露字段的可机读性。",
       "publisher": "open-city-ai/haidian 公开仓库（原始数据）；审计由本方案作者生成",
-      "retrieved_at": "2026-08-13",
+      "retrieved_at": "2026-08-20",
       "collection_method": "census.py 枚举 GitHub git tree API 得到全部方案目录，逐份抓取公开 proposal.md front matter 与 agent.json；field_map.py 汇总统计。两脚本公开于本方案配套 Issue，可重跑复算。",
-      "coverage": "截至 2026-08-13 的 793 份已合入方案，抓取成功 793/793，失败 0。同期 submissions-data.js 索引列 507 份：287 份在 git tree 而不在索引，1 份在索引而不在 tree——两个方向分开给，因为净差会把它们抵消掉。此前各次覆盖自 184 份起逐次增长（历次读数随包，见 `visual/assets/census_history.json` 与 `census.json`）；语料每日增长，引用前须重跑脚本复算。**本条的三个数由构建从 `census.json` 写入，不手敲**：此前它停在 338 份、索引滞后 29 份的那一次，而正文早已在引用第十七次的读数（E196）。",
+      "coverage": "截至 2026-08-20 的 925 份已合入方案，抓取成功 925/925，失败 0。同期 submissions-data.js 索引列 872 份：53 份在 git tree 而不在索引，0 份在索引而不在 tree——两个方向分开给，因为净差会把它们抵消掉。此前各次覆盖自 184 份起逐次增长（历次读数随包，见 `visual/assets/census_history.json` 与 `census.json`）；语料每日增长，引用前须重跑脚本复算。**本条的三个数由构建从 `census.json` 写入，不手敲**：此前它停在 338 份、索引滞后 29 份的那一次，而正文早已在引用第十七次的读数（E196）。",
       "transformations": "赛道申报取 front matter 的 tracks 字段；结构母题与元符号用中文关键词正则；model 字段按是否为占位符/空分桶，并按模型家族归并以计算写法离散度。",
       "limitations": "母题识别基于关键词正则，存在同义表述漏计，全部 share 为下界估计。model 字段为占位符或空只说明机器可读披露字段未填，不等于作者隐瞒模型；写法离散度不评价任何作者。语料随征集持续增长，引用任何数字前须重跑脚本复算。",
       "url": "https://github.com/open-city-ai/haidian/tree/main/submissions",
-      "published_date": "2026-08-13",
+      "published_date": "2026-08-20",
       "source_locator": "submissions/<login>/<slug>/ 下的 proposal.md 与 agent.json，权威源为 GitHub git tree（非 gallery 索引）；此前本条同时带 url 与 source_url 两个字段且取值已不一致（https://github.com/open-city-ai/haidian），已合并为单一 url",
       "license_or_reuse_terms": "各方案由其作者按仓库征集条款公开发布。本包**不再分发任何方案的正文**：随包副本每条记录只保留 title、summary、tracks、proposal_bytes、model 与 model_family——即本包发布的数字实际用到的字段，其余一律裁掉。统计结果为本方案的自采测量，定级 background_only，引用时应重跑而非转引，因为语料每日增长。",
       "evidence_class": "background_only",
@@ -235,7 +235,7 @@
       "url": "https://www.openstreetmap.org/",
       "published_date": "2026-08-08",
       "source_locator": "Overpass API，bbox 39.925,116.315,40.035,116.375；2 条公园边界 way 与 16 条铁路 way，保留原始 way id；此前本条同时带 url 与 source_url 两个字段且取值已不一致（https://www.openstreetmap.org/ · Overpass API），已合并为单一 url",
-      "license_or_reuse_terms": "ODbL 1.0（开放数据库许可）。署名『© OpenStreetMap contributors』，并以相同许可提供。**本包确实再分发了原始数据的一个提取子集**：`visual/assets/osm_reference.json` 内含 2 条公园边界环、16 条铁路 way 的原始坐标与标签，以及本方案自身的两条临时边界环，共 275 个顶点，未做简化。该子集构成 ODbL 意义上的派生数据库（Derivative Database），因此本包整体以 ODbL 1.0 提供该部分数据，并保留原始 way id 以便追溯。此前此处写「不再分发原始数据库」，在坐标随包提交后即不成立，已改正。",
+      "license_or_reuse_terms": "ODbL 1.0（开放数据库许可）。署名『© OpenStreetMap contributors』，并以相同许可提供。**本包确实再分发了原始数据的一个提取子集**：`visual/assets/osm_reference.json` 内含 2 条公园边界环与 16 条铁路 way 的原始坐标与标签，**共 275 个顶点**，未做简化——**这 275 个才是被再分发的 OSM 数据**。同一文件另存本方案自身的两条临时边界环（17 个顶点），**不是 OSM 数据，因此不计入这个数**；此前这句把它们一并列出却又不计入总数。该子集构成 ODbL 意义上的派生数据库（Derivative Database），因此本包整体以 ODbL 1.0 提供该部分数据，并保留原始 way id 以便追溯。此前此处写「不再分发原始数据库」，在坐标随包提交后即不成立，已改正。",
       "evidence_class": "background_only",
       "title": "OpenStreetMap 京张铁路遗址公园与废弃铁路线形提取（本方案自采）",
       "title_en": "OpenStreetMap extract of the Jing-Zhang railway heritage park and the disused alignment (measured by this proposal)",
@@ -364,7 +364,9 @@
       "manual_review_status": "作者已逐条复核",
       "traceability_note_zh": "本条只为赫尔辛基登记册提供可追溯 URL。阿姆斯特丹 Algoritmeregister 在正文中作为**对照**出现，本包**未取得其公开 URL，因此不为它编造一条**——组织方规则要求申请者可见资料必须能追溯到公开 URL，而给一个没读过的对象配上链接，正是这份登记表存在的理由所要防的事。",
       "does_not_support_zh": "该案例只提供算法登记制度的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from algorithm registers and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from algorithm registers and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移「登记即合规」这一定位：登记册记录的是系统声明了什么，本方案要求的是可被第三方重算的读数；也不迁移其自愿登记的范围界定。",
+      "not_transferred_en": "The registry-as-compliance stance is not transferred: a register records what a system declares, while this proposal asks for a reading a third party can recompute. Nor is its voluntary scope."
     },
     {
       "id": "CASE-C2-EU-AI-ACT-RISK-TIERS",
@@ -392,7 +394,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "该案例只提供按风险分级的立法的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from risk-tiered legislation and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from risk-tiered legislation and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其法定义务分级与处罚机制：本方案没有立法权，限差 F 的约束力来自公开读数与整段退回，不来自罚则。",
+      "not_transferred_en": "Its statutory duty tiers and penalties are not transferred: this proposal has no legislative power, and tolerance F binds through a published reading and a whole-segment rollback, not fines."
     },
     {
       "id": "CASE-C3-AI-VERIFY",
@@ -419,7 +423,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "该案例只提供标准化测试框架的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from a standardised testing framework and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from a standardised testing framework and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其测试项清单与认证品牌：本方案不发证书，不认可任何机构背书，退出码本身就是结论。",
+      "not_transferred_en": "Its test catalogue and certification brand are not transferred: this proposal issues no certificate and accepts no institutional endorsement; the exit code is the conclusion."
     },
     {
       "id": "CASE-C4-NHS-ALGORITHMIC-IMPACT",
@@ -446,7 +452,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "该案例只提供算法影响评估实践的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from algorithmic impact assessment and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from algorithmic impact assessment and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其伦理委员会审批流程与病历数据口径：本方案不接触个人数据，复测对象是场地读数而非病人结局。",
+      "not_transferred_en": "Its ethics-committee approval flow and clinical-record basis are not transferred: this proposal touches no personal data, and what is re-measured is a site reading, not a patient outcome."
     },
     {
       "id": "CASE-C5-CIVIC-DATA-AGENDA",
@@ -474,7 +482,9 @@
       "manual_review_status": "作者已逐条复核",
       "traceability_note_zh": "本条只为 Decidim（巴塞罗那）提供可追溯 URL。台北公民参与机制在正文中作为**对照**出现，本包未取得其公开 URL，同样不为它编造一条。",
       "does_not_support_zh": "该案例只提供公民数据受托实践的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from civic data stewardship and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from civic data stewardship and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其市民议程的选举与代表机制：本方案不设代表制，读数由任何到场的人取得，不需要先成为代表。",
+      "not_transferred_en": "Its elected civic-agenda representation is not transferred: this proposal sets up no representative body; a reading is taken by whoever walks up, with no standing required."
     },
     {
       "id": "CASE-C6-ARTIFACT-EVALUATION",
@@ -501,7 +511,9 @@
       "collection_status": "已取得",
       "manual_review_status": "作者已逐条复核",
       "does_not_support_zh": "该案例只提供开源可复现规范的**机制参照**，不构成对本方案的背书；其管辖权、数值与适用条件都不随引用迁移到海淀，**案例存在也不证明该机制有效**——本方案引用它是为了定位缺口，不是为了借势。",
-      "does_not_support_en": "The case supplies a **mechanism reference** from open-source reproducibility norms and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing."
+      "does_not_support_en": "The case supplies a **mechanism reference** from open-source reproducibility norms and no endorsement of this proposal. Its jurisdiction, its numbers and its conditions of application do not travel to Haidian with the citation, and **the case existing is not evidence that the mechanism works**: it is cited to locate a gap, not to borrow standing.",
+      "not_transferred_zh": "不迁移其匿名评审与徽章制度：本方案的复算不设评审人，任何人重跑得到同一个退出码即为结论。",
+      "not_transferred_en": "Its anonymous review and badge scheme are not transferred: recomputation here has no reviewer; anyone re-running it reaches the same exit code, and that is the conclusion."
     },
     {
       "id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -830,9 +842,111 @@
       "file_type": "html",
       "directly_downloadable": true,
       "collection_status": "已取得",
-      "manual_review_status": "author_read_in_full",
+      "manual_review_status": "作者已通读全文",
       "usage_en": "This package had been citing the news item about the same event (HAIDIAN-PARK-PHASE2-PLAN, 2024-09-20). This record is the approval itself: with its issuing number, its recipient body and its construction unit. It is used for three things only: to show that phase 2 holds a municipal approval; to identify the construction unit as the Haidian District Bureau of Landscape and Forestry, which is corroboration for the kind of body this package's park-operator post corresponds to; and to record the approval's site area of 23.08 hectares.",
       "does_not_support_zh": "**不支持**任何红线、控规条件或精确面积结论：23.08 公顷是二期实施方案的批复口径，既不是本包三层范围的任何一层，也不能与本包由临时边界复算的面积互相替代或相加。本条也不使本包获得任何授权——它记录的是别人已获批的事，不是本方案获批。"
+    },
+    {
+      "id": "HAIDIAN-BULLETIN-2025",
+      "url": "https://zyk.bjhd.gov.cn/sjkf/tjgb/202604/t20260410_4811526.shtml",
+      "source_type": "official_public",
+      "title": "海淀区2025年国民经济和社会发展统计公报",
+      "title_en": "Haidian District statistical communique on national economic and social development, 2025",
+      "publisher": "海淀统计局队（发布于北京市海淀区人民政府门户网站）",
+      "published_date": "2026-04-10",
+      "retrieved_at": "2026-08-19",
+      "source_locator": "科技部分：「备案上线大模型123款，占北京全市60%。」；人口部分：「年末全区常住人口311.1万人」",
+      "usage": "给出本带所在行政区（及全市）备案上线大模型的累计口径规模，用于说明「有多少 AI 需要被复测」；不参与任何指标计算。",
+      "usage_en": "Gives the cumulative count of filed large models for the district this belt sits in, and for the city, to say how much AI there is to re-measure. It enters no metric.",
+      "collection_method": "由本方案作者在官方统计公报页面读取正文，抄录该句数值与口径；不复制全文。**两份公报各自独立发布，123/209 = 58.9%，与区级公报四舍五入的 60% 相符——本方案把用在自己数上的互核，同样用在外部数上。**",
+      "collection_method_en": "Read from the official statistical bulletin page, transcribing the figure and its basis; the full text is not copied. **The two bulletins are published separately and check each other: 123/209 = 58.9%, which the district bulletin rounds to 60%.**",
+      "license_or_reuse_terms": "政府门户网站公开发布，依法公开；本包仅引述公布数值并注明出处。",
+      "license_or_reuse_terms_en": "Published on a government portal and public by law; this package cites the published figures with attribution.",
+      "evidence_class": "background_only",
+      "authority_level": "A0",
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "累计口径的行政区/全市总量，**不可分配到本带的任何一段**，不支持任何空间结论、任何用地或路段判断，也不进入任何指标。",
+      "does_not_support_en": "A cumulative district or city total. **It cannot be allocated to any segment of this belt**, supports no spatial conclusion and no land-use or route judgement, and enters no metric.",
+      "observations": [
+        {
+          "id": "haidian_filed_large_models_2025",
+          "value": 123,
+          "unit": "count",
+          "scope": "北京市海淀区，截至 2025 年末累计",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_share_of_beijing_filed_models_2025",
+          "value": 0.6,
+          "unit": "ratio",
+          "scope": "海淀占北京全市，区级公报四舍五入值",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_resident_population_2025",
+          "value": 3111000,
+          "unit": "person",
+          "scope": "北京市海淀区，2025 年末常住人口",
+          "not_spatially_allocable": true
+        }
+      ],
+      "transformations": [
+        {
+          "field": "haidian_share_of_beijing_filed_models_2025",
+          "source_value": "60%",
+          "method": "60 / 100",
+          "stored_value": 0.6,
+          "stored_unit": "ratio"
+        },
+        {
+          "field": "haidian_resident_population_2025",
+          "source_value": "311.1万人",
+          "method": "311.1 × 10000",
+          "stored_value": 3111000,
+          "stored_unit": "person"
+        }
+      ]
+    },
+    {
+      "id": "BEIJING-BULLETIN-2025",
+      "url": "https://tjj.beijing.gov.cn/zxfbu/202603/t20260324_4564401.html",
+      "source_type": "official_public",
+      "title": "北京市2025年国民经济和社会发展统计公报",
+      "title_en": "Beijing statistical communique on national economic and social development, 2025",
+      "publisher": "北京市统计局、国家统计局北京调查总队",
+      "published_date": "2026-03-24",
+      "retrieved_at": "2026-08-19",
+      "source_locator": "「截至年末，全市累计备案上线大模型209款，占全国总数近1/3」",
+      "usage": "给出本带所在行政区（及全市）备案上线大模型的累计口径规模，用于说明「有多少 AI 需要被复测」；不参与任何指标计算。",
+      "usage_en": "Gives the cumulative count of filed large models for the district this belt sits in, and for the city, to say how much AI there is to re-measure. It enters no metric.",
+      "collection_method": "由本方案作者在官方统计公报页面读取正文，抄录该句数值与口径；不复制全文。**两份公报各自独立发布，123/209 = 58.9%，与区级公报四舍五入的 60% 相符——本方案把用在自己数上的互核，同样用在外部数上。**",
+      "collection_method_en": "Read from the official statistical bulletin page, transcribing the figure and its basis; the full text is not copied. **The two bulletins are published separately and check each other: 123/209 = 58.9%, which the district bulletin rounds to 60%.**",
+      "license_or_reuse_terms": "政府门户网站公开发布，依法公开；本包仅引述公布数值并注明出处。",
+      "license_or_reuse_terms_en": "Published on a government portal and public by law; this package cites the published figures with attribution.",
+      "evidence_class": "background_only",
+      "authority_level": "A0",
+      "timeliness_level": "T1",
+      "file_type": "html",
+      "directly_downloadable": true,
+      "collection_status": "已取得",
+      "manual_review_status": "作者已逐条复核",
+      "does_not_support_zh": "全市累计数，**既不能下推到海淀，更不能下推到本带**；本包只用它作为 123 的分母，以核对区级公报自报的 60%。该公报同句还写着「占全国总数近 1/3」，**本包不引这一句**：全国分母不在本方案的任何论证里。",
+      "does_not_support_en": "A citywide cumulative total. **It cannot be pushed down to Haidian, still less to this belt**; it is used here only as the denominator of 123, to check the 60% the district bulletin states of itself. The same sentence also reports nearly a third of the national total, **which this package does not cite**: a national denominator appears nowhere in its argument.",
+      "observations": [
+        {
+          "id": "beijing_filed_large_models_2025",
+          "value": 209,
+          "unit": "count",
+          "scope": "北京市，截至 2025 年末累计",
+          "not_spatially_allocable": true
+        }
+      ],
+      "transformations_absent_reason_zh": "该记录只有一个观测，其印出值 209 与存储值相同——**没有发生任何换算**。写一条「读作整数」的记录，只是说明这个字段被填过，而本包在别处正是拒绝这种填充（`sources_qa` 对 `does_not_support` 就是这么拦的）。",
+      "transformations_absent_reason_en": "This record has one observation whose printed value 209 equals its stored value: **nothing was converted**. A record saying it was read as an integer would state only that the field is filled, which is the padding this package refuses elsewhere."
     }
   ],
   "source_quality_note_zh": "组织方在 `brief/source-quality-rules.md` 里发布了权威等级 A0–A3 与 X（不入库）以及时效等级 T0–T4。本包此前只用自己的证据上限（evidence_class），从未按这份已发布的分级说明自己的来源。此处补上：逐条给出 authority_level 与 timeliness_level，**并逐条核对没有任何一条落在 X（商业地图瓦片、账号内资料、下载密码资料、版权不明图片、非公开图件、个人信息）**。两条不属于该表所描述的类别，写明理由而不是硬套一个档次。**两条自采来源的 `timeliness_level` 此前整字段缺省**——当时只对 `authority_level` 写了「不属该表分档」的理由，而这句话声称的是逐条给出两个分级。现已补上，并写明 OSM 那条的 T0 指取回时刻、不指众包编辑的年龄（E202）。",
@@ -859,9 +973,13 @@
     "why_here_zh": "**版权与许可的逐文件台账在 `visual/assets/rights_ledger.json`，而那份文件不在评审收到的清单里，因此这里给出摘要**：每一类素材的来源、许可与核验方式，都可以在这份文件内独立读到。",
     "why_here_en": "The per-file copyright ledger is visual/assets/rights_ledger.json, which is not among the files handed over, so this summary carries the same ground: for each class of asset, its source, its licence and how to check it, readable without leaving this file.",
     "author": "jiangmuran / Claude Opus 5 (见 agent.json 的 model 与 model_family)",
-    "files_declared": 154,
+    "files_declared": 160,
     "file_classes": {
-      "unclassified": 154
+      "author-originated": 137,
+      "provisional-only-with-stated-limit": 9,
+      "author-originated-measurement": 8,
+      "author-originated-with-embedded-fonts": 4,
+      "third-party-open-data-redistributed": 2
     },
     "embedded_fonts": [
       {

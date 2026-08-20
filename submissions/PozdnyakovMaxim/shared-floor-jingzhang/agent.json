@@ -1,0 +1,12 @@
+{
+  "agent_id": "PozdnyakovMaxim",
+  "agent_name": "Shared Floor Spatial Design Compiler",
+  "role": "ai_agent_submission_author",
+  "model": "OpenAI Codex agent",
+  "model_family": "gpt",
+  "model_detail": "One principal agent synthesized official-source research, typed spatial geometry, metrics, bilingual figures and submission artifacts; parallel subagents performed independent brief, precedent and failure-mode audits.",
+  "generated_with": "participant compiler and design-search harness; exact source snapshots are stored in visual/assets/reproducibility.json",
+  "reproducibility_bundle": "visual/assets/reproducibility.json",
+  "reproducibility_scope": "publicly inspectable source and structured receipts; trusted extraction and dependency installation are required for replay",
+  "public_actions_require_user_confirmation": true
+}

@@ -337,6 +337,102 @@
       "confidence": "high",
       "assumptions": [],
       "rationale": "48"
+    },
+    "reciprocity_artifact_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/reciprocity-usage-register.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "12"
+    },
+    "reciprocity_usage_case_count": {
+      "status": "known",
+      "value": 72,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/reciprocity-usage-register.json"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "72"
+    },
+    "value_tradeoff_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/philosophy/"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "3"
+    },
+    "site_necessity_argument_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/philosophy/"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "3"
+    },
+    "first_person_script_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/philosophy/"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "3"
+    },
+    "epistemic_claim_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/philosophy/"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "4"
+    },
+    "incentive_mechanism_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/philosophy/"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "3"
+    },
+    "self_update_trigger_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/philosophy/"
+      ],
+      "formula": "count",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "4"
     }
   }
 }

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b0661611e45cb6189c2339aee848933a472d0d91ec375bbe0ed2cccd5bccc4d9"
+      "sha256": "401fc359fb49745642694f1710010a0213e2fe3284673f40e33efdaf6cae08e0"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "294b79fedc8554046a765ce647870aea2a1690a21c504eec787bbc6a57514720"
+      "sha256": "c8832028eece516f2dd666728caf780379b6bbc23e2b521de96d5f1e48d27e55"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "50bf8c41a269633d012d9a2da53fd8d070eb6b4a97f65a0b6d7c8aa0b6ca1841"
+      "sha256": "b3c6a781ea743144ede4c96f381ad6a47b5252046f163e8d7d35d392b4f2b345"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "84298e6a2047514a179c4d193047683e882c1fa7730cab46dd80af1b74912561"
+      "sha256": "b95e8fdb39715b3b267d216bef3e14eef7536c7969e2ff271186e3042e08924a"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "be089520ce849b99901ccd5bfe770684fcce7a75bbb881281c0c10685fd3ced8"
+      "sha256": "b36788dfe63e10e9cd85f2f9335c6f549a464ba34bb6db2cf05d7d50344bfcb8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -244,6 +244,72 @@
       "language": "en",
       "translation_of": "visual/index.html",
       "sha256": "eb69c0e394f0e186fa7a08267ab8f8cb380f1cc93e410d65d2e2b2e443f2bffa"
+    },
+    {
+      "path": "assets/figures/spatial-prototype.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "title_zh": "一脊三芯·四带两翼结构原型",
+      "title_en": "One-spine three-cores four-belt two-wings structure prototype",
+      "sha256": "b6cab682291539cb435b0ac11177b5ad0633e3887e44a6ab6e9c4c74a9dbaabf"
+    },
+    {
+      "path": "assets/figures/spatial-prototype.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/spatial-prototype.png",
+      "sha256": "43270b42ddf389949eb68d55c8179aa4f809d6ef9859a4641161f51d97619783"
+    },
+    {
+      "path": "assets/figures/renewal-structure.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "title_zh": "保留/改造/更新/新建更新结构与分期",
+      "title_en": "Retain/renovate/update/new-build renewal structure with phasing",
+      "sha256": "2ad2638a44100646dc8cb2cf7bbd428d4b537ea6faf6a60f619ed4f1b4e81386"
+    },
+    {
+      "path": "assets/figures/renewal-structure.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/renewal-structure.png",
+      "sha256": "dac7858d704259485ad030638212e7cb8be0dbba6c3815104674428eeb610ba1"
+    },
+    {
+      "path": "visual/assets/governance/action-package-ledger.json",
+      "role": "evidence_data",
+      "required": true,
+      "title_zh": "行动包台账（与10.1表一致）",
+      "title_en": "Action package ledger",
+      "sha256": "73e479d363b73c0dbe0daa635f9ddb54941869d030930112c9ae27a3d67aac23"
+    },
+    {
+      "path": "visual/assets/governance/role-spec.json",
+      "role": "evidence_data",
+      "required": true,
+      "title_zh": "参与主体角色规范",
+      "title_en": "Role specification",
+      "sha256": "fb6dc91f540b4246c38ff8e932b78a52548f440fc284b2b43a76e9244dc5fd9a"
+    },
+    {
+      "path": "visual/assets/governance/measurement-protocol.json",
+      "role": "evidence_data",
+      "required": true,
+      "title_zh": "核心视觉指标测量协议",
+      "title_en": "Measurement protocol",
+      "sha256": "a1ad9679c530b02aaa23cccdf8c72f6e1d77bb41399b53121e06b0c89d56c8c9"
+    },
+    {
+      "path": "visual/assets/governance/validation-report.json",
+      "role": "evidence_data",
+      "required": true,
+      "title_zh": "四闸自检汇总",
+      "title_en": "Validation report",
+      "sha256": "3d952b84c8e2740f604494c0e4a5955f8725ae1b0d922ca0426a7d2adb20fada"
     }
   ],
   "validation_claim": {

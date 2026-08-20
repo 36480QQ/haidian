@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for urban design proposal generation, geometry derivation, metrics recalculation, bilingual narrative authoring, visual production and evidence artifact construction; all factual claims traceable to sources.json, metrics.json and visual/assets/ evidence files"
   },
-  "generated_at": "2026-08-16T14:00:00Z",
+  "generated_at": "2026-08-19T05:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "26fb736ae5f8d94148ce0c040e4e8a554f2f3c656ab296fcd362cbf4a5bab38b"
+      "sha256": "5b59cddfb409e4a67f3e7e01cd707ad7082f9c1148a9ecef8036f6b6df7bdf4b"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "b87fb48f9d74898662cb1dbccc139eb1c182dc203f2daea6a5d4dabf54fed940"
+      "sha256": "019fbebe9dd16e0dec90b9d93d5a88c9e6a318c8c88deaa5540b0793ac37dfc9"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "64bf1aa520b120974263b42d4a24f3e3dd2c866f8ac0de75e767609a03659540"
+      "sha256": "cab5052a5ef3a22f735223de968b844a5bf8c8beb11eaec95288d7387539f488"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "79930c677be9027323684b61c8e8da29f6ac0083aa0df5c9dbde848b213364c2"
+      "sha256": "3b1fddfb609cf117dbc2f26edaf5a75e294ac4cf4a17c88ace5f1c06aadd5309"
     },
     {
       "path": "report/narrative.md",
@@ -213,7 +213,7 @@
       "translation_of": "proposal.md",
       "title_zh": "京张AI低速机器人共行网（英文正式译文）",
       "title_en": "Jingzhang AI Low-Speed Robot Co-Mobility Network (English translation)",
-      "sha256": "589c7389e64f43613cb1945f9f105641ae9115f533173c9d6d15af0b1ed0479c"
+      "sha256": "46a7c133b97da9b61f6e868df57bbf8ae9f39e23af9802ddd0f101a509ddcdc2"
     },
     {
       "path": "risk.json",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0d10016d2bc9bd12ee9527c54af385dae5ae9678ebfff0749fd87991cc61efee"
+      "sha256": "b721989bbbc850c31d8d24f02d7518e714cde8f93d59631a474b8bf65aae52d0"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -408,6 +408,66 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "6b7ee0978605b60a54a8b73b0d44d2c61ca6b656820f4b0f7074819fae99cbe1"
+    },
+    {
+      "path": "visual/assets/self-explaining-grammar.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "db8f5721a72e6567fba37cba3ad68b47bd157682383204175b581a3fd361ec5c"
+    },
+    {
+      "path": "visual/assets/run_self_explaining_tabletop.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "8f0f8b1fd1cadcc9be24ba2f877c6318f69846bc2de233c017805b31044f50cc"
+    },
+    {
+      "path": "visual/assets/self-explaining-tabletop-evidence.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "1ab3ef1d66591ff2627db272e8f61cf9e1a964d228601ce37bc5d376b21fe0a6"
+    },
+    {
+      "path": "visual/assets/self-explaining-test-protocol.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "cd835ac3a91df7dcfe8f4fa306983b3dfc3977ec6156c575ebd4f425b4eec254"
+    },
+    {
+      "path": "visual/assets/philosophy/value-tradeoffs.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "d46c827cf7aa1de9afa6a0bcf96ddf4651c600e49c4fed3c1bf2f87c6cd86fa0"
+    },
+    {
+      "path": "visual/assets/philosophy/site-necessity.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "ee496e7d3c694e74ba7c1ae0667147918c5c3ee385564fb8746e4a8d12413da4"
+    },
+    {
+      "path": "visual/assets/philosophy/first-person-scripts.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "2e4f617c47fdcecc8dd8c48bc2af7dd24a22b5ff093a6149b738556ddb0114c0"
+    },
+    {
+      "path": "visual/assets/philosophy/epistemic-grading.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "69190e599e6bac13db4aec182211db5326e02764ed185bfe58a682bab06c87fc"
+    },
+    {
+      "path": "visual/assets/philosophy/incentive-compatibility.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "f8773258a8c8a2968209314eceec9dbbf45bcfa75d63d78558f6bef474df96e8"
+    },
+    {
+      "path": "visual/assets/philosophy/self-update-protocol.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "328e1b79cd495e45b033ec164d374a7258e348ba5f1ad54bbe622e5b08f20bc1"
     }
   ],
   "validation_claim": {

@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "在地必然性论证 (Site Necessity) — why this design can only happen at Jingzhang",
+  "core_claim_zh": "论证此方案为什么只能在京张发生，而非可套用于任何城市的通用方案。在地性从背景变成必要条件。",
+  "core_claim_en": "Argues why this design can only happen at Jingzhang, not be applied as a generic scheme to any city. Locality becomes a necessary condition, not background.",
+  "necessity_arguments": [
+    {
+      "argument_zh": "唯一的'铁路遗产+AI创新带'线性叠合走廊",
+      "reason_zh": "京张铁路遗址公园是唯一贯穿海淀核心区的线性遗产走廊，且公告要求在此建设AI创新带——遗产与AI的线性叠合在此独有",
+      "would_fail_elsewhere_zh": "任何非京张走廊没有铁路遗产作为语法的历史来源"
+    },
+    {
+      "argument_zh": "'时刻表'公共记忆符号仅属于京张",
+      "reason_zh": "京张铁路是中国自主设计建造的第一条铁路，其'时刻表'是京张独有的公共记忆符号；数据时刻表必须锚定这个符号才成立",
+      "would_fail_elsewhere_zh": "脱离京张的时刻表符号，数据时刻表失去公共记忆锚点"
+    },
+    {
+      "argument_zh": "人字轨道自主建造精神是京张独有的精神遗产",
+      "reason_zh": "詹天佑'人字轨道'是中国铁路自主建造的精神符号；断面语法借这个精神锚定其正当性",
+      "would_fail_elsewhere_zh": "脱离京张，断面语法失去精神来源与正当性"
+    }
+  ],
+  "field_status": "not_authorized_not_run"
+}

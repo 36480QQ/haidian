@@ -372,15 +372,16 @@
     },
     "minimum_pilot_duration_days": {
       "status": "known",
-      "value": 14,
+      "value": 90,
       "unit": "days",
       "source_files": [
-        "visual/assets/lived-lifecycle.json"
+        "proposal.md",
+        "proposal.en.md"
       ],
-      "formula": "proposed_bounded_pilot_decision_window",
+      "formula": "proposed_city_design_pilot_window",
       "confidence": "high",
       "assumptions": [],
-      "precision_note": "Proposed minimum-pilot protocol; field operation remains unauthorised and unrun."
+      "precision_note": "Proposed 90-day planning window with four phases; field operation remains unauthorised and unrun."
     },
     "reversible_pilot_kit_type_count": {
       "status": "known",

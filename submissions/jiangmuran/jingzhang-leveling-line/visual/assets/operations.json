@@ -535,8 +535,8 @@
     "note_zh": "上表为**现状布点**的年运营成本。FIG.21 量出全线最远处距最近水准点 1,111 m，对 P5 是 30.9 分钟，九个区段中六个不满足本方案自己的十五分钟规则；补齐需新增 9 个三等点。**那不是同一张表**：补齐后的网络按同一模型另需下列一笔——复测工时、耗材，以及九套标准件每年的更换与安装工时（勘误 E67：这一行曾只算复测，与上表被修正之前犯的是同一个错，只低一行）。把现状成本当作合规网络的成本，是本包会在别人包里指出的那种替换。",
     "note_en": "The table above prices the network **as laid out**. FIG.21 measures the worst walk on the line at 1,111 m — 30.9 minutes for P5 — and finds six of nine segments failing this proposal's own fifteen-minute rule; closing it needs nine more third-order points. **That is not the same table**: a compliant network costs the following again on the same model — re-survey hours, consumables, and the yearly part swaps and fitting labour for nine more kits (E67: this row counted re-survey only, the omission the table above had just been corrected for, one row lower). Letting the as-laid-out figure stand in for the compliant one is the substitution this package would flag elsewhere."
    },
-   "weakest_input_zh": "**这张表里唯一不是数出来的数，是费率**：120–260 元/工时是一个区间估计，包内没有可核对的费率来源，证据等级 provisional。其余每一格都是次数、人数、小时或件数。把费率换成你自己的口径，整张表重算即可——公式随表公布正是为了这个。",
-   "weakest_input_en": "**The only number here that is not counted is the rate**: CNY 120–260 per hour is a band with no verifiable source in this package, and it is graded provisional. Every other cell is a count of sessions, people, hours or items. Substitute your own rate and the table recomputes — the formula ships beside it for exactly that reason."
+   "weakest_input_zh": "**这张表里不是数出来的数有三处，都在这里点名**：费率 120–260 元/工时；**耗材 200–1,500 元/年·点**；以及每次工时区间本身（1.5–8.0 h，按等级不同）。三者都是区间估计，包内都没有可核对的来源，证据等级 provisional。其余每一格都是次数、人数、小时或件数，由这三者算出。把它们换成你自己的口径，整张表重算即可——公式随表公布正是为了这个。",
+   "weakest_input_en": "**Three numbers here are not counted**: the rate (CNY 120–260 per hour), consumables (CNY 200–1,500 a year per benchmark) and the per-session hour bands (1.5–8.0 h by class) — all bands with no verifiable source here, graded provisional. Every other cell is a count of sessions, people, hours or items. Substitute your own and the table recomputes."
   },
   "removal_bond": {
    "creates_new_instrument": false,
@@ -554,8 +554,8 @@
    "custodian_en": "Held in an independent escrow account drawn on by **dual signature** — the contracting party (the implementing body) and the sub-district office together; or replaced at equal value by a bank or insurance guarantee so no cash is tied up.",
    "release_authority_zh": "双签释放，缺任一方签字不得释放。**单方释放不成立**——为撤除付钱的一方，不能同时是判断撤除是否发生的一方。",
    "release_authority_en": "Released on both signatures; neither party alone can release it. **Single-party release does not hold** — the party that pays for removal cannot also be the party that decides whether removal happened.",
-   "borrowed_from_zh": "双签托管的构造借自本场另一份方案（wocaonimaworinixi-collab，X08 撤除准备金）：全场 793 份里只有它给撤除押金写了受托方与支用规则。借来是因为它比本包原来的「发包方释放、街道确认为前置」更硬。",
-   "borrowed_from_en": "The dual-signature escrow construction is borrowed from another submission in this call (wocaonimaworinixi-collab, X08): of 793 packages it is the only one that gives a removal deposit a trustee and a rule for drawing on it. It is borrowed because it is harder than what this package had — release by the contracting party with a confirmation attached.",
+   "borrowed_from_zh": "双签托管的构造借自本场另一份方案（wocaonimaworinixi-collab，X08 撤除准备金）：全场 925 份里有两份给撤除押金写了受托方——另一份是 Persdre，其保证金托管由第三方机构执行；把支用写成双签、缺一不可的仍只有它，本包借的正是这一条。借来是因为它比本包原来的「发包方释放、街道确认为前置」更硬。",
+   "borrowed_from_en": "The dual-signature escrow construction is borrowed from another submission in this call (wocaonimaworinixi-collab, X08): of 925 packages two give a removal deposit a trustee (the other is Persdre) and only it rules the drawdown. It is borrowed because it is harder than what this package had — release by the contracting party with a confirmation attached.",
    "service_level_zh": "服务水平：撤除令发出后 30 日内完成撤除与场地恢复；第三方责任险在设备存续期内不得断保，断保即触发停止条件。",
    "service_level_en": "Service level: removal and site restoration complete within 30 days of a removal order; third-party liability cover may not lapse while the devices stand, and a lapse is itself a stop condition.",
    "stop_conditions_zh": [

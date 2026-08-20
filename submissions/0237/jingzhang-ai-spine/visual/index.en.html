@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Centennial Jing-Zhang AI Innovation Belt · Urban Design Open-Call Submission Showcase</title>
+<title>Star Tracks, Silver Weave · Centennial Jing-Zhang AI Innovation Belt Urban Design Open-Call Submission Showcase</title>
 <style>
 /* === BEGIN embedded OFL CJK font (Noto Sans SC, SIL OFL 1.1) === */
 /* Font: Noto Sans SC (Google Noto project). License: SIL Open Font License 1.1.
@@ -16,63 +16,130 @@ html,body,h1,h2,h3,h4,h5,h6,p,span,div,a,li,ul,ol,td,th,table,caption,strong,em,
 
 
 
-:root{--ink:#16222E;--muted:#5E6E7E;--paper:#F7F9FB;--card:#FFFFFF;--line:#C2CCD8;--k1:#2E6BE6;--k2:#00B4A6;--k3:#7C5CFC;--green:#2FAE6B;--amber:#F2A93B;--sky:#36C5F0;--shadow:rgba(20,34,46,0.08);}
+:root{--ink:#0E1B2E;--muted:#5E7287;--paper:#F4F8FD;--card:#FFFFFF;--line:#D6E0EC;--k1:#2E9BD6;--k2:#1FB98A;--k3:#34C9A0;--green:#1FB98A;--amber:#E8B65A;--sky:#8FD0FF;--silver:#C9D6E8;--jade:#1FB98A;--jade-deep:#138A66;--celadon:#34C9A0;--star:#8FD0FF;--gold:#E8B65A;--night1:#0A1726;--night2:#102A45;--shadow:rgba(14,27,46,0.10);}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Noto Sans SC Embedded','Noto Sans SC','Source Han Sans SC','Microsoft YaHei','SimHei','WenQuanYi Micro Hei',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;font-size:15px;}
-header{background:var(--ink);color:#fff;padding:48px 64px;}
-header h1{margin:0 0 8px;font-size:32px;letter-spacing:1px;}
-header .en{margin:0;color:#9FB2C6;font-size:15px;}
-header .tag{display:inline-block;margin-top:18px;padding:6px 14px;border-radius:20px;background:rgba(0,180,166,0.18);color:#7FE3D6;font-size:13px;font-weight:700;}
-nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);padding:0 64px;z-index:10;display:flex;gap:28px;overflow-x:auto;}
+
+/* HERO — night-sky corridor with starfield + silver/jade thread */
+header{position:relative;color:#EAF4FF;padding:56px 64px 52px;overflow:hidden;
+  background:
+    radial-gradient(1.4px 1.4px at 12% 26%, rgba(255,255,255,.85), transparent 60%),
+    radial-gradient(1.2px 1.2px at 28% 62%, rgba(191,224,255,.80), transparent 60%),
+    radial-gradient(1.6px 1.6px at 47% 18%, rgba(255,255,255,.70), transparent 60%),
+    radial-gradient(1.1px 1.1px at 63% 54%, rgba(191,224,255,.70), transparent 60%),
+    radial-gradient(1.5px 1.5px at 78% 30%, rgba(255,255,255,.75), transparent 60%),
+    radial-gradient(1.2px 1.2px at 88% 66%, rgba(191,224,255,.70), transparent 60%),
+    linear-gradient(135deg, var(--night1), var(--night2));}
+header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--silver) 30%,var(--jade) 72%,transparent);opacity:.85;}
+header h1{margin:0 0 10px;font-size:30px;letter-spacing:2px;font-weight:700;
+  background:linear-gradient(90deg,#EAF4FF 0%,#BFE0FF 46%,#9FF0CF 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+header .en{margin:0;color:#9FBBD6;font-size:14px;letter-spacing:.3px;}
+header .tag{display:inline-block;margin-top:18px;padding:6px 14px;border-radius:20px;
+  background:rgba(31,185,138,.18);color:#8FF0CF;border:1px solid rgba(52,201,160,.4);font-size:13px;font-weight:700;}
+.hero-art{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.hero-content{position:relative;z-index:1;}
+
+nav{position:sticky;top:0;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:0 64px;z-index:10;display:flex;gap:28px;overflow-x:auto;}
 nav a{white-space:nowrap;padding:16px 4px;text-decoration:none;color:var(--muted);font-weight:600;border-bottom:3px solid transparent;transition:.2s;}
-nav a:hover,nav a:focus{color:var(--ink);border-color:var(--k2);}
+nav a:hover,nav a:focus{color:var(--ink);border-color:var(--jade);}
+
 section{padding:46px 64px;max-width:1400px;margin:0 auto;}
-section.alt{background:#fff;}
-h2{margin:0 0 8px;font-size:26px;color:var(--ink);}
+section.alt{background:linear-gradient(180deg,#F1F8F5 0%,#FFFFFF 100%);}
+h2{margin:0 0 8px;font-size:26px;color:var(--ink);position:relative;padding-left:16px;}
+h2::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:3px;background:linear-gradient(180deg,var(--star),var(--jade));}
 h2 .sub{font-size:14px;color:var(--muted);font-weight:400;margin-left:12px;}
-h3{margin:28px 0 12px;font-size:19px;}
+h3{margin:28px 0 12px;font-size:19px;color:var(--ink);}
+
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:22px;}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:0 2px 10px var(--shadow);}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:0 2px 10px var(--shadow);transition:.2s;}
+.card:hover{box-shadow:0 8px 22px rgba(14,27,46,.14);border-color:var(--silver);transform:translateY(-2px);}
+.card::before{content:"";position:absolute;left:0;top:18px;width:4px;height:26px;border-radius:3px;background:var(--star);}
+.card.alt::before{background:var(--jade);}
+.card.alt2::before{background:var(--celadon);}
 .card h4{margin:0 0 8px;font-size:16px;color:var(--k1);}
-.card.alt h4{color:var(--k2);}
-.card.alt2 h4{color:var(--k3);}
+.card.alt h4{color:var(--jade);}
+.card.alt2 h4{color:var(--celadon);}
 .metric{font-size:28px;font-weight:800;color:var(--ink);}
 .metric .unit{font-size:14px;font-weight:400;color:var(--muted);margin-left:3px;}
 .figure{width:100%;border-radius:10px;border:1px solid var(--line);box-shadow:0 4px 16px var(--shadow);margin:18px 0;}
 .scope-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;}
-.scope{border-left:4px solid var(--k2);background:var(--card);padding:16px 20px;border-radius:0 10px 10px 0;flex:1;min-width:260px;box-shadow:0 2px 8px var(--shadow);}
-.scope strong{display:block;font-size:18px;margin-bottom:4px;}
+.scope{position:relative;border-left:4px solid var(--jade);background:linear-gradient(180deg,#F3FBF7,#FFFFFF);padding:16px 20px;border-radius:0 10px 10px 0;flex:1;min-width:260px;box-shadow:0 2px 8px var(--shadow);}
+.scope strong{display:block;font-size:18px;margin-bottom:4px;color:var(--jade-deep);}
 .scenario-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px;}
-.scenario{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;}
-.scenario .id{float:right;font-size:12px;color:#fff;background:var(--k2);padding:2px 8px;border-radius:10px;}
+.scenario{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;transition:.2s;}
+.scenario:hover{border-color:var(--celadon);box-shadow:0 6px 16px rgba(14,27,46,.12);}
+.scenario .id{float:right;font-size:12px;color:#fff;background:var(--jade);padding:2px 8px;border-radius:10px;}
 .scenario h5{margin:0 0 8px;font-size:15px;}
 .scenario p{margin:0;font-size:13px;color:var(--muted);}
 table{width:100%;border-collapse:collapse;margin-top:16px;background:var(--card);border-radius:10px;overflow:hidden;border:1px solid var(--line);}
 th,td{padding:12px 16px;border-bottom:1px solid var(--line);font-size:13.5px;text-align:left;}
-th{background:#f1f5f9;color:var(--muted);font-weight:700;}
+th{background:#EAF3FF;color:var(--muted);font-weight:700;}
 tr:last-child td{border-bottom:none;}
 .status{display:inline-flex;align-items:center;gap:6px;}
 .badge{padding:3px 10px;border-radius:12px;font-size:12px;font-weight:700;}
-.badge.ok{background:#e6f7f2;color:#17855d;}
-.badge.prov{background:#fff4db;color:#946e0f;}
-footer{background:var(--ink);color:#9FB2C6;padding:36px 64px;font-size:13px;}
-footer strong{color:#d8e2ec;}
+.badge.ok{background:rgba(31,185,138,.14);color:#138A66;}
+.badge.prov{background:rgba(232,182,90,.16);color:#946e0f;}
+footer{position:relative;color:#9FBBD6;padding:40px 64px;font-size:13px;
+  background:linear-gradient(135deg,var(--night1),var(--night2));}
+footer::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--jade) 50%,var(--silver) 80%,transparent);opacity:.7;}
+footer strong{color:#EAF4FF;}
 ul.compact{margin:8px 0;padding-left:20px;color:var(--muted);}
 .compact li{margin-bottom:6px;}
 .caption{font-size:12px;color:var(--muted);margin-top:8px;text-align:center;}
 a{color:var(--k1);}
-@media(max-width:900px){section{padding:30px 24px;}nav{padding:0 24px;}header{padding:30px 24px;}}
-.brandlogo{vertical-align:middle;margin-bottom:10px;filter:drop-shadow(0 2px 6px rgba(20,34,46,.18));}.brandbar{display:flex;align-items:center;gap:16px;}.brandbar .lk{font-size:13px;color:#7FE3D6;font-weight:700;letter-spacing:.5px;}
-.brandlogo{vertical-align:middle;margin-bottom:10px;filter:drop-shadow(0 2px 6px rgba(20,34,46,.18));}.brandbar{display:flex;align-items:center;gap:16px;}.brandbar .lk{font-size:13px;color:#7FE3D6;font-weight:700;letter-spacing:.5px;}
+@media(max-width:900px){section{padding:30px 24px;}nav{padding:0 24px;}header{padding:34px 24px;}}
+.brandlogo{vertical-align:middle;margin-bottom:10px;filter:drop-shadow(0 2px 8px rgba(143,208,255,.35));}
+.brandbar{display:flex;align-items:center;gap:16px;}
+.brandbar .lk{font-size:13px;color:#9FF0CF;font-weight:700;letter-spacing:1.5px;}
+.brandlogo{vertical-align:middle;margin-bottom:10px;filter:drop-shadow(0 2px 6px rgba(20,34,46,.18));}.brandbar{display:flex;align-items:center;gap:16px;}.brandbar .lk{font-size:13px;color:#9FF0CF;font-weight:700;letter-spacing:.5px;}
 </style>
 </head>
 <body>
 <header>
-  <!-- BRAND-IDENTITY-INJECTED-v1 -->
-<div class="brandbar"><svg class="brandlogo" width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jing-Zhang AI Spine logo"><defs><linearGradient id="jzsp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00B4A6"/><stop offset="1" stop-color="#2E6BE6"/></linearGradient></defs><path d="M6 36 Q29 27 52 31" fill="none" stroke="url(#jzsp)" stroke-width="5" stroke-linecap="round"/><g stroke="#C2CCD8" stroke-width="2"><line x1="15" y1="32" x2="15" y2="40"/><line x1="29" y1="28" x2="29" y2="36"/><line x1="43" y1="30" x2="43" y2="38"/></g><circle cx="15" cy="35" r="4.6" fill="#fff" stroke="#00B4A6" stroke-width="2.6"/><circle cx="29" cy="31" r="4.6" fill="#fff" stroke="#7C5CFC" stroke-width="2.6"/><circle cx="43" cy="33" r="4.6" fill="#fff" stroke="#2E6BE6" stroke-width="2.6"/><rect x="35" y="13" width="8" height="8" rx="1.6" transform="rotate(45 39 17)" fill="#F2A93B"/></svg><span class="lk">JING-ZHANG AI SPINE</span></div>
-<h1>Jing-Zhang AI Spine · Centennial Jing-Zhang AI Innovation Belt</h1>
-  <p class="en">Jing-Zhang AI Spine · Urban Design Open-Call Submission for the Centennial Jing-Zhang AI Innovation Belt</p>
+  <!-- HERO KV ART :: STAR TRACKS · SILVER WEAVE (inline SVG, gate-safe, no extra file) -->
+  <svg class="hero-art" viewBox="0 0 1600 480" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="hkNight" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1726"/><stop offset="1" stop-color="#102A45"/></linearGradient>
+      <linearGradient id="hkSilver" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8FD0FF"/><stop offset="0.55" stop-color="#C9D6E8"/><stop offset="1" stop-color="#2E9BD6"/></linearGradient>
+      <linearGradient id="hkJade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#34C9A0"/><stop offset="1" stop-color="#138A66"/></linearGradient>
+      <radialGradient id="hkGold" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E8B65A" stop-opacity="0.55"/><stop offset="1" stop-color="#E8B65A" stop-opacity="0"/></radialGradient>
+      <filter id="hkGlow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <rect width="1600" height="480" fill="url(#hkNight)"/>
+    <g fill="#EAF4FF">
+      <circle cx="90" cy="60" r="1.4" opacity=".9"/><circle cx="220" cy="40" r="1.6" opacity=".85"/><circle cx="360" cy="150" r="1.3" opacity=".8"/><circle cx="500" cy="110" r="1.5" opacity=".9"/><circle cx="620" cy="140" r="1.2" opacity=".8"/><circle cx="690" cy="70" r="1.6" opacity=".85"/><circle cx="760" cy="120" r="1.0" opacity=".6"/><circle cx="820" cy="40" r="1.3" opacity=".8"/><circle cx="950" cy="80" r="1.5" opacity=".9"/><circle cx="1070" cy="50" r="1.2" opacity=".8"/><circle cx="1130" cy="110" r="1.4" opacity=".85"/><circle cx="1260" cy="90" r="1.3" opacity=".8"/><circle cx="1320" cy="150" r="1.1" opacity=".7"/><circle cx="1380" cy="60" r="1.5" opacity=".9"/><circle cx="1500" cy="40" r="1.2" opacity=".8"/><circle cx="1560" cy="100" r="1.3" opacity=".85"/><circle cx="250" cy="230" r="1.2" opacity=".7"/><circle cx="540" cy="250" r="1.4" opacity=".75"/><circle cx="700" cy="220" r="1.0" opacity=".6"/><circle cx="1000" cy="230" r="1.0" opacity=".55"/><circle cx="1150" cy="260" r="1.3" opacity=".75"/><circle cx="1300" cy="220" r="1.0" opacity=".6"/><circle cx="1450" cy="250" r="1.2" opacity=".7"/><circle cx="160" cy="300" r="1.0" opacity=".55"/><circle cx="340" cy="320" r="1.2" opacity=".65"/><circle cx="720" cy="330" r="1.1" opacity=".6"/><circle cx="1120" cy="330" r="1.2" opacity=".65"/><circle cx="1340" cy="300" r="1.0" opacity=".55"/><circle cx="1520" cy="320" r="1.1" opacity=".6"/>
+    </g>
+    <g fill="#BFE0FF">
+      <circle cx="150" cy="120" r="1.0" opacity=".7"/><circle cx="300" cy="90" r="1.1" opacity=".6"/><circle cx="430" cy="50" r="1.0" opacity=".7"/><circle cx="560" cy="30" r="1.1" opacity=".65"/><circle cx="1010" cy="130" r="1.0" opacity=".6"/><circle cx="1440" cy="120" r="1.0" opacity=".6"/><circle cx="70" cy="200" r="1.0" opacity=".6"/><circle cx="410" cy="210" r="1.0" opacity=".55"/><circle cx="860" cy="260" r="1.2" opacity=".7"/><circle cx="880" cy="160" r="1.1" opacity=".7"/><circle cx="1190" cy="40" r="1.0" opacity=".6"/>
+    </g>
+    <g fill="#8FD0FF">
+      <circle cx="20" cy="150" r="1.0" opacity=".5"/><circle cx="520" cy="300" r="1.0" opacity=".5"/><circle cx="920" cy="310" r="1.0" opacity=".5"/><circle cx="1230" cy="200" r="1.0" opacity=".5"/>
+    </g>
+    <g fill="none" stroke="url(#hkSilver)" stroke-linecap="round" filter="url(#hkGlow)">
+      <path d="M-60 300 C 320 170 620 360 920 220 S 1420 130 1680 270" stroke-width="2.6"/>
+      <path d="M-60 360 C 360 250 700 410 1010 300 S 1480 220 1680 330" stroke-width="1.8" opacity=".8"/>
+      <path d="M120 120 C 420 60 700 200 1000 140 S 1400 90 1680 180" stroke-width="1.4" opacity=".6"/>
+    </g>
+    <g fill="none" stroke="#C9D6E8" stroke-width="0.9" opacity=".4">
+      <path d="M200 300 L 760 150"/><path d="M520 360 L 1180 200"/><path d="M900 220 L 1500 360"/>
+    </g>
+    <circle cx="1230" cy="150" r="60" fill="url(#hkGold)"/>
+    <path d="M1230 118 L1240 142 L1264 150 L1240 158 L1230 182 L1220 158 L1196 150 L1220 142 Z" fill="#E8B65A" filter="url(#hkGlow)"/>
+    <path d="M-20 430 Q 400 388 800 414 T 1640 404" fill="none" stroke="url(#hkJade)" stroke-width="2.4" filter="url(#hkGlow)"/>
+    <g fill="#5FE0B4" filter="url(#hkGlow)">
+      <circle cx="180" cy="416" r="3.4"/><circle cx="420" cy="402" r="3"/><circle cx="660" cy="411" r="3.6"/><circle cx="900" cy="408" r="3"/><circle cx="1140" cy="406" r="3.6"/><circle cx="1380" cy="404" r="3"/>
+    </g>
+  </svg>
+  <div class="hero-content">
+  <!-- BRAND-IDENTITY-INJECTED-v2 :: STAR TRACKS · SILVER WEAVE -->
+<div class="brandbar"><svg class="brandlogo" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Star Tracks, Silver Weave logo"><defs><linearGradient id="silverThread" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8FD0FF"/><stop offset="1" stop-color="#C9D6E8"/></linearGradient><radialGradient id="jadeNode" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#5FE0B4"/><stop offset="1" stop-color="#138A66"/></radialGradient></defs><path d="M8 46 Q34 16 58 32" fill="none" stroke="url(#silverThread)" stroke-width="2.4" stroke-linecap="round"/><g fill="#BFE0FF"><circle cx="11" cy="44" r="2.2"/><circle cx="24" cy="33" r="1.5"/><circle cx="37" cy="25" r="2.6"/><circle cx="49" cy="28" r="1.7"/></g><path d="M37 14 L38.4 18.6 L43 20 L38.4 21.4 L37 26 L35.6 21.4 L31 20 L35.6 18.6 Z" fill="#E8B65A"/><circle cx="58" cy="32" r="6.4" fill="url(#jadeNode)"/><circle cx="58" cy="32" r="9.8" fill="none" stroke="#34C9A0" stroke-width="1.2" opacity="0.5"/></svg><span class="lk">STAR TRACKS · SILVER WEAVE</span></div>
+<h1>Star Tracks, Silver Weave · Light-Weave Roaming Growth Chronicle</h1>
+  <p class="en">Urban Design Open-Call Submission for the Centennial Jing-Zhang AI Innovation Belt</p>
   <span class="tag">Status: design draft ready · pending finalize / self-check · provisional geometry</span>
+  </div>
 </header>
 
 <nav>
@@ -87,7 +154,78 @@ a{color:var(--k1);}
   <a href="#culture">Culture</a>
   <a href="#operation">Operation</a>
   <a href="#evidence">Sources & Compliance</a>
+  <a href="#dataviz">Data Evidence</a>
 </nav>
+
+<!-- OFFLINE REVIEW DESK :: v7.0 -->
+<section id="reviewdesk" style="background:linear-gradient(135deg,#0A1726 0%,#102A45 100%);color:#EAF4FF;padding:26px 34px 30px;margin:0;">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:16px;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span style="font:700 12px/1 monospace;letter-spacing:.18em;color:#8FD0FF;border:1px solid #8FD0FF;padding:5px 12px;border-radius:999px;">OFFLINE REVIEW DESK</span>
+      <span style="font:700 12px/1 monospace;letter-spacing:.14em;color:#E8B65A;border:1px solid #E8B65A;padding:5px 12px;border-radius:999px;">v7.0 · iteration</span>
+      <span style="font:700 12px/1 monospace;letter-spacing:.1em;color:#1FB98A;border:1px solid #1FB98A;padding:5px 12px;border-radius:999px;">Herringbone Rail · Dual-Gate Switch</span>
+    </div>
+    <span style="font-size:12px;color:#9FB6CC;">verifiable numbers for review</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:22px;">
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#8FD0FF;letter-spacing:.08em;margin-bottom:10px;">CORE MECHANISM</div>
+      <svg viewBox="0 0 640 208" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Herringbone dual-gate switch state machine">
+        <defs><linearGradient id="rdSilver" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8FD0FF"/><stop offset="1" stop-color="#2E9BD6"/></linearGradient></defs>
+        <rect x="10" y="10" width="118" height="52" rx="8" fill="#102A45" stroke="#8FD0FF" stroke-width="1.4"/>
+        <text x="69" y="34" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">AI Auto</text>
+        <text x="69" y="50" text-anchor="middle" font-size="9" fill="#9FB6CC">AI-AUTO</text>
+        <line x1="128" y1="36" x2="168" y2="36" stroke="#C9D6E8" stroke-width="1.4"/>
+        <rect x="168" y="10" width="112" height="52" rx="8" fill="#102A45" stroke="#E8B65A" stroke-width="1.4"/>
+        <text x="224" y="34" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">Anomaly</text>
+        <text x="224" y="50" text-anchor="middle" font-size="9" fill="#9FB6CC">ANOMALY</text>
+        <line x1="280" y1="36" x2="320" y2="36" stroke="#C9D6E8" stroke-width="1.4"/>
+        <rect x="320" y="10" width="126" height="52" rx="8" fill="#102A45" stroke="#E8B65A" stroke-width="2"/>
+        <text x="383" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#E8B65A">Dual-Gate Switch</text>
+        <text x="383" y="46" text-anchor="middle" font-size="9" fill="#9FB6CC">GATE SWITCH</text>
+        <path d="M383 10 L399 36 L383 62 L367 36 Z" fill="none" stroke="#E8B65A" stroke-width="1.6"/>
+        <text x="383" y="78" text-anchor="middle" font-size="8" fill="#9FB6CC">upper AI branch ▼ / lower human branch ▲</text>
+        <line x1="446" y1="36" x2="486" y2="36" stroke="#C9D6E8" stroke-width="1.4"/>
+        <rect x="486" y="10" width="144" height="52" rx="8" fill="#102A45" stroke="#1FB98A" stroke-width="1.4"/>
+        <text x="558" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">Signaler Takeover</text>
+        <text x="558" y="46" text-anchor="middle" font-size="9" fill="#9FB6CC">HUMAN TAKEOVER</text>
+        <text x="558" y="64" text-anchor="middle" font-size="8" fill="#1FB98A">return ticket</text>
+        <rect x="10" y="132" width="150" height="52" rx="8" fill="#102A45" stroke="#1FB98A" stroke-width="1.4"/>
+        <text x="85" y="156" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">Baseline Return</text>
+        <text x="85" y="172" text-anchor="middle" font-size="9" fill="#9FB6CC">BASELINE RETURN</text>
+        <line x1="160" y1="158" x2="212" y2="158" stroke="#C9D6E8" stroke-width="1.4"/>
+        <rect x="212" y="132" width="170" height="52" rx="8" fill="#102A45" stroke="#8FD0FF" stroke-width="1.4"/>
+        <text x="297" y="152" text-anchor="middle" font-size="11" font-weight="700" fill="#EAF4FF">Handover Record</text>
+        <text x="297" y="168" text-anchor="middle" font-size="9" fill="#9FB6CC">HANDOVER RECORD</text>
+        <text x="297" y="204" text-anchor="middle" font-size="8" fill="#9FB6CC">what was handed over + next shift accepts</text>
+        <path d="M558 62 L558 96 L440 96 L440 130" fill="none" stroke="#1FB98A" stroke-width="1.6" stroke-dasharray="5 4"/>
+        <text x="499" y="90" text-anchor="middle" font-size="8" fill="#1FB98A">harmless exit</text>
+        <circle cx="40" cy="90" r="3" fill="#8FD0FF"/><text x="50" y="94" font-size="8" fill="#9FB6CC">12/12 scenarios · 48/48 assertions · fully offline reproducible</text>
+      </svg>
+      <div style="font-size:12px;color:#C9D6E8;line-height:1.7;margin-top:8px;">"The Jing-Zhang train turns around on a herringbone slope; the city's AI hands control back at a herringbone gate." — the Qinglongqiao herringbone track translated into an AI-governance mechanism: a dual gate at every decision node, a mandatory signaler at key nodes, and any AI service can exit harmlessly back to baseline service.</div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#8FD0FF;letter-spacing:.08em;margin-bottom:10px;">REVIEWER QUICK-CHECK</div>
+      <table style="width:100%;border-collapse:collapse;font-size:11.5px;">
+        <tr style="border-bottom:1px solid #2A4666;"><th style="text-align:left;padding:5px 6px;color:#8FD0FF;font-weight:700;">Question</th><th style="text-align:left;padding:5px 6px;color:#8FD0FF;font-weight:700;">Answer</th><th style="text-align:left;padding:5px 6px;color:#8FD0FF;font-weight:700;">Evidence</th></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Original concept?</td><td style="padding:5px 6px;color:#C9D6E8;">Herringbone Rail · Dual-Gate Switch</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">12/12 · 48/48</td></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Space explicit?</td><td style="padding:5px 6px;color:#C9D6E8;">3 scope layers + 3 areas/2 wings + 5 figures</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">9 layers recalc.</td></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Implementable?</td><td style="padding:5px 6px;color:#C9D6E8;">3-phase roadmap + signaler posts + metrics</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">phase/actors aligned</td></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Public interest?</td><td style="padding:5px 6px;color:#C9D6E8;">65 communities / 10 universities / 500k residents</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">matrices in package</td></tr>
+        <tr style="border-bottom:1px solid #223A57;"><td style="padding:5px 6px;color:#EAF4FF;">Data trustworthy?</td><td style="padding:5px 6px;color:#C9D6E8;">Statistics Bureau + Public Data Platform</td><td style="padding:5px 6px;color:#1FB98A;font-weight:700;">3 official sources</td></tr>
+        <tr><td style="padding:5px 6px;color:#EAF4FF;">Boundary honest?</td><td style="padding:5px 6px;color:#C9D6E8;">provisional ≠ redline; field 0 awaiting auth.</td><td style="padding:5px 6px;color:#E8B65A;font-weight:700;">truthfully marked</td></tr>
+      </table>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+        <span style="background:#122C47;border:1px solid #2E9BD6;color:#8FD0FF;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Gates 4/4 PASS</span>
+        <span style="background:#122C47;border:1px solid #2E9BD6;color:#8FD0FF;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Self-check 8/8</span>
+        <span style="background:#122C47;border:1px solid #1FB98A;color:#5FE0B4;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Mechanism 12/12</span>
+        <span style="background:#122C47;border:1px solid #1FB98A;color:#5FE0B4;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Assertions 48/48</span>
+        <span style="background:#122C47;border:1px solid #E8B65A;color:#E8B65A;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Task map 19/19</span>
+        <span style="background:#122C47;border:1px solid #7B68EE;color:#B3A6F5;font:700 12px/1 monospace;padding:7px 12px;border-radius:8px;">Field 0 awaiting</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="overview">
   <h2>Overview <span class="sub">Three scopes · Three areas + Two wings · One AI spine</span></h2>
@@ -128,7 +266,7 @@ a{color:var(--k1);}
   <div class="card-grid">
     <div class="card"><h4>Three Positionings</h4><ul class="compact"><li>Centennial Jing-Zhang Cultural Belt</li><li>Urban AI Living-Experience Belt</li><li>AI-Integrated Innovation Belt</li></ul></div>
     <div class="card alt"><h4>Five Functions</h4><ul class="compact"><li>Full-stack AI Autonomous Innovation</li><li>World-class AI Innovation Ecosystem</li><li>AI+Scenario Empowerment Paradigm</li><li>Intelligent AI-Vibrant City</li><li>Global Voice in AI Governance</li></ul></div>
-    <div class="card alt2"><h4>Naming System</h4><p style="margin:0;font-size:13px;color:var(--muted)">Chinese name: <strong>Jing-Zhang AI Spine</strong> (京张智脉); English: <strong>Jing-Zhang AI Spine</strong>. The image combines the linear continuity of railway heritage with the node-to-node connectivity of an AI neural network, forming an extensible visual-identity direction.</p></div>
+    <div class="card alt2"><h4>Naming System</h4><p style="margin:0;font-size:13px;color:var(--muted)">Chinese name: <strong>星轨轻铺连翠岸，银丝漫织绕青栏</strong> (Star Tracks, Silver Weave); English: <strong>Star Tracks, Silver Weave</strong>. The image weaves a bright, growing identity from night-sky star tracks, silver threads, and jade-green banks, forming an extensible visual-identity direction.</p></div>
   </div>
 </section>
 
@@ -186,36 +324,36 @@ a{color:var(--k1);}
   <h2 style="font-size:22px;color:#16222E;margin:0 0 6px;">Regional Real Baseline &amp; Data Dashboard <span style="font-size:13px;color:#5b6b7b;font-weight:400;">/ 区域真实基底与权威数据看板</span></h2>
   <p style="color:#3a4757;font-size:13.5px;line-height:1.7;margin:0 0 14px;">This design belt is embedded in the real innovation ecosystem and historical context below. All figures are drawn from officially published Beijing/Haidian data (2024–2025) to characterize the proposal's baseline and verifiable boundaries; full citations are in <code>sources.json</code>. These are regional statistics, <b>not project outputs</b>, and do not constitute commitments of investment, output value, or enterprise names.</p>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#2E6BE6;">¥282.2B<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> AI</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Haidian AI core-industry (2024, 80% of Beijing)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-GOV-AI-2025]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#1FB98A;">¥282.2B<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> AI</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Haidian AI core-industry (2024, 80% of Beijing)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-GOV-AI-2025]</div></div>
     <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#00B4A6;">&gt;1900<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> firms</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Haidian AI enterprises (full chain)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-GOV-AI-2025]</div></div>
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#7C5CFC;">80k P<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> compute</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Jing-Jin-Ji green compute (1st 10k-P cluster)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-GOV-AI-2025]</div></div>
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#F2A93B;">9 km<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Jing-Zhang Heritage Park (≈3× NYC High Line)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:JR-RAIL-PARK]</div></div>
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#2E6BE6;">37<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> univ.</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Universities (incl. Tsinghua, Peking)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-GOV-OVERVIEW]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#2E9BD6;">80k P<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> compute</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Jing-Jin-Ji green compute (1st 10k-P cluster)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-GOV-AI-2025]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#E8B65A;">9 km<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Jing-Zhang Heritage Park (≈3× NYC High Line)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:JR-RAIL-PARK]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#1FB98A;">37<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> univ.</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Universities (incl. Tsinghua, Peking)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-GOV-OVERVIEW]</div></div>
     <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#00B4A6;">692<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> acad.</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">CAS/CAE academicians (36.23% of China)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-GOV-OVERVIEW]</div></div>
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#7C5CFC;">500k<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Residents &amp; students served</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:JR-RAIL-PARK]</div></div>
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#F2A93B;">539<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> /10k</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">High-value patents (38.5× national)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-IP-2024]</div></div>
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#2E6BE6;">¥9.85T<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Zhongguancun Zone revenue (2024, 1/3 of Beijing)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-ZGC-2024]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#2E9BD6;">500k<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Residents &amp; students served</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:JR-RAIL-PARK]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#E8B65A;">539<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> /10k</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">High-value patents (38.5× national)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-IP-2024]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#1FB98A;">¥9.85T<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Zhongguancun Zone revenue (2024, 1/3 of Beijing)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-ZGC-2024]</div></div>
     <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#00B4A6;">136<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> LLMs</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Zhongguancun registered LLMs (25.2% of China)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-ZGC-2024]</div></div>
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#7C5CFC;">2023.3.1<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Beijing Urban-Renewal Reg. in force</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-RENEWAL-REG]</div></div>
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#F2A93B;">¥345.9B<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Beijing AI core-industry (2024, +28.8%)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-BJ-AI-2025]</div></div>
-    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#2E6BE6;">132<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> LLMs</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Beijing registered LLMs (#1 in China, 1/3)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-BJ-AI-2025]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#2E9BD6;">2023.3.1<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Beijing Urban-Renewal Reg. in force</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-RENEWAL-REG]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#E8B65A;">¥345.9B<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Beijing AI core-industry (2024, +28.8%)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-BJ-AI-2025]</div></div>
+    <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#1FB98A;">132<span style="font-size:12px;color:#5b6b7b;font-weight:500;"> LLMs</span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">Beijing registered LLMs (#1 in China, 1/3)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-BJ-AI-2025]</div></div>
     <div style="background:#fff;border:1px solid #e3e9f0;border-radius:10px;padding:12px 14px;"><div style="font-size:22px;font-weight:700;color:#00B4A6;">≈¥600B<span style="font-size:12px;color:#5b6b7b;font-weight:500;"></span></div><div style="font-size:12px;color:#3a4757;margin-top:4px;line-height:1.4;">China AI core-industry (2024, ~2× in 4 yrs)</div><div style="font-size:11px;color:#8a97a6;margin-top:6px;">[source:HD-NAT-AI-2024]</div></div>
   </div>
   <div style="background:#0f1b2d;border-radius:12px;padding:18px 16px;overflow:hidden;">
-    <div style="color:#9fb3c8;font-size:12px;letter-spacing:.6px;margin-bottom:2px;">AI Spine Data Backbone / 京张智脉·权威数据脊</div>
+    <div style="color:#9fb3c8;font-size:12px;letter-spacing:.6px;margin-bottom:2px;">Star-Track Data Backbone / 星轨光络·权威数据脊</div>
     <svg viewBox="0 0 900 220" width="100%" role="img" aria-label="Regional authoritative data mapped along the Jing-Zhang AI spine" xmlns="http://www.w3.org/2000/svg" style="display:block;">
       <defs>
         <linearGradient id="spineGrad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#00B4A6"/><stop offset="0.5" stop-color="#7C5CFC"/><stop offset="1" stop-color="#2E6BE6"/>
+          <stop offset="0" stop-color="#00B4A6"/><stop offset="0.5" stop-color="#2E9BD6"/><stop offset="1" stop-color="#1FB98A"/>
         </linearGradient>
       </defs>
       <line x1="60" y1="118" x2="840" y2="118" stroke="url(#spineGrad)" stroke-width="4" stroke-linecap="round"/>
       <g font-family="'Noto Sans SC Embedded','Noto Sans SC',sans-serif" text-anchor="middle">
-        <g><line x1="80" y1="118" x2="80" y2="74" stroke="#2E6BE6" stroke-width="1.5"/><line x1="80" y1="118" x2="80" y2="150" stroke="#2E6BE6" stroke-width="1.5" opacity=".5"/><text x="80" y="66" fill="#ffffff" font-size="19" font-weight="700">¥282.2B</text><text x="80" y="150" fill="#aebfd0" font-size="11">Haidian AI</text><text x="80" y="166" fill="#7e90a4" font-size="10">2024·80% of BJ</text><circle cx="80" cy="118" r="6" fill="#0f1b2d" stroke="#2E6BE6" stroke-width="3"/></g>
+        <g><line x1="80" y1="118" x2="80" y2="74" stroke="#1FB98A" stroke-width="1.5"/><line x1="80" y1="118" x2="80" y2="150" stroke="#1FB98A" stroke-width="1.5" opacity=".5"/><text x="80" y="66" fill="#ffffff" font-size="19" font-weight="700">¥282.2B</text><text x="80" y="150" fill="#aebfd0" font-size="11">Haidian AI</text><text x="80" y="166" fill="#7e90a4" font-size="10">2024·80% of BJ</text><circle cx="80" cy="118" r="6" fill="#0f1b2d" stroke="#1FB98A" stroke-width="3"/></g>
         <g><line x1="232" y1="118" x2="232" y2="74" stroke="#00B4A6" stroke-width="1.5"/><line x1="232" y1="118" x2="232" y2="150" stroke="#00B4A6" stroke-width="1.5" opacity=".5"/><text x="232" y="66" fill="#ffffff" font-size="19" font-weight="700">80k P</text><text x="232" y="150" fill="#aebfd0" font-size="11">Jing-Jin-Ji compute</text><text x="232" y="166" fill="#7e90a4" font-size="10">1st 10k-P cluster</text><circle cx="232" cy="118" r="6" fill="#0f1b2d" stroke="#00B4A6" stroke-width="3"/></g>
-        <g><line x1="384" y1="118" x2="384" y2="74" stroke="#7C5CFC" stroke-width="1.5"/><line x1="384" y1="118" x2="384" y2="150" stroke="#7C5CFC" stroke-width="1.5" opacity=".5"/><text x="384" y="66" fill="#ffffff" font-size="19" font-weight="700">9 km</text><text x="384" y="150" fill="#aebfd0" font-size="11">Heritage Park</text><text x="384" y="166" fill="#7e90a4" font-size="10">≈3× High Line</text><circle cx="384" cy="118" r="6" fill="#0f1b2d" stroke="#7C5CFC" stroke-width="3"/></g>
-        <g><line x1="536" y1="118" x2="536" y2="74" stroke="#F2A93B" stroke-width="1.5"/><line x1="536" y1="118" x2="536" y2="150" stroke="#F2A93B" stroke-width="1.5" opacity=".5"/><text x="536" y="66" fill="#ffffff" font-size="19" font-weight="700">37</text><text x="536" y="150" fill="#aebfd0" font-size="11">universities</text><text x="536" y="166" fill="#7e90a4" font-size="10">Tsinghua·Peking</text><circle cx="536" cy="118" r="6" fill="#0f1b2d" stroke="#F2A93B" stroke-width="3"/></g>
-        <g><line x1="688" y1="118" x2="688" y2="74" stroke="#2E6BE6" stroke-width="1.5"/><line x1="688" y1="118" x2="688" y2="150" stroke="#2E6BE6" stroke-width="1.5" opacity=".5"/><text x="688" y="66" fill="#ffffff" font-size="19" font-weight="700">692</text><text x="688" y="150" fill="#aebfd0" font-size="11">academicians</text><text x="688" y="166" fill="#7e90a4" font-size="10">36.23% of China</text><circle cx="688" cy="118" r="6" fill="#0f1b2d" stroke="#2E6BE6" stroke-width="3"/></g>
+        <g><line x1="384" y1="118" x2="384" y2="74" stroke="#2E9BD6" stroke-width="1.5"/><line x1="384" y1="118" x2="384" y2="150" stroke="#2E9BD6" stroke-width="1.5" opacity=".5"/><text x="384" y="66" fill="#ffffff" font-size="19" font-weight="700">9 km</text><text x="384" y="150" fill="#aebfd0" font-size="11">Heritage Park</text><text x="384" y="166" fill="#7e90a4" font-size="10">≈3× High Line</text><circle cx="384" cy="118" r="6" fill="#0f1b2d" stroke="#2E9BD6" stroke-width="3"/></g>
+        <g><line x1="536" y1="118" x2="536" y2="74" stroke="#E8B65A" stroke-width="1.5"/><line x1="536" y1="118" x2="536" y2="150" stroke="#E8B65A" stroke-width="1.5" opacity=".5"/><text x="536" y="66" fill="#ffffff" font-size="19" font-weight="700">37</text><text x="536" y="150" fill="#aebfd0" font-size="11">universities</text><text x="536" y="166" fill="#7e90a4" font-size="10">Tsinghua·Peking</text><circle cx="536" cy="118" r="6" fill="#0f1b2d" stroke="#E8B65A" stroke-width="3"/></g>
+        <g><line x1="688" y1="118" x2="688" y2="74" stroke="#1FB98A" stroke-width="1.5"/><line x1="688" y1="118" x2="688" y2="150" stroke="#1FB98A" stroke-width="1.5" opacity=".5"/><text x="688" y="66" fill="#ffffff" font-size="19" font-weight="700">692</text><text x="688" y="150" fill="#aebfd0" font-size="11">academicians</text><text x="688" y="166" fill="#7e90a4" font-size="10">36.23% of China</text><circle cx="688" cy="118" r="6" fill="#0f1b2d" stroke="#1FB98A" stroke-width="3"/></g>
         <g><line x1="820" y1="118" x2="820" y2="74" stroke="#00B4A6" stroke-width="1.5"/><line x1="820" y1="118" x2="820" y2="150" stroke="#00B4A6" stroke-width="1.5" opacity=".5"/><text x="820" y="66" fill="#ffffff" font-size="19" font-weight="700">500k</text><text x="820" y="150" fill="#aebfd0" font-size="11">residents&students</text><text x="820" y="166" fill="#7e90a4" font-size="10">10 univ·65 comm</text><circle cx="820" cy="118" r="6" fill="#0f1b2d" stroke="#00B4A6" stroke-width="3"/></g>
       </g>
     </svg>
@@ -286,7 +424,7 @@ a{color:var(--k1);}
     <div class="card"><h4>Jing-Zhang Railway AI Time Station</h4><p>Located in the Jing-Zhang Heritage Park, converting an old platform into an exhibition hall, starting plaza, and event living room where AI and railway culture meet.</p></div>
     <div class="card alt"><h4>AI Origin Monument / Open-Source Contribution Wall</h4><p>A core node in the Beijing AI Origin Quarter, recording key figures, open-source projects, benchmarks, and community contributions in Chinese AI development.</p></div>
     <div class="card alt2"><h4>Dazhong Temple Intelligent-Native Enclave</h4><p>An urban living room featuring intelligent-native commerce, unmanned delivery, and generative experiences, showing AI integrated into everyday life.</p></div>
-    <div class="card"><h4>Honor Display System</h4><p>"Jing-Zhang AI Spine Annual Contribution Rankings", Open-Source Stars, Scenario Pioneers, and Young Innovator honor nodes embedded in public space and digital interfaces.</p></div>
+    <div class="card"><h4>Honor Display System</h4><p>"Star Tracks Annual Contribution Rankings", Open-Source Stars, Scenario Pioneers, and Young Innovator honor nodes embedded in public space and digital interfaces.</p></div>
   </div>
 </section>
 
@@ -307,6 +445,38 @@ a{color:var(--k1);}
     <div class="card alt"><h4>Developer Community Operation</h4><p>With open-source foundations, university labs, and corporate research institutes as nodes, forming a contribution → certification → employment/entrepreneurship pipeline.</p></div>
     <div class="card alt2"><h4>Scenario Open Mechanism</h4><p>Publish scenario demand lists, openly recruit test entities, conduct ethics and safety reviews, and archive/reuse outcomes.</p></div>
     <div class="card"><h4>Global Communication & Transformation</h4><p>Multilingual brand narrative, international media coverage, overseas developer visit routes, and industry landing services.</p></div>
+  </div>
+</section>
+
+<section id="participation" class="alt">
+  <h2>Public Participation Constellation <span class="sub">everyone is a star · silver threads weave the light-web</span></h2>
+  <p>Using "Star-Track Light-Web" as a metaphor, diverse actors — the public, developers, scholars, local residents, operators, and visitors — are seen as stars in the night sky. Four "silver thread" channels (online proposals, workshops, open-source collaboration, and an annual assembly) gather dispersed public will into a participatory, traceable, and feedback-ready design light-web.</p>
+  <svg viewBox="0 0 900 360" width="100%" role="img" aria-label="Public participation constellation concept" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto;max-width:900px;margin:18px auto;border-radius:12px;">
+    <defs>
+      <linearGradient id="pSky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A1726"/><stop offset="1" stop-color="#102A45"/></linearGradient>
+      <radialGradient id="pCore" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#5FE0B4"/><stop offset="1" stop-color="#138A66"/></radialGradient>
+      <linearGradient id="pThread" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8FD0FF"/><stop offset="1" stop-color="#C9D6E8"/></linearGradient>
+    </defs>
+    <rect width="900" height="360" rx="14" fill="url(#pSky)"/>
+    <g fill="#BFE0FF">
+      <circle cx="120" cy="70" r="3"/><circle cx="220" cy="120" r="2.4"/><circle cx="80" cy="180" r="2.6"/><circle cx="300" cy="60" r="2.2"/><circle cx="170" cy="250" r="3"/><circle cx="360" cy="200" r="2.4"/><circle cx="640" cy="90" r="3"/><circle cx="760" cy="150" r="2.6"/><circle cx="700" cy="250" r="2.2"/><circle cx="600" cy="300" r="2.8"/><circle cx="820" cy="220" r="2.4"/><circle cx="540" cy="120" r="2.2"/>
+    </g>
+    <g stroke="url(#pThread)" stroke-width="1.4" opacity="0.7" fill="none">
+      <path d="M120 70 Q400 120 450 180"/><path d="M220 120 Q380 150 450 180"/><path d="M80 180 Q300 190 450 180"/><path d="M300 60 Q420 120 450 180"/><path d="M170 250 Q360 220 450 180"/><path d="M360 200 Q420 195 450 180"/><path d="M640 90 Q520 130 450 180"/><path d="M760 150 Q560 170 450 180"/><path d="M700 250 Q540 220 450 180"/><path d="M600 300 Q500 240 450 180"/><path d="M820 220 Q560 200 450 180"/><path d="M540 120 Q480 150 450 180"/>
+    </g>
+    <circle cx="450" cy="180" r="26" fill="url(#pCore)"/>
+    <circle cx="450" cy="180" r="40" fill="none" stroke="#34C9A0" stroke-width="1.4" opacity="0.5"/>
+    <text x="450" y="184" fill="#fff" font-size="13" font-weight="700" text-anchor="middle" font-family="'Noto Sans SC','Microsoft YaHei',sans-serif">Design Light-Core</text>
+    <g fill="#EAF4FF" font-size="12" font-family="'Noto Sans SC','Microsoft YaHei',sans-serif">
+      <text x="120" y="58">Residents</text><text x="640" y="78">Developers</text><text x="80" y="198">Scholars</text><text x="170" y="268">Visitors</text><text x="700" y="268">Operators</text><text x="760" y="138">Proposers</text>
+    </g>
+  </svg>
+  <p class="caption">Fig. · Public Participation Constellation (concept sketch, not a measured network): four "silver thread" channels (online proposals / workshops / open-source collaboration / annual assembly) converge the sparks of diverse actors into a traceable design light-web.</p>
+  <div class="card-grid">
+    <div class="card"><h4>Online Proposal Sparks</h4><p>An open proposal platform continuously gathers needs and critiques; each suggestion enters the light-web as a traceable "star-point".</p></div>
+    <div class="card alt"><h4>Community Workshops</h4><p>Recurring participatory design workshops across the three key areas weave local experience into the plan.</p></div>
+    <div class="card alt2"><h4>Open-Source Collaboration</h4><p>Models, drawings, and datasets evolve under open licenses, so the public can reproduce and contribute.</p></div>
+    <div class="card"><h4>Annual Assembly</h4><p>A yearly public assembly votes on implementation priorities, closing the "starlight–decision" loop.</p></div>
   </div>
 </section>
 
@@ -332,8 +502,48 @@ a{color:var(--k1);}
   <p style="color:var(--muted);font-size:13px;">All deliverables are open co-creation proposals, not substitutes for statutory planning, and do not constitute government-approved conclusions. Spatial landing proposals should be expressed as "conceptual proposals", "reference schemes", or "for further professional elaboration".</p>
 </section>
 
-<section id="brand"><h2>Brand Identity <span class="sub">conceptual · original vector · rights-cleared</span></h2><div class="card-grid"><div class="card"><div class="brandbar"><svg class="brandlogo" width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jing-Zhang AI Spine logo"><defs><linearGradient id="jzsp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00B4A6"/><stop offset="1" stop-color="#2E6BE6"/></linearGradient></defs><path d="M6 36 Q29 27 52 31" fill="none" stroke="url(#jzsp)" stroke-width="5" stroke-linecap="round"/><g stroke="#C2CCD8" stroke-width="2"><line x1="15" y1="32" x2="15" y2="40"/><line x1="29" y1="28" x2="29" y2="36"/><line x1="43" y1="30" x2="43" y2="38"/></g><circle cx="15" cy="35" r="4.6" fill="#fff" stroke="#00B4A6" stroke-width="2.6"/><circle cx="29" cy="31" r="4.6" fill="#fff" stroke="#7C5CFC" stroke-width="2.6"/><circle cx="43" cy="33" r="4.6" fill="#fff" stroke="#2E6BE6" stroke-width="2.6"/><rect x="35" y="13" width="8" height="8" rx="1.6" transform="rotate(45 39 17)" fill="#F2A93B"/></svg><div><h4 style="color:var(--ink)">Jing-Zhang AI Spine</h4><p>The centennial Jing-Zhang railway heritage becomes a spine linking AI assets; three nodes map to the three areas, the diamond is the AI-agent accelerator.</p></div></div><div class="card alt"><h4>Color system</h4><p>Primary Spine Blue #2E6BE6 · Vitality Teal #00B4A6 · Innovation Purple #7C5CFC; neutral Ink #16222E, Rock Grey #C2CCD8; accent Amber #F2A93B.</p></div><div class="card alt2"><h4>Type scale</h4><p>Heading Noto Sans SC Bold; body Noto Sans SC Regular; consistent CN/EN rhythm for bilingual delivery.</p></div><div class="card"><h4>Application</h4><p>Board title band, web header, report cover, honor-display system; all graphics are original vector with rights-cleared sources.</p></div></div></section>
-<section id="brand"><h2>Brand Identity <span class="sub">conceptual · original vector · rights-cleared</span></h2><div class="card-grid"><div class="card"><div class="brandbar"><svg class="brandlogo" width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jing-Zhang AI Spine logo"><defs><linearGradient id="jzsp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00B4A6"/><stop offset="1" stop-color="#2E6BE6"/></linearGradient></defs><path d="M6 36 Q29 27 52 31" fill="none" stroke="url(#jzsp)" stroke-width="5" stroke-linecap="round"/><g stroke="#C2CCD8" stroke-width="2"><line x1="15" y1="32" x2="15" y2="40"/><line x1="29" y1="28" x2="29" y2="36"/><line x1="43" y1="30" x2="43" y2="38"/></g><circle cx="15" cy="35" r="4.6" fill="#fff" stroke="#00B4A6" stroke-width="2.6"/><circle cx="29" cy="31" r="4.6" fill="#fff" stroke="#7C5CFC" stroke-width="2.6"/><circle cx="43" cy="33" r="4.6" fill="#fff" stroke="#2E6BE6" stroke-width="2.6"/><rect x="35" y="13" width="8" height="8" rx="1.6" transform="rotate(45 39 17)" fill="#F2A93B"/></svg><div><h4 style="color:var(--ink)">Jing-Zhang AI Spine</h4><p>The centennial Jing-Zhang railway heritage becomes a spine linking AI assets; three nodes map to the three areas, the diamond is the AI-agent accelerator.</p></div></div><div class="card alt"><h4>Color system</h4><p>Primary Spine Blue #2E6BE6 · Vitality Teal #00B4A6 · Innovation Purple #7C5CFC; neutral Ink #16222E, Rock Grey #C2CCD8; accent Amber #F2A93B.</p></div><div class="card alt2"><h4>Type scale</h4><p>Heading Noto Sans SC Bold; body Noto Sans SC Regular; consistent CN/EN rhythm for bilingual delivery.</p></div><div class="card"><h4>Application</h4><p>Board title band, web header, report cover, honor-display system; all graphics are original vector with rights-cleared sources.</p></div></div></section>
+<section id="brand"><h2>Brand Identity <span class="sub">conceptual · original vector · rights-cleared</span></h2><div class="card-grid"><div class="card"><div class="brandbar"><svg class="brandlogo" width="58" height="58" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Star Tracks Silver Weave logo"><defs><linearGradient id="brandSilver" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8FD0FF"/><stop offset="1" stop-color="#C9D6E8"/></linearGradient><radialGradient id="brandJade" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#5FE0B4"/><stop offset="1" stop-color="#138A66"/></radialGradient></defs><path d="M8 46 Q34 16 58 32" fill="none" stroke="url(#brandSilver)" stroke-width="2.4" stroke-linecap="round"/><g fill="#BFE0FF"><circle cx="11" cy="44" r="2.2"/><circle cx="24" cy="33" r="1.5"/><circle cx="37" cy="25" r="2.6"/><circle cx="49" cy="28" r="1.7"/></g><path d="M37 14 L38.4 18.6 L43 20 L38.4 21.4 L37 26 L35.6 21.4 L31 20 L35.6 18.6 Z" fill="#E8B65A"/><circle cx="58" cy="32" r="6.4" fill="url(#brandJade)"/><circle cx="58" cy="32" r="9.8" fill="none" stroke="#34C9A0" stroke-width="1.2" opacity="0.5"/></svg><div><h4 style="color:var(--ink)">Star Tracks, Silver Weave</h4><p>The centennial Jing-Zhang becomes a star-track; silver threads link AI assets—star points are innovation nodes, the gold star the value anchor, the jade circle the ecology landing.</p></div></div><div class="card alt"><h4>Color system</h4><p>Primary Silver-Blue #2E9BD6 · Jade Shore #1FB98A · Celadon Rail #34C9A0; Star Glow #8FD0FF, Gold Star #E8B65A; neutral Ink #0E1B2E, Rock Grey #C9D6E8.</p></div><div class="card alt2"><h4>Type scale</h4><p>Heading Noto Sans SC Bold; body Noto Sans SC Regular; consistent CN/EN rhythm for bilingual delivery.</p></div><div class="card"><h4>Application</h4><p>Board title band, web header, report cover, honor-display system; all graphics are original vector with rights-cleared sources.</p></div></div></section>
+
+<section id="dataviz" class="alt">
+  <h2>Authoritative Data Evidence <span class="sub">Sourced from Beijing Municipal Statistics & Public Data Open Platform</span></h2>
+  <p>All figures below are quoted from public authoritative sources (<code>HD-STAT-2024</code> Haidian 2024 Statistical Communiqué, <code>BJ-STAT-2024</code> Beijing 2024 Statistical Communiqué, <code>BJ-OPEN-DATA</code> Beijing Public Data Open Platform), illustrating the real innovation ecosystem and urban baseline this belt embeds — not project-output commitments.</p>
+  <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr));">
+    <div class="card"><h4>Haidian GDP (2024)</h4><div style="font-size:30px;font-weight:800;color:#2E9BD6">12907<span style="font-size:15px">B</span></div><p style="margin:4px 0 0;color:var(--muted);font-size:12.5px">+6.0%, 25.9% of Beijing total [HD-STAT-2024]</p></div>
+    <div class="card"><h4>AI Unicorns</h4><div style="font-size:30px;font-weight:800;color:#1FB98A">51</div><p style="margin:4px 0 0;color:var(--muted);font-size:12.5px">>40% of Beijing [HD-STAT-2024]</p></div>
+    <div class="card"><h4>"Little-Specialized" SMEs</h4><div style="font-size:30px;font-weight:800;color:#34C9A0">2953</div><p style="margin:4px 0 0;color:var(--muted);font-size:12.5px">incl. 404 national "little-giants" [HD-STAT-2024]</p></div>
+    <div class="card"><h4>Valid Invention Patents</h4><div style="font-size:30px;font-weight:800;color:#E8B65A">314<span style="font-size:15px">k</span></div><p style="margin:4px 0 0;color:var(--muted);font-size:12.5px">+13.7%; 539.95 high-value/10k [HD-STAT-2024]</p></div>
+    <div class="card"><h4>Technology Contracts</h4><div style="font-size:30px;font-weight:800;color:#2E9BD6">380.69<span style="font-size:15px">B</span></div><p style="margin:4px 0 0;color:var(--muted);font-size:12.5px">57k contracts, +7.2% [HD-STAT-2024]</p></div>
+    <div class="card"><h4>Public Datasets</h4><div style="font-size:30px;font-weight:800;color:#1FB98A">4457</div><p style="margin:4px 0 0;color:var(--muted);font-size:12.5px">71 orgs / 4457 APIs / 195M records [BJ-OPEN-DATA]</p></div>
+    <div class="card"><h4>AI Data Catalogs</h4><div style="font-size:30px;font-weight:800;color:#34C9A0">287</div><p style="margin:4px 0 0;color:var(--muted);font-size:12.5px">conditional-open (AI data) zone [BJ-OPEN-DATA]</p></div>
+    <div class="card"><h4>Rail Transit</h4><div style="font-size:30px;font-weight:800;color:#E8B65A">879<span style="font-size:15px">km</span></div><p style="margin:4px 0 0;color:var(--muted);font-size:12.5px">29 lines / 3.62B trips/yr [BJ-STAT-2024]</p></div>
+    <div class="card"><h4>Urban-Green Coverage</h4><div style="font-size:30px;font-weight:800;color:#2E9BD6">49.84<span style="font-size:15px">%</span></div><p style="margin:4px 0 0;color:var(--muted);font-size:12.5px">16.96 m² park green/ capita [BJ-STAT-2024]</p></div>
+  </div>
+
+  <h3 style="margin-top:30px">Comparison: AI Core-Industry Scale & Technology-Contract Value (2024, ¥100M)</h3>
+  <svg viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg" role="img" style="width:100%;height:auto;max-width:1000px;display:block;margin:14px auto" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif">
+    <text x="40" y="34" fill="#0E1B2E" font-size="17" font-weight="700">AI Core-Industry Scale (¥100M)</text>
+    <line x1="40" y1="270" x2="480" y2="270" stroke="#C9D6E8" stroke-width="2"/>
+    <rect x="70" y="166" width="90" height="104" fill="#2E9BD6"/>
+    <text x="115" y="156" fill="#0E1B2E" font-size="14" font-weight="700" text-anchor="middle">2822</text>
+    <text x="115" y="290" fill="#5B6B7B" font-size="13" text-anchor="middle">Haidian</text>
+    <rect x="200" y="145" width="90" height="125" fill="#1FB98A"/>
+    <text x="245" y="135" fill="#0E1B2E" font-size="14" font-weight="700" text-anchor="middle">3459</text>
+    <text x="245" y="290" fill="#5B6B7B" font-size="13" text-anchor="middle">Beijing</text>
+    <rect x="330" y="70" width="90" height="200" fill="#34C9A0"/>
+    <text x="375" y="60" fill="#0E1B2E" font-size="14" font-weight="700" text-anchor="middle">6000</text>
+    <text x="375" y="290" fill="#5B6B7B" font-size="13" text-anchor="middle">China</text>
+    <text x="540" y="34" fill="#0E1B2E" font-size="17" font-weight="700">Technology-Contract Value (¥100M)</text>
+    <line x1="540" y1="270" x2="960" y2="270" stroke="#C9D6E8" stroke-width="2"/>
+    <rect x="580" y="142" width="100" height="128" fill="#E8B65A"/>
+    <text x="630" y="132" fill="#0E1B2E" font-size="14" font-weight="700" text-anchor="middle">3806.9</text>
+    <text x="630" y="290" fill="#5B6B7B" font-size="13" text-anchor="middle">Haidian</text>
+    <rect x="760" y="70" width="100" height="200" fill="#2E9BD6"/>
+    <text x="810" y="60" fill="#0E1B2E" font-size="14" font-weight="700" text-anchor="middle">6465.3</text>
+    <text x="810" y="290" fill="#5B6B7B" font-size="13" text-anchor="middle">Zhongguancun</text>
+  </svg>
+  <p class="fig-caption">Source: Haidian 2822 [HD-GOV-AI-2025], Beijing 3458.7 [HD-BJ-AI-2025], China 6000 [HD-NAT-AI-2024]; Haidian 3806.9 & Zhongguancun 6465.3 [HD-STAT-2024, HD-ZGC-2024]. Four scopes at different scales, not additive—background reference only.</p>
+</section>
+
 <footer>
   <strong>Disclaimer</strong><br>
   This page is a conceptual proposal showcase for the Centennial Jing-Zhang AI Innovation Belt urban-design open call, generated from public sources and the repository's provisional rough boundaries. All boundaries, areas, planning controls, investment, and implementation arrangements are subject to the official final release. The page is an offline static HTML with no external scripts, fonts, or tracking code.<br><br>

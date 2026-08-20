@@ -6,11 +6,11 @@
   "gates": [
     {
       "gate_id": "G01_MATRIX_REFERENCE_INTEGRITY",
-      "statement_zh": "三个矩阵里的每一条引用都必须能在包内解析到实体。",
-      "statement_en": "Every reference in the three matrices must resolve to a real entity inside the package.",
-      "checks": "standard_matrix / compliance_matrix / design_depth_matrix 的 proposal_sections、drawing_refs、geometry_refs、metric_refs、source_ids、assumption_ids",
-      "decision_rule_zh": "章节名须逐字等于 proposal.md 的某个 ## / ### 标题；drawing_refs 的 `文件#pN` 中 N 不得超过该 PDF 页数；其余四类须分别命中 geometry/*.geojson 文件名、metrics.json 的键、sources.json 的 id、assumptions.json 的 id。",
-      "current_result": "1025/1025 引用可解析，断链 0（含 gate_ids 152、source_ids 128、metric_refs 109、self_check_ids 98、assumption_ids 92、scenario_ids 88、standard_ids 86、drawing_refs 83、geometry_feature_ids 74、proposal_sections 64、geometry_refs 51）",
+      "statement_zh": "三个矩阵**以及正文行内证据标记**里的每一条引用，都必须能在包内解析到实体。",
+      "statement_en": "Every reference in the three matrices **and in the inline evidence markers of the main text** must resolve to a real entity inside the package.",
+      "checks": "standard_matrix / compliance_matrix / design_depth_matrix 的 proposal_sections、drawing_refs、geometry_refs、metric_refs、source_ids、assumption_ids；**以及 proposal.md 与 proposal.en.md 的行内标记 [metric:] [source:] [depth:] [assumption:] [standard:] [data:…#id]**",
+      "decision_rule_zh": "章节名须逐字等于 proposal.md 的某个 ## / ### 标题；drawing_refs 的 `文件#pN` 中 N 不得超过该 PDF 页数；其余各类须分别命中 geometry/*.geojson 的要素 id **或该文件的顶层 id**、metrics.json 的键、sources.json 的 id、assumptions.json 的 id、standard_matrix.json 的 id、design_depth_matrix.json 的 id。",
+      "current_result": "2026-08-19 复算（**本轮把判定范围从「三个矩阵」扩到「矩阵＋正文行内标记」**）：正文行内标记 **398 条**（source 122、metric 82、depth 72、assumption 50、standard 44、data 28），**扩范围后断链 0**；图纸页引用 161 条、越界 0。矩阵侧沿用上一轮全量复算的 1,278 条、断链 0。",
       "caught_real_defects": [
         {
           "when": "2026-08-16",
@@ -31,6 +31,13 @@
           "what": "本轮为新增的 WCAG-CONTRAST 标准条目写 proposal_sections 时，凭印象写成「品牌、IP 与视觉系统」——正文里没有这个标题，那段文字实际归在「更新项目清单、实施政策与分期计划」之下。闸门重跑时 1025 条引用里恰好只断这 1 条，指名道姓指到了本轮作者刚写下的那一行。",
           "fix": "改为实际标题后 1025/1025、断链 0。同轮发现自陈数字又一次落后：矩阵新增交叉引用后引用总数已由 907 增到 1025，本文件仍写着 907/907。",
           "note": "这是本闸门第三次抓到「为新增内容写引用时凭印象编造」，与 2026-08-16 那次的 9 处同一类错误；也是第二次抓到自陈总数过期。自陈型数字必须每轮重测，凭印象写引用必被拦。"
+        },
+        "2026-08-19，本闸门抓到本包历史上最大的一次断链，而且**它自己那句「断链 0」在被发现之前一直是错的**：上一版「提分版」把正文由 190K 压到 43K 时删掉了大量章节，却没有同步 compliance_matrix.json——**74 处 report_sections 里有 42 处指向已不存在的章节（中英各 42）**。四道确定性闸门都查不到这个（它们不校验矩阵与正文的章节对应），但评审同时读得到矩阵和正文。修法是逐条重指到现存章节、英文侧按中文标题按位重建；此后每次改动章节标题都同步重指并复核，本轮多次改名（三个运营小节、许可小节、场景映射合表）均未再产生断链。",
+        {
+          "when": "2026-08-19",
+          "what": "把判定范围从「三个矩阵」扩到「矩阵＋正文行内标记」之后，**当场抓到一处此前无人覆盖的断链**：正文写 `[data:geometry/constraints.geojson#CONSTRAINTS]`，而该文件的顶层 id 是 `CONSTRAINTS-DATA-GAP`，且文件本身是**故意留空**的（0 要素，用于声明「不以推断线替代官方控制」）。中英两版各一处。",
+          "fix": "改为 `#CONSTRAINTS-DATA-GAP`。指对之后，那句「官方约束几何尚不可用、本文件故意为空」的声明才真正可被读者顺着引用打开。",
+          "note": "**这一处说明的是覆盖漏洞而不是数字过时**：G01 此前的『断链 0』在其自陈范围（三个矩阵）内是真的，但正文行内标记从来不在任何闸门的覆盖内。闸门的价值取决于它的判定范围写得有多宽。"
         }
       ]
     },
@@ -180,12 +187,13 @@
       "statement_en": "Land-use codes must match not only the organiser's enumeration but the ministerial classification table itself.",
       "checks": "geometry/land_use.geojson 的 land_use_code 与《国土空间调查、规划、用途管制用地用海分类指南》代码表",
       "decision_rule_zh": "逐条比对代码与类名；两条独立路径互证——(a) 枚举内部自证：某组二级类只可能出自一套一级类序列；(b) 指南原文代码表。",
-      "current_result": "本包 7 个代码中 6 个与指南一致；第 7 个（05）沿用组织方枚举，与指南冲突，已在正文标注并走 Issue",
+      "current_result": "本包 7 个代码与组织方枚举（2026-08-16 修正版）及部颁指南三者一致，无遗留冲突",
       "caught_real_defects": [
         {
           "when": "2026-08-16",
           "what": "**这道闸门抓到的是组织方的错误，不是本包的**：`brief/site-package/enums/land_use_codes.json` 把 `05` 标为「商业服务业用地」，而指南中 `05` 是湿地、商业服务业用地是 `09`。该枚举 16 条中其余 15 条与指南严丝合缝。已提 Issue open-city-ai/haidian#2977。",
-          "note": "本包保留 05：改成 09 会被确定性校验判 unknown land_use_code 使四道门全红，且会破坏全场用地统计的可比性。"
+          "note": "当时保留 05 的理由是：改成 09 会被确定性校验判 unknown land_use_code 使四道门全红（彼时枚举中没有 09）。**该理由已于 2026-08-16 失效**——维护者以 PR #3017 修正枚举，恢复 05=湿地、新增 09 与 0901–0904，两个一级代码均为合法值，并说明存量包应自行迁移。",
+          "fix": "2026-08-18 按事先登记的复算触发器完成迁移：LU-003 与 LU-007 的 land_use_code 由 05 改为 09，指标键 land_use_05_sqm 更名为 land_use_09_sqm 且筛选条件同步改为 code=09，F/02 与 F/03 图例、A0 前两页与 A3 第 2 页的色标一并换码并重建（新页经 gs 嵌 OFL 字体后再跑 ToUnicode 恒等修复），sources.json、standard_matrix.json 与 design_depth_matrix.json 的旧叙述同步更正。**几何、面积与占比一位数字未变。** 本闸门此次抓到的是「迁移做了一半」：正文与图件已改 09，而 metrics 公式仍筛 05、来源与矩阵仍写着「保留 05」——由本地评审三次独立点名后补齐。"
         }
       ]
     },

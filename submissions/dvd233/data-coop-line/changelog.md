@@ -1,5 +1,27 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-20
+
+P0 source-hash correction / 场地证据源哈希纠偏
+
+- Baseline / 基线：本轮从 `upstream/main` `fae639c40a0b51de971ed4cd98526351d07cbb74` 建立干净分支 `codex/data-coop-line-evidence-consistency-20260820`。后续 main 先后移动到 `b8ddfc8e10b27a3be9629d24e0317f4deaf5cfe1` 和 `58af9968147491c1b0f264890074f1235ceccdaa`；这两次相关路径核对均为 0。PR 创建时实际 base 为 `7019821bd606d020d0e8ca3b0120d2d312f1ab4d`，其中唯一相关路径是同行读取 helper `scripts/read_peer_proposals.py` 的异常 `Content-Length` 容错，不触及本稿、Skill、brief、schema、validator 或投稿门禁；其 2 项专项测试通过。因此不重建冻结点，也不生成无关图件或 PDF。
+- Finding / 发现：P1-01 合并包的 `site-evidence-register.json`、`sources.json` 和 `constraints.geojson` 中四个 SHA-256 不对应其声称冻结的 `ce2c6bcee348accc3c354f585c9ad45e39ff2db7` Git blob。干净 sparse 工作树首先因未检出 `data/source_registry.json` 得到 13/17；补齐只读来源后证明四个哈希均错，而非上游内容后续漂移。
+- Correction / 纠偏：直接对 `git show ce2c6b:<path>` 返回的原始 blob 字节计算 SHA-256，并同时确认这四个文件在 `ce2c6b` 与当前 main 字节相同。纠正后的公告快照、临时边界、边界依据与 source registry 哈希分别为 `158203872171…9cc3`、`0b9ae36bae6e…2306`、`295869f7aafe…4910` 和 `4784e80d2d36…1c66`。
+- Scope / 范围：只同步机器台账、来源与约束缺口记录、中英正文哈希摘要、派生报告 HTML、changelog、manifest 和 self-check。冻结来源提交 `ce2c6b`、四组 geometry 映射、0 个 official-control feature、6 类缺口、许可边界、方案几何、指标、图件与 PDF 均不变。
+- Boundary / 边界：这是证据完整性修复，不是官方精度提升，不新增来源、许可、数据用途、空间结论或实施承诺。
+
+## v1.2 - 2026-08-20
+
+P1-01 site provenance and verified control-data gap / 场地来源、许可与约束缺口可核验证据
+
+- Baseline / 基线：场地证据最初冻结于 `upstream/main` `ce2c6bcee348accc3c354f585c9ad45e39ff2db7`，对应来源哈希仍逐项匹配。发布前发现 main 已移动且 `scripts/validate_submission.py` 新增双语同字节提示，因此从最新 `upstream/main` `fcaf7a9fccb7d9ca875a6fc37329fb1454e7b375` 重建干净 worktree 与新分支 `codex/data-coop-line-p1-02-site-evidence-20260820`，移植聚焦修改，并以 `fcaf7a9fc` 的门禁完整复验；未把证据快照 SHA 伪改成较新的代码基线。
+- Reason / 原因：旧包在 `sources.json` 中列出场地来源，但缺少发布 / 获取日期、冻结源哈希、许可 / 署名、allowed / prohibited uses、精度与替换触发器；`constraints.geojson` 的空集虽诚实合法，却没有跨文件 fail-loud 证明。主控原先把“非空 constraints”当验收条件；冻结版 validator 明确没有可引用的官方 / 清权控制几何时空集合法且优于造线，最新同行 `kenshin-ai-101/openline-100` 即使补到已批街区控规公开文字也因无 parcel/redline polygon 保持空集。故本轮纠正验收口径，不复制临时范围制造假约束。
+- Before → After / 修正前后：场地来源从简短 `path + usage` → 发布者、日期、冻结 SHA、源哈希、CRS、许可 / 用途边界与禁用项；临时总体范围和三处重点区从“相信同源” → 4/4 geometry 精确匹配冻结源；官方控制缺口从单文件说明 → 6 类 locked-layer 缺口、替换规则、禁止代填项、机器台账与审计。`constraints.geojson` 仍为 0 feature，含义是“缺口已核验”，不是现实中无控制。
+- Machine evidence / 机器证据：新增 `visual/assets/site-evidence-register.json` 与 Node built-ins-only `site-evidence-audit.js`。审计固定公告快照、临时边界、依据说明与 source registry 四个 SHA-256，核对 4 组 geometry 映射、0 个 official-control feature、6 类缺口和三条核心来源的 allowed / prohibited uses；当前 18/18 PASS，任一漂移显式失败。
+- Carriers / 载体：同步中英 Markdown、派生 HTML、离线 visual 的场地证据区、`site-overview` / `key-areas` 双语图页脚、四份 PDF 对应页面、来源 / 假设 / constraints、版权说明、manifest 与 self-check。空间面积、比例、场景、设计 geometry 与其余三组核心图不变，不制造无关载体 churn。
+- Peer evidence / 同行证据：PR #2734 的 site-grounding register 与 PR #2736 的 machine-readable reviewer evidence 证明结构化交接的评审价值；`openline-100` 的控规文字 / 空 geometry 分线证明“文本获批不等于可写 polygon”。只借鉴证据分层与 fail-loud 思路，未复制任何同行文本、schema、图件、geometry 或媒体。
+- Boundary / 边界：未新增外部来源、OSM geometry、许可或数据使用范围；brief 中 OSM 读数仍是背景，不进入本包控制 geometry。官方 / 清权控规、文保、道路红线、权属、轨道、蓝线或市政 geometry 到位后，先登记发布者、日期、版本、CRS、许可、转换与哈希，再整体重建 geometry → metrics → figures → HTML → PDFs。
+
 ## v1.1 - 2026-08-15
 
 P0 evidence and scenario consistency / 指标与场景证据一致性

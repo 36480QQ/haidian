@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v5.0"
+iteration: "v7.0"
 summary: "以京张铁路遗址公园慢行主轴为脊梁，由两台并列引擎驱动：空间引擎'共行断面语法（Co-Mobility Cross-Section Grammar）'——四种断面原型（专用段2.5m/共享段/行人优先段/测试步道2.0m）× 四级速度分区（5/8/10/15 km/h）× 冲突测试场，使低速机器人与行人的共存规则从几何约束中生成，5000次确定性抽样验证'专用脊柱+共享支线'组合优于替代方案；治理引擎'共行执照（Co-Mobility License，BASE→BOOST→BLACKOUT→BEQUEST 四阶段合同 + G0-G4 五门验收，合同形态受 jingzhang-168 启发）'——12份执照合同×7规则分支推演中60条被阻断，证明门槛真实存在。方案配套 15.4km 专用+3.4km 共享车道、六座智递驿站、两座充电维保基地、12张AI场景卡（含4张附完整协议的测试验证场景）、8类用户画像、3个AI朝圣地标、7个全球生态案例、Logo实际样张、荣誉展示系统与七组件库、三条转化路径、运营KPI体系，形成可体验、可验证、可推广的双引擎低速机器人共行网络概念方案。"
 tracks: ["robotics-autonomous-mobility", "ai-origin-community"]
 scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability"]
@@ -182,6 +182,54 @@ scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability"]
 | 测试步道 | 测试步道 | 0.9km | 8 | 封闭测试/协议 |
 
 信号系统的状态机为"自由 → 请求 → 占用 → 出让 → 自由"，与 G 门衔接：G2 多机门验证的是调度集中的多区间协同，G3 共行门验证的是联锁条件下的人机冲突率。信号表全部 `synthetic_only`、`not_authorized_not_run`，现场状态须由调度中心实时登记 [data:visual/assets/signaling-grammar.json#block]。
+
+### 元层验证：自解释断面测试（本方案原创，v6）
+
+断面语法的承诺是"从几何约束生成治理要求"——行人从断面图就能读出规则。这个承诺**可以被验证**：视觉特征与行为规则必须一一对应、双向可推——看到断面能推出规则，听到规则能画出断面。无歧义 = 自解释 [E:ROBOT-SELF-EXPLAINING]。
+
+**方法论来源。** 交通工程"自解释道路"（self-explaining roads）——让道路外观本身传达规则，无需额外标识。这是交通领域自己的方法论，是断面语法透镜的自然延伸 [data:visual/assets/self-explaining-grammar.json#methodology-source]。
+
+**四断面视觉特征 × 行为规则（一一对应，完整见 `visual/assets/self-explaining-grammar.json`）：**
+
+| 断面 | 视觉特征（看到什么） | 行为规则（读出什么） |
+| --- | --- | --- |
+| 专用段 | 物理隔离+独立铺装+白实线 | 机器人专用、15km/h、行人不可进入 |
+| 共享段 | 蓝色色带+减速凸起 | 人机混行、10km/h、机器人让行人 |
+| 行人优先段 | 遗产铺装延续、无任何标记 | 步行空间、5km/h、行人绝对优先 |
+| 测试步道 | 临时隔离+橙色警示 | 封闭测试、8km/h、行人禁入 |
+
+**规则闭合验证。** `run_self_explaining_tabletop.js` 对 4 断面 × 6 条规则分支（特征推规则/规则推特征/指纹唯一/指纹重复/缺特征/缺规则）共 24 个合成案例全部正确分类，且四断面视觉指纹唯一——证明语法**无歧义、可逆**。但仅证明映射逻辑闭合，不构成现场行人理解测试或授权证据，现场绩效仍为 null、状态 `not_authorized_not_run` [data:visual/assets/self-explaining-tabletop-evidence.json#blocked]。
+
+**现场测试协议（自解释成立的标准）。** 招募 30 名不熟悉本方案的志愿者（含老年/儿童/残障群体代表），仅给无文字断面图，回答：机器人在哪走/多快/谁优先/能否进入。四断面平均正确率 ≥80% 且行人优先段 ≥90%，方判定断面语法"自解释"成立；任一断面 <70% 则调整该断面视觉特征（增色带/改隔离/换材质），复测通过后再进入 G0 空间门。测试不依赖任何 AI——验证的是空间本身传达规则的能力，完整协议见 `visual/assets/self-explaining-test-protocol.json` [data:visual/assets/self-explaining-test-protocol.json#pass-rule]。
+
+**与断面语法的关系。** 断面语法是设计承诺，自解释测试是承诺的验证——**语法是否真的"从几何长出规则"，由不熟悉方案的人能否从图读出规则来证明**。这一验证使"断面即契约"从设计主张升级为可检验的工程承诺 [depth:metrics_recalculation]。
+
+### 元设计层：哲学层增强（本方案原创，v7）
+
+断面语法解决了"规则从几何长出"，自解释测试验证了"规则可被读出"。本方案的元设计层进一步追问六个逻辑层与哲学层的问题——每一个都不是外加的判断，而是**照亮方案机制中已隐含的逻辑**。六个方向对应 `visual/assets/philosophy/` 下六件制品，每件都是方案自身逻辑的显式化 [E:ROBOT-PHILOSOPHY-META]。
+
+**价值论层——价值交易表。** 方案机制已隐含价值排序，价值交易表把隐含的价值冲突显式化为"优先方向+代价" [data:visual/assets/philosophy/value-tradeoffs.json#tradeoffs]：
+
+| 价值冲突 | 优先 | 编码在 | 代价 |
+| --- | --- | --- | --- |
+| 安全 vs 效率 | 安全 | 专用段 15km/h 上限 | 配送时长增约 20% |
+| 遗产保护 vs 开发强度 | 遗产保护 | 遗产段限速 5km/h、断面不改铺装 | 遗产段无高速专用段 |
+| 可见性 vs 便捷性 | 可见性 | 数据时刻表公示 | 运营方额外记录 |
+| 效率 vs 公平 | 公平 | 人工兜底保留 | 运营成本高于纯自动化 |
+
+代价被接受，因为优先方向是共行的前提；方案不为效率牺牲安全与公平 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
+
+**目的论层——在地必然性论证。** 论证此方案为什么只能在京张发生，而非可套用于任何城市的通用方案——在地性从背景变成必要条件 [data:visual/assets/philosophy/site-necessity.json#necessity_arguments]：①唯一的"铁路遗产+AI创新带"线性叠合走廊；②"时刻表"公共记忆符号仅属于京张；③人字轨道自主建造精神是京张独有的精神遗产。脱离京张，断面语法失去历史来源、公共记忆锚点与精神正当性。
+
+**现象学层——第一人称共情脚本。** 用第一人称脚本验证体验链路每一步是否通顺——这是体验的工程验证，不是营销叙事 [data:visual/assets/philosophy/first-person-scripts.json#scripts]。三个脚本（老年居民取药/开发者走三种断面/市民配送午餐）各验证一条体验链路是否每步可达。
+
+**认识论层——认识论分级。** 每个主张分级为描述/预测/规范，注明知识基础——让方案对自己的认知边界诚实 [data:visual/assets/philosophy/epistemic-grading.json#claim_grades]。描述（可观察事实）、预测（方法论推论，未现场验证）、规范（设计建议，概念非审定）三级分明，避免把推论当事实、把建议当审定。
+
+**博弈论层——激励相容。** 机制设计核心：让"诚实"成为占优策略——机制只有在参与者有动机遵守时才稳定 [data:visual/assets/philosophy/incentive-compatibility.json#incentive_mechanisms]。诚实公示数据时刻表获流量优先（隐瞒被审计发现即失去优先）、认证服务获补贴与信任标识（未认证无补贴无标识）、随机审计使隐瞒不可能。诚实公示的收益大于隐瞒的损失，诚实成为占优策略。
+
+**时间层——自更新协议。** 方案不是静态设计；定义当城市变化时方案哪部分必须重算的触发协议 [data:visual/assets/philosophy/self-update-protocol.json#triggers]。人口结构变化→重算银龄节点；机器人技术成熟→重算断面限速；政策法规变化→重算执照阶段；官方边界发布→重算全部面积。方案对时间保持诚实。
+
+**六方向与断面语法的关系。** 六个方向都是断面语法自身的逻辑延伸：价值表是语法隐含的价值排序显式化，在地必然性是语法的历史正当性，共情脚本是语法可被体验的证明，认识论分级是语法对自身认知边界的诚实，激励相容是语法被遵守的机制保证，自更新是语法对时间的诚实。六者共同把"断面即契约"从空间主张升级为价值、历史、体验、认知、激励、时间六维自洽的工程承诺 [depth:metrics_recalculation]。
 
 ## 重点区域详细设计
 

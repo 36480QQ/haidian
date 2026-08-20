@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把京张铁路遗址公园重新定义为'适老服务脊梁'，针对京张沿线老龄社区，构建AI辅助老年人就医、办事与无障碍出行的公共服务带。方案提出'京张银龄无障碍服务带'总体概念，以南北约9公里连续无障碍慢行主轴串联三处重点区与沿线社区、医院、政务点、地铁口，布局10张AI适老场景卡（含3个测试验证场景）、5类适老用户画像、3个温暖地标、8类适老用地与7个银龄服务节点，形成可体验、可推广、可迭代的适老无障碍智能服务概念方案。"
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v5.0"
+iteration: "v7.0"
 ---
 
 # 京张银龄无障碍服务带：AI辅助老年人就医、办事与无障碍出行
@@ -272,6 +272,54 @@ AI 适老服务的通病是"机器处理老人、人际连接消失"——老人
 **规则闭合验证。** `run_connection_tabletop.js` 对 10 回执 × 6 条规则分支（完整/事成未连接/连接未记录/缺回访/连接中断/缺无AI路径）共 60 个合成案例全部正确分类（30 阻断/10 连接/20 标记），证明连接规则逻辑闭合——但仅证明分类正确，不构成现场适老服务、连接效果或授权证据，现场绩效仍为 null、状态 `not_authorized_not_run` [data:visual/assets/connection-tabletop-evidence.json#blocked]。
 
 **与银龄接力的关系。** 接力回答"AI 交棒给谁"（责任），连接站回答"交棒之后留下什么"（连接）——接力保证老人永远有人负责，连接站保证老人不只是"被服务"，而是"被连接"。两者共同构成"老人是主动方"的完整闭环：**有人负责，且有人连接** [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
+
+### 元层验证：连接可测量性（本方案原创，v6）
+
+本方案声称"服务成功=连接增强"。这个声称**只有当连接可测量时才诚实**。孤独/连接研究有成熟量表（UCLA 孤独量表、de Jong Gierveld 量表）——这是照护领域自己的方法论，是连接透镜的自然延伸 [E:SILVER-CONNECTION-MEASURABILITY]。
+
+**连接强度三级定义**（完整见 `visual/assets/connection-measurability.json`）[data:visual/assets/connection-measurability.json#connection-strength-levels]：
+
+| 级别 | 测量什么 | 工具 | 阈值 |
+| --- | --- | --- | --- |
+| L1 互动发生 | 该次服务是否产生人与人互动 | 连接回执第一字段 | 发生=1，未发生=0 |
+| L2 连接保持 | 回访时连接是否仍在 | 连接回执回访字段 | 保持=1，中断=0 |
+| L3 网络增长 | 老人具名联系人数量是否增长 | 季度问卷（"过去三个月新认识几位可联系的人"） | 季度净增 ≥1 人 |
+
+**量表与伦理边界。** 试点前后各测一次 UCLA 孤独量表（简版 UL-8，与 de Jong Gierveld 6 项二选一避免问卷疲劳）；自愿参与、可随时退出、结果只做群体聚合不标识个人——量表使用须伦理审查与知情同意 [data:visual/assets/connection-measurability.json#loneliness-instruments]。
+
+**诚实的未知。** 所有连接强度值当前为 `unknown`——现场试点前不填 0 也不填估值。**unknown 是还没测，不是没有连接。**
+
+**负空间对照。** 传统社区网络（无 AI）同样按 L1-L3 测量——AI 方案必须证明**比基线更强的连接增益**，而非只跟自己比 [data:visual/assets/connection-measurability.json#negative-baseline]。
+
+**规则闭合验证。** `run_connection_strength_tabletop.js` 对 10 场景 × 6 条规则分支（三级全达/仅互动未保持/保持未增长/未测量/无同意量表/标识个人）共 60 个合成案例全部正确分类（10 强连接/10 弱/10 稳定/10 unknown/20 阻断）——仅证明规则分类正确，量表实际使用须伦理审查，不构成现场效果证据 [data:visual/assets/connection-strength-evidence.json#blocked]。
+
+**与连接站的关系。** 连接站生成连接，连接可测量性证明连接真实发生且可持续——没有测量的"连接增强"只是愿望，有了 L1-L3 的测量，"老人不孤独"才从愿景变成可验证、可与无 AI 基线对照的工程承诺 [depth:metrics_recalculation]。
+
+### 元设计层：哲学层增强（本方案原创，v7）
+
+连接站解决了"服务之后留下连接"，连接可测量性解决了"连接真实发生"。本方案的元设计层进一步追问六个逻辑与哲学层的问题——每一个都不是外加判断，而是**照亮连接透镜中已隐含的逻辑**。六个方向对应 `visual/assets/philosophy/` 下六件制品，每件都是透镜自身逻辑的显式化 [E:SILVER-PHILOSOPHY-META]。
+
+**价值论层——价值交易表。** 连接透镜已隐含价值排序，价值交易表把隐含的价值冲突显式化为"优先方向+代价" [data:visual/assets/philosophy/value-tradeoffs.json#tradeoffs]：
+
+| 价值冲突 | 优先 | 编码在 | 代价 |
+| --- | --- | --- | --- |
+| 连接 vs 效率 | 连接 | 服务点为连接起点非终点 | 服务流程变慢 |
+| 连接 vs 隐私 | 隐私 | 回执仅记连接发生不记交流内容 | 无法追踪交流质量 |
+| 连接 vs 自主 | 自主 | 老人可选择不参与，连接非强制 | 部分老人可能不连接 |
+
+代价被接受，因为优先方向是"老人是主动方"的前提。
+
+**目的论层——在地必然性论证。** 论证代际连接机制为什么适合京张——在地性从背景变成必要条件 [data:visual/assets/philosophy/site-necessity.json#necessity_arguments]：①京张走廊沿线社区密度高、老人聚集（连接需求真实）；②京张铁路记忆提供代际共享的记忆锚点；③京张是"适老服务脊梁"的设计定位。
+
+**现象学层——第一人称共情脚本。** 用第一人称脚本验证连接体验链路每步是否通顺——体验的工程验证，非营销叙事 [data:visual/assets/philosophy/first-person-scripts.json#scripts]。三个脚本（老人被连接/志愿者陪聊/家属得知老人被连接）各验证一条连接体验链路。
+
+**认识论层——认识论分级。** 每个主张分级描述/预测/规范，注明知识基础——对认知边界诚实 [data:visual/assets/philosophy/epistemic-grading.json#claim_grades]。
+
+**博弈论层——激励相容。** 机制设计核心：让"连接"成为占优策略——老人和志愿者只有在有动机连接时才会真正连接 [data:visual/assets/philosophy/incentive-compatibility.json#incentive_mechanisms]。志愿者轮值获社区积分与荣誉、老人连接获陪伴与社交满足、连接质量公示使连接效果可见可比较。
+
+**时间层——自更新协议。** 方案不是静态；定义当城市变化时连接机制哪部分必须重算的触发协议 [data:visual/assets/philosophy/self-update-protocol.json#triggers]。老年人口结构变化→重算连接站密度；孤独量表标准变化→重算连接强度阈值；社区结构变化→重算连接站选址。
+
+**六方向与连接透镜的关系。** 六个方向都是透镜自身的逻辑延伸：价值表是透镜隐含的价值排序显式化，在地必然性是透镜的在地正当性，共情脚本是透镜可被体验的证明，认识论分级是透镜对自身认知边界的诚实，激励相容是透镜被遵守的机制保证，自更新是透镜对时间的诚实。六者共同把"老人是主动方"从设计原则升级为价值、在地、体验、认知、激励、时间六维自洽的工程承诺 [depth:metrics_recalculation]。
 
 ### 概念性更新项目清单
 

@@ -186,7 +186,62 @@
         text-decoration-thickness: 2px;
         text-underline-offset: 3px;
       }
+      .proof-candidate-strip {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin: 22px 0;
+      }
+      .proof-candidate-strip article {
+        background: #fff;
+        border: 1px solid #d8dbd4;
+        border-top: 6px solid var(--green);
+        border-radius: 16px;
+        padding: 18px;
+      }
+      .proof-candidate-strip article:nth-child(2) { border-top-color: var(--gold); }
+      .proof-candidate-strip article:nth-child(3) { border-top-color: var(--red); }
+      .proof-candidate-strip strong { display: block; font-size: 20px; }
+      .proof-candidate-strip p { margin: 7px 0 0; }
+      .expert-quick-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+        gap: 10px;
+        margin: 18px 0 10px;
+      }
+      .expert-quick-grid article {
+        background: #f3f5f0;
+        border-left: 4px solid var(--ink);
+        padding: 12px 14px;
+      }
+      .expert-quick-grid strong { display: block; margin-bottom: 5px; }
+      .expert-risk-line {
+        margin: 0 0 18px;
+        padding: 12px 14px;
+        border: 1px solid #d8dbd4;
+        border-left: 6px solid var(--red);
+        background: #fff;
+      }
+      @media (max-width: 760px) {
+        .proof-candidate-strip { grid-template-columns: 1fr; }
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        header {
+          break-after: page;
+        }
+        section {
+          break-inside: avoid;
+        }
+        table,
+        figure {
+          break-inside: avoid;
+        }
+      }
     </style>
+    <link rel="stylesheet" href="assets/spatial-atlas.css" />
     <link rel="stylesheet" href="assets/review-walkthrough.css">
     <link rel="stylesheet" href="assets/round17-reading.css">
     <link rel="stylesheet" href="assets/public-signal-interface.css">
@@ -201,39 +256,58 @@
       <p>
         连续日常轨承载普通生活，间歇验证轨只在自愿、公告、有责任人的时段旁侧出现：VERIFY / CO-CREATE / PUBLISH，失败即停止，恢复先还给日常。
       </p>
-      <p><strong>当前现实：</strong> 12 个既有场景均为 G0；现场测试、批准、GO 决定、真实故障与恢复验收均为 0；临时边界和 <code>not_fully_cleared</code> 权利状态不变。</p>
+      <p><strong>为什么是海淀：</strong>海淀的创新密度，只有在普通人无需账户、设备或专业身份，仍可使用、质疑和退出时，才会转化为公共能力。这是“双轨京张”成立的社会理由，不是第二品牌，也不是现实成效。</p>
     </header>
     <main>
       <section id="jury-entry" class="jury-entry" aria-labelledby="jury-entry-title">
-        <p class="tag">30 秒入口 · G0 · 三框分读 · 不按比例</p>
-        <h2 id="jury-entry-title">双轨京张：普通生活连续，验证只在旁侧出现</h2>
+        <p class="tag">30 秒入口 · 为什么是海淀 · 同一普通任务 · 三处社会—空间分工</p>
+        <h2 id="jury-entry-title">双轨京张：让创新密度通过普通人的完整路径成为公共能力</h2>
+        <p class="entry-lead"><strong>一个概念：</strong>连续日常轨先保证进入、表达、通行、休息、求助和离开；间歇验证轨只作自愿、限域、可停止的旁侧叠层。高校科研、创业与企业服务、居民日常和京张遗址公园在此相遇，但这只提出设计问题，不证明真实人群影响或服务成效。</p>
         <figure class="hero-visual">
           <img src="../assets/media/twin-track-cover.webp" alt="双轨京张概念封面：连续日常轨贯穿三处公共空间，间歇验证轨在旁侧出现，并标明验证、共创、发布和故障停止。" loading="eager" />
           <figcaption>概念展示资产 · G0 · 临时几何 · 不按比例 · 不是现状、批准或建成效果</figcaption>
         </figure>
-        <p id="cold-read-proof-boundary" class="entry-lead"><strong>一个概念：</strong>连续日常轨让普通任务始终可完成，间歇验证轨只作自愿、限域、可停止的旁侧叠层；众智园 VERIFY、原点社区 CO-CREATE、大钟寺 PUBLISH。<strong>一个边界：</strong>全案仍为 G0、provisional geometry，图面清楚不等于场地准确。</p>
+        <div class="proof-candidate-strip" aria-label="可能形成排除的五类门槛与普通路径">
+          <article><strong>账户与设备门槛</strong><p>无注册、扫码、终端或 AI，实体入口、纸面信息和同一普通任务仍完整。</p></article>
+          <article><strong>专业语言与时间门槛</strong><p>可口述、无屏表达并找人工；不把等待实验、理解术语或配合排班当作使用条件。</p></article>
+          <article><strong>算法判断门槛</strong><p>可拒绝、质疑、退出并转人工；普通服务不因拒绝验证而降级。</p></article>
+        </div>
+        <div class="proof-candidate-strip" aria-label="三处不可互换的社会空间角色">
+          <article><strong>原点社区 · 先定义</strong><p>普通人先用口头、纸面和无屏方式定义问题，技术证明留在入口之后。</p></article>
+          <article><strong>众智园 · 再比较</strong><p>普通／非 AI 基线与证明增量并排可读，并有实体停止边和还场路径。</p></article>
+          <article><strong>大钟寺 · 后交接</strong><p>解释、拒绝、转人工和来源纠错先成立，再由专业方发布或保留 NO-GO。</p></article>
+        </div>
+        <div id="cold-read-proof-boundary" class="notice"><strong>G0 证据边界：</strong>T-02 合成治理回放已完成 1 次并通过 10/10、4/4、13/13；现实服务、责任接受、批准、故障与恢复验收仍为 0。既有 <code>JZ-05 × SCENE-011 × T-02</code> 只是编辑审查候选；全案保持 G0 / NO-GO、临时几何和 <code>not_fully_cleared</code>。</div>
+        <div class="expert-quick-grid" aria-label="专家快速判断五项">
+          <article><strong>1 · 唯一概念</strong>双轨京张：普通生活连续，G0 验证间歇、旁置且可停止。</article>
+          <article><strong>2 · 为何海淀</strong>创新密度只有在普通人无需账户、设备或专业身份仍能使用、质疑和退出时，才成为公共能力。</article>
+          <article><strong>3 · 当前证明</strong>T-02 只证明固定合成合同复演：10/10、4/4、13/13。</article>
+          <article><strong>4 · 当前阻断</strong>官方边界、控规、权利、真实同任务等价、专业接责、批准与现场证据未闭合；重大缺口 NO-GO。</article>
+          <article><strong>5 · 专业接手</strong>唯一入口 <code>#review-handoff</code>；D01—D08 替换输入，H01—H07 仍未提交，P01—P07 只是建议专业类型。</article>
+        </div>
+        <p class="expert-risk-line"><strong>决策级风险：</strong>政策、空间、实施与运维均为最高阻断组；八维说明、缓解和人工复核见 <a href="../risk.json"><code>risk.json</code></a>。分数是 G0 编辑优先级，不是概率、评审评分或成熟度推进。</p>
         <div class="reading-lanes" aria-label="三档阅读路径">
           <article class="reading-lane"><strong>30 秒</strong><p>先认一个概念与一个边界：双轨、三处原型、失败侧线与临时几何。</p><a class="reading-lane-action" href="#cold-read-proof-boundary">在此核对概念与边界 →</a></article>
-          <article class="reading-lane"><strong>3 分钟</strong><p>从普通生活开始，依次读四态旅程、三处空间、公共信号与专业交接。</p><a class="reading-lane-action" href="#ordinary-life">从普通生活开始 →</a></article>
+          <article class="reading-lane"><strong>3 分钟</strong><p>从普通生活读同一任务，再看四态、三处空间、公共信号与 G0 证据边界。</p><a class="reading-lane-action" href="#ordinary-life">从普通生活开始 →</a></article>
           <article class="reading-lane"><strong>15 分钟</strong><p>从专业交接进入，逐对象追到 D01—D08、H01—H07、权利、来源与复算触发。</p><a class="reading-lane-action" href="#review-handoff">从证据与交接开始 →</a></article>
         </div>
         <details class="entry-evidence">
-          <summary>展开三框场地依据与临时边界说明</summary>
-          <p class="figure-scroll-hint">移动端可在图内横向浏览；下方三框卡片提供等价文字读法。</p>
-        <figure class="core-figure-scroll" tabindex="0" aria-label="图 01：三框场地读取，可横向浏览">
-          <img src="../assets/figures/site-overview.png" alt="双轨京张三层场地读取：公开背景定位、临时设计容器与可深化设计关系分框表达，附公共时刻表和永久公共权利。" loading="eager" />
-          <figcaption>图 01 · 三层不得叠合为现实场地图。背景定位不是测绘，临时容器不是官方红线，设计关系不是坐标或批准顺序。</figcaption>
+          <summary>展开概念空间接力与临时边界说明</summary>
+          <p class="figure-scroll-hint">移动端可在图内横向浏览；下方三类真实性卡片提供等价边界读法。</p>
+        <figure class="core-figure-scroll" tabindex="0" aria-label="图 01：双轨京张公共地面结构总图，可横向浏览">
+          <img src="../assets/figures/site-overview.png" alt="连续公共地面骨架和六处横向联系串联众智园平行绕行、原点社区一街两院和大钟寺四向通勤；旁置验证、人工交接和失败对象均退出普通路径。" loading="eager" />
+          <figcaption>图 01 · 这是临时关系结构总图，不是精确场地总平；公共地面、横向联系、三处原型和失败对象均不证明官方线位、批准或建设。</figcaption>
         </figure>
         <div class="truth-frames" aria-label="三层真实性合同">
-          <article class="truth-frame"><strong>A · 背景定位</strong><p>公开报道只用于提出现场问题；不能证明竣工、可达、容量、权属或准确线位。</p></article>
-          <article class="truth-frame"><strong>B · 临时容器</strong><p><code>PROV-SITE-001</code> 与三处 <code>PROV-KEY</code> 只用于概念组织和 intake 自检。</p></article>
-          <article class="truth-frame"><strong>C · 设计关系</strong><p>只表达任务接力、旁侧验证、人工交接、停止、恢复与退出；不表达坐标、距离或建设顺序。</p></article>
+          <article class="truth-frame"><strong>A · 海淀关系</strong><p>公开材料只说明创新、社区、公共服务与遗址公园同属设计议题；不证明人群影响。</p></article>
+          <article class="truth-frame"><strong>B · 双轨顺序</strong><p>普通任务先完整，验证再旁置；这是设计合同，不是现场无障碍或服务结果。</p></article>
+          <article class="truth-frame"><strong>C · 三处责任</strong><p>定义、比较、交接不可互换；停止验证、恢复普通使用不等于批准、授权或 G1。</p></article>
         </div>
           <div id="cold-read-spatial-unknowns" class="notice"><strong>未裁决，不静默修图：</strong>既有 OSM 背景核查记录 0% 相交与约 412.5 米间距，但不能据此改官方未知的边界；<code>PROV-KEY-003</code> 仍未与大钟寺站、道路、地块或建筑锚定。本轮不平移 geometry。另一份维护者背景记录（2026-08-14）按公告四条街道中线读数，登记边线东偏 533–898 米（均值约 667 米），同样只作背景记录，不反向升级、不阻断评分。结构化合同：<a href="assets/site-grounding-register.json"><code>JZ-SITE-READING-R17</code></a>。</div>
         </details>
       </section>
       <nav class="primary-nav" aria-label="评审主导航">
-        <a href="#jury-entry">01 双轨总纲</a><a href="#ordinary-life">02 普通生活</a><a href="#four-state-motion">03 四态旅程</a><a href="#areas">04 三处空间</a><a href="#public-signal-interface">05 公共信号</a><a href="#review-handoff">06 专业交接</a>
+        <a href="#jury-entry">01 双轨公共地面</a><a href="#ordinary-life">02 普通生活</a><a href="#spatial-atlas">03 公共地面图集</a><a href="#areas">04 三处原型</a><a href="#four-state-motion">05 四态旅程</a><a href="#review-handoff">06 专业交接</a>
       </nav>
       <details class="evidence-index"><summary>展开 15 分钟完整证据库</summary><div class="evidence-links"><a href="#review-handoff">专业交接</a><a href="#accessible-review-walk">可访问离线漫游</a><a href="#twin-track">双轨总纲</a><a href="#non-ai-first">非 AI 优先</a><a href="#maintenance">维护闭环</a><a href="#metabolism">城市代谢</a><a href="#failure-governance">失败治理</a><a href="#climate-resilience">气候韧性</a><a href="#first-test">首测协议</a><a href="#baseline">现实基线</a><a href="#time-museum">时间博物馆</a><a href="#mission-economy">公共任务经济</a><a href="#civic-operations">全年公共运营</a><a href="#overview">总体结构</a><a href="#system">后台 JZ-AIOS</a><a href="#scope">三层范围</a><a href="#scenario">AI 场景</a><a href="#mobility">日常路径</a><a href="#building">建筑</a><a href="#projects">更新项目</a><a href="#metrics">指标证据</a><a href="#coverage">任务覆盖</a><a href="#check">自检</a><a href="#rights">权利证据</a><a href="#sources">来源与假设</a></div></details>
       <section id="ordinary-life" class="ordinary-life" aria-labelledby="ordinary-life-title">
@@ -249,20 +323,19 @@
         </div>
         <details><summary>生成、权利与机器证据</summary><p><a href="../assets/media/ordinary-life-scenes.md">中英文长描述与生成／权利披露</a> · <a href="assets/ordinary-life-media-register.json">普通生活媒体登记</a> · <a href="assets/non-ai-parity-contract.json">非 AI 同任务合同</a></p></details>
       </section>
-      <section id="four-state-motion" class="jury-motion" data-motion-root aria-labelledby="motion-title">
-        <p class="tag">评审动态 · 用户启动 · 48 秒 · 静音 · G0</p>
-        <h2 id="motion-title">同一普通任务：普通 → 验证 → 故障 → 恢复</h2>
-        <p>同一条连续日常轨在四态中保持可见，只有旁侧验证层出现、停止／隔离，再成为恢复候选。每态 12 秒、总计 48 秒只是<strong>界面节奏，不是现实恢复时长</strong>；页面不自动播放，必须由按钮启动。</p>
-        <div class="motion-track" aria-hidden="true"><span class="civic-rail"></span><span class="proof-rail"></span><span class="motion-marker" data-motion-marker></span><span class="failure-spur"></span></div>
-        <div class="motion-states">
-          <article data-motion-state><span>01</span><h3>普通</h3><p>日常轨、无屏信息和人工服务可用；验证关闭。</p></article>
-          <article data-motion-state><span>02</span><h3>验证</h3><p>自愿、公告、限域；同任务非 AI 对照仍在旁侧。</p></article>
-          <article data-motion-state><span>03</span><h3>故障 / 停止</h3><p>自动化停机，人工接管；公众绕行、询问或离开。</p></article>
-          <article id="cold-read-recovery-boundary" data-motion-state><span>04</span><h3>恢复</h3><p>先还原普通路径和服务；未闭合则保持 G0 或退出。</p></article>
+
+
+      <section id="spatial-atlas" class="spatial-atlas-entry" aria-labelledby="spatial-atlas-title">
+        <p class="tag">3 分钟空间入口 · G0 · 临时关系 · 不按比例</p>
+        <h2 id="spatial-atlas-title">同一普通任务，三处以不同空间关系守住它</h2>
+        <p class="atlas-lead">先读上部一条连续公共地面，再下钻三种不同关系：平行绕行与证明庭、居民街与两院、十字通勤与路外服务。普通非 AI 路径、人工交接与安全离开始终优先。</p>
+        <figure><img src="../assets/figures/spatial-atlas.png" alt="嵌套公共地面图集：一条连续公共地面串联三个任务节点；众智园采用平行绕行与证明庭，原点社区采用一街两院四撤回点，大钟寺保持十字通勤中心净空并把信息厅和人工台置于路外。" /><figcaption>图 03 · 总体—原型—人尺度关系图。临时形态不证明场地套准、已建状态、无障碍结果、人员、批准或恢复时长。</figcaption></figure>
+        <div class="atlas-answer-grid">
+          <article><h3>众智园 · 平行旁路</h3><p>验证庭和设备边可停止；H 留在庭侧，恢复先回到命名的旁路与庭院关系。</p></article>
+          <article><h3>原点社区 · 一街两院</h3><p>四个节点可逐点撤回；H 以纸面或口头方式离开居民街，恢复回到居民街与两院。</p></article>
+          <article><h3>大钟寺 · 四向通勤</h3><p>来源、屏幕或发布服务在路外停止；H 位于双入口服务台，恢复先回来源记录与路外服务。</p></article>
         </div>
-        <div class="motion-controls" aria-label="四态动态控制"><button type="button" data-motion-toggle>开始 48 秒旅程</button><button type="button" data-motion-reset>复位</button><span aria-live="polite" data-motion-live>静止于 01 普通</span></div>
-        <div class="motion-progress" aria-hidden="true"><span data-motion-progress></span></div>
-        <p class="review-boundary"><strong>静态替代：</strong> 上述四张卡即为完整文字稿；禁用 JavaScript 时全部可读。系统启用“减少动态效果”时不计时，只按按钮逐态查看。现实事故、恢复时长、班次、验收和 GO 决定仍为 0 或 unknown。结构化回链：<a href="assets/jury-motion-journey.json"><code>jury-motion-journey.json</code></a>。</p>
+        <p class="atlas-boundary"><strong>边界：</strong>故障只停止验证或服务叠层；普通生活和完整非 AI 路径继续。恢复不构成授权、批准、G1 或重启；现实结果、工期、人员和验收仍为 0 或 unknown。</p>
       </section>
       <section id="areas" class="front-stage-areas" aria-labelledby="areas-title">
         <p class="tag">三处共享公共底线，不共享空间构图</p>
@@ -274,8 +347,96 @@
         </div>
         <p class="figure-scroll-hint">移动端仅在标注容器内横向浏览；先用上方三句确认空间关系，再横向核对图件。</p>
         <figure class="core-figure-scroll" tabindex="0" aria-label="三处差异化概念平面，可横向浏览"><img src="../assets/figures/key-areas.png" alt="众智园以平行普通旁路和验证庭分离；原点社区以一条居民街串联两院和四节点；大钟寺以四向通勤十字与路外服务分离。" /><figcaption>概念平面 · G0 · 临时几何 · 不按比例</figcaption></figure>
-        <figure class="core-figure-scroll" tabindex="0" aria-label="三处差异化关系剖面与四态，可横向浏览"><img src="../assets/figures/key-area-sections.png" alt="三处分别停止上方验证庭、四个独立节点或路外服务支线；普通路径连续，恢复先还原各自的普通空间。" /><figcaption>关系剖面与四态 · 尺寸、材料、连接、专业核验和现实恢复时间均未知</figcaption></figure>
+        <figure class="core-figure-scroll" tabindex="0" aria-label="三处差异化地面阈值剖面，可横向浏览"><img src="../assets/figures/key-area-sections.png" alt="三处地面阈值剖面分别显示普通绕行与证明庭、居民街与两院、通勤主路与路外服务，并标出停止对象、人工位置和还场对象。" /><figcaption>地面—阈值剖面 · 尺寸、材料、连接、专项结论和现实恢复时间均未知</figcaption></figure>
         <details><summary>展开三处完整对照与限制</summary><p><a href="#areas-evidence">读取三处普通任务、人工交接、故障对象、恢复对象和缺失资料对照</a>。图件不证明现状建筑、站点锚定、设施、批准或建成结果。</p></details>
+      </section>
+      <section id="four-state-motion" class="jury-motion" data-motion-root aria-labelledby="motion-title">
+        <p class="tag">评审动态 · 用户启动 · 48 秒 · 静音 · G0</p>
+        <h2 id="motion-title">同一普通任务：普通 → 验证 → 故障 → 恢复</h2>
+        <p>同一条连续日常轨在四态中保持可见，只有旁侧验证层出现、停止／隔离，再成为恢复候选。每态 12 秒、总计 48 秒只是<strong>界面节奏，不是现实恢复时长</strong>；页面不自动播放，必须由按钮启动。</p>
+        <div class="motion-track" aria-hidden="true"><span class="civic-rail"></span><span class="proof-rail"></span><span class="motion-marker" data-motion-marker></span><span class="failure-spur"></span></div>
+        <div class="motion-states">
+          <article data-motion-state><span>01</span><h3>普通</h3><p>日常轨、无屏信息和人工服务可用；验证关闭。</p></article>
+          <article data-motion-state><span>02</span><h3>验证</h3><p>自愿、公告、限域；同任务非 AI 对照仍在旁侧。</p></article>
+          <article data-motion-state><span>03</span><h3>故障 / 停止</h3><p>自动化停机，人工接管；公众绕行、询问或离开。</p></article>
+          <article id="cold-read-recovery-boundary" data-motion-state><span>04</span><h3>恢复</h3><p>先还原普通路径和服务；即使材料闭合，仍不产生授权、批准、G1 或重启；未闭合则保持 G0 或退出。</p></article>
+        </div>
+        <div class="motion-controls" aria-label="四态界面示意控制"><button type="button" data-motion-toggle>播放 48 秒界面示意</button><button type="button" data-motion-reset>复位</button><span aria-live="polite" data-motion-live>静止显示 01 普通</span></div>
+        <div class="motion-progress" aria-hidden="true"><span data-motion-progress></span></div>
+        <p class="review-boundary"><strong>静态替代：</strong> 上述四张卡即为完整文字稿；禁用 JavaScript 时全部可读。系统启用“减少动态效果”时不计时，只按按钮逐态查看。现实事故、恢复时长、班次、验收和 GO 决定仍为 0 或 unknown。结构化回链：<a href="assets/jury-motion-journey.json"><code>jury-motion-journey.json</code></a>。</p>
+      </section>
+
+
+
+      <section id="review-handoff">
+        <h2>评审收束与专业深化交接</h2>
+        <div class="notice">
+          <strong>评审收束：</strong>
+          先读“一概念、三原型、一内核”，再用六项任务核对证据，最后把 D01—D08 现实缺口交给 P01—P07 建议专业类型。本区 <code>#review-handoff</code> 是唯一 15 分钟专业交接起点；五步可访问漫游只从这里继续，不构成第二入口。H01—H07 只是未提交的交接／证据包，不是人、专业或已接受责任；只有未来胜任且接受明确范围的专业方才可在该范围内作出专业处置。评审收束不新增品牌、场景、项目、geometry 或成熟度；任何重大缺口继续 NO-GO。
+        </div>
+        <div id="t02-evidence-backlink" aria-labelledby="t02-evidence-backlink-title">
+          <h3 id="t02-evidence-backlink-title">可执行 T-02 证据回链示例</h3>
+          <p><strong>先分对象：</strong>项目条目 <code>T-02</code> 当前是 <code>NO-GO</code>；<code>t02-g0-g1</code> 是 10 个固定合成案例的确定性治理复演，结果 <code>PASS</code>。后者只证明合同字段、来源闭包、规则优先级与停止／恢复映射可重放，不证明现场、G1、批准、项目通过、专业接责或真实非 AI 等价。</p>
+          <table tabindex="0">
+            <thead><tr><th scope="col">回链步骤</th><th scope="col">现有对象／状态</th><th scope="col">已有文件与 JSON pointer</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">1 · 项目对象</th><td><code>T-02</code> · <code>SCENE-011/012</code> · <code>NO-GO</code></td><td><a href="assets/implementation-handoff-matrix.json"><code>implementation-handoff-matrix.json#/item_handoffs/9</code></a>；空间回链 <code>geometry/constraints.geojson#SCENE-011</code>、<code>#SCENE-012</code></td></tr>
+              <tr><th scope="row">2 · 大钟寺证据</th><td><code>KAE-003</code> · <code>PROV-KEY-003</code> · 场景节点含 <code>SCENE-011/012</code></td><td><a href="assets/key-area-evidence-matrix.json"><code>key-area-evidence-matrix.json#/records/2</code></a></td></tr>
+              <tr><th scope="row">3 · 同任务双路径</th><td><code>PARITY-002</code> ↔ <code>SCENE-011</code>；<code>PARITY-005</code> ↔ <code>SCENE-012</code>；均为 <code>unknown_not_measured</code></td><td><a href="assets/non-ai-parity-contract.json"><code>non-ai-parity-contract.json#/test_journeys/1</code></a>、<a href="assets/non-ai-parity-contract.json"><code>#/test_journeys/4</code></a></td></tr>
+              <tr><th scope="row">4 · 合成复演限定</th><td><code>T02-G0-G1-SYNTHETIC-REPLAY-RESULT-V1</code> · 10/10 精确匹配 · <code>PASS</code>，仅限合成治理复演</td><td><a href="assets/t02-g0-g1-replay-result.json"><code>t02-g0-g1-replay-result.json#/summary</code></a>、<code>#/proves_zh</code>、<code>#/does_not_prove</code>、<code>#/real_world_status</code></td></tr>
+              <tr><th scope="row">5 · 交接包</th><td><code>H01—H07</code> 全部 <code>not_submitted</code>，不是人员或已接受责任</td><td><a href="assets/implementation-handoff-matrix.json"><code>implementation-handoff-matrix.json#/handoff_pack_definitions</code></a></td></tr>
+              <tr><th scope="row">6 · 建议专业类型</th><td><code>P01—P07</code> 全部 <code>suggested_role_type_only</code></td><td><a href="assets/implementation-handoff-matrix.json"><code>implementation-handoff-matrix.json#/professional_discipline_matrix</code></a></td></tr>
+              <tr><th scope="row">7 · 状态并列，不得升级</th><td><code>G0</code> + <code>NO-GO</code> + <code>unknown_not_measured</code> + <code>not_fully_cleared</code></td><td><a href="assets/review-handoff-index.json"><code>review-handoff-index.json#/t02_evidence_backlink/parallel_status</code></a>；权利源 <a href="assets/source-rights-evidence.json"><code>source-rights-evidence.json#/clearance_claim/status</code></a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <section id="package-index" aria-labelledby="package-index-title">
+          <h3 id="package-index-title">包内导航与评审交接索引</h3>
+          <p>本包 156 个路径的评审定位统一见 <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>：当前计数为 156 个 manifest/package 路径、155 个非 manifest 内容路径、156 条逐文件权利记录。索引提供七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、21 个章节单元、D01—D08/H01—H07 交接、八问冷读）与逐文件登记（现行／历史快照／机器输入／冻结／临时五种状态、语言对、轮次来源与权利回链）；它只负责定位，不生成新证据、不改变成熟度或权利状态。</p>
+          <table tabindex="0">
+            <thead><tr><th scope="col">阅读路线</th><th scope="col">入口</th></tr></thead>
+            <tbody>
+              <tr><td>30 秒：一个概念与一个边界</td><td><code>proposal.md</code> 一句话判断 · 封面与三框总图</td></tr>
+              <tr><td>3 分钟：一个普通任务的完整非 AI 旅程</td><td>本页 <a href="#ordinary-life">普通生活</a> · <a href="#four-state-motion">四态</a> · <a href="#public-signal-interface">公共信号</a></td></tr>
+              <tr><td>15 分钟：逐对象追证与证据库</td><td>唯一专业交接起点：本页 <a href="#review-handoff">专业交接</a>；五步漫游从该起点继续</td></tr>
+              <tr><td>D01—D08 / H01—H07 专业交接</td><td><code>implementation-handoff-matrix.json</code> · <code>field-evidence-intake-contract.json</code> · <code>readiness-closure-contract.json</code></td></tr>
+              <tr><td>八问冷读（仅编辑复核）</td><td><a href="#cold-read-answer-map">本页逐问答案地图</a> · <a href="assets/review-handoff-index.json">机器索引</a> · A3/A0 页码</td></tr>
+            </tbody>
+          </table>
+          <div id="cold-read-answer-map" aria-labelledby="cold-read-answer-map-title">
+            <h4 id="cold-read-answer-map-title">八问冷读答案地图（仅作编辑复核）</h4>
+            <p>每问只指定一个前台主答案；A3/A0 页码仅作等价复核。冷读不是公众反馈、专家意见、评审结果或批准。本轮无新媒体。</p>
+            <table tabindex="0">
+              <thead><tr><th scope="col">问题</th><th scope="col">唯一主答案</th><th scope="col">前台唯一入口</th><th scope="col">印刷复核</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Q1 · 唯一核心概念？</th><td>“双轨京张”：日常轨连续、验证轨间歇且旁侧；三原型不可互换；全案 G0。</td><td><a href="#jury-entry">30 秒入口</a></td><td>A3 P1 · A0 P1</td></tr>
+                <tr><th scope="row">Q2 · 无注册、扫码或 AI？</th><td>能；实体导向、无屏、完整非 AI／无障碍意图路径、纸面或口头说明、人工交接和退出先成立。</td><td><a href="#ordinary-life">普通生活</a></td><td>A3 P8 · A0 P5</td></tr>
+                <tr><th scope="row">Q3 · 三处为何不可复制？</th><td>众智园是平行验证庭与实体停止；原点是一街两院四节点与逐点撤回；大钟寺是四向通勤、路外发布与人工台。</td><td><a href="#areas">三处空间</a></td><td>A3 P4—P7 · A0 P3—P4</td></tr>
+                <tr><th scope="row">Q4 · 验证轨为何非连续占地？</th><td>它是自愿、公告、限域、可停、可拆的旁侧任务叠层；不是坐标、连续足迹或建设线位。</td><td><a href="#cold-read-proof-boundary">验证轨边界</a></td><td>A3 P1、P3 · A0 P1</td></tr>
+                <tr><th scope="row">Q5 · 故障停什么、留什么？</th><td>停并隔离验证叠层；日常轨、完整非 AI 路径、无屏信息、人工接管、撤回、申诉和安全离开继续。</td><td><a href="#four-state-motion">四态旅程</a></td><td>A3 P9 · A0 P6</td></tr>
+                <tr><th scope="row">Q6 · 恢复为何不等于升级？</th><td>恢复只先还普通路径、无屏信息、静音和同一任务；验收与 GO 为 0，未闭合即 G0、关闭或退役。</td><td><a href="#cold-read-recovery-boundary">恢复边界</a></td><td>A3 P9、P13 · A0 P6、P8</td></tr>
+                <tr><th scope="row">Q7 · 哪些空间信息仍未知？</th><td>全部场地与重点区容器仍 provisional；官方红线、套准、锚点、尺寸、材料、连接和专项结论未知。</td><td><a href="#cold-read-spatial-unknowns">临时与未知</a></td><td>A3 P2、P14 · A0 P1、P3—P4</td></tr>
+                <tr><th scope="row">Q8 · 谁能复算、修改、附条件、拒绝或删除？</th><td>D01—D08 真实资料替换临时占位；H01—H07 是未提交交接／证据包，不是人、专业或已接受责任；P01—P07 仅为建议专业类型。未来胜任且接受明确范围的专业方，才可在该范围内复算、修改、附条件、拒绝或删除；重大缺口保持 NO-GO。</td><td><a href="#review-handoff">专业交接</a></td><td>A3 P13—P14 · A0 P7—P8</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="review-limit"><strong>状态标注：</strong><code>round15-baseline.json</code> 为历史快照；<code>t02-g0-g1-replay-fixtures.json</code> 为合成回放机器输入；全部 geometry 保持临时约束并冻结哈希；现行计数以 manifest 与权利台账为准。</p>
+        </section>
+        <figure>
+          <img src="../assets/figures/review-professional-handoff.png" alt="评审收束与专业交接总图：一概念、三原型、一内核、六项任务、八类资料替换、七专业和 NO-GO 停止线" />
+          <figcaption>图件是 G0 评审索引，不是官方资料、专业意见、责任接受、审批或实施成果。</figcaption>
+        </figure>
+        <div class="grid">
+          <article class="card"><b>冻结</b><p>双轨京张、三处不可互换原型、JZ-AIOS、四条状态轴、七项公共权利和既有编号。</p></article>
+          <article class="card"><b>替换</b><p>临时几何、类型化占位、角色类型、未核验来源与内容；不得修改官方或锁定图层来迁就方案。</p></article>
+          <article class="card"><b>复算</b><p>containment、面积、路径、图注、双语 HTML/PDF、manifest 和逐文件权利摘要全部同步。</p></article>
+          <article class="card"><b>复核 / 停止</b><p>专业冲突、同任务共测、停机恢复、独立复测和权利授权；任一重大缺口维持 NO-GO。</p></article>
+        </div>
+        <table tabindex="0">
+          <thead><tr><th scope="col">当前现实计数</th><th scope="col">专业接手的第一动作</th><th scope="col">不能被替代</th></tr></thead>
+          <tbody><tr><td>权威替换材料 0 · 专业责任接受 0 · 99 槽提交 0 · 批准 0 · 现场测试 0 · GO 0</td><td>选择一个既有项目或场景，把真实、可追踪材料装入对应 H01—H07 未提交交接包；不新增场景 ID 绕开缺口。</td><td>概念图≠规划判断；绿线≠无障碍合规；OSM≠边界/交通；合成 PASS≠现实表现；活动日历≠责任与预算。</td></tr></tbody>
+        </table>
+         <p><strong>五项本地合同入口：</strong><a href="assets/implementation-handoff-matrix.json">D01—D08 官方资料替换登记</a>（键 <code>official_data_replacement_register</code>） · <a href="assets/implementation-handoff-matrix.json">P01—P07 建议专业类型矩阵</a>（键 <code>professional_discipline_matrix</code>） · <a href="assets/implementation-handoff-matrix.json">H01—H07 未提交交接包定义</a>（键 <code>handoff_pack_definitions</code>） · <a href="assets/field-evidence-intake-contract.json">D01—D08 替换资料模板</a>（键 <code>replacement_packet_templates</code>） · <a href="assets/readiness-closure-contract.json">关闭类别与计数</a>（键 <code>closure_categories</code>）。离线浏览器会打开对应 JSON 文件，键名用于文件内搜索；这些入口不证明资料已提交、专业方已接受责任或关闭已完成。</p>
       </section>
       <section id="public-signal-interface" class="public-signal-interface" data-signal-interface data-default-area="zhongzhiyuan" data-default-state="ordinary" data-selection-prefix="G0 概念态 · " data-carrier-prefix="概念载体：" aria-labelledby="public-signal-interface-title">
         <p class="tag">第 18 轮 · G0 示意 · 非实时系统</p>
@@ -342,65 +503,12 @@
         <p class="signal-interface-boundary"><strong>结构化回链：</strong><a href="assets/key-area-evidence-matrix.json"><code>key-area-evidence-matrix.json#public_signal_interface_round18</code></a> · <a href="assets/civic-operations-contract.json"><code>civic-operations-contract.json</code></a> · <a href="assets/site-grounding-register.json"><code>site-grounding-register.json#public_signal_interface_round18</code></a>。本界面只使既有合同可读，不新增场景、项目、几何、设施、排班、批准或现实结果。</p>
       </section>
 
-      <section id="review-handoff">
-        <h2>评审收束与专业深化交接</h2>
-        <div class="notice">
-          <strong>评审收束：</strong>
-          先读“一概念、三原型、一内核”，再用六项任务核对证据，最后把 D01—D08 现实缺口交给七类专业。评审收束不新增品牌、场景、项目、geometry 或成熟度；任何重大缺口继续 NO-GO。
-        </div>
-        <section id="package-index" aria-labelledby="package-index-title">
-          <h3 id="package-index-title">包内导航与评审交接索引</h3>
-          <p>本包 141 个路径的评审定位统一见 <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>：七条阅读路线（30 秒／3 分钟／15 分钟、五步可访问漫游、21 个章节单元、D01—D08/H01—H07 交接、八问冷读）与逐文件登记（现行／历史快照／机器输入／冻结／临时五种状态、语言对、轮次来源与权利回链）。索引只负责定位，不生成新证据、不改变成熟度或权利状态。</p>
-          <table tabindex="0">
-            <thead><tr><th scope="col">阅读路线</th><th scope="col">入口</th></tr></thead>
-            <tbody>
-              <tr><td>30 秒：一个概念与一个边界</td><td><code>proposal.md</code> 一句话判断 · 封面与三框总图</td></tr>
-              <tr><td>3 分钟：一个普通任务的完整非 AI 旅程</td><td>本页 <a href="#ordinary-life">普通生活</a> · <a href="#four-state-motion">四态</a> · <a href="#public-signal-interface">公共信号</a></td></tr>
-              <tr><td>15 分钟：逐对象追证与证据库</td><td>本页 <a href="#review-handoff">专业交接</a> · <a href="#accessible-review-walk">五步漫游</a> · 索引进阶登记</td></tr>
-              <tr><td>D01—D08 / H01—H07 专业交接</td><td><code>implementation-handoff-matrix.json</code> · <code>field-evidence-intake-contract.json</code> · <code>readiness-closure-contract.json</code></td></tr>
-              <tr><td>八问冷读（仅编辑复核）</td><td><a href="#cold-read-answer-map">本页逐问答案地图</a> · <a href="assets/review-handoff-index.json">机器索引</a> · A3/A0 页码</td></tr>
-            </tbody>
-          </table>
-          <div id="cold-read-answer-map" aria-labelledby="cold-read-answer-map-title">
-            <h4 id="cold-read-answer-map-title">八问冷读答案地图（仅作编辑复核）</h4>
-            <p>每问只指定一个前台主答案；A3/A0 页码仅作等价复核。冷读不是公众反馈、专家意见、评审结果或批准。本轮无新媒体。</p>
-            <table tabindex="0">
-              <thead><tr><th scope="col">问题</th><th scope="col">唯一主答案</th><th scope="col">前台唯一入口</th><th scope="col">印刷复核</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Q1 · 唯一核心概念？</th><td>“双轨京张”：日常轨连续、验证轨间歇且旁侧；三原型不可互换；全案 G0。</td><td><a href="#jury-entry">30 秒入口</a></td><td>A3 P1 · A0 P1</td></tr>
-                <tr><th scope="row">Q2 · 无注册、扫码或 AI？</th><td>能；实体导向、无屏、完整非 AI／无障碍意图路径、纸面或口头说明、人工交接和退出先成立。</td><td><a href="#ordinary-life">普通生活</a></td><td>A3 P8 · A0 P5</td></tr>
-                <tr><th scope="row">Q3 · 三处为何不可复制？</th><td>众智园是平行验证庭与实体停止；原点是一街两院四节点与逐点撤回；大钟寺是四向通勤、路外发布与人工台。</td><td><a href="#areas">三处空间</a></td><td>A3 P4—P7 · A0 P3—P4</td></tr>
-                <tr><th scope="row">Q4 · 验证轨为何非连续占地？</th><td>它是自愿、公告、限域、可停、可拆的旁侧任务叠层；不是坐标、连续足迹或建设线位。</td><td><a href="#cold-read-proof-boundary">验证轨边界</a></td><td>A3 P1、P3 · A0 P1</td></tr>
-                <tr><th scope="row">Q5 · 故障停什么、留什么？</th><td>停并隔离验证叠层；日常轨、完整非 AI 路径、无屏信息、人工接管、撤回、申诉和安全离开继续。</td><td><a href="#four-state-motion">四态旅程</a></td><td>A3 P9 · A0 P6</td></tr>
-                <tr><th scope="row">Q6 · 恢复为何不等于升级？</th><td>恢复只先还普通路径、无屏信息、静音和同一任务；验收与 GO 为 0，未闭合即 G0、关闭或退役。</td><td><a href="#cold-read-recovery-boundary">恢复边界</a></td><td>A3 P9、P13 · A0 P6、P8</td></tr>
-                <tr><th scope="row">Q7 · 哪些空间信息仍未知？</th><td>全部场地与重点区容器仍 provisional；官方红线、套准、锚点、尺寸、材料、连接和专项结论未知。</td><td><a href="#cold-read-spatial-unknowns">临时与未知</a></td><td>A3 P2、P14 · A0 P1、P3—P4</td></tr>
-                <tr><th scope="row">Q8 · 谁能修改、拒绝或删除？</th><td>D01—D08 替换临时占位；H01—H07 可复算、修改、拒绝或删除概念；重大缺口保持 NO-GO。</td><td><a href="#review-handoff">专业交接</a></td><td>A3 P13—P14 · A0 P7—P8</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="review-limit"><strong>状态标注：</strong><code>round15-baseline.json</code> 为历史快照；<code>t02-g0-g1-replay-fixtures.json</code> 为合成回放机器输入；全部 geometry 保持临时约束并冻结哈希；现行计数以 manifest 与权利台账为准。</p>
-        </section>
-        <figure>
-          <img src="../assets/figures/review-professional-handoff.png" alt="评审收束与专业交接总图：一概念、三原型、一内核、六项任务、八类资料替换、七专业和 NO-GO 停止线" />
-          <figcaption>图件是 G0 评审索引，不是官方资料、专业意见、责任接受、审批或实施成果。</figcaption>
-        </figure>
-        <div class="grid">
-          <article class="card"><b>冻结</b><p>双轨京张、三处不可互换原型、JZ-AIOS、四条状态轴、七项公共权利和既有编号。</p></article>
-          <article class="card"><b>替换</b><p>临时几何、类型化占位、角色类型、未核验来源与内容；不得修改官方或锁定图层来迁就方案。</p></article>
-          <article class="card"><b>复算</b><p>containment、面积、路径、图注、双语 HTML/PDF、manifest 和逐文件权利摘要全部同步。</p></article>
-          <article class="card"><b>复核 / 停止</b><p>专业冲突、同任务共测、停机恢复、独立复测和权利授权；任一重大缺口维持 NO-GO。</p></article>
-        </div>
-        <table tabindex="0">
-          <thead><tr><th scope="col">当前现实计数</th><th scope="col">专业接手的第一动作</th><th scope="col">不能被替代</th></tr></thead>
-          <tbody><tr><td>权威替换材料 0 · 专业责任接受 0 · 99 槽提交 0 · 批准 0 · 现场测试 0 · GO 0</td><td>选择一个既有项目或场景，向 H01—H07 提交真实、可追踪材料；不新增场景 ID 绕开缺口。</td><td>概念图≠规划判断；绿线≠无障碍合规；OSM≠边界/交通；合成 PASS≠现实表现；活动日历≠责任与预算。</td></tr></tbody>
-        </table>
-        <p>结构化回链：<code>visual/assets/implementation-handoff-matrix.json#review_synthesis</code>、<code>#agent_task_review_crosswalk</code>、<code>#official_data_replacement_register</code>、<code>#professional_discipline_matrix</code>。</p>
-      </section>
-      <details class="backstage-library">
+
+      <details class="backstage-library" open>
         <summary>展开 15 分钟后台证据：合同、场景、指标、权利与来源</summary>
         <div class="backstage-content">
           <section id="accessible-review-walk" class="review-walk-shell" aria-labelledby="review-walk-title"><p class="tag">G0 · OFFLINE · NO ACCOUNT · NO AI REQUIRED</p><h2 id="review-walk-title">后台五步可访问证据漫游</h2>
-<p>这是 15 分钟追证入口，不是前台 3 分钟路径；按空间—三原型—普通任务—故障恢复—专业 NO-GO 阅读，交互只负责定位，呈现不是证据。</p><p class="notice"><strong>静态回退：</strong> 无 JavaScript 时，以下五步、限制与证据回链仍全部展开。</p><nav aria-label="Review steps"><ol class="review-step-nav"><li><a data-step-link href="#step-1">1. 先分三框，再读双轨关系</a></li><li><a data-step-link href="#step-2">2. 比较三种不可互换的公共空间原型</a></li><li><a data-step-link href="#step-3">3. 先完成一个不依赖 AI 的普通任务</a></li><li><a data-step-link href="#step-4">4. 沿普通—验证—故障—恢复读一次连续旅程</a></li><li><a data-step-link href="#step-5">5. 把概念交给真实资料与专业 NO-GO</a></li></ol><span class="review-live" aria-live="polite" data-live>1 / 5</span></nav><article class="review-step" id="step-1" data-step aria-labelledby="step-1-title"><p class="review-kicker">1 / 5 · G0</p><h3 id="step-1-title" tabindex="-1">先分三框，再读双轨关系</h3><p><strong>为什么不能把三类信息拼成一张现实总图？</strong></p><p>公开背景只供定位，临时容器只供组织，双轨只表达任务接力；三者绝不套准成现实场地图。连续日常轨先成立，验证只在自愿、公告、限域且有责任人的条件下旁侧出现。</p><figure><img src="../assets/figures/site-overview.png" alt="三框场地读取：公开背景、临时设计容器和双轨设计关系分开呈现；不套准、不标比例、不冒充红线或站点锚定。" loading="eager"><figcaption>先分三框，再只在设计关系框读取双轨；G0 图式不证明连续占地、既建设施、铁路结论、站点锚定或审批边界。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 先分三框，再只在设计关系框读取双轨；G0 图式不证明连续占地、既建设施、铁路结论、站点锚定或审批边界。</p><details><summary>证据与限制</summary><ul><li><a href="../geometry/site_boundary.geojson"><code>../geometry/site_boundary.geojson</code></a></li><li><a href="assets/site-grounding-register.json"><code>assets/site-grounding-register.json</code></a></li><li><a href="assets/non-ai-parity-contract.json"><code>assets/non-ai-parity-contract.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><article class="review-step" id="step-2" data-step aria-labelledby="step-2-title"><p class="review-kicker">2 / 5 · G0</p><h3 id="step-2-title" tabindex="-1">比较三种不可互换的公共空间原型</h3><p><strong>为什么三处不能机械复制？</strong></p><p>众智园用平行验证庭隔离设备并保留人工接管；原点社区以一街两院四节点支持无屏共学和逐点撤回；大钟寺以四象限步行、一厅一台守住通勤连续与人工服务。</p><figure><img src="../assets/figures/key-areas.png" alt="众智园、原点社区和大钟寺三种不可互换的关系原型；PROV-KEY-003 不证明大钟寺车站、道路、地块或建筑位置。" loading="lazy"><figcaption>体量、构件与位置均为概念类型；PROV-KEY-003 不是大钟寺站域平面，尺寸、材料、连接、专项核验、消防、铁路保护与市政结论仍 unknown。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 体量、构件与位置均为概念类型；PROV-KEY-003 不是大钟寺站域平面，尺寸、材料、连接、专项核验、消防、铁路保护与市政结论仍 unknown。</p><details><summary>证据与限制</summary><ul><li><a href="assets/key-area-evidence-matrix.json"><code>assets/key-area-evidence-matrix.json</code></a></li><li><a href="assets/reversible-component-restoration-register.json"><code>assets/reversible-component-restoration-register.json</code></a></li><li><a href="../geometry/key_areas.geojson"><code>../geometry/key_areas.geojson</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><article class="review-step" id="step-3" data-step aria-labelledby="step-3-title"><p class="review-kicker">3 / 5 · G0</p><h3 id="step-3-title" tabindex="-1">先完成一个不依赖 AI 的普通任务</h3><p><strong>不注册、不扫码、不使用 AI，公众能否完成同一任务？</strong></p><p>可以。无屏入口、连续非 AI／无障碍意图路径、人工站房、纸面或口头说明和清晰离开路径构成完整主路径；AI 只作为旁侧可选叠层。</p><figure><img src="../assets/media/ordinary-life-scenes.webp" alt="三联合成概念图：普通居民、儿童、通勤者和工作人员使用三处空间，验证活动始终位于连续日常路径旁侧。" loading="lazy"><figcaption>这是合成概念图，不是现场照片、确认视点、无障碍合规结果、运营证据或人员承诺。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 这是合成概念图，不是现场照片、确认视点、无障碍合规结果、运营证据或人员承诺。</p><details><summary>证据与限制</summary><ul><li><a href="assets/non-ai-parity-contract.json"><code>assets/non-ai-parity-contract.json</code></a></li><li><a href="assets/ordinary-life-media-register.json"><code>assets/ordinary-life-media-register.json</code></a></li><li><a href="../assets/media/ordinary-life-scenes.md"><code>../assets/media/ordinary-life-scenes.md</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><article class="review-step" id="step-4" data-step aria-labelledby="step-4-title"><p class="review-kicker">4 / 5 · G0</p><h3 id="step-4-title" tabindex="-1">沿普通—验证—故障—恢复读一次连续旅程</h3><p><strong>失败发生后，谁停、谁接管、如何恢复？</strong></p><p>物理停止优先于界面提示；人工接管、隔离和非 AI 绕行立即保住普通任务。只有恢复材料、居民确认、维护关闭和责任复核齐备，验证叠层才可重新候选。</p><figure><img src="../assets/figures/failure-governance-writeback.png" alt="失败侧线与回写图：停止、人工接管、隔离、普通任务继续、恢复验收和证据回写。" loading="lazy"><figcaption>合成回放 PASS 只证明文件合同可重放；现实事故、恢复时长、班次、场所验收与 GO 决定均为 0 或 unknown。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 合成回放 PASS 只证明文件合同可重放；现实事故、恢复时长、班次、场所验收与 GO 决定均为 0 或 unknown。</p><details><summary>证据与限制</summary><ul><li><a href="assets/failure-governance-register.json"><code>assets/failure-governance-register.json</code></a></li><li><a href="assets/civic-operations-contract.json"><code>assets/civic-operations-contract.json</code></a></li><li><a href="assets/t02-g0-g1-replay-result.json"><code>assets/t02-g0-g1-replay-result.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><article class="review-step" id="step-5" data-step aria-labelledby="step-5-title"><p class="review-kicker">5 / 5 · G0</p><h3 id="step-5-title" tabindex="-1">把概念交给真实资料与专业 NO-GO</h3><p><strong>哪些内容必须被替换，谁有权拒绝？</strong></p><p>D01—D08 真实资料替换临时几何、类型占位与未核验来源；H01—H07 专业复算、核验责任并可修改、拒绝或删除概念。重大缺口、权利不清或普通权利受损时保持 NO-GO。</p><figure><img src="../assets/figures/review-professional-handoff.png" alt="评审收束与专业交接总图：一概念、三原型、一内核、六任务、八类资料、七专业与 NO-GO。" loading="lazy"><figcaption>文件、图件、机器检查、PR 审查或合并均不构成规划判断、专业责任接受、现场批准、运营成绩或权利许可。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 文件、图件、机器检查、PR 审查或合并均不构成规划判断、专业责任接受、现场批准、运营成绩或权利许可。</p><details><summary>证据与限制</summary><ul><li><a href="assets/implementation-handoff-matrix.json"><code>assets/implementation-handoff-matrix.json</code></a></li><li><a href="assets/readiness-closure-contract.json"><code>assets/readiness-closure-contract.json</code></a></li><li><a href="assets/rights-clearance-ledger.json"><code>assets/rights-clearance-ledger.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><p class="review-boundary">D01–D08 · H01–H07 · 12 SCENES · 8 PROJECTS · 3 KEY AREAS · 99 CLOSURE SLOTS · G0 · not_fully_cleared · PROFESSIONAL MAY REJECT/DELETE</p></section>
+<p>这是从唯一 15 分钟专业交接起点 <a href="#review-handoff"><code>#review-handoff</code></a> 继续的五步工具，不是第二入口；按空间—三原型—普通任务—故障恢复—专业 NO-GO 阅读，交互只负责定位，呈现不是证据。</p><p class="notice"><strong>静态回退：</strong> 无 JavaScript 时，以下五步、限制与证据回链仍全部展开。</p><nav aria-label="Review steps"><ol class="review-step-nav"><li><a data-step-link href="#step-1">1. 先分三框，再读双轨关系</a></li><li><a data-step-link href="#step-2">2. 比较三种不可互换的公共空间原型</a></li><li><a data-step-link href="#step-3">3. 先完成一个不依赖 AI 的普通任务</a></li><li><a data-step-link href="#step-4">4. 沿普通—验证—故障—恢复读一次连续旅程</a></li><li><a data-step-link href="#step-5">5. 把概念交给真实资料与专业 NO-GO</a></li></ol><span class="review-live" aria-live="polite" data-live>1 / 5</span></nav><article class="review-step" id="step-1" data-step aria-labelledby="step-1-title"><p class="review-kicker">1 / 5 · G0</p><h3 id="step-1-title" tabindex="-1">先分三框，再读双轨关系</h3><p><strong>为什么不能把三类信息拼成一张现实总图？</strong></p><p>公开背景只供定位，临时容器只供组织，双轨只表达任务接力；三者绝不套准成现实场地图。连续日常轨先成立，验证只在自愿、公告、限域且有责任人的条件下旁侧出现。</p><figure><img src="../assets/figures/site-overview.png" alt="公共地面结构总图：连续普通骨架、六处横向联系与三种不可互换原型分开可读；临时容器不冒充官方红线或精确站点锚定。" loading="eager"><figcaption>先读连续公共地面与六处横联，再读三种原型和旁置验证；G0 图式不证明连续占地、既建设施、铁路结论、站点锚定或审批边界。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 先分三框，再只在设计关系框读取双轨；G0 图式不证明连续占地、既建设施、铁路结论、站点锚定或审批边界。</p><details><summary>证据与限制</summary><ul><li><a href="../geometry/site_boundary.geojson"><code>../geometry/site_boundary.geojson</code></a></li><li><a href="assets/site-grounding-register.json"><code>assets/site-grounding-register.json</code></a></li><li><a href="assets/non-ai-parity-contract.json"><code>assets/non-ai-parity-contract.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><article class="review-step" id="step-2" data-step aria-labelledby="step-2-title"><p class="review-kicker">2 / 5 · G0</p><h3 id="step-2-title" tabindex="-1">比较三种不可互换的公共空间原型</h3><p><strong>为什么三处不能机械复制？</strong></p><p>众智园用平行验证庭隔离设备并保留人工接管；原点社区以一街两院四节点支持无屏共学和逐点撤回；大钟寺以四象限步行、一厅一台守住通勤连续与人工服务。</p><figure><img src="../assets/figures/key-areas.png" alt="众智园、原点社区和大钟寺三种不可互换的关系原型；PROV-KEY-003 不证明大钟寺车站、道路、地块或建筑位置。" loading="lazy"><figcaption>体量、构件与位置均为概念类型；PROV-KEY-003 不是大钟寺站域平面，尺寸、材料、连接、专项核验、消防、铁路保护与市政结论仍 unknown。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 体量、构件与位置均为概念类型；PROV-KEY-003 不是大钟寺站域平面，尺寸、材料、连接、专项核验、消防、铁路保护与市政结论仍 unknown。</p><details><summary>证据与限制</summary><ul><li><a href="assets/key-area-evidence-matrix.json"><code>assets/key-area-evidence-matrix.json</code></a></li><li><a href="assets/reversible-component-restoration-register.json"><code>assets/reversible-component-restoration-register.json</code></a></li><li><a href="../geometry/key_areas.geojson"><code>../geometry/key_areas.geojson</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><article class="review-step" id="step-3" data-step aria-labelledby="step-3-title"><p class="review-kicker">3 / 5 · G0</p><h3 id="step-3-title" tabindex="-1">先完成一个不依赖 AI 的普通任务</h3><p><strong>不注册、不扫码、不使用 AI，公众能否完成同一任务？</strong></p><p>可以。无屏入口、连续非 AI／无障碍意图路径、人工站房、纸面或口头说明和清晰离开路径构成完整主路径；AI 只作为旁侧可选叠层。</p><figure><img src="../assets/media/ordinary-life-scenes.webp" alt="三联合成概念图：普通居民、儿童、通勤者和工作人员使用三处空间，验证活动始终位于连续日常路径旁侧。" loading="lazy"><figcaption>这是合成概念图，不是现场照片、确认视点、无障碍合规结果、运营证据或人员承诺。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 这是合成概念图，不是现场照片、确认视点、无障碍合规结果、运营证据或人员承诺。</p><details><summary>证据与限制</summary><ul><li><a href="assets/non-ai-parity-contract.json"><code>assets/non-ai-parity-contract.json</code></a></li><li><a href="assets/ordinary-life-media-register.json"><code>assets/ordinary-life-media-register.json</code></a></li><li><a href="../assets/media/ordinary-life-scenes.md"><code>../assets/media/ordinary-life-scenes.md</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><article class="review-step" id="step-4" data-step aria-labelledby="step-4-title"><p class="review-kicker">4 / 5 · G0</p><h3 id="step-4-title" tabindex="-1">沿普通—验证—故障—恢复读一次连续旅程</h3><p><strong>失败发生后，谁停、谁接管、如何恢复？</strong></p><p>物理停止优先于界面提示；人工接管、隔离和非 AI 绕行立即保住普通任务。只有恢复材料、居民确认、维护关闭和责任复核齐备，验证叠层才可重新候选。</p><figure><img src="../assets/figures/failure-governance-writeback.png" alt="失败侧线与回写图：停止、人工接管、隔离、普通任务继续、恢复验收和证据回写。" loading="lazy"><figcaption>合成回放 PASS 只证明文件合同可重放；现实事故、恢复时长、班次、场所验收与 GO 决定均为 0 或 unknown。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 合成回放 PASS 只证明文件合同可重放；现实事故、恢复时长、班次、场所验收与 GO 决定均为 0 或 unknown。</p><details><summary>证据与限制</summary><ul><li><a href="assets/failure-governance-register.json"><code>assets/failure-governance-register.json</code></a></li><li><a href="assets/civic-operations-contract.json"><code>assets/civic-operations-contract.json</code></a></li><li><a href="assets/t02-g0-g1-replay-result.json"><code>assets/t02-g0-g1-replay-result.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><article class="review-step" id="step-5" data-step aria-labelledby="step-5-title"><p class="review-kicker">5 / 5 · G0</p><h3 id="step-5-title" tabindex="-1">把概念交给真实资料与专业 NO-GO</h3><p><strong>哪些内容必须被替换，谁有权拒绝？</strong></p><p>D01—D08 真实资料替换临时几何、类型占位与未核验来源；H01—H07 是未提交交接／证据包，不是人、专业或已接受责任；P01—P07 只是建议专业类型。只有未来胜任且接受明确范围的专业方，才可在该范围内复算、修改、附条件、拒绝或删除概念。重大缺口、权利不清或普通权利受损时保持 NO-GO。</p><figure><img src="../assets/figures/review-professional-handoff.png" alt="评审收束与专业交接总图：一概念、三原型、一内核、六任务、八类资料、七专业与 NO-GO。" loading="lazy"><figcaption>文件、图件、机器检查、PR 审查或合并均不构成规划判断、专业责任接受、现场批准、运营成绩或权利许可。</figcaption></figure><p class="review-limit"><strong>边界：</strong> 文件、图件、机器检查、PR 审查或合并均不构成规划判断、专业责任接受、现场批准、运营成绩或权利许可。</p><details><summary>证据与限制</summary><ul><li><a href="assets/implementation-handoff-matrix.json"><code>assets/implementation-handoff-matrix.json</code></a></li><li><a href="assets/readiness-closure-contract.json"><code>assets/readiness-closure-contract.json</code></a></li><li><a href="assets/rights-clearance-ledger.json"><code>assets/rights-clearance-ledger.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>上一步</button><button type="button" data-next>下一步</button></div></article><p class="review-boundary">D01–D08 · H01–H07 · 12 SCENES · 8 PROJECTS · 3 KEY AREAS · 99 CLOSURE SLOTS · G0 · not_fully_cleared · FUTURE COMPETENT PARTY · ACCEPTED SCOPE ONLY · MAY REJECT/DELETE</p></section>
       <section id="twin-track">
         <h2>双轨京张：前台空间总纲 / Twin-track Jing-Zhang</h2>
         <div class="notice">
@@ -547,7 +655,7 @@
           连续普通路径、遮阴与可达休息意图、静态非 AI 提示、人工巡检和雨洪/生态维护净空先形成完整日常服务；AI 辅助提示与小月河观察翼只作为未来可能获批的间歇、可拒绝、可停止、可拆叠层。观察翼是概念关系，不是精确河岸位置、现状建筑、法定退界或已建设施。
         </div>
         <figure>
-          <img src="../assets/figures/climate-resilience-corridor.png" alt="气候韧性验证走廊总图和剖面：普通蓝绿路径、遮阴休息、静态提示、人工巡检、雨洪与生态维护净空、可选 AI 提示、可拆观察边和脆弱群体四态旅程" />
+          <img src="../assets/figures/climate-resilience-corridor.png" alt="季节公共地面剖面：普通安静使用、遮阴种植、雨洪生态、人工维护净空与可拆验证边分层，并以普通—可选—停止—恢复四态说明只停验证边" />
           <figcaption>G0 概念合同：实测 0、设备 0、现实提示 0、责任确认 0、还场回执 0；图件不产生水文、热舒适、无障碍、批准或成熟度结论。</figcaption>
         </figure>
         <div class="grid">
@@ -799,7 +907,7 @@
         <figure>
           <img
             src="../assets/figures/land-use-structure.png"
-            alt="36 个包内功能信封及三类空间责任；不代表法定地块、精确位置或建设控制"
+            alt="36 个概念功能包络沿公共地面形成两侧不规则前沿，并由六处横向联系和三类首层责任组织；不代表法定地块、精确位置或建设控制"
           />
         </figure>
       </section>
@@ -828,21 +936,21 @@
         <figure>
           <img
             src="../assets/figures/key-areas.png"
-            alt="三座换轨场的差异化概念平面、首层公共界面、连续非 AI 路径和四步使用旅程"
+            alt="众智园平行绕行与证明园、原点社区一街两院四撤回点、大钟寺四向通勤与路外服务三种差异化概念平面"
           />
         </figure>
         <figure>
           <img
             src="../assets/figures/key-area-sections.png"
-            alt="三座换轨场的差异化关系剖面、普通验证故障恢复四态和场所恢复验收"
+            alt="三座换轨场的差异化地面阈值剖面，显示停止对象、人工位置、普通空间与还场对象"
           />
         </figure>
         <p>
-          两张图使用同一读法：先画普通状态，再叠加可停止服务；绿线始终连续，活动、排队、设备和线缆不得侵占。三处共同遵守 22:00—07:00 静音门，测试、扩声和活动不得取得优先权，普通路径、无屏信息与人工求助仍须可用。众智园、原点社区和大钟寺分别以设备隔离、同意撤回和通勤/来源纠错形成三组四态；全部仍为 G0 概念关系，恢复验收均为
+          两张图分工而不重复：平面先画普通空间骨架，再定位旁置验证、人工交接、逐点撤回与路外服务；剖面只显示地面、阈值、停止对象、人工位置和还场对象。绿线始终连续，活动、排队、设备和线缆不得侵占。三处共同遵守 22:00—07:00 静音门，测试、扩声和活动不得取得优先权，普通路径、无屏信息与人工求助仍须可用。众智园、原点社区和大钟寺分别以设备隔离、同意撤回和通勤/来源纠错形成三组四态；全部仍为 G0 概念关系，恢复验收均为
           <code>unknown / 未执行</code>。
         </p>
         <div class="notice">
-          <strong>图面入口与证据边界：</strong>平面、关系剖面、首层原型和四态均不按比例；体量不是现状建筑，概念验收不是场地批准。准确边界、测绘/竣工、权属、消防、铁路保护、市政、无障碍和运营责任尚未取得；现场审计、责任确认、批准、测试和已知结果仍全部为
+          <strong>图面入口与证据边界：</strong>平面与地面—阈值剖面均不按比例；体量不是现状建筑，概念验收不是场地批准。准确边界、测绘/竣工、权属、消防、铁路保护、市政、无障碍和运营责任尚未取得；现场审计、责任确认、批准、测试和已知结果仍全部为
           0。结构化回链：<code>key-area-evidence-matrix.json#round2_spatial_deepening</code>；字段齐全不代表现场连续、构件可拆或恢复合格。
         </div>
         <table tabindex="0">
@@ -895,8 +1003,36 @@
           <article class="card"><h3>普通</h3><p>实体导向、无屏停留、连续无障碍意图和人工说明先独立成立。</p></article>
           <article class="card"><h3>验证</h3><p>仅表达未来可选、限时、有人负责的路径外可拆叠层；不证明获准时窗存在。</p></article>
           <article class="card"><h3>故障</h3><p>停止并隔离叠层，人工说明与普通绕行继续；基本任务不得随之关闭。</p></article>
-          <article class="card"><h3>恢复</h3><p>先撤除叠层并还场；独立复核未闭合则保持 G0、继续停止或退役。</p></article>
+          <article class="card"><h3>恢复</h3><p>先撤除叠层并还场；独立复核未闭合则保持 G0、继续停止或退役；即使闭合也不产生授权、批准、G1 或重启。</p></article>
         </div>
+        <div class="notice" id="four-state-media">
+          <strong>4 态运动与旁白（多模态，不自动播放）：</strong>
+          下方视频为一次 MiniMax H3 生成母版、包内图件与确定性双语叠层组成的 G0 概念示意；画面中的建筑、人物、文化框景和标记均为合成元素，<em>不是</em>真实地块、真实建筑、真实人群或已建状态。
+          帧内持续显示 <code>G0 概念 · 临时几何 · 非现场证据 · 非批准方案</code>，48 秒仅为展示节奏。
+          视频配中英 WebVTT、独立海报、43.344 秒中文旁白和双语文字稿；任一变更必须锁步更新受影响文件。
+          权利与机器审计：<code>visual/assets/rights-clearance-ledger.json#ASSET-150..155</code>。
+        </div>
+        <figure>
+          <video controls preload="none" playsinline width="100%" poster="../assets/media/4-state-motion-poster.webp">
+            <source src="../assets/media/4-state-motion.mp4" type="video/mp4" />
+            <track kind="captions" src="../assets/media/4-state-narration.vtt" srclang="zh" label="中文旁白字幕" default />
+            <track kind="captions" src="../assets/media/4-state-narration.en.vtt" srclang="en" label="English narration captions" />
+            您的浏览器不支持 HTML5 video；请直接下载 <a href="../assets/media/4-state-motion.mp4">4-state-motion.mp4</a>（约 3.03 MiB）。
+          </video>
+          <figcaption>4 态空间运动视频 · 48.000 秒 · 1920×1080 · H3 概念母版 + 包内关系图 + 双语确定性叠层 · 非现场、非已建、非批准 · 不自动播放 · 帧内持续 G0 / provisional / 非证据水印</figcaption>
+        </figure>
+        <figure>
+          <audio controls preload="none">
+            <source src="../assets/media/4-state-narration.mp3" type="audio/mpeg" />
+            您的浏览器不支持 HTML5 audio；请直接下载 <a href="../assets/media/4-state-narration.mp3">4-state-narration.mp3</a>（约 0.66 MB）。
+          </audio>
+          <figcaption>
+            4 态中文旁白音频 · 43.344 秒 · 配
+            <a href="../assets/media/4-state-narration.vtt">中文 .vtt</a> / <a href="../assets/media/4-state-narration.en.vtt">English .vtt</a> ·
+            <a href="../assets/media/4-state-narration-script.md">文字稿与生成方法 / 权利 / 不可证明事项</a>
+            · 不得自动播放
+          </figcaption>
+        </figure>
         <p>
           众智园以设备隔离保护旁路，原点社区以同意撤回保护居民日常，大钟寺以来源纠错保护通勤与人工服务。真实照片、确认视点、现场观察、获批构件、运营交互、无障碍结果和恢复结果均为 0；图像不能推出位置、尺度、材料、班次、建设、运行或审批。结构化回链：<code>ordinary-life-media-register.json</code>。
         </p>
@@ -1045,7 +1181,7 @@
         <figure>
           <img
             src="../assets/figures/mobility-bluegreen.png"
-            alt="普通慢行和维护净空优先、可选验证旁侧叠加的关系图；不表达精确蓝绿网络位置"
+            alt="上部是一条连续公共地面、六处关系横联与三种接口；下部为普通慢行、生态、人工维护、可拆验证与还场分层；不表达精确线位"
           />
         </figure>
       </section>
@@ -1415,7 +1551,7 @@
         </p>
       </section>
 
-    <section id="reversible-assemblies"><h2>三处可逆构件与恢复装配册</h2><p>六阶段把安装前证据、开放前核验、普通使用、停止隔离、拆除退场和恢复验收连成一条可阻断链；三处共用审查语法但不共用构图。所有专业字段保持 unknown，现实安装与验收为 0。</p><figure><img src="../assets/figures/reversible-components.png" alt="三处可逆构件与恢复装配册"><figcaption>G0 · TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE = UNKNOWN · D01-D08 + H01-H07 · not_fully_cleared</figcaption></figure><p><a href="assets/reversible-component-restoration-register.json">reversible-component-restoration-register.json</a> · Professionals may revise, reject or delete the concept.</p></section>
+    <section id="reversible-assemblies"><h2>三处可逆构件与恢复装配册</h2><p>六阶段把安装前证据、开放前核验、普通使用、停止隔离、拆除退场和恢复验收连成一条可阻断链；三处共用审查语法但不共用构图。所有专业字段保持 unknown，现实安装与验收为 0。</p><figure><img src="../assets/figures/reversible-components.png" alt="三处不同可逆动作：众智园拆围护设备、原点社区撤节点插件、大钟寺关路外厅台，同时保留各自普通路径"><figcaption>G0 · TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE = UNKNOWN · D01-D08 + H01-H07 · not_fully_cleared</figcaption></figure><p><a href="assets/reversible-component-restoration-register.json">reversible-component-restoration-register.json</a> · 只有未来胜任且明确接受范围的专业方，才可在该范围内复算、修改、附条件、拒绝或删除受影响概念。</p></section>
     <section id="field-evidence-intake"><p class="tag">EMPTY INTAKE · ZERO FIELD DATA · NO MATURITY UPGRADE</p><h2>现场证据采集与替换入口</h2><p><strong>模板不等于证据。</strong> D01—D08 当前均为 <code>not_collected</code>；现实材料、现场值、专业接收、批准和完成走查均为 0。未来材料必须同时说明来源、时间/版本、范围、保管链、权利/隐私、哈希、能证明与不能证明事项。</p><figure><img src="../assets/figures/field-evidence-intake.png" alt="现场证据采集与替换总图：普通基线、八类空白资料包、保管链、专业处置和三处差异化未来采集路线。"><figcaption>接收用于复算不等于批准；重大缺口仍为 NO-GO。</figcaption></figure><div class="grid"><article class="card"><strong>众智园</strong><p>设备隔离、实体停止、人工接管、before-state 与还场回执。</p></article><article class="card"><strong>原点社区</strong><p>无屏同任务、同意撤回、保障、去身份化人群差异与居民日常。</p></article><article class="card"><strong>大钟寺</strong><p>四向高峰连续、计数分母、来源版本、路径外发布与纠错。</p></article></div><div class="notice">#2266 仅提供公开处置方法；不带入其品牌、构图、几何、指标、图件或临时结论。<a href="assets/field-evidence-intake-contract.json">读取结构化空白合同</a>。</div></section>
       <section id="sources">
         <h2>来源与假设</h2>

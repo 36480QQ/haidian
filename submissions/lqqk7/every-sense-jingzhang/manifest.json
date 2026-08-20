@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1e2842c60c634871b822cc194d97250da514581b62bce131c0c52dec516e3c2c"
+      "sha256": "7d0762aabcfffd476da497477f4beb56846b03dd2a62a00421cc87846044a03f"
     },
     {
       "path": "agent.json",
@@ -38,25 +38,25 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "471ca91ea2a46159d18f13bffbb385287a7c49ac1d373b2b0b563f64c5e0e13c"
+      "sha256": "ce36670ff4e7377f443184ce71b0019d76f676043b7b30dffb05e19d7f7c146e"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "7284d22678bb20cf03096209e0517aa74dd6e98401bff233ff0e6821f7a08d89"
+      "sha256": "53902d0e8431877d53a799579dc2e8265865a58143f0235128045ff61bfab719"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "65ea731911b392858354a6836e5d3e3dc9a77903b36b0593327eed2c3e0f7eeb"
+      "sha256": "2609b2977a54cf8465a203fd7de253ae46eda161ce8972c7c7a3377e22628e1b"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "979f8ebcdb638ef467cda2f2e3ba2a9e4c67a422e64b7438341132a2050f5bb0"
+      "sha256": "1b202ddff7e11f9aa00fbd48455635fcb84bda294da3f3d928e674e46401a627"
     },
     {
       "path": "compliance_matrix.json",
@@ -74,7 +74,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "2a2ae13e5f9d70e1ddf74061cc43f66aa8a80b831572c6479d893b431944a34a"
+      "sha256": "5a112f2f4c6595b1798a00a6dda08a2aea124354502e083670d1436abfac4aff"
     },
     {
       "path": "risk.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a6c9d477785ec99809378c0ad38329dfb828322a0b6843904d3c934cfac78974"
+      "sha256": "e3e2cf19d4b186ba3509037347f0ea3b5b4148694cc06fc2a88be96741fbe71b"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "c2db6015bd0800b04daeb00b12086fbb8d6690fa4bfa466d3ef3a1ce87ace497"
+      "sha256": "f1e0d87bfd00391ee81c331a0eda1df67c40e67ba70c72358a04798fd7080b61"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5d5a8c5223495ffeab08e9fe20638bd3f3408a1336c2726b302f414300a8d69b"
+      "sha256": "aa2c0fc972584cde74aa77b54709f746dd0285848dd0a8d92fbd75eb1b2dd9bf"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "0f8e9465f0add95915a97f0d431a33ec47b850e0211f4e60c8fbd99f5c5fbabd"
+      "sha256": "2d9ef6c586c3c5d3a40e1ed44fb61650853f242cd8602dbacc46e861daae6ea5"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "90a5d2613b81b1b40e1e7b8fe91f897cab27026828ad1bcffe15d3d85b56122b"
+      "sha256": "ba379704e1dd7d60cc5311c5cd8d14425d0b2dfdf62c5243f134e89a998899ea"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "c89f4ad86ffd8346acfc4c8c2f9d3cc0a6ddcb29991f6159bf40d528fad71d2f"
+      "sha256": "2cd580dd358d7be3d23f1e43f584ba94ec6c089e369f346c03907a4eb1d7118f"
     },
     {
       "path": "assets/figures/dual-state-plan.png",
@@ -173,7 +173,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "b10eb6d081e4db6645e5cafc26b2528fdb16ebbee85d6e58218444f8b197b2d7"
+      "sha256": "40c82f5eb3f752b19eed562c051046cb27f8241a16bca547323bfe3b4aa7b21e"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -203,7 +203,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "90d799d8ddb1f45443758ff437114eac0164ac57c7a876e050204bc245ccbdb6"
+      "sha256": "377d50aaeba041ab3b826ce979d2e99ecd421f03bc52918862bb57625d6a42b0"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -221,7 +221,7 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "9f14434956c7adfe5209b6c35540d96c643f9a0a093d016704f5b3b6f508057b"
+      "sha256": "16286708e32b0cb19a46556ada03d417ff8ce36185b23325dce61ac33ceef343"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4c85f721d261b5de59a8ca9de89dbd53433c21f9d117537cf9e9abf36799d889"
+      "sha256": "7a3d12598a2f49f8479434d77baa049126b4c0ca1625c2f32e36d489675de0bc"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ee1eab1a559efd5ddddf79e111b73cbe47bde37390edad466f923cfe2aa83a3b"
+      "sha256": "5cd5d7bd76da2d7223119e7d10547cea6b6dbf356d551d3096b6aae0d47d79b7"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -260,7 +260,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "5cf40c143c6a511016521439d454c04beaac99b0ba5ac1118de16b5425dc98e8"
+      "sha256": "60c20f982000f020a6697a20b050d637ff6ac237cf9d581ee8867846ca1f7eda"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -268,7 +268,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e529c9786d7fa8d997bc2045ce57295c4d99ae8ecf821b1dfc75d4317c1ebe70"
+      "sha256": "5b4715cb66ed70b09828dc1e15a487704dd8d5906a2f28c26af96df3f4ca92b6"
     },
     {
       "path": "visual/index.en.html",
@@ -276,7 +276,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "9f53421cd993bed8faed4ea6d28928afebe463d5edf4ce92061f05b201fdf790"
+      "sha256": "5aa1431a3f6c1fd147a7757e8bf8d90db01e65a6b71fb5e63aadacae3339ce5f"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -406,14 +406,14 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "def9f4c507d20c5d77961a015397e90ce1b020d76b2180eb3e4aa0463a33fada"
+      "sha256": "4defb0ee0530f58c3b082c78ad4edeecdf3f4c64f8957446376fd274c0835526"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "48898b7aae4c8f46ed7ebe37ffd3c8f9ff5bfe605004652654f0a20012e30a73"
+      "sha256": "eabf1d305e2aa005e5f6dfe4f22ec844877ff1ab149e959b5f82cb63b130b3c4"
     },
     {
       "path": "assets/figures/mobility-bluegreen-audit.en.png",
@@ -421,7 +421,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen-audit.png",
-      "sha256": "a615ff2091acfa9f200af9c84a3fb75e1acb8d0fb35fdfa0bd0ae90ae3148c9d"
+      "sha256": "98b1ab39f8d68a93e1a9df263af3f5f0a2ee11ae560f55544821369dcd16f5ac"
     },
     {
       "path": "assets/figures/scene-dual-state.webp",
@@ -474,7 +474,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "07928c03c7670b709b37fbbb780bbc718468b92143fdbf99069f9d3fb13c1240"
+      "sha256": "c8f7e62f22dbf528bf3ead280cb254dd7a08a25c5d29026859dfb5e3aabac403"
     },
     {
       "path": "visual/assets/osm-context/provenance.json",
@@ -512,7 +512,7 @@
       "language": "neutral",
       "title_zh": "核验图 00：全部图层叠加（本包提交几何叠加于 OpenStreetMap 底图，中英双语同图）",
       "title_en": "Verification sheet 00 — All layers overlaid — submitted geometry on an OpenStreetMap basemap, one bilingual sheet",
-      "sha256": "9e0dd4ca9f2ce922614b7f1315053d7b53a6c2f57e43eed8f5fedf8e2b64daa3"
+      "sha256": "d2e43b8a6d0737fd6069497e51ded718bed6f34c2cb8fd43b38da4225edb345d"
     },
     {
       "path": "assets/figures/verification-overlay-01-landuse.png",
@@ -530,7 +530,7 @@
       "language": "neutral",
       "title_zh": "核验图 02：线位 roads（本包提交几何叠加于 OpenStreetMap 底图，中英双语同图）",
       "title_en": "Verification sheet 02 — Roads (centrelines) — submitted geometry on an OpenStreetMap basemap, one bilingual sheet",
-      "sha256": "9f7ba2d28d6ac660b9cae54f920fa3e7e01cba16ef424453b60e7cea9199554e"
+      "sha256": "8c0d828407a85bffb324baddd0e3974edcbdfd0cc789468fec61dadc6b157d48"
     },
     {
       "path": "assets/figures/verification-overlay-03-buildings.png",
@@ -569,10 +569,28 @@
       "sha256": "e8a4c64a92aa5b50e59993c1f1da23ba165579ed4cfaa7d5b331e9a9354c7e5e"
     },
     {
+      "path": "assets/figures/tactile-corridor-map.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "全带触觉走廊图 T-01：主脊、低刺激安静替代线与十个完成点的触觉印刷原稿（中英双语同图）",
+      "title_en": "Tactile corridor map T-01 — the spine, the quiet alternative and ten completion points, a print master for embossing or swell paper, one bilingual sheet",
+      "sha256": "9822d6517d097d047191375bbde3c579eef6524a14eeeb98a45d11d57f6aa82c"
+    },
+    {
+      "path": "assets/figures/green-section-principle.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "众智园段线性绿带原则性断面 S-01：轨道遗存带与两侧通行面（中英双语同图）",
+      "title_en": "Zhongzhiyuan linear green band principle section S-01 — the preserved track band and both walking surfaces, one bilingual sheet",
+      "sha256": "cb916fe0271507859e533e0966f94aefa96885cfa81d37c640101654f3bc1ebc"
+    },
+    {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "78acfd61b7c1f6ca5d3b61d55a97ac4f0119b1c03ff4f0e8b5e3f5ce5cbba38d"
+      "sha256": "45cdeafbf8775bfe22f2fbcafa9bb659b7bdf0fa4ac59563e7e5cdedd66f38c5"
     },
     {
       "path": "assets/media/cover.webp",
@@ -690,14 +708,14 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "f7428ec660ebc6eeb7f171695316a40fcb169017b944d5c7f7a0f3f37465052b"
+      "sha256": "9cf4e9c1862213c4a220ab45ed13ca16c151bd44534d3d9a4b6814d6818a8e25"
     },
     {
       "path": "visual/assets/scene-fallback.png",
       "role": "visualization",
       "required": false,
       "language": "zh",
-      "sha256": "176caf346cb2852ad250dbeb25a42183ae0e802622edb0f6805883ff1792bc44"
+      "sha256": "beab9f0dcf335932a94a8a07e515b6e81b1fd78068dbe2c183527355a12b82b0"
     },
     {
       "path": "assets/media/journey.mp4",
@@ -740,7 +758,7 @@
       "title_en": "Multimodal short film storyboard, transcript and rights note",
       "description_zh": "七个镜头的分镜与画面文字（中英）对照、旁白全文（含时间码）、与 proposal.md 的来源对应表、画面渲染与交互场景逐帧录制的方法记录、语音合成与权利声明、已知限制。同时论证看／听／读三条通道承载相同内容，是方案 AI ON = AI OFF 等价路径原则在自身交付物上的应用。",
       "description_en": "A shot-by-shot storyboard with bilingual on-screen text, the full narration with time codes, a source mapping to proposal.md, the production record for frame rendering and for the frame-accurate capture of the interactive scene, the synthesis and rights statement, and known limitations. It also documents that watching, listening and reading carry identical content, applying the proposal's own AI ON = AI OFF equivalence principle to its own deliverable.",
-      "sha256": "90a462f2cf7fa7e84915ee085e4ccd5f3194825b12b06ead51397120ad204d26"
+      "sha256": "3543332c17cbab25fed44d91c2607674a98f5ffa2e50fca98daa157c70a014dd"
     },
     {
       "path": "visual/assets/ethics-protocol.json",
@@ -758,7 +776,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "17ba264e7b13d8528fcfae14316efd42fde4d771782f16fb24e5fdfb4c056c70"
+      "sha256": "42b749f89461e5f96adb8aed31d93117572fcfc120c37d3afe1487e9cc5e9bd1"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -767,7 +785,7 @@
       "language": "neutral",
       "title_zh": "随包自检闸门台账（十道闸门，逐道登记口径、当前读数与历史查获缺陷共 27 条）",
       "title_en": "Package self-check gate register (ten gates, each with its criterion, current reading and the 27 defects the gates actually caught)",
-      "sha256": "203815c8c02f4636eac43336f497bea9a9aeacb10bb148ef8747b1cf9611c8aa"
+      "sha256": "ce5a13ac7d15c87433d298eca21eb5744cdbe9b5ab3c0446b48f0e32a7a49e07"
     },
     {
       "path": "visual/assets/service-desk-gonogo.json",
@@ -801,9 +819,9 @@
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "服务等价基准 SEB v0.4.0 机器可读规范（五组件，含版本治理与违例码登记表）",
-      "title_en": "Service Equivalence Baseline (SEB) v0.4.0 machine-readable spec (five components, with version governance and the violation-code registry)",
-      "sha256": "efc58de8c327100be67e12b4bdf5b710c3b4cd061ed16d00cb1d980f78f5ddfb"
+      "title_zh": "服务等价基准 SEB v0.5.0 机器可读规范（六组件，含版本治理与违例码登记表）",
+      "title_en": "Service Equivalence Baseline (SEB) v0.5.0 machine-readable spec (six components, with version governance and the violation-code registry)",
+      "sha256": "adb930c32768e6b58a2a9096cf20f8f33581434f9236ebdaa4172d63b852149d"
     },
     {
       "path": "visual/assets/seb-tabletop-run.js",
@@ -812,7 +830,7 @@
       "language": "neutral",
       "title_zh": "SEB 桌面配对推演校验器(方法学演示)",
       "title_en": "SEB tabletop pairing validator (methodology demonstration)",
-      "sha256": "e1f0c89cb6c976757476bb6036d2e10cee4e9cffee1f28a387ba62f752785fc8"
+      "sha256": "dcf03dabfad506ec727af92f3d71c92d57913f3beb6605f7bc112fdeb1621b2b"
     },
     {
       "path": "visual/assets/spatial-audit-readings.json",
@@ -857,16 +875,16 @@
       "language": "neutral",
       "title_zh": "OSM 肌理读数：四项肌理+三项偏差+穿越证据清单+复算脚本全文嵌入（PROVISIONAL）",
       "title_en": "OSM fabric readings: four fabric, three deviation, crossing inventory, with recomputation scripts embedded verbatim (PROVISIONAL)",
-      "sha256": "655322daa08b304b61b211317a983770aaf7c6d2417255daa75854c60093f465"
+      "sha256": "c0acfbe0fcfee543acfe07d0a8bedef7b87be5f933f8d2670a0e684b5a6ef669"
     },
     {
       "path": "visual/assets/seb-tabletop-fixtures.json",
       "role": "sources",
       "required": false,
       "language": "neutral",
-      "title_zh": "SEB 桌面推演正反样例四十条",
-      "title_en": "SEB tabletop fixtures, thirteen positive and twenty-seven negative",
-      "sha256": "9c22d82660c5023e2a69dcacd2df03fc8bc448869db94812d52a46cd97abb8d4"
+      "title_zh": "SEB 桌面推演正反样例六十条",
+      "title_en": "SEB tabletop fixtures, twenty-three positive and thirty-seven negative",
+      "sha256": "5e0cf099319561dfb81118b7b311479c3d15ae211eee30c8a67a477e92d27699"
     },
     {
       "path": "visual/assets/seb-change-receipt-sample.json",
@@ -884,7 +902,7 @@
       "language": "neutral",
       "title_zh": "OP-04 配对试点全过程链路数据档案(桌面复演)",
       "title_en": "OP-04 paired-pilot full-process chain archive (tabletop replay)",
-      "sha256": "a821ac8b1f3e0bd130ee2fae54dad040e233d6f407f2c8068b3337f0462e9ef1"
+      "sha256": "8e60e7e257556356d28df57ca47008533fb34827dda02cb0805e3c3ebe4c6ff4"
     },
     {
       "path": "visual/assets/seb-op04-90day-pack.json",
@@ -893,7 +911,7 @@
       "language": "neutral",
       "title_zh": "OP-04 节点九十天实施包（概念级：条件序列分期、双分支预算、采购、RACI、班表、投保建议、维护与退出）",
       "title_en": "OP-04 ninety-day implementation pack (concept-level: conditional phasing, two-branch budget, procurement, RACI, rosters, insurance suggestions, maintenance and exit)",
-      "sha256": "a9b4e68ed63e030c55a964772b91a9e4caf276b161326e69311ddc93d269eecc"
+      "sha256": "161855dda1138163f3a61ca7861bad20e560d1215882dfd1c5da36d1c072771d"
     },
     {
       "path": "visual/assets/op04-pilot-readiness.json",
@@ -929,7 +947,7 @@
       "language": "neutral",
       "title_zh": "OP-04 全过程证据链自含复演器",
       "title_en": "OP-04 full-process evidence-chain self-contained replayer",
-      "sha256": "e874142f1fd4a3af3fbbd38aa3f5783b28841f36b488eb54c8ea03cf30ad944b"
+      "sha256": "8110d65f70ab5686659b6afa2bfc4a9b9212e19c9884b719abdc599d5e73bdab"
     },
     {
       "path": "visual/assets/seb-change-receipt-op04.json",
@@ -938,7 +956,7 @@
       "language": "neutral",
       "title_zh": "变更回执 CR-2026-08-12-003(OP-04 空间前提退回)",
       "title_en": "Change receipt CR-2026-08-12-003 (OP-04 spatial-premise rollback)",
-      "sha256": "e199a5ad633432489d858eb10c5c19314d735a89716b0202fca618a2e2510b43"
+      "sha256": "f5d3e443fe8605806530932849073425c9ee01fdfab1637e55ee2ff1db861261"
     },
     {
       "path": "visual/assets/seb-change-receipt-v03.json",
@@ -957,6 +975,15 @@
       "title_zh": "SEB v0.4 系列变更回执（CR-2026-08-16-007，一版一号）",
       "title_en": "SEB v0.4-series change receipt (CR-2026-08-16-007, one per version)",
       "sha256": "0c810cbb81ca1a19ff8c47741293985c5ef6d84ce933467591a05c33072ce074"
+    },
+    {
+      "path": "visual/assets/seb-change-receipt-v05.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB v0.5 系列变更回执（CR-2026-08-18-009，一版一号）",
+      "title_en": "SEB v0.5-series change receipt (CR-2026-08-18-009, one per version)",
+      "sha256": "ed8de14ec7387a8072b058c0f2e9cb15ce31418e9a72fe769835a519c2ae40cc"
     },
     {
       "path": "visual/assets/seb-license-grant.json",
@@ -995,12 +1022,21 @@
       "sha256": "461bc72a82781f39e140abf033040f738b81647ce15fb4df3234ced10eadc018"
     },
     {
+      "path": "visual/assets/seb-spec-v0.4.0.json",
+      "role": "sources",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "SEB 规范历史版本快照 v0.4.0（五组件，v0.5.0 发布时按字节留存）",
+      "title_en": "SEB spec historical snapshot v0.4.0 (five components, retained byte-exact at the v0.5.0 release)",
+      "sha256": "efc58de8c327100be67e12b4bdf5b710c3b4cd061ed16d00cb1d980f78f5ddfb"
+    },
+    {
       "path": "visual/assets/scene-fallback.en.png",
       "role": "visualization",
       "required": false,
       "language": "en",
       "translation_of": "visual/assets/scene-fallback.png",
-      "sha256": "e05445397ee4ca1fbc380a81b684493308b75c999a89ade1d5792e7cf7d673b2"
+      "sha256": "d0657a27647d319074a993b7426bf7b1acf279d582299816ce0e4de1168e638a"
     },
     {
       "path": "assets/media/journey-en.vtt",
@@ -1053,11 +1089,11 @@
       "language": "zh",
       "title_zh": "听得见的断点（OP-04 连通性数据可听化 · 中文旁白）",
       "title_en": "The Audible Break (OP-04 connectivity sonification, Chinese narration)",
-      "description_zh": "1 秒=20 米：AI 开启段 12.18 秒行进音走完 243.514 米到达；AI 关闭段按接口固定口径没有一米可走——开场即静默，静默即数据里接口缺失之处。纯程序合成+预置合成旁白，映射规则与档案 v0.3.0 读数逐项可核",
-      "description_en": "One second per twenty metres: the AI-on walk completes 243.514 m in 12.18 s; with AI off the fixed-interface rule leaves not one walkable metre — silence from the very start, and the silence is where the data holds no interface. Program synthesis plus preset synthetic narration; the mapping replays item by item against archive v0.3.0",
+      "description_zh": "1 秒=20 米：AI 开启段 15.31 秒行进音走完 306.210 米到达；AI 关闭段按接口固定口径没有一米可走——开场即静默，静默即数据里接口缺失之处。纯程序合成+预置合成旁白，映射规则与档案 v0.4.0 读数逐项可核",
+      "description_en": "One second per twenty metres: the AI-on walk completes 306.210 m in 15.31 s; with AI off the fixed-interface rule leaves not one walkable metre — silence from the very start, and the silence is where the data holds no interface. Program synthesis plus preset synthetic narration; the mapping replays item by item against archive v0.4.0",
       "transcript": "assets/media/audible-break.md",
       "caption": "assets/media/audible-break.vtt",
-      "sha256": "187d4d86e1472b7e0c281d407e7bda8d1d4bfaef19382eb1245c9c6ac40fda54"
+      "sha256": "f23ce6f24b6ecb71d4aa188a9c51a63b9eb5781dd5dc53e2c49f014aa90a1b54"
     },
     {
       "path": "assets/media/audible-break-en.m4a",
@@ -1066,11 +1102,11 @@
       "language": "en",
       "title_zh": "听得见的断点（英文旁白版）",
       "title_en": "The Audible Break (English narration)",
-      "description_zh": "1 秒=20 米：AI 开启段 12.18 秒行进音走完 243.514 米到达；AI 关闭段按接口固定口径没有一米可走——开场即静默，静默即数据里接口缺失之处。纯程序合成+预置合成旁白，映射规则与档案 v0.3.0 读数逐项可核",
-      "description_en": "One second per twenty metres: the AI-on walk completes 243.514 m in 12.18 s; with AI off the fixed-interface rule leaves not one walkable metre — silence from the very start, and the silence is where the data holds no interface. Program synthesis plus preset synthetic narration; the mapping replays item by item against archive v0.3.0",
+      "description_zh": "1 秒=20 米：AI 开启段 15.31 秒行进音走完 306.210 米到达；AI 关闭段按接口固定口径没有一米可走——开场即静默，静默即数据里接口缺失之处。纯程序合成+预置合成旁白，映射规则与档案 v0.4.0 读数逐项可核",
+      "description_en": "One second per twenty metres: the AI-on walk completes 306.210 m in 15.31 s; with AI off the fixed-interface rule leaves not one walkable metre — silence from the very start, and the silence is where the data holds no interface. Program synthesis plus preset synthetic narration; the mapping replays item by item against archive v0.4.0",
       "transcript": "assets/media/audible-break.md",
       "caption": "assets/media/audible-break-en.vtt",
-      "sha256": "85734edcc369e7e96b9cb52fd1af369c73003332e44f49afab259fcff78a6a10"
+      "sha256": "83dba35442c98c74e07a461d86bdfff69e29b63acc5fae29000b4ecd74e923a6"
     },
     {
       "path": "assets/media/audible-break.vtt",
@@ -1079,7 +1115,7 @@
       "language": "zh",
       "title_zh": "听得见的断点 中文字幕（含数据段说明）",
       "title_en": "Audible Break Chinese captions (with data-segment notes)",
-      "sha256": "3b66f0243abfdf758a927ab7c807cfbf83e591651909ad3fd4ee0d477bbdf81b"
+      "sha256": "a19a8043dbf407ded5da2200fe55749443f041fadc42df92bfa16b89ee40f2a5"
     },
     {
       "path": "assets/media/audible-break-en.vtt",
@@ -1088,7 +1124,7 @@
       "language": "en",
       "title_zh": "听得见的断点 英文字幕",
       "title_en": "Audible Break English captions",
-      "sha256": "22c15a17a07b9599ac68a11068feb1192e7c5abf5c8298ef32b935fdaa3c14d1"
+      "sha256": "707ca19276a8e8711332199f987cbba783395418ddecd4e1c465dd6c44eae8b1"
     },
     {
       "path": "assets/media/audible-break.md",
@@ -1096,54 +1132,61 @@
       "required": false,
       "title_zh": "听得见的断点 数据映射档案与权利记录（断点时刻可由档案读数复算）",
       "title_en": "Audible Break mapping archive and rights note (the break moment recomputes from archive readings)",
-      "sha256": "7154096af6f957cf16348c3615b027ded811a2606965d6a19eccba36f8035e90"
+      "sha256": "cb360c729f0316caba532be71cf8b85c97fbbd4eda6adc2bf89734c4be5c7108"
     },
     {
-      "path": "assets/media/dual-state-walk.mp4",
-      "role": "video",
+      "path": "visual/assets/district-strategy.json",
+      "role": "sources",
       "required": false,
-      "title_zh": "双态漫游（65 秒概念意象短片：三场景同机位 AI 开启/关闭对切）",
-      "title_en": "Dual-State Walk (65 s concept vision film: three scenes cut AI-on/AI-off from the same camera)",
-      "description_zh": "三组 AI 生成场景（主脊/缝合区/大钟寺市场）各呈两态：流光导引熄灭后盲道、铸刻导视、值守与现金柜台仍在。每帧恒显「概念意象·AI 生成·非建成效果承诺」角标；OFF 段垫本包五声音阶数据音；非效果图交付、非建成承诺",
-      "description_en": "Three AI-generated scenes each in two states: when the flowing-light guide goes out, the tactile strip, engraved signage, stewards and cash counters remain. Every frame carries a permanent concept/AI-generated/not-built badge; the AI-off bed reuses the package's pentatonic data sound; not a rendering deliverable, not a built outcome",
-      "transcript": "assets/media/dual-state-walk.md",
-      "poster": "assets/media/dual-state-walk-poster.webp",
-      "caption": "assets/media/dual-state-walk.vtt",
-      "sha256": "a7dbb764877bda3d7a1d45d64da1e9ff2c99d50b817920b11e0868060d61c047"
+      "language": "neutral",
+      "title_zh": "三区片区策略：街块诊断、开放化候选、界面规则、强度包络与走廊接驳判据（只登记关系与判据，不登记法定控制值）",
+      "title_en": "District strategy for the three key areas: block diagnosis, opening candidates, frontage rules, intensity envelope and corridor/interchange criteria (relations and criteria only, no statutory control value)",
+      "sha256": "ebbb7cf0be51a815d6fa86f50e3ec976aac8a26a78103a36e215af2ebf8511a3"
     },
     {
-      "path": "assets/media/dual-state-walk-poster.webp",
-      "role": "media_poster",
+      "path": "visual/assets/field-verification-plan.json",
+      "role": "sources",
       "required": false,
-      "title_zh": "双态漫游 视频封面（场景一 AI 开启态标注帧）",
-      "title_en": "Dual-State Walk poster (scene-one AI-on annotated frame)",
-      "sha256": "bd84e9047f31fbc18534895496b40f047c14a3c0180c12b716afa113e4de1205"
+      "language": "neutral",
+      "title_zh": "零授权现场验证计划：六项空间读数的执行办法、无障碍路径实测协议与最小访谈集（计划已备，执行待定，全部读数仍为零值或 unknown）",
+      "title_en": "Zero-authorisation field verification plan: execution method for the six spatial readings, the accessibility-route test protocol and the minimum interview set (plan ready, execution pending, every reading still zero or unknown)",
+      "sha256": "e375093a5faab4cdad3ca3a8dd85a9d56ba9e8d6d42391dbbe2c7198e29e68af"
     },
     {
-      "path": "assets/media/dual-state-walk.vtt",
-      "role": "caption_track",
+      "path": "assets/figures/district-strategy.png",
+      "role": "proposal_figure",
       "required": false,
-      "language": "zh",
-      "title_zh": "双态漫游 中文字幕",
-      "title_en": "Dual-State Walk Chinese captions",
-      "sha256": "97d4a075ac6eb6b2eadf1a4226d80382115c3ff90b093f668e1bb2f6e549eaaf"
+      "language": "neutral",
+      "title_zh": "片区策略合幅三联图 D-01：三区街块诊断与开放化候选，三分幅同比例尺（中英双语同图）",
+      "title_en": "District strategy plate D-01 — block diagnosis and opening candidates across the three key areas, three panels at one shared scale, one bilingual sheet",
+      "sha256": "d0006724ff896e6c994bd7d2db6027d082884d3bfa6b54917821f0062cc5790d"
     },
     {
-      "path": "assets/media/dual-state-walk-en.vtt",
-      "role": "caption_track",
+      "path": "visual/assets/sensory-design-code.json",
+      "role": "sources",
       "required": false,
-      "language": "en",
-      "title_zh": "双态漫游 英文字幕",
-      "title_en": "Dual-State Walk English captions",
-      "sha256": "09e1e0879c20e580671de67d45bda28839a26473b189cb77fccfd7a057d3bafc"
+      "language": "neutral",
+      "title_zh": "感官设计准则：蓝绿雨洪三层判据、十节点参数区间与母版口径、百年遗产解说序列与材料判据、实施制度框架、五×五参与矩阵（只登记判据与关系，不登记工程参数与法定控制值）",
+      "title_en": "Sensory design code: the blue-green three-layer and stormwater criteria, the node parameter ranges and their master-card caliber, the century heritage interpretation sequence with its material criteria, the delivery-institution framework and the five-by-five participation matrix (criteria and relations only, no engineering parameter and no statutory control value)",
+      "sha256": "8ee3bc38c1ec19f4a1b0cd02fdf4698be329c484838f58e9ab955867b4f62cb4"
     },
     {
-      "path": "assets/media/dual-state-walk.md",
-      "role": "transcript",
+      "path": "assets/figures/bluegreen-structure.png",
+      "role": "proposal_figure",
       "required": false,
-      "title_zh": "双态漫游 文字稿、生成档案（含两轮人工审改记录）与权利记录",
-      "title_en": "Dual-State Walk transcript, generation record (with both human-directed revision rounds) and rights note",
-      "sha256": "8a115a6415c7152425d64a8f18e3ea7c6f8e475a26b0cba9e6222d05475f17bb"
+      "language": "neutral",
+      "title_zh": "蓝绿三层结构与节点雨洪类型 BG-01：三条层带、三条层间关系判据与十节点铺装径流去向类型（中英双语同图）",
+      "title_en": "Blue-green three-layer structure and node drainage types BG-01 — three layer bands, three inter-layer criteria and the paving-runoff type of each of the ten nodes, one bilingual sheet",
+      "sha256": "8143ce2da10e997bdb3d33b6d1afa8c557888d2be3d22162edb554131e397230"
+    },
+    {
+      "path": "assets/figures/heritage-sequence.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "百年遗产解说序列 HS-01：自北向南三段叙事、绑定节点与地标、既有解说载体与四条遗存材料再利用判据（中英双语同图）",
+      "title_en": "Century heritage interpretation sequence HS-01 — three strands from north to south, their bound nodes and landmarks, the carriers already delivered and four remnant-material reuse criteria, one bilingual sheet",
+      "sha256": "fa05ced5aab92c8e9ecca03be3b17a722eb2b5238d1bc20f67ea6c4898bb1436"
     }
   ],
   "validation_claim": {

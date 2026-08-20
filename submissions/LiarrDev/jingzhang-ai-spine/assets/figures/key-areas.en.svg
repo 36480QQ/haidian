@@ -1,0 +1,362 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" font-family="'PingFang SC','Microsoft YaHei','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f7fa"/>
+      <stop offset="100%" stop-color="#e8eef4"/>
+    </linearGradient>
+    <linearGradient id="zzGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3f2fd"/>
+      <stop offset="100%" stop-color="#bbdefb"/>
+    </linearGradient>
+    <linearGradient id="dzGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <filter id="sh3">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg3)"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1600" height="80" fill="#1B3A6B"/>
+  <text x="40" y="38" fill="#fff" font-size="24" font-weight="700">FIG. 03 Three Key Areas — Detailed Design</text>
+  <text x="40" y="62" fill="#C07A3A" font-size="14" font-weight="600" letter-spacing="0.05em">THREE KEY AREAS — DETAILED DESIGN</text>
+  <rect x="0" y="80" width="1600" height="4" fill="#C07A3A"/>
+
+  <!-- ===== Column 1: Zhongzhiyuan ===== -->
+  <g transform="translate(30, 110)">
+    <rect x="0" y="0" width="500" height="1000" fill="#fff" stroke="#d6e0ea" rx="8" filter="url(#sh3)"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="500" height="100" fill="#C07A3A" rx="8"/>
+    <rect x="0" y="92" width="500" height="8" fill="#C07A3A"/>
+    <text x="250" y="36" text-anchor="middle" fill="#fff" font-size="12" opacity="0.8" letter-spacing="0.08em">SOURCE VERTEBRA</text>
+    <text x="250" y="62" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Zhongzhiyuan AI Innovation Acceleration Zone</text>
+    <text x="250" y="84" text-anchor="middle" fill="#fff" font-size="12" opacity="0.85">Zhongzhiyuan · 192.1 ha · 52.1%</text>
+
+    <!-- Positioning -->
+    <g transform="translate(20, 120)">
+      <rect x="0" y="0" width="460" height="32" fill="#fff3e0" rx="6"/>
+      <text x="10" y="20" fill="#C07A3A" font-size="11" font-weight="600">Positioning: Garden-type full-stack autonomous innovation park</text>
+    </g>
+
+    <!-- Spatial structure diagram -->
+    <g transform="translate(20, 170)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">Spatial Structure</text>
+      <!-- Diagram -->
+      <g transform="translate(20, 16)">
+        <rect x="0" y="0" width="400" height="70" fill="#fff8e1" stroke="#C07A3A" stroke-width="1" rx="4"/>
+        <text x="200" y="25" text-anchor="middle" fill="#C07A3A" font-size="11" font-weight="600">Qinghe Innovation Corridor</text>
+        <text x="200" y="42" text-anchor="middle" fill="#8a9aaa" font-size="9">Qinghe AI eco-observation station · Waterfront innovation frontage</text>
+        <text x="200" y="56" text-anchor="middle" fill="#8a9aaa" font-size="9">Qinghe River eco-innovation frontage</text>
+
+        <rect x="0" y="85" width="400" height="70" fill="#ffe0b2" stroke="#C07A3A" stroke-width="1" rx="4"/>
+        <text x="200" y="110" text-anchor="middle" fill="#C07A3A" font-size="11" font-weight="600">Acceleration Core</text>
+        <text x="200" y="128" text-anchor="middle" fill="#8a9aaa" font-size="9">Model red-team test field · Standard-setting workshop</text>
+        <text x="200" y="142" text-anchor="middle" fill="#8a9aaa" font-size="9">Model red-team · Standard-setting workshop</text>
+
+        <rect x="0" y="170" width="400" height="70" fill="#fff3e0" stroke="#C07A3A" stroke-width="1" rx="4"/>
+        <text x="200" y="195" text-anchor="middle" fill="#C07A3A" font-size="11" font-weight="600">Standard &amp; Governance</text>
+        <text x="200" y="212" text-anchor="middle" fill="#8a9aaa" font-size="9">Safety governance sandbox · Low-carbon compute station</text>
+        <text x="200" y="226" text-anchor="middle" fill="#8a9aaa" font-size="9">Safety sandbox · Low-carbon compute</text>
+      </g>
+    </g>
+
+    <!-- AI Scenes -->
+    <g transform="translate(20, 460)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">AI Scene Nodes</text>
+      <g transform="translate(0, 16)">
+        <circle cx="8" cy="8" r="5" fill="#C07A3A"/>
+        <text x="22" y="12" fill="#333" font-size="11">AI Chip R&amp;D Cluster</text>
+      </g>
+      <g transform="translate(0, 36)">
+        <circle cx="8" cy="8" r="5" fill="#C07A3A"/>
+        <text x="22" y="12" fill="#333" font-size="11">Autonomous Driving Test Zone</text>
+      </g>
+      <g transform="translate(0, 56)">
+        <circle cx="8" cy="8" r="5" fill="#C07A3A"/>
+        <text x="22" y="12" fill="#333" font-size="11">Open Source Platform</text>
+      </g>
+      <g transform="translate(0, 76)">
+        <circle cx="8" cy="8" r="5" fill="#C07A3A"/>
+        <text x="22" y="12" fill="#333" font-size="11">Intelligent Computing Center</text>
+      </g>
+      <g transform="translate(0, 96)">
+        <circle cx="8" cy="8" r="5" fill="#C07A3A"/>
+        <text x="22" y="12" fill="#333" font-size="11">Qingke Tech Corridor</text>
+      </g>
+      <g transform="translate(0, 116)">
+        <circle cx="8" cy="8" r="5" fill="#C07A3A"/>
+        <text x="22" y="12" fill="#333" font-size="11">Safety Governance Sandbox *</text>
+      </g>
+    </g>
+
+    <!-- Key metrics -->
+    <g transform="translate(20, 620)">
+      <rect x="0" y="0" width="460" height="100" fill="#f4f7fa" rx="6"/>
+      <text x="10" y="20" fill="#1B3A6B" font-size="11" font-weight="700">Key Metrics</text>
+      <g transform="translate(10, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">Area</text>
+        <text x="0" y="16" fill="#C07A3A" font-size="14" font-weight="700">1,929,202 ㎡</text>
+      </g>
+      <g transform="translate(120, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">AI Scenes</text>
+        <text x="0" y="16" fill="#C07A3A" font-size="14" font-weight="700">6 (incl. 1 test)</text>
+      </g>
+      <g transform="translate(250, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">Strategy</text>
+        <text x="0" y="16" fill="#C07A3A" font-size="14" font-weight="700">Retain + New</text>
+      </g>
+      <g transform="translate(360, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">Phase</text>
+        <text x="0" y="16" fill="#C07A3A" font-size="14" font-weight="700">Near-term</text>
+      </g>
+      <g transform="translate(10, 64)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="9">Demolition-Renovation-Retention: Retain 45% / Renovate 25% / Update 20% / New 10%</text>
+      </g>
+    </g>
+
+    <!-- Design features -->
+    <g transform="translate(20, 740)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">Design Highlights</text>
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="460" height="32" fill="#fff3e0" rx="4"/>
+        <text x="10" y="20" fill="#333" font-size="10">• Qinghe Innovation Frontage — AI eco-observation &amp; showcase along north bank</text>
+      </g>
+      <g transform="translate(0, 54)">
+        <rect x="0" y="0" width="460" height="32" fill="#fff3e0" rx="4"/>
+        <text x="10" y="20" fill="#333" font-size="10">• Acceleration Core — Model red-team testing + Standard-setting + Evaluation</text>
+      </g>
+      <g transform="translate(0, 92)">
+        <rect x="0" y="0" width="460" height="32" fill="#fff3e0" rx="4"/>
+        <text x="10" y="20" fill="#333" font-size="10">• Standard &amp; Governance — Safety sandbox open for visits &amp; booking</text>
+      </g>
+    </g>
+
+    <text x="20" y="960" fill="#C07A3A" font-size="9" font-family="ui-monospace,monospace">data: geometry/key_areas.geojson#PROV-KEY-001</text>
+  </g>
+
+  <!-- ===== Column 2: AI Origin ===== -->
+  <g transform="translate(550, 110)">
+    <rect x="0" y="0" width="500" height="1000" fill="#fff" stroke="#d6e0ea" rx="8" filter="url(#sh3)"/>
+    <rect x="0" y="0" width="500" height="100" fill="#1B3A6B" rx="8"/>
+    <rect x="0" y="92" width="500" height="8" fill="#1B3A6B"/>
+    <text x="250" y="36" text-anchor="middle" fill="#fff" font-size="12" opacity="0.8" letter-spacing="0.08em">PULSE VERTEBRA</text>
+    <text x="250" y="62" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Beijing AI Origin Community</text>
+    <text x="250" y="84" text-anchor="middle" fill="#fff" font-size="12" opacity="0.85">AI Origin Community · 104.3 ha · 28.3%</text>
+
+    <g transform="translate(20, 120)">
+      <rect x="0" y="0" width="460" height="32" fill="#e3f2fd" rx="6"/>
+      <text x="10" y="20" fill="#1B3A6B" font-size="11" font-weight="600">Positioning: Campus-adjacent tech transfer &amp; talent community</text>
+    </g>
+
+    <g transform="translate(20, 170)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">Spatial Structure</text>
+      <g transform="translate(20, 16)">
+        <rect x="0" y="0" width="400" height="70" fill="#e3f2fd" stroke="#1B3A6B" stroke-width="1" rx="4"/>
+        <text x="200" y="25" text-anchor="middle" fill="#1B3A6B" font-size="11" font-weight="600">Open Source Axis</text>
+        <text x="200" y="42" text-anchor="middle" fill="#8a9aaa" font-size="9">Open-source release hall · Code contribution showcase · Mini roadshow</text>
+        <text x="200" y="56" text-anchor="middle" fill="#8a9aaa" font-size="9">Open-source release · Demo showcase</text>
+
+        <rect x="0" y="85" width="400" height="70" fill="#bbdefb" stroke="#1B3A6B" stroke-width="1" rx="4"/>
+        <text x="200" y="110" text-anchor="middle" fill="#1B3A6B" font-size="11" font-weight="600">Tech Transfer Street</text>
+        <text x="200" y="128" text-anchor="middle" fill="#8a9aaa" font-size="9">Campus incubation hub · AI education points</text>
+        <text x="200" y="142" text-anchor="middle" fill="#8a9aaa" font-size="9">Incubation · AI education points</text>
+
+        <rect x="0" y="170" width="400" height="70" fill="#e8eaf6" stroke="#1B3A6B" stroke-width="1" rx="4"/>
+        <text x="200" y="195" text-anchor="middle" fill="#1B3A6B" font-size="11" font-weight="600">Talent Living Zone</text>
+        <text x="200" y="212" text-anchor="middle" fill="#8a9aaa" font-size="9">Talent apartments · Night co-work · Service center</text>
+        <text x="200" y="226" text-anchor="middle" fill="#8a9aaa" font-size="9">Talent housing · Night co-work space</text>
+      </g>
+    </g>
+
+    <g transform="translate(20, 460)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">AI Scene Nodes</text>
+      <g transform="translate(0, 16)">
+        <circle cx="8" cy="8" r="5" fill="#1B3A6B"/>
+        <text x="22" y="12" fill="#333" font-size="11">University-Industry Hub</text>
+      </g>
+      <g transform="translate(0, 36)">
+        <circle cx="8" cy="8" r="5" fill="#1B3A6B"/>
+        <text x="22" y="12" fill="#333" font-size="11">Tech Transfer Accelerator</text>
+      </g>
+      <g transform="translate(0, 56)">
+        <circle cx="8" cy="8" r="5" fill="#1B3A6B"/>
+        <text x="22" y="12" fill="#333" font-size="11">Talent Apartment Community</text>
+      </g>
+      <g transform="translate(0, 76)">
+        <circle cx="8" cy="8" r="5" fill="#1B3A6B"/>
+        <text x="22" y="12" fill="#333" font-size="11">Innovation Showcase</text>
+      </g>
+      <g transform="translate(0, 96)">
+        <circle cx="8" cy="8" r="5" fill="#1B3A6B"/>
+        <text x="22" y="12" fill="#333" font-size="11">Wudaokou Maker District</text>
+      </g>
+      <g transform="translate(0, 116)">
+        <circle cx="8" cy="8" r="5" fill="#1B3A6B"/>
+        <text x="22" y="12" fill="#333" font-size="11">Edge Compute Station *</text>
+      </g>
+    </g>
+
+    <g transform="translate(20, 620)">
+      <rect x="0" y="0" width="460" height="100" fill="#f4f7fa" rx="6"/>
+      <text x="10" y="20" fill="#1B3A6B" font-size="11" font-weight="700">Key Metrics</text>
+      <g transform="translate(10, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">Area</text>
+        <text x="0" y="16" fill="#1B3A6B" font-size="14" font-weight="700">1,043,237 ㎡</text>
+      </g>
+      <g transform="translate(120, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">AI Scenes</text>
+        <text x="0" y="16" fill="#1B3A6B" font-size="14" font-weight="700">6 (incl. 1 test)</text>
+      </g>
+      <g transform="translate(250, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">Strategy</text>
+        <text x="0" y="16" fill="#1B3A6B" font-size="14" font-weight="700">Micro-update</text>
+      </g>
+      <g transform="translate(360, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">Phase</text>
+        <text x="0" y="16" fill="#1B3A6B" font-size="14" font-weight="700">Near-term</text>
+      </g>
+      <g transform="translate(10, 64)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="9">Demolition-Renovation-Retention: Retain 55% / Renovate 25% / Update 15% / New 5%</text>
+      </g>
+    </g>
+
+    <g transform="translate(20, 740)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">Design Highlights</text>
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="460" height="32" fill="#e3f2fd" rx="4"/>
+        <text x="10" y="20" fill="#333" font-size="10">• Open Source Axis — Release corridor linking Wudaokou &amp; Heritage Park</text>
+      </g>
+      <g transform="translate(0, 54)">
+        <rect x="0" y="0" width="460" height="32" fill="#e3f2fd" rx="4"/>
+        <text x="10" y="20" fill="#333" font-size="10">• Tech Transfer Street — Campus incubation + AI education points</text>
+      </g>
+      <g transform="translate(0, 92)">
+        <rect x="0" y="0" width="460" height="32" fill="#e3f2fd" rx="4"/>
+        <text x="10" y="20" fill="#333" font-size="10">• Talent Living Zone — Apartments + Night co-work + Service center</text>
+      </g>
+    </g>
+
+    <text x="20" y="960" fill="#1B3A6B" font-size="9" font-family="ui-monospace,monospace">data: geometry/key_areas.geojson#PROV-KEY-002</text>
+  </g>
+
+  <!-- ===== Column 3: Dazhongsi ===== -->
+  <g transform="translate(1070, 110)">
+    <rect x="0" y="0" width="500" height="1000" fill="#fff" stroke="#d6e0ea" rx="8" filter="url(#sh3)"/>
+    <rect x="0" y="0" width="500" height="100" fill="#2e7d32" rx="8"/>
+    <rect x="0" y="92" width="500" height="8" fill="#2e7d32"/>
+    <text x="250" y="36" text-anchor="middle" fill="#fff" font-size="12" opacity="0.8" letter-spacing="0.08em">CONVERGENCE VERTEBRA</text>
+    <text x="250" y="62" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Dazhongsi AI Industry Cluster</text>
+    <text x="250" y="84" text-anchor="middle" fill="#fff" font-size="12" opacity="0.85">Dazhongsi · 72.0 ha · 19.6%</text>
+
+    <g transform="translate(20, 120)">
+      <rect x="0" y="0" width="460" height="32" fill="#e8f5e9" rx="6"/>
+      <text x="10" y="20" fill="#2e7d32" font-size="11" font-weight="600">Positioning: Urban intelligent economy &amp; intl. exchange district</text>
+    </g>
+
+    <g transform="translate(20, 170)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">Spatial Structure</text>
+      <g transform="translate(20, 16)">
+        <rect x="0" y="0" width="400" height="70" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="4"/>
+        <text x="200" y="25" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="600">Intl. Roadshow Hall</text>
+        <text x="200" y="42" text-anchor="middle" fill="#8a9aaa" font-size="9">International conference center · Smart commerce district</text>
+        <text x="200" y="56" text-anchor="middle" fill="#8a9aaa" font-size="9">Conference · Smart commerce</text>
+
+        <rect x="0" y="85" width="400" height="70" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1" rx="4"/>
+        <text x="200" y="110" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="600">Data Element Hall</text>
+        <text x="200" y="128" text-anchor="middle" fill="#8a9aaa" font-size="9">AI enterprise HQ · Data trading</text>
+        <text x="200" y="142" text-anchor="middle" fill="#8a9aaa" font-size="9">AI HQ · Data marketplace</text>
+
+        <rect x="0" y="170" width="400" height="70" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" rx="4"/>
+        <text x="200" y="195" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="600">Smart Terminal Street</text>
+        <text x="200" y="212" text-anchor="middle" fill="#8a9aaa" font-size="9">Urban AI showcase · Transit hub complex</text>
+        <text x="200" y="226" text-anchor="middle" fill="#8a9aaa" font-size="9">Urban AI showcase · Transit hub</text>
+      </g>
+    </g>
+
+    <g transform="translate(20, 460)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">AI Scene Nodes</text>
+      <g transform="translate(0, 16)">
+        <circle cx="8" cy="8" r="5" fill="#2e7d32"/>
+        <text x="22" y="12" fill="#333" font-size="11">AI Enterprise HQ Base</text>
+      </g>
+      <g transform="translate(0, 36)">
+        <circle cx="8" cy="8" r="5" fill="#2e7d32"/>
+        <text x="22" y="12" fill="#333" font-size="11">International Conference Center</text>
+      </g>
+      <g transform="translate(0, 56)">
+        <circle cx="8" cy="8" r="5" fill="#2e7d32"/>
+        <text x="22" y="12" fill="#333" font-size="11">Smart Commerce District</text>
+      </g>
+      <g transform="translate(0, 76)">
+        <circle cx="8" cy="8" r="5" fill="#2e7d32"/>
+        <text x="22" y="12" fill="#333" font-size="11">Urban AI Showcase</text>
+      </g>
+      <g transform="translate(0, 96)">
+        <circle cx="8" cy="8" r="5" fill="#2e7d32"/>
+        <text x="22" y="12" fill="#333" font-size="11">Transit Hub Complex</text>
+      </g>
+      <g transform="translate(0, 116)">
+        <circle cx="8" cy="8" r="5" fill="#2e7d32"/>
+        <text x="22" y="12" fill="#333" font-size="11">Content Consumption Lab *</text>
+      </g>
+    </g>
+
+    <g transform="translate(20, 620)">
+      <rect x="0" y="0" width="460" height="100" fill="#f4f7fa" rx="6"/>
+      <text x="10" y="20" fill="#1B3A6B" font-size="11" font-weight="700">Key Metrics</text>
+      <g transform="translate(10, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">Area</text>
+        <text x="0" y="16" fill="#2e7d32" font-size="14" font-weight="700">720,454 ㎡</text>
+      </g>
+      <g transform="translate(120, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">AI Scenes</text>
+        <text x="0" y="16" fill="#2e7d32" font-size="14" font-weight="700">6 (incl. 1 test)</text>
+      </g>
+      <g transform="translate(250, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">Strategy</text>
+        <text x="0" y="16" fill="#2e7d32" font-size="14" font-weight="700">Renovate</text>
+      </g>
+      <g transform="translate(360, 32)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="10">Phase</text>
+        <text x="0" y="16" fill="#2e7d32" font-size="14" font-weight="700">Mid-term</text>
+      </g>
+      <g transform="translate(10, 64)">
+        <text x="0" y="0" fill="#5a6a7a" font-size="9">Demolition-Renovation-Retention: Retain 30% / Renovate 35% / Update 25% / New 10%</text>
+      </g>
+    </g>
+
+    <g transform="translate(20, 740)">
+      <text x="0" y="0" fill="#1B3A6B" font-size="12" font-weight="700">Design Highlights</text>
+      <g transform="translate(0, 16)">
+        <rect x="0" y="0" width="460" height="32" fill="#e8f5e9" rx="4"/>
+        <text x="10" y="20" fill="#333" font-size="10">• Intl. Roadshow Hall — Global AI Innovation Week roadshows &amp; conferences</text>
+      </g>
+      <g transform="translate(0, 54)">
+        <rect x="0" y="0" width="460" height="32" fill="#e8f5e9" rx="4"/>
+        <text x="10" y="20" fill="#333" font-size="10">• Data Element Hall — AI enterprise HQ + Data trading platform</text>
+      </g>
+      <g transform="translate(0, 92)">
+        <rect x="0" y="0" width="460" height="32" fill="#e8f5e9" rx="4"/>
+        <text x="10" y="20" fill="#333" font-size="10">• Smart Terminal Street — Urban AI showcase + Transit hub complex</text>
+      </g>
+    </g>
+
+    <text x="20" y="960" fill="#2e7d32" font-size="9" font-family="ui-monospace,monospace">data: geometry/key_areas.geojson#PROV-KEY-003</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="1140" width="1600" height="60" fill="#1B3A6B"/>
+  <text x="40" y="1165" fill="#a0b0c0" font-size="11">AI Spine · Jingzhang | Source: Key area design proposal</text>
+  <text x="40" y="1182" fill="#708090" font-size="10">* = AI industry test scenarios | 12 AI scenario cards total</text>
+  <text x="1560" y="1165" text-anchor="end" fill="#a0b0c0" font-size="11">FIG. 03 / 05</text>
+</svg>

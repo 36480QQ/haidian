@@ -1141,147 +1141,9 @@
     },
     {
       "type": "Feature",
-      "id": "V5-D-ENT-N",
+      "id": "V7-D-ENT-N",
       "properties": {
-        "id": "V5-D-ENT-N",
-        "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "status": "concept_proposal",
-        "station": "dazhongsi",
-        "point_role": "entrance",
-        "name_zh": "北象限入口",
-        "name_en": "North-quadrant entrance"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.349,
-          39.9577056
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "V5-D-ENT-E",
-      "properties": {
-        "id": "V5-D-ENT-E",
-        "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "status": "concept_proposal",
-        "station": "dazhongsi",
-        "point_role": "entrance",
-        "name_zh": "东象限入口",
-        "name_en": "East-quadrant entrance"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.3499141,
-          39.957
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "V5-D-ENT-S",
-      "properties": {
-        "id": "V5-D-ENT-S",
-        "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "status": "concept_proposal",
-        "station": "dazhongsi",
-        "point_role": "entrance",
-        "name_zh": "南象限入口",
-        "name_en": "South-quadrant entrance"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.349,
-          39.9562944
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "V5-D-ENT-W",
-      "properties": {
-        "id": "V5-D-ENT-W",
-        "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "status": "concept_proposal",
-        "station": "dazhongsi",
-        "point_role": "entrance",
-        "name_zh": "西象限入口",
-        "name_en": "West-quadrant entrance"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.3480859,
-          39.957
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "V5-D-STAFF-01",
-      "properties": {
-        "id": "V5-D-STAFF-01",
-        "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "status": "concept_proposal",
-        "station": "dazhongsi",
-        "point_role": "staff_position",
-        "name_zh": "交通与试验人工岗位",
-        "name_en": "Transit and trial staffed position"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.3492344,
-          39.9567286
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "V5-D-UTILITY",
-      "properties": {
-        "id": "V5-D-UTILITY",
-        "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "status": "concept_proposal",
-        "station": "dazhongsi",
-        "point_role": "utility_interface",
-        "name_zh": "可拆充电与隔离电力接口",
-        "name_en": "Removable charging and isolated-power interface"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.3496797,
-          39.9564753
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "V6-D-ENT-N",
-      "properties": {
-        "id": "V6-D-ENT-N",
+        "id": "V7-D-ENT-N",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1290,7 +1152,11 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "directional_entrance",
+        "quantity_method": "count(point_feature)",
         "name_zh": "directional_entrance",
         "name_en": "directional entrance"
       },
@@ -1298,15 +1164,15 @@
         "type": "Point",
         "coordinates": [
           116.349,
-          39.9578504
+          39.9578685
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-ENT-E",
+      "id": "V7-D-ENT-E",
       "properties": {
-        "id": "V6-D-ENT-E",
+        "id": "V7-D-ENT-E",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1315,23 +1181,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "directional_entrance",
+        "quantity_method": "count(point_feature)",
         "name_zh": "directional_entrance",
         "name_en": "directional entrance"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.350125,
+          116.3501719,
           39.957
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-ENT-S",
+      "id": "V7-D-ENT-S",
       "properties": {
-        "id": "V6-D-ENT-S",
+        "id": "V7-D-ENT-S",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1340,7 +1210,11 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "directional_entrance",
+        "quantity_method": "count(point_feature)",
         "name_zh": "directional_entrance",
         "name_en": "directional entrance"
       },
@@ -1348,15 +1222,15 @@
         "type": "Point",
         "coordinates": [
           116.349,
-          39.956222
+          39.9561858
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-ENT-W",
+      "id": "V7-D-ENT-W",
       "properties": {
-        "id": "V6-D-ENT-W",
+        "id": "V7-D-ENT-W",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1365,23 +1239,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "directional_entrance",
+        "quantity_method": "count(point_feature)",
         "name_zh": "directional_entrance",
         "name_en": "directional entrance"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.347875,
+          116.3478281,
           39.957
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-STAFF-BASE",
+      "id": "V7-D-STAFF-BASE",
       "properties": {
-        "id": "V6-D-STAFF-BASE",
+        "id": "V7-D-STAFF-BASE",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1390,23 +1268,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "baseline_staff_position",
+        "quantity_method": "count(point_feature)",
         "name_zh": "baseline_staff_position",
         "name_en": "baseline staff position"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3484375,
-          39.9572895
+          116.348414,
+          39.9565296
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-STAFF-TRIAL",
+      "id": "V7-D-STAFF-TRIAL",
       "properties": {
-        "id": "V6-D-STAFF-TRIAL",
+        "id": "V7-D-STAFF-TRIAL",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1415,23 +1297,56 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "trial_staff_position",
+        "quantity_method": "count(point_feature)",
         "name_zh": "trial_staff_position",
         "name_en": "trial staff position"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.349293,
+          116.3493047,
+          39.9567105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-ESTOP-01",
+      "properties": {
+        "id": "V7-D-ESTOP-01",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "emergency_stop",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "emergency_stop",
+        "name_en": "emergency stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3493633,
           39.9567286
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-ESTOP-01",
+      "id": "V7-D-ESTOP-02",
       "properties": {
-        "id": "V6-D-ESTOP-01",
+        "id": "V7-D-ESTOP-02",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1440,23 +1355,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "emergency_stop",
+        "quantity_method": "count(point_feature)",
         "name_zh": "emergency_stop",
         "name_en": "emergency stop"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3493399,
-          39.9567467
+          116.3499024,
+          39.9567286
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-ESTOP-02",
+      "id": "V7-D-UTILITY",
       "properties": {
-        "id": "V6-D-ESTOP-02",
+        "id": "V7-D-UTILITY",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1465,48 +1384,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
-        "point_role": "emergency_stop",
-        "name_zh": "emergency_stop",
-        "name_en": "emergency stop"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.3498789,
-          39.9567467
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "V6-D-UTILITY",
-      "properties": {
-        "id": "V6-D-UTILITY",
-        "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "design_proposal",
-        "status": "concept_proposal",
-        "station": "dazhongsi",
-        "evidence_level": "E1_concept_design",
-        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "isolated_utility_interface",
+        "quantity_method": "count(point_feature)",
         "name_zh": "isolated_utility_interface",
         "name_en": "isolated utility interface"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3498907,
+          116.3499141,
           39.9563848
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-FIRE-GATE",
+      "id": "V7-D-FIRE-GATE",
       "properties": {
-        "id": "V6-D-FIRE-GATE",
+        "id": "V7-D-FIRE-GATE",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1515,23 +1413,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "fire_access_gate",
+        "quantity_method": "count(point_feature)",
         "name_zh": "fire_access_gate",
         "name_en": "fire access gate"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3479218,
-          39.9576875
+          116.3478984,
+          39.9577056
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-APPEAL",
+      "id": "V7-D-APPEAL",
       "properties": {
-        "id": "V6-D-APPEAL",
+        "id": "V7-D-APPEAL",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1540,23 +1442,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "appeal_and_exit_notice",
+        "quantity_method": "count(point_feature)",
         "name_zh": "appeal_and_exit_notice",
         "name_en": "appeal and exit notice"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3481562,
-          39.9564391
+          116.3481797,
+          39.9564572
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-WATER",
+      "id": "V7-D-WATER",
       "properties": {
-        "id": "V6-D-WATER",
+        "id": "V7-D-WATER",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1565,23 +1471,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "drinking_water",
+        "quantity_method": "count(point_feature)",
         "name_zh": "drinking_water",
         "name_en": "drinking water"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.348625,
+          116.3486484,
           39.9572895
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-LIGHT-01",
+      "id": "V7-D-STATE-OPEN",
       "properties": {
-        "id": "V6-D-LIGHT-01",
+        "id": "V7-D-STATE-OPEN",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1590,23 +1500,201 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "public_state_board",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "public_state_board",
+        "name_en": "public state board"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34825,
+          39.9565296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-STATE-TRIAL",
+      "properties": {
+        "id": "V7-D-STATE-TRIAL",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "trial_state_board",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "trial_state_board",
+        "name_en": "trial state board"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3496328,
+          39.9567829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-COUNTER",
+      "properties": {
+        "id": "V7-D-COUNTER",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "manual_non_identifying_counter",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "manual_non_identifying_counter",
+        "name_en": "manual non identifying counter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3483437,
+          39.9565296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-STORAGE-GATE",
+      "properties": {
+        "id": "V7-D-STORAGE-GATE",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "equipment_storage_gate",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "equipment_storage_gate",
+        "name_en": "equipment storage gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3499141,
+          39.9562763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-RAMP-PT-N",
+      "properties": {
+        "id": "V7-D-RAMP-PT-N",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "curb_ramp",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "curb_ramp",
+        "name_en": "curb ramp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349,
+          39.9571447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-RAMP-PT-S",
+      "properties": {
+        "id": "V7-D-RAMP-PT-S",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "curb_ramp",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "curb_ramp",
+        "name_en": "curb ramp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349,
+          39.9568553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-LIGHT-01",
+      "properties": {
+        "id": "V7-D-LIGHT-01",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "lighting",
+        "quantity_method": "count(point_feature)",
         "name_zh": "lighting",
         "name_en": "lighting"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3481328,
+          116.3480859,
           39.9571628
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-LIGHT-02",
+      "id": "V7-D-LIGHT-02",
       "properties": {
-        "id": "V6-D-LIGHT-02",
+        "id": "V7-D-LIGHT-02",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1615,23 +1703,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "lighting",
+        "quantity_method": "count(point_feature)",
         "name_zh": "lighting",
         "name_en": "lighting"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3487187,
+          116.3483437,
           39.9571628
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-LIGHT-03",
+      "id": "V7-D-LIGHT-03",
       "properties": {
-        "id": "V6-D-LIGHT-03",
+        "id": "V7-D-LIGHT-03",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1640,23 +1732,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "lighting",
+        "quantity_method": "count(point_feature)",
         "name_zh": "lighting",
         "name_en": "lighting"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3492813,
+          116.3486015,
           39.9571628
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-LIGHT-04",
+      "id": "V7-D-LIGHT-04",
       "properties": {
-        "id": "V6-D-LIGHT-04",
+        "id": "V7-D-LIGHT-04",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1665,23 +1761,27 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "lighting",
+        "quantity_method": "count(point_feature)",
         "name_zh": "lighting",
         "name_en": "lighting"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3498672,
+          116.3488594,
           39.9571628
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-LIGHT-05",
+      "id": "V7-D-LIGHT-05",
       "properties": {
-        "id": "V6-D-LIGHT-05",
+        "id": "V7-D-LIGHT-05",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1690,23 +1790,433 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
         "point_role": "lighting",
+        "quantity_method": "count(point_feature)",
         "name_zh": "lighting",
         "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3491172,
+          39.9563306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-LIGHT-06",
+      "properties": {
+        "id": "V7-D-LIGHT-06",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "lighting",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "lighting",
+        "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349375,
+          39.9563306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-LIGHT-07",
+      "properties": {
+        "id": "V7-D-LIGHT-07",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "lighting",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "lighting",
+        "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3496328,
+          39.9563306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-LIGHT-08",
+      "properties": {
+        "id": "V7-D-LIGHT-08",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "lighting",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "lighting",
+        "name_en": "lighting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498907,
+          39.9563306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-SEAT-01",
+      "properties": {
+        "id": "V7-D-SEAT-01",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "public_seating",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "public_seating",
+        "name_en": "public seating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3482031,
+          39.9572533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-SEAT-02",
+      "properties": {
+        "id": "V7-D-SEAT-02",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "public_seating",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "public_seating",
+        "name_en": "public seating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3486953,
+          39.9572533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-SEAT-03",
+      "properties": {
+        "id": "V7-D-SEAT-03",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "public_seating",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "public_seating",
+        "name_en": "public seating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3491875,
+          39.9572533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-SEAT-04",
+      "properties": {
+        "id": "V7-D-SEAT-04",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "public_seating",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "public_seating",
+        "name_en": "public seating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3496797,
+          39.9572533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-SEAT-05",
+      "properties": {
+        "id": "V7-D-SEAT-05",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "public_seating",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "public_seating",
+        "name_en": "public seating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3482031,
+          39.9573438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-SEAT-06",
+      "properties": {
+        "id": "V7-D-SEAT-06",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "public_seating",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "public_seating",
+        "name_en": "public seating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3486953,
+          39.9573438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-SEAT-07",
+      "properties": {
+        "id": "V7-D-SEAT-07",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "public_seating",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "public_seating",
+        "name_en": "public seating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3491875,
+          39.9573438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-SEAT-08",
+      "properties": {
+        "id": "V7-D-SEAT-08",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "public_seating",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "public_seating",
+        "name_en": "public seating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3496797,
+          39.9573438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-01",
+      "properties": {
+        "id": "V7-D-TREE-01",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3479921,
+          39.9571809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-02",
+      "properties": {
+        "id": "V7-D-TREE-02",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3483906,
+          39.9571809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-03",
+      "properties": {
+        "id": "V7-D-TREE-03",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           116.3487891,
-          39.9563667
+          39.9571809
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "V6-D-LIGHT-06",
+      "id": "V7-D-TREE-04",
       "properties": {
-        "id": "V6-D-LIGHT-06",
+        "id": "V7-D-TREE-04",
         "layer": "REGULATORY_CONTROL",
         "source_type": "agent_generated_design",
         "confidence": "low",
@@ -1715,15 +2225,1085 @@
         "station": "dazhongsi",
         "evidence_level": "E1_concept_design",
         "dimension_basis": "prototype_design_assumption_pending_survey",
-        "point_role": "lighting",
-        "name_zh": "lighting",
-        "name_en": "lighting"
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3491875,
+          39.9571809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-05",
+      "properties": {
+        "id": "V7-D-TREE-05",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349586,
+          39.9571809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-06",
+      "properties": {
+        "id": "V7-D-TREE-06",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           116.3499844,
-          39.9563667
+          39.9571809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-07",
+      "properties": {
+        "id": "V7-D-TREE-07",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3479921,
+          39.9576513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-08",
+      "properties": {
+        "id": "V7-D-TREE-08",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3483906,
+          39.9576513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-09",
+      "properties": {
+        "id": "V7-D-TREE-09",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3487891,
+          39.9576513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-10",
+      "properties": {
+        "id": "V7-D-TREE-10",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3491875,
+          39.9576513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-11",
+      "properties": {
+        "id": "V7-D-TREE-11",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349586,
+          39.9576513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-TREE-12",
+      "properties": {
+        "id": "V7-D-TREE-12",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "tree_pit_design_assumption",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "tree_pit_design_assumption",
+        "name_en": "tree pit design assumption"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3499844,
+          39.9576513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-01",
+      "properties": {
+        "id": "V7-D-BARRIER-01",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3492813,
+          39.9563125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-02",
+      "properties": {
+        "id": "V7-D-BARRIER-02",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3494219,
+          39.9563125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-03",
+      "properties": {
+        "id": "V7-D-BARRIER-03",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3495625,
+          39.9563125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-04",
+      "properties": {
+        "id": "V7-D-BARRIER-04",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3497032,
+          39.9563125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-05",
+      "properties": {
+        "id": "V7-D-BARRIER-05",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498438,
+          39.9563125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-06",
+      "properties": {
+        "id": "V7-D-BARRIER-06",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3499844,
+          39.9563125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-07",
+      "properties": {
+        "id": "V7-D-BARRIER-07",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3492813,
+          39.9565658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-08",
+      "properties": {
+        "id": "V7-D-BARRIER-08",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3494219,
+          39.9565658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-09",
+      "properties": {
+        "id": "V7-D-BARRIER-09",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3495625,
+          39.9565658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-10",
+      "properties": {
+        "id": "V7-D-BARRIER-10",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3497032,
+          39.9565658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-11",
+      "properties": {
+        "id": "V7-D-BARRIER-11",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498438,
+          39.9565658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-12",
+      "properties": {
+        "id": "V7-D-BARRIER-12",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3499844,
+          39.9565658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-13",
+      "properties": {
+        "id": "V7-D-BARRIER-13",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3492813,
+          39.9568191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-14",
+      "properties": {
+        "id": "V7-D-BARRIER-14",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3494219,
+          39.9568191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-15",
+      "properties": {
+        "id": "V7-D-BARRIER-15",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3495625,
+          39.9568191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-16",
+      "properties": {
+        "id": "V7-D-BARRIER-16",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3497032,
+          39.9568191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-17",
+      "properties": {
+        "id": "V7-D-BARRIER-17",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498438,
+          39.9568191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V7-D-BARRIER-18",
+      "properties": {
+        "id": "V7-D-BARRIER-18",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "assembly_state": "reversible_prototype",
+        "maintenance_owner": "scenario_operator_pending_appointment",
+        "retirement_destination": "reuse_or_return_to_supplier",
+        "point_role": "removable_barrier_module",
+        "quantity_method": "count(point_feature)",
+        "name_zh": "removable_barrier_module",
+        "name_en": "removable barrier module"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3499844,
+          39.9568191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-HUMAN-1",
+      "properties": {
+        "id": "V11-ALT-A-HUMAN-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "human_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3485078,
+          39.9573773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-ESTOP-1",
+      "properties": {
+        "id": "V11-ALT-A-ESTOP-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3487656,
+          39.9571797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-A-ESTOP-2",
+      "properties": {
+        "id": "V11-ALT-A-ESTOP-2",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-A",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3492344,
+          39.9568203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-HUMAN-1",
+      "properties": {
+        "id": "V11-ALT-B-HUMAN-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "human_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3484726,
+          39.9568563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-HUMAN-2",
+      "properties": {
+        "id": "V11-ALT-B-HUMAN-2",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "human_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3495274,
+          39.9571258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-ESTOP-1",
+      "properties": {
+        "id": "V11-ALT-B-ESTOP-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3487187,
+          39.9568024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-ESTOP-2",
+      "properties": {
+        "id": "V11-ALT-B-ESTOP-2",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3482265,
+          39.9568024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-ESTOP-3",
+      "properties": {
+        "id": "V11-ALT-B-ESTOP-3",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3492813,
+          39.9571797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-B-ESTOP-4",
+      "properties": {
+        "id": "V11-ALT-B-ESTOP-4",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-B",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3497735,
+          39.9571797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-HUMAN-1",
+      "properties": {
+        "id": "V11-ALT-C-HUMAN-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "human_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3495625,
+          39.9568742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-ESTOP-1",
+      "properties": {
+        "id": "V11-ALT-C-ESTOP-1",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3493047,
+          39.9568383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V11-ALT-C-ESTOP-2",
+      "properties": {
+        "id": "V11-ALT-C-ESTOP-2",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "status": "concept_proposal",
+        "station": "dazhongsi",
+        "evidence_level": "E1_concept_design",
+        "dimension_basis": "prototype_design_assumption_pending_survey",
+        "verification_scope": "geometry_based_design_audit",
+        "field_status": "not_field_run",
+        "alternative_id": "ALT-C",
+        "component_role": "emergency_stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498438,
+          39.9568383
         ]
       }
     }

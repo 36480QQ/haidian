@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "第一人称共情脚本 (First-Person Scripts)",
+  "core_claim_zh": "用第一人称脚本验证连接体验链路每步是否通顺——体验的工程验证，非营销。",
+  "core_claim_en": "First-person scripts verify the connection experiential chain step by step.",
+  "scripts": [
+    {
+      "persona_zh": "老年居民",
+      "script_zh": "我办完事被引导到连接长椅坐下，志愿者陪我聊了十分钟。我认识了一位新朋友。我的连接增强了。",
+      "verified_step_zh": "体验链：办完事→引导到长椅→交流→认识新朋友"
+    },
+    {
+      "persona_zh": "志愿者",
+      "script_zh": "我在代际结对角轮值，今天陪三位老人聊天。我感觉自己有价值。",
+      "verified_step_zh": "体验链：轮值→陪聊→自我价值感"
+    },
+    {
+      "persona_zh": "老人家属",
+      "script_zh": "我父亲在连接站认识了新朋友，他告诉我他今天很开心。我知道他被连接了。",
+      "verified_step_zh": "体验链：老人连接→家属得知→安心"
+    }
+  ],
+  "field_status": "not_authorized_not_run"
+}

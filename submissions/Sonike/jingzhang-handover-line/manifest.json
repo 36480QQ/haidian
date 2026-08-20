@@ -5,6 +5,28 @@
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
+  "license": {
+    "identifier": "COMMUNITY-DISPLAY-ONLY",
+    "identifier_source": "schema/proposal.schema.json 的 license 枚举值之一；组织方未发布其条款文本",
+    "author_grant_zh": "作为本包内容的权利人，作者另行授予：对本包内容的任何使用，只要符合 CC BY-NC 4.0（署名、非商业、标明修改），即已获得作者许可。",
+    "author_grant_en": "As rights holders in the contents of this package, the authors additionally grant that any use complying with CC BY-NC 4.0 (attribution, non-commercial, changes indicated) is licensed.",
+    "required_attribution_line_zh": "本方案为开放共创建议，不代表任何政府决定或审批结论。",
+    "required_attribution_line_en": "This proposal is open co-creation advice and represents no government decision or approval.",
+    "third_party_exclusion_zh": "本授权不覆盖第三方素材。包内未使用任何第三方图片、地图、商标或受保护版式；字体权利链见 proposal.md 风险与合规一节的字体表与 sources.json 的 FONT-* 条目。",
+    "government_endorsement_zh": "任何使用不得暗示政府背书、实施批准、已建成或已完成公众参与。",
+    "precedence_zh": "三个许可信号冲突时的优先顺序，自高到低：(1) 第三方排除范围与政府不背书声明——禁止项，任何授权都不能突破；(2) 权利人的完整授权文本 author_grant_zh/en——权利人对自有权利的直接授予，不需外部文本支持即可执行；(3) 机器可读标识 identifier——条款未发布；若日后被定义得比 (2) 更严则以更严者为准，若被定义得更宽，本包仍只按 (2) 的范围授权。",
+    "precedence_en": "Order of precedence when the three licence signals conflict, highest first: (1) the third-party exclusion and the no-government-endorsement statement, which are prohibitions no grant can override; (2) the rights holders' full grant text in author_grant_zh/en, a direct grant over rights they hold that is enforceable without external support; (3) the machine-readable identifier, whose terms are unpublished — if it is later defined more strictly than (2) the stricter governs, and if more loosely, this package still grants only within the scope of (2).",
+    "same_text_locations": [
+      "proposal.md#风险、版权与合规说明",
+      "report/copyright_statement.md",
+      "assets/media/audio-guide.md",
+      "assets/media/audio-guide-en.md",
+      "assets/media/guided-tour.md",
+      "assets/media/guided-tour-en.md",
+      "visual/index.html",
+      "visual/index.en.html"
+    ]
+  },
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
@@ -25,123 +47,129 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c92c8ffb5b4144f7e475804f655113f1ba16e436b44f4d1e0a8aa3c5207bb22e"
+      "sha256": "ce4a75b3099a097821b3fb42b0d58c5af78289676ad0d5162ebe70c909c55e75"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "daa65cc464f8ac16ed6d56dc736d783b1b112b0e44513b88a35ae6fc610e3770"
+      "sha256": "9e410e1434dfb753440b0710aa458ac07c904548c20c0c05cedee9ec489f5ab6"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f5fb96804a264116364e9eb39a5262785f0aad3d54b46b624a26cdf68880eecb"
+      "sha256": "60fbdcaf4b82409c43df7f6e55fa6066f461a5e414e467b4384af76bc6d00c6d"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "0a192d4daa0ac41c02f240f3aea9bfd63ee87db8feec809eba0a3d129a27b98d"
+      "sha256": "af3ffe9b03caf81e9965ef2a12f3f070132f7ee0e67590d02cffb3b5af60369f"
+    },
+    {
+      "path": "simulation.json",
+      "role": "governance_validation",
+      "required": false,
+      "sha256": "3e4af6cb48fdc0fb906d92fd48301803e82daab7cf52f40c14bee1d66d870d6c"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "4cc389f50bfe72c674ee9351b93ee997446ca93f2a1e8c35f38b06bb8dd11f85"
+      "sha256": "13ca59be7f91c6d9aade34bd911870ba856644f0c58d8251c2a91c111f9289e0"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c8bc4cc04af1cd8a9017d609932d38d69b292c46c058c02f5b3961638e09b104"
+      "sha256": "7cbda51f4369b6922d71d99cf2fa0c27b4357dba4a33cca40d32a9c61b11d247"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "7d06b51f85a9f30e95162b6724588650800d07d176176b5eeed876ba80b2b210"
+      "sha256": "aaa4413a378b448273823aa8f9fbaae65ff6c718602f596118e2078b835fdc9b"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "8d10a0cb46ee0535302bac548498e658af219f65156af5f825b47251982a0d13"
+      "sha256": "a12f02d1496923f4e866a997dd6f425a4c0eef6bdd329be35a011aa9b69d305b"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "9c9e32003bb0b3061b8f0321e059e895ff714b4fd65281e3dfc2cae9c45ef4b4"
+      "sha256": "dec4dfe7a51a03ce01a01c11054d5695d50faf4f32a0b847a2bd8a38d7258e73"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "20398acc0f6947ce7a9d8341df52573712597ab2c77652d4112c7b95ca0ffaed"
+      "sha256": "d77befb4613ea8de14b2f76b6dffe67f9aa1834d3a247a2dea795bc08ebd3094"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "40012667c1f2b854d7f25fe4a3f957b14df4da9a88a17efdec0a83bd9079f782"
+      "sha256": "e36a623b0d49c6d9f519572dc82114534abf7c41a96ee16ef5c3314c4735c9f2"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "063b69218379dd39e3e8210b9991fa2834c97222cb04ef5ce0959b781b803fa3"
+      "sha256": "4a537f680996193972afc89c33ba57887ff768938aa9c0739770fcab06d973cf"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "11435d106da15b3b8da6f1ce7dddbc3071c3b0b92e04f008895d90e61e7ba671"
+      "sha256": "b38824ce9d567c46ac55fc138f70001f971775562e4ec4feccd04abf6c6334ce"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8adf47ef947d6a5c7a05fc1951877bfbd8c5acddb7288f996bf339be94521a1b"
+      "sha256": "41fbfedbe8efd4d1bdbe20c8fbd0cc4b3627cb7ea37cfc83e09c9e7654faf10d"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "849766d30514a17a49ad179411d5a985e710e8f0effab12233800239c9d3e53f"
+      "sha256": "684c917afaabec77ba9729d7f2d4f5a04b4203842138feeb64eae0893e8bee43"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "eecfd4abcc5478eeb3b9fb39e9d25a0b4bcbbab05c13ef8c0dd814a7ef12a120"
+      "sha256": "052239527e4751c43ef0c7bf891d35edc0635b8fcd420f9771b1c318009c65b8"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "0831b721ecc1dd885ea1bc9668b57ed4d3cde055ca88977dbfa9efc9ec47209f"
+      "sha256": "d04cff78fa9c338968fbb7d7e4177cd4ab5574993555511ae8dde01dd8cb520d"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "053f6f3535584de836fff095e915626736e41560c85ba52e82b3574c9af9defb"
+      "sha256": "4ed12f650175aec74f94cf4b89cfa6b479f3e6fa363dcb9936ed311ab56d3681"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f7cbbceeebf159fa2d0328bbb3071c94c6987dc016a26b41596a9fa8668feb2d"
+      "sha256": "691ae684b1a85c34845d3ee6903ac89922378bf4decde09002b87806aca455c4"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -160,7 +188,7 @@
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "d64d591b7141288e04ff7450dfa1aa7b028fdeee62cd13ceeea9726b435b8923"
+      "sha256": "3d153f20010f562930c78f40a08da94234f210600623251ca433e49d377daa57"
     },
     {
       "path": "geometry/green_space.geojson",
@@ -178,7 +206,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8335e773d4fcb78e9c637cfef78e810e8dce5ee8299276673a3d9729831c6b70"
+      "sha256": "9247dba26bedce8a567ed7af528498df27fd90ad6193d66b109cdd674d6a1e8a"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -210,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5e7c9fc3323351c5e4bb8d4c80ae56da20a75d8d5331e3fb26010ce1e04b0111"
+      "sha256": "42a549bc321ea65610f34a3343828ebd1ff65a644c02bb53498fdc9652b473bd"
     },
     {
       "path": "report/proposal.en.html",
@@ -218,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a6a4fc5c92e61bcc72459f2be89183839c2366ae4b1c1717218793fcc16686aa"
+      "sha256": "45f63e469075f3edd9598791287a04ae40eb34148cd9705b3ee822ac9197e7ee"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -226,7 +254,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "c94dbe815016bafde096b8f584836af68b09c4e0684e500eaaa5b4c0ec559db7"
+      "sha256": "c0bd04db0f9200393121a6b3672c06a0861815563e78332d506989900fcf963a"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -234,7 +262,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "d5bd1e1cb5d25d6aae210f194eb45ee137e606dfe785593ffcd1368cab51a3f7"
+      "sha256": "626a58e28119f78b8565943d1380b5c0ead1ca51a920af3bb74c5705c87d062f"
     },
     {
       "path": "visual/index.en.html",
@@ -242,7 +270,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "17ff3bc014e3511df92ca8b7312428e4c04ec5c236a6c54441bafba8257b1c5d"
+      "sha256": "8c342cf4183f599ea7f00ecf6c52da29ac3c25ea1b7ff2cb149f5221698ea56e"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -250,7 +278,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "8bfb20369f9774c6bd3194487c8882d5d6455199ffe28ed35a3e1bb6f99a4c9a"
+      "sha256": "79bdb385bdeae1c2e3274612460a03b322801086d324dd7f8ad7beebf760ec3f"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -258,7 +286,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "55f458f83a0102893c7bb05327448ee6fcde41cc558700a9d665a04c894b19fe"
+      "sha256": "68100ed7d4bc1f6e870034764ecf31b2727d13ba3d988fb168af209c38995268"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -266,7 +294,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "0d5d3b039c0df4ec31bea2114d0994b82d6c29d28bcdeeeda52a552f0cebc421"
+      "sha256": "a4bc47152176571ef4d0164a1755bb85417868287c36d16e9bce9e3db2f6c112"
     },
     {
       "path": "assets/figures/ecosystem-map.png",
@@ -334,7 +362,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "e688af4b5cf4c8a4589523f2ec77da815e4450b4d3e58cd70c02d8134b3a63c4"
+      "sha256": "bfb17d198ec4844c1edd6287a9b1bddfda8d1471cb5bb790f7264f5da9750080"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -349,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "c9f0320b1b9cf7cf8221a49b83532b3d886e83821d5fe25b6c0198cdbb856110"
+      "sha256": "e740cfb3062bf1d55cb69d3141c40f1c925bb960973df05dcfacf7ad9b8b3d0d"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -431,7 +459,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "09894fe51e629375b0b7d8ca3bc7bdc3f0f02b9a109de48eebff9a44aff23936"
+      "sha256": "032268178e245b39236eea00aa4e8f1febfcfceaba1a76708181022fe08ab5de"
     },
     {
       "path": "assets/figures/handover-scene.en.jpg",
@@ -439,23 +467,23 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/handover-scene.jpg",
-      "sha256": "30a1f9514905af6906b4b2468c3c7f1d5fc38655cb134100b6d9dde06b2b19a8"
+      "sha256": "c358eb19a247239224cddd6e406bc9b4d06ab72725489b356aed273cd1784553"
     },
     {
       "path": "assets/media/cover.png",
       "role": "media_poster",
       "required": false,
-      "sha256": "5e0a3af92209385e9b26f42f7a02a46a877f47351867f8cefa20fa362bd40399",
+      "sha256": "b90d94fb5cd0d8037246b28f3ab96178bdd6c1e9f3618f82eedb1d7f1b39ab3d",
       "title_zh": "京张交接线 · 画廊封面",
       "title_en": "Jing-Zhang Handover Line · gallery cover",
-      "description_zh": "程序化绘制的画廊封面：标识、方案判据、以及取自 site_boundary/key_areas/roads 的真实走廊轮廓。本图只使用 OFL 字体（Noto Sans CJK SC / Noto Sans），不加载任何专有字体，也不含生成式图像素材。",
-      "description_en": "Programmatically drawn gallery cover: the mark, the scheme's criterion, and the real corridor outline taken from site_boundary/key_areas/roads. This image uses only OFL fonts (Noto Sans CJK SC / Noto Sans), loads no proprietary font, and contains no generative image material."
+      "description_zh": "画廊封面，由两层合成：背景层是参与者以文字提示词调用图像模型 gpt-image-2 生成的走廊轴测插画（未向模型提供任何参考图片、照片、地图或既有作品；提示词写死纸面 #f1ecdf、煤黑 #161918、信号红 #e24a3b、绿廊 #a9c6a6、支线蓝 #3b6486 的调色板，并明令画面内不得出现任何文字、字母、数字、标识或水印，人物一律为无面部特征的中性剪影）；前景层是标识、方案判据与取自 site_boundary/key_areas/roads 的真实走廊轮廓，由本机程序化绘制，全部文字只使用 OFL 字体（Noto Sans CJK SC / Noto Sans），不加载任何专有字体。生成方式与权利依据见 sources.json#IMAGEGEN-COVER-ILLUSTRATION 与 manifest.json#rights_inventory 的generated_illustration 一类，三处同文。",
+      "description_en": "Gallery cover composited from two layers. The background layer is an axonometric corridor illustration generated by the participants from a text prompt using the image model gpt-image-2 (no reference image, photograph, map or existing work was supplied to the model; the prompt fixed the palette to paper #f1ecdf, coal #161918, signal red #e24a3b, greenway #a9c6a6 and branch blue #3b6486, and forbade any text, letters, digits, marks or watermarks in the image, with all figures as featureless neutral silhouettes). The foreground layer — the mark, the scheme's criterion, and the real corridor outline taken from site_boundary/key_areas/roads — is drawn programmatically on this machine, and all type uses only OFL fonts (Noto Sans CJK SC / Noto Sans) with no proprietary font loaded. The production method and rights basis are in sources.json#IMAGEGEN-COVER-ILLUSTRATION and the generated_illustration class of manifest.json#rights_inventory; all three records now read the same."
     },
     {
       "path": "assets/media/audio-guide.md",
       "role": "transcript",
       "required": false,
-      "sha256": "ebadb9fa3670d19fc8d7dc97bba06a0117631556ae035e96ec0bcae3e65c0591"
+      "sha256": "a591eee8f9057c9aa8f49a5c895f3a06778c910b946cbc030c4156711e98ca03"
     },
     {
       "path": "assets/media/audio-guide.vtt",
@@ -479,7 +507,7 @@
       "path": "assets/media/audio-guide-en.md",
       "role": "transcript",
       "required": false,
-      "sha256": "5f6991291d5789a1703c7ccd716d285f49a0fc6ac0b3c43edee080cb8373f68f"
+      "sha256": "e88b48819317e5430c23d5c680aebb1bca2d41762fb3536ffed2317a264abca0"
     },
     {
       "path": "assets/media/audio-guide-en.vtt",
@@ -523,7 +551,7 @@
       "path": "assets/media/guided-tour.md",
       "role": "transcript",
       "required": false,
-      "sha256": "d1362e71ab128efe39dbd839b07f836a283e155d9bd4be1b76d1bf9bb7a40927",
+      "sha256": "24111973b325463ad6938b06ed901ed600f0a29f709529453065e0eadc28cf41",
       "title_zh": "三分钟导览视频文字稿与分镜（中文）",
       "title_en": "Guided-tour transcript and shot list (Chinese)",
       "description_zh": "逐句文字稿，外加九段分镜表：写明每一段配的是哪张图件、为什么配它。",
@@ -533,7 +561,7 @@
       "path": "assets/media/guided-tour-en.md",
       "role": "transcript",
       "required": false,
-      "sha256": "2251cb42e3087ff4fe228deefa18ba32c33355ae795500fb718c097981a720d4",
+      "sha256": "74d02c1a79d2768bd3f344dc623d6e3f8e01d29ebbf0d17025bc1c96ad852d8b",
       "title_zh": "三分钟导览视频文字稿与分镜（英文）",
       "title_en": "Guided-tour transcript and shot list (English)",
       "description_zh": "英文版文字稿与分镜表。",
@@ -610,17 +638,17 @@
       "path": "visual/assets/governance/measurement-protocol.json",
       "role": "governance_specification",
       "required": false,
-      "sha256": "79fd9a20d08d302ea53768c769b688c382d7f16aef0a3b67d456fb67b6f37f3b"
+      "sha256": "1bc7fedf71cb9a0eaff3ca84224ce4a5e18d155de08ec33e7f87756e37493b21"
     },
     {
       "path": "visual/assets/public-handover-table-3d.json",
       "role": "visualization",
       "required": false,
-      "sha256": "bb6b133d3b7a5ceaa48c9759a9f0ceeaba89abb726b571cda3e4cb71a281cdca",
+      "sha256": "dc5fc5841a9f0bde87e258162cddf3dc01795adb78002e0773d78ce4a42f8a02",
       "title_zh": "公开交接桌 · 三维关系模型（base64 封装 STL，含重建参数与自校验哈希）",
       "title_en": "Public Handover Table · 3D relation model (base64-wrapped STL with rebuild parameters and self-verifying hash)",
-      "description_zh": "任务书表达完整度点名「视频/声音、三维或交互网页」，本文件补上三维这一类。**它是关系模型不是施工模型**：正文写明这张桌子的位置、尺寸、材料、无障碍净宽与桌面高度须依现场测绘与无障碍规范确定、本方案不预设数字，因此模型一律使用无量纲相对单位，只表达四段的顺序、相邻关系与共同在场，**任何按本文件推算的实际尺寸都是误用**。顺序不可调换是这张桌子的全部主张，模型把它做成几何事实：四段沿同一轴线相接，交出位有四个版本卡插槽、接入位有单个判定牌位、未决栏是唯一高出台面的竖板，**人工窗口在最外端且是唯一落地的一段**——撤除时这一段不撤。144 个三角面，binary STL 以 base64 内嵌，附 sha256 供解码后自校验。",
-      "description_en": "The taskbook's expression-completeness clause names video/sound, three-dimensional or interactive web form; this file supplies the three-dimensional kind. **It is a relation model, not a construction model**: the proposal states that this table's position, size, material, accessible clear width and worktop height must be set by site survey and accessibility codes and that no figure is assumed, so the model uses dimensionless relative units and expresses only the order, adjacency and simultaneous presence of the four segments — **any real dimension derived from it is a misuse**. That the order cannot be swapped is the whole claim of the table, and the model makes it a geometric fact: the four segments meet along one axis; the hand-out station carries four version-card slots, the take-in station a single verdict plate, the open-items board is the only element rising above the worktop, and **the human counter is outermost and the only segment reaching the ground** — the segment that stays when the rest is removed. 144 triangles, binary STL embedded as base64 with a sha256 for post-decode verification.",
+      "description_zh": "任务书表达完整度点名「视频/声音、三维或交互网页」，本文件补上三维这一类。**它是关系模型不是施工模型**：**建议尺寸在正文里给、不在模型里给**：《三处交接场的场所尺度》一节给出两块台面各面宽 1.2 m、进深 0.6 m、中间 0.4 m 空档（合计 2.8 × 0.6 m，落在 1.0 m 退线余量内）；桌面高度与无障碍净宽仍须依现行规范由专业方核定。模型因此一律使用无量纲相对单位，只表达四段的顺序、相邻关系与共同在场，**任何按本文件推算的实际尺寸都是误用**。顺序不可调换是这张桌子的全部主张，模型把它做成几何事实：四段沿同一轴线相接，交出位有四个版本卡插槽、接入位有单个判定牌位、未决栏是唯一高出台面的竖板，**人工窗口在最外端且是唯一落地的一段**——撤除时这一段不撤。144 个三角面，binary STL 以 base64 内嵌，附 sha256 供解码后自校验。",
+      "description_en": "The taskbook's expression-completeness clause names video/sound, three-dimensional or interactive web form; this file supplies the three-dimensional kind. **It is a relation model, not a construction model**: **recommended dimensions are given in the proposal, not in the model**: \"Place-Scale Design of the Three Handover Grounds\" gives two counter tops each 1.2 m wide and 0.6 m deep with a 0.4 m gap (2.8 × 0.6 m in total, inside the 1.0 m setback slack); worktop height and accessible clear width must still be verified by professionals against current accessibility codes. The model therefore uses dimensionless relative units and expresses only the order, adjacency and simultaneous presence of the four segments — **any real dimension derived from it is a misuse**. That the order cannot be swapped is the whole claim of the table, and the model makes it a geometric fact: the four segments meet along one axis; the hand-out station carries four version-card slots, the take-in station a single verdict plate, the open-items board is the only element rising above the worktop, and **the human counter is outermost and the only segment reaching the ground** — the segment that stays when the rest is removed. 144 triangles, binary STL embedded as base64 with a sha256 for post-decode verification.",
       "language": "neutral"
     }
   ],
@@ -630,5 +658,96 @@
     "data_confidence": "mixed_provisional_and_conceptual",
     "readiness_contract": "persisted-self-check-v1"
   },
-  "cover_image": "assets/media/cover.png"
+  "cover_image": "assets/media/cover.png",
+  "rights_inventory": {
+    "notice_zh": "逐资产权利清单。全部资产的权利人均为本包参与者；许可文本以 license.author_grant_zh/en 为准，冲突时按 license.precedence_zh 判定。第三方成分一栏全为「无」，本包据此作出直接授权。",
+    "notice_en": "Per-asset rights inventory. The rights holder for every asset is the package participants; the licence text is license.author_grant_zh/en, and conflicts are decided by license.precedence_en. Every third-party cell reads none, which is what allows the direct grant.",
+    "assets": [
+      {
+        "asset_class": "raster_figures",
+        "label_zh": "栅格图件",
+        "count": 26,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由 geometry/*.geojson 与 metrics.json 程序化渲染",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无：字形按 OFL 栅格化为像素，包内不分发字体文件",
+        "verification_zh": "manifest.json#files[].sha256 逐文件比对"
+      },
+      {
+        "asset_class": "drawing_pdfs",
+        "label_zh": "图纸 PDF",
+        "count": 4,
+        "rights_holder": "package_participants",
+        "production_method_zh": "同批渲染产物排版合成",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "中文嵌入 OFL 字体子集；拉丁为 PDF 基础十四款；无第三方图像或版式",
+        "verification_zh": "pdffonts 看嵌入列 + sha256"
+      },
+      {
+        "asset_class": "narrative",
+        "label_zh": "正文与译稿",
+        "count": 2,
+        "rights_holder": "package_participants",
+        "production_method_zh": "人工撰写，机器校验双语结构",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无",
+        "verification_zh": "行号三项对齐检查 + sha256"
+      },
+      {
+        "asset_class": "geometry",
+        "label_zh": "几何图层",
+        "count": 9,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由公告文字与面积校核推演，EPSG:4548",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无：未使用商业地图、OSM 或新闻图",
+        "verification_zh": "spatial_review gate + sha256"
+      },
+      {
+        "asset_class": "structured",
+        "label_zh": "结构化文件",
+        "count": 11,
+        "rights_holder": "package_participants",
+        "production_method_zh": "人工编写，脚本校验",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无",
+        "verification_zh": "四道 gate + sha256"
+      },
+      {
+        "asset_class": "offline_pages",
+        "label_zh": "离线网页",
+        "count": 2,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由 proposal.md 渲染加手写版式",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无外部资源，grep -c 'https?://' 为 0",
+        "verification_zh": "断网打开 + sha256"
+      },
+      {
+        "asset_class": "generated_illustration",
+        "label_zh": "模型生成插画",
+        "count": 1,
+        "rights_holder": "package_participants",
+        "production_method_zh": "由参与者以文字提示词调用图像模型 gpt-image-2 生成，未提供任何参考图片、照片、地图或既有作品作为输入；仅用作 assets/media/cover.png 的背景层，封面文字另由本机 OFL 字体渲染。见 sources.json#IMAGEGEN-COVER-ILLUSTRATION。",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无：未向模型提供任何第三方图片、地图、商标或受保护版式；画面人物为无面部特征的剪影，不涉及肖像权。",
+        "verification_zh": "封面文字字形与图件、PDF 同源（Noto OFL），可 1:1 放大核对；提示词与不可复现性已登记在 sources.json#IMAGEGEN-COVER-ILLUSTRATION。"
+      },
+      {
+        "asset_class": "media_tactile",
+        "label_zh": "音视频与触觉件",
+        "count": 15,
+        "rights_holder": "package_participants",
+        "production_method_zh": "本机语音合成、程序化字幕与矢量制版",
+        "licence_text_location": "manifest.json#license.author_grant_zh",
+        "third_party_content_zh": "无真人音色、无肖像、无第三方素材",
+        "verification_zh": "字幕与正文同源比对 + sha256"
+      }
+    ],
+    "hash_coverage": {
+      "files_declared": 83,
+      "files_with_sha256": 82,
+      "note_zh": "manifest.json 自身不自哈希，因此带 sha256 的条目数比声明条目数少 1。"
+    }
+  }
 }

@@ -192,6 +192,45 @@
         text-decoration-thickness: 2px;
         text-underline-offset: 3px;
       }
+      .proof-candidate-strip {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin: 22px 0;
+      }
+      .proof-candidate-strip article {
+        background: #fff;
+        border: 1px solid #d8dbd4;
+        border-top: 6px solid var(--green);
+        border-radius: 16px;
+        padding: 18px;
+      }
+      .proof-candidate-strip article:nth-child(2) { border-top-color: var(--gold); }
+      .proof-candidate-strip article:nth-child(3) { border-top-color: var(--red); }
+      .proof-candidate-strip strong { display: block; font-size: 20px; }
+      .proof-candidate-strip p { margin: 7px 0 0; }
+      .expert-quick-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+        gap: 10px;
+        margin: 18px 0 10px;
+      }
+      .expert-quick-grid article {
+        background: #f3f5f0;
+        border-left: 4px solid var(--ink);
+        padding: 12px 14px;
+      }
+      .expert-quick-grid strong { display: block; margin-bottom: 5px; }
+      .expert-risk-line {
+        margin: 0 0 18px;
+        padding: 12px 14px;
+        border: 1px solid #d8dbd4;
+        border-left: 6px solid var(--red);
+        background: #fff;
+      }
+      @media (max-width: 760px) {
+        .proof-candidate-strip { grid-template-columns: 1fr; }
+      }
       footer {
         background: var(--ink);
         color: #dce5e9;
@@ -213,6 +252,7 @@
         }
       }
     </style>
+    <link rel="stylesheet" href="assets/spatial-atlas.css" />
     <link rel="stylesheet" href="assets/review-walkthrough.css">
     <link rel="stylesheet" href="assets/round17-reading.css">
     <link rel="stylesheet" href="assets/public-signal-interface.css">
@@ -227,39 +267,58 @@
       <p>
         The continuous ordinary track carries daily life; the intermittent proof track appears only as a voluntary, announced and accountable side layer: VERIFY / CO-CREATE / PUBLISH, stop on failure, restore ordinary life first.
       </p>
-      <p><strong>Reality now:</strong> all twelve existing scenes remain G0. Field tests, approvals, GO decisions, real failures, and restoration acceptances are 0. Provisional geometry and <code>not_fully_cleared</code> rights remain unchanged.</p>
+      <p><strong>Why Haidian:</strong> Haidian's density of innovation becomes public capability only when ordinary people can still use, question, and exit without an account, device, or professional identity. This is the social reason for Twin-Track Jing-Zhang, not a second brand or a claim about achieved outcomes.</p>
     </header>
     <main>
       <section id="jury-entry" class="jury-entry" aria-labelledby="jury-entry-title">
-        <p class="tag">30-SECOND ENTRY · G0 · THREE SEPARATE FRAMES · NOT TO SCALE</p>
-        <h2 id="jury-entry-title">Twin-Track Jing-Zhang: ordinary life stays continuous; proof appears beside it</h2>
+        <p class="tag">30-SECOND ENTRY · WHY HAIDIAN · SAME ORDINARY TASK · THREE SOCIAL-SPATIAL ROLES</p>
+        <h2 id="jury-entry-title">Twin-Track Jing-Zhang: turn innovation density into public capability through a complete ordinary path</h2>
+        <p class="entry-lead"><strong>One concept:</strong> the continuous civic track first secures entry, expression, movement, rest, help, and exit; the intermittent proof track is only a voluntary, bounded, stoppable side overlay. University research, enterprise services, daily life, and the heritage park meet here, but this raises design questions rather than proving real group effects or service outcomes.</p>
         <figure class="hero-visual">
           <img src="../assets/media/twin-track-cover.webp" alt="Twin-Track Jing-Zhang concept cover showing a continuous ordinary track through three public spaces, an intermittent proof track beside it, verify, co-create, publish, and a failure stop." loading="eager" />
           <figcaption>Concept display asset · G0 · provisional geometry · not to scale · not an existing condition, approval or built outcome</figcaption>
         </figure>
-        <p id="cold-read-proof-boundary" class="entry-lead"><strong>One concept:</strong> the continuous ordinary track keeps the ordinary task complete, while the intermittent proof track is a voluntary, bounded and stoppable side overlay: Zhongzhiyuan VERIFY, Origin Community CO-CREATE, Dazhongsi PUBLISH. <strong>One boundary:</strong> the proposal remains G0 with provisional geometry; clarity is not site precision.</p>
+        <div class="proof-candidate-strip" aria-label="Five possible exclusion thresholds and the ordinary path">
+          <article><strong>Account and device threshold</strong><p>The same ordinary task remains complete through a physical entry and paper information without registration, QR code, terminal, or AI.</p></article>
+          <article><strong>Jargon and time threshold</strong><p>People may speak, use screen-free expression, and reach staff; understanding jargon or waiting for an experiment is not an entry condition.</p></article>
+          <article><strong>Algorithmic-decision threshold</strong><p>People may refuse, question, exit, and reach a person; refusing proof cannot reduce ordinary service.</p></article>
+        </div>
+        <div class="proof-candidate-strip" aria-label="Three non-interchangeable social-spatial roles">
+          <article><strong>Origin · define first</strong><p>Ordinary people define the problem by speech, paper, or screen-free means before technical proof enters.</p></article>
+          <article><strong>Zhongzhiyuan · compare</strong><p>The ordinary/non-AI baseline and proof increment are read together, with a physical stop edge and restoration route.</p></article>
+          <article><strong>Dazhongsi · hand over</strong><p>Explanation, refusal, staffed handoff, and source correction precede professional publication or retained NO-GO.</p></article>
+        </div>
+        <div id="cold-read-proof-boundary" class="notice"><strong>G0 evidence boundary:</strong> one T-02 synthetic governance replay is complete at 10/10, 4/4, and 13/13; real service, accepted duty, approval, failure, and restoration acceptance remain 0. The existing <code>JZ-05 × SCENE-011 × T-02</code> set is only an editorial-review candidate. Everything remains G0 / NO-GO, provisional, and <code>not_fully_cleared</code>.</div>
+        <div class="expert-quick-grid" aria-label="Five expert quick judgements">
+          <article><strong>1 · Single concept</strong>Twin-Track Jing-Zhang: ordinary life stays continuous; G0 proof is intermittent, adjacent and stoppable.</article>
+          <article><strong>2 · Why Haidian</strong>Innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity.</article>
+          <article><strong>3 · Current proof</strong>T-02 proves fixed synthetic contract replay only: 10/10, 4/4 and 13/13.</article>
+          <article><strong>4 · Current blockers</strong>Official boundaries, controls, rights, real same-task parity, accepted professional duty, approval and field evidence remain open; material gaps keep NO-GO.</article>
+          <article><strong>5 · Professional start</strong>The sole entry is <code>#review-handoff</code>; D01–D08 replace inputs, H01–H07 remain unsubmitted and P01–P07 are suggested discipline types only.</article>
+        </div>
+        <p class="expert-risk-line"><strong>Decision-grade risk:</strong> policy, spatial, implementation and operations are the highest blocker group. See <a href="../risk.json"><code>risk.json</code></a> for all eight notes, mitigations and human reviews. Scores are editorial G0 priorities, not probabilities, review grades or maturity advancement.</p>
         <div class="reading-lanes" aria-label="Three reading depths">
           <article class="reading-lane"><strong>30 seconds</strong><p>Recognize one concept and one boundary first: twin tracks, three prototypes, failure siding and provisional geometry.</p><a class="reading-lane-action" href="#cold-read-proof-boundary">Check concept and boundary here →</a></article>
-          <article class="reading-lane"><strong>3 minutes</strong><p>Start with ordinary life, then follow the four-state journey, three places, public signals and professional handoff.</p><a class="reading-lane-action" href="#ordinary-life">Start with ordinary life →</a></article>
+          <article class="reading-lane"><strong>3 minutes</strong><p>Start with the same ordinary task, then read four states, three places, public signals, and the G0 evidence boundary.</p><a class="reading-lane-action" href="#ordinary-life">Start with ordinary life →</a></article>
           <article class="reading-lane"><strong>15 minutes</strong><p>Enter through professional handoff, then trace each object to D01–D08, H01–H07, rights, sources and recalculation triggers.</p><a class="reading-lane-action" href="#review-handoff">Start with evidence and handoff →</a></article>
         </div>
         <details class="entry-evidence">
-          <summary>Open the three-frame site evidence and provisional-boundary note</summary>
-          <p class="figure-scroll-hint">On small screens, scroll within the figure; the three cards below provide an equivalent text reading.</p>
-        <figure class="core-figure-scroll" tabindex="0" aria-label="Figure 01: three-frame site reading; horizontally scrollable">
-          <img src="../assets/figures/site-overview.en.png" alt="Twin-Track Jing-Zhang three-frame site reading separating published background orientation, the provisional design container, and design relationships, with civic timetable and permanent public rights." loading="eager" />
-          <figcaption>Figure 01 · The frames must not be merged into a real-site map. Background is not survey; the provisional container is not an official redline; design relationships are not coordinates or an approval sequence.</figcaption>
+          <summary>Open the conceptual spatial relay and provisional-boundary note</summary>
+          <p class="figure-scroll-hint">On small screens, scroll within the figure; the three truth cards below provide an equivalent boundary reading.</p>
+        <figure class="core-figure-scroll" tabindex="0" aria-label="Figure 01: Twin-Track Jing-Zhang civic-ground structure; horizontally scrollable">
+          <img src="../assets/figures/site-overview.en.png" alt="One continuous civic-ground spine and six cross-links connect Zhongzhiyuan parallel bypass, Origin Community one-street/two-court, and Dazhongsi four-way commute prototypes; side proof, staffed handoff, and failure objects stay off the ordinary path." loading="eager" />
+          <figcaption>Figure 01 · This is a provisional relational structure plan, not a precise site masterplan; civic ground, cross-links, prototypes and failure objects prove no official alignment, approval or construction.</figcaption>
         </figure>
         <div class="truth-frames" aria-label="Three-frame truth contract">
-          <article class="truth-frame"><strong>A · Background orientation</strong><p>Published reports generate field questions only; they prove no as-built condition, access, capacity, rights, or exact alignment.</p></article>
-          <article class="truth-frame"><strong>B · Provisional container</strong><p><code>PROV-SITE-001</code> and the three <code>PROV-KEY</code> objects support concept organization and intake checks only.</p></article>
-          <article class="truth-frame"><strong>C · Design relationships</strong><p>Task relay, adjacent proof, staffed handover, stop, restoration, and exit only; no coordinate, distance, or build sequence.</p></article>
+          <article class="truth-frame"><strong>A · Haidian relation</strong><p>Published material places innovation, communities, public service, and the heritage park in one design discussion; it proves no group effect.</p></article>
+          <article class="truth-frame"><strong>B · Twin-track order</strong><p>The ordinary task is complete before proof sits beside it; this is a design contract, not a field accessibility or service result.</p></article>
+          <article class="truth-frame"><strong>C · Three duties</strong><p>Define, compare, and hand over do not interchange; stopping proof and restoring ordinary use are not approval, authorization, or G1.</p></article>
         </div>
           <div id="cold-read-spatial-unknowns" class="notice"><strong>Unresolved; do not silently redraw:</strong> the existing OSM background check records 0% overlap and about 412.5 metres separation, but cannot determine an official boundary; <code>PROV-KEY-003</code> remains unanchored to Dazhongsi station, a road, parcel, or building. This round does not shift geometry. A further maintainer background record (2026-08-14) reads the four announcement-named street centrelines and finds the registered boundary edge 533–898 m to the east (mean about 667 m); it is background only — no reverse upgrade and no scoring block. Structured contract: <a href="assets/site-grounding-register.json"><code>JZ-SITE-READING-R17</code></a>.</div>
         </details>
       </section>
       <nav class="primary-nav" aria-label="Primary jury navigation">
-        <a href="#jury-entry">01 Twin-track</a><a href="#ordinary-life">02 Ordinary life</a><a href="#four-state-motion">03 Four states</a><a href="#areas">04 Three places</a><a href="#public-signal-interface">05 Public signals</a><a href="#review-handoff">06 Handoff</a>
+        <a href="#jury-entry">01 Twin-track civic ground</a><a href="#ordinary-life">02 Ordinary life</a><a href="#spatial-atlas">03 Civic-ground atlas</a><a href="#areas">04 Three prototypes</a><a href="#four-state-motion">05 Four states</a><a href="#review-handoff">06 Professional handoff</a>
       </nav>
       <details class="evidence-index"><summary>Open the full 15-minute evidence library</summary><div class="evidence-links"><a href="#review-handoff">Professional handoff</a><a href="#accessible-review-walk">Accessible offline walk</a><a href="#twin-track">Twin-track plan</a><a href="#non-ai-first">Non-AI first</a><a href="#maintenance">Maintenance loop</a><a href="#metabolism">Urban metabolism</a><a href="#failure-governance">Failure governance</a><a href="#climate-resilience">Climate resilience</a><a href="#first-test">First test</a><a href="#baseline">Built baseline</a><a href="#time-museum">Time Museum</a><a href="#mission-economy">Public Mission Economy</a><a href="#civic-operations">Year-round operations</a><a href="#overview">Overall structure</a><a href="#system">Back-stage JZ-AIOS</a><a href="#scope">Three scopes</a><a href="#scenario">AI scenarios</a><a href="#mobility">Ordinary route</a><a href="#building">Buildings</a><a href="#projects">Renewal projects</a><a href="#metrics">Metric evidence</a><a href="#coverage">Task coverage</a><a href="#check">Checks</a><a href="#rights">Rights evidence</a><a href="#sources">Sources and assumptions</a></div></details>
       <section id="ordinary-life" class="ordinary-life" aria-labelledby="ordinary-life-title">
@@ -275,20 +334,17 @@
         </div>
         <details><summary>Generation, rights and machine evidence</summary><p><a href="../assets/media/ordinary-life-scenes.md">Bilingual long description and generation/rights disclosure</a> · <a href="assets/ordinary-life-media-register.json">ordinary-life media register</a> · <a href="assets/non-ai-parity-contract.json">same-task non-AI contract</a></p></details>
       </section>
-      <section id="four-state-motion" class="jury-motion" data-motion-root aria-labelledby="motion-title">
-        <p class="tag">JURY MOTION · USER STARTED · 48 S · SILENT · G0</p>
-        <h2 id="motion-title">One ordinary task: ordinary → proof → failure → recovery</h2>
-        <p>The same continuous ordinary track remains visible while only the side proof layer appears, stops and isolates, then becomes a recovery candidate. Each state lasts 12 seconds and the sequence totals 48 seconds as <strong>interface pacing, not real recovery time</strong>. It never autoplays and starts only from the button.</p>
-        <div class="motion-track" aria-hidden="true"><span class="civic-rail"></span><span class="proof-rail"></span><span class="motion-marker" data-motion-marker></span><span class="failure-spur"></span></div>
-        <div class="motion-states">
-          <article data-motion-state><span>01</span><h3>Ordinary</h3><p>Civic track, screen-free information, and staffed service are available; proof is off.</p></article>
-          <article data-motion-state><span>02</span><h3>Proof</h3><p>Voluntary, announced, bounded; the same-task non-AI control remains beside it.</p></article>
-          <article data-motion-state><span>03</span><h3>Failure / stop</h3><p>Automation stops and staff take over; people bypass, ask, or leave.</p></article>
-          <article id="cold-read-recovery-boundary" data-motion-state><span>04</span><h3>Recovery</h3><p>Restore the ordinary route and service first; otherwise stay G0 or retire.</p></article>
+      <section id="spatial-atlas" class="spatial-atlas-entry" aria-labelledby="spatial-atlas-title">
+        <p class="tag">3-MINUTE SPATIAL ENTRY · G0 · PROVISIONAL RELATIONS · NOT TO SCALE</p>
+        <h2 id="spatial-atlas-title">One ordinary task, held by three different spatial relations</h2>
+        <p class="atlas-lead">Read one continuous civic ground above, then descend into three different relations: parallel bypass and proof court, resident street and two courts, and commute cross with off-route service. Ordinary non-AI access, staffed handoff, and safe exit stay first.</p>
+        <figure><img src="../assets/figures/spatial-atlas.en.png" alt="Nested civic-ground atlas: one continuous ground links three task nodes; Zhongzhiyuan uses parallel bypass and proof court, Origin uses one street, two courts and four withdrawals, and Dazhongsi keeps a clear commute cross with off-route hall and staffed desk." /><figcaption>Figure 03 · Overall—prototype—human-scale relationship only. Provisional forms prove no site registration, built condition, accessibility result, staffing, approval or recovery duration.</figcaption></figure>
+        <div class="atlas-answer-grid">
+          <article><h3>Zhongzhiyuan · parallel bypass</h3><p>The proof court and equipment edge can stop; H remains beside the court, and recovery returns first to the named bypass-and-court relation.</p></article>
+          <article><h3>Origin Community · one street, two courts</h3><p>Four nodes can withdraw independently; H uses paper or spoken handoff off the resident street, and recovery returns to the street and courts.</p></article>
+          <article><h3>Dazhongsi · four-way commute</h3><p>Source, screen, or publishing service stops off-route; H sits at a two-entry desk, and recovery returns first to source record and off-route service.</p></article>
         </div>
-        <div class="motion-controls" aria-label="Four-state motion controls"><button type="button" data-motion-toggle>Start 48-second journey</button><button type="button" data-motion-reset>Reset</button><span aria-live="polite" data-motion-live>Paused at 01 Ordinary</span></div>
-        <div class="motion-progress" aria-hidden="true"><span data-motion-progress></span></div>
-        <p class="review-boundary"><strong>Static alternative:</strong> the four cards above are the complete transcript and remain readable without JavaScript. With reduced motion enabled, the control advances one discrete state at a time. Real incidents, recovery duration, rosters, acceptance, and GO decisions remain 0 or unknown. Structured backlink: <a href="assets/jury-motion-journey.json"><code>jury-motion-journey.json</code></a>.</p>
+        <p class="atlas-boundary"><strong>Boundary:</strong> failure stops only a proof or service overlay; ordinary life and the complete non-AI route continue. Recovery is not authorisation, approval, G1, or restart; real outcomes, duration, staffing, and acceptance remain 0 or unknown.</p>
       </section>
       <section id="areas" class="front-stage-areas" aria-labelledby="areas-title">
         <p class="tag">ONE PUBLIC BASELINE · THREE DIFFERENT SPATIAL COMPOSITIONS</p>
@@ -300,8 +356,123 @@
         </div>
         <p class="figure-scroll-hint">On mobile, scroll only inside the labelled figure containers; use the three statements above to identify the relations before checking the figures.</p>
         <figure class="core-figure-scroll" tabindex="0" aria-label="Three differentiated concept plans; horizontally scrollable"><img src="../assets/figures/key-areas.en.png" alt="Zhongzhiyuan separates a parallel ordinary bypass and proof court; Origin Community joins two courts and four nodes to one resident street; Dazhongsi separates a four-way commuter cross from off-route service." /><figcaption>Concept plans · G0 · provisional geometry · not to scale</figcaption></figure>
-        <figure class="core-figure-scroll" tabindex="0" aria-label="Three differentiated relationship sections and four states; horizontally scrollable"><img src="../assets/figures/key-area-sections.en.png" alt="The three places respectively stop an upper proof court, independent nodes, or an off-route service side; ordinary paths remain continuous and recovery restores each ordinary place first." /><figcaption>Relationship sections and four states · dimensions, materials, connections, specialist checks and real recovery time remain unknown</figcaption></figure>
+        <figure class="core-figure-scroll" tabindex="0" aria-label="Three differentiated ground-threshold sections; horizontally scrollable"><img src="../assets/figures/key-area-sections.en.png" alt="Three ground-threshold sections distinguish ordinary bypass versus proof court, resident street versus two courts, and commute datum versus off-route service, with separate stop objects, staff positions and restoration objects." /><figcaption>Ground-threshold sections · dimensions, materials, connections, specialist findings and real recovery time remain unknown</figcaption></figure>
         <details><summary>Open the full three-place comparison and limits</summary><p><a href="#areas-evidence">Read the ordinary task, staffed handoff, failure object, restoration object and missing-input comparison</a>. The figures prove no existing building, station anchor, facility, approval or built outcome.</p></details>
+      </section>
+      <section id="four-state-motion" class="jury-motion" data-motion-root aria-labelledby="motion-title">
+        <p class="tag">JURY MOTION · USER STARTED · 48 S · SILENT · G0</p>
+        <h2 id="motion-title">One ordinary task: ordinary → proof → failure → recovery</h2>
+        <p>The same continuous ordinary track remains visible while only the side proof layer appears, stops and isolates, then becomes a recovery candidate. Each state lasts 12 seconds and the sequence totals 48 seconds as <strong>interface pacing, not real recovery time</strong>. It never autoplays and starts only from the button.</p>
+        <div class="motion-track" aria-hidden="true"><span class="civic-rail"></span><span class="proof-rail"></span><span class="motion-marker" data-motion-marker></span><span class="failure-spur"></span></div>
+        <div class="motion-states">
+          <article data-motion-state><span>01</span><h3>Ordinary</h3><p>Civic track, screen-free information, and staffed service are available; proof is off.</p></article>
+          <article data-motion-state><span>02</span><h3>Proof</h3><p>Voluntary, announced, bounded; the same-task non-AI control remains beside it.</p></article>
+          <article data-motion-state><span>03</span><h3>Failure / stop</h3><p>Automation stops and staff take over; people bypass, ask, or leave.</p></article>
+          <article id="cold-read-recovery-boundary" data-motion-state><span>04</span><h3>Recovery</h3><p>Restore the ordinary route and service first; material closure does not authorize restart, approval, or G1; otherwise stay G0 or retire.</p></article>
+        </div>
+        <div class="motion-controls" aria-label="Four-state interface-pacing controls"><button type="button" data-motion-toggle>Play 48-second interface pacing</button><button type="button" data-motion-reset>Reset</button><span aria-live="polite" data-motion-live>Static display: 01 Ordinary</span></div>
+        <div class="motion-progress" aria-hidden="true"><span data-motion-progress></span></div>
+        <p class="review-boundary"><strong>Static alternative:</strong> the four cards above are the complete transcript and remain readable without JavaScript. With reduced motion enabled, the control advances one discrete state at a time. Real incidents, recovery duration, rosters, acceptance, and GO decisions remain 0 or unknown. Structured backlink: <a href="assets/jury-motion-journey.json"><code>jury-motion-journey.json</code></a>.</p>
+      </section>
+      <div class="notice" id="four-state-media">
+        <strong>Four-state motion and narration (multimodal, never autoplays):</strong>
+        The video combines one MiniMax H3 generation master, package-local figures and deterministic bilingual overlays as a G0 concept rendering. Every building, person, cultural frame and marker is synthetic, <em>not</em> a real site, building, crowd or already-built condition.
+        It persistently states <code>G0 concept · provisional geometry · not site evidence · not approved</code>; 48 seconds are presentation pacing only.
+        ZH/EN WebVTT, a dedicated poster, the 43.344-second Chinese narration and the bilingual transcript remain lockstep companions.
+        Rights and machine audit: <code>visual/assets/rights-clearance-ledger.json#ASSET-150..155</code>.
+      </div>
+      <figure>
+        <video controls preload="none" playsinline width="100%" poster="../assets/media/4-state-motion-poster.webp">
+          <source src="../assets/media/4-state-motion.mp4" type="video/mp4" />
+          <track kind="captions" src="../assets/media/4-state-narration.en.vtt" srclang="en" label="English narration captions" default />
+          <track kind="captions" src="../assets/media/4-state-narration.vtt" srclang="zh" label="中文旁白字幕" />
+          Your browser does not support HTML5 video; download <a href="../assets/media/4-state-motion.mp4">4-state-motion.mp4</a> directly (about 3.03 MiB).
+        </video>
+        <figcaption>Four-state spatial-motion video · exactly 48.000 s · 1920×1080 · H3 concept master + package relation diagrams + deterministic bilingual overlays · not a site, built condition or approval · never autoplays · persistent in-frame G0 / provisional / not-evidence disclosure</figcaption>
+      </figure>
+      <figure>
+        <audio controls preload="none">
+          <source src="../assets/media/4-state-narration.mp3" type="audio/mpeg" />
+          Your browser does not support HTML5 audio; download <a href="../assets/media/4-state-narration.mp3">4-state-narration.mp3</a> directly (about 0.66 MB).
+        </audio>
+        <figcaption>
+          Chinese four-state narration audio · 43.344 s · paired with
+          <a href="../assets/media/4-state-narration.en.vtt">English .vtt</a> / <a href="../assets/media/4-state-narration.vtt">中文 .vtt</a> ·
+          <a href="../assets/media/4-state-narration-script.md">written script and generation method / rights / non-provable items</a>
+          · must not autoplay
+        </figcaption>
+      </figure>
+
+
+      <section id="review-handoff">
+        <h2>Review Synthesis and Professional Handoff</h2>
+        <div class="notice">
+          <strong>Review convergence:</strong>
+          read one concept, three prototypes and one kernel; test the six taskbook duties against evidence; then hand D01–D08 real-world gaps to P01–P07 suggested discipline types. This <code>#review-handoff</code> section is the sole 15-minute professional-handoff start; the five-step accessible walk only continues from here and is not a second entry. H01–H07 are unsubmitted handoff/evidence packs, not people, disciplines or accepted duties; only a future competent professional party accepting an exact scope may make a professional disposition within that scope. Review convergence adds no brand, scene, project, geometry or maturity. Any material gap remains NO-GO.
+        </div>
+        <div id="t02-evidence-backlink" aria-labelledby="t02-evidence-backlink-title">
+          <h3 id="t02-evidence-backlink-title">Executable T-02 evidence-backlink example</h3>
+          <p><strong>Separate the objects first:</strong> project item <code>T-02</code> is currently <code>NO-GO</code>; <code>t02-g0-g1</code> is a deterministic governance replay of 10 fixed synthetic cases with result <code>PASS</code>. The latter proves only replay of contract fields, source closure, rule precedence and stop/recovery mapping; it proves no site condition, G1, approval, project passage, accepted professional duty or real non-AI parity.</p>
+          <table tabindex="0">
+            <thead><tr><th scope="col">Backlink step</th><th scope="col">Existing object / state</th><th scope="col">Existing file and JSON pointer</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">1 · Project object</th><td><code>T-02</code> · <code>SCENE-011/012</code> · <code>NO-GO</code></td><td><a href="assets/implementation-handoff-matrix.json"><code>implementation-handoff-matrix.json#/item_handoffs/9</code></a>; spatial backlinks <code>geometry/constraints.geojson#SCENE-011</code> and <code>#SCENE-012</code></td></tr>
+              <tr><th scope="row">2 · Dazhongsi evidence</th><td><code>KAE-003</code> · <code>PROV-KEY-003</code> · scenario nodes include <code>SCENE-011/012</code></td><td><a href="assets/key-area-evidence-matrix.json"><code>key-area-evidence-matrix.json#/records/2</code></a></td></tr>
+              <tr><th scope="row">3 · Two paths to the same task</th><td><code>PARITY-002</code> ↔ <code>SCENE-011</code>; <code>PARITY-005</code> ↔ <code>SCENE-012</code>; both <code>unknown_not_measured</code></td><td><a href="assets/non-ai-parity-contract.json"><code>non-ai-parity-contract.json#/test_journeys/1</code></a> and <a href="assets/non-ai-parity-contract.json"><code>#/test_journeys/4</code></a></td></tr>
+              <tr><th scope="row">4 · Synthetic-replay limit</th><td><code>T02-G0-G1-SYNTHETIC-REPLAY-RESULT-V1</code> · 10/10 exact matches · <code>PASS</code>, synthetic governance replay only</td><td><a href="assets/t02-g0-g1-replay-result.json"><code>t02-g0-g1-replay-result.json#/summary</code></a>, <code>#/proves_en</code>, <code>#/does_not_prove</code>, <code>#/real_world_status</code></td></tr>
+              <tr><th scope="row">5 · Handoff packs</th><td><code>H01–H07</code> all <code>not_submitted</code>; they are not people or accepted duties</td><td><a href="assets/implementation-handoff-matrix.json"><code>implementation-handoff-matrix.json#/handoff_pack_definitions</code></a></td></tr>
+              <tr><th scope="row">6 · Suggested discipline types</th><td><code>P01–P07</code> all <code>suggested_role_type_only</code></td><td><a href="assets/implementation-handoff-matrix.json"><code>implementation-handoff-matrix.json#/professional_discipline_matrix</code></a></td></tr>
+              <tr><th scope="row">7 · Parallel states; no upgrade</th><td><code>G0</code> + <code>NO-GO</code> + <code>unknown_not_measured</code> + <code>not_fully_cleared</code></td><td><a href="assets/review-handoff-index.json"><code>review-handoff-index.json#/t02_evidence_backlink/parallel_status</code></a>; rights source <a href="assets/source-rights-evidence.json"><code>source-rights-evidence.json#/clearance_claim/status</code></a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <section id="package-index" aria-labelledby="package-index-title">
+          <h3 id="package-index-title">Package navigation and review handoff index</h3>
+          <p>Review locating for all 156 package paths lives in <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>. Current counts are 156 manifest/package paths, 155 non-manifest content paths, and 156 file-level rights records. The index provides seven reading routes (30-second / 3-minute / 15-minute, the five-step accessible walk, 21 chapter units, the D01–D08/H01–H07 handoff and the eight-question cold read) plus a per-file registry with five statuses (current / historical snapshot / machine input / frozen / provisional), language pairs, round provenance and rights backlinks; it only locates, creates no evidence and changes no maturity or rights state.</p>
+          <table tabindex="0">
+            <thead><tr><th scope="col">Reading route</th><th scope="col">Entry</th></tr></thead>
+            <tbody>
+              <tr><td>30 seconds: one concept and one boundary</td><td><code>proposal.md</code> one-sentence judgement · cover and three-frame figure</td></tr>
+              <tr><td>3 minutes: one complete non-AI ordinary journey</td><td>This page: <a href="#ordinary-life">ordinary life</a> · <a href="#four-state-motion">four states</a> · <a href="#public-signal-interface">public signals</a></td></tr>
+              <tr><td>15 minutes: per-object verification and evidence library</td><td>Sole professional-handoff start: this page's <a href="#review-handoff">professional handoff</a>; the five-step walk continues from that start</td></tr>
+              <tr><td>D01–D08 / H01–H07 professional handoff</td><td><code>implementation-handoff-matrix.json</code> · <code>field-evidence-intake-contract.json</code> · <code>readiness-closure-contract.json</code></td></tr>
+              <tr><td>Eight-question cold read (editorial review only)</td><td><a href="#cold-read-answer-map">Per-question answer map</a> · <a href="assets/review-handoff-index.json">machine index</a> · A3/A0 pages</td></tr>
+            </tbody>
+          </table>
+          <div id="cold-read-answer-map" aria-labelledby="cold-read-answer-map-title">
+            <h4 id="cold-read-answer-map-title">Eight-question cold-read answer map (editorial review only)</h4>
+            <p>Each question has one front-stage primary answer; A3/A0 pages are equivalent cross-checks only. Cold reading is not public feedback, expert opinion, a jury result or approval. This round adds no new media.</p>
+            <table tabindex="0">
+              <thead><tr><th scope="col">Question</th><th scope="col">Single primary answer</th><th scope="col">Single front-stage entry</th><th scope="col">Print cross-check</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Q1 · Single core concept?</th><td>“Twin-Track Jing-Zhang”: ordinary track continuous, proof track intermittent and adjacent; three prototypes non-interchangeable; everything G0.</td><td><a href="#jury-entry">30-second entry</a></td><td>A3 P1 · A0 P1</td></tr>
+                <tr><th scope="row">Q2 · No registration, QR or AI?</th><td>Yes; physical wayfinding, screen-free information, a complete non-AI/accessibility-intent route, paper or spoken guidance, staffed handoff and exit stand first.</td><td><a href="#ordinary-life">Ordinary life</a></td><td>A3 P8 · A0 P5</td></tr>
+                <tr><th scope="row">Q3 · Why non-interchangeable?</th><td>Zhongzhiyuan: parallel proof court and physical stop; Origin: one street, two courts, four nodes and point withdrawal; Dazhongsi: four-way commute, off-route publishing and staffed desk.</td><td><a href="#areas">Three places</a></td><td>A3 P4–P7 · A0 P3–P4</td></tr>
+                <tr><th scope="row">Q4 · Why no continuous occupation?</th><td>It is a voluntary, announced, bounded, stoppable and removable side task overlay, not coordinates, continuous footprint or construction alignment.</td><td><a href="#cold-read-proof-boundary">Proof-track boundary</a></td><td>A3 P1, P3 · A0 P1</td></tr>
+                <tr><th scope="row">Q5 · What stops and continues?</th><td>Stop and isolate the proof overlay; ordinary track, complete non-AI route, screen-free information, staffed takeover, withdrawal, appeal and safe exit continue.</td><td><a href="#four-state-motion">Four-state journey</a></td><td>A3 P9 · A0 P6</td></tr>
+                <tr><th scope="row">Q6 · Why no upgrade on recovery?</th><td>Recovery first returns the ordinary route, screen-free information, quiet and the same task; acceptance and GO are zero, so an open gap means G0, closed or retired.</td><td><a href="#cold-read-recovery-boundary">Recovery boundary</a></td><td>A3 P9, P13 · A0 P6, P8</td></tr>
+                <tr><th scope="row">Q7 · Which spatial facts remain unknown?</th><td>All site and key-area containers remain provisional; official redlines, alignment, anchors, dimensions, materials, connections and specialist conclusions are unknown.</td><td><a href="#cold-read-spatial-unknowns">Provisional and unknown</a></td><td>A3 P2, P14 · A0 P1, P3–P4</td></tr>
+                <tr><th scope="row">Q8 · Who may recalculate, revise, condition, reject or delete?</th><td>D01–D08 real inputs replace provisional placeholders; H01–H07 are unsubmitted handoff/evidence packs, not people, disciplines or accepted duties; P01–P07 are suggested discipline types only. Only a future competent professional party accepting an exact scope may recalculate, revise, condition, reject or delete within that scope; a major gap keeps NO-GO.</td><td><a href="#review-handoff">Professional handoff</a></td><td>A3 P13–P14 · A0 P7–P8</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="review-limit"><strong>Status labels:</strong> <code>round15-baseline.json</code> is a historical snapshot; <code>t02-g0-g1-replay-fixtures.json</code> is synthetic-replay machine input; all geometry stays provisional with frozen hashes; current counts live in the manifest and rights ledger.</p>
+        </section>
+        <figure>
+          <img src="../assets/figures/review-professional-handoff.en.png" alt="Review synthesis and professional handoff: one concept, three prototypes, one kernel, six duties, eight replacements, seven disciplines and a NO-GO stop line" />
+          <figcaption>The figure is a G0 review index, not official data, professional opinion, accepted duty, approval or implementation evidence.</figcaption>
+        </figure>
+        <div class="grid">
+          <article class="card"><b>Freeze</b><p>Twin-track grammar, three non-interchangeable prototypes, JZ-AIOS, four state axes, seven public rights and existing identifiers.</p></article>
+          <article class="card"><b>Replace</b><p>Provisional geometry, typed placeholders, role types and unverified source/content records; never alter an official or locked layer to preserve the concept.</p></article>
+          <article class="card"><b>Recalculate</b><p>Containment, area, route continuity, annotations, bilingual HTML/PDF, manifest and file-level rights digests together.</p></article>
+          <article class="card"><b>Verify / stop</b><p>Professional conflict, same-task co-test, stop/recovery, independent retest and rights/authorization; a material gap remains NO-GO.</p></article>
+        </div>
+        <table tabindex="0">
+          <thead><tr><th scope="col">Current reality counts</th><th scope="col">First professional action</th><th scope="col">Cannot be substituted</th></tr></thead>
+          <tbody><tr><td>Authoritative replacement inputs 0 · accepted duties 0 · 99 slots submitted 0 · approvals 0 · field tests 0 · GO 0</td><td>Select one existing project or scene and place traceable real evidence into the applicable unsubmitted H01–H07 handoff packs; do not invent a scene ID to bypass a gap.</td><td>Concept diagram ≠ planning decision; green line ≠ access compliance; OSM ≠ boundary/transport; synthetic PASS ≠ field performance; event calendar ≠ duty/budget.</td></tr></tbody>
+        </table>
+         <p><strong>Five local contract entries:</strong> <a href="assets/implementation-handoff-matrix.json">D01–D08 official-input replacement register</a> (key <code>official_data_replacement_register</code>) · <a href="assets/implementation-handoff-matrix.json">P01–P07 suggested-discipline matrix</a> (key <code>professional_discipline_matrix</code>) · <a href="assets/implementation-handoff-matrix.json">H01–H07 unsubmitted handoff-pack definitions</a> (key <code>handoff_pack_definitions</code>) · <a href="assets/field-evidence-intake-contract.json">D01–D08 replacement-packet templates</a> (key <code>replacement_packet_templates</code>) · <a href="assets/readiness-closure-contract.json">closure categories and counts</a> (key <code>closure_categories</code>). An offline browser opens the relevant JSON file and the named key supports in-file search; these entries do not prove submitted evidence, accepted professional duty or completed closure.</p>
       </section>
       <section id="public-signal-interface" class="public-signal-interface" data-signal-interface data-default-area="zhongzhiyuan" data-default-state="ordinary" data-selection-prefix="G0 concept state · " data-carrier-prefix="Concept carrier: " aria-labelledby="public-signal-interface-title">
         <p class="tag">ROUND 18 · G0 DEMONSTRATION · NOT A LIVE SYSTEM</p>
@@ -368,65 +539,12 @@
         <p class="signal-interface-boundary"><strong>Structured backlinks:</strong> <a href="assets/key-area-evidence-matrix.json"><code>key-area-evidence-matrix.json#public_signal_interface_round18</code></a> · <a href="assets/civic-operations-contract.json"><code>civic-operations-contract.json</code></a> · <a href="assets/site-grounding-register.json"><code>site-grounding-register.json#public_signal_interface_round18</code></a>. This interface only makes inherited contracts readable; it adds no scene, project, geometry, facility, roster, approval or real-world result.</p>
       </section>
 
-      <section id="review-handoff">
-        <h2>Review Synthesis and Professional Handoff</h2>
-        <div class="notice">
-          <strong>Review convergence:</strong>
-          read one concept, three prototypes and one kernel; test the six taskbook duties against evidence; then hand D01–D08 real-world gaps to seven professional disciplines. Review convergence adds no brand, scene, project, geometry or maturity. Any material gap remains NO-GO.
-        </div>
-        <section id="package-index" aria-labelledby="package-index-title">
-          <h3 id="package-index-title">Package navigation and review handoff index</h3>
-          <p>Review locating for all 141 package paths lives in <a href="assets/review-handoff-index.json"><code>review-handoff-index.json</code></a>: seven reading routes (30-second / 3-minute / 15-minute, the five-step accessible walk, 21 chapter units, the D01–D08/H01–H07 handoff and the eight-question cold read) plus a per-file registry with five statuses (current / historical snapshot / machine input / frozen / provisional), language pairs, round provenance and rights backlinks. The index only locates; it creates no evidence and changes no maturity or rights state.</p>
-          <table tabindex="0">
-            <thead><tr><th scope="col">Reading route</th><th scope="col">Entry</th></tr></thead>
-            <tbody>
-              <tr><td>30 seconds: one concept and one boundary</td><td><code>proposal.md</code> one-sentence judgement · cover and three-frame figure</td></tr>
-              <tr><td>3 minutes: one complete non-AI ordinary journey</td><td>This page: <a href="#ordinary-life">ordinary life</a> · <a href="#four-state-motion">four states</a> · <a href="#public-signal-interface">public signals</a></td></tr>
-              <tr><td>15 minutes: per-object verification and evidence library</td><td>This page: <a href="#review-handoff">professional handoff</a> · <a href="#accessible-review-walk">five-step walk</a> · index registry</td></tr>
-              <tr><td>D01–D08 / H01–H07 professional handoff</td><td><code>implementation-handoff-matrix.json</code> · <code>field-evidence-intake-contract.json</code> · <code>readiness-closure-contract.json</code></td></tr>
-              <tr><td>Eight-question cold read (editorial review only)</td><td><a href="#cold-read-answer-map">Per-question answer map</a> · <a href="assets/review-handoff-index.json">machine index</a> · A3/A0 pages</td></tr>
-            </tbody>
-          </table>
-          <div id="cold-read-answer-map" aria-labelledby="cold-read-answer-map-title">
-            <h4 id="cold-read-answer-map-title">Eight-question cold-read answer map (editorial review only)</h4>
-            <p>Each question has one front-stage primary answer; A3/A0 pages are equivalent cross-checks only. Cold reading is not public feedback, expert opinion, a jury result or approval. This round adds no new media.</p>
-            <table tabindex="0">
-              <thead><tr><th scope="col">Question</th><th scope="col">Single primary answer</th><th scope="col">Single front-stage entry</th><th scope="col">Print cross-check</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Q1 · Single core concept?</th><td>“Twin-Track Jing-Zhang”: ordinary track continuous, proof track intermittent and adjacent; three prototypes non-interchangeable; everything G0.</td><td><a href="#jury-entry">30-second entry</a></td><td>A3 P1 · A0 P1</td></tr>
-                <tr><th scope="row">Q2 · No registration, QR or AI?</th><td>Yes; physical wayfinding, screen-free information, a complete non-AI/accessibility-intent route, paper or spoken guidance, staffed handoff and exit stand first.</td><td><a href="#ordinary-life">Ordinary life</a></td><td>A3 P8 · A0 P5</td></tr>
-                <tr><th scope="row">Q3 · Why non-interchangeable?</th><td>Zhongzhiyuan: parallel proof court and physical stop; Origin: one street, two courts, four nodes and point withdrawal; Dazhongsi: four-way commute, off-route publishing and staffed desk.</td><td><a href="#areas">Three places</a></td><td>A3 P4–P7 · A0 P3–P4</td></tr>
-                <tr><th scope="row">Q4 · Why no continuous occupation?</th><td>It is a voluntary, announced, bounded, stoppable and removable side task overlay, not coordinates, continuous footprint or construction alignment.</td><td><a href="#cold-read-proof-boundary">Proof-track boundary</a></td><td>A3 P1, P3 · A0 P1</td></tr>
-                <tr><th scope="row">Q5 · What stops and continues?</th><td>Stop and isolate the proof overlay; ordinary track, complete non-AI route, screen-free information, staffed takeover, withdrawal, appeal and safe exit continue.</td><td><a href="#four-state-motion">Four-state journey</a></td><td>A3 P9 · A0 P6</td></tr>
-                <tr><th scope="row">Q6 · Why no upgrade on recovery?</th><td>Recovery first returns the ordinary route, screen-free information, quiet and the same task; acceptance and GO are zero, so an open gap means G0, closed or retired.</td><td><a href="#cold-read-recovery-boundary">Recovery boundary</a></td><td>A3 P9, P13 · A0 P6, P8</td></tr>
-                <tr><th scope="row">Q7 · Which spatial facts remain unknown?</th><td>All site and key-area containers remain provisional; official redlines, alignment, anchors, dimensions, materials, connections and specialist conclusions are unknown.</td><td><a href="#cold-read-spatial-unknowns">Provisional and unknown</a></td><td>A3 P2, P14 · A0 P1, P3–P4</td></tr>
-                <tr><th scope="row">Q8 · Who may revise, reject or delete?</th><td>D01–D08 replace provisional placeholders; H01–H07 may recalculate, revise, reject or delete the concept; a major gap keeps NO-GO.</td><td><a href="#review-handoff">Professional handoff</a></td><td>A3 P13–P14 · A0 P7–P8</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="review-limit"><strong>Status labels:</strong> <code>round15-baseline.json</code> is a historical snapshot; <code>t02-g0-g1-replay-fixtures.json</code> is synthetic-replay machine input; all geometry stays provisional with frozen hashes; current counts live in the manifest and rights ledger.</p>
-        </section>
-        <figure>
-          <img src="../assets/figures/review-professional-handoff.en.png" alt="Review synthesis and professional handoff: one concept, three prototypes, one kernel, six duties, eight replacements, seven disciplines and a NO-GO stop line" />
-          <figcaption>The figure is a G0 review index, not official data, professional opinion, accepted duty, approval or implementation evidence.</figcaption>
-        </figure>
-        <div class="grid">
-          <article class="card"><b>Freeze</b><p>Twin-track grammar, three non-interchangeable prototypes, JZ-AIOS, four state axes, seven public rights and existing identifiers.</p></article>
-          <article class="card"><b>Replace</b><p>Provisional geometry, typed placeholders, role types and unverified source/content records; never alter an official or locked layer to preserve the concept.</p></article>
-          <article class="card"><b>Recalculate</b><p>Containment, area, route continuity, annotations, bilingual HTML/PDF, manifest and file-level rights digests together.</p></article>
-          <article class="card"><b>Verify / stop</b><p>Professional conflict, same-task co-test, stop/recovery, independent retest and rights/authorization; a material gap remains NO-GO.</p></article>
-        </div>
-        <table tabindex="0">
-          <thead><tr><th scope="col">Current reality counts</th><th scope="col">First professional action</th><th scope="col">Cannot be substituted</th></tr></thead>
-          <tbody><tr><td>Authoritative replacement inputs 0 · accepted duties 0 · 99 slots submitted 0 · approvals 0 · field tests 0 · GO 0</td><td>Select one existing project or scene and submit traceable real evidence through H01–H07; do not invent a scene ID to bypass a gap.</td><td>Concept diagram ≠ planning decision; green line ≠ access compliance; OSM ≠ boundary/transport; synthetic PASS ≠ field performance; event calendar ≠ duty/budget.</td></tr></tbody>
-        </table>
-        <p>Structured backlinks: <code>visual/assets/implementation-handoff-matrix.json#review_synthesis</code>, <code>#agent_task_review_crosswalk</code>, <code>#official_data_replacement_register</code>, and <code>#professional_discipline_matrix</code>.</p>
-      </section>
-      <details class="backstage-library">
+
+      <details class="backstage-library" open>
         <summary>Open the 15-minute backstage evidence: contracts, scenes, metrics, rights and sources</summary>
         <div class="backstage-content">
           <section id="accessible-review-walk" class="review-walk-shell" aria-labelledby="review-walk-title"><p class="tag">G0 · OFFLINE · NO ACCOUNT · NO AI REQUIRED</p><h2 id="review-walk-title">Back-stage five-step accessible evidence walk</h2>
-<p>This is the 15-minute evidence-trace entry, not the three-minute front-stage route. Read space—three prototypes—ordinary task—failure/recovery—professional NO-GO; interaction only routes attention, and presentation is not evidence.</p><p class="notice"><strong>STATIC FALLBACK:</strong> Without JavaScript, all five steps, limits and evidence backlinks remain expanded.</p><nav aria-label="Review steps"><ol class="review-step-nav"><li><a data-step-link href="#step-1">1. Separate three frames, then read the twin-track relationship</a></li><li><a data-step-link href="#step-2">2. Compare three non-interchangeable public-space prototypes</a></li><li><a data-step-link href="#step-3">3. Complete an ordinary task without AI first</a></li><li><a data-step-link href="#step-4">4. Follow one ordinary–proof–failure–recovery journey</a></li><li><a data-step-link href="#step-5">5. Hand the concept to real inputs and professional NO-GO</a></li></ol><span class="review-live" aria-live="polite" data-live>1 / 5</span></nav><article class="review-step" id="step-1" data-step aria-labelledby="step-1-title"><p class="review-kicker">1 / 5 · G0</p><h3 id="step-1-title" tabindex="-1">Separate three frames, then read the twin-track relationship</h3><p><strong>Why must the three information frames never become one site-truth map?</strong></p><p>Published background is orientation only, the provisional container organizes intake only, and Twin-Track shows task relay only; they are never co-registered as site truth. The civic track works first, while proof appears only as a voluntary, announced, bounded and accountable side layer.</p><figure><img src="../assets/figures/site-overview.en.png" alt="Three-frame site reading separating published background, the provisional design container and Twin-Track design relationships; no co-registration, scale, official redline or station anchor is claimed." loading="eager"><figcaption>Separate the three frames, then read Twin-Track only inside the design-relationship frame. This G0 diagram proves no continuous occupation, built infrastructure, railway conclusion, station anchor or approval boundary.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> Separate the three frames, then read Twin-Track only inside the design-relationship frame. This G0 diagram proves no continuous occupation, built infrastructure, railway conclusion, station anchor or approval boundary.</p><details><summary>Evidence and limits</summary><ul><li><a href="../geometry/site_boundary.geojson"><code>../geometry/site_boundary.geojson</code></a></li><li><a href="assets/site-grounding-register.json"><code>assets/site-grounding-register.json</code></a></li><li><a href="assets/non-ai-parity-contract.json"><code>assets/non-ai-parity-contract.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><article class="review-step" id="step-2" data-step aria-labelledby="step-2-title"><p class="review-kicker">2 / 5 · G0</p><h3 id="step-2-title" tabindex="-1">Compare three non-interchangeable public-space prototypes</h3><p><strong>Why can the three sites not be copied mechanically?</strong></p><p>Zhongzhiyuan isolates equipment in a parallel proof court with staffed takeover; Origin uses one street, two courts and four individually withdrawable screen-free nodes; Dazhongsi protects four-quadrant walking, one hall and one staffed desk for uninterrupted commuting.</p><figure><img src="../assets/figures/key-areas.en.png" alt="Three non-interchangeable relationship prototypes at Zhongzhiyuan, Origin Community and Dazhongsi; PROV-KEY-003 proves no Dazhongsi station, road, parcel or building location." loading="lazy"><figcaption>Massing, components and locations are conceptual types; PROV-KEY-003 is not a Dazhongsi station-area plan. Dimensions, materials, connections, specialist checks, fire, railway-protection and municipal conclusions remain unknown.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> Massing, components and locations are conceptual types; PROV-KEY-003 is not a Dazhongsi station-area plan. Dimensions, materials, connections, specialist checks, fire, railway-protection and municipal conclusions remain unknown.</p><details><summary>Evidence and limits</summary><ul><li><a href="assets/key-area-evidence-matrix.json"><code>assets/key-area-evidence-matrix.json</code></a></li><li><a href="assets/reversible-component-restoration-register.json"><code>assets/reversible-component-restoration-register.json</code></a></li><li><a href="../geometry/key_areas.geojson"><code>../geometry/key_areas.geojson</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><article class="review-step" id="step-3" data-step aria-labelledby="step-3-title"><p class="review-kicker">3 / 5 · G0</p><h3 id="step-3-title" tabindex="-1">Complete an ordinary task without AI first</h3><p><strong>Can the public complete the same task without registration, scanning or AI?</strong></p><p>Yes. A screen-free entrance, continuous non-AI and accessibility-intent route, staffed station, paper or spoken explanation, and legible exit form the complete primary path. AI remains an optional side overlay.</p><figure><img src="../assets/media/ordinary-life-scenes.webp" alt="Synthetic triptych of residents, children, commuters and staff using the three sites while proof activity stays beside continuous ordinary routes." loading="lazy"><figcaption>This is a synthetic concept image, not a site photograph, confirmed viewpoint, accessibility result, operating evidence or staffing commitment.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> This is a synthetic concept image, not a site photograph, confirmed viewpoint, accessibility result, operating evidence or staffing commitment.</p><details><summary>Evidence and limits</summary><ul><li><a href="assets/non-ai-parity-contract.json"><code>assets/non-ai-parity-contract.json</code></a></li><li><a href="assets/ordinary-life-media-register.json"><code>assets/ordinary-life-media-register.json</code></a></li><li><a href="../assets/media/ordinary-life-scenes.md"><code>../assets/media/ordinary-life-scenes.md</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><article class="review-step" id="step-4" data-step aria-labelledby="step-4-title"><p class="review-kicker">4 / 5 · G0</p><h3 id="step-4-title" tabindex="-1">Follow one ordinary–proof–failure–recovery journey</h3><p><strong>After failure, who stops, who takes over and what permits recovery?</strong></p><p>Physical stop precedes interface messaging. Staffed takeover, isolation and a non-AI bypass preserve the ordinary task. Proof may become a candidate again only after restoration evidence, resident confirmation, maintenance closure and duty review exist.</p><figure><img src="../assets/figures/failure-governance-writeback.en.png" alt="Failure-siding and writeback diagram showing stop, staffed takeover, isolation, ordinary-task continuity, restoration acceptance and evidence writeback." loading="lazy"><figcaption>A synthetic replay PASS proves only that file contracts can be replayed. Real incidents, recovery duration, rosters, site acceptance and GO decisions remain 0 or unknown.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> A synthetic replay PASS proves only that file contracts can be replayed. Real incidents, recovery duration, rosters, site acceptance and GO decisions remain 0 or unknown.</p><details><summary>Evidence and limits</summary><ul><li><a href="assets/failure-governance-register.json"><code>assets/failure-governance-register.json</code></a></li><li><a href="assets/civic-operations-contract.json"><code>assets/civic-operations-contract.json</code></a></li><li><a href="assets/t02-g0-g1-replay-result.json"><code>assets/t02-g0-g1-replay-result.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><article class="review-step" id="step-5" data-step aria-labelledby="step-5-title"><p class="review-kicker">5 / 5 · G0</p><h3 id="step-5-title" tabindex="-1">Hand the concept to real inputs and professional NO-GO</h3><p><strong>What must be replaced, and who may reject the concept?</strong></p><p>D01–D08 real inputs replace provisional geometry, typed placeholders and unverified sources. H01–H07 disciplines recalculate, verify duties, and may revise, reject or delete the concept. Major gaps, unclear rights or harm to ordinary rights retain NO-GO.</p><figure><img src="../assets/figures/review-professional-handoff.en.png" alt="Review and professional handoff map: one concept, three prototypes, one kernel, six duties, eight inputs, seven disciplines and NO-GO." loading="lazy"><figcaption>No file, drawing, machine check, PR review or merge creates a planning judgement, accepted professional duty, site approval, operating result or reuse licence.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> No file, drawing, machine check, PR review or merge creates a planning judgement, accepted professional duty, site approval, operating result or reuse licence.</p><details><summary>Evidence and limits</summary><ul><li><a href="assets/implementation-handoff-matrix.json"><code>assets/implementation-handoff-matrix.json</code></a></li><li><a href="assets/readiness-closure-contract.json"><code>assets/readiness-closure-contract.json</code></a></li><li><a href="assets/rights-clearance-ledger.json"><code>assets/rights-clearance-ledger.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><p class="review-boundary">D01–D08 · H01–H07 · 12 SCENES · 8 PROJECTS · 3 KEY AREAS · 99 CLOSURE SLOTS · G0 · not_fully_cleared · PROFESSIONAL MAY REJECT/DELETE</p></section>
+<p>This five-step tool continues from the sole 15-minute professional-handoff start, <a href="#review-handoff"><code>#review-handoff</code></a>; it is not a second entry. Read space—three prototypes—ordinary task—failure/recovery—professional NO-GO; interaction only routes attention, and presentation is not evidence.</p><p class="notice"><strong>STATIC FALLBACK:</strong> Without JavaScript, all five steps, limits and evidence backlinks remain expanded.</p><nav aria-label="Review steps"><ol class="review-step-nav"><li><a data-step-link href="#step-1">1. Separate three frames, then read the twin-track relationship</a></li><li><a data-step-link href="#step-2">2. Compare three non-interchangeable public-space prototypes</a></li><li><a data-step-link href="#step-3">3. Complete an ordinary task without AI first</a></li><li><a data-step-link href="#step-4">4. Follow one ordinary–proof–failure–recovery journey</a></li><li><a data-step-link href="#step-5">5. Hand the concept to real inputs and professional NO-GO</a></li></ol><span class="review-live" aria-live="polite" data-live>1 / 5</span></nav><article class="review-step" id="step-1" data-step aria-labelledby="step-1-title"><p class="review-kicker">1 / 5 · G0</p><h3 id="step-1-title" tabindex="-1">Separate three frames, then read the twin-track relationship</h3><p><strong>Why must the three information frames never become one site-truth map?</strong></p><p>Published background is orientation only, the provisional container organizes intake only, and Twin-Track shows task relay only; they are never co-registered as site truth. The civic track works first, while proof appears only as a voluntary, announced, bounded and accountable side layer.</p><figure><img src="../assets/figures/site-overview.en.png" alt="Civic-ground structure plan separating one continuous ordinary spine, six cross-links, and three non-interchangeable prototypes; the provisional container claims no official redline, scale, or station anchor." loading="eager"><figcaption>Read continuous civic ground and six cross-links before the three prototypes and side proof. This G0 diagram proves no continuous occupation, built infrastructure, railway conclusion, station anchor or approval boundary.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> Separate the three frames, then read Twin-Track only inside the design-relationship frame. This G0 diagram proves no continuous occupation, built infrastructure, railway conclusion, station anchor or approval boundary.</p><details><summary>Evidence and limits</summary><ul><li><a href="../geometry/site_boundary.geojson"><code>../geometry/site_boundary.geojson</code></a></li><li><a href="assets/site-grounding-register.json"><code>assets/site-grounding-register.json</code></a></li><li><a href="assets/non-ai-parity-contract.json"><code>assets/non-ai-parity-contract.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><article class="review-step" id="step-2" data-step aria-labelledby="step-2-title"><p class="review-kicker">2 / 5 · G0</p><h3 id="step-2-title" tabindex="-1">Compare three non-interchangeable public-space prototypes</h3><p><strong>Why can the three sites not be copied mechanically?</strong></p><p>Zhongzhiyuan isolates equipment in a parallel proof court with staffed takeover; Origin uses one street, two courts and four individually withdrawable screen-free nodes; Dazhongsi protects four-quadrant walking, one hall and one staffed desk for uninterrupted commuting.</p><figure><img src="../assets/figures/key-areas.en.png" alt="Three non-interchangeable relationship prototypes at Zhongzhiyuan, Origin Community and Dazhongsi; PROV-KEY-003 proves no Dazhongsi station, road, parcel or building location." loading="lazy"><figcaption>Massing, components and locations are conceptual types; PROV-KEY-003 is not a Dazhongsi station-area plan. Dimensions, materials, connections, specialist checks, fire, railway-protection and municipal conclusions remain unknown.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> Massing, components and locations are conceptual types; PROV-KEY-003 is not a Dazhongsi station-area plan. Dimensions, materials, connections, specialist checks, fire, railway-protection and municipal conclusions remain unknown.</p><details><summary>Evidence and limits</summary><ul><li><a href="assets/key-area-evidence-matrix.json"><code>assets/key-area-evidence-matrix.json</code></a></li><li><a href="assets/reversible-component-restoration-register.json"><code>assets/reversible-component-restoration-register.json</code></a></li><li><a href="../geometry/key_areas.geojson"><code>../geometry/key_areas.geojson</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><article class="review-step" id="step-3" data-step aria-labelledby="step-3-title"><p class="review-kicker">3 / 5 · G0</p><h3 id="step-3-title" tabindex="-1">Complete an ordinary task without AI first</h3><p><strong>Can the public complete the same task without registration, scanning or AI?</strong></p><p>Yes. A screen-free entrance, continuous non-AI and accessibility-intent route, staffed station, paper or spoken explanation, and legible exit form the complete primary path. AI remains an optional side overlay.</p><figure><img src="../assets/media/ordinary-life-scenes.webp" alt="Synthetic triptych of residents, children, commuters and staff using the three sites while proof activity stays beside continuous ordinary routes." loading="lazy"><figcaption>This is a synthetic concept image, not a site photograph, confirmed viewpoint, accessibility result, operating evidence or staffing commitment.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> This is a synthetic concept image, not a site photograph, confirmed viewpoint, accessibility result, operating evidence or staffing commitment.</p><details><summary>Evidence and limits</summary><ul><li><a href="assets/non-ai-parity-contract.json"><code>assets/non-ai-parity-contract.json</code></a></li><li><a href="assets/ordinary-life-media-register.json"><code>assets/ordinary-life-media-register.json</code></a></li><li><a href="../assets/media/ordinary-life-scenes.md"><code>../assets/media/ordinary-life-scenes.md</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><article class="review-step" id="step-4" data-step aria-labelledby="step-4-title"><p class="review-kicker">4 / 5 · G0</p><h3 id="step-4-title" tabindex="-1">Follow one ordinary–proof–failure–recovery journey</h3><p><strong>After failure, who stops, who takes over and what permits recovery?</strong></p><p>Physical stop precedes interface messaging. Staffed takeover, isolation and a non-AI bypass preserve the ordinary task. Proof may become a candidate again only after restoration evidence, resident confirmation, maintenance closure and duty review exist.</p><figure><img src="../assets/figures/failure-governance-writeback.en.png" alt="Failure-siding and writeback diagram showing stop, staffed takeover, isolation, ordinary-task continuity, restoration acceptance and evidence writeback." loading="lazy"><figcaption>A synthetic replay PASS proves only that file contracts can be replayed. Real incidents, recovery duration, rosters, site acceptance and GO decisions remain 0 or unknown.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> A synthetic replay PASS proves only that file contracts can be replayed. Real incidents, recovery duration, rosters, site acceptance and GO decisions remain 0 or unknown.</p><details><summary>Evidence and limits</summary><ul><li><a href="assets/failure-governance-register.json"><code>assets/failure-governance-register.json</code></a></li><li><a href="assets/civic-operations-contract.json"><code>assets/civic-operations-contract.json</code></a></li><li><a href="assets/t02-g0-g1-replay-result.json"><code>assets/t02-g0-g1-replay-result.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><article class="review-step" id="step-5" data-step aria-labelledby="step-5-title"><p class="review-kicker">5 / 5 · G0</p><h3 id="step-5-title" tabindex="-1">Hand the concept to real inputs and professional NO-GO</h3><p><strong>What must be replaced, and who may reject the concept?</strong></p><p>D01–D08 real inputs replace provisional geometry, typed placeholders and unverified sources. H01–H07 are unsubmitted handoff/evidence packs, not people, disciplines or accepted duties; P01–P07 are suggested discipline types only. Only a future competent professional party accepting an exact scope may recalculate, revise, condition, reject or delete the concept within that scope. Major gaps, unclear rights or harm to ordinary rights retain NO-GO.</p><figure><img src="../assets/figures/review-professional-handoff.en.png" alt="Review and professional handoff map: one concept, three prototypes, one kernel, six duties, eight inputs, seven disciplines and NO-GO." loading="lazy"><figcaption>No file, drawing, machine check, PR review or merge creates a planning judgement, accepted professional duty, site approval, operating result or reuse licence.</figcaption></figure><p class="review-limit"><strong>BOUNDARY:</strong> No file, drawing, machine check, PR review or merge creates a planning judgement, accepted professional duty, site approval, operating result or reuse licence.</p><details><summary>Evidence and limits</summary><ul><li><a href="assets/implementation-handoff-matrix.json"><code>assets/implementation-handoff-matrix.json</code></a></li><li><a href="assets/readiness-closure-contract.json"><code>assets/readiness-closure-contract.json</code></a></li><li><a href="assets/rights-clearance-ledger.json"><code>assets/rights-clearance-ledger.json</code></a></li></ul></details><div class="review-controls"><button type="button" data-prev>Previous</button><button type="button" data-next>Next</button></div></article><p class="review-boundary">D01–D08 · H01–H07 · 12 SCENES · 8 PROJECTS · 3 KEY AREAS · 99 CLOSURE SLOTS · G0 · not_fully_cleared · FUTURE COMPETENT PARTY · ACCEPTED SCOPE ONLY · MAY REJECT/DELETE</p></section>
       <section id="twin-track">
         <h2>Twin-track Jing-Zhang: the front-stage spatial master plan</h2>
         <div class="notice">
@@ -579,7 +697,7 @@
           the continuous ordinary route, shade and reachable-rest intent, static non-AI notice, manual inspection, and stormwater/ecological-maintenance clear zone form the complete daily service first. AI-assisted prompting and the Xiaoyue River observation wing remain only a future possibly approved, intermittent, refusible, stoppable, removable overlay. The wing is a concept relationship—not an exact riverbank site, existing building, statutory setback, or built facility.
         </div>
         <figure>
-          <img src="../assets/figures/climate-resilience-corridor.en.png" alt="Climate-resilience proof corridor plan and section showing ordinary blue-green route, shade and rest, static notice, manual inspection, stormwater and ecological-maintenance clear zone, optional AI prompt, removable observation edge, and a four-state vulnerable-group journey" />
+          <img src="../assets/figures/climate-resilience-corridor.en.png" alt="Seasonal civic-ground section layering ordinary quiet use, shade and planting, stormwater ecology, staffed maintenance clearance and a removable proof edge, followed by ordinary–optional–stop–restore states" />
           <figcaption>G0 concept contract: field measures 0, devices 0, real prompts 0, confirmed duties 0, restoration receipts 0. The diagram creates no hydraulic, thermal-comfort, accessibility, approval, or maturity conclusion.</figcaption>
         </figure>
         <div class="grid">
@@ -884,7 +1002,7 @@
         <figure>
           <img
             src="../assets/figures/land-use-structure.en.png"
-            alt="Thirty-six package-level functional envelopes and three spatial duties; not statutory parcels, exact locations or development controls"
+            alt="Thirty-six concept envelopes form two irregular fronts along one civic-ground spine, organized by six cross-links and three ground-level duties; not statutory parcels, exact locations or development controls"
           />
         </figure>
       </section>
@@ -913,18 +1031,20 @@
         <figure>
           <img
             src="../assets/figures/key-areas.en.png"
-            alt="Differentiated switchyard concept plans, ground-floor public interfaces, continuous non-AI paths, and four-step public journeys"
+            alt="Three differentiated concept plans: Zhongzhiyuan parallel bypass and proof garden, Origin one street, two courts and four withdrawals, and Dazhongsi four-way commute with off-route service"
           />
         </figure>
         <figure>
           <img
             src="../assets/figures/key-area-sections.en.png"
-            alt="Differentiated switchyard relationship sections, ordinary proof fault recovery states, and place-restoration acceptance"
+            alt="Three differentiated ground-threshold sections showing stop objects, staff positions, ordinary spaces and restoration objects"
           />
         </figure>
         <p>
-          Both drawings use one reading order: draw ordinary use first, then add
-          a stoppable service overlay. The green path remains continuous;
+          The drawings have different jobs: plans establish each ordinary spatial
+          skeleton before locating side proof, staffed handoff, node withdrawal
+          and off-route service; sections show ground, thresholds, stop objects,
+          staff positions and restoration objects. The green path remains continuous;
           activity, queues, equipment, and cables cannot occupy it.
           All three retain the 22:00–07:00 quiet gate: testing, amplification,
           and events have no priority, while ordinary paths, screen-free
@@ -935,9 +1055,7 @@
           every restoration status is <code>unknown / not executed</code>.
         </p>
         <div class="notice">
-          <strong>Drawing entry and evidence boundary:</strong> plans,
-          relationship sections, ground-floor prototypes, and four states are
-          not to scale; massing is not an existing-building record, and concept
+          <strong>Drawing entry and evidence boundary:</strong> plans and ground-threshold sections are not to scale; massing is not an existing-building record, and concept
           acceptance is not site approval. Exact boundaries, survey/as-built,
           ownership, fire, railway protection, municipal, accessibility, and
           operations evidence are unavailable; field audits, role confirmations,
@@ -996,7 +1114,7 @@
           <article class="card"><h3>Ordinary</h3><p>Physical wayfinding, screen-free staying, continuous accessibility intent, and staffed explanation work independently first.</p></article>
           <article class="card"><h3>Proof</h3><p>Only a future optional, time-bounded, accountable, removable overlay outside the route is shown; no authorized window is proved.</p></article>
           <article class="card"><h3>Fault</h3><p>Stop and isolate the overlay while staffed explanation and the ordinary bypass continue; the basic task must not close.</p></article>
-          <article class="card"><h3>Recovery</h3><p>Remove the overlay and restore the place first; remain at G0, stay stopped, or retire if independent review does not close.</p></article>
+          <article class="card"><h3>Recovery</h3><p>Remove the overlay and restore the place first; remain at G0, stay stopped, or retire if independent review does not close; even closure does not authorize restart, approval, or G1.</p></article>
         </div>
         <p>
           Zhongzhiyuan protects its bypass through equipment isolation, Origin Community protects resident life through consent withdrawal, and Dazhongsi protects commuting and staffed service through source correction. Real photographs, confirmed viewpoints, field observations, approved components, operational interactions, accessibility results, and restoration results remain 0. The image cannot establish location, scale, material, shift, construction, operation, or approval. Structured backlink: <code>ordinary-life-media-register.json</code>.
@@ -1190,7 +1308,7 @@
         <figure>
           <img
             src="../assets/figures/mobility-bluegreen.en.png"
-            alt="Relationship diagram prioritizing ordinary movement and maintenance clearance before optional proof; no exact blue-green network location is shown"
+            alt="One continuous civic-ground network with six relational cross-links and three interfaces above; human-scale ordinary walk, ecology, staffed maintenance, removable proof and restoration layers below; no precise alignment"
           />
         </figure>
       </section>
@@ -1648,7 +1766,7 @@
         </p>
       </section>
 
-    <section id="reversible-assemblies"><h2>Three reversible assembly and restoration packs</h2><p>Six stages link before-install evidence, pre-opening checks, ordinary use, stop/isolate, remove/exit and restore/accept into one stoppable chain. The sites share review grammar, not composition. All professional fields remain unknown; real installations and acceptances remain 0.</p><figure><img src="../assets/figures/reversible-components.en.png" alt="Three reversible assembly and restoration packs"><figcaption>G0 · TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE = UNKNOWN · D01-D08 + H01-H07 · not_fully_cleared</figcaption></figure><p><a href="assets/reversible-component-restoration-register.json">reversible-component-restoration-register.json</a> · Professionals may revise, reject or delete the concept.</p></section>
+    <section id="reversible-assemblies"><h2>Three reversible assembly and restoration packs</h2><p>Six stages link before-install evidence, pre-opening checks, ordinary use, stop/isolate, remove/exit and restore/accept into one stoppable chain. The sites share review grammar, not composition. All professional fields remain unknown; real installations and acceptances remain 0.</p><figure><img src="../assets/figures/reversible-components.en.png" alt="Distinct reversible actions: remove Zhongzhiyuan enclosure and kit, Origin nodes and court inserts, and Dazhongsi off-route hall and desk while ordinary paths remain"><figcaption>G0 · TYPE / DIMENSION / MATERIAL / CONNECTION / SPECIALIST CLEARANCE = UNKNOWN · D01-D08 + H01-H07 · not_fully_cleared</figcaption></figure><p><a href="assets/reversible-component-restoration-register.json">reversible-component-restoration-register.json</a> · Only a future competent professional party accepting an exact scope may recalculate, revise, condition, reject or delete the affected concept within that scope.</p></section>
     <section id="field-evidence-intake"><p class="tag">EMPTY INTAKE · ZERO FIELD DATA · NO MATURITY UPGRADE</p><h2>Field evidence intake and replacement entry</h2><p><strong>A template is not evidence.</strong> D01-D08 all remain <code>not_collected</code>; real artifacts, field values, professional acceptances, approvals and completed route walks are all 0. Future material must state source, time/version, scope, custody, rights/privacy, hash, what it proves and what it cannot prove.</p><figure><img src="../assets/figures/field-evidence-intake.en.png" alt="Field evidence intake map showing ordinary baseline, eight empty packets, custody, professional disposition and three differentiated future routes."><figcaption>Accepted for recalculation is not approval; any major gap remains NO-GO.</figcaption></figure><div class="grid"><article class="card"><strong>Zhongzhiyuan</strong><p>Equipment isolation, physical stop, staffed takeover, before-state and restoration receipt.</p></article><article class="card"><strong>Origin Community</strong><p>Screen-free same task, consent withdrawal, safeguarding, de-identified group gaps and daily life.</p></article><article class="card"><strong>Dazhongsi</strong><p>Four-way peak continuity, count denominator, source version, off-route release and correction.</p></article></div><div class="notice">PR #2266 contributes public disposition method only; no name, composition, geometry, metric, figure or provisional claim is imported. <a href="assets/field-evidence-intake-contract.json">Read the structured empty contract</a>.</div></section>
       <section id="sources">
         <h2>Sources and assumptions</h2>

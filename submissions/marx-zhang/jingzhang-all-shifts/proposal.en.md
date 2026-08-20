@@ -54,7 +54,7 @@ The building rule is “identify before classifying”: retain and open safe, va
 
 ## Detailed Design of Key Areas
 
-The three Shift Yards share one ethic and distinct roles; provisional polygons are only concept locators [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design].
+The three Shift Yards share one ethic and distinct roles; provisional polygons are only concept locators [depth:three_key_area_detailed_design]. Their north–south order and announced areas organise the working pack but do not anchor a station, road, title, or four-quadrant extent. In particular, `PROV-KEY-003` has not been location-verified against Dazhongsi Station or an official road polygon, so “Dazhongsi Exchange Yard” names a concept role, not the formal extent of the station intersection [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-003] [source:KEY-AREA-LOCATION-REVIEW].
 
 ![Three Shift Yards](assets/figures/key-areas.en.png)
 
@@ -180,6 +180,18 @@ To avoid “scenarios without operating evidence”, this upgrade gives the thre
 
 The pack replaces an “efficiency” narrative with five evidence dimensions: access and accessibility; human handover and appeal; data minimisation; labor and safety; and public continuity. Missing staffed access, an access blockage, personal scoring, emotion recognition, covert tracking, automated punishment, a production connection, or a failed safety condition pauses or removes the activity. The complete bilingual run cards and audit fields are in `report/three-area-operations-audit.en.md` and its counterpart; they are working templates awaiting site verification [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:operations_audit_dimension_count].
 
+## Service Equivalence and Switchback Adoption (Optional Crosswalk)
+
+This package connects SEB v0.5.0 and Switchback Protocol v0.3.0 to the existing G0–G4 working pack as an **optional protocol crosswalk**. They make “service continues when AI is off”, “who takes over”, and “when to pause or switch back” reviewable as fields. They do not constitute official adoption by the organisers, government or a professional body, and no conceptual scene in this package claims an SEB L0–L4 open level [source:SEB-V050-ISSUE] [source:SWITCHBACK-V030-ISSUE] [data:visual/assets/three-area-operations-audit.json#protocol_adoption].
+
+| External field / meaning | Local placement | Adoption boundary |
+| --- | --- | --- |
+| SEB `node_schema` (including five required fields) | Future nodes declare an AI-off/no-scan/paper/cash equivalent route, a findable duty role, a G0–G3 gate and non-production mode | Field semantics only; empty `constraints.geojson` is not a node layer and no coverage result is claimed |
+| Switchback `status` / `gate` / `ascent_grade` | `green_candidate`=fields complete/approval pending; a gated pilot enters yellow only after G2; safety, accessibility, staffed-service or data failure is red and switches back | Local G0–G4 is not external G0–G3 or L0–L4; paper G0 never claims an open level |
+| Switchback `public_review_cycle_days` / `review_options` | A 90-day reversible pilot and quarterly handover audit use renew / reduce / pause / switch_back | Five minutes, 1/7 working days and 90 days are design targets pending verification, not measured results or commitments |
+
+Versions, snapshot commits, SHA-256 values and licence boundaries are in `visual/assets/three-area-operations-audit.json` and `sources.json`; all three areas remain `concept_only`, and protocol fields cannot replace G1, G3 or G4 decisions [source:SEB-V050-ISSUE] [source:SWITCHBACK-V030-ISSUE] [metric:operations_audit_gate_count].
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 | Persona | Core needs |
@@ -224,7 +236,7 @@ A five-question gate tests safety, heritage/community value, accessibility, low-
 
 The Shift Commons Spine is a complete night-time walking–cycling–rail support chain: even lighting, visible crossings, sheltered stops, accessible guidance, night-transit information, Shift Stations and staffed help [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]. It is not a road-redline or signal plan.
 
-Infrastructure is maintenance-first: public equipment ownership and duty are visible, edge processing uses minimum necessary data, and every civic AI system has a physical human button and published shutdown state [depth:municipal_new_infrastructure] [data:geometry/constraints.geojson#CONSTRAINTS]. Cash, staffed, paper and voice channels remain available.
+Infrastructure is maintenance-first: public equipment ownership and duty are visible, edge processing uses minimum necessary data, and every civic AI system has a physical human button and published shutdown state [depth:municipal_new_infrastructure] [standard:GENERATIVE-AI-INTERIM-MEASURES]. Cash, staffed, paper and voice channels remain available. The constraints layer is intentionally empty because no reviewable official controls for planning, heritage, parcels, roads/rail or utilities have been supplied; this section submits no constraint geometry and draws no statutory conclusion from an empty layer [source:SOURCE-REGISTRY] [depth:municipal_new_infrastructure].
 
 ![Round-the-clock mobility, blue-green and support network](assets/figures/mobility-bluegreen.en.png)
 

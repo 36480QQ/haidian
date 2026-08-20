@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "激励相容 (Incentive Compatibility)",
+  "core_claim_zh": "机制设计核心：让'回授文化'成为占优策略——AI 节点只有在有动机回授时才会真正回授。",
+  "core_claim_en": "Mechanism design core: make 'giving back to culture' the dominant strategy.",
+  "incentive_mechanisms": [
+    {
+      "rule_zh": "回授物被使用获得展示位优先",
+      "mechanism_zh": "回授物使用量达标（地图取用/参观人次），获得更优展示位；使用量低被降级或迁址",
+      "dominance_zh": "回授物被使用的展示收益 > 不回授的成本，回授成为占优策略"
+    },
+    {
+      "rule_zh": "回授物登记获得合规认证",
+      "mechanism_zh": "登记回授物的节点获得'文化合规认证'标识；未登记节点无认证",
+      "dominance_zh": "认证带来的信任收益 > 登记成本，回授成为占优策略"
+    },
+    {
+      "rule_zh": "使用验证公开",
+      "mechanism_zh": "回授物使用量公示，未回授节点可被任何人核查",
+      "dominance_zh": "不回授被发现的成本 > 回授的成本，回授成为占优策略"
+    }
+  ],
+  "field_status": "not_authorized_not_run"
+}

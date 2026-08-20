@@ -84,6 +84,10 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/site-overview.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/spatial-atlas.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/spatial-atlas.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/spatial-atlas.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/spatial-atlas.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/urban-metabolism-ledger.png",
@@ -92,6 +96,12 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/year-round-civic-operations.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/4-state-motion-poster.webp",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/4-state-motion.mp4",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/4-state-narration-script.md",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/4-state-narration.en.vtt",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/4-state-narration.mp3",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/4-state-narration.vtt",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/ordinary-life-scenes.md",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/ordinary-life-scenes.webp",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/media/twin-track-cover.webp",
@@ -120,6 +130,7 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/report/narrative.md",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/report/proposal.en.html",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/report/proposal.html",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/risk.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/self_check.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/sources.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/standard_matrix.json",
@@ -154,6 +165,10 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/site-grounding-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/source-rights-evidence.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/source-rights-evidence.schema.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/spatial-atlas-baseline.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/spatial-atlas-contract.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/spatial-atlas-terminology.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/spatial-atlas.css",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/submission-use-rights-matrix.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/t02-g0-g1-replay-fixtures.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/t02-g0-g1-replay-result.json",
@@ -164,7 +179,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 34675968,
+      "total_bytes": 41336652,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -256,7 +271,7 @@
           "source": 50,
           "standard": 6,
           "depth": 15,
-          "data": 79,
+          "data": 81,
           "metric": 80
         }
       }

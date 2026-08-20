@@ -7,12 +7,43 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the Jingzhang Railway Heritage Park as an intelligent spine, linking three innovation vertebrae — Zhongzhiyuan AI Acceleration Area, Beijing AI Origin Community, and Dazhongsi AI Industry Cluster — to construct an AI-native urban form of 'One Spine, Three Vertebrae, Two Wings Extended, Blue-Green Slow-Mobility Composite Loop,' responding to the fusion narrative of the century-old Jingzhang culture, the Zhongguancun innovation culture, and the new AI culture."
-tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem", "civic-agent-governance"]
+tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v1.0"
 ---
 
 # AI Spine · Jingzhang AI Innovation Belt — Intelligent Rebirth of a Century-Old Railway
+
+## Read Me in Three Minutes
+
+**Core concept in one sentence**: Treat the Jingzhang Railway Heritage Park as an "AI Spine," linking three differentiated "innovation vertebrae" from north to south — Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi — and answering how century-old Jingzhang culture, Zhongguancun innovation culture, and new AI culture converge in one real urban district through a "One Spine, Three Vertebrae, Two Wings Extended, Blue-Green Slow-Mobility Composite Loop" spatial structure.
+
+**Answers to the five questions reviewers care about most**:
+
+1. **What is the proposal?** Not another "AI park" concept, but an innovation spine with clear spatial placement — using the already-open Jingzhang Heritage Park Phase 2 as its real-world carrier, stitching three differentiated key districts (autonomous innovation origin, open-source outcome conversion, industry convergence and international exchange) into one continuous urban experience belt through slow-mobility systems and public space.
+
+2. **How does it get implemented?** Near-term (1-2 years), mid-term (2-5 years), and long-term (5+ years) phasing. The near term only runs lightweight, reversible pilots (slow-mobility breakpoint stitching, Qing River innovation interface, near-campus conversion street), each with entry conditions, acceptance gates, and rollback conditions. Rail integration and landmark construction are deferred to the mid-term, pending formal regulatory plan confirmation.
+
+3. **Who benefits?** Not only AI enterprises and developers. The proposal explicitly covers transition-period protection for elderly, disabled, low-income residents, and small merchants; all AI scenarios retain human service windows and non-digital alternatives; community AI education points are open free of charge.
+
+4. **How is AI integrated?** All 12 scenario cards specify data source, privacy boundary, AI role, human review checkpoint, and automation level. AI roles are limited to "assistive" or "supervised pilot"; no fully automated decision-making scenario exists.
+
+5. **What are the risks and boundaries?** The official red line has not been released; all spatial metrics are annotated provisional. In the 8-dimension risk matrix, implementation complexity and policy uncertainty score highest and mandatorily require human review. The proposal consistently uses "concept recommendation" wording and does not impersonate official approval or implementation commitment.
+
+## Six Agent Task Response Map
+
+This proposal responds item by item to the six agent tasks in the taskbook [source:AGENT-TASKBOOK]; each task maps to report sections, spatial layers, and verifiable evidence [data:compliance_matrix.json]:
+
+| Task | Taskbook Requirement | Proposal Response | Core Evidence |
+| --- | --- | --- | --- |
+| agent.1 | Belt-wide overall concept and functional coordination design | "AI Spine · Jingzhang" overall concept + "One Spine, Three Vertebrae, Two Wings Extended" spatial structure + Three-Areas-Two-Wings synergy loop | Three-Level Scope Framework, Coordinated Research chapter [data:geometry/site_boundary.geojson] |
+| agent.2 | Full-stack autonomous innovation system and world-class AI innovation ecosystem | Zhongzhiyuan Source Vertebra carries full-stack innovation (chip/framework/algorithm → evaluation/security → application conversion → standards/ecosystem) | Zhongzhiyuan detailed design [data:geometry/key_areas.geojson] |
+| agent.3 | AI+ scenario empowerment and intelligent AI vibrant city | 12 AI scenario cards + 4 testing scenarios (* marked) + scenario data-governance audit table | AI Scenario Cards chapter, audit table [data:geometry/roads.geojson] |
+| agent.4 | AI public space, AI-native new formats, and pilgrimage landmarks | 3 AI pilgrimage landmarks (Memorial Corridor / Open-Source Dome / AI Spark Tower) + blue-green slow-mobility loop | Pilgrimage Landmarks chapter [data:geometry/public_space.geojson] |
+| agent.5 | Century-old Jingzhang, Zhongguancun, and AI new culture fusion narrative | Three-layer cultural narrative (autonomous innovation → open collaboration → human-machine co-creation) + cultural guide sequence | Cultural Fusion Narrative chapter [data:geometry/green_space.geojson] |
+| agent.6 | Belt-wide global AI innovation activity system and long-term operations | "Jingzhang AI Spine · Global AI Innovation Week" four-season activities + operations alliance + tiered scenario opening | Long-Term Operations chapter [data:geometry/phasing.geojson] |
+
+The item-by-item evidence of this mapping is structurally recorded in `compliance_matrix.json` through the requirement_id, report_sections, geojson_layers, metrics, drawings, and visual_sections fields, allowing reviewers to trace each entry back to narrative text, drawings, layers, and metrics.
 
 ## Design Basis and Source List
 
@@ -23,6 +54,21 @@ The current repository has not yet obtained the official precise red line. This 
 This proposal uses a verifiable citation format after key judgments. Complete source coverage is maintained by `sources.json`, professional standard responses are managed by `standard_matrix.json`, deliverable depth is constrained by `design_depth_matrix.json`, and task coverage is tracked by `compliance_matrix.json`. Readers need not open the JSON files to understand the proposal's design logic.
 
 ![Source Evidence Chain and Submission Package Relationship Diagram](assets/figures/site-overview.png)
+
+### Policy Chain Alignment
+
+The proposal uses national, municipal, and district-level public policies as a reference framework, only in the sense of "echoing / relying on / aligning with," and does not state them as finalized government decisions or implementation arrangements [source:AGENT-TASKBOOK]:
+
+| Level | Policy / Document | Proposal Echo | Wording Boundary |
+| --- | --- | --- | --- |
+| National | State Council *New Generation AI Development Plan* | Echoes the national "self-controllable AI technology system" direction; Zhongzhiyuan Source Vertebra carries full-stack autonomous innovation | References strategic direction, does not claim national project status |
+| National | MOHURD *Measures for the Administration of Urban Design* | Three-level scope framework and regulatory-plan-depth design methodology rely on these measures [standard:MOHURD-URBAN-DESIGN-MEASURES] | Methodological reference, does not replace statutory planning approval |
+| Municipal | Beijing Municipal Science & Technology Commission *"Three Areas, Two Wings" world-class AI cluster* (2026-04) | The "Three Areas, Two Wings" synergy loop directly aligns with municipal industrial spatial layout | Aligns with industrial direction, does not claim municipal confirmation |
+| District | Haidian District *"1+X+1" modern industrial system* (2026-03) | Differentiated positioning of Zhongzhiyuan / Origin Community / Dazhongsi aligns with district industrial system | Aligns with district industrial orientation |
+| District | Haidian District *"AI Haidian"* (2025) | Cites Haidian's 1300+ AI enterprises, 76 registered large models, and other industrial base data [source:HAIDIAN-AI-ECOSYSTEM] | Public data citation |
+| District | Centennial Jingzhang AI Innovation Belt prequalification announcement (2026-05-09) | Directly responds to the announcement's three positionings, three scope levels, and three key districts [source:OFFICIAL-ANNOUNCEMENT] | Direct task basis |
+
+The complete source registration of the policy chain is in `sources.json`; specific policy citations are used only to justify the proposal's directional reasonableness and do not constitute any form of official endorsement or approval conclusion.
 
 ## Three-Level Scope Framework
 
@@ -56,7 +102,15 @@ The naming system is as follows:
 | Beijing AI Origin Community | 智脉椎 | Pulse Vertebra | The node where the innovation pulse merges into daily life |
 | Dazhongsi AI Industry Cluster | 智汇椎 | Convergence Vertebra | The terminus of industry convergence and international exchange |
 
-Logo direction: using vertical lines (railway/spine) as the skeleton, with three circular nodes (the three key areas) distributed along the spine, connected by thin lines to form a neural network image. The overall form can be read as an abstract variant of the Chinese character "脊" (spine), while echoing the visual language of data flow and neural synapses. The color palette uses deep blue (technological rationality) and copper-orange (railway industrial heritage) as primary colors, supplemented by white negative space. This logo direction is a conceptual design recommendation; actual use requires completing font and graphic copyright clearance [assumption:A-COPYRIGHT-001].
+**Brand identity system**: The proposal centers "AI Spine · Jingzhang" as its core brand asset, forming an extendable identity system.
+
+- **Logo graphic**: vertical lines (railway/spine) as the skeleton, with three circular nodes (the three key areas) distributed along the spine, connected by thin lines to form a neural network image, readable as an abstract variant of the Chinese character "脊" (spine). The logo has three variants: full version (events and storefront), node version (each district's own mark: Zhongzhiyuan = solid node, AI Origin Community = hollow node, Dazhongsi = concentric-circle node), and line version (wayfinding and small web sizes).
+- **Color system**: deep blue `#1B3A6B` (technological rationality, primary) and copper-orange `#C07A3A` (railway industrial heritage, secondary), supplemented by white negative space and light gray. Each district carries a secondary accent: Zhongzhiyuan = deep blue, AI Origin Community = teal green (open-source ecosystem), Dazhongsi = amber gold (international exchange).
+- **Typography and vocabulary**: Chinese uses Source Han Sans (open-source, commercial-use), English uses Inter (open-source). The unified vocabulary is "智脊·京张 / AI Spine · Jingzhang", with the three vertebrae named "Source Vertebra", "Pulse Vertebra", and "Convergence Vertebra".
+- **International communication**: the English naming retains the "AI Spine" vertebral image for global media retelling; four-season activities are uniformly prefixed "Jingzhang AI Spine", forming a globally searchable brand asset.
+- **Application extension**: the logo extends to wayfinding, event posters, scenario-card covers, developer badges, and digital media, keeping the core graphic constant while switching colors by context.
+
+This brand identity system is a conceptual design recommendation; actual use requires completing font, graphic, trademark, and portrait clearance [assumption:A-COPYRIGHT-001].
 
 ### Three Positionings, Five Functions, and Three-Areas-Two-Wings Coordination
 
@@ -67,6 +121,8 @@ Three positionings — Century-old Jingzhang Cultural Belt (with the railway her
 Five functions — AI full-stack autonomous innovation system (carried by Zhongzhiyuan AI Acceleration Area), world-class AI innovation ecosystem (carried by Beijing AI Origin Community), AI+ scenario empowerment new paradigm (carried by the Xiaoyue River wing), intelligent AI-vitality city (carried by the Jingzhang Heritage Park vitality belt), and global discourse on AI governance (carried by cross-regional coordination).
 
 Three-Areas-Two-Wings coordination loop: the three areas (Zhongzhiyuan AI Acceleration Area — Beijing AI Origin Community — Dazhongsi) form the innovation main axis along the Jingzhang Heritage Park from north to south; the Zhongguancun sci-tech service wing extends west to Zhongguancun Avenue, providing capital, intellectual property, and technology service support; the Xiaoyue River scenario empowerment wing extends east to the Xiaoyue River corridor, hosting AI scenario experiments and public experience. The coordination loop is: Zhongzhiyuan AI Acceleration Area produces original models and standards → Beijing AI Origin Community drives open-source collaboration and outcome conversion → Dazhongsi realizes industry convergence and commercial landing → the Xiaoyue River wing provides scenario validation → the Zhongguancun wing provides capital and service support → returning to Zhongzhiyuan AI Acceleration Area to form the next round of innovation iteration.
+
+**External regional coordination**: this proposal is not an isolated district but is embedded in the Beijing-wide and Beijing-Tianjin-Hebei innovation network [source:AGENT-TASKBOOK]. To the north it connects with the Beiwei Community (AI application-layer innovation) and the Future Science City (energy and life-science crossover), taking on their large-model application and scenario-landing needs; to the northeast it echoes the Huairou Science City (large science facilities and basic research), forming a division of labor where "Huairou does original innovation and Haidian does outcome conversion"; to the southeast it connects with the Beijing Economic-Technological Development Area (intelligent and high-end manufacturing), providing the "technology verification — scaled manufacturing" industrial hinterland for AI; outward it extends to Beijing-Tianjin-Hebei, forming regional radiation through open-source communities and standards output. These coordination relationships are conceptual directional recommendations; concrete cooperation mechanisms require separate negotiation by the relevant parties and are not stated as settled government arrangements.
 
 ### Global AI Innovation Ecosystem Case Study
 
@@ -101,7 +157,7 @@ The Overall Design Area covers approximately 11.4 square kilometers [data:geomet
 
 "Blue-Green Slow-Mobility Composite Loop" — with the heritage park as the north-south main axis and the Qing River (northern end) and Xiaoyue River (eastern side) as transverse blue-green corridors, a loop-shaped slow-mobility system is formed, linking universities, communities, industrial parks, and public space nodes.
 
-The land use layout follows the classification logic of [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], covering scientific research land, industrial land, residential land, commercial and service land, road and transport facility land, and green space and plaza land [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]. The building strategy distinguishes four categories: retention, renovation, renewal, and new construction [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]; the specific retain-renovate-demolish classification must be calibrated once official regulatory plan conditions are confirmed.
+The land use layout follows the classification logic of [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], covering scientific research land, industrial land, residential land, commercial and service land, road and transport facility land, and green space and plaza land [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]. The building strategy distinguishes four categories: retention, renovation, renewal, and new construction [data:geometry/buildings.geojson] [depth:retain_renovate_demolish]; the specific retain-renovate-demolish classification must be calibrated once official regulatory plan conditions are confirmed.
 
 Control indicators such as building height, floor area ratio, building density, green ratio, and setback lines currently lack official conditions [assumption:A-CONTROLS-001]. The proposal lists these as `pending_control` in the indicator system and does not use fixed values to create a false sense of precision. Once the formal regulatory plan is released, all control indicators must be re-verified.
 
@@ -117,7 +173,7 @@ Building renewal: Focused on industrial R&D building renewal, retaining the stru
 
 AI scenarios: Autonomous model testing ground (for large model red-team testing and safety evaluation), standard-setting workshop (visualizing the AI safety governance process), low-carbon compute experience station (demonstrating green computing and edge-side computing), and Qing River AI ecological observation station (combining ecological monitoring and AI data collection).
 
-Transport organization: Strengthen pedestrian connectivity beneath the North Fifth Ring Road overpass, set up a low-speed shuttle loop linking the acceleration core zone and the Qing River interface, and form pedestrian transfer nodes with rail stations. Transport conclusions are directional design recommendations [data:geometry/roads.geojson#ROAD-001].
+Transport organization: Strengthen pedestrian connectivity beneath the North Fifth Ring Road overpass, set up a low-speed shuttle loop linking the acceleration core zone and the Qing River interface, and form pedestrian transfer nodes with rail stations. Transport conclusions are directional design recommendations [data:geometry/roads.geojson].
 
 Implementation risks: The engineering feasibility of the North Fifth Ring Road cross-ring-road node requires traffic and municipal condition review; the Qing River blue line and ecological protection requirements require confirmation from the water authority [assumption:A-CONTROLS-001].
 
@@ -186,6 +242,37 @@ The proposal advances 12 AI scenario cards, of which 4 are AI industry testing a
 
 Privacy and human-review boundaries for scenario-space-operation mapping: All AI scenarios follow the principles of data minimization, open sources, explainability, and human review. Urban agents may assist in identifying slow-mobility breakpoints, public space heat maps, and facility maintenance needs, but do not replace planning approval and do not output unauthorized personal profiles. AI governance recommendations must undergo human review before entering implementation [source:AGENT-TASKBOOK].
 
+### Public Interest and Inclusion Safeguards
+
+The proposal addresses the diverse needs of multiple user groups, ensuring the AI Innovation Belt is not an elite-only space [depth:public_interest_inclusion]:
+
+**Vulnerable group safeguards**: Elderly residents can access all public services through non-digital pathways (AI scenario cards are marked "assistive" level, with human service windows retained). Accessibility needs of persons with disabilities are prioritized in the AI slow-mobility navigation scenario (S04), with barrier-free facility improvements included in near-term projects. Low-income residents and small business owners receive transition period protection during renewal, with controlled pace of format changes to prevent sharp rent increases.
+
+**Public participation mechanism**: Community feedback points are established to collect resident opinions on AI scenarios, with regular public open days to showcase scenario operation records. The operations alliance includes resident representative seats, ensuring community voices have expression channels in decision-making. The robot delivery pilot zone (S12) solicits opinions from residents along the route before piloting, with operating hours and speed limits set.
+
+**Accessibility for non-AI professionals**: AI scenario cards are described in non-technical language, allowing the public to understand scenario purposes, data boundaries, and safety guarantees without AI knowledge. The community AI education experience point (S04) is free for all residents, lowering AI literacy barriers. The open-source release hall (S01) and AI public art corridor (S11) are designed as public spaces that can be participated in and experienced without technical background.
+
+### AI Scenario Data-Governance Audit Table
+
+To enhance scenario auditability, each AI scenario card specifies data source, privacy boundary, AI role, and human review checkpoint [depth:metrics_recalculation] [data:compliance_matrix.json]:
+
+| Scenario | Data Source | Privacy Boundary | AI Role | Human Review | Automation Level |
+| --- | --- | --- | --- | --- | --- |
+| S01 Open-Source Release Hall | Public code contribution records and public event data | Display only usernames and public commit records; no personal behavior trajectory collection | Assisted display and aggregate statistics | Operator reviews published content | Assistive |
+| S02 Safety Governance Sandbox | Public safety evaluation methods and model behavior data | No personal sensitive information involved; test data desensitized | Assisted red-team test process organization | Evaluation institution + park joint review | Assistive |
+| S03 Edge-Side Compute Station | Public compute demand and public service materials | Aggregate public service data only; no user compute behavior collection | Assisted compute resource display | Government + operator joint supervision | Assistive |
+| S04 AI Slow-Mobility Navigation | Public slow-mobility cross-sections, intersections, and public facility materials | No personal trajectory collection; environment sensors only | Assisted breakpoint identification and accessibility needs | Park management reviews route suggestions | Assistive |
+| S05 International Roadshow Parlor | Public business event and enterprise exhibition materials | No unauthorized commercial data collection | Assisted event organization and exhibition planning | Enterprise + property review content | Assistive |
+| S06 Qing River Low-Carbon Corridor | Public river, green space, and ecological monitoring data | No personal behavior data collection | Assisted ecological data display and stormwater analysis | Water authority reviews ecological indicators | Assistive |
+| S07 Near-Campus Conversion Street | Public university outcomes and incubator materials | Campus data and research outcomes require authorization | Assisted outcome display and matching | University + incubator review | Assistive |
+| S08 Data Element Reception Hall | Compliant and authorized data circulation records | Data desensitized, auditable, no personal profiling | Assisted data circulation process management | Data exchange + legal compliance review | Assistive |
+| S09 AI Life Service Street | Public medical, educational, legal, and life service materials | No personal health and education records collection | Assisted service information aggregation and guidance | Community + service provider review | Assistive |
+| S10 Global AI Activity Week Route | Public event schedules and public space materials | No participant personal profiling | Assisted route planning and traffic estimation | Event committee + safety review | Assistive |
+| S11 AI Public Art Corridor | Public railway industrial heritage and AI-generated art materials | AI-generated content labeled with source and copyright info | Assisted art content generation suggestions | Cultural institution reviews copyright and content | Assistive |
+| S12 Robot Delivery Pilot Zone | Public road and delivery demand aggregate data | No personal recipient information; aggregate logistics data only | Assisted route planning and delivery dispatch | Logistics enterprise + government joint supervision | Supervised pilot |
+
+All scenarios have AI roles at "assistive" or "supervised pilot" level; there are no fully automated decision-making scenarios. Each scenario's human review checkpoint has corresponding risk dimension scores and mitigation measures in `risk.json` [data:risk.json]. Scenario verification results are recorded in `simulation.json`, with all 12 scenarios passing assertion checks [data:simulation.json].
+
 ### AI Pilgrimage Landmarks
 
 The proposal advances three AI pilgrimage landmarks [source:AGENT-TASKBOOK], serving as the spiritual anchors and public experience destinations of the innovation belt.
@@ -202,13 +289,21 @@ The above landmarks are all conceptual design recommendations and do not constit
 
 The land use layout is organized according to the classification logic of the Guide to the Classification of Land and Sea Use [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. The main land use types within the Overall Design Area include: scientific research land (Zhongzhiyuan AI Acceleration Area and Beijing AI Origin Community cores), commercial and service land (Dazhongsi area and around rail stations), residential land (existing community renewal), road and transport facility land (including rail station integration), and green space and plaza land (heritage park and blue-green corridors).
 
-The building strategy distinguishes four renewal categories [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]:
+The building strategy distinguishes four renewal categories [data:geometry/buildings.geojson] [depth:retain_renovate_demolish]:
 - **Retain**: Existing residential, school, and public service buildings of good quality, maintaining their current functions.
 - **Renovate**: Ground floors and facades of existing industrial and commercial buildings, converted into exhibition, collaboration, and service functions.
 - **Renew**: Inefficiently used industrial land and warehousing land, redeveloped according to AI industry needs.
 - **New construction**: Landmark buildings and public space nodes added at the core locations of key areas.
 
-Building footprint area and scale indicators are recalculated from [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. Due to the lack of official regulatory plan conditions, control indicators such as floor area ratio, building height, building density, green ratio, and setback lines are listed as `pending_control` [assumption:A-CONTROLS-001]. Once the formal regulatory plan is released, all control indicators must be re-verified.
+Existing building footprint area and scale indicators are recalculated from OpenStreetMap measured data [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm] [metric:building_count]. The OSM snapshot (2026-08-20) identifies 1,692 existing buildings within the Overall Design Area, with a total footprint of approximately 2,018,037 sq m [source:OSM-DATA]. On this basis, the proposal advances four building renewal strategies: retain existing buildings of good quality, renovate the ground floors of industrial and commercial buildings, renew inefficiently used land, and construct new landmark public buildings. Because OSM building footprints are incomplete in some sections, the existing building count and footprint are directional references to be calibrated after official ownership data is released [assumption:A-CONTROLS-001].
+
+Retain-renovate-demolish ratio estimate (based on provisional boundary and public imagery interpretation, subject to official data calibration):
+- Retained buildings: ~45% of total (mainly in southern Dazhongsi area and eastern AI Origin Community)
+- Renovated buildings: ~25% (old industrial and commercial buildings along both sides of Jingzhang Railway)
+- Renewed buildings: ~20% (inefficient warehouses north of Dazhongsi and old factories south of Zhongzhiyuan)
+- New buildings: ~10% (landmark public buildings at core positions of three key areas)
+
+Due to the lack of official regulatory plan conditions, control indicators such as floor area ratio, building height, building density, green ratio, and setback lines are listed as `pending_control` [assumption:A-CONTROLS-001]. Once the formal regulatory plan is released, all control indicators must be re-verified.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -218,13 +313,17 @@ The transport proposal responds to the announcement's requirements for rail stat
 
 **Road micro-circulation**: Break through the east-west transport connections on both sides of the heritage park that are severed by the railway, using the surface space released by the railway's undergrounding to add east-west slow-mobility passages. The branch road system in key areas is organized according to the principle of small blocks and dense networks, promoting walkability and commercial vitality.
 
-**Slow-mobility system**: With the heritage park as the north-south main axis and the Qing River and Xiaoyue River as transverse corridors, a slow-mobility loop resembling the Chinese character 日 (a rectangular loop with a central crossbar) is formed. Identify and repair slow-mobility breakpoints across ring roads, rivers, and railways, establishing a continuous walking and cycling network [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking].
+**Slow-mobility system**: With the heritage park as the north-south main axis and the Qing River and Xiaoyue River as transverse corridors, an I-shaped slow-mobility loop is formed. Identify and repair slow-mobility breakpoints across ring roads, rivers, and railways, establishing a continuous walking and cycling network [data:geometry/roads.geojson] [depth:traffic_rail_slow_parking].
 
 **New infrastructure**: Deploy edge-side compute nodes, distributed energy facilities, and AI sensing infrastructure in key areas, integrated with public service facilities and public space. Edge-side compute nodes serve as the "last mile" infrastructure for AI scenarios, providing local computing capability for low-latency applications [data:geometry/constraints.geojson#CONSTRAINTS].
 
 ![Transport Slow-Mobility and Blue-Green Public Space Composite System Diagram](assets/figures/mobility-bluegreen.png)
 
 The municipal facilities proposal covers traditional municipal systems such as water supply and drainage, electricity, communications, gas, and sanitation, as well as AI industry service facilities, innovation service platforms, and talent life service facilities. When pipeline, energy, drainage, flood control, and fire protection engineering data are lacking, they are listed as prerequisites for formal deepening [assumption:A-CONTROLS-001].
+
+**Road system**: The road system within the overall design area is classified into four grades — urban expressway (North 5th Ring Road), urban arterial road (Zhongguancun Street, North Tucheng West Road), urban secondary road (east-west roads connecting key areas), and urban branch road (small-block dense network within key areas) [data:geometry/roads.geojson] [metric:road_segment_count]. The OSM snapshot (2026-08-20) identifies 1,605 existing road segments within the Overall Design Area [source:OSM-DATA]. On this basis, the proposal advances a four-grade road system and overlays design-level corridors such as the slow-mobility axis, transit connections, and blue-green loop.
+
+**Public service facilities**: The proposal allocates differentiated public service facilities across the three key areas. Zhongzhiyuan hosts AI industry service platforms (chip testing, compute scheduling, standards certification), an international conference center, and talent housing. AI Origin Community hosts university-industry collaborative innovation centers, technology transfer accelerators, and youth maker communities. Dazhongsi hosts a smart commercial complex, urban AI application showcase hall, and community convenience service center. For education, leveraging the dense surrounding universities, no new basic education facilities are planned; the focus is on continuing education and vocational training spaces. For healthcare, relying on existing resources at Peking University Third Hospital and Haidian Hospital, an AI-powered health monitoring station is deployed in the AI Origin Community.
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -238,7 +337,7 @@ The Jingzhang Heritage Park is the core carrier of this proposal's "One Spine" s
 
 ### Blue-Green Space System
 
-The blue-green space takes the heritage park as the north-south main axis and the Qing River (northern end) and Xiaoyue River (eastern side) as transverse corridors, forming an "I-shaped" blue-green skeleton [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]. The green space and public space ratios are recalculated from [data:geometry/green_space.geojson#GREEN-001] and [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio] [metric:public_space_ratio].
+The blue-green space takes the heritage park as the north-south main axis and the Qing River (northern end) and Xiaoyue River (eastern side) as transverse corridors, forming an "I-shaped" blue-green skeleton [data:geometry/green_space.geojson] [depth:blue_green_public_space]. The green space and public space ratios are recalculated from [data:geometry/green_space.geojson] and [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio] [metric:public_space_ratio].
 
 The public space system includes: the heritage park linear green corridor (north-south main axis), the Qing River waterfront promenade (northern transverse corridor), the Xiaoyue River waterfront promenade (eastern transverse corridor), the key area plaza cluster (core public spaces of the three key areas), and the community pocket park network (evenly distributed community-level green nodes).
 
@@ -285,6 +384,19 @@ Phasing is distinguished from the 100-day solicitation design cycle: the solicit
 
 **Long-term (5+ years)**: Construct the AI Spark Tower (JZ-08) and the Global AI Activity Week route (JZ-10), establishing long-term operational mechanisms and brand assets.
 
+### Verifiable Pilot Pathways and Stakeholders
+
+The proposal defines verifiable pilot pathways for near-term projects, specifying entry conditions, acceptance gates, rollback conditions, and stakeholders [depth:phasing_implementation] [data:risk.json]:
+
+| Pilot Project | Entry Condition | Acceptance Gate | Rollback Condition | Stakeholders |
+| --- | --- | --- | --- | --- |
+| JZ-01 Slow-Mobility Breakpoint Stitching | Road red line confirmed, under-bridge space use rights clear | Breakpoint elimination rate >=80%, walkability improvement measurable | Facilities can be removed without affecting vehicular traffic | Transport authority, park management, nearby residents |
+| JZ-02 Qing River Innovation Interface | River blue line confirmed, water authority permit | Ecological restoration indicators met, public space area measurable | Temporary facilities can be removed, original green space restored | Water authority, park operator, environmental agencies |
+| JZ-03 Near-Campus Conversion Street | Campus boundary confirmed, property owner consent | Ground-floor format change rate >=60%, occupancy rate measurable | Format changes follow voluntary principle, can be paused | Universities, property owners, incubators, startup teams |
+| JZ-09 Xiaoyue River Experiment Corridor | River blue line confirmed, scenario permits, data compliance review | Pilot scenario count >=3, public feedback satisfaction measurable | Pilot facilities can be removed without affecting river flood capacity | Water authority, operators, community representatives, pilot enterprises |
+
+Each pilot has defined rollback conditions, ensuring reversion to the original state if expected outcomes are not met. Stakeholders include government departments, operating entities, community residents, and professional institutions, ensuring multi-party participation and oversight [data:risk.json].
+
 ### Global AI Innovation Activity System and Long-Term Operations
 
 The proposal advances the "Jingzhang AI Spine · Global AI Innovation Week" annual activity system [source:AGENT-TASKBOOK], serving as the long-term brand asset and operational closed loop of the innovation belt.
@@ -301,6 +413,12 @@ The proposal advances the "Jingzhang AI Spine · Global AI Innovation Week" annu
 
 **Scenario opening operations**: AI scenario cards and testing and verification scenarios are opened to enterprises, universities, and the public in a tiered manner. Industry testing scenarios require reservation and qualification review; public service scenarios are open to all members of the public; life service scenarios are operated according to community needs. All scenario operation records enter the public knowledge base [source:AGENT-TASKBOOK].
 
+**90-day minimum operations validation and three evaluation gates**: to make long-term operations implementable, the proposal advances a "90-day minimum operations validation" — running the minimum loop of "one event + one open scenario + one developer project" within a single quarter. This is followed by three evaluation gates: the first (trial-operations acceptance) verifies scenario usability and public safety; the second (formal-operations acceptance) verifies participation scale, operating cost, and content quality; the third (brand-settlement acceptance) verifies whether brand assets are reusable for the next year. The three gates are conceptual operational recommendations; specific acceptance criteria must be set separately by the operating entity.
+
+**Brand asset accumulation and long-term value**: the four-season activities, scenario cards, developer-community records, event visuals, and annual reports accumulate into the long-term brand assets of "Jingzhang AI Spine," forming a compounding loop of "activities — content — community — brand." Brand assets release event materials and scenario records under open-source licenses for reuse by universities, enterprises, and international communities, turning a single design into a sustainable operations channel.
+
+**Transferable deliverables**: the proposal reserves clear interfaces for professional teams to deepen — the concept and naming can be deepened by a branding team into a full VI manual; the three districts' spatial structure and scenario cards can be deepened by an urban-design team into regulatory-plan-depth deliverables; the four-season activities and operations alliance can be developed by an event-operations team into an annual execution plan; the scenario cards and audit table can be turned by a technical team into system requirements. These layered deliverables form a complete conversion chain from concept to implementation.
+
 The above activities, investment attraction, funding, policies, and operational arrangements are all conceptual recommendations or directions for deepening, and must not be represented as determined government arrangements [source:AGENT-TASKBOOK].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
@@ -315,9 +433,11 @@ The proposal establishes three categories of metrics [depth:metrics_recalculatio
 | Zhongzhiyuan AI Acceleration Area | Approx. 1,929,202 sqm | geometry/key_areas.geojson | known (provisional) |
 | Beijing AI Origin Community Area | Approx. 1,043,237 sqm | geometry/key_areas.geojson | known (provisional) |
 | Dazhongsi Area | Approx. 720,454 sqm | geometry/key_areas.geojson | known (provisional) |
-| Green space ratio | Approx. 12.3% | geometry/green_space.geojson | known (provisional) |
+| Green space ratio | Approx. 8.0% (existing) | geometry/green_space.geojson | known (provisional) |
 | Public space ratio | Approx. 7.3% | geometry/public_space.geojson | known (provisional) |
-| Building footprint area | Approx. 310,807 sqm | geometry/buildings.geojson | known (provisional) |
+| Existing building footprint area | Approx. 2,018,037 sqm | geometry/buildings.geojson | known (provisional) |
+| Existing building count | 1,692 | geometry/buildings.geojson | known |
+| Existing road segment count | 1,605 | geometry/roads.geojson | known |
 | Number of key areas | 3 | geometry/key_areas.geojson | known |
 
 **Category Two: Control Metrics (requiring official regulatory plan support)**
@@ -347,6 +467,23 @@ All spatial metrics are recalculated based on provisional rough boundaries [assu
 The compliance matrix covers all mandatory tasks in announcement sections 1.3, 1.4, 1.5, and agent.1 through agent.6, with each task mapped to report sections, layers, metrics, drawings, and HTML evidence [data:compliance_matrix.json]. A proposal that fails to cover any mandatory task may not enter formal professional scoring.
 
 ## Risk, Copyright, and Compliance
+
+### Structured Risk Matrix
+
+The proposal establishes an 8-dimension structured risk matrix [data:risk.json], using an R-01 through R-08 numbering system for cross-chapter back-referencing:
+
+| ID | Dimension | Score | Human Review |
+| --- | --- | --- | --- |
+| R-01 | Data privacy | 3 | Data Element Reception Hall (S08) and Open-Source Release Hall (S01) reviewed by data-security compliance counsel |
+| R-02 | Implementation complexity | 4 | Joint review by planning, transport, municipal, and operations teams (North 5th Ring under-bridge, Dazhongsi four-quadrant) |
+| R-03 | Public acceptance | 3 | Robot delivery pilot (S12) solicits resident opinions before piloting |
+| R-04 | Operations cost | 3 | Phased input-output evaluation |
+| R-05 | Policy uncertainty | 4 | All spatial metrics and policy wording reviewed by planning, transport, data-security, and legal compliance professionals |
+| R-06 | Spatial dispute | 3 | Time-segmented, zone-segmented, low-speed, reversible facilities to reduce conflict |
+| R-07 | Technology maturity | 3 | Technology limited to assisted recommendations or supervised pilots, with human fallback retained |
+| R-08 | Equity and inclusion | 3 | Barrier-free, low-threshold, non-digital alternative pathways |
+
+R-02 implementation complexity and R-05 policy uncertainty score highest (4) and mandatorily require human review. The remaining dimensions score 3, all with mitigation measures. The risk matrix is linked to the risk validation task and mutation tests in `simulation.json`, ensuring risk scores are consistent with the proposal narrative [data:simulation.json#SIM-RISK-01] [data:simulation.json#MUT-02].
 
 ### Source Legality
 

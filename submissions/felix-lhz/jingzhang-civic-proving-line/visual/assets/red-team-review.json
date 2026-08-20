@@ -1,82 +1,67 @@
 {
-  "schema_version": "1.4.0",
-  "review_date": "2026-08-17",
-  "version": "V6",
-  "calibration_baseline": "PR #3071 Review Agent 81/100",
-  "status": "major_open_pending_blind_visual_review",
+  "schema_version": "1.11.0",
+  "review_date": "2026-08-20",
+  "version": "V13",
+  "calibration_baseline": "V11 Review Agent 90/100; V12 Review Agent 88/100",
+  "status": "v13_local_freeze_qa_complete",
   "summary": {
     "blocking_open": 0,
-    "major_open": 1,
+    "major_open": 0,
     "major_closed": 3,
-    "minor_open": 2
+    "minor_open_external_dependency": 4
   },
   "findings": [
     {
-      "id": "V5-EX-01",
-      "round": "review_agent_evidence_entry",
+      "id": "V13-EVID-01",
       "severity": "major",
-      "finding": "The five canonical figures repeated the same abstract spine; metrics-evidence also clipped its priority line and omitted stop text after SVG conversion.",
-      "evidence": [
-        "1024 px review of the five canonical figures",
-        "V4 Review Agent evidence bundle"
-      ],
-      "remediation": "Assigned distinct decisions to overall, land-use, key-area, mobility and evidence figures; replaced foreignObject text with native SVG text and rechecked 1024 px output.",
-      "verification": "Closed by bilingual canonical PNG review; all five are distinct and no title or stop condition is clipped.",
+      "finding": "V12 collapsed 55 metrics to 18 and reused unrelated metric IDs for stitches, components, landmarks, prototype kit and pilot phases.",
+      "remediation": "Restore the accumulated evidence set and bind each narrative conclusion to its exact recomputable metric; add bilingual semantic assertions.",
+      "verification": "semantic-qa-v13.js rejects substituted IDs, duplicate paragraph references, unresolved references and bilingual drift.",
       "status": "closed"
     },
     {
-      "id": "V6-UD-01",
-      "round": "urban_design_site_specificity",
+      "id": "V13-VIS-01",
       "severity": "major",
-      "finding": "V5 used geometry count and legends as a proxy for visible urban-design specificity; a blind reviewer could not locate curbs, crossings, staffed posts, fire access and restoration without reading the legend.",
-      "evidence": [
-        "PR #3071 Review Agent remained 81/100",
-        "V5 canonical key-areas and PDF first-page review"
-      ],
-      "remediation": "Rebuild S7 as the flagship four-scale sample from shared local-metre objects and surface it in every Review Agent entry point.",
-      "verification": "Technical evidence complete: five canonical figures, four PDF first pages, bilingual proposal pages and bilingual visual first screens form an 18-image review pack; 68 traceable geometry objects and all four S7 states pass offline QA. Pending: user-led label-off blind review before any Ready PR.",
-      "status": "open"
-    },
-    {
-      "id": "V5-PUB-01",
-      "round": "publication_density_and_increment",
-      "severity": "major",
-      "finding": "A0-03 left a large low-information lower field and A3 repeated the full overall plan more than twice.",
-      "evidence": [
-        "150 DPI contact sheets generated during V5 QA"
-      ],
-      "remediation": "Expanded A0-03 receipt, section, catalogue and phasing zones; replaced A3 repeated maps with mobility, key-area, land-use and evidence-specific figures.",
-      "verification": "Closed after 3-board and 20-page bilingual contact-sheet review; overall plan now appears in full on only pages 3 and 5.",
+      "finding": "V12 let a twelve-row measurement table displace the decisive ALT-A/B/C spatial judgement in the actual scoring entrances.",
+      "remediation": "Restore the reject/revise/advance decision as the primary metrics figure and PDF first-page message; retain only T2, S2 and S7 hero contracts as secondary evidence.",
+      "verification": "At 1024 px the decision, reason and selected ALT-C are visible without reading a twelve-row table.",
       "status": "closed"
     },
     {
-      "id": "V5-WEB-01",
-      "round": "offline_interaction_and_accessibility",
+      "id": "V13-PUB-01",
       "severity": "major",
-      "finding": "A generic .hero selector expanded the hero-scenario status chip into a blank viewport-high amber block after the V5 first-screen redesign.",
-      "evidence": [
-        "390×844 and 1440×1600 Playwright interaction screenshots"
-      ],
-      "remediation": "Scoped the layout to header.hero and explicitly reset the nested tier.hero chip; added automated scenario-card screenshot QA.",
-      "verification": "Rechecked for V6 with desktop 1440×1600, mobile 390×844 and English: 68 geometry objects, schema 1.4.0, scenario and operating-state hash restoration, reduced motion, no external requests and zero console/page errors.",
+      "finding": "The first V13 A0 draft retained low-information areas and did not connect the selected geometry to a spatial experience.",
+      "remediation": "Rebalance all three boards around one dominant visual and add a generated ALT-C experience view tied to the public cross, one-sided trial bay, staffed receipt porch and removal route.",
+      "verification": "Final A0 contact-sheet review shows denser single-focus boards; the experience image is explicitly non-field evidence and vector geometry remains authoritative.",
       "status": "closed"
     },
     {
-      "id": "V5-MIN-01",
-      "round": "urban_design_site_specificity",
+      "id": "V13-MIN-01",
       "severity": "minor",
-      "finding": "Official survey, ownership, statutory controls, utilities and observed flows remain unavailable.",
-      "remediation": "Keep provisional-boundary and concept-scale disclosures; require these inputs before E2 baseline prototype.",
+      "finding": "Official survey, ownership, station entrances, statutory controls, utilities and observed flows remain unavailable.",
+      "remediation": "Keep dimensions and boundaries provisional and rerun the audit when formal data arrives.",
       "status": "open_external_dependency"
     },
     {
-      "id": "V5-MIN-02",
-      "round": "evidence_and_civic_adoption",
+      "id": "V13-MIN-02",
       "severity": "minor",
-      "finding": "No scene has been field-run, so outcome thresholds and adoption decisions remain unavailable.",
-      "remediation": "Keep performance unknown and advance only through the E0–E4 evidence ladder after field baseline establishment.",
+      "finding": "No scene has been field-run; safety, traffic, satisfaction, cost and recovery time remain unknown.",
+      "remediation": "Do not issue adopt/revise/stop until baseline and controlled field evidence exist.",
+      "status": "open_external_dependency"
+    },
+    {
+      "id": "V13-MIN-03",
+      "severity": "minor",
+      "finding": "Public OSM context is incomplete around the prototype.",
+      "remediation": "Show low-confidence context and verify building edges professionally before implementation.",
+      "status": "open_external_dependency"
+    },
+    {
+      "id": "V13-MIN-04",
+      "severity": "minor",
+      "finding": "Automated in-app browser control rejects file:// navigation, so runtime visual interaction was not automatically asserted.",
+      "remediation": "Keep static offline dependency QA as passed and require the user to perform the final local runtime visual review before any Ready PR.",
       "status": "open_external_dependency"
     }
-  ],
-  "note": "V6 does not close spatial depth by counting objects. Closure requires blind visual identification plus four-scale traceability."
+  ]
 }

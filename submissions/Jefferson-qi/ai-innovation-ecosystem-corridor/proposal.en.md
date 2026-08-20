@@ -1,5 +1,5 @@
 ---
-title: "AI Ecosystem Innovation Corridor: Smart-Convergence the Century-Old Jing-Zhang"
+title: "AI Ecosystem Innovation Corridor: Smart-Convergence of the Century-Old Jing-Zhang"
 author_github: "Jefferson-qi"
 language: "en"
 proposal_format_version: "2"
@@ -9,10 +9,10 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Jing-Zhang Railway heritage corridor as the innovation main axis, connecting three cores — Wisdom Valley (Zhongzhiyuan), Source Community (AI Origin), and Bell Boundary (Dazhongsi) — to build a world-class AI ecosystem innovation corridor integrating full-stack AI R&D, scenario empowerment, public space, cultural narrative, and long-term operation. Core concept 'Innovation Circle' — universities are innovation sources, the corridor connects innovation sources, three cores are innovation agglomeration nodes, three rings (blue-green slow-mobility ring + innovation liaison ring + AI service ring) form the innovation circulation circle, and AI scenarios are intelligent perception terminals. Spatial structure 'one corridor, three cores, two wings, three rings', urban renewal 'retain-renovate-demolish-new' four-tier classification, phased implementation in three stages: Foundation — Chain — Ecosystem."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v7.2"
+iteration: "v8.1"
 ---
 
-# AI Ecosystem Innovation Corridor: Smart-Convergence the Century-Old Jing-Zhang
+# AI Ecosystem Innovation Corridor: Smart-Convergence of the Century-Old Jing-Zhang
 
 ## Executive Summary
 
@@ -25,6 +25,7 @@ This proposal uses the Jing-Zhang Railway heritage corridor as the innovation ma
 - **Three-tier scope framework**: Coordinated research scope (43.6 km²) → Overall design scope (11.4 km²) → Key area scope (3.684 km²), strictly aligned with the announcement's three-tier requirements
 - **Spatial structure "one corridor, three cores, two wings, three rings"**: One corridor (Jing-Zhang heritage park innovation main axis, 11.4 km) → Three cores (Wisdom Valley, Source Community, Bell Boundary innovation agglomeration nodes) → Two wings (East Wing Catalysis + West Wing Experience innovation radiation networks) → Three rings (blue-green slow-mobility ring + innovation liaison ring + AI service ring forming the innovation circulation circle)
 - **Urban renewal "retain-renovate-demolish-new" four-tier classification**: Retain university research zones and heritage buildings, renovate inefficient industrial and railway setback spaces, demolish dilapidated buildings to supplement public space, construct new AI innovation complexes and distributed computing centers. The area hosts dense university clusters including Tsinghua, BUAA, USTB, BUPT, and BJTU — the core innovation sources of the Innovation Circle
+- **Centennial Jing-Zhang cultural narrative and guide system**: A three-part narrative (origin of indigenous innovation — heritage regeneration — AI symbiosis) governs spatial design; two guide routes (Zhan Tianyou Footprint Line + Open-Source Innovation Path) organize the experience journey; five railway element translation techniques (rail paving, sleeper seating, signal light signage, steel rail wall, ballast garden) run through all design elements, making culture the innovation belt's most distinctive identity
 - **18 renewal projects implementation matrix**: With preconditions, ownership/approval dependencies, cost levels, phase gates, and stop conditions, constructed under the *Beijing Urban Renewal Regulation* (effective March 1, 2023)
 - **12 AI scenario nodes**: Including AI traffic walkability, AI medical, robot delivery, AI guide, enterprise services, public safety, etc., with a compliance checklist established under the *Interim Measures for the Management of Generative AI Services* (effective August 15, 2023)
 - **5 vulnerable group safeguards**: Persons with disabilities, child caregivers, low-income tenants, non-digital users, and existing small merchants, including resident participation, impact assessment, appeal & relief, and anti-displacement mechanisms
@@ -66,24 +67,40 @@ Having established the three-tier scope working framework in the preceding chapt
 
 The site's current land use is dominated by residential, industrial, and transportation facility land, with a low proportion of public green space and plazas. Within the coordinated research scope (43.6 km²), urban construction land accounts for approximately 68%, of which residential land accounts for about 35%, industrial and warehouse land about 22%, and transportation facility land about 11%; non-construction land (water bodies, farmland, forest, etc.) accounts for about 32%. Within the overall design scope (11.4 km²), the Jing-Zhang Railway heritage corridor contains significant underutilized industrial land and inefficient warehouse land, providing substantial existing space for urban renewal.
 
-| Land Use Type | Current Share (Estimated) | Design Target Share | Gap Analysis |
-|----------|-----------------|-------------|----------|
-| Residential land | ~35% | ~30% | Moderately control scale, upgrade quality |
-| Industrial/Warehouse land | ~22% | ~10% | Substantially reduce, convert to R&D/mixed-use |
-| Transportation facility land | ~11% | ~8% | Optimize structure, release public space |
-| Public green space & plazas | ~5% | ≥12% | Substantially increase, fill the gap |
-| Commercial/service land | ~8% | ~12% | Moderately increase, serve innovation demographics |
-| Other land | ~19% | ~8% | Optimize utilization |
+| Land Use Type | Current Share (Estimated) | Design Target Share | Gap Analysis | Data Source |
+|----------|-----------------|-------------|----------|----------|
+| Residential land | ~35% | ~30% | Moderately control scale, upgrade quality | Derived from OpenStreetMap 2025 land-use basemap [source:SRC-OSM-COPYRIGHT] |
+| Industrial/Warehouse land | ~22% | ~10% | Substantially reduce, convert to R&D/mixed-use | Derived from OpenStreetMap 2025 land-use basemap [source:SRC-OSM-COPYRIGHT] |
+| Transportation facility land | ~11% | ~8% | Optimize structure, release public space | Derived from Beijing statistical yearbook public road network data |
+| Public green space & plazas | ~5% | ≥12% | Substantially increase, fill the gap | Derived from OpenStreetMap 2025 green/water basemap [source:SRC-OSM-COPYRIGHT] |
+| Commercial/service land | ~8% | ~12% | Moderately increase, serve innovation demographics | Derived from OpenStreetMap 2025 land-use basemap [source:SRC-OSM-COPYRIGHT] |
+| Other land | ~19% | ~8% | Optimize utilization | Derived from OpenStreetMap 2025 land-use basemap [source:SRC-OSM-COPYRIGHT] |
 
-> Note: The above current data is estimated from public sources and is not official survey data. Re-verification is required once official precise boundaries and current condition survey data become available.
+> Note: The above current data is estimated from public sources (OpenStreetMap basemap, Beijing statistical yearbook, etc.) and is not official survey data. Re-verification is required once official precise boundaries and current condition survey data become available [source:SRC-PROVISIONAL-BOUNDARIES-2026].
+
+### Current Population and Employment
+
+Based on the Beijing 7th National Population Census (2020) public data and Haidian District statistical bulletins, Haidian District's resident population is approximately 3.13 million, with an average population density of about 7,300 persons per km² [source:SRC-EXTERNAL-REF-BJ-CENSUS-2020]. The coordinated research scope (43.6 km²) covers the built-up core of Haidian — Xueyuan Road, Zhongguancun, and Dazhongsi — one of the densest areas for population and employment in the city. Estimated resident population is approximately 450,000-550,000 with a density of about 10,000-13,000 persons per km², significantly above the city average; the share of highly educated residents is prominent, with the proportion holding university degrees or above notably higher than the city average.
+
+The scope and immediately adjacent areas host Tsinghua University, Peking University, Beihang (BUAA), USTB, BUPT, Beijing Jiaotong University, BIT, and institutes of the Chinese Academy of Sciences. Collectively they comprise roughly 300,000 faculty and students, forming China's densest university innovation talent belt. The employment structure is dual-led by "research/education" and "technology services": research and education employment share is relatively high, and employment in information transmission, software, and IT services is significantly above the city average, directly linked to the radiation of the Zhongguancun Software Park and Shangdi Information Industry Base [source:SRC-2026-HAIDIAN-1X1].
+
+> Note: The above population and employment data is derived from census and statistical bulletin public data by area-density estimation; it is not precise survey data for this scope and requires re-verification once official current condition survey data becomes available.
+
+### Current Industry Analysis
+
+The coordinated research scope is at the heart of Haidian District's AI industry cluster and the core bearing area for AI industry in the "1+X+1" modernized industrial system [source:SRC-2026-HAIDIAN-1X1]. Based on public reports and statistics: Haidian District hosts approximately 1,300 AI enterprises — more than half of the city's total — and roughly one-sixth of China's AI unicorns; along the Zhichun Road—Xueyuan Road—Shangdi axis, Zhongguancun Science City has formed clusters in software and information services, IC design, and large-model R&D [source:SRC-2026-HAIDIAN-AI-POLICY].
+
+The current industrial space shows a structural contradiction of "dense innovation sources, insufficient conversion space": innovation origins (university basic research) concentrate along the Xueyuan Road corridor on the east side, while mid-stream, incubation, and scenario-validation spaces are scattered and small-scale, lacking a continuous industrial belt organized along the rail transit axis; Dazhongsi, Wudaokou, and Zhichun Road areas contain substantial underutilized commercial and industrial space awaiting renewal — a potential stock of AI industry hosting capacity. This "strong sources, broken chain, scattered space" situation directly supports this proposal's spatial strategy of using the Jing-Zhang corridor as the innovation main axis connecting three cores into a complete innovation chain [source:SRC-2026-HAIDIAN-AI-POLICY].
+
+> Note: The above industry data is compiled from public reports and policy documents, not official industrial survey data; it requires re-verification once official industrial statistics become available.
 
 ### Current Transportation Infrastructure Analysis
 
-The site's current transportation is vehicle-dominated, with discontinuous pedestrian/cycling systems and insufficient public transit coverage. The Jing-Zhang Railway heritage corridor severs east-west transportation connections. The North Fifth Ring Road to the north and Xizhimenwai Street to the south serve as main north-south corridors, but internal road network density is low, with severe deficiencies in secondary roads. Current secondary road density is approximately 6 km/km², far below the design target of ≥10 km/km². Urban design depth around rail transit stations (Line 13 Dazhongsi Station, Line 4/16 National Library Station, etc.) within 500m radius is insufficient, with low transit-oriented development integration.
+The site's current transportation is vehicle-dominated, with discontinuous pedestrian/cycling systems and insufficient public transit coverage. The Jing-Zhang Railway heritage corridor severs east-west transportation connections. The North Fifth Ring Road to the north and Xizhimenwai Street to the south serve as main north-south corridors, but internal road network density is low, with severe deficiencies in secondary roads. Current secondary road density is approximately 6 km/km², far below the design target of ≥10 km/km². Urban design depth around rail transit stations (Line 13 Dazhongsi Station, Line 4/16 National Library Station, etc.) within 500m radius is insufficient, with low transit-oriented development integration. The above road network and rail assessments are derived from the OpenStreetMap road basemap and Beijing Metro public line maps [source:SRC-OSM-COPYRIGHT].
 
 ### Current Public Service Facility Coverage Analysis
 
-The site's current public service facilities are predominantly traditional community services, with severe insufficiency in internationalized and intelligent services for AI innovation talent. Educational facilities are mainly primary and secondary schools, lacking facilities for lifelong learning and science/technology education; medical facilities are mainly community health service centers, lacking demonstration sites for AI+smart healthcare; commercial facilities are mainly traditional ground-floor shops, lacking composite commercial spaces for young tech-savvy demographics. In terms of public space, the Jing-Zhang Railway corridor lacks systematic public spaces, the Xiaoyue River waterfront is not fully accessible, and green space service radius coverage is low.
+The site's current public service facilities are predominantly traditional community services, with severe insufficiency in internationalized and intelligent services for AI innovation talent. Educational facilities are mainly primary and secondary schools, lacking facilities for lifelong learning and science/technology education; medical facilities are mainly community health service centers, lacking demonstration sites for AI+smart healthcare; commercial facilities are mainly traditional ground-floor shops, lacking composite commercial spaces for young tech-savvy demographics. In terms of public space, the Jing-Zhang Railway corridor lacks systematic public spaces, the Xiaoyue River waterfront is not fully accessible, and green space service radius coverage is low. These judgments are qualitative analyses based on public map POI and service facility information, not official survey conclusions.
 
 ### Current Problem Diagnosis
 
@@ -96,6 +113,8 @@ Based on the above analysis, this proposal identifies five core problems facing 
 | 3 | Low road network density | Secondary road density approximately 6 km/km², oversized block scale | Densify secondary road network to ≥10 km/km², open small blocks |
 | 4 | Mismatched public services | Facilities are predominantly traditional, lacking AI talent services | Build three-tier neighborhood center system + AI-empowered services |
 | 5 | Inefficient industrial space | Large amounts of underutilized industrial/warehouse land | Convert to AI R&D, incubation, and mixed-use functions |
+
+![Site Analysis Diagram: Land Structure and Five Core Issues](assets/figures/site-analysis.en.png)
 
 ## Design Principles
 
@@ -170,6 +189,26 @@ The core concept "Innovation Circle" directly derives the "one corridor, three c
 - **Wings** → East Wing Catalysis (Zhongguancun Sci-Tech Service Corridor) and West Wing Experience (Xiaoyue River Scenario Empowerment Belt) — innovation radiation networks
 - **Rings** → Blue-green slow-mobility ring (heritage park + Qinghe + Xiaoyue River), innovation liaison ring (three corridors perpendicular to the main axis), and AI service ring (distributed AI service node network) — forming the innovation circulation circle
 
+![Concept Derivation: From Jing-Zhang Railway History to the "Innovation Circle" Spatial Structure](assets/figures/concept-diagram.png)
+
+The complete derivation chain is: the century of indigenous innovation in the Jing-Zhang Railway (cultural gene) → the Jing-Zhang innovation corridor linking universities and industrial space (spatial carrier) → the AI ecosystem innovation network (functional core) → three-zone two-wing regional coordination (radiation pattern) → the "one corridor, three cores, two wings, three rings" spatial structure (built form). The "Innovation Circle" is not label-style naming but a spatial organizational logic derived layer by layer from the site's historical gene, current resources, and taskbook requirements — every conceptual link has a corresponding spatial carrier and implementation anchor.
+
+**Naming System: Three Belts Self-Consistent with the Spatial Structure**
+
+To strengthen the overall recognizability of the concept system, this proposal assigns unified names to the three functional belts defined in the taskbook, keeping them self-consistent with the "Innovation Circle" core concept:
+
+| Taskbook Belt Positioning | Proposal Name | Corresponding Spatial Carrier | Relationship with the "Innovation Circle" |
+|--------------------------|---------------|-------------------------------|-------------------------------------------|
+| Centennial Jing-Zhang Cultural Belt | Heritage Belt | Jing-Zhang Heritage Park Innovation Main Axis | Cultural gene of the Innovation Circle, carrying historical narrative and public space |
+| Urban AI Life Experience Belt | Life Belt | Source Community + West Wing Experience (Xiaoyue River Scenario Empowerment Belt) | Vibrant scenarios of the Innovation Circle, carrying AI life experience and community services |
+| AI Convergence Innovation Belt | Innovation Belt | Wisdom Valley + Bell Boundary + East Wing Catalysis (Zhongguancun Sci-Tech Service Corridor) | Functional core of the Innovation Circle, carrying R&D acceleration and industrial transformation |
+
+**Formal Naming of Three Cores and Two Wings**: The three key areas are formally named "Wisdom Valley (Zhongzhiyuan AI Indigenous Innovation Acceleration Zone)," "Source Community (Beijing AI Origin Community)," and "Bell Boundary (Dazhongsi AI Industry Cluster Zone)," corresponding to the three links of the "R&D acceleration — scenario validation — industrial transformation" innovation chain; the two wings are named "East Wing Catalysis (Zhongguancun Sci-Tech Service Corridor)" and "West Wing Experience (Xiaoyue River Scenario Empowerment Belt)," clarifying the dual radiation division of "factor services — scenario experience."
+
+**Node Naming System**: Spatial nodes along the corridor are named by the pun principle of "railway vocabulary + AI semantics" — such as "Open-Source Switch Station" (open-source achievement gallery), "Signal Light Plaza" (AI scenario testing plaza), "Sleeper Neighborhood" (developer walking path communities), and "Milestone Station" (Jing-Zhang AI milestones). Node naming extends the "railway element translation" visual language of the VI system, forming a unified naming-visual-experience chain across space, signage, and branding.
+
+The naming system is a conceptual suggestion; formal naming shall be determined through public solicitation, expert deliberation, and cultural authority review.
+
 **Three Positioning Synergies**: The Centennial Jing-Zhang Cultural Belt positioning is realized through railway heritage preservation, Zhan Tianyou innovation spirit inheritance, and cultural narrative system; the Urban AI Life Experience Belt positioning is realized through AI+ scenario cards, public space experience routes, and future life blocks; the AI Convergence Innovation Belt positioning is realized through full-stack R&D, industrial acceleration, and ecosystem service systems [source:AGENT-TASKBOOK].
 
 **Five Function Mappings**: The AI full-stack indigenous innovation system is anchored by Wisdom Valley; the world-class AI ecosystem innovation uses three-core linkage as its skeleton; the AI+ scenario empowerment paradigm uses the West Wing Experience as its testing ground; the intelligent AI vibrant city is expressed through the public space network and smart-native new business formats; AI governance global discourse is carried by open-source co-governance mechanisms and the agent contribution honor system.
@@ -196,14 +235,14 @@ This proposal's regional synergy is not limited to the internal three cores and 
 
 The following six global AI ecosystem innovation cases provide reference for the spatial and operational mechanism design of the innovation belt [source:AGENT-TASKBOOK]:
 
-| Case | Location | Core Experience | Spatial Translation Insight |
+| Case | Location | Core Experience | Spatial Translation Insight (Corresponding Design Decision) |
 |------|----------|-----------------|---------------------------|
-| Google Mountain View Campus | California, USA | Open campus integrated with city, seamless connection between AI R&D and public space | Wisdom Valley should break down walls and seamlessly connect with Jing-Zhang Heritage Park |
-| Singapore One-North | Singapore | Mixed layout of tech park with residential, commercial, and cultural; TOD-oriented | Source Community should adopt mixed functions, organized around rail stations |
-| London King's Cross | London, UK | Railway site regenerated as innovation district, historic buildings coexist with new AI offices | Bell Boundary should preserve railway industrial heritage and overlay with AI new business formats |
-| Shenzhen Nanshan Tech Park | Shenzhen, China | Upstream and downstream industry chain clustering, complete chain from R&D to industrialization | Three cores should form a north-south chain from basic research to industrial transformation |
-| Tokyo Shibuya Stream | Tokyo, Japan | Rail hub station-city integration, AI scenarios embedded in daily life | Rail station surroundings should deploy AI life scenario experience functions |
-| Paris Station F | Paris, France | Old train station transformed into world's largest startup campus, open innovation platform | Jing-Zhang Railway heritage buildings can be transformed into AI accelerators and open labs |
+| Google Mountain View Campus | California, USA | Open campus integrated with city, seamless connection between AI R&D and public space | Wisdom Valley removes walls and gates; R&D building ground floors host open lab display windows (see "Open Innovation Block System") |
+| Singapore One-North | Singapore | Mixed layout of tech park with residential, commercial, and cultural; TOD-oriented | Source Community organizes mixed-function blocks around rail stations, with neighborhood centers within 500m of stations (see "Three-Tier Neighborhood Center System") |
+| London King's Cross | London, UK | Railway site regenerated as innovation district, historic buildings coexist with new AI offices | Bell Boundary preserves railway industrial heritage, implants AI offices and commerce into old buildings for new-old overlay (see "Retain" category of retain-renovate-demolish-new) |
+| Shenzhen Nanshan Tech Park | Shenzhen, China | Upstream and downstream industry chain clustering, complete chain from R&D to industrialization | Three cores form a north-south "R&D-validation-transformation" chain linked to university innovation sources along the corridor (see "Three-Core Two-Wing Innovation Circuit") |
+| Tokyo Shibuya Stream | Tokyo, Japan | Rail hub station-city integration, AI scenarios embedded in daily life | Deploy AI life scenarios and transit interchange within 500m of stations such as Dazhongsi (see "Rail Station Integration") |
+| Paris Station F | Paris, France | Old train station transformed into world's largest startup campus, open innovation platform | Convert Jing-Zhang Railway station heritage into AI accelerators and railway warehouses into open-source labs (see retain-renovate-demolish-new) |
 
 The common insight from these cases: successful AI ecosystem innovations are not isolated tech parks, but urban areas deeply embedded in the city, with historical continuity, open public space, and complete industry chains. The spatial design of the AI Ecosystem Innovation Corridor should follow this logic.
 
@@ -246,54 +285,37 @@ The Taihu Science City research distilled nine evolution laws of science city de
 
 This section draws on the research "Can Latecomers Catch Up in Science & Technology Ecosystems? — The Cases of Boston and New York" to extract core insights for the Jing-Zhang AI Innovation Belt [source:EXTERNAL-REF-BOSTON-NY].
 
-**Boston's Lesson — "Factor-First Delusion"**
+**Core Lesson — "Factor-First Delusion"**: Boston possesses top-tier universities such as Harvard and MIT and deep industrial heritage — arguably the best factor endowment — yet was overtaken in venture capital scale and unicorn count by New York, which was a "tech desert" only two decades ago. The research attributes Boston's decline to institutional pressure on tech entrepreneurs, closed interest-group culture, and a social atmosphere lacking tolerance for failure — stacking universities, labs, and computing power alone cannot win the science & tech competition. Hardware is only the foundation; the ecosystem is what matters.
 
-Boston possesses top-tier universities such as Harvard and MIT, nearly 300 Nobel laureates, and deep industrial heritage — arguably the best factor endowment. However, in 2025, New York's total venture capital reached approximately $25 billion (2nd globally), while Boston's was only about $6 billion (less than one-quarter of New York's); in 2026, the number of global unicorns was 141 in New York (2nd) versus only 20 in Boston (13th). Boston's decline stems from three major institutional and cultural barriers:
-
-1. **Institutional barriers**: Massachusetts refused QSBS exemption, imposed a 4% millionaire surtax, and levied 6.25% sales tax on SaaS, creating "punitive" pressure on tech entrepreneurs.
-2. **"Pirate culture"**: Investors exploited information asymmetry to pressure tech entrepreneurs; LPs colluded in closed networks, forming zero-sum interest groups.
-3. **"Ressentiment culture"**: Society held hostility toward successful innovators, lacking a culture of tolerance for failure.
-
-**New York's Counterattack — The Science & Tech Ecosystem "Five-Piece Toolkit"**
-
-New York transformed from a "tech desert" in 2004 to the world's second-largest tech center. The core strategy is a "five-piece toolkit":
+**New York's Counterattack — The "Five-Piece Toolkit"**:
 
 | Strategy | Specific Measures | Insight for Jing-Zhang |
 |----------|------------------|----------------------|
-| 1. Applied Science Initiative | Built Cornell Tech, Alexandria Center, and other new university campuses | Zhongzhiyuan should introduce top AI research institutions to fill the applied research gap |
-| 2. City of Quality of Life | Dense layout of cafes, bookstores, museums, and public spaces, forming a "life as innovation" ecosystem | AI Origin Community should build a 15-minute life circle so young people "come and don't want to leave" |
-| 3. Co-creation Space Program | Incubators (AUDUBON, BXL), co-working (WeWork, Chashama), maker spaces | The corridor should have multi-tier incubation spaces at regular intervals, lowering barriers to entrepreneurship |
-| 4. Financing Incentive Program | 30-35% electricity discount, commercial expansion rent reduction, $300K/year tax reduction for emerging tech enterprises | Suggest pursuing dedicated AI enterprise tax and cost reduction policies |
-| 5. Facility Renewal Program | Free public WiFi, Digital NYC platform, 200K mixed-income apartments, immigrant community renovation | Base consolidation should prioritize infrastructure renewal, building inclusive communities |
+| 1. Applied Science Initiative | Built Cornell Tech and other new university campuses | Zhongzhiyuan should introduce top AI research institutions to fill the applied research gap |
+| 2. City of Quality of Life | Dense cafes, bookstores, museums, and public spaces | AI Origin Community should build a 15-minute life circle so young people "come and don't want to leave" |
+| 3. Co-creation Space Program | Multi-tier incubators, co-working, maker spaces | Deploy a co-creation node every 500m along the corridor, lowering barriers to entrepreneurship |
+| 4. Financing Incentive Program | Electricity discounts, rent reduction, tax reduction | Suggest pursuing dedicated AI enterprise tax and computing power subsidies |
+| 5. Facility Renewal Program | Free public WiFi, mixed-income apartments, community renovation | Base consolidation should prioritize infrastructure renewal, building inclusive communities |
 
-As of end-2025, New York's Silicon Alley had 8,000+ startups, 360,000 high-tech workers, 125 unicorns, and total market capitalization exceeding $100 billion.
-
-**Core Conclusions**:
-
-- **Beware of "factor-first delusion"**: Cannot rely solely on stacking universities, labs, and computing power — must cultivate a healthy science & tech ecosystem. Hardware is only the foundation; the true core is the ecosystem — "without soil, seeds cannot germinate."
-- **Soft environment is the air and water of innovation**: Low-friction business environment, trust-based contract spirit, and a social culture that tolerates failure and reveres tech entrepreneurs — all three are indispensable.
-- **Grassroots power is the source of innovation**: Not only focus on large projects, but also stimulate diverse, grassroots innovation forces, letting them grow into "towering trees."
-- **Immigration is a super engine of innovation**: Assimilated immigrants with 10+ years of residence are 3 times more likely to obtain patents than native residents; diversity is the soil for disruptive innovation.
+**Design Landing Point for Jing-Zhang**: The above insights have been directly translated into the "Jing-Zhang Five Tools" and "OPC Ecosystem Embedding" pillars in the "Science and Technology Innovation Ecosystem Building Strategy" chapter. This section retains only the overarching judgment of "soft ecosystem before hard factors" as a design premise; specific design strategies are detailed in that chapter [source:EXTERNAL-REF-BOSTON-NY].
 
 ### South Bank New Land OPC Innovation Community Model Reference
 
-This section references the Suzhou South Bank New Land OPC Innovation Community practice, providing a reference for the community-level science & tech ecosystem construction of the Jing-Zhang AI Innovation Belt [source:EXTERNAL-REF-OPC].
+This section references the Suzhou South Bank New Land OPC Innovation Community practice to distill transferable models for community-level science & tech ecosystems [source:EXTERNAL-REF-OPC].
 
-**OPC (One Person Company) Core Concept**: "One-person army, AI-empowered, global outreach, deep industry cultivation" — centered on the "super individual + AI" model, building a benign ecosystem that supports one-person company landing.
+**OPC Core Concept**: "One-person army, AI-empowered, global outreach, deep industry cultivation" — centered on the "super individual + AI" model, building a benign ecosystem that supports one-person company landing.
 
-**OPC Five Ecosystem Modules and 14 Service Elements**:
+**Five Ecosystem Modules and Translation for Jing-Zhang**:
 
 | Module | Service Elements | Translation Suggestion for Jing-Zhang |
 |--------|-----------------|--------------------------------------|
-| 1. Basic Support | Zero-threshold light-start space, downstairs entrepreneurship | Set up OPC light-start spaces in AI Origin Community talent apartments |
-| 2. Government & Professional Services | One-stop policy access, digital compliance, enterprise service outsourcing | Establish AI Innovation Belt government direct service window |
-| 3. Capability Growth & Practice | Entrepreneurship growth stations, industry practice classrooms | Set up developer growth stations along the corridor with regular industry practice classes |
-| 4. Technology Empowerment | Tool empowerment, inclusive computing power, full-link large model | Open edge computing nodes to OPC entrepreneurs, lowering AI development barriers |
-| 5. Market Transformation & Resource Linking | Global go-global integration, precise capital matching, live-streaming entrepreneurship, market testing ground | Set up AI scenario market experience space, connecting Zhongguancun capital with global markets |
+| 1. Basic Support | Light-start space, talent apartment "downstairs entrepreneurship" | Set up OPC light-start spaces in AI Origin Community, maker workstations on talent apartment ground floors |
+| 2. Government & Professional Services | One-stop policy access, compliance, enterprise service outsourcing | Establish AI Innovation Belt government direct service window, one-stop compliance services |
+| 3. Capability Growth & Practice | Entrepreneurship growth stations, industry practice classes | Set up developer growth stations along the corridor with regular industry practice classes |
+| 4. Technology Empowerment | Inclusive computing power, full-link large model tools | Open edge computing nodes inclusively to OPC entrepreneurs |
+| 5. Market Transformation & Resource Linking | Global go-global integration, capital matching, market testing ground | Set up AI scenario market experience space, connecting Zhongguancun capital with global markets |
 
-**OPC Five-Minute Life Circle**: South Bank New Land is equipped with talent apartments, commercial, sports, and leisure parks, forming a "work-life-social" five-minute closed loop. This model is highly compatible with the Jing-Zhang AI Origin Community's neighborhood center system — each community neighborhood center is an OPC ecosystem node, where entrepreneurs can start businesses downstairs and reach life amenities within five minutes.
-
-**Core Insight for Jing-Zhang**: The Jing-Zhang AI Innovation Belt should embed OPC ecosystem modules in each neighborhood center, building "super individual + AI + community" micro-innovation units. Let innovation be not the privilege of a few large enterprises, but a daily activity that every community and every person can participate in.
+**Core Insight and Design Landing Point for Jing-Zhang**: The OPC five-minute life circle is highly compatible with the Jing-Zhang AI Origin Community's neighborhood center system — each community neighborhood center is an OPC ecosystem node, where entrepreneurs can start businesses downstairs and reach life amenities within five minutes. This model has been implemented in Pillar 3 (OPC Ecosystem Embedding) of the "Science and Technology Innovation Ecosystem Building Strategy" chapter as five embedding measures covering space, services, technology, market, and growth; see that chapter for details [source:EXTERNAL-REF-OPC].
 
 ## Science and Technology Innovation Ecosystem Building Strategy
 
@@ -352,6 +374,8 @@ This proposal proposes the "One Corridor, Three Cores, Two Wings, Three Rings" o
 **Two Wings**: East Wing Catalysis (Zhongguancun Sci-Tech Service Corridor) and West Wing Experience (Xiaoyue River Scenario Empowerment Belt). The wings are not independent areas but extensions and supplements of the three cores' functions — the East Wing provides capital, IP, and technology services, connecting Zhongguancun's tech finance resources; the West Wing provides scenario testing and urban vitality, connecting community life scenarios. The two wings form a bidirectional innovation radiation network.
 
 **Three Rings**: Blue-green slow-mobility ring, innovation liaison ring, and AI service ring, constituting the innovation circulation circle. The blue-green slow-mobility ring connects the heritage park, Qinghe River, and Xiaoyue River; the innovation liaison ring consists of three corridors perpendicular to the main axis, laterally connecting the corridor with the two wings; the AI service ring consists of a distributed AI service node network covering intelligent perception and response across the entire corridor. The three rings enable university innovation sources, the corridor main axis, nodes, and wings to form a complete innovation circulation loop.
+
+![Spatial Structure Diagram: One Corridor · Three Cores · Two Wings · Three Rings](assets/figures/spatial-structure.en.png)
 
 ### Land Use Layout
 
@@ -413,6 +437,12 @@ The slow-mobility system uses the Jing-Zhang corridor as its core, extending eas
 
 ![Three Key Area Index and Design Tasks](assets/figures/key-areas.png)
 
+![Zhigu Node Plan and Railway Element Translation](assets/figures/node-zhigu.en.png)
+
+![Yuan Community Node Plan and Inclusive Design Annotations](assets/figures/node-origin.en.png)
+
+![Core Area Axonometric: Three Cores along the Corridor](assets/figures/axonometric.en.png)
+
 ## AI Ecosystem Innovation, User Personas, and AI+ Scenarios
 
 ### User Personas (5 Types)
@@ -468,6 +498,17 @@ The following 12 AI scenario cards are deployed along the AI Ecosystem Innovatio
 - Human review: Teachers can review AI recommendations
 - Operating entity: Educational institution + technology provider
 - Visualization layers: SCENARIO_NODE + BUILDING_FOOTPRINT
+
+**AI+Education Initiative: University-Industry-Community Tri-Party Linkage**
+
+Building on Scenario Card 4, this proposal expands AI+education into a dedicated initiative spanning the full lifecycle and linking universities, industry, and communities across three layers — "reinforcing basic education, promoting higher-education innovation, and leading lifelong learning":
+
+- **University side (innovation source supply)**: Leveraging Tsinghua, BUAA, USTB, BUPT, BJTU and other universities, establish "university-enterprise joint labs + open classrooms" along the corridor, connecting university AI courses with industry projects so student projects can enter the Wisdom Valley accelerator for incubation in place; open university AI general courses to communities, forming an "university intelligence" spillover channel.
+- **Industry side (scenario supply)**: AI enterprises open real business scenarios as teaching cases and training projects, with an "industry mentor" mechanism; co-build AI training bases and large-model evaluation workshops where students and developers can train, evaluate, and release models in compliant environments, forming an "industry problem → education topic → innovation outcome" closed loop.
+- **Community side (inclusive supply)**: Each tier-1 neighborhood center sets up an AI education corner covering K12 programming initiation, elderly digital classrooms, and non-digital-user digital assistance; deploy public-facing AI science experience halls in Dazhongsi and Source Community; introduce a "learning points" mechanism linked to the honor system to encourage lifelong learning.
+- **Safeguard mechanism**: AI+education scenarios follow data compliance requirements — minor data is handled per personal information protection provisions, learning data is not shared across platforms; AI recommendations must pass teacher review; non-digital channels and human services remain always available.
+
+This initiative and Scenario Card 4 complement each other: Scenario Card 4 addresses the single "personalized learning" scenario, while this initiative elevates education into innovation belt infrastructure — serving future innovation talent while preventing digital divides from solidifying in the next generation.
 
 **Scenario Card 5 - AI Guide and Cultural Narrative**
 - Location: Jing-Zhang Corridor full length
@@ -636,6 +677,17 @@ Rail stations distributed along the corridor implement station-city integrated d
 
 Traditional municipal facilities are integrated with new AI infrastructure. Distributed energy systems are deployed in three-core building clusters, with edge computing facilities distributed along the corridor to support low-latency AI scenarios. New infrastructure includes AI computing nodes, edge computing facilities, 5G/6G base stations, and robot delivery stations.
 
+### Digital Twin and Adaptive City
+
+To support the "perceive-decide-respond" intelligent closed loop, this proposal builds a digital twin city foundation on top of the new infrastructure, endowing the innovation belt with adaptive, evolvable capability:
+
+- **Digital twin foundation (CIM-level)**: Prioritize the corridor and key areas to build a three-dimensional City Information Model (CIM), integrating building volumes, underground utilities, rail facilities, blue-green space, and operational data from the 12 AI scenario nodes, forming a "one-screen overview, one-click simulation" digital foundation. Every adjustment to conceptual volumes and planning schemes is first simulated in the twin environment to assess impacts on transportation, daylight, landscape, and public space before implementation.
+- **Adaptive city operation mechanism**: Deploy a "planning sandbox — scenario simulation — operational feedback" three-layer mechanism based on the twin foundation — planning adjustments are simulated first, scenario deployments validated first, and operational data flows back for correction, shifting urban design from "one-shot finalization" to "continuous evolution."
+- **Digital carrier of the AI Service Ring**: The AI Service Ring (distributed AI service node network) uses the digital twin foundation as its data hub; real-time operational data collected at nodes (desensitized and aggregated) flows back to the twin model, supporting dynamic responses in traffic signal optimization, energy regulation, and security early warning.
+- **Implementation and compliance boundary**: Digital twin platform construction is a conceptual suggestion requiring implementation after data classification, network, and data security assessments pass; no personal sensitive information is collected or stored — only desensitized aggregated data is used; platform construction and operation entities are to be confirmed.
+
+The above digital twin and adaptive city content is conceptual; specific technical solutions, data architecture, and security boundaries require professional team deepening.
+
 All municipal capacity and engineering feasibility conclusions are subject to professional measurement confirmation; this proposal only provides conceptual layout suggestions.
 
 ![Transportation Slow-Mobility and Blue-Green Public Space Composite System](assets/figures/mobility-bluegreen.png)
@@ -675,6 +727,76 @@ All landmarks are conceptual suggestions and shall not be represented as approve
 ### Urban Landscape
 
 Urban landscape control follows the "historical base, technological accent, ecological foundation" principle. The historical base uses Jing-Zhang Railway industrial heritage and Dazhongsi traditional buildings as the keynote; the technological accent uses AI interactive devices and smart lighting as embellishments; the ecological foundation uses blue-green space and biodiversity as the background. Building height, massing, color, and material control will be refined after official regulatory planning conditions are provided.
+
+## Centennial Jing-Zhang Cultural Narrative and Guide System
+
+The Jing-Zhang Railway is China's first trunk railway designed and built indigenously (opened 1909), a landmark of Chinese modern industrial civilization and indigenous innovation spirit. This proposal elevates Jing-Zhang culture from "static preservation" to an "experiential narrative system": a three-part story line governs spatial design, two guide routes organize the experience journey, and railway element translation runs through all design elements, making culture the innovation belt's most distinctive identity.
+
+### Three-Part Narrative: From the Centennial Jing-Zhang to AI Rebirth
+
+| Narrative Segment | Time Anchor | Theme | Spatial Carrier | Corresponding Function |
+|--------|----------|------|----------|----------|
+| Part 1 - Yesterday: Origin of Indigenous Innovation | 1909, Zhan Tianyou's Jing-Zhang Railway opened | The beginning of Chinese indigenous innovation: switchback railway, shaft excavation method | Nankou-to-Qinghe railway heritage, Zhan Tianyou-related historical nodes | Heritage preservation, historical display, educational study |
+| Part 2 - Today: Railway Heritage Regeneration | 2016, Jing-Zhang High-Speed Railway opened, old line closed; heritage park construction | Railway transforms from transport facility to urban public space; heritage activation and adaptive reuse | Jing-Zhang Heritage Park, renovated station buildings, switch plaza | Public space, cultural display, community life |
+| Part 3 - Tomorrow: AI Innovation Symbiosis | 2026, AI Innovation Belt construction launched | Indigenous innovation spirit continues in the AI era: from "Chinese railway self-reliance" to "Chinese AI self-reliance" | Three cores (Wisdom Valley, Source Community, Bell Boundary) and corridor AI scenario nodes | Innovation agglomeration, scenario experience, international exchange |
+
+The narrative core is **indigenous innovation spirit carried through the generations**: in 1909, the Chinese built the Jing-Zhang Railway autonomously, breaking through terrain and technological blockade; in 2026, the Jing-Zhang AI Innovation Belt challenges AI frontiers and ecosystem building. The railway's century-long narrative lends historical depth and cultural legitimacy to AI innovation, while AI innovation gives the railway heritage contemporary meaning — together forming the complete story of "Centennial Jing-Zhang, Smart Convergence."
+
+### Two Cultural Guide Routes
+
+This proposal organizes two complementary guide routes along the corridor, respectively serving historical study and innovation experience, forming an "yesterday-meets-tomorrow" experience structure:
+
+**Route A: Zhan Tianyou Footprint Line (Cultural Study)** — running north to south through railway historical nodes, covering railway heritage, station relics, switches, and signal facilities, with AR historical restoration and AI voice guides, serving student study tours, cultural enthusiasts, and international visitors:
+
+1. **Nankou Starting Station**: Jing-Zhang Railway Nankou section heritage, origin of the switchback railway, featuring historical exhibits and AR restoration experience
+2. **Switch Plaza**: Preserve original railway switches, translated as a "track divergence = innovation path choice" themed landscape
+3. **Signal Light Station**: Railway signal facilities converted into AI guide interaction nodes; signal light color codes (red-yellow-green) become guide codes
+4. **Milestone Station**: Jing-Zhang AI milestones, 1909-2026 centennial innovation timeline
+5. **Dazhongsi Terminal Station**: Railway culture experience plaza, connecting with Dazhongsi historical context
+
+**Route B: Open-Source Innovation Path (AI Experience)** — running south to north through AI innovation nodes, covering the three cores and corridor AI scenarios, serving developers, enterprise visitors, and investment institutions:
+
+1. **Zhongzhiyuan Open-Source Plaza**: Open-source achievement gallery + agent contribution honor wall, showcasing AI innovation outcomes
+2. **Sleeper Neighborhood**: Core segment of the developer walking path; rail and sleeper elements translated into public furniture, with open-source lab display windows along the route
+3. **Future Life Experience Street**: Source Community's concentrated AI life scenario experience zone
+4. **Scenario Testing Plaza**: Launch site for AI scenario testing and release, witnessing "from concept to implementation"
+5. **Jing-Zhang AI Innovation Conference Permanent Venue**: Bell Boundary international conference center, telling the AI Innovation Belt story to the world
+
+![Cultural Guide Route Map: Route A Zhan Tianyou Footprint Line + Route B Open-Source Innovation Path](assets/figures/cultural-route.png)
+
+The two routes converge at the mid-corridor "Milestone Station-Signal Light Station" composite node, forming a spatial anchor of "history and future meet here," where visitors can switch routes.
+
+### Spatial Node System and Translation Techniques
+
+Cultural narrative is implemented across all design elements through a unified "railway element translation" approach, consistent with the VI system (signage design):
+
+| Translation Technique | Railway Prototype | Design Translation | Application Location |
+|----------|----------|----------|----------|
+| Rail paving | Rails and ties | Preserve original ties in platform paving; rail patterns guide pedestrian flows in public spaces | Public space nodes along the corridor |
+| Sleeper seating | Sleepers | Recycled sleepers as seating and landscape pieces | Developer walking path, community parks |
+| Signal light signage | Railway signal lights | Red-yellow-green signal color codes translated into signage hierarchy coding | Corridor-wide signage |
+| Steel rail wall | Retired steel rails | Recycled retired rails into feature walls and honor engravings (agent contribution honor wall) | Zhongzhiyuan core public space |
+| Ballast garden | Ballast gravel | Ballast as permeable paving and dry landscape garden material, with sponge functionality | Green space along both sides of the corridor |
+
+**Implementation and safeguards**: Cultural narrative content is led by cultural authorities and jointly reviewed by railway history experts and AI industry experts to avoid historical misreading and over-entertainment; guide routes are data-linked with the AI guide scenario (Scenario Card 5); all cultural display facilities are incorporated into the renewal project list for unified implementation [source:AGENT-TASKBOOK].
+
+> Statement: This cultural narrative system is a conceptual suggestion. Historical narrative content requires review by railway history experts, heritage authorities, and cultural authorities before implementation; areas involving heritage protection are subject to heritage authority approval.
+
+### Inclusive Guide and Accessibility Experience
+
+The cultural guide system is designed for all ages and all ability levels, embedding inclusivity across routes, facilities, and services:
+
+**Accessible Guide Loop**: A 9 km fully accessible loop is set along the Jing-Zhang Heritage Park main axis. Pavement uses permeable asphalt and pressed-ballast finishes; the loop has no steps and gradients ≤4%. It is co-located with tactile paving, wheelchair rental points, and accessible restrooms. Within a 300 m radius of each class-1 neighborhood center, at least one wheelchair rental point and one emergency call point are guaranteed.
+
+**Age-Friendly Stations**: One "age-friendly station" is arranged every 600–800 m along the route, providing seating with armrests and backrests, drinking water, first-aid kits, and volunteer assistance. Stations are co-located with existing bus stops and neighborhood centers to ensure a 5-minute walk for older adults. Signal-light wayfinding adds large-print and voice-prompt versions ahead of each station, with color codes and audio cues synchronized.
+
+**Children's Science Trail**: A dedicated 1.2 km children's science trail is set within the Yuan Community segment (between stops 2 and 3 of Route B). The trail uses the "Century-Old Jing-Zhang to AI New Life" narrative and features touchable exhibits, age-appropriate voice explanations, and ground-painted railway-culture graphics. A parent waiting area and emergency contact point are placed beside each exhibit. The children's trail is separated from the main guide route to ensure children's activities do not interfere with main circulation.
+
+**Multi-Modal AI Guide**: The AI guide scenario (Scenario Card 5) provides voice, text, tactile QR, and large-print modes. Visually impaired visitors can use directional voice guide; hearing-impaired visitors can use AR sign-language commentary; cognitively impaired visitors can use picture-and-text simplified versions. All guide devices are designed to accessibility standards and do not create new digital divides.
+
+**Implementation and Accountability**: Inclusive design is integrated into the renewal project list for unified implementation. The civil affairs bureau, disability federation, and sub-district offices jointly supervise acceptance. The accessible guide loop, age-friendly stations, and children's science trail are mandatory public-space elements and shall not be cut due to cost compression.
+
+> Companion interactive layer map (with layer toggles, node hover, route display) is at `visual/index.html`; open in browser to interactively browse this proposal's spatial structure and node system.
 
 ## Renewal Project List, Implementation Policy, and Phasing Plan
 
@@ -869,6 +991,25 @@ The following are core metrics and their recalculation status [metric:core_metri
 | Regional synergy nodes | 5 | directions | Design | design_concept |
 
 All area metrics recalculated based on provisional boundaries are labeled "provisional" and require recalculation when official precise boundaries become available [metric:provisional_area_warning].
+
+### Current-State-Target Indicator Comparison
+
+To establish a complete "current state — target — gap" evidence chain, this proposal aligns current condition analysis with design target indicators. Current values are derived from public-source estimation in the "Site Current Condition Analysis" chapter; target values are this proposal's design targets:
+
+| Indicator | Current Value (Estimated) | Target Value | Improvement | Current Value Source |
+|-----------|---------------------------|--------------|-------------|----------------------|
+| Green coverage | ~18% | ≥35% | +17 pct points or more | OSM green/water basemap estimation [source:SRC-OSM-COPYRIGHT] |
+| Secondary road density | ~6 km/km² | ≥10 km/km² | +~67% | OSM road basemap estimation [source:SRC-OSM-COPYRIGHT] |
+| Public green space & plaza share | ~5% | ≥12% | +7 pct points or more | OSM land-use basemap estimation [source:SRC-OSM-COPYRIGHT] |
+| Rail station 500m coverage | Medium-low (concentrated around major stations) | ≥80% (key areas) | Substantial improvement | Beijing Metro public line map estimation |
+| Five-minute life circle coverage | Medium-low (traditional community services) | ≥90% | Substantial improvement | Qualitative judgment from public service POIs |
+| Slow-mobility corridor connectivity | Discontinuous (railway severs east-west) | Fully connected (~9 km uninterrupted) | From severed to connected | Current condition analysis |
+| AI scenario nodes | No systematic deployment | 12 | From 0 to 12 | Current condition analysis |
+| Annual runoff volume capture rate | Traditional drainage dominant | ≥80% | From compliant to exemplary | Current condition analysis |
+
+> Note: Current values are public-source estimations or qualitative judgments, not official survey data; target values are this proposal's design targets. All figures require re-verification once official current condition survey data and precise boundaries become available.
+
+![Current-State vs Target Indicator Dashboard: Visualized Comparison of 8 Key Indicators](assets/figures/metrics-dashboard.en.png)
 
 ### Area Recalculation Notes
 
@@ -1106,5 +1247,6 @@ The following materials require updating of the proposal after official completi
 26. Repository maintainer-provided provisional rough boundary data, June 5, 2026.
 27. OpenStreetMap Copyright and License (ODbL), used for background reference.
 28. Taihu Science City Strategic Planning and Conceptual Urban Design — research on the connotation and evolution law of world-class national science cities, including case studies of 10 international science cities (Silicon Valley, New York, Boston, Cambridge/Oxford, Daedeok, Munich, Tsukuba, Sophia Antipolis, One-North, etc.) and 9 evolution laws, used for science city case reference.
-28. "Can Latecomers Catch Up in Science & Technology Ecosystems? — The Cases of Boston and New York" (external reference research, SRC-EXTERNAL-REF-BOSTON-NY). Note: Statistics cited from this source are unverified and require independent confirmation.
-29. Suzhou South Bank New Land OPC Innovation Community practice (external reference, SRC-EXTERNAL-REF-OPC).
+29. Beijing 7th National Population Census communiqué and subdistrict public data, Beijing and Haidian District statistical yearbooks and bulletins, used for current population and employment data estimation.
+30. "Can Latecomers Catch Up in Science & Technology Ecosystems? — The Cases of Boston and New York" (external reference research). Note: Statistics cited from this source are unverified and require independent confirmation.
+31. Suzhou South Bank New Land OPC Innovation Community practice (external reference).

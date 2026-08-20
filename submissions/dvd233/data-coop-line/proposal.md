@@ -19,11 +19,19 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案首先回应《百年京张 AI 创新带城市设计国际方案征集资格预审公告》及面向智能体的任务书：统筹研究、总体设计、三处重点区域、AI 创新生态和长期运营必须互相校核，而不能用一个技术展馆代替整条创新带。公告给出的 43.6 平方公里、11.4 平方公里和 368.4 公顷是工作尺度依据；提交包中的可计算边界则来自仓库临时几何，两类数字不可混称。公告、任务书、标准快照与资料用途登记共同构成本方案的事实入口 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]。
 
-资料被分成四层使用。第一层是公告、任务书和本地标准快照，用来界定任务与专业深度；第二层是 `data/source_registry.json` 中许可用于正式表达的公开或已清权资料；第三层是七个国际案例的一手来源，只用于比较制度机制，不直接证明北京的合法性或可实施性；第四层是 `brief/site-package/geometry/provisional_boundaries.geojson` 及由其派生的设计图层，只用于临时生成、讨论和复算。事实导航包帮助组织阅读，但不提升任何来源的权威级别 [source:PROCESSED-FACT-PACK]。
+资料被分成四层使用。第一层是公告、任务书和本地标准快照，用来界定任务与专业深度；第二层是 `data/source_registry.json` 中许可用于正式表达的公开或已清权资料；第三层是七个国际案例的一手来源，只用于比较制度机制，不直接证明北京的合法性或可实施性；第四层是 `brief/site-package/geometry/` 下的 `provisional_boundaries.geojson` 及由其派生的设计图层，只用于临时生成、讨论和复算。事实导航包帮助组织阅读，但不提升任何来源的权威级别 [source:PROCESSED-FACT-PACK]。
+
+| 场地证据 | 发布 / 核验日期 | 允许用途与边界 | 冻结结果 |
+| --- | --- | --- | --- |
+| 官方征集公告 | 发布 2026-05-09；登记访问 2026-06-03 | 可确认项目、文字范围、约面积与任务；不能替代 polygon、道路红线或法定控制 | 本地快照 SHA-256 `158203872171…9cc3` |
+| 仓库临时三层 / 重点区 polygon | 发布 2026-06-05；依据说明核验 2026-08-07；本包复核 2026-08-20 | 只用于临时生成、离线展示、intake 自检和明确标注的非结论性讨论 | 总体范围与三处重点区 4/4 geometry 精确匹配冻结源；源 SHA-256 `0b9ae36bae6e…2306` |
+| 官方控规、文保、道路红线、权属、轨道与蓝线 geometry | 本包复核 2026-08-20 | 未取得可引用的官方或已清权几何；不能用公告文字、OSM 背景或推定线条代填 | `constraints.geojson` 保持 0 feature，并登记 6 类缺口与替换触发器 |
+
+机器台账 `visual/assets/site-evidence-register.json` 冻结 `upstream/main@ce2c6bcee` 的四个来源哈希、4 组 geometry 映射和许可 / 禁用边界；零依赖 `site-evidence-audit.js` 当前 18/18 检查通过。脚本会在来源、geometry、空约束状态或 allowed / prohibited uses 漂移时显式失败；0 个官方控制 feature 表示“缺口已核验”，不表示现实中不存在控制 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/constraints.geojson]。
 
 ![共数京张总体概念与资料状态图](assets/figures/site-overview.png)
 
-当前 `site_boundary.geojson` 与三处 `key_areas.geojson` 均按临时约束范围理解：它们不是官方红线，不能支撑征地、拆迁、审批、精确地价或法定容量结论。所有用地、建筑、道路、绿地、公共空间、约束与分期图层都沿用这一精度等级；官方多边形、控规、权属、道路红线、市政、文保或建筑普查任一项到位时，必须从边界开始整体重建拓扑并重新投影复算，而不能只替换一张底图。当前总体范围的机器读数仅代表这一临时计算包 [data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE]。
+当前 `site_boundary.geojson` 与三处 `key_areas.geojson` 均按临时约束范围理解：它们不是官方红线，不能支撑征地、拆迁、审批、精确地价或法定容量结论。用地、建筑、道路、绿地、公共空间与分期设计层沿用这一精度等级；`constraints.geojson` 则刻意不复制这些范围，因为它负责登记仍缺失的 official control geometry。官方多边形、控规、权属、道路红线、市政、文保或建筑普查任一项到位时，必须从边界开始整体重建拓扑并重新投影复算，而不能只替换一张底图。当前总体范围的机器读数仅代表这一临时计算包 [data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE]。
 
 七个全球案例也被当作“可借鉴的局部机制”，而非成套移植的成功模板。Liverpool 的参与式数据守护、MIDATA 的合作治理、DECODE 的灵活授权、AMdEX 的可机读协议、Open Humans 的分级分享、Greenwich Data Trust 试点和 Amsterdam Algorithm Register 的公开登记分别回答不同问题；它们的城市制度、行业、生命周期和法律环境均与海淀不同。完整网址、日期、权利状态和限制保存在 `sources.json`，正文只在相关设计判断旁引用。由此形成一条审计原则：没有来源的数字不进入指标，没有正式空间条件的判断不升级为控制，没有清晰撤回边界的服务不以“可撤回”宣传。
 
@@ -191,13 +199,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 第五类风险是撤回被夸大。派生链回执只能证明受控范围内采取了哪些动作：删除可控副本、停止未来调用、下架可控输出、标记模型重评或记录无法回滚。它不保证从已训练模型中彻底抹除某个样本影响，也不保证追回第三方副本、公开传播或法定留存材料。第六类风险是算法登记被误作认证；公开项目、模型和责任信息有助于问责，但不能替代公平、合法、安全、性能和专业适用性评估 [source:CASE-AMSTERDAM-ALGORITHM-REGISTER]。
 
-空间与实施风险同样明确：当前边界和重点区为临时约束，法定控规、权属、建筑普查、道路、轨道、市政、消防、洪涝、生态、文保与公共设施资料尚待补齐；面积、比例和建筑基底只在临时计算系统内有效。方案不承诺成立数据合作社法人，不承诺政府、企业、高校、社区或国际机构合作，不承诺资金、土地、采购、审批、场地开放、技术可行性或实施时间，也不把概念性拆改留结论用于真实处置 [source:BOUNDARY-SOURCE] [data:geometry/constraints.geojson]。
+空间与实施风险同样明确：当前边界和重点区为临时约束，法定控规、权属、建筑普查、道路、轨道、市政、消防、洪涝、生态、文保与公共设施资料尚待补齐；面积、比例和建筑基底只在临时计算系统内有效。约束空集已由冻结来源哈希、六类缺口和 fail-loud audit 证明是“知道缺什么”，而不是“已经没有约束”。方案不承诺成立数据合作社法人，不承诺政府、企业、高校、社区或国际机构合作，不承诺资金、土地、采购、审批、场地开放、技术可行性或实施时间，也不把概念性拆改留结论用于真实处置 [source:BOUNDARY-SOURCE] [data:geometry/constraints.geojson]。
 
 主稿、英文译稿、离线 HTML、A3/A0、五组双语图件和本方案生成的原创视觉，仅按清单所列许可参与社区展示；外部来源的事实、案例、标准与数据继续服从各自许可和引用条件。视觉生成提示、模型、人工编辑和素材来源应记入版权声明；人物和场景图是概念表达，不能被当作现场照片或已建成效果。离线页面不得调用远程字体、脚本、地图瓦片、表单、追踪或外部 API。若双语表达发生歧义，以两版共同传达的限制性较强含义为准并人工校正。
 
 ## 参考资料
 
-本方案的本地依据包括：赛事公告，用于确认三层范围、三处重点区域和成果任务 [source:OFFICIAL-ANNOUNCEMENT]；面向智能体任务书，用于确认命名、案例、场景、画像、地标、文化和长期运营要求 [source:AGENT-TASKBOOK]；场地包、标准快照与资料登记表，用于限制哪些资料可以支撑正式表达 [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]；临时边界文件，用于生成当前空间图层但不作为官方红线 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。处理后的事实包只承担导航功能 [source:PROCESSED-FACT-PACK]。
+本方案的本地依据包括：赛事公告，用于确认三层范围、三处重点区域和成果任务 [source:OFFICIAL-ANNOUNCEMENT]；面向智能体任务书，用于确认命名、案例、场景、画像、地标、文化和长期运营要求 [source:AGENT-TASKBOOK]；场地包、标准快照与资料登记表，用于限制哪些资料可以支撑正式表达 [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]；临时边界文件，用于生成当前空间图层但不作为官方红线 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。`site-evidence-register.json` 与审计脚本只证明这些来源和缺口在冻结提交下保持一致，不提升其权威等级；处理后的事实包只承担导航功能 [source:PROCESSED-FACT-PACK]。
 
 国际比较采用七组一手来源记录：Liverpool City Region Civic Data Cooperative 记录参与式守护的探索 [source:CASE-LCR-CIVIC-DATA-COOP]；MIDATA 记录合作治理、选择性授权和撤回日志 [source:CASE-MIDATA-COOP]；EU DECODE 记录 Barcelona 与 Amsterdam 的灵活授权原型及 2019 年项目结束这一时间边界 [source:CASE-EU-DECODE]；AMdEX 记录可机读、可审计共享协议的方向及其仍具愿景性的限制 [source:CASE-AMDEX-DATA-EXCHANGE]。
 

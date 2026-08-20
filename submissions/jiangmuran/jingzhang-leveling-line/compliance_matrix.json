@@ -53,7 +53,8 @@
         "PROV-KEY-001",
         "PROV-KEY-002",
         "PROV-KEY-003"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Coordinated Research Area: Industry and Future City Research'; layers land_use.geojson, key_areas.geojson; metrics land_use_class_count, land_use_feature_count (class 1, recomputed independently by visual/assets/verify.js); metrics case_study_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings land-use-structure.png, ecosystem.png; sources OFFICIAL-ANNOUNCEMENT (registered in sources.json), together. **Of 19 references the reviewer can open 9**; the other 10 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.3.2",
@@ -88,7 +89,7 @@
       "self_check_ids": [
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」「AI 创新生态、人才画像与 AI+ 场景」；图层 public_space.geojson；指标 public_space_ratio、benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；指标 persona_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 street-eye-level.png、kit-of-parts.png；来源 OFFICIAL-ANNOUNCEMENT（登记于 sources.json） 共同支撑。**17 处引用里评审能打开 9 处**，其余 8 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」「AI 创新生态、人才画像与 AI+ 场景」；图层 public_space.geojson；指标 public_space_ratio、benchmark_count（class 1，由 visual/assets/verify.js 独立重算）；指标 persona_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 street-eye-level.png、kit-of-parts.png；来源 OFFICIAL-ANNOUNCEMENT（登记于 sources.json） 共同支撑。**17 处引用里评审能打开 11 处**，其余 6 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "standard_ids": [
         "ELDERLY-SMART-TECH-PLAN-2020-45"
       ],
@@ -96,8 +97,8 @@
         "references": 17,
         "reviewer_can_read_whole": 9,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 8
+        "reviewer_sees_first_page_only": 2,
+        "reviewer_cannot_open": 6
       },
       "risk_ids": [
         "RISK-POLICY-001",
@@ -105,7 +106,8 @@
       ],
       "geometry_feature_ids": [
         "PUBLIC-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the sections 'Coordinated Research Area: Industry and Future City Research', 'AI Innovation Ecosystem, Personas, and AI+ Scenarios'; layers public_space.geojson; metrics public_space_ratio, benchmark_count (class 1, recomputed independently by visual/assets/verify.js); metrics persona_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings street-eye-level.png, kit-of-parts.png; sources OFFICIAL-ANNOUNCEMENT (registered in sources.json), together. **Of 17 references the reviewer can open 11**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.3.3",
@@ -152,7 +154,8 @@
       ],
       "geometry_feature_ids": [
         "SITE-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Three-Level Scope Framework'; layers site_boundary.geojson; metrics site_area_sqm, green_ratio (class 1, recomputed independently by visual/assets/verify.js); metrics persona_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings site-overview.png; sources OFFICIAL-ANNOUNCEMENT, BOUNDARY-SOURCE (registered in sources.json), together. **Of 14 references the reviewer can open 9**; the other 5 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.4.1",
@@ -201,7 +204,8 @@
       ],
       "geometry_feature_ids": [
         "SITE-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the sections 'Coordinated Research Area: Industry and Future City Research', 'Three-Level Scope Framework'; layers land_use.geojson, buildings.geojson; metrics site_area_sqm, land_use_feature_count (class 1, recomputed independently by visual/assets/verify.js); drawings land-use-structure.png; sources OFFICIAL-ANNOUNCEMENT, BOUNDARY-SOURCE (registered in sources.json), together. **Of 16 references the reviewer can open 10**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.4.2",
@@ -252,7 +256,8 @@
         "PROV-KEY-001",
         "PROV-KEY-002",
         "PROV-KEY-003"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the sections 'Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design', 'Three-Level Scope Framework'; layers site_boundary.geojson, key_areas.geojson; metrics site_area_sqm, phased_share_of_design_scope (class 1, recomputed independently by visual/assets/verify.js); drawings site-overview.png, land-use-structure.png; sources OFFICIAL-ANNOUNCEMENT, BOUNDARY-SOURCE (registered in sources.json), together. **Of 18 references the reviewer can open 10**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.4.3",
@@ -301,7 +306,8 @@
         "PROV-KEY-001",
         "PROV-KEY-002",
         "PROV-KEY-003"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the sections 'Detailed Design of Key Areas', 'Three-Level Scope Framework'; layers key_areas.geojson, public_space.geojson; metrics key_area_count, benchmark_first_order_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources OFFICIAL-ANNOUNCEMENT, KEY-AREA-SOURCE (registered in sources.json), together. **Of 16 references the reviewer can open 9**; the other 7 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.1.1",
@@ -345,7 +351,8 @@
       },
       "risk_ids": [
         "RISK-MATURITY-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the sections 'Innovation ecosystem and element mechanisms (agent.2)', 'Global AI innovation ecosystem cases (agent.2)'; layers land_use.geojson; metrics industry_test_scenario_count (class 1, recomputed independently by visual/assets/verify.js); metrics case_study_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings ecosystem.png; sources AGENT-TASKBOOK, CASE-C1-ALGORITHM-REGISTER, CASE-C3-AI-VERIFY (registered in sources.json), together. **Of 13 references the reviewer can open 9**; the other 4 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.1.2",
@@ -380,13 +387,13 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「用地、建筑规模与拆改留方案」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**15 处引用里评审能打开 8 处**，其余 7 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「用地、建筑规模与拆改留方案」；图层 buildings.geojson；指标 building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 floor_area_ratio（class 2，须官方控规支撑，状态保持 unknown；verify.js 断言的是它保持 unknown，不是它的取值）；图纸 street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**15 处引用里评审能打开 9 处**，其余 6 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 15,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 7
+        "reviewer_sees_first_page_only": 1,
+        "reviewer_cannot_open": 6
       },
       "risk_ids": [
         "RISK-ACCEPTANCE-001",
@@ -395,7 +402,8 @@
       "geometry_feature_ids": [
         "BLDG-001",
         "BLDG-004"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the sections 'Detailed Design of Key Areas', 'Land Use, Building Scale, and Retain-Renovate-Demolish Strategy'; layers buildings.geojson; metrics building_footprint_area_sqm (class 1, recomputed independently by visual/assets/verify.js); metrics floor_area_ratio (class 2, awaiting official regulatory support and held at unknown; what verify.js asserts is that they stay unknown, not their values); drawings street-eye-level.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 15 references the reviewer can open 9**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.2.1",
@@ -444,7 +452,8 @@
       ],
       "geometry_feature_ids": [
         "PROV-KEY-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Detailed Design of Key Areas'; layers key_areas.geojson; metrics key_area_count, land_use_class_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png, ecosystem.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 14 references the reviewer can open 8**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.2.2",
@@ -490,7 +499,8 @@
       "risk_ids": [
         "RISK-POLICY-001",
         "RISK-DELIVERY-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Detailed Design of Key Areas'; layers land_use.geojson; metrics phase_count, phasing_union_area_sqm (class 1, recomputed independently by visual/assets/verify.js); metrics renewal_project_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings land-use-structure.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 13 references the reviewer can open 9**; the other 4 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.2.3",
@@ -538,7 +548,8 @@
       ],
       "geometry_feature_ids": [
         "ROAD-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Transport, Rail, Municipal Infrastructure, and Public Services'; layers roads.geojson; metrics road_feature_count, leveling_spine_length_m (class 1, recomputed independently by visual/assets/verify.js); drawings mobility-bluegreen.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 13 references the reviewer can open 8**; the other 5 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.2.4",
@@ -586,7 +597,8 @@
       ],
       "geometry_feature_ids": [
         "GREEN-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Blue-Green Network, Public Space, and Urban Character'; layers green_space.geojson; metrics green_ratio, green_ratio_in_partition (class 1, recomputed independently by visual/assets/verify.js); metrics osm_vertices_shipped (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings mobility-bluegreen.png, site-overview.png; sources OSM-REFERENCE-2026-08, OFFICIAL-ANNOUNCEMENT (registered in sources.json), together. **Of 15 references the reviewer can open 10**; the other 5 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.2.5",
@@ -622,13 +634,13 @@
       "self_check_ids": [
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson、public_space.geojson；指标 public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、identity.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**15 处引用里评审能打开 7 处**，其余 8 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson、public_space.geojson；指标 public_space_ratio（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、identity.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**15 处引用里评审能打开 8 处**，其余 7 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "reviewer_reachability": {
         "references": 15,
         "reviewer_can_read_whole": 7,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 8
+        "reviewer_sees_first_page_only": 1,
+        "reviewer_cannot_open": 7
       },
       "risk_ids": [
         "RISK-POLICY-001"
@@ -636,7 +648,8 @@
       "geometry_feature_ids": [
         "GREEN-001",
         "PUBLIC-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Blue-Green Network, Public Space, and Urban Character'; layers green_space.geojson, public_space.geojson; metrics public_space_ratio (class 1, recomputed independently by visual/assets/verify.js); metrics landmark_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings kit-of-parts.png, identity.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 15 references the reviewer can open 8**; the other 7 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.3.required",
@@ -687,7 +700,8 @@
         "PROV-KEY-001",
         "PROV-KEY-002",
         "PROV-KEY-003"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the sections 'Detailed Design of Key Areas', 'Retain, renovate, demolish: principles common to all three'; layers site_boundary.geojson; metrics key_area_count, benchmark_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources OFFICIAL-ANNOUNCEMENT, KEY-AREA-SOURCE (registered in sources.json), together. **Of 18 references the reviewer can open 10**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.3.1",
@@ -738,7 +752,8 @@
       "geometry_feature_ids": [
         "PROV-KEY-001",
         "CONSTRAINT-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the sections 'Zhongzhiyuan AI Autonomous Innovation Acceleration Area (BM-1, the tolerance datum)', 'Retain, renovate, demolish: principles common to all three'; layers land_use.geojson; metrics land_use_class_count, benchmark_first_order_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 16 references the reviewer can open 10**; the other 6 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.3.2",
@@ -790,7 +805,8 @@
       "geometry_feature_ids": [
         "PROV-KEY-002",
         "BLDG-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the sections 'Beijing AI Origin Community (BM-0, the network origin)', 'Retain, renovate, demolish: principles common to all three'; layers constraints.geojson; metrics benchmark_count (class 1, recomputed independently by visual/assets/verify.js); metrics tabletop_case_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings key-areas.png, evidence-circuit.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 17 references the reviewer can open 9**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "1.5.3.3",
@@ -841,7 +857,8 @@
         "PROV-KEY-003",
         "BLDG-003",
         "BLDG-005"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Dazhongsi AI Industry Cluster (BM-2, the high-frequency reading point)'; layers key_areas.geojson, buildings.geojson; metrics building_footprint_area_sqm, key_area_count (class 1, recomputed independently by visual/assets/verify.js); drawings key-areas.png; sources KEY-AREA-SOURCE (registered in sources.json), together. **Of 16 references the reviewer can open 8**; the other 8 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "agent.1",
@@ -891,7 +908,8 @@
       "geometry_feature_ids": [
         "ROAD-001",
         "PUBLIC-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Coordinated Research Area: Industry and Future City Research'; layers public_space.geojson, roads.geojson; metrics leveling_spine_length_m, benchmark_count, key_area_count (class 1, recomputed independently by visual/assets/verify.js); drawings site-overview.png, hero-leveling-line.png; sources AGENT-TASKBOOK, BOUNDARY-SOURCE (registered in sources.json), together. **Of 17 references the reviewer can open 10**; the other 7 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "agent.2",
@@ -936,7 +954,8 @@
       "risk_ids": [
         "RISK-MATURITY-001",
         "RISK-PRIVACY-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Coordinated Research Area: Industry and Future City Research'; layers land_use.geojson; metrics industry_test_scenario_count (class 1, recomputed independently by visual/assets/verify.js); metrics case_study_count, field_census_corpus_size (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings ecosystem.png; sources AGENT-TASKBOOK, CASE-C5-CIVIC-DATA-AGENDA, FIELD-CENSUS-2026-08 (registered in sources.json), together. **Of 14 references the reviewer can open 9**; the other 5 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "agent.3",
@@ -992,7 +1011,8 @@
         "CONSTRAINT-001",
         "CONSTRAINT-002",
         "CONSTRAINT-003"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'AI Innovation Ecosystem, Personas, and AI+ Scenarios'; layers constraints.geojson, public_space.geojson; metrics scenario_card_count, scenario_cards_operational_count, persona_count, tabletop_case_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings evidence-circuit.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 21 references the reviewer can open 11**; the other 10 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "agent.4",
@@ -1027,7 +1047,7 @@
       "self_check_ids": [
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 buildings.geojson、public_space.geojson；指标 public_space_ratio、building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**19 处引用里评审能打开 8 处**，其余 11 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 buildings.geojson、public_space.geojson；指标 public_space_ratio、building_footprint_area_sqm（class 1，由 visual/assets/verify.js 独立重算）；指标 landmark_count（包内自计数，由构建从随包产物重算，不在 verify.js 的覆盖范围内）；图纸 kit-of-parts.png、street-eye-level.png；来源 AGENT-TASKBOOK（登记于 sources.json） 共同支撑。**19 处引用里评审能打开 10 处**，其余 9 处在评审输入之外（`geometry/`、`visual/assets/` 与图纸正文），供拿到仓库的人独立复算。",
       "standard_ids": [
         "ELDERLY-SMART-TECH-PLAN-2020-45"
       ],
@@ -1035,8 +1055,8 @@
         "references": 19,
         "reviewer_can_read_whole": 8,
         "reviewer_sees_as_image": 0,
-        "reviewer_sees_first_page_only": 0,
-        "reviewer_cannot_open": 11
+        "reviewer_sees_first_page_only": 2,
+        "reviewer_cannot_open": 9
       },
       "risk_ids": [
         "RISK-EQUITY-001",
@@ -1046,7 +1066,8 @@
         "BLDG-001",
         "BLDG-002",
         "PUBLIC-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Blue-Green Network, Public Space, and Urban Character'; layers buildings.geojson, public_space.geojson; metrics public_space_ratio, building_footprint_area_sqm (class 1, recomputed independently by visual/assets/verify.js); metrics landmark_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings kit-of-parts.png, street-eye-level.png; sources AGENT-TASKBOOK (registered in sources.json), together. **Of 19 references the reviewer can open 10**; the other 9 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "agent.5",
@@ -1089,7 +1110,8 @@
       },
       "risk_ids": [
         "RISK-ACCEPTANCE-001"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Blue-Green Network, Public Space, and Urban Character'; layers roads.geojson; metrics road_feature_count (class 1, recomputed independently by visual/assets/verify.js); metrics landmark_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings identity.png, region-interface.png; sources AGENT-TASKBOOK, OFFICIAL-ANNOUNCEMENT (registered in sources.json), together. **Of 12 references the reviewer can open 7**; the other 5 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     },
     {
       "requirement_id": "agent.6",
@@ -1142,7 +1164,8 @@
         "PHASE-001",
         "PHASE-002",
         "PHASE-003"
-      ]
+      ],
+      "evidence_summary_en": "This entry rests on the section 'Honours, kit of parts, and signage (agent.4, agent.5)'; layers public_space.geojson; metrics phase_count (class 1, recomputed independently by visual/assets/verify.js); metrics renewal_project_count, errata_entry_count, shipped_verification_script_count (self-counts, recomputed by the build from the shipped artifacts and outside verify.js's coverage); drawings metrics-evidence.png, evidence-circuit.png; sources AGENT-TASKBOOK, CASE-C6-ARTIFACT-EVALUATION (registered in sources.json), together. **Of 20 references the reviewer can open 11**; the other 9 sit outside the review input (geometry/, visual/assets/ and the drawing bodies), for anyone with the repository to recompute independently."
     }
   ],
   "taskbook_units": {
@@ -1588,8 +1611,8 @@
     "applied_today_zh": "按今天的几何，规则 W1 会先落到 2 个街区上（共 11 个）；距离为几何中心到最近水准点的直线距离，**不是步行距离**——一个还不存在的街区，走不出步行距离。"
   },
   "organiser_review": {
-    "scope_zh": "**评审在读本文之前，先拿到组织方自己对本包的四份机器判定**：确定性校验、空间复核、视觉复核、专业复核。下表列的是**后三份**返回的每一条，按 id 列出并逐条作答——**答的不是辩解，是承认判读成立之后随之而来的东西**。**第一份不在此表**：确定性校验返回 19 条 warning，原样存放在 `self_check.json` 的 `deterministic_validation` 块里，而那份文件由评审整份读到——**在这里复述一遍不会让它更可查，而说「四份都在下表」会让人以为只有一条**。清单由构建从 `upstream/main` 上的那几个脚本现跑得到，不是抄下来的（E230）。",
-    "scope_en": "Before it reads a word of this proposal, the reviewer is handed four machine verdicts on this package from the organisers' own tools: deterministic validation, spatial review, visual review, professional review. This table lists every issue returned by **the last three**, by id, each answered - not defended, but accepted with what follows from it stated. **The first is not in this table**: deterministic validation returns 19 warnings, kept verbatim in the deterministic_validation block of self_check.json, which the reviewer receives whole. Repeating them here would not make them more checkable, whereas saying all four are below leaves a reader thinking there was one. The list is produced by running their scripts at upstream/main rather than copied.",
+    "scope_zh": "**评审在读本文之前，先拿到组织方自己对本包的四份机器判定**：确定性校验、空间复核、视觉复核、专业复核。下表列的是**后三份**返回的每一条，按 id 列出并逐条作答——**答的不是辩解，是承认判读成立之后随之而来的东西**。**第一份不在此表**：确定性校验在抓取时返回 19 条 warning，其中 4 条描述的是本包从不发布的那个状态（抓取发生在 `validation_claim.self_checked` 被故意清为 false 的那一刻，E331）；对**随包发布时的样子**复问，同一个校验器返回 15 条。两个数与其差额都在 `self_check.json` 里，抓取那一份原样存放在它的 `deterministic_validation` 块中，而那份文件由评审整份读到——**在这里复述一遍不会让它更可查，而说「四份都在下表」会让人以为只有一条**。清单由构建从 `upstream/main` 上的那几个脚本现跑得到，不是抄下来的（E230）。",
+    "scope_en": "Before it reads a word of this proposal, the reviewer is handed four machine verdicts on this package from the organisers' own tools: deterministic validation, spatial review, visual review, professional review. This table lists every issue returned by **the last three**, by id, each answered - not defended, but accepted with what follows from it stated. **The first is not in this table**: deterministic validation returns 19 warnings at capture, 4 of which describe a state this package never ships because the capture is taken while validation_claim.self_checked is deliberately false (E331), and 15 when the same validator is asked about the package as shipped. Both numbers and the difference are in self_check.json, kept verbatim in the deterministic_validation block of self_check.json, which the reviewer receives whole. Repeating them here would not make them more checkable, whereas saying all four are below leaves a reader thinking there was one. The list is produced by running their scripts at upstream/main rather than copied.",
     "issues": [
       {
         "check_id": "KEY_AREA_PROVISIONAL",
@@ -1615,6 +1638,7 @@
       {
         "dimension_id": "brief_alignment",
         "title_zh": "任务书相关性",
+        "review_focus_zh": "是否围绕百年京张 AI 创新带、三层范围、三大重点片区和公告 1.5 任务展开。",
         "report_sections": [
           "三层范围工作框架",
           "总体设计范围城市更新与控规深度城市设计",
@@ -1624,11 +1648,17 @@
           "compliance_matrix.json#requirements",
           "compliance_matrix.json#taskbook_units",
           "assets/figures/land-use-structure.png"
-        ]
+        ],
+        "focus_answers_zh": {
+          "三层范围": "三层范围工作框架：统筹研究、总体设计、重点区三层各自的读数与限差",
+          "三大重点片区": "三处重点区逐一给出用地、剖面与接入规则，面积逐块与官方数值对照",
+          "公告 1.5": "任务书逐条覆盖：63 条要求逐条指向本文小节，随包 taskbook_coverage.json"
+        }
       },
       {
         "dimension_id": "originality",
         "title_zh": "原创性",
+        "review_focus_zh": "是否提出清晰的新概念、新机制或新场景，避免空泛拼贴。",
         "report_sections": [
           "闭合差机制的完整定义",
           "场地数据本身的闭合差：同一件事的两份来源对不上"
@@ -1637,11 +1667,17 @@
           "proposal.md#闭合差机制的完整定义",
           "metrics.json#existing_walk_between_benchmarks_m",
           "assets/figures/metrics-evidence.png"
-        ]
+        ],
+        "focus_answers_zh": {
+          "新概念": "闭合差机制：把测量学的闭合差用作公共服务的信任量纲",
+          "新机制": "超限即整段退回非AI等价路径，且退回条件写进每张场景卡",
+          "新场景": "十二张场景卡，两张已进入运行态，其余写明进入条件"
+        }
       },
       {
         "dimension_id": "ai_planning_innovation",
         "title_zh": "AI 与城市规划创新性",
+        "review_focus_zh": "是否把 AI 能力与产业、空间、交通、公共服务、文化和治理结合。",
         "report_sections": [
           "主战场一：低速机器人与自动驾驶接驳（agent.3，F1）",
           "主战场二：AI公共服务——医疗、教育、法律、生活（agent.3，F1/F2）",
@@ -1651,11 +1687,20 @@
           "design_depth_matrix.json",
           "assets/figures/metrics-evidence.png",
           "proposal.md#主战场一：低速机器人与自动驾驶接驳（agent.3，F1）"
-        ]
+        ],
+        "focus_answers_zh": {
+          "产业": "机器人与自动驾驶、AI公共服务两条赛道的用地、测试场与接入规则",
+          "空间": "主脊、三处重点区与十一个功能单元的完整剖分",
+          "交通": "十一处缝合点、步行十五分钟规则与其自评失败区段",
+          "公共服务": "场景卡的服务对象、无AI等价路径与申诉时限",
+          "文化": "遗址公园沿线的文化用地、年度归零仪式与公共证据厅",
+          "治理": "岗位规格、四类复核主体与读数日程表"
+        }
       },
       {
         "dimension_id": "implementation_feasibility",
         "title_zh": "可实施性",
+        "review_focus_zh": "是否有阶段路径、试点区域、参与主体、指标和可核验数据边界。",
         "report_sections": [
           "更新项目清单（八项，逐项给出责任角色、前置条件、成本级别、阶段KPI与退出条件）",
           "首轮闭合试验：一个四周内可跑完的最小实施单元",
@@ -1666,11 +1711,19 @@
           "compliance_matrix.json#reading_calendar",
           "assets/figures/mobility-bluegreen.png",
           "drawings/a0-boards.pdf#page1"
-        ]
+        ],
+        "focus_answers_zh": {
+          "阶段路径": "R1–R8 按依赖而非工期排序，近中远三期由闭合结果触发",
+          "试点区域": "三处重点区，其中两张场景卡已进入运行态",
+          "参与主体": "role_spec.json 的八岗位与四类复核主体，含缺岗禁令",
+          "指标": "60 项指标分四族，每项带 measures 与作废条件",
+          "可核验数据边界": "assumptions.json 逐条写明前置条件；官方数据未公开处标 unknown"
+        }
       },
       {
         "dimension_id": "public_interest_inclusion",
         "title_zh": "公共利益与包容性",
+        "review_focus_zh": "是否兼顾居民、青年人才、企业、高校、游客和弱势群体。",
         "report_sections": [
           "用户画像（agent.3，九类）",
           "测点用地的公共性：一条会否决选址的规则",
@@ -1680,11 +1733,20 @@
           "assumptions.json#A-ROSTER-001",
           "assets/figures/key-areas.png",
           "drawings/a0-boards.pdf#page1"
-        ]
+        ],
+        "focus_answers_zh": {
+          "居民": "画像 P4 周边长期居民（老年人），非智能手机路径不可豁免",
+          "青年人才": "画像 P2 创业团队与开发者、P3 高校师生",
+          "企业": "画像 P2 与 P8 企业服务与运营人员，承担季度复测",
+          "高校": "画像 P3 高校师生，三等点高频使用者",
+          "游客": "画像 P9 国际访客与研究者，承担外部独立复测",
+          "弱势群体": "画像 P5 轮椅使用者与行动障碍者、P6 儿童与照护者、P7 一线服务人员"
+        }
       },
       {
         "dimension_id": "risk_compliance",
         "title_zh": "风险与合规意识",
+        "review_focus_zh": "是否尊重公开资料边界、隐私、版权和政策不确定性。",
         "report_sections": [
           "三条红线不是本方案的善意，是现行法规的义务",
           "八维风险自评（随包提交 `risk.json`）",
@@ -1695,11 +1757,18 @@
           "sources.json#rights_summary",
           "assumptions.json#A-BOUNDARY-001",
           "self_check.json"
-        ]
+        ],
+        "focus_answers_zh": {
+          "公开资料边界": "sources.json 三十条来源逐条写明取证方式与不可用于何处",
+          "隐私": "场景卡逐张写明数据输入与人工复核，个人数据不进读数",
+          "版权": "权利与许可台账逐个文件归类，与 manifest 文件数三方相等",
+          "政策不确定性": "A-BOUNDARY-001 等假设逐条写明失效条件，官方 polygon 发布即整体重算"
+        }
       },
       {
         "dimension_id": "expression_completeness",
         "title_zh": "表达完整度",
+        "review_focus_zh": "是否形成可读正文、图纸、HTML、指标、图层和证据引用的完整闭环。",
         "report_sections": [
           "图纸索引与阅读方式",
           "双语导视规则",
@@ -1709,127 +1778,365 @@
           "assets/figures/site-overview.png",
           "drawings/a3-booklet.pdf#page1",
           "manifest.json"
-        ]
+        ],
+        "focus_answers_zh": {
+          "指标": "metrics.json 60 项，29 项由随包 verify.js 独立重算",
+          "图层": "geometry/ 逐个图层随包，空间自检要求全部落在提交边界内",
+          "证据引用的完整闭环": "五个命名空间的引用双向校验，解析不到即构建失败"
+        }
       }
     ],
     "taskbook_read_from": "brief/site-package/agent_taskbook.json @ upstream/main",
     "taskbook_scope_zh": "任务书另有自己的一套评审维度，与上面那套不是同一份。此处一并对照。",
     "taskbook_scope_en": "The taskbook carries its own set of review dimensions, which are not the set above. Mapped here as well.",
+    "charter_read_from": "brief/site-package/agent_taskbook.json @ upstream/main",
+    "charter_scope_zh": "任务书还发布了十条共创公约。评审整份收到那份任务书，而本包此前没有把这十条接到任何地方。此处逐条对照到真正回答它的小节；这是映射，不是自评得分。",
+    "charter_scope_en": "The taskbook also publishes ten co-creation principles. The reviewer receives that taskbook whole and this package had joined none of the ten to anything. Each is mapped here to the sections that answer it — a mapping, not a self-awarded score.",
+    "charter_principles": [
+      {
+        "principle_id": "charter.1",
+        "title_zh": "公共利益优先",
+        "requirement_zh": "智能体服务城市公共利益和项目目标，不以个人名利或商业推广为中心。",
+        "report_sections": [
+          "一页执行摘要",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.2",
+        "title_zh": "公开资料边界",
+        "requirement_zh": "资料必须来自公开或清权来源，不得使用秘密地图、非公开表格、伪造官方背书或伪造规划结论。",
+        "report_sections": [
+          "设计依据与资料清单",
+          "把仪器用在场地数据上",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.3",
+        "title_zh": "概念建议属性",
+        "requirement_zh": "智能体成果是开放共创建议，不替代专业规划，不越过政府审定和法定审批。",
+        "report_sections": [
+          "三层范围工作框架",
+          "指标体系、面积复算与合规矩阵",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.4",
+        "title_zh": "AI原生创新",
+        "requirement_zh": "鼓励AI原生场景和多智能体协作，不接受只给传统方案贴AI标签。",
+        "report_sections": [
+          "AI 创新生态、人才画像与 AI+ 场景",
+          "把仪器用在场地数据上"
+        ]
+      },
+      {
+        "principle_id": "charter.5",
+        "title_zh": "结构化与可读并重",
+        "requirement_zh": "成果必须结构化、来源可追溯、版权可追溯，并同时可被智能体和人类阅读。",
+        "report_sections": [
+          "指标体系、面积复算与合规矩阵",
+          "设计依据与资料清单"
+        ]
+      },
+      {
+        "principle_id": "charter.6",
+        "title_zh": "生成方法披露",
+        "requirement_zh": "引用和生成内容必须说明来源、生成方式、授权和限制。",
+        "report_sections": [
+          "风险、版权与合规说明",
+          "设计依据与资料清单"
+        ]
+      },
+      {
+        "principle_id": "charter.7",
+        "title_zh": "人类最终判断",
+        "requirement_zh": "智能体方案可以被筛选和排序，但最终判断由人类和专业团队完成。",
+        "report_sections": [
+          "闭合差机制的完整定义",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.8",
+        "title_zh": "公共知识沉淀",
+        "requirement_zh": "输出进入公共知识库，供后续智能体、专业团队和公众继续使用。",
+        "report_sections": [
+          "指标体系、面积复算与合规矩阵",
+          "把仪器用在场地数据上"
+        ]
+      },
+      {
+        "principle_id": "charter.9",
+        "title_zh": "贡献可记忆",
+        "requirement_zh": "贡献者名称、方案记录和知识资产应可持续保存。",
+        "report_sections": [
+          "设计依据与资料清单",
+          "风险、版权与合规说明"
+        ]
+      },
+      {
+        "principle_id": "charter.10",
+        "title_zh": "人本治理",
+        "requirement_zh": "城市治理以人的尊严与公共福祉为基础，智能体用于增强人的能力。",
+        "report_sections": [
+          "一个人的一天：这套机制在街上是什么样子",
+          "AI 创新生态、人才画像与 AI+ 场景"
+        ]
+      }
+    ],
     "taskbook_dimensions": [
       {
         "dimension_id": "objective_alignment",
         "title_zh": "目标契合度",
+        "focus_zh": "是否服务全球人工智能产业高地和朝圣地目标",
         "report_sections": [
           "三层范围工作框架",
           "三处AI朝圣地标（agent.4）",
           "统筹研究范围产业与未来城市研究"
-        ]
+        ],
+        "focus_answers_zh": {
+          "人工智能产业高地": "两条最薄赛道的用地、测试场与接入规则，按覆盖而非按口号选主战场",
+          "朝圣地": "三处 AI 朝圣地标：原点标石与公共证据厅、闭合差碑、年度归零点"
+        }
       },
       {
         "dimension_id": "function_match",
         "title_zh": "功能匹配度",
+        "focus_zh": "是否准确对应三大定位、五大功能和三区两翼布局",
         "report_sections": [
           "三大定位、五大功能与三区两翼的协同回路（agent.1）"
-        ]
+        ],
+        "focus_answers_zh": {
+          "三大定位": "三大定位逐条接成一条可闭合的回路，而非各自复述",
+          "五大功能": "五大功能画在同一条回路上，责任如何在单元间传递写明",
+          "三区两翼": "三区两翼在 FIG.01 上各自具名，主脊串起三处重点区"
+        }
       },
       {
         "dimension_id": "brand_identity",
         "title_zh": "品牌识别度",
+        "focus_zh": "命名、Logo、视觉系统是否具有辨识度、延展性和国际传播力",
         "report_sections": [
           "总体概念与命名体系（agent.1）",
           "视觉识别方向（agent.1）",
           "双语导视规则"
-        ]
+        ],
+        "focus_answers_zh": {
+          "命名": "naming.json 公布 24 个标识族与其构词规则，可被第三方沿用",
+          "Logo": "标识由水准点符号与闭合回路构成，随包给出构图规则而非成品图",
+          "视觉系统": "全部图纸由参数与随包结构化数据直接绘制，非示意性配图",
+          "辨识度": "水准点标石与读数牌是全线唯一实体符号，五类标准件统一规格",
+          "延展性": "标准件开放图纸，任何新增节点都能以一致语言接入",
+          "国际传播力": "中英双版内容实质等价，画像 P9 国际访客承担外部独立复测"
+        }
       },
       {
         "dimension_id": "regional_synergy",
         "title_zh": "区域协同性",
+        "focus_zh": "是否体现与北纬社区、未来科学城、怀柔科学城、经开区及京津冀的创新协同",
         "report_sections": [
           "区域创新协同：把水准网外延为区域水准网（agent.1）",
           "五个协同对象各自换什么"
-        ]
+        ],
+        "focus_answers_zh": {
+          "北纬社区": "区域协同接口逐个具名，见 FIG.11 区域协同界面",
+          "未来科学城": "同上：跨管辖读数规则说明谁在交界处负责读数",
+          "怀柔科学城": "同上：协同以可复算的读数为接口，不以行政承诺为接口",
+          "经开区": "同上",
+          "京津冀": "同上：闭合差机制不依赖单一行政边界，边界平移后分级与限差不变"
+        }
       },
       {
         "dimension_id": "planning_innovation",
         "title_zh": "规划创新性",
+        "focus_zh": "是否对综合规划内涵、空间产业融合、国土空间规划创新提出有价值思路",
         "report_sections": [
           "总体设计范围城市更新与控规深度城市设计",
           "控规深度的城市设计要给什么",
           "用地是完整剖分，不是散点分区"
-        ]
+        ],
+        "focus_answers_zh": {
+          "综合规划内涵": "把测量学的闭合差用作规划的信任量纲，规划结论须能被复算",
+          "空间产业融合": "两条赛道的产业活动落在具体用地与测试场上，逐块给出接入规则",
+          "国土空间规划创新": "用地为总体设计范围的完整无重叠剖分，采用可校验的 land_use_code，不自造分类"
+        }
       },
       {
         "dimension_id": "industry_support",
         "title_zh": "产业支撑度",
+        "focus_zh": "是否提出AI创新生态、要素保障、技术测试和场景开放机制",
         "report_sections": [
           "AI创新生态图谱与要素机制（agent.2）",
           "三个产业测试验证场景（agent.3）",
           "众智园 AI 自主创新加速区（BM-1 · 限差基准）"
-        ]
+        ],
+        "focus_answers_zh": {
+          "AI创新生态": "创新要素链按要素类型组织，不列企业名单，不编造投资额",
+          "要素保障": "五类标准件、开放图纸与测试场地的准入条件逐条写明",
+          "技术测试": "众智园标准测试场与限差议事厅，受测方须提交方案与边界公示",
+          "场景开放": "十二张场景卡逐张写明开放条件、停用条件与无AI等价路径"
+        }
       },
       {
         "dimension_id": "scenario_perceptibility",
         "title_zh": "场景可感知度",
+        "focus_zh": "是否形成可体验、可展示、可推广的AI城市场景",
         "report_sections": [
           "AI 场景卡（agent.3，十二张）",
           "一个人的一天：这套机制在街上是什么样子",
           "荣誉展示体系与公共空间组件库（agent.4）"
-        ]
+        ],
+        "focus_answers_zh": {
+          "可体验": "读数牌立在人行道边，任何人走上前即可取读，不需网络与开放时间",
+          "可展示": "公共证据厅与闭合差碑把读数与误差公开陈列",
+          "可推广": "五类标准件规格与图纸开放，异地可照此建成并接入同一套限差"
+        }
       },
       {
         "dimension_id": "spatial_clarity",
         "title_zh": "空间明确性",
+        "focus_zh": "是否说明方案适合落在哪些片区、节点或空间类型",
         "report_sections": [
           "重点区域详细设计",
           "三片区共同的拆改留原则",
           "站—点合一与市政排序"
-        ]
+        ],
+        "focus_answers_zh": {
+          "片区": "三处重点区逐一给出边界、用地与面积，并与官方数值逐块对照",
+          "节点": "八个水准点与十一处缝合点各自定位并给出可达性读数",
+          "空间类型": "十一个功能单元按七类 land_use_code 完整剖分"
+        }
       },
       {
         "dimension_id": "transferability",
         "title_zh": "可转化性",
+        "focus_zh": "是否能被专业团队、运营团队或传播团队继续深化",
         "report_sections": [
           "更新项目清单（八项，逐项给出责任角色、前置条件、成本级别、阶段KPI与退出条件）",
           "首轮闭合试验：一个四周内可跑完的最小实施单元",
           "评审可以自己重算：`node visual/assets/verify.js`"
-        ]
+        ],
+        "focus_answers_zh": {
+          "专业团队": "每条结论都写成可被逐条否证的形式，随包校验器可独立复算",
+          "运营团队": "role_spec.json 八岗位、四类复核主体与读数日程表",
+          "传播团队": "naming.json 的标识族与中英双版内容实质等价"
+        }
       },
       {
         "dimension_id": "expression_completeness",
         "title_zh": "表达完整性",
+        "focus_zh": "是否以人类可直观理解的文本、图像、示意图、表格、场景卡、视频/声音、三维或交互网页形成完整成果；能力受限时是否提供可访问的后备表达",
         "report_sections": [
           "图纸索引与阅读方式",
           "无障碍与可读性 QA：算出来，不是声称",
           "本方案的可复核清单"
-        ]
+        ],
+        "focus_answers_zh": {
+          "文本": "中英双版正文，逐节内容实质等价并由 parity_qa 逐节把关",
+          "图像": "34 张图纸由参数直接绘制，五张随评审输入直接送达",
+          "示意图": "剖面、构造详图与流程图各自给出比例与基准约定",
+          "表格": "场景卡、用地表、成本表与指标表均为生成，不手写数字",
+          "场景卡": "十二张场景卡，两张已进入运行态，其余写明进入条件",
+          "三维": "本方案不提交三维模型，登记为交付缺口而非声称已有",
+          "交互网页": "离线可读页随包提交，无网络依赖",
+          "后备表达": "无AI等价路径贯穿全部场景；读数牌不依赖电力与网络"
+        }
       },
       {
         "dimension_id": "public_compliance",
         "title_zh": "公开合规性",
+        "focus_zh": "是否避免不当内容和侵权内容",
         "report_sections": [
           "三条红线不是本方案的善意，是现行法规的义务",
           "权利与许可台账",
           "性质声明"
-        ]
+        ],
+        "focus_answers_zh": {
+          "不当内容": "三条红线写明不可豁免项，画像 P4 非智能手机路径不可豁免",
+          "侵权内容": "权利与许可台账逐个文件归类，与 manifest 文件数三方相等"
+        }
       },
       {
         "dimension_id": "international_communication",
         "title_zh": "国际传播力",
+        "focus_zh": "是否有助于提升一带全球关注度和辨识度",
         "report_sections": [
           "国际传播文案",
           "双语导视规则",
           "全球AI创新生态案例研究（agent.2）"
-        ]
+        ],
+        "focus_answers_zh": {
+          "全球关注度": "中英双版实质等价，外部独立复测由画像 P9 承担",
+          "辨识度": "水准点符号与闭合回路构成全线统一的视觉语言"
+        }
       },
       {
         "dimension_id": "long_term_operation_value",
         "title_zh": "长期运营价值",
+        "focus_zh": "是否能够沉淀为一带长期品牌资产、活动机制和合作通道",
         "report_sections": [
           "更新项目清单、实施政策与分期计划",
           "荣誉展示体系与公共空间组件库（agent.4）",
           "闭合差机制的完整定义"
-        ]
+        ],
+        "focus_answers_zh": {
+          "品牌资产": "naming.json 的 24 个标识族与标准件图纸构成可沿用的资产",
+          "活动机制": "年度归零仪式、季度开放日与月度社区复测构成读数日程表",
+          "合作通道": "四类复核主体缺一不可，八岗位写明可决定与不可决定事项"
+        }
       }
+    ]
+  },
+  "license_bound": {
+    "read_from": "schema/proposal.schema.json @ upstream/main",
+    "declared": "COMMUNITY-DISPLAY-ONLY",
+    "published_values": [
+      "COMMUNITY-DISPLAY-ONLY",
+      "CC-BY-4.0",
+      "CC-BY-SA-4.0"
+    ],
+    "occurrences_outside_submissions": [
+      "agent.html",
+      "schema/proposal.schema.json",
+      "scripts/scaffold_ai_submission.py",
+      "scripts/validate_submission.py",
+      "templates/proposal.md"
+    ],
+    "statement_zh": "本包声明的 `license` 是 `COMMUNITY-DISPLAY-ONLY`，它是组织方 `schema/proposal.schema.json` 允许的三个值之一，另两个是 `CC-BY-4.0` 与 `CC-BY-SA-4.0`——**两者都允许商业使用**，因此不存在一个既非商业、又能表明「这不是政府决定」的标准选项。**仓库里没有任何一处给出这个标识的条款文本**：它在 `submissions/` 之外只出现在 5 个文件里（`agent.html`、`schema/proposal.schema.json`、`scripts/scaffold_ai_submission.py`、`scripts/validate_submission.py`、`templates/proposal.md`），全部是枚举值、模板占位或校验白名单。所以此处只给**上界**，不编造条款：**本包授予的每一项使用，CC BY-NC 4.0 都同样允许**，因此按 CC BY-NC 4.0 行事的第三方不会越出本包的许可。这不主张本包的授权与 CC BY-NC 4.0 一样宽，只主张不比它更宽。",
+    "statement_en": "This package declares license COMMUNITY-DISPLAY-ONLY, one of three values allowed by the organisers' schema/proposal.schema.json. The other two, CC-BY-4.0 and CC-BY-SA-4.0, both permit commercial use, so there is no standard option that is at once non-commercial and able to say this is not a government decision. No file in the repository states the terms of this identifier: outside submissions/ it occurs in 5 files (agent.html, schema/proposal.schema.json, scripts/scaffold_ai_submission.py, scripts/validate_submission.py, templates/proposal.md), always as an enum value, a template placeholder or a validation whitelist entry. Rather than invent terms, only an upper bound is given: every use this package grants is also granted by CC BY-NC 4.0, so a third party acting within CC BY-NC 4.0 cannot exceed this package's licence. This claims no lower bound - it does not say the grant is as wide as CC BY-NC 4.0, only that it is no wider."
+  },
+  "reviewer_checklist": {
+    "scope_zh": "供拿到仓库的人逐项核对：每一项都可在不联系作者的情况下独立完成，所需文件都在随包目录内。",
+    "scope_en": "For anyone holding the repository: each item is completable without contacting the author, and every file it needs ships inside the package.",
+    "items_zh": [
+      "`node visual/assets/verify.js` —— 独立重算 `metrics.json` 里全部 29 条 `metric_class: 1` 指标，并**双向断言这一覆盖**（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析。退出码即结论；",
+      "`node visual/assets/check_osm.js` —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测；",
+      "`node visual/assets/check_cards.js` —— 逐张场景卡把水准点、空间锚点、退出量与执行角色解析到实际对象；`--selftest` 用八份人为改坏的卡片证明这些检查会拒绝；",
+      "`node visual/assets/check_closure.js` 与 `run_s08_tabletop.js` —— 闭合差机制的数据契约与十例桌面演练；",
+      "`visual/assets/census.json` / `field_map.json` —— 全场普查原始数据与统计结果；",
+      "`geometry/*.geojson` —— 九个图层，每个要素带 `source_type`、`geometry_role`、`official_boundary` 属性；",
+      "`visual/assets/osm_reference.json` —— 场地复核的原始读数及其明确声明的限度；",
+      "`visual/assets/accessibility_qa.json` 与 `parity_qa.json` —— 实算对比度、A0 最小字高、HTML 结构检查与双语逐节内容对等；`label_collision_qa.json` 逐张图判定「一行字压在另一行字上」（首次运行即在 19 张图上找到 51 对）；`i18n_order_qa.json` 判定英文模板是否把数字填错了位置（找到三处，英文读者此前看到的是「at the 27 m distance FIG.3.0 fixes」）；",
+      "`risk.json` —— 八维风险自评，含缓解措施与人工复核要求；",
+      "`changelog.md` —— **含本方案自查发现并修正的错误记录**；",
+      "`agent.json` —— 生成方法完整披露，`model` 字段非占位符；",
+      "A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在（中日韩字体走这条；拉丁面 DejaVuSans-Bold 是简单 `/TrueType`，子集嵌在 `FontFile2`，因此只查 `FontFile3` 会漏看它——它同样已子集嵌入）。"
+    ],
+    "items_en": [
+      "`node visual/assets/verify.js` — recomputes all 29 metrics marked `metric_class: 1` and **asserts coverage both ways**: every one recomputed, nothing that is not one. Plus a dozen structural conclusions: the land-use partition tested point by point, each controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict",
+      "`node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site figure from the OSM coordinates beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute",
+      "`node visual/assets/check_cards.js` — resolves each card's benchmark, spatial anchor, exit quantity and executing role against something that exists; `--selftest` proves the checks refuse eight broken card sets",
+      "`node check_closure.js` and `run_s08_tabletop.js` — the mechanism as a data contract, and a ten-case tabletop against the shipped reader",
+      "`visual/assets/census.json` and `field_map.json` — the field census and its summary",
+      "`geometry/*.geojson` — nine layers, every feature carrying `source_type`, `geometry_role` and `official_boundary` attributes",
+      "`visual/assets/osm_reference.json` — the site cross-check and its limits",
+      "`visual/assets/accessibility_qa.json` and `parity_qa.json` — computed contrast, A0 type height, HTML checks, bilingual parity; `label_collision_qa.json` label over label; `i18n_order_qa.json` number slots filled out of order",
+      "`risk.json` — eight-dimension self-assessment, mitigations and human review",
+      "`changelog.md` — **including the errors found in itself**",
+      "`agent.json` — full disclosure of the generation method; `model` is not a placeholder",
+      "A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, read with `pypdf`: `FontFile3` under `DescendantFonts` carries the CJK faces; DejaVuSans-Bold is a `/TrueType` subset under `FontFile2`"
     ]
   }
 }

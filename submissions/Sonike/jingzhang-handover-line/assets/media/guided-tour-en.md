@@ -54,3 +54,61 @@ This video introduces no new claim: the audio track is identical to `audio-guide
 34. **02:43.232 → 02:44.441** Capability may move.
 35. **02:44.441 → 02:46.436** Accountability must stay visible.
 36. **02:46.436 → 02:56.472** Bring a problem you can state in public and a responsibility you are willing to carry, and complete one handover here that can be withdrawn, reproduced and handed on.
+
+---
+
+**Licence.** This package carries the `COMMUNITY-DISPLAY-ONLY` identifier; the rights holders additionally grant that **any use complying with CC BY-NC 4.0 (attribution, non-commercial, changes indicated) is licensed**, and the attribution must carry the sentence "this proposal is open co-creation advice and represents no government decision or approval". This paragraph is identical to the risk-and-compliance section of `proposal.md` and to `report/copyright_statement.md`. The audio and video are locally synthesised and procedurally generated, and contain no real likeness, no real voice sample and no third-party material.
+
+## Short Alternative Text for the Five Core Figures
+
+For screen readers and plain-text environments. Each entry states four fixed things: the conclusion of the figure, the key numbers on it, the provisional nature of the boundary, and the conclusions that cannot be drawn from it. Alternative text differs from a caption: a caption explains how to read the figure, while alternative text gives someone who cannot see it the same judgement.
+
+### F/01 Jing-Zhang Handover Line (`assets/figures/site-overview.en.png`)
+
+**Conclusion.** One north-south handover line strings together three stretches of responsibility — building, open sharing and city service; four civic landmarks make contribution, shutdown, repair and human takeover visible in public space.
+
+**Key numbers.** Three Handover Yards; eight east-west stitch links; four civic landmarks; scale bar 0–2 km.
+
+**Provisional boundary.** The dashed frame is a provisional extent (PROVISIONAL BOUNDARY); areas are recomputed in EPSG:4548.
+
+**Cannot be concluded from this figure.** Road redlines, ownership, approved land use or engineering feasibility.
+
+### F/02 Full Coverage Without a Statutory Illusion (`assets/figures/land-use-structure.en.png`)
+
+**Conclusion.** Seven conceptual land-use classes cover the provisional overall extent by topological partition with no intentional gap; the three scope levels converge from 43.6 km² to 11.4 km² and then to the three key areas.
+
+**Key numbers.** 1401 continuous park green 2.26 km² (19.8%), 09 technology service and business 2.13 (18.7%), 0802 research and validation 1.90 (16.6%), 0701 talent living 1.46 (12.8%), 0702 community service 1.33 (11.7%), 0804 education and open learning 1.28 (11.3%), 0803 cultural public service 1.04 (9.1%); about 11.41 km² in total; 11 topological features and 0 intentional gaps.
+
+**Provisional boundary.** Every zone recomputes in one step once official boundaries arrive: the input changes, the formula does not.
+
+**Cannot be concluded from this figure.** Current ownership, approved land use, or any back-calculation of plot ratio, existing floor area or new-build scale.
+
+### F/03 Three Handover Yards, Three Transfers of Responsibility (`assets/figures/key-areas.en.png`)
+
+**Conclusion.** The three key areas each carry one transfer — BUILD→VERIFY, VERIFY→SHARE, SHARE→SERVE; the three plans share one scale, so their sizes compare directly.
+
+**Key numbers.** Build Yard 1.93 km², Share Yard 1.04 km², City Yard 0.72 km²; the three lines under each card are that yard's public-facing interfaces.
+
+**Provisional boundary.** All three are marked PROVISIONAL KEY AREA, with areas recomputed in EPSG:4548.
+
+**Cannot be concluded from this figure.** A construction list, an acquisition extent, ownership, or engineering positioning.
+
+### F/04 One Slow-Mobility Spine, Eight Stitch Links, Twelve Takeover Points (`assets/figures/mobility-bluegreen.en.png`)
+
+**Conclusion.** The smart layer is pluggable while basic movement and staffed service stay online; the section gives order and adjacency — staffed counter, walkway and stop entrance must stay continuously reachable, and the machine lane may not cut between them — and its caption line also states a one-side recommended total of about 14–20 m.
+
+**Key numbers.** One continuous slow-mobility spine, eight east-west stitch links, twelve takeover points, six bands in the section; a one-side recommended total of about 14–20 m, with 15.4 / 17.1 / 15.1 m taken in the three key areas.
+
+**Provisional boundary.** Alignments are conceptual connections; lengths are recomputed in EPSG:4548.
+
+**Cannot be concluded from this figure.** Road redlines, engineering feasibility, or any dimension from the section.
+
+### F/05 The First Pilot Already Has a Reviewable Proof Chain (`assets/figures/metrics-evidence.en.png`)
+
+**Conclusion.** The seven-step proof chain from space to rollback has been replayed on the offline tabletop; the P0 Public Handover Table is made of six removable components.
+
+**Key numbers.** Offline tasks 12/12, takeover assertions 48/48, field tasks 0/12; twelve scenarios × four takeover checks; cost class S = removable equipment E + maintenance M + training T + independent verification V + 10% contingency.
+
+**Provisional boundary.** All of it is participant-controlled synthetic data and offline tabletop replay, touching no live service and using no personal information.
+
+**Cannot be concluded from this figure.** Field safety, measured accessibility, public acceptance, or approval by a competent authority.

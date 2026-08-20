@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1.0",
+  "concept": "认识论分级 (Epistemic Grading) — what level of knowledge does the scheme claim",
+  "core_claim_zh": "每个主张分级为描述/预测/规范，注明知识基础——让方案对自己的认知边界诚实。",
+  "core_claim_en": "Every claim is graded description/prediction/normative with its knowledge base — honesty about the scheme's epistemic boundaries.",
+  "claim_grades": [
+    {
+      "claim_zh": "京张铁路遗址公园贯穿海淀核心区",
+      "grade": "description",
+      "knowledge_base_zh": "公开地理信息（可观察事实）"
+    },
+    {
+      "claim_zh": "断面语法可减少人机冲突",
+      "grade": "prediction",
+      "knowledge_base_zh": "交通工程自解释道路方法论推论（非现场验证）"
+    },
+    {
+      "claim_zh": "应建立共行执照与信号系统",
+      "grade": "normative",
+      "knowledge_base_zh": "设计建议（概念，非审定）"
+    },
+    {
+      "claim_zh": "机器人共行网能降低末端配送成本",
+      "grade": "prediction",
+      "knowledge_base_zh": "行业报告推论（现场数据 unknown）"
+    },
+    {
+      "claim_zh": "断面图可自解释（行人可读出规则）",
+      "grade": "prediction",
+      "knowledge_base_zh": "自解释测试协议（现场验证 unknown）"
+    }
+  ],
+  "grade_definitions": {
+    "description": "描述——可观察事实或公开记录",
+    "prediction": "预测——基于方法论或行业报告的推论，未现场验证",
+    "normative": "规范——设计建议，概念而非审定"
+  },
+  "field_status": "not_authorized_not_run"
+}

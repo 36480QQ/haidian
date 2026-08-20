@@ -8,6 +8,14 @@
    "usage": "Project brief, enums, allowed design space, ranges, and schemas."
   },
   {
+   "id": "PUBLIC-BRIEF",
+   "path": "brief/public-brief.md",
+   "source_type": "user_provided_cleared",
+   "public_status": "public-draft",
+   "usage": "Public task-book draft for agents and participants: background, vision, the seven priority directions indexed by this proposal's official-task table, continued-participation expectations, proposal boundary, review dimensions, and multimodal-expression requirements.",
+   "not_usable_for": "The file states its own status as a public draft awaiting maintainer confirmation before formal release; it is not the official announcement text, not an approval conclusion, and not an authority for boundaries, statutory controls, or measured data."
+  },
+  {
    "id": "SOURCE-REGISTRY",
    "path": "data/source_registry.json",
    "source_type": "repository_public_registry",
