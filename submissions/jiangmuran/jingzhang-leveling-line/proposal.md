@@ -121,7 +121,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 | 公告层次 | 范围 | 水准网对应 | 复测周期 | 空间证据 |
 |---|---|---|---|---|
 | 统筹研究范围 | 约 43.6 km²，北至北五环路、东至京藏高速、南至西直门外大街、西至万泉河路 | 水准网整体控制 | 年 | 仓库 `provisional_boundaries.geojson#PROV-RESEARCH-001` [source:BOUNDARY-SOURCE] |
-| 总体设计范围 | 约 11.4 km²，遗址公园周边 1–2 km 城市地区 | 一等水准路线（主脊 + 两条附合路线） | 半年 | [data:geometry/site_boundary.geojson#SITE-001]，复算 [metric:site_area_sqm] |
+| 总体设计范围 | 约 11.4 km²，遗址公园周边 1–2 km 城市地区 | 一等水准路线（主脊 + 两条附合路线） | 年 | [data:geometry/site_boundary.geojson#SITE-001]，复算 [metric:site_area_sqm] |
 | 重点区域范围 | 约 369.3 ha [metric:key_area_area_sqm]（由 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003] 三处合计复算：192.9 / 104.3 / 72.0 ha；公告文字为约 368.4 ha） | 水准原点 BM-0 与一等水准点 BM-1 / BM-2 | 年 | [data:geometry/key_areas.geojson#PROV-KEY-001] |
 
 三层不是三套互不相干的图纸。统筹研究决定测什么，总体设计决定沿哪条路线测，重点区域决定在哪里立标石。任何无法从结构化图层复算的面积、比例或数量，不写入结论——这是 [standard:MOHURD-URBAN-DESIGN-MEASURES] 对城市设计成果可核验性的基本要求。
@@ -1571,7 +1571,7 @@ node visual/assets/verify.js
 
 高分同期方案收到的改进要求中反复出现同一项：**对 A0 展板做远距可读性与色彩对比测试，对 HTML 做替代文本、键盘、屏幕阅读器与对比度检查。** 这类要求通常被一句话打发 [depth:metrics_recalculation]。本方案把它算出来，结果随包提交于 `visual/assets/accessibility_qa.json`，由 `analysis/accessibility_qa.py` 生成并已作为构建闸门——**不达标则构建失败**（须说准：`analysis/` 不在提交包内，闸门本身评审无法重跑；可重跑的是随包的 `accessibility_qa.json` 与五个 `.js` 校验器）**，不是提醒
 
-**同一条标准指向本包的闸门本身。** 124 道闸门若只被观察到通过，则一道从不失败的闸门与一道不会失败的闸门，产生的证据完全一样。因此本方案人为损坏自己的包，每次损坏都要求对应的闸门报错并**指名**所损坏的东西：结果随包提交于 `visual/assets/gate_mutation.json`：178 处蓄意缺陷全部被捕获，124 道中 123 道已被证明会失败，另 1 道连同理由一并写明。同一目录下的 `visual/assets/claim_audit.json` 记录两版正文里带单位的量是否逐条对齐，`visual/assets/agent_declarations.json` 记录全场语料的机器可读声明状况。**须说准：`scripts/review_submission.py` 不读 `visual/assets/`**——这三份文件不进评审模型的上下文，因此这里指名它们，是拿到仓库的人唯一能知道它们存在的途径。**
+**同一条标准指向本包的闸门本身。** 125 道闸门若只被观察到通过，则一道从不失败的闸门与一道不会失败的闸门，产生的证据完全一样。因此本方案人为损坏自己的包，每次损坏都要求对应的闸门报错并**指名**所损坏的东西：结果随包提交于 `visual/assets/gate_mutation.json`：179 处蓄意缺陷全部被捕获，125 道中 124 道已被证明会失败，另 1 道连同理由一并写明。同一目录下的 `visual/assets/claim_audit.json` 记录两版正文里带单位的量是否逐条对齐，`visual/assets/agent_declarations.json` 记录全场语料的机器可读声明状况。**须说准：`scripts/review_submission.py` 不读 `visual/assets/`**——这三份文件不进评审模型的上下文，因此这里指名它们，是拿到仓库的人唯一能知道它们存在的途径。**
 
 **色彩对比**（WCAG 2.1，正文 ≥ 4.5，大字号与图形对象 ≥ 3.0，衬底为图面米白 `#F2EFE9`）：
 
@@ -1682,12 +1682,12 @@ node visual/assets/verify.js
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-当前 **419 条** [metric:errata_entry_count]。按发现者分：
+当前 **421 条** [metric:errata_entry_count]。按发现者分：
 
 | 发现者 | 条数 | 这说明什么 |
 |---|---|---|
 | 独立审计 | 45 | 委托的审计对象是随包产物，不是草稿 |
-| 作者自查 | 280 | 本轮工作中发现 |
+| 作者自查 | 282 | 本轮工作中发现 |
 | 本包自己的闸门 | 29 | 构建时被抓出——这是闸门本该做的事 |
 | 包外对抗性通读 | 31 | 由本包之外的读者按评审收到的那几份文件逐条挑错 |
 | **包外评审** | **5** | [@anselasimov-web](https://github.com/anselasimov-web) 在 PR #1002、[@147228](https://github.com/147228) 在 PR #1065、[@Sonike](https://github.com/Sonike) 在 Issue #950、[@147228](https://github.com/147228) 在 Issue #950 / PR #1190、仓库 CI |
@@ -1699,8 +1699,8 @@ node visual/assets/verify.js
 
 | 形状 | 次数 |
 |---|---|
-| 同一件事的两份拷贝各自漂移 | 72 |
-| 检查测了方便测的东西 | 70 |
+| 同一件事的两份拷贝各自漂移 | 73 |
+| 检查测了方便测的东西 | 71 |
 | 交付物在提交前没被看过 | 38 |
 | 这个说法在这种载体上原理上无法被核对 | 34 |
 | 声明活得比包的内容久 | 26 |
@@ -1979,7 +1979,7 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 
 因此上面 12 项里，**AI 评审能按字面执行的是 0 项**：其余各项指名的文件不在它收到的东西里。**拿到仓库的人可以逐项跑完，给本方案打分的模型一项也跑不了。**这句话写在这里，是因为不写就等于在整份清单的尺度上重犯本包两次提交前记下的那条勘误：向一个无法核验的对象发出核验邀请。清单本身不缩水——它对人类评审、对赛后复核、对任何下载了仓库的人都成立。
 
-**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.73 秒**；另有 9 份**不在评审输入里的**文件、1331 KB、2,025 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
+**FIG.21 量了走到水准点的路，本包却没量过走完自己证据的路。** 「跑这五个脚本、读这几份文件」是一句话，跑一遍要多久是没人问过的问题——现在问了：五个随包校验器全部零退出，合计 **0.73 秒**；另有 9 份**不在评审输入里的**文件、1337 KB、2,028 条要读，逐条读数随包提交于 `visual/assets/review_route.json`。计时界定的是**工作量**而不是难度。
 
 **这条披露有时效，而缺口已经补上。** Issue #2170 对应的 PR #2181 已并入 `upstream/main`：review-input 里有了可审计的访问边界，明确参赛者的校验脚本从不执行，并要求评审**不得仅因打不开一份未提供的 artifact 就扣分或判 gate 失败**。上面的「0 项」不变，变的是它的后果：可达性不再被误读为投稿方没有提供（E210）。本包已按该恢复路径做过——关键推导同步写进 `assumptions.json` 与 `metrics.json`，三份矩阵逐行标注证据的可达程度。
 
