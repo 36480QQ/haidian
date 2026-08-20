@@ -55,8 +55,6 @@
         "A-ACCESS-BASELINE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "SPATIAL_REVIEW"
       ],
       "risk_ids": [
@@ -110,9 +108,7 @@
         "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY"
+        "SPATIAL_REVIEW"
       ],
       "risk_ids": [
         "R-02",
@@ -179,7 +175,7 @@
       ],
       "self_check_ids": [
         "SPATIAL_REVIEW",
-        "VISUAL_REVIEW"
+        "VISUAL_PACKAGING"
       ],
       "risk_ids": [
         "R-03",
@@ -236,7 +232,6 @@
         "A-BUILDINGS-AND-OWNERSHIP-001"
       ],
       "self_check_ids": [
-        "LAND_USE_TOPOLOGY",
         "SPATIAL_REVIEW"
       ],
       "risk_ids": [
@@ -289,9 +284,8 @@
         "A-BUILDINGS-AND-OWNERSHIP-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
         "SPATIAL_REVIEW",
-        "PROFESSIONAL_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "risk_ids": [
         "R-05",
@@ -349,7 +343,7 @@
       ],
       "self_check_ids": [
         "SPATIAL_REVIEW",
-        "VISUAL_REVIEW"
+        "VISUAL_PACKAGING"
       ],
       "risk_ids": [
         "R-05",
@@ -401,8 +395,7 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE",
-        "PROFESSIONAL_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "risk_ids": [
         "R-02",
@@ -468,7 +461,7 @@
       ],
       "self_check_ids": [
         "SPATIAL_REVIEW",
-        "PROFESSIONAL_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "risk_ids": [
         "R-03",
@@ -527,8 +520,7 @@
         "A-OPERATION-NODES-001"
       ],
       "self_check_ids": [
-        "PROFESSIONAL_EVIDENCE",
-        "PROFESSIONAL_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "risk_ids": [
         "R-02",
@@ -595,7 +587,7 @@
       ],
       "self_check_ids": [
         "SPATIAL_REVIEW",
-        "VISUAL_REVIEW"
+        "VISUAL_PACKAGING"
       ],
       "risk_ids": [
         "R-03",
@@ -666,9 +658,8 @@
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "KEY_AREAS_TRUST",
         "SPATIAL_REVIEW",
-        "PROFESSIONAL_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "risk_ids": [
         "R-01",
@@ -737,7 +728,7 @@
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE",
-        "VISUAL_REVIEW"
+        "VISUAL_PACKAGING"
       ],
       "risk_ids": [
         "R-01",
@@ -803,7 +794,7 @@
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
-        "PROFESSIONAL_REVIEW"
+        "PROFESSIONAL_EVIDENCE"
       ],
       "risk_ids": [
         "R-01",
@@ -813,7 +804,11 @@
         "R-05",
         "R-06",
         "R-07",
-        "R-08"
+        "R-08",
+        "R-09",
+        "R-10",
+        "R-11",
+        "R-12"
       ],
       "gate_ids": [
         "G0",
@@ -821,7 +816,7 @@
         "G2",
         "G3"
       ],
-      "evidence_summary_zh": "90 天零阶段按 G0 资料许可、G1 可逆原型、G2 封闭成对测试、G3 独立复核推进；R-01—R-08 的停止与恢复记录决定是否升级，分期不代表建设时序或资金承诺。"
+      "evidence_summary_zh": "90 天零阶段按 G0 资料许可、G1 可逆原型、G2 封闭成对测试、G3 独立复核推进；R-01—R-12 全部十二项风险条目的停止与恢复记录决定是否升级，分期不代表建设时序或资金承诺。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -982,8 +977,7 @@
         "A-OPERATION-NODES-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
+        "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE",
         "DETERMINISTIC_VALIDATION"
       ],
@@ -995,7 +989,11 @@
         "R-05",
         "R-06",
         "R-07",
-        "R-08"
+        "R-08",
+        "R-09",
+        "R-10",
+        "R-11",
+        "R-12"
       ],
       "gate_ids": [
         "G0",
@@ -1003,7 +1001,7 @@
         "G2",
         "G3"
       ],
-      "evidence_summary_zh": "九项假设逐项记录受影响文件、触发、责任、解决证据和重算范围；R-01—R-08 则绑定代表场景、六个工作包、G0—G3 及停止/恢复条件，使缺资料能够阻止越级而非只停留在免责声明。"
+      "evidence_summary_zh": "十二项假设逐项记录受影响文件、触发、责任、解决证据和重算范围；R-01—R-12 十二项风险条目逐条绑定触发、停止阈值、责任角色与恢复条件，其中 R-01—R-08 另绑定代表场景、六个工作包与 G0—G3，使缺资料能够阻止越级而非只停留在免责声明。"
     }
   ]
 }

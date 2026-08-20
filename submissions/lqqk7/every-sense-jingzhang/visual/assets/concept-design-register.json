@@ -514,16 +514,18 @@
  "limitations_zh": [
   "三张图的底图只有 OpenStreetMap 快照的路网与轨道要素，快照不含建筑物、水系与土地利用；图上任何建筑体量均为设想，不表示现状建筑。",
   "街块轮廓为可步行网络的拓扑闭合面，不代表产权边界、围墙或可否开放；重点区范围为临时多边形，official_boundary=false，官方边界公开后须整体重算。",
-  "三张图不提出任何控规指标、强度数值、道路红线、断面、车道数、路权划分、照度、容积、坡度与钟点值。",
+  "三张图不提出任何控规指标、强度数值、道路红线、车道数、路权划分、照度、容积、坡度与钟点值。图上唯一的尺寸数值是 CD-01 的通道断面四带取值（导路 2.50 · 触觉 0.30 · 设施 1.20 · 缓冲 1.50 米），该四值逐字取自 visual/assets/sensory-design-code.json 的母版卡，在本文件登记为数据派生层 band_widths，不是本批图版新提出的断面设计；v8.8 记录中「不出现断面数值」一句应按此拆读。",
   "设想要素的落位不构成先例：同一批判据可以落成完全不同的空间组合，本批只是其中一次。",
-  "本文件不新增任何史实主张、不新增任何数值、不改变包内任何既有文件的状态与结论。"
+  "本文件不新增任何史实主张、不新增任何数值、不改变包内任何既有文件的状态与结论。",
+  "已知表述瑕疵，本版登记不修：CD-01 三联的中文图面读数条写作「设想入口间距 50.5 m · 街块中位等效边长（参考值）」，中点分隔使后半句读似另一项缺值读数。其原意是同位语——该设想间距即取自本区街块中位规模的等效方形边长（众智园 50.5 m、原点社区 41.0 m、大钟寺 31.1 m，来源同 visual/assets/district-strategy.json 的 reference_scale），英文侧写作 Speculative spacing 50.5 m, median block side，无此歧义。修正须重出三张概念推演图版，本版据实登记，留待下一批图版重出时一并处理；本条不改变任何数值与判据。"
  ],
  "limitations_en": [
   "The basemap on all three sheets carries only the road and rail elements of the OpenStreetMap snapshot, which holds no buildings, water or land use; every building mass on the sheets is speculation and represents no existing building.",
   "Block outlines are closed faces in the walkable-network topology and represent neither tenure boundaries, walls, nor whether opening is possible; key-area extents are provisional polygons with official_boundary=false and must be recomputed in full once official boundaries are published.",
-  "The three sheets propose no regulatory indicator, intensity value, road red line, cross-section, lane count, right-of-way split, illuminance, retention volume, gradient or clock value.",
+  "The three sheets propose no regulatory indicator, intensity value, road red line, lane count, right-of-way split, illuminance, retention volume, gradient or clock value. The only dimensional figures on the sheets are the four passage-band widths on CD-01 (guide 2.50, tactile 0.30, furnishing 1.20, buffer 1.50 metres), quoted word for word from the master card in visual/assets/sensory-design-code.json and registered here as the data-derived layer band_widths; they are not a section designed by this batch. The v8.8 sentence about no section figures is to be read in these two parts.",
   "Where a speculative element lands sets no precedent: the same criteria admit entirely different spatial compositions, and this batch is one of them.",
-  "This file adds no historical claim, adds no figure, and changes the status or conclusion of no existing file in the package."
+  "This file adds no historical claim, adds no figure, and changes the status or conclusion of no existing file in the package.",
+  "Known wording defect, registered and not corrected in this version: the Chinese reading strip on the three CD-01 panels reads 「设想入口间距 50.5 m · 街块中位等效边长（参考值）」, where the middle dot makes the second half read as a separate reading with its value missing. The sense is appositive: the speculative spacing is the equivalent square side of that area's median block size (50.5 m in Zhongzhiyuan, 41.0 m in the Origin Community, 31.1 m in Dazhongsi, the same source as reference_scale in visual/assets/district-strategy.json). The English strip reads \"Speculative spacing 50.5 m, median block side\" and carries no such ambiguity. Correcting it requires re-issuing all three concept plates, so it is registered as it stands and left to the next plate batch; this note changes no value and no criterion."
  ],
  "derived_from": [
   "visual/assets/district-strategy.json",
