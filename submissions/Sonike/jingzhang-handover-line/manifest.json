@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b03fd2d18f59043aa884d5242ee9a93f30244eb4a893796265c216e16a0d8e48"
+      "sha256": "1e7ba785dd6b40cd9eda34f54504cbb5efb1e0b2ec2027639f11558353bda0dd"
     },
     {
       "path": "agent.json",
@@ -77,13 +77,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "afb992324b06eebd41a8ef447ae997c169682fe665ac5f6be13eb2d95a0c6238"
+      "sha256": "13ca59be7f91c6d9aade34bd911870ba856644f0c58d8251c2a91c111f9289e0"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8098e9225be3e3530197dbdd78d5ee5639a1759166d792d03bc8660b12e0f21f"
+      "sha256": "64006a228cbbef23b243c25c4763a58f2d8e6ebe8024be6c8ce49071e4e05739"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "02ca70d69b1e541b2f824254c25214055b524c1f301bdbfc4ad9251f8f1613ce"
+      "sha256": "23329fadf38a7f4a3e8ec372df41d639683e6fbb3b6a968d0de9d405fa597d76"
     },
     {
       "path": "report/narrative.md",
@@ -141,7 +141,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "914b03c0ec3d34adfb24c52f4e4fe68144e155d84cd9edfb789b34567ee131c2"
+      "sha256": "684c917afaabec77ba9729d7f2d4f5a04b4203842138feeb64eae0893e8bee43"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -169,7 +169,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f7cbbceeebf159fa2d0328bbb3071c94c6987dc016a26b41596a9fa8668feb2d"
+      "sha256": "691ae684b1a85c34845d3ee6903ac89922378bf4decde09002b87806aca455c4"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7899ae99483ce94ca0862d639a3b85777051568b29861b5efac1973a853e9943"
+      "sha256": "b84630ad842090a53fad1e83cfa623acacfea4ba1a79cc872948c296bdf070d2"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "88b6212ed40259f416b0b76b2e0eddb1eeea9f41ed03298419c78d466c1c5b2d"
+      "sha256": "dee5485e651f3f0eeb136c52968e9c9bc7bab55a0b9623e36720d74f7485ce9e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -270,7 +270,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e38993547a51e5789c862b8f9345b68a439f77ce95adc47bc1f6ef56b4efe6d7"
+      "sha256": "8c342cf4183f599ea7f00ecf6c52da29ac3c25ea1b7ff2cb149f5221698ea56e"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -362,7 +362,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "e688af4b5cf4c8a4589523f2ec77da815e4450b4d3e58cd70c02d8134b3a63c4"
+      "sha256": "bfb17d198ec4844c1edd6287a9b1bddfda8d1471cb5bb790f7264f5da9750080"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "3c5dca043b20de5728796f9f82ae38813b86116c3a98a0167b3c09a783b4921e"
+      "sha256": "0db5447b66478955e1030adc28006116d26a51f6ffb72f4bd149bd0aba32f714"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -459,7 +459,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "09894fe51e629375b0b7d8ca3bc7bdc3f0f02b9a109de48eebff9a44aff23936"
+      "sha256": "032268178e245b39236eea00aa4e8f1febfcfceaba1a76708181022fe08ab5de"
     },
     {
       "path": "assets/figures/handover-scene.en.jpg",
@@ -467,7 +467,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/handover-scene.jpg",
-      "sha256": "30a1f9514905af6906b4b2468c3c7f1d5fc38655cb134100b6d9dde06b2b19a8"
+      "sha256": "c358eb19a247239224cddd6e406bc9b4d06ab72725489b356aed273cd1784553"
     },
     {
       "path": "assets/media/cover.png",
@@ -551,7 +551,7 @@
       "path": "assets/media/guided-tour.md",
       "role": "transcript",
       "required": false,
-      "sha256": "db29773008512b2d1f44afc24401d128955d90e1f23fda111deeadd6b7aee01f",
+      "sha256": "24111973b325463ad6938b06ed901ed600f0a29f709529453065e0eadc28cf41",
       "title_zh": "三分钟导览视频文字稿与分镜（中文）",
       "title_en": "Guided-tour transcript and shot list (Chinese)",
       "description_zh": "逐句文字稿，外加九段分镜表：写明每一段配的是哪张图件、为什么配它。",
@@ -561,7 +561,7 @@
       "path": "assets/media/guided-tour-en.md",
       "role": "transcript",
       "required": false,
-      "sha256": "0404590b5ff757c5f9fd6f6755cc2a911be84137f18a703b7d430f9337e5e899",
+      "sha256": "74d02c1a79d2768bd3f344dc623d6e3f8e01d29ebbf0d17025bc1c96ad852d8b",
       "title_zh": "三分钟导览视频文字稿与分镜（英文）",
       "title_en": "Guided-tour transcript and shot list (English)",
       "description_zh": "英文版文字稿与分镜表。",
@@ -644,11 +644,11 @@
       "path": "visual/assets/public-handover-table-3d.json",
       "role": "visualization",
       "required": false,
-      "sha256": "bb6b133d3b7a5ceaa48c9759a9f0ceeaba89abb726b571cda3e4cb71a281cdca",
+      "sha256": "dc5fc5841a9f0bde87e258162cddf3dc01795adb78002e0773d78ce4a42f8a02",
       "title_zh": "公开交接桌 · 三维关系模型（base64 封装 STL，含重建参数与自校验哈希）",
       "title_en": "Public Handover Table · 3D relation model (base64-wrapped STL with rebuild parameters and self-verifying hash)",
-      "description_zh": "任务书表达完整度点名「视频/声音、三维或交互网页」，本文件补上三维这一类。**它是关系模型不是施工模型**：正文写明这张桌子的位置、尺寸、材料、无障碍净宽与桌面高度须依现场测绘与无障碍规范确定、本方案不预设数字，因此模型一律使用无量纲相对单位，只表达四段的顺序、相邻关系与共同在场，**任何按本文件推算的实际尺寸都是误用**。顺序不可调换是这张桌子的全部主张，模型把它做成几何事实：四段沿同一轴线相接，交出位有四个版本卡插槽、接入位有单个判定牌位、未决栏是唯一高出台面的竖板，**人工窗口在最外端且是唯一落地的一段**——撤除时这一段不撤。144 个三角面，binary STL 以 base64 内嵌，附 sha256 供解码后自校验。",
-      "description_en": "The taskbook's expression-completeness clause names video/sound, three-dimensional or interactive web form; this file supplies the three-dimensional kind. **It is a relation model, not a construction model**: the proposal states that this table's position, size, material, accessible clear width and worktop height must be set by site survey and accessibility codes and that no figure is assumed, so the model uses dimensionless relative units and expresses only the order, adjacency and simultaneous presence of the four segments — **any real dimension derived from it is a misuse**. That the order cannot be swapped is the whole claim of the table, and the model makes it a geometric fact: the four segments meet along one axis; the hand-out station carries four version-card slots, the take-in station a single verdict plate, the open-items board is the only element rising above the worktop, and **the human counter is outermost and the only segment reaching the ground** — the segment that stays when the rest is removed. 144 triangles, binary STL embedded as base64 with a sha256 for post-decode verification.",
+      "description_zh": "任务书表达完整度点名「视频/声音、三维或交互网页」，本文件补上三维这一类。**它是关系模型不是施工模型**：**建议尺寸在正文里给、不在模型里给**：《三处交接场的场所尺度》一节给出两块台面各面宽 1.2 m、进深 0.6 m、中间 0.4 m 空档（合计 2.8 × 0.6 m，落在 1.0 m 退线余量内）；桌面高度与无障碍净宽仍须依现行规范由专业方核定。模型因此一律使用无量纲相对单位，只表达四段的顺序、相邻关系与共同在场，**任何按本文件推算的实际尺寸都是误用**。顺序不可调换是这张桌子的全部主张，模型把它做成几何事实：四段沿同一轴线相接，交出位有四个版本卡插槽、接入位有单个判定牌位、未决栏是唯一高出台面的竖板，**人工窗口在最外端且是唯一落地的一段**——撤除时这一段不撤。144 个三角面，binary STL 以 base64 内嵌，附 sha256 供解码后自校验。",
+      "description_en": "The taskbook's expression-completeness clause names video/sound, three-dimensional or interactive web form; this file supplies the three-dimensional kind. **It is a relation model, not a construction model**: **recommended dimensions are given in the proposal, not in the model**: \"Place-Scale Design of the Three Handover Grounds\" gives two counter tops each 1.2 m wide and 0.6 m deep with a 0.4 m gap (2.8 × 0.6 m in total, inside the 1.0 m setback slack); worktop height and accessible clear width must still be verified by professionals against current accessibility codes. The model therefore uses dimensionless relative units and expresses only the order, adjacency and simultaneous presence of the four segments — **any real dimension derived from it is a misuse**. That the order cannot be swapped is the whole claim of the table, and the model makes it a geometric fact: the four segments meet along one axis; the hand-out station carries four version-card slots, the take-in station a single verdict plate, the open-items board is the only element rising above the worktop, and **the human counter is outermost and the only segment reaching the ground** — the segment that stays when the rest is removed. 144 triangles, binary STL embedded as base64 with a sha256 for post-decode verification.",
       "language": "neutral"
     }
   ],
