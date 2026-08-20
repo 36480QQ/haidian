@@ -1,5 +1,27 @@
 # 方案迭代记录 / Changelog
 
+## v50.0 - 2026-08-20
+
+**专家评审包对齐与决策级风险摘要 / Expert review packet alignment and decision-grade risk summary**
+
+- 串行门：PR #3491 已合并，merge `362986d3040b98891d8f99b07f25b2dd165cb3fa` 已进入 canonical `main@e289e4abc305b64f06add372cdec2fcb2a8a4db7`；同包开放 PR 为 0，工作树洁净。本轮在完整复读最新 README、Skill、公开任务书、taskbook、source registry、formal guide、review-packets 与 risk-radar 后开始。
+- 修复前 RED：维护者 review packet 虽可导出，但 1,316 行／209,080 字节入口显示版本与轮次“未声明”，快速摘要没有使用第 49 轮已建立的海淀公共能力判断，`risk.json` 缺失，23 项假设先于决策路由展开，展示名仍带旧工具标签。上述均为编辑审查结果，不是评审意见、专家判断、公众反馈或理解度实测。
+- 双语 front matter 以 `version: 50.0 / iteration: 50.0` 合法声明第 50 轮，摘要先回答唯一概念、为何海淀、三处专业交接与现实边界；`agent_name` 收束为不依赖工具品牌的 `xyh202131 AI design agent`。没有改变模型与工具真实溯源。
+- 新增双语 `risk.json`：八个维度只表达 G0 编辑复核优先级，并逐项连接 assumptions、H01—H07 与 P01—P07；政策、空间、实施与运维列为最高阻断组。分数不是概率、评审评分、批准或成熟度推进，重大缺口继续 NO-GO。
+- `review-handoff-index.json` 新增专家工件定位、五项快速判断、八条风险路由与修复前 RED；双语 visual 在原 6 项导航内加入同一五项判断和可点击 `risk.json` 入口。桌面／移动、JavaScript／无 JavaScript、键盘、减少动态、打印与展开披露共 12 个情形通过，外部请求与自动播放均为 0。
+- PDF 触发审查发现旧版 A3 第 13—14 页与 A0 第 7—8 板尚未出现同一风险摘要和唯一机器入口，因此判定 `REBUILD`。四份既有 PDF 在不增页的情况下原位重建；两次新进程逐文件字节一致，14+14+8+8 共 44 页的全页、灰度和细节 QA 均通过，空白、加密、裁切、越界、替换字形与层级倒退为 0。确定性和可读性不构成现场、无障碍认证、专家接受、批准、清权或成熟度。
+- 当前登记为 manifest/package 156、非 manifest 内容 155、逐文件权利记录 156；新增 `ASSET-156` 只登记 `risk.json` 的来源、父工件、用途与限制。总体仍为 `not_fully_cleared`，独立逐文件清权仍为 0。
+- 本轮无新媒体、无新模型调用、无新来源、无新品牌、场景、项目、重点区、治理合同、成熟度或页面。九份 geometry、`metrics.json`、12/8/3/36、G0、NO-GO、provisional、现实结果 0、同任务非 AI 路径与恢复非授权全部冻结。
+
+- Serial gate: PR #3491 was merged and merge `362986d3040b98891d8f99b07f25b2dd165cb3fa` entered canonical `main@e289e4abc305b64f06add372cdec2fcb2a8a4db7`; no package PR remained open and the worktree was clean. Work began only after fully rereading the latest README, Skill, public brief, taskbook, source registry, formal guide, review-packets and risk-radar.
+- Reproducible RED: the maintainer review packet exported successfully, but its 1,316-line / 209,080-byte entry declared neither version nor iteration, its quick summary omitted the Round 49 Haidian public-capability judgement, `risk.json` was absent, 23 assumptions preceded any decision route, and the display name retained a stale tool label. These are editorial-review findings, not jury comment, expert opinion, public feedback or measured comprehension.
+- Bilingual front matter now declares legal `version: 50.0 / iteration: 50.0` for Round 50; the summary answers the sole concept, why Haidian, three-place professional handoff and reality boundary first. `agent_name` becomes tool-neutral `xyh202131 AI design agent` without altering truthful model and tool provenance.
+- New bilingual `risk.json` expresses eight G0 editorial-review priorities and links each to assumptions, H01–H07 and P01–P07. Policy, spatial, implementation and operations are the highest blocker group. Scores are not probabilities, review grades, approvals or maturity advancement; a material gap continues to hold NO-GO.
+- `review-handoff-index.json` adds an expert artefact locator, five quick judgements, eight risk routes and the before-fix RED. Bilingual visual adds the same five judgements and a clickable `risk.json` entry within the existing six-item navigation. Twelve desktop/mobile, JavaScript/no-JavaScript, keyboard, reduced-motion, print and expanded-disclosure cases pass with zero external request and no autoplay.
+- The PDF trigger audit found that the previous A3 pages 13–14 and A0 boards 7–8 did not yet carry the same risk summary and sole machine entry, so the decision was `REBUILD`. All four existing PDFs were rebuilt in place without page growth; two fresh processes are byte-identical per file, and full-page, grayscale and detail QA passes across all 14+14+8+8 = 44 pages with zero blank, encrypted, clipped, out-of-bounds, replacement-glyph or hierarchy-regression page. Determinism and legibility do not establish field evidence, accessibility certification, expert acceptance, approval, rights clearance or maturity.
+- Current registration is 156 manifest/package paths, 155 non-manifest content paths and 156 file-level rights records. New `ASSET-156` records only the origin, parent artefacts, use and limits of `risk.json`; overall status remains `not_fully_cleared` and completed independent file-level clearance audits remain zero.
+- This round adds no media, model call, source, brand, scenario, project, key area, governance contract, maturity or page. Nine geometry files, `metrics.json`, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path and non-authorising recovery remain frozen.
+
 ## v49.0 - 2026-08-19
 
 **海淀社会落位与公共能力阅读 / Haidian social grounding and public-capability reading**

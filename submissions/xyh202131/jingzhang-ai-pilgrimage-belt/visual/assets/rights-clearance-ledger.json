@@ -2,9 +2,9 @@
   "schema_version": "1.0.0",
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
-  "as_of": "2026-08-19",
-  "as_of_semantics": "date of last real content edit; Round 49 converts Haidian social context into ordinary-life-first spatial reading, rebuilds two bilingual figure groups and four fixed-page publications, adds no media or source, and keeps every affected file pending independent review",
-  "scope": "Round 20 bilingual review handoff package index, Round 40 spatial-distinction redraw/republication, and Round 46B spatial-motion truth repair",
+  "as_of": "2026-08-20",
+  "as_of_semantics": "date of last real content edit; Round 50 aligns the expert review packet, adds one bilingual structured risk register, adds no media or source, and keeps every affected file pending independent review",
+  "scope": "Round 20 bilingual review handoff package index, Round 40 spatial-distinction redraw/republication, Round 46B spatial-motion truth repair, and Round 50 expert review packet alignment",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
     "source_rights_instance": "source-rights-evidence.json",
@@ -30,8 +30,8 @@
     "pending_round19_final_bytes": "Round 19 provenance structure is recorded, but the stored digest is deliberately retained as a prior snapshot until concurrent review stabilizes the exact file bytes; it is not a final identity claim."
   },
   "file_coverage": {
-    "expected_manifest_entries": 155,
-    "expected_non_manifest_entries": 154,
+    "expected_manifest_entries": 156,
+    "expected_non_manifest_entries": 155,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -45,6 +45,7 @@
           "agent.json",
           "metrics.json",
           "assumptions.json",
+          "risk.json",
           "sources.json",
           "self_check.json",
           "compliance_matrix.json",
@@ -253,8 +254,8 @@
         ]
       }
     ],
-    "expected_manifest_file_count": 155,
-    "expected_non_manifest_content_file_count": 154
+    "expected_manifest_file_count": 156,
+    "expected_non_manifest_content_file_count": 155
   },
   "asset_records": [
     {
@@ -8576,6 +8577,55 @@
         "source-rights-evidence.json",
         "../../agent.json",
         "../../assets/media/4-state-narration-script.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-156",
+      "path": "risk.json",
+      "role": "risk_register",
+      "language": "zh-en",
+      "asset_class": "package_authored_structured_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "UTF-8 JSON structured edit aligned to the repository risk-radar contract and existing package assumptions and handoff IDs",
+        "digest_status": "final_digest_in_manifest",
+        "reason": "Final Git-blob SHA-256 is recorded by manifest refresh; the rights record does not duplicate the digest."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "assumptions.json",
+          "visual/assets/implementation-handoff-matrix.json",
+          "visual/assets/review-handoff-index.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#round-50-expert-review-packet-alignment--第-50-轮专家评审包对齐",
+        "limitation": "Scores are editorial G0 priorities only, not probabilities, jury grades, expert findings, approvals, real outcomes or maturity advancement."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../assumptions.json",
+        "implementation-handoff-matrix.json"
       ],
       "open_item_ids": [
         "RIGHTS-OPEN-01",

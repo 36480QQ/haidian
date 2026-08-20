@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-19",
+  "as_of": "2026-08-20",
   "carriers": {
     "evidence_matrix": {
       "en": "Evidence matrix: spatial-evidence crosswalk for the three key areas",
@@ -31,7 +31,285 @@
       "zh": "场景护照：12 个场景的门级与护照字段覆盖"
     }
   },
-  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R44",
+  "contract_id": "JZ-REVIEW-HANDOFF-INDEX-R50",
+  "expert_review_packet_r50": {
+    "artifact_locator": {
+      "authority_text": [
+        {
+          "path": "proposal.md",
+          "role_en": "Chinese primary proposal and authoritative human-reading text",
+          "role_zh": "中文主稿与权威人类阅读文本"
+        },
+        {
+          "path": "proposal.en.md",
+          "role_en": "Complete equivalent English translation",
+          "role_zh": "完整等义英文译稿"
+        },
+        {
+          "path": "report/proposal.html",
+          "role_en": "Offline rendered primary report",
+          "role_zh": "离线渲染中文报告"
+        },
+        {
+          "path": "report/proposal.en.html",
+          "role_en": "Offline rendered English report",
+          "role_zh": "离线渲染英文报告"
+        }
+      ],
+      "decision_and_risk": [
+        {
+          "path": "risk.json",
+          "role_en": "Eight editorial G0 risk priorities; not probabilities or review grades",
+          "role_zh": "八维编辑性 G0 风险优先级；不是概率或评审评分"
+        },
+        {
+          "path": "assumptions.json",
+          "role_en": "Complete 23-item unknown and provisional-condition register",
+          "role_zh": "完整 23 项未知与临时条件登记"
+        }
+      ],
+      "evidence_rights_handoff": [
+        {
+          "path": "sources.json",
+          "role_en": "Source provenance and use limits",
+          "role_zh": "来源、生成与用途限制"
+        },
+        {
+          "path": "visual/assets/rights-clearance-ledger.json",
+          "role_en": "Per-file rights status; overall not_fully_cleared",
+          "role_zh": "逐文件权利状态；总体 not_fully_cleared"
+        },
+        {
+          "path": "visual/assets/implementation-handoff-matrix.json",
+          "role_en": "D01-D08, H01-H07 and P01-P07 professional handoff graph",
+          "role_zh": "D01—D08、H01—H07 与 P01—P07 专业交接图"
+        }
+      ],
+      "print_cross_check": {
+        "a0": {
+          "concept_and_boundary": [
+            1
+          ],
+          "ordinary_and_failure": [
+            5,
+            6
+          ],
+          "evidence_rights_handoff": [
+            7,
+            8
+          ],
+          "path_en": "drawings/a0-boards.en.pdf",
+          "path_zh": "drawings/a0-boards.pdf"
+        },
+        "a3": {
+          "concept_and_boundary": [
+            1
+          ],
+          "ordinary_and_failure": [
+            8,
+            9
+          ],
+          "evidence_rights_handoff": [
+            13,
+            14
+          ],
+          "path_en": "drawings/a3-booklet.en.pdf",
+          "path_zh": "drawings/a3-booklet.pdf"
+        }
+      },
+      "visual_anchors": [
+        "visual/index.html#jury-entry",
+        "visual/index.html#ordinary-life",
+        "visual/index.html#four-state-motion",
+        "visual/index.html#review-handoff",
+        "visual/index.en.html#jury-entry",
+        "visual/index.en.html#ordinary-life",
+        "visual/index.en.html#four-state-motion",
+        "visual/index.en.html#review-handoff"
+      ]
+    },
+    "audit_type": "editorial_review_packet_alignment",
+    "quick_judgement": {
+      "current_proof_en": "T-02 replays 10 fixed PII-free synthetic cases at 10/10 exact decisions, 4/4 stop mappings and 13/13 fail-closed controls; it proves contract logic only.",
+      "current_proof_zh": "T-02 对 10 个固定无 PII 合成案例完成 10/10 决策一致、4/4 停止映射和 13/13 失败关闭；只证明合同逻辑。",
+      "haidian_reason_en": "Innovation density becomes public capability only when ordinary people can use, question and exit without accounts, devices or professional identity.",
+      "haidian_reason_zh": "创新密度只有在普通人无需账户、设备或专业身份仍能使用、质疑和退出时，才会成为公共能力。",
+      "professional_start": "visual/index.html#review-handoff",
+      "single_concept_en": "Twin-Track Jing-Zhang: ordinary life stays continuous; optional G0 proof is intermittent, adjacent and stoppable.",
+      "single_concept_zh": "双轨京张：普通生活连续；可选 G0 验证间歇、旁置且可停止。",
+      "still_blocks_en": "Official geometry, controls, rights, real parity, accepted professional duty, approval and field evidence remain open; major gaps keep NO-GO.",
+      "still_blocks_zh": "官方几何、控规、权利、真实等价、专业接责、批准与现场证据仍未闭合；重大缺口保持 NO-GO。"
+    },
+    "reality_guard": {
+      "approvals": 0,
+      "boundary": "provisional",
+      "go_decisions": 0,
+      "independent_file_level_clearance_audits": 0,
+      "maturity": "G0",
+      "major_gap_decision": "NO-GO",
+      "real_outcomes": 0,
+      "rights_status": "not_fully_cleared",
+      "scope_en": "This is an editorial packet-alignment record, not measured comprehension, public feedback, professional opinion, approval, operation or maturity evidence.",
+      "scope_zh": "这是编辑性评审包对齐记录，不是理解度测量、公众反馈、专业意见、批准、运营或成熟度证据。"
+    },
+    "red_before": {
+      "agent_display_name": "xyh202131 opencode AI agent",
+      "artifact_paths_clickable_in_exported_html": false,
+      "assumptions_before_evidence_route": 23,
+      "packet_markdown_bytes": 209080,
+      "packet_markdown_lines": 1316,
+      "quick_summary_used_round_49_haidian_thesis": false,
+      "risk_json_present": false,
+      "version_iteration": "未声明 / 未声明"
+    },
+    "risk_routes": [
+      {
+        "assumption_ids": [
+          "A-G0-OFFLINE-009",
+          "A-CULTURE-CONTENT-006"
+        ],
+        "handoff_packs": [
+          "H04_DATA_SAFETY"
+        ],
+        "primary_artifact": "risk.json#/dimensions/0",
+        "risk_id": "data_privacy",
+        "score": 4,
+        "suggested_discipline_types": [
+          "P06_DATA_AI_RIGHTS"
+        ]
+      },
+      {
+        "assumption_ids": [
+          "A-CONTROLS-001",
+          "A-SITE-LOCATION-008"
+        ],
+        "handoff_packs": [
+          "H01_AUTHORITY",
+          "H02_APPROVAL_SCOPE",
+          "H03_BASELINE",
+          "H04_DATA_SAFETY",
+          "H05_STOP_RECOVERY",
+          "H06_PUBLIC_PARITY",
+          "H07_RETEST_DECISION"
+        ],
+        "primary_artifact": "risk.json#/dimensions/1",
+        "risk_id": "implementation_complexity",
+        "score": 5,
+        "suggested_discipline_types": [
+          "P01_PLANNING_URBAN_DESIGN",
+          "P02_LANDSCAPE_ACCESSIBILITY",
+          "P03_TRANSPORT",
+          "P04_ARCHITECTURE_PUBLIC_INTERFACE",
+          "P05_SPECIALIST_SAFETY",
+          "P06_DATA_AI_RIGHTS",
+          "P07_OPERATIONS_COMMUNITY"
+        ]
+      },
+      {
+        "assumption_ids": [
+          "A-GOVERNANCE-001",
+          "A-NON-AI-FIRST-013"
+        ],
+        "handoff_packs": [
+          "H06_PUBLIC_PARITY"
+        ],
+        "primary_artifact": "risk.json#/dimensions/2",
+        "risk_id": "public_acceptance",
+        "score": 4,
+        "suggested_discipline_types": [
+          "P07_OPERATIONS_COMMUNITY"
+        ]
+      },
+      {
+        "assumption_ids": [
+          "A-MAINTENANCE-URBANISM-012",
+          "A-URBAN-METABOLISM-014",
+          "A-LONG-TERM-CIVIC-OPERATIONS-017"
+        ],
+        "handoff_packs": [
+          "H03_BASELINE",
+          "H05_STOP_RECOVERY",
+          "H07_RETEST_DECISION"
+        ],
+        "primary_artifact": "risk.json#/dimensions/3",
+        "risk_id": "operations_cost",
+        "score": 5,
+        "suggested_discipline_types": [
+          "P07_OPERATIONS_COMMUNITY"
+        ]
+      },
+      {
+        "assumption_ids": [
+          "A-BOUNDARY-001",
+          "A-CONTROLS-001"
+        ],
+        "handoff_packs": [
+          "H01_AUTHORITY",
+          "H02_APPROVAL_SCOPE"
+        ],
+        "primary_artifact": "risk.json#/dimensions/4",
+        "risk_id": "policy_uncertainty",
+        "score": 5,
+        "suggested_discipline_types": [
+          "P01_PLANNING_URBAN_DESIGN",
+          "P05_SPECIALIST_SAFETY"
+        ]
+      },
+      {
+        "assumption_ids": [
+          "A-BOUNDARY-001",
+          "A-SPATIAL-REPRESENTATION-002",
+          "A-SITE-READING-020"
+        ],
+        "handoff_packs": [
+          "H01_AUTHORITY",
+          "H03_BASELINE"
+        ],
+        "primary_artifact": "risk.json#/dimensions/5",
+        "risk_id": "spatial_dispute",
+        "score": 5,
+        "suggested_discipline_types": [
+          "P01_PLANNING_URBAN_DESIGN",
+          "P02_LANDSCAPE_ACCESSIBILITY",
+          "P03_TRANSPORT",
+          "P04_ARCHITECTURE_PUBLIC_INTERFACE"
+        ]
+      },
+      {
+        "assumption_ids": [
+          "A-G0-OFFLINE-009"
+        ],
+        "handoff_packs": [
+          "H04_DATA_SAFETY",
+          "H05_STOP_RECOVERY",
+          "H07_RETEST_DECISION"
+        ],
+        "primary_artifact": "risk.json#/dimensions/6",
+        "risk_id": "technology_maturity",
+        "score": 4,
+        "suggested_discipline_types": [
+          "P05_SPECIALIST_SAFETY",
+          "P06_DATA_AI_RIGHTS",
+          "P07_OPERATIONS_COMMUNITY"
+        ]
+      },
+      {
+        "assumption_ids": [
+          "A-NON-AI-FIRST-013"
+        ],
+        "handoff_packs": [
+          "H06_PUBLIC_PARITY"
+        ],
+        "primary_artifact": "risk.json#/dimensions/7",
+        "risk_id": "equity_inclusion",
+        "score": 4,
+        "suggested_discipline_types": [
+          "P02_LANDSCAPE_ACCESSIBILITY",
+          "P07_OPERATIONS_COMMUNITY"
+        ]
+      }
+    ]
+  },
   "evidence_integrity": {
     "cold_read_answer_map": {
       "answers_checked": 8,
@@ -301,6 +579,30 @@
       "latest_rebuild_round": 48,
       "notes": {},
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
+      "status": "current"
+    },
+    {
+      "files": [
+        {
+          "language": "zh-en",
+          "path": "risk.json",
+          "role": "risk",
+          "role_detail": "eight editorial G0 priorities with mitigations and human-review routes",
+          "translation_of": null
+        }
+      ],
+      "group_id": "root-risk",
+      "human_surface_refs": [
+        "visual/index.en.html",
+        "visual/index.html"
+      ],
+      "kind": "risk",
+      "latest_rebuild_round": 50,
+      "notes": {
+        "en": "Scores order editorial G0 attention only; they are not probabilities, review grades, approvals or maturity advancement.",
+        "zh": "分数只排列 G0 编辑复核优先级，不是概率、评审评分、批准或成熟度推进。"
+      },
+      "rights_ref": "visual/assets/rights-clearance-ledger.json#ASSET-156",
       "status": "current"
     },
     {
@@ -2200,10 +2502,10 @@
         "visual/index.html"
       ],
       "kind": "evidence_data",
-      "latest_rebuild_round": 48,
+      "latest_rebuild_round": 50,
       "notes": {
-        "en": "Self-registered: the index is one of 155 registered paths and locates the other 154 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
-        "zh": "本索引自登记：索引自身是 155 个登记路径之一，负责定位其余 154 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
+        "en": "Self-registered: the index is one of 156 registered paths and locates the other 155 package files; the index only locates, creates no evidence and changes no maturity or rights state.",
+        "zh": "本索引自登记：索引自身是 156 个登记路径之一，负责定位其余 155 个投稿包文件；索引只负责定位，不生成证据、不改变成熟度或权利状态。"
       },
       "rights_ref": "visual/assets/rights-clearance-ledger.json#asset_records",
       "status": "current"
@@ -2701,8 +3003,8 @@
   "package_counts": {
     "key_areas": 3,
     "land_use_units": 36,
-    "manifest_paths": 155,
-    "non_manifest_content_paths": 154,
+    "manifest_paths": 156,
+    "non_manifest_content_paths": 155,
     "note_en": "The above are package structure and file counts only, not field, operating, approval or maturity evidence.",
     "note_zh": "以上为包内结构与文件计数，不是现场、运营、审批或成熟度证据。",
     "pdf_pages": {
@@ -2713,7 +3015,7 @@
       "total": 44
     },
     "projects": 8,
-    "rights_ledger_paths": 155,
+    "rights_ledger_paths": 156,
     "scenes": 12,
     "source_records": 50
   },
@@ -2743,8 +3045,8 @@
       "geometry/site_boundary.geojson"
     ]
   },
-  "purpose_en": "Review navigation for all 155 package paths: reading routes, a per-file registry with status, frozen/provisional/historical labels, three-carrier mapping and rights backlinks. The index only locates; it creates no evidence, changes no maturity and grants no rights.",
-  "purpose_zh": "为全部 155 个投稿包路径提供评审定位：阅读路线、逐文件登记、状态、冻结/临时/历史标记、三载体与权利回链。索引只负责定位，不生成新证据、不改变成熟度、不构成权利许可。",
+  "purpose_en": "Review navigation for all 156 package paths: reading routes, a per-file registry with status, frozen/provisional/historical labels, three-carrier mapping and rights backlinks. The index only locates; it creates no evidence, changes no maturity and grants no rights.",
+  "purpose_zh": "为全部 156 个投稿包路径提供评审定位：阅读路线、逐文件登记、状态、冻结/临时/历史标记、三载体与权利回链。索引只负责定位，不生成新证据、不改变成熟度、不构成权利许可。",
   "reading_routes": [
     {
       "entry_points": [
