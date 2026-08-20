@@ -58,7 +58,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 重点区域详细设计
 
-三处“同班场”在同一伦理下承担不同角色，临时 polygon 仅用于概念定位 [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]。
+三处“同班场”在同一伦理下承担不同角色，临时 polygon 仅用于概念定位 [depth:three_key_area_detailed_design]；其南北顺序与公告面积只用于组织工作包，不代表已经完成站点、道路、产权或四象限锚定。特别是 `PROV-KEY-003` 尚无大钟寺站或官方道路 polygon 的位置核验，因此“大钟寺交换院”是一个概念角色，不等于大钟寺站所在路口的正式范围 [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-003] [source:KEY-AREA-LOCATION-REVIEW]。
 
 ![三处重点区域同班场设计](assets/figures/key-areas.png)
 
@@ -184,6 +184,18 @@ AI 原点交接院把学习者、照护者与低数字素养使用者放在同�
 
 工作包以可达与无障碍、人工交接与申诉、数据最小化、劳动与安全、公共连续性五类证据取代“效率”叙述，并把人工入口缺失、无障碍阻断、个人评分、情绪识别、隐蔽追踪、自动惩罚、生产系统接入、安全条件不通过等列为暂停/撤场红线。完整中英运行卡与审计字段见 `report/three-area-operations-audit.md` 及其对照版；它们只提供待现场验证的工作模板 [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:operations_audit_dimension_count]。
 
+## 服务等价与折返协议采用（可选交叉映射）
+
+本方案把 SEB v0.5.0 与 Switchback Protocol v0.3.0 作为**可选的协议交叉映射**接入既有 G0—G4 工作包：它们帮助把“AI 关闭后仍可服务”“谁接管”“何时暂停/折返”写成可复核字段，但不构成组织方、政府或专业机构的正式采用，也不把本包已有概念场景认领为 SEB 的 L0—L4 开放等级 [source:SEB-V050-ISSUE] [source:SWITCHBACK-V030-ISSUE] [data:visual/assets/three-area-operations-audit.json#protocol_adoption]。
+
+| 外部协议字段/语义 | 本方案的落位 | 采用边界 |
+| --- | --- | --- |
+| SEB `node_schema`（含 `ai_off_path`、`human_handoff` 等五字段） | 未来节点写清 AI 关闭后的无扫码/纸质/现金等价路径、可找到的值班角色、G0—G3核验门与非生产模式 | 只采用字段语义；空 `constraints.geojson` 不是节点图层，无服务覆盖率结论 |
+| Switchback `status` / `gate` / `ascent_grade` | `green_candidate`=字段齐备待核准；G2 后受控试点进入黄色；安全、无障碍、人工服务或数据边界失败即红色折返 | 不把本地 G0—G4 与外部 G0—G3、L0—L4 混同，不以纸面 G0 认领现场等级 |
+| Switchback `public_review_cycle_days` / `review_options` | 沿用 90 天可逆试点与季度交班审计，动作限定为 renew / reduce / pause / switch_back | 5 分钟接管、1/7 个工作日和 90 天均为待核验设计目标，不是实测或承诺 |
+
+版本、提交快照、SHA-256 与许可证边界见 `visual/assets/three-area-operations-audit.json` 和 `sources.json`；三处仍是 `concept_only`，协议字段不能替代 G1、G3 或 G4 决定 [source:SEB-V050-ISSUE] [source:SWITCHBACK-V030-ISSUE] [metric:operations_audit_gate_count]。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 八类画像把技术岗位与城市运行岗位放在同一张需求表中：
@@ -237,7 +249,7 @@ AI 原点交接院把学习者、照护者与低数字素养使用者放在同�
 
 同班主脊不是新路，而是“夜间也完整”的步行—骑行—轨道接驳服务链：连续照明、可见过街、遮雨短停、无障碍导视、夜间公交信息、同班驿和人工求助共同工作 [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]。道路红线、信号配时、站口衔接和停车数量均待交通专项。
 
-市政与新基建采用“设备可维护性优先”：公开设备资产编号与维护责任，不采集个人轨迹；边缘计算仅处理最低必要数据；任何公共AI系统必须有物理人工按钮、值班责任人和停用状态展示 [depth:municipal_new_infrastructure] [data:geometry/constraints.geojson#CONSTRAINTS]。公共服务设施保留现金、人工、纸质和语音入口，避免“只有手机才能使用城市”。
+市政与新基建采用“设备可维护性优先”：公开设备资产编号与维护责任，不采集个人轨迹；边缘计算仅处理最低必要数据；任何公共AI系统必须有物理人工按钮、值班责任人和停用状态展示 [depth:municipal_new_infrastructure] [standard:GENERATIVE-AI-INTERIM-MEASURES]。公共服务设施保留现金、人工、纸质和语音入口，避免“只有手机才能使用城市”。约束图层当前留空，因为官方控规、文保、地块、道路/铁路和市政约束尚未形成可审查数据；本段不提交约束几何，也不从空图层推导法定结论 [source:SOURCE-REGISTRY] [depth:municipal_new_infrastructure]。
 
 ![昼夜交通、蓝绿与公共支持网络](assets/figures/mobility-bluegreen.png)
 
