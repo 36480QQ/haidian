@@ -5,8 +5,8 @@ language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "50.0"
-iteration: "50.0"
+version: "51.0"
+iteration: "51.0"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Haidian's innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity. Twin-Track Jing-Zhang keeps ordinary tasks continuous and G0 proof tests intermittent and stoppable; three distinct prototypes connect evidence, risk and professional handoff. Boundaries remain provisional; outcomes, approvals and independent clearance remain zero."
 tracks:
@@ -47,7 +47,7 @@ Accounts, devices, professional language, available time, and algorithmic decisi
 | **Next candidate** | At the Dazhongsi staffed service portal, use the existing `JZ-05 × SCENE-011 × T-02` set to form one candidate chain: staffed-counter/static-guide baseline → side-positioned shadow proof → stop and human takeover → independent retest, all using the same frozen question set. | This is an **editorial review order** for this round, not a new project, site selection, priority, roster, partner, approved pilot, or implementation commitment. |
 | **Current block** | Accountable parties, exact site, real threshold, source coverage, staffed capacity, approval, real service, and independent retest all remain 0 or `unknown`; any open item keeps G0 / NO-GO. | Document completeness, machine PASS, restoration of ordinary use, or graphic clarity cannot create authorization, approval, restart, or maturity advancement. |
 
-![Twin-Track Jing-Zhang conceptual spatial relay: a continuous civic track links the three non-interchangeable switchyards at Zhongzhiyuan, Origin Community, and Dazhongsi, while intermittent proof, two supply wings, and a failure siding stay inside a provisional container; G0, provisional, not to scale](assets/figures/site-overview.en.png)
+![Twin-Track Jing-Zhang civic-ground structure: one continuous ordinary spine and six cross-links connect three non-interchangeable prototypes—parallel bypass at Zhongzhiyuan, one street and two courts at Origin Community, and four-way commute at Dazhongsi—while side proof, staffed handoff, and failure objects stay off the ordinary path; G0, provisional, not to scale](assets/figures/site-overview.en.png)
 
 > **Editorial hierarchy: 13 required chapters + 8 extended evidence units.** The required proposal consists of Chapters 1–12, from “Design Basis and Source List” through “Risk, Copyright, and Compliance,” plus Chapter 13, “References,” at the end. This reading entry is Extended Evidence E0; the seven H3 deep-read units between Chapters 12 and 13 are E1–E7. Extended evidence expands verification, professional handoff, and field-replacement rules. It does not replace a required chapter or change any G0 status, provisional boundary, unknown, non-AI path, rights block, or professional veto.
 
@@ -237,7 +237,7 @@ The six lateral interface lines and the north–south main line form a fishbone 
 
 The building layer uses massing prototypes to express priority intervention capacity; it does not simulate the complete existing city. Each prototype is marked as retain for assessment, adaptive-reuse candidate, or new-build candidate. Without evidence from surveys, ownership, structural conditions, heritage controls, and regulatory planning, none may be converted into a demolition or construction conclusion. Floor area ratio, total floor area, building height, road red lines, parking, and municipal capacity remain `unknown` [assumption:A-SPATIAL-REPRESENTATION-002] [depth:development_intensity_controls] [depth:height_massing_character].
 
-![Thirty-six conceptual functional envelopes organized along a continuous ordinary ground level and constrained by three spatial duties: ordinary continuity, proof beside, and exit plus restoration; not statutory parcels or approved uses](assets/figures/land-use-structure.en.png)
+![Thirty-six concept envelopes form two continuous but irregular functional fronts organized by one civic-ground spine and six cross-links, while three ground-level duties—ordinary continuity, proof beside, and exit plus restoration—constrain technology overlays; not statutory parcels or approved uses](assets/figures/land-use-structure.en.png)
 
 ## Detailed Design of Key Areas
 
@@ -259,7 +259,7 @@ The matrix adds only reviewable design mappings. It does not turn interface IDs 
 
 ### A shared reading method for three spatial prototypes
 
-The two figure families have distinct jobs. `key-areas` draws each place in its **ordinary plan state** first, then adds ground-floor public interfaces, staffed handoff, removable components, and a four-step public journey. `key-area-sections` translates the same object into an area-specific relationship section, ordinary–proof–fault–recovery states, and place-restoration acceptance. The green line is the continuously protected non-AI/accessibility intent; the blue dashed line is a stoppable and removable service overlay; pale dashes and massing blocks are unknown relationships only. No figure supplies a scale, exact siting, existing-building record, or engineering section. Accessibility continuity, clear width, slopes, turning, tactile guidance, and rest conditions all require survey and co-testing evidence [assumption:A-KEY-AREA-SPATIAL-011].
+The two figure families have distinct jobs. `key-areas` draws each place's **ordinary plan skeleton** first, then locates side proof, staffed handoff, node-by-node withdrawal, and off-route service in three different spatial relations. `key-area-sections` is limited to ground, thresholds, stop objects, staff positions, and restoration objects, with fault and restoration duties stated below each section. Ordinary–proof–fault–recovery remains governed by the proposal and the four-state contracts rather than being repeated in one section. The green line is the continuously protected non-AI/accessibility intent; the blue dashed line is a stoppable and removable service overlay; massing blocks express unknown relationships only. No figure supplies a scale, exact siting, existing-building record, or engineering section. Accessibility continuity, clear width, slopes, turning, tactile guidance, and rest conditions all require survey and co-testing evidence [assumption:A-KEY-AREA-SPATIAL-011].
 
 Three non-interchangeable prototypes and shared safeguards form the current design. Zhongzhiyuan uses a parallel proof court and equipment isolation; Origin Community uses one street, two courts, four nodes, and screen-free withdrawal; Dazhongsi uses a four-quadrant walk and one hall/one desk. All three retain continuous non-AI/access routes, staffed handoff, removable components, night-time quiet, four-state switching, place-restoration acceptance, and structured evidence backlinks. They share an evidence grammar but never a plan skeleton, and use only the existing `PROV-KEY-001`–`003`, `AI-ZONE-001`–`003`, and `SCENE-001`–`012` objects [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening].
 
@@ -313,9 +313,9 @@ All three prototypes observe the 22:00–07:00 quiet gate: no testing, amplifica
 
 The three pilgrimage landmarks are redefined as three chapters in one knowledge journey. Zhongzhiyuan’s “Open-source Spark Tower” records reproducible contributions without displaying personal rankings. Origin Community’s “Algorithm Milestone” places Jing-Zhang engineering history, Zhongguancun innovation history, and the history of AI correction side by side. Dazhongsi’s “Bell-and-Rail Commons” houses an archive of failures and corrections. Contributors may choose real names, pseudonyms, or anonymity. Recognition records only verifiable public contributions and is not tied to wealth, traffic, recruitment, or administrative evaluation. All names and forms require copyright, trademark, portrait-rights, historical-source, and accessibility review [assumption:A-CULTURE-CONTENT-006].
 
-![Differentiated plan relations for the three state stations: G0 concept, provisional geometry, not to scale, and not field evidence, an existing-building record, an approved design, or an accessibility result](assets/figures/key-areas.en.png)
+![Differentiated concept plans for the three state stations: Zhongzhiyuan uses a parallel bypass and side proof garden, Origin Community uses one street, two courts, and four withdrawal points, and Dazhongsi uses four-way commuting with off-route staffed service; G0, provisional, not to scale, and not field evidence, an existing-building record, an approved design, or an accessibility result](assets/figures/key-areas.en.png)
 
-![Differentiated concept sections and reversible mode changes for the three key areas: G0 relationships, not engineering sections, field evidence, completed restoration acceptance, or restart authorization](assets/figures/key-area-sections.en.png)
+![Differentiated ground-threshold sections for the three key areas: ordinary bypass versus proof court, resident street versus two courts, and commute datum versus off-route service, with distinct stop objects, staff positions, and restoration objects; G0 relationships, not engineering sections, field evidence, completed restoration acceptance, or restart authorization](assets/figures/key-area-sections.en.png)
 
 ### Components that cannot be copied mechanically, and their recovery gates
 
