@@ -27,7 +27,7 @@ for(const [id,value] of Object.entries(required)){
 const expected=[
   ['六条东西缝合','east_west_stitch_count'],['Six east–west stitches','east_west_stitch_count'],
   ['九个 ID','spatial_component_type_count'],['The IDs recur','spatial_component_type_count'],
-  ['E2 原型准备文件','s7_prototype_kit_item_count'],['S7 model now drives','s7_prototype_kit_item_count'],
+  ['E2 原型准备文件','s7_prototype_kit_item_count'],['One S7 model drives','s7_prototype_kit_item_count'],
   ['84 项','synthetic_design_verification_case_count'],['84/84 cases','synthetic_design_verification_case_count']
 ];
 for(const rel of ['proposal.md','proposal.en.md']){

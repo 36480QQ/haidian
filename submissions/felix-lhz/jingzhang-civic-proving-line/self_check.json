@@ -56,6 +56,7 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/figures/station-zhongzhiyuan.png",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/capability-validation-v2.webp",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/civic-adoption-v2.webp",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/dazhongsi-alt-c-v13.webp",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/public-translation-v2.webp",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assets/media/two-answers-cover-v2.webp",
         "submissions/felix-lhz/jingzhang-civic-proving-line/assumptions.json",
@@ -91,12 +92,14 @@
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/build-v11.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/content-v11.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/content-v12.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/content-v13.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/context-open-map.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/e2-readiness.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/prepare-open-map.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/qa-v11.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/red-team-review.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/register-v11-manifest.js",
+        "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/semantic-qa-v13.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/spatial-atlas.json",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/spatial-audit-v11.js",
         "submissions/felix-lhz/jingzhang-civic-proving-line/visual/assets/spatial-decision.json",
@@ -111,7 +114,7 @@
       "ai_package_stages": {
         "submissions/felix-lhz/jingzhang-civic-proving-line": "formal"
       },
-      "total_bytes": 19156465,
+      "total_bytes": 22136482,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -185,7 +188,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 10,
+        "known_metric_refs_required": 32,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -193,7 +196,7 @@
           "standard": 1,
           "depth": 8,
           "data": 27,
-          "metric": 10
+          "metric": 26
         }
       }
     },

@@ -55,7 +55,6 @@ function updateNarrative(){
     if(lang==='zh'){
       s=s.replace(/^summary:.*$/m,'summary: "三个方案接受同一把尺子；牺牲公共路径的方案被公开否决，入选方案再接受十二份测量契约。"');
       s=replaceOnce(s,'S7 以 1:5000、1:2000、1:500、1:200、1:50 节点和装配轴测承担实施样板；12 个场景各运行 7 类确定性桌面用例，形成 84 项可复跑的合成设计契约验证，不增加场景数量。[metric:measurement_contract_count] [metric:key_area_count]','S7 以五级审查尺度承担实施样板；12 个场景各运行 7 类确定性桌面用例，形成 84 项可复跑验证。五级尺度与 84 项验证分别引用其可复算指标，不用场景数替代空间深度。[metric:s7_review_scale_count] [metric:synthetic_design_verification_case_count]','opening metrics zh');
-      s=replaceOnce(s,'[metric:rejected_spatial_alternative_count] [metric:advanced_spatial_alternative_count] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]','[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count] [metric:advanced_spatial_alternative_count] [metric:alt_c_public_route_length_m] [metric:alt_c_trial_area_sqm] [metric:alt_c_reversible_buffer_area_sqm] [metric:alt_c_max_estop_staff_distance_m] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]','decision metrics zh');
       s=s.replace('[data:geometry/roads.geojson#STITCH-01] [metric:key_area_count]','[data:geometry/roads.geojson#STITCH-01] [metric:east_west_stitch_count]');
       s=s.replace('[data:visual/assets/spatial-atlas.json] [metric:paired_scenario_count]','[data:visual/assets/spatial-atlas.json] [metric:spatial_component_type_count]');
       s=s.replace('[data:visual/assets/spatial-atlas.json] [metric:measurement_contract_count]\n\n“编译器”','[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:s7_prototype_kit_item_count] [metric:e2_permit_gate_count] [metric:e2_printable_form_count] [metric:e2_procurement_package_count]\n\n“编译器”');
@@ -65,7 +64,6 @@ function updateNarrative(){
     }else{
       s=s.replace(/^summary:.*$/m,'summary: "Three alternatives face one ruler: a design that sacrifices the public route is publicly rejected, and the selected design then faces twelve measurement contracts."');
       s=replaceOnce(s,'Three unmistakable receipt landmarks—Zhongzhiyuan Verification Ring, AI Origin Translation Gate and Dazhongsi Receipt Porch—remain the spatial prototypes. S7 adds a 1:50 construction node to its 1:5000, 1:2000, 1:500, 1:200 and assembly views. Twelve scenarios each run seven deterministic tabletop cases, producing 84 rerunnable synthetic design-contract checks without adding scenes.[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json] [metric:measurement_contract_count]','Three unmistakable receipt landmarks—Zhongzhiyuan Verification Ring, AI Origin Translation Gate and Dazhongsi Receipt Porch—remain the spatial prototypes. S7 carries five review scales; 12 scenes each run seven deterministic tabletop cases, producing 84 rerunnable checks. Scale and verification cite their own recomputable metrics rather than generic scene counts.[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:synthetic_design_verification_case_count]','opening metrics en');
-      s=replaceOnce(s,'[metric:rejected_spatial_alternative_count] [metric:advanced_spatial_alternative_count] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]','[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count] [metric:advanced_spatial_alternative_count] [metric:alt_c_public_route_length_m] [metric:alt_c_trial_area_sqm] [metric:alt_c_reversible_buffer_area_sqm] [metric:alt_c_max_estop_staff_distance_m] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]','decision metrics en');
       s=s.replace('[data:geometry/roads.geojson#STITCH-01] [metric:key_area_count]','[data:geometry/roads.geojson#STITCH-01] [metric:east_west_stitch_count]');
       s=s.replace('[data:visual/assets/spatial-atlas.json] [metric:paired_scenario_count]','[data:visual/assets/spatial-atlas.json] [metric:spatial_component_type_count]');
       s=s.replace('[data:visual/assets/spatial-atlas.json] [metric:measurement_contract_count]\n\nThe compiler','[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:s7_prototype_kit_item_count] [metric:e2_permit_gate_count] [metric:e2_printable_form_count] [metric:e2_procurement_package_count]\n\nThe compiler');
@@ -86,6 +84,41 @@ function updateNarrative(){
     s=s.replace(/交互展；\s*(?=每项)/,'交互展；');
     s=s.replace(/退役资产去向。\[data:visual\/assets\/spatial-atlas\.json\](?! \[metric:spatial_component_type_count\])/,'退役资产去向。[data:visual/assets/spatial-atlas.json] [metric:spatial_component_type_count]');
     s=s.replace(/retirement destination\.\[data:visual\/assets\/spatial-atlas\.json\](?! \[metric:spatial_component_type_count\])/,'retirement destination.[data:visual/assets/spatial-atlas.json] [metric:spatial_component_type_count]');
+    if(lang==='zh'){
+      s=s.replace(/ALT-A 的试验边界切断公共十字[\s\S]*?(?=\n\n)/,`ALT-A 的试验边界切断公共十字，并与消防、撤场和人工急停可达性发生冲突，因此六道硬门失败；ALT-B 保住公共路线，但监督和撤场碎片化，退回修改。[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count]\n\nALT-C 让 372 米概念公共路线在试验态保持原长，将 2,496 平方米试验范围和 3,840 平方米可逆缓冲集中在单侧。[metric:alt_c_public_route_length_m] [metric:alt_c_trial_area_sqm] [metric:alt_c_reversible_buffer_area_sqm]\n\nALT-C 同时把最远急停—人工岗位距离控制为 24.3 米的原型假设，是唯一进入深化的方案。[metric:alt_c_max_estop_staff_distance_m] [metric:advanced_spatial_alternative_count] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]`);
+      s=s.replace(/S7 的 \*\*E2 原型准备文件\*\*[\s\S]*?(?=\n\n)/,`S7 的 **E2 原型准备文件**由同一套几何生成五级审查尺度，并登记 16 项可复算构件。[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:s7_prototype_kit_item_count]\n\nE2 同时登记 8 类许可、4 个采购包和 5 类空白表单；它**不表示**测绘、许可、采购、搭建或现场运行已经发生。[metric:e2_permit_gate_count] [metric:e2_procurement_package_count] [metric:e2_printable_form_count]`);
+      s=s.replace(/<!-- V11_DECISION_START -->[\s\S]*?<!-- V11_DECISION_END -->/,`<!-- V11_DECISION_START -->
+## 一次真正的空间裁决
+
+城市采纳编译器不再把“全部通过”当作优秀。当前方案对 S7 的同一任务、同一用户和同一场地生成三个空间备选，再用同一组几何硬门审计：**ALT-A 中央混合湾被淘汰，ALT-B 分散双湾退回修改，ALT-C 单侧可逆湾进入深化。** 这里的 reject_design / revise_design / advance_design 是设计备选状态，不是现场采纳结论；现场仍只允许由人类委员会作出 adopt / revise / stop。[data:visual/assets/spatial-decision.json] [metric:spatial_alternative_count]
+
+ALT-A 的试验边界切断公共十字，并与消防、撤场和人工急停可达性发生冲突，因此六道硬门失败；ALT-B 保住公共路线，但监督和撤场碎片化，退回修改。[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count]
+
+ALT-C 让 372 米概念公共路线在试验态保持原长，将 2,496 平方米试验范围和 3,840 平方米可逆缓冲集中在单侧。[metric:alt_c_public_route_length_m] [metric:alt_c_trial_area_sqm] [metric:alt_c_reversible_buffer_area_sqm]
+
+ALT-C 同时把最远急停—人工岗位距离控制为 24.3 米的原型假设，是唯一进入深化的方案。[metric:alt_c_max_estop_staff_distance_m] [metric:advanced_spatial_alternative_count] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]
+
+这些数值来自以大钟寺原型中心建立的局部等距近似画布，只能审查设计几何是否自洽，不代表现状测绘、交通表现、消防审批或安全绩效。任何正式底图、站口、权属或专业条件变化，都必须重新运行审计；若计算结果变化，图纸和文字必须服从计算。[data:geometry/roads.geojson#V11-ALT-C-BASE-NS] [depth:three_key_area_detailed_design]
+<!-- V11_DECISION_END -->`);
+      s=s.replace(/(### 城市采纳编译器：测量契约、空间裁决与 E2 文件就绪\n\n)[\s\S]*?(?=\n\n“编译器”)/,`$1S7 的 **E2 原型准备文件**由同一套几何生成五级审查尺度，并登记 16 项可复算构件。[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:s7_prototype_kit_item_count]\n\nE2 同时登记 8 类许可、4 个采购包和 5 类空白表单；它**不表示**测绘、许可、采购、搭建或现场运行已经发生。[metric:e2_permit_gate_count] [metric:e2_procurement_package_count] [metric:e2_printable_form_count]`);
+    }else{
+      s=s.replace(/ALT-A severs the public cross[\s\S]*?(?=\n\n)/,`ALT-A severs the public cross and conflicts with fire access, retirement and staffed E-stop reach, failing six hard gates. ALT-B preserves routes but fragments supervision and retirement, so it returns for revision.[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count]\n\nALT-C keeps the 372-metre concept public route unchanged in trial and concentrates a 2,496-square-metre trial plus a 3,840-square-metre reversible buffer on one side.[metric:alt_c_public_route_length_m] [metric:alt_c_trial_area_sqm] [metric:alt_c_reversible_buffer_area_sqm]\n\nALT-C also limits the furthest E-stop-to-staff distance to a 24.3-metre prototype assumption and is the sole design to advance.[metric:alt_c_max_estop_staff_distance_m] [metric:advanced_spatial_alternative_count] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]`);
+      s=s.replace(/One S7 model now drives[\s\S]*?(?=\n\n)/,`One S7 model drives five review scales and a documented 16-item component kit.[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:s7_prototype_kit_item_count]\n\nE2 also registers eight permit gates, four procurement packages and five blank forms. It **does not mean** survey, permits, procurement, assembly or field operation have occurred.[metric:e2_permit_gate_count] [metric:e2_procurement_package_count] [metric:e2_printable_form_count]`);
+      s=s.replace(/<!-- V11_DECISION_START -->[\s\S]*?<!-- V11_DECISION_END -->/,`<!-- V11_DECISION_START -->
+## One Real Spatial Decision
+
+The Civic Adoption Compiler no longer treats an all-green matrix as excellence. The current proposal generates three spatial alternatives for the same S7 task, users and site, then audits each with identical geometry gates: **ALT-A Central Mixed Bay is rejected, ALT-B Split Bays returns for revision, and ALT-C One-sided Reversible Bay advances.** These reject_design / revise_design / advance_design labels describe design alternatives, not field adoption; only a human committee may later issue adopt / revise / stop.[data:visual/assets/spatial-decision.json] [metric:spatial_alternative_count]
+
+ALT-A severs the public cross and conflicts with fire access, retirement and staffed E-stop reach, failing six hard gates. ALT-B preserves routes but fragments supervision and retirement, so it returns for revision.[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count]
+
+ALT-C keeps the 372-metre concept public route unchanged in trial and concentrates a 2,496-square-metre trial plus a 3,840-square-metre reversible buffer on one side.[metric:alt_c_public_route_length_m] [metric:alt_c_trial_area_sqm] [metric:alt_c_reversible_buffer_area_sqm]
+
+ALT-C also limits the furthest E-stop-to-staff distance to a 24.3-metre prototype assumption and is the sole design to advance.[metric:alt_c_max_estop_staff_distance_m] [metric:advanced_spatial_alternative_count] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]
+
+The figures use a local equidistant approximation centred on the Dazhongsi prototype. They audit design geometry only; they do not establish surveyed conditions, transport performance, fire approval or safety performance. Any change in the official base, station entrance, ownership or professional constraints must rerun the audit, and drawings and prose must follow the calculation.[data:geometry/roads.geojson#V11-ALT-C-BASE-NS] [depth:three_key_area_detailed_design]
+<!-- V11_DECISION_END -->`);
+      s=s.replace(/(### Civic Adoption Compiler: measurement contracts, spatial decision and E2 documentation\n\n)[\s\S]*?(?=\n\nThe compiler)/,`$1One S7 model drives five review scales and a documented 16-item component kit.[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:s7_prototype_kit_item_count]\n\nE2 also registers eight permit gates, four procurement packages and five blank forms. It **does not mean** survey, permits, procurement, assembly or field operation have occurred.[metric:e2_permit_gate_count] [metric:e2_procurement_package_count] [metric:e2_printable_form_count]`);
+    }
     s=s.split(/(\n\n+)/).map(part=>{
       if(/^\n+$/.test(part))return part;
       const seen=new Set();
@@ -135,6 +168,25 @@ function updateChangelog(){
   fs.writeFileSync(p,s);
 }
 
-function run(){updateSchemasAndMetrics();updateNarrative();updateMatrices();updateSourcesAndRights();updateChangelog();console.log('V13 spatial-decision evidence and semantic metrics restored');}
+function updateRedTeam(){
+  const review={
+    schema_version:'1.11.0',review_date:'2026-08-20',version:'V13',
+    calibration_baseline:'V11 Review Agent 90/100; V12 Review Agent 88/100',
+    status:'v13_local_freeze_qa_complete',
+    summary:{blocking_open:0,major_open:0,major_closed:3,minor_open_external_dependency:4},
+    findings:[
+      {id:'V13-EVID-01',severity:'major',finding:'V12 collapsed 55 metrics to 18 and reused unrelated metric IDs for stitches, components, landmarks, prototype kit and pilot phases.',remediation:'Restore the accumulated evidence set and bind each narrative conclusion to its exact recomputable metric; add bilingual semantic assertions.',verification:'semantic-qa-v13.js rejects substituted IDs, duplicate paragraph references, unresolved references and bilingual drift.',status:'closed'},
+      {id:'V13-VIS-01',severity:'major',finding:'V12 let a twelve-row measurement table displace the decisive ALT-A/B/C spatial judgement in the actual scoring entrances.',remediation:'Restore the reject/revise/advance decision as the primary metrics figure and PDF first-page message; retain only T2, S2 and S7 hero contracts as secondary evidence.',verification:'At 1024 px the decision, reason and selected ALT-C are visible without reading a twelve-row table.',status:'closed'},
+      {id:'V13-PUB-01',severity:'major',finding:'The first V13 A0 draft retained low-information areas and did not connect the selected geometry to a spatial experience.',remediation:'Rebalance all three boards around one dominant visual and add a generated ALT-C experience view tied to the public cross, one-sided trial bay, staffed receipt porch and removal route.',verification:'Final A0 contact-sheet review shows denser single-focus boards; the experience image is explicitly non-field evidence and vector geometry remains authoritative.',status:'closed'},
+      {id:'V13-MIN-01',severity:'minor',finding:'Official survey, ownership, station entrances, statutory controls, utilities and observed flows remain unavailable.',remediation:'Keep dimensions and boundaries provisional and rerun the audit when formal data arrives.',status:'open_external_dependency'},
+      {id:'V13-MIN-02',severity:'minor',finding:'No scene has been field-run; safety, traffic, satisfaction, cost and recovery time remain unknown.',remediation:'Do not issue adopt/revise/stop until baseline and controlled field evidence exist.',status:'open_external_dependency'},
+      {id:'V13-MIN-03',severity:'minor',finding:'Public OSM context is incomplete around the prototype.',remediation:'Show low-confidence context and verify building edges professionally before implementation.',status:'open_external_dependency'},
+      {id:'V13-MIN-04',severity:'minor',finding:'Automated in-app browser control rejects file:// navigation, so runtime visual interaction was not automatically asserted.',remediation:'Keep static offline dependency QA as passed and require the user to perform the final local runtime visual review before any Ready PR.',status:'open_external_dependency'}
+    ]
+  };
+  write('visual/assets/red-team-review.json',review);
+}
+
+function run(){updateSchemasAndMetrics();updateNarrative();updateMatrices();updateSourcesAndRights();updateChangelog();updateRedTeam();console.log('V13 spatial-decision evidence and semantic metrics restored');}
 module.exports={run,restoredMetrics};
 if(require.main===module)run();
