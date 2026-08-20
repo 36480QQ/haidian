@@ -1008,6 +1008,40 @@
       ],
       "interpretation_rule": "transparent human override evidence; it does not imply that AI or the design team approved deployment"
     },
+    "ai_candidate_evaluation_cell_count": {
+      "status": "known",
+      "value": 45.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/ai-spatial-options-output.json",
+        "visual/assets/ai-spatial-decision-log.json",
+        "visual/assets/permit-compiler-runner.js"
+      ],
+      "formula": "3 site cases × 3 coordinate candidates × 5 site-specific objectives, each recorded as PASS, HOLD, FAIL or UNKNOWN with at least one evidence reference",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-AI-TRACE-001"
+      ],
+      "interpretation_rule": "complete desktop comparison cells, not model-inference reproducibility, field performance, professional selection, public consent or statutory approval"
+    },
+    "ai_counterfactual_chain_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/ai-spatial-options-output.json",
+        "visual/assets/ai-spatial-decision-log.json",
+        "visual/assets/permit-compiler-runner.js"
+      ],
+      "formula": "count(site cases with one content-addressed AI rank-one option → independently derived city hard gate → field-pending design-team conditional preference → professional/public selection=false chain)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-AI-TRACE-001"
+      ],
+      "interpretation_rule": "counterfactual decision traceability only; it does not claim that the retained option is approved or performs better in the field"
+    },
     "preregistered_validation_protocol_count": {
       "status": "known",
       "value": 3.0,
