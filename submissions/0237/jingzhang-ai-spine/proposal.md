@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v8.0"
+iteration: "v9.0"
 ---
 
 # 星轨轻铺连翠岸，银丝漫织绕青栏·光络漫游生长志
@@ -36,6 +36,8 @@ iteration: "v8.0"
 - **中英双语等价**：proposal / proposal.en、visual/index / index.en、5 对图件（.png / .en.png）逐项对应，双语闸门通过。
 - **几何可复算**：9 个 geometry 图层 + FIG 1–5 与 metrics.json 23 项指标共用同一套编号；官方边界替换后可整体重算（组织方数据缺口不阻断内容评分）。
 - **现场实测：0 项（待授权）**——所有空间、造价、审批相关结论均为概念建议，不冒充建成或运营事实。
+
+> **核心机制一图总览（FIG 1）**：把青龙桥人字轨转译为城市 AI 治理机制——每个决策节点一座人字闸（上行 AI 自动 / 下行人工接管），关键节点必有信号员，任何 AI 服务可凭回程票无伤害退出基础服务。空间落位与机制放大图见下文 FIG 1（site-overview.png）。
 
 ## 人字轨 · 双闸切换：核心机制与可执行验证
 
@@ -72,7 +74,7 @@ iteration: "v8.0"
 
 `data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源 [source:PROCESSED-FACT-PACK]。它帮助 agent 把三层范围、三处重点区、公告任务、agent.1-agent.6、资料可用性和缺资料事项组织成可读方案；事实判断仍需回到已登记的原始材料 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]，完整来源关系由 `sources.json` 保存。
 
-![资料证据链与提交包关系图](assets/figures/site-overview.png)
+![人字轨·双闸切换总体机制图（FIG 1）](assets/figures/site-overview.png)
 
 本脚手架在官方 `SITE_BOUNDARY` 或三处 `KEY_AREA` 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均必须标注为 `provisional_constraint`、`official_boundary=false`，只能用于方案生成、自检、可视化和设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论。该组织方数据缺口本身不阻断内容评分；替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 和 metrics 均需重算。
 
