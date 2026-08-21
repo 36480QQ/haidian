@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Restructuring the Jingzhang AI Innovation Belt into a service-oriented city spine built on 'data as a public good': one spine (the open civic-data axis), three hearts (Zhongzhiyuan data factory, AI-Origin community service living room, Dazhongsi enterprise data port), and many nodes (citizen-participatory AI service pods). Public data opens along the belt; citizens and developers co-create AI services at co-creation nodes; the digital platform and physical space are designed as one, forming a governable, experienceable, and replicable civic-data commons."
 tracks: ["ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide"]
-iteration: "v6.0"
+iteration: "v5.0"
 ---
 
 # Jingzhang AI Civic Data Commons: A Co-Created Service-Oriented City Spine
@@ -254,32 +254,6 @@ The Data Receipt solves "every use is recorded," but the records lie in a ledger
 **Rule-closure verification.** `run_timetable_tabletop.js` correctly classifies all 72 synthetic cases from 12 rows × 6 rule branches (complete / missing purpose / missing human reviewer / missing retention period / not deleted after expiry / objection unanswered) — 36 blocked / 12 displayable / 24 flagged — proving that the timetable display rules are logically closed. This proves only classification correctness, however, and does not constitute data authorization, compliance, or evidence of actual use; on-site performance remains null, with status `not_authorized_not_run` [data:visual/assets/timetable-tabletop-evidence.json#blocked].
 
 **Relationship with the Data Receipt.** The receipt is "the record of each use" (management side); the timetable is "the disclosure of each use" (public side) — the receipt ensures every data use is traceable, and the timetable ensures citizens can see and question it. Together they form the visibility loop of "civic data infrastructure": **invisible data is not public; data that is visible and contestable is** [source:public-data-policy].
-
-### Meta-Design Layer: Philosophy Enhancement (original to this proposal, v6)
-
-The Data Timetable solves "data being seen," and the Data Receipt solves "every data use being traceable." The meta-design layer of this proposal goes further to pose six logical and philosophical questions — none of them externally added judgments; rather, **each illuminates a logic already implicit in the visibility lens**. The six directions correspond to six artifacts under `visual/assets/philosophy/`, each an explicitation of the lens's own logic [E:DATA-PHILOSOPHY-META].
-
-**Value Theory — Value Trade-offs.** The visibility lens already implies a value ordering; the value trade-offs table makes the implicit value conflicts explicit as "priority + cost" [data:visual/assets/philosophy/value-tradeoffs.json#tradeoffs]:
-
-| Value conflict | Priority | Encoded in | Cost |
-| --- | --- | --- | --- |
-| Visibility vs convenience | Visibility | The timetable discloses every use; operators must keep additional records | Increased operating cost |
-| Visibility vs privacy | Privacy | Timetable disclosure is de-identified; no personal records shown | Disclosure cannot reach the individual level |
-| Visibility vs efficiency | Visibility | The objection channel is redundant; citizens may question any row | Objection-handling cost |
-
-The costs are accepted because the priority directions are preconditions of "publicness."
-
-**Teleology — Site Necessity.** An argument for why the Data Timetable could only happen at Jingzhang — site-specificity moves from background to necessary condition [data:visual/assets/philosophy/site-necessity.json#necessity_arguments]: ① the "timetable" as a public-memory symbol belongs to Jingzhang alone (the timetable of the first independently built railway); ② Jingzhang carries the design positioning of the "civic data commons"; ③ the Jingzhang railway's publicness was built on being seen, and the Data Timetable continues this tradition of visibility-as-publicness.
-
-**Phenomenology — First-Person Empathy Scripts.** First-person scripts verify whether every step of the seeing-experience chain runs smoothly — engineering verification of the experience, not marketing narrative [data:visual/assets/philosophy/first-person-scripts.json#scripts]. Three scripts (a citizen sees data being used / a citizen's objection is accepted / an operator honestly discloses and benefits) each verify one seeing-experience chain.
-
-**Epistemology — Epistemic Grading.** Every claim is graded as description / prediction / prescription, with its knowledge basis stated — honest about the limits of what is known [data:visual/assets/philosophy/epistemic-grading.json#claim_grades].
-
-**Game Theory — Incentive Compatibility.** The core of mechanism design: make "honest disclosure" the dominant strategy — data providers will only truly disclose when they have a motive to disclose [data:visual/assets/philosophy/incentive-compatibility.json#incentive_mechanisms]. Honest disclosure earns time-slot priority, earns the "Transparent Data Provider" badge, and once disclosed can be checked by anyone, making concealment impossible.
-
-**Temporal — Self-Update Protocol.** The proposal is not static; it defines a trigger protocol specifying which part of the visibility mechanism must be recalculated when the city changes [data:visual/assets/philosophy/self-update-protocol.json#triggers]. Data types change → recalculate the timetable row definitions; data-protection policy changes → recalculate the de-identification rules; citizens' data literacy changes → recalculate the presentation forms and objection-channel design.
-
-**The six directions and the visibility lens.** All six directions are logical extensions of the lens itself: the value table explicitates the lens's implicit value ordering; site necessity is the lens's site-specific legitimacy; the empathy scripts are proof that the lens can be experienced; epistemic grading is the lens's honesty about its own cognitive boundaries; incentive compatibility is the mechanism guaranteeing the lens will be followed; self-update is the lens's honesty toward time. Together the six upgrade "publicness = visibility" from a design principle into an engineering commitment self-consistent across six dimensions — value, site, experience, knowledge, incentives, and time [depth:metrics_recalculation].
 
 ### Open-Data Policy Roadmap
 
