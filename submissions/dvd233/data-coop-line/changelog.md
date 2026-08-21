@@ -1,6 +1,21 @@
 # 方案迭代记录
 
+## v1.9 - 2026-08-22
+
+P1-06 official-publication upgrade of plan alignment evidence / 控规官方公开版页面的证据层级升级
+
+- Baseline / 基线：从最新 `upstream/main` `c79854e90b2e9a641d367c9e91f3f3031e20c127`（最后观察 `2026-08-22T06:44:00+08:00`）建立干净分支 `codex/data-coop-line-p1-06-official-plan-20260822`。前次观察 `5287a6299d77c7298bd56853097add81401bf0c6` 至冻结点仅含其他投稿合并，未触及本投稿、投稿 Skill、brief、schema、validator、helper 或门禁，判定与本轮无关，不重建基线。
+- Reason / 原因：海淀区人民政府门户网站于 2026-08-17 发布《HD00—1601 等街区控制性详细规划（街区层面）（2024—2035 年）（公开版）》文本页，P1-05 中仅由媒体报道承载的范围、街区、面积与版本标签事实由此获得官方公开层级的可核验出处；这是主控预设的下一任务方向，不改变方案方向、许可或空间量即可单轮闭环。
+- New evidence / 新证据：`JINGZHANG-PLAN-OFFICIAL-PUBLICATION-20260817`（`zyk.bjhd.gov.cn` 公开页，发布 2026-08-17，检索 2026-08-22，响应字节 SHA-256 `e669105c1f94081213740a44a899b2823aff9622e8b3f89a48fac7fce8073b86`，两次取回一致）。官方总则可逐字核验：2024—2035 版本标签、四至、HD00—1601 等九个街区编码、规划总面积 16.7 平方公里、75 个主导功能分区、规划成果均为法定审批文件。
+- Before → After / 修正前后：修订前，四至、街区数、面积与版本标签仅停留在媒体报道层级，2022—2035 与 2024—2035 标签维持「未调和」；修订后，上述范围事实升级为官方公开层级，2024—2035 获批版本标签获官方文本确认（2022—2035 仍归属 2025 草案通告，不推断修编链）；唯一事实源 `visual/assets/planning-alignment-register.json`（Register ID `DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 `fa284ec31ae8fc68a88a3b73ef9b3eb2cf9278f597b9df55ae3f0d391d45adda`）升级为三层证据、7 条文本事实与新的版本差异状态。
+- Remaining gaps / 仍未取得：官方批复文号与确切批复日期（公开页未载，不推断）；完整控规文本（全文 PDF 附件于 2026-08-22 检索返回 HTTP 404）；法定图纸/图则；清权 vector。报道面积口径（约 1668.2 公顷）与官方口径（16.7 平方公里）分别归因，均不进入 `metrics.json`；文字四至不绘制 polygon；`constraints.geojson` 保持 0 feature。
+- Carriers & rights / 载体与权利：同步中英 proposal、脚本派生报告 HTML、双语离线 visual、来源/假设/版权说明、来源备注、changelog，重新生成 2400×1500 双语原创技术图（PNG tEXt 写入 Register ID、新哈希、冻结 SHA 与三条来源 ID），四份 PDF 的 P1-05 页原位替换为 P1-06 页并刷新 Info 元数据令牌。外部网页仅作最小事实引用与署名，不复制全文、附件、图纸、页面图片或长段原文。
+- Verification / 验证：证据一致性复算 PASS，EPSG:4548 既有指标与证据签名 `c880c438924399d40267391551669d937dcfc5e144850eb511a45bbf024c4a52` 不变；planning alignment 审计（更新不变量后）与伪造“已取得官方批复文件”的负向自测 fail-closed 通过；site evidence、field operations、drill 与 reviewer spine 审计同步复跑；四份 HTML 与四份 PDF 逐页视觉 QA。
+- Gate discipline / 门禁纪律：所有受影响载体完成后才执行 ready-package manifest refresh；refresh 清空 `self_checked` 后立即用冻结 main 的完整 self-check 重新取得状态，再运行 strict-manifest、普通 preflight 与 `--check-push`。不运行 finalize，不删除、跳过或弱化检查，最终状态以 `manifest.json` 与 `self_check.json` 为准。
+- Scope & boundary / 范围与边界：只修改 `submissions/dvd233/data-coop-line/`；GeoJSON、metrics、证据签名、投稿许可、核心价值主张和方案方向不变。官方批复文件、完整控规文本、法定图则、规划 polygon 和真实实施条件仍是明确缺口；PR #2540、#2746 及其他已合并 PR 保持只读，不修改共享协议、工具、数据、仓库文档或 Gallery 生成物。
+
 ## v1.8 - 2026-08-22
+
 
 P1-05 text-level alignment with the reported approved regulatory plan / 已获批街区控规的文本级对齐与证据边界
 

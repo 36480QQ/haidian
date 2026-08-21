@@ -29,12 +29,13 @@
     },
     {
       "id": "A-PLAN-ALIGNMENT-001",
-      "status": "text_level_alignment_without_official_plan_document_or_geometry",
-      "statement": "An official 2025 participation notice proves the draft consultation process, while a 2026 Beijing Daily report republished by People.cn reports approval and selected text facts for a 2024-2035 plan. The official approval document, complete plan text, statutory drawings and rights-cleared vector geometry have not been retrieved; the 2022-2035 draft label and 2024-2035 reported-approved label therefore remain separately attributed rather than silently reconciled.",
-      "impact": "Planning signals may qualify the narrative and prioritise the heritage-park line, Dazhongsi focus, walking/cycling continuity and survey-first reuse. They cannot modify geometry, metrics, statutory controls, real-building decisions, approval claims, government endorsement or implementation commitments.",
+      "status": "text_level_alignment_with_official_publication_page_but_without_approval_document_or_geometry",
+      "statement": "An official 2025 participation notice proves the draft consultation process; a 2026 Beijing Daily report republished by People.cn reported the approval and structural summary; and the Haidian District government portal published the (public version) plan text page on 2026-08-17, whose retrieved general provisions officially confirm the 2024-2035 period label, the four textual bounds, the nine named block codes, the 16.7 km2 total planned area, the 75 functional zones and the statutory-document nature of the plan results. The official approval document number, the exact approval date, the complete plan text (PDF attachment HTTP 404 at retrieval), statutory drawings and rights-cleared vector geometry have not been retrieved; the 2022-2035 draft label therefore remains separately attributed to the earlier notice without inferring an amendment history.",
+      "impact": "Officially published scope facts qualify the narrative and prioritise the heritage-park line, Dazhongsi focus, walking/cycling continuity and survey-first reuse. They still cannot modify geometry, metrics, statutory controls, real-building decisions, approval claims, government endorsement or implementation commitments; the official publication of the street-block plan is never the approval or endorsement of this submission.",
       "source_ids": [
         "JINGZHANG-PLAN-PARTICIPATION-NOTICE-20250208",
-        "JINGZHANG-PLAN-APPROVAL-REPORT-20260812"
+        "JINGZHANG-PLAN-APPROVAL-REPORT-20260812",
+        "JINGZHANG-PLAN-OFFICIAL-PUBLICATION-20260817"
       ],
       "evidence_register": "visual/assets/planning-alignment-register.json",
       "verification_script": "visual/assets/planning-alignment-audit.js"

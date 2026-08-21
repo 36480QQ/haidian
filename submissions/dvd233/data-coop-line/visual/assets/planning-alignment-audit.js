@@ -8,10 +8,20 @@ const path = require("path");
 const SUBMISSION_DIR = path.resolve(__dirname, "..", "..");
 const REGISTER_RELATIVE = "visual/assets/planning-alignment-register.json";
 const REGISTER_ID = "DATA-COOP-PLAN-ALIGNMENT-01";
-const FREEZE_SHA = "114f06a1d59b94aece4807747ac00e3d6a396d40";
+const FREEZE_SHA = "c79854e90b2e9a641d367c9e91f3f3031e20c127";
 const SOURCE_IDS = [
   "JINGZHANG-PLAN-PARTICIPATION-NOTICE-20250208",
   "JINGZHANG-PLAN-APPROVAL-REPORT-20260812",
+  "JINGZHANG-PLAN-OFFICIAL-PUBLICATION-20260817",
+];
+const CLAIM_IDS = [
+  "PLAN-TEXT-01",
+  "PLAN-TEXT-02",
+  "PLAN-TEXT-03",
+  "PLAN-TEXT-04",
+  "PLAN-TEXT-05",
+  "PLAN-TEXT-06",
+  "PLAN-TEXT-07",
 ];
 const ASSUMPTION_ID = "A-PLAN-ALIGNMENT-001";
 const UNCHANGED_EVIDENCE_SIGNATURE = "c880c438924399d40267391551669d937dcfc5e144850eb511a45bbf024c4a52";
@@ -33,8 +43,8 @@ function structuralErrors(register) {
   if (register.register_id !== REGISTER_ID) errors.push(`register_id must be ${REGISTER_ID}`);
   if (register.branch_freeze?.upstream_main_sha !== FREEZE_SHA) errors.push(`branch freeze must be ${FREEZE_SHA}`);
   if (register.branch_freeze?.gate_scripts_from_this_freeze !== true) errors.push("gate scripts must come from the branch freeze");
-  if (!Array.isArray(register.source_hierarchy) || register.source_hierarchy.length !== 2) errors.push("source_hierarchy must contain exactly two tiers");
-  if (!Array.isArray(register.text_claims) || register.text_claims.length !== 4) errors.push("text_claims must contain exactly four claims");
+  if (!Array.isArray(register.source_hierarchy) || register.source_hierarchy.length !== 3) errors.push("source_hierarchy must contain exactly three tiers");
+  if (!Array.isArray(register.text_claims) || register.text_claims.length !== 7) errors.push("text_claims must contain exactly seven claims");
   if (!Array.isArray(register.alignment_decisions) || register.alignment_decisions.length !== 4) errors.push("alignment_decisions must contain exactly four decisions");
   const claimIds = (register.text_claims || []).map((claim) => claim.claim_id);
   if (new Set(claimIds).size !== claimIds.length) errors.push("text claim IDs must be unique");
@@ -42,12 +52,15 @@ function structuralErrors(register) {
   if (new Set(alignmentIds).size !== alignmentIds.length) errors.push("alignment IDs must be unique");
   if (register.version_delta?.official_participation_notice_period_label !== "2022-2035") errors.push("official-process period label must remain 2022-2035");
   if (register.version_delta?.reported_approved_plan_period_label !== "2024-2035") errors.push("reported-approved period label must remain 2024-2035");
-  if (register.version_delta?.resolution_status !== "unreconciled_without_official_approval_document") errors.push("period labels must remain unreconciled pending the official approval document");
+  if (register.version_delta?.officially_published_plan_period_label !== "2024-2035") errors.push("officially published period label must be 2024-2035");
+  if (register.version_delta?.resolution_status !== "officially_published_plan_confirms_2024_2035_label_without_approval_document_number") errors.push("resolution_status must record official publication without approval document number");
   const boundary = register.evidence_boundary || {};
   const requiredFalse = [
     "official_approval_document_retrieved",
     "official_plan_text_retrieved",
     "official_plan_map_or_vector_retrieved",
+    "official_complete_plan_text_retrieved",
+    "official_plan_drawings_or_maps_retrieved",
     "changes_submission_geometry",
     "changes_submission_metrics",
     "changes_core_value_proposition",
@@ -58,6 +71,8 @@ function structuralErrors(register) {
   for (const key of requiredFalse) {
     if (boundary[key] !== false) errors.push(`evidence_boundary.${key} must remain false`);
   }
+  if (boundary.official_publication_page_retrieved !== true) errors.push("evidence_boundary.official_publication_page_retrieved must be true (P1-06 retrieved fact)");
+  if (boundary.full_text_attachment_http_status_at_retrieval !== 404) errors.push("evidence_boundary.full_text_attachment_http_status_at_retrieval must record 404");
   if (boundary.official_control_geometry_features_in_submission !== 0) errors.push("official control geometry feature count must remain zero");
   for (const claim of register.text_claims || []) {
     if (!SOURCE_IDS.includes(claim.source_id)) errors.push(`${claim.claim_id} uses an unknown source tier`);
@@ -94,23 +109,29 @@ function main() {
   check("REGISTER_ID", register.register_id === REGISTER_ID, register.register_id);
   check("BRANCH_FREEZE", register.branch_freeze?.upstream_main_sha === FREEZE_SHA, register.branch_freeze);
   check("SOURCE_TIER_ORDER", JSON.stringify(register.source_hierarchy.map((item) => item.source_id)) === JSON.stringify(SOURCE_IDS), register.source_hierarchy.map((item) => item.source_id));
-  check("CLAIM_IDS", JSON.stringify(register.text_claims.map((item) => item.claim_id)) === JSON.stringify(["PLAN-TEXT-01", "PLAN-TEXT-02", "PLAN-TEXT-03", "PLAN-TEXT-04"]), register.text_claims.map((item) => item.claim_id));
+  check("CLAIM_IDS", JSON.stringify(register.text_claims.map((item) => item.claim_id)) === JSON.stringify(CLAIM_IDS), register.text_claims.map((item) => item.claim_id));
   check("ALIGNMENT_IDS", JSON.stringify(register.alignment_decisions.map((item) => item.alignment_id)) === JSON.stringify(["ALIGN-01", "ALIGN-02", "ALIGN-03", "ALIGN-04"]), register.alignment_decisions.map((item) => item.alignment_id));
-  check("NO_GEOMETRY_TRANSFER", register.text_claims.filter((item) => item.spatial_use === "text_only_no_digitisation").length === 2 && register.evidence_boundary.changes_submission_geometry === false, register.text_claims.map((item) => [item.claim_id, item.spatial_use]));
-  check("VERSION_DELTA_VISIBLE", register.version_delta?.resolution_status === "unreconciled_without_official_approval_document", register.version_delta);
+  check("NO_GEOMETRY_TRANSFER", register.text_claims.filter((item) => item.spatial_use === "text_only_no_digitisation").length === 3 && register.evidence_boundary.changes_submission_geometry === false, register.text_claims.map((item) => [item.claim_id, item.spatial_use]));
+  check("VERSION_DELTA_VISIBLE", register.version_delta?.resolution_status === "officially_published_plan_confirms_2024_2035_label_without_approval_document_number", register.version_delta);
 
   const sources = readJson("sources.json").sources || [];
   const sourceMap = Object.fromEntries(sources.map((item) => [item.id, item]));
   const notice = sourceMap[SOURCE_IDS[0]];
   const report = sourceMap[SOURCE_IDS[1]];
+  const official = sourceMap[SOURCE_IDS[2]];
   check("SOURCE_NOTICE_EXISTS", Boolean(notice), notice?.id || null);
   check("SOURCE_REPORT_EXISTS", Boolean(report), report?.id || null);
+  check("SOURCE_OFFICIAL_PUBLICATION_EXISTS", Boolean(official), official?.id || null);
   check("SOURCE_NOTICE_URL", notice?.url === "https://ghzrzyw.beijing.gov.cn/chengxiangguihua/ghlgg/hd_ghlgg/202502/t20250207_4005553.html", notice?.url || null);
   check("SOURCE_REPORT_URL", report?.url === "https://bj.people.com.cn/n2/2026/0812/c82840-41665678.html", report?.url || null);
+  check("SOURCE_OFFICIAL_PUBLICATION_URL", official?.url === "https://zyk.bjhd.gov.cn/zwdt/xxgk/tzgg/202608/t20260819_4825744_hd.shtml", official?.url || null);
   check("SOURCE_NOTICE_HASH", notice?.retrieved_response_sha256 === "e37446c8f0d675b31031468a5aa37fcfcc2b62a7df30298d91432544b1214f0d", notice?.retrieved_response_sha256 || null);
   check("SOURCE_REPORT_HASH", report?.retrieved_response_sha256 === "0fd37bec49cdae71f86aaddb92be68952d8625f9ebcab65e9219e4c208079bc2", report?.retrieved_response_sha256 || null);
+  check("SOURCE_OFFICIAL_PUBLICATION_HASH", official?.retrieved_response_sha256 === "e669105c1f94081213740a44a899b2823aff9622e8b3f89a48fac7fce8073b86", official?.retrieved_response_sha256 || null);
+  check("SOURCE_OFFICIAL_PUBLICATION_DATE", official?.published_at === "2026-08-17" && official?.accessed_at === "2026-08-22", [official?.published_at, official?.accessed_at]);
   check("SOURCE_NOTICE_BOUNDARY", notice?.review_status === "official_process_notice_citation_only" && notice?.prohibited_uses?.includes("final approval status or approval date") && notice?.prohibited_uses?.includes("official plan polygon or coordinates"), notice?.prohibited_uses || null);
   check("SOURCE_REPORT_BOUNDARY", report?.review_status === "media_report_citation_only" && report?.prohibited_uses?.includes("conversion of reported figures into submission metrics") && report?.prohibited_uses?.includes("government endorsement or implementation commitment"), report?.prohibited_uses || null);
+  check("SOURCE_OFFICIAL_PUBLICATION_BOUNDARY", official?.review_status === "official_publication_page_citation_only" && official?.prohibited_uses?.includes("statutory drawings, zoning maps, plan polygons or coordinates") && official?.prohibited_uses?.includes("government endorsement of this submission or implementation commitment"), official?.prohibited_uses || null);
 
   const assumptions = readJson("assumptions.json").assumptions || [];
   const assumption = assumptions.find((item) => item.id === ASSUMPTION_ID);
