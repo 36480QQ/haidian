@@ -10,29 +10,30 @@
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "detail": "Deterministic package validation passed after aligning the submission owner, proposal author metadata, schema contract, and Git blob hashes."
+      "detail": "Owner, author metadata, schema 0.2, Git blob hashes and package gates verified."
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "blocking",
-      "detail": "All nine concept geometry layers are present and use the organizer provisional boundary; three non-blocking provenance issues remain disclosed."
+      "detail": "Nine concept layers present on provisional boundary; three non-blocking provenance issues disclosed."
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "blocking",
-      "detail": "Bilingual A3/A0 drawings and the static offline visual dashboard are packaged without external runtime dependencies."
+      "detail": "Bilingual figures, A3/A0 PDFs and offline dashboards regenerated with embedded CJK font and synchronized metrics."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "blocking",
-      "detail": "The bilingual proposal links standards, design-depth items, metrics, geometry, assumptions, and registered sources."
+      "detail": "Proposal links standards, design-depth, metrics, geometry, assumptions and registered sources; case provenance separated from formal evidence."
     }
   ],
   "caveats": [
     "The overall boundary and three key areas are provisional organizer constraints, not an official redline.",
-    "Spatial metrics must be recalculated if official geometry is released."
+    "Spatial metrics must be recalculated if official geometry is released.",
+    "Accessibility, traffic and public-space baselines are not available; scenario KPIs are conceptual targets."
   ]
 }

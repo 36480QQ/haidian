@@ -13,7 +13,7 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(site_boundary) in EPSG:4548",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
         "Boundary is provisional; recalculate when official polygon is available."
       ]
@@ -33,18 +33,20 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 3210551.597,
+      "value": 3528342.395,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
       "formula": "sum(polygon_area(green_space)) in EPSG:4548",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.281311,
+      "value": 0.309156,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -52,7 +54,9 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
     },
     "public_space_area_sqm": {
       "status": "known",
@@ -63,7 +67,9 @@
       ],
       "formula": "sum(polygon_area(public_space)) in EPSG:4548",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -75,7 +81,9 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
     },
     "building_density": {
       "status": "known",
@@ -87,7 +95,9 @@
       ],
       "formula": "building_footprint_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
     },
     "road_total_length_m": {
       "status": "known",
@@ -98,7 +108,9 @@
       ],
       "formula": "sum(line_length(road_centerlines)) in EPSG:4548",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Road centerlines are conceptual design proposals."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -145,7 +157,9 @@
       ],
       "formula": "group_by(land_use_code, sum(polygon_area)) in EPSG:4548 (sum of all groups)",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
     },
     "phasing_area_by_phase": {
       "status": "known",
@@ -156,7 +170,9 @@
       ],
       "formula": "group_by(phase, sum(polygon_area)) in EPSG:4548 (sum of all groups)",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
     },
     "key_area_areas_sqm": {
       "status": "known",
