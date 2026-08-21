@@ -6,30 +6,129 @@
   "research_mode": "remote_only_participant_with_future_local_validation",
   "field_evidence_policy": "The participant cannot conduct on-site fieldwork. Licensed public data may establish network, morphology, service and land-cover proxies, but it must not be represented as observed public life, perceived comfort, accessibility compliance or verified ground-floor activity. Those claims remain unknown until a local professional or cleared community partner completes the declared protocol.",
   "authority_boundary": "This file defines design methods, candidate indicators and data-collection protocols. It is not existing-conditions evidence, a statutory planning control, an engineering conclusion or an implementation approval.",
-  "design_thesis": {
-    "name_zh": "三重人本检验",
-    "name_en": "Three People-First Tests",
-    "tests": [
+  "key_area_label_policy": {
+    "rule": "The three AI-prefixed key-area names are retained because they are taskbook scope labels. The label does not make every spatial role, public-space move or renewal project an AI installation.",
+    "areas": [
       {
-        "id": "diversity_test",
-        "label_zh": "多样性检验",
-        "question": "Does the intervention support different users, primary uses, times, building types and small-scale operators?",
-        "method_source_id": "JACOBS-1961-DEATH-LIFE"
+        "key_area_id": "zhongzhiyuan_ai_acceleration_area",
+        "taskbook_label": "Zhongzhiyuan AI Independent Innovation Acceleration Area",
+        "primary_spatial_role": "Qinghe and railway-memory interface for accessible learning, release and low-carbon exchange",
+        "ai_role": "Optional testing, standards and release services after public access and environmental conditions pass review"
       },
       {
-        "id": "public_life_test",
-        "label_zh": "公共生活检验",
-        "question": "Can people arrive safely, stay comfortably, choose activities and use a non-digital service fallback?",
-        "method_source_id": "GEHL-2010-CITIES-FOR-PEOPLE"
+        "key_area_id": "beijing_ai_origin_community",
+        "taskbook_label": "Beijing AI Origin Community",
+        "primary_spatial_role": "Campus-neighborhood-park links, shared daily services and stayable public edges",
+        "ai_role": "Reversible service and collaboration layer, not a replacement for housing, daily services or public space"
       },
       {
-        "id": "low_car_test",
-        "label_zh": "低汽车依赖检验",
-        "question": "Does the intervention improve walking, cycling and public-transport network access before adding vehicle capacity?",
-        "method_source_id": "NEWMAN-KENWORTHY-1999-SUSTAINABILITY-CITIES"
+        "key_area_id": "dazhongsi_ai_industry_cluster",
+        "taskbook_label": "Dazhongsi AI Industry Cluster",
+        "primary_spatial_role": "Four-quadrant station access, active service frontages, planned-green-space coordination and incremental renewal",
+        "ai_role": "Industry demonstration or roadshow uses only after mobility, public access and neighborhood-impact review"
+      }
+    ]
+  },
+  "mapping_semantics": {
+    "provisional_key_area_extent": "Neutral dashed search extent derived from taskbook order and approximate area; not a parcel, road redline, ownership boundary or functional zone.",
+    "land_use_scaffold": "The four full-length polygons in land_use.geojson are a closed-topology design scaffold used for formal package recalculation. Figure 02 reports their conceptual supply shares but does not paint them as existing or parcel-level land use.",
+    "osm_context": "ODbL-attributed streets and building footprints are rendered as low-contrast morphology context. M/A/P concept fields follow this texture for visual discussion only and are not submitted planning geometry or metric evidence.",
+    "cross_cutting_lenses": {
+      "railway_heritage": "Historical and spatial thread across all three focus areas.",
+      "open_innovation": "Release, learning, testing and collaboration mechanism that may operate in different spatial carriers.",
+      "public_life": "Everyday network of ground-floor edges, walking, staying and civic services.",
+      "ai": "Optional service layer admitted only after spatial, access, human-fallback and governance conditions pass review."
+    }
+  },
+  "renewal_evidence_gate": {
+    "existing_conditions_status": "incomplete_not_suitable_for_parcel_or_building_classification",
+    "missing_inputs": [
+      "official_parcel_and_existing_land_use",
+      "ground_floor_use_opening_hours_and_public_access",
+      "building_age_condition_structure_and_vacancy",
+      "ownership_lease_relocation_and_operating_continuity",
+      "heritage_fire_safety_contamination_and_engineering_constraints"
+    ],
+    "decision_sequence": [
+      {
+        "level": "01_operations_and_interface_repair",
+        "moves": ["wayfinding", "shade_and_seating", "accessibility", "temporary_programming", "walking_break_repair"],
+        "minimum_evidence": ["public_access", "management_permission", "fire_safety_review", "accessibility_review"],
+        "current_claim": "concept_pilot_only"
+      },
+      {
+        "level": "02_adaptive_reuse_and_small_retrofit",
+        "moves": ["ground_floor_reuse", "underused_space_reuse", "active_frontage_improvement"],
+        "minimum_evidence": ["building_use", "ownership_and_lease", "structure", "fire_safety", "heritage", "operating_continuity"],
+        "current_claim": "no_building_level_retain_or_renovate_decision"
+      },
+      {
+        "level": "03_service_completion_and_cautious_addition",
+        "moves": ["verified_service_gap_facility", "interchange_support", "open_space_edge_facility"],
+        "minimum_evidence": ["official_controls", "road_redlines", "municipal_capacity", "daylight", "ecology", "approvals"],
+        "current_claim": "professional_deepening_direction_only"
+      },
+      {
+        "level": "04_conditional_reconstruction",
+        "moves": ["reconstruction_only_when_public_benefit_and_incompatibility_are_demonstrated"],
+        "minimum_evidence": ["ownership_and_relocation", "heritage", "structural_safety", "contamination", "finance", "approvals", "public_consultation"],
+        "current_claim": "no_reconstruction_extent_or_demolition_quantity"
       }
     ],
-    "ai_release_rule": "A civic AI scenario proceeds to public-space testing only after all three tests have a declared baseline, method, limitation, minimum-data rule, human fallback, pause condition, responsible steward and public-return measure."
+    "land_use_first_move": {
+      "park_and_open_space": "level_01_repair_and_continuity",
+      "community_and_industry_service": "levels_01_to_02_frontage_and_adaptive_reuse",
+      "research_and_innovation": "reuse_sound_buildings_and_shared_facilities_before_levels_03_to_04"
+    }
+  },
+  "design_thesis": {
+    "name_zh": "三项人本空间检验",
+    "name_en": "Three People-First Spatial Tests",
+    "tests": [
+      {
+        "id": "mixed_incremental_renewal",
+        "label_zh": "混合与渐进更新",
+        "label_en": "Mixed and incremental renewal",
+        "question": "Do different primary uses meet at a publicly accessible edge, with small reversible improvements before heavy construction?",
+        "method_source_ids": ["JACOBS-1961-DEATH-LIFE"],
+        "spatial_anchor": "M / Figure 02",
+        "review_inputs": [
+          "official_or_rights_cleared_land_use",
+          "ground_floor_use_and_opening_hours",
+          "building_condition_ownership_heritage_and_fire_review"
+        ],
+        "minimum_rule": "Do not assign retain, renovate or demolish status or run enterprise-only public space without an evidence-backed inventory."
+      },
+      {
+        "id": "low_car_access_network",
+        "label_zh": "低碳可达网络",
+        "label_en": "Low-carbon access network",
+        "question": "Are walking, cycling, station access and public transport continuous before a smart-mobility interface is added?",
+        "method_source_ids": ["NEWMAN-KENWORTHY-1999-SUSTAINABILITY-CITIES"],
+        "spatial_anchor": "A / Figure 04",
+        "review_inputs": [
+          "station_entrances_and_transit",
+          "crossings_and_barriers",
+          "verified_routable_walk_cycle_network"
+        ],
+        "minimum_rule": "Do not claim a continuous corridor or release an AI route without a verified network and accessible fallback."
+      },
+      {
+        "id": "stay_observe_adjust_public_life",
+        "label_zh": "可停留、可观察、可调整的公共生活",
+        "label_en": "Stayable, observable, adjustable public life",
+        "question": "Can people arrive, stay, choose activities and use a non-digital service fallback, with observations feeding design adjustment?",
+        "method_source_ids": ["GEHL-2010-CITIES-FOR-PEOPLE"],
+        "spatial_anchor": "P1-P3 / Figure 03 (paired with key-area numbers 01-03)",
+        "review_inputs": [
+          "time_stamped_aggregate_public_life_observation",
+          "accessibility_and_comfort_audit",
+          "frontage_seating_shade_and_service_fallback"
+        ],
+        "minimum_rule": "Do not claim existing vitality, safety or comfort before an independent local observation."
+      }
+    ],
+    "ai_release_rule": "A civic AI scenario proceeds only after the three spatial tests each have a declared baseline, method, limitation, minimum-data rule, human fallback, pause condition, steward function and public-return measure."
   },
   "theory_translation": [
     {
@@ -48,7 +147,7 @@
         "median_walkable_block_length_m",
         "active_frontage_ratio"
       ],
-      "limitation": "Project indicators are operational proxies, not universal Jacobs thresholds or Beijing statutory standards."
+      "limitation": "Project indicators are operational proxies derived from the cited method, not universal thresholds or Beijing statutory standards."
     },
     {
       "source_id": "NEWMAN-KENWORTHY-1999-SUSTAINABILITY-CITIES",
@@ -63,7 +162,7 @@
         "walk_route_directness_ratio",
         "frequent_transit_access_ratio"
       ],
-      "limitation": "Network bands are analysis parameters; local mode share, service, parking and energy claims require official or cleared Beijing data. Peter Newman is not Oscar Newman."
+      "limitation": "Network bands are analysis parameters; local mode share, service, parking and energy claims require official or cleared Beijing data."
     },
     {
       "source_id": "GEHL-2010-CITIES-FOR-PEOPLE",
@@ -127,7 +226,7 @@
         "name": "open_source_release_hall",
         "spatial_carrier": "beijing_ai_origin_community",
         "target_users": ["students", "researchers", "developers", "residents", "visitors", "people_with_disabilities"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Authorized event schedule, step-free route audit, aggregate attendance and day-evening use baseline.",
         "human_fallback": "Staffed registration, information and presentation support without mandatory app or facial recognition.",
         "pause_trigger": "Pause public trials when access, crowding, safety review, content rights or manual service cannot be maintained.",
@@ -139,7 +238,7 @@
         "name": "safety_governance_sandbox",
         "spatial_carrier": "zhongzhiyuan_ai_acceleration_area",
         "target_users": ["researchers", "startups", "regulators", "affected_residents", "civil_society_reviewers"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Declared test purpose, authorized test data, risk classification, audit log and affected-user notice.",
         "human_fallback": "Qualified reviewer controls admission, interpretation and incident response.",
         "pause_trigger": "Stop on scope drift, unapproved data, unresolved harmful output, failed audit logging or complaint escalation.",
@@ -151,7 +250,7 @@
         "name": "edge_compute_service_point",
         "spatial_carrier": "overall_design_area_service_nodes",
         "target_users": ["residents", "workers", "older_adults", "people_with_disabilities", "service_staff"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Energy capacity, heat and noise review, accessible service route, data inventory and maintenance plan.",
         "human_fallback": "In-person or telephone service channel for essential public services.",
         "pause_trigger": "Stop public service when security, energy, thermal, noise, accessibility or maintenance limits are exceeded.",
@@ -163,7 +262,7 @@
         "name": "ai_assisted_slow_mobility_navigation",
         "spatial_carrier": "jingzhang_public_life_network",
         "target_users": ["pedestrians", "cyclists", "wheelchair_users", "caregivers", "visitors"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Verified walk-cycle graph, crossings, barriers, step-free routes and time-stamped aggregate counts.",
         "human_fallback": "Static high-contrast and tactile wayfinding plus staffed assistance at key events.",
         "pause_trigger": "Withdraw routing when closures, accessibility status, positioning accuracy or emergency detours are stale or unsafe.",
@@ -175,7 +274,7 @@
         "name": "dazhongsi_international_demo_living_room",
         "spatial_carrier": "dazhongsi_ai_industry_cluster",
         "target_users": ["local_residents", "station_users", "entrepreneurs", "international_visitors", "service_workers"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Station access, event timetable, public-private space boundary, rights clearance and day-evening public-life baseline.",
         "human_fallback": "On-site multilingual reception and non-digital booking channel.",
         "pause_trigger": "Pause events when station access, crowd management, licensing, local disturbance or public access conditions fail.",
@@ -187,7 +286,7 @@
         "name": "qinghe_low_car_innovation_edge",
         "spatial_carrier": "zhongzhiyuan_qinghe_edge",
         "target_users": ["residents", "workers", "cyclists", "children_and_caregivers", "older_adults"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Flood and ecological controls, path continuity, entrances, shade, seating, cycle access and staying observations.",
         "human_fallback": "Conventional environmental signage, maintenance contact and accessible detour.",
         "pause_trigger": "Close affected segments for flood, ecological, heat, maintenance or accessibility hazards.",
@@ -199,7 +298,7 @@
         "name": "campus_neighborhood_transfer_street",
         "spatial_carrier": "beijing_ai_origin_community",
         "target_users": ["students", "founders", "residents", "small_operators", "legal_and_ip_service_users"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Ground-floor uses, rents or affordability proxies, opening hours, entrances, walking barriers and authorized service demand.",
         "human_fallback": "Walk-in legal, intellectual-property and enterprise-service desk.",
         "pause_trigger": "Suspend a digital service on exclusion, misleading advice, inaccessible access, unlicensed data or unresolved conflicts of interest.",
@@ -211,7 +310,7 @@
         "name": "data_governance_meeting_room",
         "spatial_carrier": "dazhongsi_ai_industry_cluster",
         "target_users": ["residents", "developers", "public_officials", "researchers", "rights_advocates"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Dataset provenance, legal basis, permission scope, retention, audit and public explanation for every demonstration.",
         "human_fallback": "Qualified staff explain decisions and accept correction or complaint requests.",
         "pause_trigger": "Stop on uncertain provenance, excessive collection, re-identification risk, failed deletion or misleading claims.",
@@ -223,7 +322,7 @@
         "name": "inclusive_ai_daily_service_street",
         "spatial_carrier": "community_commercial_interfaces_to_be_verified",
         "target_users": ["older_adults", "people_with_disabilities", "caregivers", "residents", "service_workers"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Resident needs, existing services, opening hours, accessible routes, non-digital demand and sector-specific authorization.",
         "human_fallback": "Parallel staffed service for medical, education, legal and daily-life requests where applicable.",
         "pause_trigger": "Stop a service on discriminatory outcome, unsafe advice, unavailable human escalation, privacy breach or displacement of essential access.",
@@ -235,7 +334,7 @@
         "name": "global_ai_public_life_route",
         "spatial_carrier": "three_key_areas_and_jingzhang_network_to_be_verified",
         "target_users": ["residents", "visitors", "international_participants", "families", "people_with_disabilities"],
-        "people_first_gate": ["diversity_test", "public_life_test", "low_car_test"],
+        "people_first_gate": ["mixed_incremental_renewal", "low_car_access_network", "stay_observe_adjust_public_life"],
         "minimum_evidence": "Continuous verified route, venue permissions, heritage controls, accessible alternatives, transit plan and event capacity.",
         "human_fallback": "Printed and tactile route information, staffed checkpoints and non-digital participation.",
         "pause_trigger": "Shorten or cancel the route when continuity, heritage protection, weather, crowding, local disturbance or accessibility cannot be assured.",
@@ -314,7 +413,7 @@
         "cannot_prove": ["pedestrian or cycle flows", "staying activity", "comfort", "social interaction", "perceived safety"]
       }
     ],
-    "metric_status_rule": "A metric may become known only when the downloaded artifact, license, raw SHA-256, query, CRS, clipping method, completeness limitation and calculation are recorded. Gehl-style observed public-life metrics remain unknown without a time-stamped local survey.",
+    "metric_status_rule": "A metric may become known only when the downloaded artifact, license, raw SHA-256, query, CRS, clipping method, completeness limitation and calculation are recorded. Observed public-life metrics remain unknown without a time-stamped local survey.",
     "future_local_validation": "A local planning professional, university studio or cleared community partner may execute the field protocol later. Their aggregate observations must be separately attributed and must not contain names, faces, device identifiers or individual trajectories."
   },
   "open_data_candidates": [

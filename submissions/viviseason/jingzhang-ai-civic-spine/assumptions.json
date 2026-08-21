@@ -8,6 +8,18 @@
       "impact": "All area values and ratios are reproducible only against the submitted temporary geometry and must not be used as statutory, approval, parcel, investment or engineering evidence. Replace the polygons and recalculate every dependent layer and metric when official geometry is supplied."
     },
     {
+      "id": "A-MAP-TEXTURE-001",
+      "status": "declared_context_only",
+      "statement": "ODbL-attributed OSM streets and building footprints are used as low-contrast morphology context, while M/A/P intervention fields are presentation-only shapes aligned to that texture.",
+      "impact": "Neither the OSM context nor the intervention fields establish parcels, road redlines, ownership, legal public access, existing land use, statutory controls or implementation geometry. Formal proposal GeoJSON and metrics remain unchanged."
+    },
+    {
+      "id": "A-CROSS-CUTTING-LENSES-001",
+      "status": "declared_design_semantics",
+      "statement": "Railway heritage, open innovation and public life are a historical thread, operating mechanism and everyday spatial network across all three focus areas, not three coincident functional zones.",
+      "impact": "Figures must distinguish these lenses from taskbook key-area extents and land-use categories. AI is treated as an optional service layer after spatial, access, human-fallback and governance review."
+    },
+    {
       "id": "A-CONTROLS-001",
       "status": "pending_professional_confirmation",
       "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
@@ -23,13 +35,25 @@
       "id": "A-PUBLIC-LIFE-001",
       "status": "pending_field_observation",
       "statement": "No anonymized, time-stamped public-life survey has yet measured pedestrian and cycle flow, staying activities, seating use, active frontages, shade, accessibility or crossing delay.",
-      "impact": "The participant cannot conduct on-site fieldwork. The proposal may use Gehl's framework and licensed open data to select future observation locations and diagnose network or land-cover proxies, but it must not claim observed vitality, safety, comfort or public-space performance before a local professional or cleared community partner completes the declared protocol."
+      "impact": "The participant cannot conduct on-site fieldwork. Licensed open data may select future observation locations and diagnose network or land-cover proxies, but the proposal must not claim observed vitality, safety, comfort or public-space performance before a local professional or cleared community partner completes the declared protocol."
     },
     {
       "id": "A-URBAN-DIVERSITY-001",
       "status": "pending_official_or_cleared_inventory",
       "statement": "Parcel uses, ground-floor uses, entrances, opening hours, building age, condition, vacancy and retain-renovate-new-build status are not available at a reliable site scale.",
-      "impact": "Jacobs-inspired diversity, short-block, active-edge and incremental-renewal metrics remain unknown. Current conceptual land-use bands and the single building footprint cannot be treated as an existing-conditions inventory."
+      "impact": "Mixed-use, short-block, active-edge and incremental-renewal metrics remain unknown. Current conceptual land-use bands and the single submitted building footprint cannot be treated as an existing-conditions inventory or used to assign retain, renovate, demolish or new-build decisions."
+    },
+    {
+      "id": "A-KEY-AREA-LABEL-001",
+      "status": "declared_taskbook_naming_boundary",
+      "statement": "The three AI-prefixed key-area names are retained from the taskbook as scope labels; they do not establish existing land use or require every spatial task to contain an AI device or program.",
+      "impact": "Key-area design must first state the ordinary urban role—heritage, access, public life, community service, green space or incremental renewal. AI-enabled services remain optional, reversible layers subject to evidence, human fallback and pause conditions."
+    },
+    {
+      "id": "A-RENEWAL-DIFFICULTY-001",
+      "status": "pending_building_parcel_ground_floor_inventory",
+      "statement": "Renewal difficulty cannot be classified at parcel or building level without existing-use, ownership, lease, age, condition, structure, vacancy, heritage, fire-safety, contamination, municipal-capacity and operating-continuity evidence.",
+      "impact": "The proposal applies a light-to-heavy sequence only: operations and interface repair, adaptive reuse and small retrofit, cautious addition, then conditional reconstruction. No reconstruction extent, demolition quantity or building-level retain-renovate decision is claimed in the current version."
     },
     {
       "id": "A-EXTERNAL-DATA-001",
